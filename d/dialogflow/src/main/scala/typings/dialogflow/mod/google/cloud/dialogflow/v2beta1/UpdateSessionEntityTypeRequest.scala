@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new UpdateSessionEntityTypeRequest.
   * @param [properties] Properties to set
   */
-class UpdateSessionEntityTypeRequest ()
+open class UpdateSessionEntityTypeRequest ()
   extends StObject
      with IUpdateSessionEntityTypeRequest {
   def this(properties: IUpdateSessionEntityTypeRequest) = this()
@@ -25,7 +24,7 @@ class UpdateSessionEntityTypeRequest ()
     * Converts this UpdateSessionEntityTypeRequest to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 object UpdateSessionEntityTypeRequest {
   
@@ -42,6 +41,8 @@ object UpdateSessionEntityTypeRequest {
   inline def create(): UpdateSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[UpdateSessionEntityTypeRequest]
   inline def create(properties: IUpdateSessionEntityTypeRequest): UpdateSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[UpdateSessionEntityTypeRequest]
   
+  inline def decode(reader: js.typedarray.Uint8Array): UpdateSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[UpdateSessionEntityTypeRequest]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): UpdateSessionEntityTypeRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[UpdateSessionEntityTypeRequest]
   /**
     * Decodes an UpdateSessionEntityTypeRequest message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -53,9 +54,8 @@ object UpdateSessionEntityTypeRequest {
   /* static member */
   inline def decode(reader: Reader): UpdateSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[UpdateSessionEntityTypeRequest]
   inline def decode(reader: Reader, length: Double): UpdateSessionEntityTypeRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[UpdateSessionEntityTypeRequest]
-  inline def decode(reader: Uint8Array): UpdateSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[UpdateSessionEntityTypeRequest]
-  inline def decode(reader: Uint8Array, length: Double): UpdateSessionEntityTypeRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[UpdateSessionEntityTypeRequest]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): UpdateSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[UpdateSessionEntityTypeRequest]
   /**
     * Decodes an UpdateSessionEntityTypeRequest message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -65,7 +65,6 @@ object UpdateSessionEntityTypeRequest {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): UpdateSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[UpdateSessionEntityTypeRequest]
-  inline def decodeDelimited(reader: Uint8Array): UpdateSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[UpdateSessionEntityTypeRequest]
   
   /**
     * Encodes the specified UpdateSessionEntityTypeRequest message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.UpdateSessionEntityTypeRequest.verify|verify} messages.
@@ -93,7 +92,7 @@ object UpdateSessionEntityTypeRequest {
     * @returns UpdateSessionEntityTypeRequest
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): UpdateSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[UpdateSessionEntityTypeRequest]
+  inline def fromObject(`object`: StringDictionary[Any]): UpdateSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[UpdateSessionEntityTypeRequest]
   
   /**
     * Creates a plain object from an UpdateSessionEntityTypeRequest message. Also converts values to other types if specified.
@@ -102,8 +101,8 @@ object UpdateSessionEntityTypeRequest {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: UpdateSessionEntityTypeRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: UpdateSessionEntityTypeRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: UpdateSessionEntityTypeRequest): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: UpdateSessionEntityTypeRequest, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies an UpdateSessionEntityTypeRequest message.
@@ -111,5 +110,5 @@ object UpdateSessionEntityTypeRequest {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

@@ -29,7 +29,7 @@ object GetModelsResult {
     
     inline def setModelsUndefined: Self = StObject.set(x, "models", js.undefined)
     
-    inline def setModelsVarargs(value: Model*): Self = StObject.set(x, "models", js.Array(value :_*))
+    inline def setModelsVarargs(value: Model*): Self = StObject.set(x, "models", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

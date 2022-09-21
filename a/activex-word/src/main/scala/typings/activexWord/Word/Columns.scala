@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Columns extends StObject {
   
   def Add(): Column = js.native
-  def Add(BeforeColumn: js.Any): Column = js.native
+  def Add(BeforeColumn: Any): Column = js.native
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -32,7 +32,7 @@ trait Columns extends StObject {
   
   val NestingLevel: Double = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   var PreferredWidth: Double = js.native
   

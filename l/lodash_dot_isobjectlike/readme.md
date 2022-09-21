@@ -10,10 +10,10 @@ The lodash method `_.isObjectLike` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.isobjectlike |
 | Keywords           | lodash, lodash-modularized, stdlib, util, isobjectlike |
-| # releases         | 0 |
-| # dependents       | 29 |
-| # downloads        | 1399270 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 283260.6666666667 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

@@ -29,7 +29,7 @@ trait XContainerWindowEventHandler
     * @returns true if the event was handled, otherwise false.
     * @throws com::sun::star::lang::WrappedTargetException if the implementation of the method, which is determined by the argument MethodName, throws an excep
     */
-  def callHandlerMethod(xWindow: XWindow, EventObject: js.Any, MethodName: String): Boolean
+  def callHandlerMethod(xWindow: XWindow, EventObject: Any, MethodName: String): Boolean
   
   /**
     * returns a sequence of supported method names
@@ -42,9 +42,9 @@ object XContainerWindowEventHandler {
   inline def apply(
     SupportedMethodNames: SafeArray[String],
     acquire: () => Unit,
-    callHandlerMethod: (XWindow, js.Any, String) => Boolean,
+    callHandlerMethod: (XWindow, Any, String) => Boolean,
     getSupportedMethodNames: () => SafeArray[String],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XContainerWindowEventHandler = {
     val __obj = js.Dynamic.literal(SupportedMethodNames = SupportedMethodNames.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), callHandlerMethod = js.Any.fromFunction3(callHandlerMethod), getSupportedMethodNames = js.Any.fromFunction0(getSupportedMethodNames), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -53,7 +53,7 @@ object XContainerWindowEventHandler {
   
   extension [Self <: XContainerWindowEventHandler](x: Self) {
     
-    inline def setCallHandlerMethod(value: (XWindow, js.Any, String) => Boolean): Self = StObject.set(x, "callHandlerMethod", js.Any.fromFunction3(value))
+    inline def setCallHandlerMethod(value: (XWindow, Any, String) => Boolean): Self = StObject.set(x, "callHandlerMethod", js.Any.fromFunction3(value))
     
     inline def setGetSupportedMethodNames(value: () => SafeArray[String]): Self = StObject.set(x, "getSupportedMethodNames", js.Any.fromFunction0(value))
     

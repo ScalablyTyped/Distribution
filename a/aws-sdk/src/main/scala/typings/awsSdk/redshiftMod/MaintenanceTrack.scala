@@ -42,6 +42,6 @@ object MaintenanceTrack {
     
     inline def setUpdateTargetsUndefined: Self = StObject.set(x, "UpdateTargets", js.undefined)
     
-    inline def setUpdateTargetsVarargs(value: UpdateTarget*): Self = StObject.set(x, "UpdateTargets", js.Array(value :_*))
+    inline def setUpdateTargetsVarargs(value: UpdateTarget*): Self = StObject.set(x, "UpdateTargets", js.Array(value*))
   }
 }

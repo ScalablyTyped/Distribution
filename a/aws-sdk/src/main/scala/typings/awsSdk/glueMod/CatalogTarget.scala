@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CatalogTarget extends StObject {
   
   /**
+    * The name of the connection for an Amazon S3-backed Data Catalog table to be a target of the crawl when using a Catalog connection type paired with a NETWORK Connection type.
+    */
+  var ConnectionName: js.UndefOr[typings.awsSdk.glueMod.ConnectionName] = js.undefined
+  
+  /**
     * The name of the database to be synchronized.
     */
   var DatabaseName: NameString
@@ -25,10 +30,14 @@ object CatalogTarget {
   
   extension [Self <: CatalogTarget](x: Self) {
     
+    inline def setConnectionName(value: ConnectionName): Self = StObject.set(x, "ConnectionName", value.asInstanceOf[js.Any])
+    
+    inline def setConnectionNameUndefined: Self = StObject.set(x, "ConnectionName", js.undefined)
+    
     inline def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
     inline def setTables(value: CatalogTablesList): Self = StObject.set(x, "Tables", value.asInstanceOf[js.Any])
     
-    inline def setTablesVarargs(value: NameString*): Self = StObject.set(x, "Tables", js.Array(value :_*))
+    inline def setTablesVarargs(value: NameString*): Self = StObject.set(x, "Tables", js.Array(value*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.fridaGum.global
 
+import typings.fridaGum.MemoryAllocOptions
 import typings.fridaGum.MemoryPatchApplyCallback
 import typings.fridaGum.MemoryScanCallbacks
 import typings.fridaGum.MemoryScanMatch
@@ -23,9 +24,12 @@ object Memory {
     * is being used by code outside the JavaScript runtime.
     *
     * @param size Number of bytes to allocate.
+    * @param options Options to customize the memory allocation.
     */
   inline def alloc(size: Double): typings.fridaGum.NativePointer = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any]).asInstanceOf[typings.fridaGum.NativePointer]
+  inline def alloc(size: Double, options: MemoryAllocOptions): typings.fridaGum.NativePointer = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.fridaGum.NativePointer]
   inline def alloc(size: UInt64): typings.fridaGum.NativePointer = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any]).asInstanceOf[typings.fridaGum.NativePointer]
+  inline def alloc(size: UInt64, options: MemoryAllocOptions): typings.fridaGum.NativePointer = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.fridaGum.NativePointer]
   
   /**
     * Allocates, encodes and writes out `str` as an ANSI string on Frida's private heap.
@@ -99,25 +103,33 @@ object Memory {
     *
     * @param address Starting address to scan from.
     * @param size Number of bytes to scan.
-    * @param pattern Match pattern of the form “13 37 ?? ff” to match 0x13 followed by 0x37 followed by any byte
-    *                followed by 0xff. For more advanced matching it is also possible to specify an r2-style mask.
-    *                The mask is bitwise AND-ed against both the needle and the haystack. To specify the mask append
-    *                a `:` character after the needle, followed by the mask using the same syntax.
-    *                For example: “13 37 13 37 : 1f ff ff f1”.
-    *                For convenience it is also possible to specify nibble-level wildcards, like “?3 37 13 ?7”,
-    *                which gets translated into masks behind the scenes.
+    * @param pattern Match pattern, see `MatchPattern` for details.
     * @param callbacks Object with callbacks.
     */
-  inline def scan(address: NativePointerValue, size: Double, pattern: String, callbacks: MemoryScanCallbacks): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scan")(address.asInstanceOf[js.Any], size.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def scan(address: NativePointerValue, size: UInt64, pattern: String, callbacks: MemoryScanCallbacks): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scan")(address.asInstanceOf[js.Any], size.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def scan(address: NativePointerValue, size: Double, pattern: String, callbacks: MemoryScanCallbacks): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("scan")(address.asInstanceOf[js.Any], size.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def scan(
+    address: NativePointerValue,
+    size: Double,
+    pattern: typings.fridaGum.MatchPattern,
+    callbacks: MemoryScanCallbacks
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("scan")(address.asInstanceOf[js.Any], size.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def scan(address: NativePointerValue, size: UInt64, pattern: String, callbacks: MemoryScanCallbacks): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("scan")(address.asInstanceOf[js.Any], size.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def scan(
+    address: NativePointerValue,
+    size: UInt64,
+    pattern: typings.fridaGum.MatchPattern,
+    callbacks: MemoryScanCallbacks
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("scan")(address.asInstanceOf[js.Any], size.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /**
     * Synchronous version of `scan()`.
     *
     * @param address Starting address to scan from.
     * @param size Number of bytes to scan.
-    * @param pattern Match pattern, see `Memory.scan()` for details.
+    * @param pattern Match pattern, see `MatchPattern` for details.
     */
   inline def scanSync(address: NativePointerValue, size: Double, pattern: String): js.Array[MemoryScanMatch] = (^.asInstanceOf[js.Dynamic].applyDynamic("scanSync")(address.asInstanceOf[js.Any], size.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[js.Array[MemoryScanMatch]]
+  inline def scanSync(address: NativePointerValue, size: Double, pattern: typings.fridaGum.MatchPattern): js.Array[MemoryScanMatch] = (^.asInstanceOf[js.Dynamic].applyDynamic("scanSync")(address.asInstanceOf[js.Any], size.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[js.Array[MemoryScanMatch]]
   inline def scanSync(address: NativePointerValue, size: UInt64, pattern: String): js.Array[MemoryScanMatch] = (^.asInstanceOf[js.Dynamic].applyDynamic("scanSync")(address.asInstanceOf[js.Any], size.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[js.Array[MemoryScanMatch]]
+  inline def scanSync(address: NativePointerValue, size: UInt64, pattern: typings.fridaGum.MatchPattern): js.Array[MemoryScanMatch] = (^.asInstanceOf[js.Dynamic].applyDynamic("scanSync")(address.asInstanceOf[js.Any], size.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[js.Array[MemoryScanMatch]]
 }

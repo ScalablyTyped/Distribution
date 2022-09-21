@@ -20,7 +20,7 @@ object coreMod {
     /**
       * @description Additional information about the error, such as an underlying network error response.
       */
-    var details: js.Any
+    var details: Any
     
     /**
       * @description A short description of the error.
@@ -34,7 +34,7 @@ object coreMod {
   }
   object BraintreeError {
     
-    inline def apply(code: String, details: js.Any, message: String, `type`: BraintreeErrorTypes): BraintreeError = {
+    inline def apply(code: String, details: Any, message: String, `type`: BraintreeErrorTypes): BraintreeError = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[BraintreeError]
@@ -44,7 +44,7 @@ object coreMod {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      inline def setDetails(value: js.Any): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: Any): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

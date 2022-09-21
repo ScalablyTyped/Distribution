@@ -40,6 +40,6 @@ object ModifyInstanceCreditSpecificationRequest {
     
     inline def setInstanceCreditSpecifications(value: InstanceCreditSpecificationListRequest): Self = StObject.set(x, "InstanceCreditSpecifications", value.asInstanceOf[js.Any])
     
-    inline def setInstanceCreditSpecificationsVarargs(value: InstanceCreditSpecificationRequest*): Self = StObject.set(x, "InstanceCreditSpecifications", js.Array(value :_*))
+    inline def setInstanceCreditSpecificationsVarargs(value: InstanceCreditSpecificationRequest*): Self = StObject.set(x, "InstanceCreditSpecifications", js.Array(value*))
   }
 }

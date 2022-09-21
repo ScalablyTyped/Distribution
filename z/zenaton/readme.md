@@ -10,13 +10,13 @@ Zenaton library
 | ------------------ | :-------------: |
 | Full name          | zenaton |
 | Keywords           | workflow, queue, jobs, background-jobs, cron, scheduler, delayed |
-| # releases         | 23 |
-| # dependents       | 1 |
-| # downloads        | 14156 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 177.66666666666666 |
+| # stars            | 50.0 |
 
 ## Links
-- [Homepage](https://zenaton.com)
+- [Homepage](https://github.com/zenaton/zenaton-node#readme)
 - [Bugs](https://github.com/zenaton/zenaton-node/issues)
 - [Repository](https://github.com/zenaton/zenaton-node)
 - [Npm](https://www.npmjs.com/package/zenaton)

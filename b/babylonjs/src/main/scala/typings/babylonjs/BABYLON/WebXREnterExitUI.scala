@@ -5,15 +5,26 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait WebXREnterExitUI
   extends StObject
      with IDisposable {
   
-  /* private */ var _activeButton: js.Any
+  /* private */ var _activeButton: Any = js.native
   
-  /* private */ var _buttons: js.Any
+  /* private */ var _buttons: Any = js.native
   
-  /* private */ var _updateButtons: js.Any
+  /* private */ var _enterXRWithButtonIndex: Any = js.native
+  
+  /* private */ var _helper: Any = js.native
+  
+  /* private */ var _onSessionGranted: Any = js.native
+  
+  /* private */ var _renderTarget: Any = js.native
+  
+  /* private */ var _scene: Any = js.native
+  
+  /* private */ var _updateButtons: Any = js.native
   
   /**
     * Fired every time the active button is changed.
@@ -22,48 +33,24 @@ trait WebXREnterExitUI
     *
     * When exiting xr the callback parameter will be null)
     */
-  var activeButtonChangedObservable: Observable[Nullable[WebXREnterExitUIButton]]
+  var activeButtonChangedObservable: Observable[Nullable[WebXREnterExitUIButton]] = js.native
   
   /** version of the options passed to this UI */
-  var options: WebXREnterExitUIOptions
+  var options: WebXREnterExitUIOptions = js.native
   
   /**
     * The HTML Div Element to which buttons are added.
     */
-  val overlay: HTMLDivElement
+  val overlay: HTMLDivElement = js.native
   
-  /* private */ var scene: js.Any
-}
-object WebXREnterExitUI {
-  
-  inline def apply(
-    _activeButton: js.Any,
-    _buttons: js.Any,
-    _updateButtons: js.Any,
-    activeButtonChangedObservable: Observable[Nullable[WebXREnterExitUIButton]],
-    dispose: () => Unit,
-    options: WebXREnterExitUIOptions,
-    overlay: HTMLDivElement,
-    scene: js.Any
-  ): WebXREnterExitUI = {
-    val __obj = js.Dynamic.literal(_activeButton = _activeButton.asInstanceOf[js.Any], _buttons = _buttons.asInstanceOf[js.Any], _updateButtons = _updateButtons.asInstanceOf[js.Any], activeButtonChangedObservable = activeButtonChangedObservable.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), options = options.asInstanceOf[js.Any], overlay = overlay.asInstanceOf[js.Any], scene = scene.asInstanceOf[js.Any])
-    __obj.asInstanceOf[WebXREnterExitUI]
-  }
-  
-  extension [Self <: WebXREnterExitUI](x: Self) {
-    
-    inline def setActiveButtonChangedObservable(value: Observable[Nullable[WebXREnterExitUIButton]]): Self = StObject.set(x, "activeButtonChangedObservable", value.asInstanceOf[js.Any])
-    
-    inline def setOptions(value: WebXREnterExitUIOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
-    
-    inline def setOverlay(value: HTMLDivElement): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
-    
-    inline def setScene(value: js.Any): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
-    
-    inline def set_activeButton(value: js.Any): Self = StObject.set(x, "_activeButton", value.asInstanceOf[js.Any])
-    
-    inline def set_buttons(value: js.Any): Self = StObject.set(x, "_buttons", value.asInstanceOf[js.Any])
-    
-    inline def set_updateButtons(value: js.Any): Self = StObject.set(x, "_updateButtons", value.asInstanceOf[js.Any])
-  }
+  /**
+    * Set the helper to be used with this UI component.
+    * The UI is bound to an experience helper. If not provided the UI can still be used but the events should be registered by the developer.
+    *
+    * @param helper the experience helper to attach
+    * @param renderTarget an optional render target (in case it is created outside of the helper scope)
+    * @returns a promise that resolves when the ui is ready
+    */
+  def setHelperAsync(helper: WebXRExperienceHelper): js.Promise[Unit] = js.native
+  def setHelperAsync(helper: WebXRExperienceHelper, renderTarget: WebXRRenderTarget): js.Promise[Unit] = js.native
 }

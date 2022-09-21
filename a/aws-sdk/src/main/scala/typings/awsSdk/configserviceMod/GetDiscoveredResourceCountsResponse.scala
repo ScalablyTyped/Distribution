@@ -17,7 +17,7 @@ trait GetDiscoveredResourceCountsResponse extends StObject {
   var resourceCounts: js.UndefOr[ResourceCounts] = js.undefined
   
   /**
-    * The total number of resources that AWS Config is recording in the region for your account. If you specify resource types in the request, AWS Config returns only the total number of resources for those resource types.  Example    AWS Config is recording three resource types in the US East (Ohio) Region for your account: 25 EC2 instances, 20 IAM users, and 15 S3 buckets, for a total of 60 resources.   You make a call to the GetDiscoveredResourceCounts action and specify the resource type, "AWS::EC2::Instances", in the request.   AWS Config returns 25 for totalDiscoveredResources.  
+    * The total number of resources that Config is recording in the region for your account. If you specify resource types in the request, Config returns only the total number of resources for those resource types.  Example    Config is recording three resource types in the US East (Ohio) Region for your account: 25 EC2 instances, 20 IAM users, and 15 S3 buckets, for a total of 60 resources.   You make a call to the GetDiscoveredResourceCounts action and specify the resource type, "AWS::EC2::Instances", in the request.   Config returns 25 for totalDiscoveredResources.  
     */
   var totalDiscoveredResources: js.UndefOr[Long] = js.undefined
 }
@@ -38,7 +38,7 @@ object GetDiscoveredResourceCountsResponse {
     
     inline def setResourceCountsUndefined: Self = StObject.set(x, "resourceCounts", js.undefined)
     
-    inline def setResourceCountsVarargs(value: ResourceCount*): Self = StObject.set(x, "resourceCounts", js.Array(value :_*))
+    inline def setResourceCountsVarargs(value: ResourceCount*): Self = StObject.set(x, "resourceCounts", js.Array(value*))
     
     inline def setTotalDiscoveredResources(value: Long): Self = StObject.set(x, "totalDiscoveredResources", value.asInstanceOf[js.Any])
     

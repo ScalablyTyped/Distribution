@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CUI.ToolbarBuildOptions")
 @js.native
-class ToolbarBuildOptions ()
+open class ToolbarBuildOptions ()
   extends StObject
      with typings.sharepoint.CUI.BuildOptions {
   
@@ -17,7 +17,7 @@ class ToolbarBuildOptions ()
   var clientID: String = js.native
   
   /* CompleteClass */
-  var dataExtensions: js.Array[js.Any] = js.native
+  var dataExtensions: js.Array[Any] = js.native
   
   /* CompleteClass */
   var fixedPositioningEnabled: Boolean = js.native

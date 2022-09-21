@@ -14,6 +14,21 @@ object foundationMod {
     def close(): Unit
     
     /**
+      * @return the current progress value [0,1];
+      */
+    def getProgress(): Double
+    
+    /**
+      * @return Whether the component is closed.
+      */
+    def isClosed(): Boolean
+    
+    /**
+      * @return Whether the component is determinate.
+      */
+    def isDeterminate(): Boolean
+    
+    /**
       * Puts the component in the open state.
       */
     def open(): Unit
@@ -34,14 +49,28 @@ object foundationMod {
   }
   object MDCProgressIndicatorFoundation {
     
-    inline def apply(close: () => Unit, open: () => Unit, setDeterminate: Boolean => Unit, setProgress: Double => Unit): MDCProgressIndicatorFoundation = {
-      val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), open = js.Any.fromFunction0(open), setDeterminate = js.Any.fromFunction1(setDeterminate), setProgress = js.Any.fromFunction1(setProgress))
+    inline def apply(
+      close: () => Unit,
+      getProgress: () => Double,
+      isClosed: () => Boolean,
+      isDeterminate: () => Boolean,
+      open: () => Unit,
+      setDeterminate: Boolean => Unit,
+      setProgress: Double => Unit
+    ): MDCProgressIndicatorFoundation = {
+      val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), getProgress = js.Any.fromFunction0(getProgress), isClosed = js.Any.fromFunction0(isClosed), isDeterminate = js.Any.fromFunction0(isDeterminate), open = js.Any.fromFunction0(open), setDeterminate = js.Any.fromFunction1(setDeterminate), setProgress = js.Any.fromFunction1(setProgress))
       __obj.asInstanceOf[MDCProgressIndicatorFoundation]
     }
     
     extension [Self <: MDCProgressIndicatorFoundation](x: Self) {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      
+      inline def setGetProgress(value: () => Double): Self = StObject.set(x, "getProgress", js.Any.fromFunction0(value))
+      
+      inline def setIsClosed(value: () => Boolean): Self = StObject.set(x, "isClosed", js.Any.fromFunction0(value))
+      
+      inline def setIsDeterminate(value: () => Boolean): Self = StObject.set(x, "isDeterminate", js.Any.fromFunction0(value))
       
       inline def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
       

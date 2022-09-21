@@ -73,18 +73,18 @@ object mod {
   /* augmented module */
   object jsreportCoreAugmentingMod {
     
-    trait Options extends StObject {
+    trait RequestOptions extends StObject {
       
       var reports: js.UndefOr[ReportsOptions] = js.undefined
     }
-    object Options {
+    object RequestOptions {
       
-      inline def apply(): Options = {
+      inline def apply(): RequestOptions = {
         val __obj = js.Dynamic.literal()
-        __obj.asInstanceOf[Options]
+        __obj.asInstanceOf[RequestOptions]
       }
       
-      extension [Self <: Options](x: Self) {
+      extension [Self <: RequestOptions](x: Self) {
         
         inline def setReports(value: ReportsOptions): Self = StObject.set(x, "reports", value.asInstanceOf[js.Any])
         

@@ -1,50 +1,55 @@
 package typings.node
 
-import typings.node.NodeJS.Dict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wasiMod {
   
+  /**
+    * The `WASI` class provides the WASI system call API and additional convenience
+    * methods for working with WASI-based applications. Each `WASI` instance
+    * represents a distinct sandbox environment. For security purposes, each `WASI`instance must have its command-line arguments, environment variables, and
+    * sandbox directory structure configured explicitly.
+    * @since v13.3.0, v12.16.0
+    */
   @JSImport("wasi", "WASI")
   @js.native
-  class WASI () extends StObject {
+  open class WASI () extends StObject {
     def this(options: WASIOptions) = this()
     
     // TODO: avoid DOM dependency until WASM moved to own lib.
     /**
-      * Attempt to initialize `instance` as a WASI reactor by invoking its `_initialize()` export, if it is present.
-      * If `instance` contains a `_start()` export, then an exception is thrown.
+      * Attempt to initialize `instance` as a WASI reactor by invoking its`_initialize()` export, if it is present. If `instance` contains a `_start()`export, then an exception is thrown.
       *
-      * `start()` requires that `instance` exports a [`WebAssembly.Memory`][] named
-      * `memory`. If `instance` does not have a `memory` export an exception is thrown.
+      * `initialize()` requires that `instance` exports a [`WebAssembly.Memory`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Memory) named`memory`.
+      * If `instance` does not have a `memory` export an exception is thrown.
       *
       * If `initialize()` is called more than once, an exception is thrown.
+      * @since v14.6.0, v12.19.0
       */
     def initialize(instance: js.Object): Unit = js.native
     
     /**
+      * Attempt to begin execution of `instance` as a WASI command by invoking its`_start()` export. If `instance` does not contain a `_start()` export, or if`instance` contains an `_initialize()`
+      * export, then an exception is thrown.
       *
-      * Attempt to begin execution of `instance` by invoking its `_start()` export.
-      * If `instance` does not contain a `_start()` export, then `start()` attempts to
-      * invoke the `__wasi_unstable_reactor_start()` export. If neither of those exports
-      * is present on `instance`, then `start()` does nothing.
-      *
-      * `start()` requires that `instance` exports a [`WebAssembly.Memory`][] named
-      * `memory`. If `instance` does not have a `memory` export an exception is thrown.
+      * `start()` requires that `instance` exports a [`WebAssembly.Memory`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Memory) named`memory`. If
+      * `instance` does not have a `memory` export an exception is thrown.
       *
       * If `start()` is called more than once, an exception is thrown.
+      * @since v13.3.0, v12.16.0
       */
     def start(instance: js.Object): Unit = js.native
     
     // TODO: avoid DOM dependency until WASM moved to own lib.
     /**
-      * Is an object that implements the WASI system call API. This object
-      * should be passed as the `wasi_snapshot_preview1` import during the instantiation of a
-      * [`WebAssembly.Instance`][].
+      * `wasiImport` is an object that implements the WASI system call API. This object
+      * should be passed as the `wasi_snapshot_preview1` import during the instantiation
+      * of a [`WebAssembly.Instance`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Instance).
+      * @since v13.3.0, v12.16.0
       */
-    val wasiImport: Dict[js.Any] = js.native
+    val wasiImport: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.Dict<any> */ Any = js.native
   }
   
   trait WASIOptions extends StObject {
@@ -54,7 +59,7 @@ object wasiMod {
       * see as command line arguments. The first argument is the virtual path to the
       * WASI command itself.
       */
-    var args: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+    var args: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * An object similar to `process.env` that the WebAssembly
@@ -68,7 +73,9 @@ object wasiMod {
       * directories within the sandbox. The corresponding values in `preopens` are
       * the real paths to those directories on the host machine.
       */
-    var preopens: js.UndefOr[Dict[java.lang.String]] = js.undefined
+    var preopens: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.Dict<string> */ Any
+      ] = js.undefined
     
     /**
       * By default, WASI applications terminate the Node.js
@@ -106,17 +113,19 @@ object wasiMod {
     
     extension [Self <: WASIOptions](x: Self) {
       
-      inline def setArgs(value: js.Array[java.lang.String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
       inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      inline def setArgsVarargs(value: java.lang.String*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setEnv(value: js.Object): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
       inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
       
-      inline def setPreopens(value: Dict[java.lang.String]): Self = StObject.set(x, "preopens", value.asInstanceOf[js.Any])
+      inline def setPreopens(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.Dict<string> */ Any
+      ): Self = StObject.set(x, "preopens", value.asInstanceOf[js.Any])
       
       inline def setPreopensUndefined: Self = StObject.set(x, "preopens", js.undefined)
       

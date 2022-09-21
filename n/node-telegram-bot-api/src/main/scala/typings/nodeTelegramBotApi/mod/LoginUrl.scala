@@ -10,7 +10,7 @@ trait LoginUrl extends StObject {
   
   var forward_text: js.UndefOr[String] = js.undefined
   
-  var request_write_acces: js.UndefOr[Boolean] = js.undefined
+  var request_write_access: js.UndefOr[Boolean] = js.undefined
   
   var url: String
 }
@@ -31,9 +31,9 @@ object LoginUrl {
     
     inline def setForward_textUndefined: Self = StObject.set(x, "forward_text", js.undefined)
     
-    inline def setRequest_write_acces(value: Boolean): Self = StObject.set(x, "request_write_acces", value.asInstanceOf[js.Any])
+    inline def setRequest_write_access(value: Boolean): Self = StObject.set(x, "request_write_access", value.asInstanceOf[js.Any])
     
-    inline def setRequest_write_accesUndefined: Self = StObject.set(x, "request_write_acces", js.undefined)
+    inline def setRequest_write_accessUndefined: Self = StObject.set(x, "request_write_access", js.undefined)
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }

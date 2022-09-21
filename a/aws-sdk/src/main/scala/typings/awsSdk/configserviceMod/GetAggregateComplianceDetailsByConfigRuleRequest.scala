@@ -17,12 +17,12 @@ trait GetAggregateComplianceDetailsByConfigRuleRequest extends StObject {
   var AwsRegion: typings.awsSdk.configserviceMod.AwsRegion
   
   /**
-    * The resource compliance status.  For the GetAggregateComplianceDetailsByConfigRuleRequest data type, AWS Config supports only the COMPLIANT and NON_COMPLIANT. AWS Config does not support the NOT_APPLICABLE and INSUFFICIENT_DATA values. 
+    * The resource compliance status.  For the GetAggregateComplianceDetailsByConfigRuleRequest data type, Config supports only the COMPLIANT and NON_COMPLIANT. Config does not support the NOT_APPLICABLE and INSUFFICIENT_DATA values. 
     */
   var ComplianceType: js.UndefOr[typings.awsSdk.configserviceMod.ComplianceType] = js.undefined
   
   /**
-    * The name of the AWS Config rule for which you want compliance information.
+    * The name of the Config rule for which you want compliance information.
     */
   var ConfigRuleName: typings.awsSdk.configserviceMod.ConfigRuleName
   
@@ -32,7 +32,7 @@ trait GetAggregateComplianceDetailsByConfigRuleRequest extends StObject {
   var ConfigurationAggregatorName: typings.awsSdk.configserviceMod.ConfigurationAggregatorName
   
   /**
-    * The maximum number of evaluation results returned on each page. The default is 50. You cannot specify a number greater than 100. If you specify 0, AWS Config uses the default.
+    * The maximum number of evaluation results returned on each page. The default is 50. You cannot specify a number greater than 100. If you specify 0, Config uses the default.
     */
   var Limit: js.UndefOr[typings.awsSdk.configserviceMod.Limit] = js.undefined
   

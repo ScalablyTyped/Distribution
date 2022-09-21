@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-mdl", "UndecoratedTable")
 @js.native
-class UndecoratedTable protected () extends _MDLComponent[UndecoratedTableProps] {
+open class UndecoratedTable protected () extends _MDLComponent[UndecoratedTableProps] {
   def this(props: UndecoratedTableProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: UndecoratedTableProps, context: js.Any) = this()
+  def this(props: UndecoratedTableProps, context: Any) = this()
 }

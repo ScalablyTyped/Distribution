@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "random-obj-prop" : "2.0.0"
+      "random-obj-prop" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "random-obj-prop" : "2.0.0"
+      "random-obj-prop" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

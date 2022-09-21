@@ -22,7 +22,7 @@ object extensionManagementApiMod {
   
   @JSImport("vso-node-api/ExtensionManagementApi", "ExtensionManagementApi")
   @js.native
-  class ExtensionManagementApi protected () extends IExtensionManagementApi {
+  open class ExtensionManagementApi protected () extends IExtensionManagementApi {
     def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
     def this(baseUrl: String, handlers: js.Array[IRequestHandler], options: IRequestOptions) = this()
   }
@@ -38,13 +38,13 @@ object extensionManagementApiMod {
   trait IExtensionManagementApi extends ClientApiBase {
     
     def createDocumentByName(
-      doc: js.Any,
+      doc: Any,
       publisherName: String,
       extensionName: String,
       scopeType: String,
       scopeValue: String,
       collectionName: String
-    ): js.Promise[js.Any] = js.native
+    ): js.Promise[Any] = js.native
     
     def deleteDocumentByName(
       publisherName: String,
@@ -73,7 +73,7 @@ object extensionManagementApiMod {
       scopeValue: String,
       collectionName: String,
       documentId: String
-    ): js.Promise[js.Any] = js.native
+    ): js.Promise[Any] = js.native
     
     def getDocumentsByName(
       publisherName: String,
@@ -81,7 +81,7 @@ object extensionManagementApiMod {
       scopeType: String,
       scopeValue: String,
       collectionName: String
-    ): js.Promise[js.Array[js.Any]] = js.native
+    ): js.Promise[js.Array[Any]] = js.native
     
     def getInstalledExtensionByName(publisherName: String, extensionName: String): js.Promise[InstalledExtension] = js.native
     def getInstalledExtensionByName(publisherName: String, extensionName: String, assetTypes: js.Array[String]): js.Promise[InstalledExtension] = js.native
@@ -182,13 +182,13 @@ object extensionManagementApiMod {
     ): js.Promise[Double] = js.native
     
     def setDocumentByName(
-      doc: js.Any,
+      doc: Any,
       publisherName: String,
       extensionName: String,
       scopeType: String,
       scopeValue: String,
       collectionName: String
-    ): js.Promise[js.Any] = js.native
+    ): js.Promise[Any] = js.native
     
     def uninstallExtensionByName(publisherName: String, extensionName: String): js.Promise[Unit] = js.native
     def uninstallExtensionByName(publisherName: String, extensionName: String, reason: String): js.Promise[Unit] = js.native
@@ -196,13 +196,13 @@ object extensionManagementApiMod {
     def uninstallExtensionByName(publisherName: String, extensionName: String, reason: Unit, reasonCode: String): js.Promise[Unit] = js.native
     
     def updateDocumentByName(
-      doc: js.Any,
+      doc: Any,
       publisherName: String,
       extensionName: String,
       scopeType: String,
       scopeValue: String,
       collectionName: String
-    ): js.Promise[js.Any] = js.native
+    ): js.Promise[Any] = js.native
     
     def updateInstalledExtension(`extension`: InstalledExtension): js.Promise[InstalledExtension] = js.native
   }

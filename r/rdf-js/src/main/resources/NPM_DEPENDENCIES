@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "rdf-js" : "4.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "rdf-js" : "4.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

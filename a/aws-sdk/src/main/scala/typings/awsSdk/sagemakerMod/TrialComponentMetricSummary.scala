@@ -49,7 +49,7 @@ trait TrialComponentMetricSummary extends StObject {
   /**
     * When the metric was last updated.
     */
-  var TimeStamp: js.UndefOr[Timestamp] = js.undefined
+  var TimeStamp: js.UndefOr[js.Date] = js.undefined
 }
 object TrialComponentMetricSummary {
   
@@ -92,7 +92,7 @@ object TrialComponentMetricSummary {
     
     inline def setStdDevUndefined: Self = StObject.set(x, "StdDev", js.undefined)
     
-    inline def setTimeStamp(value: Timestamp): Self = StObject.set(x, "TimeStamp", value.asInstanceOf[js.Any])
+    inline def setTimeStamp(value: js.Date): Self = StObject.set(x, "TimeStamp", value.asInstanceOf[js.Any])
     
     inline def setTimeStampUndefined: Self = StObject.set(x, "TimeStamp", js.undefined)
   }

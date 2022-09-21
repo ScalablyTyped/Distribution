@@ -18,7 +18,7 @@ object crosshairBaseMod {
   trait CrosshairBase[T /* <: CrosshairBaseCfg */]
     extends typings.antvComponent.groupComponentMod.default[GroupComponentCfg] {
     
-    /* protected */ def getLinePath(): js.Array[js.Any] = js.native
+    /* protected */ def getLinePath(): js.Array[Any] = js.native
     
     /* protected */ def getRotateAngle(): Double = js.native
     
@@ -29,7 +29,7 @@ object crosshairBaseMod {
       */
     /* protected */ def getTextPoint(): Point = js.native
     
-    /* private */ var renderBackground: js.Any = js.native
+    /* private */ var renderBackground: Any = js.native
     
     /* protected */ def renderLine(group: IGroup): Unit = js.native
     

@@ -10,15 +10,15 @@ Get video property from HTML markup
 | ------------------ | :-------------: |
 | Full name          | metascraper-media-provider |
 | Keywords           | media, metascraper, youtube-dl |
-| # releases         | 170 |
-| # dependents       | 3 |
-| # downloads        | 42139 |
-| # stars            | 0 |
+| # releases         | 115 |
+| # dependents       | 0.0 |
+| # downloads        | 2129.3333333333335 |
+| # stars            | 1802.0 |
 
 ## Links
-- [Homepage](https://nicedoc.io/microlinkhq/metascraper/packages/metascraper-media-provider)
+- [Homepage](https://github.com/microlinkhq/metascraper/tree/master#readme)
 - [Bugs](https://github.com/microlinkhq/metascraper/issues)
-- [Repository](https://github.com/microlinkhq/metascraper)
+- [Repository](https://github.com/microlinkhq/metascraper/tree/master)
 - [Npm](https://www.npmjs.com/package/metascraper-media-provider)
     
 

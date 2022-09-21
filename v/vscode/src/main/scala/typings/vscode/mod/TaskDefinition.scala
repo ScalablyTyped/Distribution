@@ -10,7 +10,7 @@ trait TaskDefinition
      with /**
   * Additional debug type specific properties.
   */
-/* key */ StringDictionary[js.Any] {
+/* key */ StringDictionary[Any] {
   
   /**
     * The task definition describing the task provided by an extension.

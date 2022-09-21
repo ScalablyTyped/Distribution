@@ -1,7 +1,7 @@
 
 # Scala.js typings for opentelemetry__resources
 
-Typings are for version 0.11.0
+Typings are for version 1.7.0
 
 ## Library description:
 OpenTelemetry SDK resources
@@ -10,13 +10,13 @@ OpenTelemetry SDK resources
 | ------------------ | :-------------: |
 | Full name          | @opentelemetry/resources |
 | Keywords           | opentelemetry, nodejs, resources, stats, profiling |
-| # releases         | 44 |
-| # dependents       | 29 |
-| # downloads        | 5760392 |
-| # stars            | 0 |
+| # releases         | 120 |
+| # dependents       | 0.0 |
+| # downloads        | 6954659.333333333 |
+| # stars            | 1462.0 |
 
 ## Links
-- [Homepage](https://github.com/open-telemetry/opentelemetry-js#readme)
+- [Homepage](https://github.com/open-telemetry/opentelemetry-js/tree/main/packages/opentelemetry-resources)
 - [Bugs](https://github.com/open-telemetry/opentelemetry-js/issues)
 - [Repository](https://github.com/open-telemetry/opentelemetry-js)
 - [Npm](https://www.npmjs.com/package/%40opentelemetry%2Fresources)

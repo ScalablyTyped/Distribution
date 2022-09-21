@@ -31,7 +31,7 @@ object PolicyTopicEntry {
     
     inline def setEvidencesUndefined: Self = StObject.set(x, "evidences", js.undefined)
     
-    inline def setEvidencesVarargs(value: PolicyTopicEvidence*): Self = StObject.set(x, "evidences", js.Array(value :_*))
+    inline def setEvidencesVarargs(value: PolicyTopicEvidence*): Self = StObject.set(x, "evidences", js.Array(value*))
     
     inline def setHelpCenterUrl(value: String): Self = StObject.set(x, "helpCenterUrl", value.asInstanceOf[js.Any])
     

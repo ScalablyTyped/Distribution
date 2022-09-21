@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "ColorGradient")
 @js.native
-class ColorGradient protected ()
+open class ColorGradient protected ()
   extends typings.babylonjs.indexMod.ColorGradient {
   /**
     * Creates a new color4 gradient

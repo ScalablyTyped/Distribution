@@ -16,7 +16,7 @@ trait MessageDigest[T] extends StObject {
   
   var outSize: Double = js.native
   
-  def update(msg: js.Any): T = js.native
+  def update(msg: Any): T = js.native
   @JSName("update")
-  def update_hex(msg: js.Any, enc: hex): T = js.native
+  def update_hex(msg: Any, enc: hex): T = js.native
 }

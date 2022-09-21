@@ -239,14 +239,6 @@ object ejWebAllStrings {
   inline def ejRecurrenceEditor: ejRecurrenceEditor = "ejRecurrenceEditor".asInstanceOf[ejRecurrenceEditor]
   
   @js.native
-  sealed trait ejReportDesigner extends StObject
-  inline def ejReportDesigner: ejReportDesigner = "ejReportDesigner".asInstanceOf[ejReportDesigner]
-  
-  @js.native
-  sealed trait ejReportViewer extends StObject
-  inline def ejReportViewer: ejReportViewer = "ejReportViewer".asInstanceOf[ejReportViewer]
-  
-  @js.native
   sealed trait ejResizable extends StObject
   inline def ejResizable: ejResizable = "ejResizable".asInstanceOf[ejResizable]
   

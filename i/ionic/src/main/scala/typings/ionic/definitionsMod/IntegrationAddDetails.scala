@@ -27,7 +27,7 @@ object IntegrationAddDetails {
     
     inline def setEnableArgsUndefined: Self = StObject.set(x, "enableArgs", js.undefined)
     
-    inline def setEnableArgsVarargs(value: String*): Self = StObject.set(x, "enableArgs", js.Array(value :_*))
+    inline def setEnableArgsVarargs(value: String*): Self = StObject.set(x, "enableArgs", js.Array(value*))
     
     inline def setEnv(value: IonicEnvironment): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     

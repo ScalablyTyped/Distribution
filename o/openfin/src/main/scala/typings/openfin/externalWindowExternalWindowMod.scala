@@ -15,11 +15,11 @@ object externalWindowExternalWindowMod {
   
   @JSImport("openfin/_v2/api/external-window/external-window", JSImport.Default)
   @js.native
-  class default () extends ExternalWindowModule
+  open class default () extends ExternalWindowModule
   
   @JSImport("openfin/_v2/api/external-window/external-window", "ExternalWindow")
   @js.native
-  class ExternalWindow protected () extends EmitterBase[ExternalWindowEvents] {
+  open class ExternalWindow protected () extends EmitterBase[ExternalWindowEvents] {
     def this(wire: typings.openfin.transportMod.default, identity: Identity) = this()
     
     /**
@@ -79,7 +79,7 @@ object externalWindowExternalWindowMod {
       * @experimental
       * @tutorial Window.getInfo
       */
-    def getInfo(): js.Promise[js.Any] = js.native
+    def getInfo(): js.Promise[Any] = js.native
     
     /**
       * Gets an external window's options.
@@ -87,7 +87,7 @@ object externalWindowExternalWindowMod {
       * @experimental
       * @tutorial Window.getOptions
       */
-    def getOptions(): js.Promise[js.Any] = js.native
+    def getOptions(): js.Promise[Any] = js.native
     
     /**
       * Gets the current state ("minimized", "maximized", or "restored") of
@@ -266,7 +266,7 @@ object externalWindowExternalWindowMod {
       * @experimental
       * @tutorial Window.updateOptions
       */
-    def updateOptions(options: js.Any): js.Promise[Unit] = js.native
+    def updateOptions(options: Any): js.Promise[Unit] = js.native
   }
   
   @js.native

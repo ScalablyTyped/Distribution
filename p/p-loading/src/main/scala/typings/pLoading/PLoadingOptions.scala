@@ -129,6 +129,6 @@ object PLoadingOptions {
     
     inline def setUseAddOnsUndefined: Self = StObject.set(x, "useAddOns", js.undefined)
     
-    inline def setUseAddOnsVarargs(value: String*): Self = StObject.set(x, "useAddOns", js.Array(value :_*))
+    inline def setUseAddOnsVarargs(value: String*): Self = StObject.set(x, "useAddOns", js.Array(value*))
   }
 }

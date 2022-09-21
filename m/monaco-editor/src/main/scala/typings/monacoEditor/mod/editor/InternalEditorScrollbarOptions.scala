@@ -20,6 +20,8 @@ trait InternalEditorScrollbarOptions extends StObject {
   
   val horizontalSliderSize: Double
   
+  val scrollByPage: Boolean
+  
   val useShadows: Boolean
   
   val vertical: ScrollbarVisibility
@@ -40,13 +42,14 @@ object InternalEditorScrollbarOptions {
     horizontalHasArrows: Boolean,
     horizontalScrollbarSize: Double,
     horizontalSliderSize: Double,
+    scrollByPage: Boolean,
     useShadows: Boolean,
     vertical: ScrollbarVisibility,
     verticalHasArrows: Boolean,
     verticalScrollbarSize: Double,
     verticalSliderSize: Double
   ): InternalEditorScrollbarOptions = {
-    val __obj = js.Dynamic.literal(alwaysConsumeMouseWheel = alwaysConsumeMouseWheel.asInstanceOf[js.Any], arrowSize = arrowSize.asInstanceOf[js.Any], handleMouseWheel = handleMouseWheel.asInstanceOf[js.Any], horizontal = horizontal.asInstanceOf[js.Any], horizontalHasArrows = horizontalHasArrows.asInstanceOf[js.Any], horizontalScrollbarSize = horizontalScrollbarSize.asInstanceOf[js.Any], horizontalSliderSize = horizontalSliderSize.asInstanceOf[js.Any], useShadows = useShadows.asInstanceOf[js.Any], vertical = vertical.asInstanceOf[js.Any], verticalHasArrows = verticalHasArrows.asInstanceOf[js.Any], verticalScrollbarSize = verticalScrollbarSize.asInstanceOf[js.Any], verticalSliderSize = verticalSliderSize.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(alwaysConsumeMouseWheel = alwaysConsumeMouseWheel.asInstanceOf[js.Any], arrowSize = arrowSize.asInstanceOf[js.Any], handleMouseWheel = handleMouseWheel.asInstanceOf[js.Any], horizontal = horizontal.asInstanceOf[js.Any], horizontalHasArrows = horizontalHasArrows.asInstanceOf[js.Any], horizontalScrollbarSize = horizontalScrollbarSize.asInstanceOf[js.Any], horizontalSliderSize = horizontalSliderSize.asInstanceOf[js.Any], scrollByPage = scrollByPage.asInstanceOf[js.Any], useShadows = useShadows.asInstanceOf[js.Any], vertical = vertical.asInstanceOf[js.Any], verticalHasArrows = verticalHasArrows.asInstanceOf[js.Any], verticalScrollbarSize = verticalScrollbarSize.asInstanceOf[js.Any], verticalSliderSize = verticalSliderSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[InternalEditorScrollbarOptions]
   }
   
@@ -65,6 +68,8 @@ object InternalEditorScrollbarOptions {
     inline def setHorizontalScrollbarSize(value: Double): Self = StObject.set(x, "horizontalScrollbarSize", value.asInstanceOf[js.Any])
     
     inline def setHorizontalSliderSize(value: Double): Self = StObject.set(x, "horizontalSliderSize", value.asInstanceOf[js.Any])
+    
+    inline def setScrollByPage(value: Boolean): Self = StObject.set(x, "scrollByPage", value.asInstanceOf[js.Any])
     
     inline def setUseShadows(value: Boolean): Self = StObject.set(x, "useShadows", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,7 @@ trait Callback extends StObject {
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
-  /** Required. The BigQuery project id for which data sources should be returned. Must be in the form: `projects/{project_id}` or `projects/{project_id}/locations/{location_id} */
+  /** Required. The BigQuery project id for which data sources should be returned. Must be in the form: `projects/{project_id}` or `projects/{project_id}/locations/{location_id}` */
   var parent: String
   
   /** Returns response with indentations and line breaks. */

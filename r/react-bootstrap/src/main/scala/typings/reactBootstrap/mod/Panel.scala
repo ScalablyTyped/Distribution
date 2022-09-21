@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap", "Panel")
 @js.native
-class Panel ()
+open class Panel ()
   extends typings.reactBootstrap.libMod.Panel
 object Panel {
   
@@ -18,7 +18,7 @@ object Panel {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Panel.Body")
   @js.native
-  class Body ()
+  open class Body ()
     extends typings.reactBootstrap.panelBodyMod.^
   /* static member */
   @JSImport("react-bootstrap", "Panel.Body")
@@ -29,7 +29,7 @@ object Panel {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Panel.Collapse")
   @js.native
-  class Collapse ()
+  open class Collapse ()
     extends typings.reactBootstrap.panelCollapseMod.^
   /* static member */
   @JSImport("react-bootstrap", "Panel.Collapse")
@@ -40,7 +40,7 @@ object Panel {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Panel.Footer")
   @js.native
-  class Footer ()
+  open class Footer ()
     extends typings.reactBootstrap.panelFooterMod.^
   /* static member */
   @JSImport("react-bootstrap", "Panel.Footer")
@@ -51,7 +51,7 @@ object Panel {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Panel.Heading")
   @js.native
-  class Heading ()
+  open class Heading ()
     extends typings.reactBootstrap.panelHeadingMod.^
   /* static member */
   @JSImport("react-bootstrap", "Panel.Heading")
@@ -62,7 +62,7 @@ object Panel {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Panel.Title")
   @js.native
-  class Title ()
+  open class Title ()
     extends typings.reactBootstrap.panelTitleMod.^
   /* static member */
   @JSImport("react-bootstrap", "Panel.Title")
@@ -73,7 +73,7 @@ object Panel {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Panel.Toggle")
   @js.native
-  class Toggle ()
+  open class Toggle ()
     extends typings.reactBootstrap.panelToggleMod.^
   /* static member */
   @JSImport("react-bootstrap", "Panel.Toggle")

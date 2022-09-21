@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@uirouter/core", "StateQueueManager")
 @js.native
-class StateQueueManager protected ()
+open class StateQueueManager protected ()
   extends typings.uirouterCore.stateMod.StateQueueManager {
   def this(
     router: typings.uirouterCore.routerMod.UIRouter,

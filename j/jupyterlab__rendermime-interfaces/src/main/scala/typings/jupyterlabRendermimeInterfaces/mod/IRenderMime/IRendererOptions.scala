@@ -1,5 +1,6 @@
 package typings.jupyterlabRendermimeInterfaces.mod.IRenderMime
 
+import typings.jupyterlabTranslation.tokensMod.ITranslator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,6 +34,11 @@ trait IRendererOptions extends StObject {
     * The html sanitizer.
     */
   var sanitizer: ISanitizer
+  
+  /**
+    * The application language translator.
+    */
+  var translator: js.UndefOr[ITranslator] = js.undefined
 }
 object IRendererOptions {
   
@@ -58,5 +64,9 @@ object IRendererOptions {
     inline def setResolverNull: Self = StObject.set(x, "resolver", null)
     
     inline def setSanitizer(value: ISanitizer): Self = StObject.set(x, "sanitizer", value.asInstanceOf[js.Any])
+    
+    inline def setTranslator(value: ITranslator): Self = StObject.set(x, "translator", value.asInstanceOf[js.Any])
+    
+    inline def setTranslatorUndefined: Self = StObject.set(x, "translator", js.undefined)
   }
 }

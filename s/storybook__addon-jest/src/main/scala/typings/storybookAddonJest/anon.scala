@@ -8,12 +8,12 @@ import typings.react.mod.ErrorInfo
 import typings.react.mod.ReactInstance
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
-import typings.std.Error
 import typings.std.Pick
 import typings.storybookAddonJest.provideJestResultMod.AssertionResult
 import typings.storybookAddonJest.provideJestResultMod.HocProps
 import typings.storybookAddonJest.provideJestResultMod.HocState
 import typings.storybookAddonJest.provideJestResultMod.Test
+import typings.storybookAddonJest.storybookAddonJestBooleans.`true`
 import typings.storybookAddonJest.storybookAddonJestStrings.kind
 import typings.storybookAddonJest.storybookAddonJestStrings.storyName
 import typings.storybookAddonJest.storybookAddonJestStrings.tests
@@ -58,7 +58,7 @@ object anon {
       
       inline def setAssertionResults(value: js.Array[AssertionResult]): Self = StObject.set(x, "assertionResults", value.asInstanceOf[js.Any])
       
-      inline def setAssertionResultsVarargs(value: AssertionResult*): Self = StObject.set(x, "assertionResults", js.Array(value :_*))
+      inline def setAssertionResultsVarargs(value: AssertionResult*): Self = StObject.set(x, "assertionResults", js.Array(value*))
       
       inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
@@ -69,18 +69,18 @@ object anon {
     
     var UNSAFE_componentWillMount: js.UndefOr[js.Function0[Unit]] = js.native
     
-    var UNSAFE_componentWillReceiveProps: js.UndefOr[js.Function2[/* nextProps */ ReadonlyHocProps, /* nextContext */ js.Any, Unit]] = js.native
+    var UNSAFE_componentWillReceiveProps: js.UndefOr[js.Function2[/* nextProps */ ReadonlyHocProps, /* nextContext */ Any, Unit]] = js.native
     
     var UNSAFE_componentWillUpdate: js.UndefOr[
         js.Function3[
           /* nextProps */ ReadonlyHocProps, 
           /* nextState */ ReadonlyHocState, 
-          /* nextContext */ js.Any, 
+          /* nextContext */ Any, 
           Unit
         ]
       ] = js.native
     
-    var componentDidCatch: js.UndefOr[js.Function2[/* error */ Error, /* errorInfo */ ErrorInfo, Unit]] = js.native
+    var componentDidCatch: js.UndefOr[js.Function2[/* error */ js.Error, /* errorInfo */ ErrorInfo, Unit]] = js.native
     
     def componentDidMount(): Unit = js.native
     
@@ -88,14 +88,14 @@ object anon {
         js.Function3[
           /* prevProps */ ReadonlyHocProps, 
           /* prevState */ ReadonlyHocState, 
-          /* snapshot */ js.UndefOr[js.Any], 
+          /* snapshot */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.native
     
     var componentWillMount: js.UndefOr[js.Function0[Unit]] = js.native
     
-    var componentWillReceiveProps: js.UndefOr[js.Function2[/* nextProps */ ReadonlyHocProps, /* nextContext */ js.Any, Unit]] = js.native
+    var componentWillReceiveProps: js.UndefOr[js.Function2[/* nextProps */ ReadonlyHocProps, /* nextContext */ Any, Unit]] = js.native
     
     def componentWillUnmount(): Unit = js.native
     
@@ -103,18 +103,18 @@ object anon {
         js.Function3[
           /* nextProps */ ReadonlyHocProps, 
           /* nextState */ ReadonlyHocState, 
-          /* nextContext */ js.Any, 
+          /* nextContext */ Any, 
           Unit
         ]
       ] = js.native
     
-    var context: js.Any = js.native
+    var context: Any = js.native
     
     def forceUpdate(): Unit = js.native
     def forceUpdate(callback: js.Function0[Unit]): Unit = js.native
     
     var getSnapshotBeforeUpdate: js.UndefOr[
-        js.Function2[/* prevProps */ ReadonlyHocProps, /* prevState */ ReadonlyHocState, js.Any]
+        js.Function2[/* prevProps */ ReadonlyHocProps, /* prevState */ ReadonlyHocState, Any]
       ] = js.native
     
     var mounted: Boolean = js.native
@@ -127,14 +127,14 @@ object anon {
     
     def render(): Element = js.native
     
-    def setState[K /* <: kind | storyName | tests */](
+    def setState[K /* <: storyName | kind | tests */](
       state: js.Function2[
           /* prevState */ ReadonlyHocState, 
           /* props */ ReadonlyHocProps, 
           HocState | (Pick[HocState, K])
         ]
     ): Unit = js.native
-    def setState[K /* <: kind | storyName | tests */](
+    def setState[K /* <: storyName | kind | tests */](
       state: js.Function2[
           /* prevState */ ReadonlyHocState, 
           /* props */ ReadonlyHocProps, 
@@ -142,16 +142,16 @@ object anon {
         ],
       callback: js.Function0[Unit]
     ): Unit = js.native
-    def setState[K /* <: kind | storyName | tests */](state: Pick[HocState, K]): Unit = js.native
-    def setState[K /* <: kind | storyName | tests */](state: Pick[HocState, K], callback: js.Function0[Unit]): Unit = js.native
-    def setState[K /* <: kind | storyName | tests */](state: HocState): Unit = js.native
-    def setState[K /* <: kind | storyName | tests */](state: HocState, callback: js.Function0[Unit]): Unit = js.native
+    def setState[K /* <: storyName | kind | tests */](state: Pick[HocState, K]): Unit = js.native
+    def setState[K /* <: storyName | kind | tests */](state: Pick[HocState, K], callback: js.Function0[Unit]): Unit = js.native
+    def setState[K /* <: storyName | kind | tests */](state: HocState): Unit = js.native
+    def setState[K /* <: storyName | kind | tests */](state: HocState, callback: js.Function0[Unit]): Unit = js.native
     
     var shouldComponentUpdate: js.UndefOr[
         js.Function3[
           /* nextProps */ ReadonlyHocProps, 
           /* nextState */ ReadonlyHocState, 
-          /* nextContext */ js.Any, 
+          /* nextContext */ Any, 
           Boolean
         ]
       ] = js.native
@@ -161,15 +161,32 @@ object anon {
     def stopListeningOnStory(): Unit = js.native
   }
   
+  trait Disabled extends StObject {
+    
+    var disabled: `true`
+  }
+  object Disabled {
+    
+    inline def apply(): Disabled = {
+      val __obj = js.Dynamic.literal(disabled = true)
+      __obj.asInstanceOf[Disabled]
+    }
+    
+    extension [Self <: Disabled](x: Self) {
+      
+      inline def setDisabled(value: `true`): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait FilesExt extends StObject {
     
     var filesExt: js.UndefOr[String] = js.undefined
     
-    var results: js.Any
+    var results: Any
   }
   object FilesExt {
     
-    inline def apply(results: js.Any): FilesExt = {
+    inline def apply(results: Any): FilesExt = {
       val __obj = js.Dynamic.literal(results = results.asInstanceOf[js.Any])
       __obj.asInstanceOf[FilesExt]
     }
@@ -180,7 +197,7 @@ object anon {
       
       inline def setFilesExtUndefined: Self = StObject.set(x, "filesExt", js.undefined)
       
-      inline def setResults(value: js.Any): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+      inline def setResults(value: Any): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     }
   }
   
@@ -188,14 +205,14 @@ object anon {
   trait Instantiable
     extends StObject
        with Instantiable1[(/* props */ HocProps) | (/* props */ ReadonlyHocProps), ComponentDidCatch]
-       with Instantiable2[/* props */ HocProps, /* context */ js.Any, ComponentDidCatch] {
+       with Instantiable2[/* props */ HocProps, /* context */ Any, ComponentDidCatch] {
     
-    var contextType: js.UndefOr[Context[js.Any]] = js.native
+    var contextType: js.UndefOr[Context[Any]] = js.native
     
     var defaultProps: Active = js.native
   }
   
-  /* Inlined std.Readonly<@storybook/addon-jest.@storybook/addon-jest/dist/hoc/provideJestResult.HocProps> */
+  /* Inlined std.Readonly<@storybook/addon-jest.@storybook/addon-jest/dist/ts3.9/hoc/provideJestResult.HocProps> */
   trait ReadonlyHocProps extends StObject {
     
     val active: js.UndefOr[Boolean] = js.undefined
@@ -219,7 +236,7 @@ object anon {
     }
   }
   
-  /* Inlined std.Readonly<@storybook/addon-jest.@storybook/addon-jest/dist/hoc/provideJestResult.HocProps> & std.Readonly<{  children :react.react.ReactNode | undefined}> */
+  /* Inlined std.Readonly<@storybook/addon-jest.@storybook/addon-jest/dist/ts3.9/hoc/provideJestResult.HocProps> & std.Readonly<{  children :react.react.ReactNode | undefined}> */
   trait ReadonlyHocPropsReadonlyc extends StObject {
     
     val active: js.UndefOr[Boolean] = js.undefined
@@ -249,7 +266,7 @@ object anon {
     }
   }
   
-  /* Inlined std.Readonly<@storybook/addon-jest.@storybook/addon-jest/dist/hoc/provideJestResult.HocState> */
+  /* Inlined std.Readonly<@storybook/addon-jest.@storybook/addon-jest/dist/ts3.9/hoc/provideJestResult.HocState> */
   trait ReadonlyHocState extends StObject {
     
     val kind: js.UndefOr[String] = js.undefined
@@ -279,7 +296,7 @@ object anon {
       
       inline def setTestsUndefined: Self = StObject.set(x, "tests", js.undefined)
       
-      inline def setTestsVarargs(value: Test*): Self = StObject.set(x, "tests", js.Array(value :_*))
+      inline def setTestsVarargs(value: Test*): Self = StObject.set(x, "tests", js.Array(value*))
     }
   }
 }

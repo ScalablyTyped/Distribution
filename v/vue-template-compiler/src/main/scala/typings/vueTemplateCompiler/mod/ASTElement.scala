@@ -16,14 +16,11 @@ trait ASTElement
   
   var alias: js.UndefOr[String] = js.undefined
   
-  // weex specific
-  var appendAsTree: js.UndefOr[Boolean] = js.undefined
-  
   var attrs: js.UndefOr[js.Array[Name]] = js.undefined
   
   var attrsList: js.Array[Name]
   
-  var attrsMap: Record[String, js.Any]
+  var attrsMap: Record[String, Any]
   
   var children: js.Array[ASTNode]
   
@@ -128,12 +125,7 @@ trait ASTElement
 }
 object ASTElement {
   
-  inline def apply(
-    attrsList: js.Array[Name],
-    attrsMap: Record[String, js.Any],
-    children: js.Array[ASTNode],
-    tag: String
-  ): ASTElement = {
+  inline def apply(attrsList: js.Array[Name], attrsMap: Record[String, Any], children: js.Array[ASTNode], tag: String): ASTElement = {
     val __obj = js.Dynamic.literal(attrsList = attrsList.asInstanceOf[js.Any], attrsMap = attrsMap.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(1)
     __obj.asInstanceOf[ASTElement]
@@ -145,25 +137,21 @@ object ASTElement {
     
     inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
     
-    inline def setAppendAsTree(value: Boolean): Self = StObject.set(x, "appendAsTree", value.asInstanceOf[js.Any])
-    
-    inline def setAppendAsTreeUndefined: Self = StObject.set(x, "appendAsTree", js.undefined)
-    
     inline def setAttrs(value: js.Array[Name]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     
     inline def setAttrsList(value: js.Array[Name]): Self = StObject.set(x, "attrsList", value.asInstanceOf[js.Any])
     
-    inline def setAttrsListVarargs(value: Name*): Self = StObject.set(x, "attrsList", js.Array(value :_*))
+    inline def setAttrsListVarargs(value: Name*): Self = StObject.set(x, "attrsList", js.Array(value*))
     
-    inline def setAttrsMap(value: Record[String, js.Any]): Self = StObject.set(x, "attrsMap", value.asInstanceOf[js.Any])
+    inline def setAttrsMap(value: Record[String, Any]): Self = StObject.set(x, "attrsMap", value.asInstanceOf[js.Any])
     
     inline def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
     
-    inline def setAttrsVarargs(value: Name*): Self = StObject.set(x, "attrs", js.Array(value :_*))
+    inline def setAttrsVarargs(value: Name*): Self = StObject.set(x, "attrs", js.Array(value*))
     
     inline def setChildren(value: js.Array[ASTNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setChildrenVarargs(value: ASTNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: ASTNode*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setClassBinding(value: String): Self = StObject.set(x, "classBinding", value.asInstanceOf[js.Any])
     
@@ -177,7 +165,7 @@ object ASTElement {
     
     inline def setDirectivesUndefined: Self = StObject.set(x, "directives", js.undefined)
     
-    inline def setDirectivesVarargs(value: ASTDirective*): Self = StObject.set(x, "directives", js.Array(value :_*))
+    inline def setDirectivesVarargs(value: ASTDirective*): Self = StObject.set(x, "directives", js.Array(value*))
     
     inline def setElse(value: `true`): Self = StObject.set(x, "else", value.asInstanceOf[js.Any])
     
@@ -213,7 +201,7 @@ object ASTElement {
     
     inline def setIfConditionsUndefined: Self = StObject.set(x, "ifConditions", js.undefined)
     
-    inline def setIfConditionsVarargs(value: ASTIfCondition*): Self = StObject.set(x, "ifConditions", js.Array(value :_*))
+    inline def setIfConditionsVarargs(value: ASTIfCondition*): Self = StObject.set(x, "ifConditions", js.Array(value*))
     
     inline def setIfProcessed(value: Boolean): Self = StObject.set(x, "ifProcessed", value.asInstanceOf[js.Any])
     
@@ -277,7 +265,7 @@ object ASTElement {
     
     inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
     
-    inline def setPropsVarargs(value: Value*): Self = StObject.set(x, "props", js.Array(value :_*))
+    inline def setPropsVarargs(value: Value*): Self = StObject.set(x, "props", js.Array(value*))
     
     inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     

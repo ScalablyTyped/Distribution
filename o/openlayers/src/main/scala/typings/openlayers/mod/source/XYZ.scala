@@ -47,6 +47,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param opt_options XYZ options.
   * @api stable
   */
-class XYZ () extends TileImage {
+open class XYZ () extends TileImage {
   def this(opt_options: XYZOptions) = this()
 }

@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * as Camunda properties
     */
   @JSName("$attrs")
-  var $attrs: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var $attrs: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   var correlationKeys: js.Array[CorrelationKey]
   
@@ -65,25 +65,25 @@ object ConversationNode {
   
   extension [Self <: ConversationNode](x: Self) {
     
-    inline def set$attrs(value: StringDictionary[js.Any]): Self = StObject.set(x, "$attrs", value.asInstanceOf[js.Any])
+    inline def set$attrs(value: StringDictionary[Any]): Self = StObject.set(x, "$attrs", value.asInstanceOf[js.Any])
     
     inline def set$attrsUndefined: Self = StObject.set(x, "$attrs", js.undefined)
     
     inline def setCorrelationKeys(value: js.Array[CorrelationKey]): Self = StObject.set(x, "correlationKeys", value.asInstanceOf[js.Any])
     
-    inline def setCorrelationKeysVarargs(value: CorrelationKey*): Self = StObject.set(x, "correlationKeys", js.Array(value :_*))
+    inline def setCorrelationKeysVarargs(value: CorrelationKey*): Self = StObject.set(x, "correlationKeys", js.Array(value*))
     
     inline def setDocumentation(value: js.Array[Documentation]): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     
     inline def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
     
-    inline def setDocumentationVarargs(value: Documentation*): Self = StObject.set(x, "documentation", js.Array(value :_*))
+    inline def setDocumentationVarargs(value: Documentation*): Self = StObject.set(x, "documentation", js.Array(value*))
     
     inline def setExtensionDefinitions(value: js.Array[ExtensionDefinition]): Self = StObject.set(x, "extensionDefinitions", value.asInstanceOf[js.Any])
     
     inline def setExtensionDefinitionsUndefined: Self = StObject.set(x, "extensionDefinitions", js.undefined)
     
-    inline def setExtensionDefinitionsVarargs(value: ExtensionDefinition*): Self = StObject.set(x, "extensionDefinitions", js.Array(value :_*))
+    inline def setExtensionDefinitionsVarargs(value: ExtensionDefinition*): Self = StObject.set(x, "extensionDefinitions", js.Array(value*))
     
     inline def setExtensionElements(value: ExtensionElements): Self = StObject.set(x, "extensionElements", value.asInstanceOf[js.Any])
     
@@ -93,12 +93,12 @@ object ConversationNode {
     
     inline def setMessageFlowRefs(value: js.Array[MessageFlow]): Self = StObject.set(x, "messageFlowRefs", value.asInstanceOf[js.Any])
     
-    inline def setMessageFlowRefsVarargs(value: MessageFlow*): Self = StObject.set(x, "messageFlowRefs", js.Array(value :_*))
+    inline def setMessageFlowRefsVarargs(value: MessageFlow*): Self = StObject.set(x, "messageFlowRefs", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setParticipantRefs(value: js.Array[Participant]): Self = StObject.set(x, "participantRefs", value.asInstanceOf[js.Any])
     
-    inline def setParticipantRefsVarargs(value: Participant*): Self = StObject.set(x, "participantRefs", js.Array(value :_*))
+    inline def setParticipantRefsVarargs(value: Participant*): Self = StObject.set(x, "participantRefs", js.Array(value*))
   }
 }

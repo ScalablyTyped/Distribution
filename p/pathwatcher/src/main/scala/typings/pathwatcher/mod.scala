@@ -3,7 +3,6 @@ package typings.pathwatcher
 import typings.eventKit.mod.Disposable
 import typings.node.fsMod.ReadStream
 import typings.node.fsMod.WriteStream
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ object mod {
   
   @JSImport("pathwatcher", "Directory")
   @js.native
-  class Directory protected () extends StObject {
+  open class Directory protected () extends StObject {
     // Construction
     /** Configures a new Directory instance, no files are accessed. */
     def this(directoryPath: String) = this()
@@ -49,7 +48,7 @@ object mod {
     def getBaseName(): String = js.native
     
     /** Reads file entries in this directory from disk asynchronously. */
-    def getEntries(callback: js.Function2[/* error */ Error, /* entries */ js.Array[File | this.type], Unit]): Unit = js.native
+    def getEntries(callback: js.Function2[/* error */ js.Error, /* entries */ js.Array[File | this.type], Unit]): Unit = js.native
     
     /** Reads file entries in this directory from disk synchronously. */
     def getEntriesSync(): js.Array[File | Directory] = js.native
@@ -116,7 +115,7 @@ object mod {
   
   @JSImport("pathwatcher", "File")
   @js.native
-  class File protected () extends StObject {
+  open class File protected () extends StObject {
     // Construction
     /** Configures a new File instance, no files are accessed. */
     def this(filePath: String) = this()
@@ -230,7 +229,7 @@ object mod {
   trait PathWatchErrorThrownEvent extends StObject {
     
     /** The error object. */
-    var error: Error
+    var error: js.Error
     
     /**
       *  Call this function to indicate you have handled the error.
@@ -240,14 +239,14 @@ object mod {
   }
   object PathWatchErrorThrownEvent {
     
-    inline def apply(error: Error, handle: () => Unit): PathWatchErrorThrownEvent = {
+    inline def apply(error: js.Error, handle: () => Unit): PathWatchErrorThrownEvent = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], handle = js.Any.fromFunction0(handle))
       __obj.asInstanceOf[PathWatchErrorThrownEvent]
     }
     
     extension [Self <: PathWatchErrorThrownEvent](x: Self) {
       
-      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setHandle(value: () => Unit): Self = StObject.set(x, "handle", js.Any.fromFunction0(value))
     }

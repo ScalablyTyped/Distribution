@@ -6,6 +6,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.gif
 import typings.arcgisJsApi.arcgisJsApiStrings.jpg
 import typings.arcgisJsApi.arcgisJsApiStrings.lerc
 import typings.arcgisJsApi.arcgisJsApiStrings.mixed
+import typings.arcgisJsApi.arcgisJsApiStrings.pbf
 import typings.arcgisJsApi.arcgisJsApiStrings.pdf
 import typings.arcgisJsApi.arcgisJsApiStrings.png
 import typings.arcgisJsApi.arcgisJsApiStrings.png24
@@ -27,6 +28,8 @@ trait TileInfo
   /**
     * The dots per inch (DPI) of the tiling scheme.
     *
+    * @default 96
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html#dpi)
     */
   var dpi: Double = js.native
@@ -36,7 +39,7 @@ trait TileInfo
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileInfo.html#format)
     */
-  var format: png | png24 | png32 | jpg | dib | tiff | emf | ps | pdf | gif | svg | svgz | mixed | lerc = js.native
+  var format: png | png24 | png32 | jpg | dib | tiff | emf | ps | pdf | gif | svg | svgz | mixed | lerc | pbf = js.native
   
   /**
     * Indicates if the tiling scheme supports wrap around.

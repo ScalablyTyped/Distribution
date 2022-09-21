@@ -13,6 +13,8 @@ trait ContainerClassName extends StObject {
   
   var capture: Boolean
   
+  var container: Any
+  
   var containerClassName: String
   
   var containerTpl: String
@@ -21,13 +23,13 @@ trait ContainerClassName extends StObject {
   
   var defaultCfg: `0`
   
-  var defaultStyles: StringDictionary[BackgroundColor | BackgroundColorColor | ColorFontFamily]
+  var defaultStyles: StringDictionary[BackgroundColor | Position | BackgroundColorColor]
   
-  var domStyles: js.Any
+  var domStyles: Any
   
   var end: X
   
-  var events: js.Any
+  var events: Any
   
   var id: String
   
@@ -39,9 +41,11 @@ trait ContainerClassName extends StObject {
   
   var offsetY: Double
   
+  var parent: Any
+  
   var start: X
   
-  var text: js.Any
+  var text: Any
   
   var textTpl: String
   
@@ -57,27 +61,29 @@ object ContainerClassName {
     animate: Boolean,
     animateOption: Appear,
     capture: Boolean,
+    container: Any,
     containerClassName: String,
     containerTpl: String,
     crosshairTpl: String,
     defaultCfg: `0`,
-    defaultStyles: StringDictionary[BackgroundColor | BackgroundColorColor | ColorFontFamily],
-    domStyles: js.Any,
+    defaultStyles: StringDictionary[BackgroundColor | Position | BackgroundColorColor],
+    domStyles: Any,
     end: X,
-    events: js.Any,
+    events: Any,
     id: String,
     locationType: String,
     name: String,
     offsetX: Double,
     offsetY: Double,
+    parent: Any,
     start: X,
-    text: js.Any,
+    text: Any,
     textTpl: String,
     `type`: String,
     updateAutoRender: Boolean,
     visible: Boolean
   ): ContainerClassName = {
-    val __obj = js.Dynamic.literal(animate = animate.asInstanceOf[js.Any], animateOption = animateOption.asInstanceOf[js.Any], capture = capture.asInstanceOf[js.Any], containerClassName = containerClassName.asInstanceOf[js.Any], containerTpl = containerTpl.asInstanceOf[js.Any], crosshairTpl = crosshairTpl.asInstanceOf[js.Any], defaultCfg = defaultCfg.asInstanceOf[js.Any], defaultStyles = defaultStyles.asInstanceOf[js.Any], domStyles = domStyles.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], locationType = locationType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textTpl = textTpl.asInstanceOf[js.Any], updateAutoRender = updateAutoRender.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(animate = animate.asInstanceOf[js.Any], animateOption = animateOption.asInstanceOf[js.Any], capture = capture.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], containerClassName = containerClassName.asInstanceOf[js.Any], containerTpl = containerTpl.asInstanceOf[js.Any], crosshairTpl = crosshairTpl.asInstanceOf[js.Any], defaultCfg = defaultCfg.asInstanceOf[js.Any], defaultStyles = defaultStyles.asInstanceOf[js.Any], domStyles = domStyles.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], locationType = locationType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textTpl = textTpl.asInstanceOf[js.Any], updateAutoRender = updateAutoRender.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContainerClassName]
   }
@@ -90,6 +96,8 @@ object ContainerClassName {
     
     inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
+    inline def setContainer(value: Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    
     inline def setContainerClassName(value: String): Self = StObject.set(x, "containerClassName", value.asInstanceOf[js.Any])
     
     inline def setContainerTpl(value: String): Self = StObject.set(x, "containerTpl", value.asInstanceOf[js.Any])
@@ -98,13 +106,13 @@ object ContainerClassName {
     
     inline def setDefaultCfg(value: `0`): Self = StObject.set(x, "defaultCfg", value.asInstanceOf[js.Any])
     
-    inline def setDefaultStyles(value: StringDictionary[BackgroundColor | BackgroundColorColor | ColorFontFamily]): Self = StObject.set(x, "defaultStyles", value.asInstanceOf[js.Any])
+    inline def setDefaultStyles(value: StringDictionary[BackgroundColor | Position | BackgroundColorColor]): Self = StObject.set(x, "defaultStyles", value.asInstanceOf[js.Any])
     
-    inline def setDomStyles(value: js.Any): Self = StObject.set(x, "domStyles", value.asInstanceOf[js.Any])
+    inline def setDomStyles(value: Any): Self = StObject.set(x, "domStyles", value.asInstanceOf[js.Any])
     
     inline def setEnd(value: X): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -116,9 +124,11 @@ object ContainerClassName {
     
     inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
+    inline def setParent(value: Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    
     inline def setStart(value: X): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    inline def setText(value: js.Any): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: Any): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     inline def setTextTpl(value: String): Self = StObject.set(x, "textTpl", value.asInstanceOf[js.Any])
     

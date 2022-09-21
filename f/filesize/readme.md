@@ -1,7 +1,7 @@
 
 # Scala.js typings for filesize
 
-Typings are for version 6.1.0
+Typings are for version 9.0.11
 
 ## Library description:
 JavaScript library to generate a human readable String describing the file size
@@ -10,15 +10,13 @@ JavaScript library to generate a human readable String describing the file size
 | ------------------ | :-------------: |
 | Full name          | filesize |
 | Keywords           | file, filesize, size, readable, file system, bytes, diff |
-| # releases         | 12 |
-| # dependents       | 1239 |
-| # downloads        | 383207133 |
-| # stars            | 30 |
+| # releases         | 29 |
+| # dependents       | 0.0 |
+| # downloads        | 4.4602773E7 |
+| # stars            | 1293.0 |
 
 ## Links
 - [Homepage](https://filesizejs.com)
-- [Bugs](https://github.com/avoidwork/filesize.js/issues)
-- [Repository](https://github.com/avoidwork/filesize.js)
 - [Npm](https://www.npmjs.com/package/filesize)
     
 

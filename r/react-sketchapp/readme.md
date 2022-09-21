@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-sketchapp
 
-Typings are for version 3.0
+Typings are for version 3.2.6
 
 ## Library description:
 A React renderer for Sketch.app
@@ -10,21 +10,18 @@ A React renderer for Sketch.app
 | ------------------ | :-------------: |
 | Full name          | react-sketchapp |
 | Keywords           | sketch, sketchapp, react, reactjs, renderer |
-| # releases         | 25 |
-| # dependents       | 15 |
-| # downloads        | 18683 |
-| # stars            | 10 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 400.3333333333333 |
+| # stars            | 14904.0 |
 
 ## Links
-- [Homepage](https://github.com/airbnb/react-sketchapp)
-- [Bugs](https://github.com/airbnb/react-sketchapp/issues)
-- [Repository](https://github.com/airbnb/react-sketchapp)
 - [Npm](https://www.npmjs.com/package/react-sketchapp)
     
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

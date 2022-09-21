@@ -7,17 +7,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait InsertShiftDirection extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @JSGlobal("Excel.InsertShiftDirection")
 @js.native
 object InsertShiftDirection extends StObject {
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.1]
+    */
   @js.native
   sealed trait down
     extends StObject
        with InsertShiftDirection
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.1]
+    */
   @js.native
   sealed trait right
     extends StObject

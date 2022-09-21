@@ -1,6 +1,5 @@
 package typings.phaser.Phaser.GameObjects
 
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,7 +48,7 @@ trait IsoTriangle
   /**
     * The projection level of the iso box. Change this to change the 'angle' at which you are looking at the box.
     */
-  var projection: integer = js.native
+  var projection: Double = js.native
   
   /**
     * Sets which faces of the iso triangle will be rendered.
@@ -77,7 +76,7 @@ trait IsoTriangle
     * This call can be chained.
     * @param value The value to set the projection to.
     */
-  def setProjection(value: integer): this.type = js.native
+  def setProjection(value: Double): this.type = js.native
   
   /**
     * Sets if the iso triangle will be rendered upside down or not.

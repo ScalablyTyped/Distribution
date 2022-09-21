@@ -8,7 +8,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<{  manualSortBy :boolean,   disableSortBy :boolean,   defaultCanSort :boolean,   disableMultiSort :boolean, isMultiSortEvent (e : react.react.MouseEvent<std.Element, react.react.NativeMouseEvent>): boolean,   maxMultiSortColCount :number,   disableSortRemove :boolean,   disabledMultiRemove :boolean, orderByFn (rows : std.Array<react-table.react-table.Row<D>>, sortFns : std.Array<react-table.react-table.SortByFn<D>>, directions : std.Array<boolean>): std.Array<react-table.react-table.Row<D>>,   sortTypes :std.Record<string, react-table.react-table.SortByFn<D>>,   autoResetSortBy :boolean | undefined}> */
+/* Inlined std.Partial<{  manualSortBy :boolean,   disableSortBy :boolean,   defaultCanSort :boolean,   disableMultiSort :boolean, isMultiSortEvent (e : react.react.MouseEvent<std.Element, react.react.NativeMouseEvent>): boolean,   maxMultiSortColCount :number,   disableSortRemove :boolean,   disabledMultiRemove :boolean, orderByFn (rows : std.Array<react-table.react-table.Row<D>>, sortFns : std.Array<react-table.react-table.OrderByFn<D>>, directions : std.Array<boolean>): std.Array<react-table.react-table.Row<D>>,   sortTypes :std.Record<string, react-table.react-table.SortByFn<D>>,   autoResetSortBy :boolean | undefined}> */
 trait UseSortByOptions[D /* <: js.Object */] extends StObject {
   
   var autoResetSortBy: js.UndefOr[Boolean] = js.undefined
@@ -32,7 +32,7 @@ trait UseSortByOptions[D /* <: js.Object */] extends StObject {
   var orderByFn: js.UndefOr[
     js.Function3[
       /* rows */ js.Array[Row[D]], 
-      /* sortFns */ js.Array[SortByFn[D]], 
+      /* sortFns */ js.Array[OrderByFn[D]], 
       /* directions */ js.Array[Boolean], 
       js.Array[Row[D]]
     ]
@@ -86,7 +86,7 @@ object UseSortByOptions {
     inline def setMaxMultiSortColCountUndefined: Self = StObject.set(x, "maxMultiSortColCount", js.undefined)
     
     inline def setOrderByFn(
-      value: (/* rows */ js.Array[Row[D]], /* sortFns */ js.Array[SortByFn[D]], /* directions */ js.Array[Boolean]) => js.Array[Row[D]]
+      value: (/* rows */ js.Array[Row[D]], /* sortFns */ js.Array[OrderByFn[D]], /* directions */ js.Array[Boolean]) => js.Array[Row[D]]
     ): Self = StObject.set(x, "orderByFn", js.Any.fromFunction3(value))
     
     inline def setOrderByFnUndefined: Self = StObject.set(x, "orderByFn", js.undefined)

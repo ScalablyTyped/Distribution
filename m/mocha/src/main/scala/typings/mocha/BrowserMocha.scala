@@ -27,5 +27,5 @@ trait BrowserMocha
     *
     * - _Only supported in the browser._
     */
-  def throwError(err: js.Any): scala.Nothing = js.native
+  def throwError(err: Any): scala.Nothing = js.native
 }

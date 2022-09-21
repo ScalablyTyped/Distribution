@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetEncodedResponseResponse extends StObject {
   
   /**
-    * The encoded body as a base64 string. Omitted if sizeOnly is true.
+    * The encoded body as a base64 string. Omitted if sizeOnly is true. (Encoded as a base64 string when passed over JSON)
     */
   var body: js.UndefOr[String] = js.undefined
   

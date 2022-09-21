@@ -19,7 +19,7 @@ object EventObjectCore {
     isDefaultPrevented: () => Boolean,
     isImmediatePropagationStopped: () => Boolean,
     isPropagationStopped: () => Boolean,
-    layout: js.Any,
+    layout: Any,
     namespace: String,
     originalEvent: MouseEvent,
     position: Position,

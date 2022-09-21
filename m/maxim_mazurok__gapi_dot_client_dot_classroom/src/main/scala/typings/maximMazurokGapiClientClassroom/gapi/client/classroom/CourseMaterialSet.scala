@@ -25,7 +25,7 @@ object CourseMaterialSet {
     
     inline def setMaterialsUndefined: Self = StObject.set(x, "materials", js.undefined)
     
-    inline def setMaterialsVarargs(value: CourseMaterial*): Self = StObject.set(x, "materials", js.Array(value :_*))
+    inline def setMaterialsVarargs(value: CourseMaterial*): Self = StObject.set(x, "materials", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

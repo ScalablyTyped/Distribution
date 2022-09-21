@@ -17,7 +17,7 @@ trait UserFacingMessage extends StObject {
   var localizedMessages: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientAndroidmanagement.maximMazurokGapiClientAndroidmanagementStrings.UserFacingMessage & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientAndroidmanagement.maximMazurokGapiClientAndroidmanagementStrings.UserFacingMessage & TopLevel[Any]
   ] = js.undefined
 }
 object UserFacingMessage {
@@ -36,7 +36,7 @@ object UserFacingMessage {
     inline def setLocalizedMessages(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientAndroidmanagement.maximMazurokGapiClientAndroidmanagementStrings.UserFacingMessage & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientAndroidmanagement.maximMazurokGapiClientAndroidmanagementStrings.UserFacingMessage & TopLevel[Any]
     ): Self = StObject.set(x, "localizedMessages", value.asInstanceOf[js.Any])
     
     inline def setLocalizedMessagesUndefined: Self = StObject.set(x, "localizedMessages", js.undefined)

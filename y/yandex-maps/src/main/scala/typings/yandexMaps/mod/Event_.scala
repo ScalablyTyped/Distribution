@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("yandex-maps", "Event")
 @js.native
-class Event_[OriginalEvent, TargetGeometry] protected ()
+open class Event_[OriginalEvent, TargetGeometry] protected ()
   extends StObject
      with IEvent[OriginalEvent, TargetGeometry] {
   def this(originalEvent: js.Object, sourceEvent: IEvent[js.Object, js.Object]) = this()

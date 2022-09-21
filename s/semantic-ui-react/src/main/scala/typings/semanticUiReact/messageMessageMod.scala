@@ -6,12 +6,12 @@ import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.ElementType
+import typings.react.mod.FC
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.ReactNodeArray
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticCOLORS
 import typings.semanticUiReact.genericMod.SemanticShorthandCollection
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
@@ -32,10 +32,9 @@ object messageMessageMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/collections/Message/Message", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[MessageProps, ComponentState, js.Any] {
+  open class default protected () extends Component[MessageProps, ComponentState, Any] {
     def this(props: MessageProps) = this()
-    def this(props: MessageProps, context: js.Any) = this()
+    def this(props: MessageProps, context: Any) = this()
   }
   @JSImport("semantic-ui-react/dist/commonjs/collections/Message/Message", JSImport.Default)
   @js.native
@@ -46,19 +45,19 @@ object messageMessageMod extends Shortcut {
     extends StObject
        with ComponentClass[MessageProps, ComponentState] {
     
-    var Content: StatelessComponent[MessageContentProps] = js.native
+    var Content: FC[MessageContentProps] = js.native
     
-    var Header: StatelessComponent[MessageHeaderProps] = js.native
+    var Header: FC[MessageHeaderProps] = js.native
     
-    var Item: StatelessComponent[MessageItemProps] = js.native
+    var Item: FC[MessageItemProps] = js.native
     
-    var List: StatelessComponent[MessageListProps] = js.native
+    var List: FC[MessageListProps] = js.native
   }
   
   trait MessageProps
     extends StObject
        with StrictMessageProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object MessageProps {
     
     inline def apply(): MessageProps = {
@@ -97,7 +96,7 @@ object messageMessageMod extends Shortcut {
   trait StrictMessageProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** A message can be formatted to attach itself to other content. */
     var attached: js.UndefOr[Boolean | bottom | top] = js.undefined
@@ -130,7 +129,7 @@ object messageMessageMod extends Shortcut {
     var hidden: js.UndefOr[Boolean] = js.undefined
     
     /** Add an icon by icon name or pass an <Icon /.> */
-    var icon: js.UndefOr[js.Any | Boolean] = js.undefined
+    var icon: js.UndefOr[Any | Boolean] = js.undefined
     
     /** A message may be formatted to display information. */
     var info: js.UndefOr[Boolean] = js.undefined
@@ -176,7 +175,7 @@ object messageMessageMod extends Shortcut {
     
     extension [Self <: StrictMessageProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -224,7 +223,7 @@ object messageMessageMod extends Shortcut {
       
       inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
       
-      inline def setIcon(value: js.Any | Boolean): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: Any | Boolean): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
@@ -236,7 +235,7 @@ object messageMessageMod extends Shortcut {
       
       inline def setListUndefined: Self = StObject.set(x, "list", js.undefined)
       
-      inline def setListVarargs(value: SemanticShorthandItem[MessageItemProps]*): Self = StObject.set(x, "list", js.Array(value :_*))
+      inline def setListVarargs(value: SemanticShorthandItem[MessageItemProps]*): Self = StObject.set(x, "list", js.Array(value*))
       
       inline def setNegative(value: Boolean): Self = StObject.set(x, "negative", value.asInstanceOf[js.Any])
       

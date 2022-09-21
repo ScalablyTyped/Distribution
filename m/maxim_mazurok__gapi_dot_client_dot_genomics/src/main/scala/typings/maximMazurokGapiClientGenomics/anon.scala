@@ -1,6 +1,8 @@
 package typings.maximMazurokGapiClientGenomics
 
 import typings.maximMazurokGapiClientGenomics.gapi.client.genomics.CancelOperationRequest
+import typings.maximMazurokGapiClientGenomics.gapi.client.genomics.CheckInRequest
+import typings.maximMazurokGapiClientGenomics.gapi.client.genomics.RunPipelineRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,6 +10,193 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object anon {
   
   trait Accesstoken extends StObject {
+    
+    /** V1 error format. */
+    @JSName("$.xgafv")
+    var $Dotxgafv: js.UndefOr[String] = js.undefined
+    
+    /** OAuth access token. */
+    var access_token: js.UndefOr[String] = js.undefined
+    
+    /** Data format for response. */
+    var alt: js.UndefOr[String] = js.undefined
+    
+    /** JSONP */
+    var callback: js.UndefOr[String] = js.undefined
+    
+    /** Selector specifying which fields to include in a partial response. */
+    var fields: js.UndefOr[String] = js.undefined
+    
+    /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
+    var key: js.UndefOr[String] = js.undefined
+    
+    /** OAuth 2.0 token for the current user. */
+    var oauth_token: js.UndefOr[String] = js.undefined
+    
+    /** Returns response with indentations and line breaks. */
+    var prettyPrint: js.UndefOr[Boolean] = js.undefined
+    
+    /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
+    var quotaUser: js.UndefOr[String] = js.undefined
+    
+    /** Request body */
+    var resource: RunPipelineRequest
+    
+    /** Legacy upload protocol for media (e.g. "media", "multipart"). */
+    var uploadType: js.UndefOr[String] = js.undefined
+    
+    /** Upload protocol for media (e.g. "raw", "multipart"). */
+    var upload_protocol: js.UndefOr[String] = js.undefined
+  }
+  object Accesstoken {
+    
+    inline def apply(resource: RunPipelineRequest): Accesstoken = {
+      val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Accesstoken]
+    }
+    
+    extension [Self <: Accesstoken](x: Self) {
+      
+      inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
+      
+      inline def set$DotxgafvUndefined: Self = StObject.set(x, "$.xgafv", js.undefined)
+      
+      inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
+      
+      inline def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
+      
+      inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+      
+      inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+      
+      inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+      
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      
+      inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      
+      inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+      
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      
+      inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
+      
+      inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
+      
+      inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
+      
+      inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
+      
+      inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
+      
+      inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+      
+      inline def setResource(value: RunPipelineRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      
+      inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
+      
+      inline def setUploadTypeUndefined: Self = StObject.set(x, "uploadType", js.undefined)
+      
+      inline def setUpload_protocol(value: String): Self = StObject.set(x, "upload_protocol", value.asInstanceOf[js.Any])
+      
+      inline def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
+    }
+  }
+  
+  trait Alt extends StObject {
+    
+    /** V1 error format. */
+    @JSName("$.xgafv")
+    var $Dotxgafv: js.UndefOr[String] = js.undefined
+    
+    /** OAuth access token. */
+    var access_token: js.UndefOr[String] = js.undefined
+    
+    /** Data format for response. */
+    var alt: js.UndefOr[String] = js.undefined
+    
+    /** JSONP */
+    var callback: js.UndefOr[String] = js.undefined
+    
+    /** Selector specifying which fields to include in a partial response. */
+    var fields: js.UndefOr[String] = js.undefined
+    
+    /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
+    var key: js.UndefOr[String] = js.undefined
+    
+    /** OAuth 2.0 token for the current user. */
+    var oauth_token: js.UndefOr[String] = js.undefined
+    
+    /** Returns response with indentations and line breaks. */
+    var prettyPrint: js.UndefOr[Boolean] = js.undefined
+    
+    /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
+    var quotaUser: js.UndefOr[String] = js.undefined
+    
+    /** Legacy upload protocol for media (e.g. "media", "multipart"). */
+    var uploadType: js.UndefOr[String] = js.undefined
+    
+    /** Upload protocol for media (e.g. "raw", "multipart"). */
+    var upload_protocol: js.UndefOr[String] = js.undefined
+  }
+  object Alt {
+    
+    inline def apply(): Alt = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Alt]
+    }
+    
+    extension [Self <: Alt](x: Self) {
+      
+      inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
+      
+      inline def set$DotxgafvUndefined: Self = StObject.set(x, "$.xgafv", js.undefined)
+      
+      inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
+      
+      inline def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
+      
+      inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+      
+      inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+      
+      inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+      
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      
+      inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      
+      inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+      
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      
+      inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
+      
+      inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
+      
+      inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
+      
+      inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
+      
+      inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
+      
+      inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+      
+      inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
+      
+      inline def setUploadTypeUndefined: Self = StObject.set(x, "uploadType", js.undefined)
+      
+      inline def setUpload_protocol(value: String): Self = StObject.set(x, "upload_protocol", value.asInstanceOf[js.Any])
+      
+      inline def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
+    }
+  }
+  
+  trait Callback extends StObject {
     
     /** V1 error format. */
     @JSName("$.xgafv")
@@ -49,14 +238,14 @@ object anon {
     /** Upload protocol for media (e.g. "raw", "multipart"). */
     var upload_protocol: js.UndefOr[String] = js.undefined
   }
-  object Accesstoken {
+  object Callback {
     
-    inline def apply(name: String, resource: CancelOperationRequest): Accesstoken = {
+    inline def apply(name: String, resource: CancelOperationRequest): Callback = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Accesstoken]
+      __obj.asInstanceOf[Callback]
     }
     
-    extension [Self <: Accesstoken](x: Self) {
+    extension [Self <: Callback](x: Self) {
       
       inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
       
@@ -108,7 +297,7 @@ object anon {
     }
   }
   
-  trait Alt extends StObject {
+  trait Fields extends StObject {
     
     /** V1 error format. */
     @JSName("$.xgafv")
@@ -147,14 +336,14 @@ object anon {
     /** Upload protocol for media (e.g. "raw", "multipart"). */
     var upload_protocol: js.UndefOr[String] = js.undefined
   }
-  object Alt {
+  object Fields {
     
-    inline def apply(name: String): Alt = {
+    inline def apply(name: String): Fields = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Alt]
+      __obj.asInstanceOf[Fields]
     }
     
-    extension [Self <: Alt](x: Self) {
+    extension [Self <: Fields](x: Self) {
       
       inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
       
@@ -204,7 +393,7 @@ object anon {
     }
   }
   
-  trait Callback extends StObject {
+  trait Filter extends StObject {
     
     /** V1 error format. */
     @JSName("$.xgafv")
@@ -226,11 +415,8 @@ object anon {
       * A string for filtering Operations. In v2alpha1, the following filter fields are supported: * createTime: The time this job was created * events: The set of event (names) that
       * have occurred while running the pipeline. The : operator can be used to determine if a particular event has occurred. * error: If the pipeline is running, this value is NULL.
       * Once the pipeline finishes, the value is the standard Google error code. * labels.key or labels."key with space" where key is a label key. * done: If the pipeline is running,
-      * this value is false. Once the pipeline finishes, the value is true. In v1 and v1alpha2, the following filter fields are supported: * projectId: Required. Corresponds to
-      * OperationMetadata.projectId. * createTime: The time this job was created, in seconds from the [epoch](http://en.wikipedia.org/wiki/Unix_time). Can use `>=` and/or `<=`
-      * operators. * status: Can be `RUNNING`, `SUCCESS`, `FAILURE`, or `CANCELED`. Only one status may be specified. * labels.key where key is a label key. Examples: * `projectId =
-      * my-project AND createTime >= 1432140000` * `projectId = my-project AND createTime >= 1432140000 AND createTime <= 1432150000 AND status = RUNNING` * `projectId = my-project AND
-      * labels.color = *` * `projectId = my-project AND labels.color = red`
+      * this value is false. Once the pipeline finishes, the value is true. Examples: * `projectId = my-project AND createTime >= 1432140000` * `projectId = my-project AND createTime >=
+      * 1432140000 AND createTime <= 1432150000 AND status = RUNNING` * `projectId = my-project AND labels.color = *` * `projectId = my-project AND labels.color = red`
       */
     var filter: js.UndefOr[String] = js.undefined
     
@@ -261,14 +447,14 @@ object anon {
     /** Upload protocol for media (e.g. "raw", "multipart"). */
     var upload_protocol: js.UndefOr[String] = js.undefined
   }
-  object Callback {
+  object Filter {
     
-    inline def apply(name: String): Callback = {
+    inline def apply(name: String): Filter = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Callback]
+      __obj.asInstanceOf[Filter]
     }
     
-    extension [Self <: Callback](x: Self) {
+    extension [Self <: Filter](x: Self) {
       
       inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
       
@@ -311,6 +497,203 @@ object anon {
       inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
       
       inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+      
+      inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
+      
+      inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
+      
+      inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
+      
+      inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+      
+      inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
+      
+      inline def setUploadTypeUndefined: Self = StObject.set(x, "uploadType", js.undefined)
+      
+      inline def setUpload_protocol(value: String): Self = StObject.set(x, "upload_protocol", value.asInstanceOf[js.Any])
+      
+      inline def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
+    }
+  }
+  
+  trait Id extends StObject {
+    
+    /** V1 error format. */
+    @JSName("$.xgafv")
+    var $Dotxgafv: js.UndefOr[String] = js.undefined
+    
+    /** OAuth access token. */
+    var access_token: js.UndefOr[String] = js.undefined
+    
+    /** Data format for response. */
+    var alt: js.UndefOr[String] = js.undefined
+    
+    /** JSONP */
+    var callback: js.UndefOr[String] = js.undefined
+    
+    /** Selector specifying which fields to include in a partial response. */
+    var fields: js.UndefOr[String] = js.undefined
+    
+    /** The VM identity token for authenticating the VM instance. https://cloud.google.com/compute/docs/instances/verifying-instance-identity */
+    var id: String
+    
+    /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
+    var key: js.UndefOr[String] = js.undefined
+    
+    /** OAuth 2.0 token for the current user. */
+    var oauth_token: js.UndefOr[String] = js.undefined
+    
+    /** Returns response with indentations and line breaks. */
+    var prettyPrint: js.UndefOr[Boolean] = js.undefined
+    
+    /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
+    var quotaUser: js.UndefOr[String] = js.undefined
+    
+    /** Request body */
+    var resource: CheckInRequest
+    
+    /** Legacy upload protocol for media (e.g. "media", "multipart"). */
+    var uploadType: js.UndefOr[String] = js.undefined
+    
+    /** Upload protocol for media (e.g. "raw", "multipart"). */
+    var upload_protocol: js.UndefOr[String] = js.undefined
+  }
+  object Id {
+    
+    inline def apply(id: String, resource: CheckInRequest): Id = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Id]
+    }
+    
+    extension [Self <: Id](x: Self) {
+      
+      inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
+      
+      inline def set$DotxgafvUndefined: Self = StObject.set(x, "$.xgafv", js.undefined)
+      
+      inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
+      
+      inline def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
+      
+      inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+      
+      inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+      
+      inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+      
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      
+      inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      
+      inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      
+      inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
+      
+      inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
+      
+      inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
+      
+      inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
+      
+      inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
+      
+      inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+      
+      inline def setResource(value: CheckInRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      
+      inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
+      
+      inline def setUploadTypeUndefined: Self = StObject.set(x, "uploadType", js.undefined)
+      
+      inline def setUpload_protocol(value: String): Self = StObject.set(x, "upload_protocol", value.asInstanceOf[js.Any])
+      
+      inline def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
+    }
+  }
+  
+  trait Key extends StObject {
+    
+    /** V1 error format. */
+    @JSName("$.xgafv")
+    var $Dotxgafv: js.UndefOr[String] = js.undefined
+    
+    /** OAuth access token. */
+    var access_token: js.UndefOr[String] = js.undefined
+    
+    /** Data format for response. */
+    var alt: js.UndefOr[String] = js.undefined
+    
+    /** JSONP */
+    var callback: js.UndefOr[String] = js.undefined
+    
+    /** Selector specifying which fields to include in a partial response. */
+    var fields: js.UndefOr[String] = js.undefined
+    
+    /** The VM identity token for authenticating the VM instance. https://cloud.google.com/compute/docs/instances/verifying-instance-identity */
+    var id: String
+    
+    /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
+    var key: js.UndefOr[String] = js.undefined
+    
+    /** OAuth 2.0 token for the current user. */
+    var oauth_token: js.UndefOr[String] = js.undefined
+    
+    /** Returns response with indentations and line breaks. */
+    var prettyPrint: js.UndefOr[Boolean] = js.undefined
+    
+    /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
+    var quotaUser: js.UndefOr[String] = js.undefined
+    
+    /** Legacy upload protocol for media (e.g. "media", "multipart"). */
+    var uploadType: js.UndefOr[String] = js.undefined
+    
+    /** Upload protocol for media (e.g. "raw", "multipart"). */
+    var upload_protocol: js.UndefOr[String] = js.undefined
+  }
+  object Key {
+    
+    inline def apply(id: String): Key = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Key]
+    }
+    
+    extension [Self <: Key](x: Self) {
+      
+      inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
+      
+      inline def set$DotxgafvUndefined: Self = StObject.set(x, "$.xgafv", js.undefined)
+      
+      inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
+      
+      inline def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
+      
+      inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+      
+      inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+      
+      inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+      
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      
+      inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      
+      inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      
+      inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
+      
+      inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
       
       inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
       

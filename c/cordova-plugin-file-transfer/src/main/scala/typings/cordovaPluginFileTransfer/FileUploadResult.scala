@@ -11,7 +11,7 @@ trait FileUploadResult extends StObject {
   var bytesSent: Double
   
   /** The HTTP response headers by the server. Currently supported on iOS only.*/
-  var headers: js.Any
+  var headers: Any
   
   /** The HTTP response returned by the server. */
   var response: String
@@ -21,7 +21,7 @@ trait FileUploadResult extends StObject {
 }
 object FileUploadResult {
   
-  inline def apply(bytesSent: Double, headers: js.Any, response: String, responseCode: Double): FileUploadResult = {
+  inline def apply(bytesSent: Double, headers: Any, response: String, responseCode: Double): FileUploadResult = {
     val __obj = js.Dynamic.literal(bytesSent = bytesSent.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], responseCode = responseCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileUploadResult]
   }
@@ -30,7 +30,7 @@ object FileUploadResult {
     
     inline def setBytesSent(value: Double): Self = StObject.set(x, "bytesSent", value.asInstanceOf[js.Any])
     
-    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setResponse(value: String): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     

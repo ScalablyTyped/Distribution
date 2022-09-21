@@ -1,7 +1,7 @@
 
 # Scala.js typings for signalfx
 
-Typings are for version 7.0
+Typings are for version 7.4
 
 ## Library description:
 Node.js client library for SignalFx
@@ -10,10 +10,10 @@ Node.js client library for SignalFx
 | ------------------ | :-------------: |
 | Full name          | signalfx |
 | Keywords           | signalfx, nodejs |
-| # releases         | 3 |
-| # dependents       | 4 |
-| # downloads        | 149279 |
-| # stars            | 2 |
+| # releases         | 13 |
+| # dependents       | 0.0 |
+| # downloads        | 55060.0 |
+| # stars            | 19.0 |
 
 ## Links
 - [Homepage](https://signalfx.com)

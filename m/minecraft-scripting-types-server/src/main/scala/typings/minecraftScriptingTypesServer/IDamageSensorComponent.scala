@@ -41,6 +41,6 @@ object IDamageSensorComponent {
     
     inline def setOn_damage(value: js.Array[MinecraftTrigger]): Self = StObject.set(x, "on_damage", value.asInstanceOf[js.Any])
     
-    inline def setOn_damageVarargs(value: MinecraftTrigger*): Self = StObject.set(x, "on_damage", js.Array(value :_*))
+    inline def setOn_damageVarargs(value: MinecraftTrigger*): Self = StObject.set(x, "on_damage", js.Array(value*))
   }
 }

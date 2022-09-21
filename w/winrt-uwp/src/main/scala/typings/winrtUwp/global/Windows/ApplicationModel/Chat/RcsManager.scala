@@ -39,7 +39,7 @@ object RcsManager {
     * @return A list of RcsTransport instances.
     */
   /* static member */
-  inline def getTransportsAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransportsAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+  inline def getTransportsAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransportsAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[Any]]]
   
   /**
     * Asynchronously allows a user to leave a particular conversation.

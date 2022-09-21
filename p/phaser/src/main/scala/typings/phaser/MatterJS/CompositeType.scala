@@ -85,7 +85,7 @@ trait CompositeType extends StObject {
     * @property plugin
     * @type {}
     */
-  var plugin: js.Any
+  var plugin: Any
   
   /**
     * A `String` denoting the type of object.
@@ -105,7 +105,7 @@ object CompositeType {
     id: Double,
     isModified: Boolean,
     label: String,
-    plugin: js.Any,
+    plugin: Any,
     `type`: String
   ): CompositeType = {
     val __obj = js.Dynamic.literal(bodies = bodies.asInstanceOf[js.Any], composites = composites.asInstanceOf[js.Any], constraints = constraints.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any])
@@ -117,15 +117,15 @@ object CompositeType {
     
     inline def setBodies(value: js.Array[BodyType]): Self = StObject.set(x, "bodies", value.asInstanceOf[js.Any])
     
-    inline def setBodiesVarargs(value: BodyType*): Self = StObject.set(x, "bodies", js.Array(value :_*))
+    inline def setBodiesVarargs(value: BodyType*): Self = StObject.set(x, "bodies", js.Array(value*))
     
     inline def setComposites(value: js.Array[CompositeType]): Self = StObject.set(x, "composites", value.asInstanceOf[js.Any])
     
-    inline def setCompositesVarargs(value: CompositeType*): Self = StObject.set(x, "composites", js.Array(value :_*))
+    inline def setCompositesVarargs(value: CompositeType*): Self = StObject.set(x, "composites", js.Array(value*))
     
     inline def setConstraints(value: js.Array[ConstraintType]): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
     
-    inline def setConstraintsVarargs(value: ConstraintType*): Self = StObject.set(x, "constraints", js.Array(value :_*))
+    inline def setConstraintsVarargs(value: ConstraintType*): Self = StObject.set(x, "constraints", js.Array(value*))
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -137,7 +137,7 @@ object CompositeType {
     
     inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
-    inline def setPlugin(value: js.Any): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+    inline def setPlugin(value: Any): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientImageGalleryFullscreenViewerEventArgs")
 @js.native
-class ASPxClientImageGalleryFullscreenViewerEventArgs protected ()
+open class ASPxClientImageGalleryFullscreenViewerEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientImageGalleryFullscreenViewerEventArgs {
   /**

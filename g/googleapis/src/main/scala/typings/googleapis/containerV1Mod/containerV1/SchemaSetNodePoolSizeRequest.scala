@@ -4,48 +4,37 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * SetNodePoolSizeRequest sets the size a node pool.
-  */
 trait SchemaSetNodePoolSizeRequest extends StObject {
   
   /**
-    * Deprecated. The name of the cluster to update. This field has been
-    * deprecated and replaced by the name field.
+    * Deprecated. The name of the cluster to update. This field has been deprecated and replaced by the name field.
     */
-  var clusterId: js.UndefOr[String] = js.undefined
+  var clusterId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The name (project, location, cluster, node pool id) of the node pool to
-    * set size. Specified in the format
-    * &#39;projects/x/locations/x/clusters/x/nodePools/ *&#39;.
+    * The name (project, location, cluster, node pool id) of the node pool to set size. Specified in the format `projects/x/locations/x/clusters/x/nodePools/x`.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The desired node count for the pool.
+    * Required. The desired node count for the pool.
     */
-  var nodeCount: js.UndefOr[Double] = js.undefined
+  var nodeCount: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * Deprecated. The name of the node pool to update. This field has been
-    * deprecated and replaced by the name field.
+    * Deprecated. The name of the node pool to update. This field has been deprecated and replaced by the name field.
     */
-  var nodePoolId: js.UndefOr[String] = js.undefined
+  var nodePoolId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Deprecated. The Google Developers Console [project ID or project
-    * number](https://support.google.com/cloud/answer/6158840). This field has
-    * been deprecated and replaced by the name field.
+    * Deprecated. The Google Developers Console [project ID or project number](https://cloud.google.com/resource-manager/docs/creating-managing-projects). This field has been deprecated and replaced by the name field.
     */
-  var projectId: js.UndefOr[String] = js.undefined
+  var projectId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Deprecated. The name of the Google Compute Engine
-    * [zone](/compute/docs/zones#available) in which the cluster resides. This
-    * field has been deprecated and replaced by the name field.
+    * Deprecated. The name of the Google Compute Engine [zone](https://cloud.google.com/compute/docs/zones#available) in which the cluster resides. This field has been deprecated and replaced by the name field.
     */
-  var zone: js.UndefOr[String] = js.undefined
+  var zone: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaSetNodePoolSizeRequest {
   
@@ -58,25 +47,37 @@ object SchemaSetNodePoolSizeRequest {
     
     inline def setClusterId(value: String): Self = StObject.set(x, "clusterId", value.asInstanceOf[js.Any])
     
+    inline def setClusterIdNull: Self = StObject.set(x, "clusterId", null)
+    
     inline def setClusterIdUndefined: Self = StObject.set(x, "clusterId", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setNodeCount(value: Double): Self = StObject.set(x, "nodeCount", value.asInstanceOf[js.Any])
     
+    inline def setNodeCountNull: Self = StObject.set(x, "nodeCount", null)
+    
     inline def setNodeCountUndefined: Self = StObject.set(x, "nodeCount", js.undefined)
     
     inline def setNodePoolId(value: String): Self = StObject.set(x, "nodePoolId", value.asInstanceOf[js.Any])
+    
+    inline def setNodePoolIdNull: Self = StObject.set(x, "nodePoolId", null)
     
     inline def setNodePoolIdUndefined: Self = StObject.set(x, "nodePoolId", js.undefined)
     
     inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
+    inline def setProjectIdNull: Self = StObject.set(x, "projectId", null)
+    
     inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
     inline def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+    
+    inline def setZoneNull: Self = StObject.set(x, "zone", null)
     
     inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
   }

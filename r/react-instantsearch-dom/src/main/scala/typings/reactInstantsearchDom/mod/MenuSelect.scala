@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-instantsearch-dom", "MenuSelect")
 @js.native
-class MenuSelect protected ()
-  extends Component[js.Any, js.Object, js.Any] {
-  def this(props: js.Any) = this()
+open class MenuSelect protected ()
+  extends Component[MenuSelectProps, js.Object, Any] {
+  def this(props: MenuSelectProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: js.Any, context: js.Any) = this()
+  def this(props: MenuSelectProps, context: Any) = this()
 }

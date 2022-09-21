@@ -13,7 +13,7 @@ object global {
     
     @JSGlobal("daterangepicker")
     @js.native
-    class ^ protected ()
+    open class ^ protected ()
       extends typings.daterangepicker.mod.^ {
       def this(element: HTMLElement) = this()
       def this(element: HTMLElement, options: Options) = this()

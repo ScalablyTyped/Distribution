@@ -16,7 +16,6 @@ import typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.python3Dot6
 import typings.awsSdkClientLambdaNode.typesFunctionCodeMod.FunctionCode
 import typings.awsSdkClientLambdaNode.typesInvokeAsyncInputMod.InvokeAsyncInput
 import typings.node.streamMod.Readable
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -181,12 +180,12 @@ object inputTypesUnionMod {
       __obj.asInstanceOf[typings.awsSdkClientLambdaNode.typesRemovePermissionInputMod.RemovePermissionInput]
     }
     
-    inline def TagResourceInput(Resource: String, Tags: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): typings.awsSdkClientLambdaNode.typesTagResourceInputMod.TagResourceInput = {
+    inline def TagResourceInput(Resource: String, Tags: StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])): typings.awsSdkClientLambdaNode.typesTagResourceInputMod.TagResourceInput = {
       val __obj = js.Dynamic.literal(Resource = Resource.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientLambdaNode.typesTagResourceInputMod.TagResourceInput]
     }
     
-    inline def UntagResourceInput(Resource: String, TagKeys: js.Array[String] | Iterable[String]): typings.awsSdkClientLambdaNode.typesUntagResourceInputMod.UntagResourceInput = {
+    inline def UntagResourceInput(Resource: String, TagKeys: js.Array[String] | js.Iterable[String]): typings.awsSdkClientLambdaNode.typesUntagResourceInputMod.UntagResourceInput = {
       val __obj = js.Dynamic.literal(Resource = Resource.asInstanceOf[js.Any], TagKeys = TagKeys.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientLambdaNode.typesUntagResourceInputMod.UntagResourceInput]
     }

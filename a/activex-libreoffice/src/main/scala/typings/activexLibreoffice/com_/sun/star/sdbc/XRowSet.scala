@@ -56,7 +56,7 @@ object XRowSet {
     last: () => Boolean,
     next: () => Boolean,
     previous: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     refreshRow: () => Unit,
     relative: Double => Boolean,
     release: () => Unit,

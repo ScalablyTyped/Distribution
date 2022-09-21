@@ -1,15 +1,35 @@
 package typings.awsSdk.wafv2Mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type Action = java.lang.String
+type Action = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ALLOW
+  - typings.awsSdk.awsSdkStrings.BLOCK
+  - typings.awsSdk.awsSdkStrings.COUNT
+  - typings.awsSdk.awsSdkStrings.CAPTCHA
+  - typings.awsSdk.awsSdkStrings.EXCLUDED_AS_COUNT
+  - java.lang.String
+*/
+type ActionValue = _ActionValue | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.MATCH
+  - typings.awsSdk.awsSdkStrings.NO_MATCH
+  - typings.awsSdk.awsSdkStrings.EVALUATE_AS_STRING
+  - java.lang.String
+*/
+type BodyParsingFallbackBehavior = _BodyParsingFallbackBehavior | String
 
 type Boolean = scala.Boolean
 
-type CapacityUnit = scala.Double
+type CapacityUnit = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.EQ
@@ -20,11 +40,15 @@ type CapacityUnit = scala.Double
   - typings.awsSdk.awsSdkStrings.GT
   - java.lang.String
 */
-type ComparisonOperator = typings.awsSdk.wafv2Mod._ComparisonOperator | java.lang.String
+type ComparisonOperator = _ComparisonOperator | String
 
-type ConsumedCapacity = scala.Double
+type Conditions = js.Array[Condition]
 
-type Country = java.lang.String
+type ConsumedCapacity = Double
+
+type CookieNames = js.Array[SingleCookieName]
+
+type Country = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AF
@@ -276,32 +300,68 @@ type Country = java.lang.String
   - typings.awsSdk.awsSdkStrings.YE
   - typings.awsSdk.awsSdkStrings.ZM
   - typings.awsSdk.awsSdkStrings.ZW
+  - typings.awsSdk.awsSdkStrings.XK
   - java.lang.String
 */
-type CountryCode = typings.awsSdk.wafv2Mod._CountryCode | java.lang.String
+type CountryCode = _CountryCode | String
 
-type CountryCodes = js.Array[typings.awsSdk.wafv2Mod.CountryCode]
+type CountryCodes = js.Array[CountryCode]
 
-type EntityDescription = java.lang.String
+type CustomHTTPHeaderName = String
 
-type EntityId = java.lang.String
+type CustomHTTPHeaderValue = String
 
-type EntityName = java.lang.String
+type CustomHTTPHeaders = js.Array[CustomHTTPHeader]
 
-type ExcludedRules = js.Array[typings.awsSdk.wafv2Mod.ExcludedRule]
+type CustomResponseBodies = StringDictionary[CustomResponseBody]
+
+type DownloadUrl = String
+
+type EntityDescription = String
+
+type EntityId = String
+
+type EntityName = String
+
+type ExcludedRules = js.Array[ExcludedRule]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.TOKEN_MISSING
+  - typings.awsSdk.awsSdkStrings.TOKEN_EXPIRED
+  - java.lang.String
+*/
+type FailureReason = _FailureReason | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.MATCH
   - typings.awsSdk.awsSdkStrings.NO_MATCH
   - java.lang.String
 */
-type FallbackBehavior = typings.awsSdk.wafv2Mod._FallbackBehavior | java.lang.String
+type FallbackBehavior = _FallbackBehavior | String
 
-type FieldToMatchData = java.lang.String
+type FieldIdentifier = String
 
-type FirewallManagerRuleGroups = js.Array[typings.awsSdk.wafv2Mod.FirewallManagerRuleGroup]
+type FieldToMatchData = String
 
-type ForwardedIPHeaderName = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.KEEP
+  - typings.awsSdk.awsSdkStrings.DROP
+  - java.lang.String
+*/
+type FilterBehavior = _FilterBehavior | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.MEETS_ALL
+  - typings.awsSdk.awsSdkStrings.MEETS_ANY
+  - java.lang.String
+*/
+type FilterRequirement = _FilterRequirement | String
+
+type Filters = js.Array[Filter]
+
+type FirewallManagerRuleGroups = js.Array[FirewallManagerRuleGroup]
+
+type ForwardedIPHeaderName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FIRST
@@ -309,52 +369,121 @@ type ForwardedIPHeaderName = java.lang.String
   - typings.awsSdk.awsSdkStrings.ANY
   - java.lang.String
 */
-type ForwardedIPPosition = typings.awsSdk.wafv2Mod._ForwardedIPPosition | java.lang.String
+type ForwardedIPPosition = _ForwardedIPPosition | String
 
-type HTTPHeaders = js.Array[typings.awsSdk.wafv2Mod.HTTPHeader]
+type HTTPHeaders = js.Array[HTTPHeader]
 
-type HTTPMethod = java.lang.String
+type HTTPMethod = String
 
-type HTTPVersion = java.lang.String
+type HTTPVersion = String
 
-type HeaderName = java.lang.String
+type HeaderName = String
 
-type HeaderValue = java.lang.String
+type HeaderNames = js.Array[FieldToMatchData]
 
-type IPAddress = java.lang.String
+type HeaderValue = String
+
+type IPAddress = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.IPV4
   - typings.awsSdk.awsSdkStrings.IPV6
   - java.lang.String
 */
-type IPAddressVersion = typings.awsSdk.wafv2Mod._IPAddressVersion | java.lang.String
+type IPAddressVersion = _IPAddressVersion | String
 
-type IPAddresses = js.Array[typings.awsSdk.wafv2Mod.IPAddress]
+type IPAddresses = js.Array[IPAddress]
 
-type IPSetSummaries = js.Array[typings.awsSdk.wafv2Mod.IPSetSummary]
+type IPSetSummaries = js.Array[IPSetSummary]
 
-type IPString = java.lang.String
+type IPString = String
 
-type ListMaxItems = scala.Double
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ALL
+  - typings.awsSdk.awsSdkStrings.KEY
+  - typings.awsSdk.awsSdkStrings.VALUE
+  - java.lang.String
+*/
+type JsonMatchScope = _JsonMatchScope | String
 
-type LockToken = java.lang.String
+type JsonPointerPath = String
 
-type LogDestinationConfigs = js.Array[typings.awsSdk.wafv2Mod.ResourceArn]
+type JsonPointerPaths = js.Array[JsonPointerPath]
 
-type LoggingConfigurations = js.Array[typings.awsSdk.wafv2Mod.LoggingConfiguration]
+type LabelMatchKey = String
 
-type ManagedRuleGroupSummaries = js.Array[typings.awsSdk.wafv2Mod.ManagedRuleGroupSummary]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.LABEL
+  - typings.awsSdk.awsSdkStrings.NAMESPACE
+  - java.lang.String
+*/
+type LabelMatchScope = _LabelMatchScope | String
 
-type MetricName = java.lang.String
+type LabelName = String
 
-type NextMarker = java.lang.String
+type LabelSummaries = js.Array[LabelSummary]
 
-type PaginationLimit = scala.Double
+type Labels = js.Array[Label]
 
-type PolicyString = java.lang.String
+type ListMaxItems = Double
 
-type PopulationSize = scala.Double
+type LockToken = String
+
+type LogDestinationConfigs = js.Array[ResourceArn]
+
+type LoggingConfigurations = js.Array[LoggingConfiguration]
+
+type LoginPathString = String
+
+type ManagedRuleGroupConfigs = js.Array[ManagedRuleGroupConfig]
+
+type ManagedRuleGroupSummaries = js.Array[ManagedRuleGroupSummary]
+
+type ManagedRuleGroupVersions = js.Array[ManagedRuleGroupVersion]
+
+type ManagedRuleSetSummaries = js.Array[ManagedRuleSetSummary]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ALL
+  - typings.awsSdk.awsSdkStrings.KEY
+  - typings.awsSdk.awsSdkStrings.VALUE
+  - java.lang.String
+*/
+type MapMatchScope = _MapMatchScope | String
+
+type MetricName = String
+
+type NextMarker = String
+
+type OutputUrl = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CONTINUE
+  - typings.awsSdk.awsSdkStrings.MATCH
+  - typings.awsSdk.awsSdkStrings.NO_MATCH
+  - java.lang.String
+*/
+type OversizeHandling = _OversizeHandling | String
+
+type PaginationLimit = Double
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.JSON
+  - typings.awsSdk.awsSdkStrings.FORM_ENCODED
+  - java.lang.String
+*/
+type PayloadType = _PayloadType | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.IOS
+  - typings.awsSdk.awsSdkStrings.ANDROID
+  - java.lang.String
+*/
+type Platform = _Platform | String
+
+type PolicyString = String
+
+type PopulationSize = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.EXACTLY
@@ -364,71 +493,103 @@ type PopulationSize = scala.Double
   - typings.awsSdk.awsSdkStrings.CONTAINS_WORD
   - java.lang.String
 */
-type PositionalConstraint = typings.awsSdk.wafv2Mod._PositionalConstraint | java.lang.String
+type PositionalConstraint = _PositionalConstraint | String
+
+type PublishedVersions = StringDictionary[ManagedRuleSetVersion]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.IP
   - typings.awsSdk.awsSdkStrings.FORWARDED_IP
   - java.lang.String
 */
-type RateBasedStatementAggregateKeyType = typings.awsSdk.wafv2Mod._RateBasedStatementAggregateKeyType | java.lang.String
+type RateBasedStatementAggregateKeyType = _RateBasedStatementAggregateKeyType | String
 
-type RateLimit = scala.Double
+type RateLimit = Double
 
-type RedactedFields = js.Array[typings.awsSdk.wafv2Mod.FieldToMatch]
+type RedactedFields = js.Array[FieldToMatch]
 
-type RegexPatternSetSummaries = js.Array[typings.awsSdk.wafv2Mod.RegexPatternSetSummary]
+type RegexPatternSetSummaries = js.Array[RegexPatternSetSummary]
 
-type RegexPatternString = java.lang.String
+type RegexPatternString = String
 
-type RegularExpressionList = js.Array[typings.awsSdk.wafv2Mod.Regex]
+type RegularExpressionList = js.Array[Regex]
 
-type ResourceArn = java.lang.String
+type ReleaseNotes = String
 
-type ResourceArns = js.Array[typings.awsSdk.wafv2Mod.ResourceArn]
+type ReleaseSummaries = js.Array[ReleaseSummary]
+
+type ResourceArn = String
+
+type ResourceArns = js.Array[ResourceArn]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.APPLICATION_LOAD_BALANCER
   - typings.awsSdk.awsSdkStrings.API_GATEWAY
   - typings.awsSdk.awsSdkStrings.APPSYNC
+  - typings.awsSdk.awsSdkStrings.COGNITO_USER_POOL
   - java.lang.String
 */
-type ResourceType = typings.awsSdk.wafv2Mod._ResourceType | java.lang.String
+type ResourceType = _ResourceType | String
 
-type RuleGroupSummaries = js.Array[typings.awsSdk.wafv2Mod.RuleGroupSummary]
+type ResponseCode = Double
 
-type RulePriority = scala.Double
+type ResponseContent = String
 
-type RuleSummaries = js.Array[typings.awsSdk.wafv2Mod.RuleSummary]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.TEXT_PLAIN
+  - typings.awsSdk.awsSdkStrings.TEXT_HTML
+  - typings.awsSdk.awsSdkStrings.APPLICATION_JSON
+  - java.lang.String
+*/
+type ResponseContentType = _ResponseContentType | String
 
-type Rules = js.Array[typings.awsSdk.wafv2Mod.Rule]
+type ResponseStatusCode = Double
 
-type SampleWeight = scala.Double
+type RuleGroupSummaries = js.Array[RuleGroupSummary]
 
-type SampledHTTPRequests = js.Array[typings.awsSdk.wafv2Mod.SampledHTTPRequest]
+type RulePriority = Double
+
+type RuleSummaries = js.Array[RuleSummary]
+
+type Rules = js.Array[Rule]
+
+type SampleWeight = Double
+
+type SampledHTTPRequests = js.Array[SampledHTTPRequest]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CLOUDFRONT
   - typings.awsSdk.awsSdkStrings.REGIONAL
   - java.lang.String
 */
-type Scope = typings.awsSdk.wafv2Mod._Scope | java.lang.String
+type Scope = _Scope | String
 
-type SearchString = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.wafv2Mod.Blob | java.lang.String
+type SearchString = Buffer | js.typedarray.Uint8Array | Blob | String
 
-type Size = scala.Double
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.LOW
+  - typings.awsSdk.awsSdkStrings.HIGH
+  - java.lang.String
+*/
+type SensitivityLevel = _SensitivityLevel | String
 
-type Statements = js.Array[typings.awsSdk.wafv2Mod.Statement]
+type SingleCookieName = String
 
-type TagKey = java.lang.String
+type Size = Double
 
-type TagKeyList = js.Array[typings.awsSdk.wafv2Mod.TagKey]
+type SolveTimestamp = Double
 
-type TagList = js.Array[typings.awsSdk.wafv2Mod.Tag]
+type Statements = js.Array[Statement]
 
-type TagValue = java.lang.String
+type TagKey = String
 
-type TextTransformationPriority = scala.Double
+type TagKeyList = js.Array[TagKey]
+
+type TagList = js.Array[Tag]
+
+type TagValue = String
+
+type TextTransformationPriority = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
@@ -437,23 +598,46 @@ type TextTransformationPriority = scala.Double
   - typings.awsSdk.awsSdkStrings.LOWERCASE
   - typings.awsSdk.awsSdkStrings.CMD_LINE
   - typings.awsSdk.awsSdkStrings.URL_DECODE
+  - typings.awsSdk.awsSdkStrings.BASE64_DECODE
+  - typings.awsSdk.awsSdkStrings.HEX_DECODE
+  - typings.awsSdk.awsSdkStrings.MD5
+  - typings.awsSdk.awsSdkStrings.REPLACE_COMMENTS
+  - typings.awsSdk.awsSdkStrings.ESCAPE_SEQ_DECODE
+  - typings.awsSdk.awsSdkStrings.SQL_HEX_DECODE
+  - typings.awsSdk.awsSdkStrings.CSS_DECODE
+  - typings.awsSdk.awsSdkStrings.JS_DECODE
+  - typings.awsSdk.awsSdkStrings.NORMALIZE_PATH
+  - typings.awsSdk.awsSdkStrings.NORMALIZE_PATH_WIN
+  - typings.awsSdk.awsSdkStrings.REMOVE_NULLS
+  - typings.awsSdk.awsSdkStrings.REPLACE_NULLS
+  - typings.awsSdk.awsSdkStrings.BASE64_DECODE_EXT
+  - typings.awsSdk.awsSdkStrings.URL_DECODE_UNI
+  - typings.awsSdk.awsSdkStrings.UTF8_TO_UNICODE
   - java.lang.String
 */
-type TextTransformationType = typings.awsSdk.wafv2Mod._TextTransformationType | java.lang.String
+type TextTransformationType = _TextTransformationType | String
 
-type TextTransformations = js.Array[typings.awsSdk.wafv2Mod.TextTransformation]
+type TextTransformations = js.Array[TextTransformation]
 
-type Timestamp = typings.std.Date
+type TimeWindowDay = Double
 
-type URIString = java.lang.String
+type TimeWindowSecond = Double
 
-type VendorName = java.lang.String
+type Timestamp = js.Date
 
-type WebACLSummaries = js.Array[typings.awsSdk.wafv2Mod.WebACLSummary]
+type URIString = String
+
+type VendorName = String
+
+type VersionKeyString = String
+
+type VersionsToPublish = StringDictionary[VersionToPublish]
+
+type WebACLSummaries = js.Array[WebACLSummary]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2019-07-29`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.wafv2Mod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

@@ -9,6 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PermissionDetailsLocationIOS extends StObject {
   
+  /**
+    * The scope of granted permission. Indicates when it's possible to use location.
+    */
   var scope: whenInUse | always | none
 }
 object PermissionDetailsLocationIOS {

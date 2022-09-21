@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VerifySoftwareTokenRequest extends StObject {
   
   /**
-    * The access token.
+    * A valid access token that Amazon Cognito issued to the user whose software token you want to verify.
     */
   var AccessToken: js.UndefOr[TokenModelType] = js.undefined
   
@@ -17,12 +17,12 @@ trait VerifySoftwareTokenRequest extends StObject {
   var FriendlyDeviceName: js.UndefOr[StringType] = js.undefined
   
   /**
-    * The session which should be passed both ways in challenge-response calls to the service.
+    * The session that should be passed both ways in challenge-response calls to the service.
     */
   var Session: js.UndefOr[SessionType] = js.undefined
   
   /**
-    * The one time password computed using the secret code returned by AssociateSoftwareToken".
+    * The one- time password computed using the secret code returned by AssociateSoftwareToken.
     */
   var UserCode: SoftwareTokenMFAUserCodeType
 }

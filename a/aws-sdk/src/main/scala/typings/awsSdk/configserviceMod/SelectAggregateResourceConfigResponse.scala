@@ -39,6 +39,6 @@ object SelectAggregateResourceConfigResponse {
     
     inline def setResultsUndefined: Self = StObject.set(x, "Results", js.undefined)
     
-    inline def setResultsVarargs(value: String*): Self = StObject.set(x, "Results", js.Array(value :_*))
+    inline def setResultsVarargs(value: String*): Self = StObject.set(x, "Results", js.Array(value*))
   }
 }

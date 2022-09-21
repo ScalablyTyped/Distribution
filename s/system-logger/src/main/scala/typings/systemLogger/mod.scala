@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("system-logger", "Logger")
   @js.native
-  class Logger () extends StObject {
+  open class Logger () extends StObject {
     def this(configuration: LoggerConfiguration) = this()
     def this(configuration: Unit, fileConfig: FileConfiguration) = this()
     def this(configuration: LoggerConfiguration, fileConfig: FileConfiguration) = this()
@@ -22,9 +22,9 @@ object mod {
     ) = this()
     
     def log(level: String, message: String): Unit = js.native
-    def log(level: String, message: String, optional: js.Any): Unit = js.native
+    def log(level: String, message: String, optional: Any): Unit = js.native
     def log(level: level, message: String): Unit = js.native
-    def log(level: level, message: String, optional: js.Any): Unit = js.native
+    def log(level: level, message: String, optional: Any): Unit = js.native
   }
   
   @js.native
@@ -152,7 +152,7 @@ object mod {
   
   trait LoggerConfiguration extends StObject {
     
-    var externalDisplayFormat: js.UndefOr[js.Any] = js.undefined
+    var externalDisplayFormat: js.UndefOr[Any] = js.undefined
     
     var level: typings.systemLogger.mod.level
     
@@ -167,7 +167,7 @@ object mod {
     
     extension [Self <: LoggerConfiguration](x: Self) {
       
-      inline def setExternalDisplayFormat(value: js.Any): Self = StObject.set(x, "externalDisplayFormat", value.asInstanceOf[js.Any])
+      inline def setExternalDisplayFormat(value: Any): Self = StObject.set(x, "externalDisplayFormat", value.asInstanceOf[js.Any])
       
       inline def setExternalDisplayFormatUndefined: Self = StObject.set(x, "externalDisplayFormat", js.undefined)
       
@@ -181,28 +181,28 @@ object mod {
   
   trait SourcesConfiguration extends StObject {
     
-    var callback: js.Any
+    var callback: Any
     
-    var connector: js.Any
+    var connector: Any
     
     var levels: js.Array[level]
   }
   object SourcesConfiguration {
     
-    inline def apply(callback: js.Any, connector: js.Any, levels: js.Array[level]): SourcesConfiguration = {
+    inline def apply(callback: Any, connector: Any, levels: js.Array[level]): SourcesConfiguration = {
       val __obj = js.Dynamic.literal(callback = callback.asInstanceOf[js.Any], connector = connector.asInstanceOf[js.Any], levels = levels.asInstanceOf[js.Any])
       __obj.asInstanceOf[SourcesConfiguration]
     }
     
     extension [Self <: SourcesConfiguration](x: Self) {
       
-      inline def setCallback(value: js.Any): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+      inline def setCallback(value: Any): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
-      inline def setConnector(value: js.Any): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
+      inline def setConnector(value: Any): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
       
       inline def setLevels(value: js.Array[level]): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
       
-      inline def setLevelsVarargs(value: level*): Self = StObject.set(x, "levels", js.Array(value :_*))
+      inline def setLevelsVarargs(value: level*): Self = StObject.set(x, "levels", js.Array(value*))
     }
   }
 }

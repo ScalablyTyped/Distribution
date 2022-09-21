@@ -32,23 +32,23 @@ object Diagnostics {
     val ^ : js.Any = js.native
     
     /* static member */
-    inline def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    inline def addEventListener_tracingstatuschanged(`type`: tracingstatuschanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_tracingstatuschanged(`type`: tracingstatuschanged, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Raised when a client starts listening to the causality trace. */
     /* static member */
     @JSGlobal("Windows.Foundation.Diagnostics.AsyncCausalityTracer.ontracingstatuschanged")
     @js.native
-    def ontracingstatuschanged: EventHandler[js.Any] = js.native
-    inline def ontracingstatuschanged_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ontracingstatuschanged")(x.asInstanceOf[js.Any])
+    def ontracingstatuschanged: EventHandler[Any] = js.native
+    inline def ontracingstatuschanged_=(x: EventHandler[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ontracingstatuschanged")(x.asInstanceOf[js.Any])
     
     /* static member */
-    inline def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    inline def removeEventListener_tracingstatuschanged(`type`: tracingstatuschanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_tracingstatuschanged(`type`: tracingstatuschanged, listener: EventHandler[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Indicates that a previously created asynchronous operation has completed all of its asynchronous work.
@@ -252,7 +252,7 @@ object Diagnostics {
   /** Represents the destination of logged messages from LoggingChannel instances. */
   @JSGlobal("Windows.Foundation.Diagnostics.FileLoggingSession")
   @js.native
-  class FileLoggingSession protected ()
+  open class FileLoggingSession protected ()
     extends StObject
        with typings.winrtUwp.Windows.Foundation.Diagnostics.FileLoggingSession {
     /**
@@ -277,7 +277,7 @@ object Diagnostics {
   /** Creates Event Tracing for Windows (ETW) events that mark the start and end of a group of related events. */
   @JSGlobal("Windows.Foundation.Diagnostics.LoggingActivity")
   @js.native
-  class LoggingActivity protected ()
+  open class LoggingActivity protected ()
     extends StObject
        with typings.winrtUwp.Windows.Foundation.Diagnostics.LoggingActivity {
     /**
@@ -298,7 +298,7 @@ object Diagnostics {
   /** Represents a source of log messages. */
   @JSGlobal("Windows.Foundation.Diagnostics.LoggingChannel")
   @js.native
-  class LoggingChannel protected ()
+  open class LoggingChannel protected ()
     extends StObject
        with typings.winrtUwp.Windows.Foundation.Diagnostics.LoggingChannel {
     /**
@@ -329,7 +329,7 @@ object Diagnostics {
   @JSGlobal("Windows.Foundation.Diagnostics.LoggingChannelOptions")
   @js.native
   /** Creates a LoggingChannelOptions object with all options set to default values. */
-  class LoggingChannelOptions ()
+  open class LoggingChannelOptions ()
     extends StObject
        with typings.winrtUwp.Windows.Foundation.Diagnostics.LoggingChannelOptions {
     /**
@@ -394,7 +394,7 @@ object Diagnostics {
   @JSGlobal("Windows.Foundation.Diagnostics.LoggingFields")
   @js.native
   /** Initializes a new LoggingFields instance. */
-  class LoggingFields ()
+  open class LoggingFields ()
     extends StObject
        with typings.winrtUwp.Windows.Foundation.Diagnostics.LoggingFields
   
@@ -444,7 +444,7 @@ object Diagnostics {
   @JSGlobal("Windows.Foundation.Diagnostics.LoggingOptions")
   @js.native
   /** Initializes a new LoggingOptions instance with default option values. */
-  class LoggingOptions ()
+  open class LoggingOptions ()
     extends StObject
        with typings.winrtUwp.Windows.Foundation.Diagnostics.LoggingOptions {
     /**
@@ -481,7 +481,7 @@ object Diagnostics {
   /** Represents the destination of logged messages from LoggingChannel instances. */
   @JSGlobal("Windows.Foundation.Diagnostics.LoggingSession")
   @js.native
-  class LoggingSession protected ()
+  open class LoggingSession protected ()
     extends StObject
        with typings.winrtUwp.Windows.Foundation.Diagnostics.LoggingSession {
     /**
@@ -495,7 +495,7 @@ object Diagnostics {
   @JSGlobal("Windows.Foundation.Diagnostics.RuntimeBrokerErrorSettings")
   @js.native
   /** Creates and initializes a new instance of the RuntimeBrokerErrorSettings . */
-  class RuntimeBrokerErrorSettings ()
+  open class RuntimeBrokerErrorSettings ()
     extends StObject
        with typings.winrtUwp.Windows.Foundation.Diagnostics.RuntimeBrokerErrorSettings {
     

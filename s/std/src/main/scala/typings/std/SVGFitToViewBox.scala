@@ -6,8 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SVGFitToViewBox extends StObject {
   
+  /* standard dom */
   val preserveAspectRatio: SVGAnimatedPreserveAspectRatio
   
+  /* standard dom */
   val viewBox: SVGAnimatedRect
 }
 object SVGFitToViewBox {

@@ -12,7 +12,7 @@ trait HPOConfig extends StObject {
   var algorithmHyperParameterRanges: js.UndefOr[HyperParameterRanges] = js.undefined
   
   /**
-    * The metric to optimize during HPO.
+    * The metric to optimize during HPO.  Amazon Personalize doesn't support configuring the hpoObjective at this time. 
     */
   var hpoObjective: js.UndefOr[HPOObjective] = js.undefined
   

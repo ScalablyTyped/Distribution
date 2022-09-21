@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteUserAttributesRequest extends StObject {
   
   /**
-    * The access token used in the request to delete user attributes.
+    * A valid access token that Amazon Cognito issued to the user whose attributes you want to delete.
     */
   var AccessToken: TokenModelType
   
   /**
-    * An array of strings representing the user attribute names you wish to delete. For custom attributes, you must prepend the custom: prefix to the attribute name.
+    * An array of strings representing the user attribute names you want to delete. For custom attributes, you must prependattach the custom: prefix to the front of the attribute name.
     */
   var UserAttributeNames: AttributeNameListType
 }
@@ -29,6 +29,6 @@ object DeleteUserAttributesRequest {
     
     inline def setUserAttributeNames(value: AttributeNameListType): Self = StObject.set(x, "UserAttributeNames", value.asInstanceOf[js.Any])
     
-    inline def setUserAttributeNamesVarargs(value: AttributeNameType*): Self = StObject.set(x, "UserAttributeNames", js.Array(value :_*))
+    inline def setUserAttributeNamesVarargs(value: AttributeNameType*): Self = StObject.set(x, "UserAttributeNames", js.Array(value*))
   }
 }

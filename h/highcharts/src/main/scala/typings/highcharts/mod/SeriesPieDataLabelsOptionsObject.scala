@@ -8,9 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SeriesPieDataLabelsOptionsObject extends StObject {
   
   /**
-    * (Highcharts) Alignment method for data labels. Possible values are:
+    * (Highcharts, Highmaps) Alignment method for data labels. Possible values
+    * are:
     *
-    * - `toPlotEdges`: Each label touches the nearest vertical edge of the plot
+    * - `plotEdges`: Each label touches the nearest vertical edge of the plot
     * area.
     *
     * - `connectors`: Connectors have the same x position and the widest label
@@ -78,8 +79,8 @@ trait SeriesPieDataLabelsOptionsObject extends StObject {
   var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
-    * (Highcharts) The color of the line connecting the data label to the pie
-    * slice. The default color is the same as the point's color.
+    * (Highcharts, Highmaps) The color of the line connecting the data label to
+    * the pie slice. The default color is the same as the point's color.
     *
     * In styled mode, the connector stroke is given in the
     * `.highcharts-data-label-connector` class.
@@ -87,17 +88,18 @@ trait SeriesPieDataLabelsOptionsObject extends StObject {
   var connectorColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
-    * (Highcharts) The distance from the data label to the connector. Note that
-    * data labels also have a default `padding`, so in order for the connector
-    * to touch the text, the `padding` must also be 0.
+    * (Highcharts, Highmaps) The distance from the data label to the connector.
+    * Note that data labels also have a default `padding`, so in order for the
+    * connector to touch the text, the `padding` must also be 0.
     */
   var connectorPadding: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highcharts) Specifies the method that is used to generate the connector
-    * path. Highcharts provides 3 built-in connector shapes: `'fixedOffset'`
-    * (default), `'straight'` and `'crookedLine'`. Using `'crookedLine'` has
-    * the most sense (in most of the cases) when `'alignTo'` is set.
+    * (Highcharts, Highmaps) Specifies the method that is used to generate the
+    * connector path. Highcharts provides 3 built-in connector shapes:
+    * `'fixedOffset'` (default), `'straight'` and `'crookedLine'`. Using
+    * `'crookedLine'` has the most sense (in most of the cases) when
+    * `'alignTo'` is set.
     *
     * Users can provide their own method by passing a function instead of a
     * String. 3 arguments are passed to the callback:
@@ -121,8 +123,8 @@ trait SeriesPieDataLabelsOptionsObject extends StObject {
   var connectorShape: js.UndefOr[String | js.Function] = js.undefined
   
   /**
-    * (Highcharts) The width of the line connecting the data label to the pie
-    * slice.
+    * (Highcharts, Highmaps) The width of the line connecting the data label to
+    * the pie slice.
     *
     * In styled mode, the connector stroke width is given in the
     * `.highcharts-data-label-connector` class.
@@ -130,11 +132,11 @@ trait SeriesPieDataLabelsOptionsObject extends StObject {
   var connectorWidth: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highcharts) Works only if `connectorShape` is `'crookedLine'`. It
-    * defines how far from the vertical plot edge the coonnector path should be
-    * crooked.
+    * (Highcharts, Highmaps) Works only if `connectorShape` is `'crookedLine'`.
+    * It defines how far from the vertical plot edge the coonnector path should
+    * be crooked.
     */
-  var crookDistance: js.UndefOr[String] = js.undefined
+  var crookDistance: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether to hide data labels that
@@ -147,15 +149,16 @@ trait SeriesPieDataLabelsOptionsObject extends StObject {
     * (Highcharts, Highstock, Gantt) Whether to defer displaying the data
     * labels until the initial series animation has finished. Setting to
     * `false` renders the data label immediately. If set to `true` inherits the
-    * defer time set in plotOptions.series.animation.
+    * defer time set in plotOptions.series.animation. If set to a number, a
+    * defer time is specified in milliseconds.
     */
-  var defer: js.UndefOr[Boolean] = js.undefined
+  var defer: js.UndefOr[Boolean | Double] = js.undefined
   
   /**
-    * (Highcharts) The distance of the data label from the pie's edge. Negative
-    * numbers put the data label on top of the pie slices. Can also be defined
-    * as a percentage of pie's radius. Connectors are only shown for data
-    * labels outside the pie.
+    * (Highcharts, Highmaps) The distance of the data label from the pie's
+    * edge. Negative numbers put the data label on top of the pie slices. Can
+    * also be defined as a percentage of pie's radius. Connectors are only
+    * shown for data labels outside the pie.
     */
   var distance: js.UndefOr[Double | String] = js.undefined
   
@@ -247,8 +250,9 @@ trait SeriesPieDataLabelsOptionsObject extends StObject {
   var shape: js.UndefOr[String] = js.undefined
   
   /**
-    * (Highcharts) Whether to render the connector as a soft arc or a line with
-    * sharp break. Works only if `connectorShape` equals to `fixedOffset`.
+    * (Highcharts, Highmaps) Whether to render the connector as a soft arc or a
+    * line with sharp break. Works only if `connectorShape` equals to
+    * `fixedOffset`.
     */
   var softConnector: js.UndefOr[Boolean] = js.undefined
   
@@ -313,11 +317,11 @@ trait SeriesPieDataLabelsOptionsObject extends StObject {
   var y: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highcharts, Highstock, Highmaps, Gantt) The Z index of the data labels.
-    * The default Z index puts it above the series. Use a Z index of 2 to
-    * display it behind the series.
+    * (Highcharts, Highstock, Highmaps, Gantt) The z index of the data labels.
+    * Use a `zIndex` of 6 to display it above the series, or use a `zIndex` of
+    * 2 to display it behind the series.
     */
-  var z: js.UndefOr[Double] = js.undefined
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object SeriesPieDataLabelsOptionsObject {
   
@@ -378,7 +382,7 @@ object SeriesPieDataLabelsOptionsObject {
     
     inline def setConnectorWidthUndefined: Self = StObject.set(x, "connectorWidth", js.undefined)
     
-    inline def setCrookDistance(value: String): Self = StObject.set(x, "crookDistance", value.asInstanceOf[js.Any])
+    inline def setCrookDistance(value: Double): Self = StObject.set(x, "crookDistance", value.asInstanceOf[js.Any])
     
     inline def setCrookDistanceUndefined: Self = StObject.set(x, "crookDistance", js.undefined)
     
@@ -386,7 +390,7 @@ object SeriesPieDataLabelsOptionsObject {
     
     inline def setCropUndefined: Self = StObject.set(x, "crop", js.undefined)
     
-    inline def setDefer(value: Boolean): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
+    inline def setDefer(value: Boolean | Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     
     inline def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
     
@@ -472,8 +476,8 @@ object SeriesPieDataLabelsOptionsObject {
     
     inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     
-    inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+    inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
-    inline def setZUndefined: Self = StObject.set(x, "z", js.undefined)
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

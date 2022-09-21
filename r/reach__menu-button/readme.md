@@ -1,7 +1,7 @@
 
 # Scala.js typings for reach__menu-button
 
-Typings are for version 0.1
+Typings are for version 0.17.0
 
 ## Library description:
 Accessible React button dropdown menu.
@@ -10,10 +10,10 @@ Accessible React button dropdown menu.
 | ------------------ | :-------------: |
 | Full name          | @reach/menu-button |
 | Keywords           | - |
-| # releases         | 47 |
-| # dependents       | 44 |
-| # downloads        | 6318683 |
-| # stars            | 0 |
+| # releases         | 18 |
+| # dependents       | 0.0 |
+| # downloads        | 529408.3333333334 |
+| # stars            | 5390.0 |
 
 ## Links
 - [Homepage](https://github.com/reach/reach-ui#readme)
@@ -24,7 +24,7 @@ Accessible React button dropdown menu.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

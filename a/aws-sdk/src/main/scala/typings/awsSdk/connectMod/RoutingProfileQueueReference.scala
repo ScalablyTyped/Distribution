@@ -12,7 +12,7 @@ trait RoutingProfileQueueReference extends StObject {
   var Channel: typings.awsSdk.connectMod.Channel
   
   /**
-    * The identifier of the queue.
+    * The identifier for the queue.
     */
   var QueueId: typings.awsSdk.connectMod.QueueId
 }

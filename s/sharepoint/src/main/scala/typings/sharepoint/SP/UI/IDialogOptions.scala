@@ -12,7 +12,7 @@ trait IDialogOptions extends StObject {
   var allowMaximize: js.UndefOr[Boolean] = js.undefined
   
   /** custom arguments to be passed to the dialog */
-  var args: js.UndefOr[js.Any] = js.undefined
+  var args: js.UndefOr[Any] = js.undefined
   
   /** automatically determine size of the dialog based on its contents. */
   var autoSize: js.UndefOr[Boolean] = js.undefined
@@ -66,7 +66,7 @@ object IDialogOptions {
     
     inline def setAllowMaximizeUndefined: Self = StObject.set(x, "allowMaximize", js.undefined)
     
-    inline def setArgs(value: js.Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
@@ -78,7 +78,7 @@ object IDialogOptions {
     
     inline def setAutoSizeUndefined: Self = StObject.set(x, "autoSize", js.undefined)
     
-    inline def setDialogReturnValueCallback(value: (/* dialogResult */ DialogResult, /* returnValue */ js.Any) => Unit): Self = StObject.set(x, "dialogReturnValueCallback", js.Any.fromFunction2(value))
+    inline def setDialogReturnValueCallback(value: (/* dialogResult */ DialogResult, /* returnValue */ Any) => Unit): Self = StObject.set(x, "dialogReturnValueCallback", js.Any.fromFunction2(value))
     
     inline def setDialogReturnValueCallbackUndefined: Self = StObject.set(x, "dialogReturnValueCallback", js.undefined)
     

@@ -65,7 +65,7 @@ object deleteMod {
   
   @JSImport("rbx/elements/other/delete", "Delete")
   @js.native
-  val Delete: ForwardRefAsExoticComponent[DeleteProps, ElementType[js.Any]] = js.native
+  val Delete: ForwardRefAsExoticComponent[DeleteProps, ElementType[Any]] = js.native
   
   trait DeleteModifierProps extends StObject {
     

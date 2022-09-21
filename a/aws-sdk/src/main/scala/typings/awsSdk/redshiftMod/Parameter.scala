@@ -42,7 +42,7 @@ trait Parameter extends StObject {
   var ParameterName: js.UndefOr[String] = js.undefined
   
   /**
-    * The value of the parameter.
+    * The value of the parameter. If ParameterName is wlm_json_configuration, then the maximum size of ParameterValue is 8000 characters.
     */
   var ParameterValue: js.UndefOr[String] = js.undefined
   

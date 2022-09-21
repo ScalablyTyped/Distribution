@@ -10,10 +10,10 @@ The lodash method `_.updateWith` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.updatewith |
 | Keywords           | lodash-modularized, updatewith |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 24835 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1169.6666666666667 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

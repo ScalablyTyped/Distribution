@@ -22,6 +22,6 @@ object BatchCreateSessionsResponse {
     
     inline def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
     
-    inline def setSessionVarargs(value: Session*): Self = StObject.set(x, "session", js.Array(value :_*))
+    inline def setSessionVarargs(value: Session*): Self = StObject.set(x, "session", js.Array(value*))
   }
 }

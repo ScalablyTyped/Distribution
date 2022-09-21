@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react", "CalloutContentBase")
 @js.native
-class CalloutContentBase protected ()
+open class CalloutContentBase protected ()
   extends typings.officeUiFabricReact.libCalloutMod.CalloutContentBase {
   def this(props: ICalloutProps) = this()
 }

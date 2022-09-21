@@ -22,6 +22,6 @@ object SitemapsListResponse {
     
     inline def setSitemapUndefined: Self = StObject.set(x, "sitemap", js.undefined)
     
-    inline def setSitemapVarargs(value: WmxSitemap*): Self = StObject.set(x, "sitemap", js.Array(value :_*))
+    inline def setSitemapVarargs(value: WmxSitemap*): Self = StObject.set(x, "sitemap", js.Array(value*))
   }
 }

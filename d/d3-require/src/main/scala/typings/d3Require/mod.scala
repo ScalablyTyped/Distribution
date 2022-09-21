@@ -10,13 +10,15 @@ object mod {
   
   @JSImport("d3-require", "RequireError")
   @js.native
-  class RequireError ()
+  open class RequireError ()
     extends StObject
        with Error {
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
@@ -24,13 +26,13 @@ object mod {
   @js.native
   trait require extends StObject {
     
-    def apply(name: String, names: String*): js.Promise[js.Any] = js.native
+    def apply(name: String, names: String*): js.Promise[Any] = js.native
     
     /**
       * Returns a `require` with the specified *aliases*.
       * `require.alias({"react": React, "react-dom": ReactDOM})`
       */
-    def alias(aliases: StringDictionary[js.Any]): typings.d3Require.mod.require = js.native
+    def alias(aliases: StringDictionary[Any]): typings.d3Require.mod.require = js.native
     
     /**
       * The resolver passed to `requireFrom`

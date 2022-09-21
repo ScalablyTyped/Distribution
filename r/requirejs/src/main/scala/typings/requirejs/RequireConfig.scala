@@ -31,7 +31,7 @@ trait RequireConfig extends StObject {
     * deps have been loaded.
     * @param modules
     **/
-  var callback: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+  var callback: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
   
   /**
     * AMD configurations, use module.config() to access in
@@ -100,7 +100,7 @@ trait RequireConfig extends StObject {
     * Path mappings for module names not found directly under
     * baseUrl.
     */
-  var paths: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var paths: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   /**
     * Specify the value for the type="" attribute used for script
@@ -130,9 +130,6 @@ trait RequireConfig extends StObject {
     * uses to fetch resources.  Most useful to cache bust when
     * the browser or server is not configured correctly.
     *
-    * @example
-    * urlArgs: "bust= + (new Date()).getTime()
-    *
     * As of RequireJS 2.2.0, urlArgs can be a function. If a
     * function, it will receive the module ID and the URL as
     * parameters, and it should return a string that will be added
@@ -141,6 +138,11 @@ trait RequireConfig extends StObject {
     * the existing state of the URL.
     *
     * @example
+    *
+    * urlArgs: "bust=" + (new Date()).getTime()
+    *
+    * @example
+    *
     * requirejs.config({
     *     urlArgs: function(id, url) {
     *         var args = 'v=1';
@@ -183,7 +185,7 @@ object RequireConfig {
     
     inline def setBundlesUndefined: Self = StObject.set(x, "bundles", js.undefined)
     
-    inline def setCallback(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+    inline def setCallback(value: /* repeated */ Any => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
@@ -199,7 +201,7 @@ object RequireConfig {
     
     inline def setDepsUndefined: Self = StObject.set(x, "deps", js.undefined)
     
-    inline def setDepsVarargs(value: String*): Self = StObject.set(x, "deps", js.Array(value :_*))
+    inline def setDepsVarargs(value: String*): Self = StObject.set(x, "deps", js.Array(value*))
     
     inline def setEnforceDefine(value: Boolean): Self = StObject.set(x, "enforceDefine", value.asInstanceOf[js.Any])
     
@@ -219,7 +221,7 @@ object RequireConfig {
     
     inline def setPackagesUndefined: Self = StObject.set(x, "packages", js.undefined)
     
-    inline def setPaths(value: StringDictionary[js.Any]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+    inline def setPaths(value: StringDictionary[Any]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     
     inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
     

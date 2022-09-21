@@ -15,7 +15,7 @@ trait XIdlMember
     * Returns the declaring type of this field, i.e. the type having the member declared (interface, enum, struct, exception).
     * @returns declaring type
     */
-  val DeclaringClass: XIdlClass[js.Any]
+  val DeclaringClass: XIdlClass[Any]
   
   /**
     * Returns the fully-qualified name of the member.
@@ -27,7 +27,7 @@ trait XIdlMember
     * Returns the declaring type of this field, i.e. the type having the member declared (interface, enum, struct, exception).
     * @returns declaring type
     */
-  def getDeclaringClass(): XIdlClass[js.Any]
+  def getDeclaringClass(): XIdlClass[Any]
   
   /**
     * Returns the fully-qualified name of the member.
@@ -38,12 +38,12 @@ trait XIdlMember
 object XIdlMember {
   
   inline def apply(
-    DeclaringClass: XIdlClass[js.Any],
+    DeclaringClass: XIdlClass[Any],
     Name: String,
     acquire: () => Unit,
-    getDeclaringClass: () => XIdlClass[js.Any],
+    getDeclaringClass: () => XIdlClass[Any],
     getName: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XIdlMember = {
     val __obj = js.Dynamic.literal(DeclaringClass = DeclaringClass.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getDeclaringClass = js.Any.fromFunction0(getDeclaringClass), getName = js.Any.fromFunction0(getName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -52,9 +52,9 @@ object XIdlMember {
   
   extension [Self <: XIdlMember](x: Self) {
     
-    inline def setDeclaringClass(value: XIdlClass[js.Any]): Self = StObject.set(x, "DeclaringClass", value.asInstanceOf[js.Any])
+    inline def setDeclaringClass(value: XIdlClass[Any]): Self = StObject.set(x, "DeclaringClass", value.asInstanceOf[js.Any])
     
-    inline def setGetDeclaringClass(value: () => XIdlClass[js.Any]): Self = StObject.set(x, "getDeclaringClass", js.Any.fromFunction0(value))
+    inline def setGetDeclaringClass(value: () => XIdlClass[Any]): Self = StObject.set(x, "getDeclaringClass", js.Any.fromFunction0(value))
     
     inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     

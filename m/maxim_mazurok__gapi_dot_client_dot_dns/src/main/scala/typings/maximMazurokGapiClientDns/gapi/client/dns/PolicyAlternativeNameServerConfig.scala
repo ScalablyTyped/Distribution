@@ -31,6 +31,6 @@ object PolicyAlternativeNameServerConfig {
     
     inline def setTargetNameServersUndefined: Self = StObject.set(x, "targetNameServers", js.undefined)
     
-    inline def setTargetNameServersVarargs(value: PolicyAlternativeNameServerConfigTargetNameServer*): Self = StObject.set(x, "targetNameServers", js.Array(value :_*))
+    inline def setTargetNameServersVarargs(value: PolicyAlternativeNameServerConfigTargetNameServer*): Self = StObject.set(x, "targetNameServers", js.Array(value*))
   }
 }

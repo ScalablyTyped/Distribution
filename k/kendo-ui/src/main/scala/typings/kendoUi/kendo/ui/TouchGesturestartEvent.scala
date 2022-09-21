@@ -16,7 +16,7 @@ trait TouchGesturestartEvent
   
   var event: js.UndefOr[JQueryEventObject] = js.undefined
   
-  var touches: js.UndefOr[js.Any] = js.undefined
+  var touches: js.UndefOr[Any] = js.undefined
 }
 object TouchGesturestartEvent {
   
@@ -39,7 +39,7 @@ object TouchGesturestartEvent {
     
     inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
-    inline def setTouches(value: js.Any): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
+    inline def setTouches(value: Any): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
     
     inline def setTouchesUndefined: Self = StObject.set(x, "touches", js.undefined)
   }

@@ -1,5 +1,7 @@
 package typings.webscopeioReactTextareaAutocomplete
 
+import typings.react.mod.TextareaHTMLAttributes
+import typings.std.HTMLTextAreaElement
 import typings.webscopeioReactTextareaAutocomplete.mod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,5 +11,5 @@ object global {
   
   @JSGlobal("ReactTextareaAutocomplete")
   @js.native
-  class ReactTextareaAutocomplete[TItem /* <: String | js.Object */] () extends default[TItem]
+  open class ReactTextareaAutocomplete[TItem /* <: String | js.Object */, CustomTextAreaProps /* <: TextareaHTMLAttributes[HTMLTextAreaElement] */] () extends default[TItem, CustomTextAreaProps]
 }

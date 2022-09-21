@@ -4,31 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request to create a short Dynamic Link.
-  */
 trait SchemaCreateShortDynamicLinkRequest extends StObject {
   
   /**
-    * Information about the Dynamic Link to be shortened. [Learn
-    * more](https://firebase.google.com/docs/reference/dynamic-links/link-shortener).
+    * Information about the Dynamic Link to be shortened. [Learn more](https://firebase.google.com/docs/reference/dynamic-links/link-shortener).
     */
   var dynamicLinkInfo: js.UndefOr[SchemaDynamicLinkInfo] = js.undefined
   
   /**
-    * Full long Dynamic Link URL with desired query parameters specified. For
-    * example,
-    * &quot;https://sample.app.goo.gl/?link=http://www.google.com&amp;apn=com.sample&quot;,
-    * [Learn
-    * more](https://firebase.google.com/docs/reference/dynamic-links/link-shortener).
+    * Full long Dynamic Link URL with desired query parameters specified. For example, "https://sample.app.goo.gl/?link=http://www.google.com&apn=com.sample", [Learn more](https://firebase.google.com/docs/reference/dynamic-links/link-shortener).
     */
-  var longDynamicLink: js.UndefOr[String] = js.undefined
+  var longDynamicLink: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Google SDK version. Version takes the form
-    * &quot;$major.$minor.$patch&quot;
+    * Google SDK version. Version takes the form "$major.$minor.$patch"
     */
-  var sdkVersion: js.UndefOr[String] = js.undefined
+  var sdkVersion: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Short Dynamic Link suffix. Optional.
@@ -50,9 +41,13 @@ object SchemaCreateShortDynamicLinkRequest {
     
     inline def setLongDynamicLink(value: String): Self = StObject.set(x, "longDynamicLink", value.asInstanceOf[js.Any])
     
+    inline def setLongDynamicLinkNull: Self = StObject.set(x, "longDynamicLink", null)
+    
     inline def setLongDynamicLinkUndefined: Self = StObject.set(x, "longDynamicLink", js.undefined)
     
     inline def setSdkVersion(value: String): Self = StObject.set(x, "sdkVersion", value.asInstanceOf[js.Any])
+    
+    inline def setSdkVersionNull: Self = StObject.set(x, "sdkVersion", null)
     
     inline def setSdkVersionUndefined: Self = StObject.set(x, "sdkVersion", js.undefined)
     

@@ -13,53 +13,55 @@ object mod {
   
   @JSImport("@feathersjs/errors", "BadGateway")
   @js.native
-  class BadGateway () extends FeathersError {
+  open class BadGateway () extends FeathersError {
     def this(msg: String) = this()
-    def this(msg: Error) = this()
-    def this(msg: String, data: js.Any) = this()
-    def this(msg: Unit, data: js.Any) = this()
-    def this(msg: Error, data: js.Any) = this()
+    def this(msg: js.Error) = this()
+    def this(msg: String, data: Any) = this()
+    def this(msg: js.Error, data: Any) = this()
+    def this(msg: Unit, data: Any) = this()
   }
   
   @JSImport("@feathersjs/errors", "BadRequest")
   @js.native
-  class BadRequest () extends FeathersError {
+  open class BadRequest () extends FeathersError {
     def this(msg: String) = this()
-    def this(msg: Error) = this()
-    def this(msg: String, data: js.Any) = this()
-    def this(msg: Unit, data: js.Any) = this()
-    def this(msg: Error, data: js.Any) = this()
+    def this(msg: js.Error) = this()
+    def this(msg: String, data: Any) = this()
+    def this(msg: js.Error, data: Any) = this()
+    def this(msg: Unit, data: Any) = this()
   }
   
   @JSImport("@feathersjs/errors", "Conflict")
   @js.native
-  class Conflict () extends FeathersError {
+  open class Conflict () extends FeathersError {
     def this(msg: String) = this()
-    def this(msg: Error) = this()
-    def this(msg: String, data: js.Any) = this()
-    def this(msg: Unit, data: js.Any) = this()
-    def this(msg: Error, data: js.Any) = this()
+    def this(msg: js.Error) = this()
+    def this(msg: String, data: Any) = this()
+    def this(msg: js.Error, data: Any) = this()
+    def this(msg: Unit, data: Any) = this()
   }
   
   @JSImport("@feathersjs/errors", "FeathersError")
   @js.native
-  class FeathersError protected ()
+  open class FeathersError protected ()
     extends StObject
        with Error {
-    def this(msg: String, name: String, code: Double, className: String, data: js.Any) = this()
-    def this(msg: Error, name: String, code: Double, className: String, data: js.Any) = this()
+    def this(msg: String, name: String, code: Double, className: String, data: Any) = this()
+    def this(msg: js.Error, name: String, code: Double, className: String, data: Any) = this()
     
     val className: String = js.native
     
     val code: Double = js.native
     
-    val data: js.Any = js.native
+    val data: Any = js.native
     
-    val errors: js.Any = js.native
+    val errors: Any = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     
@@ -68,135 +70,135 @@ object mod {
   
   @JSImport("@feathersjs/errors", "Forbidden")
   @js.native
-  class Forbidden () extends FeathersError {
+  open class Forbidden () extends FeathersError {
     def this(msg: String) = this()
-    def this(msg: Error) = this()
-    def this(msg: String, data: js.Any) = this()
-    def this(msg: Unit, data: js.Any) = this()
-    def this(msg: Error, data: js.Any) = this()
+    def this(msg: js.Error) = this()
+    def this(msg: String, data: Any) = this()
+    def this(msg: js.Error, data: Any) = this()
+    def this(msg: Unit, data: Any) = this()
   }
   
   @JSImport("@feathersjs/errors", "GeneralError")
   @js.native
-  class GeneralError () extends FeathersError {
+  open class GeneralError () extends FeathersError {
     def this(msg: String) = this()
-    def this(msg: Error) = this()
-    def this(msg: String, data: js.Any) = this()
-    def this(msg: Unit, data: js.Any) = this()
-    def this(msg: Error, data: js.Any) = this()
+    def this(msg: js.Error) = this()
+    def this(msg: String, data: Any) = this()
+    def this(msg: js.Error, data: Any) = this()
+    def this(msg: Unit, data: Any) = this()
   }
   
   @JSImport("@feathersjs/errors", "LengthRequired")
   @js.native
-  class LengthRequired () extends FeathersError {
+  open class LengthRequired () extends FeathersError {
     def this(msg: String) = this()
-    def this(msg: Error) = this()
-    def this(msg: String, data: js.Any) = this()
-    def this(msg: Unit, data: js.Any) = this()
-    def this(msg: Error, data: js.Any) = this()
+    def this(msg: js.Error) = this()
+    def this(msg: String, data: Any) = this()
+    def this(msg: js.Error, data: Any) = this()
+    def this(msg: Unit, data: Any) = this()
   }
   
   @JSImport("@feathersjs/errors", "MethodNotAllowed")
   @js.native
-  class MethodNotAllowed () extends FeathersError {
+  open class MethodNotAllowed () extends FeathersError {
     def this(msg: String) = this()
-    def this(msg: Error) = this()
-    def this(msg: String, data: js.Any) = this()
-    def this(msg: Unit, data: js.Any) = this()
-    def this(msg: Error, data: js.Any) = this()
+    def this(msg: js.Error) = this()
+    def this(msg: String, data: Any) = this()
+    def this(msg: js.Error, data: Any) = this()
+    def this(msg: Unit, data: Any) = this()
   }
   
   @JSImport("@feathersjs/errors", "NotAcceptable")
   @js.native
-  class NotAcceptable () extends FeathersError {
+  open class NotAcceptable () extends FeathersError {
     def this(msg: String) = this()
-    def this(msg: Error) = this()
-    def this(msg: String, data: js.Any) = this()
-    def this(msg: Unit, data: js.Any) = this()
-    def this(msg: Error, data: js.Any) = this()
+    def this(msg: js.Error) = this()
+    def this(msg: String, data: Any) = this()
+    def this(msg: js.Error, data: Any) = this()
+    def this(msg: Unit, data: Any) = this()
   }
   
   @JSImport("@feathersjs/errors", "NotAuthenticated")
   @js.native
-  class NotAuthenticated () extends FeathersError {
+  open class NotAuthenticated () extends FeathersError {
     def this(msg: String) = this()
-    def this(msg: Error) = this()
-    def this(msg: String, data: js.Any) = this()
-    def this(msg: Unit, data: js.Any) = this()
-    def this(msg: Error, data: js.Any) = this()
+    def this(msg: js.Error) = this()
+    def this(msg: String, data: Any) = this()
+    def this(msg: js.Error, data: Any) = this()
+    def this(msg: Unit, data: Any) = this()
   }
   
   @JSImport("@feathersjs/errors", "NotFound")
   @js.native
-  class NotFound () extends FeathersError {
+  open class NotFound () extends FeathersError {
     def this(msg: String) = this()
-    def this(msg: Error) = this()
-    def this(msg: String, data: js.Any) = this()
-    def this(msg: Unit, data: js.Any) = this()
-    def this(msg: Error, data: js.Any) = this()
+    def this(msg: js.Error) = this()
+    def this(msg: String, data: Any) = this()
+    def this(msg: js.Error, data: Any) = this()
+    def this(msg: Unit, data: Any) = this()
   }
   
   @JSImport("@feathersjs/errors", "NotImplemented")
   @js.native
-  class NotImplemented () extends FeathersError {
+  open class NotImplemented () extends FeathersError {
     def this(msg: String) = this()
-    def this(msg: Error) = this()
-    def this(msg: String, data: js.Any) = this()
-    def this(msg: Unit, data: js.Any) = this()
-    def this(msg: Error, data: js.Any) = this()
+    def this(msg: js.Error) = this()
+    def this(msg: String, data: Any) = this()
+    def this(msg: js.Error, data: Any) = this()
+    def this(msg: Unit, data: Any) = this()
   }
   
   @JSImport("@feathersjs/errors", "PaymentError")
   @js.native
-  class PaymentError () extends FeathersError {
+  open class PaymentError () extends FeathersError {
     def this(msg: String) = this()
-    def this(msg: Error) = this()
-    def this(msg: String, data: js.Any) = this()
-    def this(msg: Unit, data: js.Any) = this()
-    def this(msg: Error, data: js.Any) = this()
+    def this(msg: js.Error) = this()
+    def this(msg: String, data: Any) = this()
+    def this(msg: js.Error, data: Any) = this()
+    def this(msg: Unit, data: Any) = this()
   }
   
   @JSImport("@feathersjs/errors", "Timeout")
   @js.native
-  class Timeout () extends FeathersError {
+  open class Timeout () extends FeathersError {
     def this(msg: String) = this()
-    def this(msg: Error) = this()
-    def this(msg: String, data: js.Any) = this()
-    def this(msg: Unit, data: js.Any) = this()
-    def this(msg: Error, data: js.Any) = this()
+    def this(msg: js.Error) = this()
+    def this(msg: String, data: Any) = this()
+    def this(msg: js.Error, data: Any) = this()
+    def this(msg: Unit, data: Any) = this()
   }
   
   @JSImport("@feathersjs/errors", "TooManyRequests")
   @js.native
-  class TooManyRequests () extends FeathersError {
+  open class TooManyRequests () extends FeathersError {
     def this(msg: String) = this()
-    def this(msg: Error) = this()
-    def this(msg: String, data: js.Any) = this()
-    def this(msg: Unit, data: js.Any) = this()
-    def this(msg: Error, data: js.Any) = this()
+    def this(msg: js.Error) = this()
+    def this(msg: String, data: Any) = this()
+    def this(msg: js.Error, data: Any) = this()
+    def this(msg: Unit, data: Any) = this()
   }
   
   @JSImport("@feathersjs/errors", "Unavailable")
   @js.native
-  class Unavailable () extends FeathersError {
+  open class Unavailable () extends FeathersError {
     def this(msg: String) = this()
-    def this(msg: Error) = this()
-    def this(msg: String, data: js.Any) = this()
-    def this(msg: Unit, data: js.Any) = this()
-    def this(msg: Error, data: js.Any) = this()
+    def this(msg: js.Error) = this()
+    def this(msg: String, data: Any) = this()
+    def this(msg: js.Error, data: Any) = this()
+    def this(msg: Unit, data: Any) = this()
   }
   
   @JSImport("@feathersjs/errors", "Unprocessable")
   @js.native
-  class Unprocessable () extends FeathersError {
+  open class Unprocessable () extends FeathersError {
     def this(msg: String) = this()
-    def this(msg: Error) = this()
-    def this(msg: String, data: js.Any) = this()
-    def this(msg: Unit, data: js.Any) = this()
-    def this(msg: Error, data: js.Any) = this()
+    def this(msg: js.Error) = this()
+    def this(msg: String, data: Any) = this()
+    def this(msg: js.Error, data: Any) = this()
+    def this(msg: Unit, data: Any) = this()
   }
   
-  inline def convert(error: js.Any): FeathersError = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")(error.asInstanceOf[js.Any]).asInstanceOf[FeathersError]
+  inline def convert(error: Any): FeathersError = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")(error.asInstanceOf[js.Any]).asInstanceOf[FeathersError]
   
   @JSImport("@feathersjs/errors", "errors")
   @js.native
@@ -311,9 +313,9 @@ object mod {
     
     val code: Double
     
-    val data: js.Any
+    val data: Any
     
-    val errors: js.Any
+    val errors: Any
     
     val message: String
     
@@ -321,7 +323,7 @@ object mod {
   }
   object FeathersErrorJSON {
     
-    inline def apply(className: String, code: Double, data: js.Any, errors: js.Any, message: String, name: String): FeathersErrorJSON = {
+    inline def apply(className: String, code: Double, data: Any, errors: Any, message: String, name: String): FeathersErrorJSON = {
       val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[FeathersErrorJSON]
     }
@@ -332,9 +334,9 @@ object mod {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setErrors(value: js.Any): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: Any): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

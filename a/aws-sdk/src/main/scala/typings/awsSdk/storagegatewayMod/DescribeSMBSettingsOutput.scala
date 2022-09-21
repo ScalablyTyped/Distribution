@@ -17,19 +17,24 @@ trait DescribeSMBSettingsOutput extends StObject {
   var DomainName: js.UndefOr[typings.awsSdk.storagegatewayMod.DomainName] = js.undefined
   
   /**
-    * The shares on this gateway appear when listing shares.
+    * The shares on this gateway appear when listing shares. Only supported for S3 File Gateways. 
     */
   var FileSharesVisible: js.UndefOr[Boolean] = js.undefined
   
   var GatewayARN: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayARN] = js.undefined
   
   /**
-    * This value is true if a password for the guest user smbguest is set, otherwise false. Valid Values: true | false 
+    * This value is true if a password for the guest user smbguest is set, otherwise false. Only supported for S3 File Gateways. Valid Values: true | false 
     */
   var SMBGuestPasswordSet: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The type of security strategy that was specified for file gateway.    ClientSpecified: If you use this option, requests are established based on what is negotiated by the client. This option is recommended when you want to maximize compatibility across different clients in your environment.    MandatorySigning: If you use this option, file gateway only allows connections from SMBv2 or SMBv3 clients that have signing enabled. This option works with SMB clients on Microsoft Windows Vista, Windows Server 2008 or newer.    MandatoryEncryption: If you use this option, file gateway only allows connections from SMBv3 clients that have encryption enabled. This option is highly recommended for environments that handle sensitive data. This option works with SMB clients on Microsoft Windows 8, Windows Server 2012 or newer.  
+    * A list of Active Directory users and groups that have special permissions for SMB file shares on the gateway.
+    */
+  var SMBLocalGroups: js.UndefOr[typings.awsSdk.storagegatewayMod.SMBLocalGroups] = js.undefined
+  
+  /**
+    * The type of security strategy that was specified for file gateway.    ClientSpecified: If you use this option, requests are established based on what is negotiated by the client. This option is recommended when you want to maximize compatibility across different clients in your environment. Only supported for S3 File Gateways.    MandatorySigning: If you use this option, file gateway only allows connections from SMBv2 or SMBv3 clients that have signing enabled. This option works with SMB clients on Microsoft Windows Vista, Windows Server 2008 or newer.    MandatoryEncryption: If you use this option, file gateway only allows connections from SMBv3 clients that have encryption enabled. This option is highly recommended for environments that handle sensitive data. This option works with SMB clients on Microsoft Windows 8, Windows Server 2012 or newer.  
     */
   var SMBSecurityStrategy: js.UndefOr[typings.awsSdk.storagegatewayMod.SMBSecurityStrategy] = js.undefined
 }
@@ -61,6 +66,10 @@ object DescribeSMBSettingsOutput {
     inline def setSMBGuestPasswordSet(value: Boolean): Self = StObject.set(x, "SMBGuestPasswordSet", value.asInstanceOf[js.Any])
     
     inline def setSMBGuestPasswordSetUndefined: Self = StObject.set(x, "SMBGuestPasswordSet", js.undefined)
+    
+    inline def setSMBLocalGroups(value: SMBLocalGroups): Self = StObject.set(x, "SMBLocalGroups", value.asInstanceOf[js.Any])
+    
+    inline def setSMBLocalGroupsUndefined: Self = StObject.set(x, "SMBLocalGroups", js.undefined)
     
     inline def setSMBSecurityStrategy(value: SMBSecurityStrategy): Self = StObject.set(x, "SMBSecurityStrategy", value.asInstanceOf[js.Any])
     

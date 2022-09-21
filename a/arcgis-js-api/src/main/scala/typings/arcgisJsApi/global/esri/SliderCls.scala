@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html)
   */
-class SliderCls ()
+open class SliderCls ()
   extends StObject
      with typings.arcgisJsApi.esri.Slider {
   def this(properties: SliderProperties) = this()

@@ -10,10 +10,10 @@ Cooperative multi-tasking for Javascript
 | ------------------ | :-------------: |
 | Full name          | fibers |
 | Keywords           | fiber, fibers, coroutine, thread, async, parallel, worker, future, promise |
-| # releases         | 6 |
-| # dependents       | 436 |
-| # downloads        | 28273885 |
-| # stars            | 50 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 2619352.3333333335 |
+| # stars            | 3538.0 |
 
 ## Links
 - [Homepage](https://github.com/laverdet/node-fibers)

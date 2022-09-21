@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientPrivateca.anon
 
-import typings.maximMazurokGapiClientPrivateca.gapi.client.privateca.EnableCertificateAuthorityRequest
+import typings.maximMazurokGapiClientPrivateca.gapi.client.privateca.RevokeCertificateRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,7 @@ trait UploadType extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Required. The resource name for this CertificateAuthority in the format `projects/∗/locations/∗/certificateAuthorities/ *`. */
+  /** Required. The resource name for this Certificate in the format `projects/ *‍/locations/ *‍/caPools/ *‍/certificates/ *`. */
   var name: String
   
   /** OAuth 2.0 token for the current user. */
@@ -39,7 +39,7 @@ trait UploadType extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: EnableCertificateAuthorityRequest
+  var resource: RevokeCertificateRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,7 +49,7 @@ trait UploadType extends StObject {
 }
 object UploadType {
   
-  inline def apply(name: String, resource: EnableCertificateAuthorityRequest): UploadType = {
+  inline def apply(name: String, resource: RevokeCertificateRequest): UploadType = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadType]
   }
@@ -94,7 +94,7 @@ object UploadType {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: EnableCertificateAuthorityRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: RevokeCertificateRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

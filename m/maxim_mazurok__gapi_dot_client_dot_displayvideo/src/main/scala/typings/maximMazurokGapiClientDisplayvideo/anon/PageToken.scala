@@ -13,8 +13,8 @@ trait PageToken extends StObject {
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.undefined
   
-  /** The ID of the advertiser that owns the channels. */
-  var advertiserId: js.UndefOr[String] = js.undefined
+  /** Required. The ID of the advertiser the line item belongs to. */
+  var advertiserId: String
   
   /** Data format for response. */
   var alt: js.UndefOr[String] = js.undefined
@@ -26,9 +26,9 @@ trait PageToken extends StObject {
   var fields: js.UndefOr[String] = js.undefined
   
   /**
-    * Allows filtering by channel fields. Supported syntax: * Filter expressions for channel currently can only contain at most one * restriction. * A restriction has the form of
-    * `{field} {operator} {value}`. * The operator must be `CONTAINS (:)`. * Supported fields: - `displayName` Examples: * All channels for which the display name contains "google":
-    * `displayName : "google"`. The length of this field should be no more than 500 characters.
+    * Allows filtering by assigned targeting option properties. Supported syntax: * Filter expressions are made up of one or more restrictions. * Restrictions can be combined by the
+    * logical operator `OR`.. * A restriction has the form of `{field} {operator} {value}`. * The operator must be `EQUALS (=)`. * Supported fields: - `targetingType` Examples: *
+    * targetingType with value TARGETING_TYPE_CHANNEL `targetingType="TARGETING_TYPE_CHANNEL"` The length of this field should be no more than 500 characters.
     */
   var filter: js.UndefOr[String] = js.undefined
   
@@ -39,22 +39,22 @@ trait PageToken extends StObject {
   var oauth_token: js.UndefOr[String] = js.undefined
   
   /**
-    * Field by which to sort the list. Acceptable values are: * `displayName` (default) * `channelId` The default sorting order is ascending. To specify descending order for a field,
-    * a suffix " desc" should be added to the field name. Example: `displayName desc`.
+    * Field by which to sort the list. Acceptable values are: * `targetingType` (default) The default sorting order is ascending. To specify descending order for a field, a suffix
+    * "desc" should be added to the field name. Example: `targetingType desc`.
     */
   var orderBy: js.UndefOr[String] = js.undefined
   
-  /** Requested page size. Must be between `1` and `100`. If unspecified will default to `100`. Returns error code `INVALID_ARGUMENT` if an invalid value is specified. */
+  /**
+    * Requested page size. The size must be an integer between `1` and `5000`. If unspecified, the default is '5000'. Returns error code `INVALID_ARGUMENT` if an invalid value is
+    * specified.
+    */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * A token identifying a page of results the server should return. Typically, this is the value of next_page_token returned from the previous call to `ListChannels` method. If not
-    * specified, the first page of results will be returned.
+    * A token that lets the client fetch the next page of results. Typically, this is the value of next_page_token returned from the previous call to
+    * `BulkListAdvertiserAssignedTargetingOptions` method. If not specified, the first page of results will be returned.
     */
   var pageToken: js.UndefOr[String] = js.undefined
-  
-  /** The ID of the partner that owns the channels. */
-  var partnerId: String
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
@@ -70,8 +70,8 @@ trait PageToken extends StObject {
 }
 object PageToken {
   
-  inline def apply(partnerId: String): PageToken = {
-    val __obj = js.Dynamic.literal(partnerId = partnerId.asInstanceOf[js.Any])
+  inline def apply(advertiserId: String): PageToken = {
+    val __obj = js.Dynamic.literal(advertiserId = advertiserId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageToken]
   }
   
@@ -86,8 +86,6 @@ object PageToken {
     inline def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
     
     inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
-    
-    inline def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
@@ -124,8 +122,6 @@ object PageToken {
     inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
     inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
-    
-    inline def setPartnerId(value: String): Self = StObject.set(x, "partnerId", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     

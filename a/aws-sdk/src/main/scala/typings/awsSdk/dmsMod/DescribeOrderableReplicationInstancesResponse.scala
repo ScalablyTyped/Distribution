@@ -33,6 +33,6 @@ object DescribeOrderableReplicationInstancesResponse {
     
     inline def setOrderableReplicationInstancesUndefined: Self = StObject.set(x, "OrderableReplicationInstances", js.undefined)
     
-    inline def setOrderableReplicationInstancesVarargs(value: OrderableReplicationInstance*): Self = StObject.set(x, "OrderableReplicationInstances", js.Array(value :_*))
+    inline def setOrderableReplicationInstancesVarargs(value: OrderableReplicationInstance*): Self = StObject.set(x, "OrderableReplicationInstances", js.Array(value*))
   }
 }

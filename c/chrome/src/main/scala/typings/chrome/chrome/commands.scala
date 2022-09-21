@@ -1,6 +1,7 @@
 package typings.chrome.chrome
 
 import typings.chrome.chrome.events.Event
+import typings.chrome.chrome.tabs.Tab
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,5 +50,5 @@ object commands {
     }
   }
   
-  type CommandEvent = Event[js.Function1[/* command */ String, Unit]]
+  type CommandEvent = Event[js.Function2[/* command */ String, /* tab */ Tab, Unit]]
 }

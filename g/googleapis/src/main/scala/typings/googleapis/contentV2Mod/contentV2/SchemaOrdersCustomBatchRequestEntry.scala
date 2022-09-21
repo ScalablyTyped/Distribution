@@ -9,88 +9,85 @@ trait SchemaOrdersCustomBatchRequestEntry extends StObject {
   /**
     * An entry ID, unique within the batch request.
     */
-  var batchId: js.UndefOr[Double] = js.undefined
+  var batchId: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * Required for cancel method.
+    * Required for `cancel` method.
     */
   var cancel: js.UndefOr[SchemaOrdersCustomBatchRequestEntryCancel] = js.undefined
   
   /**
-    * Required for cancelLineItem method.
+    * Required for `cancelLineItem` method.
     */
   var cancelLineItem: js.UndefOr[SchemaOrdersCustomBatchRequestEntryCancelLineItem] = js.undefined
   
   /**
-    * Required for inStoreReturnLineItem method.
+    * Required for `inStoreReturnLineItem` method.
     */
   var inStoreRefundLineItem: js.UndefOr[SchemaOrdersCustomBatchRequestEntryInStoreRefundLineItem] = js.undefined
   
   /**
     * The ID of the managing account.
     */
-  var merchantId: js.UndefOr[String] = js.undefined
+  var merchantId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The merchant order ID. Required for updateMerchantOrderId and
-    * getByMerchantOrderId methods.
+    * The merchant order ID. Required for `updateMerchantOrderId` and `getByMerchantOrderId` methods.
     */
-  var merchantOrderId: js.UndefOr[String] = js.undefined
+  var merchantOrderId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The method to apply.
+    * The method of the batch entry. Acceptable values are: - "`acknowledge`" - "`cancel`" - "`cancelLineItem`" - "`get`" - "`getByMerchantOrderId`" - "`inStoreRefundLineItem`" - "`refund`" - "`rejectReturnLineItem`" - "`returnLineItem`" - "`returnRefundLineItem`" - "`setLineItemMetadata`" - "`shipLineItems`" - "`updateLineItemShippingDetails`" - "`updateMerchantOrderId`" - "`updateShipment`"
     */
-  var method: js.UndefOr[String] = js.undefined
+  var method: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The ID of the operation. Unique across all operations for a given order.
-    * Required for all methods beside get and getByMerchantOrderId.
+    * The ID of the operation. Unique across all operations for a given order. Required for all methods beside `get` and `getByMerchantOrderId`.
     */
-  var operationId: js.UndefOr[String] = js.undefined
+  var operationId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The ID of the order. Required for all methods beside
-    * getByMerchantOrderId.
+    * The ID of the order. Required for all methods beside `getByMerchantOrderId`.
     */
-  var orderId: js.UndefOr[String] = js.undefined
+  var orderId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Required for refund method.
+    * Required for `refund` method.
     */
   var refund: js.UndefOr[SchemaOrdersCustomBatchRequestEntryRefund] = js.undefined
   
   /**
-    * Required for rejectReturnLineItem method.
+    * Required for `rejectReturnLineItem` method.
     */
   var rejectReturnLineItem: js.UndefOr[SchemaOrdersCustomBatchRequestEntryRejectReturnLineItem] = js.undefined
   
   /**
-    * Required for returnLineItem method.
+    * Required for `returnLineItem` method.
     */
   var returnLineItem: js.UndefOr[SchemaOrdersCustomBatchRequestEntryReturnLineItem] = js.undefined
   
   /**
-    * Required for returnRefundLineItem method.
+    * Required for `returnRefundLineItem` method.
     */
   var returnRefundLineItem: js.UndefOr[SchemaOrdersCustomBatchRequestEntryReturnRefundLineItem] = js.undefined
   
   /**
-    * Required for setLineItemMetadata method.
+    * Required for `setLineItemMetadata` method.
     */
   var setLineItemMetadata: js.UndefOr[SchemaOrdersCustomBatchRequestEntrySetLineItemMetadata] = js.undefined
   
   /**
-    * Required for shipLineItems method.
+    * Required for `shipLineItems` method.
     */
   var shipLineItems: js.UndefOr[SchemaOrdersCustomBatchRequestEntryShipLineItems] = js.undefined
   
   /**
-    * Required for updateLineItemShippingDate method.
+    * Required for `updateLineItemShippingDate` method.
     */
   var updateLineItemShippingDetails: js.UndefOr[SchemaOrdersCustomBatchRequestEntryUpdateLineItemShippingDetails] = js.undefined
   
   /**
-    * Required for updateShipment method.
+    * Required for `updateShipment` method.
     */
   var updateShipment: js.UndefOr[SchemaOrdersCustomBatchRequestEntryUpdateShipment] = js.undefined
 }
@@ -104,6 +101,8 @@ object SchemaOrdersCustomBatchRequestEntry {
   extension [Self <: SchemaOrdersCustomBatchRequestEntry](x: Self) {
     
     inline def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
+    
+    inline def setBatchIdNull: Self = StObject.set(x, "batchId", null)
     
     inline def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
     
@@ -121,21 +120,31 @@ object SchemaOrdersCustomBatchRequestEntry {
     
     inline def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
     
+    inline def setMerchantIdNull: Self = StObject.set(x, "merchantId", null)
+    
     inline def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
     
     inline def setMerchantOrderId(value: String): Self = StObject.set(x, "merchantOrderId", value.asInstanceOf[js.Any])
+    
+    inline def setMerchantOrderIdNull: Self = StObject.set(x, "merchantOrderId", null)
     
     inline def setMerchantOrderIdUndefined: Self = StObject.set(x, "merchantOrderId", js.undefined)
     
     inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
+    inline def setMethodNull: Self = StObject.set(x, "method", null)
+    
     inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     inline def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     
+    inline def setOperationIdNull: Self = StObject.set(x, "operationId", null)
+    
     inline def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
     
     inline def setOrderId(value: String): Self = StObject.set(x, "orderId", value.asInstanceOf[js.Any])
+    
+    inline def setOrderIdNull: Self = StObject.set(x, "orderId", null)
     
     inline def setOrderIdUndefined: Self = StObject.set(x, "orderId", js.undefined)
     

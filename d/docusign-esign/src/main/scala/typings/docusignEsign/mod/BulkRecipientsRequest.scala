@@ -24,6 +24,6 @@ object BulkRecipientsRequest {
     
     inline def setBulkRecipientsUndefined: Self = StObject.set(x, "bulkRecipients", js.undefined)
     
-    inline def setBulkRecipientsVarargs(value: BulkRecipient*): Self = StObject.set(x, "bulkRecipients", js.Array(value :_*))
+    inline def setBulkRecipientsVarargs(value: BulkRecipient*): Self = StObject.set(x, "bulkRecipients", js.Array(value*))
   }
 }

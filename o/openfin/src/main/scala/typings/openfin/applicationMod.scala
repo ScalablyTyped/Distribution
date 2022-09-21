@@ -23,18 +23,18 @@ object applicationMod {
   
   @JSImport("openfin/_v2/api/application/application", JSImport.Default)
   @js.native
-  class default () extends ApplicationModule
+  open class default () extends ApplicationModule
   
   @JSImport("openfin/_v2/api/application/application", "Application")
   @js.native
-  class Application protected () extends EmitterBase[ApplicationEvents] {
+  open class Application protected () extends EmitterBase[ApplicationEvents] {
     def this(wire: typings.openfin.transportMod.default, identity: Identity) = this()
     
-    /* private */ var _close: js.Any = js.native
+    /* private */ var _close: Any = js.native
     
     var _manifestUrl: js.UndefOr[String] = js.native
     
-    /* private */ var _run: js.Any = js.native
+    /* private */ var _run: Any = js.native
     
     def close(): js.Promise[Unit] = js.native
     def close(force: Boolean): js.Promise[Unit] = js.native
@@ -67,7 +67,7 @@ object applicationMod {
       * @return {Promise.<any>}
       * @tutorial Application.getManifest
       */
-    def getManifest(): js.Promise[js.Any] = js.native
+    def getManifest(): js.Promise[Any] = js.native
     
     /**
       * Retrieves UUID of the application that launches this application. Invokes the error callback
@@ -307,14 +307,14 @@ object applicationMod {
       */
     def terminate(): js.Promise[Unit] = js.native
     
-    /* private */ var window: js.Any = js.native
+    /* private */ var window: Any = js.native
     
-    /* private */ var windowListFromIdentityList: js.Any = js.native
+    /* private */ var windowListFromIdentityList: Any = js.native
   }
   
   @JSImport("openfin/_v2/api/application/application", "NavigationRejectedReply")
   @js.native
-  class NavigationRejectedReply () extends Reply[`window-navigation-rejected`, Unit] {
+  open class NavigationRejectedReply () extends Reply[`window-navigation-rejected`, Unit] {
     
     var sourceName: String = js.native
     
@@ -369,9 +369,9 @@ object applicationMod {
   @js.native
   trait ApplicationModule extends Base {
     
-    /* private */ var _create: js.Any = js.native
+    /* private */ var _create: Any = js.native
     
-    /* private */ var _createFromManifest: js.Any = js.native
+    /* private */ var _createFromManifest: Any = js.native
     
     /**
       * DEPRECATED method to create a new Application. Use {@link Application.start} instead.

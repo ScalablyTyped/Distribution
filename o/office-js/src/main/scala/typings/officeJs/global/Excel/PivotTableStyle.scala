@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents a PivotTable style, which defines style elements by PivotTable region.
   *
-  * Represents a PivotTable Style, which defines style elements by PivotTable region.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.10]
   */
 @JSGlobal("Excel.PivotTableStyle")
 @js.native
-class PivotTableStyle ()
+open class PivotTableStyle ()
   extends StObject
      with typings.officeJs.Excel.PivotTableStyle {
   

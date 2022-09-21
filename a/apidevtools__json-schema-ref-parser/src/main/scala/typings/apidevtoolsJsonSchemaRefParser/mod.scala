@@ -8,9 +8,10 @@ import typings.jsonSchema.mod.JSONSchema4
 import typings.jsonSchema.mod.JSONSchema4Type
 import typings.jsonSchema.mod.JSONSchema6
 import typings.jsonSchema.mod.JSONSchema6Type
-import typings.node.Buffer
+import typings.jsonSchema.mod.JSONSchema7
+import typings.jsonSchema.mod.JSONSchema7Type
+import typings.node.bufferMod.global.Buffer
 import typings.std.Error
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +25,7 @@ object mod {
     */
   @JSImport("@apidevtools/json-schema-ref-parser", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with RefParser
   @JSImport("@apidevtools/json-schema-ref-parser", JSImport.Namespace)
@@ -33,7 +34,8 @@ object mod {
   
   @JSImport("@apidevtools/json-schema-ref-parser", "InvalidPointerError")
   @js.native
-  class InvalidPointerError () extends JSONParserError {
+  open class InvalidPointerError protected () extends JSONParserError {
+    def this(pointer: String, source: String) = this()
     
     @JSName("code")
     val code_InvalidPointerError: /* "EINVALIDPOINTER" */ String = js.native
@@ -41,17 +43,20 @@ object mod {
   
   @JSImport("@apidevtools/json-schema-ref-parser", "JSONParserError")
   @js.native
-  class JSONParserError ()
+  open class JSONParserError protected ()
     extends StObject
        with Error {
+    def this(message: String, source: String) = this()
     
     val code: JSONParserErrorType = js.native
     
     val errors: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     
@@ -62,7 +67,7 @@ object mod {
   
   @JSImport("@apidevtools/json-schema-ref-parser", "JSONParserErrorGroup")
   @js.native
-  class JSONParserErrorGroup ()
+  open class JSONParserErrorGroup ()
     extends StObject
        with Error {
     
@@ -82,16 +87,20 @@ object mod {
       */
     val files: RefParser = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("@apidevtools/json-schema-ref-parser", "MissingPointerError")
   @js.native
-  class MissingPointerError () extends JSONParserError {
+  open class MissingPointerError protected () extends JSONParserError {
+    def this(token: String, source: String) = this()
+    def this(token: Double, source: String) = this()
     
     @JSName("code")
     val code_MissingPointerError: /* "EMISSINGPOINTER" */ String = js.native
@@ -99,7 +108,8 @@ object mod {
   
   @JSImport("@apidevtools/json-schema-ref-parser", "ParserError")
   @js.native
-  class ParserError () extends JSONParserError {
+  open class ParserError protected () extends JSONParserError {
+    def this(message: String, source: String) = this()
     
     @JSName("code")
     val code_ParserError: /* "EPARSER" */ String = js.native
@@ -107,7 +117,7 @@ object mod {
   
   @JSImport("@apidevtools/json-schema-ref-parser", "$Refs")
   @js.native
-  class Refs () extends StObject {
+  open class Refs () extends StObject {
     
     /**
       * This property is true if the schema contains any circular references. You may want to check this property before serializing the dereferenced schema as JSON, since JSON.stringify() does not support circular references by default.
@@ -132,7 +142,7 @@ object mod {
       *
       * @param $ref The JSON Reference path, optionally with a JSON Pointer in the hash
       */
-    def get($ref: String): JSONSchema4Type | JSONSchema6Type = js.native
+    def get($ref: String): JSONSchema4Type | JSONSchema6Type | JSONSchema7Type = js.native
     
     /**
       * Returns the paths/URLs of all the files in your schema (including the main schema file).
@@ -149,7 +159,7 @@ object mod {
       * @param $ref The JSON Reference path, optionally with a JSON Pointer in the hash
       * @param value The value to assign. Can be anything (object, string, number, etc.)
       */
-    def set($ref: String, value: JSONSchema4Type | JSONSchema6Type): Unit = js.native
+    def set($ref: String, value: JSONSchema4Type | JSONSchema6Type | JSONSchema7Type): Unit = js.native
     
     /**
       * Returns a map of paths/URLs and their correspond values.
@@ -163,7 +173,12 @@ object mod {
   
   @JSImport("@apidevtools/json-schema-ref-parser", "ResolverError")
   @js.native
-  class ResolverError () extends JSONParserError {
+  open class ResolverError protected () extends JSONParserError {
+    def this(ex: js.Error, source: String) = this()
+    def this(
+      ex: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any,
+      source: String
+    ) = this()
     
     @JSName("code")
     val code_ResolverError: /* "ERESOLVER" */ String = js.native
@@ -173,7 +188,8 @@ object mod {
   
   @JSImport("@apidevtools/json-schema-ref-parser", "UnmatchedParserError")
   @js.native
-  class UnmatchedParserError () extends JSONParserError {
+  open class UnmatchedParserError protected () extends JSONParserError {
+    def this(source: String) = this()
     
     @JSName("code")
     val code_UnmatchedParserError: /* "EUNMATCHEDPARSER" */ String = js.native
@@ -181,7 +197,8 @@ object mod {
   
   @JSImport("@apidevtools/json-schema-ref-parser", "UnmatchedResolverError")
   @js.native
-  class UnmatchedResolverError () extends JSONParserError {
+  open class UnmatchedResolverError protected () extends JSONParserError {
+    def this(source: String) = this()
     
     @JSName("code")
     val code_UnmatchedResolverError: /* "EUNMATCHEDRESOLVER" */ String = js.native
@@ -346,7 +363,7 @@ object mod {
   trait HTTPResolverOptions extends StObject {
     
     var canRead: js.UndefOr[
-        Boolean | RegExp | String | js.Array[String] | (js.Function1[/* file */ FileInfo, Boolean])
+        Boolean | js.RegExp | String | js.Array[String] | (js.Function1[/* file */ FileInfo, Boolean])
       ] = js.undefined
     
     /**
@@ -359,8 +376,8 @@ object mod {
     var read: js.UndefOr[
         js.Function2[
           /* file */ FileInfo, 
-          /* callback */ js.UndefOr[js.Function2[/* error */ Error | Null, /* data */ String | Null, js.Any]], 
-          String | Buffer | (js.Promise[String | Buffer])
+          /* callback */ js.UndefOr[js.Function2[/* error */ js.Error | Null, /* data */ String | Null, Any]], 
+          String | Buffer | JSONSchema | (js.Promise[String | Buffer | JSONSchema])
         ]
       ] = js.undefined
     
@@ -388,13 +405,15 @@ object mod {
     
     extension [Self <: HTTPResolverOptions](x: Self) {
       
-      inline def setCanRead(value: Boolean | RegExp | String | js.Array[String] | (js.Function1[/* file */ FileInfo, Boolean])): Self = StObject.set(x, "canRead", value.asInstanceOf[js.Any])
+      inline def setCanRead(
+        value: Boolean | js.RegExp | String | js.Array[String] | (js.Function1[/* file */ FileInfo, Boolean])
+      ): Self = StObject.set(x, "canRead", value.asInstanceOf[js.Any])
       
       inline def setCanReadFunction1(value: /* file */ FileInfo => Boolean): Self = StObject.set(x, "canRead", js.Any.fromFunction1(value))
       
       inline def setCanReadUndefined: Self = StObject.set(x, "canRead", js.undefined)
       
-      inline def setCanReadVarargs(value: String*): Self = StObject.set(x, "canRead", js.Array(value :_*))
+      inline def setCanReadVarargs(value: String*): Self = StObject.set(x, "canRead", js.Array(value*))
       
       inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -405,7 +424,7 @@ object mod {
       inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
       inline def setRead(
-        value: (/* file */ FileInfo, /* callback */ js.UndefOr[js.Function2[/* error */ Error | Null, /* data */ String | Null, js.Any]]) => String | Buffer | (js.Promise[String | Buffer])
+        value: (/* file */ FileInfo, /* callback */ js.UndefOr[js.Function2[/* error */ js.Error | Null, /* data */ String | Null, Any]]) => String | Buffer | JSONSchema | (js.Promise[String | Buffer | JSONSchema])
       ): Self = StObject.set(x, "read", js.Any.fromFunction2(value))
       
       inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
@@ -451,7 +470,7 @@ object mod {
     inline def EUNMATCHEDRESOLVER: typings.apidevtoolsJsonSchemaRefParser.apidevtoolsJsonSchemaRefParserStrings.EUNMATCHEDRESOLVER = "EUNMATCHEDRESOLVER".asInstanceOf[typings.apidevtoolsJsonSchemaRefParser.apidevtoolsJsonSchemaRefParserStrings.EUNMATCHEDRESOLVER]
   }
   
-  type JSONSchema = JSONSchema4 | JSONSchema6
+  type JSONSchema = JSONSchema4 | JSONSchema6 | JSONSchema7
   
   trait Options extends StObject {
     
@@ -524,7 +543,7 @@ object mod {
       * A regular expression can be used to match files by their full path. A string (or array of strings) can be used to match files by their file extension. Or a function can be used to perform more complex matching logic. See the custom parser docs for details.
       */
     var canParse: js.UndefOr[
-        Boolean | RegExp | String | js.Array[String] | (js.Function1[/* file */ FileInfo, Boolean])
+        Boolean | js.RegExp | String | js.Array[String] | (js.Function1[/* file */ FileInfo, Boolean])
       ] = js.native
     
     /**
@@ -539,8 +558,8 @@ object mod {
       *
       * Unlike the `canParse` function, the `parse` method can also be asynchronous. This might be important if your parser needs to retrieve data from a database or if it relies on an external HTTP service to return the parsed value.  You can return your asynchronous value via a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) or a Node.js-style error-first callback.  Here are examples of both approaches:
       */
-    def parse(file: FileInfo): js.Any | js.Promise[js.Any] = js.native
-    def parse(file: FileInfo, callback: js.Function2[/* error */ Error | Null, /* data */ String | Null, js.Any]): js.Any | js.Promise[js.Any] = js.native
+    def parse(file: FileInfo): Any | js.Promise[Any] = js.native
+    def parse(file: FileInfo, callback: js.Function2[/* error */ js.Error | Null, /* data */ String | Null, Any]): Any | js.Promise[Any] = js.native
   }
   
   /**
@@ -665,7 +684,7 @@ object mod {
     var schema: JSONSchema = js.native
   }
   
-  type RefsCallback = js.Function2[/* err */ Error | Null, /* $refs */ js.UndefOr[Refs], js.Any]
+  type RefsCallback = js.Function2[/* err */ js.Error | Null, /* $refs */ js.UndefOr[Refs], Any]
   
   @js.native
   trait ResolverOptions extends StObject {
@@ -673,7 +692,7 @@ object mod {
     /**
       * The `canRead` property tells JSON Schema `$Ref` Parser what kind of files your resolver can read. In this example, we've simply specified a regular expression that matches "mogodb://" URLs, but we could have used a simple boolean, or even a function with custom logic to determine which files to resolve. Here are examples of each approach:
       */
-    var canRead: Boolean | RegExp | String | js.Array[String] | (js.Function1[/* file */ FileInfo, Boolean]) = js.native
+    var canRead: Boolean | js.RegExp | String | js.Array[String] | (js.Function1[/* file */ FileInfo, Boolean]) = js.native
     
     /**
       * All resolvers have an order property, even the built-in resolvers. If you don't specify an order property, then your resolver will run last. Specifying `order: 1`, like we did in this example, will make your resolver run first. Or you can squeeze your resolver in-between some of the built-in resolvers. For example, `order: 101` would make it run after the file resolver, but before the HTTP resolver. You can see the order of all the built-in resolvers by looking at their source code.
@@ -687,9 +706,9 @@ object mod {
       *
       * Unlike the `canRead` function, the `read` method can also be asynchronous. This might be important if your resolver needs to read data from a database or some other external source. You can return your asynchronous value using either an ES6 Promise or a Node.js-style error-first callback. Of course, if your resolver has the ability to return its data synchronously, then that's fine too. Here are examples of all three approaches:
       */
-    def read(file: FileInfo): String | Buffer | (js.Promise[String | Buffer]) = js.native
-    def read(file: FileInfo, callback: js.Function2[/* error */ Error | Null, /* data */ String | Null, js.Any]): String | Buffer | (js.Promise[String | Buffer]) = js.native
+    def read(file: FileInfo): String | Buffer | JSONSchema | (js.Promise[String | Buffer | JSONSchema]) = js.native
+    def read(file: FileInfo, callback: js.Function2[/* error */ js.Error | Null, /* data */ String | Null, Any]): String | Buffer | JSONSchema | (js.Promise[String | Buffer | JSONSchema]) = js.native
   }
   
-  type SchemaCallback = js.Function2[/* err */ Error | Null, /* schema */ js.UndefOr[JSONSchema], js.Any]
+  type SchemaCallback = js.Function2[/* err */ js.Error | Null, /* schema */ js.UndefOr[JSONSchema], Any]
 }

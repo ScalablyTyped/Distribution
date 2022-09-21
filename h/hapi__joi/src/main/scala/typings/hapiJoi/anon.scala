@@ -42,7 +42,7 @@ object anon {
     
     var number: NumberSchema
     
-    var `object`: ObjectSchema[js.Any]
+    var `object`: ObjectSchema[Any]
     
     var string: StringSchema
     
@@ -60,7 +60,7 @@ object anon {
       function: FunctionSchema,
       link: LinkSchema,
       number: NumberSchema,
-      `object`: ObjectSchema[js.Any],
+      `object`: ObjectSchema[Any],
       string: StringSchema,
       symbol: SymbolSchema
     ): Alternatives = {
@@ -89,7 +89,7 @@ object anon {
       
       inline def setNumber(value: NumberSchema): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      inline def setObject(value: ObjectSchema[js.Any]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: ObjectSchema[Any]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
       inline def setString(value: StringSchema): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
       
@@ -160,7 +160,7 @@ object anon {
   trait Build extends StObject {
     
     var build: js.UndefOr[
-        js.Function2[/* obj */ ExtensionBoundSchema, /* desc */ Record[String, js.Any], js.Any]
+        js.Function2[/* obj */ ExtensionBoundSchema, /* desc */ Record[String, Any], Any]
       ] = js.undefined
   }
   object Build {
@@ -172,7 +172,7 @@ object anon {
     
     extension [Self <: Build](x: Self) {
       
-      inline def setBuild(value: (/* obj */ ExtensionBoundSchema, /* desc */ Record[String, js.Any]) => js.Any): Self = StObject.set(x, "build", js.Any.fromFunction2(value))
+      inline def setBuild(value: (/* obj */ ExtensionBoundSchema, /* desc */ Record[String, Any]) => Any): Self = StObject.set(x, "build", js.Any.fromFunction2(value))
       
       inline def setBuildUndefined: Self = StObject.set(x, "build", js.undefined)
     }
@@ -265,22 +265,22 @@ object anon {
   
   trait To extends StObject {
     
-    def from(value: js.Any): js.Any
+    def from(value: Any): Any
     
-    def to(value: js.Any, helpers: CustomHelpers[js.Any]): js.Any
+    def to(value: Any, helpers: CustomHelpers[Any]): Any
   }
   object To {
     
-    inline def apply(from: js.Any => js.Any, to: (js.Any, CustomHelpers[js.Any]) => js.Any): To = {
+    inline def apply(from: Any => Any, to: (Any, CustomHelpers[Any]) => Any): To = {
       val __obj = js.Dynamic.literal(from = js.Any.fromFunction1(from), to = js.Any.fromFunction2(to))
       __obj.asInstanceOf[To]
     }
     
     extension [Self <: To](x: Self) {
       
-      inline def setFrom(value: js.Any => js.Any): Self = StObject.set(x, "from", js.Any.fromFunction1(value))
+      inline def setFrom(value: Any => Any): Self = StObject.set(x, "from", js.Any.fromFunction1(value))
       
-      inline def setTo(value: (js.Any, CustomHelpers[js.Any]) => js.Any): Self = StObject.set(x, "to", js.Any.fromFunction2(value))
+      inline def setTo(value: (Any, CustomHelpers[Any]) => Any): Self = StObject.set(x, "to", js.Any.fromFunction2(value))
     }
   }
 }

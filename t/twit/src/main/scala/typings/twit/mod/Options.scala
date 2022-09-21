@@ -41,6 +41,6 @@ object Options {
     
     inline def setTrusted_cert_fingerprintsUndefined: Self = StObject.set(x, "trusted_cert_fingerprints", js.undefined)
     
-    inline def setTrusted_cert_fingerprintsVarargs(value: String*): Self = StObject.set(x, "trusted_cert_fingerprints", js.Array(value :_*))
+    inline def setTrusted_cert_fingerprintsVarargs(value: String*): Self = StObject.set(x, "trusted_cert_fingerprints", js.Array(value*))
   }
 }

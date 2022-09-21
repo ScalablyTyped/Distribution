@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ProximityDevice extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_devicearrived(`type`: devicearrived, listener: DeviceArrivedEventHandler): Unit = js.native
   @JSName("addEventListener")
@@ -87,7 +87,7 @@ trait ProximityDevice extends StObject {
     */
   def publishUriMessage(message: Uri, messageTransmittedHandler: MessageTransmittedHandler): Double = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_devicearrived(`type`: devicearrived, listener: DeviceArrivedEventHandler): Unit = js.native
   @JSName("removeEventListener")

@@ -29,7 +29,7 @@ trait XTransferable
     * @throws com::sun::star::io::IOException if the data is no longer available in the requested flavor.
     * @throws com::sun::star::datatransfer::UnsupportedFlavorException if the requested {@link DataFlavor} is not supported.
     */
-  def getTransferData(aFlavor: DataFlavor): js.Any
+  def getTransferData(aFlavor: DataFlavor): Any
   
   /**
     * Returns a sequence of supported {@link DataFlavor} .
@@ -50,10 +50,10 @@ object XTransferable {
   inline def apply(
     TransferDataFlavors: SafeArray[DataFlavor],
     acquire: () => Unit,
-    getTransferData: DataFlavor => js.Any,
+    getTransferData: DataFlavor => Any,
     getTransferDataFlavors: () => SafeArray[DataFlavor],
     isDataFlavorSupported: DataFlavor => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XTransferable = {
     val __obj = js.Dynamic.literal(TransferDataFlavors = TransferDataFlavors.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getTransferData = js.Any.fromFunction1(getTransferData), getTransferDataFlavors = js.Any.fromFunction0(getTransferDataFlavors), isDataFlavorSupported = js.Any.fromFunction1(isDataFlavorSupported), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -62,7 +62,7 @@ object XTransferable {
   
   extension [Self <: XTransferable](x: Self) {
     
-    inline def setGetTransferData(value: DataFlavor => js.Any): Self = StObject.set(x, "getTransferData", js.Any.fromFunction1(value))
+    inline def setGetTransferData(value: DataFlavor => Any): Self = StObject.set(x, "getTransferData", js.Any.fromFunction1(value))
     
     inline def setGetTransferDataFlavors(value: () => SafeArray[DataFlavor]): Self = StObject.set(x, "getTransferDataFlavors", js.Any.fromFunction0(value))
     

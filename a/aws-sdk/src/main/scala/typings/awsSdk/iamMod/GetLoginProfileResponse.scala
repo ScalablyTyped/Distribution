@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetLoginProfileResponse extends StObject {
   
   /**
-    * A structure containing the user name and password create date for the user.
+    * A structure containing the user name and the profile creation date for the user.
     */
   var LoginProfile: typings.awsSdk.iamMod.LoginProfile
 }

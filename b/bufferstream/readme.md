@@ -10,10 +10,10 @@ painless stream buffering and cutting
 | ------------------ | :-------------: |
 | Full name          | bufferstream |
 | Keywords           | buffer, buffers, stream, streams |
-| # releases         | 0 |
-| # dependents       | 27 |
-| # downloads        | 109490 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4845.333333333333 |
+| # stars            | 70.0 |
 
 ## Links
 - [Homepage](https://github.com/dodo/node-bufferstream)

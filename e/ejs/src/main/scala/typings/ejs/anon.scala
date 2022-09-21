@@ -3,11 +3,34 @@ package typings.ejs
 import typings.ejs.ejsBooleans.`false`
 import typings.ejs.ejsBooleans.`true`
 import typings.ejs.mod.EscapeCallback
+import typings.ejs.mod.IncluderCallback
+import typings.ejs.mod.IncluderResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
+  
+  trait Filename
+    extends StObject
+       with IncluderResult {
+    
+    var filename: String
+    
+    var template: js.UndefOr[scala.Nothing] = js.undefined
+  }
+  object Filename {
+    
+    inline def apply(filename: String): Filename = {
+      val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Filename]
+    }
+    
+    extension [Self <: Filename](x: Self) {
+      
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    }
+  }
   
   /* Inlined ejs.ejs.Options & {  async :false} */
   trait Optionsasyncfalse extends StObject {
@@ -79,7 +102,7 @@ object anon {
       *
       * @default this
       */
-    var context: js.UndefOr[js.Any] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
     
     /**
       * Log the generated JavaScript source for the EJS template to the console.
@@ -117,6 +140,11 @@ object anon {
       * @default undefined
       */
     var filename: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Custom function to handle EJS includes
+      */
+    var includer: js.UndefOr[IncluderCallback] = js.undefined
     
     /**
       * Name to use for the object storing local variables when not using `with` or destructuring.
@@ -162,6 +190,11 @@ object anon {
       * @default false
       */
     var strict: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * An array of paths to use when resolving includes with relative paths
+      */
+    var views: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Optionsasyncfalse {
     
@@ -194,7 +227,7 @@ object anon {
       
       inline def setCompileDebugUndefined: Self = StObject.set(x, "compileDebug", js.undefined)
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
@@ -210,15 +243,19 @@ object anon {
       
       inline def setDestructuredLocalsUndefined: Self = StObject.set(x, "destructuredLocals", js.undefined)
       
-      inline def setDestructuredLocalsVarargs(value: String*): Self = StObject.set(x, "destructuredLocals", js.Array(value :_*))
+      inline def setDestructuredLocalsVarargs(value: String*): Self = StObject.set(x, "destructuredLocals", js.Array(value*))
       
-      inline def setEscape(value: /* markup */ js.UndefOr[js.Any] => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
+      inline def setEscape(value: /* markup */ js.UndefOr[Any] => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
       
       inline def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
       inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      
+      inline def setIncluder(value: (/* originalPath */ String, /* parsedPath */ String) => IncluderResult): Self = StObject.set(x, "includer", js.Any.fromFunction2(value))
+      
+      inline def setIncluderUndefined: Self = StObject.set(x, "includer", js.undefined)
       
       inline def setLocalsName(value: String): Self = StObject.set(x, "localsName", value.asInstanceOf[js.Any])
       
@@ -243,6 +280,12 @@ object anon {
       inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
       inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      
+      inline def setViews(value: js.Array[String]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
+      
+      inline def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
+      
+      inline def setViewsVarargs(value: String*): Self = StObject.set(x, "views", js.Array(value*))
       
       inline def set_with(value: Boolean): Self = StObject.set(x, "_with", value.asInstanceOf[js.Any])
       
@@ -320,7 +363,7 @@ object anon {
       *
       * @default this
       */
-    var context: js.UndefOr[js.Any] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
     
     /**
       * Log the generated JavaScript source for the EJS template to the console.
@@ -358,6 +401,11 @@ object anon {
       * @default undefined
       */
     var filename: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Custom function to handle EJS includes
+      */
+    var includer: js.UndefOr[IncluderCallback] = js.undefined
     
     /**
       * Name to use for the object storing local variables when not using `with` or destructuring.
@@ -403,6 +451,11 @@ object anon {
       * @default false
       */
     var strict: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * An array of paths to use when resolving includes with relative paths
+      */
+    var views: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Optionsasyncfalseundefine {
     
@@ -436,7 +489,7 @@ object anon {
       
       inline def setCompileDebugUndefined: Self = StObject.set(x, "compileDebug", js.undefined)
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
@@ -452,15 +505,19 @@ object anon {
       
       inline def setDestructuredLocalsUndefined: Self = StObject.set(x, "destructuredLocals", js.undefined)
       
-      inline def setDestructuredLocalsVarargs(value: String*): Self = StObject.set(x, "destructuredLocals", js.Array(value :_*))
+      inline def setDestructuredLocalsVarargs(value: String*): Self = StObject.set(x, "destructuredLocals", js.Array(value*))
       
-      inline def setEscape(value: /* markup */ js.UndefOr[js.Any] => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
+      inline def setEscape(value: /* markup */ js.UndefOr[Any] => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
       
       inline def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
       inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      
+      inline def setIncluder(value: (/* originalPath */ String, /* parsedPath */ String) => IncluderResult): Self = StObject.set(x, "includer", js.Any.fromFunction2(value))
+      
+      inline def setIncluderUndefined: Self = StObject.set(x, "includer", js.undefined)
       
       inline def setLocalsName(value: String): Self = StObject.set(x, "localsName", value.asInstanceOf[js.Any])
       
@@ -485,6 +542,12 @@ object anon {
       inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
       inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      
+      inline def setViews(value: js.Array[String]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
+      
+      inline def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
+      
+      inline def setViewsVarargs(value: String*): Self = StObject.set(x, "views", js.Array(value*))
       
       inline def set_with(value: Boolean): Self = StObject.set(x, "_with", value.asInstanceOf[js.Any])
       
@@ -562,7 +625,7 @@ object anon {
       *
       * @default this
       */
-    var context: js.UndefOr[js.Any] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
     
     /**
       * Log the generated JavaScript source for the EJS template to the console.
@@ -600,6 +663,11 @@ object anon {
       * @default undefined
       */
     var filename: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Custom function to handle EJS includes
+      */
+    var includer: js.UndefOr[IncluderCallback] = js.undefined
     
     /**
       * Name to use for the object storing local variables when not using `with` or destructuring.
@@ -645,6 +713,11 @@ object anon {
       * @default false
       */
     var strict: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * An array of paths to use when resolving includes with relative paths
+      */
+    var views: js.UndefOr[js.Array[String]] = js.undefined
   }
   object OptionsasyncfalseundefineAsync {
     
@@ -675,7 +748,7 @@ object anon {
       
       inline def setCompileDebugUndefined: Self = StObject.set(x, "compileDebug", js.undefined)
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
@@ -691,15 +764,19 @@ object anon {
       
       inline def setDestructuredLocalsUndefined: Self = StObject.set(x, "destructuredLocals", js.undefined)
       
-      inline def setDestructuredLocalsVarargs(value: String*): Self = StObject.set(x, "destructuredLocals", js.Array(value :_*))
+      inline def setDestructuredLocalsVarargs(value: String*): Self = StObject.set(x, "destructuredLocals", js.Array(value*))
       
-      inline def setEscape(value: /* markup */ js.UndefOr[js.Any] => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
+      inline def setEscape(value: /* markup */ js.UndefOr[Any] => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
       
       inline def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
       inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      
+      inline def setIncluder(value: (/* originalPath */ String, /* parsedPath */ String) => IncluderResult): Self = StObject.set(x, "includer", js.Any.fromFunction2(value))
+      
+      inline def setIncluderUndefined: Self = StObject.set(x, "includer", js.undefined)
       
       inline def setLocalsName(value: String): Self = StObject.set(x, "localsName", value.asInstanceOf[js.Any])
       
@@ -724,6 +801,12 @@ object anon {
       inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
       inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      
+      inline def setViews(value: js.Array[String]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
+      
+      inline def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
+      
+      inline def setViewsVarargs(value: String*): Self = StObject.set(x, "views", js.Array(value*))
       
       inline def set_with(value: Boolean): Self = StObject.set(x, "_with", value.asInstanceOf[js.Any])
       
@@ -801,7 +884,7 @@ object anon {
       *
       * @default this
       */
-    var context: js.UndefOr[js.Any] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
     
     /**
       * Log the generated JavaScript source for the EJS template to the console.
@@ -839,6 +922,11 @@ object anon {
       * @default undefined
       */
     var filename: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Custom function to handle EJS includes
+      */
+    var includer: js.UndefOr[IncluderCallback] = js.undefined
     
     /**
       * Name to use for the object storing local variables when not using `with` or destructuring.
@@ -884,6 +972,11 @@ object anon {
       * @default false
       */
     var strict: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * An array of paths to use when resolving includes with relative paths
+      */
+    var views: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Optionsasyncneverundefine {
     
@@ -916,7 +1009,7 @@ object anon {
       
       inline def setCompileDebugUndefined: Self = StObject.set(x, "compileDebug", js.undefined)
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
@@ -932,15 +1025,19 @@ object anon {
       
       inline def setDestructuredLocalsUndefined: Self = StObject.set(x, "destructuredLocals", js.undefined)
       
-      inline def setDestructuredLocalsVarargs(value: String*): Self = StObject.set(x, "destructuredLocals", js.Array(value :_*))
+      inline def setDestructuredLocalsVarargs(value: String*): Self = StObject.set(x, "destructuredLocals", js.Array(value*))
       
-      inline def setEscape(value: /* markup */ js.UndefOr[js.Any] => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
+      inline def setEscape(value: /* markup */ js.UndefOr[Any] => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
       
       inline def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
       inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      
+      inline def setIncluder(value: (/* originalPath */ String, /* parsedPath */ String) => IncluderResult): Self = StObject.set(x, "includer", js.Any.fromFunction2(value))
+      
+      inline def setIncluderUndefined: Self = StObject.set(x, "includer", js.undefined)
       
       inline def setLocalsName(value: String): Self = StObject.set(x, "localsName", value.asInstanceOf[js.Any])
       
@@ -965,6 +1062,12 @@ object anon {
       inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
       inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      
+      inline def setViews(value: js.Array[String]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
+      
+      inline def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
+      
+      inline def setViewsVarargs(value: String*): Self = StObject.set(x, "views", js.Array(value*))
       
       inline def set_with(value: Boolean): Self = StObject.set(x, "_with", value.asInstanceOf[js.Any])
       
@@ -1042,7 +1145,7 @@ object anon {
       *
       * @default this
       */
-    var context: js.UndefOr[js.Any] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
     
     /**
       * Log the generated JavaScript source for the EJS template to the console.
@@ -1080,6 +1183,11 @@ object anon {
       * @default undefined
       */
     var filename: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Custom function to handle EJS includes
+      */
+    var includer: js.UndefOr[IncluderCallback] = js.undefined
     
     /**
       * Name to use for the object storing local variables when not using `with` or destructuring.
@@ -1125,6 +1233,11 @@ object anon {
       * @default false
       */
     var strict: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * An array of paths to use when resolving includes with relative paths
+      */
+    var views: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Optionsasynctrue {
     
@@ -1157,7 +1270,7 @@ object anon {
       
       inline def setCompileDebugUndefined: Self = StObject.set(x, "compileDebug", js.undefined)
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
@@ -1173,15 +1286,19 @@ object anon {
       
       inline def setDestructuredLocalsUndefined: Self = StObject.set(x, "destructuredLocals", js.undefined)
       
-      inline def setDestructuredLocalsVarargs(value: String*): Self = StObject.set(x, "destructuredLocals", js.Array(value :_*))
+      inline def setDestructuredLocalsVarargs(value: String*): Self = StObject.set(x, "destructuredLocals", js.Array(value*))
       
-      inline def setEscape(value: /* markup */ js.UndefOr[js.Any] => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
+      inline def setEscape(value: /* markup */ js.UndefOr[Any] => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
       
       inline def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
       inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      
+      inline def setIncluder(value: (/* originalPath */ String, /* parsedPath */ String) => IncluderResult): Self = StObject.set(x, "includer", js.Any.fromFunction2(value))
+      
+      inline def setIncluderUndefined: Self = StObject.set(x, "includer", js.undefined)
       
       inline def setLocalsName(value: String): Self = StObject.set(x, "localsName", value.asInstanceOf[js.Any])
       
@@ -1206,6 +1323,12 @@ object anon {
       inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
       inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      
+      inline def setViews(value: js.Array[String]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
+      
+      inline def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
+      
+      inline def setViewsVarargs(value: String*): Self = StObject.set(x, "views", js.Array(value*))
       
       inline def set_with(value: Boolean): Self = StObject.set(x, "_with", value.asInstanceOf[js.Any])
       
@@ -1283,7 +1406,7 @@ object anon {
       *
       * @default this
       */
-    var context: js.UndefOr[js.Any] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
     
     /**
       * Log the generated JavaScript source for the EJS template to the console.
@@ -1321,6 +1444,11 @@ object anon {
       * @default undefined
       */
     var filename: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Custom function to handle EJS includes
+      */
+    var includer: js.UndefOr[IncluderCallback] = js.undefined
     
     /**
       * Name to use for the object storing local variables when not using `with` or destructuring.
@@ -1366,6 +1494,11 @@ object anon {
       * @default false
       */
     var strict: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * An array of paths to use when resolving includes with relative paths
+      */
+    var views: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Optionsasynctrueclientfal {
     
@@ -1396,7 +1529,7 @@ object anon {
       
       inline def setCompileDebugUndefined: Self = StObject.set(x, "compileDebug", js.undefined)
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
@@ -1412,15 +1545,19 @@ object anon {
       
       inline def setDestructuredLocalsUndefined: Self = StObject.set(x, "destructuredLocals", js.undefined)
       
-      inline def setDestructuredLocalsVarargs(value: String*): Self = StObject.set(x, "destructuredLocals", js.Array(value :_*))
+      inline def setDestructuredLocalsVarargs(value: String*): Self = StObject.set(x, "destructuredLocals", js.Array(value*))
       
-      inline def setEscape(value: /* markup */ js.UndefOr[js.Any] => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
+      inline def setEscape(value: /* markup */ js.UndefOr[Any] => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
       
       inline def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
       inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      
+      inline def setIncluder(value: (/* originalPath */ String, /* parsedPath */ String) => IncluderResult): Self = StObject.set(x, "includer", js.Any.fromFunction2(value))
+      
+      inline def setIncluderUndefined: Self = StObject.set(x, "includer", js.undefined)
       
       inline def setLocalsName(value: String): Self = StObject.set(x, "localsName", value.asInstanceOf[js.Any])
       
@@ -1445,6 +1582,12 @@ object anon {
       inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
       inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      
+      inline def setViews(value: js.Array[String]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
+      
+      inline def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
+      
+      inline def setViewsVarargs(value: String*): Self = StObject.set(x, "views", js.Array(value*))
       
       inline def set_with(value: Boolean): Self = StObject.set(x, "_with", value.asInstanceOf[js.Any])
       
@@ -1522,7 +1665,7 @@ object anon {
       *
       * @default this
       */
-    var context: js.UndefOr[js.Any] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
     
     /**
       * Log the generated JavaScript source for the EJS template to the console.
@@ -1560,6 +1703,11 @@ object anon {
       * @default undefined
       */
     var filename: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Custom function to handle EJS includes
+      */
+    var includer: js.UndefOr[IncluderCallback] = js.undefined
     
     /**
       * Name to use for the object storing local variables when not using `with` or destructuring.
@@ -1605,6 +1753,11 @@ object anon {
       * @default false
       */
     var strict: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * An array of paths to use when resolving includes with relative paths
+      */
+    var views: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Optionsasynctrueclienttru {
     
@@ -1635,7 +1788,7 @@ object anon {
       
       inline def setCompileDebugUndefined: Self = StObject.set(x, "compileDebug", js.undefined)
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
@@ -1651,15 +1804,19 @@ object anon {
       
       inline def setDestructuredLocalsUndefined: Self = StObject.set(x, "destructuredLocals", js.undefined)
       
-      inline def setDestructuredLocalsVarargs(value: String*): Self = StObject.set(x, "destructuredLocals", js.Array(value :_*))
+      inline def setDestructuredLocalsVarargs(value: String*): Self = StObject.set(x, "destructuredLocals", js.Array(value*))
       
-      inline def setEscape(value: /* markup */ js.UndefOr[js.Any] => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
+      inline def setEscape(value: /* markup */ js.UndefOr[Any] => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
       
       inline def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
       inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      
+      inline def setIncluder(value: (/* originalPath */ String, /* parsedPath */ String) => IncluderResult): Self = StObject.set(x, "includer", js.Any.fromFunction2(value))
+      
+      inline def setIncluderUndefined: Self = StObject.set(x, "includer", js.undefined)
       
       inline def setLocalsName(value: String): Self = StObject.set(x, "localsName", value.asInstanceOf[js.Any])
       
@@ -1685,9 +1842,36 @@ object anon {
       
       inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
       
+      inline def setViews(value: js.Array[String]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
+      
+      inline def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
+      
+      inline def setViewsVarargs(value: String*): Self = StObject.set(x, "views", js.Array(value*))
+      
       inline def set_with(value: Boolean): Self = StObject.set(x, "_with", value.asInstanceOf[js.Any])
       
       inline def set_withUndefined: Self = StObject.set(x, "_with", js.undefined)
+    }
+  }
+  
+  trait Template
+    extends StObject
+       with IncluderResult {
+    
+    var filename: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var template: String
+  }
+  object Template {
+    
+    inline def apply(template: String): Template = {
+      val __obj = js.Dynamic.literal(template = template.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Template]
+    }
+    
+    extension [Self <: Template](x: Self) {
+      
+      inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     }
   }
   

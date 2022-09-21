@@ -21,19 +21,164 @@ object typesMod {
   
   @JSImport("skatejs/types", "CustomElement")
   @js.native
-  class CustomElement ()
+  open class CustomElement ()
     extends StObject
        with HTMLElement {
     
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
     
     var adoptedCallback: js.UndefOr[js.Function0[Unit]] = js.native
     
+    /* standard dom */
+    /* CompleteClass */
+    var ariaAtomic: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaAutoComplete: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaBusy: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaChecked: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaColCount: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaColIndex: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaColSpan: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaCurrent: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaDisabled: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaExpanded: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaHasPopup: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaHidden: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaKeyShortcuts: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaLabel: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaLevel: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaLive: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaModal: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaMultiLine: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaMultiSelectable: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaOrientation: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaPlaceholder: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaPosInSet: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaPressed: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaReadOnly: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaRequired: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaRoleDescription: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaRowCount: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaRowIndex: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaRowSpan: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaSelected: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaSetSize: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaSort: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaValueMax: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaValueMin: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaValueNow: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaValueText: String | Null = js.native
+    
+    /* standard dom */
     /* CompleteClass */
     override val assignedSlot: HTMLSlotElement | Null = js.native
     
@@ -44,32 +189,35 @@ object typesMod {
     
     def connectedCallback(): Unit = js.native
     
+    /* standard dom */
     /* CompleteClass */
     var contentEditable: String = js.native
     
     def disconnectedCallback(): Unit = js.native
     
+    /* standard dom */
     /* CompleteClass */
     var enterKeyHint: String = js.native
     
+    /* standard dom */
     /* CompleteClass */
     var innerHTML: String = js.native
     
+    /* standard dom */
     /* CompleteClass */
     var inputMode: String = js.native
     
+    /* standard dom */
     /* CompleteClass */
     override val isContentEditable: Boolean = js.native
     
-    /**
-      * Returns the first following sibling that is an element, and null otherwise.
-      */
+    /** Returns the first following sibling that is an element, and null otherwise. */
+    /* standard dom */
     /* CompleteClass */
     override val nextElementSibling: Element | Null = js.native
     
-    /**
-      * Returns the first preceding sibling that is an element, and null otherwise.
-      */
+    /** Returns the first preceding sibling that is an element, and null otherwise. */
+    /* standard dom */
     /* CompleteClass */
     override val previousElementSibling: Element | Null = js.native
     
@@ -80,6 +228,7 @@ object typesMod {
     /* InferMemberOverrides */
     override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
     
+    /* standard dom */
     /* CompleteClass */
     override val style: CSSStyleDeclaration = js.native
   }
@@ -93,46 +242,194 @@ object typesMod {
   
   @JSImport("skatejs/types", "WithChildren")
   @js.native
-  class WithChildren ()
+  open class WithChildren ()
     extends StObject
        with HTMLElement {
     
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
     
+    /* standard dom */
+    /* CompleteClass */
+    var ariaAtomic: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaAutoComplete: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaBusy: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaChecked: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaColCount: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaColIndex: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaColSpan: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaCurrent: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaDisabled: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaExpanded: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaHasPopup: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaHidden: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaKeyShortcuts: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaLabel: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaLevel: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaLive: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaModal: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaMultiLine: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaMultiSelectable: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaOrientation: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaPlaceholder: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaPosInSet: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaPressed: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaReadOnly: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaRequired: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaRoleDescription: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaRowCount: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaRowIndex: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaRowSpan: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaSelected: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaSetSize: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaSort: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaValueMax: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaValueMin: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaValueNow: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaValueText: String | Null = js.native
+    
+    /* standard dom */
     /* CompleteClass */
     override val assignedSlot: HTMLSlotElement | Null = js.native
     
     def childrenUpdated(): Unit = js.native
     
+    /* standard dom */
     /* CompleteClass */
     var contentEditable: String = js.native
     
+    /* standard dom */
     /* CompleteClass */
     var enterKeyHint: String = js.native
     
+    /* standard dom */
     /* CompleteClass */
     var innerHTML: String = js.native
     
+    /* standard dom */
     /* CompleteClass */
     var inputMode: String = js.native
     
+    /* standard dom */
     /* CompleteClass */
     override val isContentEditable: Boolean = js.native
     
-    /**
-      * Returns the first following sibling that is an element, and null otherwise.
-      */
+    /** Returns the first following sibling that is an element, and null otherwise. */
+    /* standard dom */
     /* CompleteClass */
     override val nextElementSibling: Element | Null = js.native
     
-    /**
-      * Returns the first preceding sibling that is an element, and null otherwise.
-      */
+    /** Returns the first preceding sibling that is an element, and null otherwise. */
+    /* standard dom */
     /* CompleteClass */
     override val previousElementSibling: Element | Null = js.native
     
@@ -143,6 +440,7 @@ object typesMod {
     /* InferMemberOverrides */
     override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
     
+    /* standard dom */
     /* CompleteClass */
     override val style: CSSStyleDeclaration = js.native
   }
@@ -153,11 +451,11 @@ object typesMod {
   - typings.std.Node because Already inherited
   - scala.AnyRef because Already inherited
   - typings.std.Slottable because Already inherited
-  - typings.std.ParentNode because Already inherited
   - typings.std.NonDocumentTypeChildNode because Already inherited
   - typings.std.InnerHTML because Already inherited
   - typings.std.ChildNode because Already inherited
   - typings.std.Animatable because Already inherited
+  - typings.std.ARIAMixin because Already inherited
   - js.Any because Already inherited
   - typings.std.HTMLOrSVGElement because Already inherited
   - typings.std.GlobalEventHandlers because Already inherited
@@ -173,16 +471,16 @@ object typesMod {
   - typings.skatejs.typesMod.WithLifecycle because Inheritance from two classes. Inlined connecting, connected, disconnecting, disconnected
   - typings.skatejs.typesMod.WithChildren because Inheritance from two classes. Inlined childrenUpdated */ @JSImport("skatejs/types", "WithComponent")
   @js.native
-  class WithComponent[P, S, C] ()
+  open class WithComponent[P, S, C] ()
     extends CustomElement
        with Renderer[Mixed | Null] {
     
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
     
     def childrenUpdated(): Unit = js.native
     
@@ -261,46 +559,194 @@ object typesMod {
   
   @JSImport("skatejs/types", "WithContext")
   @js.native
-  class WithContext[C] ()
+  open class WithContext[C] ()
     extends StObject
        with HTMLElement {
     
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
     
+    /* standard dom */
+    /* CompleteClass */
+    var ariaAtomic: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaAutoComplete: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaBusy: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaChecked: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaColCount: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaColIndex: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaColSpan: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaCurrent: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaDisabled: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaExpanded: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaHasPopup: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaHidden: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaKeyShortcuts: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaLabel: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaLevel: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaLive: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaModal: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaMultiLine: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaMultiSelectable: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaOrientation: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaPlaceholder: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaPosInSet: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaPressed: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaReadOnly: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaRequired: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaRoleDescription: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaRowCount: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaRowIndex: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaRowSpan: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaSelected: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaSetSize: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaSort: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaValueMax: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaValueMin: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaValueNow: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaValueText: String | Null = js.native
+    
+    /* standard dom */
     /* CompleteClass */
     override val assignedSlot: HTMLSlotElement | Null = js.native
     
+    /* standard dom */
     /* CompleteClass */
     var contentEditable: String = js.native
     
     var context: C = js.native
     
+    /* standard dom */
     /* CompleteClass */
     var enterKeyHint: String = js.native
     
+    /* standard dom */
     /* CompleteClass */
     var innerHTML: String = js.native
     
+    /* standard dom */
     /* CompleteClass */
     var inputMode: String = js.native
     
+    /* standard dom */
     /* CompleteClass */
     override val isContentEditable: Boolean = js.native
     
-    /**
-      * Returns the first following sibling that is an element, and null otherwise.
-      */
+    /** Returns the first following sibling that is an element, and null otherwise. */
+    /* standard dom */
     /* CompleteClass */
     override val nextElementSibling: Element | Null = js.native
     
-    /**
-      * Returns the first preceding sibling that is an element, and null otherwise.
-      */
+    /** Returns the first preceding sibling that is an element, and null otherwise. */
+    /* standard dom */
     /* CompleteClass */
     override val previousElementSibling: Element | Null = js.native
     
@@ -311,23 +757,169 @@ object typesMod {
     /* InferMemberOverrides */
     override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
     
+    /* standard dom */
     /* CompleteClass */
     override val style: CSSStyleDeclaration = js.native
   }
   
   @JSImport("skatejs/types", "WithLifecycle")
   @js.native
-  class WithLifecycle ()
+  open class WithLifecycle ()
     extends StObject
        with HTMLElement {
     
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
     
+    /* standard dom */
+    /* CompleteClass */
+    var ariaAtomic: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaAutoComplete: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaBusy: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaChecked: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaColCount: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaColIndex: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaColSpan: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaCurrent: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaDisabled: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaExpanded: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaHasPopup: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaHidden: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaKeyShortcuts: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaLabel: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaLevel: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaLive: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaModal: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaMultiLine: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaMultiSelectable: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaOrientation: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaPlaceholder: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaPosInSet: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaPressed: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaReadOnly: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaRequired: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaRoleDescription: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaRowCount: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaRowIndex: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaRowSpan: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaSelected: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaSetSize: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaSort: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaValueMax: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaValueMin: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaValueNow: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaValueText: String | Null = js.native
+    
+    /* standard dom */
     /* CompleteClass */
     override val assignedSlot: HTMLSlotElement | Null = js.native
     
@@ -335,6 +927,7 @@ object typesMod {
     
     def connecting(): Unit = js.native
     
+    /* standard dom */
     /* CompleteClass */
     var contentEditable: String = js.native
     
@@ -342,27 +935,29 @@ object typesMod {
     
     def disconnecting(): Unit = js.native
     
+    /* standard dom */
     /* CompleteClass */
     var enterKeyHint: String = js.native
     
+    /* standard dom */
     /* CompleteClass */
     var innerHTML: String = js.native
     
+    /* standard dom */
     /* CompleteClass */
     var inputMode: String = js.native
     
+    /* standard dom */
     /* CompleteClass */
     override val isContentEditable: Boolean = js.native
     
-    /**
-      * Returns the first following sibling that is an element, and null otherwise.
-      */
+    /** Returns the first following sibling that is an element, and null otherwise. */
+    /* standard dom */
     /* CompleteClass */
     override val nextElementSibling: Element | Null = js.native
     
-    /**
-      * Returns the first preceding sibling that is an element, and null otherwise.
-      */
+    /** Returns the first preceding sibling that is an element, and null otherwise. */
+    /* standard dom */
     /* CompleteClass */
     override val previousElementSibling: Element | Null = js.native
     
@@ -373,51 +968,200 @@ object typesMod {
     /* InferMemberOverrides */
     override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
     
+    /* standard dom */
     /* CompleteClass */
     override val style: CSSStyleDeclaration = js.native
   }
   
   @JSImport("skatejs/types", "WithRenderer")
   @js.native
-  class WithRenderer[O] ()
+  open class WithRenderer[O] ()
     extends StObject
        with HTMLElement
        with Renderer[O] {
     
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
     
+    /* standard dom */
+    /* CompleteClass */
+    var ariaAtomic: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaAutoComplete: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaBusy: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaChecked: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaColCount: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaColIndex: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaColSpan: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaCurrent: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaDisabled: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaExpanded: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaHasPopup: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaHidden: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaKeyShortcuts: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaLabel: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaLevel: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaLive: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaModal: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaMultiLine: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaMultiSelectable: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaOrientation: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaPlaceholder: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaPosInSet: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaPressed: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaReadOnly: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaRequired: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaRoleDescription: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaRowCount: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaRowIndex: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaRowSpan: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaSelected: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaSetSize: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaSort: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaValueMax: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaValueMin: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaValueNow: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaValueText: String | Null = js.native
+    
+    /* standard dom */
     /* CompleteClass */
     override val assignedSlot: HTMLSlotElement | Null = js.native
     
+    /* standard dom */
     /* CompleteClass */
     var contentEditable: String = js.native
     
+    /* standard dom */
     /* CompleteClass */
     var enterKeyHint: String = js.native
     
+    /* standard dom */
     /* CompleteClass */
     var innerHTML: String = js.native
     
+    /* standard dom */
     /* CompleteClass */
     var inputMode: String = js.native
     
+    /* standard dom */
     /* CompleteClass */
     override val isContentEditable: Boolean = js.native
     
-    /**
-      * Returns the first following sibling that is an element, and null otherwise.
-      */
+    /** Returns the first following sibling that is an element, and null otherwise. */
+    /* standard dom */
     /* CompleteClass */
     override val nextElementSibling: Element | Null = js.native
     
-    /**
-      * Returns the first preceding sibling that is an element, and null otherwise.
-      */
+    /** Returns the first preceding sibling that is an element, and null otherwise. */
+    /* standard dom */
     /* CompleteClass */
     override val previousElementSibling: Element | Null = js.native
     
@@ -448,6 +1192,7 @@ object typesMod {
     // called before render
     var rendering: js.UndefOr[js.Function0[Unit]] = js.native
     
+    /* standard dom */
     /* CompleteClass */
     override val style: CSSStyleDeclaration = js.native
     
@@ -459,44 +1204,192 @@ object typesMod {
   
   @JSImport("skatejs/types", "WithUpdate")
   @js.native
-  class WithUpdate[P, S] ()
+  open class WithUpdate[P, S] ()
     extends StObject
        with HTMLElement {
     
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
     
+    /* standard dom */
+    /* CompleteClass */
+    var ariaAtomic: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaAutoComplete: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaBusy: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaChecked: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaColCount: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaColIndex: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaColSpan: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaCurrent: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaDisabled: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaExpanded: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaHasPopup: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaHidden: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaKeyShortcuts: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaLabel: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaLevel: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaLive: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaModal: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaMultiLine: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaMultiSelectable: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaOrientation: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaPlaceholder: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaPosInSet: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaPressed: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaReadOnly: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaRequired: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaRoleDescription: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaRowCount: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaRowIndex: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaRowSpan: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaSelected: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaSetSize: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaSort: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaValueMax: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaValueMin: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaValueNow: String | Null = js.native
+    
+    /* standard dom */
+    /* CompleteClass */
+    var ariaValueText: String | Null = js.native
+    
+    /* standard dom */
     /* CompleteClass */
     override val assignedSlot: HTMLSlotElement | Null = js.native
     
+    /* standard dom */
     /* CompleteClass */
     var contentEditable: String = js.native
     
+    /* standard dom */
     /* CompleteClass */
     var enterKeyHint: String = js.native
     
+    /* standard dom */
     /* CompleteClass */
     var innerHTML: String = js.native
     
+    /* standard dom */
     /* CompleteClass */
     var inputMode: String = js.native
     
+    /* standard dom */
     /* CompleteClass */
     override val isContentEditable: Boolean = js.native
     
-    /**
-      * Returns the first following sibling that is an element, and null otherwise.
-      */
+    /** Returns the first following sibling that is an element, and null otherwise. */
+    /* standard dom */
     /* CompleteClass */
     override val nextElementSibling: Element | Null = js.native
     
-    /**
-      * Returns the first preceding sibling that is an element, and null otherwise.
-      */
+    /** Returns the first preceding sibling that is an element, and null otherwise. */
+    /* standard dom */
     /* CompleteClass */
     override val previousElementSibling: Element | Null = js.native
     
@@ -521,6 +1414,7 @@ object typesMod {
     
     var state: S = js.native
     
+    /* standard dom */
     /* CompleteClass */
     override val style: CSSStyleDeclaration = js.native
     
@@ -547,13 +1441,13 @@ object typesMod {
   @js.native
   trait ComposedCustomEvent
     extends StObject
-       with CustomEvent[js.Any]
+       with CustomEvent[Any]
   
-  type Constructor[T] = Instantiable1[/* args (repeated) */ js.Any, T]
+  type Constructor[T] = Instantiable1[/* args (repeated) */ Any, T]
   
   trait EventOptions
     extends StObject
-       with CustomEventInit[js.Any]
+       with CustomEventInit[Any]
   object EventOptions {
     
     inline def apply(): EventOptions = {
@@ -562,7 +1456,7 @@ object typesMod {
     }
   }
   
-  type HTMLElementClass = /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof HTMLElement */ js.Any
+  type HTMLElementClass = /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof HTMLElement */ Any
   
   type Maybe[T] = js.UndefOr[T | Null]
   
@@ -574,7 +1468,7 @@ object typesMod {
     
     var attribute: js.UndefOr[PropOptionsAttribute] = js.undefined
     
-    var coerce: js.UndefOr[js.Function1[/* value */ js.Any, Maybe[T]]] = js.undefined
+    var coerce: js.UndefOr[js.Function1[/* value */ Any, Maybe[T]]] = js.undefined
     
     var deserialize: js.UndefOr[js.Function1[/* value */ String | Null, Maybe[T]]] = js.undefined
     
@@ -593,7 +1487,7 @@ object typesMod {
       
       inline def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
       
-      inline def setCoerce(value: /* value */ js.Any => Maybe[T]): Self = StObject.set(x, "coerce", js.Any.fromFunction1(value))
+      inline def setCoerce(value: /* value */ Any => Maybe[T]): Self = StObject.set(x, "coerce", js.Any.fromFunction1(value))
       
       inline def setCoerceUndefined: Self = StObject.set(x, "coerce", js.undefined)
       

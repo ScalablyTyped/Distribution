@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@firebase/auth-types", "PhoneMultiFactorGenerator")
 @js.native
-/* private */ class PhoneMultiFactorGenerator () extends StObject
+/* private */ open class PhoneMultiFactorGenerator () extends StObject
 /* static members */
 object PhoneMultiFactorGenerator {
   

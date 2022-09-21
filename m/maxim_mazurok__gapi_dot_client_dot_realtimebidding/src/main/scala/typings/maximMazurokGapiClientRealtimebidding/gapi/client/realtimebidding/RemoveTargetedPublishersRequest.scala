@@ -26,6 +26,6 @@ object RemoveTargetedPublishersRequest {
     
     inline def setPublisherIdsUndefined: Self = StObject.set(x, "publisherIds", js.undefined)
     
-    inline def setPublisherIdsVarargs(value: String*): Self = StObject.set(x, "publisherIds", js.Array(value :_*))
+    inline def setPublisherIdsVarargs(value: String*): Self = StObject.set(x, "publisherIds", js.Array(value*))
   }
 }

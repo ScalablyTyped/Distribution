@@ -10,10 +10,10 @@ Imperium is a role-based user's authorizations (ACL) library for Node.js.
 | ------------------ | :-------------: |
 | Full name          | imperium |
 | Keywords           | node acl, acl, auth, authorization, user acl, security, imperium |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 1843 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 218.0 |
+| # stars            | 109.0 |
 
 ## Links
 - [Homepage](https://github.com/terrajs/imperium#readme)

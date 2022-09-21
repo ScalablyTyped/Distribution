@@ -1,7 +1,7 @@
 package typings.vscodeLanguageserverProtocol
 
-import typings.vscodeJsonrpc.mod.ProgressType
-import typings.vscodeJsonrpc.mod.RequestHandler
+import typings.vscodeJsonrpc.connectionMod.RequestHandler
+import typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection
 import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType
 import typings.vscodeLanguageserverProtocol.protocolMod.PartialResultParams
 import typings.vscodeLanguageserverProtocol.protocolMod.StaticRegistrationOptions
@@ -24,20 +24,19 @@ object protocolDeclarationMod {
   
   object DeclarationRequest {
     
-    @JSImport("vscode-languageserver-protocol/lib/protocol.declaration", "DeclarationRequest.method")
+    @JSImport("vscode-languageserver-protocol/lib/common/protocol.declaration", "DeclarationRequest.messageDirection")
+    @js.native
+    val messageDirection: MessageDirection = js.native
+    
+    @JSImport("vscode-languageserver-protocol/lib/common/protocol.declaration", "DeclarationRequest.method")
     @js.native
     val method: textDocumentSlashdeclaration = js.native
     
-    /** @deprecated Use DeclarationRequest.type */
-    @JSImport("vscode-languageserver-protocol/lib/protocol.declaration", "DeclarationRequest.resultType")
-    @js.native
-    val resultType: ProgressType[js.Array[Location | LocationLink]] = js.native
-    
-    @JSImport("vscode-languageserver-protocol/lib/protocol.declaration", "DeclarationRequest.type")
+    @JSImport("vscode-languageserver-protocol/lib/common/protocol.declaration", "DeclarationRequest.type")
     @js.native
     val `type`: ProtocolRequestType[
         DeclarationParams, 
-        Location | (js.Array[Location | LocationLink]) | Null, 
+        Declaration | js.Array[LocationLink] | Null, 
         js.Array[Location | LocationLink], 
         Unit, 
         DeclarationRegistrationOptions

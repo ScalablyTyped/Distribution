@@ -14,35 +14,35 @@ trait BaseLayerView2D
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerView2D.html#attach)
     */
-  def attach(): Unit = js.native
+  def attach(): scala.Unit = js.native
   
   /**
     * Method called after the layer is removed and the [LayerView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html) is about to be removed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerView2D.html#detach)
     */
-  def detach(): Unit = js.native
+  def detach(): scala.Unit = js.native
   
   /**
     * Method to implement that is responsible for providing objects hit at the specified screen coordinates.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerView2D.html#hitTest)
     */
-  def hitTest(x: Double, y: Double): js.Promise[Graphic] = js.native
+  def hitTest(mapPoint: Point, screenPoint: ScreenPoint): js.Promise[js.Array[Graphic]] = js.native
   
   /**
     * The method to implement that is responsible of drawing the content of the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerView2D.html#render)
     */
-  def render(renderParameters: BaseLayerView2DRenderRenderParameters): Unit = js.native
+  def render(renderParameters: BaseLayerView2DRenderRenderParameters): scala.Unit = js.native
   
   /**
     * The [LayerView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html) can call this method to ask the MapView to schedule a new rendering frame.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerView2D.html#requestRender)
     */
-  def requestRender(): Unit = js.native
+  def requestRender(): scala.Unit = js.native
   
   /**
     * The array of [Tile](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerView2D.html#Tile) objects computed to cover the MapView's visible area.
@@ -56,7 +56,7 @@ trait BaseLayerView2D
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerView2D.html#tilesChanged)
     */
-  def tilesChanged(added: js.Array[Tile], removed: js.Array[Tile]): Unit = js.native
+  def tilesChanged(added: js.Array[Tile], removed: js.Array[Tile]): scala.Unit = js.native
   
   /**
     * References the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) this [LayerView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html) belongs to.

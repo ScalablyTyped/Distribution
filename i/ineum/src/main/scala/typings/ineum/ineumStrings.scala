@@ -19,6 +19,10 @@ object ineumStrings {
   inline def beaconBatchingTime: beaconBatchingTime = "beaconBatchingTime".asInstanceOf[beaconBatchingTime]
   
   @js.native
+  sealed trait captureHeaders extends StObject
+  inline def captureHeaders: captureHeaders = "captureHeaders".asInstanceOf[captureHeaders]
+  
+  @js.native
   sealed trait getPageLoadId extends StObject
   inline def getPageLoadId: getPageLoadId = "getPageLoadId".asInstanceOf[getPageLoadId]
   
@@ -69,6 +73,10 @@ object ineumStrings {
   @js.native
   sealed trait reportingUrl extends StObject
   inline def reportingUrl: reportingUrl = "reportingUrl".asInstanceOf[reportingUrl]
+  
+  @js.native
+  sealed trait secrets extends StObject
+  inline def secrets: secrets = "secrets".asInstanceOf[secrets]
   
   @js.native
   sealed trait terminateSession extends StObject

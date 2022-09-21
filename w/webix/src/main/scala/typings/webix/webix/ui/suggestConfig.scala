@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait suggestConfig extends StObject {
   
-  var animate: js.UndefOr[js.Any] = js.undefined
+  var animate: js.UndefOr[Any] = js.undefined
   
   var autofit: js.UndefOr[Boolean] = js.undefined
   
@@ -22,11 +22,13 @@ trait suggestConfig extends StObject {
   
   var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[js.Any] = js.undefined
+  var css: js.UndefOr[Any] = js.undefined
   
-  var data: js.UndefOr[String | js.Array[js.Any]] = js.undefined
+  var data: js.UndefOr[String | js.Array[Any]] = js.undefined
   
   var disabled: js.UndefOr[Boolean] = js.undefined
+  
+  var escHide: js.UndefOr[Boolean] = js.undefined
   
   var filter: js.UndefOr[WebixCallback] = js.undefined
   
@@ -34,7 +36,7 @@ trait suggestConfig extends StObject {
   
   var gravity: js.UndefOr[Double] = js.undefined
   
-  var head: js.UndefOr[js.Any] = js.undefined
+  var head: js.UndefOr[Any] = js.undefined
   
   var headHeight: js.UndefOr[Double] = js.undefined
   
@@ -66,7 +68,7 @@ trait suggestConfig extends StObject {
   
   var on: js.UndefOr[EventHash] = js.undefined
   
-  var padding: js.UndefOr[js.Any] = js.undefined
+  var padding: js.UndefOr[Double] = js.undefined
   
   var point: js.UndefOr[Boolean] = js.undefined
   
@@ -103,7 +105,7 @@ object suggestConfig {
   
   extension [Self <: suggestConfig](x: Self) {
     
-    inline def setAnimate(value: js.Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
@@ -127,19 +129,23 @@ object suggestConfig {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setCss(value: js.Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
-    inline def setData(value: String | js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setEscHide(value: Boolean): Self = StObject.set(x, "escHide", value.asInstanceOf[js.Any])
+    
+    inline def setEscHideUndefined: Self = StObject.set(x, "escHide", js.undefined)
     
     inline def setFilter(value: WebixCallback): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
@@ -153,7 +159,7 @@ object suggestConfig {
     
     inline def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
     
-    inline def setHead(value: js.Any): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+    inline def setHead(value: Any): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
     
     inline def setHeadHeight(value: Double): Self = StObject.set(x, "headHeight", value.asInstanceOf[js.Any])
     
@@ -217,7 +223,7 @@ object suggestConfig {
     
     inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     
-    inline def setPadding(value: js.Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     

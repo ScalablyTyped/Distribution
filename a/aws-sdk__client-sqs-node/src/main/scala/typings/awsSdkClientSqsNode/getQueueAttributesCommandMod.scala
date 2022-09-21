@@ -16,7 +16,7 @@ object getQueueAttributesCommandMod {
   
   @JSImport("@aws-sdk/client-sqs-node/commands/GetQueueAttributesCommand", "GetQueueAttributesCommand")
   @js.native
-  class GetQueueAttributesCommand protected ()
+  open class GetQueueAttributesCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object getQueueAttributesCommandMod {
     override val middlewareStack: MiddlewareStack[GetQueueAttributesInput, GetQueueAttributesOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: SQSResolvedConfiguration
     ): Handler[GetQueueAttributesInput, GetQueueAttributesOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: SQSResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[GetQueueAttributesInput, GetQueueAttributesOutput] = js.native
   }
 }

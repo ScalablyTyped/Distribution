@@ -1,6 +1,7 @@
 package typings.threeTdsLoader.anon
 
 import org.scalablytyped.runtime.Instantiable3
+import typings.std.ArrayLike
 import typings.three.mod.KeyframeTrack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,10 +12,10 @@ trait TypeofKeyframeTrack
   extends StObject
      with Instantiable3[
       /* name */ String, 
-      /* times */ js.Array[js.Any], 
-      /* values */ js.Array[js.Any], 
+      /* times */ ArrayLike[Any], 
+      /* values */ ArrayLike[Any], 
       KeyframeTrack
     ] {
   
-  def toJSON(track: typings.three.keyframeTrackMod.KeyframeTrack): js.Any = js.native
+  def toJSON(track: typings.three.keyframeTrackMod.KeyframeTrack): Any = js.native
 }

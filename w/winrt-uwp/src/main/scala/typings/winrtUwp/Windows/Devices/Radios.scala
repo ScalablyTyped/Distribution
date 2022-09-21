@@ -118,9 +118,9 @@ object Radios {
   @js.native
   trait Radio extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_statechanged(`type`: statechanged, listener: TypedEventHandler[Radio, js.Any]): Unit = js.native
+    def addEventListener_statechanged(`type`: statechanged, listener: TypedEventHandler[Radio, Any]): Unit = js.native
     
     /** Gets an enumeration value that describes what kind of radio this object represents. */
     var kind: RadioKind = js.native
@@ -129,14 +129,14 @@ object Radios {
     var name: String = js.native
     
     /** Event raised by a state change in the radio represented by this object. */
-    def onstatechanged(ev: js.Any & WinRTEvent[Radio]): Unit = js.native
+    def onstatechanged(ev: Any & WinRTEvent[Radio]): Unit = js.native
     /** Event raised by a state change in the radio represented by this object. */
     @JSName("onstatechanged")
-    var onstatechanged_Original: TypedEventHandler[Radio, js.Any] = js.native
+    var onstatechanged_Original: TypedEventHandler[Radio, Any] = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("removeEventListener")
-    def removeEventListener_statechanged(`type`: statechanged, listener: TypedEventHandler[Radio, js.Any]): Unit = js.native
+    def removeEventListener_statechanged(`type`: statechanged, listener: TypedEventHandler[Radio, Any]): Unit = js.native
     
     /**
       * An asynchronous operation that attempts to set the state of the radio represented by this object.

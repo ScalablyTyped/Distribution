@@ -36,7 +36,7 @@ trait Field extends StObject {
   
   val OLEFormat: typings.activexWord.Word.OLEFormat
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Previous: Field
   
@@ -75,7 +75,7 @@ object Field {
     Locked: Boolean,
     Next: Field,
     OLEFormat: OLEFormat,
-    Parent: js.Any,
+    Parent: Any,
     Previous: Field,
     Result: Range,
     Select: () => Unit,
@@ -123,7 +123,7 @@ object Field {
     
     inline def setOLEFormat(value: OLEFormat): Self = StObject.set(x, "OLEFormat", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPrevious(value: Field): Self = StObject.set(x, "Previous", value.asInstanceOf[js.Any])
     

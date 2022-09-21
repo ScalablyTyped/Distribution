@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Contains the text that is attached to a shape, in addition to properties and methods for manipulating the text.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 trait TextRangeLoadOptions extends StObject {
@@ -19,17 +19,17 @@ trait TextRangeLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Returns a `ShapeFont` object that represents the font attributes for the text range.
     *
-    * Returns a ShapeFont object that represents the font attributes for the text range.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var font: js.UndefOr[ShapeFontLoadOptions] = js.undefined
   
   /**
-    *
     * Represents the plain text content of the text range.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var text: js.UndefOr[Boolean] = js.undefined

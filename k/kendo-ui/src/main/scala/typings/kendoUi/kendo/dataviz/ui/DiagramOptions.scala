@@ -21,11 +21,11 @@ trait DiagramOptions extends StObject {
   
   var connections: js.UndefOr[js.Array[DiagramConnection]] = js.undefined
   
-  var connectionsDataSource: js.UndefOr[js.Any | DataSource] = js.undefined
+  var connectionsDataSource: js.UndefOr[Any | DataSource] = js.undefined
   
   var dataBound: js.UndefOr[js.Function1[/* e */ DiagramDataBoundEvent, Unit]] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any | DataSource] = js.undefined
+  var dataSource: js.UndefOr[Any | DataSource] = js.undefined
   
   var drag: js.UndefOr[js.Function1[/* e */ DiagramDragEvent, Unit]] = js.undefined
   
@@ -120,19 +120,19 @@ object DiagramOptions {
     
     inline def setConnections(value: js.Array[DiagramConnection]): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
     
-    inline def setConnectionsDataSource(value: js.Any | DataSource): Self = StObject.set(x, "connectionsDataSource", value.asInstanceOf[js.Any])
+    inline def setConnectionsDataSource(value: Any | DataSource): Self = StObject.set(x, "connectionsDataSource", value.asInstanceOf[js.Any])
     
     inline def setConnectionsDataSourceUndefined: Self = StObject.set(x, "connectionsDataSource", js.undefined)
     
     inline def setConnectionsUndefined: Self = StObject.set(x, "connections", js.undefined)
     
-    inline def setConnectionsVarargs(value: DiagramConnection*): Self = StObject.set(x, "connections", js.Array(value :_*))
+    inline def setConnectionsVarargs(value: DiagramConnection*): Self = StObject.set(x, "connections", js.Array(value*))
     
     inline def setDataBound(value: /* e */ DiagramDataBoundEvent => Unit): Self = StObject.set(x, "dataBound", js.Any.fromFunction1(value))
     
     inline def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
-    inline def setDataSource(value: js.Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
@@ -216,7 +216,7 @@ object DiagramOptions {
     
     inline def setShapesUndefined: Self = StObject.set(x, "shapes", js.undefined)
     
-    inline def setShapesVarargs(value: DiagramShape*): Self = StObject.set(x, "shapes", js.Array(value :_*))
+    inline def setShapesVarargs(value: DiagramShape*): Self = StObject.set(x, "shapes", js.Array(value*))
     
     inline def setTemplate(value: String | js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     

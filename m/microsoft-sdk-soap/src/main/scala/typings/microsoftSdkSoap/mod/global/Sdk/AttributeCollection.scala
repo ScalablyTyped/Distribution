@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Sdk.AttributeCollection")
 @js.native
-class AttributeCollection () extends Collection[AttributeBase] {
+open class AttributeCollection () extends Collection[AttributeBase] {
   
   def add(attribute: AttributeBase, isChanged: scala.Boolean): Unit = js.native
   

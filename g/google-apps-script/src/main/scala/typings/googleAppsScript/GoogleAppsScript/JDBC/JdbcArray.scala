@@ -14,8 +14,8 @@ trait JdbcArray extends StObject {
   
   def free(): Unit = js.native
   
-  def getArray(): js.Any = js.native
-  def getArray(index: Integer, count: Integer): js.Any = js.native
+  def getArray(): Any = js.native
+  def getArray(index: Integer, count: Integer): Any = js.native
   
   def getBaseType(): Integer = js.native
   

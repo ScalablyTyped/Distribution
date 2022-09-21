@@ -19,7 +19,7 @@ object modalViewMod {
   
   @JSImport("@ant-design/react-native/lib/modal/ModalView", JSImport.Default)
   @js.native
-  class default protected () extends RCModal {
+  open class default protected () extends RCModal {
     def this(props: IModalPropTypes) = this()
   }
   /* static members */
@@ -115,15 +115,14 @@ object modalViewMod {
   }
   
   @js.native
-  trait RCModal
-    extends Component[IModalPropTypes, js.Any, js.Any] {
+  trait RCModal extends Component[IModalPropTypes, Any, Any] {
     
     @JSName("UNSAFE_componentWillReceiveProps")
     def UNSAFE_componentWillReceiveProps_MRCModal(nextProps: IModalPropTypes): Unit = js.native
     
-    var animDialog: js.Any = js.native
+    var animDialog: Any = js.native
     
-    var animMask: js.Any = js.native
+    var animMask: Any = js.native
     
     def animateDialog(visible: Boolean): Unit = js.native
     
@@ -151,7 +150,7 @@ object modalViewMod {
     def onMaskClose(): Unit = js.native
     
     @JSName("shouldComponentUpdate")
-    def shouldComponentUpdate_MRCModal(nextProps: IModalPropTypes, nextState: js.Any): Boolean = js.native
+    def shouldComponentUpdate_MRCModal(nextProps: IModalPropTypes, nextState: Any): Boolean = js.native
     
     def stopDialogAnim(): Unit = js.native
     

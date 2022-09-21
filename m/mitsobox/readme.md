@@ -10,10 +10,10 @@ Typings are for version 0.1
 | ------------------ | :-------------: |
 | Full name          | mitsobox |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 949 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 67.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/mitsobox)

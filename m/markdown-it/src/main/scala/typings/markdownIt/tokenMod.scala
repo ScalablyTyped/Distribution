@@ -14,7 +14,7 @@ object tokenMod {
     */
   @JSImport("markdown-it/lib/token", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Token {
     def this(`type`: String, tag: String, nesting: Nesting) = this()
@@ -112,7 +112,7 @@ object tokenMod {
       * A place for plugins to store an arbitrary data
       */
     /* CompleteClass */
-    var meta: js.Any = js.native
+    var meta: Any = js.native
     
     /**
       * Level change (number in {-1, 0, 1} set), where:
@@ -235,7 +235,7 @@ object tokenMod {
     /**
       * A place for plugins to store an arbitrary data
       */
-    var meta: js.Any
+    var meta: Any
     
     /**
       * Level change (number in {-1, 0, 1} set), where:
@@ -270,7 +270,7 @@ object tokenMod {
       info: String,
       level: Double,
       markup: String,
-      meta: js.Any,
+      meta: Any,
       nesting: `1` | `0` | `-1`,
       tag: String,
       `type`: String
@@ -296,7 +296,7 @@ object tokenMod {
       
       inline def setAttrsNull: Self = StObject.set(x, "attrs", null)
       
-      inline def setAttrsVarargs(value: (js.Tuple2[String, String])*): Self = StObject.set(x, "attrs", js.Array(value :_*))
+      inline def setAttrsVarargs(value: (js.Tuple2[String, String])*): Self = StObject.set(x, "attrs", js.Array(value*))
       
       inline def setBlock(value: Boolean): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       
@@ -304,7 +304,7 @@ object tokenMod {
       
       inline def setChildrenNull: Self = StObject.set(x, "children", null)
       
-      inline def setChildrenVarargs(value: Token*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: Token*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -320,7 +320,7 @@ object tokenMod {
       
       inline def setMarkup(value: String): Self = StObject.set(x, "markup", value.asInstanceOf[js.Any])
       
-      inline def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
       inline def setNesting(value: `1` | `0` | `-1`): Self = StObject.set(x, "nesting", value.asInstanceOf[js.Any])
       

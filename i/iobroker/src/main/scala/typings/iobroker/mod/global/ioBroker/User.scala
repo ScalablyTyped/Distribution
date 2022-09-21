@@ -28,6 +28,6 @@ object User {
     
     inline def setGroups(value: js.Array[UserGroup]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
-    inline def setGroupsVarargs(value: UserGroup*): Self = StObject.set(x, "groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: UserGroup*): Self = StObject.set(x, "groups", js.Array(value*))
   }
 }

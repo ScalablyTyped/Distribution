@@ -14,19 +14,7 @@ object matchesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def matches_every(modifier: every): js.Function3[
-    /* node */ Node, 
-    /* selector */ TSQuerySelectorNode, 
-    /* ancestry */ js.Array[Node], 
-    Boolean
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("matches")(modifier.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
-    /* node */ Node, 
-    /* selector */ TSQuerySelectorNode, 
-    /* ancestry */ js.Array[Node], 
-    Boolean
-  ]]
-  
-  inline def matches_some(modifier: some): js.Function3[
+  inline def matches(modifier: some | every): js.Function3[
     /* node */ Node, 
     /* selector */ TSQuerySelectorNode, 
     /* ancestry */ js.Array[Node], 

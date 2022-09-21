@@ -2,7 +2,6 @@ package typings.arcgisJsApi.global.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.ready
 import typings.arcgisJsApi.esri.TimePickerViewModelProperties
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSGlobal("__esri.TimePickerViewModel")
 @js.native
-class TimePickerViewModelCls ()
+/**
+  * Provides the logic for the [TimePicker](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-TimePicker.html) widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-TimePickerViewModel.html)
+  */
+open class TimePickerViewModelCls ()
   extends StObject
      with typings.arcgisJsApi.esri.TimePickerViewModel {
   def this(properties: TimePickerViewModelProperties) = this()
@@ -18,7 +22,9 @@ class TimePickerViewModelCls ()
   /**
     * The current state of the widget.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-MomentElementViewModel.html#state)
+    * @default ready
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-DateTimeElementViewModel.html#state)
     */
   /* CompleteClass */
   var state: ready = js.native
@@ -26,8 +32,8 @@ class TimePickerViewModelCls ()
   /**
     * The selected date.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-MomentElementViewModel.html#value)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-DateTimeElementViewModel.html#value)
     */
   /* CompleteClass */
-  var value: Date = js.native
+  var value: js.Date = js.native
 }

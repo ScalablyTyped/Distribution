@@ -1,31 +1,22 @@
 package typings.materialUiCore.anon
 
-import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ClassName extends StObject {
   
-  var className: js.UndefOr[String] = js.undefined
-  
-  var style: js.UndefOr[CSSProperties] = js.undefined
+  var className: String
 }
 object ClassName {
   
-  inline def apply(): ClassName = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(className: String): ClassName = {
+    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassName]
   }
   
   extension [Self <: ClassName](x: Self) {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
-    
-    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
-    
-    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
-    
-    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

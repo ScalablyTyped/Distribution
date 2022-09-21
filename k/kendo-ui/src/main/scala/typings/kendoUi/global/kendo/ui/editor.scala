@@ -8,7 +8,7 @@ object editor {
   
   @JSGlobal("kendo.ui.editor.Toolbar")
   @js.native
-  class Toolbar ()
+  open class Toolbar ()
     extends StObject
        with typings.kendoUi.kendo.ui.editor.Toolbar
 }

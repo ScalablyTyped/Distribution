@@ -14,10 +14,10 @@ object mod {
   
   @JSImport("koa-joi-router-docs", "SwaggerAPI")
   @js.native
-  class SwaggerAPI () extends StObject {
+  open class SwaggerAPI () extends StObject {
     
-    def addJoiRouter(router: Router): js.Any = js.native
-    def addJoiRouter(router: Router, options: RouterOptions): js.Any = js.native
+    def addJoiRouter(router: Router): Any = js.native
+    def addJoiRouter(router: Router, options: RouterOptions): Any = js.native
     
     def generateSpec(config: SpecConfig): js.Object = js.native
     def generateSpec(config: SpecConfig, options: SpecOptions): js.Object = js.native
@@ -50,7 +50,7 @@ object mod {
         
         inline def setTags(value: js.Array[Name]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
         
-        inline def setTagsVarargs(value: Name*): Self = StObject.set(x, "tags", js.Array(value :_*))
+        inline def setTagsVarargs(value: Name*): Self = StObject.set(x, "tags", js.Array(value*))
       }
     }
     

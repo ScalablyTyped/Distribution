@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PutResourceConfigRequest extends StObject {
   
   /**
-    * The configuration object of the resource in valid JSON format. It must match the schema registered with AWS CloudFormation.  The configuration JSON must not exceed 64 KB. 
+    * The configuration object of the resource in valid JSON format. It must match the schema registered with CloudFormation.  The configuration JSON must not exceed 64 KB. 
     */
   var Configuration: typings.awsSdk.configserviceMod.Configuration
   
@@ -22,17 +22,17 @@ trait PutResourceConfigRequest extends StObject {
   var ResourceName: js.UndefOr[typings.awsSdk.configserviceMod.ResourceName] = js.undefined
   
   /**
-    * The type of the resource. The custom resource type must be registered with AWS CloudFormation.   You cannot use the organization names “aws”, “amzn”, “amazon”, “alexa”, “custom” with custom resource types. It is the first part of the ResourceType up to the first ::. 
+    * The type of the resource. The custom resource type must be registered with CloudFormation.   You cannot use the organization names “amzn”, “amazon”, “alexa”, “custom” with custom resource types. It is the first part of the ResourceType up to the first ::. 
     */
   var ResourceType: ResourceTypeString
   
   /**
-    * Version of the schema registered for the ResourceType in AWS CloudFormation.
+    * Version of the schema registered for the ResourceType in CloudFormation.
     */
   var SchemaVersionId: typings.awsSdk.configserviceMod.SchemaVersionId
   
   /**
-    * Tags associated with the resource.
+    * Tags associated with the resource.  This field is not to be confused with the Amazon Web Services-wide tag feature for Amazon Web Services resources. Tags for PutResourceConfig are tags that you supply for the configuration items of your custom resources. 
     */
   var Tags: js.UndefOr[typings.awsSdk.configserviceMod.Tags] = js.undefined
 }

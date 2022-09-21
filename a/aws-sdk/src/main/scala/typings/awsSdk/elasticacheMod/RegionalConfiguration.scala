@@ -12,7 +12,7 @@ trait RegionalConfiguration extends StObject {
   var ReplicationGroupId: String
   
   /**
-    * The AWS region where the cluster is stored
+    * The Amazon region where the cluster is stored
     */
   var ReplicationGroupRegion: String
   
@@ -40,6 +40,6 @@ object RegionalConfiguration {
     
     inline def setReshardingConfiguration(value: ReshardingConfigurationList): Self = StObject.set(x, "ReshardingConfiguration", value.asInstanceOf[js.Any])
     
-    inline def setReshardingConfigurationVarargs(value: ReshardingConfiguration*): Self = StObject.set(x, "ReshardingConfiguration", js.Array(value :_*))
+    inline def setReshardingConfigurationVarargs(value: ReshardingConfiguration*): Self = StObject.set(x, "ReshardingConfiguration", js.Array(value*))
   }
 }

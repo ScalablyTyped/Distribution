@@ -10,14 +10,14 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def get(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Any]
-  inline def get(key: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def get(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[Any]
+  inline def get(key: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any]).asInstanceOf[Any]
   inline def get[Value](key: String, fallbackValue: Value): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any], fallbackValue.asInstanceOf[js.Any])).asInstanceOf[Value]
   
   inline def serialize(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")().asInstanceOf[String]
   
-  inline def set(newConfiguration: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(newConfiguration.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def set(newConfiguration: js.Any, newOptions: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(newConfiguration.asInstanceOf[js.Any], newOptions.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def set(newConfiguration: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(newConfiguration.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def set(newConfiguration: Any, newOptions: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(newConfiguration.asInstanceOf[js.Any], newOptions.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait Options extends StObject {
     

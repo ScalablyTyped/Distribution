@@ -11,7 +11,7 @@ trait GoogleIdentityAccesscontextmanagerV1ServicePerimeter extends StObject {
   
   /**
     * Required. Resource name for the ServicePerimeter. The `short_name` component must begin with a letter and only include alphanumeric and '_'. Format:
-    * `accessPolicies/{policy_id}/servicePerimeters/{short_name}`
+    * `accessPolicies/{access_policy}/servicePerimeters/{service_perimeter}`
     */
   var name: js.UndefOr[String] = js.undefined
   

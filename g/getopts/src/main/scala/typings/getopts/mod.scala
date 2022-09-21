@@ -16,7 +16,7 @@ object mod {
   
   trait Options extends StObject {
     
-    var default: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var default: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     var alias: js.UndefOr[StringDictionary[String | js.Array[String]]] = js.undefined
     
@@ -45,9 +45,9 @@ object mod {
       
       inline def setBooleanUndefined: Self = StObject.set(x, "boolean", js.undefined)
       
-      inline def setBooleanVarargs(value: String*): Self = StObject.set(x, "boolean", js.Array(value :_*))
+      inline def setBooleanVarargs(value: String*): Self = StObject.set(x, "boolean", js.Array(value*))
       
-      inline def setDefault(value: StringDictionary[js.Any]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: StringDictionary[Any]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
       inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
@@ -59,7 +59,7 @@ object mod {
       
       inline def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
       
-      inline def setStringVarargs(value: String*): Self = StObject.set(x, "string", js.Array(value :_*))
+      inline def setStringVarargs(value: String*): Self = StObject.set(x, "string", js.Array(value*))
       
       inline def setUnknown(value: /* optionName */ String => Boolean): Self = StObject.set(x, "unknown", js.Any.fromFunction1(value))
       
@@ -69,7 +69,7 @@ object mod {
   
   trait ParsedOptions
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     @JSName("_")
     var _underscore: js.Array[String]
@@ -86,7 +86,7 @@ object mod {
       
       inline def set_underscore(value: js.Array[String]): Self = StObject.set(x, "_", value.asInstanceOf[js.Any])
       
-      inline def set_underscoreVarargs(value: String*): Self = StObject.set(x, "_", js.Array(value :_*))
+      inline def set_underscoreVarargs(value: String*): Self = StObject.set(x, "_", js.Array(value*))
     }
   }
 }

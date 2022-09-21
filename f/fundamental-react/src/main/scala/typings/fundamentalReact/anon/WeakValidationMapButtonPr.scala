@@ -57,6 +57,7 @@ import typings.fundamentalReact.fundamentalReactStrings.vertical
 import typings.fundamentalReact.fundamentalReactStrings.yes
 import typings.react.anon.Html
 import typings.react.mod.AnimationEventHandler
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ClipboardEventHandler
@@ -90,11 +91,11 @@ trait WeakValidationMapButtonPr extends StObject {
   
   var `aria-activedescendant`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var `aria-atomic`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
+  var `aria-atomic`: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
   
   var `aria-autocomplete`: js.UndefOr[Validator[js.UndefOr[none | `inline` | list_ | both | Null]]] = js.undefined
   
-  var `aria-busy`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
+  var `aria-busy`: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
   
   var `aria-checked`: js.UndefOr[Validator[js.UndefOr[mixed | Boolean | Null]]] = js.undefined
   
@@ -112,21 +113,21 @@ trait WeakValidationMapButtonPr extends StObject {
   
   var `aria-details`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var `aria-disabled`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
+  var `aria-disabled`: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
   
   var `aria-dropeffect`: js.UndefOr[Validator[js.UndefOr[none | copy | execute | link_ | move | popup | Null]]] = js.undefined
   
   var `aria-errormessage`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var `aria-expanded`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
+  var `aria-expanded`: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
   
   var `aria-flowto`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var `aria-grabbed`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
+  var `aria-grabbed`: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
   
   var `aria-haspopup`: js.UndefOr[Validator[js.UndefOr[menu_ | listbox | tree | grid | dialog | Boolean | Null]]] = js.undefined
   
-  var `aria-hidden`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
+  var `aria-hidden`: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
   
   var `aria-invalid`: js.UndefOr[Validator[js.UndefOr[grammar | spelling | Boolean | Null]]] = js.undefined
   
@@ -140,11 +141,11 @@ trait WeakValidationMapButtonPr extends StObject {
   
   var `aria-live`: js.UndefOr[Validator[js.UndefOr[off | assertive | polite | Null]]] = js.undefined
   
-  var `aria-modal`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
+  var `aria-modal`: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
   
-  var `aria-multiline`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
+  var `aria-multiline`: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
   
-  var `aria-multiselectable`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
+  var `aria-multiselectable`: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
   
   var `aria-orientation`: js.UndefOr[Validator[js.UndefOr[horizontal | vertical | Null]]] = js.undefined
   
@@ -156,7 +157,7 @@ trait WeakValidationMapButtonPr extends StObject {
   
   var `aria-pressed`: js.UndefOr[Validator[js.UndefOr[mixed | Boolean | Null]]] = js.undefined
   
-  var `aria-readonly`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
+  var `aria-readonly`: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
   
   var `aria-relevant`: js.UndefOr[
     Validator[
@@ -166,7 +167,7 @@ trait WeakValidationMapButtonPr extends StObject {
     ]
   ] = js.undefined
   
-  var `aria-required`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
+  var `aria-required`: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
   
   var `aria-roledescription`: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
@@ -176,7 +177,7 @@ trait WeakValidationMapButtonPr extends StObject {
   
   var `aria-rowspan`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var `aria-selected`: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
+  var `aria-selected`: js.UndefOr[Validator[js.UndefOr[Booleanish | Null]]] = js.undefined
   
   var `aria-setsize`: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
@@ -230,7 +231,7 @@ trait WeakValidationMapButtonPr extends StObject {
   
   var id: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
-  var inlist: js.UndefOr[Validator[js.UndefOr[js.Any | Null]]] = js.undefined
+  var inlist: js.UndefOr[Validator[js.UndefOr[Any | Null]]] = js.undefined
   
   var inputMode: js.UndefOr[
     Validator[js.UndefOr[none | text | tel | url | email | numeric | decimal | search | Null]]
@@ -430,7 +431,7 @@ trait WeakValidationMapButtonPr extends StObject {
   
   var results: js.UndefOr[Validator[js.UndefOr[Double | Null]]] = js.undefined
   
-  var role: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
+  var role: js.UndefOr[Validator[js.UndefOr[AriaRole | Null]]] = js.undefined
   
   var security: js.UndefOr[Validator[js.UndefOr[Null | String]]] = js.undefined
   
@@ -483,7 +484,7 @@ object WeakValidationMapButtonPr {
     
     inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
     
-    inline def `setAria-atomic`(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+    inline def `setAria-atomic`(value: Validator[js.UndefOr[Booleanish | Null]]): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
     
     inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
     
@@ -491,7 +492,7 @@ object WeakValidationMapButtonPr {
     
     inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
     
-    inline def `setAria-busy`(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+    inline def `setAria-busy`(value: Validator[js.UndefOr[Booleanish | Null]]): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
     
     inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
     
@@ -527,7 +528,7 @@ object WeakValidationMapButtonPr {
     
     inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
     
-    inline def `setAria-disabled`(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+    inline def `setAria-disabled`(value: Validator[js.UndefOr[Booleanish | Null]]): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
     
     inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
     
@@ -539,7 +540,7 @@ object WeakValidationMapButtonPr {
     
     inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
     
-    inline def `setAria-expanded`(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+    inline def `setAria-expanded`(value: Validator[js.UndefOr[Booleanish | Null]]): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
     
     inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
     
@@ -547,7 +548,7 @@ object WeakValidationMapButtonPr {
     
     inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
     
-    inline def `setAria-grabbed`(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+    inline def `setAria-grabbed`(value: Validator[js.UndefOr[Booleanish | Null]]): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
     
     inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
     
@@ -555,7 +556,7 @@ object WeakValidationMapButtonPr {
     
     inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
     
-    inline def `setAria-hidden`(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+    inline def `setAria-hidden`(value: Validator[js.UndefOr[Booleanish | Null]]): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
     
     inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
     
@@ -583,15 +584,15 @@ object WeakValidationMapButtonPr {
     
     inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
     
-    inline def `setAria-modal`(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+    inline def `setAria-modal`(value: Validator[js.UndefOr[Booleanish | Null]]): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
     
     inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
     
-    inline def `setAria-multiline`(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+    inline def `setAria-multiline`(value: Validator[js.UndefOr[Booleanish | Null]]): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
     
     inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
     
-    inline def `setAria-multiselectable`(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+    inline def `setAria-multiselectable`(value: Validator[js.UndefOr[Booleanish | Null]]): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
     
     inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
     
@@ -615,7 +616,7 @@ object WeakValidationMapButtonPr {
     
     inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
     
-    inline def `setAria-readonly`(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+    inline def `setAria-readonly`(value: Validator[js.UndefOr[Booleanish | Null]]): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
     
     inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
     
@@ -629,7 +630,7 @@ object WeakValidationMapButtonPr {
     
     inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
     
-    inline def `setAria-required`(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+    inline def `setAria-required`(value: Validator[js.UndefOr[Booleanish | Null]]): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
     
     inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
     
@@ -649,7 +650,7 @@ object WeakValidationMapButtonPr {
     
     inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
     
-    inline def `setAria-selected`(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+    inline def `setAria-selected`(value: Validator[js.UndefOr[Booleanish | Null]]): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
     
     inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
     
@@ -757,7 +758,7 @@ object WeakValidationMapButtonPr {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setInlist(value: Validator[js.UndefOr[js.Any | Null]]): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+    inline def setInlist(value: Validator[js.UndefOr[Any | Null]]): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
     
     inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
     
@@ -1147,7 +1148,7 @@ object WeakValidationMapButtonPr {
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    inline def setRole(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: Validator[js.UndefOr[AriaRole | Null]]): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     

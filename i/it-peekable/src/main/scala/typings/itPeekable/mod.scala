@@ -44,9 +44,9 @@ object mod {
     *  : never
     * }
     */
-  inline def apply[I /* <: Iterable[js.Any] | AsyncIterable[js.Any] */](iterable: I): (AsyncIterable[js.Any] & AsyncPeek[js.Any] & Push[js.Any] & (AsyncIterator[js.Any, js.Any, Unit])) | (Iterable[js.Any] & Peek[js.Any] & Push[js.Any] & (Iterator[js.Any, js.Any, Unit])) = ^.asInstanceOf[js.Dynamic].apply(iterable.asInstanceOf[js.Any]).asInstanceOf[(AsyncIterable[js.Any] & AsyncPeek[js.Any] & Push[js.Any] & (AsyncIterator[js.Any, js.Any, Unit])) | (Iterable[js.Any] & Peek[js.Any] & Push[js.Any] & (Iterator[js.Any, js.Any, Unit]))]
+  inline def apply[I /* <: js.Iterable[Any] | AsyncIterable[Any] */](iterable: I): AsyncPeekable[Any] | Peekable[Any] = ^.asInstanceOf[js.Dynamic].apply(iterable.asInstanceOf[js.Any]).asInstanceOf[AsyncPeekable[Any] | Peekable[Any]]
   
-  @JSImport("it-peekable/dist", JSImport.Namespace)
+  @JSImport("it-peekable", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -76,7 +76,7 @@ object mod {
        with AsyncIterable[T]
        with AsyncPeek[T]
        with Push[T]
-       with AsyncIterator[T, js.Any, Unit]
+       with AsyncIterator[T, Any, Unit]
   
   trait Peek[T] extends StObject {
     
@@ -104,7 +104,7 @@ object mod {
        with Iterable[T]
        with Peek[T]
        with Push[T]
-       with Iterator[T, js.Any, Unit]
+       with Iterator[T, Any, Unit]
   
   trait Push[T] extends StObject {
     

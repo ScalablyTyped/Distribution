@@ -16,73 +16,73 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChartLegendUpdateData extends StObject {
   
   /**
-    *
     * Represents the formatting of a chart legend, which includes fill and font formatting.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var format: js.UndefOr[ChartLegendFormatUpdateData] = js.undefined
   
   /**
+    * Specifies the height, in points, of the legend on the chart. Value is `null` if the legend is not visible.
     *
-    * Specifies the height, in points, of the legend on the chart. Null if legend is not visible.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var height: js.UndefOr[Double] = js.undefined
   
   /**
+    * Specifies the left value, in points, of the legend on the chart. Value is `null` if the legend is not visible.
     *
-    * Specifies the left, in points, of the legend on the chart. Null if legend is not visible.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var left: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Specifies if the chart legend should overlap with the main body of the chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var overlay: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies the position of the legend on the chart. See `Excel.ChartLegendPosition` for details.
     *
-    * Specifies the position of the legend on the chart. See Excel.ChartLegendPosition for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var position: js.UndefOr[ChartLegendPosition | Invalid | Top | Bottom | Left | Right | Corner | Custom] = js.undefined
   
   /**
-    *
     * Specifies if the legend has a shadow on the chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var showShadow: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies the top of a chart legend.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var top: js.UndefOr[Double] = js.undefined
   
   /**
+    * Specifies if the chart legend is visible.
     *
-    * Specifies if the ChartLegend is visible.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies the width, in points, of the legend on the chart. Value is `null` if the legend is not visible.
     *
-    * Specifies the width, in points, of the legend on the chart. Null if legend is not visible.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var width: js.UndefOr[Double] = js.undefined

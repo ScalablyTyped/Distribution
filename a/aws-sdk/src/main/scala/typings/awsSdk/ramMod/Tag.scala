@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Tag extends StObject {
   
   /**
-    * The key of the tag.
+    * The key, or name, attached to the tag. Every tag must have a key. Key names are case sensitive.
     */
   var key: js.UndefOr[TagKey] = js.undefined
   
   /**
-    * The value of the tag.
+    * The string value attached to the tag. The value can be an empty string. Key values are case sensitive.
     */
   var value: js.UndefOr[TagValue] = js.undefined
 }

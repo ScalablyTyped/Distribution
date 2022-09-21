@@ -25,7 +25,7 @@ object Inking {
   @JSGlobal("Windows.UI.Input.Inking.InkDrawingAttributes")
   @js.native
   /** Creates a new InkDrawingAttributes object that is used to specify InkStroke attributes. */
-  class InkDrawingAttributes ()
+  open class InkDrawingAttributes ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Input.Inking.InkDrawingAttributes {
     
@@ -62,7 +62,7 @@ object Inking {
   @JSGlobal("Windows.UI.Input.Inking.InkManager")
   @js.native
   /** Creates a new InkManager object that is used to manage InkStroke objects. */
-  class InkManager ()
+  open class InkManager ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Input.Inking.InkManager
   
@@ -83,7 +83,7 @@ object Inking {
   
   @JSGlobal("Windows.UI.Input.Inking.InkPoint")
   @js.native
-  class InkPoint protected ()
+  open class InkPoint protected ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Input.Inking.InkPoint {
     /**
@@ -98,7 +98,7 @@ object Inking {
     var position: Point = js.native
     
     /* CompleteClass */
-    var pressure: js.Any = js.native
+    var pressure: Any = js.native
   }
   
   /** Provides properties and methods to manage InkStroke handwriting recognition data. */
@@ -158,7 +158,7 @@ object Inking {
   @JSGlobal("Windows.UI.Input.Inking.InkRecognizerContainer")
   @js.native
   /** Creates a new InkRecognizerContainer object to manage InkRecognizer objects used for handwriting recognition. */
-  class InkRecognizerContainer ()
+  open class InkRecognizerContainer ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Input.Inking.InkRecognizerContainer {
     
@@ -179,7 +179,7 @@ object Inking {
     override def recognizeAsync(
       strokeCollection: typings.winrtUwp.Windows.UI.Input.Inking.InkStrokeContainer,
       recognitionTarget: InkRecognitionTarget
-    ): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+    ): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
     
     /**
       * Sets the default InkRecognizer used for handwriting recognition.
@@ -235,7 +235,7 @@ object Inking {
   @JSGlobal("Windows.UI.Input.Inking.InkStrokeBuilder")
   @js.native
   /** Creates a new InkStrokeBuilder object that is used to construct InkStroke objects. */
-  class InkStrokeBuilder ()
+  open class InkStrokeBuilder ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Input.Inking.InkStrokeBuilder {
     
@@ -291,7 +291,7 @@ object Inking {
   @JSGlobal("Windows.UI.Input.Inking.InkStrokeContainer")
   @js.native
   /** Creates a new InkStrokeContainer object that is used to manage InkStroke objects. */
-  class InkStrokeContainer ()
+  open class InkStrokeContainer ()
     extends StObject
        with typings.winrtUwp.Windows.UI.Input.Inking.InkStrokeContainer {
     

@@ -12,7 +12,7 @@ trait EndpointDetails extends StObject {
   var AddressAllocationIds: js.UndefOr[typings.awsSdk.transferMod.AddressAllocationIds] = js.undefined
   
   /**
-    * A list of security groups IDs that are available to attach to your server's endpoint.  This property can only be set when EndpointType is set to VPC. You can only edit the SecurityGroupIds property in the UpdateServer API and only if you are changing the EndpointType from PUBLIC or VPC_ENDPOINT to VPC. 
+    * A list of security groups IDs that are available to attach to your server's endpoint.  This property can only be set when EndpointType is set to VPC. You can edit the SecurityGroupIds property in the UpdateServer API only if you are changing the EndpointType from PUBLIC or VPC_ENDPOINT to VPC. To change security groups associated with your server's VPC endpoint after creation, use the Amazon EC2 ModifyVpcEndpoint API. 
     */
   var SecurityGroupIds: js.UndefOr[typings.awsSdk.transferMod.SecurityGroupIds] = js.undefined
   
@@ -22,7 +22,7 @@ trait EndpointDetails extends StObject {
   var SubnetIds: js.UndefOr[typings.awsSdk.transferMod.SubnetIds] = js.undefined
   
   /**
-    * The ID of the VPC endpoint.  This property can only be set when EndpointType is set to VPC_ENDPOINT. 
+    * The ID of the VPC endpoint.  This property can only be set when EndpointType is set to VPC_ENDPOINT. For more information, see https://docs.aws.amazon.com/transfer/latest/userguide/create-server-in-vpc.html#deprecate-vpc-endpoint. 
     */
   var VpcEndpointId: js.UndefOr[typings.awsSdk.transferMod.VpcEndpointId] = js.undefined
   
@@ -44,19 +44,19 @@ object EndpointDetails {
     
     inline def setAddressAllocationIdsUndefined: Self = StObject.set(x, "AddressAllocationIds", js.undefined)
     
-    inline def setAddressAllocationIdsVarargs(value: AddressAllocationId*): Self = StObject.set(x, "AddressAllocationIds", js.Array(value :_*))
+    inline def setAddressAllocationIdsVarargs(value: AddressAllocationId*): Self = StObject.set(x, "AddressAllocationIds", js.Array(value*))
     
     inline def setSecurityGroupIds(value: SecurityGroupIds): Self = StObject.set(x, "SecurityGroupIds", value.asInstanceOf[js.Any])
     
     inline def setSecurityGroupIdsUndefined: Self = StObject.set(x, "SecurityGroupIds", js.undefined)
     
-    inline def setSecurityGroupIdsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value :_*))
+    inline def setSecurityGroupIdsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value*))
     
     inline def setSubnetIds(value: SubnetIds): Self = StObject.set(x, "SubnetIds", value.asInstanceOf[js.Any])
     
     inline def setSubnetIdsUndefined: Self = StObject.set(x, "SubnetIds", js.undefined)
     
-    inline def setSubnetIdsVarargs(value: SubnetId*): Self = StObject.set(x, "SubnetIds", js.Array(value :_*))
+    inline def setSubnetIdsVarargs(value: SubnetId*): Self = StObject.set(x, "SubnetIds", js.Array(value*))
     
     inline def setVpcEndpointId(value: VpcEndpointId): Self = StObject.set(x, "VpcEndpointId", value.asInstanceOf[js.Any])
     

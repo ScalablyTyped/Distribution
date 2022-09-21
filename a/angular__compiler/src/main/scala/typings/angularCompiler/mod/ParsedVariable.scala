@@ -6,19 +6,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "ParsedVariable")
 @js.native
-class ParsedVariable protected ()
-  extends typings.angularCompiler.compilerMod.ParsedVariable {
+open class ParsedVariable protected () extends StObject {
+  def this(name: String, value: String, sourceSpan: ParseSourceSpan, keySpan: ParseSourceSpan) = this()
   def this(
     name: String,
     value: String,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    keySpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+    sourceSpan: ParseSourceSpan,
+    keySpan: ParseSourceSpan,
+    valueSpan: ParseSourceSpan
   ) = this()
-  def this(
-    name: String,
-    value: String,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    keySpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    valueSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
+  
+  val keySpan: ParseSourceSpan = js.native
+  
+  val name: String = js.native
+  
+  val sourceSpan: ParseSourceSpan = js.native
+  
+  val value: String = js.native
+  
+  val valueSpan: js.UndefOr[ParseSourceSpan] = js.native
 }

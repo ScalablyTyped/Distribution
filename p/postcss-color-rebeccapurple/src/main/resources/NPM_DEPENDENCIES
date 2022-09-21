@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "postcss-color-rebeccapurple" : "7.1.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "postcss-color-rebeccapurple" : "7.1.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

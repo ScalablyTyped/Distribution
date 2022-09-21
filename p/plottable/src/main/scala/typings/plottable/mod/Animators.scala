@@ -260,7 +260,7 @@ object Animators {
     *
     * @constructor
     */
-  class Easing ()
+  open class Easing ()
     extends typings.plottable.animatorsMod.Easing
   /* static members */
   object Easing {
@@ -274,44 +274,44 @@ object Animators {
       */
     @JSImport("plottable", "Animators.Easing._DEFAULT_EASING_MODE")
     @js.native
-    def _DEFAULT_EASING_MODE: js.Any = js.native
-    inline def _DEFAULT_EASING_MODE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_EASING_MODE")(x.asInstanceOf[js.Any])
+    def _DEFAULT_EASING_MODE: Any = js.native
+    inline def _DEFAULT_EASING_MODE_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_EASING_MODE")(x.asInstanceOf[js.Any])
     
     /**
       * The default maximum start delay between each step of an animation
       */
     @JSImport("plottable", "Animators.Easing._DEFAULT_ITERATIVE_DELAY_MILLISECONDS")
     @js.native
-    def _DEFAULT_ITERATIVE_DELAY_MILLISECONDS: js.Any = js.native
-    inline def _DEFAULT_ITERATIVE_DELAY_MILLISECONDS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_ITERATIVE_DELAY_MILLISECONDS")(x.asInstanceOf[js.Any])
+    def _DEFAULT_ITERATIVE_DELAY_MILLISECONDS: Any = js.native
+    inline def _DEFAULT_ITERATIVE_DELAY_MILLISECONDS_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_ITERATIVE_DELAY_MILLISECONDS")(x.asInstanceOf[js.Any])
     
     /**
       * The default maximum total animation duration
       */
     @JSImport("plottable", "Animators.Easing._DEFAULT_MAX_TOTAL_DURATION_MILLISECONDS")
     @js.native
-    def _DEFAULT_MAX_TOTAL_DURATION_MILLISECONDS: js.Any = js.native
-    inline def _DEFAULT_MAX_TOTAL_DURATION_MILLISECONDS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_MAX_TOTAL_DURATION_MILLISECONDS")(x.asInstanceOf[js.Any])
+    def _DEFAULT_MAX_TOTAL_DURATION_MILLISECONDS: Any = js.native
+    inline def _DEFAULT_MAX_TOTAL_DURATION_MILLISECONDS_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_MAX_TOTAL_DURATION_MILLISECONDS")(x.asInstanceOf[js.Any])
     
     /**
       * The default starting delay of the animation in milliseconds
       */
     @JSImport("plottable", "Animators.Easing._DEFAULT_START_DELAY_MILLISECONDS")
     @js.native
-    def _DEFAULT_START_DELAY_MILLISECONDS: js.Any = js.native
-    inline def _DEFAULT_START_DELAY_MILLISECONDS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_START_DELAY_MILLISECONDS")(x.asInstanceOf[js.Any])
+    def _DEFAULT_START_DELAY_MILLISECONDS: Any = js.native
+    inline def _DEFAULT_START_DELAY_MILLISECONDS_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_START_DELAY_MILLISECONDS")(x.asInstanceOf[js.Any])
     
     /**
       * The default duration of one animation step in milliseconds
       */
     @JSImport("plottable", "Animators.Easing._DEFAULT_STEP_DURATION_MILLISECONDS")
     @js.native
-    def _DEFAULT_STEP_DURATION_MILLISECONDS: js.Any = js.native
-    inline def _DEFAULT_STEP_DURATION_MILLISECONDS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_STEP_DURATION_MILLISECONDS")(x.asInstanceOf[js.Any])
+    def _DEFAULT_STEP_DURATION_MILLISECONDS: Any = js.native
+    inline def _DEFAULT_STEP_DURATION_MILLISECONDS_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_STEP_DURATION_MILLISECONDS")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("plottable", "Animators.Null")
   @js.native
-  class Null ()
+  open class Null ()
     extends typings.plottable.animatorsMod.Null
 }

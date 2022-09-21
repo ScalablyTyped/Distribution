@@ -11,10 +11,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.data.GanttTask")
 @js.native
-class GanttTask ()
+open class GanttTask ()
   extends StObject
      with typings.kendoUi.kendo.data.GanttTask {
-  def this(data: js.Any) = this()
+  def this(data: Any) = this()
 }
 object GanttTask {
   
@@ -23,9 +23,9 @@ object GanttTask {
   val ^ : js.Any = js.native
   
   /* static member */
-  inline def define(options: DataSourceSchemaModelWithFieldsArray): TypeofGanttTask & (Instantiable1[/* data */ js.UndefOr[js.Any], typings.kendoUi.kendo.data.GanttTask]) = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(options.asInstanceOf[js.Any]).asInstanceOf[TypeofGanttTask & (Instantiable1[/* data */ js.UndefOr[js.Any], typings.kendoUi.kendo.data.GanttTask])]
+  inline def define(options: DataSourceSchemaModelWithFieldsArray): TypeofGanttTask & (Instantiable1[/* data */ js.UndefOr[Any], typings.kendoUi.kendo.data.GanttTask]) = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(options.asInstanceOf[js.Any]).asInstanceOf[TypeofGanttTask & (Instantiable1[/* data */ js.UndefOr[Any], typings.kendoUi.kendo.data.GanttTask])]
   /* static member */
-  inline def define(options: DataSourceSchemaModelWithFieldsObject): TypeofGanttTask & (Instantiable1[/* data */ js.UndefOr[js.Any], typings.kendoUi.kendo.data.GanttTask]) = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(options.asInstanceOf[js.Any]).asInstanceOf[TypeofGanttTask & (Instantiable1[/* data */ js.UndefOr[js.Any], typings.kendoUi.kendo.data.GanttTask])]
+  inline def define(options: DataSourceSchemaModelWithFieldsObject): TypeofGanttTask & (Instantiable1[/* data */ js.UndefOr[Any], typings.kendoUi.kendo.data.GanttTask]) = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(options.asInstanceOf[js.Any]).asInstanceOf[TypeofGanttTask & (Instantiable1[/* data */ js.UndefOr[Any], typings.kendoUi.kendo.data.GanttTask])]
   
   /* static member */
   @JSGlobal("kendo.data.GanttTask.fields")

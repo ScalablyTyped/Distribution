@@ -4,17 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A form action describes the behavior when the form is submitted. For
-  * example, an Apps Script can be invoked to handle the form.
-  */
 trait SchemaFormAction extends StObject {
   
   /**
-    * Apps Script function to invoke when the containing element is
-    * clicked/activated.
+    * The method name is used to identify which part of the form triggered the form submission. This information is echoed back to the Chat app as part of the card click event. The same method name can be used for several elements that trigger a common behavior if desired.
     */
-  var actionMethodName: js.UndefOr[String] = js.undefined
+  var actionMethodName: js.UndefOr[String | Null] = js.undefined
   
   /**
     * List of action parameters.
@@ -32,12 +27,14 @@ object SchemaFormAction {
     
     inline def setActionMethodName(value: String): Self = StObject.set(x, "actionMethodName", value.asInstanceOf[js.Any])
     
+    inline def setActionMethodNameNull: Self = StObject.set(x, "actionMethodName", null)
+    
     inline def setActionMethodNameUndefined: Self = StObject.set(x, "actionMethodName", js.undefined)
     
     inline def setParameters(value: js.Array[SchemaActionParameter]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    inline def setParametersVarargs(value: SchemaActionParameter*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: SchemaActionParameter*): Self = StObject.set(x, "parameters", js.Array(value*))
   }
 }

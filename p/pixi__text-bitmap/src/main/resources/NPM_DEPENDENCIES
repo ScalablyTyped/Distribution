@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@pixi/text-bitmap" : "6.5.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@pixi/text-bitmap" : "6.5.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

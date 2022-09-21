@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JQuery extends StObject {
   
   def handsontable(): JQuery = js.native
-  def handsontable(methodName: String, arguments: js.Any*): js.Any = js.native
+  def handsontable(methodName: String, arguments: Any*): Any = js.native
   def handsontable(options: Options): JQuery = js.native
 }

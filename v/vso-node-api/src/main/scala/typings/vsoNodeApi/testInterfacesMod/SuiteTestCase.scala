@@ -21,7 +21,7 @@ object SuiteTestCase {
     
     inline def setPointAssignments(value: js.Array[PointAssignment]): Self = StObject.set(x, "pointAssignments", value.asInstanceOf[js.Any])
     
-    inline def setPointAssignmentsVarargs(value: PointAssignment*): Self = StObject.set(x, "pointAssignments", js.Array(value :_*))
+    inline def setPointAssignmentsVarargs(value: PointAssignment*): Self = StObject.set(x, "pointAssignments", js.Array(value*))
     
     inline def setTestCase(value: WorkItemReference): Self = StObject.set(x, "testCase", value.asInstanceOf[js.Any])
   }

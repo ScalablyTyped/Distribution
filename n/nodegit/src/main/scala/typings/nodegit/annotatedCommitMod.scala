@@ -11,7 +11,7 @@ object annotatedCommitMod {
   
   @JSImport("nodegit/annotated-commit", "AnnotatedCommit")
   @js.native
-  class AnnotatedCommit () extends StObject {
+  open class AnnotatedCommit () extends StObject {
     
     def free(): Unit = js.native
     

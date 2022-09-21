@@ -11,9 +11,9 @@ String Scoring Algorithm packaged for NodeJS
 | Full name          | string_score |
 | Keywords           | string, score, string_score |
 | # releases         | 0 |
-| # dependents       | 21 |
-| # downloads        | 58149 |
-| # stars            | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 5807.0 |
+| # stars            | 836.0 |
 
 ## Links
 - [Homepage](https://github.com/joshaven/string_score)

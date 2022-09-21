@@ -1,7 +1,7 @@
 
 # Scala.js typings for angular-translate
 
-Typings are for version 2.16
+Typings are for version 2.19
 
 ## Library description:
 A translation module for AngularJS
@@ -11,9 +11,9 @@ A translation module for AngularJS
 | Full name          | angular-translate |
 | Keywords           | angular-translate, angular, AngularJS, translation |
 | # releases         | 4 |
-| # dependents       | 109 |
-| # downloads        | 4537270 |
-| # stars            | 13 |
+| # dependents       | 0.0 |
+| # downloads        | 460139.6666666667 |
+| # stars            | 4402.0 |
 
 ## Links
 - [Homepage](https://github.com/angular-translate/angular-translate#readme)

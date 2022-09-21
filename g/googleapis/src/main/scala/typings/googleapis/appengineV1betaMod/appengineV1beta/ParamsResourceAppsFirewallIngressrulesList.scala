@@ -1,9 +1,5 @@
 package typings.googleapis.appengineV1betaMod.appengineV1beta
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,20 +9,12 @@ trait ParamsResourceAppsFirewallIngressrulesList
      with StandardParameters {
   
   /**
-    * Part of `parent`. Name of the Firewall collection to retrieve. Example:
-    * apps/myapp/firewall/ingressRules.
+    * Part of `parent`. Name of the Firewall collection to retrieve. Example: apps/myapp/firewall/ingressRules.
     */
   var appsId: js.UndefOr[String] = js.undefined
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * A valid IP Address. If set, only rules matching this address will be
-    * returned. The first returned rule will be the rule that fires on requests
-    * from this IP.
+    * A valid IP Address. If set, only rules matching this address will be returned. The first returned rule will be the rule that fires on requests from this IP.
     */
   var matchingAddress: js.UndefOr[String] = js.undefined
   
@@ -52,10 +40,6 @@ object ParamsResourceAppsFirewallIngressrulesList {
     inline def setAppsId(value: String): Self = StObject.set(x, "appsId", value.asInstanceOf[js.Any])
     
     inline def setAppsIdUndefined: Self = StObject.set(x, "appsId", js.undefined)
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setMatchingAddress(value: String): Self = StObject.set(x, "matchingAddress", value.asInstanceOf[js.Any])
     

@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Trace extends StObject {
   
   /**
-    * Derived from the source and destination endpoints definition, and validated by the data plane model. If there are multiple traces starting from different source locations, then the
-    * endpoint_info may be different between traces.
+    * Derived from the source and destination endpoints definition specified by user request, and validated by the data plane model. If there are multiple traces starting from different
+    * source locations, then the endpoint_info may be different between traces.
     */
   var endpointInfo: js.UndefOr[EndpointInfo] = js.undefined
   
@@ -35,6 +35,6 @@ object Trace {
     
     inline def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
     
-    inline def setStepsVarargs(value: Step*): Self = StObject.set(x, "steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: Step*): Self = StObject.set(x, "steps", js.Array(value*))
   }
 }

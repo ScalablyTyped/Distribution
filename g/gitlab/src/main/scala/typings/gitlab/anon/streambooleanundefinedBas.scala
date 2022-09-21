@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined {  stream :boolean | undefined} & gitlab.gitlab/dist/types/core/infrastructure.BaseRequestOptions */
 trait streambooleanundefinedBas
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var stream: js.UndefOr[Boolean] = js.undefined
   

@@ -33,6 +33,6 @@ object AppliedTerminology {
     
     inline def setTermsUndefined: Self = StObject.set(x, "Terms", js.undefined)
     
-    inline def setTermsVarargs(value: Term*): Self = StObject.set(x, "Terms", js.Array(value :_*))
+    inline def setTermsVarargs(value: Term*): Self = StObject.set(x, "Terms", js.Array(value*))
   }
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__addon-backgrounds
 
-Typings are for version 6.1.2
+Typings are for version 6.5.12
 
 ## Library description:
 Switch backgrounds to view components in different settings
@@ -9,14 +9,14 @@ Switch backgrounds to view components in different settings
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @storybook/addon-backgrounds |
-| Keywords           | addon, background, react, storybook |
-| # releases         | 553 |
-| # dependents       | 37 |
-| # downloads        | 18517729 |
-| # stars            | 0 |
+| Keywords           | addon, background, react, storybook, essentials, design |
+| # releases         | 478 |
+| # dependents       | 0.0 |
+| # downloads        | 1.1519820333333334E7 |
+| # stars            | 73947.0 |
 
 ## Links
-- [Homepage](https://github.com/storybookjs/storybook/tree/master/addons/backgrounds)
+- [Homepage](https://github.com/storybookjs/storybook/tree/main/addons/backgrounds)
 - [Bugs](https://github.com/storybookjs/storybook/issues)
 - [Repository](https://github.com/storybookjs/storybook)
 - [Npm](https://www.npmjs.com/package/%40storybook%2Faddon-backgrounds)

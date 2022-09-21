@@ -20,5 +20,5 @@ Instantiable0[PointCloudClassBreaksRenderer]
       PointCloudClassBreaksRenderer
     ] {
   
-  def fromJSON(json: js.Any): PointCloudClassBreaksRenderer = js.native
+  def fromJSON(json: Any): PointCloudClassBreaksRenderer = js.native
 }

@@ -42,6 +42,6 @@ object FinishedWorldsSummary {
     
     inline def setSucceededWorldsUndefined: Self = StObject.set(x, "succeededWorlds", js.undefined)
     
-    inline def setSucceededWorldsVarargs(value: Arn*): Self = StObject.set(x, "succeededWorlds", js.Array(value :_*))
+    inline def setSucceededWorldsVarargs(value: Arn*): Self = StObject.set(x, "succeededWorlds", js.Array(value*))
   }
 }

@@ -6,10 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "TreeError")
 @js.native
-class TreeError protected ()
-  extends typings.angularCompiler.compilerMod.TreeError {
-  def this(elementName: String, span: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan, msg: String) = this()
-  def this(elementName: Null, span: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan, msg: String) = this()
+open class TreeError protected () extends ParseError {
+  def this(elementName: String, span: ParseSourceSpan, msg: String) = this()
+  def this(elementName: Null, span: ParseSourceSpan, msg: String) = this()
+  
+  var elementName: String | Null = js.native
 }
 /* static members */
 object TreeError {
@@ -18,6 +19,6 @@ object TreeError {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def create(elementName: String, span: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan, msg: String): typings.angularCompiler.mlParserParserMod.TreeError = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(elementName.asInstanceOf[js.Any], span.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[typings.angularCompiler.mlParserParserMod.TreeError]
-  inline def create(elementName: Null, span: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan, msg: String): typings.angularCompiler.mlParserParserMod.TreeError = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(elementName.asInstanceOf[js.Any], span.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[typings.angularCompiler.mlParserParserMod.TreeError]
+  inline def create(elementName: String, span: ParseSourceSpan, msg: String): TreeError = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(elementName.asInstanceOf[js.Any], span.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[TreeError]
+  inline def create(elementName: Null, span: ParseSourceSpan, msg: String): TreeError = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(elementName.asInstanceOf[js.Any], span.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[TreeError]
 }

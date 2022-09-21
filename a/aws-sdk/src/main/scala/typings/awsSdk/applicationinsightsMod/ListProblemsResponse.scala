@@ -15,6 +15,11 @@ trait ListProblemsResponse extends StObject {
     * The list of problems. 
     */
   var ProblemList: js.UndefOr[typings.awsSdk.applicationinsightsMod.ProblemList] = js.undefined
+  
+  /**
+    *  The name of the resource group. 
+    */
+  var ResourceGroupName: js.UndefOr[typings.awsSdk.applicationinsightsMod.ResourceGroupName] = js.undefined
 }
 object ListProblemsResponse {
   
@@ -33,6 +38,10 @@ object ListProblemsResponse {
     
     inline def setProblemListUndefined: Self = StObject.set(x, "ProblemList", js.undefined)
     
-    inline def setProblemListVarargs(value: Problem*): Self = StObject.set(x, "ProblemList", js.Array(value :_*))
+    inline def setProblemListVarargs(value: Problem*): Self = StObject.set(x, "ProblemList", js.Array(value*))
+    
+    inline def setResourceGroupName(value: ResourceGroupName): Self = StObject.set(x, "ResourceGroupName", value.asInstanceOf[js.Any])
+    
+    inline def setResourceGroupNameUndefined: Self = StObject.set(x, "ResourceGroupName", js.undefined)
   }
 }

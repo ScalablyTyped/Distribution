@@ -33,6 +33,6 @@ object ListSamplesResult {
     
     inline def setSamplesUndefined: Self = StObject.set(x, "samples", js.undefined)
     
-    inline def setSamplesVarargs(value: Sample*): Self = StObject.set(x, "samples", js.Array(value :_*))
+    inline def setSamplesVarargs(value: Sample*): Self = StObject.set(x, "samples", js.Array(value*))
   }
 }

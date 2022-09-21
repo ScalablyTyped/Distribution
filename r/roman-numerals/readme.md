@@ -11,9 +11,9 @@ Roman numerals conversion module
 | Full name          | roman-numerals |
 | Keywords           | roman, numerals, conversion |
 | # releases         | 0 |
-| # dependents       | 24 |
-| # downloads        | 142539 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 12986.333333333334 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/roman-numerals)

@@ -11,7 +11,7 @@ trait BuildProvenance extends StObject {
   var buildOptions: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.BuildProvenance & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.BuildProvenance & TopLevel[Any]
   ] = js.undefined
   
   /** Version string of the builder at the time this build was executed. */
@@ -65,7 +65,7 @@ object BuildProvenance {
     inline def setBuildOptions(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.BuildProvenance & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.BuildProvenance & TopLevel[Any]
     ): Self = StObject.set(x, "buildOptions", value.asInstanceOf[js.Any])
     
     inline def setBuildOptionsUndefined: Self = StObject.set(x, "buildOptions", js.undefined)
@@ -78,13 +78,13 @@ object BuildProvenance {
     
     inline def setBuiltArtifactsUndefined: Self = StObject.set(x, "builtArtifacts", js.undefined)
     
-    inline def setBuiltArtifactsVarargs(value: Artifact*): Self = StObject.set(x, "builtArtifacts", js.Array(value :_*))
+    inline def setBuiltArtifactsVarargs(value: Artifact*): Self = StObject.set(x, "builtArtifacts", js.Array(value*))
     
     inline def setCommands(value: js.Array[Command]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
     
     inline def setCommandsUndefined: Self = StObject.set(x, "commands", js.undefined)
     
-    inline def setCommandsVarargs(value: Command*): Self = StObject.set(x, "commands", js.Array(value :_*))
+    inline def setCommandsVarargs(value: Command*): Self = StObject.set(x, "commands", js.Array(value*))
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     

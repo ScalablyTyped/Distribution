@@ -2,6 +2,7 @@ package typings.bemCn
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.bemCn.anon.PartialBemSettings
+import typings.bemCn.anon.ToString
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -32,13 +33,12 @@ object mod {
   inline def setup(): BemCn = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")().asInstanceOf[BemCn]
   inline def setup(settings: PartialBemSettings): BemCn = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")(settings.asInstanceOf[js.Any]).asInstanceOf[BemCn]
   
-  @js.native
-  trait BemBlock
-    extends StObject
-       with _BemMix {
-    
-    def apply(settings: BemSettings, context: BemContext, elemNameOrMods: (String | BemMods)*): BemItem | String = js.native
-  }
+  type BemBlock = js.Function3[
+    /* settings */ BemSettings, 
+    /* context */ BemContext, 
+    /* repeated */ String | BemMods, 
+    BemItem | String
+  ]
   
   type BemCn = js.Function1[/* blockName */ String, Block_]
   
@@ -63,7 +63,7 @@ object mod {
       
       inline def setMixes(value: js.Array[BemMix]): Self = StObject.set(x, "mixes", value.asInstanceOf[js.Any])
       
-      inline def setMixesVarargs(value: BemMix*): Self = StObject.set(x, "mixes", js.Array(value :_*))
+      inline def setMixesVarargs(value: BemMix*): Self = StObject.set(x, "mixes", js.Array(value*))
       
       inline def setMods(value: BemMods): Self = StObject.set(x, "mods", value.asInstanceOf[js.Any])
       
@@ -90,16 +90,9 @@ object mod {
     def state(state: BemState): BemItem & String = js.native
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - java.lang.String
-    - js.Array[java.lang.String]
-    - typings.bemCn.mod.BemBlock
-    - typings.bemCn.anon.ToString
-    - scala.Unit
-  */
-  type BemMix = js.UndefOr[_BemMix | js.Array[String] | String]
+  type BemMix = js.UndefOr[String | js.Array[String] | BemBlock | ToString]
   
-  type BemMods = StringDictionary[String | Boolean | js.Any]
+  type BemMods = StringDictionary[String | Boolean | Any]
   
   trait BemSettings extends StObject {
     
@@ -187,6 +180,7 @@ object mod {
       * @param separator A string that identifies character or characters to use in separating the string. If omitted, a single-element array containing the entire string is returned.
       * @param limit A value used to limit the number of elements returned in the array.
       */
+    /* standard es5 */
     /* InferMemberOverrides */
     override def split(separator: String): js.Array[String] & BemItem & String = js.native
     /* InferMemberOverrides */
@@ -200,6 +194,4 @@ object mod {
     
     def apply(elemNameOrMods: (String | BemMods)*): BemItem & String = js.native
   }
-  
-  trait _BemMix extends StObject
 }

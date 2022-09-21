@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "KeytipLayerBase")
 @js.native
-class KeytipLayerBase protected ()
+open class KeytipLayerBase protected ()
   extends typings.officeUiFabricReact.mod.KeytipLayerBase {
-  def this(props: IKeytipLayerProps, context: js.Any) = this()
+  def this(props: IKeytipLayerProps, context: Any) = this()
 }
 /* static members */
 object KeytipLayerBase {

@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.ApplicationModel
 
-import typings.std.Date
 import typings.winrtUwp.Windows.ApplicationModel.Store.FulfillmentResult
 import typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallState
 import typings.winrtUwp.Windows.ApplicationModel.Store.Preview.StorePreviewProductPurchaseStatus
@@ -58,15 +57,15 @@ object Store {
     /* static member */
     @JSGlobal("Windows.ApplicationModel.Store.CurrentApp.getCustomerCollectionsIdAsync")
     @js.native
-    def getCustomerCollectionsIdAsync: js.Any = js.native
-    inline def getCustomerCollectionsIdAsync_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getCustomerCollectionsIdAsync")(x.asInstanceOf[js.Any])
+    def getCustomerCollectionsIdAsync: Any = js.native
+    inline def getCustomerCollectionsIdAsync_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getCustomerCollectionsIdAsync")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     /* static member */
     @JSGlobal("Windows.ApplicationModel.Store.CurrentApp.getCustomerPurchaseIdAsync")
     @js.native
-    def getCustomerPurchaseIdAsync: js.Any = js.native
-    inline def getCustomerPurchaseIdAsync_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getCustomerPurchaseIdAsync")(x.asInstanceOf[js.Any])
+    def getCustomerPurchaseIdAsync: Any = js.native
+    inline def getCustomerPurchaseIdAsync_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getCustomerPurchaseIdAsync")(x.asInstanceOf[js.Any])
     
     /* unmapped type */
     /**
@@ -82,7 +81,7 @@ object Store {
       * @return When the operation completes, a list of consumable in-app products not yet reported as fulfilled is returned ( UnfulfilledConsumable objects). Each item of this list provides the product ID, offer ID, and transaction ID associated with a product.
       */
     /* static member */
-    inline def getUnfulfilledConsumablesAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUnfulfilledConsumablesAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+    inline def getUnfulfilledConsumablesAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUnfulfilledConsumablesAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[Any]]]
     
     /** Gets the license metadata for the current app. */
     /* static member */
@@ -221,7 +220,7 @@ object Store {
       * @return When the operation completes, a list of unfulfilled consumable in-app products ( UnfulfilledConsumable objects) is returned. Each item in this list provides the product ID, offer ID, and transaction ID associated with a product.
       */
     /* static member */
-    inline def getUnfulfilledConsumablesAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUnfulfilledConsumablesAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+    inline def getUnfulfilledConsumablesAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUnfulfilledConsumablesAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[Any]]]
     
     /** Gets the simulated license metadata for the current app as provided by the simulation. */
     /* static member */
@@ -353,7 +352,7 @@ object Store {
     var ageRating: Double = js.native
     
     /* CompleteClass */
-    var currencyCode: js.Any = js.native
+    var currencyCode: Any = js.native
     
     /* unmapped type */
     /** Gets the country code associated with the user's location, such as US or CA, that is used to identify their market for transactions in the current session. */
@@ -365,7 +364,7 @@ object Store {
     var description: String = js.native
     
     /* CompleteClass */
-    var formattedBasePrice: js.Any = js.native
+    var formattedBasePrice: Any = js.native
     
     /* unmapped type */
     /** Gets the app's purchase price formatted for the current market and currency. */
@@ -373,7 +372,7 @@ object Store {
     var formattedPrice: String = js.native
     
     /* CompleteClass */
-    var isOnSale: js.Any = js.native
+    var isOnSale: Any = js.native
     
     /* unmapped type */
     /** Gets the app's name in the current market. */
@@ -385,7 +384,7 @@ object Store {
     var productListings: IMapView[String, typings.winrtUwp.Windows.ApplicationModel.Store.ProductListing] = js.native
     
     /* CompleteClass */
-    var saleEndDate: js.Any = js.native
+    var saleEndDate: Any = js.native
   }
   
   /** Provides the following APIs that are currently accessible only via restricted or private capabilities. */
@@ -405,7 +404,7 @@ object Store {
       @JSGlobal("Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallManager")
       @js.native
       /** Creates and initializes a new instance of the AppInstallManager class */
-      class AppInstallManager ()
+      open class AppInstallManager ()
         extends StObject
            with typings.winrtUwp.Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallManager
       
@@ -543,7 +542,7 @@ object Store {
         * @return An asynchronous operation that, on successful completion, returns a list of hardware features that are supported on the current device. If you use Asynchronous programming, the result type is a read-only list/vector of StoreSystemFeature items. (You can use APIs of IVectorView<StoreSystemFeature> for C++ or JavaScript, APIs of IReadOnlyList<StoreSystemFeature> for .NET.)
         */
       /* static member */
-      inline def filterUnsupportedSystemFeaturesAsync(systemFeatures: IIterable[StoreSystemFeature]): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterUnsupportedSystemFeaturesAsync")(systemFeatures.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+      inline def filterUnsupportedSystemFeaturesAsync(systemFeatures: IIterable[StoreSystemFeature]): IPromiseWithIAsyncOperation[IVectorView[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterUnsupportedSystemFeaturesAsync")(systemFeatures.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[Any]]]
       
       /** Gets hardware manufacturer information for the current device. */
       /* static member */
@@ -598,7 +597,7 @@ object Store {
       inline def setSystemConfiguration(
         catalogHardwareManufacturerId: String,
         catalogStoreContentModifierId: String,
-        systemConfigurationExpiration: Date,
+        systemConfigurationExpiration: js.Date,
         catalogHardwareDescriptor: String
       ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSystemConfiguration")(catalogHardwareManufacturerId.asInstanceOf[js.Any], catalogStoreContentModifierId.asInstanceOf[js.Any], systemConfigurationExpiration.asInstanceOf[js.Any], catalogHardwareDescriptor.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
@@ -644,7 +643,7 @@ object Store {
         * @return An asynchronous operation that, on successful completion, returns the collection of in-app products for the current app (including the available SKUs for each product). If you use Asynchronous programming, the result type is a read-only list/vector of StorePreviewProductInfo items. (You can use APIs of IVectorView<StorePreviewProductInfo> for C++ or JavaScript, APIs of IReadOnlyList<StorePreviewProductInfo> for .NET.)
         */
       /* static member */
-      inline def loadAddOnProductInfosAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadAddOnProductInfosAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+      inline def loadAddOnProductInfosAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadAddOnProductInfosAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[Any]]]
       
       /**
         * Requests the purchase of a SKU for an in-app product that is associated with the current app. Calling this method displays the UI that is used to complete the transaction via the Windows Store.
@@ -832,7 +831,7 @@ object Store {
     
     /** Gets the current expiration date and time of the in-app product license. */
     /* CompleteClass */
-    var expirationDate: Date = js.native
+    var expirationDate: js.Date = js.native
     
     /** Indicates if the in-app product license is currently active. */
     /* CompleteClass */
@@ -855,7 +854,7 @@ object Store {
        with typings.winrtUwp.Windows.ApplicationModel.Store.ProductListing {
     
     /* CompleteClass */
-    var currencyCode: js.Any = js.native
+    var currencyCode: Any = js.native
     
     /* unmapped type */
     /** Gets the description for the in-app product. */
@@ -863,7 +862,7 @@ object Store {
     var description: String = js.native
     
     /* CompleteClass */
-    var formattedBasePrice: js.Any = js.native
+    var formattedBasePrice: Any = js.native
     
     /* unmapped type */
     /** Gets the purchase price for the in-app product with the appropriate formatting for the current market. */
@@ -875,7 +874,7 @@ object Store {
     var imageUri: Uri = js.native
     
     /* CompleteClass */
-    var isOnSale: js.Any = js.native
+    var isOnSale: Any = js.native
     
     /* unmapped type */
     /** Gets the list of keywords associated with the in-app product. These keywords are useful for filtering product lists by keyword, for example, when calling LoadListingInformationByKeywordsAsync . */
@@ -896,7 +895,7 @@ object Store {
     
     /** Gets the end date of the sale period for the in-app product. */
     /* CompleteClass */
-    var saleEndDate: Date = js.native
+    var saleEndDate: js.Date = js.native
     
     /** Gets the tag string that contains custom information about an in-app product. */
     /* CompleteClass */
@@ -907,7 +906,7 @@ object Store {
   @JSGlobal("Windows.ApplicationModel.Store.ProductPurchaseDisplayProperties")
   @js.native
   /** Creates an instance of ProductPurchaseDisplayProperties . */
-  class ProductPurchaseDisplayProperties ()
+  open class ProductPurchaseDisplayProperties ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Store.ProductPurchaseDisplayProperties {
     /**

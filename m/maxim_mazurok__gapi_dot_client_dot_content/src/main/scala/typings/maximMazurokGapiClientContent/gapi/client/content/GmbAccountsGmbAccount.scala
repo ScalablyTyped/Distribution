@@ -6,16 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GmbAccountsGmbAccount extends StObject {
   
-  /** The email which identifies the GMB account. */
+  /** The email which identifies the Business Profile. */
   var email: js.UndefOr[String] = js.undefined
   
   /** Number of listings under this account. */
   var listingCount: js.UndefOr[String] = js.undefined
   
-  /** The name of the GMB account. */
+  /** The name of the Business Profile. */
   var name: js.UndefOr[String] = js.undefined
   
-  /** The type of the GMB account (User or Business). */
+  /** The type of the Business Profile (User or Business). */
   var `type`: js.UndefOr[String] = js.undefined
 }
 object GmbAccountsGmbAccount {

@@ -1,5 +1,6 @@
 package typings.puppeteer.mod
 
+import typings.puppeteer.puppeteerStrings.camera_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,10 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Rewritten from type alias, can be one of: 
   - typings.puppeteer.puppeteerStrings.geolocation
   - typings.puppeteer.puppeteerStrings.midi
-  - typings.puppeteer.puppeteerStrings.`midi-sysex`
   - typings.puppeteer.puppeteerStrings.notifications
-  - typings.puppeteer.puppeteerStrings.push
-  - typings.puppeteer.puppeteerStrings.camera
+  - typings.puppeteer.puppeteerStrings.camera_
   - typings.puppeteer.puppeteerStrings.microphone
   - typings.puppeteer.puppeteerStrings.`background-sync`
   - typings.puppeteer.puppeteerStrings.`ambient-light-sensor`
@@ -21,6 +20,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.puppeteer.puppeteerStrings.`clipboard-read`
   - typings.puppeteer.puppeteerStrings.`clipboard-write`
   - typings.puppeteer.puppeteerStrings.`payment-handler`
+  - typings.puppeteer.puppeteerStrings.`persistent-storage`
+  - typings.puppeteer.puppeteerStrings.`idle-detection`
+  - typings.puppeteer.puppeteerStrings.`midi-sysex`
 */
 trait Permission extends StObject
 object Permission {
@@ -33,7 +35,7 @@ object Permission {
   
   inline def `background-sync`: typings.puppeteer.puppeteerStrings.`background-sync` = "background-sync".asInstanceOf[typings.puppeteer.puppeteerStrings.`background-sync`]
   
-  inline def camera: typings.puppeteer.puppeteerStrings.camera = "camera".asInstanceOf[typings.puppeteer.puppeteerStrings.camera]
+  inline def camera: camera_ = "camera".asInstanceOf[camera_]
   
   inline def `clipboard-read`: typings.puppeteer.puppeteerStrings.`clipboard-read` = "clipboard-read".asInstanceOf[typings.puppeteer.puppeteerStrings.`clipboard-read`]
   
@@ -42,6 +44,8 @@ object Permission {
   inline def geolocation: typings.puppeteer.puppeteerStrings.geolocation = "geolocation".asInstanceOf[typings.puppeteer.puppeteerStrings.geolocation]
   
   inline def gyroscope: typings.puppeteer.puppeteerStrings.gyroscope = "gyroscope".asInstanceOf[typings.puppeteer.puppeteerStrings.gyroscope]
+  
+  inline def `idle-detection`: typings.puppeteer.puppeteerStrings.`idle-detection` = "idle-detection".asInstanceOf[typings.puppeteer.puppeteerStrings.`idle-detection`]
   
   inline def magnetometer: typings.puppeteer.puppeteerStrings.magnetometer = "magnetometer".asInstanceOf[typings.puppeteer.puppeteerStrings.magnetometer]
   
@@ -55,5 +59,5 @@ object Permission {
   
   inline def `payment-handler`: typings.puppeteer.puppeteerStrings.`payment-handler` = "payment-handler".asInstanceOf[typings.puppeteer.puppeteerStrings.`payment-handler`]
   
-  inline def push: typings.puppeteer.puppeteerStrings.push = "push".asInstanceOf[typings.puppeteer.puppeteerStrings.push]
+  inline def `persistent-storage`: typings.puppeteer.puppeteerStrings.`persistent-storage` = "persistent-storage".asInstanceOf[typings.puppeteer.puppeteerStrings.`persistent-storage`]
 }

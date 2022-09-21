@@ -34,7 +34,7 @@ object mod extends Shortcut {
   trait ParseError
     extends StObject
        with Error
-       with Instantiable3[/* error */ js.Any, /* src */ String, /* file */ String, ParseError] {
+       with Instantiable3[/* error */ Any, /* src */ String, /* file */ String, ParseError] {
     
     var annotated: String = js.native
     

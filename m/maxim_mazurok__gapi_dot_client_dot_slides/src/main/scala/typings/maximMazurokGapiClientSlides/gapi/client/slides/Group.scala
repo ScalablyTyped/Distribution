@@ -22,6 +22,6 @@ object Group {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setChildrenVarargs(value: PageElement*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: PageElement*): Self = StObject.set(x, "children", js.Array(value*))
   }
 }

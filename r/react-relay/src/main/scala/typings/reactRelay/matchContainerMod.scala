@@ -8,18 +8,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object matchContainerMod {
   
-  @JSImport("react-relay/lib/relay-experimental/MatchContainer", JSImport.Namespace)
+  @JSImport("react-relay/relay-hooks/MatchContainer", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
   inline def MatchContainer[TProps, TFallback](props: MatchContainerProps[TProps, TFallback]): ElementType[TProps] | TFallback | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("MatchContainer")(props.asInstanceOf[js.Any]).asInstanceOf[ElementType[TProps] | TFallback | Null]
   
-  /* Inlined std.Readonly<{  fallback :TFallback | null | undefined, loader (module : unknown): react.react.ComponentType<TProps>,   match :react-relay.react-relay/lib/relay-experimental/MatchContainer.MatchPointer | react-relay.react-relay/lib/relay-experimental/MatchContainer.TypenameOnlyPointer | null | undefined,   props :TProps | undefined}> */
+  /* Inlined std.Readonly<{  fallback :TFallback | null | undefined, loader (module : unknown): react.react.ComponentType<TProps>,   match :react-relay.react-relay/relay-hooks/MatchContainer.MatchPointer | react-relay.react-relay/relay-hooks/MatchContainer.TypenameOnlyPointer | null | undefined,   props :TProps | undefined}> */
   trait MatchContainerProps[TProps, TFallback] extends StObject {
     
     val fallback: js.UndefOr[TFallback | Null] = js.undefined
     
-    val loader: js.Function1[/* module */ js.Any, ComponentType[TProps]]
+    val loader: js.Function1[/* module */ Any, ComponentType[TProps]]
     
     val `match`: js.UndefOr[MatchPointer | TypenameOnlyPointer | Null] = js.undefined
     
@@ -27,7 +27,7 @@ object matchContainerMod {
   }
   object MatchContainerProps {
     
-    inline def apply[TProps, TFallback](loader: /* module */ js.Any => ComponentType[TProps]): MatchContainerProps[TProps, TFallback] = {
+    inline def apply[TProps, TFallback](loader: /* module */ Any => ComponentType[TProps]): MatchContainerProps[TProps, TFallback] = {
       val __obj = js.Dynamic.literal(loader = js.Any.fromFunction1(loader))
       __obj.asInstanceOf[MatchContainerProps[TProps, TFallback]]
     }
@@ -40,7 +40,7 @@ object matchContainerMod {
       
       inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
       
-      inline def setLoader(value: /* module */ js.Any => ComponentType[TProps]): Self = StObject.set(x, "loader", js.Any.fromFunction1(value))
+      inline def setLoader(value: /* module */ Any => ComponentType[TProps]): Self = StObject.set(x, "loader", js.Any.fromFunction1(value))
       
       inline def setMatch(value: MatchPointer | TypenameOnlyPointer): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
@@ -54,27 +54,27 @@ object matchContainerMod {
     }
   }
   
-  /* Inlined std.Readonly<{  __fragmentPropName :string | null | undefined,   __module_component :unknown | undefined,    $fragmentRefs :unknown}> */
+  /* Inlined std.Readonly<{  __fragmentPropName :string | null | undefined,   __module_component :unknown | undefined,    $fragmentSpreads :unknown}> */
   trait MatchPointer extends StObject {
     
-    @JSName(" $fragmentRefs")
-    val Space$fragmentRefs: js.Any
+    @JSName(" $fragmentSpreads")
+    val Space$fragmentSpreads: Any
     
     val __fragmentPropName: js.UndefOr[String | Null] = js.undefined
     
-    val __module_component: js.UndefOr[js.Any] = js.undefined
+    val __module_component: js.UndefOr[Any] = js.undefined
   }
   object MatchPointer {
     
-    inline def apply(Space$fragmentRefs: js.Any): MatchPointer = {
+    inline def apply(Space$fragmentSpreads: Any): MatchPointer = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic(" $fragmentRefs")(Space$fragmentRefs.asInstanceOf[js.Any])
+      __obj.updateDynamic(" $fragmentSpreads")(Space$fragmentSpreads.asInstanceOf[js.Any])
       __obj.asInstanceOf[MatchPointer]
     }
     
     extension [Self <: MatchPointer](x: Self) {
       
-      inline def setSpace$fragmentRefs(value: js.Any): Self = StObject.set(x, " $fragmentRefs", value.asInstanceOf[js.Any])
+      inline def setSpace$fragmentSpreads(value: Any): Self = StObject.set(x, " $fragmentSpreads", value.asInstanceOf[js.Any])
       
       inline def set__fragmentPropName(value: String): Self = StObject.set(x, "__fragmentPropName", value.asInstanceOf[js.Any])
       
@@ -82,7 +82,7 @@ object matchContainerMod {
       
       inline def set__fragmentPropNameUndefined: Self = StObject.set(x, "__fragmentPropName", js.undefined)
       
-      inline def set__module_component(value: js.Any): Self = StObject.set(x, "__module_component", value.asInstanceOf[js.Any])
+      inline def set__module_component(value: Any): Self = StObject.set(x, "__module_component", value.asInstanceOf[js.Any])
       
       inline def set__module_componentUndefined: Self = StObject.set(x, "__module_component", js.undefined)
     }

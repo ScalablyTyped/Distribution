@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ms-rest-azure", "CognitiveServicesCredentials")
 @js.native
-class CognitiveServicesCredentials protected () extends ApiKeyCredentials {
+open class CognitiveServicesCredentials protected () extends ApiKeyCredentials {
   /**
     * Creates a new CognitiveServicesCredentials object.
     *

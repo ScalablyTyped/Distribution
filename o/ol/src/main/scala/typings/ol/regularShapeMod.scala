@@ -1,6 +1,7 @@
 package typings.ol
 
 import typings.ol.colorlikeMod.ColorLike
+import typings.ol.sizeMod.Size
 import typings.std.CanvasLineCap
 import typings.std.CanvasLineJoin
 import org.scalablytyped.runtime.StObject
@@ -11,7 +12,7 @@ object regularShapeMod {
   
   @JSImport("ol/style/RegularShape", JSImport.Default)
   @js.native
-  class default protected () extends RegularShape {
+  open class default protected () extends RegularShape {
     def this(options: Options) = this()
   }
   
@@ -35,6 +36,8 @@ object regularShapeMod {
     
     var rotation: js.UndefOr[Double] = js.undefined
     
+    var scale: js.UndefOr[Double | Size] = js.undefined
+    
     var stroke: js.UndefOr[typings.ol.strokeMod.default] = js.undefined
   }
   object Options {
@@ -54,7 +57,7 @@ object regularShapeMod {
       
       inline def setDisplacementUndefined: Self = StObject.set(x, "displacement", js.undefined)
       
-      inline def setDisplacementVarargs(value: Double*): Self = StObject.set(x, "displacement", js.Array(value :_*))
+      inline def setDisplacementVarargs(value: Double*): Self = StObject.set(x, "displacement", js.Array(value*))
       
       inline def setFill(value: typings.ol.fillMod.default): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
@@ -81,6 +84,10 @@ object regularShapeMod {
       inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
       
       inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
+      
+      inline def setScale(value: Double | Size): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      
+      inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
       
       inline def setStroke(value: typings.ol.strokeMod.default): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
       
@@ -170,7 +177,7 @@ object regularShapeMod {
       
       inline def setLineDashOffset(value: Double): Self = StObject.set(x, "lineDashOffset", value.asInstanceOf[js.Any])
       
-      inline def setLineDashVarargs(value: Double*): Self = StObject.set(x, "lineDash", js.Array(value :_*))
+      inline def setLineDashVarargs(value: Double*): Self = StObject.set(x, "lineDash", js.Array(value*))
       
       inline def setLineJoin(value: CanvasLineJoin): Self = StObject.set(x, "lineJoin", value.asInstanceOf[js.Any])
       

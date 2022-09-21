@@ -19,7 +19,7 @@ trait GoogleApiHttpBody extends StObject {
     js.Array[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ GoogleApi__HttpBody & TopLevel[js.Any]
+    */ GoogleApi__HttpBody & TopLevel[Any]
     ]
   ] = js.undefined
 }
@@ -44,7 +44,7 @@ object GoogleApiHttpBody {
       value: js.Array[
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ GoogleApi__HttpBody & TopLevel[js.Any]
+      */ GoogleApi__HttpBody & TopLevel[Any]
         ]
     ): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
@@ -53,7 +53,7 @@ object GoogleApiHttpBody {
     inline def setExtensionsVarargs(
       value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ GoogleApi__HttpBody & TopLevel[js.Any])*
-    ): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      */ GoogleApi__HttpBody & TopLevel[Any])*
+    ): Self = StObject.set(x, "extensions", js.Array(value*))
   }
 }

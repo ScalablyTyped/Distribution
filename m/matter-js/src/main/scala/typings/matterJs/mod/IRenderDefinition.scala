@@ -43,7 +43,7 @@ trait IRenderDefinition extends StObject {
     * @property controller
     * @type render
     */
-  var controller: js.UndefOr[js.Any] = js.undefined
+  var controller: js.UndefOr[Any] = js.undefined
   
   /**
     * A reference to the element where the canvas is to be inserted (if `render.canvas` has not been specified)
@@ -77,7 +77,7 @@ trait IRenderDefinition extends StObject {
     * @property textures
     * @type {}
     */
-  var textures: js.UndefOr[js.Any] = js.undefined
+  var textures: js.UndefOr[Any] = js.undefined
 }
 object IRenderDefinition {
   
@@ -100,7 +100,7 @@ object IRenderDefinition {
     
     inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    inline def setController(value: js.Any): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+    inline def setController(value: Any): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     
     inline def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
     
@@ -114,7 +114,7 @@ object IRenderDefinition {
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    inline def setTextures(value: js.Any): Self = StObject.set(x, "textures", value.asInstanceOf[js.Any])
+    inline def setTextures(value: Any): Self = StObject.set(x, "textures", value.asInstanceOf[js.Any])
     
     inline def setTexturesUndefined: Self = StObject.set(x, "textures", js.undefined)
   }

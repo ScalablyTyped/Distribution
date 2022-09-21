@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodal", "RelationshipNode")
 @js.native
-class RelationshipNode protected () extends StObject {
+open class RelationshipNode protected () extends StObject {
   def this(Graph: RelationshipGraph, mModel: TypeofModel) = this()
   
   var Graph: RelationshipGraph = js.native

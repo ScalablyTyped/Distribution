@@ -10,10 +10,10 @@ object settingsOverscanMod {
   
   @JSImport("material-ui/svg-icons/action/settings-overscan", JSImport.Default)
   @js.native
-  class default () extends ActionSettingsOverscan
+  open class default () extends ActionSettingsOverscan
   
   @JSImport("material-ui/svg-icons/action/settings-overscan", "ActionSettingsOverscan")
   @js.native
-  class ActionSettingsOverscan ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionSettingsOverscan ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

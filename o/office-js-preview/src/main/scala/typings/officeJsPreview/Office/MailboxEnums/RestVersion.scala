@@ -9,11 +9,10 @@ sealed trait RestVersion extends StObject
 /**
   * Specifies the version of the REST API that corresponds to a REST-formatted item ID.
   *
+  * @remarks
   * [Api set: Mailbox 1.3]
   *
-  * @remarks
-  *
-  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+  * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 @JSGlobal("Office.MailboxEnums.RestVersion")
 @js.native

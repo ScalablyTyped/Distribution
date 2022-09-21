@@ -55,7 +55,7 @@ trait PageToken extends StObject {
   /** Upload protocol for media (e.g. "raw", "multipart"). */
   var upload_protocol: js.UndefOr[String] = js.undefined
   
-  /** Level of information requested in response. Default is `JOB_VIEW_SUMMARY`. */
+  /** Deprecated. ListJobs always returns summaries now. Use GetJob for other JobViews. */
   var view: js.UndefOr[String] = js.undefined
 }
 object PageToken {

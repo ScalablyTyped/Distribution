@@ -23,13 +23,13 @@ object transformPartitionMod {
       
       inline def setGroupBy(value: js.Array[String]): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
       
-      inline def setGroupByVarargs(value: String*): Self = StObject.set(x, "groupBy", js.Array(value :_*))
+      inline def setGroupByVarargs(value: String*): Self = StObject.set(x, "groupBy", js.Array(value*))
       
       inline def setOrderBy(value: js.Array[String]): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
       
       inline def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
       
-      inline def setOrderByVarargs(value: String*): Self = StObject.set(x, "orderBy", js.Array(value :_*))
+      inline def setOrderByVarargs(value: String*): Self = StObject.set(x, "orderBy", js.Array(value*))
     }
   }
 }

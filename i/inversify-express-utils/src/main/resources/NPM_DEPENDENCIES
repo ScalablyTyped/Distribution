@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "inversify-express-utils" : "6.3.2"
+      "inversify-express-utils" : "6.4.3"
     }
   ],
   "test-dependencies" : [
     {
-      "inversify-express-utils" : "6.3.2"
+      "inversify-express-utils" : "6.4.3"
     }
   ],
   "compile-devDependencies" : [

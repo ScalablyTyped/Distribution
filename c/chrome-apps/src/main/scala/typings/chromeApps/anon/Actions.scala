@@ -27,13 +27,13 @@ object Actions {
     
     inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    inline def setActionsVarargs(value: TypeDeclarativeWebRequestActionsList*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: TypeDeclarativeWebRequestActionsList*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setConditions(value: js.Array[Dictkey]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
     inline def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
-    inline def setConditionsVarargs(value: Dictkey*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: Dictkey*): Self = StObject.set(x, "conditions", js.Array(value*))
     
     inline def setEvent(value: DeclarativeWebRequestEventList): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     

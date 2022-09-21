@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Bucket extends StObject {
   
   /**
-    * Date the bucket was created.
+    * Date the bucket was created. This date can change when making changes to your bucket, such as editing its bucket policy.
     */
-  var CreationDate: js.UndefOr[typings.awsSdk.s3Mod.CreationDate] = js.undefined
+  var CreationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the bucket.
@@ -25,7 +25,7 @@ object Bucket {
   
   extension [Self <: Bucket](x: Self) {
     
-    inline def setCreationDate(value: CreationDate): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     

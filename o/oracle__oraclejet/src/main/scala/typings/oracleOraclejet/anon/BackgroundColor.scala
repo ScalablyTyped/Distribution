@@ -89,7 +89,7 @@ object BackgroundColor {
     
     inline def setSections(value: js.Array[Items]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
     
-    inline def setSectionsVarargs(value: Items*): Self = StObject.set(x, "sections", js.Array(value :_*))
+    inline def setSectionsVarargs(value: Items*): Self = StObject.set(x, "sections", js.Array(value*))
     
     inline def setSeriesSection(value: Title): Self = StObject.set(x, "seriesSection", value.asInstanceOf[js.Any])
     

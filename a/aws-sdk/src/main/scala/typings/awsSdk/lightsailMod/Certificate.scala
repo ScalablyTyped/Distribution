@@ -14,7 +14,7 @@ trait Certificate extends StObject {
   /**
     * The timestamp when the certificate was created.
     */
-  var createdAt: js.UndefOr[IsoDate] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The domain name of the certificate.
@@ -39,7 +39,7 @@ trait Certificate extends StObject {
   /**
     * The timestamp when the certificate was issued.
     */
-  var issuedAt: js.UndefOr[IsoDate] = js.undefined
+  var issuedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The certificate authority that issued the certificate.
@@ -59,12 +59,12 @@ trait Certificate extends StObject {
   /**
     * The timestamp when the certificate expires.
     */
-  var notAfter: js.UndefOr[IsoDate] = js.undefined
+  var notAfter: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The timestamp when the certificate is first valid.
     */
-  var notBefore: js.UndefOr[IsoDate] = js.undefined
+  var notBefore: js.UndefOr[js.Date] = js.undefined
   
   /**
     * An object that describes the status of the certificate renewal managed by Lightsail.
@@ -84,7 +84,7 @@ trait Certificate extends StObject {
   /**
     * The timestamp when the certificate was revoked. This value is present only when the certificate status is REVOKED.
     */
-  var revokedAt: js.UndefOr[IsoDate] = js.undefined
+  var revokedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The serial number of the certificate.
@@ -107,7 +107,7 @@ trait Certificate extends StObject {
   var supportCode: js.UndefOr[String] = js.undefined
   
   /**
-    * The tag keys and optional values for the resource. For more information about tags in Lightsail, see the Lightsail Dev Guide.
+    * The tag keys and optional values for the resource. For more information about tags in Lightsail, see the Amazon Lightsail Developer Guide.
     */
   var tags: js.UndefOr[TagList] = js.undefined
 }
@@ -124,7 +124,7 @@ object Certificate {
     
     inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    inline def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
@@ -136,7 +136,7 @@ object Certificate {
     
     inline def setDomainValidationRecordsUndefined: Self = StObject.set(x, "domainValidationRecords", js.undefined)
     
-    inline def setDomainValidationRecordsVarargs(value: DomainValidationRecord*): Self = StObject.set(x, "domainValidationRecords", js.Array(value :_*))
+    inline def setDomainValidationRecordsVarargs(value: DomainValidationRecord*): Self = StObject.set(x, "domainValidationRecords", js.Array(value*))
     
     inline def setEligibleToRenew(value: EligibleToRenew): Self = StObject.set(x, "eligibleToRenew", value.asInstanceOf[js.Any])
     
@@ -146,7 +146,7 @@ object Certificate {
     
     inline def setInUseResourceCountUndefined: Self = StObject.set(x, "inUseResourceCount", js.undefined)
     
-    inline def setIssuedAt(value: IsoDate): Self = StObject.set(x, "issuedAt", value.asInstanceOf[js.Any])
+    inline def setIssuedAt(value: js.Date): Self = StObject.set(x, "issuedAt", value.asInstanceOf[js.Any])
     
     inline def setIssuedAtUndefined: Self = StObject.set(x, "issuedAt", js.undefined)
     
@@ -162,11 +162,11 @@ object Certificate {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setNotAfter(value: IsoDate): Self = StObject.set(x, "notAfter", value.asInstanceOf[js.Any])
+    inline def setNotAfter(value: js.Date): Self = StObject.set(x, "notAfter", value.asInstanceOf[js.Any])
     
     inline def setNotAfterUndefined: Self = StObject.set(x, "notAfter", js.undefined)
     
-    inline def setNotBefore(value: IsoDate): Self = StObject.set(x, "notBefore", value.asInstanceOf[js.Any])
+    inline def setNotBefore(value: js.Date): Self = StObject.set(x, "notBefore", value.asInstanceOf[js.Any])
     
     inline def setNotBeforeUndefined: Self = StObject.set(x, "notBefore", js.undefined)
     
@@ -182,7 +182,7 @@ object Certificate {
     
     inline def setRevocationReasonUndefined: Self = StObject.set(x, "revocationReason", js.undefined)
     
-    inline def setRevokedAt(value: IsoDate): Self = StObject.set(x, "revokedAt", value.asInstanceOf[js.Any])
+    inline def setRevokedAt(value: js.Date): Self = StObject.set(x, "revokedAt", value.asInstanceOf[js.Any])
     
     inline def setRevokedAtUndefined: Self = StObject.set(x, "revokedAt", js.undefined)
     
@@ -198,7 +198,7 @@ object Certificate {
     
     inline def setSubjectAlternativeNamesUndefined: Self = StObject.set(x, "subjectAlternativeNames", js.undefined)
     
-    inline def setSubjectAlternativeNamesVarargs(value: DomainName*): Self = StObject.set(x, "subjectAlternativeNames", js.Array(value :_*))
+    inline def setSubjectAlternativeNamesVarargs(value: DomainName*): Self = StObject.set(x, "subjectAlternativeNames", js.Array(value*))
     
     inline def setSupportCode(value: String): Self = StObject.set(x, "supportCode", value.asInstanceOf[js.Any])
     
@@ -208,6 +208,6 @@ object Certificate {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

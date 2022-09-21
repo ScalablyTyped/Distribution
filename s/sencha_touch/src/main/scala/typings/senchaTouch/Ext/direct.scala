@@ -12,17 +12,17 @@ object direct {
        with IBase {
     
     /** [Config Option] (Object) */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** [Method] Returns the value of code
       * @returns Object
       */
-    var getCode: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getCode: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of data
       * @returns Object
       */
-    var getData: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getData: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of message
       * @returns String
@@ -37,7 +37,7 @@ object direct {
     /** [Method] Returns the value of result
       * @returns Object
       */
-    var getResult: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getResult: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of status
       * @returns Boolean
@@ -47,12 +47,12 @@ object direct {
     /** [Method] Returns the value of transaction
       * @returns Object
       */
-    var getTransaction: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getTransaction: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of xhr
       * @returns Object
       */
-    var getXhr: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getXhr: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Config Option] (String) */
     var name: js.UndefOr[java.lang.String] = js.undefined
@@ -60,12 +60,12 @@ object direct {
     /** [Method] Sets the value of code
       * @param code Object The new value.
       */
-    var setCode: js.UndefOr[js.Function1[/* code */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setCode: js.UndefOr[js.Function1[/* code */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of data
       * @param data Object The new value.
       */
-    var setData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setData: js.UndefOr[js.Function1[/* data */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of message
       * @param message String The new value.
@@ -80,7 +80,7 @@ object direct {
     /** [Method] Sets the value of result
       * @param result Object The new value.
       */
-    var setResult: js.UndefOr[js.Function1[/* result */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setResult: js.UndefOr[js.Function1[/* result */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of status
       * @param status Boolean The new value.
@@ -90,12 +90,12 @@ object direct {
     /** [Method] Sets the value of transaction
       * @param transaction Object The new value.
       */
-    var setTransaction: js.UndefOr[js.Function1[/* transaction */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setTransaction: js.UndefOr[js.Function1[/* transaction */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of xhr
       * @param xhr Object The new value.
       */
-    var setXhr: js.UndefOr[js.Function1[/* xhr */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setXhr: js.UndefOr[js.Function1[/* xhr */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object IEvent {
     
@@ -106,15 +106,15 @@ object direct {
     
     extension [Self <: IEvent](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setGetCode(value: () => js.Any): Self = StObject.set(x, "getCode", js.Any.fromFunction0(value))
+      inline def setGetCode(value: () => Any): Self = StObject.set(x, "getCode", js.Any.fromFunction0(value))
       
       inline def setGetCodeUndefined: Self = StObject.set(x, "getCode", js.undefined)
       
-      inline def setGetData(value: () => js.Any): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
+      inline def setGetData(value: () => Any): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
       
       inline def setGetDataUndefined: Self = StObject.set(x, "getData", js.undefined)
       
@@ -126,7 +126,7 @@ object direct {
       
       inline def setGetNameUndefined: Self = StObject.set(x, "getName", js.undefined)
       
-      inline def setGetResult(value: () => js.Any): Self = StObject.set(x, "getResult", js.Any.fromFunction0(value))
+      inline def setGetResult(value: () => Any): Self = StObject.set(x, "getResult", js.Any.fromFunction0(value))
       
       inline def setGetResultUndefined: Self = StObject.set(x, "getResult", js.undefined)
       
@@ -134,11 +134,11 @@ object direct {
       
       inline def setGetStatusUndefined: Self = StObject.set(x, "getStatus", js.undefined)
       
-      inline def setGetTransaction(value: () => js.Any): Self = StObject.set(x, "getTransaction", js.Any.fromFunction0(value))
+      inline def setGetTransaction(value: () => Any): Self = StObject.set(x, "getTransaction", js.Any.fromFunction0(value))
       
       inline def setGetTransactionUndefined: Self = StObject.set(x, "getTransaction", js.undefined)
       
-      inline def setGetXhr(value: () => js.Any): Self = StObject.set(x, "getXhr", js.Any.fromFunction0(value))
+      inline def setGetXhr(value: () => Any): Self = StObject.set(x, "getXhr", js.Any.fromFunction0(value))
       
       inline def setGetXhrUndefined: Self = StObject.set(x, "getXhr", js.undefined)
       
@@ -146,11 +146,11 @@ object direct {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setSetCode(value: /* code */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setCode", js.Any.fromFunction1(value))
+      inline def setSetCode(value: /* code */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setCode", js.Any.fromFunction1(value))
       
       inline def setSetCodeUndefined: Self = StObject.set(x, "setCode", js.undefined)
       
-      inline def setSetData(value: /* data */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
+      inline def setSetData(value: /* data */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
       
       inline def setSetDataUndefined: Self = StObject.set(x, "setData", js.undefined)
       
@@ -162,7 +162,7 @@ object direct {
       
       inline def setSetNameUndefined: Self = StObject.set(x, "setName", js.undefined)
       
-      inline def setSetResult(value: /* result */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setResult", js.Any.fromFunction1(value))
+      inline def setSetResult(value: /* result */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setResult", js.Any.fromFunction1(value))
       
       inline def setSetResultUndefined: Self = StObject.set(x, "setResult", js.undefined)
       
@@ -170,11 +170,11 @@ object direct {
       
       inline def setSetStatusUndefined: Self = StObject.set(x, "setStatus", js.undefined)
       
-      inline def setSetTransaction(value: /* transaction */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setTransaction", js.Any.fromFunction1(value))
+      inline def setSetTransaction(value: /* transaction */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setTransaction", js.Any.fromFunction1(value))
       
       inline def setSetTransactionUndefined: Self = StObject.set(x, "setTransaction", js.undefined)
       
-      inline def setSetXhr(value: /* xhr */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setXhr", js.Any.fromFunction1(value))
+      inline def setSetXhr(value: /* xhr */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setXhr", js.Any.fromFunction1(value))
       
       inline def setSetXhrUndefined: Self = StObject.set(x, "setXhr", js.undefined)
     }
@@ -187,12 +187,12 @@ object direct {
     /** [Method] Returns the value of error
       * @returns Object
       */
-    var getError: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getError: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Sets the value of error
       * @param error Object The new value.
       */
-    var setError: js.UndefOr[js.Function1[/* error */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setError: js.UndefOr[js.Function1[/* error */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object IExceptionEvent {
     
@@ -203,11 +203,11 @@ object direct {
     
     extension [Self <: IExceptionEvent](x: Self) {
       
-      inline def setGetError(value: () => js.Any): Self = StObject.set(x, "getError", js.Any.fromFunction0(value))
+      inline def setGetError(value: () => Any): Self = StObject.set(x, "getError", js.Any.fromFunction0(value))
       
       inline def setGetErrorUndefined: Self = StObject.set(x, "getError", js.undefined)
       
-      inline def setSetError(value: /* error */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setError", js.Any.fromFunction1(value))
+      inline def setSetError(value: /* error */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setError", js.Any.fromFunction1(value))
       
       inline def setSetErrorUndefined: Self = StObject.set(x, "setError", js.undefined)
     }
@@ -221,7 +221,7 @@ object direct {
       * @param response Object The XHR response object.
       * @returns Ext.direct.Event The event.
       */
-    var createEvent: js.UndefOr[js.Function1[/* response */ js.UndefOr[js.Any], IEvent]] = js.undefined
+    var createEvent: js.UndefOr[js.Function1[/* response */ js.UndefOr[Any], IEvent]] = js.undefined
   }
   object IJsonProvider {
     
@@ -232,7 +232,7 @@ object direct {
     
     extension [Self <: IJsonProvider](x: Self) {
       
-      inline def setCreateEvent(value: /* response */ js.UndefOr[js.Any] => IEvent): Self = StObject.set(x, "createEvent", js.Any.fromFunction1(value))
+      inline def setCreateEvent(value: /* response */ js.UndefOr[Any] => IEvent): Self = StObject.set(x, "createEvent", js.Any.fromFunction1(value))
       
       inline def setCreateEventUndefined: Self = StObject.set(x, "createEvent", js.undefined)
     }
@@ -254,12 +254,12 @@ object direct {
        with IJsonProvider {
     
     /** [Config Option] (Object) */
-    var baseParams: js.UndefOr[js.Any] = js.undefined
+    var baseParams: js.UndefOr[Any] = js.undefined
     
     /** [Method] Returns the value of baseParams
       * @returns Object
       */
-    var getBaseParams: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getBaseParams: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of interval
       * @returns Number
@@ -269,7 +269,7 @@ object direct {
     /** [Method] Returns the value of url
       * @returns String/Function
       */
-    var getUrl: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getUrl: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Config Option] (Number) */
     var interval: js.UndefOr[Double] = js.undefined
@@ -277,7 +277,7 @@ object direct {
     /** [Method] Sets the value of baseParams
       * @param baseParams Object The new value.
       */
-    var setBaseParams: js.UndefOr[js.Function1[/* baseParams */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setBaseParams: js.UndefOr[js.Function1[/* baseParams */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of interval
       * @param interval Number The new value.
@@ -287,10 +287,10 @@ object direct {
     /** [Method] Sets the value of url
       * @param url String/Function The new value.
       */
-    var setUrl: js.UndefOr[js.Function1[/* url */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setUrl: js.UndefOr[js.Function1[/* url */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Config Option] (String/Function) */
-    var url: js.UndefOr[js.Any] = js.undefined
+    var url: js.UndefOr[Any] = js.undefined
   }
   object IPollingProvider {
     
@@ -301,11 +301,11 @@ object direct {
     
     extension [Self <: IPollingProvider](x: Self) {
       
-      inline def setBaseParams(value: js.Any): Self = StObject.set(x, "baseParams", value.asInstanceOf[js.Any])
+      inline def setBaseParams(value: Any): Self = StObject.set(x, "baseParams", value.asInstanceOf[js.Any])
       
       inline def setBaseParamsUndefined: Self = StObject.set(x, "baseParams", js.undefined)
       
-      inline def setGetBaseParams(value: () => js.Any): Self = StObject.set(x, "getBaseParams", js.Any.fromFunction0(value))
+      inline def setGetBaseParams(value: () => Any): Self = StObject.set(x, "getBaseParams", js.Any.fromFunction0(value))
       
       inline def setGetBaseParamsUndefined: Self = StObject.set(x, "getBaseParams", js.undefined)
       
@@ -313,7 +313,7 @@ object direct {
       
       inline def setGetIntervalUndefined: Self = StObject.set(x, "getInterval", js.undefined)
       
-      inline def setGetUrl(value: () => js.Any): Self = StObject.set(x, "getUrl", js.Any.fromFunction0(value))
+      inline def setGetUrl(value: () => Any): Self = StObject.set(x, "getUrl", js.Any.fromFunction0(value))
       
       inline def setGetUrlUndefined: Self = StObject.set(x, "getUrl", js.undefined)
       
@@ -321,7 +321,7 @@ object direct {
       
       inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
       
-      inline def setSetBaseParams(value: /* baseParams */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setBaseParams", js.Any.fromFunction1(value))
+      inline def setSetBaseParams(value: /* baseParams */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setBaseParams", js.Any.fromFunction1(value))
       
       inline def setSetBaseParamsUndefined: Self = StObject.set(x, "setBaseParams", js.undefined)
       
@@ -329,11 +329,11 @@ object direct {
       
       inline def setSetIntervalUndefined: Self = StObject.set(x, "setInterval", js.undefined)
       
-      inline def setSetUrl(value: /* url */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setUrl", js.Any.fromFunction1(value))
+      inline def setSetUrl(value: /* url */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setUrl", js.Any.fromFunction1(value))
       
       inline def setSetUrlUndefined: Self = StObject.set(x, "setUrl", js.undefined)
       
-      inline def setUrl(value: js.Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
       inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
@@ -373,7 +373,7 @@ object direct {
       */
     @JSName("relayEvents")
     var relayEvents_IProvider: js.UndefOr[
-        js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
+        js.Function2[/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any], IObservable]
       ] = js.undefined
     
     /** [Method] Sets the value of id
@@ -414,7 +414,7 @@ object direct {
       
       inline def setIsProviderUndefined: Self = StObject.set(x, "isProvider", js.undefined)
       
-      inline def setRelayEvents(value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
+      inline def setRelayEvents(value: (/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
       
       inline def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
       
@@ -431,7 +431,7 @@ object direct {
     /** [Method] Returns the value of tid
       * @returns Object
       */
-    var getTid: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getTid: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Get the transaction associated with this event
       * @returns Ext.direct.Transaction The transaction
@@ -442,7 +442,7 @@ object direct {
     /** [Method] Sets the value of tid
       * @param tid Object The new value.
       */
-    var setTid: js.UndefOr[js.Function1[/* tid */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setTid: js.UndefOr[js.Function1[/* tid */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object IRemotingEvent {
     
@@ -453,7 +453,7 @@ object direct {
     
     extension [Self <: IRemotingEvent](x: Self) {
       
-      inline def setGetTid(value: () => js.Any): Self = StObject.set(x, "getTid", js.Any.fromFunction0(value))
+      inline def setGetTid(value: () => Any): Self = StObject.set(x, "getTid", js.Any.fromFunction0(value))
       
       inline def setGetTidUndefined: Self = StObject.set(x, "getTid", js.undefined)
       
@@ -461,7 +461,7 @@ object direct {
       
       inline def setGetTransactionUndefined: Self = StObject.set(x, "getTransaction", js.undefined)
       
-      inline def setSetTid(value: /* tid */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setTid", js.Any.fromFunction1(value))
+      inline def setSetTid(value: /* tid */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setTid", js.Any.fromFunction1(value))
       
       inline def setSetTidUndefined: Self = StObject.set(x, "setTid", js.undefined)
     }
@@ -475,22 +475,22 @@ object direct {
       * @param args Array The arguments passed to the direct call
       * @returns Object An object with 3 properties, args, callback &amp; scope.
       */
-    var getCallData: js.UndefOr[js.Function1[/* args */ js.UndefOr[Array], js.Any]] = js.undefined
+    var getCallData: js.UndefOr[js.Function1[/* args */ js.UndefOr[Array], Any]] = js.undefined
     
     /** [Method] Returns the value of formHandler
       * @returns Object
       */
-    var getFormHandler: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getFormHandler: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of len
       * @returns Object
       */
-    var getLen: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getLen: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of name
       * @returns Object
       */
-    var getName: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getName: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of ordered
       * @returns Boolean
@@ -500,22 +500,22 @@ object direct {
     /** [Method] Returns the value of params
       * @returns Object
       */
-    var getParams: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getParams: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Sets the value of formHandler
       * @param formHandler Object The new value.
       */
-    var setFormHandler: js.UndefOr[js.Function1[/* formHandler */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setFormHandler: js.UndefOr[js.Function1[/* formHandler */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of len
       * @param len Object The new value.
       */
-    var setLen: js.UndefOr[js.Function1[/* len */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setLen: js.UndefOr[js.Function1[/* len */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of name
       * @param name Object The new value.
       */
-    var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of ordered
       * @param ordered Boolean The new value.
@@ -525,7 +525,7 @@ object direct {
     /** [Method] Sets the value of params
       * @param params Object The new value.
       */
-    var setParams: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setParams: js.UndefOr[js.Function1[/* params */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object IRemotingMethod {
     
@@ -536,19 +536,19 @@ object direct {
     
     extension [Self <: IRemotingMethod](x: Self) {
       
-      inline def setGetCallData(value: /* args */ js.UndefOr[Array] => js.Any): Self = StObject.set(x, "getCallData", js.Any.fromFunction1(value))
+      inline def setGetCallData(value: /* args */ js.UndefOr[Array] => Any): Self = StObject.set(x, "getCallData", js.Any.fromFunction1(value))
       
       inline def setGetCallDataUndefined: Self = StObject.set(x, "getCallData", js.undefined)
       
-      inline def setGetFormHandler(value: () => js.Any): Self = StObject.set(x, "getFormHandler", js.Any.fromFunction0(value))
+      inline def setGetFormHandler(value: () => Any): Self = StObject.set(x, "getFormHandler", js.Any.fromFunction0(value))
       
       inline def setGetFormHandlerUndefined: Self = StObject.set(x, "getFormHandler", js.undefined)
       
-      inline def setGetLen(value: () => js.Any): Self = StObject.set(x, "getLen", js.Any.fromFunction0(value))
+      inline def setGetLen(value: () => Any): Self = StObject.set(x, "getLen", js.Any.fromFunction0(value))
       
       inline def setGetLenUndefined: Self = StObject.set(x, "getLen", js.undefined)
       
-      inline def setGetName(value: () => js.Any): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+      inline def setGetName(value: () => Any): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
       
       inline def setGetNameUndefined: Self = StObject.set(x, "getName", js.undefined)
       
@@ -556,19 +556,19 @@ object direct {
       
       inline def setGetOrderedUndefined: Self = StObject.set(x, "getOrdered", js.undefined)
       
-      inline def setGetParams(value: () => js.Any): Self = StObject.set(x, "getParams", js.Any.fromFunction0(value))
+      inline def setGetParams(value: () => Any): Self = StObject.set(x, "getParams", js.Any.fromFunction0(value))
       
       inline def setGetParamsUndefined: Self = StObject.set(x, "getParams", js.undefined)
       
-      inline def setSetFormHandler(value: /* formHandler */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setFormHandler", js.Any.fromFunction1(value))
+      inline def setSetFormHandler(value: /* formHandler */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setFormHandler", js.Any.fromFunction1(value))
       
       inline def setSetFormHandlerUndefined: Self = StObject.set(x, "setFormHandler", js.undefined)
       
-      inline def setSetLen(value: /* len */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setLen", js.Any.fromFunction1(value))
+      inline def setSetLen(value: /* len */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setLen", js.Any.fromFunction1(value))
       
       inline def setSetLenUndefined: Self = StObject.set(x, "setLen", js.undefined)
       
-      inline def setSetName(value: /* name */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
+      inline def setSetName(value: /* name */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
       
       inline def setSetNameUndefined: Self = StObject.set(x, "setName", js.undefined)
       
@@ -576,7 +576,7 @@ object direct {
       
       inline def setSetOrderedUndefined: Self = StObject.set(x, "setOrdered", js.undefined)
       
-      inline def setSetParams(value: /* params */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setParams", js.Any.fromFunction1(value))
+      inline def setSetParams(value: /* params */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setParams", js.Any.fromFunction1(value))
       
       inline def setSetParamsUndefined: Self = StObject.set(x, "setParams", js.undefined)
     }
@@ -587,10 +587,10 @@ object direct {
        with IJsonProvider {
     
     /** [Config Option] (Object) */
-    var actions: js.UndefOr[js.Any] = js.undefined
+    var actions: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Number/Boolean) */
-    var enableBuffer: js.UndefOr[js.Any] = js.undefined
+    var enableBuffer: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (String) */
     var enableUrlEncode: js.UndefOr[java.lang.String] = js.undefined
@@ -598,12 +598,12 @@ object direct {
     /** [Method] Returns the value of actions
       * @returns Object
       */
-    var getActions: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getActions: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of enableBuffer
       * @returns Number/Boolean
       */
-    var getEnableBuffer: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getEnableBuffer: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of enableUrlEncode
       * @returns String
@@ -618,7 +618,7 @@ object direct {
     /** [Method] Returns the value of namespace
       * @returns String/Object
       */
-    var getNamespace: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getNamespace: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of timeout
       * @returns Number
@@ -634,17 +634,17 @@ object direct {
     var maxRetries: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (String/Object) */
-    var namespace: js.UndefOr[js.Any] = js.undefined
+    var namespace: js.UndefOr[Any] = js.undefined
     
     /** [Method] Sets the value of actions
       * @param actions Object The new value.
       */
-    var setActions: js.UndefOr[js.Function1[/* actions */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setActions: js.UndefOr[js.Function1[/* actions */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of enableBuffer
       * @param enableBuffer Number/Boolean The new value.
       */
-    var setEnableBuffer: js.UndefOr[js.Function1[/* enableBuffer */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setEnableBuffer: js.UndefOr[js.Function1[/* enableBuffer */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of enableUrlEncode
       * @param enableUrlEncode String The new value.
@@ -659,7 +659,7 @@ object direct {
     /** [Method] Sets the value of namespace
       * @param namespace String/Object The new value.
       */
-    var setNamespace: js.UndefOr[js.Function1[/* namespace */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setNamespace: js.UndefOr[js.Function1[/* namespace */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of timeout
       * @param timeout Number The new value.
@@ -686,11 +686,11 @@ object direct {
     
     extension [Self <: IRemotingProvider](x: Self) {
       
-      inline def setActions(value: js.Any): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: Any): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
       inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
       
-      inline def setEnableBuffer(value: js.Any): Self = StObject.set(x, "enableBuffer", value.asInstanceOf[js.Any])
+      inline def setEnableBuffer(value: Any): Self = StObject.set(x, "enableBuffer", value.asInstanceOf[js.Any])
       
       inline def setEnableBufferUndefined: Self = StObject.set(x, "enableBuffer", js.undefined)
       
@@ -698,11 +698,11 @@ object direct {
       
       inline def setEnableUrlEncodeUndefined: Self = StObject.set(x, "enableUrlEncode", js.undefined)
       
-      inline def setGetActions(value: () => js.Any): Self = StObject.set(x, "getActions", js.Any.fromFunction0(value))
+      inline def setGetActions(value: () => Any): Self = StObject.set(x, "getActions", js.Any.fromFunction0(value))
       
       inline def setGetActionsUndefined: Self = StObject.set(x, "getActions", js.undefined)
       
-      inline def setGetEnableBuffer(value: () => js.Any): Self = StObject.set(x, "getEnableBuffer", js.Any.fromFunction0(value))
+      inline def setGetEnableBuffer(value: () => Any): Self = StObject.set(x, "getEnableBuffer", js.Any.fromFunction0(value))
       
       inline def setGetEnableBufferUndefined: Self = StObject.set(x, "getEnableBuffer", js.undefined)
       
@@ -714,7 +714,7 @@ object direct {
       
       inline def setGetMaxRetriesUndefined: Self = StObject.set(x, "getMaxRetries", js.undefined)
       
-      inline def setGetNamespace(value: () => js.Any): Self = StObject.set(x, "getNamespace", js.Any.fromFunction0(value))
+      inline def setGetNamespace(value: () => Any): Self = StObject.set(x, "getNamespace", js.Any.fromFunction0(value))
       
       inline def setGetNamespaceUndefined: Self = StObject.set(x, "getNamespace", js.undefined)
       
@@ -730,15 +730,15 @@ object direct {
       
       inline def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
       
-      inline def setNamespace(value: js.Any): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: Any): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
       inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
       
-      inline def setSetActions(value: /* actions */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setActions", js.Any.fromFunction1(value))
+      inline def setSetActions(value: /* actions */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setActions", js.Any.fromFunction1(value))
       
       inline def setSetActionsUndefined: Self = StObject.set(x, "setActions", js.undefined)
       
-      inline def setSetEnableBuffer(value: /* enableBuffer */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setEnableBuffer", js.Any.fromFunction1(value))
+      inline def setSetEnableBuffer(value: /* enableBuffer */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setEnableBuffer", js.Any.fromFunction1(value))
       
       inline def setSetEnableBufferUndefined: Self = StObject.set(x, "setEnableBuffer", js.undefined)
       
@@ -750,7 +750,7 @@ object direct {
       
       inline def setSetMaxRetriesUndefined: Self = StObject.set(x, "setMaxRetries", js.undefined)
       
-      inline def setSetNamespace(value: /* namespace */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setNamespace", js.Any.fromFunction1(value))
+      inline def setSetNamespace(value: /* namespace */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setNamespace", js.Any.fromFunction1(value))
       
       inline def setSetNamespaceUndefined: Self = StObject.set(x, "setNamespace", js.undefined)
       
@@ -779,42 +779,42 @@ object direct {
     /** [Method] Returns the value of action
       * @returns Object
       */
-    var getAction: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getAction: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of args
       * @returns Object
       */
-    var getArgs: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getArgs: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of callback
       * @returns Object
       */
-    var getCallback: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getCallback: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of data
       * @returns Object
       */
-    var getData: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getData: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of form
       * @returns Object
       */
-    var getForm: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getForm: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of id
       * @returns Object
       */
-    var getId: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getId: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of method
       * @returns Object
       */
-    var getMethod: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getMethod: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of provider
       * @returns Object
       */
-    var getProvider: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getProvider: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of retryCount
       * @returns Number
@@ -824,42 +824,42 @@ object direct {
     /** [Method] Sets the value of action
       * @param action Object The new value.
       */
-    var setAction: js.UndefOr[js.Function1[/* action */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setAction: js.UndefOr[js.Function1[/* action */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of args
       * @param args Object The new value.
       */
-    var setArgs: js.UndefOr[js.Function1[/* args */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setArgs: js.UndefOr[js.Function1[/* args */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of callback
       * @param callback Object The new value.
       */
-    var setCallback: js.UndefOr[js.Function1[/* callback */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setCallback: js.UndefOr[js.Function1[/* callback */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of data
       * @param data Object The new value.
       */
-    var setData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setData: js.UndefOr[js.Function1[/* data */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of form
       * @param form Object The new value.
       */
-    var setForm: js.UndefOr[js.Function1[/* form */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setForm: js.UndefOr[js.Function1[/* form */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of id
       * @param id Object The new value.
       */
-    var setId: js.UndefOr[js.Function1[/* id */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setId: js.UndefOr[js.Function1[/* id */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of method
       * @param method Object The new value.
       */
-    var setMethod: js.UndefOr[js.Function1[/* method */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setMethod: js.UndefOr[js.Function1[/* method */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of provider
       * @param provider Object The new value.
       */
-    var setProvider: js.UndefOr[js.Function1[/* provider */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setProvider: js.UndefOr[js.Function1[/* provider */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of retryCount
       * @param retryCount Number The new value.
@@ -875,35 +875,35 @@ object direct {
     
     extension [Self <: ITransaction](x: Self) {
       
-      inline def setGetAction(value: () => js.Any): Self = StObject.set(x, "getAction", js.Any.fromFunction0(value))
+      inline def setGetAction(value: () => Any): Self = StObject.set(x, "getAction", js.Any.fromFunction0(value))
       
       inline def setGetActionUndefined: Self = StObject.set(x, "getAction", js.undefined)
       
-      inline def setGetArgs(value: () => js.Any): Self = StObject.set(x, "getArgs", js.Any.fromFunction0(value))
+      inline def setGetArgs(value: () => Any): Self = StObject.set(x, "getArgs", js.Any.fromFunction0(value))
       
       inline def setGetArgsUndefined: Self = StObject.set(x, "getArgs", js.undefined)
       
-      inline def setGetCallback(value: () => js.Any): Self = StObject.set(x, "getCallback", js.Any.fromFunction0(value))
+      inline def setGetCallback(value: () => Any): Self = StObject.set(x, "getCallback", js.Any.fromFunction0(value))
       
       inline def setGetCallbackUndefined: Self = StObject.set(x, "getCallback", js.undefined)
       
-      inline def setGetData(value: () => js.Any): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
+      inline def setGetData(value: () => Any): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
       
       inline def setGetDataUndefined: Self = StObject.set(x, "getData", js.undefined)
       
-      inline def setGetForm(value: () => js.Any): Self = StObject.set(x, "getForm", js.Any.fromFunction0(value))
+      inline def setGetForm(value: () => Any): Self = StObject.set(x, "getForm", js.Any.fromFunction0(value))
       
       inline def setGetFormUndefined: Self = StObject.set(x, "getForm", js.undefined)
       
-      inline def setGetId(value: () => js.Any): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+      inline def setGetId(value: () => Any): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
       
       inline def setGetIdUndefined: Self = StObject.set(x, "getId", js.undefined)
       
-      inline def setGetMethod(value: () => js.Any): Self = StObject.set(x, "getMethod", js.Any.fromFunction0(value))
+      inline def setGetMethod(value: () => Any): Self = StObject.set(x, "getMethod", js.Any.fromFunction0(value))
       
       inline def setGetMethodUndefined: Self = StObject.set(x, "getMethod", js.undefined)
       
-      inline def setGetProvider(value: () => js.Any): Self = StObject.set(x, "getProvider", js.Any.fromFunction0(value))
+      inline def setGetProvider(value: () => Any): Self = StObject.set(x, "getProvider", js.Any.fromFunction0(value))
       
       inline def setGetProviderUndefined: Self = StObject.set(x, "getProvider", js.undefined)
       
@@ -911,35 +911,35 @@ object direct {
       
       inline def setGetRetryCountUndefined: Self = StObject.set(x, "getRetryCount", js.undefined)
       
-      inline def setSetAction(value: /* action */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setAction", js.Any.fromFunction1(value))
+      inline def setSetAction(value: /* action */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setAction", js.Any.fromFunction1(value))
       
       inline def setSetActionUndefined: Self = StObject.set(x, "setAction", js.undefined)
       
-      inline def setSetArgs(value: /* args */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setArgs", js.Any.fromFunction1(value))
+      inline def setSetArgs(value: /* args */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setArgs", js.Any.fromFunction1(value))
       
       inline def setSetArgsUndefined: Self = StObject.set(x, "setArgs", js.undefined)
       
-      inline def setSetCallback(value: /* callback */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setCallback", js.Any.fromFunction1(value))
+      inline def setSetCallback(value: /* callback */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setCallback", js.Any.fromFunction1(value))
       
       inline def setSetCallbackUndefined: Self = StObject.set(x, "setCallback", js.undefined)
       
-      inline def setSetData(value: /* data */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
+      inline def setSetData(value: /* data */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction1(value))
       
       inline def setSetDataUndefined: Self = StObject.set(x, "setData", js.undefined)
       
-      inline def setSetForm(value: /* form */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setForm", js.Any.fromFunction1(value))
+      inline def setSetForm(value: /* form */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setForm", js.Any.fromFunction1(value))
       
       inline def setSetFormUndefined: Self = StObject.set(x, "setForm", js.undefined)
       
-      inline def setSetId(value: /* id */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setId", js.Any.fromFunction1(value))
+      inline def setSetId(value: /* id */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setId", js.Any.fromFunction1(value))
       
       inline def setSetIdUndefined: Self = StObject.set(x, "setId", js.undefined)
       
-      inline def setSetMethod(value: /* method */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setMethod", js.Any.fromFunction1(value))
+      inline def setSetMethod(value: /* method */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setMethod", js.Any.fromFunction1(value))
       
       inline def setSetMethodUndefined: Self = StObject.set(x, "setMethod", js.undefined)
       
-      inline def setSetProvider(value: /* provider */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setProvider", js.Any.fromFunction1(value))
+      inline def setSetProvider(value: /* provider */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setProvider", js.Any.fromFunction1(value))
       
       inline def setSetProviderUndefined: Self = StObject.set(x, "setProvider", js.undefined)
       

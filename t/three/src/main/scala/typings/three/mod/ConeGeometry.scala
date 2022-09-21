@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("three", "ConeGeometry")
 @js.native
-class ConeGeometry protected ()
-  extends typings.three.geometriesMod.ConeGeometry {
+open class ConeGeometry protected ()
+  extends typings.three.threeMod.ConeGeometry {
   /**
-  	 * @param [radius=1] — Radius of the cone base.
-  	 * @param [height=1] — Height of the cone.
-  	 * @param [radialSegments=8] — Number of segmented faces around the circumference of the cone.
-  	 * @param [heightSegments=1] — Number of rows of faces along the height of the cone.
-  	 * @param [openEnded=false] — A Boolean indicating whether the base of the cone is open or capped.
-  	 * @param [thetaStart=0]
-  	 * @param [thetaLength=Math.PI * 2]
-  	 */
+    * @param [radius=1] — Radius of the cone base.
+    * @param [height=1] — Height of the cone.
+    * @param [radialSegments=8] — Number of segmented faces around the circumference of the cone.
+    * @param [heightSegments=1] — Number of rows of faces along the height of the cone.
+    * @param [openEnded=false] — A Boolean indicating whether the base of the cone is open or capped.
+    * @param [thetaStart=0]
+    * @param [thetaLength=Math.PI * 2]
+    */
   def this(
     radius: js.UndefOr[Double],
     height: js.UndefOr[Double],
@@ -26,4 +26,13 @@ class ConeGeometry protected ()
     thetaStart: js.UndefOr[Double],
     thetaLength: js.UndefOr[Double]
   ) = this()
+}
+/* static members */
+object ConeGeometry {
+  
+  @JSImport("three", "ConeGeometry")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def fromJSON(data: Any): typings.three.coneGeometryMod.ConeGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.coneGeometryMod.ConeGeometry]
 }

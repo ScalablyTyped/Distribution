@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Method[Holder /* <: Members[Holder] */] extends StObject {
   
-  def apply(params: js.Any*): js.Any = js.native
+  def apply(params: Any*): Any = js.native
   
   /**
     * Method argument types.
@@ -19,7 +19,7 @@ trait Method[Holder /* <: Members[Holder] */] extends StObject {
   /**
     * Queries whether the method may be invoked with a given argument list.
     */
-  def canInvokeWith(args: js.Any*): Boolean = js.native
+  def canInvokeWith(args: Any*): Boolean = js.native
   
   /**
     * Makes a new method wrapper with custom NativeFunction options.

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Gitana.Queue")
 @js.native
-class Queue protected ()
+open class Queue protected ()
   extends typings.gitana.mod.Queue {
-  def this(concurrency: js.Any) = this()
+  def this(concurrency: Any) = this()
 }

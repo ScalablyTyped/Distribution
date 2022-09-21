@@ -29,6 +29,6 @@ object NamedRanges {
     
     inline def setNamedRangesUndefined: Self = StObject.set(x, "namedRanges", js.undefined)
     
-    inline def setNamedRangesVarargs(value: NamedRange*): Self = StObject.set(x, "namedRanges", js.Array(value :_*))
+    inline def setNamedRangesVarargs(value: NamedRange*): Self = StObject.set(x, "namedRanges", js.Array(value*))
   }
 }

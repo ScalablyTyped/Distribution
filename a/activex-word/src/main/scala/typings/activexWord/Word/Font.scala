@@ -78,7 +78,7 @@ trait Font extends StObject {
   
   var Outline: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Position: Double
   
@@ -163,7 +163,7 @@ object Font {
     NumberForm: WdNumberForm,
     NumberSpacing: WdNumberSpacing,
     Outline: Double,
-    Parent: js.Any,
+    Parent: Any,
     Position: Double,
     Reflection: ReflectionFormat,
     Reset: () => Unit,
@@ -264,7 +264,7 @@ object Font {
     
     inline def setOutline(value: Double): Self = StObject.set(x, "Outline", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     

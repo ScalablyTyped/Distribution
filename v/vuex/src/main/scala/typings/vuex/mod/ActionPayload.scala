@@ -8,11 +8,11 @@ trait ActionPayload
   extends StObject
      with Payload {
   
-  var payload: js.Any
+  var payload: Any
 }
 object ActionPayload {
   
-  inline def apply(payload: js.Any, `type`: String): ActionPayload = {
+  inline def apply(payload: Any, `type`: String): ActionPayload = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionPayload]
@@ -20,6 +20,6 @@ object ActionPayload {
   
   extension [Self <: ActionPayload](x: Self) {
     
-    inline def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
   }
 }

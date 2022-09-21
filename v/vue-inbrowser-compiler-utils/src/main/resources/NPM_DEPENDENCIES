@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "vue-inbrowser-compiler-utils" : "4.33.6"
+      "vue-inbrowser-compiler-utils" : "4.44.23"
     }
   ],
   "test-dependencies" : [
     {
-      "vue-inbrowser-compiler-utils" : "4.33.6"
+      "vue-inbrowser-compiler-utils" : "4.44.23"
     }
   ],
   "compile-devDependencies" : [

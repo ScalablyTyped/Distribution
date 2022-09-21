@@ -38,6 +38,6 @@ object XssMatchSet {
     
     inline def setXssMatchTuples(value: XssMatchTuples): Self = StObject.set(x, "XssMatchTuples", value.asInstanceOf[js.Any])
     
-    inline def setXssMatchTuplesVarargs(value: XssMatchTuple*): Self = StObject.set(x, "XssMatchTuples", js.Array(value :_*))
+    inline def setXssMatchTuplesVarargs(value: XssMatchTuple*): Self = StObject.set(x, "XssMatchTuples", js.Array(value*))
   }
 }

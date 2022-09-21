@@ -2,7 +2,6 @@ package typings.eventIterator
 
 import typings.eventIterator.anon.PartialEventIteratorOptio
 import typings.std.AsyncIterable
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,14 +10,14 @@ object eventIteratorMod {
   
   @JSImport("event-iterator/lib/event-iterator", JSImport.Default)
   @js.native
-  class default[T] protected () extends EventIterator[T] {
+  open class default[T] protected () extends EventIterator[T] {
     def this(listen: ListenHandler[T]) = this()
     def this(listen: ListenHandler[T], hasHighWaterMarkLowWaterMark: PartialEventIteratorOptio) = this()
   }
   
   @JSImport("event-iterator/lib/event-iterator", "EventIterator")
   @js.native
-  class EventIterator[T] protected ()
+  open class EventIterator[T] protected ()
     extends StObject
        with AsyncIterable[T] {
     def this(listen: ListenHandler[T]) = this()
@@ -75,7 +74,7 @@ object eventIteratorMod {
   
   trait Queue[T] extends StObject {
     
-    def fail(error: Error): Unit
+    def fail(error: js.Error): Unit
     
     def on[E /* <: QueueEvent */](
       event: E,
@@ -89,8 +88,8 @@ object eventIteratorMod {
   object Queue {
     
     inline def apply[T](
-      fail: Error => Unit,
-      on: (js.Any, /* import warning: importer.ImportType#apply Failed type conversion: event-iterator.event-iterator/lib/event-iterator.EventHandlers[E] */ js.Any) => Unit,
+      fail: js.Error => Unit,
+      on: (Any, /* import warning: importer.ImportType#apply Failed type conversion: event-iterator.event-iterator/lib/event-iterator.EventHandlers[E] */ js.Any) => Unit,
       push: T => Unit,
       stop: () => Unit
     ): Queue[T] = {
@@ -100,10 +99,10 @@ object eventIteratorMod {
     
     extension [Self <: Queue[?], T](x: Self & Queue[T]) {
       
-      inline def setFail(value: Error => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
+      inline def setFail(value: js.Error => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
       
       inline def setOn(
-        value: (js.Any, /* import warning: importer.ImportType#apply Failed type conversion: event-iterator.event-iterator/lib/event-iterator.EventHandlers[E] */ js.Any) => Unit
+        value: (Any, /* import warning: importer.ImportType#apply Failed type conversion: event-iterator.event-iterator/lib/event-iterator.EventHandlers[E] */ js.Any) => Unit
       ): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
       
       inline def setPush(value: T => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))

@@ -23,6 +23,16 @@ trait PaymentDataRequestUpdate extends StObject {
   var error: js.UndefOr[PaymentDataError] = js.undefined
   
   /**
+    * Contains the updated offer information. All fields in OfferInfo are
+    * allowed in the update.
+    *
+    * If this field is present it should be the full list of offer info
+    * instead of a delta of any earlier version. Note: This field is
+    * currently only for web only.
+    */
+  var newOfferInfo: js.UndefOr[OfferInfo] = js.undefined
+  
+  /**
     * Contains updated shipping option parameters. All fields in
     * ShippingOptionParameters are allowed in the update.
     *
@@ -52,6 +62,10 @@ object PaymentDataRequestUpdate {
     inline def setError(value: PaymentDataError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    
+    inline def setNewOfferInfo(value: OfferInfo): Self = StObject.set(x, "newOfferInfo", value.asInstanceOf[js.Any])
+    
+    inline def setNewOfferInfoUndefined: Self = StObject.set(x, "newOfferInfo", js.undefined)
     
     inline def setNewShippingOptionParameters(value: ShippingOptionParameters): Self = StObject.set(x, "newShippingOptionParameters", value.asInstanceOf[js.Any])
     

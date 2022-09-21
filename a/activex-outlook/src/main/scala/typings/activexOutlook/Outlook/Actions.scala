@@ -14,12 +14,12 @@ trait Actions extends StObject {
   
   val Count: Double
   
-  def Item(Index: js.Any): Action
+  def Item(Index: Any): Action
   
   /* private */ @JSName("Outlook.Actions_typekey")
   var OutlookDotActions_typekey: Actions
   
-  val Parent: js.Any
+  val Parent: Any
   
   def Remove(Index: Double): Unit
   
@@ -32,9 +32,9 @@ object Actions {
     Application: Application,
     Class: OlObjectClass,
     Count: Double,
-    Item: js.Any => Action,
+    Item: Any => Action,
     OutlookDotActions_typekey: Actions,
-    Parent: js.Any,
+    Parent: Any,
     Remove: Double => Unit,
     Session: NameSpace
   ): Actions = {
@@ -53,11 +53,11 @@ object Actions {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => Action): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => Action): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
     inline def setOutlookDotActions_typekey(value: Actions): Self = StObject.set(x, "Outlook.Actions_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRemove(value: Double => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
     

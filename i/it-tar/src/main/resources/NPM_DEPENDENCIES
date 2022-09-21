@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "it-tar" : "6.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "it-tar" : "6.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

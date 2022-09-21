@@ -27,7 +27,7 @@ trait AuthOptions extends StObject {
   /**
     * A user-defined item of any type that is returned, unchanged, in the `asyncContext` property of the `AsyncResult` object that is passed to a callback.
     */
-  var asyncContext: js.UndefOr[js.Any] = js.undefined
+  var asyncContext: js.UndefOr[Any] = js.undefined
   
   /**
     * Causes Office to prompt the user to provide the additional factor when the tenancy being targeted by Microsoft Graph requires multifactor
@@ -40,13 +40,21 @@ trait AuthOptions extends StObject {
   
   /**
     * Causes Office to return a descriptive error when the add-in wants to access Microsoft Graph and the user/admin has not granted consent to Graph scopes. Default value is `false`.
-    * Office only supports consent to Graph scopes when the add-in has been deployed by a tenant admin. This information will not be available during development.
+    * Office only supports consent to Graph scopes when the add-in has been deployed by a tenant admin.
     * Setting this option to `true` will cause Office to inform your add-in beforehand (by returning a descriptive error) if Graph access will fail.
+    *
+    * @remarks
+    *
+    * **Note**: If you're developing an Outlook add-in that uses single sign-on (SSO), comment out the `forMSGraphAccess` option before sideloading the add-in for testing.
+    * Otherwise, you'll receive {@link https://learn.microsoft.com/office/dev/add-ins/develop/troubleshoot-sso-in-office-add-ins#13012 | error 13012}. For additional guidance, see
+    * {@link https://learn.microsoft.com/office/dev/add-ins/develop/authorize-to-microsoft-graph#details-on-sso-with-an-outlook-add-in | Details on SSO with an Outlook add-in}.
     */
   var forMSGraphAccess: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Prompts the user to add their Office account (or to switch to it, if it is already added). Default value is `false`.
+    *
+    * **Warning**: `forceAddAccount` has been deprecated. Use `allowSignInPrompt` instead.
     *
     * @deprecated Use `allowSignInPrompt` instead.
     */
@@ -55,6 +63,8 @@ trait AuthOptions extends StObject {
   /**
     * Causes Office to display the add-in consent experience. Useful if the add-in's Azure permissions have changed or if the user's consent has
     * been revoked. Default value is `false`.
+    *
+    * **Warning**: `forceConsent` has been deprecated. Use `allowConsentPrompt` instead.
     *
     * @deprecated Use `allowConsentPrompt` instead.
     */
@@ -77,7 +87,7 @@ object AuthOptions {
     
     inline def setAllowSignInPromptUndefined: Self = StObject.set(x, "allowSignInPrompt", js.undefined)
     
-    inline def setAsyncContext(value: js.Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
+    inline def setAsyncContext(value: Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
     
     inline def setAsyncContextUndefined: Self = StObject.set(x, "asyncContext", js.undefined)
     

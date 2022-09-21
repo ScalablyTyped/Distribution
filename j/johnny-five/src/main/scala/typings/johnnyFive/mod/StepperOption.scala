@@ -8,7 +8,7 @@ trait StepperOption extends StObject {
   
   var direction: js.UndefOr[Double] = js.undefined
   
-  var pins: js.Any
+  var pins: Any
   
   var rpm: js.UndefOr[Double] = js.undefined
   
@@ -18,7 +18,7 @@ trait StepperOption extends StObject {
 }
 object StepperOption {
   
-  inline def apply(pins: js.Any, stepsPerRev: Double, `type`: Double): StepperOption = {
+  inline def apply(pins: Any, stepsPerRev: Double, `type`: Double): StepperOption = {
     val __obj = js.Dynamic.literal(pins = pins.asInstanceOf[js.Any], stepsPerRev = stepsPerRev.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[StepperOption]
@@ -30,7 +30,7 @@ object StepperOption {
     
     inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    inline def setPins(value: js.Any): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
+    inline def setPins(value: Any): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
     
     inline def setRpm(value: Double): Self = StObject.set(x, "rpm", value.asInstanceOf[js.Any])
     

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(a: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def apply(value: Any): /* is std.Record<string | symbol | number, unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Record<string | symbol | number, unknown> */ Boolean]
   
   @JSImport("is-object", JSImport.Namespace)
   @js.native

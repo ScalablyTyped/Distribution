@@ -4,17 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A mask that indicates which of the fields on the base TableRowStyle have
-  * been changed in this suggestion. For any field set to true, there is a new
-  * suggested value.
-  */
 trait SchemaTableRowStyleSuggestionState extends StObject {
   
   /**
     * Indicates if there was a suggested change to min_row_height.
     */
-  var minRowHeightSuggested: js.UndefOr[Boolean] = js.undefined
+  var minRowHeightSuggested: js.UndefOr[Boolean | Null] = js.undefined
 }
 object SchemaTableRowStyleSuggestionState {
   
@@ -26,6 +21,8 @@ object SchemaTableRowStyleSuggestionState {
   extension [Self <: SchemaTableRowStyleSuggestionState](x: Self) {
     
     inline def setMinRowHeightSuggested(value: Boolean): Self = StObject.set(x, "minRowHeightSuggested", value.asInstanceOf[js.Any])
+    
+    inline def setMinRowHeightSuggestedNull: Self = StObject.set(x, "minRowHeightSuggested", null)
     
     inline def setMinRowHeightSuggestedUndefined: Self = StObject.set(x, "minRowHeightSuggested", js.undefined)
   }

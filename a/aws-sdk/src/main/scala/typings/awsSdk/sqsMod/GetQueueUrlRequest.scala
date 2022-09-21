@@ -12,7 +12,7 @@ trait GetQueueUrlRequest extends StObject {
   var QueueName: String
   
   /**
-    * The AWS account ID of the account that created the queue.
+    * The Amazon Web Services account ID of the account that created the queue.
     */
   var QueueOwnerAWSAccountId: js.UndefOr[String] = js.undefined
 }

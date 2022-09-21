@@ -7,7 +7,6 @@ import typings.gulpTypescript.outputMod.Output
 import typings.gulpTypescript.reporterMod.Reporter
 import typings.gulpTypescript.typesMod.FinalTransformers
 import typings.gulpTypescript.typesMod.TsConfig
-import typings.node.NodeJS.ReadWriteStream
 import typings.node.streamMod.Readable
 import typings.typescript.mod.CompilerOptions
 import typings.typescript.mod.ProjectReference
@@ -24,7 +23,7 @@ object projectMod {
   inline def setupProject(
     projectDirectory: String,
     configFileName: String,
-    rawConfig: js.Any,
+    rawConfig: Any,
     config: TsConfig,
     options: CompilerOptions,
     projectReferences: js.Array[ProjectReference],
@@ -32,15 +31,28 @@ object projectMod {
     finalTransformers: FinalTransformers
   ): Project = (^.asInstanceOf[js.Dynamic].applyDynamic("setupProject")(projectDirectory.asInstanceOf[js.Any], configFileName.asInstanceOf[js.Any], rawConfig.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any], projectReferences.asInstanceOf[js.Any], typescript.asInstanceOf[js.Any], finalTransformers.asInstanceOf[js.Any])).asInstanceOf[Project]
   
-  @js.native
-  trait ICompileStream
-    extends StObject
-       with ReadWriteStream {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream * / any */ trait ICompileStream extends StObject {
     
-    var dts: Readable = js.native
+    var dts: Readable
     
     @JSName("js")
-    var js_ : Readable = js.native
+    var js_ : Readable
+  }
+  object ICompileStream {
+    
+    inline def apply(dts: Readable, js_ : Readable): ICompileStream = {
+      val __obj = js.Dynamic.literal(dts = dts.asInstanceOf[js.Any])
+      __obj.updateDynamic("js")(js_.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ICompileStream]
+    }
+    
+    extension [Self <: ICompileStream](x: Self) {
+      
+      inline def setDts(value: Readable): Self = StObject.set(x, "dts", value.asInstanceOf[js.Any])
+      
+      inline def setJs_(value: Readable): Self = StObject.set(x, "js", value.asInstanceOf[js.Any])
+    }
   }
   
   @js.native
@@ -59,9 +71,9 @@ object projectMod {
     
     val projectReferences: js.UndefOr[js.Array[ProjectReference]] = js.native
     
-    val rawConfig: js.Any = js.native
+    val rawConfig: Any = js.native
     
-    def src(): ReadWriteStream = js.native
+    def src(): Any = js.native
     
     val typescript: js.UndefOr[Typeofts] = js.native
   }
@@ -117,7 +129,7 @@ object projectMod {
       
       inline def setProjectReferences(value: js.Array[ProjectReference]): Self = StObject.set(x, "projectReferences", value.asInstanceOf[js.Any])
       
-      inline def setProjectReferencesVarargs(value: ProjectReference*): Self = StObject.set(x, "projectReferences", js.Array(value :_*))
+      inline def setProjectReferencesVarargs(value: ProjectReference*): Self = StObject.set(x, "projectReferences", js.Array(value*))
       
       inline def setReporter(value: Reporter): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
       

@@ -25,7 +25,7 @@ object GoogleCloudVideointelligenceV1beta2PersonDetectionAnnotation {
     
     inline def setTracksUndefined: Self = StObject.set(x, "tracks", js.undefined)
     
-    inline def setTracksVarargs(value: GoogleCloudVideointelligenceV1beta2Track*): Self = StObject.set(x, "tracks", js.Array(value :_*))
+    inline def setTracksVarargs(value: GoogleCloudVideointelligenceV1beta2Track*): Self = StObject.set(x, "tracks", js.Array(value*))
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     

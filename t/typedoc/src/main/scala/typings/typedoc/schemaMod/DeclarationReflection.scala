@@ -1,105 +1,76 @@
 package typings.typedoc.schemaMod
 
-import typings.typedoc.abstractMod.ReflectionKind
-import typings.typedoc.serializersMod.DecoratorWrapper
-import typings.typedoc.serializersMod.SourceReferenceWrapper
+import typings.typedoc.kindMod.ReflectionKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.ContainerReflection */
-/* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.S<typedoc.typedoc/dist/lib/models.DeclarationReflection, 'type' | 'defaultValue' | 'overwrites' | 'inheritedFrom' | 'extendedTypes' | 'extendedBy' | 'implementedTypes' | 'implementedBy' | 'implementationOf'> */
+/* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.S<typedoc.typedoc/dist/lib/models.DeclarationReflection, 'type' | 'signatures' | 'indexSignature' | 'defaultValue' | 'overwrites' | 'inheritedFrom' | 'implementationOf' | 'extendedTypes' | 'extendedBy' | 'implementedTypes' | 'implementedBy' | 'getSignature' | 'setSignature' | 'typeParameters'> */
 trait DeclarationReflection
   extends StObject
-     with __ModelToObject[js.Any] {
+     with __ModelToObject[Any] {
   
-  var categories: js.UndefOr[
-    ModelToObject[js.UndefOr[js.Array[typings.typedoc.reflectionCategoryMod.ReflectionCategory]]] | js.Array[typings.typedoc.reflectionCategoryMod.ReflectionCategory]
-  ] = js.undefined
+  var categories: ToSerialized[js.UndefOr[js.Array[typings.typedoc.reflectionCategoryMod.ReflectionCategory]]]
   
-  var children: js.UndefOr[js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]] = js.undefined
+  var children: ToSerialized[js.UndefOr[js.Array[typings.typedoc.declarationMod.DeclarationReflection]]]
   
-  var comment: js.UndefOr[
-    ModelToObject[js.UndefOr[typings.typedoc.commentsCommentMod.Comment]] | typings.typedoc.commentsCommentMod.Comment
-  ] = js.undefined
+  var comment: ToSerialized[js.UndefOr[typings.typedoc.commentMod.Comment]]
   
-  var decorates: js.UndefOr[
-    ModelToObject[js.UndefOr[js.Array[typings.typedoc.modelsTypesMod.Type]]] | js.Array[typings.typedoc.modelsTypesMod.Type]
-  ] = js.undefined
+  var defaultValue: ToSerialized[js.UndefOr[String]]
   
-  var decorators: js.UndefOr[ModelToObject[js.Array[DecoratorWrapper]]] = js.undefined
+  var extendedBy: ToSerialized[js.UndefOr[js.Array[typings.typedoc.modelsTypesMod.ReferenceType]]]
   
-  var defaultValue: js.UndefOr[ModelToObject[js.UndefOr[String]] | String] = js.undefined
-  
-  var extendedBy: js.UndefOr[
-    ModelToObject[js.UndefOr[js.Array[typings.typedoc.modelsTypesMod.Type]]] | js.Array[typings.typedoc.modelsTypesMod.Type]
-  ] = js.undefined
-  
-  var extendedTypes: js.UndefOr[
-    ModelToObject[js.UndefOr[js.Array[typings.typedoc.modelsTypesMod.Type]]] | js.Array[typings.typedoc.modelsTypesMod.Type]
-  ] = js.undefined
+  var extendedTypes: ToSerialized[js.UndefOr[js.Array[typings.typedoc.modelsTypesMod.SomeType]]]
   
   var flags: ReflectionFlags
   
-  var getSignature: js.UndefOr[js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]] = js.undefined
+  var getSignature: ToSerialized[js.UndefOr[typings.typedoc.reflectionsSignatureMod.SignatureReflection]]
   
-  var groups: js.UndefOr[
-    ModelToObject[js.UndefOr[js.Array[typings.typedoc.reflectionGroupMod.ReflectionGroup]]] | js.Array[typings.typedoc.reflectionGroupMod.ReflectionGroup]
-  ] = js.undefined
+  var groups: ToSerialized[js.UndefOr[js.Array[typings.typedoc.reflectionGroupMod.ReflectionGroup]]]
   
-  var id: ModelToObject[Double] | Double
+  var id: ToSerialized[Double]
   
-  var implementationOf: js.UndefOr[
-    ModelToObject[js.UndefOr[typings.typedoc.modelsTypesMod.Type]] | typings.typedoc.modelsTypesMod.Type
-  ] = js.undefined
+  var implementationOf: ToSerialized[js.UndefOr[typings.typedoc.modelsTypesMod.ReferenceType]]
   
-  var implementedBy: js.UndefOr[
-    ModelToObject[js.UndefOr[js.Array[typings.typedoc.modelsTypesMod.Type]]] | js.Array[typings.typedoc.modelsTypesMod.Type]
-  ] = js.undefined
+  var implementedBy: ToSerialized[js.UndefOr[js.Array[typings.typedoc.modelsTypesMod.ReferenceType]]]
   
-  var implementedTypes: js.UndefOr[
-    ModelToObject[js.UndefOr[js.Array[typings.typedoc.modelsTypesMod.Type]]] | js.Array[typings.typedoc.modelsTypesMod.Type]
-  ] = js.undefined
+  var implementedTypes: ToSerialized[js.UndefOr[js.Array[typings.typedoc.modelsTypesMod.SomeType]]]
   
-  var indexSignature: js.UndefOr[js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]] = js.undefined
+  var indexSignature: ToSerialized[js.UndefOr[typings.typedoc.reflectionsSignatureMod.SignatureReflection]]
   
-  var inheritedFrom: js.UndefOr[
-    ModelToObject[js.UndefOr[typings.typedoc.modelsTypesMod.Type]] | typings.typedoc.modelsTypesMod.Type
-  ] = js.undefined
+  var inheritedFrom: ToSerialized[js.UndefOr[typings.typedoc.modelsTypesMod.ReferenceType]]
   
-  var kind: ModelToObject[ReflectionKind] | ReflectionKind
+  var kind: ToSerialized[ReflectionKind]
   
-  var kindString: js.UndefOr[ModelToObject[js.UndefOr[String]] | String] = js.undefined
+  var kindString: ToSerialized[js.UndefOr[String]]
   
-  var name: ModelToObject[String] | String
+  var name: ToSerialized[String]
   
+  /** Will not be present if name === originalName */
   var originalName: js.UndefOr[String] = js.undefined
   
-  var overwrites: js.UndefOr[
-    ModelToObject[js.UndefOr[typings.typedoc.modelsTypesMod.Type]] | typings.typedoc.modelsTypesMod.Type
-  ] = js.undefined
+  var overwrites: ToSerialized[js.UndefOr[typings.typedoc.modelsTypesMod.ReferenceType]]
   
-  var parameters: js.UndefOr[js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]] = js.undefined
+  var setSignature: ToSerialized[js.UndefOr[typings.typedoc.reflectionsSignatureMod.SignatureReflection]]
   
-  var setSignature: js.UndefOr[js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]] = js.undefined
+  var signatures: ToSerialized[
+    js.UndefOr[js.Array[typings.typedoc.reflectionsSignatureMod.SignatureReflection]]
+  ]
   
-  var signatures: js.UndefOr[js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]] = js.undefined
+  var sources: ToSerialized[js.UndefOr[js.Array[typings.typedoc.fileMod.SourceReference]]]
   
-  var sources: js.UndefOr[ModelToObject[js.Array[SourceReferenceWrapper]]] = js.undefined
+  var `type`: ToSerialized[js.UndefOr[typings.typedoc.modelsTypesMod.SomeType]]
   
-  var `type`: js.UndefOr[
-    ModelToObject[js.UndefOr[typings.typedoc.modelsTypesMod.Type]] | typings.typedoc.modelsTypesMod.Type
-  ] = js.undefined
-  
-  var typeParameter: js.UndefOr[js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]] = js.undefined
+  var typeParameters: ToSerialized[js.UndefOr[js.Array[typings.typedoc.typeParameterMod.TypeParameterReflection]]]
 }
 object DeclarationReflection {
   
   inline def apply(
     flags: ReflectionFlags,
-    id: ModelToObject[Double] | Double,
-    kind: ModelToObject[ReflectionKind] | ReflectionKind,
-    name: ModelToObject[String] | String
+    id: ToSerialized[Double],
+    kind: ToSerialized[ReflectionKind],
+    name: ToSerialized[String]
   ): DeclarationReflection = {
     val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeclarationReflection]
@@ -108,183 +79,149 @@ object DeclarationReflection {
   extension [Self <: DeclarationReflection](x: Self) {
     
     inline def setCategories(
-      value: ModelToObject[js.UndefOr[js.Array[typings.typedoc.reflectionCategoryMod.ReflectionCategory]]] | js.Array[typings.typedoc.reflectionCategoryMod.ReflectionCategory]
+      value: ToSerialized[js.UndefOr[js.Array[typings.typedoc.reflectionCategoryMod.ReflectionCategory]]]
     ): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
     inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    inline def setCategoriesVarargs(value: (typings.typedoc.reflectionCategoryMod.ReflectionCategory | _ModelToObject[js.Any])*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: (typings.typedoc.reflectionCategoryMod.ReflectionCategory | _ModelToObject[Any])*): Self = StObject.set(x, "categories", js.Array(value*))
     
-    inline def setChildren(value: js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ToSerialized[js.UndefOr[js.Array[typings.typedoc.declarationMod.DeclarationReflection]]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setChildrenVarargs(value: ModelToObject[typings.typedoc.modelsMod.Reflection]*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: (typings.typedoc.declarationMod.DeclarationReflection | _ModelToObject[Any])*): Self = StObject.set(x, "children", js.Array(value*))
     
-    inline def setComment(
-      value: ModelToObject[js.UndefOr[typings.typedoc.commentsCommentMod.Comment]] | typings.typedoc.commentsCommentMod.Comment
-    ): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: ToSerialized[js.UndefOr[typings.typedoc.commentMod.Comment]]): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
-    inline def setCommentVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "comment", js.Array(value :_*))
+    inline def setCommentVarargs(value: _ModelToObject[Any]*): Self = StObject.set(x, "comment", js.Array(value*))
     
-    inline def setDecorates(
-      value: ModelToObject[js.UndefOr[js.Array[typings.typedoc.modelsTypesMod.Type]]] | js.Array[typings.typedoc.modelsTypesMod.Type]
-    ): Self = StObject.set(x, "decorates", value.asInstanceOf[js.Any])
-    
-    inline def setDecoratesUndefined: Self = StObject.set(x, "decorates", js.undefined)
-    
-    inline def setDecoratesVarargs(value: (typings.typedoc.modelsTypesMod.Type | _ModelToObject[js.Any])*): Self = StObject.set(x, "decorates", js.Array(value :_*))
-    
-    inline def setDecorators(value: ModelToObject[js.Array[DecoratorWrapper]]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
-    
-    inline def setDecoratorsUndefined: Self = StObject.set(x, "decorators", js.undefined)
-    
-    inline def setDecoratorsVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "decorators", js.Array(value :_*))
-    
-    inline def setDefaultValue(value: ModelToObject[js.UndefOr[String]] | String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: ToSerialized[js.UndefOr[String]]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    inline def setDefaultValueVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+    inline def setDefaultValueVarargs(value: _ModelToObject[Any]*): Self = StObject.set(x, "defaultValue", js.Array(value*))
     
-    inline def setExtendedBy(
-      value: ModelToObject[js.UndefOr[js.Array[typings.typedoc.modelsTypesMod.Type]]] | js.Array[typings.typedoc.modelsTypesMod.Type]
-    ): Self = StObject.set(x, "extendedBy", value.asInstanceOf[js.Any])
+    inline def setExtendedBy(value: ToSerialized[js.UndefOr[js.Array[typings.typedoc.modelsTypesMod.ReferenceType]]]): Self = StObject.set(x, "extendedBy", value.asInstanceOf[js.Any])
     
     inline def setExtendedByUndefined: Self = StObject.set(x, "extendedBy", js.undefined)
     
-    inline def setExtendedByVarargs(value: (typings.typedoc.modelsTypesMod.Type | _ModelToObject[js.Any])*): Self = StObject.set(x, "extendedBy", js.Array(value :_*))
+    inline def setExtendedByVarargs(value: (typings.typedoc.modelsTypesMod.ReferenceType | _ModelToObject[Any])*): Self = StObject.set(x, "extendedBy", js.Array(value*))
     
-    inline def setExtendedTypes(
-      value: ModelToObject[js.UndefOr[js.Array[typings.typedoc.modelsTypesMod.Type]]] | js.Array[typings.typedoc.modelsTypesMod.Type]
-    ): Self = StObject.set(x, "extendedTypes", value.asInstanceOf[js.Any])
+    inline def setExtendedTypes(value: ToSerialized[js.UndefOr[js.Array[typings.typedoc.modelsTypesMod.SomeType]]]): Self = StObject.set(x, "extendedTypes", value.asInstanceOf[js.Any])
     
     inline def setExtendedTypesUndefined: Self = StObject.set(x, "extendedTypes", js.undefined)
     
-    inline def setExtendedTypesVarargs(value: (typings.typedoc.modelsTypesMod.Type | _ModelToObject[js.Any])*): Self = StObject.set(x, "extendedTypes", js.Array(value :_*))
+    inline def setExtendedTypesVarargs(value: (typings.typedoc.modelsTypesMod.SomeType | _ModelToObject[Any])*): Self = StObject.set(x, "extendedTypes", js.Array(value*))
     
     inline def setFlags(value: ReflectionFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    inline def setGetSignature(value: js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]): Self = StObject.set(x, "getSignature", value.asInstanceOf[js.Any])
+    inline def setGetSignature(value: ToSerialized[js.UndefOr[typings.typedoc.reflectionsSignatureMod.SignatureReflection]]): Self = StObject.set(x, "getSignature", value.asInstanceOf[js.Any])
     
     inline def setGetSignatureUndefined: Self = StObject.set(x, "getSignature", js.undefined)
     
-    inline def setGetSignatureVarargs(value: ModelToObject[typings.typedoc.modelsMod.Reflection]*): Self = StObject.set(x, "getSignature", js.Array(value :_*))
+    inline def setGetSignatureVarargs(value: _ModelToObject[Any]*): Self = StObject.set(x, "getSignature", js.Array(value*))
     
-    inline def setGroups(
-      value: ModelToObject[js.UndefOr[js.Array[typings.typedoc.reflectionGroupMod.ReflectionGroup]]] | js.Array[typings.typedoc.reflectionGroupMod.ReflectionGroup]
-    ): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: ToSerialized[js.UndefOr[js.Array[typings.typedoc.reflectionGroupMod.ReflectionGroup]]]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
     inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
     
-    inline def setGroupsVarargs(value: (typings.typedoc.reflectionGroupMod.ReflectionGroup | _ModelToObject[js.Any])*): Self = StObject.set(x, "groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: (typings.typedoc.reflectionGroupMod.ReflectionGroup | _ModelToObject[Any])*): Self = StObject.set(x, "groups", js.Array(value*))
     
-    inline def setId(value: ModelToObject[Double] | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: ToSerialized[Double]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setIdVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "id", js.Array(value :_*))
+    inline def setIdVarargs(value: _ModelToObject[Any]*): Self = StObject.set(x, "id", js.Array(value*))
     
-    inline def setImplementationOf(
-      value: ModelToObject[js.UndefOr[typings.typedoc.modelsTypesMod.Type]] | typings.typedoc.modelsTypesMod.Type
-    ): Self = StObject.set(x, "implementationOf", value.asInstanceOf[js.Any])
+    inline def setImplementationOf(value: ToSerialized[js.UndefOr[typings.typedoc.modelsTypesMod.ReferenceType]]): Self = StObject.set(x, "implementationOf", value.asInstanceOf[js.Any])
     
     inline def setImplementationOfUndefined: Self = StObject.set(x, "implementationOf", js.undefined)
     
-    inline def setImplementationOfVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "implementationOf", js.Array(value :_*))
+    inline def setImplementationOfVarargs(value: _ModelToObject[Any]*): Self = StObject.set(x, "implementationOf", js.Array(value*))
     
-    inline def setImplementedBy(
-      value: ModelToObject[js.UndefOr[js.Array[typings.typedoc.modelsTypesMod.Type]]] | js.Array[typings.typedoc.modelsTypesMod.Type]
-    ): Self = StObject.set(x, "implementedBy", value.asInstanceOf[js.Any])
+    inline def setImplementedBy(value: ToSerialized[js.UndefOr[js.Array[typings.typedoc.modelsTypesMod.ReferenceType]]]): Self = StObject.set(x, "implementedBy", value.asInstanceOf[js.Any])
     
     inline def setImplementedByUndefined: Self = StObject.set(x, "implementedBy", js.undefined)
     
-    inline def setImplementedByVarargs(value: (typings.typedoc.modelsTypesMod.Type | _ModelToObject[js.Any])*): Self = StObject.set(x, "implementedBy", js.Array(value :_*))
+    inline def setImplementedByVarargs(value: (typings.typedoc.modelsTypesMod.ReferenceType | _ModelToObject[Any])*): Self = StObject.set(x, "implementedBy", js.Array(value*))
     
-    inline def setImplementedTypes(
-      value: ModelToObject[js.UndefOr[js.Array[typings.typedoc.modelsTypesMod.Type]]] | js.Array[typings.typedoc.modelsTypesMod.Type]
-    ): Self = StObject.set(x, "implementedTypes", value.asInstanceOf[js.Any])
+    inline def setImplementedTypes(value: ToSerialized[js.UndefOr[js.Array[typings.typedoc.modelsTypesMod.SomeType]]]): Self = StObject.set(x, "implementedTypes", value.asInstanceOf[js.Any])
     
     inline def setImplementedTypesUndefined: Self = StObject.set(x, "implementedTypes", js.undefined)
     
-    inline def setImplementedTypesVarargs(value: (typings.typedoc.modelsTypesMod.Type | _ModelToObject[js.Any])*): Self = StObject.set(x, "implementedTypes", js.Array(value :_*))
+    inline def setImplementedTypesVarargs(value: (typings.typedoc.modelsTypesMod.SomeType | _ModelToObject[Any])*): Self = StObject.set(x, "implementedTypes", js.Array(value*))
     
-    inline def setIndexSignature(value: js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]): Self = StObject.set(x, "indexSignature", value.asInstanceOf[js.Any])
+    inline def setIndexSignature(value: ToSerialized[js.UndefOr[typings.typedoc.reflectionsSignatureMod.SignatureReflection]]): Self = StObject.set(x, "indexSignature", value.asInstanceOf[js.Any])
     
     inline def setIndexSignatureUndefined: Self = StObject.set(x, "indexSignature", js.undefined)
     
-    inline def setIndexSignatureVarargs(value: ModelToObject[typings.typedoc.modelsMod.Reflection]*): Self = StObject.set(x, "indexSignature", js.Array(value :_*))
+    inline def setIndexSignatureVarargs(value: _ModelToObject[Any]*): Self = StObject.set(x, "indexSignature", js.Array(value*))
     
-    inline def setInheritedFrom(
-      value: ModelToObject[js.UndefOr[typings.typedoc.modelsTypesMod.Type]] | typings.typedoc.modelsTypesMod.Type
-    ): Self = StObject.set(x, "inheritedFrom", value.asInstanceOf[js.Any])
+    inline def setInheritedFrom(value: ToSerialized[js.UndefOr[typings.typedoc.modelsTypesMod.ReferenceType]]): Self = StObject.set(x, "inheritedFrom", value.asInstanceOf[js.Any])
     
     inline def setInheritedFromUndefined: Self = StObject.set(x, "inheritedFrom", js.undefined)
     
-    inline def setInheritedFromVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "inheritedFrom", js.Array(value :_*))
+    inline def setInheritedFromVarargs(value: _ModelToObject[Any]*): Self = StObject.set(x, "inheritedFrom", js.Array(value*))
     
-    inline def setKind(value: ModelToObject[ReflectionKind] | ReflectionKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: ToSerialized[ReflectionKind]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    inline def setKindString(value: ModelToObject[js.UndefOr[String]] | String): Self = StObject.set(x, "kindString", value.asInstanceOf[js.Any])
+    inline def setKindString(value: ToSerialized[js.UndefOr[String]]): Self = StObject.set(x, "kindString", value.asInstanceOf[js.Any])
     
     inline def setKindStringUndefined: Self = StObject.set(x, "kindString", js.undefined)
     
-    inline def setKindStringVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "kindString", js.Array(value :_*))
+    inline def setKindStringVarargs(value: _ModelToObject[Any]*): Self = StObject.set(x, "kindString", js.Array(value*))
     
-    inline def setKindVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "kind", js.Array(value :_*))
+    inline def setKindVarargs(value: _ModelToObject[Any]*): Self = StObject.set(x, "kind", js.Array(value*))
     
-    inline def setName(value: ModelToObject[String] | String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ToSerialized[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setNameVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "name", js.Array(value :_*))
+    inline def setNameVarargs(value: _ModelToObject[Any]*): Self = StObject.set(x, "name", js.Array(value*))
     
     inline def setOriginalName(value: String): Self = StObject.set(x, "originalName", value.asInstanceOf[js.Any])
     
     inline def setOriginalNameUndefined: Self = StObject.set(x, "originalName", js.undefined)
     
-    inline def setOverwrites(
-      value: ModelToObject[js.UndefOr[typings.typedoc.modelsTypesMod.Type]] | typings.typedoc.modelsTypesMod.Type
-    ): Self = StObject.set(x, "overwrites", value.asInstanceOf[js.Any])
+    inline def setOverwrites(value: ToSerialized[js.UndefOr[typings.typedoc.modelsTypesMod.ReferenceType]]): Self = StObject.set(x, "overwrites", value.asInstanceOf[js.Any])
     
     inline def setOverwritesUndefined: Self = StObject.set(x, "overwrites", js.undefined)
     
-    inline def setOverwritesVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "overwrites", js.Array(value :_*))
+    inline def setOverwritesVarargs(value: _ModelToObject[Any]*): Self = StObject.set(x, "overwrites", js.Array(value*))
     
-    inline def setParameters(value: js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
-    
-    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
-    
-    inline def setParametersVarargs(value: ModelToObject[typings.typedoc.modelsMod.Reflection]*): Self = StObject.set(x, "parameters", js.Array(value :_*))
-    
-    inline def setSetSignature(value: js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]): Self = StObject.set(x, "setSignature", value.asInstanceOf[js.Any])
+    inline def setSetSignature(value: ToSerialized[js.UndefOr[typings.typedoc.reflectionsSignatureMod.SignatureReflection]]): Self = StObject.set(x, "setSignature", value.asInstanceOf[js.Any])
     
     inline def setSetSignatureUndefined: Self = StObject.set(x, "setSignature", js.undefined)
     
-    inline def setSetSignatureVarargs(value: ModelToObject[typings.typedoc.modelsMod.Reflection]*): Self = StObject.set(x, "setSignature", js.Array(value :_*))
+    inline def setSetSignatureVarargs(value: _ModelToObject[Any]*): Self = StObject.set(x, "setSignature", js.Array(value*))
     
-    inline def setSignatures(value: js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]): Self = StObject.set(x, "signatures", value.asInstanceOf[js.Any])
+    inline def setSignatures(
+      value: ToSerialized[
+          js.UndefOr[js.Array[typings.typedoc.reflectionsSignatureMod.SignatureReflection]]
+        ]
+    ): Self = StObject.set(x, "signatures", value.asInstanceOf[js.Any])
     
     inline def setSignaturesUndefined: Self = StObject.set(x, "signatures", js.undefined)
     
-    inline def setSignaturesVarargs(value: ModelToObject[typings.typedoc.modelsMod.Reflection]*): Self = StObject.set(x, "signatures", js.Array(value :_*))
+    inline def setSignaturesVarargs(value: (typings.typedoc.reflectionsSignatureMod.SignatureReflection | _ModelToObject[Any])*): Self = StObject.set(x, "signatures", js.Array(value*))
     
-    inline def setSources(value: ModelToObject[js.Array[SourceReferenceWrapper]]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
+    inline def setSources(value: ToSerialized[js.UndefOr[js.Array[typings.typedoc.fileMod.SourceReference]]]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
     inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
-    inline def setSourcesVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: (typings.typedoc.fileMod.SourceReference | _ModelToObject[Any])*): Self = StObject.set(x, "sources", js.Array(value*))
     
-    inline def setType(
-      value: ModelToObject[js.UndefOr[typings.typedoc.modelsTypesMod.Type]] | typings.typedoc.modelsTypesMod.Type
-    ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ToSerialized[js.UndefOr[typings.typedoc.modelsTypesMod.SomeType]]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setTypeParameter(value: js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]): Self = StObject.set(x, "typeParameter", value.asInstanceOf[js.Any])
+    inline def setTypeParameters(
+      value: ToSerialized[js.UndefOr[js.Array[typings.typedoc.typeParameterMod.TypeParameterReflection]]]
+    ): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     
-    inline def setTypeParameterUndefined: Self = StObject.set(x, "typeParameter", js.undefined)
+    inline def setTypeParametersUndefined: Self = StObject.set(x, "typeParameters", js.undefined)
     
-    inline def setTypeParameterVarargs(value: ModelToObject[typings.typedoc.modelsMod.Reflection]*): Self = StObject.set(x, "typeParameter", js.Array(value :_*))
+    inline def setTypeParametersVarargs(value: (typings.typedoc.typeParameterMod.TypeParameterReflection | _ModelToObject[Any])*): Self = StObject.set(x, "typeParameters", js.Array(value*))
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    inline def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: _ModelToObject[Any]*): Self = StObject.set(x, "type", js.Array(value*))
   }
 }

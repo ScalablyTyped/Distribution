@@ -1,10 +1,9 @@
 package typings.rusha
 
 import org.scalablytyped.runtime.Shortcut
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.rusha.rushaStrings.hex
 import typings.std.AddEventListenerOptions
-import typings.std.ArrayBuffer
 import typings.std.Blob
 import typings.std.EventListenerOptions
 import typings.std.EventListenerOrEventListenerObject
@@ -23,14 +22,14 @@ object mod extends Shortcut {
   @js.native
   trait Hash extends StObject {
     
-    def digest(encoding: Unit): ArrayBuffer = js.native
+    def digest(encoding: Unit): js.typedarray.ArrayBuffer = js.native
     @JSName("digest")
     def digest_hex(encoding: hex): String = js.native
     
     def update(value: String): Hash = js.native
     def update(value: js.Array[Double]): Hash = js.native
+    def update(value: js.typedarray.ArrayBuffer): Hash = js.native
     def update(value: Buffer): Hash = js.native
-    def update(value: ArrayBuffer): Hash = js.native
   }
   
   trait Rusha extends StObject {
@@ -64,11 +63,11 @@ object mod extends Shortcut {
        with Worker {
     
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
     
     @JSName("onmessage")
     var onmessage_RushaWorker: (js.ThisFunction1[/* this */ this.type, /* res */ MessageEvent[RushaWorkerResponse], Unit]) | Null = js.native
@@ -85,22 +84,22 @@ object mod extends Shortcut {
   
   trait RushaWorkerRequest extends StObject {
     
-    var data: String | js.Array[Double] | ArrayBuffer | Buffer | Blob
+    var data: String | js.Array[Double] | js.typedarray.ArrayBuffer | Buffer | Blob
     
     var id: String
   }
   object RushaWorkerRequest {
     
-    inline def apply(data: String | js.Array[Double] | ArrayBuffer | Buffer | Blob, id: String): RushaWorkerRequest = {
+    inline def apply(data: String | js.Array[Double] | js.typedarray.ArrayBuffer | Buffer | Blob, id: String): RushaWorkerRequest = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[RushaWorkerRequest]
     }
     
     extension [Self <: RushaWorkerRequest](x: Self) {
       
-      inline def setData(value: String | js.Array[Double] | ArrayBuffer | Buffer | Blob): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String | js.Array[Double] | js.typedarray.ArrayBuffer | Buffer | Blob): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: Double*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Double*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }

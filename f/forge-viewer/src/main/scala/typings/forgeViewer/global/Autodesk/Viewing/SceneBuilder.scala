@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Autodesk.Viewing.SceneBuilder")
 @js.native
-class SceneBuilder ()
+open class SceneBuilder ()
   extends StObject
      with typings.forgeViewer.Autodesk.Viewing.SceneBuilder

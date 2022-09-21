@@ -1,7 +1,7 @@
 
 # Scala.js typings for normalize-url
 
-Typings are for version 5.3.0
+Typings are for version 7.1.0
 
 ## Library description:
 Normalize a URL
@@ -10,10 +10,10 @@ Normalize a URL
 | ------------------ | :-------------: |
 | Full name          | normalize-url |
 | Keywords           | normalize, url, uri, address, string, normalization, normalisation, query, querystring, simplify, strip, trim, canonical |
-| # releases         | 11 |
-| # dependents       | 492 |
-| # downloads        | 1037098056 |
-| # stars            | 10 |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 1.31770449E8 |
+| # stars            | 712.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/normalize-url#readme)

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BillingAddress extends StObject {
   
-  var billingAddress: js.UndefOr[js.Any] = js.undefined
+  var billingAddress: js.UndefOr[Any] = js.undefined
   
   var cardholderName: js.UndefOr[String] = js.undefined
   
@@ -21,7 +21,7 @@ object BillingAddress {
   
   extension [Self <: BillingAddress](x: Self) {
     
-    inline def setBillingAddress(value: js.Any): Self = StObject.set(x, "billingAddress", value.asInstanceOf[js.Any])
+    inline def setBillingAddress(value: Any): Self = StObject.set(x, "billingAddress", value.asInstanceOf[js.Any])
     
     inline def setBillingAddressUndefined: Self = StObject.set(x, "billingAddress", js.undefined)
     

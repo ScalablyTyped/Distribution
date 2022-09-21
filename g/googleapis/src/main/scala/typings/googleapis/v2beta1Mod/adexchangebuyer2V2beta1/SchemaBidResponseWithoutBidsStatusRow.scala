@@ -4,16 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The number of impressions with the specified dimension values that were
-  * considered to have no applicable bids, as described by the specified
-  * status.
-  */
 trait SchemaBidResponseWithoutBidsStatusRow extends StObject {
   
   /**
-    * The number of impressions for which there was a bid response with the
-    * specified status.
+    * The number of impressions for which there was a bid response with the specified status.
     */
   var impressionCount: js.UndefOr[SchemaMetricValue] = js.undefined
   
@@ -23,10 +17,9 @@ trait SchemaBidResponseWithoutBidsStatusRow extends StObject {
   var rowDimensions: js.UndefOr[SchemaRowDimensions] = js.undefined
   
   /**
-    * The status specifying why the bid responses were considered to have no
-    * applicable bids.
+    * The status specifying why the bid responses were considered to have no applicable bids.
     */
-  var status: js.UndefOr[String] = js.undefined
+  var status: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaBidResponseWithoutBidsStatusRow {
   
@@ -46,6 +39,8 @@ object SchemaBidResponseWithoutBidsStatusRow {
     inline def setRowDimensionsUndefined: Self = StObject.set(x, "rowDimensions", js.undefined)
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
     
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }

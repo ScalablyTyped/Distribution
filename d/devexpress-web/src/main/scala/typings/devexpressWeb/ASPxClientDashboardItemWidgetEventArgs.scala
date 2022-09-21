@@ -14,7 +14,7 @@ trait ASPxClientDashboardItemWidgetEventArgs
   /**
     * Returns an underlying widget corresponding to the current dashboard item.
     */
-  def GetWidget(): js.Any
+  def GetWidget(): Any
   
   /**
     * Gets the component name of the dashboard item for which the event was raised.
@@ -23,14 +23,14 @@ trait ASPxClientDashboardItemWidgetEventArgs
 }
 object ASPxClientDashboardItemWidgetEventArgs {
   
-  inline def apply(GetWidget: () => js.Any, ItemName: String): ASPxClientDashboardItemWidgetEventArgs = {
+  inline def apply(GetWidget: () => Any, ItemName: String): ASPxClientDashboardItemWidgetEventArgs = {
     val __obj = js.Dynamic.literal(GetWidget = js.Any.fromFunction0(GetWidget), ItemName = ItemName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientDashboardItemWidgetEventArgs]
   }
   
   extension [Self <: ASPxClientDashboardItemWidgetEventArgs](x: Self) {
     
-    inline def setGetWidget(value: () => js.Any): Self = StObject.set(x, "GetWidget", js.Any.fromFunction0(value))
+    inline def setGetWidget(value: () => Any): Self = StObject.set(x, "GetWidget", js.Any.fromFunction0(value))
     
     inline def setItemName(value: String): Self = StObject.set(x, "ItemName", value.asInstanceOf[js.Any])
   }

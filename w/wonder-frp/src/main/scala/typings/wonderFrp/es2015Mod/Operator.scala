@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder-frp/dist/es2015", "Operator")
 @js.native
-class Operator ()
+open class Operator ()
   extends typings.wonderFrp.globalOperatorMod.Operator
 /* static members */
 object Operator {
@@ -15,10 +15,10 @@ object Operator {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createStream(subscribeFunc: js.Any): typings.wonderFrp.streamAnonymousStreamMod.AnonymousStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createStream")(subscribeFunc.asInstanceOf[js.Any]).asInstanceOf[typings.wonderFrp.streamAnonymousStreamMod.AnonymousStream]
+  inline def createStream(subscribeFunc: Any): typings.wonderFrp.streamAnonymousStreamMod.AnonymousStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createStream")(subscribeFunc.asInstanceOf[js.Any]).asInstanceOf[typings.wonderFrp.streamAnonymousStreamMod.AnonymousStream]
   
   inline def empty(): typings.wonderFrp.streamAnonymousStreamMod.AnonymousStream = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[typings.wonderFrp.streamAnonymousStreamMod.AnonymousStream]
   
-  inline def fromArray(array: js.Array[js.Any]): typings.wonderFrp.streamFromArrayStreamMod.FromArrayStream = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(array.asInstanceOf[js.Any]).asInstanceOf[typings.wonderFrp.streamFromArrayStreamMod.FromArrayStream]
-  inline def fromArray(array: js.Array[js.Any], scheduler: typings.wonderFrp.coreSchedulerMod.Scheduler): typings.wonderFrp.streamFromArrayStreamMod.FromArrayStream = (^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(array.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.streamFromArrayStreamMod.FromArrayStream]
+  inline def fromArray(array: js.Array[Any]): typings.wonderFrp.streamFromArrayStreamMod.FromArrayStream = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(array.asInstanceOf[js.Any]).asInstanceOf[typings.wonderFrp.streamFromArrayStreamMod.FromArrayStream]
+  inline def fromArray(array: js.Array[Any], scheduler: typings.wonderFrp.coreSchedulerMod.Scheduler): typings.wonderFrp.streamFromArrayStreamMod.FromArrayStream = (^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(array.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.streamFromArrayStreamMod.FromArrayStream]
 }

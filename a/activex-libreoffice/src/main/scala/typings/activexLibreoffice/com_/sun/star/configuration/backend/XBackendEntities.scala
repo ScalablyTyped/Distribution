@@ -75,7 +75,7 @@ object XBackendEntities {
     getAdminEntity: () => String,
     getOwnerEntity: () => String,
     isEqualEntity: (String, String) => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     supportsEntity: String => Boolean
   ): XBackendEntities = {

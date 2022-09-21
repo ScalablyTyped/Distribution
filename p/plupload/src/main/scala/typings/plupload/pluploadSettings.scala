@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait pluploadSettings extends StObject {
   
   /** Required Options */
-  var browse_button: js.Any
+  var browse_button: Any
   
   /** Chunk */
   var chunk_size: js.UndefOr[Double | String] = js.undefined
   
-  var container: js.UndefOr[js.Any] = js.undefined
+  var container: js.UndefOr[Any] = js.undefined
   
   /** Drag&Drop Files from the Desktop */
   var drop_element: js.UndefOr[String] = js.undefined
@@ -25,7 +25,7 @@ trait pluploadSettings extends StObject {
   var flash_swf_url: js.UndefOr[String] = js.undefined
   
   /** Control the request */
-  var headers: js.UndefOr[js.Any] = js.undefined
+  var headers: js.UndefOr[Any] = js.undefined
   
   /** Events */
   var init: js.UndefOr[pluploadEvents] = js.undefined
@@ -37,9 +37,9 @@ trait pluploadSettings extends StObject {
   
   var multipart: js.UndefOr[Boolean] = js.undefined
   
-  var multipart_params: js.UndefOr[js.Any] = js.undefined
+  var multipart_params: js.UndefOr[Any] = js.undefined
   
-  var required_features: js.UndefOr[String | js.Any] = js.undefined
+  var required_features: js.UndefOr[String | Any] = js.undefined
   
   /** Client-Side Image Resize */
   var resize: js.UndefOr[pluploadResize] = js.undefined
@@ -55,20 +55,20 @@ trait pluploadSettings extends StObject {
 }
 object pluploadSettings {
   
-  inline def apply(browse_button: js.Any, url: String): pluploadSettings = {
+  inline def apply(browse_button: Any, url: String): pluploadSettings = {
     val __obj = js.Dynamic.literal(browse_button = browse_button.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[pluploadSettings]
   }
   
   extension [Self <: pluploadSettings](x: Self) {
     
-    inline def setBrowse_button(value: js.Any): Self = StObject.set(x, "browse_button", value.asInstanceOf[js.Any])
+    inline def setBrowse_button(value: Any): Self = StObject.set(x, "browse_button", value.asInstanceOf[js.Any])
     
     inline def setChunk_size(value: Double | String): Self = StObject.set(x, "chunk_size", value.asInstanceOf[js.Any])
     
     inline def setChunk_sizeUndefined: Self = StObject.set(x, "chunk_size", js.undefined)
     
-    inline def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
@@ -88,7 +88,7 @@ object pluploadSettings {
     
     inline def setFlash_swf_urlUndefined: Self = StObject.set(x, "flash_swf_url", js.undefined)
     
-    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
@@ -108,11 +108,11 @@ object pluploadSettings {
     
     inline def setMultipartUndefined: Self = StObject.set(x, "multipart", js.undefined)
     
-    inline def setMultipart_params(value: js.Any): Self = StObject.set(x, "multipart_params", value.asInstanceOf[js.Any])
+    inline def setMultipart_params(value: Any): Self = StObject.set(x, "multipart_params", value.asInstanceOf[js.Any])
     
     inline def setMultipart_paramsUndefined: Self = StObject.set(x, "multipart_params", js.undefined)
     
-    inline def setRequired_features(value: String | js.Any): Self = StObject.set(x, "required_features", value.asInstanceOf[js.Any])
+    inline def setRequired_features(value: String | Any): Self = StObject.set(x, "required_features", value.asInstanceOf[js.Any])
     
     inline def setRequired_featuresUndefined: Self = StObject.set(x, "required_features", js.undefined)
     

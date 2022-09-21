@@ -2,7 +2,7 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FC
 import typings.semanticUiReact.semanticUiReactStrings.`very long`
 import typings.semanticUiReact.semanticUiReactStrings.`very short`
 import typings.semanticUiReact.semanticUiReactStrings.full
@@ -19,12 +19,12 @@ object placeholderLineMod extends Shortcut {
   @js.native
   val default: PlaceholderLineComponent = js.native
   
-  type PlaceholderLineComponent = StatelessComponent[PlaceholderLineProps]
+  type PlaceholderLineComponent = FC[PlaceholderLineProps]
   
   trait PlaceholderLineProps
     extends StObject
        with StrictPlaceholderLineProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object PlaceholderLineProps {
     
     inline def apply(): PlaceholderLineProps = {
@@ -36,7 +36,7 @@ object placeholderLineMod extends Shortcut {
   trait StrictPlaceholderLineProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Additional classes. */
     var className: js.UndefOr[String] = js.undefined
@@ -53,7 +53,7 @@ object placeholderLineMod extends Shortcut {
     
     extension [Self <: StrictPlaceholderLineProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       

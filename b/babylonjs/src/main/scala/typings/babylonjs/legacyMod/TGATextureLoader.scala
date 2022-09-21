@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "_TGATextureLoader")
 @js.native
-class TGATextureLoader ()
+open class TGATextureLoader ()
   extends typings.babylonjs.indexMod.TGATextureLoader

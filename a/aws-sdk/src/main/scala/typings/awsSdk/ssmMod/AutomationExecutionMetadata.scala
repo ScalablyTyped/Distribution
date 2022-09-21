@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AutomationExecutionMetadata extends StObject {
   
   /**
+    * The ID of a State Manager association used in the Automation operation.
+    */
+  var AssociationId: js.UndefOr[String] = js.undefined
+  
+  /**
     * The execution ID.
     */
   var AutomationExecutionId: js.UndefOr[typings.awsSdk.ssmMod.AutomationExecutionId] = js.undefined
@@ -17,9 +22,19 @@ trait AutomationExecutionMetadata extends StObject {
   var AutomationExecutionStatus: js.UndefOr[typings.awsSdk.ssmMod.AutomationExecutionStatus] = js.undefined
   
   /**
-    * Use this filter with DescribeAutomationExecutions. Specify either Local or CrossAccount. CrossAccount is an Automation that runs in multiple AWS Regions and accounts. For more information, see Running Automation workflows in multiple AWS Regions and accounts in the AWS Systems Manager User Guide. 
+    * The subtype of the Automation operation. Currently, the only supported value is ChangeRequest.
+    */
+  var AutomationSubtype: js.UndefOr[typings.awsSdk.ssmMod.AutomationSubtype] = js.undefined
+  
+  /**
+    * Use this filter with DescribeAutomationExecutions. Specify either Local or CrossAccount. CrossAccount is an Automation that runs in multiple Amazon Web Services Regions and Amazon Web Services accounts. For more information, see Running Automation workflows in multiple Amazon Web Services Regions and accounts in the Amazon Web Services Systems Manager User Guide. 
     */
   var AutomationType: js.UndefOr[typings.awsSdk.ssmMod.AutomationType] = js.undefined
+  
+  /**
+    * The name of the Change Manager change request.
+    */
+  var ChangeRequestName: js.UndefOr[typings.awsSdk.ssmMod.ChangeRequestName] = js.undefined
   
   /**
     * The action of the step that is currently running.
@@ -32,7 +47,7 @@ trait AutomationExecutionMetadata extends StObject {
   var CurrentStepName: js.UndefOr[String] = js.undefined
   
   /**
-    * The name of the Automation document used during execution.
+    * The name of the Automation runbook used during execution.
     */
   var DocumentName: js.UndefOr[typings.awsSdk.ssmMod.DocumentName] = js.undefined
   
@@ -42,22 +57,22 @@ trait AutomationExecutionMetadata extends StObject {
   var DocumentVersion: js.UndefOr[typings.awsSdk.ssmMod.DocumentVersion] = js.undefined
   
   /**
-    * The IAM role ARN of the user who ran the Automation.
+    * The IAM role ARN of the user who ran the automation.
     */
   var ExecutedBy: js.UndefOr[String] = js.undefined
   
   /**
-    * The time the execution finished. This is not populated if the execution is still in progress.
+    * The time the execution finished. This isn't populated if the execution is still in progress.
     */
-  var ExecutionEndTime: js.UndefOr[DateTime] = js.undefined
+  var ExecutionEndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The time the execution started.
     */
-  var ExecutionStartTime: js.UndefOr[DateTime] = js.undefined
+  var ExecutionStartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The list of execution outputs as defined in the Automation document.
+    * The list of execution outputs as defined in the Automation runbook.
     */
   var FailureMessage: js.UndefOr[String] = js.undefined
   
@@ -67,12 +82,12 @@ trait AutomationExecutionMetadata extends StObject {
   var LogFile: js.UndefOr[String] = js.undefined
   
   /**
-    * The MaxConcurrency value specified by the user when starting the Automation.
+    * The MaxConcurrency value specified by the user when starting the automation.
     */
   var MaxConcurrency: js.UndefOr[typings.awsSdk.ssmMod.MaxConcurrency] = js.undefined
   
   /**
-    * The MaxErrors value specified by the user when starting the Automation.
+    * The MaxErrors value specified by the user when starting the automation.
     */
   var MaxErrors: js.UndefOr[typings.awsSdk.ssmMod.MaxErrors] = js.undefined
   
@@ -82,12 +97,17 @@ trait AutomationExecutionMetadata extends StObject {
   var Mode: js.UndefOr[ExecutionMode] = js.undefined
   
   /**
-    * The list of execution outputs as defined in the Automation document.
+    * The ID of an OpsItem that is created to represent a Change Manager change request.
+    */
+  var OpsItemId: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The list of execution outputs as defined in the Automation runbook.
     */
   var Outputs: js.UndefOr[AutomationParameterMap] = js.undefined
   
   /**
-    * The ExecutionId of the parent Automation.
+    * The execution ID of the parent automation.
     */
   var ParentAutomationExecutionId: js.UndefOr[AutomationExecutionId] = js.undefined
   
@@ -97,7 +117,17 @@ trait AutomationExecutionMetadata extends StObject {
   var ResolvedTargets: js.UndefOr[typings.awsSdk.ssmMod.ResolvedTargets] = js.undefined
   
   /**
-    * The list of execution outputs as defined in the Automation document.
+    * Information about the Automation runbooks that are run during a runbook workflow in Change Manager.  The Automation runbooks specified for the runbook workflow can't run until all required approvals for the change request have been received. 
+    */
+  var Runbooks: js.UndefOr[typings.awsSdk.ssmMod.Runbooks] = js.undefined
+  
+  /**
+    * The date and time the Automation operation is scheduled to start.
+    */
+  var ScheduledTime: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * The list of execution outputs as defined in the Automation runbook.
     */
   var Target: js.UndefOr[String] = js.undefined
   
@@ -107,12 +137,12 @@ trait AutomationExecutionMetadata extends StObject {
   var TargetMaps: js.UndefOr[typings.awsSdk.ssmMod.TargetMaps] = js.undefined
   
   /**
-    * The list of execution outputs as defined in the Automation document.
+    * The list of execution outputs as defined in the Automation runbook.
     */
   var TargetParameterName: js.UndefOr[AutomationParameterKey] = js.undefined
   
   /**
-    * The targets defined by the user when starting the Automation.
+    * The targets defined by the user when starting the automation.
     */
   var Targets: js.UndefOr[typings.awsSdk.ssmMod.Targets] = js.undefined
 }
@@ -125,6 +155,10 @@ object AutomationExecutionMetadata {
   
   extension [Self <: AutomationExecutionMetadata](x: Self) {
     
+    inline def setAssociationId(value: String): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
+    
+    inline def setAssociationIdUndefined: Self = StObject.set(x, "AssociationId", js.undefined)
+    
     inline def setAutomationExecutionId(value: AutomationExecutionId): Self = StObject.set(x, "AutomationExecutionId", value.asInstanceOf[js.Any])
     
     inline def setAutomationExecutionIdUndefined: Self = StObject.set(x, "AutomationExecutionId", js.undefined)
@@ -133,9 +167,17 @@ object AutomationExecutionMetadata {
     
     inline def setAutomationExecutionStatusUndefined: Self = StObject.set(x, "AutomationExecutionStatus", js.undefined)
     
+    inline def setAutomationSubtype(value: AutomationSubtype): Self = StObject.set(x, "AutomationSubtype", value.asInstanceOf[js.Any])
+    
+    inline def setAutomationSubtypeUndefined: Self = StObject.set(x, "AutomationSubtype", js.undefined)
+    
     inline def setAutomationType(value: AutomationType): Self = StObject.set(x, "AutomationType", value.asInstanceOf[js.Any])
     
     inline def setAutomationTypeUndefined: Self = StObject.set(x, "AutomationType", js.undefined)
+    
+    inline def setChangeRequestName(value: ChangeRequestName): Self = StObject.set(x, "ChangeRequestName", value.asInstanceOf[js.Any])
+    
+    inline def setChangeRequestNameUndefined: Self = StObject.set(x, "ChangeRequestName", js.undefined)
     
     inline def setCurrentAction(value: String): Self = StObject.set(x, "CurrentAction", value.asInstanceOf[js.Any])
     
@@ -157,11 +199,11 @@ object AutomationExecutionMetadata {
     
     inline def setExecutedByUndefined: Self = StObject.set(x, "ExecutedBy", js.undefined)
     
-    inline def setExecutionEndTime(value: DateTime): Self = StObject.set(x, "ExecutionEndTime", value.asInstanceOf[js.Any])
+    inline def setExecutionEndTime(value: js.Date): Self = StObject.set(x, "ExecutionEndTime", value.asInstanceOf[js.Any])
     
     inline def setExecutionEndTimeUndefined: Self = StObject.set(x, "ExecutionEndTime", js.undefined)
     
-    inline def setExecutionStartTime(value: DateTime): Self = StObject.set(x, "ExecutionStartTime", value.asInstanceOf[js.Any])
+    inline def setExecutionStartTime(value: js.Date): Self = StObject.set(x, "ExecutionStartTime", value.asInstanceOf[js.Any])
     
     inline def setExecutionStartTimeUndefined: Self = StObject.set(x, "ExecutionStartTime", js.undefined)
     
@@ -185,6 +227,10 @@ object AutomationExecutionMetadata {
     
     inline def setModeUndefined: Self = StObject.set(x, "Mode", js.undefined)
     
+    inline def setOpsItemId(value: String): Self = StObject.set(x, "OpsItemId", value.asInstanceOf[js.Any])
+    
+    inline def setOpsItemIdUndefined: Self = StObject.set(x, "OpsItemId", js.undefined)
+    
     inline def setOutputs(value: AutomationParameterMap): Self = StObject.set(x, "Outputs", value.asInstanceOf[js.Any])
     
     inline def setOutputsUndefined: Self = StObject.set(x, "Outputs", js.undefined)
@@ -197,13 +243,23 @@ object AutomationExecutionMetadata {
     
     inline def setResolvedTargetsUndefined: Self = StObject.set(x, "ResolvedTargets", js.undefined)
     
+    inline def setRunbooks(value: Runbooks): Self = StObject.set(x, "Runbooks", value.asInstanceOf[js.Any])
+    
+    inline def setRunbooksUndefined: Self = StObject.set(x, "Runbooks", js.undefined)
+    
+    inline def setRunbooksVarargs(value: Runbook*): Self = StObject.set(x, "Runbooks", js.Array(value*))
+    
+    inline def setScheduledTime(value: js.Date): Self = StObject.set(x, "ScheduledTime", value.asInstanceOf[js.Any])
+    
+    inline def setScheduledTimeUndefined: Self = StObject.set(x, "ScheduledTime", js.undefined)
+    
     inline def setTarget(value: String): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
     
     inline def setTargetMaps(value: TargetMaps): Self = StObject.set(x, "TargetMaps", value.asInstanceOf[js.Any])
     
     inline def setTargetMapsUndefined: Self = StObject.set(x, "TargetMaps", js.undefined)
     
-    inline def setTargetMapsVarargs(value: TargetMap*): Self = StObject.set(x, "TargetMaps", js.Array(value :_*))
+    inline def setTargetMapsVarargs(value: TargetMap*): Self = StObject.set(x, "TargetMaps", js.Array(value*))
     
     inline def setTargetParameterName(value: AutomationParameterKey): Self = StObject.set(x, "TargetParameterName", value.asInstanceOf[js.Any])
     
@@ -215,6 +271,6 @@ object AutomationExecutionMetadata {
     
     inline def setTargetsUndefined: Self = StObject.set(x, "Targets", js.undefined)
     
-    inline def setTargetsVarargs(value: Target*): Self = StObject.set(x, "Targets", js.Array(value :_*))
+    inline def setTargetsVarargs(value: Target*): Self = StObject.set(x, "Targets", js.Array(value*))
   }
 }

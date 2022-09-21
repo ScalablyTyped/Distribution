@@ -20,23 +20,23 @@ trait XErrorHandler
      with XInterface {
   
   /** receives notification of a recoverable error. */
-  def error(aSAXParseException: js.Any): Unit
+  def error(aSAXParseException: Any): Unit
   
   /** receives notification of a non-recoverable error. */
-  def fatalError(aSAXParseException: js.Any): Unit
+  def fatalError(aSAXParseException: Any): Unit
   
   /** receives notification of a warning. */
-  def warning(aSAXParseException: js.Any): Unit
+  def warning(aSAXParseException: Any): Unit
 }
 object XErrorHandler {
   
   inline def apply(
     acquire: () => Unit,
-    error: js.Any => Unit,
-    fatalError: js.Any => Unit,
-    queryInterface: `type` => js.Any,
+    error: Any => Unit,
+    fatalError: Any => Unit,
+    queryInterface: `type` => Any,
     release: () => Unit,
-    warning: js.Any => Unit
+    warning: Any => Unit
   ): XErrorHandler = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), error = js.Any.fromFunction1(error), fatalError = js.Any.fromFunction1(fatalError), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), warning = js.Any.fromFunction1(warning))
     __obj.asInstanceOf[XErrorHandler]
@@ -44,10 +44,10 @@ object XErrorHandler {
   
   extension [Self <: XErrorHandler](x: Self) {
     
-    inline def setError(value: js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    inline def setError(value: Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
-    inline def setFatalError(value: js.Any => Unit): Self = StObject.set(x, "fatalError", js.Any.fromFunction1(value))
+    inline def setFatalError(value: Any => Unit): Self = StObject.set(x, "fatalError", js.Any.fromFunction1(value))
     
-    inline def setWarning(value: js.Any => Unit): Self = StObject.set(x, "warning", js.Any.fromFunction1(value))
+    inline def setWarning(value: Any => Unit): Self = StObject.set(x, "warning", js.Any.fromFunction1(value))
   }
 }

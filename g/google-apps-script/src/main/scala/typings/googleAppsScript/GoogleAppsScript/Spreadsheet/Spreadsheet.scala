@@ -35,7 +35,7 @@ trait Spreadsheet extends StObject {
   
   def addViewers(emailAddresses: js.Array[String]): typings.googleAppsScript.GoogleAppsScript.Spreadsheet.Spreadsheet = js.native
   
-  def appendRow(rowContents: js.Array[js.Any]): Sheet = js.native
+  def appendRow(rowContents: js.Array[Any]): Sheet = js.native
   
   def autoResizeColumn(columnPosition: Integer): Sheet = js.native
   
@@ -135,7 +135,7 @@ trait Spreadsheet extends StObject {
   
   /** @deprecated DO NOT USE */ def getSheetProtection(): PageProtection = js.native
   
-  def getSheetValues(startRow: Integer, startColumn: Integer, numRows: Integer, numColumns: Integer): js.Array[js.Array[js.Any]] = js.native
+  def getSheetValues(startRow: Integer, startColumn: Integer, numRows: Integer, numColumns: Integer): js.Array[js.Array[Any]] = js.native
   
   def getSheets(): js.Array[Sheet] = js.native
   

@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object useCurrentMenuLayoutPropsMod {
   
-  @JSImport("@ant-design/pro-layout/lib/utils/useCurrentMenuLayoutProps", JSImport.Namespace)
+  @JSImport("@ant-design/pro-layout/es/utils/useCurrentMenuLayoutProps", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(currentMenu: ProSettings): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(currentMenu.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  inline def useCurrentMenuLayoutProps(currentMenu: ProSettings): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("useCurrentMenuLayoutProps")(currentMenu.asInstanceOf[js.Any]).asInstanceOf[js.Object]
 }

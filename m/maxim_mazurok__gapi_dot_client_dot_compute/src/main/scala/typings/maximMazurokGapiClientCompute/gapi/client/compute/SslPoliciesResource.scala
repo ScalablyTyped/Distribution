@@ -1,11 +1,11 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import typings.gapiClient.gapi.client.Request
-import typings.maximMazurokGapiClientCompute.anon.FieldsKey
-import typings.maximMazurokGapiClientCompute.anon.KeyOauthtokenPrettyPrintProjectQuotaUserRequestIdResourceUserIp
 import typings.maximMazurokGapiClientCompute.anon.MaxResults
+import typings.maximMazurokGapiClientCompute.anon.ProjectQuotaUserRequestIdResourceUploadTypeUploadprotocol
 import typings.maximMazurokGapiClientCompute.anon.QuotaUserSslPolicy
 import typings.maximMazurokGapiClientCompute.anon.ResourceSslPolicy
+import typings.maximMazurokGapiClientCompute.anon.Xgafv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,9 +21,9 @@ trait SslPoliciesResource extends StObject {
   def get(): Request[SslPolicy] = js.native
   def get(request: QuotaUserSslPolicy): Request[SslPolicy] = js.native
   
-  def insert(request: FieldsKey, body: SslPolicy): Request[Operation] = js.native
   /** Returns the specified SSL policy resource. Gets a list of available SSL policies by making a list() request. */
-  def insert(request: KeyOauthtokenPrettyPrintProjectQuotaUserRequestIdResourceUserIp): Request[Operation] = js.native
+  def insert(request: ProjectQuotaUserRequestIdResourceUploadTypeUploadprotocol): Request[Operation] = js.native
+  def insert(request: Xgafv, body: SslPolicy): Request[Operation] = js.native
   
   /** Lists all the SSL policies that have been configured for the specified project. */
   def list(): Request[SslPoliciesList] = js.native

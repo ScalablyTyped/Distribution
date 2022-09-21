@@ -47,7 +47,7 @@ object XControlShape {
     getPosition: () => Point,
     getShapeType: () => String,
     getSize: () => Size,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setControl: XControlModel => Unit,
     setPosition: Point => Unit,

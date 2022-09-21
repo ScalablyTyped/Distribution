@@ -14,7 +14,7 @@ trait Click
      with IAction
      with IHasTarget {
   
-  var options: js.UndefOr[js.Any] = js.undefined
+  var options: js.UndefOr[Any] = js.undefined
 }
 object Click {
   
@@ -25,7 +25,7 @@ object Click {
   
   extension [Self <: Click](x: Self) {
     
-    inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }

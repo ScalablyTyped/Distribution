@@ -7,7 +7,7 @@ import typings.bonjour.bonjourStrings.udp
 import typings.bonjour.bonjourStrings.udp4
 import typings.bonjour.bonjourStrings.udp6
 import typings.bonjour.bonjourStrings.up
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.dgramMod.RemoteInfo
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import org.scalablytyped.runtime.StObject
@@ -72,7 +72,7 @@ object mod {
       
       inline def setSubtypes(value: js.Array[String]): Self = StObject.set(x, "subtypes", value.asInstanceOf[js.Any])
       
-      inline def setSubtypesVarargs(value: String*): Self = StObject.set(x, "subtypes", js.Array(value :_*))
+      inline def setSubtypesVarargs(value: String*): Self = StObject.set(x, "subtypes", js.Array(value*))
       
       inline def setTxt(value: StringDictionary[String]): Self = StObject.set(x, "txt", value.asInstanceOf[js.Any])
       
@@ -180,25 +180,13 @@ object mod {
     extends StObject
        with EventEmitter {
     
-    @JSName("on")
-    def on_down(event: down, listener: js.Function1[/* service */ RemoteService, Unit]): this.type = js.native
-    @JSName("on")
-    def on_up(event: up, listener: js.Function1[/* service */ RemoteService, Unit]): this.type = js.native
+    def on(event: up | down, listener: js.Function1[/* service */ RemoteService, Unit]): this.type = js.native
     
-    @JSName("once")
-    def once_down(event: down, listener: js.Function1[/* service */ RemoteService, Unit]): this.type = js.native
-    @JSName("once")
-    def once_up(event: up, listener: js.Function1[/* service */ RemoteService, Unit]): this.type = js.native
+    def once(event: up | down, listener: js.Function1[/* service */ RemoteService, Unit]): this.type = js.native
     
-    @JSName("removeAllListeners")
-    def removeAllListeners_down(event: down): this.type = js.native
-    @JSName("removeAllListeners")
-    def removeAllListeners_up(event: up): this.type = js.native
+    def removeAllListeners(event: up | down): this.type = js.native
     
-    @JSName("removeListener")
-    def removeListener_down(event: down, listener: js.Function1[/* service */ RemoteService, Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_up(event: up, listener: js.Function1[/* service */ RemoteService, Unit]): this.type = js.native
+    def removeListener(event: up | down, listener: js.Function1[/* service */ RemoteService, Unit]): this.type = js.native
     
     var services: js.Array[RemoteService] = js.native
     
@@ -236,7 +224,7 @@ object mod {
       
       inline def setSubtypesUndefined: Self = StObject.set(x, "subtypes", js.undefined)
       
-      inline def setSubtypesVarargs(value: String*): Self = StObject.set(x, "subtypes", js.Array(value :_*))
+      inline def setSubtypesVarargs(value: String*): Self = StObject.set(x, "subtypes", js.Array(value*))
       
       inline def setTxt(value: StringDictionary[String]): Self = StObject.set(x, "txt", value.asInstanceOf[js.Any])
       
@@ -282,7 +270,7 @@ object mod {
       
       inline def setAddresses(value: js.Array[String]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
       
-      inline def setAddressesVarargs(value: String*): Self = StObject.set(x, "addresses", js.Array(value :_*))
+      inline def setAddressesVarargs(value: String*): Self = StObject.set(x, "addresses", js.Array(value*))
       
       inline def setRawTxt(value: Buffer): Self = StObject.set(x, "rawTxt", value.asInstanceOf[js.Any])
       
@@ -354,7 +342,7 @@ object mod {
       
       inline def setSubtypesUndefined: Self = StObject.set(x, "subtypes", js.undefined)
       
-      inline def setSubtypesVarargs(value: String*): Self = StObject.set(x, "subtypes", js.Array(value :_*))
+      inline def setSubtypesVarargs(value: String*): Self = StObject.set(x, "subtypes", js.Array(value*))
       
       inline def setTxt(value: StringDictionary[String]): Self = StObject.set(x, "txt", value.asInstanceOf[js.Any])
       

@@ -1,7 +1,7 @@
 
 # Scala.js typings for use-position
 
-Typings are for version 0.0
+Typings are for version 1.0
 
 ## Library description:
 React hook for fetching and following browser location
@@ -10,15 +10,12 @@ React hook for fetching and following browser location
 | ------------------ | :-------------: |
 | Full name          | use-position |
 | Keywords           | react, hook, location, position, navigation, geolocation, position |
-| # releases         | 8 |
-| # dependents       | 0 |
-| # downloads        | 45737 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 5428.333333333333 |
+| # stars            | 271.0 |
 
 ## Links
-- [Homepage](https://github.com/trekhleb/use-position#readme)
-- [Bugs](https://github.com/trekhleb/use-position/issues)
-- [Repository](https://github.com/trekhleb/use-position)
 - [Npm](https://www.npmjs.com/package/use-position)
     
 

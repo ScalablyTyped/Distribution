@@ -10,7 +10,7 @@ object basicBufferContainerMod {
   
   @JSImport("wonder.js/dist/es2015/component/geometry/data/BasicBufferContainer", "BasicBufferContainer")
   @js.native
-  class BasicBufferContainer protected () extends CommonBufferContainer {
+  open class BasicBufferContainer protected () extends CommonBufferContainer {
     def this(entityObject: GameObject) = this()
   }
   /* static members */

@@ -13,6 +13,8 @@ trait TextSymbol3DLayerHaloProperties
   /**
     * The color of the halo.
     *
+    * @default black
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#halo)
     */
   var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
@@ -41,7 +43,7 @@ object TextSymbol3DLayerHaloProperties {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value*))
     
     inline def setSize(value: Double | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("thrift", "XHRConnection")
 @js.native
-class XHRConnection protected () extends EventEmitter {
+open class XHRConnection protected () extends EventEmitter {
   def this(host: String, port: Double) = this()
   def this(host: String, port: Double, options: ConnectOptions) = this()
   

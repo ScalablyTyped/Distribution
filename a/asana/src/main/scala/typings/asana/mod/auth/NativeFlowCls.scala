@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSImport("asana", "auth.NativeFlow")
 @js.native
-class NativeFlowCls protected ()
+open class NativeFlowCls protected ()
   extends StObject
      with NativeFlow {
   /**
@@ -21,7 +21,7 @@ class NativeFlowCls protected ()
     *     waiting for a line from stdin.
     * @constructor
     */
-  def this(options: js.Any) = this()
+  def this(options: Any) = this()
   
   /**
     * @param {String} code An authorization code obtained via `asanaAuthorizeUrl`.
@@ -48,7 +48,7 @@ class NativeFlowCls protected ()
     * @return
     */
   /* CompleteClass */
-  override def promptForCode(url: String): js.Any = js.native
+  override def promptForCode(url: String): Any = js.native
   
   /**
     * Run the appropriate parts of the Oauth flow, attempting to establish user

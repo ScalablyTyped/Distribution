@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-cognito-identity", "MergeDeveloperIdentitiesCommand")
 @js.native
-class MergeDeveloperIdentitiesCommand protected ()
-  extends typings.awsSdkClientCognitoIdentity.mergeDeveloperIdentitiesCommandMod.MergeDeveloperIdentitiesCommand {
+open class MergeDeveloperIdentitiesCommand protected ()
+  extends typings.awsSdkClientCognitoIdentity.commandsMod.MergeDeveloperIdentitiesCommand {
   def this(input: MergeDeveloperIdentitiesCommandInput) = this()
 }

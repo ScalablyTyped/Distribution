@@ -7,45 +7,13 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// prettier-ignore
-trait MapEvents[T] extends StObject {
-  
-  var deselect: EventBase[T] & typings.appleMapkitJsBrowser.anon.Annotation
-  
-  var `double-tap`: EventBase[T]
-  
-  var `drag-end`: EventBase[T] & AnnotationAnnotation
-  
-  var `drag-start`: EventBase[T] & AnnotationAnnotation
-  
-  var dragging: EventBase[T] & typings.appleMapkitJsBrowser.anon.Coordinate
-  
-  var `long-press`: EventBase[T]
-  
-  var `map-type-change`: EventBase[T]
-  
-  var `region-change-end`: EventBase[T]
-  
-  var `region-change-start`: EventBase[T]
-  
-  var `scroll-end`: EventBase[T]
-  
-  var `scroll-start`: EventBase[T]
-  
-  // Annotation Events
-  var select: EventBase[T] & typings.appleMapkitJsBrowser.anon.Annotation
-  
-  var `single-tap`: EventBase[T]
-  
-  // User Location Events
-  var `user-location-change`: EventBase[T] & Timestamp
-  
-  var `user-location-error`: EventBase[T] & Code
-  
-  var `zoom-end`: EventBase[T]
-  
-  var `zoom-start`: EventBase[T]
-}
+// All map events
+trait MapEvents[T]
+  extends StObject
+     with MapDisplayEvents[T]
+     with MapAnnotationOverlayEvents[T]
+     with MapUserLocationEvents[T]
+     with MapInteractionEvents[T]
 object MapEvents {
   
   inline def apply[T](
@@ -58,6 +26,8 @@ object MapEvents {
     `map-type-change`: EventBase[T],
     `region-change-end`: EventBase[T],
     `region-change-start`: EventBase[T],
+    `rotation-end`: EventBase[T],
+    `rotation-start`: EventBase[T],
     `scroll-end`: EventBase[T],
     `scroll-start`: EventBase[T],
     select: EventBase[T] & typings.appleMapkitJsBrowser.anon.Annotation,
@@ -75,6 +45,8 @@ object MapEvents {
     __obj.updateDynamic("map-type-change")(`map-type-change`.asInstanceOf[js.Any])
     __obj.updateDynamic("region-change-end")(`region-change-end`.asInstanceOf[js.Any])
     __obj.updateDynamic("region-change-start")(`region-change-start`.asInstanceOf[js.Any])
+    __obj.updateDynamic("rotation-end")(`rotation-end`.asInstanceOf[js.Any])
+    __obj.updateDynamic("rotation-start")(`rotation-start`.asInstanceOf[js.Any])
     __obj.updateDynamic("scroll-end")(`scroll-end`.asInstanceOf[js.Any])
     __obj.updateDynamic("scroll-start")(`scroll-start`.asInstanceOf[js.Any])
     __obj.updateDynamic("single-tap")(`single-tap`.asInstanceOf[js.Any])
@@ -83,42 +55,5 @@ object MapEvents {
     __obj.updateDynamic("zoom-end")(`zoom-end`.asInstanceOf[js.Any])
     __obj.updateDynamic("zoom-start")(`zoom-start`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapEvents[T]]
-  }
-  
-  extension [Self <: MapEvents[?], T](x: Self & MapEvents[T]) {
-    
-    inline def setDeselect(value: EventBase[T] & typings.appleMapkitJsBrowser.anon.Annotation): Self = StObject.set(x, "deselect", value.asInstanceOf[js.Any])
-    
-    inline def `setDouble-tap`(value: EventBase[T]): Self = StObject.set(x, "double-tap", value.asInstanceOf[js.Any])
-    
-    inline def `setDrag-end`(value: EventBase[T] & AnnotationAnnotation): Self = StObject.set(x, "drag-end", value.asInstanceOf[js.Any])
-    
-    inline def `setDrag-start`(value: EventBase[T] & AnnotationAnnotation): Self = StObject.set(x, "drag-start", value.asInstanceOf[js.Any])
-    
-    inline def setDragging(value: EventBase[T] & typings.appleMapkitJsBrowser.anon.Coordinate): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
-    
-    inline def `setLong-press`(value: EventBase[T]): Self = StObject.set(x, "long-press", value.asInstanceOf[js.Any])
-    
-    inline def `setMap-type-change`(value: EventBase[T]): Self = StObject.set(x, "map-type-change", value.asInstanceOf[js.Any])
-    
-    inline def `setRegion-change-end`(value: EventBase[T]): Self = StObject.set(x, "region-change-end", value.asInstanceOf[js.Any])
-    
-    inline def `setRegion-change-start`(value: EventBase[T]): Self = StObject.set(x, "region-change-start", value.asInstanceOf[js.Any])
-    
-    inline def `setScroll-end`(value: EventBase[T]): Self = StObject.set(x, "scroll-end", value.asInstanceOf[js.Any])
-    
-    inline def `setScroll-start`(value: EventBase[T]): Self = StObject.set(x, "scroll-start", value.asInstanceOf[js.Any])
-    
-    inline def setSelect(value: EventBase[T] & typings.appleMapkitJsBrowser.anon.Annotation): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
-    
-    inline def `setSingle-tap`(value: EventBase[T]): Self = StObject.set(x, "single-tap", value.asInstanceOf[js.Any])
-    
-    inline def `setUser-location-change`(value: EventBase[T] & Timestamp): Self = StObject.set(x, "user-location-change", value.asInstanceOf[js.Any])
-    
-    inline def `setUser-location-error`(value: EventBase[T] & Code): Self = StObject.set(x, "user-location-error", value.asInstanceOf[js.Any])
-    
-    inline def `setZoom-end`(value: EventBase[T]): Self = StObject.set(x, "zoom-end", value.asInstanceOf[js.Any])
-    
-    inline def `setZoom-start`(value: EventBase[T]): Self = StObject.set(x, "zoom-start", value.asInstanceOf[js.Any])
   }
 }

@@ -12,33 +12,36 @@ object nodeMaterialConnectionPointCustomObjectMod {
   
   @JSImport("babylonjs/Materials/Node/nodeMaterialConnectionPointCustomObject", "NodeMaterialConnectionPointCustomObject")
   @js.native
-  class NodeMaterialConnectionPointCustomObject[T /* <: NodeMaterialBlock */] protected () extends NodeMaterialConnectionPoint {
+  open class NodeMaterialConnectionPointCustomObject[T /* <: NodeMaterialBlock */] protected () extends NodeMaterialConnectionPoint {
     /**
       * Creates a new connection point
       * @param name defines the connection point name
       * @param ownerBlock defines the block hosting this connection point
       * @param direction defines the direction of the connection point
+      * @param _blockType
+      * @param _blockName
+      * @param _nameForCheking
       */
     def this(
       name: String,
       ownerBlock: NodeMaterialBlock,
       direction: NodeMaterialConnectionPointDirection,
-      _blockType: Instantiable1[/* args (repeated) */ js.Any, T],
+      _blockType: Instantiable1[/* args (repeated) */ Any, T],
       _blockName: String
     ) = this()
     def this(
       name: String,
       ownerBlock: NodeMaterialBlock,
       direction: NodeMaterialConnectionPointDirection,
-      _blockType: Instantiable1[/* args (repeated) */ js.Any, T],
+      _blockType: Instantiable1[/* args (repeated) */ Any, T],
       _blockName: String,
       _nameForCheking: String
     ) = this()
     
-    /* private */ var _blockName: js.Any = js.native
+    /* private */ var _blockName: Any = js.native
     
-    /* private */ var _blockType: js.Any = js.native
+    /* private */ var _blockType: Any = js.native
     
-    /* private */ var _nameForCheking: js.Any = js.native
+    /* private */ var _nameForCheking: Any = js.native
   }
 }

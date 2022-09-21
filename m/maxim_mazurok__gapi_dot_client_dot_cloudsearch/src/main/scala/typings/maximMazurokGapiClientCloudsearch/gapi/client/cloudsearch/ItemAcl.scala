@@ -19,7 +19,7 @@ trait ItemAcl extends StObject {
   var deniedReaders: js.UndefOr[js.Array[Principal]] = js.undefined
   
   /**
-    * Name of the item to inherit the Access Permission List (ACL) from. Note: ACL inheritance *only* provides access permissions to child items and does not define structural
+    * The name of the item to inherit the Access Permission List (ACL) from. Note: ACL inheritance *only* provides access permissions to child items and does not define structural
     * relationships, nor does it provide convenient ways to delete large groups of items. Deleting an ACL parent from the index only alters the access permissions of child items that
     * reference the parent in the inheritAclFrom field. The item is still in the index, but may not visible in search results. By contrast, deletion of a container item also deletes all
     * items that reference the container via the containerName field. The maximum length for this field is 1536 characters.
@@ -55,7 +55,7 @@ object ItemAcl {
     
     inline def setDeniedReadersUndefined: Self = StObject.set(x, "deniedReaders", js.undefined)
     
-    inline def setDeniedReadersVarargs(value: Principal*): Self = StObject.set(x, "deniedReaders", js.Array(value :_*))
+    inline def setDeniedReadersVarargs(value: Principal*): Self = StObject.set(x, "deniedReaders", js.Array(value*))
     
     inline def setInheritAclFrom(value: String): Self = StObject.set(x, "inheritAclFrom", value.asInstanceOf[js.Any])
     
@@ -65,12 +65,12 @@ object ItemAcl {
     
     inline def setOwnersUndefined: Self = StObject.set(x, "owners", js.undefined)
     
-    inline def setOwnersVarargs(value: Principal*): Self = StObject.set(x, "owners", js.Array(value :_*))
+    inline def setOwnersVarargs(value: Principal*): Self = StObject.set(x, "owners", js.Array(value*))
     
     inline def setReaders(value: js.Array[Principal]): Self = StObject.set(x, "readers", value.asInstanceOf[js.Any])
     
     inline def setReadersUndefined: Self = StObject.set(x, "readers", js.undefined)
     
-    inline def setReadersVarargs(value: Principal*): Self = StObject.set(x, "readers", js.Array(value :_*))
+    inline def setReadersVarargs(value: Principal*): Self = StObject.set(x, "readers", js.Array(value*))
   }
 }

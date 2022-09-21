@@ -79,19 +79,19 @@ object inboundMessageMod {
       
       inline def setAttachments(value: js.Array[Attachment]): Self = StObject.set(x, "Attachments", value.asInstanceOf[js.Any])
       
-      inline def setAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "Attachments", js.Array(value :_*))
+      inline def setAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "Attachments", js.Array(value*))
       
       inline def setBcc(value: String): Self = StObject.set(x, "Bcc", value.asInstanceOf[js.Any])
       
       inline def setBccFull(value: js.Array[InboundRecipient]): Self = StObject.set(x, "BccFull", value.asInstanceOf[js.Any])
       
-      inline def setBccFullVarargs(value: InboundRecipient*): Self = StObject.set(x, "BccFull", js.Array(value :_*))
+      inline def setBccFullVarargs(value: InboundRecipient*): Self = StObject.set(x, "BccFull", js.Array(value*))
       
       inline def setCc(value: String): Self = StObject.set(x, "Cc", value.asInstanceOf[js.Any])
       
       inline def setCcFull(value: js.Array[InboundRecipient]): Self = StObject.set(x, "CcFull", value.asInstanceOf[js.Any])
       
-      inline def setCcFullVarargs(value: InboundRecipient*): Self = StObject.set(x, "CcFull", js.Array(value :_*))
+      inline def setCcFullVarargs(value: InboundRecipient*): Self = StObject.set(x, "CcFull", js.Array(value*))
       
       inline def setDate(value: String): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
       
@@ -123,7 +123,7 @@ object inboundMessageMod {
       
       inline def setToFull(value: js.Array[InboundRecipient]): Self = StObject.set(x, "ToFull", value.asInstanceOf[js.Any])
       
-      inline def setToFullVarargs(value: InboundRecipient*): Self = StObject.set(x, "ToFull", js.Array(value :_*))
+      inline def setToFullVarargs(value: InboundRecipient*): Self = StObject.set(x, "ToFull", js.Array(value*))
     }
   }
   
@@ -178,7 +178,7 @@ object inboundMessageMod {
       
       inline def setHeaders(value: js.Array[Header]): Self = StObject.set(x, "Headers", value.asInstanceOf[js.Any])
       
-      inline def setHeadersVarargs(value: Header*): Self = StObject.set(x, "Headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: Header*): Self = StObject.set(x, "Headers", js.Array(value*))
       
       inline def setHtmlBody(value: String): Self = StObject.set(x, "HtmlBody", value.asInstanceOf[js.Any])
       
@@ -205,7 +205,7 @@ object inboundMessageMod {
       
       inline def setInboundMessages(value: js.Array[InboundMessage]): Self = StObject.set(x, "InboundMessages", value.asInstanceOf[js.Any])
       
-      inline def setInboundMessagesVarargs(value: InboundMessage*): Self = StObject.set(x, "InboundMessages", js.Array(value :_*))
+      inline def setInboundMessagesVarargs(value: InboundMessage*): Self = StObject.set(x, "InboundMessages", js.Array(value*))
       
       inline def setTotalCount(value: String): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     }

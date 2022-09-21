@@ -13,7 +13,7 @@ trait IFieldSet
     * @param newDisabled Object
     * @returns Ext.form.FieldSet This FieldSet
     */
-  var doSetDisabled: js.UndefOr[js.Function1[/* newDisabled */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var doSetDisabled: js.UndefOr[js.Function1[/* newDisabled */ js.UndefOr[Any], this.type]] = js.undefined
   
   /** [Config Option] (String) */
   var instructions: js.UndefOr[String] = js.undefined
@@ -40,7 +40,7 @@ object IFieldSet {
   
   extension [Self <: IFieldSet](x: Self) {
     
-    inline def setDoSetDisabled(value: /* newDisabled */ js.UndefOr[js.Any] => IFieldSet): Self = StObject.set(x, "doSetDisabled", js.Any.fromFunction1(value))
+    inline def setDoSetDisabled(value: /* newDisabled */ js.UndefOr[Any] => IFieldSet): Self = StObject.set(x, "doSetDisabled", js.Any.fromFunction1(value))
     
     inline def setDoSetDisabledUndefined: Self = StObject.set(x, "doSetDisabled", js.undefined)
     

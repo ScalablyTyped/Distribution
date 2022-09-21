@@ -36,7 +36,7 @@ object XDataEditor {
     acquire: () => Unit,
     addDataEditorListener: XDataEditorListener => Unit,
     getModel: () => XInterface,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeDataEditorListener: XDataEditorListener => Unit,
     setModel: XInterface => Unit,

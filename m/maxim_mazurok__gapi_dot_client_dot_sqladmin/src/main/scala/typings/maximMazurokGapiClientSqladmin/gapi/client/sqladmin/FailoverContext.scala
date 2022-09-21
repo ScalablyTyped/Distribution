@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FailoverContext extends StObject {
   
-  /** This is always *sql#failoverContext*. */
+  /** This is always `sql#failoverContext`. */
   var kind: js.UndefOr[String] = js.undefined
   
   /** The current settings version of this instance. Request will be rejected if this version doesn't match the current settings version. */

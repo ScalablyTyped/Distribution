@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ReactBootstrap.Navbar")
 @js.native
-class Navbar ()
+open class Navbar ()
   extends typings.reactBootstrap.mod.Navbar
 object Navbar {
   
@@ -25,7 +25,7 @@ object Navbar {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ReactBootstrap.Navbar.Brand")
   @js.native
-  class Brand ()
+  open class Brand ()
     extends typings.reactBootstrap.navbarBrandMod.^
   /* static member */
   @JSGlobal("ReactBootstrap.Navbar.Brand")
@@ -36,7 +36,7 @@ object Navbar {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ReactBootstrap.Navbar.Collapse")
   @js.native
-  class Collapse ()
+  open class Collapse ()
     extends typings.reactBootstrap.navbarCollapseMod.^
   /* static member */
   @JSGlobal("ReactBootstrap.Navbar.Collapse")
@@ -47,8 +47,8 @@ object Navbar {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ReactBootstrap.Navbar.Form")
   @js.native
-  class Form ()
-    extends Component[NavbarFormProps, js.Object, js.Any]
+  open class Form ()
+    extends Component[NavbarFormProps, js.Object, Any]
   /* static member */
   @JSGlobal("ReactBootstrap.Navbar.Form")
   @js.native
@@ -58,7 +58,7 @@ object Navbar {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ReactBootstrap.Navbar.Header")
   @js.native
-  class Header ()
+  open class Header ()
     extends typings.reactBootstrap.navbarHeaderMod.^
   /* static member */
   @JSGlobal("ReactBootstrap.Navbar.Header")
@@ -69,8 +69,8 @@ object Navbar {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ReactBootstrap.Navbar.Link")
   @js.native
-  class Link ()
-    extends Component[NavbarLinkProps, js.Object, js.Any]
+  open class Link ()
+    extends Component[NavbarLinkProps, js.Object, Any]
   /* static member */
   @JSGlobal("ReactBootstrap.Navbar.Link")
   @js.native
@@ -80,8 +80,8 @@ object Navbar {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ReactBootstrap.Navbar.Text")
   @js.native
-  class Text ()
-    extends Component[NavbarTextProps, js.Object, js.Any]
+  open class Text ()
+    extends Component[NavbarTextProps, js.Object, Any]
   /* static member */
   @JSGlobal("ReactBootstrap.Navbar.Text")
   @js.native
@@ -91,7 +91,7 @@ object Navbar {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ReactBootstrap.Navbar.Toggle")
   @js.native
-  class Toggle ()
+  open class Toggle ()
     extends typings.reactBootstrap.navbarToggleMod.^
   /* static member */
   @JSGlobal("ReactBootstrap.Navbar.Toggle")

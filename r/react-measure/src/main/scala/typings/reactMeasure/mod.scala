@@ -2,8 +2,8 @@ package typings.reactMeasure
 
 import typings.react.mod.Component
 import typings.react.mod.ComponentType
+import typings.react.mod.FC
 import typings.react.mod.Ref
-import typings.react.mod.SFC
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,8 +17,8 @@ object mod {
   
   @JSImport("react-measure", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[MeasureProps, js.Object, js.Any]
+  open class default ()
+    extends Component[MeasureProps, js.Object, Any]
   
   inline def withContentRect(types: js.Array[MeasurementType]): js.Function1[/* fn */ MeasuredComponent[js.Object], ComponentType[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withContentRect")(types.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fn */ MeasuredComponent[js.Object], ComponentType[js.Object]]]
   inline def withContentRect(types: MeasurementType): js.Function1[/* fn */ MeasuredComponent[js.Object], ComponentType[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withContentRect")(types.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fn */ MeasuredComponent[js.Object], ComponentType[js.Object]]]
@@ -52,7 +52,7 @@ object mod {
     
     var client: js.UndefOr[Rect] = js.undefined
     
-    var entry: js.UndefOr[js.Any] = js.undefined
+    var entry: js.UndefOr[Any] = js.undefined
     
     var margin: js.UndefOr[Margin] = js.undefined
     
@@ -77,7 +77,7 @@ object mod {
       
       inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
       
-      inline def setEntry(value: js.Any): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
+      inline def setEntry(value: Any): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
       
       inline def setEntryUndefined: Self = StObject.set(x, "entry", js.undefined)
       
@@ -128,13 +128,13 @@ object mod {
     }
   }
   
-  type Measure = Component[MeasureProps, js.Object, js.Any]
+  type Measure = Component[MeasureProps, js.Object, Any]
   
   trait MeasureProps extends StObject {
     
     var bounds: js.UndefOr[Boolean] = js.undefined
     
-    var children: js.UndefOr[SFC[MeasuredComponentProps]] = js.undefined
+    var children: js.UndefOr[FC[MeasuredComponentProps]] = js.undefined
     
     var client: js.UndefOr[Boolean] = js.undefined
     
@@ -161,7 +161,7 @@ object mod {
       
       inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
       
-      inline def setChildren(value: SFC[MeasuredComponentProps]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: FC[MeasuredComponentProps]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       

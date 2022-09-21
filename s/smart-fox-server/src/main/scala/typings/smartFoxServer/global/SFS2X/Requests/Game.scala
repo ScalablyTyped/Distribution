@@ -16,7 +16,7 @@ object Game {
   
   @JSGlobal("SFS2X.Requests.Game.CreateSFSGameRequest")
   @js.native
-  class CreateSFSGameRequest protected ()
+  open class CreateSFSGameRequest protected ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Requests.Game.CreateSFSGameRequest {
     /**
@@ -28,7 +28,7 @@ object Game {
   
   @JSGlobal("SFS2X.Requests.Game.InvitationReplyRequest")
   @js.native
-  class InvitationReplyRequest protected ()
+  open class InvitationReplyRequest protected ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Requests.Game.InvitationReplyRequest {
     /**
@@ -43,7 +43,7 @@ object Game {
   
   @JSGlobal("SFS2X.Requests.Game.InviteUsersRequest")
   @js.native
-  class InviteUsersRequest protected ()
+  open class InviteUsersRequest protected ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Requests.Game.InviteUsersRequest {
     /**
@@ -58,7 +58,7 @@ object Game {
   
   @JSGlobal("SFS2X.Requests.Game.QuickJoinGameRequest")
   @js.native
-  class QuickJoinGameRequest protected ()
+  open class QuickJoinGameRequest protected ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Requests.Game.QuickJoinGameRequest {
     /**
@@ -80,7 +80,7 @@ object Game {
   
   @JSGlobal("SFS2X.Requests.Game.SFSGameSettings")
   @js.native
-  class SFSGameSettings protected ()
+  open class SFSGameSettings protected ()
     extends StObject
        with typings.smartFoxServer.SFS2X.Requests.Game.SFSGameSettings {
     /**

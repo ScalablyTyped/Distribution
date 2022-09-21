@@ -1,37 +1,32 @@
 package typings.angularCore.mod
 
-import typings.rxjs.mod.Observable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "ApplicationRef")
 @js.native
-class ApplicationRef () extends StObject {
+open class ApplicationRef () extends StObject {
   
-  /* private */ var _componentFactoryResolver: js.Any = js.native
+  /* private */ var _destroyListeners: Any = js.native
   
-  /* private */ var _console: js.Any = js.native
+  /* private */ var _destroyed: Any = js.native
   
-  /* private */ var _enforceNoNewChanges: js.Any = js.native
+  /* private */ var _exceptionHandler: Any = js.native
   
-  /* private */ var _exceptionHandler: js.Any = js.native
+  /* private */ var _injector: Any = js.native
   
-  /* private */ var _initStatus: js.Any = js.native
+  /* private */ var _loadComponent: Any = js.native
   
-  /* private */ var _injector: js.Any = js.native
+  /* private */ var _onMicrotaskEmptySubscription: Any = js.native
   
-  /* private */ var _loadComponent: js.Any = js.native
+  /* private */ var _runningTick: Any = js.native
   
-  /* private */ var _runningTick: js.Any = js.native
+  /* private */ var _stable: Any = js.native
   
-  /* private */ var _stable: js.Any = js.native
+  /* private */ var _views: Any = js.native
   
-  /* private */ var _unloadComponent: js.Any = js.native
-  
-  /* private */ var _views: js.Any = js.native
-  
-  /* private */ var _zone: js.Any = js.native
+  /* private */ var _zone: Any = js.native
   
   /**
     * Attaches a view so that it will be dirty checked.
@@ -41,38 +36,111 @@ class ApplicationRef () extends StObject {
   def attachView(viewRef: ViewRef): Unit = js.native
   
   /**
-    * Bootstrap a new component at the root level of the application.
+    * Bootstrap a component onto the element identified by its selector or, optionally, to a
+    * specified element.
     *
     * @usageNotes
     * ### Bootstrap process
     *
-    * When bootstrapping a new root component into an application, Angular mounts the
-    * specified application component onto DOM elements identified by the componentType's
-    * selector and kicks off automatic change detection to finish initializing the component.
+    * When bootstrapping a component, Angular mounts it onto a target DOM element
+    * and kicks off automatic change detection. The target DOM element can be
+    * provided using the `rootSelectorOrNode` argument.
     *
-    * Optionally, a component can be mounted onto a DOM element that does not match the
-    * componentType's selector.
+    * If the target DOM element is not provided, Angular tries to find one on a page
+    * using the `selector` of the component that is being bootstrapped
+    * (first matched element is used).
     *
     * ### Example
-    * {@example core/ts/platform/platform.ts region='longform'}
+    *
+    * Generally, we define the component to bootstrap in the `bootstrap` array of `NgModule`,
+    * but it requires us to know the component while writing the application code.
+    *
+    * Imagine a situation where we have to wait for an API call to decide about the component to
+    * bootstrap. We can use the `ngDoBootstrap` hook of the `NgModule` and call this method to
+    * dynamically bootstrap a component.
+    *
+    * {@example core/ts/platform/platform.ts region='componentSelector'}
+    *
+    * Optionally, a component can be mounted onto a DOM element that does not match the
+    * selector of the bootstrapped component.
+    *
+    * In the following example, we are providing a CSS selector to match the target element.
+    *
+    * {@example core/ts/platform/platform.ts region='cssSelector'}
+    *
+    * While in this example, we are providing reference to a DOM node.
+    *
+    * {@example core/ts/platform/platform.ts region='domNode'}
+    *
+    * @deprecated Passing Component factories as the `Application.bootstrap` function argument is
+    *     deprecated. Pass Component Types instead.
     */
-  def bootstrap[C](componentOrFactory: ComponentFactory[C]): ComponentRef[C] = js.native
-  def bootstrap[C](componentOrFactory: ComponentFactory[C], rootSelectorOrNode: String): ComponentRef[C] = js.native
-  def bootstrap[C](componentOrFactory: ComponentFactory[C], rootSelectorOrNode: js.Any): ComponentRef[C] = js.native
-  def bootstrap[C](componentOrFactory: Type[C]): ComponentRef[C] = js.native
-  def bootstrap[C](componentOrFactory: Type[C], rootSelectorOrNode: String): ComponentRef[C] = js.native
-  def bootstrap[C](componentOrFactory: Type[C], rootSelectorOrNode: js.Any): ComponentRef[C] = js.native
+  def bootstrap[C](componentFactory: ComponentFactory[C]): ComponentRef[C] = js.native
+  def bootstrap[C](componentFactory: ComponentFactory[C], rootSelectorOrNode: String): ComponentRef[C] = js.native
+  def bootstrap[C](componentFactory: ComponentFactory[C], rootSelectorOrNode: Any): ComponentRef[C] = js.native
+  /**
+    * Bootstrap a component onto the element identified by its selector or, optionally, to a
+    * specified element.
+    *
+    * @usageNotes
+    * ### Bootstrap process
+    *
+    * When bootstrapping a component, Angular mounts it onto a target DOM element
+    * and kicks off automatic change detection. The target DOM element can be
+    * provided using the `rootSelectorOrNode` argument.
+    *
+    * If the target DOM element is not provided, Angular tries to find one on a page
+    * using the `selector` of the component that is being bootstrapped
+    * (first matched element is used).
+    *
+    * ### Example
+    *
+    * Generally, we define the component to bootstrap in the `bootstrap` array of `NgModule`,
+    * but it requires us to know the component while writing the application code.
+    *
+    * Imagine a situation where we have to wait for an API call to decide about the component to
+    * bootstrap. We can use the `ngDoBootstrap` hook of the `NgModule` and call this method to
+    * dynamically bootstrap a component.
+    *
+    * {@example core/ts/platform/platform.ts region='componentSelector'}
+    *
+    * Optionally, a component can be mounted onto a DOM element that does not match the
+    * selector of the bootstrapped component.
+    *
+    * In the following example, we are providing a CSS selector to match the target element.
+    *
+    * {@example core/ts/platform/platform.ts region='cssSelector'}
+    *
+    * While in this example, we are providing reference to a DOM node.
+    *
+    * {@example core/ts/platform/platform.ts region='domNode'}
+    */
+  def bootstrap[C](component: Type[C]): ComponentRef[C] = js.native
+  def bootstrap[C](component: Type[C], rootSelectorOrNode: String): ComponentRef[C] = js.native
+  def bootstrap[C](component: Type[C], rootSelectorOrNode: Any): ComponentRef[C] = js.native
   
   /**
     * Get a list of component types registered to this application.
     * This list is populated even before the component is created.
     */
-  val componentTypes: js.Array[Type[js.Any]] = js.native
+  val componentTypes: js.Array[Type[Any]] = js.native
   
   /**
     * Get a list of components registered to this application.
     */
-  val components: js.Array[ComponentRef[js.Any]] = js.native
+  val components: js.Array[ComponentRef[Any]] = js.native
+  
+  /**
+    * Destroys an Angular application represented by this `ApplicationRef`. Calling this function
+    * will destroy the associated environment injectors as well as all the bootstrapped components
+    * with their views.
+    */
+  def destroy(): Unit = js.native
+  
+  /**
+    * Indicates whether this instance was destroyed.
+    */
+  def destroyed: Boolean = js.native
   
   /**
     * Detaches a view from dirty checking again.
@@ -80,11 +148,16 @@ class ApplicationRef () extends StObject {
   def detachView(viewRef: ViewRef): Unit = js.native
   
   /**
+    * The `EnvironmentInjector` used to create this application.
+    */
+  def injector: EnvironmentInjector = js.native
+  
+  /**
     * Returns an Observable that indicates when the application is stable or unstable.
     *
     * @see  [Usage notes](#is-stable-examples) for examples and caveats when using this API.
     */
-  val isStable: Observable_[Boolean] = js.native
+  val isStable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<boolean> */ Any = js.native
   
   /**
     * Invoke this method to explicitly process change detection and its side-effects.
@@ -102,4 +175,23 @@ class ApplicationRef () extends StObject {
     * Returns the number of attached views.
     */
   def viewCount: Double = js.native
+  
+  /* private */ var warnIfDestroyed: Any = js.native
+}
+/* static members */
+object ApplicationRef {
+  
+  @JSImport("@angular/core", "ApplicationRef")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@angular/core", "ApplicationRef.\u0275fac")
+  @js.native
+  def ɵfac: ɵɵFactoryDeclaration[ApplicationRef, scala.Nothing] = js.native
+  inline def ɵfac_=(x: ɵɵFactoryDeclaration[ApplicationRef, scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@angular/core", "ApplicationRef.\u0275prov")
+  @js.native
+  def ɵprov: ɵɵInjectableDeclaration[ApplicationRef] = js.native
+  inline def ɵprov_=(x: ɵɵInjectableDeclaration[ApplicationRef]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275prov")(x.asInstanceOf[js.Any])
 }

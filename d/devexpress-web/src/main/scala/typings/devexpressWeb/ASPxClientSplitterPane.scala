@@ -44,7 +44,7 @@ trait ASPxClientSplitterPane extends StObject {
   /**
     * Returns an iframe object containing a web page specified via the pane's SplitterPane.ContentUrl property (or the client ASPxClientSplitterPane.SetContentUrl method).
     */
-  def GetContentIFrame(): js.Any = js.native
+  def GetContentIFrame(): Any = js.native
   
   /**
     * Gets the URL of a web page displayed as a pane's content.
@@ -54,7 +54,7 @@ trait ASPxClientSplitterPane extends StObject {
   /**
     * Returns an HTML element representing a splitter pane object.
     */
-  def GetElement(): js.Any = js.native
+  def GetElement(): Any = js.native
   
   /**
     * Returns the next sibling pane of the current pane.

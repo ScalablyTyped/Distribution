@@ -8,7 +8,7 @@ object xmlCommentMod {
   
   @JSImport("xmlcreate/lib/nodes/XmlComment", JSImport.Default)
   @js.native
-  class default[Parent] protected ()
+  open class default[Parent] protected ()
     extends StObject
        with XmlComment[Parent] {
     def this(parent: Parent, validation: Boolean, options: IXmlCommentOptions) = this()
@@ -47,13 +47,13 @@ object xmlCommentMod {
   @js.native
   trait XmlComment[Parent] extends StObject {
     
-    /* private */ var _charData: js.Any = js.native
+    /* private */ var _charData: Any = js.native
     
-    /* private */ val _parent: js.Any = js.native
+    /* private */ val _parent: Any = js.native
     
-    /* private */ val _replaceInvalidCharsInCharData: js.Any = js.native
+    /* private */ val _replaceInvalidCharsInCharData: Any = js.native
     
-    /* private */ val _validation: js.Any = js.native
+    /* private */ val _validation: Any = js.native
     
     /**
       * Gets the text of this comment.

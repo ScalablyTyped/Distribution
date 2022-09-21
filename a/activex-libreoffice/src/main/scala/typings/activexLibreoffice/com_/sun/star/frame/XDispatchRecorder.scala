@@ -76,7 +76,7 @@ object XDispatchRecorder {
     acquire: () => Unit,
     endRecording: () => Unit,
     getRecordedMacro: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     recordDispatch: (URL, SeqEquiv[PropertyValue]) => Unit,
     recordDispatchAsComment: (URL, SeqEquiv[PropertyValue]) => Unit,
     release: () => Unit,

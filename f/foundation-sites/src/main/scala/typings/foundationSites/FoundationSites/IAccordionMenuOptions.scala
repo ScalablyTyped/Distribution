@@ -8,7 +8,13 @@ trait IAccordionMenuOptions extends StObject {
   
   var multiOpen: js.UndefOr[Boolean] = js.undefined
   
+  var parentLink: js.UndefOr[Boolean] = js.undefined
+  
   var slideSpeed: js.UndefOr[Double] = js.undefined
+  
+  var submenuToggle: js.UndefOr[Boolean] = js.undefined
+  
+  var submenuToggleText: js.UndefOr[String] = js.undefined
 }
 object IAccordionMenuOptions {
   
@@ -23,8 +29,20 @@ object IAccordionMenuOptions {
     
     inline def setMultiOpenUndefined: Self = StObject.set(x, "multiOpen", js.undefined)
     
+    inline def setParentLink(value: Boolean): Self = StObject.set(x, "parentLink", value.asInstanceOf[js.Any])
+    
+    inline def setParentLinkUndefined: Self = StObject.set(x, "parentLink", js.undefined)
+    
     inline def setSlideSpeed(value: Double): Self = StObject.set(x, "slideSpeed", value.asInstanceOf[js.Any])
     
     inline def setSlideSpeedUndefined: Self = StObject.set(x, "slideSpeed", js.undefined)
+    
+    inline def setSubmenuToggle(value: Boolean): Self = StObject.set(x, "submenuToggle", value.asInstanceOf[js.Any])
+    
+    inline def setSubmenuToggleText(value: String): Self = StObject.set(x, "submenuToggleText", value.asInstanceOf[js.Any])
+    
+    inline def setSubmenuToggleTextUndefined: Self = StObject.set(x, "submenuToggleText", js.undefined)
+    
+    inline def setSubmenuToggleUndefined: Self = StObject.set(x, "submenuToggle", js.undefined)
   }
 }

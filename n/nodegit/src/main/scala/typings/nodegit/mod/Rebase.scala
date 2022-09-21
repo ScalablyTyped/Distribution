@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "Rebase")
 @js.native
-class Rebase ()
+open class Rebase ()
   extends typings.nodegit.rebaseMod.Rebase
 /* static members */
 object Rebase {

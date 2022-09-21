@@ -10,10 +10,10 @@ object ignoreElementsObserverMod {
   
   @JSImport("wonder-frp/dist/commonjs/observer/IgnoreElementsObserver", "IgnoreElementsObserver")
   @js.native
-  class IgnoreElementsObserver protected () extends Observer {
+  open class IgnoreElementsObserver protected () extends Observer {
     def this(currentObserver: IObserver) = this()
     
-    /* private */ var _currentObserver: js.Any = js.native
+    /* private */ var _currentObserver: Any = js.native
   }
   /* static members */
   object IgnoreElementsObserver {

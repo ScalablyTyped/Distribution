@@ -10,10 +10,10 @@ nice(2) bindings for Node.js
 | ------------------ | :-------------: |
 | Full name          | nice-napi |
 | Keywords           | nice, priority |
-| # releases         | 5 |
-| # dependents       | 2 |
-| # downloads        | 24766 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4257385.333333333 |
+| # stars            | 16.0 |
 
 ## Links
 - [Homepage](https://github.com/addaleax/nice-napi#readme)

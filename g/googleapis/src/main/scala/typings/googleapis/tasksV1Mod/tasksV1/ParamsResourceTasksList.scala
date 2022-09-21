@@ -1,9 +1,5 @@
 package typings.googleapis.tasksV1Mod.tasksV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,39 +9,29 @@ trait ParamsResourceTasksList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Upper bound for a task's completion date (as a RFC 3339 timestamp) to
-    * filter by. Optional. The default is not to filter by completion date.
+    * Upper bound for a task's completion date (as a RFC 3339 timestamp) to filter by. Optional. The default is not to filter by completion date.
     */
   var completedMax: js.UndefOr[String] = js.undefined
   
   /**
-    * Lower bound for a task's completion date (as a RFC 3339 timestamp) to
-    * filter by. Optional. The default is not to filter by completion date.
+    * Lower bound for a task's completion date (as a RFC 3339 timestamp) to filter by. Optional. The default is not to filter by completion date.
     */
   var completedMin: js.UndefOr[String] = js.undefined
   
   /**
-    * Upper bound for a task's due date (as a RFC 3339 timestamp) to filter by.
-    * Optional. The default is not to filter by due date.
+    * Upper bound for a task's due date (as a RFC 3339 timestamp) to filter by. Optional. The default is not to filter by due date.
     */
   var dueMax: js.UndefOr[String] = js.undefined
   
   /**
-    * Lower bound for a task's due date (as a RFC 3339 timestamp) to filter by.
-    * Optional. The default is not to filter by due date.
+    * Lower bound for a task's due date (as a RFC 3339 timestamp) to filter by. Optional. The default is not to filter by due date.
     */
   var dueMin: js.UndefOr[String] = js.undefined
   
   /**
-    * Maximum number of task lists returned on one page. Optional. The default
-    * is 20 (max allowed: 100).
+    * Maximum number of task lists returned on one page. Optional. The default is 20 (max allowed: 100).
     */
-  var maxResults: js.UndefOr[String] = js.undefined
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * Token specifying the result page to return. Optional.
@@ -53,20 +39,17 @@ trait ParamsResourceTasksList
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * Flag indicating whether completed tasks are returned in the result.
-    * Optional. The default is True.
+    * Flag indicating whether completed tasks are returned in the result. Optional. The default is True. Note that showHidden must also be True to show tasks completed in first party clients, such as the web UI and Google's mobile apps.
     */
   var showCompleted: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Flag indicating whether deleted tasks are returned in the result.
-    * Optional. The default is False.
+    * Flag indicating whether deleted tasks are returned in the result. Optional. The default is False.
     */
   var showDeleted: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Flag indicating whether hidden tasks are returned in the result.
-    * Optional. The default is False.
+    * Flag indicating whether hidden tasks are returned in the result. Optional. The default is False.
     */
   var showHidden: js.UndefOr[Boolean] = js.undefined
   
@@ -76,9 +59,7 @@ trait ParamsResourceTasksList
   var tasklist: js.UndefOr[String] = js.undefined
   
   /**
-    * Lower bound for a task's last modification time (as a RFC 3339 timestamp)
-    * to filter by. Optional. The default is not to filter by last modification
-    * time.
+    * Lower bound for a task's last modification time (as a RFC 3339 timestamp) to filter by. Optional. The default is not to filter by last modification time.
     */
   var updatedMin: js.UndefOr[String] = js.undefined
 }
@@ -90,10 +71,6 @@ object ParamsResourceTasksList {
   }
   
   extension [Self <: ParamsResourceTasksList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setCompletedMax(value: String): Self = StObject.set(x, "completedMax", value.asInstanceOf[js.Any])
     
@@ -111,7 +88,7 @@ object ParamsResourceTasksList {
     
     inline def setDueMinUndefined: Self = StObject.set(x, "dueMin", js.undefined)
     
-    inline def setMaxResults(value: String): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     

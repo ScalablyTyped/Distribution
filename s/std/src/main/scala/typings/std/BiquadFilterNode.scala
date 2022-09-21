@@ -10,15 +10,25 @@ trait BiquadFilterNode
   extends StObject
      with AudioNode {
   
+  /* standard dom */
   val Q: AudioParam = js.native
   
+  /* standard dom */
   val detune: AudioParam = js.native
   
+  /* standard dom */
   val frequency: AudioParam = js.native
   
+  /* standard dom */
   val gain: AudioParam = js.native
   
-  def getFrequencyResponse(frequencyHz: Float32Array, magResponse: Float32Array, phaseResponse: Float32Array): Unit = js.native
+  /* standard dom */
+  def getFrequencyResponse(
+    frequencyHz: js.typedarray.Float32Array,
+    magResponse: js.typedarray.Float32Array,
+    phaseResponse: js.typedarray.Float32Array
+  ): Unit = js.native
   
+  /* standard dom */
   var `type`: BiquadFilterType = js.native
 }

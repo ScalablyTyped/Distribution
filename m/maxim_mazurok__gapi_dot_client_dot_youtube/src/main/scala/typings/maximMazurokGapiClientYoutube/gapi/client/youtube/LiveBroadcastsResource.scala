@@ -3,9 +3,10 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientYoutube.anon.AltBroadcastStatus
 import typings.maximMazurokGapiClientYoutube.anon.BroadcastStatus
-import typings.maximMazurokGapiClientYoutube.anon.DisplaySlate
 import typings.maximMazurokGapiClientYoutube.anon.FieldsId
 import typings.maximMazurokGapiClientYoutube.anon.FieldsKey
+import typings.maximMazurokGapiClientYoutube.anon.IdKey
+import typings.maximMazurokGapiClientYoutube.anon.KeyOauthtoken
 import typings.maximMazurokGapiClientYoutube.anon.StreamId
 import typings.maximMazurokGapiClientYoutube.anon.UploadType
 import org.scalablytyped.runtime.StObject
@@ -19,10 +20,6 @@ trait LiveBroadcastsResource extends StObject {
   def bind(): Request[LiveBroadcast] = js.native
   def bind(request: StreamId): Request[LiveBroadcast] = js.native
   
-  /** Slate and recording control of the live broadcast. Support actions: slate on/off, recording start/stop/pause/resume. Design doc: goto/yt-api-liveBroadcast-control */
-  def control(): Request[LiveBroadcast] = js.native
-  def control(request: DisplaySlate): Request[LiveBroadcast] = js.native
-  
   /** Delete a given broadcast. */
   def delete(): Request[Unit] = js.native
   def delete(request: FieldsId): Request[Unit] = js.native
@@ -30,6 +27,10 @@ trait LiveBroadcastsResource extends StObject {
   /** Inserts a new stream for the authenticated user. */
   def insert(request: FieldsKey): Request[LiveBroadcast] = js.native
   def insert(request: UploadType, body: LiveBroadcast): Request[LiveBroadcast] = js.native
+  
+  /** Insert cuepoints in a broadcast */
+  def insertCuepoint(request: IdKey): Request[Cuepoint] = js.native
+  def insertCuepoint(request: KeyOauthtoken, body: Cuepoint): Request[Cuepoint] = js.native
   
   /** Retrieve the list of broadcasts associated with the given channel. */
   def list(): Request[LiveBroadcastListResponse] = js.native

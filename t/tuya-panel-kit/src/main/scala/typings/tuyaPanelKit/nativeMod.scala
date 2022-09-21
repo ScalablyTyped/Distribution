@@ -188,7 +188,7 @@ object nativeMod {
   @js.native
   val NavigationContext: Context[
     js.UndefOr[
-      NavigationProp[Record[String, js.UndefOr[js.Object]], String, js.Any, js.Any, js.Object]
+      NavigationProp[Record[String, js.UndefOr[js.Object]], String, Any, Any, js.Object]
     ]
   ] = js.native
   
@@ -211,7 +211,7 @@ object nativeMod {
   
   @JSImport("tuya-panel-kit/@react-navigation/native", "PrivateValueStore")
   @js.native
-  class PrivateValueStore[A, B, C] ()
+  open class PrivateValueStore[A, B, C] ()
     extends typings.tuyaPanelKit.coreMod.PrivateValueStore[A, B, C]
   
   @JSImport("tuya-panel-kit/@react-navigation/native", "ServerContainer")
@@ -267,7 +267,7 @@ object nativeMod {
   
   inline def ThemeProvider(hasValueChildren: typings.tuyaPanelKit.themeProviderMod.Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ThemeProvider")(hasValueChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def createNavigatorFactory[State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */, NavigatorComponent /* <: ComponentType[js.Any] */](Navigator: NavigatorComponent): js.Function0[
+  inline def createNavigatorFactory[State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */, NavigatorComponent /* <: ComponentType[Any] */](Navigator: NavigatorComponent): js.Function0[
     TypedNavigator[
       Record[String, js.UndefOr[js.Object]], 
       State, 
@@ -318,8 +318,8 @@ object nativeMod {
   
   inline def useNavigation[T /* <: NavigationProp[ParamListBase, String, NavigationState[ParamListBase], js.Object, js.Object] */](): T = ^.asInstanceOf[js.Dynamic].applyDynamic("useNavigation")().asInstanceOf[T]
   
-  inline def useNavigationBuilder[State /* <: NavigationState[ParamListBase] */, RouterOptions /* <: DefaultRouterOptions[String] */, ActionHelpers /* <: Record[String, js.Function0[Unit]] */, ScreenOptions /* <: js.Object */, EventMap /* <: Record[String, js.Any] */](
-    createRouter: RouterFactory[State, js.Any, RouterOptions],
+  inline def useNavigationBuilder[State /* <: NavigationState[ParamListBase] */, RouterOptions /* <: DefaultRouterOptions[String] */, ActionHelpers /* <: Record[String, js.Function0[Unit]] */, ScreenOptions /* <: js.Object */, EventMap /* <: Record[String, Any] */](
+    createRouter: RouterFactory[State, Any, RouterOptions],
     options: (DefaultNavigatorOptions[ScreenOptions, ParamListBase]) & RouterOptions
   ): Descriptors[State, EventMap, ActionHelpers, ScreenOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("useNavigationBuilder")(createRouter.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Descriptors[State, EventMap, ActionHelpers, ScreenOptions]]
   

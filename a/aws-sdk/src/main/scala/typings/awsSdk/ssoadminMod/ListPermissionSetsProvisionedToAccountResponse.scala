@@ -33,6 +33,6 @@ object ListPermissionSetsProvisionedToAccountResponse {
     
     inline def setPermissionSetsUndefined: Self = StObject.set(x, "PermissionSets", js.undefined)
     
-    inline def setPermissionSetsVarargs(value: PermissionSetArn*): Self = StObject.set(x, "PermissionSets", js.Array(value :_*))
+    inline def setPermissionSetsVarargs(value: PermissionSetArn*): Self = StObject.set(x, "PermissionSets", js.Array(value*))
   }
 }

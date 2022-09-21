@@ -4,6 +4,7 @@ import typings.elasticApmNode.mod.CaptureBody
 import typings.elasticApmNode.mod.CaptureErrorLogStackTraces
 import typings.elasticApmNode.mod.LogLevel
 import typings.elasticApmNode.mod.Outcome
+import typings.elasticApmNode.mod.TraceContinuationStrategy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,6 +22,18 @@ object elasticApmNodeStrings {
     extends StObject
        with CaptureErrorLogStackTraces
   inline def always: always = "always".asInstanceOf[always]
+  
+  @js.native
+  sealed trait continue
+    extends StObject
+       with TraceContinuationStrategy
+  inline def continue: continue = "continue".asInstanceOf[continue]
+  
+  @js.native
+  sealed trait critical
+    extends StObject
+       with LogLevel
+  inline def critical: critical = "critical".asInstanceOf[critical]
   
   @js.native
   sealed trait debug
@@ -74,7 +87,20 @@ object elasticApmNodeStrings {
   sealed trait off
     extends StObject
        with CaptureBody
+       with LogLevel
   inline def off: off = "off".asInstanceOf[off]
+  
+  @js.native
+  sealed trait restart
+    extends StObject
+       with TraceContinuationStrategy
+  inline def restart: restart = "restart".asInstanceOf[restart]
+  
+  @js.native
+  sealed trait restart_external
+    extends StObject
+       with TraceContinuationStrategy
+  inline def restart_external: restart_external = "restart_external".asInstanceOf[restart_external]
   
   @js.native
   sealed trait success
@@ -105,4 +131,10 @@ object elasticApmNodeStrings {
     extends StObject
        with LogLevel
   inline def warn: warn = "warn".asInstanceOf[warn]
+  
+  @js.native
+  sealed trait warning
+    extends StObject
+       with LogLevel
+  inline def warning: warning = "warning".asInstanceOf[warning]
 }

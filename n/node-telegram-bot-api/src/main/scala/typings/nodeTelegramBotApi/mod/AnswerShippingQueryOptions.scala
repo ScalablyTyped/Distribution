@@ -27,6 +27,6 @@ object AnswerShippingQueryOptions {
     
     inline def setShipping_optionsUndefined: Self = StObject.set(x, "shipping_options", js.undefined)
     
-    inline def setShipping_optionsVarargs(value: ShippingOption*): Self = StObject.set(x, "shipping_options", js.Array(value :_*))
+    inline def setShipping_optionsVarargs(value: ShippingOption*): Self = StObject.set(x, "shipping_options", js.Array(value*))
   }
 }

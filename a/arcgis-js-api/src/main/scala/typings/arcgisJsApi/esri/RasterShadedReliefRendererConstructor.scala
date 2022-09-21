@@ -17,5 +17,5 @@ trait RasterShadedReliefRendererConstructor
 Instantiable0[RasterShadedReliefRenderer]
      with Instantiable1[/* properties */ RasterShadedReliefRendererProperties, RasterShadedReliefRenderer] {
   
-  def fromJSON(json: js.Any): RasterShadedReliefRenderer = js.native
+  def fromJSON(json: Any): RasterShadedReliefRenderer = js.native
 }

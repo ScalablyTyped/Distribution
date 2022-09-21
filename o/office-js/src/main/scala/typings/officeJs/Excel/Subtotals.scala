@@ -5,17 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Subtotals for the Pivot Field.
   *
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
 trait Subtotals extends StObject {
   
   /**
+    * If `Automatic` is set to `true`, then all other values will be ignored when setting the `Subtotals`.
     *
-    * If Automatic is set to true, then all other values will be ignored when setting the Subtotals.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var automatic: js.UndefOr[Boolean] = js.undefined

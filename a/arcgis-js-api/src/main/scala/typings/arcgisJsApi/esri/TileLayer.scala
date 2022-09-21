@@ -1,5 +1,7 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.IHandle
+import typings.arcgisJsApi.arcgisJsApiStrings.refresh
 import typings.arcgisJsApi.arcgisJsApiStrings.tile
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
@@ -16,7 +18,9 @@ trait TileLayer
      with RefreshableLayer
      with ScaleRangeLayer
      with PortalLayer
-     with BlendLayer {
+     with BlendLayer
+     with CustomParametersMixin
+     with APIKeyMixin {
   
   /**
     * A flat [Collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) of all the [sublayers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-TileLayer.html#sublayers) in the TileLayer including the sublayers of its sublayers.
@@ -71,12 +75,19 @@ trait TileLayer
   /**
     * Indicates whether the layer will be included in the legend.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#legendEnabled)
     */
   var legendEnabled: Boolean = js.native
   
+  @JSName("on")
+  def on_refresh(name: refresh, eventHandler: TileLayerRefreshEventHandler): IHandle = js.native
+  
   /**
     * Resampling is enabled by default in 2D [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) and 3D [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-TileLayer.html#resampling)
     */
@@ -87,7 +98,7 @@ trait TileLayer
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-TileLayer.html#sourceJSON)
     */
-  var sourceJSON: js.Any = js.native
+  var sourceJSON: Any = js.native
   
   /**
     * The spatial reference of the layer as defined by the service.

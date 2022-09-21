@@ -10,7 +10,6 @@ import typings.mariasql.mariasqlStrings.end
 import typings.mariasql.mariasqlStrings.error
 import typings.mariasql.mariasqlStrings.result
 import typings.mariasql.mariasqlStrings.row
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +19,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("mariasql", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with MariaClient
   @JSImport("mariasql", JSImport.Namespace)
@@ -63,7 +62,7 @@ object mod extends Shortcut {
     
     var secureAuth: js.UndefOr[Boolean] = js.undefined
     
-    var ssl: js.UndefOr[js.Any] = js.undefined
+    var ssl: js.UndefOr[Any] = js.undefined
     
     var unixSocket: js.UndefOr[String] = js.undefined
     
@@ -126,7 +125,7 @@ object mod extends Shortcut {
       
       inline def setSecureAuthUndefined: Self = StObject.set(x, "secureAuth", js.undefined)
       
-      inline def setSsl(value: js.Any): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
+      inline def setSsl(value: Any): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
       
       inline def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
       
@@ -138,11 +137,11 @@ object mod extends Shortcut {
     }
   }
   
-  type Dictionary = StringDictionary[js.Any]
+  type Dictionary = StringDictionary[Any]
   
   type MariaCallBackBoolean = js.Function1[/* result */ Boolean, Unit]
   
-  type MariaCallBackError = js.Function1[/* error */ Error, Unit]
+  type MariaCallBackError = js.Function1[/* error */ js.Error, Unit]
   
   type MariaCallBackInfo = js.Function1[/* result */ MariaInfo, Unit]
   
@@ -150,7 +149,7 @@ object mod extends Shortcut {
   
   type MariaCallBackResult = js.Function1[/* result */ MariaResult, Unit]
   
-  type MariaCallBackRow = js.Function1[/* result */ js.Array[js.Any], Unit]
+  type MariaCallBackRow = js.Function1[/* result */ js.Array[Any], Unit]
   
   type MariaCallBackVoid = js.Function0[Unit]
   
@@ -180,8 +179,8 @@ object mod extends Shortcut {
     def prepare(query: String): MariaPreparedQuery = js.native
     
     def query(q: String): MariaQuery = js.native
-    def query(q: String, placeHolders: js.Array[js.Any]): MariaQuery = js.native
-    def query(q: String, placeHolders: js.Array[js.Any], useArray: Boolean): MariaQuery = js.native
+    def query(q: String, placeHolders: js.Array[Any]): MariaQuery = js.native
+    def query(q: String, placeHolders: js.Array[Any], useArray: Boolean): MariaQuery = js.native
     def query(q: String, placeHolders: Unit, useArray: Boolean): MariaQuery = js.native
     def query(q: String, placeHolders: Dictionary): MariaQuery = js.native
     def query(q: String, placeHolders: Dictionary, useArray: Boolean): MariaQuery = js.native
@@ -218,7 +217,7 @@ object mod extends Shortcut {
   @js.native
   trait MariaPreparedQuery extends StObject {
     
-    def apply(values: js.Array[js.Any]): String = js.native
+    def apply(values: js.Array[Any]): String = js.native
     def apply(values: Dictionary): String = js.native
   }
   

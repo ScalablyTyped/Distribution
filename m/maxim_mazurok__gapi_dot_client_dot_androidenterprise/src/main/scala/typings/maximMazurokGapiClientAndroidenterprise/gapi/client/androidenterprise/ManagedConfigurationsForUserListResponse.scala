@@ -22,6 +22,6 @@ object ManagedConfigurationsForUserListResponse {
     
     inline def setManagedConfigurationForUserUndefined: Self = StObject.set(x, "managedConfigurationForUser", js.undefined)
     
-    inline def setManagedConfigurationForUserVarargs(value: ManagedConfiguration*): Self = StObject.set(x, "managedConfigurationForUser", js.Array(value :_*))
+    inline def setManagedConfigurationForUserVarargs(value: ManagedConfiguration*): Self = StObject.set(x, "managedConfigurationForUser", js.Array(value*))
   }
 }

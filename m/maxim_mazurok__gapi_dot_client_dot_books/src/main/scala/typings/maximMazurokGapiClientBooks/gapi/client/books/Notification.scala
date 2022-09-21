@@ -57,7 +57,7 @@ object Notification {
     
     inline def setCrmExperimentIdsUndefined: Self = StObject.set(x, "crmExperimentIds", js.undefined)
     
-    inline def setCrmExperimentIdsVarargs(value: String*): Self = StObject.set(x, "crmExperimentIds", js.Array(value :_*))
+    inline def setCrmExperimentIdsVarargs(value: String*): Self = StObject.set(x, "crmExperimentIds", js.Array(value*))
     
     inline def setDoc_id(value: String): Self = StObject.set(x, "doc_id", value.asInstanceOf[js.Any])
     

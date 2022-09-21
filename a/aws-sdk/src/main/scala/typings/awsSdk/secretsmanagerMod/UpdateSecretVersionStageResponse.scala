@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateSecretVersionStageResponse extends StObject {
   
   /**
-    * The ARN of the secret with the modified staging label.
+    * The ARN of the secret that was updated.
     */
   var ARN: js.UndefOr[SecretARNType] = js.undefined
   
   /**
-    * The friendly name of the secret with the modified staging label.
+    * The name of the secret that was updated.
     */
   var Name: js.UndefOr[SecretNameType] = js.undefined
 }

@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param tracks
   *        A list of tracks to initialize the list with.
   */
-class TrackListCls ()
+open class TrackListCls ()
   extends StObject
      with TrackList {
   def this(tracks: js.Array[Track]) = this()

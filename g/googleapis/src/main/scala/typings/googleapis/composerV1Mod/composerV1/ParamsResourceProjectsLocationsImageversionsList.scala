@@ -1,9 +1,5 @@
 package typings.googleapis.composerV1Mod.composerV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,9 +9,9 @@ trait ParamsResourceProjectsLocationsImageversionsList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
+    * Whether or not image versions from old releases should be included.
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
+  var includePastReleases: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The maximum number of image_versions to return.
@@ -28,8 +24,7 @@ trait ParamsResourceProjectsLocationsImageversionsList
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * List ImageVersions in the given project and location, in the form:
-    * "projects/{projectId}/locations/{locationId}"
+    * List ImageVersions in the given project and location, in the form: "projects/{projectId\}/locations/{locationId\}"
     */
   var parent: js.UndefOr[String] = js.undefined
 }
@@ -42,9 +37,9 @@ object ParamsResourceProjectsLocationsImageversionsList {
   
   extension [Self <: ParamsResourceProjectsLocationsImageversionsList](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setIncludePastReleases(value: Boolean): Self = StObject.set(x, "includePastReleases", value.asInstanceOf[js.Any])
     
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setIncludePastReleasesUndefined: Self = StObject.set(x, "includePastReleases", js.undefined)
     
     inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     

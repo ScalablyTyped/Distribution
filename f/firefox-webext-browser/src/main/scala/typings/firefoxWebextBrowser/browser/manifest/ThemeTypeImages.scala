@@ -28,7 +28,7 @@ object ThemeTypeImages {
     
     inline def setAdditional_backgroundsUndefined: Self = StObject.set(x, "additional_backgrounds", js.undefined)
     
-    inline def setAdditional_backgroundsVarargs(value: ImageDataOrExtensionURL*): Self = StObject.set(x, "additional_backgrounds", js.Array(value :_*))
+    inline def setAdditional_backgroundsVarargs(value: ImageDataOrExtensionURL*): Self = StObject.set(x, "additional_backgrounds", js.Array(value*))
     
     inline def setHeaderURL(value: ImageDataOrExtensionURL): Self = StObject.set(x, "headerURL", value.asInstanceOf[js.Any])
     

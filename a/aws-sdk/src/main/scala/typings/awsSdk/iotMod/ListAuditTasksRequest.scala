@@ -9,7 +9,7 @@ trait ListAuditTasksRequest extends StObject {
   /**
     * The end of the time period.
     */
-  var endTime: Timestamp
+  var endTime: js.Date
   
   /**
     * The maximum number of results to return at one time. The default is 25.
@@ -24,7 +24,7 @@ trait ListAuditTasksRequest extends StObject {
   /**
     * The beginning of the time period. Audit information is retained for a limited time (90 days). Requesting a start time prior to what is retained results in an "InvalidRequestException".
     */
-  var startTime: Timestamp
+  var startTime: js.Date
   
   /**
     * A filter to limit the output to audits with the specified completion status: can be one of "IN_PROGRESS", "COMPLETED", "FAILED", or "CANCELED".
@@ -38,14 +38,14 @@ trait ListAuditTasksRequest extends StObject {
 }
 object ListAuditTasksRequest {
   
-  inline def apply(endTime: Timestamp, startTime: Timestamp): ListAuditTasksRequest = {
+  inline def apply(endTime: js.Date, startTime: js.Date): ListAuditTasksRequest = {
     val __obj = js.Dynamic.literal(endTime = endTime.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAuditTasksRequest]
   }
   
   extension [Self <: ListAuditTasksRequest](x: Self) {
     
-    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
@@ -55,7 +55,7 @@ object ListAuditTasksRequest {
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     inline def setTaskStatus(value: AuditTaskStatus): Self = StObject.set(x, "taskStatus", value.asInstanceOf[js.Any])
     

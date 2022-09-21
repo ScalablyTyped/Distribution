@@ -6,20 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ProjectsResource extends StObject {
   
-  var authorizeddomains: AuthorizeddomainsResource
-  
   var locations: LocationsResource
 }
 object ProjectsResource {
   
-  inline def apply(authorizeddomains: AuthorizeddomainsResource, locations: LocationsResource): ProjectsResource = {
-    val __obj = js.Dynamic.literal(authorizeddomains = authorizeddomains.asInstanceOf[js.Any], locations = locations.asInstanceOf[js.Any])
+  inline def apply(locations: LocationsResource): ProjectsResource = {
+    val __obj = js.Dynamic.literal(locations = locations.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectsResource]
   }
   
   extension [Self <: ProjectsResource](x: Self) {
-    
-    inline def setAuthorizeddomains(value: AuthorizeddomainsResource): Self = StObject.set(x, "authorizeddomains", value.asInstanceOf[js.Any])
     
     inline def setLocations(value: LocationsResource): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
   }

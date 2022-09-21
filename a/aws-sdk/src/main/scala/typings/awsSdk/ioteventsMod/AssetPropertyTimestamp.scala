@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AssetPropertyTimestamp extends StObject {
   
   /**
-    * The nanosecond offset converted from timeInSeconds. The valid range is between 0-999999999. You can also specify an expression.
+    * The nanosecond offset converted from timeInSeconds. The valid range is between 0-999999999.
     */
   var offsetInNanos: js.UndefOr[AssetPropertyOffsetInNanos] = js.undefined
   
   /**
-    * The timestamp, in seconds, in the Unix epoch format. The valid range is between 1-31556889864403199. You can also specify an expression.
+    * The timestamp, in seconds, in the Unix epoch format. The valid range is between 1-31556889864403199.
     */
   var timeInSeconds: AssetPropertyTimeInSeconds
 }

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-scrollbar-size" : "5.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-scrollbar-size" : "5.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

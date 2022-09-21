@@ -24,7 +24,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.sharp.sharpStrings.overlay
   - typings.sharp.sharpStrings.darken
   - typings.sharp.sharpStrings.lighten
+  - typings.sharp.sharpStrings.`color-dodge`
   - typings.sharp.sharpStrings.`colour-dodge`
+  - typings.sharp.sharpStrings.`color-burn`
   - typings.sharp.sharpStrings.`colour-burn`
   - typings.sharp.sharpStrings.`hard-light`
   - typings.sharp.sharpStrings.`soft-light`
@@ -39,6 +41,10 @@ object Blend {
   inline def atop: typings.sharp.sharpStrings.atop = "atop".asInstanceOf[typings.sharp.sharpStrings.atop]
   
   inline def clear: typings.sharp.sharpStrings.clear = "clear".asInstanceOf[typings.sharp.sharpStrings.clear]
+  
+  inline def `color-burn`: typings.sharp.sharpStrings.`color-burn` = "color-burn".asInstanceOf[typings.sharp.sharpStrings.`color-burn`]
+  
+  inline def `color-dodge`: typings.sharp.sharpStrings.`color-dodge` = "color-dodge".asInstanceOf[typings.sharp.sharpStrings.`color-dodge`]
   
   inline def `colour-burn`: typings.sharp.sharpStrings.`colour-burn` = "colour-burn".asInstanceOf[typings.sharp.sharpStrings.`colour-burn`]
   

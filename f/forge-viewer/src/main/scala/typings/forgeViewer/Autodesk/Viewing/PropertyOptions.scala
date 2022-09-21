@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PropertyOptions
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var ignoreHidden: js.UndefOr[Boolean] = js.undefined
   
@@ -30,6 +30,6 @@ object PropertyOptions {
     
     inline def setPropFilterUndefined: Self = StObject.set(x, "propFilter", js.undefined)
     
-    inline def setPropFilterVarargs(value: String*): Self = StObject.set(x, "propFilter", js.Array(value :_*))
+    inline def setPropFilterVarargs(value: String*): Self = StObject.set(x, "propFilter", js.Array(value*))
   }
 }

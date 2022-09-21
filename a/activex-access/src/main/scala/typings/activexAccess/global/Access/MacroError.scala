@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.MacroError")
 @js.native
-/* private */ class MacroError ()
+/* private */ open class MacroError ()
   extends StObject
      with typings.activexAccess.Access.MacroError {
   

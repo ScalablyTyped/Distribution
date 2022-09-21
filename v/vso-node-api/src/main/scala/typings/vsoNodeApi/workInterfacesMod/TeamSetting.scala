@@ -43,7 +43,7 @@ trait TeamSetting
 object TeamSetting {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     backlogIteration: TeamSettingsIteration,
     backlogVisibilities: StringDictionary[Boolean],
     bugsBehavior: BugsBehavior,
@@ -70,6 +70,6 @@ object TeamSetting {
     
     inline def setWorkingDays(value: js.Array[DayOfWeek]): Self = StObject.set(x, "workingDays", value.asInstanceOf[js.Any])
     
-    inline def setWorkingDaysVarargs(value: DayOfWeek*): Self = StObject.set(x, "workingDays", js.Array(value :_*))
+    inline def setWorkingDaysVarargs(value: DayOfWeek*): Self = StObject.set(x, "workingDays", js.Array(value*))
   }
 }

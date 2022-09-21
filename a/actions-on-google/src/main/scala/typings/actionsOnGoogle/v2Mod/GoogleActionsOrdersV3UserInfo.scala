@@ -60,6 +60,6 @@ object GoogleActionsOrdersV3UserInfo {
     
     inline def setPhoneNumbersUndefined: Self = StObject.set(x, "phoneNumbers", js.undefined)
     
-    inline def setPhoneNumbersVarargs(value: GoogleActionsOrdersV3PhoneNumber*): Self = StObject.set(x, "phoneNumbers", js.Array(value :_*))
+    inline def setPhoneNumbersVarargs(value: GoogleActionsOrdersV3PhoneNumber*): Self = StObject.set(x, "phoneNumbers", js.Array(value*))
   }
 }

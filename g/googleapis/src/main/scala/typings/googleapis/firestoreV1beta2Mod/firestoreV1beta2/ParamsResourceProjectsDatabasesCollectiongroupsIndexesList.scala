@@ -1,9 +1,5 @@
 package typings.googleapis.firestoreV1beta2Mod.firestoreV1beta2
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,11 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ParamsResourceProjectsDatabasesCollectiongroupsIndexesList
   extends StObject
      with StandardParameters {
-  
-  /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The filter to apply to list results.
@@ -28,15 +19,12 @@ trait ParamsResourceProjectsDatabasesCollectiongroupsIndexesList
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * A page token, returned from a previous call to
-    * FirestoreAdmin.ListIndexes, that may be used to get the next page of
-    * results.
+    * A page token, returned from a previous call to FirestoreAdmin.ListIndexes, that may be used to get the next page of results.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * A parent name of the form
-    * `projects/{project_id}/databases/{database_id}/collectionGroups/{collection_id}`
+    * A parent name of the form `projects/{project_id\}/databases/{database_id\}/collectionGroups/{collection_id\}`
     */
   var parent: js.UndefOr[String] = js.undefined
 }
@@ -48,10 +36,6 @@ object ParamsResourceProjectsDatabasesCollectiongroupsIndexesList {
   }
   
   extension [Self <: ParamsResourceProjectsDatabasesCollectiongroupsIndexesList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

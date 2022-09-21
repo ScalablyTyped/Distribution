@@ -23,7 +23,7 @@ object NavigationResetActionPayload {
     
     inline def setActions(value: js.Array[NavigationNavigateAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    inline def setActionsVarargs(value: NavigationNavigateAction*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: NavigationNavigateAction*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

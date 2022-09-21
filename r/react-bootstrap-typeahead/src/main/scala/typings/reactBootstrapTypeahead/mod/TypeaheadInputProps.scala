@@ -9,8 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Pick<react-bootstrap-typeahead.react-bootstrap-typeahead.TypeaheadProps<T>, react-bootstrap-typeahead.react-bootstrap-typeahead.TypeaheadInputPropKeys> */
 trait TypeaheadInputProps[T /* <: TypeaheadModel */] extends StObject {
   
-  var bsSize: js.UndefOr[TypeaheadBsSizes] = js.undefined
-  
   var disabled: js.UndefOr[Boolean] = js.undefined
   
   var inputProps: js.UndefOr[InputProps] = js.undefined
@@ -30,7 +28,7 @@ trait TypeaheadInputProps[T /* <: TypeaheadModel */] extends StObject {
   var placeholder: js.UndefOr[String] = js.undefined
   
   var renderToken: js.UndefOr[
-    js.Function3[/* selectedItem */ T, /* props */ TypeaheadMenuProps[T], /* index */ Double, ReactNode]
+    js.Function3[/* selectedItem */ T, /* props */ TokenProps, /* index */ Double, ReactNode]
   ] = js.undefined
   
   var selected: js.UndefOr[js.Array[T]] = js.undefined
@@ -43,10 +41,6 @@ object TypeaheadInputProps {
   }
   
   extension [Self <: TypeaheadInputProps[?], T /* <: TypeaheadModel */](x: Self & TypeaheadInputProps[T]) {
-    
-    inline def setBsSize(value: TypeaheadBsSizes): Self = StObject.set(x, "bsSize", value.asInstanceOf[js.Any])
-    
-    inline def setBsSizeUndefined: Self = StObject.set(x, "bsSize", js.undefined)
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
@@ -86,7 +80,7 @@ object TypeaheadInputProps {
     
     inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
-    inline def setRenderToken(value: (/* selectedItem */ T, /* props */ TypeaheadMenuProps[T], /* index */ Double) => ReactNode): Self = StObject.set(x, "renderToken", js.Any.fromFunction3(value))
+    inline def setRenderToken(value: (/* selectedItem */ T, /* props */ TokenProps, /* index */ Double) => ReactNode): Self = StObject.set(x, "renderToken", js.Any.fromFunction3(value))
     
     inline def setRenderTokenUndefined: Self = StObject.set(x, "renderToken", js.undefined)
     
@@ -94,6 +88,6 @@ object TypeaheadInputProps {
     
     inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
-    inline def setSelectedVarargs(value: T*): Self = StObject.set(x, "selected", js.Array(value :_*))
+    inline def setSelectedVarargs(value: T*): Self = StObject.set(x, "selected", js.Array(value*))
   }
 }

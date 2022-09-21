@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mjml-react", "MjmlNavbar")
 @js.native
-class MjmlNavbar protected ()
-  extends Component[MjmlNavbarProps & RequiredChildrenProps, js.Object, js.Any] {
-  def this(props: MjmlNavbarProps & RequiredChildrenProps) = this()
+open class MjmlNavbar protected ()
+  extends Component[MjmlNavbarProps, js.Object, Any] {
+  def this(props: MjmlNavbarProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: MjmlNavbarProps & RequiredChildrenProps, context: js.Any) = this()
+  def this(props: MjmlNavbarProps, context: Any) = this()
 }

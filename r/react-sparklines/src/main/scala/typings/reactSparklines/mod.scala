@@ -6,6 +6,7 @@ import typings.react.mod.Component
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.PureComponent
+import typings.react.mod.ReactNode
 import typings.react.mod.ReactSVGElement
 import typings.reactSparklines.reactSparklinesStrings.avg
 import typings.reactSparklines.reactSparklinesStrings.click
@@ -23,98 +24,98 @@ object mod {
   
   @JSImport("react-sparklines", "Sparklines")
   @js.native
-  class Sparklines protected ()
-    extends PureComponent[SparklinesProps, js.Object, js.Any] {
+  open class Sparklines protected ()
+    extends PureComponent[SparklinesProps, js.Object, Any] {
     def this(props: SparklinesProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: SparklinesProps, context: js.Any) = this()
+    def this(props: SparklinesProps, context: Any) = this()
   }
   
   @JSImport("react-sparklines", "SparklinesBars")
   @js.native
-  class SparklinesBars protected ()
-    extends Component[SparklinesBarsProps, js.Object, js.Any] {
+  open class SparklinesBars protected ()
+    extends Component[SparklinesBarsProps, js.Object, Any] {
     def this(props: SparklinesBarsProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: SparklinesBarsProps, context: js.Any) = this()
+    def this(props: SparklinesBarsProps, context: Any) = this()
   }
   
   @JSImport("react-sparklines", "SparklinesCurve")
   @js.native
-  class SparklinesCurve protected ()
-    extends Component[SparklinesCurveProps, js.Object, js.Any] {
+  open class SparklinesCurve protected ()
+    extends Component[SparklinesCurveProps, js.Object, Any] {
     def this(props: SparklinesCurveProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: SparklinesCurveProps, context: js.Any) = this()
+    def this(props: SparklinesCurveProps, context: Any) = this()
   }
   
   @JSImport("react-sparklines", "SparklinesLine")
   @js.native
-  class SparklinesLine protected ()
-    extends Component[SparklinesLineProps, js.Object, js.Any] {
+  open class SparklinesLine protected ()
+    extends Component[SparklinesLineProps, js.Object, Any] {
     def this(props: SparklinesLineProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: SparklinesLineProps, context: js.Any) = this()
+    def this(props: SparklinesLineProps, context: Any) = this()
   }
   
   @JSImport("react-sparklines", "SparklinesNormalBand")
   @js.native
-  class SparklinesNormalBand protected ()
-    extends Component[SparklinesNormalBandProps, js.Object, js.Any] {
+  open class SparklinesNormalBand protected ()
+    extends Component[SparklinesNormalBandProps, js.Object, Any] {
     def this(props: SparklinesNormalBandProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: SparklinesNormalBandProps, context: js.Any) = this()
+    def this(props: SparklinesNormalBandProps, context: Any) = this()
   }
   
   @JSImport("react-sparklines", "SparklinesReferenceLine")
   @js.native
-  class SparklinesReferenceLine protected ()
-    extends Component[SparklinesReferenceLineProps, js.Object, js.Any] {
+  open class SparklinesReferenceLine protected ()
+    extends Component[SparklinesReferenceLineProps, js.Object, Any] {
     def this(props: SparklinesReferenceLineProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: SparklinesReferenceLineProps, context: js.Any) = this()
+    def this(props: SparklinesReferenceLineProps, context: Any) = this()
   }
   
   @JSImport("react-sparklines", "SparklinesSpots")
   @js.native
-  class SparklinesSpots protected ()
-    extends Component[SparklinesSpotsProps, js.Object, js.Any] {
+  open class SparklinesSpots protected ()
+    extends Component[SparklinesSpotsProps, js.Object, Any] {
     def this(props: SparklinesSpotsProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: SparklinesSpotsProps, context: js.Any) = this()
+    def this(props: SparklinesSpotsProps, context: Any) = this()
   }
   
   @JSImport("react-sparklines", "SparklinesText")
   @js.native
-  class SparklinesText protected ()
-    extends Component[SparklinesTextProps, js.Object, js.Any] {
+  open class SparklinesText protected ()
+    extends Component[SparklinesTextProps, js.Object, Any] {
     def this(props: SparklinesTextProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: SparklinesTextProps, context: js.Any) = this()
+    def this(props: SparklinesTextProps, context: Any) = this()
   }
   
   trait Point extends StObject {
@@ -183,7 +184,7 @@ object mod {
       
       inline def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
       
-      inline def setPointsVarargs(value: Point*): Self = StObject.set(x, "points", js.Array(value :_*))
+      inline def setPointsVarargs(value: Point*): Self = StObject.set(x, "points", js.Array(value*))
       
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
@@ -270,6 +271,8 @@ object mod {
   
   trait SparklinesProps extends StObject {
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var data: js.UndefOr[js.Array[Double]] = js.undefined
     
     var height: js.UndefOr[Double] = js.undefined
@@ -301,11 +304,15 @@ object mod {
     
     extension [Self <: SparklinesProps](x: Self) {
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setData(value: js.Array[Double]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDataVarargs(value: Double*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Double*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

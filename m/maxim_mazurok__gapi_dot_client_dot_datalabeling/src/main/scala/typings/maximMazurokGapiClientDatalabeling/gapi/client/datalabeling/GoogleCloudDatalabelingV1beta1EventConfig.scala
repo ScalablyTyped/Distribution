@@ -28,7 +28,7 @@ object GoogleCloudDatalabelingV1beta1EventConfig {
     
     inline def setAnnotationSpecSetsUndefined: Self = StObject.set(x, "annotationSpecSets", js.undefined)
     
-    inline def setAnnotationSpecSetsVarargs(value: String*): Self = StObject.set(x, "annotationSpecSets", js.Array(value :_*))
+    inline def setAnnotationSpecSetsVarargs(value: String*): Self = StObject.set(x, "annotationSpecSets", js.Array(value*))
     
     inline def setClipLength(value: Double): Self = StObject.set(x, "clipLength", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,7 @@ trait IdentityPool extends StObject {
   var IdentityPoolTags: js.UndefOr[IdentityPoolTagsType] = js.undefined
   
   /**
-    * A list of OpendID Connect provider ARNs.
+    * The ARNs of the OpenID Connect providers.
     */
   var OpenIdConnectProviderARNs: js.UndefOr[OIDCProviderList] = js.undefined
   
@@ -79,7 +79,7 @@ object IdentityPool {
     
     inline def setCognitoIdentityProvidersUndefined: Self = StObject.set(x, "CognitoIdentityProviders", js.undefined)
     
-    inline def setCognitoIdentityProvidersVarargs(value: CognitoIdentityProvider*): Self = StObject.set(x, "CognitoIdentityProviders", js.Array(value :_*))
+    inline def setCognitoIdentityProvidersVarargs(value: CognitoIdentityProvider*): Self = StObject.set(x, "CognitoIdentityProviders", js.Array(value*))
     
     inline def setDeveloperProviderName(value: DeveloperProviderName): Self = StObject.set(x, "DeveloperProviderName", value.asInstanceOf[js.Any])
     
@@ -97,13 +97,13 @@ object IdentityPool {
     
     inline def setOpenIdConnectProviderARNsUndefined: Self = StObject.set(x, "OpenIdConnectProviderARNs", js.undefined)
     
-    inline def setOpenIdConnectProviderARNsVarargs(value: ARNString*): Self = StObject.set(x, "OpenIdConnectProviderARNs", js.Array(value :_*))
+    inline def setOpenIdConnectProviderARNsVarargs(value: ARNString*): Self = StObject.set(x, "OpenIdConnectProviderARNs", js.Array(value*))
     
     inline def setSamlProviderARNs(value: SAMLProviderList): Self = StObject.set(x, "SamlProviderARNs", value.asInstanceOf[js.Any])
     
     inline def setSamlProviderARNsUndefined: Self = StObject.set(x, "SamlProviderARNs", js.undefined)
     
-    inline def setSamlProviderARNsVarargs(value: ARNString*): Self = StObject.set(x, "SamlProviderARNs", js.Array(value :_*))
+    inline def setSamlProviderARNsVarargs(value: ARNString*): Self = StObject.set(x, "SamlProviderARNs", js.Array(value*))
     
     inline def setSupportedLoginProviders(value: IdentityProviders): Self = StObject.set(x, "SupportedLoginProviders", value.asInstanceOf[js.Any])
     

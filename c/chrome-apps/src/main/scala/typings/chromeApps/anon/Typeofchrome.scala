@@ -313,7 +313,7 @@ trait Typeofchrome extends StObject {
     * object that has details about the elapsed alarm.
     * @since Chrome 25.
     */
-  val events: js.Any
+  val events: Any
   
   // #endregion
   // #region placeholders
@@ -325,7 +325,7 @@ trait Typeofchrome extends StObject {
     * Please consult the official documentation.
     * @see[Documentation]{@link https://developer.chrome.com/apps/experimental}
     */
-  val experimental: js.Any
+  val experimental: Any
   
   // #endregion
   // #region chrome.extensionTypes
@@ -731,7 +731,7 @@ trait Typeofchrome extends StObject {
   /**
     * The chrome.types API contains type declarations for Chrome.
     */
-  val types: js.Any
+  val types: Any
   
   // #endregion
   // #region chrome.usb
@@ -794,7 +794,7 @@ trait Typeofchrome extends StObject {
   
   // #endregion
   // #region chrome.webRequest
-  val webRequest: js.Any
+  val webRequest: Any
   
   // #endregion
   // #region chrome.webViewRequest
@@ -831,8 +831,8 @@ object Typeofchrome {
     dns: Typeofdns,
     documentScan: TypeofdocumentScan,
     enterprise: Typeofenterprise,
-    events: js.Any,
-    experimental: js.Any,
+    events: Any,
+    experimental: Any,
     extensionTypes: TypeofextensionTypes,
     fileBrowserHandler: TypeoffileBrowserHandler,
     fileSystem: TypeoffileSystem,
@@ -861,12 +861,12 @@ object Typeofchrome {
     syncFileSystem: TypeofsyncFileSystem,
     system: Typeofsystem,
     tts: Typeoftts,
-    types: js.Any,
+    types: Any,
     usb: Typeofusb,
     virtualKeyboard: TypeofvirtualKeyboard,
     vpnProvider: TypeofvpnProvider,
     wallpaper: Typeofwallpaper,
-    webRequest: js.Any,
+    webRequest: Any,
     webViewRequest: TypeofwebViewRequest
   ): Typeofchrome = {
     val __obj = js.Dynamic.literal(Event = Event.asInstanceOf[js.Any], accessibilityFeatures = accessibilityFeatures.asInstanceOf[js.Any], alarms = alarms.asInstanceOf[js.Any], app = app.asInstanceOf[js.Any], audio = audio.asInstanceOf[js.Any], bluetooth = bluetooth.asInstanceOf[js.Any], bluetoothLowEnergy = bluetoothLowEnergy.asInstanceOf[js.Any], bluetoothSocket = bluetoothSocket.asInstanceOf[js.Any], browser = browser.asInstanceOf[js.Any], certificateProvider = certificateProvider.asInstanceOf[js.Any], clipboard = clipboard.asInstanceOf[js.Any], commands = commands.asInstanceOf[js.Any], contextMenus = contextMenus.asInstanceOf[js.Any], csi = js.Any.fromFunction0(csi), desktopCapture = desktopCapture.asInstanceOf[js.Any], diagnostics = diagnostics.asInstanceOf[js.Any], displaySource = displaySource.asInstanceOf[js.Any], dns = dns.asInstanceOf[js.Any], documentScan = documentScan.asInstanceOf[js.Any], enterprise = enterprise.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], experimental = experimental.asInstanceOf[js.Any], extensionTypes = extensionTypes.asInstanceOf[js.Any], fileBrowserHandler = fileBrowserHandler.asInstanceOf[js.Any], fileSystem = fileSystem.asInstanceOf[js.Any], fileSystemProvider = fileSystemProvider.asInstanceOf[js.Any], gcm = gcm.asInstanceOf[js.Any], hid = hid.asInstanceOf[js.Any], i18n = i18n.asInstanceOf[js.Any], identity = identity.asInstanceOf[js.Any], idle = idle.asInstanceOf[js.Any], instanceID = instanceID.asInstanceOf[js.Any], loadTimes = js.Any.fromFunction0(loadTimes), management = management.asInstanceOf[js.Any], mdns = mdns.asInstanceOf[js.Any], mediaGalleries = mediaGalleries.asInstanceOf[js.Any], networking = networking.asInstanceOf[js.Any], notifications = notifications.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any], platformKeys = platformKeys.asInstanceOf[js.Any], power = power.asInstanceOf[js.Any], printerProvider = printerProvider.asInstanceOf[js.Any], runtime = runtime.asInstanceOf[js.Any], serial = serial.asInstanceOf[js.Any], signedInDevices = signedInDevices.asInstanceOf[js.Any], sockets = sockets.asInstanceOf[js.Any], storage = storage.asInstanceOf[js.Any], syncFileSystem = syncFileSystem.asInstanceOf[js.Any], system = system.asInstanceOf[js.Any], tts = tts.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any], usb = usb.asInstanceOf[js.Any], virtualKeyboard = virtualKeyboard.asInstanceOf[js.Any], vpnProvider = vpnProvider.asInstanceOf[js.Any], wallpaper = wallpaper.asInstanceOf[js.Any], webRequest = webRequest.asInstanceOf[js.Any], webViewRequest = webViewRequest.asInstanceOf[js.Any])
@@ -915,9 +915,9 @@ object Typeofchrome {
     
     inline def setEvent(value: Instantiable): Self = StObject.set(x, "Event", value.asInstanceOf[js.Any])
     
-    inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    inline def setExperimental(value: js.Any): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
+    inline def setExperimental(value: Any): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
     
     inline def setExtensionTypes(value: TypeofextensionTypes): Self = StObject.set(x, "extensionTypes", value.asInstanceOf[js.Any])
     
@@ -975,7 +975,7 @@ object Typeofchrome {
     
     inline def setTts(value: Typeoftts): Self = StObject.set(x, "tts", value.asInstanceOf[js.Any])
     
-    inline def setTypes(value: js.Any): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: Any): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
     inline def setUsb(value: Typeofusb): Self = StObject.set(x, "usb", value.asInstanceOf[js.Any])
     
@@ -985,7 +985,7 @@ object Typeofchrome {
     
     inline def setWallpaper(value: Typeofwallpaper): Self = StObject.set(x, "wallpaper", value.asInstanceOf[js.Any])
     
-    inline def setWebRequest(value: js.Any): Self = StObject.set(x, "webRequest", value.asInstanceOf[js.Any])
+    inline def setWebRequest(value: Any): Self = StObject.set(x, "webRequest", value.asInstanceOf[js.Any])
     
     inline def setWebViewRequest(value: TypeofwebViewRequest): Self = StObject.set(x, "webViewRequest", value.asInstanceOf[js.Any])
   }

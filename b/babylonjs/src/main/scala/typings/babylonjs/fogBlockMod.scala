@@ -10,16 +10,16 @@ object fogBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/Dual/fogBlock", "FogBlock")
   @js.native
-  class FogBlock protected () extends NodeMaterialBlock {
+  open class FogBlock protected () extends NodeMaterialBlock {
     /**
       * Create a new FogBlock
       * @param name defines the block name
       */
     def this(name: String) = this()
     
-    /* private */ var _fogDistanceName: js.Any = js.native
+    /* private */ var _fogDistanceName: Any = js.native
     
-    /* private */ var _fogParameters: js.Any = js.native
+    /* private */ var _fogParameters: Any = js.native
     
     /**
       * Gets the fog color input component

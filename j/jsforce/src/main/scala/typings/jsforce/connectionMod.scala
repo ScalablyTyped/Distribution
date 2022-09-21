@@ -18,6 +18,7 @@ import typings.jsforce.describeResultMod.DescribeSObjectOptions
 import typings.jsforce.describeResultMod.DescribeSObjectResult
 import typings.jsforce.httpApiMod.HttpApiOptions
 import typings.jsforce.jsforceStrings.refresh
+import typings.jsforce.limitsInfoMod.LimitInfo
 import typings.jsforce.limitsInfoMod.LimitsInfo
 import typings.jsforce.metadataMod.Metadata
 import typings.jsforce.mod.OAuth2
@@ -28,10 +29,9 @@ import typings.jsforce.queryMod.QueryResult
 import typings.jsforce.recordMod.Record
 import typings.jsforce.recordResultMod.RecordResult
 import typings.jsforce.salesforceObjectMod.SObject
+import typings.jsforce.soapMod.SoapApi
 import typings.node.eventsMod.EventEmitter
 import typings.node.eventsMod.EventEmitterOptions
-import typings.std.Date
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,60 +48,60 @@ object connectionMod {
     def batchDescribe(options: BatchDescribeSObjectOptions): js.Promise[js.Array[DescribeSObjectResult]] = js.native
     def batchDescribe(
       options: BatchDescribeSObjectOptions,
-      callback: js.Function2[/* err */ Error, /* result */ js.Array[DescribeSObjectResult], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ js.Array[DescribeSObjectResult], Unit]
     ): js.Promise[js.Array[DescribeSObjectResult]] = js.native
     
     def create[T](records: js.Array[Record[T]]): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def create[T](
       records: js.Array[Record[T]],
       options: Unit,
-      callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def create[T](records: js.Array[Record[T]], options: RestApiOptions): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def create[T](
       records: js.Array[Record[T]],
       options: RestApiOptions,
-      callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def create[T](records: Record[T]): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def create[T](
       records: Record[T],
       options: Unit,
-      callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def create[T](records: Record[T], options: RestApiOptions): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def create[T](
       records: Record[T],
       options: RestApiOptions,
-      callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def create[T](`type`: String, records: js.Array[Record[T]]): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def create[T](
       `type`: String,
       records: js.Array[Record[T]],
       options: Unit,
-      callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def create[T](`type`: String, records: js.Array[Record[T]], options: RestApiOptions): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def create[T](
       `type`: String,
       records: js.Array[Record[T]],
       options: RestApiOptions,
-      callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def create[T](`type`: String, records: Record[T]): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def create[T](
       `type`: String,
       records: Record[T],
       options: Unit,
-      callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def create[T](`type`: String, records: Record[T], options: RestApiOptions): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def create[T](
       `type`: String,
       records: Record[T],
       options: RestApiOptions,
-      callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     
     def del[T](`type`: String, ids: String): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
@@ -109,28 +109,28 @@ object connectionMod {
       `type`: String,
       ids: String,
       options: Unit,
-      callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def del[T](`type`: String, ids: String, options: RestApiOptions): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def del[T](
       `type`: String,
       ids: String,
       options: RestApiOptions,
-      callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def del[T](`type`: String, ids: js.Array[String]): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def del[T](
       `type`: String,
       ids: js.Array[String],
       options: Unit,
-      callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def del[T](`type`: String, ids: js.Array[String], options: RestApiOptions): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def del[T](
       `type`: String,
       ids: js.Array[String],
       options: RestApiOptions,
-      callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     
     def delete[T](`type`: String, ids: String): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
@@ -138,61 +138,67 @@ object connectionMod {
       `type`: String,
       ids: String,
       options: Unit,
-      callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def delete[T](`type`: String, ids: String, options: RestApiOptions): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def delete[T](
       `type`: String,
       ids: String,
       options: RestApiOptions,
-      callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def delete[T](`type`: String, ids: js.Array[String]): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def delete[T](
       `type`: String,
       ids: js.Array[String],
       options: Unit,
-      callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def delete[T](`type`: String, ids: js.Array[String], options: RestApiOptions): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def delete[T](
       `type`: String,
       ids: js.Array[String],
       options: RestApiOptions,
-      callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     
     def describe(`type`: String): js.Promise[DescribeSObjectResult] = js.native
-    def describe(`type`: String, callback: js.Function2[/* err */ Error, /* result */ DescribeSObjectResult, Unit]): js.Promise[DescribeSObjectResult] = js.native
+    def describe(
+      `type`: String,
+      callback: js.Function2[/* err */ js.Error, /* result */ DescribeSObjectResult, Unit]
+    ): js.Promise[DescribeSObjectResult] = js.native
     def describe(`type`: DescribeSObjectOptions): js.Promise[DescribeSObjectResult] = js.native
     def describe(
       `type`: DescribeSObjectOptions,
-      callback: js.Function2[/* err */ Error, /* result */ DescribeSObjectResult, Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ DescribeSObjectResult, Unit]
     ): js.Promise[DescribeSObjectResult] = js.native
     
     /** Returns a value from the cache if it exists, otherwise calls Connection.describe */
     @JSName("describe$")
     def describe$(`type`: String): DescribeSObjectResult = js.native
     @JSName("describe$")
-    def describe$(`type`: String, callback: js.Function2[/* err */ Error, /* result */ DescribeSObjectResult, Unit]): DescribeSObjectResult = js.native
+    def describe$(
+      `type`: String,
+      callback: js.Function2[/* err */ js.Error, /* result */ DescribeSObjectResult, Unit]
+    ): DescribeSObjectResult = js.native
     @JSName("describe$")
     def describe$(`type`: DescribeSObjectOptions): DescribeSObjectResult = js.native
     @JSName("describe$")
     def describe$(
       `type`: DescribeSObjectOptions,
-      callback: js.Function2[/* err */ Error, /* result */ DescribeSObjectResult, Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ DescribeSObjectResult, Unit]
     ): DescribeSObjectResult = js.native
     @JSName("describe$")
     var describe$_Original: Call = js.native
     
     def describeGlobal[T](): js.Promise[DescribeGlobalResult] = js.native
-    def describeGlobal[T](callback: js.Function2[/* err */ Error, /* result */ DescribeGlobalResult, Unit]): js.Promise[DescribeGlobalResult] = js.native
+    def describeGlobal[T](callback: js.Function2[/* err */ js.Error, /* result */ DescribeGlobalResult, Unit]): js.Promise[DescribeGlobalResult] = js.native
     
     /** Returns a value from the cache if it exists, otherwise calls Connection.describeGlobal */
     @JSName("describeGlobal$")
     def describeGlobal$(): DescribeGlobalResult = js.native
     @JSName("describeGlobal$")
-    def describeGlobal$(callback: js.Function2[/* err */ Error, /* result */ DescribeGlobalResult, Unit]): DescribeGlobalResult = js.native
+    def describeGlobal$(callback: js.Function2[/* err */ js.Error, /* result */ DescribeGlobalResult, Unit]): DescribeGlobalResult = js.native
     @JSName("describeGlobal$")
     var describeGlobal$_Original: Clear = js.native
     
@@ -201,28 +207,28 @@ object connectionMod {
       `type`: String,
       ids: String,
       options: Unit,
-      callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def destroy[T](`type`: String, ids: String, options: RestApiOptions): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def destroy[T](
       `type`: String,
       ids: String,
       options: RestApiOptions,
-      callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def destroy[T](`type`: String, ids: js.Array[String]): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def destroy[T](
       `type`: String,
       ids: js.Array[String],
       options: Unit,
-      callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def destroy[T](`type`: String, ids: js.Array[String], options: RestApiOptions): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def destroy[T](
       `type`: String,
       ids: js.Array[String],
       options: RestApiOptions,
-      callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     
     def insert[T](`type`: String, records: js.Array[Record[T]]): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
@@ -230,84 +236,90 @@ object connectionMod {
       `type`: String,
       records: js.Array[Record[T]],
       options: Unit,
-      callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def insert[T](`type`: String, records: js.Array[Record[T]], options: RestApiOptions): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def insert[T](
       `type`: String,
       records: js.Array[Record[T]],
       options: RestApiOptions,
-      callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def insert[T](`type`: String, records: Record[T]): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def insert[T](
       `type`: String,
       records: Record[T],
       options: Unit,
-      callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def insert[T](`type`: String, records: Record[T], options: RestApiOptions): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def insert[T](
       `type`: String,
       records: Record[T],
       options: RestApiOptions,
-      callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     
     def query[T](soql: String): Query[QueryResult[T]] = js.native
     def query[T](
       soql: String,
       options: Unit,
-      callback: js.Function2[/* err */ Error, /* result */ QueryResult[T], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ QueryResult[T], Unit]
     ): Query[QueryResult[T]] = js.native
     def query[T](soql: String, options: ExecuteOptions): Query[QueryResult[T]] = js.native
     def query[T](
       soql: String,
       options: ExecuteOptions,
-      callback: js.Function2[/* err */ Error, /* result */ QueryResult[T], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ QueryResult[T], Unit]
     ): Query[QueryResult[T]] = js.native
     
     def queryMore[T](locator: String): js.Promise[QueryResult[T]] = js.native
     def queryMore[T](
       locator: String,
       options: Unit,
-      callback: js.Function2[/* err */ Error, /* result */ QueryResult[T], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ QueryResult[T], Unit]
     ): js.Promise[QueryResult[T]] = js.native
     def queryMore[T](locator: String, options: ExecuteOptions): js.Promise[QueryResult[T]] = js.native
     def queryMore[T](
       locator: String,
       options: ExecuteOptions,
-      callback: js.Function2[/* err */ Error, /* result */ QueryResult[T], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ QueryResult[T], Unit]
     ): js.Promise[QueryResult[T]] = js.native
     
     def recent(): js.Promise[js.Array[RecordResult]] = js.native
-    def recent(callback: js.Function2[/* err */ Error, /* result */ js.Array[RecordResult], Unit]): js.Promise[js.Array[RecordResult]] = js.native
+    def recent(callback: js.Function2[/* err */ js.Error, /* result */ js.Array[RecordResult], Unit]): js.Promise[js.Array[RecordResult]] = js.native
     def recent(param: String): js.Promise[js.Array[RecordResult]] = js.native
-    def recent(param: String, callback: js.Function2[/* err */ Error, /* result */ js.Array[RecordResult], Unit]): js.Promise[js.Array[RecordResult]] = js.native
+    def recent(
+      param: String,
+      callback: js.Function2[/* err */ js.Error, /* result */ js.Array[RecordResult], Unit]
+    ): js.Promise[js.Array[RecordResult]] = js.native
     def recent(param: Double): js.Promise[js.Array[RecordResult]] = js.native
-    def recent(param: Double, callback: js.Function2[/* err */ Error, /* result */ js.Array[RecordResult], Unit]): js.Promise[js.Array[RecordResult]] = js.native
+    def recent(
+      param: Double,
+      callback: js.Function2[/* err */ js.Error, /* result */ js.Array[RecordResult], Unit]
+    ): js.Promise[js.Array[RecordResult]] = js.native
     def recent(`type`: String, limit: Double): js.Promise[js.Array[RecordResult]] = js.native
     def recent(
       `type`: String,
       limit: Double,
-      callback: js.Function2[/* err */ Error, /* result */ js.Array[RecordResult], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ js.Array[RecordResult], Unit]
     ): js.Promise[js.Array[RecordResult]] = js.native
     
     def request[T](info: String): js.Promise[T] = js.native
-    def request[T](info: String, options: Unit, callback: js.Function2[/* err */ Error, /* Object */ T, Unit]): js.Promise[T] = js.native
+    def request[T](info: String, options: Unit, callback: js.Function2[/* err */ js.Error, /* Object */ T, Unit]): js.Promise[T] = js.native
     def request[T](info: String, options: HttpApiOptions): js.Promise[T] = js.native
     def request[T](
       info: String,
       options: HttpApiOptions,
-      callback: js.Function2[/* err */ Error, /* Object */ T, Unit]
+      callback: js.Function2[/* err */ js.Error, /* Object */ T, Unit]
     ): js.Promise[T] = js.native
     def request[T](info: RequestInfo): js.Promise[T] = js.native
-    def request[T](info: RequestInfo, options: Unit, callback: js.Function2[/* err */ Error, /* Object */ T, Unit]): js.Promise[T] = js.native
+    def request[T](info: RequestInfo, options: Unit, callback: js.Function2[/* err */ js.Error, /* Object */ T, Unit]): js.Promise[T] = js.native
     def request[T](info: RequestInfo, options: HttpApiOptions): js.Promise[T] = js.native
     def request[T](
       info: RequestInfo,
       options: HttpApiOptions,
-      callback: js.Function2[/* err */ Error, /* Object */ T, Unit]
+      callback: js.Function2[/* err */ js.Error, /* Object */ T, Unit]
     ): js.Promise[T] = js.native
     
     def retrieve[T](`type`: String, ids: String): js.Promise[Record[T] | js.Array[Record[T]]] = js.native
@@ -315,29 +327,32 @@ object connectionMod {
       `type`: String,
       ids: String,
       options: Unit,
-      callback: js.Function2[/* err */ Error, /* result */ Record[T] | js.Array[Record[T]], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ Record[T] | js.Array[Record[T]], Unit]
     ): js.Promise[Record[T] | js.Array[Record[T]]] = js.native
     def retrieve[T](`type`: String, ids: String, options: RestApiOptions): js.Promise[Record[T] | js.Array[Record[T]]] = js.native
     def retrieve[T](
       `type`: String,
       ids: String,
       options: RestApiOptions,
-      callback: js.Function2[/* err */ Error, /* result */ Record[T] | js.Array[Record[T]], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ Record[T] | js.Array[Record[T]], Unit]
     ): js.Promise[Record[T] | js.Array[Record[T]]] = js.native
     def retrieve[T](`type`: String, ids: js.Array[String]): js.Promise[Record[T] | js.Array[Record[T]]] = js.native
     def retrieve[T](
       `type`: String,
       ids: js.Array[String],
       options: Unit,
-      callback: js.Function2[/* err */ Error, /* result */ Record[T] | js.Array[Record[T]], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ Record[T] | js.Array[Record[T]], Unit]
     ): js.Promise[Record[T] | js.Array[Record[T]]] = js.native
     def retrieve[T](`type`: String, ids: js.Array[String], options: RestApiOptions): js.Promise[Record[T] | js.Array[Record[T]]] = js.native
     def retrieve[T](
       `type`: String,
       ids: js.Array[String],
       options: RestApiOptions,
-      callback: js.Function2[/* err */ Error, /* result */ Record[T] | js.Array[Record[T]], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ Record[T] | js.Array[Record[T]], Unit]
     ): js.Promise[Record[T] | js.Array[Record[T]]] = js.native
+    
+    def search[T](sosl: String): js.Promise[SearchResult[T]] = js.native
+    def search[T](sosl: String, callback: js.Function2[/* err */ js.Error, /* result */ SearchResult[T], Unit]): js.Promise[SearchResult[T]] = js.native
     
     // we want any object to be accepted if the user doesn't decide to give an explicit type
     def sobject[T](resource: String): SObject[T] = js.native
@@ -346,53 +361,53 @@ object connectionMod {
     def update[T](
       records: js.Array[Record[T]],
       options: Unit,
-      callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[Record[T]], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ RecordResult | js.Array[Record[T]], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def update[T](records: js.Array[Record[T]], options: RestApiOptions): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def update[T](
       records: js.Array[Record[T]],
       options: RestApiOptions,
-      callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[Record[T]], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ RecordResult | js.Array[Record[T]], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def update[T](records: Record[T]): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def update[T](
       records: Record[T],
       options: Unit,
-      callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[Record[T]], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ RecordResult | js.Array[Record[T]], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def update[T](records: Record[T], options: RestApiOptions): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def update[T](
       records: Record[T],
       options: RestApiOptions,
-      callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[Record[T]], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ RecordResult | js.Array[Record[T]], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def update[T](`type`: String, records: js.Array[Record[T]]): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def update[T](
       `type`: String,
       records: js.Array[Record[T]],
       options: Unit,
-      callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[Record[T]], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ RecordResult | js.Array[Record[T]], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def update[T](`type`: String, records: js.Array[Record[T]], options: RestApiOptions): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def update[T](
       `type`: String,
       records: js.Array[Record[T]],
       options: RestApiOptions,
-      callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[Record[T]], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ RecordResult | js.Array[Record[T]], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def update[T](`type`: String, records: Record[T]): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def update[T](
       `type`: String,
       records: Record[T],
       options: Unit,
-      callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[Record[T]], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ RecordResult | js.Array[Record[T]], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def update[T](`type`: String, records: Record[T], options: RestApiOptions): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def update[T](
       `type`: String,
       records: Record[T],
       options: RestApiOptions,
-      callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[Record[T]], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ RecordResult | js.Array[Record[T]], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     
     def upsert[T](records: js.Array[Record[T]], extIdField: String): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
@@ -400,28 +415,28 @@ object connectionMod {
       records: js.Array[Record[T]],
       extIdField: String,
       options: Unit,
-      callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def upsert[T](records: js.Array[Record[T]], extIdField: String, options: RestApiOptions): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def upsert[T](
       records: js.Array[Record[T]],
       extIdField: String,
       options: RestApiOptions,
-      callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def upsert[T](records: Record[T], extIdField: String): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def upsert[T](
       records: Record[T],
       extIdField: String,
       options: Unit,
-      callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def upsert[T](records: Record[T], extIdField: String, options: RestApiOptions): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def upsert[T](
       records: Record[T],
       extIdField: String,
       options: RestApiOptions,
-      callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def upsert[T](`type`: String, records: js.Array[Record[T]], extIdField: String): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def upsert[T](
@@ -429,7 +444,7 @@ object connectionMod {
       records: js.Array[Record[T]],
       extIdField: String,
       options: Unit,
-      callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def upsert[T](`type`: String, records: js.Array[Record[T]], extIdField: String, options: RestApiOptions): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def upsert[T](
@@ -437,7 +452,7 @@ object connectionMod {
       records: js.Array[Record[T]],
       extIdField: String,
       options: RestApiOptions,
-      callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def upsert[T](`type`: String, records: Record[T], extIdField: String): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def upsert[T](
@@ -445,7 +460,7 @@ object connectionMod {
       records: Record[T],
       extIdField: String,
       options: Unit,
-      callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def upsert[T](`type`: String, records: Record[T], extIdField: String, options: RestApiOptions): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def upsert[T](
@@ -453,13 +468,13 @@ object connectionMod {
       records: Record[T],
       extIdField: String,
       options: RestApiOptions,
-      callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
   }
   
   @JSImport("jsforce/connection", "Connection")
   @js.native
-  class Connection protected () extends BaseConnection {
+  open class Connection protected () extends BaseConnection {
     def this(params: ConnectionOptions) = this()
     
     var accessToken: String = js.native
@@ -469,7 +484,7 @@ object connectionMod {
     var apex: Apex = js.native
     
     def authorize(code: String): js.Promise[UserInfo] = js.native
-    def authorize(code: String, callback: js.Function2[/* err */ Error, /* res */ UserInfo, Unit]): js.Promise[UserInfo] = js.native
+    def authorize(code: String, callback: js.Function2[/* err */ js.Error, /* res */ UserInfo, Unit]): js.Promise[UserInfo] = js.native
     
     var bulk: Bulk = js.native
     
@@ -478,7 +493,7 @@ object connectionMod {
     var chatter: Chatter = js.native
     
     def identity(): js.Promise[IdentityInfo] = js.native
-    def identity(callback: js.Function2[/* err */ Error, /* res */ IdentityInfo, Unit]): js.Promise[IdentityInfo] = js.native
+    def identity(callback: js.Function2[/* err */ js.Error, /* res */ IdentityInfo, Unit]): js.Promise[IdentityInfo] = js.native
     
     def initialize(): Unit = js.native
     def initialize(options: ConnectionOptions): Unit = js.native
@@ -486,32 +501,46 @@ object connectionMod {
     // Specific to Connection
     var instanceUrl: String = js.native
     
+    var limitInfo: js.UndefOr[LimitInfo] = js.native
+    
     def limits(): js.Promise[LimitsInfo] = js.native
-    def limits(callback: js.Function2[/* err */ Error, /* res */ Unit, Unit]): js.Promise[LimitsInfo] = js.native
+    def limits(callback: js.Function2[/* err */ js.Error, /* res */ Unit, Unit]): js.Promise[LimitsInfo] = js.native
     
     def login(user: String, password: String): js.Promise[UserInfo] = js.native
-    def login(user: String, password: String, callback: js.Function2[/* err */ Error, /* res */ UserInfo, Unit]): js.Promise[UserInfo] = js.native
+    def login(
+      user: String,
+      password: String,
+      callback: js.Function2[/* err */ js.Error, /* res */ UserInfo, Unit]
+    ): js.Promise[UserInfo] = js.native
     
     def loginByOAuth2(user: String, password: String): js.Promise[UserInfo] = js.native
-    def loginByOAuth2(user: String, password: String, callback: js.Function2[/* err */ Error, /* res */ UserInfo, Unit]): js.Promise[UserInfo] = js.native
+    def loginByOAuth2(
+      user: String,
+      password: String,
+      callback: js.Function2[/* err */ js.Error, /* res */ UserInfo, Unit]
+    ): js.Promise[UserInfo] = js.native
     
     def loginBySoap(user: String, password: String): js.Promise[UserInfo] = js.native
-    def loginBySoap(user: String, password: String, callback: js.Function2[/* err */ Error, /* res */ UserInfo, Unit]): js.Promise[UserInfo] = js.native
+    def loginBySoap(
+      user: String,
+      password: String,
+      callback: js.Function2[/* err */ js.Error, /* res */ UserInfo, Unit]
+    ): js.Promise[UserInfo] = js.native
     
     def logout(): js.Promise[Unit] = js.native
-    def logout(callback: js.Function2[/* err */ Error, /* res */ Unit, Unit]): js.Promise[Unit] = js.native
+    def logout(callback: js.Function2[/* err */ js.Error, /* res */ Unit, Unit]): js.Promise[Unit] = js.native
     def logout(revoke: Boolean): js.Promise[Unit] = js.native
-    def logout(revoke: Boolean, callback: js.Function2[/* err */ Error, /* res */ Unit, Unit]): js.Promise[Unit] = js.native
+    def logout(revoke: Boolean, callback: js.Function2[/* err */ js.Error, /* res */ Unit, Unit]): js.Promise[Unit] = js.native
     
     def logoutByOAuth2(): js.Promise[Unit] = js.native
-    def logoutByOAuth2(callback: js.Function2[/* err */ Error, /* res */ Unit, Unit]): js.Promise[Unit] = js.native
+    def logoutByOAuth2(callback: js.Function2[/* err */ js.Error, /* res */ Unit, Unit]): js.Promise[Unit] = js.native
     def logoutByOAuth2(revoke: Boolean): js.Promise[Unit] = js.native
-    def logoutByOAuth2(revoke: Boolean, callback: js.Function2[/* err */ Error, /* res */ Unit, Unit]): js.Promise[Unit] = js.native
+    def logoutByOAuth2(revoke: Boolean, callback: js.Function2[/* err */ js.Error, /* res */ Unit, Unit]): js.Promise[Unit] = js.native
     
     def logoutBySoap(): js.Promise[Unit] = js.native
-    def logoutBySoap(callback: js.Function2[/* err */ Error, /* res */ Unit, Unit]): js.Promise[Unit] = js.native
+    def logoutBySoap(callback: js.Function2[/* err */ js.Error, /* res */ Unit, Unit]): js.Promise[Unit] = js.native
     def logoutBySoap(revoke: Boolean): js.Promise[Unit] = js.native
-    def logoutBySoap(revoke: Boolean, callback: js.Function2[/* err */ Error, /* res */ Unit, Unit]): js.Promise[Unit] = js.native
+    def logoutBySoap(revoke: Boolean, callback: js.Function2[/* err */ js.Error, /* res */ Unit, Unit]): js.Promise[Unit] = js.native
     
     var metadata: Metadata = js.native
     
@@ -522,15 +551,37 @@ object connectionMod {
     def queryAll[T](
       soql: String,
       options: js.Object,
-      callback: js.Function2[/* err */ Error, /* result */ QueryResult[T], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ QueryResult[T], Unit]
     ): Query[QueryResult[T]] = js.native
     def queryAll[T](
       soql: String,
       options: Unit,
-      callback: js.Function2[/* err */ Error, /* result */ QueryResult[T], Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ QueryResult[T], Unit]
     ): Query[QueryResult[T]] = js.native
     
     var refreshToken: js.UndefOr[String] = js.native
+    
+    def requestPost[T](url: String, body: js.Object): js.Promise[T] = js.native
+    def requestPost[T](
+      url: String,
+      body: js.Object,
+      options_callback: js.Function2[/* err */ js.Error, /* Object */ T, Unit]
+    ): js.Promise[T] = js.native
+    def requestPost[T](url: String, body: js.Object, options_callback: HttpApiOptions): js.Promise[T] = js.native
+    def requestPost[T](
+      url: String,
+      body: js.Object,
+      options: Unit,
+      callback: js.Function2[/* err */ js.Error, /* Object */ T, Unit]
+    ): js.Promise[T] = js.native
+    def requestPost[T](
+      url: String,
+      body: js.Object,
+      options: HttpApiOptions,
+      callback: js.Function2[/* err */ js.Error, /* Object */ T, Unit]
+    ): js.Promise[T] = js.native
+    
+    var soap: SoapApi = js.native
     
     var streaming: Streaming = js.native
     
@@ -558,17 +609,17 @@ object connectionMod {
   
   @JSImport("jsforce/connection", "Tooling")
   @js.native
-  class Tooling () extends BaseConnection {
+  open class Tooling () extends BaseConnection {
     def this(options: EventEmitterOptions) = this()
     
-    var _logger: js.Any = js.native
+    var _logger: Any = js.native
     
     // Specific to tooling
     def executeAnonymous(body: String): js.Promise[ExecuteAnonymousResult] = js.native
-    def executeAnonymous(body: String, callback: js.Function2[/* err */ Error, /* res */ js.Any, Unit]): js.Promise[ExecuteAnonymousResult] = js.native
+    def executeAnonymous(body: String, callback: js.Function2[/* err */ js.Error, /* res */ Any, Unit]): js.Promise[ExecuteAnonymousResult] = js.native
   }
   
-  type Callback[T] = js.Function2[/* err */ Error | Null, /* result */ T, Unit]
+  type Callback[T] = js.Function2[/* err */ js.Error | Null, /* result */ T, Unit]
   
   type ConnectionEvent = refresh
   
@@ -725,7 +776,7 @@ object connectionMod {
   trait IdentityInfo
     extends StObject
        with // And possible other attributes.
-  /* key */ StringDictionary[js.Any] {
+  /* key */ StringDictionary[Any] {
     
     var active: Boolean
     
@@ -757,7 +808,7 @@ object connectionMod {
     
     var language: String
     
-    var last_modified_date: Date
+    var last_modified_date: js.Date
     
     var last_name: String
     
@@ -799,7 +850,7 @@ object connectionMod {
       is_app_installed: Boolean,
       is_lightning_login_user: Boolean,
       language: String,
-      last_modified_date: Date,
+      last_modified_date: js.Date,
       last_name: String,
       locale: String,
       mobile_phone_verified: Boolean,
@@ -862,7 +913,7 @@ object connectionMod {
       
       inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      inline def setLast_modified_date(value: Date): Self = StObject.set(x, "last_modified_date", value.asInstanceOf[js.Any])
+      inline def setLast_modified_date(value: js.Date): Self = StObject.set(x, "last_modified_date", value.asInstanceOf[js.Any])
       
       inline def setLast_name(value: String): Self = StObject.set(x, "last_name", value.asInstanceOf[js.Any])
       
@@ -1010,6 +1061,25 @@ object connectionMod {
       inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    }
+  }
+  
+  trait SearchResult[T] extends StObject {
+    
+    var searchRecords: js.Array[Record[T]]
+  }
+  object SearchResult {
+    
+    inline def apply[T](searchRecords: js.Array[Record[T]]): SearchResult[T] = {
+      val __obj = js.Dynamic.literal(searchRecords = searchRecords.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SearchResult[T]]
+    }
+    
+    extension [Self <: SearchResult[?], T](x: Self & SearchResult[T]) {
+      
+      inline def setSearchRecords(value: js.Array[Record[T]]): Self = StObject.set(x, "searchRecords", value.asInstanceOf[js.Any])
+      
+      inline def setSearchRecordsVarargs(value: Record[T]*): Self = StObject.set(x, "searchRecords", js.Array(value*))
     }
   }
   

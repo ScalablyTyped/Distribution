@@ -2,7 +2,6 @@ package typings.jsforce
 
 import typings.jsforce.salesforceIdMod.SalesforceId
 import typings.jsforce.salesforceObjectOptionsMod.SObjectOptions
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,7 +30,7 @@ object createOptionsMod {
     
     var CreatedById: js.UndefOr[SalesforceId] = js.undefined
     
-    var CreatedDate: js.UndefOr[Date] = js.undefined
+    var CreatedDate: js.UndefOr[js.Date] = js.undefined
     
     var Description: js.UndefOr[String] = js.undefined
     
@@ -43,15 +42,15 @@ object createOptionsMod {
     
     var JigsawCompanyId: js.UndefOr[String] = js.undefined
     
-    var LastActivityDate: js.UndefOr[Date] = js.undefined
+    var LastActivityDate: js.UndefOr[js.Date] = js.undefined
     
     var LastModifiedById: js.UndefOr[SalesforceId] = js.undefined
     
-    var LastModifiedDate: js.UndefOr[Date] = js.undefined
+    var LastModifiedDate: js.UndefOr[js.Date] = js.undefined
     
-    var LastReferencedDate: js.UndefOr[Date] = js.undefined
+    var LastReferencedDate: js.UndefOr[js.Date] = js.undefined
     
-    var LastViewedDate: js.UndefOr[Date] = js.undefined
+    var LastViewedDate: js.UndefOr[js.Date] = js.undefined
     
     var MasterRecordId: js.UndefOr[SalesforceId] = js.undefined
     
@@ -79,7 +78,7 @@ object createOptionsMod {
     
     var SicDesc: js.UndefOr[String] = js.undefined
     
-    var SystemModstamp: js.UndefOr[Date] = js.undefined
+    var SystemModstamp: js.UndefOr[js.Date] = js.undefined
     
     var Type: js.UndefOr[String] = js.undefined
     
@@ -130,7 +129,7 @@ object createOptionsMod {
       
       inline def setCreatedByIdUndefined: Self = StObject.set(x, "CreatedById", js.undefined)
       
-      inline def setCreatedDate(value: Date): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
+      inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
       
       inline def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
       
@@ -154,7 +153,7 @@ object createOptionsMod {
       
       inline def setJigsawUndefined: Self = StObject.set(x, "Jigsaw", js.undefined)
       
-      inline def setLastActivityDate(value: Date): Self = StObject.set(x, "LastActivityDate", value.asInstanceOf[js.Any])
+      inline def setLastActivityDate(value: js.Date): Self = StObject.set(x, "LastActivityDate", value.asInstanceOf[js.Any])
       
       inline def setLastActivityDateUndefined: Self = StObject.set(x, "LastActivityDate", js.undefined)
       
@@ -162,15 +161,15 @@ object createOptionsMod {
       
       inline def setLastModifiedByIdUndefined: Self = StObject.set(x, "LastModifiedById", js.undefined)
       
-      inline def setLastModifiedDate(value: Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
+      inline def setLastModifiedDate(value: js.Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
       
       inline def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
       
-      inline def setLastReferencedDate(value: Date): Self = StObject.set(x, "LastReferencedDate", value.asInstanceOf[js.Any])
+      inline def setLastReferencedDate(value: js.Date): Self = StObject.set(x, "LastReferencedDate", value.asInstanceOf[js.Any])
       
       inline def setLastReferencedDateUndefined: Self = StObject.set(x, "LastReferencedDate", js.undefined)
       
-      inline def setLastViewedDate(value: Date): Self = StObject.set(x, "LastViewedDate", value.asInstanceOf[js.Any])
+      inline def setLastViewedDate(value: js.Date): Self = StObject.set(x, "LastViewedDate", value.asInstanceOf[js.Any])
       
       inline def setLastViewedDateUndefined: Self = StObject.set(x, "LastViewedDate", js.undefined)
       
@@ -226,7 +225,7 @@ object createOptionsMod {
       
       inline def setSicDescUndefined: Self = StObject.set(x, "SicDesc", js.undefined)
       
-      inline def setSystemModstamp(value: Date): Self = StObject.set(x, "SystemModstamp", value.asInstanceOf[js.Any])
+      inline def setSystemModstamp(value: js.Date): Self = StObject.set(x, "SystemModstamp", value.asInstanceOf[js.Any])
       
       inline def setSystemModstampUndefined: Self = StObject.set(x, "SystemModstamp", js.undefined)
       

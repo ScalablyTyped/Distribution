@@ -11,16 +11,12 @@ object petitDomStrings {
   inline def `2d`: `2d` = "2d".asInstanceOf[`2d`]
   
   @js.native
-  sealed trait AnimationEvent extends StObject
-  inline def AnimationEvent: AnimationEvent = "AnimationEvent".asInstanceOf[AnimationEvent]
-  
-  @js.native
   sealed trait DOMElementProps extends StObject
   inline def DOMElementProps: DOMElementProps = "DOMElementProps".asInstanceOf[DOMElementProps]
   
   @js.native
-  sealed trait SVGUnload extends StObject
-  inline def SVGUnload: SVGUnload = "SVGUnload".asInstanceOf[SVGUnload]
+  sealed trait _empty extends StObject
+  inline def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
   sealed trait a extends StObject
@@ -35,8 +31,16 @@ object petitDomStrings {
   inline def address: address = "address".asInstanceOf[address]
   
   @js.native
-  sealed trait applet extends StObject
-  inline def applet: applet = "applet".asInstanceOf[applet]
+  sealed trait animate extends StObject
+  inline def animate: animate = "animate".asInstanceOf[animate]
+  
+  @js.native
+  sealed trait animateMotion extends StObject
+  inline def animateMotion: animateMotion = "animateMotion".asInstanceOf[animateMotion]
+  
+  @js.native
+  sealed trait animateTransform extends StObject
+  inline def animateTransform: animateTransform = "animateTransform".asInstanceOf[animateTransform]
   
   @js.native
   sealed trait area extends StObject
@@ -75,10 +79,6 @@ object petitDomStrings {
   inline def base: base = "base".asInstanceOf[base]
   
   @js.native
-  sealed trait basefont extends StObject
-  inline def basefont: basefont = "basefont".asInstanceOf[basefont]
-  
-  @js.native
   sealed trait bdi extends StObject
   inline def bdi: bdi = "bdi".asInstanceOf[bdi]
   
@@ -93,10 +93,6 @@ object petitDomStrings {
   @js.native
   sealed trait body extends StObject
   inline def body: body = "body".asInstanceOf[body]
-  
-  @js.native
-  sealed trait bounce extends StObject
-  inline def bounce: bounce = "bounce".asInstanceOf[bounce]
   
   @js.native
   sealed trait br extends StObject
@@ -175,10 +171,6 @@ object petitDomStrings {
   inline def dialog: dialog = "dialog".asInstanceOf[dialog]
   
   @js.native
-  sealed trait dir extends StObject
-  inline def dir: dir = "dir".asInstanceOf[dir]
-  
-  @js.native
   sealed trait div extends StObject
   inline def div: div = "div".asInstanceOf[div]
   
@@ -189,6 +181,10 @@ object petitDomStrings {
   @js.native
   sealed trait dt extends StObject
   inline def dt: dt = "dt".asInstanceOf[dt]
+  
+  @js.native
+  sealed trait eager extends StObject
+  inline def eager: eager = "eager".asInstanceOf[eager]
   
   @js.native
   sealed trait ellipse extends StObject
@@ -205,6 +201,10 @@ object petitDomStrings {
   @js.native
   sealed trait encrypted extends StObject
   inline def encrypted: encrypted = "encrypted".asInstanceOf[encrypted]
+  
+  @js.native
+  sealed trait enterpictureinpicture extends StObject
+  inline def enterpictureinpicture: enterpictureinpicture = "enterpictureinpicture".asInstanceOf[enterpictureinpicture]
   
   @js.native
   sealed trait feBlend extends StObject
@@ -237,6 +237,10 @@ object petitDomStrings {
   @js.native
   sealed trait feDistantLight extends StObject
   inline def feDistantLight: feDistantLight = "feDistantLight".asInstanceOf[feDistantLight]
+  
+  @js.native
+  sealed trait feDropShadow extends StObject
+  inline def feDropShadow: feDropShadow = "feDropShadow".asInstanceOf[feDropShadow]
   
   @js.native
   sealed trait feFlood extends StObject
@@ -319,10 +323,6 @@ object petitDomStrings {
   inline def filter: filter = "filter".asInstanceOf[filter]
   
   @js.native
-  sealed trait font extends StObject
-  inline def font: font = "font".asInstanceOf[font]
-  
-  @js.native
   sealed trait footer extends StObject
   inline def footer: footer = "footer".asInstanceOf[footer]
   
@@ -337,14 +337,6 @@ object petitDomStrings {
   @js.native
   sealed trait forward extends StObject
   inline def forward: forward = "forward".asInstanceOf[forward]
-  
-  @js.native
-  sealed trait frame extends StObject
-  inline def frame: frame = "frame".asInstanceOf[frame]
-  
-  @js.native
-  sealed trait frameset extends StObject
-  inline def frameset: frameset = "frameset".asInstanceOf[frameset]
   
   @js.native
   sealed trait fullscreenchange extends StObject
@@ -435,6 +427,10 @@ object petitDomStrings {
   inline def label: label = "label".asInstanceOf[label]
   
   @js.native
+  sealed trait `lazy` extends StObject
+  inline def `lazy`: `lazy` = "lazy".asInstanceOf[`lazy`]
+  
+  @js.native
   sealed trait legend extends StObject
   inline def legend: legend = "legend".asInstanceOf[legend]
   
@@ -471,10 +467,6 @@ object petitDomStrings {
   inline def marker: marker = "marker".asInstanceOf[marker]
   
   @js.native
-  sealed trait marquee extends StObject
-  inline def marquee: marquee = "marquee".asInstanceOf[marquee]
-  
-  @js.native
   sealed trait mask extends StObject
   inline def mask: mask = "mask".asInstanceOf[mask]
   
@@ -493,6 +485,10 @@ object petitDomStrings {
   @js.native
   sealed trait meter extends StObject
   inline def meter: meter = "meter".asInstanceOf[meter]
+  
+  @js.native
+  sealed trait mpath extends StObject
+  inline def mpath: mpath = "mpath".asInstanceOf[mpath]
   
   @js.native
   sealed trait nav extends StObject
@@ -523,20 +519,12 @@ object petitDomStrings {
   inline def option: option = "option".asInstanceOf[option]
   
   @js.native
-  sealed trait orientationchange extends StObject
-  inline def orientationchange: orientationchange = "orientationchange".asInstanceOf[orientationchange]
-  
-  @js.native
   sealed trait output extends StObject
   inline def output: output = "output".asInstanceOf[output]
   
   @js.native
   sealed trait p extends StObject
   inline def p: p = "p".asInstanceOf[p]
-  
-  @js.native
-  sealed trait param extends StObject
-  inline def param: param = "param".asInstanceOf[param]
   
   @js.native
   sealed trait path extends StObject
@@ -609,6 +597,10 @@ object petitDomStrings {
   @js.native
   sealed trait select extends StObject
   inline def select: select = "select".asInstanceOf[select]
+  
+  @js.native
+  sealed trait set extends StObject
+  inline def set: set = "set".asInstanceOf[set]
   
   @js.native
   sealed trait slot extends StObject

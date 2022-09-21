@@ -1,6 +1,5 @@
 package typings.vis.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,13 +21,13 @@ object TimelineFormatOption {
     
     inline def setMajorLabels(value: TimelineFormatLabelsOption | TimelineFormatLabelsFunction): Self = StObject.set(x, "majorLabels", value.asInstanceOf[js.Any])
     
-    inline def setMajorLabelsFunction3(value: (/* date */ Date, /* scale */ String, /* step */ Double) => String): Self = StObject.set(x, "majorLabels", js.Any.fromFunction3(value))
+    inline def setMajorLabelsFunction3(value: (/* date */ js.Date, /* scale */ String, /* step */ Double) => String): Self = StObject.set(x, "majorLabels", js.Any.fromFunction3(value))
     
     inline def setMajorLabelsUndefined: Self = StObject.set(x, "majorLabels", js.undefined)
     
     inline def setMinorLabels(value: TimelineFormatLabelsOption | TimelineFormatLabelsFunction): Self = StObject.set(x, "minorLabels", value.asInstanceOf[js.Any])
     
-    inline def setMinorLabelsFunction3(value: (/* date */ Date, /* scale */ String, /* step */ Double) => String): Self = StObject.set(x, "minorLabels", js.Any.fromFunction3(value))
+    inline def setMinorLabelsFunction3(value: (/* date */ js.Date, /* scale */ String, /* step */ Double) => String): Self = StObject.set(x, "minorLabels", js.Any.fromFunction3(value))
     
     inline def setMinorLabelsUndefined: Self = StObject.set(x, "minorLabels", js.undefined)
   }

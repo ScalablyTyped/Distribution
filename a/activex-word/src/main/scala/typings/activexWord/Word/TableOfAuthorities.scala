@@ -28,7 +28,7 @@ trait TableOfAuthorities extends StObject {
   
   var PageRangeSeparator: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Passim: Boolean
   
@@ -57,7 +57,7 @@ object TableOfAuthorities {
     KeepEntryFormatting: Boolean,
     PageNumberSeparator: String,
     PageRangeSeparator: String,
-    Parent: js.Any,
+    Parent: Any,
     Passim: Boolean,
     Range: Range,
     Separator: String,
@@ -94,7 +94,7 @@ object TableOfAuthorities {
     
     inline def setPageRangeSeparator(value: String): Self = StObject.set(x, "PageRangeSeparator", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPassim(value: Boolean): Self = StObject.set(x, "Passim", value.asInstanceOf[js.Any])
     

@@ -12,7 +12,7 @@ trait SchemaConfiguration extends StObject {
   var CatalogId: js.UndefOr[NonEmptyStringWithoutWhitespace] = js.undefined
   
   /**
-    * Specifies the name of the AWS Glue database that contains the schema for the output data.
+    * Specifies the name of the AWS Glue database that contains the schema for the output data.  If the SchemaConfiguration request parameter is used as part of invoking the CreateDeliveryStream API, then the DatabaseName property is required and its value must be specified. 
     */
   var DatabaseName: js.UndefOr[NonEmptyStringWithoutWhitespace] = js.undefined
   
@@ -22,12 +22,12 @@ trait SchemaConfiguration extends StObject {
   var Region: js.UndefOr[NonEmptyStringWithoutWhitespace] = js.undefined
   
   /**
-    * The role that Kinesis Data Firehose can use to access AWS Glue. This role must be in the same account you use for Kinesis Data Firehose. Cross-account roles aren't allowed.
+    * The role that Kinesis Data Firehose can use to access AWS Glue. This role must be in the same account you use for Kinesis Data Firehose. Cross-account roles aren't allowed.  If the SchemaConfiguration request parameter is used as part of invoking the CreateDeliveryStream API, then the RoleARN property is required and its value must be specified. 
     */
   var RoleARN: js.UndefOr[NonEmptyStringWithoutWhitespace] = js.undefined
   
   /**
-    * Specifies the AWS Glue table that contains the column information that constitutes your data schema.
+    * Specifies the AWS Glue table that contains the column information that constitutes your data schema.  If the SchemaConfiguration request parameter is used as part of invoking the CreateDeliveryStream API, then the TableName property is required and its value must be specified. 
     */
   var TableName: js.UndefOr[NonEmptyStringWithoutWhitespace] = js.undefined
   

@@ -61,7 +61,7 @@ object mod extends Shortcut {
     var onResponse: js.UndefOr[
         js.ThisFunction6[
           /* this */ RouteOptions, 
-          /* err */ Null | Boom[js.Any], 
+          /* err */ Null | Boom[Any], 
           /* res */ IncomingMessage, 
           /* req */ Request, 
           /* h */ ResponseToolkit, 
@@ -134,7 +134,7 @@ object mod extends Shortcut {
       inline def setOnResponse(
         value: js.ThisFunction6[
               /* this */ RouteOptions, 
-              /* err */ Null | Boom[js.Any], 
+              /* err */ Null | Boom[Any], 
               /* res */ IncomingMessage, 
               /* req */ Request, 
               /* h */ ResponseToolkit, 

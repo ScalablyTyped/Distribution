@@ -15,7 +15,7 @@ object mod {
     *
     * @param {Seed} [seed]
     */
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Ids {
     def this(seed: Seed) = this()
@@ -41,7 +41,7 @@ object mod {
       * @param {String} [element] element the id is claimed by
       */
     def claim(id: ID): Unit = js.native
-    def claim(id: ID, element: js.Any): Unit = js.native
+    def claim(id: ID, element: Any): Unit = js.native
     
     /**
       * Clear all claimed ids.
@@ -56,7 +56,7 @@ object mod {
       * @return {String} id
       */
     def next(): ID = js.native
-    def next(element: js.Any): ID = js.native
+    def next(element: Any): ID = js.native
     
     /**
       * Generate a next id with a given prefix.
@@ -66,7 +66,7 @@ object mod {
       * @return {String} id
       */
     def nextPrefixed(prefix: String): ID = js.native
-    def nextPrefixed(prefix: String, element: js.Any): ID = js.native
+    def nextPrefixed(prefix: String, element: Any): ID = js.native
     
     /**
       * Unclaim an id.

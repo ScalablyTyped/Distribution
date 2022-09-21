@@ -12,7 +12,7 @@ object reactServeMod {
   
   @JSImport("ionic/lib/project/react/serve", "ReactServeCLI")
   @js.native
-  class ReactServeCLI protected () extends ServeCLI[ReactServeOptions] {
+  open class ReactServeCLI protected () extends ServeCLI[ReactServeOptions] {
     def this(e: ServeRunnerDeps) = this()
     
     /* protected */ var chunks: Double = js.native
@@ -23,7 +23,7 @@ object reactServeMod {
   
   @JSImport("ionic/lib/project/react/serve", "ReactServeRunner")
   @js.native
-  class ReactServeRunner protected () extends ServeRunner[ReactServeOptions] {
+  open class ReactServeRunner protected () extends ServeRunner[ReactServeOptions] {
     def this(e: ServeRunnerDeps) = this()
   }
 }

@@ -13,7 +13,7 @@ object mod {
   
   @JSImport("stream-chain", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Chain_ {
+  open class ^ protected () extends Chain_ {
     def this(fns: js.Array[StreamItem]) = this()
     def this(fns: js.Array[StreamItem], options: ChainOptions) = this()
   }
@@ -59,5 +59,5 @@ object mod {
   
   type StreamItem = Stream | TransformFunction
   
-  type TransformFunction = js.Function2[/* chunk */ js.Any, /* encoding */ js.UndefOr[String], js.Any]
+  type TransformFunction = js.Function2[/* chunk */ Any, /* encoding */ js.UndefOr[String], Any]
 }

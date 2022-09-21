@@ -4,15 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A chart embedded in a sheet.
-  */
 trait SchemaEmbeddedChart extends StObject {
+  
+  /**
+    * The border of the chart.
+    */
+  var border: js.UndefOr[SchemaEmbeddedObjectBorder] = js.undefined
   
   /**
     * The ID of the chart.
     */
-  var chartId: js.UndefOr[Double] = js.undefined
+  var chartId: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * The position of the chart.
@@ -33,7 +35,13 @@ object SchemaEmbeddedChart {
   
   extension [Self <: SchemaEmbeddedChart](x: Self) {
     
+    inline def setBorder(value: SchemaEmbeddedObjectBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    
+    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+    
     inline def setChartId(value: Double): Self = StObject.set(x, "chartId", value.asInstanceOf[js.Any])
+    
+    inline def setChartIdNull: Self = StObject.set(x, "chartId", null)
     
     inline def setChartIdUndefined: Self = StObject.set(x, "chartId", js.undefined)
     

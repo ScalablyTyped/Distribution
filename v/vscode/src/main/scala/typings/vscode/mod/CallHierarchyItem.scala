@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vscode", "CallHierarchyItem")
 @js.native
-class CallHierarchyItem protected () extends StObject {
+open class CallHierarchyItem protected () extends StObject {
   /**
     * Creates a new call hierarchy item.
     */
@@ -34,7 +34,7 @@ class CallHierarchyItem protected () extends StObject {
   
   /**
     * The range that should be selected and revealed when this symbol is being picked, e.g. the name of a function.
-    * Must be contained by the [`range`](#CallHierarchyItem.range).
+    * Must be contained by the {@linkcode CallHierarchyItem.range range}.
     */
   var selectionRange: Range = js.native
   

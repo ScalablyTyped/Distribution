@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("recaptcha2", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Recaptcha2 {
     def this(options: Options) = this()

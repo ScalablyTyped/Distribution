@@ -7,32 +7,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RecommendationFeedback extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the  CodeReview  object. 
+    * The Amazon Resource Name (ARN) of the CodeReview object. 
     */
   var CodeReviewArn: js.UndefOr[Arn] = js.undefined
   
   /**
-    *  The time at which the feedback was created. 
+    * The time at which the feedback was created.
     */
-  var CreatedTimeStamp: js.UndefOr[TimeStamp] = js.undefined
+  var CreatedTimeStamp: js.UndefOr[js.Date] = js.undefined
   
   /**
-    *  The time at which the feedback was last updated. 
+    * The time at which the feedback was last updated.
     */
-  var LastUpdatedTimeStamp: js.UndefOr[TimeStamp] = js.undefined
+  var LastUpdatedTimeStamp: js.UndefOr[js.Date] = js.undefined
   
   /**
-    *  List for storing reactions. Reactions are utf-8 text code for emojis. You can send an empty list to clear off all your feedback. 
+    * List for storing reactions. Reactions are utf-8 text code for emojis. You can send an empty list to clear off all your feedback.
     */
   var Reactions: js.UndefOr[typings.awsSdk.codegurureviewerMod.Reactions] = js.undefined
   
   /**
-    *  The recommendation ID that can be used to track the provided recommendations. Later on it can be used to collect the feedback. 
+    * The recommendation ID that can be used to track the provided recommendations. Later on it can be used to collect the feedback.
     */
   var RecommendationId: js.UndefOr[typings.awsSdk.codegurureviewerMod.RecommendationId] = js.undefined
   
   /**
-    *  The ID of the user that made the API call.   The UserId is an IAM principal that can be specified as an AWS account ID or an Amazon Resource Name (ARN). For more information, see  Specifying a Principal in the AWS Identity and Access Management User Guide. 
+    * The ID of the user that made the API call.  The UserId is an IAM principal that can be specified as an Amazon Web Services account ID or an Amazon Resource Name (ARN). For more information, see  Specifying a Principal in the Amazon Web Services Identity and Access Management User Guide.
     */
   var UserId: js.UndefOr[typings.awsSdk.codegurureviewerMod.UserId] = js.undefined
 }
@@ -49,11 +49,11 @@ object RecommendationFeedback {
     
     inline def setCodeReviewArnUndefined: Self = StObject.set(x, "CodeReviewArn", js.undefined)
     
-    inline def setCreatedTimeStamp(value: TimeStamp): Self = StObject.set(x, "CreatedTimeStamp", value.asInstanceOf[js.Any])
+    inline def setCreatedTimeStamp(value: js.Date): Self = StObject.set(x, "CreatedTimeStamp", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimeStampUndefined: Self = StObject.set(x, "CreatedTimeStamp", js.undefined)
     
-    inline def setLastUpdatedTimeStamp(value: TimeStamp): Self = StObject.set(x, "LastUpdatedTimeStamp", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTimeStamp(value: js.Date): Self = StObject.set(x, "LastUpdatedTimeStamp", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedTimeStampUndefined: Self = StObject.set(x, "LastUpdatedTimeStamp", js.undefined)
     
@@ -61,7 +61,7 @@ object RecommendationFeedback {
     
     inline def setReactionsUndefined: Self = StObject.set(x, "Reactions", js.undefined)
     
-    inline def setReactionsVarargs(value: Reaction*): Self = StObject.set(x, "Reactions", js.Array(value :_*))
+    inline def setReactionsVarargs(value: Reaction*): Self = StObject.set(x, "Reactions", js.Array(value*))
     
     inline def setRecommendationId(value: RecommendationId): Self = StObject.set(x, "RecommendationId", value.asInstanceOf[js.Any])
     

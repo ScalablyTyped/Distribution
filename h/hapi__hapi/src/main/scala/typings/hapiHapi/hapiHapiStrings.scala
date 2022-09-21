@@ -281,6 +281,13 @@ object hapiHapiStrings {
   inline def onPostHandler: onPostHandler = "onPostHandler".asInstanceOf[onPostHandler]
   
   @js.native
+  sealed trait onPostResponse
+    extends StObject
+       with RouteRequestExtType
+       with ServerRequestExtType
+  inline def onPostResponse: onPostResponse = "onPostResponse".asInstanceOf[onPostResponse]
+  
+  @js.native
   sealed trait onPostStart
     extends StObject
        with ServerExtType

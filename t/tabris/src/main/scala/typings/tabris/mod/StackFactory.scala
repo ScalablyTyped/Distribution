@@ -10,5 +10,5 @@ trait StackFactory
   extends Factory[
       StackConstructor, 
       InstanceType[StackConstructor], 
-      js.Function1[/* repeated */ js.Any, InstanceType[StackConstructor]]
+      js.Function1[/* repeated */ Any, Widget[Any]]
     ]

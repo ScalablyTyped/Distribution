@@ -1,5 +1,6 @@
 package typings.firebaseDatabase
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.firebaseDatabase.serverActionsMod.ServerActions
 import typings.firebaseDatabase.statsCollectionMod.StatsCollection
 import org.scalablytyped.runtime.StObject
@@ -8,23 +9,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object statsReporterMod {
   
-  @JSImport("@firebase/database/dist/src/core/stats/StatsReporter", "StatsReporter")
+  @JSImport("@firebase/database/dist/node-esm/src/core/stats/StatsReporter", JSImport.Namespace)
   @js.native
-  class StatsReporter protected () extends StObject {
-    /**
-      * @param collection
-      * @param server_
-      */
+  val ^ : js.Any = js.native
+  
+  @JSImport("@firebase/database/dist/node-esm/src/core/stats/StatsReporter", "StatsReporter")
+  @js.native
+  open class StatsReporter protected () extends StObject {
     def this(collection: StatsCollection, server_ : ServerActions) = this()
     
-    def includeStat(stat: String): Unit = js.native
+    /* private */ var reportStats_ : Any = js.native
     
-    /* private */ var reportStats_ : js.Any = js.native
+    /* private */ var server_ : Any = js.native
     
-    /* private */ var server_ : js.Any = js.native
+    /* private */ var statsListener_ : Any = js.native
     
-    /* private */ var statsListener_ : js.Any = js.native
-    
-    /* private */ var statsToReport_ : js.Any = js.native
+    var statsToReport_ : StringDictionary[Boolean] = js.native
   }
+  
+  inline def statsReporterIncludeStat(reporter: StatsReporter, stat: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("statsReporterIncludeStat")(reporter.asInstanceOf[js.Any], stat.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

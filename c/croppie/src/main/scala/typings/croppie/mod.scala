@@ -12,6 +12,7 @@ import typings.croppie.croppieNumbers.`-90`
 import typings.croppie.croppieNumbers.`180`
 import typings.croppie.croppieNumbers.`270`
 import typings.croppie.croppieNumbers.`90`
+import typings.croppie.croppieStrings.ctrl
 import typings.croppie.croppieStrings.original
 import typings.croppie.croppieStrings.viewport
 import typings.std.Blob
@@ -25,7 +26,7 @@ object mod {
   
   @JSImport("croppie", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Croppie {
     def this(container: HTMLElement) = this()
@@ -57,7 +58,7 @@ object mod {
       
       inline def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
       
-      inline def setPointsVarargs(value: Double*): Self = StObject.set(x, "points", js.Array(value :_*))
+      inline def setPointsVarargs(value: Double*): Self = StObject.set(x, "points", js.Array(value*))
       
       inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
       
@@ -93,18 +94,7 @@ object mod {
     def result(options: ResultOptionstyperawcanva): js.Promise[HTMLCanvasElement] = js.native
     def result(options: ResultOptions): js.Promise[HTMLCanvasElement] = js.native
     
-    @JSName("rotate")
-    def rotate_180(degrees: `-180`): Unit = js.native
-    @JSName("rotate")
-    def rotate_180(degrees: `180`): Unit = js.native
-    @JSName("rotate")
-    def rotate_270(degrees: `-270`): Unit = js.native
-    @JSName("rotate")
-    def rotate_270(degrees: `270`): Unit = js.native
-    @JSName("rotate")
-    def rotate_90(degrees: `-90`): Unit = js.native
-    @JSName("rotate")
-    def rotate_90(degrees: `90`): Unit = js.native
+    def rotate(degrees: `90` | `180` | `270` | `-90` | `-180` | `-270`): Unit = js.native
     
     def setZoom(zoom: Double): Unit = js.native
   }
@@ -119,11 +109,19 @@ object mod {
     
     var enableOrientation: js.UndefOr[Boolean] = js.undefined
     
+    var enableResize: js.UndefOr[Boolean] = js.undefined
+    
     var enableZoom: js.UndefOr[Boolean] = js.undefined
     
     var enforceBoundary: js.UndefOr[Boolean] = js.undefined
     
-    var mouseWheelZoom: js.UndefOr[Boolean] = js.undefined
+    /** @default 1.5 */
+    var maxZoom: js.UndefOr[Double] = js.undefined
+    
+    /** @default 0 */
+    var minZoom: js.UndefOr[Double] = js.undefined
+    
+    var mouseWheelZoom: js.UndefOr[Boolean | ctrl] = js.undefined
     
     var showZoomer: js.UndefOr[Boolean] = js.undefined
     
@@ -154,6 +152,10 @@ object mod {
       
       inline def setEnableOrientationUndefined: Self = StObject.set(x, "enableOrientation", js.undefined)
       
+      inline def setEnableResize(value: Boolean): Self = StObject.set(x, "enableResize", value.asInstanceOf[js.Any])
+      
+      inline def setEnableResizeUndefined: Self = StObject.set(x, "enableResize", js.undefined)
+      
       inline def setEnableZoom(value: Boolean): Self = StObject.set(x, "enableZoom", value.asInstanceOf[js.Any])
       
       inline def setEnableZoomUndefined: Self = StObject.set(x, "enableZoom", js.undefined)
@@ -162,7 +164,15 @@ object mod {
       
       inline def setEnforceBoundaryUndefined: Self = StObject.set(x, "enforceBoundary", js.undefined)
       
-      inline def setMouseWheelZoom(value: Boolean): Self = StObject.set(x, "mouseWheelZoom", value.asInstanceOf[js.Any])
+      inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
+      
+      inline def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
+      
+      inline def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
+      
+      inline def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
+      
+      inline def setMouseWheelZoom(value: Boolean | ctrl): Self = StObject.set(x, "mouseWheelZoom", value.asInstanceOf[js.Any])
       
       inline def setMouseWheelZoomUndefined: Self = StObject.set(x, "mouseWheelZoom", js.undefined)
       

@@ -1,54 +1,37 @@
 package typings.reactSketchapp
 
+import typings.propTypes.mod.InferProps
 import typings.react.mod.Component
-import typings.react.mod.ReactNode
+import typings.reactSketchapp.anon.ViewBox
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object symbolMod {
   
-  @JSImport("react-sketchapp/lib/components/Svg/Symbol", JSImport.Default)
+  @JSImport("react-sketchapp/lib/components/Svg/Symbol", "Symbol")
   @js.native
-  class default ()
-    extends Component[SymbolProps, js.Object, js.Any]
-  
-  type Symbol = Component[SymbolProps, js.Object, js.Any]
-  
-  trait SymbolProps extends StObject {
-    
-    var children: js.Array[ReactNode] | ReactNode
-    
-    var id: String
-    
-    var preserveAspectRatio: js.UndefOr[String] = js.undefined
-    
-    var viewBox: js.UndefOr[String] = js.undefined
+  open class Symbol protected ()
+    extends Component[Props, js.Object, Any] {
+    def this(props: Props) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: Props, context: Any) = this()
   }
-  object SymbolProps {
+  /* static members */
+  object Symbol {
     
-    inline def apply(id: String): SymbolProps = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-      __obj.asInstanceOf[SymbolProps]
-    }
+    @JSImport("react-sketchapp/lib/components/Svg/Symbol", "Symbol")
+    @js.native
+    val ^ : js.Any = js.native
     
-    extension [Self <: SymbolProps](x: Self) {
-      
-      inline def setChildren(value: js.Array[ReactNode] | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-      
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-      
-      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
-      
-      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-      
-      inline def setPreserveAspectRatio(value: String): Self = StObject.set(x, "preserveAspectRatio", value.asInstanceOf[js.Any])
-      
-      inline def setPreserveAspectRatioUndefined: Self = StObject.set(x, "preserveAspectRatio", js.undefined)
-      
-      inline def setViewBox(value: String): Self = StObject.set(x, "viewBox", value.asInstanceOf[js.Any])
-      
-      inline def setViewBoxUndefined: Self = StObject.set(x, "viewBox", js.undefined)
-    }
+    @JSImport("react-sketchapp/lib/components/Svg/Symbol", "Symbol.propTypes")
+    @js.native
+    def propTypes: ViewBox = js.native
+    inline def propTypes_=(x: ViewBox): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
+  
+  type Props = InferProps[ViewBox]
 }

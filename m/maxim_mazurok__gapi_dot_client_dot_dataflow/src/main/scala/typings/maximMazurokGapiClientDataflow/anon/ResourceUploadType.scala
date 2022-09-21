@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientDataflow.anon
 
-import typings.maximMazurokGapiClientDataflow.gapi.client.dataflow.CreateJobFromTemplateRequest
+import typings.maximMazurokGapiClientDataflow.gapi.client.dataflow.SendWorkerMessagesRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,7 @@ trait ResourceUploadType extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** The [regional endpoint] (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) to which to direct the request. */
+  /** The [regional endpoint] (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that contains the job. */
   var location: String
   
   /** OAuth 2.0 token for the current user. */
@@ -35,14 +35,14 @@ trait ResourceUploadType extends StObject {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
-  /** Required. The ID of the Cloud Platform project that the job belongs to. */
+  /** The project to send the WorkerMessages to. */
   var projectId: String
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: CreateJobFromTemplateRequest
+  var resource: SendWorkerMessagesRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,7 +52,7 @@ trait ResourceUploadType extends StObject {
 }
 object ResourceUploadType {
   
-  inline def apply(location: String, projectId: String, resource: CreateJobFromTemplateRequest): ResourceUploadType = {
+  inline def apply(location: String, projectId: String, resource: SendWorkerMessagesRequest): ResourceUploadType = {
     val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceUploadType]
   }
@@ -99,7 +99,7 @@ object ResourceUploadType {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: CreateJobFromTemplateRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: SendWorkerMessagesRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

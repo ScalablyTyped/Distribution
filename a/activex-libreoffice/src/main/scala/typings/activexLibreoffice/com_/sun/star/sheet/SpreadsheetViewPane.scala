@@ -29,7 +29,7 @@ object SpreadsheetViewPane {
     getFirstVisibleRow: () => Double,
     getReferredCells: () => XCellRange,
     getVisibleRange: () => CellRangeAddress,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setFirstVisibleColumn: Double => Unit,
     setFirstVisibleRow: Double => Unit

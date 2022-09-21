@@ -7,14 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HeatmapLayer
   extends StObject
-     with LayerBase
-     with Layer {
+     with Layer
+     with AnyLayer {
   
-  var layout: js.UndefOr[HeatmapLayout] = js.undefined
+  @JSName("layout")
+  var layout_HeatmapLayer: js.UndefOr[HeatmapLayout] = js.undefined
   
-  var paint: js.UndefOr[HeatmapPaint] = js.undefined
+  @JSName("paint")
+  var paint_HeatmapLayer: js.UndefOr[HeatmapPaint] = js.undefined
   
-  var `type`: heatmap
+  @JSName("type")
+  var type_HeatmapLayer: heatmap
 }
 object HeatmapLayer {
   

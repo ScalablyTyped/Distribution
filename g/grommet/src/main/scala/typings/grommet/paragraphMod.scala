@@ -1,6 +1,5 @@
 package typings.grommet
 
-import typings.grommet.grommetStrings.color
 import typings.grommet.grommetStrings.large
 import typings.grommet.grommetStrings.medium
 import typings.grommet.grommetStrings.small
@@ -11,12 +10,8 @@ import typings.grommet.utilsMod.AlignSelfType
 import typings.grommet.utilsMod.ColorType
 import typings.grommet.utilsMod.GridAreaType
 import typings.grommet.utilsMod.MarginType
-import typings.grommet.utilsMod.Omit
 import typings.grommet.utilsMod.TextAlignType
-import typings.react.mod.DetailedHTMLProps
 import typings.react.mod.FC
-import typings.react.mod.HTMLAttributes
-import typings.std.HTMLParagraphElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,12 +20,19 @@ object paragraphMod {
   
   @JSImport("grommet/components/Paragraph", "Paragraph")
   @js.native
-  val Paragraph: FC[
-    ParagraphProps & (Omit[
-      DetailedHTMLProps[HTMLAttributes[HTMLParagraphElement], HTMLParagraphElement], 
-      color
-    ])
-  ] = js.native
+  val Paragraph: FC[ParagraphExtendedProps] = js.native
+  
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped {[ P in std.Exclude<keyof react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLParagraphElement>, std.HTMLParagraphElement>, 'color'> ]: react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLParagraphElement>, std.HTMLParagraphElement>[P]} */ trait ParagraphExtendedProps
+    extends StObject
+       with ParagraphProps
+  object ParagraphExtendedProps {
+    
+    inline def apply(): ParagraphExtendedProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ParagraphExtendedProps]
+    }
+  }
   
   trait ParagraphProps extends StObject {
     
@@ -45,6 +47,8 @@ object paragraphMod {
     var gridArea: js.UndefOr[GridAreaType] = js.undefined
     
     var margin: js.UndefOr[MarginType] = js.undefined
+    
+    var maxLines: js.UndefOr[Double] = js.undefined
     
     var responsive: js.UndefOr[Boolean] = js.undefined
     
@@ -84,6 +88,10 @@ object paragraphMod {
       inline def setMargin(value: MarginType): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+      
+      inline def setMaxLines(value: Double): Self = StObject.set(x, "maxLines", value.asInstanceOf[js.Any])
+      
+      inline def setMaxLinesUndefined: Self = StObject.set(x, "maxLines", js.undefined)
       
       inline def setResponsive(value: Boolean): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
       

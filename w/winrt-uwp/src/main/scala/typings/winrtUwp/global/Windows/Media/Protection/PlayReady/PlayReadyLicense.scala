@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.Media.Protection.PlayReady
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +21,7 @@ abstract class PlayReadyLicense ()
   
   /** Gets the expiration date of the current license. */
   /* CompleteClass */
-  var expirationDate: Date = js.native
+  var expirationDate: js.Date = js.native
   
   /** Gets the amount of time, in seconds, before the current license expires after the media is first played. */
   /* CompleteClass */

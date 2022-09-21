@@ -19,14 +19,14 @@ trait XSystemChildFactory
     * @param SystemType one constant out of the constant group {@link com.sun.star.lang.SystemDependent} .
     * @returns the created window.
     */
-  def createSystemChild(Parent: js.Any, ProcessId: SeqEquiv[Double], SystemType: Double): XWindowPeer
+  def createSystemChild(Parent: Any, ProcessId: SeqEquiv[Double], SystemType: Double): XWindowPeer
 }
 object XSystemChildFactory {
   
   inline def apply(
     acquire: () => Unit,
-    createSystemChild: (js.Any, SeqEquiv[Double], Double) => XWindowPeer,
-    queryInterface: `type` => js.Any,
+    createSystemChild: (Any, SeqEquiv[Double], Double) => XWindowPeer,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XSystemChildFactory = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createSystemChild = js.Any.fromFunction3(createSystemChild), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -35,6 +35,6 @@ object XSystemChildFactory {
   
   extension [Self <: XSystemChildFactory](x: Self) {
     
-    inline def setCreateSystemChild(value: (js.Any, SeqEquiv[Double], Double) => XWindowPeer): Self = StObject.set(x, "createSystemChild", js.Any.fromFunction3(value))
+    inline def setCreateSystemChild(value: (Any, SeqEquiv[Double], Double) => XWindowPeer): Self = StObject.set(x, "createSystemChild", js.Any.fromFunction3(value))
   }
 }

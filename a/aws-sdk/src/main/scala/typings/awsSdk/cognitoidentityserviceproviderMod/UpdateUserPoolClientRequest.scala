@@ -7,32 +7,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateUserPoolClientRequest extends StObject {
   
   /**
-    * The time limit, after which the access token is no longer valid and cannot be used.
+    * The access token time limit. After this limit expires, your user can't use their access token. To specify the time unit for AccessTokenValidity as seconds, minutes, hours, or days, set a TokenValidityUnits value in your API request. For example, when you set AccessTokenValidity to 10 and TokenValidityUnits to hours, your user can authorize access with their access token for 10 hours. The default time unit for AccessTokenValidity in an API request is hours. Valid range is displayed below in seconds.
     */
   var AccessTokenValidity: js.UndefOr[AccessTokenValidityType] = js.undefined
   
   /**
-    * The allowed OAuth flows. Set to code to initiate a code grant flow, which provides an authorization code as the response. This code can be exchanged for access tokens with the token endpoint. Set to implicit to specify that the client should get the access token (and, optionally, ID token, based on scopes) directly. Set to client_credentials to specify that the client should get the access token (and, optionally, ID token, based on scopes) from the token endpoint using a combination of client and client_secret.
+    * The allowed OAuth flows.  code  Use a code grant flow, which provides an authorization code as the response. This code can be exchanged for access tokens with the /oauth2/token endpoint.  implicit  Issue the access token (and, optionally, ID token, based on scopes) directly to your user.  client_credentials  Issue the access token from the /oauth2/token endpoint directly to a non-person user using a combination of the client ID and client secret.  
     */
   var AllowedOAuthFlows: js.UndefOr[OAuthFlowsType] = js.undefined
   
   /**
-    * Set to true if the client is allowed to follow the OAuth protocol when interacting with Cognito user pools.
+    * Set to true if the client is allowed to follow the OAuth protocol when interacting with Amazon Cognito user pools.
     */
   var AllowedOAuthFlowsUserPoolClient: js.UndefOr[BooleanType] = js.undefined
   
   /**
-    * The allowed OAuth scopes. Possible values provided by OAuth are: phone, email, openid, and profile. Possible values provided by AWS are: aws.cognito.signin.user.admin. Custom scopes created in Resource Servers are also supported.
+    * The allowed OAuth scopes. Possible values provided by OAuth are phone, email, openid, and profile. Possible values provided by Amazon Web Services are aws.cognito.signin.user.admin. Custom scopes created in Resource Servers are also supported.
     */
   var AllowedOAuthScopes: js.UndefOr[ScopeListType] = js.undefined
   
   /**
-    * The Amazon Pinpoint analytics configuration for collecting metrics for this user pool.  In regions where Pinpoint is not available, Cognito User Pools only supports sending events to Amazon Pinpoint projects in us-east-1. In regions where Pinpoint is available, Cognito User Pools will support sending events to Amazon Pinpoint projects within that same region.  
+    * The Amazon Pinpoint analytics configuration necessary to collect metrics for this user pool.  In Amazon Web Services Regions where Amazon Pinpoint isn't available, user pools only support sending events to Amazon Pinpoint projects in us-east-1. In Regions where Amazon Pinpoint is available, user pools support sending events to Amazon Pinpoint projects within that same Region. 
     */
   var AnalyticsConfiguration: js.UndefOr[AnalyticsConfigurationType] = js.undefined
   
   /**
-    * A list of allowed redirect (callback) URLs for the identity providers. A redirect URI must:   Be an absolute URI.   Be registered with the authorization server.   Not include a fragment component.   See OAuth 2.0 - Redirection Endpoint. Amazon Cognito requires HTTPS over HTTP except for http://localhost for testing purposes only. App callback URLs such as myapp://example are also supported.
+    * Amazon Cognito creates a session token for each API request in an authentication flow. AuthSessionValidity is the duration, in minutes, of that session token. Your user pool native user must respond to each authentication challenge before the session expires.
+    */
+  var AuthSessionValidity: js.UndefOr[AuthSessionValidityType] = js.undefined
+  
+  /**
+    * A list of allowed redirect (callback) URLs for the IdPs. A redirect URI must:   Be an absolute URI.   Be registered with the authorization server.   Not include a fragment component.   See OAuth 2.0 - Redirection Endpoint. Amazon Cognito requires HTTPS over HTTP except for http://localhost for testing purposes only. App callback URLs such as myapp://example are also supported.
     */
   var CallbackURLs: js.UndefOr[CallbackURLsListType] = js.undefined
   
@@ -52,22 +57,32 @@ trait UpdateUserPoolClientRequest extends StObject {
   var DefaultRedirectURI: js.UndefOr[RedirectUrlType] = js.undefined
   
   /**
-    * The authentication flows that are supported by the user pool clients. Flow names without the ALLOW_ prefix are deprecated in favor of new names with the ALLOW_ prefix. Note that values with ALLOW_ prefix cannot be used along with values without ALLOW_ prefix. Valid values include:    ALLOW_ADMIN_USER_PASSWORD_AUTH: Enable admin based user password authentication flow ADMIN_USER_PASSWORD_AUTH. This setting replaces the ADMIN_NO_SRP_AUTH setting. With this authentication flow, Cognito receives the password in the request instead of using the SRP (Secure Remote Password protocol) protocol to verify passwords.    ALLOW_CUSTOM_AUTH: Enable Lambda trigger based authentication.    ALLOW_USER_PASSWORD_AUTH: Enable user password-based authentication. In this flow, Cognito receives the password in the request instead of using the SRP protocol to verify passwords.    ALLOW_USER_SRP_AUTH: Enable SRP based authentication.    ALLOW_REFRESH_TOKEN_AUTH: Enable authflow to refresh tokens.  
+    * Activates the propagation of additional user context data. For more information about propagation of user context data, see  Adding advanced security to a user pool. If you don’t include this parameter, you can't send device fingerprint information, including source IP address, to Amazon Cognito advanced security. You can only activate EnablePropagateAdditionalUserContextData in an app client that has a client secret.
+    */
+  var EnablePropagateAdditionalUserContextData: js.UndefOr[WrappedBooleanType] = js.undefined
+  
+  /**
+    * Activates or deactivates token revocation. For more information about revoking tokens, see RevokeToken.
+    */
+  var EnableTokenRevocation: js.UndefOr[WrappedBooleanType] = js.undefined
+  
+  /**
+    * The authentication flows that are supported by the user pool clients. Flow names without the ALLOW_ prefix are no longer supported in favor of new names with the ALLOW_ prefix. Note that values with ALLOW_ prefix must be used only along with values with the ALLOW_ prefix. Valid values include:    ALLOW_ADMIN_USER_PASSWORD_AUTH: Enable admin based user password authentication flow ADMIN_USER_PASSWORD_AUTH. This setting replaces the ADMIN_NO_SRP_AUTH setting. With this authentication flow, Amazon Cognito receives the password in the request instead of using the Secure Remote Password (SRP) protocol to verify passwords.    ALLOW_CUSTOM_AUTH: Enable Lambda trigger based authentication.    ALLOW_USER_PASSWORD_AUTH: Enable user password-based authentication. In this flow, Amazon Cognito receives the password in the request instead of using the SRP protocol to verify passwords.    ALLOW_USER_SRP_AUTH: Enable SRP-based authentication.    ALLOW_REFRESH_TOKEN_AUTH: Enable authflow to refresh tokens.  
     */
   var ExplicitAuthFlows: js.UndefOr[ExplicitAuthFlowsListType] = js.undefined
   
   /**
-    * The time limit, after which the ID token is no longer valid and cannot be used.
+    * The ID token time limit. After this limit expires, your user can't use their ID token. To specify the time unit for IdTokenValidity as seconds, minutes, hours, or days, set a TokenValidityUnits value in your API request. For example, when you set IdTokenValidity as 10 and TokenValidityUnits as hours, your user can authenticate their session with their ID token for 10 hours. The default time unit for AccessTokenValidity in an API request is hours. Valid range is displayed below in seconds.
     */
   var IdTokenValidity: js.UndefOr[IdTokenValidityType] = js.undefined
   
   /**
-    * A list of allowed logout URLs for the identity providers.
+    * A list of allowed logout URLs for the IdPs.
     */
   var LogoutURLs: js.UndefOr[LogoutURLsListType] = js.undefined
   
   /**
-    * Use this setting to choose which errors and responses are returned by Cognito APIs during authentication, account confirmation, and password recovery when the user does not exist in the user pool. When set to ENABLED and the user does not exist, authentication returns an error indicating either the username or password was incorrect, and account confirmation and password recovery return a response indicating a code was sent to a simulated destination. When set to LEGACY, those APIs will return a UserNotFoundException exception if the user does not exist in the user pool. Valid values include:    ENABLED - This prevents user existence-related errors.    LEGACY - This represents the old behavior of Cognito where user existence related errors are not prevented.    After February 15th 2020, the value of PreventUserExistenceErrors will default to ENABLED for newly created user pool clients if no value is provided. 
+    * Errors and responses that you want Amazon Cognito APIs to return during authentication, account confirmation, and password recovery when the user doesn't exist in the user pool. When set to ENABLED and the user doesn't exist, authentication returns an error indicating either the username or password was incorrect. Account confirmation and password recovery return a response indicating a code was sent to a simulated destination. When set to LEGACY, those APIs return a UserNotFoundException exception if the user doesn't exist in the user pool. Valid values include:    ENABLED - This prevents user existence-related errors.    LEGACY - This represents the early behavior of Amazon Cognito where user existence related errors aren't prevented.  
     */
   var PreventUserExistenceErrors: js.UndefOr[PreventUserExistenceErrorTypes] = js.undefined
   
@@ -77,17 +92,17 @@ trait UpdateUserPoolClientRequest extends StObject {
   var ReadAttributes: js.UndefOr[ClientPermissionListType] = js.undefined
   
   /**
-    * The time limit, in days, after which the refresh token is no longer valid and cannot be used.
+    * The refresh token time limit. After this limit expires, your user can't use their refresh token. To specify the time unit for RefreshTokenValidity as seconds, minutes, hours, or days, set a TokenValidityUnits value in your API request. For example, when you set RefreshTokenValidity as 10 and TokenValidityUnits as days, your user can refresh their session and retrieve new access and ID tokens for 10 days. The default time unit for RefreshTokenValidity in an API request is days. You can't set RefreshTokenValidity to 0. If you do, Amazon Cognito overrides the value with the default value of 30 days. Valid range is displayed below in seconds.
     */
   var RefreshTokenValidity: js.UndefOr[RefreshTokenValidityType] = js.undefined
   
   /**
-    * A list of provider names for the identity providers that are supported on this client.
+    * A list of provider names for the IdPs that this client supports. The following are supported: COGNITO, Facebook, Google, SignInWithApple, LoginWithAmazon, and the names of your own SAML and OIDC providers.
     */
   var SupportedIdentityProviders: js.UndefOr[SupportedIdentityProvidersListType] = js.undefined
   
   /**
-    * The units in which the validity times are represented in. Default for RefreshToken is days, and default for ID and access tokens are hours.
+    * The units in which the validity times are represented. The default unit for RefreshToken is days, and the default for ID and access tokens is hours.
     */
   var TokenValidityUnits: js.UndefOr[TokenValidityUnitsType] = js.undefined
   
@@ -122,23 +137,27 @@ object UpdateUserPoolClientRequest {
     
     inline def setAllowedOAuthFlowsUserPoolClientUndefined: Self = StObject.set(x, "AllowedOAuthFlowsUserPoolClient", js.undefined)
     
-    inline def setAllowedOAuthFlowsVarargs(value: OAuthFlowType*): Self = StObject.set(x, "AllowedOAuthFlows", js.Array(value :_*))
+    inline def setAllowedOAuthFlowsVarargs(value: OAuthFlowType*): Self = StObject.set(x, "AllowedOAuthFlows", js.Array(value*))
     
     inline def setAllowedOAuthScopes(value: ScopeListType): Self = StObject.set(x, "AllowedOAuthScopes", value.asInstanceOf[js.Any])
     
     inline def setAllowedOAuthScopesUndefined: Self = StObject.set(x, "AllowedOAuthScopes", js.undefined)
     
-    inline def setAllowedOAuthScopesVarargs(value: ScopeType*): Self = StObject.set(x, "AllowedOAuthScopes", js.Array(value :_*))
+    inline def setAllowedOAuthScopesVarargs(value: ScopeType*): Self = StObject.set(x, "AllowedOAuthScopes", js.Array(value*))
     
     inline def setAnalyticsConfiguration(value: AnalyticsConfigurationType): Self = StObject.set(x, "AnalyticsConfiguration", value.asInstanceOf[js.Any])
     
     inline def setAnalyticsConfigurationUndefined: Self = StObject.set(x, "AnalyticsConfiguration", js.undefined)
     
+    inline def setAuthSessionValidity(value: AuthSessionValidityType): Self = StObject.set(x, "AuthSessionValidity", value.asInstanceOf[js.Any])
+    
+    inline def setAuthSessionValidityUndefined: Self = StObject.set(x, "AuthSessionValidity", js.undefined)
+    
     inline def setCallbackURLs(value: CallbackURLsListType): Self = StObject.set(x, "CallbackURLs", value.asInstanceOf[js.Any])
     
     inline def setCallbackURLsUndefined: Self = StObject.set(x, "CallbackURLs", js.undefined)
     
-    inline def setCallbackURLsVarargs(value: RedirectUrlType*): Self = StObject.set(x, "CallbackURLs", js.Array(value :_*))
+    inline def setCallbackURLsVarargs(value: RedirectUrlType*): Self = StObject.set(x, "CallbackURLs", js.Array(value*))
     
     inline def setClientId(value: ClientIdType): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
     
@@ -150,11 +169,19 @@ object UpdateUserPoolClientRequest {
     
     inline def setDefaultRedirectURIUndefined: Self = StObject.set(x, "DefaultRedirectURI", js.undefined)
     
+    inline def setEnablePropagateAdditionalUserContextData(value: WrappedBooleanType): Self = StObject.set(x, "EnablePropagateAdditionalUserContextData", value.asInstanceOf[js.Any])
+    
+    inline def setEnablePropagateAdditionalUserContextDataUndefined: Self = StObject.set(x, "EnablePropagateAdditionalUserContextData", js.undefined)
+    
+    inline def setEnableTokenRevocation(value: WrappedBooleanType): Self = StObject.set(x, "EnableTokenRevocation", value.asInstanceOf[js.Any])
+    
+    inline def setEnableTokenRevocationUndefined: Self = StObject.set(x, "EnableTokenRevocation", js.undefined)
+    
     inline def setExplicitAuthFlows(value: ExplicitAuthFlowsListType): Self = StObject.set(x, "ExplicitAuthFlows", value.asInstanceOf[js.Any])
     
     inline def setExplicitAuthFlowsUndefined: Self = StObject.set(x, "ExplicitAuthFlows", js.undefined)
     
-    inline def setExplicitAuthFlowsVarargs(value: ExplicitAuthFlowsType*): Self = StObject.set(x, "ExplicitAuthFlows", js.Array(value :_*))
+    inline def setExplicitAuthFlowsVarargs(value: ExplicitAuthFlowsType*): Self = StObject.set(x, "ExplicitAuthFlows", js.Array(value*))
     
     inline def setIdTokenValidity(value: IdTokenValidityType): Self = StObject.set(x, "IdTokenValidity", value.asInstanceOf[js.Any])
     
@@ -164,7 +191,7 @@ object UpdateUserPoolClientRequest {
     
     inline def setLogoutURLsUndefined: Self = StObject.set(x, "LogoutURLs", js.undefined)
     
-    inline def setLogoutURLsVarargs(value: RedirectUrlType*): Self = StObject.set(x, "LogoutURLs", js.Array(value :_*))
+    inline def setLogoutURLsVarargs(value: RedirectUrlType*): Self = StObject.set(x, "LogoutURLs", js.Array(value*))
     
     inline def setPreventUserExistenceErrors(value: PreventUserExistenceErrorTypes): Self = StObject.set(x, "PreventUserExistenceErrors", value.asInstanceOf[js.Any])
     
@@ -174,7 +201,7 @@ object UpdateUserPoolClientRequest {
     
     inline def setReadAttributesUndefined: Self = StObject.set(x, "ReadAttributes", js.undefined)
     
-    inline def setReadAttributesVarargs(value: ClientPermissionType*): Self = StObject.set(x, "ReadAttributes", js.Array(value :_*))
+    inline def setReadAttributesVarargs(value: ClientPermissionType*): Self = StObject.set(x, "ReadAttributes", js.Array(value*))
     
     inline def setRefreshTokenValidity(value: RefreshTokenValidityType): Self = StObject.set(x, "RefreshTokenValidity", value.asInstanceOf[js.Any])
     
@@ -184,7 +211,7 @@ object UpdateUserPoolClientRequest {
     
     inline def setSupportedIdentityProvidersUndefined: Self = StObject.set(x, "SupportedIdentityProviders", js.undefined)
     
-    inline def setSupportedIdentityProvidersVarargs(value: ProviderNameType*): Self = StObject.set(x, "SupportedIdentityProviders", js.Array(value :_*))
+    inline def setSupportedIdentityProvidersVarargs(value: ProviderNameType*): Self = StObject.set(x, "SupportedIdentityProviders", js.Array(value*))
     
     inline def setTokenValidityUnits(value: TokenValidityUnitsType): Self = StObject.set(x, "TokenValidityUnits", value.asInstanceOf[js.Any])
     
@@ -196,6 +223,6 @@ object UpdateUserPoolClientRequest {
     
     inline def setWriteAttributesUndefined: Self = StObject.set(x, "WriteAttributes", js.undefined)
     
-    inline def setWriteAttributesVarargs(value: ClientPermissionType*): Self = StObject.set(x, "WriteAttributes", js.Array(value :_*))
+    inline def setWriteAttributesVarargs(value: ClientPermissionType*): Self = StObject.set(x, "WriteAttributes", js.Array(value*))
   }
 }

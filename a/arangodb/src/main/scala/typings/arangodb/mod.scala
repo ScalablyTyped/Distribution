@@ -36,16 +36,16 @@ object mod {
   
   object aql {
     
-    inline def apply(strings: TemplateStringsArray, args: js.Any*): Query = (^.asInstanceOf[js.Dynamic].apply(strings.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Query]
+    inline def apply(strings: TemplateStringsArray, args: Any*): Query = ^.asInstanceOf[js.Dynamic].apply(List(strings.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Query]
     
     @JSImport("@arangodb", "aql")
     @js.native
     val ^ : js.Any = js.native
     
-    inline def join(values: js.Array[js.Any]): Query = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(values.asInstanceOf[js.Any]).asInstanceOf[Query]
-    inline def join(values: js.Array[js.Any], sep: String): Query = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(values.asInstanceOf[js.Any], sep.asInstanceOf[js.Any])).asInstanceOf[Query]
+    inline def join(values: js.Array[Any]): Query = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(values.asInstanceOf[js.Any]).asInstanceOf[Query]
+    inline def join(values: js.Array[Any], sep: String): Query = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(values.asInstanceOf[js.Any], sep.asInstanceOf[js.Any])).asInstanceOf[Query]
     
-    inline def literal(value: js.Any): AqlLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[AqlLiteral]
+    inline def literal(value: Any): AqlLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[AqlLiteral]
   }
   
   /* Inlined arangodb.ArangoDB.Database & {[key: string] : arangodb.ArangoDB.Collection<any> | undefined} */
@@ -56,12 +56,12 @@ object mod {
     val ^ : js.Any = js.native
     
     // Collection
-    inline def collection(name: String): Collection[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("_collection")(name.asInstanceOf[js.Any]).asInstanceOf[Collection[js.Any]]
+    inline def collection(name: String): Collection[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("_collection")(name.asInstanceOf[js.Any]).asInstanceOf[Collection[Any]]
     
-    inline def collections(): js.Array[Collection[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("_collections")().asInstanceOf[js.Array[Collection[js.Any]]]
+    inline def collections(): js.Array[Collection[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("_collections")().asInstanceOf[js.Array[Collection[Any]]]
     
-    inline def create(name: String): Collection[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("_create")(name.asInstanceOf[js.Any]).asInstanceOf[Collection[js.Any]]
-    inline def create(name: String, properties: CreateCollectionOptions): Collection[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("_create")(name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Collection[js.Any]]
+    inline def create(name: String): Collection[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("_create")(name.asInstanceOf[js.Any]).asInstanceOf[Collection[Any]]
+    inline def create(name: String, properties: CreateCollectionOptions): Collection[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("_create")(name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Collection[Any]]
     
     // Database
     inline def createDatabase(name: String): `true` = ^.asInstanceOf[js.Dynamic].applyDynamic("_createDatabase")(name.asInstanceOf[js.Any]).asInstanceOf[`true`]
@@ -69,22 +69,22 @@ object mod {
     inline def createDatabase(name: String, options: scala.Nothing, users: js.Array[DatabaseUser]): `true` = (^.asInstanceOf[js.Dynamic].applyDynamic("_createDatabase")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], users.asInstanceOf[js.Any])).asInstanceOf[`true`]
     inline def createDatabase(name: String, options: Unit, users: js.Array[DatabaseUser]): `true` = (^.asInstanceOf[js.Dynamic].applyDynamic("_createDatabase")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], users.asInstanceOf[js.Any])).asInstanceOf[`true`]
     
-    inline def createDocumentCollection(name: String): Collection[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("_createDocumentCollection")(name.asInstanceOf[js.Any]).asInstanceOf[Collection[js.Any]]
-    inline def createDocumentCollection(name: String, properties: CreateCollectionOptions): Collection[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("_createDocumentCollection")(name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Collection[js.Any]]
+    inline def createDocumentCollection(name: String): Collection[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("_createDocumentCollection")(name.asInstanceOf[js.Any]).asInstanceOf[Collection[Any]]
+    inline def createDocumentCollection(name: String, properties: CreateCollectionOptions): Collection[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("_createDocumentCollection")(name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Collection[Any]]
     
-    inline def createEdgeCollection(name: String): Collection[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("_createEdgeCollection")(name.asInstanceOf[js.Any]).asInstanceOf[Collection[js.Any]]
-    inline def createEdgeCollection(name: String, properties: CreateCollectionOptions): Collection[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("_createEdgeCollection")(name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Collection[js.Any]]
+    inline def createEdgeCollection(name: String): Collection[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("_createEdgeCollection")(name.asInstanceOf[js.Any]).asInstanceOf[Collection[Any]]
+    inline def createEdgeCollection(name: String, properties: CreateCollectionOptions): Collection[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("_createEdgeCollection")(name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Collection[Any]]
     
-    inline def createStatement(query: String): Statement[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("_createStatement")(query.asInstanceOf[js.Any]).asInstanceOf[Statement[js.Any]]
+    inline def createStatement(query: String): Statement[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("_createStatement")(query.asInstanceOf[js.Any]).asInstanceOf[Statement[Any]]
     // AQL
-    inline def createStatement(query: Query): Statement[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("_createStatement")(query.asInstanceOf[js.Any]).asInstanceOf[Statement[js.Any]]
+    inline def createStatement(query: Query): Statement[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("_createStatement")(query.asInstanceOf[js.Any]).asInstanceOf[Statement[Any]]
     
     inline def createView(name: String, `type`: ViewType, properties: ArangoSearchViewPropertiesOptions): ArangoSearchView = (^.asInstanceOf[js.Dynamic].applyDynamic("_createView")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[ArangoSearchView]
     
     inline def databases(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("_databases")().asInstanceOf[js.Array[String]]
     
     // Document
-    inline def document(name: String): Document[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("_document")(name.asInstanceOf[js.Any]).asInstanceOf[Document[js.Any]]
+    inline def document(name: String): Document[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("_document")(name.asInstanceOf[js.Any]).asInstanceOf[Document[Any]]
     
     inline def drop(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_drop")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
@@ -98,9 +98,9 @@ object mod {
     // Global
     inline def engine(): EngineType = ^.asInstanceOf[js.Dynamic].applyDynamic("_engine")().asInstanceOf[EngineType]
     
-    inline def engineStats(): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("_engineStats")().asInstanceOf[StringDictionary[js.Any]]
+    inline def engineStats(): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("_engineStats")().asInstanceOf[StringDictionary[Any]]
     
-    inline def executeTransaction(transaction: Transaction): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_executeTransaction")(transaction.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def executeTransaction[T](transaction: Transaction[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("_executeTransaction")(transaction.asInstanceOf[js.Any]).asInstanceOf[T]
     
     inline def exists(selector: String): DocumentMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("_exists")(selector.asInstanceOf[js.Any]).asInstanceOf[DocumentMetadata]
     inline def exists(selector: ObjectWithId): DocumentMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("_exists")(selector.asInstanceOf[js.Any]).asInstanceOf[DocumentMetadata]
@@ -112,8 +112,8 @@ object mod {
     inline def id(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_id")().asInstanceOf[String]
     
     // Indexes
-    inline def index(index: String): Index[js.Any] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("_index")(index.asInstanceOf[js.Any]).asInstanceOf[Index[js.Any] | Null]
-    inline def index(index: IndexLike): Index[js.Any] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("_index")(index.asInstanceOf[js.Any]).asInstanceOf[Index[js.Any] | Null]
+    inline def index(index: String): Index[Any] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("_index")(index.asInstanceOf[js.Any]).asInstanceOf[Index[Any] | Null]
+    inline def index(index: IndexLike): Index[Any] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("_index")(index.asInstanceOf[js.Any]).asInstanceOf[Index[Any] | Null]
     
     inline def isSystem(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("_isSystem")().asInstanceOf[Boolean]
     
@@ -123,12 +123,12 @@ object mod {
     
     inline def path(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_path")().asInstanceOf[String]
     
-    inline def query(query: String): Cursor[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("_query")(query.asInstanceOf[js.Any]).asInstanceOf[Cursor[js.Any]]
-    inline def query(query: String, bindVars: js.Object): Cursor[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("_query")(query.asInstanceOf[js.Any], bindVars.asInstanceOf[js.Any])).asInstanceOf[Cursor[js.Any]]
-    inline def query(query: String, bindVars: js.Object, options: QueryOptions): Cursor[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("_query")(query.asInstanceOf[js.Any], bindVars.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Cursor[js.Any]]
-    inline def query(query: String, bindVars: Unit, options: QueryOptions): Cursor[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("_query")(query.asInstanceOf[js.Any], bindVars.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Cursor[js.Any]]
-    inline def query(query: Query): Cursor[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("_query")(query.asInstanceOf[js.Any]).asInstanceOf[Cursor[js.Any]]
-    inline def query(query: Query, options: QueryOptions): Cursor[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("_query")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Cursor[js.Any]]
+    inline def query(query: String): Cursor[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("_query")(query.asInstanceOf[js.Any]).asInstanceOf[Cursor[Any]]
+    inline def query(query: String, bindVars: js.Object): Cursor[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("_query")(query.asInstanceOf[js.Any], bindVars.asInstanceOf[js.Any])).asInstanceOf[Cursor[Any]]
+    inline def query(query: String, bindVars: js.Object, options: QueryOptions): Cursor[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("_query")(query.asInstanceOf[js.Any], bindVars.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Cursor[Any]]
+    inline def query(query: String, bindVars: Unit, options: QueryOptions): Cursor[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("_query")(query.asInstanceOf[js.Any], bindVars.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Cursor[Any]]
+    inline def query(query: Query): Cursor[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("_query")(query.asInstanceOf[js.Any]).asInstanceOf[Cursor[Any]]
+    inline def query(query: Query, options: QueryOptions): Cursor[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("_query")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Cursor[Any]]
     
     inline def remove(selector: String): DocumentMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("_remove")(selector.asInstanceOf[js.Any]).asInstanceOf[DocumentMetadata]
     inline def remove(selector: ObjectWithId): DocumentMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("_remove")(selector.asInstanceOf[js.Any]).asInstanceOf[DocumentMetadata]
@@ -1659,7 +1659,7 @@ object mod {
     inline def SIMPLE_CLIENT_UNKNOWN_ERROR_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIMPLE_CLIENT_UNKNOWN_ERROR")(x.asInstanceOf[js.Any])
   }
   
-  inline def query(strings: TemplateStringsArray, args: js.Any*): Cursor[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(strings.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Cursor[js.Any]]
+  inline def query(strings: TemplateStringsArray, args: Any*): Cursor[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(List(strings.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Cursor[Any]]
   
   inline def time(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("time")().asInstanceOf[Double]
 }

@@ -16,9 +16,9 @@ trait Edge extends StObject {
   
   def to(): Double
   
-  /* private */ var v: js.Any
+  /* private */ var v: Any
   
-  /* private */ var w: js.Any
+  /* private */ var w: Any
   
   var weight: Double
 }
@@ -29,8 +29,8 @@ object Edge {
     from: () => Double,
     other: Double => Double,
     to: () => Double,
-    v: js.Any,
-    w: js.Any,
+    v: Any,
+    w: Any,
     weight: Double
   ): Edge = {
     val __obj = js.Dynamic.literal(either = js.Any.fromFunction0(either), from = js.Any.fromFunction0(from), other = js.Any.fromFunction1(other), to = js.Any.fromFunction0(to), v = v.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
@@ -51,9 +51,9 @@ object Edge {
     
     inline def setTo(value: () => Double): Self = StObject.set(x, "to", js.Any.fromFunction0(value))
     
-    inline def setV(value: js.Any): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+    inline def setV(value: Any): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
     
-    inline def setW(value: js.Any): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+    inline def setW(value: Any): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
     
     inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
   }

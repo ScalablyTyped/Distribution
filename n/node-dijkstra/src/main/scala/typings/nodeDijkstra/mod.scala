@@ -1,5 +1,7 @@
 package typings.nodeDijkstra
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,10 +53,11 @@ object mod {
     *
     * const route = new Graph(g)
     */
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Graph {
-    def this(nodes: js.Array[js.Any]) = this()
+    def this(nodes: StringDictionary[StringDictionary[Double]]) = this()
+    def this(nodes: Map[String, Map[String, Double]]) = this()
   }
   
   @js.native
@@ -83,7 +86,7 @@ object mod {
       *
       * route.addNode('D', d)
       */
-    def addNode(name: String, neighbors: js.Any): Graph = js.native
+    def addNode(name: String, neighbors: Any): Graph = js.native
     
     /**
       * Compute the shortest path between the specified nodes
@@ -126,8 +129,8 @@ object mod {
       * //       cost: 4
       * //    }
       */
-    def path(start: js.Any, goal: js.Any): js.Any = js.native
-    def path(start: js.Any, goal: js.Any, options: PathOption): js.Any = js.native
+    def path(start: Any, goal: Any): js.Array[String] | PathResult = js.native
+    def path(start: Any, goal: Any, options: PathOption): js.Array[String] | PathResult = js.native
     
     /**
       * Removes a node and all of its references from the graph
@@ -150,7 +153,7 @@ object mod {
   
   trait PathOption extends StObject {
     
-    var avoid: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var avoid: js.UndefOr[js.Array[Any]] = js.undefined
     
     var cost: js.UndefOr[Boolean] = js.undefined
     
@@ -167,11 +170,11 @@ object mod {
     
     extension [Self <: PathOption](x: Self) {
       
-      inline def setAvoid(value: js.Array[js.Any]): Self = StObject.set(x, "avoid", value.asInstanceOf[js.Any])
+      inline def setAvoid(value: js.Array[Any]): Self = StObject.set(x, "avoid", value.asInstanceOf[js.Any])
       
       inline def setAvoidUndefined: Self = StObject.set(x, "avoid", js.undefined)
       
-      inline def setAvoidVarargs(value: js.Any*): Self = StObject.set(x, "avoid", js.Array(value :_*))
+      inline def setAvoidVarargs(value: Any*): Self = StObject.set(x, "avoid", js.Array(value*))
       
       inline def setCost(value: Boolean): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
       
@@ -184,6 +187,29 @@ object mod {
       inline def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
       
       inline def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
+    }
+  }
+  
+  trait PathResult extends StObject {
+    
+    var cost: Double
+    
+    var path: js.Array[String]
+  }
+  object PathResult {
+    
+    inline def apply(cost: Double, path: js.Array[String]): PathResult = {
+      val __obj = js.Dynamic.literal(cost = cost.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PathResult]
+    }
+    
+    extension [Self <: PathResult](x: Self) {
+      
+      inline def setCost(value: Double): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
+      
+      inline def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      
+      inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value*))
     }
   }
 }

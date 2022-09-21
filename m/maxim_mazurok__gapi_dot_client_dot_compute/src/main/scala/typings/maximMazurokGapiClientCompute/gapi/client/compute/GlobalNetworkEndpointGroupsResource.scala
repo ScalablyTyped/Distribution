@@ -1,13 +1,13 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import typings.gapiClient.gapi.client.Request
-import typings.maximMazurokGapiClientCompute.anon.FieldsKey
 import typings.maximMazurokGapiClientCompute.anon.FieldsKeyNetworkEndpointGroup
+import typings.maximMazurokGapiClientCompute.anon.FieldsKeyOauthtoken
 import typings.maximMazurokGapiClientCompute.anon.KeyNetworkEndpointGroup
 import typings.maximMazurokGapiClientCompute.anon.MaxResults
 import typings.maximMazurokGapiClientCompute.anon.NetworkEndpointGroupOauthtoken
-import typings.maximMazurokGapiClientCompute.anon.OrderBy
-import typings.maximMazurokGapiClientCompute.anon.QuotaUserRequestIdResource
+import typings.maximMazurokGapiClientCompute.anon.PageToken
+import typings.maximMazurokGapiClientCompute.anon.Xgafv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,9 +31,9 @@ trait GlobalNetworkEndpointGroupsResource extends StObject {
   def get(): Request[NetworkEndpointGroup] = js.native
   def get(request: FieldsKeyNetworkEndpointGroup): Request[NetworkEndpointGroup] = js.native
   
-  def insert(request: FieldsKey, body: NetworkEndpointGroup): Request[Operation] = js.native
   /** Creates a network endpoint group in the specified project using the parameters that are included in the request. */
-  def insert(request: QuotaUserRequestIdResource): Request[Operation] = js.native
+  def insert(request: FieldsKeyOauthtoken): Request[Operation] = js.native
+  def insert(request: Xgafv, body: NetworkEndpointGroup): Request[Operation] = js.native
   
   /** Retrieves the list of network endpoint groups that are located in the specified project. */
   def list(): Request[NetworkEndpointGroupList] = js.native
@@ -41,5 +41,5 @@ trait GlobalNetworkEndpointGroupsResource extends StObject {
   
   /** Lists the network endpoints in the specified network endpoint group. */
   def listNetworkEndpoints(): Request[NetworkEndpointGroupsListNetworkEndpoints] = js.native
-  def listNetworkEndpoints(request: OrderBy): Request[NetworkEndpointGroupsListNetworkEndpoints] = js.native
+  def listNetworkEndpoints(request: PageToken): Request[NetworkEndpointGroupsListNetworkEndpoints] = js.native
 }

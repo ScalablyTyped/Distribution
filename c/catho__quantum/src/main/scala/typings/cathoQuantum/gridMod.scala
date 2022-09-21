@@ -1,8 +1,8 @@
 package typings.cathoQuantum
 
 import typings.cathoQuantum.anon.BreakpointsComponents
-import typings.cathoQuantum.anon.BreakpointsObject
-import typings.cathoQuantum.anon.`11`
+import typings.cathoQuantum.anon.`14`
+import typings.cathoQuantum.anon.`15`
 import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
@@ -13,50 +13,50 @@ object gridMod {
   
   @JSImport("@catho/quantum/Grid", "Col")
   @js.native
-  class Col protected ()
-    extends Component[ColProps, js.Object, js.Any] {
+  open class Col protected ()
+    extends Component[ColProps, js.Object, Any] {
     def this(props: ColProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ColProps, context: js.Any) = this()
+    def this(props: ColProps, context: Any) = this()
   }
   
   @JSImport("@catho/quantum/Grid", "Container")
   @js.native
-  class Container protected ()
-    extends Component[ContainerProps, js.Object, js.Any] {
+  open class Container protected ()
+    extends Component[ContainerProps, js.Object, Any] {
     def this(props: ContainerProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ContainerProps, context: js.Any) = this()
+    def this(props: ContainerProps, context: Any) = this()
   }
   
   @JSImport("@catho/quantum/Grid", "Hide")
   @js.native
-  class Hide protected ()
-    extends Component[HideProps, js.Object, js.Any] {
+  open class Hide protected ()
+    extends Component[HideProps, js.Object, Any] {
     def this(props: HideProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: HideProps, context: js.Any) = this()
+    def this(props: HideProps, context: Any) = this()
   }
   
   @JSImport("@catho/quantum/Grid", "Row")
   @js.native
-  class Row protected ()
-    extends Component[RowProps, js.Object, js.Any] {
+  open class Row protected ()
+    extends Component[RowProps, js.Object, Any] {
     def this(props: RowProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: RowProps, context: js.Any) = this()
+    def this(props: RowProps, context: Any) = this()
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -64,7 +64,6 @@ object gridMod {
     - typings.cathoQuantum.cathoQuantumStrings.small
     - typings.cathoQuantum.cathoQuantumStrings.medium
     - typings.cathoQuantum.cathoQuantumStrings.large
-    - typings.cathoQuantum.cathoQuantumStrings.xlarge
   */
   trait BreakpointsType extends StObject
   
@@ -86,10 +85,6 @@ object gridMod {
     
     var `small-offset`: js.UndefOr[Double] = js.undefined
     
-    var xlarge: js.UndefOr[Double] = js.undefined
-    
-    var `xlarge-offset`: js.UndefOr[Double] = js.undefined
-    
     var xsmall: js.UndefOr[Double] = js.undefined
     
     var `xsmall-offset`: js.UndefOr[Double] = js.undefined
@@ -107,7 +102,7 @@ object gridMod {
       
       inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
       
-      inline def setHideVarargs(value: BreakpointsType*): Self = StObject.set(x, "hide", js.Array(value :_*))
+      inline def setHideVarargs(value: BreakpointsType*): Self = StObject.set(x, "hide", js.Array(value*))
       
       inline def setLarge(value: Double): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
       
@@ -136,14 +131,6 @@ object gridMod {
       inline def `setSmall-offsetUndefined`: Self = StObject.set(x, "small-offset", js.undefined)
       
       inline def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
-      
-      inline def setXlarge(value: Double): Self = StObject.set(x, "xlarge", value.asInstanceOf[js.Any])
-      
-      inline def `setXlarge-offset`(value: Double): Self = StObject.set(x, "xlarge-offset", value.asInstanceOf[js.Any])
-      
-      inline def `setXlarge-offsetUndefined`: Self = StObject.set(x, "xlarge-offset", js.undefined)
-      
-      inline def setXlargeUndefined: Self = StObject.set(x, "xlarge", js.undefined)
       
       inline def setXsmall(value: Double): Self = StObject.set(x, "xsmall", value.asInstanceOf[js.Any])
       
@@ -184,7 +171,7 @@ object gridMod {
       
       inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
       
-      inline def setHideVarargs(value: String*): Self = StObject.set(x, "hide", js.Array(value :_*))
+      inline def setHideVarargs(value: String*): Self = StObject.set(x, "hide", js.Array(value*))
       
       inline def `setNo-gutters`(value: Boolean): Self = StObject.set(x, "no-gutters", value.asInstanceOf[js.Any])
       
@@ -208,9 +195,7 @@ object gridMod {
     
     var small: js.UndefOr[Boolean] = js.undefined
     
-    var theme: js.UndefOr[BreakpointsObject] = js.undefined
-    
-    var xlarge: js.UndefOr[Boolean] = js.undefined
+    var theme: js.UndefOr[`14`] = js.undefined
     
     var xsmall: js.UndefOr[Boolean] = js.undefined
   }
@@ -235,13 +220,9 @@ object gridMod {
       
       inline def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
       
-      inline def setTheme(value: BreakpointsObject): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: `14`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
       inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
-      
-      inline def setXlarge(value: Boolean): Self = StObject.set(x, "xlarge", value.asInstanceOf[js.Any])
-      
-      inline def setXlargeUndefined: Self = StObject.set(x, "xlarge", js.undefined)
       
       inline def setXsmall(value: Boolean): Self = StObject.set(x, "xsmall", value.asInstanceOf[js.Any])
       
@@ -257,7 +238,7 @@ object gridMod {
     
     var `no-gutters`: js.UndefOr[Boolean] = js.undefined
     
-    var theme: js.UndefOr[`11`] = js.undefined
+    var theme: js.UndefOr[`15`] = js.undefined
   }
   object RowProps {
     
@@ -272,19 +253,19 @@ object gridMod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setHide(value: BreakpointsType | js.Array[BreakpointsType]): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
       
       inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
       
-      inline def setHideVarargs(value: BreakpointsType*): Self = StObject.set(x, "hide", js.Array(value :_*))
+      inline def setHideVarargs(value: BreakpointsType*): Self = StObject.set(x, "hide", js.Array(value*))
       
       inline def `setNo-gutters`(value: Boolean): Self = StObject.set(x, "no-gutters", value.asInstanceOf[js.Any])
       
       inline def `setNo-guttersUndefined`: Self = StObject.set(x, "no-gutters", js.undefined)
       
-      inline def setTheme(value: `11`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: `15`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
       inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }

@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientDfareporting.anon
 
-import typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.ConversionsBatchInsertRequest
+import typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.ContentCategory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,7 +39,7 @@ trait KeyOauthtoken extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: ConversionsBatchInsertRequest
+  var resource: ContentCategory
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,7 +49,7 @@ trait KeyOauthtoken extends StObject {
 }
 object KeyOauthtoken {
   
-  inline def apply(profileId: String, resource: ConversionsBatchInsertRequest): KeyOauthtoken = {
+  inline def apply(profileId: String, resource: ContentCategory): KeyOauthtoken = {
     val __obj = js.Dynamic.literal(profileId = profileId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyOauthtoken]
   }
@@ -94,7 +94,7 @@ object KeyOauthtoken {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: ConversionsBatchInsertRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: ContentCategory): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

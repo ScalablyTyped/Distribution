@@ -1,5 +1,6 @@
 package typings.reactEmailEditor.mod
 
+import typings.reactEmailEditor.reactEmailEditorStrings.displayCondition
 import typings.reactEmailEditor.reactEmailEditorStrings.image
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 trait Component
-  extends typings.react.mod.Component[EmailEditorProps, js.Object, js.Any] {
+  extends typings.react.mod.Component[EmailEditorProps, js.Object, Any] {
   
   def addEventListener(`type`: String, callback: EventCallback): Unit = js.native
   
@@ -15,6 +16,8 @@ trait Component
   
   def loadDesign(design: Design): Unit = js.native
   
+  @JSName("registerCallback")
+  def registerCallback_displayCondition(`type`: displayCondition, callback: DisplayConditionCallback): Unit = js.native
   @JSName("registerCallback")
   def registerCallback_image(`type`: image, callback: FileUploadCallback): Unit = js.native
   

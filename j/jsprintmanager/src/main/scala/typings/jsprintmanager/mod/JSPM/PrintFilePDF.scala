@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("jsprintmanager", "JSPM.PrintFilePDF")
 @js.native
-class PrintFilePDF protected () extends PrintFile {
-  def this(fileContent: js.Any, fileContentType: FileSourceType, fileName: String) = this()
-  def this(fileContent: js.Any, fileContentType: FileSourceType, fileName: String, copies: Double) = this()
+open class PrintFilePDF protected () extends PrintFile {
+  def this(fileContent: Any, fileContentType: FileSourceType, fileName: String) = this()
+  def this(fileContent: Any, fileContentType: FileSourceType, fileName: String, copies: Double) = this()
   
-  /* private */ def getBLOBContent(): js.Any = js.native
+  /* private */ def getBLOBContent(): Any = js.native
   
   def isValidRange(range: String): Boolean = js.native
   

@@ -9,14 +9,14 @@ A node.js redlock implementation for distributed redis locks
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | redlock |
-| Keywords           | nodejs, iojs, redlock, distributed, lock, redis |
-| # releases         | 3 |
-| # dependents       | 121 |
-| # downloads        | 3033803 |
-| # stars            | 7 |
+| Keywords           | nodejs, redlock, distributed, lock, redis |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 1042175.6666666666 |
+| # stars            | 1347.0 |
 
 ## Links
-- [Homepage](https://github.com/mike-marcacci/node-redlock)
+- [Homepage](https://github.com/mike-marcacci/node-redlock#readme)
 - [Bugs](https://github.com/mike-marcacci/node-redlock/issues)
 - [Repository](https://github.com/mike-marcacci/node-redlock)
 - [Npm](https://www.npmjs.com/package/redlock)

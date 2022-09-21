@@ -31,13 +31,13 @@ object ColorScaleRuleType {
     
     inline def setCfvoUndefined: Self = StObject.set(x, "cfvo", js.undefined)
     
-    inline def setCfvoVarargs(value: Cvfo*): Self = StObject.set(x, "cfvo", js.Array(value :_*))
+    inline def setCfvoVarargs(value: Cvfo*): Self = StObject.set(x, "cfvo", js.Array(value*))
     
     inline def setColor(value: js.Array[PartialColor]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setColorVarargs(value: PartialColor*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: PartialColor*): Self = StObject.set(x, "color", js.Array(value*))
     
     inline def setType(value: colorScale): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -12,7 +12,7 @@ trait AwsElasticsearchDomainDomainEndpointOptions extends StObject {
   var EnforceHTTPS: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The TLS security policy to apply to the HTTPS endpoint of the Elasticsearch domain. Valid values:    Policy-Min-TLS-1-0-2019-07, which supports TLSv1.0 and higher    Policy-Min-TLS-1-2-2019-07, which only supports TLSv1.2  
+    * The TLS security policy to apply to the HTTPS endpoint of the OpenSearch domain. Valid values:    Policy-Min-TLS-1-0-2019-07, which supports TLSv1.0 and higher    Policy-Min-TLS-1-2-2019-07, which only supports TLSv1.2  
     */
   var TLSSecurityPolicy: js.UndefOr[NonEmptyString] = js.undefined
 }

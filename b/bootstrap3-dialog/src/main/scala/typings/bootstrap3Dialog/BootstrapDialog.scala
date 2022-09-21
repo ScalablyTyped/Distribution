@@ -23,7 +23,7 @@ object BootstrapDialog {
     var cssClass: js.UndefOr[String] = js.undefined
     
     /** Object containing data attributes to be added to the button. */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Hotkey char code */
     var hotkey: js.UndefOr[Double] = js.undefined
@@ -57,7 +57,7 @@ object BootstrapDialog {
       
       inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -138,7 +138,7 @@ object BootstrapDialog {
     def getButton(buttonId: String): JQuery[HTMLElement]
     
     /** Get data entry according to the given key, returns null if no data entry found. */
-    def getData(dataName: String): js.Any
+    def getData(dataName: String): Any
     
     /** Return the raw modal, equivalent to $('<div class='modal fade'...></div>') */
     def getModal(): JQuery[HTMLElement]
@@ -176,7 +176,7 @@ object BootstrapDialog {
     def setClosable(closable: Boolean): Unit
     
     /** Bind data entry to dialog instance, value can be any types that javascript supports. */
-    def setData(dataName: String, value: js.Any): Unit
+    def setData(dataName: String, value: Any): Unit
     
     def setMessage(message: String): Unit
     
@@ -191,7 +191,7 @@ object BootstrapDialog {
       close: () => Unit,
       enableButtons: Boolean => Unit,
       getButton: String => JQuery[HTMLElement],
-      getData: String => js.Any,
+      getData: String => Any,
       getModal: () => JQuery[HTMLElement],
       getModalBody: () => JQuery[HTMLElement],
       getModalContent: () => JQuery[HTMLElement],
@@ -202,7 +202,7 @@ object BootstrapDialog {
       open: () => Unit,
       realize: () => Unit,
       setClosable: Boolean => Unit,
-      setData: (String, js.Any) => Unit,
+      setData: (String, Any) => Unit,
       setMessage: String => Unit,
       setTitle: String => Unit,
       setType: String => Unit
@@ -219,7 +219,7 @@ object BootstrapDialog {
       
       inline def setGetButton(value: String => JQuery[HTMLElement]): Self = StObject.set(x, "getButton", js.Any.fromFunction1(value))
       
-      inline def setGetData(value: String => js.Any): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
+      inline def setGetData(value: String => Any): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
       
       inline def setGetModal(value: () => JQuery[HTMLElement]): Self = StObject.set(x, "getModal", js.Any.fromFunction0(value))
       
@@ -241,7 +241,7 @@ object BootstrapDialog {
       
       inline def setSetClosable(value: Boolean => Unit): Self = StObject.set(x, "setClosable", js.Any.fromFunction1(value))
       
-      inline def setSetData(value: (String, js.Any) => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction2(value))
+      inline def setSetData(value: (String, Any) => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction2(value))
       
       inline def setSetMessage(value: String => Unit): Self = StObject.set(x, "setMessage", js.Any.fromFunction1(value))
       
@@ -360,7 +360,7 @@ object BootstrapDialog {
     var cssClass: js.UndefOr[String] = js.undefined
     
     /** Data to be bound to the dialog. */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /**
       * If provided, 'aria-describedby' attribute will be added to the dialog with the description string as its value. This can improve accessibility, as the description can be read by screen
@@ -389,7 +389,7 @@ object BootstrapDialog {
       * If provided, it will be invoked when the dialog is popping down.
       * Return FALSE to don`t close the dialog. Don`t return anything by default.
       */
-    var onhide: js.UndefOr[js.Function1[/* dialog */ js.UndefOr[DialogContext], js.Any]] = js.undefined
+    var onhide: js.UndefOr[js.Function1[/* dialog */ js.UndefOr[DialogContext], Any]] = js.undefined
     
     /** If provided, it will be invoked when the dialog is popping up. */
     var onshow: js.UndefOr[js.Function1[/* dialog */ js.UndefOr[DialogContext], Unit]] = js.undefined
@@ -446,7 +446,7 @@ object BootstrapDialog {
       
       inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
       
-      inline def setButtonsVarargs(value: DialogButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+      inline def setButtonsVarargs(value: DialogButton*): Self = StObject.set(x, "buttons", js.Array(value*))
       
       inline def setCallback(value: /* result */ Boolean => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
@@ -468,7 +468,7 @@ object BootstrapDialog {
       
       inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -496,7 +496,7 @@ object BootstrapDialog {
       
       inline def setOnhiddenUndefined: Self = StObject.set(x, "onhidden", js.undefined)
       
-      inline def setOnhide(value: /* dialog */ js.UndefOr[DialogContext] => js.Any): Self = StObject.set(x, "onhide", js.Any.fromFunction1(value))
+      inline def setOnhide(value: /* dialog */ js.UndefOr[DialogContext] => Any): Self = StObject.set(x, "onhide", js.Any.fromFunction1(value))
       
       inline def setOnhideUndefined: Self = StObject.set(x, "onhide", js.undefined)
       
@@ -535,9 +535,9 @@ object BootstrapDialog {
     
     var BUTTONS_ORDER_OK_CANCEL: String = js.native
     
-    var BUTTON_SIZES: js.Any = js.native
+    var BUTTON_SIZES: Any = js.native
     
-    var DEFAULT_TEXTS: js.Any = js.native
+    var DEFAULT_TEXTS: Any = js.native
     
     /** For text localization. */
     var ICON_SPINNER: String = js.native

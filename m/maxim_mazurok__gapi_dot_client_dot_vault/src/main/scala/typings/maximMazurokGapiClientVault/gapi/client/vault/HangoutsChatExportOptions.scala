@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HangoutsChatExportOptions extends StObject {
   
-  /** The export format for hangouts chat export. */
+  /** The file format for exported messages. */
   var exportFormat: js.UndefOr[String] = js.undefined
 }
 object HangoutsChatExportOptions {

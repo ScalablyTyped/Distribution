@@ -9,16 +9,16 @@ object lineMod {
   
   @JSImport("@antv/component/lib/annotation/line", JSImport.Default)
   @js.native
-  class default () extends LineAnnotation
+  open class default () extends LineAnnotation
   
   @js.native
   trait LineAnnotation
     extends typings.antvComponent.groupComponentMod.default[LineAnnotationCfg] {
     
-    /* private */ var getLabelPoint: js.Any = js.native
+    /* private */ var getLabelPoint: Any = js.native
     
-    /* private */ var renderLabel: js.Any = js.native
+    /* private */ var renderLabel: Any = js.native
     
-    /* private */ var renderLine: js.Any = js.native
+    /* private */ var renderLine: Any = js.native
   }
 }

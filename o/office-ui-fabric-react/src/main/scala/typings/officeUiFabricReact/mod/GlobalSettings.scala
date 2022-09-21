@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react", "GlobalSettings")
 @js.native
-class GlobalSettings ()
+open class GlobalSettings ()
   extends typings.officeUiFabricReact.utilitiesMod.GlobalSettings
 /* static members */
 object GlobalSettings {

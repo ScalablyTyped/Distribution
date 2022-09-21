@@ -5,236 +5,291 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined { readonly modifier :ansi-styles.ansi-styles.Modifier,  readonly color :ansi-styles.ansi-styles.ForegroundColor & ansi-styles.ansi-styles.ColorBase,  readonly bgColor :ansi-styles.ansi-styles.BackgroundColor & ansi-styles.ansi-styles.ColorBase,  readonly codes :std.ReadonlyMap<number, number>} & ansi-styles.ansi-styles.BackgroundColor & ansi-styles.ansi-styles.ForegroundColor & ansi-styles.ansi-styles.Modifier */
 object mod {
   
-  @JSImport("ansi-styles", "bgBlack")
-  @js.native
-  val bgBlack: CSPair = js.native
-  
-  @JSImport("ansi-styles", "bgBlackBright")
-  @js.native
-  val bgBlackBright: CSPair = js.native
-  
-  @JSImport("ansi-styles", "bgBlue")
-  @js.native
-  val bgBlue: CSPair = js.native
-  
-  @JSImport("ansi-styles", "bgBlueBright")
-  @js.native
-  val bgBlueBright: CSPair = js.native
-  
-  @JSImport("ansi-styles", "bgColor")
-  @js.native
-  val bgColor: BackgroundColor & ColorBase = js.native
-  
-  @JSImport("ansi-styles", "bgCyan")
-  @js.native
-  val bgCyan: CSPair = js.native
-  
-  @JSImport("ansi-styles", "bgCyanBright")
-  @js.native
-  val bgCyanBright: CSPair = js.native
-  
-  /**
-  		Alias for `bgBlackBright`.
-  		*/
-  @JSImport("ansi-styles", "bgGray")
-  @js.native
-  val bgGray: CSPair = js.native
-  
-  @JSImport("ansi-styles", "bgGreen")
-  @js.native
-  val bgGreen: CSPair = js.native
-  
-  @JSImport("ansi-styles", "bgGreenBright")
-  @js.native
-  val bgGreenBright: CSPair = js.native
-  
-  /**
-  		Alias for `bgBlackBright`.
-  		*/
-  @JSImport("ansi-styles", "bgGrey")
-  @js.native
-  val bgGrey: CSPair = js.native
-  
-  @JSImport("ansi-styles", "bgMagenta")
-  @js.native
-  val bgMagenta: CSPair = js.native
-  
-  @JSImport("ansi-styles", "bgMagentaBright")
-  @js.native
-  val bgMagentaBright: CSPair = js.native
-  
-  @JSImport("ansi-styles", "bgRed")
-  @js.native
-  val bgRed: CSPair = js.native
-  
-  @JSImport("ansi-styles", "bgRedBright")
-  @js.native
-  val bgRedBright: CSPair = js.native
-  
-  @JSImport("ansi-styles", "bgWhite")
-  @js.native
-  val bgWhite: CSPair = js.native
-  
-  @JSImport("ansi-styles", "bgWhiteBright")
-  @js.native
-  val bgWhiteBright: CSPair = js.native
-  
-  @JSImport("ansi-styles", "bgYellow")
-  @js.native
-  val bgYellow: CSPair = js.native
-  
-  @JSImport("ansi-styles", "bgYellowBright")
-  @js.native
-  val bgYellowBright: CSPair = js.native
-  
-  @JSImport("ansi-styles", "black")
-  @js.native
-  val black: CSPair = js.native
-  
-  @JSImport("ansi-styles", "blackBright")
-  @js.native
-  val blackBright: CSPair = js.native
-  
-  @JSImport("ansi-styles", "blue")
-  @js.native
-  val blue: CSPair = js.native
-  
-  @JSImport("ansi-styles", "blueBright")
-  @js.native
-  val blueBright: CSPair = js.native
-  
-  /**
-  		Make text bold.
-  		*/
-  @JSImport("ansi-styles", "bold")
-  @js.native
-  val bold: CSPair = js.native
-  
-  @JSImport("ansi-styles", "codes")
-  @js.native
-  val codes: ReadonlyMap[Double, Double] = js.native
-  
-  @JSImport("ansi-styles", "color")
-  @js.native
-  val color: ForegroundColor & ColorBase = js.native
-  
-  @JSImport("ansi-styles", "cyan")
-  @js.native
-  val cyan: CSPair = js.native
-  
-  @JSImport("ansi-styles", "cyanBright")
-  @js.native
-  val cyanBright: CSPair = js.native
-  
-  /**
-  		Emitting only a small amount of light.
-  		*/
-  @JSImport("ansi-styles", "dim")
-  @js.native
-  val dim: CSPair = js.native
-  
-  /**
-  		Alias for `blackBright`.
-  		*/
-  @JSImport("ansi-styles", "gray")
-  @js.native
-  val gray: CSPair = js.native
-  
-  @JSImport("ansi-styles", "green")
-  @js.native
-  val green: CSPair = js.native
-  
-  @JSImport("ansi-styles", "greenBright")
-  @js.native
-  val greenBright: CSPair = js.native
-  
-  /**
-  		Alias for `blackBright`.
-  		*/
-  @JSImport("ansi-styles", "grey")
-  @js.native
-  val grey: CSPair = js.native
-  
-  /**
-  		Prints the text, but makes it invisible.
-  		*/
-  @JSImport("ansi-styles", "hidden")
-  @js.native
-  val hidden: CSPair = js.native
-  
-  /**
-  		Inverse background and foreground colors.
-  		*/
-  @JSImport("ansi-styles", "inverse")
-  @js.native
-  val inverse: CSPair = js.native
-  
-  /**
-  		Make text italic. (Not widely supported)
-  		*/
-  @JSImport("ansi-styles", "italic")
-  @js.native
-  val italic: CSPair = js.native
-  
-  @JSImport("ansi-styles", "magenta")
-  @js.native
-  val magenta: CSPair = js.native
-  
-  @JSImport("ansi-styles", "magentaBright")
-  @js.native
-  val magentaBright: CSPair = js.native
-  
-  @JSImport("ansi-styles", "modifier")
-  @js.native
-  val modifier: Modifier = js.native
-  
-  @JSImport("ansi-styles", "red")
-  @js.native
-  val red: CSPair = js.native
-  
-  @JSImport("ansi-styles", "redBright")
-  @js.native
-  val redBright: CSPair = js.native
-  
-  /**
-  		Resets the current color chain.
-  		*/
-  @JSImport("ansi-styles", "reset")
-  @js.native
-  val reset: CSPair = js.native
-  
-  /**
-  		Puts a horizontal line through the center of the text. (Not widely supported)
-  		*/
-  @JSImport("ansi-styles", "strikethrough")
-  @js.native
-  val strikethrough: CSPair = js.native
-  
-  /**
-  		Make text underline. (Not widely supported)
-  		*/
-  @JSImport("ansi-styles", "underline")
-  @js.native
-  val underline: CSPair = js.native
-  
-  @JSImport("ansi-styles", "white")
-  @js.native
-  val white: CSPair = js.native
-  
-  @JSImport("ansi-styles", "whiteBright")
-  @js.native
-  val whiteBright: CSPair = js.native
-  
-  @JSImport("ansi-styles", "yellow")
-  @js.native
-  val yellow: CSPair = js.native
-  
-  @JSImport("ansi-styles", "yellowBright")
-  @js.native
-  val yellowBright: CSPair = js.native
+  /* Inlined { readonly modifier :ansi-styles.ansi-styles.Modifier,  readonly color :ansi-styles.ansi-styles.ColorBase & ansi-styles.ansi-styles.ForegroundColor,  readonly bgColor :ansi-styles.ansi-styles.ColorBase & ansi-styles.ansi-styles.BackgroundColor,  readonly codes :std.ReadonlyMap<number, number>} & ansi-styles.ansi-styles.ForegroundColor & ansi-styles.ansi-styles.BackgroundColor & ansi-styles.ansi-styles.Modifier & ansi-styles.ansi-styles.ConvertColor */
+  object default {
+    
+    @JSImport("ansi-styles", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+    	Convert from the ANSI 256 color space to the ANSI 16 color space.
+    	@param code - A number representing the ANSI 256 color.
+    	*/
+    inline def ansi256ToAnsi(code: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ansi256ToAnsi")(code.asInstanceOf[js.Any]).asInstanceOf[Double]
+    
+    @JSImport("ansi-styles", "default.bgBlack")
+    @js.native
+    val bgBlack: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.bgBlackBright")
+    @js.native
+    val bgBlackBright: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.bgBlue")
+    @js.native
+    val bgBlue: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.bgBlueBright")
+    @js.native
+    val bgBlueBright: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.bgColor")
+    @js.native
+    val bgColor: ColorBase & BackgroundColor = js.native
+    
+    @JSImport("ansi-styles", "default.bgCyan")
+    @js.native
+    val bgCyan: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.bgCyanBright")
+    @js.native
+    val bgCyanBright: CSPair = js.native
+    
+    /**
+    	Alias for `bgBlackBright`.
+    	*/
+    @JSImport("ansi-styles", "default.bgGray")
+    @js.native
+    val bgGray: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.bgGreen")
+    @js.native
+    val bgGreen: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.bgGreenBright")
+    @js.native
+    val bgGreenBright: CSPair = js.native
+    
+    /**
+    	Alias for `bgBlackBright`.
+    	*/
+    @JSImport("ansi-styles", "default.bgGrey")
+    @js.native
+    val bgGrey: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.bgMagenta")
+    @js.native
+    val bgMagenta: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.bgMagentaBright")
+    @js.native
+    val bgMagentaBright: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.bgRed")
+    @js.native
+    val bgRed: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.bgRedBright")
+    @js.native
+    val bgRedBright: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.bgWhite")
+    @js.native
+    val bgWhite: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.bgWhiteBright")
+    @js.native
+    val bgWhiteBright: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.bgYellow")
+    @js.native
+    val bgYellow: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.bgYellowBright")
+    @js.native
+    val bgYellowBright: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.black")
+    @js.native
+    val black: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.blackBright")
+    @js.native
+    val blackBright: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.blue")
+    @js.native
+    val blue: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.blueBright")
+    @js.native
+    val blueBright: CSPair = js.native
+    
+    /**
+    	Make text bold.
+    	*/
+    @JSImport("ansi-styles", "default.bold")
+    @js.native
+    val bold: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.codes")
+    @js.native
+    val codes: ReadonlyMap[Double, Double] = js.native
+    
+    @JSImport("ansi-styles", "default.color")
+    @js.native
+    val color: ColorBase & ForegroundColor = js.native
+    
+    @JSImport("ansi-styles", "default.cyan")
+    @js.native
+    val cyan: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.cyanBright")
+    @js.native
+    val cyanBright: CSPair = js.native
+    
+    /**
+    	Emitting only a small amount of light.
+    	*/
+    @JSImport("ansi-styles", "default.dim")
+    @js.native
+    val dim: CSPair = js.native
+    
+    /**
+    	Alias for `blackBright`.
+    	*/
+    @JSImport("ansi-styles", "default.gray")
+    @js.native
+    val gray: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.green")
+    @js.native
+    val green: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.greenBright")
+    @js.native
+    val greenBright: CSPair = js.native
+    
+    /**
+    	Alias for `blackBright`.
+    	*/
+    @JSImport("ansi-styles", "default.grey")
+    @js.native
+    val grey: CSPair = js.native
+    
+    /**
+    	Convert from the RGB HEX color space to the ANSI 16 color space.
+    	@param hex - A hexadecimal string containing RGB data.
+    	*/
+    inline def hexToAnsi(hex: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hexToAnsi")(hex.asInstanceOf[js.Any]).asInstanceOf[Double]
+    
+    /**
+    	Convert from the RGB HEX color space to the ANSI 256 color space.
+    	@param hex - A hexadecimal string containing RGB data.
+    	*/
+    inline def hexToAnsi256(hex: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hexToAnsi256")(hex.asInstanceOf[js.Any]).asInstanceOf[Double]
+    
+    /**
+    	Convert from the RGB HEX color space to the RGB color space.
+    	@param hex - A hexadecimal string containing RGB data.
+    	*/
+    inline def hexToRgb(hex: String): js.Tuple3[/* red */ Double, /* green */ Double, /* blue */ Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("hexToRgb")(hex.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[/* red */ Double, /* green */ Double, /* blue */ Double]]
+    
+    /**
+    	Prints the text, but makes it invisible.
+    	*/
+    @JSImport("ansi-styles", "default.hidden")
+    @js.native
+    val hidden: CSPair = js.native
+    
+    /**
+    	Inverse background and foreground colors.
+    	*/
+    @JSImport("ansi-styles", "default.inverse")
+    @js.native
+    val inverse: CSPair = js.native
+    
+    /**
+    	Make text italic. (Not widely supported)
+    	*/
+    @JSImport("ansi-styles", "default.italic")
+    @js.native
+    val italic: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.magenta")
+    @js.native
+    val magenta: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.magentaBright")
+    @js.native
+    val magentaBright: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.modifier")
+    @js.native
+    val modifier: Modifier = js.native
+    
+    /**
+    	Make text overline.
+    	Supported on VTE-based terminals, the GNOME terminal, mintty, and Git Bash.
+    	*/
+    @JSImport("ansi-styles", "default.overline")
+    @js.native
+    val overline: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.red")
+    @js.native
+    val red: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.redBright")
+    @js.native
+    val redBright: CSPair = js.native
+    
+    /**
+    	Resets the current color chain.
+    	*/
+    @JSImport("ansi-styles", "default.reset")
+    @js.native
+    val reset: CSPair = js.native
+    
+    /**
+    	Convert from the RGB color space to the ANSI 16 color space.
+    	@param red - (`0...255`)
+    	@param green - (`0...255`)
+    	@param blue - (`0...255`)
+    	*/
+    inline def rgbToAnsi(red: Double, green: Double, blue: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("rgbToAnsi")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    /**
+    	Convert from the RGB color space to the ANSI 256 color space.
+    	@param red - (`0...255`)
+    	@param green - (`0...255`)
+    	@param blue - (`0...255`)
+    	*/
+    inline def rgbToAnsi256(red: Double, green: Double, blue: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("rgbToAnsi256")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    /**
+    	Puts a horizontal line through the center of the text. (Not widely supported)
+    	*/
+    @JSImport("ansi-styles", "default.strikethrough")
+    @js.native
+    val strikethrough: CSPair = js.native
+    
+    /**
+    	Make text underline. (Not widely supported)
+    	*/
+    @JSImport("ansi-styles", "default.underline")
+    @js.native
+    val underline: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.white")
+    @js.native
+    val white: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.whiteBright")
+    @js.native
+    val whiteBright: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.yellow")
+    @js.native
+    val yellow: CSPair = js.native
+    
+    @JSImport("ansi-styles", "default.yellowBright")
+    @js.native
+    val yellowBright: CSPair = js.native
+  }
   
   trait BackgroundColor extends StObject {
     
@@ -251,8 +306,8 @@ object mod {
     val bgCyanBright: CSPair
     
     /**
-    		Alias for `bgBlackBright`.
-    		*/
+    	Alias for `bgBlackBright`.
+    	*/
     val bgGray: CSPair
     
     val bgGreen: CSPair
@@ -260,8 +315,8 @@ object mod {
     val bgGreenBright: CSPair
     
     /**
-    		Alias for `bgBlackBright`.
-    		*/
+    	Alias for `bgBlackBright`.
+    	*/
     val bgGrey: CSPair
     
     val bgMagenta: CSPair
@@ -349,13 +404,14 @@ object mod {
   trait CSPair extends StObject {
     
     /**
-    		The ANSI terminal control sequence for ending this style.
-    		*/
+    	The ANSI terminal control sequence for ending this style.
+    	*/
     val close: String
     
+    // eslint-disable-line @typescript-eslint/naming-convention
     /**
-    		The ANSI terminal control sequence for starting this style.
-    		*/
+    	The ANSI terminal control sequence for starting this style.
+    	*/
     val open: String
   }
   object CSPair {
@@ -373,576 +429,112 @@ object mod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.ansiStyles.ansiStylesStrings.aliceblue
-    - typings.ansiStyles.ansiStylesStrings.antiquewhite
-    - typings.ansiStyles.ansiStylesStrings.aqua
-    - typings.ansiStyles.ansiStylesStrings.aquamarine
-    - typings.ansiStyles.ansiStylesStrings.azure
-    - typings.ansiStyles.ansiStylesStrings.beige
-    - typings.ansiStyles.ansiStylesStrings.bisque
-    - typings.ansiStyles.ansiStylesStrings.black
-    - typings.ansiStyles.ansiStylesStrings.blanchedalmond
-    - typings.ansiStyles.ansiStylesStrings.blue
-    - typings.ansiStyles.ansiStylesStrings.blueviolet
-    - typings.ansiStyles.ansiStylesStrings.brown
-    - typings.ansiStyles.ansiStylesStrings.burlywood
-    - typings.ansiStyles.ansiStylesStrings.cadetblue
-    - typings.ansiStyles.ansiStylesStrings.chartreuse
-    - typings.ansiStyles.ansiStylesStrings.chocolate
-    - typings.ansiStyles.ansiStylesStrings.coral
-    - typings.ansiStyles.ansiStylesStrings.cornflowerblue
-    - typings.ansiStyles.ansiStylesStrings.cornsilk
-    - typings.ansiStyles.ansiStylesStrings.crimson
-    - typings.ansiStyles.ansiStylesStrings.cyan
-    - typings.ansiStyles.ansiStylesStrings.darkblue
-    - typings.ansiStyles.ansiStylesStrings.darkcyan
-    - typings.ansiStyles.ansiStylesStrings.darkgoldenrod
-    - typings.ansiStyles.ansiStylesStrings.darkgray
-    - typings.ansiStyles.ansiStylesStrings.darkgreen
-    - typings.ansiStyles.ansiStylesStrings.darkgrey
-    - typings.ansiStyles.ansiStylesStrings.darkkhaki
-    - typings.ansiStyles.ansiStylesStrings.darkmagenta
-    - typings.ansiStyles.ansiStylesStrings.darkolivegreen
-    - typings.ansiStyles.ansiStylesStrings.darkorange
-    - typings.ansiStyles.ansiStylesStrings.darkorchid
-    - typings.ansiStyles.ansiStylesStrings.darkred
-    - typings.ansiStyles.ansiStylesStrings.darksalmon
-    - typings.ansiStyles.ansiStylesStrings.darkseagreen
-    - typings.ansiStyles.ansiStylesStrings.darkslateblue
-    - typings.ansiStyles.ansiStylesStrings.darkslategray
-    - typings.ansiStyles.ansiStylesStrings.darkslategrey
-    - typings.ansiStyles.ansiStylesStrings.darkturquoise
-    - typings.ansiStyles.ansiStylesStrings.darkviolet
-    - typings.ansiStyles.ansiStylesStrings.deeppink
-    - typings.ansiStyles.ansiStylesStrings.deepskyblue
-    - typings.ansiStyles.ansiStylesStrings.dimgray
-    - typings.ansiStyles.ansiStylesStrings.dimgrey
-    - typings.ansiStyles.ansiStylesStrings.dodgerblue
-    - typings.ansiStyles.ansiStylesStrings.firebrick
-    - typings.ansiStyles.ansiStylesStrings.floralwhite
-    - typings.ansiStyles.ansiStylesStrings.forestgreen
-    - typings.ansiStyles.ansiStylesStrings.fuchsia
-    - typings.ansiStyles.ansiStylesStrings.gainsboro
-    - typings.ansiStyles.ansiStylesStrings.ghostwhite
-    - typings.ansiStyles.ansiStylesStrings.gold
-    - typings.ansiStyles.ansiStylesStrings.goldenrod
-    - typings.ansiStyles.ansiStylesStrings.gray
-    - typings.ansiStyles.ansiStylesStrings.green
-    - typings.ansiStyles.ansiStylesStrings.greenyellow
-    - typings.ansiStyles.ansiStylesStrings.grey
-    - typings.ansiStyles.ansiStylesStrings.honeydew
-    - typings.ansiStyles.ansiStylesStrings.hotpink
-    - typings.ansiStyles.ansiStylesStrings.indianred
-    - typings.ansiStyles.ansiStylesStrings.indigo
-    - typings.ansiStyles.ansiStylesStrings.ivory
-    - typings.ansiStyles.ansiStylesStrings.khaki
-    - typings.ansiStyles.ansiStylesStrings.lavender
-    - typings.ansiStyles.ansiStylesStrings.lavenderblush
-    - typings.ansiStyles.ansiStylesStrings.lawngreen
-    - typings.ansiStyles.ansiStylesStrings.lemonchiffon
-    - typings.ansiStyles.ansiStylesStrings.lightblue
-    - typings.ansiStyles.ansiStylesStrings.lightcoral
-    - typings.ansiStyles.ansiStylesStrings.lightcyan
-    - typings.ansiStyles.ansiStylesStrings.lightgoldenrodyellow
-    - typings.ansiStyles.ansiStylesStrings.lightgray
-    - typings.ansiStyles.ansiStylesStrings.lightgreen
-    - typings.ansiStyles.ansiStylesStrings.lightgrey
-    - typings.ansiStyles.ansiStylesStrings.lightpink
-    - typings.ansiStyles.ansiStylesStrings.lightsalmon
-    - typings.ansiStyles.ansiStylesStrings.lightseagreen
-    - typings.ansiStyles.ansiStylesStrings.lightskyblue
-    - typings.ansiStyles.ansiStylesStrings.lightslategray
-    - typings.ansiStyles.ansiStylesStrings.lightslategrey
-    - typings.ansiStyles.ansiStylesStrings.lightsteelblue
-    - typings.ansiStyles.ansiStylesStrings.lightyellow
-    - typings.ansiStyles.ansiStylesStrings.lime
-    - typings.ansiStyles.ansiStylesStrings.limegreen
-    - typings.ansiStyles.ansiStylesStrings.linen
-    - typings.ansiStyles.ansiStylesStrings.magenta
-    - typings.ansiStyles.ansiStylesStrings.maroon
-    - typings.ansiStyles.ansiStylesStrings.mediumaquamarine
-    - typings.ansiStyles.ansiStylesStrings.mediumblue
-    - typings.ansiStyles.ansiStylesStrings.mediumorchid
-    - typings.ansiStyles.ansiStylesStrings.mediumpurple
-    - typings.ansiStyles.ansiStylesStrings.mediumseagreen
-    - typings.ansiStyles.ansiStylesStrings.mediumslateblue
-    - typings.ansiStyles.ansiStylesStrings.mediumspringgreen
-    - typings.ansiStyles.ansiStylesStrings.mediumturquoise
-    - typings.ansiStyles.ansiStylesStrings.mediumvioletred
-    - typings.ansiStyles.ansiStylesStrings.midnightblue
-    - typings.ansiStyles.ansiStylesStrings.mintcream
-    - typings.ansiStyles.ansiStylesStrings.mistyrose
-    - typings.ansiStyles.ansiStylesStrings.moccasin
-    - typings.ansiStyles.ansiStylesStrings.navajowhite
-    - typings.ansiStyles.ansiStylesStrings.navy
-    - typings.ansiStyles.ansiStylesStrings.oldlace
-    - typings.ansiStyles.ansiStylesStrings.olive
-    - typings.ansiStyles.ansiStylesStrings.olivedrab
-    - typings.ansiStyles.ansiStylesStrings.orange
-    - typings.ansiStyles.ansiStylesStrings.orangered
-    - typings.ansiStyles.ansiStylesStrings.orchid
-    - typings.ansiStyles.ansiStylesStrings.palegoldenrod
-    - typings.ansiStyles.ansiStylesStrings.palegreen
-    - typings.ansiStyles.ansiStylesStrings.paleturquoise
-    - typings.ansiStyles.ansiStylesStrings.palevioletred
-    - typings.ansiStyles.ansiStylesStrings.papayawhip
-    - typings.ansiStyles.ansiStylesStrings.peachpuff
-    - typings.ansiStyles.ansiStylesStrings.peru
-    - typings.ansiStyles.ansiStylesStrings.pink
-    - typings.ansiStyles.ansiStylesStrings.plum
-    - typings.ansiStyles.ansiStylesStrings.powderblue
-    - typings.ansiStyles.ansiStylesStrings.purple
-    - typings.ansiStyles.ansiStylesStrings.rebeccapurple
-    - typings.ansiStyles.ansiStylesStrings.red
-    - typings.ansiStyles.ansiStylesStrings.rosybrown
-    - typings.ansiStyles.ansiStylesStrings.royalblue
-    - typings.ansiStyles.ansiStylesStrings.saddlebrown
-    - typings.ansiStyles.ansiStylesStrings.salmon
-    - typings.ansiStyles.ansiStylesStrings.sandybrown
-    - typings.ansiStyles.ansiStylesStrings.seagreen
-    - typings.ansiStyles.ansiStylesStrings.seashell
-    - typings.ansiStyles.ansiStylesStrings.sienna
-    - typings.ansiStyles.ansiStylesStrings.silver
-    - typings.ansiStyles.ansiStylesStrings.skyblue
-    - typings.ansiStyles.ansiStylesStrings.slateblue
-    - typings.ansiStyles.ansiStylesStrings.slategray
-    - typings.ansiStyles.ansiStylesStrings.slategrey
-    - typings.ansiStyles.ansiStylesStrings.snow
-    - typings.ansiStyles.ansiStylesStrings.springgreen
-    - typings.ansiStyles.ansiStylesStrings.steelblue
-    - typings.ansiStyles.ansiStylesStrings.tan
-    - typings.ansiStyles.ansiStylesStrings.teal
-    - typings.ansiStyles.ansiStylesStrings.thistle
-    - typings.ansiStyles.ansiStylesStrings.tomato
-    - typings.ansiStyles.ansiStylesStrings.turquoise
-    - typings.ansiStyles.ansiStylesStrings.violet
-    - typings.ansiStyles.ansiStylesStrings.wheat
-    - typings.ansiStyles.ansiStylesStrings.white
-    - typings.ansiStyles.ansiStylesStrings.whitesmoke
-    - typings.ansiStyles.ansiStylesStrings.yellow
-    - typings.ansiStyles.ansiStylesStrings.yellowgreen
-  */
-  trait CSSColor extends StObject
-  object CSSColor {
-    
-    inline def aliceblue: typings.ansiStyles.ansiStylesStrings.aliceblue = "aliceblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.aliceblue]
-    
-    inline def antiquewhite: typings.ansiStyles.ansiStylesStrings.antiquewhite = "antiquewhite".asInstanceOf[typings.ansiStyles.ansiStylesStrings.antiquewhite]
-    
-    inline def aqua: typings.ansiStyles.ansiStylesStrings.aqua = "aqua".asInstanceOf[typings.ansiStyles.ansiStylesStrings.aqua]
-    
-    inline def aquamarine: typings.ansiStyles.ansiStylesStrings.aquamarine = "aquamarine".asInstanceOf[typings.ansiStyles.ansiStylesStrings.aquamarine]
-    
-    inline def azure: typings.ansiStyles.ansiStylesStrings.azure = "azure".asInstanceOf[typings.ansiStyles.ansiStylesStrings.azure]
-    
-    inline def beige: typings.ansiStyles.ansiStylesStrings.beige = "beige".asInstanceOf[typings.ansiStyles.ansiStylesStrings.beige]
-    
-    inline def bisque: typings.ansiStyles.ansiStylesStrings.bisque = "bisque".asInstanceOf[typings.ansiStyles.ansiStylesStrings.bisque]
-    
-    inline def black: typings.ansiStyles.ansiStylesStrings.black = "black".asInstanceOf[typings.ansiStyles.ansiStylesStrings.black]
-    
-    inline def blanchedalmond: typings.ansiStyles.ansiStylesStrings.blanchedalmond = "blanchedalmond".asInstanceOf[typings.ansiStyles.ansiStylesStrings.blanchedalmond]
-    
-    inline def blue: typings.ansiStyles.ansiStylesStrings.blue = "blue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.blue]
-    
-    inline def blueviolet: typings.ansiStyles.ansiStylesStrings.blueviolet = "blueviolet".asInstanceOf[typings.ansiStyles.ansiStylesStrings.blueviolet]
-    
-    inline def brown: typings.ansiStyles.ansiStylesStrings.brown = "brown".asInstanceOf[typings.ansiStyles.ansiStylesStrings.brown]
-    
-    inline def burlywood: typings.ansiStyles.ansiStylesStrings.burlywood = "burlywood".asInstanceOf[typings.ansiStyles.ansiStylesStrings.burlywood]
-    
-    inline def cadetblue: typings.ansiStyles.ansiStylesStrings.cadetblue = "cadetblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.cadetblue]
-    
-    inline def chartreuse: typings.ansiStyles.ansiStylesStrings.chartreuse = "chartreuse".asInstanceOf[typings.ansiStyles.ansiStylesStrings.chartreuse]
-    
-    inline def chocolate: typings.ansiStyles.ansiStylesStrings.chocolate = "chocolate".asInstanceOf[typings.ansiStyles.ansiStylesStrings.chocolate]
-    
-    inline def coral: typings.ansiStyles.ansiStylesStrings.coral = "coral".asInstanceOf[typings.ansiStyles.ansiStylesStrings.coral]
-    
-    inline def cornflowerblue: typings.ansiStyles.ansiStylesStrings.cornflowerblue = "cornflowerblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.cornflowerblue]
-    
-    inline def cornsilk: typings.ansiStyles.ansiStylesStrings.cornsilk = "cornsilk".asInstanceOf[typings.ansiStyles.ansiStylesStrings.cornsilk]
-    
-    inline def crimson: typings.ansiStyles.ansiStylesStrings.crimson = "crimson".asInstanceOf[typings.ansiStyles.ansiStylesStrings.crimson]
-    
-    inline def cyan: typings.ansiStyles.ansiStylesStrings.cyan = "cyan".asInstanceOf[typings.ansiStyles.ansiStylesStrings.cyan]
-    
-    inline def darkblue: typings.ansiStyles.ansiStylesStrings.darkblue = "darkblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkblue]
-    
-    inline def darkcyan: typings.ansiStyles.ansiStylesStrings.darkcyan = "darkcyan".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkcyan]
-    
-    inline def darkgoldenrod: typings.ansiStyles.ansiStylesStrings.darkgoldenrod = "darkgoldenrod".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkgoldenrod]
-    
-    inline def darkgray: typings.ansiStyles.ansiStylesStrings.darkgray = "darkgray".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkgray]
-    
-    inline def darkgreen: typings.ansiStyles.ansiStylesStrings.darkgreen = "darkgreen".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkgreen]
-    
-    inline def darkgrey: typings.ansiStyles.ansiStylesStrings.darkgrey = "darkgrey".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkgrey]
-    
-    inline def darkkhaki: typings.ansiStyles.ansiStylesStrings.darkkhaki = "darkkhaki".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkkhaki]
-    
-    inline def darkmagenta: typings.ansiStyles.ansiStylesStrings.darkmagenta = "darkmagenta".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkmagenta]
-    
-    inline def darkolivegreen: typings.ansiStyles.ansiStylesStrings.darkolivegreen = "darkolivegreen".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkolivegreen]
-    
-    inline def darkorange: typings.ansiStyles.ansiStylesStrings.darkorange = "darkorange".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkorange]
-    
-    inline def darkorchid: typings.ansiStyles.ansiStylesStrings.darkorchid = "darkorchid".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkorchid]
-    
-    inline def darkred: typings.ansiStyles.ansiStylesStrings.darkred = "darkred".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkred]
-    
-    inline def darksalmon: typings.ansiStyles.ansiStylesStrings.darksalmon = "darksalmon".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darksalmon]
-    
-    inline def darkseagreen: typings.ansiStyles.ansiStylesStrings.darkseagreen = "darkseagreen".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkseagreen]
-    
-    inline def darkslateblue: typings.ansiStyles.ansiStylesStrings.darkslateblue = "darkslateblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkslateblue]
-    
-    inline def darkslategray: typings.ansiStyles.ansiStylesStrings.darkslategray = "darkslategray".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkslategray]
-    
-    inline def darkslategrey: typings.ansiStyles.ansiStylesStrings.darkslategrey = "darkslategrey".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkslategrey]
-    
-    inline def darkturquoise: typings.ansiStyles.ansiStylesStrings.darkturquoise = "darkturquoise".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkturquoise]
-    
-    inline def darkviolet: typings.ansiStyles.ansiStylesStrings.darkviolet = "darkviolet".asInstanceOf[typings.ansiStyles.ansiStylesStrings.darkviolet]
-    
-    inline def deeppink: typings.ansiStyles.ansiStylesStrings.deeppink = "deeppink".asInstanceOf[typings.ansiStyles.ansiStylesStrings.deeppink]
-    
-    inline def deepskyblue: typings.ansiStyles.ansiStylesStrings.deepskyblue = "deepskyblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.deepskyblue]
-    
-    inline def dimgray: typings.ansiStyles.ansiStylesStrings.dimgray = "dimgray".asInstanceOf[typings.ansiStyles.ansiStylesStrings.dimgray]
-    
-    inline def dimgrey: typings.ansiStyles.ansiStylesStrings.dimgrey = "dimgrey".asInstanceOf[typings.ansiStyles.ansiStylesStrings.dimgrey]
-    
-    inline def dodgerblue: typings.ansiStyles.ansiStylesStrings.dodgerblue = "dodgerblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.dodgerblue]
-    
-    inline def firebrick: typings.ansiStyles.ansiStylesStrings.firebrick = "firebrick".asInstanceOf[typings.ansiStyles.ansiStylesStrings.firebrick]
-    
-    inline def floralwhite: typings.ansiStyles.ansiStylesStrings.floralwhite = "floralwhite".asInstanceOf[typings.ansiStyles.ansiStylesStrings.floralwhite]
-    
-    inline def forestgreen: typings.ansiStyles.ansiStylesStrings.forestgreen = "forestgreen".asInstanceOf[typings.ansiStyles.ansiStylesStrings.forestgreen]
-    
-    inline def fuchsia: typings.ansiStyles.ansiStylesStrings.fuchsia = "fuchsia".asInstanceOf[typings.ansiStyles.ansiStylesStrings.fuchsia]
-    
-    inline def gainsboro: typings.ansiStyles.ansiStylesStrings.gainsboro = "gainsboro".asInstanceOf[typings.ansiStyles.ansiStylesStrings.gainsboro]
-    
-    inline def ghostwhite: typings.ansiStyles.ansiStylesStrings.ghostwhite = "ghostwhite".asInstanceOf[typings.ansiStyles.ansiStylesStrings.ghostwhite]
-    
-    inline def gold: typings.ansiStyles.ansiStylesStrings.gold = "gold".asInstanceOf[typings.ansiStyles.ansiStylesStrings.gold]
-    
-    inline def goldenrod: typings.ansiStyles.ansiStylesStrings.goldenrod = "goldenrod".asInstanceOf[typings.ansiStyles.ansiStylesStrings.goldenrod]
-    
-    inline def gray: typings.ansiStyles.ansiStylesStrings.gray = "gray".asInstanceOf[typings.ansiStyles.ansiStylesStrings.gray]
-    
-    inline def green: typings.ansiStyles.ansiStylesStrings.green = "green".asInstanceOf[typings.ansiStyles.ansiStylesStrings.green]
-    
-    inline def greenyellow: typings.ansiStyles.ansiStylesStrings.greenyellow = "greenyellow".asInstanceOf[typings.ansiStyles.ansiStylesStrings.greenyellow]
-    
-    inline def grey: typings.ansiStyles.ansiStylesStrings.grey = "grey".asInstanceOf[typings.ansiStyles.ansiStylesStrings.grey]
-    
-    inline def honeydew: typings.ansiStyles.ansiStylesStrings.honeydew = "honeydew".asInstanceOf[typings.ansiStyles.ansiStylesStrings.honeydew]
-    
-    inline def hotpink: typings.ansiStyles.ansiStylesStrings.hotpink = "hotpink".asInstanceOf[typings.ansiStyles.ansiStylesStrings.hotpink]
-    
-    inline def indianred: typings.ansiStyles.ansiStylesStrings.indianred = "indianred".asInstanceOf[typings.ansiStyles.ansiStylesStrings.indianred]
-    
-    inline def indigo: typings.ansiStyles.ansiStylesStrings.indigo = "indigo".asInstanceOf[typings.ansiStyles.ansiStylesStrings.indigo]
-    
-    inline def ivory: typings.ansiStyles.ansiStylesStrings.ivory = "ivory".asInstanceOf[typings.ansiStyles.ansiStylesStrings.ivory]
-    
-    inline def khaki: typings.ansiStyles.ansiStylesStrings.khaki = "khaki".asInstanceOf[typings.ansiStyles.ansiStylesStrings.khaki]
-    
-    inline def lavender: typings.ansiStyles.ansiStylesStrings.lavender = "lavender".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lavender]
-    
-    inline def lavenderblush: typings.ansiStyles.ansiStylesStrings.lavenderblush = "lavenderblush".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lavenderblush]
-    
-    inline def lawngreen: typings.ansiStyles.ansiStylesStrings.lawngreen = "lawngreen".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lawngreen]
-    
-    inline def lemonchiffon: typings.ansiStyles.ansiStylesStrings.lemonchiffon = "lemonchiffon".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lemonchiffon]
-    
-    inline def lightblue: typings.ansiStyles.ansiStylesStrings.lightblue = "lightblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lightblue]
-    
-    inline def lightcoral: typings.ansiStyles.ansiStylesStrings.lightcoral = "lightcoral".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lightcoral]
-    
-    inline def lightcyan: typings.ansiStyles.ansiStylesStrings.lightcyan = "lightcyan".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lightcyan]
-    
-    inline def lightgoldenrodyellow: typings.ansiStyles.ansiStylesStrings.lightgoldenrodyellow = "lightgoldenrodyellow".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lightgoldenrodyellow]
-    
-    inline def lightgray: typings.ansiStyles.ansiStylesStrings.lightgray = "lightgray".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lightgray]
-    
-    inline def lightgreen: typings.ansiStyles.ansiStylesStrings.lightgreen = "lightgreen".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lightgreen]
-    
-    inline def lightgrey: typings.ansiStyles.ansiStylesStrings.lightgrey = "lightgrey".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lightgrey]
-    
-    inline def lightpink: typings.ansiStyles.ansiStylesStrings.lightpink = "lightpink".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lightpink]
-    
-    inline def lightsalmon: typings.ansiStyles.ansiStylesStrings.lightsalmon = "lightsalmon".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lightsalmon]
-    
-    inline def lightseagreen: typings.ansiStyles.ansiStylesStrings.lightseagreen = "lightseagreen".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lightseagreen]
-    
-    inline def lightskyblue: typings.ansiStyles.ansiStylesStrings.lightskyblue = "lightskyblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lightskyblue]
-    
-    inline def lightslategray: typings.ansiStyles.ansiStylesStrings.lightslategray = "lightslategray".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lightslategray]
-    
-    inline def lightslategrey: typings.ansiStyles.ansiStylesStrings.lightslategrey = "lightslategrey".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lightslategrey]
-    
-    inline def lightsteelblue: typings.ansiStyles.ansiStylesStrings.lightsteelblue = "lightsteelblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lightsteelblue]
-    
-    inline def lightyellow: typings.ansiStyles.ansiStylesStrings.lightyellow = "lightyellow".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lightyellow]
-    
-    inline def lime: typings.ansiStyles.ansiStylesStrings.lime = "lime".asInstanceOf[typings.ansiStyles.ansiStylesStrings.lime]
-    
-    inline def limegreen: typings.ansiStyles.ansiStylesStrings.limegreen = "limegreen".asInstanceOf[typings.ansiStyles.ansiStylesStrings.limegreen]
-    
-    inline def linen: typings.ansiStyles.ansiStylesStrings.linen = "linen".asInstanceOf[typings.ansiStyles.ansiStylesStrings.linen]
-    
-    inline def magenta: typings.ansiStyles.ansiStylesStrings.magenta = "magenta".asInstanceOf[typings.ansiStyles.ansiStylesStrings.magenta]
-    
-    inline def maroon: typings.ansiStyles.ansiStylesStrings.maroon = "maroon".asInstanceOf[typings.ansiStyles.ansiStylesStrings.maroon]
-    
-    inline def mediumaquamarine: typings.ansiStyles.ansiStylesStrings.mediumaquamarine = "mediumaquamarine".asInstanceOf[typings.ansiStyles.ansiStylesStrings.mediumaquamarine]
-    
-    inline def mediumblue: typings.ansiStyles.ansiStylesStrings.mediumblue = "mediumblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.mediumblue]
-    
-    inline def mediumorchid: typings.ansiStyles.ansiStylesStrings.mediumorchid = "mediumorchid".asInstanceOf[typings.ansiStyles.ansiStylesStrings.mediumorchid]
-    
-    inline def mediumpurple: typings.ansiStyles.ansiStylesStrings.mediumpurple = "mediumpurple".asInstanceOf[typings.ansiStyles.ansiStylesStrings.mediumpurple]
-    
-    inline def mediumseagreen: typings.ansiStyles.ansiStylesStrings.mediumseagreen = "mediumseagreen".asInstanceOf[typings.ansiStyles.ansiStylesStrings.mediumseagreen]
-    
-    inline def mediumslateblue: typings.ansiStyles.ansiStylesStrings.mediumslateblue = "mediumslateblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.mediumslateblue]
-    
-    inline def mediumspringgreen: typings.ansiStyles.ansiStylesStrings.mediumspringgreen = "mediumspringgreen".asInstanceOf[typings.ansiStyles.ansiStylesStrings.mediumspringgreen]
-    
-    inline def mediumturquoise: typings.ansiStyles.ansiStylesStrings.mediumturquoise = "mediumturquoise".asInstanceOf[typings.ansiStyles.ansiStylesStrings.mediumturquoise]
-    
-    inline def mediumvioletred: typings.ansiStyles.ansiStylesStrings.mediumvioletred = "mediumvioletred".asInstanceOf[typings.ansiStyles.ansiStylesStrings.mediumvioletred]
-    
-    inline def midnightblue: typings.ansiStyles.ansiStylesStrings.midnightblue = "midnightblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.midnightblue]
-    
-    inline def mintcream: typings.ansiStyles.ansiStylesStrings.mintcream = "mintcream".asInstanceOf[typings.ansiStyles.ansiStylesStrings.mintcream]
-    
-    inline def mistyrose: typings.ansiStyles.ansiStylesStrings.mistyrose = "mistyrose".asInstanceOf[typings.ansiStyles.ansiStylesStrings.mistyrose]
-    
-    inline def moccasin: typings.ansiStyles.ansiStylesStrings.moccasin = "moccasin".asInstanceOf[typings.ansiStyles.ansiStylesStrings.moccasin]
-    
-    inline def navajowhite: typings.ansiStyles.ansiStylesStrings.navajowhite = "navajowhite".asInstanceOf[typings.ansiStyles.ansiStylesStrings.navajowhite]
-    
-    inline def navy: typings.ansiStyles.ansiStylesStrings.navy = "navy".asInstanceOf[typings.ansiStyles.ansiStylesStrings.navy]
-    
-    inline def oldlace: typings.ansiStyles.ansiStylesStrings.oldlace = "oldlace".asInstanceOf[typings.ansiStyles.ansiStylesStrings.oldlace]
-    
-    inline def olive: typings.ansiStyles.ansiStylesStrings.olive = "olive".asInstanceOf[typings.ansiStyles.ansiStylesStrings.olive]
-    
-    inline def olivedrab: typings.ansiStyles.ansiStylesStrings.olivedrab = "olivedrab".asInstanceOf[typings.ansiStyles.ansiStylesStrings.olivedrab]
-    
-    inline def orange: typings.ansiStyles.ansiStylesStrings.orange = "orange".asInstanceOf[typings.ansiStyles.ansiStylesStrings.orange]
-    
-    inline def orangered: typings.ansiStyles.ansiStylesStrings.orangered = "orangered".asInstanceOf[typings.ansiStyles.ansiStylesStrings.orangered]
-    
-    inline def orchid: typings.ansiStyles.ansiStylesStrings.orchid = "orchid".asInstanceOf[typings.ansiStyles.ansiStylesStrings.orchid]
-    
-    inline def palegoldenrod: typings.ansiStyles.ansiStylesStrings.palegoldenrod = "palegoldenrod".asInstanceOf[typings.ansiStyles.ansiStylesStrings.palegoldenrod]
-    
-    inline def palegreen: typings.ansiStyles.ansiStylesStrings.palegreen = "palegreen".asInstanceOf[typings.ansiStyles.ansiStylesStrings.palegreen]
-    
-    inline def paleturquoise: typings.ansiStyles.ansiStylesStrings.paleturquoise = "paleturquoise".asInstanceOf[typings.ansiStyles.ansiStylesStrings.paleturquoise]
-    
-    inline def palevioletred: typings.ansiStyles.ansiStylesStrings.palevioletred = "palevioletred".asInstanceOf[typings.ansiStyles.ansiStylesStrings.palevioletred]
-    
-    inline def papayawhip: typings.ansiStyles.ansiStylesStrings.papayawhip = "papayawhip".asInstanceOf[typings.ansiStyles.ansiStylesStrings.papayawhip]
-    
-    inline def peachpuff: typings.ansiStyles.ansiStylesStrings.peachpuff = "peachpuff".asInstanceOf[typings.ansiStyles.ansiStylesStrings.peachpuff]
-    
-    inline def peru: typings.ansiStyles.ansiStylesStrings.peru = "peru".asInstanceOf[typings.ansiStyles.ansiStylesStrings.peru]
-    
-    inline def pink: typings.ansiStyles.ansiStylesStrings.pink = "pink".asInstanceOf[typings.ansiStyles.ansiStylesStrings.pink]
-    
-    inline def plum: typings.ansiStyles.ansiStylesStrings.plum = "plum".asInstanceOf[typings.ansiStyles.ansiStylesStrings.plum]
-    
-    inline def powderblue: typings.ansiStyles.ansiStylesStrings.powderblue = "powderblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.powderblue]
-    
-    inline def purple: typings.ansiStyles.ansiStylesStrings.purple = "purple".asInstanceOf[typings.ansiStyles.ansiStylesStrings.purple]
-    
-    inline def rebeccapurple: typings.ansiStyles.ansiStylesStrings.rebeccapurple = "rebeccapurple".asInstanceOf[typings.ansiStyles.ansiStylesStrings.rebeccapurple]
-    
-    inline def red: typings.ansiStyles.ansiStylesStrings.red = "red".asInstanceOf[typings.ansiStyles.ansiStylesStrings.red]
-    
-    inline def rosybrown: typings.ansiStyles.ansiStylesStrings.rosybrown = "rosybrown".asInstanceOf[typings.ansiStyles.ansiStylesStrings.rosybrown]
-    
-    inline def royalblue: typings.ansiStyles.ansiStylesStrings.royalblue = "royalblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.royalblue]
-    
-    inline def saddlebrown: typings.ansiStyles.ansiStylesStrings.saddlebrown = "saddlebrown".asInstanceOf[typings.ansiStyles.ansiStylesStrings.saddlebrown]
-    
-    inline def salmon: typings.ansiStyles.ansiStylesStrings.salmon = "salmon".asInstanceOf[typings.ansiStyles.ansiStylesStrings.salmon]
-    
-    inline def sandybrown: typings.ansiStyles.ansiStylesStrings.sandybrown = "sandybrown".asInstanceOf[typings.ansiStyles.ansiStylesStrings.sandybrown]
-    
-    inline def seagreen: typings.ansiStyles.ansiStylesStrings.seagreen = "seagreen".asInstanceOf[typings.ansiStyles.ansiStylesStrings.seagreen]
-    
-    inline def seashell: typings.ansiStyles.ansiStylesStrings.seashell = "seashell".asInstanceOf[typings.ansiStyles.ansiStylesStrings.seashell]
-    
-    inline def sienna: typings.ansiStyles.ansiStylesStrings.sienna = "sienna".asInstanceOf[typings.ansiStyles.ansiStylesStrings.sienna]
-    
-    inline def silver: typings.ansiStyles.ansiStylesStrings.silver = "silver".asInstanceOf[typings.ansiStyles.ansiStylesStrings.silver]
-    
-    inline def skyblue: typings.ansiStyles.ansiStylesStrings.skyblue = "skyblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.skyblue]
-    
-    inline def slateblue: typings.ansiStyles.ansiStylesStrings.slateblue = "slateblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.slateblue]
-    
-    inline def slategray: typings.ansiStyles.ansiStylesStrings.slategray = "slategray".asInstanceOf[typings.ansiStyles.ansiStylesStrings.slategray]
-    
-    inline def slategrey: typings.ansiStyles.ansiStylesStrings.slategrey = "slategrey".asInstanceOf[typings.ansiStyles.ansiStylesStrings.slategrey]
-    
-    inline def snow: typings.ansiStyles.ansiStylesStrings.snow = "snow".asInstanceOf[typings.ansiStyles.ansiStylesStrings.snow]
-    
-    inline def springgreen: typings.ansiStyles.ansiStylesStrings.springgreen = "springgreen".asInstanceOf[typings.ansiStyles.ansiStylesStrings.springgreen]
-    
-    inline def steelblue: typings.ansiStyles.ansiStylesStrings.steelblue = "steelblue".asInstanceOf[typings.ansiStyles.ansiStylesStrings.steelblue]
-    
-    inline def tan: typings.ansiStyles.ansiStylesStrings.tan = "tan".asInstanceOf[typings.ansiStyles.ansiStylesStrings.tan]
-    
-    inline def teal: typings.ansiStyles.ansiStylesStrings.teal = "teal".asInstanceOf[typings.ansiStyles.ansiStylesStrings.teal]
-    
-    inline def thistle: typings.ansiStyles.ansiStylesStrings.thistle = "thistle".asInstanceOf[typings.ansiStyles.ansiStylesStrings.thistle]
-    
-    inline def tomato: typings.ansiStyles.ansiStylesStrings.tomato = "tomato".asInstanceOf[typings.ansiStyles.ansiStylesStrings.tomato]
-    
-    inline def turquoise: typings.ansiStyles.ansiStylesStrings.turquoise = "turquoise".asInstanceOf[typings.ansiStyles.ansiStylesStrings.turquoise]
-    
-    inline def violet: typings.ansiStyles.ansiStylesStrings.violet = "violet".asInstanceOf[typings.ansiStyles.ansiStylesStrings.violet]
-    
-    inline def wheat: typings.ansiStyles.ansiStylesStrings.wheat = "wheat".asInstanceOf[typings.ansiStyles.ansiStylesStrings.wheat]
-    
-    inline def white: typings.ansiStyles.ansiStylesStrings.white = "white".asInstanceOf[typings.ansiStyles.ansiStylesStrings.white]
-    
-    inline def whitesmoke: typings.ansiStyles.ansiStylesStrings.whitesmoke = "whitesmoke".asInstanceOf[typings.ansiStyles.ansiStylesStrings.whitesmoke]
-    
-    inline def yellow: typings.ansiStyles.ansiStylesStrings.yellow = "yellow".asInstanceOf[typings.ansiStyles.ansiStylesStrings.yellow]
-    
-    inline def yellowgreen: typings.ansiStyles.ansiStylesStrings.yellowgreen = "yellowgreen".asInstanceOf[typings.ansiStyles.ansiStylesStrings.yellowgreen]
-  }
-  
   trait ColorBase extends StObject {
     
-    val ansi: ColorConvert
+    def ansi(code: Double): String
     
-    val ansi16m: ColorConvert
+    def ansi16m(red: Double, green: Double, blue: Double): String
     
-    val ansi256: ColorConvert
+    def ansi256(code: Double): String
     
     /**
-    		The ANSI terminal control sequence for ending this color.
-    		*/
+    	The ANSI terminal control sequence for ending this color.
+    	*/
     val close: String
   }
   object ColorBase {
     
-    inline def apply(ansi: ColorConvert, ansi16m: ColorConvert, ansi256: ColorConvert, close: String): ColorBase = {
-      val __obj = js.Dynamic.literal(ansi = ansi.asInstanceOf[js.Any], ansi16m = ansi16m.asInstanceOf[js.Any], ansi256 = ansi256.asInstanceOf[js.Any], close = close.asInstanceOf[js.Any])
+    inline def apply(
+      ansi: Double => String,
+      ansi16m: (Double, Double, Double) => String,
+      ansi256: Double => String,
+      close: String
+    ): ColorBase = {
+      val __obj = js.Dynamic.literal(ansi = js.Any.fromFunction1(ansi), ansi16m = js.Any.fromFunction3(ansi16m), ansi256 = js.Any.fromFunction1(ansi256), close = close.asInstanceOf[js.Any])
       __obj.asInstanceOf[ColorBase]
     }
     
     extension [Self <: ColorBase](x: Self) {
       
-      inline def setAnsi(value: ColorConvert): Self = StObject.set(x, "ansi", value.asInstanceOf[js.Any])
+      inline def setAnsi(value: Double => String): Self = StObject.set(x, "ansi", js.Any.fromFunction1(value))
       
-      inline def setAnsi16m(value: ColorConvert): Self = StObject.set(x, "ansi16m", value.asInstanceOf[js.Any])
+      inline def setAnsi16m(value: (Double, Double, Double) => String): Self = StObject.set(x, "ansi16m", js.Any.fromFunction3(value))
       
-      inline def setAnsi256(value: ColorConvert): Self = StObject.set(x, "ansi256", value.asInstanceOf[js.Any])
+      inline def setAnsi256(value: Double => String): Self = StObject.set(x, "ansi256", js.Any.fromFunction1(value))
       
       inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     }
   }
   
-  trait ColorConvert extends StObject {
+  trait ConvertColor extends StObject {
     
     /**
-    		Use a [4-bit unsigned number](https://en.wikipedia.org/wiki/ANSI_escape_code#3/4-bit) to set text color.
-    		*/
-    def ansi(ansi: Double): String
+    	Convert from the ANSI 256 color space to the ANSI 16 color space.
+    	@param code - A number representing the ANSI 256 color.
+    	*/
+    def ansi256ToAnsi(code: Double): Double
     
     /**
-    		Use an [8-bit unsigned number](https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit) to set text color.
-    		*/
-    def ansi256(ansi: Double): String
+    	Convert from the RGB HEX color space to the ANSI 16 color space.
+    	@param hex - A hexadecimal string containing RGB data.
+    	*/
+    def hexToAnsi(hex: String): Double
     
     /**
-    		The RGB HEX color space.
-    		@param hex - A hexadecimal string containing RGB data.
-    		*/
-    def hex(hex: String): String
+    	Convert from the RGB HEX color space to the ANSI 256 color space.
+    	@param hex - A hexadecimal string containing RGB data.
+    	*/
+    def hexToAnsi256(hex: String): Double
     
     /**
-    		The HSL color space.
-    		@param hue - (`0`-`360`)
-    		@param saturation - (`0`-`100`)
-    		@param lightness - (`0`-`100`)
-    		*/
-    def hsl(hue: Double, saturation: Double, lightness: Double): String
+    	Convert from the RGB HEX color space to the RGB color space.
+    	@param hex - A hexadecimal string containing RGB data.
+    	*/
+    def hexToRgb(hex: String): js.Tuple3[/* red */ Double, /* green */ Double, /* blue */ Double]
     
     /**
-    		The HSV color space.
-    		@param hue - (`0`-`360`)
-    		@param saturation - (`0`-`100`)
-    		@param value - (`0`-`100`)
-    		*/
-    def hsv(hue: Double, saturation: Double, value: Double): String
+    	Convert from the RGB color space to the ANSI 16 color space.
+    	@param red - (`0...255`)
+    	@param green - (`0...255`)
+    	@param blue - (`0...255`)
+    	*/
+    def rgbToAnsi(red: Double, green: Double, blue: Double): Double
     
     /**
-    		The HSV color space.
-    		@param hue - (`0`-`360`)
-    		@param whiteness - (`0`-`100`)
-    		@param blackness - (`0`-`100`)
-    		*/
-    def hwb(hue: Double, whiteness: Double, blackness: Double): String
-    
-    /**
-    		@param keyword - A CSS color name.
-    		*/
-    def keyword(keyword: CSSColor): String
-    
-    /**
-    		The RGB color space.
-    		@param red - (`0`-`255`)
-    		@param green - (`0`-`255`)
-    		@param blue - (`0`-`255`)
-    		*/
-    def rgb(red: Double, green: Double, blue: Double): String
+    	Convert from the RGB color space to the ANSI 256 color space.
+    	@param red - (`0...255`)
+    	@param green - (`0...255`)
+    	@param blue - (`0...255`)
+    	*/
+    def rgbToAnsi256(red: Double, green: Double, blue: Double): Double
   }
-  object ColorConvert {
+  object ConvertColor {
     
     inline def apply(
-      ansi: Double => String,
-      ansi256: Double => String,
-      hex: String => String,
-      hsl: (Double, Double, Double) => String,
-      hsv: (Double, Double, Double) => String,
-      hwb: (Double, Double, Double) => String,
-      keyword: CSSColor => String,
-      rgb: (Double, Double, Double) => String
-    ): ColorConvert = {
-      val __obj = js.Dynamic.literal(ansi = js.Any.fromFunction1(ansi), ansi256 = js.Any.fromFunction1(ansi256), hex = js.Any.fromFunction1(hex), hsl = js.Any.fromFunction3(hsl), hsv = js.Any.fromFunction3(hsv), hwb = js.Any.fromFunction3(hwb), keyword = js.Any.fromFunction1(keyword), rgb = js.Any.fromFunction3(rgb))
-      __obj.asInstanceOf[ColorConvert]
+      ansi256ToAnsi: Double => Double,
+      hexToAnsi: String => Double,
+      hexToAnsi256: String => Double,
+      hexToRgb: String => js.Tuple3[/* red */ Double, /* green */ Double, /* blue */ Double],
+      rgbToAnsi: (Double, Double, Double) => Double,
+      rgbToAnsi256: (Double, Double, Double) => Double
+    ): ConvertColor = {
+      val __obj = js.Dynamic.literal(ansi256ToAnsi = js.Any.fromFunction1(ansi256ToAnsi), hexToAnsi = js.Any.fromFunction1(hexToAnsi), hexToAnsi256 = js.Any.fromFunction1(hexToAnsi256), hexToRgb = js.Any.fromFunction1(hexToRgb), rgbToAnsi = js.Any.fromFunction3(rgbToAnsi), rgbToAnsi256 = js.Any.fromFunction3(rgbToAnsi256))
+      __obj.asInstanceOf[ConvertColor]
     }
     
-    extension [Self <: ColorConvert](x: Self) {
+    extension [Self <: ConvertColor](x: Self) {
       
-      inline def setAnsi(value: Double => String): Self = StObject.set(x, "ansi", js.Any.fromFunction1(value))
+      inline def setAnsi256ToAnsi(value: Double => Double): Self = StObject.set(x, "ansi256ToAnsi", js.Any.fromFunction1(value))
       
-      inline def setAnsi256(value: Double => String): Self = StObject.set(x, "ansi256", js.Any.fromFunction1(value))
+      inline def setHexToAnsi(value: String => Double): Self = StObject.set(x, "hexToAnsi", js.Any.fromFunction1(value))
       
-      inline def setHex(value: String => String): Self = StObject.set(x, "hex", js.Any.fromFunction1(value))
+      inline def setHexToAnsi256(value: String => Double): Self = StObject.set(x, "hexToAnsi256", js.Any.fromFunction1(value))
       
-      inline def setHsl(value: (Double, Double, Double) => String): Self = StObject.set(x, "hsl", js.Any.fromFunction3(value))
+      inline def setHexToRgb(value: String => js.Tuple3[/* red */ Double, /* green */ Double, /* blue */ Double]): Self = StObject.set(x, "hexToRgb", js.Any.fromFunction1(value))
       
-      inline def setHsv(value: (Double, Double, Double) => String): Self = StObject.set(x, "hsv", js.Any.fromFunction3(value))
+      inline def setRgbToAnsi(value: (Double, Double, Double) => Double): Self = StObject.set(x, "rgbToAnsi", js.Any.fromFunction3(value))
       
-      inline def setHwb(value: (Double, Double, Double) => String): Self = StObject.set(x, "hwb", js.Any.fromFunction3(value))
-      
-      inline def setKeyword(value: CSSColor => String): Self = StObject.set(x, "keyword", js.Any.fromFunction1(value))
-      
-      inline def setRgb(value: (Double, Double, Double) => String): Self = StObject.set(x, "rgb", js.Any.fromFunction3(value))
+      inline def setRgbToAnsi256(value: (Double, Double, Double) => Double): Self = StObject.set(x, "rgbToAnsi256", js.Any.fromFunction3(value))
     }
   }
   
@@ -961,8 +553,8 @@ object mod {
     val cyanBright: CSPair
     
     /**
-    		Alias for `blackBright`.
-    		*/
+    	Alias for `blackBright`.
+    	*/
     val gray: CSPair
     
     val green: CSPair
@@ -970,8 +562,8 @@ object mod {
     val greenBright: CSPair
     
     /**
-    		Alias for `blackBright`.
-    		*/
+    	Alias for `blackBright`.
+    	*/
     val grey: CSPair
     
     val magenta: CSPair
@@ -1059,43 +651,49 @@ object mod {
   trait Modifier extends StObject {
     
     /**
-    		Make text bold.
-    		*/
+    	Make text bold.
+    	*/
     val bold: CSPair
     
     /**
-    		Emitting only a small amount of light.
-    		*/
+    	Emitting only a small amount of light.
+    	*/
     val dim: CSPair
     
     /**
-    		Prints the text, but makes it invisible.
-    		*/
+    	Prints the text, but makes it invisible.
+    	*/
     val hidden: CSPair
     
     /**
-    		Inverse background and foreground colors.
-    		*/
+    	Inverse background and foreground colors.
+    	*/
     val inverse: CSPair
     
     /**
-    		Make text italic. (Not widely supported)
-    		*/
+    	Make text italic. (Not widely supported)
+    	*/
     val italic: CSPair
     
     /**
-    		Resets the current color chain.
-    		*/
+    	Make text overline.
+    	Supported on VTE-based terminals, the GNOME terminal, mintty, and Git Bash.
+    	*/
+    val overline: CSPair
+    
+    /**
+    	Resets the current color chain.
+    	*/
     val reset: CSPair
     
     /**
-    		Puts a horizontal line through the center of the text. (Not widely supported)
-    		*/
+    	Puts a horizontal line through the center of the text. (Not widely supported)
+    	*/
     val strikethrough: CSPair
     
     /**
-    		Make text underline. (Not widely supported)
-    		*/
+    	Make text underline. (Not widely supported)
+    	*/
     val underline: CSPair
   }
   object Modifier {
@@ -1106,11 +704,12 @@ object mod {
       hidden: CSPair,
       inverse: CSPair,
       italic: CSPair,
+      overline: CSPair,
       reset: CSPair,
       strikethrough: CSPair,
       underline: CSPair
     ): Modifier = {
-      val __obj = js.Dynamic.literal(bold = bold.asInstanceOf[js.Any], dim = dim.asInstanceOf[js.Any], hidden = hidden.asInstanceOf[js.Any], inverse = inverse.asInstanceOf[js.Any], italic = italic.asInstanceOf[js.Any], reset = reset.asInstanceOf[js.Any], strikethrough = strikethrough.asInstanceOf[js.Any], underline = underline.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(bold = bold.asInstanceOf[js.Any], dim = dim.asInstanceOf[js.Any], hidden = hidden.asInstanceOf[js.Any], inverse = inverse.asInstanceOf[js.Any], italic = italic.asInstanceOf[js.Any], overline = overline.asInstanceOf[js.Any], reset = reset.asInstanceOf[js.Any], strikethrough = strikethrough.asInstanceOf[js.Any], underline = underline.asInstanceOf[js.Any])
       __obj.asInstanceOf[Modifier]
     }
     
@@ -1125,6 +724,8 @@ object mod {
       inline def setInverse(value: CSPair): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
       
       inline def setItalic(value: CSPair): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
+      
+      inline def setOverline(value: CSPair): Self = StObject.set(x, "overline", value.asInstanceOf[js.Any])
       
       inline def setReset(value: CSPair): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
       

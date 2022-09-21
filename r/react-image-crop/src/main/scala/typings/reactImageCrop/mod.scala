@@ -20,7 +20,7 @@ object mod {
   
   @JSImport("react-image-crop", JSImport.Namespace)
   @js.native
-  class ^ () extends ReactCrop
+  open class ^ () extends ReactCrop
   @JSImport("react-image-crop", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
@@ -102,7 +102,7 @@ object mod {
   
   @js.native
   trait ReactCrop
-    extends Component[ReactCropProps, js.Object, js.Any] {
+    extends Component[ReactCropProps, js.Object, Any] {
     
     def createCropSelection(): ReactNode = js.native
     
@@ -179,7 +179,7 @@ object mod {
     
     var renderComponent: js.UndefOr[ReactNode] = js.undefined
     
-    var renderSelectionAddon: js.UndefOr[js.Function1[/* state */ js.Any, ReactNode]] = js.undefined
+    var renderSelectionAddon: js.UndefOr[js.Function1[/* state */ Any, ReactNode]] = js.undefined
     
     var ruleOfThirds: js.UndefOr[Boolean] = js.undefined
     
@@ -278,7 +278,7 @@ object mod {
       
       inline def setRenderComponentUndefined: Self = StObject.set(x, "renderComponent", js.undefined)
       
-      inline def setRenderSelectionAddon(value: /* state */ js.Any => ReactNode): Self = StObject.set(x, "renderSelectionAddon", js.Any.fromFunction1(value))
+      inline def setRenderSelectionAddon(value: /* state */ Any => ReactNode): Self = StObject.set(x, "renderSelectionAddon", js.Any.fromFunction1(value))
       
       inline def setRenderSelectionAddonUndefined: Self = StObject.set(x, "renderSelectionAddon", js.undefined)
       

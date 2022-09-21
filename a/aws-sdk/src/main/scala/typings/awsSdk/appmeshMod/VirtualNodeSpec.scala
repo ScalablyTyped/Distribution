@@ -48,13 +48,13 @@ object VirtualNodeSpec {
     
     inline def setBackendsUndefined: Self = StObject.set(x, "backends", js.undefined)
     
-    inline def setBackendsVarargs(value: Backend*): Self = StObject.set(x, "backends", js.Array(value :_*))
+    inline def setBackendsVarargs(value: Backend*): Self = StObject.set(x, "backends", js.Array(value*))
     
     inline def setListeners(value: Listeners): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
     
     inline def setListenersUndefined: Self = StObject.set(x, "listeners", js.undefined)
     
-    inline def setListenersVarargs(value: Listener*): Self = StObject.set(x, "listeners", js.Array(value :_*))
+    inline def setListenersVarargs(value: Listener*): Self = StObject.set(x, "listeners", js.Array(value*))
     
     inline def setLogging(value: Logging): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
     

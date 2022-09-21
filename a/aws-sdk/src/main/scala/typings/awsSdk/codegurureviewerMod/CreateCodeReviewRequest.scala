@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateCodeReviewRequest extends StObject {
   
   /**
-    *  Amazon CodeGuru Reviewer uses this value to prevent the accidental creation of duplicate code reviews if there are failures and retries. 
+    * Amazon CodeGuru Reviewer uses this value to prevent the accidental creation of duplicate code reviews if there are failures and retries.
     */
   var ClientRequestToken: js.UndefOr[typings.awsSdk.codegurureviewerMod.ClientRequestToken] = js.undefined
   
   /**
-    *  The name of the code review. The name of each code review in your AWS account must be unique. 
+    * The name of the code review. The name of each code review in your Amazon Web Services account must be unique.
     */
   var Name: CodeReviewName
   
   /**
-    *  The Amazon Resource Name (ARN) of the  RepositoryAssociation  object. You can retrieve this ARN by calling  ListRepositoryAssociations .   A code review can only be created on an associated repository. This is the ARN of the associated repository. 
+    * The Amazon Resource Name (ARN) of the RepositoryAssociation object. You can retrieve this ARN by calling ListRepositoryAssociations. A code review can only be created on an associated repository. This is the ARN of the associated repository.
     */
   var RepositoryAssociationArn: AssociationArn
   
   /**
-    *  The type of code review to create. This is specified using a  CodeReviewType  object. You can create a code review only of type RepositoryAnalysis. 
+    * The type of code review to create. This is specified using a CodeReviewType object. You can create a code review only of type RepositoryAnalysis.
     */
   var Type: CodeReviewType
 }

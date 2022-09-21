@@ -1,11 +1,10 @@
 package typings.blueprintjsDatetime
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.blueprintjsDatetime.anon.TypeofLocaleUtils
-import typings.blueprintjsDatetime.timePickerMod.ITimePickerProps
+import typings.blueprintjsDatetime.timePickerMod.TimePickerProps
 import typings.blueprintjsDatetime.timePickerMod.TimePrecision
-import typings.reactDayPicker.propsMod.DayPickerProps
-import typings.std.Date
+import typings.react.mod.global.JSX.Element
+import typings.reactDayPicker.distDayPickerMod.DayPickerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,17 +39,17 @@ object datePickerCoreMod {
   @js.native
   val SELECTED_RANGE_MODIFIER: /* "selected-range" */ String = js.native
   
-  inline def combineModifiers(baseModifiers: IDatePickerModifiers, userModifiers: IDatePickerModifiers): IDatePickerModifiers = (^.asInstanceOf[js.Dynamic].applyDynamic("combineModifiers")(baseModifiers.asInstanceOf[js.Any], userModifiers.asInstanceOf[js.Any])).asInstanceOf[IDatePickerModifiers]
+  inline def combineModifiers(baseModifiers: DatePickerModifiers, userModifiers: DatePickerModifiers): IDatePickerModifiers = (^.asInstanceOf[js.Dynamic].applyDynamic("combineModifiers")(baseModifiers.asInstanceOf[js.Any], userModifiers.asInstanceOf[js.Any])).asInstanceOf[IDatePickerModifiers]
   
-  inline def getDefaultMaxDate(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultMaxDate")().asInstanceOf[Date]
+  inline def getDefaultMaxDate(): js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultMaxDate")().asInstanceOf[js.Date]
   
-  inline def getDefaultMinDate(): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultMinDate")().asInstanceOf[Date]
+  inline def getDefaultMinDate(): js.Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultMinDate")().asInstanceOf[js.Date]
   
-  trait IDatePickerBaseProps extends StObject {
+  trait DatePickerBaseProps extends StObject {
     
     /**
       * Props to pass to ReactDayPicker. See API documentation
-      * [here](http://react-day-picker.js.org/api/DayPicker).
+      * [here](https://react-day-picker-v7.netlify.app/api/DayPicker).
       *
       * The following props are managed by the component and cannot be configured:
       * `canChangeMonth`, `captionElement`, `fromMonth` (use `minDate`), `month` (use
@@ -65,7 +64,13 @@ object datePickerCoreMod {
     var dayPickerProps: js.UndefOr[DayPickerProps] = js.undefined
     
     /**
+      * An additional element to show below the date picker.
+      */
+    var footerElement: js.UndefOr[Element] = js.undefined
+    
+    /**
       * Whether the current day should be highlighted in the calendar.
+      *
       * @default false
       */
     var highlightCurrentDay: js.UndefOr[Boolean] = js.undefined
@@ -73,7 +78,7 @@ object datePickerCoreMod {
     /**
       * The initial month the calendar displays.
       */
-    var initialMonth: js.UndefOr[Date] = js.undefined
+    var initialMonth: js.UndefOr[js.Date] = js.undefined
     
     /**
       * The locale name, which is passed to the functions in `localeUtils`
@@ -84,30 +89,36 @@ object datePickerCoreMod {
     /**
       * Collection of functions that provide internationalization support.
       */
-    var localeUtils: js.UndefOr[TypeofLocaleUtils] = js.undefined
+    var localeUtils: js.UndefOr[
+        /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LocaleUtils */ Any
+      ] = js.undefined
     
     /**
       * The latest date the user can select.
-      * @default Dec. 31st of this year.
+      *
+      * @default 6 months from now.
       */
-    var maxDate: js.UndefOr[Date] = js.undefined
+    var maxDate: js.UndefOr[js.Date] = js.undefined
     
     /**
       * The earliest date the user can select.
+      *
       * @default Jan. 1st, 20 years in the past.
       */
-    var minDate: js.UndefOr[Date] = js.undefined
+    var minDate: js.UndefOr[js.Date] = js.undefined
     
     /**
       * Collection of functions that determine which modifier classes get applied to which days.
       * Each function should accept a `Date` and return a boolean.
-      * See the [**react-day-picker** documentation](http://react-day-picker.js.org/api/ModifiersUtils) to learn more.
+      * See the [**react-day-picker** documentation](https://react-day-picker-v7.netlify.app/api/ModifiersUtils)
+      * to learn more.
       */
-    var modifiers: js.UndefOr[IDatePickerModifiers] = js.undefined
+    var modifiers: js.UndefOr[DatePickerModifiers] = js.undefined
     
     /**
       * If `true`, the month menu will appear to the left of the year menu.
       * Otherwise, the month menu will apear to the right of the year menu.
+      *
       * @default false
       */
     var reverseMonthAndYearMenus: js.UndefOr[Boolean] = js.undefined
@@ -119,7 +130,7 @@ object datePickerCoreMod {
       *
       * Passing any non-empty object to this prop will cause the `TimePicker` to appear.
       */
-    var timePickerProps: js.UndefOr[ITimePickerProps] = js.undefined
+    var timePickerProps: js.UndefOr[TimePickerProps] = js.undefined
     
     /**
       * The precision of time selection that accompanies the calendar. Passing a
@@ -131,24 +142,28 @@ object datePickerCoreMod {
       */
     var timePrecision: js.UndefOr[TimePrecision] = js.undefined
   }
-  object IDatePickerBaseProps {
+  object DatePickerBaseProps {
     
-    inline def apply(): IDatePickerBaseProps = {
+    inline def apply(): DatePickerBaseProps = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[IDatePickerBaseProps]
+      __obj.asInstanceOf[DatePickerBaseProps]
     }
     
-    extension [Self <: IDatePickerBaseProps](x: Self) {
+    extension [Self <: DatePickerBaseProps](x: Self) {
       
       inline def setDayPickerProps(value: DayPickerProps): Self = StObject.set(x, "dayPickerProps", value.asInstanceOf[js.Any])
       
       inline def setDayPickerPropsUndefined: Self = StObject.set(x, "dayPickerProps", js.undefined)
       
+      inline def setFooterElement(value: Element): Self = StObject.set(x, "footerElement", value.asInstanceOf[js.Any])
+      
+      inline def setFooterElementUndefined: Self = StObject.set(x, "footerElement", js.undefined)
+      
       inline def setHighlightCurrentDay(value: Boolean): Self = StObject.set(x, "highlightCurrentDay", value.asInstanceOf[js.Any])
       
       inline def setHighlightCurrentDayUndefined: Self = StObject.set(x, "highlightCurrentDay", js.undefined)
       
-      inline def setInitialMonth(value: Date): Self = StObject.set(x, "initialMonth", value.asInstanceOf[js.Any])
+      inline def setInitialMonth(value: js.Date): Self = StObject.set(x, "initialMonth", value.asInstanceOf[js.Any])
       
       inline def setInitialMonthUndefined: Self = StObject.set(x, "initialMonth", js.undefined)
       
@@ -156,19 +171,19 @@ object datePickerCoreMod {
       
       inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      inline def setLocaleUtils(value: TypeofLocaleUtils): Self = StObject.set(x, "localeUtils", value.asInstanceOf[js.Any])
+      inline def setLocaleUtils(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LocaleUtils */ Any): Self = StObject.set(x, "localeUtils", value.asInstanceOf[js.Any])
       
       inline def setLocaleUtilsUndefined: Self = StObject.set(x, "localeUtils", js.undefined)
       
-      inline def setMaxDate(value: Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+      inline def setMaxDate(value: js.Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
       
       inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
       
-      inline def setMinDate(value: Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+      inline def setMinDate(value: js.Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
       
       inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
       
-      inline def setModifiers(value: IDatePickerModifiers): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+      inline def setModifiers(value: DatePickerModifiers): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
       
       inline def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
       
@@ -176,7 +191,7 @@ object datePickerCoreMod {
       
       inline def setReverseMonthAndYearMenusUndefined: Self = StObject.set(x, "reverseMonthAndYearMenus", js.undefined)
       
-      inline def setTimePickerProps(value: ITimePickerProps): Self = StObject.set(x, "timePickerProps", value.asInstanceOf[js.Any])
+      inline def setTimePickerProps(value: TimePickerProps): Self = StObject.set(x, "timePickerProps", value.asInstanceOf[js.Any])
       
       inline def setTimePickerPropsUndefined: Self = StObject.set(x, "timePickerProps", js.undefined)
       
@@ -186,5 +201,7 @@ object datePickerCoreMod {
     }
   }
   
-  type IDatePickerModifiers = StringDictionary[js.Function1[/* date */ Date, Boolean]]
+  type DatePickerModifiers = IDatePickerModifiers
+  
+  type IDatePickerModifiers = StringDictionary[js.Function1[/* date */ js.Date, Boolean]]
 }

@@ -1,9 +1,9 @@
 package typings.materialFormField
 
+import typings.materialBase.Element
 import typings.materialBase.componentMod.MDCComponent
 import typings.materialFormField.foundationMod.MDCFormFieldFoundation
 import typings.materialRipple.componentMod.MDCRipple
-import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,11 +13,13 @@ object componentMod {
   
   @JSImport("@material/form-field/component", "MDCFormField")
   @js.native
-  class MDCFormField protected () extends MDCComponent[MDCFormFieldFoundation] {
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
-    def this(root: Element, foundation: MDCFormFieldFoundation, args: js.Any*) = this()
+  open class MDCFormField protected () extends MDCComponent[MDCFormFieldFoundation] {
+    def this(root: Element, foundation: Unit, args: Any*) = this()
+    def this(root: Element, foundation: MDCFormFieldFoundation, args: Any*) = this()
     
     var input: js.UndefOr[MDCFormFieldInput] = js.native
+    
+    /* private */ var labelEl: Any = js.native
   }
   /* static members */
   object MDCFormField {

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ChildNode extends StObject {
   
-  var vattrs: js.UndefOr[js.Any] = js.undefined
+  var vattrs: js.UndefOr[Any] = js.undefined
   
   var vchildren: js.UndefOr[js.Array[VNode]] = js.undefined
   
@@ -27,7 +27,7 @@ object ChildNode {
   
   extension [Self <: ChildNode](x: Self) {
     
-    inline def setVattrs(value: js.Any): Self = StObject.set(x, "vattrs", value.asInstanceOf[js.Any])
+    inline def setVattrs(value: Any): Self = StObject.set(x, "vattrs", value.asInstanceOf[js.Any])
     
     inline def setVattrsUndefined: Self = StObject.set(x, "vattrs", js.undefined)
     
@@ -35,7 +35,7 @@ object ChildNode {
     
     inline def setVchildrenUndefined: Self = StObject.set(x, "vchildren", js.undefined)
     
-    inline def setVchildrenVarargs(value: VNode*): Self = StObject.set(x, "vchildren", js.Array(value :_*))
+    inline def setVchildrenVarargs(value: VNode*): Self = StObject.set(x, "vchildren", js.Array(value*))
     
     inline def setVkey(value: String | Double): Self = StObject.set(x, "vkey", value.asInstanceOf[js.Any])
     

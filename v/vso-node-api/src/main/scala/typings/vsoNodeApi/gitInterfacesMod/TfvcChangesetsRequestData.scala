@@ -32,7 +32,7 @@ object TfvcChangesetsRequestData {
     
     inline def setChangesetIds(value: js.Array[Double]): Self = StObject.set(x, "changesetIds", value.asInstanceOf[js.Any])
     
-    inline def setChangesetIdsVarargs(value: Double*): Self = StObject.set(x, "changesetIds", js.Array(value :_*))
+    inline def setChangesetIdsVarargs(value: Double*): Self = StObject.set(x, "changesetIds", js.Array(value*))
     
     inline def setCommentLength(value: Double): Self = StObject.set(x, "commentLength", value.asInstanceOf[js.Any])
     

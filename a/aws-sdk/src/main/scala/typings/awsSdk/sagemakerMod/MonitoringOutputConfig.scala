@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MonitoringOutputConfig extends StObject {
   
   /**
-    * The AWS Key Management Service (AWS KMS) key that Amazon SageMaker uses to encrypt the model artifacts at rest using Amazon S3 server-side encryption.
+    * The Amazon Web Services Key Management Service (Amazon Web Services KMS) key that Amazon SageMaker uses to encrypt the model artifacts at rest using Amazon S3 server-side encryption.
     */
   var KmsKeyId: js.UndefOr[typings.awsSdk.sagemakerMod.KmsKeyId] = js.undefined
   
@@ -31,6 +31,6 @@ object MonitoringOutputConfig {
     
     inline def setMonitoringOutputs(value: MonitoringOutputs): Self = StObject.set(x, "MonitoringOutputs", value.asInstanceOf[js.Any])
     
-    inline def setMonitoringOutputsVarargs(value: MonitoringOutput*): Self = StObject.set(x, "MonitoringOutputs", js.Array(value :_*))
+    inline def setMonitoringOutputsVarargs(value: MonitoringOutput*): Self = StObject.set(x, "MonitoringOutputs", js.Array(value*))
   }
 }

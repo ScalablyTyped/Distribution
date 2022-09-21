@@ -60,7 +60,7 @@ object XSheetAuditing {
     clearArrows: () => Unit,
     hideDependents: CellAddress => Boolean,
     hidePrecedents: CellAddress => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     showDependents: CellAddress => Boolean,
     showErrors: CellAddress => Boolean,

@@ -16,12 +16,19 @@ trait OnsTabbarElement
   extends StObject
      with HTMLElement {
   
+  var activeIndex: Double = js.native
+  
   /* InferMemberOverrides */
-  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+  override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+  override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+  
+  /**
+    * @description Specify the animation's duration, timing and delay with an object literal. E.g. `{duration: 0.2, delay: 1, timing: 'ease-in'}`.
+    **/
+  var animationOptions: js.Object = js.native
   
   /**
     * @return {Number} The index of the currently active tab
@@ -29,13 +36,15 @@ trait OnsTabbarElement
     */
   def getActiveTabIndex(): Double = js.native
   
+  var hideTabs: Boolean = js.native
+  
   /**
-    * @param {*} url Page URL. Can be either an HTML document or an <code>&lt;ons-template&gt;</code>
+    * @param {*} url Page URL. Can be either an HTML document or an <code>&lt;template&gt;</code>
     * @return Resolves to the new page element.
     * @description Displays a new page without changing the active index
     */
-  def loadPage(page: js.Any): js.Promise[HTMLElement] = js.native
-  def loadPage(page: js.Any, options: TabbarOptions): js.Promise[HTMLElement] = js.native
+  def loadPage(page: Any): js.Promise[HTMLElement] = js.native
+  def loadPage(page: Any, options: TabbarOptions): js.Promise[HTMLElement] = js.native
   
   /**
     * @param {Number} index Decimal index of the current swipe.
@@ -72,5 +81,10 @@ trait OnsTabbarElement
     **/
   var swipeable: Boolean = js.native
   
-  var visible: js.Any = js.native
+  /**
+    * @description If this property is set the tabs show a dynamic bottom border. Only works for iOS flat design since the border is always visible in Material Design.
+    **/
+  var tabBorder: Boolean = js.native
+  
+  var visible: Any = js.native
 }

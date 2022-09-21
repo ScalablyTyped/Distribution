@@ -21,7 +21,7 @@ object cleanupResultMod {
       
       inline def setDeletedCacheRequests(value: js.Array[String]): Self = StObject.set(x, "deletedCacheRequests", value.asInstanceOf[js.Any])
       
-      inline def setDeletedCacheRequestsVarargs(value: String*): Self = StObject.set(x, "deletedCacheRequests", js.Array(value :_*))
+      inline def setDeletedCacheRequestsVarargs(value: String*): Self = StObject.set(x, "deletedCacheRequests", js.Array(value*))
     }
   }
 }

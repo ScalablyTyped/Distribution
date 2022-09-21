@@ -9,7 +9,7 @@ trait EditRowStartingEventUIParam extends StObject {
   /**
     * Gets a reference to GridUpdating.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
   
   /**
     * Checks if the edit mode is for adding a new row.
@@ -19,7 +19,7 @@ trait EditRowStartingEventUIParam extends StObject {
   /**
     * Gets the row's PK value.
     */
-  var rowID: js.UndefOr[js.Any] = js.undefined
+  var rowID: js.UndefOr[Any] = js.undefined
 }
 object EditRowStartingEventUIParam {
   
@@ -30,7 +30,7 @@ object EditRowStartingEventUIParam {
   
   extension [Self <: EditRowStartingEventUIParam](x: Self) {
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
@@ -38,7 +38,7 @@ object EditRowStartingEventUIParam {
     
     inline def setRowAddingUndefined: Self = StObject.set(x, "rowAdding", js.undefined)
     
-    inline def setRowID(value: js.Any): Self = StObject.set(x, "rowID", value.asInstanceOf[js.Any])
+    inline def setRowID(value: Any): Self = StObject.set(x, "rowID", value.asInstanceOf[js.Any])
     
     inline def setRowIDUndefined: Self = StObject.set(x, "rowID", js.undefined)
   }

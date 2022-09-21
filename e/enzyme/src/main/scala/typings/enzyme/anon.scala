@@ -41,7 +41,7 @@ object anon {
   trait Dictkey
     extends StObject
        with // TODO Maybe some life cycle are missing
-  /* lifecycleName */ StringDictionary[js.Any] {
+  /* lifecycleName */ StringDictionary[Any] {
     
     var calledByRenderer: Boolean
   }

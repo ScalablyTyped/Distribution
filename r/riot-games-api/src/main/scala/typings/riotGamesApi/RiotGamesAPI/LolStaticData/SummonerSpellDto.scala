@@ -89,7 +89,7 @@ object SummonerSpellDto {
     
     inline def setCooldownBurn(value: String): Self = StObject.set(x, "cooldownBurn", value.asInstanceOf[js.Any])
     
-    inline def setCooldownVarargs(value: Double*): Self = StObject.set(x, "cooldown", js.Array(value :_*))
+    inline def setCooldownVarargs(value: Double*): Self = StObject.set(x, "cooldown", js.Array(value*))
     
     inline def setCost(value: js.Array[Double]): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
     
@@ -97,7 +97,7 @@ object SummonerSpellDto {
     
     inline def setCostType(value: String): Self = StObject.set(x, "costType", value.asInstanceOf[js.Any])
     
-    inline def setCostVarargs(value: Double*): Self = StObject.set(x, "cost", js.Array(value :_*))
+    inline def setCostVarargs(value: Double*): Self = StObject.set(x, "cost", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -105,9 +105,9 @@ object SummonerSpellDto {
     
     inline def setEffectBurn(value: js.Array[String]): Self = StObject.set(x, "effectBurn", value.asInstanceOf[js.Any])
     
-    inline def setEffectBurnVarargs(value: String*): Self = StObject.set(x, "effectBurn", js.Array(value :_*))
+    inline def setEffectBurnVarargs(value: String*): Self = StObject.set(x, "effectBurn", js.Array(value*))
     
-    inline def setEffectVarargs(value: js.Array[Double]*): Self = StObject.set(x, "effect", js.Array(value :_*))
+    inline def setEffectVarargs(value: js.Array[Double]*): Self = StObject.set(x, "effect", js.Array(value*))
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -121,7 +121,7 @@ object SummonerSpellDto {
     
     inline def setModes(value: js.Array[String]): Self = StObject.set(x, "modes", value.asInstanceOf[js.Any])
     
-    inline def setModesVarargs(value: String*): Self = StObject.set(x, "modes", js.Array(value :_*))
+    inline def setModesVarargs(value: String*): Self = StObject.set(x, "modes", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -129,7 +129,7 @@ object SummonerSpellDto {
     
     inline def setRangeBurn(value: String): Self = StObject.set(x, "rangeBurn", value.asInstanceOf[js.Any])
     
-    inline def setRangeVarargs(value: Double*): Self = StObject.set(x, "range", js.Array(value :_*))
+    inline def setRangeVarargs(value: Double*): Self = StObject.set(x, "range", js.Array(value*))
     
     inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
@@ -143,6 +143,6 @@ object SummonerSpellDto {
     
     inline def setVars(value: js.Array[SpellVarsDto]): Self = StObject.set(x, "vars", value.asInstanceOf[js.Any])
     
-    inline def setVarsVarargs(value: SpellVarsDto*): Self = StObject.set(x, "vars", js.Array(value :_*))
+    inline def setVarsVarargs(value: SpellVarsDto*): Self = StObject.set(x, "vars", js.Array(value*))
   }
 }

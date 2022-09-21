@@ -6,12 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TypeofWebSocket extends StObject {
   
+  /* standard dom */
   val CLOSED: Double
   
+  /* standard dom */
   val CLOSING: Double
   
+  /* standard dom */
   val CONNECTING: Double
   
+  /* standard dom */
   val OPEN: Double
 }
 object TypeofWebSocket {

@@ -14,19 +14,19 @@ trait KeyValueDifferFactory extends StObject {
   /**
     * Test to see if the differ knows how to diff this kind of object.
     */
-  def supports(objects: js.Any): Boolean
+  def supports(objects: Any): Boolean
 }
 object KeyValueDifferFactory {
   
-  inline def apply(create: () => KeyValueDiffer[js.Any, js.Any], supports: js.Any => Boolean): KeyValueDifferFactory = {
+  inline def apply(create: () => KeyValueDiffer[Any, Any], supports: Any => Boolean): KeyValueDifferFactory = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction0(create), supports = js.Any.fromFunction1(supports))
     __obj.asInstanceOf[KeyValueDifferFactory]
   }
   
   extension [Self <: KeyValueDifferFactory](x: Self) {
     
-    inline def setCreate(value: () => KeyValueDiffer[js.Any, js.Any]): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
+    inline def setCreate(value: () => KeyValueDiffer[Any, Any]): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
     
-    inline def setSupports(value: js.Any => Boolean): Self = StObject.set(x, "supports", js.Any.fromFunction1(value))
+    inline def setSupports(value: Any => Boolean): Self = StObject.set(x, "supports", js.Any.fromFunction1(value))
   }
 }

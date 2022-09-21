@@ -33,6 +33,11 @@ trait ImagePropsBase
   var loadingIndicatorSource: js.UndefOr[ImageURISource] = js.undefined
   
   /**
+    * Used to reference react managed images from native code.
+    */
+  var nativeID: js.UndefOr[String] = js.undefined
+  
+  /**
     * Invoked on load error with {nativeEvent: {error}}
     */
   var onError: js.UndefOr[js.Function1[/* error */ NativeSyntheticEvent[ImageErrorEventData], Unit]] = js.undefined
@@ -48,7 +53,7 @@ trait ImagePropsBase
   
   /**
     * Invoked when load completes successfully
-    * { source: { url, height, width } }.
+    * { source: { uri, height, width } }.
     */
   var onLoad: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[ImageLoadEventData], Unit]] = js.undefined
   
@@ -97,7 +102,7 @@ trait ImagePropsBase
     *
     * The currently supported formats are png, jpg, jpeg, bmp, gif, webp (Android only), psd (iOS only).
     */
-  var source: ImageSourcePropType
+  var source: js.UndefOr[ImageSourcePropType] = js.undefined
   
   /**
     * A unique identifier for this element to be used in UI Automation testing scripts.
@@ -106,8 +111,8 @@ trait ImagePropsBase
 }
 object ImagePropsBase {
   
-  inline def apply(source: ImageSourcePropType): ImagePropsBase = {
-    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
+  inline def apply(): ImagePropsBase = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImagePropsBase]
   }
   
@@ -141,6 +146,10 @@ object ImagePropsBase {
     
     inline def setLoadingIndicatorSourceUndefined: Self = StObject.set(x, "loadingIndicatorSource", js.undefined)
     
+    inline def setNativeID(value: String): Self = StObject.set(x, "nativeID", value.asInstanceOf[js.Any])
+    
+    inline def setNativeIDUndefined: Self = StObject.set(x, "nativeID", js.undefined)
+    
     inline def setOnError(value: /* error */ NativeSyntheticEvent[ImageErrorEventData] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
     inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
@@ -171,7 +180,9 @@ object ImagePropsBase {
     
     inline def setSource(value: ImageSourcePropType): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    inline def setSourceVarargs(value: ImageURISource*): Self = StObject.set(x, "source", js.Array(value :_*))
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    
+    inline def setSourceVarargs(value: ImageURISource*): Self = StObject.set(x, "source", js.Array(value*))
     
     inline def setTestID(value: String): Self = StObject.set(x, "testID", value.asInstanceOf[js.Any])
     

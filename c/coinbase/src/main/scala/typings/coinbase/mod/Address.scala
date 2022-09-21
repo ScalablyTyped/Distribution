@@ -1,14 +1,13 @@
 package typings.coinbase.mod
 
 import typings.coinbase.coinbaseStrings.address
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("coinbase", "Address")
 @js.native
-class Address ()
+open class Address ()
   extends StObject
      with Resource {
   
@@ -17,13 +16,27 @@ class Address ()
     */
   var address: String = js.native
   
+  def getTransactions(
+    pagination: Null,
+    cb: js.Function3[
+      /* error */ js.Error | Null, 
+      /* result */ js.Array[Transaction], 
+      /* pagination */ Pagination, 
+      Unit
+    ]
+  ): Unit = js.native
   /**
     * List transactions that have been sent to a specific address.
     * Scope: wallet:transactions:read
     */
   def getTransactions(
-    opts: js.Object,
-    cb: js.Function2[/* error */ Error | Null, /* result */ js.Array[Transaction], Unit]
+    pagination: Pagination,
+    cb: js.Function3[
+      /* error */ js.Error | Null, 
+      /* result */ js.Array[Transaction], 
+      /* pagination */ Pagination, 
+      Unit
+    ]
   ): Unit = js.native
   
   /**

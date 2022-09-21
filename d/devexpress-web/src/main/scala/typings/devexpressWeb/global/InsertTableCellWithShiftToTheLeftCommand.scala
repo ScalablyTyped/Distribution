@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("InsertTableCellWithShiftToTheLeftCommand")
 @js.native
-class InsertTableCellWithShiftToTheLeftCommand ()
+open class InsertTableCellWithShiftToTheLeftCommand ()
   extends StObject
      with typings.devexpressWeb.InsertTableCellWithShiftToTheLeftCommand {
   

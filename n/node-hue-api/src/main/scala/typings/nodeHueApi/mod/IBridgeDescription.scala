@@ -33,7 +33,7 @@ object IBridgeDescription {
     
     inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
-    inline def setIconsVarargs(value: IBridgeIcon*): Self = StObject.set(x, "icons", js.Array(value :_*))
+    inline def setIconsVarargs(value: IBridgeIcon*): Self = StObject.set(x, "icons", js.Array(value*))
     
     inline def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
     

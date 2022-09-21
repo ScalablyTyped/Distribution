@@ -60,7 +60,7 @@ trait PlusSpeechSpeechRecognizeOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/speech.html](http://www.html5plus.org/doc/zh_cn/speech.html)
     */
-  var onend: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.undefined
+  var onend: js.UndefOr[js.Function1[/* result */ Any, Unit]] = js.undefined
   
   /**
     * 语音识别开始事件（已废弃，使用start事件）
@@ -69,7 +69,7 @@ trait PlusSpeechSpeechRecognizeOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/speech.html](http://www.html5plus.org/doc/zh_cn/speech.html)
     */
-  var onstart: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.undefined
+  var onstart: js.UndefOr[js.Function1[/* result */ Any, Unit]] = js.undefined
   
   /**
     * 识别结果中是否包含标点符号
@@ -122,11 +122,11 @@ object PlusSpeechSpeechRecognizeOptions {
     
     inline def setNbestUndefined: Self = StObject.set(x, "nbest", js.undefined)
     
-    inline def setOnend(value: /* result */ js.Any => Unit): Self = StObject.set(x, "onend", js.Any.fromFunction1(value))
+    inline def setOnend(value: /* result */ Any => Unit): Self = StObject.set(x, "onend", js.Any.fromFunction1(value))
     
     inline def setOnendUndefined: Self = StObject.set(x, "onend", js.undefined)
     
-    inline def setOnstart(value: /* result */ js.Any => Unit): Self = StObject.set(x, "onstart", js.Any.fromFunction1(value))
+    inline def setOnstart(value: /* result */ Any => Unit): Self = StObject.set(x, "onstart", js.Any.fromFunction1(value))
     
     inline def setOnstartUndefined: Self = StObject.set(x, "onstart", js.undefined)
     

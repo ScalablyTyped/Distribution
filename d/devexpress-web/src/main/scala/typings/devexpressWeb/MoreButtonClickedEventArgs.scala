@@ -1,6 +1,5 @@
 package typings.devexpressWeb
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,7 +29,7 @@ trait MoreButtonClickedEventArgs
   /**
     * Gets the Start or End values of the target appointment.
     */
-  var targetDateTime: Date
+  var targetDateTime: js.Date
 }
 object MoreButtonClickedEventArgs {
   
@@ -39,7 +38,7 @@ object MoreButtonClickedEventArgs {
     interval: ASPxClientTimeInterval,
     processOnServer: Boolean,
     resource: String,
-    targetDateTime: Date
+    targetDateTime: js.Date
   ): MoreButtonClickedEventArgs = {
     val __obj = js.Dynamic.literal(handled = handled.asInstanceOf[js.Any], interval = interval.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], targetDateTime = targetDateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[MoreButtonClickedEventArgs]
@@ -53,6 +52,6 @@ object MoreButtonClickedEventArgs {
     
     inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    inline def setTargetDateTime(value: Date): Self = StObject.set(x, "targetDateTime", value.asInstanceOf[js.Any])
+    inline def setTargetDateTime(value: js.Date): Self = StObject.set(x, "targetDateTime", value.asInstanceOf[js.Any])
   }
 }

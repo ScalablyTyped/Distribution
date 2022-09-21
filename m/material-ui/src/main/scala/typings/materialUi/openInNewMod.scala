@@ -10,10 +10,10 @@ object openInNewMod {
   
   @JSImport("material-ui/svg-icons/action/open-in-new", JSImport.Default)
   @js.native
-  class default () extends ActionOpenInNew
+  open class default () extends ActionOpenInNew
   
   @JSImport("material-ui/svg-icons/action/open-in-new", "ActionOpenInNew")
   @js.native
-  class ActionOpenInNew ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionOpenInNew ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

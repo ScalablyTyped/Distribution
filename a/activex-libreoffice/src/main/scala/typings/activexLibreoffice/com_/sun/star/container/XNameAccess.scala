@@ -25,7 +25,7 @@ trait XNameAccess
     * @throws NoSuchElementException if an element under Name does not exist.
     * @throws com::sun::star::lang::WrappedTargetException If the implementation has internal reasons for exceptions, then wrap these in a {@link com.sun.star.
     */
-  def getByName(aName: String): js.Any
+  def getByName(aName: String): Any
   
   /** @returns a sequence of all element names in this container.  The order of the names is not specified. */
   def getElementNames(): SafeArray[String]
@@ -42,12 +42,12 @@ object XNameAccess {
     ElementNames: SafeArray[String],
     ElementType: `type`,
     acquire: () => Unit,
-    getByName: String => js.Any,
+    getByName: String => Any,
     getElementNames: () => SafeArray[String],
     getElementType: () => `type`,
     hasByName: String => Boolean,
     hasElements: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XNameAccess = {
     val __obj = js.Dynamic.literal(ElementNames = ElementNames.asInstanceOf[js.Any], ElementType = ElementType.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getByName = js.Any.fromFunction1(getByName), getElementNames = js.Any.fromFunction0(getElementNames), getElementType = js.Any.fromFunction0(getElementType), hasByName = js.Any.fromFunction1(hasByName), hasElements = js.Any.fromFunction0(hasElements), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -58,7 +58,7 @@ object XNameAccess {
     
     inline def setElementNames(value: SafeArray[String]): Self = StObject.set(x, "ElementNames", value.asInstanceOf[js.Any])
     
-    inline def setGetByName(value: String => js.Any): Self = StObject.set(x, "getByName", js.Any.fromFunction1(value))
+    inline def setGetByName(value: String => Any): Self = StObject.set(x, "getByName", js.Any.fromFunction1(value))
     
     inline def setGetElementNames(value: () => SafeArray[String]): Self = StObject.set(x, "getElementNames", js.Any.fromFunction0(value))
     

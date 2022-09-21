@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.extensionManagementInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,7 +15,7 @@ trait ExtensionRequest extends StObject {
   /**
     * Date at which the request was made
     */
-  var requestDate: Date
+  var requestDate: js.Date
   
   /**
     * Optional message supplied by the requester justifying the request
@@ -36,7 +35,7 @@ trait ExtensionRequest extends StObject {
   /**
     * Date at which the request was resolved
     */
-  var resolveDate: Date
+  var resolveDate: js.Date
   
   /**
     * Represents the user who resolved the request
@@ -47,11 +46,11 @@ object ExtensionRequest {
   
   inline def apply(
     rejectMessage: String,
-    requestDate: Date,
+    requestDate: js.Date,
     requestMessage: String,
     requestState: ExtensionRequestState,
     requestedBy: IdentityRef,
-    resolveDate: Date,
+    resolveDate: js.Date,
     resolvedBy: IdentityRef
   ): ExtensionRequest = {
     val __obj = js.Dynamic.literal(rejectMessage = rejectMessage.asInstanceOf[js.Any], requestDate = requestDate.asInstanceOf[js.Any], requestMessage = requestMessage.asInstanceOf[js.Any], requestState = requestState.asInstanceOf[js.Any], requestedBy = requestedBy.asInstanceOf[js.Any], resolveDate = resolveDate.asInstanceOf[js.Any], resolvedBy = resolvedBy.asInstanceOf[js.Any])
@@ -62,7 +61,7 @@ object ExtensionRequest {
     
     inline def setRejectMessage(value: String): Self = StObject.set(x, "rejectMessage", value.asInstanceOf[js.Any])
     
-    inline def setRequestDate(value: Date): Self = StObject.set(x, "requestDate", value.asInstanceOf[js.Any])
+    inline def setRequestDate(value: js.Date): Self = StObject.set(x, "requestDate", value.asInstanceOf[js.Any])
     
     inline def setRequestMessage(value: String): Self = StObject.set(x, "requestMessage", value.asInstanceOf[js.Any])
     
@@ -70,7 +69,7 @@ object ExtensionRequest {
     
     inline def setRequestedBy(value: IdentityRef): Self = StObject.set(x, "requestedBy", value.asInstanceOf[js.Any])
     
-    inline def setResolveDate(value: Date): Self = StObject.set(x, "resolveDate", value.asInstanceOf[js.Any])
+    inline def setResolveDate(value: js.Date): Self = StObject.set(x, "resolveDate", value.asInstanceOf[js.Any])
     
     inline def setResolvedBy(value: IdentityRef): Self = StObject.set(x, "resolvedBy", value.asInstanceOf[js.Any])
   }

@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListTagsForResourceResponse extends StObject {
   
   /**
-    * If there are more tags than maxResults, use nextToken in the request to get the next set.
+    * 
     */
-  var nextToken: js.UndefOr[String] = js.undefined
-  
   var tags: Tags
 }
 object ListTagsForResourceResponse {
@@ -21,10 +19,6 @@ object ListTagsForResourceResponse {
   }
   
   extension [Self <: ListTagsForResourceResponse](x: Self) {
-    
-    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
-    
-    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
     inline def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
   }

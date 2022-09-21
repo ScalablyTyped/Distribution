@@ -10,7 +10,7 @@ trait CellIsRuleType
      with ConditionalFormattingBaseRule
      with ConditionalFormattingRule {
   
-  var formulae: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var formulae: js.UndefOr[js.Array[Any]] = js.undefined
   
   var operator: js.UndefOr[CellIsOperators] = js.undefined
   
@@ -26,11 +26,11 @@ object CellIsRuleType {
   
   extension [Self <: CellIsRuleType](x: Self) {
     
-    inline def setFormulae(value: js.Array[js.Any]): Self = StObject.set(x, "formulae", value.asInstanceOf[js.Any])
+    inline def setFormulae(value: js.Array[Any]): Self = StObject.set(x, "formulae", value.asInstanceOf[js.Any])
     
     inline def setFormulaeUndefined: Self = StObject.set(x, "formulae", js.undefined)
     
-    inline def setFormulaeVarargs(value: js.Any*): Self = StObject.set(x, "formulae", js.Array(value :_*))
+    inline def setFormulaeVarargs(value: Any*): Self = StObject.set(x, "formulae", js.Array(value*))
     
     inline def setOperator(value: CellIsOperators): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     

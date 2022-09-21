@@ -10,10 +10,10 @@ object widgetsMod {
   
   @JSImport("material-ui/svg-icons/device/widgets", JSImport.Default)
   @js.native
-  class default () extends DeviceWidgets
+  open class default () extends DeviceWidgets
   
   @JSImport("material-ui/svg-icons/device/widgets", "DeviceWidgets")
   @js.native
-  class DeviceWidgets ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class DeviceWidgets ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

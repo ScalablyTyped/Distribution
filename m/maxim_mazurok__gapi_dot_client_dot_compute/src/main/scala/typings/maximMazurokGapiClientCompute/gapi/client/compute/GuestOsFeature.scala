@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GuestOsFeature extends StObject {
   
-  /** The ID of a supported feature. Read  Enabling guest operating system features to see a list of available options. */
+  /** The ID of a supported feature. Read Enabling guest operating system features to see a list of available options. */
   var `type`: js.UndefOr[String] = js.undefined
 }
 object GuestOsFeature {

@@ -1,6 +1,5 @@
 package typings.devexpressWeb.global
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientReminder")
 @js.native
-class ASPxClientReminder ()
+open class ASPxClientReminder ()
   extends StObject
      with typings.devexpressWeb.ASPxClientReminder {
   
@@ -24,14 +23,14 @@ class ASPxClientReminder ()
     * Returns the date and time when the reminder is alerted.
     */
   /* CompleteClass */
-  override def GetAlertTime(): Date = js.native
+  override def GetAlertTime(): js.Date = js.native
   
   /**
     * Gets the custom field bound to the reminder. An object representing the custom field.
     * @param key A string object representing the custom field's ID.
     */
   /* CompleteClass */
-  override def GetCustomField(key: String): js.Any = js.native
+  override def GetCustomField(key: String): Any = js.native
   
   /**
     * Gets the reminder's ID.
@@ -43,7 +42,7 @@ class ASPxClientReminder ()
     * Gets the time interval before the appointment's start time.
     */
   /* CompleteClass */
-  override def GetTimeBeforeStart(): Date = js.native
+  override def GetTimeBeforeStart(): js.Date = js.native
   
   /**
     * Delays the reminder's alert until the alert time has increased by the specified interval.

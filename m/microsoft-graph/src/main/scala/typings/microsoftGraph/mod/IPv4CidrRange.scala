@@ -8,7 +8,7 @@ trait IPv4CidrRange
   extends StObject
      with IpRange {
   
-  // IPv4 address in CIDR notation
+  // IPv4 address in CIDR notation. Not nullable.
   var cidrAddress: js.UndefOr[String] = js.undefined
 }
 object IPv4CidrRange {

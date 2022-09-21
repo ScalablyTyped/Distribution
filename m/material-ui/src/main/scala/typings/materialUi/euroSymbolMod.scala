@@ -10,10 +10,10 @@ object euroSymbolMod {
   
   @JSImport("material-ui/svg-icons/action/euro-symbol", JSImport.Default)
   @js.native
-  class default () extends ActionEuroSymbol
+  open class default () extends ActionEuroSymbol
   
   @JSImport("material-ui/svg-icons/action/euro-symbol", "ActionEuroSymbol")
   @js.native
-  class ActionEuroSymbol ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionEuroSymbol ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

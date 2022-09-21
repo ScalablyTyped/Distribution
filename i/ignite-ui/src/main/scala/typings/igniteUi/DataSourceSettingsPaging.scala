@@ -10,7 +10,7 @@ trait DataSourceSettingsPaging
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Whether when a new page of data is requested we should append the new data to the existing data

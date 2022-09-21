@@ -23,7 +23,7 @@ object resultPropsTypeMod {
     
     var message: js.UndefOr[ReactNode] = js.undefined
     
-    var onButtonClick: js.UndefOr[js.Function1[/* e */ js.Any, Unit]] = js.undefined
+    var onButtonClick: js.UndefOr[js.Function1[/* e */ Any, Unit]] = js.undefined
     
     var title: js.UndefOr[ReactNode] = js.undefined
   }
@@ -52,13 +52,13 @@ object resultPropsTypeMod {
       
       inline def setImgUrlUndefined: Self = StObject.set(x, "imgUrl", js.undefined)
       
-      inline def setImgUrlVarargs(value: ImageURISource*): Self = StObject.set(x, "imgUrl", js.Array(value :_*))
+      inline def setImgUrlVarargs(value: ImageURISource*): Self = StObject.set(x, "imgUrl", js.Array(value*))
       
       inline def setMessage(value: ReactNode): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
       inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      inline def setOnButtonClick(value: /* e */ js.Any => Unit): Self = StObject.set(x, "onButtonClick", js.Any.fromFunction1(value))
+      inline def setOnButtonClick(value: /* e */ Any => Unit): Self = StObject.set(x, "onButtonClick", js.Any.fromFunction1(value))
       
       inline def setOnButtonClickUndefined: Self = StObject.set(x, "onButtonClick", js.undefined)
       

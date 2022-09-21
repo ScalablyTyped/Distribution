@@ -109,6 +109,6 @@ object RouteLeg {
     
     inline def setSteps(value: js.Array[DirectionsStep]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
-    inline def setStepsVarargs(value: DirectionsStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: DirectionsStep*): Self = StObject.set(x, "steps", js.Array(value*))
   }
 }

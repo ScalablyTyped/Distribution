@@ -1,19 +1,19 @@
 
 # Scala.js typings for wix-ui-icons-common
 
-Typings are for version 2.0.294
+Typings are for version 2.0.409
 
 ## Library description:
-A set of commonly used icons for the Wix UI design system.
+# PLEASE DON'T ADD MORE ICONS HERE!
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | wix-ui-icons-common |
 | Keywords           | - |
-| # releases         | 274 |
-| # dependents       | 6 |
-| # downloads        | 127152 |
-| # stars            | 0 |
+| # releases         | 163 |
+| # dependents       | 0.0 |
+| # downloads        | 6712.666666666667 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/wix-ui-icons-common)

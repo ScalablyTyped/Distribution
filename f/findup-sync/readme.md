@@ -1,7 +1,7 @@
 
 # Scala.js typings for findup-sync
 
-Typings are for version 2.0
+Typings are for version 4.0
 
 ## Library description:
 Find the first file matching a given pattern in the current directory or the nearest ancestor directory.
@@ -11,9 +11,9 @@ Find the first file matching a given pattern in the current directory or the nea
 | Full name          | findup-sync |
 | Keywords           | file, find, find-up, findup, glob, match, pattern, resolve, search |
 | # releases         | 2 |
-| # dependents       | 465 |
-| # downloads        | 373446795 |
-| # stars            | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 3.5623717E7 |
+| # stars            | 95.0 |
 
 ## Links
 - [Homepage](https://github.com/gulpjs/findup-sync#readme)

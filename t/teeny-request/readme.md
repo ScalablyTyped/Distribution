@@ -1,7 +1,7 @@
 
 # Scala.js typings for teeny-request
 
-Typings are for version 7.0.1
+Typings are for version 8.0.1
 
 ## Library description:
 Like request, but smaller.
@@ -10,10 +10,10 @@ Like request, but smaller.
 | ------------------ | :-------------: |
 | Full name          | teeny-request |
 | Keywords           | request, node-fetch, fetch |
-| # releases         | 21 |
-| # dependents       | 9 |
-| # downloads        | 94487646 |
-| # stars            | 0 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 1.0935282333333334E7 |
+| # stars            | 64.0 |
 
 ## Links
 - [Homepage](https://github.com/googleapis/teeny-request#readme)

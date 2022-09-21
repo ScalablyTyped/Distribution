@@ -10,10 +10,10 @@ The lodash method `_.mixin` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.mixin |
 | Keywords           | lodash-modularized, mixin |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 4463 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1194.6666666666667 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

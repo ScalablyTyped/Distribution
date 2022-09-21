@@ -10,13 +10,13 @@ object pivotMod {
   
   @JSImport("vega-lite/build/src/compile/data/pivot", "PivotTransformNode")
   @js.native
-  class PivotTransformNode protected () extends DataFlowNode {
+  open class PivotTransformNode protected () extends DataFlowNode {
     def this(parent: DataFlowNode, transform: PivotTransform) = this()
     
     def addDimensions(fields: js.Array[String]): Unit = js.native
     
     def assemble(): typings.vegaTypings.transformMod.PivotTransform = js.native
     
-    /* private */ var transform: js.Any = js.native
+    /* private */ var transform: Any = js.native
   }
 }

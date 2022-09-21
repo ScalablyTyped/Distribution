@@ -10,10 +10,10 @@ The lodash method `_.flattenDepth` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.flattendepth |
 | Keywords           | lodash-modularized, flattendepth |
-| # releases         | 0 |
-| # dependents       | 10 |
-| # downloads        | 199229 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 27651.333333333332 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

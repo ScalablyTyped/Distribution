@@ -1,16 +1,13 @@
 package typings.xstyledSystem.mod
 
+import typings.csstype.mod.Property.MaxWidth
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait MaxWidthProps[TLength] extends StObject {
   
-  val maxWidth: js.UndefOr[
-    ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxWidth<TLength> */ js.Any
-    ]
-  ] = js.undefined
+  val maxWidth: js.UndefOr[ResponsiveValue[MaxWidth[TLength]]] = js.undefined
 }
 object MaxWidthProps {
   
@@ -21,16 +18,10 @@ object MaxWidthProps {
   
   extension [Self <: MaxWidthProps[?], TLength](x: Self & MaxWidthProps[TLength]) {
     
-    inline def setMaxWidth(
-      value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxWidth<TLength> */ js.Any
-        ]
-    ): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+    inline def setMaxWidth(value: ResponsiveValue[MaxWidth[TLength]]): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
     inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
-    inline def setMaxWidthVarargs(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MaxWidth<TLength> */ js.Any)*
-    ): Self = StObject.set(x, "maxWidth", js.Array(value :_*))
+    inline def setMaxWidthVarargs(value: MaxWidth[TLength]*): Self = StObject.set(x, "maxWidth", js.Array(value*))
   }
 }

@@ -17,12 +17,9 @@ trait Renderer extends StObject {
   
   var available: Boolean = js.native
   
-  var buffer: js.Array[js.Any] = js.native
+  var buffer: js.Array[Any] = js.native
   
-  @JSName("bufferize")
-  def bufferize_data(data: js.Any, `type`: data): Renderer = js.native
-  @JSName("bufferize")
-  def bufferize_file(data: js.Any, `type`: file): Renderer = js.native
+  def bufferize(data: Any, `type`: file | data): Renderer = js.native
   
   def clear(): Renderer = js.native
   
@@ -60,10 +57,7 @@ trait Renderer extends StObject {
   
   var parent: CanvasCamera = js.native
   
-  @JSName("render")
-  def render_data(data: js.Any, `type`: data): Renderer = js.native
-  @JSName("render")
-  def render_file(data: js.Any, `type`: file): Renderer = js.native
+  def render(data: Any, `type`: file | data): Renderer = js.native
   
   def resize(): Renderer = js.native
   

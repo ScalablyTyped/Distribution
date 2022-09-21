@@ -101,7 +101,7 @@ object PhoneGapNfc {
       *
       *  See NFC Data Exchange Format (NDEF) Specification Section 3.2 RecordLayout
       */
-    def decodeTnf(tnf_byte: Double): js.Any
+    def decodeTnf(tnf_byte: Double): Any
     
     /**
       * Helper that creates an empty NdefRecord.
@@ -216,7 +216,7 @@ object PhoneGapNfc {
       absoluteUriRecord: (String, js.Array[Double], js.Array[Double]) => NdefRecord,
       androidApplicationRecord: String => NdefRecord,
       decodeMessage: js.Array[Double] => js.Array[NdefRecord],
-      decodeTnf: Double => js.Any,
+      decodeTnf: Double => Any,
       emptyRecord: () => NdefRecord,
       encodeMessage: js.Array[NdefRecord] => js.Array[Double],
       encodeTnf: (Double, Double, Double, Double, Double, Double) => Double,
@@ -241,7 +241,7 @@ object PhoneGapNfc {
       
       inline def setDecodeMessage(value: js.Array[Double] => js.Array[NdefRecord]): Self = StObject.set(x, "decodeMessage", js.Any.fromFunction1(value))
       
-      inline def setDecodeTnf(value: Double => js.Any): Self = StObject.set(x, "decodeTnf", js.Any.fromFunction1(value))
+      inline def setDecodeTnf(value: Double => Any): Self = StObject.set(x, "decodeTnf", js.Any.fromFunction1(value))
       
       inline def setEmptyRecord(value: () => NdefRecord): Self = StObject.set(x, "emptyRecord", js.Any.fromFunction0(value))
       
@@ -253,31 +253,31 @@ object PhoneGapNfc {
       
       inline def setRTD_ALTERNATIVE_CARRIER(value: js.Array[Double]): Self = StObject.set(x, "RTD_ALTERNATIVE_CARRIER", value.asInstanceOf[js.Any])
       
-      inline def setRTD_ALTERNATIVE_CARRIERVarargs(value: Double*): Self = StObject.set(x, "RTD_ALTERNATIVE_CARRIER", js.Array(value :_*))
+      inline def setRTD_ALTERNATIVE_CARRIERVarargs(value: Double*): Self = StObject.set(x, "RTD_ALTERNATIVE_CARRIER", js.Array(value*))
       
       inline def setRTD_HANDOVER_CARRIER(value: js.Array[Double]): Self = StObject.set(x, "RTD_HANDOVER_CARRIER", value.asInstanceOf[js.Any])
       
-      inline def setRTD_HANDOVER_CARRIERVarargs(value: Double*): Self = StObject.set(x, "RTD_HANDOVER_CARRIER", js.Array(value :_*))
+      inline def setRTD_HANDOVER_CARRIERVarargs(value: Double*): Self = StObject.set(x, "RTD_HANDOVER_CARRIER", js.Array(value*))
       
       inline def setRTD_HANDOVER_REQUEST(value: js.Array[Double]): Self = StObject.set(x, "RTD_HANDOVER_REQUEST", value.asInstanceOf[js.Any])
       
-      inline def setRTD_HANDOVER_REQUESTVarargs(value: Double*): Self = StObject.set(x, "RTD_HANDOVER_REQUEST", js.Array(value :_*))
+      inline def setRTD_HANDOVER_REQUESTVarargs(value: Double*): Self = StObject.set(x, "RTD_HANDOVER_REQUEST", js.Array(value*))
       
       inline def setRTD_HANDOVER_SELECT(value: js.Array[Double]): Self = StObject.set(x, "RTD_HANDOVER_SELECT", value.asInstanceOf[js.Any])
       
-      inline def setRTD_HANDOVER_SELECTVarargs(value: Double*): Self = StObject.set(x, "RTD_HANDOVER_SELECT", js.Array(value :_*))
+      inline def setRTD_HANDOVER_SELECTVarargs(value: Double*): Self = StObject.set(x, "RTD_HANDOVER_SELECT", js.Array(value*))
       
       inline def setRTD_SMART_POSTER(value: js.Array[Double]): Self = StObject.set(x, "RTD_SMART_POSTER", value.asInstanceOf[js.Any])
       
-      inline def setRTD_SMART_POSTERVarargs(value: Double*): Self = StObject.set(x, "RTD_SMART_POSTER", js.Array(value :_*))
+      inline def setRTD_SMART_POSTERVarargs(value: Double*): Self = StObject.set(x, "RTD_SMART_POSTER", js.Array(value*))
       
       inline def setRTD_TEXT(value: js.Array[Double]): Self = StObject.set(x, "RTD_TEXT", value.asInstanceOf[js.Any])
       
-      inline def setRTD_TEXTVarargs(value: Double*): Self = StObject.set(x, "RTD_TEXT", js.Array(value :_*))
+      inline def setRTD_TEXTVarargs(value: Double*): Self = StObject.set(x, "RTD_TEXT", js.Array(value*))
       
       inline def setRTD_URI(value: js.Array[Double]): Self = StObject.set(x, "RTD_URI", value.asInstanceOf[js.Any])
       
-      inline def setRTD_URIVarargs(value: Double*): Self = StObject.set(x, "RTD_URI", js.Array(value :_*))
+      inline def setRTD_URIVarargs(value: Double*): Self = StObject.set(x, "RTD_URI", js.Array(value*))
       
       inline def setRecord(value: (Double, js.Array[Double], js.Array[Double], js.Array[Double]) => NdefRecord): Self = StObject.set(x, "record", js.Any.fromFunction4(value))
       
@@ -345,17 +345,17 @@ object PhoneGapNfc {
       
       inline def setId(value: js.Array[Double]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      inline def setIdVarargs(value: Double*): Self = StObject.set(x, "id", js.Array(value :_*))
+      inline def setIdVarargs(value: Double*): Self = StObject.set(x, "id", js.Array(value*))
       
       inline def setPayload(value: js.Array[Double]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      inline def setPayloadVarargs(value: Double*): Self = StObject.set(x, "payload", js.Array(value :_*))
+      inline def setPayloadVarargs(value: Double*): Self = StObject.set(x, "payload", js.Array(value*))
       
       inline def setTnf(value: Double): Self = StObject.set(x, "tnf", value.asInstanceOf[js.Any])
       
       inline def setType(value: js.Array[Double]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      inline def setTypeVarargs(value: Double*): Self = StObject.set(x, "type", js.Array(value :_*))
+      inline def setTypeVarargs(value: Double*): Self = StObject.set(x, "type", js.Array(value*))
     }
   }
   
@@ -398,7 +398,7 @@ object PhoneGapNfc {
       
       inline def setNdefMessage(value: js.Array[NdefRecord]): Self = StObject.set(x, "ndefMessage", value.asInstanceOf[js.Any])
       
-      inline def setNdefMessageVarargs(value: NdefRecord*): Self = StObject.set(x, "ndefMessage", js.Array(value :_*))
+      inline def setNdefMessageVarargs(value: NdefRecord*): Self = StObject.set(x, "ndefMessage", js.Array(value*))
     }
   }
   
@@ -678,11 +678,11 @@ object PhoneGapNfc {
       
       inline def setId(value: js.Array[Double]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      inline def setIdVarargs(value: Double*): Self = StObject.set(x, "id", js.Array(value :_*))
+      inline def setIdVarargs(value: Double*): Self = StObject.set(x, "id", js.Array(value*))
       
       inline def setTechTypes(value: js.Array[String]): Self = StObject.set(x, "techTypes", value.asInstanceOf[js.Any])
       
-      inline def setTechTypesVarargs(value: String*): Self = StObject.set(x, "techTypes", js.Array(value :_*))
+      inline def setTechTypesVarargs(value: String*): Self = StObject.set(x, "techTypes", js.Array(value*))
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -702,7 +702,7 @@ object PhoneGapNfc {
       * Decode a URI payload bytes
       * @param data
       */
-    def decodePayload(data: js.Any): String
+    def decodePayload(data: Any): String
     
     /**
       * Encode text payload
@@ -714,14 +714,14 @@ object PhoneGapNfc {
   }
   object TextHelper {
     
-    inline def apply(decodePayload: js.Any => String, encodePayload: (String, String, String) => js.Array[Double]): TextHelper = {
+    inline def apply(decodePayload: Any => String, encodePayload: (String, String, String) => js.Array[Double]): TextHelper = {
       val __obj = js.Dynamic.literal(decodePayload = js.Any.fromFunction1(decodePayload), encodePayload = js.Any.fromFunction3(encodePayload))
       __obj.asInstanceOf[TextHelper]
     }
     
     extension [Self <: TextHelper](x: Self) {
       
-      inline def setDecodePayload(value: js.Any => String): Self = StObject.set(x, "decodePayload", js.Any.fromFunction1(value))
+      inline def setDecodePayload(value: Any => String): Self = StObject.set(x, "decodePayload", js.Any.fromFunction1(value))
       
       inline def setEncodePayload(value: (String, String, String) => js.Array[Double]): Self = StObject.set(x, "encodePayload", js.Any.fromFunction3(value))
     }
@@ -733,7 +733,7 @@ object PhoneGapNfc {
       * Decode a URI payload bytes
       * @param data
       */
-    def decodePayload(data: js.Any): String
+    def decodePayload(data: Any): String
     
     /**
       * shorten a URI with standard prefix
@@ -750,7 +750,7 @@ object PhoneGapNfc {
   object UriHelper {
     
     inline def apply(
-      decodePayload: js.Any => String,
+      decodePayload: Any => String,
       encodePayload: String => js.Array[Double],
       protocols: js.Array[String]
     ): UriHelper = {
@@ -760,13 +760,13 @@ object PhoneGapNfc {
     
     extension [Self <: UriHelper](x: Self) {
       
-      inline def setDecodePayload(value: js.Any => String): Self = StObject.set(x, "decodePayload", js.Any.fromFunction1(value))
+      inline def setDecodePayload(value: Any => String): Self = StObject.set(x, "decodePayload", js.Any.fromFunction1(value))
       
       inline def setEncodePayload(value: String => js.Array[Double]): Self = StObject.set(x, "encodePayload", js.Any.fromFunction1(value))
       
       inline def setProtocols(value: js.Array[String]): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
       
-      inline def setProtocolsVarargs(value: String*): Self = StObject.set(x, "protocols", js.Array(value :_*))
+      inline def setProtocolsVarargs(value: String*): Self = StObject.set(x, "protocols", js.Array(value*))
     }
   }
   

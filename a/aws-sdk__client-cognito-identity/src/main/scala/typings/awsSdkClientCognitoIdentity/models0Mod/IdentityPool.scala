@@ -1,6 +1,6 @@
 package typings.awsSdkClientCognitoIdentity.models0Mod
 
-import org.scalablytyped.runtime.StringDictionary
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,10 +43,10 @@ trait IdentityPool extends StObject {
     *          identity pools to categorize and manage them in different ways, such as by purpose, owner,
     *          environment, or other criteria.</p>
     */
-  var IdentityPoolTags: js.UndefOr[StringDictionary[String]] = js.undefined
+  var IdentityPoolTags: js.UndefOr[Record[String, String]] = js.undefined
   
   /**
-    * <p>A list of OpendID Connect provider ARNs.</p>
+    * <p>The ARNs of the OpenID Connect providers.</p>
     */
   var OpenIdConnectProviderARNs: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -59,7 +59,7 @@ trait IdentityPool extends StObject {
   /**
     * <p>Optional key:value pairs mapping provider names to provider app IDs.</p>
     */
-  var SupportedLoginProviders: js.UndefOr[StringDictionary[String]] = js.undefined
+  var SupportedLoginProviders: js.UndefOr[Record[String, String]] = js.undefined
 }
 object IdentityPool {
   
@@ -67,12 +67,6 @@ object IdentityPool {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IdentityPool]
   }
-  
-  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "IdentityPool")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  inline def filterSensitiveLog(obj: IdentityPool): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   extension [Self <: IdentityPool](x: Self) {
     
@@ -88,7 +82,7 @@ object IdentityPool {
     
     inline def setCognitoIdentityProvidersUndefined: Self = StObject.set(x, "CognitoIdentityProviders", js.undefined)
     
-    inline def setCognitoIdentityProvidersVarargs(value: CognitoIdentityProvider*): Self = StObject.set(x, "CognitoIdentityProviders", js.Array(value :_*))
+    inline def setCognitoIdentityProvidersVarargs(value: CognitoIdentityProvider*): Self = StObject.set(x, "CognitoIdentityProviders", js.Array(value*))
     
     inline def setDeveloperProviderName(value: String): Self = StObject.set(x, "DeveloperProviderName", value.asInstanceOf[js.Any])
     
@@ -102,7 +96,7 @@ object IdentityPool {
     
     inline def setIdentityPoolNameUndefined: Self = StObject.set(x, "IdentityPoolName", js.undefined)
     
-    inline def setIdentityPoolTags(value: StringDictionary[String]): Self = StObject.set(x, "IdentityPoolTags", value.asInstanceOf[js.Any])
+    inline def setIdentityPoolTags(value: Record[String, String]): Self = StObject.set(x, "IdentityPoolTags", value.asInstanceOf[js.Any])
     
     inline def setIdentityPoolTagsUndefined: Self = StObject.set(x, "IdentityPoolTags", js.undefined)
     
@@ -110,15 +104,15 @@ object IdentityPool {
     
     inline def setOpenIdConnectProviderARNsUndefined: Self = StObject.set(x, "OpenIdConnectProviderARNs", js.undefined)
     
-    inline def setOpenIdConnectProviderARNsVarargs(value: String*): Self = StObject.set(x, "OpenIdConnectProviderARNs", js.Array(value :_*))
+    inline def setOpenIdConnectProviderARNsVarargs(value: String*): Self = StObject.set(x, "OpenIdConnectProviderARNs", js.Array(value*))
     
     inline def setSamlProviderARNs(value: js.Array[String]): Self = StObject.set(x, "SamlProviderARNs", value.asInstanceOf[js.Any])
     
     inline def setSamlProviderARNsUndefined: Self = StObject.set(x, "SamlProviderARNs", js.undefined)
     
-    inline def setSamlProviderARNsVarargs(value: String*): Self = StObject.set(x, "SamlProviderARNs", js.Array(value :_*))
+    inline def setSamlProviderARNsVarargs(value: String*): Self = StObject.set(x, "SamlProviderARNs", js.Array(value*))
     
-    inline def setSupportedLoginProviders(value: StringDictionary[String]): Self = StObject.set(x, "SupportedLoginProviders", value.asInstanceOf[js.Any])
+    inline def setSupportedLoginProviders(value: Record[String, String]): Self = StObject.set(x, "SupportedLoginProviders", value.asInstanceOf[js.Any])
     
     inline def setSupportedLoginProvidersUndefined: Self = StObject.set(x, "SupportedLoginProviders", js.undefined)
   }

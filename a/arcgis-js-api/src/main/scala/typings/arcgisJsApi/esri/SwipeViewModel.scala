@@ -16,6 +16,8 @@ trait SwipeViewModel
   /**
     * The direction the Swipe widget moves across the view.
     *
+    * @default "horizontal"
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe-SwipeViewModel.html#direction)
     */
   var direction: horizontal | vertical = js.native
@@ -30,12 +32,16 @@ trait SwipeViewModel
   /**
     * The position of the Swipe widget.
     *
+    * @default 25
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe-SwipeViewModel.html#position)
     */
   var position: Double = js.native
   
   /**
     * The current state of the widget.
+    *
+    * @default disabled
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Swipe-SwipeViewModel.html#state)
     */

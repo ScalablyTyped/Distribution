@@ -7,17 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object addressErrorMod {
   
-  @JSImport("ip-address/dist/lib/address-error", "AddressError")
+  @JSImport("ip-address/dist/cjs/lib/address-error", "AddressError")
   @js.native
-  class AddressError protected ()
+  open class AddressError protected ()
     extends StObject
        with Error {
     def this(message: String) = this()
     def this(message: String, parseMessage: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     

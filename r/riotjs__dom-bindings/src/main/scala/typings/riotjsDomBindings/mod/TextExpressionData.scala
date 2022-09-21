@@ -4,22 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TextExpressionData
+trait TextExpressionData[Scope]
   extends StObject
-     with BaseExpressionData
-     with _ExpressionData {
+     with BaseExpressionData[Scope]
+     with _ExpressionData[Scope] {
   
   var childNodeIndex: Double
 }
 object TextExpressionData {
   
-  inline def apply(childNodeIndex: Double, evaluate: js.Any => js.Any, `type`: ExpressionType): TextExpressionData = {
+  inline def apply[Scope](childNodeIndex: Double, evaluate: Scope => Any, `type`: ExpressionType): TextExpressionData[Scope] = {
     val __obj = js.Dynamic.literal(childNodeIndex = childNodeIndex.asInstanceOf[js.Any], evaluate = js.Any.fromFunction1(evaluate))
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TextExpressionData]
+    __obj.asInstanceOf[TextExpressionData[Scope]]
   }
   
-  extension [Self <: TextExpressionData](x: Self) {
+  extension [Self <: TextExpressionData[?], Scope](x: Self & TextExpressionData[Scope]) {
     
     inline def setChildNodeIndex(value: Double): Self = StObject.set(x, "childNodeIndex", value.asInstanceOf[js.Any])
   }

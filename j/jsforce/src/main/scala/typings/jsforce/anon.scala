@@ -4,23 +4,47 @@ import typings.jsforce.connectionMod.Callback
 import typings.jsforce.describeResultMod.DescribeGlobalResult
 import typings.jsforce.describeResultMod.DescribeSObjectOptions
 import typings.jsforce.describeResultMod.DescribeSObjectResult
+import typings.jsforce.recordMod.RecordAttributes
 import typings.jsforce.salesforceIdMod.SalesforceId
 import typings.jsforce.salesforceObjectMod.ApprovalLayoutInfo
 import typings.jsforce.salesforceObjectMod.CompactLayoutInfo
 import typings.jsforce.salesforceObjectMod.LayoutInfo
-import typings.std.Date
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
+  trait Attributes extends StObject {
+    
+    var Id: js.UndefOr[SalesforceId] = js.undefined
+    
+    var attributes: js.UndefOr[RecordAttributes] = js.undefined
+  }
+  object Attributes {
+    
+    inline def apply(): Attributes = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Attributes]
+    }
+    
+    extension [Self <: Attributes](x: Self) {
+      
+      inline def setAttributes(value: RecordAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      
+      inline def setId(value: SalesforceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+      
+      inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    }
+  }
+  
   trait Body extends StObject {
     
     var body: String | Null
     
-    var created_date: Date | Null
+    var created_date: js.Date | Null
   }
   object Body {
     
@@ -35,7 +59,7 @@ object anon {
       
       inline def setBodyNull: Self = StObject.set(x, "body", null)
       
-      inline def setCreated_date(value: Date): Self = StObject.set(x, "created_date", value.asInstanceOf[js.Any])
+      inline def setCreated_date(value: js.Date): Self = StObject.set(x, "created_date", value.asInstanceOf[js.Any])
       
       inline def setCreated_dateNull: Self = StObject.set(x, "created_date", null)
     }
@@ -46,11 +70,14 @@ object anon {
     
     /** Returns a value from the cache if it exists, otherwise calls Connection.describe */
     def apply(`type`: String): DescribeSObjectResult = js.native
-    def apply(`type`: String, callback: js.Function2[/* err */ Error, /* result */ DescribeSObjectResult, Unit]): DescribeSObjectResult = js.native
+    def apply(
+      `type`: String,
+      callback: js.Function2[/* err */ js.Error, /* result */ DescribeSObjectResult, Unit]
+    ): DescribeSObjectResult = js.native
     def apply(`type`: DescribeSObjectOptions): DescribeSObjectResult = js.native
     def apply(
       `type`: DescribeSObjectOptions,
-      callback: js.Function2[/* err */ Error, /* result */ DescribeSObjectResult, Unit]
+      callback: js.Function2[/* err */ js.Error, /* result */ DescribeSObjectResult, Unit]
     ): DescribeSObjectResult = js.native
     
     def clear(): Unit = js.native
@@ -102,7 +129,7 @@ object anon {
     
     /** Returns a value from the cache if it exists, otherwise calls Connection.describeGlobal */
     def apply(): DescribeGlobalResult = js.native
-    def apply(callback: js.Function2[/* err */ Error, /* result */ DescribeGlobalResult, Unit]): DescribeGlobalResult = js.native
+    def apply(callback: js.Function2[/* err */ js.Error, /* result */ DescribeGlobalResult, Unit]): DescribeGlobalResult = js.native
     
     def clear(): Unit = js.native
   }
@@ -254,22 +281,24 @@ object anon {
     }
   }
   
-  trait Id extends StObject {
+  trait Limit extends StObject {
     
-    var Id: js.UndefOr[SalesforceId] = js.undefined
+    var limit: Double
+    
+    var used: Double
   }
-  object Id {
+  object Limit {
     
-    inline def apply(): Id = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Id]
+    inline def apply(limit: Double, used: Double): Limit = {
+      val __obj = js.Dynamic.literal(limit = limit.asInstanceOf[js.Any], used = used.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Limit]
     }
     
-    extension [Self <: Id](x: Self) {
+    extension [Self <: Limit](x: Self) {
       
-      inline def setId(value: SalesforceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+      inline def setUsed(value: Double): Self = StObject.set(x, "used", value.asInstanceOf[js.Any])
     }
   }
   

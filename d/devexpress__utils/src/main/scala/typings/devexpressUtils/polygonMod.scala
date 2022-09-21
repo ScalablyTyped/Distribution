@@ -40,12 +40,12 @@ object polygonMod {
   
   @JSImport("@devexpress/utils/lib/geometry/polygon", "Polygon")
   @js.native
-  class Polygon[T /* <: Point */] protected () extends PolygonalChain[T] {
+  open class Polygon[T /* <: Point */] protected () extends PolygonalChain[T] {
     def this(points: js.Array[T]) = this()
     
     def getEdge(edgeIndex: Double): Segment[Point] = js.native
     
-    val numEdges: Double = js.native
+    def numEdges: Double = js.native
   }
   /* static members */
   object Polygon {

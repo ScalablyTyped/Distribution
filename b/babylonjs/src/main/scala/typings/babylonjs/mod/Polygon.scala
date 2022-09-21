@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "Polygon")
 @js.native
-class Polygon ()
+open class Polygon ()
   extends typings.babylonjs.legacyMod.Polygon
 /* static members */
 object Polygon {
@@ -45,7 +45,7 @@ object Polygon {
     * @param ymin bottom Y coord
     * @param xmax top X coord
     * @param ymax top Y coord
-    * @returns points that make the resulting rectation
+    * @returns points that make the resulting rectangle
     */
   inline def Rectangle(xmin: Double, ymin: Double, xmax: Double, ymax: Double): js.Array[typings.babylonjs.mathVectorMod.Vector2] = (^.asInstanceOf[js.Dynamic].applyDynamic("Rectangle")(xmin.asInstanceOf[js.Any], ymin.asInstanceOf[js.Any], xmax.asInstanceOf[js.Any], ymax.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.babylonjs.mathVectorMod.Vector2]]
   

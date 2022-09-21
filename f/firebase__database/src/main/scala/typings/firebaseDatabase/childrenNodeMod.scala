@@ -13,120 +13,74 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object childrenNodeMod {
   
-  @JSImport("@firebase/database/dist/src/core/snap/ChildrenNode", "ChildrenNode")
+  @JSImport("@firebase/database/dist/node-esm/src/core/snap/ChildrenNode", "ChildrenNode")
   @js.native
-  class ChildrenNode protected ()
+  open class ChildrenNode protected ()
     extends StObject
        with Node {
     def this(children_ : SortedMap[String, Node], priorityNode_ : Null, indexMap_ : IndexMap) = this()
     /**
-      *
-      * @param {!SortedMap.<string, !Node>} children_ List of children
-      * of this node..
-      * @param {?Node} priorityNode_ The priority of this node (as a snapshot node).
-      * @param {!IndexMap} indexMap_
+      * @param children_ - List of children of this node..
+      * @param priorityNode_ - The priority of this node (as a snapshot node).
       */
     def this(children_ : SortedMap[String, Node], priorityNode_ : Node, indexMap_ : IndexMap) = this()
     
-    /* private */ val children_ : js.Any = js.native
+    /* private */ val children_ : Any = js.native
     
-    /**
-      * @inheritDoc
-      */
     def compareTo(other: ChildrenNode): Double = js.native
     
-    /**
-      * @param {!Index} indexDefinition
-      * @return {?NamedNode}
-      */
     def getFirstChild(indexDefinition: Index): NamedNode | Null = js.native
     
-    /**
-      * @param {!Index} indexDefinition
-      * @return {?string}
-      */
     def getFirstChildName(indexDefinition: Index): String | Null = js.native
     
-    /**
-      * @param {!Index} indexDefinition
-      * @return {SortedMapIterator}
-      */
     def getIterator(indexDefinition: Index): SortedMapIterator[String | NamedNode, Node, NamedNode] = js.native
     
-    /**
-      *
-      * @param {!NamedNode} startPost
-      * @param {!Index} indexDefinition
-      * @return {!SortedMapIterator}
-      */
     def getIteratorFrom(startPost: NamedNode, indexDefinition: Index): SortedMapIterator[String | NamedNode, Node, NamedNode] = js.native
     
-    /**
-      * @param {!Index} indexDefinition
-      * @return {?NamedNode}
-      */
     def getLastChild(indexDefinition: Index): NamedNode | Null = js.native
     
     /**
       * Given an index, return the key name of the largest value we have, according to that index
-      * @param {!Index} indexDefinition
-      * @return {?string}
       */
     def getLastChildName(indexDefinition: Index): String | Null = js.native
     
-    /**
-      * @param {!Index} indexDefinition
-      * @return {!SortedMapIterator}
-      */
     def getReverseIterator(indexDefinition: Index): SortedMapIterator[String | NamedNode, Node, NamedNode] = js.native
     
-    /**
-      * @param {!NamedNode} endPost
-      * @param {!Index} indexDefinition
-      * @return {!SortedMapIterator}
-      */
     def getReverseIteratorFrom(endPost: NamedNode, indexDefinition: Index): SortedMapIterator[String | NamedNode, Node, NamedNode] = js.native
     
-    /* private */ var indexMap_ : js.Any = js.native
+    /* private */ var indexMap_ : Any = js.native
     
-    /* private */ var lazyHash_ : js.Any = js.native
+    /* private */ var lazyHash_ : Any = js.native
     
-    /* private */ val priorityNode_ : js.Any = js.native
+    /* private */ val priorityNode_ : Any = js.native
     
     /**
       * Returns a SortedMap ordered by index, or null if the default (by-key) ordering can be used
       * instead.
       *
-      * @private
-      * @param {!Index} indexDefinition
-      * @return {?SortedMap.<NamedNode, Node>}
       */
-    /* private */ var resolveIndex_ : js.Any = js.native
+    /* private */ var resolveIndex_ : Any = js.native
   }
   /* static members */
   object ChildrenNode {
     
-    @JSImport("@firebase/database/dist/src/core/snap/ChildrenNode", "ChildrenNode")
+    @JSImport("@firebase/database/dist/node-esm/src/core/snap/ChildrenNode", "ChildrenNode")
     @js.native
     val ^ : js.Any = js.native
     
-    /**
-      * @private
-      * @type {RegExp}
-      */
-    @JSImport("@firebase/database/dist/src/core/snap/ChildrenNode", "ChildrenNode.INTEGER_REGEXP_")
+    @JSImport("@firebase/database/dist/node-esm/src/core/snap/ChildrenNode", "ChildrenNode.INTEGER_REGEXP_")
     @js.native
-    def INTEGER_REGEXP_ : js.Any = js.native
-    inline def INTEGER_REGEXP__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INTEGER_REGEXP_")(x.asInstanceOf[js.Any])
+    def INTEGER_REGEXP_ : Any = js.native
+    inline def INTEGER_REGEXP__=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INTEGER_REGEXP_")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@firebase/database/dist/src/core/snap/ChildrenNode", "MAX_NODE")
+  @JSImport("@firebase/database/dist/node-esm/src/core/snap/ChildrenNode", "MAX_NODE")
   @js.native
   val MAX_NODE: MaxNode = js.native
   
-  @JSImport("@firebase/database/dist/src/core/snap/ChildrenNode", "MaxNode")
+  @JSImport("@firebase/database/dist/node-esm/src/core/snap/ChildrenNode", "MaxNode")
   @js.native
-  class MaxNode () extends ChildrenNode
+  open class MaxNode () extends ChildrenNode
   
   @js.native
   trait ChildrenNodeConstructor
@@ -145,32 +99,32 @@ object childrenNodeMod {
     * Document NamedNode extensions
     */
   /* augmented module */
-  object firebaseDatabaseDistSrcCoreSnapNodeAugmentingMod {
+  object firebaseDatabaseDistNodeEsmSrcCoreSnapNodeAugmentingMod {
     
     trait NamedNode extends StObject {
       
-      var MAX: typings.firebaseDatabase.childrenNodeMod.firebaseDatabaseDistSrcCoreSnapNodeAugmentingMod.NamedNode
+      var MAX: typings.firebaseDatabase.childrenNodeMod.firebaseDatabaseDistNodeEsmSrcCoreSnapNodeAugmentingMod.NamedNode
       
-      var MIN: typings.firebaseDatabase.childrenNodeMod.firebaseDatabaseDistSrcCoreSnapNodeAugmentingMod.NamedNode
+      var MIN: typings.firebaseDatabase.childrenNodeMod.firebaseDatabaseDistNodeEsmSrcCoreSnapNodeAugmentingMod.NamedNode
     }
     object NamedNode {
       
       inline def apply(
-        MAX: typings.firebaseDatabase.childrenNodeMod.firebaseDatabaseDistSrcCoreSnapNodeAugmentingMod.NamedNode,
-        MIN: typings.firebaseDatabase.childrenNodeMod.firebaseDatabaseDistSrcCoreSnapNodeAugmentingMod.NamedNode
-      ): typings.firebaseDatabase.childrenNodeMod.firebaseDatabaseDistSrcCoreSnapNodeAugmentingMod.NamedNode = {
+        MAX: typings.firebaseDatabase.childrenNodeMod.firebaseDatabaseDistNodeEsmSrcCoreSnapNodeAugmentingMod.NamedNode,
+        MIN: typings.firebaseDatabase.childrenNodeMod.firebaseDatabaseDistNodeEsmSrcCoreSnapNodeAugmentingMod.NamedNode
+      ): typings.firebaseDatabase.childrenNodeMod.firebaseDatabaseDistNodeEsmSrcCoreSnapNodeAugmentingMod.NamedNode = {
         val __obj = js.Dynamic.literal(MAX = MAX.asInstanceOf[js.Any], MIN = MIN.asInstanceOf[js.Any])
-        __obj.asInstanceOf[typings.firebaseDatabase.childrenNodeMod.firebaseDatabaseDistSrcCoreSnapNodeAugmentingMod.NamedNode]
+        __obj.asInstanceOf[typings.firebaseDatabase.childrenNodeMod.firebaseDatabaseDistNodeEsmSrcCoreSnapNodeAugmentingMod.NamedNode]
       }
       
-      extension [Self <: typings.firebaseDatabase.childrenNodeMod.firebaseDatabaseDistSrcCoreSnapNodeAugmentingMod.NamedNode](x: Self) {
+      extension [Self <: typings.firebaseDatabase.childrenNodeMod.firebaseDatabaseDistNodeEsmSrcCoreSnapNodeAugmentingMod.NamedNode](x: Self) {
         
         inline def setMAX(
-          value: typings.firebaseDatabase.childrenNodeMod.firebaseDatabaseDistSrcCoreSnapNodeAugmentingMod.NamedNode
+          value: typings.firebaseDatabase.childrenNodeMod.firebaseDatabaseDistNodeEsmSrcCoreSnapNodeAugmentingMod.NamedNode
         ): Self = StObject.set(x, "MAX", value.asInstanceOf[js.Any])
         
         inline def setMIN(
-          value: typings.firebaseDatabase.childrenNodeMod.firebaseDatabaseDistSrcCoreSnapNodeAugmentingMod.NamedNode
+          value: typings.firebaseDatabase.childrenNodeMod.firebaseDatabaseDistNodeEsmSrcCoreSnapNodeAugmentingMod.NamedNode
         ): Self = StObject.set(x, "MIN", value.asInstanceOf[js.Any])
       }
     }

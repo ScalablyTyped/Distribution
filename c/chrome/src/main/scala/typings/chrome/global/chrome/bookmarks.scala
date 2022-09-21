@@ -43,15 +43,23 @@ object bookmarks {
   inline def create(bookmark: BookmarkCreateArg): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(bookmark.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def create(bookmark: BookmarkCreateArg, callback: js.Function1[/* result */ BookmarkTreeNode, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(bookmark.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  inline def create_Promise(bookmark: BookmarkCreateArg): js.Promise[BookmarkTreeNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(bookmark.asInstanceOf[js.Any]).asInstanceOf[js.Promise[BookmarkTreeNode]]
+  
+  inline def get(idList: js.Array[String]): js.Promise[js.Array[BookmarkTreeNode]] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(idList.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[BookmarkTreeNode]]]
   inline def get(idList: js.Array[String], callback: js.Function1[/* results */ js.Array[BookmarkTreeNode], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(idList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def get(id: String): js.Promise[js.Array[BookmarkTreeNode]] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[BookmarkTreeNode]]]
   inline def get(id: String, callback: js.Function1[/* results */ js.Array[BookmarkTreeNode], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  inline def getChildren(id: String): js.Promise[js.Array[BookmarkTreeNode]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getChildren")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[BookmarkTreeNode]]]
   inline def getChildren(id: String, callback: js.Function1[/* results */ js.Array[BookmarkTreeNode], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getChildren")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  inline def getRecent(numberOfItems: Double): js.Promise[js.Array[BookmarkTreeNode]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRecent")(numberOfItems.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[BookmarkTreeNode]]]
   inline def getRecent(numberOfItems: Double, callback: js.Function1[/* results */ js.Array[BookmarkTreeNode], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getRecent")(numberOfItems.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  inline def getSubTree(id: String): js.Promise[js.Array[BookmarkTreeNode]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSubTree")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[BookmarkTreeNode]]]
   inline def getSubTree(id: String, callback: js.Function1[/* results */ js.Array[BookmarkTreeNode], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getSubTree")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  inline def getTree(): js.Promise[js.Array[BookmarkTreeNode]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTree")().asInstanceOf[js.Promise[js.Array[BookmarkTreeNode]]]
   inline def getTree(callback: js.Function1[/* results */ js.Array[BookmarkTreeNode], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getTree")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def move(id: String, destination: BookmarkDestinationArg): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(id.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -60,6 +68,8 @@ object bookmarks {
     destination: BookmarkDestinationArg,
     callback: js.Function1[/* result */ BookmarkTreeNode, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(id.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def move_Promise(id: String, destination: BookmarkDestinationArg): js.Promise[BookmarkTreeNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(id.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BookmarkTreeNode]]
   
   @JSGlobal("chrome.bookmarks.onChanged")
   @js.native
@@ -102,7 +112,13 @@ object bookmarks {
   inline def removeTree(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeTree")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def removeTree(id: String, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeTree")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  inline def removeTree_Promise(id: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeTree")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  
+  inline def remove_Promise(id: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  
+  inline def search(query: String): js.Promise[js.Array[BookmarkTreeNode]] = ^.asInstanceOf[js.Dynamic].applyDynamic("search")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[BookmarkTreeNode]]]
   inline def search(query: String, callback: js.Function1[/* results */ js.Array[BookmarkTreeNode], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(query.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def search(query: BookmarkSearchQuery): js.Promise[js.Array[BookmarkTreeNode]] = ^.asInstanceOf[js.Dynamic].applyDynamic("search")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[BookmarkTreeNode]]]
   inline def search(query: BookmarkSearchQuery, callback: js.Function1[/* results */ js.Array[BookmarkTreeNode], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(query.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def update(id: String, changes: BookmarkChangesArg): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(id.asInstanceOf[js.Any], changes.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -111,4 +127,6 @@ object bookmarks {
     changes: BookmarkChangesArg,
     callback: js.Function1[/* result */ BookmarkTreeNode, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(id.asInstanceOf[js.Any], changes.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def update_Promise(id: String, changes: BookmarkChangesArg): js.Promise[BookmarkTreeNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(id.asInstanceOf[js.Any], changes.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BookmarkTreeNode]]
 }

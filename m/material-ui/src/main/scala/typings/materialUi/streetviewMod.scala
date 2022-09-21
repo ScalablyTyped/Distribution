@@ -10,10 +10,10 @@ object streetviewMod {
   
   @JSImport("material-ui/svg-icons/maps/streetview", JSImport.Default)
   @js.native
-  class default () extends MapsStreetview
+  open class default () extends MapsStreetview
   
   @JSImport("material-ui/svg-icons/maps/streetview", "MapsStreetview")
   @js.native
-  class MapsStreetview ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class MapsStreetview ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -40,6 +40,11 @@ trait ApplicationConfigurationDescription extends StObject {
     * The array of descriptions of VPC configurations available to the application.
     */
   var VpcConfigurationDescriptions: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.VpcConfigurationDescriptions] = js.undefined
+  
+  /**
+    * The configuration parameters for a Kinesis Data Analytics Studio notebook.
+    */
+  var ZeppelinApplicationConfigurationDescription: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.ZeppelinApplicationConfigurationDescription] = js.undefined
 }
 object ApplicationConfigurationDescription {
   
@@ -78,6 +83,10 @@ object ApplicationConfigurationDescription {
     
     inline def setVpcConfigurationDescriptionsUndefined: Self = StObject.set(x, "VpcConfigurationDescriptions", js.undefined)
     
-    inline def setVpcConfigurationDescriptionsVarargs(value: VpcConfigurationDescription*): Self = StObject.set(x, "VpcConfigurationDescriptions", js.Array(value :_*))
+    inline def setVpcConfigurationDescriptionsVarargs(value: VpcConfigurationDescription*): Self = StObject.set(x, "VpcConfigurationDescriptions", js.Array(value*))
+    
+    inline def setZeppelinApplicationConfigurationDescription(value: ZeppelinApplicationConfigurationDescription): Self = StObject.set(x, "ZeppelinApplicationConfigurationDescription", value.asInstanceOf[js.Any])
+    
+    inline def setZeppelinApplicationConfigurationDescriptionUndefined: Self = StObject.set(x, "ZeppelinApplicationConfigurationDescription", js.undefined)
   }
 }

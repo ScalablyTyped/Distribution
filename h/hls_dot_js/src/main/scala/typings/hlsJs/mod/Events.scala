@@ -4,492 +4,336 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Hls events
-  */
-/* static member */
-object Events {
+@js.native
+sealed trait Events extends StObject
+@JSImport("hls.js", "Events")
+@js.native
+object Events extends StObject {
   
-  @JSImport("hls.js", "Events")
+  @JSBracketAccess
+  def apply(value: String): js.UndefOr[Events & String] = js.native
+  
   @js.native
-  val ^ : js.Any = js.native
+  sealed trait AUDIO_TRACKS_UPDATED
+    extends StObject
+       with Events
+  /* "hlsAudioTracksUpdated" */ val AUDIO_TRACKS_UPDATED: typings.hlsJs.mod.Events.AUDIO_TRACKS_UPDATED & String = js.native
   
-  /**
-    * fired to notify that audio track lists has been updated
-    * data: { audioTracks : audioTracks }
-    */
-  @JSImport("hls.js", "Events.AUDIO_TRACKS_UPDATED")
   @js.native
-  def AUDIO_TRACKS_UPDATED: K_AUDIO_TRACKS_UPDATED = js.native
-  inline def AUDIO_TRACKS_UPDATED_=(x: K_AUDIO_TRACKS_UPDATED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AUDIO_TRACKS_UPDATED")(x.asInstanceOf[js.Any])
+  sealed trait AUDIO_TRACK_LOADED
+    extends StObject
+       with Events
+  /* "hlsAudioTrackLoaded" */ val AUDIO_TRACK_LOADED: typings.hlsJs.mod.Events.AUDIO_TRACK_LOADED & String = js.native
   
-  /**
-    * fired when an audio track loading finishes
-    * data: { details : levelDetails object, id : audio track id, stats : { trequest, tfirst, tload, mtime } }
-    */
-  @JSImport("hls.js", "Events.AUDIO_TRACK_LOADED")
   @js.native
-  def AUDIO_TRACK_LOADED: K_AUDIO_TRACK_LOADED = js.native
-  inline def AUDIO_TRACK_LOADED_=(x: K_AUDIO_TRACK_LOADED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AUDIO_TRACK_LOADED")(x.asInstanceOf[js.Any])
+  sealed trait AUDIO_TRACK_LOADING
+    extends StObject
+       with Events
+  /* "hlsAudioTrackLoading" */ val AUDIO_TRACK_LOADING: typings.hlsJs.mod.Events.AUDIO_TRACK_LOADING & String = js.native
   
-  /**
-    * fired when an audio track loading starts
-    * data: { url : audio track URL, id : audio track id }
-    */
-  @JSImport("hls.js", "Events.AUDIO_TRACK_LOADING")
   @js.native
-  def AUDIO_TRACK_LOADING: K_AUDIO_TRACK_LOADING = js.native
-  inline def AUDIO_TRACK_LOADING_=(x: K_AUDIO_TRACK_LOADING): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AUDIO_TRACK_LOADING")(x.asInstanceOf[js.Any])
+  sealed trait AUDIO_TRACK_SWITCHED
+    extends StObject
+       with Events
+  /* "hlsAudioTrackSwitched" */ val AUDIO_TRACK_SWITCHED: typings.hlsJs.mod.Events.AUDIO_TRACK_SWITCHED & String = js.native
   
-  /**
-    * fired when an audio track switch occurs. deprecated in favor AUDIO_TRACK_SWITCHING
-    * data: { id : audio track id }
-    */
-  @JSImport("hls.js", "Events.AUDIO_TRACK_SWITCH")
   @js.native
-  def AUDIO_TRACK_SWITCH: K_AUDIO_TRACK_SWITCH = js.native
+  sealed trait AUDIO_TRACK_SWITCHING
+    extends StObject
+       with Events
+  /* "hlsAudioTrackSwitching" */ val AUDIO_TRACK_SWITCHING: typings.hlsJs.mod.Events.AUDIO_TRACK_SWITCHING & String = js.native
   
-  /**
-    * fired when an audio track switch actually occurs
-    * data: { id : audio track id }
-    */
-  @JSImport("hls.js", "Events.AUDIO_TRACK_SWITCHED")
   @js.native
-  def AUDIO_TRACK_SWITCHED: K_AUDIO_TRACK_SWITCHED = js.native
-  inline def AUDIO_TRACK_SWITCHED_=(x: K_AUDIO_TRACK_SWITCHED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AUDIO_TRACK_SWITCHED")(x.asInstanceOf[js.Any])
+  sealed trait BACK_BUFFER_REACHED
+    extends StObject
+       with Events
+  /* "hlsBackBufferReached" */ val BACK_BUFFER_REACHED: typings.hlsJs.mod.Events.BACK_BUFFER_REACHED & String = js.native
   
-  /**
-    * fired when an audio track switching is requested
-    * data: { id : audio track id }
-    */
-  @JSImport("hls.js", "Events.AUDIO_TRACK_SWITCHING")
   @js.native
-  def AUDIO_TRACK_SWITCHING: K_AUDIO_TRACK_SWITCHING = js.native
-  inline def AUDIO_TRACK_SWITCHING_=(x: K_AUDIO_TRACK_SWITCHING): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AUDIO_TRACK_SWITCHING")(x.asInstanceOf[js.Any])
+  sealed trait BUFFER_APPENDED
+    extends StObject
+       with Events
+  /* "hlsBufferAppended" */ val BUFFER_APPENDED: typings.hlsJs.mod.Events.BUFFER_APPENDED & String = js.native
   
-  inline def AUDIO_TRACK_SWITCH_=(x: K_AUDIO_TRACK_SWITCH): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AUDIO_TRACK_SWITCH")(x.asInstanceOf[js.Any])
-  
-  /**
-    * fired when we are done with appending a media segment to the buffer
-    * data: { parent : segment parent that triggered BUFFER_APPENDING, pending : nb of segments waiting for appending for this segment parent }
-    */
-  @JSImport("hls.js", "Events.BUFFER_APPENDED")
   @js.native
-  def BUFFER_APPENDED: K_BUFFER_APPENDED = js.native
-  inline def BUFFER_APPENDED_=(x: K_BUFFER_APPENDED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BUFFER_APPENDED")(x.asInstanceOf[js.Any])
+  sealed trait BUFFER_APPENDING
+    extends StObject
+       with Events
+  /* "hlsBufferAppending" */ val BUFFER_APPENDING: typings.hlsJs.mod.Events.BUFFER_APPENDING & String = js.native
   
-  /**
-    * fired when we append a segment to the buffer
-    * data: { segment: segment object }
-    */
-  @JSImport("hls.js", "Events.BUFFER_APPENDING")
   @js.native
-  def BUFFER_APPENDING: K_BUFFER_APPENDING = js.native
-  inline def BUFFER_APPENDING_=(x: K_BUFFER_APPENDING): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BUFFER_APPENDING")(x.asInstanceOf[js.Any])
+  sealed trait BUFFER_CODECS
+    extends StObject
+       with Events
+  /* "hlsBufferCodecs" */ val BUFFER_CODECS: typings.hlsJs.mod.Events.BUFFER_CODECS & String = js.native
   
-  /**
-    * fired when we know about the codecs that we need buffers for to push into
-    * data: { tracks : { container, codec, levelCodec, initSegment, metadata } }
-    */
-  @JSImport("hls.js", "Events.BUFFER_CODECS")
   @js.native
-  def BUFFER_CODECS: K_BUFFER_CODECS = js.native
-  inline def BUFFER_CODECS_=(x: K_BUFFER_CODECS): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BUFFER_CODECS")(x.asInstanceOf[js.Any])
+  sealed trait BUFFER_CREATED
+    extends StObject
+       with Events
+  /* "hlsBufferCreated" */ val BUFFER_CREATED: typings.hlsJs.mod.Events.BUFFER_CREATED & String = js.native
   
-  /**
-    * fired when sourcebuffers have been created
-    * data: { tracks: tracks }
-    */
-  @JSImport("hls.js", "Events.BUFFER_CREATED")
   @js.native
-  def BUFFER_CREATED: K_BUFFER_CREATED = js.native
-  inline def BUFFER_CREATED_=(x: K_BUFFER_CREATED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BUFFER_CREATED")(x.asInstanceOf[js.Any])
+  sealed trait BUFFER_EOS
+    extends StObject
+       with Events
+  /* "hlsBufferEos" */ val BUFFER_EOS: typings.hlsJs.mod.Events.BUFFER_EOS & String = js.native
   
-  /**
-    * fired when the stream is finished and we want to notify the media buffer that there will be no more data
-    * data: { }
-    */
-  @JSImport("hls.js", "Events.BUFFER_EOS")
   @js.native
-  def BUFFER_EOS: K_BUFFER_EOS = js.native
-  inline def BUFFER_EOS_=(x: K_BUFFER_EOS): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BUFFER_EOS")(x.asInstanceOf[js.Any])
+  sealed trait BUFFER_FLUSHED
+    extends StObject
+       with Events
+  /* "hlsBufferFlushed" */ val BUFFER_FLUSHED: typings.hlsJs.mod.Events.BUFFER_FLUSHED & String = js.native
   
-  /**
-    * fired when the media buffer has been flushed
-    * data: { }
-    */
-  @JSImport("hls.js", "Events.BUFFER_FLUSHED")
   @js.native
-  def BUFFER_FLUSHED: K_BUFFER_FLUSHED = js.native
-  inline def BUFFER_FLUSHED_=(x: K_BUFFER_FLUSHED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BUFFER_FLUSHED")(x.asInstanceOf[js.Any])
+  sealed trait BUFFER_FLUSHING
+    extends StObject
+       with Events
+  /* "hlsBufferFlushing" */ val BUFFER_FLUSHING: typings.hlsJs.mod.Events.BUFFER_FLUSHING & String = js.native
   
-  /**
-    * fired when the media buffer should be flushed
-    * data: { }
-    */
-  @JSImport("hls.js", "Events.BUFFER_FLUSHING")
   @js.native
-  def BUFFER_FLUSHING: K_BUFFER_FLUSHING = js.native
-  inline def BUFFER_FLUSHING_=(x: K_BUFFER_FLUSHING): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BUFFER_FLUSHING")(x.asInstanceOf[js.Any])
+  sealed trait BUFFER_RESET
+    extends StObject
+       with Events
+  /* "hlsBufferReset" */ val BUFFER_RESET: typings.hlsJs.mod.Events.BUFFER_RESET & String = js.native
   
-  /**
-    * fired when the buffer is going to be reset
-    * data: { }
-    */
-  @JSImport("hls.js", "Events.BUFFER_RESET")
   @js.native
-  def BUFFER_RESET: K_BUFFER_RESET = js.native
-  inline def BUFFER_RESET_=(x: K_BUFFER_RESET): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BUFFER_RESET")(x.asInstanceOf[js.Any])
+  sealed trait CUES_PARSED
+    extends StObject
+       with Events
+  /* "hlsCuesParsed" */ val CUES_PARSED: typings.hlsJs.mod.Events.CUES_PARSED & String = js.native
   
-  /**
-    * fired when hls.js instance starts destroying. Different from MEDIA_DETACHED as one could want to detach and reattach a video to the instance of hls.js to handle mid-rolls for example.
-    * data: { }
-    */
-  @JSImport("hls.js", "Events.DESTROYING")
   @js.native
-  def DESTROYING: K_DESTROYING = js.native
-  inline def DESTROYING_=(x: K_DESTROYING): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DESTROYING")(x.asInstanceOf[js.Any])
+  sealed trait DESTROYING
+    extends StObject
+       with Events
+  /* "hlsDestroying" */ val DESTROYING: typings.hlsJs.mod.Events.DESTROYING & String = js.native
   
-  /**
-    *  Identifier for an error event
-    * data: { type : error type, details : error details, fatal : is error fatal or not, other error specific data }
-    */
-  @JSImport("hls.js", "Events.ERROR")
   @js.native
-  def ERROR: K_ERROR = js.native
-  inline def ERROR_=(x: K_ERROR): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERROR")(x.asInstanceOf[js.Any])
+  sealed trait ERROR
+    extends StObject
+       with Events
+  /* "hlsError" */ val ERROR: typings.hlsJs.mod.Events.ERROR & String = js.native
   
-  /**
-    * triggered when FPS drop in last monitoring period is higher than given threshold
-    * data: { curentDropped : nb of dropped frames in last monitoring period,
-    *         currentDecoded : nb of decoded frames in last monitoring period,
-    *         totalDropped : total dropped frames on this video element }
-    */
-  @JSImport("hls.js", "Events.FPS_DROP")
   @js.native
-  def FPS_DROP: K_FPS_DROP = js.native
-  inline def FPS_DROP_=(x: K_FPS_DROP): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FPS_DROP")(x.asInstanceOf[js.Any])
+  sealed trait FPS_DROP
+    extends StObject
+       with Events
+  /* "hlsFpsDrop" */ val FPS_DROP: typings.hlsJs.mod.Events.FPS_DROP & String = js.native
   
-  /**
-    * triggered when FPS drop triggers auto level capping
-    * data: { level: suggested new auto level capping by fps controller, droppedLevel : level has to much dropped frame will be restricted }
-    */
-  @JSImport("hls.js", "Events.FPS_DROP_LEVEL_CAPPING")
   @js.native
-  def FPS_DROP_LEVEL_CAPPING: K_FPS_DROP_LEVEL_CAPPING = js.native
-  inline def FPS_DROP_LEVEL_CAPPING_=(x: K_FPS_DROP_LEVEL_CAPPING): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FPS_DROP_LEVEL_CAPPING")(x.asInstanceOf[js.Any])
+  sealed trait FPS_DROP_LEVEL_CAPPING
+    extends StObject
+       with Events
+  /* "hlsFpsDropLevelCapping" */ val FPS_DROP_LEVEL_CAPPING: typings.hlsJs.mod.Events.FPS_DROP_LEVEL_CAPPING & String = js.native
   
-  /**
-    * fired when fragment remuxed MP4 boxes have all been appended into SourceBuffer
-    * data: { id: demuxer id, frag : fragment object, stats : { trequest, tfirst, tload, tparsed, tbuffered, length} }
-    */
-  @JSImport("hls.js", "Events.FRAG_BUFFERED")
   @js.native
-  def FRAG_BUFFERED: K_FRAG_BUFFERED = js.native
-  inline def FRAG_BUFFERED_=(x: K_FRAG_BUFFERED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FRAG_BUFFERED")(x.asInstanceOf[js.Any])
+  sealed trait FRAG_BUFFERED
+    extends StObject
+       with Events
+  /* "hlsFragBuffered" */ val FRAG_BUFFERED: typings.hlsJs.mod.Events.FRAG_BUFFERED & String = js.native
   
-  /**
-    * fired when fragment matching with current video position is changing
-    * data: { frag : fragment object }
-    */
-  @JSImport("hls.js", "Events.FRAG_CHANGED")
   @js.native
-  def FRAG_CHANGED: K_FRAG_CHANGED = js.native
-  inline def FRAG_CHANGED_=(x: K_FRAG_CHANGED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FRAG_CHANGED")(x.asInstanceOf[js.Any])
+  sealed trait FRAG_CHANGED
+    extends StObject
+       with Events
+  /* "hlsFragChanged" */ val FRAG_CHANGED: typings.hlsJs.mod.Events.FRAG_CHANGED & String = js.native
   
-  /**
-    * fired when a fragment decryption is completed
-    * data: { id: demuxer id, frag: fragment object, stats: { tstart, tdecrypt } }
-    */
-  @JSImport("hls.js", "Events.FRAG_DECRYPTED")
   @js.native
-  def FRAG_DECRYPTED: K_FRAG_DECRYPTED = js.native
-  inline def FRAG_DECRYPTED_=(x: K_FRAG_DECRYPTED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FRAG_DECRYPTED")(x.asInstanceOf[js.Any])
+  sealed trait FRAG_DECRYPTED
+    extends StObject
+       with Events
+  /* "hlsFragDecrypted" */ val FRAG_DECRYPTED: typings.hlsJs.mod.Events.FRAG_DECRYPTED & String = js.native
   
-  /**
-    * fired when a fragment loading is completed
-    * data: { frag : fragment object, payload : fragment payload, stats : { trequest, tfirst, tload, length}}
-    */
-  @JSImport("hls.js", "Events.FRAG_LOADED")
   @js.native
-  def FRAG_LOADED: K_FRAG_LOADED = js.native
-  inline def FRAG_LOADED_=(x: K_FRAG_LOADED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FRAG_LOADED")(x.asInstanceOf[js.Any])
+  sealed trait FRAG_LOADED
+    extends StObject
+       with Events
+  /* "hlsFragLoaded" */ val FRAG_LOADED: typings.hlsJs.mod.Events.FRAG_LOADED & String = js.native
   
-  /**
-    * fired when a fragment loading starts
-    * data: { frag : fragment object }
-    */
-  @JSImport("hls.js", "Events.FRAG_LOADING")
   @js.native
-  def FRAG_LOADING: K_FRAG_LOADING = js.native
-  inline def FRAG_LOADING_=(x: K_FRAG_LOADING): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FRAG_LOADING")(x.asInstanceOf[js.Any])
+  sealed trait FRAG_LOADING
+    extends StObject
+       with Events
+  /* "hlsFragLoading" */ val FRAG_LOADING: typings.hlsJs.mod.Events.FRAG_LOADING & String = js.native
   
-  /**
-    * identifier for fragment load aborting for emergency switch down
-    * data: { frag: fragment object }
-    */
-  @JSImport("hls.js", "Events.FRAG_LOAD_EMERGENCY_ABORTED")
   @js.native
-  def FRAG_LOAD_EMERGENCY_ABORTED: K_FRAG_LOAD_EMERGENCY_ABORTED = js.native
-  inline def FRAG_LOAD_EMERGENCY_ABORTED_=(x: K_FRAG_LOAD_EMERGENCY_ABORTED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FRAG_LOAD_EMERGENCY_ABORTED")(x.asInstanceOf[js.Any])
+  sealed trait FRAG_LOAD_EMERGENCY_ABORTED
+    extends StObject
+       with Events
+  /* "hlsFragLoadEmergencyAborted" */ val FRAG_LOAD_EMERGENCY_ABORTED: typings.hlsJs.mod.Events.FRAG_LOAD_EMERGENCY_ABORTED & String = js.native
   
-  /**
-    * fired when a fragment load is in progress
-    * data: { frag : fragment object with frag.loaded=stats.loaded, stats : { trequest, tfirst, loaded, total } }
-    */
-  @JSImport("hls.js", "Events.FRAG_LOAD_PROGRESS")
   @js.native
-  def FRAG_LOAD_PROGRESS: K_FRAG_LOAD_PROGRESS = js.native
-  inline def FRAG_LOAD_PROGRESS_=(x: K_FRAG_LOAD_PROGRESS): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FRAG_LOAD_PROGRESS")(x.asInstanceOf[js.Any])
+  sealed trait FRAG_PARSED
+    extends StObject
+       with Events
+  /* "hlsFragParsed" */ val FRAG_PARSED: typings.hlsJs.mod.Events.FRAG_PARSED & String = js.native
   
-  /**
-    * fired when fragment parsing is completed
-    * data: { id: demuxer id}
-    */
-  @JSImport("hls.js", "Events.FRAG_PARSED")
   @js.native
-  def FRAG_PARSED: K_FRAG_PARSED = js.native
-  inline def FRAG_PARSED_=(x: K_FRAG_PARSED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FRAG_PARSED")(x.asInstanceOf[js.Any])
+  sealed trait FRAG_PARSING_INIT_SEGMENT
+    extends StObject
+       with Events
+  /* "hlsFragParsingInitSegment" */ val FRAG_PARSING_INIT_SEGMENT: typings.hlsJs.mod.Events.FRAG_PARSING_INIT_SEGMENT & String = js.native
   
-  /**
-    * fired when moof/mdat have been extracted from fragment
-    * data: { id: demuxer id,
-    *        moof : moof MP4 box,
-    *        mdat : mdat MP4 box,
-    *        startPTS : PTS of first sample,
-    *        endPTS : PTS of last sample,
-    *        startDTS : DTS of first sample,
-    *        endDTS : DTS of last sample,
-    *        type : stream type (audio or video),
-    *        nb : number of samples}
-    */
-  @JSImport("hls.js", "Events.FRAG_PARSING_DATA")
   @js.native
-  def FRAG_PARSING_DATA: K_FRAG_PARSING_DATA = js.native
-  inline def FRAG_PARSING_DATA_=(x: K_FRAG_PARSING_DATA): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FRAG_PARSING_DATA")(x.asInstanceOf[js.Any])
+  sealed trait FRAG_PARSING_METADATA
+    extends StObject
+       with Events
+  /* "hlsFragParsingMetadata" */ val FRAG_PARSING_METADATA: typings.hlsJs.mod.Events.FRAG_PARSING_METADATA & String = js.native
   
-  /**
-    * fired when Init Segment has been extracted from fragment
-    * data: { id: demuxer id, moov : moov MP4 box, codecs : codecs found while parsing fragment}
-    */
-  @JSImport("hls.js", "Events.FRAG_PARSING_INIT_SEGMENT")
   @js.native
-  def FRAG_PARSING_INIT_SEGMENT: K_FRAG_PARSING_INIT_SEGMENT = js.native
-  inline def FRAG_PARSING_INIT_SEGMENT_=(x: K_FRAG_PARSING_INIT_SEGMENT): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FRAG_PARSING_INIT_SEGMENT")(x.asInstanceOf[js.Any])
+  sealed trait FRAG_PARSING_USERDATA
+    extends StObject
+       with Events
+  /* "hlsFragParsingUserdata" */ val FRAG_PARSING_USERDATA: typings.hlsJs.mod.Events.FRAG_PARSING_USERDATA & String = js.native
   
-  /**
-    * fired when parsing id3 is completed
-    * data: { id: demuxer id, samples : [ id3 pes - pts and dts timestamp are relative, values are in seconds]}
-    */
-  @JSImport("hls.js", "Events.FRAG_PARSING_METADATA")
   @js.native
-  def FRAG_PARSING_METADATA: K_FRAG_PARSING_METADATA = js.native
-  inline def FRAG_PARSING_METADATA_=(x: K_FRAG_PARSING_METADATA): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FRAG_PARSING_METADATA")(x.asInstanceOf[js.Any])
+  sealed trait INIT_PTS_FOUND
+    extends StObject
+       with Events
+  /* "hlsInitPtsFound" */ val INIT_PTS_FOUND: typings.hlsJs.mod.Events.INIT_PTS_FOUND & String = js.native
   
-  /**
-    * fired when parsing sei text is completed
-    * data: { id : demuxer id, frag: fragment object, samples : [ sei samples pes ] }
-    */
-  @JSImport("hls.js", "Events.FRAG_PARSING_USERDATA")
   @js.native
-  def FRAG_PARSING_USERDATA: K_FRAG_PARSING_USERDATA = js.native
-  inline def FRAG_PARSING_USERDATA_=(x: K_FRAG_PARSING_USERDATA): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FRAG_PARSING_USERDATA")(x.asInstanceOf[js.Any])
+  sealed trait KEY_LOADED
+    extends StObject
+       with Events
+  /* "hlsKeyLoaded" */ val KEY_LOADED: typings.hlsJs.mod.Events.KEY_LOADED & String = js.native
   
-  /**
-    * fired when first timestamp has been found
-    * data: { id: demuxer id, frag: fragment object, initPTS: initPTS }
-    */
-  @JSImport("hls.js", "Events.INIT_PTS_FOUND")
   @js.native
-  def INIT_PTS_FOUND: K_INIT_PTS_FOUND = js.native
-  inline def INIT_PTS_FOUND_=(x: K_INIT_PTS_FOUND): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INIT_PTS_FOUND")(x.asInstanceOf[js.Any])
+  sealed trait KEY_LOADING
+    extends StObject
+       with Events
+  /* "hlsKeyLoading" */ val KEY_LOADING: typings.hlsJs.mod.Events.KEY_LOADING & String = js.native
   
-  /**
-    * fired when a decryption key loading is completed
-    * data: { frag: fragment object }
-    */
-  @JSImport("hls.js", "Events.KEY_LOADED")
   @js.native
-  def KEY_LOADED: K_KEY_LOADED = js.native
-  inline def KEY_LOADED_=(x: K_KEY_LOADED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KEY_LOADED")(x.asInstanceOf[js.Any])
+  sealed trait LEVELS_UPDATED
+    extends StObject
+       with Events
+  /* "hlsLevelsUpdated" */ val LEVELS_UPDATED: typings.hlsJs.mod.Events.LEVELS_UPDATED & String = js.native
   
-  /**
-    * fired when a decryption key loading starts
-    * data: { frag: fragment object }
-    */
-  @JSImport("hls.js", "Events.KEY_LOADING")
   @js.native
-  def KEY_LOADING: K_KEY_LOADING = js.native
-  inline def KEY_LOADING_=(x: K_KEY_LOADING): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KEY_LOADING")(x.asInstanceOf[js.Any])
+  sealed trait LEVEL_LOADED
+    extends StObject
+       with Events
+  /* "hlsLevelLoaded" */ val LEVEL_LOADED: typings.hlsJs.mod.Events.LEVEL_LOADED & String = js.native
   
-  /**
-    * fired when a level playlist loading finishes
-    * data: { details : levelDetails object, levelId : id of loaded level, stats : { trequest, tfirst, tload, mtime } }
-    */
-  @JSImport("hls.js", "Events.LEVEL_LOADED")
   @js.native
-  def LEVEL_LOADED: K_LEVEL_LOADED = js.native
-  inline def LEVEL_LOADED_=(x: K_LEVEL_LOADED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEVEL_LOADED")(x.asInstanceOf[js.Any])
+  sealed trait LEVEL_LOADING
+    extends StObject
+       with Events
+  /* "hlsLevelLoading" */ val LEVEL_LOADING: typings.hlsJs.mod.Events.LEVEL_LOADING & String = js.native
   
-  /**
-    * fired when a level playlist loading starts
-    * data: { url : level URL, level : id of level being loaded }
-    */
-  @JSImport("hls.js", "Events.LEVEL_LOADING")
   @js.native
-  def LEVEL_LOADING: K_LEVEL_LOADING = js.native
-  inline def LEVEL_LOADING_=(x: K_LEVEL_LOADING): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEVEL_LOADING")(x.asInstanceOf[js.Any])
+  sealed trait LEVEL_PTS_UPDATED
+    extends StObject
+       with Events
+  /* "hlsLevelPtsUpdated" */ val LEVEL_PTS_UPDATED: typings.hlsJs.mod.Events.LEVEL_PTS_UPDATED & String = js.native
   
-  /**
-    * fired when a level's PTS information has been updated after parsing a fragment
-    * data: { details: levelDetails object, level : id of updated level, drift: PTS drift observed when parsing last fragment }
-    */
-  @JSImport("hls.js", "Events.LEVEL_PTS_UPDATED")
   @js.native
-  def LEVEL_PTS_UPDATED: K_LEVEL_PTS_UPDATED = js.native
-  inline def LEVEL_PTS_UPDATED_=(x: K_LEVEL_PTS_UPDATED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEVEL_PTS_UPDATED")(x.asInstanceOf[js.Any])
+  sealed trait LEVEL_SWITCHED
+    extends StObject
+       with Events
+  /* "hlsLevelSwitched" */ val LEVEL_SWITCHED: typings.hlsJs.mod.Events.LEVEL_SWITCHED & String = js.native
   
-  /**
-    * fired when a level switch is effective
-    * data: { level: level object }
-    */
-  @JSImport("hls.js", "Events.LEVEL_SWITCHED")
   @js.native
-  def LEVEL_SWITCHED: K_LEVEL_SWITCHED = js.native
-  inline def LEVEL_SWITCHED_=(x: K_LEVEL_SWITCHED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEVEL_SWITCHED")(x.asInstanceOf[js.Any])
+  sealed trait LEVEL_SWITCHING
+    extends StObject
+       with Events
+  /* "hlsLevelSwitching" */ val LEVEL_SWITCHING: typings.hlsJs.mod.Events.LEVEL_SWITCHING & String = js.native
   
-  /**
-    * fired when a level switch is requested
-    * data: { level: Level }
-    */
-  @JSImport("hls.js", "Events.LEVEL_SWITCHING")
   @js.native
-  def LEVEL_SWITCHING: K_LEVEL_SWITCHING = js.native
-  inline def LEVEL_SWITCHING_=(x: K_LEVEL_SWITCHING): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEVEL_SWITCHING")(x.asInstanceOf[js.Any])
+  sealed trait LEVEL_UPDATED
+    extends StObject
+       with Events
+  /* "hlsLevelUpdated" */ val LEVEL_UPDATED: typings.hlsJs.mod.Events.LEVEL_UPDATED & String = js.native
   
-  /**
-    * fired when a level's details have been updated based on previous details, after it has been loaded
-    * data: { details : levelDetails object, level : id of updated level }
-    */
-  @JSImport("hls.js", "Events.LEVEL_UPDATED")
   @js.native
-  def LEVEL_UPDATED: K_LEVEL_UPDATED = js.native
-  inline def LEVEL_UPDATED_=(x: K_LEVEL_UPDATED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEVEL_UPDATED")(x.asInstanceOf[js.Any])
+  sealed trait LIVE_BACK_BUFFER_REACHED
+    extends StObject
+       with Events
+  /* "hlsLiveBackBufferReached" */ val LIVE_BACK_BUFFER_REACHED: typings.hlsJs.mod.Events.LIVE_BACK_BUFFER_REACHED & String = js.native
   
-  /**
-    * fired after manifest has been loaded
-    * data: { levels : [available quality levels] , audioTracks : [ available audio tracks], url : manifestURL, stats : { trequest, tfirst, tload, mtime}}
-    */
-  @JSImport("hls.js", "Events.MANIFEST_LOADED")
   @js.native
-  def MANIFEST_LOADED: K_MANIFEST_LOADED = js.native
-  inline def MANIFEST_LOADED_=(x: K_MANIFEST_LOADED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MANIFEST_LOADED")(x.asInstanceOf[js.Any])
+  sealed trait MANIFEST_LOADED
+    extends StObject
+       with Events
+  /* "hlsManifestLoaded" */ val MANIFEST_LOADED: typings.hlsJs.mod.Events.MANIFEST_LOADED & String = js.native
   
-  /**
-    * fired to signal that a manifest loading starts
-    * data: { url : manifestURL }
-    */
-  @JSImport("hls.js", "Events.MANIFEST_LOADING")
   @js.native
-  def MANIFEST_LOADING: K_MANIFEST_LOADING = js.native
-  inline def MANIFEST_LOADING_=(x: K_MANIFEST_LOADING): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MANIFEST_LOADING")(x.asInstanceOf[js.Any])
+  sealed trait MANIFEST_LOADING
+    extends StObject
+       with Events
+  /* "hlsManifestLoading" */ val MANIFEST_LOADING: typings.hlsJs.mod.Events.MANIFEST_LOADING & String = js.native
   
-  /**
-    * fired after manifest has been parsed
-    * data: { levels : [ available quality levels ], firstLevel : index of first quality level appearing in Manifest }
-    */
-  @JSImport("hls.js", "Events.MANIFEST_PARSED")
   @js.native
-  def MANIFEST_PARSED: K_MANIFEST_PARSED = js.native
-  inline def MANIFEST_PARSED_=(x: K_MANIFEST_PARSED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MANIFEST_PARSED")(x.asInstanceOf[js.Any])
+  sealed trait MANIFEST_PARSED
+    extends StObject
+       with Events
+  /* "hlsManifestParsed" */ val MANIFEST_PARSED: typings.hlsJs.mod.Events.MANIFEST_PARSED & String = js.native
   
-  /**
-    * fired when Media has been succesfully attached to hls instance
-    * data: { video , mediaSource }
-    */
-  @JSImport("hls.js", "Events.MEDIA_ATTACHED")
   @js.native
-  def MEDIA_ATTACHED: K_MEDIA_ATTACHED = js.native
-  inline def MEDIA_ATTACHED_=(x: K_MEDIA_ATTACHED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MEDIA_ATTACHED")(x.asInstanceOf[js.Any])
+  sealed trait MEDIA_ATTACHED
+    extends StObject
+       with Events
+  /* "hlsMediaAttached" */ val MEDIA_ATTACHED: typings.hlsJs.mod.Events.MEDIA_ATTACHED & String = js.native
   
-  /**
-    * fired to attach Media to hls instance
-    * data: { video , mediaSource }
-    */
-  @JSImport("hls.js", "Events.MEDIA_ATTACHING")
   @js.native
-  def MEDIA_ATTACHING: K_MEDIA_ATTACHING = js.native
-  inline def MEDIA_ATTACHING_=(x: K_MEDIA_ATTACHING): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MEDIA_ATTACHING")(x.asInstanceOf[js.Any])
+  sealed trait MEDIA_ATTACHING
+    extends StObject
+       with Events
+  /* "hlsMediaAttaching" */ val MEDIA_ATTACHING: typings.hlsJs.mod.Events.MEDIA_ATTACHING & String = js.native
   
-  /**
-    * fired when Media has been detached from hls instance
-    * data: { }
-    */
-  @JSImport("hls.js", "Events.MEDIA_DETACHED")
   @js.native
-  def MEDIA_DETACHED: K_MEDIA_DETACHED = js.native
-  inline def MEDIA_DETACHED_=(x: K_MEDIA_DETACHED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MEDIA_DETACHED")(x.asInstanceOf[js.Any])
+  sealed trait MEDIA_DETACHED
+    extends StObject
+       with Events
+  /* "hlsMediaDetached" */ val MEDIA_DETACHED: typings.hlsJs.mod.Events.MEDIA_DETACHED & String = js.native
   
-  /**
-    * fired before detaching Media from hls instance
-    * data: { }
-    */
-  @JSImport("hls.js", "Events.MEDIA_DETACHING")
   @js.native
-  def MEDIA_DETACHING: K_MEDIA_DETACHING = js.native
-  inline def MEDIA_DETACHING_=(x: K_MEDIA_DETACHING): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MEDIA_DETACHING")(x.asInstanceOf[js.Any])
+  sealed trait MEDIA_DETACHING
+    extends StObject
+       with Events
+  /* "hlsMediaDetaching" */ val MEDIA_DETACHING: typings.hlsJs.mod.Events.MEDIA_DETACHING & String = js.native
   
-  /**
-    * fired upon stream controller state transitions
-    * data: { previousState, nextState }
-    */
-  @JSImport("hls.js", "Events.STREAM_STATE_TRANSITION")
   @js.native
-  def STREAM_STATE_TRANSITION: K_STREAM_STATE_TRANSITION = js.native
-  inline def STREAM_STATE_TRANSITION_=(x: K_STREAM_STATE_TRANSITION): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STREAM_STATE_TRANSITION")(x.asInstanceOf[js.Any])
+  sealed trait NON_NATIVE_TEXT_TRACKS_FOUND
+    extends StObject
+       with Events
+  /* "hlsNonNativeTextTracksFound" */ val NON_NATIVE_TEXT_TRACKS_FOUND: typings.hlsJs.mod.Events.NON_NATIVE_TEXT_TRACKS_FOUND & String = js.native
   
-  /**
-    * fired when a subtitle fragment has been processed
-    * data: { success : boolean, frag : the processed frag }
-    */
-  @JSImport("hls.js", "Events.SUBTITLE_FRAG_PROCESSED")
   @js.native
-  def SUBTITLE_FRAG_PROCESSED: K_SUBTITLE_FRAG_PROCESSED = js.native
-  inline def SUBTITLE_FRAG_PROCESSED_=(x: K_SUBTITLE_FRAG_PROCESSED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUBTITLE_FRAG_PROCESSED")(x.asInstanceOf[js.Any])
+  sealed trait SUBTITLE_FRAG_PROCESSED
+    extends StObject
+       with Events
+  /* "hlsSubtitleFragProcessed" */ val SUBTITLE_FRAG_PROCESSED: typings.hlsJs.mod.Events.SUBTITLE_FRAG_PROCESSED & String = js.native
   
-  /**
-    * fired to notify that subtitle track lists has been updated
-    * data: { subtitleTracks : subtitleTracks }
-    */
-  @JSImport("hls.js", "Events.SUBTITLE_TRACKS_UPDATED")
   @js.native
-  def SUBTITLE_TRACKS_UPDATED: K_SUBTITLE_TRACKS_UPDATED = js.native
-  inline def SUBTITLE_TRACKS_UPDATED_=(x: K_SUBTITLE_TRACKS_UPDATED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUBTITLE_TRACKS_UPDATED")(x.asInstanceOf[js.Any])
+  sealed trait SUBTITLE_TRACKS_CLEARED
+    extends StObject
+       with Events
+  /* "hlsSubtitleTracksCleared" */ val SUBTITLE_TRACKS_CLEARED: typings.hlsJs.mod.Events.SUBTITLE_TRACKS_CLEARED & String = js.native
   
-  /**
-    * fired when a subtitle track loading finishes
-    * data: { details : levelDetails object, id : subtitle track id, stats : { trequest, tfirst, tload, mtime } }
-    */
-  @JSImport("hls.js", "Events.SUBTITLE_TRACK_LOADED")
   @js.native
-  def SUBTITLE_TRACK_LOADED: K_SUBTITLE_TRACK_LOADED = js.native
-  inline def SUBTITLE_TRACK_LOADED_=(x: K_SUBTITLE_TRACK_LOADED): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUBTITLE_TRACK_LOADED")(x.asInstanceOf[js.Any])
+  sealed trait SUBTITLE_TRACKS_UPDATED
+    extends StObject
+       with Events
+  /* "hlsSubtitleTracksUpdated" */ val SUBTITLE_TRACKS_UPDATED: typings.hlsJs.mod.Events.SUBTITLE_TRACKS_UPDATED & String = js.native
   
-  /**
-    * fired when a subtitle track loading starts
-    * data: { url : subtitle track URL, id : subtitle track id }
-    */
-  @JSImport("hls.js", "Events.SUBTITLE_TRACK_LOADING")
   @js.native
-  def SUBTITLE_TRACK_LOADING: K_SUBTITLE_TRACK_LOADING = js.native
-  inline def SUBTITLE_TRACK_LOADING_=(x: K_SUBTITLE_TRACK_LOADING): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUBTITLE_TRACK_LOADING")(x.asInstanceOf[js.Any])
+  sealed trait SUBTITLE_TRACK_LOADED
+    extends StObject
+       with Events
+  /* "hlsSubtitleTrackLoaded" */ val SUBTITLE_TRACK_LOADED: typings.hlsJs.mod.Events.SUBTITLE_TRACK_LOADED & String = js.native
   
-  /**
-    * fired when an subtitle track switch occurs
-    * data: { id : subtitle track id }
-    */
-  @JSImport("hls.js", "Events.SUBTITLE_TRACK_SWITCH")
   @js.native
-  def SUBTITLE_TRACK_SWITCH: K_SUBTITLE_TRACK_SWITCH = js.native
-  inline def SUBTITLE_TRACK_SWITCH_=(x: K_SUBTITLE_TRACK_SWITCH): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUBTITLE_TRACK_SWITCH")(x.asInstanceOf[js.Any])
+  sealed trait SUBTITLE_TRACK_LOADING
+    extends StObject
+       with Events
+  /* "hlsSubtitleTrackLoading" */ val SUBTITLE_TRACK_LOADING: typings.hlsJs.mod.Events.SUBTITLE_TRACK_LOADING & String = js.native
+  
+  @js.native
+  sealed trait SUBTITLE_TRACK_SWITCH
+    extends StObject
+       with Events
+  /* "hlsSubtitleTrackSwitch" */ val SUBTITLE_TRACK_SWITCH: typings.hlsJs.mod.Events.SUBTITLE_TRACK_SWITCH & String = js.native
 }

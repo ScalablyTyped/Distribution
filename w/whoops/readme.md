@@ -10,10 +10,10 @@ It makes simple throw qualified errors.
 | ------------------ | :-------------: |
 | Full name          | whoops |
 | Keywords           | constructor, custom, error, simple, throw |
-| # releases         | 3 |
-| # dependents       | 9 |
-| # downloads        | 987606 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 127523.66666666667 |
+| # stars            | 29.0 |
 
 ## Links
 - [Homepage](https://github.com/Kikobeats/whoops)

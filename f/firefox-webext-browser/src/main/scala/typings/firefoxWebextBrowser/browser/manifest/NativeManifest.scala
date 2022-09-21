@@ -27,7 +27,7 @@ object NativeManifest {
     __obj.asInstanceOf[typings.firefoxWebextBrowser.anon.Allowedextensions]
   }
   
-  inline def Data(data: StringDictionary[js.Any], description: String, name: ExtensionID): typings.firefoxWebextBrowser.anon.Data = {
+  inline def Data(data: StringDictionary[Any], description: String, name: ExtensionID): typings.firefoxWebextBrowser.anon.Data = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("storage")
     __obj.asInstanceOf[typings.firefoxWebextBrowser.anon.Data]

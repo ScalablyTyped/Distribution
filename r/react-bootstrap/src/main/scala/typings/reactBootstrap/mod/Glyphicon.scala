@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap", "Glyphicon")
 @js.native
-class Glyphicon ()
+open class Glyphicon ()
   extends typings.reactBootstrap.libMod.Glyphicon

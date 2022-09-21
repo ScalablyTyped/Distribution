@@ -1,6 +1,6 @@
 package typings.googleapis.anon
 
-import typings.googleapis.bloggerV3Mod.bloggerV3.SchemaPost
+import typings.googleapis.bloggerV2Mod.bloggerV2.SchemaPost
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,7 @@ object Items {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: SchemaPost*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: SchemaPost*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     

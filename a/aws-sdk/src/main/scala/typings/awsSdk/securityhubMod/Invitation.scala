@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Invitation extends StObject {
   
   /**
-    * The account ID of the Security Hub master account that the invitation was sent from.
+    * The account ID of the Security Hub administrator account that the invitation was sent from.
     */
   var AccountId: js.UndefOr[typings.awsSdk.securityhubMod.AccountId] = js.undefined
   
@@ -19,10 +19,10 @@ trait Invitation extends StObject {
   /**
     * The timestamp of when the invitation was sent.
     */
-  var InvitedAt: js.UndefOr[Timestamp] = js.undefined
+  var InvitedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The current status of the association between the member and master accounts.
+    * The current status of the association between the member and administrator accounts.
     */
   var MemberStatus: js.UndefOr[NonEmptyString] = js.undefined
 }
@@ -43,7 +43,7 @@ object Invitation {
     
     inline def setInvitationIdUndefined: Self = StObject.set(x, "InvitationId", js.undefined)
     
-    inline def setInvitedAt(value: Timestamp): Self = StObject.set(x, "InvitedAt", value.asInstanceOf[js.Any])
+    inline def setInvitedAt(value: js.Date): Self = StObject.set(x, "InvitedAt", value.asInstanceOf[js.Any])
     
     inline def setInvitedAtUndefined: Self = StObject.set(x, "InvitedAt", js.undefined)
     

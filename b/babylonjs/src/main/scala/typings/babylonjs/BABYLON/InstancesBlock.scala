@@ -10,7 +10,7 @@ trait InstancesBlock
      with NodeMaterialBlock {
   
   /**
-    * Gets the isntanceID component
+    * Gets the instanceID component
     */
   def instanceID: NodeMaterialConnectionPoint = js.native
   

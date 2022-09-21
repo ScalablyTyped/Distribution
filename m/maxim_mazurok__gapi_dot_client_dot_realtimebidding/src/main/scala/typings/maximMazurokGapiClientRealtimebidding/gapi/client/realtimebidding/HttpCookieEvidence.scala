@@ -31,7 +31,7 @@ object HttpCookieEvidence {
     
     inline def setCookieNamesUndefined: Self = StObject.set(x, "cookieNames", js.undefined)
     
-    inline def setCookieNamesVarargs(value: String*): Self = StObject.set(x, "cookieNames", js.Array(value :_*))
+    inline def setCookieNamesVarargs(value: String*): Self = StObject.set(x, "cookieNames", js.Array(value*))
     
     inline def setMaxCookieCount(value: Double): Self = StObject.set(x, "maxCookieCount", value.asInstanceOf[js.Any])
     

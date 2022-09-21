@@ -11,9 +11,9 @@ This package contains falcor components for use in browsers.
 | Full name          | falcor-http-datasource |
 | Keywords           | Falcor, Browser |
 | # releases         | 1 |
-| # dependents       | 11 |
-| # downloads        | 29819 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3198.0 |
+| # stars            | 55.0 |
 
 ## Links
 - [Homepage](https://github.com/Netflix/falcor-http-datasource)

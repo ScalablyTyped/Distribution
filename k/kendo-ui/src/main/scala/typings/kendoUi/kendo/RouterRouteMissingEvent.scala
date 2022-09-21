@@ -8,13 +8,13 @@ trait RouterRouteMissingEvent
   extends StObject
      with RouterEvent {
   
-  var params: js.Any
+  var params: Any
 }
 object RouterRouteMissingEvent {
   
   inline def apply(
     isDefaultPrevented: () => Boolean,
-    params: js.Any,
+    params: Any,
     preventDefault: js.Function,
     sender: Router,
     url: String
@@ -25,6 +25,6 @@ object RouterRouteMissingEvent {
   
   extension [Self <: RouterRouteMissingEvent](x: Self) {
     
-    inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
   }
 }

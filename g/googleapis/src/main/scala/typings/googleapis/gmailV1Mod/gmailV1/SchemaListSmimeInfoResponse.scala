@@ -24,6 +24,6 @@ object SchemaListSmimeInfoResponse {
     
     inline def setSmimeInfoUndefined: Self = StObject.set(x, "smimeInfo", js.undefined)
     
-    inline def setSmimeInfoVarargs(value: SchemaSmimeInfo*): Self = StObject.set(x, "smimeInfo", js.Array(value :_*))
+    inline def setSmimeInfoVarargs(value: SchemaSmimeInfo*): Self = StObject.set(x, "smimeInfo", js.Array(value*))
   }
 }

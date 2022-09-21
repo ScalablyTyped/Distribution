@@ -23,7 +23,7 @@ trait TeXInputProcessor extends StObject {
     * for the macro. Note that since the value is a javascript string, backslashes in the replacement text must be
     * doubled to prevent them from acting as javascript escape characters.
     */
-  var Macros: js.UndefOr[js.Any] = js.undefined
+  var Macros: js.UndefOr[Any] = js.undefined
   
   /*The width to use for the multline environment that is part of the AMSmath extension. This width gives room for
     * tags at either side of the equation, but if you are displaying mathematics in a small area or a thin column of
@@ -66,7 +66,7 @@ object TeXInputProcessor {
     
     inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
-    inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+    inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value*))
     
     inline def setMAXBUFFER(value: Double): Self = StObject.set(x, "MAXBUFFER", value.asInstanceOf[js.Any])
     
@@ -76,7 +76,7 @@ object TeXInputProcessor {
     
     inline def setMAXMACROSUndefined: Self = StObject.set(x, "MAXMACROS", js.undefined)
     
-    inline def setMacros(value: js.Any): Self = StObject.set(x, "Macros", value.asInstanceOf[js.Any])
+    inline def setMacros(value: Any): Self = StObject.set(x, "Macros", value.asInstanceOf[js.Any])
     
     inline def setMacrosUndefined: Self = StObject.set(x, "Macros", js.undefined)
     

@@ -4,11 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** The CryptoKeyPair dictionary of the Web Crypto API represents a key pair for an asymmetric cryptography algorithm, also known as a public-key algorithm. */
 trait CryptoKeyPair extends StObject {
   
+  /* standard dom */
   var privateKey: CryptoKey
   
+  /* standard dom */
   var publicKey: CryptoKey
 }
 object CryptoKeyPair {

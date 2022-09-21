@@ -1,7 +1,7 @@
 
 # Scala.js typings for clusterize_dot_js
 
-Typings are for version 0.17
+Typings are for version 0.18
 
 ## Library description:
 Tiny vanilla JS plugin to display large data sets easily
@@ -10,10 +10,10 @@ Tiny vanilla JS plugin to display large data sets easily
 | ------------------ | :-------------: |
 | Full name          | clusterize.js |
 | Keywords           | large, vanillajs, table, grid, list, scroll, cluster |
-| # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 68509 |
-| # stars            | 3 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 6927.333333333333 |
+| # stars            | 7056.0 |
 
 ## Links
 - [Homepage](https://github.com/NeXTs/Clusterize.js)

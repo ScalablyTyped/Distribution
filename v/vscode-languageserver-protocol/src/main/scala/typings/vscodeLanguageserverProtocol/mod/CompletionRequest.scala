@@ -1,6 +1,5 @@
 package typings.vscodeLanguageserverProtocol.mod
 
-import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType
 import typings.vscodeLanguageserverProtocol.protocolMod.CompletionParams
 import typings.vscodeLanguageserverProtocol.protocolMod.CompletionRegistrationOptions
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.textDocumentSlashcompletion
@@ -10,18 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object CompletionRequest {
   
+  @JSImport("vscode-languageserver-protocol", "CompletionRequest.messageDirection")
+  @js.native
+  val messageDirection: typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection = js.native
+  
   @JSImport("vscode-languageserver-protocol", "CompletionRequest.method")
   @js.native
   val method: textDocumentSlashcompletion = js.native
   
-  /** @deprecated Use CompletionRequest.type */
-  @JSImport("vscode-languageserver-protocol", "CompletionRequest.resultType")
-  @js.native
-  val resultType: typings.vscodeJsonrpc.mod.ProgressType[js.Array[typings.vscodeLanguageserverTypes.mod.CompletionItem]] = js.native
-  
   @JSImport("vscode-languageserver-protocol", "CompletionRequest.type")
   @js.native
-  val `type`: ProtocolRequestType[
+  val `type`: typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType[
     CompletionParams, 
     typings.vscodeLanguageserverTypes.mod.CompletionList | js.Array[typings.vscodeLanguageserverTypes.mod.CompletionItem] | Null, 
     js.Array[typings.vscodeLanguageserverTypes.mod.CompletionItem], 

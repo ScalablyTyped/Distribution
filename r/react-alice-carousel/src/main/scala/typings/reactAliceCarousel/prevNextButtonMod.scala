@@ -1,6 +1,7 @@
 package typings.reactAliceCarousel
 
 import typings.react.mod.global.JSX.Element
+import typings.reactAliceCarousel.anon.IsDisabled
 import typings.reactAliceCarousel.reactAliceCarouselStrings.next
 import typings.reactAliceCarousel.reactAliceCarouselStrings.prev
 import org.scalablytyped.runtime.StObject
@@ -13,30 +14,42 @@ object prevNextButtonMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def PrevNextButton(hasNameDisabledOnClick: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PrevNextButton")(hasNameDisabledOnClick.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def PrevNextButton(hasNameIsDisabledOnClickRenderPrevButtonRenderNextButton: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PrevNextButton")(hasNameIsDisabledOnClickRenderPrevButtonRenderNextButton.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait Props extends StObject {
     
-    var disabled: Boolean
+    var isDisabled: Boolean
     
     var name: prev | next
     
-    def onClick(e: js.Any): Unit
+    def onClick(e: Any): Unit
+    
+    var renderNextButton: js.UndefOr[js.Function1[/* hasIsDisabled */ IsDisabled, Any]] = js.undefined
+    
+    var renderPrevButton: js.UndefOr[js.Function1[/* hasIsDisabled */ IsDisabled, Any]] = js.undefined
   }
   object Props {
     
-    inline def apply(disabled: Boolean, name: prev | next, onClick: js.Any => Unit): Props = {
-      val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick))
+    inline def apply(isDisabled: Boolean, name: prev | next, onClick: Any => Unit): Props = {
+      val __obj = js.Dynamic.literal(isDisabled = isDisabled.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick))
       __obj.asInstanceOf[Props]
     }
     
     extension [Self <: Props](x: Self) {
       
-      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
       
       inline def setName(value: prev | next): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setOnClick(value: js.Any => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: Any => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      
+      inline def setRenderNextButton(value: /* hasIsDisabled */ IsDisabled => Any): Self = StObject.set(x, "renderNextButton", js.Any.fromFunction1(value))
+      
+      inline def setRenderNextButtonUndefined: Self = StObject.set(x, "renderNextButton", js.undefined)
+      
+      inline def setRenderPrevButton(value: /* hasIsDisabled */ IsDisabled => Any): Self = StObject.set(x, "renderPrevButton", js.Any.fromFunction1(value))
+      
+      inline def setRenderPrevButtonUndefined: Self = StObject.set(x, "renderPrevButton", js.undefined)
     }
   }
 }

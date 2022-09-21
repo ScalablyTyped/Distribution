@@ -10,10 +10,10 @@ Naive Bayes classifier
 | ------------------ | :-------------: |
 | Full name          | bayes-classifier |
 | Keywords           | naive, bayes, classifier |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 35955 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 25013.666666666668 |
+| # stars            | 31.0 |
 
 ## Links
 - [Homepage](https://github.com/miguelmota/bayes-classifier)

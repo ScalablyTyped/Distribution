@@ -1,6 +1,7 @@
 package typings.vueCompilerSfc.mod
 
 import typings.std.Record
+import typings.vueCompilerCore.mod.ElementNode
 import typings.vueCompilerCore.mod.SourceLocation
 import typings.vueCompilerSfc.vueCompilerSfcBooleans.`true`
 import typings.vueCompilerSfc.vueCompilerSfcStrings.template
@@ -12,24 +13,22 @@ trait SFCTemplateBlock
   extends StObject
      with SFCBlock {
   
-  var functional: js.UndefOr[Boolean] = js.undefined
+  var ast: ElementNode
   
   @JSName("type")
   var type_SFCTemplateBlock: template
 }
 object SFCTemplateBlock {
   
-  inline def apply(attrs: Record[String, String | `true`], content: String, loc: SourceLocation): SFCTemplateBlock = {
-    val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
+  inline def apply(ast: ElementNode, attrs: Record[String, String | `true`], content: String, loc: SourceLocation): SFCTemplateBlock = {
+    val __obj = js.Dynamic.literal(ast = ast.asInstanceOf[js.Any], attrs = attrs.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("template")
     __obj.asInstanceOf[SFCTemplateBlock]
   }
   
   extension [Self <: SFCTemplateBlock](x: Self) {
     
-    inline def setFunctional(value: Boolean): Self = StObject.set(x, "functional", value.asInstanceOf[js.Any])
-    
-    inline def setFunctionalUndefined: Self = StObject.set(x, "functional", js.undefined)
+    inline def setAst(value: ElementNode): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
     
     inline def setType(value: template): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

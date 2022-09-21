@@ -1,8 +1,6 @@
 package typings.firefoxWebextBrowser.browser.webRequest
 
-import typings.std.ArrayBuffer
 import typings.std.Event
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,7 +39,7 @@ trait StreamFilter extends StObject {
   /** Suspends processing of the request. */
   def suspend(): Unit = js.native
   
-  def write(data: ArrayBuffer): Unit = js.native
+  def write(data: js.typedarray.ArrayBuffer): Unit = js.native
   /** Writes some data to the output stream. */
-  def write(data: Uint8Array): Unit = js.native
+  def write(data: js.typedarray.Uint8Array): Unit = js.native
 }

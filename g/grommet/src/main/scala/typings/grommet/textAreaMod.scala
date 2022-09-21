@@ -4,6 +4,7 @@ import typings.grommet.grommetStrings.horizontal
 import typings.grommet.grommetStrings.large
 import typings.grommet.grommetStrings.medium
 import typings.grommet.grommetStrings.small
+import typings.grommet.grommetStrings.value
 import typings.grommet.grommetStrings.vertical
 import typings.grommet.grommetStrings.xlarge
 import typings.grommet.utilsMod.A11yTitleType
@@ -11,6 +12,7 @@ import typings.react.mod.DetailedHTMLProps
 import typings.react.mod.FC
 import typings.react.mod.TextareaHTMLAttributes
 import typings.std.HTMLTextAreaElement
+import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,11 +21,21 @@ object textAreaMod {
   
   @JSImport("grommet/components/TextArea", "TextArea")
   @js.native
-  val TextArea: FC[
-    TextAreaProps & (DetailedHTMLProps[TextareaHTMLAttributes[HTMLTextAreaElement], HTMLTextAreaElement])
-  ] = js.native
+  val TextArea: FC[TextAreaExtendedProps] = js.native
   
-  trait TextAreaProps extends StObject {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped {[ P in std.Exclude<keyof react.react.DetailedHTMLProps<react.react.TextareaHTMLAttributes<std.HTMLTextAreaElement>, std.HTMLTextAreaElement>, 'value'> ]: react.react.DetailedHTMLProps<react.react.TextareaHTMLAttributes<std.HTMLTextAreaElement>, std.HTMLTextAreaElement>[P]} */ trait TextAreaExtendedProps
+    extends StObject
+       with TextAreaProps_
+  object TextAreaExtendedProps {
+    
+    inline def apply(): TextAreaExtendedProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TextAreaExtendedProps]
+    }
+  }
+  
+  trait TextAreaProps_ extends StObject {
     
     var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
     
@@ -45,14 +57,14 @@ object textAreaMod {
     
     var value: js.UndefOr[String] = js.undefined
   }
-  object TextAreaProps {
+  object TextAreaProps_ {
     
-    inline def apply(): TextAreaProps = {
+    inline def apply(): TextAreaProps_ = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[TextAreaProps]
+      __obj.asInstanceOf[TextAreaProps_]
     }
     
-    extension [Self <: TextAreaProps](x: Self) {
+    extension [Self <: TextAreaProps_](x: Self) {
       
       inline def setA11yTitle(value: A11yTitleType): Self = StObject.set(x, "a11yTitle", value.asInstanceOf[js.Any])
       
@@ -95,4 +107,9 @@ object textAreaMod {
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
+  
+  type textareaProps = Omit[
+    DetailedHTMLProps[TextareaHTMLAttributes[HTMLTextAreaElement], HTMLTextAreaElement], 
+    value
+  ]
 }

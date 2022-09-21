@@ -10,10 +10,10 @@ object filterListMod {
   
   @JSImport("material-ui/svg-icons/content/filter-list", JSImport.Default)
   @js.native
-  class default () extends ContentFilterList
+  open class default () extends ContentFilterList
   
   @JSImport("material-ui/svg-icons/content/filter-list", "ContentFilterList")
   @js.native
-  class ContentFilterList ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ContentFilterList ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

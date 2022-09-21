@@ -3,7 +3,6 @@ package typings.reactBase16Styling
 import org.scalablytyped.runtime.StringDictionary
 import typings.base16.mod.Base16Theme
 import typings.lodash.mod.CurriedFunction3
-import typings.reactBase16Styling.anon.Base16Themes
 import typings.reactBase16Styling.typesMod.StylingConfig
 import typings.reactBase16Styling.typesMod.StylingFunction
 import typings.reactBase16Styling.typesMod.Theme
@@ -21,8 +20,8 @@ object mod {
   @js.native
   val createStyling: CurriedFunction3[
     js.Function1[/* base16Theme */ Base16Theme, StylingConfig], 
-    js.UndefOr[Base16Themes], 
-    js.UndefOr[String | Base16Theme | StylingConfig], 
+    js.UndefOr[Options], 
+    js.UndefOr[Theme], 
     StylingFunction
   ] = js.native
   
@@ -33,4 +32,29 @@ object mod {
   
   inline def invertTheme(): js.UndefOr[Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("invertTheme")().asInstanceOf[js.UndefOr[Theme]]
   inline def invertTheme(theme: Theme): js.UndefOr[Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("invertTheme")(theme.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Theme]]
+  
+  trait Options extends StObject {
+    
+    var base16Themes: js.UndefOr[StringDictionary[Base16Theme]] = js.undefined
+    
+    var defaultBase16: js.UndefOr[Base16Theme] = js.undefined
+  }
+  object Options {
+    
+    inline def apply(): Options = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Options]
+    }
+    
+    extension [Self <: Options](x: Self) {
+      
+      inline def setBase16Themes(value: StringDictionary[Base16Theme]): Self = StObject.set(x, "base16Themes", value.asInstanceOf[js.Any])
+      
+      inline def setBase16ThemesUndefined: Self = StObject.set(x, "base16Themes", js.undefined)
+      
+      inline def setDefaultBase16(value: Base16Theme): Self = StObject.set(x, "defaultBase16", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultBase16Undefined: Self = StObject.set(x, "defaultBase16", js.undefined)
+    }
+  }
 }

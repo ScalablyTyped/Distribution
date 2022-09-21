@@ -7,6 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object reactTabsStrings {
   
   @js.native
+  sealed trait Tab extends StObject
+  inline def Tab: Tab = "Tab".asInstanceOf[Tab]
+  
+  @js.native
+  sealed trait TabList extends StObject
+  inline def TabList: TabList = "TabList".asInstanceOf[TabList]
+  
+  @js.native
+  sealed trait TabPanel extends StObject
+  inline def TabPanel: TabPanel = "TabPanel".asInstanceOf[TabPanel]
+  
+  @js.native
+  sealed trait Tabs extends StObject
+  inline def Tabs: Tabs = "Tabs".asInstanceOf[Tabs]
+  
+  @js.native
   sealed trait additions extends StObject
   inline def additions: additions = "additions".asInstanceOf[additions]
   
@@ -59,6 +75,10 @@ object reactTabsStrings {
   inline def email: email = "email".asInstanceOf[email]
   
   @js.native
+  sealed trait environment extends StObject
+  inline def environment: environment = "environment".asInstanceOf[environment]
+  
+  @js.native
   sealed trait execute extends StObject
   inline def execute: execute = "execute".asInstanceOf[execute]
   
@@ -97,6 +117,10 @@ object reactTabsStrings {
   @js.native
   sealed trait location extends StObject
   inline def location: location = "location".asInstanceOf[location]
+  
+  @js.native
+  sealed trait ltr extends StObject
+  inline def ltr: ltr = "ltr".asInstanceOf[ltr]
   
   @js.native
   sealed trait menu extends StObject
@@ -159,6 +183,10 @@ object reactTabsStrings {
   inline def `removals text`: `removals text` = ("removals text").asInstanceOf[`removals text`]
   
   @js.native
+  sealed trait rtl extends StObject
+  inline def rtl: rtl = "rtl".asInstanceOf[rtl]
+  
+  @js.native
   sealed trait search extends StObject
   inline def search: search = "search".asInstanceOf[search]
   
@@ -197,6 +225,10 @@ object reactTabsStrings {
   @js.native
   sealed trait url extends StObject
   inline def url: url = "url".asInstanceOf[url]
+  
+  @js.native
+  sealed trait user extends StObject
+  inline def user: user = "user".asInstanceOf[user]
   
   @js.native
   sealed trait vertical extends StObject

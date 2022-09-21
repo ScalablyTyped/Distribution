@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.azdata.mod.ComponentProperties because Already inherited
-- typings.azdata.mod.TableComponentProperties because var conflicts: CSSStyles, ariaLabel, ariaRole, ariaSelected, display, enabled, height, position, width. Inlined data, columns, fontSize, selectedRows, forceFitColumns, title, ariaRowCount, ariaColumnCount, updateCells, moveFocusOutWithTab */ @js.native
+- typings.azdata.mod.TableComponentProperties because var conflicts: CSSStyles, ariaHidden, ariaLabel, ariaRole, ariaSelected, display, enabled, height, position, width. Inlined data, columns, fontSize, selectedRows, forceFitColumns, title, ariaRowCount, ariaColumnCount, updateCells, moveFocusOutWithTab */ @js.native
 trait TableComponent
   extends StObject
      with Component {
@@ -19,7 +19,7 @@ trait TableComponent
   
   var columns: js.Array[String | TableColumn] = js.native
   
-  var data: js.Array[js.Array[js.Any]] = js.native
+  var data: js.Array[js.Array[Any]] = js.native
   
   var fontSize: js.UndefOr[Double | String] = js.native
   
@@ -29,16 +29,12 @@ trait TableComponent
   
   var onCellAction: js.UndefOr[Event[ICellActionEventArgs]] = js.native
   
-  def onRowSelected(listener: js.Function1[/* e */ js.Any, js.Any]): Disposable = js.native
-  def onRowSelected(listener: js.Function1[/* e */ js.Any, js.Any], thisArgs: js.Any): Disposable = js.native
-  def onRowSelected(
-    listener: js.Function1[/* e */ js.Any, js.Any],
-    thisArgs: js.Any,
-    disposables: js.Array[Disposable]
-  ): Disposable = js.native
-  def onRowSelected(listener: js.Function1[/* e */ js.Any, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
+  def onRowSelected(listener: js.Function1[/* e */ Any, Any]): Disposable = js.native
+  def onRowSelected(listener: js.Function1[/* e */ Any, Any], thisArgs: Any): Disposable = js.native
+  def onRowSelected(listener: js.Function1[/* e */ Any, Any], thisArgs: Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onRowSelected(listener: js.Function1[/* e */ Any, Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
   @JSName("onRowSelected")
-  var onRowSelected_Original: Event[js.Any] = js.native
+  var onRowSelected_Original: Event[Any] = js.native
   
   var selectedRows: js.UndefOr[js.Array[Double]] = js.native
   

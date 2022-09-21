@@ -5,7 +5,6 @@ import typings.d3Path.mod.Path_
 import typings.d3Shape.anon.ValueOf
 import typings.std.Array
 import typings.std.CanvasRenderingContext2D
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,9 +15,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def arc(): Arc_[js.Any, DefaultArcObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("arc")().asInstanceOf[Arc_[js.Any, DefaultArcObject]]
+  inline def arc(): Arc_[Any, DefaultArcObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("arc")().asInstanceOf[Arc_[Any, DefaultArcObject]]
   
-  inline def arc_Datum[Datum](): Arc_[js.Any, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("arc")().asInstanceOf[Arc_[js.Any, Datum]]
+  inline def arc_Datum[Datum](): Arc_[Any, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("arc")().asInstanceOf[Arc_[Any, Datum]]
   
   inline def arc_ThisDatum[This, Datum](): Arc_[This, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("arc")().asInstanceOf[Arc_[This, Datum]]
   
@@ -125,6 +124,14 @@ object mod {
   @js.native
   val curveBasisOpen: CurveFactory = js.native
   
+  @JSImport("d3-shape", "curveBumpX")
+  @js.native
+  val curveBumpX: CurveFactory = js.native
+  
+  @JSImport("d3-shape", "curveBumpY")
+  @js.native
+  val curveBumpY: CurveFactory = js.native
+  
   @JSImport("d3-shape", "curveBundle")
   @js.native
   val curveBundle: CurveBundleFactory = js.native
@@ -202,27 +209,33 @@ object mod {
   
   inline def lineRadial_Datum[Datum](): LineRadial_[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("lineRadial")().asInstanceOf[LineRadial_[Datum]]
   
-  inline def linkHorizontal(): Link[js.Any, DefaultLinkObject, js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkHorizontal")().asInstanceOf[Link[js.Any, DefaultLinkObject, js.Tuple2[Double, Double]]]
+  inline def link(curve: CurveFactory): Link_[Any, DefaultLinkObject, js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("link")(curve.asInstanceOf[js.Any]).asInstanceOf[Link_[Any, DefaultLinkObject, js.Tuple2[Double, Double]]]
   
-  inline def linkHorizontal_LinkDatumNodeDatum[LinkDatum, NodeDatum](): Link[js.Any, LinkDatum, NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkHorizontal")().asInstanceOf[Link[js.Any, LinkDatum, NodeDatum]]
+  inline def linkHorizontal(): Link_[Any, DefaultLinkObject, js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkHorizontal")().asInstanceOf[Link_[Any, DefaultLinkObject, js.Tuple2[Double, Double]]]
   
-  inline def linkHorizontal_ThisLinkDatumNodeDatum[This, LinkDatum, NodeDatum](): Link[This, LinkDatum, NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkHorizontal")().asInstanceOf[Link[This, LinkDatum, NodeDatum]]
+  inline def linkHorizontal_LinkDatumNodeDatum[LinkDatum, NodeDatum](): Link_[Any, LinkDatum, NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkHorizontal")().asInstanceOf[Link_[Any, LinkDatum, NodeDatum]]
   
-  inline def linkRadial(): LinkRadial_[js.Any, DefaultLinkObject, js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkRadial")().asInstanceOf[LinkRadial_[js.Any, DefaultLinkObject, js.Tuple2[Double, Double]]]
+  inline def linkHorizontal_ThisLinkDatumNodeDatum[This, LinkDatum, NodeDatum](): Link_[This, LinkDatum, NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkHorizontal")().asInstanceOf[Link_[This, LinkDatum, NodeDatum]]
   
-  inline def linkRadial_LinkDatumNodeDatum[LinkDatum, NodeDatum](): LinkRadial_[js.Any, LinkDatum, NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkRadial")().asInstanceOf[LinkRadial_[js.Any, LinkDatum, NodeDatum]]
+  inline def linkRadial(): LinkRadial_[Any, DefaultLinkObject, js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkRadial")().asInstanceOf[LinkRadial_[Any, DefaultLinkObject, js.Tuple2[Double, Double]]]
+  
+  inline def linkRadial_LinkDatumNodeDatum[LinkDatum, NodeDatum](): LinkRadial_[Any, LinkDatum, NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkRadial")().asInstanceOf[LinkRadial_[Any, LinkDatum, NodeDatum]]
   
   inline def linkRadial_ThisLinkDatumNodeDatum[This, LinkDatum, NodeDatum](): LinkRadial_[This, LinkDatum, NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkRadial")().asInstanceOf[LinkRadial_[This, LinkDatum, NodeDatum]]
   
-  inline def linkVertical(): Link[js.Any, DefaultLinkObject, js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkVertical")().asInstanceOf[Link[js.Any, DefaultLinkObject, js.Tuple2[Double, Double]]]
+  inline def linkVertical(): Link_[Any, DefaultLinkObject, js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkVertical")().asInstanceOf[Link_[Any, DefaultLinkObject, js.Tuple2[Double, Double]]]
   
-  inline def linkVertical_LinkDatumNodeDatum[LinkDatum, NodeDatum](): Link[js.Any, LinkDatum, NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkVertical")().asInstanceOf[Link[js.Any, LinkDatum, NodeDatum]]
+  inline def linkVertical_LinkDatumNodeDatum[LinkDatum, NodeDatum](): Link_[Any, LinkDatum, NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkVertical")().asInstanceOf[Link_[Any, LinkDatum, NodeDatum]]
   
-  inline def linkVertical_ThisLinkDatumNodeDatum[This, LinkDatum, NodeDatum](): Link[This, LinkDatum, NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkVertical")().asInstanceOf[Link[This, LinkDatum, NodeDatum]]
+  inline def linkVertical_ThisLinkDatumNodeDatum[This, LinkDatum, NodeDatum](): Link_[This, LinkDatum, NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("linkVertical")().asInstanceOf[Link_[This, LinkDatum, NodeDatum]]
   
-  inline def pie(): Pie_[js.Any, Double | ValueOf] = ^.asInstanceOf[js.Dynamic].applyDynamic("pie")().asInstanceOf[Pie_[js.Any, Double | ValueOf]]
+  inline def link_LinkDatumNodeDatum[LinkDatum, NodeDatum](curve: CurveFactory): Link_[Any, LinkDatum, NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("link")(curve.asInstanceOf[js.Any]).asInstanceOf[Link_[Any, LinkDatum, NodeDatum]]
   
-  inline def pie_Datum[Datum](): Pie_[js.Any, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("pie")().asInstanceOf[Pie_[js.Any, Datum]]
+  inline def link_ThisLinkDatumNodeDatum[This, LinkDatum, NodeDatum](curve: CurveFactory): Link_[This, LinkDatum, NodeDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("link")(curve.asInstanceOf[js.Any]).asInstanceOf[Link_[This, LinkDatum, NodeDatum]]
+  
+  inline def pie(): Pie_[Any, Double | ValueOf] = ^.asInstanceOf[js.Dynamic].applyDynamic("pie")().asInstanceOf[Pie_[Any, Double | ValueOf]]
+  
+  inline def pie_Datum[Datum](): Pie_[Any, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("pie")().asInstanceOf[Pie_[Any, Datum]]
   
   inline def pie_ThisDatum[This, Datum](): Pie_[This, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("pie")().asInstanceOf[Pie_[This, Datum]]
   
@@ -236,57 +249,58 @@ object mod {
   
   inline def radialLine_Datum[Datum](): RadialLine_[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("radialLine")().asInstanceOf[RadialLine_[Datum]]
   
-  inline def stack(): Stack_[js.Any, StringDictionary[Double], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("stack")().asInstanceOf[Stack_[js.Any, StringDictionary[Double], String]]
+  inline def stack(): Stack_[Any, StringDictionary[Double], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("stack")().asInstanceOf[Stack_[Any, StringDictionary[Double], String]]
   
-  inline def stackOffsetDiverging(series: Series[js.Any, js.Any], order: Iterable[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stackOffsetDiverging")(series.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def stackOffsetDiverging(series: Series[Any, Any], order: js.Iterable[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stackOffsetDiverging")(series.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def stackOffsetExpand(series: Series[js.Any, js.Any], order: Iterable[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stackOffsetExpand")(series.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def stackOffsetExpand(series: Series[Any, Any], order: js.Iterable[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stackOffsetExpand")(series.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def stackOffsetNone(series: Series[js.Any, js.Any], order: Iterable[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stackOffsetNone")(series.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def stackOffsetNone(series: Series[Any, Any], order: js.Iterable[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stackOffsetNone")(series.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def stackOffsetSilhouette(series: Series[js.Any, js.Any], order: Iterable[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stackOffsetSilhouette")(series.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def stackOffsetSilhouette(series: Series[Any, Any], order: js.Iterable[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stackOffsetSilhouette")(series.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def stackOffsetWiggle(series: Series[js.Any, js.Any], order: Iterable[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stackOffsetWiggle")(series.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def stackOffsetWiggle(series: Series[Any, Any], order: js.Iterable[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stackOffsetWiggle")(series.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def stackOrderAppearance(series: Series[js.Any, js.Any]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("stackOrderAppearance")(series.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def stackOrderAppearance(series: Series[Any, Any]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("stackOrderAppearance")(series.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  inline def stackOrderAscending(series: Series[js.Any, js.Any]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("stackOrderAscending")(series.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def stackOrderAscending(series: Series[Any, Any]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("stackOrderAscending")(series.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  inline def stackOrderDescending(series: Series[js.Any, js.Any]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("stackOrderDescending")(series.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def stackOrderDescending(series: Series[Any, Any]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("stackOrderDescending")(series.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  inline def stackOrderInsideOut(series: Series[js.Any, js.Any]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("stackOrderInsideOut")(series.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def stackOrderInsideOut(series: Series[Any, Any]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("stackOrderInsideOut")(series.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  inline def stackOrderNone(series: Series[js.Any, js.Any]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("stackOrderNone")(series.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def stackOrderNone(series: Series[Any, Any]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("stackOrderNone")(series.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  inline def stackOrderReverse(series: Series[js.Any, js.Any]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("stackOrderReverse")(series.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def stackOrderReverse(series: Series[Any, Any]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("stackOrderReverse")(series.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  inline def stack_Datum[Datum](): Stack_[js.Any, Datum, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("stack")().asInstanceOf[Stack_[js.Any, Datum, String]]
+  inline def stack_Datum[Datum](): Stack_[Any, Datum, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("stack")().asInstanceOf[Stack_[Any, Datum, String]]
   
-  inline def stack_DatumKey[Datum, Key](): Stack_[js.Any, Datum, Key] = ^.asInstanceOf[js.Dynamic].applyDynamic("stack")().asInstanceOf[Stack_[js.Any, Datum, Key]]
+  inline def stack_DatumKey[Datum, Key](): Stack_[Any, Datum, Key] = ^.asInstanceOf[js.Dynamic].applyDynamic("stack")().asInstanceOf[Stack_[Any, Datum, Key]]
   
   inline def stack_ThisDatumKey[This, Datum, Key](): Stack_[This, Datum, Key] = ^.asInstanceOf[js.Dynamic].applyDynamic("stack")().asInstanceOf[Stack_[This, Datum, Key]]
   
-  inline def symbol[Datum](): Symbol_[js.Any, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("symbol")().asInstanceOf[Symbol_[js.Any, Datum]]
-  inline def symbol[Datum](`type`: js.ThisFunction2[/* this */ js.Any, /* d */ Datum, /* repeated */ js.Any, SymbolType]): Symbol_[js.Any, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any]).asInstanceOf[Symbol_[js.Any, Datum]]
+  inline def symbol[Datum](): Symbol_[Any, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("symbol")().asInstanceOf[Symbol_[Any, Datum]]
+  inline def symbol[Datum](`type`: js.ThisFunction2[/* this */ Any, /* d */ Datum, /* repeated */ Any, SymbolType]): Symbol_[Any, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any]).asInstanceOf[Symbol_[Any, Datum]]
   inline def symbol[Datum](
-    `type`: js.ThisFunction2[/* this */ js.Any, /* d */ Datum, /* repeated */ js.Any, SymbolType],
-    size: js.ThisFunction2[/* this */ js.Any, /* d */ Datum, /* repeated */ js.Any, Double]
-  ): Symbol_[js.Any, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[js.Any, Datum]]
+    `type`: js.ThisFunction2[/* this */ Any, /* d */ Datum, /* repeated */ Any, SymbolType],
+    size: js.ThisFunction2[/* this */ Any, /* d */ Datum, /* repeated */ Any, Double]
+  ): Symbol_[Any, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[Any, Datum]]
   inline def symbol[Datum](
-    `type`: js.ThisFunction2[/* this */ js.Any, /* d */ Datum, /* repeated */ js.Any, SymbolType],
+    `type`: js.ThisFunction2[/* this */ Any, /* d */ Datum, /* repeated */ Any, SymbolType],
     size: Double
-  ): Symbol_[js.Any, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[js.Any, Datum]]
-  inline def symbol[Datum](
-    `type`: Unit,
-    size: js.ThisFunction2[/* this */ js.Any, /* d */ Datum, /* repeated */ js.Any, Double]
-  ): Symbol_[js.Any, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[js.Any, Datum]]
-  inline def symbol[Datum](`type`: Unit, size: Double): Symbol_[js.Any, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[js.Any, Datum]]
-  inline def symbol[Datum](`type`: SymbolType): Symbol_[js.Any, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any]).asInstanceOf[Symbol_[js.Any, Datum]]
+  ): Symbol_[Any, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[Any, Datum]]
+  inline def symbol[Datum](`type`: Unit, size: js.ThisFunction2[/* this */ Any, /* d */ Datum, /* repeated */ Any, Double]): Symbol_[Any, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[Any, Datum]]
+  inline def symbol[Datum](`type`: Unit, size: Double): Symbol_[Any, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[Any, Datum]]
+  inline def symbol[Datum](`type`: SymbolType): Symbol_[Any, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any]).asInstanceOf[Symbol_[Any, Datum]]
   inline def symbol[Datum](
     `type`: SymbolType,
-    size: js.ThisFunction2[/* this */ js.Any, /* d */ Datum, /* repeated */ js.Any, Double]
-  ): Symbol_[js.Any, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[js.Any, Datum]]
-  inline def symbol[Datum](`type`: SymbolType, size: Double): Symbol_[js.Any, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[js.Any, Datum]]
+    size: js.ThisFunction2[/* this */ Any, /* d */ Datum, /* repeated */ Any, Double]
+  ): Symbol_[Any, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[Any, Datum]]
+  inline def symbol[Datum](`type`: SymbolType, size: Double): Symbol_[Any, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[Any, Datum]]
+  
+  @JSImport("d3-shape", "symbolAsterisk")
+  @js.native
+  val symbolAsterisk: SymbolType = js.native
   
   @JSImport("d3-shape", "symbolCircle")
   @js.native
@@ -300,9 +314,21 @@ object mod {
   @js.native
   val symbolDiamond: SymbolType = js.native
   
+  @JSImport("d3-shape", "symbolDiamond2")
+  @js.native
+  val symbolDiamond2: SymbolType = js.native
+  
+  @JSImport("d3-shape", "symbolPlus")
+  @js.native
+  val symbolPlus: SymbolType = js.native
+  
   @JSImport("d3-shape", "symbolSquare")
   @js.native
   val symbolSquare: SymbolType = js.native
+  
+  @JSImport("d3-shape", "symbolSquare2")
+  @js.native
+  val symbolSquare2: SymbolType = js.native
   
   @JSImport("d3-shape", "symbolStar")
   @js.native
@@ -312,35 +338,48 @@ object mod {
   @js.native
   val symbolTriangle: SymbolType = js.native
   
+  @JSImport("d3-shape", "symbolTriangle2")
+  @js.native
+  val symbolTriangle2: SymbolType = js.native
+  
   @JSImport("d3-shape", "symbolWye")
   @js.native
   val symbolWye: SymbolType = js.native
   
+  @JSImport("d3-shape", "symbolX")
+  @js.native
+  val symbolX: SymbolType = js.native
+  
   inline def symbol_ThisDatum[This, Datum](): Symbol_[This, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("symbol")().asInstanceOf[Symbol_[This, Datum]]
-  inline def symbol_ThisDatum[This, Datum](`type`: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, SymbolType]): Symbol_[This, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any]).asInstanceOf[Symbol_[This, Datum]]
+  inline def symbol_ThisDatum[This, Datum](`type`: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ Any, SymbolType]): Symbol_[This, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any]).asInstanceOf[Symbol_[This, Datum]]
   inline def symbol_ThisDatum[This, Datum](
-    `type`: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, SymbolType],
-    size: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, Double]
+    `type`: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ Any, SymbolType],
+    size: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ Any, Double]
   ): Symbol_[This, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[This, Datum]]
   inline def symbol_ThisDatum[This, Datum](
-    `type`: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, SymbolType],
+    `type`: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ Any, SymbolType],
     size: Double
   ): Symbol_[This, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[This, Datum]]
-  inline def symbol_ThisDatum[This, Datum](
-    `type`: Unit,
-    size: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, Double]
-  ): Symbol_[This, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[This, Datum]]
+  inline def symbol_ThisDatum[This, Datum](`type`: Unit, size: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ Any, Double]): Symbol_[This, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[This, Datum]]
   inline def symbol_ThisDatum[This, Datum](`type`: Unit, size: Double): Symbol_[This, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[This, Datum]]
   inline def symbol_ThisDatum[This, Datum](`type`: SymbolType): Symbol_[This, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any]).asInstanceOf[Symbol_[This, Datum]]
   inline def symbol_ThisDatum[This, Datum](
     `type`: SymbolType,
-    size: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, Double]
+    size: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ Any, Double]
   ): Symbol_[This, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[This, Datum]]
   inline def symbol_ThisDatum[This, Datum](`type`: SymbolType, size: Double): Symbol_[This, Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbol")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Symbol_[This, Datum]]
   
   @JSImport("d3-shape", "symbols")
   @js.native
   val symbols: js.Array[SymbolType] = js.native
+  
+  @JSImport("d3-shape", "symbolsFill")
+  @js.native
+  val symbolsFill: js.Array[SymbolType] = js.native
+  
+  @JSImport("d3-shape", "symbolsStroke")
+  @js.native
+  val symbolsStroke: js.Array[SymbolType] = js.native
   
   @js.native
   trait Arc_[This, Datum] extends StObject {
@@ -356,7 +395,7 @@ object mod {
       *
       * @param d The datum for which the arc is to be generated.
       */
-    def apply(d: Datum, args: js.Any*): String | Null = js.native
+    def apply(d: Datum, args: Any*): String | Null = js.native
     
     /**
       * Computes the midpoint [x, y] of the center line of the arc that would be generated by the given arguments.
@@ -372,33 +411,24 @@ object mod {
       *
       * @param d The datum for which the arc is to be generated.
       */
-    def centroid(d: Datum, args: js.Any*): js.Tuple2[Double, Double] = js.native
+    def centroid(d: Datum, args: Any*): js.Tuple2[Double, Double] = js.native
     
+    /**
+      * Sets the context and returns this arc generator.
+      * If context is not specified, returns the current context, which defaults to null.
+      */
+    def context(): this.type = js.native
+    def context(context: CanvasRenderingContext2D): this.type = js.native
     /**
       * Returns the current rendering context, which defaults to null.
       */
-    def context(): CanvasRenderingContext2D | Null = js.native
-    /**
-      * Sets the rendering context to null and returns this arc generator.
-      *
-      * A path data string representing the generated arc will be returned when the generator is invoked with data.
-      *
-      * @param context null, to remove rendering context.
-      */
-    def context(context: Null): this.type = js.native
-    /**
-      * Sets the rendering context and returns this arc generator.
-      *
-      * If the context is not null, then the generated arc is rendered to this context as a sequence of path method calls.
-      *
-      * @param context The rendering context.
-      */
-    def context(context: CanvasRenderingContext2D): this.type = js.native
+    @JSName("context")
+    def context_Union(): CanvasRenderingContext2D | Null = js.native
     
     /**
       * Returns the current corner radius accessor, which defaults to a function returning a constant value of zero.
       */
-    def cornerRadius(): js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, Double] = js.native
+    def cornerRadius(): js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ Any, Double] = js.native
     /**
       * Sets the corner radius to the specified function and returns this arc generator.
       *
@@ -409,7 +439,7 @@ object mod {
       * @param radius An accessor function returning a number to be used as a radius. The accessor function is invoked in the same "this" context as the generator was invoked in and
       * receives the same arguments that were passed into the arc generator.
       */
-    def cornerRadius(radius: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, Double]): this.type = js.native
+    def cornerRadius(radius: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ Any, Double]): this.type = js.native
     /**
       * Sets the corner radius to the specified number and returns this arc generator.
       *
@@ -428,7 +458,7 @@ object mod {
       * Returns the current end angle accessor, which defaults to a function returning the endAngle property
       * of the first argument passed into it.
       */
-    def endAngle(): js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, Double] = js.native
+    def endAngle(): js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ Any, Double] = js.native
     /**
       * Sets the end angle to the specified function and returns this arc generator.
       *
@@ -438,7 +468,7 @@ object mod {
       * @param angle An accessor function returning a number in radians to be used as an angle. The accessor function is invoked in the same "this" context as the generator was invoked in and
       * receives the same arguments that were passed into the arc generator.
       */
-    def endAngle(angle: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, Double]): this.type = js.native
+    def endAngle(angle: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ Any, Double]): this.type = js.native
     /**
       * Sets the end angle to the specified number and returns this arc generator.
       *
@@ -453,7 +483,7 @@ object mod {
       * Returns the current inner radius accessor, which defaults to a function returning the innerRadius property
       * of the first argument passed into it.
       */
-    def innerRadius(): js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, Double] = js.native
+    def innerRadius(): js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ Any, Double] = js.native
     /**
       * Sets the inner radius to the specified function and returns this arc generator.
       *
@@ -464,7 +494,7 @@ object mod {
       * @param radius An accessor function returning a number to be used as a radius. The accessor function is invoked in the same "this" context as the generator was invoked in and
       * receives the same arguments that were passed into the arc generator.
       */
-    def innerRadius(radius: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, Double]): this.type = js.native
+    def innerRadius(radius: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ Any, Double]): this.type = js.native
     /**
       * Sets the inner radius to the specified number and returns this arc generator.
       *
@@ -480,7 +510,7 @@ object mod {
       * Returns the current outer radius accessor, which defaults to a function returning the outerRadius property
       * of the first argument passed into it.
       */
-    def outerRadius(): js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, Double] = js.native
+    def outerRadius(): js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ Any, Double] = js.native
     /**
       * Sets the outer radius to the specified function and returns this arc generator.
       *
@@ -492,7 +522,7 @@ object mod {
       * @param radius An accessor function returning a number to be used as a radius. The accessor function is invoked in the same "this" context as the generator was invoked in and
       * receives the same arguments that were passed into the arc generator.
       */
-    def outerRadius(radius: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, Double]): this.type = js.native
+    def outerRadius(radius: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ Any, Double]): this.type = js.native
     /**
       * Sets the outer radius to the specified number and returns this arc generator.
       *
@@ -541,48 +571,33 @@ object mod {
       * @param angle An accessor function returning a number in radians to be used as an angle. The accessor function is invoked in the same "this" context as the generator was invoked in and
       * receives the same arguments that were passed into the arc generator.
       */
-    def padAngle(angle: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, js.UndefOr[Double]]): this.type = js.native
+    def padAngle(angle: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ Any, js.UndefOr[Double]]): this.type = js.native
     def padAngle(angle: Double): this.type = js.native
     /**
       * Returns the current pad angle accessor, which defaults to a function returning the padAngle property
       * of the first argument passed into it, or false if no data are passed in or the property is not defined.
       */
     @JSName("padAngle")
-    def padAngle_ThisFunction2(): js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, js.UndefOr[Double]] = js.native
+    def padAngle_ThisFunction2(): js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ Any, js.UndefOr[Double]] = js.native
     
+    /**
+      * Sets the pad radius to the specified function or number and returns this arc generator.
+      * The pad radius determines the fixed linear distance separating adjacent arcs, defined as padRadius * padAngle.
+      */
+    def padRadius(): this.type = js.native
+    def padRadius(radius: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ Any, Double]): this.type = js.native
+    def padRadius(radius: Double): this.type = js.native
     /**
       * Returns the current pad radius accessor, which defaults to null, indicating that the pad radius should be automatically computed as sqrt(innerRadius * innerRadius + outerRadius * outerRadius).
       */
-    def padRadius(): (js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, Double]) | Null = js.native
-    /*
-      * Sets the pad radius to the specified function, and returns this arc generator.
-      *
-      * @param radius An accessor function returning a number to be used as a radius. The accessor function is invoked in the same "this" context as the generator was invoked in and
-      * receives the same arguments that were passed into the arc generator.
-      */
-    def padRadius(radius: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, Double]): this.type = js.native
-    /**
-      * Sets the pad radius to the specified number, and returns this arc generator.
-      *
-      * The pad radius determines the fixed linear distance separating adjacent arcs, defined as padRadius * padAngle.
-      *
-      * @param radius A constant radius.
-      */
-    def padRadius(radius: Double): this.type = js.native
-    /**
-      * Sets the pad radius to null indicating that the pad radius should be automatically computed as sqrt(innerRadius * innerRadius + outerRadius * outerRadius), and returns this arc generator.
-      *
-      * The pad radius determines the fixed linear distance separating adjacent arcs, defined as padRadius * padAngle.
-      *
-      * @param radius null to set automatic pad radius calculation.
-      */
-    def padRadius(radius: Null): this.type = js.native
+    @JSName("padRadius")
+    def padRadius_Union(): (js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ Any, Double]) | Null = js.native
     
     /**
       * Returns the current start angle accessor, which defaults to a function returning the startAngle property
       * of the first argument passed into it.
       */
-    def startAngle(): js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, Double] = js.native
+    def startAngle(): js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ Any, Double] = js.native
     /**
       * Sets the start angle to the specified function and returns this arc generator.
       *
@@ -592,7 +607,7 @@ object mod {
       * @param angle An accessor function returning a number in radians to be used as an angle. The accessor function is invoked in the same "this" context as the generator was invoked in and
       * receives the same arguments that were passed into the arc generator.
       */
-    def startAngle(angle: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, Double]): this.type = js.native
+    def startAngle(angle: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ Any, Double]): this.type = js.native
     /**
       * Sets the start angle to the specified number and returns this arc generator.
       *
@@ -616,7 +631,7 @@ object mod {
       *
       * @param data Array of data elements.
       */
-    def apply(data: Iterable[Datum]): String | Null = js.native
+    def apply(data: js.Iterable[Datum]): String | Null = js.native
     
     /**
       * Returns the current startAngle accessor. The default startAngle accessor is a function returning the first element of a
@@ -644,25 +659,15 @@ object mod {
     def angle(angle: Double): this.type = js.native
     
     /**
+      * Equivalent to line.context.
+      */
+    def context(): this.type = js.native
+    def context(context: CanvasRenderingContext2D): this.type = js.native
+    /**
       * Returns the current rendering context, which defaults to null.
       */
-    def context(): CanvasRenderingContext2D | Null = js.native
-    /**
-      * Sets the rendering context to null and returns this radial area generator.
-      *
-      * A path data string representing the generated radial area will be returned when the generator is invoked with data.
-      *
-      * @param context null, to remove rendering context.
-      */
-    def context(context: Null): this.type = js.native
-    /**
-      * Sets the rendering context and returns this radial area generator.
-      *
-      * If the context is not null, then the generated radial area is rendered to this context as a sequence of path method calls.
-      *
-      * @param context The rendering context.
-      */
-    def context(context: CanvasRenderingContext2D): this.type = js.native
+    @JSName("context")
+    def context_Union(): CanvasRenderingContext2D | Null = js.native
     
     /**
       * Returns the current curve factory, which defaults to curveLinear.
@@ -681,6 +686,7 @@ object mod {
       *
       * The generic allows to cast the curve factory to a specific type, if known.
       */
+    // tslint:disable-next-line:no-unnecessary-generics
     @JSName("curve")
     def curve_C_CurveFactory_C[C /* <: CurveFactory */](): C = js.native
     
@@ -727,9 +733,10 @@ object mod {
     def defined(defined: Boolean): this.type = js.native
     
     /**
-      * Returns the current endAngle accessor, which defaults to null, indicating that the previously-computed startAngle value should be reused for the endAngle value.
+      * Equivalent to area.x1, except the accessor returns the angle in radians, with 0 at -y (12 o’clock).
+      * Note: typically angle is used instead of setting separate start and end angles.
       */
-    def endAngle(): (js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]) | Null = js.native
+    def endAngle(): this.type = js.native
     /**
       * Sets endAngle to the specified function and returns this radial area generator.
       *
@@ -741,20 +748,12 @@ object mod {
       * being passed the element d, the index i, and the array data as three arguments.
       */
     def endAngle(angle: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]): this.type = js.native
-    /**
-      * Sets endAngle to a constant number and returns this radial area generator.
-      *
-      * @param angle A constant value in radians with 0 at -y (12 o’clock).
-      */
     def endAngle(angle: Double): this.type = js.native
     /**
-      * Sets endAngle to null and returns this radial area generator.
-      *
-      * Setting endAngle to null indicates that the previously-computed startAngle value should be reused for the endAngle value.
-      *
-      * @param angle null.
+      * Returns the current endAngle accessor, which defaults to null, indicating that the previously-computed startAngle value should be reused for the endAngle value.
       */
-    def endAngle(angle: Null): this.type = js.native
+    @JSName("endAngle")
+    def endAngle_Union(): (js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]) | Null = js.native
     
     /**
       * Returns the current innerRadius accessor. The default innerRadius accessor is a function a constant value of zero.
@@ -802,12 +801,9 @@ object mod {
     def lineStartAngle(): LineRadial_[Datum] = js.native
     
     /**
-      * Returns the current outerRadius accessor or null. The default outerRadius accessor is a function returning the second element of a
-      * two-element array of numbers.
-      *
-      * If the outerRadius accessor is null, the previously-computed innerRadius value is reused for the outerRadius value.
+      * Equivalent to area.y1, except the accessor returns the radius: the distance from the origin ⟨0,0⟩.
       */
-    def outerRadius(): (js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]) | Null = js.native
+    def outerRadius(): this.type = js.native
     /**
       * Sets outerRadius to the specified function and returns this radial area generator.
       *
@@ -818,20 +814,15 @@ object mod {
       * being passed the element d, the index i, and the array data as three arguments.
       */
     def outerRadius(radius: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]): this.type = js.native
-    /**
-      * Sets outerRadius to a constant number and returns this radial area generator.
-      *
-      * @param radius A constant value.
-      */
     def outerRadius(radius: Double): this.type = js.native
     /**
-      * Sets outerRadius to null and returns this radial area generator.
+      * Returns the current outerRadius accessor or null. The default outerRadius accessor is a function returning the second element of a
+      * two-element array of numbers.
       *
-      * Setting outerRadius to null indicates that the previously-computed innerRadius value should be reused for the outerRadius value.
-      *
-      * @param radius null.
+      * If the outerRadius accessor is null, the previously-computed innerRadius value is reused for the outerRadius value.
       */
-    def outerRadius(radius: Null): this.type = js.native
+    @JSName("outerRadius")
+    def outerRadius_Union(): (js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]) | Null = js.native
     
     /**
       * Returns the current innerRadius accessor. The default innerRadius accessor is a function returning a constant value of zero.
@@ -893,28 +884,18 @@ object mod {
       *
       * @param data Array of data elements.
       */
-    def apply(data: Iterable[Datum]): String | Null = js.native
+    def apply(data: js.Iterable[Datum]): String | Null = js.native
     
+    /**
+      * Sets the context and returns this area generator.
+      */
+    def context(): this.type = js.native
+    def context(context: CanvasRenderingContext2D): this.type = js.native
     /**
       * Returns the current rendering context, which defaults to null.
       */
-    def context(): CanvasRenderingContext2D | Null = js.native
-    /**
-      * Sets the rendering context to null and returns this area generator.
-      *
-      * A path data string representing the generated area will be returned when the generator is invoked with data.
-      *
-      * @param context null, to remove rendering context.
-      */
-    def context(context: Null): this.type = js.native
-    /**
-      * Sets the rendering context and returns this area generator.
-      *
-      * If the context is not null, then the generated area is rendered to this context as a sequence of path method calls.
-      *
-      * @param context The rendering context.
-      */
-    def context(context: CanvasRenderingContext2D): this.type = js.native
+    @JSName("context")
+    def context_Union(): CanvasRenderingContext2D | Null = js.native
     
     /**
       * Returns the current curve factory, which defaults to curveLinear.
@@ -931,6 +912,7 @@ object mod {
       *
       * The generic allows to cast the curve factory to a specific type, if known.
       */
+    // tslint:disable-next-line:no-unnecessary-generics
     @JSName("curve")
     def curve_C_CurveFactory_C[C /* <: CurveFactory */](): C = js.native
     
@@ -1046,9 +1028,9 @@ object mod {
     def x0(x: Double): this.type = js.native
     
     /**
-      * Returns the current x1 accessor, which defaults to null, indicating that the previously-computed x0 value should be reused for the x1 value.
+      * Sets the x1 accessor to the specified number and returns this area generator.
       */
-    def x1(): (js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]) | Null = js.native
+    def x1(): this.type = js.native
     /**
       * Sets x1 to the specified function and returns this area generator.
       *
@@ -1059,20 +1041,12 @@ object mod {
       * being passed the element d, the index i, and the array data as three arguments.
       */
     def x1(x: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]): this.type = js.native
-    /**
-      * Sets x1 to a constant number and returns this area generator.
-      *
-      * @param x A constant value.
-      */
     def x1(x: Double): this.type = js.native
     /**
-      * Sets x1 to null and returns this area generator.
-      *
-      * Setting x1 to null indicates that the previously-computed x0 value should be reused for the x1 value.
-      *
-      * @param x null.
+      * Returns the current x1 accessor, which defaults to null, indicating that the previously-computed x0 value should be reused for the x1 value.
       */
-    def x1(x: Null): this.type = js.native
+    @JSName("x1")
+    def x1_Union(): (js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]) | Null = js.native
     
     /**
       * Returns the current y0 accessor. The default y0 accessor is a function returning a constant value of zero.
@@ -1119,12 +1093,9 @@ object mod {
     def y0(y: Double): this.type = js.native
     
     /**
-      * Returns the current y1 accessor or null. The default y1 accessor is a function returning the second element of a
-      * two-element array of numbers.
-      *
-      * If the y1 accessor is null, the previously-computed y0 value is reused for the y1 value.
+      * sets the y1 accessor to the specified number and returns this area generator.
       */
-    def y1(): (js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]) | Null = js.native
+    def y1(): this.type = js.native
     /**
       * Sets y1 to the specified function and returns this area generator.
       *
@@ -1135,20 +1106,15 @@ object mod {
       * being passed the element d, the index i, and the array data as three arguments.
       */
     def y1(y: js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]): this.type = js.native
-    /**
-      * Sets y1 to a constant number and returns this area generator.
-      *
-      * @param y A constant value.
-      */
     def y1(y: Double): this.type = js.native
     /**
-      * Sets y1 to null and returns this area generator.
+      * Returns the current y1 accessor or null. The default y1 accessor is a function returning the second element of a
+      * two-element array of numbers.
       *
-      * Setting y1 to null indicates that the previously-computed y0 value should be reused for the y1 value.
-      *
-      * @param y null.
+      * If the y1 accessor is null, the previously-computed y0 value is reused for the y1 value.
       */
-    def y1(y: Null): this.type = js.native
+    @JSName("y1")
+    def y1_Union(): (js.Function3[/* d */ Datum, /* index */ Double, /* data */ js.Array[Datum], Double]) | Null = js.native
   }
   
   @js.native
@@ -1419,7 +1385,7 @@ object mod {
       *
       * @param data Array of data elements.
       */
-    def apply(data: Iterable[Datum]): String | Null = js.native
+    def apply(data: js.Iterable[Datum]): String | Null = js.native
     
     /**
       * Returns the current angle accessor function, which defaults to a function returning first element of a two-element array of numbers.
@@ -1445,25 +1411,15 @@ object mod {
     def angle(angle: Double): this.type = js.native
     
     /**
+      * Equivalent to line.context.
+      */
+    def context(): this.type = js.native
+    def context(context: CanvasRenderingContext2D): this.type = js.native
+    /**
       * Returns the current rendering context, which defaults to null.
       */
-    def context(): CanvasRenderingContext2D | Null = js.native
-    /**
-      * Sets the rendering context to null and returns this radial line generator.
-      *
-      * A path data string representing the generated radial line will be returned when the generator is invoked with data.
-      *
-      * @param context null, to remove rendering context.
-      */
-    def context(context: Null): this.type = js.native
-    /**
-      * Sets the rendering context and returns this radial line generator.
-      *
-      * If the context is not null, then the generated radial line is rendered to this context as a sequence of path method calls.
-      *
-      * @param context The rendering context.
-      */
-    def context(context: CanvasRenderingContext2D): this.type = js.native
+    @JSName("context")
+    def context_Union(): CanvasRenderingContext2D | Null = js.native
     
     /**
       * Returns the current curve factory, which defaults to curveLinear.
@@ -1483,6 +1439,7 @@ object mod {
       *
       * The generic allows to cast the curve factory to a specific type, if known.
       */
+    // tslint:disable-next-line:no-unnecessary-generics
     @JSName("curve")
     def curve_C_UnionCurveFactoryCurveFactoryLineOnly_C[C /* <: CurveFactory | CurveFactoryLineOnly */](): C = js.native
     
@@ -1565,28 +1522,18 @@ object mod {
       *
       * @param data Array of data elements.
       */
-    def apply(data: Iterable[Datum]): String | Null = js.native
+    def apply(data: js.Iterable[Datum]): String | Null = js.native
     
+    /**
+      * Sets the context and returns this line generator.
+      */
+    def context(): this.type = js.native
+    def context(context: CanvasRenderingContext2D): this.type = js.native
     /**
       * Returns the current rendering context, which defaults to null.
       */
-    def context(): CanvasRenderingContext2D | Null = js.native
-    /**
-      * Sets the rendering context to null and returns this line generator.
-      *
-      * A path data string representing the generated line will be returned when the generator is invoked with data.
-      *
-      * @param context null, to remove rendering context.
-      */
-    def context(context: Null): this.type = js.native
-    /**
-      * Sets the rendering context and returns this line generator.
-      *
-      * If the context is not null, then the generated line is rendered to this context as a sequence of path method calls.
-      *
-      * @param context The rendering context.
-      */
-    def context(context: CanvasRenderingContext2D): this.type = js.native
+    @JSName("context")
+    def context_Union(): CanvasRenderingContext2D | Null = js.native
     
     /**
       * Returns the current curve factory, which defaults to curveLinear.
@@ -1603,6 +1550,7 @@ object mod {
       *
       * The generic allows to cast the curve factory to a specific type, if known.
       */
+    // tslint:disable-next-line:no-unnecessary-generics
     @JSName("curve")
     def curve_C_UnionCurveFactoryCurveFactoryLineOnly_C[C /* <: CurveFactory | CurveFactoryLineOnly */](): C = js.native
     
@@ -1696,96 +1644,6 @@ object mod {
   }
   
   @js.native
-  trait Link[This, LinkDatum, NodeDatum] extends StObject {
-    
-    /**
-      * Generates a link for the given arguments.
-      *
-      * IMPORTANT: If the rendering context of the link generator is null,
-      * then the link is returned as a path data string.
-      *
-      * The "this" context within which this function is invoked, will be the context within which the accessor methods of the generator are invoked.
-      * All arguments passed into this function, will be passed to the accessor functions of the generator.
-      *
-      * @param d The datum for which the link is to be generated.
-      */
-    def apply(d: LinkDatum, args: js.Any*): String | Null = js.native
-    
-    /**
-      * Returns the current rendering context, which defaults to null.
-      */
-    def context(): CanvasRenderingContext2D | Null = js.native
-    /**
-      * Sets the rendering context to null and returns this link generator.
-      *
-      * A path data string representing the generated link will be returned when the generator is invoked with data.
-      *
-      * @param context null, to remove rendering context.
-      */
-    def context(context: Null): this.type = js.native
-    /**
-      * Sets the rendering context and returns this link generator.
-      *
-      * If the context is not null, then the generated link is rendered to this context as a sequence of path method calls.
-      *
-      * @param context The rendering context.
-      */
-    def context(context: CanvasRenderingContext2D): this.type = js.native
-    
-    /**
-      * Returns the current source node accessor function.
-      * The default source accessor function returns a two element array [x, y].
-      */
-    def source(): js.ThisFunction2[/* this */ This, /* d */ LinkDatum, /* repeated */ js.Any, NodeDatum] = js.native
-    /**
-      * Sets the source accessor to the specified function and returns this link generator.
-      *
-      * @param source Source node accessor function. The accessor function is invoked in the same "this" context as the generator was invoked in and
-      * receives the same arguments that were passed into the link generator. The default target accessor function returns a two element array [x, y].
-      */
-    def source(source: js.ThisFunction2[/* this */ This, /* d */ LinkDatum, /* repeated */ js.Any, NodeDatum]): this.type = js.native
-    
-    /**
-      * Returns the current target node accessor function.
-      * The default target accessor function returns a two element array [x, y].
-      */
-    def target(): js.ThisFunction2[/* this */ This, /* d */ LinkDatum, /* repeated */ js.Any, NodeDatum] = js.native
-    /**
-      * Sets the target accessor to the specified function and returns this link generator.
-      *
-      * @param target Target node accessor function. The accessor function is invoked in the same "this" context as the generator was invoked in and
-      * receives the same arguments that were passed into the link generator. The default target accessor function returns a two element array [x, y].
-      */
-    def target(target: js.ThisFunction2[/* this */ This, /* d */ LinkDatum, /* repeated */ js.Any, NodeDatum]): this.type = js.native
-    
-    /**
-      * Returns the current x-accessor, which defaults to a function accepting an number array
-      * as its argument an returning the first element of the array.
-      */
-    def x(): js.ThisFunction2[/* this */ This, /* node */ NodeDatum, /* repeated */ js.Any, Double] = js.native
-    /**
-      * Sets the x-accessor to the specified function and returns this link generator.
-      *
-      * @param x x-coordinate accessor function. The accessor function is invoked in the same "this" context as the generator was invoked in and
-      * receives as its first argument a node object followed by all additional arguments that were passed into the link generator.
-      */
-    def x(x: js.ThisFunction2[/* this */ This, /* node */ NodeDatum, /* repeated */ js.Any, Double]): this.type = js.native
-    
-    /**
-      * Returns the current y-accessor, which defaults to a function accepting an number array
-      * as its argument an returning the second element of the array.
-      */
-    def y(): js.ThisFunction2[/* this */ This, /* node */ NodeDatum, /* repeated */ js.Any, Double] = js.native
-    /**
-      * Sets the y-accessor to the specified function and returns this link generator.
-      *
-      * @param y y-coordinate accessor function. The accessor function is invoked in the same "this" context as the generator was invoked in and
-      * receives as its first argument a node object followed by all additional arguments that were passed into the link generator.
-      */
-    def y(y: js.ThisFunction2[/* this */ This, /* node */ NodeDatum, /* repeated */ js.Any, Double]): this.type = js.native
-  }
-  
-  @js.native
   trait LinkRadial_[This, LinkDatum, NodeDatum] extends StObject {
     
     /**
@@ -1799,13 +1657,13 @@ object mod {
       *
       * @param d The datum for which the link is to be generated.
       */
-    def apply(d: LinkDatum, args: js.Any*): String | Null = js.native
+    def apply(d: LinkDatum, args: Any*): String | Null = js.native
     
     /**
       * Returns the current angle accessor, which defaults to a function accepting an number array
       * as its argument an returning the first element of the array.
       */
-    def angle(): js.ThisFunction2[/* this */ This, /* node */ NodeDatum, /* repeated */ js.Any, Double] = js.native
+    def angle(): js.ThisFunction2[/* this */ This, /* node */ NodeDatum, /* repeated */ Any, Double] = js.native
     /**
       * Sets the angle accessor to the specified function and returns this radial link generator.
       * The angle is stated in radians, with 0 at -y (12 o’clock).
@@ -1813,34 +1671,24 @@ object mod {
       * @param angle Angle accessor function. The accessor function is invoked in the same "this" context as the generator was invoked in and
       * receives as its first argument a node object followed by all additional arguments that were passed into the radial link generator.
       */
-    def angle(angle: js.ThisFunction2[/* this */ This, /* node */ NodeDatum, /* repeated */ js.Any, Double]): this.type = js.native
+    def angle(angle: js.ThisFunction2[/* this */ This, /* node */ NodeDatum, /* repeated */ Any, Double]): this.type = js.native
     
+    /**
+      * Sets the context and returns this link generator.
+      */
+    def context(): this.type = js.native
+    def context(context: CanvasRenderingContext2D): this.type = js.native
     /**
       * Returns the current rendering context, which defaults to null.
       */
-    def context(): CanvasRenderingContext2D | Null = js.native
-    /**
-      * Sets the rendering context to null and returns this radial link generator.
-      *
-      * A path data string representing the generated radial link will be returned when the generator is invoked with data.
-      *
-      * @param context null, to remove rendering context.
-      */
-    def context(context: Null): this.type = js.native
-    /**
-      * Sets the rendering context and returns this radial link generator.
-      *
-      * If the context is not null, then the generated radial area is rendered to this context as a sequence of path method calls.
-      *
-      * @param context The rendering context.
-      */
-    def context(context: CanvasRenderingContext2D): this.type = js.native
+    @JSName("context")
+    def context_Union(): CanvasRenderingContext2D | Null = js.native
     
     /**
       * Returns the current radius accessor, which defaults to a function accepting an number array
       * as its argument an returning the second element of the array.
       */
-    def radius(): js.ThisFunction2[/* this */ This, /* node */ NodeDatum, /* repeated */ js.Any, Double] = js.native
+    def radius(): js.ThisFunction2[/* this */ This, /* node */ NodeDatum, /* repeated */ Any, Double] = js.native
     /**
       * Sets the radius accessor to the specified function and returns this radial link generator.
       * The radius is measured as the distance from the origin ⟨0,0⟩.
@@ -1848,33 +1696,113 @@ object mod {
       * @param radius Radius accessor function. The accessor function is invoked in the same "this" context as the generator was invoked in and
       * receives as its first argument a node object followed by all additional arguments that were passed into the radial link generator.
       */
-    def radius(radius: js.ThisFunction2[/* this */ This, /* node */ NodeDatum, /* repeated */ js.Any, Double]): this.type = js.native
+    def radius(radius: js.ThisFunction2[/* this */ This, /* node */ NodeDatum, /* repeated */ Any, Double]): this.type = js.native
     
     /**
       * Returns the current source node accessor function.
       * The default source accessor function returns a two element array [x, y].
       */
-    def source(): js.ThisFunction2[/* this */ This, /* d */ LinkDatum, /* repeated */ js.Any, NodeDatum] = js.native
+    def source(): js.ThisFunction2[/* this */ This, /* d */ LinkDatum, /* repeated */ Any, NodeDatum] = js.native
     /**
       * Sets the source accessor to the specified function and returns this radial link generator.
       *
       * @param source Source node accessor function. The accessor function is invoked in the same "this" context as the generator was invoked in and
       * receives the same arguments that were passed into the radial link generator. The default target accessor function returns a two element array [x, y].
       */
-    def source(source: js.ThisFunction2[/* this */ This, /* d */ LinkDatum, /* repeated */ js.Any, NodeDatum]): this.type = js.native
+    def source(source: js.ThisFunction2[/* this */ This, /* d */ LinkDatum, /* repeated */ Any, NodeDatum]): this.type = js.native
     
     /**
       * Returns the current target node accessor function.
       * The default target accessor function returns a two element array [x, y].
       */
-    def target(): js.ThisFunction2[/* this */ This, /* d */ LinkDatum, /* repeated */ js.Any, NodeDatum] = js.native
+    def target(): js.ThisFunction2[/* this */ This, /* d */ LinkDatum, /* repeated */ Any, NodeDatum] = js.native
     /**
       * Sets the target accessor to the specified function and returns this radial link generator.
       *
       * @param target Target node accessor function. The accessor function is invoked in the same "this" context as the generator was invoked in and
       * receives the same arguments that were passed into the radial link generator. The default target accessor function returns a two element array [x, y].
       */
-    def target(target: js.ThisFunction2[/* this */ This, /* d */ LinkDatum, /* repeated */ js.Any, NodeDatum]): this.type = js.native
+    def target(target: js.ThisFunction2[/* this */ This, /* d */ LinkDatum, /* repeated */ Any, NodeDatum]): this.type = js.native
+  }
+  
+  @js.native
+  trait Link_[This, LinkDatum, NodeDatum] extends StObject {
+    
+    /**
+      * Generates a link for the given arguments.
+      *
+      * IMPORTANT: If the rendering context of the link generator is null,
+      * then the link is returned as a path data string.
+      *
+      * The "this" context within which this function is invoked, will be the context within which the accessor methods of the generator are invoked.
+      * All arguments passed into this function, will be passed to the accessor functions of the generator.
+      *
+      * @param d The datum for which the link is to be generated.
+      */
+    def apply(d: LinkDatum, args: Any*): String | Null = js.native
+    
+    /**
+      * Sets the context and returns this link generator.
+      */
+    def context(): this.type = js.native
+    def context(context: CanvasRenderingContext2D): this.type = js.native
+    /**
+      * Returns the current rendering context, which defaults to null.
+      */
+    @JSName("context")
+    def context_Union(): CanvasRenderingContext2D | Null = js.native
+    
+    /**
+      * Returns the current source node accessor function.
+      * The default source accessor function returns a two element array [x, y].
+      */
+    def source(): js.ThisFunction2[/* this */ This, /* d */ LinkDatum, /* repeated */ Any, NodeDatum] = js.native
+    /**
+      * Sets the source accessor to the specified function and returns this link generator.
+      *
+      * @param source Source node accessor function. The accessor function is invoked in the same "this" context as the generator was invoked in and
+      * receives the same arguments that were passed into the link generator. The default target accessor function returns a two element array [x, y].
+      */
+    def source(source: js.ThisFunction2[/* this */ This, /* d */ LinkDatum, /* repeated */ Any, NodeDatum]): this.type = js.native
+    
+    /**
+      * Returns the current target node accessor function.
+      * The default target accessor function returns a two element array [x, y].
+      */
+    def target(): js.ThisFunction2[/* this */ This, /* d */ LinkDatum, /* repeated */ Any, NodeDatum] = js.native
+    /**
+      * Sets the target accessor to the specified function and returns this link generator.
+      *
+      * @param target Target node accessor function. The accessor function is invoked in the same "this" context as the generator was invoked in and
+      * receives the same arguments that were passed into the link generator. The default target accessor function returns a two element array [x, y].
+      */
+    def target(target: js.ThisFunction2[/* this */ This, /* d */ LinkDatum, /* repeated */ Any, NodeDatum]): this.type = js.native
+    
+    /**
+      * Returns the current x-accessor, which defaults to a function accepting an number array
+      * as its argument an returning the first element of the array.
+      */
+    def x(): js.ThisFunction2[/* this */ This, /* node */ NodeDatum, /* repeated */ Any, Double] = js.native
+    /**
+      * Sets the x-accessor to the specified function and returns this link generator.
+      *
+      * @param x x-coordinate accessor function. The accessor function is invoked in the same "this" context as the generator was invoked in and
+      * receives as its first argument a node object followed by all additional arguments that were passed into the link generator.
+      */
+    def x(x: js.ThisFunction2[/* this */ This, /* node */ NodeDatum, /* repeated */ Any, Double]): this.type = js.native
+    
+    /**
+      * Returns the current y-accessor, which defaults to a function accepting an number array
+      * as its argument an returning the second element of the array.
+      */
+    def y(): js.ThisFunction2[/* this */ This, /* node */ NodeDatum, /* repeated */ Any, Double] = js.native
+    /**
+      * Sets the y-accessor to the specified function and returns this link generator.
+      *
+      * @param y y-coordinate accessor function. The accessor function is invoked in the same "this" context as the generator was invoked in and
+      * receives as its first argument a node object followed by all additional arguments that were passed into the link generator.
+      */
+    def y(y: js.ThisFunction2[/* this */ This, /* node */ NodeDatum, /* repeated */ Any, Double]): this.type = js.native
   }
   
   trait PieArcDatum[T] extends StObject {
@@ -1950,12 +1878,12 @@ object mod {
       *
       * @param data Array of data elements.
       */
-    def apply(data: js.Array[Datum], args: js.Any*): js.Array[PieArcDatum[Datum]] = js.native
+    def apply(data: js.Array[Datum], args: Any*): js.Array[PieArcDatum[Datum]] = js.native
     
     /**
       * Returns the current end angle accessor, which defaults to a function returning a constant 2*pi.
       */
-    def endAngle(): js.ThisFunction2[/* this */ This, /* data */ js.Array[Datum], /* repeated */ js.Any, Double] = js.native
+    def endAngle(): js.ThisFunction2[/* this */ This, /* data */ js.Array[Datum], /* repeated */ Any, Double] = js.native
     /**
       * Sets the overall end angle of the pie to the specified function and returns this pie generator.
       *
@@ -1970,9 +1898,7 @@ object mod {
       *
       * @param angle An angle accessor function, which is invoked once, being passed the same arguments and this context as the pie generator.
       */
-    def endAngle(
-      angle: js.ThisFunction2[/* this */ This, /* data */ js.Array[Datum], /* repeated */ js.Any, Double]
-    ): this.type = js.native
+    def endAngle(angle: js.ThisFunction2[/* this */ This, /* data */ js.Array[Datum], /* repeated */ Any, Double]): this.type = js.native
     /**
       * Sets the overall end angle of the pie to the specified number and returns this pie generator.
       *
@@ -1991,7 +1917,7 @@ object mod {
     /**
       * Returns the current pad angle accessor, which defaults to a function returning a constant zero.
       */
-    def padAngle(): js.ThisFunction2[/* this */ This, /* data */ js.Array[Datum], /* repeated */ js.Any, Double] = js.native
+    def padAngle(): js.ThisFunction2[/* this */ This, /* data */ js.Array[Datum], /* repeated */ Any, Double] = js.native
     /**
       * Sets the pad angle to the specified function and returns this pie generator.
       *
@@ -2003,9 +1929,7 @@ object mod {
       *
       * @param angle An angle accessor function, which is invoked once, being passed the same arguments and this context as the pie generator.
       */
-    def padAngle(
-      angle: js.ThisFunction2[/* this */ This, /* data */ js.Array[Datum], /* repeated */ js.Any, Double]
-    ): this.type = js.native
+    def padAngle(angle: js.ThisFunction2[/* this */ This, /* data */ js.Array[Datum], /* repeated */ Any, Double]): this.type = js.native
     /**
       * Sets the pad angle to the specified number and returns this pie generator.
       *
@@ -2047,37 +1971,29 @@ object mod {
     def sort(comparator: Null): this.type = js.native
     
     /**
-      * Returns the current value comparator, which defaults to descending value.
-      */
-    def sortValues(): (js.Function2[/* a */ Double, /* b */ Double, Double]) | Null = js.native
-    /**
       * Sets the value comparator to the specified function and returns this pie generator.
       *
       * If both the data comparator and the value comparator are null, then arcs are positioned in the original input order.
       * Otherwise, the data is sorted according to the data comparator, and the resulting order is used.
       * Setting the value comparator implicitly sets the data comparator to null.
       *
-      * Sorting does not affect the order of the generated arc array which is always in the same order as the input data array;
-      * it merely affects the computed angles of each arc. The first arc starts at the start angle and the last arc ends at the end angle.
-      *
-      * @param comparator The value comparator takes two arguments a and b which are values derived from the input data array using the value accessor, not the data elements.
+      * The value comparator is similar to the data comparator, except the two arguments a and b are values derived from the input data array using the value accessor, not the data elements.
       * If the arc for a should be before the arc for b, then the comparator must return a number less than zero;
-      * if the arc for a should be after the arc for b, then the comparator must return a number greater than zero; returning zero means that the relative order of a and b is unspecified.
+      * if the arc for a should be after the arc for b, then the comparator must return a number greater than zero;
+      * returning zero means that the relative order of a and b is unspecified.
       */
+    def sortValues(): this.type = js.native
     def sortValues(comparator: js.Function2[/* a */ Double, /* b */ Double, Double]): this.type = js.native
     /**
-      * Sets the value comparator to null and returns this pie generator.
-      *
-      * If both the data comparator and the value comparator are null, then arcs are positioned in the original input order.
-      *
-      * @param comparator null, to set the pie generator to use the original input order or use the data comparator, if any.
+      * Returns the current value comparator, which defaults to descending value.
       */
-    def sortValues(comparator: Null): this.type = js.native
+    @JSName("sortValues")
+    def sortValues_Union(): (js.Function2[/* a */ Double, /* b */ Double, Double]) | Null = js.native
     
     /**
       * Returns the current start angle accessor, which defaults to a function returning a constant zero.
       */
-    def startAngle(): js.ThisFunction2[/* this */ This, /* data */ js.Array[Datum], /* repeated */ js.Any, Double] = js.native
+    def startAngle(): js.ThisFunction2[/* this */ This, /* data */ js.Array[Datum], /* repeated */ Any, Double] = js.native
     /**
       * Sets the overall start angle of the pie to the specified function and returns this pie generator.
       *
@@ -2090,9 +2006,7 @@ object mod {
       *
       * @param angle An angle accessor function, which is invoked once, being passed the same arguments and this context as the pie generator.
       */
-    def startAngle(
-      angle: js.ThisFunction2[/* this */ This, /* data */ js.Array[Datum], /* repeated */ js.Any, Double]
-    ): this.type = js.native
+    def startAngle(angle: js.ThisFunction2[/* this */ This, /* data */ js.Array[Datum], /* repeated */ Any, Double]): this.type = js.native
     /**
       * Sets the overall start angle of the pie to the specified number and returns this pie generator.
       *
@@ -2186,33 +2100,22 @@ object mod {
       *
       * @param data Array of data elements.
       */
-    def apply(data: Iterable[Datum], args: js.Any*): js.Array[Series[Datum, Key]] = js.native
+    def apply(data: js.Iterable[Datum], args: Any*): js.Array[Series[Datum, Key]] = js.native
     
     /**
       * Returns the current keys accessor, which defaults to the empty array.
       */
-    def keys(): js.ThisFunction2[/* this */ This, /* data */ js.Array[Datum], /* repeated */ js.Any, js.Array[Key]] = js.native
+    def keys(): js.ThisFunction2[/* this */ This, /* data */ js.Array[Datum], /* repeated */ Any, js.Array[Key]] = js.native
     /**
       * Sets the keys accessor to the specified function or array and returns this stack generator.
-      *
-      * A series (layer) is generated for each key. Keys are typically strings, but they may be arbitrary values.
+      * A series (layer) is generated for each key.
+      * Keys are typically strings, but they may be arbitrary values.
       * The series’ key is passed to the value accessor, along with each data point, to compute the point’s value.
-      *
-      * @param keys An accessor function returning the array of keys.
-      *             The accessor function is invoked with the "this" context of the Stack generator and passed the same arguments passed into the generator.
       */
+    def keys(keys: js.Iterable[Key]): this.type = js.native
     def keys(
-      keys: js.ThisFunction2[/* this */ This, /* data */ js.Array[Datum], /* repeated */ js.Any, js.Array[Key]]
+      keys: js.ThisFunction2[/* this */ This, /* data */ js.Array[Datum], /* repeated */ Any, js.Array[Key]]
     ): this.type = js.native
-    /**
-      * Sets the keys accessor to the specified function or array and returns this stack generator.
-      *
-      * A series (layer) is generated for each key. Keys are typically strings, but they may be arbitrary values.
-      * The series’ key is passed to the value accessor, along with each data point, to compute the point’s value.
-      *
-      * @param keys An array of keys.
-      */
-    def keys(keys: Iterable[Key]): this.type = js.native
     
     /**
       * Returns the current offset accessor, which defaults to stackOffsetNone; this uses a zero baseline.
@@ -2235,7 +2138,7 @@ object mod {
     /**
       * Returns the current order accessor, which defaults to stackOrderNone; this uses the order given by the key accessor.
       */
-    def order(): js.Function1[/* series */ Series[Datum, Key], Iterable[Double]] = js.native
+    def order(): js.Function1[/* series */ Series[Datum, Key], js.Iterable[Double]] = js.native
     /**
       * Sets the order accessor to the specified function and returns this stack generator.
       *
@@ -2246,22 +2149,13 @@ object mod {
       *
       * @param order A function returning a sort order array. It is passed the generated series array and must return an array of numeric indexes representing the stack order.
       */
-    def order(order: js.Function1[/* series */ Series[Datum, Key], Iterable[Double]]): this.type = js.native
-    /**
-      * Reset the order to use stackOrderNone; this uses the order given by the key accessor.
-      *
-      * @param order null to set to the default stackOrderNone.
-      */
-    def order(order: Null): this.type = js.native
+    def order(order: js.Function1[/* series */ Series[Datum, Key], js.Iterable[Double]]): this.type = js.native
+    def order(order: js.Iterable[Double]): this.type = js.native
     /**
       * Sets the order accessor to the specified array and returns this stack generator.
-      *
-      * The stack order is computed prior to the offset; thus, the lower value for all points is zero at the time the order is computed.
-      * The index attribute for each series is also not set until after the order is computed.
-      *
-      * @param order An array of numeric indexes representing the stack order.
       */
-    def order(order: Iterable[Double]): this.type = js.native
+    @JSName("order")
+    def order_This(): this.type = js.native
     
     /**
       * Returns the current value accessor, which defaults to a function return the property corresponding to the relevant key from the data element.
@@ -2326,34 +2220,24 @@ object mod {
       *
       * @param d The datum for which the symbol is to be generated.
       */
-    def apply(d: Datum, args: js.Any*): String | Null = js.native
-    def apply(d: Unit, args: js.Any*): String | Null = js.native
+    def apply(d: Datum, args: Any*): String | Null = js.native
+    def apply(d: Unit, args: Any*): String | Null = js.native
     
+    /**
+      * Sets the context and returns this symbol generator.
+      */
+    def context(): this.type = js.native
+    def context(context: CanvasRenderingContext2D): this.type = js.native
     /**
       * Returns the current rendering context, which defaults to null.
       */
-    def context(): CanvasRenderingContext2D | Null = js.native
-    /**
-      * Sets the rendering context to null and returns this symbol generator.
-      *
-      * A path data string representing the generated symbol will be returned when the generator is invoked with data.
-      *
-      * @param context null, to remove rendering context.
-      */
-    def context(context: Null): this.type = js.native
-    /**
-      * Sets the rendering context and returns this symbol generator.
-      *
-      * If the context is not null, then the generated symbol is rendered to this context as a sequence of path method calls.
-      *
-      * @param context The rendering context.
-      */
-    def context(context: CanvasRenderingContext2D): this.type = js.native
+    @JSName("context")
+    def context_Union(): CanvasRenderingContext2D | Null = js.native
     
     /**
       * Returns the current size accessor, which defaults to a function returning a constant value of 64.
       */
-    def size(): js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, Double] = js.native
+    def size(): js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ Any, Double] = js.native
     /**
       * Sets the size to the specified function and returns this symbol generator.
       *
@@ -2363,7 +2247,7 @@ object mod {
       * @param size An accessor function returning a number to be used as a symbol size. The accessor function is invoked in the same "this" context as the generator was invoked in and
       * receives the same arguments that were passed into the symbol generator.
       */
-    def size(size: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, Double]): this.type = js.native
+    def size(size: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ Any, Double]): this.type = js.native
     /**
       * Sets the size to the specified number and returns this symbol generator.
       *
@@ -2374,7 +2258,7 @@ object mod {
     /**
       * Returns the current symbol type accessor, which defaults to a function returning the circle symbol type.
       */
-    def `type`(): js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, SymbolType] = js.native
+    def `type`(): js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ Any, SymbolType] = js.native
     /**
       * Sets the symbol type to the specified function and returns this symbol generator.
       *
@@ -2382,7 +2266,7 @@ object mod {
       * receives the same arguments that were passed into the symbol generator. See symbols for the set of built-in symbol types.
       * To implement a custom symbol type, return an object that implements symbolType.draw.
       */
-    def `type`(`type`: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ js.Any, SymbolType]): this.type = js.native
+    def `type`(`type`: js.ThisFunction2[/* this */ This, /* d */ Datum, /* repeated */ Any, SymbolType]): this.type = js.native
     /**
       * Sets the symbol type to the specified symbol type and returns this symbol generator.
       *

@@ -10,9 +10,7 @@ object wrappedfunctionMod {
   @js.native
   trait WrappedFunction
     extends js.Function
-       with /* key */ StringDictionary[js.Any] {
-    
-    var __sentry__ : js.UndefOr[Boolean] = js.native
+       with /* key */ StringDictionary[Any] {
     
     var __sentry_original__ : js.UndefOr[WrappedFunction] = js.native
     

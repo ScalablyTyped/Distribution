@@ -10,30 +10,97 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  /**
-  Copy files.
-  @param source - Files to copy. If any of the files do not exist, an error will be thrown (does not apply to globs).
-  @param destination - Destination directory.
-  @param options - In addition to the options defined here, options are passed to [globby](https://github.com/sindresorhus/globby#options).
-  @example
-  ```
-  import cpy = require('cpy');
-  (async () => {
-  	await cpy(['source/ *.png', '!source/goat.png'], 'destination');
-  	console.log('Files copied!');
-  })();
-  ```
-  */
-  inline def apply(source: String, destination: String): js.Promise[js.Array[String]] & ProgressEmitter = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]] & ProgressEmitter]
-  inline def apply(source: String, destination: String, options: Options): js.Promise[js.Array[String]] & ProgressEmitter = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]] & ProgressEmitter]
-  inline def apply(source: js.Array[String], destination: String): js.Promise[js.Array[String]] & ProgressEmitter = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]] & ProgressEmitter]
-  inline def apply(source: js.Array[String], destination: String, options: Options): js.Promise[js.Array[String]] & ProgressEmitter = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]] & ProgressEmitter]
-  
   @JSImport("cpy", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  /* Inlined parent std.Readonly<globby.globby.GlobbyOptions> */
+  inline def default(source: String, destination: String): js.Promise[js.Array[String]] & ProgressEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]] & ProgressEmitter]
+  inline def default(source: String, destination: String, options: Options): js.Promise[js.Array[String]] & ProgressEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]] & ProgressEmitter]
+  inline def default(source: js.Array[String], destination: String): js.Promise[js.Array[String]] & ProgressEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]] & ProgressEmitter]
+  inline def default(source: js.Array[String], destination: String, options: Options): js.Promise[js.Array[String]] & ProgressEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]] & ProgressEmitter]
+  
+  trait CopyStatus extends StObject {
+    
+    var percent: Double
+    
+    var written: Double
+  }
+  object CopyStatus {
+    
+    inline def apply(percent: Double, written: Double): CopyStatus = {
+      val __obj = js.Dynamic.literal(percent = percent.asInstanceOf[js.Any], written = written.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CopyStatus]
+    }
+    
+    extension [Self <: CopyStatus](x: Self) {
+      
+      inline def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
+      
+      inline def setWritten(value: Double): Self = StObject.set(x, "written", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Entry extends StObject {
+    
+    /**
+    	File extension.
+    	@example 'js'
+    	*/
+    val `extension`: String
+    
+    /**
+    	Filename with extension.
+    	@example 'foo.js'
+    	*/
+    val name: String
+    
+    /**
+    	Filename without extension.
+    	@example 'foo'
+    	*/
+    val nameWithoutExtension: String
+    
+    /**
+    	Resolved path to the file.
+    	@example '/tmp/dir/foo.js'
+    	*/
+    val path: String
+    
+    /**
+    	Relative path to the file from cwd.
+    	@example 'dir/foo.js'
+    	*/
+    val relativePath: String
+  }
+  object Entry {
+    
+    inline def apply(
+      `extension`: String,
+      name: String,
+      nameWithoutExtension: String,
+      path: String,
+      relativePath: String
+    ): Entry = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], nameWithoutExtension = nameWithoutExtension.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], relativePath = relativePath.asInstanceOf[js.Any])
+      __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Entry]
+    }
+    
+    extension [Self <: Entry](x: Self) {
+      
+      inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNameWithoutExtension(value: String): Self = StObject.set(x, "nameWithoutExtension", value.asInstanceOf[js.Any])
+      
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      
+      inline def setRelativePath(value: String): Self = StObject.set(x, "relativePath", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Inlined parent std.Readonly<globby.globby.Options> */
   /* Inlined parent cp-file.cp-file.Options */
   trait Options extends StObject {
     
@@ -46,18 +113,25 @@ object mod {
     val caseSensitiveMatch: js.UndefOr[Boolean] = js.undefined
     
     /**
-    		Number of files being copied concurrently.
-    		@default (os.cpus().length || 1) * 2
-    		*/
+    	Number of files being copied concurrently.
+    	@default (os.cpus().length || 1) * 2
+    	*/
     val concurrency: js.UndefOr[Double] = js.undefined
     
     /**
-    		Working directory to find source files.
-    		@default process.cwd()
-    		*/
+    	Working directory to find source files.
+    	@default process.cwd()
+    	*/
     val cwd: js.UndefOr[String] = js.undefined
     
     val deep: js.UndefOr[Double] = js.undefined
+    
+    /**
+    	[Permissions](https://en.wikipedia.org/wiki/File-system_permissions#Numeric_notation) for created directories.
+    	It has no effect on Windows.
+    	@default 0o777
+    	*/
+    val directoryMode: js.UndefOr[Double] = js.undefined
     
     val dot: js.UndefOr[Boolean] = js.undefined
     
@@ -66,20 +140,24 @@ object mod {
     val extglob: js.UndefOr[Boolean] = js.undefined
     
     /**
-    		Function to filter files to copy.
-    		Receives a source file object as the first argument.
-    		Return true to include, false to exclude. You can also return a Promise that resolves to true or false.
-    		@example
-    		```
-    		import cpy = require('cpy');
-    		(async () => {
-    			await cpy('foo', 'destination', {
-    				filter: file => file.extension !== '.nocopy'
-    			});
-    		})();
-    		```
-    		*/
-    val filter: js.UndefOr[js.Function1[/* file */ SourceFile, Boolean | js.Promise[Boolean]]] = js.undefined
+    	Function to filter files to copy.
+    	Receives a source file object as the first argument.
+    	Return true to include, false to exclude. You can also return a Promise that resolves to true or false.
+    	@example
+    	```
+    	import cpy from 'cpy';
+    	await cpy('foo', 'destination', {
+    		filter: file => file.extension !== 'nocopy'
+    	});
+    	```
+    	*/
+    val filter: js.UndefOr[js.Function1[/* file */ Entry, Boolean | js.Promise[Boolean]]] = js.undefined
+    
+    /**
+    	Flatten directory tree.
+    	@default false
+    	*/
+    val flat: js.UndefOr[Boolean] = js.undefined
     
     val followSymbolicLinks: js.UndefOr[Boolean] = js.undefined
     
@@ -91,10 +169,12 @@ object mod {
     
     val ignore: js.UndefOr[js.Array[Pattern]] = js.undefined
     
+    val ignoreFiles: js.UndefOr[String | js.Array[String]] = js.undefined
+    
     /**
-    		Ignore junk files.
-    		@default true
-    		*/
+    	Ignore junk files.
+    	@default true
+    	*/
     val ignoreJunk: js.UndefOr[Boolean] = js.undefined
     
     val markDirectories: js.UndefOr[Boolean] = js.undefined
@@ -106,29 +186,24 @@ object mod {
     val onlyFiles: js.UndefOr[Boolean] = js.undefined
     
     /**
-    		Overwrite existing destination file.
-    		@default true
-    		*/
+    	Overwrite existing destination file.
+    	@default true
+    	*/
     val overwrite: js.UndefOr[Boolean] = js.undefined
     
     /**
-    		Preserve path structure.
-    		@default false
-    		*/
-    val parents: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-    		Filename or function returning a filename used to rename every file in `source`.
-    		@example
-    		```
-    		import cpy = require('cpy');
-    		(async () => {
-    			await cpy('foo.js', 'destination', {
-    				rename: basename => `prefix-${basename}`
-    			});
-    		})();
-    		```
-    		*/
+    	Filename or function returning a filename used to rename every file in `source`.
+    	@example
+    	```
+    	import cpy from 'cpy';
+    	await cpy('foo.js', 'destination', {
+    		rename: basename => `prefix-${basename}`
+    	});
+    	await cpy('foo.js', 'destination', {
+    		rename: 'new-name'
+    	});
+    	```
+    	*/
     val rename: js.UndefOr[String | (js.Function1[/* basename */ String, String])] = js.undefined
     
     val stats: js.UndefOr[Boolean] = js.undefined
@@ -176,6 +251,10 @@ object mod {
       
       inline def setDeepUndefined: Self = StObject.set(x, "deep", js.undefined)
       
+      inline def setDirectoryMode(value: Double): Self = StObject.set(x, "directoryMode", value.asInstanceOf[js.Any])
+      
+      inline def setDirectoryModeUndefined: Self = StObject.set(x, "directoryMode", js.undefined)
+      
       inline def setDot(value: Boolean): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
       
       inline def setDotUndefined: Self = StObject.set(x, "dot", js.undefined)
@@ -184,15 +263,19 @@ object mod {
       
       inline def setExpandDirectoriesUndefined: Self = StObject.set(x, "expandDirectories", js.undefined)
       
-      inline def setExpandDirectoriesVarargs(value: String*): Self = StObject.set(x, "expandDirectories", js.Array(value :_*))
+      inline def setExpandDirectoriesVarargs(value: String*): Self = StObject.set(x, "expandDirectories", js.Array(value*))
       
       inline def setExtglob(value: Boolean): Self = StObject.set(x, "extglob", value.asInstanceOf[js.Any])
       
       inline def setExtglobUndefined: Self = StObject.set(x, "extglob", js.undefined)
       
-      inline def setFilter(value: /* file */ SourceFile => Boolean | js.Promise[Boolean]): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilter(value: /* file */ Entry => Boolean | js.Promise[Boolean]): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
       inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      
+      inline def setFlat(value: Boolean): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
+      
+      inline def setFlatUndefined: Self = StObject.set(x, "flat", js.undefined)
       
       inline def setFollowSymbolicLinks(value: Boolean): Self = StObject.set(x, "followSymbolicLinks", value.asInstanceOf[js.Any])
       
@@ -212,13 +295,19 @@ object mod {
       
       inline def setIgnore(value: js.Array[Pattern]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
+      inline def setIgnoreFiles(value: String | js.Array[String]): Self = StObject.set(x, "ignoreFiles", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreFilesUndefined: Self = StObject.set(x, "ignoreFiles", js.undefined)
+      
+      inline def setIgnoreFilesVarargs(value: String*): Self = StObject.set(x, "ignoreFiles", js.Array(value*))
+      
       inline def setIgnoreJunk(value: Boolean): Self = StObject.set(x, "ignoreJunk", value.asInstanceOf[js.Any])
       
       inline def setIgnoreJunkUndefined: Self = StObject.set(x, "ignoreJunk", js.undefined)
       
       inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      inline def setIgnoreVarargs(value: Pattern*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: Pattern*): Self = StObject.set(x, "ignore", js.Array(value*))
       
       inline def setMarkDirectories(value: Boolean): Self = StObject.set(x, "markDirectories", value.asInstanceOf[js.Any])
       
@@ -239,10 +328,6 @@ object mod {
       inline def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
       
       inline def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
-      
-      inline def setParents(value: Boolean): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
-      
-      inline def setParentsUndefined: Self = StObject.set(x, "parents", js.undefined)
       
       inline def setRename(value: String | (js.Function1[/* basename */ String, String])): Self = StObject.set(x, "rename", value.asInstanceOf[js.Any])
       
@@ -271,23 +356,23 @@ object mod {
   trait ProgressData extends StObject {
     
     /**
-    		Copied file count.
-    		*/
+    	Copied file count.
+    	*/
     var completedFiles: Double
     
     /**
-    		Completed size in bytes.
-    		*/
+    	Completed size in bytes.
+    	*/
     var completedSize: Double
     
     /**
-    		Completed percentage. A value between `0` and `1`.
-    		*/
+    	Completed percentage. A value between `0` and `1`.
+    	*/
     var percent: Double
     
     /**
-    		Overall file count.
-    		*/
+    	Overall file count.
+    	*/
     var totalFiles: Double
   }
   object ProgressData {
@@ -324,66 +409,6 @@ object mod {
     extension [Self <: ProgressEmitter](x: Self) {
       
       inline def setOn(value: (progress, js.Function1[/* progress */ ProgressData, Unit]) => js.Promise[js.Array[String]]): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
-    }
-  }
-  
-  trait SourceFile extends StObject {
-    
-    /**
-    		File extension.
-    		@example 'js'
-    		*/
-    val `extension`: String
-    
-    /**
-    		Filename with extension.
-    		@example 'foo.js'
-    		*/
-    val name: String
-    
-    /**
-    		Filename without extension.
-    		@example 'foo'
-    		*/
-    val nameWithoutExtension: String
-    
-    /**
-    		Resolved path to the file.
-    		@example '/tmp/dir/foo.js'
-    		*/
-    val path: String
-    
-    /**
-    		Relative path to the file from `cwd`.
-    		@example 'dir/foo.js' if `cwd` was '/tmp'
-    		*/
-    val relativePath: String
-  }
-  object SourceFile {
-    
-    inline def apply(
-      `extension`: String,
-      name: String,
-      nameWithoutExtension: String,
-      path: String,
-      relativePath: String
-    ): SourceFile = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], nameWithoutExtension = nameWithoutExtension.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], relativePath = relativePath.asInstanceOf[js.Any])
-      __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[SourceFile]
-    }
-    
-    extension [Self <: SourceFile](x: Self) {
-      
-      inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setNameWithoutExtension(value: String): Self = StObject.set(x, "nameWithoutExtension", value.asInstanceOf[js.Any])
-      
-      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
-      
-      inline def setRelativePath(value: String): Self = StObject.set(x, "relativePath", value.asInstanceOf[js.Any])
     }
   }
 }

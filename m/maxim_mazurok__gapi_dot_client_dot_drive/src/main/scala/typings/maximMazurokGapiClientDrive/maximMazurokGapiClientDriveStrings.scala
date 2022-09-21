@@ -19,6 +19,10 @@ object maximMazurokGapiClientDriveStrings {
   inline def File: File = "File".asInstanceOf[File]
   
   @js.native
+  sealed trait Label extends StObject
+  inline def Label: Label = "Label".asInstanceOf[Label]
+  
+  @js.native
   sealed trait Revision extends StObject
   inline def Revision: Revision = "Revision".asInstanceOf[Revision]
   

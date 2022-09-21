@@ -2,7 +2,11 @@ package typings.reactToastify
 
 import typings.reactToastify.reactToastifyNumbers.`300`
 import typings.reactToastify.reactToastifyNumbers.`50`
+import typings.reactToastify.reactToastifyNumbers.`80`
 import typings.reactToastify.reactToastifyStrings.Toastify
+import typings.reactToastify.reactToastifyStrings.d
+import typings.reactToastify.reactToastifyStrings.x
+import typings.reactToastify.reactToastifyStrings.y
 import typings.reactToastify.typesMod.ToastPosition
 import typings.reactToastify.typesMod.TypeOptions
 import org.scalablytyped.runtime.StObject
@@ -56,11 +60,6 @@ object constantMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("react-toastify/dist/utils/constant", "TYPE.DARK")
-    @js.native
-    def DARK: TypeOptions = js.native
-    inline def DARK_=(x: TypeOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DARK")(x.asInstanceOf[js.Any])
-    
     @JSImport("react-toastify/dist/utils/constant", "TYPE.DEFAULT")
     @js.native
     def DEFAULT: TypeOptions = js.native
@@ -91,15 +90,30 @@ object constantMod {
     - typings.reactToastify.reactToastifyNumbers.`300`
     - typings.reactToastify.reactToastifyNumbers.`50`
     - typings.reactToastify.reactToastifyStrings.Toastify
+    - typings.reactToastify.reactToastifyNumbers.`80`
   */
-  trait DEFAULT extends StObject
-  object DEFAULT {
+  trait Default extends StObject
+  object Default {
     
     inline def COLLAPSE_DURATION: `300` = 300.asInstanceOf[`300`]
     
     inline def CSS_NAMESPACE: Toastify = "Toastify".asInstanceOf[Toastify]
     
     inline def DEBOUNCE_DURATION: `50` = 50.asInstanceOf[`50`]
+    
+    inline def DRAGGABLE_PERCENT: `80` = 80.asInstanceOf[`80`]
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.reactToastify.reactToastifyStrings.x
+    - typings.reactToastify.reactToastifyStrings.y
+  */
+  trait Direction extends StObject
+  object Direction {
+    
+    inline def X: x = "x".asInstanceOf[x]
+    
+    inline def Y: y = "y".asInstanceOf[y]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -132,12 +146,9 @@ object constantMod {
     - typings.reactToastify.reactToastifyStrings.WARNING
     - typings.reactToastify.reactToastifyStrings.ERROR
     - typings.reactToastify.reactToastifyStrings.DEFAULT
-    - typings.reactToastify.reactToastifyStrings.DARK
   */
   trait KeyOfType extends StObject
   object KeyOfType {
-    
-    inline def DARK: typings.reactToastify.reactToastifyStrings.DARK = "DARK".asInstanceOf[typings.reactToastify.reactToastifyStrings.DARK]
     
     inline def DEFAULT: typings.reactToastify.reactToastifyStrings.DEFAULT = "DEFAULT".asInstanceOf[typings.reactToastify.reactToastifyStrings.DEFAULT]
     
@@ -149,4 +160,10 @@ object constantMod {
     
     inline def WARNING: typings.reactToastify.reactToastifyStrings.WARNING = "WARNING".asInstanceOf[typings.reactToastify.reactToastifyStrings.WARNING]
   }
+  
+  object SyntheticEvent {
+    
+    inline def ENTRANCE_ANIMATION_END: d = "d".asInstanceOf[d]
+  }
+  type SyntheticEvent = d
 }

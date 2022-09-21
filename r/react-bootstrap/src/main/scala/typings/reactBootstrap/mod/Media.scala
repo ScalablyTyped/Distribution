@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap", "Media")
 @js.native
-class Media ()
+open class Media ()
   extends typings.reactBootstrap.libMod.Media
 object Media {
   
@@ -18,7 +18,7 @@ object Media {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Media.Body")
   @js.native
-  class Body ()
+  open class Body ()
     extends typings.reactBootstrap.mediaBodyMod.^
   /* static member */
   @JSImport("react-bootstrap", "Media.Body")
@@ -29,7 +29,7 @@ object Media {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Media.Heading")
   @js.native
-  class Heading ()
+  open class Heading ()
     extends typings.reactBootstrap.mediaHeadingMod.^
   /* static member */
   @JSImport("react-bootstrap", "Media.Heading")
@@ -40,7 +40,7 @@ object Media {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Media.Left")
   @js.native
-  class Left ()
+  open class Left ()
     extends typings.reactBootstrap.mediaLeftMod.^
   /* static member */
   @JSImport("react-bootstrap", "Media.Left")
@@ -51,7 +51,7 @@ object Media {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Media.List")
   @js.native
-  class List ()
+  open class List ()
     extends typings.reactBootstrap.mediaListMod.^
   /* static member */
   @JSImport("react-bootstrap", "Media.List")
@@ -61,7 +61,7 @@ object Media {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Media.ListItem")
   @js.native
-  class ListItem ()
+  open class ListItem ()
     extends typings.reactBootstrap.mediaListItemMod.^
   /* static member */
   @JSImport("react-bootstrap", "Media.ListItem")
@@ -74,7 +74,7 @@ object Media {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "Media.Right")
   @js.native
-  class Right ()
+  open class Right ()
     extends typings.reactBootstrap.mediaRightMod.^
   /* static member */
   @JSImport("react-bootstrap", "Media.Right")

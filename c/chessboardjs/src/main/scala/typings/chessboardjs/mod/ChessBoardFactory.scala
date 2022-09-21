@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ChessBoardFactory extends StObject {
   
-  def apply(containerElOrId: js.Any): ChessBoardInstance = js.native
-  def apply(containerElOrId: js.Any, config: BoardConfig): ChessBoardInstance = js.native
-  def apply(containerElOrId: js.Any, position: String): ChessBoardInstance = js.native
-  def apply(containerElOrId: js.Any, position: BoardPositionType): ChessBoardInstance = js.native
+  def apply(containerElOrId: Any): ChessBoardInstance = js.native
+  def apply(containerElOrId: Any, config: BoardConfig): ChessBoardInstance = js.native
+  def apply(containerElOrId: Any, position: String): ChessBoardInstance = js.native
+  def apply(containerElOrId: Any, position: BoardPositionType): ChessBoardInstance = js.native
   
   def fenToObj(fen: String): Boolean | BoardPositionType = js.native
   

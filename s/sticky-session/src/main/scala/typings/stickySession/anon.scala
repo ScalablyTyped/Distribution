@@ -8,7 +8,7 @@ object anon {
   
   trait Env extends StObject {
     
-    val env: js.UndefOr[js.Any] = js.undefined
+    val env: js.UndefOr[Any] = js.undefined
     
     val workers: js.UndefOr[Double] = js.undefined
   }
@@ -21,7 +21,7 @@ object anon {
     
     extension [Self <: Env](x: Self) {
       
-      inline def setEnv(value: js.Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
       inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
       

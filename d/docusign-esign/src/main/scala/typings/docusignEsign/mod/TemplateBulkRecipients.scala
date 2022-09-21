@@ -54,7 +54,7 @@ object TemplateBulkRecipients {
     
     inline def setBulkRecipientsUndefined: Self = StObject.set(x, "bulkRecipients", js.undefined)
     
-    inline def setBulkRecipientsVarargs(value: BulkRecipient*): Self = StObject.set(x, "bulkRecipients", js.Array(value :_*))
+    inline def setBulkRecipientsVarargs(value: BulkRecipient*): Self = StObject.set(x, "bulkRecipients", js.Array(value*))
     
     inline def setEndPosition(value: String): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
     

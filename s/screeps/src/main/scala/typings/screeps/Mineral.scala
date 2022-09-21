@@ -33,9 +33,9 @@ trait Mineral[T /* <: MineralConstant */]
   var mineralType: T
   
   /**
-    * The remaining time after which the deposit will be refilled.
+    * The remaining time after which the deposit will be refilled if is recharging, otherwise undefined.
     */
-  var ticksToRegeneration: Double
+  var ticksToRegeneration: js.UndefOr[Double] = js.undefined
 }
 object Mineral {
   
@@ -45,10 +45,9 @@ object Mineral {
     id: Id[Mineral[T]],
     mineralAmount: Double,
     mineralType: T,
-    pos: RoomPosition,
-    ticksToRegeneration: Double
+    pos: RoomPosition
   ): Mineral[T] = {
-    val __obj = js.Dynamic.literal(density = density.asInstanceOf[js.Any], effects = effects.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], mineralAmount = mineralAmount.asInstanceOf[js.Any], mineralType = mineralType.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any], ticksToRegeneration = ticksToRegeneration.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(density = density.asInstanceOf[js.Any], effects = effects.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], mineralAmount = mineralAmount.asInstanceOf[js.Any], mineralType = mineralType.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mineral[T]]
   }
   
@@ -63,5 +62,7 @@ object Mineral {
     inline def setMineralType(value: T): Self = StObject.set(x, "mineralType", value.asInstanceOf[js.Any])
     
     inline def setTicksToRegeneration(value: Double): Self = StObject.set(x, "ticksToRegeneration", value.asInstanceOf[js.Any])
+    
+    inline def setTicksToRegenerationUndefined: Self = StObject.set(x, "ticksToRegeneration", js.undefined)
   }
 }

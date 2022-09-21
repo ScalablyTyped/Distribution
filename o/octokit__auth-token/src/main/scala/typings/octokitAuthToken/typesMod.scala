@@ -1,5 +1,6 @@
 package typings.octokitAuthToken
 
+import typings.octokitAuthToken.octokitAuthTokenStrings.`user-to-server`
 import typings.octokitAuthToken.octokitAuthTokenStrings.app
 import typings.octokitAuthToken.octokitAuthTokenStrings.installation
 import typings.octokitAuthToken.octokitAuthTokenStrings.oauth
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object typesMod {
   
-  type AnyResponse = OctokitResponse[js.Any]
+  type AnyResponse = OctokitResponse[Any, Double]
   
   trait AppAuthentication
     extends StObject
@@ -45,6 +46,7 @@ object typesMod {
     - typings.octokitAuthToken.typesMod.OAuthTokenAuthentication
     - typings.octokitAuthToken.typesMod.InstallationTokenAuthentication
     - typings.octokitAuthToken.typesMod.AppAuthentication
+    - typings.octokitAuthToken.typesMod.UserToServerAuthentication
   */
   trait Authentication extends StObject
   object Authentication {
@@ -65,6 +67,12 @@ object typesMod {
       val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any], tokenType = "oauth")
       __obj.updateDynamic("type")("token")
       __obj.asInstanceOf[typings.octokitAuthToken.typesMod.OAuthTokenAuthentication]
+    }
+    
+    inline def UserToServerAuthentication(token: Token): typings.octokitAuthToken.typesMod.UserToServerAuthentication = {
+      val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any], tokenType = "user-to-server")
+      __obj.updateDynamic("type")("token")
+      __obj.asInstanceOf[typings.octokitAuthToken.typesMod.UserToServerAuthentication]
     }
   }
   
@@ -134,7 +142,35 @@ object typesMod {
   
   type Route = typings.octokitTypes.routeMod.Route
   
-  type StrategyInterface = typings.octokitTypes.strategyInterfaceMod.StrategyInterface[js.Array[Token], js.Array[js.Any], Authentication]
+  type StrategyInterface = typings.octokitTypes.strategyInterfaceMod.StrategyInterface[js.Array[Token], js.Array[Any], Authentication]
   
   type Token = String
+  
+  trait UserToServerAuthentication
+    extends StObject
+       with Authentication {
+    
+    var token: Token
+    
+    var tokenType: `user-to-server`
+    
+    var `type`: token
+  }
+  object UserToServerAuthentication {
+    
+    inline def apply(token: Token): UserToServerAuthentication = {
+      val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any], tokenType = "user-to-server")
+      __obj.updateDynamic("type")("token")
+      __obj.asInstanceOf[UserToServerAuthentication]
+    }
+    
+    extension [Self <: UserToServerAuthentication](x: Self) {
+      
+      inline def setToken(value: Token): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      
+      inline def setTokenType(value: `user-to-server`): Self = StObject.set(x, "tokenType", value.asInstanceOf[js.Any])
+      
+      inline def setType(value: token): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
 }

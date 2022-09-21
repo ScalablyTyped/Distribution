@@ -66,7 +66,7 @@ object XPolyPolygon2D {
     getNumberOfPolygonPoints: Double => Double,
     getNumberOfPolygons: () => Double,
     isClosed: Double => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setClosed: (Double, Boolean) => Unit,
     setFillRule: FillRule => Unit

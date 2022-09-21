@@ -12,10 +12,10 @@ trait LodashMapValues3x1 extends StObject {
   
   def apply[T /* <: js.Object */](): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: boolean}
-    */ typings.lodash.lodashStrings.LodashMapValues3x1 & TopLevel[js.Any] = js.native
+    */ typings.lodash.lodashStrings.LodashMapValues3x1 & TopLevel[Any] = js.native
   def apply[T /* <: js.Object */](obj: T): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: boolean}
-    */ typings.lodash.lodashStrings.LodashMapValues3x1 & TopLevel[js.Any] = js.native
+    */ typings.lodash.lodashStrings.LodashMapValues3x1 & TopLevel[Any] = js.native
   def apply[T](obj: Dictionary[T]): Dictionary[Boolean] = js.native
   def apply[T](obj: NumericDictionary[T]): Dictionary[Boolean] = js.native
 }

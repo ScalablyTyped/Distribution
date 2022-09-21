@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ol.Kinetic")
 @js.native
-class Kinetic protected ()
+open class Kinetic protected ()
   extends typings.openlayers.mod.Kinetic {
   /**
     * @classdesc

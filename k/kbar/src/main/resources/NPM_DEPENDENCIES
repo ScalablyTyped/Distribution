@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "kbar" : "0.1.0-beta.36"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "kbar" : "0.1.0-beta.36"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

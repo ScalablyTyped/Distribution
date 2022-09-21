@@ -12,22 +12,28 @@ trait FirewallInfo extends StObject {
   /** Possible values: INGRESS, EGRESS */
   var direction: js.UndefOr[String] = js.undefined
   
-  /** Name of a Compute Engine firewall rule. */
+  /** The display name of the VPC firewall rule. This field is not applicable to hierarchical firewall policy rules. */
   var displayName: js.UndefOr[String] = js.undefined
   
-  /** URI of a Compute Engine network. */
+  /** The firewall rule's type. */
+  var firewallRuleType: js.UndefOr[String] = js.undefined
+  
+  /** The URI of the VPC network that the firewall rule is associated with. This field is not applicable to hierarchical firewall policy rules. */
   var networkUri: js.UndefOr[String] = js.undefined
   
-  /** Priority of the firewall rule. */
+  /** The hierarchical firewall policy that this rule is associated with. This field is not applicable to VPC firewall rules. */
+  var policy: js.UndefOr[String] = js.undefined
+  
+  /** The priority of the firewall rule. */
   var priority: js.UndefOr[Double] = js.undefined
   
-  /** Target service accounts of the firewall rule. */
+  /** The target service accounts specified by the firewall rule. */
   var targetServiceAccounts: js.UndefOr[js.Array[String]] = js.undefined
   
-  /** Target tags of the firewall rule. */
+  /** The target tags defined by the VPC firewall rule. This field is not applicable to hierarchical firewall policy rules. */
   var targetTags: js.UndefOr[js.Array[String]] = js.undefined
   
-  /** URI of a Compute Engine firewall rule. Implied default rule does not have URI. */
+  /** The URI of the VPC firewall rule. This field is not applicable to implied firewall rules or hierarchical firewall policy rules. */
   var uri: js.UndefOr[String] = js.undefined
 }
 object FirewallInfo {
@@ -51,9 +57,17 @@ object FirewallInfo {
     
     inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
+    inline def setFirewallRuleType(value: String): Self = StObject.set(x, "firewallRuleType", value.asInstanceOf[js.Any])
+    
+    inline def setFirewallRuleTypeUndefined: Self = StObject.set(x, "firewallRuleType", js.undefined)
+    
     inline def setNetworkUri(value: String): Self = StObject.set(x, "networkUri", value.asInstanceOf[js.Any])
     
     inline def setNetworkUriUndefined: Self = StObject.set(x, "networkUri", js.undefined)
+    
+    inline def setPolicy(value: String): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+    
+    inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
     
     inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
@@ -63,13 +77,13 @@ object FirewallInfo {
     
     inline def setTargetServiceAccountsUndefined: Self = StObject.set(x, "targetServiceAccounts", js.undefined)
     
-    inline def setTargetServiceAccountsVarargs(value: String*): Self = StObject.set(x, "targetServiceAccounts", js.Array(value :_*))
+    inline def setTargetServiceAccountsVarargs(value: String*): Self = StObject.set(x, "targetServiceAccounts", js.Array(value*))
     
     inline def setTargetTags(value: js.Array[String]): Self = StObject.set(x, "targetTags", value.asInstanceOf[js.Any])
     
     inline def setTargetTagsUndefined: Self = StObject.set(x, "targetTags", js.undefined)
     
-    inline def setTargetTagsVarargs(value: String*): Self = StObject.set(x, "targetTags", js.Array(value :_*))
+    inline def setTargetTagsVarargs(value: String*): Self = StObject.set(x, "targetTags", js.Array(value*))
     
     inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     

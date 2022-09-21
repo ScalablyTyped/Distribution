@@ -1,61 +1,64 @@
 package typings.awsSdk.mediastoredataMod
 
+import typings.awsSdk.awsSdkStrings.TEMPORAL
+import typings.node.bufferMod.global.Buffer
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type ContentRangePattern = java.lang.String
+type ContentRangePattern = String
 
-type ContentType = java.lang.String
+type ContentType = String
 
-type ETag = java.lang.String
+type ETag = String
 
-type ItemList = js.Array[typings.awsSdk.mediastoredataMod.Item]
+type ItemList = js.Array[Item]
 
-type ItemName = java.lang.String
+type ItemName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.OBJECT
   - typings.awsSdk.awsSdkStrings.FOLDER
   - java.lang.String
 */
-type ItemType = typings.awsSdk.mediastoredataMod._ItemType | java.lang.String
+type ItemType = _ItemType | String
 
-type ListLimit = scala.Double
+type ListLimit = Double
 
-type ListPathNaming = java.lang.String
+type ListPathNaming = String
 
-type NonNegativeLong = scala.Double
+type NonNegativeLong = Double
 
-type PaginationToken = java.lang.String
+type PaginationToken = String
 
-type PathNaming = java.lang.String
+type PathNaming = String
 
-type PayloadBlob = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.mediastoredataMod.Blob | java.lang.String | typings.node.streamMod.Readable
+type PayloadBlob = Buffer | js.typedarray.Uint8Array | Blob | String | Readable
 
-type RangePattern = java.lang.String
+type RangePattern = String
 
-type SHA256Hash = java.lang.String
+type SHA256Hash = String
 
-type StorageClass = typings.awsSdk.awsSdkStrings.TEMPORAL | java.lang.String
+type StorageClass = TEMPORAL | String
 
-type StringPrimitive = java.lang.String
+type StringPrimitive = String
 
-type TimeStamp = typings.std.Date
+type TimeStamp = js.Date
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.STANDARD
   - typings.awsSdk.awsSdkStrings.STREAMING
   - java.lang.String
 */
-type UploadAvailability = typings.awsSdk.mediastoredataMod._UploadAvailability | java.lang.String
+type UploadAvailability = _UploadAvailability | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2017-09-01`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.mediastoredataMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String
 
-type statusCode = scala.Double
+type statusCode = Double

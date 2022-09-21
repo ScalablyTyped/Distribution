@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("postmark/dist/client/models", "TemplateFilteringParameters")
 @js.native
-class TemplateFilteringParameters ()
+open class TemplateFilteringParameters ()
   extends typings.postmark.templateMod.TemplateFilteringParameters {
   def this(count: Double) = this()
   def this(count: Double, offset: Double) = this()

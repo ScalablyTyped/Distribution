@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Rewritten from type alias, can be one of: 
   - typings.estree.mod.ExpressionStatement
   - typings.estree.mod.BlockStatement
+  - typings.estree.mod.StaticBlock
   - typings.estree.mod.EmptyStatement
   - typings.estree.mod.DebuggerStatement
   - typings.estree.mod.WithStatement
@@ -28,9 +29,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.estree.mod.ForOfStatement
   - typings.estree.mod.Declaration
 */
-trait Statement
-  extends StObject
-     with Node
+trait Statement extends StObject
 object Statement {
   
   inline def BlockStatement(body: js.Array[Statement]): typings.estree.mod.BlockStatement = {
@@ -121,6 +120,12 @@ object Statement {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("ReturnStatement")
     __obj.asInstanceOf[typings.estree.mod.ReturnStatement]
+  }
+  
+  inline def StaticBlock(body: js.Array[Statement]): typings.estree.mod.StaticBlock = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("StaticBlock")
+    __obj.asInstanceOf[typings.estree.mod.StaticBlock]
   }
   
   inline def SwitchStatement(cases: js.Array[SwitchCase], discriminant: Expression): typings.estree.mod.SwitchStatement = {

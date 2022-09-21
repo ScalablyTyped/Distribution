@@ -17,7 +17,7 @@ trait WebUILockScreenActivatedEventArgs extends StObject {
   var currentlyShownApplicationViewId: Double
   
   /** Gets information about the app activation operation. */
-  var info: js.Any
+  var info: Any
   
   /** Gets and activation kind for the app activation operation. */
   var kind: ActivationKind
@@ -33,7 +33,7 @@ object WebUILockScreenActivatedEventArgs {
   inline def apply(
     activatedOperation: ActivatedOperation,
     currentlyShownApplicationViewId: Double,
-    info: js.Any,
+    info: Any,
     kind: ActivationKind,
     previousExecutionState: ApplicationExecutionState,
     splashScreen: SplashScreen
@@ -48,7 +48,7 @@ object WebUILockScreenActivatedEventArgs {
     
     inline def setCurrentlyShownApplicationViewId(value: Double): Self = StObject.set(x, "currentlyShownApplicationViewId", value.asInstanceOf[js.Any])
     
-    inline def setInfo(value: js.Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
     inline def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

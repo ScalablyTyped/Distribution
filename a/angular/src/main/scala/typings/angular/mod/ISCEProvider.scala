@@ -16,7 +16,7 @@ trait ISCEProvider
 }
 object ISCEProvider {
   
-  inline def apply($get: js.Any, enabled: Boolean => Unit): ISCEProvider = {
+  inline def apply($get: Any, enabled: Boolean => Unit): ISCEProvider = {
     val __obj = js.Dynamic.literal($get = $get.asInstanceOf[js.Any], enabled = js.Any.fromFunction1(enabled))
     __obj.asInstanceOf[ISCEProvider]
   }

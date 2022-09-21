@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientAppointmentToolTipShowingEventArgs")
 @js.native
-class ASPxClientAppointmentToolTipShowingEventArgs protected ()
+open class ASPxClientAppointmentToolTipShowingEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientAppointmentToolTipShowingEventArgs {
   /**
@@ -25,7 +25,7 @@ class ASPxClientAppointmentToolTipShowingEventArgs protected ()
   var appointment: typings.devexpressWeb.ASPxClientAppointment = js.native
   
   /**
-    * Gets or sets a value indicating whether the action which raised the event should be canceled.
+    * Specifies whether to cancel the related action (for example, row edit, export).
     */
   /* CompleteClass */
   var cancel: Boolean = js.native

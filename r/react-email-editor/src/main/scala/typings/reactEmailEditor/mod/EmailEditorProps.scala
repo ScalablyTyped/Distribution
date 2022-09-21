@@ -9,9 +9,12 @@ trait EmailEditorProps extends StObject {
   
   val appearance: js.UndefOr[AppearanceConfig] = js.undefined
   
-  val minHeight: js.UndefOr[Double] = js.undefined
+  val minHeight: js.UndefOr[Double | String] = js.undefined
   
+  /** @deprecated Use **onReady** instead */
   var onLoad: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
+  var onReady: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   val options: js.UndefOr[UnlayerOptions] = js.undefined
   
@@ -34,13 +37,17 @@ object EmailEditorProps {
     
     inline def setAppearanceUndefined: Self = StObject.set(x, "appearance", js.undefined)
     
-    inline def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+    inline def setMinHeight(value: Double | String): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
     
     inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
     
     inline def setOnLoad(value: () => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction0(value))
     
     inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
+    
+    inline def setOnReady(value: () => Unit): Self = StObject.set(x, "onReady", js.Any.fromFunction0(value))
+    
+    inline def setOnReadyUndefined: Self = StObject.set(x, "onReady", js.undefined)
     
     inline def setOptions(value: UnlayerOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

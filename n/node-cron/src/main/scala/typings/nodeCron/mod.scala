@@ -1,6 +1,6 @@
 package typings.nodeCron
 
-import typings.tzOffset.mod.Timezone
+import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,12 +11,28 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def schedule(cronExpression: String, func: js.Function0[Unit]): ScheduledTask = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(cronExpression.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[ScheduledTask]
-  inline def schedule(cronExpression: String, func: js.Function0[Unit], options: ScheduleOptions): ScheduledTask = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(cronExpression.asInstanceOf[js.Any], func.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ScheduledTask]
+  inline def getTasks(): Map[String, ScheduledTask] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTasks")().asInstanceOf[Map[String, ScheduledTask]]
+  
+  inline def schedule(cronExpression: String, func: String): ScheduledTask = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(cronExpression.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[ScheduledTask]
+  inline def schedule(cronExpression: String, func: String, options: ScheduleOptions): ScheduledTask = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(cronExpression.asInstanceOf[js.Any], func.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ScheduledTask]
+  inline def schedule(cronExpression: String, func: js.Function1[/* now */ js.Date, Unit]): ScheduledTask = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(cronExpression.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[ScheduledTask]
+  inline def schedule(cronExpression: String, func: js.Function1[/* now */ js.Date, Unit], options: ScheduleOptions): ScheduledTask = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(cronExpression.asInstanceOf[js.Any], func.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ScheduledTask]
   
   inline def validate(cronExpression: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(cronExpression.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   trait ScheduleOptions extends StObject {
+    
+    /**
+      * The schedule name
+      */
+    var name: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Specifies whether to recover missed executions instead of skipping them.
+      *
+      * Defaults to `false`
+      */
+    var recoverMissedExecutions: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A boolean to set if the created task is scheduled.
@@ -28,7 +44,7 @@ object mod {
     /**
       * The timezone that is used for job scheduling
       */
-    var timezone: js.UndefOr[Timezone] = js.undefined
+    var timezone: js.UndefOr[String] = js.undefined
   }
   object ScheduleOptions {
     
@@ -39,47 +55,30 @@ object mod {
     
     extension [Self <: ScheduleOptions](x: Self) {
       
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      inline def setRecoverMissedExecutions(value: Boolean): Self = StObject.set(x, "recoverMissedExecutions", value.asInstanceOf[js.Any])
+      
+      inline def setRecoverMissedExecutionsUndefined: Self = StObject.set(x, "recoverMissedExecutions", js.undefined)
+      
       inline def setScheduled(value: Boolean): Self = StObject.set(x, "scheduled", value.asInstanceOf[js.Any])
       
       inline def setScheduledUndefined: Self = StObject.set(x, "scheduled", js.undefined)
       
-      inline def setTimezone(value: Timezone): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
+      inline def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
       
       inline def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
     }
   }
   
-  trait ScheduledTask extends StObject {
+  @js.native
+  trait ScheduledTask
+    extends typings.node.eventsMod.^ {
     
-    def destroy(): Unit
+    def start(): this.type = js.native
     
-    def getStatus(): String
-    
-    def start(): this.type
-    
-    def stop(): this.type
-  }
-  object ScheduledTask {
-    
-    inline def apply(
-      destroy: () => Unit,
-      getStatus: () => String,
-      start: () => ScheduledTask,
-      stop: () => ScheduledTask
-    ): ScheduledTask = {
-      val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), getStatus = js.Any.fromFunction0(getStatus), start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop))
-      __obj.asInstanceOf[ScheduledTask]
-    }
-    
-    extension [Self <: ScheduledTask](x: Self) {
-      
-      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
-      
-      inline def setGetStatus(value: () => String): Self = StObject.set(x, "getStatus", js.Any.fromFunction0(value))
-      
-      inline def setStart(value: () => ScheduledTask): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
-      
-      inline def setStop(value: () => ScheduledTask): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
-    }
+    def stop(): this.type = js.native
   }
 }

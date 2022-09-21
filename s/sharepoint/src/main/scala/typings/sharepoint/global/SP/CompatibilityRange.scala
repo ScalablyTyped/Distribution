@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.CompatibilityRange")
 @js.native
-class CompatibilityRange ()
+open class CompatibilityRange ()
   extends StObject
      with typings.sharepoint.SP.ClientObject

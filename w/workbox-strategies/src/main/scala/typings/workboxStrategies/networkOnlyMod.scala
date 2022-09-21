@@ -16,7 +16,7 @@ object networkOnlyMod {
   
   @JSImport("workbox-strategies/NetworkOnly", "NetworkOnly")
   @js.native
-  class NetworkOnly ()
+  open class NetworkOnly ()
     extends StObject
        with RouteHandlerObject {
     def this(options: NetworkOnlyOptions) = this()
@@ -61,7 +61,7 @@ object networkOnlyMod {
       
       inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      inline def setPluginsVarargs(value: WorkboxPlugin*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: WorkboxPlugin*): Self = StObject.set(x, "plugins", js.Array(value*))
     }
   }
 }

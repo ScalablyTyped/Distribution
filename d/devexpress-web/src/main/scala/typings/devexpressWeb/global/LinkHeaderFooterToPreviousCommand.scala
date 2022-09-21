@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("LinkHeaderFooterToPreviousCommand")
 @js.native
-class LinkHeaderFooterToPreviousCommand ()
+open class LinkHeaderFooterToPreviousCommand ()
   extends StObject
      with typings.devexpressWeb.LinkHeaderFooterToPreviousCommand {
   

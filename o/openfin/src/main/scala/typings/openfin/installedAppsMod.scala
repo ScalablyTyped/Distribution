@@ -9,18 +9,18 @@ object installedAppsMod {
   
   trait InstallationInfo extends StObject {
     
-    var cachedManifest: js.Any
+    var cachedManifest: Any
   }
   object InstallationInfo {
     
-    inline def apply(cachedManifest: js.Any): InstallationInfo = {
+    inline def apply(cachedManifest: Any): InstallationInfo = {
       val __obj = js.Dynamic.literal(cachedManifest = cachedManifest.asInstanceOf[js.Any])
       __obj.asInstanceOf[InstallationInfo]
     }
     
     extension [Self <: InstallationInfo](x: Self) {
       
-      inline def setCachedManifest(value: js.Any): Self = StObject.set(x, "cachedManifest", value.asInstanceOf[js.Any])
+      inline def setCachedManifest(value: Any): Self = StObject.set(x, "cachedManifest", value.asInstanceOf[js.Any])
     }
   }
   

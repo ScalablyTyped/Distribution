@@ -1,7 +1,6 @@
 package typings.teslajs
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
 import typings.teslajs.anon.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -85,11 +84,11 @@ object mod {
   @js.native
   val TRUNK: String = js.native
   
-  inline def calendar(options: optionsType, entry: js.Any, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("calendar")(options.asInstanceOf[js.Any], entry.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def calendar(options: optionsType, entry: Any, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("calendar")(options.asInstanceOf[js.Any], entry.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def calendarAsync(options: optionsType, entry: js.Any): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("calendarAsync")(options.asInstanceOf[js.Any], entry.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
+  inline def calendarAsync(options: optionsType, entry: Any): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("calendarAsync")(options.asInstanceOf[js.Any], entry.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   
-  inline def cancelSoftwareUpdate(options: optionsType, callback: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("cancelSoftwareUpdate")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def cancelSoftwareUpdate(options: optionsType, callback: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("cancelSoftwareUpdate")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def cancelSoftwareUpdateAsync(options: optionsType): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelSoftwareUpdateAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
   
@@ -139,7 +138,7 @@ object mod {
   
   inline def getCommand(options: optionsType, command: String, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get_command")(options.asInstanceOf[js.Any], command.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def getCommandAsync(options: optionsType, command: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("get_commandAsync")(options.asInstanceOf[js.Any], command.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def getCommandAsync(options: optionsType, command: String): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("get_commandAsync")(options.asInstanceOf[js.Any], command.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   
   inline def getLogLevel(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getLogLevel")().asInstanceOf[Double]
   
@@ -167,9 +166,9 @@ object mod {
   
   inline def honkHornAsync(options: optionsType): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("honkHornAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
   
-  inline def login(username: String, password: String, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("login")(username.asInstanceOf[js.Any], password.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def login(credentials: Credentials, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("login")(credentials.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def loginAsync(username: String, password: String): js.Promise[TokenResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("loginAsync")(username.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TokenResponse]]
+  inline def loginAsync(credentials: Credentials): js.Promise[TokenResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("loginAsync")(credentials.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TokenResponse]]
   
   inline def logout(authToken: String, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logout")(authToken.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -184,35 +183,35 @@ object mod {
     phoneName: String
   ): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("makeCalendarEntry")(eventName.asInstanceOf[js.Any], location.asInstanceOf[js.Any], startTime.asInstanceOf[js.Any], endTime.asInstanceOf[js.Any], accountName.asInstanceOf[js.Any], phoneName.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
-  inline def maxDefrost(options: optionsType, onoff: Boolean, callback: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("maxDefrost")(options.asInstanceOf[js.Any], onoff.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def maxDefrost(options: optionsType, onoff: Boolean, callback: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("maxDefrost")(options.asInstanceOf[js.Any], onoff.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def maxDefrostAsync(options: optionsType, onoff: Boolean): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("maxDefrostAsync")(options.asInstanceOf[js.Any], onoff.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   
-  inline def mediaPlayNext(options: optionsType, callback: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mediaPlayNext")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def mediaPlayNext(options: optionsType, callback: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mediaPlayNext")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def mediaPlayNextAsync(options: optionsType): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("mediaPlayNextAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
   
-  inline def mediaPlayNextFavorite(options: optionsType, callback: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mediaPlayNextFavorite")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def mediaPlayNextFavorite(options: optionsType, callback: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mediaPlayNextFavorite")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def mediaPlayNextFavoriteAsync(options: optionsType): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("mediaPlayNextFavoriteAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
   
-  inline def mediaPlayPrevious(options: optionsType, callback: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mediaPlayPrevious")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def mediaPlayPrevious(options: optionsType, callback: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mediaPlayPrevious")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def mediaPlayPreviousAsync(options: optionsType): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("mediaPlayPreviousAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
   
-  inline def mediaPlayPreviousFavorite(options: optionsType, callback: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mediaPlayPreviousFavorite")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def mediaPlayPreviousFavorite(options: optionsType, callback: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mediaPlayPreviousFavorite")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def mediaPlayPreviousFavoriteAsync(options: optionsType): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("mediaPlayPreviousFavoriteAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
   
-  inline def mediaTogglePlayback(options: optionsType, callback: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mediaTogglePlayback")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def mediaTogglePlayback(options: optionsType, callback: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mediaTogglePlayback")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def mediaTogglePlaybackAsync(options: optionsType): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("mediaTogglePlaybackAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
   
-  inline def mediaVolumeDown(options: optionsType, callback: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mediaVolumeDown")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def mediaVolumeDown(options: optionsType, callback: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mediaVolumeDown")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def mediaVolumeDownAsync(options: optionsType): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("mediaVolumeDownAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
   
-  inline def mediaVolumeUp(options: optionsType, callback: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mediaVolumeUp")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def mediaVolumeUp(options: optionsType, callback: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mediaVolumeUp")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def mediaVolumeUpAsync(options: optionsType): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("mediaVolumeUpAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
   
@@ -220,7 +219,7 @@ object mod {
   
   inline def mobileEnabledAsync(options: optionsType): js.Promise[Response] = ^.asInstanceOf[js.Dynamic].applyDynamic("mobileEnabledAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Response]]
   
-  inline def navigationRequest(options: optionsType, subject: String, text: String, locale: String, callback: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("navigationRequest")(options.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], text.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def navigationRequest(options: optionsType, subject: String, text: String, locale: String, callback: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("navigationRequest")(options.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], text.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def navigationRequestAsync(options: optionsType, subject: String, text: String, locale: String): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("navigationRequestAsync")(options.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], text.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   
@@ -242,7 +241,11 @@ object mod {
   
   inline def postCommand(options: optionsType, command: String, body: js.Object, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("post_command")(options.asInstanceOf[js.Any], command.asInstanceOf[js.Any], body.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def postCommandAsync(options: optionsType, command: String, body: js.Object): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("post_commandAsync")(options.asInstanceOf[js.Any], command.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def postCommandAsync(options: optionsType, command: String, body: js.Object): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("post_commandAsync")(options.asInstanceOf[js.Any], command.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+  
+  inline def products(options: optionsType, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("products")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def productsAsync(options: optionsType): js.Promise[js.Array[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("productsAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Object]]]
   
   inline def refreshToken(refresh_token: String, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("refreshToken")(refresh_token.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -256,23 +259,23 @@ object mod {
   
   inline def resetValetPinAsync(options: optionsType): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("resetValetPinAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
   
-  inline def scheduleSoftwareUpdate(options: optionsType, offset: Double, callback: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleSoftwareUpdate")(options.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def scheduleSoftwareUpdate(options: optionsType, offset: Double, callback: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleSoftwareUpdate")(options.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def scheduleSoftwareUpdateAsync(options: optionsType): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("scheduleSoftwareUpdateAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
   
-  inline def seatHeater(options: optionsType, heater: Double, level: Double, callback: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("seatHeater")(options.asInstanceOf[js.Any], heater.asInstanceOf[js.Any], level.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def seatHeater(options: optionsType, heater: Double, level: Double, callback: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("seatHeater")(options.asInstanceOf[js.Any], heater.asInstanceOf[js.Any], level.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def seatHeaterAsync(options: optionsType, heater: Double, level: Double): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("seatHeaterAsync")(options.asInstanceOf[js.Any], heater.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   
-  inline def setChargeLimit(options: optionsType, amt: js.Any, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setChargeLimit")(options.asInstanceOf[js.Any], amt.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setChargeLimit(options: optionsType, amt: Any, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setChargeLimit")(options.asInstanceOf[js.Any], amt.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def setChargeLimitAsync(options: optionsType, amt: js.Any): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("setChargeLimitAsync")(options.asInstanceOf[js.Any], amt.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
+  inline def setChargeLimitAsync(options: optionsType, amt: Any): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("setChargeLimitAsync")(options.asInstanceOf[js.Any], amt.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   
   inline def setLogLevel(level: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def setPortalBaseURI(uri: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPortalBaseURI")(uri.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def setSentryMode(options: optionsType, onoff: Boolean, callback: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setSentryMode")(options.asInstanceOf[js.Any], onoff.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def setSentryMode(options: optionsType, onoff: Boolean, callback: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setSentryMode")(options.asInstanceOf[js.Any], onoff.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def setSentryModeAsync(options: optionsType, onoff: Boolean): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("setSentryModeAsync")(options.asInstanceOf[js.Any], onoff.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   
@@ -282,23 +285,27 @@ object mod {
   
   inline def setTempsAsync(options: optionsType, driver: Double, pass: Double): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("setTempsAsync")(options.asInstanceOf[js.Any], driver.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   
-  inline def setValetMode(options: optionsType, onoff: Boolean, pin: js.Any, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setValetMode")(options.asInstanceOf[js.Any], onoff.asInstanceOf[js.Any], pin.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setValetMode(options: optionsType, onoff: Boolean, pin: Any, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setValetMode")(options.asInstanceOf[js.Any], onoff.asInstanceOf[js.Any], pin.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def setValetModeAsync(options: optionsType, onoff: Boolean, pin: js.Any): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("setValetModeAsync")(options.asInstanceOf[js.Any], onoff.asInstanceOf[js.Any], pin.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
+  inline def setValetModeAsync(options: optionsType, onoff: Boolean, pin: Any): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("setValetModeAsync")(options.asInstanceOf[js.Any], onoff.asInstanceOf[js.Any], pin.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   
-  inline def speedLimitActivate(options: optionsType, pin: Double, callback: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("speedLimitActivate")(options.asInstanceOf[js.Any], pin.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def solarStatus(options: optionsType, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("solarStatus")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def solarStatusAsync(options: optionsType): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("solarStatusAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
+  
+  inline def speedLimitActivate(options: optionsType, pin: Double, callback: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("speedLimitActivate")(options.asInstanceOf[js.Any], pin.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def speedLimitActivateAsync(options: optionsType, pin: Double): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("speedLimitActivateAsync")(options.asInstanceOf[js.Any], pin.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   
-  inline def speedLimitClearPin(options: optionsType, pin: Double, callback: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("speedLimitClearPin")(options.asInstanceOf[js.Any], pin.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def speedLimitClearPin(options: optionsType, pin: Double, callback: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("speedLimitClearPin")(options.asInstanceOf[js.Any], pin.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def speedLimitClearPinAsync(options: optionsType, pin: Double): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("speedLimitClearPinAsync")(options.asInstanceOf[js.Any], pin.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   
-  inline def speedLimitDeactivate(options: optionsType, pin: Double, callback: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("speedLimitDeactivate")(options.asInstanceOf[js.Any], pin.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def speedLimitDeactivate(options: optionsType, pin: Double, callback: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("speedLimitDeactivate")(options.asInstanceOf[js.Any], pin.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def speedLimitDeactivateAsync(options: optionsType, pin: Double): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("speedLimitDeactivateAsync")(options.asInstanceOf[js.Any], pin.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   
-  inline def speedLimitSetLimit(options: optionsType, limit: Double, callback: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("speedLimitSetLimit")(options.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def speedLimitSetLimit(options: optionsType, limit: Double, callback: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("speedLimitSetLimit")(options.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def speedLimitSetLimitAsync(options: optionsType, limit: Double): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("speedLimitSetLimitAsync")(options.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   
@@ -306,9 +313,9 @@ object mod {
   
   inline def startChargeAsync(options: optionsType): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("startChargeAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
   
-  inline def startStreaming(options: js.Any, callback: nodeBack, onDataCb: nodeBack): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("startStreaming")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], onDataCb.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def startStreaming(options: Any, callback: nodeBack, onDataCb: nodeBack): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("startStreaming")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], onDataCb.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def steeringHeater(options: optionsType, level: Double, callback: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("steeringHeater")(options.asInstanceOf[js.Any], level.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def steeringHeater(options: optionsType, level: Double, callback: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("steeringHeater")(options.asInstanceOf[js.Any], level.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def steeringHeaterAsync(options: optionsType, level: Double): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("steeringHeaterAsync")(options.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   
@@ -328,9 +335,9 @@ object mod {
   
   inline def sunRoofControlAsync(options: optionsType, state: String): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("sunRoofControlAsync")(options.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   
-  inline def sunRoofMove(options: optionsType, percent: js.Any, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sunRoofMove")(options.asInstanceOf[js.Any], percent.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sunRoofMove(options: optionsType, percent: Any, callback: nodeBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sunRoofMove")(options.asInstanceOf[js.Any], percent.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def sunRoofMoveAsync(options: optionsType, percent: js.Any): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("sunRoofMoveAsync")(options.asInstanceOf[js.Any], percent.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
+  inline def sunRoofMoveAsync(options: optionsType, percent: Any): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("sunRoofMoveAsync")(options.asInstanceOf[js.Any], percent.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   
   inline def vehicle(options: optionsType, callback: nodeBack): Vehicle_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vehicle")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Vehicle_]
   
@@ -358,9 +365,42 @@ object mod {
   
   inline def wakeUpAsync(options: optionsType): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("wakeUpAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
   
-  inline def windowControl(options: optionsType, command: String, callback: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("windowControl")(options.asInstanceOf[js.Any], command.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def windowControl(options: optionsType, command: String, callback: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("windowControl")(options.asInstanceOf[js.Any], command.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def windowControlAsync(options: optionsType, command: String): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("windowControlAsync")(options.asInstanceOf[js.Any], command.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
+  
+  trait Credentials extends StObject {
+    
+    var mfaDeviceName: js.UndefOr[String] = js.undefined
+    
+    var mfaPassCode: js.UndefOr[String] = js.undefined
+    
+    var password: String
+    
+    var username: String
+  }
+  object Credentials {
+    
+    inline def apply(password: String, username: String): Credentials = {
+      val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Credentials]
+    }
+    
+    extension [Self <: Credentials](x: Self) {
+      
+      inline def setMfaDeviceName(value: String): Self = StObject.set(x, "mfaDeviceName", value.asInstanceOf[js.Any])
+      
+      inline def setMfaDeviceNameUndefined: Self = StObject.set(x, "mfaDeviceName", js.undefined)
+      
+      inline def setMfaPassCode(value: String): Self = StObject.set(x, "mfaPassCode", value.asInstanceOf[js.Any])
+      
+      inline def setMfaPassCodeUndefined: Self = StObject.set(x, "mfaPassCode", js.undefined)
+      
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    }
+  }
   
   trait Result extends StObject {
     
@@ -435,7 +475,7 @@ object mod {
     }
   }
   
-  type nodeBack = js.Function2[/* error */ Error, /* data */ js.Any, js.Any]
+  type nodeBack = js.Function2[/* error */ js.Error, /* data */ Any, Any]
   
   trait optionsType extends StObject {
     

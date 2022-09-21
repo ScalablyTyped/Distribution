@@ -28,7 +28,7 @@ trait QueryTileProvider
     * Note that new data will be fetched only after the reload method is called. This method is normally used when updating your visualization.
     */
   def setQueryParams(): Unit = js.native
-  def setQueryParams(queryParams: js.Any): Unit = js.native
+  def setQueryParams(queryParams: Any): Unit = js.native
   
   /**
     * Updates the names of the dynamic parameters that defines tiles. This method is only needed when the query ID is updated.

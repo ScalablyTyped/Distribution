@@ -19,5 +19,5 @@ trait Printers extends StObject {
   def Item(Index: String): Printer = js.native
   def Item(Index: Double): Printer = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
 }

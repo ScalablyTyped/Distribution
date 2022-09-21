@@ -1,6 +1,6 @@
 package typings.nodegit.mod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.fsMod.WriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "Blob")
 @js.native
-class Blob ()
+open class Blob ()
   extends typings.nodegit.blobMod.Blob
 /* static members */
 object Blob {

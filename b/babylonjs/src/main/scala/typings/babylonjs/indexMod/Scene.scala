@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "Scene")
 @js.native
-class Scene protected ()
+open class Scene protected ()
   extends typings.babylonjs.sceneMod.Scene {
   /**
     * Creates a new Scene
@@ -33,7 +33,6 @@ object Scene {
   
   /**
     * Factory used to create the default material.
-    * @param name The name of the material to create
     * @param scene The scene to create the material for
     * @returns The default material
     */

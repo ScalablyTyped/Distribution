@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("selenium-webdriver", "AlertPromise")
 @js.native
-class AlertPromise protected ()
+open class AlertPromise protected ()
   extends Alert
      with Promise[Alert] {
   /**

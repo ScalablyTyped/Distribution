@@ -1,6 +1,5 @@
 package typings.playcanvas.anon
 
-import typings.playcanvas.pc.ScopeId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,13 +14,11 @@ trait DataType extends StObject {
   
   var numComponents: Double
   
-  var offset: Double
-  
-  var scopeId: ScopeId
+  var offset: Any
   
   var size: Double
   
-  var stride: Double
+  var stride: Any
 }
 object DataType {
   
@@ -30,12 +27,11 @@ object DataType {
     name: String,
     normalize: Boolean,
     numComponents: Double,
-    offset: Double,
-    scopeId: ScopeId,
+    offset: Any,
     size: Double,
-    stride: Double
+    stride: Any
   ): DataType = {
-    val __obj = js.Dynamic.literal(dataType = dataType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], normalize = normalize.asInstanceOf[js.Any], numComponents = numComponents.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], scopeId = scopeId.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], stride = stride.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dataType = dataType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], normalize = normalize.asInstanceOf[js.Any], numComponents = numComponents.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], stride = stride.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataType]
   }
   
@@ -49,12 +45,10 @@ object DataType {
     
     inline def setNumComponents(value: Double): Self = StObject.set(x, "numComponents", value.asInstanceOf[js.Any])
     
-    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
-    
-    inline def setScopeId(value: ScopeId): Self = StObject.set(x, "scopeId", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    inline def setStride(value: Double): Self = StObject.set(x, "stride", value.asInstanceOf[js.Any])
+    inline def setStride(value: Any): Self = StObject.set(x, "stride", value.asInstanceOf[js.Any])
   }
 }

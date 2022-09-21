@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ParagraphFormattingSettings")
 @js.native
-class ParagraphFormattingSettings ()
+open class ParagraphFormattingSettings ()
   extends StObject
      with typings.devexpressWeb.ParagraphFormattingSettings {
   

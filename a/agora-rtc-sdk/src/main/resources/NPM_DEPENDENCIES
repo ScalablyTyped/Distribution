@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "agora-rtc-sdk" : "3.6.11"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "agora-rtc-sdk" : "3.6.11"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

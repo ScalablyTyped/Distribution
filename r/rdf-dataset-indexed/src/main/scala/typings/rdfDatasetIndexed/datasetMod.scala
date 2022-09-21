@@ -1,14 +1,14 @@
 package typings.rdfDatasetIndexed
 
 import typings.node.streamMod.Readable
-import typings.rdfJs.mod.BaseQuad
-import typings.rdfJs.mod.DataFactory
-import typings.rdfJs.mod.Dataset
-import typings.rdfJs.mod.DatasetCore
-import typings.rdfJs.mod.DatasetFactory
-import typings.rdfJs.mod.Quad
-import typings.rdfJs.mod.Stream
-import typings.rdfJs.mod.Term
+import typings.rdfjsTypes.dataModelMod.BaseQuad
+import typings.rdfjsTypes.dataModelMod.DataFactory
+import typings.rdfjsTypes.dataModelMod.Quad
+import typings.rdfjsTypes.dataModelMod.Term
+import typings.rdfjsTypes.datasetMod.Dataset
+import typings.rdfjsTypes.datasetMod.DatasetCore
+import typings.rdfjsTypes.datasetMod.DatasetFactory
+import typings.rdfjsTypes.streamMod.Stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +18,7 @@ object datasetMod {
   // tslint:disable-next-line no-unnecessary-class
   @JSImport("rdf-dataset-indexed/dataset", JSImport.Namespace)
   @js.native
-  class ^[Q /* <: BaseQuad */, InQuad /* <: BaseQuad */] ()
+  open class ^[Q /* <: BaseQuad */, InQuad /* <: BaseQuad */] ()
     extends StObject
        with DatasetIndexed[Q, InQuad] {
     def this(quads: js.Array[Q]) = this()

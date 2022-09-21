@@ -1,6 +1,7 @@
 package typings.maximMazurokGapiClientSqladmin
 
 import typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin.BackupRunsResource
+import typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin.ConnectResource
 import typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin.DatabasesResource
 import typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin.FlagsResource
 import typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin.InstancesResource
@@ -10,7 +11,7 @@ import typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin.SslCertsResou
 import typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin.TiersResource
 import typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin.UsersResource
 import typings.maximMazurokGapiClientSqladmin.maximMazurokGapiClientSqladminStrings.sqladmin
-import typings.maximMazurokGapiClientSqladmin.maximMazurokGapiClientSqladminStrings.v1beta4
+import typings.maximMazurokGapiClientSqladmin.maximMazurokGapiClientSqladminStrings.v1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,15 +26,19 @@ object global {
       @js.native
       val ^ : js.Any = js.native
       
-      /** Load Cloud SQL Admin API v1beta4 */
-      inline def load(name: sqladmin, version: v1beta4): js.Thenable[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Unit]]
-      inline def load(name: sqladmin, version: v1beta4, callback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      /** Load Cloud SQL Admin API v1 */
+      inline def load(name: sqladmin, version: v1): js.Thenable[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Unit]]
+      inline def load(name: sqladmin, version: v1, callback: js.Function0[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       object sqladmin {
         
         @JSGlobal("gapi.client.sqladmin.backupRuns")
         @js.native
         val backupRuns: BackupRunsResource = js.native
+        
+        @JSGlobal("gapi.client.sqladmin.connect")
+        @js.native
+        val connect: ConnectResource = js.native
         
         @JSGlobal("gapi.client.sqladmin.databases")
         @js.native

@@ -10,10 +10,10 @@ Returns an object with a `negated` boolean and the `!` stripped from negation pa
 | ------------------ | :-------------: |
 | Full name          | is-negated-glob |
 | Keywords           | extglob, glob, inverse, inverted, is, is-glob, match, micromatch, negate, negated, negation, negative, pattern, test |
-| # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 74643295 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 8616444.666666666 |
+| # stars            | 7.0 |
 
 ## Links
 - [Homepage](https://github.com/jonschlinkert/is-negated-glob)

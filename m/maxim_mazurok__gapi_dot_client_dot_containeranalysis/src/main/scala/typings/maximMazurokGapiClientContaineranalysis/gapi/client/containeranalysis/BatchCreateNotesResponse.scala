@@ -22,6 +22,6 @@ object BatchCreateNotesResponse {
     
     inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
     
-    inline def setNotesVarargs(value: Note*): Self = StObject.set(x, "notes", js.Array(value :_*))
+    inline def setNotesVarargs(value: Note*): Self = StObject.set(x, "notes", js.Array(value*))
   }
 }

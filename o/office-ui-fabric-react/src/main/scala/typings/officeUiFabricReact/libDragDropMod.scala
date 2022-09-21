@@ -9,7 +9,7 @@ object libDragDropMod {
   
   @JSImport("office-ui-fabric-react/lib/DragDrop", "DragDropHelper")
   @js.native
-  class DragDropHelper protected ()
+  open class DragDropHelper protected ()
     extends typings.officeUiFabricReact.dragdropMod.DragDropHelper {
     def this(params: IDragDropHelperParams) = this()
   }

@@ -5,10 +5,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HostObject
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.iobroker.objectsMod.global.ioBroker._ObjectIdToObjectType because Already inherited */ trait HostObject
   extends StObject
      with BaseObject
-     with AnyObject {
+     with AnyObject
+     with _InferGetObjectViewItemType[Any, Any] {
   
   @JSName("common")
   var common_HostObject: HostCommon

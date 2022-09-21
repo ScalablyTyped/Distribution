@@ -10,10 +10,10 @@ Angular Toasty ================= **Angular Toasty** is a simple standalone Angul
 | ------------------ | :-------------: |
 | Full name          | angular-toasty |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 42271 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 447.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/angular-toasty)

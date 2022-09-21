@@ -1,7 +1,6 @@
 package typings.metascraperMediaProvider
 
 import typings.metascraper.mod.Rule
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,7 +37,7 @@ object mod {
   
   type GetProxyFunction = js.Function1[/* data */ GetProxyData, String]
   
-  type OnErrorFunction = js.Function2[/* url */ String, /* error */ Error, Unit]
+  type OnErrorFunction = js.Function2[/* url */ String, /* error */ js.Error, Unit]
   
   trait Options extends StObject {
     
@@ -83,7 +82,7 @@ object mod {
       
       inline def setGetProxyUndefined: Self = StObject.set(x, "getProxy", js.undefined)
       
-      inline def setOnError(value: (/* url */ String, /* error */ Error) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction2(value))
+      inline def setOnError(value: (/* url */ String, /* error */ js.Error) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction2(value))
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       

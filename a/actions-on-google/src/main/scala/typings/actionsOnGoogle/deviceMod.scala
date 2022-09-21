@@ -11,7 +11,7 @@ object deviceMod {
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/device", "Device")
   @js.native
   /** @hidden */
-  class Device () extends StObject {
+  open class Device () extends StObject {
     def this(device: GoogleActionsV2Device) = this()
     
     /**

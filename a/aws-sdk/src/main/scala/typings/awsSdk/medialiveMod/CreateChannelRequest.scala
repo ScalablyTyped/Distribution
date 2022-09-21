@@ -36,6 +36,11 @@ trait CreateChannelRequest extends StObject {
   var LogLevel: js.UndefOr[typings.awsSdk.medialiveMod.LogLevel] = js.undefined
   
   /**
+    * Maintenance settings for this channel.
+    */
+  var Maintenance: js.UndefOr[MaintenanceCreateSettings] = js.undefined
+  
+  /**
     * Name of channel.
     */
   var Name: js.UndefOr[string] = js.undefined
@@ -60,6 +65,11 @@ trait CreateChannelRequest extends StObject {
     * A collection of key-value pairs.
     */
   var Tags: js.UndefOr[typings.awsSdk.medialiveMod.Tags] = js.undefined
+  
+  /**
+    * Settings for the VPC outputs
+    */
+  var Vpc: js.UndefOr[VpcOutputSettings] = js.undefined
 }
 object CreateChannelRequest {
   
@@ -82,7 +92,7 @@ object CreateChannelRequest {
     
     inline def setDestinationsUndefined: Self = StObject.set(x, "Destinations", js.undefined)
     
-    inline def setDestinationsVarargs(value: OutputDestination*): Self = StObject.set(x, "Destinations", js.Array(value :_*))
+    inline def setDestinationsVarargs(value: OutputDestination*): Self = StObject.set(x, "Destinations", js.Array(value*))
     
     inline def setEncoderSettings(value: EncoderSettings): Self = StObject.set(x, "EncoderSettings", value.asInstanceOf[js.Any])
     
@@ -92,7 +102,7 @@ object CreateChannelRequest {
     
     inline def setInputAttachmentsUndefined: Self = StObject.set(x, "InputAttachments", js.undefined)
     
-    inline def setInputAttachmentsVarargs(value: InputAttachment*): Self = StObject.set(x, "InputAttachments", js.Array(value :_*))
+    inline def setInputAttachmentsVarargs(value: InputAttachment*): Self = StObject.set(x, "InputAttachments", js.Array(value*))
     
     inline def setInputSpecification(value: InputSpecification): Self = StObject.set(x, "InputSpecification", value.asInstanceOf[js.Any])
     
@@ -101,6 +111,10 @@ object CreateChannelRequest {
     inline def setLogLevel(value: LogLevel): Self = StObject.set(x, "LogLevel", value.asInstanceOf[js.Any])
     
     inline def setLogLevelUndefined: Self = StObject.set(x, "LogLevel", js.undefined)
+    
+    inline def setMaintenance(value: MaintenanceCreateSettings): Self = StObject.set(x, "Maintenance", value.asInstanceOf[js.Any])
+    
+    inline def setMaintenanceUndefined: Self = StObject.set(x, "Maintenance", js.undefined)
     
     inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
@@ -121,5 +135,9 @@ object CreateChannelRequest {
     inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    
+    inline def setVpc(value: VpcOutputSettings): Self = StObject.set(x, "Vpc", value.asInstanceOf[js.Any])
+    
+    inline def setVpcUndefined: Self = StObject.set(x, "Vpc", js.undefined)
   }
 }

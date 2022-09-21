@@ -1,8 +1,9 @@
 package typings.googleapis.anon
 
-import typings.googleapis.googleapisStrings.v1configuration
-import typings.googleapis.v1configurationMod.gamesConfigurationV1configuration.Gamesconfiguration
-import typings.googleapis.v1configurationMod.gamesConfigurationV1configuration.Options
+import typings.googleapis.datacatalogV1Mod.datacatalogV1.Datacatalog
+import typings.googleapis.datacatalogV1Mod.datacatalogV1.Options
+import typings.googleapis.googleapisStrings.v1
+import typings.googleapis.googleapisStrings.v1beta1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,6 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Fn75 extends StObject {
   
-  def apply(options: Options): Gamesconfiguration = js.native
-  def apply(version: v1configuration): Gamesconfiguration = js.native
+  def apply(options: Options): Datacatalog = js.native
+  def apply(options: typings.googleapis.datacatalogV1beta1Mod.datacatalogV1beta1.Options): typings.googleapis.datacatalogV1beta1Mod.datacatalogV1beta1.Datacatalog = js.native
+  def apply(version: v1): Datacatalog = js.native
+  def apply(version: v1beta1): typings.googleapis.datacatalogV1beta1Mod.datacatalogV1beta1.Datacatalog = js.native
 }

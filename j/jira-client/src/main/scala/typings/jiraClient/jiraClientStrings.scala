@@ -23,6 +23,14 @@ object jiraClientStrings {
   inline def future: future = "future".asInstanceOf[future]
   
   @js.native
+  sealed trait kanban extends StObject
+  inline def kanban: kanban = "kanban".asInstanceOf[kanban]
+  
+  @js.native
+  sealed trait scrum extends StObject
+  inline def scrum: scrum = "scrum".asInstanceOf[scrum]
+  
+  @js.native
   sealed trait `true` extends StObject
   inline def `true`: `true` = "true".asInstanceOf[`true`]
 }

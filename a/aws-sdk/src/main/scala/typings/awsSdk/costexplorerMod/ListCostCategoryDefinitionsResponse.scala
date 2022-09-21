@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListCostCategoryDefinitionsResponse extends StObject {
   
   /**
-    *  A reference to a Cost Category containing enough information to identify the Cost Category. 
+    * A reference to a Cost Category that contains enough information to identify the Cost Category. 
     */
   var CostCategoryReferences: js.UndefOr[CostCategoryReferencesList] = js.undefined
   
   /**
-    *  The token to retrieve the next set of results. Amazon Web Services provides the token when the response from a previous call has more results than the maximum page size. 
+    * The token to retrieve the next set of results. Amazon Web Services provides the token when the response from a previous call has more results than the maximum page size. 
     */
   var NextToken: js.UndefOr[NextPageToken] = js.undefined
 }
@@ -29,7 +29,7 @@ object ListCostCategoryDefinitionsResponse {
     
     inline def setCostCategoryReferencesUndefined: Self = StObject.set(x, "CostCategoryReferences", js.undefined)
     
-    inline def setCostCategoryReferencesVarargs(value: CostCategoryReference*): Self = StObject.set(x, "CostCategoryReferences", js.Array(value :_*))
+    inline def setCostCategoryReferencesVarargs(value: CostCategoryReference*): Self = StObject.set(x, "CostCategoryReferences", js.Array(value*))
     
     inline def setNextToken(value: NextPageToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

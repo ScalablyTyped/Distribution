@@ -7,64 +7,85 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("CSSKeyframesRule")
 @js.native
-class CSSKeyframesRule ()
+/* standard dom */
+open class CSSKeyframesRule ()
   extends StObject
      with typings.std.CSSKeyframesRule {
   
+  /* standard dom */
   /* CompleteClass */
   override val CHARSET_RULE: Double = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override val FONT_FACE_RULE: Double = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override val IMPORT_RULE: Double = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override val KEYFRAMES_RULE: Double = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override val KEYFRAME_RULE: Double = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override val MEDIA_RULE: Double = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override val NAMESPACE_RULE: Double = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override val PAGE_RULE: Double = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override val STYLE_RULE: Double = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override val SUPPORTS_RULE: Double = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override def appendRule(rule: java.lang.String): Unit = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override val cssRules: typings.std.CSSRuleList = js.native
   
+  /* standard dom */
   /* CompleteClass */
   var cssText: java.lang.String = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override def deleteRule(select: java.lang.String): Unit = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override def findRule(select: java.lang.String): typings.std.CSSKeyframeRule | Null = js.native
   
+  /* standard dom */
   /* CompleteClass */
   var name: java.lang.String = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override val parentRule: typings.std.CSSRule | Null = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override val parentStyleSheet: typings.std.CSSStyleSheet | Null = js.native
   
+  /** @deprecated */
+  /* standard dom */
   /* CompleteClass */
   override val `type`: Double = js.native
 }

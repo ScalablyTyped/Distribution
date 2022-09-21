@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RNFetchBlobStatic extends StObject {
   
   // this require external module https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/oboe
-  var JSONStream: js.Any = js.native
+  var JSONStream: Any = js.native
   
   var android: AndroidApi = js.native
   

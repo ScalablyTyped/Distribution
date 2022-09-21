@@ -1,9 +1,5 @@
 package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,17 +9,12 @@ trait ParamsResourceMobiledevicesDelete
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Immutable ID of the G Suite account
+    * The unique ID for the customer's Google Workspace account. As an account administrator, you can also use the `my_customer` alias to represent your account's `customerId`. The `customerId` is also returned as part of the [Users resource](/admin-sdk/directory/v1/reference/users).
     */
   var customerId: js.UndefOr[String] = js.undefined
   
   /**
-    * Immutable ID of Mobile Device
+    * The unique ID the API service uses to identify the mobile device.
     */
   var resourceId: js.UndefOr[String] = js.undefined
 }
@@ -35,10 +26,6 @@ object ParamsResourceMobiledevicesDelete {
   }
   
   extension [Self <: ParamsResourceMobiledevicesDelete](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
     

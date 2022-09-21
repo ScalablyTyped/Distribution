@@ -24,12 +24,12 @@ trait HostKeyAttributes extends StObject {
   /**
     * The returned RDP certificate is not valid after this point in time. This value is listed only for RDP certificates.
     */
-  var notValidAfter: js.UndefOr[IsoDate] = js.undefined
+  var notValidAfter: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The returned RDP certificate is valid after this point in time. This value is listed only for RDP certificates.
     */
-  var notValidBefore: js.UndefOr[IsoDate] = js.undefined
+  var notValidBefore: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The public SSH host key or the RDP certificate.
@@ -39,7 +39,7 @@ trait HostKeyAttributes extends StObject {
   /**
     * The time that the SSH host key or RDP certificate was recorded by Lightsail.
     */
-  var witnessedAt: js.UndefOr[IsoDate] = js.undefined
+  var witnessedAt: js.UndefOr[js.Date] = js.undefined
 }
 object HostKeyAttributes {
   
@@ -62,11 +62,11 @@ object HostKeyAttributes {
     
     inline def setFingerprintSHA256Undefined: Self = StObject.set(x, "fingerprintSHA256", js.undefined)
     
-    inline def setNotValidAfter(value: IsoDate): Self = StObject.set(x, "notValidAfter", value.asInstanceOf[js.Any])
+    inline def setNotValidAfter(value: js.Date): Self = StObject.set(x, "notValidAfter", value.asInstanceOf[js.Any])
     
     inline def setNotValidAfterUndefined: Self = StObject.set(x, "notValidAfter", js.undefined)
     
-    inline def setNotValidBefore(value: IsoDate): Self = StObject.set(x, "notValidBefore", value.asInstanceOf[js.Any])
+    inline def setNotValidBefore(value: js.Date): Self = StObject.set(x, "notValidBefore", value.asInstanceOf[js.Any])
     
     inline def setNotValidBeforeUndefined: Self = StObject.set(x, "notValidBefore", js.undefined)
     
@@ -74,7 +74,7 @@ object HostKeyAttributes {
     
     inline def setPublicKeyUndefined: Self = StObject.set(x, "publicKey", js.undefined)
     
-    inline def setWitnessedAt(value: IsoDate): Self = StObject.set(x, "witnessedAt", value.asInstanceOf[js.Any])
+    inline def setWitnessedAt(value: js.Date): Self = StObject.set(x, "witnessedAt", value.asInstanceOf[js.Any])
     
     inline def setWitnessedAtUndefined: Self = StObject.set(x, "witnessedAt", js.undefined)
   }

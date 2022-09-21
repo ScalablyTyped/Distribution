@@ -18,5 +18,6 @@ trait FactoryFn[T] extends StObject {
     * Subclasses without an explicit constructor call through to the factory of their base
     * definition, providing it with their own constructor to instantiate.
     */
+  def apply[U /* <: T */](): U = js.native
   def apply[U /* <: T */](t: Type[U]): U = js.native
 }

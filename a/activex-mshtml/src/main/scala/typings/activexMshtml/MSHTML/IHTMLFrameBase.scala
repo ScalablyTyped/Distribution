@@ -9,15 +9,15 @@ trait IHTMLFrameBase extends StObject {
   /* private */ @JSName("MSHTML.IHTMLFrameBase_typekey")
   var MSHTMLDotIHTMLFrameBase_typekey: IHTMLFrameBase
   
-  var border: js.Any
+  var border: Any
   
   var frameBorder: String
   
-  var frameSpacing: js.Any
+  var frameSpacing: Any
   
-  var marginHeight: js.Any
+  var marginHeight: Any
   
-  var marginWidth: js.Any
+  var marginWidth: Any
   
   var name: String
   
@@ -31,11 +31,11 @@ object IHTMLFrameBase {
   
   inline def apply(
     MSHTMLDotIHTMLFrameBase_typekey: IHTMLFrameBase,
-    border: js.Any,
+    border: Any,
     frameBorder: String,
-    frameSpacing: js.Any,
-    marginHeight: js.Any,
-    marginWidth: js.Any,
+    frameSpacing: Any,
+    marginHeight: Any,
+    marginWidth: Any,
     name: String,
     noResize: Boolean,
     scrolling: String,
@@ -48,17 +48,17 @@ object IHTMLFrameBase {
   
   extension [Self <: IHTMLFrameBase](x: Self) {
     
-    inline def setBorder(value: js.Any): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: Any): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     inline def setFrameBorder(value: String): Self = StObject.set(x, "frameBorder", value.asInstanceOf[js.Any])
     
-    inline def setFrameSpacing(value: js.Any): Self = StObject.set(x, "frameSpacing", value.asInstanceOf[js.Any])
+    inline def setFrameSpacing(value: Any): Self = StObject.set(x, "frameSpacing", value.asInstanceOf[js.Any])
     
     inline def setMSHTMLDotIHTMLFrameBase_typekey(value: IHTMLFrameBase): Self = StObject.set(x, "MSHTML.IHTMLFrameBase_typekey", value.asInstanceOf[js.Any])
     
-    inline def setMarginHeight(value: js.Any): Self = StObject.set(x, "marginHeight", value.asInstanceOf[js.Any])
+    inline def setMarginHeight(value: Any): Self = StObject.set(x, "marginHeight", value.asInstanceOf[js.Any])
     
-    inline def setMarginWidth(value: js.Any): Self = StObject.set(x, "marginWidth", value.asInstanceOf[js.Any])
+    inline def setMarginWidth(value: Any): Self = StObject.set(x, "marginWidth", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

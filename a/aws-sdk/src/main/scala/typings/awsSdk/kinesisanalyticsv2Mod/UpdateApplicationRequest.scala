@@ -22,9 +22,14 @@ trait UpdateApplicationRequest extends StObject {
   var CloudWatchLoggingOptionUpdates: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.CloudWatchLoggingOptionUpdates] = js.undefined
   
   /**
-    * The current application version ID. You can retrieve the application version ID using DescribeApplication.
+    * A value you use to implement strong concurrency for application updates. You must provide the CurrentApplicationVersionId or the ConditionalToken. You get the application's current ConditionalToken using DescribeApplication. For better concurrency support, use the ConditionalToken parameter instead of CurrentApplicationVersionId.
     */
-  var CurrentApplicationVersionId: ApplicationVersionId
+  var ConditionalToken: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.ConditionalToken] = js.undefined
+  
+  /**
+    * The current application version ID. You must provide the CurrentApplicationVersionId or the ConditionalToken.You can retrieve the application version ID using DescribeApplication. For better concurrency support, use the ConditionalToken parameter instead of CurrentApplicationVersionId.
+    */
+  var CurrentApplicationVersionId: js.UndefOr[ApplicationVersionId] = js.undefined
   
   /**
     * Describes updates to the application's starting parameters.
@@ -38,8 +43,8 @@ trait UpdateApplicationRequest extends StObject {
 }
 object UpdateApplicationRequest {
   
-  inline def apply(ApplicationName: ApplicationName, CurrentApplicationVersionId: ApplicationVersionId): UpdateApplicationRequest = {
-    val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any], CurrentApplicationVersionId = CurrentApplicationVersionId.asInstanceOf[js.Any])
+  inline def apply(ApplicationName: ApplicationName): UpdateApplicationRequest = {
+    val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateApplicationRequest]
   }
   
@@ -55,9 +60,15 @@ object UpdateApplicationRequest {
     
     inline def setCloudWatchLoggingOptionUpdatesUndefined: Self = StObject.set(x, "CloudWatchLoggingOptionUpdates", js.undefined)
     
-    inline def setCloudWatchLoggingOptionUpdatesVarargs(value: CloudWatchLoggingOptionUpdate*): Self = StObject.set(x, "CloudWatchLoggingOptionUpdates", js.Array(value :_*))
+    inline def setCloudWatchLoggingOptionUpdatesVarargs(value: CloudWatchLoggingOptionUpdate*): Self = StObject.set(x, "CloudWatchLoggingOptionUpdates", js.Array(value*))
+    
+    inline def setConditionalToken(value: ConditionalToken): Self = StObject.set(x, "ConditionalToken", value.asInstanceOf[js.Any])
+    
+    inline def setConditionalTokenUndefined: Self = StObject.set(x, "ConditionalToken", js.undefined)
     
     inline def setCurrentApplicationVersionId(value: ApplicationVersionId): Self = StObject.set(x, "CurrentApplicationVersionId", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentApplicationVersionIdUndefined: Self = StObject.set(x, "CurrentApplicationVersionId", js.undefined)
     
     inline def setRunConfigurationUpdate(value: RunConfigurationUpdate): Self = StObject.set(x, "RunConfigurationUpdate", value.asInstanceOf[js.Any])
     

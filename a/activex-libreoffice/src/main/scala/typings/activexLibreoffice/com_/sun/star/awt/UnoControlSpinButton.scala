@@ -60,7 +60,7 @@ object UnoControlSpinButton {
     getView: () => XView,
     isDesignMode: () => Boolean,
     isTransparent: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeAdjustmentListener: XAdjustmentListener => Unit,
     removeEventListener: XEventListener => Unit,

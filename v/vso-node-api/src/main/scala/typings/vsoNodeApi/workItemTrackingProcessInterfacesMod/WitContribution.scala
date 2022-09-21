@@ -20,7 +20,7 @@ trait WitContribution extends StObject {
   /**
     * A dictionary holding key value pairs for contribution inputs.
     */
-  var inputs: StringDictionary[js.Any]
+  var inputs: StringDictionary[Any]
   
   /**
     * A value indicating if the contribution should be show on deleted workItem.
@@ -32,7 +32,7 @@ object WitContribution {
   inline def apply(
     contributionId: String,
     height: Double,
-    inputs: StringDictionary[js.Any],
+    inputs: StringDictionary[Any],
     showOnDeletedWorkItem: Boolean
   ): WitContribution = {
     val __obj = js.Dynamic.literal(contributionId = contributionId.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], showOnDeletedWorkItem = showOnDeletedWorkItem.asInstanceOf[js.Any])
@@ -45,7 +45,7 @@ object WitContribution {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    inline def setInputs(value: StringDictionary[js.Any]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: StringDictionary[Any]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
     inline def setShowOnDeletedWorkItem(value: Boolean): Self = StObject.set(x, "showOnDeletedWorkItem", value.asInstanceOf[js.Any])
   }

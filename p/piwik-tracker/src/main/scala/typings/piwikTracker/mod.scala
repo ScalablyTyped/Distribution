@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("piwik-tracker", JSImport.Namespace)
   @js.native
-  class ^ protected () extends PiwikTracker {
+  open class ^ protected () extends PiwikTracker {
     def this(siteId: Double, trackerUrl: String) = this()
   }
   

@@ -168,7 +168,7 @@ object RegExp {
           /* obj */ js.Object, 
           SugarDefaultChainable[Unit]
         ],
-      init: js.Any
+      init: Any
     ): SugarDefaultChainable[T] = js.native
     
     def reject(find: java.lang.String): SugarDefaultChainable[js.Object] = js.native
@@ -197,7 +197,7 @@ object RegExp {
     def sum[T, U](map: java.lang.String): SugarDefaultChainable[Double] = js.native
     def sum[T, U](map: mapFn[T, U]): SugarDefaultChainable[Double] = js.native
     
-    def tap(tapFn: js.Function1[/* obj */ js.Object, SugarDefaultChainable[js.Any]]): SugarDefaultChainable[js.Object] = js.native
+    def tap(tapFn: js.Function1[/* obj */ js.Object, SugarDefaultChainable[Any]]): SugarDefaultChainable[js.Object] = js.native
     
     def toQueryString[T, U](): SugarDefaultChainable[js.Object] = js.native
     def toQueryString[T, U](options: QueryStringOptions[T, U]): SugarDefaultChainable[js.Object] = js.native

@@ -17,6 +17,11 @@ trait JourneyLimits extends StObject {
   var EndpointReentryCap: js.UndefOr[integer] = js.undefined
   
   /**
+    * Minimum time that must pass before an endpoint can re-enter a given journey. The duration should use an ISO 8601 format, such as PT1H. 
+    */
+  var EndpointReentryInterval: js.UndefOr[string] = js.undefined
+  
+  /**
     * The maximum number of messages that the journey can send each second.
     */
   var MessagesPerSecond: js.UndefOr[integer] = js.undefined
@@ -37,6 +42,10 @@ object JourneyLimits {
     inline def setEndpointReentryCap(value: integer): Self = StObject.set(x, "EndpointReentryCap", value.asInstanceOf[js.Any])
     
     inline def setEndpointReentryCapUndefined: Self = StObject.set(x, "EndpointReentryCap", js.undefined)
+    
+    inline def setEndpointReentryInterval(value: string): Self = StObject.set(x, "EndpointReentryInterval", value.asInstanceOf[js.Any])
+    
+    inline def setEndpointReentryIntervalUndefined: Self = StObject.set(x, "EndpointReentryInterval", js.undefined)
     
     inline def setMessagesPerSecond(value: integer): Self = StObject.set(x, "MessagesPerSecond", value.asInstanceOf[js.Any])
     

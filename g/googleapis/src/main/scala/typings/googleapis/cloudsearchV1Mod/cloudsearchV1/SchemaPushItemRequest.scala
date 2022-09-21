@@ -7,10 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaPushItemRequest extends StObject {
   
   /**
-    * Name of connector making this call. &lt;br /&gt;Format:
-    * datasources/{source_id}/connectors/{ID}
+    * The name of connector making this call. Format: datasources/{source_id\}/connectors/{ID\}
     */
-  var connectorName: js.UndefOr[String] = js.undefined
+  var connectorName: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Common debug options.
@@ -32,6 +31,8 @@ object SchemaPushItemRequest {
   extension [Self <: SchemaPushItemRequest](x: Self) {
     
     inline def setConnectorName(value: String): Self = StObject.set(x, "connectorName", value.asInstanceOf[js.Any])
+    
+    inline def setConnectorNameNull: Self = StObject.set(x, "connectorName", null)
     
     inline def setConnectorNameUndefined: Self = StObject.set(x, "connectorName", js.undefined)
     

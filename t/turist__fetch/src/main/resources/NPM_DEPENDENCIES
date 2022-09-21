@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@turist/fetch" : "7.1.7"
+      "@turist/fetch" : "7.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@turist/fetch" : "7.1.7"
+      "@turist/fetch" : "7.2.0"
     }
   ],
   "compile-devDependencies" : [

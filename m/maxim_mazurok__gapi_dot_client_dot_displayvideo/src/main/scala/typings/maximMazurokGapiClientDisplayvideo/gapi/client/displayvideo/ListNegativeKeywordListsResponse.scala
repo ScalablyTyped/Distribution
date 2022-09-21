@@ -28,7 +28,7 @@ object ListNegativeKeywordListsResponse {
     
     inline def setNegativeKeywordListsUndefined: Self = StObject.set(x, "negativeKeywordLists", js.undefined)
     
-    inline def setNegativeKeywordListsVarargs(value: NegativeKeywordList*): Self = StObject.set(x, "negativeKeywordLists", js.Array(value :_*))
+    inline def setNegativeKeywordListsVarargs(value: NegativeKeywordList*): Self = StObject.set(x, "negativeKeywordLists", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

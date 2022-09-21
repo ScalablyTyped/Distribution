@@ -9,7 +9,7 @@ object mathAxisMod {
   
   @JSImport("babylonjs/Maths/math.axis", "Axis")
   @js.native
-  class Axis () extends StObject
+  open class Axis () extends StObject
   /* static members */
   object Axis {
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PromoteResourceShareCreatedFromPolicyResponse extends StObject {
   
   /**
-    * Indicates whether the request succeeded.
+    * A return value of true indicates that the request succeeded. A value of false indicates that the request failed.
     */
   var returnValue: js.UndefOr[Boolean] = js.undefined
 }

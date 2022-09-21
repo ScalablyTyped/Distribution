@@ -16,10 +16,10 @@ trait ojInputPassword
      with inputBase[String | Null, ojInputPasswordSettableProperties, String | Null, String | Null] {
   
   @JSName("onOjAnimateEnd")
-  var onOjAnimateEnd_ojInputPassword: (js.Function1[/* event */ ojAnimateEnd, js.Any]) | Null = js.native
+  var onOjAnimateEnd_ojInputPassword: (js.Function1[/* event */ ojAnimateEnd, Any]) | Null = js.native
   
   @JSName("onOjAnimateStart")
-  var onOjAnimateStart_ojInputPassword: (js.Function1[/* event */ ojAnimateStart, js.Any]) | Null = js.native
+  var onOjAnimateStart_ojInputPassword: (js.Function1[/* event */ ojAnimateStart, Any]) | Null = js.native
   
   def setProperties(properties: ojInputPasswordSettablePropertiesLenient): Unit = js.native
   

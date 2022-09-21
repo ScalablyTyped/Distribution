@@ -18,7 +18,7 @@ object mod {
   
   @JSImport("twitter", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Twitter {
     def this(options: AccessTokenOptions) = this()
@@ -72,7 +72,7 @@ object mod {
     }
   }
   
-  type Callback = js.Function3[/* error */ js.Any, /* data */ ResponseData, /* response */ Response, Unit]
+  type Callback = js.Function3[/* error */ Any, /* data */ ResponseData, /* response */ Response, Unit]
   
   trait Options extends StObject {
     
@@ -133,7 +133,7 @@ object mod {
   
   trait RequestParams
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var base: js.UndefOr[String] = js.undefined
   }
@@ -152,7 +152,7 @@ object mod {
     }
   }
   
-  type ResponseData = StringDictionary[js.Any]
+  type ResponseData = StringDictionary[Any]
   
   @js.native
   trait Twitter extends StObject {
@@ -181,36 +181,20 @@ object mod {
     @JSName("request")
     val request_Original: RequestAPI[Request, CoreOptions, RequiredUriUrl] = js.native
     
+    def stream(method: user | site): EventEmitter = js.native
+    def stream(method: user | site, callback: js.Function1[/* stream */ EventEmitter, Unit]): Unit = js.native
+    def stream(method: user | site, params: StringDictionary[Any]): EventEmitter = js.native
+    def stream(
+      method: user | site,
+      params: StringDictionary[Any],
+      callback: js.Function1[/* stream */ EventEmitter, Unit]
+    ): Unit = js.native
     def stream(method: String): EventEmitter = js.native
     def stream(method: String, callback: js.Function1[/* stream */ EventEmitter, Unit]): Unit = js.native
-    def stream(method: String, params: StringDictionary[js.Any]): EventEmitter = js.native
+    def stream(method: String, params: StringDictionary[Any]): EventEmitter = js.native
     def stream(
       method: String,
-      params: StringDictionary[js.Any],
-      callback: js.Function1[/* stream */ EventEmitter, Unit]
-    ): Unit = js.native
-    @JSName("stream")
-    def stream_site(method: site): EventEmitter = js.native
-    @JSName("stream")
-    def stream_site(method: site, callback: js.Function1[/* stream */ EventEmitter, Unit]): Unit = js.native
-    @JSName("stream")
-    def stream_site(method: site, params: StringDictionary[js.Any]): EventEmitter = js.native
-    @JSName("stream")
-    def stream_site(
-      method: site,
-      params: StringDictionary[js.Any],
-      callback: js.Function1[/* stream */ EventEmitter, Unit]
-    ): Unit = js.native
-    @JSName("stream")
-    def stream_user(method: user): EventEmitter = js.native
-    @JSName("stream")
-    def stream_user(method: user, callback: js.Function1[/* stream */ EventEmitter, Unit]): Unit = js.native
-    @JSName("stream")
-    def stream_user(method: user, params: StringDictionary[js.Any]): EventEmitter = js.native
-    @JSName("stream")
-    def stream_user(
-      method: user,
-      params: StringDictionary[js.Any],
+      params: StringDictionary[Any],
       callback: js.Function1[/* stream */ EventEmitter, Unit]
     ): Unit = js.native
   }

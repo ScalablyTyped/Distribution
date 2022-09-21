@@ -10,10 +10,10 @@ Encrypting and decrypting JSON objects using AWS Key Management Service (KMS) cu
 | ------------------ | :-------------: |
 | Full name          | kms-json |
 | Keywords           | aws, kms, aws kms, key management service, json, encrypt, decrypt, amazon, amazon web services |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 3150 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 113.0 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/AlexanderMS/kms-json#readme)

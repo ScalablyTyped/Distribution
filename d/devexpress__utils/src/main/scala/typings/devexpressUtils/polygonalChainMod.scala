@@ -14,10 +14,10 @@ object polygonalChainMod {
   
   @JSImport("@devexpress/utils/lib/geometry/polygonal-chain", "PolygonalChain")
   @js.native
-  class PolygonalChain[T /* <: Point */] protected () extends StObject {
+  open class PolygonalChain[T /* <: Point */] protected () extends StObject {
     def this(points: js.Array[T]) = this()
     
-    val bounds: Rectangle = js.native
+    def bounds: Rectangle = js.native
     
     def changeCoordinateCenterTo(p: IPoint): this.type = js.native
     

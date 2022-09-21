@@ -3,6 +3,7 @@ package typings.reactToastify
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.global.JSX.Element
+import typings.reactToastify.typesMod.Theme
 import typings.reactToastify.typesMod.TypeOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -15,7 +16,7 @@ object closeButtonMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def CloseButton(hasCloseToastTypeAriaLabel: CloseButtonProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CloseButton")(hasCloseToastTypeAriaLabel.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def CloseButton(hasCloseToastThemeAriaLabel: CloseButtonProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CloseButton")(hasCloseToastThemeAriaLabel.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait CloseButtonProps extends StObject {
     
@@ -23,12 +24,14 @@ object closeButtonMod {
     
     def closeToast(e: MouseEvent[HTMLElement, NativeMouseEvent]): Unit
     
+    var theme: Theme
+    
     var `type`: TypeOptions
   }
   object CloseButtonProps {
     
-    inline def apply(closeToast: MouseEvent[HTMLElement, NativeMouseEvent] => Unit, `type`: TypeOptions): CloseButtonProps = {
-      val __obj = js.Dynamic.literal(closeToast = js.Any.fromFunction1(closeToast))
+    inline def apply(closeToast: MouseEvent[HTMLElement, NativeMouseEvent] => Unit, theme: Theme, `type`: TypeOptions): CloseButtonProps = {
+      val __obj = js.Dynamic.literal(closeToast = js.Any.fromFunction1(closeToast), theme = theme.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[CloseButtonProps]
     }
@@ -40,6 +43,8 @@ object closeButtonMod {
       inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
       
       inline def setCloseToast(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "closeToast", js.Any.fromFunction1(value))
+      
+      inline def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
       inline def setType(value: TypeOptions): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

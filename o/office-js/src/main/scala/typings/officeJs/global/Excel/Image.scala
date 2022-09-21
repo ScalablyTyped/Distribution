@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents an image in the worksheet. To get the corresponding `Shape` object, use `Image.shape`.
   *
-  * Represents an image in the worksheet. To get the corresponding Shape object, use Image.shape.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.Image")
 @js.native
-class Image ()
+open class Image ()
   extends StObject
      with typings.officeJs.Excel.Image {
   

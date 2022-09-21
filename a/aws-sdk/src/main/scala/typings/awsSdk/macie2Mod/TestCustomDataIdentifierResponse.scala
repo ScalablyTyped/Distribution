@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TestCustomDataIdentifierResponse extends StObject {
   
   /**
-    * The number of instances of sample text that matched the detection criteria specified in the custom data identifier.
+    * The number of occurrences of sample text that matched the criteria specified by the custom data identifier.
     */
   var matchCount: js.UndefOr[integer] = js.undefined
 }

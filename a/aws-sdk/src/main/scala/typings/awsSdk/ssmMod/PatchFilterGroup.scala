@@ -22,6 +22,6 @@ object PatchFilterGroup {
     
     inline def setPatchFilters(value: PatchFilterList): Self = StObject.set(x, "PatchFilters", value.asInstanceOf[js.Any])
     
-    inline def setPatchFiltersVarargs(value: PatchFilter*): Self = StObject.set(x, "PatchFilters", js.Array(value :_*))
+    inline def setPatchFiltersVarargs(value: PatchFilter*): Self = StObject.set(x, "PatchFilters", js.Array(value*))
   }
 }

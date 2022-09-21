@@ -29,7 +29,7 @@ object SignatureProviderRequiredOption {
     
     inline def setRequiredSignatureProviderOptionIdsUndefined: Self = StObject.set(x, "requiredSignatureProviderOptionIds", js.undefined)
     
-    inline def setRequiredSignatureProviderOptionIdsVarargs(value: String*): Self = StObject.set(x, "requiredSignatureProviderOptionIds", js.Array(value :_*))
+    inline def setRequiredSignatureProviderOptionIdsVarargs(value: String*): Self = StObject.set(x, "requiredSignatureProviderOptionIds", js.Array(value*))
     
     inline def setSignerType(value: String): Self = StObject.set(x, "signerType", value.asInstanceOf[js.Any])
     

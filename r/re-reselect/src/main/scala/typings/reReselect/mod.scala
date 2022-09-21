@@ -1808,7 +1808,7 @@ object mod {
   
   @JSImport("re-reselect", "FifoMapCache")
   @js.native
-  class FifoMapCache protected ()
+  open class FifoMapCache protected ()
     extends StObject
        with ICacheObject {
     def this(options: CacheSize) = this()
@@ -1817,18 +1817,18 @@ object mod {
     override def clear(): Unit = js.native
     
     /* CompleteClass */
-    override def get(key: js.Any): js.Any = js.native
+    override def get(key: Any): Any = js.native
     
     /* CompleteClass */
-    override def remove(key: js.Any): Unit = js.native
+    override def remove(key: Any): Unit = js.native
     
     /* CompleteClass */
-    override def set(key: js.Any, selectorFn: js.Any): Unit = js.native
+    override def set(key: Any, selectorFn: Any): Unit = js.native
   }
   
   @JSImport("re-reselect", "FifoObjectCache")
   @js.native
-  class FifoObjectCache protected ()
+  open class FifoObjectCache protected ()
     extends StObject
        with ICacheObject {
     def this(options: CacheSize) = this()
@@ -1837,24 +1837,21 @@ object mod {
     override def clear(): Unit = js.native
     
     /* CompleteClass */
-    override def get(key: js.Any): js.Any = js.native
-    def get(key: ObjectCacheKey): js.Any = js.native
+    override def get(key: Any): Any = js.native
     
     @JSName("isValidCacheKey")
     def isValidCacheKey_MFifoObjectCache(key: ObjectCacheKey): Boolean = js.native
     
     /* CompleteClass */
-    override def remove(key: js.Any): Unit = js.native
-    def remove(key: ObjectCacheKey): Unit = js.native
+    override def remove(key: Any): Unit = js.native
     
     /* CompleteClass */
-    override def set(key: js.Any, selectorFn: js.Any): Unit = js.native
-    def set(key: ObjectCacheKey, selectorFn: js.Any): Unit = js.native
+    override def set(key: Any, selectorFn: Any): Unit = js.native
   }
   
   @JSImport("re-reselect", "FlatMapCache")
   @js.native
-  class FlatMapCache ()
+  open class FlatMapCache ()
     extends StObject
        with ICacheObject {
     
@@ -1862,18 +1859,18 @@ object mod {
     override def clear(): Unit = js.native
     
     /* CompleteClass */
-    override def get(key: js.Any): js.Any = js.native
+    override def get(key: Any): Any = js.native
     
     /* CompleteClass */
-    override def remove(key: js.Any): Unit = js.native
+    override def remove(key: Any): Unit = js.native
     
     /* CompleteClass */
-    override def set(key: js.Any, selectorFn: js.Any): Unit = js.native
+    override def set(key: Any, selectorFn: Any): Unit = js.native
   }
   
   @JSImport("re-reselect", "FlatObjectCache")
   @js.native
-  class FlatObjectCache ()
+  open class FlatObjectCache ()
     extends StObject
        with ICacheObject {
     
@@ -1881,24 +1878,21 @@ object mod {
     override def clear(): Unit = js.native
     
     /* CompleteClass */
-    override def get(key: js.Any): js.Any = js.native
-    def get(key: ObjectCacheKey): js.Any = js.native
+    override def get(key: Any): Any = js.native
     
     @JSName("isValidCacheKey")
     def isValidCacheKey_MFlatObjectCache(key: ObjectCacheKey): Boolean = js.native
     
     /* CompleteClass */
-    override def remove(key: js.Any): Unit = js.native
-    def remove(key: ObjectCacheKey): Unit = js.native
+    override def remove(key: Any): Unit = js.native
     
     /* CompleteClass */
-    override def set(key: js.Any, selectorFn: js.Any): Unit = js.native
-    def set(key: ObjectCacheKey, selectorFn: js.Any): Unit = js.native
+    override def set(key: Any, selectorFn: Any): Unit = js.native
   }
   
   @JSImport("re-reselect", "LruMapCache")
   @js.native
-  class LruMapCache protected ()
+  open class LruMapCache protected ()
     extends StObject
        with ICacheObject {
     def this(options: CacheSize) = this()
@@ -1907,18 +1901,18 @@ object mod {
     override def clear(): Unit = js.native
     
     /* CompleteClass */
-    override def get(key: js.Any): js.Any = js.native
+    override def get(key: Any): Any = js.native
     
     /* CompleteClass */
-    override def remove(key: js.Any): Unit = js.native
+    override def remove(key: Any): Unit = js.native
     
     /* CompleteClass */
-    override def set(key: js.Any, selectorFn: js.Any): Unit = js.native
+    override def set(key: Any, selectorFn: Any): Unit = js.native
   }
   
   @JSImport("re-reselect", "LruObjectCache")
   @js.native
-  class LruObjectCache protected ()
+  open class LruObjectCache protected ()
     extends StObject
        with ICacheObject {
     def this(options: CacheSize) = this()
@@ -1927,19 +1921,16 @@ object mod {
     override def clear(): Unit = js.native
     
     /* CompleteClass */
-    override def get(key: js.Any): js.Any = js.native
-    def get(key: ObjectCacheKey): js.Any = js.native
+    override def get(key: Any): Any = js.native
     
     @JSName("isValidCacheKey")
     def isValidCacheKey_MLruObjectCache(key: ObjectCacheKey): Boolean = js.native
     
     /* CompleteClass */
-    override def remove(key: js.Any): Unit = js.native
-    def remove(key: ObjectCacheKey): Unit = js.native
+    override def remove(key: Any): Unit = js.native
     
     /* CompleteClass */
-    override def set(key: js.Any, selectorFn: js.Any): Unit = js.native
-    def set(key: ObjectCacheKey, selectorFn: js.Any): Unit = js.native
+    override def set(key: Any, selectorFn: Any): Unit = js.native
   }
   
   /*
@@ -6857,11 +6848,9 @@ object mod {
     */
   inline def createCachedSelector_SRT[S, R, T](selectors: js.Array[Selector[S, R]], combiner: js.Function1[/* repeated */ R, T]): OutputCachedSelector[S, T, js.Function1[/* repeated */ R, T], js.Array[Selector[S, R]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCachedSelector")(selectors.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputCachedSelector[S, T, js.Function1[/* repeated */ R, T], js.Array[Selector[S, R]]]]
   
-  inline def createStructuredCachedSelector[T /* <: StringDictionary[js.Function1[/* state */ js.Any, js.Any]] */, S, R](selectors: T): OutputCachedSelector[S, R, js.Function1[/* repeated */ Values[R], R], js.Array[Selector[S, Values[R]]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createStructuredCachedSelector")(selectors.asInstanceOf[js.Any]).asInstanceOf[OutputCachedSelector[S, R, js.Function1[/* repeated */ Values[R], R], js.Array[Selector[S, Values[R]]]]]
+  inline def createStructuredCachedSelector[T /* <: StringDictionary[js.Function1[/* state */ Any, Any]] */, S, R](selectors: T): OutputCachedSelector[S, R, js.Function1[/* repeated */ Values[R], R], js.Array[Selector[S, Values[R]]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createStructuredCachedSelector")(selectors.asInstanceOf[js.Any]).asInstanceOf[OutputCachedSelector[S, R, js.Function1[/* repeated */ Values[R], R], js.Array[Selector[S, Values[R]]]]]
   
-  inline def createStructuredCachedSelector_T_StringDictionaryFunction3AnyAnyAnyAnySPR_OutputParametricCachedSelector[T /* <: StringDictionary[
-    js.Function3[/* state */ js.Any, /* props */ js.Any, /* repeated */ js.Any, js.Any]
-  ] */, S, P, R](selectors: T): OutputParametricCachedSelector[
+  inline def createStructuredCachedSelector_T_StringDictionaryFunction3AnyAnyAnyAnySPR_OutputParametricCachedSelector[T /* <: StringDictionary[js.Function3[/* state */ Any, /* props */ Any, /* repeated */ Any, Any]] */, S, P, R](selectors: T): OutputParametricCachedSelector[
     S, 
     P, 
     R, 
@@ -9999,899 +9988,24 @@ object mod {
     */
   inline def default_SRT[S, R, T](selectors: js.Array[Selector[S, R]], combiner: js.Function1[/* repeated */ R, T]): OutputCachedSelector[S, T, js.Function1[/* repeated */ R, T], js.Array[Selector[S, R]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selectors.asInstanceOf[js.Any], combiner.asInstanceOf[js.Any])).asInstanceOf[OutputCachedSelector[S, T, js.Function1[/* repeated */ R, T], js.Array[Selector[S, R]]]]
   
-  @js.native
-  trait CreateSelectorInstance extends StObject {
-    
-    def apply[S1, R1, T](selector1: typings.reselect.mod.Selector[S1, R1], combiner: js.Function1[/* res1 */ R1, T]): typings.reselect.mod.OutputSelector[S1, T, js.Function1[/* res1 */ R1, T]] = js.native
-    def apply[S, R1, T](selectors: js.Array[typings.reselect.mod.Selector[S, R1]], combiner: js.Function1[/* res */ R1, T]): typings.reselect.mod.OutputSelector[S, T, js.Function1[/* res */ R1, T]] = js.native
-    def apply[S, R1, R2, T](
-      selector1: typings.reselect.mod.Selector[S, R1],
-      selector2: typings.reselect.mod.Selector[S, R2],
-      combiner: js.Function2[/* res1 */ R1, /* res2 */ R2, T]
-    ): typings.reselect.mod.OutputSelector[S, T, js.Function2[/* res1 */ R1, /* res2 */ R2, T]] = js.native
-    def apply[S, R1, R2, T](
-      selectors: js.Tuple2[typings.reselect.mod.Selector[S, R1], typings.reselect.mod.Selector[S, R2]],
-      combiner: js.Function2[/* res1 */ R1, /* res2 */ R2, T]
-    ): typings.reselect.mod.OutputSelector[S, T, js.Function2[/* res1 */ R1, /* res2 */ R2, T]] = js.native
-    def apply[S, P, R1, T](
-      selector: typings.reselect.mod.ParametricSelector[S, P, R1],
-      combiner: js.Function1[/* res */ R1, T]
-    ): typings.reselect.mod.OutputParametricSelector[S, P, T, js.Function1[/* res */ R1, T]] = js.native
-    def apply[S, P, R1, R2, T](
-      selector1: typings.reselect.mod.ParametricSelector[S, P, R1],
-      selector2: typings.reselect.mod.ParametricSelector[S, P, R2],
-      combiner: js.Function2[/* res1 */ R1, /* res2 */ R2, T]
-    ): typings.reselect.mod.OutputParametricSelector[S, P, T, js.Function2[/* res1 */ R1, /* res2 */ R2, T]] = js.native
-    def apply[S, R1, R2, R3, T](
-      selector1: typings.reselect.mod.Selector[S, R1],
-      selector2: typings.reselect.mod.Selector[S, R2],
-      selector3: typings.reselect.mod.Selector[S, R3],
-      combiner: js.Function3[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, T]
-    ): typings.reselect.mod.OutputSelector[S, T, js.Function3[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, T]] = js.native
-    def apply[S, R1, R2, R3, T](
-      selectors: js.Tuple3[
-          typings.reselect.mod.Selector[S, R1], 
-          typings.reselect.mod.Selector[S, R2], 
-          typings.reselect.mod.Selector[S, R3]
-        ],
-      combiner: js.Function3[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, T]
-    ): typings.reselect.mod.OutputSelector[S, T, js.Function3[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, T]] = js.native
-    def apply[S, P, R1, R2, R3, T](
-      selector1: typings.reselect.mod.ParametricSelector[S, P, R1],
-      selector2: typings.reselect.mod.ParametricSelector[S, P, R2],
-      selector3: typings.reselect.mod.ParametricSelector[S, P, R3],
-      combiner: js.Function3[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, T]
-    ): typings.reselect.mod.OutputParametricSelector[S, P, T, js.Function3[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, T]] = js.native
-    def apply[S, R1, R2, R3, R4, T](
-      selector1: typings.reselect.mod.Selector[S, R1],
-      selector2: typings.reselect.mod.Selector[S, R2],
-      selector3: typings.reselect.mod.Selector[S, R3],
-      selector4: typings.reselect.mod.Selector[S, R4],
-      combiner: js.Function4[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, T]
-    ): typings.reselect.mod.OutputSelector[S, T, js.Function4[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, T]] = js.native
-    def apply[S, R1, R2, R3, R4, T](
-      selectors: js.Tuple4[
-          typings.reselect.mod.Selector[S, R1], 
-          typings.reselect.mod.Selector[S, R2], 
-          typings.reselect.mod.Selector[S, R3], 
-          typings.reselect.mod.Selector[S, R4]
-        ],
-      combiner: js.Function4[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, T]
-    ): typings.reselect.mod.OutputSelector[S, T, js.Function4[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, T]] = js.native
-    def apply[S, P, R1, R2, R3, R4, T](
-      selector1: typings.reselect.mod.ParametricSelector[S, P, R1],
-      selector2: typings.reselect.mod.ParametricSelector[S, P, R2],
-      selector3: typings.reselect.mod.ParametricSelector[S, P, R3],
-      selector4: typings.reselect.mod.ParametricSelector[S, P, R4],
-      combiner: js.Function4[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, T]
-    ): typings.reselect.mod.OutputParametricSelector[S, P, T, js.Function4[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, T]] = js.native
-    def apply[S, R1, R2, R3, R4, R5, T](
-      selector1: typings.reselect.mod.Selector[S, R1],
-      selector2: typings.reselect.mod.Selector[S, R2],
-      selector3: typings.reselect.mod.Selector[S, R3],
-      selector4: typings.reselect.mod.Selector[S, R4],
-      selector5: typings.reselect.mod.Selector[S, R5],
-      combiner: js.Function5[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, /* res5 */ R5, T]
-    ): typings.reselect.mod.OutputSelector[
-        S, 
-        T, 
-        js.Function5[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, /* res5 */ R5, T]
-      ] = js.native
-    def apply[S, R1, R2, R3, R4, R5, T](
-      selectors: js.Tuple5[
-          typings.reselect.mod.Selector[S, R1], 
-          typings.reselect.mod.Selector[S, R2], 
-          typings.reselect.mod.Selector[S, R3], 
-          typings.reselect.mod.Selector[S, R4], 
-          typings.reselect.mod.Selector[S, R5]
-        ],
-      combiner: js.Function5[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, /* res5 */ R5, T]
-    ): typings.reselect.mod.OutputSelector[
-        S, 
-        T, 
-        js.Function5[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, /* res5 */ R5, T]
-      ] = js.native
-    def apply[S, P, R1, R2, R3, R4, R5, T](
-      selector1: typings.reselect.mod.ParametricSelector[S, P, R1],
-      selector2: typings.reselect.mod.ParametricSelector[S, P, R2],
-      selector3: typings.reselect.mod.ParametricSelector[S, P, R3],
-      selector4: typings.reselect.mod.ParametricSelector[S, P, R4],
-      selector5: typings.reselect.mod.ParametricSelector[S, P, R5],
-      combiner: js.Function5[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, /* res5 */ R5, T]
-    ): typings.reselect.mod.OutputParametricSelector[
-        S, 
-        P, 
-        T, 
-        js.Function5[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, /* res5 */ R5, T]
-      ] = js.native
-    def apply[S, R1, R2, R3, R4, R5, R6, T](
-      selector1: typings.reselect.mod.Selector[S, R1],
-      selector2: typings.reselect.mod.Selector[S, R2],
-      selector3: typings.reselect.mod.Selector[S, R3],
-      selector4: typings.reselect.mod.Selector[S, R4],
-      selector5: typings.reselect.mod.Selector[S, R5],
-      selector6: typings.reselect.mod.Selector[S, R6],
-      combiner: js.Function6[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, /* res5 */ R5, /* res6 */ R6, T]
-    ): typings.reselect.mod.OutputSelector[
-        S, 
-        T, 
-        js.Function6[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, /* res5 */ R5, /* res6 */ R6, T]
-      ] = js.native
-    def apply[S, R1, R2, R3, R4, R5, R6, T](
-      selectors: js.Tuple6[
-          typings.reselect.mod.Selector[S, R1], 
-          typings.reselect.mod.Selector[S, R2], 
-          typings.reselect.mod.Selector[S, R3], 
-          typings.reselect.mod.Selector[S, R4], 
-          typings.reselect.mod.Selector[S, R5], 
-          typings.reselect.mod.Selector[S, R6]
-        ],
-      combiner: js.Function6[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, /* res5 */ R5, /* res6 */ R6, T]
-    ): typings.reselect.mod.OutputSelector[
-        S, 
-        T, 
-        js.Function6[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, /* res5 */ R5, /* res6 */ R6, T]
-      ] = js.native
-    def apply[S, P, R1, R2, R3, R4, R5, R6, T](
-      selector1: typings.reselect.mod.ParametricSelector[S, P, R1],
-      selector2: typings.reselect.mod.ParametricSelector[S, P, R2],
-      selector3: typings.reselect.mod.ParametricSelector[S, P, R3],
-      selector4: typings.reselect.mod.ParametricSelector[S, P, R4],
-      selector5: typings.reselect.mod.ParametricSelector[S, P, R5],
-      selector6: typings.reselect.mod.ParametricSelector[S, P, R6],
-      combiner: js.Function6[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, /* res5 */ R5, /* res6 */ R6, T]
-    ): typings.reselect.mod.OutputParametricSelector[
-        S, 
-        P, 
-        T, 
-        js.Function6[/* res1 */ R1, /* res2 */ R2, /* res3 */ R3, /* res4 */ R4, /* res5 */ R5, /* res6 */ R6, T]
-      ] = js.native
-    def apply[S, R1, R2, R3, R4, R5, R6, R7, T](
-      selector1: typings.reselect.mod.Selector[S, R1],
-      selector2: typings.reselect.mod.Selector[S, R2],
-      selector3: typings.reselect.mod.Selector[S, R3],
-      selector4: typings.reselect.mod.Selector[S, R4],
-      selector5: typings.reselect.mod.Selector[S, R5],
-      selector6: typings.reselect.mod.Selector[S, R6],
-      selector7: typings.reselect.mod.Selector[S, R7],
-      combiner: js.Function7[
-          /* res1 */ R1, 
-          /* res2 */ R2, 
-          /* res3 */ R3, 
-          /* res4 */ R4, 
-          /* res5 */ R5, 
-          /* res6 */ R6, 
-          /* res7 */ R7, 
-          T
-        ]
-    ): typings.reselect.mod.OutputSelector[
-        S, 
-        T, 
-        js.Function7[
-          /* res1 */ R1, 
-          /* res2 */ R2, 
-          /* res3 */ R3, 
-          /* res4 */ R4, 
-          /* res5 */ R5, 
-          /* res6 */ R6, 
-          /* res7 */ R7, 
-          T
-        ]
-      ] = js.native
-    def apply[S, R1, R2, R3, R4, R5, R6, R7, T](
-      selectors: js.Tuple7[
-          typings.reselect.mod.Selector[S, R1], 
-          typings.reselect.mod.Selector[S, R2], 
-          typings.reselect.mod.Selector[S, R3], 
-          typings.reselect.mod.Selector[S, R4], 
-          typings.reselect.mod.Selector[S, R5], 
-          typings.reselect.mod.Selector[S, R6], 
-          typings.reselect.mod.Selector[S, R7]
-        ],
-      combiner: js.Function7[
-          /* res1 */ R1, 
-          /* res2 */ R2, 
-          /* res3 */ R3, 
-          /* res4 */ R4, 
-          /* res5 */ R5, 
-          /* res6 */ R6, 
-          /* res7 */ R7, 
-          T
-        ]
-    ): typings.reselect.mod.OutputSelector[
-        S, 
-        T, 
-        js.Function7[
-          /* res1 */ R1, 
-          /* res2 */ R2, 
-          /* res3 */ R3, 
-          /* res4 */ R4, 
-          /* res5 */ R5, 
-          /* res6 */ R6, 
-          /* res7 */ R7, 
-          T
-        ]
-      ] = js.native
-    def apply[S, P, R1, R2, R3, R4, R5, R6, R7, T](
-      selector1: typings.reselect.mod.ParametricSelector[S, P, R1],
-      selector2: typings.reselect.mod.ParametricSelector[S, P, R2],
-      selector3: typings.reselect.mod.ParametricSelector[S, P, R3],
-      selector4: typings.reselect.mod.ParametricSelector[S, P, R4],
-      selector5: typings.reselect.mod.ParametricSelector[S, P, R5],
-      selector6: typings.reselect.mod.ParametricSelector[S, P, R6],
-      selector7: typings.reselect.mod.ParametricSelector[S, P, R7],
-      combiner: js.Function7[
-          /* res1 */ R1, 
-          /* res2 */ R2, 
-          /* res3 */ R3, 
-          /* res4 */ R4, 
-          /* res5 */ R5, 
-          /* res6 */ R6, 
-          /* res7 */ R7, 
-          T
-        ]
-    ): typings.reselect.mod.OutputParametricSelector[
-        S, 
-        P, 
-        T, 
-        js.Function7[
-          /* res1 */ R1, 
-          /* res2 */ R2, 
-          /* res3 */ R3, 
-          /* res4 */ R4, 
-          /* res5 */ R5, 
-          /* res6 */ R6, 
-          /* res7 */ R7, 
-          T
-        ]
-      ] = js.native
-    def apply[S, R1, R2, R3, R4, R5, R6, R7, R8, T](
-      selector1: typings.reselect.mod.Selector[S, R1],
-      selector2: typings.reselect.mod.Selector[S, R2],
-      selector3: typings.reselect.mod.Selector[S, R3],
-      selector4: typings.reselect.mod.Selector[S, R4],
-      selector5: typings.reselect.mod.Selector[S, R5],
-      selector6: typings.reselect.mod.Selector[S, R6],
-      selector7: typings.reselect.mod.Selector[S, R7],
-      selector8: typings.reselect.mod.Selector[S, R8],
-      combiner: js.Function8[
-          /* res1 */ R1, 
-          /* res2 */ R2, 
-          /* res3 */ R3, 
-          /* res4 */ R4, 
-          /* res5 */ R5, 
-          /* res6 */ R6, 
-          /* res7 */ R7, 
-          /* res8 */ R8, 
-          T
-        ]
-    ): typings.reselect.mod.OutputSelector[
-        S, 
-        T, 
-        js.Function8[
-          /* res1 */ R1, 
-          /* res2 */ R2, 
-          /* res3 */ R3, 
-          /* res4 */ R4, 
-          /* res5 */ R5, 
-          /* res6 */ R6, 
-          /* res7 */ R7, 
-          /* res8 */ R8, 
-          T
-        ]
-      ] = js.native
-    def apply[S, R1, R2, R3, R4, R5, R6, R7, R8, T](
-      selectors: js.Tuple8[
-          typings.reselect.mod.Selector[S, R1], 
-          typings.reselect.mod.Selector[S, R2], 
-          typings.reselect.mod.Selector[S, R3], 
-          typings.reselect.mod.Selector[S, R4], 
-          typings.reselect.mod.Selector[S, R5], 
-          typings.reselect.mod.Selector[S, R6], 
-          typings.reselect.mod.Selector[S, R7], 
-          typings.reselect.mod.Selector[S, R8]
-        ],
-      combiner: js.Function8[
-          /* res1 */ R1, 
-          /* res2 */ R2, 
-          /* res3 */ R3, 
-          /* res4 */ R4, 
-          /* res5 */ R5, 
-          /* res6 */ R6, 
-          /* res7 */ R7, 
-          /* res8 */ R8, 
-          T
-        ]
-    ): typings.reselect.mod.OutputSelector[
-        S, 
-        T, 
-        js.Function8[
-          /* res1 */ R1, 
-          /* res2 */ R2, 
-          /* res3 */ R3, 
-          /* res4 */ R4, 
-          /* res5 */ R5, 
-          /* res6 */ R6, 
-          /* res7 */ R7, 
-          /* res8 */ R8, 
-          T
-        ]
-      ] = js.native
-    def apply[S, P, R1, R2, R3, R4, R5, R6, R7, R8, T](
-      selector1: typings.reselect.mod.ParametricSelector[S, P, R1],
-      selector2: typings.reselect.mod.ParametricSelector[S, P, R2],
-      selector3: typings.reselect.mod.ParametricSelector[S, P, R3],
-      selector4: typings.reselect.mod.ParametricSelector[S, P, R4],
-      selector5: typings.reselect.mod.ParametricSelector[S, P, R5],
-      selector6: typings.reselect.mod.ParametricSelector[S, P, R6],
-      selector7: typings.reselect.mod.ParametricSelector[S, P, R7],
-      selector8: typings.reselect.mod.ParametricSelector[S, P, R8],
-      combiner: js.Function8[
-          /* res1 */ R1, 
-          /* res2 */ R2, 
-          /* res3 */ R3, 
-          /* res4 */ R4, 
-          /* res5 */ R5, 
-          /* res6 */ R6, 
-          /* res7 */ R7, 
-          /* res8 */ R8, 
-          T
-        ]
-    ): typings.reselect.mod.OutputParametricSelector[
-        S, 
-        P, 
-        T, 
-        js.Function8[
-          /* res1 */ R1, 
-          /* res2 */ R2, 
-          /* res3 */ R3, 
-          /* res4 */ R4, 
-          /* res5 */ R5, 
-          /* res6 */ R6, 
-          /* res7 */ R7, 
-          /* res8 */ R8, 
-          T
-        ]
-      ] = js.native
-    def apply[S, R1, R2, R3, R4, R5, R6, R7, R8, R9, T](
-      selector1: typings.reselect.mod.Selector[S, R1],
-      selector2: typings.reselect.mod.Selector[S, R2],
-      selector3: typings.reselect.mod.Selector[S, R3],
-      selector4: typings.reselect.mod.Selector[S, R4],
-      selector5: typings.reselect.mod.Selector[S, R5],
-      selector6: typings.reselect.mod.Selector[S, R6],
-      selector7: typings.reselect.mod.Selector[S, R7],
-      selector8: typings.reselect.mod.Selector[S, R8],
-      selector9: typings.reselect.mod.Selector[S, R9],
-      combiner: js.Function9[
-          /* res1 */ R1, 
-          /* res2 */ R2, 
-          /* res3 */ R3, 
-          /* res4 */ R4, 
-          /* res5 */ R5, 
-          /* res6 */ R6, 
-          /* res7 */ R7, 
-          /* res8 */ R8, 
-          /* res9 */ R9, 
-          T
-        ]
-    ): typings.reselect.mod.OutputSelector[
-        S, 
-        T, 
-        js.Function9[
-          /* res1 */ R1, 
-          /* res2 */ R2, 
-          /* res3 */ R3, 
-          /* res4 */ R4, 
-          /* res5 */ R5, 
-          /* res6 */ R6, 
-          /* res7 */ R7, 
-          /* res8 */ R8, 
-          /* res9 */ R9, 
-          T
-        ]
-      ] = js.native
-    def apply[S, R1, R2, R3, R4, R5, R6, R7, R8, R9, T](
-      selectors: js.Tuple9[
-          typings.reselect.mod.Selector[S, R1], 
-          typings.reselect.mod.Selector[S, R2], 
-          typings.reselect.mod.Selector[S, R3], 
-          typings.reselect.mod.Selector[S, R4], 
-          typings.reselect.mod.Selector[S, R5], 
-          typings.reselect.mod.Selector[S, R6], 
-          typings.reselect.mod.Selector[S, R7], 
-          typings.reselect.mod.Selector[S, R8], 
-          typings.reselect.mod.Selector[S, R9]
-        ],
-      combiner: js.Function9[
-          /* res1 */ R1, 
-          /* res2 */ R2, 
-          /* res3 */ R3, 
-          /* res4 */ R4, 
-          /* res5 */ R5, 
-          /* res6 */ R6, 
-          /* res7 */ R7, 
-          /* res8 */ R8, 
-          /* res9 */ R9, 
-          T
-        ]
-    ): typings.reselect.mod.OutputSelector[
-        S, 
-        T, 
-        js.Function9[
-          /* res1 */ R1, 
-          /* res2 */ R2, 
-          /* res3 */ R3, 
-          /* res4 */ R4, 
-          /* res5 */ R5, 
-          /* res6 */ R6, 
-          /* res7 */ R7, 
-          /* res8 */ R8, 
-          /* res9 */ R9, 
-          T
-        ]
-      ] = js.native
-    def apply[S, P, R1, R2, R3, R4, R5, R6, R7, R8, R9, T](
-      selector1: typings.reselect.mod.ParametricSelector[S, P, R1],
-      selector2: typings.reselect.mod.ParametricSelector[S, P, R2],
-      selector3: typings.reselect.mod.ParametricSelector[S, P, R3],
-      selector4: typings.reselect.mod.ParametricSelector[S, P, R4],
-      selector5: typings.reselect.mod.ParametricSelector[S, P, R5],
-      selector6: typings.reselect.mod.ParametricSelector[S, P, R6],
-      selector7: typings.reselect.mod.ParametricSelector[S, P, R7],
-      selector8: typings.reselect.mod.ParametricSelector[S, P, R8],
-      selector9: typings.reselect.mod.ParametricSelector[S, P, R9],
-      combiner: js.Function9[
-          /* res1 */ R1, 
-          /* res2 */ R2, 
-          /* res3 */ R3, 
-          /* res4 */ R4, 
-          /* res5 */ R5, 
-          /* res6 */ R6, 
-          /* res7 */ R7, 
-          /* res8 */ R8, 
-          /* res9 */ R9, 
-          T
-        ]
-    ): typings.reselect.mod.OutputParametricSelector[
-        S, 
-        P, 
-        T, 
-        js.Function9[
-          /* res1 */ R1, 
-          /* res2 */ R2, 
-          /* res3 */ R3, 
-          /* res4 */ R4, 
-          /* res5 */ R5, 
-          /* res6 */ R6, 
-          /* res7 */ R7, 
-          /* res8 */ R8, 
-          /* res9 */ R9, 
-          T
-        ]
-      ] = js.native
-    def apply[S, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, T](
-      selector1: typings.reselect.mod.Selector[S, R1],
-      selector2: typings.reselect.mod.Selector[S, R2],
-      selector3: typings.reselect.mod.Selector[S, R3],
-      selector4: typings.reselect.mod.Selector[S, R4],
-      selector5: typings.reselect.mod.Selector[S, R5],
-      selector6: typings.reselect.mod.Selector[S, R6],
-      selector7: typings.reselect.mod.Selector[S, R7],
-      selector8: typings.reselect.mod.Selector[S, R8],
-      selector9: typings.reselect.mod.Selector[S, R9],
-      selector10: typings.reselect.mod.Selector[S, R10],
-      combiner: js.Function10[
-          /* res1 */ R1, 
-          /* res2 */ R2, 
-          /* res3 */ R3, 
-          /* res4 */ R4, 
-          /* res5 */ R5, 
-          /* res6 */ R6, 
-          /* res7 */ R7, 
-          /* res8 */ R8, 
-          /* res9 */ R9, 
-          /* res10 */ R10, 
-          T
-        ]
-    ): typings.reselect.mod.OutputSelector[
-        S, 
-        T, 
-        js.Function10[
-          /* res1 */ R1, 
-          /* res2 */ R2, 
-          /* res3 */ R3, 
-          /* res4 */ R4, 
-          /* res5 */ R5, 
-          /* res6 */ R6, 
-          /* res7 */ R7, 
-          /* res8 */ R8, 
-          /* res9 */ R9, 
-          /* res10 */ R10, 
-          T
-        ]
-      ] = js.native
-    def apply[S, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, T](
-      selectors: js.Tuple10[
-          typings.reselect.mod.Selector[S, R1], 
-          typings.reselect.mod.Selector[S, R2], 
-          typings.reselect.mod.Selector[S, R3], 
-          typings.reselect.mod.Selector[S, R4], 
-          typings.reselect.mod.Selector[S, R5], 
-          typings.reselect.mod.Selector[S, R6], 
-          typings.reselect.mod.Selector[S, R7], 
-          typings.reselect.mod.Selector[S, R8], 
-          typings.reselect.mod.Selector[S, R9], 
-          typings.reselect.mod.Selector[S, R10]
-        ],
-      combiner: js.Function10[
-          /* res1 */ R1, 
-          /* res2 */ R2, 
-          /* res3 */ R3, 
-          /* res4 */ R4, 
-          /* res5 */ R5, 
-          /* res6 */ R6, 
-          /* res7 */ R7, 
-          /* res8 */ R8, 
-          /* res9 */ R9, 
-          /* res10 */ R10, 
-          T
-        ]
-    ): typings.reselect.mod.OutputSelector[
-        S, 
-        T, 
-        js.Function10[
-          /* res1 */ R1, 
-          /* res2 */ R2, 
-          /* res3 */ R3, 
-          /* res4 */ R4, 
-          /* res5 */ R5, 
-          /* res6 */ R6, 
-          /* res7 */ R7, 
-          /* res8 */ R8, 
-          /* res9 */ R9, 
-          /* res10 */ R10, 
-          T
-        ]
-      ] = js.native
-    def apply[S, P, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, T](
-      selector1: typings.reselect.mod.ParametricSelector[S, P, R1],
-      selector2: typings.reselect.mod.ParametricSelector[S, P, R2],
-      selector3: typings.reselect.mod.ParametricSelector[S, P, R3],
-      selector4: typings.reselect.mod.ParametricSelector[S, P, R4],
-      selector5: typings.reselect.mod.ParametricSelector[S, P, R5],
-      selector6: typings.reselect.mod.ParametricSelector[S, P, R6],
-      selector7: typings.reselect.mod.ParametricSelector[S, P, R7],
-      selector8: typings.reselect.mod.ParametricSelector[S, P, R8],
-      selector9: typings.reselect.mod.ParametricSelector[S, P, R9],
-      selector10: typings.reselect.mod.ParametricSelector[S, P, R10],
-      combiner: js.Function10[
-          /* res1 */ R1, 
-          /* res2 */ R2, 
-          /* res3 */ R3, 
-          /* res4 */ R4, 
-          /* res5 */ R5, 
-          /* res6 */ R6, 
-          /* res7 */ R7, 
-          /* res8 */ R8, 
-          /* res9 */ R9, 
-          /* res10 */ R10, 
-          T
-        ]
-    ): typings.reselect.mod.OutputParametricSelector[
-        S, 
-        P, 
-        T, 
-        js.Function10[
-          /* res1 */ R1, 
-          /* res2 */ R2, 
-          /* res3 */ R3, 
-          /* res4 */ R4, 
-          /* res5 */ R5, 
-          /* res6 */ R6, 
-          /* res7 */ R7, 
-          /* res8 */ R8, 
-          /* res9 */ R9, 
-          /* res10 */ R10, 
-          T
-        ]
-      ] = js.native
-    def apply[S, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, T](
-      selector1: typings.reselect.mod.Selector[S, R1],
-      selector2: typings.reselect.mod.Selector[S, R2],
-      selector3: typings.reselect.mod.Selector[S, R3],
-      selector4: typings.reselect.mod.Selector[S, R4],
-      selector5: typings.reselect.mod.Selector[S, R5],
-      selector6: typings.reselect.mod.Selector[S, R6],
-      selector7: typings.reselect.mod.Selector[S, R7],
-      selector8: typings.reselect.mod.Selector[S, R8],
-      selector9: typings.reselect.mod.Selector[S, R9],
-      selector10: typings.reselect.mod.Selector[S, R10],
-      selector11: typings.reselect.mod.Selector[S, R11],
-      combiner: js.Function11[
-          /* res1 */ R1, 
-          /* res2 */ R2, 
-          /* res3 */ R3, 
-          /* res4 */ R4, 
-          /* res5 */ R5, 
-          /* res6 */ R6, 
-          /* res7 */ R7, 
-          /* res8 */ R8, 
-          /* res9 */ R9, 
-          /* res10 */ R10, 
-          /* res11 */ R11, 
-          T
-        ]
-    ): typings.reselect.mod.OutputSelector[
-        S, 
-        T, 
-        js.Function11[
-          /* res1 */ R1, 
-          /* res2 */ R2, 
-          /* res3 */ R3, 
-          /* res4 */ R4, 
-          /* res5 */ R5, 
-          /* res6 */ R6, 
-          /* res7 */ R7, 
-          /* res8 */ R8, 
-          /* res9 */ R9, 
-          /* res10 */ R10, 
-          /* res11 */ R11, 
-          T
-        ]
-      ] = js.native
-    def apply[S, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, T](
-      selectors: js.Tuple11[
-          typings.reselect.mod.Selector[S, R1], 
-          typings.reselect.mod.Selector[S, R2], 
-          typings.reselect.mod.Selector[S, R3], 
-          typings.reselect.mod.Selector[S, R4], 
-          typings.reselect.mod.Selector[S, R5], 
-          typings.reselect.mod.Selector[S, R6], 
-          typings.reselect.mod.Selector[S, R7], 
-          typings.reselect.mod.Selector[S, R8], 
-          typings.reselect.mod.Selector[S, R9], 
-          typings.reselect.mod.Selector[S, R10], 
-          typings.reselect.mod.Selector[S, R11]
-        ],
-      combiner: js.Function11[
-          /* res1 */ R1, 
-          /* res2 */ R2, 
-          /* res3 */ R3, 
-          /* res4 */ R4, 
-          /* res5 */ R5, 
-          /* res6 */ R6, 
-          /* res7 */ R7, 
-          /* res8 */ R8, 
-          /* res9 */ R9, 
-          /* res10 */ R10, 
-          /* res11 */ R11, 
-          T
-        ]
-    ): typings.reselect.mod.OutputSelector[
-        S, 
-        T, 
-        js.Function11[
-          /* res1 */ R1, 
-          /* res2 */ R2, 
-          /* res3 */ R3, 
-          /* res4 */ R4, 
-          /* res5 */ R5, 
-          /* res6 */ R6, 
-          /* res7 */ R7, 
-          /* res8 */ R8, 
-          /* res9 */ R9, 
-          /* res10 */ R10, 
-          /* res11 */ R11, 
-          T
-        ]
-      ] = js.native
-    def apply[S, P, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, T](
-      selector1: typings.reselect.mod.ParametricSelector[S, P, R1],
-      selector2: typings.reselect.mod.ParametricSelector[S, P, R2],
-      selector3: typings.reselect.mod.ParametricSelector[S, P, R3],
-      selector4: typings.reselect.mod.ParametricSelector[S, P, R4],
-      selector5: typings.reselect.mod.ParametricSelector[S, P, R5],
-      selector6: typings.reselect.mod.ParametricSelector[S, P, R6],
-      selector7: typings.reselect.mod.ParametricSelector[S, P, R7],
-      selector8: typings.reselect.mod.ParametricSelector[S, P, R8],
-      selector9: typings.reselect.mod.ParametricSelector[S, P, R9],
-      selector10: typings.reselect.mod.ParametricSelector[S, P, R10],
-      selector11: typings.reselect.mod.ParametricSelector[S, P, R11],
-      combiner: js.Function11[
-          /* res1 */ R1, 
-          /* res2 */ R2, 
-          /* res3 */ R3, 
-          /* res4 */ R4, 
-          /* res5 */ R5, 
-          /* res6 */ R6, 
-          /* res7 */ R7, 
-          /* res8 */ R8, 
-          /* res9 */ R9, 
-          /* res10 */ R10, 
-          /* res11 */ R11, 
-          T
-        ]
-    ): typings.reselect.mod.OutputParametricSelector[
-        S, 
-        P, 
-        T, 
-        js.Function11[
-          /* res1 */ R1, 
-          /* res2 */ R2, 
-          /* res3 */ R3, 
-          /* res4 */ R4, 
-          /* res5 */ R5, 
-          /* res6 */ R6, 
-          /* res7 */ R7, 
-          /* res8 */ R8, 
-          /* res9 */ R9, 
-          /* res10 */ R10, 
-          /* res11 */ R11, 
-          T
-        ]
-      ] = js.native
-    def apply[S, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, T](
-      selector1: typings.reselect.mod.Selector[S, R1],
-      selector2: typings.reselect.mod.Selector[S, R2],
-      selector3: typings.reselect.mod.Selector[S, R3],
-      selector4: typings.reselect.mod.Selector[S, R4],
-      selector5: typings.reselect.mod.Selector[S, R5],
-      selector6: typings.reselect.mod.Selector[S, R6],
-      selector7: typings.reselect.mod.Selector[S, R7],
-      selector8: typings.reselect.mod.Selector[S, R8],
-      selector9: typings.reselect.mod.Selector[S, R9],
-      selector10: typings.reselect.mod.Selector[S, R10],
-      selector11: typings.reselect.mod.Selector[S, R11],
-      selector12: typings.reselect.mod.Selector[S, R12],
-      combiner: js.Function12[
-          /* res1 */ R1, 
-          /* res2 */ R2, 
-          /* res3 */ R3, 
-          /* res4 */ R4, 
-          /* res5 */ R5, 
-          /* res6 */ R6, 
-          /* res7 */ R7, 
-          /* res8 */ R8, 
-          /* res9 */ R9, 
-          /* res10 */ R10, 
-          /* res11 */ R11, 
-          /* res12 */ R12, 
-          T
-        ]
-    ): typings.reselect.mod.OutputSelector[
-        S, 
-        T, 
-        js.Function12[
-          /* res1 */ R1, 
-          /* res2 */ R2, 
-          /* res3 */ R3, 
-          /* res4 */ R4, 
-          /* res5 */ R5, 
-          /* res6 */ R6, 
-          /* res7 */ R7, 
-          /* res8 */ R8, 
-          /* res9 */ R9, 
-          /* res10 */ R10, 
-          /* res11 */ R11, 
-          /* res12 */ R12, 
-          T
-        ]
-      ] = js.native
-    def apply[S, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, T](
-      selectors: js.Tuple12[
-          typings.reselect.mod.Selector[S, R1], 
-          typings.reselect.mod.Selector[S, R2], 
-          typings.reselect.mod.Selector[S, R3], 
-          typings.reselect.mod.Selector[S, R4], 
-          typings.reselect.mod.Selector[S, R5], 
-          typings.reselect.mod.Selector[S, R6], 
-          typings.reselect.mod.Selector[S, R7], 
-          typings.reselect.mod.Selector[S, R8], 
-          typings.reselect.mod.Selector[S, R9], 
-          typings.reselect.mod.Selector[S, R10], 
-          typings.reselect.mod.Selector[S, R11], 
-          typings.reselect.mod.Selector[S, R12]
-        ],
-      combiner: js.Function12[
-          /* res1 */ R1, 
-          /* res2 */ R2, 
-          /* res3 */ R3, 
-          /* res4 */ R4, 
-          /* res5 */ R5, 
-          /* res6 */ R6, 
-          /* res7 */ R7, 
-          /* res8 */ R8, 
-          /* res9 */ R9, 
-          /* res10 */ R10, 
-          /* res11 */ R11, 
-          /* res12 */ R12, 
-          T
-        ]
-    ): typings.reselect.mod.OutputSelector[
-        S, 
-        T, 
-        js.Function12[
-          /* res1 */ R1, 
-          /* res2 */ R2, 
-          /* res3 */ R3, 
-          /* res4 */ R4, 
-          /* res5 */ R5, 
-          /* res6 */ R6, 
-          /* res7 */ R7, 
-          /* res8 */ R8, 
-          /* res9 */ R9, 
-          /* res10 */ R10, 
-          /* res11 */ R11, 
-          /* res12 */ R12, 
-          T
-        ]
-      ] = js.native
-    def apply[S, P, R1, R2, R3, R4, R5, R6, R7, R8, R9, R10, R11, R12, T](
-      selector1: typings.reselect.mod.ParametricSelector[S, P, R1],
-      selector2: typings.reselect.mod.ParametricSelector[S, P, R2],
-      selector3: typings.reselect.mod.ParametricSelector[S, P, R3],
-      selector4: typings.reselect.mod.ParametricSelector[S, P, R4],
-      selector5: typings.reselect.mod.ParametricSelector[S, P, R5],
-      selector6: typings.reselect.mod.ParametricSelector[S, P, R6],
-      selector7: typings.reselect.mod.ParametricSelector[S, P, R7],
-      selector8: typings.reselect.mod.ParametricSelector[S, P, R8],
-      selector9: typings.reselect.mod.ParametricSelector[S, P, R9],
-      selector10: typings.reselect.mod.ParametricSelector[S, P, R10],
-      selector11: typings.reselect.mod.ParametricSelector[S, P, R11],
-      selector12: typings.reselect.mod.ParametricSelector[S, P, R12],
-      combiner: js.Function12[
-          /* res1 */ R1, 
-          /* res2 */ R2, 
-          /* res3 */ R3, 
-          /* res4 */ R4, 
-          /* res5 */ R5, 
-          /* res6 */ R6, 
-          /* res7 */ R7, 
-          /* res8 */ R8, 
-          /* res9 */ R9, 
-          /* res10 */ R10, 
-          /* res11 */ R11, 
-          /* res12 */ R12, 
-          T
-        ]
-    ): typings.reselect.mod.OutputParametricSelector[
-        S, 
-        P, 
-        T, 
-        js.Function12[
-          /* res1 */ R1, 
-          /* res2 */ R2, 
-          /* res3 */ R3, 
-          /* res4 */ R4, 
-          /* res5 */ R5, 
-          /* res6 */ R6, 
-          /* res7 */ R7, 
-          /* res8 */ R8, 
-          /* res9 */ R9, 
-          /* res10 */ R10, 
-          /* res11 */ R11, 
-          /* res12 */ R12, 
-          T
-        ]
-      ] = js.native
-  }
+  /* Inlined std.Omit<reselect.reselect.CreateSelectorFunction<(args : ...unknown): unknown, reselect.anon.FnCall, [equalityCheckOrOptions: reselect.reselect/es/types.EqualityFn | reselect.reselect/es/defaultMemoize.DefaultMemoizeOptions | undefined | undefined], reselect.anon.ClearCache>, 'clearCache'> */
+  trait CreateSelectorInstance extends StObject
   
   trait ICacheObject extends StObject {
     
     def clear(): Unit
     
-    def get(key: js.Any): js.Any
+    def get(key: Any): Any
     
-    var isValidCacheKey: js.UndefOr[js.Function1[/* key */ js.Any, Boolean]] = js.undefined
+    var isValidCacheKey: js.UndefOr[js.Function1[/* key */ Any, Boolean]] = js.undefined
     
-    def remove(key: js.Any): Unit
+    def remove(key: Any): Unit
     
-    def set(key: js.Any, selectorFn: js.Any): Unit
+    def set(key: Any, selectorFn: Any): Unit
   }
   object ICacheObject {
     
-    inline def apply(clear: () => Unit, get: js.Any => js.Any, remove: js.Any => Unit, set: (js.Any, js.Any) => Unit): ICacheObject = {
+    inline def apply(clear: () => Unit, get: Any => Any, remove: Any => Unit, set: (Any, Any) => Unit): ICacheObject = {
       val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), get = js.Any.fromFunction1(get), remove = js.Any.fromFunction1(remove), set = js.Any.fromFunction2(set))
       __obj.asInstanceOf[ICacheObject]
     }
@@ -10900,22 +10014,22 @@ object mod {
       
       inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      inline def setGet(value: js.Any => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: Any => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      inline def setIsValidCacheKey(value: /* key */ js.Any => Boolean): Self = StObject.set(x, "isValidCacheKey", js.Any.fromFunction1(value))
+      inline def setIsValidCacheKey(value: /* key */ Any => Boolean): Self = StObject.set(x, "isValidCacheKey", js.Any.fromFunction1(value))
       
       inline def setIsValidCacheKeyUndefined: Self = StObject.set(x, "isValidCacheKey", js.undefined)
       
-      inline def setRemove(value: js.Any => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+      inline def setRemove(value: Any => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
       
-      inline def setSet(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (Any, Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     }
   }
   
   @js.native
   trait KeySelector[S] extends StObject {
     
-    def apply(state: S, args: js.Any*): js.Any = js.native
+    def apply(state: S, args: Any*): Any = js.native
   }
   
   type KeySelectorCreator[S, C, D] = js.Function1[/* selectorInputs */ InputSelectors[D, C, S], KeySelector[S]]
@@ -10998,7 +10112,7 @@ object mod {
   @js.native
   trait ParametricKeySelector[S, P] extends StObject {
     
-    def apply(state: S, props: P, args: js.Any*): js.Any = js.native
+    def apply(state: S, props: P, args: Any*): Any = js.native
   }
   
   type ParametricKeySelectorCreator[S, P, C, D] = js.Function1[
@@ -11048,7 +10162,7 @@ object mod {
   @js.native
   trait ParametricSelector[S, P, R] extends StObject {
     
-    def apply(state: S, props: P, args: js.Any*): R = js.native
+    def apply(state: S, props: P, args: Any*): R = js.native
   }
   
   type Selector[S, R] = js.Function1[/* state */ S, R]

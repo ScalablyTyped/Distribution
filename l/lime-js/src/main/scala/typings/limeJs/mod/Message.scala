@@ -8,13 +8,13 @@ trait Message
   extends StObject
      with Envelope {
   
-  var content: js.Any
+  var content: Any
   
   var `type`: String
 }
 object Message {
   
-  inline def apply(content: js.Any, `type`: String): Message = {
+  inline def apply(content: Any, `type`: String): Message = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Message]
@@ -22,7 +22,7 @@ object Message {
   
   extension [Self <: Message](x: Self) {
     
-    inline def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

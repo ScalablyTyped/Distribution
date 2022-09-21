@@ -1,7 +1,7 @@
 
 # Scala.js typings for d3-array
 
-Typings are for version 2.8
+Typings are for version 3.0
 
 ## Library description:
 Array manipulation, ordering, searching, summarizing, etc.
@@ -10,10 +10,10 @@ Array manipulation, ordering, searching, summarizing, etc.
 | ------------------ | :-------------: |
 | Full name          | d3-array |
 | Keywords           | d3, d3-module, histogram, bisect, shuffle, statistics, search, sort, array |
-| # releases         | 16 |
-| # dependents       | 751 |
-| # downloads        | 107459953 |
-| # stars            | 3 |
+| # releases         | 26 |
+| # dependents       | 0.0 |
+| # downloads        | 2.1221808E7 |
+| # stars            | 395.0 |
 
 ## Links
 - [Homepage](https://d3js.org/d3-array/)

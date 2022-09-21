@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   A query that generates the union of documents produced by its subqueries such
   as termQuerys, phraseQuerys, boolQuerys, etc.
   */
-class DisMaxQuery ()
+open class DisMaxQuery ()
   extends StObject
      with Query {
   
@@ -46,5 +46,5 @@ class DisMaxQuery ()
     Retrieves the internal query object. This is typically used by
     internal API functions so use with caution.
     */
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
 }

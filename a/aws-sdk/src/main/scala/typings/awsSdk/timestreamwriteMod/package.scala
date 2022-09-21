@@ -1,5 +1,6 @@
 package typings.awsSdk.timestreamwriteMod
 
+import typings.awsSdk.awsSdkStrings.VARCHAR
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,36 +8,63 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 type AmazonResourceName = java.lang.String
 
-type DatabaseList = js.Array[typings.awsSdk.timestreamwriteMod.Database]
+type Boolean = scala.Boolean
 
-type Date = typings.std.Date
+type DatabaseList = js.Array[Database]
 
-type DimensionValueType = typings.awsSdk.awsSdkStrings.VARCHAR | java.lang.String
+type Date = js.Date
 
-type Dimensions = js.Array[typings.awsSdk.timestreamwriteMod.Dimension]
+type DimensionValueType = VARCHAR | java.lang.String
 
-type Endpoints = js.Array[typings.awsSdk.timestreamwriteMod.Endpoint]
+type Dimensions = js.Array[Dimension]
 
-type Long = scala.Double
+type Endpoints = js.Array[Endpoint]
 
-type MagneticStoreRetentionPeriodInDays = scala.Double
+type Integer = Double
+
+type Long = Double
+
+type MagneticStoreRetentionPeriodInDays = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DOUBLE
   - typings.awsSdk.awsSdkStrings.BIGINT
   - typings.awsSdk.awsSdkStrings.VARCHAR
   - typings.awsSdk.awsSdkStrings.BOOLEAN
+  - typings.awsSdk.awsSdkStrings.TIMESTAMP
+  - typings.awsSdk.awsSdkStrings.MULTI
   - java.lang.String
 */
-type MeasureValueType = typings.awsSdk.timestreamwriteMod._MeasureValueType | java.lang.String
+type MeasureValueType = _MeasureValueType | java.lang.String
 
-type MemoryStoreRetentionPeriodInHours = scala.Double
+type MeasureValues = js.Array[MeasureValue]
 
-type PaginationLimit = scala.Double
+type MemoryStoreRetentionPeriodInHours = Double
 
-type Records = js.Array[typings.awsSdk.timestreamwriteMod.Record]
+type PaginationLimit = Double
+
+type RecordVersion = Double
+
+type Records = js.Array[Record]
+
+type ResourceCreateAPIName = java.lang.String
 
 type ResourceName = java.lang.String
+
+type S3BucketName = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SSE_S3
+  - typings.awsSdk.awsSdkStrings.SSE_KMS
+  - java.lang.String
+*/
+type S3EncryptionOption = _S3EncryptionOption | java.lang.String
+
+type S3ObjectKeyPrefix = java.lang.String
+
+type SchemaName = java.lang.String
+
+type SchemaValue = java.lang.String
 
 type String = java.lang.String
 
@@ -44,20 +72,20 @@ type StringValue2048 = java.lang.String
 
 type StringValue256 = java.lang.String
 
-type TableList = js.Array[typings.awsSdk.timestreamwriteMod.Table]
+type TableList = js.Array[Table]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ACTIVE
   - typings.awsSdk.awsSdkStrings.DELETING
   - java.lang.String
 */
-type TableStatus = typings.awsSdk.timestreamwriteMod._TableStatus | java.lang.String
+type TableStatus = _TableStatus | java.lang.String
 
 type TagKey = java.lang.String
 
-type TagKeyList = js.Array[typings.awsSdk.timestreamwriteMod.TagKey]
+type TagKeyList = js.Array[TagKey]
 
-type TagList = js.Array[typings.awsSdk.timestreamwriteMod.Tag]
+type TagList = js.Array[Tag]
 
 type TagValue = java.lang.String
 
@@ -68,11 +96,11 @@ type TagValue = java.lang.String
   - typings.awsSdk.awsSdkStrings.NANOSECONDS
   - java.lang.String
 */
-type TimeUnit = typings.awsSdk.timestreamwriteMod._TimeUnit | java.lang.String
+type TimeUnit = _TimeUnit | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2018-11-01`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.timestreamwriteMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | java.lang.String

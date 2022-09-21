@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The result of a filter view being duplicated.
-  */
 trait SchemaDuplicateFilterViewResponse extends StObject {
   
   /**

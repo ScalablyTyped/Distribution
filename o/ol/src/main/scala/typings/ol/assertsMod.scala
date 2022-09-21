@@ -10,5 +10,5 @@ object assertsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def assert(assertion: js.Any, errorCode: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(assertion.asInstanceOf[js.Any], errorCode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def assert(assertion: Any, errorCode: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(assertion.asInstanceOf[js.Any], errorCode.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

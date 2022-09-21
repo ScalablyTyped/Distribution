@@ -17,11 +17,11 @@ object tooltipMod {
   
   @JSImport("playable/dist/src/modules/ui/core/tooltip", "Tooltip")
   @js.native
-  class Tooltip () extends default
+  open class Tooltip () extends default
   
   @JSImport("playable/dist/src/modules/ui/core/tooltip", "TooltipService")
   @js.native
-  class TooltipService protected ()
+  open class TooltipService protected ()
     extends typings.playable.tooltipServiceMod.default {
     def this(hasEventEmitter: EventEmitterIEventEmitter) = this()
   }

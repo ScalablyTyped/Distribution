@@ -10,8 +10,8 @@ object mod {
   
   @JSImport("react-native-keep-awake", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[Children, js.Object, js.Any]
+  open class default ()
+    extends Component[Children, js.Object, Any]
   object default {
     
     @JSImport("react-native-keep-awake", JSImport.Default)
@@ -25,5 +25,5 @@ object mod {
     inline def deactivate(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deactivate")().asInstanceOf[Unit]
   }
   
-  type KeepAwake = Component[Children, js.Object, js.Any]
+  type KeepAwake = Component[Children, js.Object, Any]
 }

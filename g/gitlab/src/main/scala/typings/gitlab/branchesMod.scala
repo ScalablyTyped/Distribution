@@ -14,7 +14,7 @@ object branchesMod {
   
   @JSImport("gitlab/dist/types/core/services/Branches", "Branches")
   @js.native
-  class Branches () extends BaseService {
+  open class Branches () extends BaseService {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def all(projectId: String): js.Promise[GetResponse] = js.native

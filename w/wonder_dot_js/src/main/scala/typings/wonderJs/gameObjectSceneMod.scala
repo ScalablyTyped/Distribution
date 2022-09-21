@@ -11,11 +11,11 @@ object gameObjectSceneMod {
   
   @JSImport("wonder.js/dist/es2015/core/entityObject/scene/gameObjectScene/GameObjectScene", "GameObjectScene")
   @js.native
-  class GameObjectScene () extends Scene {
+  open class GameObjectScene () extends Scene {
     
     def addChild(child: GameObject): GameObject = js.native
     
-    var currentCamera: js.Any = js.native
+    var currentCamera: Any = js.native
     
     def render(renderer: Renderer): Unit = js.native
   }

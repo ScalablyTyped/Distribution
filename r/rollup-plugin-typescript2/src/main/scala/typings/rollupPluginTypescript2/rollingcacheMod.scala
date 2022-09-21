@@ -9,18 +9,13 @@ object rollingcacheMod {
   
   @JSImport("rollup-plugin-typescript2/dist/rollingcache", "RollingCache")
   @js.native
-  class RollingCache[DataType] protected ()
+  open class RollingCache[DataType] protected ()
     extends StObject
        with ICache[DataType] {
-    /**
-      * @param cacheRoot: root folder for the cache
-      * @param checkNewCache: whether to also look in new cache when reading from cache
-      */
-    def this(cacheRoot: String, checkNewCache: Boolean) = this()
+    /** @param cacheRoot: root folder for the cache */
+    def this(cacheRoot: String) = this()
     
-    /* private */ var cacheRoot: js.Any = js.native
-    
-    /* private */ var checkNewCache: js.Any = js.native
+    /* private */ var cacheRoot: Any = js.native
     
     /* CompleteClass */
     override def exists(name: String): Boolean = js.native
@@ -28,9 +23,9 @@ object rollingcacheMod {
     /* CompleteClass */
     override def `match`(names: js.Array[String]): Boolean = js.native
     
-    /* private */ var newCacheRoot: js.Any = js.native
+    /* private */ var newCacheRoot: Any = js.native
     
-    /* private */ var oldCacheRoot: js.Any = js.native
+    /* private */ var oldCacheRoot: Any = js.native
     
     /* CompleteClass */
     override def path(name: String): String = js.native
@@ -41,7 +36,7 @@ object rollingcacheMod {
     /* CompleteClass */
     override def roll(): Unit = js.native
     
-    /* private */ var rolled: js.Any = js.native
+    /* private */ var rolled: Any = js.native
     
     /* CompleteClass */
     override def touch(name: String): Unit = js.native

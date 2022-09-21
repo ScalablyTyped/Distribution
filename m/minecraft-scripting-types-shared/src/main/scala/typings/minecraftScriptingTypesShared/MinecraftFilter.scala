@@ -35,7 +35,7 @@ trait MinecraftFilter extends StObject {
   
   var test: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[Any] = js.undefined
 }
 object MinecraftFilter {
   
@@ -50,13 +50,13 @@ object MinecraftFilter {
     
     inline def setAll_ofUndefined: Self = StObject.set(x, "all_of", js.undefined)
     
-    inline def setAll_ofVarargs(value: MinecraftFilter*): Self = StObject.set(x, "all_of", js.Array(value :_*))
+    inline def setAll_ofVarargs(value: MinecraftFilter*): Self = StObject.set(x, "all_of", js.Array(value*))
     
     inline def setAny_of(value: js.Array[MinecraftFilter]): Self = StObject.set(x, "any_of", value.asInstanceOf[js.Any])
     
     inline def setAny_ofUndefined: Self = StObject.set(x, "any_of", js.undefined)
     
-    inline def setAny_ofVarargs(value: MinecraftFilter*): Self = StObject.set(x, "any_of", js.Array(value :_*))
+    inline def setAny_ofVarargs(value: MinecraftFilter*): Self = StObject.set(x, "any_of", js.Array(value*))
     
     inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
@@ -76,7 +76,7 @@ object MinecraftFilter {
     
     inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

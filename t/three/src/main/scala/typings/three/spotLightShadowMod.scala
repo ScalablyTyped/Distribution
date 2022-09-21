@@ -12,15 +12,15 @@ object spotLightShadowMod {
   
   @JSImport("three/src/lights/SpotLightShadow", "SpotLightShadow")
   @js.native
-  class SpotLightShadow protected () extends LightShadow {
+  open class SpotLightShadow protected () extends LightShadow {
     def this(camera: Camera) = this()
     
     @JSName("camera")
     var camera_SpotLightShadow: PerspectiveCamera = js.native
     
     /**
-    	 * @default 1
-    	 */
+      * @default 1
+      */
     var focus: Double = js.native
     
     val isSpotLightShadow: `true` = js.native

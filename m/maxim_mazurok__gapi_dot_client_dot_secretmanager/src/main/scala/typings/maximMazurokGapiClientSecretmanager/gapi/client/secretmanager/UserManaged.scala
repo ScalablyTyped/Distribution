@@ -22,6 +22,6 @@ object UserManaged {
     
     inline def setReplicasUndefined: Self = StObject.set(x, "replicas", js.undefined)
     
-    inline def setReplicasVarargs(value: Replica*): Self = StObject.set(x, "replicas", js.Array(value :_*))
+    inline def setReplicasVarargs(value: Replica*): Self = StObject.set(x, "replicas", js.Array(value*))
   }
 }

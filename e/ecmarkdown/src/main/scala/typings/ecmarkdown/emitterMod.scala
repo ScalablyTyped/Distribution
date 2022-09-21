@@ -23,7 +23,7 @@ object emitterMod {
   
   @JSImport("ecmarkdown/dist/emitter", "Emitter")
   @js.native
-  class Emitter () extends StObject {
+  open class Emitter () extends StObject {
     
     def emit(node: js.Array[Node]): String = js.native
     def emit(node: Node): String = js.native

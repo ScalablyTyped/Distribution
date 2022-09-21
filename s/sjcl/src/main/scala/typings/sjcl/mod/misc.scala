@@ -14,7 +14,7 @@ object misc extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("sjcl", "misc.hmac")
   @js.native
-  class hmac protected () extends SjclHMAC {
+  open class hmac protected () extends SjclHMAC {
     def this(key: BitArray_) = this()
     def this(key: BitArray_, Hash: SjclHashStatic) = this()
   }

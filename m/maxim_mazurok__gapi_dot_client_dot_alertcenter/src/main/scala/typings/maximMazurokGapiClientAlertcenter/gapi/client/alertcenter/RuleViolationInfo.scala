@@ -31,6 +31,9 @@ trait RuleViolationInfo extends StObject {
   /** Trigger of the rule. */
   var trigger: js.UndefOr[String] = js.undefined
   
+  /** Metadata related to the triggered actions. */
+  var triggeredActionInfo: js.UndefOr[js.Array[Any]] = js.undefined
+  
   /** Actions applied as a consequence of the rule being triggered. */
   var triggeredActionTypes: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -54,13 +57,13 @@ object RuleViolationInfo {
     
     inline def setMatchInfoUndefined: Self = StObject.set(x, "matchInfo", js.undefined)
     
-    inline def setMatchInfoVarargs(value: MatchInfo*): Self = StObject.set(x, "matchInfo", js.Array(value :_*))
+    inline def setMatchInfoVarargs(value: MatchInfo*): Self = StObject.set(x, "matchInfo", js.Array(value*))
     
     inline def setRecipients(value: js.Array[String]): Self = StObject.set(x, "recipients", value.asInstanceOf[js.Any])
     
     inline def setRecipientsUndefined: Self = StObject.set(x, "recipients", js.undefined)
     
-    inline def setRecipientsVarargs(value: String*): Self = StObject.set(x, "recipients", js.Array(value :_*))
+    inline def setRecipientsVarargs(value: String*): Self = StObject.set(x, "recipients", js.Array(value*))
     
     inline def setResourceInfo(value: ResourceInfo): Self = StObject.set(x, "resourceInfo", value.asInstanceOf[js.Any])
     
@@ -74,17 +77,23 @@ object RuleViolationInfo {
     
     inline def setSuppressedActionTypesUndefined: Self = StObject.set(x, "suppressedActionTypes", js.undefined)
     
-    inline def setSuppressedActionTypesVarargs(value: String*): Self = StObject.set(x, "suppressedActionTypes", js.Array(value :_*))
+    inline def setSuppressedActionTypesVarargs(value: String*): Self = StObject.set(x, "suppressedActionTypes", js.Array(value*))
     
     inline def setTrigger(value: String): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
     
     inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
     
+    inline def setTriggeredActionInfo(value: js.Array[Any]): Self = StObject.set(x, "triggeredActionInfo", value.asInstanceOf[js.Any])
+    
+    inline def setTriggeredActionInfoUndefined: Self = StObject.set(x, "triggeredActionInfo", js.undefined)
+    
+    inline def setTriggeredActionInfoVarargs(value: Any*): Self = StObject.set(x, "triggeredActionInfo", js.Array(value*))
+    
     inline def setTriggeredActionTypes(value: js.Array[String]): Self = StObject.set(x, "triggeredActionTypes", value.asInstanceOf[js.Any])
     
     inline def setTriggeredActionTypesUndefined: Self = StObject.set(x, "triggeredActionTypes", js.undefined)
     
-    inline def setTriggeredActionTypesVarargs(value: String*): Self = StObject.set(x, "triggeredActionTypes", js.Array(value :_*))
+    inline def setTriggeredActionTypesVarargs(value: String*): Self = StObject.set(x, "triggeredActionTypes", js.Array(value*))
     
     inline def setTriggeringUserEmail(value: String): Self = StObject.set(x, "triggeringUserEmail", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,7 @@ object config {
     var dataService: js.UndefOr[String] = js.undefined
     
     /** the name of a previously registered "modelLibrary" adapter */
-    var modelLibary: js.UndefOr[String] = js.undefined
+    var modelLibrary: js.UndefOr[String] = js.undefined
     
     /** the name of a previously registered "uriBuilder" adapter */
     var uriBuilder: js.UndefOr[String] = js.undefined
@@ -37,9 +37,9 @@ object config {
       
       inline def setDataServiceUndefined: Self = StObject.set(x, "dataService", js.undefined)
       
-      inline def setModelLibary(value: String): Self = StObject.set(x, "modelLibary", value.asInstanceOf[js.Any])
+      inline def setModelLibrary(value: String): Self = StObject.set(x, "modelLibrary", value.asInstanceOf[js.Any])
       
-      inline def setModelLibaryUndefined: Self = StObject.set(x, "modelLibary", js.undefined)
+      inline def setModelLibraryUndefined: Self = StObject.set(x, "modelLibrary", js.undefined)
       
       inline def setUriBuilder(value: String): Self = StObject.set(x, "uriBuilder", value.asInstanceOf[js.Any])
       

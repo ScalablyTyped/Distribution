@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("google.earth.KmlStyleSelector")
 @js.native
-class KmlStyleSelector ()
+open class KmlStyleSelector ()
   extends StObject
      with typings.googleEarth.google.earth.KmlObject {
   

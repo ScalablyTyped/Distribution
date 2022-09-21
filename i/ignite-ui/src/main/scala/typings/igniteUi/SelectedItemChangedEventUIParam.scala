@@ -9,12 +9,12 @@ trait SelectedItemChangedEventUIParam extends StObject {
   /**
     * Used to get a reference to the current selected data item.
     */
-  var newItem: js.UndefOr[js.Any] = js.undefined
+  var newItem: js.UndefOr[Any] = js.undefined
   
   /**
     * Used to get a reference to the previous selected data item.
     */
-  var oldItem: js.UndefOr[js.Any] = js.undefined
+  var oldItem: js.UndefOr[Any] = js.undefined
 }
 object SelectedItemChangedEventUIParam {
   
@@ -25,11 +25,11 @@ object SelectedItemChangedEventUIParam {
   
   extension [Self <: SelectedItemChangedEventUIParam](x: Self) {
     
-    inline def setNewItem(value: js.Any): Self = StObject.set(x, "newItem", value.asInstanceOf[js.Any])
+    inline def setNewItem(value: Any): Self = StObject.set(x, "newItem", value.asInstanceOf[js.Any])
     
     inline def setNewItemUndefined: Self = StObject.set(x, "newItem", js.undefined)
     
-    inline def setOldItem(value: js.Any): Self = StObject.set(x, "oldItem", value.asInstanceOf[js.Any])
+    inline def setOldItem(value: Any): Self = StObject.set(x, "oldItem", value.asInstanceOf[js.Any])
     
     inline def setOldItemUndefined: Self = StObject.set(x, "oldItem", js.undefined)
   }

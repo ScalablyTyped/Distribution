@@ -24,7 +24,7 @@ object helperMod {
   
   @JSImport("ol/webgl/Helper", JSImport.Default)
   @js.native
-  class default () extends WebGLHelper {
+  open class default () extends WebGLHelper {
     def this(opt_options: Options) = this()
   }
   
@@ -199,7 +199,7 @@ object helperMod {
       
       inline def setPostProcessesUndefined: Self = StObject.set(x, "postProcesses", js.undefined)
       
-      inline def setPostProcessesVarargs(value: PostProcessesOptions*): Self = StObject.set(x, "postProcesses", js.Array(value :_*))
+      inline def setPostProcessesVarargs(value: PostProcessesOptions*): Self = StObject.set(x, "postProcesses", js.Array(value*))
       
       inline def setUniforms(value: StringDictionary[UniformValue]): Self = StObject.set(x, "uniforms", value.asInstanceOf[js.Any])
       

@@ -13,10 +13,10 @@ import typings.autobahn.mod.ISubscribeOptions
 import typings.autobahn.mod.ISubscription
 import typings.autobahn.mod.RegisterEndpoint
 import typings.autobahn.mod.Session
-import typings.rx.Rx.IObservable
-import typings.rx.Rx.IObserver
-import typings.rx.Rx.Observable
-import typings.rx.Rx.Observer
+import typings.rxCore.Rx.Observer
+import typings.rxLite.Rx.IObservable
+import typings.rxLite.Rx.IObserver
+import typings.rxLiteAggregates.Rx.Observable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +25,7 @@ object mod {
   
   @JSImport("rx.wamp", "Subscriber")
   @js.native
-  class Subscriber () extends StObject {
+  open class Subscriber () extends StObject {
     
     def dispose(): Unit = js.native
     
@@ -39,13 +39,13 @@ object mod {
       topic: String,
       options: ISubscribeOptions,
       observerOrOnNext: js.Function1[/* value */ IWampEvent, Unit],
-      onError: js.Function1[/* exception */ js.Any, Unit]
+      onError: js.Function1[/* exception */ Any, Unit]
     ): Subscriber = js.native
     def to(
       topic: String,
       options: ISubscribeOptions,
       observerOrOnNext: js.Function1[/* value */ IWampEvent, Unit],
-      onError: js.Function1[/* exception */ js.Any, Unit],
+      onError: js.Function1[/* exception */ Any, Unit],
       onCompleted: js.Function0[Unit]
     ): Subscriber = js.native
     def to(
@@ -59,13 +59,13 @@ object mod {
       topic: String,
       options: ISubscribeOptions,
       observerOrOnNext: Unit,
-      onError: js.Function1[/* exception */ js.Any, Unit]
+      onError: js.Function1[/* exception */ Any, Unit]
     ): Subscriber = js.native
     def to(
       topic: String,
       options: ISubscribeOptions,
       observerOrOnNext: Unit,
-      onError: js.Function1[/* exception */ js.Any, Unit],
+      onError: js.Function1[/* exception */ Any, Unit],
       onCompleted: js.Function0[Unit]
     ): Subscriber = js.native
     def to(
@@ -80,13 +80,13 @@ object mod {
       topic: String,
       options: ISubscribeOptions,
       observerOrOnNext: IObserver[IWampEvent],
-      onError: js.Function1[/* exception */ js.Any, Unit]
+      onError: js.Function1[/* exception */ Any, Unit]
     ): Subscriber = js.native
     def to(
       topic: String,
       options: ISubscribeOptions,
       observerOrOnNext: IObserver[IWampEvent],
-      onError: js.Function1[/* exception */ js.Any, Unit],
+      onError: js.Function1[/* exception */ Any, Unit],
       onCompleted: js.Function0[Unit]
     ): Subscriber = js.native
     def to(
@@ -102,13 +102,13 @@ object mod {
   trait IObservableWampStatic extends StObject {
     
     def callAsObservable[TResult](session: Session, procedure: String): js.Function2[
-        /* args */ js.UndefOr[js.Array[js.Any]], 
-        /* kwargs */ js.UndefOr[js.Any], 
+        /* args */ js.UndefOr[js.Array[Any]], 
+        /* kwargs */ js.UndefOr[Any], 
         Observable[TResult]
       ] = js.native
     def callAsObservable[TResult](session: Session, procedure: String, options: ICallOptions): js.Function2[
-        /* args */ js.UndefOr[js.Array[js.Any]], 
-        /* kwargs */ js.UndefOr[js.Any], 
+        /* args */ js.UndefOr[js.Array[Any]], 
+        /* kwargs */ js.UndefOr[Any], 
         Observable[TResult]
       ] = js.native
     
@@ -130,57 +130,62 @@ object mod {
       session: Session,
       topic: String,
       options: ISubscribeOptions,
-      openObserver: IObserver[ISubscription]
+      openObserver: IObserver[ISubscription[js.Array[Any], Any, String]]
     ): IPubSubSubject = js.native
     
     def publishAsObservable(session: Session, topic: String): Observable[IPublication] = js.native
-    def publishAsObservable(session: Session, topic: String, args: js.Array[js.Any]): Observable[IPublication] = js.native
-    def publishAsObservable(session: Session, topic: String, args: js.Array[js.Any], kwargs: js.Any): Observable[IPublication] = js.native
-    def publishAsObservable(session: Session, topic: String, args: js.Array[js.Any], kwargs: js.Any, options: IPublishOptions): Observable[IPublication] = js.native
-    def publishAsObservable(session: Session, topic: String, args: js.Array[js.Any], kwargs: Unit, options: IPublishOptions): Observable[IPublication] = js.native
-    def publishAsObservable(session: Session, topic: String, args: Unit, kwargs: js.Any): Observable[IPublication] = js.native
-    def publishAsObservable(session: Session, topic: String, args: Unit, kwargs: js.Any, options: IPublishOptions): Observable[IPublication] = js.native
+    def publishAsObservable(session: Session, topic: String, args: js.Array[Any]): Observable[IPublication] = js.native
+    def publishAsObservable(session: Session, topic: String, args: js.Array[Any], kwargs: Any): Observable[IPublication] = js.native
+    def publishAsObservable(session: Session, topic: String, args: js.Array[Any], kwargs: Any, options: IPublishOptions): Observable[IPublication] = js.native
+    def publishAsObservable(session: Session, topic: String, args: js.Array[Any], kwargs: Unit, options: IPublishOptions): Observable[IPublication] = js.native
+    def publishAsObservable(session: Session, topic: String, args: Unit, kwargs: Any): Observable[IPublication] = js.native
+    def publishAsObservable(session: Session, topic: String, args: Unit, kwargs: Any, options: IPublishOptions): Observable[IPublication] = js.native
     def publishAsObservable(session: Session, topic: String, args: Unit, kwargs: Unit, options: IPublishOptions): Observable[IPublication] = js.native
     
     def registerAsObservable(
       sessionOrObservable: Session,
       procedure: String,
-      endpoint: RegisterEndpoint,
+      endpoint: RegisterEndpoint[Any, js.Array[Any], Any],
       options: IRegisterOptions
-    ): Observable[IRegistration] = js.native
+    ): Observable[IRegistration[Any, js.Array[Any], Any, String]] = js.native
     def registerAsObservable(
       sessionOrObservable: Observable[Session],
       procedure: String,
-      endpoint: RegisterEndpoint,
+      endpoint: RegisterEndpoint[Any, js.Array[Any], Any],
       options: IRegisterOptions
-    ): Observable[IRegistration] = js.native
+    ): Observable[IRegistration[Any, js.Array[Any], Any, String]] = js.native
     
     def subscribeAsObservable(sessionOrObservable: Session, topic: String): Observable[IWampEvent] = js.native
-    def subscribeAsObservable(sessionOrObservable: Session, topic: String, options: Unit, openObserver: IObserver[ISubscription]): Observable[IWampEvent] = js.native
+    def subscribeAsObservable(
+      sessionOrObservable: Session,
+      topic: String,
+      options: Unit,
+      openObserver: IObserver[ISubscription[js.Array[Any], Any, String]]
+    ): Observable[IWampEvent] = js.native
     def subscribeAsObservable(sessionOrObservable: Session, topic: String, options: ISubscribeOptions): Observable[IWampEvent] = js.native
     def subscribeAsObservable(
       sessionOrObservable: Session,
       topic: String,
       options: ISubscribeOptions,
-      openObserver: IObserver[ISubscription]
+      openObserver: IObserver[ISubscription[js.Array[Any], Any, String]]
     ): Observable[IWampEvent] = js.native
     def subscribeAsObservable(sessionOrObservable: Observable[Session], topic: String): Observable[IWampEvent] = js.native
     def subscribeAsObservable(
       sessionOrObservable: Observable[Session],
       topic: String,
       options: Unit,
-      openObserver: IObserver[ISubscription]
+      openObserver: IObserver[ISubscription[js.Array[Any], Any, String]]
     ): Observable[IWampEvent] = js.native
     def subscribeAsObservable(sessionOrObservable: Observable[Session], topic: String, options: ISubscribeOptions): Observable[IWampEvent] = js.native
     def subscribeAsObservable(
       sessionOrObservable: Observable[Session],
       topic: String,
       options: ISubscribeOptions,
-      openObserver: IObserver[ISubscription]
+      openObserver: IObserver[ISubscription[js.Array[Any], Any, String]]
     ): Observable[IWampEvent] = js.native
     
     def subscriber(sessionOrObservable: Session): Subscriber = js.native
-    def subscriber(sessionOrObservable: Observable[js.Any]): Subscriber = js.native
+    def subscriber(sessionOrObservable: Observable[Any]): Subscriber = js.native
   }
   
   @js.native
@@ -195,16 +200,16 @@ object mod {
     
     var observer: Observer[IWampEvent] = js.native
     
-    var opened: IObservable[ISubscription] = js.native
+    var opened: IObservable[ISubscription[js.Array[Any], Any, String]] = js.native
   }
   
   trait IWampEvent extends StObject {
     
-    var args: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var args: js.UndefOr[js.Array[Any]] = js.undefined
     
-    var details: js.UndefOr[IEvent] = js.undefined
+    var details: js.UndefOr[IEvent[String]] = js.undefined
     
-    var kwargs: js.UndefOr[js.Any] = js.undefined
+    var kwargs: js.UndefOr[Any] = js.undefined
   }
   object IWampEvent {
     
@@ -215,17 +220,17 @@ object mod {
     
     extension [Self <: IWampEvent](x: Self) {
       
-      inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
       inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: Any*): Self = StObject.set(x, "args", js.Array(value*))
       
-      inline def setDetails(value: IEvent): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: IEvent[String]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
       inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
       
-      inline def setKwargs(value: js.Any): Self = StObject.set(x, "kwargs", value.asInstanceOf[js.Any])
+      inline def setKwargs(value: Any): Self = StObject.set(x, "kwargs", value.asInstanceOf[js.Any])
       
       inline def setKwargsUndefined: Self = StObject.set(x, "kwargs", js.undefined)
     }

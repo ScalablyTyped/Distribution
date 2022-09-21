@@ -1,7 +1,7 @@
 package typings.googleapis.anon
 
-import typings.googleapis.clouderrorreportingV1beta1Mod.clouderrorreportingV1beta1.Clouderrorreporting
-import typings.googleapis.clouderrorreportingV1beta1Mod.clouderrorreportingV1beta1.Options
+import typings.googleapis.bigqueryconnectionV1beta1Mod.bigqueryconnectionV1beta1.Bigqueryconnection
+import typings.googleapis.bigqueryconnectionV1beta1Mod.bigqueryconnectionV1beta1.Options
 import typings.googleapis.googleapisStrings.v1beta1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Fn31 extends StObject {
   
-  def apply(options: Options): Clouderrorreporting = js.native
-  def apply(version: v1beta1): Clouderrorreporting = js.native
+  def apply(options: Options): Bigqueryconnection = js.native
+  def apply(version: v1beta1): Bigqueryconnection = js.native
 }

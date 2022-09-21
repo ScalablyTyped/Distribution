@@ -9,17 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CompletedGetResults extends StObject {
   
-  def completed(asyncInfo: IAsyncOperation[js.Any], asyncStatus: AsyncStatus): Unit
+  def completed(asyncInfo: IAsyncOperation[Any], asyncStatus: AsyncStatus): Unit
   @JSName("completed")
-  var completed_Original: AsyncOperationCompletedHandler[js.Any]
+  var completed_Original: AsyncOperationCompletedHandler[Any]
   
-  def getResults(): js.Any
+  def getResults(): Any
 }
 object CompletedGetResults {
   
   inline def apply(
-    completed: (/* asyncInfo */ IAsyncOperation[js.Any], /* asyncStatus */ AsyncStatus) => Unit,
-    getResults: () => js.Any
+    completed: (/* asyncInfo */ IAsyncOperation[Any], /* asyncStatus */ AsyncStatus) => Unit,
+    getResults: () => Any
   ): CompletedGetResults = {
     val __obj = js.Dynamic.literal(completed = js.Any.fromFunction2(completed), getResults = js.Any.fromFunction0(getResults))
     __obj.asInstanceOf[CompletedGetResults]
@@ -27,8 +27,8 @@ object CompletedGetResults {
   
   extension [Self <: CompletedGetResults](x: Self) {
     
-    inline def setCompleted(value: (/* asyncInfo */ IAsyncOperation[js.Any], /* asyncStatus */ AsyncStatus) => Unit): Self = StObject.set(x, "completed", js.Any.fromFunction2(value))
+    inline def setCompleted(value: (/* asyncInfo */ IAsyncOperation[Any], /* asyncStatus */ AsyncStatus) => Unit): Self = StObject.set(x, "completed", js.Any.fromFunction2(value))
     
-    inline def setGetResults(value: () => js.Any): Self = StObject.set(x, "getResults", js.Any.fromFunction0(value))
+    inline def setGetResults(value: () => Any): Self = StObject.set(x, "getResults", js.Any.fromFunction0(value))
   }
 }

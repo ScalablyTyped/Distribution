@@ -12,7 +12,7 @@ object mod {
     *
     * It will spit out all the messages to the console the first time and only the first time the method is called.
     */
-  inline def apply(methodName: String, message: String*): Unit = (^.asInstanceOf[js.Dynamic].apply(methodName.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(methodName: String, message: String*): Unit = ^.asInstanceOf[js.Dynamic].apply(List(methodName.asInstanceOf[js.Any]).`++`(message.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
   @JSImport("deprecate", JSImport.Namespace)
   @js.native

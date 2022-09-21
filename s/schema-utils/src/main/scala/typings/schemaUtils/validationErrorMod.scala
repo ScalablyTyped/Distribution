@@ -1,10 +1,5 @@
 package typings.schemaUtils
 
-import typings.ajv.mod.ErrorObject
-import typings.ajv.mod.ErrorParameters
-import typings.jsonSchema.mod.JSONSchema4
-import typings.schemaUtils.anon.ErrorObjectchildrenArrayE
-import typings.schemaUtils.validateMod.Extend
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,7 +9,7 @@ object validationErrorMod {
   
   @JSImport("schema-utils/declarations/ValidationError", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with ValidationError {
     /**
@@ -29,9 +24,11 @@ object validationErrorMod {
       configuration: ValidationErrorConfiguration
     ) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
@@ -40,34 +37,11 @@ object validationErrorMod {
   
   type JSONSchema7 = typings.jsonSchema.mod.JSONSchema7
   
-  type PostFormatter = js.Function2[/* formattedError */ String, /* error */ ErrorObjectchildrenArrayE, String]
+  type PostFormatter = typings.schemaUtils.validateMod.PostFormatter
   
-  type SPECIFICITY = Double
+  type Schema = typings.schemaUtils.validateMod.Schema
   
-  type Schema = (JSONSchema4 & Extend) | (typings.jsonSchema.mod.JSONSchema6 & Extend) | (typings.jsonSchema.mod.JSONSchema7 & Extend)
-  
-  trait SchemaUtilErrorObject
-    extends StObject
-       with ErrorObject {
-    
-    var children: js.UndefOr[js.Array[ErrorObject]] = js.undefined
-  }
-  object SchemaUtilErrorObject {
-    
-    inline def apply(dataPath: String, keyword: String, params: ErrorParameters, schemaPath: String): SchemaUtilErrorObject = {
-      val __obj = js.Dynamic.literal(dataPath = dataPath.asInstanceOf[js.Any], keyword = keyword.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], schemaPath = schemaPath.asInstanceOf[js.Any])
-      __obj.asInstanceOf[SchemaUtilErrorObject]
-    }
-    
-    extension [Self <: SchemaUtilErrorObject](x: Self) {
-      
-      inline def setChildren(value: js.Array[ErrorObject]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-      
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-      
-      inline def setChildrenVarargs(value: ErrorObject*): Self = StObject.set(x, "children", js.Array(value :_*))
-    }
-  }
+  type SchemaUtilErrorObject = typings.schemaUtils.validateMod.SchemaUtilErrorObject
   
   @js.native
   trait ValidationError
@@ -158,36 +132,5 @@ object validationErrorMod {
     var schema: Schema = js.native
   }
   
-  trait ValidationErrorConfiguration extends StObject {
-    
-    var baseDataPath: js.UndefOr[String] = js.undefined
-    
-    var name: js.UndefOr[String] = js.undefined
-    
-    var postFormatter: js.UndefOr[typings.schemaUtils.validateMod.PostFormatter] = js.undefined
-  }
-  object ValidationErrorConfiguration {
-    
-    inline def apply(): ValidationErrorConfiguration = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ValidationErrorConfiguration]
-    }
-    
-    extension [Self <: ValidationErrorConfiguration](x: Self) {
-      
-      inline def setBaseDataPath(value: String): Self = StObject.set(x, "baseDataPath", value.asInstanceOf[js.Any])
-      
-      inline def setBaseDataPathUndefined: Self = StObject.set(x, "baseDataPath", js.undefined)
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
-      
-      inline def setPostFormatter(
-        value: (/* formattedError */ String, /* error */ typings.schemaUtils.validateMod.SchemaUtilErrorObject) => String
-      ): Self = StObject.set(x, "postFormatter", js.Any.fromFunction2(value))
-      
-      inline def setPostFormatterUndefined: Self = StObject.set(x, "postFormatter", js.undefined)
-    }
-  }
+  type ValidationErrorConfiguration = typings.schemaUtils.validateMod.ValidationErrorConfiguration
 }

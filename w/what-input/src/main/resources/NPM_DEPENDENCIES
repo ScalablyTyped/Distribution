@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "what-input" : "5.2.10"
+      "what-input" : "5.2.12"
     }
   ],
   "test-dependencies" : [
     {
-      "what-input" : "5.2.10"
+      "what-input" : "5.2.12"
     }
   ],
   "compile-devDependencies" : [

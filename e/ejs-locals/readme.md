@@ -9,10 +9,10 @@ Express 3.x locals for layout, partial and blocks.
 | ------------------ | :-------------: |
 | Full name          | ejs-locals |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 59 |
-| # downloads        | 822309 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 51185.333333333336 |
+| # stars            | 298.0 |
 
 ## Links
 - [Homepage](https://github.com/randometc/ejs-locals)

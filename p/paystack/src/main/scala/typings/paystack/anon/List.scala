@@ -15,6 +15,6 @@ trait List extends StObject {
   
   def list(): js.Promise[Response] = js.native
   
-  def update(id: String, params: js.Any): js.Promise[Response] = js.native
-  def update(id: Double, params: js.Any): js.Promise[Response] = js.native
+  def update(id: String, params: Any): js.Promise[Response] = js.native
+  def update(id: Double, params: Any): js.Promise[Response] = js.native
 }

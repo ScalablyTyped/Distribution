@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("sip.js", "Core.ReferUserAgentClient")
 @js.native
-class ReferUserAgentClient protected ()
+open class ReferUserAgentClient protected ()
   extends typings.sipJs.coreMod.ReferUserAgentClient {
   def this(dialog: typings.sipJs.dialogsMod.SessionDialog) = this()
   def this(dialog: typings.sipJs.dialogsMod.SessionDialog, delegate: OutgoingRequestDelegate) = this()

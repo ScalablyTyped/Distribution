@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "DiffStats")
 @js.native
-class DiffStats ()
+open class DiffStats ()
   extends typings.nodegit.diffStatsMod.DiffStats

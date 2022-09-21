@@ -17,21 +17,21 @@ object mod {
   
   @JSImport("aurelia-knockout", "KnockoutBindable")
   @js.native
-  class KnockoutBindable protected ()
+  open class KnockoutBindable protected ()
     extends typings.aureliaKnockout.knockoutBindableMod.KnockoutBindable {
     def this(observerLocator: ObserverLocator) = this()
   }
   
   @JSImport("aurelia-knockout", "KnockoutComposition")
   @js.native
-  class KnockoutComposition protected ()
+  open class KnockoutComposition protected ()
     extends typings.aureliaKnockout.knockoutCompositionMod.KnockoutComposition {
     def this(compositionEngine: CompositionEngine, container: Container, loader: Loader) = this()
   }
   
   @JSImport("aurelia-knockout", "KnockoutCustomAttribute")
   @js.native
-  class KnockoutCustomAttribute protected ()
+  open class KnockoutCustomAttribute protected ()
     extends typings.aureliaKnockout.knockoutCustomAttributeMod.KnockoutCustomAttribute {
     def this(element: Element) = this()
   }
@@ -47,7 +47,7 @@ object mod {
   
   @JSImport("aurelia-knockout", "RequirePolyfill")
   @js.native
-  class RequirePolyfill protected ()
+  open class RequirePolyfill protected ()
     extends typings.aureliaKnockout.requirePolyfillMod.RequirePolyfill {
     def this(loader: Loader) = this()
   }

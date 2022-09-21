@@ -34,12 +34,12 @@ object XTableColumns {
     Count: Double,
     ElementType: `type`,
     acquire: () => Unit,
-    getByIndex: Double => js.Any,
+    getByIndex: Double => Any,
     getCount: () => Double,
     getElementType: () => `type`,
     hasElements: () => Boolean,
     insertByIndex: (Double, Double) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeByIndex: (Double, Double) => Unit
   ): XTableColumns = {

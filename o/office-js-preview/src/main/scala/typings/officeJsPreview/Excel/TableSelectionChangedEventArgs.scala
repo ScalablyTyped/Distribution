@@ -6,49 +6,49 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Provides information about the table that raised the selection changed event.
   *
-  * Provides information about the table that raised the SelectionChanged event.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 trait TableSelectionChangedEventArgs extends StObject {
   
   /**
-    *
     * Gets the range address that represents the selected area of the table on a specific worksheet.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var address: String
   
   /**
+    * Specifies if the selection is inside a table. `IsInsideTable` must be set to `true` for the address to be useful.
     *
-    * Specifies if the selection is inside a table, address will be useless if IsInsideTable is false.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var isInsideTable: Boolean
   
   /**
+    * Gets the ID of the table in which the selection changed.
     *
-    * Gets the id of the table in which the selection changed.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var tableId: String
   
   /**
+    * Gets the type of the event. See `Excel.EventType` for details.
     *
-    * Gets the type of the event. See Excel.EventType for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var `type`: TableSelectionChanged
   
   /**
+    * Gets the ID of the worksheet in which the selection changed.
     *
-    * Gets the id of the worksheet in which the selection changed.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var worksheetId: String

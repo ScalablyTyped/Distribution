@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_recommendationengine
 
-Typings are for version 1.0.20201112
+Typings are for version 1.0.20220804
 
 ## Library description:
 TypeScript typings for Recommendations AI (Beta) v1beta1
@@ -10,10 +10,10 @@ TypeScript typings for Recommendations AI (Beta) v1beta1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.recommendationengine |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 1 |
-| # downloads        | 1043 |
-| # stars            | 0 |
+| # releases         | 62 |
+| # dependents       | 0.0 |
+| # downloads        | 914.6666666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

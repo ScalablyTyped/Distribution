@@ -32,12 +32,12 @@ trait DirectConnectGatewayAttachment extends StObject {
   var virtualInterfaceId: js.UndefOr[VirtualInterfaceId] = js.undefined
   
   /**
-    * The ID of the AWS account that owns the virtual interface.
+    * The ID of the Amazon Web Services account that owns the virtual interface.
     */
   var virtualInterfaceOwnerAccount: js.UndefOr[OwnerAccount] = js.undefined
   
   /**
-    * The AWS Region where the virtual interface is located.
+    * The Amazon Web Services Region where the virtual interface is located.
     */
   var virtualInterfaceRegion: js.UndefOr[VirtualInterfaceRegion] = js.undefined
 }

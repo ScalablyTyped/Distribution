@@ -6,17 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object iteratorMod {
   
-  @JSImport("rxjs/internal/symbol/iterator", JSImport.Namespace)
+  @JSImport("rxjs/dist/types/internal/symbol/iterator", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("rxjs/internal/symbol/iterator", "$$iterator")
-  @js.native
-  val $iterator: js.Symbol = js.native
-  
   inline def getSymbolIterator(): js.Symbol = ^.asInstanceOf[js.Dynamic].applyDynamic("getSymbolIterator")().asInstanceOf[js.Symbol]
   
-  @JSImport("rxjs/internal/symbol/iterator", "iterator")
+  @JSImport("rxjs/dist/types/internal/symbol/iterator", "iterator")
   @js.native
   val iterator: js.Symbol = js.native
 }

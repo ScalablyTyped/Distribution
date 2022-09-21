@@ -4,14 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response for `ListDeviceStates`.
-  */
 trait SchemaListDeviceStatesResponse extends StObject {
   
   /**
-    * The last few device states. States are listed in descending order of
-    * server update time, starting from the most recent one.
+    * The last few device states. States are listed in descending order of server update time, starting from the most recent one.
     */
   var deviceStates: js.UndefOr[js.Array[SchemaDeviceState]] = js.undefined
 }
@@ -28,6 +24,6 @@ object SchemaListDeviceStatesResponse {
     
     inline def setDeviceStatesUndefined: Self = StObject.set(x, "deviceStates", js.undefined)
     
-    inline def setDeviceStatesVarargs(value: SchemaDeviceState*): Self = StObject.set(x, "deviceStates", js.Array(value :_*))
+    inline def setDeviceStatesVarargs(value: SchemaDeviceState*): Self = StObject.set(x, "deviceStates", js.Array(value*))
   }
 }

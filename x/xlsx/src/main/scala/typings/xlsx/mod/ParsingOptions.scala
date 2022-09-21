@@ -14,6 +14,11 @@ trait ParsingOptions
   extends StObject
      with CommonOptions {
   
+  /** Field Separator ("Delimiter" override) */
+  var FS: js.UndefOr[String] = js.undefined
+  
+  var PRN: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * If true, parse calculation chains
     * @default false
@@ -84,6 +89,9 @@ trait ParsingOptions
   
   /** Input data encoding */
   var `type`: js.UndefOr[base64 | binary | buffer | file | array | string] = js.undefined
+  
+  /** If true, preserve _xlfn. prefixes in formula function names */
+  var xlfn: js.UndefOr[Boolean] = js.undefined
 }
 object ParsingOptions {
   
@@ -138,6 +146,14 @@ object ParsingOptions {
     
     inline def setDenseUndefined: Self = StObject.set(x, "dense", js.undefined)
     
+    inline def setFS(value: String): Self = StObject.set(x, "FS", value.asInstanceOf[js.Any])
+    
+    inline def setFSUndefined: Self = StObject.set(x, "FS", js.undefined)
+    
+    inline def setPRN(value: Boolean): Self = StObject.set(x, "PRN", value.asInstanceOf[js.Any])
+    
+    inline def setPRNUndefined: Self = StObject.set(x, "PRN", js.undefined)
+    
     inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
     inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
@@ -150,10 +166,14 @@ object ParsingOptions {
     
     inline def setSheetsUndefined: Self = StObject.set(x, "sheets", js.undefined)
     
-    inline def setSheetsVarargs(value: (Double | String)*): Self = StObject.set(x, "sheets", js.Array(value :_*))
+    inline def setSheetsVarargs(value: (Double | String)*): Self = StObject.set(x, "sheets", js.Array(value*))
     
     inline def setType(value: base64 | binary | buffer | file | array | string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setXlfn(value: Boolean): Self = StObject.set(x, "xlfn", value.asInstanceOf[js.Any])
+    
+    inline def setXlfnUndefined: Self = StObject.set(x, "xlfn", js.undefined)
   }
 }

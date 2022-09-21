@@ -17,28 +17,28 @@ trait LContainerDebug extends StObject {
   
   val hasTransplantedViews: Boolean
   
-  val host: RElement | RComment | ɵangularPackagesCoreCoreBv
+  val host: RElement | RComment | LView[Any]
   
-  val movedViews: js.Array[ɵangularPackagesCoreCoreBv] | Null
+  val movedViews: js.Array[LView[Any]] | Null
   
   val native: RComment
   
-  val next: LViewDebug | LContainerDebug | Null
+  val next: LViewDebug[Any] | LContainerDebug | Null
   
-  val parent: LViewDebug | Null
+  val parent: LViewDebug[Any] | Null
   
   /**
     * Child `LView`s.
     */
-  val views: js.Array[LViewDebug]
+  val views: js.Array[LViewDebug[Any]]
 }
 object LContainerDebug {
   
   inline def apply(
     hasTransplantedViews: Boolean,
-    host: RElement | RComment | ɵangularPackagesCoreCoreBv,
+    host: RElement | RComment | LView[Any],
     native: RComment,
-    views: js.Array[LViewDebug]
+    views: js.Array[LViewDebug[Any]]
   ): LContainerDebug = {
     val __obj = js.Dynamic.literal(hasTransplantedViews = hasTransplantedViews.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any], views = views.asInstanceOf[js.Any], movedViews = null, next = null, parent = null)
     __obj.asInstanceOf[LContainerDebug]
@@ -48,26 +48,26 @@ object LContainerDebug {
     
     inline def setHasTransplantedViews(value: Boolean): Self = StObject.set(x, "hasTransplantedViews", value.asInstanceOf[js.Any])
     
-    inline def setHost(value: RElement | RComment | ɵangularPackagesCoreCoreBv): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: RElement | RComment | LView[Any]): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    inline def setMovedViews(value: js.Array[ɵangularPackagesCoreCoreBv]): Self = StObject.set(x, "movedViews", value.asInstanceOf[js.Any])
+    inline def setMovedViews(value: js.Array[LView[Any]]): Self = StObject.set(x, "movedViews", value.asInstanceOf[js.Any])
     
     inline def setMovedViewsNull: Self = StObject.set(x, "movedViews", null)
     
-    inline def setMovedViewsVarargs(value: ɵangularPackagesCoreCoreBv*): Self = StObject.set(x, "movedViews", js.Array(value :_*))
+    inline def setMovedViewsVarargs(value: LView[Any]*): Self = StObject.set(x, "movedViews", js.Array(value*))
     
     inline def setNative(value: RComment): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
     
-    inline def setNext(value: LViewDebug | LContainerDebug): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: LViewDebug[Any] | LContainerDebug): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
     inline def setNextNull: Self = StObject.set(x, "next", null)
     
-    inline def setParent(value: LViewDebug): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: LViewDebug[Any]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     inline def setParentNull: Self = StObject.set(x, "parent", null)
     
-    inline def setViews(value: js.Array[LViewDebug]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
+    inline def setViews(value: js.Array[LViewDebug[Any]]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
     
-    inline def setViewsVarargs(value: LViewDebug*): Self = StObject.set(x, "views", js.Array(value :_*))
+    inline def setViewsVarargs(value: LViewDebug[Any]*): Self = StObject.set(x, "views", js.Array(value*))
   }
 }

@@ -80,7 +80,7 @@ object SignedExchangeSignature {
     
     inline def setCertificatesUndefined: Self = StObject.set(x, "certificates", js.undefined)
     
-    inline def setCertificatesVarargs(value: String*): Self = StObject.set(x, "certificates", js.Array(value :_*))
+    inline def setCertificatesVarargs(value: String*): Self = StObject.set(x, "certificates", js.Array(value*))
     
     inline def setDate(value: integer): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

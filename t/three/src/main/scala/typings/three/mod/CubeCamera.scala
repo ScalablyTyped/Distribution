@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("three", "CubeCamera")
 @js.native
-class CubeCamera protected ()
-  extends typings.three.cubeCameraMod.CubeCamera {
+open class CubeCamera protected ()
+  extends typings.three.threeMod.CubeCamera {
   def this(
     near: Double,
     far: Double,

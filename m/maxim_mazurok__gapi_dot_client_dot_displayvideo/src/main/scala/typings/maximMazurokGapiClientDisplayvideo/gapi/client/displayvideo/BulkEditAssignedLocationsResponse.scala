@@ -22,6 +22,6 @@ object BulkEditAssignedLocationsResponse {
     
     inline def setAssignedLocationsUndefined: Self = StObject.set(x, "assignedLocations", js.undefined)
     
-    inline def setAssignedLocationsVarargs(value: AssignedLocation*): Self = StObject.set(x, "assignedLocations", js.Array(value :_*))
+    inline def setAssignedLocationsVarargs(value: AssignedLocation*): Self = StObject.set(x, "assignedLocations", js.Array(value*))
   }
 }

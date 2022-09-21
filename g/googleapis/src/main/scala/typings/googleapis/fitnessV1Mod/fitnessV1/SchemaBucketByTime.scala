@@ -7,11 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaBucketByTime extends StObject {
   
   /**
-    * Specifies that result buckets aggregate data by exactly durationMillis
-    * time frames. Time frames that contain no data will be included in the
-    * response with an empty dataset.
+    * Specifies that result buckets aggregate data by exactly durationMillis time frames. Time frames that contain no data will be included in the response with an empty dataset.
     */
-  var durationMillis: js.UndefOr[String] = js.undefined
+  var durationMillis: js.UndefOr[String | Null] = js.undefined
   
   var period: js.UndefOr[SchemaBucketByTimePeriod] = js.undefined
 }
@@ -25,6 +23,8 @@ object SchemaBucketByTime {
   extension [Self <: SchemaBucketByTime](x: Self) {
     
     inline def setDurationMillis(value: String): Self = StObject.set(x, "durationMillis", value.asInstanceOf[js.Any])
+    
+    inline def setDurationMillisNull: Self = StObject.set(x, "durationMillis", null)
     
     inline def setDurationMillisUndefined: Self = StObject.set(x, "durationMillis", js.undefined)
     

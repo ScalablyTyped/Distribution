@@ -16,7 +16,7 @@ object americanExpressMod {
       */
     var VERSION: String
     
-    def create(options: Client, callback: callback[js.Any]): Unit
+    def create(options: Client, callback: callback[Any]): Unit
     
     /**
       * Gets the Express Checkout nonce profile given a nonce from American Express.     * @example
@@ -34,7 +34,7 @@ object americanExpressMod {
       *   });
       * });
       */
-    def getExpressCheckoutProfile(options: Nonce, callback: callback[js.Any]): Unit
+    def getExpressCheckoutProfile(options: Nonce, callback: callback[Any]): Unit
     
     /**
       * Gets the rewards balance associated with a Braintree nonce.     * @example
@@ -52,15 +52,15 @@ object americanExpressMod {
       *   });
       * });
       */
-    def getRewardsBalance(options: Nonce, callback: callback[js.Any]): Unit
+    def getRewardsBalance(options: Nonce, callback: callback[Any]): Unit
   }
   object AmericanExpress {
     
     inline def apply(
       VERSION: String,
-      create: (Client, callback[js.Any]) => Unit,
-      getExpressCheckoutProfile: (Nonce, callback[js.Any]) => Unit,
-      getRewardsBalance: (Nonce, callback[js.Any]) => Unit
+      create: (Client, callback[Any]) => Unit,
+      getExpressCheckoutProfile: (Nonce, callback[Any]) => Unit,
+      getRewardsBalance: (Nonce, callback[Any]) => Unit
     ): AmericanExpress = {
       val __obj = js.Dynamic.literal(VERSION = VERSION.asInstanceOf[js.Any], create = js.Any.fromFunction2(create), getExpressCheckoutProfile = js.Any.fromFunction2(getExpressCheckoutProfile), getRewardsBalance = js.Any.fromFunction2(getRewardsBalance))
       __obj.asInstanceOf[AmericanExpress]
@@ -68,11 +68,11 @@ object americanExpressMod {
     
     extension [Self <: AmericanExpress](x: Self) {
       
-      inline def setCreate(value: (Client, callback[js.Any]) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+      inline def setCreate(value: (Client, callback[Any]) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
       
-      inline def setGetExpressCheckoutProfile(value: (Nonce, callback[js.Any]) => Unit): Self = StObject.set(x, "getExpressCheckoutProfile", js.Any.fromFunction2(value))
+      inline def setGetExpressCheckoutProfile(value: (Nonce, callback[Any]) => Unit): Self = StObject.set(x, "getExpressCheckoutProfile", js.Any.fromFunction2(value))
       
-      inline def setGetRewardsBalance(value: (Nonce, callback[js.Any]) => Unit): Self = StObject.set(x, "getRewardsBalance", js.Any.fromFunction2(value))
+      inline def setGetRewardsBalance(value: (Nonce, callback[Any]) => Unit): Self = StObject.set(x, "getRewardsBalance", js.Any.fromFunction2(value))
       
       inline def setVERSION(value: String): Self = StObject.set(x, "VERSION", value.asInstanceOf[js.Any])
     }

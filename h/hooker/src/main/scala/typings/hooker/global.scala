@@ -8,34 +8,34 @@ object global {
   
   @JSGlobal("HookerFilter")
   @js.native
-  class HookerFilter ()
+  open class HookerFilter ()
     extends StObject
        with typings.hooker.HookerFilter {
     
     /* CompleteClass */
-    var args: js.Array[js.Any] = js.native
+    var args: js.Array[Any] = js.native
     
     /* CompleteClass */
-    var context: js.Any = js.native
+    var context: Any = js.native
   }
   
   @JSGlobal("HookerOverride")
   @js.native
-  class HookerOverride ()
+  open class HookerOverride ()
     extends StObject
        with typings.hooker.HookerOverride {
     
     /* CompleteClass */
-    var value: js.Any = js.native
+    var value: Any = js.native
   }
   
   @JSGlobal("HookerPreempt")
   @js.native
-  class HookerPreempt ()
+  open class HookerPreempt ()
     extends StObject
        with typings.hooker.HookerPreempt {
     
     /* CompleteClass */
-    var value: js.Any = js.native
+    var value: Any = js.native
   }
 }

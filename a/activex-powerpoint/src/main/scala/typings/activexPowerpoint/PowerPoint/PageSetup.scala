@@ -13,7 +13,7 @@ trait PageSetup extends StObject {
   
   var NotesOrientation: MsoOrientation
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.PageSetup_typekey")
   var PowerPointDotPageSetup_typekey: PageSetup
@@ -32,7 +32,7 @@ object PageSetup {
     Application: Application,
     FirstSlideNumber: Double,
     NotesOrientation: MsoOrientation,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotPageSetup_typekey: PageSetup,
     SlideHeight: Double,
     SlideOrientation: MsoOrientation,
@@ -52,7 +52,7 @@ object PageSetup {
     
     inline def setNotesOrientation(value: MsoOrientation): Self = StObject.set(x, "NotesOrientation", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotPageSetup_typekey(value: PageSetup): Self = StObject.set(x, "PowerPoint.PageSetup_typekey", value.asInstanceOf[js.Any])
     

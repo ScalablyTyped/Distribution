@@ -10,17 +10,16 @@ object documentCardImageBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/DocumentCard/DocumentCardImage.base", "DocumentCardImageBase")
   @js.native
-  class DocumentCardImageBase protected ()
-    extends Component[IDocumentCardImageProps, IDocumentCardImageState, js.Any] {
+  open class DocumentCardImageBase protected () extends Component[IDocumentCardImageProps, IDocumentCardImageState, Any] {
     def this(props: IDocumentCardImageProps) = this()
     
-    /* private */ var _classNames: js.Any = js.native
+    /* private */ var _classNames: Any = js.native
     
-    /* private */ var _onImageLoad: js.Any = js.native
+    /* private */ var _onImageLoad: Any = js.native
     
-    /* private */ var _renderCenterIcon: js.Any = js.native
+    /* private */ var _renderCenterIcon: Any = js.native
     
-    /* private */ var _renderCornerIcon: js.Any = js.native
+    /* private */ var _renderCornerIcon: Any = js.native
   }
   
   trait IDocumentCardImageState extends StObject {

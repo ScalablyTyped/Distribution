@@ -21,7 +21,7 @@ trait nlobjConfiguration
   *
   * @return
   */
-Instantiable0[js.Any] {
+Instantiable0[Any] {
   
   /**
     * return an Array of all field names on the record.
@@ -137,7 +137,7 @@ Instantiable0[js.Any] {
     * @param text
     * @return
     */
-  def setFieldText(name: String, text: String): js.Any = js.native
+  def setFieldText(name: String, text: String): Any = js.native
   
   /**
     * set the values (via display values) of a multi-select field.
@@ -155,7 +155,7 @@ Instantiable0[js.Any] {
     * @param texts
     * @return
     */
-  def setFieldTexts(name: String, texts: js.Any): js.Any = js.native
+  def setFieldTexts(name: String, texts: Any): Any = js.native
   
   /**
     * set the value of a field.
@@ -172,7 +172,7 @@ Instantiable0[js.Any] {
     * @param value
     * @return
     */
-  def setFieldValue(name: String, value: String): js.Any = js.native
+  def setFieldValue(name: String, value: String): Any = js.native
   
   /**
     * Set the values of a multi-select field.
@@ -190,5 +190,5 @@ Instantiable0[js.Any] {
     * @param value
     * @return
     */
-  def setFieldValues(name: String, value: js.Any): js.Any = js.native
+  def setFieldValues(name: String, value: Any): Any = js.native
 }

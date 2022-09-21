@@ -12,7 +12,7 @@ trait OperationSummary extends StObject {
   var Id: js.UndefOr[OperationId] = js.undefined
   
   /**
-    * The status of the operation. Values include the following:    SUBMITTED: This is the initial state immediately after you submit a request.    PENDING: AWS Cloud Map is performing the operation.    SUCCESS: The operation succeeded.    FAIL: The operation failed. For the failure reason, see ErrorMessage.  
+    * The status of the operation. Values include the following:    SUBMITTED: This is the initial state immediately after you submit a request.    PENDING: Cloud Map is performing the operation.    SUCCESS: The operation succeeded.    FAIL: The operation failed. For the failure reason, see ErrorMessage.  
     */
   var Status: js.UndefOr[OperationStatus] = js.undefined
 }

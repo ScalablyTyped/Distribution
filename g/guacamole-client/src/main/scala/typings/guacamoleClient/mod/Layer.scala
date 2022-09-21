@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("guacamole-client", "Layer")
 @js.native
-class Layer protected ()
+open class Layer protected ()
   extends typings.guacamoleClient.layerMod.Layer {
   /**
     * @param width The width of the Layer, in pixels. The canvas element
@@ -73,7 +73,7 @@ object Layer {
   
   @JSImport("guacamole-client", "Layer.Pixel")
   @js.native
-  class Pixel protected ()
+  open class Pixel protected ()
     extends typings.guacamoleClient.layerMod.Layer.Pixel {
     /**
       * @param r The red component of this pixel.

@@ -73,7 +73,7 @@ trait ChocolateChipElementArray
     * @param target A selector, element, or HTML string. The matched set of elements will be inserted at the end of the element specified by this parameter.
     * If no position value is provided it will simply append the content to the target.
     */
-  def appendTo(target: js.Array[js.Any]): ChocolateChipElementArray = js.native
+  def appendTo(target: js.Array[Any]): ChocolateChipElementArray = js.native
   def appendTo(target: HTMLElement): ChocolateChipElementArray = js.native
   
   /**
@@ -107,8 +107,8 @@ trait ChocolateChipElementArray
     * @param handler A function to execute each time the event is triggered.
     * @param useCapture Setting the third argument to true will trigger event bubbling. The default is false.
     */
-  def bind(eventType: String, handler: js.Function1[/* eventObject */ Event, js.Any]): ChocolateChipStatic = js.native
-  def bind(eventType: String, handler: js.Function1[/* eventObject */ Event, js.Any], useCapture: Boolean): ChocolateChipStatic = js.native
+  def bind(eventType: String, handler: js.Function1[/* eventObject */ Event, Any]): ChocolateChipStatic = js.native
+  def bind(eventType: String, handler: js.Function1[/* eventObject */ Event, Any], useCapture: Boolean): ChocolateChipStatic = js.native
   
   /**
     * Get the children of each element in the set of matched elements, optionally filtered by a selector.
@@ -155,14 +155,14 @@ trait ChocolateChipElementArray
     *
     * @param key Name of the data stored.
     */
-  def data(key: String): js.Any = js.native
+  def data(key: String): Any = js.native
   /**
     * Store arbitrary data associated with the matched elements.
     *
     * @param key A string naming the piece of data to set.
     * @param value The new data value; it can be any Javascript type including Array or Object.
     */
-  def data(key: String, value: js.Any): ChocolateChipElementArray = js.native
+  def data(key: String, value: Any): ChocolateChipElementArray = js.native
   /**
     * Store arbitrary data associated with the matched element.
     *
@@ -184,7 +184,7 @@ trait ChocolateChipElementArray
     * @param key A string naming the piece of data to set.
     * @param value The new data value; it must be a string. You can convert JSON into a string to use with this.
     */
-  def dataset(key: String, value: js.Any): ChocolateChipElementArray = js.native
+  def dataset(key: String, value: Any): ChocolateChipElementArray = js.native
   
   /**
     * Add a delegated event to listen for the provided event on the descendant elements.
@@ -195,11 +195,11 @@ trait ChocolateChipElementArray
     * to the element receiving the event.
     * @param useCapture Setting the third argument to true will trigger event bubbling. The default is false.
     */
-  def delegate(selector: js.Any, eventType: String, handler: js.Function1[/* eventObject */ Event, js.Any]): ChocolateChipStatic = js.native
+  def delegate(selector: Any, eventType: String, handler: js.Function1[/* eventObject */ Event, Any]): ChocolateChipStatic = js.native
   def delegate(
-    selector: js.Any,
+    selector: Any,
     eventType: String,
-    handler: js.Function1[/* eventObject */ Event, js.Any],
+    handler: js.Function1[/* eventObject */ Event, Any],
     useCapture: Boolean
   ): ChocolateChipStatic = js.native
   
@@ -211,7 +211,7 @@ trait ChocolateChipElementArray
   /**
     * Iterate over an Array object, executing a function for each matched element.
     */
-  def each(func: js.Function2[/* ctx */ js.Any, /* idx */ Double, Unit]): Unit = js.native
+  def each(func: js.Function2[/* ctx */ Any, /* idx */ Double, Unit]): Unit = js.native
   
   /**
     * Remove all child nodes of the set of matched elements from the DOM.
@@ -348,7 +348,7 @@ trait ChocolateChipElementArray
     *
     * @param elements One or more elements to match the current set of elements against.
     */
-  def is(element: js.Any): ChocolateChipElementArray = js.native
+  def is(element: Any): ChocolateChipElementArray = js.native
   /**
     * Check the current matched set of elements against a selector or element and return it
     * if it matches the given arguments.
@@ -363,7 +363,7 @@ trait ChocolateChipElementArray
     *
     * @param elements One or more elements to match the current set of elements against.
     */
-  def isnt(element: js.Any): ChocolateChipElementArray = js.native
+  def isnt(element: Any): ChocolateChipElementArray = js.native
   /**
     * Check the current matched set of elements against a selector or element and return it
     * if it does not match the given arguments.
@@ -393,37 +393,37 @@ trait ChocolateChipElementArray
     */
   def off(): ChocolateChipStatic = js.native
   def off(eventType: String): ChocolateChipStatic = js.native
-  def off(eventType: String, selector: js.Any): ChocolateChipStatic = js.native
-  def off(eventType: String, selector: js.Any, handler: js.Function1[/* eventObject */ Event, js.Any]): ChocolateChipStatic = js.native
+  def off(eventType: String, selector: Any): ChocolateChipStatic = js.native
+  def off(eventType: String, selector: Any, handler: js.Function1[/* eventObject */ Event, Any]): ChocolateChipStatic = js.native
   def off(
     eventType: String,
-    selector: js.Any,
-    handler: js.Function1[/* eventObject */ Event, js.Any],
+    selector: Any,
+    handler: js.Function1[/* eventObject */ Event, Any],
     capturePhase: Boolean
   ): ChocolateChipStatic = js.native
-  def off(eventType: String, selector: js.Any, handler: Unit, capturePhase: Boolean): ChocolateChipStatic = js.native
-  def off(eventType: String, selector: Unit, handler: js.Function1[/* eventObject */ Event, js.Any]): ChocolateChipStatic = js.native
+  def off(eventType: String, selector: Any, handler: Unit, capturePhase: Boolean): ChocolateChipStatic = js.native
+  def off(eventType: String, selector: Unit, handler: js.Function1[/* eventObject */ Event, Any]): ChocolateChipStatic = js.native
   def off(
     eventType: String,
     selector: Unit,
-    handler: js.Function1[/* eventObject */ Event, js.Any],
+    handler: js.Function1[/* eventObject */ Event, Any],
     capturePhase: Boolean
   ): ChocolateChipStatic = js.native
   def off(eventType: String, selector: Unit, handler: Unit, capturePhase: Boolean): ChocolateChipStatic = js.native
-  def off(eventType: Unit, selector: js.Any): ChocolateChipStatic = js.native
-  def off(eventType: Unit, selector: js.Any, handler: js.Function1[/* eventObject */ Event, js.Any]): ChocolateChipStatic = js.native
+  def off(eventType: Unit, selector: Any): ChocolateChipStatic = js.native
+  def off(eventType: Unit, selector: Any, handler: js.Function1[/* eventObject */ Event, Any]): ChocolateChipStatic = js.native
   def off(
     eventType: Unit,
-    selector: js.Any,
-    handler: js.Function1[/* eventObject */ Event, js.Any],
+    selector: Any,
+    handler: js.Function1[/* eventObject */ Event, Any],
     capturePhase: Boolean
   ): ChocolateChipStatic = js.native
-  def off(eventType: Unit, selector: js.Any, handler: Unit, capturePhase: Boolean): ChocolateChipStatic = js.native
-  def off(eventType: Unit, selector: Unit, handler: js.Function1[/* eventObject */ Event, js.Any]): ChocolateChipStatic = js.native
+  def off(eventType: Unit, selector: Any, handler: Unit, capturePhase: Boolean): ChocolateChipStatic = js.native
+  def off(eventType: Unit, selector: Unit, handler: js.Function1[/* eventObject */ Event, Any]): ChocolateChipStatic = js.native
   def off(
     eventType: Unit,
     selector: Unit,
-    handler: js.Function1[/* eventObject */ Event, js.Any],
+    handler: js.Function1[/* eventObject */ Event, Any],
     capturePhase: Boolean
   ): ChocolateChipStatic = js.native
   def off(eventType: Unit, selector: Unit, handler: Unit, capturePhase: Boolean): ChocolateChipStatic = js.native
@@ -442,15 +442,15 @@ trait ChocolateChipElementArray
     * @param handler A function handler assigned to this event.
     * @param useCapture Setting the third argument to true will trigger event bubbling. The default is false.
     */
-  def on(eventType: String, selector: js.Any): ChocolateChipStatic = js.native
-  def on(eventType: String, selector: js.Any, handler: js.Function1[/* eventObject */ Event, js.Any]): ChocolateChipStatic = js.native
+  def on(eventType: String, selector: Any): ChocolateChipStatic = js.native
+  def on(eventType: String, selector: Any, handler: js.Function1[/* eventObject */ Event, Any]): ChocolateChipStatic = js.native
   def on(
     eventType: String,
-    selector: js.Any,
-    handler: js.Function1[/* eventObject */ Event, js.Any],
+    selector: Any,
+    handler: js.Function1[/* eventObject */ Event, Any],
     capturePhase: Boolean
   ): ChocolateChipStatic = js.native
-  def on(eventType: String, selector: js.Any, handler: Unit, capturePhase: Boolean): ChocolateChipStatic = js.native
+  def on(eventType: String, selector: Any, handler: Unit, capturePhase: Boolean): ChocolateChipStatic = js.native
   
   /**
     * Get the parent of each element in the current set of matched elements, optionally filtered by a selector.
@@ -477,7 +477,7 @@ trait ChocolateChipElementArray
     *
     * @param target A selector, element, or HTML string. The matched set of elements will be inserted at the beginning of the element specified by this parameter.
     */
-  def prependTo(target: js.Array[js.Any]): ChocolateChipElementArray = js.native
+  def prependTo(target: js.Array[Any]): ChocolateChipElementArray = js.native
   def prependTo(target: HTMLElement): ChocolateChipElementArray = js.native
   
   /**
@@ -497,7 +497,7 @@ trait ChocolateChipElementArray
     * @param propertyName A string indicating the property to set.
     * @param value A string indicating the value to set the property to.
     */
-  def prop(propertyName: String, value: js.Any): ChocolateChipElementArray = js.native
+  def prop(propertyName: String, value: Any): ChocolateChipElementArray = js.native
   def prop(propertyName: String, value: Boolean): ChocolateChipElementArray = js.native
   
   /**
@@ -528,8 +528,8 @@ trait ChocolateChipElementArray
     *
     * @param key Name of the data stored.
     */
-  def removeData(): js.Any = js.native
-  def removeData(key: String): js.Any = js.native
+  def removeData(): Any = js.native
+  def removeData(key: String): Any = js.native
   
   /**
     * Remove an element property.
@@ -598,11 +598,11 @@ trait ChocolateChipElementArray
     */
   def unbind(): ChocolateChipStatic = js.native
   def unbind(eventType: String): ChocolateChipStatic = js.native
-  def unbind(eventType: String, handler: js.Function1[/* eventObject */ Event, js.Any]): ChocolateChipStatic = js.native
-  def unbind(eventType: String, handler: js.Function1[/* eventObject */ Event, js.Any], useCapture: Boolean): ChocolateChipStatic = js.native
+  def unbind(eventType: String, handler: js.Function1[/* eventObject */ Event, Any]): ChocolateChipStatic = js.native
+  def unbind(eventType: String, handler: js.Function1[/* eventObject */ Event, Any], useCapture: Boolean): ChocolateChipStatic = js.native
   def unbind(eventType: String, handler: Unit, useCapture: Boolean): ChocolateChipStatic = js.native
-  def unbind(eventType: Unit, handler: js.Function1[/* eventObject */ Event, js.Any]): ChocolateChipStatic = js.native
-  def unbind(eventType: Unit, handler: js.Function1[/* eventObject */ Event, js.Any], useCapture: Boolean): ChocolateChipStatic = js.native
+  def unbind(eventType: Unit, handler: js.Function1[/* eventObject */ Event, Any]): ChocolateChipStatic = js.native
+  def unbind(eventType: Unit, handler: js.Function1[/* eventObject */ Event, Any], useCapture: Boolean): ChocolateChipStatic = js.native
   def unbind(eventType: Unit, handler: Unit, useCapture: Boolean): ChocolateChipStatic = js.native
   
   /**
@@ -614,38 +614,38 @@ trait ChocolateChipElementArray
     * @param useCapture Setting the third argument to true will trigger event bubbling. The default is false.
     */
   def undelegate(): ChocolateChipStatic = js.native
-  def undelegate(selector: js.Any): ChocolateChipStatic = js.native
-  def undelegate(selector: js.Any, eventType: String): ChocolateChipStatic = js.native
-  def undelegate(selector: js.Any, eventType: String, handler: js.Function1[/* eventObject */ Event, js.Any]): ChocolateChipStatic = js.native
+  def undelegate(selector: Any): ChocolateChipStatic = js.native
+  def undelegate(selector: Any, eventType: String): ChocolateChipStatic = js.native
+  def undelegate(selector: Any, eventType: String, handler: js.Function1[/* eventObject */ Event, Any]): ChocolateChipStatic = js.native
   def undelegate(
-    selector: js.Any,
+    selector: Any,
     eventType: String,
-    handler: js.Function1[/* eventObject */ Event, js.Any],
+    handler: js.Function1[/* eventObject */ Event, Any],
     useCapture: Boolean
   ): ChocolateChipStatic = js.native
-  def undelegate(selector: js.Any, eventType: String, handler: Unit, useCapture: Boolean): ChocolateChipStatic = js.native
-  def undelegate(selector: js.Any, eventType: Unit, handler: js.Function1[/* eventObject */ Event, js.Any]): ChocolateChipStatic = js.native
+  def undelegate(selector: Any, eventType: String, handler: Unit, useCapture: Boolean): ChocolateChipStatic = js.native
+  def undelegate(selector: Any, eventType: Unit, handler: js.Function1[/* eventObject */ Event, Any]): ChocolateChipStatic = js.native
   def undelegate(
-    selector: js.Any,
+    selector: Any,
     eventType: Unit,
-    handler: js.Function1[/* eventObject */ Event, js.Any],
+    handler: js.Function1[/* eventObject */ Event, Any],
     useCapture: Boolean
   ): ChocolateChipStatic = js.native
-  def undelegate(selector: js.Any, eventType: Unit, handler: Unit, useCapture: Boolean): ChocolateChipStatic = js.native
+  def undelegate(selector: Any, eventType: Unit, handler: Unit, useCapture: Boolean): ChocolateChipStatic = js.native
   def undelegate(selector: Unit, eventType: String): ChocolateChipStatic = js.native
-  def undelegate(selector: Unit, eventType: String, handler: js.Function1[/* eventObject */ Event, js.Any]): ChocolateChipStatic = js.native
+  def undelegate(selector: Unit, eventType: String, handler: js.Function1[/* eventObject */ Event, Any]): ChocolateChipStatic = js.native
   def undelegate(
     selector: Unit,
     eventType: String,
-    handler: js.Function1[/* eventObject */ Event, js.Any],
+    handler: js.Function1[/* eventObject */ Event, Any],
     useCapture: Boolean
   ): ChocolateChipStatic = js.native
   def undelegate(selector: Unit, eventType: String, handler: Unit, useCapture: Boolean): ChocolateChipStatic = js.native
-  def undelegate(selector: Unit, eventType: Unit, handler: js.Function1[/* eventObject */ Event, js.Any]): ChocolateChipStatic = js.native
+  def undelegate(selector: Unit, eventType: Unit, handler: js.Function1[/* eventObject */ Event, Any]): ChocolateChipStatic = js.native
   def undelegate(
     selector: Unit,
     eventType: Unit,
-    handler: js.Function1[/* eventObject */ Event, js.Any],
+    handler: js.Function1[/* eventObject */ Event, Any],
     useCapture: Boolean
   ): ChocolateChipStatic = js.native
   def undelegate(selector: Unit, eventType: Unit, handler: Unit, useCapture: Boolean): ChocolateChipStatic = js.native
@@ -663,7 +663,7 @@ trait ChocolateChipElementArray
   /**
     * Get the current value of the first element in the set of matched elements.
     */
-  def `val`(): js.Any = js.native
+  def `val`(): Any = js.native
   /**
     * Set the value of each element in the set of matched elements.
     *

@@ -14,7 +14,7 @@ object relayRecordSourceMod {
   
   @JSImport("relay-runtime/lib/store/RelayRecordSource", "RelayRecordSource")
   @js.native
-  class RelayRecordSource ()
+  open class RelayRecordSource ()
     extends StObject
        with MutableRecordSource {
     def this(records: RecordMap) = this()
@@ -25,8 +25,9 @@ object relayRecordSourceMod {
     /* CompleteClass */
     override def delete(dataID: DataID): Unit = js.native
     
+    // tslint:disable-next-line:no-unnecessary-generics
     /* CompleteClass */
-    override def get(dataID: DataID): js.UndefOr[Record | Null] = js.native
+    override def get[T /* <: js.Object */](dataID: DataID): js.UndefOr[Record[T] | Null] = js.native
     
     /* CompleteClass */
     override def getRecordIDs(): js.Array[DataID] = js.native
@@ -41,13 +42,13 @@ object relayRecordSourceMod {
     override def remove(dataID: DataID): Unit = js.native
     
     /* CompleteClass */
-    override def set(dataID: DataID, record: Record): Unit = js.native
+    override def set(dataID: DataID, record: Record[js.Object]): Unit = js.native
     
     /* CompleteClass */
     override def size(): Double = js.native
     
     /* CompleteClass */
-    override def toJSON(): StringDictionary[Record] = js.native
+    override def toJSON(): StringDictionary[Record[js.Object]] = js.native
   }
   /* static members */
   object RelayRecordSource {

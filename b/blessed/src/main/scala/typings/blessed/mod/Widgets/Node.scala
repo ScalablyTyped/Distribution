@@ -18,13 +18,13 @@ abstract class Node protected ()
     * An object for any miscellanous user data.
     */
   @JSName("$")
-  var $: StringDictionary[js.Any] = js.native
+  var $: StringDictionary[Any] = js.native
   
   /**
     * An object for any miscellanous user data.
     */
   @JSName("_")
-  var _underscore: StringDictionary[js.Any] = js.native
+  var _underscore: StringDictionary[Any] = js.native
   
   /**
     * Append a node to this node's children.
@@ -36,14 +36,14 @@ abstract class Node protected ()
     */
   var children: js.Array[Node] = js.native
   
-  def collectAncestors(s: js.Any): Unit = js.native
+  def collectAncestors(s: Any): Unit = js.native
   
-  def collectDescendants(s: js.Any): Unit = js.native
+  def collectDescendants(s: Any): Unit = js.native
   
   /**
     * An object for any miscellanous user data.
     */
-  var data: StringDictionary[js.Any] = js.native
+  var data: StringDictionary[Any] = js.native
   
   /* CompleteClass */
   override def destroy(): Unit = js.native
@@ -58,14 +58,14 @@ abstract class Node protected ()
   /**
     * Emit event for element, and recursively emit same event for all descendants.
     */
-  def emitDescendants(`type`: String, args: js.Any*): Unit = js.native
-  def emitDescendants(`type`: Unit, args: js.Any*): Unit = js.native
+  def emitDescendants(`type`: String, args: Any*): Unit = js.native
+  def emitDescendants(`type`: Unit, args: Any*): Unit = js.native
   
   var focusable: Boolean = js.native
   
-  def forAncestors(iter: js.Function1[/* node */ this.type, Unit], s: js.Any): Unit = js.native
+  def forAncestors(iter: js.Function1[/* node */ this.type, Unit], s: Any): Unit = js.native
   
-  def forDescendants(iter: js.Function1[/* node */ this.type, Unit], s: js.Any): Unit = js.native
+  def forDescendants(iter: js.Function1[/* node */ this.type, Unit], s: Any): Unit = js.native
   
   def free(): Unit = js.native
   
@@ -126,7 +126,7 @@ abstract class Node protected ()
   /**
     * Set user property to value.
     */
-  def set(name: String, value: js.Any): Unit = js.native
+  def set(name: String, value: Any): Unit = js.native
   
   /**
     * Type of the node (e.g. box).

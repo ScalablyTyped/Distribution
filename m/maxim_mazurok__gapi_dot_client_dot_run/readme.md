@@ -1,19 +1,19 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_run
 
-Typings are for version 1.0.20201113
+Typings are for version 2.0.20220807
 
 ## Library description:
-TypeScript typings for Cloud Run Admin API v1
+TypeScript typings for Cloud Run Admin API v2
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.run |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 1 |
-| # downloads        | 960 |
-| # stars            | 0 |
+| # releases         | 72 |
+| # dependents       | 0.0 |
+| # downloads        | 971.6666666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

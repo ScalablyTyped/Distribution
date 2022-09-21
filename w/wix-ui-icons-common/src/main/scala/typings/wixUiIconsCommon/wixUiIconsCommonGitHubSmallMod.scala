@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.wixUiIconsCommon.gitHubSmallMod.GitHubSmallProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,10 +11,10 @@ object wixUiIconsCommonGitHubSmallMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/GitHubSmall", JSImport.Default)
   @js.native
-  val default: SFC[GitHubSmallProps] = js.native
+  val default: FC[GitHubSmallProps] = js.native
   
-  type _To = SFC[GitHubSmallProps]
+  type _To = FC[GitHubSmallProps]
   
   /* This means you don't have to write `default`, but can instead just say `wixUiIconsCommonGitHubSmallMod.foo` */
-  override def _to: SFC[GitHubSmallProps] = default
+  override def _to: FC[GitHubSmallProps] = default
 }

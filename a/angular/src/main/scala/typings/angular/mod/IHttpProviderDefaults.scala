@@ -17,7 +17,7 @@ trait IHttpProviderDefaults extends StObject {
     * {boolean|Cache}
     * If true, a default $http cache will be used to cache the GET request, otherwise if a cache instance built with $cacheFactory, this cache will be used for caching.
     */
-  var cache: js.UndefOr[js.Any] = js.undefined
+  var cache: js.UndefOr[Any] = js.undefined
   
   /**
     * Map of strings or functions which return strings representing HTTP headers to send to the server. If the
@@ -32,7 +32,7 @@ trait IHttpProviderDefaults extends StObject {
     * specified as string, it is interpreted as a function registered with the $injector. Defaults to
     * $httpParamSerializer.
     */
-  var paramSerializer: js.UndefOr[String | (js.Function1[/* obj */ js.Any, String])] = js.undefined
+  var paramSerializer: js.UndefOr[String | (js.Function1[/* obj */ Any, String])] = js.undefined
   
   /**
     * Transform function or an array of such functions. The transform function takes the http request body and
@@ -67,7 +67,7 @@ object IHttpProviderDefaults {
   
   extension [Self <: IHttpProviderDefaults](x: Self) {
     
-    inline def setCache(value: js.Any): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    inline def setCache(value: Any): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
     inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
@@ -75,27 +75,27 @@ object IHttpProviderDefaults {
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    inline def setParamSerializer(value: String | (js.Function1[/* obj */ js.Any, String])): Self = StObject.set(x, "paramSerializer", value.asInstanceOf[js.Any])
+    inline def setParamSerializer(value: String | (js.Function1[/* obj */ Any, String])): Self = StObject.set(x, "paramSerializer", value.asInstanceOf[js.Any])
     
-    inline def setParamSerializerFunction1(value: /* obj */ js.Any => String): Self = StObject.set(x, "paramSerializer", js.Any.fromFunction1(value))
+    inline def setParamSerializerFunction1(value: /* obj */ Any => String): Self = StObject.set(x, "paramSerializer", js.Any.fromFunction1(value))
     
     inline def setParamSerializerUndefined: Self = StObject.set(x, "paramSerializer", js.undefined)
     
     inline def setTransformRequest(value: IHttpRequestTransformer | js.Array[IHttpRequestTransformer]): Self = StObject.set(x, "transformRequest", value.asInstanceOf[js.Any])
     
-    inline def setTransformRequestFunction2(value: (/* data */ js.Any, /* headersGetter */ IHttpHeadersGetter) => js.Any): Self = StObject.set(x, "transformRequest", js.Any.fromFunction2(value))
+    inline def setTransformRequestFunction2(value: (/* data */ Any, /* headersGetter */ IHttpHeadersGetter) => Any): Self = StObject.set(x, "transformRequest", js.Any.fromFunction2(value))
     
     inline def setTransformRequestUndefined: Self = StObject.set(x, "transformRequest", js.undefined)
     
-    inline def setTransformRequestVarargs(value: IHttpRequestTransformer*): Self = StObject.set(x, "transformRequest", js.Array(value :_*))
+    inline def setTransformRequestVarargs(value: IHttpRequestTransformer*): Self = StObject.set(x, "transformRequest", js.Array(value*))
     
     inline def setTransformResponse(value: IHttpResponseTransformer | js.Array[IHttpResponseTransformer]): Self = StObject.set(x, "transformResponse", value.asInstanceOf[js.Any])
     
-    inline def setTransformResponseFunction3(value: (/* data */ js.Any, /* headersGetter */ IHttpHeadersGetter, /* status */ Double) => js.Any): Self = StObject.set(x, "transformResponse", js.Any.fromFunction3(value))
+    inline def setTransformResponseFunction3(value: (/* data */ Any, /* headersGetter */ IHttpHeadersGetter, /* status */ Double) => Any): Self = StObject.set(x, "transformResponse", js.Any.fromFunction3(value))
     
     inline def setTransformResponseUndefined: Self = StObject.set(x, "transformResponse", js.undefined)
     
-    inline def setTransformResponseVarargs(value: IHttpResponseTransformer*): Self = StObject.set(x, "transformResponse", js.Array(value :_*))
+    inline def setTransformResponseVarargs(value: IHttpResponseTransformer*): Self = StObject.set(x, "transformResponse", js.Array(value*))
     
     inline def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
     

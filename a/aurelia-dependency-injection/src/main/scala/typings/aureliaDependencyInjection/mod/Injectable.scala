@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Injectable
   extends js.Function {
   
-  var inject: js.UndefOr[js.Array[js.Any] | js.Function0[js.Array[js.Any]]] = js.native
+  var inject: js.UndefOr[js.Array[Any] | js.Function0[js.Array[Any]]] = js.native
 }

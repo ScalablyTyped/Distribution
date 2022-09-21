@@ -10,10 +10,10 @@ gl-matrix's vec3, split into smaller pieces
 | ------------------ | :-------------: |
 | Full name          | gl-vec3 |
 | Keywords           | gl-matrix, matrix, math, gl, vec3, vec, 3d, vector, maths, add, angle, clone, copy, create, cross, distance, divide, dot, forEach, fromValues, inverse, length, lerp, max, min, multiply, negate, normalize, random, rotateX, rotateY, rotateZ, scale, scaleAndAdd, set, squaredDistance, squaredLength, subtract, transformMat3, transformMat4, transformQuat |
-| # releases         | 0 |
-| # dependents       | 107 |
-| # downloads        | 4999531 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 547507.6666666666 |
+| # stars            | 46.0 |
 
 ## Links
 - [Homepage](https://github.com/stackgl/gl-vec3)

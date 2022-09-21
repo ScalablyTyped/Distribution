@@ -4,16 +4,16 @@
 Typings are for version 8.1
 
 ## Library description:
-Clones a value, recursively extracting File, Blob and ReactNativeFile instances with their object paths, replacing them with null. FileList instances are treated as File instance arrays.
+A function to recursively extract files and their object paths within a value, replacing them with null in a deep clone without mutating the original value. FileList instances are treated as File instance arrays. Files are typically File and Blob instance
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | extract-files |
-| Keywords           | extract, file, files, File, FileList, Blob, react, native, esm, mjs |
-| # releases         | 6 |
-| # dependents       | 47 |
-| # downloads        | 42432259 |
-| # stars            | 0 |
+| Keywords           | extract, file, files, File, FileList, Blob, esm, mjs |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1.6655659333333334E7 |
+| # stars            | 49.0 |
 
 ## Links
 - [Homepage](https://github.com/jaydenseric/extract-files#readme)

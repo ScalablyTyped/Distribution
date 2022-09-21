@@ -41,6 +41,6 @@ object ArtifactVersion {
     
     inline def setVersions(value: js.Array[BuildVersion]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     
-    inline def setVersionsVarargs(value: BuildVersion*): Self = StObject.set(x, "versions", js.Array(value :_*))
+    inline def setVersionsVarargs(value: BuildVersion*): Self = StObject.set(x, "versions", js.Array(value*))
   }
 }

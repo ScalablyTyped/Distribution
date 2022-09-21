@@ -1,8 +1,8 @@
 package typings.semanticUiReact
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.FC
 import typings.react.mod.PureComponent
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticCOLORS
 import typings.semanticUiReact.genericMod.SemanticICONS
 import typings.semanticUiReact.iconGroupMod.IconGroupProps
@@ -18,17 +18,17 @@ object iconIconMod {
   
   @JSImport("semantic-ui-react/dist/commonjs/elements/Icon/Icon", JSImport.Default)
   @js.native
-  class default ()
-    extends PureComponent[IconProps, js.Object, js.Any]
+  open class default ()
+    extends PureComponent[IconProps, js.Object, Any]
   object default {
     
     /* was `typeof IconGroup` */
     @JSImport("semantic-ui-react/dist/commonjs/elements/Icon/Icon", "default.Group")
     @js.native
-    val Group: StatelessComponent[IconGroupProps] = js.native
+    val Group: FC[IconGroupProps] = js.native
   }
   
-  type Icon = PureComponent[IconProps, js.Object, js.Any]
+  type Icon = PureComponent[IconProps, js.Object, Any]
   
   /* Rewritten from type alias, can be one of: 
     - typings.semanticUiReact.semanticUiReactStrings.`bottom right`
@@ -51,7 +51,7 @@ object iconIconMod {
   trait IconProps
     extends StObject
        with StrictIconProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object IconProps {
     
     inline def apply(): IconProps = {
@@ -96,7 +96,7 @@ object iconIconMod {
     var `aria-label`: js.UndefOr[String] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Formatted to appear bordered */
     var bordered: js.UndefOr[Boolean] = js.undefined
@@ -157,7 +157,7 @@ object iconIconMod {
       
       inline def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       

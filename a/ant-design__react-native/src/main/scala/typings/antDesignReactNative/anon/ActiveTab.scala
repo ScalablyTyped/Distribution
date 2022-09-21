@@ -10,8 +10,6 @@ trait ActiveTab extends StObject {
   
   var animated: Boolean
   
-  var dynamicTabUnderlineWidth: Boolean
-  
   def goToTab(): Unit
   
   var page: Double
@@ -29,7 +27,6 @@ object ActiveTab {
   inline def apply(
     activeTab: Double,
     animated: Boolean,
-    dynamicTabUnderlineWidth: Boolean,
     goToTab: () => Unit,
     page: Double,
     tabBarActiveTextColor: String,
@@ -37,7 +34,7 @@ object ActiveTab {
     tabBarInactiveTextColor: String,
     tabs: js.Array[scala.Nothing]
   ): ActiveTab = {
-    val __obj = js.Dynamic.literal(activeTab = activeTab.asInstanceOf[js.Any], animated = animated.asInstanceOf[js.Any], dynamicTabUnderlineWidth = dynamicTabUnderlineWidth.asInstanceOf[js.Any], goToTab = js.Any.fromFunction0(goToTab), page = page.asInstanceOf[js.Any], tabBarActiveTextColor = tabBarActiveTextColor.asInstanceOf[js.Any], tabBarBackgroundColor = tabBarBackgroundColor.asInstanceOf[js.Any], tabBarInactiveTextColor = tabBarInactiveTextColor.asInstanceOf[js.Any], tabs = tabs.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(activeTab = activeTab.asInstanceOf[js.Any], animated = animated.asInstanceOf[js.Any], goToTab = js.Any.fromFunction0(goToTab), page = page.asInstanceOf[js.Any], tabBarActiveTextColor = tabBarActiveTextColor.asInstanceOf[js.Any], tabBarBackgroundColor = tabBarBackgroundColor.asInstanceOf[js.Any], tabBarInactiveTextColor = tabBarInactiveTextColor.asInstanceOf[js.Any], tabs = tabs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveTab]
   }
   
@@ -46,8 +43,6 @@ object ActiveTab {
     inline def setActiveTab(value: Double): Self = StObject.set(x, "activeTab", value.asInstanceOf[js.Any])
     
     inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
-    
-    inline def setDynamicTabUnderlineWidth(value: Boolean): Self = StObject.set(x, "dynamicTabUnderlineWidth", value.asInstanceOf[js.Any])
     
     inline def setGoToTab(value: () => Unit): Self = StObject.set(x, "goToTab", js.Any.fromFunction0(value))
     
@@ -61,6 +56,6 @@ object ActiveTab {
     
     inline def setTabs(value: js.Array[scala.Nothing]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
     
-    inline def setTabsVarargs(value: scala.Nothing*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+    inline def setTabsVarargs(value: scala.Nothing*): Self = StObject.set(x, "tabs", js.Array(value*))
   }
 }

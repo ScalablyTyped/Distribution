@@ -29,7 +29,7 @@ trait Accesstoken extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Required. The parent catalog resource name, such as "projects/∗/locations/global/catalogs/default_catalog". */
+  /** Required. The parent catalog resource name, such as `projects/ *‍/locations/global/catalogs/default_catalog`. */
   var parent: String
   
   /** Returns response with indentations and line breaks. */

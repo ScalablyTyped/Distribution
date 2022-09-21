@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "canvas" : "2.10.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "canvas" : "2.10.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -327,12 +327,6 @@ object rechartsStrings {
   inline def geometricPrecision: geometricPrecision = "geometricPrecision".asInstanceOf[geometricPrecision]
   
   @js.native
-  sealed trait glyphOrientationVertical
-    extends StObject
-       with PickedCSSStyleDeclarationKeys
-  inline def glyphOrientationVertical: glyphOrientationVertical = "glyphOrientationVertical".asInstanceOf[glyphOrientationVertical]
-  
-  @js.native
   sealed trait hidden
     extends StObject
        with IfOverflowType

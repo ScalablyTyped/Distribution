@@ -1,19 +1,19 @@
 
 # Scala.js typings for skia-canvas
 
-Typings are for version 0.9
+Typings are for version 1.0.0
 
 ## Library description:
-A canvas environment for Node
+A GPU-accelerated Canvas Graphics API for Node
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | skia-canvas |
-| Keywords           | skia, canvas, offscreen, headless, graphic, graphics, image, images, compositing, render, pdf, svg, rust |
-| # releases         | 14 |
-| # dependents       | 1 |
-| # downloads        | 2799 |
-| # stars            | 0 |
+| Keywords           | canvas, gpu, skia, offscreen, headless, graphic, graphics, image, images, compositing, render, vulkan, metal, pdf, svg, rust |
+| # releases         | 24 |
+| # dependents       | 0.0 |
+| # downloads        | 21505.666666666668 |
+| # stars            | 1222.0 |
 
 ## Links
 - [Homepage](https://github.com/samizdatco/skia-canvas#readme)
@@ -24,7 +24,7 @@ A canvas environment for Node
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

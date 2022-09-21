@@ -10,10 +10,10 @@ object infoOutlineMod {
   
   @JSImport("material-ui/svg-icons/action/info-outline", JSImport.Default)
   @js.native
-  class default () extends ActionInfoOutline
+  open class default () extends ActionInfoOutline
   
   @JSImport("material-ui/svg-icons/action/info-outline", "ActionInfoOutline")
   @js.native
-  class ActionInfoOutline ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionInfoOutline ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

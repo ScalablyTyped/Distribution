@@ -41,11 +41,11 @@ object Defaulticon {
     
     inline def setFile_accessUndefined: Self = StObject.set(x, "file_access", js.undefined)
     
-    inline def setFile_accessVarargs(value: (read_ | String)*): Self = StObject.set(x, "file_access", js.Array(value :_*))
+    inline def setFile_accessVarargs(value: (read_ | String)*): Self = StObject.set(x, "file_access", js.Array(value*))
     
     inline def setFile_filters(value: js.Array[String]): Self = StObject.set(x, "file_filters", value.asInstanceOf[js.Any])
     
-    inline def setFile_filtersVarargs(value: String*): Self = StObject.set(x, "file_filters", js.Array(value :_*))
+    inline def setFile_filtersVarargs(value: String*): Self = StObject.set(x, "file_filters", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

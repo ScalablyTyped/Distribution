@@ -1,7 +1,6 @@
 package typings.std
 
 import typings.std.stdStrings.gatheringstatechange
-import typings.std.stdStrings.selectedcandidatepairchange
 import typings.std.stdStrings.statechange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,125 +12,81 @@ trait RTCIceTransport
   extends StObject
      with EventTarget {
   
+  /* standard dom */
   @JSName("addEventListener")
   def addEventListener_gatheringstatechange(
     `type`: gatheringstatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_gatheringstatechange(
     `type`: gatheringstatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_gatheringstatechange(
     `type`: gatheringstatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_selectedcandidatepairchange(
-    `type`: selectedcandidatepairchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_selectedcandidatepairchange(
-    `type`: selectedcandidatepairchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_selectedcandidatepairchange(
-    `type`: selectedcandidatepairchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_statechange(`type`: statechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
+  def addEventListener_statechange(`type`: statechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_statechange(
     `type`: statechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_statechange(
     `type`: statechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   
-  val component: RTCIceComponent = js.native
-  
+  /* standard dom */
   val gatheringState: RTCIceGathererState = js.native
   
-  def getLocalCandidates(): js.Array[RTCIceCandidate] = js.native
+  /* standard dom */
+  var ongatheringstatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
-  def getLocalParameters(): RTCIceParameters | Null = js.native
+  /* standard dom */
+  var onstatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
   
-  def getRemoteCandidates(): js.Array[RTCIceCandidate] = js.native
-  
-  def getRemoteParameters(): RTCIceParameters | Null = js.native
-  
-  def getSelectedCandidatePair(): RTCIceCandidatePair | Null = js.native
-  
-  var ongatheringstatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
-  
-  var onselectedcandidatepairchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
-  
-  var onstatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
-  
+  /* standard dom */
   @JSName("removeEventListener")
   def removeEventListener_gatheringstatechange(
     `type`: gatheringstatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_gatheringstatechange(
     `type`: gatheringstatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_gatheringstatechange(
     `type`: gatheringstatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_selectedcandidatepairchange(
-    `type`: selectedcandidatepairchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_selectedcandidatepairchange(
-    `type`: selectedcandidatepairchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_selectedcandidatepairchange(
-    `type`: selectedcandidatepairchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_statechange(`type`: statechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
+  def removeEventListener_statechange(`type`: statechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_statechange(
     `type`: statechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_statechange(
     `type`: statechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     options: EventListenerOptions
   ): Unit = js.native
   
-  val role: RTCIceRole = js.native
-  
+  /* standard dom */
   val state: RTCIceTransportState = js.native
 }

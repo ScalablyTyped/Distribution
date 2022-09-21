@@ -12,7 +12,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  type FlushableOnCompleteHandler = js.Function1[/* flushed */ Boolean, js.Any]
+  type FlushableOnCompleteHandler = js.Function1[/* flushed */ Boolean, Any]
   
   trait FlushableOperation extends StObject {
     

@@ -44,7 +44,7 @@ trait XFilePickerControlAccess
     * @see com.sun.star.ui.dialogs.ExtendedFilePickerElementIds
     * @see com.sun.star.ui.dialogs.ControlActions
     */
-  def getValue(aControlId: Double, aControlAction: Double): js.Any
+  def getValue(aControlId: Double, aControlAction: Double): Any
   
   /**
     * Set the label of the specified element. If the specified element doesn't support setting a label, this method has no effect.
@@ -64,7 +64,7 @@ trait XFilePickerControlAccess
     * @see com.sun.star.ui.dialogs.ExtendedFilePickerElementIds
     * @see com.sun.star.ui.dialogs.ControlActions
     */
-  def setValue(ControlId: Double, aControlAction: Double, aValue: js.Any): Unit
+  def setValue(ControlId: Double, aControlAction: Double, aValue: Any): Unit
 }
 object XFilePickerControlAccess {
   
@@ -77,15 +77,15 @@ object XFilePickerControlAccess {
     getDisplayDirectory: () => String,
     getFiles: () => SafeArray[String],
     getLabel: Double => String,
-    getValue: (Double, Double) => js.Any,
-    queryInterface: `type` => js.Any,
+    getValue: (Double, Double) => Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setDefaultName: String => Unit,
     setDisplayDirectory: String => Unit,
     setLabel: (Double, String) => Unit,
     setMultiSelectionMode: Boolean => Unit,
     setTitle: String => Unit,
-    setValue: (Double, Double, js.Any) => Unit
+    setValue: (Double, Double, Any) => Unit
   ): XFilePickerControlAccess = {
     val __obj = js.Dynamic.literal(DisplayDirectory = DisplayDirectory.asInstanceOf[js.Any], Files = Files.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), enableControl = js.Any.fromFunction2(enableControl), execute = js.Any.fromFunction0(execute), getDisplayDirectory = js.Any.fromFunction0(getDisplayDirectory), getFiles = js.Any.fromFunction0(getFiles), getLabel = js.Any.fromFunction1(getLabel), getValue = js.Any.fromFunction2(getValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), setDefaultName = js.Any.fromFunction1(setDefaultName), setDisplayDirectory = js.Any.fromFunction1(setDisplayDirectory), setLabel = js.Any.fromFunction2(setLabel), setMultiSelectionMode = js.Any.fromFunction1(setMultiSelectionMode), setTitle = js.Any.fromFunction1(setTitle), setValue = js.Any.fromFunction3(setValue))
     __obj.asInstanceOf[XFilePickerControlAccess]
@@ -97,10 +97,10 @@ object XFilePickerControlAccess {
     
     inline def setGetLabel(value: Double => String): Self = StObject.set(x, "getLabel", js.Any.fromFunction1(value))
     
-    inline def setGetValue(value: (Double, Double) => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction2(value))
+    inline def setGetValue(value: (Double, Double) => Any): Self = StObject.set(x, "getValue", js.Any.fromFunction2(value))
     
     inline def setSetLabel(value: (Double, String) => Unit): Self = StObject.set(x, "setLabel", js.Any.fromFunction2(value))
     
-    inline def setSetValue(value: (Double, Double, js.Any) => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction3(value))
+    inline def setSetValue(value: (Double, Double, Any) => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction3(value))
   }
 }

@@ -10,10 +10,10 @@ Parse Cache-Control headers.
 | ------------------ | :-------------: |
 | Full name          | parse-cache-control |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 26 |
-| # downloads        | 19514489 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4202724.333333333 |
+| # stars            | 11.0 |
 
 ## Links
 - [Homepage](https://github.com/roryf/parse-cache-control)

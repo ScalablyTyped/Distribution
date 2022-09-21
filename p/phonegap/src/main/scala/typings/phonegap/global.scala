@@ -9,7 +9,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("Acceleration")
   @js.native
-  class Acceleration ()
+  open class Acceleration ()
     extends StObject
        with typings.phonegap.Acceleration {
     
@@ -29,7 +29,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("CameraPopoverOptions")
   @js.native
-  class CameraPopoverOptions protected ()
+  open class CameraPopoverOptions protected ()
     extends StObject
        with typings.phonegap.CameraPopoverOptions {
     def this(x: Double, y: Double, width: Double, height: Double, arrowDir: Double) = this()
@@ -102,7 +102,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ContactField")
   @js.native
-  class ContactField protected ()
+  open class ContactField protected ()
     extends StObject
        with typings.phonegap.ContactField {
     def this(`type`: String, calue: String, perf: Boolean) = this()
@@ -120,14 +120,14 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ContactFindOptions")
   @js.native
-  class ContactFindOptions ()
+  open class ContactFindOptions ()
     extends StObject
        with typings.phonegap.ContactFindOptions
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ContactName")
   @js.native
-  class ContactName ()
+  open class ContactName ()
     extends StObject
        with typings.phonegap.ContactName {
     
@@ -153,10 +153,10 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("DirectoryEntry")
   @js.native
-  class DirectoryEntry protected ()
+  open class DirectoryEntry protected ()
     extends StObject
-       with typings.phonegap.DirectoryEntry {
-    def this(name: String, root: typings.phonegap.DirectoryEntry) = this()
+       with FileSystemDirectoryEntry {
+    def this(name: String, root: FileSystemDirectoryEntry) = this()
   }
   
   object FileError {
@@ -229,7 +229,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("FileTransfer")
   @js.native
-  class FileTransfer ()
+  open class FileTransfer ()
     extends StObject
        with typings.phonegap.FileTransfer
   
@@ -263,7 +263,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("FileUploadOptions")
   @js.native
-  class FileUploadOptions ()
+  open class FileUploadOptions ()
     extends StObject
        with typings.phonegap.FileUploadOptions
   
@@ -307,13 +307,13 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("Media")
   @js.native
-  class Media protected ()
+  open class Media protected ()
     extends StObject
        with typings.phonegap.Media {
     def this(
       src: String,
-      onSuccess: js.Function1[/* arg */ js.Any, js.Any],
-      onError: js.Function1[/* error */ js.Any, js.Any]
+      onSuccess: js.Function1[/* arg */ Any, Any],
+      onError: js.Function1[/* error */ Any, Any]
     ) = this()
   }
   

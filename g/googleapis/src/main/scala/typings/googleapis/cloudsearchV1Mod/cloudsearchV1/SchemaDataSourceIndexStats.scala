@@ -4,16 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Aggregation of items by status code as of the specified date.
-  */
 trait SchemaDataSourceIndexStats extends StObject {
   
   /**
-    * Date for which index stats were calculated. If the date of request is not
-    * the current date then stats calculated on the next day are returned.
-    * Stats are calculated close to mid night in this case. If date of request
-    * is current date, then real time stats are returned.
+    * The date for which index stats were calculated. If the date of request is not the current date then stats calculated on the next day are returned. Stats are calculated close to mid night in this case. If date of request is current date, then real time stats are returned.
     */
   var date: js.UndefOr[SchemaDate] = js.undefined
   
@@ -39,6 +33,6 @@ object SchemaDataSourceIndexStats {
     
     inline def setItemCountByStatusUndefined: Self = StObject.set(x, "itemCountByStatus", js.undefined)
     
-    inline def setItemCountByStatusVarargs(value: SchemaItemCountByStatus*): Self = StObject.set(x, "itemCountByStatus", js.Array(value :_*))
+    inline def setItemCountByStatusVarargs(value: SchemaItemCountByStatus*): Self = StObject.set(x, "itemCountByStatus", js.Array(value*))
   }
 }

@@ -1,21 +1,30 @@
 package typings.firebaseFirestore.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Seconds extends js.Object {
+trait Seconds extends StObject {
+  
   var nanos: js.UndefOr[Double] = js.undefined
+  
   var seconds: js.UndefOr[String | Double] = js.undefined
 }
-
 object Seconds {
-  @scala.inline
-  def apply(nanos: js.UndefOr[Double] = js.undefined, seconds: String | Double = null): Seconds = {
+  
+  inline def apply(): Seconds = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(nanos)) __obj.updateDynamic("nanos")(nanos.get.asInstanceOf[js.Any])
-    if (seconds != null) __obj.updateDynamic("seconds")(seconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[Seconds]
   }
+  
+  extension [Self <: Seconds](x: Self) {
+    
+    inline def setNanos(value: Double): Self = StObject.set(x, "nanos", value.asInstanceOf[js.Any])
+    
+    inline def setNanosUndefined: Self = StObject.set(x, "nanos", js.undefined)
+    
+    inline def setSeconds(value: String | Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+    
+    inline def setSecondsUndefined: Self = StObject.set(x, "seconds", js.undefined)
+  }
 }
-

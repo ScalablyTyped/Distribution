@@ -71,7 +71,7 @@ trait JSTreeStaticDefaults extends StObject {
     * @name $.jstree.defaults.sort
     * @plugin sort
     */
-  var sort: js.UndefOr[js.Function2[/* x */ js.Any, /* y */ js.Any, Double]] = js.undefined
+  var sort: js.UndefOr[js.Function2[/* x */ Any, /* y */ Any, Double]] = js.undefined
   
   /**
     * stores all defaults for the state plugin
@@ -96,7 +96,7 @@ trait JSTreeStaticDefaults extends StObject {
     * # represents the root of the tree, for example max_children would control the maximum number of root nodes.
     * default represents the default node - any settings here will be applied to all nodes that do not have a type specified.
     */
-  var types: js.UndefOr[js.Any] = js.undefined
+  var types: js.UndefOr[Any] = js.undefined
   
   /**
     * stores all defaults for the unique plugin
@@ -142,13 +142,13 @@ object JSTreeStaticDefaults {
     
     inline def setPlugins(value: js.Array[String]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
-    inline def setPluginsVarargs(value: String*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+    inline def setPluginsVarargs(value: String*): Self = StObject.set(x, "plugins", js.Array(value*))
     
     inline def setSearch(value: JSTreeStaticDefaultsSearch): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
     inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
     
-    inline def setSort(value: (/* x */ js.Any, /* y */ js.Any) => Double): Self = StObject.set(x, "sort", js.Any.fromFunction2(value))
+    inline def setSort(value: (/* x */ Any, /* y */ Any) => Double): Self = StObject.set(x, "sort", js.Any.fromFunction2(value))
     
     inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
@@ -156,7 +156,7 @@ object JSTreeStaticDefaults {
     
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    inline def setTypes(value: js.Any): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: Any): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
     inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     

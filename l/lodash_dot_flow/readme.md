@@ -10,10 +10,10 @@ The lodash method `_.flow` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.flow |
 | Keywords           | lodash-modularized, flow |
-| # releases         | 0 |
-| # dependents       | 114 |
-| # downloads        | 24644212 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3379315.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

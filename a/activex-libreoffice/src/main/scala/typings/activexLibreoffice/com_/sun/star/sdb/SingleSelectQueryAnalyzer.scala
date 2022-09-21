@@ -54,7 +54,7 @@ object SingleSelectQueryAnalyzer {
     getStructuredFilter: () => SafeArray[SafeArray[PropertyValue]],
     getStructuredHavingClause: () => SafeArray[SafeArray[PropertyValue]],
     getTables: () => XNameAccess,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setCommand: (String, Double) => Unit,
     setQuery: String => Unit

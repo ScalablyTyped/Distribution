@@ -8,5 +8,5 @@ object removePermissionInputMod {
   
   @JSImport("@aws-sdk/client-sqs-node/model/RemovePermissionInput", "RemovePermissionInput")
   @js.native
-  val RemovePermissionInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val RemovePermissionInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

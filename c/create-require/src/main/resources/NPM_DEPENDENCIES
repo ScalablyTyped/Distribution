@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "create-require" : "1.1.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "create-require" : "1.1.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

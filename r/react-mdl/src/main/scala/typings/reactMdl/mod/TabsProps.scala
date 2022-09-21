@@ -16,7 +16,7 @@ trait TabsProps
   
   var name: js.UndefOr[String] = js.undefined
   
-  var onChange: js.UndefOr[js.Function1[/* tabId */ Double, js.Any]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* tabId */ Double, Any]] = js.undefined
   
   var onClick: js.UndefOr[MouseEventHandler[Tabs]] = js.undefined
   
@@ -41,7 +41,7 @@ object TabsProps {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setOnChange(value: /* tabId */ Double => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: /* tabId */ Double => Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     

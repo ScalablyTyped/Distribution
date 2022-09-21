@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param x2 Defines the x component of the end tangent in the bezier curve
   * @param y2 Defines the y component of the end tangent in the bezier curve
   */
-class BezierCurveEase ()
+open class BezierCurveEase ()
   extends typings.babylonjs.legacyMod.BezierCurveEase {
   def this(/** Defines the x component of the start tangent in the bezier curve */
   x1: Double) = this()

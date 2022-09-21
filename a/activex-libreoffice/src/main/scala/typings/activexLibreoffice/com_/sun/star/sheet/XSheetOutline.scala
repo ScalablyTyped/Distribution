@@ -65,7 +65,7 @@ object XSheetOutline {
     clearOutline: () => Unit,
     group: (CellRangeAddress, TableOrientation) => Unit,
     hideDetail: CellRangeAddress => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     showDetail: CellRangeAddress => Unit,
     showLevel: (Double, TableOrientation) => Unit,

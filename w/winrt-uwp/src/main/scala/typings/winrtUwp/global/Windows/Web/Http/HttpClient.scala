@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.Web.Http.HttpClient")
 @js.native
 /** Initializes a new instance of the HttpClient class. */
-class HttpClient ()
+open class HttpClient ()
   extends StObject
      with typings.winrtUwp.Windows.Web.Http.HttpClient {
   /**

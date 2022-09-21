@@ -9,15 +9,12 @@ Lexicographically compare two buffers.
 | ------------------ | :-------------: |
 | Full name          | buffer-compare |
 | Keywords           | sort, buffer, lexiographic |
-| # releases         | 0 |
-| # dependents       | 256 |
-| # downloads        | 971607 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 164844.66666666666 |
+| # stars            | 4.0 |
 
 ## Links
-- [Homepage](https://github.com/soldair/node-buffer-compare#readme)
-- [Bugs](https://github.com/soldair/node-buffer-compare/issues)
-- [Repository](https://github.com/soldair/node-buffer-compare)
 - [Npm](https://www.npmjs.com/package/buffer-compare)
     
 

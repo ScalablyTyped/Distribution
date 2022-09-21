@@ -33,6 +33,6 @@ object ListPoliciesForTargetResponse {
     
     inline def setPoliciesUndefined: Self = StObject.set(x, "Policies", js.undefined)
     
-    inline def setPoliciesVarargs(value: PolicySummary*): Self = StObject.set(x, "Policies", js.Array(value :_*))
+    inline def setPoliciesVarargs(value: PolicySummary*): Self = StObject.set(x, "Policies", js.Array(value*))
   }
 }

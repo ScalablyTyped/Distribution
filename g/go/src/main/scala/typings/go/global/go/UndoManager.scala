@@ -13,5 +13,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * The constructor produces an empty UndoManager with no transaction history.
   */
-class UndoManager ()
+open class UndoManager ()
   extends typings.go.mod.UndoManager

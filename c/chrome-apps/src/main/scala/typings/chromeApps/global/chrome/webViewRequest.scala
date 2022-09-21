@@ -37,7 +37,7 @@ object webViewRequest {
     */
   @JSGlobal("chrome.webViewRequest.AddRequestCookie")
   @js.native
-  class AddRequestCookie protected ()
+  open class AddRequestCookie protected ()
     extends StObject
        with typings.chromeApps.chrome.webViewRequest.AddRequestCookie {
     def this(parameters: AddCookie[RequestCookie]) = this()
@@ -55,7 +55,7 @@ object webViewRequest {
     */
   @JSGlobal("chrome.webViewRequest.AddResponseCookie")
   @js.native
-  class AddResponseCookie protected ()
+  open class AddResponseCookie protected ()
     extends StObject
        with typings.chromeApps.chrome.webViewRequest.AddResponseCookie {
     def this(parameters: AddCookie[ResponseCookie]) = this()
@@ -75,7 +75,7 @@ object webViewRequest {
     */
   @JSGlobal("chrome.webViewRequest.AddResponseHeader")
   @js.native
-  class AddResponseHeader protected ()
+  open class AddResponseHeader protected ()
     extends StObject
        with typings.chromeApps.chrome.webViewRequest.AddResponseHeader {
     def this(parameters: AddResponseHeaderParams) = this()
@@ -90,7 +90,7 @@ object webViewRequest {
   /** Declarative event action that cancels a network request. */
   @JSGlobal("chrome.webViewRequest.CancelRequest")
   @js.native
-  class CancelRequest ()
+  open class CancelRequest ()
     extends StObject
        with typings.chromeApps.chrome.webViewRequest.CancelRequest {
     
@@ -107,7 +107,7 @@ object webViewRequest {
     */
   @JSGlobal("chrome.webViewRequest.EditRequestCookie")
   @js.native
-  class EditRequestCookie protected ()
+  open class EditRequestCookie protected ()
     extends StObject
        with typings.chromeApps.chrome.webViewRequest.EditRequestCookie {
     /**
@@ -130,7 +130,7 @@ object webViewRequest {
     */
   @JSGlobal("chrome.webViewRequest.EditResponseCookie")
   @js.native
-  class EditResponseCookie protected ()
+  open class EditResponseCookie protected ()
     extends StObject
        with typings.chromeApps.chrome.webViewRequest.EditResponseCookie {
     /**
@@ -151,7 +151,7 @@ object webViewRequest {
     */
   @JSGlobal("chrome.webViewRequest.IgnoreRules")
   @js.native
-  class IgnoreRules protected ()
+  open class IgnoreRules protected ()
     extends StObject
        with typings.chromeApps.chrome.webViewRequest.IgnoreRules {
     def this(parameters: IgnoreRulesParams) = this()
@@ -170,7 +170,7 @@ object webViewRequest {
     */
   @JSGlobal("chrome.webViewRequest.RedirectByRegEx")
   @js.native
-  class RedirectByRegEx protected ()
+  open class RedirectByRegEx protected ()
     extends StObject
        with typings.chromeApps.chrome.webViewRequest.RedirectByRegEx {
     def this(parameters: RedirectByRegExParams) = this()
@@ -185,7 +185,7 @@ object webViewRequest {
   /** Declarative event action that redirects a network request.  */
   @JSGlobal("chrome.webViewRequest.RedirectRequest")
   @js.native
-  class RedirectRequest protected ()
+  open class RedirectRequest protected ()
     extends StObject
        with typings.chromeApps.chrome.webViewRequest.RedirectRequest {
     def this(parameters: RedirectRequestParams) = this()
@@ -200,7 +200,7 @@ object webViewRequest {
   /** Declarative event action that redirects a network request to an empty document. */
   @JSGlobal("chrome.webViewRequest.RedirectToEmptyDocument")
   @js.native
-  class RedirectToEmptyDocument ()
+  open class RedirectToEmptyDocument ()
     extends StObject
        with typings.chromeApps.chrome.webViewRequest.RedirectToEmptyDocument {
     
@@ -214,7 +214,7 @@ object webViewRequest {
   /** Declarative event action that redirects a network request to a transparent image. */
   @JSGlobal("chrome.webViewRequest.RedirectToTransparentImage")
   @js.native
-  class RedirectToTransparentImage ()
+  open class RedirectToTransparentImage ()
     extends StObject
        with typings.chromeApps.chrome.webViewRequest.RedirectToTransparentImage {
     
@@ -231,7 +231,7 @@ object webViewRequest {
     */
   @JSGlobal("chrome.webViewRequest.RemoveRequestCookie")
   @js.native
-  class RemoveRequestCookie protected ()
+  open class RemoveRequestCookie protected ()
     extends StObject
        with typings.chromeApps.chrome.webViewRequest.RemoveRequestCookie {
     def this(parameters: RemoveCookieParams[RequestCookie]) = this()
@@ -251,7 +251,7 @@ object webViewRequest {
     */
   @JSGlobal("chrome.webViewRequest.RemoveRequestHeader")
   @js.native
-  class RemoveRequestHeader protected ()
+  open class RemoveRequestHeader protected ()
     extends StObject
        with typings.chromeApps.chrome.webViewRequest.RemoveRequestHeader {
     def this(parameters: RemoveRequestHeaderParams) = this()
@@ -269,7 +269,7 @@ object webViewRequest {
     */
   @JSGlobal("chrome.webViewRequest.RemoveResponseCookie")
   @js.native
-  class RemoveResponseCookie protected ()
+  open class RemoveResponseCookie protected ()
     extends StObject
        with typings.chromeApps.chrome.webViewRequest.RemoveResponseCookie {
     def this(parameters: RemoveCookieParams[FilterResponseCookie]) = this()
@@ -286,7 +286,7 @@ object webViewRequest {
     */
   @JSGlobal("chrome.webViewRequest.RemoveResponseHeader")
   @js.native
-  class RemoveResponseHeader protected ()
+  open class RemoveResponseHeader protected ()
     extends StObject
        with typings.chromeApps.chrome.webViewRequest.RemoveResponseHeader {
     def this(parameters: RemoveResponseHeaderParams) = this()
@@ -303,7 +303,7 @@ object webViewRequest {
     */
   @JSGlobal("chrome.webViewRequest.RequestMatcher")
   @js.native
-  class RequestMatcher ()
+  open class RequestMatcher ()
     extends StObject
        with typings.chromeApps.chrome.webViewRequest.RequestMatcher {
     def this(parameters: RequestMatcherFields) = this()
@@ -320,7 +320,7 @@ object webViewRequest {
     */
   @JSGlobal("chrome.webViewRequest.SendMessageToExtension")
   @js.native
-  class SendMessageToExtension protected ()
+  open class SendMessageToExtension protected ()
     extends StObject
        with typings.chromeApps.chrome.webViewRequest.SendMessageToExtension {
     def this(parameters: SendMessageParams) = this()
@@ -340,7 +340,7 @@ object webViewRequest {
     */
   @JSGlobal("chrome.webViewRequest.SetRequestHeader")
   @js.native
-  class SetRequestHeader protected ()
+  open class SetRequestHeader protected ()
     extends StObject
        with typings.chromeApps.chrome.webViewRequest.SetRequestHeader {
     def this(parameters: SetRequestHeaderParams) = this()

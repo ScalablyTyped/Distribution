@@ -80,7 +80,7 @@ abstract class VideoDeviceController ()
     * @return The property value.
     */
   /* CompleteClass */
-  override def getDeviceProperty(propertyId: String): js.Any = js.native
+  override def getDeviceProperty(propertyId: String): Any = js.native
   
   /**
     * Gets the encoding properties for the specified media stream type for the video device.
@@ -144,7 +144,7 @@ abstract class VideoDeviceController ()
     * @param propertyValue The new value of the property.
     */
   /* CompleteClass */
-  override def setDeviceProperty(propertyId: String, propertyValue: js.Any): Unit = js.native
+  override def setDeviceProperty(propertyId: String, propertyValue: Any): Unit = js.native
   
   /**
     * Sets the encoding properties asynchronously for the specified media stream type for the video device.

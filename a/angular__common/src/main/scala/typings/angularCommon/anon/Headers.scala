@@ -1,43 +1,74 @@
 package typings.angularCommon.anon
 
-import typings.angularCommon.httpHttpMod.HttpHeaders
+import org.scalablytyped.runtime.StringDictionary
+import typings.angularCommon.angularCommonStrings.body
+import typings.angularCommon.angularCommonStrings.text
+import typings.angularCommon.httpMod.HttpContext
+import typings.angularCommon.httpMod.HttpHeaders
+import typings.angularCommon.httpMod.HttpParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Headers extends StObject {
   
-  var headers: js.UndefOr[HttpHeaders] = js.undefined
+  var body: js.UndefOr[Any] = js.undefined
   
-  var status: js.UndefOr[Double] = js.undefined
+  var context: js.UndefOr[HttpContext] = js.undefined
   
-  var statusText: js.UndefOr[String] = js.undefined
+  var headers: js.UndefOr[HttpHeaders | (StringDictionary[String | js.Array[String]])] = js.undefined
   
-  var url: js.UndefOr[String] = js.undefined
+  var observe: js.UndefOr[body] = js.undefined
+  
+  var params: js.UndefOr[
+    HttpParams | (StringDictionary[String | Double | Boolean | (js.Array[String | Double | Boolean])])
+  ] = js.undefined
+  
+  var reportProgress: js.UndefOr[Boolean] = js.undefined
+  
+  var responseType: text
+  
+  var withCredentials: js.UndefOr[Boolean] = js.undefined
 }
 object Headers {
   
   inline def apply(): Headers = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(responseType = "text")
     __obj.asInstanceOf[Headers]
   }
   
   extension [Self <: Headers](x: Self) {
     
-    inline def setHeaders(value: HttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    
+    inline def setContext(value: HttpContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    
+    inline def setHeaders(value: HttpHeaders | (StringDictionary[String | js.Array[String]])): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setObserve(value: body): Self = StObject.set(x, "observe", value.asInstanceOf[js.Any])
     
-    inline def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
+    inline def setObserveUndefined: Self = StObject.set(x, "observe", js.undefined)
     
-    inline def setStatusTextUndefined: Self = StObject.set(x, "statusText", js.undefined)
+    inline def setParams(
+      value: HttpParams | (StringDictionary[String | Double | Boolean | (js.Array[String | Double | Boolean])])
+    ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setReportProgress(value: Boolean): Self = StObject.set(x, "reportProgress", value.asInstanceOf[js.Any])
     
-    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setReportProgressUndefined: Self = StObject.set(x, "reportProgress", js.undefined)
+    
+    inline def setResponseType(value: text): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+    
+    inline def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
+    
+    inline def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
   }
 }

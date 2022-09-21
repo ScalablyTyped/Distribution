@@ -9,7 +9,7 @@ trait TunnelSummary extends StObject {
   /**
     * The time the tunnel was created.
     */
-  var createdAt: js.UndefOr[DateType] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A description of the tunnel.
@@ -19,7 +19,7 @@ trait TunnelSummary extends StObject {
   /**
     * The time the tunnel was last updated.
     */
-  var lastUpdatedAt: js.UndefOr[DateType] = js.undefined
+  var lastUpdatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The status of a tunnel. Valid values are: Open and Closed.
@@ -27,7 +27,7 @@ trait TunnelSummary extends StObject {
   var status: js.UndefOr[TunnelStatus] = js.undefined
   
   /**
-    * The Amazon Resource Name of the tunnel. The tunnel ARN format is arn:aws:tunnel:&lt;region&gt;:&lt;account-id&gt;:tunnel/&lt;tunnel-id&gt; 
+    * The Amazon Resource Name of the tunnel. 
     */
   var tunnelArn: js.UndefOr[TunnelArn] = js.undefined
   
@@ -45,7 +45,7 @@ object TunnelSummary {
   
   extension [Self <: TunnelSummary](x: Self) {
     
-    inline def setCreatedAt(value: DateType): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
@@ -53,7 +53,7 @@ object TunnelSummary {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setLastUpdatedAt(value: DateType): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedAt(value: js.Date): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedAtUndefined: Self = StObject.set(x, "lastUpdatedAt", js.undefined)
     

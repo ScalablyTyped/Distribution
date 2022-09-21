@@ -21,7 +21,7 @@ object mod {
     /**
       * executed after initialisation (end of setup function)
       */
-    var afterInit: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var afterInit: js.UndefOr[js.Function0[Any]] = js.undefined
     
     //////////////////////////////////////////////////
     //  Callbacks
@@ -29,27 +29,27 @@ object mod {
     /**
       * executed before initialisation (first in setup function)
       */
-    var beforeInit: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var beforeInit: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /**
       * executed on click of next controls (next function)
       */
-    var beforeNext: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var beforeNext: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /**
       * executed on click of prev controls (prev function)
       */
-    var beforePrev: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var beforePrev: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /**
       * executed on every resize event
       */
-    var beforeResize: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var beforeResize: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /**
       * executed on touch attempt (touchstart)
       */
-    var beforeTouch: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var beforeTouch: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /**
       * class name for slider frame
@@ -133,27 +133,27 @@ object mod {
     
     extension [Self <: LoryOptions](x: Self) {
       
-      inline def setAfterInit(value: () => js.Any): Self = StObject.set(x, "afterInit", js.Any.fromFunction0(value))
+      inline def setAfterInit(value: () => Any): Self = StObject.set(x, "afterInit", js.Any.fromFunction0(value))
       
       inline def setAfterInitUndefined: Self = StObject.set(x, "afterInit", js.undefined)
       
-      inline def setBeforeInit(value: () => js.Any): Self = StObject.set(x, "beforeInit", js.Any.fromFunction0(value))
+      inline def setBeforeInit(value: () => Any): Self = StObject.set(x, "beforeInit", js.Any.fromFunction0(value))
       
       inline def setBeforeInitUndefined: Self = StObject.set(x, "beforeInit", js.undefined)
       
-      inline def setBeforeNext(value: () => js.Any): Self = StObject.set(x, "beforeNext", js.Any.fromFunction0(value))
+      inline def setBeforeNext(value: () => Any): Self = StObject.set(x, "beforeNext", js.Any.fromFunction0(value))
       
       inline def setBeforeNextUndefined: Self = StObject.set(x, "beforeNext", js.undefined)
       
-      inline def setBeforePrev(value: () => js.Any): Self = StObject.set(x, "beforePrev", js.Any.fromFunction0(value))
+      inline def setBeforePrev(value: () => Any): Self = StObject.set(x, "beforePrev", js.Any.fromFunction0(value))
       
       inline def setBeforePrevUndefined: Self = StObject.set(x, "beforePrev", js.undefined)
       
-      inline def setBeforeResize(value: () => js.Any): Self = StObject.set(x, "beforeResize", js.Any.fromFunction0(value))
+      inline def setBeforeResize(value: () => Any): Self = StObject.set(x, "beforeResize", js.Any.fromFunction0(value))
       
       inline def setBeforeResizeUndefined: Self = StObject.set(x, "beforeResize", js.undefined)
       
-      inline def setBeforeTouch(value: () => js.Any): Self = StObject.set(x, "beforeTouch", js.Any.fromFunction0(value))
+      inline def setBeforeTouch(value: () => Any): Self = StObject.set(x, "beforeTouch", js.Any.fromFunction0(value))
       
       inline def setBeforeTouchUndefined: Self = StObject.set(x, "beforeTouch", js.undefined)
       

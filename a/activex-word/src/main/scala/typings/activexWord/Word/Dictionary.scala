@@ -18,7 +18,7 @@ trait Dictionary extends StObject {
   
   val Name: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Path: String
   
@@ -38,7 +38,7 @@ object Dictionary {
     LanguageID: WdLanguageID,
     LanguageSpecific: Boolean,
     Name: String,
-    Parent: js.Any,
+    Parent: Any,
     Path: String,
     ReadOnly: Boolean,
     Type: WdDictionaryType,
@@ -63,7 +63,7 @@ object Dictionary {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     

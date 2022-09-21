@@ -11,7 +11,7 @@ object anon {
     
     var active: js.UndefOr[Boolean] = js.undefined
     
-    var attributes: js.Any
+    var attributes: Any
     
     var description: js.UndefOr[String] = js.undefined
     
@@ -19,7 +19,7 @@ object anon {
   }
   object Active {
     
-    inline def apply(attributes: js.Any, name: String): Active = {
+    inline def apply(attributes: Any, name: String): Active = {
       val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Active]
     }
@@ -30,7 +30,7 @@ object anon {
       
       inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      inline def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -139,18 +139,18 @@ object anon {
   
   trait Cookie extends StObject {
     
-    def cookie(): js.Promise[js.Any]
+    def cookie(): js.Promise[Any]
   }
   object Cookie {
     
-    inline def apply(cookie: () => js.Promise[js.Any]): Cookie = {
+    inline def apply(cookie: () => js.Promise[Any]): Cookie = {
       val __obj = js.Dynamic.literal(cookie = js.Any.fromFunction0(cookie))
       __obj.asInstanceOf[Cookie]
     }
     
     extension [Self <: Cookie](x: Self) {
       
-      inline def setCookie(value: () => js.Promise[js.Any]): Self = StObject.set(x, "cookie", js.Any.fromFunction0(value))
+      inline def setCookie(value: () => js.Promise[Any]): Self = StObject.set(x, "cookie", js.Any.fromFunction0(value))
     }
   }
   

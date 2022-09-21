@@ -1,5 +1,7 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.anon.FeatureReductionClusterPr
+import typings.arcgisJsApi.arcgisJsApiStrings.point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,10 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CSVLayerProperties
   extends StObject
      with LayerProperties
+     with OrderedLayerProperties
      with PortalLayerProperties
      with ScaleRangeLayerProperties
      with TemporalLayerProperties
-     with BlendLayerProperties {
+     with BlendLayerProperties
+     with FeatureEffectLayerProperties {
   
   /**
     * Copyright information for the layer.
@@ -18,6 +22,13 @@ trait CSVLayerProperties
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#copyright)
     */
   var copyright: js.UndefOr[String] = js.undefined
+  
+  /**
+    * A list of custom parameters appended to the URL of all resources fetched by the layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#customParameters)
+    */
+  var customParameters: js.UndefOr[Any] = js.undefined
   
   /**
     * The SQL where clause used to filter features on the client.
@@ -41,7 +52,7 @@ trait CSVLayerProperties
   var displayField: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies how graphics are placed on the vertical axis (z).
+    * Specifies how features are placed on the vertical axis (z).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#elevationInfo)
     */
@@ -52,7 +63,7 @@ trait CSVLayerProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#featureReduction)
     */
-  var featureReduction: js.UndefOr[FeatureReductionClusterProperties | FeatureReductionSelectionProperties] = js.undefined
+  var featureReduction: js.UndefOr[FeatureReductionClusterPr | typings.arcgisJsApi.anon.FeatureReductionSelection] = js.undefined
   
   /**
     * An array of fields in the layer.
@@ -60,6 +71,13 @@ trait CSVLayerProperties
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#fields)
     */
   var fields: js.UndefOr[js.Array[FieldProperties]] = js.undefined
+  
+  /**
+    * The geometry type of features in the CSVLayer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#geometryType)
+    */
+  var geometryType: js.UndefOr[point] = js.undefined
   
   /**
     * The label definition for this layer, specified as an array of [LabelClass](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html).
@@ -71,6 +89,8 @@ trait CSVLayerProperties
   /**
     * Indicates whether to display labels for this layer.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#labelsVisible)
     */
   var labelsVisible: js.UndefOr[Boolean] = js.undefined
@@ -81,6 +101,15 @@ trait CSVLayerProperties
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#latitudeField)
     */
   var latitudeField: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Indicates whether the layer will be included in the legend.
+    *
+    * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#legendEnabled)
+    */
+  var legendEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The longitude field name.
@@ -106,6 +135,8 @@ trait CSVLayerProperties
   /**
     * Indicates whether to display popups when features in the layer are clicked.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#popupEnabled)
     */
   var popupEnabled: js.UndefOr[Boolean] = js.undefined
@@ -118,6 +149,15 @@ trait CSVLayerProperties
   var popupTemplate: js.UndefOr[PopupTemplateProperties] = js.undefined
   
   /**
+    * Refresh interval of the layer in minutes.
+    *
+    * @default 0
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#refreshInterval)
+    */
+  var refreshInterval: js.UndefOr[Double] = js.undefined
+  
+  /**
     * The renderer assigned to the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#renderer)
@@ -127,12 +167,16 @@ trait CSVLayerProperties
   /**
     * Apply perspective scaling to screen-size point symbols in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#screenSizePerspectiveEnabled)
     */
   var screenSizePerspectiveEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The spatial reference of the layer.
+    *
+    * @default SpatialReference.WGS84
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#spatialReference)
     */
@@ -158,6 +202,10 @@ object CSVLayerProperties {
     
     inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
+    inline def setCustomParameters(value: Any): Self = StObject.set(x, "customParameters", value.asInstanceOf[js.Any])
+    
+    inline def setCustomParametersUndefined: Self = StObject.set(x, "customParameters", js.undefined)
+    
     inline def setDefinitionExpression(value: String): Self = StObject.set(x, "definitionExpression", value.asInstanceOf[js.Any])
     
     inline def setDefinitionExpressionUndefined: Self = StObject.set(x, "definitionExpression", js.undefined)
@@ -174,7 +222,7 @@ object CSVLayerProperties {
     
     inline def setElevationInfoUndefined: Self = StObject.set(x, "elevationInfo", js.undefined)
     
-    inline def setFeatureReduction(value: FeatureReductionClusterProperties | FeatureReductionSelectionProperties): Self = StObject.set(x, "featureReduction", value.asInstanceOf[js.Any])
+    inline def setFeatureReduction(value: FeatureReductionClusterPr | typings.arcgisJsApi.anon.FeatureReductionSelection): Self = StObject.set(x, "featureReduction", value.asInstanceOf[js.Any])
     
     inline def setFeatureReductionUndefined: Self = StObject.set(x, "featureReduction", js.undefined)
     
@@ -182,13 +230,17 @@ object CSVLayerProperties {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: FieldProperties*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: FieldProperties*): Self = StObject.set(x, "fields", js.Array(value*))
+    
+    inline def setGeometryType(value: point): Self = StObject.set(x, "geometryType", value.asInstanceOf[js.Any])
+    
+    inline def setGeometryTypeUndefined: Self = StObject.set(x, "geometryType", js.undefined)
     
     inline def setLabelingInfo(value: js.Array[LabelClassProperties]): Self = StObject.set(x, "labelingInfo", value.asInstanceOf[js.Any])
     
     inline def setLabelingInfoUndefined: Self = StObject.set(x, "labelingInfo", js.undefined)
     
-    inline def setLabelingInfoVarargs(value: LabelClassProperties*): Self = StObject.set(x, "labelingInfo", js.Array(value :_*))
+    inline def setLabelingInfoVarargs(value: LabelClassProperties*): Self = StObject.set(x, "labelingInfo", js.Array(value*))
     
     inline def setLabelsVisible(value: Boolean): Self = StObject.set(x, "labelsVisible", value.asInstanceOf[js.Any])
     
@@ -197,6 +249,10 @@ object CSVLayerProperties {
     inline def setLatitudeField(value: String): Self = StObject.set(x, "latitudeField", value.asInstanceOf[js.Any])
     
     inline def setLatitudeFieldUndefined: Self = StObject.set(x, "latitudeField", js.undefined)
+    
+    inline def setLegendEnabled(value: Boolean): Self = StObject.set(x, "legendEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setLegendEnabledUndefined: Self = StObject.set(x, "legendEnabled", js.undefined)
     
     inline def setLongitudeField(value: String): Self = StObject.set(x, "longitudeField", value.asInstanceOf[js.Any])
     
@@ -210,7 +266,7 @@ object CSVLayerProperties {
     
     inline def setOutFieldsUndefined: Self = StObject.set(x, "outFields", js.undefined)
     
-    inline def setOutFieldsVarargs(value: String*): Self = StObject.set(x, "outFields", js.Array(value :_*))
+    inline def setOutFieldsVarargs(value: String*): Self = StObject.set(x, "outFields", js.Array(value*))
     
     inline def setPopupEnabled(value: Boolean): Self = StObject.set(x, "popupEnabled", value.asInstanceOf[js.Any])
     
@@ -219,6 +275,10 @@ object CSVLayerProperties {
     inline def setPopupTemplate(value: PopupTemplateProperties): Self = StObject.set(x, "popupTemplate", value.asInstanceOf[js.Any])
     
     inline def setPopupTemplateUndefined: Self = StObject.set(x, "popupTemplate", js.undefined)
+    
+    inline def setRefreshInterval(value: Double): Self = StObject.set(x, "refreshInterval", value.asInstanceOf[js.Any])
+    
+    inline def setRefreshIntervalUndefined: Self = StObject.set(x, "refreshInterval", js.undefined)
     
     inline def setRenderer(value: RendererProperties): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     

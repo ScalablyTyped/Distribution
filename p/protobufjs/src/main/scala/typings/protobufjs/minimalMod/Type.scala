@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("protobufjs/minimal", "Type")
 @js.native
-class Type protected ()
+open class Type protected ()
   extends typings.protobufjs.mod.Type {
   /**
     * Constructs a new reflected message type instance.
@@ -18,7 +18,7 @@ class Type protected ()
     * @param [options] Declared options
     */
   def this(name: String) = this()
-  def this(name: String, options: StringDictionary[js.Any]) = this()
+  def this(name: String, options: StringDictionary[Any]) = this()
 }
 /* static members */
 object Type {

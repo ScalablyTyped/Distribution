@@ -1,7 +1,5 @@
 package typings.prosemirrorTransform
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.StringDictionary
 import typings.prosemirrorModel.mod.NodeType
 import typings.prosemirrorModel.mod.Schema
 import typings.prosemirrorTransform.mod.Step
@@ -11,34 +9,70 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait Attrs[S /* <: Schema[js.Any, js.Any] */] extends StObject {
+  trait Attrs extends StObject {
     
-    var attrs: js.UndefOr[StringDictionary[js.Any] | Null] = js.undefined
+    var attrs: js.UndefOr[typings.prosemirrorModel.mod.Attrs | Null] = js.undefined
     
-    var `type`: NodeType[S]
+    var `type`: NodeType
   }
   object Attrs {
     
-    inline def apply[S /* <: Schema[js.Any, js.Any] */](`type`: NodeType[S]): Attrs[S] = {
+    inline def apply(`type`: NodeType): Attrs = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Attrs[S]]
+      __obj.asInstanceOf[Attrs]
     }
     
-    extension [Self <: Attrs[?], S /* <: Schema[js.Any, js.Any] */](x: Self & Attrs[S]) {
+    extension [Self <: Attrs](x: Self) {
       
-      inline def setAttrs(value: StringDictionary[js.Any]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+      inline def setAttrs(value: typings.prosemirrorModel.mod.Attrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
       inline def setAttrsNull: Self = StObject.set(x, "attrs", null)
       
       inline def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
       
-      inline def setType(value: NodeType[S]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: NodeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait Instantiable
-    extends StObject
-       with Instantiable1[/* args (repeated) */ js.Any, Step[js.Any]]
+  trait FromJSON extends StObject {
+    
+    def fromJSON(schema: Schema[Any, Any], json: Any): Step
+  }
+  object FromJSON {
+    
+    inline def apply(fromJSON: (Schema[Any, Any], Any) => Step): FromJSON = {
+      val __obj = js.Dynamic.literal(fromJSON = js.Any.fromFunction2(fromJSON))
+      __obj.asInstanceOf[FromJSON]
+    }
+    
+    extension [Self <: FromJSON](x: Self) {
+      
+      inline def setFromJSON(value: (Schema[Any, Any], Any) => Step): Self = StObject.set(x, "fromJSON", js.Any.fromFunction2(value))
+    }
+  }
+  
+  trait Type extends StObject {
+    
+    var attrs: typings.prosemirrorModel.mod.Attrs | Null
+    
+    var `type`: NodeType
+  }
+  object Type {
+    
+    inline def apply(`type`: NodeType): Type = {
+      val __obj = js.Dynamic.literal(attrs = null)
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Type]
+    }
+    
+    extension [Self <: Type](x: Self) {
+      
+      inline def setAttrs(value: typings.prosemirrorModel.mod.Attrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+      
+      inline def setAttrsNull: Self = StObject.set(x, "attrs", null)
+      
+      inline def setType(value: NodeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
 }

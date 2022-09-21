@@ -8,7 +8,6 @@ import typings.kendoUi.kendo.dataviz.ChartSeries
 import typings.kendoUi.kendo.drawing.PDFOptions
 import typings.kendoUi.kendo.drawing.Surface
 import typings.kendoUi.kendo.ui.Widget
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,12 +19,12 @@ trait Chart
   
   var dataSource: DataSource = js.native
   
-  def exportImage(options: js.Any): JQueryPromise[js.Any] = js.native
+  def exportImage(options: Any): JQueryPromise[Any] = js.native
   
-  def exportPDF(): JQueryPromise[js.Any] = js.native
-  def exportPDF(options: PDFOptions): JQueryPromise[js.Any] = js.native
+  def exportPDF(): JQueryPromise[Any] = js.native
+  def exportPDF(options: PDFOptions): JQueryPromise[Any] = js.native
   
-  def exportSVG(options: js.Any): JQueryPromise[js.Any] = js.native
+  def exportSVG(options: Any): JQueryPromise[Any] = js.native
   
   def findAxisByName(name: String): ChartAxis = js.native
   
@@ -58,18 +57,18 @@ trait Chart
   
   def setDataSource(dataSource: DataSource): Unit = js.native
   
-  def setOptions(options: js.Any): Unit = js.native
+  def setOptions(options: Any): Unit = js.native
   
   def showTooltip(filter: String): Unit = js.native
+  def showTooltip(filter: js.Date): Unit = js.native
   def showTooltip(filter: js.Function): Unit = js.native
   def showTooltip(filter: Double): Unit = js.native
-  def showTooltip(filter: Date): Unit = js.native
   
   var surface: Surface = js.native
   
   def svg(): String = js.native
   
-  def toggleHighlight(show: Boolean, options: js.Any): Unit = js.native
+  def toggleHighlight(show: Boolean, options: Any): Unit = js.native
   
   var wrapper: JQuery = js.native
 }

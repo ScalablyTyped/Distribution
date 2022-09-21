@@ -10,8 +10,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def buildQueryString(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buildQueryString")().asInstanceOf[String]
   inline def buildQueryString(params: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buildQueryString")(params.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def buildQueryString(params: js.Object, traditional: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildQueryString")(params.asInstanceOf[js.Any], traditional.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def buildQueryString(params: Unit, traditional: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildQueryString")(params.asInstanceOf[js.Any], traditional.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def join(path1: String, path2: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(path1.asInstanceOf[js.Any], path2.asInstanceOf[js.Any])).asInstanceOf[String]
   

@@ -1,8 +1,9 @@
 package typings.reactBigScheduler.mod
 
+import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type Scheduler = typings.react.mod.Component[typings.reactBigScheduler.mod.SchedulerProps, js.Any, js.Any]
+type Scheduler = Component[SchedulerProps, Any, Any]

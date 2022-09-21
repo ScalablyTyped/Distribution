@@ -1,6 +1,7 @@
 package typings.jsrsasign.jsrsasign.KJUR.asn1
 
-import typings.std.Date
+import typings.jsrsasign.jsrsasignStrings.gen
+import typings.jsrsasign.jsrsasignStrings.utc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +21,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * NOTE1: 'params' can be omitted.
   * NOTE2: 'withMillis' property is supported from asn1 1.0.6.
   */
-@js.native
 trait DERGeneralizedTime
   extends StObject
      with DERAbstractTime {
@@ -35,7 +35,38 @@ trait DERGeneralizedTime
     *
     * date = new Date(Date.UTC(2015, 0, 31, 23, 59, 59, 0)); #2015JAN31 23:59:59
     */
-  def setByDate(dateObject: Date): Unit = js.native
+  def setByDate(dateObject: js.Date): Unit
   
-  var withMillis: Boolean = js.native
+  var withMillis: Boolean
+}
+object DERGeneralizedTime {
+  
+  inline def apply(
+    formatDate: (js.Date, utc | gen, Boolean) => String,
+    getEncodedHex: () => String,
+    getFreshValueHex: () => String,
+    getLengthHexFromValue: () => String,
+    getString: () => String,
+    getValueHex: () => String,
+    hL: String,
+    hT: String,
+    hTLV: String,
+    hV: String,
+    isModified: String,
+    setByDate: js.Date => Unit,
+    setByDateValue: (Double, Double, Double, Double, Double, Double) => Unit,
+    setString: String => Unit,
+    withMillis: Boolean,
+    zeroPadding: (String, Double) => String
+  ): DERGeneralizedTime = {
+    val __obj = js.Dynamic.literal(formatDate = js.Any.fromFunction3(formatDate), getEncodedHex = js.Any.fromFunction0(getEncodedHex), getFreshValueHex = js.Any.fromFunction0(getFreshValueHex), getLengthHexFromValue = js.Any.fromFunction0(getLengthHexFromValue), getString = js.Any.fromFunction0(getString), getValueHex = js.Any.fromFunction0(getValueHex), hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], setByDate = js.Any.fromFunction1(setByDate), setByDateValue = js.Any.fromFunction6(setByDateValue), setString = js.Any.fromFunction1(setString), withMillis = withMillis.asInstanceOf[js.Any], zeroPadding = js.Any.fromFunction2(zeroPadding), params = null)
+    __obj.asInstanceOf[DERGeneralizedTime]
+  }
+  
+  extension [Self <: DERGeneralizedTime](x: Self) {
+    
+    inline def setSetByDate(value: js.Date => Unit): Self = StObject.set(x, "setByDate", js.Any.fromFunction1(value))
+    
+    inline def setWithMillis(value: Boolean): Self = StObject.set(x, "withMillis", value.asInstanceOf[js.Any])
+  }
 }

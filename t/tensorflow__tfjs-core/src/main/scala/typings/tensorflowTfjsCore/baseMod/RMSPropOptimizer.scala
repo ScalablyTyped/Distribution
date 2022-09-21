@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@tensorflow/tfjs-core/dist/base", "RMSPropOptimizer")
 @js.native
-class RMSPropOptimizer protected ()
+open class RMSPropOptimizer protected ()
   extends typings.tensorflowTfjsCore.rmspropOptimizerMod.RMSPropOptimizer {
   def this(learningRate: Double) = this()
   def this(learningRate: Double, decay: Double) = this()

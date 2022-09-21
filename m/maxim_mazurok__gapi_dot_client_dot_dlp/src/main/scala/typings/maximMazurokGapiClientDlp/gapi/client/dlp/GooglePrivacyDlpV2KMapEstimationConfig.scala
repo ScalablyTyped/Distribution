@@ -28,13 +28,13 @@ object GooglePrivacyDlpV2KMapEstimationConfig {
     
     inline def setAuxiliaryTablesUndefined: Self = StObject.set(x, "auxiliaryTables", js.undefined)
     
-    inline def setAuxiliaryTablesVarargs(value: GooglePrivacyDlpV2AuxiliaryTable*): Self = StObject.set(x, "auxiliaryTables", js.Array(value :_*))
+    inline def setAuxiliaryTablesVarargs(value: GooglePrivacyDlpV2AuxiliaryTable*): Self = StObject.set(x, "auxiliaryTables", js.Array(value*))
     
     inline def setQuasiIds(value: js.Array[GooglePrivacyDlpV2TaggedField]): Self = StObject.set(x, "quasiIds", value.asInstanceOf[js.Any])
     
     inline def setQuasiIdsUndefined: Self = StObject.set(x, "quasiIds", js.undefined)
     
-    inline def setQuasiIdsVarargs(value: GooglePrivacyDlpV2TaggedField*): Self = StObject.set(x, "quasiIds", js.Array(value :_*))
+    inline def setQuasiIdsVarargs(value: GooglePrivacyDlpV2TaggedField*): Self = StObject.set(x, "quasiIds", js.Array(value*))
     
     inline def setRegionCode(value: String): Self = StObject.set(x, "regionCode", value.asInstanceOf[js.Any])
     

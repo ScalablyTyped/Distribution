@@ -43,7 +43,7 @@ trait DpSchema extends StObject {
   /**
     * type: 'enum' only
     */
-  var range: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var range: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * type: 'value' only
@@ -92,7 +92,7 @@ object DpSchema {
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    inline def setLabelVarargs(value: String*): Self = StObject.set(x, "label", js.Array(value :_*))
+    inline def setLabelVarargs(value: String*): Self = StObject.set(x, "label", js.Array(value*))
     
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
@@ -110,11 +110,11 @@ object DpSchema {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setRange(value: js.Array[js.Any]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: js.Array[Any]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
-    inline def setRangeVarargs(value: js.Any*): Self = StObject.set(x, "range", js.Array(value :_*))
+    inline def setRangeVarargs(value: Any*): Self = StObject.set(x, "range", js.Array(value*))
     
     inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     

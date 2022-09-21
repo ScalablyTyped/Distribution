@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TtmlDestinationSettings extends StObject {
   
   /**
-    * Pass through style and position information from a TTML-like input source (TTML, SMPTE-TT) to the TTML output.
+    * Pass through style and position information from a TTML-like input source (TTML, IMSC, SMPTE-TT) to the TTML output.
     */
   var StylePassthrough: js.UndefOr[TtmlStylePassthrough] = js.undefined
 }

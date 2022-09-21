@@ -13,7 +13,7 @@ object relayModernStoreMod {
   
   @JSImport("relay-runtime/lib/store/RelayModernStore", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with RelayModernStore {
     def this(source: MutableRecordSource) = this()
@@ -37,7 +37,7 @@ object relayModernStoreMod {
       
       inline def setDataIDs(value: js.Array[DataID]): Self = StObject.set(x, "dataIDs", value.asInstanceOf[js.Any])
       
-      inline def setDataIDsVarargs(value: DataID*): Self = StObject.set(x, "dataIDs", js.Array(value :_*))
+      inline def setDataIDsVarargs(value: DataID*): Self = StObject.set(x, "dataIDs", js.Array(value*))
       
       inline def setInvalidations(value: Map[DataID, js.UndefOr[Double | Null]]): Self = StObject.set(x, "invalidations", value.asInstanceOf[js.Any])
     }
@@ -50,6 +50,6 @@ object relayModernStoreMod {
     
     def scheduleGC(): Unit = js.native
     
-    def toJSON(): js.Any = js.native
+    def toJSON(): Any = js.native
   }
 }

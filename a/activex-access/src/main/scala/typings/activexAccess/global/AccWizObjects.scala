@@ -15,7 +15,7 @@ object AccWizObjects {
   /** Field List Control */
   @JSGlobal("AccWizObjects.FieldList")
   @js.native
-  /* private */ class FieldList ()
+  /* private */ open class FieldList ()
     extends StObject
        with typings.activexAccess.AccWizObjects.FieldList {
     
@@ -54,7 +54,7 @@ object AccWizObjects {
     override val FieldListCount: Double = js.native
     
     /* CompleteClass */
-    override def FieldLists(IFieldList: Double): js.Any = js.native
+    override def FieldLists(IFieldList: Double): Any = js.native
     
     /* CompleteClass */
     var HScrollPos: Double = js.native
@@ -63,7 +63,7 @@ object AccWizObjects {
     override val JoinLineCount: Double = js.native
     
     /* CompleteClass */
-    override def JoinLines(IJoinLine: Double): js.Any = js.native
+    override def JoinLines(IJoinLine: Double): Any = js.native
     
     /* CompleteClass */
     var PersistentHighlight: Boolean = js.native
@@ -93,7 +93,7 @@ object AccWizObjects {
   /** ImexGrid Control */
   @JSGlobal("AccWizObjects.ImexGrid")
   @js.native
-  /* private */ class ImexGrid ()
+  /* private */ open class ImexGrid ()
     extends StObject
        with typings.activexAccess.AccWizObjects.ImexGrid {
     
@@ -132,10 +132,10 @@ object AccWizObjects {
     override val ColumnCount: Double = js.native
     
     /* CompleteClass */
-    var ColumnState: js.Any = js.native
+    var ColumnState: Any = js.native
     
     /* CompleteClass */
-    override def Columns(ColumnNumber: Double): js.Any = js.native
+    override def Columns(ColumnNumber: Double): Any = js.native
     
     /* CompleteClass */
     override def DeleteColumn(Index: Double): Unit = js.native
@@ -195,7 +195,7 @@ object AccWizObjects {
   /** WizShellLinkA Class */
   @JSGlobal("AccWizObjects.WizShellLinkA")
   @js.native
-  /* private */ class WizShellLinkA ()
+  /* private */ open class WizShellLinkA ()
     extends StObject
        with typings.activexAccess.AccWizObjects.WizShellLinkA {
     

@@ -16,8 +16,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def initializeMiddleware(swaggerObject: js.Any, callback: InitializeMiddlewareCallback20): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeMiddleware")(swaggerObject.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def initializeMiddleware(swaggerObject: js.Any, resources: js.Array[Resource], callback: InitializeMiddlewareCallback12): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeMiddleware")(swaggerObject.asInstanceOf[js.Any], resources.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def initializeMiddleware(swaggerObject: Any, callback: InitializeMiddlewareCallback20): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeMiddleware")(swaggerObject.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def initializeMiddleware(swaggerObject: Any, resources: js.Array[Resource], callback: InitializeMiddlewareCallback12): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeMiddleware")(swaggerObject.asInstanceOf[js.Any], resources.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type InitializeMiddlewareCallback12 = js.Function1[/* middleware */ Middleware12, Unit]
   
@@ -76,7 +76,7 @@ object mod {
       
       inline def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value*))
       
       inline def setSchema(value: SwaggerParameterSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     }
@@ -136,7 +136,7 @@ object mod {
       
       inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
       
-      inline def setParametersVarargs(value: SwaggerParameterSchema*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+      inline def setParametersVarargs(value: SwaggerParameterSchema*): Self = StObject.set(x, "parameters", js.Array(value*))
       
       inline def setResponses(value: StringDictionary[Swagger20Response]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
       
@@ -144,7 +144,7 @@ object mod {
       
       inline def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
       
-      inline def setSecurityVarargs(value: Swagger20Security*): Self = StObject.set(x, "security", js.Array(value :_*))
+      inline def setSecurityVarargs(value: Swagger20Security*): Self = StObject.set(x, "security", js.Array(value*))
       
       inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
       
@@ -154,7 +154,7 @@ object mod {
       
       inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     }
   }
   
@@ -168,7 +168,7 @@ object mod {
     
     var description: js.UndefOr[String] = js.undefined
     
-    var schema: js.UndefOr[js.Any] = js.undefined
+    var schema: js.UndefOr[Any] = js.undefined
   }
   object Swagger20Response {
     
@@ -183,13 +183,13 @@ object mod {
       
       inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      inline def setSchema(value: js.Any): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: Any): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
       inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     }
   }
   
-  type Swagger20Security = StringDictionary[js.Any]
+  type Swagger20Security = StringDictionary[Any]
   
   trait SwaggerParameterSchema extends StObject {
     
@@ -263,7 +263,7 @@ object mod {
   
   trait SwaggerRequestParameter[T] extends StObject {
     
-    var originalValue: js.Any
+    var originalValue: Any
     
     var path: js.Array[String]
     
@@ -273,18 +273,18 @@ object mod {
   }
   object SwaggerRequestParameter {
     
-    inline def apply[T](originalValue: js.Any, path: js.Array[String], schema: SwaggerParameterSchema, value: T): SwaggerRequestParameter[T] = {
+    inline def apply[T](originalValue: Any, path: js.Array[String], schema: SwaggerParameterSchema, value: T): SwaggerRequestParameter[T] = {
       val __obj = js.Dynamic.literal(originalValue = originalValue.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[SwaggerRequestParameter[T]]
     }
     
     extension [Self <: SwaggerRequestParameter[?], T](x: Self & SwaggerRequestParameter[T]) {
       
-      inline def setOriginalValue(value: js.Any): Self = StObject.set(x, "originalValue", value.asInstanceOf[js.Any])
+      inline def setOriginalValue(value: Any): Self = StObject.set(x, "originalValue", value.asInstanceOf[js.Any])
       
       inline def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value*))
       
       inline def setSchema(value: SwaggerParameterSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
@@ -292,12 +292,12 @@ object mod {
     }
   }
   
-  type SwaggerRequestParameters = StringDictionary[js.UndefOr[SwaggerRequestParameter[js.Any]]]
+  type SwaggerRequestParameters = StringDictionary[js.UndefOr[SwaggerRequestParameter[Any]]]
   
   type SwaggerRouter12HandlerFunction = js.Function3[
     /* req */ Swagger12Request, 
-    /* res */ ServerResponse, 
-    /* next */ js.Function1[/* arg */ js.UndefOr[js.Any], Unit], 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function1[/* arg */ js.UndefOr[Any], Unit], 
     Unit
   ]
   
@@ -322,7 +322,7 @@ object mod {
       
       inline def setControllersUndefined: Self = StObject.set(x, "controllers", js.undefined)
       
-      inline def setControllersVarargs(value: String*): Self = StObject.set(x, "controllers", js.Array(value :_*))
+      inline def setControllersVarargs(value: String*): Self = StObject.set(x, "controllers", js.Array(value*))
       
       inline def setIgnoreMissingHandlers(value: Boolean): Self = StObject.set(x, "ignoreMissingHandlers", value.asInstanceOf[js.Any])
       
@@ -337,9 +337,9 @@ object mod {
   type SwaggerRouter12OptionsControllers = StringDictionary[SwaggerRouter12HandlerFunction]
   
   type SwaggerRouter20HandlerFunction = js.Function3[
-    /* req */ Swagger20Request[js.Any], 
-    /* res */ ServerResponse, 
-    /* next */ js.Function1[/* arg */ js.UndefOr[js.Any], Unit], 
+    /* req */ Swagger20Request[Any], 
+    /* res */ ServerResponse[IncomingMessage], 
+    /* next */ js.Function1[/* arg */ js.UndefOr[Any], Unit], 
     Unit
   ]
   
@@ -364,7 +364,7 @@ object mod {
       
       inline def setControllersUndefined: Self = StObject.set(x, "controllers", js.undefined)
       
-      inline def setControllersVarargs(value: String*): Self = StObject.set(x, "controllers", js.Array(value :_*))
+      inline def setControllersVarargs(value: String*): Self = StObject.set(x, "controllers", js.Array(value*))
       
       inline def setIgnoreMissingHandlers(value: Boolean): Self = StObject.set(x, "ignoreMissingHandlers", value.asInstanceOf[js.Any])
       
@@ -419,7 +419,7 @@ object mod {
   
   type SwaggerSecurityHandler = js.Function4[
     /* request */ IncomingMessage, 
-    /* securityDefinition */ js.Any, 
+    /* securityDefinition */ Any, 
     /* scopes */ String | js.Array[String], 
     /* callback */ SwaggerSecurityCallback, 
     Unit
@@ -427,7 +427,7 @@ object mod {
   
   type SwaggerSecurityOptions = StringDictionary[SwaggerSecurityHandler]
   
-  type SwaggerUi12ApiDeclarations = StringDictionary[js.Any]
+  type SwaggerUi12ApiDeclarations = StringDictionary[Any]
   
   trait SwaggerUiOptions extends StObject {
     

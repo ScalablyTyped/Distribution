@@ -12,6 +12,11 @@ trait Item extends StObject {
   var AbsoluteTime: js.UndefOr[Instant] = js.undefined
   
   /**
+    * Provides information about the attachments.
+    */
+  var Attachments: js.UndefOr[typings.awsSdk.connectparticipantMod.Attachments] = js.undefined
+  
+  /**
     * The content of the message or event.
     */
   var Content: js.UndefOr[ChatContent] = js.undefined
@@ -58,6 +63,12 @@ object Item {
     inline def setAbsoluteTime(value: Instant): Self = StObject.set(x, "AbsoluteTime", value.asInstanceOf[js.Any])
     
     inline def setAbsoluteTimeUndefined: Self = StObject.set(x, "AbsoluteTime", js.undefined)
+    
+    inline def setAttachments(value: Attachments): Self = StObject.set(x, "Attachments", value.asInstanceOf[js.Any])
+    
+    inline def setAttachmentsUndefined: Self = StObject.set(x, "Attachments", js.undefined)
+    
+    inline def setAttachmentsVarargs(value: AttachmentItem*): Self = StObject.set(x, "Attachments", js.Array(value*))
     
     inline def setContent(value: ChatContent): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     

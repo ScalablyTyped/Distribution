@@ -41,13 +41,19 @@ object NodeFlags extends StObject {
   sealed trait ContextFlags
     extends StObject
        with NodeFlags
-  /* 25358336 */ val ContextFlags: typings.typescript.mod.NodeFlags.ContextFlags & Double = js.native
+  /* 50720768 */ val ContextFlags: typings.typescript.mod.NodeFlags.ContextFlags & Double = js.native
   
   @js.native
   sealed trait DecoratorContext
     extends StObject
        with NodeFlags
   /* 16384 */ val DecoratorContext: typings.typescript.mod.NodeFlags.DecoratorContext & Double = js.native
+  
+  @js.native
+  sealed trait DisallowConditionalTypesContext
+    extends StObject
+       with NodeFlags
+  /* 65536 */ val DisallowConditionalTypesContext: typings.typescript.mod.NodeFlags.DisallowConditionalTypesContext & Double = js.native
   
   @js.native
   sealed trait DisallowInContext
@@ -71,7 +77,7 @@ object NodeFlags extends StObject {
   sealed trait HasAggregatedChildData
     extends StObject
        with NodeFlags
-  /* 524288 */ val HasAggregatedChildData: typings.typescript.mod.NodeFlags.HasAggregatedChildData & Double = js.native
+  /* 1048576 */ val HasAggregatedChildData: typings.typescript.mod.NodeFlags.HasAggregatedChildData & Double = js.native
   
   @js.native
   sealed trait HasAsyncFunctions
@@ -95,19 +101,19 @@ object NodeFlags extends StObject {
   sealed trait JSDoc
     extends StObject
        with NodeFlags
-  /* 4194304 */ val JSDoc: typings.typescript.mod.NodeFlags.JSDoc & Double = js.native
+  /* 8388608 */ val JSDoc: typings.typescript.mod.NodeFlags.JSDoc & Double = js.native
   
   @js.native
   sealed trait JavaScriptFile
     extends StObject
        with NodeFlags
-  /* 131072 */ val JavaScriptFile: typings.typescript.mod.NodeFlags.JavaScriptFile & Double = js.native
+  /* 262144 */ val JavaScriptFile: typings.typescript.mod.NodeFlags.JavaScriptFile & Double = js.native
   
   @js.native
   sealed trait JsonFile
     extends StObject
        with NodeFlags
-  /* 33554432 */ val JsonFile: typings.typescript.mod.NodeFlags.JsonFile & Double = js.native
+  /* 67108864 */ val JsonFile: typings.typescript.mod.NodeFlags.JsonFile & Double = js.native
   
   @js.native
   sealed trait Let
@@ -161,13 +167,13 @@ object NodeFlags extends StObject {
   sealed trait ThisNodeHasError
     extends StObject
        with NodeFlags
-  /* 65536 */ val ThisNodeHasError: typings.typescript.mod.NodeFlags.ThisNodeHasError & Double = js.native
+  /* 131072 */ val ThisNodeHasError: typings.typescript.mod.NodeFlags.ThisNodeHasError & Double = js.native
   
   @js.native
   sealed trait ThisNodeOrAnySubNodesHasError
     extends StObject
        with NodeFlags
-  /* 262144 */ val ThisNodeOrAnySubNodesHasError: typings.typescript.mod.NodeFlags.ThisNodeOrAnySubNodesHasError & Double = js.native
+  /* 524288 */ val ThisNodeOrAnySubNodesHasError: typings.typescript.mod.NodeFlags.ThisNodeOrAnySubNodesHasError & Double = js.native
   
   @js.native
   sealed trait TypeExcludesFlags

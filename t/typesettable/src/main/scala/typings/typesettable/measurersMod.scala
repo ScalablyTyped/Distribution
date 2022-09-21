@@ -10,7 +10,7 @@ object measurersMod {
   
   @JSImport("typesettable/build/src/measurers", "AbstractMeasurer")
   @js.native
-  class AbstractMeasurer protected ()
+  open class AbstractMeasurer protected ()
     extends typings.typesettable.abstractMeasurerMod.AbstractMeasurer {
     def this(ruler: IRuler) = this()
     def this(ruler: IRulerFactoryContext) = this()
@@ -37,7 +37,7 @@ object measurersMod {
   
   @JSImport("typesettable/build/src/measurers", "CacheCharacterMeasurer")
   @js.native
-  class CacheCharacterMeasurer protected ()
+  open class CacheCharacterMeasurer protected ()
     extends typings.typesettable.cacheCharacterMeasurerMod.CacheCharacterMeasurer {
     def this(ruler: IRuler) = this()
     def this(ruler: IRulerFactoryContext) = this()
@@ -47,7 +47,7 @@ object measurersMod {
   
   @JSImport("typesettable/build/src/measurers", "CacheMeasurer")
   @js.native
-  class CacheMeasurer protected ()
+  open class CacheMeasurer protected ()
     extends typings.typesettable.cacheMeasurerMod.CacheMeasurer {
     def this(ruler: IRuler) = this()
     def this(ruler: IRulerFactoryContext) = this()
@@ -55,7 +55,7 @@ object measurersMod {
   
   @JSImport("typesettable/build/src/measurers", "CharacterMeasurer")
   @js.native
-  class CharacterMeasurer protected ()
+  open class CharacterMeasurer protected ()
     extends typings.typesettable.characterMeasurerMod.CharacterMeasurer {
     def this(ruler: IRuler) = this()
     def this(ruler: IRulerFactoryContext) = this()
@@ -65,7 +65,7 @@ object measurersMod {
   
   @JSImport("typesettable/build/src/measurers", "Measurer")
   @js.native
-  class Measurer protected ()
+  open class Measurer protected ()
     extends typings.typesettable.measurerMod.Measurer {
     def this(ruler: IRuler) = this()
     def this(ruler: IRulerFactoryContext) = this()

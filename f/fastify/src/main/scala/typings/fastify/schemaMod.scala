@@ -1,12 +1,16 @@
 package typings.fastify
 
+import typings.fastify.anon.Add
+import typings.fastify.anon.BuildValidator
+import typings.fastify.anon.Error
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object schemaMod {
   
-  trait FastifyRouteSchemaDef extends StObject {
+  trait FastifyRouteSchemaDef[T] extends StObject {
     
     var httpPart: js.UndefOr[String] = js.undefined
     
@@ -14,18 +18,18 @@ object schemaMod {
     
     var method: String
     
-    var schema: FastifySchema
+    var schema: T
     
     var url: String
   }
   object FastifyRouteSchemaDef {
     
-    inline def apply(method: String, schema: FastifySchema, url: String): FastifyRouteSchemaDef = {
+    inline def apply[T](method: String, schema: T, url: String): FastifyRouteSchemaDef[T] = {
       val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-      __obj.asInstanceOf[FastifyRouteSchemaDef]
+      __obj.asInstanceOf[FastifyRouteSchemaDef[T]]
     }
     
-    extension [Self <: FastifyRouteSchemaDef](x: Self) {
+    extension [Self <: FastifyRouteSchemaDef[?], T](x: Self & FastifyRouteSchemaDef[T]) {
       
       inline def setHttpPart(value: String): Self = StObject.set(x, "httpPart", value.asInstanceOf[js.Any])
       
@@ -37,7 +41,7 @@ object schemaMod {
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      inline def setSchema(value: FastifySchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: T): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
@@ -45,15 +49,15 @@ object schemaMod {
   
   trait FastifySchema extends StObject {
     
-    var body: js.UndefOr[js.Any] = js.undefined
+    var body: js.UndefOr[Any] = js.undefined
     
-    var headers: js.UndefOr[js.Any] = js.undefined
+    var headers: js.UndefOr[Any] = js.undefined
     
-    var params: js.UndefOr[js.Any] = js.undefined
+    var params: js.UndefOr[Any] = js.undefined
     
-    var querystring: js.UndefOr[js.Any] = js.undefined
+    var querystring: js.UndefOr[Any] = js.undefined
     
-    var response: js.UndefOr[js.Any] = js.undefined
+    var response: js.UndefOr[Any] = js.undefined
   }
   object FastifySchema {
     
@@ -64,73 +68,102 @@ object schemaMod {
     
     extension [Self <: FastifySchema](x: Self) {
       
-      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      inline def setQuerystring(value: js.Any): Self = StObject.set(x, "querystring", value.asInstanceOf[js.Any])
+      inline def setQuerystring(value: Any): Self = StObject.set(x, "querystring", value.asInstanceOf[js.Any])
       
       inline def setQuerystringUndefined: Self = StObject.set(x, "querystring", js.undefined)
       
-      inline def setResponse(value: js.Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       
       inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     }
   }
   
-  type FastifySchemaCompiler = js.Function1[/* routeSchema */ FastifyRouteSchemaDef, FastifyValidationResult]
+  type FastifySchemaCompiler[T] = js.Function1[/* routeSchema */ FastifyRouteSchemaDef[T], FastifyValidationResult]
+  
+  trait FastifySchemaControllerOptions extends StObject {
+    
+    var bucket: js.UndefOr[js.Function1[/* parentSchemas */ js.UndefOr[Any], Add]] = js.undefined
+    
+    var compilersFactory: js.UndefOr[BuildValidator] = js.undefined
+  }
+  object FastifySchemaControllerOptions {
+    
+    inline def apply(): FastifySchemaControllerOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FastifySchemaControllerOptions]
+    }
+    
+    extension [Self <: FastifySchemaControllerOptions](x: Self) {
+      
+      inline def setBucket(value: /* parentSchemas */ js.UndefOr[Any] => Add): Self = StObject.set(x, "bucket", js.Any.fromFunction1(value))
+      
+      inline def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
+      
+      inline def setCompilersFactory(value: BuildValidator): Self = StObject.set(x, "compilersFactory", value.asInstanceOf[js.Any])
+      
+      inline def setCompilersFactoryUndefined: Self = StObject.set(x, "compilersFactory", js.undefined)
+    }
+  }
   
   trait FastifySchemaValidationError extends StObject {
     
-    var dataPath: String
+    var instancePath: String
+    
+    var keyword: String
     
     var message: js.UndefOr[String] = js.undefined
+    
+    var params: Record[String, String | js.Array[String]]
+    
+    var schemaPath: String
   }
   object FastifySchemaValidationError {
     
-    inline def apply(dataPath: String): FastifySchemaValidationError = {
-      val __obj = js.Dynamic.literal(dataPath = dataPath.asInstanceOf[js.Any])
+    inline def apply(
+      instancePath: String,
+      keyword: String,
+      params: Record[String, String | js.Array[String]],
+      schemaPath: String
+    ): FastifySchemaValidationError = {
+      val __obj = js.Dynamic.literal(instancePath = instancePath.asInstanceOf[js.Any], keyword = keyword.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], schemaPath = schemaPath.asInstanceOf[js.Any])
       __obj.asInstanceOf[FastifySchemaValidationError]
     }
     
     extension [Self <: FastifySchemaValidationError](x: Self) {
       
-      inline def setDataPath(value: String): Self = StObject.set(x, "dataPath", value.asInstanceOf[js.Any])
+      inline def setInstancePath(value: String): Self = StObject.set(x, "instancePath", value.asInstanceOf[js.Any])
+      
+      inline def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
       inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      
+      inline def setParams(value: Record[String, String | js.Array[String]]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      
+      inline def setSchemaPath(value: String): Self = StObject.set(x, "schemaPath", value.asInstanceOf[js.Any])
     }
   }
   
+  type FastifySerializerCompiler[T] = js.Function1[/* routeSchema */ FastifyRouteSchemaDef[T], js.Function1[/* data */ Any, String]]
+  
+  @js.native
   trait FastifyValidationResult extends StObject {
     
-    var errors: js.UndefOr[js.Array[FastifySchemaValidationError] | Null] = js.undefined
-  }
-  object FastifyValidationResult {
+    def apply(data: Any): Boolean | js.Thenable[Any] | Error = js.native
     
-    inline def apply(): FastifyValidationResult = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[FastifyValidationResult]
-    }
-    
-    extension [Self <: FastifyValidationResult](x: Self) {
-      
-      inline def setErrors(value: js.Array[FastifySchemaValidationError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
-      
-      inline def setErrorsNull: Self = StObject.set(x, "errors", null)
-      
-      inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
-      
-      inline def setErrorsVarargs(value: FastifySchemaValidationError*): Self = StObject.set(x, "errors", js.Array(value :_*))
-    }
+    var errors: js.UndefOr[js.Array[FastifySchemaValidationError] | Null] = js.native
   }
 }

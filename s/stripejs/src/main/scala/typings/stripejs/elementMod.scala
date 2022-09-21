@@ -129,7 +129,7 @@ object elementMod {
       *
       * @example {postalCode: '94110'}
       */
-    var value: js.UndefOr[js.Any] = js.undefined
+    var value: js.UndefOr[Any] = js.undefined
   }
   object CardElementOptions {
     
@@ -152,7 +152,7 @@ object elementMod {
       
       inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
@@ -187,7 +187,7 @@ object elementMod {
       
       inline def setFontsUndefined: Self = StObject.set(x, "fonts", js.undefined)
       
-      inline def setFontsVarargs(value: (FontCSSElement | FontConfigElement)*): Self = StObject.set(x, "fonts", js.Array(value :_*))
+      inline def setFontsVarargs(value: (FontCSSElement | FontConfigElement)*): Self = StObject.set(x, "fonts", js.Array(value*))
       
       inline def setLocale(value: auto | da | de | en | es | fi | fr | it | ja | no | nl | sv | zh | String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
@@ -384,7 +384,7 @@ object elementMod {
       
       inline def setSupportedCountriesUndefined: Self = StObject.set(x, "supportedCountries", js.undefined)
       
-      inline def setSupportedCountriesVarargs(value: String*): Self = StObject.set(x, "supportedCountries", js.Array(value :_*))
+      inline def setSupportedCountriesVarargs(value: String*): Self = StObject.set(x, "supportedCountries", js.Array(value*))
     }
   }
   
@@ -488,7 +488,7 @@ object elementMod {
       * @see https://stripe.com/docs/sources/ideal#optional-specifying-the-customers-bank
       * NOTE: This is also filled when the element is of IdealBank type
       */
-    var value: js.UndefOr[js.Any] = js.undefined
+    var value: js.UndefOr[Any] = js.undefined
   }
   object OnChange {
     
@@ -517,7 +517,7 @@ object elementMod {
       
       inline def setError(value: StripeError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
@@ -531,13 +531,13 @@ object elementMod {
       */
     var classes: js.UndefOr[Base] = js.undefined
     
-    var paymentRequest: js.Any
+    var paymentRequest: Any
     
     var style: js.UndefOr[Complete] = js.undefined
   }
   object PaymentButtonOptions {
     
-    inline def apply(paymentRequest: js.Any): PaymentButtonOptions = {
+    inline def apply(paymentRequest: Any): PaymentButtonOptions = {
       val __obj = js.Dynamic.literal(paymentRequest = paymentRequest.asInstanceOf[js.Any])
       __obj.asInstanceOf[PaymentButtonOptions]
     }
@@ -548,7 +548,7 @@ object elementMod {
       
       inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
       
-      inline def setPaymentRequest(value: js.Any): Self = StObject.set(x, "paymentRequest", value.asInstanceOf[js.Any])
+      inline def setPaymentRequest(value: Any): Self = StObject.set(x, "paymentRequest", value.asInstanceOf[js.Any])
       
       inline def setStyle(value: Complete): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
@@ -647,16 +647,11 @@ object elementMod {
       * @param event - What event to listen to
       * @param handler - The handler function that is called when the event fires
       */
-    @JSName("on")
-    def on_blur(event: blur, handler: js.Function0[Unit]): Unit = js.native
+    def on(event: blur | focus | ready, handler: js.Function0[Unit]): Unit = js.native
     @JSName("on")
     def on_change(event: change, handler: js.Function1[/* event */ OnChange, Unit]): Unit = js.native
     @JSName("on")
     def on_click(event: click, handler: js.Function1[/* event */ PreventDefault, Unit]): Unit = js.native
-    @JSName("on")
-    def on_focus(event: focus, handler: js.Function0[Unit]): Unit = js.native
-    @JSName("on")
-    def on_ready(event: ready, handler: js.Function0[Unit]): Unit = js.native
     
     /**
       * Unmounts the Element from the DOM
@@ -709,7 +704,7 @@ object elementMod {
     
     var fontStyle: js.UndefOr[String] = js.undefined
     
-    var fontVariant: js.UndefOr[js.Any] = js.undefined
+    var fontVariant: js.UndefOr[Any] = js.undefined
     
     var iconColor: js.UndefOr[String] = js.undefined
     
@@ -792,7 +787,7 @@ object elementMod {
       
       inline def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
       
-      inline def setFontVariant(value: js.Any): Self = StObject.set(x, "fontVariant", value.asInstanceOf[js.Any])
+      inline def setFontVariant(value: Any): Self = StObject.set(x, "fontVariant", value.asInstanceOf[js.Any])
       
       inline def setFontVariantUndefined: Self = StObject.set(x, "fontVariant", js.undefined)
       

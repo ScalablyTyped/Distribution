@@ -1,7 +1,7 @@
 
 # Scala.js typings for backlog-js
 
-Typings are for version 0.9.0
+Typings are for version 0.12.6
 
 ## Library description:
 Backlog API v2 client for browser and node
@@ -10,10 +10,10 @@ Backlog API v2 client for browser and node
 | ------------------ | :-------------: |
 | Full name          | backlog-js |
 | Keywords           | nulab, backlog, api |
-| # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 4233 |
-| # stars            | 0 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 250.0 |
+| # stars            | 28.0 |
 
 ## Links
 - [Homepage](https://github.com/nulab/backlog-js#readme)
@@ -24,7 +24,7 @@ Backlog API v2 client for browser and node
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

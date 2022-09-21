@@ -1,32 +1,20 @@
 package typings.antDesignIconsVue
 
-import typings.vue.optionsMod.Component
-import typings.vue.optionsMod.DefaultComputed
-import typings.vue.optionsMod.DefaultData
-import typings.vue.optionsMod.DefaultMethods
-import typings.vue.optionsMod.DefaultProps
+import org.scalablytyped.runtime.Shortcut
+import typings.vueRuntimeCore.mod.Component
+import typings.vueRuntimeCore.mod.ComputedOptions
+import typings.vueRuntimeCore.mod.FunctionalComponent
+import typings.vueRuntimeCore.mod.MethodOptions
+import typings.vueRuntimeDom.mod.HTMLAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object iconMod {
+object iconMod extends Shortcut {
   
-  object default {
-    
-    inline def apply(
-      props: IconComponentProps,
-      context: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SetupContext */ js.Any
-    ): js.Any = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    
-    @JSImport("@ant-design/icons-vue/lib/components/Icon", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("@ant-design/icons-vue/lib/components/Icon", "default.inheritAttrs")
-    @js.native
-    def inheritAttrs: Boolean = js.native
-    inline def inheritAttrs_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inheritAttrs")(x.asInstanceOf[js.Any])
-  }
+  @JSImport("@ant-design/icons-vue/lib/components/Icon", JSImport.Default)
+  @js.native
+  val default: IconType = js.native
   
   trait CustomIconComponentProps extends StObject {
     
@@ -59,8 +47,9 @@ object iconMod {
     }
   }
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HTMLAttributes * / any */ trait IconBaseProps extends StObject {
+  trait IconBaseProps
+    extends StObject
+       with HTMLAttributes {
     
     var rotate: js.UndefOr[Double] = js.undefined
     
@@ -91,14 +80,7 @@ object iconMod {
     
     var ariaLabel: js.UndefOr[String] = js.undefined
     
-    var component: js.UndefOr[
-        Component[
-          DefaultData[scala.Nothing], 
-          DefaultMethods[scala.Nothing], 
-          DefaultComputed, 
-          DefaultProps
-        ]
-      ] = js.undefined
+    var component: js.UndefOr[Component[Any, Any, Any, ComputedOptions, MethodOptions]] = js.undefined
     
     var viewBox: js.UndefOr[String] = js.undefined
   }
@@ -115,14 +97,7 @@ object iconMod {
       
       inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
       
-      inline def setComponent(
-        value: Component[
-              DefaultData[scala.Nothing], 
-              DefaultMethods[scala.Nothing], 
-              DefaultComputed, 
-              DefaultProps
-            ]
-      ): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: Component[Any, Any, Any, ComputedOptions, MethodOptions]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
@@ -131,4 +106,18 @@ object iconMod {
       inline def setViewBoxUndefined: Self = StObject.set(x, "viewBox", js.undefined)
     }
   }
+  
+  @js.native
+  trait IconType
+    extends StObject
+       with FunctionalComponent[IconComponentProps, js.Object] {
+    
+    @JSName("displayName")
+    var displayName_IconType: String = js.native
+  }
+  
+  type _To = IconType
+  
+  /* This means you don't have to write `default`, but can instead just say `iconMod.foo` */
+  override def _to: IconType = default
 }

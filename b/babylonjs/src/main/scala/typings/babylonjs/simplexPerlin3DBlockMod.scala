@@ -10,7 +10,7 @@ object simplexPerlin3DBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/simplexPerlin3DBlock", "SimplexPerlin3DBlock")
   @js.native
-  class SimplexPerlin3DBlock protected () extends NodeMaterialBlock {
+  open class SimplexPerlin3DBlock protected () extends NodeMaterialBlock {
     /**
       * Creates a new SimplexPerlin3DBlock
       * @param name defines the block name

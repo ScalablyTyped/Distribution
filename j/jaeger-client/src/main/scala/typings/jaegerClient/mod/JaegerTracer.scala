@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("jaeger-client", "JaegerTracer")
 @js.native
-class JaegerTracer () extends Tracer {
+open class JaegerTracer () extends Tracer {
   
   def close(): Unit = js.native
   def close(callback: js.Function0[Unit]): Unit = js.native

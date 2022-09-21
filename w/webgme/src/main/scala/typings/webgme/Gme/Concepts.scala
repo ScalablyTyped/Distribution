@@ -46,11 +46,11 @@ object Concepts {
       
       inline def setDestinations(value: js.Array[ComposeChain]): Self = StObject.set(x, "destinations", value.asInstanceOf[js.Any])
       
-      inline def setDestinationsVarargs(value: ComposeChain*): Self = StObject.set(x, "destinations", js.Array(value :_*))
+      inline def setDestinationsVarargs(value: ComposeChain*): Self = StObject.set(x, "destinations", js.Array(value*))
       
       inline def setSources(value: js.Array[ComposeChain]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
       
-      inline def setSourcesVarargs(value: ComposeChain*): Self = StObject.set(x, "sources", js.Array(value :_*))
+      inline def setSourcesVarargs(value: ComposeChain*): Self = StObject.set(x, "sources", js.Array(value*))
     }
   }
   

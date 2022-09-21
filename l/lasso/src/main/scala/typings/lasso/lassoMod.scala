@@ -7,7 +7,6 @@ import typings.lasso.dependenciesMod.DependencyRegistry
 import typings.lasso.lassoPageResultMod.LassoPageResult
 import typings.lasso.writerMod.Writer
 import typings.node.eventsMod.EventEmitter
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,28 +15,28 @@ object lassoMod {
   
   @JSImport("lasso/lib/Lasso", JSImport.Default)
   @js.native
-  class default protected () extends Lasso {
+  open class default protected () extends Lasso {
     def this(config: LassoConfig) = this()
   }
   
-  type Callback = js.Function2[/* err */ Error | Null, /* result */ js.UndefOr[js.Any], js.Any]
+  type Callback = js.Function2[/* err */ js.Error | Null, /* result */ js.UndefOr[Any], Any]
   
   trait CustomPlugin extends StObject {
     
-    var config: js.Any
+    var config: Any
     
     var plugin: String
   }
   object CustomPlugin {
     
-    inline def apply(config: js.Any, plugin: String): CustomPlugin = {
+    inline def apply(config: Any, plugin: String): CustomPlugin = {
       val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomPlugin]
     }
     
     extension [Self <: CustomPlugin](x: Self) {
       
-      inline def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
       inline def setPlugin(value: String): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
     }
@@ -46,57 +45,57 @@ object lassoMod {
   @js.native
   trait Lasso extends EventEmitter {
     
-    def addTransform(transform: js.Any): Unit = js.native
+    def addTransform(transform: Any): Unit = js.native
     
     def buildLassoCacheKey(lassoContext: typings.lasso.lassoContextMod.default): Parts = js.native
     
-    def buildPageBundles(options: js.Any, lassoContext: typings.lasso.lassoContextMod.default, callback: Callback): Unit = js.native
+    def buildPageBundles(options: Any, lassoContext: typings.lasso.lassoContextMod.default, callback: Callback): Unit = js.native
     
     var config: LassoConfig = js.native
     
-    def createAppBundleMappings(bundleSetConfig: js.Any, lassoContext: typings.lasso.lassoContextMod.default, callback: Callback): js.Any = js.native
+    def createAppBundleMappings(bundleSetConfig: Any, lassoContext: typings.lasso.lassoContextMod.default, callback: Callback): Any = js.native
     
     def createLassoContext(): typings.lasso.lassoContextMod.default = js.native
-    def createLassoContext(options: js.Any): typings.lasso.lassoContextMod.default = js.native
+    def createLassoContext(options: Any): typings.lasso.lassoContextMod.default = js.native
     
     var dependencies: DependencyRegistry = js.native
     
-    def getAppBundleMappingsCached(bundleSetConfig: js.Any, lassoContext: typings.lasso.lassoContextMod.default, callback: Callback): Unit = js.native
+    def getAppBundleMappingsCached(bundleSetConfig: Any, lassoContext: typings.lasso.lassoContextMod.default, callback: Callback): Unit = js.native
     
     def getCSSDependencyHtml(url: String): String = js.native
-    def getCSSDependencyHtml(url: String, attributes: js.Any): String = js.native
+    def getCSSDependencyHtml(url: String, attributes: Any): String = js.native
     
     def getConfig(): LassoConfig = js.native
     
     def getDependencyRegistry(): DependencyRegistry = js.native
     
     def getJavaScriptDependencyHtml(url: String): String = js.native
-    def getJavaScriptDependencyHtml(url: String, attributes: js.Any): String = js.native
+    def getJavaScriptDependencyHtml(url: String, attributes: Any): String = js.native
     
-    def getLassoCache(lassoContext: typings.lasso.lassoContextMod.default): js.Any = js.native
+    def getLassoCache(lassoContext: typings.lasso.lassoContextMod.default): Any = js.native
     
     def initPlugins(): Unit = js.native
     
-    var lassoCacheLookup: js.Any = js.native
+    var lassoCacheLookup: Any = js.native
     
-    def lassoPage(options: PageConfig): js.Promise[js.Any] = js.native
+    def lassoPage(options: PageConfig): js.Promise[Any] = js.native
     def lassoPage(
       options: PageConfig,
-      callback: js.Function2[/* err */ Error | Null, /* result */ LassoPageResult, Unit]
-    ): js.Promise[js.Any] = js.native
+      callback: js.Function2[/* err */ js.Error | Null, /* result */ LassoPageResult, Unit]
+    ): js.Promise[Any] = js.native
     @JSName("lassoPage")
     var lassoPage_Original: LassoPage = js.native
     
     def lassoResource(path: String): Unit = js.native
-    def lassoResource(path: String, options: js.Any): Unit = js.native
-    def lassoResource(path: String, options: js.Any, callback: Callback): Unit = js.native
+    def lassoResource(path: String, options: Any): Unit = js.native
+    def lassoResource(path: String, options: Any, callback: Callback): Unit = js.native
     def lassoResource(path: String, options: Unit, callback: Callback): Unit = js.native
     @JSName("lassoResource")
     var lassoResource_Original: LassoResource = js.native
     
-    def setCSPNonceProvider(func: js.Any): js.Any = js.native
+    def setCSPNonceProvider(func: Any): Any = js.native
     
-    def writer(impl: js.Any): Writer = js.native
+    def writer(impl: Any): Writer = js.native
     @JSName("writer")
     var writer_Original: typings.lasso.writersMod.Writer = js.native
   }
@@ -109,9 +108,9 @@ object lassoMod {
     
     var bundlingEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var cspNonceProvider: js.UndefOr[js.Function1[/* out */ js.Any, String]] = js.undefined
+    var cspNonceProvider: js.UndefOr[js.Function1[/* out */ Any, String]] = js.undefined
     
-    var fingerprintInlineCode: js.UndefOr[js.Function1[/* code */ js.Any, String]] = js.undefined
+    var fingerprintInlineCode: js.UndefOr[js.Function1[/* code */ Any, String]] = js.undefined
     
     var fingerprintsEnabled: js.UndefOr[Boolean] = js.undefined
     
@@ -137,7 +136,7 @@ object lassoMod {
     
     var relativeUrlsEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var require: js.UndefOr[js.Any] = js.undefined
+    var require: js.UndefOr[Any] = js.undefined
     
     var resolveCssUrls: js.UndefOr[Boolean] = js.undefined
     
@@ -160,17 +159,17 @@ object lassoMod {
       
       inline def setBundlesUndefined: Self = StObject.set(x, "bundles", js.undefined)
       
-      inline def setBundlesVarargs(value: Bundle*): Self = StObject.set(x, "bundles", js.Array(value :_*))
+      inline def setBundlesVarargs(value: Bundle*): Self = StObject.set(x, "bundles", js.Array(value*))
       
       inline def setBundlingEnabled(value: Boolean): Self = StObject.set(x, "bundlingEnabled", value.asInstanceOf[js.Any])
       
       inline def setBundlingEnabledUndefined: Self = StObject.set(x, "bundlingEnabled", js.undefined)
       
-      inline def setCspNonceProvider(value: /* out */ js.Any => String): Self = StObject.set(x, "cspNonceProvider", js.Any.fromFunction1(value))
+      inline def setCspNonceProvider(value: /* out */ Any => String): Self = StObject.set(x, "cspNonceProvider", js.Any.fromFunction1(value))
       
       inline def setCspNonceProviderUndefined: Self = StObject.set(x, "cspNonceProvider", js.undefined)
       
-      inline def setFingerprintInlineCode(value: /* code */ js.Any => String): Self = StObject.set(x, "fingerprintInlineCode", js.Any.fromFunction1(value))
+      inline def setFingerprintInlineCode(value: /* code */ Any => String): Self = StObject.set(x, "fingerprintInlineCode", js.Any.fromFunction1(value))
       
       inline def setFingerprintInlineCodeUndefined: Self = StObject.set(x, "fingerprintInlineCode", js.undefined)
       
@@ -218,13 +217,13 @@ object lassoMod {
       
       inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      inline def setPluginsVarargs(value: (CustomPlugin | String)*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: (CustomPlugin | String)*): Self = StObject.set(x, "plugins", js.Array(value*))
       
       inline def setRelativeUrlsEnabled(value: Boolean): Self = StObject.set(x, "relativeUrlsEnabled", value.asInstanceOf[js.Any])
       
       inline def setRelativeUrlsEnabledUndefined: Self = StObject.set(x, "relativeUrlsEnabled", js.undefined)
       
-      inline def setRequire(value: js.Any): Self = StObject.set(x, "require", value.asInstanceOf[js.Any])
+      inline def setRequire(value: Any): Self = StObject.set(x, "require", value.asInstanceOf[js.Any])
       
       inline def setRequireUndefined: Self = StObject.set(x, "require", js.undefined)
       
@@ -240,24 +239,24 @@ object lassoMod {
   
   type LassoPage = js.Function2[
     /* options */ PageConfig, 
-    /* callback */ js.UndefOr[js.Function2[/* err */ Error | Null, /* result */ LassoPageResult, Unit]], 
-    js.Promise[js.Any]
+    /* callback */ js.UndefOr[js.Function2[/* err */ js.Error | Null, /* result */ LassoPageResult, Unit]], 
+    js.Promise[Any]
   ]
   
   type LassoResource = js.Function3[
     /* path */ String, 
-    /* options */ js.UndefOr[js.Any], 
+    /* options */ js.UndefOr[Any], 
     /* callback */ js.UndefOr[Callback], 
     Unit
   ]
   
   trait PageConfig extends StObject {
     
-    var cache: js.UndefOr[js.Any] = js.undefined
+    var cache: js.UndefOr[Any] = js.undefined
     
     var cacheKey: js.UndefOr[String] = js.undefined
     
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     var dependencies: (js.Array[DependencyConfig | String]) | String | Null
     
@@ -284,7 +283,7 @@ object lassoMod {
     
     extension [Self <: PageConfig](x: Self) {
       
-      inline def setCache(value: js.Any): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Any): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
       inline def setCacheKey(value: String): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
       
@@ -292,7 +291,7 @@ object lassoMod {
       
       inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -300,13 +299,13 @@ object lassoMod {
       
       inline def setDependenciesNull: Self = StObject.set(x, "dependencies", null)
       
-      inline def setDependenciesVarargs(value: (DependencyConfig | String)*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
+      inline def setDependenciesVarargs(value: (DependencyConfig | String)*): Self = StObject.set(x, "dependencies", js.Array(value*))
       
       inline def setFlags(value: js.Array[String]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
       inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
       
-      inline def setFlagsVarargs(value: String*): Self = StObject.set(x, "flags", js.Array(value :_*))
+      inline def setFlagsVarargs(value: String*): Self = StObject.set(x, "flags", js.Array(value*))
       
       inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -328,7 +327,7 @@ object lassoMod {
       
       inline def setPackagePathsUndefined: Self = StObject.set(x, "packagePaths", js.undefined)
       
-      inline def setPackagePathsVarargs(value: String*): Self = StObject.set(x, "packagePaths", js.Array(value :_*))
+      inline def setPackagePathsVarargs(value: String*): Self = StObject.set(x, "packagePaths", js.Array(value*))
       
       inline def setPageName(value: String): Self = StObject.set(x, "pageName", value.asInstanceOf[js.Any])
       

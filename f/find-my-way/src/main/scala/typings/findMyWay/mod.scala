@@ -1,7 +1,8 @@
 package typings.findMyWay
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.findMyWay.anon.DeriveVersion
+import typings.findMyWay.anon.CommonPrefix
+import typings.findMyWay.anon.Del
 import typings.node.http2Mod.Http2ServerRequest
 import typings.node.http2Mod.Http2ServerResponse
 import typings.node.httpMod.IncomingMessage
@@ -47,15 +48,17 @@ object mod {
     
     var caseSensitive: js.UndefOr[Boolean] = js.undefined
     
+    var constraints: js.UndefOr[StringDictionary[ConstraintStrategy[V, String]]] = js.undefined
+    
     var defaultRoute: js.UndefOr[js.Function2[/* req */ Req[V], /* res */ Res[V], Unit]] = js.undefined
+    
+    var ignoreDuplicateSlashes: js.UndefOr[Boolean] = js.undefined
     
     var ignoreTrailingSlash: js.UndefOr[Boolean] = js.undefined
     
     var maxParamLength: js.UndefOr[Double] = js.undefined
     
     var onBadUrl: js.UndefOr[js.Function3[/* path */ String, /* req */ Req[V], /* res */ Res[V], Unit]] = js.undefined
-    
-    var versioning: js.UndefOr[DeriveVersion[V]] = js.undefined
   }
   object Config {
     
@@ -74,9 +77,17 @@ object mod {
       
       inline def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
       
+      inline def setConstraints(value: StringDictionary[ConstraintStrategy[V, String]]): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
+      
+      inline def setConstraintsUndefined: Self = StObject.set(x, "constraints", js.undefined)
+      
       inline def setDefaultRoute(value: (/* req */ Req[V], /* res */ Res[V]) => Unit): Self = StObject.set(x, "defaultRoute", js.Any.fromFunction2(value))
       
       inline def setDefaultRouteUndefined: Self = StObject.set(x, "defaultRoute", js.undefined)
+      
+      inline def setIgnoreDuplicateSlashes(value: Boolean): Self = StObject.set(x, "ignoreDuplicateSlashes", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreDuplicateSlashesUndefined: Self = StObject.set(x, "ignoreDuplicateSlashes", js.undefined)
       
       inline def setIgnoreTrailingSlash(value: Boolean): Self = StObject.set(x, "ignoreTrailingSlash", value.asInstanceOf[js.Any])
       
@@ -89,43 +100,65 @@ object mod {
       inline def setOnBadUrl(value: (/* path */ String, /* req */ Req[V], /* res */ Res[V]) => Unit): Self = StObject.set(x, "onBadUrl", js.Any.fromFunction3(value))
       
       inline def setOnBadUrlUndefined: Self = StObject.set(x, "onBadUrl", js.undefined)
-      
-      inline def setVersioning(value: DeriveVersion[V]): Self = StObject.set(x, "versioning", value.asInstanceOf[js.Any])
-      
-      inline def setVersioningUndefined: Self = StObject.set(x, "versioning", js.undefined)
     }
+  }
+  
+  @js.native
+  trait ConstraintStrategy[V /* <: HTTPVersion */, T] extends StObject {
+    
+    def deriveConstraint[Context](req: Req[V]): T = js.native
+    def deriveConstraint[Context](req: Req[V], ctx: Context): T = js.native
+    
+    var mustMatchWhenDerived: js.UndefOr[Boolean] = js.native
+    
+    var name: String = js.native
+    
+    def storage(): Del[T, V] = js.native
+    
+    def validate(value: Any): Unit = js.native
   }
   
   trait FindResult[V /* <: HTTPVersion */] extends StObject {
     
-    def handler(req: Req[V], res: Res[V], params: StringDictionary[js.UndefOr[String]], store: js.Any): Unit
+    def handler(
+      req: Req[V],
+      res: Res[V],
+      params: StringDictionary[js.UndefOr[String]],
+      store: Any,
+      searchParams: StringDictionary[String]
+    ): Any
     @JSName("handler")
     var handler_Original: Handler[V]
     
     var params: StringDictionary[js.UndefOr[String]]
     
-    var store: js.Any
+    var searchParams: StringDictionary[String]
+    
+    var store: Any
   }
   object FindResult {
     
     inline def apply[V /* <: HTTPVersion */](
-      handler: (/* req */ Req[V], /* res */ Res[V], /* params */ StringDictionary[js.UndefOr[String]], /* store */ js.Any) => Unit,
+      handler: (/* req */ Req[V], /* res */ Res[V], /* params */ StringDictionary[js.UndefOr[String]], /* store */ Any, /* searchParams */ StringDictionary[String]) => Any,
       params: StringDictionary[js.UndefOr[String]],
-      store: js.Any
+      searchParams: StringDictionary[String],
+      store: Any
     ): FindResult[V] = {
-      val __obj = js.Dynamic.literal(handler = js.Any.fromFunction4(handler), params = params.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(handler = js.Any.fromFunction5(handler), params = params.asInstanceOf[js.Any], searchParams = searchParams.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any])
       __obj.asInstanceOf[FindResult[V]]
     }
     
     extension [Self <: FindResult[?], V /* <: HTTPVersion */](x: Self & FindResult[V]) {
       
       inline def setHandler(
-        value: (/* req */ Req[V], /* res */ Res[V], /* params */ StringDictionary[js.UndefOr[String]], /* store */ js.Any) => Unit
-      ): Self = StObject.set(x, "handler", js.Any.fromFunction4(value))
+        value: (/* req */ Req[V], /* res */ Res[V], /* params */ StringDictionary[js.UndefOr[String]], /* store */ Any, /* searchParams */ StringDictionary[String]) => Any
+      ): Self = StObject.set(x, "handler", js.Any.fromFunction5(value))
       
       inline def setParams(value: StringDictionary[js.UndefOr[String]]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      inline def setStore(value: js.Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+      inline def setSearchParams(value: StringDictionary[String]): Self = StObject.set(x, "searchParams", value.asInstanceOf[js.Any])
+      
+      inline def setStore(value: Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     }
   }
   
@@ -237,309 +270,313 @@ object mod {
     inline def UNSUBSCRIBE: typings.findMyWay.findMyWayStrings.UNSUBSCRIBE = "UNSUBSCRIBE".asInstanceOf[typings.findMyWay.findMyWayStrings.UNSUBSCRIBE]
   }
   
-  type Handler[V /* <: HTTPVersion */] = js.Function4[
+  type Handler[V /* <: HTTPVersion */] = js.Function5[
     /* req */ Req[V], 
     /* res */ Res[V], 
     /* params */ StringDictionary[js.UndefOr[String]], 
-    /* store */ js.Any, 
-    Unit
+    /* store */ Any, 
+    /* searchParams */ StringDictionary[String], 
+    Any
   ]
   
   @js.native
   trait Instance[V /* <: HTTPVersion */] extends StObject {
     
     def acl(path: String, handler: Handler[V]): Unit = js.native
-    def acl(path: String, handler: Handler[V], store: js.Any): Unit = js.native
+    def acl(path: String, handler: Handler[V], store: Any): Unit = js.native
     def acl(path: String, opts: RouteOptions, handler: Handler[V]): Unit = js.native
-    def acl(path: String, opts: RouteOptions, handler: Handler[V], store: js.Any): Unit = js.native
+    def acl(path: String, opts: RouteOptions, handler: Handler[V], store: Any): Unit = js.native
     @JSName("acl")
     var acl_Original: ShortHandRoute[V] = js.native
     
+    def addConstraintStrategy(constraintStrategy: ConstraintStrategy[V, String]): Unit = js.native
+    
     def all(path: String, handler: Handler[V]): Unit = js.native
-    def all(path: String, handler: Handler[V], store: js.Any): Unit = js.native
+    def all(path: String, handler: Handler[V], store: Any): Unit = js.native
     def all(path: String, opts: RouteOptions, handler: Handler[V]): Unit = js.native
-    def all(path: String, opts: RouteOptions, handler: Handler[V], store: js.Any): Unit = js.native
+    def all(path: String, opts: RouteOptions, handler: Handler[V], store: Any): Unit = js.native
     @JSName("all")
     var all_Original: ShortHandRoute[V] = js.native
     
     def bind(path: String, handler: Handler[V]): Unit = js.native
-    def bind(path: String, handler: Handler[V], store: js.Any): Unit = js.native
+    def bind(path: String, handler: Handler[V], store: Any): Unit = js.native
     def bind(path: String, opts: RouteOptions, handler: Handler[V]): Unit = js.native
-    def bind(path: String, opts: RouteOptions, handler: Handler[V], store: js.Any): Unit = js.native
+    def bind(path: String, opts: RouteOptions, handler: Handler[V], store: Any): Unit = js.native
     @JSName("bind")
     var bind_Original: ShortHandRoute[V] = js.native
     
     def checkout(path: String, handler: Handler[V]): Unit = js.native
-    def checkout(path: String, handler: Handler[V], store: js.Any): Unit = js.native
+    def checkout(path: String, handler: Handler[V], store: Any): Unit = js.native
     def checkout(path: String, opts: RouteOptions, handler: Handler[V]): Unit = js.native
-    def checkout(path: String, opts: RouteOptions, handler: Handler[V], store: js.Any): Unit = js.native
+    def checkout(path: String, opts: RouteOptions, handler: Handler[V], store: Any): Unit = js.native
     @JSName("checkout")
     var checkout_Original: ShortHandRoute[V] = js.native
     
     def connect(path: String, handler: Handler[V]): Unit = js.native
-    def connect(path: String, handler: Handler[V], store: js.Any): Unit = js.native
+    def connect(path: String, handler: Handler[V], store: Any): Unit = js.native
     def connect(path: String, opts: RouteOptions, handler: Handler[V]): Unit = js.native
-    def connect(path: String, opts: RouteOptions, handler: Handler[V], store: js.Any): Unit = js.native
+    def connect(path: String, opts: RouteOptions, handler: Handler[V], store: Any): Unit = js.native
     @JSName("connect")
     var connect_Original: ShortHandRoute[V] = js.native
     
     def copy(path: String, handler: Handler[V]): Unit = js.native
-    def copy(path: String, handler: Handler[V], store: js.Any): Unit = js.native
+    def copy(path: String, handler: Handler[V], store: Any): Unit = js.native
     def copy(path: String, opts: RouteOptions, handler: Handler[V]): Unit = js.native
-    def copy(path: String, opts: RouteOptions, handler: Handler[V], store: js.Any): Unit = js.native
+    def copy(path: String, opts: RouteOptions, handler: Handler[V], store: Any): Unit = js.native
     @JSName("copy")
     var copy_Original: ShortHandRoute[V] = js.native
     
     def delete(path: String, handler: Handler[V]): Unit = js.native
-    def delete(path: String, handler: Handler[V], store: js.Any): Unit = js.native
+    def delete(path: String, handler: Handler[V], store: Any): Unit = js.native
     def delete(path: String, opts: RouteOptions, handler: Handler[V]): Unit = js.native
-    def delete(path: String, opts: RouteOptions, handler: Handler[V], store: js.Any): Unit = js.native
+    def delete(path: String, opts: RouteOptions, handler: Handler[V], store: Any): Unit = js.native
     @JSName("delete")
     var delete_Original: ShortHandRoute[V] = js.native
     
     def find(method: HTTPMethod, path: String): FindResult[V] | Null = js.native
-    def find(method: HTTPMethod, path: String, version: String): FindResult[V] | Null = js.native
+    def find(method: HTTPMethod, path: String, constraints: StringDictionary[Any]): FindResult[V] | Null = js.native
     
     def get(path: String, handler: Handler[V]): Unit = js.native
-    def get(path: String, handler: Handler[V], store: js.Any): Unit = js.native
+    def get(path: String, handler: Handler[V], store: Any): Unit = js.native
     def get(path: String, opts: RouteOptions, handler: Handler[V]): Unit = js.native
-    def get(path: String, opts: RouteOptions, handler: Handler[V], store: js.Any): Unit = js.native
+    def get(path: String, opts: RouteOptions, handler: Handler[V], store: Any): Unit = js.native
     @JSName("get")
     var get_Original: ShortHandRoute[V] = js.native
     
+    def hasConstraintStrategy(strategyName: String): Boolean = js.native
+    
     def head(path: String, handler: Handler[V]): Unit = js.native
-    def head(path: String, handler: Handler[V], store: js.Any): Unit = js.native
+    def head(path: String, handler: Handler[V], store: Any): Unit = js.native
     def head(path: String, opts: RouteOptions, handler: Handler[V]): Unit = js.native
-    def head(path: String, opts: RouteOptions, handler: Handler[V], store: js.Any): Unit = js.native
+    def head(path: String, opts: RouteOptions, handler: Handler[V], store: Any): Unit = js.native
     @JSName("head")
     var head_Original: ShortHandRoute[V] = js.native
     
     def link(path: String, handler: Handler[V]): Unit = js.native
-    def link(path: String, handler: Handler[V], store: js.Any): Unit = js.native
+    def link(path: String, handler: Handler[V], store: Any): Unit = js.native
     def link(path: String, opts: RouteOptions, handler: Handler[V]): Unit = js.native
-    def link(path: String, opts: RouteOptions, handler: Handler[V], store: js.Any): Unit = js.native
+    def link(path: String, opts: RouteOptions, handler: Handler[V], store: Any): Unit = js.native
     @JSName("link")
     var link_Original: ShortHandRoute[V] = js.native
     
     def lock(path: String, handler: Handler[V]): Unit = js.native
-    def lock(path: String, handler: Handler[V], store: js.Any): Unit = js.native
+    def lock(path: String, handler: Handler[V], store: Any): Unit = js.native
     def lock(path: String, opts: RouteOptions, handler: Handler[V]): Unit = js.native
-    def lock(path: String, opts: RouteOptions, handler: Handler[V], store: js.Any): Unit = js.native
+    def lock(path: String, opts: RouteOptions, handler: Handler[V], store: Any): Unit = js.native
     @JSName("lock")
     var lock_Original: ShortHandRoute[V] = js.native
     
-    def lookup[Context](req: Req[V], res: Res[V]): Unit = js.native
-    def lookup[Context](req: Req[V], res: Res[V], ctx: Context): Unit = js.native
+    def lookup[Context](req: Req[V], res: Res[V]): Any = js.native
+    def lookup[Context](req: Req[V], res: Res[V], ctx: Context): Any = js.native
     
     def `m-search`(path: String, handler: Handler[V]): Unit = js.native
-    def `m-search`(path: String, handler: Handler[V], store: js.Any): Unit = js.native
+    def `m-search`(path: String, handler: Handler[V], store: Any): Unit = js.native
     def `m-search`(path: String, opts: RouteOptions, handler: Handler[V]): Unit = js.native
-    def `m-search`(path: String, opts: RouteOptions, handler: Handler[V], store: js.Any): Unit = js.native
+    def `m-search`(path: String, opts: RouteOptions, handler: Handler[V], store: Any): Unit = js.native
     @JSName("m-search")
     var `m-search_Original`: ShortHandRoute[V] = js.native
     
     def merge(path: String, handler: Handler[V]): Unit = js.native
-    def merge(path: String, handler: Handler[V], store: js.Any): Unit = js.native
+    def merge(path: String, handler: Handler[V], store: Any): Unit = js.native
     def merge(path: String, opts: RouteOptions, handler: Handler[V]): Unit = js.native
-    def merge(path: String, opts: RouteOptions, handler: Handler[V], store: js.Any): Unit = js.native
+    def merge(path: String, opts: RouteOptions, handler: Handler[V], store: Any): Unit = js.native
     @JSName("merge")
     var merge_Original: ShortHandRoute[V] = js.native
     
     def mkactivity(path: String, handler: Handler[V]): Unit = js.native
-    def mkactivity(path: String, handler: Handler[V], store: js.Any): Unit = js.native
+    def mkactivity(path: String, handler: Handler[V], store: Any): Unit = js.native
     def mkactivity(path: String, opts: RouteOptions, handler: Handler[V]): Unit = js.native
-    def mkactivity(path: String, opts: RouteOptions, handler: Handler[V], store: js.Any): Unit = js.native
+    def mkactivity(path: String, opts: RouteOptions, handler: Handler[V], store: Any): Unit = js.native
     @JSName("mkactivity")
     var mkactivity_Original: ShortHandRoute[V] = js.native
     
     def mkcalendar(path: String, handler: Handler[V]): Unit = js.native
-    def mkcalendar(path: String, handler: Handler[V], store: js.Any): Unit = js.native
+    def mkcalendar(path: String, handler: Handler[V], store: Any): Unit = js.native
     def mkcalendar(path: String, opts: RouteOptions, handler: Handler[V]): Unit = js.native
-    def mkcalendar(path: String, opts: RouteOptions, handler: Handler[V], store: js.Any): Unit = js.native
+    def mkcalendar(path: String, opts: RouteOptions, handler: Handler[V], store: Any): Unit = js.native
     @JSName("mkcalendar")
     var mkcalendar_Original: ShortHandRoute[V] = js.native
     
     def mkcol(path: String, handler: Handler[V]): Unit = js.native
-    def mkcol(path: String, handler: Handler[V], store: js.Any): Unit = js.native
+    def mkcol(path: String, handler: Handler[V], store: Any): Unit = js.native
     def mkcol(path: String, opts: RouteOptions, handler: Handler[V]): Unit = js.native
-    def mkcol(path: String, opts: RouteOptions, handler: Handler[V], store: js.Any): Unit = js.native
+    def mkcol(path: String, opts: RouteOptions, handler: Handler[V], store: Any): Unit = js.native
     @JSName("mkcol")
     var mkcol_Original: ShortHandRoute[V] = js.native
     
     def move(path: String, handler: Handler[V]): Unit = js.native
-    def move(path: String, handler: Handler[V], store: js.Any): Unit = js.native
+    def move(path: String, handler: Handler[V], store: Any): Unit = js.native
     def move(path: String, opts: RouteOptions, handler: Handler[V]): Unit = js.native
-    def move(path: String, opts: RouteOptions, handler: Handler[V], store: js.Any): Unit = js.native
+    def move(path: String, opts: RouteOptions, handler: Handler[V], store: Any): Unit = js.native
     @JSName("move")
     var move_Original: ShortHandRoute[V] = js.native
     
     def notify(path: String, handler: Handler[V]): Unit = js.native
-    def notify(path: String, handler: Handler[V], store: js.Any): Unit = js.native
+    def notify(path: String, handler: Handler[V], store: Any): Unit = js.native
     def notify(path: String, opts: RouteOptions, handler: Handler[V]): Unit = js.native
-    def notify(path: String, opts: RouteOptions, handler: Handler[V], store: js.Any): Unit = js.native
+    def notify(path: String, opts: RouteOptions, handler: Handler[V], store: Any): Unit = js.native
     @JSName("notify")
     var notify_Original: ShortHandRoute[V] = js.native
     
     def off(method: js.Array[HTTPMethod], path: String): Unit = js.native
+    def off(method: js.Array[HTTPMethod], path: String, constraints: StringDictionary[Any]): Unit = js.native
     def off(method: HTTPMethod, path: String): Unit = js.native
+    def off(method: HTTPMethod, path: String, constraints: StringDictionary[Any]): Unit = js.native
     
     def on(method: js.Array[HTTPMethod], path: String, handler: Handler[V]): Unit = js.native
-    def on(method: js.Array[HTTPMethod], path: String, handler: Handler[V], store: js.Any): Unit = js.native
+    def on(method: js.Array[HTTPMethod], path: String, handler: Handler[V], store: Any): Unit = js.native
     def on(method: js.Array[HTTPMethod], path: String, options: RouteOptions, handler: Handler[V]): Unit = js.native
-    def on(
-      method: js.Array[HTTPMethod],
-      path: String,
-      options: RouteOptions,
-      handler: Handler[V],
-      store: js.Any
-    ): Unit = js.native
+    def on(method: js.Array[HTTPMethod], path: String, options: RouteOptions, handler: Handler[V], store: Any): Unit = js.native
     def on(method: HTTPMethod, path: String, handler: Handler[V]): Unit = js.native
-    def on(method: HTTPMethod, path: String, handler: Handler[V], store: js.Any): Unit = js.native
+    def on(method: HTTPMethod, path: String, handler: Handler[V], store: Any): Unit = js.native
     def on(method: HTTPMethod, path: String, options: RouteOptions, handler: Handler[V]): Unit = js.native
-    def on(method: HTTPMethod, path: String, options: RouteOptions, handler: Handler[V], store: js.Any): Unit = js.native
+    def on(method: HTTPMethod, path: String, options: RouteOptions, handler: Handler[V], store: Any): Unit = js.native
     
     def options(path: String, handler: Handler[V]): Unit = js.native
-    def options(path: String, handler: Handler[V], store: js.Any): Unit = js.native
+    def options(path: String, handler: Handler[V], store: Any): Unit = js.native
     def options(path: String, opts: RouteOptions, handler: Handler[V]): Unit = js.native
-    def options(path: String, opts: RouteOptions, handler: Handler[V], store: js.Any): Unit = js.native
+    def options(path: String, opts: RouteOptions, handler: Handler[V], store: Any): Unit = js.native
     @JSName("options")
     var options_Original: ShortHandRoute[V] = js.native
     
     def patch(path: String, handler: Handler[V]): Unit = js.native
-    def patch(path: String, handler: Handler[V], store: js.Any): Unit = js.native
+    def patch(path: String, handler: Handler[V], store: Any): Unit = js.native
     def patch(path: String, opts: RouteOptions, handler: Handler[V]): Unit = js.native
-    def patch(path: String, opts: RouteOptions, handler: Handler[V], store: js.Any): Unit = js.native
+    def patch(path: String, opts: RouteOptions, handler: Handler[V], store: Any): Unit = js.native
     @JSName("patch")
     var patch_Original: ShortHandRoute[V] = js.native
     
     def post(path: String, handler: Handler[V]): Unit = js.native
-    def post(path: String, handler: Handler[V], store: js.Any): Unit = js.native
+    def post(path: String, handler: Handler[V], store: Any): Unit = js.native
     def post(path: String, opts: RouteOptions, handler: Handler[V]): Unit = js.native
-    def post(path: String, opts: RouteOptions, handler: Handler[V], store: js.Any): Unit = js.native
+    def post(path: String, opts: RouteOptions, handler: Handler[V], store: Any): Unit = js.native
     @JSName("post")
     var post_Original: ShortHandRoute[V] = js.native
     
     def prettyPrint(): String = js.native
+    def prettyPrint(opts: CommonPrefix): String = js.native
     
     def propfind(path: String, handler: Handler[V]): Unit = js.native
-    def propfind(path: String, handler: Handler[V], store: js.Any): Unit = js.native
+    def propfind(path: String, handler: Handler[V], store: Any): Unit = js.native
     def propfind(path: String, opts: RouteOptions, handler: Handler[V]): Unit = js.native
-    def propfind(path: String, opts: RouteOptions, handler: Handler[V], store: js.Any): Unit = js.native
+    def propfind(path: String, opts: RouteOptions, handler: Handler[V], store: Any): Unit = js.native
     @JSName("propfind")
     var propfind_Original: ShortHandRoute[V] = js.native
     
     def proppatch(path: String, handler: Handler[V]): Unit = js.native
-    def proppatch(path: String, handler: Handler[V], store: js.Any): Unit = js.native
+    def proppatch(path: String, handler: Handler[V], store: Any): Unit = js.native
     def proppatch(path: String, opts: RouteOptions, handler: Handler[V]): Unit = js.native
-    def proppatch(path: String, opts: RouteOptions, handler: Handler[V], store: js.Any): Unit = js.native
+    def proppatch(path: String, opts: RouteOptions, handler: Handler[V], store: Any): Unit = js.native
     @JSName("proppatch")
     var proppatch_Original: ShortHandRoute[V] = js.native
     
     def purge(path: String, handler: Handler[V]): Unit = js.native
-    def purge(path: String, handler: Handler[V], store: js.Any): Unit = js.native
+    def purge(path: String, handler: Handler[V], store: Any): Unit = js.native
     def purge(path: String, opts: RouteOptions, handler: Handler[V]): Unit = js.native
-    def purge(path: String, opts: RouteOptions, handler: Handler[V], store: js.Any): Unit = js.native
+    def purge(path: String, opts: RouteOptions, handler: Handler[V], store: Any): Unit = js.native
     @JSName("purge")
     var purge_Original: ShortHandRoute[V] = js.native
     
     def put(path: String, handler: Handler[V]): Unit = js.native
-    def put(path: String, handler: Handler[V], store: js.Any): Unit = js.native
+    def put(path: String, handler: Handler[V], store: Any): Unit = js.native
     def put(path: String, opts: RouteOptions, handler: Handler[V]): Unit = js.native
-    def put(path: String, opts: RouteOptions, handler: Handler[V], store: js.Any): Unit = js.native
+    def put(path: String, opts: RouteOptions, handler: Handler[V], store: Any): Unit = js.native
     @JSName("put")
     var put_Original: ShortHandRoute[V] = js.native
     
     def rebind(path: String, handler: Handler[V]): Unit = js.native
-    def rebind(path: String, handler: Handler[V], store: js.Any): Unit = js.native
+    def rebind(path: String, handler: Handler[V], store: Any): Unit = js.native
     def rebind(path: String, opts: RouteOptions, handler: Handler[V]): Unit = js.native
-    def rebind(path: String, opts: RouteOptions, handler: Handler[V], store: js.Any): Unit = js.native
+    def rebind(path: String, opts: RouteOptions, handler: Handler[V], store: Any): Unit = js.native
     @JSName("rebind")
     var rebind_Original: ShortHandRoute[V] = js.native
     
     def report(path: String, handler: Handler[V]): Unit = js.native
-    def report(path: String, handler: Handler[V], store: js.Any): Unit = js.native
+    def report(path: String, handler: Handler[V], store: Any): Unit = js.native
     def report(path: String, opts: RouteOptions, handler: Handler[V]): Unit = js.native
-    def report(path: String, opts: RouteOptions, handler: Handler[V], store: js.Any): Unit = js.native
+    def report(path: String, opts: RouteOptions, handler: Handler[V], store: Any): Unit = js.native
     @JSName("report")
     var report_Original: ShortHandRoute[V] = js.native
     
     def reset(): Unit = js.native
     
     def search(path: String, handler: Handler[V]): Unit = js.native
-    def search(path: String, handler: Handler[V], store: js.Any): Unit = js.native
+    def search(path: String, handler: Handler[V], store: Any): Unit = js.native
     def search(path: String, opts: RouteOptions, handler: Handler[V]): Unit = js.native
-    def search(path: String, opts: RouteOptions, handler: Handler[V], store: js.Any): Unit = js.native
+    def search(path: String, opts: RouteOptions, handler: Handler[V], store: Any): Unit = js.native
     @JSName("search")
     var search_Original: ShortHandRoute[V] = js.native
     
     def source(path: String, handler: Handler[V]): Unit = js.native
-    def source(path: String, handler: Handler[V], store: js.Any): Unit = js.native
+    def source(path: String, handler: Handler[V], store: Any): Unit = js.native
     def source(path: String, opts: RouteOptions, handler: Handler[V]): Unit = js.native
-    def source(path: String, opts: RouteOptions, handler: Handler[V], store: js.Any): Unit = js.native
+    def source(path: String, opts: RouteOptions, handler: Handler[V], store: Any): Unit = js.native
     @JSName("source")
     var source_Original: ShortHandRoute[V] = js.native
     
     def subscribe(path: String, handler: Handler[V]): Unit = js.native
-    def subscribe(path: String, handler: Handler[V], store: js.Any): Unit = js.native
+    def subscribe(path: String, handler: Handler[V], store: Any): Unit = js.native
     def subscribe(path: String, opts: RouteOptions, handler: Handler[V]): Unit = js.native
-    def subscribe(path: String, opts: RouteOptions, handler: Handler[V], store: js.Any): Unit = js.native
+    def subscribe(path: String, opts: RouteOptions, handler: Handler[V], store: Any): Unit = js.native
     @JSName("subscribe")
     var subscribe_Original: ShortHandRoute[V] = js.native
     
     def trace(path: String, handler: Handler[V]): Unit = js.native
-    def trace(path: String, handler: Handler[V], store: js.Any): Unit = js.native
+    def trace(path: String, handler: Handler[V], store: Any): Unit = js.native
     def trace(path: String, opts: RouteOptions, handler: Handler[V]): Unit = js.native
-    def trace(path: String, opts: RouteOptions, handler: Handler[V], store: js.Any): Unit = js.native
+    def trace(path: String, opts: RouteOptions, handler: Handler[V], store: Any): Unit = js.native
     @JSName("trace")
     var trace_Original: ShortHandRoute[V] = js.native
     
     def unbind(path: String, handler: Handler[V]): Unit = js.native
-    def unbind(path: String, handler: Handler[V], store: js.Any): Unit = js.native
+    def unbind(path: String, handler: Handler[V], store: Any): Unit = js.native
     def unbind(path: String, opts: RouteOptions, handler: Handler[V]): Unit = js.native
-    def unbind(path: String, opts: RouteOptions, handler: Handler[V], store: js.Any): Unit = js.native
+    def unbind(path: String, opts: RouteOptions, handler: Handler[V], store: Any): Unit = js.native
     @JSName("unbind")
     var unbind_Original: ShortHandRoute[V] = js.native
     
     def unlink(path: String, handler: Handler[V]): Unit = js.native
-    def unlink(path: String, handler: Handler[V], store: js.Any): Unit = js.native
+    def unlink(path: String, handler: Handler[V], store: Any): Unit = js.native
     def unlink(path: String, opts: RouteOptions, handler: Handler[V]): Unit = js.native
-    def unlink(path: String, opts: RouteOptions, handler: Handler[V], store: js.Any): Unit = js.native
+    def unlink(path: String, opts: RouteOptions, handler: Handler[V], store: Any): Unit = js.native
     @JSName("unlink")
     var unlink_Original: ShortHandRoute[V] = js.native
     
     def unlock(path: String, handler: Handler[V]): Unit = js.native
-    def unlock(path: String, handler: Handler[V], store: js.Any): Unit = js.native
+    def unlock(path: String, handler: Handler[V], store: Any): Unit = js.native
     def unlock(path: String, opts: RouteOptions, handler: Handler[V]): Unit = js.native
-    def unlock(path: String, opts: RouteOptions, handler: Handler[V], store: js.Any): Unit = js.native
+    def unlock(path: String, opts: RouteOptions, handler: Handler[V], store: Any): Unit = js.native
     @JSName("unlock")
     var unlock_Original: ShortHandRoute[V] = js.native
     
     def unsubscribe(path: String, handler: Handler[V]): Unit = js.native
-    def unsubscribe(path: String, handler: Handler[V], store: js.Any): Unit = js.native
+    def unsubscribe(path: String, handler: Handler[V], store: Any): Unit = js.native
     def unsubscribe(path: String, opts: RouteOptions, handler: Handler[V]): Unit = js.native
-    def unsubscribe(path: String, opts: RouteOptions, handler: Handler[V], store: js.Any): Unit = js.native
+    def unsubscribe(path: String, opts: RouteOptions, handler: Handler[V], store: Any): Unit = js.native
     @JSName("unsubscribe")
     var unsubscribe_Original: ShortHandRoute[V] = js.native
   }
   
   type Req[V] = Http2ServerRequest | IncomingMessage
   
-  type Res[V] = Http2ServerResponse | ServerResponse
+  type Res[V] = Http2ServerResponse | ServerResponse[IncomingMessage]
   
   trait RouteOptions extends StObject {
     
-    var version: String
+    var constraints: js.UndefOr[StringDictionary[Any]] = js.undefined
   }
   object RouteOptions {
     
-    inline def apply(version: String): RouteOptions = {
-      val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
+    inline def apply(): RouteOptions = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RouteOptions]
     }
     
     extension [Self <: RouteOptions](x: Self) {
       
-      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setConstraints(value: StringDictionary[Any]): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
+      
+      inline def setConstraintsUndefined: Self = StObject.set(x, "constraints", js.undefined)
     }
   }
   
@@ -547,8 +584,8 @@ object mod {
   trait ShortHandRoute[V /* <: HTTPVersion */] extends StObject {
     
     def apply(path: String, handler: Handler[V]): Unit = js.native
-    def apply(path: String, handler: Handler[V], store: js.Any): Unit = js.native
+    def apply(path: String, handler: Handler[V], store: Any): Unit = js.native
     def apply(path: String, opts: RouteOptions, handler: Handler[V]): Unit = js.native
-    def apply(path: String, opts: RouteOptions, handler: Handler[V], store: js.Any): Unit = js.native
+    def apply(path: String, opts: RouteOptions, handler: Handler[V], store: Any): Unit = js.native
   }
 }

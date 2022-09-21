@@ -25,7 +25,7 @@ trait TableStyle extends StObject {
   
   val NameLocal: String = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   var ShowAsAvailablePivotTableStyle: Boolean = js.native
   

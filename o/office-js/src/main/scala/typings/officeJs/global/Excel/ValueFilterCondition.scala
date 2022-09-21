@@ -6,11 +6,11 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Enum representing all accepted conditions by which a value filter can be applied.
   Used to configure the type of PivotFilter that is applied to the field.
-  `PivotFilter.exclusive` can be set to true to invert many of these conditions.
+  `PivotFilter.exclusive` can be set to `true` to invert many of these conditions.
   *
+  * @remarks
   * [Api set: ExcelApi 1.12]
   */
 @JSGlobal("Excel.ValueFilterCondition")

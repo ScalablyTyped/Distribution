@@ -12,7 +12,7 @@ trait JobManifestLocation extends StObject {
   var ETag: NonEmptyMaxLength1024String
   
   /**
-    * The Amazon Resource Name (ARN) for a manifest object.
+    * The Amazon Resource Name (ARN) for a manifest object.  Replacement must be made for object keys containing special characters (such as carriage returns) when using XML requests. For more information, see  XML related object key constraints. 
     */
   var ObjectArn: S3KeyArnString
   

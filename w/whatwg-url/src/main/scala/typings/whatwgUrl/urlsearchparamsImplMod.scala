@@ -11,12 +11,16 @@ object urlsearchparamsImplMod {
   
   @JSImport("whatwg-url/lib/URLSearchParams-impl", "implementation")
   @js.native
-  class implementation protected ()
+  open class implementation protected ()
     extends StObject
        with URLSearchParamsImpl {
     def this(
       globalObject: js.Object,
-      hasInit: js.Array[(js.Array[js.Tuple2[String, String]]) | StringDictionary[String] | String],
+      constructorArgs: js.Array[
+            /* init */ js.UndefOr[
+              (js.Array[js.Tuple2[/* name */ String, /* value */ String]]) | StringDictionary[String] | String
+            ]
+          ],
       privateData: DoNotStripQMark
     ) = this()
   }
@@ -35,7 +39,7 @@ object urlsearchparamsImplMod {
     def has(name: String): Boolean = js.native
     
     @JSName(js.Symbol.iterator)
-    var iterator: js.Function0[IterableIterator[js.Tuple2[String, String]]] = js.native
+    var iterator: js.Function0[IterableIterator[js.Tuple2[/* name */ String, /* value */ String]]] = js.native
     
     def set(name: String, value: String): Unit = js.native
     

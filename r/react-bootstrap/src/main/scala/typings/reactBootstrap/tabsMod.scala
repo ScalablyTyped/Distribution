@@ -11,24 +11,22 @@ object tabsMod {
   
   @JSImport("react-bootstrap/lib/Tabs", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[TabsProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[TabsProps, js.Object, Any]
   
-  @js.native
-  trait Tabs
-    extends Component[TabsProps, js.Object, js.Any]
+  type Tabs = Component[TabsProps, js.Object, Any]
   
   trait TabsProps
     extends StObject
        with HTMLProps[Tabs] {
     
-    var activeKey: js.UndefOr[js.Any] = js.undefined
+    var activeKey: js.UndefOr[Any] = js.undefined
     
     var animation: js.UndefOr[Boolean] = js.undefined
     
     var bsStyle: js.UndefOr[String] = js.undefined
     
-    var defaultActiveKey: js.UndefOr[js.Any] = js.undefined
+    var defaultActiveKey: js.UndefOr[Any] = js.undefined
     
     var justified: js.UndefOr[Boolean] = js.undefined
     
@@ -38,12 +36,12 @@ object tabsMod {
     @JSName("onSelect")
     var onSelect_TabsProps: js.UndefOr[SelectCallback] = js.undefined
     
-    var paneWidth: js.UndefOr[js.Any] = js.undefined
+    var paneWidth: js.UndefOr[Any] = js.undefined
     
     // TODO: Add more specific type
     var position: js.UndefOr[String] = js.undefined
     
-    var tabWidth: js.UndefOr[js.Any] = js.undefined
+    var tabWidth: js.UndefOr[Any] = js.undefined
     
     var unmountOnExit: js.UndefOr[Boolean] = js.undefined
   }
@@ -56,7 +54,7 @@ object tabsMod {
     
     extension [Self <: TabsProps](x: Self) {
       
-      inline def setActiveKey(value: js.Any): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
+      inline def setActiveKey(value: Any): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
       
       inline def setActiveKeyUndefined: Self = StObject.set(x, "activeKey", js.undefined)
       
@@ -68,7 +66,7 @@ object tabsMod {
       
       inline def setBsStyleUndefined: Self = StObject.set(x, "bsStyle", js.undefined)
       
-      inline def setDefaultActiveKey(value: js.Any): Self = StObject.set(x, "defaultActiveKey", value.asInstanceOf[js.Any])
+      inline def setDefaultActiveKey(value: Any): Self = StObject.set(x, "defaultActiveKey", value.asInstanceOf[js.Any])
       
       inline def setDefaultActiveKeyUndefined: Self = StObject.set(x, "defaultActiveKey", js.undefined)
       
@@ -84,7 +82,7 @@ object tabsMod {
       
       inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
-      inline def setPaneWidth(value: js.Any): Self = StObject.set(x, "paneWidth", value.asInstanceOf[js.Any])
+      inline def setPaneWidth(value: Any): Self = StObject.set(x, "paneWidth", value.asInstanceOf[js.Any])
       
       inline def setPaneWidthUndefined: Self = StObject.set(x, "paneWidth", js.undefined)
       
@@ -92,7 +90,7 @@ object tabsMod {
       
       inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      inline def setTabWidth(value: js.Any): Self = StObject.set(x, "tabWidth", value.asInstanceOf[js.Any])
+      inline def setTabWidth(value: Any): Self = StObject.set(x, "tabWidth", value.asInstanceOf[js.Any])
       
       inline def setTabWidthUndefined: Self = StObject.set(x, "tabWidth", js.undefined)
       

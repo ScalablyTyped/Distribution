@@ -1,6 +1,5 @@
 package typings.awsSdk
 
-import typings.std.Date
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -35,7 +34,7 @@ object errorMod {
     /**
       * The original error which caused this Error
       */
-    var originalError: js.UndefOr[Error] = js.undefined
+    var originalError: js.UndefOr[js.Error] = js.undefined
     
     /**
       * Set when a networking error occurs to easily identify the region of the request.
@@ -65,11 +64,11 @@ object errorMod {
     /**
       * The date time object when the error occurred.
       */
-    var time: Date
+    var time: js.Date
   }
   object AWSError {
     
-    inline def apply(code: String, message: String, name: String, time: Date): AWSError = {
+    inline def apply(code: String, message: String, name: String, time: js.Date): AWSError = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
       __obj.asInstanceOf[AWSError]
     }
@@ -90,7 +89,7 @@ object errorMod {
       
       inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
       
-      inline def setOriginalError(value: Error): Self = StObject.set(x, "originalError", value.asInstanceOf[js.Any])
+      inline def setOriginalError(value: js.Error): Self = StObject.set(x, "originalError", value.asInstanceOf[js.Any])
       
       inline def setOriginalErrorUndefined: Self = StObject.set(x, "originalError", js.undefined)
       
@@ -114,7 +113,7 @@ object errorMod {
       
       inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
       
-      inline def setTime(value: Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: js.Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     }
   }
 }

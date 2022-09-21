@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Thumbnail extends StObject {
   
   // The content stream for the thumbnail.
-  var content: js.UndefOr[NullableOption[js.Any]] = js.undefined
+  var content: js.UndefOr[NullableOption[Any]] = js.undefined
   
   // The height of the thumbnail, in pixels.
   var height: js.UndefOr[NullableOption[Double]] = js.undefined
@@ -33,7 +33,7 @@ object Thumbnail {
   
   extension [Self <: Thumbnail](x: Self) {
     
-    inline def setContent(value: NullableOption[js.Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: NullableOption[Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     inline def setContentNull: Self = StObject.set(x, "content", null)
     

@@ -23,6 +23,6 @@ object ReleaseDefinitionApprovals {
     
     inline def setApprovals(value: js.Array[ReleaseDefinitionApprovalStep]): Self = StObject.set(x, "approvals", value.asInstanceOf[js.Any])
     
-    inline def setApprovalsVarargs(value: ReleaseDefinitionApprovalStep*): Self = StObject.set(x, "approvals", js.Array(value :_*))
+    inline def setApprovalsVarargs(value: ReleaseDefinitionApprovalStep*): Self = StObject.set(x, "approvals", js.Array(value*))
   }
 }

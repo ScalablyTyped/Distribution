@@ -15,17 +15,17 @@ trait AccessControlException
      with Exception {
   
   /** lacking permission. */
-  var LackingPermission: js.Any
+  var LackingPermission: Any
 }
 object AccessControlException {
   
-  inline def apply(Context: XInterface, LackingPermission: js.Any, Message: String): AccessControlException = {
+  inline def apply(Context: XInterface, LackingPermission: Any, Message: String): AccessControlException = {
     val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], LackingPermission = LackingPermission.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessControlException]
   }
   
   extension [Self <: AccessControlException](x: Self) {
     
-    inline def setLackingPermission(value: js.Any): Self = StObject.set(x, "LackingPermission", value.asInstanceOf[js.Any])
+    inline def setLackingPermission(value: Any): Self = StObject.set(x, "LackingPermission", value.asInstanceOf[js.Any])
   }
 }

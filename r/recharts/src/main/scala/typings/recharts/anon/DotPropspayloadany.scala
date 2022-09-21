@@ -38,13 +38,13 @@ trait DotPropspayloadany extends StObject {
   
   var onTouchStart: js.UndefOr[RechartsFunction] = js.undefined
   
-  var payload: js.Any
+  var payload: Any
   
   var r: js.UndefOr[Double] = js.undefined
 }
 object DotPropspayloadany {
   
-  inline def apply(payload: js.Any): DotPropspayloadany = {
+  inline def apply(payload: Any): DotPropspayloadany = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
     __obj.asInstanceOf[DotPropspayloadany]
   }
@@ -111,7 +111,7 @@ object DotPropspayloadany {
     
     inline def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
     
-    inline def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     

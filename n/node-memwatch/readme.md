@@ -10,15 +10,12 @@ Keep an eye on your memory usage, and discover and isolate leaks.
 | ------------------ | :-------------: |
 | Full name          | node-memwatch |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 10 |
-| # downloads        | 129210 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1801.3333333333333 |
+| # stars            | 44.0 |
 
 ## Links
-- [Homepage](https://github.com/eduardbcom/node-memwatch#readme)
-- [Bugs](https://github.com/eduardbcom/node-memwatch/issues)
-- [Repository](https://github.com/eduardbcom/node-memwatch)
 - [Npm](https://www.npmjs.com/package/node-memwatch)
     
 

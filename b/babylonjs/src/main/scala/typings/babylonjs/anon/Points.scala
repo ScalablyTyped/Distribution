@@ -1,9 +1,9 @@
 package typings.babylonjs.anon
 
-import typings.babylonjs.linesMeshMod.LinesMesh
-import typings.babylonjs.mathColorMod.Color4
-import typings.babylonjs.mathVectorMod.Vector3
-import typings.babylonjs.typesMod.Nullable
+import typings.babylonjs.BABYLON.Color4
+import typings.babylonjs.BABYLON.LinesMesh
+import typings.babylonjs.BABYLON.Nullable
+import typings.babylonjs.BABYLON.Vector3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,6 +13,8 @@ trait Points extends StObject {
   var colors: js.UndefOr[js.Array[Color4]] = js.undefined
   
   var instance: js.UndefOr[Nullable[LinesMesh]] = js.undefined
+  
+  var material: js.UndefOr[typings.babylonjs.BABYLON.Material] = js.undefined
   
   var points: js.Array[Vector3]
   
@@ -33,7 +35,7 @@ object Points {
     
     inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    inline def setColorsVarargs(value: Color4*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: Color4*): Self = StObject.set(x, "colors", js.Array(value*))
     
     inline def setInstance(value: Nullable[LinesMesh]): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
@@ -41,9 +43,13 @@ object Points {
     
     inline def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
     
+    inline def setMaterial(value: typings.babylonjs.BABYLON.Material): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
+    
+    inline def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
+    
     inline def setPoints(value: js.Array[Vector3]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    inline def setPointsVarargs(value: Vector3*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: Vector3*): Self = StObject.set(x, "points", js.Array(value*))
     
     inline def setUpdatable(value: Boolean): Self = StObject.set(x, "updatable", value.asInstanceOf[js.Any])
     

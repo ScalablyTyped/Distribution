@@ -12,12 +12,12 @@ trait JQueryParam extends StObject {
     * 
     * @param obj An array or object to serialize.
     */
-  def apply(obj: js.Any): String = js.native
+  def apply(obj: Any): String = js.native
   /**
     * Create a serialized representation of an array or object, suitable for use in a URL query string or Ajax request.
     * 
     * @param obj An array or object to serialize.
     * @param traditional A Boolean indicating whether to perform a traditional "shallow" serialization.
     */
-  def apply(obj: js.Any, traditional: Boolean): String = js.native
+  def apply(obj: Any, traditional: Boolean): String = js.native
 }

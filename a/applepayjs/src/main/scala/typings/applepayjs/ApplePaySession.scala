@@ -36,7 +36,7 @@ trait ApplePaySession
     * Completes the validation for a merchant session.
     * @param merchantSession - An opaque message session object.
     */
-  def completeMerchantValidation(merchantSession: js.Any): Unit = js.native
+  def completeMerchantValidation(merchantSession: Any): Unit = js.native
   
   /**
     * Completes the payment authorization with a result.

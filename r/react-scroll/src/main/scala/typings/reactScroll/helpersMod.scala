@@ -12,9 +12,9 @@ object helpersMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def Element(component: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Element")(component.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def Element(component: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Element")(component.asInstanceOf[js.Any]).asInstanceOf[Any]
     
-    inline def Scroll(component: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Scroll")(component.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def Scroll(component: js.Any, customScroller: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("Scroll")(component.asInstanceOf[js.Any], customScroller.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def Scroll(component: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Scroll")(component.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def Scroll(component: Any, customScroller: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("Scroll")(component.asInstanceOf[js.Any], customScroller.asInstanceOf[js.Any])).asInstanceOf[Any]
   }
 }

@@ -1,10 +1,11 @@
 package typings.develarSchemaUtils
 
-import typings.ajv.mod.ErrorObject
-import typings.ajv.mod.ErrorParameters
-import typings.develarSchemaUtils.anon.ErrorObjectchildrenArrayE
+import typings.ajv.distTypesMod.ErrorObject
+import typings.develarSchemaUtils.anon.Children
+import typings.develarSchemaUtils.anon.ErrorObjectstringRecordst
 import typings.jsonSchema.mod.JSONSchema4
 import typings.std.Error
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ object validationErrorMod {
   
   @JSImport("@develar/schema-utils/declarations/ValidationError", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with ValidationError {
     /**
@@ -21,28 +22,30 @@ object validationErrorMod {
       * @param {Schema} schema
       * @param {ValidationErrorConfiguration} configuration
       */
-    def this(errors: js.Array[ErrorObjectchildrenArrayE], schema: JSONSchema4) = this()
-    def this(errors: js.Array[ErrorObjectchildrenArrayE], schema: typings.jsonSchema.mod.JSONSchema6) = this()
-    def this(errors: js.Array[ErrorObjectchildrenArrayE], schema: typings.jsonSchema.mod.JSONSchema7) = this()
+    def this(errors: js.Array[ErrorObjectstringRecordst], schema: JSONSchema4) = this()
+    def this(errors: js.Array[ErrorObjectstringRecordst], schema: typings.jsonSchema.mod.JSONSchema6) = this()
+    def this(errors: js.Array[ErrorObjectstringRecordst], schema: typings.jsonSchema.mod.JSONSchema7) = this()
     def this(
-      errors: js.Array[ErrorObjectchildrenArrayE],
+      errors: js.Array[ErrorObjectstringRecordst],
       schema: JSONSchema4,
       configuration: typings.develarSchemaUtils.validateMod.ValidationErrorConfiguration
     ) = this()
     def this(
-      errors: js.Array[ErrorObjectchildrenArrayE],
+      errors: js.Array[ErrorObjectstringRecordst],
       schema: typings.jsonSchema.mod.JSONSchema6,
       configuration: typings.develarSchemaUtils.validateMod.ValidationErrorConfiguration
     ) = this()
     def this(
-      errors: js.Array[ErrorObjectchildrenArrayE],
+      errors: js.Array[ErrorObjectstringRecordst],
       schema: typings.jsonSchema.mod.JSONSchema7,
       configuration: typings.develarSchemaUtils.validateMod.ValidationErrorConfiguration
     ) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
@@ -51,7 +54,7 @@ object validationErrorMod {
   
   type JSONSchema7 = typings.jsonSchema.mod.JSONSchema7
   
-  type PostFormatter = js.Function2[/* formattedError */ String, /* error */ ErrorObjectchildrenArrayE, String]
+  type PostFormatter = js.Function2[/* formattedError */ String, /* error */ ErrorObjectstringRecordst, String]
   
   type SPECIFICITY = Double
   
@@ -59,24 +62,24 @@ object validationErrorMod {
   
   trait SchemaUtilErrorObject
     extends StObject
-       with ErrorObject {
+       with ErrorObject[String, Record[String, Any], Any] {
     
-    var children: js.UndefOr[js.Array[ErrorObject]] = js.undefined
+    var children: js.UndefOr[js.Array[ErrorObject[String, Record[String, Any], Any]]] = js.undefined
   }
   object SchemaUtilErrorObject {
     
-    inline def apply(dataPath: String, keyword: String, params: ErrorParameters, schemaPath: String): SchemaUtilErrorObject = {
-      val __obj = js.Dynamic.literal(dataPath = dataPath.asInstanceOf[js.Any], keyword = keyword.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], schemaPath = schemaPath.asInstanceOf[js.Any])
+    inline def apply(instancePath: String, keyword: String, params: Record[String, Any], schemaPath: String): SchemaUtilErrorObject = {
+      val __obj = js.Dynamic.literal(instancePath = instancePath.asInstanceOf[js.Any], keyword = keyword.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], schemaPath = schemaPath.asInstanceOf[js.Any])
       __obj.asInstanceOf[SchemaUtilErrorObject]
     }
     
     extension [Self <: SchemaUtilErrorObject](x: Self) {
       
-      inline def setChildren(value: js.Array[ErrorObject]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[ErrorObject[String, Record[String, Any], Any]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: ErrorObject*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: (ErrorObject[String, Record[String, Any], Any])*): Self = StObject.set(x, "children", js.Array(value*))
     }
   }
   
@@ -107,13 +110,13 @@ object validationErrorMod {
       * @param {SchemaUtilErrorObject} error
       * @returns {string}
       */
-    def formatValidationError(error: ErrorObjectchildrenArrayE): String = js.native
+    def formatValidationError(error: ErrorObjectstringRecordst): String = js.native
     
     /**
       * @param {Array<SchemaUtilErrorObject>} errors
       * @returns {string}
       */
-    def formatValidationErrors(errors: js.Array[ErrorObjectchildrenArrayE]): String = js.native
+    def formatValidationErrors(errors: js.Array[ErrorObjectstringRecordst]): String = js.native
     
     /**
       * @param {string} path
@@ -196,7 +199,9 @@ object validationErrorMod {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setPostFormatter(value: (/* formattedError */ String, /* error */ ErrorObjectchildrenArrayE) => String): Self = StObject.set(x, "postFormatter", js.Any.fromFunction2(value))
+      inline def setPostFormatter(
+        value: (/* formattedError */ String, /* error */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Ajv.ErrorObject */ Any) & Children) => String
+      ): Self = StObject.set(x, "postFormatter", js.Any.fromFunction2(value))
       
       inline def setPostFormatterUndefined: Self = StObject.set(x, "postFormatter", js.undefined)
     }

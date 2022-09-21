@@ -26,7 +26,7 @@ object Category {
     
     inline def setData(value: GotoDpAlarmData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: DpId*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: DpId*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setRepeat(value: Double): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
   }

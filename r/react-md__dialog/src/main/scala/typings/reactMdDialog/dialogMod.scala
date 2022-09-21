@@ -3,8 +3,8 @@ package typings.reactMdDialog
 import typings.react.mod.CSSProperties
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.HTMLAttributes
-import typings.reactMdDialog.anon.PickBaseDialogPropshidden
-import typings.reactMdDialog.anon.PickBaseDialogPropshiddenAbout
+import typings.react.mod.RefAttributes
+import typings.reactMdDialog.anon.OmitHTMLAttributesHTMLSpa
 import typings.reactMdDialog.reactMdDialogStrings.`full-page`
 import typings.reactMdDialog.reactMdDialogStrings.alertdialog
 import typings.reactMdDialog.reactMdDialogStrings.centered
@@ -17,7 +17,10 @@ import typings.reactMdDialog.reactMdDialogStrings.menu
 import typings.reactMdDialog.reactMdDialogStrings.nav
 import typings.reactMdDialog.reactMdDialogStrings.none
 import typings.reactMdPortal.conditionalPortalMod.RenderConditionalPortalProps
-import typings.reactMdTransition.typesMod.OverridableCSSTransitionProps
+import typings.reactMdTransition.typesMod.CSSTransitionClassNames
+import typings.reactMdTransition.typesMod.CSSTransitionComponentProps
+import typings.reactMdTransition.typesMod.TransitionActions
+import typings.reactMdTransition.typesMod.TransitionTimeout
 import typings.reactMdUtils.focusContainerMod.FocusContainerOptionsProps
 import typings.reactMdUtils.typesTypesMod.LabelRequiredForA11y
 import typings.std.HTMLDivElement
@@ -27,13 +30,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object dialogMod {
   
+  @JSImport("@react-md/dialog/types/Dialog", "DEFAULT_DIALOG_CLASSNAMES")
+  @js.native
+  val DEFAULT_DIALOG_CLASSNAMES: CSSTransitionClassNames = js.native
+  
+  @JSImport("@react-md/dialog/types/Dialog", "DEFAULT_DIALOG_TIMEOUT")
+  @js.native
+  val DEFAULT_DIALOG_TIMEOUT: TransitionTimeout = js.native
+  
   @JSImport("@react-md/dialog/types/Dialog", "Dialog")
   @js.native
-  val Dialog: ForwardRefExoticComponent[PickBaseDialogPropshidden | PickBaseDialogPropshiddenAbout] = js.native
+  val Dialog: ForwardRefExoticComponent[DialogProps & RefAttributes[HTMLDivElement]] = js.native
   
   trait BaseDialogProps
     extends StObject
-       with OverridableCSSTransitionProps
+       with CSSTransitionComponentProps
+       with TransitionActions
        with RenderConditionalPortalProps
        with FocusContainerOptionsProps
        with HTMLAttributes[HTMLDivElement] {
@@ -154,6 +166,13 @@ object dialogMod {
     var overlayHidden: js.UndefOr[Boolean] = js.undefined
     
     /**
+      * Any additional props that should be passed to the `Overlay` element.
+      *
+      * @remarks \@since 5.0.0
+      */
+    var overlayProps: js.UndefOr[OmitHTMLAttributesHTMLSpa] = js.undefined
+    
+    /**
       * An optional style to apply to the overlay.
       */
     var overlayStyle: js.UndefOr[CSSProperties] = js.undefined
@@ -249,6 +268,10 @@ object dialogMod {
       inline def setOverlayHidden(value: Boolean): Self = StObject.set(x, "overlayHidden", value.asInstanceOf[js.Any])
       
       inline def setOverlayHiddenUndefined: Self = StObject.set(x, "overlayHidden", js.undefined)
+      
+      inline def setOverlayProps(value: OmitHTMLAttributesHTMLSpa): Self = StObject.set(x, "overlayProps", value.asInstanceOf[js.Any])
+      
+      inline def setOverlayPropsUndefined: Self = StObject.set(x, "overlayProps", js.undefined)
       
       inline def setOverlayStyle(value: CSSProperties): Self = StObject.set(x, "overlayStyle", value.asInstanceOf[js.Any])
       

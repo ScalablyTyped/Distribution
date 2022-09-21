@@ -6,23 +6,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("autobahn", "Error")
 @js.native
-class Error ()
+open class Error ()
   extends StObject
      with IError {
   def this(error: String) = this()
-  def this(error: String, args: js.Array[js.Any]) = this()
-  def this(error: Unit, args: js.Array[js.Any]) = this()
-  def this(error: String, args: js.Array[js.Any], kwargs: js.Any) = this()
-  def this(error: String, args: Unit, kwargs: js.Any) = this()
-  def this(error: Unit, args: js.Array[js.Any], kwargs: js.Any) = this()
-  def this(error: Unit, args: Unit, kwargs: js.Any) = this()
+  def this(error: String, args: js.Array[Any]) = this()
+  def this(error: Unit, args: js.Array[Any]) = this()
+  def this(error: String, args: js.Array[Any], kwargs: Any) = this()
+  def this(error: String, args: Unit, kwargs: Any) = this()
+  def this(error: Unit, args: js.Array[Any], kwargs: Any) = this()
+  def this(error: Unit, args: Unit, kwargs: Any) = this()
   
   /* CompleteClass */
-  var args: js.Array[js.Any] = js.native
+  var args: js.Array[Any] = js.native
   
   /* CompleteClass */
   var error: String = js.native
   
   /* CompleteClass */
-  var kwargs: js.Any = js.native
+  var kwargs: Any = js.native
 }

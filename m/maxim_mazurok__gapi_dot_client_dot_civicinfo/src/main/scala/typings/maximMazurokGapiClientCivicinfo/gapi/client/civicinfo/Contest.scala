@@ -117,7 +117,7 @@ object Contest {
     
     inline def setCandidatesUndefined: Self = StObject.set(x, "candidates", js.undefined)
     
-    inline def setCandidatesVarargs(value: Candidate*): Self = StObject.set(x, "candidates", js.Array(value :_*))
+    inline def setCandidatesVarargs(value: Candidate*): Self = StObject.set(x, "candidates", js.Array(value*))
     
     inline def setDistrict(value: ElectoralDistrict): Self = StObject.set(x, "district", value.asInstanceOf[js.Any])
     
@@ -131,7 +131,7 @@ object Contest {
     
     inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
-    inline def setLevelVarargs(value: String*): Self = StObject.set(x, "level", js.Array(value :_*))
+    inline def setLevelVarargs(value: String*): Self = StObject.set(x, "level", js.Array(value*))
     
     inline def setNumberElected(value: String): Self = StObject.set(x, "numberElected", value.asInstanceOf[js.Any])
     
@@ -149,7 +149,7 @@ object Contest {
     
     inline def setPrimaryPartiesUndefined: Self = StObject.set(x, "primaryParties", js.undefined)
     
-    inline def setPrimaryPartiesVarargs(value: String*): Self = StObject.set(x, "primaryParties", js.Array(value :_*))
+    inline def setPrimaryPartiesVarargs(value: String*): Self = StObject.set(x, "primaryParties", js.Array(value*))
     
     inline def setPrimaryParty(value: String): Self = StObject.set(x, "primaryParty", value.asInstanceOf[js.Any])
     
@@ -159,7 +159,7 @@ object Contest {
     
     inline def setReferendumBallotResponsesUndefined: Self = StObject.set(x, "referendumBallotResponses", js.undefined)
     
-    inline def setReferendumBallotResponsesVarargs(value: String*): Self = StObject.set(x, "referendumBallotResponses", js.Array(value :_*))
+    inline def setReferendumBallotResponsesVarargs(value: String*): Self = StObject.set(x, "referendumBallotResponses", js.Array(value*))
     
     inline def setReferendumBrief(value: String): Self = StObject.set(x, "referendumBrief", value.asInstanceOf[js.Any])
     
@@ -201,13 +201,13 @@ object Contest {
     
     inline def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
     
-    inline def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value :_*))
+    inline def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value*))
     
     inline def setSources(value: js.Array[Source]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
     inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
-    inline def setSourcesVarargs(value: Source*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: Source*): Self = StObject.set(x, "sources", js.Array(value*))
     
     inline def setSpecial(value: String): Self = StObject.set(x, "special", value.asInstanceOf[js.Any])
     

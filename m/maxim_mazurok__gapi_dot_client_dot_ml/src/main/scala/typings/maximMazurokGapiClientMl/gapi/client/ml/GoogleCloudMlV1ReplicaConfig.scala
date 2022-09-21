@@ -27,6 +27,9 @@ trait GoogleCloudMlV1ReplicaConfig extends StObject {
     */
   var containerCommand: js.UndefOr[js.Array[String]] = js.undefined
   
+  /** Represents the configuration of disk options. */
+  var diskConfig: js.UndefOr[GoogleCloudMlV1DiskConfig] = js.undefined
+  
   /**
     * The Docker image to run on the replica. This image must be in Container Registry. Learn more about [configuring custom
     * containers](/ai-platform/training/docs/distributed-training-containers).
@@ -59,13 +62,17 @@ object GoogleCloudMlV1ReplicaConfig {
     
     inline def setContainerArgsUndefined: Self = StObject.set(x, "containerArgs", js.undefined)
     
-    inline def setContainerArgsVarargs(value: String*): Self = StObject.set(x, "containerArgs", js.Array(value :_*))
+    inline def setContainerArgsVarargs(value: String*): Self = StObject.set(x, "containerArgs", js.Array(value*))
     
     inline def setContainerCommand(value: js.Array[String]): Self = StObject.set(x, "containerCommand", value.asInstanceOf[js.Any])
     
     inline def setContainerCommandUndefined: Self = StObject.set(x, "containerCommand", js.undefined)
     
-    inline def setContainerCommandVarargs(value: String*): Self = StObject.set(x, "containerCommand", js.Array(value :_*))
+    inline def setContainerCommandVarargs(value: String*): Self = StObject.set(x, "containerCommand", js.Array(value*))
+    
+    inline def setDiskConfig(value: GoogleCloudMlV1DiskConfig): Self = StObject.set(x, "diskConfig", value.asInstanceOf[js.Any])
+    
+    inline def setDiskConfigUndefined: Self = StObject.set(x, "diskConfig", js.undefined)
     
     inline def setImageUri(value: String): Self = StObject.set(x, "imageUri", value.asInstanceOf[js.Any])
     

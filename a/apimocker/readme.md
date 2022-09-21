@@ -10,15 +10,12 @@ Simple HTTP server that returns mock service API responses to your front end.
 | ------------------ | :-------------: |
 | Full name          | apimocker |
 | Keywords           | express, mock, stub, REST, SOAP, testing, functional, api, grunt, gulp |
-| # releases         | 4 |
-| # dependents       | 2 |
-| # downloads        | 50627 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4395.666666666667 |
+| # stars            | 273.0 |
 
 ## Links
-- [Homepage](https://github.com/gstroup/apimocker#readme)
-- [Bugs](https://github.com/gstroup/apimocker/issues)
-- [Repository](https://github.com/gstroup/apimocker)
 - [Npm](https://www.npmjs.com/package/apimocker)
     
 

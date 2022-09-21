@@ -33,6 +33,6 @@ object ReservedNodesMessage {
     
     inline def setReservedNodesUndefined: Self = StObject.set(x, "ReservedNodes", js.undefined)
     
-    inline def setReservedNodesVarargs(value: ReservedNode*): Self = StObject.set(x, "ReservedNodes", js.Array(value :_*))
+    inline def setReservedNodesVarargs(value: ReservedNode*): Self = StObject.set(x, "ReservedNodes", js.Array(value*))
   }
 }

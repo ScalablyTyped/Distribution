@@ -22,6 +22,11 @@ trait CreateRuleGroupRequest extends StObject {
   var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * A complex type that contains settings for encryption of your rule group resources.
+    */
+  var EncryptionConfiguration: js.UndefOr[typings.awsSdk.networkfirewallMod.EncryptionConfiguration] = js.undefined
+  
+  /**
     * An object that defines the rule group rules.   You must provide either this rule group setting or a Rules setting, but not both.  
     */
   var RuleGroup: js.UndefOr[typings.awsSdk.networkfirewallMod.RuleGroup] = js.undefined
@@ -32,9 +37,14 @@ trait CreateRuleGroupRequest extends StObject {
   var RuleGroupName: ResourceName
   
   /**
-    * The name of a file containing stateful rule group rules specifications in Suricata flat format, with one rule per line. Use this to import your existing Suricata compatible rule groups.   You must provide either this rules setting or a populated RuleGroup setting, but not both.   You can provide your rule group specification in a file through this setting when you create or update your rule group. The call response returns a RuleGroup object that Network Firewall has populated from your file. Network Firewall uses the file contents to populate the rule group rules, but does not maintain a reference to the file or use the file in any way after performing the create or update. If you call DescribeRuleGroup to retrieve the rule group, Network Firewall returns rules settings inside a RuleGroup object. 
+    * A string containing stateful rule group rules specifications in Suricata flat format, with one rule per line. Use this to import your existing Suricata compatible rule groups.   You must provide either this rules setting or a populated RuleGroup setting, but not both.   You can provide your rule group specification in Suricata flat format through this setting when you create or update your rule group. The call response returns a RuleGroup object that Network Firewall has populated from your string. 
     */
   var Rules: js.UndefOr[RulesString] = js.undefined
+  
+  /**
+    * A complex type that contains metadata about the rule group that your own rule group is copied from. You can use the metadata to keep track of updates made to the originating rule group.
+    */
+  var SourceMetadata: js.UndefOr[typings.awsSdk.networkfirewallMod.SourceMetadata] = js.undefined
   
   /**
     * The key:value pairs to associate with the resource.
@@ -65,6 +75,10 @@ object CreateRuleGroupRequest {
     
     inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
+    inline def setEncryptionConfiguration(value: EncryptionConfiguration): Self = StObject.set(x, "EncryptionConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setEncryptionConfigurationUndefined: Self = StObject.set(x, "EncryptionConfiguration", js.undefined)
+    
     inline def setRuleGroup(value: RuleGroup): Self = StObject.set(x, "RuleGroup", value.asInstanceOf[js.Any])
     
     inline def setRuleGroupName(value: ResourceName): Self = StObject.set(x, "RuleGroupName", value.asInstanceOf[js.Any])
@@ -75,11 +89,15 @@ object CreateRuleGroupRequest {
     
     inline def setRulesUndefined: Self = StObject.set(x, "Rules", js.undefined)
     
+    inline def setSourceMetadata(value: SourceMetadata): Self = StObject.set(x, "SourceMetadata", value.asInstanceOf[js.Any])
+    
+    inline def setSourceMetadataUndefined: Self = StObject.set(x, "SourceMetadata", js.undefined)
+    
     inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setType(value: RuleGroupType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }

@@ -5,20 +5,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Result containing the properties and count of a groupBy request.
-  */
 trait SchemaGroupResult extends StObject {
   
   /**
     * Total count of resources for the given properties.
     */
-  var count: js.UndefOr[String] = js.undefined
+  var count: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Properties matching the groupBy fields in the request.
     */
-  var properties: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var properties: js.UndefOr[StringDictionary[Any] | Null] = js.undefined
 }
 object SchemaGroupResult {
   
@@ -31,9 +28,13 @@ object SchemaGroupResult {
     
     inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
+    inline def setCountNull: Self = StObject.set(x, "count", null)
+    
     inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    inline def setProperties(value: StringDictionary[js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: StringDictionary[Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    
+    inline def setPropertiesNull: Self = StObject.set(x, "properties", null)
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
   }

@@ -1,19 +1,19 @@
 
 # Scala.js typings for stringify-entities
 
-Typings are for version 3.1.0
+Typings are for version 4.0.3
 
 ## Library description:
-Encode HTML character references and character entities
+Serialize (encode) HTML character references
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | stringify-entities |
 | Keywords           | stringify, encode, escape, html, character, reference, entity, entities |
-| # releases         | 4 |
-| # dependents       | 30 |
-| # downloads        | 115860792 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 8524389.0 |
+| # stars            | 22.0 |
 
 ## Links
 - [Homepage](https://github.com/wooorm/stringify-entities#readme)

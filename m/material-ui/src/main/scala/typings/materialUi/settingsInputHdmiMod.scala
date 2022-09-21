@@ -10,10 +10,10 @@ object settingsInputHdmiMod {
   
   @JSImport("material-ui/svg-icons/action/settings-input-hdmi", JSImport.Default)
   @js.native
-  class default () extends ActionSettingsInputHdmi
+  open class default () extends ActionSettingsInputHdmi
   
   @JSImport("material-ui/svg-icons/action/settings-input-hdmi", "ActionSettingsInputHdmi")
   @js.native
-  class ActionSettingsInputHdmi ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionSettingsInputHdmi ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

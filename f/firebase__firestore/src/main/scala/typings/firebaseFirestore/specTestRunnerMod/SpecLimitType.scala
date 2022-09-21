@@ -1,19 +1,17 @@
 package typings.firebaseFirestore.specTestRunnerMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.firebaseFirestore.firebaseFirestoreStrings.LimitToFirst
   - typings.firebaseFirestore.firebaseFirestoreStrings.LimitToLast
 */
-trait SpecLimitType extends js.Object
-
+trait SpecLimitType extends StObject
 object SpecLimitType {
-  @scala.inline
-  def LimitToFirst: typings.firebaseFirestore.firebaseFirestoreStrings.LimitToFirst = "LimitToFirst".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.LimitToFirst]
-  @scala.inline
-  def LimitToLast: typings.firebaseFirestore.firebaseFirestoreStrings.LimitToLast = "LimitToLast".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.LimitToLast]
+  
+  inline def LimitToFirst: typings.firebaseFirestore.firebaseFirestoreStrings.LimitToFirst = "LimitToFirst".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.LimitToFirst]
+  
+  inline def LimitToLast: typings.firebaseFirestore.firebaseFirestoreStrings.LimitToLast = "LimitToLast".asInstanceOf[typings.firebaseFirestore.firebaseFirestoreStrings.LimitToLast]
 }
-

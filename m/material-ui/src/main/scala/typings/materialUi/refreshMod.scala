@@ -10,10 +10,10 @@ object refreshMod {
   
   @JSImport("material-ui/svg-icons/navigation/refresh", JSImport.Default)
   @js.native
-  class default () extends NavigationRefresh
+  open class default () extends NavigationRefresh
   
   @JSImport("material-ui/svg-icons/navigation/refresh", "NavigationRefresh")
   @js.native
-  class NavigationRefresh ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NavigationRefresh ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

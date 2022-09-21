@@ -70,66 +70,66 @@ object mod extends Shortcut {
   @js.native
   trait ValidateJS extends StObject {
     
-    def apply(attributes: js.Any, constraints: js.Any): js.Any = js.native
-    def apply(attributes: js.Any, constraints: js.Any, options: ValidateOption): js.Any = js.native
+    def apply(attributes: Any, constraints: Any): Any = js.native
+    def apply(attributes: Any, constraints: Any, options: ValidateOption): Any = js.native
     
-    def async(attributes: js.Any, constraints: js.Any): js.Promise[js.Any] = js.native
-    def async(attributes: js.Any, constraints: js.Any, options: AsyncValidateOption): js.Promise[js.Any] = js.native
+    def async(attributes: Any, constraints: Any): js.Promise[Any] = js.native
+    def async(attributes: Any, constraints: Any, options: AsyncValidateOption): js.Promise[Any] = js.native
     
     def capitalize(value: String): String = js.native
     
-    def cleanAttributes(attributes: js.Any, whitelist: js.Any): js.Any = js.native
+    def cleanAttributes(attributes: Any, whitelist: Any): Any = js.native
     
-    def collectFormValues(form: js.Any): js.Any = js.native
-    def collectFormValues(form: js.Any, options: CollectFormValuesOption): js.Any = js.native
+    def collectFormValues(form: Any): Any = js.native
+    def collectFormValues(form: Any, options: CollectFormValuesOption): Any = js.native
     
-    def contains(obj: js.Any, value: js.Any): Boolean = js.native
+    def contains(obj: Any, value: Any): Boolean = js.native
     
-    def extend(obj: js.Any, otherObjects: js.Any*): js.Any = js.native
+    def extend(obj: Any, otherObjects: Any*): Any = js.native
     
-    def format(str: String, vals: js.Any): String = js.native
+    def format(str: String, vals: Any): String = js.native
     
-    var formatters: js.Any = js.native
+    var formatters: Any = js.native
     
-    def getDeepObjectValue(obj: js.Any, keypath: String): js.Any = js.native
+    def getDeepObjectValue(obj: Any, keypath: String): Any = js.native
     
-    def isArray(value: js.Any): Boolean = js.native
+    def isArray(value: Any): Boolean = js.native
     
-    def isBoolean(value: js.Any): Boolean = js.native
+    def isBoolean(value: Any): Boolean = js.native
     
-    def isDate(value: js.Any): Boolean = js.native
+    def isDate(value: Any): Boolean = js.native
     
-    def isDefined(value: js.Any): Boolean = js.native
+    def isDefined(value: Any): Boolean = js.native
     
-    def isDomElement(value: js.Any): Boolean = js.native
+    def isDomElement(value: Any): Boolean = js.native
     
-    def isEmpty(value: js.Any): Boolean = js.native
+    def isEmpty(value: Any): Boolean = js.native
     
-    def isFunction(value: js.Any): Boolean = js.native
+    def isFunction(value: Any): Boolean = js.native
     
-    def isHash(value: js.Any): Boolean = js.native
+    def isHash(value: Any): Boolean = js.native
     
-    def isInteger(value: js.Any): Boolean = js.native
+    def isInteger(value: Any): Boolean = js.native
     
-    def isNumber(value: js.Any): Boolean = js.native
+    def isNumber(value: Any): Boolean = js.native
     
-    def isObject(value: js.Any): Boolean = js.native
+    def isObject(value: Any): Boolean = js.native
     
-    def isPromise(value: js.Any): Boolean = js.native
+    def isPromise(value: Any): Boolean = js.native
     
-    def isString(value: js.Any): Boolean = js.native
+    def isString(value: Any): Boolean = js.native
     
     def prettify(value: String): String = js.native
     
-    def result(value: js.Any, args: js.Any*): js.Any = js.native
+    def result(value: Any, args: Any*): Any = js.native
     
-    def single(value: js.Any, constraints: js.Any): js.Any = js.native
-    def single(value: js.Any, constraints: js.Any, options: ValidateOption): js.Any = js.native
+    def single(value: Any, constraints: Any): Any = js.native
+    def single(value: Any, constraints: Any, options: ValidateOption): Any = js.native
     
-    def validate(attributes: js.Any, constraints: js.Any): js.Any = js.native
-    def validate(attributes: js.Any, constraints: js.Any, options: ValidateOption): js.Any = js.native
+    def validate(attributes: Any, constraints: Any): Any = js.native
+    def validate(attributes: Any, constraints: Any, options: ValidateOption): Any = js.native
     
-    var validators: js.Any = js.native
+    var validators: Any = js.native
   }
   
   trait ValidateOption extends StObject {

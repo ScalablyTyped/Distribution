@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SliderViewModelConstructor
   extends StObject
-     with Instantiable0[SliderViewModel]
+     with /**
+  * Provides the logic for the [Slider](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html) widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider-SliderViewModel.html)
+  */
+Instantiable0[SliderViewModel]
      with Instantiable1[/* properties */ SliderViewModelProperties, SliderViewModel]

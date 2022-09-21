@@ -18,6 +18,8 @@ trait CalendarTheme extends StObject {
   
   var dayTextColor: js.UndefOr[String] = js.undefined
   
+  var disabledArrowColor: js.UndefOr[String] = js.undefined
+  
   var dotColor: js.UndefOr[String] = js.undefined
   
   var dotStyle: js.UndefOr[ViewStyle] = js.undefined
@@ -87,6 +89,8 @@ trait CalendarTheme extends StObject {
   
   var textSectionTitleColor: js.UndefOr[String] = js.undefined
   
+  var textSectionTitleDisabledColor: js.UndefOr[String] = js.undefined
+  
   var todayTextColor: js.UndefOr[String] = js.undefined
 }
 object CalendarTheme {
@@ -117,6 +121,10 @@ object CalendarTheme {
     inline def setDayTextColor(value: String): Self = StObject.set(x, "dayTextColor", value.asInstanceOf[js.Any])
     
     inline def setDayTextColorUndefined: Self = StObject.set(x, "dayTextColor", js.undefined)
+    
+    inline def setDisabledArrowColor(value: String): Self = StObject.set(x, "disabledArrowColor", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledArrowColorUndefined: Self = StObject.set(x, "disabledArrowColor", js.undefined)
     
     inline def setDotColor(value: String): Self = StObject.set(x, "dotColor", value.asInstanceOf[js.Any])
     
@@ -233,6 +241,10 @@ object CalendarTheme {
     inline def setTextSectionTitleColor(value: String): Self = StObject.set(x, "textSectionTitleColor", value.asInstanceOf[js.Any])
     
     inline def setTextSectionTitleColorUndefined: Self = StObject.set(x, "textSectionTitleColor", js.undefined)
+    
+    inline def setTextSectionTitleDisabledColor(value: String): Self = StObject.set(x, "textSectionTitleDisabledColor", value.asInstanceOf[js.Any])
+    
+    inline def setTextSectionTitleDisabledColorUndefined: Self = StObject.set(x, "textSectionTitleDisabledColor", js.undefined)
     
     inline def setTodayTextColor(value: String): Self = StObject.set(x, "todayTextColor", value.asInstanceOf[js.Any])
     

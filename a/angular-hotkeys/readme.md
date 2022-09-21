@@ -10,10 +10,10 @@ Automatic keyboard shortcuts for your Angular Apps
 | ------------------ | :-------------: |
 | Full name          | angular-hotkeys |
 | Keywords           | angular, angularjs, keyboard, shortcut, hotkeys |
-| # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 599139 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 63325.0 |
+| # stars            | 1697.0 |
 
 ## Links
 - [Homepage](https://chieffancypants.github.io/angular-hotkeys)

@@ -1,10 +1,11 @@
 package typings.blueprintjsTable
 
 import typings.blueprintjsTable.anon.PartialIDragSelectablePro
-import typings.blueprintjsTable.commonCellMod.IFocusedCellCoordinates
+import typings.blueprintjsTable.cellTypesMod.FocusedCellCoordinates
 import typings.blueprintjsTable.dragTypesMod.ICoordinateData
-import typings.blueprintjsTable.esmRegionsMod.IRegion
+import typings.blueprintjsTable.esmRegionsMod.Region
 import typings.react.mod.PureComponent
+import typings.react.mod.ReactNode
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
@@ -15,57 +16,57 @@ object selectableMod {
   
   @JSImport("@blueprintjs/table/lib/esm/interactions/selectable", "DragSelectable")
   @js.native
-  class DragSelectable protected ()
-    extends PureComponent[IDragSelectableProps, js.Object, js.Any] {
+  open class DragSelectable protected ()
+    extends PureComponent[IDragSelectableProps, js.Object, Any] {
     def this(props: IDragSelectableProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: IDragSelectableProps, context: js.Any) = this()
+    def this(props: IDragSelectableProps, context: Any) = this()
     
-    /* private */ var didExpandSelectionOnActivate: js.Any = js.native
+    /* private */ var didExpandSelectionOnActivate: Any = js.native
     
     /**
       * Expands the last-selected region to the new region, and replaces the
       * last-selected region with the expanded region. If a focused cell is provided,
       * the focused cell will serve as an anchor for the expansion.
       */
-    /* private */ var expandSelectedRegions: js.Any = js.native
+    /* private */ var expandSelectedRegions: Any = js.native
     
-    /* private */ var finishInteraction: js.Any = js.native
+    /* private */ var finishInteraction: Any = js.native
     
-    /* private */ var getDraggableProps: js.Any = js.native
+    /* private */ var getDraggableProps: Any = js.native
     
-    /* private */ var handleActivate: js.Any = js.native
+    /* private */ var handleActivate: Any = js.native
     
-    /* private */ var handleAddDisjointSelection: js.Any = js.native
+    /* private */ var handleAddDisjointSelection: Any = js.native
     
-    /* private */ var handleClearAllSelectionsNotAtIndex: js.Any = js.native
+    /* private */ var handleClearAllSelectionsNotAtIndex: Any = js.native
     
-    /* private */ var handleClearSelectionAtIndex: js.Any = js.native
+    /* private */ var handleClearSelectionAtIndex: Any = js.native
     
-    /* private */ var handleClick: js.Any = js.native
+    /* private */ var handleClick: Any = js.native
     
-    /* private */ var handleDragEnd: js.Any = js.native
+    /* private */ var handleDragEnd: Any = js.native
     
-    /* private */ var handleDragMove: js.Any = js.native
+    /* private */ var handleDragMove: Any = js.native
     
-    /* private */ var handleExpandSelection: js.Any = js.native
+    /* private */ var handleExpandSelection: Any = js.native
     
-    /* private */ var handleReplaceSelection: js.Any = js.native
+    /* private */ var handleReplaceSelection: Any = js.native
     
-    /* private */ var invokeOnFocusCallbackForRegion: js.Any = js.native
+    /* private */ var invokeOnFocusCallbackForRegion: Any = js.native
     
-    /* private */ var lastEmittedSelectedRegions: js.Any = js.native
+    /* private */ var lastEmittedSelectedRegions: Any = js.native
     
-    /* private */ var maybeInvokeSelectionCallback: js.Any = js.native
+    /* private */ var maybeInvokeSelectionCallback: Any = js.native
     
-    /* private */ var shouldAddDisjointSelection: js.Any = js.native
+    /* private */ var shouldAddDisjointSelection: Any = js.native
     
-    /* private */ var shouldExpandSelection: js.Any = js.native
+    /* private */ var shouldExpandSelection: Any = js.native
     
-    /* private */ var shouldIgnoreMouseDown: js.Any = js.native
+    /* private */ var shouldIgnoreMouseDown: Any = js.native
   }
   /* static members */
   object DragSelectable {
@@ -85,8 +86,12 @@ object selectableMod {
     extends StObject
        with ISelectableProps {
     
+    /** Element to make interactive. */
+    var children: js.UndefOr[ReactNode] = js.native
+    
     /**
       * Whether the selection behavior is disabled.
+      *
       * @default false
       */
     var disabled: js.UndefOr[Boolean | (js.Function1[/* event */ MouseEvent, Boolean])] = js.native
@@ -100,15 +105,15 @@ object selectableMod {
       * A callback that determines a `Region` for the single `MouseEvent`. If
       * no valid region can be found, `null` may be returned.
       */
-    def locateClick(event: MouseEvent): IRegion = js.native
+    def locateClick(event: MouseEvent): Region = js.native
     
     /**
       * A callback that determines a `Region` for the `MouseEvent` and
       * coordinate data representing a drag. If no valid region can be found,
       * `null` may be returned.
       */
-    def locateDrag(event: MouseEvent, coords: ICoordinateData): IRegion = js.native
-    def locateDrag(event: MouseEvent, coords: ICoordinateData, returnEndOnly: Boolean): IRegion = js.native
+    def locateDrag(event: MouseEvent, coords: ICoordinateData): js.UndefOr[Region] = js.native
+    def locateDrag(event: MouseEvent, coords: ICoordinateData, returnEndOnly: Boolean): js.UndefOr[Region] = js.native
   }
   
   trait ISelectableProps extends StObject {
@@ -117,6 +122,7 @@ object selectableMod {
       * If `false`, only a single region of a single column/row/cell may be
       * selected at one time. Using `ctrl` or `meta` key will have no effect,
       * and a mouse drag will select the current column/row/cell only.
+      *
       * @default false
       */
     var enableMultipleSelection: js.UndefOr[Boolean] = js.undefined
@@ -124,28 +130,28 @@ object selectableMod {
     /**
       * The currently focused cell.
       */
-    var focusedCell: js.UndefOr[IFocusedCellCoordinates] = js.undefined
+    var focusedCell: js.UndefOr[FocusedCellCoordinates] = js.undefined
     
     /**
       * When the user focuses something, this callback is called with new
       * focused cell coordinates. This should be considered the new focused cell
       * state for the entire table.
       */
-    def onFocusedCell(focusedCell: IFocusedCellCoordinates): Unit
+    def onFocusedCell(focusedCell: FocusedCellCoordinates): Unit
     
     /**
       * When the user selects something, this callback is called with a new
       * array of `Region`s. This array should be considered the new selection
       * state for the entire table.
       */
-    def onSelection(regions: js.Array[IRegion]): Unit
+    def onSelection(regions: js.Array[Region]): Unit
     
     /**
       * An additional convenience callback invoked when the user releases the
       * mouse from either a click or a drag, indicating that the selection
       * interaction has ended.
       */
-    var onSelectionEnd: js.UndefOr[js.Function1[/* regions */ js.Array[IRegion], Unit]] = js.undefined
+    var onSelectionEnd: js.UndefOr[js.Function1[/* regions */ js.Array[Region], Unit]] = js.undefined
     
     /**
       * An optional transform function that will be applied to the located
@@ -159,13 +165,14 @@ object selectableMod {
     
     /**
       * An array containing the table's selection Regions.
+      *
       * @default []
       */
-    var selectedRegions: js.UndefOr[js.Array[IRegion]] = js.undefined
+    var selectedRegions: js.UndefOr[js.Array[Region]] = js.undefined
   }
   object ISelectableProps {
     
-    inline def apply(onFocusedCell: IFocusedCellCoordinates => Unit, onSelection: js.Array[IRegion] => Unit): ISelectableProps = {
+    inline def apply(onFocusedCell: FocusedCellCoordinates => Unit, onSelection: js.Array[Region] => Unit): ISelectableProps = {
       val __obj = js.Dynamic.literal(onFocusedCell = js.Any.fromFunction1(onFocusedCell), onSelection = js.Any.fromFunction1(onSelection))
       __obj.asInstanceOf[ISelectableProps]
     }
@@ -176,36 +183,38 @@ object selectableMod {
       
       inline def setEnableMultipleSelectionUndefined: Self = StObject.set(x, "enableMultipleSelection", js.undefined)
       
-      inline def setFocusedCell(value: IFocusedCellCoordinates): Self = StObject.set(x, "focusedCell", value.asInstanceOf[js.Any])
+      inline def setFocusedCell(value: FocusedCellCoordinates): Self = StObject.set(x, "focusedCell", value.asInstanceOf[js.Any])
       
       inline def setFocusedCellUndefined: Self = StObject.set(x, "focusedCell", js.undefined)
       
-      inline def setOnFocusedCell(value: IFocusedCellCoordinates => Unit): Self = StObject.set(x, "onFocusedCell", js.Any.fromFunction1(value))
+      inline def setOnFocusedCell(value: FocusedCellCoordinates => Unit): Self = StObject.set(x, "onFocusedCell", js.Any.fromFunction1(value))
       
-      inline def setOnSelection(value: js.Array[IRegion] => Unit): Self = StObject.set(x, "onSelection", js.Any.fromFunction1(value))
+      inline def setOnSelection(value: js.Array[Region] => Unit): Self = StObject.set(x, "onSelection", js.Any.fromFunction1(value))
       
-      inline def setOnSelectionEnd(value: /* regions */ js.Array[IRegion] => Unit): Self = StObject.set(x, "onSelectionEnd", js.Any.fromFunction1(value))
+      inline def setOnSelectionEnd(value: /* regions */ js.Array[Region] => Unit): Self = StObject.set(x, "onSelectionEnd", js.Any.fromFunction1(value))
       
       inline def setOnSelectionEndUndefined: Self = StObject.set(x, "onSelectionEnd", js.undefined)
       
       inline def setSelectedRegionTransform(
-        value: (/* region */ IRegion, /* event */ MouseEvent | KeyboardEvent, /* coords */ js.UndefOr[ICoordinateData]) => IRegion
+        value: (/* region */ Region, /* event */ MouseEvent | KeyboardEvent, /* coords */ js.UndefOr[ICoordinateData]) => Region
       ): Self = StObject.set(x, "selectedRegionTransform", js.Any.fromFunction3(value))
       
       inline def setSelectedRegionTransformUndefined: Self = StObject.set(x, "selectedRegionTransform", js.undefined)
       
-      inline def setSelectedRegions(value: js.Array[IRegion]): Self = StObject.set(x, "selectedRegions", value.asInstanceOf[js.Any])
+      inline def setSelectedRegions(value: js.Array[Region]): Self = StObject.set(x, "selectedRegions", value.asInstanceOf[js.Any])
       
       inline def setSelectedRegionsUndefined: Self = StObject.set(x, "selectedRegions", js.undefined)
       
-      inline def setSelectedRegionsVarargs(value: IRegion*): Self = StObject.set(x, "selectedRegions", js.Array(value :_*))
+      inline def setSelectedRegionsVarargs(value: Region*): Self = StObject.set(x, "selectedRegions", js.Array(value*))
     }
   }
   
   type ISelectedRegionTransform = js.Function3[
-    /* region */ IRegion, 
+    /* region */ Region, 
     /* event */ MouseEvent | KeyboardEvent, 
     /* coords */ js.UndefOr[ICoordinateData], 
-    IRegion
+    Region
   ]
+  
+  type SelectedRegionTransform = ISelectedRegionTransform
 }

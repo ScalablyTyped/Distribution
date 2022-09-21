@@ -101,7 +101,7 @@ object UploadOptions {
     
     inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    inline def setFilesVarargs(value: UploadFile*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: UploadFile*): Self = StObject.set(x, "files", js.Array(value*))
     
     inline def setLocalization(value: UploadLocalization): Self = StObject.set(x, "localization", value.asInstanceOf[js.Any])
     

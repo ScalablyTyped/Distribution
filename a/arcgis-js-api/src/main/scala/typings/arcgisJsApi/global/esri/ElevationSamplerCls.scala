@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ElevationSampler.html)
   */
-class ElevationSamplerCls ()
+open class ElevationSamplerCls ()
   extends StObject
      with typings.arcgisJsApi.esri.ElevationSampler

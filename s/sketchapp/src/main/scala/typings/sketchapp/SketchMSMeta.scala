@@ -69,13 +69,13 @@ object SketchMSMeta {
     
     inline def setFonts(value: js.Array[String]): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
     
-    inline def setFontsVarargs(value: String*): Self = StObject.set(x, "fonts", js.Array(value :_*))
+    inline def setFontsVarargs(value: String*): Self = StObject.set(x, "fonts", js.Array(value*))
     
     inline def setPagesAndArtboards(value: SketchMSPagesAndArtboards): Self = StObject.set(x, "pagesAndArtboards", value.asInstanceOf[js.Any])
     
     inline def setSaveHistory(value: js.Array[String]): Self = StObject.set(x, "saveHistory", value.asInstanceOf[js.Any])
     
-    inline def setSaveHistoryVarargs(value: String*): Self = StObject.set(x, "saveHistory", js.Array(value :_*))
+    inline def setSaveHistoryVarargs(value: String*): Self = StObject.set(x, "saveHistory", js.Array(value*))
     
     inline def setVariant(value: String): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     

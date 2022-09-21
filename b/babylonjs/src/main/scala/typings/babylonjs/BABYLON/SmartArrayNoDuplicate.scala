@@ -8,14 +8,14 @@ trait SmartArrayNoDuplicate[T]
   extends StObject
      with SmartArray[T] {
   
-  /* private */ var _duplicateId: js.Any
+  /* private */ var _duplicateId: Any
   
   /**
     * Concats the active data with a given array.
-    * This ensures no dupplicate will be present in the result.
+    * This ensures no duplicate will be present in the result.
     * @param array defines the data to concatenate with.
     */
-  def concatWithNoDuplicate(array: js.Any): Unit
+  def concatWithNoDuplicate(array: Any): Unit
   
   /**
     * Pushes a value at the end of the active data.
@@ -28,10 +28,10 @@ trait SmartArrayNoDuplicate[T]
 object SmartArrayNoDuplicate {
   
   inline def apply[T](
-    _duplicateId: js.Any,
+    _duplicateId: Any,
     _id: Double,
-    concat: js.Any => Unit,
-    concatWithNoDuplicate: js.Any => Unit,
+    concat: Any => Unit,
+    concatWithNoDuplicate: Any => Unit,
     contains: T => Boolean,
     data: js.Array[T],
     dispose: () => Unit,
@@ -49,10 +49,10 @@ object SmartArrayNoDuplicate {
   
   extension [Self <: SmartArrayNoDuplicate[?], T](x: Self & SmartArrayNoDuplicate[T]) {
     
-    inline def setConcatWithNoDuplicate(value: js.Any => Unit): Self = StObject.set(x, "concatWithNoDuplicate", js.Any.fromFunction1(value))
+    inline def setConcatWithNoDuplicate(value: Any => Unit): Self = StObject.set(x, "concatWithNoDuplicate", js.Any.fromFunction1(value))
     
     inline def setPushNoDuplicate(value: T => Boolean): Self = StObject.set(x, "pushNoDuplicate", js.Any.fromFunction1(value))
     
-    inline def set_duplicateId(value: js.Any): Self = StObject.set(x, "_duplicateId", value.asInstanceOf[js.Any])
+    inline def set_duplicateId(value: Any): Self = StObject.set(x, "_duplicateId", value.asInstanceOf[js.Any])
   }
 }

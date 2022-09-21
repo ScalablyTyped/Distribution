@@ -1,54 +1,34 @@
 package typings.chrome.chrome.input.ime
 
+import typings.chrome.chrome.events.Event
+import typings.chrome.chromeStrings.undo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type ActivateEvent = typings.chrome.chrome.events.Event[
-js.Function2[/* engineID */ java.lang.String, /* screen */ java.lang.String, scala.Unit]]
+type ActivateEvent = Event[js.Function2[/* engineID */ String, /* screen */ String, Unit]]
 
-type AssistiveWindowButtonClickedEvent = typings.chrome.chrome.events.Event[
-js.Function1[
-  /* details */ typings.chrome.chrome.input.ime.AssistiveWindowButtonClickedDetails, 
-  scala.Unit
-]]
+type AssistiveWindowButtonClickedEvent = Event[js.Function1[/* details */ AssistiveWindowButtonClickedDetails, Unit]]
 
-type AssistiveWindowType = typings.chrome.chromeStrings.undo
+type AssistiveWindowType = undo
 
-type BlurEvent = typings.chrome.chrome.events.Event[js.Function1[/* contextID */ scala.Double, scala.Unit]]
+type BlurEvent = Event[js.Function1[/* contextID */ Double, Unit]]
 
-type CandidateClickedEvent = typings.chrome.chrome.events.Event[
-js.Function3[
-  /* engineID */ java.lang.String, 
-  /* candidateID */ scala.Double, 
-  /* button */ java.lang.String, 
-  scala.Unit
-]]
+type CandidateClickedEvent = Event[
+js.Function3[/* engineID */ String, /* candidateID */ Double, /* button */ String, Unit]]
 
-type DeactivatedEvent = typings.chrome.chrome.events.Event[js.Function1[/* engineID */ java.lang.String, scala.Unit]]
+type DeactivatedEvent = Event[js.Function1[/* engineID */ String, Unit]]
 
-type FocusEvent = typings.chrome.chrome.events.Event[
-js.Function1[/* context */ typings.chrome.chrome.input.ime.InputContext, scala.Unit]]
+type FocusEvent = Event[js.Function1[/* context */ InputContext, Unit]]
 
-type InputContextUpdateEvent = typings.chrome.chrome.events.Event[
-js.Function1[/* context */ typings.chrome.chrome.input.ime.InputContext, scala.Unit]]
+type InputContextUpdateEvent = Event[js.Function1[/* context */ InputContext, Unit]]
 
-type InputResetEvent = typings.chrome.chrome.events.Event[js.Function1[/* engineID */ java.lang.String, scala.Unit]]
+type InputResetEvent = Event[js.Function1[/* engineID */ String, Unit]]
 
-type KeyEventEvent = typings.chrome.chrome.events.Event[
-js.Function2[
-  /* engineID */ java.lang.String, 
-  /* keyData */ typings.chrome.chrome.input.ime.KeyboardEvent, 
-  scala.Unit
-]]
+type KeyEventEvent = Event[js.Function2[/* engineID */ String, /* keyData */ KeyboardEvent, Unit]]
 
-type MenuItemActivatedEvent = typings.chrome.chrome.events.Event[
-js.Function2[/* engineID */ java.lang.String, /* name */ java.lang.String, scala.Unit]]
+type MenuItemActivatedEvent = Event[js.Function2[/* engineID */ String, /* name */ String, Unit]]
 
-type SurroundingTextChangedEvent = typings.chrome.chrome.events.Event[
-js.Function2[
-  /* engineID */ java.lang.String, 
-  /* surroundingInfo */ typings.chrome.chrome.input.ime.SurroundingTextInfo, 
-  scala.Unit
-]]
+type SurroundingTextChangedEvent = Event[
+js.Function2[/* engineID */ String, /* surroundingInfo */ SurroundingTextInfo, Unit]]

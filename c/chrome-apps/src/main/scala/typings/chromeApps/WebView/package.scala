@@ -1,5 +1,6 @@
 package typings.chromeApps.WebView
 
+import typings.chromeApps.HTMLWebViewElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,12 +20,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * an embedded web page, react to error events that happen within it.
   */
 /* was `typeof HTMLWebViewElement` */
-type ^ = typings.chromeApps.HTMLWebViewElement
+type ^ = HTMLWebViewElement
 
-type WebRedirectionResponseEvent = typings.chromeApps.WebView._WebResponseHeadersEvent[typings.chromeApps.WebView.WebRedirectionResponseDetails]
+type WebRedirectionResponseEvent = _WebResponseHeadersEvent[WebRedirectionResponseDetails]
 
-type WebResponseCacheEvent = typings.chromeApps.WebView._WebResponseHeadersEvent[typings.chromeApps.WebView.WebResponseCacheDetails]
+type WebResponseCacheEvent = _WebResponseHeadersEvent[WebResponseCacheDetails]
 
-type WebResponseErrorEvent = typings.chromeApps.WebView._WebResponseHeadersEvent[typings.chromeApps.WebView.WebResponseErrorDetails]
+type WebResponseErrorEvent = _WebResponseHeadersEvent[WebResponseErrorDetails]
 
-type WebResponseHeadersEvent = typings.chromeApps.WebView._WebResponseHeadersEvent[typings.chromeApps.WebView.WebResponseHeadersDetails]
+type WebResponseHeadersEvent = _WebResponseHeadersEvent[WebResponseHeadersDetails]

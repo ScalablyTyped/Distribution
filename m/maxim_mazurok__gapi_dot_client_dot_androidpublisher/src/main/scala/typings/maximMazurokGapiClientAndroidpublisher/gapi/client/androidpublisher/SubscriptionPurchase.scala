@@ -75,7 +75,10 @@ trait SubscriptionPurchase extends StObject {
     */
   var obfuscatedExternalProfileId: js.UndefOr[String] = js.undefined
   
-  /** The order id of the latest recurring order associated with the purchase of the subscription. */
+  /**
+    * The order id of the latest recurring order associated with the purchase of the subscription. If the subscription was canceled because payment was declined, this will be the order id
+    * from the payment declined order.
+    */
   var orderId: js.UndefOr[String] = js.undefined
   
   /**
@@ -85,8 +88,8 @@ trait SubscriptionPurchase extends StObject {
   var paymentState: js.UndefOr[Double] = js.undefined
   
   /**
-    * Price of the subscription, not including tax. Price is expressed in micro-units, where 1,000,000 micro-units represents one unit of the currency. For example, if the subscription
-    * price is €1.99, price_amount_micros is 1990000.
+    * Price of the subscription, For tax exclusive countries, the price doesn't include tax. For tax inclusive countries, the price includes tax. Price is expressed in micro-units, where
+    * 1,000,000 micro-units represents one unit of the currency. For example, if the subscription price is €1.99, price_amount_micros is 1990000.
     */
   var priceAmountMicros: js.UndefOr[String] = js.undefined
   

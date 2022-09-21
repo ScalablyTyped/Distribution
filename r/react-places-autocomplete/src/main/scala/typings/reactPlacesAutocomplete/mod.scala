@@ -1,9 +1,9 @@
 package typings.reactPlacesAutocomplete
 
-import typings.googlemaps.google.maps.GeocoderResult
-import typings.googlemaps.google.maps.LatLngLiteral
-import typings.googlemaps.google.maps.places.PredictionSubstring
-import typings.googlemaps.google.maps.places.PredictionTerm
+import typings.googleMaps.google.maps.GeocoderResult
+import typings.googleMaps.google.maps.LatLngLiteral
+import typings.googleMaps.google.maps.places.PredictionSubstring
+import typings.googleMaps.google.maps.places.PredictionTerm
 import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import typings.reactPlacesAutocomplete.anon.Bounds
@@ -21,8 +21,8 @@ object mod {
   
   @JSImport("react-places-autocomplete", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[PropTypes, js.Object, js.Any]
+  open class default ()
+    extends Component[PropTypes, js.Object, Any]
   
   inline def geocodeByAddress(address: String): js.Promise[js.Array[GeocoderResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("geocodeByAddress")(address.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[GeocoderResult]]]
   
@@ -30,9 +30,9 @@ object mod {
   
   inline def getLatLng(results: GeocoderResult): js.Promise[LatLngLiteral] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLatLng")(results.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LatLngLiteral]]
   
-  type AutocompletePrediction = typings.googlemaps.google.maps.places.AutocompletePrediction
+  type AutocompletePrediction = typings.googleMaps.google.maps.places.AutocompletePrediction
   
-  type PlacesAutocomplete = Component[PropTypes, js.Object, js.Any]
+  type PlacesAutocomplete = Component[PropTypes, js.Object, Any]
   
   trait PropTypes extends StObject {
     
@@ -158,17 +158,17 @@ object mod {
       
       inline def setMatchedSubstrings(value: js.Array[PredictionSubstring]): Self = StObject.set(x, "matchedSubstrings", value.asInstanceOf[js.Any])
       
-      inline def setMatchedSubstringsVarargs(value: PredictionSubstring*): Self = StObject.set(x, "matchedSubstrings", js.Array(value :_*))
+      inline def setMatchedSubstringsVarargs(value: PredictionSubstring*): Self = StObject.set(x, "matchedSubstrings", js.Array(value*))
       
       inline def setPlaceId(value: String): Self = StObject.set(x, "placeId", value.asInstanceOf[js.Any])
       
       inline def setTerms(value: js.Array[PredictionTerm]): Self = StObject.set(x, "terms", value.asInstanceOf[js.Any])
       
-      inline def setTermsVarargs(value: PredictionTerm*): Self = StObject.set(x, "terms", js.Array(value :_*))
+      inline def setTermsVarargs(value: PredictionTerm*): Self = StObject.set(x, "terms", js.Array(value*))
       
       inline def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
       
-      inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
+      inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value*))
     }
   }
 }

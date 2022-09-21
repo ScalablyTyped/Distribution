@@ -8,31 +8,29 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Navigate extends StObject {
-  
-  var DATE: typings.reactBigCalendar.reactBigCalendarStrings.DATE
-  
-  var NEXT: typings.reactBigCalendar.reactBigCalendarStrings.NEXT
-  
-  var PREVIOUS: PREV
-  
-  var TODAY: typings.reactBigCalendar.reactBigCalendarStrings.TODAY
-}
 object Navigate {
   
-  inline def apply(): Navigate = {
-    val __obj = js.Dynamic.literal(DATE = "DATE", NEXT = "NEXT", PREVIOUS = "PREV", TODAY = "TODAY")
-    __obj.asInstanceOf[Navigate]
-  }
+  @JSImport("react-big-calendar", "Navigate")
+  @js.native
+  val ^ : js.Any = js.native
   
-  extension [Self <: Navigate](x: Self) {
-    
-    inline def setDATE(value: DATE): Self = StObject.set(x, "DATE", value.asInstanceOf[js.Any])
-    
-    inline def setNEXT(value: NEXT): Self = StObject.set(x, "NEXT", value.asInstanceOf[js.Any])
-    
-    inline def setPREVIOUS(value: PREV): Self = StObject.set(x, "PREVIOUS", value.asInstanceOf[js.Any])
-    
-    inline def setTODAY(value: TODAY): Self = StObject.set(x, "TODAY", value.asInstanceOf[js.Any])
-  }
+  @JSImport("react-big-calendar", "Navigate.DATE")
+  @js.native
+  def DATE: typings.reactBigCalendar.reactBigCalendarStrings.DATE = js.native
+  inline def DATE_=(x: DATE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DATE")(x.asInstanceOf[js.Any])
+  
+  @JSImport("react-big-calendar", "Navigate.NEXT")
+  @js.native
+  def NEXT: typings.reactBigCalendar.reactBigCalendarStrings.NEXT = js.native
+  inline def NEXT_=(x: NEXT): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NEXT")(x.asInstanceOf[js.Any])
+  
+  @JSImport("react-big-calendar", "Navigate.PREVIOUS")
+  @js.native
+  def PREVIOUS: PREV = js.native
+  inline def PREVIOUS_=(x: PREV): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PREVIOUS")(x.asInstanceOf[js.Any])
+  
+  @JSImport("react-big-calendar", "Navigate.TODAY")
+  @js.native
+  def TODAY: typings.reactBigCalendar.reactBigCalendarStrings.TODAY = js.native
+  inline def TODAY_=(x: TODAY): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TODAY")(x.asInstanceOf[js.Any])
 }

@@ -10,7 +10,7 @@ trait InsertFirst extends StObject {
   
   var mask: js.UndefOr[Double] = js.undefined
   
-  var scope: js.UndefOr[js.Any] = js.undefined
+  var scope: js.UndefOr[Any] = js.undefined
 }
 object InsertFirst {
   
@@ -29,7 +29,7 @@ object InsertFirst {
     
     inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
     
-    inline def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
   }

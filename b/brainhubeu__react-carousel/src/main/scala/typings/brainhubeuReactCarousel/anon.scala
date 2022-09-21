@@ -1,6 +1,8 @@
 package typings.brainhubeuReactCarousel
 
+import typings.brainhubeuReactCarousel.mod.CarouselPluginTypes
 import typings.brainhubeuReactCarousel.mod.PluginStrategy
+import typings.react.mod.ReactNode
 import typings.react.mod.RefObject
 import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
@@ -19,17 +21,17 @@ object anon {
     
     var carouselClassNames: js.UndefOr[js.Function0[js.Array[String]]] = js.undefined
     
-    var carouselCustomProps: js.UndefOr[js.Function0[Record[String, js.Function0[js.Any]]]] = js.undefined
+    var carouselCustomProps: js.UndefOr[js.Function0[Record[String, js.Function0[Any]]]] = js.undefined
     
     var itemClassNames: js.UndefOr[js.Function0[js.Array[String]]] = js.undefined
     
     var plugin: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var slideCustomProps: js.UndefOr[js.Function0[Record[String, js.Function0[js.Any]]]] = js.undefined
+    var slideCustomProps: js.UndefOr[js.Function0[Record[String, js.Function0[Any]]]] = js.undefined
     
     var strategies: js.UndefOr[js.Function0[Record[String, PluginStrategy]]] = js.undefined
     
-    var trackCustomProps: js.UndefOr[js.Function0[Record[String, js.Function0[js.Any]]]] = js.undefined
+    var trackCustomProps: js.UndefOr[js.Function0[Record[String, js.Function0[Any]]]] = js.undefined
   }
   object AfterCarouselItems {
     
@@ -52,7 +54,7 @@ object anon {
       
       inline def setCarouselClassNamesUndefined: Self = StObject.set(x, "carouselClassNames", js.undefined)
       
-      inline def setCarouselCustomProps(value: () => Record[String, js.Function0[js.Any]]): Self = StObject.set(x, "carouselCustomProps", js.Any.fromFunction0(value))
+      inline def setCarouselCustomProps(value: () => Record[String, js.Function0[Any]]): Self = StObject.set(x, "carouselCustomProps", js.Any.fromFunction0(value))
       
       inline def setCarouselCustomPropsUndefined: Self = StObject.set(x, "carouselCustomProps", js.undefined)
       
@@ -64,7 +66,7 @@ object anon {
       
       inline def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
       
-      inline def setSlideCustomProps(value: () => Record[String, js.Function0[js.Any]]): Self = StObject.set(x, "slideCustomProps", js.Any.fromFunction0(value))
+      inline def setSlideCustomProps(value: () => Record[String, js.Function0[Any]]): Self = StObject.set(x, "slideCustomProps", js.Any.fromFunction0(value))
       
       inline def setSlideCustomPropsUndefined: Self = StObject.set(x, "slideCustomProps", js.undefined)
       
@@ -72,7 +74,7 @@ object anon {
       
       inline def setStrategiesUndefined: Self = StObject.set(x, "strategies", js.undefined)
       
-      inline def setTrackCustomProps(value: () => Record[String, js.Function0[js.Any]]): Self = StObject.set(x, "trackCustomProps", js.Any.fromFunction0(value))
+      inline def setTrackCustomProps(value: () => Record[String, js.Function0[Any]]): Self = StObject.set(x, "trackCustomProps", js.Any.fromFunction0(value))
       
       inline def setTrackCustomPropsUndefined: Self = StObject.set(x, "trackCustomProps", js.undefined)
     }
@@ -82,7 +84,7 @@ object anon {
     
     var carouselProps: typings.brainhubeuReactCarousel.mod.CarouselProps
     
-    var options: js.UndefOr[js.Any] = js.undefined
+    var options: js.UndefOr[Any] = js.undefined
     
     var refs: Record[String, RefObject[HTMLElement]]
   }
@@ -100,7 +102,7 @@ object anon {
       
       inline def setCarouselProps(value: typings.brainhubeuReactCarousel.mod.CarouselProps): Self = StObject.set(x, "carouselProps", value.asInstanceOf[js.Any])
       
-      inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
@@ -108,10 +110,12 @@ object anon {
     }
   }
   
-  /* Inlined std.Pick<@brainhubeu/react-carousel.@brainhubeu/react-carousel.CarouselProps, std.Exclude<keyof @brainhubeu/react-carousel.@brainhubeu/react-carousel.CarouselProps, 'breakpoints' | 'plugins'>> */
+  /* Inlined std.Pick<@brainhubeu/react-carousel.@brainhubeu/react-carousel.CarouselProps, std.Exclude<keyof @brainhubeu/react-carousel.@brainhubeu/react-carousel.CarouselProps, 'breakpoints'>> */
   trait PickCarouselPropsExcludek extends StObject {
     
     var animationSpeed: js.UndefOr[Double] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -122,6 +126,8 @@ object anon {
     var offset: js.UndefOr[Double] = js.undefined
     
     var onChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
+    
+    var plugins: js.UndefOr[js.Array[String | CarouselPluginTypes]] = js.undefined
     
     var slides: js.UndefOr[js.Array[Element]] = js.undefined
     
@@ -139,6 +145,10 @@ object anon {
       inline def setAnimationSpeed(value: Double): Self = StObject.set(x, "animationSpeed", value.asInstanceOf[js.Any])
       
       inline def setAnimationSpeedUndefined: Self = StObject.set(x, "animationSpeed", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -160,11 +170,17 @@ object anon {
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
+      inline def setPlugins(value: js.Array[String | CarouselPluginTypes]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      
+      inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+      
+      inline def setPluginsVarargs(value: (String | CarouselPluginTypes)*): Self = StObject.set(x, "plugins", js.Array(value*))
+      
       inline def setSlides(value: js.Array[Element]): Self = StObject.set(x, "slides", value.asInstanceOf[js.Any])
       
       inline def setSlidesUndefined: Self = StObject.set(x, "slides", js.undefined)
       
-      inline def setSlidesVarargs(value: Element*): Self = StObject.set(x, "slides", js.Array(value :_*))
+      inline def setSlidesVarargs(value: Element*): Self = StObject.set(x, "slides", js.Array(value*))
       
       inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       

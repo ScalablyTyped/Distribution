@@ -11,9 +11,9 @@ Resilient and performant in-memory cache for node.js
 | Full name          | stale-lru-cache |
 | Keywords           | lru, cache, stale-while-revalidate, max-age, cache-control |
 | # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 687934 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 11288.666666666666 |
+| # stars            | 48.0 |
 
 ## Links
 - [Homepage](https://github.com/cyberthom/stale-lru-cache#readme)

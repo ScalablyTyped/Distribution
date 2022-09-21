@@ -10,7 +10,7 @@ object objectWritableMockMod {
   
   @JSImport("stream-mock/lib/writable/ObjectWritableMock", JSImport.Default)
   @js.native
-  class default () extends ObjectWritableMock {
+  open class default () extends ObjectWritableMock {
     def this(options: WritableOptions) = this()
   }
   
@@ -18,9 +18,9 @@ object objectWritableMockMod {
   trait ObjectWritableMock extends IWritableMock {
     
     @JSName("data")
-    var data_ObjectWritableMock: js.Array[js.Any] = js.native
+    var data_ObjectWritableMock: js.Array[Any] = js.native
     
     @JSName("flatData")
-    var flatData_ObjectWritableMock: js.Array[js.Any] = js.native
+    var flatData_ObjectWritableMock: js.Array[Any] = js.native
   }
 }

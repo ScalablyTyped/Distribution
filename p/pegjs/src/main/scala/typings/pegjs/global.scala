@@ -20,8 +20,8 @@ object global {
     
     @JSGlobal("PEG.GrammarError")
     @js.native
-    def GrammarError: js.Any = js.native
-    inline def GrammarError_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GrammarError")(x.asInstanceOf[js.Any])
+    def GrammarError: Any = js.native
+    inline def GrammarError_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GrammarError")(x.asInstanceOf[js.Any])
     
     inline def generate(grammar: String): Parser_ = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(grammar.asInstanceOf[js.Any]).asInstanceOf[Parser_]
     inline def generate(grammar: String, options: OutputFormatAmdCommonjs): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(grammar.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -38,8 +38,8 @@ object global {
       
       @JSGlobal("PEG.parser.SyntaxError")
       @js.native
-      def SyntaxError: js.Any = js.native
-      inline def SyntaxError_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SyntaxError")(x.asInstanceOf[js.Any])
+      def SyntaxError: Any = js.native
+      inline def SyntaxError_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SyntaxError")(x.asInstanceOf[js.Any])
     }
   }
 }

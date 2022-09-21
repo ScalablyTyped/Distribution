@@ -13,10 +13,7 @@ object emptyMod {
   
   @JSImport("@lumino/algorithm/types/empty", "EmptyIterator")
   @js.native
-  /**
-    * Construct a new empty iterator.
-    */
-  class EmptyIterator[T] ()
+  open class EmptyIterator[T] ()
     extends StObject
        with IIterator[T] {
     

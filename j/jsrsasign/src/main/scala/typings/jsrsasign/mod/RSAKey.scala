@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Tom Wu's RSA Key class and extension */
 @JSImport("jsrsasign", "RSAKey")
 @js.native
-class RSAKey ()
+open class RSAKey ()
   extends StObject
      with typings.jsrsasign.jsrsasign.RSAKey {
   
@@ -61,10 +61,10 @@ class RSAKey ()
     * @param sMsg message string to be verified.
     * @param hSig hexadecimal string of signature.
     *             non-hexadecimal characters including new lines will be ignored.
-    * @return returns 1 if valid, otherwise 0
+    * @return returns true if valid, otherwise false
     */
   /* CompleteClass */
-  override def verify(sMsg: String, hSig: String): `0` | `1` = js.native
+  override def verify(sMsg: String, hSig: String): Boolean = js.native
 }
 object RSAKey {
   

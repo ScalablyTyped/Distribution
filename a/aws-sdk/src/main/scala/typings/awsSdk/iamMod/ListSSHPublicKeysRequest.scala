@@ -17,7 +17,7 @@ trait ListSSHPublicKeysRequest extends StObject {
   var MaxItems: js.UndefOr[maxItemsType] = js.undefined
   
   /**
-    * The name of the IAM user to list SSH public keys for. If none is specified, the UserName field is determined implicitly based on the AWS access key used to sign the request. This parameter allows (through its regex pattern) a string of characters consisting of upper and lowercase alphanumeric characters with no spaces. You can also include any of the following characters: _+=,.@-
+    * The name of the IAM user to list SSH public keys for. If none is specified, the UserName field is determined implicitly based on the Amazon Web Services access key used to sign the request. This parameter allows (through its regex pattern) a string of characters consisting of upper and lowercase alphanumeric characters with no spaces. You can also include any of the following characters: _+=,.@-
     */
   var UserName: js.UndefOr[userNameType] = js.undefined
 }

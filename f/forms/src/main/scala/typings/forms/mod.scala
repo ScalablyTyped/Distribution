@@ -1,12 +1,13 @@
 package typings.forms
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.forms.anon.Body
+import org.scalablytyped.runtime.TopLevel
 import typings.forms.anon.Empty
 import typings.forms.anon.ValidatePastFirstError
 import typings.forms.anon.WidgetParametersrowsnumbe
+import typings.node.httpMod.IncomingMessage
 import typings.std.Array
-import typings.std.RegExp
+import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,8 +18,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def create(fields: FormFields): Form = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(fields.asInstanceOf[js.Any]).asInstanceOf[Form]
-  inline def create(fields: FormFields, options: ValidatePastFirstError): Form = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(fields.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Form]
+  inline def create[Fields /* <: FormFields */](fields: Fields): Form[Fields] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(fields.asInstanceOf[js.Any]).asInstanceOf[Form[Fields]]
+  inline def create[Fields /* <: FormFields */](fields: Fields, options: ValidatePastFirstError): Form[Fields] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(fields.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Form[Fields]]
   
   object fields {
     
@@ -26,32 +27,32 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def array(): Field = ^.asInstanceOf[js.Dynamic].applyDynamic("array")().asInstanceOf[Field]
-    inline def array(params: FieldParameters): Field = ^.asInstanceOf[js.Dynamic].applyDynamic("array")(params.asInstanceOf[js.Any]).asInstanceOf[Field]
+    inline def array(): Field[js.Array[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("array")().asInstanceOf[Field[js.Array[Any]]]
+    inline def array(params: FieldParameters): Field[js.Array[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("array")(params.asInstanceOf[js.Any]).asInstanceOf[Field[js.Array[Any]]]
     
-    inline def boolean(): Field = ^.asInstanceOf[js.Dynamic].applyDynamic("boolean")().asInstanceOf[Field]
-    inline def boolean(params: FieldParameters): Field = ^.asInstanceOf[js.Dynamic].applyDynamic("boolean")(params.asInstanceOf[js.Any]).asInstanceOf[Field]
+    inline def boolean(): Field[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("boolean")().asInstanceOf[Field[Boolean]]
+    inline def boolean(params: FieldParameters): Field[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("boolean")(params.asInstanceOf[js.Any]).asInstanceOf[Field[Boolean]]
     
-    inline def date(): Field = ^.asInstanceOf[js.Dynamic].applyDynamic("date")().asInstanceOf[Field]
-    inline def date(params: FieldParameters): Field = ^.asInstanceOf[js.Dynamic].applyDynamic("date")(params.asInstanceOf[js.Any]).asInstanceOf[Field]
+    inline def date(): Field[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("date")().asInstanceOf[Field[String]]
+    inline def date(params: FieldParameters): Field[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("date")(params.asInstanceOf[js.Any]).asInstanceOf[Field[String]]
     
-    inline def email(): Field = ^.asInstanceOf[js.Dynamic].applyDynamic("email")().asInstanceOf[Field]
-    inline def email(params: FieldParameters): Field = ^.asInstanceOf[js.Dynamic].applyDynamic("email")(params.asInstanceOf[js.Any]).asInstanceOf[Field]
+    inline def email(): Field[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("email")().asInstanceOf[Field[String]]
+    inline def email(params: FieldParameters): Field[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("email")(params.asInstanceOf[js.Any]).asInstanceOf[Field[String]]
     
-    inline def number(): Field = ^.asInstanceOf[js.Dynamic].applyDynamic("number")().asInstanceOf[Field]
-    inline def number(params: FieldParameters): Field = ^.asInstanceOf[js.Dynamic].applyDynamic("number")(params.asInstanceOf[js.Any]).asInstanceOf[Field]
+    inline def number(): Field[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("number")().asInstanceOf[Field[Double]]
+    inline def number(params: FieldParameters): Field[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("number")(params.asInstanceOf[js.Any]).asInstanceOf[Field[Double]]
     
-    inline def password(): Field = ^.asInstanceOf[js.Dynamic].applyDynamic("password")().asInstanceOf[Field]
-    inline def password(params: FieldParameters): Field = ^.asInstanceOf[js.Dynamic].applyDynamic("password")(params.asInstanceOf[js.Any]).asInstanceOf[Field]
+    inline def password(): Field[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("password")().asInstanceOf[Field[String]]
+    inline def password(params: FieldParameters): Field[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("password")(params.asInstanceOf[js.Any]).asInstanceOf[Field[String]]
     
-    inline def string(): Field = ^.asInstanceOf[js.Dynamic].applyDynamic("string")().asInstanceOf[Field]
-    inline def string(params: FieldParameters): Field = ^.asInstanceOf[js.Dynamic].applyDynamic("string")(params.asInstanceOf[js.Any]).asInstanceOf[Field]
+    inline def string(): Field[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("string")().asInstanceOf[Field[String]]
+    inline def string(params: FieldParameters): Field[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("string")(params.asInstanceOf[js.Any]).asInstanceOf[Field[String]]
     
-    inline def tel(): Field = ^.asInstanceOf[js.Dynamic].applyDynamic("tel")().asInstanceOf[Field]
-    inline def tel(params: FieldParameters): Field = ^.asInstanceOf[js.Dynamic].applyDynamic("tel")(params.asInstanceOf[js.Any]).asInstanceOf[Field]
+    inline def tel(): Field[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("tel")().asInstanceOf[Field[String]]
+    inline def tel(params: FieldParameters): Field[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("tel")(params.asInstanceOf[js.Any]).asInstanceOf[Field[String]]
     
-    inline def url(): Field = ^.asInstanceOf[js.Dynamic].applyDynamic("url")().asInstanceOf[Field]
-    inline def url(params: FieldParameters): Field = ^.asInstanceOf[js.Dynamic].applyDynamic("url")(params.asInstanceOf[js.Any]).asInstanceOf[Field]
+    inline def url(): Field[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("url")().asInstanceOf[Field[String]]
+    inline def url(params: FieldParameters): Field[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("url")(params.asInstanceOf[js.Any]).asInstanceOf[Field[String]]
   }
   
   object render {
@@ -100,8 +101,8 @@ object mod {
     inline def matchField(matchedField: String): ValidatorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("matchField")(matchedField.asInstanceOf[js.Any]).asInstanceOf[ValidatorFunction]
     inline def matchField(matchedField: String, errorMessage: String): ValidatorFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("matchField")(matchedField.asInstanceOf[js.Any], errorMessage.asInstanceOf[js.Any])).asInstanceOf[ValidatorFunction]
     
-    inline def matchValue(valueGetter: js.Function0[js.Any]): ValidatorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("matchValue")(valueGetter.asInstanceOf[js.Any]).asInstanceOf[ValidatorFunction]
-    inline def matchValue(valueGetter: js.Function0[js.Any], errorMessage: String): ValidatorFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("matchValue")(valueGetter.asInstanceOf[js.Any], errorMessage.asInstanceOf[js.Any])).asInstanceOf[ValidatorFunction]
+    inline def matchValue(valueGetter: js.Function0[Any]): ValidatorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("matchValue")(valueGetter.asInstanceOf[js.Any]).asInstanceOf[ValidatorFunction]
+    inline def matchValue(valueGetter: js.Function0[Any], errorMessage: String): ValidatorFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("matchValue")(valueGetter.asInstanceOf[js.Any], errorMessage.asInstanceOf[js.Any])).asInstanceOf[ValidatorFunction]
     
     inline def max(value: Double): ValidatorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(value.asInstanceOf[js.Any]).asInstanceOf[ValidatorFunction]
     inline def max(value: Double, errorMessage: String): ValidatorFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(value.asInstanceOf[js.Any], errorMessage.asInstanceOf[js.Any])).asInstanceOf[ValidatorFunction]
@@ -121,8 +122,8 @@ object mod {
     inline def rangelength(min: Double, max: Double): ValidatorFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("rangelength")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[ValidatorFunction]
     inline def rangelength(min: Double, max: Double, errorMessage: String): ValidatorFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("rangelength")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], errorMessage.asInstanceOf[js.Any])).asInstanceOf[ValidatorFunction]
     
-    inline def regexp(regexp: RegExp): ValidatorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("regexp")(regexp.asInstanceOf[js.Any]).asInstanceOf[ValidatorFunction]
-    inline def regexp(regexp: RegExp, errorMessage: String): ValidatorFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("regexp")(regexp.asInstanceOf[js.Any], errorMessage.asInstanceOf[js.Any])).asInstanceOf[ValidatorFunction]
+    inline def regexp(regexp: js.RegExp): ValidatorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("regexp")(regexp.asInstanceOf[js.Any]).asInstanceOf[ValidatorFunction]
+    inline def regexp(regexp: js.RegExp, errorMessage: String): ValidatorFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("regexp")(regexp.asInstanceOf[js.Any], errorMessage.asInstanceOf[js.Any])).asInstanceOf[ValidatorFunction]
     
     inline def required(): ValidatorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("required")().asInstanceOf[ValidatorFunction]
     inline def required(errorMessage: String): ValidatorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("required")(errorMessage.asInstanceOf[js.Any]).asInstanceOf[ValidatorFunction]
@@ -187,12 +188,12 @@ object mod {
   }
   
   @js.native
-  trait Field
+  trait Field[Data]
     extends StObject
        with FieldParameters {
     
     /** Returns a new bound field object. Calls parse on the data and stores in the bound field's data attribute, stores the raw value in the value attribute. */
-    def bind(rawData: js.Any): FieldBound = js.native
+    def bind[RawData](rawData: RawData): FieldBound[Data, RawData] = js.native
     
     /** Returns an array of default CSS classes considering the field's attributes, e.g. ['field', 'required', 'error'] for a required field with an error message. */
     def classes(): js.Array[String] = js.native
@@ -210,7 +211,7 @@ object mod {
     def labelText(name: String): String = js.native
     
     /** Coerces the raw data from the request into the correct format for the field, returning the result, e.g. '123' becomes 123 for the number field. */
-    def parse(rawData: js.Any): js.Any = js.native
+    def parse(rawData: Any): Data = js.native
     
     /**
       * Calls the iterator with the name and field object as arguments. Defaults to using forms.render.div as the iterator,
@@ -231,28 +232,93 @@ object mod {
     extends StObject
        with Array[js.Tuple2[String, String | FieldArrayChoice]]
   
+  /* Inlined forms.forms.Field<Data> & {  value :RawData,   data :Data,   error :string, validate (form : forms.forms.Form<forms.forms.FormFields>, callback : (err : string, field : forms.forms.Field<unknown>): void): void} */
   @js.native
-  trait FieldBound
-    extends StObject
-       with Field {
+  trait FieldBound[Data, RawData] extends StObject {
+    
+    /** Returns a new bound field object. Calls parse on the data and stores in the bound field's data attribute, stores the raw value in the value attribute. */
+    def bind[RawData](rawData: RawData): FieldBound[Data, RawData] = js.native
+    
+    /** A list of options, used for multiple choice fields. */
+    var choices: js.UndefOr[FieldObjectChoice | FieldArrayChoice] = js.native
+    
+    /** Returns an array of default CSS classes considering the field's attributes, e.g. ['field', 'required', 'error'] for a required field with an error message. */
+    def classes(): js.Array[String] = js.native
+    
+    /** A list of CSS classes for label and field wrapper. */
+    var cssClasses: js.UndefOr[typings.forms.anon.Field] = js.native
     
     /** The request data coerced to the correct format for this field. */
-    var data: js.Any = js.native
+    var data: Data = js.native
     
     /** An error message if the field fails validation. */
     var error: String = js.native
+    
+    /** If true, the error message will be displayed after the field, rather than before. */
+    var errorAfterField: js.UndefOr[Boolean] = js.native
+    
+    /** Returns a string containing a HTML element containing the fields error message, or an empty string if there is no error associated with the field. */
+    def errorHTML(): String = js.native
+    
+    /** For widgets with a fieldset (multipleRadio and multipleCheckbox), set classes for the fieldset. */
+    var fieldsetClasses: js.UndefOr[js.Array[String]] = js.native
+    
+    /** If true, errors won't be rendered automatically. */
+    var hideError: js.UndefOr[Boolean] = js.native
+    
+    /** An optional id to override the default. */
+    var id: js.UndefOr[String] = js.native
+    
+    /** Optional label text which overrides the default. */
+    var label: js.UndefOr[String] = js.native
+    
+    /** If true, the label text will be displayed after the field, rather than before. */
+    var labelAfterField: js.UndefOr[Boolean] = js.native
+    
+    /** Returns a string containing a label element with the correct 'for' attribute containing the text from field.labelText(name). */
+    def labelHTML(name: String): String = js.native
+    def labelHTML(name: String, id: String): String = js.native
+    def labelHTML(name: String, id: Boolean): String = js.native
+    
+    /** Returns a string containing the label text from field.label, or defaults to using the field name with underscores replaced with spaces and the first letter capitalised. */
+    def labelText(): String = js.native
+    def labelText(name: String): String = js.native
+    
+    /** For widgets with a fieldset (multipleRadio and multipleCheckbox), set classes for the fieldset's legend. */
+    var legendClasses: js.UndefOr[js.Array[String]] = js.native
+    
+    /** Coerces the raw data from the request into the correct format for the field, returning the result, e.g. '123' becomes 123 for the number field. */
+    def parse(rawData: Any): Data = js.native
+    
+    /** Boolean describing whether the field is mandatory. */
+    var required: js.UndefOr[Boolean | ValidatorFunction] = js.native
+    
+    /**
+      * Calls the iterator with the name and field object as arguments. Defaults to using forms.render.div as the iterator,
+      * which returns a HTML representation of the field label, error message and widget wrapped in a div.
+      */
+    def toHTML(): String = js.native
+    def toHTML(name: String): String = js.native
+    def toHTML(name: String, iterator: FieldIterator): String = js.native
+    def toHTML(name: Unit, iterator: FieldIterator): String = js.native
     
     /**
       * Checks if the field is required and whether it is empty. Then runs the validator functions in order until one fails or they all pass.
       * If a validator fails, the resulting message is stored in the field's error attribute.
       */
-    def validate(form: Form, callback: js.Function2[/* err */ String, /* field */ Field, Unit]): Unit = js.native
+    def validate(form: Form[FormFields], callback: js.Function2[/* err */ String, /* field */ Field[Any], Unit]): Unit = js.native
+    
+    /** An array of functions which validate the field data. */
+    var validators: js.UndefOr[js.Array[ValidatorFunction]] = js.native
     
     /** The raw value from the request data. */
-    var value: js.Any = js.native
+    var value: RawData = js.native
+    
+    /** A widget object to use when rendering the field. */
+    var widget: Widget = js.native
   }
   
-  type FieldIterator = js.Function2[/* name */ String, /* field */ FieldBound, String]
+  type FieldIterator = js.Function2[/* name */ String, /* field */ FieldBound[Any, Any], String]
   
   trait FieldObjectChoice
     extends StObject
@@ -328,7 +394,7 @@ object mod {
       
       inline def setFieldsetClassesUndefined: Self = StObject.set(x, "fieldsetClasses", js.undefined)
       
-      inline def setFieldsetClassesVarargs(value: String*): Self = StObject.set(x, "fieldsetClasses", js.Array(value :_*))
+      inline def setFieldsetClassesVarargs(value: String*): Self = StObject.set(x, "fieldsetClasses", js.Array(value*))
       
       inline def setHideError(value: Boolean): Self = StObject.set(x, "hideError", value.asInstanceOf[js.Any])
       
@@ -350,12 +416,12 @@ object mod {
       
       inline def setLegendClassesUndefined: Self = StObject.set(x, "legendClasses", js.undefined)
       
-      inline def setLegendClassesVarargs(value: String*): Self = StObject.set(x, "legendClasses", js.Array(value :_*))
+      inline def setLegendClassesVarargs(value: String*): Self = StObject.set(x, "legendClasses", js.Array(value*))
       
       inline def setRequired(value: Boolean | ValidatorFunction): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
       inline def setRequiredFunction3(
-        value: (/* form */ FormBound, /* field */ FieldBound, /* callback */ js.Function1[/* err */ js.UndefOr[String], Unit]) => Unit
+        value: (/* form */ FormBound[Any, FormData[Any]], /* field */ FieldBound[Any, Any], /* callback */ js.Function1[/* err */ js.UndefOr[String], Unit]) => Unit
       ): Self = StObject.set(x, "required", js.Any.fromFunction3(value))
       
       inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
@@ -364,7 +430,7 @@ object mod {
       
       inline def setValidatorsUndefined: Self = StObject.set(x, "validators", js.undefined)
       
-      inline def setValidatorsVarargs(value: ValidatorFunction*): Self = StObject.set(x, "validators", js.Array(value :_*))
+      inline def setValidatorsVarargs(value: ValidatorFunction*): Self = StObject.set(x, "validators", js.Array(value*))
       
       inline def setWidget(value: Widget): Self = StObject.set(x, "widget", value.asInstanceOf[js.Any])
       
@@ -373,16 +439,18 @@ object mod {
   }
   
   @js.native
-  trait Form extends StObject {
+  trait Form[Fields /* <: FormFields */] extends StObject {
     
     /** Binds data to correct fields, returning a new bound form object. */
-    def bind(data: js.Any): FormBound = js.native
+    def bind[Data /* <: Partial[FormData[Fields]] */](): FormBound[Fields, Data] = js.native
+    def bind[Data /* <: Partial[FormData[Fields]] */](data: Data & StringDictionary[Any]): FormBound[Fields, Data] = js.native
     
     /** Field objects this form was created with */
-    var fields: FormFields = js.native
+    var fields: Fields = js.native
     
     /** Inspects a request or object literal and binds any data to the correct fields. */
-    def handle(req: Body, callbacks: Empty): Unit = js.native
+    def handle[Data /* <: IncomingMessage | (Partial[FormData[Fields]] & StringDictionary[Any]) */](req: Data, callbacks: Empty[Fields, Data]): Unit = js.native
+    def handle[Data /* <: IncomingMessage | (Partial[FormData[Fields]] & StringDictionary[Any]) */](req: Unit, callbacks: Empty[Fields, Data]): Unit = js.native
     
     /**
       * Runs toHTML on each field returning the result.
@@ -393,24 +461,45 @@ object mod {
     def toHTML(iterator: FieldIterator): String = js.native
   }
   
-  @js.native
-  trait FormBound
-    extends StObject
-       with Form {
+  trait FormBound[Fields /* <: FormFields */, Data /* <: Partial[FormData[Fields]] */] extends StObject {
     
     /** Object containing all the parsed data keyed by field name. */
-    var data: js.Any = js.native
+    var data: FormData[Fields] & Data
     
     /** Checks all fields for an error attribute. Returns false if any exist, otherwise returns true. */
-    def isValid(): Boolean = js.native
+    def isValid(): Boolean
     
     /** Calls validate on each field in the bound form and returns the resulting form object to the callback. */
-    def validate(callback: js.Function2[/* err */ String, /* form */ this.type, Unit]): Unit = js.native
+    def validate(callback: js.Function2[/* err */ String, /* form */ FormBound[Fields, Data], Unit]): Unit
   }
+  object FormBound {
+    
+    inline def apply[Fields /* <: FormFields */, Data /* <: Partial[FormData[Fields]] */](
+      data: FormData[Fields] & Data,
+      isValid: () => Boolean,
+      validate: js.Function2[/* err */ String, /* form */ FormBound[Fields, Data], Unit] => Unit
+    ): FormBound[Fields, Data] = {
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], isValid = js.Any.fromFunction0(isValid), validate = js.Any.fromFunction1(validate))
+      __obj.asInstanceOf[FormBound[Fields, Data]]
+    }
+    
+    extension [Self <: FormBound[?, ?], Fields /* <: FormFields */, Data /* <: Partial[FormData[Fields]] */](x: Self & (FormBound[Fields, Data])) {
+      
+      inline def setData(value: FormData[Fields] & Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setIsValid(value: () => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
+      
+      inline def setValidate(value: js.Function2[/* err */ String, /* form */ FormBound[Fields, Data], Unit] => Unit): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+    }
+  }
+  
+  type FormData[Fields /* <: FormFields */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ Key in keyof Fields ]: Fields[Key] extends forms.forms.Field<unknown>? std.ReturnType<Fields[Key]['parse']> : never}
+    */ typings.forms.formsStrings.FormData & TopLevel[Any]
   
   trait FormFields
     extends StObject
-       with /* key */ StringDictionary[Field | FormFields]
+       with /* key */ StringDictionary[Field[Any] | FormFields]
   object FormFields {
     
     inline def apply(): FormFields = {
@@ -419,13 +508,13 @@ object mod {
     }
   }
   
-  type FormHandleCallback = js.Function1[/* form */ Form, Unit]
+  type FormHandleCallback[Fields /* <: FormFields */, Data /* <: IncomingMessage | (Partial[FormData[Fields]] & StringDictionary[Any]) */] = js.Function1[/* form */ FormBound[Fields, Data | FormData[Fields]], Unit]
   
-  type RenderFunction = js.Function2[/* name */ String, /* field */ Field, String]
+  type RenderFunction = js.Function2[/* name */ String, /* field */ Field[Any], String]
   
   type ValidatorFunction = js.Function3[
-    /* form */ FormBound, 
-    /* field */ FieldBound, 
+    /* form */ FormBound[Any, FormData[Any]], 
+    /* field */ FieldBound[Any, Any], 
     /* callback */ js.Function1[/* err */ js.UndefOr[String], Unit], 
     Unit
   ]
@@ -435,11 +524,11 @@ object mod {
     extends StObject
        with WidgetParameters {
     
-    def formatValue(value: js.Any): js.Any = js.native
+    def formatValue(value: Any): Any = js.native
     
     /** Returns a string containing a HTML representation of the widget for the given field. */
     def toHTML(name: String): String = js.native
-    def toHTML(name: String, field: Field): String = js.native
+    def toHTML(name: String, field: Field[Any]): String = js.native
   }
   
   trait WidgetParameters extends StObject {
@@ -466,13 +555,13 @@ object mod {
       
       inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
       
-      inline def setClassesVarargs(value: String*): Self = StObject.set(x, "classes", js.Array(value :_*))
+      inline def setClassesVarargs(value: String*): Self = StObject.set(x, "classes", js.Array(value*))
       
       inline def setLabelClasses(value: js.Array[String]): Self = StObject.set(x, "labelClasses", value.asInstanceOf[js.Any])
       
       inline def setLabelClassesUndefined: Self = StObject.set(x, "labelClasses", js.undefined)
       
-      inline def setLabelClassesVarargs(value: String*): Self = StObject.set(x, "labelClasses", js.Array(value :_*))
+      inline def setLabelClassesVarargs(value: String*): Self = StObject.set(x, "labelClasses", js.Array(value*))
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

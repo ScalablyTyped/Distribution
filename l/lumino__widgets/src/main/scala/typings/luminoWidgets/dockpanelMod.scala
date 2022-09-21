@@ -10,8 +10,11 @@ import typings.luminoWidgets.dockpanelMod.DockPanel.IRenderer
 import typings.luminoWidgets.dockpanelMod.DockPanel.Mode
 import typings.luminoWidgets.tabbarMod.TabBar
 import typings.luminoWidgets.widgetMod.Widget
+import typings.luminoWidgets.widgetMod.Widget.HiddenMode
+import typings.std.Document
 import typings.std.Event
 import typings.std.HTMLDivElement
+import typings.std.ShadowRoot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,100 +28,111 @@ object dockpanelMod {
     *
     * @param options - The options for initializing the panel.
     */
-  class DockPanel () extends Widget {
+  open class DockPanel () extends Widget {
     def this(options: IOptions) = this()
+    
+    /* private */ var _addButtonEnabled: Any = js.native
+    
+    /* private */ var _addRequested: Any = js.native
     
     /**
       * Create a new handle for use by the panel.
       */
-    /* private */ var _createHandle: js.Any = js.native
+    /* private */ var _createHandle: Any = js.native
     
     /**
       * Create a new tab bar for use by the panel.
       */
-    /* private */ var _createTabBar: js.Any = js.native
+    /* private */ var _createTabBar: Any = js.native
     
-    /* private */ var _drag: js.Any = js.native
+    /* private */ var _document: Any = js.native
     
-    /* private */ var _edges: js.Any = js.native
+    /* private */ var _drag: Any = js.native
+    
+    /* private */ var _edges: Any = js.native
     
     /**
       * Handle the `'lm-dragenter'` event for the dock panel.
       */
-    /* private */ var _evtDragEnter: js.Any = js.native
+    /* private */ var _evtDragEnter: Any = js.native
     
     /**
       * Handle the `'lm-dragleave'` event for the dock panel.
       */
-    /* private */ var _evtDragLeave: js.Any = js.native
+    /* private */ var _evtDragLeave: Any = js.native
     
     /**
       * Handle the `'lm-dragover'` event for the dock panel.
       */
-    /* private */ var _evtDragOver: js.Any = js.native
+    /* private */ var _evtDragOver: Any = js.native
     
     /**
       * Handle the `'lm-drop'` event for the dock panel.
       */
-    /* private */ var _evtDrop: js.Any = js.native
+    /* private */ var _evtDrop: Any = js.native
     
     /**
       * Handle the `'keydown'` event for the dock panel.
       */
-    /* private */ var _evtKeyDown: js.Any = js.native
+    /* private */ var _evtKeyDown: Any = js.native
     
     /**
       * Handle the `'mousedown'` event for the dock panel.
       */
-    /* private */ var _evtMouseDown: js.Any = js.native
+    /* private */ var _evtMouseDown: Any = js.native
     
     /**
       * Handle the `'mousemove'` event for the dock panel.
       */
-    /* private */ var _evtMouseMove: js.Any = js.native
+    /* private */ var _evtMouseMove: Any = js.native
     
     /**
       * Handle the `'mouseup'` event for the dock panel.
       */
-    /* private */ var _evtMouseUp: js.Any = js.native
+    /* private */ var _evtMouseUp: Any = js.native
     
-    /* private */ var _layoutModified: js.Any = js.native
+    /* private */ var _layoutModified: Any = js.native
     
-    /* private */ var _mode: js.Any = js.native
+    /* private */ var _mode: Any = js.native
     
     /**
       * Handle the `currentChanged` signal from a tab bar.
       */
-    /* private */ var _onCurrentChanged: js.Any = js.native
+    /* private */ var _onCurrentChanged: Any = js.native
     
     /**
       * Handle the `tabActivateRequested` signal from a tab bar.
       */
-    /* private */ var _onTabActivateRequested: js.Any = js.native
+    /* private */ var _onTabActivateRequested: Any = js.native
+    
+    /**
+      * Handle the `addRequested` signal from a tab bar.
+      */
+    /* private */ var _onTabAddRequested: Any = js.native
     
     /**
       * Handle the `tabCloseRequested` signal from a tab bar.
       */
-    /* private */ var _onTabCloseRequested: js.Any = js.native
+    /* private */ var _onTabCloseRequested: Any = js.native
     
     /**
       * Handle the `tabDetachRequested` signal from a tab bar.
       */
-    /* private */ var _onTabDetachRequested: js.Any = js.native
+    /* private */ var _onTabDetachRequested: Any = js.native
     
     /**
       * Handle the `tabMoved` signal from a tab bar.
       */
-    /* private */ var _onTabMoved: js.Any = js.native
+    /* private */ var _onTabMoved: Any = js.native
     
-    /* private */ var _pressData: js.Any = js.native
+    /* private */ var _pressData: Any = js.native
     
     /**
       * Release the mouse grab for the dock panel.
       */
-    /* private */ var _releaseMouse: js.Any = js.native
+    /* private */ var _releaseMouse: Any = js.native
     
-    /* private */ var _renderer: js.Any = js.native
+    /* private */ var _renderer: Any = js.native
     
     /**
       * Show the overlay indicator at the given client position.
@@ -128,9 +142,11 @@ object dockpanelMod {
       * #### Notes
       * If the position is not over a valid zone, the overlay is hidden.
       */
-    /* private */ var _showOverlay: js.Any = js.native
+    /* private */ var _showOverlay: Any = js.native
     
-    /* private */ var _tabsMovable: js.Any = js.native
+    /* private */ var _tabsConstrained: Any = js.native
+    
+    /* private */ var _tabsMovable: Any = js.native
     
     /**
       * Activate a specified widget in the dock panel.
@@ -141,6 +157,20 @@ object dockpanelMod {
       * This will select and activate the given widget.
       */
     def activateWidget(widget: Widget): Unit = js.native
+    
+    /**
+      * Whether the add buttons for each tab bar are enabled.
+      */
+    /**
+      * Set whether the add buttons for each tab bar are enabled.
+      */
+    var addButtonEnabled: Boolean = js.native
+    
+    /**
+      * A signal emitted when the add button on a tab bar is clicked.
+      *
+      */
+    val addRequested: ISignal[this.type, TabBar[Widget]] = js.native
     
     /**
       * Add a widget to the dock panel.
@@ -281,6 +311,14 @@ object dockpanelMod {
     def tabBars(): IIterator[TabBar[Widget]] = js.native
     
     /**
+      * Whether the tabs are constrained to their source dock panel
+      */
+    /**
+      * Constrain/Allow tabs to be dragged outside of this dock panel
+      */
+    var tabsConstrained: Boolean = js.native
+    
+    /**
       * Whether the tabs can be dragged / moved at runtime.
       */
     /**
@@ -310,13 +348,13 @@ object dockpanelMod {
     /**
       * Construct a new overlay.
       */
-    class Overlay ()
+    open class Overlay ()
       extends StObject
          with IOverlay {
       
-      /* private */ var _hidden: js.Any = js.native
+      /* private */ var _hidden: Any = js.native
       
-      /* private */ var _timer: js.Any = js.native
+      /* private */ var _timer: Any = js.native
       
       /**
         * Hide the overlay node.
@@ -357,26 +395,9 @@ object dockpanelMod {
       */
     @JSImport("@lumino/widgets/types/dockpanel", "DockPanel.Renderer")
     @js.native
-    class Renderer ()
+    open class Renderer ()
       extends StObject
-         with typings.luminoWidgets.docklayoutMod.DockLayout.IRenderer {
-      
-      /**
-        * Create a new handle node for use with a dock layout.
-        *
-        * @returns A new handle node for a dock layout.
-        */
-      /* CompleteClass */
-      override def createHandle(): HTMLDivElement = js.native
-      
-      /**
-        * Create a new tab bar for use with a dock layout.
-        *
-        * @returns A new tab bar for a dock layout.
-        */
-      /* CompleteClass */
-      override def createTabBar(): TabBar[Widget] = js.native
-    }
+         with typings.luminoWidgets.docklayoutMod.DockLayout.IRenderer
     
     /**
       * The default `Renderer` instance.
@@ -445,15 +466,36 @@ object dockpanelMod {
     trait IOptions extends StObject {
       
       /**
+        * Enable add buttons in each of the dock panel's tab bars.
+        *
+        * The default is `'false'`.
+        */
+      var addButtonEnabled: js.UndefOr[Boolean] = js.undefined
+      
+      /**
+        * The document to use with the dock panel.
+        *
+        * The default is the global `document` instance.
+        */
+      var document: js.UndefOr[Document | ShadowRoot] = js.undefined
+      
+      /**
         * The sizes of the edge drop zones, in pixels.
         * If not given, default values will be used.
         */
       var edges: js.UndefOr[IEdges] = js.undefined
       
       /**
+        * The method for hiding widgets.
+        *
+        * The default is `Widget.HiddenMode.Display`.
+        */
+      var hiddenMode: js.UndefOr[HiddenMode] = js.undefined
+      
+      /**
         * The mode for the dock panel.
         *
-        * The deafult is `'multiple-document'`.
+        * The default is `'multiple-document'`.
         */
       var mode: js.UndefOr[Mode] = js.undefined
       
@@ -479,6 +521,13 @@ object dockpanelMod {
       var spacing: js.UndefOr[Double] = js.undefined
       
       /**
+        * Constrain tabs to this dock panel
+        *
+        * The default is `'false'`.
+        */
+      var tabsConstrained: js.UndefOr[Boolean] = js.undefined
+      
+      /**
         * Allow tabs to be draggable / movable by user.
         *
         * The default is `'true'`.
@@ -494,9 +543,21 @@ object dockpanelMod {
       
       extension [Self <: IOptions](x: Self) {
         
+        inline def setAddButtonEnabled(value: Boolean): Self = StObject.set(x, "addButtonEnabled", value.asInstanceOf[js.Any])
+        
+        inline def setAddButtonEnabledUndefined: Self = StObject.set(x, "addButtonEnabled", js.undefined)
+        
+        inline def setDocument(value: Document | ShadowRoot): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+        
+        inline def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
+        
         inline def setEdges(value: IEdges): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
         
         inline def setEdgesUndefined: Self = StObject.set(x, "edges", js.undefined)
+        
+        inline def setHiddenMode(value: HiddenMode): Self = StObject.set(x, "hiddenMode", value.asInstanceOf[js.Any])
+        
+        inline def setHiddenModeUndefined: Self = StObject.set(x, "hiddenMode", js.undefined)
         
         inline def setMode(value: Mode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
         
@@ -513,6 +574,10 @@ object dockpanelMod {
         inline def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
         
         inline def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
+        
+        inline def setTabsConstrained(value: Boolean): Self = StObject.set(x, "tabsConstrained", value.asInstanceOf[js.Any])
+        
+        inline def setTabsConstrainedUndefined: Self = StObject.set(x, "tabsConstrained", js.undefined)
         
         inline def setTabsMovable(value: Boolean): Self = StObject.set(x, "tabsMovable", value.asInstanceOf[js.Any])
         

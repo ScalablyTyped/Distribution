@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Windows.UI.Colors")
 @js.native
-class Colors ()
+open class Colors ()
   extends StObject
      with IColors
 /* static members */

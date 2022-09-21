@@ -11,7 +11,7 @@ object eventListenersMod extends Shortcut {
   
   @JSImport("@popperjs/core/lib/modifiers/eventListeners", JSImport.Default)
   @js.native
-  val default: Modifier[eventListeners, Options] = js.native
+  val default: EventListenersModifier = js.native
   
   type EventListenersModifier = Modifier[eventListeners, Options]
   
@@ -36,8 +36,8 @@ object eventListenersMod extends Shortcut {
     }
   }
   
-  type _To = Modifier[eventListeners, Options]
+  type _To = EventListenersModifier
   
   /* This means you don't have to write `default`, but can instead just say `eventListenersMod.foo` */
-  override def _to: Modifier[eventListeners, Options] = default
+  override def _to: EventListenersModifier = default
 }

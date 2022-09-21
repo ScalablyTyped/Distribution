@@ -16,7 +16,7 @@ trait NotificationMessage
   /**
     * The notification's params.
     */
-  var params: js.UndefOr[js.Any] = js.undefined
+  var params: js.UndefOr[js.Array[Any] | js.Object] = js.undefined
 }
 object NotificationMessage {
   
@@ -29,8 +29,10 @@ object NotificationMessage {
     
     inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Array[Any] | js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    
+    inline def setParamsVarargs(value: Any*): Self = StObject.set(x, "params", js.Array(value*))
   }
 }

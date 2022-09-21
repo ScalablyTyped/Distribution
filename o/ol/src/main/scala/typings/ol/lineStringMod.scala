@@ -10,7 +10,7 @@ object lineStringMod {
   
   @JSImport("ol/geom/LineString", JSImport.Default)
   @js.native
-  class default protected () extends LineString {
+  open class default protected () extends LineString {
     def this(coordinates: js.Array[Coordinate | Double]) = this()
     def this(coordinates: js.Array[Coordinate | Double], opt_layout: GeometryLayout) = this()
   }

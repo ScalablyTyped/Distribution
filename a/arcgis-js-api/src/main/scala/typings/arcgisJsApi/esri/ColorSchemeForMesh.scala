@@ -26,7 +26,7 @@ trait ColorSchemeForMesh
   var colorsForClassBreaks: js.Array[ColorSchemeForMeshColorsForClassBreaks]
   
   /**
-    * The unique id of the color scheme to usee in the visualization.
+    * The unique id of the color scheme to use in the visualization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForMesh)
     */
@@ -92,9 +92,9 @@ object ColorSchemeForMesh {
     
     inline def setColorsForClassBreaks(value: js.Array[ColorSchemeForMeshColorsForClassBreaks]): Self = StObject.set(x, "colorsForClassBreaks", value.asInstanceOf[js.Any])
     
-    inline def setColorsForClassBreaksVarargs(value: ColorSchemeForMeshColorsForClassBreaks*): Self = StObject.set(x, "colorsForClassBreaks", js.Array(value :_*))
+    inline def setColorsForClassBreaksVarargs(value: ColorSchemeForMeshColorsForClassBreaks*): Self = StObject.set(x, "colorsForClassBreaks", js.Array(value*))
     
-    inline def setColorsVarargs(value: Color_ *): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: Color_ *): Self = StObject.set(x, "colors", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -106,7 +106,7 @@ object ColorSchemeForMesh {
     
     inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
   }

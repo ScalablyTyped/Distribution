@@ -103,11 +103,11 @@ object anon {
       
       inline def setArticle(value: js.Array[MerchantArticleId]): Self = StObject.set(x, "article", value.asInstanceOf[js.Any])
       
-      inline def setArticleVarargs(value: MerchantArticleId*): Self = StObject.set(x, "article", js.Array(value :_*))
+      inline def setArticleVarargs(value: MerchantArticleId*): Self = StObject.set(x, "article", js.Array(value*))
       
       inline def setBonus(value: js.Array[Secret]): Self = StObject.set(x, "bonus", value.asInstanceOf[js.Any])
       
-      inline def setBonusVarargs(value: Secret*): Self = StObject.set(x, "bonus", js.Array(value :_*))
+      inline def setBonusVarargs(value: Secret*): Self = StObject.set(x, "bonus", js.Array(value*))
     }
   }
   
@@ -204,13 +204,13 @@ object anon {
       
       inline def setItems(value: js.Array[Id]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      inline def setItemsVarargs(value: Id*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: Id*): Self = StObject.set(x, "items", js.Array(value*))
     }
   }
   
   trait Dictkey
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var MD: String
     

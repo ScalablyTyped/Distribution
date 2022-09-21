@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CANNON.Material")
 @js.native
-class Material protected ()
+open class Material protected ()
   extends StObject
      with typings.cannon.CANNON.Material {
   def this(name: String) = this()

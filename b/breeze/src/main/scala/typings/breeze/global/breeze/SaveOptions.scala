@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("breeze.SaveOptions")
 @js.native
-class SaveOptions ()
+open class SaveOptions ()
   extends StObject
      with typings.breeze.breeze.SaveOptions {
   def this(config: AllowConcurrentSaves) = this()

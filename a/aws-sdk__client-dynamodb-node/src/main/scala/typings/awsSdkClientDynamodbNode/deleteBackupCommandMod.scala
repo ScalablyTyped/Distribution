@@ -16,7 +16,7 @@ object deleteBackupCommandMod {
   
   @JSImport("@aws-sdk/client-dynamodb-node/commands/DeleteBackupCommand", "DeleteBackupCommand")
   @js.native
-  class DeleteBackupCommand protected ()
+  open class DeleteBackupCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object deleteBackupCommandMod {
     override val middlewareStack: MiddlewareStack[DeleteBackupInput, DeleteBackupOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: DynamoDBResolvedConfiguration
     ): Handler[DeleteBackupInput, DeleteBackupOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: DynamoDBResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[DeleteBackupInput, DeleteBackupOutput] = js.native
   }
 }

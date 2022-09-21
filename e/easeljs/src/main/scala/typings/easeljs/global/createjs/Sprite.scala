@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.Sprite")
 @js.native
-class Sprite protected ()
+open class Sprite protected ()
   extends StObject
      with typings.easeljs.createjs.Sprite {
   def this(spriteSheet: typings.easeljs.createjs.SpriteSheet) = this()

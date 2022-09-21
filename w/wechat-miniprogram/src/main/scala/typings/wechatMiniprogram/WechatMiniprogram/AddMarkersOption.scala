@@ -16,14 +16,14 @@ trait AddMarkersOption extends StObject {
   var fail: js.UndefOr[AddMarkersFailCallback] = js.undefined
   
   /** 同传入 map 组件的 marker 属性 */
-  var markers: js.Array[js.Any]
+  var markers: js.Array[Any]
   
   /** 接口调用成功的回调函数 */
   var success: js.UndefOr[AddMarkersSuccessCallback] = js.undefined
 }
 object AddMarkersOption {
   
-  inline def apply(markers: js.Array[js.Any]): AddMarkersOption = {
+  inline def apply(markers: js.Array[Any]): AddMarkersOption = {
     val __obj = js.Dynamic.literal(markers = markers.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddMarkersOption]
   }
@@ -42,9 +42,9 @@ object AddMarkersOption {
     
     inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
-    inline def setMarkers(value: js.Array[js.Any]): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
+    inline def setMarkers(value: js.Array[Any]): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
     
-    inline def setMarkersVarargs(value: js.Any*): Self = StObject.set(x, "markers", js.Array(value :_*))
+    inline def setMarkersVarargs(value: Any*): Self = StObject.set(x, "markers", js.Array(value*))
     
     inline def setSuccess(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

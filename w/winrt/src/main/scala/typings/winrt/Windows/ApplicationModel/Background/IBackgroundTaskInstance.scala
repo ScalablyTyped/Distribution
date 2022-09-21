@@ -10,7 +10,7 @@ trait IBackgroundTaskInstance extends StObject {
   
   var instanceId: String
   
-  var oncanceled: js.Any
+  var oncanceled: Any
   
   var progress: Double
   
@@ -18,18 +18,18 @@ trait IBackgroundTaskInstance extends StObject {
   
   var task: BackgroundTaskRegistration
   
-  var triggerDetails: js.Any
+  var triggerDetails: Any
 }
 object IBackgroundTaskInstance {
   
   inline def apply(
     getDeferral: () => BackgroundTaskDeferral,
     instanceId: String,
-    oncanceled: js.Any,
+    oncanceled: Any,
     progress: Double,
     suspendedCount: Double,
     task: BackgroundTaskRegistration,
-    triggerDetails: js.Any
+    triggerDetails: Any
   ): IBackgroundTaskInstance = {
     val __obj = js.Dynamic.literal(getDeferral = js.Any.fromFunction0(getDeferral), instanceId = instanceId.asInstanceOf[js.Any], oncanceled = oncanceled.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], suspendedCount = suspendedCount.asInstanceOf[js.Any], task = task.asInstanceOf[js.Any], triggerDetails = triggerDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBackgroundTaskInstance]
@@ -41,7 +41,7 @@ object IBackgroundTaskInstance {
     
     inline def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
     
-    inline def setOncanceled(value: js.Any): Self = StObject.set(x, "oncanceled", value.asInstanceOf[js.Any])
+    inline def setOncanceled(value: Any): Self = StObject.set(x, "oncanceled", value.asInstanceOf[js.Any])
     
     inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
@@ -49,6 +49,6 @@ object IBackgroundTaskInstance {
     
     inline def setTask(value: BackgroundTaskRegistration): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
     
-    inline def setTriggerDetails(value: js.Any): Self = StObject.set(x, "triggerDetails", value.asInstanceOf[js.Any])
+    inline def setTriggerDetails(value: Any): Self = StObject.set(x, "triggerDetails", value.asInstanceOf[js.Any])
   }
 }

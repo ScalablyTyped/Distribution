@@ -2,13 +2,17 @@ package typings.p2.mod
 
 import typings.p2.anon.OptimalDecomp
 import typings.p2.anon.Type
+import typings.p2.anon.`0`
+import typings.p2.anon.`1`
+import typings.p2.p2Numbers.`2`
+import typings.p2.p2Numbers.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("p2", "Body")
 @js.native
-class Body () extends EventEmitter {
+open class Body () extends EventEmitter {
   def this(options: BodyOptions) = this()
   
   var aabb: AABB = js.native
@@ -115,11 +119,11 @@ class Body () extends EventEmitter {
   
   def sleep(): Unit = js.native
   
-  var sleepEvent: Type = js.native
+  var sleepEvent: `0` = js.native
   
   var sleepSpeedLimit: Double = js.native
   
-  var sleepState: Double = js.native
+  var sleepState: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Body.AWAKE */ Any = js.native
   
   def sleepTick(time: Double, dontSleep: Boolean, dt: Double): Unit = js.native
   
@@ -131,7 +135,7 @@ class Body () extends EventEmitter {
   
   def toWorldFrame(out: js.Tuple2[Double, Double], localPoint: js.Tuple2[Double, Double]): Unit = js.native
   
-  var `type`: Double = js.native
+  var `type`: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Body.DYNAMIC */ Any = js.native
   
   def updateAABB(): Unit = js.native
   
@@ -151,7 +155,7 @@ class Body () extends EventEmitter {
   
   def wakeUp(): Unit = js.native
   
-  var wakeUpEvent: Type = js.native
+  var wakeUpEvent: `1` = js.native
   
   var wlambda: js.Tuple2[Double, Double] = js.native
   
@@ -166,31 +170,31 @@ object Body {
   
   @JSImport("p2", "Body.AWAKE")
   @js.native
-  def AWAKE: Double = js.native
-  inline def AWAKE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AWAKE")(x.asInstanceOf[js.Any])
+  def AWAKE: typings.p2.p2Numbers.`0` = js.native
+  inline def AWAKE_=(x: typings.p2.p2Numbers.`0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AWAKE")(x.asInstanceOf[js.Any])
   
   @JSImport("p2", "Body.DYNAMIC")
   @js.native
-  def DYNAMIC: Double = js.native
-  inline def DYNAMIC_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DYNAMIC")(x.asInstanceOf[js.Any])
+  def DYNAMIC: typings.p2.p2Numbers.`1` = js.native
+  inline def DYNAMIC_=(x: typings.p2.p2Numbers.`1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DYNAMIC")(x.asInstanceOf[js.Any])
   
   @JSImport("p2", "Body.KINEMATIC")
   @js.native
-  def KINEMATIC: Double = js.native
-  inline def KINEMATIC_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KINEMATIC")(x.asInstanceOf[js.Any])
+  def KINEMATIC: `4` = js.native
+  inline def KINEMATIC_=(x: `4`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KINEMATIC")(x.asInstanceOf[js.Any])
   
   @JSImport("p2", "Body.SLEEPING")
   @js.native
-  def SLEEPING: Double = js.native
-  inline def SLEEPING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SLEEPING")(x.asInstanceOf[js.Any])
+  def SLEEPING: `2` = js.native
+  inline def SLEEPING_=(x: `2`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SLEEPING")(x.asInstanceOf[js.Any])
   
   @JSImport("p2", "Body.SLEEPY")
   @js.native
-  def SLEEPY: Double = js.native
-  inline def SLEEPY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SLEEPY")(x.asInstanceOf[js.Any])
+  def SLEEPY: typings.p2.p2Numbers.`1` = js.native
+  inline def SLEEPY_=(x: typings.p2.p2Numbers.`1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SLEEPY")(x.asInstanceOf[js.Any])
   
   @JSImport("p2", "Body.STATIC")
   @js.native
-  def STATIC: Double = js.native
-  inline def STATIC_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STATIC")(x.asInstanceOf[js.Any])
+  def STATIC: `2` = js.native
+  inline def STATIC_=(x: `2`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STATIC")(x.asInstanceOf[js.Any])
 }

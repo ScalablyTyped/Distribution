@@ -27,6 +27,8 @@ trait Symbol
   /**
     * The color of the symbol.
     *
+    * @default black
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol.html#color)
     */
   var color: Color_ = js.native

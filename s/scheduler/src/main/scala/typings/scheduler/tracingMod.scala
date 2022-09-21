@@ -33,8 +33,8 @@ object tracingMod {
   
   inline def unstableUnsubscribe(subscriber: Subscriber): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_unsubscribe")(subscriber.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def unstableWrap[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](callback: T): IfSchedulerTracing[WrappedFunction[T], T] = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_wrap")(callback.asInstanceOf[js.Any]).asInstanceOf[IfSchedulerTracing[WrappedFunction[T], T]]
-  inline def unstableWrap[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](callback: T, threadID: Double): IfSchedulerTracing[WrappedFunction[T], T] = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_wrap")(callback.asInstanceOf[js.Any], threadID.asInstanceOf[js.Any])).asInstanceOf[IfSchedulerTracing[WrappedFunction[T], T]]
+  inline def unstableWrap[T /* <: js.Function1[/* repeated */ Any, Any] */](callback: T): IfSchedulerTracing[WrappedFunction[T], T] = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_wrap")(callback.asInstanceOf[js.Any]).asInstanceOf[IfSchedulerTracing[WrappedFunction[T], T]]
+  inline def unstableWrap[T /* <: js.Function1[/* repeated */ Any, Any] */](callback: T, threadID: Double): IfSchedulerTracing[WrappedFunction[T], T] = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_wrap")(callback.asInstanceOf[js.Any], threadID.asInstanceOf[js.Any])).asInstanceOf[IfSchedulerTracing[WrappedFunction[T], T]]
   
   trait Build extends StObject
   
@@ -187,7 +187,7 @@ object tracingMod {
   
   type TypeByBuildFlag[Flag /* <: js.UndefOr[Boolean] */, WhenTrue, WhenFalse] = WhenFalse | WhenTrue
   
-  type WrappedFunction[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */] = T & Cancel
+  type WrappedFunction[T /* <: js.Function1[/* repeated */ Any, Any] */] = T & Cancel
   
   trait _EnableSchedulerTracing extends StObject
 }

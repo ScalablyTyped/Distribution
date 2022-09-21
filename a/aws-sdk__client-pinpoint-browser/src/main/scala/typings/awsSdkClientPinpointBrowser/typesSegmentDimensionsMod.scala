@@ -11,7 +11,6 @@ import typings.awsSdkClientPinpointBrowser.typesSegmentDemographicsMod.SegmentDe
 import typings.awsSdkClientPinpointBrowser.typesSegmentDemographicsMod.UnmarshalledSegmentDemographics
 import typings.awsSdkClientPinpointBrowser.typesSegmentLocationMod.SegmentLocation
 import typings.awsSdkClientPinpointBrowser.typesSegmentLocationMod.UnmarshalledSegmentLocation
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +23,7 @@ object typesSegmentDimensionsMod {
       * Custom segment attributes.
       */
     var Attributes: js.UndefOr[
-        StringDictionary[AttributeDimension] | (Iterable[js.Tuple2[String, AttributeDimension]])
+        StringDictionary[AttributeDimension] | (js.Iterable[js.Tuple2[String, AttributeDimension]])
       ] = js.undefined
     
     /**
@@ -46,14 +45,14 @@ object typesSegmentDimensionsMod {
       * Custom segment metrics.
       */
     var Metrics: js.UndefOr[
-        StringDictionary[MetricDimension] | (Iterable[js.Tuple2[String, MetricDimension]])
+        StringDictionary[MetricDimension] | (js.Iterable[js.Tuple2[String, MetricDimension]])
       ] = js.undefined
     
     /**
       * Custom segment user attributes.
       */
     var UserAttributes: js.UndefOr[
-        StringDictionary[AttributeDimension] | (Iterable[js.Tuple2[String, AttributeDimension]])
+        StringDictionary[AttributeDimension] | (js.Iterable[js.Tuple2[String, AttributeDimension]])
       ] = js.undefined
   }
   object SegmentDimensions {
@@ -65,7 +64,7 @@ object typesSegmentDimensionsMod {
     
     extension [Self <: SegmentDimensions](x: Self) {
       
-      inline def setAttributes(value: StringDictionary[AttributeDimension] | (Iterable[js.Tuple2[String, AttributeDimension]])): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: StringDictionary[AttributeDimension] | (js.Iterable[js.Tuple2[String, AttributeDimension]])): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
       
       inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
       
@@ -81,11 +80,11 @@ object typesSegmentDimensionsMod {
       
       inline def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
       
-      inline def setMetrics(value: StringDictionary[MetricDimension] | (Iterable[js.Tuple2[String, MetricDimension]])): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
+      inline def setMetrics(value: StringDictionary[MetricDimension] | (js.Iterable[js.Tuple2[String, MetricDimension]])): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
       
       inline def setMetricsUndefined: Self = StObject.set(x, "Metrics", js.undefined)
       
-      inline def setUserAttributes(value: StringDictionary[AttributeDimension] | (Iterable[js.Tuple2[String, AttributeDimension]])): Self = StObject.set(x, "UserAttributes", value.asInstanceOf[js.Any])
+      inline def setUserAttributes(value: StringDictionary[AttributeDimension] | (js.Iterable[js.Tuple2[String, AttributeDimension]])): Self = StObject.set(x, "UserAttributes", value.asInstanceOf[js.Any])
       
       inline def setUserAttributesUndefined: Self = StObject.set(x, "UserAttributes", js.undefined)
     }

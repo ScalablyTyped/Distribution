@@ -16,6 +16,8 @@ trait ViewpointProperties extends StObject {
   /**
     * The rotation of due north in relation to the top of the view in degrees.
     *
+    * @default 0
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Viewpoint.html#rotation)
     */
   var rotation: js.UndefOr[Double] = js.undefined

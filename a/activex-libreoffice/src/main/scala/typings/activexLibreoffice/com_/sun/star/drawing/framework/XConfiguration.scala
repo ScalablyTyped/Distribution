@@ -64,7 +64,7 @@ object XConfiguration {
     createClone: () => XCloneable,
     getResources: (XResourceId, String, AnchorBindingMode) => SafeArray[XResourceId],
     hasResource: XResourceId => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeResource: XResourceId => Unit
   ): XConfiguration = {

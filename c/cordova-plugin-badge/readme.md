@@ -10,10 +10,10 @@ Shows the count of unread messages as a badge on the app icon.
 | ------------------ | :-------------: |
 | Full name          | cordova-plugin-badge |
 | Keywords           | appplant, badge, shortcutbadger, ecosystem:cordova, cordova-ios, cordova-osx, cordova-android, cordova-browser, cordova-windows |
-| # releases         | 2 |
-| # dependents       | 3 |
-| # downloads        | 448077 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 51785.0 |
+| # stars            | 402.0 |
 
 ## Links
 - [Homepage](https://github.com/katzer/cordova-plugin-badge#readme)

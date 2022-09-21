@@ -1,7 +1,7 @@
 
 # Scala.js typings for prex
 
-Typings are for version 0.4.7
+Typings are for version 0.4.9
 
 ## Library description:
 Async coordination primitives and extensions on top of ES6 Promises
@@ -10,10 +10,10 @@ Async coordination primitives and extensions on top of ES6 Promises
 | ------------------ | :-------------: |
 | Full name          | prex |
 | Keywords           | async, promise, promises, future, deferred, promise-a, promise-a-plus, then, await, coordination, semaphore, cancellation, cancellationtoken |
-| # releases         | 5 |
-| # dependents       | 3 |
-| # downloads        | 162740 |
-| # stars            | 2 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 24075.666666666668 |
+| # stars            | 147.0 |
 
 ## Links
 - [Homepage](https://github.com/rbuckton/prex#readme)

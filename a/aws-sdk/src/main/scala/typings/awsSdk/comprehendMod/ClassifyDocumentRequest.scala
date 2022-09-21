@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ClassifyDocumentRequest extends StObject {
   
   /**
-    * The Amazon Resource Number (ARN) of the endpoint.
+    * The Amazon Resource Number (ARN) of the endpoint. For information about endpoints, see Managing endpoints.
     */
   var EndpointArn: DocumentClassifierEndpointArn
   

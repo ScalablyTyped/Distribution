@@ -27,10 +27,10 @@ object ChunkedBatchResponse {
     
     inline def setObjectIDs(value: js.Array[String]): Self = StObject.set(x, "objectIDs", value.asInstanceOf[js.Any])
     
-    inline def setObjectIDsVarargs(value: String*): Self = StObject.set(x, "objectIDs", js.Array(value :_*))
+    inline def setObjectIDsVarargs(value: String*): Self = StObject.set(x, "objectIDs", js.Array(value*))
     
     inline def setTaskIDs(value: js.Array[Double]): Self = StObject.set(x, "taskIDs", value.asInstanceOf[js.Any])
     
-    inline def setTaskIDsVarargs(value: Double*): Self = StObject.set(x, "taskIDs", js.Array(value :_*))
+    inline def setTaskIDsVarargs(value: Double*): Self = StObject.set(x, "taskIDs", js.Array(value*))
   }
 }

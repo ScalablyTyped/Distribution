@@ -11,7 +11,7 @@ object vueServeMod {
   
   @JSImport("ionic/lib/project/vue/serve", "VueServeRunner")
   @js.native
-  class VueServeRunner protected () extends ServeRunner[VueServeOptions] {
+  open class VueServeRunner protected () extends ServeRunner[VueServeOptions] {
     def this(e: ServeRunnerDeps) = this()
   }
 }

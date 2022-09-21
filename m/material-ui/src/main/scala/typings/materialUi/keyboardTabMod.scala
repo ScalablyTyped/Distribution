@@ -10,10 +10,10 @@ object keyboardTabMod {
   
   @JSImport("material-ui/svg-icons/hardware/keyboard-tab", JSImport.Default)
   @js.native
-  class default () extends HardwareKeyboardTab
+  open class default () extends HardwareKeyboardTab
   
   @JSImport("material-ui/svg-icons/hardware/keyboard-tab", "HardwareKeyboardTab")
   @js.native
-  class HardwareKeyboardTab ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class HardwareKeyboardTab ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

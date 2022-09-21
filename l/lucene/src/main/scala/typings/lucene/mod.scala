@@ -41,14 +41,48 @@ object mod {
       __obj.asInstanceOf[typings.lucene.mod.BinaryAST]
     }
     
-    inline def LeftOnlyAST(left: Node): typings.lucene.mod.LeftOnlyAST = {
+    inline def LeftOnlyAST(left: AST | Node): typings.lucene.mod.LeftOnlyAST = {
       val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.lucene.mod.LeftOnlyAST]
     }
   }
   
+  trait ASTField extends StObject {
+    
+    var field: js.UndefOr[String] = js.undefined
+    
+    var fieldLocation: js.UndefOr[Null | End] = js.undefined
+    
+    var parenthesized: js.UndefOr[Boolean] = js.undefined
+  }
+  object ASTField {
+    
+    inline def apply(): ASTField = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ASTField]
+    }
+    
+    extension [Self <: ASTField](x: Self) {
+      
+      inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+      
+      inline def setFieldLocation(value: End): Self = StObject.set(x, "fieldLocation", value.asInstanceOf[js.Any])
+      
+      inline def setFieldLocationNull: Self = StObject.set(x, "fieldLocation", null)
+      
+      inline def setFieldLocationUndefined: Self = StObject.set(x, "fieldLocation", js.undefined)
+      
+      inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+      
+      inline def setParenthesized(value: Boolean): Self = StObject.set(x, "parenthesized", value.asInstanceOf[js.Any])
+      
+      inline def setParenthesizedUndefined: Self = StObject.set(x, "parenthesized", js.undefined)
+    }
+  }
+  
   trait BinaryAST
     extends StObject
+       with ASTField
        with AST {
     
     var left: AST | Node
@@ -76,22 +110,23 @@ object mod {
   
   trait LeftOnlyAST
     extends StObject
+       with ASTField
        with AST {
     
-    var left: Node
+    var left: AST | Node
     
     var start: js.UndefOr[Operator] = js.undefined
   }
   object LeftOnlyAST {
     
-    inline def apply(left: Node): LeftOnlyAST = {
+    inline def apply(left: AST | Node): LeftOnlyAST = {
       val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any])
       __obj.asInstanceOf[LeftOnlyAST]
     }
     
     extension [Self <: LeftOnlyAST](x: Self) {
       
-      inline def setLeft(value: Node): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: AST | Node): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
       inline def setStart(value: Operator): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       

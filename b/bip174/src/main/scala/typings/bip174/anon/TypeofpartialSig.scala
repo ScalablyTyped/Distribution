@@ -11,7 +11,7 @@ trait TypeofpartialSig extends StObject {
   
   def canAddToArray(array: js.Array[PartialSig], item: PartialSig, dupeSet: Set[String]): Boolean
   
-  def check(data: js.Any): /* is bip174.bip174/src/lib/interfaces.PartialSig */ Boolean
+  def check(data: Any): /* is bip174.bip174/src/lib/interfaces.PartialSig */ Boolean
   
   def decode(keyVal: KeyValue): PartialSig
   
@@ -23,7 +23,7 @@ object TypeofpartialSig {
   
   inline def apply(
     canAddToArray: (js.Array[PartialSig], PartialSig, Set[String]) => Boolean,
-    check: js.Any => /* is bip174.bip174/src/lib/interfaces.PartialSig */ Boolean,
+    check: Any => /* is bip174.bip174/src/lib/interfaces.PartialSig */ Boolean,
     decode: KeyValue => PartialSig,
     encode: PartialSig => KeyValue,
     expected: /* "{ pubkey: Buffer; signature: Buffer; }" */ String
@@ -36,7 +36,7 @@ object TypeofpartialSig {
     
     inline def setCanAddToArray(value: (js.Array[PartialSig], PartialSig, Set[String]) => Boolean): Self = StObject.set(x, "canAddToArray", js.Any.fromFunction3(value))
     
-    inline def setCheck(value: js.Any => /* is bip174.bip174/src/lib/interfaces.PartialSig */ Boolean): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
+    inline def setCheck(value: Any => /* is bip174.bip174/src/lib/interfaces.PartialSig */ Boolean): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
     
     inline def setDecode(value: KeyValue => PartialSig): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
     

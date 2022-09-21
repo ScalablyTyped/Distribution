@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait OnRenderCell extends StObject {
   
-  def onRenderCell(item: js.Any, index: Double, containsFocus: Boolean): Element
+  def onRenderCell(item: Any, index: Double, containsFocus: Boolean): Element
   
   var renderedWindowsAhead: Double
   
@@ -18,7 +18,7 @@ trait OnRenderCell extends StObject {
 object OnRenderCell {
   
   inline def apply(
-    onRenderCell: (js.Any, Double, Boolean) => Element,
+    onRenderCell: (Any, Double, Boolean) => Element,
     renderedWindowsAhead: Double,
     renderedWindowsBehind: Double,
     startIndex: Double
@@ -29,7 +29,7 @@ object OnRenderCell {
   
   extension [Self <: OnRenderCell](x: Self) {
     
-    inline def setOnRenderCell(value: (js.Any, Double, Boolean) => Element): Self = StObject.set(x, "onRenderCell", js.Any.fromFunction3(value))
+    inline def setOnRenderCell(value: (Any, Double, Boolean) => Element): Self = StObject.set(x, "onRenderCell", js.Any.fromFunction3(value))
     
     inline def setRenderedWindowsAhead(value: Double): Self = StObject.set(x, "renderedWindowsAhead", value.asInstanceOf[js.Any])
     

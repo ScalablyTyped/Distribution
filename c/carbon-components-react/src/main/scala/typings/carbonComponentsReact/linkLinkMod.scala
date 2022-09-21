@@ -2,9 +2,11 @@ package typings.carbonComponentsReact
 
 import org.scalablytyped.runtime.Shortcut
 import typings.carbonComponentsReact.carbonComponentsReactStrings.lg
+import typings.carbonComponentsReact.carbonComponentsReactStrings.md
 import typings.carbonComponentsReact.carbonComponentsReactStrings.sm
+import typings.carbonComponentsReact.typingsSharedMod.ForwardRefReturn
 import typings.react.mod.AnchorHTMLAttributes
-import typings.react.mod.FC
+import typings.react.mod.ComponentType
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,18 +16,19 @@ object linkLinkMod extends Shortcut {
   
   @JSImport("carbon-components-react/lib/components/Link/Link", JSImport.Default)
   @js.native
-  val default: FC[LinkProps] = js.native
+  val default: ForwardRefReturn[HTMLAnchorElement, LinkProps] = js.native
   
   trait LinkProps
     extends StObject
        with AnchorHTMLAttributes[HTMLAnchorElement] {
     
-    // this is a <p> element when disabled but accounting for it is useless
     var disabled: js.UndefOr[Boolean] = js.undefined
     
     var `inline`: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[sm | lg] = js.undefined
+    var renderIcon: js.UndefOr[ComponentType[js.Object]] = js.undefined
+    
+    var size: js.UndefOr[sm | md | lg] = js.undefined
     
     var visited: js.UndefOr[Boolean] = js.undefined
   }
@@ -46,7 +49,11 @@ object linkLinkMod extends Shortcut {
       
       inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
       
-      inline def setSize(value: sm | lg): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setRenderIcon(value: ComponentType[js.Object]): Self = StObject.set(x, "renderIcon", value.asInstanceOf[js.Any])
+      
+      inline def setRenderIconUndefined: Self = StObject.set(x, "renderIcon", js.undefined)
+      
+      inline def setSize(value: sm | md | lg): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
@@ -56,8 +63,8 @@ object linkLinkMod extends Shortcut {
     }
   }
   
-  type _To = FC[LinkProps]
+  type _To = ForwardRefReturn[HTMLAnchorElement, LinkProps]
   
   /* This means you don't have to write `default`, but can instead just say `linkLinkMod.foo` */
-  override def _to: FC[LinkProps] = default
+  override def _to: ForwardRefReturn[HTMLAnchorElement, LinkProps] = default
 }

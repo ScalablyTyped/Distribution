@@ -9,7 +9,7 @@ trait ListDomainDeliverabilityCampaignsRequest extends StObject {
   /**
     * The last day, in Unix time format, that you want to obtain deliverability data for. This value has to be less than or equal to 30 days after the value of the StartDate parameter.
     */
-  var EndDate: Timestamp
+  var EndDate: js.Date
   
   /**
     * A token that’s returned from a previous call to the ListDomainDeliverabilityCampaigns operation. This token indicates the position of a campaign in the list of campaigns.
@@ -24,7 +24,7 @@ trait ListDomainDeliverabilityCampaignsRequest extends StObject {
   /**
     * The first day, in Unix time format, that you want to obtain deliverability data for.
     */
-  var StartDate: Timestamp
+  var StartDate: js.Date
   
   /**
     * The domain to obtain deliverability data for.
@@ -33,14 +33,14 @@ trait ListDomainDeliverabilityCampaignsRequest extends StObject {
 }
 object ListDomainDeliverabilityCampaignsRequest {
   
-  inline def apply(EndDate: Timestamp, StartDate: Timestamp, SubscribedDomain: Domain): ListDomainDeliverabilityCampaignsRequest = {
+  inline def apply(EndDate: js.Date, StartDate: js.Date, SubscribedDomain: Domain): ListDomainDeliverabilityCampaignsRequest = {
     val __obj = js.Dynamic.literal(EndDate = EndDate.asInstanceOf[js.Any], StartDate = StartDate.asInstanceOf[js.Any], SubscribedDomain = SubscribedDomain.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDomainDeliverabilityCampaignsRequest]
   }
   
   extension [Self <: ListDomainDeliverabilityCampaignsRequest](x: Self) {
     
-    inline def setEndDate(value: Timestamp): Self = StObject.set(x, "EndDate", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: js.Date): Self = StObject.set(x, "EndDate", value.asInstanceOf[js.Any])
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
@@ -50,7 +50,7 @@ object ListDomainDeliverabilityCampaignsRequest {
     
     inline def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
     
-    inline def setStartDate(value: Timestamp): Self = StObject.set(x, "StartDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: js.Date): Self = StObject.set(x, "StartDate", value.asInstanceOf[js.Any])
     
     inline def setSubscribedDomain(value: Domain): Self = StObject.set(x, "SubscribedDomain", value.asInstanceOf[js.Any])
   }

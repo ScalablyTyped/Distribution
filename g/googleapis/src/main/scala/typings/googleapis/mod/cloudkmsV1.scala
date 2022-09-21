@@ -9,25 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object cloudkmsV1 {
   
-  /**
-    * Cloud Key Management Service (KMS) API
-    *
-    * Manages keys and performs cryptographic operations in a central cloud
-    * service, for direct use by other cloud resources and applications.
-    *
-    * @example
-    * const {google} = require('googleapis');
-    * const cloudkms = google.cloudkms('v1');
-    *
-    * @namespace cloudkms
-    * @type {Function}
-    * @version v1
-    * @variation v1
-    * @param {object=} options Options for Cloudkms
-    */
   @JSImport("googleapis", "cloudkms_v1.Cloudkms")
   @js.native
-  class Cloudkms protected ()
+  open class Cloudkms protected ()
     extends typings.googleapis.cloudkmsV1Mod.cloudkmsV1.Cloudkms {
     def this(options: GlobalOptions) = this()
     def this(options: GlobalOptions, google: GoogleConfigurable) = this()
@@ -35,42 +19,49 @@ object cloudkmsV1 {
   
   @JSImport("googleapis", "cloudkms_v1.Resource$Projects")
   @js.native
-  class ResourceProjects protected ()
+  open class ResourceProjects protected ()
     extends typings.googleapis.cloudkmsV1Mod.cloudkmsV1.ResourceProjects {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "cloudkms_v1.Resource$Projects$Locations")
   @js.native
-  class ResourceProjectsLocations protected ()
+  open class ResourceProjectsLocations protected ()
     extends typings.googleapis.cloudkmsV1Mod.cloudkmsV1.ResourceProjectsLocations {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "cloudkms_v1.Resource$Projects$Locations$Ekmconnections")
+  @js.native
+  open class ResourceProjectsLocationsEkmconnections protected ()
+    extends typings.googleapis.cloudkmsV1Mod.cloudkmsV1.ResourceProjectsLocationsEkmconnections {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "cloudkms_v1.Resource$Projects$Locations$Keyrings")
   @js.native
-  class ResourceProjectsLocationsKeyrings protected ()
+  open class ResourceProjectsLocationsKeyrings protected ()
     extends typings.googleapis.cloudkmsV1Mod.cloudkmsV1.ResourceProjectsLocationsKeyrings {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "cloudkms_v1.Resource$Projects$Locations$Keyrings$Cryptokeys")
   @js.native
-  class ResourceProjectsLocationsKeyringsCryptokeys protected ()
+  open class ResourceProjectsLocationsKeyringsCryptokeys protected ()
     extends typings.googleapis.cloudkmsV1Mod.cloudkmsV1.ResourceProjectsLocationsKeyringsCryptokeys {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "cloudkms_v1.Resource$Projects$Locations$Keyrings$Cryptokeys$Cryptokeyversions")
   @js.native
-  class ResourceProjectsLocationsKeyringsCryptokeysCryptokeyversions protected ()
+  open class ResourceProjectsLocationsKeyringsCryptokeysCryptokeyversions protected ()
     extends typings.googleapis.cloudkmsV1Mod.cloudkmsV1.ResourceProjectsLocationsKeyringsCryptokeysCryptokeyversions {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "cloudkms_v1.Resource$Projects$Locations$Keyrings$Importjobs")
   @js.native
-  class ResourceProjectsLocationsKeyringsImportjobs protected ()
+  open class ResourceProjectsLocationsKeyringsImportjobs protected ()
     extends typings.googleapis.cloudkmsV1Mod.cloudkmsV1.ResourceProjectsLocationsKeyringsImportjobs {
     def this(context: APIRequestContext) = this()
   }

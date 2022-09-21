@@ -16,7 +16,7 @@ trait StatusProto extends StObject {
   var message: js.UndefOr[String] = js.undefined
   
   /** message_set associates an arbitrary proto message with the status. */
-  var messageSet: js.UndefOr[js.Any] = js.undefined
+  var messageSet: js.UndefOr[Any] = js.undefined
   
   /** The following are usually only present when code != 0 Space to which this status belongs */
   var space: js.UndefOr[String] = js.undefined
@@ -40,7 +40,7 @@ object StatusProto {
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    inline def setMessageSet(value: js.Any): Self = StObject.set(x, "messageSet", value.asInstanceOf[js.Any])
+    inline def setMessageSet(value: Any): Self = StObject.set(x, "messageSet", value.asInstanceOf[js.Any])
     
     inline def setMessageSetUndefined: Self = StObject.set(x, "messageSet", js.undefined)
     

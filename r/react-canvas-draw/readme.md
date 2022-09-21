@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-canvas-draw
 
-Typings are for version 1.1
+Typings are for version 1.2
 
 ## Library description:
 A simple yet powerful canvas-drawing component for React.
@@ -10,10 +10,10 @@ A simple yet powerful canvas-drawing component for React.
 | ------------------ | :-------------: |
 | Full name          | react-canvas-draw |
 | Keywords           | react-component, react, reactjs, canvas, drawing |
-| # releases         | 18 |
-| # dependents       | 8 |
-| # downloads        | 123083 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 37693.333333333336 |
+| # stars            | 723.0 |
 
 ## Links
 - [Homepage](https://embiem.github.io/react-canvas-draw/)

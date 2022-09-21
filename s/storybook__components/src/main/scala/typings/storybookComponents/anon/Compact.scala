@@ -9,6 +9,8 @@ trait Compact extends StObject {
   var compact: js.UndefOr[Boolean] = js.undefined
   
   var inAddonPanel: js.UndefOr[Boolean] = js.undefined
+  
+  var isLoading: js.UndefOr[Boolean] = js.undefined
 }
 object Compact {
   
@@ -26,5 +28,9 @@ object Compact {
     inline def setInAddonPanel(value: Boolean): Self = StObject.set(x, "inAddonPanel", value.asInstanceOf[js.Any])
     
     inline def setInAddonPanelUndefined: Self = StObject.set(x, "inAddonPanel", js.undefined)
+    
+    inline def setIsLoading(value: Boolean): Self = StObject.set(x, "isLoading", value.asInstanceOf[js.Any])
+    
+    inline def setIsLoadingUndefined: Self = StObject.set(x, "isLoading", js.undefined)
   }
 }

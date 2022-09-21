@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DomainDeliverabilityTrackingOption extends StObject {
   
   /**
-    * A verified domain that’s associated with your AWS account and currently has an active Deliverability dashboard subscription.
+    * A verified domain that’s associated with your Amazon Web Services account and currently has an active Deliverability dashboard subscription.
     */
   var Domain: js.UndefOr[typings.awsSdk.sesv2Mod.Domain] = js.undefined
   
@@ -19,7 +19,7 @@ trait DomainDeliverabilityTrackingOption extends StObject {
   /**
     * The date, in Unix time format, when you enabled the Deliverability dashboard for the domain.
     */
-  var SubscriptionStartDate: js.UndefOr[Timestamp] = js.undefined
+  var SubscriptionStartDate: js.UndefOr[js.Date] = js.undefined
 }
 object DomainDeliverabilityTrackingOption {
   
@@ -38,7 +38,7 @@ object DomainDeliverabilityTrackingOption {
     
     inline def setInboxPlacementTrackingOptionUndefined: Self = StObject.set(x, "InboxPlacementTrackingOption", js.undefined)
     
-    inline def setSubscriptionStartDate(value: Timestamp): Self = StObject.set(x, "SubscriptionStartDate", value.asInstanceOf[js.Any])
+    inline def setSubscriptionStartDate(value: js.Date): Self = StObject.set(x, "SubscriptionStartDate", value.asInstanceOf[js.Any])
     
     inline def setSubscriptionStartDateUndefined: Self = StObject.set(x, "SubscriptionStartDate", js.undefined)
   }

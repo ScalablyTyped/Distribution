@@ -10,10 +10,10 @@ A TCP socket pair for easily transmitting full messages without worrying about p
 | ------------------ | :-------------: |
 | Full name          | ncom |
 | Keywords           | ncom, tcp, simple, socket, messages |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 754706 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 42327.0 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/SocketCluster/ncom#readme)

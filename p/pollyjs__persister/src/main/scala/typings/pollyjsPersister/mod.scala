@@ -9,12 +9,12 @@ object mod {
   
   @JSImport("@pollyjs/persister", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with Persister {
     
     /* CompleteClass */
-    override val options: StringDictionary[js.Any] = js.native
+    override val options: StringDictionary[Any] = js.native
     
     /* CompleteClass */
     override def persist(): js.Promise[Unit] = js.native
@@ -33,20 +33,20 @@ object mod {
   
   trait Persister extends StObject {
     
-    val options: StringDictionary[js.Any]
+    val options: StringDictionary[Any]
     
     def persist(): js.Promise[Unit]
   }
   object Persister {
     
-    inline def apply(options: StringDictionary[js.Any], persist: () => js.Promise[Unit]): Persister = {
+    inline def apply(options: StringDictionary[Any], persist: () => js.Promise[Unit]): Persister = {
       val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], persist = js.Any.fromFunction0(persist))
       __obj.asInstanceOf[Persister]
     }
     
     extension [Self <: Persister](x: Self) {
       
-      inline def setOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: StringDictionary[Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       inline def setPersist(value: () => js.Promise[Unit]): Self = StObject.set(x, "persist", js.Any.fromFunction0(value))
     }

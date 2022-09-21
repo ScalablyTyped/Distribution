@@ -1,7 +1,7 @@
 
 # Scala.js typings for parent-module
 
-Typings are for version 2.0.0
+Typings are for version 3.0.0
 
 ## Library description:
 Get the path of the parent module
@@ -10,10 +10,10 @@ Get the path of the parent module
 | ------------------ | :-------------: |
 | Full name          | parent-module |
 | Keywords           | parent, module, package, caller, calling, module, path, callsites, callsite, stacktrace, stack, trace, function, file |
-| # releases         | 3 |
-| # dependents       | 109 |
-| # downloads        | 518038584 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 9.067586533333333E7 |
+| # stars            | 71.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/parent-module#readme)

@@ -1,7 +1,7 @@
 
 # Scala.js typings for linkify-it
 
-Typings are for version 2.1.0
+Typings are for version 3.0.2
 
 ## Library description:
 Links recognition library with FULL unicode support
@@ -10,10 +10,10 @@ Links recognition library with FULL unicode support
 | ------------------ | :-------------: |
 | Full name          | linkify-it |
 | Keywords           | linkify, linkifier, autolink, autolinker |
-| # releases         | 6 |
-| # dependents       | 151 |
-| # downloads        | 68690220 |
-| # stars            | 5 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1.4205035333333334E7 |
+| # stars            | 539.0 |
 
 ## Links
 - [Homepage](https://github.com/markdown-it/linkify-it#readme)

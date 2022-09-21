@@ -22,7 +22,7 @@ trait MML2jaxPreprocessor extends StObject {
     * preview: ["[math]"],     //  insert the text "[math]" as the preview
     * preview: [["img",{src: "/images/mypic.jpg"}]],  // insert an image as the preview
     */
-  var preview: js.UndefOr[js.Any] = js.undefined
+  var preview: js.UndefOr[Any] = js.undefined
 }
 object MML2jaxPreprocessor {
   
@@ -33,7 +33,7 @@ object MML2jaxPreprocessor {
   
   extension [Self <: MML2jaxPreprocessor](x: Self) {
     
-    inline def setPreview(value: js.Any): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
+    inline def setPreview(value: Any): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
     
     inline def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
   }

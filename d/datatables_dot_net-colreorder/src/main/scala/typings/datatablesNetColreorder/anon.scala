@@ -37,30 +37,9 @@ object anon {
       */
     def transpose(): Api = js.native
     def transpose(idx: js.Array[Double]): Api = js.native
+    def transpose(idx: js.Array[Double], direction: toCurrent | toOriginal | fromOriginal | fromCurrent): Api = js.native
     def transpose(idx: Double): Api = js.native
-    @JSName("transpose")
-    def transpose_fromCurrent(idx: js.Array[Double], direction: fromCurrent): Api = js.native
-    @JSName("transpose")
-    def transpose_fromCurrent(idx: Double, direction: fromCurrent): Api = js.native
-    @JSName("transpose")
-    def transpose_fromCurrent(idx: Unit, direction: fromCurrent): Api = js.native
-    @JSName("transpose")
-    def transpose_fromOriginal(idx: js.Array[Double], direction: fromOriginal): Api = js.native
-    @JSName("transpose")
-    def transpose_fromOriginal(idx: Double, direction: fromOriginal): Api = js.native
-    @JSName("transpose")
-    def transpose_fromOriginal(idx: Unit, direction: fromOriginal): Api = js.native
-    @JSName("transpose")
-    def transpose_toCurrent(idx: js.Array[Double], direction: toCurrent): Api = js.native
-    @JSName("transpose")
-    def transpose_toCurrent(idx: Double, direction: toCurrent): Api = js.native
-    @JSName("transpose")
-    def transpose_toCurrent(idx: Unit, direction: toCurrent): Api = js.native
-    @JSName("transpose")
-    def transpose_toOriginal(idx: js.Array[Double], direction: toOriginal): Api = js.native
-    @JSName("transpose")
-    def transpose_toOriginal(idx: Double, direction: toOriginal): Api = js.native
-    @JSName("transpose")
-    def transpose_toOriginal(idx: Unit, direction: toOriginal): Api = js.native
+    def transpose(idx: Double, direction: toCurrent | toOriginal | fromOriginal | fromCurrent): Api = js.native
+    def transpose(idx: Unit, direction: toCurrent | toOriginal | fromOriginal | fromCurrent): Api = js.native
   }
 }

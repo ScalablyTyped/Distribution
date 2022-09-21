@@ -36,12 +36,12 @@ object ListProfilingGroupsResponse {
     
     inline def setProfilingGroupNames(value: ProfilingGroupNames): Self = StObject.set(x, "profilingGroupNames", value.asInstanceOf[js.Any])
     
-    inline def setProfilingGroupNamesVarargs(value: ProfilingGroupName*): Self = StObject.set(x, "profilingGroupNames", js.Array(value :_*))
+    inline def setProfilingGroupNamesVarargs(value: ProfilingGroupName*): Self = StObject.set(x, "profilingGroupNames", js.Array(value*))
     
     inline def setProfilingGroups(value: ProfilingGroupDescriptions): Self = StObject.set(x, "profilingGroups", value.asInstanceOf[js.Any])
     
     inline def setProfilingGroupsUndefined: Self = StObject.set(x, "profilingGroups", js.undefined)
     
-    inline def setProfilingGroupsVarargs(value: ProfilingGroupDescription*): Self = StObject.set(x, "profilingGroups", js.Array(value :_*))
+    inline def setProfilingGroupsVarargs(value: ProfilingGroupDescription*): Self = StObject.set(x, "profilingGroups", js.Array(value*))
   }
 }

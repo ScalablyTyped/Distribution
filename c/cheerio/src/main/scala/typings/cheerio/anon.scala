@@ -1,29 +1,44 @@
 package typings.cheerio
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.domelementtype.mod.ElementType.Script
+import typings.domelementtype.mod.ElementType.Style
+import typings.domelementtype.mod.ElementType.Tag
+import typings.domhandler.libNodeMod.ChildNode
+import typings.domhandler.libNodeMod.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  trait Name extends StObject {
+  @js.native
+  trait FnCall extends StObject {
     
-    var name: String
-    
-    var value: String
+    def apply[T /* <: Node */](): T = js.native
+    def apply[T /* <: Node */](recursive: Boolean): T = js.native
   }
-  object Name {
+  
+  @js.native
+  trait FnCallNameAttribsChildrenType extends StObject {
     
-    inline def apply(name: String, value: String): Name = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Name]
-    }
+    def apply(children: js.Array[ChildNode]): Any = js.native
+    def apply(name: String, attribs: StringDictionary[String]): Any = js.native
+    def apply(name: String, attribs: StringDictionary[String], children: js.Array[ChildNode]): Any = js.native
+    def apply(name: String, attribs: StringDictionary[String], children: js.Array[ChildNode], `type`: Script): Any = js.native
+    def apply(name: String, attribs: StringDictionary[String], children: js.Array[ChildNode], `type`: Style): Any = js.native
+    def apply(name: String, attribs: StringDictionary[String], children: js.Array[ChildNode], `type`: Tag): Any = js.native
+    def apply(name: String, attribs: StringDictionary[String], children: Unit, `type`: Script): Any = js.native
+    def apply(name: String, attribs: StringDictionary[String], children: Unit, `type`: Style): Any = js.native
+    def apply(name: String, attribs: StringDictionary[String], children: Unit, `type`: Tag): Any = js.native
+  }
+  
+  @js.native
+  trait FnCallStartEnd[T] extends StObject {
     
-    extension [Self <: Name](x: Self) {
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-    }
+    def apply(): js.Array[T] = js.native
+    def apply(start: Double): js.Array[T] = js.native
+    def apply(start: Double, end: Double): js.Array[T] = js.native
+    def apply(start: Unit, end: Double): js.Array[T] = js.native
   }
 }

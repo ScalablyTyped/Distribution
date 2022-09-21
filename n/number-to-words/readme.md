@@ -10,10 +10,10 @@ Contains some util methods for converting numbers into words, ordinal words and 
 | ------------------ | :-------------: |
 | Full name          | number-to-words |
 | Keywords           | converter, number, ordinal, string, tool, word |
-| # releases         | 0 |
-| # dependents       | 59 |
-| # downloads        | 3379181 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 675750.3333333334 |
+| # stars            | 183.0 |
 
 ## Links
 - [Homepage](https://github.com/marlun78/number-to-words)

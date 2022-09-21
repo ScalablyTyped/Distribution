@@ -8,7 +8,7 @@ object mockXMLHttpRequestUploadMod {
   
   @JSImport("xhr-mock/lib/MockXMLHttpRequestUpload", JSImport.Default)
   @js.native
-  class default () extends MockXMLHttpRequestUpload
+  open class default () extends MockXMLHttpRequestUpload
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.std.EventTarget because Already inherited

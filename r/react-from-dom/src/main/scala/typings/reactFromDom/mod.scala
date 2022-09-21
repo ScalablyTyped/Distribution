@@ -62,6 +62,8 @@ object mod {
     
     var nodeOnly: js.UndefOr[Boolean] = js.undefined
     
+    var randomKey: js.UndefOr[Boolean] = js.undefined
+    
     var selector: js.UndefOr[String] = js.undefined
     
     var `type`: js.UndefOr[String] = js.undefined
@@ -79,7 +81,7 @@ object mod {
       
       inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
       
-      inline def setActionsVarargs(value: Action*): Self = StObject.set(x, "actions", js.Array(value :_*))
+      inline def setActionsVarargs(value: Action*): Self = StObject.set(x, "actions", js.Array(value*))
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -92,6 +94,10 @@ object mod {
       inline def setNodeOnly(value: Boolean): Self = StObject.set(x, "nodeOnly", value.asInstanceOf[js.Any])
       
       inline def setNodeOnlyUndefined: Self = StObject.set(x, "nodeOnly", js.undefined)
+      
+      inline def setRandomKey(value: Boolean): Self = StObject.set(x, "randomKey", value.asInstanceOf[js.Any])
+      
+      inline def setRandomKeyUndefined: Self = StObject.set(x, "randomKey", js.undefined)
       
       inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
       

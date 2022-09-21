@@ -10,10 +10,10 @@ object wifiMod {
   
   @JSImport("material-ui/svg-icons/notification/wifi", JSImport.Default)
   @js.native
-  class default () extends NotificationWifi
+  open class default () extends NotificationWifi
   
   @JSImport("material-ui/svg-icons/notification/wifi", "NotificationWifi")
   @js.native
-  class NotificationWifi ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NotificationWifi ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

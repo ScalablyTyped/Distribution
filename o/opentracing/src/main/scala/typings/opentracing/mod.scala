@@ -14,7 +14,7 @@ object mod {
   
   @JSImport("opentracing", "BinaryCarrier")
   @js.native
-  class BinaryCarrier protected () extends default {
+  open class BinaryCarrier protected () extends default {
     def this(buffer: ArrayLike[Double]) = this()
   }
   
@@ -32,7 +32,7 @@ object mod {
   
   @JSImport("opentracing", "MockTracer")
   @js.native
-  class MockTracer ()
+  open class MockTracer ()
     extends typings.opentracing.mockTracerMod.MockTracer
   
   @JSImport("opentracing", "REFERENCE_CHILD_OF")
@@ -45,7 +45,7 @@ object mod {
   
   @JSImport("opentracing", "Reference")
   @js.native
-  class Reference protected ()
+  open class Reference protected ()
     extends typings.opentracing.referenceMod.default {
     /**
       * Initialize a new Reference instance.
@@ -62,12 +62,12 @@ object mod {
   
   @JSImport("opentracing", "Span")
   @js.native
-  class Span ()
+  open class Span ()
     extends typings.opentracing.spanMod.default
   
   @JSImport("opentracing", "SpanContext")
   @js.native
-  class SpanContext ()
+  open class SpanContext ()
     extends typings.opentracing.spanContextMod.default
   
   object Tags {
@@ -163,7 +163,7 @@ object mod {
   
   @JSImport("opentracing", "Tracer")
   @js.native
-  class Tracer ()
+  open class Tracer ()
     extends typings.opentracing.tracerMod.Tracer
   
   inline def childOf(spanContext: typings.opentracing.spanContextMod.default): typings.opentracing.referenceMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("childOf")(spanContext.asInstanceOf[js.Any]).asInstanceOf[typings.opentracing.referenceMod.default]

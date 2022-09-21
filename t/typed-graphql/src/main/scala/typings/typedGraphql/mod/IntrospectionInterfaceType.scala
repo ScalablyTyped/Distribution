@@ -38,7 +38,7 @@ object IntrospectionInterfaceType {
     
     inline def setFields(value: js.Array[IntrospectionField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    inline def setFieldsVarargs(value: IntrospectionField*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: IntrospectionField*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setKind(value: INTERFACE): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
@@ -46,6 +46,6 @@ object IntrospectionInterfaceType {
     
     inline def setPossibleTypes(value: js.Array[IntrospectionNamedTypeRef]): Self = StObject.set(x, "possibleTypes", value.asInstanceOf[js.Any])
     
-    inline def setPossibleTypesVarargs(value: IntrospectionNamedTypeRef*): Self = StObject.set(x, "possibleTypes", js.Array(value :_*))
+    inline def setPossibleTypesVarargs(value: IntrospectionNamedTypeRef*): Self = StObject.set(x, "possibleTypes", js.Array(value*))
   }
 }

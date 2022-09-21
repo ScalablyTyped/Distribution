@@ -9,12 +9,12 @@ object ManagementGroupsModels {
   
   @JSImport("azure-arm-resource", "ManagementGroupsModels.BaseResource")
   @js.native
-  class BaseResource ()
+  open class BaseResource ()
     extends typings.azureArmResource.managementModelsMod.BaseResource
   
   @JSImport("azure-arm-resource", "ManagementGroupsModels.CloudError")
   @js.native
-  class CloudError protected ()
+  open class CloudError protected ()
     extends typings.azureArmResource.managementModelsMod.CloudError {
     def this(parameters: CloudErrorParameters) = this()
   }

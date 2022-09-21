@@ -2,7 +2,7 @@ package typings.jupyterlabServices
 
 import typings.jupyterlabServices.jupyterlabServicesStrings.iopub
 import typings.jupyterlabServices.jupyterlabServicesStrings.shell
-import typings.jupyterlabServices.kernelManagerMod.KernelManager.IOptions
+import typings.jupyterlabServices.kernelKernelMod.IKernelConnection.IOptions
 import typings.jupyterlabServices.kernelRestapiMod.IKernelOptions
 import typings.jupyterlabServices.kernelRestapiMod.IModel
 import typings.jupyterlabServices.messagesMod.IClearOutputMsg
@@ -75,6 +75,16 @@ object kernelMod {
     inline def startNew(options: IKernelOptions, settings: ISettings): js.Promise[IModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("startNew")(options.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IModel]]
   }
   
+  @JSImport("@jupyterlab/services/lib/kernel", "KernelConnection")
+  @js.native
+  open class KernelConnection protected ()
+    extends typings.jupyterlabServices.defaultMod.KernelConnection {
+    /**
+      * Construct a kernel object.
+      */
+    def this(options: IOptions) = this()
+  }
+  
   @JSImport("@jupyterlab/services/lib/kernel", "KernelManager")
   @js.native
   /**
@@ -82,9 +92,9 @@ object kernelMod {
     *
     * @param options - The default options for kernel.
     */
-  class KernelManager ()
+  open class KernelManager ()
     extends typings.jupyterlabServices.kernelManagerMod.KernelManager {
-    def this(options: IOptions) = this()
+    def this(options: typings.jupyterlabServices.kernelManagerMod.KernelManager.IOptions) = this()
   }
   
   object KernelMessage {

@@ -43,6 +43,6 @@ object GoogleCloudMlV1SuggestTrialsResponse {
     
     inline def setTrialsUndefined: Self = StObject.set(x, "trials", js.undefined)
     
-    inline def setTrialsVarargs(value: GoogleCloudMlV1Trial*): Self = StObject.set(x, "trials", js.Array(value :_*))
+    inline def setTrialsVarargs(value: GoogleCloudMlV1Trial*): Self = StObject.set(x, "trials", js.Array(value*))
   }
 }

@@ -8,11 +8,11 @@ trait ValidatorOptions extends StObject {
   
   var errorTemplate: js.UndefOr[String] = js.undefined
   
-  var messages: js.UndefOr[js.Any] = js.undefined
+  var messages: js.UndefOr[Any] = js.undefined
   
   var name: js.UndefOr[String] = js.undefined
   
-  var rules: js.UndefOr[js.Any] = js.undefined
+  var rules: js.UndefOr[Any] = js.undefined
   
   var validate: js.UndefOr[js.Function1[/* e */ ValidatorValidateEvent, Unit]] = js.undefined
   
@@ -35,7 +35,7 @@ object ValidatorOptions {
     
     inline def setErrorTemplateUndefined: Self = StObject.set(x, "errorTemplate", js.undefined)
     
-    inline def setMessages(value: js.Any): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: Any): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
@@ -43,7 +43,7 @@ object ValidatorOptions {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setRules(value: js.Any): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: Any): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
     inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     

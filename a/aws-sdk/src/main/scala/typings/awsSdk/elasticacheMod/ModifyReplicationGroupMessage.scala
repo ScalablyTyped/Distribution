@@ -22,7 +22,7 @@ trait ModifyReplicationGroupMessage extends StObject {
   var AuthTokenUpdateStrategy: js.UndefOr[AuthTokenUpdateStrategyType] = js.undefined
   
   /**
-    * This parameter is currently disabled.
+    *  If you are running Redis engine version 6.0 or later, set this parameter to yes if you want to opt-in to the next auto minor version upgrade campaign. This parameter is disabled for previous versions.  
     */
   var AutoMinorVersionUpgrade: js.UndefOr[BooleanOptional] = js.undefined
   
@@ -52,7 +52,12 @@ trait ModifyReplicationGroupMessage extends StObject {
   var EngineVersion: js.UndefOr[String] = js.undefined
   
   /**
-    * A flag indicating if you have Multi-AZ enabled to enhance fault tolerance. For more information, see Minimizing Downtime: Multi-AZ.
+    * Specifies the destination, format and type of the logs.
+    */
+  var LogDeliveryConfigurations: js.UndefOr[LogDeliveryConfigurationRequestList] = js.undefined
+  
+  /**
+    * A flag to indicate MultiAZ is enabled.
     */
   var MultiAZEnabled: js.UndefOr[BooleanOptional] = js.undefined
   
@@ -82,7 +87,7 @@ trait ModifyReplicationGroupMessage extends StObject {
   var PrimaryClusterId: js.UndefOr[String] = js.undefined
   
   /**
-    * Removes the user groups that can access this replication group.
+    * Removes the user group associated with this replication group.
     */
   var RemoveUserGroups: js.UndefOr[BooleanOptional] = js.undefined
   
@@ -117,12 +122,12 @@ trait ModifyReplicationGroupMessage extends StObject {
   var SnapshottingClusterId: js.UndefOr[String] = js.undefined
   
   /**
-    * A list of user group IDs.
+    * The ID of the user group you are associating with the replication group.
     */
   var UserGroupIdsToAdd: js.UndefOr[UserGroupIdList] = js.undefined
   
   /**
-    * A list of users groups to remove, meaning the users in the group no longer can access thereplication group.
+    * The ID of the user group to disassociate from the replication group, meaning the users in the group no longer can access the replication group.
     */
   var UserGroupIdsToRemove: js.UndefOr[UserGroupIdList] = js.undefined
 }
@@ -167,11 +172,17 @@ object ModifyReplicationGroupMessage {
     
     inline def setCacheSecurityGroupNamesUndefined: Self = StObject.set(x, "CacheSecurityGroupNames", js.undefined)
     
-    inline def setCacheSecurityGroupNamesVarargs(value: String*): Self = StObject.set(x, "CacheSecurityGroupNames", js.Array(value :_*))
+    inline def setCacheSecurityGroupNamesVarargs(value: String*): Self = StObject.set(x, "CacheSecurityGroupNames", js.Array(value*))
     
     inline def setEngineVersion(value: String): Self = StObject.set(x, "EngineVersion", value.asInstanceOf[js.Any])
     
     inline def setEngineVersionUndefined: Self = StObject.set(x, "EngineVersion", js.undefined)
+    
+    inline def setLogDeliveryConfigurations(value: LogDeliveryConfigurationRequestList): Self = StObject.set(x, "LogDeliveryConfigurations", value.asInstanceOf[js.Any])
+    
+    inline def setLogDeliveryConfigurationsUndefined: Self = StObject.set(x, "LogDeliveryConfigurations", js.undefined)
+    
+    inline def setLogDeliveryConfigurationsVarargs(value: LogDeliveryConfigurationRequest*): Self = StObject.set(x, "LogDeliveryConfigurations", js.Array(value*))
     
     inline def setMultiAZEnabled(value: BooleanOptional): Self = StObject.set(x, "MultiAZEnabled", value.asInstanceOf[js.Any])
     
@@ -211,7 +222,7 @@ object ModifyReplicationGroupMessage {
     
     inline def setSecurityGroupIdsUndefined: Self = StObject.set(x, "SecurityGroupIds", js.undefined)
     
-    inline def setSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value :_*))
+    inline def setSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value*))
     
     inline def setSnapshotRetentionLimit(value: IntegerOptional): Self = StObject.set(x, "SnapshotRetentionLimit", value.asInstanceOf[js.Any])
     
@@ -229,12 +240,12 @@ object ModifyReplicationGroupMessage {
     
     inline def setUserGroupIdsToAddUndefined: Self = StObject.set(x, "UserGroupIdsToAdd", js.undefined)
     
-    inline def setUserGroupIdsToAddVarargs(value: UserGroupId*): Self = StObject.set(x, "UserGroupIdsToAdd", js.Array(value :_*))
+    inline def setUserGroupIdsToAddVarargs(value: UserGroupId*): Self = StObject.set(x, "UserGroupIdsToAdd", js.Array(value*))
     
     inline def setUserGroupIdsToRemove(value: UserGroupIdList): Self = StObject.set(x, "UserGroupIdsToRemove", value.asInstanceOf[js.Any])
     
     inline def setUserGroupIdsToRemoveUndefined: Self = StObject.set(x, "UserGroupIdsToRemove", js.undefined)
     
-    inline def setUserGroupIdsToRemoveVarargs(value: UserGroupId*): Self = StObject.set(x, "UserGroupIdsToRemove", js.Array(value :_*))
+    inline def setUserGroupIdsToRemoveVarargs(value: UserGroupId*): Self = StObject.set(x, "UserGroupIdsToRemove", js.Array(value*))
   }
 }

@@ -9,9 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait BooleanConstructor
   extends StObject
-     with Instantiable0[scala.Boolean]
-     with Instantiable1[/* value */ js.Any, scala.Boolean] {
+     with /* standard es5 */
+Instantiable0[scala.Boolean]
+     with Instantiable1[/* value */ Any, scala.Boolean] {
   
+  /* standard es5 */
   def apply[T](): scala.Boolean = js.native
   def apply[T](value: T): scala.Boolean = js.native
 }

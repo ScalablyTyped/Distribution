@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CUI.ScriptUtility")
 @js.native
-class ScriptUtility ()
+open class ScriptUtility ()
   extends StObject
      with typings.sharepoint.CUI.ScriptUtility

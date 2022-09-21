@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("jsrsasign.KJUR.asn1.DERAbstractTime")
 @js.native
-class DERAbstractTime protected ()
+open class DERAbstractTime protected ()
   extends typings.jsrsasign.mod.KJUR.asn1.DERAbstractTime {
   def this(params: StringParam) = this()
 }

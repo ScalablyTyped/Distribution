@@ -40,11 +40,11 @@ object Camera {
     
     inline def setCoa(value: Vector3): Self = StObject.set(x, "coa", value.asInstanceOf[js.Any])
     
-    inline def setCoaVarargs(value: Double*): Self = StObject.set(x, "coa", js.Array(value :_*))
+    inline def setCoaVarargs(value: Double*): Self = StObject.set(x, "coa", js.Array(value*))
     
     inline def setEye(value: Vector3): Self = StObject.set(x, "eye", value.asInstanceOf[js.Any])
     
-    inline def setEyeVarargs(value: Double*): Self = StObject.set(x, "eye", js.Array(value :_*))
+    inline def setEyeVarargs(value: Double*): Self = StObject.set(x, "eye", js.Array(value*))
     
     inline def setFar(value: Double): Self = StObject.set(x, "far", value.asInstanceOf[js.Any])
     
@@ -52,6 +52,6 @@ object Camera {
     
     inline def setUp(value: Vector3): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
     
-    inline def setUpVarargs(value: Double*): Self = StObject.set(x, "up", js.Array(value :_*))
+    inline def setUpVarargs(value: Double*): Self = StObject.set(x, "up", js.Array(value*))
   }
 }

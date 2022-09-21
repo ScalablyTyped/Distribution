@@ -10,10 +10,10 @@ A simple utility library for making the web more humane.
 | ------------------ | :-------------: |
 | Full name          | humanize-plus |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 38 |
-| # downloads        | 2181698 |
-| # stars            | 4 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 199261.0 |
+| # stars            | 899.0 |
 
 ## Links
 - [Homepage](https://github.com/HubSpot/humanize)

@@ -12,21 +12,20 @@ object objectTypeAdapterMod {
   
   @JSImport("@hyperloris/tyson/dist/types/adapters/objectTypeAdapter", "ObjectTypeAdapter")
   @js.native
-  class ObjectTypeAdapter protected ()
-    extends TypeAdapter[js.Any] {
-    def this(tyson: Tyson, typeToken: TypeToken[js.Any]) = this()
+  open class ObjectTypeAdapter protected () extends TypeAdapter[Any] {
+    def this(tyson: Tyson, typeToken: TypeToken[Any]) = this()
     
-    /* private */ var _jsonPropertyMetadataMap: js.Any = js.native
+    /* private */ var _jsonPropertyMetadataMap: Any = js.native
     
-    /* private */ var _typeToken: js.Any = js.native
+    /* private */ var _typeToken: Any = js.native
     
-    /* private */ var _tyson: js.Any = js.native
+    /* private */ var _tyson: Any = js.native
     
     /**
       * This method extracts all the metadata of the class and saves them in a map.
       * In this way the reflection operations are performed only once when the adapter is created.
       */
-    /* private */ def loadMetadata(): js.Any = js.native
+    /* private */ def loadMetadata(): Any = js.native
   }
   /* static members */
   object ObjectTypeAdapter {

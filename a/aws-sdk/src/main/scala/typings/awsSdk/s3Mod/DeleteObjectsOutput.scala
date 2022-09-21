@@ -12,7 +12,7 @@ trait DeleteObjectsOutput extends StObject {
   var Deleted: js.UndefOr[DeletedObjects] = js.undefined
   
   /**
-    * Container for a failed delete operation that describes the object that Amazon S3 attempted to delete and the error it encountered.
+    * Container for a failed delete action that describes the object that Amazon S3 attempted to delete and the error it encountered.
     */
   var Errors: js.UndefOr[typings.awsSdk.s3Mod.Errors] = js.undefined
   
@@ -31,13 +31,13 @@ object DeleteObjectsOutput {
     
     inline def setDeletedUndefined: Self = StObject.set(x, "Deleted", js.undefined)
     
-    inline def setDeletedVarargs(value: DeletedObject*): Self = StObject.set(x, "Deleted", js.Array(value :_*))
+    inline def setDeletedVarargs(value: DeletedObject*): Self = StObject.set(x, "Deleted", js.Array(value*))
     
     inline def setErrors(value: Errors): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
     
     inline def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
     
-    inline def setErrorsVarargs(value: Error*): Self = StObject.set(x, "Errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: Error*): Self = StObject.set(x, "Errors", js.Array(value*))
     
     inline def setRequestCharged(value: RequestCharged): Self = StObject.set(x, "RequestCharged", value.asInstanceOf[js.Any])
     

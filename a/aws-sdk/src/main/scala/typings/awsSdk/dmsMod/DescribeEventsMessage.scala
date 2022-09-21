@@ -14,7 +14,7 @@ trait DescribeEventsMessage extends StObject {
   /**
     * The end time for the events to be listed.
     */
-  var EndTime: js.UndefOr[TStamp] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A list of event categories for the source type that you've chosen.
@@ -22,7 +22,7 @@ trait DescribeEventsMessage extends StObject {
   var EventCategories: js.UndefOr[EventCategoriesList] = js.undefined
   
   /**
-    * Filters applied to events.
+    * Filters applied to events. The only valid filter is replication-instance-id.
     */
   var Filters: js.UndefOr[FilterList] = js.undefined
   
@@ -42,14 +42,14 @@ trait DescribeEventsMessage extends StObject {
   var SourceIdentifier: js.UndefOr[String] = js.undefined
   
   /**
-    * The type of AWS DMS resource that generates events. Valid values: replication-instance | replication-task
+    * The type of DMS resource that generates events. Valid values: replication-instance | replication-task
     */
   var SourceType: js.UndefOr[typings.awsSdk.dmsMod.SourceType] = js.undefined
   
   /**
     * The start time for the events to be listed.
     */
-  var StartTime: js.UndefOr[TStamp] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
 }
 object DescribeEventsMessage {
   
@@ -64,7 +64,7 @@ object DescribeEventsMessage {
     
     inline def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
     
-    inline def setEndTime(value: TStamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
@@ -72,13 +72,13 @@ object DescribeEventsMessage {
     
     inline def setEventCategoriesUndefined: Self = StObject.set(x, "EventCategories", js.undefined)
     
-    inline def setEventCategoriesVarargs(value: String*): Self = StObject.set(x, "EventCategories", js.Array(value :_*))
+    inline def setEventCategoriesVarargs(value: String*): Self = StObject.set(x, "EventCategories", js.Array(value*))
     
     inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
@@ -96,7 +96,7 @@ object DescribeEventsMessage {
     
     inline def setSourceTypeUndefined: Self = StObject.set(x, "SourceType", js.undefined)
     
-    inline def setStartTime(value: TStamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
   }

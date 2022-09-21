@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PasswordGrantOptions extends StObject {
   
+  var audience: js.UndefOr[String] = js.undefined
+  
   var password: String
   
   var realm: js.UndefOr[String] = js.undefined
@@ -22,6 +24,10 @@ object PasswordGrantOptions {
   }
   
   extension [Self <: PasswordGrantOptions](x: Self) {
+    
+    inline def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
+    
+    inline def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
     
     inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     

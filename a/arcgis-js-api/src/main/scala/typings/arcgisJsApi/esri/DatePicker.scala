@@ -1,6 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,6 +12,8 @@ trait DatePicker
   /**
     * Indicates whether the date gets updated when the user changes the month in the drop-down.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-DatePicker.html#commitOnMonthChange)
     */
   var commitOnMonthChange: Boolean = js.native
@@ -22,7 +23,7 @@ trait DatePicker
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-DatePicker.html#value)
     */
-  var value: Date = js.native
+  var value: js.Date = js.native
   
   /**
     * The view model for this widget.

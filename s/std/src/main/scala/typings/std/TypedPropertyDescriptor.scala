@@ -6,16 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TypedPropertyDescriptor[T] extends StObject {
   
+  /* standard es5 */
   var configurable: js.UndefOr[scala.Boolean] = js.undefined
   
+  /* standard es5 */
   var enumerable: js.UndefOr[scala.Boolean] = js.undefined
   
+  /* standard es5 */
   var get: js.UndefOr[js.Function0[T]] = js.undefined
   
+  /* standard es5 */
   var set: js.UndefOr[js.Function1[/* value */ T, Unit]] = js.undefined
   
+  /* standard es5 */
   var value: js.UndefOr[T] = js.undefined
   
+  /* standard es5 */
   var writable: js.UndefOr[scala.Boolean] = js.undefined
 }
 object TypedPropertyDescriptor {

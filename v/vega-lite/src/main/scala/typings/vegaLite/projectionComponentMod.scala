@@ -11,10 +11,10 @@ object projectionComponentMod {
   
   @JSImport("vega-lite/build/src/compile/projection/component", "ProjectionComponent")
   @js.native
-  class ProjectionComponent protected () extends Split[Projection] {
+  open class ProjectionComponent protected () extends Split[Projection] {
     def this(
       name: String,
-      specifiedProjection: typings.vegaLite.projectionMod.Projection,
+      specifiedProjection: typings.vegaLite.projectionMod.Projection[SignalRef],
       size: js.Array[SignalRef],
       data: js.Array[String | SignalRef]
     ) = this()
@@ -30,6 +30,6 @@ object projectionComponentMod {
     
     var size: js.Array[SignalRef] = js.native
     
-    var specifiedProjection: typings.vegaLite.projectionMod.Projection = js.native
+    var specifiedProjection: typings.vegaLite.projectionMod.Projection[SignalRef] = js.native
   }
 }

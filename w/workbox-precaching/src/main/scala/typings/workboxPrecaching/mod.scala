@@ -15,7 +15,7 @@ object mod {
   
   @JSImport("workbox-precaching", "PrecacheController")
   @js.native
-  class PrecacheController ()
+  open class PrecacheController ()
     extends typings.workboxPrecaching.precacheControllerMod.PrecacheController {
     def this(cacheName: String) = this()
   }

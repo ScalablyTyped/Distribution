@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@apollo/protobufjs/minimal", "Enum")
 @js.native
-class Enum protected ()
+open class Enum protected ()
   extends typings.apolloProtobufjs.mod.Enum {
   /**
     * Constructs a new enum instance.
@@ -19,78 +19,57 @@ class Enum protected ()
     * @param [comments] The value comments for this enum
     */
   def this(name: String) = this()
-  def this(name: String, values: StringDictionary[js.UndefOr[Double]]) = this()
-  def this(
-    name: String,
-    values: StringDictionary[js.UndefOr[Double]],
-    options: StringDictionary[js.UndefOr[js.Any]]
-  ) = this()
-  def this(name: String, values: Unit, options: StringDictionary[js.UndefOr[js.Any]]) = this()
-  def this(
-    name: String,
-    values: StringDictionary[js.UndefOr[Double]],
-    options: StringDictionary[js.UndefOr[js.Any]],
-    comment: String
-  ) = this()
-  def this(name: String, values: StringDictionary[js.UndefOr[Double]], options: Unit, comment: String) = this()
-  def this(name: String, values: Unit, options: StringDictionary[js.UndefOr[js.Any]], comment: String) = this()
+  def this(name: String, values: StringDictionary[Double]) = this()
+  def this(name: String, values: StringDictionary[Double], options: StringDictionary[Any]) = this()
+  def this(name: String, values: Unit, options: StringDictionary[Any]) = this()
+  def this(name: String, values: StringDictionary[Double], options: StringDictionary[Any], comment: String) = this()
+  def this(name: String, values: StringDictionary[Double], options: Unit, comment: String) = this()
+  def this(name: String, values: Unit, options: StringDictionary[Any], comment: String) = this()
   def this(name: String, values: Unit, options: Unit, comment: String) = this()
   def this(
     name: String,
-    values: StringDictionary[js.UndefOr[Double]],
-    options: StringDictionary[js.UndefOr[js.Any]],
+    values: StringDictionary[Double],
+    options: StringDictionary[Any],
     comment: String,
-    comments: StringDictionary[js.UndefOr[String]]
+    comments: StringDictionary[String]
   ) = this()
   def this(
     name: String,
-    values: StringDictionary[js.UndefOr[Double]],
-    options: StringDictionary[js.UndefOr[js.Any]],
+    values: StringDictionary[Double],
+    options: StringDictionary[Any],
     comment: Unit,
-    comments: StringDictionary[js.UndefOr[String]]
+    comments: StringDictionary[String]
   ) = this()
   def this(
     name: String,
-    values: StringDictionary[js.UndefOr[Double]],
+    values: StringDictionary[Double],
     options: Unit,
     comment: String,
-    comments: StringDictionary[js.UndefOr[String]]
+    comments: StringDictionary[String]
   ) = this()
   def this(
     name: String,
-    values: StringDictionary[js.UndefOr[Double]],
+    values: StringDictionary[Double],
     options: Unit,
     comment: Unit,
-    comments: StringDictionary[js.UndefOr[String]]
+    comments: StringDictionary[String]
   ) = this()
   def this(
     name: String,
     values: Unit,
-    options: StringDictionary[js.UndefOr[js.Any]],
+    options: StringDictionary[Any],
     comment: String,
-    comments: StringDictionary[js.UndefOr[String]]
+    comments: StringDictionary[String]
   ) = this()
   def this(
     name: String,
     values: Unit,
-    options: StringDictionary[js.UndefOr[js.Any]],
+    options: StringDictionary[Any],
     comment: Unit,
-    comments: StringDictionary[js.UndefOr[String]]
+    comments: StringDictionary[String]
   ) = this()
-  def this(
-    name: String,
-    values: Unit,
-    options: Unit,
-    comment: String,
-    comments: StringDictionary[js.UndefOr[String]]
-  ) = this()
-  def this(
-    name: String,
-    values: Unit,
-    options: Unit,
-    comment: Unit,
-    comments: StringDictionary[js.UndefOr[String]]
-  ) = this()
+  def this(name: String, values: Unit, options: Unit, comment: String, comments: StringDictionary[String]) = this()
+  def this(name: String, values: Unit, options: Unit, comment: Unit, comments: StringDictionary[String]) = this()
 }
 /* static members */
 object Enum {

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 纯文本标记
   * @param options 选项
   */
-class Text[ExtraData] ()
+open class Text[ExtraData] ()
   extends StObject
      with typings.amapJsApi.AMap.Text[ExtraData] {
   def this(options: Options) = this()

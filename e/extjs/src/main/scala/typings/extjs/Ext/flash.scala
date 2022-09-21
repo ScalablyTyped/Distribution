@@ -20,13 +20,13 @@ object flash {
     var expressInstall: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Object) */
-    var flashAttributes: js.UndefOr[js.Any] = js.undefined
+    var flashAttributes: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Object) */
-    var flashParams: js.UndefOr[js.Any] = js.undefined
+    var flashParams: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Object) */
-    var flashVars: js.UndefOr[js.Any] = js.undefined
+    var flashVars: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (String) */
     var flashVersion: js.UndefOr[java.lang.String] = js.undefined
@@ -38,10 +38,10 @@ object flash {
     var swf: js.UndefOr[IElement] = js.undefined
     
     /** [Config Option] (String/Number) */
-    var swfHeight: js.UndefOr[js.Any] = js.undefined
+    var swfHeight: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (String/Number) */
-    var swfWidth: js.UndefOr[js.Any] = js.undefined
+    var swfWidth: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (String) */
     var url: js.UndefOr[java.lang.String] = js.undefined
@@ -70,15 +70,15 @@ object flash {
       
       inline def setExpressInstallUndefined: Self = StObject.set(x, "expressInstall", js.undefined)
       
-      inline def setFlashAttributes(value: js.Any): Self = StObject.set(x, "flashAttributes", value.asInstanceOf[js.Any])
+      inline def setFlashAttributes(value: Any): Self = StObject.set(x, "flashAttributes", value.asInstanceOf[js.Any])
       
       inline def setFlashAttributesUndefined: Self = StObject.set(x, "flashAttributes", js.undefined)
       
-      inline def setFlashParams(value: js.Any): Self = StObject.set(x, "flashParams", value.asInstanceOf[js.Any])
+      inline def setFlashParams(value: Any): Self = StObject.set(x, "flashParams", value.asInstanceOf[js.Any])
       
       inline def setFlashParamsUndefined: Self = StObject.set(x, "flashParams", js.undefined)
       
-      inline def setFlashVars(value: js.Any): Self = StObject.set(x, "flashVars", value.asInstanceOf[js.Any])
+      inline def setFlashVars(value: Any): Self = StObject.set(x, "flashVars", value.asInstanceOf[js.Any])
       
       inline def setFlashVarsUndefined: Self = StObject.set(x, "flashVars", js.undefined)
       
@@ -92,13 +92,13 @@ object flash {
       
       inline def setSwf(value: IElement): Self = StObject.set(x, "swf", value.asInstanceOf[js.Any])
       
-      inline def setSwfHeight(value: js.Any): Self = StObject.set(x, "swfHeight", value.asInstanceOf[js.Any])
+      inline def setSwfHeight(value: Any): Self = StObject.set(x, "swfHeight", value.asInstanceOf[js.Any])
       
       inline def setSwfHeightUndefined: Self = StObject.set(x, "swfHeight", js.undefined)
       
       inline def setSwfUndefined: Self = StObject.set(x, "swf", js.undefined)
       
-      inline def setSwfWidth(value: js.Any): Self = StObject.set(x, "swfWidth", value.asInstanceOf[js.Any])
+      inline def setSwfWidth(value: Any): Self = StObject.set(x, "swfWidth", value.asInstanceOf[js.Any])
       
       inline def setSwfWidthUndefined: Self = StObject.set(x, "swfWidth", js.undefined)
       

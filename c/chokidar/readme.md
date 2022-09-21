@@ -1,7 +1,7 @@
 
 # Scala.js typings for chokidar
 
-Typings are for version 3.4.3
+Typings are for version 3.5.3
 
 ## Library description:
 Minimal and efficient cross-platform file watching library
@@ -10,10 +10,10 @@ Minimal and efficient cross-platform file watching library
 | ------------------ | :-------------: |
 | Full name          | chokidar |
 | Keywords           | fs, watch, watchFile, watcher, watching, file, fsevents |
-| # releases         | 27 |
-| # dependents       | 6039 |
-| # downloads        | 1256398627 |
-| # stars            | 176 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 1.83358502E8 |
+| # stars            | 9107.0 |
 
 ## Links
 - [Homepage](https://github.com/paulmillr/chokidar)

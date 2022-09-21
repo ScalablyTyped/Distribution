@@ -14,6 +14,8 @@ trait BlendOption extends StObject {
   var modelMatrix: js.UndefOr[Matrix4] = js.undefined
   
   var scene: js.UndefOr[typings.cesium.mod.Scene] = js.undefined
+  
+  var show: js.UndefOr[Boolean] = js.undefined
 }
 object BlendOption {
   
@@ -39,5 +41,9 @@ object BlendOption {
     inline def setScene(value: typings.cesium.mod.Scene): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
     
     inline def setSceneUndefined: Self = StObject.set(x, "scene", js.undefined)
+    
+    inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
   }
 }

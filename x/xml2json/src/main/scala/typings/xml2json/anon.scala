@@ -82,7 +82,7 @@ object anon {
       
       inline def setArrayNotationUndefined: Self = StObject.set(x, "arrayNotation", js.undefined)
       
-      inline def setArrayNotationVarargs(value: String*): Self = StObject.set(x, "arrayNotation", js.Array(value :_*))
+      inline def setArrayNotationVarargs(value: String*): Self = StObject.set(x, "arrayNotation", js.Array(value*))
       
       inline def setCoerce(value: Boolean): Self = StObject.set(x, "coerce", value.asInstanceOf[js.Any])
       
@@ -181,7 +181,7 @@ object anon {
       
       inline def setArrayNotationUndefined: Self = StObject.set(x, "arrayNotation", js.undefined)
       
-      inline def setArrayNotationVarargs(value: String*): Self = StObject.set(x, "arrayNotation", js.Array(value :_*))
+      inline def setArrayNotationVarargs(value: String*): Self = StObject.set(x, "arrayNotation", js.Array(value*))
       
       inline def setCoerce(value: Boolean): Self = StObject.set(x, "coerce", value.asInstanceOf[js.Any])
       

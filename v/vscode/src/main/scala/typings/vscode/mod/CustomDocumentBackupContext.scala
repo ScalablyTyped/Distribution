@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Additional information used to implement [`CustomEditableDocument.backup`](#CustomEditableDocument.backup).
+  * Additional information used to implement {@linkcode CustomEditableDocument.backup}.
   */
 trait CustomDocumentBackupContext extends StObject {
   

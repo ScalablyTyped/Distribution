@@ -41,7 +41,7 @@ trait ResponseDateTimeRenderOption extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** The A1 notation of the values to update. */
+  /** The [A1 notation](/sheets/api/guides/concepts#cell) of the values to update. */
   var range: String
   
   /** Request body */
@@ -49,11 +49,11 @@ trait ResponseDateTimeRenderOption extends StObject {
   
   /**
     * Determines how dates, times, and durations in the response should be rendered. This is ignored if response_value_render_option is FORMATTED_VALUE. The default dateTime render
-    * option is DateTimeRenderOption.SERIAL_NUMBER.
+    * option is SERIAL_NUMBER.
     */
   var responseDateTimeRenderOption: js.UndefOr[String] = js.undefined
   
-  /** Determines how values in the response should be rendered. The default render option is ValueRenderOption.FORMATTED_VALUE. */
+  /** Determines how values in the response should be rendered. The default render option is FORMATTED_VALUE. */
   var responseValueRenderOption: js.UndefOr[String] = js.undefined
   
   /** The ID of the spreadsheet to update. */

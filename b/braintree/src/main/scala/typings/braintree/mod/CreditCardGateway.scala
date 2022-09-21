@@ -1,6 +1,5 @@
 package typings.braintree.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ trait CreditCardGateway extends StObject {
   
   def delete(creditCardToken: String): js.Promise[Unit]
   
-  def expiringBetween(startDate: Date, endDate: Date): js.Promise[CreditCard]
+  def expiringBetween(startDate: js.Date, endDate: js.Date): js.Promise[CreditCard]
   
   def find(creditCardToken: String): js.Promise[CreditCard]
   
@@ -22,7 +21,7 @@ object CreditCardGateway {
   inline def apply(
     create: CreditCardCreateRequest => js.Promise[ValidatedResponse[CreditCard]],
     delete: String => js.Promise[Unit],
-    expiringBetween: (Date, Date) => js.Promise[CreditCard],
+    expiringBetween: (js.Date, js.Date) => js.Promise[CreditCard],
     find: String => js.Promise[CreditCard],
     update: (String, CreditCardUpdateRequest) => js.Promise[ValidatedResponse[CreditCard]]
   ): CreditCardGateway = {
@@ -36,7 +35,7 @@ object CreditCardGateway {
     
     inline def setDelete(value: String => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
     
-    inline def setExpiringBetween(value: (Date, Date) => js.Promise[CreditCard]): Self = StObject.set(x, "expiringBetween", js.Any.fromFunction2(value))
+    inline def setExpiringBetween(value: (js.Date, js.Date) => js.Promise[CreditCard]): Self = StObject.set(x, "expiringBetween", js.Any.fromFunction2(value))
     
     inline def setFind(value: String => js.Promise[CreditCard]): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
     

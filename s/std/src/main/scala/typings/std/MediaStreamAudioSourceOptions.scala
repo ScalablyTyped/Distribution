@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MediaStreamAudioSourceOptions extends StObject {
   
+  /* standard dom */
   var mediaStream: MediaStream
 }
 object MediaStreamAudioSourceOptions {

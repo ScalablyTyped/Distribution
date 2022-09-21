@@ -65,7 +65,7 @@ object XParagraphCursor {
     isCollapsed: () => Boolean,
     isEndOfParagraph: () => Boolean,
     isStartOfParagraph: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setString: String => Unit
   ): XParagraphCursor = {

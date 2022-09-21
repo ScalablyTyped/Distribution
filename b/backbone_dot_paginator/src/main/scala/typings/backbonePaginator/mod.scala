@@ -16,7 +16,7 @@ object mod {
   
   @JSImport("backbone", "PageableCollection")
   @js.native
-  class PageableCollection[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */] () extends Collection[TModel] {
+  open class PageableCollection[TModel /* <: Model[Any, ModelSetOptions, Any] */] () extends Collection[TModel] {
     def this(models: js.Array[TModel]) = this()
     def this(models: js.Array[TModel], options: PageableInitialOptions) = this()
     def this(models: Unit, options: PageableInitialOptions) = this()
@@ -49,17 +49,17 @@ object mod {
     
     var mode: String = js.native
     
-    def parse(resp: js.Any): js.Array[js.Any] = js.native
-    def parse(resp: js.Any, options: js.Any): js.Array[js.Any] = js.native
+    def parse(resp: Any): js.Array[Any] = js.native
+    def parse(resp: Any, options: Any): js.Array[Any] = js.native
     
-    def parseLinks(resp: js.Any): js.Any = js.native
-    def parseLinks(resp: js.Any, options: PageableParseLinksOptions): js.Any = js.native
+    def parseLinks(resp: Any): Any = js.native
+    def parseLinks(resp: Any, options: PageableParseLinksOptions): Any = js.native
     
-    def parseRecords(resp: js.Any): js.Array[js.Any] = js.native
-    def parseRecords(resp: js.Any, options: js.Any): js.Array[js.Any] = js.native
+    def parseRecords(resp: Any): js.Array[Any] = js.native
+    def parseRecords(resp: Any, options: Any): js.Array[Any] = js.native
     
-    def parseState(resp: js.Any, queryParams: PageableQueryParams, state: PageableState): PageableState = js.native
-    def parseState(resp: js.Any, queryParams: PageableQueryParams, state: PageableState, options: js.Any): PageableState = js.native
+    def parseState(resp: Any, queryParams: PageableQueryParams, state: PageableState): PageableState = js.native
+    def parseState(resp: Any, queryParams: PageableQueryParams, state: PageableState, options: Any): PageableState = js.native
     
     var queryParams: PageableQueryParams = js.native
     
@@ -79,9 +79,9 @@ object mod {
     def switchMode(mode: Unit, options: PageableSwitchModeOptions): JQueryXHR | PageableCollection[TModel] = js.native
     
     def sync(method: String, model: TModel): JQueryXHR = js.native
-    def sync(method: String, model: TModel, options: js.Any): JQueryXHR = js.native
+    def sync(method: String, model: TModel, options: Any): JQueryXHR = js.native
     def sync(method: String, model: Collection[TModel]): JQueryXHR = js.native
-    def sync(method: String, model: Collection[TModel], options: js.Any): JQueryXHR = js.native
+    def sync(method: String, model: Collection[TModel], options: Any): JQueryXHR = js.native
   }
   /* static members */
   object PageableCollection {
@@ -97,7 +97,7 @@ object mod {
   
   trait PageableInitialOptions extends StObject {
     
-    var comparator: js.UndefOr[js.Function1[/* repeated */ js.Any, Double]] = js.undefined
+    var comparator: js.UndefOr[js.Function1[/* repeated */ Any, Double]] = js.undefined
     
     var full: js.UndefOr[Boolean] = js.undefined
     
@@ -114,7 +114,7 @@ object mod {
     
     extension [Self <: PageableInitialOptions](x: Self) {
       
-      inline def setComparator(value: /* repeated */ js.Any => Double): Self = StObject.set(x, "comparator", js.Any.fromFunction1(value))
+      inline def setComparator(value: /* repeated */ Any => Double): Self = StObject.set(x, "comparator", js.Any.fromFunction1(value))
       
       inline def setComparatorUndefined: Self = StObject.set(x, "comparator", js.undefined)
       
@@ -155,7 +155,7 @@ object mod {
     
     var currentPage: js.UndefOr[String] = js.undefined
     
-    var directions: js.UndefOr[js.Any] = js.undefined
+    var directions: js.UndefOr[Any] = js.undefined
     
     var order: js.UndefOr[String] = js.undefined
     
@@ -180,7 +180,7 @@ object mod {
       
       inline def setCurrentPageUndefined: Self = StObject.set(x, "currentPage", js.undefined)
       
-      inline def setDirections(value: js.Any): Self = StObject.set(x, "directions", value.asInstanceOf[js.Any])
+      inline def setDirections(value: Any): Self = StObject.set(x, "directions", value.asInstanceOf[js.Any])
       
       inline def setDirectionsUndefined: Self = StObject.set(x, "directions", js.undefined)
       
@@ -206,22 +206,22 @@ object mod {
     }
   }
   
-  trait PageableSetSortingOptions[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */] extends StObject {
+  trait PageableSetSortingOptions[TModel /* <: Model[Any, ModelSetOptions, Any] */] extends StObject {
     
     var full: js.UndefOr[Boolean] = js.undefined
     
     var side: js.UndefOr[String] = js.undefined
     
-    var sortValue: js.UndefOr[js.Function2[/* model */ TModel, /* sortKey */ String, js.Any | String]] = js.undefined
+    var sortValue: js.UndefOr[js.Function2[/* model */ TModel, /* sortKey */ String, Any | String]] = js.undefined
   }
   object PageableSetSortingOptions {
     
-    inline def apply[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */](): PageableSetSortingOptions[TModel] = {
+    inline def apply[TModel /* <: Model[Any, ModelSetOptions, Any] */](): PageableSetSortingOptions[TModel] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PageableSetSortingOptions[TModel]]
     }
     
-    extension [Self <: PageableSetSortingOptions[?], TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */](x: Self & PageableSetSortingOptions[TModel]) {
+    extension [Self <: PageableSetSortingOptions[?], TModel /* <: Model[Any, ModelSetOptions, Any] */](x: Self & PageableSetSortingOptions[TModel]) {
       
       inline def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
       
@@ -231,7 +231,7 @@ object mod {
       
       inline def setSideUndefined: Self = StObject.set(x, "side", js.undefined)
       
-      inline def setSortValue(value: (/* model */ TModel, /* sortKey */ String) => js.Any | String): Self = StObject.set(x, "sortValue", js.Any.fromFunction2(value))
+      inline def setSortValue(value: (/* model */ TModel, /* sortKey */ String) => Any | String): Self = StObject.set(x, "sortValue", js.Any.fromFunction2(value))
       
       inline def setSortValueUndefined: Self = StObject.set(x, "sortValue", js.undefined)
     }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("sip.js", "Core.NotifyUserAgentServer")
 @js.native
-class NotifyUserAgentServer protected ()
+open class NotifyUserAgentServer protected ()
   extends typings.sipJs.coreMod.NotifyUserAgentServer {
   /**
     * NOTIFY UAS constructor.

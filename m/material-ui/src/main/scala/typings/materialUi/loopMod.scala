@@ -10,10 +10,10 @@ object loopMod {
   
   @JSImport("material-ui/svg-icons/av/loop", JSImport.Default)
   @js.native
-  class default () extends AvLoop
+  open class default () extends AvLoop
   
   @JSImport("material-ui/svg-icons/av/loop", "AvLoop")
   @js.native
-  class AvLoop ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvLoop ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

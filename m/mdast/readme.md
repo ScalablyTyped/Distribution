@@ -10,10 +10,10 @@ Markdown Abstract Syntax Tree format
 | ------------------ | :-------------: |
 | Full name          | mdast |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 43 |
-| # downloads        | 74564 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 53774.666666666664 |
+| # stars            | 694.0 |
 
 ## Links
 - [Homepage](https://github.com/wooorm/mdast#readme)

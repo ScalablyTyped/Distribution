@@ -1,10 +1,10 @@
 package typings.circularDependencyPlugin
 
 import typings.circularDependencyPlugin.anon.Compilation
-import typings.circularDependencyPlugin.anon.CompilationAny
+import typings.circularDependencyPlugin.anon.CompilationCompilation
 import typings.circularDependencyPlugin.circularDependencyPluginBooleans.`false`
-import typings.std.Plugin
-import typings.std.RegExp
+import typings.webpack.mod.Compiler
+import typings.webpack.mod.WebpackPluginInstance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,16 +16,32 @@ object mod {
     */
   @JSImport("circular-dependency-plugin", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
-       with Plugin {
+       with CircularDependencyPlugin {
     def this(options: Options) = this()
+    
+    /**
+    	 * The run point of the plugin, required method.
+    	 */
+    /* CompleteClass */
+    @JSName("apply")
+    override def apply(compiler: Compiler): Unit = js.native
   }
   
   /**
     * Detect modules with circular dependencies when bundling with webpack.
     */
-  type CircularDependencyPlugin = Plugin
+  trait CircularDependencyPlugin
+    extends StObject
+       with WebpackPluginInstance
+  object CircularDependencyPlugin {
+    
+    inline def apply(apply: Compiler => Unit): CircularDependencyPlugin = {
+      val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply))
+      __obj.asInstanceOf[CircularDependencyPlugin]
+    }
+  }
   
   trait Options extends StObject {
     
@@ -42,7 +58,7 @@ object mod {
     /**
       * @default /$^/
       */
-    var exclude: js.UndefOr[RegExp] = js.undefined
+    var exclude: js.UndefOr[js.RegExp] = js.undefined
     
     /**
       * @default false
@@ -52,16 +68,16 @@ object mod {
     /**
       * @default /.*\/
       */
-    var include: js.UndefOr[RegExp] = js.undefined
+    var include: js.UndefOr[js.RegExp] = js.undefined
     
     /**
       * @default false
       */
     var onDetected: js.UndefOr[`false` | (js.Function1[/* x */ Compilation, Unit])] = js.undefined
     
-    var onEnd: js.UndefOr[js.Function1[/* x */ CompilationAny, Unit]] = js.undefined
+    var onEnd: js.UndefOr[js.Function1[/* x */ CompilationCompilation, Unit]] = js.undefined
     
-    var onStart: js.UndefOr[js.Function1[/* x */ CompilationAny, Unit]] = js.undefined
+    var onStart: js.UndefOr[js.Function1[/* x */ CompilationCompilation, Unit]] = js.undefined
   }
   object Options {
     
@@ -80,7 +96,7 @@ object mod {
       
       inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      inline def setExclude(value: RegExp): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: js.RegExp): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
       inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
@@ -88,7 +104,7 @@ object mod {
       
       inline def setFailOnErrorUndefined: Self = StObject.set(x, "failOnError", js.undefined)
       
-      inline def setInclude(value: RegExp): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: js.RegExp): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
       inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
@@ -98,11 +114,11 @@ object mod {
       
       inline def setOnDetectedUndefined: Self = StObject.set(x, "onDetected", js.undefined)
       
-      inline def setOnEnd(value: /* x */ CompilationAny => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction1(value))
+      inline def setOnEnd(value: /* x */ CompilationCompilation => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction1(value))
       
       inline def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
       
-      inline def setOnStart(value: /* x */ CompilationAny => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
+      inline def setOnStart(value: /* x */ CompilationCompilation => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
       
       inline def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
     }

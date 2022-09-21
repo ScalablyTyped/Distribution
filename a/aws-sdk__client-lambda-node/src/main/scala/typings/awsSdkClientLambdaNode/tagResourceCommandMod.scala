@@ -16,7 +16,7 @@ object tagResourceCommandMod {
   
   @JSImport("@aws-sdk/client-lambda-node/commands/TagResourceCommand", "TagResourceCommand")
   @js.native
-  class TagResourceCommand protected ()
+  open class TagResourceCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object tagResourceCommandMod {
     override val middlewareStack: MiddlewareStack[TagResourceInput, TagResourceOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: LambdaResolvedConfiguration
     ): Handler[TagResourceInput, TagResourceOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: LambdaResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[TagResourceInput, TagResourceOutput] = js.native
   }
 }

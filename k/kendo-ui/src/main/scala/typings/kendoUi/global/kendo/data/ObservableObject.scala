@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.data.ObservableObject")
 @js.native
-class ObservableObject ()
+open class ObservableObject ()
   extends StObject
      with typings.kendoUi.kendo.data.ObservableObject {
-  def this(value: js.Any) = this()
+  def this(value: Any) = this()
 }

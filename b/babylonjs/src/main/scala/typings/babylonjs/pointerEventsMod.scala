@@ -1,11 +1,10 @@
 package typings.babylonjs
 
+import typings.babylonjs.deviceInputEventsMod.IMouseEvent
 import typings.babylonjs.mathVectorMod.Vector2
 import typings.babylonjs.pickingInfoMod.PickingInfo
 import typings.babylonjs.rayMod.Ray
 import typings.babylonjs.typesMod.Nullable
-import typings.std.MouseWheelEvent
-import typings.std.PointerEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ object pointerEventsMod {
   
   @JSImport("babylonjs/Events/pointerEvents", "PointerEventTypes")
   @js.native
-  class PointerEventTypes () extends StObject
+  open class PointerEventTypes () extends StObject
   /* static members */
   object PointerEventTypes {
     
@@ -70,15 +69,7 @@ object pointerEventsMod {
   
   @JSImport("babylonjs/Events/pointerEvents", "PointerInfo")
   @js.native
-  class PointerInfo protected () extends PointerInfoBase {
-    def this(
-      `type`: Double,
-      event: MouseWheelEvent,
-      /**
-      * Defines the picking info associated to the info (if any)\
-      */
-    pickInfo: Nullable[PickingInfo]
-    ) = this()
+  open class PointerInfo protected () extends PointerInfoBase {
     /**
       * Instantiates a PointerInfo to store pointer related info to the onPointerObservable event.
       * @param type Defines the type of event (PointerEventTypes)
@@ -87,7 +78,7 @@ object pointerEventsMod {
       */
     def this(
       `type`: Double,
-      event: PointerEvent,
+      event: IMouseEvent,
       /**
       * Defines the picking info associated to the info (if any)\
       */
@@ -102,17 +93,7 @@ object pointerEventsMod {
   
   @JSImport("babylonjs/Events/pointerEvents", "PointerInfoBase")
   @js.native
-  class PointerInfoBase protected () extends StObject {
-    def this(
-      /**
-      * Defines the type of event (PointerEventTypes)
-      */
-    `type`: Double,
-      /**
-      * Defines the related dom event
-      */
-    event: MouseWheelEvent
-    ) = this()
+  open class PointerInfoBase protected () extends StObject {
     /**
       * Instantiates the base class of pointers info.
       * @param type Defines the type of event (PointerEventTypes)
@@ -126,13 +107,13 @@ object pointerEventsMod {
       /**
       * Defines the related dom event
       */
-    event: PointerEvent
+    event: IMouseEvent
     ) = this()
     
     /**
       * Defines the related dom event
       */
-    var event: PointerEvent | MouseWheelEvent = js.native
+    var event: IMouseEvent = js.native
     
     /**
       * Defines the type of event (PointerEventTypes)
@@ -142,8 +123,7 @@ object pointerEventsMod {
   
   @JSImport("babylonjs/Events/pointerEvents", "PointerInfoPre")
   @js.native
-  class PointerInfoPre protected () extends PointerInfoBase {
-    def this(`type`: Double, event: MouseWheelEvent, localX: Double, localY: Double) = this()
+  open class PointerInfoPre protected () extends PointerInfoBase {
     /**
       * Instantiates a PointerInfoPre to store pointer related info to the onPrePointerObservable event.
       * @param type Defines the type of event (PointerEventTypes)
@@ -151,7 +131,7 @@ object pointerEventsMod {
       * @param localX Defines the local x coordinates of the pointer when the event occured
       * @param localY Defines the local y coordinates of the pointer when the event occured
       */
-    def this(`type`: Double, event: PointerEvent, localX: Double, localY: Double) = this()
+    def this(`type`: Double, event: IMouseEvent, localX: Double, localY: Double) = this()
     
     /**
       * Defines the local position of the pointer on the canvas.
@@ -159,7 +139,12 @@ object pointerEventsMod {
     var localPosition: Vector2 = js.native
     
     /**
-      * Ray from a pointer if availible (eg. 6dof controller)
+      * Defines picking info coming from a near interaction (proximity instead of ray-based picking)
+      */
+    var nearInteractionPickingInfo: Nullable[PickingInfo] = js.native
+    
+    /**
+      * Ray from a pointer if available (eg. 6dof controller)
       */
     var ray: Nullable[Ray] = js.native
     
@@ -179,7 +164,7 @@ object pointerEventsMod {
     /**
       * Event type passed from DOM.
       */
-    var `type`: js.Any
+    var `type`: Any
     
     /**
       * X coordinate of touch.
@@ -193,7 +178,7 @@ object pointerEventsMod {
   }
   object PointerTouch {
     
-    inline def apply(pointerId: Double, `type`: js.Any, x: Double, y: Double): PointerTouch = {
+    inline def apply(pointerId: Double, `type`: Any, x: Double, y: Double): PointerTouch = {
       val __obj = js.Dynamic.literal(pointerId = pointerId.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[PointerTouch]
@@ -203,7 +188,7 @@ object pointerEventsMod {
       
       inline def setPointerId(value: Double): Self = StObject.set(x, "pointerId", value.asInstanceOf[js.Any])
       
-      inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

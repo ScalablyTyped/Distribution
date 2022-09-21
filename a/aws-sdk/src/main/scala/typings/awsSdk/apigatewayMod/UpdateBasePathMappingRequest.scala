@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateBasePathMappingRequest extends StObject {
   
   /**
-    * [Required] The base path of the BasePathMapping resource to change. To specify an empty base path, set this parameter to '(none)'.
+    * The base path of the BasePathMapping resource to change. To specify an empty base path, set this parameter to '(none)'.
     */
   var basePath: String
   
   /**
-    * [Required] The domain name of the BasePathMapping resource to change.
+    * The domain name of the BasePathMapping resource to change.
     */
   var domainName: String
   
   /**
-    * A list of update operations to be applied to the specified resource and in the order specified in this list.
+    * For more information about supported patch operations, see Patch Operations.
     */
   var patchOperations: js.UndefOr[ListOfPatchOperation] = js.undefined
 }
@@ -38,6 +38,6 @@ object UpdateBasePathMappingRequest {
     
     inline def setPatchOperationsUndefined: Self = StObject.set(x, "patchOperations", js.undefined)
     
-    inline def setPatchOperationsVarargs(value: PatchOperation*): Self = StObject.set(x, "patchOperations", js.Array(value :_*))
+    inline def setPatchOperationsVarargs(value: PatchOperation*): Self = StObject.set(x, "patchOperations", js.Array(value*))
   }
 }

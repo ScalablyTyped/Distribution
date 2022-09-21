@@ -7,102 +7,112 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DataSourceParameters extends StObject {
   
   /**
-    * Amazon Elasticsearch Service parameters.
+    * The parameters for OpenSearch.
     */
   var AmazonElasticsearchParameters: js.UndefOr[typings.awsSdk.quicksightMod.AmazonElasticsearchParameters] = js.undefined
   
   /**
-    * Amazon Athena parameters.
+    * The parameters for OpenSearch.
+    */
+  var AmazonOpenSearchParameters: js.UndefOr[typings.awsSdk.quicksightMod.AmazonOpenSearchParameters] = js.undefined
+  
+  /**
+    * The parameters for Amazon Athena.
     */
   var AthenaParameters: js.UndefOr[typings.awsSdk.quicksightMod.AthenaParameters] = js.undefined
   
   /**
-    * Amazon Aurora MySQL parameters.
+    * The parameters for Amazon Aurora MySQL.
     */
   var AuroraParameters: js.UndefOr[typings.awsSdk.quicksightMod.AuroraParameters] = js.undefined
   
   /**
-    * Aurora PostgreSQL parameters.
+    * The parameters for Amazon Aurora.
     */
   var AuroraPostgreSqlParameters: js.UndefOr[typings.awsSdk.quicksightMod.AuroraPostgreSqlParameters] = js.undefined
   
   /**
-    * AWS IoT Analytics parameters.
+    * The parameters for IoT Analytics.
     */
   var AwsIotAnalyticsParameters: js.UndefOr[typings.awsSdk.quicksightMod.AwsIotAnalyticsParameters] = js.undefined
   
   /**
-    * Jira parameters.
+    * The parameters for Exasol.
+    */
+  var ExasolParameters: js.UndefOr[typings.awsSdk.quicksightMod.ExasolParameters] = js.undefined
+  
+  /**
+    * The parameters for Jira.
     */
   var JiraParameters: js.UndefOr[typings.awsSdk.quicksightMod.JiraParameters] = js.undefined
   
   /**
-    * MariaDB parameters.
+    * The parameters for MariaDB.
     */
   var MariaDbParameters: js.UndefOr[typings.awsSdk.quicksightMod.MariaDbParameters] = js.undefined
   
   /**
-    * MySQL parameters.
+    * The parameters for MySQL.
     */
   var MySqlParameters: js.UndefOr[typings.awsSdk.quicksightMod.MySqlParameters] = js.undefined
   
   /**
-    * Oracle parameters.
+    * The parameters for Oracle.
     */
   var OracleParameters: js.UndefOr[typings.awsSdk.quicksightMod.OracleParameters] = js.undefined
   
   /**
-    * PostgreSQL parameters.
+    * The parameters for PostgreSQL.
     */
   var PostgreSqlParameters: js.UndefOr[typings.awsSdk.quicksightMod.PostgreSqlParameters] = js.undefined
   
   /**
-    * Presto parameters.
+    * The parameters for Presto.
     */
   var PrestoParameters: js.UndefOr[typings.awsSdk.quicksightMod.PrestoParameters] = js.undefined
   
   /**
-    * Amazon RDS parameters.
+    * The parameters for Amazon RDS.
     */
   var RdsParameters: js.UndefOr[typings.awsSdk.quicksightMod.RdsParameters] = js.undefined
   
   /**
-    * Amazon Redshift parameters.
+    * The parameters for Amazon Redshift.
     */
   var RedshiftParameters: js.UndefOr[typings.awsSdk.quicksightMod.RedshiftParameters] = js.undefined
   
   /**
-    * S3 parameters.
+    * The parameters for S3.
     */
   var S3Parameters: js.UndefOr[typings.awsSdk.quicksightMod.S3Parameters] = js.undefined
   
   /**
-    * ServiceNow parameters.
+    * The parameters for ServiceNow.
     */
   var ServiceNowParameters: js.UndefOr[typings.awsSdk.quicksightMod.ServiceNowParameters] = js.undefined
   
   /**
-    * Snowflake parameters.
+    * The parameters for Snowflake.
     */
   var SnowflakeParameters: js.UndefOr[typings.awsSdk.quicksightMod.SnowflakeParameters] = js.undefined
   
   /**
-    * Spark parameters.
+    * The parameters for Spark.
     */
   var SparkParameters: js.UndefOr[typings.awsSdk.quicksightMod.SparkParameters] = js.undefined
   
   /**
-    * SQL Server parameters.
+    * The parameters for SQL Server.
     */
   var SqlServerParameters: js.UndefOr[typings.awsSdk.quicksightMod.SqlServerParameters] = js.undefined
   
   /**
-    * Teradata parameters.
+    * The parameters for Teradata.
     */
   var TeradataParameters: js.UndefOr[typings.awsSdk.quicksightMod.TeradataParameters] = js.undefined
   
   /**
-    * Twitter parameters.
+    * The parameters for Twitter.
     */
   var TwitterParameters: js.UndefOr[typings.awsSdk.quicksightMod.TwitterParameters] = js.undefined
 }
@@ -119,6 +129,10 @@ object DataSourceParameters {
     
     inline def setAmazonElasticsearchParametersUndefined: Self = StObject.set(x, "AmazonElasticsearchParameters", js.undefined)
     
+    inline def setAmazonOpenSearchParameters(value: AmazonOpenSearchParameters): Self = StObject.set(x, "AmazonOpenSearchParameters", value.asInstanceOf[js.Any])
+    
+    inline def setAmazonOpenSearchParametersUndefined: Self = StObject.set(x, "AmazonOpenSearchParameters", js.undefined)
+    
     inline def setAthenaParameters(value: AthenaParameters): Self = StObject.set(x, "AthenaParameters", value.asInstanceOf[js.Any])
     
     inline def setAthenaParametersUndefined: Self = StObject.set(x, "AthenaParameters", js.undefined)
@@ -134,6 +148,10 @@ object DataSourceParameters {
     inline def setAwsIotAnalyticsParameters(value: AwsIotAnalyticsParameters): Self = StObject.set(x, "AwsIotAnalyticsParameters", value.asInstanceOf[js.Any])
     
     inline def setAwsIotAnalyticsParametersUndefined: Self = StObject.set(x, "AwsIotAnalyticsParameters", js.undefined)
+    
+    inline def setExasolParameters(value: ExasolParameters): Self = StObject.set(x, "ExasolParameters", value.asInstanceOf[js.Any])
+    
+    inline def setExasolParametersUndefined: Self = StObject.set(x, "ExasolParameters", js.undefined)
     
     inline def setJiraParameters(value: JiraParameters): Self = StObject.set(x, "JiraParameters", value.asInstanceOf[js.Any])
     

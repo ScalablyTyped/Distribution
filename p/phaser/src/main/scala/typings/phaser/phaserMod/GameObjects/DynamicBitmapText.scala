@@ -1,7 +1,6 @@
 package typings.phaser.phaserMod.GameObjects
 
 import typings.phaser.Phaser.Scene
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,16 +25,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * To create a BitmapText data files you need a 3rd party app such as:
   * 
-  * BMFont (Windows, free): http://www.angelcode.com/products/bmfont/
-  * Glyph Designer (OS X, commercial): http://www.71squared.com/en/glyphdesigner
-  * Littera (Web-based, free): http://kvazars.com/littera/
+  * BMFont (Windows, free): {@link http://www.angelcode.com/products/bmfont/|http://www.angelcode.com/products/bmfont/}
+  * Glyph Designer (OS X, commercial): {@link http://www.71squared.com/en/glyphdesigner|http://www.71squared.com/en/glyphdesigner}
+  * Littera (Web-based, free): {@link http://kvazars.com/littera/|http://kvazars.com/littera/}
   * 
   * For most use cases it is recommended to use XML. If you wish to use JSON, the formatting should be equal to the result of
-  * converting a valid XML file through the popular X2JS library. An online tool for conversion can be found here: http://codebeautify.org/xmltojson
+  * converting a valid XML file through the popular X2JS library. An online tool for conversion can be found here: {@link http://codebeautify.org/xmltojson|http://codebeautify.org/xmltojson}
   */
 @JSImport("phaser", "GameObjects.DynamicBitmapText")
 @js.native
-class DynamicBitmapText protected ()
+open class DynamicBitmapText protected ()
   extends StObject
      with typings.phaser.Phaser.GameObjects.DynamicBitmapText {
   /**
@@ -54,8 +53,8 @@ class DynamicBitmapText protected ()
   def this(scene: Scene, x: Double, y: Double, font: String, text: String, size: Double) = this()
   def this(scene: Scene, x: Double, y: Double, font: String, text: js.Array[String], size: Double) = this()
   def this(scene: Scene, x: Double, y: Double, font: String, text: Unit, size: Double) = this()
-  def this(scene: Scene, x: Double, y: Double, font: String, text: String, size: Double, align: integer) = this()
-  def this(scene: Scene, x: Double, y: Double, font: String, text: String, size: Unit, align: integer) = this()
+  def this(scene: Scene, x: Double, y: Double, font: String, text: String, size: Double, align: Double) = this()
+  def this(scene: Scene, x: Double, y: Double, font: String, text: String, size: Unit, align: Double) = this()
   def this(
     scene: Scene,
     x: Double,
@@ -63,7 +62,7 @@ class DynamicBitmapText protected ()
     font: String,
     text: js.Array[String],
     size: Double,
-    align: integer
+    align: Double
   ) = this()
   def this(
     scene: Scene,
@@ -72,10 +71,10 @@ class DynamicBitmapText protected ()
     font: String,
     text: js.Array[String],
     size: Unit,
-    align: integer
+    align: Double
   ) = this()
-  def this(scene: Scene, x: Double, y: Double, font: String, text: Unit, size: Double, align: integer) = this()
-  def this(scene: Scene, x: Double, y: Double, font: String, text: Unit, size: Unit, align: integer) = this()
+  def this(scene: Scene, x: Double, y: Double, font: String, text: Unit, size: Double, align: Double) = this()
+  def this(scene: Scene, x: Double, y: Double, font: String, text: Unit, size: Unit, align: Double) = this()
   
   /**
     * The depth of this Game Object within the Scene.
@@ -104,7 +103,7 @@ class DynamicBitmapText protected ()
     * @param value The depth of this Game Object.
     */
   /* CompleteClass */
-  override def setDepth(value: integer): this.type = js.native
+  override def setDepth(value: Double): this.type = js.native
   
   /**
     * Sets the visibility of this Game Object.

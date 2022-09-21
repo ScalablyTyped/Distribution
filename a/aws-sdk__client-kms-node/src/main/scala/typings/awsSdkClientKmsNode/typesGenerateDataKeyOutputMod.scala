@@ -2,7 +2,6 @@ package typings.awsSdkClientKmsNode
 
 import typings.awsSdkClientKmsNode.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkTypes.responseMod.ResponseMetadata
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +21,7 @@ object typesGenerateDataKeyOutputMod {
     /**
       * <p>The encrypted data encryption key. When you use the HTTP API or the AWS CLI, the value is Base64-encoded. Otherwise, it is not encoded.</p>
       */
-    var CiphertextBlob: js.UndefOr[Uint8Array] = js.undefined
+    var CiphertextBlob: js.UndefOr[js.typedarray.Uint8Array] = js.undefined
     
     /**
       * <p>The identifier of the CMK under which the data encryption key was generated and encrypted.</p>
@@ -32,7 +31,7 @@ object typesGenerateDataKeyOutputMod {
     /**
       * <p>The data encryption key. When you use the HTTP API or the AWS CLI, the value is Base64-encoded. Otherwise, it is not encoded. Use this data key for local encryption and decryption, then remove it from memory as soon as possible.</p>
       */
-    var Plaintext: js.UndefOr[Uint8Array] = js.undefined
+    var Plaintext: js.UndefOr[js.typedarray.Uint8Array] = js.undefined
   }
   object GenerateDataKeyOutput {
     
@@ -45,7 +44,7 @@ object typesGenerateDataKeyOutputMod {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      inline def setCiphertextBlob(value: Uint8Array): Self = StObject.set(x, "CiphertextBlob", value.asInstanceOf[js.Any])
+      inline def setCiphertextBlob(value: js.typedarray.Uint8Array): Self = StObject.set(x, "CiphertextBlob", value.asInstanceOf[js.Any])
       
       inline def setCiphertextBlobUndefined: Self = StObject.set(x, "CiphertextBlob", js.undefined)
       
@@ -53,7 +52,7 @@ object typesGenerateDataKeyOutputMod {
       
       inline def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
       
-      inline def setPlaintext(value: Uint8Array): Self = StObject.set(x, "Plaintext", value.asInstanceOf[js.Any])
+      inline def setPlaintext(value: js.typedarray.Uint8Array): Self = StObject.set(x, "Plaintext", value.asInstanceOf[js.Any])
       
       inline def setPlaintextUndefined: Self = StObject.set(x, "Plaintext", js.undefined)
     }

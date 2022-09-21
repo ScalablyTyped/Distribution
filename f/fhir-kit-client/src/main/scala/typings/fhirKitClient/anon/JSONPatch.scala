@@ -1,6 +1,5 @@
 package typings.fhirKitClient.anon
 
-import typings.fhirKitClient.fhirKitClientStrings.Account
 import typings.jsonPatch.mod.OpPatch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,12 +15,12 @@ trait JSONPatch extends StObject {
   
   var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: Account
+  var resourceType: typings.fhirKitClient.mod.ResourceType
 }
 object JSONPatch {
   
-  inline def apply(JSONPatch: js.Array[OpPatch], id: String): JSONPatch = {
-    val __obj = js.Dynamic.literal(JSONPatch = JSONPatch.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = "Account")
+  inline def apply(JSONPatch: js.Array[OpPatch], id: String, resourceType: typings.fhirKitClient.mod.ResourceType): JSONPatch = {
+    val __obj = js.Dynamic.literal(JSONPatch = JSONPatch.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSONPatch]
   }
   
@@ -35,12 +34,12 @@ object JSONPatch {
     
     inline def setJSONPatch(value: js.Array[OpPatch]): Self = StObject.set(x, "JSONPatch", value.asInstanceOf[js.Any])
     
-    inline def setJSONPatchVarargs(value: OpPatch*): Self = StObject.set(x, "JSONPatch", js.Array(value :_*))
+    inline def setJSONPatchVarargs(value: OpPatch*): Self = StObject.set(x, "JSONPatch", js.Array(value*))
     
     inline def setOptions(value: typings.request.mod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    inline def setResourceType(value: Account): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: typings.fhirKitClient.mod.ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
   }
 }

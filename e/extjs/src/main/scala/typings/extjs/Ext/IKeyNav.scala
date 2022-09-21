@@ -38,10 +38,10 @@ trait IKeyNav
   var keyMap: js.UndefOr[typings.extjs.Ext.util.IKeyMap] = js.undefined
   
   /** [Config Option] (Function) */
-  var processEvent: js.UndefOr[js.Any] = js.undefined
+  var processEvent: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var processEventScope: js.UndefOr[js.Any] = js.undefined
+  var processEventScope: js.UndefOr[Any] = js.undefined
   
   /** [Method] Convenience function for setting disabled enabled by boolean
     * @param disabled Boolean
@@ -49,7 +49,7 @@ trait IKeyNav
   var setDisabled: js.UndefOr[js.Function1[/* disabled */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Config Option] (Ext.Component/Ext.Element/HTMLElement/String) */
-  var target: js.UndefOr[js.Any] = js.undefined
+  var target: js.UndefOr[Any] = js.undefined
 }
 object IKeyNav {
   
@@ -96,9 +96,9 @@ object IKeyNav {
     
     inline def setKeyMapUndefined: Self = StObject.set(x, "keyMap", js.undefined)
     
-    inline def setProcessEvent(value: js.Any): Self = StObject.set(x, "processEvent", value.asInstanceOf[js.Any])
+    inline def setProcessEvent(value: Any): Self = StObject.set(x, "processEvent", value.asInstanceOf[js.Any])
     
-    inline def setProcessEventScope(value: js.Any): Self = StObject.set(x, "processEventScope", value.asInstanceOf[js.Any])
+    inline def setProcessEventScope(value: Any): Self = StObject.set(x, "processEventScope", value.asInstanceOf[js.Any])
     
     inline def setProcessEventScopeUndefined: Self = StObject.set(x, "processEventScope", js.undefined)
     
@@ -108,7 +108,7 @@ object IKeyNav {
     
     inline def setSetDisabledUndefined: Self = StObject.set(x, "setDisabled", js.undefined)
     
-    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }

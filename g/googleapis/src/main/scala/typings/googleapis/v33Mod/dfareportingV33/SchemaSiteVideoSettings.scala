@@ -4,38 +4,30 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Video Settings
-  */
 trait SchemaSiteVideoSettings extends StObject {
   
   /**
-    * Settings for the companion creatives of video creatives served to this
-    * site.
+    * Settings for the companion creatives of video creatives served to this site.
     */
   var companionSettings: js.UndefOr[SchemaSiteCompanionSetting] = js.undefined
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;dfareporting#siteVideoSettings&quot;.
+    * Identifies what kind of resource this is. Value: the fixed string "dfareporting#siteVideoSettings".
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Orientation of a site template used for video. This will act as default
-    * for new placements created under this site.
+    * Orientation of a site template used for video. This will act as default for new placements created under this site.
     */
-  var orientation: js.UndefOr[String] = js.undefined
+  var orientation: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Settings for the skippability of video creatives served to this site.
-    * This will act as default for new placements created under this site.
+    * Settings for the skippability of video creatives served to this site. This will act as default for new placements created under this site.
     */
   var skippableSettings: js.UndefOr[SchemaSiteSkippableSetting] = js.undefined
   
   /**
-    * Settings for the transcodes of video creatives served to this site. This
-    * will act as default for new placements created under this site.
+    * Settings for the transcodes of video creatives served to this site. This will act as default for new placements created under this site.
     */
   var transcodeSettings: js.UndefOr[SchemaSiteTranscodeSetting] = js.undefined
 }
@@ -54,9 +46,13 @@ object SchemaSiteVideoSettings {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
+    
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    
+    inline def setOrientationNull: Self = StObject.set(x, "orientation", null)
     
     inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     

@@ -16,12 +16,16 @@ trait NavigationToggleViewModel
   /**
     * The navigation mode of the [view](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-NavigationToggle-NavigationToggleViewModel.html#view).
     *
+    * @default pan
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-NavigationToggle-NavigationToggleViewModel.html#navigationMode)
     */
   var navigationMode: pan | rotate = js.native
   
   /**
     * The state of the widget.
+    *
+    * @default disabled
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-NavigationToggle-NavigationToggleViewModel.html#state)
     */
@@ -32,7 +36,7 @@ trait NavigationToggleViewModel
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-NavigationToggle-NavigationToggleViewModel.html#toggle)
     */
-  def toggle(): Unit = js.native
+  def toggle(): scala.Unit = js.native
   
   /**
     * The view associated with the widget.

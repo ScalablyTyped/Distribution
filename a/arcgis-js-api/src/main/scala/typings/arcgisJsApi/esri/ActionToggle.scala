@@ -13,6 +13,8 @@ trait ActionToggle
   /**
     * Specifies the type of action.
     *
+    * @default "toggle"
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionToggle.html#type)
     */
   @JSName("type")
@@ -20,6 +22,8 @@ trait ActionToggle
   
   /**
     * Indicates the value of whether the action is toggled on/off.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionToggle.html#value)
     */

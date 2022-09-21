@@ -11,11 +11,11 @@ object fpIsDateIndexMod {
     
     @JSImport("date-fns/fp/isDate/index", JSImport.Default)
     @js.native
-    val ^ : CurriedFn1[js.Any, Boolean] = js.native
+    val ^ : CurriedFn1[Any, Boolean] = js.native
     
-    type _To = CurriedFn1[js.Any, Boolean]
+    type _To = CurriedFn1[Any, Boolean]
     
     /* This means you don't have to write `^`, but can instead just say `default.foo` */
-    override def _to: CurriedFn1[js.Any, Boolean] = ^
+    override def _to: CurriedFn1[Any, Boolean] = ^
   }
 }

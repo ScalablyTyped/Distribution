@@ -44,7 +44,7 @@ object OfficeGraphInsights {
     
     inline def setSharedUndefined: Self = StObject.set(x, "shared", js.undefined)
     
-    inline def setSharedVarargs(value: SharedInsight*): Self = StObject.set(x, "shared", js.Array(value :_*))
+    inline def setSharedVarargs(value: SharedInsight*): Self = StObject.set(x, "shared", js.Array(value*))
     
     inline def setTrending(value: NullableOption[js.Array[Trending]]): Self = StObject.set(x, "trending", value.asInstanceOf[js.Any])
     
@@ -52,7 +52,7 @@ object OfficeGraphInsights {
     
     inline def setTrendingUndefined: Self = StObject.set(x, "trending", js.undefined)
     
-    inline def setTrendingVarargs(value: Trending*): Self = StObject.set(x, "trending", js.Array(value :_*))
+    inline def setTrendingVarargs(value: Trending*): Self = StObject.set(x, "trending", js.Array(value*))
     
     inline def setUsed(value: NullableOption[js.Array[UsedInsight]]): Self = StObject.set(x, "used", value.asInstanceOf[js.Any])
     
@@ -60,6 +60,6 @@ object OfficeGraphInsights {
     
     inline def setUsedUndefined: Self = StObject.set(x, "used", js.undefined)
     
-    inline def setUsedVarargs(value: UsedInsight*): Self = StObject.set(x, "used", js.Array(value :_*))
+    inline def setUsedVarargs(value: UsedInsight*): Self = StObject.set(x, "used", js.Array(value*))
   }
 }

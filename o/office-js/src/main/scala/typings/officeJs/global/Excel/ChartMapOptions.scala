@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Encapsulates the properties for a region map chart.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ChartMapOptions")
 @js.native
-class ChartMapOptions ()
+open class ChartMapOptions ()
   extends StObject
      with typings.officeJs.Excel.ChartMapOptions {
   

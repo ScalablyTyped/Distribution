@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.ThinTexture")
 @js.native
-class ThinTexture protected ()
+open class ThinTexture protected ()
   extends StObject
      with typings.babylonjs.BABYLON.ThinTexture {
   /**

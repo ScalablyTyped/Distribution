@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HTMLAudioElementFactory extends StObject {
   
   def apply(): IHTMLAudioElement = js.native
-  def apply(src: js.Any): IHTMLAudioElement = js.native
+  def apply(src: Any): IHTMLAudioElement = js.native
   
   def create(): IHTMLAudioElement = js.native
-  def create(src: js.Any): IHTMLAudioElement = js.native
+  def create(src: Any): IHTMLAudioElement = js.native
 }

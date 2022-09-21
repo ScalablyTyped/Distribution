@@ -9,7 +9,7 @@ object simpleUserMod {
   
   @JSImport("sip.js/lib/platform/web/simple-user", "SimpleUser")
   @js.native
-  class SimpleUser protected ()
+  open class SimpleUser protected ()
     extends typings.sipJs.simpleUserSimpleUserMod.SimpleUser {
     /**
       * Constructs a new instance of the `SimpleUser` class.

@@ -1,21 +1,32 @@
 package typings.bookshelf.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CollectionFetchOptions extends js.Object {
+trait CollectionFetchOptions extends StObject {
+  
   var require: js.UndefOr[Boolean] = js.undefined
+  
   var withRelated: js.UndefOr[String | js.Array[String]] = js.undefined
 }
-
 object CollectionFetchOptions {
-  @scala.inline
-  def apply(require: js.UndefOr[Boolean] = js.undefined, withRelated: String | js.Array[String] = null): CollectionFetchOptions = {
+  
+  inline def apply(): CollectionFetchOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(require)) __obj.updateDynamic("require")(require.get.asInstanceOf[js.Any])
-    if (withRelated != null) __obj.updateDynamic("withRelated")(withRelated.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectionFetchOptions]
   }
+  
+  extension [Self <: CollectionFetchOptions](x: Self) {
+    
+    inline def setRequire(value: Boolean): Self = StObject.set(x, "require", value.asInstanceOf[js.Any])
+    
+    inline def setRequireUndefined: Self = StObject.set(x, "require", js.undefined)
+    
+    inline def setWithRelated(value: String | js.Array[String]): Self = StObject.set(x, "withRelated", value.asInstanceOf[js.Any])
+    
+    inline def setWithRelatedUndefined: Self = StObject.set(x, "withRelated", js.undefined)
+    
+    inline def setWithRelatedVarargs(value: String*): Self = StObject.set(x, "withRelated", js.Array(value*))
+  }
 }
-

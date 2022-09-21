@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.RulerLevel2")
 @js.native
-/* private */ class RulerLevel2 ()
+/* private */ open class RulerLevel2 ()
   extends StObject
      with typings.activexOffice.Office.RulerLevel2 {
   
   /* CompleteClass */
-  override val Application: js.Any = js.native
+  override val Application: Any = js.native
   
   /* CompleteClass */
   override val Creator: Double = js.native
@@ -27,5 +27,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OfficeDotRulerLevel2_typekey: typings.activexOffice.Office.RulerLevel2 = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
 }

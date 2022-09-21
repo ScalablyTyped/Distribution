@@ -1,6 +1,5 @@
 package typings.babylonjs
 
-import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ trait XRView extends StObject {
   
   val eye: XREye
   
-  val projectionMatrix: Float32Array
+  val projectionMatrix: js.typedarray.Float32Array
   
   val recommendedViewportScale: js.UndefOr[Double] = js.undefined
   
@@ -21,7 +20,7 @@ object XRView {
   
   inline def apply(
     eye: XREye,
-    projectionMatrix: Float32Array,
+    projectionMatrix: js.typedarray.Float32Array,
     requestViewportScale: Double => Unit,
     transform: XRRigidTransform
   ): XRView = {
@@ -33,7 +32,7 @@ object XRView {
     
     inline def setEye(value: XREye): Self = StObject.set(x, "eye", value.asInstanceOf[js.Any])
     
-    inline def setProjectionMatrix(value: Float32Array): Self = StObject.set(x, "projectionMatrix", value.asInstanceOf[js.Any])
+    inline def setProjectionMatrix(value: js.typedarray.Float32Array): Self = StObject.set(x, "projectionMatrix", value.asInstanceOf[js.Any])
     
     inline def setRecommendedViewportScale(value: Double): Self = StObject.set(x, "recommendedViewportScale", value.asInstanceOf[js.Any])
     

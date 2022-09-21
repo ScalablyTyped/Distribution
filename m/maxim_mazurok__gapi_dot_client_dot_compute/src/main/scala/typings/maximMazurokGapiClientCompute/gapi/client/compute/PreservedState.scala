@@ -11,14 +11,14 @@ trait PreservedState extends StObject {
   var disks: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.PreservedStatePreservedDisk}
-    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.PreservedState & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.PreservedState & TopLevel[Any]
   ] = js.undefined
   
   /** Preserved metadata defined for this instance. */
   var metadata: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.PreservedState & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.PreservedState & TopLevel[Any]
   ] = js.undefined
 }
 object PreservedState {
@@ -33,7 +33,7 @@ object PreservedState {
     inline def setDisks(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.PreservedStatePreservedDisk}
-      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.PreservedState & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.PreservedState & TopLevel[Any]
     ): Self = StObject.set(x, "disks", value.asInstanceOf[js.Any])
     
     inline def setDisksUndefined: Self = StObject.set(x, "disks", js.undefined)
@@ -41,7 +41,7 @@ object PreservedState {
     inline def setMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.PreservedState & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.PreservedState & TopLevel[Any]
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)

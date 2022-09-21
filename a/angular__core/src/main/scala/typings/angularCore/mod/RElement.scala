@@ -38,9 +38,11 @@ trait RElement
   def setAttributeNS(namespaceURI: String, qualifiedName: String, value: TrustedScript): Unit = js.native
   def setAttributeNS(namespaceURI: String, qualifiedName: String, value: TrustedScriptURL): Unit = js.native
   
-  var setProperty: js.UndefOr[js.Function2[/* name */ String, /* value */ js.Any, Unit]] = js.native
+  var setProperty: js.UndefOr[js.Function2[/* name */ String, /* value */ Any, Unit]] = js.native
   
   var style: RCssStyleDeclaration = js.native
+  
+  var tagName: String = js.native
   
   var textContent: String | Null = js.native
 }

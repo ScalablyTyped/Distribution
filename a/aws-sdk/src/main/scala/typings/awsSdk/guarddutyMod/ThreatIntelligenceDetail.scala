@@ -33,6 +33,6 @@ object ThreatIntelligenceDetail {
     
     inline def setThreatNamesUndefined: Self = StObject.set(x, "ThreatNames", js.undefined)
     
-    inline def setThreatNamesVarargs(value: String*): Self = StObject.set(x, "ThreatNames", js.Array(value :_*))
+    inline def setThreatNamesVarargs(value: String*): Self = StObject.set(x, "ThreatNames", js.Array(value*))
   }
 }

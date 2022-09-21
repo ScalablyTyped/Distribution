@@ -16,6 +16,8 @@ object rowContextMod extends Shortcut {
     
     var gutter: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     
+    var supportFlexGap: js.UndefOr[Boolean] = js.undefined
+    
     var wrap: js.UndefOr[Boolean] = js.undefined
   }
   object RowContextState {
@@ -30,6 +32,10 @@ object rowContextMod extends Shortcut {
       inline def setGutter(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
       
       inline def setGutterUndefined: Self = StObject.set(x, "gutter", js.undefined)
+      
+      inline def setSupportFlexGap(value: Boolean): Self = StObject.set(x, "supportFlexGap", value.asInstanceOf[js.Any])
+      
+      inline def setSupportFlexGapUndefined: Self = StObject.set(x, "supportFlexGap", js.undefined)
       
       inline def setWrap(value: Boolean): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
       

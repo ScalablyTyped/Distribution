@@ -7,15 +7,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object bootboxStrings {
   
   @js.native
-  sealed trait checkbox extends StObject
+  sealed trait checkbox
+    extends StObject
+       with BootboxInputType
   inline def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
   
   @js.native
-  sealed trait date extends StObject
+  sealed trait date
+    extends StObject
+       with BootboxInputType
   inline def date: date = "date".asInstanceOf[date]
   
   @js.native
-  sealed trait email extends StObject
+  sealed trait email
+    extends StObject
+       with BootboxInputType
   inline def email: email = "email".asInstanceOf[email]
   
   @js.native
@@ -31,23 +37,33 @@ object bootboxStrings {
   inline def lg: lg = "lg".asInstanceOf[lg]
   
   @js.native
-  sealed trait number extends StObject
+  sealed trait number
+    extends StObject
+       with BootboxInputType
   inline def number: number = "number".asInstanceOf[number]
   
   @js.native
-  sealed trait password extends StObject
+  sealed trait password
+    extends StObject
+       with BootboxInputType
   inline def password: password = "password".asInstanceOf[password]
   
   @js.native
-  sealed trait radio extends StObject
+  sealed trait radio
+    extends StObject
+       with BootboxInputType
   inline def radio: radio = "radio".asInstanceOf[radio]
   
   @js.native
-  sealed trait range extends StObject
+  sealed trait range
+    extends StObject
+       with BootboxInputType
   inline def range: range = "range".asInstanceOf[range]
   
   @js.native
-  sealed trait select extends StObject
+  sealed trait select
+    extends StObject
+       with BootboxInputType
   inline def select: select = "select".asInstanceOf[select]
   
   @js.native
@@ -59,15 +75,21 @@ object bootboxStrings {
   inline def small: small = "small".asInstanceOf[small]
   
   @js.native
-  sealed trait text extends StObject
+  sealed trait text
+    extends StObject
+       with BootboxInputType
   inline def text: text = "text".asInstanceOf[text]
   
   @js.native
-  sealed trait textarea extends StObject
+  sealed trait textarea
+    extends StObject
+       with BootboxInputType
   inline def textarea: textarea = "textarea".asInstanceOf[textarea]
   
   @js.native
-  sealed trait time extends StObject
+  sealed trait time
+    extends StObject
+       with BootboxInputType
   inline def time: time = "time".asInstanceOf[time]
   
   @js.native

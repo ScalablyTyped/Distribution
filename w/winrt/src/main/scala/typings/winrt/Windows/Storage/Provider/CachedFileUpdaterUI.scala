@@ -10,8 +10,8 @@ trait CachedFileUpdaterUI
 object CachedFileUpdaterUI {
   
   inline def apply(
-    onfileupdaterequested: js.Any,
-    onuirequested: js.Any,
+    onfileupdaterequested: Any,
+    onuirequested: Any,
     title: String,
     uIStatus: UIStatus,
     updateTarget: CachedFileTarget

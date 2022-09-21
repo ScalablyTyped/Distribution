@@ -9,10 +9,10 @@ Compose new functions f(g(x))
 | ------------------ | :-------------: |
 | Full name          | compose-function |
 | Keywords           | function, compose, functional |
-| # releases         | 0 |
-| # dependents       | 43 |
-| # downloads        | 135725608 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.190065E7 |
+| # stars            | 53.0 |
 
 ## Links
 - [Homepage](http://github.com/stoeffel/compose-function)

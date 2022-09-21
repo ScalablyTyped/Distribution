@@ -20,6 +20,6 @@ object OnBeaconUpdateCallbackResult {
     
     inline def setBeacons(value: js.Array[IBeaconInfo]): Self = StObject.set(x, "beacons", value.asInstanceOf[js.Any])
     
-    inline def setBeaconsVarargs(value: IBeaconInfo*): Self = StObject.set(x, "beacons", js.Array(value :_*))
+    inline def setBeaconsVarargs(value: IBeaconInfo*): Self = StObject.set(x, "beacons", js.Array(value*))
   }
 }

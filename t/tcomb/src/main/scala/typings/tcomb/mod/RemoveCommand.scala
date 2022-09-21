@@ -22,6 +22,6 @@ object RemoveCommand {
     
     inline def set$remove(value: js.Array[java.lang.String]): Self = StObject.set(x, "$remove", value.asInstanceOf[js.Any])
     
-    inline def set$removeVarargs(value: java.lang.String*): Self = StObject.set(x, "$remove", js.Array(value :_*))
+    inline def set$removeVarargs(value: java.lang.String*): Self = StObject.set(x, "$remove", js.Array(value*))
   }
 }

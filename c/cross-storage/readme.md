@@ -10,15 +10,12 @@ Cross domain local storage
 | ------------------ | :-------------: |
 | Full name          | cross-storage |
 | Keywords           | local, storage, cross, domain |
-| # releases         | 0 |
-| # dependents       | 19 |
-| # downloads        | 445119 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 89594.33333333333 |
+| # stars            | 2112.0 |
 
 ## Links
-- [Homepage](https://github.com/zendesk/cross-storage)
-- [Bugs](https://github.com/zendesk/cross-storage/issues)
-- [Repository](https://github.com/zendesk/cross-storage)
 - [Npm](https://www.npmjs.com/package/cross-storage)
     
 

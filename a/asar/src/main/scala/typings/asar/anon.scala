@@ -1,5 +1,6 @@
 package typings.asar
 
+import typings.asar.asarStrings.SHA256
 import typings.asar.mod.InputMetadataType
 import typings.node.fsMod.Stats
 import org.scalablytyped.runtime.StObject
@@ -7,6 +8,37 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
+  
+  trait Algorithm extends StObject {
+    
+    var algorithm: SHA256
+    
+    var blockSize: Double
+    
+    var blocks: js.Array[String]
+    
+    var hash: String
+  }
+  object Algorithm {
+    
+    inline def apply(blockSize: Double, blocks: js.Array[String], hash: String): Algorithm = {
+      val __obj = js.Dynamic.literal(algorithm = "SHA256", blockSize = blockSize.asInstanceOf[js.Any], blocks = blocks.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Algorithm]
+    }
+    
+    extension [Self <: Algorithm](x: Self) {
+      
+      inline def setAlgorithm(value: SHA256): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+      
+      inline def setBlockSize(value: Double): Self = StObject.set(x, "blockSize", value.asInstanceOf[js.Any])
+      
+      inline def setBlocks(value: js.Array[String]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
+      
+      inline def setBlocksVarargs(value: String*): Self = StObject.set(x, "blocks", js.Array(value*))
+      
+      inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    }
+  }
   
   trait Stat extends StObject {
     

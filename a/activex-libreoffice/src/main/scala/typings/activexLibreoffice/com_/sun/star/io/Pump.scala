@@ -25,7 +25,7 @@ object Pump {
     addListener: XStreamListener => Unit,
     getInputStream: () => XInputStream,
     getOutputStream: () => XOutputStream,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeListener: XStreamListener => Unit,
     setInputStream: XInputStream => Unit,

@@ -26,7 +26,7 @@ trait PlusRuntimeOpenFileOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/runtime.html](http://www.html5plus.org/doc/zh_cn/runtime.html)
     */
-  var popover: js.UndefOr[js.Any] = js.undefined
+  var popover: js.UndefOr[Any] = js.undefined
 }
 object PlusRuntimeOpenFileOptions {
   
@@ -41,7 +41,7 @@ object PlusRuntimeOpenFileOptions {
     
     inline def setPnameUndefined: Self = StObject.set(x, "pname", js.undefined)
     
-    inline def setPopover(value: js.Any): Self = StObject.set(x, "popover", value.asInstanceOf[js.Any])
+    inline def setPopover(value: Any): Self = StObject.set(x, "popover", value.asInstanceOf[js.Any])
     
     inline def setPopoverUndefined: Self = StObject.set(x, "popover", js.undefined)
   }

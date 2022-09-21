@@ -10,10 +10,10 @@ Read/write IEEE754 floating point numbers from/to a Buffer or array-like object
 | ------------------ | :-------------: |
 | Full name          | ieee754 |
 | Keywords           | IEEE 754, buffer, convert, floating point, ieee754 |
-| # releases         | 4 |
-| # dependents       | 155 |
-| # downloads        | 769380752 |
-| # stars            | 1 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1.2373035133333333E8 |
+| # stars            | 105.0 |
 
 ## Links
 - [Homepage](https://github.com/feross/ieee754#readme)

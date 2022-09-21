@@ -1,7 +1,7 @@
 
 # Scala.js typings for prosemirror-markdown
 
-Typings are for version 1.0
+Typings are for version 1.5
 
 ## Library description:
 ProseMirror Markdown integration
@@ -10,10 +10,10 @@ ProseMirror Markdown integration
 | ------------------ | :-------------: |
 | Full name          | prosemirror-markdown |
 | Keywords           | - |
-| # releases         | 12 |
-| # dependents       | 48 |
-| # downloads        | 2893201 |
-| # stars            | 0 |
+| # releases         | 13 |
+| # dependents       | 0.0 |
+| # downloads        | 445610.3333333333 |
+| # stars            | 210.0 |
 
 ## Links
 - [Homepage](https://github.com/prosemirror/prosemirror-markdown#readme)

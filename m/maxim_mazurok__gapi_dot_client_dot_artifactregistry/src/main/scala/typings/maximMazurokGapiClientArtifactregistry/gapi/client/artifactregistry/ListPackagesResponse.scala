@@ -29,6 +29,6 @@ object ListPackagesResponse {
     
     inline def setPackagesUndefined: Self = StObject.set(x, "packages", js.undefined)
     
-    inline def setPackagesVarargs(value: Package*): Self = StObject.set(x, "packages", js.Array(value :_*))
+    inline def setPackagesVarargs(value: Package*): Self = StObject.set(x, "packages", js.Array(value*))
   }
 }

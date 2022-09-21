@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait QuotaSettings extends StObject {
   
   /**
-    * The maximum number of requests that can be made in a given time period.
+    * The target maximum number of requests that can be made in a given time period.
     */
   var limit: js.UndefOr[Integer] = js.undefined
   

@@ -1,6 +1,6 @@
 package typings.zmq
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,24 +13,24 @@ object mod {
   
   @JSImport("zmq", "Socket")
   @js.native
-  class Socket ()
+  open class Socket ()
     extends StObject
        with EventEmitter {
     
     // Socket Options
-    var _fd: js.Any = js.native
+    var _fd: Any = js.native
     
-    var _ioevents: js.Any = js.native
+    var _ioevents: Any = js.native
     
-    var _receiveMore: js.Any = js.native
+    var _receiveMore: Any = js.native
     
-    var _subscribe: js.Any = js.native
+    var _subscribe: Any = js.native
     
-    var _unsubscribe: js.Any = js.native
+    var _unsubscribe: Any = js.native
     
-    var affinity: js.Any = js.native
+    var affinity: Any = js.native
     
-    def backlog(): js.Any = js.native
+    def backlog(): Any = js.native
     
     /**
       * Async bind.
@@ -75,23 +75,23 @@ object mod {
       *
       * @param opt Option string
       */
-    def getsocketopt(opt: String): js.Any = js.native
+    def getsocketopt(opt: String): Any = js.native
     /**
       * Get socket `opt`.
       *
       * @param opt Option number
       */
-    def getsocketopt(opt: Double): js.Any = js.native
+    def getsocketopt(opt: Double): Any = js.native
     
-    var hwm: js.Any = js.native
+    var hwm: Any = js.native
     
-    var identity: js.Any = js.native
+    var identity: Any = js.native
     
-    var last_endpoint: js.Any = js.native
+    var last_endpoint: Any = js.native
     
-    var linger: js.Any = js.native
+    var linger: Any = js.native
     
-    var mcast_loop: js.Any = js.native
+    var mcast_loop: Any = js.native
     
     /**
       * Enable monitoring of a Socket
@@ -111,13 +111,13 @@ object mod {
     
     def pause(): Unit = js.native
     
-    var rate: js.Any = js.native
+    var rate: Any = js.native
     
-    var rcvbuf: js.Any = js.native
+    var rcvbuf: Any = js.native
     
-    var reconnect_ivl: js.Any = js.native
+    var reconnect_ivl: Any = js.native
     
-    var recovery_ivl: js.Any = js.native
+    var recovery_ivl: Any = js.native
     
     def resume(): Unit = js.native
     
@@ -135,8 +135,8 @@ object mod {
       * @param msg The message
       * @param flags Message flags
       */
-    def send(msg: js.Array[js.Any]): Socket = js.native
-    def send(msg: js.Array[js.Any], flags: Double): Socket = js.native
+    def send(msg: js.Array[Any]): Socket = js.native
+    def send(msg: js.Array[Any], flags: Double): Socket = js.native
     /**
       * Send the given `msg`.
       *
@@ -152,16 +152,16 @@ object mod {
       * @param opt Option
       * @param val Value
       */
-    def setsocketopt(opt: String, `val`: js.Any): Socket = js.native
+    def setsocketopt(opt: String, `val`: Any): Socket = js.native
     /**
       * Set `opt` to `val`.
       *
       * @param opt Option
       * @param val Value
       */
-    def setsocketopt(opt: Double, `val`: js.Any): Socket = js.native
+    def setsocketopt(opt: Double, `val`: Any): Socket = js.native
     
-    var sndbuf: js.Any = js.native
+    var sndbuf: Any = js.native
     
     /**
       * Subscribe with the given `filter`.
@@ -170,7 +170,7 @@ object mod {
       */
     def subscribe(filter: String): Socket = js.native
     
-    var swap: js.Any = js.native
+    var swap: Any = js.native
     
     /**
       * Async unbind.

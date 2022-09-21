@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.releaseInterfacesMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ trait ReleaseEnvironmentUpdateMetadata extends StObject {
   /**
     * Gets or sets scheduled deployment time.
     */
-  var scheduledDeploymentTime: Date
+  var scheduledDeploymentTime: js.Date
   
   /**
     * Gets or sets status of environment.
@@ -24,7 +23,7 @@ trait ReleaseEnvironmentUpdateMetadata extends StObject {
 }
 object ReleaseEnvironmentUpdateMetadata {
   
-  inline def apply(comment: String, scheduledDeploymentTime: Date, status: EnvironmentStatus): ReleaseEnvironmentUpdateMetadata = {
+  inline def apply(comment: String, scheduledDeploymentTime: js.Date, status: EnvironmentStatus): ReleaseEnvironmentUpdateMetadata = {
     val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], scheduledDeploymentTime = scheduledDeploymentTime.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReleaseEnvironmentUpdateMetadata]
   }
@@ -33,7 +32,7 @@ object ReleaseEnvironmentUpdateMetadata {
     
     inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    inline def setScheduledDeploymentTime(value: Date): Self = StObject.set(x, "scheduledDeploymentTime", value.asInstanceOf[js.Any])
+    inline def setScheduledDeploymentTime(value: js.Date): Self = StObject.set(x, "scheduledDeploymentTime", value.asInstanceOf[js.Any])
     
     inline def setStatus(value: EnvironmentStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

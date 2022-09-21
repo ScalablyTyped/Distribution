@@ -40,8 +40,8 @@ object projectionMod {
   
   @JSImport("maquette/dist/projection", "extend")
   @js.native
-  def extend: js.Function2[/* base */ js.Any, /* overrides */ js.Any, js.Any] = js.native
-  inline def extend_=(x: js.Function2[/* base */ js.Any, /* overrides */ js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extend")(x.asInstanceOf[js.Any])
+  def extend: js.Function2[/* base */ Any, /* overrides */ Any, Any] = js.native
+  inline def extend_=(x: js.Function2[/* base */ Any, /* overrides */ Any, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extend")(x.asInstanceOf[js.Any])
   
   @JSImport("maquette/dist/projection", "initPropertiesAndChildren")
   @js.native

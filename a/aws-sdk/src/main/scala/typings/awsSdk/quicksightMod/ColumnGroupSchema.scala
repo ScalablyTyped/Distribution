@@ -29,7 +29,7 @@ object ColumnGroupSchema {
     
     inline def setColumnGroupColumnSchemaListUndefined: Self = StObject.set(x, "ColumnGroupColumnSchemaList", js.undefined)
     
-    inline def setColumnGroupColumnSchemaListVarargs(value: ColumnGroupColumnSchema*): Self = StObject.set(x, "ColumnGroupColumnSchemaList", js.Array(value :_*))
+    inline def setColumnGroupColumnSchemaListVarargs(value: ColumnGroupColumnSchema*): Self = StObject.set(x, "ColumnGroupColumnSchemaList", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

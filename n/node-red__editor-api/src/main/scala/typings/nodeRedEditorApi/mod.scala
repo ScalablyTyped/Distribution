@@ -1,21 +1,20 @@
 package typings.nodeRedEditorApi
 
+import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Shortcut
 import typings.express.mod.Express
 import typings.express.mod.NextFunction
 import typings.express.mod.Request_
 import typings.express.mod.Response_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
-import typings.expressServeStaticCore.mod.Request
-import typings.expressServeStaticCore.mod.Response
-import typings.node.httpMod.IncomingMessage
-import typings.node.httpMod.ServerResponse
+import typings.expressServeStaticCore.mod.Application
 import typings.node.httpsMod.Server
+import typings.node.nodeHttpMod.IncomingMessage
+import typings.node.nodeHttpMod.ServerResponse
+import typings.node.nodeNetMod.Socket
 import typings.nodeRedRuntime.mod.LocalSettings
 import typings.nodeRedRuntime.mod.RuntimeModule
 import typings.nodeRedRuntime.mod.StorageModule
-import typings.qs.mod.ParsedQs
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,8 +28,14 @@ object mod extends Shortcut {
   trait Auth extends StObject {
     
     def needsPermission(permission: String): js.Function3[
-        /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-        /* res */ Response_[js.Any], 
+        /* req */ Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ], 
+        /* res */ Response_[Any, Record[String, Any]], 
         /* next */ NextFunction, 
         Unit
       ]
@@ -39,8 +44,14 @@ object mod extends Shortcut {
     
     inline def apply(
       needsPermission: String => js.Function3[
-          /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-          /* res */ Response_[js.Any], 
+          /* req */ Request_[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+            Any, 
+            Any, 
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+            Record[String, Any]
+          ], 
+          /* res */ Response_[Any, Record[String, Any]], 
           /* next */ NextFunction, 
           Unit
         ]
@@ -53,8 +64,14 @@ object mod extends Shortcut {
       
       inline def setNeedsPermission(
         value: String => js.Function3[
-              /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-              /* res */ Response_[js.Any], 
+              /* req */ Request_[
+                /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+                Any, 
+                Any, 
+                /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+                Record[String, Any]
+              ], 
+              /* res */ Response_[Any, Record[String, Any]], 
               /* next */ NextFunction, 
               Unit
             ]
@@ -67,25 +84,9 @@ object mod extends Shortcut {
     var auth: Auth
     
     /**
-      * Express instance itself is a request handler, which could be invoked without
-      * third argument.
-      */
-    /**
       * The Express app used to serve the Node-RED Editor
       */
-    def httpAdmin(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: Response[js.Any, Double]): js.Any
-    /**
-      * The Express app used to serve the Node-RED Editor
-      */
-    def httpAdmin(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: ServerResponse): js.Any
-    /**
-      * The Express app used to serve the Node-RED Editor
-      */
-    def httpAdmin(req: IncomingMessage, res: Response[js.Any, Double]): js.Any
-    /**
-      * The Express app used to serve the Node-RED Editor
-      */
-    def httpAdmin(req: IncomingMessage, res: ServerResponse): js.Any
+    def httpAdmin(): Application
     /**
       * The Express app used to serve the Node-RED Editor
       */
@@ -99,7 +100,18 @@ object mod extends Shortcut {
       * @param  storage    An instance of Node-RED Storage
       * @param  runtimeAPI An instance of Node-RED Runtime
       */
-    def init(settings: LocalSettings, _server: Server, storage: StorageModule, runtimeAPI: RuntimeModule): Unit
+    def init(
+      settings: LocalSettings,
+      _server: Server[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[typings.node.httpMod.IncomingMessage]
+          ]
+        ],
+      storage: StorageModule,
+      runtimeAPI: RuntimeModule
+    ): Unit
     
     /**
       * Start the module.
@@ -116,7 +128,13 @@ object mod extends Shortcut {
     inline def apply(
       auth: Auth,
       httpAdmin: Express,
-      init: (LocalSettings, Server, StorageModule, RuntimeModule) => Unit,
+      init: (LocalSettings, Server[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[typings.node.httpMod.IncomingMessage]
+          ]
+        ], StorageModule, RuntimeModule) => Unit,
       start: () => js.Promise[Unit],
       stop: () => js.Promise[Unit]
     ): EditorAPIModule = {
@@ -130,7 +148,15 @@ object mod extends Shortcut {
       
       inline def setHttpAdmin(value: Express): Self = StObject.set(x, "httpAdmin", value.asInstanceOf[js.Any])
       
-      inline def setInit(value: (LocalSettings, Server, StorageModule, RuntimeModule) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction4(value))
+      inline def setInit(
+        value: (LocalSettings, Server[
+              Instantiable1[/* socket */ Socket, IncomingMessage], 
+              Instantiable1[
+                /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+                ServerResponse[typings.node.httpMod.IncomingMessage]
+              ]
+            ], StorageModule, RuntimeModule) => Unit
+      ): Self = StObject.set(x, "init", js.Any.fromFunction4(value))
       
       inline def setStart(value: () => js.Promise[Unit]): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
       

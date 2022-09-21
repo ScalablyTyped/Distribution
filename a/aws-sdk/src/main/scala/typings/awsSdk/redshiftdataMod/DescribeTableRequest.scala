@@ -7,17 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeTableRequest extends StObject {
   
   /**
-    * The cluster identifier. This parameter is required when authenticating using either AWS Secrets Manager or temporary credentials. 
+    * The cluster identifier. This parameter is required when connecting to a cluster and authenticating using either Secrets Manager or temporary credentials. 
     */
-  var ClusterIdentifier: Location
+  var ClusterIdentifier: js.UndefOr[Location] = js.undefined
   
   /**
-    * The name of the database. This parameter is required when authenticating using temporary credentials.
+    * A database name. The connected database is specified when you connect with your authentication credentials. 
     */
-  var Database: js.UndefOr[String] = js.undefined
+  var ConnectedDatabase: js.UndefOr[String] = js.undefined
   
   /**
-    * The database user name. This parameter is required when authenticating using temporary credentials. 
+    * The name of the database that contains the tables to be described. If ConnectedDatabase is not specified, this is also the database to connect to with your authentication credentials.
+    */
+  var Database: String
+  
+  /**
+    * The database user name. This parameter is required when connecting to a cluster and authenticating using temporary credentials. 
     */
   var DbUser: js.UndefOr[String] = js.undefined
   
@@ -37,7 +42,7 @@ trait DescribeTableRequest extends StObject {
   var Schema: js.UndefOr[String] = js.undefined
   
   /**
-    * The name or ARN of the secret that enables access to the database. This parameter is required when authenticating using AWS Secrets Manager. 
+    * The name or ARN of the secret that enables access to the database. This parameter is required when authenticating using Secrets Manager. 
     */
   var SecretArn: js.UndefOr[typings.awsSdk.redshiftdataMod.SecretArn] = js.undefined
   
@@ -45,11 +50,16 @@ trait DescribeTableRequest extends StObject {
     * The table name. If no table is specified, then all tables for all matching schemas are returned. If no table and no schema is specified, then all tables for all schemas in the database are returned
     */
   var Table: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The serverless workgroup name. This parameter is required when connecting to a serverless workgroup and authenticating using either Secrets Manager or temporary credentials.
+    */
+  var WorkgroupName: js.UndefOr[WorkgroupNameString] = js.undefined
 }
 object DescribeTableRequest {
   
-  inline def apply(ClusterIdentifier: Location): DescribeTableRequest = {
-    val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier.asInstanceOf[js.Any])
+  inline def apply(Database: String): DescribeTableRequest = {
+    val __obj = js.Dynamic.literal(Database = Database.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTableRequest]
   }
   
@@ -57,9 +67,13 @@ object DescribeTableRequest {
     
     inline def setClusterIdentifier(value: Location): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     
-    inline def setDatabase(value: String): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
+    inline def setClusterIdentifierUndefined: Self = StObject.set(x, "ClusterIdentifier", js.undefined)
     
-    inline def setDatabaseUndefined: Self = StObject.set(x, "Database", js.undefined)
+    inline def setConnectedDatabase(value: String): Self = StObject.set(x, "ConnectedDatabase", value.asInstanceOf[js.Any])
+    
+    inline def setConnectedDatabaseUndefined: Self = StObject.set(x, "ConnectedDatabase", js.undefined)
+    
+    inline def setDatabase(value: String): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
     
     inline def setDbUser(value: String): Self = StObject.set(x, "DbUser", value.asInstanceOf[js.Any])
     
@@ -84,5 +98,9 @@ object DescribeTableRequest {
     inline def setTable(value: String): Self = StObject.set(x, "Table", value.asInstanceOf[js.Any])
     
     inline def setTableUndefined: Self = StObject.set(x, "Table", js.undefined)
+    
+    inline def setWorkgroupName(value: WorkgroupNameString): Self = StObject.set(x, "WorkgroupName", value.asInstanceOf[js.Any])
+    
+    inline def setWorkgroupNameUndefined: Self = StObject.set(x, "WorkgroupName", js.undefined)
   }
 }

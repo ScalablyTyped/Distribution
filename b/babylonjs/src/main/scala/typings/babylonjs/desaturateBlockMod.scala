@@ -10,7 +10,7 @@ object desaturateBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/desaturateBlock", "DesaturateBlock")
   @js.native
-  class DesaturateBlock protected () extends NodeMaterialBlock {
+  open class DesaturateBlock protected () extends NodeMaterialBlock {
     /**
       * Creates a new DesaturateBlock
       * @param name defines the block name

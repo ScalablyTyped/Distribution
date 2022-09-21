@@ -7,7 +7,6 @@ import typings.dispatchr.mod.StoreClass
 import typings.fluxible.anon.Create
 import typings.fluxible.anon.Instantiable
 import typings.fluxible.baseStoreMod.^
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ object mod {
   
   @JSImport("fluxible", "ActionContext")
   @js.native
-  class ActionContext () extends StObject {
+  open class ActionContext () extends StObject {
     
     /**
       * Dispatches a payload to all registered callbacks.
@@ -24,7 +23,7 @@ object mod {
       * @param payload
       */
     def dispatch(action: String): Unit = js.native
-    def dispatch(action: String, payload: js.Any): Unit = js.native
+    def dispatch(action: String, payload: Any): Unit = js.native
     
     /**
       * Proxy function to execute action
@@ -47,7 +46,7 @@ object mod {
           /* callback */ js.UndefOr[js.Function0[Unit]], 
           Unit
         ],
-      payload: js.Any
+      payload: Any
     ): Unit = js.native
     def executeAction(
       action: js.Function3[
@@ -56,8 +55,8 @@ object mod {
           /* callback */ js.UndefOr[js.Function0[Unit]], 
           Unit
         ],
-      payload: js.Any,
-      callback: js.Any
+      payload: Any,
+      callback: Any
     ): Unit = js.native
     def executeAction(
       action: js.Function3[
@@ -67,7 +66,7 @@ object mod {
           Unit
         ],
       payload: Unit,
-      callback: js.Any
+      callback: Any
     ): Unit = js.native
     
     /**
@@ -83,7 +82,7 @@ object mod {
   
   @JSImport("fluxible", "ComponentContext")
   @js.native
-  class ComponentContext () extends StObject {
+  open class ComponentContext () extends StObject {
     
     /**
       * Proxy function to execute action
@@ -106,7 +105,7 @@ object mod {
           /* callback */ js.UndefOr[js.Function0[Unit]], 
           Unit
         ],
-      payload: js.Any
+      payload: Any
     ): Unit = js.native
     
     /**
@@ -124,7 +123,7 @@ object mod {
     *          component: require('./components/App.jsx')
     *      });
     */
-  class Fluxible () extends StObject {
+  open class Fluxible () extends StObject {
     def this(options: FluxibleConfiguration) = this()
     
     /**
@@ -133,7 +132,7 @@ object mod {
       *         doc for supported subfields and detailed description.
       */
     def createContext(): FluxibleContext = js.native
-    def createContext(contextOptions: js.Any): FluxibleContext = js.native
+    def createContext(contextOptions: Any): FluxibleContext = js.native
     
     /**
       * Creates a new dispatcher instance using the application's dispatchr class. Used by
@@ -141,25 +140,25 @@ object mod {
       * @param contextOptions The context options to be provided to each store instance
       */
     def createDispatcherInstance(): Dispatcher = js.native
-    def createDispatcherInstance(contextOptions: js.Any): Dispatcher = js.native
+    def createDispatcherInstance(contextOptions: Any): Dispatcher = js.native
     
     /**
       * Creates a serializable state of the application and a given context for sending to the client
       * @param context
       */
-    def dehydrate(): js.Any = js.native
-    def dehydrate(context: FluxibleContext): js.Any = js.native
+    def dehydrate(): Any = js.native
+    def dehydrate(context: FluxibleContext): Any = js.native
     
     /**
       * Getter for the top level react component for the application
       */
-    def getComponent(): js.Any = js.native
+    def getComponent(): Any = js.native
     
     /**
       * Provides access to a plugin instance by name
       * @param pluginName The plugin name
       */
-    def getPlugin(pluginName: String): js.Any = js.native
+    def getPlugin(pluginName: String): Any = js.native
     
     /**
       * Provides plugin mechanism for adding application level settings that are persisted
@@ -172,7 +171,7 @@ object mod {
       *  to the client
       * @param [plugin.rehydrate] Method called to rehydrate the plugin settings from the server
       */
-    def plug(plugin: js.Any): Unit = js.native
+    def plug(plugin: Any): Unit = js.native
     
     def registerStore(store: Instantiable1[/* dispatcher */ DispatcherInterface, ^[js.Object]]): Unit = js.native
     /**
@@ -189,8 +188,8 @@ object mod {
       * @param callback
       * @async Rehydration may require more asset loading or async IO calls
       */
-    def rehydrate(state: js.Any): Unit = js.native
-    def rehydrate(state: js.Any, callback: js.Function2[/* err */ Error, /* context */ FluxibleContext, Unit]): Unit = js.native
+    def rehydrate(state: Any): Unit = js.native
+    def rehydrate(state: Any, callback: js.Function2[/* err */ js.Error, /* context */ FluxibleContext, Unit]): Unit = js.native
   }
   
   @JSImport("fluxible", "FluxibleContext")
@@ -198,13 +197,13 @@ object mod {
   /**
     * @param options The options sharable by the context and context plugins
     */
-  class FluxibleContext () extends StObject {
+  open class FluxibleContext () extends StObject {
     def this(options: FluxibleConfiguration) = this()
     
     /**
       * Returns a serializable context state
       */
-    def dehydrate(): js.Any = js.native
+    def dehydrate(): Any = js.native
     
     /**
       * Returns the context for action controllers
@@ -233,24 +232,24 @@ object mod {
       * Provides plugin mechanism for adding application level settings that are persisted
       * between server/client and also modification of the FluxibleContext
       */
-    def plug(plugin: js.Any): Unit = js.native
+    def plug(plugin: Any): Unit = js.native
     
     /**
       * Rehydrates the context state
       */
-    def rehydrate(state: js.Any): Unit = js.native
+    def rehydrate(state: Any): Unit = js.native
   }
   
   @JSImport("fluxible", "StoreContext")
   @js.native
-  class StoreContext () extends StObject
+  open class StoreContext () extends StObject
   
   trait FluxibleConfiguration extends StObject {
     
     /**
       * Stores your top level React component for access using `getComponent()`
       */
-    var component: js.Any
+    var component: Any
     
     /**
       * App level component action handler
@@ -259,14 +258,14 @@ object mod {
   }
   object FluxibleConfiguration {
     
-    inline def apply(component: js.Any): FluxibleConfiguration = {
+    inline def apply(component: Any): FluxibleConfiguration = {
       val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
       __obj.asInstanceOf[FluxibleConfiguration]
     }
     
     extension [Self <: FluxibleConfiguration](x: Self) {
       
-      inline def setComponent(value: js.Any): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: Any): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       inline def setComponentActionHandler(value: () => Unit): Self = StObject.set(x, "componentActionHandler", js.Any.fromFunction0(value))
       

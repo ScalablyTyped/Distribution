@@ -1,7 +1,7 @@
 
 # Scala.js typings for minimatch
 
-Typings are for version 3.0
+Typings are for version 5.1
 
 ## Library description:
 a glob matcher in javascript
@@ -10,10 +10,10 @@ a glob matcher in javascript
 | ------------------ | :-------------: |
 | Full name          | minimatch |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 4064 |
-| # downloads        | 1056097654 |
-| # stars            | 99 |
+| # releases         | 16 |
+| # dependents       | 0.0 |
+| # downloads        | 2.36775049E8 |
+| # stars            | 2700.0 |
 
 ## Links
 - [Homepage](https://github.com/isaacs/minimatch#readme)

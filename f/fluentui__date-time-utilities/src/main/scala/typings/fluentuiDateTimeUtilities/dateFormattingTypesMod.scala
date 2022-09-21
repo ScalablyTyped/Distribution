@@ -1,6 +1,5 @@
 package typings.fluentuiDateTimeUtilities
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ object dateFormattingTypesMod {
   
   trait ICalendarStrings
     extends StObject
-       with IDateFormatting {
+       with IDateGridStrings {
     
     /**
       * Aria-label for the "close" button.
@@ -17,49 +16,14 @@ object dateFormattingTypesMod {
     var closeButtonAriaLabel: js.UndefOr[String] = js.undefined
     
     /**
+      * Aria-label for when a date is marked
+      */
+    var dayMarkedAriaLabel: js.UndefOr[String] = js.undefined
+    
+    /**
       * String to render for button to direct the user to today's date.
       */
     var goToToday: String
-    
-    /**
-      * Aria-label for input."
-      */
-    var inputAriaLabel: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Aria-label format string for restricted input. Should have 2 string params, 0 is minDate and 1 is maxDate"
-      */
-    var inputBoundedFormatString: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Aria-label format string for restricted input only with maxDate. Should have 1 string param, 0 is maxDate"
-      */
-    var inputMaxBoundedFormatString: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Aria-label format string for restricted input only with minDate. Should have 1 string param, 0 is minDate"
-      */
-    var inputMinBoundedFormatString: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Placeholder string for an unfilled input.
-      */
-    var inputPlaceholder: String
-    
-    /**
-      * Error message to render for TextField if input date string parsing fails.
-      */
-    var invalidInputErrorMessage: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Error message to render for TextField if date boundary (minDate, maxDate) validation fails.
-      */
-    var isOutOfBoundsErrorMessage: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Error message to render for TextField if isRequired validation fails.
-      */
-    var isRequiredErrorMessage: js.UndefOr[String] = js.undefined
     
     /**
       * Aria-label format string for the header button in the month picker. Should have 1 string param, e.g. "`{0}`,
@@ -82,11 +46,6 @@ object dateFormattingTypesMod {
       * Aria-label for the "next year range" button in year picker.
       */
     var nextYearRangeAriaLabel: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Title for button to open the calendar.
-      */
-    var openCalendarTitle: String
     
     /**
       * Aria-label for the "previous month" button in day picker.
@@ -128,19 +87,12 @@ object dateFormattingTypesMod {
     
     inline def apply(
       days: js.Array[String],
-      formatDay: Date => String,
-      formatMonthDayYear: (Date, IDateGridStrings) => String,
-      formatMonthYear: (Date, IDateGridStrings) => String,
-      formatYear: Date => String,
       goToToday: String,
-      inputPlaceholder: String,
       months: js.Array[String],
-      openCalendarTitle: String,
-      parseDate: String => Date | Null,
       shortDays: js.Array[String],
       shortMonths: js.Array[String]
     ): ICalendarStrings = {
-      val __obj = js.Dynamic.literal(days = days.asInstanceOf[js.Any], formatDay = js.Any.fromFunction1(formatDay), formatMonthDayYear = js.Any.fromFunction2(formatMonthDayYear), formatMonthYear = js.Any.fromFunction2(formatMonthYear), formatYear = js.Any.fromFunction1(formatYear), goToToday = goToToday.asInstanceOf[js.Any], inputPlaceholder = inputPlaceholder.asInstanceOf[js.Any], months = months.asInstanceOf[js.Any], openCalendarTitle = openCalendarTitle.asInstanceOf[js.Any], parseDate = js.Any.fromFunction1(parseDate), shortDays = shortDays.asInstanceOf[js.Any], shortMonths = shortMonths.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(days = days.asInstanceOf[js.Any], goToToday = goToToday.asInstanceOf[js.Any], months = months.asInstanceOf[js.Any], shortDays = shortDays.asInstanceOf[js.Any], shortMonths = shortMonths.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICalendarStrings]
     }
     
@@ -150,37 +102,11 @@ object dateFormattingTypesMod {
       
       inline def setCloseButtonAriaLabelUndefined: Self = StObject.set(x, "closeButtonAriaLabel", js.undefined)
       
+      inline def setDayMarkedAriaLabel(value: String): Self = StObject.set(x, "dayMarkedAriaLabel", value.asInstanceOf[js.Any])
+      
+      inline def setDayMarkedAriaLabelUndefined: Self = StObject.set(x, "dayMarkedAriaLabel", js.undefined)
+      
       inline def setGoToToday(value: String): Self = StObject.set(x, "goToToday", value.asInstanceOf[js.Any])
-      
-      inline def setInputAriaLabel(value: String): Self = StObject.set(x, "inputAriaLabel", value.asInstanceOf[js.Any])
-      
-      inline def setInputAriaLabelUndefined: Self = StObject.set(x, "inputAriaLabel", js.undefined)
-      
-      inline def setInputBoundedFormatString(value: String): Self = StObject.set(x, "inputBoundedFormatString", value.asInstanceOf[js.Any])
-      
-      inline def setInputBoundedFormatStringUndefined: Self = StObject.set(x, "inputBoundedFormatString", js.undefined)
-      
-      inline def setInputMaxBoundedFormatString(value: String): Self = StObject.set(x, "inputMaxBoundedFormatString", value.asInstanceOf[js.Any])
-      
-      inline def setInputMaxBoundedFormatStringUndefined: Self = StObject.set(x, "inputMaxBoundedFormatString", js.undefined)
-      
-      inline def setInputMinBoundedFormatString(value: String): Self = StObject.set(x, "inputMinBoundedFormatString", value.asInstanceOf[js.Any])
-      
-      inline def setInputMinBoundedFormatStringUndefined: Self = StObject.set(x, "inputMinBoundedFormatString", js.undefined)
-      
-      inline def setInputPlaceholder(value: String): Self = StObject.set(x, "inputPlaceholder", value.asInstanceOf[js.Any])
-      
-      inline def setInvalidInputErrorMessage(value: String): Self = StObject.set(x, "invalidInputErrorMessage", value.asInstanceOf[js.Any])
-      
-      inline def setInvalidInputErrorMessageUndefined: Self = StObject.set(x, "invalidInputErrorMessage", js.undefined)
-      
-      inline def setIsOutOfBoundsErrorMessage(value: String): Self = StObject.set(x, "isOutOfBoundsErrorMessage", value.asInstanceOf[js.Any])
-      
-      inline def setIsOutOfBoundsErrorMessageUndefined: Self = StObject.set(x, "isOutOfBoundsErrorMessage", js.undefined)
-      
-      inline def setIsRequiredErrorMessage(value: String): Self = StObject.set(x, "isRequiredErrorMessage", value.asInstanceOf[js.Any])
-      
-      inline def setIsRequiredErrorMessageUndefined: Self = StObject.set(x, "isRequiredErrorMessage", js.undefined)
       
       inline def setMonthPickerHeaderAriaLabel(value: String): Self = StObject.set(x, "monthPickerHeaderAriaLabel", value.asInstanceOf[js.Any])
       
@@ -197,8 +123,6 @@ object dateFormattingTypesMod {
       inline def setNextYearRangeAriaLabel(value: String): Self = StObject.set(x, "nextYearRangeAriaLabel", value.asInstanceOf[js.Any])
       
       inline def setNextYearRangeAriaLabelUndefined: Self = StObject.set(x, "nextYearRangeAriaLabel", js.undefined)
-      
-      inline def setOpenCalendarTitle(value: String): Self = StObject.set(x, "openCalendarTitle", value.asInstanceOf[js.Any])
       
       inline def setPrevMonthAriaLabel(value: String): Self = StObject.set(x, "prevMonthAriaLabel", value.asInstanceOf[js.Any])
       
@@ -230,67 +154,57 @@ object dateFormattingTypesMod {
     }
   }
   
-  trait IDateFormatting
-    extends StObject
-       with IDateGridStrings {
+  trait IDateFormatting extends StObject {
     
     /**
-      * Format the day according to specified function.
-      * Intended use case is localization.
+      * Get a localized string for a day.
       */
-    def formatDay(date: Date): String
+    def formatDay(date: js.Date): String
     
     /**
-      * Format the month, day and year according to specified function.
-      * Intended use case is localization.
+      * Get a localized string for a month.
       */
-    def formatMonthDayYear(date: Date, strings: IDateGridStrings): String
+    def formatMonth(date: js.Date, strings: IDateGridStrings): String
     
     /**
-      * Format the month and year according to specified function.
-      * Intended use case is localization.
+      * Get a localized string for a month, day, and year.
       */
-    def formatMonthYear(date: Date, strings: IDateGridStrings): String
+    def formatMonthDayYear(date: js.Date, strings: IDateGridStrings): String
     
     /**
-      * Format the year according to specified function.
-      * Intended use case is localization.
+      * Get a localized string for a month and year.
       */
-    def formatYear(date: Date): String
+    def formatMonthYear(date: js.Date, strings: IDateGridStrings): String
     
     /**
-      * Parse date from string representation into Date type.
+      * Get a localized string for a year.
       */
-    def parseDate(date: String): Date | Null
+    def formatYear(date: js.Date): String
   }
   object IDateFormatting {
     
     inline def apply(
-      days: js.Array[String],
-      formatDay: Date => String,
-      formatMonthDayYear: (Date, IDateGridStrings) => String,
-      formatMonthYear: (Date, IDateGridStrings) => String,
-      formatYear: Date => String,
-      months: js.Array[String],
-      parseDate: String => Date | Null,
-      shortDays: js.Array[String],
-      shortMonths: js.Array[String]
+      formatDay: js.Date => String,
+      formatMonth: (js.Date, IDateGridStrings) => String,
+      formatMonthDayYear: (js.Date, IDateGridStrings) => String,
+      formatMonthYear: (js.Date, IDateGridStrings) => String,
+      formatYear: js.Date => String
     ): IDateFormatting = {
-      val __obj = js.Dynamic.literal(days = days.asInstanceOf[js.Any], formatDay = js.Any.fromFunction1(formatDay), formatMonthDayYear = js.Any.fromFunction2(formatMonthDayYear), formatMonthYear = js.Any.fromFunction2(formatMonthYear), formatYear = js.Any.fromFunction1(formatYear), months = months.asInstanceOf[js.Any], parseDate = js.Any.fromFunction1(parseDate), shortDays = shortDays.asInstanceOf[js.Any], shortMonths = shortMonths.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(formatDay = js.Any.fromFunction1(formatDay), formatMonth = js.Any.fromFunction2(formatMonth), formatMonthDayYear = js.Any.fromFunction2(formatMonthDayYear), formatMonthYear = js.Any.fromFunction2(formatMonthYear), formatYear = js.Any.fromFunction1(formatYear))
       __obj.asInstanceOf[IDateFormatting]
     }
     
     extension [Self <: IDateFormatting](x: Self) {
       
-      inline def setFormatDay(value: Date => String): Self = StObject.set(x, "formatDay", js.Any.fromFunction1(value))
+      inline def setFormatDay(value: js.Date => String): Self = StObject.set(x, "formatDay", js.Any.fromFunction1(value))
       
-      inline def setFormatMonthDayYear(value: (Date, IDateGridStrings) => String): Self = StObject.set(x, "formatMonthDayYear", js.Any.fromFunction2(value))
+      inline def setFormatMonth(value: (js.Date, IDateGridStrings) => String): Self = StObject.set(x, "formatMonth", js.Any.fromFunction2(value))
       
-      inline def setFormatMonthYear(value: (Date, IDateGridStrings) => String): Self = StObject.set(x, "formatMonthYear", js.Any.fromFunction2(value))
+      inline def setFormatMonthDayYear(value: (js.Date, IDateGridStrings) => String): Self = StObject.set(x, "formatMonthDayYear", js.Any.fromFunction2(value))
       
-      inline def setFormatYear(value: Date => String): Self = StObject.set(x, "formatYear", js.Any.fromFunction1(value))
+      inline def setFormatMonthYear(value: (js.Date, IDateGridStrings) => String): Self = StObject.set(x, "formatMonthYear", js.Any.fromFunction2(value))
       
-      inline def setParseDate(value: String => Date | Null): Self = StObject.set(x, "parseDate", js.Any.fromFunction1(value))
+      inline def setFormatYear(value: js.Date => String): Self = StObject.set(x, "formatYear", js.Any.fromFunction1(value))
     }
   }
   
@@ -336,19 +250,19 @@ object dateFormattingTypesMod {
       
       inline def setDays(value: js.Array[String]): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
       
-      inline def setDaysVarargs(value: String*): Self = StObject.set(x, "days", js.Array(value :_*))
+      inline def setDaysVarargs(value: String*): Self = StObject.set(x, "days", js.Array(value*))
       
       inline def setMonths(value: js.Array[String]): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
       
-      inline def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value :_*))
+      inline def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value*))
       
       inline def setShortDays(value: js.Array[String]): Self = StObject.set(x, "shortDays", value.asInstanceOf[js.Any])
       
-      inline def setShortDaysVarargs(value: String*): Self = StObject.set(x, "shortDays", js.Array(value :_*))
+      inline def setShortDaysVarargs(value: String*): Self = StObject.set(x, "shortDays", js.Array(value*))
       
       inline def setShortMonths(value: js.Array[String]): Self = StObject.set(x, "shortMonths", value.asInstanceOf[js.Any])
       
-      inline def setShortMonthsVarargs(value: String*): Self = StObject.set(x, "shortMonths", js.Array(value :_*))
+      inline def setShortMonthsVarargs(value: String*): Self = StObject.set(x, "shortMonths", js.Array(value*))
     }
   }
 }

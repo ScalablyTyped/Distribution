@@ -8,5 +8,5 @@ object indexDocumentMod {
   
   @JSImport("@aws-sdk/client-s3-node/model/_IndexDocument", "_IndexDocument")
   @js.native
-  val IndexDocument: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val IndexDocument: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

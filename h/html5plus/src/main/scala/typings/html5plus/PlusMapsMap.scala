@@ -32,25 +32,21 @@ trait PlusMapsMap extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   def calculateArea(): Unit = js.native
-  def calculateArea(bounds: Unit, successCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def calculateArea(bounds: Unit, successCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def calculateArea(
     bounds: Unit,
-    successCallback: js.Function1[/* result */ js.Any, Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    successCallback: js.Function1[/* result */ Any, Unit],
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def calculateArea(bounds: Unit, successCallback: Unit, errorCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def calculateArea(bounds: Unit, successCallback: Unit, errorCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def calculateArea(bounds: PlusMapsBounds): Unit = js.native
-  def calculateArea(bounds: PlusMapsBounds, successCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def calculateArea(bounds: PlusMapsBounds, successCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def calculateArea(
     bounds: PlusMapsBounds,
-    successCallback: js.Function1[/* result */ js.Any, Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    successCallback: js.Function1[/* result */ Any, Unit],
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def calculateArea(
-    bounds: PlusMapsBounds,
-    successCallback: Unit,
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
+  def calculateArea(bounds: PlusMapsBounds, successCallback: Unit, errorCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   
   /**
     * 静态方法，计算距离
@@ -59,72 +55,64 @@ trait PlusMapsMap extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   def calculateDistance(): Unit = js.native
-  def calculateDistance(pointStart: Unit, pointEnd: Unit, successCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def calculateDistance(pointStart: Unit, pointEnd: Unit, successCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def calculateDistance(
     pointStart: Unit,
     pointEnd: Unit,
-    successCallback: js.Function1[/* result */ js.Any, Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    successCallback: js.Function1[/* result */ Any, Unit],
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def calculateDistance(
     pointStart: Unit,
     pointEnd: Unit,
     successCallback: Unit,
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def calculateDistance(pointStart: Unit, pointEnd: PlusMapsPoint): Unit = js.native
+  def calculateDistance(pointStart: Unit, pointEnd: PlusMapsPoint, successCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def calculateDistance(
     pointStart: Unit,
     pointEnd: PlusMapsPoint,
-    successCallback: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def calculateDistance(
-    pointStart: Unit,
-    pointEnd: PlusMapsPoint,
-    successCallback: js.Function1[/* result */ js.Any, Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    successCallback: js.Function1[/* result */ Any, Unit],
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def calculateDistance(
     pointStart: Unit,
     pointEnd: PlusMapsPoint,
     successCallback: Unit,
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def calculateDistance(pointStart: PlusMapsPoint): Unit = js.native
+  def calculateDistance(pointStart: PlusMapsPoint, pointEnd: Unit, successCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def calculateDistance(
     pointStart: PlusMapsPoint,
     pointEnd: Unit,
-    successCallback: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def calculateDistance(
-    pointStart: PlusMapsPoint,
-    pointEnd: Unit,
-    successCallback: js.Function1[/* result */ js.Any, Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    successCallback: js.Function1[/* result */ Any, Unit],
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def calculateDistance(
     pointStart: PlusMapsPoint,
     pointEnd: Unit,
     successCallback: Unit,
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def calculateDistance(pointStart: PlusMapsPoint, pointEnd: PlusMapsPoint): Unit = js.native
   def calculateDistance(
     pointStart: PlusMapsPoint,
     pointEnd: PlusMapsPoint,
-    successCallback: js.Function1[/* result */ js.Any, Unit]
+    successCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def calculateDistance(
     pointStart: PlusMapsPoint,
     pointEnd: PlusMapsPoint,
-    successCallback: js.Function1[/* result */ js.Any, Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    successCallback: js.Function1[/* result */ Any, Unit],
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def calculateDistance(
     pointStart: PlusMapsPoint,
     pointEnd: PlusMapsPoint,
     successCallback: Unit,
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   
   /**
@@ -166,68 +154,68 @@ trait PlusMapsMap extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   def convertCoordinates(): Unit = js.native
-  def convertCoordinates(point: Unit, options: Unit, successCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def convertCoordinates(point: Unit, options: Unit, successCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def convertCoordinates(
     point: Unit,
     options: Unit,
-    successCallback: js.Function1[/* result */ js.Any, Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    successCallback: js.Function1[/* result */ Any, Unit],
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def convertCoordinates(
     point: Unit,
     options: Unit,
     successCallback: Unit,
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def convertCoordinates(point: Unit, options: PlusMapsCoordinateConvertOptions): Unit = js.native
   def convertCoordinates(
     point: Unit,
     options: PlusMapsCoordinateConvertOptions,
-    successCallback: js.Function1[/* result */ js.Any, Unit]
+    successCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def convertCoordinates(
     point: Unit,
     options: PlusMapsCoordinateConvertOptions,
-    successCallback: js.Function1[/* result */ js.Any, Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    successCallback: js.Function1[/* result */ Any, Unit],
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def convertCoordinates(
     point: Unit,
     options: PlusMapsCoordinateConvertOptions,
     successCallback: Unit,
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def convertCoordinates(point: PlusMapsPoint): Unit = js.native
-  def convertCoordinates(point: PlusMapsPoint, options: Unit, successCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def convertCoordinates(point: PlusMapsPoint, options: Unit, successCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def convertCoordinates(
     point: PlusMapsPoint,
     options: Unit,
-    successCallback: js.Function1[/* result */ js.Any, Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    successCallback: js.Function1[/* result */ Any, Unit],
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def convertCoordinates(
     point: PlusMapsPoint,
     options: Unit,
     successCallback: Unit,
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def convertCoordinates(point: PlusMapsPoint, options: PlusMapsCoordinateConvertOptions): Unit = js.native
   def convertCoordinates(
     point: PlusMapsPoint,
     options: PlusMapsCoordinateConvertOptions,
-    successCallback: js.Function1[/* result */ js.Any, Unit]
+    successCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def convertCoordinates(
     point: PlusMapsPoint,
     options: PlusMapsCoordinateConvertOptions,
-    successCallback: js.Function1[/* result */ js.Any, Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    successCallback: js.Function1[/* result */ Any, Unit],
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def convertCoordinates(
     point: PlusMapsPoint,
     options: PlusMapsCoordinateConvertOptions,
     successCallback: Unit,
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   
   /**
@@ -239,67 +227,67 @@ trait PlusMapsMap extends StObject {
     */
   def geocode(): Unit = js.native
   def geocode(address: String): Unit = js.native
-  def geocode(address: String, options: Unit, successCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def geocode(address: String, options: Unit, successCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def geocode(
     address: String,
     options: Unit,
-    successCallback: js.Function1[/* result */ js.Any, Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    successCallback: js.Function1[/* result */ Any, Unit],
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def geocode(
     address: String,
     options: Unit,
     successCallback: Unit,
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def geocode(address: String, options: PlusMapsGeocodeOptions): Unit = js.native
   def geocode(
     address: String,
     options: PlusMapsGeocodeOptions,
-    successCallback: js.Function1[/* result */ js.Any, Unit]
+    successCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def geocode(
     address: String,
     options: PlusMapsGeocodeOptions,
-    successCallback: js.Function1[/* result */ js.Any, Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    successCallback: js.Function1[/* result */ Any, Unit],
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def geocode(
     address: String,
     options: PlusMapsGeocodeOptions,
     successCallback: Unit,
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def geocode(address: Unit, options: Unit, successCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def geocode(address: Unit, options: Unit, successCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def geocode(
     address: Unit,
     options: Unit,
-    successCallback: js.Function1[/* result */ js.Any, Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    successCallback: js.Function1[/* result */ Any, Unit],
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def geocode(
     address: Unit,
     options: Unit,
     successCallback: Unit,
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def geocode(address: Unit, options: PlusMapsGeocodeOptions): Unit = js.native
   def geocode(
     address: Unit,
     options: PlusMapsGeocodeOptions,
-    successCallback: js.Function1[/* result */ js.Any, Unit]
+    successCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def geocode(
     address: Unit,
     options: PlusMapsGeocodeOptions,
-    successCallback: js.Function1[/* result */ js.Any, Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    successCallback: js.Function1[/* result */ Any, Unit],
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def geocode(
     address: Unit,
     options: PlusMapsGeocodeOptions,
     successCallback: Unit,
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   
   /**
@@ -397,7 +385,7 @@ trait PlusMapsMap extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  var onstatuschanged: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.native
+  var onstatuschanged: js.UndefOr[js.Function1[/* result */ Any, Unit]] = js.native
   
   /**
     * 从地图中删除覆盖物对象
@@ -434,68 +422,68 @@ trait PlusMapsMap extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   def reverseGeocode(): Unit = js.native
-  def reverseGeocode(point: Unit, options: Unit, successCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def reverseGeocode(point: Unit, options: Unit, successCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def reverseGeocode(
     point: Unit,
     options: Unit,
-    successCallback: js.Function1[/* result */ js.Any, Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    successCallback: js.Function1[/* result */ Any, Unit],
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def reverseGeocode(
     point: Unit,
     options: Unit,
     successCallback: Unit,
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def reverseGeocode(point: Unit, options: PlusMapsGeocodeOptions): Unit = js.native
   def reverseGeocode(
     point: Unit,
     options: PlusMapsGeocodeOptions,
-    successCallback: js.Function1[/* result */ js.Any, Unit]
+    successCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def reverseGeocode(
     point: Unit,
     options: PlusMapsGeocodeOptions,
-    successCallback: js.Function1[/* result */ js.Any, Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    successCallback: js.Function1[/* result */ Any, Unit],
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def reverseGeocode(
     point: Unit,
     options: PlusMapsGeocodeOptions,
     successCallback: Unit,
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def reverseGeocode(point: PlusMapsPoint): Unit = js.native
-  def reverseGeocode(point: PlusMapsPoint, options: Unit, successCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def reverseGeocode(point: PlusMapsPoint, options: Unit, successCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def reverseGeocode(
     point: PlusMapsPoint,
     options: Unit,
-    successCallback: js.Function1[/* result */ js.Any, Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    successCallback: js.Function1[/* result */ Any, Unit],
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def reverseGeocode(
     point: PlusMapsPoint,
     options: Unit,
     successCallback: Unit,
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def reverseGeocode(point: PlusMapsPoint, options: PlusMapsGeocodeOptions): Unit = js.native
   def reverseGeocode(
     point: PlusMapsPoint,
     options: PlusMapsGeocodeOptions,
-    successCallback: js.Function1[/* result */ js.Any, Unit]
+    successCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def reverseGeocode(
     point: PlusMapsPoint,
     options: PlusMapsGeocodeOptions,
-    successCallback: js.Function1[/* result */ js.Any, Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    successCallback: js.Function1[/* result */ Any, Unit],
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def reverseGeocode(
     point: PlusMapsPoint,
     options: PlusMapsGeocodeOptions,
     successCallback: Unit,
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   
   /**

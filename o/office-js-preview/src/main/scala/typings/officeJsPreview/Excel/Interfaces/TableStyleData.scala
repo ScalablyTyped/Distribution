@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TableStyleData extends StObject {
   
   /**
+    * Specifies the name of the table style.
     *
-    * Gets the name of the TableStyle.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var name: js.UndefOr[String] = js.undefined
   
   /**
+    * Specifies if this `TableStyle` object is read-only.
     *
-    * Specifies if this TableStyle object is read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var readOnly: js.UndefOr[Boolean] = js.undefined

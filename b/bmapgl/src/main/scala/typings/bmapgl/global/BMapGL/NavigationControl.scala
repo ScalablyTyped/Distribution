@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMapGL.NavigationControl")
 @js.native
-class NavigationControl ()
+open class NavigationControl ()
   extends StObject
      with typings.bmapgl.BMapGL.NavigationControl {
   def this(opts: NavigationControlOptions) = this()

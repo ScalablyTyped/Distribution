@@ -10,10 +10,10 @@ The lodash method `_.slice` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.slice |
 | Keywords           | lodash-modularized, slice |
-| # releases         | 0 |
-| # dependents       | 20 |
-| # downloads        | 185805 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 38073.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

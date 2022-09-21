@@ -47,7 +47,7 @@ object BlazyOptions {
     
     inline def setBreakpointsUndefined: Self = StObject.set(x, "breakpoints", js.undefined)
     
-    inline def setBreakpointsVarargs(value: Breakpoint*): Self = StObject.set(x, "breakpoints", js.Array(value :_*))
+    inline def setBreakpointsVarargs(value: Breakpoint*): Self = StObject.set(x, "breakpoints", js.Array(value*))
     
     inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

@@ -55,7 +55,7 @@ object JCanvasSliceDef {
     
     inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
     
-    inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value*))
     
     inline def setLayer(value: Boolean): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     

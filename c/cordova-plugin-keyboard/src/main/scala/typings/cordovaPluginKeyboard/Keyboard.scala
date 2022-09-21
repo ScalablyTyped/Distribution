@@ -42,7 +42,7 @@ trait Keyboard extends StObject {
     * @param successCallback A success callbackfunction
     */
   def disableScrollingInShrinkView(disable: Boolean): Unit = js.native
-  def disableScrollingInShrinkView(disable: Boolean, successCallback: js.Function1[/* currentValue */ js.Any, Unit]): Unit = js.native
+  def disableScrollingInShrinkView(disable: Boolean, successCallback: js.Function1[/* currentValue */ Any, Unit]): Unit = js.native
   
   /**
     * Hide the keyboard
@@ -80,7 +80,7 @@ trait Keyboard extends StObject {
     * @param successCallback A success callbackfunction
     */
   def hideFormAccessoryBar(hide: Boolean): Unit = js.native
-  def hideFormAccessoryBar(hide: Boolean, successCallback: js.Function1[/* currentValue */ js.Any, Unit]): Unit = js.native
+  def hideFormAccessoryBar(hide: Boolean, successCallback: js.Function1[/* currentValue */ Any, Unit]): Unit = js.native
   
   // Properties
   /**
@@ -150,5 +150,5 @@ trait Keyboard extends StObject {
     * @param successCallback A success callbackfunction
     */
   def shrinkView(shrink: Boolean): Unit = js.native
-  def shrinkView(shrink: Boolean, successCallback: js.Function1[/* currentValue */ js.Any, Unit]): Unit = js.native
+  def shrinkView(shrink: Boolean, successCallback: js.Function1[/* currentValue */ Any, Unit]): Unit = js.native
 }

@@ -9,9 +9,9 @@ object mod {
   
   inline def apply[T](obj: T): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: K}
-    */ typings.keymirror.keymirrorStrings.^ & TopLevel[js.Any] = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    */ typings.keymirror.keymirrorStrings.^ & TopLevel[Any] = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: K}
-    */ typings.keymirror.keymirrorStrings.^ & TopLevel[js.Any]]
+    */ typings.keymirror.keymirrorStrings.^ & TopLevel[Any]]
   
   @JSImport("keymirror", JSImport.Namespace)
   @js.native

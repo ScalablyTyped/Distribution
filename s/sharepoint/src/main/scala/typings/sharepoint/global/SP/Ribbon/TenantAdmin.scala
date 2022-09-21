@@ -9,7 +9,7 @@ object TenantAdmin {
   
   @JSGlobal("SP.Ribbon.TenantAdmin.TenantAdminPageComponent")
   @js.native
-  class TenantAdminPageComponent ()
+  open class TenantAdminPageComponent ()
     extends StObject
        with PageComponent {
     
@@ -26,7 +26,7 @@ object TenantAdmin {
     override def getId(): String = js.native
     
     /* CompleteClass */
-    override def handleCommand(commandId: String, properties: js.Any, sequenceNumber: Double): Boolean = js.native
+    override def handleCommand(commandId: String, properties: Any, sequenceNumber: Double): Boolean = js.native
     
     /* CompleteClass */
     override def init(): Unit = js.native

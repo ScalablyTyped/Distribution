@@ -48,7 +48,7 @@ object navigationBuilderContextMod extends Shortcut {
   
   type FocusedNavigationCallback[T] = js.Function1[/* navigation */ NavigationHelpers[ParamListBase, js.Object], T]
   
-  type FocusedNavigationListener = js.Function1[/* callback */ FocusedNavigationCallback[js.Any], Handled[js.Any]]
+  type FocusedNavigationListener = js.Function1[/* callback */ FocusedNavigationCallback[Any], Handled[Any]]
   
   type GetStateListener = js.Function0[NavigationState[ParamListBase]]
   
@@ -86,7 +86,7 @@ object navigationBuilderContextMod extends Shortcut {
     
     inline def apply(
       action: (/* action */ NavigationAction, /* visitedNavigators */ js.UndefOr[Set[String]]) => Boolean,
-      focus: /* callback */ FocusedNavigationCallback[js.Any] => Handled[js.Any]
+      focus: /* callback */ FocusedNavigationCallback[Any] => Handled[Any]
     ): ListenerMap = {
       val __obj = js.Dynamic.literal(action = js.Any.fromFunction2(action), focus = js.Any.fromFunction1(focus))
       __obj.asInstanceOf[ListenerMap]
@@ -96,7 +96,7 @@ object navigationBuilderContextMod extends Shortcut {
       
       inline def setAction(value: (/* action */ NavigationAction, /* visitedNavigators */ js.UndefOr[Set[String]]) => Boolean): Self = StObject.set(x, "action", js.Any.fromFunction2(value))
       
-      inline def setFocus(value: /* callback */ FocusedNavigationCallback[js.Any] => Handled[js.Any]): Self = StObject.set(x, "focus", js.Any.fromFunction1(value))
+      inline def setFocus(value: /* callback */ FocusedNavigationCallback[Any] => Handled[Any]): Self = StObject.set(x, "focus", js.Any.fromFunction1(value))
     }
   }
   

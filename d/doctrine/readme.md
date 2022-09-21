@@ -10,9 +10,9 @@ JSDoc parser
 | Full name          | doctrine |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 359 |
-| # downloads        | 1125707470 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1.6912267466666666E8 |
+| # stars            | 440.0 |
 
 ## Links
 - [Homepage](https://github.com/eslint/doctrine)

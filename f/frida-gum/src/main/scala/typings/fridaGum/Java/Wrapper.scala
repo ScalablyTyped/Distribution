@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Wrapper[T /* <: Members[T] */]
   extends StObject
-     with /* name */ StringDictionary[js.Any] {
+     with /* name */ StringDictionary[Any] {
   
   /**
     * Allocates a new instance without initializing it.
@@ -19,7 +19,7 @@ trait Wrapper[T /* <: Members[T] */]
     * Call `$init()` to initialize it.
     */
   @JSName("$alloc")
-  def $alloc(params: js.Any*): js.Any = js.native
+  def $alloc(params: Any*): Any = js.native
   /**
     * Allocates a new instance without initializing it.
     *
@@ -52,7 +52,7 @@ trait Wrapper[T /* <: Members[T] */]
     * Replace the `implementation` property to hook a given constructor.
     */
   @JSName("$init")
-  def $init(params: js.Any*): js.Any = js.native
+  def $init(params: Any*): Any = js.native
   /**
     * Initializes an instance that was allocated but not yet initialized.
     * This wraps the constructor(s).
@@ -68,7 +68,7 @@ trait Wrapper[T /* <: Members[T] */]
     * Use this to create a new instance.
     */
   @JSName("$new")
-  def $new(params: js.Any*): js.Any = js.native
+  def $new(params: Any*): Any = js.native
   /**
     * Allocates and initializes a new instance of the given class.
     *

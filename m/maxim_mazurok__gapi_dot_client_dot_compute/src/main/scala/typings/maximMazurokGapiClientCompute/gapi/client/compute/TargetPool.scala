@@ -8,13 +8,10 @@ trait TargetPool extends StObject {
   
   /**
     * The server-defined URL for the resource. This field is applicable only when the containing target pool is serving a forwarding rule as the primary pool, and its failoverRatio field
-    * is properly set to a value between [0, 1].
-    *
-    * backupPool and failoverRatio together define the fallback behavior of the primary target pool: if the ratio of the healthy instances in the primary pool is at or below
-    * failoverRatio, traffic arriving at the load-balanced IP will be directed to the backup pool.
-    *
-    * In case where failoverRatio and backupPool are not set, or all the instances in the backup pool are unhealthy, the traffic will be directed back to the primary pool in the "force"
-    * mode, where traffic will be spread to the healthy instances with the best effort, or to all instances when no instance is healthy.
+    * is properly set to a value between [0, 1]. backupPool and failoverRatio together define the fallback behavior of the primary target pool: if the ratio of the healthy instances in
+    * the primary pool is at or below failoverRatio, traffic arriving at the load-balanced IP will be directed to the backup pool. In case where failoverRatio and backupPool are not set,
+    * or all the instances in the backup pool are unhealthy, the traffic will be directed back to the primary pool in the "force" mode, where traffic will be spread to the healthy
+    * instances with the best effort, or to all instances when no instance is healthy.
     */
   var backupPool: js.UndefOr[String] = js.undefined
   
@@ -26,19 +23,16 @@ trait TargetPool extends StObject {
   
   /**
     * This field is applicable only when the containing target pool is serving a forwarding rule as the primary pool (i.e., not as a backup pool to some other target pool). The value of
-    * the field must be in [0, 1].
-    *
-    * If set, backupPool must also be set. They together define the fallback behavior of the primary target pool: if the ratio of the healthy instances in the primary pool is at or below
-    * this number, traffic arriving at the load-balanced IP will be directed to the backup pool.
-    *
-    * In case where failoverRatio is not set or all the instances in the backup pool are unhealthy, the traffic will be directed back to the primary pool in the "force" mode, where
-    * traffic will be spread to the healthy instances with the best effort, or to all instances when no instance is healthy.
+    * the field must be in [0, 1]. If set, backupPool must also be set. They together define the fallback behavior of the primary target pool: if the ratio of the healthy instances in the
+    * primary pool is at or below this number, traffic arriving at the load-balanced IP will be directed to the backup pool. In case where failoverRatio is not set or all the instances in
+    * the backup pool are unhealthy, the traffic will be directed back to the primary pool in the "force" mode, where traffic will be spread to the healthy instances with the best effort,
+    * or to all instances when no instance is healthy.
     */
   var failoverRatio: js.UndefOr[Double] = js.undefined
   
   /**
-    * The URL of the HttpHealthCheck resource. A member instance in this pool is considered healthy if and only if the health checks pass. An empty list means all member instances will be
-    * considered healthy at all times. Only legacy HttpHealthChecks are supported. Only one health check may be specified.
+    * The URL of the HttpHealthCheck resource. A member instance in this pool is considered healthy if and only if the health checks pass. Only legacy HttpHealthChecks are supported. Only
+    * one health check may be specified.
     */
   var healthChecks: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -65,10 +59,9 @@ trait TargetPool extends StObject {
   var selfLink: js.UndefOr[String] = js.undefined
   
   /**
-    * Session affinity option, must be one of the following values:
-    * NONE: Connections from the same client IP may go to any instance in the pool.
-    * CLIENT_IP: Connections from the same client IP will go to the same instance in the pool while that instance remains healthy.
-    * CLIENT_IP_PROTO: Connections from the same client IP with the same IP protocol will go to the same instance in the pool while that instance remains healthy.
+    * Session affinity option, must be one of the following values: NONE: Connections from the same client IP may go to any instance in the pool. CLIENT_IP: Connections from the same
+    * client IP will go to the same instance in the pool while that instance remains healthy. CLIENT_IP_PROTO: Connections from the same client IP with the same IP protocol will go to the
+    * same instance in the pool while that instance remains healthy.
     */
   var sessionAffinity: js.UndefOr[String] = js.undefined
 }
@@ -101,7 +94,7 @@ object TargetPool {
     
     inline def setHealthChecksUndefined: Self = StObject.set(x, "healthChecks", js.undefined)
     
-    inline def setHealthChecksVarargs(value: String*): Self = StObject.set(x, "healthChecks", js.Array(value :_*))
+    inline def setHealthChecksVarargs(value: String*): Self = StObject.set(x, "healthChecks", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -111,7 +104,7 @@ object TargetPool {
     
     inline def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
     
-    inline def setInstancesVarargs(value: String*): Self = StObject.set(x, "instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: String*): Self = StObject.set(x, "instances", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

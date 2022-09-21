@@ -10,10 +10,10 @@ object tvMod {
   
   @JSImport("material-ui/svg-icons/hardware/tv", JSImport.Default)
   @js.native
-  class default () extends HardwareTv
+  open class default () extends HardwareTv
   
   @JSImport("material-ui/svg-icons/hardware/tv", "HardwareTv")
   @js.native
-  class HardwareTv ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class HardwareTv ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "colord" : "2.9.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "colord" : "2.9.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

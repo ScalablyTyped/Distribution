@@ -6,10 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "QuestionMatrix")
 @js.native
-class QuestionMatrix protected () extends QuestionMatrixModel {
+open class QuestionMatrix protected () extends QuestionMatrixModel {
   def this(name: String) = this()
   
-  var koVisibleColumns: js.Any = js.native
+  var _implementor: QuestionImplementor = js.native
   
-  var koVisibleRows: js.Any = js.native
+  var koVisibleColumns: Any = js.native
+  
+  var koVisibleRows: Any = js.native
+  
+  /* protected */ def onMatrixRowCreated(row: Any): Unit = js.native
 }

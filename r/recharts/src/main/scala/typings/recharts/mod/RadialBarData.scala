@@ -14,11 +14,11 @@ trait RadialBarData extends StObject {
   
   var outerRadius: Double
   
-  var value: js.Any
+  var value: Any
 }
 object RadialBarData {
   
-  inline def apply(cx: Double, cy: Double, innerRadius: Double, outerRadius: Double, value: js.Any): RadialBarData = {
+  inline def apply(cx: Double, cy: Double, innerRadius: Double, outerRadius: Double, value: Any): RadialBarData = {
     val __obj = js.Dynamic.literal(cx = cx.asInstanceOf[js.Any], cy = cy.asInstanceOf[js.Any], innerRadius = innerRadius.asInstanceOf[js.Any], outerRadius = outerRadius.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[RadialBarData]
   }
@@ -33,6 +33,6 @@ object RadialBarData {
     
     inline def setOuterRadius(value: Double): Self = StObject.set(x, "outerRadius", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

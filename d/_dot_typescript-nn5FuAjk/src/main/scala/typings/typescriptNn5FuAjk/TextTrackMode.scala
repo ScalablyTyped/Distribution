@@ -1,0 +1,20 @@
+package typings.typescriptNn5FuAjk
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* Rewritten from type alias, can be one of: 
+  - typings.typescriptNn5FuAjk.typescriptNn5FuAjkStrings.disabled
+  - typings.typescriptNn5FuAjk.typescriptNn5FuAjkStrings.hidden
+  - typings.typescriptNn5FuAjk.typescriptNn5FuAjkStrings.showing
+*/
+trait TextTrackMode extends StObject
+object TextTrackMode {
+  
+  inline def disabled: typings.typescriptNn5FuAjk.typescriptNn5FuAjkStrings.disabled = "disabled".asInstanceOf[typings.typescriptNn5FuAjk.typescriptNn5FuAjkStrings.disabled]
+  
+  inline def hidden: typings.typescriptNn5FuAjk.typescriptNn5FuAjkStrings.hidden = "hidden".asInstanceOf[typings.typescriptNn5FuAjk.typescriptNn5FuAjkStrings.hidden]
+  
+  inline def showing: typings.typescriptNn5FuAjk.typescriptNn5FuAjkStrings.showing = "showing".asInstanceOf[typings.typescriptNn5FuAjk.typescriptNn5FuAjkStrings.showing]
+}

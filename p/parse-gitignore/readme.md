@@ -10,10 +10,10 @@ Parse a .gitignore or .npmignore file into an array of patterns.
 | ------------------ | :-------------: |
 | Full name          | parse-gitignore |
 | Keywords           | gitignore, ignore, parse |
-| # releases         | 0 |
-| # dependents       | 110 |
-| # downloads        | 5737665 |
-| # stars            | 3 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 676221.6666666666 |
+| # stars            | 50.0 |
 
 ## Links
 - [Homepage](https://github.com/jonschlinkert/parse-gitignore)

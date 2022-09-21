@@ -9,11 +9,13 @@ trait SendFileResponse extends StObject {
   var id: String
   
   var name: String
+  
+  var timetoken: String
 }
 object SendFileResponse {
   
-  inline def apply(id: String, name: String): SendFileResponse = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  inline def apply(id: String, name: String, timetoken: String): SendFileResponse = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], timetoken = timetoken.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendFileResponse]
   }
   
@@ -22,5 +24,7 @@ object SendFileResponse {
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setTimetoken(value: String): Self = StObject.set(x, "timetoken", value.asInstanceOf[js.Any])
   }
 }

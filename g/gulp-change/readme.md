@@ -10,15 +10,12 @@ allow file content manipulations
 | ------------------ | :-------------: |
 | Full name          | gulp-change |
 | Keywords           | gulp, change, file, content, modify, static, analysis |
-| # releases         | 0 |
-| # dependents       | 21 |
-| # downloads        | 240847 |
-| # stars            | 9 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 21461.666666666668 |
+| # stars            | 15.0 |
 
 ## Links
-- [Homepage](https://github.com/PoliteJS/gulp-change)
-- [Bugs](https://github.com/PoliteJS/gulp-change/issues)
-- [Repository](https://github.com/PoliteJS/gulp-change)
 - [Npm](https://www.npmjs.com/package/gulp-change)
     
 

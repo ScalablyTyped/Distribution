@@ -12,11 +12,11 @@ trait ColorStops extends StObject {
   
   var coords: js.UndefOr[IGradientOptionsCoords] = js.undefined
   
-  var gradientUnits: js.UndefOr[js.Any] = js.undefined
+  var gradientUnits: js.UndefOr[Any] = js.undefined
   
-  var offsetX: js.UndefOr[js.Any] = js.undefined
+  var offsetX: js.UndefOr[Any] = js.undefined
   
-  var offsetY: js.UndefOr[js.Any] = js.undefined
+  var offsetY: js.UndefOr[Any] = js.undefined
   
   var `type`: js.UndefOr[String] = js.undefined
 }
@@ -33,21 +33,21 @@ object ColorStops {
     
     inline def setColorStopsUndefined: Self = StObject.set(x, "colorStops", js.undefined)
     
-    inline def setColorStopsVarargs(value: Color*): Self = StObject.set(x, "colorStops", js.Array(value :_*))
+    inline def setColorStopsVarargs(value: Color*): Self = StObject.set(x, "colorStops", js.Array(value*))
     
     inline def setCoords(value: IGradientOptionsCoords): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
     
     inline def setCoordsUndefined: Self = StObject.set(x, "coords", js.undefined)
     
-    inline def setGradientUnits(value: js.Any): Self = StObject.set(x, "gradientUnits", value.asInstanceOf[js.Any])
+    inline def setGradientUnits(value: Any): Self = StObject.set(x, "gradientUnits", value.asInstanceOf[js.Any])
     
     inline def setGradientUnitsUndefined: Self = StObject.set(x, "gradientUnits", js.undefined)
     
-    inline def setOffsetX(value: js.Any): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+    inline def setOffsetX(value: Any): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
     inline def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
     
-    inline def setOffsetY(value: js.Any): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
+    inline def setOffsetY(value: Any): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
     inline def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
     

@@ -2,7 +2,6 @@ package typings.awsSdkClientPinpointBrowser
 
 import typings.awsSdkClientPinpointBrowser.typesEndpointResponseMod.EndpointResponse
 import typings.awsSdkClientPinpointBrowser.typesEndpointResponseMod.UnmarshalledEndpointResponse
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ object typesEndpointsResponseMod {
     /**
       * The list of endpoints.
       */
-    var Item: js.UndefOr[js.Array[EndpointResponse] | Iterable[EndpointResponse]] = js.undefined
+    var Item: js.UndefOr[js.Array[EndpointResponse] | js.Iterable[EndpointResponse]] = js.undefined
   }
   object EndpointsResponse {
     
@@ -25,11 +24,11 @@ object typesEndpointsResponseMod {
     
     extension [Self <: EndpointsResponse](x: Self) {
       
-      inline def setItem(value: js.Array[EndpointResponse] | Iterable[EndpointResponse]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
+      inline def setItem(value: js.Array[EndpointResponse] | js.Iterable[EndpointResponse]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
       
       inline def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
       
-      inline def setItemVarargs(value: EndpointResponse*): Self = StObject.set(x, "Item", js.Array(value :_*))
+      inline def setItemVarargs(value: EndpointResponse*): Self = StObject.set(x, "Item", js.Array(value*))
     }
   }
   
@@ -56,7 +55,7 @@ object typesEndpointsResponseMod {
       
       inline def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
       
-      inline def setItemVarargs(value: UnmarshalledEndpointResponse*): Self = StObject.set(x, "Item", js.Array(value :_*))
+      inline def setItemVarargs(value: UnmarshalledEndpointResponse*): Self = StObject.set(x, "Item", js.Array(value*))
     }
   }
 }

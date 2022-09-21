@@ -10,10 +10,10 @@ object concatStreamMod {
   
   @JSImport("wonder-frp/dist/commonjs/stream/ConcatStream", "ConcatStream")
   @js.native
-  class ConcatStream protected () extends BaseStream {
+  open class ConcatStream protected () extends BaseStream {
     def this(sources: js.Array[Stream]) = this()
     
-    /* private */ var _sources: js.Any = js.native
+    /* private */ var _sources: Any = js.native
   }
   /* static members */
   object ConcatStream {

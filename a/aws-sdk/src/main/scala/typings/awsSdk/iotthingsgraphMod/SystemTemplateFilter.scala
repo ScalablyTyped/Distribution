@@ -29,6 +29,6 @@ object SystemTemplateFilter {
     
     inline def setValue(value: SystemTemplateFilterValues): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    inline def setValueVarargs(value: SystemTemplateFilterValue*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: SystemTemplateFilterValue*): Self = StObject.set(x, "value", js.Array(value*))
   }
 }

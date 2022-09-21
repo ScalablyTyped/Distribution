@@ -36,6 +36,9 @@ trait Course extends StObject {
   /** Enrollment code to use when joining this course. Specifying this field in a course update mask results in an error. Read-only. */
   var enrollmentCode: js.UndefOr[String] = js.undefined
   
+  /** The gradebook settings that specify how a student's overall grade for the course will be calculated and who it will be displayed to. Read-only */
+  var gradebookSettings: js.UndefOr[GradebookSettings] = js.undefined
+  
   /** Whether or not guardian notifications are enabled for this course. Read-only. */
   var guardiansEnabled: js.UndefOr[Boolean] = js.undefined
   
@@ -95,7 +98,7 @@ object Course {
     
     inline def setCourseMaterialSetsUndefined: Self = StObject.set(x, "courseMaterialSets", js.undefined)
     
-    inline def setCourseMaterialSetsVarargs(value: CourseMaterialSet*): Self = StObject.set(x, "courseMaterialSets", js.Array(value :_*))
+    inline def setCourseMaterialSetsVarargs(value: CourseMaterialSet*): Self = StObject.set(x, "courseMaterialSets", js.Array(value*))
     
     inline def setCourseState(value: String): Self = StObject.set(x, "courseState", value.asInstanceOf[js.Any])
     
@@ -116,6 +119,10 @@ object Course {
     inline def setEnrollmentCode(value: String): Self = StObject.set(x, "enrollmentCode", value.asInstanceOf[js.Any])
     
     inline def setEnrollmentCodeUndefined: Self = StObject.set(x, "enrollmentCode", js.undefined)
+    
+    inline def setGradebookSettings(value: GradebookSettings): Self = StObject.set(x, "gradebookSettings", value.asInstanceOf[js.Any])
+    
+    inline def setGradebookSettingsUndefined: Self = StObject.set(x, "gradebookSettings", js.undefined)
     
     inline def setGuardiansEnabled(value: Boolean): Self = StObject.set(x, "guardiansEnabled", value.asInstanceOf[js.Any])
     

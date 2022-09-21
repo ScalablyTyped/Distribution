@@ -31,6 +31,10 @@ object maximMazurokGapiClientServicecontrolStrings {
   inline def FirstPartyPrincipal: FirstPartyPrincipal = "FirstPartyPrincipal".asInstanceOf[FirstPartyPrincipal]
   
   @js.native
+  sealed trait OrgPolicyViolationInfo extends StObject
+  inline def OrgPolicyViolationInfo: OrgPolicyViolationInfo = "OrgPolicyViolationInfo".asInstanceOf[OrgPolicyViolationInfo]
+  
+  @js.native
   sealed trait Peer extends StObject
   inline def Peer: Peer = "Peer".asInstanceOf[Peer]
   
@@ -53,6 +57,10 @@ object maximMazurokGapiClientServicecontrolStrings {
   @js.native
   sealed trait ThirdPartyPrincipal extends StObject
   inline def ThirdPartyPrincipal: ThirdPartyPrincipal = "ThirdPartyPrincipal".asInstanceOf[ThirdPartyPrincipal]
+  
+  @js.native
+  sealed trait V2LogEntry extends StObject
+  inline def V2LogEntry: V2LogEntry = "V2LogEntry".asInstanceOf[V2LogEntry]
   
   @js.native
   sealed trait servicecontrol extends StObject

@@ -6,7 +6,6 @@ import typings.googleProtobuf.mod.BinaryWriter
 import typings.googleProtobuf.mod.ExtensionFieldBinaryInfo
 import typings.googleProtobuf.mod.ExtensionFieldInfo
 import typings.googleProtobuf.mod.Message
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ object emptyPbMod {
   
   @JSImport("google-protobuf/google/protobuf/empty_pb", "Empty")
   @js.native
-  class Empty () extends Message
+  open class Empty () extends Message
   /* static members */
   object Empty {
     
@@ -23,7 +22,7 @@ object emptyPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def deserializeBinary(bytes: Uint8Array): Empty = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Empty]
+    inline def deserializeBinary(bytes: js.typedarray.Uint8Array): Empty = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Empty]
     
     inline def deserializeBinaryFromReader(message: Empty, reader: BinaryReader): Empty = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Empty]
     

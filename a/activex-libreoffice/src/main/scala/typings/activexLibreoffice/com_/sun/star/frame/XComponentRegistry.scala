@@ -20,7 +20,7 @@ object XComponentRegistry {
   inline def apply(
     acquire: () => Unit,
     createObject: (String, Uik) => XInterface,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XComponentRegistry = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createObject = js.Any.fromFunction2(createObject), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

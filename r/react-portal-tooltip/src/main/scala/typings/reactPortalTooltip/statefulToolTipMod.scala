@@ -12,10 +12,10 @@ object statefulToolTipMod {
   
   @JSImport("react-portal-tooltip/lib/StatefulToolTip", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[StatefulToolTipProps, js.Object, js.Any]
+  open class default ()
+    extends Component[StatefulToolTipProps, js.Object, Any]
   
-  type StatefulToolTip = Component[StatefulToolTipProps, js.Object, js.Any]
+  type StatefulToolTip = Component[StatefulToolTipProps, js.Object, Any]
   
   trait StatefulToolTipProps
     extends StObject
@@ -25,7 +25,7 @@ object statefulToolTipMod {
   }
   object StatefulToolTipProps {
     
-    inline def apply(parent: String | Element | RefObject[js.Any]): StatefulToolTipProps = {
+    inline def apply(parent: String | Element | RefObject[Any]): StatefulToolTipProps = {
       val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
       __obj.asInstanceOf[StatefulToolTipProps]
     }

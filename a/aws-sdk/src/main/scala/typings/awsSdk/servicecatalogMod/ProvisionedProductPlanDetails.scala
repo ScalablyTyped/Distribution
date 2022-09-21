@@ -9,7 +9,7 @@ trait ProvisionedProductPlanDetails extends StObject {
   /**
     * The UTC time stamp of the creation time.
     */
-  var CreatedTime: js.UndefOr[typings.awsSdk.servicecatalogMod.CreatedTime] = js.undefined
+  var CreatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Passed to CloudFormation. The SNS topic ARNs to which to publish stack-related events.
@@ -79,7 +79,7 @@ trait ProvisionedProductPlanDetails extends StObject {
   /**
     * The time when the plan was last updated.
     */
-  var UpdatedTime: js.UndefOr[typings.awsSdk.servicecatalogMod.UpdatedTime] = js.undefined
+  var UpdatedTime: js.UndefOr[js.Date] = js.undefined
 }
 object ProvisionedProductPlanDetails {
   
@@ -90,7 +90,7 @@ object ProvisionedProductPlanDetails {
   
   extension [Self <: ProvisionedProductPlanDetails](x: Self) {
     
-    inline def setCreatedTime(value: CreatedTime): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
@@ -98,7 +98,7 @@ object ProvisionedProductPlanDetails {
     
     inline def setNotificationArnsUndefined: Self = StObject.set(x, "NotificationArns", js.undefined)
     
-    inline def setNotificationArnsVarargs(value: NotificationArn*): Self = StObject.set(x, "NotificationArns", js.Array(value :_*))
+    inline def setNotificationArnsVarargs(value: NotificationArn*): Self = StObject.set(x, "NotificationArns", js.Array(value*))
     
     inline def setPathId(value: Id): Self = StObject.set(x, "PathId", value.asInstanceOf[js.Any])
     
@@ -136,7 +136,7 @@ object ProvisionedProductPlanDetails {
     
     inline def setProvisioningParametersUndefined: Self = StObject.set(x, "ProvisioningParameters", js.undefined)
     
-    inline def setProvisioningParametersVarargs(value: UpdateProvisioningParameter*): Self = StObject.set(x, "ProvisioningParameters", js.Array(value :_*))
+    inline def setProvisioningParametersVarargs(value: UpdateProvisioningParameter*): Self = StObject.set(x, "ProvisioningParameters", js.Array(value*))
     
     inline def setStatus(value: ProvisionedProductPlanStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
@@ -150,9 +150,9 @@ object ProvisionedProductPlanDetails {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
-    inline def setUpdatedTime(value: UpdatedTime): Self = StObject.set(x, "UpdatedTime", value.asInstanceOf[js.Any])
+    inline def setUpdatedTime(value: js.Date): Self = StObject.set(x, "UpdatedTime", value.asInstanceOf[js.Any])
     
     inline def setUpdatedTimeUndefined: Self = StObject.set(x, "UpdatedTime", js.undefined)
   }

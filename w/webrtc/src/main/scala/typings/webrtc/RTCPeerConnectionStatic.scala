@@ -14,7 +14,7 @@ trait RTCPeerConnectionStatic
      with Instantiable1[/* configuration */ RTCConfiguration, RTCPeerConnection]
      with Instantiable2[
       (/* configuration */ RTCConfiguration) | (/* configuration */ Unit), 
-      /* options */ js.Any, 
+      /* options */ Any, 
       RTCPeerConnection
     ] {
   

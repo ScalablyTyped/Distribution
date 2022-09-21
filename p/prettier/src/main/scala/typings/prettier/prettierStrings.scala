@@ -1,7 +1,9 @@
 package typings.prettier
 
 import typings.prettier.mod.BuiltInParserName
+import typings.prettier.mod.CoreCategoryType
 import typings.prettier.mod.SupportOptionType
+import typings.prettier.mod.util.Quote
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,12 +11,58 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object prettierStrings {
   
   @js.native
-  sealed trait Apostrophe extends StObject
+  sealed trait Apostrophe
+    extends StObject
+       with Quote
   inline def Apostrophe: Apostrophe = "'".asInstanceOf[Apostrophe]
   
   @js.native
-  sealed trait Quotationmark extends StObject
+  sealed trait Config
+    extends StObject
+       with CoreCategoryType
+  inline def Config: Config = "Config".asInstanceOf[Config]
+  
+  @js.native
+  sealed trait Editor
+    extends StObject
+       with CoreCategoryType
+  inline def Editor: Editor = "Editor".asInstanceOf[Editor]
+  
+  @js.native
+  sealed trait Format
+    extends StObject
+       with CoreCategoryType
+  inline def Format: Format = "Format".asInstanceOf[Format]
+  
+  @js.native
+  sealed trait Global
+    extends StObject
+       with CoreCategoryType
+  inline def Global: Global = "Global".asInstanceOf[Global]
+  
+  @js.native
+  sealed trait Other
+    extends StObject
+       with CoreCategoryType
+  inline def Other: Other = "Other".asInstanceOf[Other]
+  
+  @js.native
+  sealed trait Output
+    extends StObject
+       with CoreCategoryType
+  inline def Output: Output = "Output".asInstanceOf[Output]
+  
+  @js.native
+  sealed trait Quotationmark
+    extends StObject
+       with Quote
   inline def Quotationmark: Quotationmark = "\"".asInstanceOf[Quotationmark]
+  
+  @js.native
+  sealed trait Special
+    extends StObject
+       with CoreCategoryType
+  inline def Special: Special = "Special".asInstanceOf[Special]
   
   @js.native
   sealed trait align extends StObject
@@ -111,6 +159,12 @@ object prettierStrings {
   inline def es5: es5 = "es5".asInstanceOf[es5]
   
   @js.native
+  sealed trait espree
+    extends StObject
+       with BuiltInParserName
+  inline def espree: espree = "espree".asInstanceOf[espree]
+  
+  @js.native
   sealed trait fill extends StObject
   inline def fill: fill = "fill".asInstanceOf[fill]
   
@@ -119,6 +173,12 @@ object prettierStrings {
     extends StObject
        with BuiltInParserName
   inline def flow: flow = "flow".asInstanceOf[flow]
+  
+  @js.native
+  sealed trait glimmer
+    extends StObject
+       with BuiltInParserName
+  inline def glimmer: glimmer = "glimmer".asInstanceOf[glimmer]
   
   @js.native
   sealed trait graphql
@@ -149,6 +209,10 @@ object prettierStrings {
   inline def indent: indent = "indent".asInstanceOf[indent]
   
   @js.native
+  sealed trait `indent-if-break` extends StObject
+  inline def `indent-if-break`: `indent-if-break` = "indent-if-break".asInstanceOf[`indent-if-break`]
+  
+  @js.native
   sealed trait int
     extends StObject
        with SupportOptionType
@@ -171,6 +235,10 @@ object prettierStrings {
     extends StObject
        with BuiltInParserName
   inline def json5: json5 = "json5".asInstanceOf[json5]
+  
+  @js.native
+  sealed trait label extends StObject
+  inline def label: label = "label".asInstanceOf[label]
   
   @js.native
   sealed trait less
@@ -211,6 +279,12 @@ object prettierStrings {
     extends StObject
        with BuiltInParserName
   inline def mdx: mdx = "mdx".asInstanceOf[mdx]
+  
+  @js.native
+  sealed trait meriyah
+    extends StObject
+       with BuiltInParserName
+  inline def meriyah: meriyah = "meriyah".asInstanceOf[meriyah]
   
   @js.native
   sealed trait never extends StObject

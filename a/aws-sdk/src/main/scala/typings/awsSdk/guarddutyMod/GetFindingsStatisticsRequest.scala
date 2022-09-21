@@ -38,6 +38,6 @@ object GetFindingsStatisticsRequest {
     
     inline def setFindingStatisticTypes(value: FindingStatisticTypes): Self = StObject.set(x, "FindingStatisticTypes", value.asInstanceOf[js.Any])
     
-    inline def setFindingStatisticTypesVarargs(value: FindingStatisticType*): Self = StObject.set(x, "FindingStatisticTypes", js.Array(value :_*))
+    inline def setFindingStatisticTypesVarargs(value: FindingStatisticType*): Self = StObject.set(x, "FindingStatisticTypes", js.Array(value*))
   }
 }

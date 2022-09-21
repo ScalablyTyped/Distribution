@@ -43,22 +43,22 @@ object Rx {
     def `then`[R](onFulfilled: js.Function1[/* value */ T, IPromise[R] | R]): IPromise[R] = js.native
     def `then`[R](
       onFulfilled: js.Function1[/* value */ T, IPromise[R] | R],
-      onRejected: js.Function1[/* reason */ js.Any, IPromise[R] | R]
+      onRejected: js.Function1[/* reason */ Any, IPromise[R] | R]
     ): IPromise[R] = js.native
-    def `then`[R](onFulfilled: Unit, onRejected: js.Function1[/* reason */ js.Any, R]): IPromise[R] = js.native
+    def `then`[R](onFulfilled: Unit, onRejected: js.Function1[/* reason */ Any, R]): IPromise[R] = js.native
   }
   
   trait IScheduler extends StObject {
     
-    def `catch`(handler: js.Function1[/* exception */ js.Any, Boolean]): IScheduler
+    def `catch`(handler: js.Function1[/* exception */ Any, Boolean]): IScheduler
     
-    def catchException(handler: js.Function1[/* exception */ js.Any, Boolean]): IScheduler
+    def catchException(handler: js.Function1[/* exception */ Any, Boolean]): IScheduler
   }
   object IScheduler {
     
     inline def apply(
-      `catch`: js.Function1[/* exception */ js.Any, Boolean] => IScheduler,
-      catchException: js.Function1[/* exception */ js.Any, Boolean] => IScheduler
+      `catch`: js.Function1[/* exception */ Any, Boolean] => IScheduler,
+      catchException: js.Function1[/* exception */ Any, Boolean] => IScheduler
     ): IScheduler = {
       val __obj = js.Dynamic.literal(catchException = js.Any.fromFunction1(catchException))
       __obj.updateDynamic("catch")(js.Any.fromFunction1(`catch`))
@@ -67,9 +67,9 @@ object Rx {
     
     extension [Self <: IScheduler](x: Self) {
       
-      inline def setCatch(value: js.Function1[/* exception */ js.Any, Boolean] => IScheduler): Self = StObject.set(x, "catch", js.Any.fromFunction1(value))
+      inline def setCatch(value: js.Function1[/* exception */ Any, Boolean] => IScheduler): Self = StObject.set(x, "catch", js.Any.fromFunction1(value))
       
-      inline def setCatchException(value: js.Function1[/* exception */ js.Any, Boolean] => IScheduler): Self = StObject.set(x, "catchException", js.Any.fromFunction1(value))
+      inline def setCatchException(value: js.Function1[/* exception */ Any, Boolean] => IScheduler): Self = StObject.set(x, "catchException", js.Any.fromFunction1(value))
     }
   }
   
@@ -168,18 +168,18 @@ object Rx {
   // Observer
   trait Observer[T] extends StObject {
     
-    def checked(): Observer[js.Any]
+    def checked(): Observer[Any]
   }
   object Observer {
     
-    inline def apply[T](checked: () => Observer[js.Any]): Observer[T] = {
+    inline def apply[T](checked: () => Observer[Any]): Observer[T] = {
       val __obj = js.Dynamic.literal(checked = js.Any.fromFunction0(checked))
       __obj.asInstanceOf[Observer[T]]
     }
     
     extension [Self <: Observer[?], T](x: Self & Observer[T]) {
       
-      inline def setChecked(value: () => Observer[js.Any]): Self = StObject.set(x, "checked", js.Any.fromFunction0(value))
+      inline def setChecked(value: () => Observer[Any]): Self = StObject.set(x, "checked", js.Any.fromFunction0(value))
     }
   }
   
@@ -194,14 +194,14 @@ object Rx {
   }
   object ObserverStatic {
     
-    inline def apply(notifyOn: IScheduler => Observer[js.Any]): ObserverStatic = {
+    inline def apply(notifyOn: IScheduler => Observer[Any]): ObserverStatic = {
       val __obj = js.Dynamic.literal(notifyOn = js.Any.fromFunction1(notifyOn))
       __obj.asInstanceOf[ObserverStatic]
     }
     
     extension [Self <: ObserverStatic](x: Self) {
       
-      inline def setNotifyOn(value: IScheduler => Observer[js.Any]): Self = StObject.set(x, "notifyOn", js.Any.fromFunction1(value))
+      inline def setNotifyOn(value: IScheduler => Observer[Any]): Self = StObject.set(x, "notifyOn", js.Any.fromFunction1(value))
     }
   }
 }

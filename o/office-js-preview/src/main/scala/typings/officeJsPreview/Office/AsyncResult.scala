@@ -18,7 +18,7 @@ trait AsyncResult[T] extends StObject {
     * This returns the user-defined item (which can be of any JavaScript type: String, Number, Boolean, Object, Array, Null, or Undefined) passed
     * to the optional `asyncContext` parameter of the invoked method. Returns Undefined, if you didn't pass anything to the asyncContext parameter.
     */
-  var asyncContext: js.Any
+  var asyncContext: Any
   
   /**
     * Gets an object that may provide additional information if an {@link Office.Error | error} occurred.
@@ -38,7 +38,7 @@ trait AsyncResult[T] extends StObject {
     *   <tr><td><strong>InternalServerError</strong></td><td>The Exchange server returned an error. Please look at the diagnostics object for more information.</td><td>The error message from the Exchange server in a JSON object e.g., `{"ErrorText": "The mailbox database is temporarily unavailable"}`</td></tr>
     * </table>
     */
-  var diagnostics: js.Any
+  var diagnostics: Any
   
   /**
     * Gets an {@link Office.Error} object that provides a description of the error, if any error occurred.
@@ -65,16 +65,16 @@ trait AsyncResult[T] extends StObject {
 }
 object AsyncResult {
   
-  inline def apply[T](asyncContext: js.Any, diagnostics: js.Any, error: Error, status: AsyncResultStatus, value: T): AsyncResult[T] = {
+  inline def apply[T](asyncContext: Any, diagnostics: Any, error: Error, status: AsyncResultStatus, value: T): AsyncResult[T] = {
     val __obj = js.Dynamic.literal(asyncContext = asyncContext.asInstanceOf[js.Any], diagnostics = diagnostics.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[AsyncResult[T]]
   }
   
   extension [Self <: AsyncResult[?], T](x: Self & AsyncResult[T]) {
     
-    inline def setAsyncContext(value: js.Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
+    inline def setAsyncContext(value: Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
     
-    inline def setDiagnostics(value: js.Any): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
+    inline def setDiagnostics(value: Any): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
     
     inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 
   */
-class ClassXmlDocument ()
+open class ClassXmlDocument ()
   extends StObject
      with typings.fibjs.ClassXmlDocument {
   def this(`type`: String) = this()

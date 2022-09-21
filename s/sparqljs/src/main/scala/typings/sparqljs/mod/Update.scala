@@ -32,6 +32,6 @@ object Update {
     
     inline def setUpdates(value: js.Array[UpdateOperation]): Self = StObject.set(x, "updates", value.asInstanceOf[js.Any])
     
-    inline def setUpdatesVarargs(value: UpdateOperation*): Self = StObject.set(x, "updates", js.Array(value :_*))
+    inline def setUpdatesVarargs(value: UpdateOperation*): Self = StObject.set(x, "updates", js.Array(value*))
   }
 }

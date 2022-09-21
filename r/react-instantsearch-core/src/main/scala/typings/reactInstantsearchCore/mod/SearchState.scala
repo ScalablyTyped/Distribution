@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SearchState
   extends StObject
-     with /* widgetId */ StringDictionary[js.Any] {
+     with /* widgetId */ StringDictionary[Any] {
   
   var configure: js.UndefOr[Dictkey] = js.undefined
   
@@ -30,6 +30,8 @@ trait SearchState
   var range: js.UndefOr[StringDictionary[Max]] = js.undefined
   
   var refinementList: js.UndefOr[StringDictionary[js.Array[String]]] = js.undefined
+  
+  var relevancyStrictness: js.UndefOr[Double] = js.undefined
   
   var sortBy: js.UndefOr[String] = js.undefined
   
@@ -83,6 +85,10 @@ object SearchState {
     inline def setRefinementList(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "refinementList", value.asInstanceOf[js.Any])
     
     inline def setRefinementListUndefined: Self = StObject.set(x, "refinementList", js.undefined)
+    
+    inline def setRelevancyStrictness(value: Double): Self = StObject.set(x, "relevancyStrictness", value.asInstanceOf[js.Any])
+    
+    inline def setRelevancyStrictnessUndefined: Self = StObject.set(x, "relevancyStrictness", js.undefined)
     
     inline def setSortBy(value: String): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
     

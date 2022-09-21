@@ -3,7 +3,6 @@ package typings.sharepoint.Microsoft.SharePoint.Client.Search
 import typings.sharepoint.SP.ClientObject
 import typings.sharepoint.SP.Guid
 import typings.sharepoint.SP.ListItem
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,15 +15,15 @@ object Analytics {
     extends StObject
        with ClientObject {
     
-    def getHitCountForDay(day: Date): Double = js.native
+    def getHitCountForDay(day: js.Date): Double = js.native
     
-    def getHitCountForMonth(day: Date): Double = js.native
+    def getHitCountForMonth(day: js.Date): Double = js.native
     
-    def getUniqueUsersCountForDay(day: Date): Double = js.native
+    def getUniqueUsersCountForDay(day: js.Date): Double = js.native
     
-    def getUniqueUsersCountForMonth(day: Date): Double = js.native
+    def getUniqueUsersCountForMonth(day: js.Date): Double = js.native
     
-    def get_lastProcessingTime(): Date = js.native
+    def get_lastProcessingTime(): js.Date = js.native
     
     def get_totalHits(): Double = js.native
     

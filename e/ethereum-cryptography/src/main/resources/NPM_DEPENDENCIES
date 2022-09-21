@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ethereum-cryptography" : "0.1.3"
+      "ethereum-cryptography" : "1.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "ethereum-cryptography" : "0.1.3"
+      "ethereum-cryptography" : "1.1.2"
     }
   ],
   "compile-devDependencies" : [

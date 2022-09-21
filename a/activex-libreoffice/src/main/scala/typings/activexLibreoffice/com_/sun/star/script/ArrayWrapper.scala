@@ -22,21 +22,21 @@ trait ArrayWrapper extends StObject {
     * are possible, where N is the number of dimensions. Note: its perfectly legal to use this structure with a single dimensioned array just to indicate
     * the array indexing.
     */
-  var Array: js.Any
+  var Array: Any
   
   /** Indicates whether the Array should be have 1 or 0 based indexing. */
   var IsZeroIndex: Boolean
 }
 object ArrayWrapper {
   
-  inline def apply(Array: js.Any, IsZeroIndex: Boolean): ArrayWrapper = {
+  inline def apply(Array: Any, IsZeroIndex: Boolean): ArrayWrapper = {
     val __obj = js.Dynamic.literal(Array = Array.asInstanceOf[js.Any], IsZeroIndex = IsZeroIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArrayWrapper]
   }
   
   extension [Self <: ArrayWrapper](x: Self) {
     
-    inline def setArray(value: js.Any): Self = StObject.set(x, "Array", value.asInstanceOf[js.Any])
+    inline def setArray(value: Any): Self = StObject.set(x, "Array", value.asInstanceOf[js.Any])
     
     inline def setIsZeroIndex(value: Boolean): Self = StObject.set(x, "IsZeroIndex", value.asInstanceOf[js.Any])
   }

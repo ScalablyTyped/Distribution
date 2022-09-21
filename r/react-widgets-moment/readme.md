@@ -10,10 +10,10 @@ A moment.js localizer for react-widgets
 | ------------------ | :-------------: |
 | Full name          | react-widgets-moment |
 | Keywords           | react-widgets |
-| # releases         | 15 |
-| # dependents       | 14 |
-| # downloads        | 931803 |
-| # stars            | 0 |
+| # releases         | 29 |
+| # dependents       | 0.0 |
+| # downloads        | 72126.66666666667 |
+| # stars            | 2273.0 |
 
 ## Links
 - [Homepage](https://github.com/jquense/react-widgets#readme)

@@ -30,7 +30,7 @@ trait ITagsManagerOptions extends StObject {
   
   var maxTags: js.UndefOr[Double] = js.undefined
   
-  var prefilled: js.UndefOr[js.Any] = js.undefined
+  var prefilled: js.UndefOr[Any] = js.undefined
   
   var preventSubmitOnEnter: js.UndefOr[Boolean] = js.undefined
   
@@ -50,7 +50,7 @@ trait ITagsManagerOptions extends StObject {
   
   var typeaheadOverrides: js.UndefOr[ITypeaheadOverrides] = js.undefined
   
-  var typeaheadSource: js.UndefOr[js.Any] = js.undefined
+  var typeaheadSource: js.UndefOr[Any] = js.undefined
   
   var validator: js.UndefOr[js.Function] = js.undefined
 }
@@ -71,7 +71,7 @@ object ITagsManagerOptions {
     
     inline def setBackspaceUndefined: Self = StObject.set(x, "backspace", js.undefined)
     
-    inline def setBackspaceVarargs(value: Double*): Self = StObject.set(x, "backspace", js.Array(value :_*))
+    inline def setBackspaceVarargs(value: Double*): Self = StObject.set(x, "backspace", js.Array(value*))
     
     inline def setBlinkBGColor_1(value: String): Self = StObject.set(x, "blinkBGColor_1", value.asInstanceOf[js.Any])
     
@@ -93,7 +93,7 @@ object ITagsManagerOptions {
     
     inline def setDelimetersUndefined: Self = StObject.set(x, "delimeters", js.undefined)
     
-    inline def setDelimetersVarargs(value: Double*): Self = StObject.set(x, "delimeters", js.Array(value :_*))
+    inline def setDelimetersVarargs(value: Double*): Self = StObject.set(x, "delimeters", js.Array(value*))
     
     inline def setHiddenTagListId(value: String): Self = StObject.set(x, "hiddenTagListId", value.asInstanceOf[js.Any])
     
@@ -111,7 +111,7 @@ object ITagsManagerOptions {
     
     inline def setMaxTagsUndefined: Self = StObject.set(x, "maxTags", js.undefined)
     
-    inline def setPrefilled(value: js.Any): Self = StObject.set(x, "prefilled", value.asInstanceOf[js.Any])
+    inline def setPrefilled(value: Any): Self = StObject.set(x, "prefilled", value.asInstanceOf[js.Any])
     
     inline def setPrefilledUndefined: Self = StObject.set(x, "prefilled", js.undefined)
     
@@ -149,7 +149,7 @@ object ITagsManagerOptions {
     
     inline def setTypeaheadOverridesUndefined: Self = StObject.set(x, "typeaheadOverrides", js.undefined)
     
-    inline def setTypeaheadSource(value: js.Any): Self = StObject.set(x, "typeaheadSource", value.asInstanceOf[js.Any])
+    inline def setTypeaheadSource(value: Any): Self = StObject.set(x, "typeaheadSource", value.asInstanceOf[js.Any])
     
     inline def setTypeaheadSourceUndefined: Self = StObject.set(x, "typeaheadSource", js.undefined)
     

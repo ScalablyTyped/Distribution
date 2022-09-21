@@ -8,7 +8,7 @@ object serialDataItemMod {
   
   @JSImport("amcharts/SerialDataItem", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with SerialDataItem {
     
@@ -23,7 +23,7 @@ object serialDataItemMod {
       * category value. String if parseDates is false, Date if true.
       */
     /* CompleteClass */
-    var category: js.Any = js.native
+    var category: Any = js.native
     
     /**
       * Timestamp of a series date. Avalable only if parseDates property of CategoryAxis is set to true.
@@ -49,7 +49,7 @@ object serialDataItemMod {
     /**
       * category value. String if parseDates is false, Date if true.
       */
-    var category: js.Any
+    var category: Any
     
     /**
       * Timestamp of a series date. Avalable only if parseDates property of CategoryAxis is set to true.
@@ -63,7 +63,7 @@ object serialDataItemMod {
   }
   object SerialDataItem {
     
-    inline def apply(axes: js.Object, category: js.Any, time: Double, x: Double): SerialDataItem = {
+    inline def apply(axes: js.Object, category: Any, time: Double, x: Double): SerialDataItem = {
       val __obj = js.Dynamic.literal(axes = axes.asInstanceOf[js.Any], category = category.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any])
       __obj.asInstanceOf[SerialDataItem]
     }
@@ -72,7 +72,7 @@ object serialDataItemMod {
       
       inline def setAxes(value: js.Object): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
       
-      inline def setCategory(value: js.Any): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+      inline def setCategory(value: Any): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       
       inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       

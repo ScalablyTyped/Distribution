@@ -29,7 +29,7 @@ object DescribeEventsForOrganizationResponse {
     
     inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    inline def setEventsVarargs(value: OrganizationEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: OrganizationEvent*): Self = StObject.set(x, "events", js.Array(value*))
     
     inline def setNextToken(value: nextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

@@ -9,7 +9,6 @@ import typings.officeUiFabricReact.calendarTypesMod.ICalendarStrings
 import typings.officeUiFabricReact.calloutTypesMod.ICalloutProps
 import typings.officeUiFabricReact.textFieldTypesMod.ITextFieldProps
 import typings.react.mod.HTMLAttributes
-import typings.std.Date
 import typings.std.HTMLElement
 import typings.uifabricMergeStyles.deepPartialMod.DeepPartial
 import typings.uifabricMergeStyles.istyleMod.IStyle
@@ -122,7 +121,7 @@ object datePickerTypesMod {
       * Optional method to format the chosen date to a string to display in the DatePicker
       * @defaultvalue date.toString()
       */
-    var formatDate: js.UndefOr[js.Function1[/* date */ js.UndefOr[Date], String]] = js.undefined
+    var formatDate: js.UndefOr[js.Function1[/* date */ js.UndefOr[js.Date], String]] = js.undefined
     
     /**
       * Whether the month picker should highlight the current month
@@ -139,7 +138,7 @@ object datePickerTypesMod {
     /**
       * The initially highlighted date in the calendar picker
       */
-    var initialPickerDate: js.UndefOr[Date] = js.undefined
+    var initialPickerDate: js.UndefOr[js.Date] = js.undefined
     
     /**
       * Whether the month picker is shown beside the day picker or hidden.
@@ -161,12 +160,12 @@ object datePickerTypesMod {
     /**
       * The maximum allowable date.
       */
-    var maxDate: js.UndefOr[Date] = js.undefined
+    var maxDate: js.UndefOr[js.Date] = js.undefined
     
     /**
       * The minimum allowable date.
       */
-    var minDate: js.UndefOr[Date] = js.undefined
+    var minDate: js.UndefOr[js.Date] = js.undefined
     
     /**
       * Callback that runs after DatePicker's menu (Calendar) is closed
@@ -176,13 +175,13 @@ object datePickerTypesMod {
     /**
       * Callback issued when a date is selected
       */
-    var onSelectDate: js.UndefOr[js.Function1[/* date */ js.UndefOr[Date | Null], Unit]] = js.undefined
+    var onSelectDate: js.UndefOr[js.Function1[/* date */ js.UndefOr[js.Date | Null], Unit]] = js.undefined
     
     /**
       * Optional method to parse the text input value to date, it is only useful when allowTextInput is set to true
       * @defaultvalue new Date(Date.parse(dateStr))
       */
-    var parseDateFromString: js.UndefOr[js.Function1[/* dateStr */ String, Date | Null]] = js.undefined
+    var parseDateFromString: js.UndefOr[js.Function1[/* dateStr */ String, js.Date | Null]] = js.undefined
     
     /**
       * Aria label for date picker popup for screen reader users.
@@ -236,7 +235,7 @@ object datePickerTypesMod {
     /**
       * Value of today. If null, current time in client machine will be used.
       */
-    var today: js.UndefOr[Date] = js.undefined
+    var today: js.UndefOr[js.Date] = js.undefined
     
     /**
       * Whether or not the Textfield of the DatePicker is underlined.
@@ -247,7 +246,7 @@ object datePickerTypesMod {
     /**
       * Default value of the DatePicker, if any
       */
-    var value: js.UndefOr[Date] = js.undefined
+    var value: js.UndefOr[js.Date] = js.undefined
   }
   object IDatePickerProps {
     
@@ -306,7 +305,7 @@ object datePickerTypesMod {
       
       inline def setFirstWeekOfYearUndefined: Self = StObject.set(x, "firstWeekOfYear", js.undefined)
       
-      inline def setFormatDate(value: /* date */ js.UndefOr[Date] => String): Self = StObject.set(x, "formatDate", js.Any.fromFunction1(value))
+      inline def setFormatDate(value: /* date */ js.UndefOr[js.Date] => String): Self = StObject.set(x, "formatDate", js.Any.fromFunction1(value))
       
       inline def setFormatDateUndefined: Self = StObject.set(x, "formatDate", js.undefined)
       
@@ -318,7 +317,7 @@ object datePickerTypesMod {
       
       inline def setHighlightSelectedMonthUndefined: Self = StObject.set(x, "highlightSelectedMonth", js.undefined)
       
-      inline def setInitialPickerDate(value: Date): Self = StObject.set(x, "initialPickerDate", value.asInstanceOf[js.Any])
+      inline def setInitialPickerDate(value: js.Date): Self = StObject.set(x, "initialPickerDate", value.asInstanceOf[js.Any])
       
       inline def setInitialPickerDateUndefined: Self = StObject.set(x, "initialPickerDate", js.undefined)
       
@@ -334,11 +333,11 @@ object datePickerTypesMod {
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      inline def setMaxDate(value: Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+      inline def setMaxDate(value: js.Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
       
       inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
       
-      inline def setMinDate(value: Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+      inline def setMinDate(value: js.Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
       
       inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
       
@@ -346,11 +345,11 @@ object datePickerTypesMod {
       
       inline def setOnAfterMenuDismissUndefined: Self = StObject.set(x, "onAfterMenuDismiss", js.undefined)
       
-      inline def setOnSelectDate(value: /* date */ js.UndefOr[Date | Null] => Unit): Self = StObject.set(x, "onSelectDate", js.Any.fromFunction1(value))
+      inline def setOnSelectDate(value: /* date */ js.UndefOr[js.Date | Null] => Unit): Self = StObject.set(x, "onSelectDate", js.Any.fromFunction1(value))
       
       inline def setOnSelectDateUndefined: Self = StObject.set(x, "onSelectDate", js.undefined)
       
-      inline def setParseDateFromString(value: /* dateStr */ String => Date | Null): Self = StObject.set(x, "parseDateFromString", js.Any.fromFunction1(value))
+      inline def setParseDateFromString(value: /* dateStr */ String => js.Date | Null): Self = StObject.set(x, "parseDateFromString", js.Any.fromFunction1(value))
       
       inline def setParseDateFromStringUndefined: Self = StObject.set(x, "parseDateFromString", js.undefined)
       
@@ -392,7 +391,7 @@ object datePickerTypesMod {
       
       inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      inline def setToday(value: Date): Self = StObject.set(x, "today", value.asInstanceOf[js.Any])
+      inline def setToday(value: js.Date): Self = StObject.set(x, "today", value.asInstanceOf[js.Any])
       
       inline def setTodayUndefined: Self = StObject.set(x, "today", js.undefined)
       
@@ -400,7 +399,7 @@ object datePickerTypesMod {
       
       inline def setUnderlinedUndefined: Self = StObject.set(x, "underlined", js.undefined)
       
-      inline def setValue(value: Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
@@ -471,6 +470,8 @@ object datePickerTypesMod {
       * Theme provided by High-Order Component.
       */
     var theme: ITheme
+    
+    var underlined: js.UndefOr[Boolean] = js.undefined
   }
   object IDatePickerStyleProps {
     
@@ -498,6 +499,10 @@ object datePickerTypesMod {
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
       inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      
+      inline def setUnderlined(value: Boolean): Self = StObject.set(x, "underlined", value.asInstanceOf[js.Any])
+      
+      inline def setUnderlinedUndefined: Self = StObject.set(x, "underlined", js.undefined)
     }
   }
   
@@ -506,6 +511,10 @@ object datePickerTypesMod {
     var callout: IStyle
     
     var icon: IStyle
+    
+    var readOnlyPlaceholder: js.UndefOr[IStyle] = js.undefined
+    
+    var readOnlyTextField: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style for the root element.
@@ -536,6 +545,18 @@ object datePickerTypesMod {
       inline def setIconNull: Self = StObject.set(x, "icon", null)
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      
+      inline def setReadOnlyPlaceholder(value: IStyle): Self = StObject.set(x, "readOnlyPlaceholder", value.asInstanceOf[js.Any])
+      
+      inline def setReadOnlyPlaceholderNull: Self = StObject.set(x, "readOnlyPlaceholder", null)
+      
+      inline def setReadOnlyPlaceholderUndefined: Self = StObject.set(x, "readOnlyPlaceholder", js.undefined)
+      
+      inline def setReadOnlyTextField(value: IStyle): Self = StObject.set(x, "readOnlyTextField", value.asInstanceOf[js.Any])
+      
+      inline def setReadOnlyTextFieldNull: Self = StObject.set(x, "readOnlyTextField", null)
+      
+      inline def setReadOnlyTextFieldUndefined: Self = StObject.set(x, "readOnlyTextField", js.undefined)
       
       inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       

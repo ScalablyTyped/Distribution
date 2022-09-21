@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object setTimeLimitMod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(seconds: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(seconds.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(seconds: Any): Any = ^.asInstanceOf[js.Dynamic].apply(seconds.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @JSImport("locutus/php/info/set_time_limit", JSImport.Namespace)
   @js.native

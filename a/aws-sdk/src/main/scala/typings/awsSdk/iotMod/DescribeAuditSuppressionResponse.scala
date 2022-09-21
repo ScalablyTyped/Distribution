@@ -16,7 +16,7 @@ trait DescribeAuditSuppressionResponse extends StObject {
   /**
     *  The epoch timestamp in seconds at which this suppression expires. 
     */
-  var expirationDate: js.UndefOr[Timestamp] = js.undefined
+  var expirationDate: js.UndefOr[js.Date] = js.undefined
   
   var resourceIdentifier: js.UndefOr[ResourceIdentifier] = js.undefined
   
@@ -42,7 +42,7 @@ object DescribeAuditSuppressionResponse {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setExpirationDate(value: Timestamp): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
+    inline def setExpirationDate(value: js.Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
     
     inline def setExpirationDateUndefined: Self = StObject.set(x, "expirationDate", js.undefined)
     

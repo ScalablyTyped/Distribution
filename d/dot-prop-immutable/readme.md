@@ -10,10 +10,10 @@ Immutable version of dot-prop with some extensions
 | ------------------ | :-------------: |
 | Full name          | dot-prop-immutable |
 | Keywords           | immutable, dot-prop, react, redux, obj, object, prop, property, dot, path, get, access, notation |
-| # releases         | 4 |
-| # dependents       | 78 |
-| # downloads        | 743997 |
-| # stars            | 2 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 117560.66666666667 |
+| # stars            | 562.0 |
 
 ## Links
 - [Homepage](https://github.com/debitoor/dot-prop-immutable)

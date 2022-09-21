@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("matrix-appservice-bridge", "RoomBridgeStore")
 @js.native
-class RoomBridgeStore protected ()
+open class RoomBridgeStore protected ()
   extends typings.matrixAppserviceBridge.roomBridgeStoreMod.RoomBridgeStore {
   /**
     * Construct a store suitable for room bridging information. Data is stored
@@ -33,7 +33,7 @@ class RoomBridgeStore protected ()
     * @param db The connected NEDB database instance
     * @param opts Options for this store.
     */
-  def this(db: typings.nedb.mod.^[js.Any]) = this()
+  def this(db: typings.nedb.mod.^[Any]) = this()
 }
 /* static members */
 object RoomBridgeStore {

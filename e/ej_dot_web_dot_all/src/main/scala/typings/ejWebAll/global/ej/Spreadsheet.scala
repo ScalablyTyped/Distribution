@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.Spreadsheet")
 @js.native
-class Spreadsheet protected ()
+open class Spreadsheet protected ()
   extends StObject
      with typings.ejWebAll.ej.Spreadsheet {
   def this(element: JQuery) = this()
@@ -207,8 +207,8 @@ object Spreadsheet {
   /* static member */
   @JSGlobal("ej.Spreadsheet.Locale")
   @js.native
-  def Locale: js.Any = js.native
-  inline def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  def Locale: Any = js.native
+  inline def Locale_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
   
   @JSGlobal("ej.Spreadsheet.SelectionType")
   @js.native

@@ -7,13 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("SVGAnimatedInteger")
 @js.native
-class SVGAnimatedInteger ()
+/* standard dom */
+open class SVGAnimatedInteger ()
   extends StObject
      with typings.std.SVGAnimatedInteger {
   
+  /* standard dom */
   /* CompleteClass */
   override val animVal: Double = js.native
   
+  /* standard dom */
   /* CompleteClass */
   var baseVal: Double = js.native
 }

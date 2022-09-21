@@ -11,14 +11,11 @@ Read and parse a JSON file synchronously
 | Full name          | read-json-sync |
 | Keywords           | data, json, file, read, load, bom, parse, synchronous, synchronously, sync |
 | # releases         | 0 |
-| # dependents       | 45 |
-| # downloads        | 443146 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 51800.0 |
+| # stars            | 9.0 |
 
 ## Links
-- [Homepage](https://github.com/shinnn/read-json-sync#readme)
-- [Bugs](https://github.com/shinnn/read-json-sync/issues)
-- [Repository](https://github.com/shinnn/read-json-sync)
 - [Npm](https://www.npmjs.com/package/read-json-sync)
     
 

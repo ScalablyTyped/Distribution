@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-email-editor", JSImport.Default)
 @js.native
-class default () extends Component
+open class default () extends Component

@@ -1,7 +1,9 @@
 package typings.backbone.mod
 
+import typings.backbone.backboneBooleans.`false`
 import typings.jquery.JQueryXHR
 import typings.std.Partial
+import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,30 +14,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("backbone", "Model")
 @js.native
-class Model[T, S, E] () extends StObject {
+open class Model[T /* <: ObjectHash */, S, E] () extends StObject {
   def this(attributes: T) = this()
-  def this(
-    attributes: T,
-    options: CombinedModelConstructorOptions[E, Model[js.Any, ModelSetOptions, js.Object]]
-  ) = this()
-  def this(
-    attributes: Unit,
-    options: CombinedModelConstructorOptions[E, Model[js.Any, ModelSetOptions, js.Object]]
-  ) = this()
+  def this(attributes: T, options: CombinedModelConstructorOptions[E, Model[Any, ModelSetOptions, Any]]) = this()
+  def this(attributes: Unit, options: CombinedModelConstructorOptions[E, Model[Any, ModelSetOptions, Any]]) = this()
   
   /* private */ var _changing: Boolean = js.native
   
   /* private */ var _pending: Boolean = js.native
   
-  /* private */ var _previousAttributes: js.Any = js.native
+  /* private */ var _previousAttributes: Partial[T] = js.native
   
-  /* private */ def _validate(attributes: js.Any, options: js.Any): Boolean = js.native
+  /* private */ def _validate(attributes: Partial[T], options: Any): Boolean = js.native
   
-  var attributes: js.Any = js.native
+  var attributes: Partial[T] = js.native
   
-  def chain(): js.Any = js.native
+  def chain(): Any = js.native
   
-  var changed: js.Array[js.Any] = js.native
+  var changed: Partial[T] = js.native
   
   /**
     * Return an object containing all the attributes that have changed, or
@@ -43,16 +39,17 @@ class Model[T, S, E] () extends StObject {
     * parts of a view need to be updated and/or what attributes need to be
     * persisted to the server. Unset attributes will be set to undefined.
     * You can also pass an attributes object to diff against the model,
-    * determining if there *would be* a change. */
-  def changedAttributes(): js.Any = js.native
-  def changedAttributes(attributes: js.Any): js.Any = js.native
+    * determining if there *would be* a change.
+    */
+  def changedAttributes(): Partial[T] | `false` = js.native
+  def changedAttributes(attributes: Partial[T]): Partial[T] | `false` = js.native
   
   var cid: String = js.native
   
   var cidPrefix: String = js.native
   
-  def clear(): js.Any = js.native
-  def clear(options: Silenceable): js.Any = js.native
+  def clear(): this.type = js.native
+  def clear(options: Silenceable): this.type = js.native
   
   var collection: Collection[this.type] = js.native
   
@@ -60,13 +57,13 @@ class Model[T, S, E] () extends StObject {
     * Default attributes for the model. It can be an object hash or a method returning an object hash.
     * For assigning an object hash, do it like this: this.defaults = <any>{ attribute: value, ... };
     * That works only if you set it in the constructor or the initialize method.
-    **/
-  def defaults(): ObjectHash = js.native
+    */
+  def defaults(): Partial[T] = js.native
   
-  def destroy(): js.Any = js.native
-  def destroy(options: ModelDestroyOptions): js.Any = js.native
+  def destroy(): JQueryXHR | `false` = js.native
+  def destroy(options: ModelDestroyOptions): JQueryXHR | `false` = js.native
   
-  def escape(attribute: String): String = js.native
+  def escape(attribute: StringKey[T]): String = js.native
   
   def fetch(): JQueryXHR = js.native
   def fetch(options: ModelFetchOptions): JQueryXHR = js.native
@@ -77,15 +74,17 @@ class Model[T, S, E] () extends StObject {
     * get name(): string {
     *    return super.get("name");
     * }
-    **/
-  def get[a /* <: /* keyof T */ String */](attributeName: a): /* import warning: importer.ImportType#apply Failed type conversion: T[a] */ js.Any = js.native
+    */
+  def get[A /* <: StringKey[T] */](attributeName: A): js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[A] */ js.Any
+  ] = js.native
   
-  def has(attribute: String): Boolean = js.native
+  def has(attribute: StringKey[T]): Boolean = js.native
   
   def hasChanged(): Boolean = js.native
-  def hasChanged(attribute: String): Boolean = js.native
+  def hasChanged(attribute: StringKey[T]): Boolean = js.native
   
-  var id: js.Any = js.native
+  var id: String | Double = js.native
   
   var idAttribute: String = js.native
   
@@ -94,29 +93,29 @@ class Model[T, S, E] () extends StObject {
   def initialize(attributes: T, options: CombinedModelConstructorOptions[E, this.type]): Unit = js.native
   def initialize(attributes: Unit, options: CombinedModelConstructorOptions[E, this.type]): Unit = js.native
   
-  def invert(): js.Any = js.native
+  def invert(): Any = js.native
   
   def isEmpty(): Boolean = js.native
   
   def isNew(): Boolean = js.native
   
   def isValid(): Boolean = js.native
-  def isValid(options: js.Any): Boolean = js.native
+  def isValid(options: Any): Boolean = js.native
   
   // mixins from underscore
   def keys(): js.Array[String] = js.native
   
-  def matches(attrs: js.Any): Boolean = js.native
+  def matches(attrs: Any): Boolean = js.native
   
-  def omit(fn: js.Function3[/* value */ js.Any, /* key */ js.Any, /* object */ js.Any, js.Any]): js.Any = js.native
-  def omit(keys: String*): js.Any = js.native
-  def omit(keys: js.Array[String]): js.Any = js.native
+  def omit(fn: js.Function3[/* value */ Any, /* key */ Any, /* object */ Any, Any]): Partial[T] = js.native
+  def omit[A /* <: StringKey[T] */](keys: A*): Partial[Omit[T, A]] = js.native
+  def omit[A /* <: StringKey[T] */](keys: js.Array[A]): Partial[Omit[T, A]] = js.native
   
-  def pairs(): js.Array[js.Any] = js.native
+  def pairs(): js.Array[Any] = js.native
   
-  def pick(fn: js.Function3[/* value */ js.Any, /* key */ js.Any, /* object */ js.Any, js.Any]): js.Any = js.native
-  def pick(keys: String*): js.Any = js.native
-  def pick(keys: js.Array[String]): js.Any = js.native
+  def pick(fn: js.Function3[/* value */ Any, /* key */ Any, /* object */ Any, Any]): Partial[T] = js.native
+  def pick[A /* <: StringKey[T] */](keys: A*): Partial[Pick[T, A]] = js.native
+  def pick[A /* <: StringKey[T] */](keys: js.Array[A]): Partial[Pick[T, A]] = js.native
   
   /**
     * For use with models as ES classes. If you define a preinitialize
@@ -129,69 +128,72 @@ class Model[T, S, E] () extends StObject {
   def preinitialize(attributes: T, options: CombinedModelConstructorOptions[E, this.type]): Unit = js.native
   def preinitialize(attributes: Unit, options: CombinedModelConstructorOptions[E, this.type]): Unit = js.native
   
-  def previous(attribute: String): js.Any = js.native
+  def previous[A /* <: StringKey[T] */](attribute: A): js.UndefOr[
+    (/* import warning: importer.ImportType#apply Failed type conversion: T[A] */ js.Any) | Null
+  ] = js.native
   
-  def previousAttributes(): js.Any = js.native
+  def previousAttributes(): Partial[T] = js.native
   
-  def save(): js.Any = js.native
-  def save(attributes: js.Any): js.Any = js.native
-  def save(attributes: js.Any, options: ModelSaveOptions): js.Any = js.native
-  def save(attributes: Unit, options: ModelSaveOptions): js.Any = js.native
+  def save(): JQueryXHR = js.native
+  def save(attributes: Null, options: ModelSaveOptions): JQueryXHR = js.native
+  def save(attributes: Unit, options: ModelSaveOptions): JQueryXHR = js.native
+  def save(attributes: Partial[T]): JQueryXHR = js.native
+  def save(attributes: Partial[T], options: ModelSaveOptions): JQueryXHR = js.native
   
-  def set(attributeName: Partial[T]): Model[js.Any, ModelSetOptions, js.Object] = js.native
-  def set(attributeName: Partial[T], options: S): Model[js.Any, ModelSetOptions, js.Object] = js.native
+  def set(attributeName: Partial[T]): this.type = js.native
+  def set(attributeName: Partial[T], options: S): this.type = js.native
   /**
     * For strongly-typed assignment of attributes, use the `set` method only privately in public setter properties.
     * @example
     * set name(value: string) {
     *    super.set("name", value);
     * }
-    **/
-  def set[a /* <: /* keyof T */ String */](attributeName: a): Model[js.Any, ModelSetOptions, js.Object] = js.native
-  def set[a /* <: /* keyof T */ String */](attributeName: a, value: S): Model[js.Any, ModelSetOptions, js.Object] = js.native
-  def set[a /* <: /* keyof T */ String */](attributeName: a, value: S, options: S): Model[js.Any, ModelSetOptions, js.Object] = js.native
-  def set[a /* <: /* keyof T */ String */](
-    attributeName: a,
-    value: /* import warning: importer.ImportType#apply Failed type conversion: T[a] */ js.Any
-  ): Model[js.Any, ModelSetOptions, js.Object] = js.native
-  def set[a /* <: /* keyof T */ String */](
-    attributeName: a,
-    value: /* import warning: importer.ImportType#apply Failed type conversion: T[a] */ js.Any,
+    */
+  def set[A /* <: StringKey[T] */](attributeName: A): this.type = js.native
+  def set[A /* <: StringKey[T] */](attributeName: A, value: S): this.type = js.native
+  def set[A /* <: StringKey[T] */](attributeName: A, value: S, options: S): this.type = js.native
+  def set[A /* <: StringKey[T] */](
+    attributeName: A,
+    value: /* import warning: importer.ImportType#apply Failed type conversion: T[A] */ js.Any
+  ): this.type = js.native
+  def set[A /* <: StringKey[T] */](
+    attributeName: A,
+    value: /* import warning: importer.ImportType#apply Failed type conversion: T[A] */ js.Any,
     options: S
-  ): Model[js.Any, ModelSetOptions, js.Object] = js.native
-  def set[a /* <: /* keyof T */ String */](attributeName: a, value: Unit, options: S): Model[js.Any, ModelSetOptions, js.Object] = js.native
-  def set[a /* <: /* keyof T */ String */](attributeName: Partial[T], value: S, options: S): Model[js.Any, ModelSetOptions, js.Object] = js.native
-  def set[a /* <: /* keyof T */ String */](
+  ): this.type = js.native
+  def set[A /* <: StringKey[T] */](attributeName: A, value: Unit, options: S): this.type = js.native
+  def set[A /* <: StringKey[T] */](attributeName: Partial[T], value: S, options: S): this.type = js.native
+  def set[A /* <: StringKey[T] */](
     attributeName: Partial[T],
-    value: /* import warning: importer.ImportType#apply Failed type conversion: T[a] */ js.Any
-  ): Model[js.Any, ModelSetOptions, js.Object] = js.native
-  def set[a /* <: /* keyof T */ String */](
+    value: /* import warning: importer.ImportType#apply Failed type conversion: T[A] */ js.Any
+  ): this.type = js.native
+  def set[A /* <: StringKey[T] */](
     attributeName: Partial[T],
-    value: /* import warning: importer.ImportType#apply Failed type conversion: T[a] */ js.Any,
+    value: /* import warning: importer.ImportType#apply Failed type conversion: T[A] */ js.Any,
     options: S
-  ): Model[js.Any, ModelSetOptions, js.Object] = js.native
-  def set[a /* <: /* keyof T */ String */](attributeName: Partial[T], value: Unit, options: S): Model[js.Any, ModelSetOptions, js.Object] = js.native
+  ): this.type = js.native
+  def set[A /* <: StringKey[T] */](attributeName: Partial[T], value: Unit, options: S): this.type = js.native
   @JSName("set")
-  def set_a_String[a /* <: /* keyof T */ String */](attributeName: Partial[T]): Model[js.Any, ModelSetOptions, js.Object] = js.native
+  def set_A_StringKeyT[A /* <: StringKey[T] */](attributeName: Partial[T]): this.type = js.native
   @JSName("set")
-  def set_a_String[a /* <: /* keyof T */ String */](attributeName: Partial[T], value: S): Model[js.Any, ModelSetOptions, js.Object] = js.native
+  def set_A_StringKeyT[A /* <: StringKey[T] */](attributeName: Partial[T], value: S): this.type = js.native
   
-  def unset(attribute: String): Model[js.Any, ModelSetOptions, js.Object] = js.native
-  def unset(attribute: String, options: Silenceable): Model[js.Any, ModelSetOptions, js.Object] = js.native
+  def unset(attribute: StringKey[T]): this.type = js.native
+  def unset(attribute: StringKey[T], options: Silenceable): this.type = js.native
   
   /**
     * Returns the relative URL where the model's resource would be located on the server.
     */
   def url(): String = js.native
   
-  var urlRoot: js.Any = js.native
+  var urlRoot: Result[String] = js.native
   
-  def validate(attributes: js.Any): js.Any = js.native
-  def validate(attributes: js.Any, options: js.Any): js.Any = js.native
+  def validate(attributes: Partial[T]): Any = js.native
+  def validate(attributes: Partial[T], options: Any): Any = js.native
   
-  var validationError: js.Any = js.native
+  var validationError: Any = js.native
   
-  def values(): js.Array[js.Any] = js.native
+  def values(): js.Array[Any] = js.native
 }
 object Model {
   
@@ -201,8 +203,8 @@ object Model {
   
   /**
     * Do not use, prefer TypeScript's extend functionality.
-    **/
+    */
   /* static member */
-  inline def extend(properties: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(properties.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def extend(properties: js.Any, classProperties: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(properties.asInstanceOf[js.Any], classProperties.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def extend(properties: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(properties.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def extend(properties: Any, classProperties: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(properties.asInstanceOf[js.Any], classProperties.asInstanceOf[js.Any])).asInstanceOf[Any]
 }

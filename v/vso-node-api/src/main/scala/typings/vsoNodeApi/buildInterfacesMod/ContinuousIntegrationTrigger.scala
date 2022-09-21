@@ -53,13 +53,13 @@ object ContinuousIntegrationTrigger {
     
     inline def setBranchFilters(value: js.Array[String]): Self = StObject.set(x, "branchFilters", value.asInstanceOf[js.Any])
     
-    inline def setBranchFiltersVarargs(value: String*): Self = StObject.set(x, "branchFilters", js.Array(value :_*))
+    inline def setBranchFiltersVarargs(value: String*): Self = StObject.set(x, "branchFilters", js.Array(value*))
     
     inline def setMaxConcurrentBuildsPerBranch(value: Double): Self = StObject.set(x, "maxConcurrentBuildsPerBranch", value.asInstanceOf[js.Any])
     
     inline def setPathFilters(value: js.Array[String]): Self = StObject.set(x, "pathFilters", value.asInstanceOf[js.Any])
     
-    inline def setPathFiltersVarargs(value: String*): Self = StObject.set(x, "pathFilters", js.Array(value :_*))
+    inline def setPathFiltersVarargs(value: String*): Self = StObject.set(x, "pathFilters", js.Array(value*))
     
     inline def setPollingInterval(value: Double): Self = StObject.set(x, "pollingInterval", value.asInstanceOf[js.Any])
     

@@ -14,7 +14,7 @@ trait SchemaOrderLineItemProductFee extends StObject {
   /**
     * Name of the fee.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaOrderLineItemProductFee {
   
@@ -30,6 +30,8 @@ object SchemaOrderLineItemProductFee {
     inline def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }

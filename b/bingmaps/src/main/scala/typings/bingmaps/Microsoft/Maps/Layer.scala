@@ -49,7 +49,7 @@ trait Layer
   def getZIndex(): Double = js.native
   
   /** Optional property to store any additional metadata for this layer. */
-  var metadata: js.Any = js.native
+  var metadata: Any = js.native
   
   /**
     * Removes a primitive

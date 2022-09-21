@@ -8,10 +8,10 @@ object toggleMod {
   
   @JSImport("material-ui/Toggle", JSImport.Default)
   @js.native
-  class default () extends Toggle
+  open class default () extends Toggle
   
   @JSImport("material-ui/Toggle", "Toggle")
   @js.native
-  class Toggle ()
+  open class Toggle ()
     extends typings.materialUi.MaterialUI.Switches.Toggle
 }

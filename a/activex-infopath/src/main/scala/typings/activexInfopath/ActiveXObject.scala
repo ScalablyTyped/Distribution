@@ -79,51 +79,29 @@ trait ActiveXObject extends StObject {
   
   def on(
     obj: ApplicationEvents,
-    event: NewXDocument,
+    event: NewXDocument | XDocumentOpen,
     argNames: js.Array[pDocument],
     handler: js.ThisFunction1[/* this */ ApplicationEvents, /* parameter */ PDocument, Unit]
   ): Unit = js.native
   def on(
     obj: ApplicationEvents,
-    event: WindowActivate,
-    argNames: js.Tuple2[pDocument, pWindow],
-    handler: js.ThisFunction1[/* this */ ApplicationEvents, /* parameter */ PWindow, Unit]
+    event: WindowActivate | WindowDeactivate | WindowSize | XDocumentBeforeClose | XDocumentBeforePrint | XDocumentBeforeSave,
+    argNames: js.Tuple2[pDocument, pWindow | pfCancel],
+    handler: js.ThisFunction1[
+      /* this */ ApplicationEvents, 
+      (/* parameter */ PWindow) | (/* parameter */ PfCancel), 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: ApplicationEvents,
-    event: WindowDeactivate,
-    argNames: js.Tuple2[pDocument, pWindow],
-    handler: js.ThisFunction1[/* this */ ApplicationEvents, /* parameter */ PWindow, Unit]
+    event: Quit | XDocumentChange,
+    handler: js.ThisFunction1[/* this */ ApplicationEvents, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
-    obj: ApplicationEvents,
-    event: WindowSize,
-    argNames: js.Tuple2[pDocument, pWindow],
-    handler: js.ThisFunction1[/* this */ ApplicationEvents, /* parameter */ PWindow, Unit]
-  ): Unit = js.native
-  def on(
-    obj: ApplicationEvents,
-    event: XDocumentBeforeClose,
-    argNames: js.Tuple2[pDocument, pfCancel],
-    handler: js.ThisFunction1[/* this */ ApplicationEvents, /* parameter */ PfCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: ApplicationEvents,
-    event: XDocumentBeforePrint,
-    argNames: js.Tuple2[pDocument, pfCancel],
-    handler: js.ThisFunction1[/* this */ ApplicationEvents, /* parameter */ PfCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: ApplicationEvents,
-    event: XDocumentBeforeSave,
-    argNames: js.Tuple2[pDocument, pfCancel],
-    handler: js.ThisFunction1[/* this */ ApplicationEvents, /* parameter */ PfCancel, Unit]
-  ): Unit = js.native
-  def on(
-    obj: ApplicationEvents,
-    event: XDocumentOpen,
-    argNames: js.Array[pDocument],
-    handler: js.ThisFunction1[/* this */ ApplicationEvents, /* parameter */ PDocument, Unit]
+    obj: Button,
+    event: AddRef | Release,
+    handler: js.ThisFunction1[/* this */ Button, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: Button,
@@ -157,6 +135,17 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: DataDOM,
+    event: OnAfterChange | OnBeforeChange | OnValidate,
+    argNames: js.Array[pDataDOMEvent],
+    handler: js.ThisFunction1[/* this */ DataDOM, /* parameter */ PDataDOMEvent, Unit]
+  ): Unit = js.native
+  def on(
+    obj: DataDOM,
+    event: AddRef | Release,
+    handler: js.ThisFunction1[/* this */ DataDOM, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  def on(
+    obj: DataDOM,
     event: GetIDsOfNames,
     argNames: js.Tuple5[riid, rgszNames, cNames, lcid, rgdispid],
     handler: js.ThisFunction1[/* this */ DataDOM, /* parameter */ CNames, Unit]
@@ -175,27 +164,24 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: DataDOM,
-    event: OnAfterChange,
-    argNames: js.Array[pDataDOMEvent],
-    handler: js.ThisFunction1[/* this */ DataDOM, /* parameter */ PDataDOMEvent, Unit]
-  ): Unit = js.native
-  def on(
-    obj: DataDOM,
-    event: OnBeforeChange,
-    argNames: js.Array[pDataDOMEvent],
-    handler: js.ThisFunction1[/* this */ DataDOM, /* parameter */ PDataDOMEvent, Unit]
-  ): Unit = js.native
-  def on(
-    obj: DataDOM,
-    event: OnValidate,
-    argNames: js.Array[pDataDOMEvent],
-    handler: js.ThisFunction1[/* this */ DataDOM, /* parameter */ PDataDOMEvent, Unit]
-  ): Unit = js.native
-  def on(
-    obj: DataDOM,
     event: QueryInterface,
     argNames: js.Tuple2[riid, ppvObj],
     handler: js.ThisFunction1[/* this */ DataDOM, /* parameter */ PpvObj, Unit]
+  ): Unit = js.native
+  def on(
+    obj: XDocument,
+    event: OnAfterImport | OnLoad | OnSubmitRequest | OnSwitchView,
+    argNames: js.Array[pEvent],
+    handler: js.ThisFunction1[
+      /* this */ XDocument, 
+      (/* parameter */ PEventDocEventObject) | (/* parameter */ PEventDocReturnEventObject), 
+      Unit
+    ]
+  ): Unit = js.native
+  def on(
+    obj: XDocument,
+    event: AddRef | Release,
+    handler: js.ThisFunction1[/* this */ XDocument, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: XDocument,
@@ -217,21 +203,9 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: XDocument,
-    event: OnAfterImport,
-    argNames: js.Array[pEvent],
-    handler: js.ThisFunction1[/* this */ XDocument, /* parameter */ PEventDocEventObject, Unit]
-  ): Unit = js.native
-  def on(
-    obj: XDocument,
     event: OnContextChange,
     argNames: js.Array[pEvent],
     handler: js.ThisFunction1[/* this */ XDocument, /* parameter */ PEventDocContextChangeEventObject, Unit]
-  ): Unit = js.native
-  def on(
-    obj: XDocument,
-    event: OnLoad,
-    argNames: js.Array[pEvent],
-    handler: js.ThisFunction1[/* this */ XDocument, /* parameter */ PEventDocReturnEventObject, Unit]
   ): Unit = js.native
   def on(
     obj: XDocument,
@@ -253,18 +227,6 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: XDocument,
-    event: OnSubmitRequest,
-    argNames: js.Array[pEvent],
-    handler: js.ThisFunction1[/* this */ XDocument, /* parameter */ PEventDocReturnEventObject, Unit]
-  ): Unit = js.native
-  def on(
-    obj: XDocument,
-    event: OnSwitchView,
-    argNames: js.Array[pEvent],
-    handler: js.ThisFunction1[/* this */ XDocument, /* parameter */ PEventDocEventObject, Unit]
-  ): Unit = js.native
-  def on(
-    obj: XDocument,
     event: OnVersionUpgrade,
     argNames: js.Array[pEvent],
     handler: js.ThisFunction1[/* this */ XDocument, /* parameter */ PEventVersionUpgradeEventObject, Unit]
@@ -274,24 +236,6 @@ trait ActiveXObject extends StObject {
     event: QueryInterface,
     argNames: js.Tuple2[riid, ppvObj],
     handler: js.ThisFunction1[/* this */ XDocument, /* parameter */ PpvObj, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_AddRef(
-    obj: Button,
-    event: AddRef,
-    handler: js.ThisFunction1[/* this */ Button, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_AddRef(
-    obj: DataDOM,
-    event: AddRef,
-    handler: js.ThisFunction1[/* this */ DataDOM, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_AddRef(
-    obj: XDocument,
-    event: AddRef,
-    handler: js.ThisFunction1[/* this */ XDocument, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   @JSName("on")
   def on_Invoke(
@@ -313,35 +257,5 @@ trait ActiveXObject extends StObject {
     event: Invoke,
     argNames: XDocumentInvokeArgNames,
     handler: js.ThisFunction1[/* this */ XDocument, /* parameter */ XDocumentInvokeParameter, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Quit(
-    obj: ApplicationEvents,
-    event: Quit,
-    handler: js.ThisFunction1[/* this */ ApplicationEvents, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Release(
-    obj: Button,
-    event: Release,
-    handler: js.ThisFunction1[/* this */ Button, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Release(
-    obj: DataDOM,
-    event: Release,
-    handler: js.ThisFunction1[/* this */ DataDOM, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_Release(
-    obj: XDocument,
-    event: Release,
-    handler: js.ThisFunction1[/* this */ XDocument, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_XDocumentChange(
-    obj: ApplicationEvents,
-    event: XDocumentChange,
-    handler: js.ThisFunction1[/* this */ ApplicationEvents, /* parameter */ js.Object, Unit]
   ): Unit = js.native
 }

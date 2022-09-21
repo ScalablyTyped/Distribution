@@ -40,7 +40,7 @@ trait CardView extends StObject {
   /* private */ @JSName("Outlook.CardView_typekey")
   var OutlookDotCardView_typekey: CardView
   
-  val Parent: js.Any
+  val Parent: Any
   
   def Reset(): Unit
   
@@ -83,7 +83,7 @@ object CardView {
     MultiLineFieldHeight: Double,
     Name: String,
     OutlookDotCardView_typekey: CardView,
-    Parent: js.Any,
+    Parent: Any,
     Reset: () => Unit,
     Save: () => Unit,
     SaveOption: OlViewSaveOption,
@@ -135,7 +135,7 @@ object CardView {
     
     inline def setOutlookDotCardView_typekey(value: CardView): Self = StObject.set(x, "Outlook.CardView_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setReset(value: () => Unit): Self = StObject.set(x, "Reset", js.Any.fromFunction0(value))
     

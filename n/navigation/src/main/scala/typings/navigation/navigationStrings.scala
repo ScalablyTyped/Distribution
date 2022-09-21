@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object navigationStrings {
   
   @js.native
+  sealed trait StateNavigator extends StObject
+  inline def StateNavigator: StateNavigator = "StateNavigator".asInstanceOf[StateNavigator]
+  
+  @js.native
   sealed trait add extends StObject
   inline def add: add = "add".asInstanceOf[add]
   

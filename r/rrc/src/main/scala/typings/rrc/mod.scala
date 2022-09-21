@@ -1,16 +1,14 @@
 package typings.rrc
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.history.mod.Location
-import typings.history.mod.LocationState
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.ComponentType
-import typings.reactRouter.mod.RouteComponentProps
-import typings.reactRouter.mod.RouteProps
-import typings.reactRouter.mod.StaticContext
-import typings.reactRouter.mod.`match`
-import typings.rrc.anon.LocationDescriptorObjectL
+import typings.react.mod.ReactNode
+import typings.reactRouter.componentsMod.RouteProps
+import typings.rrc.anon.Pathname
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,77 +21,93 @@ object mod {
   
   @JSImport("rrc", "ConfigSwitch")
   @js.native
-  class ConfigSwitch protected ()
-    extends Component[SwitchProps, js.Object, js.Any] {
+  open class ConfigSwitch protected ()
+    extends Component[SwitchProps, js.Object, Any] {
     def this(props: SwitchProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: SwitchProps, context: js.Any) = this()
+    def this(props: SwitchProps, context: Any) = this()
   }
   
   @JSImport("rrc", "OnUpdate")
   @js.native
-  class OnUpdate protected ()
-    extends Component[OnUpdateProps, js.Object, js.Any] {
+  open class OnUpdate protected ()
+    extends Component[OnUpdateProps, js.Object, Any] {
     def this(props: OnUpdateProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: OnUpdateProps, context: js.Any) = this()
+    def this(props: OnUpdateProps, context: Any) = this()
   }
   
   @JSImport("rrc", "ScrollIntoView")
   @js.native
-  class ScrollIntoView protected ()
-    extends Component[ScrollIntoViewProps, js.Object, js.Any] {
+  open class ScrollIntoView protected ()
+    extends Component[ScrollIntoViewProps, js.Object, Any] {
     def this(props: ScrollIntoViewProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ScrollIntoViewProps, context: js.Any) = this()
+    def this(props: ScrollIntoViewProps, context: Any) = this()
   }
   
   @JSImport("rrc", "Status")
   @js.native
-  class Status protected ()
-    extends Component[StatusProps, js.Object, js.Any] {
+  open class Status protected ()
+    extends Component[StatusProps, js.Object, Any] {
     def this(props: StatusProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: StatusProps, context: js.Any) = this()
+    def this(props: StatusProps, context: Any) = this()
   }
   
   inline def whenActive[Props](): WhenActiveReturnType[Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("whenActive")().asInstanceOf[WhenActiveReturnType[Props]]
   inline def whenActive[Props](options: WhenActiveOptions): WhenActiveReturnType[Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("whenActive")(options.asInstanceOf[js.Any]).asInstanceOf[WhenActiveReturnType[Props]]
   
   inline def withScroll(
-    component: ComponentConstructor[(RouteComponentProps[js.Any, StaticContext, LocationState]) | js.Object]
-  ): ComponentConstructor[(RouteComponentProps[js.Any, StaticContext, LocationState]) | js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("withScroll")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentConstructor[(RouteComponentProps[js.Any, StaticContext, LocationState]) | js.Object]]
+    component: ComponentConstructor[
+      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RouteComponentProps<any> */ Any) | js.Object
+    ]
+  ): ComponentConstructor[
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RouteComponentProps<any> */ Any) | js.Object
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withScroll")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentConstructor[
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RouteComponentProps<any> */ Any) | js.Object
+  ]]
   inline def withScroll(
-    component: ComponentConstructor[(RouteComponentProps[js.Any, StaticContext, LocationState]) | js.Object],
+    component: ComponentConstructor[
+      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RouteComponentProps<any> */ Any) | js.Object
+    ],
     options: WithScrollOptions
-  ): ComponentConstructor[(RouteComponentProps[js.Any, StaticContext, LocationState]) | js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("withScroll")(component.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ComponentConstructor[(RouteComponentProps[js.Any, StaticContext, LocationState]) | js.Object]]
+  ): ComponentConstructor[
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RouteComponentProps<any> */ Any) | js.Object
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("withScroll")(component.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ComponentConstructor[
+    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RouteComponentProps<any> */ Any) | js.Object
+  ]]
   
-  inline def wrapSwitch[WrapperProps, Params](Wrapper: ComponentConstructor[WrapperProps]): ComponentConstructor[WrapSwitchProps[Params] & WrapperProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapSwitch")(Wrapper.asInstanceOf[js.Any]).asInstanceOf[ComponentConstructor[WrapSwitchProps[Params] & WrapperProps]]
+  inline def wrapSwitch[WrapperProps, Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof Params ]:? string}
+    */ typings.rrc.rrcStrings.wrapSwitch & TopLevel[Any] */](Wrapper: ComponentConstructor[WrapperProps]): ComponentConstructor[WrapSwitchProps[Params] & WrapperProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapSwitch")(Wrapper.asInstanceOf[js.Any]).asInstanceOf[ComponentConstructor[WrapSwitchProps[Params] & WrapperProps]]
   
   type ComponentConstructor[Props] = ComponentType[Props]
   
-  type GetKeyFunction[Params] = js.Function3[
-    /* match */ `match`[Params], 
+  type GetKeyFunction[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof Params ]:? string}
+    */ typings.rrc.rrcStrings.GetKeyFunction & TopLevel[Any] */] = js.Function3[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MatchObject<Params> */ /* match */ Any, 
     /* route */ RouteConfiguration, 
-    /* location */ Location[LocationState], 
+    /* location */ Location, 
     String
   ]
   
   type IsActiveCallback = js.Function0[Boolean]
   
-  type OnUpdateCall = js.Function1[/* location */ Location[LocationState], Unit]
+  type OnUpdateCall = js.Function1[/* location */ Location, Unit]
   
   trait OnUpdateProps extends StObject {
     
@@ -103,14 +117,14 @@ object mod {
   }
   object OnUpdateProps {
     
-    inline def apply(call: /* location */ Location[LocationState] => Unit): OnUpdateProps = {
+    inline def apply(call: /* location */ Location => Unit): OnUpdateProps = {
       val __obj = js.Dynamic.literal(call = js.Any.fromFunction1(call))
       __obj.asInstanceOf[OnUpdateProps]
     }
     
     extension [Self <: OnUpdateProps](x: Self) {
       
-      inline def setCall(value: /* location */ Location[LocationState] => Unit): Self = StObject.set(x, "call", js.Any.fromFunction1(value))
+      inline def setCall(value: /* location */ Location => Unit): Self = StObject.set(x, "call", js.Any.fromFunction1(value))
       
       inline def setImmediate(value: Boolean): Self = StObject.set(x, "immediate", value.asInstanceOf[js.Any])
       
@@ -124,7 +138,7 @@ object mod {
     extends StObject
        with RouteProps {
     
-    var inject: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var inject: js.UndefOr[StringDictionary[Any]] = js.undefined
   }
   object RouteConfiguration {
     
@@ -135,7 +149,7 @@ object mod {
     
     extension [Self <: RouteConfiguration](x: Self) {
       
-      inline def setInject(value: StringDictionary[js.Any]): Self = StObject.set(x, "inject", value.asInstanceOf[js.Any])
+      inline def setInject(value: StringDictionary[Any]): Self = StObject.set(x, "inject", value.asInstanceOf[js.Any])
       
       inline def setInjectUndefined: Self = StObject.set(x, "inject", js.undefined)
     }
@@ -144,6 +158,8 @@ object mod {
   trait ScrollIntoViewProps extends StObject {
     
     var alignToTop: js.UndefOr[Boolean] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var id: String
   }
@@ -159,6 +175,10 @@ object mod {
       inline def setAlignToTop(value: Boolean): Self = StObject.set(x, "alignToTop", value.asInstanceOf[js.Any])
       
       inline def setAlignToTopUndefined: Self = StObject.set(x, "alignToTop", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -183,24 +203,29 @@ object mod {
   
   trait SwitchProps extends StObject {
     
-    var location: LocationDescriptorObjectL
+    var location: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify H.LocationDescriptorObject */ Any) & Pathname
     
     var routes: js.Array[RouteConfiguration]
   }
   object SwitchProps {
     
-    inline def apply(location: LocationDescriptorObjectL, routes: js.Array[RouteConfiguration]): SwitchProps = {
+    inline def apply(
+      location: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify H.LocationDescriptorObject */ Any) & Pathname,
+      routes: js.Array[RouteConfiguration]
+    ): SwitchProps = {
       val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any])
       __obj.asInstanceOf[SwitchProps]
     }
     
     extension [Self <: SwitchProps](x: Self) {
       
-      inline def setLocation(value: LocationDescriptorObjectL): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify H.LocationDescriptorObject */ Any) & Pathname
+      ): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
       inline def setRoutes(value: js.Array[RouteConfiguration]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       
-      inline def setRoutesVarargs(value: RouteConfiguration*): Self = StObject.set(x, "routes", js.Array(value :_*))
+      inline def setRoutesVarargs(value: RouteConfiguration*): Self = StObject.set(x, "routes", js.Array(value*))
     }
   }
   
@@ -280,7 +305,9 @@ object mod {
     }
   }
   
-  trait WrapSwitchProps[Params]
+  trait WrapSwitchProps[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof Params ]:? string}
+    */ typings.rrc.rrcStrings.WrapSwitchProps & TopLevel[Any] */]
     extends StObject
        with SwitchProps {
     
@@ -288,15 +315,22 @@ object mod {
   }
   object WrapSwitchProps {
     
-    inline def apply[Params](location: LocationDescriptorObjectL, routes: js.Array[RouteConfiguration]): WrapSwitchProps[Params] = {
+    inline def apply[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ K in keyof Params ]:? string}
+      */ typings.rrc.rrcStrings.WrapSwitchProps & TopLevel[Any] */](
+      location: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify H.LocationDescriptorObject */ Any) & Pathname,
+      routes: js.Array[RouteConfiguration]
+    ): WrapSwitchProps[Params] = {
       val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any])
       __obj.asInstanceOf[WrapSwitchProps[Params]]
     }
     
-    extension [Self <: WrapSwitchProps[?], Params](x: Self & WrapSwitchProps[Params]) {
+    extension [Self <: WrapSwitchProps[?], Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ K in keyof Params ]:? string}
+      */ typings.rrc.rrcStrings.WrapSwitchProps & TopLevel[Any] */](x: Self & WrapSwitchProps[Params]) {
       
       inline def setGetKey(
-        value: (/* match */ `match`[Params], /* route */ RouteConfiguration, /* location */ Location[LocationState]) => String
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MatchObject<Params> */ /* match */ Any, /* route */ RouteConfiguration, /* location */ Location) => String
       ): Self = StObject.set(x, "getKey", js.Any.fromFunction3(value))
       
       inline def setGetKeyUndefined: Self = StObject.set(x, "getKey", js.undefined)

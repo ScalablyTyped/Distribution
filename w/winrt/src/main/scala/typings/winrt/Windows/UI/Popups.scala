@@ -142,7 +142,7 @@ object Popups {
   
   trait IUICommand extends StObject {
     
-    var id: js.Any
+    var id: Any
     
     def invoked(command: IUICommand): Unit
     @JSName("invoked")
@@ -152,14 +152,14 @@ object Popups {
   }
   object IUICommand {
     
-    inline def apply(id: js.Any, invoked: /* command */ IUICommand => Unit, label: String): IUICommand = {
+    inline def apply(id: Any, invoked: /* command */ IUICommand => Unit, label: String): IUICommand = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], invoked = js.Any.fromFunction1(invoked), label = label.asInstanceOf[js.Any])
       __obj.asInstanceOf[IUICommand]
     }
     
     extension [Self <: IUICommand](x: Self) {
       
-      inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       inline def setInvoked(value: /* command */ IUICommand => Unit): Self = StObject.set(x, "invoked", js.Any.fromFunction1(value))
       
@@ -173,14 +173,14 @@ object Popups {
     
     def createWithHandler(label: String, action: UICommandInvokedHandler): UICommand
     
-    def createWithHandlerAndId(label: String, action: UICommandInvokedHandler, commandId: js.Any): UICommand
+    def createWithHandlerAndId(label: String, action: UICommandInvokedHandler, commandId: Any): UICommand
   }
   object IUICommandFactory {
     
     inline def apply(
       create: String => UICommand,
       createWithHandler: (String, UICommandInvokedHandler) => UICommand,
-      createWithHandlerAndId: (String, UICommandInvokedHandler, js.Any) => UICommand
+      createWithHandlerAndId: (String, UICommandInvokedHandler, Any) => UICommand
     ): IUICommandFactory = {
       val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), createWithHandler = js.Any.fromFunction2(createWithHandler), createWithHandlerAndId = js.Any.fromFunction3(createWithHandlerAndId))
       __obj.asInstanceOf[IUICommandFactory]
@@ -192,7 +192,7 @@ object Popups {
       
       inline def setCreateWithHandler(value: (String, UICommandInvokedHandler) => UICommand): Self = StObject.set(x, "createWithHandler", js.Any.fromFunction2(value))
       
-      inline def setCreateWithHandlerAndId(value: (String, UICommandInvokedHandler, js.Any) => UICommand): Self = StObject.set(x, "createWithHandlerAndId", js.Any.fromFunction3(value))
+      inline def setCreateWithHandlerAndId(value: (String, UICommandInvokedHandler, Any) => UICommand): Self = StObject.set(x, "createWithHandlerAndId", js.Any.fromFunction3(value))
     }
   }
   
@@ -225,7 +225,7 @@ object Popups {
        with IUICommand
   object UICommand {
     
-    inline def apply(id: js.Any, invoked: /* command */ IUICommand => Unit, label: String): UICommand = {
+    inline def apply(id: Any, invoked: /* command */ IUICommand => Unit, label: String): UICommand = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], invoked = js.Any.fromFunction1(invoked), label = label.asInstanceOf[js.Any])
       __obj.asInstanceOf[UICommand]
     }
@@ -238,7 +238,7 @@ object Popups {
        with IUICommand
   object UICommandSeparator {
     
-    inline def apply(id: js.Any, invoked: /* command */ IUICommand => Unit, label: String): UICommandSeparator = {
+    inline def apply(id: Any, invoked: /* command */ IUICommand => Unit, label: String): UICommandSeparator = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], invoked = js.Any.fromFunction1(invoked), label = label.asInstanceOf[js.Any])
       __obj.asInstanceOf[UICommandSeparator]
     }

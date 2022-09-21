@@ -12,12 +12,12 @@ trait StartAutomationExecutionRequest extends StObject {
   var ClientToken: js.UndefOr[IdempotencyToken] = js.undefined
   
   /**
-    * The name of the Automation document to use for this execution.
+    * The name of the SSM document to run. This can be a public document or a custom document. To run a shared document belonging to another account, specify the document ARN. For more information about how to use shared documents, see Using shared SSM documents in the Amazon Web Services Systems Manager User Guide.
     */
   var DocumentName: DocumentARN
   
   /**
-    * The version of the Automation document to use for this execution.
+    * The version of the Automation runbook to use for this execution.
     */
   var DocumentVersion: js.UndefOr[typings.awsSdk.ssmMod.DocumentVersion] = js.undefined
   
@@ -37,22 +37,22 @@ trait StartAutomationExecutionRequest extends StObject {
   var Mode: js.UndefOr[ExecutionMode] = js.undefined
   
   /**
-    * A key-value map of execution parameters, which match the declared parameters in the Automation document.
+    * A key-value map of execution parameters, which match the declared parameters in the Automation runbook.
     */
   var Parameters: js.UndefOr[AutomationParameterMap] = js.undefined
   
   /**
-    * Optional metadata that you assign to a resource. You can specify a maximum of five tags for an automation. Tags enable you to categorize a resource in different ways, such as by purpose, owner, or environment. For example, you might want to tag an automation to identify an environment or operating system. In this case, you could specify the following key name/value pairs:    Key=environment,Value=test     Key=OS,Value=Windows     To add tags to an existing patch baseline, use the AddTagsToResource action. 
+    * Optional metadata that you assign to a resource. You can specify a maximum of five tags for an automation. Tags enable you to categorize a resource in different ways, such as by purpose, owner, or environment. For example, you might want to tag an automation to identify an environment or operating system. In this case, you could specify the following key-value pairs:    Key=environment,Value=test     Key=OS,Value=Windows     To add tags to an existing automation, use the AddTagsToResource operation. 
     */
   var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
-    * A location is a combination of AWS Regions and/or AWS accounts where you want to run the Automation. Use this action to start an Automation in multiple Regions and multiple accounts. For more information, see Running Automation workflows in multiple AWS Regions and accounts in the AWS Systems Manager User Guide. 
+    * A location is a combination of Amazon Web Services Regions and/or Amazon Web Services accounts where you want to run the automation. Use this operation to start an automation in multiple Amazon Web Services Regions and multiple Amazon Web Services accounts. For more information, see Running Automation workflows in multiple Amazon Web Services Regions and Amazon Web Services accounts in the Amazon Web Services Systems Manager User Guide. 
     */
   var TargetLocations: js.UndefOr[typings.awsSdk.ssmMod.TargetLocations] = js.undefined
   
   /**
-    * A key-value mapping of document parameters to target resources. Both Targets and TargetMaps cannot be specified together.
+    * A key-value mapping of document parameters to target resources. Both Targets and TargetMaps can't be specified together.
     */
   var TargetMaps: js.UndefOr[typings.awsSdk.ssmMod.TargetMaps] = js.undefined
   
@@ -105,19 +105,19 @@ object StartAutomationExecutionRequest {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setTargetLocations(value: TargetLocations): Self = StObject.set(x, "TargetLocations", value.asInstanceOf[js.Any])
     
     inline def setTargetLocationsUndefined: Self = StObject.set(x, "TargetLocations", js.undefined)
     
-    inline def setTargetLocationsVarargs(value: TargetLocation*): Self = StObject.set(x, "TargetLocations", js.Array(value :_*))
+    inline def setTargetLocationsVarargs(value: TargetLocation*): Self = StObject.set(x, "TargetLocations", js.Array(value*))
     
     inline def setTargetMaps(value: TargetMaps): Self = StObject.set(x, "TargetMaps", value.asInstanceOf[js.Any])
     
     inline def setTargetMapsUndefined: Self = StObject.set(x, "TargetMaps", js.undefined)
     
-    inline def setTargetMapsVarargs(value: TargetMap*): Self = StObject.set(x, "TargetMaps", js.Array(value :_*))
+    inline def setTargetMapsVarargs(value: TargetMap*): Self = StObject.set(x, "TargetMaps", js.Array(value*))
     
     inline def setTargetParameterName(value: AutomationParameterKey): Self = StObject.set(x, "TargetParameterName", value.asInstanceOf[js.Any])
     
@@ -127,6 +127,6 @@ object StartAutomationExecutionRequest {
     
     inline def setTargetsUndefined: Self = StObject.set(x, "Targets", js.undefined)
     
-    inline def setTargetsVarargs(value: Target*): Self = StObject.set(x, "Targets", js.Array(value :_*))
+    inline def setTargetsVarargs(value: Target*): Self = StObject.set(x, "Targets", js.Array(value*))
   }
 }

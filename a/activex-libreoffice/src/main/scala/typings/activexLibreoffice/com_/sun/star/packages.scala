@@ -90,13 +90,13 @@ object packages {
       acquire: () => Unit,
       commitChanges: () => Unit,
       createInstance: () => XInterface,
-      createInstanceWithArguments: SeqEquiv[js.Any] => XInterface,
-      getByHierarchicalName: String => js.Any,
+      createInstanceWithArguments: SeqEquiv[Any] => XInterface,
+      getByHierarchicalName: String => Any,
       getPendingChanges: () => ChangesSet,
       hasByHierarchicalName: String => Boolean,
       hasPendingChanges: () => Boolean,
-      initialize: SeqEquiv[js.Any] => Unit,
-      queryInterface: `type` => js.Any,
+      initialize: SeqEquiv[Any] => Unit,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): Package = {
       val __obj = js.Dynamic.literal(PendingChanges = PendingChanges.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), commitChanges = js.Any.fromFunction0(commitChanges), createInstance = js.Any.fromFunction0(createInstance), createInstanceWithArguments = js.Any.fromFunction1(createInstanceWithArguments), getByHierarchicalName = js.Any.fromFunction1(getByHierarchicalName), getPendingChanges = js.Any.fromFunction0(getPendingChanges), hasByHierarchicalName = js.Any.fromFunction1(hasByHierarchicalName), hasPendingChanges = js.Any.fromFunction0(hasPendingChanges), initialize = js.Any.fromFunction1(initialize), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -127,25 +127,25 @@ object packages {
       addPropertyChangeListener: (String, XPropertyChangeListener) => Unit,
       addVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
       createEnumeration: () => XEnumeration,
-      getByName: String => js.Any,
+      getByName: String => Any,
       getElementNames: () => SafeArray[String],
       getElementType: () => `type`,
       getName: () => String,
       getParent: () => XInterface,
       getPropertySetInfo: () => XPropertySetInfo,
-      getPropertyValue: String => js.Any,
+      getPropertyValue: String => Any,
       hasByName: String => Boolean,
       hasElements: () => Boolean,
-      insertByName: (String, js.Any) => Unit,
-      queryInterface: `type` => js.Any,
+      insertByName: (String, Any) => Unit,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removeByName: String => Unit,
       removePropertyChangeListener: (String, XPropertyChangeListener) => Unit,
       removeVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
-      replaceByName: (String, js.Any) => Unit,
+      replaceByName: (String, Any) => Unit,
       setName: String => Unit,
       setParent: XInterface => Unit,
-      setPropertyValue: (String, js.Any) => Unit
+      setPropertyValue: (String, Any) => Unit
     ): PackageFolder = {
       val __obj = js.Dynamic.literal(ElementNames = ElementNames.asInstanceOf[js.Any], ElementType = ElementType.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), createEnumeration = js.Any.fromFunction0(createEnumeration), getByName = js.Any.fromFunction1(getByName), getElementNames = js.Any.fromFunction0(getElementNames), getElementType = js.Any.fromFunction0(getElementType), getName = js.Any.fromFunction0(getName), getParent = js.Any.fromFunction0(getParent), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), hasByName = js.Any.fromFunction1(hasByName), hasElements = js.Any.fromFunction0(hasElements), insertByName = js.Any.fromFunction2(insertByName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeByName = js.Any.fromFunction1(removeByName), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), replaceByName = js.Any.fromFunction2(replaceByName), setName = js.Any.fromFunction1(setName), setParent = js.Any.fromFunction1(setParent), setPropertyValue = js.Any.fromFunction2(setPropertyValue))
       __obj.asInstanceOf[PackageFolder]
@@ -183,15 +183,15 @@ object packages {
       getName: () => String,
       getParent: () => XInterface,
       getPropertySetInfo: () => XPropertySetInfo,
-      getPropertyValue: String => js.Any,
-      queryInterface: `type` => js.Any,
+      getPropertyValue: String => Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removePropertyChangeListener: (String, XPropertyChangeListener) => Unit,
       removeVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
       setInputStream: XInputStream => Unit,
       setName: String => Unit,
       setParent: XInterface => Unit,
-      setPropertyValue: (String, js.Any) => Unit
+      setPropertyValue: (String, Any) => Unit
     ): PackageStream = {
       val __obj = js.Dynamic.literal(InputStream = InputStream.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), getInputStream = js.Any.fromFunction0(getInputStream), getName = js.Any.fromFunction0(getName), getParent = js.Any.fromFunction0(getParent), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setInputStream = js.Any.fromFunction1(setInputStream), setName = js.Any.fromFunction1(setName), setParent = js.Any.fromFunction1(setParent), setPropertyValue = js.Any.fromFunction2(setPropertyValue))
       __obj.asInstanceOf[PackageStream]
@@ -293,7 +293,7 @@ object packages {
       getDataStream: () => XInputStream,
       getPlainRawStream: () => XInputStream,
       getRawStream: () => XInputStream,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       setDataStream: XInputStream => Unit,
       setRawStream: XInputStream => Unit
@@ -343,7 +343,7 @@ object packages {
       
       inline def apply(
         acquire: () => Unit,
-        queryInterface: `type` => js.Any,
+        queryInterface: `type` => Any,
         readManifestSequence: XInputStream => SafeArray[SafeArray[PropertyValue]],
         release: () => Unit
       ): XManifestReader = {
@@ -372,7 +372,7 @@ object packages {
       
       inline def apply(
         acquire: () => Unit,
-        queryInterface: `type` => js.Any,
+        queryInterface: `type` => Any,
         release: () => Unit,
         writeManifestSequence: (XOutputStream, SeqEquiv[SeqEquiv[PropertyValue]]) => Unit
       ): XManifestWriter = {
@@ -407,7 +407,7 @@ object packages {
       inline def apply(
         acquire: () => Unit,
         getStreamByPattern: String => XInputStream,
-        queryInterface: `type` => js.Any,
+        queryInterface: `type` => Any,
         release: () => Unit
       ): XZipFileAccess = {
         val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getStreamByPattern = js.Any.fromFunction1(getStreamByPattern), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -434,13 +434,13 @@ object packages {
         ElementNames: SafeArray[String],
         ElementType: `type`,
         acquire: () => Unit,
-        getByName: String => js.Any,
+        getByName: String => Any,
         getElementNames: () => SafeArray[String],
         getElementType: () => `type`,
         getStreamByPattern: String => XInputStream,
         hasByName: String => Boolean,
         hasElements: () => Boolean,
-        queryInterface: `type` => js.Any,
+        queryInterface: `type` => Any,
         release: () => Unit
       ): XZipFileAccess2 = {
         val __obj = js.Dynamic.literal(ElementNames = ElementNames.asInstanceOf[js.Any], ElementType = ElementType.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getByName = js.Any.fromFunction1(getByName), getElementNames = js.Any.fromFunction0(getElementNames), getElementType = js.Any.fromFunction0(getElementType), getStreamByPattern = js.Any.fromFunction1(getStreamByPattern), hasByName = js.Any.fromFunction1(hasByName), hasElements = js.Any.fromFunction0(hasElements), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -702,13 +702,13 @@ object packages {
         ElementType: `type`,
         acquire: () => Unit,
         createWithURL: String => Unit,
-        getByName: String => js.Any,
+        getByName: String => Any,
         getElementNames: () => SafeArray[String],
         getElementType: () => `type`,
         getStreamByPattern: String => XInputStream,
         hasByName: String => Boolean,
         hasElements: () => Boolean,
-        queryInterface: `type` => js.Any,
+        queryInterface: `type` => Any,
         release: () => Unit
       ): ZipFileAccess = {
         val __obj = js.Dynamic.literal(ElementNames = ElementNames.asInstanceOf[js.Any], ElementType = ElementType.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), createWithURL = js.Any.fromFunction1(createWithURL), getByName = js.Any.fromFunction1(getByName), getElementNames = js.Any.fromFunction0(getElementNames), getElementType = js.Any.fromFunction0(getElementType), getStreamByPattern = js.Any.fromFunction1(getStreamByPattern), hasByName = js.Any.fromFunction1(hasByName), hasElements = js.Any.fromFunction0(hasElements), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

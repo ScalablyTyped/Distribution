@@ -34,7 +34,7 @@ object GetUtterancesViewRequest {
     
     inline def setBotVersions(value: BotVersions): Self = StObject.set(x, "botVersions", value.asInstanceOf[js.Any])
     
-    inline def setBotVersionsVarargs(value: Version*): Self = StObject.set(x, "botVersions", js.Array(value :_*))
+    inline def setBotVersionsVarargs(value: Version*): Self = StObject.set(x, "botVersions", js.Array(value*))
     
     inline def setStatusType(value: StatusType): Self = StObject.set(x, "statusType", value.asInstanceOf[js.Any])
   }

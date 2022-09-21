@@ -29,6 +29,6 @@ object PatchFilter {
     
     inline def setValues(value: PatchFilterValueList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    inline def setValuesVarargs(value: PatchFilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: PatchFilterValue*): Self = StObject.set(x, "Values", js.Array(value*))
   }
 }

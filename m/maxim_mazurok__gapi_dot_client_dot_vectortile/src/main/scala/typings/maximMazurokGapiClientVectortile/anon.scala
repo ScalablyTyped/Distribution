@@ -18,6 +18,12 @@ object anon {
     /** Data format for response. */
     var alt: js.UndefOr[String] = js.undefined
     
+    /**
+      * Flag indicating whether the returned tile will always contain 2.5D footprints for structures. If enabled_modeled_volumes is set, this will mean that structures will have both
+      * their 3D models and 2.5D footprints returned.
+      */
+    var alwaysIncludeBuildingFootprints: js.UndefOr[Boolean] = js.undefined
+    
     /** JSONP */
     var callback: js.UndefOr[String] = js.undefined
     
@@ -142,6 +148,10 @@ object anon {
       inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
       inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+      
+      inline def setAlwaysIncludeBuildingFootprints(value: Boolean): Self = StObject.set(x, "alwaysIncludeBuildingFootprints", value.asInstanceOf[js.Any])
+      
+      inline def setAlwaysIncludeBuildingFootprintsUndefined: Self = StObject.set(x, "alwaysIncludeBuildingFootprints", js.undefined)
       
       inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
@@ -306,9 +316,10 @@ object anon {
     var maxElevationResolutionCells: js.UndefOr[Double] = js.undefined
     
     /**
-      * The minimum allowed resolution for the returned elevation heightmap. Possible values: between 0 and 1024 (and not more than max_elevation_resolution_cells). Zero is supported
-      * for backward compatibility. Under-sized heightmaps will be non-uniformly up-sampled such that each edge is no shorter than this value. Non-uniformity is chosen to maximise the
-      * amount of preserved data. For example: Original resolution: 30px (width) * 10px (height) min_elevation_resolution: 30 New resolution: 30px (width) * 30px (height)
+      * api-linter: core::0131::request-unknown-fields=disabled aip.dev/not-precedent: Maintaining existing request parameter pattern. The minimum allowed resolution for the returned
+      * elevation heightmap. Possible values: between 0 and 1024 (and not more than max_elevation_resolution_cells). Zero is supported for backward compatibility. Under-sized heightmaps
+      * will be non-uniformly up-sampled such that each edge is no shorter than this value. Non-uniformity is chosen to maximise the amount of preserved data. For example: Original
+      * resolution: 30px (width) * 10px (height) min_elevation_resolution: 30 New resolution: 30px (width) * 30px (height)
       */
     var minElevationResolutionCells: js.UndefOr[Double] = js.undefined
     
@@ -427,7 +438,7 @@ object anon {
       
       inline def setTerrainFormatsUndefined: Self = StObject.set(x, "terrainFormats", js.undefined)
       
-      inline def setTerrainFormatsVarargs(value: String*): Self = StObject.set(x, "terrainFormats", js.Array(value :_*))
+      inline def setTerrainFormatsVarargs(value: String*): Self = StObject.set(x, "terrainFormats", js.Array(value*))
       
       inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
       

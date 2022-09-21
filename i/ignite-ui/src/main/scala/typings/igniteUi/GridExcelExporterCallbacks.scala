@@ -10,7 +10,7 @@ trait GridExcelExporterCallbacks
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * A function to call after the cell is exported.

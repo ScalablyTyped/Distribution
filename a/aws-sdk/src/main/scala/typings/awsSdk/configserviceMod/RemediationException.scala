@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RemediationException extends StObject {
   
   /**
-    * The name of the AWS Config rule.
+    * The name of the Config rule.
     */
   var ConfigRuleName: typings.awsSdk.configserviceMod.ConfigRuleName
   
   /**
     * The time when the remediation exception will be deleted.
     */
-  var ExpirationTime: js.UndefOr[Date] = js.undefined
+  var ExpirationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * An explanation of an remediation exception.
@@ -46,7 +46,7 @@ object RemediationException {
     
     inline def setConfigRuleName(value: ConfigRuleName): Self = StObject.set(x, "ConfigRuleName", value.asInstanceOf[js.Any])
     
-    inline def setExpirationTime(value: Date): Self = StObject.set(x, "ExpirationTime", value.asInstanceOf[js.Any])
+    inline def setExpirationTime(value: js.Date): Self = StObject.set(x, "ExpirationTime", value.asInstanceOf[js.Any])
     
     inline def setExpirationTimeUndefined: Self = StObject.set(x, "ExpirationTime", js.undefined)
     

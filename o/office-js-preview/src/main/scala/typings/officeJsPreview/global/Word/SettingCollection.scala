@@ -6,15 +6,15 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Contains the collection of {@link Word.Setting} objects.
   *
+  * @remarks
   * [Api set: WordApi BETA (PREVIEW ONLY)]
   * @beta
   */
 @JSGlobal("Word.SettingCollection")
 @js.native
-class SettingCollection ()
+open class SettingCollection ()
   extends StObject
      with typings.officeJsPreview.Word.SettingCollection {
   

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "move-file" : "2.0.0"
+      "move-file" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "move-file" : "2.0.0"
+      "move-file" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

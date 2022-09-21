@@ -23,11 +23,11 @@ trait MenuBar extends StObject {
   
   val Index: Double
   
-  def Menus(Index: js.Any): Menu
+  def Menus(Index: Any): Menu
   @JSName("Menus")
   val Menus_Original: Menus
   
-  val Parent: js.Any
+  val Parent: Any
   
   def Reset(): Unit
 }
@@ -43,7 +43,7 @@ object MenuBar {
     ExcelDotMenuBar_typekey: MenuBar,
     Index: Double,
     Menus: Menus,
-    Parent: js.Any,
+    Parent: Any,
     Reset: () => Unit
   ): MenuBar = {
     val __obj = js.Dynamic.literal(Activate = js.Any.fromFunction0(Activate), Application = Application.asInstanceOf[js.Any], BuiltIn = BuiltIn.asInstanceOf[js.Any], Caption = Caption.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Delete = js.Any.fromFunction0(Delete), Index = Index.asInstanceOf[js.Any], Menus = Menus.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Reset = js.Any.fromFunction0(Reset))
@@ -71,7 +71,7 @@ object MenuBar {
     
     inline def setMenus(value: Menus): Self = StObject.set(x, "Menus", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setReset(value: () => Unit): Self = StObject.set(x, "Reset", js.Any.fromFunction0(value))
   }

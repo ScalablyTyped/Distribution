@@ -18,7 +18,7 @@ object columnMod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/widgets/FeatureTable/Grid/Column", JSImport.Namespace)
   @js.native
-  class Class ()
+  open class Class ()
     extends StObject
        with Column {
     
@@ -40,6 +40,8 @@ object columnMod extends Shortcut {
     
     /**
       * Indicates whether the column is resizable.
+      *
+      * @default true
       *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-Column.html#resizable)
       */

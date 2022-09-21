@@ -91,7 +91,7 @@ object CloudStorage {
     
     inline def setItemsVarargs(
       value: (/* This object contains information about a file or folder in cloud storage. */ ExternalFile)*
-    ): Self = StObject.set(x, "items", js.Array(value :_*))
+    ): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

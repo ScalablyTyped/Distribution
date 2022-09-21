@@ -2,7 +2,7 @@ package typings.cssModulesLoaderCore
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.cssModulesLoaderCore.anon.ToString
-import typings.postcss.mod.Plugin_
+import typings.postcss.mod.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,10 +11,10 @@ object mod {
   
   @JSImport("css-modules-loader-core", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Core {
-    def this(plugins: js.Array[Plugin_[js.Any]]) = this()
+    def this(plugins: js.Array[Plugin]) = this()
   }
   @JSImport("css-modules-loader-core", JSImport.Namespace)
   @js.native
@@ -23,32 +23,32 @@ object mod {
   /* static member */
   @JSImport("css-modules-loader-core", "defaultPlugins")
   @js.native
-  def defaultPlugins: js.Array[Plugin_[js.Object]] = js.native
-  inline def defaultPlugins_=(x: js.Array[Plugin_[js.Object]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultPlugins")(x.asInstanceOf[js.Any])
+  def defaultPlugins: js.Array[Plugin] = js.native
+  inline def defaultPlugins_=(x: js.Array[Plugin]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultPlugins")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("css-modules-loader-core", "extractImports")
   @js.native
-  def extractImports: Plugin_[js.Object] = js.native
-  inline def extractImports_=(x: Plugin_[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extractImports")(x.asInstanceOf[js.Any])
+  def extractImports: Plugin = js.native
+  inline def extractImports_=(x: Plugin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extractImports")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("css-modules-loader-core", "localByDefault")
   @js.native
-  def localByDefault: Plugin_[js.Object] = js.native
-  inline def localByDefault_=(x: Plugin_[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("localByDefault")(x.asInstanceOf[js.Any])
+  def localByDefault: Plugin = js.native
+  inline def localByDefault_=(x: Plugin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("localByDefault")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("css-modules-loader-core", "scope")
   @js.native
-  def scope: Plugin_[js.Object] = js.native
-  inline def scope_=(x: Plugin_[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("scope")(x.asInstanceOf[js.Any])
+  def scope: Plugin = js.native
+  inline def scope_=(x: Plugin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("scope")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("css-modules-loader-core", "values")
   @js.native
-  def values: Plugin_[js.Object] = js.native
-  inline def values_=(x: Plugin_[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("values")(x.asInstanceOf[js.Any])
+  def values: Plugin = js.native
+  inline def values_=(x: Plugin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("values")(x.asInstanceOf[js.Any])
   
   @js.native
   trait Core extends StObject {

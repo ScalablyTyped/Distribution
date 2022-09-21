@@ -59,7 +59,7 @@ trait MatterSetBodyConfig extends StObject {
   /**
     * Used by the `fromVerts` shape. The vertices data. Either a path string or an array of vertices.
     */
-  var verts: js.UndefOr[String | js.Array[js.Any]] = js.undefined
+  var verts: js.UndefOr[String | js.Array[Any]] = js.undefined
   
   /**
     * The width of the body.
@@ -125,11 +125,11 @@ object MatterSetBodyConfig {
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    inline def setVerts(value: String | js.Array[js.Any]): Self = StObject.set(x, "verts", value.asInstanceOf[js.Any])
+    inline def setVerts(value: String | js.Array[Any]): Self = StObject.set(x, "verts", value.asInstanceOf[js.Any])
     
     inline def setVertsUndefined: Self = StObject.set(x, "verts", js.undefined)
     
-    inline def setVertsVarargs(value: js.Any*): Self = StObject.set(x, "verts", js.Array(value :_*))
+    inline def setVertsVarargs(value: Any*): Self = StObject.set(x, "verts", js.Array(value*))
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

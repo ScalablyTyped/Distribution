@@ -1,6 +1,6 @@
 package typings.streamMock
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.streamMock.chunkMod.IChunk
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -10,10 +10,10 @@ Convert color string (or parseable argument) to RGBA array
 | ------------------ | :-------------: |
 | Full name          | color-rgba |
 | Keywords           | color, colorjs, rgb, rgba, color-space, css |
-| # releases         | 1 |
-| # dependents       | 30 |
-| # downloads        | 3025231 |
-| # stars            | 0 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 980577.3333333334 |
+| # stars            | 20.0 |
 
 ## Links
 - [Homepage](https://github.com/colorjs/color-rgba#readme)

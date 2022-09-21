@@ -11,7 +11,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("dot")
   @js.native
-  class dot protected ()
+  open class dot protected ()
     extends StObject
        with Dot {
     def this(separator: String) = this()

@@ -64,7 +64,7 @@ object FileSystemInfo {
     
     inline def setOpenedFilesLimit(value: Double): Self = StObject.set(x, "openedFilesLimit", value.asInstanceOf[js.Any])
     
-    inline def setOpenedFilesVarargs(value: OpenedFileInfo*): Self = StObject.set(x, "openedFiles", js.Array(value :_*))
+    inline def setOpenedFilesVarargs(value: OpenedFileInfo*): Self = StObject.set(x, "openedFiles", js.Array(value*))
     
     inline def setSupportsNotifyTag(value: Boolean): Self = StObject.set(x, "supportsNotifyTag", value.asInstanceOf[js.Any])
     
@@ -72,7 +72,7 @@ object FileSystemInfo {
     
     inline def setWatchers(value: js.Array[FileWatchersInfo]): Self = StObject.set(x, "watchers", value.asInstanceOf[js.Any])
     
-    inline def setWatchersVarargs(value: FileWatchersInfo*): Self = StObject.set(x, "watchers", js.Array(value :_*))
+    inline def setWatchersVarargs(value: FileWatchersInfo*): Self = StObject.set(x, "watchers", js.Array(value*))
     
     inline def setWritable(value: Boolean): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
   }

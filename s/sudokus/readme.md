@@ -10,10 +10,10 @@ A JavaScript utility to solve sudokus.
 | ------------------ | :-------------: |
 | Full name          | sudokus |
 | Keywords           | sudoku, puzzle, solver |
-| # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 2713 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 51.666666666666664 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/Moeriki/node-sudokus#readme)

@@ -11,7 +11,7 @@ trait SortableChangeEvent
   
   var action: js.UndefOr[String] = js.undefined
   
-  var draggableEvent: js.UndefOr[js.Any] = js.undefined
+  var draggableEvent: js.UndefOr[Any] = js.undefined
   
   var item: js.UndefOr[JQuery] = js.undefined
   
@@ -32,7 +32,7 @@ object SortableChangeEvent {
     
     inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    inline def setDraggableEvent(value: js.Any): Self = StObject.set(x, "draggableEvent", value.asInstanceOf[js.Any])
+    inline def setDraggableEvent(value: Any): Self = StObject.set(x, "draggableEvent", value.asInstanceOf[js.Any])
     
     inline def setDraggableEventUndefined: Self = StObject.set(x, "draggableEvent", js.undefined)
     

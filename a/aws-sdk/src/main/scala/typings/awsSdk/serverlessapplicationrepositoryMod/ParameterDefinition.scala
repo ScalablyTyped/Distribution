@@ -105,7 +105,7 @@ object ParameterDefinition {
     
     inline def setAllowedValuesUndefined: Self = StObject.set(x, "AllowedValues", js.undefined)
     
-    inline def setAllowedValuesVarargs(value: string*): Self = StObject.set(x, "AllowedValues", js.Array(value :_*))
+    inline def setAllowedValuesVarargs(value: string*): Self = StObject.set(x, "AllowedValues", js.Array(value*))
     
     inline def setConstraintDescription(value: string): Self = StObject.set(x, "ConstraintDescription", value.asInstanceOf[js.Any])
     
@@ -143,7 +143,7 @@ object ParameterDefinition {
     
     inline def setReferencedByResources(value: listOfString): Self = StObject.set(x, "ReferencedByResources", value.asInstanceOf[js.Any])
     
-    inline def setReferencedByResourcesVarargs(value: string*): Self = StObject.set(x, "ReferencedByResources", js.Array(value :_*))
+    inline def setReferencedByResourcesVarargs(value: string*): Self = StObject.set(x, "ReferencedByResources", js.Array(value*))
     
     inline def setType(value: string): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

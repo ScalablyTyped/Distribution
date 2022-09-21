@@ -33,6 +33,6 @@ object DescribePublicIpv4PoolsResult {
     
     inline def setPublicIpv4PoolsUndefined: Self = StObject.set(x, "PublicIpv4Pools", js.undefined)
     
-    inline def setPublicIpv4PoolsVarargs(value: PublicIpv4Pool*): Self = StObject.set(x, "PublicIpv4Pools", js.Array(value :_*))
+    inline def setPublicIpv4PoolsVarargs(value: PublicIpv4Pool*): Self = StObject.set(x, "PublicIpv4Pools", js.Array(value*))
   }
 }

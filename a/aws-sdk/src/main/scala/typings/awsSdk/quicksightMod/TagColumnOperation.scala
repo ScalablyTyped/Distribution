@@ -12,7 +12,7 @@ trait TagColumnOperation extends StObject {
   var ColumnName: typings.awsSdk.quicksightMod.ColumnName
   
   /**
-    * The dataset column tag, currently only used for geospatial type tagging. .  This is not tags for the AWS tagging feature. . 
+    * The dataset column tag, currently only used for geospatial type tagging.  This is not tags for the Amazon Web Services tagging feature. 
     */
   var Tags: ColumnTagList
 }
@@ -29,6 +29,6 @@ object TagColumnOperation {
     
     inline def setTags(value: ColumnTagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    inline def setTagsVarargs(value: ColumnTag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: ColumnTag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

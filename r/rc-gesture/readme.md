@@ -11,9 +11,9 @@ Support gesture for react component
 | Full name          | rc-gesture |
 | Keywords           | react, react-component, react-gesture, gesture, touch |
 | # releases         | 0 |
-| # dependents       | 21 |
-| # downloads        | 1290769 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 143961.66666666666 |
+| # stars            | 100.0 |
 
 ## Links
 - [Homepage](http://github.com/react-component/gesture/)

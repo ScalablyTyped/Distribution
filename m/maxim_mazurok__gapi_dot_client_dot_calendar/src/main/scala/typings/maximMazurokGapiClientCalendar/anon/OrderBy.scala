@@ -25,7 +25,7 @@ trait OrderBy extends StObject {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
-  /** Specifies event ID in the iCalendar format to be included in the response. Optional. */
+  /** Specifies an event ID in the iCalendar format to be provided in the response. Optional. Use this if you want to search for an event by its iCalendar ID. */
   var iCalUID: js.UndefOr[String] = js.undefined
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
@@ -59,7 +59,7 @@ trait OrderBy extends StObject {
     */
   var privateExtendedProperty: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  /** Free text search terms to find events that match these terms in any field, except for extended properties. Optional. */
+  /** Free text search terms to find events that match these terms in the following fields: summary, description, location, attendee's displayName, attendee's email. Optional. */
   var q: js.UndefOr[String] = js.undefined
   
   /** An opaque string that represents a user for quota purposes. Must not exceed 40 characters. */
@@ -193,7 +193,7 @@ object OrderBy {
     
     inline def setPrivateExtendedPropertyUndefined: Self = StObject.set(x, "privateExtendedProperty", js.undefined)
     
-    inline def setPrivateExtendedPropertyVarargs(value: String*): Self = StObject.set(x, "privateExtendedProperty", js.Array(value :_*))
+    inline def setPrivateExtendedPropertyVarargs(value: String*): Self = StObject.set(x, "privateExtendedProperty", js.Array(value*))
     
     inline def setQ(value: String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
     
@@ -209,7 +209,7 @@ object OrderBy {
     
     inline def setSharedExtendedPropertyUndefined: Self = StObject.set(x, "sharedExtendedProperty", js.undefined)
     
-    inline def setSharedExtendedPropertyVarargs(value: String*): Self = StObject.set(x, "sharedExtendedProperty", js.Array(value :_*))
+    inline def setSharedExtendedPropertyVarargs(value: String*): Self = StObject.set(x, "sharedExtendedProperty", js.Array(value*))
     
     inline def setShowDeleted(value: Boolean): Self = StObject.set(x, "showDeleted", value.asInstanceOf[js.Any])
     

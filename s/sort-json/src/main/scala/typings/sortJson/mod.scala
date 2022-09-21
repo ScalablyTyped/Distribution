@@ -25,10 +25,10 @@ object mod {
     * * String: Absolute path to JSON file to sort and overwrite
     * * Array: Absolute paths to JSON files to sort and overwrite
     */
-  inline def overwrite(absolutePaths: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("overwrite")(absolutePaths.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def overwrite(absolutePaths: String, options: OverwriteOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("overwrite")(absolutePaths.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def overwrite(absolutePaths: js.Array[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("overwrite")(absolutePaths.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def overwrite(absolutePaths: js.Array[String], options: OverwriteOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("overwrite")(absolutePaths.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def overwrite(absolutePaths: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("overwrite")(absolutePaths.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def overwrite(absolutePaths: String, options: OverwriteOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("overwrite")(absolutePaths.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def overwrite(absolutePaths: js.Array[String]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("overwrite")(absolutePaths.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def overwrite(absolutePaths: js.Array[String], options: OverwriteOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("overwrite")(absolutePaths.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   trait OverwriteOptions
     extends StObject

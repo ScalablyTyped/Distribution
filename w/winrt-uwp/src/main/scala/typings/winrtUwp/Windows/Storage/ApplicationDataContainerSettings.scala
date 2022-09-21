@@ -17,9 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ApplicationDataContainerSettings extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_mapchanged(`type`: mapchanged, listener: MapChangedEventHandler[String, js.Any]): Unit = js.native
+  def addEventListener_mapchanged(`type`: mapchanged, listener: MapChangedEventHandler[String, Any]): Unit = js.native
   
   /** Removes all related application settings. */
   def clear(): Unit = js.native
@@ -28,13 +28,13 @@ trait ApplicationDataContainerSettings extends StObject {
     * Retrieves an iterator to enumerate the settings in the settings container.
     * @return The iterator.
     */
-  def first(): IIterator[IKeyValuePair[js.Any, js.Any]] = js.native
+  def first(): IIterator[IKeyValuePair[Any, Any]] = js.native
   
   /**
     * Returns a read-only snapshot of the contents of the settings container.
     * @return The view of the settings container.
     */
-  def getView(): IMapView[String, js.Any] = js.native
+  def getView(): IMapView[String, Any] = js.native
   
   /**
     * Determines whether there is an application setting with the specified key.
@@ -49,20 +49,20 @@ trait ApplicationDataContainerSettings extends StObject {
     * @param value The setting value.
     * @return True if an item with the specified key is an existing item and was replaced; otherwise, false.
     */
-  def insert(key: String, value: js.Any): Boolean = js.native
+  def insert(key: String, value: Any): Boolean = js.native
   
   /**
     * Retrieves the specified application setting.
     * @param key The key of the setting.
     * @return The application setting.
     */
-  def lookup(key: String): js.Any = js.native
+  def lookup(key: String): Any = js.native
   
   /** Occurs when the map changes. */
-  def onmapchanged(ev: IMapChangedEventArgs[String] & (WinRTEvent[IObservableMap[String, js.Any]])): Unit = js.native
+  def onmapchanged(ev: IMapChangedEventArgs[String] & (WinRTEvent[IObservableMap[String, Any]])): Unit = js.native
   /** Occurs when the map changes. */
   @JSName("onmapchanged")
-  var onmapchanged_Original: MapChangedEventHandler[String, js.Any] = js.native
+  var onmapchanged_Original: MapChangedEventHandler[String, Any] = js.native
   
   /**
     * Removes a specific item from the ApplicationDataContainerSettings .
@@ -71,9 +71,9 @@ trait ApplicationDataContainerSettings extends StObject {
     */
   def remove(key: String): Boolean = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_mapchanged(`type`: mapchanged, listener: MapChangedEventHandler[String, js.Any]): Unit = js.native
+  def removeEventListener_mapchanged(`type`: mapchanged, listener: MapChangedEventHandler[String, Any]): Unit = js.native
   
   /**
     * Removes the specified application setting.

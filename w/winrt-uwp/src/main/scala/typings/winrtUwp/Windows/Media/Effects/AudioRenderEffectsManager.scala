@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait AudioRenderEffectsManager extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_audiorendereffectschanged(`type`: audiorendereffectschanged, listener: TypedEventHandler[AudioRenderEffectsManager, js.Any]): Unit = js.native
+  def addEventListener_audiorendereffectschanged(`type`: audiorendereffectschanged, listener: TypedEventHandler[AudioRenderEffectsManager, Any]): Unit = js.native
   
   /** Gets the label that is associated with this audio effects provider setting. */
   var effectsProviderSettingsLabel: String = js.native
@@ -31,14 +31,14 @@ trait AudioRenderEffectsManager extends StObject {
   def getAudioRenderEffects(): IVectorView[AudioEffect] = js.native
   
   /** Occurs when audio process chain changes. */
-  def onaudiorendereffectschanged(ev: js.Any & WinRTEvent[AudioRenderEffectsManager]): Unit = js.native
+  def onaudiorendereffectschanged(ev: Any & WinRTEvent[AudioRenderEffectsManager]): Unit = js.native
   /** Occurs when audio process chain changes. */
   @JSName("onaudiorendereffectschanged")
-  var onaudiorendereffectschanged_Original: TypedEventHandler[AudioRenderEffectsManager, js.Any] = js.native
+  var onaudiorendereffectschanged_Original: TypedEventHandler[AudioRenderEffectsManager, Any] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_audiorendereffectschanged(`type`: audiorendereffectschanged, listener: TypedEventHandler[AudioRenderEffectsManager, js.Any]): Unit = js.native
+  def removeEventListener_audiorendereffectschanged(`type`: audiorendereffectschanged, listener: TypedEventHandler[AudioRenderEffectsManager, Any]): Unit = js.native
   
   /** Displays the audio effect settings page. */
   def showSettingsUI(): Unit = js.native

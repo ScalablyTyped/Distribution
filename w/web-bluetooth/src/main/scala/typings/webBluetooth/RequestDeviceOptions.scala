@@ -16,7 +16,7 @@ object RequestDeviceOptions {
     __obj.asInstanceOf[typings.webBluetooth.anon.AcceptAllDevices]
   }
   
-  inline def Filters(filters: js.Array[BluetoothRequestDeviceFilter]): typings.webBluetooth.anon.Filters = {
+  inline def Filters(filters: js.Array[BluetoothLEScanFilter]): typings.webBluetooth.anon.Filters = {
     val __obj = js.Dynamic.literal(filters = filters.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.webBluetooth.anon.Filters]
   }

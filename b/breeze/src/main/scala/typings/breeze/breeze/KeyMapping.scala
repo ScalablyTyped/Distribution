@@ -8,13 +8,13 @@ trait KeyMapping extends StObject {
   
   var entityTypeName: String
   
-  var realValue: js.Any
+  var realValue: Any
   
-  var tempValue: js.Any
+  var tempValue: Any
 }
 object KeyMapping {
   
-  inline def apply(entityTypeName: String, realValue: js.Any, tempValue: js.Any): KeyMapping = {
+  inline def apply(entityTypeName: String, realValue: Any, tempValue: Any): KeyMapping = {
     val __obj = js.Dynamic.literal(entityTypeName = entityTypeName.asInstanceOf[js.Any], realValue = realValue.asInstanceOf[js.Any], tempValue = tempValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyMapping]
   }
@@ -23,8 +23,8 @@ object KeyMapping {
     
     inline def setEntityTypeName(value: String): Self = StObject.set(x, "entityTypeName", value.asInstanceOf[js.Any])
     
-    inline def setRealValue(value: js.Any): Self = StObject.set(x, "realValue", value.asInstanceOf[js.Any])
+    inline def setRealValue(value: Any): Self = StObject.set(x, "realValue", value.asInstanceOf[js.Any])
     
-    inline def setTempValue(value: js.Any): Self = StObject.set(x, "tempValue", value.asInstanceOf[js.Any])
+    inline def setTempValue(value: Any): Self = StObject.set(x, "tempValue", value.asInstanceOf[js.Any])
   }
 }

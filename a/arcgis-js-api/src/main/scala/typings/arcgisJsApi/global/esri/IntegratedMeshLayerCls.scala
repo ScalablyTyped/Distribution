@@ -14,10 +14,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-IntegratedMeshLayer.html)
   */
-class IntegratedMeshLayerCls ()
+open class IntegratedMeshLayerCls ()
   extends StObject
      with typings.arcgisJsApi.esri.IntegratedMeshLayer {
   def this(properties: IntegratedMeshLayerProperties) = this()
+  
+  /**
+    * An authorization string used to access a resource or service.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-APIKeyMixin.html#apiKey)
+    */
+  /* CompleteClass */
+  var apiKey: String = js.native
   
   /**
     * The copyright text as defined by the scene service.
@@ -38,6 +46,8 @@ class IntegratedMeshLayerCls ()
   /**
     * The maximum scale (most zoomed in) at which the layer is visible in the view.
     *
+    * @default 0
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ScaleRangeLayer.html#maxScale)
     */
   /* CompleteClass */
@@ -45,6 +55,8 @@ class IntegratedMeshLayerCls ()
   
   /**
     * The minimum scale (most zoomed out) at which the layer is visible in the view.
+    *
+    * @default 0
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ScaleRangeLayer.html#minScale)
     */

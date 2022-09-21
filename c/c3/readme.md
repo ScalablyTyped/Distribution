@@ -10,10 +10,10 @@ D3-based reusable chart library
 | ------------------ | :-------------: |
 | Full name          | c3 |
 | Keywords           | d3, chart, graph |
-| # releases         | 25 |
-| # dependents       | 117 |
-| # downloads        | 4594884 |
-| # stars            | 7 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 367161.3333333333 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/c3js/c3#readme)

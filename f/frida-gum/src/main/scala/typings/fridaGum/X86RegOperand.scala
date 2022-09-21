@@ -16,8 +16,8 @@ trait X86RegOperand
 }
 object X86RegOperand {
   
-  inline def apply(size: Double, value: X86Register): X86RegOperand = {
-    val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  inline def apply(access: OperandAccess, size: Double, value: X86Register): X86RegOperand = {
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("reg")
     __obj.asInstanceOf[X86RegOperand]
   }

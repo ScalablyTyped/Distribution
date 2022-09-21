@@ -1,68 +1,75 @@
 package typings.ethereumCryptography
 
-import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  trait Recovery extends StObject {
+  trait Data extends StObject {
     
-    var recovery: Double
+    var data: Unit
     
-    var signature: Buffer
+    var noncefn: Unit
   }
-  object Recovery {
+  object Data {
     
-    inline def apply(recovery: Double, signature: Buffer): Recovery = {
-      val __obj = js.Dynamic.literal(recovery = recovery.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Recovery]
+    inline def apply(data: Unit, noncefn: Unit): Data = {
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], noncefn = noncefn.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Recovery](x: Self) {
+    extension [Self <: Data](x: Self) {
       
-      inline def setRecovery(value: Double): Self = StObject.set(x, "recovery", value.asInstanceOf[js.Any])
+      inline def setData(value: Unit): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setSignature(value: Buffer): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Xpriv extends StObject {
-    
-    var xpriv: String
-  }
-  object Xpriv {
-    
-    inline def apply(xpriv: String): Xpriv = {
-      val __obj = js.Dynamic.literal(xpriv = xpriv.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Xpriv]
-    }
-    
-    extension [Self <: Xpriv](x: Self) {
-      
-      inline def setXpriv(value: String): Self = StObject.set(x, "xpriv", value.asInstanceOf[js.Any])
+      inline def setNoncefn(value: Unit): Self = StObject.set(x, "noncefn", value.asInstanceOf[js.Any])
     }
   }
   
-  trait Xpub extends StObject {
+  trait Hashfn extends StObject {
     
-    var xpriv: String
+    var data: js.UndefOr[js.typedarray.Uint8Array] = js.undefined
     
-    var xpub: String
+    var hashfn: js.UndefOr[
+        js.Function3[
+          /* x */ js.typedarray.Uint8Array, 
+          /* y */ js.typedarray.Uint8Array, 
+          /* data */ js.typedarray.Uint8Array, 
+          js.typedarray.Uint8Array
+        ]
+      ] = js.undefined
+    
+    var xbuf: js.UndefOr[js.typedarray.Uint8Array] = js.undefined
+    
+    var ybuf: js.UndefOr[js.typedarray.Uint8Array] = js.undefined
   }
-  object Xpub {
+  object Hashfn {
     
-    inline def apply(xpriv: String, xpub: String): Xpub = {
-      val __obj = js.Dynamic.literal(xpriv = xpriv.asInstanceOf[js.Any], xpub = xpub.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Xpub]
+    inline def apply(): Hashfn = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Hashfn]
     }
     
-    extension [Self <: Xpub](x: Self) {
+    extension [Self <: Hashfn](x: Self) {
       
-      inline def setXpriv(value: String): Self = StObject.set(x, "xpriv", value.asInstanceOf[js.Any])
+      inline def setData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setXpub(value: String): Self = StObject.set(x, "xpub", value.asInstanceOf[js.Any])
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      
+      inline def setHashfn(
+        value: (/* x */ js.typedarray.Uint8Array, /* y */ js.typedarray.Uint8Array, /* data */ js.typedarray.Uint8Array) => js.typedarray.Uint8Array
+      ): Self = StObject.set(x, "hashfn", js.Any.fromFunction3(value))
+      
+      inline def setHashfnUndefined: Self = StObject.set(x, "hashfn", js.undefined)
+      
+      inline def setXbuf(value: js.typedarray.Uint8Array): Self = StObject.set(x, "xbuf", value.asInstanceOf[js.Any])
+      
+      inline def setXbufUndefined: Self = StObject.set(x, "xbuf", js.undefined)
+      
+      inline def setYbuf(value: js.typedarray.Uint8Array): Self = StObject.set(x, "ybuf", value.asInstanceOf[js.Any])
+      
+      inline def setYbufUndefined: Self = StObject.set(x, "ybuf", js.undefined)
     }
   }
 }

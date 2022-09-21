@@ -9,7 +9,7 @@ object stringMod {
   
   @JSImport("@ethersproject/abi/lib/coders/string", "StringCoder")
   @js.native
-  class StringCoder protected () extends DynamicBytesCoder {
+  open class StringCoder protected () extends DynamicBytesCoder {
     def this(localName: String) = this()
   }
 }

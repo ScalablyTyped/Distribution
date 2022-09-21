@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("evernote", "Types.NotebookRestrictions")
 @js.native
-class NotebookRestrictions () extends StObject {
+open class NotebookRestrictions () extends StObject {
   def this(args: ExpungeWhichSharedNotebookRestrictions) = this()
   
   var expungeWhichSharedNotebookRestrictions: js.UndefOr[SharedNotebookInstanceRestrictions] = js.native

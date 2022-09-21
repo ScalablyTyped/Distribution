@@ -12,7 +12,7 @@ trait IImg
   var alt: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (Number/String) */
-  var glyph: js.UndefOr[js.Any] = js.undefined
+  var glyph: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var imgCls: js.UndefOr[java.lang.String] = js.undefined
@@ -45,7 +45,7 @@ object IImg {
     
     inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
     
-    inline def setGlyph(value: js.Any): Self = StObject.set(x, "glyph", value.asInstanceOf[js.Any])
+    inline def setGlyph(value: Any): Self = StObject.set(x, "glyph", value.asInstanceOf[js.Any])
     
     inline def setGlyphUndefined: Self = StObject.set(x, "glyph", js.undefined)
     

@@ -15,7 +15,7 @@ trait AutoRecover extends StObject {
   /* private */ @JSName("Excel.AutoRecover_typekey")
   var ExcelDotAutoRecover_typekey: AutoRecover
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Path: String
   
@@ -28,7 +28,7 @@ object AutoRecover {
     Creator: XlCreator,
     Enabled: Boolean,
     ExcelDotAutoRecover_typekey: AutoRecover,
-    Parent: js.Any,
+    Parent: Any,
     Path: String,
     Time: Double
   ): AutoRecover = {
@@ -47,7 +47,7 @@ object AutoRecover {
     
     inline def setExcelDotAutoRecover_typekey(value: AutoRecover): Self = StObject.set(x, "Excel.AutoRecover_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     

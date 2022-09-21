@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Order
   extends StObject
-     with Instantiable1[/* options */ Random, js.Any] {
+     with Instantiable1[/* options */ Random, scala.Any] {
   
   var random: Boolean = js.native
   
-  var seed: String = js.native
+  var seed: Double | String = js.native
   
   def sort[T](items: js.Array[T]): js.Array[T] = js.native
 }

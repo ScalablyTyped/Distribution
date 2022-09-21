@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "BoundingInfo")
 @js.native
-class BoundingInfo protected ()
+open class BoundingInfo protected ()
   extends typings.babylonjs.cullingIndexMod.BoundingInfo {
   /**
     * Constructs bounding info
@@ -28,7 +28,7 @@ class BoundingInfo protected ()
 /* static members */
 object BoundingInfo {
   
-  @JSImport("babylonjs/index", "BoundingInfo.TmpVector3")
+  @JSImport("babylonjs/index", "BoundingInfo._TmpVector3")
   @js.native
-  val TmpVector3: js.Any = js.native
+  val _TmpVector3: Any = js.native
 }

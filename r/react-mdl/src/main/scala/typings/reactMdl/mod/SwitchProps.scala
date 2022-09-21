@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SwitchProps
   extends StObject
-     with HTMLProps[js.Any]
+     with HTMLProps[Any]
      with RippleComponent {
   
   @JSName("onChange")

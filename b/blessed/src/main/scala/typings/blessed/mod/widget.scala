@@ -10,7 +10,7 @@ object widget {
   
   @JSImport("blessed", "widget.Terminal")
   @js.native
-  class Terminal protected () extends TerminalElement {
+  open class Terminal protected () extends TerminalElement {
     def this(opts: TerminalOptions) = this()
   }
 }

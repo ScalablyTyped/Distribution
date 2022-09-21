@@ -27,7 +27,7 @@ object CpuCurrentSpeedData {
     
     inline def setCores(value: js.Array[Double]): Self = StObject.set(x, "cores", value.asInstanceOf[js.Any])
     
-    inline def setCoresVarargs(value: Double*): Self = StObject.set(x, "cores", js.Array(value :_*))
+    inline def setCoresVarargs(value: Double*): Self = StObject.set(x, "cores", js.Array(value*))
     
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

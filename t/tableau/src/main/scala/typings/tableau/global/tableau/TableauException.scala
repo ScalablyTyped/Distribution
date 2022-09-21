@@ -7,13 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //#region Error Classes
 @JSGlobal("tableau.TableauException")
 @js.native
-class TableauException ()
+open class TableauException ()
   extends StObject
      with typings.tableau.tableau.TableauException {
   
+  /* standard es5 */
   /* CompleteClass */
   var message: String = js.native
   
+  /* standard es5 */
   /* CompleteClass */
   var name: String = js.native
   

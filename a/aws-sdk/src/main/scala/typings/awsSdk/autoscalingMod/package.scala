@@ -1,99 +1,191 @@
 package typings.awsSdk.autoscalingMod
 
+import typings.awsSdk.awsSdkStrings.PendingDelete
+import typings.awsSdk.awsSdkStrings.Rolling
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type Activities = js.Array[typings.awsSdk.autoscalingMod.Activity]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.nvidia_
+  - typings.awsSdk.awsSdkStrings.amd
+  - typings.awsSdk.awsSdkStrings.`amazon-web-services`
+  - typings.awsSdk.awsSdkStrings.xilinx
+  - java.lang.String
+*/
+type AcceleratorManufacturer = _AcceleratorManufacturer | String
 
-type ActivityIds = js.Array[typings.awsSdk.autoscalingMod.XmlString]
+type AcceleratorManufacturers = js.Array[AcceleratorManufacturer]
 
-type AdjustmentTypes = js.Array[typings.awsSdk.autoscalingMod.AdjustmentType]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.a100
+  - typings.awsSdk.awsSdkStrings.v100
+  - typings.awsSdk.awsSdkStrings.k80
+  - typings.awsSdk.awsSdkStrings.t4
+  - typings.awsSdk.awsSdkStrings.m60
+  - typings.awsSdk.awsSdkStrings.`radeon-pro-v520`
+  - typings.awsSdk.awsSdkStrings.vu9p
+  - java.lang.String
+*/
+type AcceleratorName = _AcceleratorName | String
 
-type Alarms = js.Array[typings.awsSdk.autoscalingMod.Alarm]
+type AcceleratorNames = js.Array[AcceleratorName]
 
-type AsciiStringMaxLen255 = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.gpu_
+  - typings.awsSdk.awsSdkStrings.fpga
+  - typings.awsSdk.awsSdkStrings.inference
+  - java.lang.String
+*/
+type AcceleratorType = _AcceleratorType | String
 
-type AssociatePublicIpAddress = scala.Boolean
+type AcceleratorTypes = js.Array[AcceleratorType]
 
-type AutoScalingGroupDesiredCapacity = scala.Double
+type Activities = js.Array[Activity]
 
-type AutoScalingGroupMaxSize = scala.Double
+type ActivityIds = js.Array[XmlString]
 
-type AutoScalingGroupMinSize = scala.Double
+type AdjustmentTypes = js.Array[AdjustmentType]
 
-type AutoScalingGroupNames = js.Array[typings.awsSdk.autoscalingMod.ResourceName]
+type Alarms = js.Array[Alarm]
 
-type AutoScalingGroups = js.Array[typings.awsSdk.autoscalingMod.AutoScalingGroup]
+type AsciiStringMaxLen255 = String
 
-type AutoScalingInstances = js.Array[typings.awsSdk.autoscalingMod.AutoScalingInstanceDetails]
+type AssociatePublicIpAddress = Boolean
 
-type AutoScalingNotificationTypes = js.Array[typings.awsSdk.autoscalingMod.XmlStringMaxLen255]
+type AutoScalingGroupDesiredCapacity = Double
 
-type AvailabilityZones = js.Array[typings.awsSdk.autoscalingMod.XmlStringMaxLen255]
+type AutoScalingGroupMaxSize = Double
 
-type BlockDeviceEbsDeleteOnTermination = scala.Boolean
+type AutoScalingGroupMinSize = Double
 
-type BlockDeviceEbsEncrypted = scala.Boolean
+type AutoScalingGroupNames = js.Array[XmlStringMaxLen255]
 
-type BlockDeviceEbsIops = scala.Double
+type AutoScalingGroupPredictedCapacity = Double
 
-type BlockDeviceEbsVolumeSize = scala.Double
+type AutoScalingGroupState = String
 
-type BlockDeviceEbsVolumeType = java.lang.String
+type AutoScalingGroups = js.Array[AutoScalingGroup]
 
-type BlockDeviceMappings = js.Array[typings.awsSdk.autoscalingMod.BlockDeviceMapping]
+type AutoScalingInstances = js.Array[AutoScalingInstanceDetails]
 
-type CapacityRebalanceEnabled = scala.Boolean
+type AutoScalingNotificationTypes = js.Array[XmlStringMaxLen255]
 
-type ClassicLinkVPCSecurityGroups = js.Array[typings.awsSdk.autoscalingMod.XmlStringMaxLen255]
+type AvailabilityZones = js.Array[XmlStringMaxLen255]
 
-type Cooldown = scala.Double
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.included
+  - typings.awsSdk.awsSdkStrings.excluded
+  - typings.awsSdk.awsSdkStrings.required__
+  - java.lang.String
+*/
+type BareMetal = _BareMetal | String
 
-type DisableScaleIn = scala.Boolean
+type BlockDeviceEbsDeleteOnTermination = Boolean
 
-type EbsOptimized = scala.Boolean
+type BlockDeviceEbsEncrypted = Boolean
 
-type EnabledMetrics = js.Array[typings.awsSdk.autoscalingMod.EnabledMetric]
+type BlockDeviceEbsIops = Double
 
-type EstimatedInstanceWarmup = scala.Double
+type BlockDeviceEbsThroughput = Double
 
-type FailedScheduledUpdateGroupActionRequests = js.Array[typings.awsSdk.autoscalingMod.FailedScheduledUpdateGroupActionRequest]
+type BlockDeviceEbsVolumeSize = Double
 
-type Filters = js.Array[typings.awsSdk.autoscalingMod.Filter]
+type BlockDeviceEbsVolumeType = String
 
-type ForceDelete = scala.Boolean
+type BlockDeviceMappings = js.Array[BlockDeviceMapping]
 
-type GlobalTimeout = scala.Double
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.included
+  - typings.awsSdk.awsSdkStrings.excluded
+  - typings.awsSdk.awsSdkStrings.required__
+  - java.lang.String
+*/
+type BurstablePerformance = _BurstablePerformance | String
 
-type HealthCheckGracePeriod = scala.Double
+type CapacityRebalanceEnabled = Boolean
 
-type HeartbeatTimeout = scala.Double
+type CheckpointDelay = Double
 
-type HonorCooldown = scala.Boolean
+type CheckpointPercentages = js.Array[NonZeroIntPercent]
 
-type InstanceIds = js.Array[typings.awsSdk.autoscalingMod.XmlStringMaxLen19]
+type ClassicLinkVPCSecurityGroups = js.Array[XmlStringMaxLen255]
+
+type Context = String
+
+type Cooldown = Double
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.intel
+  - typings.awsSdk.awsSdkStrings.amd
+  - typings.awsSdk.awsSdkStrings.`amazon-web-services`
+  - java.lang.String
+*/
+type CpuManufacturer = _CpuManufacturer | String
+
+type CpuManufacturers = js.Array[CpuManufacturer]
+
+type DefaultInstanceWarmup = Double
+
+type DisableScaleIn = Boolean
+
+type EbsOptimized = Boolean
+
+type EnabledMetrics = js.Array[EnabledMetric]
+
+type EstimatedInstanceWarmup = Double
+
+type ExcludedInstance = String
+
+type ExcludedInstanceTypes = js.Array[ExcludedInstance]
+
+type FailedScheduledUpdateGroupActionRequests = js.Array[FailedScheduledUpdateGroupActionRequest]
+
+type Filters = js.Array[Filter]
+
+type ForceDelete = Boolean
+
+type GlobalTimeout = Double
+
+type HealthCheckGracePeriod = Double
+
+type HeartbeatTimeout = Double
+
+type HonorCooldown = Boolean
+
+type IncludeDeletedGroups = Boolean
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.current__
+  - typings.awsSdk.awsSdkStrings.previous_
+  - java.lang.String
+*/
+type InstanceGeneration = _InstanceGeneration | String
+
+type InstanceGenerations = js.Array[InstanceGeneration]
+
+type InstanceIds = js.Array[XmlStringMaxLen19]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.disabled__
   - typings.awsSdk.awsSdkStrings.enabled__
   - java.lang.String
 */
-type InstanceMetadataEndpointState = typings.awsSdk.autoscalingMod._InstanceMetadataEndpointState | java.lang.String
+type InstanceMetadataEndpointState = _InstanceMetadataEndpointState | String
 
-type InstanceMetadataHttpPutResponseHopLimit = scala.Double
+type InstanceMetadataHttpPutResponseHopLimit = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.optional__
   - typings.awsSdk.awsSdkStrings.required__
   - java.lang.String
 */
-type InstanceMetadataHttpTokensState = typings.awsSdk.autoscalingMod._InstanceMetadataHttpTokensState | java.lang.String
+type InstanceMetadataHttpTokensState = _InstanceMetadataHttpTokensState | String
 
-type InstanceProtected = scala.Boolean
+type InstanceProtected = Boolean
 
-type InstanceRefreshIds = js.Array[typings.awsSdk.autoscalingMod.XmlStringMaxLen255]
+type InstanceRefreshIds = js.Array[XmlStringMaxLen255]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Pending_
@@ -104,31 +196,31 @@ type InstanceRefreshIds = js.Array[typings.awsSdk.autoscalingMod.XmlStringMaxLen
   - typings.awsSdk.awsSdkStrings.Cancelled_
   - java.lang.String
 */
-type InstanceRefreshStatus = typings.awsSdk.autoscalingMod._InstanceRefreshStatus | java.lang.String
+type InstanceRefreshStatus = _InstanceRefreshStatus | String
 
-type InstanceRefreshes = js.Array[typings.awsSdk.autoscalingMod.InstanceRefresh]
+type InstanceRefreshes = js.Array[InstanceRefresh]
 
-type Instances = js.Array[typings.awsSdk.autoscalingMod.Instance]
+type Instances = js.Array[Instance]
 
-type InstancesToUpdate = scala.Double
+type InstancesToUpdate = Double
 
-type IntPercent = scala.Double
+type IntPercent = Double
 
-type LaunchConfigurationNames = js.Array[typings.awsSdk.autoscalingMod.ResourceName]
+type LaunchConfigurationNames = js.Array[XmlStringMaxLen255]
 
-type LaunchConfigurations = js.Array[typings.awsSdk.autoscalingMod.LaunchConfiguration]
+type LaunchConfigurations = js.Array[LaunchConfiguration]
 
-type LaunchTemplateName = java.lang.String
+type LaunchTemplateName = String
 
-type LifecycleActionResult = java.lang.String
+type LifecycleActionResult = String
 
-type LifecycleActionToken = java.lang.String
+type LifecycleActionToken = String
 
-type LifecycleHookNames = js.Array[typings.awsSdk.autoscalingMod.AsciiStringMaxLen255]
+type LifecycleHookNames = js.Array[AsciiStringMaxLen255]
 
-type LifecycleHookSpecifications = js.Array[typings.awsSdk.autoscalingMod.LifecycleHookSpecification]
+type LifecycleHookSpecifications = js.Array[LifecycleHookSpecification]
 
-type LifecycleHooks = js.Array[typings.awsSdk.autoscalingMod.LifecycleHook]
+type LifecycleHooks = js.Array[LifecycleHook]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Pending_
@@ -144,41 +236,74 @@ type LifecycleHooks = js.Array[typings.awsSdk.autoscalingMod.LifecycleHook]
   - typings.awsSdk.awsSdkStrings.Detached_
   - typings.awsSdk.awsSdkStrings.EnteringStandby
   - typings.awsSdk.awsSdkStrings.Standby_
+  - typings.awsSdk.awsSdkStrings.WarmedColonPending
+  - typings.awsSdk.awsSdkStrings.WarmedColonPendingColonWait
+  - typings.awsSdk.awsSdkStrings.WarmedColonPendingColonProceed
+  - typings.awsSdk.awsSdkStrings.WarmedColonTerminating
+  - typings.awsSdk.awsSdkStrings.WarmedColonTerminatingColonWait
+  - typings.awsSdk.awsSdkStrings.WarmedColonTerminatingColonProceed
+  - typings.awsSdk.awsSdkStrings.WarmedColonTerminated
+  - typings.awsSdk.awsSdkStrings.WarmedColonStopped
+  - typings.awsSdk.awsSdkStrings.WarmedColonRunning
+  - typings.awsSdk.awsSdkStrings.WarmedColonHibernated
   - java.lang.String
 */
-type LifecycleState = typings.awsSdk.autoscalingMod._LifecycleState | java.lang.String
+type LifecycleState = _LifecycleState | String
 
-type LifecycleTransition = java.lang.String
+type LifecycleTransition = String
 
-type LoadBalancerNames = js.Array[typings.awsSdk.autoscalingMod.XmlStringMaxLen255]
+type LoadBalancerNames = js.Array[XmlStringMaxLen255]
 
-type LoadBalancerStates = js.Array[typings.awsSdk.autoscalingMod.LoadBalancerState]
+type LoadBalancerStates = js.Array[LoadBalancerState]
 
-type LoadBalancerTargetGroupStates = js.Array[typings.awsSdk.autoscalingMod.LoadBalancerTargetGroupState]
+type LoadBalancerTargetGroupStates = js.Array[LoadBalancerTargetGroupState]
 
-type MaxInstanceLifetime = scala.Double
+type LoadForecasts = js.Array[LoadForecast]
 
-type MaxNumberOfAutoScalingGroups = scala.Double
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.included
+  - typings.awsSdk.awsSdkStrings.excluded
+  - typings.awsSdk.awsSdkStrings.required__
+  - java.lang.String
+*/
+type LocalStorage = _LocalStorage | String
 
-type MaxNumberOfLaunchConfigurations = scala.Double
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.hdd_
+  - typings.awsSdk.awsSdkStrings.ssd_
+  - java.lang.String
+*/
+type LocalStorageType = _LocalStorageType | String
 
-type MaxRecords = scala.Double
+type LocalStorageTypes = js.Array[LocalStorageType]
 
-type MetricCollectionTypes = js.Array[typings.awsSdk.autoscalingMod.MetricCollectionType]
+type MaxGroupPreparedCapacity = Double
 
-type MetricDimensionName = java.lang.String
+type MaxInstanceLifetime = Double
 
-type MetricDimensionValue = java.lang.String
+type MaxNumberOfAutoScalingGroups = Double
 
-type MetricDimensions = js.Array[typings.awsSdk.autoscalingMod.MetricDimension]
+type MaxNumberOfLaunchConfigurations = Double
 
-type MetricGranularityTypes = js.Array[typings.awsSdk.autoscalingMod.MetricGranularityType]
+type MaxRecords = Double
 
-type MetricName = java.lang.String
+type MetricCollectionTypes = js.Array[MetricCollectionType]
 
-type MetricNamespace = java.lang.String
+type MetricDataQueries = js.Array[MetricDataQuery]
 
-type MetricScale = scala.Double
+type MetricDimensionName = String
+
+type MetricDimensionValue = String
+
+type MetricDimensions = js.Array[MetricDimension]
+
+type MetricGranularityTypes = js.Array[MetricGranularityType]
+
+type MetricName = String
+
+type MetricNamespace = String
+
+type MetricScale = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Average_
@@ -188,7 +313,7 @@ type MetricScale = scala.Double
   - typings.awsSdk.awsSdkStrings.Sum_
   - java.lang.String
 */
-type MetricStatistic = typings.awsSdk.autoscalingMod._MetricStatistic | java.lang.String
+type MetricStatistic = _MetricStatistic | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ASGAverageCPUUtilization
@@ -197,57 +322,120 @@ type MetricStatistic = typings.awsSdk.autoscalingMod._MetricStatistic | java.lan
   - typings.awsSdk.awsSdkStrings.ALBRequestCountPerTarget
   - java.lang.String
 */
-type MetricType = typings.awsSdk.autoscalingMod._MetricType | java.lang.String
+type MetricType = _MetricType | String
 
-type MetricUnit = java.lang.String
+type MetricUnit = String
 
-type Metrics = js.Array[typings.awsSdk.autoscalingMod.XmlStringMaxLen255]
+type Metrics = js.Array[XmlStringMaxLen255]
 
-type MinAdjustmentMagnitude = scala.Double
+type MinAdjustmentMagnitude = Double
 
-type MinAdjustmentStep = scala.Double
+type MinAdjustmentStep = Double
 
-type MixedInstanceSpotPrice = java.lang.String
+type MixedInstanceSpotPrice = String
 
-type MonitoringEnabled = scala.Boolean
+type MonitoringEnabled = Boolean
 
-type NoDevice = scala.Boolean
+type NoDevice = Boolean
 
-type NotificationConfigurations = js.Array[typings.awsSdk.autoscalingMod.NotificationConfiguration]
+type NonZeroIntPercent = Double
 
-type NotificationTargetResourceName = java.lang.String
+type NotificationConfigurations = js.Array[NotificationConfiguration]
 
-type NumberOfAutoScalingGroups = scala.Double
+type NotificationTargetResourceName = String
 
-type NumberOfLaunchConfigurations = scala.Double
+type NullableBoolean = Boolean
 
-type OnDemandBaseCapacity = scala.Double
+type NullablePositiveDouble = Double
 
-type OnDemandPercentageAboveBaseCapacity = scala.Double
+type NullablePositiveInteger = Double
 
-type Overrides = js.Array[typings.awsSdk.autoscalingMod.LaunchTemplateOverrides]
+type NumberOfAutoScalingGroups = Double
 
-type PolicyIncrement = scala.Double
+type NumberOfLaunchConfigurations = Double
 
-type PolicyNames = js.Array[typings.awsSdk.autoscalingMod.ResourceName]
+type OnDemandBaseCapacity = Double
 
-type PolicyTypes = js.Array[typings.awsSdk.autoscalingMod.XmlStringMaxLen64]
+type OnDemandPercentageAboveBaseCapacity = Double
 
-type ProcessNames = js.Array[typings.awsSdk.autoscalingMod.XmlStringMaxLen255]
+type Overrides = js.Array[LaunchTemplateOverrides]
 
-type Processes = js.Array[typings.awsSdk.autoscalingMod.ProcessType]
+type PolicyIncrement = Double
 
-type Progress = scala.Double
+type PolicyNames = js.Array[ResourceName]
 
-type PropagateAtLaunch = scala.Boolean
+type PolicyTypes = js.Array[XmlStringMaxLen64]
 
-type ProtectedFromScaleIn = scala.Boolean
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ASGTotalCPUUtilization
+  - typings.awsSdk.awsSdkStrings.ASGTotalNetworkIn
+  - typings.awsSdk.awsSdkStrings.ASGTotalNetworkOut
+  - typings.awsSdk.awsSdkStrings.ALBTargetGroupRequestCount
+  - java.lang.String
+*/
+type PredefinedLoadMetricType = _PredefinedLoadMetricType | String
 
-type RefreshInstanceWarmup = scala.Double
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ASGCPUUtilization
+  - typings.awsSdk.awsSdkStrings.ASGNetworkIn
+  - typings.awsSdk.awsSdkStrings.ASGNetworkOut
+  - typings.awsSdk.awsSdkStrings.ALBRequestCount
+  - java.lang.String
+*/
+type PredefinedMetricPairType = _PredefinedMetricPairType | String
 
-type RefreshStrategy = typings.awsSdk.awsSdkStrings.Rolling | java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ASGAverageCPUUtilization
+  - typings.awsSdk.awsSdkStrings.ASGAverageNetworkIn
+  - typings.awsSdk.awsSdkStrings.ASGAverageNetworkOut
+  - typings.awsSdk.awsSdkStrings.ALBRequestCountPerTarget
+  - java.lang.String
+*/
+type PredefinedScalingMetricType = _PredefinedScalingMetricType | String
 
-type ResourceName = java.lang.String
+type PredictiveScalingForecastTimestamps = js.Array[js.Date]
+
+type PredictiveScalingForecastValues = js.Array[MetricScale]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.HonorMaxCapacity
+  - typings.awsSdk.awsSdkStrings.IncreaseMaxCapacity
+  - java.lang.String
+*/
+type PredictiveScalingMaxCapacityBreachBehavior = _PredictiveScalingMaxCapacityBreachBehavior | String
+
+type PredictiveScalingMaxCapacityBuffer = Double
+
+type PredictiveScalingMetricSpecifications = js.Array[PredictiveScalingMetricSpecification]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ForecastAndScale
+  - typings.awsSdk.awsSdkStrings.ForecastOnly
+  - java.lang.String
+*/
+type PredictiveScalingMode = _PredictiveScalingMode | String
+
+type PredictiveScalingSchedulingBufferTime = Double
+
+type ProcessNames = js.Array[XmlStringMaxLen255]
+
+type Processes = js.Array[ProcessType]
+
+type Progress = Double
+
+type PropagateAtLaunch = Boolean
+
+type ProtectedFromScaleIn = Boolean
+
+type RefreshInstanceWarmup = Double
+
+type RefreshStrategy = Rolling | String
+
+type ResourceName = String
+
+type ReturnData = Boolean
+
+type ReuseOnScaleIn = Boolean
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PendingSpotBidPlacement
@@ -264,71 +452,91 @@ type ResourceName = java.lang.String
   - typings.awsSdk.awsSdkStrings.Cancelled_
   - java.lang.String
 */
-type ScalingActivityStatusCode = typings.awsSdk.autoscalingMod._ScalingActivityStatusCode | java.lang.String
+type ScalingActivityStatusCode = _ScalingActivityStatusCode | String
 
-type ScalingPolicies = js.Array[typings.awsSdk.autoscalingMod.ScalingPolicy]
+type ScalingPolicies = js.Array[ScalingPolicy]
 
-type ScalingPolicyEnabled = scala.Boolean
+type ScalingPolicyEnabled = Boolean
 
-type ScheduledActionNames = js.Array[typings.awsSdk.autoscalingMod.ResourceName]
+type ScheduledActionNames = js.Array[XmlStringMaxLen255]
 
-type ScheduledUpdateGroupActionRequests = js.Array[typings.awsSdk.autoscalingMod.ScheduledUpdateGroupActionRequest]
+type ScheduledUpdateGroupActionRequests = js.Array[ScheduledUpdateGroupActionRequest]
 
-type ScheduledUpdateGroupActions = js.Array[typings.awsSdk.autoscalingMod.ScheduledUpdateGroupAction]
+type ScheduledUpdateGroupActions = js.Array[ScheduledUpdateGroupAction]
 
-type SecurityGroups = js.Array[typings.awsSdk.autoscalingMod.XmlString]
+type SecurityGroups = js.Array[XmlString]
 
-type ShouldDecrementDesiredCapacity = scala.Boolean
+type ShouldDecrementDesiredCapacity = Boolean
 
-type ShouldRespectGracePeriod = scala.Boolean
+type ShouldRespectGracePeriod = Boolean
 
-type SpotInstancePools = scala.Double
+type SkipMatching = Boolean
 
-type SpotPrice = java.lang.String
+type SpotInstancePools = Double
 
-type StepAdjustments = js.Array[typings.awsSdk.autoscalingMod.StepAdjustment]
+type SpotPrice = String
 
-type SuspendedProcesses = js.Array[typings.awsSdk.autoscalingMod.SuspendedProcess]
+type StepAdjustments = js.Array[StepAdjustment]
 
-type TagDescriptionList = js.Array[typings.awsSdk.autoscalingMod.TagDescription]
+type SuspendedProcesses = js.Array[SuspendedProcess]
 
-type TagKey = java.lang.String
+type TagDescriptionList = js.Array[TagDescription]
 
-type TagValue = java.lang.String
+type TagKey = String
 
-type Tags = js.Array[typings.awsSdk.autoscalingMod.Tag]
+type TagValue = String
 
-type TargetGroupARNs = js.Array[typings.awsSdk.autoscalingMod.XmlStringMaxLen511]
+type Tags = js.Array[Tag]
 
-type TerminationPolicies = js.Array[typings.awsSdk.autoscalingMod.XmlStringMaxLen1600]
+type TargetGroupARNs = js.Array[XmlStringMaxLen511]
 
-type TimestampType = typings.std.Date
+type TerminationPolicies = js.Array[XmlStringMaxLen1600]
 
-type Values = js.Array[typings.awsSdk.autoscalingMod.XmlString]
+type TimestampType = js.Date
 
-type XmlString = java.lang.String
+type Values = js.Array[XmlString]
 
-type XmlStringMaxLen1023 = java.lang.String
+type WarmPoolMinSize = Double
 
-type XmlStringMaxLen1600 = java.lang.String
+type WarmPoolSize = Double
 
-type XmlStringMaxLen19 = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Stopped_
+  - typings.awsSdk.awsSdkStrings.Running_
+  - typings.awsSdk.awsSdkStrings.Hibernated
+  - java.lang.String
+*/
+type WarmPoolState = _WarmPoolState | String
 
-type XmlStringMaxLen2047 = java.lang.String
+type WarmPoolStatus = PendingDelete | String
 
-type XmlStringMaxLen255 = java.lang.String
+type XmlString = String
 
-type XmlStringMaxLen32 = java.lang.String
+type XmlStringMaxLen1023 = String
 
-type XmlStringMaxLen511 = java.lang.String
+type XmlStringMaxLen1600 = String
 
-type XmlStringMaxLen64 = java.lang.String
+type XmlStringMaxLen19 = String
 
-type XmlStringUserData = java.lang.String
+type XmlStringMaxLen2047 = String
+
+type XmlStringMaxLen255 = String
+
+type XmlStringMaxLen32 = String
+
+type XmlStringMaxLen511 = String
+
+type XmlStringMaxLen64 = String
+
+type XmlStringMetricLabel = String
+
+type XmlStringMetricStat = String
+
+type XmlStringUserData = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2011-01-01`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.autoscalingMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

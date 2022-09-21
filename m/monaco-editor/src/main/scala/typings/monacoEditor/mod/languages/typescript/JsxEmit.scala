@@ -32,6 +32,18 @@ object JsxEmit extends StObject {
   /* 2 */ val React: typings.monacoEditor.mod.languages.typescript.JsxEmit.React & Double = js.native
   
   @js.native
+  sealed trait ReactJSX
+    extends StObject
+       with JsxEmit
+  /* 4 */ val ReactJSX: typings.monacoEditor.mod.languages.typescript.JsxEmit.ReactJSX & Double = js.native
+  
+  @js.native
+  sealed trait ReactJSXDev
+    extends StObject
+       with JsxEmit
+  /* 5 */ val ReactJSXDev: typings.monacoEditor.mod.languages.typescript.JsxEmit.ReactJSXDev & Double = js.native
+  
+  @js.native
   sealed trait ReactNative
     extends StObject
        with JsxEmit

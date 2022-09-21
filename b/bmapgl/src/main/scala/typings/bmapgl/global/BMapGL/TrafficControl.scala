@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMapGL.TrafficControl")
 @js.native
-class TrafficControl ()
+open class TrafficControl ()
   extends StObject
      with typings.bmapgl.BMapGL.TrafficControl {
   

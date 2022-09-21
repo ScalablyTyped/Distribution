@@ -1,136 +1,148 @@
 package typings.firebaseFirestore
 
-import typings.firebaseFirestore.blobMod.Blob
 import typings.firebaseFirestore.byteStringMod.ByteString
 import typings.firebaseFirestore.databaseInfoMod.DatabaseId
 import typings.firebaseFirestore.documentKeyMod.DocumentKey
-import typings.firebaseFirestore.documentMod.Document
-import typings.firebaseFirestore.documentMod.MaybeDocument
-import typings.firebaseFirestore.mutationMod.FieldMask
+import typings.firebaseFirestore.documentMod.MutableDocument
+import typings.firebaseFirestore.fieldMaskMod.FieldMask
+import typings.firebaseFirestore.firestoreProtoApiMod.ApiClientObjectMap
+import typings.firebaseFirestore.firestoreProtoApiMod.BatchGetDocumentsResponse
+import typings.firebaseFirestore.firestoreProtoApiMod.Document
+import typings.firebaseFirestore.firestoreProtoApiMod.DocumentMask
+import typings.firebaseFirestore.firestoreProtoApiMod.DocumentsTarget
+import typings.firebaseFirestore.firestoreProtoApiMod.FieldFilterOp
+import typings.firebaseFirestore.firestoreProtoApiMod.FieldReference
+import typings.firebaseFirestore.firestoreProtoApiMod.Filter
+import typings.firebaseFirestore.firestoreProtoApiMod.ListenResponse
+import typings.firebaseFirestore.firestoreProtoApiMod.Order
+import typings.firebaseFirestore.firestoreProtoApiMod.OrderDirection
+import typings.firebaseFirestore.firestoreProtoApiMod.QueryTarget
+import typings.firebaseFirestore.firestoreProtoApiMod.Timestamp
+import typings.firebaseFirestore.firestoreProtoApiMod.Write
+import typings.firebaseFirestore.firestoreProtoApiMod.WriteResult
 import typings.firebaseFirestore.mutationMod.Mutation
 import typings.firebaseFirestore.mutationMod.MutationResult
+import typings.firebaseFirestore.numberSerializerMod.Serializer
 import typings.firebaseFirestore.objectValueMod.ObjectValue
 import typings.firebaseFirestore.pathMod.FieldPath
 import typings.firebaseFirestore.pathMod.ResourcePath
-import typings.firebaseFirestore.queryMod.Direction
-import typings.firebaseFirestore.queryMod.FieldFilter
-import typings.firebaseFirestore.queryMod.Filter
-import typings.firebaseFirestore.queryMod.Operator
-import typings.firebaseFirestore.queryMod.OrderBy
+import typings.firebaseFirestore.queryMod.Query
 import typings.firebaseFirestore.snapshotVersionMod.SnapshotVersion
 import typings.firebaseFirestore.targetDataMod.TargetData
+import typings.firebaseFirestore.targetMod.Direction
+import typings.firebaseFirestore.targetMod.FieldFilter
+import typings.firebaseFirestore.targetMod.Operator
+import typings.firebaseFirestore.targetMod.OrderBy
 import typings.firebaseFirestore.targetMod.Target
-import typings.firebaseFirestore.timestampMod.Timestamp
 import typings.firebaseFirestore.watchChangeMod.WatchChange
-import typings.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/firestore/dist/packages/firestore/src/remote/serializer", JSImport.Namespace)
-@js.native
-object remoteSerializerMod extends js.Object {
+object remoteSerializerMod {
+  
+  @JSImport("@firebase/firestore/dist/firestore/src/remote/serializer", JSImport.Namespace)
   @js.native
-  class JsonProtoSerializer protected () extends js.Object {
+  val ^ : js.Any = js.native
+  
+  @JSImport("@firebase/firestore/dist/firestore/src/remote/serializer", "JsonProtoSerializer")
+  @js.native
+  open class JsonProtoSerializer protected ()
+    extends StObject
+       with Serializer {
     def this(databaseId: DatabaseId, useProto3Json: Boolean) = this()
+    
     val databaseId: DatabaseId = js.native
-    val useProto3Json: Boolean = js.native
+    
+    /* CompleteClass */
+    override val useProto3Json: Boolean = js.native
   }
   
-  def fromBytes(serializer: JsonProtoSerializer): ByteString = js.native
-  def fromBytes(serializer: JsonProtoSerializer, value: String): ByteString = js.native
-  def fromBytes(serializer: JsonProtoSerializer, value: Uint8Array): ByteString = js.native
-  def fromDirection(): js.UndefOr[Direction] = js.native
-  def fromDirection(
-    dir: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.OrderDirection */ js.Any
-  ): js.UndefOr[Direction] = js.native
-  def fromDocument(
+  inline def convertQueryTargetToQuery(target: QueryTarget): Query = ^.asInstanceOf[js.Dynamic].applyDynamic("convertQueryTargetToQuery")(target.asInstanceOf[js.Any]).asInstanceOf[Query]
+  
+  inline def fromBatchGetDocumentsResponse(serializer: JsonProtoSerializer, result: BatchGetDocumentsResponse): MutableDocument = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBatchGetDocumentsResponse")(serializer.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[MutableDocument]
+  
+  inline def fromBytes(serializer: JsonProtoSerializer): ByteString = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(serializer.asInstanceOf[js.Any]).asInstanceOf[ByteString]
+  inline def fromBytes(serializer: JsonProtoSerializer, value: String): ByteString = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(serializer.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[ByteString]
+  inline def fromBytes(serializer: JsonProtoSerializer, value: js.typedarray.Uint8Array): ByteString = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(serializer.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[ByteString]
+  
+  inline def fromDirection(): js.UndefOr[Direction] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDirection")().asInstanceOf[js.UndefOr[Direction]]
+  inline def fromDirection(dir: OrderDirection): js.UndefOr[Direction] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDirection")(dir.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Direction]]
+  
+  inline def fromDocument(serializer: JsonProtoSerializer, document: Document): MutableDocument = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDocument")(serializer.asInstanceOf[js.Any], document.asInstanceOf[js.Any])).asInstanceOf[MutableDocument]
+  inline def fromDocument(serializer: JsonProtoSerializer, document: Document, hasCommittedMutations: Boolean): MutableDocument = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDocument")(serializer.asInstanceOf[js.Any], document.asInstanceOf[js.Any], hasCommittedMutations.asInstanceOf[js.Any])).asInstanceOf[MutableDocument]
+  
+  inline def fromDocumentMask(proto: DocumentMask): FieldMask = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDocumentMask")(proto.asInstanceOf[js.Any]).asInstanceOf[FieldMask]
+  
+  inline def fromDocumentsTarget(documentsTarget: DocumentsTarget): Target = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDocumentsTarget")(documentsTarget.asInstanceOf[js.Any]).asInstanceOf[Target]
+  
+  inline def fromFieldFilter(filter: Filter): typings.firebaseFirestore.targetMod.Filter = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFieldFilter")(filter.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.targetMod.Filter]
+  
+  inline def fromFieldPathReference(fieldReference: FieldReference): FieldPath = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFieldPathReference")(fieldReference.asInstanceOf[js.Any]).asInstanceOf[FieldPath]
+  
+  inline def fromMutation(serializer: JsonProtoSerializer, proto: Write): Mutation = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMutation")(serializer.asInstanceOf[js.Any], proto.asInstanceOf[js.Any])).asInstanceOf[Mutation]
+  
+  inline def fromName(serializer: JsonProtoSerializer, name: String): DocumentKey = (^.asInstanceOf[js.Dynamic].applyDynamic("fromName")(serializer.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[DocumentKey]
+  
+  inline def fromOperatorName(op: FieldFilterOp): Operator = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOperatorName")(op.asInstanceOf[js.Any]).asInstanceOf[Operator]
+  
+  inline def fromPropertyOrder(orderBy: Order): OrderBy = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPropertyOrder")(orderBy.asInstanceOf[js.Any]).asInstanceOf[OrderBy]
+  
+  inline def fromQueryTarget(target: QueryTarget): Target = ^.asInstanceOf[js.Dynamic].applyDynamic("fromQueryTarget")(target.asInstanceOf[js.Any]).asInstanceOf[Target]
+  
+  inline def fromUnaryFilter(filter: Filter): typings.firebaseFirestore.targetMod.Filter = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUnaryFilter")(filter.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.targetMod.Filter]
+  
+  inline def fromVersion(version: Timestamp): SnapshotVersion = ^.asInstanceOf[js.Dynamic].applyDynamic("fromVersion")(version.asInstanceOf[js.Any]).asInstanceOf[SnapshotVersion]
+  
+  inline def fromWatchChange(serializer: JsonProtoSerializer, change: ListenResponse): WatchChange = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWatchChange")(serializer.asInstanceOf[js.Any], change.asInstanceOf[js.Any])).asInstanceOf[WatchChange]
+  
+  inline def fromWriteResults(): js.Array[MutationResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWriteResults")().asInstanceOf[js.Array[MutationResult]]
+  inline def fromWriteResults(protos: js.Array[WriteResult]): js.Array[MutationResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWriteResults")(protos.asInstanceOf[js.Any]).asInstanceOf[js.Array[MutationResult]]
+  inline def fromWriteResults(protos: js.Array[WriteResult], commitTime: Timestamp): js.Array[MutationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWriteResults")(protos.asInstanceOf[js.Any], commitTime.asInstanceOf[js.Any])).asInstanceOf[js.Array[MutationResult]]
+  inline def fromWriteResults(protos: Unit, commitTime: Timestamp): js.Array[MutationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWriteResults")(protos.asInstanceOf[js.Any], commitTime.asInstanceOf[js.Any])).asInstanceOf[js.Array[MutationResult]]
+  
+  inline def getEncodedDatabaseId(serializer: JsonProtoSerializer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getEncodedDatabaseId")(serializer.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def isValidResourceName(path: ResourcePath): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidResourceName")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def toBytes(serializer: JsonProtoSerializer, bytes: ByteString): String | js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("toBytes")(serializer.asInstanceOf[js.Any], bytes.asInstanceOf[js.Any])).asInstanceOf[String | js.typedarray.Uint8Array]
+  
+  inline def toDirection(dir: Direction): OrderDirection = ^.asInstanceOf[js.Dynamic].applyDynamic("toDirection")(dir.asInstanceOf[js.Any]).asInstanceOf[OrderDirection]
+  
+  inline def toDocument(serializer: JsonProtoSerializer, document: MutableDocument): Document = (^.asInstanceOf[js.Dynamic].applyDynamic("toDocument")(serializer.asInstanceOf[js.Any], document.asInstanceOf[js.Any])).asInstanceOf[Document]
+  
+  inline def toDocumentMask(fieldMask: FieldMask): DocumentMask = ^.asInstanceOf[js.Dynamic].applyDynamic("toDocumentMask")(fieldMask.asInstanceOf[js.Any]).asInstanceOf[DocumentMask]
+  
+  inline def toDocumentsTarget(serializer: JsonProtoSerializer, target: Target): DocumentsTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("toDocumentsTarget")(serializer.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[DocumentsTarget]
+  
+  inline def toFieldPathReference(path: FieldPath): FieldReference = ^.asInstanceOf[js.Dynamic].applyDynamic("toFieldPathReference")(path.asInstanceOf[js.Any]).asInstanceOf[FieldReference]
+  
+  inline def toListenRequestLabels(serializer: JsonProtoSerializer, targetData: TargetData): ApiClientObjectMap[String] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("toListenRequestLabels")(serializer.asInstanceOf[js.Any], targetData.asInstanceOf[js.Any])).asInstanceOf[ApiClientObjectMap[String] | Null]
+  
+  inline def toMutation(serializer: JsonProtoSerializer, mutation: Mutation): Write = (^.asInstanceOf[js.Dynamic].applyDynamic("toMutation")(serializer.asInstanceOf[js.Any], mutation.asInstanceOf[js.Any])).asInstanceOf[Write]
+  
+  inline def toMutationDocument(serializer: JsonProtoSerializer, key: DocumentKey, fields: ObjectValue): Document = (^.asInstanceOf[js.Dynamic].applyDynamic("toMutationDocument")(serializer.asInstanceOf[js.Any], key.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[Document]
+  
+  inline def toName(serializer: JsonProtoSerializer, key: DocumentKey): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toName")(serializer.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def toOperatorName(op: Operator): FieldFilterOp = ^.asInstanceOf[js.Dynamic].applyDynamic("toOperatorName")(op.asInstanceOf[js.Any]).asInstanceOf[FieldFilterOp]
+  
+  inline def toPropertyOrder(orderBy: OrderBy): Order = ^.asInstanceOf[js.Dynamic].applyDynamic("toPropertyOrder")(orderBy.asInstanceOf[js.Any]).asInstanceOf[Order]
+  
+  inline def toQueryTarget(serializer: JsonProtoSerializer, target: Target): QueryTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("toQueryTarget")(serializer.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[QueryTarget]
+  
+  inline def toResourceName(databaseId: DatabaseId, path: ResourcePath): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toResourceName")(databaseId.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def toTarget(serializer: JsonProtoSerializer, targetData: TargetData): typings.firebaseFirestore.firestoreProtoApiMod.Target = (^.asInstanceOf[js.Dynamic].applyDynamic("toTarget")(serializer.asInstanceOf[js.Any], targetData.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseFirestore.firestoreProtoApiMod.Target]
+  
+  inline def toTimestamp(
     serializer: JsonProtoSerializer,
-    document: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.Document */ js.Any
-  ): Document = js.native
-  def fromDocument(
-    serializer: JsonProtoSerializer,
-    document: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.Document */ js.Any,
-    hasCommittedMutations: Boolean
-  ): Document = js.native
-  def fromDocumentMask(
-    proto: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.DocumentMask */ js.Any
-  ): FieldMask = js.native
-  def fromDocumentsTarget(
-    documentsTarget: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.DocumentsTarget */ js.Any
-  ): Target = js.native
-  def fromFieldFilter(
-    filter: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.Filter */ js.Any
-  ): Filter = js.native
-  def fromFieldPathReference(
-    fieldReference: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.FieldReference */ js.Any
-  ): FieldPath = js.native
-  def fromMaybeDocument(
-    serializer: JsonProtoSerializer,
-    result: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.BatchGetDocumentsResponse */ js.Any
-  ): MaybeDocument = js.native
-  def fromMutation(
-    serializer: JsonProtoSerializer,
-    proto: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.Write */ js.Any
-  ): Mutation = js.native
-  def fromName(serializer: JsonProtoSerializer, name: String): DocumentKey = js.native
-  def fromOperatorName(
-    op: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.FieldFilterOp */ js.Any
-  ): Operator = js.native
-  def fromPropertyOrder(
-    orderBy: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.Order */ js.Any
-  ): OrderBy = js.native
-  def fromQueryTarget(
-    target: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.QueryTarget */ js.Any
-  ): Target = js.native
-  def fromUnaryFilter(
-    filter: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.Filter */ js.Any
-  ): Filter = js.native
-  def fromVersion(
-    version: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.Timestamp */ js.Any
-  ): SnapshotVersion = js.native
-  def fromWatchChange(
-    serializer: JsonProtoSerializer,
-    change: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.ListenResponse */ js.Any
-  ): WatchChange = js.native
-  def fromWriteResults(): js.Array[MutationResult] = js.native
-  def fromWriteResults(
-    protos: js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WriteResult */ _
-    ]
-  ): js.Array[MutationResult] = js.native
-  def fromWriteResults(
-    protos: js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WriteResult */ _
-    ],
-    commitTime: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.Timestamp */ js.Any
-  ): js.Array[MutationResult] = js.native
-  def getEncodedDatabaseId(serializer: JsonProtoSerializer): String = js.native
-  def isValidResourceName(path: ResourcePath): Boolean = js.native
-  def toBytes(serializer: JsonProtoSerializer, bytes: Blob): String | Uint8Array = js.native
-  def toBytes(serializer: JsonProtoSerializer, bytes: ByteString): String | Uint8Array = js.native
-  def toDirection(dir: Direction): js.Any = js.native
-  def toDocument(serializer: JsonProtoSerializer, document: Document): js.Any = js.native
-  def toDocumentMask(fieldMask: FieldMask): js.Any = js.native
-  def toDocumentsTarget(serializer: JsonProtoSerializer, target: Target): js.Any = js.native
-  def toDouble(serializer: JsonProtoSerializer, value: Double): js.Any = js.native
-  def toFieldPathReference(path: FieldPath): js.Any = js.native
-  def toInteger(value: Double): js.Any = js.native
-  def toListenRequestLabels(serializer: JsonProtoSerializer, targetData: TargetData): (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.ApiClientObjectMap<string> */ js.Any) | Null = js.native
-  def toMutation(serializer: JsonProtoSerializer, mutation: Mutation): js.Any = js.native
-  def toMutationDocument(serializer: JsonProtoSerializer, key: DocumentKey, fields: ObjectValue): js.Any = js.native
-  def toName(serializer: JsonProtoSerializer, key: DocumentKey): String = js.native
-  def toNumber(serializer: JsonProtoSerializer, value: Double): js.Any = js.native
-  def toOperatorName(op: Operator): js.Any = js.native
-  def toPropertyOrder(orderBy: OrderBy): js.Any = js.native
-  def toQueryTarget(serializer: JsonProtoSerializer, target: Target): js.Any = js.native
-  def toResourceName(databaseId: DatabaseId, path: ResourcePath): String = js.native
-  def toTarget(serializer: JsonProtoSerializer, targetData: TargetData): js.Any = js.native
-  def toTimestamp(serializer: JsonProtoSerializer, timestamp: Timestamp): js.Any = js.native
-  def toUnaryOrFieldFilter(filter: FieldFilter): js.Any = js.native
-  def toVersion(serializer: JsonProtoSerializer, version: SnapshotVersion): js.Any = js.native
-  def versionFromListenResponse(
-    change: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify api.ListenResponse */ js.Any
-  ): SnapshotVersion = js.native
+    timestamp: typings.firebaseFirestore.liteApiTimestampMod.Timestamp
+  ): Timestamp = (^.asInstanceOf[js.Dynamic].applyDynamic("toTimestamp")(serializer.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[Timestamp]
+  
+  inline def toUnaryOrFieldFilter(filter: FieldFilter): Filter = ^.asInstanceOf[js.Dynamic].applyDynamic("toUnaryOrFieldFilter")(filter.asInstanceOf[js.Any]).asInstanceOf[Filter]
+  
+  inline def toVersion(serializer: JsonProtoSerializer, version: SnapshotVersion): Timestamp = (^.asInstanceOf[js.Dynamic].applyDynamic("toVersion")(serializer.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Timestamp]
+  
+  inline def versionFromListenResponse(change: ListenResponse): SnapshotVersion = ^.asInstanceOf[js.Dynamic].applyDynamic("versionFromListenResponse")(change.asInstanceOf[js.Any]).asInstanceOf[SnapshotVersion]
 }
-

@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Middleware[DefaultState, DefaultContext]]
-  inline def apply(opts: Options): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def apply(): Middleware[DefaultState, DefaultContext, Any] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Middleware[DefaultState, DefaultContext, Any]]
+  inline def apply(opts: Options): Middleware[DefaultState, DefaultContext, Any] = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext, Any]]
   
   @JSImport("koa-cash", JSImport.Namespace)
   @js.native
@@ -30,7 +30,7 @@ object mod {
       * @param key Cache key
       * @param maxAge Max age (in milliseconds) for the cache
       */
-    def get(key: String, maxAge: Double): js.Promise[js.UndefOr[js.Any]]
+    def get(key: String, maxAge: Double): js.Promise[js.UndefOr[Any]]
     
     /**
       * A hashing function. By default, it caches based on the URL.
@@ -56,7 +56,7 @@ object mod {
       * @param value Cached value
       * @param maxAge Max age (in milliseconds) for the cache
       */
-    def set(key: String, value: js.Any, maxAge: Double): js.Promise[Unit]
+    def set(key: String, value: Any, maxAge: Double): js.Promise[Unit]
     
     /**
       * If a truthy value is passed, then X-Cached-Response header will be set as HIT when response
@@ -74,8 +74,8 @@ object mod {
   object Options {
     
     inline def apply(
-      get: (String, Double) => js.Promise[js.UndefOr[js.Any]],
-      set: (String, js.Any, Double) => js.Promise[Unit]
+      get: (String, Double) => js.Promise[js.UndefOr[Any]],
+      set: (String, Any, Double) => js.Promise[Unit]
     ): Options = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get), set = js.Any.fromFunction3(set))
       __obj.asInstanceOf[Options]
@@ -87,7 +87,7 @@ object mod {
       
       inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
       
-      inline def setGet(value: (String, Double) => js.Promise[js.UndefOr[js.Any]]): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+      inline def setGet(value: (String, Double) => js.Promise[js.UndefOr[Any]]): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
       
       inline def setHash(value: /* ctx */ Context => String): Self = StObject.set(x, "hash", js.Any.fromFunction1(value))
       
@@ -97,7 +97,7 @@ object mod {
       
       inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
       
-      inline def setSet(value: (String, js.Any, Double) => js.Promise[Unit]): Self = StObject.set(x, "set", js.Any.fromFunction3(value))
+      inline def setSet(value: (String, Any, Double) => js.Promise[Unit]): Self = StObject.set(x, "set", js.Any.fromFunction3(value))
       
       inline def setSetCachedHeader(value: Boolean): Self = StObject.set(x, "setCachedHeader", value.asInstanceOf[js.Any])
       

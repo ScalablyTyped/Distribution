@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ObjectLockRule extends StObject {
   
   /**
-    * The default retention period that you want to apply to new objects placed in the specified bucket.
+    * The default Object Lock retention mode and period that you want to apply to new objects placed in the specified bucket. Bucket settings require both a mode and a period. The period can be either Days or Years but you must select one. You cannot specify Days and Years at the same time.
     */
   var DefaultRetention: js.UndefOr[typings.awsSdk.s3Mod.DefaultRetention] = js.undefined
 }

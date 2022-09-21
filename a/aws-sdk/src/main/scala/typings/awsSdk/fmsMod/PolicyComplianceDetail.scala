@@ -7,37 +7,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PolicyComplianceDetail extends StObject {
   
   /**
-    * Indicates if over 100 resources are noncompliant with the AWS Firewall Manager policy.
+    * Indicates if over 100 resources are noncompliant with the Firewall Manager policy.
     */
   var EvaluationLimitExceeded: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A timestamp that indicates when the returned information should be considered out of date.
     */
-  var ExpiredAt: js.UndefOr[TimeStamp] = js.undefined
+  var ExpiredAt: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * Details about problems with dependent services, such as AWS WAF or AWS Config, that are causing a resource to be noncompliant. The details include the name of the dependent service and the error message received that indicates the problem with the service.
+    * Details about problems with dependent services, such as WAF or Config, and the error message received that indicates the problem with the service.
     */
   var IssueInfoMap: js.UndefOr[typings.awsSdk.fmsMod.IssueInfoMap] = js.undefined
   
   /**
-    * The AWS account ID.
+    * The Amazon Web Services account ID.
     */
   var MemberAccount: js.UndefOr[AWSAccountId] = js.undefined
   
   /**
-    * The ID of the AWS Firewall Manager policy.
+    * The ID of the Firewall Manager policy.
     */
   var PolicyId: js.UndefOr[typings.awsSdk.fmsMod.PolicyId] = js.undefined
   
   /**
-    * The AWS account that created the AWS Firewall Manager policy.
+    * The Amazon Web Services account that created the Firewall Manager policy.
     */
   var PolicyOwner: js.UndefOr[AWSAccountId] = js.undefined
   
   /**
-    * An array of resources that aren't protected by the AWS WAF or Shield Advanced policy or that aren't in compliance with the security group policy.
+    * An array of resources that aren't protected by the WAF or Shield Advanced policy or that aren't in compliance with the security group policy.
     */
   var Violators: js.UndefOr[ComplianceViolators] = js.undefined
 }
@@ -54,7 +54,7 @@ object PolicyComplianceDetail {
     
     inline def setEvaluationLimitExceededUndefined: Self = StObject.set(x, "EvaluationLimitExceeded", js.undefined)
     
-    inline def setExpiredAt(value: TimeStamp): Self = StObject.set(x, "ExpiredAt", value.asInstanceOf[js.Any])
+    inline def setExpiredAt(value: js.Date): Self = StObject.set(x, "ExpiredAt", value.asInstanceOf[js.Any])
     
     inline def setExpiredAtUndefined: Self = StObject.set(x, "ExpiredAt", js.undefined)
     
@@ -78,6 +78,6 @@ object PolicyComplianceDetail {
     
     inline def setViolatorsUndefined: Self = StObject.set(x, "Violators", js.undefined)
     
-    inline def setViolatorsVarargs(value: ComplianceViolator*): Self = StObject.set(x, "Violators", js.Array(value :_*))
+    inline def setViolatorsVarargs(value: ComplianceViolator*): Self = StObject.set(x, "Violators", js.Array(value*))
   }
 }

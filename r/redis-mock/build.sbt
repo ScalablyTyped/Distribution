@@ -1,13 +1,17 @@
 organization := "org.scalablytyped"
 name := "redis-mock"
-version := "0.17-dt-20200515Z-0d8316"
-scalaVersion := "3.0.1"
+version := "0.17-dt-20211209Z-254419"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-11c649",
-  "org.scalablytyped" %%% "redis" % "2.8-dt-20201013Z-e43df8",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
+  "org.scalablytyped" %%% "generic-pool" % "3.9.0-2c3e3d",
+  "org.scalablytyped" %%% "node" % "18.7-dt-20220913Z-77cc8d",
+  "org.scalablytyped" %%% "redis" % "4.3.1-195a4e",
+  "org.scalablytyped" %%% "redis__client" % "1.3.0-fd052e",
+  "org.scalablytyped" %%% "redis__search" % "1.1.0-9aa275",
+  "org.scalablytyped" %%% "redis__time-series" % "1.0.3-68a027",
+  "org.scalablytyped" %%% "std" % "4.8-958c79")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -25,9 +25,9 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("react-native-sortable-grid", JSImport.Default)
   @js.native
-  class defaultCls protected () extends ClassicComponent[SortableGridProps, ComponentState] {
+  open class defaultCls protected () extends ClassicComponent[SortableGridProps, ComponentState] {
     def this(props: SortableGridProps) = this()
-    def this(props: SortableGridProps, context: js.Any) = this()
+    def this(props: SortableGridProps, context: Any) = this()
   }
   
   inline def default_=(x: SortableGridStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
@@ -47,7 +47,7 @@ object mod {
       
       inline def setItemOrder(value: js.Array[OrderedItem]): Self = StObject.set(x, "itemOrder", value.asInstanceOf[js.Any])
       
-      inline def setItemOrderVarargs(value: OrderedItem*): Self = StObject.set(x, "itemOrder", js.Array(value :_*))
+      inline def setItemOrderVarargs(value: OrderedItem*): Self = StObject.set(x, "itemOrder", js.Array(value*))
     }
   }
   
@@ -231,7 +231,7 @@ object mod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: SortableGridItem*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: SortableGridItem*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setDoubleTapTreshold(value: Double): Self = StObject.set(x, "doubleTapTreshold", value.asInstanceOf[js.Any])
       

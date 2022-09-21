@@ -6,22 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SubjectDescription extends StObject {
   
-  /** The "common name" of the distinguished name. */
-  var commonName: js.UndefOr[String] = js.undefined
-  
   /** The serial number encoded in lowercase hexadecimal. */
   var hexSerialNumber: js.UndefOr[String] = js.undefined
   
-  /** For convenience, the actual lifetime of an issued certificate. Corresponds to 'not_after_time' - 'not_before_time'. */
+  /** For convenience, the actual lifetime of an issued certificate. */
   var lifetime: js.UndefOr[String] = js.undefined
   
-  /** The time at which the certificate expires. */
+  /**
+    * The time after which the certificate is expired. Per RFC 5280, the validity period for a certificate is the period of time from not_before_time through not_after_time, inclusive.
+    * Corresponds to 'not_before_time' + 'lifetime' - 1 second.
+    */
   var notAfterTime: js.UndefOr[String] = js.undefined
   
   /** The time at which the certificate becomes valid. */
   var notBeforeTime: js.UndefOr[String] = js.undefined
   
-  /** Contains distinguished name fields such as the location and organization. */
+  /** Contains distinguished name fields such as the common name, location and / organization. */
   var subject: js.UndefOr[Subject] = js.undefined
   
   /** The subject alternative name fields. */
@@ -35,10 +35,6 @@ object SubjectDescription {
   }
   
   extension [Self <: SubjectDescription](x: Self) {
-    
-    inline def setCommonName(value: String): Self = StObject.set(x, "commonName", value.asInstanceOf[js.Any])
-    
-    inline def setCommonNameUndefined: Self = StObject.set(x, "commonName", js.undefined)
     
     inline def setHexSerialNumber(value: String): Self = StObject.set(x, "hexSerialNumber", value.asInstanceOf[js.Any])
     

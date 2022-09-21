@@ -9,12 +9,17 @@ trait DescribeForecastResponse extends StObject {
   /**
     * When the forecast creation task was created.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ARN of the dataset group that provided the data used to train the predictor.
     */
   var DatasetGroupArn: js.UndefOr[Arn] = js.undefined
+  
+  /**
+    * The estimated time remaining in minutes for the forecast job to complete.
+    */
+  var EstimatedTimeRemainingInMinutes: js.UndefOr[Long] = js.undefined
   
   /**
     * The forecast ARN as specified in the request.
@@ -32,9 +37,9 @@ trait DescribeForecastResponse extends StObject {
   var ForecastTypes: js.UndefOr[typings.awsSdk.forecastserviceMod.ForecastTypes] = js.undefined
   
   /**
-    * Initially, the same as CreationTime (status is CREATE_PENDING). Updated when inference (creating the forecast) starts (status changed to CREATE_IN_PROGRESS), and when inference is complete (status changed to ACTIVE) or fails (status changed to CREATE_FAILED).
+    * The last time the resource was modified. The timestamp depends on the status of the job:    CREATE_PENDING - The CreationTime.    CREATE_IN_PROGRESS - The current timestamp.    CREATE_STOPPING - The current timestamp.    CREATE_STOPPED - When the job stopped.    ACTIVE or CREATE_FAILED - When the job finished or failed.  
     */
-  var LastModificationTime: js.UndefOr[Timestamp] = js.undefined
+  var LastModificationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * If an error occurred, an informational message about the error.
@@ -47,9 +52,14 @@ trait DescribeForecastResponse extends StObject {
   var PredictorArn: js.UndefOr[Arn] = js.undefined
   
   /**
-    * The status of the forecast. States include:    ACTIVE     CREATE_PENDING, CREATE_IN_PROGRESS, CREATE_FAILED     DELETE_PENDING, DELETE_IN_PROGRESS, DELETE_FAILED     The Status of the forecast must be ACTIVE before you can query or export the forecast. 
+    * The status of the forecast. States include:    ACTIVE     CREATE_PENDING, CREATE_IN_PROGRESS, CREATE_FAILED     CREATE_STOPPING, CREATE_STOPPED     DELETE_PENDING, DELETE_IN_PROGRESS, DELETE_FAILED     The Status of the forecast must be ACTIVE before you can query or export the forecast. 
     */
   var Status: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The time series to include in the forecast.
+    */
+  var TimeSeriesSelector: js.UndefOr[typings.awsSdk.forecastserviceMod.TimeSeriesSelector] = js.undefined
 }
 object DescribeForecastResponse {
   
@@ -60,13 +70,17 @@ object DescribeForecastResponse {
   
   extension [Self <: DescribeForecastResponse](x: Self) {
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
     inline def setDatasetGroupArn(value: Arn): Self = StObject.set(x, "DatasetGroupArn", value.asInstanceOf[js.Any])
     
     inline def setDatasetGroupArnUndefined: Self = StObject.set(x, "DatasetGroupArn", js.undefined)
+    
+    inline def setEstimatedTimeRemainingInMinutes(value: Long): Self = StObject.set(x, "EstimatedTimeRemainingInMinutes", value.asInstanceOf[js.Any])
+    
+    inline def setEstimatedTimeRemainingInMinutesUndefined: Self = StObject.set(x, "EstimatedTimeRemainingInMinutes", js.undefined)
     
     inline def setForecastArn(value: Arn): Self = StObject.set(x, "ForecastArn", value.asInstanceOf[js.Any])
     
@@ -80,9 +94,9 @@ object DescribeForecastResponse {
     
     inline def setForecastTypesUndefined: Self = StObject.set(x, "ForecastTypes", js.undefined)
     
-    inline def setForecastTypesVarargs(value: ForecastType*): Self = StObject.set(x, "ForecastTypes", js.Array(value :_*))
+    inline def setForecastTypesVarargs(value: ForecastType*): Self = StObject.set(x, "ForecastTypes", js.Array(value*))
     
-    inline def setLastModificationTime(value: Timestamp): Self = StObject.set(x, "LastModificationTime", value.asInstanceOf[js.Any])
+    inline def setLastModificationTime(value: js.Date): Self = StObject.set(x, "LastModificationTime", value.asInstanceOf[js.Any])
     
     inline def setLastModificationTimeUndefined: Self = StObject.set(x, "LastModificationTime", js.undefined)
     
@@ -97,5 +111,9 @@ object DescribeForecastResponse {
     inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    
+    inline def setTimeSeriesSelector(value: TimeSeriesSelector): Self = StObject.set(x, "TimeSeriesSelector", value.asInstanceOf[js.Any])
+    
+    inline def setTimeSeriesSelectorUndefined: Self = StObject.set(x, "TimeSeriesSelector", js.undefined)
   }
 }

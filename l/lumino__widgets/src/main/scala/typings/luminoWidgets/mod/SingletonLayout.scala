@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @param options - The options for initializing the layout.
   */
-class SingletonLayout ()
+open class SingletonLayout ()
   extends typings.luminoWidgets.singletonlayoutMod.SingletonLayout {
   def this(options: IOptions) = this()
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for turist__time
 
-Typings are for version 0.0.1
+Typings are for version 0.0.2
 
 ## Library description:
 Making time pass faster on the ship
@@ -10,15 +10,12 @@ Making time pass faster on the ship
 | ------------------ | :-------------: |
 | Full name          | @turist/time |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 1 |
-| # downloads        | 1263206 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1637713.0 |
+| # stars            | 4.0 |
 
 ## Links
-- [Homepage](https://github.com/turist-cloud/time#readme)
-- [Bugs](https://github.com/turist-cloud/time/issues)
-- [Repository](https://github.com/turist-cloud/time)
 - [Npm](https://www.npmjs.com/package/%40turist%2Ftime)
     
 

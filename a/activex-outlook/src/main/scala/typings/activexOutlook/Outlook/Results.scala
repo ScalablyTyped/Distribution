@@ -15,22 +15,22 @@ trait Results extends StObject {
   
   var DefaultItemType: OlItemType = js.native
   
-  def GetFirst(): js.Any = js.native
+  def GetFirst(): Any = js.native
   
-  def GetLast(): js.Any = js.native
+  def GetLast(): Any = js.native
   
-  def GetNext(): js.Any = js.native
+  def GetNext(): Any = js.native
   
-  def GetPrevious(): js.Any = js.native
+  def GetPrevious(): Any = js.native
   
-  def Item(Index: js.Any): js.Any = js.native
+  def Item(Index: Any): Any = js.native
   
   /* private */ @JSName("Outlook.Results_typekey")
   var OutlookDotResults_typekey: Results = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  val RawTable: js.Any = js.native
+  val RawTable: Any = js.native
   
   def ResetColumns(): Unit = js.native
   
@@ -39,5 +39,5 @@ trait Results extends StObject {
   def SetColumns(Columns: String): Unit = js.native
   
   def Sort(Property: String): Unit = js.native
-  def Sort(Property: String, Descending: js.Any): Unit = js.native
+  def Sort(Property: String, Descending: Any): Unit = js.native
 }

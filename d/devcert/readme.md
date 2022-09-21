@@ -1,7 +1,7 @@
 
 # Scala.js typings for devcert
 
-Typings are for version 1.1.3
+Typings are for version 1.2.2
 
 ## Library description:
 Generate trusted local SSL/TLS certificates for local SSL development
@@ -10,10 +10,10 @@ Generate trusted local SSL/TLS certificates for local SSL development
 | ------------------ | :-------------: |
 | Full name          | devcert |
 | Keywords           | ssl, certificate, openssl, trust |
-| # releases         | 7 |
-| # dependents       | 19 |
-| # downloads        | 14743789 |
-| # stars            | 3 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 1700501.0 |
+| # stars            | 1147.0 |
 
 ## Links
 - [Homepage](https://github.com/davewasmer/devcert#readme)

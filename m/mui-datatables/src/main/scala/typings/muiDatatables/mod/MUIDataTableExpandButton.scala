@@ -14,7 +14,7 @@ trait MUIDataTableExpandButton extends StObject {
   
   var expandableRowsHeader: Boolean
   
-  var expandedRows: js.UndefOr[js.Any] = js.undefined
+  var expandedRows: js.UndefOr[Any] = js.undefined
   
   var iconClass: String
   
@@ -22,7 +22,7 @@ trait MUIDataTableExpandButton extends StObject {
   
   var isHeaderCell: Boolean
   
-  var onExpand: js.UndefOr[js.Function1[/* args */ js.Any, js.Any]] = js.undefined
+  var onExpand: js.UndefOr[js.Function1[/* args */ Any, Any]] = js.undefined
 }
 object MUIDataTableExpandButton {
   
@@ -50,7 +50,7 @@ object MUIDataTableExpandButton {
     
     inline def setExpandableRowsHeader(value: Boolean): Self = StObject.set(x, "expandableRowsHeader", value.asInstanceOf[js.Any])
     
-    inline def setExpandedRows(value: js.Any): Self = StObject.set(x, "expandedRows", value.asInstanceOf[js.Any])
+    inline def setExpandedRows(value: Any): Self = StObject.set(x, "expandedRows", value.asInstanceOf[js.Any])
     
     inline def setExpandedRowsUndefined: Self = StObject.set(x, "expandedRows", js.undefined)
     
@@ -60,7 +60,7 @@ object MUIDataTableExpandButton {
     
     inline def setIsHeaderCell(value: Boolean): Self = StObject.set(x, "isHeaderCell", value.asInstanceOf[js.Any])
     
-    inline def setOnExpand(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "onExpand", js.Any.fromFunction1(value))
+    inline def setOnExpand(value: /* args */ Any => Any): Self = StObject.set(x, "onExpand", js.Any.fromFunction1(value))
     
     inline def setOnExpandUndefined: Self = StObject.set(x, "onExpand", js.undefined)
   }

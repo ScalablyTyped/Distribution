@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react", "ActionButton")
 @js.native
-class ActionButton protected ()
+open class ActionButton protected ()
   extends typings.officeUiFabricReact.libButtonMod.ActionButton {
   def this(props: IButtonProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: IButtonProps, context: js.Any) = this()
+  def this(props: IButtonProps, context: Any) = this()
 }

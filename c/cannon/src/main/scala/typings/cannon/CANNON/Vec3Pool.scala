@@ -10,11 +10,11 @@ trait Vec3Pool
 object Vec3Pool {
   
   inline def apply(
-    constructObject: () => js.Any,
-    get: () => js.Any,
-    objects: js.Array[js.Any],
-    release: () => js.Any,
-    `type`: js.Array[js.Any]
+    constructObject: () => Any,
+    get: () => Any,
+    objects: js.Array[Any],
+    release: () => Any,
+    `type`: js.Array[Any]
   ): Vec3Pool = {
     val __obj = js.Dynamic.literal(constructObject = js.Any.fromFunction0(constructObject), get = js.Any.fromFunction0(get), objects = objects.asInstanceOf[js.Any], release = js.Any.fromFunction0(release))
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])

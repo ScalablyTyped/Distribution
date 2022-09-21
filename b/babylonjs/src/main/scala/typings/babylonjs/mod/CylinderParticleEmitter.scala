@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param radiusRange the range of the emission cylinder [0-1] 0 Surface only, 1 Entire Radius (1 by default)
   * @param directionRandomizer defines how much to randomize the particle direction [0-1]
   */
-class CylinderParticleEmitter ()
+open class CylinderParticleEmitter ()
   extends typings.babylonjs.legacyMod.CylinderParticleEmitter {
   def this(/**
     * The radius of the emission cylinder.

@@ -52,7 +52,7 @@ object XAccessibleKeyBinding {
     acquire: () => Unit,
     getAccessibleKeyBinding: Double => SafeArray[KeyStroke],
     getAccessibleKeyBindingCount: () => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XAccessibleKeyBinding = {
     val __obj = js.Dynamic.literal(AccessibleKeyBindingCount = AccessibleKeyBindingCount.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getAccessibleKeyBinding = js.Any.fromFunction1(getAccessibleKeyBinding), getAccessibleKeyBindingCount = js.Any.fromFunction0(getAccessibleKeyBindingCount), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

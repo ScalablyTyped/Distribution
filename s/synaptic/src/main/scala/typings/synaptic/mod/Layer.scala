@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("synaptic", "Layer")
 @js.native
-class Layer protected () extends StObject {
+open class Layer protected () extends StObject {
   /**
     * Normally you won't work with single neurons, but use Layers instead. A layer is basically an array of neurons, they can do pretty much the same things as neurons do, but it makes the programming process faster.
     * @param numberOfNeurons the number of neurons in that layer
@@ -29,7 +29,7 @@ class Layer protected () extends StObject {
     * Adds a neuron to the layer.
     * @param neuron
     */
-  def add(neuron: js.Any): Unit = js.native
+  def add(neuron: Any): Unit = js.native
   
   /**
     * Clears all the neurons in the layer.
@@ -40,16 +40,16 @@ class Layer protected () extends StObject {
     * True of false whether the layer is connected to another layer (parameter) or not.
     * @param layer
     */
-  def connected(layer: js.Any): js.Any = js.native
+  def connected(layer: Any): Any = js.native
   
-  var connectedTo: js.Any = js.native
+  var connectedTo: Any = js.native
   
   /**
     * A layer can gate a connection between two other layers, or a layers's self-connection.
     */
   def gate(connection: LayerConnection, gateType: gateType): Unit = js.native
   
-  var label: js.Any = js.native
+  var label: Any = js.native
   
   var list: js.Array[Neuron] = js.native
   
@@ -63,13 +63,13 @@ class Layer protected () extends StObject {
     * @param connectionType If not specified, the connection type is always Layer.connectionType.ALL_TO_ALL when connecting two different layers, and is Layer.connectionType.ONE_TO_ONE when connecting a layer to itself (ie myLayer.project(myLayer)).
     */
   def project(layer: Layer): LayerConnection = js.native
-  def project(layer: Layer, connectionType: Unit, weights: js.Any): LayerConnection = js.native
+  def project(layer: Layer, connectionType: Unit, weights: Any): LayerConnection = js.native
   def project(layer: Layer, connectionType: connectionType): LayerConnection = js.native
-  def project(layer: Layer, connectionType: connectionType, weights: js.Any): LayerConnection = js.native
+  def project(layer: Layer, connectionType: connectionType, weights: Any): LayerConnection = js.native
   def project(layer: Network): LayerConnection = js.native
-  def project(layer: Network, connectionType: Unit, weights: js.Any): LayerConnection = js.native
+  def project(layer: Network, connectionType: Unit, weights: Any): LayerConnection = js.native
   def project(layer: Network, connectionType: connectionType): LayerConnection = js.native
-  def project(layer: Network, connectionType: connectionType, weights: js.Any): LayerConnection = js.native
+  def project(layer: Network, connectionType: connectionType, weights: Any): LayerConnection = js.native
   
   /**
     * After an activation, you can teach the layer what should have been the correct output (a.k.a. train). This is done by backpropagating the error.
@@ -103,25 +103,25 @@ object Layer {
     */
   @JSImport("synaptic", "Layer.LayerConnection")
   @js.native
-  class LayerConnection () extends StObject {
+  open class LayerConnection () extends StObject {
     
     var ID: Double = js.native
     
-    var connections: js.Any = js.native
+    var connections: Any = js.native
     
-    var from: js.Any = js.native
+    var from: Any = js.native
     
-    var gatedfrom: js.Any = js.native
+    var gatedfrom: Any = js.native
     
-    var list: js.Any = js.native
+    var list: Any = js.native
     
-    var selfconnection: js.Any = js.native
+    var selfconnection: Any = js.native
     
-    var size: js.Any = js.native
+    var size: Any = js.native
     
-    var to: js.Any = js.native
+    var to: Any = js.native
     
-    var `type`: js.Any = js.native
+    var `type`: Any = js.native
   }
   object LayerConnection {
     
@@ -139,7 +139,7 @@ object Layer {
   /* was `typeof LayerConnection` */
   @JSImport("synaptic", "Layer.connection")
   @js.native
-  class connection () extends LayerConnection
+  open class connection () extends LayerConnection
   /* was `typeof LayerConnection` */
   object connection {
     
@@ -235,7 +235,7 @@ object Layer {
     
     var bias: js.UndefOr[Double] = js.undefined
     
-    var label: js.UndefOr[js.Any] = js.undefined
+    var label: js.UndefOr[Any] = js.undefined
     
     var squash: js.UndefOr[SquashingFunction] = js.undefined
   }
@@ -252,7 +252,7 @@ object Layer {
       
       inline def setBiasUndefined: Self = StObject.set(x, "bias", js.undefined)
       
-      inline def setLabel(value: js.Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       

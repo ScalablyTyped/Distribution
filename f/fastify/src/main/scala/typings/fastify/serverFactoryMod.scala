@@ -20,13 +20,13 @@ object serverFactoryMod {
       RawRequestDefaultExpression[RawServer], 
       RawReplyDefaultExpression[RawServer]
     ], 
-    /* opts */ Record[String, js.Any], 
+    /* opts */ Record[String, Any], 
     RawServer
   ]
   
   type FastifyServerFactoryHandler[RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */] = js.Function2[
     (/* request */ Http2ServerRequest & RawRequest) | (/* request */ IncomingMessage & RawRequest), 
-    (/* response */ Http2ServerResponse & RawReply) | (/* response */ ServerResponse & RawReply), 
+    (/* response */ Http2ServerResponse & RawReply) | (/* response */ ServerResponse[IncomingMessage] & RawReply), 
     Unit
   ]
 }

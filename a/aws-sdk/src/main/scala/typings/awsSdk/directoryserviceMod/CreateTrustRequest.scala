@@ -12,7 +12,7 @@ trait CreateTrustRequest extends StObject {
   var ConditionalForwarderIpAddrs: js.UndefOr[DnsIpAddrs] = js.undefined
   
   /**
-    * The Directory ID of the AWS Managed Microsoft AD directory for which to establish the trust relationship.
+    * The Directory ID of the Managed Microsoft AD directory for which to establish the trust relationship.
     */
   var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId
   
@@ -59,7 +59,7 @@ object CreateTrustRequest {
     
     inline def setConditionalForwarderIpAddrsUndefined: Self = StObject.set(x, "ConditionalForwarderIpAddrs", js.undefined)
     
-    inline def setConditionalForwarderIpAddrsVarargs(value: IpAddr*): Self = StObject.set(x, "ConditionalForwarderIpAddrs", js.Array(value :_*))
+    inline def setConditionalForwarderIpAddrsVarargs(value: IpAddr*): Self = StObject.set(x, "ConditionalForwarderIpAddrs", js.Array(value*))
     
     inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     

@@ -7,25 +7,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait RenderingManager extends StObject {
   
-  /* private */ var _autoClearDepthStencil: js.Any = js.native
+  /* private */ var _autoClearDepthStencil: Any = js.native
   
-  /* private */ var _clearDepthStencilBuffer: js.Any = js.native
+  /* private */ var _clearDepthStencilBuffer: Any = js.native
   
-  /* private */ var _customAlphaTestSortCompareFn: js.Any = js.native
+  /* private */ var _customAlphaTestSortCompareFn: Any = js.native
   
-  /* private */ var _customOpaqueSortCompareFn: js.Any = js.native
+  /* private */ var _customOpaqueSortCompareFn: Any = js.native
   
-  /* private */ var _customTransparentSortCompareFn: js.Any = js.native
+  /* private */ var _customTransparentSortCompareFn: Any = js.native
   
-  /* private */ var _depthStencilBufferAlreadyCleaned: js.Any = js.native
+  /* private */ var _depthStencilBufferAlreadyCleaned: Any = js.native
   
-  /* private */ var _prepareRenderingGroup: js.Any = js.native
+  /* private */ var _prepareRenderingGroup: Any = js.native
   
-  /* private */ var _renderingGroupInfo: js.Any = js.native
+  /* private */ var _renderingGroupInfo: Any = js.native
   
-  /* private */ var _renderingGroups: js.Any = js.native
+  /* private */ var _renderingGroups: Any = js.native
   
-  /* private */ var _scene: js.Any = js.native
+  /* private */ var _scene: Any = js.native
   
   /**
     * @hidden
@@ -75,7 +75,11 @@ trait RenderingManager extends StObject {
   def getAutoClearDepthStencilSetup(index: Double): IRenderingManagerAutoClearSetup = js.native
   
   /**
-    * Renders the entire managed groups. This is used by the scene or the different rennder targets.
+    * Renders the entire managed groups. This is used by the scene or the different render targets.
+    * @param customRenderFunction
+    * @param activeMeshes
+    * @param renderParticles
+    * @param renderSprites
     * @hidden
     */
   def render(
@@ -113,8 +117,8 @@ trait RenderingManager extends StObject {
   def setRenderingAutoClearDepthStencil(renderingGroupId: Double, autoClearDepthStencil: Boolean, depth: Unit, stencil: Boolean): Unit = js.native
   
   /**
-    * Overrides the default sort function applied in the renderging group to prepare the meshes.
-    * This allowed control for front to back rendering or reversly depending of the special needs.
+    * Overrides the default sort function applied in the rendering group to prepare the meshes.
+    * This allowed control for front to back rendering or reversely depending of the special needs.
     *
     * @param renderingGroupId The rendering group id corresponding to its index
     * @param opaqueSortCompareFn The opaque queue comparison function use to sort.

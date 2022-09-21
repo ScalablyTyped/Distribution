@@ -6,29 +6,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Geometries extends StObject {
   
-  var geometries: js.Any
+  var geometries: Any
   
-  var images: js.Any
+  var images: Any
   
-  var materials: js.Any
+  var materials: Any
   
-  var textures: js.Any
+  var textures: Any
 }
 object Geometries {
   
-  inline def apply(geometries: js.Any, images: js.Any, materials: js.Any, textures: js.Any): Geometries = {
+  inline def apply(geometries: Any, images: Any, materials: Any, textures: Any): Geometries = {
     val __obj = js.Dynamic.literal(geometries = geometries.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any], materials = materials.asInstanceOf[js.Any], textures = textures.asInstanceOf[js.Any])
     __obj.asInstanceOf[Geometries]
   }
   
   extension [Self <: Geometries](x: Self) {
     
-    inline def setGeometries(value: js.Any): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
+    inline def setGeometries(value: Any): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
     
-    inline def setImages(value: js.Any): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+    inline def setImages(value: Any): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
-    inline def setMaterials(value: js.Any): Self = StObject.set(x, "materials", value.asInstanceOf[js.Any])
+    inline def setMaterials(value: Any): Self = StObject.set(x, "materials", value.asInstanceOf[js.Any])
     
-    inline def setTextures(value: js.Any): Self = StObject.set(x, "textures", value.asInstanceOf[js.Any])
+    inline def setTextures(value: Any): Self = StObject.set(x, "textures", value.asInstanceOf[js.Any])
   }
 }

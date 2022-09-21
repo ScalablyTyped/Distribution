@@ -1,15 +1,14 @@
 package typings.postcssUrl
 
 import org.scalablytyped.runtime.Shortcut
-import typings.node.Buffer
-import typings.postcss.mod.Plugin_
+import typings.node.bufferMod.global.Buffer
+import typings.postcss.mod.PluginCreator
 import typings.postcssUrl.anon.AbsolutePath
 import typings.postcssUrl.anon.Append
 import typings.postcssUrl.anon.File
 import typings.postcssUrl.postcssUrlStrings.`inline`
 import typings.postcssUrl.postcssUrlStrings.copy
 import typings.postcssUrl.postcssUrlStrings.rebase
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,7 +47,7 @@ object mod extends Shortcut {
     /**
       * Determine wether a file should be inlined.
       */
-    var filter: js.UndefOr[RegExp | CustomFilterFunction | String] = js.undefined
+    var filter: js.UndefOr[js.RegExp | CustomFilterFunction | String] = js.undefined
     
     /**
       * Hash options
@@ -115,13 +114,13 @@ object mod extends Shortcut {
       
       inline def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
       
-      inline def setBasePathVarargs(value: String*): Self = StObject.set(x, "basePath", js.Array(value :_*))
+      inline def setBasePathVarargs(value: String*): Self = StObject.set(x, "basePath", js.Array(value*))
       
       inline def setFallback(value: (/* asset */ AbsolutePath, /* dir */ File) => String): Self = StObject.set(x, "fallback", js.Any.fromFunction2(value))
       
       inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
       
-      inline def setFilter(value: RegExp | CustomFilterFunction | String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: js.RegExp | CustomFilterFunction | String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
       inline def setFilterFunction1(value: /* file */ String => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
@@ -159,7 +158,7 @@ object mod extends Shortcut {
     }
   }
   
-  type Url = Plugin_[Options | js.Array[Options]]
+  type Url = PluginCreator[Options | js.Array[Options]]
   
   type _To = Url
   

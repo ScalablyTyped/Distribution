@@ -13,7 +13,11 @@ trait Usage extends StObject {
     */
   var producerNotificationChannel: js.UndefOr[String] = js.undefined
   
-  /** Requirements that must be satisfied before a consumer project can use the service. Each requirement is of the form /; for example 'serviceusage.googleapis.com/billing-enabled'. */
+  /**
+    * Requirements that must be satisfied before a consumer project can use the service. Each requirement is of the form /; for example 'serviceusage.googleapis.com/billing-enabled'. For
+    * Google APIs, a Terms of Service requirement must be included here. Google Cloud APIs must include "serviceusage.googleapis.com/tos/cloud". Other Google APIs should include
+    * "serviceusage.googleapis.com/tos/universal". Additional ToS can be included based on the business needs.
+    */
   var requirements: js.UndefOr[js.Array[String]] = js.undefined
   
   /** A list of usage rules that apply to individual API methods. **NOTE:** All service configuration rules follow "last one wins" order. */
@@ -36,12 +40,12 @@ object Usage {
     
     inline def setRequirementsUndefined: Self = StObject.set(x, "requirements", js.undefined)
     
-    inline def setRequirementsVarargs(value: String*): Self = StObject.set(x, "requirements", js.Array(value :_*))
+    inline def setRequirementsVarargs(value: String*): Self = StObject.set(x, "requirements", js.Array(value*))
     
     inline def setRules(value: js.Array[UsageRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
     inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    inline def setRulesVarargs(value: UsageRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: UsageRule*): Self = StObject.set(x, "rules", js.Array(value*))
   }
 }

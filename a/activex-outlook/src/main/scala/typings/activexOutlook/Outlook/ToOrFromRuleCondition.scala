@@ -17,7 +17,7 @@ trait ToOrFromRuleCondition extends StObject {
   /* private */ @JSName("Outlook.ToOrFromRuleCondition_typekey")
   var OutlookDotToOrFromRuleCondition_typekey: ToOrFromRuleCondition
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Recipients: typings.activexOutlook.Outlook.Recipients
   
@@ -31,7 +31,7 @@ object ToOrFromRuleCondition {
     ConditionType: OlRuleConditionType,
     Enabled: Boolean,
     OutlookDotToOrFromRuleCondition_typekey: ToOrFromRuleCondition,
-    Parent: js.Any,
+    Parent: Any,
     Recipients: Recipients,
     Session: NameSpace
   ): ToOrFromRuleCondition = {
@@ -52,7 +52,7 @@ object ToOrFromRuleCondition {
     
     inline def setOutlookDotToOrFromRuleCondition_typekey(value: ToOrFromRuleCondition): Self = StObject.set(x, "Outlook.ToOrFromRuleCondition_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRecipients(value: Recipients): Self = StObject.set(x, "Recipients", value.asInstanceOf[js.Any])
     

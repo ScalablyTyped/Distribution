@@ -2,10 +2,12 @@ package typings.babylonjs
 
 import typings.babylonjs.boundingInfoMod.ICullable
 import typings.babylonjs.boundingSphereMod.BoundingSphere
+import typings.babylonjs.drawWrapperMod.DrawWrapper
 import typings.babylonjs.mathPlaneMod.Plane
 import typings.babylonjs.mathVectorMod.Matrix
 import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.typesMod.DeepImmutable
+import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +16,7 @@ object boundingBoxMod {
   
   @JSImport("babylonjs/Culling/boundingBox", "BoundingBox")
   @js.native
-  class BoundingBox protected ()
+  open class BoundingBox protected ()
     extends StObject
        with ICullable {
     /**
@@ -26,15 +28,24 @@ object boundingBoxMod {
     def this(min: DeepImmutable[Vector3], max: DeepImmutable[Vector3]) = this()
     def this(min: DeepImmutable[Vector3], max: DeepImmutable[Vector3], worldMatrix: DeepImmutable[Matrix]) = this()
     
+    /** @hidden */
+    var _drawWrapperBack: Nullable[DrawWrapper] = js.native
+    
+    /** @hidden */
+    var _drawWrapperFront: Nullable[DrawWrapper] = js.native
+    
     /**
       * @hidden
       */
     var _tag: Double = js.native
     
-    /** @hidden */
+    /**
+      * @param world
+      * @hidden
+      */
     def _update(world: DeepImmutable[Matrix]): Unit = js.native
     
-    /* private */ var _worldMatrix: js.Any = js.native
+    /* private */ var _worldMatrix: Any = js.native
     
     /**
       * Gets the center of the bounding box in local space
@@ -50,6 +61,11 @@ object boundingBoxMod {
       * Gets the OBB (object bounding box) directions
       */
     val directions: js.Array[Vector3] = js.native
+    
+    /**
+      * Disposes the resources of the class
+      */
+    def dispose(): Unit = js.native
     
     /**
       * Gets the extend size in local space
@@ -91,7 +107,7 @@ object boundingBoxMod {
     
     /**
       * Checks if a cullable object (mesh...) is in the camera frustum
-      * Unlike isInFrustum this cheks the full bounding box
+      * Unlike isInFrustum this checks the full bounding box
       * @param frustumPlanes Camera near/planes
       * @returns true if the object is in frustum otherwise false
       */
@@ -186,7 +202,7 @@ object boundingBoxMod {
       * Tests if a bounding box defined with 8 vectors is entirely inside frustum planes
       * @param boundingVectors defines an array of 8 vectors representing a bounding box
       * @param frustumPlanes defines the frustum planes to test
-      * @return true if there is an inclusion
+      * @returns true if there is an inclusion
       */
     inline def IsCompletelyInFrustum(boundingVectors: js.Array[DeepImmutable[Vector3]], frustumPlanes: js.Array[DeepImmutable[Plane]]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("IsCompletelyInFrustum")(boundingVectors.asInstanceOf[js.Any], frustumPlanes.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
@@ -194,12 +210,12 @@ object boundingBoxMod {
       * Tests if a bounding box defined with 8 vectors intersects frustum planes
       * @param boundingVectors defines an array of 8 vectors representing a bounding box
       * @param frustumPlanes defines the frustum planes to test
-      * @return true if there is an intersection
+      * @returns true if there is an intersection
       */
     inline def IsInFrustum(boundingVectors: js.Array[DeepImmutable[Vector3]], frustumPlanes: js.Array[DeepImmutable[Plane]]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("IsInFrustum")(boundingVectors.asInstanceOf[js.Any], frustumPlanes.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("babylonjs/Culling/boundingBox", "BoundingBox.TmpVector3")
+    @JSImport("babylonjs/Culling/boundingBox", "BoundingBox._TmpVector3")
     @js.native
-    val TmpVector3: js.Any = js.native
+    val _TmpVector3: Any = js.native
   }
 }

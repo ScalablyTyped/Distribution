@@ -1,6 +1,5 @@
 package typings.systemjs
 
-import typings.std.Iterable
 import typings.systemjs.System.DeclareFn
 import typings.systemjs.System.ImportFn
 import typings.systemjs.System.Module
@@ -29,7 +28,7 @@ object global {
     /**
       * Use for (let entry of System.entries()) to access all of the modules in the SystemJS registry.
       */
-    inline def entries(): Iterable[js.Tuple2[String, Module]] = ^.asInstanceOf[js.Dynamic].applyDynamic("entries")().asInstanceOf[Iterable[js.Tuple2[String, Module]]]
+    inline def entries(): js.Iterable[js.Tuple2[String, Module]] = ^.asInstanceOf[js.Dynamic].applyDynamic("entries")().asInstanceOf[js.Iterable[js.Tuple2[String, Module]]]
     
     /**
       * Get a module from the SystemJS module registry. Note that the moduleId almost always must be a full url

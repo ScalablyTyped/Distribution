@@ -12,9 +12,9 @@ trait IHTMLDOMNode extends StObject {
   
   def appendChild(newChild: IHTMLDOMNode): IHTMLDOMNode = js.native
   
-  val attributes: js.Any = js.native
+  val attributes: Any = js.native
   
-  val childNodes: js.Any = js.native
+  val childNodes: Any = js.native
   
   def cloneNode(fDeep: Boolean): IHTMLDOMNode = js.native
   
@@ -23,7 +23,7 @@ trait IHTMLDOMNode extends StObject {
   def hasChildNodes(): Boolean = js.native
   
   def insertBefore(newChild: IHTMLDOMNode): IHTMLDOMNode = js.native
-  def insertBefore(newChild: IHTMLDOMNode, refChild: js.Any): IHTMLDOMNode = js.native
+  def insertBefore(newChild: IHTMLDOMNode, refChild: Any): IHTMLDOMNode = js.native
   
   val lastChild: IHTMLDOMNode = js.native
   
@@ -33,7 +33,7 @@ trait IHTMLDOMNode extends StObject {
   
   val nodeType: Double = js.native
   
-  var nodeValue: js.Any = js.native
+  var nodeValue: Any = js.native
   
   val parentNode: IHTMLDOMNode = js.native
   

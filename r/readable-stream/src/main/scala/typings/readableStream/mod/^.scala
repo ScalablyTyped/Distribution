@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("readable-stream", JSImport.Namespace)
 @js.native
-class ^ () extends _Readable {
+open class ^ ()
+  extends StObject
+     with _Readable {
   def this(options: ReadableOptions) = this()
 }

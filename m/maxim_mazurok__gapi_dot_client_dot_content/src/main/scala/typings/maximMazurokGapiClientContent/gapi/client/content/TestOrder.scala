@@ -73,7 +73,7 @@ object TestOrder {
     
     inline def setLineItemsUndefined: Self = StObject.set(x, "lineItems", js.undefined)
     
-    inline def setLineItemsVarargs(value: TestOrderLineItem*): Self = StObject.set(x, "lineItems", js.Array(value :_*))
+    inline def setLineItemsVarargs(value: TestOrderLineItem*): Self = StObject.set(x, "lineItems", js.Array(value*))
     
     inline def setNotificationMode(value: String): Self = StObject.set(x, "notificationMode", value.asInstanceOf[js.Any])
     
@@ -103,7 +103,7 @@ object TestOrder {
     
     inline def setPromotionsUndefined: Self = StObject.set(x, "promotions", js.undefined)
     
-    inline def setPromotionsVarargs(value: OrderPromotion*): Self = StObject.set(x, "promotions", js.Array(value :_*))
+    inline def setPromotionsVarargs(value: OrderPromotion*): Self = StObject.set(x, "promotions", js.Array(value*))
     
     inline def setShippingCost(value: Price): Self = StObject.set(x, "shippingCost", value.asInstanceOf[js.Any])
     

@@ -11,16 +11,16 @@ trait ICheckbox
      with IBase {
   
   /** [Config Option] (String/Array/Ext.XTemplate) */
-  var afterBoxLabelTextTpl: js.UndefOr[js.Any] = js.undefined
+  var afterBoxLabelTextTpl: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String/Array/Ext.XTemplate) */
-  var afterBoxLabelTpl: js.UndefOr[js.Any] = js.undefined
+  var afterBoxLabelTpl: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String/Array/Ext.XTemplate) */
-  var beforeBoxLabelTextTpl: js.UndefOr[js.Any] = js.undefined
+  var beforeBoxLabelTextTpl: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String/Array/Ext.XTemplate) */
-  var beforeBoxLabelTpl: js.UndefOr[js.Any] = js.undefined
+  var beforeBoxLabelTpl: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var boxLabel: js.UndefOr[String] = js.undefined
@@ -29,7 +29,7 @@ trait ICheckbox
   var boxLabelAlign: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String/Array/Ext.XTemplate) */
-  var boxLabelAttrTpl: js.UndefOr[js.Any] = js.undefined
+  var boxLabelAttrTpl: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var boxLabelCls: js.UndefOr[String] = js.undefined
@@ -56,7 +56,7 @@ trait ICheckbox
   var getValue_ICheckbox: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Config Option] (Function) */
-  var handler: js.UndefOr[js.Any] = js.undefined
+  var handler: js.UndefOr[Any] = js.undefined
   
   /** [Method] Initializes the field s value based on the initial config  */
   @JSName("initValue")
@@ -69,10 +69,10 @@ trait ICheckbox
     * @param fromBoxInGroup Object
     */
   @JSName("resetOriginalValue")
-  var resetOriginalValue_ICheckbox: js.UndefOr[js.Function1[/* fromBoxInGroup */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var resetOriginalValue_ICheckbox: js.UndefOr[js.Function1[/* fromBoxInGroup */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Config Option] (Object) */
-  var scope: js.UndefOr[js.Any] = js.undefined
+  var scope: js.UndefOr[Any] = js.undefined
   
   /** [Method] Sets the boxLabel for this checkbox
     * @param boxLabel String The new label
@@ -84,20 +84,20 @@ trait ICheckbox
     * @returns Boolean the new checked state of the checkbox
     */
   @JSName("setRawValue")
-  var setRawValue_ICheckbox: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Boolean]] = js.undefined
+  var setRawValue_ICheckbox: js.UndefOr[js.Function1[/* value */ js.UndefOr[Any], Boolean]] = js.undefined
   
   /** [Method] Sets the read only state of this field
     * @param readOnly Object
     */
   @JSName("setReadOnly")
-  var setReadOnly_ICheckbox: js.UndefOr[js.Function1[/* readOnly */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setReadOnly_ICheckbox: js.UndefOr[js.Function1[/* readOnly */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the checked state of the checkbox and invokes change detection
     * @param checked Boolean/String The following values will check the checkbox: true, 'true', '1', or 'on', as well as a String that matches the inputValue. Any other value will uncheck the checkbox.
     * @returns Ext.form.field.Checkbox this
     */
   @JSName("setValue")
-  var setValue_ICheckbox: js.UndefOr[js.Function1[/* checked */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var setValue_ICheckbox: js.UndefOr[js.Function1[/* checked */ js.UndefOr[Any], this.type]] = js.undefined
   
   /** [Config Option] (String) */
   var uncheckedValue: js.UndefOr[String] = js.undefined
@@ -111,19 +111,19 @@ object ICheckbox {
   
   extension [Self <: ICheckbox](x: Self) {
     
-    inline def setAfterBoxLabelTextTpl(value: js.Any): Self = StObject.set(x, "afterBoxLabelTextTpl", value.asInstanceOf[js.Any])
+    inline def setAfterBoxLabelTextTpl(value: Any): Self = StObject.set(x, "afterBoxLabelTextTpl", value.asInstanceOf[js.Any])
     
     inline def setAfterBoxLabelTextTplUndefined: Self = StObject.set(x, "afterBoxLabelTextTpl", js.undefined)
     
-    inline def setAfterBoxLabelTpl(value: js.Any): Self = StObject.set(x, "afterBoxLabelTpl", value.asInstanceOf[js.Any])
+    inline def setAfterBoxLabelTpl(value: Any): Self = StObject.set(x, "afterBoxLabelTpl", value.asInstanceOf[js.Any])
     
     inline def setAfterBoxLabelTplUndefined: Self = StObject.set(x, "afterBoxLabelTpl", js.undefined)
     
-    inline def setBeforeBoxLabelTextTpl(value: js.Any): Self = StObject.set(x, "beforeBoxLabelTextTpl", value.asInstanceOf[js.Any])
+    inline def setBeforeBoxLabelTextTpl(value: Any): Self = StObject.set(x, "beforeBoxLabelTextTpl", value.asInstanceOf[js.Any])
     
     inline def setBeforeBoxLabelTextTplUndefined: Self = StObject.set(x, "beforeBoxLabelTextTpl", js.undefined)
     
-    inline def setBeforeBoxLabelTpl(value: js.Any): Self = StObject.set(x, "beforeBoxLabelTpl", value.asInstanceOf[js.Any])
+    inline def setBeforeBoxLabelTpl(value: Any): Self = StObject.set(x, "beforeBoxLabelTpl", value.asInstanceOf[js.Any])
     
     inline def setBeforeBoxLabelTplUndefined: Self = StObject.set(x, "beforeBoxLabelTpl", js.undefined)
     
@@ -133,7 +133,7 @@ object ICheckbox {
     
     inline def setBoxLabelAlignUndefined: Self = StObject.set(x, "boxLabelAlign", js.undefined)
     
-    inline def setBoxLabelAttrTpl(value: js.Any): Self = StObject.set(x, "boxLabelAttrTpl", value.asInstanceOf[js.Any])
+    inline def setBoxLabelAttrTpl(value: Any): Self = StObject.set(x, "boxLabelAttrTpl", value.asInstanceOf[js.Any])
     
     inline def setBoxLabelAttrTplUndefined: Self = StObject.set(x, "boxLabelAttrTpl", js.undefined)
     
@@ -163,7 +163,7 @@ object ICheckbox {
     
     inline def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
     
-    inline def setHandler(value: js.Any): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+    inline def setHandler(value: Any): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     
     inline def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
     
@@ -175,11 +175,11 @@ object ICheckbox {
     
     inline def setInputValueUndefined: Self = StObject.set(x, "inputValue", js.undefined)
     
-    inline def setResetOriginalValue(value: /* fromBoxInGroup */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "resetOriginalValue", js.Any.fromFunction1(value))
+    inline def setResetOriginalValue(value: /* fromBoxInGroup */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "resetOriginalValue", js.Any.fromFunction1(value))
     
     inline def setResetOriginalValueUndefined: Self = StObject.set(x, "resetOriginalValue", js.undefined)
     
-    inline def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
@@ -187,15 +187,15 @@ object ICheckbox {
     
     inline def setSetBoxLabelUndefined: Self = StObject.set(x, "setBoxLabel", js.undefined)
     
-    inline def setSetRawValue(value: /* value */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "setRawValue", js.Any.fromFunction1(value))
+    inline def setSetRawValue(value: /* value */ js.UndefOr[Any] => Boolean): Self = StObject.set(x, "setRawValue", js.Any.fromFunction1(value))
     
     inline def setSetRawValueUndefined: Self = StObject.set(x, "setRawValue", js.undefined)
     
-    inline def setSetReadOnly(value: /* readOnly */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setReadOnly", js.Any.fromFunction1(value))
+    inline def setSetReadOnly(value: /* readOnly */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setReadOnly", js.Any.fromFunction1(value))
     
     inline def setSetReadOnlyUndefined: Self = StObject.set(x, "setReadOnly", js.undefined)
     
-    inline def setSetValue(value: /* checked */ js.UndefOr[js.Any] => ICheckbox): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: /* checked */ js.UndefOr[Any] => ICheckbox): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
     inline def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
     

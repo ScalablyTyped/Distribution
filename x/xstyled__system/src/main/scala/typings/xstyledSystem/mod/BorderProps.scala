@@ -1,16 +1,13 @@
 package typings.xstyledSystem.mod
 
+import typings.csstype.mod.Property.Border
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait BorderProps[TLength] extends StObject {
   
-  val border: js.UndefOr[
-    ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Border<TLength> */ js.Any
-    ]
-  ] = js.undefined
+  val border: js.UndefOr[ResponsiveValue[Border[TLength]]] = js.undefined
 }
 object BorderProps {
   
@@ -21,16 +18,10 @@ object BorderProps {
   
   extension [Self <: BorderProps[?], TLength](x: Self & BorderProps[TLength]) {
     
-    inline def setBorder(
-      value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Border<TLength> */ js.Any
-        ]
-    ): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: ResponsiveValue[Border[TLength]]): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
-    inline def setBorderVarargs(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Border<TLength> */ js.Any)*
-    ): Self = StObject.set(x, "border", js.Array(value :_*))
+    inline def setBorderVarargs(value: Border[TLength]*): Self = StObject.set(x, "border", js.Array(value*))
   }
 }

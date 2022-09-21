@@ -12,7 +12,7 @@ trait CheckpointConfig extends StObject {
   var LocalPath: js.UndefOr[DirectoryPath] = js.undefined
   
   /**
-    * Identifies the S3 path where you want Amazon SageMaker to store checkpoints. For example, s3://bucket-name/key-name-prefix.
+    * Identifies the S3 path where you want SageMaker to store checkpoints. For example, s3://bucket-name/key-name-prefix.
     */
   var S3Uri: typings.awsSdk.sagemakerMod.S3Uri
 }

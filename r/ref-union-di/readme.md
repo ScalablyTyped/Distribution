@@ -10,10 +10,10 @@ Create ABI-compliant "union" instances on top of Buffers
 | ------------------ | :-------------: |
 | Full name          | ref-union-di |
 | Keywords           | union, ref, abi, c, c++, ffi |
-| # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 35128 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5790.0 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/node-ffi-napi/ref-union-di#readme)

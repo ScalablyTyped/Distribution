@@ -33,6 +33,6 @@ object ListTrialsResponse {
     
     inline def setTrialSummariesUndefined: Self = StObject.set(x, "TrialSummaries", js.undefined)
     
-    inline def setTrialSummariesVarargs(value: TrialSummary*): Self = StObject.set(x, "TrialSummaries", js.Array(value :_*))
+    inline def setTrialSummariesVarargs(value: TrialSummary*): Self = StObject.set(x, "TrialSummaries", js.Array(value*))
   }
 }

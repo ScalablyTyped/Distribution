@@ -32,7 +32,7 @@ object anon {
       
       inline def setRequiredProps(value: js.Array[String]): Self = StObject.set(x, "requiredProps", value.asInstanceOf[js.Any])
       
-      inline def setRequiredPropsVarargs(value: String*): Self = StObject.set(x, "requiredProps", js.Array(value :_*))
+      inline def setRequiredPropsVarargs(value: String*): Self = StObject.set(x, "requiredProps", js.Array(value*))
     }
   }
 }

@@ -33,7 +33,7 @@ trait LQueries extends StObject {
   /**
     * A collection of queries tracked in a given view.
     */
-  var queries: js.Array[LQuery[js.Any]]
+  var queries: js.Array[LQuery[Any]]
 }
 object LQueries {
   
@@ -41,7 +41,7 @@ object LQueries {
     createEmbeddedView: TView => LQueries | Null,
     detachView: TView => Unit,
     insertView: TView => Unit,
-    queries: js.Array[LQuery[js.Any]]
+    queries: js.Array[LQuery[Any]]
   ): LQueries = {
     val __obj = js.Dynamic.literal(createEmbeddedView = js.Any.fromFunction1(createEmbeddedView), detachView = js.Any.fromFunction1(detachView), insertView = js.Any.fromFunction1(insertView), queries = queries.asInstanceOf[js.Any])
     __obj.asInstanceOf[LQueries]
@@ -55,8 +55,8 @@ object LQueries {
     
     inline def setInsertView(value: TView => Unit): Self = StObject.set(x, "insertView", js.Any.fromFunction1(value))
     
-    inline def setQueries(value: js.Array[LQuery[js.Any]]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
+    inline def setQueries(value: js.Array[LQuery[Any]]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
     
-    inline def setQueriesVarargs(value: LQuery[js.Any]*): Self = StObject.set(x, "queries", js.Array(value :_*))
+    inline def setQueriesVarargs(value: LQuery[Any]*): Self = StObject.set(x, "queries", js.Array(value*))
   }
 }

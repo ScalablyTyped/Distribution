@@ -20,6 +20,6 @@ object pointer {
     */
   @JSGlobal("ol.pointer.PointerEvent")
   @js.native
-  class PointerEvent ()
+  open class PointerEvent ()
     extends typings.openlayers.mod.pointer.PointerEvent
 }

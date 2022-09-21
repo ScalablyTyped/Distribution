@@ -22,7 +22,7 @@ object mod {
   
   @JSImport("react-plyr", JSImport.Default)
   @js.native
-  class default () extends Plyr
+  open class default () extends Plyr
   
   trait OnVolumeChangeParam extends StObject {
     
@@ -47,7 +47,7 @@ object mod {
   
   @js.native
   trait Plyr
-    extends Component[Props, js.Object, js.Any] {
+    extends Component[Props, js.Object, Any] {
     
     def decreaseVolume(step: Boolean): Unit = js.native
     
@@ -61,7 +61,7 @@ object mod {
     
     def getDuration(): Double = js.native
     
-    def getType(): js.Any = js.native
+    def getType(): Any = js.native
     
     def getVolume(): Double = js.native
     
@@ -155,7 +155,7 @@ object mod {
     
     var onPlay: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onReady: js.UndefOr[js.Function1[/* player */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onReady: js.UndefOr[js.Function1[/* player */ js.UndefOr[Any], Unit]] = js.undefined
     
     var onSeeked: js.UndefOr[js.Function1[/* time */ js.UndefOr[Double], Unit]] = js.undefined
     
@@ -220,7 +220,7 @@ object mod {
       
       inline def setCaptionsUndefined: Self = StObject.set(x, "captions", js.undefined)
       
-      inline def setCaptionsVarargs(value: Kind*): Self = StObject.set(x, "captions", js.Array(value :_*))
+      inline def setCaptionsVarargs(value: Kind*): Self = StObject.set(x, "captions", js.Array(value*))
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -234,7 +234,7 @@ object mod {
       
       inline def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
       
-      inline def setControlsVarargs(value: String*): Self = StObject.set(x, "controls", js.Array(value :_*))
+      inline def setControlsVarargs(value: String*): Self = StObject.set(x, "controls", js.Array(value*))
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -324,7 +324,7 @@ object mod {
       
       inline def setOnPlayUndefined: Self = StObject.set(x, "onPlay", js.undefined)
       
-      inline def setOnReady(value: /* player */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onReady", js.Any.fromFunction1(value))
+      inline def setOnReady(value: /* player */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onReady", js.Any.fromFunction1(value))
       
       inline def setOnReadyUndefined: Self = StObject.set(x, "onReady", js.undefined)
       
@@ -364,13 +364,13 @@ object mod {
       
       inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
       
-      inline def setSettingsVarargs(value: String*): Self = StObject.set(x, "settings", js.Array(value :_*))
+      inline def setSettingsVarargs(value: String*): Self = StObject.set(x, "settings", js.Array(value*))
       
       inline def setSources(value: js.Array[Size]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
       
       inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
       
-      inline def setSourcesVarargs(value: Size*): Self = StObject.set(x, "sources", js.Array(value :_*))
+      inline def setSourcesVarargs(value: Size*): Self = StObject.set(x, "sources", js.Array(value*))
       
       inline def setSpeed(value: Options): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
       

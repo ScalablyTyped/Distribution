@@ -3,11 +3,12 @@ package typings.aframe.mod.THREE
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement
-import typings.three.constantsMod.Mapping
-import typings.three.constantsMod.PixelFormat
-import typings.three.constantsMod.TextureDataType
-import typings.three.constantsMod.TextureFilter
-import typings.three.constantsMod.Wrapping
+import typings.std.ImageBitmap
+import typings.three.srcConstantsMod.Mapping
+import typings.three.srcConstantsMod.PixelFormat
+import typings.three.srcConstantsMod.TextureDataType
+import typings.three.srcConstantsMod.TextureFilter
+import typings.three.srcConstantsMod.Wrapping
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,22 +16,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("aframe", "THREE.CanvasTexture")
 @js.native
-class CanvasTexture protected ()
+open class CanvasTexture protected ()
   extends typings.three.mod.CanvasTexture {
   /**
-  	 * @param canvas
-  	 * @param [format=THREE.RGBAFormat]
-  	 * @param [type=THREE.UnsignedByteType]
-  	 * @param [mapping=THREE.Texture.DEFAULT_MAPPING]
-  	 * @param [wrapS=THREE.ClampToEdgeWrapping]
-  	 * @param [wrapT=THREE.ClampToEdgeWrapping]
-  	 * @param [magFilter=THREE.LinearFilter]
-  	 * @param [minFilter=THREE.LinearMipmapLinearFilter]
-  	 * @param [anisotropy=1]
-  	 * @param [encoding=THREE.LinearEncoding]
-  	 */
+    * @param canvas
+    * @param [format=THREE.RGBAFormat]
+    * @param [type=THREE.UnsignedByteType]
+    * @param [mapping=THREE.Texture.DEFAULT_MAPPING]
+    * @param [wrapS=THREE.ClampToEdgeWrapping]
+    * @param [wrapT=THREE.ClampToEdgeWrapping]
+    * @param [magFilter=THREE.LinearFilter]
+    * @param [minFilter=THREE.LinearMipmapLinearFilter]
+    * @param [anisotropy=1]
+    * @param [encoding=THREE.LinearEncoding]
+    */
   def this(
-    canvas: HTMLImageElement | HTMLCanvasElement | HTMLVideoElement,
+    canvas: HTMLImageElement | HTMLCanvasElement | HTMLVideoElement | ImageBitmap,
     mapping: js.UndefOr[Mapping],
     wrapS: js.UndefOr[Wrapping],
     wrapT: js.UndefOr[Wrapping],

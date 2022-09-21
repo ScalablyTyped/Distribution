@@ -32,6 +32,12 @@ object envDetectMod {
     /* "CLOUD_FUNCTIONS" */ val CLOUD_FUNCTIONS: typings.googleAuthLibrary.envDetectMod.GCPEnv.CLOUD_FUNCTIONS & String = js.native
     
     @js.native
+    sealed trait CLOUD_RUN
+      extends StObject
+         with GCPEnv
+    /* "CLOUD_RUN" */ val CLOUD_RUN: typings.googleAuthLibrary.envDetectMod.GCPEnv.CLOUD_RUN & String = js.native
+    
+    @js.native
     sealed trait COMPUTE_ENGINE
       extends StObject
          with GCPEnv

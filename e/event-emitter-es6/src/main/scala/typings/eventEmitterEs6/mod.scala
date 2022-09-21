@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("event-emitter-es6", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with EventEmitter {
     def this(options: Options) = this()
@@ -19,9 +19,9 @@ object mod {
     
     def destroy(): Unit = js.native
     
-    def emit(`type`: String, eventArgs: js.Any*): Unit = js.native
+    def emit(`type`: String, eventArgs: Any*): Unit = js.native
     
-    def emitSync(`type`: String, eventArgs: js.Any*): Unit = js.native
+    def emitSync(`type`: String, eventArgs: Any*): Unit = js.native
     
     def off(`type`: String): Unit = js.native
     def off(`type`: String, listener: Listener): Unit = js.native
@@ -34,7 +34,7 @@ object mod {
   @js.native
   trait Listener extends StObject {
     
-    def apply(args: js.Any*): Unit = js.native
+    def apply(args: Any*): Unit = js.native
   }
   
   trait Options extends StObject {

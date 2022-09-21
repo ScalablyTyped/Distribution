@@ -19,17 +19,17 @@ trait Amplitude extends StObject {
   def getLevel(channel: Double): Double = js.native
   
   /**
-    *   Connects to the p5sound instance (master output)
-    *   by default. Optionally, you can pass in a specific
+    *   Connects to the p5sound instance (main output) by
+    *   default. Optionally, you can pass in a specific
     *   source (i.e. a soundfile).
     *   @param [snd] set the sound source (optional,
-    *   defaults to master output)
+    *   defaults to main output)
     *   @param [smoothing] a range between 0.0 and 1.0 to
     *   smooth amplitude readings
     */
   def setInput(): Unit = js.native
-  def setInput(snd: js.Any): Unit = js.native
-  def setInput(snd: js.Any, smoothing: Double): Unit = js.native
+  def setInput(snd: Any): Unit = js.native
+  def setInput(snd: Any, smoothing: Double): Unit = js.native
   def setInput(snd: Unit, smoothing: Double): Unit = js.native
   
   /**

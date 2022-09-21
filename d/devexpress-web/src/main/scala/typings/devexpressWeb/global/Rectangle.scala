@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Rectangle")
 @js.native
-class Rectangle ()
+open class Rectangle ()
   extends StObject
      with typings.devexpressWeb.Rectangle {
   

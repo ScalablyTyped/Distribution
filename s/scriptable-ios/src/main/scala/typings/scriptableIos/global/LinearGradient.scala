@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * _Linear gradient._
   * @see https://docs.scriptable.app/lineargradient/#-new-lineargradient
   */
-class LinearGradient ()
+open class LinearGradient ()
   extends StObject
      with typings.scriptableIos.LinearGradient {
   

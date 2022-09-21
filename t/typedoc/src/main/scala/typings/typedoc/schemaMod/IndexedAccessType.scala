@@ -6,23 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.Type */
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.S<typedoc.typedoc/dist/lib/models.IndexedAccessType, 'type' | 'indexType' | 'objectType'> */
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.typedoc.schemaMod.__ModelToObject because Already inherited */ trait IndexedAccessType
-  extends StObject
-     with SomeType {
+trait IndexedAccessType extends StObject {
   
-  var indexType: ModelToObject[typings.typedoc.modelsTypesMod.Type] | typings.typedoc.modelsTypesMod.Type
+  var indexType: ToSerialized[typings.typedoc.modelsTypesMod.SomeType]
   
-  var objectType: ModelToObject[typings.typedoc.modelsTypesMod.Type] | typings.typedoc.modelsTypesMod.Type
+  var objectType: ToSerialized[typings.typedoc.modelsTypesMod.SomeType]
   
-  var `type`: (ModelToObject[/* "indexedAccess" */ String]) | (/* "indexedAccess" */ String)
+  var `type`: ToSerialized[/* "indexedAccess" */ String]
 }
 object IndexedAccessType {
   
   inline def apply(
-    indexType: ModelToObject[typings.typedoc.modelsTypesMod.Type] | typings.typedoc.modelsTypesMod.Type,
-    objectType: ModelToObject[typings.typedoc.modelsTypesMod.Type] | typings.typedoc.modelsTypesMod.Type,
-    `type`: (ModelToObject[/* "indexedAccess" */ String]) | (/* "indexedAccess" */ String)
+    indexType: ToSerialized[typings.typedoc.modelsTypesMod.SomeType],
+    objectType: ToSerialized[typings.typedoc.modelsTypesMod.SomeType],
+    `type`: ToSerialized[/* "indexedAccess" */ String]
   ): IndexedAccessType = {
     val __obj = js.Dynamic.literal(indexType = indexType.asInstanceOf[js.Any], objectType = objectType.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -31,16 +28,16 @@ object IndexedAccessType {
   
   extension [Self <: IndexedAccessType](x: Self) {
     
-    inline def setIndexType(value: ModelToObject[typings.typedoc.modelsTypesMod.Type] | typings.typedoc.modelsTypesMod.Type): Self = StObject.set(x, "indexType", value.asInstanceOf[js.Any])
+    inline def setIndexType(value: ToSerialized[typings.typedoc.modelsTypesMod.SomeType]): Self = StObject.set(x, "indexType", value.asInstanceOf[js.Any])
     
-    inline def setIndexTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "indexType", js.Array(value :_*))
+    inline def setIndexTypeVarargs(value: _ModelToObject[Any]*): Self = StObject.set(x, "indexType", js.Array(value*))
     
-    inline def setObjectType(value: ModelToObject[typings.typedoc.modelsTypesMod.Type] | typings.typedoc.modelsTypesMod.Type): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
+    inline def setObjectType(value: ToSerialized[typings.typedoc.modelsTypesMod.SomeType]): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
     
-    inline def setObjectTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "objectType", js.Array(value :_*))
+    inline def setObjectTypeVarargs(value: _ModelToObject[Any]*): Self = StObject.set(x, "objectType", js.Array(value*))
     
-    inline def setType(value: (ModelToObject[/* "indexedAccess" */ String]) | (/* "indexedAccess" */ String)): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ToSerialized[/* "indexedAccess" */ String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: _ModelToObject[Any]*): Self = StObject.set(x, "type", js.Array(value*))
   }
 }

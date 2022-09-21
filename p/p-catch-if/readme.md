@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-catch-if
 
-Typings are for version 2.1.0
+Typings are for version 3.0.0
 
 ## Library description:
 Conditional promise catch handler
@@ -10,10 +10,10 @@ Conditional promise catch handler
 | ------------------ | :-------------: |
 | Full name          | p-catch-if |
 | Keywords           | promise, catch, if, conditional, cond, iff, chain, throw, error, reject, rejected, handler, filter, filtered, predicate, exception, thunk, function, async, await, promises, combinator, bluebird |
-| # releases         | 3 |
-| # dependents       | 10 |
-| # downloads        | 9938 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 3248.6666666666665 |
+| # stars            | 38.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/p-catch-if#readme)

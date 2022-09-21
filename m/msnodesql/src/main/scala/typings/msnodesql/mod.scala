@@ -1,7 +1,6 @@
 package typings.msnodesql
 
 import typings.node.eventsMod.EventEmitter
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,64 +15,64 @@ object mod {
   inline def open(connectionString: String, callback: OpenCallback): Connection = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(connectionString.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Connection]
   
   inline def query(connectionString: String, query: String): StreamEvents = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(connectionString.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[StreamEvents]
-  inline def query(connectionString: String, query: String, callback: QueryCallback[js.Any]): StreamEvents = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(connectionString.asInstanceOf[js.Any], query.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[StreamEvents]
-  inline def query(connectionString: String, query: String, params: js.Array[js.Any]): StreamEvents = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(connectionString.asInstanceOf[js.Any], query.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[StreamEvents]
-  inline def query(connectionString: String, query: String, params: js.Array[js.Any], callback: QueryCallback[js.Any]): StreamEvents = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(connectionString.asInstanceOf[js.Any], query.asInstanceOf[js.Any], params.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[StreamEvents]
+  inline def query(connectionString: String, query: String, callback: QueryCallback[Any]): StreamEvents = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(connectionString.asInstanceOf[js.Any], query.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[StreamEvents]
+  inline def query(connectionString: String, query: String, params: js.Array[Any]): StreamEvents = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(connectionString.asInstanceOf[js.Any], query.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[StreamEvents]
+  inline def query(connectionString: String, query: String, params: js.Array[Any], callback: QueryCallback[Any]): StreamEvents = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(connectionString.asInstanceOf[js.Any], query.asInstanceOf[js.Any], params.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[StreamEvents]
   
   inline def queryRaw(connectionString: String, query: String): StreamEvents = (^.asInstanceOf[js.Dynamic].applyDynamic("queryRaw")(connectionString.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[StreamEvents]
   inline def queryRaw(connectionString: String, query: String, callback: QueryRawCallback): StreamEvents = (^.asInstanceOf[js.Dynamic].applyDynamic("queryRaw")(connectionString.asInstanceOf[js.Any], query.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[StreamEvents]
-  inline def queryRaw(connectionString: String, query: String, params: js.Array[js.Any]): StreamEvents = (^.asInstanceOf[js.Dynamic].applyDynamic("queryRaw")(connectionString.asInstanceOf[js.Any], query.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[StreamEvents]
-  inline def queryRaw(connectionString: String, query: String, params: js.Array[js.Any], callback: QueryRawCallback): StreamEvents = (^.asInstanceOf[js.Dynamic].applyDynamic("queryRaw")(connectionString.asInstanceOf[js.Any], query.asInstanceOf[js.Any], params.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[StreamEvents]
+  inline def queryRaw(connectionString: String, query: String, params: js.Array[Any]): StreamEvents = (^.asInstanceOf[js.Dynamic].applyDynamic("queryRaw")(connectionString.asInstanceOf[js.Any], query.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[StreamEvents]
+  inline def queryRaw(connectionString: String, query: String, params: js.Array[Any], callback: QueryRawCallback): StreamEvents = (^.asInstanceOf[js.Dynamic].applyDynamic("queryRaw")(connectionString.asInstanceOf[js.Any], query.asInstanceOf[js.Any], params.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[StreamEvents]
   
   inline def query_T[T](connectionString: String, query: String, callback: QueryCallback[T]): StreamEvents = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(connectionString.asInstanceOf[js.Any], query.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[StreamEvents]
-  inline def query_T[T](connectionString: String, query: String, params: js.Array[js.Any], callback: QueryCallback[T]): StreamEvents = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(connectionString.asInstanceOf[js.Any], query.asInstanceOf[js.Any], params.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[StreamEvents]
+  inline def query_T[T](connectionString: String, query: String, params: js.Array[Any], callback: QueryCallback[T]): StreamEvents = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(connectionString.asInstanceOf[js.Any], query.asInstanceOf[js.Any], params.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[StreamEvents]
   
   @js.native
   trait Connection extends StObject {
     
-    def beginTransaction(): js.Any = js.native
-    def beginTransaction(callback: ErrorCallback): js.Any = js.native
+    def beginTransaction(): Any = js.native
+    def beginTransaction(callback: ErrorCallback): Any = js.native
     
-    def close(): js.Any = js.native
-    def close(callback: ErrorCallback): js.Any = js.native
-    def close(immediately: Boolean): js.Any = js.native
-    def close(immediately: Boolean, callback: ErrorCallback): js.Any = js.native
+    def close(): Any = js.native
+    def close(callback: ErrorCallback): Any = js.native
+    def close(immediately: Boolean): Any = js.native
+    def close(immediately: Boolean, callback: ErrorCallback): Any = js.native
     
-    def commit(): js.Any = js.native
-    def commit(callback: ErrorCallback): js.Any = js.native
+    def commit(): Any = js.native
+    def commit(callback: ErrorCallback): Any = js.native
     
     def query(query: String): StreamEvents = js.native
-    def query(query: String, callback: QueryCallback[js.Any]): StreamEvents = js.native
-    def query(query: String, params: js.Array[js.Any]): StreamEvents = js.native
-    def query(query: String, params: js.Array[js.Any], callback: QueryCallback[js.Any]): StreamEvents = js.native
+    def query(query: String, callback: QueryCallback[Any]): StreamEvents = js.native
+    def query(query: String, params: js.Array[Any]): StreamEvents = js.native
+    def query(query: String, params: js.Array[Any], callback: QueryCallback[Any]): StreamEvents = js.native
     
     def queryRaw(query: String): StreamEvents = js.native
     def queryRaw(query: String, callback: QueryRawCallback): StreamEvents = js.native
-    def queryRaw(query: String, params: js.Array[js.Any]): StreamEvents = js.native
-    def queryRaw(query: String, params: js.Array[js.Any], callback: QueryRawCallback): StreamEvents = js.native
+    def queryRaw(query: String, params: js.Array[Any]): StreamEvents = js.native
+    def queryRaw(query: String, params: js.Array[Any], callback: QueryRawCallback): StreamEvents = js.native
     
     @JSName("query")
     def query_T[T](query: String, callback: QueryCallback[T]): StreamEvents = js.native
     @JSName("query")
-    def query_T[T](query: String, params: js.Array[js.Any], callback: QueryCallback[T]): StreamEvents = js.native
+    def query_T[T](query: String, params: js.Array[Any], callback: QueryCallback[T]): StreamEvents = js.native
     
-    def rollback(): js.Any = js.native
-    def rollback(callback: ErrorCallback): js.Any = js.native
+    def rollback(): Any = js.native
+    def rollback(callback: ErrorCallback): Any = js.native
   }
   
-  type ErrorCallback = js.Function1[/* err */ Error, Unit]
+  type ErrorCallback = js.Function1[/* err */ js.Error, Unit]
   
-  type OpenCallback = js.Function2[/* err */ js.UndefOr[Error], /* connection */ js.UndefOr[Connection], Unit]
+  type OpenCallback = js.Function2[/* err */ js.UndefOr[js.Error], /* connection */ js.UndefOr[Connection], Unit]
   
   type QueryCallback[T] = js.Function3[
-    /* err */ js.UndefOr[Error], 
+    /* err */ js.UndefOr[js.Error], 
     /* results */ js.UndefOr[js.Array[T]], 
     /* more */ js.UndefOr[Boolean], 
     Unit
   ]
   
   type QueryRawCallback = js.Function3[
-    /* err */ js.UndefOr[Error], 
+    /* err */ js.UndefOr[js.Error], 
     /* results */ js.UndefOr[QueryRawResult], 
     /* more */ js.UndefOr[Boolean], 
     Unit
@@ -102,11 +101,11 @@ object mod {
     
     var meta: js.Array[QueryRawColumn]
     
-    var rows: js.Array[js.Array[js.Any]]
+    var rows: js.Array[js.Array[Any]]
   }
   object QueryRawResult {
     
-    inline def apply(meta: js.Array[QueryRawColumn], rows: js.Array[js.Array[js.Any]]): QueryRawResult = {
+    inline def apply(meta: js.Array[QueryRawColumn], rows: js.Array[js.Array[Any]]): QueryRawResult = {
       val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
       __obj.asInstanceOf[QueryRawResult]
     }
@@ -115,11 +114,11 @@ object mod {
       
       inline def setMeta(value: js.Array[QueryRawColumn]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
-      inline def setMetaVarargs(value: QueryRawColumn*): Self = StObject.set(x, "meta", js.Array(value :_*))
+      inline def setMetaVarargs(value: QueryRawColumn*): Self = StObject.set(x, "meta", js.Array(value*))
       
-      inline def setRows(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      inline def setRows(value: js.Array[js.Array[Any]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
-      inline def setRowsVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "rows", js.Array(value :_*))
+      inline def setRowsVarargs(value: js.Array[Any]*): Self = StObject.set(x, "rows", js.Array(value*))
     }
   }
   

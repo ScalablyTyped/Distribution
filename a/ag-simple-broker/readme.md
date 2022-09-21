@@ -1,7 +1,7 @@
 
 # Scala.js typings for ag-simple-broker
 
-Typings are for version 4.0
+Typings are for version 5.0
 
 ## Library description:
 Simple broker engine for Asyngular
@@ -10,10 +10,10 @@ Simple broker engine for Asyngular
 | ------------------ | :-------------: |
 | Full name          | ag-simple-broker |
 | Keywords           | asyngular, broker, socketcluster, pubsub |
-| # releases         | 10 |
-| # dependents       | 2 |
-| # downloads        | 29874 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5923.666666666667 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/ag-simple-broker)

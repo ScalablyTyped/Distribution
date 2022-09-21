@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("THREE.Quaternion")
 @js.native
 /**
-	 * @param x x coordinate
-	 * @param y y coordinate
-	 * @param z z coordinate
-	 * @param w w coordinate
-	 */
-class Quaternion ()
+  * @param x x coordinate
+  * @param y y coordinate
+  * @param z z coordinate
+  * @param w w coordinate
+  */
+open class Quaternion ()
   extends typings.three.mod.Quaternion {
   def this(x: Double) = this()
   def this(x: Double, y: Double) = this()
@@ -47,14 +47,14 @@ object Quaternion {
   ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("multiplyQuaternionsFlat")(dst.asInstanceOf[js.Any], dstOffset.asInstanceOf[js.Any], src0.asInstanceOf[js.Any], srcOffset.asInstanceOf[js.Any], src1.asInstanceOf[js.Any], stcOffset1.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
   /**
-  	 * Adapted from http://www.euclideanspace.com/maths/algebra/realNormedAlgebra/quaternions/slerp/.
-  	 */
+    * @deprecated Use qm.slerpQuaternions( qa, qb, t ) instead..
+    */
   inline def slerp(
     qa: typings.three.quaternionMod.Quaternion,
     qb: typings.three.quaternionMod.Quaternion,
     qm: typings.three.quaternionMod.Quaternion,
     t: Double
-  ): typings.three.quaternionMod.Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("slerp")(qa.asInstanceOf[js.Any], qb.asInstanceOf[js.Any], qm.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[typings.three.quaternionMod.Quaternion]
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("slerp")(qa.asInstanceOf[js.Any], qb.asInstanceOf[js.Any], qm.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def slerpFlat(
     dst: js.Array[Double],

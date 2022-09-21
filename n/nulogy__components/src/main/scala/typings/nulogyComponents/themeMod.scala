@@ -8,5 +8,5 @@ object themeMod {
   
   @JSImport("@nulogy/components/src/theme", "theme")
   @js.native
-  val theme: js.Any = js.native
+  val theme: Any = js.native
 }

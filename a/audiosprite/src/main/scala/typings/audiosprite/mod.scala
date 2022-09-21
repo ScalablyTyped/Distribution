@@ -2,18 +2,17 @@ package typings.audiosprite
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.audiosprite.anon.End
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(files: js.Array[String], callback: js.Function2[/* error */ Error, /* obj */ Result, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(files: js.Array[String], callback: js.Function2[/* error */ js.Error, /* obj */ Result, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply(
     files: js.Array[String],
     option: Option,
-    callback: js.Function2[/* error */ Error, /* obj */ Result, Unit]
+    callback: js.Function2[/* error */ js.Error, /* obj */ Result, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], option.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("audiosprite", JSImport.Namespace)
@@ -63,11 +62,11 @@ object mod {
   
   trait Logger extends StObject {
     
-    var debug: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+    var debug: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
     
-    var info: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+    var info: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
     
-    var log: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+    var log: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
   }
   object Logger {
     
@@ -78,15 +77,15 @@ object mod {
     
     extension [Self <: Logger](x: Self) {
       
-      inline def setDebug(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+      inline def setDebug(value: /* repeated */ Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
       
       inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      inline def setInfo(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
+      inline def setInfo(value: /* repeated */ Any => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
       
       inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
       
-      inline def setLog(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
+      inline def setLog(value: /* repeated */ Any => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
       
       inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
     }
@@ -105,6 +104,8 @@ object mod {
     var format: js.UndefOr[ExportType] = js.undefined
     
     var gap: js.UndefOr[Double] = js.undefined
+    
+    var ignorerounding: js.UndefOr[Boolean] = js.undefined
     
     var log: js.UndefOr[LogLevel] = js.undefined
     
@@ -166,6 +167,10 @@ object mod {
       
       inline def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
       
+      inline def setIgnorerounding(value: Boolean): Self = StObject.set(x, "ignorerounding", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreroundingUndefined: Self = StObject.set(x, "ignorerounding", js.undefined)
+      
       inline def setLog(value: LogLevel): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
       inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
@@ -178,7 +183,7 @@ object mod {
       
       inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
       
-      inline def setLoopVarargs(value: String*): Self = StObject.set(x, "loop", js.Array(value :_*))
+      inline def setLoopVarargs(value: String*): Self = StObject.set(x, "loop", js.Array(value*))
       
       inline def setMinlength(value: Double): Self = StObject.set(x, "minlength", value.asInstanceOf[js.Any])
       
@@ -237,7 +242,7 @@ object mod {
       
       inline def setResources(value: js.Array[String]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
       
-      inline def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
+      inline def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value*))
       
       inline def setSpritemap(value: StringDictionary[End]): Self = StObject.set(x, "spritemap", value.asInstanceOf[js.Any])
     }

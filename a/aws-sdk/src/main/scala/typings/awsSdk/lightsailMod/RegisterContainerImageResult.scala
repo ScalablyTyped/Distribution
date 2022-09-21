@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RegisterContainerImageResult extends StObject {
   
+  /**
+    * An object that describes a container image that is registered to a Lightsail container service
+    */
   var containerImage: js.UndefOr[ContainerImage] = js.undefined
 }
 object RegisterContainerImageResult {

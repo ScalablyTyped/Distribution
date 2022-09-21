@@ -48,12 +48,12 @@ object componentMod {
   @JSImport("vega-lite/build/src/compile/axis/component", "AXIS_COMPONENT_PROPERTIES")
   @js.native
   val AXIS_COMPONENT_PROPERTIES: js.Array[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 81 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 81 */ Any
   ] = js.native
   
   @JSImport("vega-lite/build/src/compile/axis/component", "AxisComponent")
   @js.native
-  class AxisComponent () extends Split[AxisComponentProps] {
+  open class AxisComponent () extends Split[AxisComponentProps] {
     def this(explicit: PartialAxisComponentProps) = this()
     def this(explicit: Unit, `implicit`: PartialAxisComponentProps) = this()
     def this(explicit: PartialAxisComponentProps, `implicit`: PartialAxisComponentProps) = this()
@@ -94,13 +94,13 @@ object componentMod {
       
       inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      inline def setXVarargs(value: AxisComponent*): Self = StObject.set(x, "x", js.Array(value :_*))
+      inline def setXVarargs(value: AxisComponent*): Self = StObject.set(x, "x", js.Array(value*))
       
       inline def setY(value: js.Array[AxisComponent]): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
       inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
       
-      inline def setYVarargs(value: AxisComponent*): Self = StObject.set(x, "y", js.Array(value :_*))
+      inline def setYVarargs(value: AxisComponent*): Self = StObject.set(x, "y", js.Array(value*))
     }
   }
   
@@ -140,32 +140,29 @@ object componentMod {
     var gridCap: js.UndefOr[StrokeCapValue] = js.undefined
     
     var gridColor: js.UndefOr[
-        (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisColor[SignalRef]
+        (Exclude[js.UndefOr[ColorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisColor[SignalRef]
       ] = js.undefined
     
     var gridDash: js.UndefOr[
-        (Exclude[
-          js.UndefOr[DashArrayValue], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-        ]) | SignalRef | ConditionalAxisNumberArray[SignalRef]
+        (Exclude[js.UndefOr[DashArrayValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumberArray[SignalRef]
       ] = js.undefined
     
     var gridDashOffset: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
       ] = js.undefined
     
     var gridOpacity: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
       ] = js.undefined
     
     var gridScale: js.UndefOr[String] = js.undefined
     
     var gridWidth: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
       ] = js.undefined
     
     var labelAlign: js.UndefOr[
-        (Exclude[js.UndefOr[AlignValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisLabelAlign[SignalRef]
+        (Exclude[js.UndefOr[AlignValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisLabelAlign[SignalRef]
       ] = js.undefined
     
     var labelAngle: js.UndefOr[NumberValue] = js.undefined
@@ -173,14 +170,14 @@ object componentMod {
     var labelBaseline: js.UndefOr[
         (Exclude[
           js.UndefOr[TextBaselineValue], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+          ScaledValueRef[Any] | NumericValueRef | ColorValueRef
         ]) | SignalRef | ConditionalAxisLabelBaseline[SignalRef]
       ] = js.undefined
     
     var labelBound: js.UndefOr[Double | Boolean | SignalRef] = js.undefined
     
     var labelColor: js.UndefOr[
-        (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisColor[SignalRef]
+        (Exclude[js.UndefOr[ColorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisColor[SignalRef]
       ] = js.undefined
     
     var labelExpr: String
@@ -190,45 +187,39 @@ object componentMod {
     var labelFlushOffset: js.UndefOr[Double | SignalRef] = js.undefined
     
     var labelFont: js.UndefOr[
-        (Exclude[js.UndefOr[StringValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisString[SignalRef]
+        (Exclude[js.UndefOr[StringValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisString[SignalRef]
       ] = js.undefined
     
     var labelFontSize: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
       ] = js.undefined
     
     var labelFontStyle: js.UndefOr[
-        (Exclude[
-          js.UndefOr[FontStyleValue], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-        ]) | SignalRef | ConditionalAxisLabelFontStyle[SignalRef]
+        (Exclude[js.UndefOr[FontStyleValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisLabelFontStyle[SignalRef]
       ] = js.undefined
     
     var labelFontWeight: js.UndefOr[
-        (Exclude[
-          js.UndefOr[FontWeightValue], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-        ]) | SignalRef | ConditionalAxisLabelFontWeight[SignalRef]
+        (Exclude[js.UndefOr[FontWeightValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisLabelFontWeight[SignalRef]
       ] = js.undefined
     
     var labelLimit: js.UndefOr[NumberValue] = js.undefined
     
     var labelLineHeight: js.UndefOr[NumberValue] & (js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
       ])
     
     var labelOffset: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
       ] = js.undefined
     
     var labelOpacity: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
       ] = js.undefined
     
     var labelOverlap: js.UndefOr[LabelOverlap | SignalRef] = js.undefined
     
     var labelPadding: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
       ] = js.undefined
     
     var labelSeparation: js.UndefOr[Double | SignalRef] = js.undefined
@@ -252,20 +243,17 @@ object componentMod {
     var tickCap: js.UndefOr[StrokeCapValue] = js.undefined
     
     var tickColor: js.UndefOr[
-        (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisColor[SignalRef]
+        (Exclude[js.UndefOr[ColorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisColor[SignalRef]
       ] = js.undefined
     
     var tickCount: js.UndefOr[TickCount] = js.undefined
     
     var tickDash: js.UndefOr[
-        (Exclude[
-          js.UndefOr[DashArrayValue], 
-          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-        ]) | SignalRef | ConditionalAxisNumberArray[SignalRef]
+        (Exclude[js.UndefOr[DashArrayValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumberArray[SignalRef]
       ] = js.undefined
     
     var tickDashOffset: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
       ] = js.undefined
     
     var tickExtra: js.UndefOr[BooleanValue] = js.undefined
@@ -275,17 +263,17 @@ object componentMod {
     var tickOffset: js.UndefOr[NumberValue] = js.undefined
     
     var tickOpacity: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
       ] = js.undefined
     
     var tickRound: js.UndefOr[BooleanValue] = js.undefined
     
     var tickSize: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
       ] = js.undefined
     
     var tickWidth: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
       ] = js.undefined
     
     var ticks: js.UndefOr[BooleanValue] = js.undefined
@@ -324,7 +312,7 @@ object componentMod {
     
     var translate: js.UndefOr[NumberValue] = js.undefined
     
-    var values: js.UndefOr[js.Array[js.Any] | SignalRef] = js.undefined
+    var values: js.UndefOr[js.Array[Any] | SignalRef] = js.undefined
     
     var zindex: js.UndefOr[Double] = js.undefined
   }
@@ -334,7 +322,7 @@ object componentMod {
       disable: Boolean,
       labelExpr: String,
       labelLineHeight: js.UndefOr[NumberValue] & (js.UndefOr[
-          (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+          (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
         ]),
       orient: AxisOrient | SignalRef,
       scale: String,
@@ -380,7 +368,7 @@ object componentMod {
       
       inline def setDomainDashUndefined: Self = StObject.set(x, "domainDash", js.undefined)
       
-      inline def setDomainDashVarargs(value: Double*): Self = StObject.set(x, "domainDash", js.Array(value :_*))
+      inline def setDomainDashVarargs(value: Double*): Self = StObject.set(x, "domainDash", js.Array(value*))
       
       inline def setDomainOpacity(value: NumberValue): Self = StObject.set(x, "domainOpacity", value.asInstanceOf[js.Any])
       
@@ -411,7 +399,7 @@ object componentMod {
       inline def setGridCapUndefined: Self = StObject.set(x, "gridCap", js.undefined)
       
       inline def setGridColor(
-        value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisColor[SignalRef]
+        value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisColor[SignalRef]
       ): Self = StObject.set(x, "gridColor", value.asInstanceOf[js.Any])
       
       inline def setGridColorNull: Self = StObject.set(x, "gridColor", null)
@@ -419,24 +407,21 @@ object componentMod {
       inline def setGridColorUndefined: Self = StObject.set(x, "gridColor", js.undefined)
       
       inline def setGridDash(
-        value: (Exclude[
-              js.UndefOr[DashArrayValue], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-            ]) | SignalRef | ConditionalAxisNumberArray[SignalRef]
+        value: (Exclude[js.UndefOr[DashArrayValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumberArray[SignalRef]
       ): Self = StObject.set(x, "gridDash", value.asInstanceOf[js.Any])
       
       inline def setGridDashOffset(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
       ): Self = StObject.set(x, "gridDashOffset", value.asInstanceOf[js.Any])
       
       inline def setGridDashOffsetUndefined: Self = StObject.set(x, "gridDashOffset", js.undefined)
       
       inline def setGridDashUndefined: Self = StObject.set(x, "gridDash", js.undefined)
       
-      inline def setGridDashVarargs(value: Double*): Self = StObject.set(x, "gridDash", js.Array(value :_*))
+      inline def setGridDashVarargs(value: Double*): Self = StObject.set(x, "gridDash", js.Array(value*))
       
       inline def setGridOpacity(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
       ): Self = StObject.set(x, "gridOpacity", value.asInstanceOf[js.Any])
       
       inline def setGridOpacityUndefined: Self = StObject.set(x, "gridOpacity", js.undefined)
@@ -448,13 +433,13 @@ object componentMod {
       inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
       
       inline def setGridWidth(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
       ): Self = StObject.set(x, "gridWidth", value.asInstanceOf[js.Any])
       
       inline def setGridWidthUndefined: Self = StObject.set(x, "gridWidth", js.undefined)
       
       inline def setLabelAlign(
-        value: (Exclude[js.UndefOr[AlignValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisLabelAlign[SignalRef]
+        value: (Exclude[js.UndefOr[AlignValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisLabelAlign[SignalRef]
       ): Self = StObject.set(x, "labelAlign", value.asInstanceOf[js.Any])
       
       inline def setLabelAlignUndefined: Self = StObject.set(x, "labelAlign", js.undefined)
@@ -466,7 +451,7 @@ object componentMod {
       inline def setLabelBaseline(
         value: (Exclude[
               js.UndefOr[TextBaselineValue], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+              ScaledValueRef[Any] | NumericValueRef | ColorValueRef
             ]) | SignalRef | ConditionalAxisLabelBaseline[SignalRef]
       ): Self = StObject.set(x, "labelBaseline", value.asInstanceOf[js.Any])
       
@@ -477,7 +462,7 @@ object componentMod {
       inline def setLabelBoundUndefined: Self = StObject.set(x, "labelBound", js.undefined)
       
       inline def setLabelColor(
-        value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisColor[SignalRef]
+        value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisColor[SignalRef]
       ): Self = StObject.set(x, "labelColor", value.asInstanceOf[js.Any])
       
       inline def setLabelColorNull: Self = StObject.set(x, "labelColor", null)
@@ -495,20 +480,17 @@ object componentMod {
       inline def setLabelFlushUndefined: Self = StObject.set(x, "labelFlush", js.undefined)
       
       inline def setLabelFont(
-        value: (Exclude[js.UndefOr[StringValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisString[SignalRef]
+        value: (Exclude[js.UndefOr[StringValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisString[SignalRef]
       ): Self = StObject.set(x, "labelFont", value.asInstanceOf[js.Any])
       
       inline def setLabelFontSize(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
       ): Self = StObject.set(x, "labelFontSize", value.asInstanceOf[js.Any])
       
       inline def setLabelFontSizeUndefined: Self = StObject.set(x, "labelFontSize", js.undefined)
       
       inline def setLabelFontStyle(
-        value: (Exclude[
-              js.UndefOr[FontStyleValue], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-            ]) | SignalRef | ConditionalAxisLabelFontStyle[SignalRef]
+        value: (Exclude[js.UndefOr[FontStyleValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisLabelFontStyle[SignalRef]
       ): Self = StObject.set(x, "labelFontStyle", value.asInstanceOf[js.Any])
       
       inline def setLabelFontStyleUndefined: Self = StObject.set(x, "labelFontStyle", js.undefined)
@@ -516,10 +498,7 @@ object componentMod {
       inline def setLabelFontUndefined: Self = StObject.set(x, "labelFont", js.undefined)
       
       inline def setLabelFontWeight(
-        value: (Exclude[
-              js.UndefOr[FontWeightValue], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-            ]) | SignalRef | ConditionalAxisLabelFontWeight[SignalRef]
+        value: (Exclude[js.UndefOr[FontWeightValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisLabelFontWeight[SignalRef]
       ): Self = StObject.set(x, "labelFontWeight", value.asInstanceOf[js.Any])
       
       inline def setLabelFontWeightUndefined: Self = StObject.set(x, "labelFontWeight", js.undefined)
@@ -530,18 +509,18 @@ object componentMod {
       
       inline def setLabelLineHeight(
         value: js.UndefOr[NumberValue] & (js.UndefOr[
-              (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+              (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
             ])
       ): Self = StObject.set(x, "labelLineHeight", value.asInstanceOf[js.Any])
       
       inline def setLabelOffset(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
       ): Self = StObject.set(x, "labelOffset", value.asInstanceOf[js.Any])
       
       inline def setLabelOffsetUndefined: Self = StObject.set(x, "labelOffset", js.undefined)
       
       inline def setLabelOpacity(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
       ): Self = StObject.set(x, "labelOpacity", value.asInstanceOf[js.Any])
       
       inline def setLabelOpacityUndefined: Self = StObject.set(x, "labelOpacity", js.undefined)
@@ -551,7 +530,7 @@ object componentMod {
       inline def setLabelOverlapUndefined: Self = StObject.set(x, "labelOverlap", js.undefined)
       
       inline def setLabelPadding(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
       ): Self = StObject.set(x, "labelPadding", value.asInstanceOf[js.Any])
       
       inline def setLabelPaddingUndefined: Self = StObject.set(x, "labelPadding", js.undefined)
@@ -593,7 +572,7 @@ object componentMod {
       inline def setTickCapUndefined: Self = StObject.set(x, "tickCap", js.undefined)
       
       inline def setTickColor(
-        value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisColor[SignalRef]
+        value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisColor[SignalRef]
       ): Self = StObject.set(x, "tickColor", value.asInstanceOf[js.Any])
       
       inline def setTickColorNull: Self = StObject.set(x, "tickColor", null)
@@ -605,21 +584,18 @@ object componentMod {
       inline def setTickCountUndefined: Self = StObject.set(x, "tickCount", js.undefined)
       
       inline def setTickDash(
-        value: (Exclude[
-              js.UndefOr[DashArrayValue], 
-              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
-            ]) | SignalRef | ConditionalAxisNumberArray[SignalRef]
+        value: (Exclude[js.UndefOr[DashArrayValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumberArray[SignalRef]
       ): Self = StObject.set(x, "tickDash", value.asInstanceOf[js.Any])
       
       inline def setTickDashOffset(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
       ): Self = StObject.set(x, "tickDashOffset", value.asInstanceOf[js.Any])
       
       inline def setTickDashOffsetUndefined: Self = StObject.set(x, "tickDashOffset", js.undefined)
       
       inline def setTickDashUndefined: Self = StObject.set(x, "tickDash", js.undefined)
       
-      inline def setTickDashVarargs(value: Double*): Self = StObject.set(x, "tickDash", js.Array(value :_*))
+      inline def setTickDashVarargs(value: Double*): Self = StObject.set(x, "tickDash", js.Array(value*))
       
       inline def setTickExtra(value: BooleanValue): Self = StObject.set(x, "tickExtra", value.asInstanceOf[js.Any])
       
@@ -634,7 +610,7 @@ object componentMod {
       inline def setTickOffsetUndefined: Self = StObject.set(x, "tickOffset", js.undefined)
       
       inline def setTickOpacity(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
       ): Self = StObject.set(x, "tickOpacity", value.asInstanceOf[js.Any])
       
       inline def setTickOpacityUndefined: Self = StObject.set(x, "tickOpacity", js.undefined)
@@ -644,13 +620,13 @@ object componentMod {
       inline def setTickRoundUndefined: Self = StObject.set(x, "tickRound", js.undefined)
       
       inline def setTickSize(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
       ): Self = StObject.set(x, "tickSize", value.asInstanceOf[js.Any])
       
       inline def setTickSizeUndefined: Self = StObject.set(x, "tickSize", js.undefined)
       
       inline def setTickWidth(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | SignalRef | ConditionalAxisNumber[SignalRef]
       ): Self = StObject.set(x, "tickWidth", value.asInstanceOf[js.Any])
       
       inline def setTickWidthUndefined: Self = StObject.set(x, "tickWidth", js.undefined)
@@ -717,7 +693,7 @@ object componentMod {
       
       inline def setTitlePaddingUndefined: Self = StObject.set(x, "titlePadding", js.undefined)
       
-      inline def setTitleVarargs(value: ((FieldDefBase[String, Bin]) | String)*): Self = StObject.set(x, "title", js.Array(value :_*))
+      inline def setTitleVarargs(value: ((FieldDefBase[String, Bin]) | String)*): Self = StObject.set(x, "title", js.Array(value*))
       
       inline def setTitleX(value: NumberValue): Self = StObject.set(x, "titleX", value.asInstanceOf[js.Any])
       
@@ -731,11 +707,11 @@ object componentMod {
       
       inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
       
-      inline def setValues(value: js.Array[js.Any] | SignalRef): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[Any] | SignalRef): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
       
-      inline def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Any*): Self = StObject.set(x, "values", js.Array(value*))
       
       inline def setZindex(value: Double): Self = StObject.set(x, "zindex", value.asInstanceOf[js.Any])
       

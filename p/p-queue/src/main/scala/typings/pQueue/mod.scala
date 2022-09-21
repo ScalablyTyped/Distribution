@@ -3,12 +3,10 @@ package typings.pQueue
 import typings.eventemitter3.mod.^
 import typings.pQueue.optionsMod.Options
 import typings.pQueue.optionsMod.QueueAddOptions
-import typings.pQueue.pQueueStrings.active
-import typings.pQueue.pQueueStrings.add
-import typings.pQueue.pQueueStrings.idle
-import typings.pQueue.pQueueStrings.next
+import typings.pQueue.optionsMod.TaskOptions
 import typings.pQueue.queueMod.Queue
 import typings.pQueue.queueMod.RunFunction
+import typings.std.Error
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,70 +16,54 @@ object mod {
   
   @JSImport("p-queue", JSImport.Default)
   @js.native
-  class default[QueueType /* <: Queue[RunFunction, EnqueueOptionsType] */, EnqueueOptionsType /* <: QueueAddOptions */] () extends PQueue[QueueType, EnqueueOptionsType] {
+  open class default[QueueType /* <: Queue[RunFunction, EnqueueOptionsType] */, EnqueueOptionsType /* <: QueueAddOptions */] () extends PQueue[QueueType, EnqueueOptionsType] {
     def this(options: Options[QueueType, EnqueueOptionsType]) = this()
   }
   
+  @JSImport("p-queue", "AbortError")
   @js.native
-  trait PQueue[QueueType /* <: Queue[RunFunction, EnqueueOptionsType] */, EnqueueOptionsType /* <: QueueAddOptions */]
-    extends ^[active | idle | add | next, js.Any] {
+  open class AbortError ()
+    extends StObject
+       with Error {
     
-    /* private */ val _carryoverConcurrencyCount: js.Any = js.native
+    /* standard es5 */
+    /* CompleteClass */
+    var message: String = js.native
     
-    /* private */ var _concurrency: js.Any = js.native
+    /* standard es5 */
+    /* CompleteClass */
+    var name: String = js.native
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.pQueue.pQueueStrings.active
+    - typings.pQueue.pQueueStrings.idle
+    - typings.pQueue.pQueueStrings.empty
+    - typings.pQueue.pQueueStrings.add
+    - typings.pQueue.pQueueStrings.next
+    - typings.pQueue.pQueueStrings.completed
+    - typings.pQueue.pQueueStrings.error
+  */
+  trait EventName extends StObject
+  object EventName {
     
-    /* private */ def _doesConcurrentAllowAnother: js.Any = js.native
+    inline def active: typings.pQueue.pQueueStrings.active = "active".asInstanceOf[typings.pQueue.pQueueStrings.active]
     
-    /* private */ def _doesIntervalAllowAnother: js.Any = js.native
+    inline def add: typings.pQueue.pQueueStrings.add = "add".asInstanceOf[typings.pQueue.pQueueStrings.add]
     
-    /* private */ var _initializeIntervalIfNeeded: js.Any = js.native
+    inline def completed: typings.pQueue.pQueueStrings.completed = "completed".asInstanceOf[typings.pQueue.pQueueStrings.completed]
     
-    /* private */ val _interval: js.Any = js.native
+    inline def empty: typings.pQueue.pQueueStrings.empty = "empty".asInstanceOf[typings.pQueue.pQueueStrings.empty]
     
-    /* private */ val _intervalCap: js.Any = js.native
+    inline def error: typings.pQueue.pQueueStrings.error = "error".asInstanceOf[typings.pQueue.pQueueStrings.error]
     
-    /* private */ var _intervalCount: js.Any = js.native
+    inline def idle: typings.pQueue.pQueueStrings.idle = "idle".asInstanceOf[typings.pQueue.pQueueStrings.idle]
     
-    /* private */ var _intervalEnd: js.Any = js.native
-    
-    /* private */ var _intervalId: js.Any = js.native
-    
-    /* private */ val _isIntervalIgnored: js.Any = js.native
-    
-    /* private */ var _isIntervalPaused: js.Any = js.native
-    
-    /* private */ var _isPaused: js.Any = js.native
-    
-    /* private */ var _next: js.Any = js.native
-    
-    /* private */ var _onInterval: js.Any = js.native
-    
-    /* private */ var _onResumeInterval: js.Any = js.native
-    
-    /* private */ var _pendingCount: js.Any = js.native
-    
-    /**
-      Executes all queued functions until it reaches the limit.
-      */
-    /* private */ var _processQueue: js.Any = js.native
-    
-    /* private */ var _queue: js.Any = js.native
-    
-    /* private */ val _queueClass: js.Any = js.native
-    
-    /* private */ var _resolveEmpty: js.Any = js.native
-    
-    /* private */ var _resolveIdle: js.Any = js.native
-    
-    /* private */ var _resolvePromises: js.Any = js.native
-    
-    /* private */ val _throwOnTimeout: js.Any = js.native
-    
-    /* private */ var _timeout: js.Any = js.native
-    
-    /* private */ var _timeoutId: js.Any = js.native
-    
-    /* private */ var _tryToStartAnother: js.Any = js.native
+    inline def next: typings.pQueue.pQueueStrings.next = "next".asInstanceOf[typings.pQueue.pQueueStrings.next]
+  }
+  
+  @js.native
+  trait PQueue[QueueType /* <: Queue[RunFunction, EnqueueOptionsType] */, EnqueueOptionsType /* <: QueueAddOptions */] extends ^[EventName, Any] {
     
     /**
       Adds a sync or async task to the queue. Always returns a promise.
@@ -122,17 +104,26 @@ object mod {
     def onIdle(): js.Promise[Unit] = js.native
     
     /**
+      @returns A promise that settles when the queue size is less than the given limit: `queue.size < limit`.
+      If you want to avoid having the queue grow beyond a certain size you can `await queue.onSizeLessThan()` before adding a new item.
+      Note that this only limits the number of items waiting to start. There could still be up to `concurrency` jobs already running that this call does not include in its calculation.
+      */
+    def onSizeLessThan(limit: Double): js.Promise[Unit] = js.native
+    
+    /**
       Put queue execution on hold.
       */
     def pause(): Unit = js.native
     
     /**
-      Number of pending promises.
+      Number of running items (no longer in the queue).
       */
     def pending: Double = js.native
     
+    /* private */ var `private`: Any = js.native
+    
     /**
-      Size of the queue.
+      Size of the queue, the number of queued items waiting to run.
       */
     def size: Double = js.native
     
@@ -147,12 +138,12 @@ object mod {
       */
     def start(): this.type = js.native
     
-    def timeout: js.UndefOr[Double] = js.native
     /**
-      Set the timeout for future operations.
+      Per-operation timeout in milliseconds. Operations fulfill once `timeout` elapses if they haven't already.
+      Applies to each future operation.
       */
-    def timeout_=(milliseconds: js.UndefOr[Double]): Unit = js.native
+    var timeout: js.UndefOr[Double] = js.native
   }
   
-  type Task[TaskResultType] = js.Function0[TaskResultType | js.Thenable[TaskResultType]]
+  type Task[TaskResultType] = js.Function1[/* options */ TaskOptions, TaskResultType | js.Thenable[TaskResultType]]
 }

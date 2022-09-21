@@ -9,7 +9,7 @@ trait InflateOptions extends StObject {
   
   var chunkSize: js.UndefOr[Double] = js.undefined
   
-  var dictionary: js.UndefOr[js.Any] = js.undefined
+  var dictionary: js.UndefOr[Any] = js.undefined
   
   var raw: js.UndefOr[Boolean] = js.undefined
   
@@ -30,7 +30,7 @@ object InflateOptions {
     
     inline def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
     
-    inline def setDictionary(value: js.Any): Self = StObject.set(x, "dictionary", value.asInstanceOf[js.Any])
+    inline def setDictionary(value: Any): Self = StObject.set(x, "dictionary", value.asInstanceOf[js.Any])
     
     inline def setDictionaryUndefined: Self = StObject.set(x, "dictionary", js.undefined)
     

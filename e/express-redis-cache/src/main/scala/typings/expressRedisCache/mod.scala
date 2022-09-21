@@ -4,10 +4,8 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.express.mod.RequestHandler
 import typings.express.mod.Request_
 import typings.express.mod.Response_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.node.eventsMod.EventEmitter
-import typings.redis.mod.RedisClient
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,31 +21,31 @@ object mod {
   
   @JSImport("express-redis-cache", "ExpressRedisCache")
   @js.native
-  class ExpressRedisCache () extends EventEmitter {
+  open class ExpressRedisCache () extends EventEmitter {
     def this(options: Options) = this()
     
     val FOREVER: Double = js.native
     
-    def add(name: String, body: String, callback: js.Function2[/* error */ js.Any, /* added */ Entry, Unit]): Unit = js.native
+    def add(name: String, body: String, callback: js.Function2[/* error */ Any, /* added */ Entry, Unit]): Unit = js.native
     def add(
       name: String,
       body: String,
       options: AddOptions,
-      callback: js.Function2[/* error */ js.Any, /* added */ Entry, Unit]
+      callback: js.Function2[/* error */ Any, /* added */ Entry, Unit]
     ): Unit = js.native
     
     var auth_pass: String = js.native
     
-    var client: RedisClient = js.native
+    var client: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify redis.RedisClient */ Any = js.native
     
     var connected: Boolean = js.native
     
-    def del(name: String, callback: js.Function2[/* error */ js.Any, /* deleted */ Double, Unit]): Unit = js.native
+    def del(name: String, callback: js.Function2[/* error */ Any, /* deleted */ Double, Unit]): Unit = js.native
     
     var expire: Double = js.native
     
-    def get(callback: js.Function2[/* error */ js.Any, /* entries */ js.Array[Entry], Unit]): Unit = js.native
-    def get(name: String, callback: js.Function2[/* error */ js.Any, /* entries */ js.Array[Entry], Unit]): Unit = js.native
+    def get(callback: js.Function2[/* error */ Any, /* entries */ js.Array[Entry], Unit]): Unit = js.native
+    def get(name: String, callback: js.Function2[/* error */ Any, /* entries */ js.Array[Entry], Unit]): Unit = js.native
     
     var host: String = js.native
     
@@ -57,14 +55,50 @@ object mod {
     
     var prefix: String = js.native
     
-    def route(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
-    def route(expire: Double): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
-    def route(nameOrOptions: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
-    def route(nameOrOptions: String, expire: ExpireOption): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
-    def route(nameOrOptions: RouteOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
-    def route(nameOrOptions: RouteOptions, expire: ExpireOption): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    def route(): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = js.native
+    def route(expire: Double): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = js.native
+    def route(nameOrOptions: String): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = js.native
+    def route(nameOrOptions: String, expire: ExpireOption): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = js.native
+    def route(nameOrOptions: RouteOptions): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = js.native
+    def route(nameOrOptions: RouteOptions, expire: ExpireOption): RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = js.native
     
-    def size(callback: js.Function2[/* error */ js.Any, /* bytes */ Double, Unit]): Unit = js.native
+    def size(callback: js.Function2[/* error */ Any, /* bytes */ Double, Unit]): Unit = js.native
   }
   object ExpressRedisCache {
     
@@ -135,8 +169,14 @@ object mod {
   type ExpirationConfig = StringDictionary[Double]
   
   type ExpirationPolicy = js.Function2[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-    /* res */ Response_[js.Any], 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
+    /* res */ Response_[Any, Record[String, Any]], 
     Double
   ]
   
@@ -146,7 +186,9 @@ object mod {
     
     var auth_pass: js.UndefOr[String] = js.undefined
     
-    var client: js.UndefOr[RedisClient] = js.undefined
+    var client: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify redis.RedisClient */ Any
+      ] = js.undefined
     
     var expire: js.UndefOr[Double] = js.undefined
     
@@ -169,7 +211,9 @@ object mod {
       
       inline def setAuth_passUndefined: Self = StObject.set(x, "auth_pass", js.undefined)
       
-      inline def setClient(value: RedisClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify redis.RedisClient */ Any
+      ): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
       inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
       
@@ -215,7 +259,13 @@ object mod {
       inline def setExpire(value: ExpireOption | ExpirationPolicy): Self = StObject.set(x, "expire", value.asInstanceOf[js.Any])
       
       inline def setExpireFunction2(
-        value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any]) => Double
+        value: (/* req */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ], /* res */ Response_[Any, Record[String, Any]]) => Double
       ): Self = StObject.set(x, "expire", js.Any.fromFunction2(value))
       
       inline def setExpireUndefined: Self = StObject.set(x, "expire", js.undefined)

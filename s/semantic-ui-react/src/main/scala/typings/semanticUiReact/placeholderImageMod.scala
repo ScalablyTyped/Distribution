@@ -2,7 +2,7 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
-import typings.react.mod.StatelessComponent
+import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,12 +13,12 @@ object placeholderImageMod extends Shortcut {
   @js.native
   val default: PlaceholderImageComponent = js.native
   
-  type PlaceholderImageComponent = StatelessComponent[PlaceholderImageProps]
+  type PlaceholderImageComponent = FC[PlaceholderImageProps]
   
   trait PlaceholderImageProps
     extends StObject
        with StrictPlaceholderImageProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object PlaceholderImageProps {
     
     inline def apply(): PlaceholderImageProps = {
@@ -30,7 +30,7 @@ object placeholderImageMod extends Shortcut {
   trait StrictPlaceholderImageProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Additional classes. */
     var className: js.UndefOr[String] = js.undefined
@@ -50,7 +50,7 @@ object placeholderImageMod extends Shortcut {
     
     extension [Self <: StrictPlaceholderImageProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       

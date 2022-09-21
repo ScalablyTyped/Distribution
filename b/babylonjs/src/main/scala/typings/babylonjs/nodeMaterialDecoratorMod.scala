@@ -1,6 +1,6 @@
 package typings.babylonjs
 
-import typings.babylonjs.anon.Rebuild
+import typings.babylonjs.anon.ActivatePreviewCommand
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,39 +34,46 @@ object nodeMaterialDecoratorMod {
          with PropertyTypeForEdition
     /* 1 */ val Float: typings.babylonjs.nodeMaterialDecoratorMod.PropertyTypeForEdition.Float & Double = js.native
     
+    /** property is a int */
+    @js.native
+    sealed trait Int
+      extends StObject
+         with PropertyTypeForEdition
+    /* 2 */ val Int: typings.babylonjs.nodeMaterialDecoratorMod.PropertyTypeForEdition.Int & Double = js.native
+    
     /** property is a list of values */
     @js.native
     sealed trait List
       extends StObject
          with PropertyTypeForEdition
-    /* 3 */ val List: typings.babylonjs.nodeMaterialDecoratorMod.PropertyTypeForEdition.List & Double = js.native
+    /* 4 */ val List: typings.babylonjs.nodeMaterialDecoratorMod.PropertyTypeForEdition.List & Double = js.native
     
     /** property is a Vector2 */
     @js.native
     sealed trait Vector2
       extends StObject
          with PropertyTypeForEdition
-    /* 2 */ val Vector2: typings.babylonjs.nodeMaterialDecoratorMod.PropertyTypeForEdition.Vector2 & Double = js.native
+    /* 3 */ val Vector2: typings.babylonjs.nodeMaterialDecoratorMod.PropertyTypeForEdition.Vector2 & Double = js.native
   }
   
-  inline def editableInPropertyPage(displayName: String): js.Function2[/* target */ js.Any, /* propertyKey */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("editableInPropertyPage")(displayName.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ js.Any, /* propertyKey */ String, Unit]]
-  inline def editableInPropertyPage(displayName: String, propertyType: Unit, groupName: String): js.Function2[/* target */ js.Any, /* propertyKey */ String, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("editableInPropertyPage")(displayName.asInstanceOf[js.Any], propertyType.asInstanceOf[js.Any], groupName.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* target */ js.Any, /* propertyKey */ String, Unit]]
-  inline def editableInPropertyPage(displayName: String, propertyType: Unit, groupName: String, options: IEditablePropertyOption): js.Function2[/* target */ js.Any, /* propertyKey */ String, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("editableInPropertyPage")(displayName.asInstanceOf[js.Any], propertyType.asInstanceOf[js.Any], groupName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* target */ js.Any, /* propertyKey */ String, Unit]]
-  inline def editableInPropertyPage(displayName: String, propertyType: Unit, groupName: Unit, options: IEditablePropertyOption): js.Function2[/* target */ js.Any, /* propertyKey */ String, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("editableInPropertyPage")(displayName.asInstanceOf[js.Any], propertyType.asInstanceOf[js.Any], groupName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* target */ js.Any, /* propertyKey */ String, Unit]]
-  inline def editableInPropertyPage(displayName: String, propertyType: PropertyTypeForEdition): js.Function2[/* target */ js.Any, /* propertyKey */ String, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("editableInPropertyPage")(displayName.asInstanceOf[js.Any], propertyType.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* target */ js.Any, /* propertyKey */ String, Unit]]
-  inline def editableInPropertyPage(displayName: String, propertyType: PropertyTypeForEdition, groupName: String): js.Function2[/* target */ js.Any, /* propertyKey */ String, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("editableInPropertyPage")(displayName.asInstanceOf[js.Any], propertyType.asInstanceOf[js.Any], groupName.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* target */ js.Any, /* propertyKey */ String, Unit]]
+  inline def editableInPropertyPage(displayName: String): js.Function2[/* target */ Any, /* propertyKey */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("editableInPropertyPage")(displayName.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ Any, /* propertyKey */ String, Unit]]
+  inline def editableInPropertyPage(displayName: String, propertyType: Unit, groupName: String): js.Function2[/* target */ Any, /* propertyKey */ String, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("editableInPropertyPage")(displayName.asInstanceOf[js.Any], propertyType.asInstanceOf[js.Any], groupName.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* target */ Any, /* propertyKey */ String, Unit]]
+  inline def editableInPropertyPage(displayName: String, propertyType: Unit, groupName: String, options: IEditablePropertyOption): js.Function2[/* target */ Any, /* propertyKey */ String, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("editableInPropertyPage")(displayName.asInstanceOf[js.Any], propertyType.asInstanceOf[js.Any], groupName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* target */ Any, /* propertyKey */ String, Unit]]
+  inline def editableInPropertyPage(displayName: String, propertyType: Unit, groupName: Unit, options: IEditablePropertyOption): js.Function2[/* target */ Any, /* propertyKey */ String, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("editableInPropertyPage")(displayName.asInstanceOf[js.Any], propertyType.asInstanceOf[js.Any], groupName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* target */ Any, /* propertyKey */ String, Unit]]
+  inline def editableInPropertyPage(displayName: String, propertyType: PropertyTypeForEdition): js.Function2[/* target */ Any, /* propertyKey */ String, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("editableInPropertyPage")(displayName.asInstanceOf[js.Any], propertyType.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* target */ Any, /* propertyKey */ String, Unit]]
+  inline def editableInPropertyPage(displayName: String, propertyType: PropertyTypeForEdition, groupName: String): js.Function2[/* target */ Any, /* propertyKey */ String, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("editableInPropertyPage")(displayName.asInstanceOf[js.Any], propertyType.asInstanceOf[js.Any], groupName.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* target */ Any, /* propertyKey */ String, Unit]]
   inline def editableInPropertyPage(
     displayName: String,
     propertyType: PropertyTypeForEdition,
     groupName: String,
     options: IEditablePropertyOption
-  ): js.Function2[/* target */ js.Any, /* propertyKey */ String, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("editableInPropertyPage")(displayName.asInstanceOf[js.Any], propertyType.asInstanceOf[js.Any], groupName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* target */ js.Any, /* propertyKey */ String, Unit]]
+  ): js.Function2[/* target */ Any, /* propertyKey */ String, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("editableInPropertyPage")(displayName.asInstanceOf[js.Any], propertyType.asInstanceOf[js.Any], groupName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* target */ Any, /* propertyKey */ String, Unit]]
   inline def editableInPropertyPage(
     displayName: String,
     propertyType: PropertyTypeForEdition,
     groupName: Unit,
     options: IEditablePropertyOption
-  ): js.Function2[/* target */ js.Any, /* propertyKey */ String, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("editableInPropertyPage")(displayName.asInstanceOf[js.Any], propertyType.asInstanceOf[js.Any], groupName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* target */ js.Any, /* propertyKey */ String, Unit]]
+  ): js.Function2[/* target */ Any, /* propertyKey */ String, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("editableInPropertyPage")(displayName.asInstanceOf[js.Any], propertyType.asInstanceOf[js.Any], groupName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* target */ Any, /* propertyKey */ String, Unit]]
   
   trait IEditablePropertyListOption extends StObject {
     
@@ -100,7 +107,7 @@ object nodeMaterialDecoratorMod {
     var min: js.UndefOr[Double] = js.undefined
     
     /** notifiers: indicates which actions to take when the property is changed */
-    var notifiers: js.UndefOr[Rebuild] = js.undefined
+    var notifiers: js.UndefOr[ActivatePreviewCommand] = js.undefined
     
     /** list of the options for a variable of type list */
     var options: js.UndefOr[js.Array[IEditablePropertyListOption]] = js.undefined
@@ -122,7 +129,7 @@ object nodeMaterialDecoratorMod {
       
       inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      inline def setNotifiers(value: Rebuild): Self = StObject.set(x, "notifiers", value.asInstanceOf[js.Any])
+      inline def setNotifiers(value: ActivatePreviewCommand): Self = StObject.set(x, "notifiers", value.asInstanceOf[js.Any])
       
       inline def setNotifiersUndefined: Self = StObject.set(x, "notifiers", js.undefined)
       
@@ -130,7 +137,7 @@ object nodeMaterialDecoratorMod {
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      inline def setOptionsVarargs(value: IEditablePropertyListOption*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: IEditablePropertyListOption*): Self = StObject.set(x, "options", js.Array(value*))
     }
   }
   

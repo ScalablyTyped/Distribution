@@ -10,10 +10,10 @@ Consistent checksum calculation of JSON objects.
 | ------------------ | :-------------: |
 | Full name          | jsum |
 | Keywords           | JSON, checksum, hash |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 190232 |
-| # stars            | 1 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 30547.666666666668 |
+| # stars            | 64.0 |
 
 ## Links
 - [Homepage](https://github.com/fraunhoferfokus/JSum#readme)

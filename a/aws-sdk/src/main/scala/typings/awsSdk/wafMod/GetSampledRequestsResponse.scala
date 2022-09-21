@@ -38,7 +38,7 @@ object GetSampledRequestsResponse {
     
     inline def setSampledRequestsUndefined: Self = StObject.set(x, "SampledRequests", js.undefined)
     
-    inline def setSampledRequestsVarargs(value: SampledHTTPRequest*): Self = StObject.set(x, "SampledRequests", js.Array(value :_*))
+    inline def setSampledRequestsVarargs(value: SampledHTTPRequest*): Self = StObject.set(x, "SampledRequests", js.Array(value*))
     
     inline def setTimeWindow(value: TimeWindow): Self = StObject.set(x, "TimeWindow", value.asInstanceOf[js.Any])
     

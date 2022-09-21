@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A CloudRepoSourceContext denotes a particular revision in a Google Cloud
-  * Source Repo.
-  */
 trait SchemaGoogleDevtoolsContaineranalysisV1alpha1CloudRepoSourceContext extends StObject {
   
   /**
@@ -23,7 +19,7 @@ trait SchemaGoogleDevtoolsContaineranalysisV1alpha1CloudRepoSourceContext extend
   /**
     * A revision ID.
     */
-  var revisionId: js.UndefOr[String] = js.undefined
+  var revisionId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGoogleDevtoolsContaineranalysisV1alpha1CloudRepoSourceContext {
   
@@ -43,6 +39,8 @@ object SchemaGoogleDevtoolsContaineranalysisV1alpha1CloudRepoSourceContext {
     inline def setRepoIdUndefined: Self = StObject.set(x, "repoId", js.undefined)
     
     inline def setRevisionId(value: String): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
+    
+    inline def setRevisionIdNull: Self = StObject.set(x, "revisionId", null)
     
     inline def setRevisionIdUndefined: Self = StObject.set(x, "revisionId", js.undefined)
   }

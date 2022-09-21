@@ -33,7 +33,7 @@ object anon {
       
       inline def setRes(value: js.Array[Double]): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
       
-      inline def setResVarargs(value: Double*): Self = StObject.set(x, "res", js.Array(value :_*))
+      inline def setResVarargs(value: Double*): Self = StObject.set(x, "res", js.Array(value*))
     }
   }
 }

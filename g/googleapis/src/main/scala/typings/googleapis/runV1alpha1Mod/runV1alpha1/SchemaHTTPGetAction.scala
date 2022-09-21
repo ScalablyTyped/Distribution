@@ -4,38 +4,27 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * HTTPGetAction describes an action based on HTTP Get requests.
-  */
 trait SchemaHTTPGetAction extends StObject {
   
   /**
-    * Host name to connect to, defaults to the pod IP. You probably want to set
-    * &quot;Host&quot; in httpHeaders instead. +optional
+    * (Optional) Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.
     */
-  var host: js.UndefOr[String] = js.undefined
+  var host: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Custom headers to set in the request. HTTP allows repeated headers.
-    * +optional
+    * (Optional) Custom headers to set in the request. HTTP allows repeated headers.
     */
   var httpHeaders: js.UndefOr[js.Array[SchemaHTTPHeader]] = js.undefined
   
   /**
-    * Path to access on the HTTP server. +optional
+    * (Optional) Path to access on the HTTP server.
     */
-  var path: js.UndefOr[String] = js.undefined
+  var path: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Name or number of the port to access on the container. Number must be in
-    * the range 1 to 65535. Name must be an IANA_SVC_NAME.
+    * (Optional) Scheme to use for connecting to the host. Defaults to HTTP.
     */
-  var port: js.UndefOr[SchemaIntOrString] = js.undefined
-  
-  /**
-    * Scheme to use for connecting to the host. Defaults to HTTP. +optional
-    */
-  var scheme: js.UndefOr[String] = js.undefined
+  var scheme: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaHTTPGetAction {
   
@@ -48,23 +37,25 @@ object SchemaHTTPGetAction {
     
     inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
+    inline def setHostNull: Self = StObject.set(x, "host", null)
+    
     inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
     inline def setHttpHeaders(value: js.Array[SchemaHTTPHeader]): Self = StObject.set(x, "httpHeaders", value.asInstanceOf[js.Any])
     
     inline def setHttpHeadersUndefined: Self = StObject.set(x, "httpHeaders", js.undefined)
     
-    inline def setHttpHeadersVarargs(value: SchemaHTTPHeader*): Self = StObject.set(x, "httpHeaders", js.Array(value :_*))
+    inline def setHttpHeadersVarargs(value: SchemaHTTPHeader*): Self = StObject.set(x, "httpHeaders", js.Array(value*))
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
+    inline def setPathNull: Self = StObject.set(x, "path", null)
+    
     inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    inline def setPort(value: SchemaIntOrString): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
-    
-    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
-    
     inline def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+    
+    inline def setSchemeNull: Self = StObject.set(x, "scheme", null)
     
     inline def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
   }

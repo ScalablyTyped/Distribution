@@ -7,32 +7,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeLocationFsxWindowsResponse extends StObject {
   
   /**
-    * The time that the FSx for Windows location was created.
+    * The time that the FSx for Windows File Server location was created.
     */
-  var CreationTime: js.UndefOr[Time] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The name of the Windows domain that the FSx for Windows server belongs to.
+    * The name of the Windows domain that the FSx for Windows File Server belongs to.
     */
   var Domain: js.UndefOr[SmbDomain] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the FSx for Windows location that was described.
+    * The Amazon Resource Name (ARN) of the FSx for Windows File Server location that was described.
     */
   var LocationArn: js.UndefOr[typings.awsSdk.datasyncMod.LocationArn] = js.undefined
   
   /**
-    * The URL of the FSx for Windows location that was described.
+    * The URL of the FSx for Windows File Server location that was described.
     */
   var LocationUri: js.UndefOr[typings.awsSdk.datasyncMod.LocationUri] = js.undefined
   
   /**
-    * The Amazon Resource Names (ARNs) of the security groups that are configured for the FSx for Windows file system.
+    * The Amazon Resource Names (ARNs) of the security groups that are configured for the FSx for Windows File Server file system.
     */
   var SecurityGroupArns: js.UndefOr[Ec2SecurityGroupArnList] = js.undefined
   
   /**
-    * The user who has the permissions to access files and folders in the FSx for Windows file system.
+    * The user who has the permissions to access files and folders in the FSx for Windows File Server file system.
     */
   var User: js.UndefOr[SmbUser] = js.undefined
 }
@@ -45,7 +45,7 @@ object DescribeLocationFsxWindowsResponse {
   
   extension [Self <: DescribeLocationFsxWindowsResponse](x: Self) {
     
-    inline def setCreationTime(value: Time): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
@@ -65,7 +65,7 @@ object DescribeLocationFsxWindowsResponse {
     
     inline def setSecurityGroupArnsUndefined: Self = StObject.set(x, "SecurityGroupArns", js.undefined)
     
-    inline def setSecurityGroupArnsVarargs(value: Ec2SecurityGroupArn*): Self = StObject.set(x, "SecurityGroupArns", js.Array(value :_*))
+    inline def setSecurityGroupArnsVarargs(value: Ec2SecurityGroupArn*): Self = StObject.set(x, "SecurityGroupArns", js.Array(value*))
     
     inline def setUser(value: SmbUser): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
     

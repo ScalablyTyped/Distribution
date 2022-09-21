@@ -8,7 +8,7 @@ trait GridGroupEvent
   extends StObject
      with GridEvent {
   
-  var groups: js.UndefOr[js.Any] = js.undefined
+  var groups: js.UndefOr[Any] = js.undefined
 }
 object GridGroupEvent {
   
@@ -19,7 +19,7 @@ object GridGroupEvent {
   
   extension [Self <: GridGroupEvent](x: Self) {
     
-    inline def setGroups(value: js.Any): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: Any): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
     inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
   }

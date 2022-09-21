@@ -27,6 +27,6 @@ object Condition {
       value: (ConditionalPredicate[ValueDef[V] | ES]) | (js.Array[ConditionalPredicate[ValueDef[V] | ES]])
     ): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    inline def setConditionVarargs(value: (ConditionalPredicate[ValueDef[V] | ES])*): Self = StObject.set(x, "condition", js.Array(value :_*))
+    inline def setConditionVarargs(value: (ConditionalPredicate[ValueDef[V] | ES])*): Self = StObject.set(x, "condition", js.Array(value*))
   }
 }

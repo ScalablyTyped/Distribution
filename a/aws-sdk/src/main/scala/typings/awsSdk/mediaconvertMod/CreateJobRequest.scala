@@ -62,12 +62,12 @@ trait CreateJobRequest extends StObject {
   var StatusUpdateInterval: js.UndefOr[typings.awsSdk.mediaconvertMod.StatusUpdateInterval] = js.undefined
   
   /**
-    * Optional. The tags that you want to add to the resource. You can tag resources with a key-value pair or with only a key.
+    * Optional. The tags that you want to add to the resource. You can tag resources with a key-value pair or with only a key.  Use standard AWS tags on your job for automatic integration with AWS services and for custom integrations and workflows.
     */
   var Tags: js.UndefOr[mapOfString] = js.undefined
   
   /**
-    * Optional. User-defined metadata that you want to associate with an MediaConvert job. You specify metadata in key/value pairs.
+    * Optional. User-defined metadata that you want to associate with an MediaConvert job. You specify metadata in key/value pairs.  Use only for existing integrations or workflows that rely on job metadata tags. Otherwise, we recommend that you use standard AWS tags.
     */
   var UserMetadata: js.UndefOr[mapOfString] = js.undefined
 }
@@ -96,7 +96,7 @@ object CreateJobRequest {
     
     inline def setHopDestinationsUndefined: Self = StObject.set(x, "HopDestinations", js.undefined)
     
-    inline def setHopDestinationsVarargs(value: HopDestination*): Self = StObject.set(x, "HopDestinations", js.Array(value :_*))
+    inline def setHopDestinationsVarargs(value: HopDestination*): Self = StObject.set(x, "HopDestinations", js.Array(value*))
     
     inline def setJobTemplate(value: string): Self = StObject.set(x, "JobTemplate", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,7 @@ trait CreateDirectConnectGatewayAssociationProposalRequest extends StObject {
   var directConnectGatewayId: DirectConnectGatewayId
   
   /**
-    * The ID of the AWS account that owns the Direct Connect gateway.
+    * The ID of the Amazon Web Services account that owns the Direct Connect gateway.
     */
   var directConnectGatewayOwnerAccount: OwnerAccount
   
@@ -48,7 +48,7 @@ object CreateDirectConnectGatewayAssociationProposalRequest {
     
     inline def setAddAllowedPrefixesToDirectConnectGatewayUndefined: Self = StObject.set(x, "addAllowedPrefixesToDirectConnectGateway", js.undefined)
     
-    inline def setAddAllowedPrefixesToDirectConnectGatewayVarargs(value: RouteFilterPrefix*): Self = StObject.set(x, "addAllowedPrefixesToDirectConnectGateway", js.Array(value :_*))
+    inline def setAddAllowedPrefixesToDirectConnectGatewayVarargs(value: RouteFilterPrefix*): Self = StObject.set(x, "addAllowedPrefixesToDirectConnectGateway", js.Array(value*))
     
     inline def setDirectConnectGatewayId(value: DirectConnectGatewayId): Self = StObject.set(x, "directConnectGatewayId", value.asInstanceOf[js.Any])
     
@@ -60,6 +60,6 @@ object CreateDirectConnectGatewayAssociationProposalRequest {
     
     inline def setRemoveAllowedPrefixesToDirectConnectGatewayUndefined: Self = StObject.set(x, "removeAllowedPrefixesToDirectConnectGateway", js.undefined)
     
-    inline def setRemoveAllowedPrefixesToDirectConnectGatewayVarargs(value: RouteFilterPrefix*): Self = StObject.set(x, "removeAllowedPrefixesToDirectConnectGateway", js.Array(value :_*))
+    inline def setRemoveAllowedPrefixesToDirectConnectGatewayVarargs(value: RouteFilterPrefix*): Self = StObject.set(x, "removeAllowedPrefixesToDirectConnectGateway", js.Array(value*))
   }
 }

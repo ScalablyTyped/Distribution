@@ -4,7 +4,7 @@ import typings.ndnJs.blobMod.Blob
 import typings.ndnJs.nameMod.Name
 import typings.ndnJs.nameMod.Name.Component
 import typings.ndnJs.signatureMod.Signature
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,7 +53,7 @@ object dataMod {
   
   @JSImport("ndn-js/data", "Data")
   @js.native
-  class Data () extends StObject {
+  open class Data () extends StObject {
     def this(data: Data) = this()
     def this(name: String) = this()
     def this(name: Name) = this()
@@ -89,7 +89,7 @@ object dataMod {
   
   @JSImport("ndn-js/data", "MetaInfo")
   @js.native
-  class MetaInfo () extends StObject {
+  open class MetaInfo () extends StObject {
     def this(meta: MetaInfo) = this()
     
     def getFinalBlockId(): Component = js.native

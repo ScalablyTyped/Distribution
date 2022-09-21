@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "HingeJoint")
 @js.native
-class HingeJoint protected ()
+open class HingeJoint protected ()
   extends typings.babylonjs.indexMod.HingeJoint {
   /**
     * Initializes the Hinge-Joint

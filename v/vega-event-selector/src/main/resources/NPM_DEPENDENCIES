@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "vega-event-selector" : "2.0.6"
+      "vega-event-selector" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "vega-event-selector" : "2.0.6"
+      "vega-event-selector" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

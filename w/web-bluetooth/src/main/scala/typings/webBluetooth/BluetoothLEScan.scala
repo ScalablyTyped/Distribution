@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BluetoothLEScan
   extends StObject
-     with RequestLEScanOptions {
+     with BluetoothLEScanOptions {
   
   var active: Boolean
   

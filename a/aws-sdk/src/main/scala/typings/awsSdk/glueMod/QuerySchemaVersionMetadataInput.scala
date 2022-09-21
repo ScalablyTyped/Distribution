@@ -53,7 +53,7 @@ object QuerySchemaVersionMetadataInput {
     
     inline def setMetadataListUndefined: Self = StObject.set(x, "MetadataList", js.undefined)
     
-    inline def setMetadataListVarargs(value: MetadataKeyValuePair*): Self = StObject.set(x, "MetadataList", js.Array(value :_*))
+    inline def setMetadataListVarargs(value: MetadataKeyValuePair*): Self = StObject.set(x, "MetadataList", js.Array(value*))
     
     inline def setNextToken(value: SchemaRegistryTokenString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

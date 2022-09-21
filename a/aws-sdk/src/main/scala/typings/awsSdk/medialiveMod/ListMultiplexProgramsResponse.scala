@@ -29,7 +29,7 @@ object ListMultiplexProgramsResponse {
     
     inline def setMultiplexProgramsUndefined: Self = StObject.set(x, "MultiplexPrograms", js.undefined)
     
-    inline def setMultiplexProgramsVarargs(value: MultiplexProgramSummary*): Self = StObject.set(x, "MultiplexPrograms", js.Array(value :_*))
+    inline def setMultiplexProgramsVarargs(value: MultiplexProgramSummary*): Self = StObject.set(x, "MultiplexPrograms", js.Array(value*))
     
     inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

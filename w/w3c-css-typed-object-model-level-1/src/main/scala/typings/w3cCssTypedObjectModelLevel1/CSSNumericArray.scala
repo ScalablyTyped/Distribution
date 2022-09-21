@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Since there is no support for this class in any browser, it's better
 // wait for the implementation.
 // declare class CSSMathClamp extends CSSMathValue {
-// constructor(min: CSSNumberish, val: CSSNumberish, max: CSSNumberish);
+// constructor(min: CSSNumberOrNumeric, val: CSSNumberOrNumeric, max: CSSNumberOrNumeric);
 //     readonly min: CSSNumericValue;
 //     readonly val: CSSNumericValue;
 //     readonly max: CSSNumericValue;

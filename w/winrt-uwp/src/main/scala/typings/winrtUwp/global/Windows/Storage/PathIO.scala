@@ -72,7 +72,7 @@ object PathIO {
     * @return When this method completes successfully, it returns the contents of the file as a list (type IVector ) of lines of text. Each line of text in the list is represented by a String object.
     */
   /* static member */
-  inline def readLinesAsync(absolutePath: String): IPromiseWithIAsyncOperation[IVector[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("readLinesAsync")(absolutePath.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVector[js.Any]]]
+  inline def readLinesAsync(absolutePath: String): IPromiseWithIAsyncOperation[IVector[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("readLinesAsync")(absolutePath.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVector[Any]]]
   /**
     * Reads the contents of the file at the specified path or URI using the specified character encoding and returns lines of text.
     * @param absolutePath The path of the file to read.
@@ -80,7 +80,7 @@ object PathIO {
     * @return When this method completes successfully, it returns the contents of the file as a list (type IVector ) of lines of text. Each line of text in the list is represented by a String object.
     */
   /* static member */
-  inline def readLinesAsync(absolutePath: String, encoding: UnicodeEncoding): IPromiseWithIAsyncOperation[IVector[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readLinesAsync")(absolutePath.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[IVector[js.Any]]]
+  inline def readLinesAsync(absolutePath: String, encoding: UnicodeEncoding): IPromiseWithIAsyncOperation[IVector[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readLinesAsync")(absolutePath.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[IVector[Any]]]
   
   /**
     * Reads the contents of the file at the specified path or URI and returns text.

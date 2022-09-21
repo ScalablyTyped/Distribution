@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListNotebookInstancesOutput extends StObject {
   
   /**
-    * If the response to the previous ListNotebookInstances request was truncated, Amazon SageMaker returns this token. To retrieve the next set of notebook instances, use the token in the next request.
+    * If the response to the previous ListNotebookInstances request was truncated, SageMaker returns this token. To retrieve the next set of notebook instances, use the token in the next request.
     */
   var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.undefined
   
@@ -33,6 +33,6 @@ object ListNotebookInstancesOutput {
     
     inline def setNotebookInstancesUndefined: Self = StObject.set(x, "NotebookInstances", js.undefined)
     
-    inline def setNotebookInstancesVarargs(value: NotebookInstanceSummary*): Self = StObject.set(x, "NotebookInstances", js.Array(value :_*))
+    inline def setNotebookInstancesVarargs(value: NotebookInstanceSummary*): Self = StObject.set(x, "NotebookInstances", js.Array(value*))
   }
 }

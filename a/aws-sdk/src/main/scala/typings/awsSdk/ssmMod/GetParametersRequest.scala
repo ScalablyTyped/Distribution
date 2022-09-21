@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetParametersRequest extends StObject {
   
   /**
-    * Names of the parameters for which you want to query information.
+    * Names of the parameters for which you want to query information. To query by parameter label, use "Name": "name:label". To query by parameter version, use "Name": "name:version".
     */
   var Names: ParameterNameList
   
@@ -27,7 +27,7 @@ object GetParametersRequest {
     
     inline def setNames(value: ParameterNameList): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
     
-    inline def setNamesVarargs(value: PSParameterName*): Self = StObject.set(x, "Names", js.Array(value :_*))
+    inline def setNamesVarargs(value: PSParameterName*): Self = StObject.set(x, "Names", js.Array(value*))
     
     inline def setWithDecryption(value: Boolean): Self = StObject.set(x, "WithDecryption", value.asInstanceOf[js.Any])
     

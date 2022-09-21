@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * X is the unit of time. A unit can be one of 'h, d, w' for hours, days and weeks.
   * 7d would be 7 days. If not given, the periods are 1h, 1d and 7d.
   */
-class AgeCounters ()
+open class AgeCounters ()
   extends typings.matrixAppserviceBridge.agecountersMod.AgeCounters {
   def this(counterPeriods: js.Array[String]) = this()
 }

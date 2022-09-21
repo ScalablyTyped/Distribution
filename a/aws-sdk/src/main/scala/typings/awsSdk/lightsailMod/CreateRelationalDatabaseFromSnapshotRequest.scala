@@ -22,7 +22,7 @@ trait CreateRelationalDatabaseFromSnapshotRequest extends StObject {
   var relationalDatabaseBundleId: js.UndefOr[String] = js.undefined
   
   /**
-    * The name to use for your new database. Constraints:   Must contain from 2 to 255 alphanumeric characters, or hyphens.   The first and last character must be a letter or number.  
+    * The name to use for your new Lightsail database resource. Constraints:   Must contain from 2 to 255 alphanumeric characters, or hyphens.   The first and last character must be a letter or number.  
     */
   var relationalDatabaseName: ResourceName
   
@@ -34,7 +34,7 @@ trait CreateRelationalDatabaseFromSnapshotRequest extends StObject {
   /**
     * The date and time to restore your database from. Constraints:   Must be before the latest restorable time for the database.   Cannot be specified if the use latest restorable time parameter is true.   Specified in Coordinated Universal Time (UTC).   Specified in the Unix time format. For example, if you wish to use a restore time of October 1, 2018, at 8 PM UTC, then you input 1538424000 as the restore time.  
     */
-  var restoreTime: js.UndefOr[IsoDate] = js.undefined
+  var restoreTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the source database.
@@ -78,7 +78,7 @@ object CreateRelationalDatabaseFromSnapshotRequest {
     
     inline def setRelationalDatabaseSnapshotNameUndefined: Self = StObject.set(x, "relationalDatabaseSnapshotName", js.undefined)
     
-    inline def setRestoreTime(value: IsoDate): Self = StObject.set(x, "restoreTime", value.asInstanceOf[js.Any])
+    inline def setRestoreTime(value: js.Date): Self = StObject.set(x, "restoreTime", value.asInstanceOf[js.Any])
     
     inline def setRestoreTimeUndefined: Self = StObject.set(x, "restoreTime", js.undefined)
     
@@ -90,7 +90,7 @@ object CreateRelationalDatabaseFromSnapshotRequest {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setUseLatestRestorableTime(value: Boolean): Self = StObject.set(x, "useLatestRestorableTime", value.asInstanceOf[js.Any])
     

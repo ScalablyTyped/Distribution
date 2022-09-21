@@ -34,6 +34,6 @@ object ZoneRecord {
     
     inline def setRrset_values(value: js.Array[String]): Self = StObject.set(x, "rrset_values", value.asInstanceOf[js.Any])
     
-    inline def setRrset_valuesVarargs(value: String*): Self = StObject.set(x, "rrset_values", js.Array(value :_*))
+    inline def setRrset_valuesVarargs(value: String*): Self = StObject.set(x, "rrset_values", js.Array(value*))
   }
 }

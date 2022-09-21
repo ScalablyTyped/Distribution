@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("google.earth.GEAbstractBalloon")
 @js.native
-class GEAbstractBalloon ()
+open class GEAbstractBalloon ()
   extends StObject
      with typings.googleEarth.google.earth.GEAbstractBalloon {
   

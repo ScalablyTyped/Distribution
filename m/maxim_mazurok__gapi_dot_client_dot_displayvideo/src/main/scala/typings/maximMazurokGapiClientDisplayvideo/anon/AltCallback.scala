@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientDisplayvideo.anon
 
+import typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo.Site
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ trait AltCallback extends StObject {
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.undefined
   
-  /** The ID of the advertiser that owns the created channel. */
+  /** The ID of the advertiser that owns the parent channel. */
   var advertiserId: String
   
   /** Data format for response. */
@@ -22,7 +23,7 @@ trait AltCallback extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
-  /** Output only. The unique ID of the channel. Assigned by the system. */
+  /** Required. The ID of the parent channel in which the site will be created. */
   var channelId: String
   
   /** Selector specifying which fields to include in a partial response. */
@@ -34,7 +35,7 @@ trait AltCallback extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** The ID of the partner that owns the created channel. */
+  /** The ID of the partner that owns the parent channel. */
   var partnerId: js.UndefOr[String] = js.undefined
   
   /** Returns response with indentations and line breaks. */
@@ -43,8 +44,8 @@ trait AltCallback extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** Required. The mask to control which fields to update. */
-  var updateMask: js.UndefOr[String] = js.undefined
+  /** Request body */
+  var resource: Site
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -54,8 +55,8 @@ trait AltCallback extends StObject {
 }
 object AltCallback {
   
-  inline def apply(advertiserId: String, channelId: String): AltCallback = {
-    val __obj = js.Dynamic.literal(advertiserId = advertiserId.asInstanceOf[js.Any], channelId = channelId.asInstanceOf[js.Any])
+  inline def apply(advertiserId: String, channelId: String, resource: Site): AltCallback = {
+    val __obj = js.Dynamic.literal(advertiserId = advertiserId.asInstanceOf[js.Any], channelId = channelId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[AltCallback]
   }
   
@@ -105,9 +106,7 @@ object AltCallback {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
-    
-    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setResource(value: Site): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

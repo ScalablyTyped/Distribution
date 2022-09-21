@@ -36,7 +36,7 @@ object XConsolidatable {
     acquire: () => Unit,
     consolidate: XConsolidationDescriptor => Unit,
     createConsolidationDescriptor: Boolean => XConsolidationDescriptor,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XConsolidatable = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), consolidate = js.Any.fromFunction1(consolidate), createConsolidationDescriptor = js.Any.fromFunction1(createConsolidationDescriptor), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

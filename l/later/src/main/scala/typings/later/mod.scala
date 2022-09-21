@@ -2,7 +2,6 @@ package typings.later
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,7 +42,7 @@ object mod extends Shortcut {
       h: js.UndefOr[Double],
       m: js.UndefOr[Double],
       s: js.UndefOr[Double]
-    ): Date
+    ): js.Date
     
     /**
       * Determines if a value will cause a particular constraint to rollover to the
@@ -55,7 +54,7 @@ object mod extends Shortcut {
       * @param constraint: A modifier
       * @param period: A time period
       */
-    def nextRollover(d: Date, `val`: Double, constraint: Modifier, period: TimePeriod): Date
+    def nextRollover(d: js.Date, `val`: Double, constraint: Modifier, period: TimePeriod): js.Date
     
     /**
       * Builds and returns a new Date using the specified values.  Date
@@ -75,7 +74,7 @@ object mod extends Shortcut {
       h: js.UndefOr[Double],
       m: js.UndefOr[Double],
       s: js.UndefOr[Double]
-    ): Date
+    ): js.Date
     
     /**
       * Determines if a value will cause a particular constraint to rollover to the
@@ -87,17 +86,17 @@ object mod extends Shortcut {
       * @param constraint: A modifier
       * @param period: A time period
       */
-    def prevRollover(d: Date, `val`: Double, constraint: Modifier, period: TimePeriod): Date
+    def prevRollover(d: js.Date, `val`: Double, constraint: Modifier, period: TimePeriod): js.Date
   }
   object DateProvider {
     
     inline def apply(
       UTC: () => Unit,
       localTime: () => Unit,
-      next: (js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double]) => Date,
-      nextRollover: (Date, Double, Modifier, TimePeriod) => Date,
-      prev: (js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double]) => Date,
-      prevRollover: (Date, Double, Modifier, TimePeriod) => Date
+      next: (js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double]) => js.Date,
+      nextRollover: (js.Date, Double, Modifier, TimePeriod) => js.Date,
+      prev: (js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double]) => js.Date,
+      prevRollover: (js.Date, Double, Modifier, TimePeriod) => js.Date
     ): DateProvider = {
       val __obj = js.Dynamic.literal(UTC = js.Any.fromFunction0(UTC), localTime = js.Any.fromFunction0(localTime), next = js.Any.fromFunction6(next), nextRollover = js.Any.fromFunction4(nextRollover), prev = js.Any.fromFunction6(prev), prevRollover = js.Any.fromFunction4(prevRollover))
       __obj.asInstanceOf[DateProvider]
@@ -108,16 +107,16 @@ object mod extends Shortcut {
       inline def setLocalTime(value: () => Unit): Self = StObject.set(x, "localTime", js.Any.fromFunction0(value))
       
       inline def setNext(
-        value: (js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double]) => Date
+        value: (js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double]) => js.Date
       ): Self = StObject.set(x, "next", js.Any.fromFunction6(value))
       
-      inline def setNextRollover(value: (Date, Double, Modifier, TimePeriod) => Date): Self = StObject.set(x, "nextRollover", js.Any.fromFunction4(value))
+      inline def setNextRollover(value: (js.Date, Double, Modifier, TimePeriod) => js.Date): Self = StObject.set(x, "nextRollover", js.Any.fromFunction4(value))
       
       inline def setPrev(
-        value: (js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double]) => Date
+        value: (js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double], js.UndefOr[Double]) => js.Date
       ): Self = StObject.set(x, "prev", js.Any.fromFunction6(value))
       
-      inline def setPrevRollover(value: (Date, Double, Modifier, TimePeriod) => Date): Self = StObject.set(x, "prevRollover", js.Any.fromFunction4(value))
+      inline def setPrevRollover(value: (js.Date, Double, Modifier, TimePeriod) => js.Date): Self = StObject.set(x, "prevRollover", js.Any.fromFunction4(value))
       
       inline def setUTC(value: () => Unit): Self = StObject.set(x, "UTC", js.Any.fromFunction0(value))
     }
@@ -344,199 +343,199 @@ object mod extends Shortcut {
       
       inline def setDUndefined: Self = StObject.set(x, "D", js.undefined)
       
-      inline def setDVarargs(value: Double*): Self = StObject.set(x, "D", js.Array(value :_*))
+      inline def setDVarargs(value: Double*): Self = StObject.set(x, "D", js.Array(value*))
       
       inline def setD_a(value: js.Array[Double]): Self = StObject.set(x, "D_a", value.asInstanceOf[js.Any])
       
       inline def setD_aUndefined: Self = StObject.set(x, "D_a", js.undefined)
       
-      inline def setD_aVarargs(value: Double*): Self = StObject.set(x, "D_a", js.Array(value :_*))
+      inline def setD_aVarargs(value: Double*): Self = StObject.set(x, "D_a", js.Array(value*))
       
       inline def setD_b(value: js.Array[Double]): Self = StObject.set(x, "D_b", value.asInstanceOf[js.Any])
       
       inline def setD_bUndefined: Self = StObject.set(x, "D_b", js.undefined)
       
-      inline def setD_bVarargs(value: Double*): Self = StObject.set(x, "D_b", js.Array(value :_*))
+      inline def setD_bVarargs(value: Double*): Self = StObject.set(x, "D_b", js.Array(value*))
       
       inline def setDc(value: js.Array[Double]): Self = StObject.set(x, "dc", value.asInstanceOf[js.Any])
       
       inline def setDcUndefined: Self = StObject.set(x, "dc", js.undefined)
       
-      inline def setDcVarargs(value: Double*): Self = StObject.set(x, "dc", js.Array(value :_*))
+      inline def setDcVarargs(value: Double*): Self = StObject.set(x, "dc", js.Array(value*))
       
       inline def setDc_a(value: js.Array[Double]): Self = StObject.set(x, "dc_a", value.asInstanceOf[js.Any])
       
       inline def setDc_aUndefined: Self = StObject.set(x, "dc_a", js.undefined)
       
-      inline def setDc_aVarargs(value: Double*): Self = StObject.set(x, "dc_a", js.Array(value :_*))
+      inline def setDc_aVarargs(value: Double*): Self = StObject.set(x, "dc_a", js.Array(value*))
       
       inline def setDc_b(value: js.Array[Double]): Self = StObject.set(x, "dc_b", value.asInstanceOf[js.Any])
       
       inline def setDc_bUndefined: Self = StObject.set(x, "dc_b", js.undefined)
       
-      inline def setDc_bVarargs(value: Double*): Self = StObject.set(x, "dc_b", js.Array(value :_*))
+      inline def setDc_bVarargs(value: Double*): Self = StObject.set(x, "dc_b", js.Array(value*))
       
       inline def setDw(value: js.Array[Double]): Self = StObject.set(x, "dw", value.asInstanceOf[js.Any])
       
       inline def setDwUndefined: Self = StObject.set(x, "dw", js.undefined)
       
-      inline def setDwVarargs(value: Double*): Self = StObject.set(x, "dw", js.Array(value :_*))
+      inline def setDwVarargs(value: Double*): Self = StObject.set(x, "dw", js.Array(value*))
       
       inline def setDw_a(value: js.Array[Double]): Self = StObject.set(x, "dw_a", value.asInstanceOf[js.Any])
       
       inline def setDw_aUndefined: Self = StObject.set(x, "dw_a", js.undefined)
       
-      inline def setDw_aVarargs(value: Double*): Self = StObject.set(x, "dw_a", js.Array(value :_*))
+      inline def setDw_aVarargs(value: Double*): Self = StObject.set(x, "dw_a", js.Array(value*))
       
       inline def setDw_b(value: js.Array[Double]): Self = StObject.set(x, "dw_b", value.asInstanceOf[js.Any])
       
       inline def setDw_bUndefined: Self = StObject.set(x, "dw_b", js.undefined)
       
-      inline def setDw_bVarargs(value: Double*): Self = StObject.set(x, "dw_b", js.Array(value :_*))
+      inline def setDw_bVarargs(value: Double*): Self = StObject.set(x, "dw_b", js.Array(value*))
       
       inline def setDy(value: js.Array[Double]): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
       
       inline def setDyUndefined: Self = StObject.set(x, "dy", js.undefined)
       
-      inline def setDyVarargs(value: Double*): Self = StObject.set(x, "dy", js.Array(value :_*))
+      inline def setDyVarargs(value: Double*): Self = StObject.set(x, "dy", js.Array(value*))
       
       inline def setDy_a(value: js.Array[Double]): Self = StObject.set(x, "dy_a", value.asInstanceOf[js.Any])
       
       inline def setDy_aUndefined: Self = StObject.set(x, "dy_a", js.undefined)
       
-      inline def setDy_aVarargs(value: Double*): Self = StObject.set(x, "dy_a", js.Array(value :_*))
+      inline def setDy_aVarargs(value: Double*): Self = StObject.set(x, "dy_a", js.Array(value*))
       
       inline def setDy_b(value: js.Array[Double]): Self = StObject.set(x, "dy_b", value.asInstanceOf[js.Any])
       
       inline def setDy_bUndefined: Self = StObject.set(x, "dy_b", js.undefined)
       
-      inline def setDy_bVarargs(value: Double*): Self = StObject.set(x, "dy_b", js.Array(value :_*))
+      inline def setDy_bVarargs(value: Double*): Self = StObject.set(x, "dy_b", js.Array(value*))
       
       inline def setH(value: js.Array[Double]): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
       inline def setHUndefined: Self = StObject.set(x, "h", js.undefined)
       
-      inline def setHVarargs(value: Double*): Self = StObject.set(x, "h", js.Array(value :_*))
+      inline def setHVarargs(value: Double*): Self = StObject.set(x, "h", js.Array(value*))
       
       inline def setH_a(value: js.Array[Double]): Self = StObject.set(x, "h_a", value.asInstanceOf[js.Any])
       
       inline def setH_aUndefined: Self = StObject.set(x, "h_a", js.undefined)
       
-      inline def setH_aVarargs(value: Double*): Self = StObject.set(x, "h_a", js.Array(value :_*))
+      inline def setH_aVarargs(value: Double*): Self = StObject.set(x, "h_a", js.Array(value*))
       
       inline def setH_b(value: js.Array[Double]): Self = StObject.set(x, "h_b", value.asInstanceOf[js.Any])
       
       inline def setH_bUndefined: Self = StObject.set(x, "h_b", js.undefined)
       
-      inline def setH_bVarargs(value: Double*): Self = StObject.set(x, "h_b", js.Array(value :_*))
+      inline def setH_bVarargs(value: Double*): Self = StObject.set(x, "h_b", js.Array(value*))
       
       inline def setM(value: js.Array[Double]): Self = StObject.set(x, "M", value.asInstanceOf[js.Any])
       
       inline def setMUndefined: Self = StObject.set(x, "M", js.undefined)
       
-      inline def setMVarargs(value: Double*): Self = StObject.set(x, "M", js.Array(value :_*))
+      inline def setMVarargs(value: Double*): Self = StObject.set(x, "M", js.Array(value*))
       
       inline def setM_a(value: js.Array[Double]): Self = StObject.set(x, "M_a", value.asInstanceOf[js.Any])
       
       inline def setM_aUndefined: Self = StObject.set(x, "M_a", js.undefined)
       
-      inline def setM_aVarargs(value: Double*): Self = StObject.set(x, "M_a", js.Array(value :_*))
+      inline def setM_aVarargs(value: Double*): Self = StObject.set(x, "M_a", js.Array(value*))
       
       inline def setM_b(value: js.Array[Double]): Self = StObject.set(x, "M_b", value.asInstanceOf[js.Any])
       
       inline def setM_bUndefined: Self = StObject.set(x, "M_b", js.undefined)
       
-      inline def setM_bVarargs(value: Double*): Self = StObject.set(x, "M_b", js.Array(value :_*))
+      inline def setM_bVarargs(value: Double*): Self = StObject.set(x, "M_b", js.Array(value*))
       
       inline def setS(value: js.Array[Double]): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
       
       inline def setSUndefined: Self = StObject.set(x, "s", js.undefined)
       
-      inline def setSVarargs(value: Double*): Self = StObject.set(x, "s", js.Array(value :_*))
+      inline def setSVarargs(value: Double*): Self = StObject.set(x, "s", js.Array(value*))
       
       inline def setS_a(value: js.Array[Double]): Self = StObject.set(x, "s_a", value.asInstanceOf[js.Any])
       
       inline def setS_aUndefined: Self = StObject.set(x, "s_a", js.undefined)
       
-      inline def setS_aVarargs(value: Double*): Self = StObject.set(x, "s_a", js.Array(value :_*))
+      inline def setS_aVarargs(value: Double*): Self = StObject.set(x, "s_a", js.Array(value*))
       
       inline def setS_b(value: js.Array[Double]): Self = StObject.set(x, "s_b", value.asInstanceOf[js.Any])
       
       inline def setS_bUndefined: Self = StObject.set(x, "s_b", js.undefined)
       
-      inline def setS_bVarargs(value: Double*): Self = StObject.set(x, "s_b", js.Array(value :_*))
+      inline def setS_bVarargs(value: Double*): Self = StObject.set(x, "s_b", js.Array(value*))
       
       inline def setT(value: js.Array[Double]): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
       
       inline def setTUndefined: Self = StObject.set(x, "t", js.undefined)
       
-      inline def setTVarargs(value: Double*): Self = StObject.set(x, "t", js.Array(value :_*))
+      inline def setTVarargs(value: Double*): Self = StObject.set(x, "t", js.Array(value*))
       
       inline def setT_a(value: js.Array[Double]): Self = StObject.set(x, "t_a", value.asInstanceOf[js.Any])
       
       inline def setT_aUndefined: Self = StObject.set(x, "t_a", js.undefined)
       
-      inline def setT_aVarargs(value: Double*): Self = StObject.set(x, "t_a", js.Array(value :_*))
+      inline def setT_aVarargs(value: Double*): Self = StObject.set(x, "t_a", js.Array(value*))
       
       inline def setT_b(value: js.Array[Double]): Self = StObject.set(x, "t_b", value.asInstanceOf[js.Any])
       
       inline def setT_bUndefined: Self = StObject.set(x, "t_b", js.undefined)
       
-      inline def setT_bVarargs(value: Double*): Self = StObject.set(x, "t_b", js.Array(value :_*))
+      inline def setT_bVarargs(value: Double*): Self = StObject.set(x, "t_b", js.Array(value*))
       
       inline def setWm(value: js.Array[Double]): Self = StObject.set(x, "wm", value.asInstanceOf[js.Any])
       
       inline def setWmUndefined: Self = StObject.set(x, "wm", js.undefined)
       
-      inline def setWmVarargs(value: Double*): Self = StObject.set(x, "wm", js.Array(value :_*))
+      inline def setWmVarargs(value: Double*): Self = StObject.set(x, "wm", js.Array(value*))
       
       inline def setWm_a(value: js.Array[Double]): Self = StObject.set(x, "wm_a", value.asInstanceOf[js.Any])
       
       inline def setWm_aUndefined: Self = StObject.set(x, "wm_a", js.undefined)
       
-      inline def setWm_aVarargs(value: Double*): Self = StObject.set(x, "wm_a", js.Array(value :_*))
+      inline def setWm_aVarargs(value: Double*): Self = StObject.set(x, "wm_a", js.Array(value*))
       
       inline def setWm_b(value: js.Array[Double]): Self = StObject.set(x, "wm_b", value.asInstanceOf[js.Any])
       
       inline def setWm_bUndefined: Self = StObject.set(x, "wm_b", js.undefined)
       
-      inline def setWm_bVarargs(value: Double*): Self = StObject.set(x, "wm_b", js.Array(value :_*))
+      inline def setWm_bVarargs(value: Double*): Self = StObject.set(x, "wm_b", js.Array(value*))
       
       inline def setWy(value: js.Array[Double]): Self = StObject.set(x, "wy", value.asInstanceOf[js.Any])
       
       inline def setWyUndefined: Self = StObject.set(x, "wy", js.undefined)
       
-      inline def setWyVarargs(value: Double*): Self = StObject.set(x, "wy", js.Array(value :_*))
+      inline def setWyVarargs(value: Double*): Self = StObject.set(x, "wy", js.Array(value*))
       
       inline def setWy_a(value: js.Array[Double]): Self = StObject.set(x, "wy_a", value.asInstanceOf[js.Any])
       
       inline def setWy_aUndefined: Self = StObject.set(x, "wy_a", js.undefined)
       
-      inline def setWy_aVarargs(value: Double*): Self = StObject.set(x, "wy_a", js.Array(value :_*))
+      inline def setWy_aVarargs(value: Double*): Self = StObject.set(x, "wy_a", js.Array(value*))
       
       inline def setWy_b(value: js.Array[Double]): Self = StObject.set(x, "wy_b", value.asInstanceOf[js.Any])
       
       inline def setWy_bUndefined: Self = StObject.set(x, "wy_b", js.undefined)
       
-      inline def setWy_bVarargs(value: Double*): Self = StObject.set(x, "wy_b", js.Array(value :_*))
+      inline def setWy_bVarargs(value: Double*): Self = StObject.set(x, "wy_b", js.Array(value*))
       
       inline def setY(value: js.Array[Double]): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
       
       inline def setYUndefined: Self = StObject.set(x, "Y", js.undefined)
       
-      inline def setYVarargs(value: Double*): Self = StObject.set(x, "Y", js.Array(value :_*))
+      inline def setYVarargs(value: Double*): Self = StObject.set(x, "Y", js.Array(value*))
       
       inline def setY_a(value: js.Array[Double]): Self = StObject.set(x, "Y_a", value.asInstanceOf[js.Any])
       
       inline def setY_aUndefined: Self = StObject.set(x, "Y_a", js.undefined)
       
-      inline def setY_aVarargs(value: Double*): Self = StObject.set(x, "Y_a", js.Array(value :_*))
+      inline def setY_aVarargs(value: Double*): Self = StObject.set(x, "Y_a", js.Array(value*))
       
       inline def setY_b(value: js.Array[Double]): Self = StObject.set(x, "Y_b", value.asInstanceOf[js.Any])
       
       inline def setY_bUndefined: Self = StObject.set(x, "Y_b", js.undefined)
       
-      inline def setY_bVarargs(value: Double*): Self = StObject.set(x, "Y_b", js.Array(value :_*))
+      inline def setY_bVarargs(value: Double*): Self = StObject.set(x, "Y_b", js.Array(value*))
     }
   }
   
@@ -646,16 +645,16 @@ object mod extends Shortcut {
       * Specifies one or more specific vals of a time period information provider.
       * When used to specify a time, a string indicating the 24-hour time may be used.
       *
-      * @param values - A list of values.
+      * @param value - A Date or string representing your value.
       */
-    def on(values: Double*): RecurrenceBuilder = js.native
+    def on(value: js.Date): RecurrenceBuilder = js.native
     /**
       * Specifies one or more specific vals of a time period information provider.
       * When used to specify a time, a string indicating the 24-hour time may be used.
       *
-      * @param value - A Date or string representing your value.
+      * @param values - A list of values.
       */
-    def on(value: Date): RecurrenceBuilder = js.native
+    def on(values: Double*): RecurrenceBuilder = js.native
     
     /**
       * Equivalent to .on(2,3,4,5,6).dayOfWeek()
@@ -704,10 +703,10 @@ object mod extends Shortcut {
       * @param dateFrom: The earliest a valid instance can occur
       * @param dateTo: The latest a valid instance can occur
       */
-    def next(numberOfInst: Double): js.Array[Date] | Date = js.native
-    def next(numberOfInst: Double, dateFrom: Unit, dateTo: Date): js.Array[Date] | Date = js.native
-    def next(numberOfInst: Double, dateFrom: Date): js.Array[Date] | Date = js.native
-    def next(numberOfInst: Double, dateFrom: Date, dateTo: Date): js.Array[Date] | Date = js.native
+    def next(numberOfInst: Double): js.Array[js.Date] | js.Date = js.native
+    def next(numberOfInst: Double, dateFrom: js.Date): js.Array[js.Date] | js.Date = js.native
+    def next(numberOfInst: Double, dateFrom: js.Date, dateTo: js.Date): js.Array[js.Date] | js.Date = js.native
+    def next(numberOfInst: Double, dateFrom: Unit, dateTo: js.Date): js.Array[js.Date] | js.Date = js.native
     
     /**
       * Finds the next valid range or ranges of the current schedule,
@@ -719,10 +718,10 @@ object mod extends Shortcut {
       * @param dateFrom: The earliest a valid range can occur
       * @param dateTo: The latest a valid range can occur
       */
-    def nextRange(numberOfInst: Double): js.Array[Date] | Date = js.native
-    def nextRange(numberOfInst: Double, dateFrom: Unit, dateTo: Date): js.Array[Date] | Date = js.native
-    def nextRange(numberOfInst: Double, dateFrom: Date): js.Array[Date] | Date = js.native
-    def nextRange(numberOfInst: Double, dateFrom: Date, dateTo: Date): js.Array[Date] | Date = js.native
+    def nextRange(numberOfInst: Double): js.Array[js.Date] | js.Date = js.native
+    def nextRange(numberOfInst: Double, dateFrom: js.Date): js.Array[js.Date] | js.Date = js.native
+    def nextRange(numberOfInst: Double, dateFrom: js.Date, dateTo: js.Date): js.Array[js.Date] | js.Date = js.native
+    def nextRange(numberOfInst: Double, dateFrom: Unit, dateTo: js.Date): js.Array[js.Date] | js.Date = js.native
     
     /**
       * Finds the previous valid instance or instances of the current schedule,
@@ -734,10 +733,10 @@ object mod extends Shortcut {
       * @param dateFrom: The earliest a valid instance can occur
       * @param dateTo: The latest a valid instance can occur
       */
-    def prev(numberOfInst: Double): js.Array[Date] | Date = js.native
-    def prev(numberOfInst: Double, dateFrom: Unit, dateTo: Date): js.Array[Date] | Date = js.native
-    def prev(numberOfInst: Double, dateFrom: Date): js.Array[Date] | Date = js.native
-    def prev(numberOfInst: Double, dateFrom: Date, dateTo: Date): js.Array[Date] | Date = js.native
+    def prev(numberOfInst: Double): js.Array[js.Date] | js.Date = js.native
+    def prev(numberOfInst: Double, dateFrom: js.Date): js.Array[js.Date] | js.Date = js.native
+    def prev(numberOfInst: Double, dateFrom: js.Date, dateTo: js.Date): js.Array[js.Date] | js.Date = js.native
+    def prev(numberOfInst: Double, dateFrom: Unit, dateTo: js.Date): js.Array[js.Date] | js.Date = js.native
     
     /**
       * Finds the previous valid range or ranges of the current schedule,
@@ -749,10 +748,10 @@ object mod extends Shortcut {
       * @param dateFrom: The earliest a valid range can occur
       * @param dateTo: The latest a valid range can occur
       */
-    def prevRange(numberOfInst: Double): js.Array[Date] | Date = js.native
-    def prevRange(numberOfInst: Double, dateFrom: Unit, dateTo: Date): js.Array[Date] | Date = js.native
-    def prevRange(numberOfInst: Double, dateFrom: Date): js.Array[Date] | Date = js.native
-    def prevRange(numberOfInst: Double, dateFrom: Date, dateTo: Date): js.Array[Date] | Date = js.native
+    def prevRange(numberOfInst: Double): js.Array[js.Date] | js.Date = js.native
+    def prevRange(numberOfInst: Double, dateFrom: js.Date): js.Array[js.Date] | js.Date = js.native
+    def prevRange(numberOfInst: Double, dateFrom: js.Date, dateTo: js.Date): js.Array[js.Date] | js.Date = js.native
+    def prevRange(numberOfInst: Double, dateFrom: Unit, dateTo: js.Date): js.Array[js.Date] | js.Date = js.native
   }
   
   trait ScheduleData extends StObject {
@@ -786,11 +785,11 @@ object mod extends Shortcut {
       
       inline def setExceptions(value: js.Array[Recurrence]): Self = StObject.set(x, "exceptions", value.asInstanceOf[js.Any])
       
-      inline def setExceptionsVarargs(value: Recurrence*): Self = StObject.set(x, "exceptions", js.Array(value :_*))
+      inline def setExceptionsVarargs(value: Recurrence*): Self = StObject.set(x, "exceptions", js.Array(value*))
       
       inline def setSchedules(value: js.Array[Recurrence]): Self = StObject.set(x, "schedules", value.asInstanceOf[js.Any])
       
-      inline def setSchedulesVarargs(value: Recurrence*): Self = StObject.set(x, "schedules", js.Array(value :_*))
+      inline def setSchedulesVarargs(value: Recurrence*): Self = StObject.set(x, "schedules", js.Array(value*))
     }
   }
   
@@ -858,7 +857,7 @@ object mod extends Shortcut {
       * Schedule
       * Generates instances from schedule data.
       */
-    def schedule(input: js.Any): Schedule
+    def schedule(input: Any): Schedule
     
     /**
       * Second time period information provider.
@@ -914,7 +913,7 @@ object mod extends Shortcut {
       modifier: ModifierStatic,
       month: TimePeriod,
       parse: ParseStatic,
-      schedule: js.Any => Schedule,
+      schedule: Any => Schedule,
       second: TimePeriod,
       setInterval: (js.Function0[Unit], ScheduleData) => Timer,
       setTimeout: (js.Function0[Unit], ScheduleData) => Timer,
@@ -949,7 +948,7 @@ object mod extends Shortcut {
       
       inline def setParse(value: ParseStatic): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
       
-      inline def setSchedule(value: js.Any => Schedule): Self = StObject.set(x, "schedule", js.Any.fromFunction1(value))
+      inline def setSchedule(value: Any => Schedule): Self = StObject.set(x, "schedule", js.Any.fromFunction1(value))
       
       inline def setSecond(value: TimePeriod): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
       
@@ -976,7 +975,7 @@ object mod extends Shortcut {
       *
       * @param date - The given date.
       */
-    def end(date: Date): Date = js.native
+    def end(date: js.Date): js.Date = js.native
     
     /**
       * The minimum and maximum valid values for the time period for the specified date.
@@ -986,7 +985,7 @@ object mod extends Shortcut {
       * @param [date] - The given date.
       */
     def extent(): js.Array[Double] = js.native
-    def extent(date: Date): js.Array[Double] = js.native
+    def extent(date: js.Date): js.Array[Double] = js.native
     
     /**
       * True if the specified value is valid for the specified date, false otherwise.
@@ -994,7 +993,7 @@ object mod extends Shortcut {
       * @param date - The given date.
       * @param value - The value to test for the date.
       */
-    def isValid(date: Date, value: js.Any): Boolean = js.native
+    def isValid(date: js.Date, value: Any): Boolean = js.native
     
     /**
       * The name of the time period information provider.
@@ -1008,7 +1007,7 @@ object mod extends Shortcut {
       * @param date - The given date.
       * @param value - The value to test for the date.
       */
-    def next(date: Date, value: js.Any): Date = js.native
+    def next(date: js.Date, value: Any): js.Date = js.native
     
     /**
       * Returns the previous date where the value is the value specified.
@@ -1017,7 +1016,7 @@ object mod extends Shortcut {
       * @param date - The given date.
       * @param value - The value to test for the date.
       */
-    def prev(date: Date, value: js.Any): Date = js.native
+    def prev(date: js.Date, value: Any): js.Date = js.native
     
     /**
       * The rough number of seconds that are covered when moving from one instance of this time period to the next instance.
@@ -1030,14 +1029,14 @@ object mod extends Shortcut {
       *
       * @param date - The given date.
       */
-    def start(date: Date): Date = js.native
+    def start(date: js.Date): js.Date = js.native
     
     /**
       * The value of this time period for the date specified.
       *
       * @param date - The given date.
       */
-    def `val`(date: Date): Double = js.native
+    def `val`(date: js.Date): Double = js.native
   }
   
   trait Timer extends StObject {

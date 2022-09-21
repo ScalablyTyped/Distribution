@@ -9,16 +9,13 @@ A Solr client library for indexing, adding, deleting, committing, optimizing and
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | solr-client |
-| Keywords           | solr, client, query, sdk |
-| # releases         | 3 |
-| # dependents       | 32 |
-| # downloads        | 603726 |
-| # stars            | 13 |
+| Keywords           | solr, client, query, sdk, search |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 198423.33333333334 |
+| # stars            | 443.0 |
 
 ## Links
-- [Homepage](https://github.com/lbdremy/solr-node-client#readme)
-- [Bugs](https://github.com/lbdremy/solr-node-client/issues)
-- [Repository](https://github.com/lbdremy/solr-node-client)
 - [Npm](https://www.npmjs.com/package/solr-client)
     
 

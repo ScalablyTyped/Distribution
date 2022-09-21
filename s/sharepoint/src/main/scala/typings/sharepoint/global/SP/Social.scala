@@ -21,12 +21,12 @@ object Social {
   /** Contains information about an actor retrieved from server. An actor is a user, document, site, or tag. */
   @JSGlobal("SP.Social.SocialActor")
   @js.native
-  class SocialActor ()
+  open class SocialActor ()
     extends StObject
        with typings.sharepoint.SP.Social.SocialActor {
     
     /* CompleteClass */
-    override def customFromJson(obj: js.Any): Boolean = js.native
+    override def customFromJson(obj: Any): Boolean = js.native
     
     /* CompleteClass */
     override def customWriteToXml(
@@ -35,7 +35,7 @@ object Social {
     ): Boolean = js.native
     
     /* CompleteClass */
-    override def fromJson(obj: js.Any): Unit = js.native
+    override def fromJson(obj: Any): Unit = js.native
     
     /** The AccountName property returns the user account name.
       This property is only available for social actors of type "user". */
@@ -126,12 +126,12 @@ object Social {
   /** Identifies an actor to the server. An actor can be a user, document, site, or tag. */
   @JSGlobal("SP.Social.SocialActorInfo")
   @js.native
-  class SocialActorInfo ()
+  open class SocialActorInfo ()
     extends StObject
        with typings.sharepoint.SP.Social.SocialActorInfo {
     
     /* CompleteClass */
-    override def customFromJson(obj: js.Any): Boolean = js.native
+    override def customFromJson(obj: Any): Boolean = js.native
     
     /* CompleteClass */
     override def customWriteToXml(
@@ -140,7 +140,7 @@ object Social {
     ): Boolean = js.native
     
     /* CompleteClass */
-    override def fromJson(obj: js.Any): Unit = js.native
+    override def fromJson(obj: Any): Unit = js.native
     
     /** User account name.
       This property is only available for social actors of type "user". */
@@ -241,12 +241,12 @@ object Social {
   /** Represents an image, document preview, or video preview attachment.  */
   @JSGlobal("SP.Social.SocialAttachment")
   @js.native
-  class SocialAttachment ()
+  open class SocialAttachment ()
     extends StObject
        with typings.sharepoint.SP.Social.SocialAttachment {
     
     /* CompleteClass */
-    override def customFromJson(obj: js.Any): Boolean = js.native
+    override def customFromJson(obj: Any): Boolean = js.native
     
     /* CompleteClass */
     override def customWriteToXml(
@@ -255,7 +255,7 @@ object Social {
     ): Boolean = js.native
     
     /* CompleteClass */
-    override def fromJson(obj: js.Any): Unit = js.native
+    override def fromJson(obj: Any): Unit = js.native
     
     /** Specifies the type of object that the attachment contains. */
     /* CompleteClass */
@@ -354,12 +354,12 @@ object Social {
   /** Specifies the user actions that are allowed for the attachment object. */
   @JSGlobal("SP.Social.SocialAttachmentAction")
   @js.native
-  class SocialAttachmentAction ()
+  open class SocialAttachmentAction ()
     extends StObject
        with typings.sharepoint.SP.Social.SocialAttachmentAction {
     
     /* CompleteClass */
-    override def customFromJson(obj: js.Any): Boolean = js.native
+    override def customFromJson(obj: Any): Boolean = js.native
     
     /* CompleteClass */
     override def customWriteToXml(
@@ -368,7 +368,7 @@ object Social {
     ): Boolean = js.native
     
     /* CompleteClass */
-    override def fromJson(obj: js.Any): Unit = js.native
+    override def fromJson(obj: Any): Unit = js.native
     
     /** Specifies whether the action is to navigate to a URI or an action that is dependent on the context in which the object is presented to the user. */
     /* CompleteClass */
@@ -428,12 +428,12 @@ object Social {
     Each substitution string is replaced by a SocialDataItem value. */
   @JSGlobal("SP.Social.SocialDataItem")
   @js.native
-  class SocialDataItem ()
+  open class SocialDataItem ()
     extends StObject
        with typings.sharepoint.SP.Social.SocialDataItem {
     
     /* CompleteClass */
-    override def customFromJson(obj: js.Any): Boolean = js.native
+    override def customFromJson(obj: Any): Boolean = js.native
     
     /* CompleteClass */
     override def customWriteToXml(
@@ -442,7 +442,7 @@ object Social {
     ): Boolean = js.native
     
     /* CompleteClass */
-    override def fromJson(obj: js.Any): Unit = js.native
+    override def fromJson(obj: Any): Unit = js.native
     
     /** Identifies the user.  */
     /* CompleteClass */
@@ -519,12 +519,12 @@ object Social {
     Each of the SocialDataOverlay objects specifies a link or one or more actors. */
   @JSGlobal("SP.Social.SocialDataOverlay")
   @js.native
-  class SocialDataOverlay ()
+  open class SocialDataOverlay ()
     extends StObject
        with typings.sharepoint.SP.Social.SocialDataOverlay {
     
     /* CompleteClass */
-    override def customFromJson(obj: js.Any): Boolean = js.native
+    override def customFromJson(obj: Any): Boolean = js.native
     
     /* CompleteClass */
     override def customWriteToXml(
@@ -533,7 +533,7 @@ object Social {
     ): Boolean = js.native
     
     /* CompleteClass */
-    override def fromJson(obj: js.Any): Unit = js.native
+    override def fromJson(obj: Any): Unit = js.native
     
     /** Specifies one or more actors as an array of integers where each integer specifies an index into the SocialThreadActors array.
       This property is only available if the get_overlayType() has a value of SocialDataOverlayType.actors. */
@@ -583,12 +583,12 @@ object Social {
   /** Specifies information about errors that the server has encountered. */
   @JSGlobal("SP.Social.SocialExceptionDetails")
   @js.native
-  class SocialExceptionDetails ()
+  open class SocialExceptionDetails ()
     extends StObject
        with typings.sharepoint.SP.Social.SocialExceptionDetails {
     
     /* CompleteClass */
-    override def customFromJson(obj: js.Any): Boolean = js.native
+    override def customFromJson(obj: Any): Boolean = js.native
     
     /* CompleteClass */
     override def customWriteToXml(
@@ -597,7 +597,7 @@ object Social {
     ): Boolean = js.native
     
     /* CompleteClass */
-    override def fromJson(obj: js.Any): Unit = js.native
+    override def fromJson(obj: Any): Unit = js.native
     
     /* CompleteClass */
     override def get_internalErrorCode(): Double = js.native
@@ -628,12 +628,12 @@ object Social {
   /** Specifies a feed, which contains an array of SocialThreads, each of which specifies a root SocialPost object and an array of response SocialPost objects. */
   @JSGlobal("SP.Social.SocialFeed")
   @js.native
-  class SocialFeed ()
+  open class SocialFeed ()
     extends StObject
        with typings.sharepoint.SP.Social.SocialFeed {
     
     /* CompleteClass */
-    override def customFromJson(obj: js.Any): Boolean = js.native
+    override def customFromJson(obj: Any): Boolean = js.native
     
     /* CompleteClass */
     override def customWriteToXml(
@@ -642,7 +642,7 @@ object Social {
     ): Boolean = js.native
     
     /* CompleteClass */
-    override def fromJson(obj: js.Any): Unit = js.native
+    override def fromJson(obj: Any): Unit = js.native
     
     /** Specifies attributes of the returned feed.
       The attributes specify if the requested feed has additional threads that were not included in the returned thread. */
@@ -704,7 +704,7 @@ object Social {
     It provides methods to create posts, delete posts, read posts, and perform other operations on posts. */
   @JSGlobal("SP.Social.SocialFeedManager")
   @js.native
-  class SocialFeedManager protected ()
+  open class SocialFeedManager protected ()
     extends StObject
        with typings.sharepoint.SP.Social.SocialFeedManager {
     def this(context: typings.sharepoint.SP.ClientRuntimeContext) = this()
@@ -712,7 +712,7 @@ object Social {
   
   @JSGlobal("SP.Social.SocialFeedOptions")
   @js.native
-  class SocialFeedOptions ()
+  open class SocialFeedOptions ()
     extends StObject
        with typings.sharepoint.SP.Social.SocialFeedOptions
   
@@ -752,7 +752,7 @@ object Social {
     Actors can be users, documents, sites, and tags. */
   @JSGlobal("SP.Social.SocialFollowingManager")
   @js.native
-  class SocialFollowingManager protected ()
+  open class SocialFollowingManager protected ()
     extends StObject
        with typings.sharepoint.SP.Social.SocialFollowingManager {
     def this(context: typings.sharepoint.SP.ClientRuntimeContext) = this()
@@ -762,12 +762,12 @@ object Social {
     This class is used to represent the location of a web site.  */
   @JSGlobal("SP.Social.SocialLink")
   @js.native
-  class SocialLink ()
+  open class SocialLink ()
     extends StObject
        with typings.sharepoint.SP.Social.SocialLink {
     
     /* CompleteClass */
-    override def customFromJson(obj: js.Any): Boolean = js.native
+    override def customFromJson(obj: Any): Boolean = js.native
     
     /* CompleteClass */
     override def customWriteToXml(
@@ -776,7 +776,7 @@ object Social {
     ): Boolean = js.native
     
     /* CompleteClass */
-    override def fromJson(obj: js.Any): Unit = js.native
+    override def fromJson(obj: Any): Unit = js.native
     
     /* CompleteClass */
     override def get_text(): String = js.native
@@ -803,12 +803,12 @@ object Social {
   /** Specifies a post read from the server. */
   @JSGlobal("SP.Social.SocialPost")
   @js.native
-  class SocialPost ()
+  open class SocialPost ()
     extends StObject
        with typings.sharepoint.SP.Social.SocialPost {
     
     /* CompleteClass */
-    override def customFromJson(obj: js.Any): Boolean = js.native
+    override def customFromJson(obj: Any): Boolean = js.native
     
     /* CompleteClass */
     override def customWriteToXml(
@@ -817,7 +817,7 @@ object Social {
     ): Boolean = js.native
     
     /* CompleteClass */
-    override def fromJson(obj: js.Any): Unit = js.native
+    override def fromJson(obj: Any): Unit = js.native
     
     /** Specifies an image, document preview, or video preview attachment */
     /* CompleteClass */
@@ -880,12 +880,12 @@ object Social {
   /** Specifies a set of users, documents, sites, and tags by an index into the SocialThreadActors array  */
   @JSGlobal("SP.Social.SocialPostActorInfo")
   @js.native
-  class SocialPostActorInfo ()
+  open class SocialPostActorInfo ()
     extends StObject
        with typings.sharepoint.SP.Social.SocialPostActorInfo {
     
     /* CompleteClass */
-    override def customFromJson(obj: js.Any): Boolean = js.native
+    override def customFromJson(obj: Any): Boolean = js.native
     
     /* CompleteClass */
     override def customWriteToXml(
@@ -894,7 +894,7 @@ object Social {
     ): Boolean = js.native
     
     /* CompleteClass */
-    override def fromJson(obj: js.Any): Unit = js.native
+    override def fromJson(obj: Any): Unit = js.native
     
     /* CompleteClass */
     override def get_includesCurrentUser(): Boolean = js.native
@@ -942,12 +942,12 @@ object Social {
     The post consists of a text message, which can optionally include social tags, mentions of users, and links. */
   @JSGlobal("SP.Social.SocialPostCreationData")
   @js.native
-  class SocialPostCreationData ()
+  open class SocialPostCreationData ()
     extends StObject
        with typings.sharepoint.SP.Social.SocialPostCreationData {
     
     /* CompleteClass */
-    override def customFromJson(obj: js.Any): Boolean = js.native
+    override def customFromJson(obj: Any): Boolean = js.native
     
     /* CompleteClass */
     override def customWriteToXml(
@@ -956,7 +956,7 @@ object Social {
     ): Boolean = js.native
     
     /* CompleteClass */
-    override def fromJson(obj: js.Any): Unit = js.native
+    override def fromJson(obj: Any): Unit = js.native
     
     /** Specifies an image, document preview, or video preview to be used in the post. */
     /* CompleteClass */
@@ -1034,12 +1034,12 @@ object Social {
     This type can only be specified in a server-to-server call. */
   @JSGlobal("SP.Social.SocialPostDefinitionData")
   @js.native
-  class SocialPostDefinitionData ()
+  open class SocialPostDefinitionData ()
     extends StObject
        with typings.sharepoint.SP.Social.SocialPostDefinitionData {
     
     /* CompleteClass */
-    override def customFromJson(obj: js.Any): Boolean = js.native
+    override def customFromJson(obj: Any): Boolean = js.native
     
     /* CompleteClass */
     override def customWriteToXml(
@@ -1048,7 +1048,7 @@ object Social {
     ): Boolean = js.native
     
     /* CompleteClass */
-    override def fromJson(obj: js.Any): Unit = js.native
+    override def fromJson(obj: Any): Unit = js.native
     
     /* CompleteClass */
     override def get_items(): js.Array[typings.sharepoint.SP.Social.SocialPostDefinitionDataItem] = js.native
@@ -1076,12 +1076,12 @@ object Social {
     This type can only be specified in a server-to-server call. */
   @JSGlobal("SP.Social.SocialPostDefinitionDataItem")
   @js.native
-  class SocialPostDefinitionDataItem ()
+  open class SocialPostDefinitionDataItem ()
     extends StObject
        with typings.sharepoint.SP.Social.SocialPostDefinitionDataItem {
     
     /* CompleteClass */
-    override def customFromJson(obj: js.Any): Boolean = js.native
+    override def customFromJson(obj: Any): Boolean = js.native
     
     /* CompleteClass */
     override def customWriteToXml(
@@ -1090,7 +1090,7 @@ object Social {
     ): Boolean = js.native
     
     /* CompleteClass */
-    override def fromJson(obj: js.Any): Unit = js.native
+    override def fromJson(obj: Any): Unit = js.native
     
     /** Specifies the name of the user.
       This property is only used if the ItemType property specifies that the item is a User. */
@@ -1182,12 +1182,12 @@ object Social {
     The referenced post can be a post with a tag, a post that is liked, a post that mentions a user, or a post that is a reply. */
   @JSGlobal("SP.Social.SocialPostReference")
   @js.native
-  class SocialPostReference ()
+  open class SocialPostReference ()
     extends StObject
        with typings.sharepoint.SP.Social.SocialPostReference {
     
     /* CompleteClass */
-    override def customFromJson(obj: js.Any): Boolean = js.native
+    override def customFromJson(obj: Any): Boolean = js.native
     
     /* CompleteClass */
     override def customWriteToXml(
@@ -1196,7 +1196,7 @@ object Social {
     ): Boolean = js.native
     
     /* CompleteClass */
-    override def fromJson(obj: js.Any): Unit = js.native
+    override def fromJson(obj: Any): Unit = js.native
     
     /** Provides a digest of the thread containing the referenced post */
     /* CompleteClass */
@@ -1282,12 +1282,12 @@ object Social {
     The thread contains a root post and zero or more reply posts. */
   @JSGlobal("SP.Social.SocialThread")
   @js.native
-  class SocialThread ()
+  open class SocialThread ()
     extends StObject
        with typings.sharepoint.SP.Social.SocialThread {
     
     /* CompleteClass */
-    override def customFromJson(obj: js.Any): Boolean = js.native
+    override def customFromJson(obj: Any): Boolean = js.native
     
     /* CompleteClass */
     override def customWriteToXml(
@@ -1296,7 +1296,7 @@ object Social {
     ): Boolean = js.native
     
     /* CompleteClass */
-    override def fromJson(obj: js.Any): Unit = js.native
+    override def fromJson(obj: Any): Unit = js.native
     
     /** Specifies the users who have created a post in the returned thread and also contains any users, documents, sites, and tags that are referenced in any of the posts in the returned thread. */
     /* CompleteClass */

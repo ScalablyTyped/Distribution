@@ -46,10 +46,20 @@ object browsingData {
     /** Optional. Stored passwords.  */
     var passwords: js.UndefOr[Boolean] = js.undefined
     
-    /** Optional. Plugins' data.  */
+    /**
+      * @deprecated Deprecated since Chrome 88.
+      * Support for Flash has been removed. This data type will be ignored.
+      *
+      * Optional. Plugins' data.
+      */
     var pluginData: js.UndefOr[Boolean] = js.undefined
     
-    /** Optional. Server-bound certificates.  */
+    /**
+      * @deprecated Deprecated since Chrome 76.
+      * Support for server-bound certificates has been removed. This data type will be ignored.
+      *
+      * Optional. Server-bound certificates.
+      */
     var serverBoundCertificates: js.UndefOr[Boolean] = js.undefined
     
     /**
@@ -167,12 +177,28 @@ object browsingData {
     
     /**
       * Optional.
-      * Since Chrome 21.
-      * An object whose properties specify which origin types ought to be cleared. If this object isn't specified, it defaults to clearing only "unprotected" origins. Please ensure that you really want to remove application data before adding 'protectedWeb' or 'extensions'.
+      * Since Chrome 74.
+      * When present, data for origins in this list is excluded from deletion. Can't be used together with origins. Only supported for cookies, storage and cache. Cookies are excluded for the whole registrable domain.
+      */
+    var excludeOrigins: js.UndefOr[js.Array[String]] = js.undefined
+    
+    /**
+      * Optional.
+      * An object whose properties specify which origin types ought to be cleared. If this object isn't specified, it defaults to clearing only "unprotected" origins. Please ensure that you _really_ want to remove application data before adding 'protectedWeb' or 'extensions'.
       */
     var originTypes: js.UndefOr[OriginTypes] = js.undefined
     
-    /** Optional. Remove data accumulated on or after this date, represented in milliseconds since the epoch (accessible via the getTime method of the JavaScript Date object). If absent, defaults to 0 (which would remove all browsing data).  */
+    /**
+      * Optional.
+      * Since Chrome 74.
+      * When present, only data for origins in this list is deleted. Only supported for cookies, storage and cache. Cookies are cleared for the whole registrable domain.
+      */
+    var origins: js.UndefOr[js.Array[String]] = js.undefined
+    
+    /**
+      * Optional.
+      * Remove data accumulated on or after this date, represented in milliseconds since the epoch (accessible via the {@link Date.getTime} method). If absent, defaults to 0 (which would remove all browsing data).
+      */
     var since: js.UndefOr[Double] = js.undefined
   }
   object RemovalOptions {
@@ -184,9 +210,21 @@ object browsingData {
     
     extension [Self <: RemovalOptions](x: Self) {
       
+      inline def setExcludeOrigins(value: js.Array[String]): Self = StObject.set(x, "excludeOrigins", value.asInstanceOf[js.Any])
+      
+      inline def setExcludeOriginsUndefined: Self = StObject.set(x, "excludeOrigins", js.undefined)
+      
+      inline def setExcludeOriginsVarargs(value: String*): Self = StObject.set(x, "excludeOrigins", js.Array(value*))
+      
       inline def setOriginTypes(value: OriginTypes): Self = StObject.set(x, "originTypes", value.asInstanceOf[js.Any])
       
       inline def setOriginTypesUndefined: Self = StObject.set(x, "originTypes", js.undefined)
+      
+      inline def setOrigins(value: js.Array[String]): Self = StObject.set(x, "origins", value.asInstanceOf[js.Any])
+      
+      inline def setOriginsUndefined: Self = StObject.set(x, "origins", js.undefined)
+      
+      inline def setOriginsVarargs(value: String*): Self = StObject.set(x, "origins", js.Array(value*))
       
       inline def setSince(value: Double): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
       
@@ -194,7 +232,7 @@ object browsingData {
     }
   }
   
-  trait SettingsCallback extends StObject {
+  trait SettingsResult extends StObject {
     
     /** All of the types will be present in the result, with values of true if they are permitted to be removed (e.g., by enterprise policy) and false if not. */
     var dataRemovalPermitted: DataTypeSet
@@ -204,14 +242,14 @@ object browsingData {
     
     var options: RemovalOptions
   }
-  object SettingsCallback {
+  object SettingsResult {
     
-    inline def apply(dataRemovalPermitted: DataTypeSet, dataToRemove: DataTypeSet, options: RemovalOptions): SettingsCallback = {
+    inline def apply(dataRemovalPermitted: DataTypeSet, dataToRemove: DataTypeSet, options: RemovalOptions): SettingsResult = {
       val __obj = js.Dynamic.literal(dataRemovalPermitted = dataRemovalPermitted.asInstanceOf[js.Any], dataToRemove = dataToRemove.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
-      __obj.asInstanceOf[SettingsCallback]
+      __obj.asInstanceOf[SettingsResult]
     }
     
-    extension [Self <: SettingsCallback](x: Self) {
+    extension [Self <: SettingsResult](x: Self) {
       
       inline def setDataRemovalPermitted(value: DataTypeSet): Self = StObject.set(x, "dataRemovalPermitted", value.asInstanceOf[js.Any])
       

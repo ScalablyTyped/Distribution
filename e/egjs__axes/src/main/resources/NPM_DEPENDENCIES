@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@egjs/axes" : "3.8.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@egjs/axes" : "3.8.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

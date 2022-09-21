@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "ItemVariationLocationOverrides")
 @js.native
-class ItemVariationLocationOverrides () extends StObject {
+open class ItemVariationLocationOverrides () extends StObject {
   
   /**
     * If the inventory quantity for the variation is less than or equal to this value and `inventory_alert_type` is

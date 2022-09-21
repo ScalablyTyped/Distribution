@@ -29,7 +29,7 @@ object DescribeAccessPointsOutput {
     
     inline def setLoadBalancerDescriptionsUndefined: Self = StObject.set(x, "LoadBalancerDescriptions", js.undefined)
     
-    inline def setLoadBalancerDescriptionsVarargs(value: LoadBalancerDescription*): Self = StObject.set(x, "LoadBalancerDescriptions", js.Array(value :_*))
+    inline def setLoadBalancerDescriptionsVarargs(value: LoadBalancerDescription*): Self = StObject.set(x, "LoadBalancerDescriptions", js.Array(value*))
     
     inline def setNextMarker(value: Marker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     

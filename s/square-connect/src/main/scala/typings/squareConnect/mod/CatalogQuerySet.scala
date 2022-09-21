@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CatalogQuerySet")
 @js.native
-class CatalogQuerySet () extends StObject {
+open class CatalogQuerySet () extends StObject {
   
   /**
     * The name of the attribute to be searched. Matching of the attribute name is exact.

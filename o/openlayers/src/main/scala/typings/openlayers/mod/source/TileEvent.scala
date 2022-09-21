@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("openlayers", "source.TileEvent")
 @js.native
-class TileEvent protected () extends Event {
+open class TileEvent protected () extends Event {
   /**
     * @classdesc
     * Events emitted by {@link ol.source.Tile} instances are instances of this

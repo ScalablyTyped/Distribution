@@ -41,7 +41,7 @@ object XInteractionPassword2 {
     getPassword: () => String,
     getPasswordToModify: () => String,
     getRecommendReadOnly: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     select: () => Unit,
     setPassword: String => Unit,

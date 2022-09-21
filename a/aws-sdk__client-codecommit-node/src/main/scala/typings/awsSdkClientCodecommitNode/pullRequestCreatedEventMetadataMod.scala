@@ -8,5 +8,5 @@ object pullRequestCreatedEventMetadataMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/_PullRequestCreatedEventMetadata", "_PullRequestCreatedEventMetadata")
   @js.native
-  val PullRequestCreatedEventMetadata: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val PullRequestCreatedEventMetadata: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

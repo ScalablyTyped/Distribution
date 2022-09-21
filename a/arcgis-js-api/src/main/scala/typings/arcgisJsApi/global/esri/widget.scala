@@ -25,9 +25,14 @@ object widget {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-widget.html#cssTransition)
     */
-  inline def cssTransition_enter(`type`: enter, className: String): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("cssTransition")(`type`.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  inline def cssTransition(`type`: enter | exit, className: String): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("cssTransition")(`type`.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[js.Function]
   
-  inline def cssTransition_exit(`type`: exit, className: String): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("cssTransition")(`type`.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  /**
+    * Utility method used to determine if a pressed key should activate button behavior.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-widget.html#isActivationKey)
+    */
+  inline def isActivationKey(key: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isActivationKey")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Utility method used to determine if the directionality of the text of the document is right-to-left.
@@ -37,13 +42,12 @@ object widget {
   inline def isRTL(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRTL")().asInstanceOf[Boolean]
   
   /**
-    * This convenience decorator marks a property for automatic rendering.
+    * This convenience decorator is used to help simplify localization of the widget.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-widget.html#renderable)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-widget.html#messageBundle)
     */
-  inline def renderable(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("renderable")().asInstanceOf[js.Function]
-  inline def renderable(propertyName: String): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("renderable")(propertyName.asInstanceOf[js.Any]).asInstanceOf[js.Function]
-  inline def renderable(propertyName: js.Array[String]): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("renderable")(propertyName.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  inline def messageBundle(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("messageBundle")().asInstanceOf[js.Function]
+  inline def messageBundle(bundleId: String): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("messageBundle")(bundleId.asInstanceOf[js.Any]).asInstanceOf[js.Function]
   
   /**
     * This convenience method is used to assign an [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) DOM node reference to a variable.
@@ -62,10 +66,10 @@ object widget {
       *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-widget.html#tsx)
       */
-    inline def tsx(selector: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("tsx")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def tsx(selector: String, properties: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("tsx")(selector.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def tsx(selector: String, properties: js.Any, children: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("tsx")(selector.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def tsx(selector: String, properties: Unit, children: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("tsx")(selector.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def tsx(selector: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("tsx")(selector.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def tsx(selector: String, properties: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("tsx")(selector.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def tsx(selector: String, properties: Any, children: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("tsx")(selector.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def tsx(selector: String, properties: Unit, children: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("tsx")(selector.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Any]
   }
   
   /**

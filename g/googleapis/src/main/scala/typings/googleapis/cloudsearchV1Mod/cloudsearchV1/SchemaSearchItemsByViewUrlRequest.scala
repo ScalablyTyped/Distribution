@@ -14,13 +14,12 @@ trait SchemaSearchItemsByViewUrlRequest extends StObject {
   /**
     * The next_page_token value returned from a previous request, if any.
     */
-  var pageToken: js.UndefOr[String] = js.undefined
+  var pageToken: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Specify the full view URL to find the corresponding item. The maximum
-    * length is 2048 characters.
+    * Specify the full view URL to find the corresponding item. The maximum length is 2048 characters.
     */
-  var viewUrl: js.UndefOr[String] = js.undefined
+  var viewUrl: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaSearchItemsByViewUrlRequest {
   
@@ -37,9 +36,13 @@ object SchemaSearchItemsByViewUrlRequest {
     
     inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
+    inline def setPageTokenNull: Self = StObject.set(x, "pageToken", null)
+    
     inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
     inline def setViewUrl(value: String): Self = StObject.set(x, "viewUrl", value.asInstanceOf[js.Any])
+    
+    inline def setViewUrlNull: Self = StObject.set(x, "viewUrl", null)
     
     inline def setViewUrlUndefined: Self = StObject.set(x, "viewUrl", js.undefined)
   }

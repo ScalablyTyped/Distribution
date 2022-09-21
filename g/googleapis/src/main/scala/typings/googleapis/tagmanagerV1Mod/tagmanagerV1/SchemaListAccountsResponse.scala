@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * List Accounts Response.
-  */
 trait SchemaListAccountsResponse extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaListAccountsResponse {
     
     inline def setAccountsUndefined: Self = StObject.set(x, "accounts", js.undefined)
     
-    inline def setAccountsVarargs(value: SchemaAccount*): Self = StObject.set(x, "accounts", js.Array(value :_*))
+    inline def setAccountsVarargs(value: SchemaAccount*): Self = StObject.set(x, "accounts", js.Array(value*))
   }
 }

@@ -11,13 +11,13 @@ object foundationMod {
   
   @JSImport("@material/radio/foundation", JSImport.Default)
   @js.native
-  class default () extends MDCRadioFoundation {
+  open class default () extends MDCRadioFoundation {
     def this(adapter: PartialMDCRadioAdapter) = this()
   }
   
   @JSImport("@material/radio/foundation", "MDCRadioFoundation")
   @js.native
-  class MDCRadioFoundation () extends MDCFoundation[MDCRadioAdapter] {
+  open class MDCRadioFoundation () extends MDCFoundation[MDCRadioAdapter] {
     def this(adapter: PartialMDCRadioAdapter) = this()
     
     def setDisabled(disabled: Boolean): Unit = js.native

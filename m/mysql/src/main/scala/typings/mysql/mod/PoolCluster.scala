@@ -1,14 +1,13 @@
 package typings.mysql.mod
 
 import typings.mysql.mysqlBooleans.`false`
-import typings.mysql.mysqlStrings.offline
-import typings.mysql.mysqlStrings.remove
+import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PoolCluster extends StObject {
+trait PoolCluster extends EventEmitter {
   
   def add(config: PoolConfig): Unit = js.native
   def add(id: String, config: PoolConfig): Unit = js.native
@@ -40,18 +39,6 @@ trait PoolCluster extends StObject {
   def of(pattern: Unit, selector: String): Pool = js.native
   @JSName("of")
   def of_false(pattern: `false`, selector: String): Pool = js.native
-  
-  /**
-    * Set handler to be run on a certain event.
-    */
-  def on(ev: String, callback: js.Function1[/* repeated */ js.Any, Unit]): PoolCluster = js.native
-  @JSName("on")
-  def on_offline(ev: offline, callback: js.Function1[/* nodeId */ String, Unit]): PoolCluster = js.native
-  /**
-    * Set handler to be run when a node is removed or goes offline.
-    */
-  @JSName("on")
-  def on_remove(ev: remove, callback: js.Function1[/* nodeId */ String, Unit]): PoolCluster = js.native
   
   /**
     * remove all pools which match pattern

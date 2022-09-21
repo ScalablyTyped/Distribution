@@ -2,9 +2,6 @@ package typings.styledTheming
 
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
-import typings.styledComponents.styledComponentsMod.FlattenInterpolation
-import typings.styledComponents.styledComponentsMod.ThemeProps
-import typings.styledComponents.styledComponentsMod.ThemedStyledProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,16 +24,16 @@ object mod {
   
   type ThemeValueFn = js.Function1[/* props */ js.Object, ThemeValueResult]
   
-  type ThemeValueResult = String | (FlattenInterpolation[ThemeProps[js.Any] | (ThemedStyledProps[js.Any, js.Any])])
+  type ThemeValueResult = String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FlattenInterpolation<ThemeProps<any>> */ Any)
   
   type VariantMap[TVariant /* <: String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in TVariant ]: styled-theming.styled-theming.ThemeMap}
-    */ typings.styledTheming.styledThemingStrings.VariantMap & TopLevel[js.Any]
+    */ typings.styledTheming.styledThemingStrings.VariantMap & TopLevel[Any]
   
   type VariantSet[TProp /* <: String */, TVariant /* <: String */] = js.Function1[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in TProp ]:? TVariant}
-    */ /* props */ typings.styledTheming.styledThemingStrings.VariantSet & TopLevel[js.Any], 
+    */ /* props */ typings.styledTheming.styledThemingStrings.VariantSet & TopLevel[Any], 
     String
   ]
 }

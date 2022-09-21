@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("fundamental-react", "SideNav")
 @js.native
-class SideNav () extends default
+open class SideNav () extends default
 object SideNav {
   
   @JSImport("fundamental-react", "SideNav")
@@ -31,10 +31,9 @@ object SideNav {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("fundamental-react", "SideNav.List")
   @js.native
-  class List protected ()
-    extends Component[SideNavListProps, ComponentState, js.Any] {
+  open class List protected () extends Component[SideNavListProps, ComponentState, Any] {
     def this(props: SideNavListProps) = this()
-    def this(props: SideNavListProps, context: js.Any) = this()
+    def this(props: SideNavListProps, context: Any) = this()
   }
   /* static member */
   /* Inlined react.react.ComponentClass<fundamental-react.fundamental-react/lib/SideNavigation/SideNav.SideNavListProps, react.react.ComponentState> & {  displayName :'SideNav.List'} */
@@ -46,18 +45,18 @@ object SideNav {
     
     @JSImport("fundamental-react", "SideNav.List.childContextTypes")
     @js.native
-    def childContextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-    inline def childContextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
+    def childContextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+    inline def childContextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("fundamental-react", "SideNav.List.contextType")
     @js.native
-    def contextType: js.UndefOr[Context[js.Any]] = js.native
-    inline def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+    def contextType: js.UndefOr[Context[Any]] = js.native
+    inline def contextType_=(x: js.UndefOr[Context[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
     
     @JSImport("fundamental-react", "SideNav.List.contextTypes")
     @js.native
-    def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-    inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+    def contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+    inline def contextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("fundamental-react", "SideNav.List.defaultProps")
     @js.native
@@ -88,10 +87,9 @@ object SideNav {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("fundamental-react", "SideNav.ListItem")
   @js.native
-  class ListItem protected ()
-    extends Component[SideNavListItemProps, ComponentState, js.Any] {
+  open class ListItem protected () extends Component[SideNavListItemProps, ComponentState, Any] {
     def this(props: SideNavListItemProps) = this()
-    def this(props: SideNavListItemProps, context: js.Any) = this()
+    def this(props: SideNavListItemProps, context: Any) = this()
   }
   /* static member */
   /* Inlined react.react.ComponentClass<fundamental-react.fundamental-react/lib/SideNavigation/SideNav.SideNavListItemProps, react.react.ComponentState> & {  displayName :'SideNav.ListItem'} */
@@ -103,18 +101,18 @@ object SideNav {
     
     @JSImport("fundamental-react", "SideNav.ListItem.childContextTypes")
     @js.native
-    def childContextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-    inline def childContextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
+    def childContextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+    inline def childContextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("fundamental-react", "SideNav.ListItem.contextType")
     @js.native
-    def contextType: js.UndefOr[Context[js.Any]] = js.native
-    inline def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+    def contextType: js.UndefOr[Context[Any]] = js.native
+    inline def contextType_=(x: js.UndefOr[Context[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
     
     @JSImport("fundamental-react", "SideNav.ListItem.contextTypes")
     @js.native
-    def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-    inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+    def contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+    inline def contextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("fundamental-react", "SideNav.ListItem.defaultProps")
     @js.native

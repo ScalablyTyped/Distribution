@@ -22,7 +22,6 @@ import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapString
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.selectionChanging
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.shortcut
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.visibleIntervalChanged
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,25 +37,25 @@ trait BootstrapScheduler
   
   def appointmentFormSave(): Unit = js.native
   
-  def changeFormContainer(container: js.Any): Unit = js.native
+  def changeFormContainer(container: Any): Unit = js.native
   
-  def changePopupMenuContainer(container: js.Any): Unit = js.native
+  def changePopupMenuContainer(container: Any): Unit = js.native
   
   def changeTimeZoneId(timeZoneId: String): Unit = js.native
   
-  def changeToolTipContainer(container: js.Any): Unit = js.native
+  def changeToolTipContainer(container: Any): Unit = js.native
   
   def deleteAppointment(apt: BootstrapSchedulerAppointment): Unit = js.native
   
-  def deselectAppointmentById(aptId: js.Any): Unit = js.native
+  def deselectAppointmentById(aptId: Any): Unit = js.native
   
   def getActiveViewType(): BootstrapSchedulerViewType = js.native
   
   def getAllDayAreaHeight(): Double = js.native
   
-  def getAppointmentById(id: js.Any): BootstrapSchedulerAppointment | Null = js.native
+  def getAppointmentById(id: Any): BootstrapSchedulerAppointment | Null = js.native
   
-  def getAppointmentProperties(aptId: Double, propertyNames: js.Array[String], onCallBack: js.Any): js.Array[String] = js.native
+  def getAppointmentProperties(aptId: Double, propertyNames: js.Array[String], onCallBack: Any): js.Array[String] = js.native
   
   def getGroupType(): BootstrapSchedulerGroupType = js.native
   
@@ -82,7 +81,7 @@ trait BootstrapScheduler
   
   def goToDateFormCancel(): Unit = js.native
   
-  def gotoDate(date: Date): Unit = js.native
+  def gotoDate(date: js.Date): Unit = js.native
   
   def gotoToday(): Unit = js.native
   
@@ -503,11 +502,7 @@ trait BootstrapScheduler
   
   def refresh(): Unit = js.native
   
-  def refreshClientAppointmentProperties(
-    clientAppointment: BootstrapSchedulerAppointment,
-    propertyNames: js.Array[String],
-    onCallBack: js.Any
-  ): Unit = js.native
+  def refreshClientAppointmentProperties(clientAppointment: BootstrapSchedulerAppointment, propertyNames: js.Array[String], onCallBack: Any): Unit = js.native
   
   def reminderFormCancel(): Unit = js.native
   
@@ -517,8 +512,8 @@ trait BootstrapScheduler
   
   def reminderFormSnooze(): Unit = js.native
   
-  def selectAppointmentById(aptId: js.Any): Unit = js.native
-  def selectAppointmentById(aptId: js.Any, scrollToSelection: Boolean): Unit = js.native
+  def selectAppointmentById(aptId: Any): Unit = js.native
+  def selectAppointmentById(aptId: Any, scrollToSelection: Boolean): Unit = js.native
   
   // tslint:disable-line:unified-signatures
   def setActiveViewType(value: BootstrapSchedulerViewType): Unit = js.native
@@ -547,8 +542,8 @@ trait BootstrapScheduler
   
   def showAppointmentFormByServerId(aptServerId: String): Unit = js.native
   
-  def showInplaceEditor(start: Date, end: Date): Unit = js.native
-  def showInplaceEditor(start: Date, end: Date, resourceId: String): Unit = js.native
+  def showInplaceEditor(start: js.Date, end: js.Date): Unit = js.native
+  def showInplaceEditor(start: js.Date, end: js.Date, resourceId: String): Unit = js.native
   
   // tslint:disable-line:unified-signatures
   def showLoadingPanel(): Unit = js.native

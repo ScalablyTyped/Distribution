@@ -32,7 +32,7 @@ object mod {
         * joyride function
         * @return {Joyride} Joyride instance.
         */
-      def joyride(methodName: String, params: js.Any*): JQuery
+      def joyride(methodName: String, params: Any*): JQuery
       /**
         * Function with options
         * @method
@@ -80,7 +80,7 @@ object mod {
         * @param {any[]} params parameters for method
         * @return {JQuery} JQuery instance
         */
-      def apply(methodName: String, params: js.Any*): JQuery = js.native
+      def apply(methodName: String, params: Any*): JQuery = js.native
       /**
         * Function with options
         * @method
@@ -102,7 +102,7 @@ object mod {
         * Will this cookie be attached to a domain, ie. '.notableapp.com'
         * @member {any}
         */
-      var cookieDomain: js.UndefOr[js.Any] = js.undefined
+      var cookieDomain: js.UndefOr[Any] = js.undefined
       
       /**
         * true/false for whether cookies are used
@@ -120,7 +120,7 @@ object mod {
         * Set to '/' if you want the cookie for the whole website
         * @member {any}
         */
-      var cookiePath: js.UndefOr[js.Any] = js.undefined
+      var cookiePath: js.UndefOr[Any] = js.undefined
       
       /**
         *  Whether to expose the elements at each step in the tour (requires modal:true)
@@ -156,13 +156,13 @@ object mod {
         * override on a per tooltip bases
         * @member {any}
         */
-      var nubPosition: js.UndefOr[js.Any] = js.undefined
+      var nubPosition: js.UndefOr[Any] = js.undefined
       
       /**
         * array of indexes where to pause the tour after
         * @member {any[]}
         */
-      var pauseAfter: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var pauseAfter: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * A method to call after an element has been exposed
@@ -298,7 +298,7 @@ object mod {
         
         inline def setAutoStartUndefined: Self = StObject.set(x, "autoStart", js.undefined)
         
-        inline def setCookieDomain(value: js.Any): Self = StObject.set(x, "cookieDomain", value.asInstanceOf[js.Any])
+        inline def setCookieDomain(value: Any): Self = StObject.set(x, "cookieDomain", value.asInstanceOf[js.Any])
         
         inline def setCookieDomainUndefined: Self = StObject.set(x, "cookieDomain", js.undefined)
         
@@ -310,7 +310,7 @@ object mod {
         
         inline def setCookieNameUndefined: Self = StObject.set(x, "cookieName", js.undefined)
         
-        inline def setCookiePath(value: js.Any): Self = StObject.set(x, "cookiePath", value.asInstanceOf[js.Any])
+        inline def setCookiePath(value: Any): Self = StObject.set(x, "cookiePath", value.asInstanceOf[js.Any])
         
         inline def setCookiePathUndefined: Self = StObject.set(x, "cookiePath", js.undefined)
         
@@ -334,15 +334,15 @@ object mod {
         
         inline def setNextButtonUndefined: Self = StObject.set(x, "nextButton", js.undefined)
         
-        inline def setNubPosition(value: js.Any): Self = StObject.set(x, "nubPosition", value.asInstanceOf[js.Any])
+        inline def setNubPosition(value: Any): Self = StObject.set(x, "nubPosition", value.asInstanceOf[js.Any])
         
         inline def setNubPositionUndefined: Self = StObject.set(x, "nubPosition", js.undefined)
         
-        inline def setPauseAfter(value: js.Array[js.Any]): Self = StObject.set(x, "pauseAfter", value.asInstanceOf[js.Any])
+        inline def setPauseAfter(value: js.Array[Any]): Self = StObject.set(x, "pauseAfter", value.asInstanceOf[js.Any])
         
         inline def setPauseAfterUndefined: Self = StObject.set(x, "pauseAfter", js.undefined)
         
-        inline def setPauseAfterVarargs(value: js.Any*): Self = StObject.set(x, "pauseAfter", js.Array(value :_*))
+        inline def setPauseAfterVarargs(value: Any*): Self = StObject.set(x, "pauseAfter", js.Array(value*))
         
         inline def setPostExposeCallback(value: (/* index */ Double, /* nextTip */ JQuery, /* el */ js.UndefOr[JQuery]) => Unit): Self = StObject.set(x, "postExposeCallback", js.Any.fromFunction3(value))
         

@@ -42,7 +42,7 @@ trait AutoScalingInstanceDetails extends StObject {
   var LaunchTemplate: js.UndefOr[LaunchTemplateSpecification] = js.undefined
   
   /**
-    * The lifecycle state for the instance.
+    * The lifecycle state for the instance. The Quarantined state is not used. For information about lifecycle states, see Instance lifecycle in the Amazon EC2 Auto Scaling User Guide.  Valid values: Pending | Pending:Wait | Pending:Proceed | Quarantined | InService | Terminating | Terminating:Wait | Terminating:Proceed | Terminated | Detaching | Detached | EnteringStandby | Standby | Warmed:Pending | Warmed:Pending:Wait | Warmed:Pending:Proceed | Warmed:Terminating | Warmed:Terminating:Wait | Warmed:Terminating:Proceed | Warmed:Terminated | Warmed:Stopped | Warmed:Running 
     */
   var LifecycleState: XmlStringMaxLen32
   

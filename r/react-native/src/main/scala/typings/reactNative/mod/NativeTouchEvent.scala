@@ -12,6 +12,12 @@ trait NativeTouchEvent extends StObject {
   var changedTouches: js.Array[NativeTouchEvent]
   
   /**
+    * 3D Touch reported force
+    * @platform ios
+    */
+  var force: js.UndefOr[Double] = js.undefined
+  
+  /**
     * The ID of the touch
     */
   var identifier: String
@@ -72,7 +78,11 @@ object NativeTouchEvent {
     
     inline def setChangedTouches(value: js.Array[NativeTouchEvent]): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
     
-    inline def setChangedTouchesVarargs(value: NativeTouchEvent*): Self = StObject.set(x, "changedTouches", js.Array(value :_*))
+    inline def setChangedTouchesVarargs(value: NativeTouchEvent*): Self = StObject.set(x, "changedTouches", js.Array(value*))
+    
+    inline def setForce(value: Double): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    
+    inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     
     inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
@@ -90,6 +100,6 @@ object NativeTouchEvent {
     
     inline def setTouches(value: js.Array[NativeTouchEvent]): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
     
-    inline def setTouchesVarargs(value: NativeTouchEvent*): Self = StObject.set(x, "touches", js.Array(value :_*))
+    inline def setTouchesVarargs(value: NativeTouchEvent*): Self = StObject.set(x, "touches", js.Array(value*))
   }
 }

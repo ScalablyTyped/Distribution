@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait browserInfoOptions extends StObject {
   
-  var culture: js.Any
+  var culture: Any
   
   var isMSPointerEnabled: Boolean
   
@@ -16,14 +16,14 @@ trait browserInfoOptions extends StObject {
 }
 object browserInfoOptions {
   
-  inline def apply(culture: js.Any, isMSPointerEnabled: Boolean, name: String, version: String): browserInfoOptions = {
+  inline def apply(culture: Any, isMSPointerEnabled: Boolean, name: String, version: String): browserInfoOptions = {
     val __obj = js.Dynamic.literal(culture = culture.asInstanceOf[js.Any], isMSPointerEnabled = isMSPointerEnabled.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[browserInfoOptions]
   }
   
   extension [Self <: browserInfoOptions](x: Self) {
     
-    inline def setCulture(value: js.Any): Self = StObject.set(x, "culture", value.asInstanceOf[js.Any])
+    inline def setCulture(value: Any): Self = StObject.set(x, "culture", value.asInstanceOf[js.Any])
     
     inline def setIsMSPointerEnabled(value: Boolean): Self = StObject.set(x, "isMSPointerEnabled", value.asInstanceOf[js.Any])
     

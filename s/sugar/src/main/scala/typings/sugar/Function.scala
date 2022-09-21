@@ -14,11 +14,11 @@ trait Function extends StObject {
   def debounce(): Function = js.native
   def debounce(ms: Double): Function = js.native
   
-  def delay(ms: Double, args: js.Any*): Function = js.native
-  def delay(ms: Unit, args: js.Any*): Function = js.native
+  def delay(ms: Double, args: Any*): Function = js.native
+  def delay(ms: Unit, args: Any*): Function = js.native
   
-  def every(ms: Double, args: js.Any*): Function = js.native
-  def every(ms: Unit, args: js.Any*): Function = js.native
+  def every(ms: Double, args: Any*): Function = js.native
+  def every(ms: Unit, args: Any*): Function = js.native
   
   def `lazy`(): Function = js.native
   def `lazy`(ms: Double): Function = js.native
@@ -41,7 +41,7 @@ trait Function extends StObject {
   
   def once(): Function = js.native
   
-  def partial(args: js.Any*): Function = js.native
+  def partial(args: Any*): Function = js.native
   
   def throttle(): Function = js.native
   def throttle(ms: Double): Function = js.native

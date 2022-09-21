@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("blessed", "Widgets.ScrollableTextElement")
 @js.native
-class ScrollableTextElement protected () extends ScrollableBoxElement {
+open class ScrollableTextElement protected () extends ScrollableBoxElement {
   def this(opts: ElementOptions) = this()
 }

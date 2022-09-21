@@ -9,13 +9,13 @@ multicast DNS service discovery
 | ------------------ | :-------------: |
 | Full name          | mdns |
 | Keywords           | zeroconf, bonjour, dns_sd, mDNSResponder |
-| # releases         | 3 |
-| # dependents       | 130 |
-| # downloads        | 102707 |
-| # stars            | 14 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 14691.333333333334 |
+| # stars            | 838.0 |
 
 ## Links
-- [Homepage](http://agnat.github.com/node_mdns)
+- [Homepage](https://github.com/agnat/node_mdns#readme)
 - [Bugs](http://github.com/agnat/node_mdns/issues)
 - [Repository](https://github.com/agnat/node_mdns)
 - [Npm](https://www.npmjs.com/package/mdns)

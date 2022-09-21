@@ -1,27 +1,22 @@
 package typings.reactRouterGuard
 
 import typings.history.mod.History
-import typings.history.mod.LocationState
 import typings.react.mod.Component
 import typings.react.mod.ComponentType
+import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.LazyExoticComponent
-import typings.react.mod.PropsWithoutRef
 import typings.react.mod.ReactElement
 import typings.react.mod.RefAttributes
-import typings.reactRouter.mod.RedirectProps
-import typings.reactRouter.mod.RouteProps
-import typings.reactRouter.mod.RouterProps
-import typings.reactRouter.mod.SwitchProps
-import typings.reactRouterDom.anon.ReadonlyRouterProps
-import typings.reactRouterDom.anon.ReadonlySwitchProps
+import typings.react.mod.global.JSX.Element
+import typings.reactRouter.componentsMod.IndexRouteProps
+import typings.reactRouter.componentsMod.LayoutRouteProps
+import typings.reactRouter.componentsMod.PathRouteProps
+import typings.reactRouter.componentsMod.RouterProps
 import typings.reactRouterDom.mod.BrowserRouterProps
+import typings.reactRouterDom.mod.LinkProps
 import typings.reactRouterDom.mod.NavLinkProps
 import typings.reactRouterGuard.anon.Default
-import typings.reactRouterGuard.anon.ReadonlyBrowserRouterProp
-import typings.reactRouterGuard.anon.ReadonlyRedirectProps
 import typings.std.HTMLAnchorElement
-import typings.std.Parameters
-import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,102 +27,44 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("react-router-guard", "BrowserRouter")
+  inline def BrowserRouter(hasBasenameChildrenWindow: BrowserRouterProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("BrowserRouter")(hasBasenameChildrenWindow.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
+  @JSImport("react-router-guard", "Link")
   @js.native
-  class BrowserRouter protected ()
-    extends typings.reactRouterDom.mod.BrowserRouter {
-    def this(props: BrowserRouterProps) = this()
-    def this(props: ReadonlyBrowserRouterProp) = this()
-    /**
-      * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
-      */
-    def this(props: BrowserRouterProps, context: js.Any) = this()
-  }
+  val Link: ForwardRefExoticComponent[LinkProps & RefAttributes[HTMLAnchorElement]] = js.native
   
-  inline def Link[S](
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param params because its type Parameters<Link<S>> is not an array type */ params: Parameters[typings.reactRouterDom.mod.Link[S]]
-  ): ReturnType[typings.reactRouterDom.mod.Link[S]] = ^.asInstanceOf[js.Dynamic].applyDynamic("Link")(params.asInstanceOf[js.Any]).asInstanceOf[ReturnType[typings.reactRouterDom.mod.Link[S]]]
-  
-  inline def NavLink[S](
-    // TODO: Define this as ...params: Parameters<NavLink<S>> when only TypeScript >= 3.1 support is needed.
-  props: PropsWithoutRef[NavLinkProps[S]] & RefAttributes[HTMLAnchorElement]
-  ): ReturnType[typings.reactRouterDom.mod.NavLink[S]] = ^.asInstanceOf[js.Dynamic].applyDynamic("NavLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReturnType[typings.reactRouterDom.mod.NavLink[S]]]
-  
-  @JSImport("react-router-guard", "Redirect")
+  @JSImport("react-router-guard", "NavLink")
   @js.native
-  class Redirect protected ()
-    extends typings.reactRouter.mod.Redirect {
-    def this(props: RedirectProps) = this()
-    def this(props: ReadonlyRedirectProps) = this()
-    /**
-      * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
-      */
-    def this(props: RedirectProps, context: js.Any) = this()
-  }
+  val NavLink: ForwardRefExoticComponent[NavLinkProps & RefAttributes[HTMLAnchorElement]] = js.native
   
-  @JSImport("react-router-guard", "Route")
-  @js.native
-  class Route[T /* <: RouteProps */] protected ()
-    extends typings.reactRouterDom.mod.Route[T] {
-    def this(props: T) = this()
-    /**
-      * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
-      */
-    def this(props: T, context: js.Any) = this()
-  }
+  inline def Route(_props: IndexRouteProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Route")(_props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  inline def Route(_props: LayoutRouteProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Route")(_props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  inline def Route(_props: PathRouteProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Route")(_props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
-  @JSImport("react-router-guard", "Router")
-  @js.native
-  class Router protected ()
-    extends typings.reactRouterDom.mod.Router {
-    def this(props: RouterProps) = this()
-    def this(props: ReadonlyRouterProps) = this()
-    /**
-      * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
-      */
-    def this(props: RouterProps, context: js.Any) = this()
-  }
+  inline def Router(hasBasenamePropChildrenLocationPropNavigationTypeNavigatorStaticProp: RouterProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Router")(hasBasenamePropChildrenLocationPropNavigationTypeNavigatorStaticProp.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
   @JSImport("react-router-guard", "RouterGuard")
   @js.native
-  class RouterGuard[T] protected ()
-    extends Component[RouterGuardProps, js.Any, js.Any] {
+  open class RouterGuard[T] protected () extends Component[RouterGuardProps, Any, Any] {
     def this(props: RouterGuardProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: RouterGuardProps, context: js.Any) = this()
-  }
-  
-  @JSImport("react-router-guard", "Switch")
-  @js.native
-  class Switch protected ()
-    extends typings.reactRouterDom.mod.Switch {
-    def this(props: SwitchProps) = this()
-    def this(props: ReadonlySwitchProps) = this()
-    /**
-      * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
-      */
-    def this(props: SwitchProps, context: js.Any) = this()
+    def this(props: RouterGuardProps, context: Any) = this()
   }
   
   @JSImport("react-router-guard", "history")
   @js.native
-  val history: History[LocationState] = js.native
+  val history: History = js.native
   
-  inline def `lazy`[T /* <: ComponentType[js.Any] */](factory: js.Function0[js.Promise[Default[T]]]): LazyExoticComponent[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("lazy")(factory.asInstanceOf[js.Any]).asInstanceOf[LazyExoticComponent[T]]
+  inline def `lazy`[T /* <: ComponentType[Any] */](factory: js.Function0[js.Promise[Default[T]]]): LazyExoticComponent[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("lazy")(factory.asInstanceOf[js.Any]).asInstanceOf[LazyExoticComponent[T]]
   
   trait RouterGuardConfigProps extends StObject {
     
-    var canActivate: js.UndefOr[js.Array[js.Function0[js.Promise[js.Any]]]] = js.undefined
+    var canActivate: js.UndefOr[js.Array[js.Function0[js.Promise[Any]]]] = js.undefined
     
-    var component: LazyExoticComponent[js.Any]
+    var component: LazyExoticComponent[Any]
     
     var exact: js.UndefOr[Boolean] = js.undefined
     
@@ -139,20 +76,20 @@ object mod {
   }
   object RouterGuardConfigProps {
     
-    inline def apply(component: LazyExoticComponent[js.Any], path: String): RouterGuardConfigProps = {
+    inline def apply(component: LazyExoticComponent[Any], path: String): RouterGuardConfigProps = {
       val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[RouterGuardConfigProps]
     }
     
     extension [Self <: RouterGuardConfigProps](x: Self) {
       
-      inline def setCanActivate(value: js.Array[js.Function0[js.Promise[js.Any]]]): Self = StObject.set(x, "canActivate", value.asInstanceOf[js.Any])
+      inline def setCanActivate(value: js.Array[js.Function0[js.Promise[Any]]]): Self = StObject.set(x, "canActivate", value.asInstanceOf[js.Any])
       
       inline def setCanActivateUndefined: Self = StObject.set(x, "canActivate", js.undefined)
       
-      inline def setCanActivateVarargs(value: js.Function0[js.Promise[js.Any]]*): Self = StObject.set(x, "canActivate", js.Array(value :_*))
+      inline def setCanActivateVarargs(value: js.Function0[js.Promise[Any]]*): Self = StObject.set(x, "canActivate", js.Array(value*))
       
-      inline def setComponent(value: LazyExoticComponent[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: LazyExoticComponent[Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       inline def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
       
@@ -168,7 +105,7 @@ object mod {
       
       inline def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
       
-      inline def setRoutesVarargs(value: RouterGuardConfigProps*): Self = StObject.set(x, "routes", js.Array(value :_*))
+      inline def setRoutesVarargs(value: RouterGuardConfigProps*): Self = StObject.set(x, "routes", js.Array(value*))
     }
   }
   
@@ -176,7 +113,7 @@ object mod {
     
     var config: js.Array[RouterGuardConfigProps]
     
-    var history: js.UndefOr[History[LocationState]] = js.undefined
+    var history: js.UndefOr[History] = js.undefined
     
     var loading: js.UndefOr[Boolean | ReactElement] = js.undefined
   }
@@ -191,9 +128,9 @@ object mod {
       
       inline def setConfig(value: js.Array[RouterGuardConfigProps]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      inline def setConfigVarargs(value: RouterGuardConfigProps*): Self = StObject.set(x, "config", js.Array(value :_*))
+      inline def setConfigVarargs(value: RouterGuardConfigProps*): Self = StObject.set(x, "config", js.Array(value*))
       
-      inline def setHistory(value: History[LocationState]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      inline def setHistory(value: History): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
       inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
       

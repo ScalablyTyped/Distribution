@@ -1,24 +1,40 @@
 package typings.devextreme.anon
 
-import typings.devextreme.devextremeStrings.hide
-import typings.devextreme.devextremeStrings.none
-import typings.devextreme.mod.DevExpress.ui.format
+import typings.devextreme.mod.DevExpress.common.charts.LabelOverlap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait OverlappingBehavior extends StObject {
   
+  /**
+    * Specifies a callback function that returns the text to be displayed in scale labels.
+    */
   var customizeText: js.UndefOr[js.Function1[/* scaleValue */ ValueValueText, String]] = js.undefined
   
+  /**
+    * Specifies font properties for the text displayed in the range selector&apos;s scale labels.
+    */
   var font: js.UndefOr[typings.devextreme.mod.DevExpress.viz.Font] = js.undefined
   
-  var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.undefined
+  /**
+    * Formats a value before it is displayed in a scale label.
+    */
+  var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.Format] = js.undefined
   
-  var overlappingBehavior: js.UndefOr[hide | none] = js.undefined
+  /**
+    * Decides how to arrange scale labels when there is not enough space to keep all of them.
+    */
+  var overlappingBehavior: js.UndefOr[LabelOverlap] = js.undefined
   
+  /**
+    * Specifies a spacing between scale labels and the background bottom edge.
+    */
   var topIndent: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies whether or not the scale&apos;s labels are visible.
+    */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
 object OverlappingBehavior {
@@ -38,13 +54,13 @@ object OverlappingBehavior {
     
     inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
-    inline def setFormat(value: format): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: typings.devextreme.mod.DevExpress.ui.Format): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    inline def setFormatFunction1(value: /* value */ Double | typings.std.Date => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
+    inline def setFormatFunction1(value: js.Date | Double => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    inline def setOverlappingBehavior(value: hide | none): Self = StObject.set(x, "overlappingBehavior", value.asInstanceOf[js.Any])
+    inline def setOverlappingBehavior(value: LabelOverlap): Self = StObject.set(x, "overlappingBehavior", value.asInstanceOf[js.Any])
     
     inline def setOverlappingBehaviorUndefined: Self = StObject.set(x, "overlappingBehavior", js.undefined)
     

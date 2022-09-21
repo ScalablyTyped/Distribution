@@ -12,7 +12,7 @@ trait NodeStatic extends StObject {
   
   def createWithConfig(config: YogaConfig): YogaNode
   
-  def destroy(node: YogaNode): js.Any
+  def destroy(node: YogaNode): Any
 }
 object NodeStatic {
   
@@ -20,7 +20,7 @@ object NodeStatic {
     create: () => YogaNode,
     createDefault: () => YogaNode,
     createWithConfig: YogaConfig => YogaNode,
-    destroy: YogaNode => js.Any
+    destroy: YogaNode => Any
   ): NodeStatic = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction0(create), createDefault = js.Any.fromFunction0(createDefault), createWithConfig = js.Any.fromFunction1(createWithConfig), destroy = js.Any.fromFunction1(destroy))
     __obj.asInstanceOf[NodeStatic]
@@ -34,6 +34,6 @@ object NodeStatic {
     
     inline def setCreateWithConfig(value: YogaConfig => YogaNode): Self = StObject.set(x, "createWithConfig", js.Any.fromFunction1(value))
     
-    inline def setDestroy(value: YogaNode => js.Any): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
+    inline def setDestroy(value: YogaNode => Any): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
   }
 }

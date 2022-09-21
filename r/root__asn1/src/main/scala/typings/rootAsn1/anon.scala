@@ -2,7 +2,6 @@ package typings.rootAsn1
 
 import typings.rootAsn1.rootAsn1Booleans.`false`
 import typings.rootAsn1.rootAsn1Booleans.`true`
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +27,7 @@ object anon {
   
   trait Der extends StObject {
     
-    var der: Uint8Array
+    var der: js.typedarray.Uint8Array
     
     var json: js.UndefOr[`true`] = js.undefined
     
@@ -36,14 +35,14 @@ object anon {
   }
   object Der {
     
-    inline def apply(der: Uint8Array): Der = {
+    inline def apply(der: js.typedarray.Uint8Array): Der = {
       val __obj = js.Dynamic.literal(der = der.asInstanceOf[js.Any])
       __obj.asInstanceOf[Der]
     }
     
     extension [Self <: Der](x: Self) {
       
-      inline def setDer(value: Uint8Array): Self = StObject.set(x, "der", value.asInstanceOf[js.Any])
+      inline def setDer(value: js.typedarray.Uint8Array): Self = StObject.set(x, "der", value.asInstanceOf[js.Any])
       
       inline def setJson(value: `true`): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
@@ -57,7 +56,7 @@ object anon {
   
   trait DerJson extends StObject {
     
-    var der: Uint8Array
+    var der: js.typedarray.Uint8Array
     
     var json: js.UndefOr[`true`] = js.undefined
     
@@ -65,14 +64,14 @@ object anon {
   }
   object DerJson {
     
-    inline def apply(der: Uint8Array): DerJson = {
+    inline def apply(der: js.typedarray.Uint8Array): DerJson = {
       val __obj = js.Dynamic.literal(der = der.asInstanceOf[js.Any], verbose = true)
       __obj.asInstanceOf[DerJson]
     }
     
     extension [Self <: DerJson](x: Self) {
       
-      inline def setDer(value: Uint8Array): Self = StObject.set(x, "der", value.asInstanceOf[js.Any])
+      inline def setDer(value: js.typedarray.Uint8Array): Self = StObject.set(x, "der", value.asInstanceOf[js.Any])
       
       inline def setJson(value: `true`): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
@@ -103,7 +102,7 @@ object anon {
   
   trait JsonVerbose extends StObject {
     
-    var der: Uint8Array
+    var der: js.typedarray.Uint8Array
     
     var json: `false`
     
@@ -111,14 +110,14 @@ object anon {
   }
   object JsonVerbose {
     
-    inline def apply(der: Uint8Array): JsonVerbose = {
+    inline def apply(der: js.typedarray.Uint8Array): JsonVerbose = {
       val __obj = js.Dynamic.literal(der = der.asInstanceOf[js.Any], json = false, verbose = true)
       __obj.asInstanceOf[JsonVerbose]
     }
     
     extension [Self <: JsonVerbose](x: Self) {
       
-      inline def setDer(value: Uint8Array): Self = StObject.set(x, "der", value.asInstanceOf[js.Any])
+      inline def setDer(value: js.typedarray.Uint8Array): Self = StObject.set(x, "der", value.asInstanceOf[js.Any])
       
       inline def setJson(value: `false`): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
@@ -128,7 +127,7 @@ object anon {
   
   trait Verbose extends StObject {
     
-    var der: Uint8Array
+    var der: js.typedarray.Uint8Array
     
     var json: `false`
     
@@ -136,14 +135,14 @@ object anon {
   }
   object Verbose {
     
-    inline def apply(der: Uint8Array): Verbose = {
+    inline def apply(der: js.typedarray.Uint8Array): Verbose = {
       val __obj = js.Dynamic.literal(der = der.asInstanceOf[js.Any], json = false)
       __obj.asInstanceOf[Verbose]
     }
     
     extension [Self <: Verbose](x: Self) {
       
-      inline def setDer(value: Uint8Array): Self = StObject.set(x, "der", value.asInstanceOf[js.Any])
+      inline def setDer(value: js.typedarray.Uint8Array): Self = StObject.set(x, "der", value.asInstanceOf[js.Any])
       
       inline def setJson(value: `false`): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       

@@ -1,5341 +1,1019 @@
 package typings.inversifyLoggerMiddleware
 
-import typings.chalk.anon.ChalksupportsColorColorSu
-import typings.chalk.mod.Chalk
-import typings.chalk.mod.ColorSupport
-import typings.chalk.mod.Level
-import typings.inversifyLoggerMiddleware.inversifyLoggerMiddlewareBooleans.`false`
-import typings.std.TemplateStringsArray
+import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.Shortcut
+import typings.chalk.mod.ChalkInstance
+import typings.chalk.mod.Options
+import typings.chalk.supportsColorMod.ColorInfo
+import typings.chalk.supportsColorMod.ColorSupport
+import typings.chalk.supportsColorMod.ColorSupportLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("inversify-logger-middleware/dts/serializers/text/colors", JSImport.Namespace)
-@js.native
-object colorsMod extends js.Object {
+object colorsMod {
   
-  @js.native
-  object Chalk extends js.Object {
-    
-    def apply(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def apply(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    var BackgroundColor: typings.chalk.mod.BackgroundColor = js.native
-    
-    var Color: typings.chalk.mod.Color = js.native
-    
-    var ForegroundColor: typings.chalk.mod.ForegroundColor = js.native
-    
-    /**
-    		Return a new Chalk instance.
-    		*/
-    var Instance: typings.chalk.mod.Instance = js.native
-    
-    var Level: typings.chalk.mod.Level = js.native
-    
-    var Modifiers: typings.chalk.mod.Modifiers = js.native
-    
-    /**
-    		Use a [Select/Set Graphic Rendition](https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_parameters) (SGR) [color code number](https://en.wikipedia.org/wiki/ANSI_escape_code#3/4_bit) to set text color.
-    		30 <= code && code < 38 || 90 <= code && code < 98
-    		For example, 31 for red, 91 for redBright.
-    		*/
-    def ansi(code: Double): typings.chalk.mod.Chalk = js.native
-    
-    /**
-    		Use a [8-bit unsigned number](https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit) to set text color.
-    		*/
-    def ansi256(index: Double): typings.chalk.mod.Chalk = js.native
-    
-    /**
-    		Use a [Select/Set Graphic Rendition](https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_parameters) (SGR) [color code number](https://en.wikipedia.org/wiki/ANSI_escape_code#3/4_bit) to set background color.
-    		30 <= code && code < 38 || 90 <= code && code < 98
-    		For example, 31 for red, 91 for redBright.
-    		Use the foreground code, not the background code (for example, not 41, nor 101).
-    		*/
-    def bgAnsi(code: Double): typings.chalk.mod.Chalk = js.native
-    
-    /**
-    		Use a [8-bit unsigned number](https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit) to set background color.
-    		*/
-    def bgAnsi256(index: Double): typings.chalk.mod.Chalk = js.native
-    
-    def bgBlack(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgBlack(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def bgBlackBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgBlackBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("bgBlackBright")
-    val bgBlackBright_Original: typings.chalk.mod.Chalk = js.native
-    
-    @JSName("bgBlack")
-    val bgBlack_Original: typings.chalk.mod.Chalk = js.native
-    
-    def bgBlue(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgBlue(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def bgBlueBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgBlueBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("bgBlueBright")
-    val bgBlueBright_Original: typings.chalk.mod.Chalk = js.native
-    
-    @JSName("bgBlue")
-    val bgBlue_Original: typings.chalk.mod.Chalk = js.native
-    
-    def bgCyan(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgCyan(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def bgCyanBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgCyanBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("bgCyanBright")
-    val bgCyanBright_Original: typings.chalk.mod.Chalk = js.native
-    
-    @JSName("bgCyan")
-    val bgCyan_Original: typings.chalk.mod.Chalk = js.native
-    
-    /*
-    		Alias for `bgBlackBright`.
-    		*/
-    def bgGray(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /*
-    		Alias for `bgBlackBright`.
-    		*/
-    def bgGray(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /*
-    		Alias for `bgBlackBright`.
-    		*/
-    @JSName("bgGray")
-    val bgGray_Original: typings.chalk.mod.Chalk = js.native
-    
-    def bgGreen(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgGreen(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def bgGreenBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgGreenBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("bgGreenBright")
-    val bgGreenBright_Original: typings.chalk.mod.Chalk = js.native
-    
-    @JSName("bgGreen")
-    val bgGreen_Original: typings.chalk.mod.Chalk = js.native
-    
-    /*
-    		Alias for `bgBlackBright`.
-    		*/
-    def bgGrey(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /*
-    		Alias for `bgBlackBright`.
-    		*/
-    def bgGrey(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /*
-    		Alias for `bgBlackBright`.
-    		*/
-    @JSName("bgGrey")
-    val bgGrey_Original: typings.chalk.mod.Chalk = js.native
-    
-    /**
-    		Use HEX value to set background color.
-    		@param color - Hexadecimal value representing the desired color.
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		chalk.bgHex('#DEADED');
-    		```
-    		*/
-    def bgHex(color: String): typings.chalk.mod.Chalk = js.native
-    
-    /**
-    		Use HSL values to set background color.
-    		*/
-    def bgHsl(hue: Double, saturation: Double, lightness: Double): typings.chalk.mod.Chalk = js.native
-    
-    /**
-    		Use HSV values to set background color.
-    		*/
-    def bgHsv(hue: Double, saturation: Double, value: Double): typings.chalk.mod.Chalk = js.native
-    
-    /**
-    		Use HWB values to set background color.
-    		*/
-    def bgHwb(hue: Double, whiteness: Double, blackness: Double): typings.chalk.mod.Chalk = js.native
-    
-    /**
-    		Use keyword color value to set background color.
-    		@param color - Keyword value representing the desired color.
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		chalk.bgKeyword('orange');
-    		```
-    		*/
-    def bgKeyword(color: String): typings.chalk.mod.Chalk = js.native
-    
-    def bgMagenta(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgMagenta(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def bgMagentaBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgMagentaBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("bgMagentaBright")
-    val bgMagentaBright_Original: typings.chalk.mod.Chalk = js.native
-    
-    @JSName("bgMagenta")
-    val bgMagenta_Original: typings.chalk.mod.Chalk = js.native
-    
-    def bgRed(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgRed(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def bgRedBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgRedBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("bgRedBright")
-    val bgRedBright_Original: typings.chalk.mod.Chalk = js.native
-    
-    @JSName("bgRed")
-    val bgRed_Original: typings.chalk.mod.Chalk = js.native
-    
-    /**
-    		Use RGB values to set background color.
-    		*/
-    def bgRgb(red: Double, green: Double, blue: Double): typings.chalk.mod.Chalk = js.native
-    
-    def bgWhite(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgWhite(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def bgWhiteBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgWhiteBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("bgWhiteBright")
-    val bgWhiteBright_Original: typings.chalk.mod.Chalk = js.native
-    
-    @JSName("bgWhite")
-    val bgWhite_Original: typings.chalk.mod.Chalk = js.native
-    
-    def bgYellow(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgYellow(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def bgYellowBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgYellowBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("bgYellowBright")
-    val bgYellowBright_Original: typings.chalk.mod.Chalk = js.native
-    
-    @JSName("bgYellow")
-    val bgYellow_Original: typings.chalk.mod.Chalk = js.native
-    
-    def black(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def black(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def blackBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def blackBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("blackBright")
-    val blackBright_Original: typings.chalk.mod.Chalk = js.native
-    
-    @JSName("black")
-    val black_Original: typings.chalk.mod.Chalk = js.native
-    
-    def blue(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def blue(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def blueBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def blueBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("blueBright")
-    val blueBright_Original: typings.chalk.mod.Chalk = js.native
-    
-    @JSName("blue")
-    val blue_Original: typings.chalk.mod.Chalk = js.native
-    
-    /**
-    		Modifier: Make text bold.
-    		*/
-    def bold(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /**
-    		Modifier: Make text bold.
-    		*/
-    def bold(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /**
-    		Modifier: Make text bold.
-    		*/
-    @JSName("bold")
-    val bold_Original: typings.chalk.mod.Chalk = js.native
-    
-    def cyan(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def cyan(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def cyanBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def cyanBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("cyanBright")
-    val cyanBright_Original: typings.chalk.mod.Chalk = js.native
-    
-    @JSName("cyan")
-    val cyan_Original: typings.chalk.mod.Chalk = js.native
-    
-    /**
-    		Modifier: Emitting only a small amount of light.
-    		*/
-    def dim(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /**
-    		Modifier: Emitting only a small amount of light.
-    		*/
-    def dim(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /**
-    		Modifier: Emitting only a small amount of light.
-    		*/
-    @JSName("dim")
-    val dim_Original: typings.chalk.mod.Chalk = js.native
-    
-    /*
-    		Alias for `blackBright`.
-    		*/
-    def gray(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /*
-    		Alias for `blackBright`.
-    		*/
-    def gray(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /*
-    		Alias for `blackBright`.
-    		*/
-    @JSName("gray")
-    val gray_Original: typings.chalk.mod.Chalk = js.native
-    
-    def green(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def green(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def greenBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def greenBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("greenBright")
-    val greenBright_Original: typings.chalk.mod.Chalk = js.native
-    
-    @JSName("green")
-    val green_Original: typings.chalk.mod.Chalk = js.native
-    
-    /*
-    		Alias for `blackBright`.
-    		*/
-    def grey(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /*
-    		Alias for `blackBright`.
-    		*/
-    def grey(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /*
-    		Alias for `blackBright`.
-    		*/
-    @JSName("grey")
-    val grey_Original: typings.chalk.mod.Chalk = js.native
-    
-    /**
-    		Use HEX value to set text color.
-    		@param color - Hexadecimal value representing the desired color.
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		chalk.hex('#DEADED');
-    		```
-    		*/
-    def hex(color: String): typings.chalk.mod.Chalk = js.native
-    
-    /**
-    		Modifier: Prints the text, but makes it invisible.
-    		*/
-    def hidden(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /**
-    		Modifier: Prints the text, but makes it invisible.
-    		*/
-    def hidden(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /**
-    		Modifier: Prints the text, but makes it invisible.
-    		*/
-    @JSName("hidden")
-    val hidden_Original: typings.chalk.mod.Chalk = js.native
-    
-    /**
-    		Use HSL values to set text color.
-    		*/
-    def hsl(hue: Double, saturation: Double, lightness: Double): typings.chalk.mod.Chalk = js.native
-    
-    /**
-    		Use HSV values to set text color.
-    		*/
-    def hsv(hue: Double, saturation: Double, value: Double): typings.chalk.mod.Chalk = js.native
-    
-    /**
-    		Use HWB values to set text color.
-    		*/
-    def hwb(hue: Double, whiteness: Double, blackness: Double): typings.chalk.mod.Chalk = js.native
-    
-    /**
-    		Modifier: Inverse background and foreground colors.
-    		*/
-    def inverse(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /**
-    		Modifier: Inverse background and foreground colors.
-    		*/
-    def inverse(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /**
-    		Modifier: Inverse background and foreground colors.
-    		*/
-    @JSName("inverse")
-    val inverse_Original: typings.chalk.mod.Chalk = js.native
-    
-    /**
-    		Modifier: Make text italic. (Not widely supported)
-    		*/
-    def italic(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /**
-    		Modifier: Make text italic. (Not widely supported)
-    		*/
-    def italic(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /**
-    		Modifier: Make text italic. (Not widely supported)
-    		*/
-    @JSName("italic")
-    val italic_Original: typings.chalk.mod.Chalk = js.native
-    
-    /**
-    		Use keyword color value to set text color.
-    		@param color - Keyword value representing the desired color.
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		chalk.keyword('orange');
-    		```
-    		*/
-    def keyword(color: String): typings.chalk.mod.Chalk = js.native
-    
-    /**
-    		The color support for Chalk.
-    		By default, color support is automatically detected based on the environment.
-    		Levels:
-    		- `0` - All colors disabled.
-    		- `1` - Basic 16 colors support.
-    		- `2` - ANSI 256 colors support.
-    		- `3` - Truecolor 16 million colors support.
-    		*/
-    var level: Level = js.native
-    
-    def magenta(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def magenta(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def magentaBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def magentaBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("magentaBright")
-    val magentaBright_Original: typings.chalk.mod.Chalk = js.native
-    
-    @JSName("magenta")
-    val magenta_Original: typings.chalk.mod.Chalk = js.native
-    
-    def red(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def red(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def redBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def redBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("redBright")
-    val redBright_Original: typings.chalk.mod.Chalk = js.native
-    
-    @JSName("red")
-    val red_Original: typings.chalk.mod.Chalk = js.native
-    
-    /**
-    		Modifier: Resets the current color chain.
-    		*/
-    def reset(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /**
-    		Modifier: Resets the current color chain.
-    		*/
-    def reset(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /**
-    		Modifier: Resets the current color chain.
-    		*/
-    @JSName("reset")
-    val reset_Original: typings.chalk.mod.Chalk = js.native
-    
-    /**
-    		Use RGB values to set text color.
-    		*/
-    def rgb(red: Double, green: Double, blue: Double): typings.chalk.mod.Chalk = js.native
-    
-    def stderr(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def stderr(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("stderr")
-    var stderr_Original: ChalksupportsColorColorSu = js.native
-    
-    /**
-    		Modifier: Puts a horizontal line through the center of the text. (Not widely supported)
-    		*/
-    def strikethrough(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /**
-    		Modifier: Puts a horizontal line through the center of the text. (Not widely supported)
-    		*/
-    def strikethrough(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /**
-    		Modifier: Puts a horizontal line through the center of the text. (Not widely supported)
-    		*/
-    @JSName("strikethrough")
-    val strikethrough_Original: typings.chalk.mod.Chalk = js.native
-    
-    var supportsColor: ColorSupport | `false` = js.native
-    
-    /**
-    		Modifier: Make text underline. (Not widely supported)
-    		*/
-    def underline(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /**
-    		Modifier: Make text underline. (Not widely supported)
-    		*/
-    def underline(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /**
-    		Modifier: Make text underline. (Not widely supported)
-    		*/
-    @JSName("underline")
-    val underline_Original: typings.chalk.mod.Chalk = js.native
-    
-    /**
-    		Modifier: Prints the text only when Chalk has a color support level > 0.
-    		Can be useful for things that are purely cosmetic.
-    		*/
-    def visible(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /**
-    		Modifier: Prints the text only when Chalk has a color support level > 0.
-    		Can be useful for things that are purely cosmetic.
-    		*/
-    def visible(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /**
-    		Modifier: Prints the text only when Chalk has a color support level > 0.
-    		Can be useful for things that are purely cosmetic.
-    		*/
-    @JSName("visible")
-    val visible_Original: typings.chalk.mod.Chalk = js.native
-    
-    def white(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def white(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def whiteBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def whiteBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("whiteBright")
-    val whiteBright_Original: typings.chalk.mod.Chalk = js.native
-    
-    @JSName("white")
-    val white_Original: typings.chalk.mod.Chalk = js.native
-    
-    def yellow(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def yellow(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def yellowBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def yellowBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("yellowBright")
-    val yellowBright_Original: typings.chalk.mod.Chalk = js.native
-    
-    @JSName("yellow")
-    val yellow_Original: typings.chalk.mod.Chalk = js.native
+  object Chalk extends Shortcut {
+    
+    /**
+    Main Chalk object that allows to chain styles together.
+    Call the last one as a method with a string argument.
+    Order doesn't matter, and later styles take precedent in case of a conflict.
+    This simply means that `chalk.red.yellow.green` is equivalent to `chalk.green`.
+    */
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "Chalk.default")
+    @js.native
+    val default: ChalkInstance = js.native
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "Chalk.Chalk")
+    @js.native
+    open class Chalk ()
+      extends typings.chalk.mod.Chalk {
+      def this(options: Options) = this()
+    }
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "Chalk.Chalk")
+    @js.native
+    val Chalk: Instantiable1[/* options */ js.UndefOr[Options], ChalkInstance] = js.native
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "Chalk.chalkStderr")
+    @js.native
+    val chalkStderr: ChalkInstance = js.native
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "Chalk.supportsColor")
+    @js.native
+    val supportsColor: ColorInfo = js.native
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "Chalk.supportsColorStderr")
+    @js.native
+    val supportsColorStderr: ColorInfo = js.native
+    
+    type _To = ChalkInstance
+    
+    /* This means you don't have to write `default`, but can instead just say `Chalk.foo` */
+    override def _to: ChalkInstance = default
   }
   
-  @js.native
-  object green extends js.Object {
+  /* Inlined chalk.chalk.Chalk & {  supportsColor :chalk.chalk.ColorSupport} */
+  object green {
     
-    def apply(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def apply(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+    inline def apply(text: Any*): String = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
-    		Return a new Chalk instance.
-    		*/
-    var Instance: typings.chalk.mod.Instance = js.native
+    	Use an [8-bit unsigned number](https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit) to set text color.
+    	@example
+    	```
+    	import chalk from 'chalk';
+    	chalk.ansi256(201);
+    	```
+    	*/
+    inline def ansi256(index: Double): this.type = ^.asInstanceOf[js.Dynamic].applyDynamic("ansi256")(index.asInstanceOf[js.Any]).asInstanceOf[this.type]
     
     /**
-    		Use a [Select/Set Graphic Rendition](https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_parameters) (SGR) [color code number](https://en.wikipedia.org/wiki/ANSI_escape_code#3/4_bit) to set text color.
-    		30 <= code && code < 38 || 90 <= code && code < 98
-    		For example, 31 for red, 91 for redBright.
-    		*/
-    def ansi(code: Double): Chalk = js.native
+    	Use a [8-bit unsigned number](https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit) to set background color.
+    	@example
+    	```
+    	import chalk from 'chalk';
+    	chalk.bgAnsi256(201);
+    	```
+    	*/
+    inline def bgAnsi256(index: Double): this.type = ^.asInstanceOf[js.Dynamic].applyDynamic("bgAnsi256")(index.asInstanceOf[js.Any]).asInstanceOf[this.type]
     
-    /**
-    		Use a [8-bit unsigned number](https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit) to set text color.
-    		*/
-    def ansi256(index: Double): Chalk = js.native
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.bgBlack")
+    @js.native
+    val bgBlack: this.type = js.native
     
-    /**
-    		Use a [Select/Set Graphic Rendition](https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_parameters) (SGR) [color code number](https://en.wikipedia.org/wiki/ANSI_escape_code#3/4_bit) to set background color.
-    		30 <= code && code < 38 || 90 <= code && code < 98
-    		For example, 31 for red, 91 for redBright.
-    		Use the foreground code, not the background code (for example, not 41, nor 101).
-    		*/
-    def bgAnsi(code: Double): Chalk = js.native
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.bgBlackBright")
+    @js.native
+    val bgBlackBright: this.type = js.native
     
-    /**
-    		Use a [8-bit unsigned number](https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit) to set background color.
-    		*/
-    def bgAnsi256(index: Double): Chalk = js.native
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.bgBlue")
+    @js.native
+    val bgBlue: this.type = js.native
     
-    def bgBlack(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgBlack(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.bgBlueBright")
+    @js.native
+    val bgBlueBright: this.type = js.native
     
-    def bgBlackBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgBlackBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("bgBlackBright")
-    val bgBlackBright_Original: Chalk = js.native
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.bgCyan")
+    @js.native
+    val bgCyan: this.type = js.native
     
-    @JSName("bgBlack")
-    val bgBlack_Original: Chalk = js.native
-    
-    def bgBlue(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgBlue(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def bgBlueBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgBlueBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("bgBlueBright")
-    val bgBlueBright_Original: Chalk = js.native
-    
-    @JSName("bgBlue")
-    val bgBlue_Original: Chalk = js.native
-    
-    def bgCyan(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgCyan(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def bgCyanBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgCyanBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("bgCyanBright")
-    val bgCyanBright_Original: Chalk = js.native
-    
-    @JSName("bgCyan")
-    val bgCyan_Original: Chalk = js.native
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.bgCyanBright")
+    @js.native
+    val bgCyanBright: this.type = js.native
     
     /*
-    		Alias for `bgBlackBright`.
-    		*/
-    def bgGray(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /*
-    		Alias for `bgBlackBright`.
-    		*/
-    def bgGray(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /*
-    		Alias for `bgBlackBright`.
-    		*/
-    @JSName("bgGray")
-    val bgGray_Original: Chalk = js.native
+    	Alias for `bgBlackBright`.
+    	*/
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.bgGray")
+    @js.native
+    val bgGray: this.type = js.native
     
-    def bgGreen(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgGreen(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.bgGreen")
+    @js.native
+    val bgGreen: this.type = js.native
     
-    def bgGreenBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgGreenBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("bgGreenBright")
-    val bgGreenBright_Original: Chalk = js.native
-    
-    @JSName("bgGreen")
-    val bgGreen_Original: Chalk = js.native
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.bgGreenBright")
+    @js.native
+    val bgGreenBright: this.type = js.native
     
     /*
-    		Alias for `bgBlackBright`.
-    		*/
-    def bgGrey(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /*
-    		Alias for `bgBlackBright`.
-    		*/
-    def bgGrey(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /*
-    		Alias for `bgBlackBright`.
-    		*/
-    @JSName("bgGrey")
-    val bgGrey_Original: Chalk = js.native
+    	Alias for `bgBlackBright`.
+    	*/
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.bgGrey")
+    @js.native
+    val bgGrey: this.type = js.native
     
     /**
-    		Use HEX value to set background color.
-    		@param color - Hexadecimal value representing the desired color.
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		chalk.bgHex('#DEADED');
-    		```
-    		*/
-    def bgHex(color: String): Chalk = js.native
+    	Use HEX value to set background color.
+    	@param color - Hexadecimal value representing the desired color.
+    	@example
+    	```
+    	import chalk from 'chalk';
+    	chalk.bgHex('#DEADED');
+    	```
+    	*/
+    inline def bgHex(color: String): this.type = ^.asInstanceOf[js.Dynamic].applyDynamic("bgHex")(color.asInstanceOf[js.Any]).asInstanceOf[this.type]
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.bgMagenta")
+    @js.native
+    val bgMagenta: this.type = js.native
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.bgMagentaBright")
+    @js.native
+    val bgMagentaBright: this.type = js.native
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.bgRed")
+    @js.native
+    val bgRed: this.type = js.native
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.bgRedBright")
+    @js.native
+    val bgRedBright: this.type = js.native
     
     /**
-    		Use HSL values to set background color.
-    		*/
-    def bgHsl(hue: Double, saturation: Double, lightness: Double): Chalk = js.native
+    	Use RGB values to set background color.
+    	@example
+    	```
+    	import chalk from 'chalk';
+    	chalk.bgRgb(222, 173, 237);
+    	```
+    	*/
+    inline def bgRgb(red: Double, green: Double, blue: Double): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("bgRgb")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any])).asInstanceOf[this.type]
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.bgWhite")
+    @js.native
+    val bgWhite: this.type = js.native
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.bgWhiteBright")
+    @js.native
+    val bgWhiteBright: this.type = js.native
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.bgYellow")
+    @js.native
+    val bgYellow: this.type = js.native
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.bgYellowBright")
+    @js.native
+    val bgYellowBright: this.type = js.native
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.black")
+    @js.native
+    val black: this.type = js.native
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.blackBright")
+    @js.native
+    val blackBright: this.type = js.native
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.blue")
+    @js.native
+    val blue: this.type = js.native
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.blueBright")
+    @js.native
+    val blueBright: this.type = js.native
     
     /**
-    		Use HSV values to set background color.
-    		*/
-    def bgHsv(hue: Double, saturation: Double, value: Double): Chalk = js.native
+    	Modifier: Make the text bold.
+    	*/
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.bold")
+    @js.native
+    val bold: this.type = js.native
+    
+    inline def constructor(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[Any]
+    inline def constructor(options: Options): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")(options.asInstanceOf[js.Any]).asInstanceOf[Any]
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.cyan")
+    @js.native
+    val cyan: this.type = js.native
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.cyanBright")
+    @js.native
+    val cyanBright: this.type = js.native
     
     /**
-    		Use HWB values to set background color.
-    		*/
-    def bgHwb(hue: Double, whiteness: Double, blackness: Double): Chalk = js.native
-    
-    /**
-    		Use keyword color value to set background color.
-    		@param color - Keyword value representing the desired color.
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		chalk.bgKeyword('orange');
-    		```
-    		*/
-    def bgKeyword(color: String): Chalk = js.native
-    
-    def bgMagenta(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgMagenta(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def bgMagentaBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgMagentaBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("bgMagentaBright")
-    val bgMagentaBright_Original: Chalk = js.native
-    
-    @JSName("bgMagenta")
-    val bgMagenta_Original: Chalk = js.native
-    
-    def bgRed(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgRed(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def bgRedBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgRedBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("bgRedBright")
-    val bgRedBright_Original: Chalk = js.native
-    
-    @JSName("bgRed")
-    val bgRed_Original: Chalk = js.native
-    
-    /**
-    		Use RGB values to set background color.
-    		*/
-    def bgRgb(red: Double, green: Double, blue: Double): Chalk = js.native
-    
-    def bgWhite(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgWhite(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def bgWhiteBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgWhiteBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("bgWhiteBright")
-    val bgWhiteBright_Original: Chalk = js.native
-    
-    @JSName("bgWhite")
-    val bgWhite_Original: Chalk = js.native
-    
-    def bgYellow(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgYellow(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def bgYellowBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgYellowBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("bgYellowBright")
-    val bgYellowBright_Original: Chalk = js.native
-    
-    @JSName("bgYellow")
-    val bgYellow_Original: Chalk = js.native
-    
-    def black(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def black(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def blackBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def blackBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("blackBright")
-    val blackBright_Original: Chalk = js.native
-    
-    @JSName("black")
-    val black_Original: Chalk = js.native
-    
-    def blue(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def blue(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def blueBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def blueBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("blueBright")
-    val blueBright_Original: Chalk = js.native
-    
-    @JSName("blue")
-    val blue_Original: Chalk = js.native
-    
-    /**
-    		Modifier: Make text bold.
-    		*/
-    def bold(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /**
-    		Modifier: Make text bold.
-    		*/
-    def bold(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /**
-    		Modifier: Make text bold.
-    		*/
-    @JSName("bold")
-    val bold_Original: Chalk = js.native
-    
-    def cyan(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def cyan(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def cyanBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def cyanBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("cyanBright")
-    val cyanBright_Original: Chalk = js.native
-    
-    @JSName("cyan")
-    val cyan_Original: Chalk = js.native
-    
-    /**
-    		Modifier: Emitting only a small amount of light.
-    		*/
-    def dim(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /**
-    		Modifier: Emitting only a small amount of light.
-    		*/
-    def dim(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /**
-    		Modifier: Emitting only a small amount of light.
-    		*/
-    @JSName("dim")
-    val dim_Original: Chalk = js.native
+    	Modifier: Make the text have lower opacity.
+    	*/
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.dim")
+    @js.native
+    val dim: this.type = js.native
     
     /*
-    		Alias for `blackBright`.
-    		*/
-    def gray(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /*
-    		Alias for `blackBright`.
-    		*/
-    def gray(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /*
-    		Alias for `blackBright`.
-    		*/
-    @JSName("gray")
-    val gray_Original: Chalk = js.native
+    	Alias for `blackBright`.
+    	*/
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.gray")
+    @js.native
+    val gray: this.type = js.native
     
-    def green(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def green(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.green")
+    @js.native
+    val green: this.type = js.native
     
-    def greenBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def greenBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("greenBright")
-    val greenBright_Original: Chalk = js.native
-    
-    @JSName("green")
-    val green_Original: Chalk = js.native
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.greenBright")
+    @js.native
+    val greenBright: this.type = js.native
     
     /*
-    		Alias for `blackBright`.
-    		*/
-    def grey(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /*
-    		Alias for `blackBright`.
-    		*/
-    def grey(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /*
-    		Alias for `blackBright`.
-    		*/
-    @JSName("grey")
-    val grey_Original: Chalk = js.native
+    	Alias for `blackBright`.
+    	*/
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.grey")
+    @js.native
+    val grey: this.type = js.native
     
     /**
-    		Use HEX value to set text color.
-    		@param color - Hexadecimal value representing the desired color.
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		chalk.hex('#DEADED');
-    		```
-    		*/
-    def hex(color: String): Chalk = js.native
+    	Use HEX value to set text color.
+    	@param color - Hexadecimal value representing the desired color.
+    	@example
+    	```
+    	import chalk from 'chalk';
+    	chalk.hex('#DEADED');
+    	```
+    	*/
+    inline def hex(color: String): this.type = ^.asInstanceOf[js.Dynamic].applyDynamic("hex")(color.asInstanceOf[js.Any]).asInstanceOf[this.type]
     
     /**
-    		Modifier: Prints the text, but makes it invisible.
-    		*/
-    def hidden(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /**
-    		Modifier: Prints the text, but makes it invisible.
-    		*/
-    def hidden(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /**
-    		Modifier: Prints the text, but makes it invisible.
-    		*/
-    @JSName("hidden")
-    val hidden_Original: Chalk = js.native
+    	Modifier: Print the text but make it invisible.
+    	*/
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.hidden")
+    @js.native
+    val hidden: this.type = js.native
     
     /**
-    		Use HSL values to set text color.
-    		*/
-    def hsl(hue: Double, saturation: Double, lightness: Double): Chalk = js.native
+    	Modifier: Invert background and foreground colors.
+    	*/
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.inverse")
+    @js.native
+    val inverse: this.type = js.native
     
     /**
-    		Use HSV values to set text color.
-    		*/
-    def hsv(hue: Double, saturation: Double, value: Double): Chalk = js.native
+    	Modifier: Make the text italic. *(Not widely supported)*
+    	*/
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.italic")
+    @js.native
+    val italic: this.type = js.native
     
     /**
-    		Use HWB values to set text color.
-    		*/
-    def hwb(hue: Double, whiteness: Double, blackness: Double): Chalk = js.native
+    	The color support for Chalk.
+    	By default, color support is automatically detected based on the environment.
+    	Levels:
+    	- `0` - All colors disabled.
+    	- `1` - Basic 16 colors support.
+    	- `2` - ANSI 256 colors support.
+    	- `3` - Truecolor 16 million colors support.
+    	*/
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.level")
+    @js.native
+    def level: ColorSupportLevel = js.native
+    inline def level_=(x: ColorSupportLevel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("level")(x.asInstanceOf[js.Any])
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.magenta")
+    @js.native
+    val magenta: this.type = js.native
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.magentaBright")
+    @js.native
+    val magentaBright: this.type = js.native
     
     /**
-    		Modifier: Inverse background and foreground colors.
-    		*/
-    def inverse(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /**
-    		Modifier: Inverse background and foreground colors.
-    		*/
-    def inverse(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /**
-    		Modifier: Inverse background and foreground colors.
-    		*/
-    @JSName("inverse")
-    val inverse_Original: Chalk = js.native
+    	Modifier: Put a horizontal line above the text. *(Not widely supported)*
+    	*/
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.overline")
+    @js.native
+    val overline: this.type = js.native
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.red")
+    @js.native
+    val red: this.type = js.native
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.redBright")
+    @js.native
+    val redBright: this.type = js.native
     
     /**
-    		Modifier: Make text italic. (Not widely supported)
-    		*/
-    def italic(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /**
-    		Modifier: Make text italic. (Not widely supported)
-    		*/
-    def italic(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /**
-    		Modifier: Make text italic. (Not widely supported)
-    		*/
-    @JSName("italic")
-    val italic_Original: Chalk = js.native
+    	Modifier: Reset the current style.
+    	*/
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.reset")
+    @js.native
+    val reset: this.type = js.native
     
     /**
-    		Use keyword color value to set text color.
-    		@param color - Keyword value representing the desired color.
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		chalk.keyword('orange');
-    		```
-    		*/
-    def keyword(color: String): Chalk = js.native
+    	Use RGB values to set text color.
+    	@example
+    	```
+    	import chalk from 'chalk';
+    	chalk.rgb(222, 173, 237);
+    	```
+    	*/
+    inline def rgb(red: Double, green: Double, blue: Double): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("rgb")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any])).asInstanceOf[this.type]
     
     /**
-    		The color support for Chalk.
-    		By default, color support is automatically detected based on the environment.
-    		Levels:
-    		- `0` - All colors disabled.
-    		- `1` - Basic 16 colors support.
-    		- `2` - ANSI 256 colors support.
-    		- `3` - Truecolor 16 million colors support.
-    		*/
-    var level: Level = js.native
+    	Modifier: Puts a horizontal line through the center of the text. *(Not widely supported)*
+    	*/
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.strikethrough")
+    @js.native
+    val strikethrough: this.type = js.native
     
-    def magenta(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def magenta(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def magentaBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def magentaBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("magentaBright")
-    val magentaBright_Original: Chalk = js.native
-    
-    @JSName("magenta")
-    val magenta_Original: Chalk = js.native
-    
-    def red(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def red(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def redBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def redBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("redBright")
-    val redBright_Original: Chalk = js.native
-    
-    @JSName("red")
-    val red_Original: Chalk = js.native
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.supportsColor")
+    @js.native
+    def supportsColor: ColorSupport = js.native
+    inline def supportsColor_=(x: ColorSupport): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportsColor")(x.asInstanceOf[js.Any])
     
     /**
-    		Modifier: Resets the current color chain.
-    		*/
-    def reset(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /**
-    		Modifier: Resets the current color chain.
-    		*/
-    def reset(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /**
-    		Modifier: Resets the current color chain.
-    		*/
-    @JSName("reset")
-    val reset_Original: Chalk = js.native
+    	Modifier: Put a horizontal line below the text. *(Not widely supported)*
+    	*/
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.underline")
+    @js.native
+    val underline: this.type = js.native
     
     /**
-    		Use RGB values to set text color.
-    		*/
-    def rgb(red: Double, green: Double, blue: Double): Chalk = js.native
+    	Modifier: Print the text only when Chalk has a color level above zero.
+    	Can be useful for things that are purely cosmetic.
+    	*/
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.visible")
+    @js.native
+    val visible: this.type = js.native
     
-    /**
-    		Modifier: Puts a horizontal line through the center of the text. (Not widely supported)
-    		*/
-    def strikethrough(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /**
-    		Modifier: Puts a horizontal line through the center of the text. (Not widely supported)
-    		*/
-    def strikethrough(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /**
-    		Modifier: Puts a horizontal line through the center of the text. (Not widely supported)
-    		*/
-    @JSName("strikethrough")
-    val strikethrough_Original: Chalk = js.native
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.white")
+    @js.native
+    val white: this.type = js.native
     
-    var supportsColor: ColorSupport = js.native
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.whiteBright")
+    @js.native
+    val whiteBright: this.type = js.native
     
-    /**
-    		Modifier: Make text underline. (Not widely supported)
-    		*/
-    def underline(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /**
-    		Modifier: Make text underline. (Not widely supported)
-    		*/
-    def underline(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /**
-    		Modifier: Make text underline. (Not widely supported)
-    		*/
-    @JSName("underline")
-    val underline_Original: Chalk = js.native
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.yellow")
+    @js.native
+    val yellow: this.type = js.native
     
-    /**
-    		Modifier: Prints the text only when Chalk has a color support level > 0.
-    		Can be useful for things that are purely cosmetic.
-    		*/
-    def visible(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /**
-    		Modifier: Prints the text only when Chalk has a color support level > 0.
-    		Can be useful for things that are purely cosmetic.
-    		*/
-    def visible(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /**
-    		Modifier: Prints the text only when Chalk has a color support level > 0.
-    		Can be useful for things that are purely cosmetic.
-    		*/
-    @JSName("visible")
-    val visible_Original: Chalk = js.native
-    
-    def white(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def white(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def whiteBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def whiteBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("whiteBright")
-    val whiteBright_Original: Chalk = js.native
-    
-    @JSName("white")
-    val white_Original: Chalk = js.native
-    
-    def yellow(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def yellow(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def yellowBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def yellowBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("yellowBright")
-    val yellowBright_Original: Chalk = js.native
-    
-    @JSName("yellow")
-    val yellow_Original: Chalk = js.native
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "green.yellowBright")
+    @js.native
+    val yellowBright: this.type = js.native
   }
   
-  @js.native
-  object red extends js.Object {
+  /* Inlined chalk.chalk.Chalk & {  supportsColor :chalk.chalk.ColorSupport} */
+  object red {
     
-    def apply(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def apply(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+    inline def apply(text: Any*): String = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
-    		Return a new Chalk instance.
-    		*/
-    var Instance: typings.chalk.mod.Instance = js.native
+    	Use an [8-bit unsigned number](https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit) to set text color.
+    	@example
+    	```
+    	import chalk from 'chalk';
+    	chalk.ansi256(201);
+    	```
+    	*/
+    inline def ansi256(index: Double): this.type = ^.asInstanceOf[js.Dynamic].applyDynamic("ansi256")(index.asInstanceOf[js.Any]).asInstanceOf[this.type]
     
     /**
-    		Use a [Select/Set Graphic Rendition](https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_parameters) (SGR) [color code number](https://en.wikipedia.org/wiki/ANSI_escape_code#3/4_bit) to set text color.
-    		30 <= code && code < 38 || 90 <= code && code < 98
-    		For example, 31 for red, 91 for redBright.
-    		*/
-    def ansi(code: Double): Chalk = js.native
+    	Use a [8-bit unsigned number](https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit) to set background color.
+    	@example
+    	```
+    	import chalk from 'chalk';
+    	chalk.bgAnsi256(201);
+    	```
+    	*/
+    inline def bgAnsi256(index: Double): this.type = ^.asInstanceOf[js.Dynamic].applyDynamic("bgAnsi256")(index.asInstanceOf[js.Any]).asInstanceOf[this.type]
     
-    /**
-    		Use a [8-bit unsigned number](https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit) to set text color.
-    		*/
-    def ansi256(index: Double): Chalk = js.native
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.bgBlack")
+    @js.native
+    val bgBlack: this.type = js.native
     
-    /**
-    		Use a [Select/Set Graphic Rendition](https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_parameters) (SGR) [color code number](https://en.wikipedia.org/wiki/ANSI_escape_code#3/4_bit) to set background color.
-    		30 <= code && code < 38 || 90 <= code && code < 98
-    		For example, 31 for red, 91 for redBright.
-    		Use the foreground code, not the background code (for example, not 41, nor 101).
-    		*/
-    def bgAnsi(code: Double): Chalk = js.native
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.bgBlackBright")
+    @js.native
+    val bgBlackBright: this.type = js.native
     
-    /**
-    		Use a [8-bit unsigned number](https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit) to set background color.
-    		*/
-    def bgAnsi256(index: Double): Chalk = js.native
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.bgBlue")
+    @js.native
+    val bgBlue: this.type = js.native
     
-    def bgBlack(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgBlack(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.bgBlueBright")
+    @js.native
+    val bgBlueBright: this.type = js.native
     
-    def bgBlackBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgBlackBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("bgBlackBright")
-    val bgBlackBright_Original: Chalk = js.native
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.bgCyan")
+    @js.native
+    val bgCyan: this.type = js.native
     
-    @JSName("bgBlack")
-    val bgBlack_Original: Chalk = js.native
-    
-    def bgBlue(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgBlue(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def bgBlueBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgBlueBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("bgBlueBright")
-    val bgBlueBright_Original: Chalk = js.native
-    
-    @JSName("bgBlue")
-    val bgBlue_Original: Chalk = js.native
-    
-    def bgCyan(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgCyan(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def bgCyanBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgCyanBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("bgCyanBright")
-    val bgCyanBright_Original: Chalk = js.native
-    
-    @JSName("bgCyan")
-    val bgCyan_Original: Chalk = js.native
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.bgCyanBright")
+    @js.native
+    val bgCyanBright: this.type = js.native
     
     /*
-    		Alias for `bgBlackBright`.
-    		*/
-    def bgGray(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /*
-    		Alias for `bgBlackBright`.
-    		*/
-    def bgGray(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /*
-    		Alias for `bgBlackBright`.
-    		*/
-    @JSName("bgGray")
-    val bgGray_Original: Chalk = js.native
+    	Alias for `bgBlackBright`.
+    	*/
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.bgGray")
+    @js.native
+    val bgGray: this.type = js.native
     
-    def bgGreen(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgGreen(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.bgGreen")
+    @js.native
+    val bgGreen: this.type = js.native
     
-    def bgGreenBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgGreenBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("bgGreenBright")
-    val bgGreenBright_Original: Chalk = js.native
-    
-    @JSName("bgGreen")
-    val bgGreen_Original: Chalk = js.native
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.bgGreenBright")
+    @js.native
+    val bgGreenBright: this.type = js.native
     
     /*
-    		Alias for `bgBlackBright`.
-    		*/
-    def bgGrey(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /*
-    		Alias for `bgBlackBright`.
-    		*/
-    def bgGrey(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /*
-    		Alias for `bgBlackBright`.
-    		*/
-    @JSName("bgGrey")
-    val bgGrey_Original: Chalk = js.native
+    	Alias for `bgBlackBright`.
+    	*/
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.bgGrey")
+    @js.native
+    val bgGrey: this.type = js.native
     
     /**
-    		Use HEX value to set background color.
-    		@param color - Hexadecimal value representing the desired color.
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		chalk.bgHex('#DEADED');
-    		```
-    		*/
-    def bgHex(color: String): Chalk = js.native
+    	Use HEX value to set background color.
+    	@param color - Hexadecimal value representing the desired color.
+    	@example
+    	```
+    	import chalk from 'chalk';
+    	chalk.bgHex('#DEADED');
+    	```
+    	*/
+    inline def bgHex(color: String): this.type = ^.asInstanceOf[js.Dynamic].applyDynamic("bgHex")(color.asInstanceOf[js.Any]).asInstanceOf[this.type]
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.bgMagenta")
+    @js.native
+    val bgMagenta: this.type = js.native
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.bgMagentaBright")
+    @js.native
+    val bgMagentaBright: this.type = js.native
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.bgRed")
+    @js.native
+    val bgRed: this.type = js.native
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.bgRedBright")
+    @js.native
+    val bgRedBright: this.type = js.native
     
     /**
-    		Use HSL values to set background color.
-    		*/
-    def bgHsl(hue: Double, saturation: Double, lightness: Double): Chalk = js.native
+    	Use RGB values to set background color.
+    	@example
+    	```
+    	import chalk from 'chalk';
+    	chalk.bgRgb(222, 173, 237);
+    	```
+    	*/
+    inline def bgRgb(red: Double, green: Double, blue: Double): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("bgRgb")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any])).asInstanceOf[this.type]
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.bgWhite")
+    @js.native
+    val bgWhite: this.type = js.native
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.bgWhiteBright")
+    @js.native
+    val bgWhiteBright: this.type = js.native
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.bgYellow")
+    @js.native
+    val bgYellow: this.type = js.native
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.bgYellowBright")
+    @js.native
+    val bgYellowBright: this.type = js.native
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.black")
+    @js.native
+    val black: this.type = js.native
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.blackBright")
+    @js.native
+    val blackBright: this.type = js.native
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.blue")
+    @js.native
+    val blue: this.type = js.native
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.blueBright")
+    @js.native
+    val blueBright: this.type = js.native
     
     /**
-    		Use HSV values to set background color.
-    		*/
-    def bgHsv(hue: Double, saturation: Double, value: Double): Chalk = js.native
+    	Modifier: Make the text bold.
+    	*/
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.bold")
+    @js.native
+    val bold: this.type = js.native
+    
+    inline def constructor(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[Any]
+    inline def constructor(options: Options): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")(options.asInstanceOf[js.Any]).asInstanceOf[Any]
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.cyan")
+    @js.native
+    val cyan: this.type = js.native
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.cyanBright")
+    @js.native
+    val cyanBright: this.type = js.native
     
     /**
-    		Use HWB values to set background color.
-    		*/
-    def bgHwb(hue: Double, whiteness: Double, blackness: Double): Chalk = js.native
-    
-    /**
-    		Use keyword color value to set background color.
-    		@param color - Keyword value representing the desired color.
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		chalk.bgKeyword('orange');
-    		```
-    		*/
-    def bgKeyword(color: String): Chalk = js.native
-    
-    def bgMagenta(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgMagenta(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def bgMagentaBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgMagentaBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("bgMagentaBright")
-    val bgMagentaBright_Original: Chalk = js.native
-    
-    @JSName("bgMagenta")
-    val bgMagenta_Original: Chalk = js.native
-    
-    def bgRed(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgRed(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def bgRedBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgRedBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("bgRedBright")
-    val bgRedBright_Original: Chalk = js.native
-    
-    @JSName("bgRed")
-    val bgRed_Original: Chalk = js.native
-    
-    /**
-    		Use RGB values to set background color.
-    		*/
-    def bgRgb(red: Double, green: Double, blue: Double): Chalk = js.native
-    
-    def bgWhite(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgWhite(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def bgWhiteBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgWhiteBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("bgWhiteBright")
-    val bgWhiteBright_Original: Chalk = js.native
-    
-    @JSName("bgWhite")
-    val bgWhite_Original: Chalk = js.native
-    
-    def bgYellow(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgYellow(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def bgYellowBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgYellowBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("bgYellowBright")
-    val bgYellowBright_Original: Chalk = js.native
-    
-    @JSName("bgYellow")
-    val bgYellow_Original: Chalk = js.native
-    
-    def black(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def black(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def blackBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def blackBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("blackBright")
-    val blackBright_Original: Chalk = js.native
-    
-    @JSName("black")
-    val black_Original: Chalk = js.native
-    
-    def blue(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def blue(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def blueBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def blueBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("blueBright")
-    val blueBright_Original: Chalk = js.native
-    
-    @JSName("blue")
-    val blue_Original: Chalk = js.native
-    
-    /**
-    		Modifier: Make text bold.
-    		*/
-    def bold(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /**
-    		Modifier: Make text bold.
-    		*/
-    def bold(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /**
-    		Modifier: Make text bold.
-    		*/
-    @JSName("bold")
-    val bold_Original: Chalk = js.native
-    
-    def cyan(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def cyan(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def cyanBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def cyanBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("cyanBright")
-    val cyanBright_Original: Chalk = js.native
-    
-    @JSName("cyan")
-    val cyan_Original: Chalk = js.native
-    
-    /**
-    		Modifier: Emitting only a small amount of light.
-    		*/
-    def dim(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /**
-    		Modifier: Emitting only a small amount of light.
-    		*/
-    def dim(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /**
-    		Modifier: Emitting only a small amount of light.
-    		*/
-    @JSName("dim")
-    val dim_Original: Chalk = js.native
+    	Modifier: Make the text have lower opacity.
+    	*/
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.dim")
+    @js.native
+    val dim: this.type = js.native
     
     /*
-    		Alias for `blackBright`.
-    		*/
-    def gray(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /*
-    		Alias for `blackBright`.
-    		*/
-    def gray(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /*
-    		Alias for `blackBright`.
-    		*/
-    @JSName("gray")
-    val gray_Original: Chalk = js.native
+    	Alias for `blackBright`.
+    	*/
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.gray")
+    @js.native
+    val gray: this.type = js.native
     
-    def green(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def green(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.green")
+    @js.native
+    val green: this.type = js.native
     
-    def greenBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def greenBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("greenBright")
-    val greenBright_Original: Chalk = js.native
-    
-    @JSName("green")
-    val green_Original: Chalk = js.native
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.greenBright")
+    @js.native
+    val greenBright: this.type = js.native
     
     /*
-    		Alias for `blackBright`.
-    		*/
-    def grey(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /*
-    		Alias for `blackBright`.
-    		*/
-    def grey(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /*
-    		Alias for `blackBright`.
-    		*/
-    @JSName("grey")
-    val grey_Original: Chalk = js.native
+    	Alias for `blackBright`.
+    	*/
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.grey")
+    @js.native
+    val grey: this.type = js.native
     
     /**
-    		Use HEX value to set text color.
-    		@param color - Hexadecimal value representing the desired color.
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		chalk.hex('#DEADED');
-    		```
-    		*/
-    def hex(color: String): Chalk = js.native
+    	Use HEX value to set text color.
+    	@param color - Hexadecimal value representing the desired color.
+    	@example
+    	```
+    	import chalk from 'chalk';
+    	chalk.hex('#DEADED');
+    	```
+    	*/
+    inline def hex(color: String): this.type = ^.asInstanceOf[js.Dynamic].applyDynamic("hex")(color.asInstanceOf[js.Any]).asInstanceOf[this.type]
     
     /**
-    		Modifier: Prints the text, but makes it invisible.
-    		*/
-    def hidden(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /**
-    		Modifier: Prints the text, but makes it invisible.
-    		*/
-    def hidden(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /**
-    		Modifier: Prints the text, but makes it invisible.
-    		*/
-    @JSName("hidden")
-    val hidden_Original: Chalk = js.native
+    	Modifier: Print the text but make it invisible.
+    	*/
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.hidden")
+    @js.native
+    val hidden: this.type = js.native
     
     /**
-    		Use HSL values to set text color.
-    		*/
-    def hsl(hue: Double, saturation: Double, lightness: Double): Chalk = js.native
+    	Modifier: Invert background and foreground colors.
+    	*/
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.inverse")
+    @js.native
+    val inverse: this.type = js.native
     
     /**
-    		Use HSV values to set text color.
-    		*/
-    def hsv(hue: Double, saturation: Double, value: Double): Chalk = js.native
+    	Modifier: Make the text italic. *(Not widely supported)*
+    	*/
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.italic")
+    @js.native
+    val italic: this.type = js.native
     
     /**
-    		Use HWB values to set text color.
-    		*/
-    def hwb(hue: Double, whiteness: Double, blackness: Double): Chalk = js.native
+    	The color support for Chalk.
+    	By default, color support is automatically detected based on the environment.
+    	Levels:
+    	- `0` - All colors disabled.
+    	- `1` - Basic 16 colors support.
+    	- `2` - ANSI 256 colors support.
+    	- `3` - Truecolor 16 million colors support.
+    	*/
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.level")
+    @js.native
+    def level: ColorSupportLevel = js.native
+    inline def level_=(x: ColorSupportLevel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("level")(x.asInstanceOf[js.Any])
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.magenta")
+    @js.native
+    val magenta: this.type = js.native
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.magentaBright")
+    @js.native
+    val magentaBright: this.type = js.native
     
     /**
-    		Modifier: Inverse background and foreground colors.
-    		*/
-    def inverse(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /**
-    		Modifier: Inverse background and foreground colors.
-    		*/
-    def inverse(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /**
-    		Modifier: Inverse background and foreground colors.
-    		*/
-    @JSName("inverse")
-    val inverse_Original: Chalk = js.native
+    	Modifier: Put a horizontal line above the text. *(Not widely supported)*
+    	*/
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.overline")
+    @js.native
+    val overline: this.type = js.native
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.red")
+    @js.native
+    val red: this.type = js.native
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.redBright")
+    @js.native
+    val redBright: this.type = js.native
     
     /**
-    		Modifier: Make text italic. (Not widely supported)
-    		*/
-    def italic(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /**
-    		Modifier: Make text italic. (Not widely supported)
-    		*/
-    def italic(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /**
-    		Modifier: Make text italic. (Not widely supported)
-    		*/
-    @JSName("italic")
-    val italic_Original: Chalk = js.native
+    	Modifier: Reset the current style.
+    	*/
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.reset")
+    @js.native
+    val reset: this.type = js.native
     
     /**
-    		Use keyword color value to set text color.
-    		@param color - Keyword value representing the desired color.
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		chalk.keyword('orange');
-    		```
-    		*/
-    def keyword(color: String): Chalk = js.native
+    	Use RGB values to set text color.
+    	@example
+    	```
+    	import chalk from 'chalk';
+    	chalk.rgb(222, 173, 237);
+    	```
+    	*/
+    inline def rgb(red: Double, green: Double, blue: Double): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("rgb")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any])).asInstanceOf[this.type]
     
     /**
-    		The color support for Chalk.
-    		By default, color support is automatically detected based on the environment.
-    		Levels:
-    		- `0` - All colors disabled.
-    		- `1` - Basic 16 colors support.
-    		- `2` - ANSI 256 colors support.
-    		- `3` - Truecolor 16 million colors support.
-    		*/
-    var level: Level = js.native
+    	Modifier: Puts a horizontal line through the center of the text. *(Not widely supported)*
+    	*/
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.strikethrough")
+    @js.native
+    val strikethrough: this.type = js.native
     
-    def magenta(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def magenta(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def magentaBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def magentaBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("magentaBright")
-    val magentaBright_Original: Chalk = js.native
-    
-    @JSName("magenta")
-    val magenta_Original: Chalk = js.native
-    
-    def red(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def red(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def redBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def redBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("redBright")
-    val redBright_Original: Chalk = js.native
-    
-    @JSName("red")
-    val red_Original: Chalk = js.native
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.supportsColor")
+    @js.native
+    def supportsColor: ColorSupport = js.native
+    inline def supportsColor_=(x: ColorSupport): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportsColor")(x.asInstanceOf[js.Any])
     
     /**
-    		Modifier: Resets the current color chain.
-    		*/
-    def reset(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /**
-    		Modifier: Resets the current color chain.
-    		*/
-    def reset(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /**
-    		Modifier: Resets the current color chain.
-    		*/
-    @JSName("reset")
-    val reset_Original: Chalk = js.native
+    	Modifier: Put a horizontal line below the text. *(Not widely supported)*
+    	*/
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.underline")
+    @js.native
+    val underline: this.type = js.native
     
     /**
-    		Use RGB values to set text color.
-    		*/
-    def rgb(red: Double, green: Double, blue: Double): Chalk = js.native
+    	Modifier: Print the text only when Chalk has a color level above zero.
+    	Can be useful for things that are purely cosmetic.
+    	*/
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.visible")
+    @js.native
+    val visible: this.type = js.native
     
-    /**
-    		Modifier: Puts a horizontal line through the center of the text. (Not widely supported)
-    		*/
-    def strikethrough(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /**
-    		Modifier: Puts a horizontal line through the center of the text. (Not widely supported)
-    		*/
-    def strikethrough(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /**
-    		Modifier: Puts a horizontal line through the center of the text. (Not widely supported)
-    		*/
-    @JSName("strikethrough")
-    val strikethrough_Original: Chalk = js.native
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.white")
+    @js.native
+    val white: this.type = js.native
     
-    var supportsColor: ColorSupport = js.native
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.whiteBright")
+    @js.native
+    val whiteBright: this.type = js.native
     
-    /**
-    		Modifier: Make text underline. (Not widely supported)
-    		*/
-    def underline(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /**
-    		Modifier: Make text underline. (Not widely supported)
-    		*/
-    def underline(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /**
-    		Modifier: Make text underline. (Not widely supported)
-    		*/
-    @JSName("underline")
-    val underline_Original: Chalk = js.native
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.yellow")
+    @js.native
+    val yellow: this.type = js.native
     
-    /**
-    		Modifier: Prints the text only when Chalk has a color support level > 0.
-    		Can be useful for things that are purely cosmetic.
-    		*/
-    def visible(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /**
-    		Modifier: Prints the text only when Chalk has a color support level > 0.
-    		Can be useful for things that are purely cosmetic.
-    		*/
-    def visible(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /**
-    		Modifier: Prints the text only when Chalk has a color support level > 0.
-    		Can be useful for things that are purely cosmetic.
-    		*/
-    @JSName("visible")
-    val visible_Original: Chalk = js.native
-    
-    def white(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def white(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def whiteBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def whiteBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("whiteBright")
-    val whiteBright_Original: Chalk = js.native
-    
-    @JSName("white")
-    val white_Original: Chalk = js.native
-    
-    def yellow(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def yellow(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def yellowBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def yellowBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("yellowBright")
-    val yellowBright_Original: Chalk = js.native
-    
-    @JSName("yellow")
-    val yellow_Original: Chalk = js.native
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "red.yellowBright")
+    @js.native
+    val yellowBright: this.type = js.native
   }
   
-  @js.native
-  object yellow extends js.Object {
+  /* Inlined chalk.chalk.Chalk & {  supportsColor :chalk.chalk.ColorSupport} */
+  object yellow {
     
-    def apply(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def apply(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+    inline def apply(text: Any*): String = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
-    		Return a new Chalk instance.
-    		*/
-    var Instance: typings.chalk.mod.Instance = js.native
+    	Use an [8-bit unsigned number](https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit) to set text color.
+    	@example
+    	```
+    	import chalk from 'chalk';
+    	chalk.ansi256(201);
+    	```
+    	*/
+    inline def ansi256(index: Double): this.type = ^.asInstanceOf[js.Dynamic].applyDynamic("ansi256")(index.asInstanceOf[js.Any]).asInstanceOf[this.type]
     
     /**
-    		Use a [Select/Set Graphic Rendition](https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_parameters) (SGR) [color code number](https://en.wikipedia.org/wiki/ANSI_escape_code#3/4_bit) to set text color.
-    		30 <= code && code < 38 || 90 <= code && code < 98
-    		For example, 31 for red, 91 for redBright.
-    		*/
-    def ansi(code: Double): Chalk = js.native
+    	Use a [8-bit unsigned number](https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit) to set background color.
+    	@example
+    	```
+    	import chalk from 'chalk';
+    	chalk.bgAnsi256(201);
+    	```
+    	*/
+    inline def bgAnsi256(index: Double): this.type = ^.asInstanceOf[js.Dynamic].applyDynamic("bgAnsi256")(index.asInstanceOf[js.Any]).asInstanceOf[this.type]
     
-    /**
-    		Use a [8-bit unsigned number](https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit) to set text color.
-    		*/
-    def ansi256(index: Double): Chalk = js.native
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.bgBlack")
+    @js.native
+    val bgBlack: this.type = js.native
     
-    /**
-    		Use a [Select/Set Graphic Rendition](https://en.wikipedia.org/wiki/ANSI_escape_code#SGR_parameters) (SGR) [color code number](https://en.wikipedia.org/wiki/ANSI_escape_code#3/4_bit) to set background color.
-    		30 <= code && code < 38 || 90 <= code && code < 98
-    		For example, 31 for red, 91 for redBright.
-    		Use the foreground code, not the background code (for example, not 41, nor 101).
-    		*/
-    def bgAnsi(code: Double): Chalk = js.native
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.bgBlackBright")
+    @js.native
+    val bgBlackBright: this.type = js.native
     
-    /**
-    		Use a [8-bit unsigned number](https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit) to set background color.
-    		*/
-    def bgAnsi256(index: Double): Chalk = js.native
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.bgBlue")
+    @js.native
+    val bgBlue: this.type = js.native
     
-    def bgBlack(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgBlack(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.bgBlueBright")
+    @js.native
+    val bgBlueBright: this.type = js.native
     
-    def bgBlackBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgBlackBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("bgBlackBright")
-    val bgBlackBright_Original: Chalk = js.native
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.bgCyan")
+    @js.native
+    val bgCyan: this.type = js.native
     
-    @JSName("bgBlack")
-    val bgBlack_Original: Chalk = js.native
-    
-    def bgBlue(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgBlue(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def bgBlueBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgBlueBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("bgBlueBright")
-    val bgBlueBright_Original: Chalk = js.native
-    
-    @JSName("bgBlue")
-    val bgBlue_Original: Chalk = js.native
-    
-    def bgCyan(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgCyan(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def bgCyanBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgCyanBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("bgCyanBright")
-    val bgCyanBright_Original: Chalk = js.native
-    
-    @JSName("bgCyan")
-    val bgCyan_Original: Chalk = js.native
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.bgCyanBright")
+    @js.native
+    val bgCyanBright: this.type = js.native
     
     /*
-    		Alias for `bgBlackBright`.
-    		*/
-    def bgGray(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /*
-    		Alias for `bgBlackBright`.
-    		*/
-    def bgGray(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /*
-    		Alias for `bgBlackBright`.
-    		*/
-    @JSName("bgGray")
-    val bgGray_Original: Chalk = js.native
+    	Alias for `bgBlackBright`.
+    	*/
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.bgGray")
+    @js.native
+    val bgGray: this.type = js.native
     
-    def bgGreen(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgGreen(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.bgGreen")
+    @js.native
+    val bgGreen: this.type = js.native
     
-    def bgGreenBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgGreenBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("bgGreenBright")
-    val bgGreenBright_Original: Chalk = js.native
-    
-    @JSName("bgGreen")
-    val bgGreen_Original: Chalk = js.native
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.bgGreenBright")
+    @js.native
+    val bgGreenBright: this.type = js.native
     
     /*
-    		Alias for `bgBlackBright`.
-    		*/
-    def bgGrey(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /*
-    		Alias for `bgBlackBright`.
-    		*/
-    def bgGrey(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /*
-    		Alias for `bgBlackBright`.
-    		*/
-    @JSName("bgGrey")
-    val bgGrey_Original: Chalk = js.native
+    	Alias for `bgBlackBright`.
+    	*/
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.bgGrey")
+    @js.native
+    val bgGrey: this.type = js.native
     
     /**
-    		Use HEX value to set background color.
-    		@param color - Hexadecimal value representing the desired color.
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		chalk.bgHex('#DEADED');
-    		```
-    		*/
-    def bgHex(color: String): Chalk = js.native
+    	Use HEX value to set background color.
+    	@param color - Hexadecimal value representing the desired color.
+    	@example
+    	```
+    	import chalk from 'chalk';
+    	chalk.bgHex('#DEADED');
+    	```
+    	*/
+    inline def bgHex(color: String): this.type = ^.asInstanceOf[js.Dynamic].applyDynamic("bgHex")(color.asInstanceOf[js.Any]).asInstanceOf[this.type]
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.bgMagenta")
+    @js.native
+    val bgMagenta: this.type = js.native
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.bgMagentaBright")
+    @js.native
+    val bgMagentaBright: this.type = js.native
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.bgRed")
+    @js.native
+    val bgRed: this.type = js.native
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.bgRedBright")
+    @js.native
+    val bgRedBright: this.type = js.native
     
     /**
-    		Use HSL values to set background color.
-    		*/
-    def bgHsl(hue: Double, saturation: Double, lightness: Double): Chalk = js.native
+    	Use RGB values to set background color.
+    	@example
+    	```
+    	import chalk from 'chalk';
+    	chalk.bgRgb(222, 173, 237);
+    	```
+    	*/
+    inline def bgRgb(red: Double, green: Double, blue: Double): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("bgRgb")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any])).asInstanceOf[this.type]
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.bgWhite")
+    @js.native
+    val bgWhite: this.type = js.native
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.bgWhiteBright")
+    @js.native
+    val bgWhiteBright: this.type = js.native
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.bgYellow")
+    @js.native
+    val bgYellow: this.type = js.native
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.bgYellowBright")
+    @js.native
+    val bgYellowBright: this.type = js.native
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.black")
+    @js.native
+    val black: this.type = js.native
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.blackBright")
+    @js.native
+    val blackBright: this.type = js.native
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.blue")
+    @js.native
+    val blue: this.type = js.native
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.blueBright")
+    @js.native
+    val blueBright: this.type = js.native
     
     /**
-    		Use HSV values to set background color.
-    		*/
-    def bgHsv(hue: Double, saturation: Double, value: Double): Chalk = js.native
+    	Modifier: Make the text bold.
+    	*/
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.bold")
+    @js.native
+    val bold: this.type = js.native
+    
+    inline def constructor(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[Any]
+    inline def constructor(options: Options): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")(options.asInstanceOf[js.Any]).asInstanceOf[Any]
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.cyan")
+    @js.native
+    val cyan: this.type = js.native
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.cyanBright")
+    @js.native
+    val cyanBright: this.type = js.native
     
     /**
-    		Use HWB values to set background color.
-    		*/
-    def bgHwb(hue: Double, whiteness: Double, blackness: Double): Chalk = js.native
-    
-    /**
-    		Use keyword color value to set background color.
-    		@param color - Keyword value representing the desired color.
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		chalk.bgKeyword('orange');
-    		```
-    		*/
-    def bgKeyword(color: String): Chalk = js.native
-    
-    def bgMagenta(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgMagenta(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def bgMagentaBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgMagentaBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("bgMagentaBright")
-    val bgMagentaBright_Original: Chalk = js.native
-    
-    @JSName("bgMagenta")
-    val bgMagenta_Original: Chalk = js.native
-    
-    def bgRed(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgRed(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def bgRedBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgRedBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("bgRedBright")
-    val bgRedBright_Original: Chalk = js.native
-    
-    @JSName("bgRed")
-    val bgRed_Original: Chalk = js.native
-    
-    /**
-    		Use RGB values to set background color.
-    		*/
-    def bgRgb(red: Double, green: Double, blue: Double): Chalk = js.native
-    
-    def bgWhite(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgWhite(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def bgWhiteBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgWhiteBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("bgWhiteBright")
-    val bgWhiteBright_Original: Chalk = js.native
-    
-    @JSName("bgWhite")
-    val bgWhite_Original: Chalk = js.native
-    
-    def bgYellow(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgYellow(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def bgYellowBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def bgYellowBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("bgYellowBright")
-    val bgYellowBright_Original: Chalk = js.native
-    
-    @JSName("bgYellow")
-    val bgYellow_Original: Chalk = js.native
-    
-    def black(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def black(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def blackBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def blackBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("blackBright")
-    val blackBright_Original: Chalk = js.native
-    
-    @JSName("black")
-    val black_Original: Chalk = js.native
-    
-    def blue(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def blue(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def blueBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def blueBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("blueBright")
-    val blueBright_Original: Chalk = js.native
-    
-    @JSName("blue")
-    val blue_Original: Chalk = js.native
-    
-    /**
-    		Modifier: Make text bold.
-    		*/
-    def bold(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /**
-    		Modifier: Make text bold.
-    		*/
-    def bold(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /**
-    		Modifier: Make text bold.
-    		*/
-    @JSName("bold")
-    val bold_Original: Chalk = js.native
-    
-    def cyan(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def cyan(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def cyanBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def cyanBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("cyanBright")
-    val cyanBright_Original: Chalk = js.native
-    
-    @JSName("cyan")
-    val cyan_Original: Chalk = js.native
-    
-    /**
-    		Modifier: Emitting only a small amount of light.
-    		*/
-    def dim(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /**
-    		Modifier: Emitting only a small amount of light.
-    		*/
-    def dim(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /**
-    		Modifier: Emitting only a small amount of light.
-    		*/
-    @JSName("dim")
-    val dim_Original: Chalk = js.native
+    	Modifier: Make the text have lower opacity.
+    	*/
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.dim")
+    @js.native
+    val dim: this.type = js.native
     
     /*
-    		Alias for `blackBright`.
-    		*/
-    def gray(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /*
-    		Alias for `blackBright`.
-    		*/
-    def gray(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /*
-    		Alias for `blackBright`.
-    		*/
-    @JSName("gray")
-    val gray_Original: Chalk = js.native
+    	Alias for `blackBright`.
+    	*/
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.gray")
+    @js.native
+    val gray: this.type = js.native
     
-    def green(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def green(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.green")
+    @js.native
+    val green: this.type = js.native
     
-    def greenBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def greenBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("greenBright")
-    val greenBright_Original: Chalk = js.native
-    
-    @JSName("green")
-    val green_Original: Chalk = js.native
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.greenBright")
+    @js.native
+    val greenBright: this.type = js.native
     
     /*
-    		Alias for `blackBright`.
-    		*/
-    def grey(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /*
-    		Alias for `blackBright`.
-    		*/
-    def grey(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /*
-    		Alias for `blackBright`.
-    		*/
-    @JSName("grey")
-    val grey_Original: Chalk = js.native
+    	Alias for `blackBright`.
+    	*/
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.grey")
+    @js.native
+    val grey: this.type = js.native
     
     /**
-    		Use HEX value to set text color.
-    		@param color - Hexadecimal value representing the desired color.
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		chalk.hex('#DEADED');
-    		```
-    		*/
-    def hex(color: String): Chalk = js.native
+    	Use HEX value to set text color.
+    	@param color - Hexadecimal value representing the desired color.
+    	@example
+    	```
+    	import chalk from 'chalk';
+    	chalk.hex('#DEADED');
+    	```
+    	*/
+    inline def hex(color: String): this.type = ^.asInstanceOf[js.Dynamic].applyDynamic("hex")(color.asInstanceOf[js.Any]).asInstanceOf[this.type]
     
     /**
-    		Modifier: Prints the text, but makes it invisible.
-    		*/
-    def hidden(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /**
-    		Modifier: Prints the text, but makes it invisible.
-    		*/
-    def hidden(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /**
-    		Modifier: Prints the text, but makes it invisible.
-    		*/
-    @JSName("hidden")
-    val hidden_Original: Chalk = js.native
+    	Modifier: Print the text but make it invisible.
+    	*/
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.hidden")
+    @js.native
+    val hidden: this.type = js.native
     
     /**
-    		Use HSL values to set text color.
-    		*/
-    def hsl(hue: Double, saturation: Double, lightness: Double): Chalk = js.native
+    	Modifier: Invert background and foreground colors.
+    	*/
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.inverse")
+    @js.native
+    val inverse: this.type = js.native
     
     /**
-    		Use HSV values to set text color.
-    		*/
-    def hsv(hue: Double, saturation: Double, value: Double): Chalk = js.native
+    	Modifier: Make the text italic. *(Not widely supported)*
+    	*/
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.italic")
+    @js.native
+    val italic: this.type = js.native
     
     /**
-    		Use HWB values to set text color.
-    		*/
-    def hwb(hue: Double, whiteness: Double, blackness: Double): Chalk = js.native
+    	The color support for Chalk.
+    	By default, color support is automatically detected based on the environment.
+    	Levels:
+    	- `0` - All colors disabled.
+    	- `1` - Basic 16 colors support.
+    	- `2` - ANSI 256 colors support.
+    	- `3` - Truecolor 16 million colors support.
+    	*/
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.level")
+    @js.native
+    def level: ColorSupportLevel = js.native
+    inline def level_=(x: ColorSupportLevel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("level")(x.asInstanceOf[js.Any])
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.magenta")
+    @js.native
+    val magenta: this.type = js.native
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.magentaBright")
+    @js.native
+    val magentaBright: this.type = js.native
     
     /**
-    		Modifier: Inverse background and foreground colors.
-    		*/
-    def inverse(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /**
-    		Modifier: Inverse background and foreground colors.
-    		*/
-    def inverse(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /**
-    		Modifier: Inverse background and foreground colors.
-    		*/
-    @JSName("inverse")
-    val inverse_Original: Chalk = js.native
+    	Modifier: Put a horizontal line above the text. *(Not widely supported)*
+    	*/
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.overline")
+    @js.native
+    val overline: this.type = js.native
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.red")
+    @js.native
+    val red: this.type = js.native
+    
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.redBright")
+    @js.native
+    val redBright: this.type = js.native
     
     /**
-    		Modifier: Make text italic. (Not widely supported)
-    		*/
-    def italic(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /**
-    		Modifier: Make text italic. (Not widely supported)
-    		*/
-    def italic(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /**
-    		Modifier: Make text italic. (Not widely supported)
-    		*/
-    @JSName("italic")
-    val italic_Original: Chalk = js.native
+    	Modifier: Reset the current style.
+    	*/
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.reset")
+    @js.native
+    val reset: this.type = js.native
     
     /**
-    		Use keyword color value to set text color.
-    		@param color - Keyword value representing the desired color.
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		chalk.keyword('orange');
-    		```
-    		*/
-    def keyword(color: String): Chalk = js.native
+    	Use RGB values to set text color.
+    	@example
+    	```
+    	import chalk from 'chalk';
+    	chalk.rgb(222, 173, 237);
+    	```
+    	*/
+    inline def rgb(red: Double, green: Double, blue: Double): this.type = (^.asInstanceOf[js.Dynamic].applyDynamic("rgb")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any])).asInstanceOf[this.type]
     
     /**
-    		The color support for Chalk.
-    		By default, color support is automatically detected based on the environment.
-    		Levels:
-    		- `0` - All colors disabled.
-    		- `1` - Basic 16 colors support.
-    		- `2` - ANSI 256 colors support.
-    		- `3` - Truecolor 16 million colors support.
-    		*/
-    var level: Level = js.native
+    	Modifier: Puts a horizontal line through the center of the text. *(Not widely supported)*
+    	*/
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.strikethrough")
+    @js.native
+    val strikethrough: this.type = js.native
     
-    def magenta(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def magenta(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def magentaBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def magentaBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("magentaBright")
-    val magentaBright_Original: Chalk = js.native
-    
-    @JSName("magenta")
-    val magenta_Original: Chalk = js.native
-    
-    def red(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def red(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def redBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def redBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("redBright")
-    val redBright_Original: Chalk = js.native
-    
-    @JSName("red")
-    val red_Original: Chalk = js.native
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.supportsColor")
+    @js.native
+    def supportsColor: ColorSupport = js.native
+    inline def supportsColor_=(x: ColorSupport): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportsColor")(x.asInstanceOf[js.Any])
     
     /**
-    		Modifier: Resets the current color chain.
-    		*/
-    def reset(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /**
-    		Modifier: Resets the current color chain.
-    		*/
-    def reset(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /**
-    		Modifier: Resets the current color chain.
-    		*/
-    @JSName("reset")
-    val reset_Original: Chalk = js.native
+    	Modifier: Put a horizontal line below the text. *(Not widely supported)*
+    	*/
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.underline")
+    @js.native
+    val underline: this.type = js.native
     
     /**
-    		Use RGB values to set text color.
-    		*/
-    def rgb(red: Double, green: Double, blue: Double): Chalk = js.native
+    	Modifier: Print the text only when Chalk has a color level above zero.
+    	Can be useful for things that are purely cosmetic.
+    	*/
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.visible")
+    @js.native
+    val visible: this.type = js.native
     
-    /**
-    		Modifier: Puts a horizontal line through the center of the text. (Not widely supported)
-    		*/
-    def strikethrough(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /**
-    		Modifier: Puts a horizontal line through the center of the text. (Not widely supported)
-    		*/
-    def strikethrough(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /**
-    		Modifier: Puts a horizontal line through the center of the text. (Not widely supported)
-    		*/
-    @JSName("strikethrough")
-    val strikethrough_Original: Chalk = js.native
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.white")
+    @js.native
+    val white: this.type = js.native
     
-    var supportsColor: ColorSupport = js.native
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.whiteBright")
+    @js.native
+    val whiteBright: this.type = js.native
     
-    /**
-    		Modifier: Make text underline. (Not widely supported)
-    		*/
-    def underline(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /**
-    		Modifier: Make text underline. (Not widely supported)
-    		*/
-    def underline(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /**
-    		Modifier: Make text underline. (Not widely supported)
-    		*/
-    @JSName("underline")
-    val underline_Original: Chalk = js.native
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.yellow")
+    @js.native
+    val yellow: this.type = js.native
     
-    /**
-    		Modifier: Prints the text only when Chalk has a color support level > 0.
-    		Can be useful for things that are purely cosmetic.
-    		*/
-    def visible(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    /**
-    		Modifier: Prints the text only when Chalk has a color support level > 0.
-    		Can be useful for things that are purely cosmetic.
-    		*/
-    def visible(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    /**
-    		Modifier: Prints the text only when Chalk has a color support level > 0.
-    		Can be useful for things that are purely cosmetic.
-    		*/
-    @JSName("visible")
-    val visible_Original: Chalk = js.native
-    
-    def white(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def white(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def whiteBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def whiteBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("whiteBright")
-    val whiteBright_Original: Chalk = js.native
-    
-    @JSName("white")
-    val white_Original: Chalk = js.native
-    
-    def yellow(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def yellow(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    
-    def yellowBright(text: js.Any*): String = js.native
-    /**
-    		Use a template string.
-    		@remarks Template literals are unsupported for nested calls (see [issue #341](https://github.com/chalk/chalk/issues/341))
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk`
-    		CPU: {red ${cpu.totalPercent}%}
-    		RAM: {green ${ram.used / ram.total * 100}%}
-    		DISK: {rgb(255,131,0) ${disk.used / disk.total * 100}%}
-    		`);
-    		```
-    		@example
-    		```
-    		import chalk = require('chalk');
-    		log(chalk.red.bgBlack`2 + 3 = {bold ${2 + 3}}`)
-    		```
-    		*/
-    def yellowBright(text: TemplateStringsArray, placeholders: js.Any*): String = js.native
-    @JSName("yellowBright")
-    val yellowBright_Original: Chalk = js.native
-    
-    @JSName("yellow")
-    val yellow_Original: Chalk = js.native
+    @JSImport("inversify-logger-middleware/dts/serializers/text/colors", "yellow.yellowBright")
+    @js.native
+    val yellowBright: this.type = js.native
   }
 }

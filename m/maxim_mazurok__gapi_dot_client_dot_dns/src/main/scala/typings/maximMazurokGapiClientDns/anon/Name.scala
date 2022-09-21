@@ -19,6 +19,9 @@ trait Name extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
+  /** For mutating operation requests only. An optional identifier specified by the client. Must be unique for operation resources in the Operations collection. */
+  var clientOperationId: js.UndefOr[String] = js.undefined
+  
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
@@ -28,17 +31,11 @@ trait Name extends StObject {
   /** Identifies the managed zone addressed by this request. Can be the managed zone name or ID. */
   var managedZone: String
   
-  /** Optional. Maximum number of results to be returned. If unspecified, the server will decide how many results to return. */
-  var maxResults: js.UndefOr[Double] = js.undefined
-  
-  /** Restricts the list to return only records with this fully qualified domain name. */
-  var name: js.UndefOr[String] = js.undefined
+  /** Fully qualified domain name. */
+  var name: String
   
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
-  
-  /** Optional. A tag returned by a previous list request that was truncated. Use this parameter to continue a previous list request. */
-  var pageToken: js.UndefOr[String] = js.undefined
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
@@ -49,8 +46,8 @@ trait Name extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** Restricts the list to return only records of this type. If present, the "name" parameter must also be present. */
-  var `type`: js.UndefOr[String] = js.undefined
+  /** RRSet type. */
+  var `type`: String
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -60,8 +57,9 @@ trait Name extends StObject {
 }
 object Name {
   
-  inline def apply(managedZone: String, project: String): Name = {
-    val __obj = js.Dynamic.literal(managedZone = managedZone.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any])
+  inline def apply(managedZone: String, name: String, project: String, `type`: String): Name = {
+    val __obj = js.Dynamic.literal(managedZone = managedZone.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Name]
   }
   
@@ -83,6 +81,10 @@ object Name {
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
+    inline def setClientOperationId(value: String): Self = StObject.set(x, "clientOperationId", value.asInstanceOf[js.Any])
+    
+    inline def setClientOperationIdUndefined: Self = StObject.set(x, "clientOperationId", js.undefined)
+    
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
@@ -93,21 +95,11 @@ object Name {
     
     inline def setManagedZone(value: String): Self = StObject.set(x, "managedZone", value.asInstanceOf[js.Any])
     
-    inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
-    
-    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
-    
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-    
-    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
-    
-    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
-    
-    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
@@ -120,8 +112,6 @@ object Name {
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    
-    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Router[Options, NavigationPropType] extends StObject {
   
-  var navigationOptions: js.UndefOr[NavigationScreenConfig[Options, NavigationPropType, js.Any]] = js.undefined
+  var navigationOptions: js.UndefOr[NavigationScreenConfig[Options, NavigationPropType, Any]] = js.undefined
   
   var router: NavigationRouter[Options, js.Object]
 }
@@ -22,10 +22,10 @@ object Router {
   
   extension [Self <: Router[?, ?], Options, NavigationPropType](x: Self & (Router[Options, NavigationPropType])) {
     
-    inline def setNavigationOptions(value: NavigationScreenConfig[Options, NavigationPropType, js.Any]): Self = StObject.set(x, "navigationOptions", value.asInstanceOf[js.Any])
+    inline def setNavigationOptions(value: NavigationScreenConfig[Options, NavigationPropType, Any]): Self = StObject.set(x, "navigationOptions", value.asInstanceOf[js.Any])
     
     inline def setNavigationOptionsFunction1(
-      value: /* navigationOptionsContainer */ (NavigationScreenConfigProps[NavigationPropType, js.Any]) & NavigationOptionsOptions[Options] => Options
+      value: /* navigationOptionsContainer */ (NavigationScreenConfigProps[NavigationPropType, Any]) & NavigationOptionsOptions[Options] => Options
     ): Self = StObject.set(x, "navigationOptions", js.Any.fromFunction1(value))
     
     inline def setNavigationOptionsUndefined: Self = StObject.set(x, "navigationOptions", js.undefined)

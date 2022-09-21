@@ -8,9 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("THREE.WebGLRenderer")
 @js.native
 /**
-	 * parameters is an optional object with properties defining the renderer's behaviour. The constructor also accepts no parameters at all. In all cases, it will assume sane defaults when parameters are missing.
-	 */
-class WebGLRenderer ()
+  * parameters is an optional object with properties defining the renderer's behaviour.
+  * The constructor also accepts no parameters at all.
+  * In all cases, it will assume sane defaults when parameters are missing.
+  */
+open class WebGLRenderer ()
   extends typings.three.mod.WebGLRenderer {
   def this(parameters: WebGLRendererParameters) = this()
 }

@@ -17,15 +17,15 @@ object segmentPlotMod {
     *
     * @constructor
     */
-  class Segment[X, Y] () extends XYPlot[X, Y] {
+  open class Segment[X, Y] () extends XYPlot[X, Y] {
     
     /* protected */ def _createDrawer(): ProxyDrawer = js.native
     
-    /* private */ def _entitiesIntersecting(xRange: js.Any, yRange: js.Any): js.Any = js.native
+    /* private */ var _entitiesIntersecting: Any = js.native
     
-    /* private */ def _lineIntersectsBox(entity: js.Any, xRange: js.Any, yRange: js.Any, attrToProjector: js.Any): js.Any = js.native
+    /* private */ var _lineIntersectsBox: Any = js.native
     
-    /* private */ def _lineIntersectsSegment(point1: js.Any, point2: js.Any, point3: js.Any, point4: js.Any): js.Any = js.native
+    /* private */ var _lineIntersectsSegment: Any = js.native
     
     /**
       * Gets the AccessorScaleBinding for X2
@@ -66,12 +66,12 @@ object segmentPlotMod {
     
     @JSImport("plottable/build/src/plots/segmentPlot", "Segment._X2_KEY")
     @js.native
-    def _X2_KEY: js.Any = js.native
-    inline def _X2_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_X2_KEY")(x.asInstanceOf[js.Any])
+    def _X2_KEY: Any = js.native
+    inline def _X2_KEY_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_X2_KEY")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/plots/segmentPlot", "Segment._Y2_KEY")
     @js.native
-    def _Y2_KEY: js.Any = js.native
-    inline def _Y2_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Y2_KEY")(x.asInstanceOf[js.Any])
+    def _Y2_KEY: Any = js.native
+    inline def _Y2_KEY_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Y2_KEY")(x.asInstanceOf[js.Any])
   }
 }

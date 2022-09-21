@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Provides a Unified Logging Service (ULS) that monitors log messages. */
 @JSGlobal("SP.ULS")
 @js.native
-class ULS ()
+open class ULS ()
   extends StObject
      with typings.sharepoint.SP.ULS
 object ULS {
@@ -40,7 +40,7 @@ object ULS {
   /** Traces when the function was entered. */
   /* static member */
   inline def traceApiEnter(functionName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("traceApiEnter")(functionName.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def traceApiEnter(functionName: String, args: js.Array[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traceApiEnter")(functionName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def traceApiEnter(functionName: String, args: js.Array[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traceApiEnter")(functionName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** Traces when the function has finished. */
   /* static member */

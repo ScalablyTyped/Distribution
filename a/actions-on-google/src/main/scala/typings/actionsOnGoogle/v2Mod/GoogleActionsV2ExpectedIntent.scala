@@ -23,7 +23,7 @@ trait GoogleActionsV2ExpectedIntent extends StObject {
     * `actions.intent.Link ->`
     * [google.actions.v2.LinkValueSpec]
     */
-  var inputValueData: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
+  var inputValueData: js.UndefOr[ApiClientObjectMap[Any]] = js.undefined
   
   /**
     * The built-in intent name, e.g. `actions.intent.TEXT`, or intents
@@ -48,7 +48,7 @@ object GoogleActionsV2ExpectedIntent {
   
   extension [Self <: GoogleActionsV2ExpectedIntent](x: Self) {
     
-    inline def setInputValueData(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "inputValueData", value.asInstanceOf[js.Any])
+    inline def setInputValueData(value: ApiClientObjectMap[Any]): Self = StObject.set(x, "inputValueData", value.asInstanceOf[js.Any])
     
     inline def setInputValueDataUndefined: Self = StObject.set(x, "inputValueData", js.undefined)
     

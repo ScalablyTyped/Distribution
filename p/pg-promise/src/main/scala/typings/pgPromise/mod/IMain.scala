@@ -18,9 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IMain[Ext, C /* <: IClient */] extends StObject {
   
   def apply[T, C /* <: IClient */](cn: String): (IDatabase[T, C]) & T = js.native
-  def apply[T, C /* <: IClient */](cn: String, dc: js.Any): (IDatabase[T, C]) & T = js.native
+  def apply[T, C /* <: IClient */](cn: String, dc: Any): (IDatabase[T, C]) & T = js.native
   def apply[T, C /* <: IClient */](cn: IConnectionParameters[C]): (IDatabase[T, C]) & T = js.native
-  def apply[T, C /* <: IClient */](cn: IConnectionParameters[C], dc: js.Any): (IDatabase[T, C]) & T = js.native
+  def apply[T, C /* <: IClient */](cn: IConnectionParameters[C], dc: Any): (IDatabase[T, C]) & T = js.native
   
   val ParameterizedQuery: Instantiable1[
     /* options */ js.UndefOr[String | typings.pgPromise.mod.QueryFile | IParameterizedQuery], 
@@ -53,7 +53,7 @@ trait IMain[Ext, C /* <: IClient */] extends StObject {
   
   val pg: Typeofpg = js.native
   
-  val queryResult: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof queryResult */ js.Any = js.native
+  val queryResult: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof queryResult */ Any = js.native
   
   val spex: ISpex = js.native
   

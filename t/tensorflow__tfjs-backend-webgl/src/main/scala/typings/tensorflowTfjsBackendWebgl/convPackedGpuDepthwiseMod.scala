@@ -1,5 +1,6 @@
 package typings.tensorflowTfjsBackendWebgl
 
+import typings.tensorflowTfjsBackendWebgl.anon.Type
 import typings.tensorflowTfjsBackendWebgl.gpgpuMathMod.GPGPUProgram
 import typings.tensorflowTfjsCore.convUtilMod.Conv2DInfo
 import org.scalablytyped.runtime.StObject
@@ -10,7 +11,7 @@ object convPackedGpuDepthwiseMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/conv_packed_gpu_depthwise", "DepthwiseConvPacked2DProgram")
   @js.native
-  class DepthwiseConvPacked2DProgram protected ()
+  open class DepthwiseConvPacked2DProgram protected ()
     extends StObject
        with GPGPUProgram {
     def this(convInfo: Conv2DInfo) = this()
@@ -21,6 +22,68 @@ object convPackedGpuDepthwiseMod {
     def this(convInfo: Conv2DInfo, addBias: Boolean, activation: Unit, hasPreluActivation: Boolean) = this()
     def this(convInfo: Conv2DInfo, addBias: Unit, activation: String, hasPreluActivation: Boolean) = this()
     def this(convInfo: Conv2DInfo, addBias: Unit, activation: Unit, hasPreluActivation: Boolean) = this()
+    def this(
+      convInfo: Conv2DInfo,
+      addBias: Boolean,
+      activation: String,
+      hasPreluActivation: Boolean,
+      hasLeakyReluAlpha: Boolean
+    ) = this()
+    def this(
+      convInfo: Conv2DInfo,
+      addBias: Boolean,
+      activation: String,
+      hasPreluActivation: Unit,
+      hasLeakyReluAlpha: Boolean
+    ) = this()
+    def this(
+      convInfo: Conv2DInfo,
+      addBias: Boolean,
+      activation: Unit,
+      hasPreluActivation: Boolean,
+      hasLeakyReluAlpha: Boolean
+    ) = this()
+    def this(
+      convInfo: Conv2DInfo,
+      addBias: Boolean,
+      activation: Unit,
+      hasPreluActivation: Unit,
+      hasLeakyReluAlpha: Boolean
+    ) = this()
+    def this(
+      convInfo: Conv2DInfo,
+      addBias: Unit,
+      activation: String,
+      hasPreluActivation: Boolean,
+      hasLeakyReluAlpha: Boolean
+    ) = this()
+    def this(
+      convInfo: Conv2DInfo,
+      addBias: Unit,
+      activation: String,
+      hasPreluActivation: Unit,
+      hasLeakyReluAlpha: Boolean
+    ) = this()
+    def this(
+      convInfo: Conv2DInfo,
+      addBias: Unit,
+      activation: Unit,
+      hasPreluActivation: Boolean,
+      hasLeakyReluAlpha: Boolean
+    ) = this()
+    def this(
+      convInfo: Conv2DInfo,
+      addBias: Unit,
+      activation: Unit,
+      hasPreluActivation: Unit,
+      hasLeakyReluAlpha: Boolean
+    ) = this()
+    
+    @JSName("customUniforms")
+    var customUniforms_DepthwiseConvPacked2DProgram: js.Array[Type] = js.native
+    
+    @JSName("enableShapeUniforms")
+    var enableShapeUniforms_DepthwiseConvPacked2DProgram: Boolean = js.native
     
     /* CompleteClass */
     var outputShape: js.Array[Double] = js.native

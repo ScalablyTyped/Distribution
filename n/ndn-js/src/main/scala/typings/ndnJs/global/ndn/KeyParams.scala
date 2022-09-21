@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ndn.KeyParams")
 @js.native
-class KeyParams ()
+open class KeyParams ()
   extends typings.ndnJs.mod.KeyParams

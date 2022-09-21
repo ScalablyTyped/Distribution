@@ -40,7 +40,7 @@ object LocationConstraint {
     
     inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
     
-    inline def setLocationsVarargs(value: LocationConstraintItem*): Self = StObject.set(x, "locations", js.Array(value :_*))
+    inline def setLocationsVarargs(value: LocationConstraintItem*): Self = StObject.set(x, "locations", js.Array(value*))
     
     inline def setSuggestLocation(value: NullableOption[Boolean]): Self = StObject.set(x, "suggestLocation", value.asInstanceOf[js.Any])
     

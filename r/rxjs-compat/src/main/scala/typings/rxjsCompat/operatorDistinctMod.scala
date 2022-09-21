@@ -10,14 +10,14 @@ object operatorDistinctMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def distinct[T, K](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("distinct")().asInstanceOf[js.Any]
-  inline def distinct[T, K](keySelector: js.Function1[/* value */ T, K]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("distinct")(keySelector.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def distinct[T, K](): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("distinct")().asInstanceOf[Any]
+  inline def distinct[T, K](keySelector: js.Function1[/* value */ T, K]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("distinct")(keySelector.asInstanceOf[js.Any]).asInstanceOf[Any]
   inline def distinct[T, K](
     keySelector: js.Function1[/* value */ T, K],
-    flushes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any
-  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("distinct")(keySelector.asInstanceOf[js.Any], flushes.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    flushes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ Any
+  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("distinct")(keySelector.asInstanceOf[js.Any], flushes.asInstanceOf[js.Any])).asInstanceOf[Any]
   inline def distinct[T, K](
     keySelector: Unit,
-    flushes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any
-  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("distinct")(keySelector.asInstanceOf[js.Any], flushes.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    flushes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ Any
+  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("distinct")(keySelector.asInstanceOf[js.Any], flushes.asInstanceOf[js.Any])).asInstanceOf[Any]
 }

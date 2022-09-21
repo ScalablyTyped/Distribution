@@ -10,10 +10,10 @@ Utilities for testing babel plugins
 | ------------------ | :-------------: |
 | Full name          | babel-plugin-tester |
 | Keywords           | - |
-| # releases         | 22 |
-| # dependents       | 11 |
-| # downloads        | 1026770 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 168218.66666666666 |
+| # stars            | 253.0 |
 
 ## Links
 - [Homepage](https://github.com/babel-utils/babel-plugin-tester#readme)

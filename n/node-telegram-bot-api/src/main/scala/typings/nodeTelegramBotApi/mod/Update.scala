@@ -10,6 +10,10 @@ trait Update extends StObject {
   
   var channel_post: js.UndefOr[Message] = js.undefined
   
+  var chat_join_request: js.UndefOr[ChatJoinRequest] = js.undefined
+  
+  var chat_member: js.UndefOr[ChatMemberUpdated] = js.undefined
+  
   var chosen_inline_result: js.UndefOr[ChosenInlineResult] = js.undefined
   
   var edited_channel_post: js.UndefOr[Message] = js.undefined
@@ -19,6 +23,12 @@ trait Update extends StObject {
   var inline_query: js.UndefOr[InlineQuery] = js.undefined
   
   var message: js.UndefOr[Message] = js.undefined
+  
+  var my_chat_member: js.UndefOr[ChatMemberUpdated] = js.undefined
+  
+  var poll: js.UndefOr[Poll] = js.undefined
+  
+  var poll_answer: js.UndefOr[PollAnswer] = js.undefined
   
   var pre_checkout_query: js.UndefOr[PreCheckoutQuery] = js.undefined
   
@@ -43,6 +53,14 @@ object Update {
     
     inline def setChannel_postUndefined: Self = StObject.set(x, "channel_post", js.undefined)
     
+    inline def setChat_join_request(value: ChatJoinRequest): Self = StObject.set(x, "chat_join_request", value.asInstanceOf[js.Any])
+    
+    inline def setChat_join_requestUndefined: Self = StObject.set(x, "chat_join_request", js.undefined)
+    
+    inline def setChat_member(value: ChatMemberUpdated): Self = StObject.set(x, "chat_member", value.asInstanceOf[js.Any])
+    
+    inline def setChat_memberUndefined: Self = StObject.set(x, "chat_member", js.undefined)
+    
     inline def setChosen_inline_result(value: ChosenInlineResult): Self = StObject.set(x, "chosen_inline_result", value.asInstanceOf[js.Any])
     
     inline def setChosen_inline_resultUndefined: Self = StObject.set(x, "chosen_inline_result", js.undefined)
@@ -62,6 +80,18 @@ object Update {
     inline def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    
+    inline def setMy_chat_member(value: ChatMemberUpdated): Self = StObject.set(x, "my_chat_member", value.asInstanceOf[js.Any])
+    
+    inline def setMy_chat_memberUndefined: Self = StObject.set(x, "my_chat_member", js.undefined)
+    
+    inline def setPoll(value: Poll): Self = StObject.set(x, "poll", value.asInstanceOf[js.Any])
+    
+    inline def setPollUndefined: Self = StObject.set(x, "poll", js.undefined)
+    
+    inline def setPoll_answer(value: PollAnswer): Self = StObject.set(x, "poll_answer", value.asInstanceOf[js.Any])
+    
+    inline def setPoll_answerUndefined: Self = StObject.set(x, "poll_answer", js.undefined)
     
     inline def setPre_checkout_query(value: PreCheckoutQuery): Self = StObject.set(x, "pre_checkout_query", value.asInstanceOf[js.Any])
     

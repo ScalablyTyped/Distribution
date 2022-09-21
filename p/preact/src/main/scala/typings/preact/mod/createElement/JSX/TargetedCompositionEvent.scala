@@ -1,5 +1,6 @@
 package typings.preact.mod.createElement.JSX
 
+import typings.std.DOMHighResTimeStamp
 import typings.std.EventTarget
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
@@ -39,9 +40,17 @@ trait TargetedCompositionEvent[Target /* <: EventTarget */] extends StObject {
   
   var eventPhase: Double
   
+  def initCompositionEvent(typeArg: String): Unit
+  @JSName("initCompositionEvent")
+  var initCompositionEvent_Original: js.Function1[/* typeArg */ String, Unit]
+  
   def initEvent(`type`: String): Unit
   @JSName("initEvent")
   var initEvent_Original: js.Function1[/* type */ String, Unit]
+  
+  def initUIEvent(typeArg: String): Unit
+  @JSName("initUIEvent")
+  var initUIEvent_Original: js.Function1[/* typeArg */ String, Unit]
   
   var isTrusted: Boolean
   
@@ -63,7 +72,7 @@ trait TargetedCompositionEvent[Target /* <: EventTarget */] extends StObject {
   
   var target: js.UndefOr[EventTarget | Null] = js.undefined
   
-  var timeStamp: Double
+  var timeStamp: DOMHighResTimeStamp
   
   var `type`: String
   
@@ -88,17 +97,19 @@ object TargetedCompositionEvent {
     defaultPrevented: Boolean,
     detail: Double,
     eventPhase: Double,
+    initCompositionEvent: /* typeArg */ String => Unit,
     initEvent: /* type */ String => Unit,
+    initUIEvent: /* typeArg */ String => Unit,
     isTrusted: Boolean,
     preventDefault: () => Unit,
     returnValue: Boolean,
     stopImmediatePropagation: () => Unit,
     stopPropagation: () => Unit,
-    timeStamp: Double,
+    timeStamp: DOMHighResTimeStamp,
     `type`: String,
     which: Double
   ): TargetedCompositionEvent[Target] = {
-    val __obj = js.Dynamic.literal(AT_TARGET = AT_TARGET.asInstanceOf[js.Any], BUBBLING_PHASE = BUBBLING_PHASE.asInstanceOf[js.Any], CAPTURING_PHASE = CAPTURING_PHASE.asInstanceOf[js.Any], NONE = NONE.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], cancelBubble = cancelBubble.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], composed = composed.asInstanceOf[js.Any], composedPath = js.Any.fromFunction0(composedPath), currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], initEvent = js.Any.fromFunction1(initEvent), isTrusted = isTrusted.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), returnValue = returnValue.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), timeStamp = timeStamp.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(AT_TARGET = AT_TARGET.asInstanceOf[js.Any], BUBBLING_PHASE = BUBBLING_PHASE.asInstanceOf[js.Any], CAPTURING_PHASE = CAPTURING_PHASE.asInstanceOf[js.Any], NONE = NONE.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], cancelBubble = cancelBubble.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], composed = composed.asInstanceOf[js.Any], composedPath = js.Any.fromFunction0(composedPath), currentTarget = currentTarget.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], initCompositionEvent = js.Any.fromFunction1(initCompositionEvent), initEvent = js.Any.fromFunction1(initEvent), initUIEvent = js.Any.fromFunction1(initUIEvent), isTrusted = isTrusted.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), returnValue = returnValue.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), timeStamp = timeStamp.asInstanceOf[js.Any], which = which.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetedCompositionEvent[Target]]
   }
@@ -131,7 +142,11 @@ object TargetedCompositionEvent {
     
     inline def setEventPhase(value: Double): Self = StObject.set(x, "eventPhase", value.asInstanceOf[js.Any])
     
+    inline def setInitCompositionEvent(value: /* typeArg */ String => Unit): Self = StObject.set(x, "initCompositionEvent", js.Any.fromFunction1(value))
+    
     inline def setInitEvent(value: /* type */ String => Unit): Self = StObject.set(x, "initEvent", js.Any.fromFunction1(value))
+    
+    inline def setInitUIEvent(value: /* typeArg */ String => Unit): Self = StObject.set(x, "initUIEvent", js.Any.fromFunction1(value))
     
     inline def setIsTrusted(value: Boolean): Self = StObject.set(x, "isTrusted", value.asInstanceOf[js.Any])
     
@@ -157,7 +172,7 @@ object TargetedCompositionEvent {
     
     inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    inline def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
+    inline def setTimeStamp(value: DOMHighResTimeStamp): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

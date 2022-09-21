@@ -12,5 +12,5 @@ trait PortalLayerConstructor
      with Instantiable0[PortalLayer]
      with Instantiable1[/* properties */ PortalLayerProperties, PortalLayer] {
   
-  def fromJSON(json: js.Any): PortalLayer = js.native
+  def fromJSON(json: Any): PortalLayer = js.native
 }

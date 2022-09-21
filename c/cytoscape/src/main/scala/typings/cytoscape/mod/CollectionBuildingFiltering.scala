@@ -195,7 +195,7 @@ trait CollectionBuildingFiltering[TIn, TOut] extends StObject {
     * http://js.cytoscape.org/#eles.map
     */
   def map[T](fn: js.Function3[/* ele */ TIn, /* i */ Double, /* eles */ CollectionArgument, T]): js.Array[T] = js.native
-  def map[T](fn: js.Function3[/* ele */ TIn, /* i */ Double, /* eles */ CollectionArgument, T], thisArg: js.Any): js.Array[T] = js.native
+  def map[T](fn: js.Function3[/* ele */ TIn, /* i */ Double, /* eles */ CollectionArgument, T], thisArg: Any): js.Array[T] = js.native
   
   /**
     * Find a maximum value and the corresponding element.
@@ -209,7 +209,7 @@ trait CollectionBuildingFiltering[TIn, TOut] extends StObject {
     * http://js.cytoscape.org/#eles.max
     */
   def max[T](fn: js.Function3[/* ele */ TIn, /* i */ Double, /* eles */ CollectionArgument, T]): Ele[T] = js.native
-  def max[T](fn: js.Function3[/* ele */ TIn, /* i */ Double, /* eles */ CollectionArgument, T], thisArg: js.Any): Ele[T] = js.native
+  def max[T](fn: js.Function3[/* ele */ TIn, /* i */ Double, /* eles */ CollectionArgument, T], thisArg: Any): Ele[T] = js.native
   
   /**
     * Perform a in-place merge of the given elements into the calling collection.
@@ -249,7 +249,7 @@ trait CollectionBuildingFiltering[TIn, TOut] extends StObject {
     * http://js.cytoscape.org/#eles.min
     */
   def min[T](fn: js.Function3[/* ele */ TIn, /* i */ Double, /* eles */ CollectionArgument, T]): Ele[T] = js.native
-  def min[T](fn: js.Function3[/* ele */ TIn, /* i */ Double, /* eles */ CollectionArgument, T], thisArg: js.Any): Ele[T] = js.native
+  def min[T](fn: js.Function3[/* ele */ TIn, /* i */ Double, /* eles */ CollectionArgument, T], thisArg: Any): Ele[T] = js.native
   
   def n(eles: CollectionArgument): CollectionReturnValue = js.native
   def n(eles: Selector): CollectionReturnValue = js.native

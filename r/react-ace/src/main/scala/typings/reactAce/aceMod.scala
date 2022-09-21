@@ -22,7 +22,7 @@ object aceMod {
   
   @JSImport("react-ace/lib/ace", JSImport.Default)
   @js.native
-  class default protected () extends ReactAce {
+  open class default protected () extends ReactAce {
     def this(props: IAceEditorProps) = this()
   }
   /* static members */
@@ -90,17 +90,17 @@ object aceMod {
     
     var onBeforeLoad: js.UndefOr[js.Function1[/* ace */ TypeofAceBuilds, Unit]] = js.undefined
     
-    var onBlur: js.UndefOr[js.Function2[/* event */ js.Any, /* editor */ js.UndefOr[Editor], Unit]] = js.undefined
+    var onBlur: js.UndefOr[js.Function2[/* event */ Any, /* editor */ js.UndefOr[Editor], Unit]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function2[/* value */ String, /* event */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onChange: js.UndefOr[js.Function2[/* value */ String, /* event */ js.UndefOr[Any], Unit]] = js.undefined
     
     var onCopy: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
     
-    var onCursorChange: js.UndefOr[js.Function2[/* value */ js.Any, /* event */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onCursorChange: js.UndefOr[js.Function2[/* value */ Any, /* event */ js.UndefOr[Any], Unit]] = js.undefined
     
-    var onFocus: js.UndefOr[js.Function2[/* event */ js.Any, /* editor */ js.UndefOr[Editor], Unit]] = js.undefined
+    var onFocus: js.UndefOr[js.Function2[/* event */ Any, /* editor */ js.UndefOr[Editor], Unit]] = js.undefined
     
-    var onInput: js.UndefOr[js.Function1[/* event */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onInput: js.UndefOr[js.Function1[/* event */ js.UndefOr[Any], Unit]] = js.undefined
     
     var onLoad: js.UndefOr[js.Function1[/* editor */ Editor, Unit]] = js.undefined
     
@@ -108,9 +108,9 @@ object aceMod {
     
     var onScroll: js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]] = js.undefined
     
-    var onSelection: js.UndefOr[js.Function2[/* selectedText */ String, /* event */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onSelection: js.UndefOr[js.Function2[/* selectedText */ String, /* event */ js.UndefOr[Any], Unit]] = js.undefined
     
-    var onSelectionChange: js.UndefOr[js.Function2[/* value */ js.Any, /* event */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onSelectionChange: js.UndefOr[js.Function2[/* value */ Any, /* event */ js.UndefOr[Any], Unit]] = js.undefined
     
     var onValidate: js.UndefOr[js.Function1[/* annotations */ js.Array[Annotation], Unit]] = js.undefined
     
@@ -152,7 +152,7 @@ object aceMod {
       
       inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
       
-      inline def setAnnotationsVarargs(value: Annotation*): Self = StObject.set(x, "annotations", js.Array(value :_*))
+      inline def setAnnotationsVarargs(value: Annotation*): Self = StObject.set(x, "annotations", js.Array(value*))
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -162,7 +162,7 @@ object aceMod {
       
       inline def setCommandsUndefined: Self = StObject.set(x, "commands", js.undefined)
       
-      inline def setCommandsVarargs(value: ICommand*): Self = StObject.set(x, "commands", js.Array(value :_*))
+      inline def setCommandsVarargs(value: ICommand*): Self = StObject.set(x, "commands", js.Array(value*))
       
       inline def setCursorStart(value: Double): Self = StObject.set(x, "cursorStart", value.asInstanceOf[js.Any])
       
@@ -184,13 +184,13 @@ object aceMod {
       
       inline def setEnableBasicAutocompletionUndefined: Self = StObject.set(x, "enableBasicAutocompletion", js.undefined)
       
-      inline def setEnableBasicAutocompletionVarargs(value: String*): Self = StObject.set(x, "enableBasicAutocompletion", js.Array(value :_*))
+      inline def setEnableBasicAutocompletionVarargs(value: String*): Self = StObject.set(x, "enableBasicAutocompletion", js.Array(value*))
       
       inline def setEnableLiveAutocompletion(value: Boolean | js.Array[String]): Self = StObject.set(x, "enableLiveAutocompletion", value.asInstanceOf[js.Any])
       
       inline def setEnableLiveAutocompletionUndefined: Self = StObject.set(x, "enableLiveAutocompletion", js.undefined)
       
-      inline def setEnableLiveAutocompletionVarargs(value: String*): Self = StObject.set(x, "enableLiveAutocompletion", js.Array(value :_*))
+      inline def setEnableLiveAutocompletionVarargs(value: String*): Self = StObject.set(x, "enableLiveAutocompletion", js.Array(value*))
       
       inline def setEnableSnippets(value: Boolean): Self = StObject.set(x, "enableSnippets", value.asInstanceOf[js.Any])
       
@@ -220,7 +220,7 @@ object aceMod {
       
       inline def setMarkersUndefined: Self = StObject.set(x, "markers", js.undefined)
       
-      inline def setMarkersVarargs(value: IMarker*): Self = StObject.set(x, "markers", js.Array(value :_*))
+      inline def setMarkersVarargs(value: IMarker*): Self = StObject.set(x, "markers", js.Array(value*))
       
       inline def setMaxLines(value: Double): Self = StObject.set(x, "maxLines", value.asInstanceOf[js.Any])
       
@@ -246,11 +246,11 @@ object aceMod {
       
       inline def setOnBeforeLoadUndefined: Self = StObject.set(x, "onBeforeLoad", js.undefined)
       
-      inline def setOnBlur(value: (/* event */ js.Any, /* editor */ js.UndefOr[Editor]) => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction2(value))
+      inline def setOnBlur(value: (/* event */ Any, /* editor */ js.UndefOr[Editor]) => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction2(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      inline def setOnChange(value: (/* value */ String, /* event */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      inline def setOnChange(value: (/* value */ String, /* event */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -258,15 +258,15 @@ object aceMod {
       
       inline def setOnCopyUndefined: Self = StObject.set(x, "onCopy", js.undefined)
       
-      inline def setOnCursorChange(value: (/* value */ js.Any, /* event */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "onCursorChange", js.Any.fromFunction2(value))
+      inline def setOnCursorChange(value: (/* value */ Any, /* event */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "onCursorChange", js.Any.fromFunction2(value))
       
       inline def setOnCursorChangeUndefined: Self = StObject.set(x, "onCursorChange", js.undefined)
       
-      inline def setOnFocus(value: (/* event */ js.Any, /* editor */ js.UndefOr[Editor]) => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction2(value))
+      inline def setOnFocus(value: (/* event */ Any, /* editor */ js.UndefOr[Editor]) => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction2(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
-      inline def setOnInput(value: /* event */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
+      inline def setOnInput(value: /* event */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
       
       inline def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
       
@@ -282,9 +282,9 @@ object aceMod {
       
       inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
       
-      inline def setOnSelection(value: (/* selectedText */ String, /* event */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "onSelection", js.Any.fromFunction2(value))
+      inline def setOnSelection(value: (/* selectedText */ String, /* event */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "onSelection", js.Any.fromFunction2(value))
       
-      inline def setOnSelectionChange(value: (/* value */ js.Any, /* event */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "onSelectionChange", js.Any.fromFunction2(value))
+      inline def setOnSelectionChange(value: (/* value */ Any, /* event */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "onSelectionChange", js.Any.fromFunction2(value))
       
       inline def setOnSelectionChangeUndefined: Self = StObject.set(x, "onSelectionChange", js.undefined)
       
@@ -306,7 +306,7 @@ object aceMod {
       
       inline def setScrollMarginUndefined: Self = StObject.set(x, "scrollMargin", js.undefined)
       
-      inline def setScrollMarginVarargs(value: Double*): Self = StObject.set(x, "scrollMargin", js.Array(value :_*))
+      inline def setScrollMarginVarargs(value: Double*): Self = StObject.set(x, "scrollMargin", js.Array(value*))
       
       inline def setSetOptions(value: IAceOptions): Self = StObject.set(x, "setOptions", value.asInstanceOf[js.Any])
       
@@ -348,7 +348,7 @@ object aceMod {
   
   @js.native
   trait ReactAce
-    extends Component[IAceEditorProps, js.Object, js.Any] {
+    extends Component[IAceEditorProps, js.Object, Any] {
     
     @JSName("componentDidMount")
     def componentDidMount_MReactAce(): Unit = js.native
@@ -359,7 +359,7 @@ object aceMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MReactAce(): Unit = js.native
     
-    def debounce(fn: js.Any, delay: Double): js.Function1[/* args */ js.Any, Unit] = js.native
+    def debounce(fn: Any, delay: Double): js.Function1[/* args */ Any, Unit] = js.native
     
     var editor: IAceEditor = js.native
     
@@ -372,24 +372,24 @@ object aceMod {
     
     def isInShadow(node: HTMLElement): Boolean = js.native
     
-    def onBlur(event: js.Any): Unit = js.native
+    def onBlur(event: Any): Unit = js.native
     
-    def onChange(event: js.Any): Unit = js.native
+    def onChange(event: Any): Unit = js.native
     
     def onCopy(hasText: Text): Unit = js.native
     
-    def onCursorChange(event: js.Any): Unit = js.native
+    def onCursorChange(event: Any): Unit = js.native
     
-    def onFocus(event: js.Any): Unit = js.native
+    def onFocus(event: Any): Unit = js.native
     
     def onInput(): Unit = js.native
-    def onInput(event: js.Any): Unit = js.native
+    def onInput(event: Any): Unit = js.native
     
     def onPaste(hasText: Text): Unit = js.native
     
     def onScroll(): Unit = js.native
     
-    def onSelectionChange(event: js.Any): Unit = js.native
+    def onSelectionChange(event: Any): Unit = js.native
     
     var refEditor: HTMLElement = js.native
     

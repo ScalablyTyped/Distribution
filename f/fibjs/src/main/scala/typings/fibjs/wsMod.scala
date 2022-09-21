@@ -41,7 +41,7 @@ object wsMod {
   
   @JSImport("ws", "Message")
   @js.native
-  class Message ()
+  open class Message ()
     extends StObject
        with ClassWebSocketMessage
   
@@ -59,7 +59,7 @@ object wsMod {
   
   @JSImport("ws", "Socket")
   @js.native
-  class Socket ()
+  open class Socket ()
     extends StObject
        with ClassWebSocket
   

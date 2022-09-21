@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "BinaryFileAssetTask")
 @js.native
-class BinaryFileAssetTask protected ()
+open class BinaryFileAssetTask protected ()
   extends typings.babylonjs.indexMod.BinaryFileAssetTask {
   /**
     * Creates a new BinaryFileAssetTask object

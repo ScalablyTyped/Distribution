@@ -9,7 +9,7 @@ trait UserPoolDescriptionType extends StObject {
   /**
     * The date the user pool description was created.
     */
-  var CreationDate: js.UndefOr[DateType] = js.undefined
+  var CreationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ID in a user pool description.
@@ -17,14 +17,14 @@ trait UserPoolDescriptionType extends StObject {
   var Id: js.UndefOr[UserPoolIdType] = js.undefined
   
   /**
-    * The AWS Lambda configuration information in a user pool description.
+    * The Lambda configuration information in a user pool description.
     */
   var LambdaConfig: js.UndefOr[LambdaConfigType] = js.undefined
   
   /**
     * The date the user pool description was last modified.
     */
-  var LastModifiedDate: js.UndefOr[DateType] = js.undefined
+  var LastModifiedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name in a user pool description.
@@ -45,7 +45,7 @@ object UserPoolDescriptionType {
   
   extension [Self <: UserPoolDescriptionType](x: Self) {
     
-    inline def setCreationDate(value: DateType): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
@@ -57,7 +57,7 @@ object UserPoolDescriptionType {
     
     inline def setLambdaConfigUndefined: Self = StObject.set(x, "LambdaConfig", js.undefined)
     
-    inline def setLastModifiedDate(value: DateType): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: js.Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
     

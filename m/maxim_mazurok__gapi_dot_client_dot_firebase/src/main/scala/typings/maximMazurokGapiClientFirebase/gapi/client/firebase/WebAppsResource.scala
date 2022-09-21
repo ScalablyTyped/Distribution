@@ -1,12 +1,13 @@
 package typings.maximMazurokGapiClientFirebase.gapi.client.firebase
 
 import typings.gapiClient.gapi.client.Request
+import typings.maximMazurokGapiClientFirebase.anon.AccesstokenAlt
 import typings.maximMazurokGapiClientFirebase.anon.Alt
 import typings.maximMazurokGapiClientFirebase.anon.Fields
 import typings.maximMazurokGapiClientFirebase.anon.Oauthtoken
 import typings.maximMazurokGapiClientFirebase.anon.PrettyPrint
-import typings.maximMazurokGapiClientFirebase.anon.UpdateMask
-import typings.maximMazurokGapiClientFirebase.anon.UploadType
+import typings.maximMazurokGapiClientFirebase.anon.Uploadprotocol
+import typings.maximMazurokGapiClientFirebase.anon.Xgafv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,7 @@ trait WebAppsResource extends StObject {
     * Requests the creation of a new WebApp in the specified FirebaseProject. The result of this call is an `Operation` which can be used to track the provisioning process. The
     * `Operation` is automatically deleted after completion, so there is no need to call `DeleteOperation`.
     */
-  def create(request: UploadType): Request[Operation] = js.native
+  def create(request: Uploadprotocol): Request[Operation] = js.native
   
   /** Gets the specified WebApp. */
   def get(): Request[WebApp] = js.native
@@ -38,5 +39,9 @@ trait WebAppsResource extends StObject {
   
   def patch(request: PrettyPrint, body: WebApp): Request[WebApp] = js.native
   /** Updates the attributes of the specified WebApp. */
-  def patch(request: UpdateMask): Request[WebApp] = js.native
+  def patch(request: Xgafv): Request[WebApp] = js.native
+  
+  /** Removes the specified WebApp from the project. */
+  def remove(request: AccesstokenAlt): Request[Operation] = js.native
+  def remove(request: Alt, body: RemoveWebAppRequest): Request[Operation] = js.native
 }

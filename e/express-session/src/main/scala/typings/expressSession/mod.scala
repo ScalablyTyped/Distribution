@@ -3,8 +3,6 @@ package typings.expressSession
 import org.scalablytyped.runtime.StringDictionary
 import typings.express.mod.RequestHandler
 import typings.express.mod.Request_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.expressSession.anon.SessionPartialSessionData
 import typings.expressSession.expressSessionStrings.auto
 import typings.expressSession.expressSessionStrings.destroy
@@ -15,15 +13,39 @@ import typings.expressSession.expressSessionStrings.strict
 import typings.expressSession.mod.global.Express.Request
 import typings.node.eventsMod.EventEmitter
 import typings.node.eventsMod.EventEmitterOptions
-import typings.std.Date
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  inline def apply(options: SessionOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
+  inline def apply(options: SessionOptions): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
   
   @JSImport("express-session", JSImport.Namespace)
   @js.native
@@ -31,7 +53,7 @@ object mod {
   
   @JSImport("express-session", "Cookie")
   @js.native
-  class Cookie ()
+  open class Cookie ()
     extends StObject
        with CookieOptions {
     
@@ -45,21 +67,21 @@ object mod {
     */
   @JSImport("express-session", "MemoryStore")
   @js.native
-  class MemoryStore () extends Store {
+  open class MemoryStore () extends Store {
     def this(options: EventEmitterOptions) = this()
     
     @JSName("all")
     def all_MMemoryStore(
-      callback: js.Function2[/* err */ js.Any, /* obj */ js.UndefOr[StringDictionary[SessionData] | Null], Unit]
+      callback: js.Function2[/* err */ Any, /* obj */ js.UndefOr[StringDictionary[SessionData] | Null], Unit]
     ): Unit = js.native
     
     @JSName("clear")
     def clear_MMemoryStore(): Unit = js.native
     @JSName("clear")
-    def clear_MMemoryStore(callback: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): Unit = js.native
+    def clear_MMemoryStore(callback: js.Function1[/* err */ js.UndefOr[Any], Unit]): Unit = js.native
     
     @JSName("length")
-    def length_MMemoryStore(callback: js.Function2[/* err */ js.Any, /* length */ Double, Unit]): Unit = js.native
+    def length_MMemoryStore(callback: js.Function2[/* err */ Any, /* length */ Double, Unit]): Unit = js.native
     
     @JSName("touch")
     def touch_MMemoryStore(sid: String, session: SessionData): Unit = js.native
@@ -69,7 +91,7 @@ object mod {
   
   @JSImport("express-session", "Session")
   @js.native
-  class Session protected () extends StObject {
+  open class Session protected () extends StObject {
     /* private */ def this(request: Request, data: SessionData) = this()
     
     /**
@@ -80,7 +102,7 @@ object mod {
     var cookie: Cookie = js.native
     
     /** Destroys the session and will unset the `req.session` property. Once complete, the `callback` will be invoked. */
-    def destroy(callback: js.Function1[/* err */ js.Any, Unit]): this.type = js.native
+    def destroy(callback: js.Function1[/* err */ Any, Unit]): this.type = js.native
     
     /**
       * Each session has a unique ID associated with it.
@@ -90,10 +112,10 @@ object mod {
     var id: String = js.native
     
     /** To regenerate the session simply invoke the method. Once complete, a new SID and `Session` instance will be initialized at `req.session` and the `callback` will be invoked. */
-    def regenerate(callback: js.Function1[/* err */ js.Any, Unit]): this.type = js.native
+    def regenerate(callback: js.Function1[/* err */ Any, Unit]): this.type = js.native
     
     /** Reloads the session data from the store and re-populates the `req.session` object. Once complete, the `callback` will be invoked. */
-    def reload(callback: js.Function1[/* err */ js.Any, Unit]): this.type = js.native
+    def reload(callback: js.Function1[/* err */ Any, Unit]): this.type = js.native
     
     /**
       * Resets the cookie's `maxAge` to `originalMaxAge`
@@ -111,7 +133,7 @@ object mod {
       * There are some cases where it is useful to call this method, for example: redirects, long-lived requests or in WebSockets.
       */
     def save(): this.type = js.native
-    def save(callback: js.Function1[/* err */ js.Any, Unit]): this.type = js.native
+    def save(callback: js.Function1[/* err */ Any, Unit]): this.type = js.native
     
     /** Updates the `maxAge` property. Typically this is not necessary to call, as the session middleware does this for you. */
     def touch(): this.type = js.native
@@ -127,7 +149,7 @@ object mod {
     var all: js.UndefOr[
         js.Function1[
           /* callback */ js.Function2[
-            /* err */ js.Any, 
+            /* err */ Any, 
             /* obj */ js.UndefOr[js.Array[SessionData] | StringDictionary[SessionData] | Null], 
             Unit
           ], 
@@ -137,14 +159,23 @@ object mod {
     
     /** Delete all sessions from the store. */
     var clear: js.UndefOr[
-        js.Function1[/* callback */ js.UndefOr[js.Function1[/* err */ js.UndefOr[js.Any], Unit]], Unit]
+        js.Function1[/* callback */ js.UndefOr[js.Function1[/* err */ js.UndefOr[Any], Unit]], Unit]
       ] = js.native
     
-    def createSession(req: Request_[ParamsDictionary, js.Any, js.Any, Query], session: SessionData): Unit = js.native
+    def createSession(
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      session: SessionData
+    ): Session & SessionData = js.native
     
     /** Destroys the dession with the given session ID. */
     def destroy(sid: String): Unit = js.native
-    def destroy(sid: String, callback: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): Unit = js.native
+    def destroy(sid: String, callback: js.Function1[/* err */ js.UndefOr[Any], Unit]): Unit = js.native
     
     /**
       * Gets the session from the store given a session ID and passes it to `callback`.
@@ -154,27 +185,30 @@ object mod {
       */
     def get(
       sid: String,
-      callback: js.Function2[/* err */ js.Any, /* session */ js.UndefOr[SessionData | Null], Unit]
+      callback: js.Function2[/* err */ Any, /* session */ js.UndefOr[SessionData | Null], Unit]
     ): Unit = js.native
     
     /** Returns the amount of sessions in the store. */
     var length: js.UndefOr[
-        js.Function1[/* callback */ js.Function2[/* err */ js.Any, /* length */ Double, Unit], Unit]
+        js.Function1[/* callback */ js.Function2[/* err */ Any, /* length */ Double, Unit], Unit]
       ] = js.native
     
-    def load(
-      sid: String,
-      callback: js.Function2[/* err */ js.Any, /* session */ js.UndefOr[SessionData], js.Any]
-    ): Unit = js.native
+    def load(sid: String, callback: js.Function2[/* err */ Any, /* session */ js.UndefOr[SessionData], Any]): Unit = js.native
     
     def regenerate(
-      req: Request_[ParamsDictionary, js.Any, js.Any, Query],
-      callback: js.Function1[/* err */ js.UndefOr[js.Any], js.Any]
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      callback: js.Function1[/* err */ js.UndefOr[Any], Any]
     ): Unit = js.native
     
     /** Upsert a session in the store given a session ID and `SessionData` */
     def set(sid: String, session: SessionData): Unit = js.native
-    def set(sid: String, session: SessionData, callback: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): Unit = js.native
+    def set(sid: String, session: SessionData, callback: js.Function1[/* err */ js.UndefOr[Any], Unit]): Unit = js.native
     
     /** "Touches" a given session, resetting the idle timer. */
     var touch: js.UndefOr[
@@ -206,7 +240,7 @@ object mod {
       * @deprecated The `expires` option should not be set directly; instead only use the `maxAge` option
       * @see maxAge
       */
-    var expires: js.UndefOr[Date] = js.undefined
+    var expires: js.UndefOr[js.Date] = js.undefined
     
     /**
       * Specifies the boolean value for the `HttpOnly Set-Cookie` attribute. When truthy, the `HttpOnly` attribute is set, otherwise it is not.
@@ -285,7 +319,7 @@ object mod {
       
       inline def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
       
-      inline def setExpires(value: Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: js.Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
       inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
       
@@ -359,7 +393,16 @@ object mod {
       * Be careful to generate unique IDs so your sessions do not conflict.
       */
     var genid: js.UndefOr[
-        js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], String]
+        js.Function1[
+          /* req */ Request_[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+            Any, 
+            Any, 
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+            Record[String, Any]
+          ], 
+          String
+        ]
       ] = js.undefined
     
     /**
@@ -470,7 +513,15 @@ object mod {
       
       inline def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
       
-      inline def setGenid(value: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => String): Self = StObject.set(x, "genid", js.Any.fromFunction1(value))
+      inline def setGenid(
+        value: /* req */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ] => String
+      ): Self = StObject.set(x, "genid", js.Any.fromFunction1(value))
       
       inline def setGenidUndefined: Self = StObject.set(x, "genid", js.undefined)
       
@@ -496,7 +547,7 @@ object mod {
       
       inline def setSecret(value: String | js.Array[String]): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
       
-      inline def setSecretVarargs(value: String*): Self = StObject.set(x, "secret", js.Array(value :_*))
+      inline def setSecretVarargs(value: String*): Self = StObject.set(x, "secret", js.Array(value*))
       
       inline def setStore(value: Store): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       
@@ -529,11 +580,18 @@ object mod {
           * Even though this property isn't marked as optional, it won't exist until you use the `express-session` middleware
           */
         var sessionID: String
+        
+        /**
+          * The Store in use.
+          * Even though this property isn't marked as optional, it won't exist until you use the `express-session` middleware
+          * The function `generate` is added by express-session
+          */
+        var sessionStore: SessionStore
       }
       object Request {
         
-        inline def apply(session: SessionPartialSessionData, sessionID: String): Request = {
-          val __obj = js.Dynamic.literal(session = session.asInstanceOf[js.Any], sessionID = sessionID.asInstanceOf[js.Any])
+        inline def apply(session: SessionPartialSessionData, sessionID: String, sessionStore: SessionStore): Request = {
+          val __obj = js.Dynamic.literal(session = session.asInstanceOf[js.Any], sessionID = sessionID.asInstanceOf[js.Any], sessionStore = sessionStore.asInstanceOf[js.Any])
           __obj.asInstanceOf[Request]
         }
         
@@ -542,7 +600,15 @@ object mod {
           inline def setSession(value: SessionPartialSessionData): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
           
           inline def setSessionID(value: String): Self = StObject.set(x, "sessionID", value.asInstanceOf[js.Any])
+          
+          inline def setSessionStore(value: SessionStore): Self = StObject.set(x, "sessionStore", value.asInstanceOf[js.Any])
         }
+      }
+      
+      @js.native
+      trait SessionStore extends Store {
+        
+        def generate(req: Request): Unit = js.native
       }
     }
   }

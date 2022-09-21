@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AwsWafWebAclDetails extends StObject {
   
   /**
-    * The action to perform if none of the rules contained in the WebACL match.
+    * The action to perform if none of the rules contained in the web ACL match.
     */
   var DefaultAction: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * A friendly name or description of the WebACL. You can't change the name of a WebACL after you create it.
+    * A friendly name or description of the web ACL. You can't change the name of a web ACL after you create it.
     */
   var Name: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * An array that contains the action for each rule in a WebACL, the priority of the rule, and the ID of the rule.
+    * An array that contains the action for each rule in a web ACL, the priority of the rule, and the ID of the rule.
     */
   var Rules: js.UndefOr[AwsWafWebAclRuleList] = js.undefined
   
   /**
-    * A unique identifier for a WebACL.
+    * A unique identifier for a web ACL.
     */
   var WebAclId: js.UndefOr[NonEmptyString] = js.undefined
 }
@@ -47,7 +47,7 @@ object AwsWafWebAclDetails {
     
     inline def setRulesUndefined: Self = StObject.set(x, "Rules", js.undefined)
     
-    inline def setRulesVarargs(value: AwsWafWebAclRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: AwsWafWebAclRule*): Self = StObject.set(x, "Rules", js.Array(value*))
     
     inline def setWebAclId(value: NonEmptyString): Self = StObject.set(x, "WebAclId", value.asInstanceOf[js.Any])
     

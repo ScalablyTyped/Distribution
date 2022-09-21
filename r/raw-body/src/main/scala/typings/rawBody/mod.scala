@@ -1,6 +1,6 @@
 package typings.rawBody
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Readable
 import typings.rawBody.anon.OptionsencodingEncoding
 import typings.rawBody.rawBodyBooleans.`true`

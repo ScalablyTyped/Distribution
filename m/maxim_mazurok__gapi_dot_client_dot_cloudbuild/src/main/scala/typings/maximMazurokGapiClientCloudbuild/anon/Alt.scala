@@ -25,8 +25,8 @@ trait Alt extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** The name of the `Build` to retry. Format: `projects/{project}/locations/{location}/builds/{build}` */
-  var name: String
+  /** Required. The location where the webhook should be sent. */
+  var location: String
   
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
@@ -42,11 +42,14 @@ trait Alt extends StObject {
   
   /** Upload protocol for media (e.g. "raw", "multipart"). */
   var upload_protocol: js.UndefOr[String] = js.undefined
+  
+  /** For GitHub Enterprise webhooks, this key is used to associate the webhook request with the GitHubEnterpriseConfig to use for validation. */
+  var webhookKey: js.UndefOr[String] = js.undefined
 }
 object Alt {
   
-  inline def apply(name: String): Alt = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  inline def apply(location: String): Alt = {
+    val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any])
     __obj.asInstanceOf[Alt]
   }
   
@@ -76,7 +79,7 @@ object Alt {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
@@ -97,5 +100,9 @@ object Alt {
     inline def setUpload_protocol(value: String): Self = StObject.set(x, "upload_protocol", value.asInstanceOf[js.Any])
     
     inline def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
+    
+    inline def setWebhookKey(value: String): Self = StObject.set(x, "webhookKey", value.asInstanceOf[js.Any])
+    
+    inline def setWebhookKeyUndefined: Self = StObject.set(x, "webhookKey", js.undefined)
   }
 }

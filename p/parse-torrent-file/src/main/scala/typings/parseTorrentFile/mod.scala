@@ -1,7 +1,6 @@
 package typings.parseTorrentFile
 
-import typings.node.Buffer
-import typings.std.Date
+import typings.node.bufferMod.global.Buffer
 import typings.std.File
 import typings.std.Object
 import typings.std.PropertyKey
@@ -29,7 +28,7 @@ object mod {
     
     var announce: js.UndefOr[js.Array[String]] = js.undefined
     
-    var created: js.UndefOr[Date] = js.undefined
+    var created: js.UndefOr[js.Date] = js.undefined
     
     var createdBy: js.UndefOr[String] = js.undefined
     
@@ -74,9 +73,9 @@ object mod {
       
       inline def setAnnounceUndefined: Self = StObject.set(x, "announce", js.undefined)
       
-      inline def setAnnounceVarargs(value: String*): Self = StObject.set(x, "announce", js.Array(value :_*))
+      inline def setAnnounceVarargs(value: String*): Self = StObject.set(x, "announce", js.Array(value*))
       
-      inline def setCreated(value: Date): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: js.Date): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
       inline def setCreatedBy(value: String): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
       
@@ -88,7 +87,7 @@ object mod {
       
       inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      inline def setFilesVarargs(value: ParsedFile*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: ParsedFile*): Self = StObject.set(x, "files", js.Array(value*))
       
       inline def setInfo(value: TorrentInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
@@ -126,7 +125,7 @@ object mod {
       
       inline def setPiecesUndefined: Self = StObject.set(x, "pieces", js.undefined)
       
-      inline def setPiecesVarargs(value: String*): Self = StObject.set(x, "pieces", js.Array(value :_*))
+      inline def setPiecesVarargs(value: String*): Self = StObject.set(x, "pieces", js.Array(value*))
       
       inline def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
       
@@ -136,7 +135,7 @@ object mod {
       
       inline def setUrlListUndefined: Self = StObject.set(x, "urlList", js.undefined)
       
-      inline def setUrlListVarargs(value: String*): Self = StObject.set(x, "urlList", js.Array(value :_*))
+      inline def setUrlListVarargs(value: String*): Self = StObject.set(x, "urlList", js.Array(value*))
     }
   }
   
@@ -200,7 +199,7 @@ object mod {
       
       inline def `setAnnounce-listUndefined`: Self = StObject.set(x, "announce-list", js.undefined)
       
-      inline def `setAnnounce-listVarargs`(value: js.Array[String]*): Self = StObject.set(x, "announce-list", js.Array(value :_*))
+      inline def `setAnnounce-listVarargs`(value: js.Array[String]*): Self = StObject.set(x, "announce-list", js.Array(value*))
       
       inline def setAnnounceUndefined: Self = StObject.set(x, "announce", js.undefined)
       
@@ -254,7 +253,7 @@ object mod {
       
       inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      inline def setFilesVarargs(value: File*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: File*): Self = StObject.set(x, "files", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

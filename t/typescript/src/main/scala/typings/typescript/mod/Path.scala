@@ -9,5 +9,5 @@ trait Path
   extends StObject
      with typings.std.String {
   
-  var __pathBrand: js.Any = js.native
+  var __pathBrand: Any = js.native
 }

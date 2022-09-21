@@ -1,20 +1,19 @@
 package typings.moduleDeps
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.browserResolve.mod.SyncOpts
+import typings.moduleDeps.anon.Basedir
 import typings.moduleDeps.anon.Builtin
-import typings.moduleDeps.anon.Deps
 import typings.moduleDeps.anon.Dictprop
 import typings.moduleDeps.anon.Entry
-import typings.moduleDeps.anon.Id
 import typings.moduleDeps.anon.Modules
+import typings.moduleDeps.anon.PackageObjectdirnamestrin
+import typings.moduleDeps.anon.PartialParentObjectidstri
 import typings.moduleDeps.moduleDepsStrings._package
+import typings.moduleDeps.moduleDepsStrings.error
 import typings.moduleDeps.moduleDepsStrings.file
 import typings.moduleDeps.moduleDepsStrings.missing
 import typings.moduleDeps.moduleDepsStrings.transform
-import typings.node.NodeJS.ReadWriteStream
-import typings.node.NodeJS.ReadableStream
-import typings.std.Error
+import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,7 +31,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  type CacheCallback = js.Function2[/* err */ Error | Null, /* res */ js.UndefOr[Deps], Unit]
+  type CacheCallback = js.Function2[/* err */ js.Error | Null, /* res */ js.UndefOr[PersistentCacheItem], Unit]
   
   trait InputRow extends StObject {
     
@@ -75,13 +74,13 @@ object mod {
     
     var global: js.UndefOr[Boolean] = js.undefined
     
-    var options: js.Any
+    var options: Any
     
-    var transform: String | js.Function0[js.Any]
+    var transform: String | js.Function0[Any]
   }
   object InputTransform {
     
-    inline def apply(options: js.Any, transform: String | js.Function0[js.Any]): InputTransform = {
+    inline def apply(options: Any, transform: String | js.Function0[Any]): InputTransform = {
       val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any])
       __obj.asInstanceOf[InputTransform]
     }
@@ -92,18 +91,17 @@ object mod {
       
       inline def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
       
-      inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      inline def setTransform(value: String | js.Function0[js.Any]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+      inline def setTransform(value: String | js.Function0[Any]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
       
-      inline def setTransformFunction0(value: () => js.Any): Self = StObject.set(x, "transform", js.Any.fromFunction0(value))
+      inline def setTransformFunction0(value: () => Any): Self = StObject.set(x, "transform", js.Any.fromFunction0(value))
     }
   }
   
-  @js.native
-  trait ModuleDepsObject
-    extends StObject
-       with ReadWriteStream {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream * / any */ @js.native
+  trait ModuleDepsObject extends StObject {
     
     def _flush(): Unit = js.native
     
@@ -113,60 +111,67 @@ object mod {
     def _transform(row: InputRow, enc: String, next: js.Function0[Unit]): Unit = js.native
     def _transform(row: InputTransform, enc: String, next: js.Function0[Unit]): Unit = js.native
     
-    def getTransforms(file: String, pkg: PackageObject): ReadWriteStream = js.native
-    def getTransforms(file: String, pkg: PackageObject, opts: Builtin): ReadWriteStream = js.native
+    def getTransforms(file: String, pkg: PackageObject): Any = js.native
+    def getTransforms(file: String, pkg: PackageObject, opts: Builtin): Any = js.native
     
-    def lookupPackage(file: String, cb: js.Function3[/* a */ js.Any, /* b */ js.Any, /* c */ js.UndefOr[js.Any], js.Any]): Unit = js.native
+    def lookupPackage(file: String, cb: js.Function3[/* a */ Any, /* b */ Any, /* c */ js.UndefOr[Any], Any]): Unit = js.native
     
+    def on(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    def on(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    /**
+      * When a transform stream emits an error it is passed along to this stream an an 'error' event.
+      */
+    @JSName("on")
+    def on_error(event: error, listener: js.Function1[/* err */ Any, Any]): this.type = js.native
     /**
       * Every time a file is read, this event fires with the file path.
       */
     @JSName("on")
-    def on_file(event: file, listener: js.Function2[/* file */ String, /* id */ String, js.Any]): this.type = js.native
+    def on_file(event: file, listener: js.Function2[/* file */ String, /* id */ String, Any]): this.type = js.native
     /**
       * When opts.ignoreMissing is enabled, this event fires for each missing package.
       */
     @JSName("on")
-    def on_missing(event: missing, listener: js.Function2[/* id */ String, /* parent */ Dictprop, js.Any]): this.type = js.native
+    def on_missing(event: missing, listener: js.Function2[/* id */ String, /* parent */ Dictprop, Any]): this.type = js.native
     /**
       * Every time a package is read, this event fires. The directory name of the package is available in pkg.__dirname.
       */
     @JSName("on")
-    def on_package(event: _package, listener: js.Function1[/* package */ PackageObject, js.Any]): this.type = js.native
+    def on_package(event: _package, listener: js.Function1[/* package */ PackageObject, Any]): this.type = js.native
     /**
       * Every time a transform is applied to a file, a 'transform' event fires with the instantiated transform stream tr.
       */
     @JSName("on")
-    def on_transform(event: transform, listener: js.Function2[/* tr */ js.Any, /* file */ String, js.Any]): this.type = js.native
+    def on_transform(event: transform, listener: js.Function2[/* tr */ ReadableStream[Any], /* file */ String, Any]): this.type = js.native
     
-    def parseDeps(file: String, src: String, cb: js.Any): js.Array[js.Any] = js.native
+    def parseDeps(file: String, src: String, cb: Any): js.Array[Any] = js.native
     
-    def readFile(file: String): ReadableStream = js.native
-    def readFile(file: String, id: js.Any): ReadableStream = js.native
-    def readFile(file: String, id: js.Any, pkg: PackageObject): ReadableStream = js.native
-    def readFile(file: String, id: Unit, pkg: PackageObject): ReadableStream = js.native
+    def readFile(file: String): ReadableStream[Any] = js.native
+    def readFile(file: String, id: Any): ReadableStream[Any] = js.native
+    def readFile(file: String, id: Any, pkg: PackageObject): ReadableStream[Any] = js.native
+    def readFile(file: String, id: Unit, pkg: PackageObject): ReadableStream[Any] = js.native
     
     def resolve(
       id: String,
-      parent: Id,
+      parent: PartialParentObjectidstri,
       cb: js.Function4[
-          /* err */ Error | Null, 
+          /* err */ js.Error | Null, 
           /* file */ js.UndefOr[String], 
           /* pkg */ js.UndefOr[PackageObject], 
-          /* fakePath */ js.UndefOr[js.Any], 
-          js.Any
+          /* fakePath */ js.UndefOr[Any], 
+          Any
         ]
-    ): js.Any = js.native
+    ): Any = js.native
     
     def walk(
       id: String,
       parent: Modules,
-      cb: js.Function2[/* err */ Error | Null, /* file */ js.UndefOr[String], Unit]
+      cb: js.Function2[/* err */ js.Error | Null, /* file */ js.UndefOr[String], Unit]
     ): Unit = js.native
     def walk(
       id: Entry,
       parent: Modules,
-      cb: js.Function2[/* err */ Error | Null, /* file */ js.UndefOr[String], Unit]
+      cb: js.Function2[/* err */ js.Error | Null, /* file */ js.UndefOr[String], Unit]
     ): Unit = js.native
   }
   
@@ -175,7 +180,7 @@ object mod {
     */
   trait Options
     extends StObject
-       with /* prop */ StringDictionary[js.Any] {
+       with /* prop */ StringDictionary[Any] {
     
     // un-documented options used by module-deps
     var basedir: js.UndefOr[String] = js.undefined
@@ -183,7 +188,7 @@ object mod {
     /**
       * An object mapping filenames to file objects to skip costly io
       */
-    var cache: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var cache: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     /**
       * A custom dependency detection function. opts.detect(source) should return an array of dependency module names. By default detective is used
@@ -205,14 +210,14 @@ object mod {
       */
     var filter: js.UndefOr[js.Function1[/* id */ String, Boolean]] = js.undefined
     
-    var globalTransform: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var globalTransform: js.UndefOr[Transform | js.Array[Transform]] = js.undefined
     
     /**
       * Ignore files that failed to resolve
       */
     var ignoreMissing: js.UndefOr[Boolean] = js.undefined
     
-    var modules: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var modules: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     /**
       * An array of absolute paths to not parse for dependencies.
@@ -224,7 +229,7 @@ object mod {
       * An object mapping filenames to their parent package.json contents
       * for browser fields, main entries, and transforms
       */
-    var packageCache: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var packageCache: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     // tslint:disable-line:void-return
     /**
@@ -246,7 +251,7 @@ object mod {
           /* file */ String, 
           /* id */ String, 
           /* pkg */ PackageObject, 
-          /* fallback */ js.Function2[/* dataAsString */ String, /* cb */ CacheCallback, Unit], 
+          /* fallback */ js.Function2[/* dataAsString */ js.UndefOr[String | Null], /* cb */ CacheCallback, Unit], 
           /* cb */ CacheCallback, 
           Unit
         ]
@@ -266,12 +271,12 @@ object mod {
     var resolve: js.UndefOr[
         js.Function3[
           /* id */ String, 
-          /* opts */ SyncOpts, 
+          /* opts */ ParentObject, 
           /* cb */ js.Function4[
-            /* err */ js.UndefOr[Error | Null], 
+            /* err */ js.UndefOr[js.Error | Null], 
             /* file */ js.UndefOr[String], 
             /* pkg */ js.UndefOr[PackageObject], 
-            /* fakePath */ js.UndefOr[js.Any], 
+            /* fakePath */ js.UndefOr[Any], 
             Unit
           ], 
           Unit
@@ -281,7 +286,7 @@ object mod {
     /**
       * A string or array of string transforms
       */
-    var transform: js.UndefOr[String | js.Array[String]] = js.undefined
+    var transform: js.UndefOr[Transform | js.Array[Transform]] = js.undefined
     
     /**
       * An array path of strings showing where to look in the package.json
@@ -302,7 +307,7 @@ object mod {
       
       inline def setBasedirUndefined: Self = StObject.set(x, "basedir", js.undefined)
       
-      inline def setCache(value: StringDictionary[js.Any]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: StringDictionary[Any]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
       inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
@@ -318,7 +323,7 @@ object mod {
       
       inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value*))
       
       inline def setFileCache(value: StringDictionary[String]): Self = StObject.set(x, "fileCache", value.asInstanceOf[js.Any])
       
@@ -328,17 +333,21 @@ object mod {
       
       inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      inline def setGlobalTransform(value: js.Array[js.Any]): Self = StObject.set(x, "globalTransform", value.asInstanceOf[js.Any])
+      inline def setGlobalTransform(value: Transform | js.Array[Transform]): Self = StObject.set(x, "globalTransform", value.asInstanceOf[js.Any])
+      
+      inline def setGlobalTransformFunction2(
+        value: (/* file */ String, /* opts */ Basedir) => /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
+      ): Self = StObject.set(x, "globalTransform", js.Any.fromFunction2(value))
       
       inline def setGlobalTransformUndefined: Self = StObject.set(x, "globalTransform", js.undefined)
       
-      inline def setGlobalTransformVarargs(value: js.Any*): Self = StObject.set(x, "globalTransform", js.Array(value :_*))
+      inline def setGlobalTransformVarargs(value: Transform*): Self = StObject.set(x, "globalTransform", js.Array(value*))
       
       inline def setIgnoreMissing(value: Boolean): Self = StObject.set(x, "ignoreMissing", value.asInstanceOf[js.Any])
       
       inline def setIgnoreMissingUndefined: Self = StObject.set(x, "ignoreMissing", js.undefined)
       
-      inline def setModules(value: StringDictionary[js.Any]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
+      inline def setModules(value: StringDictionary[Any]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
       
       inline def setModulesUndefined: Self = StObject.set(x, "modules", js.undefined)
       
@@ -346,9 +355,9 @@ object mod {
       
       inline def setNoParseUndefined: Self = StObject.set(x, "noParse", js.undefined)
       
-      inline def setNoParseVarargs(value: String*): Self = StObject.set(x, "noParse", js.Array(value :_*))
+      inline def setNoParseVarargs(value: String*): Self = StObject.set(x, "noParse", js.Array(value*))
       
-      inline def setPackageCache(value: StringDictionary[js.Any]): Self = StObject.set(x, "packageCache", value.asInstanceOf[js.Any])
+      inline def setPackageCache(value: StringDictionary[Any]): Self = StObject.set(x, "packageCache", value.asInstanceOf[js.Any])
       
       inline def setPackageCacheUndefined: Self = StObject.set(x, "packageCache", js.undefined)
       
@@ -360,10 +369,10 @@ object mod {
       
       inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
       
-      inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
+      inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value*))
       
       inline def setPersistentCache(
-        value: (/* file */ String, /* id */ String, /* pkg */ PackageObject, /* fallback */ js.Function2[/* dataAsString */ String, /* cb */ CacheCallback, Unit], /* cb */ CacheCallback) => Unit
+        value: (/* file */ String, /* id */ String, /* pkg */ PackageObject, /* fallback */ js.Function2[/* dataAsString */ js.UndefOr[String | Null], /* cb */ CacheCallback, Unit], /* cb */ CacheCallback) => Unit
       ): Self = StObject.set(x, "persistentCache", js.Any.fromFunction5(value))
       
       inline def setPersistentCacheUndefined: Self = StObject.set(x, "persistentCache", js.undefined)
@@ -373,39 +382,143 @@ object mod {
       inline def setPostFilterUndefined: Self = StObject.set(x, "postFilter", js.undefined)
       
       inline def setResolve(
-        value: (/* id */ String, /* opts */ SyncOpts, /* cb */ js.Function4[
-              /* err */ js.UndefOr[Error | Null], 
+        value: (/* id */ String, /* opts */ ParentObject, /* cb */ js.Function4[
+              /* err */ js.UndefOr[js.Error | Null], 
               /* file */ js.UndefOr[String], 
               /* pkg */ js.UndefOr[PackageObject], 
-              /* fakePath */ js.UndefOr[js.Any], 
+              /* fakePath */ js.UndefOr[Any], 
               Unit
             ]) => Unit
       ): Self = StObject.set(x, "resolve", js.Any.fromFunction3(value))
       
       inline def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
       
-      inline def setTransform(value: String | js.Array[String]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+      inline def setTransform(value: Transform | js.Array[Transform]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+      
+      inline def setTransformFunction2(
+        value: (/* file */ String, /* opts */ Basedir) => /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
+      ): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
       
       inline def setTransformKey(value: js.Array[String]): Self = StObject.set(x, "transformKey", value.asInstanceOf[js.Any])
       
       inline def setTransformKeyUndefined: Self = StObject.set(x, "transformKey", js.undefined)
       
-      inline def setTransformKeyVarargs(value: String*): Self = StObject.set(x, "transformKey", js.Array(value :_*))
+      inline def setTransformKeyVarargs(value: String*): Self = StObject.set(x, "transformKey", js.Array(value*))
       
       inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       
-      inline def setTransformVarargs(value: String*): Self = StObject.set(x, "transform", js.Array(value :_*))
+      inline def setTransformVarargs(value: Transform*): Self = StObject.set(x, "transform", js.Array(value*))
     }
   }
   
   /**
+    * Parsed package.json file data, as obtained from running JSON.parse on the file.
+    *
     * Placeholder, feel free to redefine or put in a pull request to improve
     */
-  type PackageObject = StringDictionary[js.Any]
+  type PackageObject = StringDictionary[Any]
+  
+  trait ParentObject extends StObject {
+    
+    @JSName("package")
+    var _package: js.UndefOr[Any] = js.undefined
+    
+    var basedir: String
+    
+    // undocumented, see 'Options' interface
+    var extensions: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var filename: String
+    
+    var id: String
+    
+    var inNodeModules: js.UndefOr[Boolean] = js.undefined
+    
+    var modules: js.UndefOr[StringDictionary[Any]] = js.undefined
+    
+    var packageFilter: js.UndefOr[js.Function2[/* p */ PackageObject, /* x */ String, PackageObjectdirnamestrin]] = js.undefined
+    
+    var paths: js.Array[String]
+  }
+  object ParentObject {
+    
+    inline def apply(basedir: String, filename: String, id: String, paths: js.Array[String]): ParentObject = {
+      val __obj = js.Dynamic.literal(basedir = basedir.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], paths = paths.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ParentObject]
+    }
+    
+    extension [Self <: ParentObject](x: Self) {
+      
+      inline def setBasedir(value: String): Self = StObject.set(x, "basedir", value.asInstanceOf[js.Any])
+      
+      inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      
+      inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+      
+      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value*))
+      
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setInNodeModules(value: Boolean): Self = StObject.set(x, "inNodeModules", value.asInstanceOf[js.Any])
+      
+      inline def setInNodeModulesUndefined: Self = StObject.set(x, "inNodeModules", js.undefined)
+      
+      inline def setModules(value: StringDictionary[Any]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
+      
+      inline def setModulesUndefined: Self = StObject.set(x, "modules", js.undefined)
+      
+      inline def setPackageFilter(value: (/* p */ PackageObject, /* x */ String) => PackageObjectdirnamestrin): Self = StObject.set(x, "packageFilter", js.Any.fromFunction2(value))
+      
+      inline def setPackageFilterUndefined: Self = StObject.set(x, "packageFilter", js.undefined)
+      
+      inline def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+      
+      inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value*))
+      
+      inline def set_package(value: Any): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
+      
+      inline def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
+    }
+  }
+  
+  trait PersistentCacheItem extends StObject {
+    
+    @JSName("package")
+    var _package: PackageObject
+    
+    var deps: StringDictionary[Boolean]
+    
+    var source: String
+  }
+  object PersistentCacheItem {
+    
+    inline def apply(_package: PackageObject, deps: StringDictionary[Boolean], source: String): PersistentCacheItem = {
+      val __obj = js.Dynamic.literal(deps = deps.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+      __obj.updateDynamic("package")(_package.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PersistentCacheItem]
+    }
+    
+    extension [Self <: PersistentCacheItem](x: Self) {
+      
+      inline def setDeps(value: StringDictionary[Boolean]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
+      
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      
+      inline def set_package(value: PackageObject): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type Transform = String | (js.Function2[
+    /* file */ String, 
+    /* opts */ Basedir, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
+  ])
   
   trait TransformObject extends StObject {
     
-    var deps: StringDictionary[js.Any]
+    var deps: StringDictionary[Any]
     
     var entry: Boolean
     
@@ -420,7 +533,7 @@ object mod {
   object TransformObject {
     
     inline def apply(
-      deps: StringDictionary[js.Any],
+      deps: StringDictionary[Any],
       entry: Boolean,
       expose: String,
       file: String,
@@ -433,7 +546,7 @@ object mod {
     
     extension [Self <: TransformObject](x: Self) {
       
-      inline def setDeps(value: StringDictionary[js.Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
+      inline def setDeps(value: StringDictionary[Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
       
       inline def setEntry(value: Boolean): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
       

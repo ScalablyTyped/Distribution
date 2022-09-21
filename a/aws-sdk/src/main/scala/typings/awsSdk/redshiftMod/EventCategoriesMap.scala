@@ -29,7 +29,7 @@ object EventCategoriesMap {
     
     inline def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
     
-    inline def setEventsVarargs(value: EventInfoMap*): Self = StObject.set(x, "Events", js.Array(value :_*))
+    inline def setEventsVarargs(value: EventInfoMap*): Self = StObject.set(x, "Events", js.Array(value*))
     
     inline def setSourceType(value: String): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
     

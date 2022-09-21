@@ -1,7 +1,7 @@
 
 # Scala.js typings for d3-zoom
 
-Typings are for version 2.0
+Typings are for version 3.0
 
 ## Library description:
 Pan and zoom SVG, HTML or Canvas using mouse or touch input.
@@ -10,10 +10,10 @@ Pan and zoom SVG, HTML or Canvas using mouse or touch input.
 | ------------------ | :-------------: |
 | Full name          | d3-zoom |
 | Keywords           | d3, d3-module, zoom, behavior, interaction |
-| # releases         | 8 |
-| # dependents       | 150 |
-| # downloads        | 39760489 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 7187301.0 |
+| # stars            | 382.0 |
 
 ## Links
 - [Homepage](https://d3js.org/d3-zoom/)

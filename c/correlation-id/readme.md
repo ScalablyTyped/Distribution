@@ -10,10 +10,10 @@ Correlation id for node.js
 | ------------------ | :-------------: |
 | Full name          | correlation-id |
 | Keywords           | logging, correlation, debug |
-| # releases         | 6 |
-| # dependents       | 5 |
-| # downloads        | 440869 |
-| # stars            | 5 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 83318.33333333333 |
+| # stars            | 36.0 |
 
 ## Links
 - [Homepage](https://github.com/toboid/correlation-id#readme)

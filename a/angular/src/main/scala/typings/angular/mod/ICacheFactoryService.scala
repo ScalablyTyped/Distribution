@@ -37,5 +37,5 @@ trait ICacheFactoryService extends StObject {
     * Get information about all the caches that have been created.
     * @returns key-value map of cacheId to the result of calling cache#info
     */
-  def info(): js.Any = js.native
+  def info(): Any = js.native
 }

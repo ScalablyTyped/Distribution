@@ -30,7 +30,7 @@ object IVersionDef {
     
     inline def setBadConsumersUndefined: Self = StObject.set(x, "badConsumers", js.undefined)
     
-    inline def setBadConsumersVarargs(value: Double*): Self = StObject.set(x, "badConsumers", js.Array(value :_*))
+    inline def setBadConsumersVarargs(value: Double*): Self = StObject.set(x, "badConsumers", js.Array(value*))
     
     inline def setMinConsumer(value: Double): Self = StObject.set(x, "minConsumer", value.asInstanceOf[js.Any])
     

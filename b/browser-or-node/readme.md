@@ -1,7 +1,7 @@
 
 # Scala.js typings for browser-or-node
 
-Typings are for version 1.2
+Typings are for version 1.3
 
 ## Library description:
 Check where the code is running in the browser or node.js
@@ -10,10 +10,10 @@ Check where the code is running in the browser or node.js
 | ------------------ | :-------------: |
 | Full name          | browser-or-node |
 | Keywords           | npm, browser, node, is browser, is node, is browser node |
-| # releases         | 3 |
-| # dependents       | 70 |
-| # downloads        | 1077267 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1115494.0 |
+| # stars            | 176.0 |
 
 ## Links
 - [Homepage](https://github.com/flexdinesh/browser-or-node#readme)

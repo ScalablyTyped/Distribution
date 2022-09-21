@@ -79,6 +79,22 @@ object cadespluginStrings {
   inline def `urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34102001-gostr3411`: `urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34102001-gostr3411` = "urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34102001-gostr3411".asInstanceOf[`urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34102001-gostr3411`]
   
   @js.native
+  sealed trait `urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34102012-gostr34112012-256` extends StObject
+  inline def `urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34102012-gostr34112012-256`: `urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34102012-gostr34112012-256` = "urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34102012-gostr34112012-256".asInstanceOf[`urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34102012-gostr34112012-256`]
+  
+  @js.native
+  sealed trait `urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34102012-gostr34112012-512` extends StObject
+  inline def `urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34102012-gostr34112012-512`: `urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34102012-gostr34112012-512` = "urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34102012-gostr34112012-512".asInstanceOf[`urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34102012-gostr34112012-512`]
+  
+  @js.native
   sealed trait urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr3411 extends StObject
   inline def urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr3411: urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr3411 = "urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr3411".asInstanceOf[urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr3411]
+  
+  @js.native
+  sealed trait `urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34112012-256` extends StObject
+  inline def `urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34112012-256`: `urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34112012-256` = "urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34112012-256".asInstanceOf[`urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34112012-256`]
+  
+  @js.native
+  sealed trait `urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34112012-512` extends StObject
+  inline def `urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34112012-512`: `urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34112012-512` = "urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34112012-512".asInstanceOf[`urnColonietfColonparamsColonxmlColonnsColoncpxmlsecColonalgorithmsColongostr34112012-512`]
 }

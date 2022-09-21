@@ -11,6 +11,8 @@ trait ModalProps extends StObject {
   
   var animationDuration: js.UndefOr[Double] = js.undefined
   
+  var children: js.UndefOr[ReactNode] = js.undefined
+  
   var footer: js.UndefOr[ReactNode] = js.undefined
   
   var hasOverlay: js.UndefOr[Boolean] = js.undefined
@@ -73,6 +75,10 @@ object ModalProps {
     inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
     
     inline def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
+    
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setFooter(value: ReactNode): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     
@@ -162,7 +168,7 @@ object ModalProps {
     
     inline def setSwipeDirectionUndefined: Self = StObject.set(x, "swipeDirection", js.undefined)
     
-    inline def setSwipeDirectionVarargs(value: SwipeDirection*): Self = StObject.set(x, "swipeDirection", js.Array(value :_*))
+    inline def setSwipeDirectionVarargs(value: SwipeDirection*): Self = StObject.set(x, "swipeDirection", js.Array(value*))
     
     inline def setSwipeThreshold(value: Double): Self = StObject.set(x, "swipeThreshold", value.asInstanceOf[js.Any])
     

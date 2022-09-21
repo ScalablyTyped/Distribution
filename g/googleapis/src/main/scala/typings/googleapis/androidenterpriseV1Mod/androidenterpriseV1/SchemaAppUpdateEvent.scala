@@ -4,19 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An event generated when a new version of an app is uploaded to Google Play.
-  * Notifications are sent for new public versions only: alpha, beta, or canary
-  * versions do not generate this event. To fetch up-to-date version history
-  * for an app, use Products.Get on the EMM API.
-  */
 trait SchemaAppUpdateEvent extends StObject {
   
   /**
-    * The id of the product (e.g. &quot;app:com.google.android.gm&quot;) that
-    * was updated. This field will always be present.
+    * The id of the product (e.g. "app:com.google.android.gm") that was updated. This field will always be present.
     */
-  var productId: js.UndefOr[String] = js.undefined
+  var productId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaAppUpdateEvent {
   
@@ -28,6 +21,8 @@ object SchemaAppUpdateEvent {
   extension [Self <: SchemaAppUpdateEvent](x: Self) {
     
     inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+    
+    inline def setProductIdNull: Self = StObject.set(x, "productId", null)
     
     inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
   }

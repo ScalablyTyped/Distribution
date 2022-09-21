@@ -19,7 +19,7 @@ trait CustomXmlPart extends StObject {
     *
     * @remarks
     *
-    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+    * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * You can add multiple event handlers for the specified eventType as long as the name of each event handler function is unique.
     *
@@ -30,26 +30,22 @@ trait CustomXmlPart extends StObject {
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     */
-  def addHandlerAsync(eventType: EventType, handler: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def addHandlerAsync(eventType: EventType, handler: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def addHandlerAsync(
     eventType: EventType,
-    handler: js.Function1[/* result */ js.Any, Unit],
+    handler: js.Function1[/* result */ Any, Unit],
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def addHandlerAsync(
     eventType: EventType,
-    handler: js.Function1[/* result */ js.Any, Unit],
+    handler: js.Function1[/* result */ Any, Unit],
     options: Unit,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  def addHandlerAsync(eventType: EventType, handler: js.Function1[/* result */ Any, Unit], options: AsyncContextOptions): Unit = js.native
   def addHandlerAsync(
     eventType: EventType,
-    handler: js.Function1[/* result */ js.Any, Unit],
-    options: AsyncContextOptions
-  ): Unit = js.native
-  def addHandlerAsync(
-    eventType: EventType,
-    handler: js.Function1[/* result */ js.Any, Unit],
+    handler: js.Function1[/* result */ Any, Unit],
     options: AsyncContextOptions,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
@@ -64,7 +60,7 @@ trait CustomXmlPart extends StObject {
     *
     * @remarks
     *
-    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+    * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -80,7 +76,7 @@ trait CustomXmlPart extends StObject {
     *
     * @remarks
     *
-    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+    * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param xPath An XPath expression that specifies the nodes you want returned. Required.
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -106,7 +102,7 @@ trait CustomXmlPart extends StObject {
     *
     * @remarks
     *
-    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+    * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -133,7 +129,7 @@ trait CustomXmlPart extends StObject {
     *
     * @remarks
     *
-    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+    * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * @param eventType Specifies the type of event to remove. For a CustomXmlPart object, the eventType parameter can be specified as
     *                  `Office.EventType.NodeDeleted`, `Office.EventType.NodeInserted`, and `Office.EventType.NodeReplaced`.
@@ -142,26 +138,22 @@ trait CustomXmlPart extends StObject {
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     */
   def removeHandlerAsync(eventType: EventType): Unit = js.native
-  def removeHandlerAsync(eventType: EventType, handler: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def removeHandlerAsync(eventType: EventType, handler: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def removeHandlerAsync(
     eventType: EventType,
-    handler: js.Function1[/* result */ js.Any, Unit],
+    handler: js.Function1[/* result */ Any, Unit],
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def removeHandlerAsync(
     eventType: EventType,
-    handler: js.Function1[/* result */ js.Any, Unit],
+    handler: js.Function1[/* result */ Any, Unit],
     options: Unit,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
+  def removeHandlerAsync(eventType: EventType, handler: js.Function1[/* result */ Any, Unit], options: RemoveHandlerOptions): Unit = js.native
   def removeHandlerAsync(
     eventType: EventType,
-    handler: js.Function1[/* result */ js.Any, Unit],
-    options: RemoveHandlerOptions
-  ): Unit = js.native
-  def removeHandlerAsync(
-    eventType: EventType,
-    handler: js.Function1[/* result */ js.Any, Unit],
+    handler: js.Function1[/* result */ Any, Unit],
     options: RemoveHandlerOptions,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native

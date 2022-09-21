@@ -8,7 +8,7 @@ object optionsMod {
   
   @JSImport("xmlcreate/lib/options", "StringOptions")
   @js.native
-  class StringOptions protected ()
+  open class StringOptions protected ()
     extends StObject
        with IStringOptions {
     def this(options: IStringOptions) = this()

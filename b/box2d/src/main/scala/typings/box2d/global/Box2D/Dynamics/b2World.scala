@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Box2D.Dynamics.b2World")
 @js.native
-class b2World protected ()
+open class b2World protected ()
   extends StObject
      with typings.box2d.Box2D.Dynamics.b2World {
   /**

@@ -12,7 +12,7 @@ trait DeletePackageVersionsResult extends StObject {
   var failedVersions: js.UndefOr[PackageVersionErrorMap] = js.undefined
   
   /**
-    *  A list of the package versions that were successfully deleted. 
+    *  A list of the package versions that were successfully deleted. The status of every successful version will be Deleted. 
     */
   var successfulVersions: js.UndefOr[SuccessfulPackageVersionInfoMap] = js.undefined
 }

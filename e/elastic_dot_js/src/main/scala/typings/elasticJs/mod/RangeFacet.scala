@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elastic.js", "RangeFacet")
 @js.native
-class RangeFacet protected ()
+open class RangeFacet protected ()
   extends StObject
      with Facet {
   /*
@@ -100,7 +100,7 @@ class RangeFacet protected ()
     Retrieves the internal facet object. This is typically used by
     internal API functions so use with caution.
     */
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
   
   /*
     Allows you to specify an alternate value field to be used to compute statistical information.

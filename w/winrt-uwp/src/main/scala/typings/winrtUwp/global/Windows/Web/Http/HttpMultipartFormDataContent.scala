@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.Web.Http.HttpMultipartFormDataContent")
 @js.native
 /** Initializes a new instance of the HttpMultipartFormDataContent class. */
-class HttpMultipartFormDataContent ()
+open class HttpMultipartFormDataContent ()
   extends StObject
      with typings.winrtUwp.Windows.Web.Http.HttpMultipartFormDataContent {
   /**

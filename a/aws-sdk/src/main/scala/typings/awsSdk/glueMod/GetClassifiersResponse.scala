@@ -29,7 +29,7 @@ object GetClassifiersResponse {
     
     inline def setClassifiersUndefined: Self = StObject.set(x, "Classifiers", js.undefined)
     
-    inline def setClassifiersVarargs(value: Classifier*): Self = StObject.set(x, "Classifiers", js.Array(value :_*))
+    inline def setClassifiersVarargs(value: Classifier*): Self = StObject.set(x, "Classifiers", js.Array(value*))
     
     inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

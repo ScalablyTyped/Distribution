@@ -15,8 +15,8 @@ object mod {
     * @param options - Configuration options.
     * @returns cors middleware
     */
-  inline def apply(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Middleware[DefaultState, DefaultContext]]
-  inline def apply(options: Options): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def apply(): Middleware[DefaultState, DefaultContext, Any] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Middleware[DefaultState, DefaultContext, Any]]
+  inline def apply(options: Options): Middleware[DefaultState, DefaultContext, Any] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext, Any]]
   
   @JSImport("@koa/cors", JSImport.Namespace)
   @js.native
@@ -40,8 +40,13 @@ object mod {
     
     /**
       * `Access-Control-Allow-Credentials`
+      *
+      * @remarks
+      * If a function is provided, it will be called for each request with
+      * the koa context object. It may return a boolean or a promise that
+      * will resolve with a boolean.
       */
-    var credentials: js.UndefOr[Boolean] = js.undefined
+    var credentials: js.UndefOr[(js.Function1[/* ctx */ Context, Boolean | js.Thenable[Boolean]]) | Boolean] = js.undefined
     
     /**
       * `Access-Control-Expose-Headers`
@@ -67,6 +72,20 @@ object mod {
       * will resolve with a string.
       */
     var origin: js.UndefOr[(js.Function1[/* ctx */ Context, String | js.Thenable[String]]) | String] = js.undefined
+    
+    /**
+      * Handle `Access-Control-Request-Private-Network` request by return `Access-Control-Allow-Private-Network`
+      *
+      * @see https://wicg.github.io/private-network-access/
+      */
+    var privateNetworkAccess: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Add `Cross-Origin-Opener-Policy` & `Cross-Origin-Embedder-Policy` to response headers
+      *
+      * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer/Planned_changes
+      */
+    var secureContext: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -81,15 +100,17 @@ object mod {
       
       inline def setAllowHeadersUndefined: Self = StObject.set(x, "allowHeaders", js.undefined)
       
-      inline def setAllowHeadersVarargs(value: String*): Self = StObject.set(x, "allowHeaders", js.Array(value :_*))
+      inline def setAllowHeadersVarargs(value: String*): Self = StObject.set(x, "allowHeaders", js.Array(value*))
       
       inline def setAllowMethods(value: js.Array[String] | String): Self = StObject.set(x, "allowMethods", value.asInstanceOf[js.Any])
       
       inline def setAllowMethodsUndefined: Self = StObject.set(x, "allowMethods", js.undefined)
       
-      inline def setAllowMethodsVarargs(value: String*): Self = StObject.set(x, "allowMethods", js.Array(value :_*))
+      inline def setAllowMethodsVarargs(value: String*): Self = StObject.set(x, "allowMethods", js.Array(value*))
       
-      inline def setCredentials(value: Boolean): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: (js.Function1[/* ctx */ Context, Boolean | js.Thenable[Boolean]]) | Boolean): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      
+      inline def setCredentialsFunction1(value: /* ctx */ Context => Boolean | js.Thenable[Boolean]): Self = StObject.set(x, "credentials", js.Any.fromFunction1(value))
       
       inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
       
@@ -97,7 +118,7 @@ object mod {
       
       inline def setExposeHeadersUndefined: Self = StObject.set(x, "exposeHeaders", js.undefined)
       
-      inline def setExposeHeadersVarargs(value: String*): Self = StObject.set(x, "exposeHeaders", js.Array(value :_*))
+      inline def setExposeHeadersVarargs(value: String*): Self = StObject.set(x, "exposeHeaders", js.Array(value*))
       
       inline def setKeepHeadersOnError(value: Boolean): Self = StObject.set(x, "keepHeadersOnError", value.asInstanceOf[js.Any])
       
@@ -112,6 +133,14 @@ object mod {
       inline def setOriginFunction1(value: /* ctx */ Context => String | js.Thenable[String]): Self = StObject.set(x, "origin", js.Any.fromFunction1(value))
       
       inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+      
+      inline def setPrivateNetworkAccess(value: Boolean): Self = StObject.set(x, "privateNetworkAccess", value.asInstanceOf[js.Any])
+      
+      inline def setPrivateNetworkAccessUndefined: Self = StObject.set(x, "privateNetworkAccess", js.undefined)
+      
+      inline def setSecureContext(value: Boolean): Self = StObject.set(x, "secureContext", value.asInstanceOf[js.Any])
+      
+      inline def setSecureContextUndefined: Self = StObject.set(x, "secureContext", js.undefined)
     }
   }
 }

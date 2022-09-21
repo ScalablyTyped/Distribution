@@ -27,7 +27,7 @@ object ListTagsForResourcesRequest {
     
     inline def setResourceIds(value: TagResourceIdList): Self = StObject.set(x, "ResourceIds", value.asInstanceOf[js.Any])
     
-    inline def setResourceIdsVarargs(value: TagResourceId*): Self = StObject.set(x, "ResourceIds", js.Array(value :_*))
+    inline def setResourceIdsVarargs(value: TagResourceId*): Self = StObject.set(x, "ResourceIds", js.Array(value*))
     
     inline def setResourceType(value: TagResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
   }

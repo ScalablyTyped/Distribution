@@ -10,7 +10,7 @@ object mergeRequestAwardEmojisMod {
   
   @JSImport("gitlab/dist/types/core/services/MergeRequestAwardEmojis", "MergeRequestAwardEmojis")
   @js.native
-  class MergeRequestAwardEmojis protected () extends ResourceAwardEmojis {
+  open class MergeRequestAwardEmojis protected () extends ResourceAwardEmojis {
     def this(options: BaseServiceOptions) = this()
   }
 }

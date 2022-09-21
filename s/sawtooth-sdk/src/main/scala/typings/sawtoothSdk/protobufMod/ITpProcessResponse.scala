@@ -1,7 +1,6 @@
 package typings.sawtoothSdk.protobufMod
 
 import typings.sawtoothSdk.protobufMod.TpProcessResponse.Status
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ITpProcessResponse extends StObject {
   
   /** TpProcessResponse extendedData */
-  var extendedData: js.UndefOr[Uint8Array | Null] = js.undefined
+  var extendedData: js.UndefOr[js.typedarray.Uint8Array | Null] = js.undefined
   
   /** TpProcessResponse message */
   var message: js.UndefOr[String | Null] = js.undefined
@@ -26,7 +25,7 @@ object ITpProcessResponse {
   
   extension [Self <: ITpProcessResponse](x: Self) {
     
-    inline def setExtendedData(value: Uint8Array): Self = StObject.set(x, "extendedData", value.asInstanceOf[js.Any])
+    inline def setExtendedData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "extendedData", value.asInstanceOf[js.Any])
     
     inline def setExtendedDataNull: Self = StObject.set(x, "extendedData", null)
     

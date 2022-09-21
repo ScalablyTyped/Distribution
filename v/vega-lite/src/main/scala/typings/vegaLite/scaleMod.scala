@@ -1,10 +1,10 @@
 package typings.vegaLite
 
-import typings.vegaLite.anon.FieldString
+import typings.std.ReadonlySet
 import typings.vegaLite.channelMod.Channel
 import typings.vegaLite.datetimeMod.DateTime
 import typings.vegaLite.exprMod.ExprRef
-import typings.vegaLite.srcSelectionMod.SelectionExtent
+import typings.vegaLite.srcSelectionMod.ParameterExtent
 import typings.vegaLite.srcTypeMod.Type
 import typings.vegaLite.vegaLiteStrings.`bin-ordinal`
 import typings.vegaLite.vegaLiteStrings.`ordinal-position`
@@ -68,29 +68,29 @@ object scaleMod {
   
   @JSImport("vega-lite/build/src/scale", "CONTINUOUS_DOMAIN_SCALES")
   @js.native
-  val CONTINUOUS_DOMAIN_SCALES: js.Array[ScaleType] = js.native
+  val CONTINUOUS_DOMAIN_SCALES: ReadonlySet[ScaleType] = js.native
   
   @JSImport("vega-lite/build/src/scale", "CONTINUOUS_TO_CONTINUOUS_SCALES")
   @js.native
-  val CONTINUOUS_TO_CONTINUOUS_SCALES: js.Array[ScaleType] = js.native
+  val CONTINUOUS_TO_CONTINUOUS_SCALES: ReadonlySet[ScaleType] = js.native
   
   @JSImport("vega-lite/build/src/scale", "CONTINUOUS_TO_DISCRETE_SCALES")
   @js.native
-  val CONTINUOUS_TO_DISCRETE_SCALES: js.Array[ScaleType] = js.native
+  val CONTINUOUS_TO_DISCRETE_SCALES: ReadonlySet[ScaleType] = js.native
   
   @JSImport("vega-lite/build/src/scale", "DISCRETE_DOMAIN_SCALES")
   @js.native
-  val DISCRETE_DOMAIN_SCALES: js.Array[ScaleType] = js.native
+  val DISCRETE_DOMAIN_SCALES: ReadonlySet[ScaleType] = js.native
   
   @JSImport("vega-lite/build/src/scale", "NON_TYPE_DOMAIN_RANGE_VEGA_SCALE_PROPERTIES")
   @js.native
   val NON_TYPE_DOMAIN_RANGE_VEGA_SCALE_PROPERTIES: js.Array[
-    reverse | round | base | zero | padding | nice | domainMin | domainMax | domainMid | bins | interpolate | clamp | constant | exponent | paddingInner | paddingOuter | align
+    reverse | padding | round | base | zero | interpolate | align | domainMin | domainMax | domainMid | nice | bins | clamp | constant | exponent | paddingInner | paddingOuter
   ] = js.native
   
   @JSImport("vega-lite/build/src/scale", "QUANTITATIVE_SCALES")
   @js.native
-  val QUANTITATIVE_SCALES: js.Array[ScaleType] = js.native
+  val QUANTITATIVE_SCALES: ReadonlySet[ScaleType] = js.native
   
   /* Inlined std.Record<vega-lite.vega-lite/build/src/scale.ScaleType, vega-lite.vega-lite/build/src/scale.ScaleType | 'numeric' | 'ordinal-position' | 'discretizing'> */
   object SCALE_CATEGORY_INDEX {
@@ -184,12 +184,12 @@ object scaleMod {
   @JSImport("vega-lite/build/src/scale", "SCALE_PROPERTIES")
   @js.native
   val SCALE_PROPERTIES: js.Array[
-    reverse | round | base | zero | padding | `type` | range | nice | domain | domainMin | domainMax | domainMid | bins | interpolate | clamp | constant | exponent | paddingInner | paddingOuter | align | rangeMax | rangeMin | scheme
+    /* keyof vega-lite.vega-lite/build/src/scale.Scale<any> */ `type` | domain | domainMid | domainMax | domainMin | reverse | range | rangeMax | rangeMin | scheme | align | bins | round | padding | paddingInner | paddingOuter | clamp | nice | base | exponent | constant | zero | interpolate
   ] = js.native
   
   @JSImport("vega-lite/build/src/scale", "SCALE_TYPES")
   @js.native
-  val SCALE_TYPES: js.Array[typings.vegaTypings.scaleMod.ScaleType] = js.native
+  val SCALE_TYPES: js.Array[ScaleType] = js.native
   
   /* Inlined vega-lite.vega-lite/build/src/scale.ValueOf<{ readonly LINEAR :'linear',  readonly LOG :'log',  readonly POW :'pow',  readonly SQRT :'sqrt',  readonly SYMLOG :'symlog',  readonly IDENTITY :'identity',  readonly SEQUENTIAL :'sequential',  readonly TIME :'time',  readonly UTC :'utc',  readonly QUANTILE :'quantile',  readonly QUANTIZE :'quantize',  readonly THRESHOLD :'threshold',  readonly BIN_ORDINAL :'bin-ordinal',  readonly ORDINAL :'ordinal',  readonly POINT :'point',  readonly BAND :'band'}> */
   /* Rewritten from type alias, can be one of: 
@@ -280,7 +280,7 @@ object scaleMod {
   
   @JSImport("vega-lite/build/src/scale", "TIME_SCALE_TYPES")
   @js.native
-  val TIME_SCALE_TYPES: js.Array[ScaleType] = js.native
+  val TIME_SCALE_TYPES: ReadonlySet[ScaleType] = js.native
   
   inline def channelScalePropertyIncompatability(
     channel: Channel,
@@ -288,6 +288,7 @@ object scaleMod {
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("channelScalePropertyIncompatability")(channel.asInstanceOf[js.Any], propName.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def channelSupportScaleType(channel: Channel, scaleType: ScaleType): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("channelSupportScaleType")(channel.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def channelSupportScaleType(channel: Channel, scaleType: ScaleType, hasNestedOffsetScale: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("channelSupportScaleType")(channel.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any], hasNestedOffsetScale.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("vega-lite/build/src/scale", "defaultScaleConfig")
   @js.native
@@ -306,9 +307,11 @@ object scaleMod {
   inline def isExtendedScheme(scheme: Scheme): /* is vega-lite.vega-lite/build/src/scale.SchemeParams */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExtendedScheme")(scheme.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/scale.SchemeParams */ Boolean]
   inline def isExtendedScheme(scheme: SignalRef): /* is vega-lite.vega-lite/build/src/scale.SchemeParams */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExtendedScheme")(scheme.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/scale.SchemeParams */ Boolean]
   
-  inline def isQuantitative(`type`: ScaleType): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isQuantitative")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isFieldRange(range: Any): /* is vega-lite.vega-lite/build/src/scale.FieldRange */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldRange")(range.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/scale.FieldRange */ Boolean]
   
-  inline def isSelectionDomain(domain: Domain): /* is vega-lite.vega-lite/build/src/selection.SelectionExtent */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSelectionDomain")(domain.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/selection.SelectionExtent */ Boolean]
+  inline def isParameterDomain(domain: Domain): /* is vega-lite.vega-lite/build/src/selection.ParameterExtent */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isParameterDomain")(domain.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/selection.ParameterExtent */ Boolean]
+  
+  inline def isQuantitative(`type`: ScaleType): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isQuantitative")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def scaleCompatible(scaleType1: ScaleType, scaleType2: ScaleType): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleCompatible")(scaleType1.asInstanceOf[js.Any], scaleType2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
@@ -325,7 +328,7 @@ object scaleMod {
     - js.Array[
   scala.Null | java.lang.String | scala.Double | scala.Boolean | typings.vegaLite.datetimeMod.DateTime | typings.vegaTypings.signalMod.SignalRef]
     - typings.vegaLite.vegaLiteStrings.unaggregated
-    - typings.vegaLite.srcSelectionMod.SelectionExtent
+    - typings.vegaLite.srcSelectionMod.ParameterExtent
     - typings.vegaTypings.signalMod.SignalRef
     - typings.vegaLite.scaleMod.DomainUnionWith
   */
@@ -336,17 +339,8 @@ object scaleMod {
        with _Domain {
     
     /**
-      * Customized domain values to be union with the field's values.
-      *
-      * 1) `domain` for _quantitative_ fields can take one of the following forms:
-      *
-      * - a two-element array with minimum and maximum values.
-      * - an array with more than two entries, for [Piecewise  quantitative scales](https://vega.github.io/vega-lite/docs/scale.html#piecewise). (Alternatively, the `domainMid` property can be set for a diverging scale.)
-      * - a string value `"unaggregated"`, if the input field is aggregated, to indicate that the domain should include the raw data values prior to the aggregation.
-      *
-      * 2) `domain` for _temporal_ fields can be a two-element array minimum and maximum values, in the form of either timestamps or the [DateTime definition objects](https://vega.github.io/vega-lite/docs/types.html#datetime).
-      *
-      * 3) `domain` for _ordinal_ and _nominal_ fields can be an array that lists valid input values.
+      * Customized domain values to be union with the field's values or explicitly defined domain.
+      * Should be an array of valid scale domain values.
       */
     var unionWith: js.Array[Boolean | DateTime | Double | String]
   }
@@ -361,7 +355,24 @@ object scaleMod {
       
       inline def setUnionWith(value: js.Array[Boolean | DateTime | Double | String]): Self = StObject.set(x, "unionWith", value.asInstanceOf[js.Any])
       
-      inline def setUnionWithVarargs(value: (Boolean | DateTime | Double | String)*): Self = StObject.set(x, "unionWith", js.Array(value :_*))
+      inline def setUnionWithVarargs(value: (Boolean | DateTime | Double | String)*): Self = StObject.set(x, "unionWith", js.Array(value*))
+    }
+  }
+  
+  trait FieldRange extends StObject {
+    
+    var field: String
+  }
+  object FieldRange {
+    
+    inline def apply(field: String): FieldRange = {
+      val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
+      __obj.asInstanceOf[FieldRange]
+    }
+    
+    extension [Self <: FieldRange](x: Self) {
+      
+      inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     }
   }
   
@@ -404,7 +415,7 @@ object scaleMod {
     var constant: js.UndefOr[Double | ES] = js.undefined
     
     /**
-      * Customized domain values in the form of constant values or dynamic values driven by a selection.
+      * Customized domain values in the form of constant values or dynamic values driven by a parameter.
       *
       * 1) Constant `domain` for _quantitative_ fields can take one of the following forms:
       *
@@ -418,10 +429,10 @@ object scaleMod {
       *
       * 4) To combine (union) specified constant domain with the field's values, `domain` can be an object with a `unionWith` property that specify constant domain to be combined. For example, `domain: {unionWith: [0, 100]}` for a quantitative scale means that the scale domain always includes `[0, 100]`, but will include other values in the fields beyond `[0, 100]`.
       *
-      * 5) Domain can also takes an object defining a field or encoding of a selection that [interactively determines](https://vega.github.io/vega-lite/docs/selection.html#scale-domains) the scale domain.
+      * 5) Domain can also takes an object defining a field or encoding of a parameter that [interactively determines](https://vega.github.io/vega-lite/docs/selection.html#scale-domains) the scale domain.
       */
     var domain: js.UndefOr[
-        (js.Array[Null | String | Double | Boolean | DateTime | ES]) | unaggregated | SelectionExtent | DomainUnionWith | ES
+        (js.Array[Null | String | Double | Boolean | DateTime | ES]) | unaggregated | ParameterExtent | DomainUnionWith | ES
       ] = js.undefined
     
     /**
@@ -458,7 +469,7 @@ object scaleMod {
       *
       * For temporal fields with time and utc scales, the `nice` value can be a string indicating the desired time interval. Legal values are `"millisecond"`, `"second"`, `"minute"`, `"hour"`, `"day"`, `"week"`, `"month"`, and `"year"`. Alternatively, `time` and `utc` scales can accept an object-valued interval specifier of the form `{"interval": "month", "step": 3}`, which includes a desired number of interval steps. Here, the domain would snap to quarter (Jan, Apr, Jul, Oct) boundaries.
       *
-      * __Default value:__ `true` for unbinned _quantitative_ fields; `false` otherwise.
+      * __Default value:__ `true` for unbinned _quantitative_ fields without explicit domain bounds; `false` otherwise.
       *
       */
     var nice: js.UndefOr[Boolean | Double | TimeInterval | TimeIntervalStep | ES] = js.undefined
@@ -516,7 +527,7 @@ object scaleMod {
       *
       * 2) Any directly specified `range` for `x` and `y` channels will be ignored. Range can be customized via the view's corresponding [size](https://vega.github.io/vega-lite/docs/size.html) (`width` and `height`).
       */
-    var range: js.UndefOr[RangeEnum | (js.Array[Double | String | js.Array[Double] | ES]) | FieldString] = js.undefined
+    var range: js.UndefOr[RangeEnum | (js.Array[Double | String | js.Array[Double] | ES]) | FieldRange] = js.undefined
     
     /**
       * Sets the maximum value in the scale range, overriding the `range` property or the default range. This property is only intended for use with scales having continuous ranges.
@@ -593,7 +604,7 @@ object scaleMod {
       
       inline def setBinsUndefined: Self = StObject.set(x, "bins", js.undefined)
       
-      inline def setBinsVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "bins", js.Array(value :_*))
+      inline def setBinsVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "bins", js.Array(value*))
       
       inline def setClamp(value: Boolean | ES): Self = StObject.set(x, "clamp", value.asInstanceOf[js.Any])
       
@@ -604,7 +615,7 @@ object scaleMod {
       inline def setConstantUndefined: Self = StObject.set(x, "constant", js.undefined)
       
       inline def setDomain(
-        value: (js.Array[Null | String | Double | Boolean | DateTime | ES]) | unaggregated | SelectionExtent | DomainUnionWith | ES
+        value: (js.Array[Null | String | Double | Boolean | DateTime | ES]) | unaggregated | ParameterExtent | DomainUnionWith | ES
       ): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
       inline def setDomainMax(value: Double | DateTime | ES): Self = StObject.set(x, "domainMax", value.asInstanceOf[js.Any])
@@ -621,7 +632,7 @@ object scaleMod {
       
       inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      inline def setDomainVarargs(value: (Null | String | Double | Boolean | DateTime | ES)*): Self = StObject.set(x, "domain", js.Array(value :_*))
+      inline def setDomainVarargs(value: (Null | String | Double | Boolean | DateTime | ES)*): Self = StObject.set(x, "domain", js.Array(value*))
       
       inline def setExponent(value: Double | ES): Self = StObject.set(x, "exponent", value.asInstanceOf[js.Any])
       
@@ -647,7 +658,7 @@ object scaleMod {
       
       inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      inline def setRange(value: RangeEnum | (js.Array[Double | String | js.Array[Double] | ES]) | FieldString): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: RangeEnum | (js.Array[Double | String | js.Array[Double] | ES]) | FieldRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
       inline def setRangeMax(value: Double | String | ES): Self = StObject.set(x, "rangeMax", value.asInstanceOf[js.Any])
       
@@ -659,7 +670,7 @@ object scaleMod {
       
       inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
       
-      inline def setRangeVarargs(value: (Double | String | js.Array[Double] | ES)*): Self = StObject.set(x, "range", js.Array(value :_*))
+      inline def setRangeVarargs(value: (Double | String | js.Array[Double] | ES)*): Self = StObject.set(x, "range", js.Array(value*))
       
       inline def setReverse(value: Boolean | ES): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
       
@@ -686,9 +697,10 @@ object scaleMod {
   trait ScaleConfig[ES /* <: ExprRef | SignalRef */] extends StObject {
     
     /**
-      * Default inner padding for `x` and `y` band-ordinal scales.
+      * Default inner padding for `x` and `y` band scales.
       *
       * __Default value:__
+      * - `nestedOffsetPaddingInner` for x/y scales with nested x/y offset scales.
       * - `barBandPaddingInner` for bar marks (`0.1` by default)
       * - `rectBandPaddingInner` for rect and other marks (`0` by default)
       *
@@ -698,7 +710,7 @@ object scaleMod {
     var bandPaddingInner: js.UndefOr[Double | ES] = js.undefined
     
     /**
-      * Default outer padding for `x` and `y` band-ordinal scales.
+      * Default outer padding for `x` and `y` band scales.
       *
       * __Default value:__ `paddingInner/2` (which makes _width/height = number of unique values * step_)
       *
@@ -706,6 +718,26 @@ object scaleMod {
       * @maximum 1
       */
     var bandPaddingOuter: js.UndefOr[Double | ES] = js.undefined
+    
+    /**
+      * Default inner padding for `x` and `y` band scales with nested `xOffset` and `yOffset` encoding.
+      *
+      * __Default value:__ `0.2`
+      *
+      * @minimum 0
+      * @maximum 1
+      */
+    var bandWithNestedOffsetPaddingInner: js.UndefOr[Double | ES] = js.undefined
+    
+    /**
+      * Default outer padding for `x` and `y` band scales with nested `xOffset` and `yOffset` encoding.
+      *
+      * __Default value:__ `0.2`
+      *
+      * @minimum 0
+      * @maximum 1
+      */
+    var bandWithNestedOffsetPaddingOuter: js.UndefOr[Double | ES] = js.undefined
     
     /**
       * Default inner padding for `x` and `y` band-ordinal scales of `"bar"` marks.
@@ -723,9 +755,9 @@ object scaleMod {
     var clamp: js.UndefOr[Boolean | ES] = js.undefined
     
     /**
-      * Default padding for continuous scales.
+      * Default padding for continuous x/y scales.
       *
-      * __Default:__ `5` for continuous x-scale of a vertical bar and continuous y-scale of a horizontal bar.; `0` otherwise.
+      * __Default:__ The bar width for continuous x-scale of a vertical bar and continuous y-scale of a horizontal bar.; `0` otherwise.
       *
       * @minimum 0
       */
@@ -820,6 +852,20 @@ object scaleMod {
     var minStrokeWidth: js.UndefOr[Double] = js.undefined
     
     /**
+      * Default padding inner for xOffset/yOffset's band scales.
+      *
+      * __Default Value:__ `0`
+      */
+    var offsetBandPaddingInner: js.UndefOr[Double | ES] = js.undefined
+    
+    /**
+      * Default padding outer for xOffset/yOffset's band scales.
+      *
+      * __Default Value:__ `0`
+      */
+    var offsetBandPaddingOuter: js.UndefOr[Double | ES] = js.undefined
+    
+    /**
       * Default outer padding for `x` and `y` point-ordinal scales.
       *
       * __Default value:__ `0.5` (which makes _width/height = number of unique values * step_)
@@ -897,6 +943,14 @@ object scaleMod {
       
       inline def setBandPaddingOuterUndefined: Self = StObject.set(x, "bandPaddingOuter", js.undefined)
       
+      inline def setBandWithNestedOffsetPaddingInner(value: Double | ES): Self = StObject.set(x, "bandWithNestedOffsetPaddingInner", value.asInstanceOf[js.Any])
+      
+      inline def setBandWithNestedOffsetPaddingInnerUndefined: Self = StObject.set(x, "bandWithNestedOffsetPaddingInner", js.undefined)
+      
+      inline def setBandWithNestedOffsetPaddingOuter(value: Double | ES): Self = StObject.set(x, "bandWithNestedOffsetPaddingOuter", value.asInstanceOf[js.Any])
+      
+      inline def setBandWithNestedOffsetPaddingOuterUndefined: Self = StObject.set(x, "bandWithNestedOffsetPaddingOuter", js.undefined)
+      
       inline def setBarBandPaddingInner(value: Double | ES): Self = StObject.set(x, "barBandPaddingInner", value.asInstanceOf[js.Any])
       
       inline def setBarBandPaddingInnerUndefined: Self = StObject.set(x, "barBandPaddingInner", js.undefined)
@@ -948,6 +1002,14 @@ object scaleMod {
       inline def setMinStrokeWidth(value: Double): Self = StObject.set(x, "minStrokeWidth", value.asInstanceOf[js.Any])
       
       inline def setMinStrokeWidthUndefined: Self = StObject.set(x, "minStrokeWidth", js.undefined)
+      
+      inline def setOffsetBandPaddingInner(value: Double | ES): Self = StObject.set(x, "offsetBandPaddingInner", value.asInstanceOf[js.Any])
+      
+      inline def setOffsetBandPaddingInnerUndefined: Self = StObject.set(x, "offsetBandPaddingInner", js.undefined)
+      
+      inline def setOffsetBandPaddingOuter(value: Double | ES): Self = StObject.set(x, "offsetBandPaddingOuter", value.asInstanceOf[js.Any])
+      
+      inline def setOffsetBandPaddingOuterUndefined: Self = StObject.set(x, "offsetBandPaddingOuter", js.undefined)
       
       inline def setPointPadding(value: Double | ES): Self = StObject.set(x, "pointPadding", value.asInstanceOf[js.Any])
       
@@ -1017,7 +1079,7 @@ object scaleMod {
       
       inline def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
       
-      inline def setExtentVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "extent", js.Array(value :_*))
+      inline def setExtentVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "extent", js.Array(value*))
       
       inline def setName(value: String | SignalRef): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

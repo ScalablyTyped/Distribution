@@ -8,7 +8,6 @@ import typings.hookrouter.mod.HookRouter.RouteObject
 import typings.react.mod.AnchorHTMLAttributes
 import typings.react.mod.ReactHTMLElement
 import typings.std.HTMLAnchorElement
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +22,7 @@ object mod {
   
   inline def confirmNavigation(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("confirmNavigation")().asInstanceOf[Unit]
   
-  inline def get(componentId: Double): RouteObject[js.Any] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(componentId.asInstanceOf[js.Any]).asInstanceOf[RouteObject[js.Any] | Null]
+  inline def get(componentId: Double): RouteObject[Any] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(componentId.asInstanceOf[js.Any]).asInstanceOf[RouteObject[Any] | Null]
   
   inline def getBasepath(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBasepath")().asInstanceOf[String]
   
@@ -50,7 +49,7 @@ object mod {
   
   inline def objectToQueryString(inObj: QueryParams): String = ^.asInstanceOf[js.Dynamic].applyDynamic("objectToQueryString")(inObj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def prepareRoute(inRoute: String): js.Tuple2[RegExp, js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("prepareRoute")(inRoute.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[RegExp, js.Array[String]]]
+  inline def prepareRoute(inRoute: String): js.Tuple2[js.RegExp, js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("prepareRoute")(inRoute.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.RegExp, js.Array[String]]]
   
   inline def queryStringToObject(inStr: String): QueryParams = ^.asInstanceOf[js.Dynamic].applyDynamic("queryStringToObject")(inStr.asInstanceOf[js.Any]).asInstanceOf[QueryParams]
   
@@ -124,7 +123,7 @@ object mod {
     
     type InterceptedPath = String | Null
     
-    type QueryParams = StringDictionary[js.Any]
+    type QueryParams = StringDictionary[Any]
     
     type RouteObject[T] = StringDictionary[js.Function1[/* params */ QueryParams, T]]
   }

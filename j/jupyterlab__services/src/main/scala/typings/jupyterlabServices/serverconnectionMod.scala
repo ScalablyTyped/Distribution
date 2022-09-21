@@ -6,7 +6,6 @@ import typings.std.Error
 import typings.std.RequestInfo
 import typings.std.RequestInit
 import typings.std.Response
-import typings.std.TypeError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,17 +23,19 @@ object serverconnectionMod {
       */
     @JSImport("@jupyterlab/services/lib/serverconnection", "ServerConnection.NetworkError")
     @js.native
-    class NetworkError protected ()
+    open class NetworkError protected ()
       extends StObject
          with Error {
       /**
         * Create a new network error.
         */
-      def this(original: TypeError) = this()
+      def this(original: js.TypeError) = this()
       
+      /* standard es5 */
       /* CompleteClass */
       var message: String = js.native
       
+      /* standard es5 */
       /* CompleteClass */
       var name: String = js.native
     }
@@ -44,7 +45,7 @@ object serverconnectionMod {
       */
     @JSImport("@jupyterlab/services/lib/serverconnection", "ServerConnection.ResponseError")
     @js.native
-    class ResponseError protected ()
+    open class ResponseError protected ()
       extends StObject
          with Error {
       /**
@@ -55,9 +56,11 @@ object serverconnectionMod {
       def this(response: Response, message: String, traceback: String) = this()
       def this(response: Response, message: Unit, traceback: String) = this()
       
+      /* standard es5 */
       /* CompleteClass */
       var message: String = js.native
       
+      /* standard es5 */
       /* CompleteClass */
       var name: String = js.native
       
@@ -132,12 +135,12 @@ object serverconnectionMod {
       /**
         * The `Headers` object constructor.
         */
-      val Headers: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Headers */ js.Any = js.native
+      val Headers: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Headers */ Any = js.native
       
       /**
         * The `Request` object constructor.
         */
-      val Request: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Request */ js.Any = js.native
+      val Request: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Request */ Any = js.native
       
       /**
         * The `WebSocket` object constructor.
@@ -148,6 +151,12 @@ object serverconnectionMod {
         * The app url of the JupyterLab application.
         */
       val appUrl: String = js.native
+      
+      /**
+        * Whether to append a token to a Websocket url.  The default is `false` in the browser
+        * and `true` in node or jest.
+        */
+      val appendToken: Boolean = js.native
       
       /**
         * The base url of the server.

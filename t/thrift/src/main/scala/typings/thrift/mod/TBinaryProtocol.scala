@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("thrift", "TBinaryProtocol")
 @js.native
-class TBinaryProtocol protected ()
+open class TBinaryProtocol protected ()
   extends StObject
      with TProtocol {
   def this(trans: TTransport) = this()

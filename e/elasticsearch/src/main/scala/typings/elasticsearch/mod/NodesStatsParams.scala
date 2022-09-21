@@ -46,19 +46,19 @@ object NodesStatsParams {
     
     inline def setCompletionFieldsUndefined: Self = StObject.set(x, "completionFields", js.undefined)
     
-    inline def setCompletionFieldsVarargs(value: String*): Self = StObject.set(x, "completionFields", js.Array(value :_*))
+    inline def setCompletionFieldsVarargs(value: String*): Self = StObject.set(x, "completionFields", js.Array(value*))
     
     inline def setFielddataFields(value: NameList): Self = StObject.set(x, "fielddataFields", value.asInstanceOf[js.Any])
     
     inline def setFielddataFieldsUndefined: Self = StObject.set(x, "fielddataFields", js.undefined)
     
-    inline def setFielddataFieldsVarargs(value: String*): Self = StObject.set(x, "fielddataFields", js.Array(value :_*))
+    inline def setFielddataFieldsVarargs(value: String*): Self = StObject.set(x, "fielddataFields", js.Array(value*))
     
     inline def setFields(value: NameList): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setGroups(value: Boolean): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
@@ -72,7 +72,7 @@ object NodesStatsParams {
     
     inline def setIndexMetricUndefined: Self = StObject.set(x, "indexMetric", js.undefined)
     
-    inline def setIndexMetricVarargs(value: String*): Self = StObject.set(x, "indexMetric", js.Array(value :_*))
+    inline def setIndexMetricVarargs(value: String*): Self = StObject.set(x, "indexMetric", js.Array(value*))
     
     inline def setLevel(value: indices | node | shards): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
@@ -82,13 +82,13 @@ object NodesStatsParams {
     
     inline def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
     
-    inline def setMetricVarargs(value: String*): Self = StObject.set(x, "metric", js.Array(value :_*))
+    inline def setMetricVarargs(value: String*): Self = StObject.set(x, "metric", js.Array(value*))
     
     inline def setNodeId(value: NameList): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     
     inline def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
     
-    inline def setNodeIdVarargs(value: String*): Self = StObject.set(x, "nodeId", js.Array(value :_*))
+    inline def setNodeIdVarargs(value: String*): Self = StObject.set(x, "nodeId", js.Array(value*))
     
     inline def setTimeout(value: TimeSpan): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
@@ -98,6 +98,6 @@ object NodesStatsParams {
     
     inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
-    inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value*))
   }
 }

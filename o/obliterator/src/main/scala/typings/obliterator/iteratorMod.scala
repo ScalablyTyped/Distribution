@@ -1,37 +1,47 @@
 package typings.obliterator
 
+import typings.obliterator.typesMod.Sequence
 import typings.std.IterableIterator
 import typings.std.IteratorResult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("obliterator/iterator", JSImport.Namespace)
-@js.native
-object iteratorMod extends js.Object {
-  @js.native
-  trait Iterator[V] extends IterableIterator[V] {
-    // Members
-    var done: Boolean = js.native
-    // Well-known methods
-    def next(): IteratorResult[V, _] = js.native
-  }
+object iteratorMod {
   
+  @JSImport("obliterator/iterator", JSImport.Default)
   @js.native
-  class default[V] protected () extends Iterator[V] {
+  open class default[V] protected ()
+    extends StObject
+       with ObliteratorIterator[V] {
     // Constructor
     def this(next: NextFunction[V]) = this()
   }
-  
   /* static members */
-  @js.native
-  object default extends js.Object {
-    def empty[T](): Iterator[T] = js.native
-    def is(value: js.Any): Boolean = js.native
+  object default {
+    
+    @JSImport("obliterator/iterator", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def empty[T](): ObliteratorIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[ObliteratorIterator[T]]
+    
+    inline def fromSequence[T](sequence: Sequence[T]): ObliteratorIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSequence")(sequence.asInstanceOf[js.Any]).asInstanceOf[ObliteratorIterator[T]]
+    
+    inline def is(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
     // Static methods
-    def of[T](args: T*): Iterator[T] = js.native
+    inline def of[T](args: T*): ObliteratorIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[ObliteratorIterator[T]]
   }
   
-  type NextFunction[V] = js.Function0[IteratorResult[V, js.Any]]
+  type NextFunction[V] = js.Function0[IteratorResult[V, Any]]
+  
+  @js.native
+  trait ObliteratorIterator[V]
+    extends StObject
+       with IterableIterator[V] {
+    
+    // Well-known methods
+    def next(): IteratorResult[V, Any] = js.native
+  }
 }
-

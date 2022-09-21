@@ -14,6 +14,11 @@ trait TreeViewOptions[T] extends StObject {
   var canSelectMany: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * An optional interface to implement drag and drop in the tree view.
+    */
+  var dragAndDropController: js.UndefOr[TreeDragAndDropController[T]] = js.undefined
+  
+  /**
     * Whether to show collapse all action or not.
     */
   var showCollapseAll: js.UndefOr[Boolean] = js.undefined
@@ -35,6 +40,10 @@ object TreeViewOptions {
     inline def setCanSelectMany(value: Boolean): Self = StObject.set(x, "canSelectMany", value.asInstanceOf[js.Any])
     
     inline def setCanSelectManyUndefined: Self = StObject.set(x, "canSelectMany", js.undefined)
+    
+    inline def setDragAndDropController(value: TreeDragAndDropController[T]): Self = StObject.set(x, "dragAndDropController", value.asInstanceOf[js.Any])
+    
+    inline def setDragAndDropControllerUndefined: Self = StObject.set(x, "dragAndDropController", js.undefined)
     
     inline def setShowCollapseAll(value: Boolean): Self = StObject.set(x, "showCollapseAll", value.asInstanceOf[js.Any])
     

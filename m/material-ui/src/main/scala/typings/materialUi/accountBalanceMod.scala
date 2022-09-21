@@ -10,10 +10,10 @@ object accountBalanceMod {
   
   @JSImport("material-ui/svg-icons/action/account-balance", JSImport.Default)
   @js.native
-  class default () extends ActionAccountBalance
+  open class default () extends ActionAccountBalance
   
   @JSImport("material-ui/svg-icons/action/account-balance", "ActionAccountBalance")
   @js.native
-  class ActionAccountBalance ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionAccountBalance ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

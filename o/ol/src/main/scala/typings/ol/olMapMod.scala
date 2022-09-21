@@ -9,7 +9,7 @@ object olMapMod {
   
   @JSImport("ol/Map", JSImport.Default)
   @js.native
-  class default protected () extends Map {
+  open class default protected () extends Map {
     def this(options: MapOptions) = this()
   }
   

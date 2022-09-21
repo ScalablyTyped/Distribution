@@ -9,7 +9,7 @@ trait CostCategoryValues extends StObject {
   var Key: js.UndefOr[CostCategoryName] = js.undefined
   
   /**
-    *  The match options that you can use to filter your results. MatchOptions is only applicable for only applicable for actions related to cost category. The default values for MatchOptions is EQUALS and CASE_SENSITIVE. 
+    * The match options that you can use to filter your results. MatchOptions is only applicable for actions related to cost category. The default values for MatchOptions is EQUALS and CASE_SENSITIVE. 
     */
   var MatchOptions: js.UndefOr[typings.awsSdk.costexplorerMod.MatchOptions] = js.undefined
   
@@ -35,12 +35,12 @@ object CostCategoryValues {
     
     inline def setMatchOptionsUndefined: Self = StObject.set(x, "MatchOptions", js.undefined)
     
-    inline def setMatchOptionsVarargs(value: MatchOption*): Self = StObject.set(x, "MatchOptions", js.Array(value :_*))
+    inline def setMatchOptionsVarargs(value: MatchOption*): Self = StObject.set(x, "MatchOptions", js.Array(value*))
     
     inline def setValues(value: Values): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
     inline def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
-    inline def setValuesVarargs(value: Value*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: Value*): Self = StObject.set(x, "Values", js.Array(value*))
   }
 }

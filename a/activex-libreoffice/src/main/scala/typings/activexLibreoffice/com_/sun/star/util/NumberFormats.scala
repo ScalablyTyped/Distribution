@@ -26,7 +26,7 @@ object NumberFormats {
     getStandardFormat: (Double, Locale) => Double,
     getStandardIndex: Locale => Double,
     isTypeCompatible: (Double, Double) => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     queryKey: (String, Locale, Boolean) => Double,
     queryKeys: (Double, Locale, Boolean) => SafeArray[Double],
     release: () => Unit,

@@ -61,6 +61,6 @@ object TileLayerOptions {
     
     inline def setZooms(value: js.Array[Double]): Self = StObject.set(x, "zooms", value.asInstanceOf[js.Any])
     
-    inline def setZoomsVarargs(value: Double*): Self = StObject.set(x, "zooms", js.Array(value :_*))
+    inline def setZoomsVarargs(value: Double*): Self = StObject.set(x, "zooms", js.Array(value*))
   }
 }

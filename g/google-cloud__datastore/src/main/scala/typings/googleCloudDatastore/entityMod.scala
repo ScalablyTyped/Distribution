@@ -115,7 +115,7 @@ object entityMod {
       
       inline def setPath(value: DatastoreKeyPath): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      inline def setPathVarargs(value: PathElement*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: PathElement*): Self = StObject.set(x, "path", js.Array(value*))
     }
   }
   
@@ -140,7 +140,7 @@ object entityMod {
       
       inline def setPath(value: DatastoreKeyPath): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      inline def setPathVarargs(value: PathElement*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: PathElement*): Self = StObject.set(x, "path", js.Array(value*))
     }
   }
   
@@ -174,7 +174,7 @@ object entityMod {
       
       inline def setExcludeFromIndexesUndefined: Self = StObject.set(x, "excludeFromIndexes", js.undefined)
       
-      inline def setExcludeFromIndexesVarargs(value: String*): Self = StObject.set(x, "excludeFromIndexes", js.Array(value :_*))
+      inline def setExcludeFromIndexesVarargs(value: String*): Self = StObject.set(x, "excludeFromIndexes", js.Array(value*))
       
       inline def setKey(value: DatastoreKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }

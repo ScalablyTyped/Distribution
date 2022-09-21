@@ -7,7 +7,6 @@ import typings.gitlab.requestHelperMod.BaseRequestOptions
 import typings.gitlab.requestHelperMod.GetResponse
 import typings.gitlab.requestHelperMod.PaginatedRequestOptions
 import typings.gitlab.requestHelperMod.Sudo
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ object usersMod {
   
   @JSImport("gitlab/dist/types/core/services/Users", "Users")
   @js.native
-  class Users () extends BaseService {
+  open class Users () extends BaseService {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def activities(): js.Promise[GetResponse] = js.native
@@ -62,7 +61,7 @@ object usersMod {
     
     var bio: js.UndefOr[String] = js.undefined
     
-    var created_at: Date
+    var created_at: js.Date
     
     var linkedin: String
     
@@ -82,7 +81,7 @@ object usersMod {
     
     inline def apply(
       avatar_url: String,
-      created_at: Date,
+      created_at: js.Date,
       id: Double,
       linkedin: String,
       name: String,
@@ -103,7 +102,7 @@ object usersMod {
       
       inline def setBioUndefined: Self = StObject.set(x, "bio", js.undefined)
       
-      inline def setCreated_at(value: Date): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+      inline def setCreated_at(value: js.Date): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
       
       inline def setLinkedin(value: String): Self = StObject.set(x, "linkedin", value.asInstanceOf[js.Any])
       

@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AssignmentExpression
   extends StObject
-     with BaseNode
-     with Expression {
+     with BaseNode {
   
   var left: Pattern | MemberExpression
   

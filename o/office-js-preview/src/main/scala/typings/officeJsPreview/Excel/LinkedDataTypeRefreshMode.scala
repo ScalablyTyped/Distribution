@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait LinkedDataTypeRefreshMode extends StObject
 /**
-  *
   * Representation of a refresh mode.
   *
+  * @remarks
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
   */
@@ -19,7 +19,9 @@ object LinkedDataTypeRefreshMode extends StObject {
   
   /**
     * Manual refresh. Refresh does not get triggered automatically.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait manual
@@ -28,7 +30,9 @@ object LinkedDataTypeRefreshMode extends StObject {
   
   /**
     * Refresh on workbook load only.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait onLoad
@@ -37,7 +41,9 @@ object LinkedDataTypeRefreshMode extends StObject {
   
   /**
     * Refresh periodically based on an interval. It will also trigger a refresh on workbook load.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait periodic
@@ -46,7 +52,9 @@ object LinkedDataTypeRefreshMode extends StObject {
   
   /**
     * Refresh mode is unknown or unsupported.
-    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
     */
   @js.native
   sealed trait unknown

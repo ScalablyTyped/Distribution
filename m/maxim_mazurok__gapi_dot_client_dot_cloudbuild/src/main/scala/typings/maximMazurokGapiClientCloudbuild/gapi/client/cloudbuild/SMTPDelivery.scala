@@ -49,7 +49,7 @@ object SMTPDelivery {
     
     inline def setRecipientAddressesUndefined: Self = StObject.set(x, "recipientAddresses", js.undefined)
     
-    inline def setRecipientAddressesVarargs(value: String*): Self = StObject.set(x, "recipientAddresses", js.Array(value :_*))
+    inline def setRecipientAddressesVarargs(value: String*): Self = StObject.set(x, "recipientAddresses", js.Array(value*))
     
     inline def setSenderAddress(value: String): Self = StObject.set(x, "senderAddress", value.asInstanceOf[js.Any])
     

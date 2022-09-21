@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elastic.js", "PhraseSuggester")
 @js.native
-class PhraseSuggester protected ()
+open class PhraseSuggester protected ()
   extends StObject
      with Suggest {
   /*
@@ -125,7 +125,7 @@ class PhraseSuggester protected ()
     Retrieves the internal suggest object. This is typically used by
     internal API functions so use with caution.
     */
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
   
   /*
     Sets the token limit.

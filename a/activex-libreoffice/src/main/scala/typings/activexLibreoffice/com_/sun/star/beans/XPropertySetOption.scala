@@ -18,7 +18,7 @@ object XPropertySetOption {
   inline def apply(
     acquire: () => Unit,
     enableChangeListenerNotification: Boolean => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XPropertySetOption = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), enableChangeListenerNotification = js.Any.fromFunction1(enableChangeListenerNotification), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

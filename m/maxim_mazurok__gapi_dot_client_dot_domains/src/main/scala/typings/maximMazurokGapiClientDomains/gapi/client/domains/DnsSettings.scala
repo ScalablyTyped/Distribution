@@ -32,7 +32,7 @@ object DnsSettings {
     
     inline def setGlueRecordsUndefined: Self = StObject.set(x, "glueRecords", js.undefined)
     
-    inline def setGlueRecordsVarargs(value: GlueRecord*): Self = StObject.set(x, "glueRecords", js.Array(value :_*))
+    inline def setGlueRecordsVarargs(value: GlueRecord*): Self = StObject.set(x, "glueRecords", js.Array(value*))
     
     inline def setGoogleDomainsDns(value: GoogleDomainsDns): Self = StObject.set(x, "googleDomainsDns", value.asInstanceOf[js.Any])
     

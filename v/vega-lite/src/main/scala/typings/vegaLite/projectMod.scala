@@ -5,33 +5,36 @@ import typings.std.Partial
 import typings.std.Record
 import typings.vegaLite.anon.Visual
 import typings.vegaLite.channelMod.SingleDefUnitChannel
+import typings.vegaLite.selectionMod.SelectionCompiler
+import typings.vegaLite.srcSelectionMod.SelectionType
 import typings.vegaLite.timeunitMod.TimeUnitNode
-import typings.vegaLite.transformsMod.TransformCompiler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object projectMod extends Shortcut {
   
-  @JSImport("vega-lite/build/src/compile/selection/transforms/project", JSImport.Default)
+  @JSImport("vega-lite/build/src/compile/selection/project", JSImport.Default)
   @js.native
-  val default: TransformCompiler = js.native
+  val default: SelectionCompiler[SelectionType] = js.native
   
-  @JSImport("vega-lite/build/src/compile/selection/transforms/project", "SelectionProjectionComponent")
+  @JSImport("vega-lite/build/src/compile/selection/project", "SelectionProjectionComponent")
   @js.native
-  class SelectionProjectionComponent protected () extends StObject {
+  open class SelectionProjectionComponent protected () extends StObject {
     def this(items: SelectionProjection*) = this()
     
     var hasChannel: Partial[Record[SingleDefUnitChannel, SelectionProjection]] = js.native
     
     var hasField: Record[String, SelectionProjection] = js.native
     
+    var hasSelectionId: Boolean = js.native
+    
     var items: js.Array[SelectionProjection] = js.native
     
     var timeUnit: js.UndefOr[TimeUnitNode] = js.native
   }
   
-  @JSImport("vega-lite/build/src/compile/selection/transforms/project", "TUPLE_FIELDS")
+  @JSImport("vega-lite/build/src/compile/selection/project", "TUPLE_FIELDS")
   @js.native
   val TUPLE_FIELDS: /* "_tuple_fields" */ String = js.native
   
@@ -90,8 +93,8 @@ object projectMod extends Shortcut {
     inline def `R-RE`: typings.vegaLite.vegaLiteStrings.`R-RE` = "R-RE".asInstanceOf[typings.vegaLite.vegaLiteStrings.`R-RE`]
   }
   
-  type _To = TransformCompiler
+  type _To = SelectionCompiler[SelectionType]
   
   /* This means you don't have to write `default`, but can instead just say `projectMod.foo` */
-  override def _to: TransformCompiler = default
+  override def _to: SelectionCompiler[SelectionType] = default
 }

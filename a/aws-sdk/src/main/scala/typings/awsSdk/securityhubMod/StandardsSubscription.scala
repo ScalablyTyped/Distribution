@@ -17,9 +17,14 @@ trait StandardsSubscription extends StObject {
   var StandardsInput: StandardsInputParameterMap
   
   /**
-    * The status of the standards subscription.
+    * The status of the standard subscription. The status values are as follows:    PENDING - Standard is in the process of being enabled.    READY - Standard is enabled.    INCOMPLETE - Standard could not be enabled completely. Some controls may not be available.    DELETING - Standard is in the process of being disabled.    FAILED - Standard could not be disabled.  
     */
   var StandardsStatus: typings.awsSdk.securityhubMod.StandardsStatus
+  
+  /**
+    * The reason for the current status.
+    */
+  var StandardsStatusReason: js.UndefOr[typings.awsSdk.securityhubMod.StandardsStatusReason] = js.undefined
   
   /**
     * The ARN of a resource that represents your subscription to a supported standard.
@@ -45,6 +50,10 @@ object StandardsSubscription {
     inline def setStandardsInput(value: StandardsInputParameterMap): Self = StObject.set(x, "StandardsInput", value.asInstanceOf[js.Any])
     
     inline def setStandardsStatus(value: StandardsStatus): Self = StObject.set(x, "StandardsStatus", value.asInstanceOf[js.Any])
+    
+    inline def setStandardsStatusReason(value: StandardsStatusReason): Self = StObject.set(x, "StandardsStatusReason", value.asInstanceOf[js.Any])
+    
+    inline def setStandardsStatusReasonUndefined: Self = StObject.set(x, "StandardsStatusReason", js.undefined)
     
     inline def setStandardsSubscriptionArn(value: NonEmptyString): Self = StObject.set(x, "StandardsSubscriptionArn", value.asInstanceOf[js.Any])
   }

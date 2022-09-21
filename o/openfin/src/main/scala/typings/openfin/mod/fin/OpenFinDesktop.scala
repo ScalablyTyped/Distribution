@@ -22,7 +22,7 @@ trait OpenFinDesktop extends StObject {
   
   var Window: OpenFinWindowStatic
   
-  def main(f: js.Function0[js.Any]): Unit
+  def main(f: js.Function0[Any]): Unit
 }
 object OpenFinDesktop {
   
@@ -35,7 +35,7 @@ object OpenFinDesktop {
     Notification: OpenFinNotificationStatic,
     System: OpenFinSystem,
     Window: OpenFinWindowStatic,
-    main: js.Function0[js.Any] => Unit
+    main: js.Function0[Any] => Unit
   ): OpenFinDesktop = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], ExternalApplication = ExternalApplication.asInstanceOf[js.Any], Frame = Frame.asInstanceOf[js.Any], GlobalHotkey = GlobalHotkey.asInstanceOf[js.Any], InterApplicationBus = InterApplicationBus.asInstanceOf[js.Any], Notification = Notification.asInstanceOf[js.Any], System = System.asInstanceOf[js.Any], Window = Window.asInstanceOf[js.Any], main = js.Any.fromFunction1(main))
     __obj.asInstanceOf[OpenFinDesktop]
@@ -53,7 +53,7 @@ object OpenFinDesktop {
     
     inline def setInterApplicationBus(value: OpenFinInterApplicationBus): Self = StObject.set(x, "InterApplicationBus", value.asInstanceOf[js.Any])
     
-    inline def setMain(value: js.Function0[js.Any] => Unit): Self = StObject.set(x, "main", js.Any.fromFunction1(value))
+    inline def setMain(value: js.Function0[Any] => Unit): Self = StObject.set(x, "main", js.Any.fromFunction1(value))
     
     inline def setNotification(value: OpenFinNotificationStatic): Self = StObject.set(x, "Notification", value.asInstanceOf[js.Any])
     

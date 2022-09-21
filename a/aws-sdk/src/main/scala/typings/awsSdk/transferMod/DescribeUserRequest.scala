@@ -12,7 +12,7 @@ trait DescribeUserRequest extends StObject {
   var ServerId: typings.awsSdk.transferMod.ServerId
   
   /**
-    * The name of the user assigned to one or more servers. User names are part of the sign-in credentials to use the AWS Transfer Family service and perform file transfer tasks.
+    * The name of the user assigned to one or more servers. User names are part of the sign-in credentials to use the Transfer Family service and perform file transfer tasks.
     */
   var UserName: typings.awsSdk.transferMod.UserName
 }

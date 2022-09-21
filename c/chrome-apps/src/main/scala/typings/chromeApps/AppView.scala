@@ -31,7 +31,7 @@ object AppView {
     def allow(url: String): Unit
     
     /** Optional developer specified data that the app to be embedded can use when making an embedding decision. */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Prevents the embedding request */
     def deny(): Unit
@@ -50,7 +50,7 @@ object AppView {
       
       inline def setAllow(value: String => Unit): Self = StObject.set(x, "allow", js.Any.fromFunction1(value))
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       

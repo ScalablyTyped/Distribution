@@ -22,7 +22,7 @@ trait RegisterGameServerInput extends StObject {
   var GameServerGroupName: GameServerGroupNameOrArn
   
   /**
-    * A custom string that uniquely identifies the game server to register. Game server IDs are developer-defined and must be unique across all game server groups in your AWS account.
+    * A custom string that uniquely identifies the game server to register. Game server IDs are developer-defined and must be unique across all game server groups in your Amazon Web Services account.
     */
   var GameServerId: typings.awsSdk.gameliftMod.GameServerId
   

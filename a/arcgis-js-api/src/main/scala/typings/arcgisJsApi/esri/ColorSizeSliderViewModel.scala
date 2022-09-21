@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ColorSizeSliderViewModel
   extends StObject
-     with SmartMappingSliderViewModel {
+     with SizeSliderViewModel {
   
   /**
     * Generates the color ramp gradient rendered on the slider.
@@ -21,5 +21,6 @@ trait ColorSizeSliderViewModel
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSizeSlider-ColorSizeSliderViewModel.html#stops)
     */
-  var stops: js.Array[ColorSizeStop] = js.native
+  @JSName("stops")
+  var stops_ColorSizeSliderViewModel: js.Array[ColorSizeStop] = js.native
 }

@@ -8,16 +8,16 @@ object engineMod {
   
   @JSImport("rot-js/lib/engine", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Engine {
-    def this(scheduler: typings.rotJs.schedulerSchedulerMod.default[js.Any]) = this()
+    def this(scheduler: typings.rotJs.schedulerSchedulerMod.default[Any]) = this()
     
     /* CompleteClass */
     var _lock: Double = js.native
     
     /* CompleteClass */
-    var _scheduler: typings.rotJs.schedulerSchedulerMod.default[js.Any] = js.native
+    var _scheduler: typings.rotJs.schedulerSchedulerMod.default[Any] = js.native
     
     /**
       * Interrupt the engine by an asynchronous action
@@ -42,7 +42,7 @@ object engineMod {
     
     var _lock: Double
     
-    var _scheduler: typings.rotJs.schedulerSchedulerMod.default[js.Any]
+    var _scheduler: typings.rotJs.schedulerSchedulerMod.default[Any]
     
     /**
       * Interrupt the engine by an asynchronous action
@@ -63,7 +63,7 @@ object engineMod {
     
     inline def apply(
       _lock: Double,
-      _scheduler: typings.rotJs.schedulerSchedulerMod.default[js.Any],
+      _scheduler: typings.rotJs.schedulerSchedulerMod.default[Any],
       lock: () => Engine,
       start: () => Engine,
       unlock: () => Engine
@@ -82,7 +82,7 @@ object engineMod {
       
       inline def set_lock(value: Double): Self = StObject.set(x, "_lock", value.asInstanceOf[js.Any])
       
-      inline def set_scheduler(value: typings.rotJs.schedulerSchedulerMod.default[js.Any]): Self = StObject.set(x, "_scheduler", value.asInstanceOf[js.Any])
+      inline def set_scheduler(value: typings.rotJs.schedulerSchedulerMod.default[Any]): Self = StObject.set(x, "_scheduler", value.asInstanceOf[js.Any])
     }
   }
 }

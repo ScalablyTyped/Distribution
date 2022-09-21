@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("node-dogstatsd", "StatsD")
   @js.native
-  class StatsD protected ()
+  open class StatsD protected ()
     extends StObject
        with StatsDClient {
     def this(host: String) = this()
@@ -78,7 +78,7 @@ object mod {
       
       inline def setGlobal_tagsUndefined: Self = StObject.set(x, "global_tags", js.undefined)
       
-      inline def setGlobal_tagsVarargs(value: String*): Self = StObject.set(x, "global_tags", js.Array(value :_*))
+      inline def setGlobal_tagsVarargs(value: String*): Self = StObject.set(x, "global_tags", js.Array(value*))
     }
   }
 }

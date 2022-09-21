@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait DistanceParametersConstructor
   extends StObject
-     with Instantiable0[DistanceParameters]
+     with /**
+  * Defines the input parameters when calling [geometryService.distance()](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geometryService.html#distance).
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DistanceParameters.html)
+  */
+Instantiable0[DistanceParameters]
      with Instantiable1[/* properties */ DistanceParametersProperties, DistanceParameters]

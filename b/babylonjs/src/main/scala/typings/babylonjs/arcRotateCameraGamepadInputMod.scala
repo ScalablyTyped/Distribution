@@ -11,15 +11,15 @@ object arcRotateCameraGamepadInputMod {
   
   @JSImport("babylonjs/Cameras/Inputs/arcRotateCameraGamepadInput", "ArcRotateCameraGamepadInput")
   @js.native
-  class ArcRotateCameraGamepadInput ()
+  open class ArcRotateCameraGamepadInput ()
     extends StObject
        with ICameraInput[ArcRotateCamera] {
     
-    /* private */ var _onGamepadConnectedObserver: js.Any = js.native
+    /* private */ var _onGamepadConnectedObserver: Any = js.native
     
-    /* private */ var _onGamepadDisconnectedObserver: js.Any = js.native
+    /* private */ var _onGamepadDisconnectedObserver: Any = js.native
     
-    /* private */ var _yAxisScale: js.Any = js.native
+    /* private */ var _yAxisScale: Any = js.native
     
     /**
       * Defines the camera the input is attached to.
@@ -40,13 +40,13 @@ object arcRotateCameraGamepadInputMod {
     var gamepad: Nullable[typings.babylonjs.gamepadMod.Gamepad] = js.native
     
     /**
-      * Defines the gamepad move sensiblity.
+      * Defines the gamepad move sensibility.
       * This is the threshold from when moving starts to be accounted for for to prevent jittering.
       */
     var gamepadMoveSensibility: Double = js.native
     
     /**
-      * Defines the gamepad rotation sensiblity.
+      * Defines the gamepad rotation sensibility.
       * This is the threshold from when rotation starts to be accounted for to prevent jittering.
       */
     var gamepadRotationSensibility: Double = js.native

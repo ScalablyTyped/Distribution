@@ -10,10 +10,10 @@ React Native bridge for using native Google Analytics libraries on iOS and Andro
 | ------------------ | :-------------: |
 | Full name          | react-native-google-analytics-bridge |
 | Keywords           | react, native, google, analytics, tracking, native, bridge, events, screen, hits, react-native, ios, android |
-| # releases         | 5 |
-| # dependents       | 4 |
-| # downloads        | 227104 |
-| # stars            | 3 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 6537.333333333333 |
+| # stars            | 1158.0 |
 
 ## Links
 - [Homepage](https://github.com/idehub/react-native-google-analytics-bridge#readme)

@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object resolverMod {
   
-  @JSImport("inversify/dts/resolution/resolver", JSImport.Namespace)
+  @JSImport("inversify/lib/resolution/resolver", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def resolve[T](context: Context): T = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(context.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def resolve[T](context: Context): T | js.Promise[T] | (js.Array[T | js.Promise[T]]) = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(context.asInstanceOf[js.Any]).asInstanceOf[T | js.Promise[T] | (js.Array[T | js.Promise[T]])]
 }

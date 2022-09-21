@@ -2,9 +2,9 @@ package typings.rxAngular
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.angular.mod.IScope
-import typings.rx.Rx.IScheduler
-import typings.rx.Rx.Observable
-import typings.rx.Rx.SchedulerStatic
+import typings.rxCore.Rx.IScheduler
+import typings.rxLite.Rx.SchedulerStatic
+import typings.rxLiteAggregates.Rx.Observable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,7 +35,7 @@ object Rx_ {
     extends StObject
        with SchedulerStatic
        with Instantiable1[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IScope */ /* $scope */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IScope */ /* $scope */ Any, 
           ScopeScheduler
         ]
 }

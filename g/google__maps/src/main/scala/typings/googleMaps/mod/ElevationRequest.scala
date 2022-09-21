@@ -24,6 +24,6 @@ object ElevationRequest {
     
     inline def setLocations(value: js.Array[LatLng]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
-    inline def setLocationsVarargs(value: LatLng*): Self = StObject.set(x, "locations", js.Array(value :_*))
+    inline def setLocationsVarargs(value: LatLng*): Self = StObject.set(x, "locations", js.Array(value*))
   }
 }

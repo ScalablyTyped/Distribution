@@ -20,7 +20,7 @@ object mod extends Shortcut {
     
     def overloadTranslationOptionHandler(args: js.Array[String]): PostProcess
     
-    def process(value: js.Any, key: String, options: js.Any): js.Any
+    def process(value: Any, key: String, options: Any): Any
     
     @JSName("type")
     var type_I18nextSprintfPostProcessor: postProcessor
@@ -30,7 +30,7 @@ object mod extends Shortcut {
     inline def apply(
       name: String,
       overloadTranslationOptionHandler: js.Array[String] => PostProcess,
-      process: (js.Any, String, js.Any) => js.Any
+      process: (Any, String, Any) => Any
     ): I18nextSprintfPostProcessor = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], overloadTranslationOptionHandler = js.Any.fromFunction1(overloadTranslationOptionHandler), process = js.Any.fromFunction3(process))
       __obj.updateDynamic("type")("postProcessor")
@@ -41,7 +41,7 @@ object mod extends Shortcut {
       
       inline def setOverloadTranslationOptionHandler(value: js.Array[String] => PostProcess): Self = StObject.set(x, "overloadTranslationOptionHandler", js.Any.fromFunction1(value))
       
-      inline def setProcess(value: (js.Any, String, js.Any) => js.Any): Self = StObject.set(x, "process", js.Any.fromFunction3(value))
+      inline def setProcess(value: (Any, String, Any) => Any): Self = StObject.set(x, "process", js.Any.fromFunction3(value))
       
       inline def setType(value: postProcessor): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -55,6 +55,6 @@ object mod extends Shortcut {
   /* augmented module */
   object i18nextAugmentingMod {
     
-    type TFunction = js.Function2[/* key */ String, /* repeated */ js.Any, String]
+    type TFunction = js.Function2[/* key */ String, /* repeated */ Any, String]
   }
 }

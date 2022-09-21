@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait WebExtensionManifestBrowserSpecificSettings extends StObject {
   
-  var edge: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var edge: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   var gecko: js.UndefOr[FirefoxSpecificProperties] = js.undefined
 }
@@ -20,7 +20,7 @@ object WebExtensionManifestBrowserSpecificSettings {
   
   extension [Self <: WebExtensionManifestBrowserSpecificSettings](x: Self) {
     
-    inline def setEdge(value: StringDictionary[js.Any]): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
+    inline def setEdge(value: StringDictionary[Any]): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
     
     inline def setEdgeUndefined: Self = StObject.set(x, "edge", js.undefined)
     

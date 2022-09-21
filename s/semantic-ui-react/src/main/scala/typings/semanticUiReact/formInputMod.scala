@@ -5,11 +5,10 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
-import typings.react.mod.AriaAttributes
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ChangeEvent
-import typings.react.mod.ChangeEventHandler
 import typings.react.mod.ClipboardEvent
 import typings.react.mod.ClipboardEventHandler
 import typings.react.mod.CompositionEvent
@@ -17,6 +16,7 @@ import typings.react.mod.CompositionEventHandler
 import typings.react.mod.DragEvent
 import typings.react.mod.DragEventHandler
 import typings.react.mod.ElementType
+import typings.react.mod.FC
 import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
@@ -33,7 +33,6 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactEventHandler
 import typings.react.mod.ReactNode
 import typings.react.mod.ReactNodeArray
-import typings.react.mod.StatelessComponent
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
 import typings.react.mod.TouchEventHandler
@@ -43,41 +42,82 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
-import typings.react.reactStrings.decimal
-import typings.react.reactStrings.done
-import typings.react.reactStrings.email
-import typings.react.reactStrings.enter
-import typings.react.reactStrings.go
-import typings.react.reactStrings.inherit
-import typings.react.reactStrings.next
-import typings.react.reactStrings.no
-import typings.react.reactStrings.none
-import typings.react.reactStrings.numeric
-import typings.react.reactStrings.off
-import typings.react.reactStrings.on
-import typings.react.reactStrings.previous
-import typings.react.reactStrings.search
-import typings.react.reactStrings.send
-import typings.react.reactStrings.tel
-import typings.react.reactStrings.text
-import typings.react.reactStrings.url
-import typings.react.reactStrings.yes
-import typings.semanticUiReact.formFieldMod.StrictFormFieldProps
 import typings.semanticUiReact.genericMod.HtmlInputrops
+import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import typings.semanticUiReact.genericMod.SemanticShorthandItem
+import typings.semanticUiReact.genericMod.SemanticWIDTHS
 import typings.semanticUiReact.inputInputMod.InputOnChangeData
 import typings.semanticUiReact.inputInputMod.InputProps
 import typings.semanticUiReact.labelLabelMod.LabelProps
+import typings.semanticUiReact.semanticUiReactStrings.`additions removals`
+import typings.semanticUiReact.semanticUiReactStrings.`additions text`
+import typings.semanticUiReact.semanticUiReactStrings.`inline`
 import typings.semanticUiReact.semanticUiReactStrings.`left corner`
+import typings.semanticUiReact.semanticUiReactStrings.`removals additions`
+import typings.semanticUiReact.semanticUiReactStrings.`removals text`
 import typings.semanticUiReact.semanticUiReactStrings.`right corner`
+import typings.semanticUiReact.semanticUiReactStrings.`text additions`
+import typings.semanticUiReact.semanticUiReactStrings.`text removals`
+import typings.semanticUiReact.semanticUiReactStrings.additions
+import typings.semanticUiReact.semanticUiReactStrings.all
+import typings.semanticUiReact.semanticUiReactStrings.ascending
+import typings.semanticUiReact.semanticUiReactStrings.assertive
 import typings.semanticUiReact.semanticUiReactStrings.big
+import typings.semanticUiReact.semanticUiReactStrings.both
+import typings.semanticUiReact.semanticUiReactStrings.copy
+import typings.semanticUiReact.semanticUiReactStrings.date
+import typings.semanticUiReact.semanticUiReactStrings.decimal
+import typings.semanticUiReact.semanticUiReactStrings.descending
+import typings.semanticUiReact.semanticUiReactStrings.dialog
+import typings.semanticUiReact.semanticUiReactStrings.done
+import typings.semanticUiReact.semanticUiReactStrings.email
+import typings.semanticUiReact.semanticUiReactStrings.enter
+import typings.semanticUiReact.semanticUiReactStrings.environment
+import typings.semanticUiReact.semanticUiReactStrings.execute
+import typings.semanticUiReact.semanticUiReactStrings.go
+import typings.semanticUiReact.semanticUiReactStrings.grammar
+import typings.semanticUiReact.semanticUiReactStrings.grid
+import typings.semanticUiReact.semanticUiReactStrings.horizontal
 import typings.semanticUiReact.semanticUiReactStrings.huge
+import typings.semanticUiReact.semanticUiReactStrings.inherit
 import typings.semanticUiReact.semanticUiReactStrings.large
 import typings.semanticUiReact.semanticUiReactStrings.left
+import typings.semanticUiReact.semanticUiReactStrings.link
+import typings.semanticUiReact.semanticUiReactStrings.list
+import typings.semanticUiReact.semanticUiReactStrings.listbox
+import typings.semanticUiReact.semanticUiReactStrings.location
 import typings.semanticUiReact.semanticUiReactStrings.massive
+import typings.semanticUiReact.semanticUiReactStrings.menu
 import typings.semanticUiReact.semanticUiReactStrings.mini
+import typings.semanticUiReact.semanticUiReactStrings.mixed
+import typings.semanticUiReact.semanticUiReactStrings.move
+import typings.semanticUiReact.semanticUiReactStrings.next
+import typings.semanticUiReact.semanticUiReactStrings.no
+import typings.semanticUiReact.semanticUiReactStrings.none
+import typings.semanticUiReact.semanticUiReactStrings.numeric
+import typings.semanticUiReact.semanticUiReactStrings.off
+import typings.semanticUiReact.semanticUiReactStrings.on
+import typings.semanticUiReact.semanticUiReactStrings.other
+import typings.semanticUiReact.semanticUiReactStrings.page
+import typings.semanticUiReact.semanticUiReactStrings.polite
+import typings.semanticUiReact.semanticUiReactStrings.popup
+import typings.semanticUiReact.semanticUiReactStrings.previous
+import typings.semanticUiReact.semanticUiReactStrings.removals
 import typings.semanticUiReact.semanticUiReactStrings.right
+import typings.semanticUiReact.semanticUiReactStrings.search
+import typings.semanticUiReact.semanticUiReactStrings.send
 import typings.semanticUiReact.semanticUiReactStrings.small
+import typings.semanticUiReact.semanticUiReactStrings.spelling
+import typings.semanticUiReact.semanticUiReactStrings.step
+import typings.semanticUiReact.semanticUiReactStrings.tel
+import typings.semanticUiReact.semanticUiReactStrings.text
+import typings.semanticUiReact.semanticUiReactStrings.time
+import typings.semanticUiReact.semanticUiReactStrings.tree
+import typings.semanticUiReact.semanticUiReactStrings.url
+import typings.semanticUiReact.semanticUiReactStrings.user
+import typings.semanticUiReact.semanticUiReactStrings.vertical
+import typings.semanticUiReact.semanticUiReactStrings.yes
+import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
@@ -88,32 +128,27 @@ object formInputMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/collections/Form/FormInput", JSImport.Default)
   @js.native
-  val default: StatelessComponent[FormInputProps] = js.native
+  val default: FC[FormInputProps] = js.native
   
   trait FormInputProps
     extends StObject
        with StrictFormInputProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object FormInputProps {
     
-    inline def apply(): FormInputProps = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(
+      id: (js.UndefOr[Double | String]) & js.UndefOr[String],
+      required: js.UndefOr[Any] & js.UndefOr[Boolean],
+      width: js.UndefOr[SemanticWIDTHS] & (js.UndefOr[Double | String])
+    ): FormInputProps = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[FormInputProps]
     }
   }
   
-  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
-  - scala.AnyRef because Inheritance from two classes. Inlined 
-  - typings.react.mod.DOMAttributes because var conflicts: children, onChange. Inlined onKeyDown, onPlaying, onMouseOver, onMouseMove, onPointerCancel, onDragStart, onMouseEnter, onDragEnter, onPointerOver, onDragLeave, onMouseOut, onVolumeChange, onSelect, onAnimationStart, onLoadedData, onTouchStart, onInput, onCompositionStart, onScroll, onDragEnd, onLoadStart, dangerouslySetInnerHTML, onFocus, onContextMenu, onError, onTouchMove, onTouchEnd, onDrag, onEnded, onAnimationIteration, onWaiting, onCompositionEnd, onDoubleClick, onEmptied, onStalled, onKeyPress, onMouseUp, onPointerLeave, onAuxClick, onWheel, onPointerUp, onProgress, onBlur, onPointerMove, onPause, onDrop, onReset, onPointerDown, onDragOver, onTimeUpdate, onMouseDown, onDurationChange, onSubmit, onSuspend, onTransitionEnd, onCanPlay, onDragExit, onEncrypted, onPlay, onPointerOut, onCopy, onAbort, onInvalid, onCompositionUpdate, onTouchCancel, onCanPlayThrough, onClick, onLoad, onLoadedMetadata, onSeeked, onPointerEnter, onBeforeInput, onAnimationEnd, onCut, onSeeking, onPaste, onMouseLeave, onRateChange, onKeyUp
-  - js.Any because Inheritance from two classes. Inlined 
-  - typings.react.mod.HTMLAttributes because var conflicts: children, className, id, onChange, tabIndex. Inlined contextMenu, vocab, typeof, inputMode, is, about, accessKey, itemScope, style, security, defaultValue, autoSave, prefix, resource, suppressHydrationWarning, itemType, spellCheck, slot, autoCapitalize, placeholder, radioGroup, lang, color, suppressContentEditableWarning, translate, itemID, dir, draggable, contentEditable, itemRef, hidden, inlist, property, defaultChecked, unselectable, role, datatype, itemProp, title, autoCorrect, results
-  - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
-  - typings.react.mod.InputHTMLAttributes because Inheritance from two classes. Inlined formAction, alt, src, max, multiple, height, enterKeyHint, min, capture, maxLength, formEncType, pattern, form, accept, step, value, minLength, readOnly, name, formMethod, formTarget, autoFocus, crossOrigin, checked, onChange_InputHTMLAttributes, formNoValidate, list, autoComplete
-  - typings.semanticUiReact.inputInputMod.StrictInputProps because Inheritance from two classes. Inlined action, actionPosition, fluid, focus, icon, iconPosition, input, inverted, labelPosition, loading, onChange, size, tabIndex, transparent */ trait StrictFormInputProps
-    extends StObject
-       with StrictFormFieldProps
-       with AriaAttributes {
+  /* Inlined parent std.Omit<semantic-ui-react.semantic-ui-react/dist/commonjs/collections/Form/FormField.StrictFormFieldProps, 'label'> */
+  /* Inlined parent semantic-ui-react.semantic-ui-react/dist/commonjs/elements/Input.StrictInputProps */
+  trait StrictFormInputProps extends StObject {
     
     // RDFa Attributes
     var about: js.UndefOr[String] = js.undefined
@@ -124,12 +159,249 @@ object formInputMod extends Shortcut {
     var accessKey: js.UndefOr[String] = js.undefined
     
     /** An Input can be formatted to alert the user to an action they may perform. */
-    var action: js.UndefOr[js.Any | Boolean] = js.undefined
+    var action: js.UndefOr[Any | Boolean] = js.undefined
     
     /** An action can appear along side an Input on the left or right. */
     var actionPosition: js.UndefOr[left] = js.undefined
     
     var alt: js.UndefOr[String] = js.undefined
+    
+    /** Identifies the currently active element when DOM focus is on a composite widget, textbox, group, or application. */
+    var `aria-activedescendant`: js.UndefOr[String] = js.undefined
+    
+    /** Indicates whether assistive technologies will present all, or only parts of, the changed region based on the change notifications defined by the aria-relevant attribute. */
+    var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
+    
+    /**
+      * Indicates whether inputting text could trigger display of one or more predictions of the user's intended value for an input and specifies how predictions would be
+      * presented if they are made.
+      */
+    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
+    
+    /** Indicates an element is being modified and that assistive technologies MAY want to wait until the modifications are complete before exposing them to the user. */
+    var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
+    
+    /**
+      * Indicates the current "checked" state of checkboxes, radio buttons, and other widgets.
+      * @see aria-pressed @see aria-selected.
+      */
+    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
+    
+    /**
+      * Defines the total number of columns in a table, grid, or treegrid.
+      * @see aria-colindex.
+      */
+    var `aria-colcount`: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Defines an element's column index or position with respect to the total number of columns within a table, grid, or treegrid.
+      * @see aria-colcount @see aria-colspan.
+      */
+    var `aria-colindex`: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Defines the number of columns spanned by a cell or gridcell within a table, grid, or treegrid.
+      * @see aria-colindex @see aria-rowspan.
+      */
+    var `aria-colspan`: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Identifies the element (or elements) whose contents or presence are controlled by the current element.
+      * @see aria-owns.
+      */
+    var `aria-controls`: js.UndefOr[String] = js.undefined
+    
+    /** Indicates the element that represents the current item within a container or set of related elements. */
+    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
+    
+    /**
+      * Identifies the element (or elements) that describes the object.
+      * @see aria-labelledby
+      */
+    var `aria-describedby`: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Identifies the element that provides a detailed, extended description for the object.
+      * @see aria-describedby.
+      */
+    var `aria-details`: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Indicates that the element is perceivable but disabled, so it is not editable or otherwise operable.
+      * @see aria-hidden @see aria-readonly.
+      */
+    var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
+    
+    /**
+      * Indicates what functions can be performed when a dragged object is released on the drop target.
+      * @deprecated in ARIA 1.1
+      */
+    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
+    
+    /**
+      * Identifies the element that provides an error message for the object.
+      * @see aria-invalid @see aria-describedby.
+      */
+    var `aria-errormessage`: js.UndefOr[String] = js.undefined
+    
+    /** Indicates whether the element, or another grouping element it controls, is currently expanded or collapsed. */
+    var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
+    
+    /**
+      * Identifies the next element (or elements) in an alternate reading order of content which, at the user's discretion,
+      * allows assistive technology to override the general default of reading in document source order.
+      */
+    var `aria-flowto`: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Indicates an element's "grabbed" state in a drag-and-drop operation.
+      * @deprecated in ARIA 1.1
+      */
+    var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
+    
+    /** Indicates the availability and type of interactive popup element, such as menu or dialog, that can be triggered by an element. */
+    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
+    
+    /**
+      * Indicates whether the element is exposed to an accessibility API.
+      * @see aria-disabled.
+      */
+    var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
+    
+    /**
+      * Indicates the entered value does not conform to the format expected by the application.
+      * @see aria-errormessage.
+      */
+    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
+    
+    /** Indicates keyboard shortcuts that an author has implemented to activate or give focus to an element. */
+    var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Defines a string value that labels the current element.
+      * @see aria-labelledby.
+      */
+    var `aria-label`: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Identifies the element (or elements) that labels the current element.
+      * @see aria-describedby.
+      */
+    var `aria-labelledby`: js.UndefOr[String] = js.undefined
+    
+    /** Defines the hierarchical level of an element within a structure. */
+    var `aria-level`: js.UndefOr[Double] = js.undefined
+    
+    /** Indicates that an element will be updated, and describes the types of updates the user agents, assistive technologies, and user can expect from the live region. */
+    var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
+    
+    /** Indicates whether an element is modal when displayed. */
+    var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
+    
+    /** Indicates whether a text box accepts multiple lines of input or only a single line. */
+    var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
+    
+    /** Indicates that the user may select more than one item from the current selectable descendants. */
+    var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
+    
+    /** Indicates whether the element's orientation is horizontal, vertical, or unknown/ambiguous. */
+    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
+    
+    /**
+      * Identifies an element (or elements) in order to define a visual, functional, or contextual parent/child relationship
+      * between DOM elements where the DOM hierarchy cannot be used to represent the relationship.
+      * @see aria-controls.
+      */
+    var `aria-owns`: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Defines a short hint (a word or short phrase) intended to aid the user with data entry when the control has no value.
+      * A hint could be a sample value or a brief description of the expected format.
+      */
+    var `aria-placeholder`: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Defines an element's number or position in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM.
+      * @see aria-setsize.
+      */
+    var `aria-posinset`: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Indicates the current "pressed" state of toggle buttons.
+      * @see aria-checked @see aria-selected.
+      */
+    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
+    
+    /**
+      * Indicates that the element is not editable, but is otherwise operable.
+      * @see aria-disabled.
+      */
+    var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
+    
+    /**
+      * Indicates what notifications the user agent will trigger when the accessibility tree within a live region is modified.
+      * @see aria-atomic.
+      */
+    var `aria-relevant`: js.UndefOr[
+        additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+      ] = js.undefined
+    
+    /** Indicates that user input is required on the element before a form may be submitted. */
+    var `aria-required`: js.UndefOr[Booleanish] = js.undefined
+    
+    /** Defines a human-readable, author-localized description for the role of an element. */
+    var `aria-roledescription`: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Defines the total number of rows in a table, grid, or treegrid.
+      * @see aria-rowindex.
+      */
+    var `aria-rowcount`: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Defines an element's row index or position with respect to the total number of rows within a table, grid, or treegrid.
+      * @see aria-rowcount @see aria-rowspan.
+      */
+    var `aria-rowindex`: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Defines the number of rows spanned by a cell or gridcell within a table, grid, or treegrid.
+      * @see aria-rowindex @see aria-colspan.
+      */
+    var `aria-rowspan`: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Indicates the current "selected" state of various widgets.
+      * @see aria-checked @see aria-pressed.
+      */
+    var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
+    
+    /**
+      * Defines the number of items in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM.
+      * @see aria-posinset.
+      */
+    var `aria-setsize`: js.UndefOr[Double] = js.undefined
+    
+    /** Indicates if items in a table or grid are sorted in ascending or descending order. */
+    var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
+    
+    /** Defines the maximum allowed value for a range widget. */
+    var `aria-valuemax`: js.UndefOr[Double] = js.undefined
+    
+    /** Defines the minimum allowed value for a range widget. */
+    var `aria-valuemin`: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Defines the current value for a range widget.
+      * @see aria-valuetext.
+      */
+    var `aria-valuenow`: js.UndefOr[Double] = js.undefined
+    
+    /** Defines the human readable text alternative of aria-valuenow for a range widget. */
+    var `aria-valuetext`: js.UndefOr[String] = js.undefined
+    
+    /** An element type to render as (string or function). */
+    var as: js.UndefOr[Any] = js.undefined
     
     // Non-standard Attributes
     var autoCapitalize: js.UndefOr[String] = js.undefined
@@ -142,16 +414,27 @@ object formInputMod extends Shortcut {
     
     var autoSave: js.UndefOr[String] = js.undefined
     
-    var capture: js.UndefOr[Boolean | String] = js.undefined
+    var capture: js.UndefOr[Boolean | user | environment] = js.undefined
     
     // https://www.w3.org/TR/html-media-capture/#the-capture-attribute
     var checked: js.UndefOr[Boolean] = js.undefined
     
+    /** Primary content. */
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
+    /** Additional classes. */
+    var className: js.UndefOr[String] = js.undefined
+    
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
+    
+    /** A FormField control prop. */
+    var control: js.UndefOr[Any] = js.undefined
     
     var crossOrigin: js.UndefOr[String] = js.undefined
     
@@ -166,13 +449,15 @@ object formInputMod extends Shortcut {
     
     var dir: js.UndefOr[String] = js.undefined
     
+    /** An Input field can show that it is disabled. */
+    var disabled: js.UndefOr[Boolean] = js.undefined
+    
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
     var enterKeyHint: js.UndefOr[enter | done | go | next | previous | search | send] = js.undefined
     
     /** Individual fields may display an error state along with a message. */
-    @JSName("error")
-    var error_StrictFormInputProps: js.UndefOr[js.Any] = js.undefined
+    var error: js.UndefOr[Any] = js.undefined
     
     /** Take on the size of its container. */
     var fluid: js.UndefOr[Boolean] = js.undefined
@@ -197,12 +482,16 @@ object formInputMod extends Shortcut {
     var hidden: js.UndefOr[Boolean] = js.undefined
     
     /** Optional Icon to display inside the Input. */
-    var icon: js.UndefOr[js.Any | SemanticShorthandItem[InputProps]] = js.undefined
+    var icon: js.UndefOr[Any | SemanticShorthandItem[InputProps]] = js.undefined
     
     /** An Icon can appear inside an Input on the left. */
     var iconPosition: js.UndefOr[left] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var id: (js.UndefOr[Double | String]) & js.UndefOr[String]
+    
+    var `inline`: js.UndefOr[Boolean] = js.undefined
+    
+    var inlist: js.UndefOr[Any] = js.undefined
     
     /** Shorthand for creating the HTML Input. */
     var input: js.UndefOr[SemanticShorthandItem[HtmlInputrops]] = js.undefined
@@ -233,12 +522,11 @@ object formInputMod extends Shortcut {
     
     var itemType: js.UndefOr[String] = js.undefined
     
+    /** Shorthand for a Label. */
+    var label: js.UndefOr[SemanticShorthandItem[LabelProps]] = js.undefined
+    
     /** A Label can appear outside an Input on the left or right. */
     var labelPosition: js.UndefOr[left | right | (`left corner`) | (`right corner`)] = js.undefined
-    
-    /** Shorthand for a Label. */
-    @JSName("label")
-    var label_StrictFormInputProps: js.UndefOr[SemanticShorthandItem[LabelProps]] = js.undefined
     
     var lang: js.UndefOr[String] = js.undefined
     
@@ -289,8 +577,6 @@ object formInputMod extends Shortcut {
     var onChange: js.UndefOr[
         js.Function2[/* event */ ChangeEvent[HTMLInputElement], /* data */ InputOnChangeData, Unit]
       ] = js.undefined
-    @JSName("onChange")
-    var onChange_InputHTMLAttributes: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.undefined
     
     var onClick: js.UndefOr[MouseEventHandler[HTMLInputElement]] = js.undefined
     
@@ -347,6 +633,7 @@ object formInputMod extends Shortcut {
     // Keyboard Events
     var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.undefined
     
+    /** @deprecated */
     var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.undefined
     
     var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.undefined
@@ -455,13 +742,15 @@ object formInputMod extends Shortcut {
     
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
+    var required: js.UndefOr[Any] & js.UndefOr[Boolean]
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
     
     // <command>, <menuitem>
     // WAI-ARIA
-    var role: js.UndefOr[String] = js.undefined
+    var role: js.UndefOr[AriaRole] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
@@ -492,6 +781,9 @@ object formInputMod extends Shortcut {
     /** Transparent Input has no background. */
     var transparent: js.UndefOr[Boolean] = js.undefined
     
+    /** The HTML input type. */
+    var `type`: js.UndefOr[String] = js.undefined
+    
     var typeof: js.UndefOr[String] = js.undefined
     
     var unselectable: js.UndefOr[on | off] = js.undefined
@@ -499,11 +791,17 @@ object formInputMod extends Shortcut {
     var value: js.UndefOr[String | js.Array[String] | Double] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
+    
+    var width: js.UndefOr[SemanticWIDTHS] & (js.UndefOr[Double | String])
   }
   object StrictFormInputProps {
     
-    inline def apply(): StrictFormInputProps = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(
+      id: (js.UndefOr[Double | String]) & js.UndefOr[String],
+      required: js.UndefOr[Any] & js.UndefOr[Boolean],
+      width: js.UndefOr[SemanticWIDTHS] & (js.UndefOr[Double | String])
+    ): StrictFormInputProps = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[StrictFormInputProps]
     }
     
@@ -521,7 +819,7 @@ object formInputMod extends Shortcut {
       
       inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
       
-      inline def setAction(value: js.Any | Boolean): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: Any | Boolean): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
       inline def setActionPosition(value: left): Self = StObject.set(x, "actionPosition", value.asInstanceOf[js.Any])
       
@@ -532,6 +830,204 @@ object formInputMod extends Shortcut {
       inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
       inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+      
+      inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
+      
+      inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
+      
+      inline def `setAria-autocomplete`(value: none | `inline` | list | both): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
+      
+      inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
+      
+      inline def `setAria-checked`(value: Boolean | mixed): Self = StObject.set(x, "aria-checked", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-checkedUndefined`: Self = StObject.set(x, "aria-checked", js.undefined)
+      
+      inline def `setAria-colcount`(value: Double): Self = StObject.set(x, "aria-colcount", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-colcountUndefined`: Self = StObject.set(x, "aria-colcount", js.undefined)
+      
+      inline def `setAria-colindex`(value: Double): Self = StObject.set(x, "aria-colindex", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-colindexUndefined`: Self = StObject.set(x, "aria-colindex", js.undefined)
+      
+      inline def `setAria-colspan`(value: Double): Self = StObject.set(x, "aria-colspan", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-colspanUndefined`: Self = StObject.set(x, "aria-colspan", js.undefined)
+      
+      inline def `setAria-controls`(value: String): Self = StObject.set(x, "aria-controls", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-controlsUndefined`: Self = StObject.set(x, "aria-controls", js.undefined)
+      
+      inline def `setAria-current`(value: Boolean | page | step | location | date | time): Self = StObject.set(x, "aria-current", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-currentUndefined`: Self = StObject.set(x, "aria-current", js.undefined)
+      
+      inline def `setAria-describedby`(value: String): Self = StObject.set(x, "aria-describedby", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-describedbyUndefined`: Self = StObject.set(x, "aria-describedby", js.undefined)
+      
+      inline def `setAria-details`(value: String): Self = StObject.set(x, "aria-details", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
+      
+      inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
+      
+      inline def `setAria-dropeffect`(value: none | copy | execute | link | move | popup): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-dropeffectUndefined`: Self = StObject.set(x, "aria-dropeffect", js.undefined)
+      
+      inline def `setAria-errormessage`(value: String): Self = StObject.set(x, "aria-errormessage", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
+      
+      inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
+      
+      inline def `setAria-flowto`(value: String): Self = StObject.set(x, "aria-flowto", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
+      
+      inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
+      
+      inline def `setAria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
+      
+      inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
+      
+      inline def `setAria-invalid`(value: Boolean | grammar | spelling): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-invalidUndefined`: Self = StObject.set(x, "aria-invalid", js.undefined)
+      
+      inline def `setAria-keyshortcuts`(value: String): Self = StObject.set(x, "aria-keyshortcuts", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-keyshortcutsUndefined`: Self = StObject.set(x, "aria-keyshortcuts", js.undefined)
+      
+      inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
+      
+      inline def `setAria-labelledby`(value: String): Self = StObject.set(x, "aria-labelledby", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-labelledbyUndefined`: Self = StObject.set(x, "aria-labelledby", js.undefined)
+      
+      inline def `setAria-level`(value: Double): Self = StObject.set(x, "aria-level", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-levelUndefined`: Self = StObject.set(x, "aria-level", js.undefined)
+      
+      inline def `setAria-live`(value: off | assertive | polite): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
+      
+      inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
+      
+      inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
+      
+      inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
+      
+      inline def `setAria-orientation`(value: horizontal | vertical): Self = StObject.set(x, "aria-orientation", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-orientationUndefined`: Self = StObject.set(x, "aria-orientation", js.undefined)
+      
+      inline def `setAria-owns`(value: String): Self = StObject.set(x, "aria-owns", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-ownsUndefined`: Self = StObject.set(x, "aria-owns", js.undefined)
+      
+      inline def `setAria-placeholder`(value: String): Self = StObject.set(x, "aria-placeholder", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-placeholderUndefined`: Self = StObject.set(x, "aria-placeholder", js.undefined)
+      
+      inline def `setAria-posinset`(value: Double): Self = StObject.set(x, "aria-posinset", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-posinsetUndefined`: Self = StObject.set(x, "aria-posinset", js.undefined)
+      
+      inline def `setAria-pressed`(value: Boolean | mixed): Self = StObject.set(x, "aria-pressed", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
+      
+      inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
+      
+      inline def `setAria-relevant`(
+        value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+      ): Self = StObject.set(x, "aria-relevant", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
+      
+      inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
+      
+      inline def `setAria-roledescription`(value: String): Self = StObject.set(x, "aria-roledescription", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-roledescriptionUndefined`: Self = StObject.set(x, "aria-roledescription", js.undefined)
+      
+      inline def `setAria-rowcount`(value: Double): Self = StObject.set(x, "aria-rowcount", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-rowcountUndefined`: Self = StObject.set(x, "aria-rowcount", js.undefined)
+      
+      inline def `setAria-rowindex`(value: Double): Self = StObject.set(x, "aria-rowindex", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-rowindexUndefined`: Self = StObject.set(x, "aria-rowindex", js.undefined)
+      
+      inline def `setAria-rowspan`(value: Double): Self = StObject.set(x, "aria-rowspan", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
+      
+      inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
+      
+      inline def `setAria-setsize`(value: Double): Self = StObject.set(x, "aria-setsize", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-setsizeUndefined`: Self = StObject.set(x, "aria-setsize", js.undefined)
+      
+      inline def `setAria-sort`(value: none | ascending | descending | other): Self = StObject.set(x, "aria-sort", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-sortUndefined`: Self = StObject.set(x, "aria-sort", js.undefined)
+      
+      inline def `setAria-valuemax`(value: Double): Self = StObject.set(x, "aria-valuemax", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-valuemaxUndefined`: Self = StObject.set(x, "aria-valuemax", js.undefined)
+      
+      inline def `setAria-valuemin`(value: Double): Self = StObject.set(x, "aria-valuemin", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-valueminUndefined`: Self = StObject.set(x, "aria-valuemin", js.undefined)
+      
+      inline def `setAria-valuenow`(value: Double): Self = StObject.set(x, "aria-valuenow", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-valuenowUndefined`: Self = StObject.set(x, "aria-valuenow", js.undefined)
+      
+      inline def `setAria-valuetext`(value: String): Self = StObject.set(x, "aria-valuetext", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-valuetextUndefined`: Self = StObject.set(x, "aria-valuetext", js.undefined)
+      
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
       inline def setAutoCapitalize(value: String): Self = StObject.set(x, "autoCapitalize", value.asInstanceOf[js.Any])
       
@@ -553,7 +1049,7 @@ object formInputMod extends Shortcut {
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
       
-      inline def setCapture(value: Boolean | String): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+      inline def setCapture(value: Boolean | user | environment): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
       inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
       
@@ -561,17 +1057,33 @@ object formInputMod extends Shortcut {
       
       inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      
+      inline def setContent(value: SemanticShorthandContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
       
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
       inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
+      
+      inline def setControl(value: Any): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
+      
+      inline def setControlUndefined: Self = StObject.set(x, "control", js.undefined)
       
       inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
@@ -593,11 +1105,15 @@ object formInputMod extends Shortcut {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
       inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+      
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
       inline def setDraggable(value: Booleanish): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
       
@@ -607,7 +1123,7 @@ object formInputMod extends Shortcut {
       
       inline def setEnterKeyHintUndefined: Self = StObject.set(x, "enterKeyHint", js.undefined)
       
-      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
@@ -651,7 +1167,7 @@ object formInputMod extends Shortcut {
       
       inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
       
-      inline def setIcon(value: js.Any | SemanticShorthandItem[InputProps]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: Any | SemanticShorthandItem[InputProps]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
       inline def setIconFunction3(
         value: (/* component */ ElementType[InputProps], InputProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
@@ -663,7 +1179,13 @@ object formInputMod extends Shortcut {
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setId(value: (js.UndefOr[Double | String]) & js.UndefOr[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+      
+      inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
+      
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
@@ -779,7 +1301,7 @@ object formInputMod extends Shortcut {
       
       inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLInputElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -791,13 +1313,7 @@ object formInputMod extends Shortcut {
       
       inline def setOnCanPlayUndefined: Self = StObject.set(x, "onCanPlay", js.undefined)
       
-      inline def setOnChange(
-        value: ChangeEventHandler[HTMLInputElement] | (js.Function2[/* event */ ChangeEvent[HTMLInputElement], /* data */ InputOnChangeData, Unit])
-      ): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
-      
-      inline def setOnChangeFunction1(value: ChangeEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
-      
-      inline def setOnChangeFunction2(value: (/* event */ ChangeEvent[HTMLInputElement], /* data */ InputOnChangeData) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      inline def setOnChange(value: (/* event */ ChangeEvent[HTMLInputElement], /* data */ InputOnChangeData) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -885,7 +1401,7 @@ object formInputMod extends Shortcut {
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLInputElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -1101,6 +1617,8 @@ object formInputMod extends Shortcut {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
+      inline def setRequired(value: js.UndefOr[Any] & js.UndefOr[Boolean]): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1109,7 +1627,7 @@ object formInputMod extends Shortcut {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
@@ -1165,6 +1683,10 @@ object formInputMod extends Shortcut {
       
       inline def setTransparentUndefined: Self = StObject.set(x, "transparent", js.undefined)
       
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      
       inline def setTypeof(value: String): Self = StObject.set(x, "typeof", value.asInstanceOf[js.Any])
       
       inline def setTypeofUndefined: Self = StObject.set(x, "typeof", js.undefined)
@@ -1177,16 +1699,18 @@ object formInputMod extends Shortcut {
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
       
       inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
       
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
+      
+      inline def setWidth(value: js.UndefOr[SemanticWIDTHS] & (js.UndefOr[Double | String])): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
-  type _To = StatelessComponent[FormInputProps]
+  type _To = FC[FormInputProps]
   
   /* This means you don't have to write `default`, but can instead just say `formInputMod.foo` */
-  override def _to: StatelessComponent[FormInputProps] = default
+  override def _to: FC[FormInputProps] = default
 }

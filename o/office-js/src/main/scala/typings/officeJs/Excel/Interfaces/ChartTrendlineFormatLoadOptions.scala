@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents the format properties for the chart trendline.
   *
-  * Represents the format properties for chart trendline.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 trait ChartTrendlineFormatLoadOptions extends StObject {
@@ -19,9 +19,9 @@ trait ChartTrendlineFormatLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents chart line formatting.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var line: js.UndefOr[ChartLineFormatLoadOptions] = js.undefined

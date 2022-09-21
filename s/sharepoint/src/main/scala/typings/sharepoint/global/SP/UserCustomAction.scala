@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.UserCustomAction")
 @js.native
-class UserCustomAction ()
+open class UserCustomAction ()
   extends StObject
      with typings.sharepoint.SP.UserCustomAction

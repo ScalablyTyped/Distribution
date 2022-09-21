@@ -15,7 +15,7 @@ object mod {
   
   @JSImport("amphtml-validator", "Validator")
   @js.native
-  class Validator protected () extends Script {
+  open class Validator protected () extends Script {
     def this(code: String) = this()
     def this(code: String, options: ScriptOptions) = this()
     
@@ -74,7 +74,7 @@ object mod {
       
       inline def setParams(value: js.Array[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      inline def setParamsVarargs(value: String*): Self = StObject.set(x, "params", js.Array(value :_*))
+      inline def setParamsVarargs(value: String*): Self = StObject.set(x, "params", js.Array(value*))
       
       inline def setSeverity(value: ValidationErrorSeverity): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
       
@@ -440,7 +440,7 @@ object mod {
       
       inline def setErrors(value: js.Array[ValidationError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      inline def setErrorsVarargs(value: ValidationError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: ValidationError*): Self = StObject.set(x, "errors", js.Array(value*))
       
       inline def setStatus(value: ValidationResultStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribePendingAggregationRequestsRequest extends StObject {
   
   /**
-    * The maximum number of evaluation results returned on each page. The default is maximum. If you specify 0, AWS Config uses the default.
+    * The maximum number of evaluation results returned on each page. The default is maximum. If you specify 0, Config uses the default.
     */
   var Limit: js.UndefOr[DescribePendingAggregationRequestsLimit] = js.undefined
   

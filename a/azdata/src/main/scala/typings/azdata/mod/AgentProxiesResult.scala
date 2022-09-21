@@ -21,6 +21,6 @@ object AgentProxiesResult {
     
     inline def setProxies(value: js.Array[AgentProxyInfo]): Self = StObject.set(x, "proxies", value.asInstanceOf[js.Any])
     
-    inline def setProxiesVarargs(value: AgentProxyInfo*): Self = StObject.set(x, "proxies", js.Array(value :_*))
+    inline def setProxiesVarargs(value: AgentProxyInfo*): Self = StObject.set(x, "proxies", js.Array(value*))
   }
 }

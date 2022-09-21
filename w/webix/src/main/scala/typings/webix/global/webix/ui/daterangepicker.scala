@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.webix.webix.ui.baseview because Already inherited
-- typings.webix.webix.ui.daterangepicker because var conflicts: $allowsClear, $compareValue_Original, $cssName, $height, $prepareValue_Original, $renderIcon_Original, $render_Original, $scope, $skin_Original, $view, $width, config, name, on_click_Original, touchable. Inlined  */ @JSGlobal("webix.ui.daterangepicker")
+- typings.webix.webix.ui.daterangepicker because var conflicts: $allowsClear, $compareValue_Original, $cssName, $height, $prepareValue_Original, $renderIcon_Original, $render_Original, $scope, $setNode, $skin_Original, $view, $width, config, name, on_click_Original, touchable. Inlined  */ @JSGlobal("webix.ui.daterangepicker")
 @js.native
-class daterangepicker ()
+open class daterangepicker ()
   extends typings.webix.mod.ui.daterangepicker

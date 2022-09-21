@@ -14,7 +14,7 @@ trait CreateBackupSelectionOutput extends StObject {
   /**
     * The date and time a backup selection is created, in Unix format and Coordinated Universal Time (UTC). The value of CreationDate is accurate to milliseconds. For example, the value 1516925490.087 represents Friday, January 26, 2018 12:11:30.087 AM.
     */
-  var CreationDate: js.UndefOr[timestamp] = js.undefined
+  var CreationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Uniquely identifies the body of a request to assign a set of resources to a backup plan.
@@ -34,7 +34,7 @@ object CreateBackupSelectionOutput {
     
     inline def setBackupPlanIdUndefined: Self = StObject.set(x, "BackupPlanId", js.undefined)
     
-    inline def setCreationDate(value: timestamp): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     

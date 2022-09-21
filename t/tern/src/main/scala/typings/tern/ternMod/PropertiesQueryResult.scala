@@ -20,6 +20,6 @@ object PropertiesQueryResult {
     
     inline def setCompletions(value: js.Array[String]): Self = StObject.set(x, "completions", value.asInstanceOf[js.Any])
     
-    inline def setCompletionsVarargs(value: String*): Self = StObject.set(x, "completions", js.Array(value :_*))
+    inline def setCompletionsVarargs(value: String*): Self = StObject.set(x, "completions", js.Array(value*))
   }
 }

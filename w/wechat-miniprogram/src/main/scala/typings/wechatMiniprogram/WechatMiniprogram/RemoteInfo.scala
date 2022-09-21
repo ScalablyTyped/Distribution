@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** 消息来源的结构化信息 */
+/** 发送端地址信息 */
 trait RemoteInfo extends StObject {
   
   /** 发送消息的 socket 的地址 */

@@ -24,6 +24,6 @@ object NotifyWorkersResponse {
     
     inline def setNotifyWorkersFailureStatusesUndefined: Self = StObject.set(x, "NotifyWorkersFailureStatuses", js.undefined)
     
-    inline def setNotifyWorkersFailureStatusesVarargs(value: NotifyWorkersFailureStatus*): Self = StObject.set(x, "NotifyWorkersFailureStatuses", js.Array(value :_*))
+    inline def setNotifyWorkersFailureStatusesVarargs(value: NotifyWorkersFailureStatus*): Self = StObject.set(x, "NotifyWorkersFailureStatuses", js.Array(value*))
   }
 }

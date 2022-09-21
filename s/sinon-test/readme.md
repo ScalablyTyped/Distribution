@@ -10,10 +10,10 @@ Typings are for version 2.4
 | ------------------ | :-------------: |
 | Full name          | sinon-test |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 5 |
-| # downloads        | 979906 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 139526.0 |
+| # stars            | 47.0 |
 
 ## Links
 - [Homepage](https://github.com/sinonjs/sinon-test#readme)

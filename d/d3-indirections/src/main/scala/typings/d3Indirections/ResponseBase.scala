@@ -9,17 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait ResponseBase extends StObject {
   
-  var result: js.Any
+  var result: Any
 }
 object ResponseBase {
   
-  inline def apply(result: js.Any): ResponseBase = {
+  inline def apply(result: Any): ResponseBase = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseBase]
   }
   
   extension [Self <: ResponseBase](x: Self) {
     
-    inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

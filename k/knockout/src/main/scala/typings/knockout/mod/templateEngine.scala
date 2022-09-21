@@ -24,30 +24,26 @@ abstract class templateEngine () extends StObject {
   def makeTemplateSource(template: Node): TemplateSource = js.native
   def makeTemplateSource(template: Node, templateDocument: Document): TemplateSource = js.native
   
-  def renderTemplate(template: String, bindingContext: BindingContext[js.Any], options: TemplateOptions[js.Any]): js.Array[Node] = js.native
+  def renderTemplate(template: String, bindingContext: BindingContext[Any], options: TemplateOptions[Any]): js.Array[Node] = js.native
   def renderTemplate(
     template: String,
-    bindingContext: BindingContext[js.Any],
-    options: TemplateOptions[js.Any],
+    bindingContext: BindingContext[Any],
+    options: TemplateOptions[Any],
     templateDocument: Document
   ): js.Array[Node] = js.native
-  def renderTemplate(template: Node, bindingContext: BindingContext[js.Any], options: TemplateOptions[js.Any]): js.Array[Node] = js.native
+  def renderTemplate(template: Node, bindingContext: BindingContext[Any], options: TemplateOptions[Any]): js.Array[Node] = js.native
   def renderTemplate(
     template: Node,
-    bindingContext: BindingContext[js.Any],
-    options: TemplateOptions[js.Any],
+    bindingContext: BindingContext[Any],
+    options: TemplateOptions[Any],
     templateDocument: Document
   ): js.Array[Node] = js.native
   
+  def renderTemplateSource(templateSource: TemplateSource, bindingContext: BindingContext[Any], options: TemplateOptions[Any]): js.Array[Node] = js.native
   def renderTemplateSource(
     templateSource: TemplateSource,
-    bindingContext: BindingContext[js.Any],
-    options: TemplateOptions[js.Any]
-  ): js.Array[Node] = js.native
-  def renderTemplateSource(
-    templateSource: TemplateSource,
-    bindingContext: BindingContext[js.Any],
-    options: TemplateOptions[js.Any],
+    bindingContext: BindingContext[Any],
+    options: TemplateOptions[Any],
     templateDocument: Document
   ): js.Array[Node] = js.native
   

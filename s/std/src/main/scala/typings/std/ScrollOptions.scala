@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ScrollOptions extends StObject {
   
+  /* standard dom */
   var behavior: js.UndefOr[ScrollBehavior] = js.undefined
 }
 object ScrollOptions {

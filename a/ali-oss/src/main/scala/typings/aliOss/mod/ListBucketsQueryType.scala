@@ -7,12 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // parameters type
 trait ListBucketsQueryType extends StObject {
   
-  // search buckets using prefix key
+  /** search start from marker, including marker key */
   var marker: js.UndefOr[String] = js.undefined
   
-  // search start from marker, including marker key
+  /** max buckets, default is 100, limit to 1000 */
   var `max-keys`: js.UndefOr[String | Double] = js.undefined
   
+  /** search buckets using prefix key */
   var prefix: js.UndefOr[String] = js.undefined
 }
 object ListBucketsQueryType {

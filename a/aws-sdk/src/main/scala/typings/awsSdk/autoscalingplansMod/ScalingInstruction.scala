@@ -72,7 +72,7 @@ trait ScalingInstruction extends StObject {
   var ServiceNamespace: typings.awsSdk.autoscalingplansMod.ServiceNamespace
   
   /**
-    * The structure that defines new target tracking configurations (up to 10). Each of these structures includes a specific scaling metric and a target value for the metric, along with various parameters to use with dynamic scaling.  With predictive scaling and dynamic scaling, the resource scales based on the target tracking configuration that provides the largest capacity for both scale in and scale out.  Condition: The scaling metric must be unique across target tracking configurations.
+    * The target tracking configurations (up to 10). Each of these structures must specify a unique scaling metric and a target value for the metric. 
     */
   var TargetTrackingConfigurations: typings.awsSdk.autoscalingplansMod.TargetTrackingConfigurations
 }
@@ -136,6 +136,6 @@ object ScalingInstruction {
     
     inline def setTargetTrackingConfigurations(value: TargetTrackingConfigurations): Self = StObject.set(x, "TargetTrackingConfigurations", value.asInstanceOf[js.Any])
     
-    inline def setTargetTrackingConfigurationsVarargs(value: TargetTrackingConfiguration*): Self = StObject.set(x, "TargetTrackingConfigurations", js.Array(value :_*))
+    inline def setTargetTrackingConfigurationsVarargs(value: TargetTrackingConfiguration*): Self = StObject.set(x, "TargetTrackingConfigurations", js.Array(value*))
   }
 }

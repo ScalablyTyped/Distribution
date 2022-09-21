@@ -64,13 +64,13 @@ object ApiApplication {
     
     inline def setKnownClientApplicationsUndefined: Self = StObject.set(x, "knownClientApplications", js.undefined)
     
-    inline def setKnownClientApplicationsVarargs(value: String*): Self = StObject.set(x, "knownClientApplications", js.Array(value :_*))
+    inline def setKnownClientApplicationsVarargs(value: String*): Self = StObject.set(x, "knownClientApplications", js.Array(value*))
     
     inline def setOauth2PermissionScopes(value: js.Array[PermissionScope]): Self = StObject.set(x, "oauth2PermissionScopes", value.asInstanceOf[js.Any])
     
     inline def setOauth2PermissionScopesUndefined: Self = StObject.set(x, "oauth2PermissionScopes", js.undefined)
     
-    inline def setOauth2PermissionScopesVarargs(value: PermissionScope*): Self = StObject.set(x, "oauth2PermissionScopes", js.Array(value :_*))
+    inline def setOauth2PermissionScopesVarargs(value: PermissionScope*): Self = StObject.set(x, "oauth2PermissionScopes", js.Array(value*))
     
     inline def setPreAuthorizedApplications(value: NullableOption[js.Array[PreAuthorizedApplication]]): Self = StObject.set(x, "preAuthorizedApplications", value.asInstanceOf[js.Any])
     
@@ -78,7 +78,7 @@ object ApiApplication {
     
     inline def setPreAuthorizedApplicationsUndefined: Self = StObject.set(x, "preAuthorizedApplications", js.undefined)
     
-    inline def setPreAuthorizedApplicationsVarargs(value: PreAuthorizedApplication*): Self = StObject.set(x, "preAuthorizedApplications", js.Array(value :_*))
+    inline def setPreAuthorizedApplicationsVarargs(value: PreAuthorizedApplication*): Self = StObject.set(x, "preAuthorizedApplications", js.Array(value*))
     
     inline def setRequestedAccessTokenVersion(value: NullableOption[Double]): Self = StObject.set(x, "requestedAccessTokenVersion", value.asInstanceOf[js.Any])
     

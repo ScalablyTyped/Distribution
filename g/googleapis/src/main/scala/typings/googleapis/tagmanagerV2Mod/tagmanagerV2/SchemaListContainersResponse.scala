@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * List Containers Response.
-  */
 trait SchemaListContainersResponse extends StObject {
   
   /**
@@ -17,7 +14,7 @@ trait SchemaListContainersResponse extends StObject {
   /**
     * Continuation token for fetching the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaListContainersResponse {
   
@@ -32,9 +29,11 @@ object SchemaListContainersResponse {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setContainerVarargs(value: SchemaContainer*): Self = StObject.set(x, "container", js.Array(value :_*))
+    inline def setContainerVarargs(value: SchemaContainer*): Self = StObject.set(x, "container", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

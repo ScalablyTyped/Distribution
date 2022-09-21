@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ArrowProps extends StObject {
   
-  var arrowProps: (Record[String, js.Any]) & Ref
+  var arrowProps: (Record[String, Any]) & Ref
   
   def forceUpdate(): Unit
   
   var placement: typings.reactOverlays.usePopperMod.Placement
   
-  var props: (Record[String, js.Any]) & Style
+  var props: (Record[String, Any]) & Style
   
   var show: Boolean
   
@@ -25,10 +25,10 @@ trait ArrowProps extends StObject {
 object ArrowProps {
   
   inline def apply(
-    arrowProps: (Record[String, js.Any]) & Ref,
+    arrowProps: (Record[String, Any]) & Ref,
     forceUpdate: () => Unit,
     placement: typings.reactOverlays.usePopperMod.Placement,
-    props: (Record[String, js.Any]) & Style,
+    props: (Record[String, Any]) & Style,
     show: Boolean,
     update: () => Unit
   ): ArrowProps = {
@@ -38,13 +38,13 @@ object ArrowProps {
   
   extension [Self <: ArrowProps](x: Self) {
     
-    inline def setArrowProps(value: (Record[String, js.Any]) & Ref): Self = StObject.set(x, "arrowProps", value.asInstanceOf[js.Any])
+    inline def setArrowProps(value: (Record[String, Any]) & Ref): Self = StObject.set(x, "arrowProps", value.asInstanceOf[js.Any])
     
     inline def setForceUpdate(value: () => Unit): Self = StObject.set(x, "forceUpdate", js.Any.fromFunction0(value))
     
     inline def setPlacement(value: typings.reactOverlays.usePopperMod.Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
-    inline def setProps(value: (Record[String, js.Any]) & Style): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setProps(value: (Record[String, Any]) & Style): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     
     inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     

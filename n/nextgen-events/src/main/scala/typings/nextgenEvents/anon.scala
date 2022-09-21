@@ -33,40 +33,40 @@ object anon {
   
   trait Async extends StObject {
     
-    var async: js.Any
+    var async: Any
     
     var context: js.UndefOr[String] = js.undefined
     
-    var eventObject: js.Any
+    var eventObject: Any
     
-    var fn: js.Any
+    var fn: Any
     
-    var id: js.UndefOr[js.Any] = js.undefined
+    var id: js.UndefOr[Any] = js.undefined
     
     var nice: js.UndefOr[Double] = js.undefined
     
-    var once: js.Any
+    var once: Any
   }
   object Async {
     
-    inline def apply(async: js.Any, eventObject: js.Any, fn: js.Any, once: js.Any): Async = {
+    inline def apply(async: Any, eventObject: Any, fn: Any, once: Any): Async = {
       val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], eventObject = eventObject.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any], once = once.asInstanceOf[js.Any])
       __obj.asInstanceOf[Async]
     }
     
     extension [Self <: Async](x: Self) {
       
-      inline def setAsync(value: js.Any): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: Any): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
       inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      inline def setEventObject(value: js.Any): Self = StObject.set(x, "eventObject", value.asInstanceOf[js.Any])
+      inline def setEventObject(value: Any): Self = StObject.set(x, "eventObject", value.asInstanceOf[js.Any])
       
-      inline def setFn(value: js.Any): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+      inline def setFn(value: Any): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
       
-      inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
@@ -74,7 +74,7 @@ object anon {
       
       inline def setNiceUndefined: Self = StObject.set(x, "nice", js.undefined)
       
-      inline def setOnce(value: js.Any): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
+      inline def setOnce(value: Any): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -39,7 +39,7 @@ object XModifiable2 {
     enableSetModified: () => Boolean,
     isModified: () => Boolean,
     isSetModifiedEnabled: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeModifyListener: XModifyListener => Unit,
     setModified: Boolean => Unit

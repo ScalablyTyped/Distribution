@@ -22,14 +22,13 @@ object mod {
   
   @JSImport("react-router-navigation", "BottomNavigation")
   @js.native
-  class BottomNavigation protected ()
-    extends Component[BottomNavigationProps, Key, js.Any] {
+  open class BottomNavigation protected () extends Component[BottomNavigationProps, Key, Any] {
     def this(props: BottomNavigationProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: BottomNavigationProps, context: js.Any) = this()
+    def this(props: BottomNavigationProps, context: Any) = this()
     
     def renderNavigationBar(sceneProps: TabSubViewProps, props: TabSubViewProps): ReactNode = js.native
     
@@ -72,17 +71,13 @@ object mod {
   
   @JSImport("react-router-navigation", "NavBar")
   @js.native
-  class NavBar protected ()
-    extends Component[CardSubViewProps, Unit, js.Any] {
+  open class NavBar protected () extends Component[CardSubViewProps, Unit, Any] {
     def this(props: CardSubViewProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: CardSubViewProps, context: js.Any) = this()
-    
-    @JSName("props")
-    var props_NavBar: CardSubViewProps = js.native
+    def this(props: CardSubViewProps, context: Any) = this()
     
     def renderLeftComponent(sceneProps: CardSubViewProps): ReactNode = js.native
     
@@ -93,21 +88,18 @@ object mod {
   
   @JSImport("react-router-navigation", "Navigation")
   @js.native
-  class Navigation protected ()
-    extends Component[NavigationComponentProps, js.Object, js.Any] {
+  open class Navigation protected ()
+    extends Component[NavigationComponentProps, js.Object, Any] {
     def this(props: NavigationComponentProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: NavigationComponentProps, context: js.Any) = this()
-    
-    @JSName("props")
-    var props_Navigation: NavigationComponentProps = js.native
+    def this(props: NavigationComponentProps, context: Any) = this()
     
     def renderHeader(sceneProps: CardSubViewProps, props: CardSubViewProps): ReactNode = js.native
     
-    def renderSceneComponent(sceneProps: CardSubViewProps): js.UndefOr[ComponentClass[js.Any, ComponentState]] = js.native
+    def renderSceneComponent(sceneProps: CardSubViewProps): js.UndefOr[ComponentClass[Any, ComponentState]] = js.native
   }
   
   trait Tab
@@ -130,17 +122,13 @@ object mod {
   
   @JSImport("react-router-navigation", "Tabs")
   @js.native
-  class Tabs protected ()
-    extends Component[TabBarComponentProps, Key, js.Any] {
+  open class Tabs protected () extends Component[TabBarComponentProps, Key, Any] {
     def this(props: TabBarComponentProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: TabBarComponentProps, context: js.Any) = this()
-    
-    @JSName("props")
-    var props_Tabs: TabBarComponentProps = js.native
+    def this(props: TabBarComponentProps, context: Any) = this()
     
     def renderFooter(sceneProps: TabSubViewProps): ReactElement | Null = js.native
     
@@ -174,7 +162,7 @@ object mod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
       
@@ -200,7 +188,7 @@ object mod {
     }
   }
   
-  type CardSubViewProps = js.Any
+  type CardSubViewProps = Any
   
   trait NavBarProps extends StObject {
     
@@ -308,7 +296,7 @@ object mod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value*))
     }
   }
   
@@ -320,17 +308,17 @@ object mod {
     
     var configureTransition: js.UndefOr[
         js.Function2[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionProps */ /* transitionProps */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionProps */ /* transitionProps */ Any, 
           /* prevTransitionProps */ js.UndefOr[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionProps */ js.Any
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionProps */ Any
           ], 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionSpec */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionSpec */ Any
         ]
       ] = js.undefined
     
-    var onTransitionEnd: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+    var onTransitionEnd: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
     
-    var onTransitionStart: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+    var onTransitionStart: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
   }
   object NavigationProps {
     
@@ -348,18 +336,18 @@ object mod {
       inline def setCardStyleUndefined: Self = StObject.set(x, "cardStyle", js.undefined)
       
       inline def setConfigureTransition(
-        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionProps */ /* transitionProps */ js.Any, /* prevTransitionProps */ js.UndefOr[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionProps */ js.Any
-            ]) => /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionSpec */ js.Any
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionProps */ /* transitionProps */ Any, /* prevTransitionProps */ js.UndefOr[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionProps */ Any
+            ]) => /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionSpec */ Any
       ): Self = StObject.set(x, "configureTransition", js.Any.fromFunction2(value))
       
       inline def setConfigureTransitionUndefined: Self = StObject.set(x, "configureTransition", js.undefined)
       
-      inline def setOnTransitionEnd(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onTransitionEnd", js.Any.fromFunction1(value))
+      inline def setOnTransitionEnd(value: /* repeated */ Any => Unit): Self = StObject.set(x, "onTransitionEnd", js.Any.fromFunction1(value))
       
       inline def setOnTransitionEndUndefined: Self = StObject.set(x, "onTransitionEnd", js.undefined)
       
-      inline def setOnTransitionStart(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onTransitionStart", js.Any.fromFunction1(value))
+      inline def setOnTransitionStart(value: /* repeated */ Any => Unit): Self = StObject.set(x, "onTransitionStart", js.Any.fromFunction1(value))
       
       inline def setOnTransitionStartUndefined: Self = StObject.set(x, "onTransitionStart", js.undefined)
     }
@@ -384,7 +372,7 @@ object mod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value*))
     }
   }
   
@@ -511,7 +499,7 @@ object mod {
     }
   }
   
-  type TabSubViewProps = js.Any
+  type TabSubViewProps = Any
   
   trait TabsProps
     extends StObject
@@ -519,11 +507,11 @@ object mod {
     
     var configureTransition: js.UndefOr[
         js.Function2[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionProps */ /* transitionProps */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionProps */ /* transitionProps */ Any, 
           /* prevTransitionProps */ js.UndefOr[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionProps */ js.Any
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionProps */ Any
           ], 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionSpec */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionSpec */ Any
         ]
       ] = js.undefined
     
@@ -540,9 +528,9 @@ object mod {
     extension [Self <: TabsProps](x: Self) {
       
       inline def setConfigureTransition(
-        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionProps */ /* transitionProps */ js.Any, /* prevTransitionProps */ js.UndefOr[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionProps */ js.Any
-            ]) => /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionSpec */ js.Any
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionProps */ /* transitionProps */ Any, /* prevTransitionProps */ js.UndefOr[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionProps */ Any
+            ]) => /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionSpec */ Any
       ): Self = StObject.set(x, "configureTransition", js.Any.fromFunction2(value))
       
       inline def setConfigureTransitionUndefined: Self = StObject.set(x, "configureTransition", js.undefined)

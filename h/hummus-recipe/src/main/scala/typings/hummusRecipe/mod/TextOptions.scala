@@ -45,7 +45,7 @@ object TextOptions {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value*))
     
     inline def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
@@ -65,7 +65,7 @@ object TextOptions {
     
     inline def setRotationOriginUndefined: Self = StObject.set(x, "rotationOrigin", js.undefined)
     
-    inline def setRotationOriginVarargs(value: Double*): Self = StObject.set(x, "rotationOrigin", js.Array(value :_*))
+    inline def setRotationOriginVarargs(value: Double*): Self = StObject.set(x, "rotationOrigin", js.Array(value*))
     
     inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
     

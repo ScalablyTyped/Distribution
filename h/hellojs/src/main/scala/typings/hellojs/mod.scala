@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.hellojs.anon.Code
 import typings.hellojs.hellojsBooleans.`false`
 import typings.std.Blob
-import typings.std.Error
 import typings.std.HTMLAnchorElement
 import typings.std.HTMLElement
 import typings.std.Location
@@ -125,7 +124,7 @@ object mod extends Shortcut {
   
   trait HelloJSEvent extends StObject {
     
-    def emit(event: String, data: js.Any): HelloJSStatic
+    def emit(event: String, data: Any): HelloJSStatic
     
     def emitAfter(): HelloJSStatic
     
@@ -138,7 +137,7 @@ object mod extends Shortcut {
   object HelloJSEvent {
     
     inline def apply(
-      emit: (String, js.Any) => HelloJSStatic,
+      emit: (String, Any) => HelloJSStatic,
       emitAfter: () => HelloJSStatic,
       findEvents: (String, js.Function2[/* name */ String, /* index */ Double, Unit]) => Unit,
       off: (String, js.Function1[/* auth */ HelloJSEventArgument, Unit]) => HelloJSStatic,
@@ -150,7 +149,7 @@ object mod extends Shortcut {
     
     extension [Self <: HelloJSEvent](x: Self) {
       
-      inline def setEmit(value: (String, js.Any) => HelloJSStatic): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
+      inline def setEmit(value: (String, Any) => HelloJSStatic): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
       
       inline def setEmitAfter(value: () => HelloJSStatic): Self = StObject.set(x, "emitAfter", js.Any.fromFunction0(value))
       
@@ -189,7 +188,7 @@ object mod extends Shortcut {
     
     var authResponse: js.UndefOr[HelloJSAuthResponse] = js.undefined
     
-    var error: js.UndefOr[Error] = js.undefined
+    var error: js.UndefOr[js.Error] = js.undefined
     
     var network: String
   }
@@ -206,7 +205,7 @@ object mod extends Shortcut {
       
       inline def setAuthResponseUndefined: Self = StObject.set(x, "authResponse", js.undefined)
       
-      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
@@ -414,7 +413,7 @@ object mod extends Shortcut {
     }
   }
   
-  type HelloJSResponseCallback = js.Function2[/* r */ js.Any, /* headers */ js.Any, Unit]
+  type HelloJSResponseCallback = js.Function2[/* r */ Any, /* headers */ Any, Unit]
   
   trait HelloJSServiceDef extends StObject {
     
@@ -422,13 +421,15 @@ object mod extends Shortcut {
     
     var del: js.UndefOr[StringDictionary[String | HelloJSUrlMappingFunction]] = js.undefined
     
-    var form: js.UndefOr[(js.Function2[/* p */ js.Any, /* query */ js.Any, Unit]) | Boolean] = js.undefined
+    var form: js.UndefOr[(js.Function2[/* p */ Any, /* query */ Any, Unit]) | Boolean] = js.undefined
     
     var get: js.UndefOr[StringDictionary[String | HelloJSUrlMappingFunction]] = js.undefined
     
-    var jsonp: js.UndefOr[(js.Function2[/* p */ js.Any, /* query */ js.Any, Unit]) | Boolean] = js.undefined
+    var id: js.UndefOr[String] = js.undefined
     
-    var login: js.UndefOr[js.Function1[/* p */ js.Any, Unit]] = js.undefined
+    var jsonp: js.UndefOr[(js.Function2[/* p */ Any, /* query */ Any, Unit]) | Boolean] = js.undefined
+    
+    var login: js.UndefOr[js.Function1[/* p */ Any, Unit]] = js.undefined
     
     var logout: js.UndefOr[(js.Function1[/* callback */ js.Function0[Unit | String], Unit]) | String] = js.undefined
     
@@ -451,10 +452,10 @@ object mod extends Shortcut {
     var scope_delim: js.UndefOr[String] = js.undefined
     
     var wrap: js.UndefOr[
-        StringDictionary[js.Function3[/* r */ js.Any, /* headers */ js.Any, /* p */ js.Any, Unit]]
+        StringDictionary[js.Function3[/* r */ Any, /* headers */ Any, /* p */ Any, Unit]]
       ] = js.undefined
     
-    var xhr: js.UndefOr[js.Function2[/* p */ js.Any, /* query */ js.Any, Unit]] = js.undefined
+    var xhr: js.UndefOr[js.Function2[/* p */ Any, /* query */ Any, Unit]] = js.undefined
   }
   object HelloJSServiceDef {
     
@@ -473,9 +474,9 @@ object mod extends Shortcut {
       
       inline def setDelUndefined: Self = StObject.set(x, "del", js.undefined)
       
-      inline def setForm(value: (js.Function2[/* p */ js.Any, /* query */ js.Any, Unit]) | Boolean): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+      inline def setForm(value: (js.Function2[/* p */ Any, /* query */ Any, Unit]) | Boolean): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      inline def setFormFunction2(value: (/* p */ js.Any, /* query */ js.Any) => Unit): Self = StObject.set(x, "form", js.Any.fromFunction2(value))
+      inline def setFormFunction2(value: (/* p */ Any, /* query */ Any) => Unit): Self = StObject.set(x, "form", js.Any.fromFunction2(value))
       
       inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
       
@@ -483,13 +484,17 @@ object mod extends Shortcut {
       
       inline def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
       
-      inline def setJsonp(value: (js.Function2[/* p */ js.Any, /* query */ js.Any, Unit]) | Boolean): Self = StObject.set(x, "jsonp", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      inline def setJsonpFunction2(value: (/* p */ js.Any, /* query */ js.Any) => Unit): Self = StObject.set(x, "jsonp", js.Any.fromFunction2(value))
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      
+      inline def setJsonp(value: (js.Function2[/* p */ Any, /* query */ Any, Unit]) | Boolean): Self = StObject.set(x, "jsonp", value.asInstanceOf[js.Any])
+      
+      inline def setJsonpFunction2(value: (/* p */ Any, /* query */ Any) => Unit): Self = StObject.set(x, "jsonp", js.Any.fromFunction2(value))
       
       inline def setJsonpUndefined: Self = StObject.set(x, "jsonp", js.undefined)
       
-      inline def setLogin(value: /* p */ js.Any => Unit): Self = StObject.set(x, "login", js.Any.fromFunction1(value))
+      inline def setLogin(value: /* p */ Any => Unit): Self = StObject.set(x, "login", js.Any.fromFunction1(value))
       
       inline def setLoginUndefined: Self = StObject.set(x, "login", js.undefined)
       
@@ -533,11 +538,11 @@ object mod extends Shortcut {
       
       inline def setScope_delimUndefined: Self = StObject.set(x, "scope_delim", js.undefined)
       
-      inline def setWrap(value: StringDictionary[js.Function3[/* r */ js.Any, /* headers */ js.Any, /* p */ js.Any, Unit]]): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
+      inline def setWrap(value: StringDictionary[js.Function3[/* r */ Any, /* headers */ Any, /* p */ Any, Unit]]): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
       
       inline def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
       
-      inline def setXhr(value: (/* p */ js.Any, /* query */ js.Any) => Unit): Self = StObject.set(x, "xhr", js.Any.fromFunction2(value))
+      inline def setXhr(value: (/* p */ Any, /* query */ Any) => Unit): Self = StObject.set(x, "xhr", js.Any.fromFunction2(value))
       
       inline def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
     }
@@ -550,37 +555,37 @@ object mod extends Shortcut {
     
     def apply(network: String): HelloJSStatic = js.native
     
-    def api(): js.Thenable[js.Any] = js.native
-    def api(options: js.Object): js.Thenable[js.Any] = js.native
+    def api(): js.Thenable[Any] = js.native
+    def api(options: js.Object): js.Thenable[Any] = js.native
     def api(
       path: js.UndefOr[String],
       query: js.UndefOr[js.Object],
       method: js.UndefOr[String],
       data: js.UndefOr[js.Object],
       timeout: js.UndefOr[Double],
-      callback: js.UndefOr[js.Function1[/* json */ js.Any, Unit]]
-    ): js.Thenable[js.Any] = js.native
-    def api(path: String): js.Thenable[js.Any] = js.native
-    def api(path: String, method: String): js.Thenable[js.Any] = js.native
-    def api(path: String, method: String, data: js.Object): js.Thenable[js.Any] = js.native
-    def api(path: String, method: String, data: js.Object, callback: js.Function1[/* json */ js.Any, Unit]): js.Thenable[js.Any] = js.native
-    def api(path: String, method: String, data: Unit, callback: js.Function1[/* json */ js.Any, Unit]): js.Thenable[js.Any] = js.native
-    def api(path: String, method: Unit, data: js.Object): js.Thenable[js.Any] = js.native
-    def api(path: String, method: Unit, data: js.Object, callback: js.Function1[/* json */ js.Any, Unit]): js.Thenable[js.Any] = js.native
-    def api(path: String, method: Unit, data: Unit, callback: js.Function1[/* json */ js.Any, Unit]): js.Thenable[js.Any] = js.native
-    def api(path: Unit, method: String): js.Thenable[js.Any] = js.native
-    def api(path: Unit, method: String, data: js.Object): js.Thenable[js.Any] = js.native
-    def api(path: Unit, method: String, data: js.Object, callback: js.Function1[/* json */ js.Any, Unit]): js.Thenable[js.Any] = js.native
-    def api(path: Unit, method: String, data: Unit, callback: js.Function1[/* json */ js.Any, Unit]): js.Thenable[js.Any] = js.native
-    def api(path: Unit, method: Unit, data: js.Object): js.Thenable[js.Any] = js.native
-    def api(path: Unit, method: Unit, data: js.Object, callback: js.Function1[/* json */ js.Any, Unit]): js.Thenable[js.Any] = js.native
-    def api(path: Unit, method: Unit, data: Unit, callback: js.Function1[/* json */ js.Any, Unit]): js.Thenable[js.Any] = js.native
+      callback: js.UndefOr[js.Function1[/* json */ Any, Unit]]
+    ): js.Thenable[Any] = js.native
+    def api(path: String): js.Thenable[Any] = js.native
+    def api(path: String, method: String): js.Thenable[Any] = js.native
+    def api(path: String, method: String, data: js.Object): js.Thenable[Any] = js.native
+    def api(path: String, method: String, data: js.Object, callback: js.Function1[/* json */ Any, Unit]): js.Thenable[Any] = js.native
+    def api(path: String, method: String, data: Unit, callback: js.Function1[/* json */ Any, Unit]): js.Thenable[Any] = js.native
+    def api(path: String, method: Unit, data: js.Object): js.Thenable[Any] = js.native
+    def api(path: String, method: Unit, data: js.Object, callback: js.Function1[/* json */ Any, Unit]): js.Thenable[Any] = js.native
+    def api(path: String, method: Unit, data: Unit, callback: js.Function1[/* json */ Any, Unit]): js.Thenable[Any] = js.native
+    def api(path: Unit, method: String): js.Thenable[Any] = js.native
+    def api(path: Unit, method: String, data: js.Object): js.Thenable[Any] = js.native
+    def api(path: Unit, method: String, data: js.Object, callback: js.Function1[/* json */ Any, Unit]): js.Thenable[Any] = js.native
+    def api(path: Unit, method: String, data: Unit, callback: js.Function1[/* json */ Any, Unit]): js.Thenable[Any] = js.native
+    def api(path: Unit, method: Unit, data: js.Object): js.Thenable[Any] = js.native
+    def api(path: Unit, method: Unit, data: js.Object, callback: js.Function1[/* json */ Any, Unit]): js.Thenable[Any] = js.native
+    def api(path: Unit, method: Unit, data: Unit, callback: js.Function1[/* json */ Any, Unit]): js.Thenable[Any] = js.native
     
     def getAuthResponse(): HelloJSAuthResponse = js.native
     def getAuthResponse(network: String): HelloJSAuthResponse = js.native
     
-    def init(serviceAppIds: StringDictionary[HelloJSServiceDef | String]): Unit = js.native
-    def init(serviceAppIds: StringDictionary[String], options: HelloJSLoginOptions): Unit = js.native
+    def init(serviceAppIdsOrDefs: StringDictionary[String | HelloJSServiceDef]): Unit = js.native
+    def init(serviceAppIdsOrDefs: StringDictionary[String | HelloJSServiceDef], options: HelloJSLoginOptions): Unit = js.native
     
     def login(): js.Thenable[HelloJSLoginEventArguement] = js.native
     def login(callback: js.Function0[Unit]): js.Thenable[HelloJSLoginEventArguement] = js.native
@@ -595,18 +600,18 @@ object mod extends Shortcut {
     def login(options: HelloJSLoginOptions): js.Thenable[HelloJSLoginEventArguement] = js.native
     def login(options: HelloJSLoginOptions, callback: js.Function0[Unit]): js.Thenable[HelloJSLoginEventArguement] = js.native
     
-    def logout(): js.Thenable[js.Any] = js.native
-    def logout(callback: js.Function0[Unit]): js.Thenable[js.Any] = js.native
-    def logout(network: String): js.Thenable[js.Any] = js.native
-    def logout(network: String, options: Unit, callback: js.Function0[Unit]): js.Thenable[js.Any] = js.native
-    def logout(network: String, options: HelloJSLogoutOptions): js.Thenable[js.Any] = js.native
-    def logout(network: String, options: HelloJSLogoutOptions, callback: js.Function0[Unit]): js.Thenable[js.Any] = js.native
-    def logout(network: Unit, options: Unit, callback: js.Function0[Unit]): js.Thenable[js.Any] = js.native
-    def logout(network: Unit, options: HelloJSLogoutOptions): js.Thenable[js.Any] = js.native
-    def logout(network: Unit, options: HelloJSLogoutOptions, callback: js.Function0[Unit]): js.Thenable[js.Any] = js.native
-    def logout(options: Unit, callback: js.Function0[Unit]): js.Thenable[js.Any] = js.native
-    def logout(options: HelloJSLogoutOptions): js.Thenable[js.Any] = js.native
-    def logout(options: HelloJSLogoutOptions, callback: js.Function0[Unit]): js.Thenable[js.Any] = js.native
+    def logout(): js.Thenable[Any] = js.native
+    def logout(callback: js.Function0[Unit]): js.Thenable[Any] = js.native
+    def logout(network: String): js.Thenable[Any] = js.native
+    def logout(network: String, options: Unit, callback: js.Function0[Unit]): js.Thenable[Any] = js.native
+    def logout(network: String, options: HelloJSLogoutOptions): js.Thenable[Any] = js.native
+    def logout(network: String, options: HelloJSLogoutOptions, callback: js.Function0[Unit]): js.Thenable[Any] = js.native
+    def logout(network: Unit, options: Unit, callback: js.Function0[Unit]): js.Thenable[Any] = js.native
+    def logout(network: Unit, options: HelloJSLogoutOptions): js.Thenable[Any] = js.native
+    def logout(network: Unit, options: HelloJSLogoutOptions, callback: js.Function0[Unit]): js.Thenable[Any] = js.native
+    def logout(options: Unit, callback: js.Function0[Unit]): js.Thenable[Any] = js.native
+    def logout(options: HelloJSLogoutOptions): js.Thenable[Any] = js.native
+    def logout(options: HelloJSLogoutOptions, callback: js.Function0[Unit]): js.Thenable[Any] = js.native
     
     var settings: HelloJSLoginOptions = js.native
     
@@ -643,7 +648,7 @@ object mod extends Shortcut {
     inline def token: typings.hellojs.hellojsStrings.token = "token".asInstanceOf[typings.hellojs.hellojsStrings.token]
   }
   
-  type HelloJSUrlMappingFunction = js.Function2[/* p */ js.Any, /* callback */ js.Function1[/* url */ String, Unit], Unit]
+  type HelloJSUrlMappingFunction = js.Function2[/* p */ Any, /* callback */ js.Function1[/* url */ String, Unit], Unit]
   
   // API utilities
   @js.native
@@ -664,64 +669,58 @@ object mod extends Shortcut {
     def append(node: HTMLElement, attr: Unit, target: String): HTMLElement = js.native
     def append(node: HTMLElement, attr: Unit, target: HTMLElement): HTMLElement = js.native
     
-    def args(o: js.Object, args: js.Object): js.Any | `false` = js.native
+    def args(o: js.Object, args: js.Object): Any | `false` = js.native
     
     def clone[T](obj: T): T = js.native
     
-    def dataToJSON(p: js.Any): js.Any = js.native
+    def dataToJSON(p: Any): Any = js.native
     
-    def diff(a: js.Array[js.Any], b: js.Array[js.Any]): js.Array[js.Any] = js.native
+    def diff(a: js.Array[Any], b: js.Array[Any]): js.Array[Any] = js.native
     
-    def diffKey(a: js.Array[js.Any], b: js.Array[js.Any]): js.Array[js.Any] = js.native
+    def diffKey(a: js.Array[Any], b: js.Array[Any]): js.Array[Any] = js.native
     
-    def domInstance(`type`: String, data: js.Any): Boolean = js.native
+    def domInstance(`type`: String, data: Any): Boolean = js.native
     
     def error(code: Double, message: String): Code = js.native
     
-    def extend(r: js.Object, a: js.Any*): js.Any = js.native
+    def extend(r: js.Object, a: Any*): Any = js.native
     
     def globalEvent(callback: js.Function0[Unit]): String = js.native
     def globalEvent(callback: js.Function0[Unit], guid: String): String = js.native
     
-    def hasBinary(data: js.Any): Boolean = js.native
+    def hasBinary(data: Any): Boolean = js.native
     
     def iframe(src: String): Unit = js.native
     def iframe(src: String, redirectUri: String): Unit = js.native
     
-    def isBinary(data: js.Any): Boolean = js.native
+    def isBinary(data: Any): Boolean = js.native
     
-    def isEmpty(obj: js.Any): Boolean = js.native
+    def isEmpty(obj: Any): Boolean = js.native
     
     def jsonp(url: String, callback: js.Function0[Unit]): Unit = js.native
     def jsonp(url: String, callback: js.Function0[Unit], callbackID: String): Unit = js.native
     def jsonp(url: String, callback: js.Function0[Unit], callbackID: String, timeout: Double): Unit = js.native
     def jsonp(url: String, callback: js.Function0[Unit], callbackID: Unit, timeout: Double): Unit = js.native
     
-    def merge(a: js.Any*): js.Any = js.native
+    def merge(a: Any*): Any = js.native
     
-    def nodeListToJSON(nodelist: NodeList): js.Any = js.native
+    def nodeListToJSON(nodelist: NodeList): Any = js.native
     
     def param(o: js.Object): String = js.native
-    def param(o: js.Object, formatFunction: js.Function1[/* param */ js.Any, String]): String = js.native
-    def param(s: String): js.Any = js.native
-    def param(s: String, formatFunction: js.Function1[/* param */ String, js.Any]): js.Any = js.native
+    def param(o: js.Object, formatFunction: js.Function1[/* param */ Any, String]): String = js.native
+    def param(s: String): Any = js.native
+    def param(s: String, formatFunction: js.Function1[/* param */ String, Any]): Any = js.native
     
-    def popup(url: String): Window | js.Any = js.native
-    def popup(url: String, redirectUri: String): Window | js.Any = js.native
-    def popup(url: String, redirectUri: String, options: js.Object): Window | js.Any = js.native
-    def popup(url: String, redirectUri: Unit, options: js.Object): Window | js.Any = js.native
+    def popup(url: String): Window | Any = js.native
+    def popup(url: String, redirectUri: String): Window | Any = js.native
+    def popup(url: String, redirectUri: String, options: js.Object): Window | Any = js.native
+    def popup(url: String, redirectUri: Unit, options: js.Object): Window | Any = js.native
     
-    def post(url: String, data: js.Any, options: js.Object, callback: HelloJSResponseCallback): Unit = js.native
+    def post(url: String, data: Any, options: js.Object, callback: HelloJSResponseCallback): Unit = js.native
+    def post(url: String, data: Any, options: js.Object, callback: HelloJSResponseCallback, callbackID: String): Unit = js.native
     def post(
       url: String,
-      data: js.Any,
-      options: js.Object,
-      callback: HelloJSResponseCallback,
-      callbackID: String
-    ): Unit = js.native
-    def post(
-      url: String,
-      data: js.Any,
+      data: Any,
       options: js.Object,
       callback: HelloJSResponseCallback,
       callbackID: String,
@@ -729,7 +728,7 @@ object mod extends Shortcut {
     ): Unit = js.native
     def post(
       url: String,
-      data: js.Any,
+      data: Any,
       options: js.Object,
       callback: HelloJSResponseCallback,
       callbackID: Unit,
@@ -738,29 +737,29 @@ object mod extends Shortcut {
     
     def qs(url: String): String = js.native
     def qs(url: String, params: js.Object): String = js.native
-    def qs(url: String, params: js.Object, formatFunction: js.Function1[/* param */ js.Any, String]): String = js.native
-    def qs(url: String, params: Unit, formatFunction: js.Function1[/* param */ js.Any, String]): String = js.native
+    def qs(url: String, params: js.Object, formatFunction: js.Function1[/* param */ Any, String]): String = js.native
+    def qs(url: String, params: Unit, formatFunction: js.Function1[/* param */ Any, String]): String = js.native
     
     def request(p: js.Object, callback: HelloJSResponseCallback): Unit = js.native
     
     def request_cors(callback: HelloJSResponseCallback): Boolean = js.native
     
     def responseHandler(window: Window): Unit = js.native
-    def responseHandler(window: Window, parent: js.Any): Unit = js.native
+    def responseHandler(window: Window, parent: Any): Unit = js.native
     
-    def store(): js.Any = js.native
-    def store(name: String): js.Any = js.native
-    def store(name: String, value: js.Any): js.Any = js.native
-    def store(name: Unit, value: js.Any): js.Any = js.native
+    def store(): Any = js.native
+    def store(name: String): Any = js.native
+    def store(name: String, value: Any): Any = js.native
+    def store(name: Unit, value: Any): Any = js.native
     
     def toBlob(dataURI: String): Blob | String = js.native
     
-    def unique(a: js.Array[js.Any]): js.Array[js.Any] = js.native
+    def unique(a: js.Array[Any]): js.Array[Any] = js.native
     
     def url(): Location = js.native
     def url(path: String): URL | HTMLAnchorElement = js.native
     
-    def xhr(method: String, url: String, headers: js.Object, data: js.Any, callback: HelloJSResponseCallback): XMLHttpRequest = js.native
+    def xhr(method: String, url: String, headers: js.Object, data: Any, callback: HelloJSResponseCallback): XMLHttpRequest = js.native
   }
   
   type _To = HelloJSStatic

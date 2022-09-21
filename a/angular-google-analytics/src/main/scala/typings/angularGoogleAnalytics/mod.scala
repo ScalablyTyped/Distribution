@@ -1,7 +1,6 @@
 package typings.angularGoogleAnalytics
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -127,7 +126,7 @@ object mod {
           * @return {angular.google.analytics.IAnalyticsProvider} The object instance.
           * @param {RegExp} regex The regex.
           */
-        def setRemoveRegExp(regex: RegExp): AnalyticsProvider = js.native
+        def setRemoveRegExp(regex: js.RegExp): AnalyticsProvider = js.native
         
         /**
           * @summary Starts the offline mode.
@@ -250,30 +249,30 @@ object mod {
         /**
           * @summary Allows for advanced configuration and definitions in univeral analytics only. This is a no-op when using classic analytics.
           */
-        def set(key: String, value: js.Any): Unit = js.native
-        def set(key: String, value: js.Any, accountName: String): Unit = js.native
+        def set(key: String, value: Any): Unit = js.native
+        def set(key: String, value: Any, accountName: String): Unit = js.native
         
         /**
           * @summary Create a new event
           */
         def trackEvent(category: String, action: String, label: String): Unit = js.native
-        def trackEvent(category: String, action: String, label: String, value: js.Any): Unit = js.native
-        def trackEvent(category: String, action: String, label: String, value: js.Any, nonInteractionFlag: Boolean): Unit = js.native
+        def trackEvent(category: String, action: String, label: String, value: Any): Unit = js.native
+        def trackEvent(category: String, action: String, label: String, value: Any, nonInteractionFlag: Boolean): Unit = js.native
         def trackEvent(
           category: String,
           action: String,
           label: String,
-          value: js.Any,
+          value: Any,
           nonInteractionFlag: Boolean,
-          dimensions: StringDictionary[js.Any]
+          dimensions: StringDictionary[Any]
         ): Unit = js.native
         def trackEvent(
           category: String,
           action: String,
           label: String,
-          value: js.Any,
+          value: Any,
           nonInteractionFlag: Unit,
-          dimensions: StringDictionary[js.Any]
+          dimensions: StringDictionary[Any]
         ): Unit = js.native
         def trackEvent(category: String, action: String, label: String, value: Unit, nonInteractionFlag: Boolean): Unit = js.native
         def trackEvent(
@@ -282,7 +281,7 @@ object mod {
           label: String,
           value: Unit,
           nonInteractionFlag: Boolean,
-          dimensions: StringDictionary[js.Any]
+          dimensions: StringDictionary[Any]
         ): Unit = js.native
         def trackEvent(
           category: String,
@@ -290,7 +289,7 @@ object mod {
           label: String,
           value: Unit,
           nonInteractionFlag: Unit,
-          dimensions: StringDictionary[js.Any]
+          dimensions: StringDictionary[Any]
         ): Unit = js.native
         
         def trackException(descrption: String, isFatal: Boolean): Unit = js.native
@@ -303,8 +302,8 @@ object mod {
           */
         def trackPage(pageURL: String): Unit = js.native
         def trackPage(pageURL: String, title: String): Unit = js.native
-        def trackPage(pageURL: String, title: String, dimensions: StringDictionary[js.Any]): Unit = js.native
-        def trackPage(pageURL: String, title: Unit, dimensions: StringDictionary[js.Any]): Unit = js.native
+        def trackPage(pageURL: String, title: String, dimensions: StringDictionary[Any]): Unit = js.native
+        def trackPage(pageURL: String, title: Unit, dimensions: StringDictionary[Any]): Unit = js.native
       }
     }
   }

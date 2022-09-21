@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-dom
 
-Typings are for version 17.0
+Typings are for version 18.0
 
 ## Library description:
 React package for working with the DOM.
@@ -10,10 +10,10 @@ React package for working with the DOM.
 | ------------------ | :-------------: |
 | Full name          | react-dom |
 | Keywords           | react |
-| # releases         | 135 |
-| # dependents       | 33255 |
-| # downloads        | 388289650 |
-| # stars            | 216 |
+| # releases         | 754 |
+| # dependents       | 0.0 |
+| # downloads        | 6.1308092333333336E7 |
+| # stars            | 195014.0 |
 
 ## Links
 - [Homepage](https://reactjs.org/)

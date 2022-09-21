@@ -1,5 +1,8 @@
 package typings.awsSdk.apigatewayMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.csv__
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.awsSdk.awsSdkStrings.AUTHORIZER
   - java.lang.String
 */
-type ApiKeySourceType = typings.awsSdk.apigatewayMod._ApiKeySourceType | java.lang.String
+type ApiKeySourceType = _ApiKeySourceType | java.lang.String
 
-type ApiKeysFormat = typings.awsSdk.awsSdkStrings.csv__ | java.lang.String
+type ApiKeysFormat = csv__ | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.TOKEN
@@ -20,7 +23,7 @@ type ApiKeysFormat = typings.awsSdk.awsSdkStrings.csv__ | java.lang.String
   - typings.awsSdk.awsSdkStrings.COGNITO_USER_POOLS
   - java.lang.String
 */
-type AuthorizerType = typings.awsSdk.apigatewayMod._AuthorizerType | java.lang.String
+type AuthorizerType = _AuthorizerType | java.lang.String
 
 type Boolean = scala.Boolean
 
@@ -35,7 +38,7 @@ type Boolean = scala.Boolean
   - typings.awsSdk.awsSdkStrings.`237`
   - java.lang.String
 */
-type CacheClusterSize = typings.awsSdk.apigatewayMod._CacheClusterSize | java.lang.String
+type CacheClusterSize = _CacheClusterSize | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATE_IN_PROGRESS
@@ -45,21 +48,21 @@ type CacheClusterSize = typings.awsSdk.apigatewayMod._CacheClusterSize | java.la
   - typings.awsSdk.awsSdkStrings.FLUSH_IN_PROGRESS
   - java.lang.String
 */
-type CacheClusterStatus = typings.awsSdk.apigatewayMod._CacheClusterStatus | java.lang.String
+type CacheClusterStatus = _CacheClusterStatus | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INTERNET
   - typings.awsSdk.awsSdkStrings.VPC_LINK
   - java.lang.String
 */
-type ConnectionType = typings.awsSdk.apigatewayMod._ConnectionType | java.lang.String
+type ConnectionType = _ConnectionType | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CONVERT_TO_BINARY
   - typings.awsSdk.awsSdkStrings.CONVERT_TO_TEXT
   - java.lang.String
 */
-type ContentHandlingStrategy = typings.awsSdk.apigatewayMod._ContentHandlingStrategy | java.lang.String
+type ContentHandlingStrategy = _ContentHandlingStrategy | java.lang.String
 
 type DocumentationPartLocationStatusCode = java.lang.String
 
@@ -78,15 +81,17 @@ type DocumentationPartLocationStatusCode = java.lang.String
   - typings.awsSdk.awsSdkStrings.RESPONSE_BODY
   - java.lang.String
 */
-type DocumentationPartType = typings.awsSdk.apigatewayMod._DocumentationPartType | java.lang.String
+type DocumentationPartType = _DocumentationPartType | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AVAILABLE
   - typings.awsSdk.awsSdkStrings.UPDATING
   - typings.awsSdk.awsSdkStrings.PENDING
+  - typings.awsSdk.awsSdkStrings.PENDING_CERTIFICATE_REIMPORT
+  - typings.awsSdk.awsSdkStrings.PENDING_OWNERSHIP_VERIFICATION
   - java.lang.String
 */
-type DomainNameStatus = typings.awsSdk.apigatewayMod._DomainNameStatus | java.lang.String
+type DomainNameStatus = _DomainNameStatus | java.lang.String
 
 type Double = scala.Double
 
@@ -96,7 +101,7 @@ type Double = scala.Double
   - typings.awsSdk.awsSdkStrings.PRIVATE
   - java.lang.String
 */
-type EndpointType = typings.awsSdk.apigatewayMod._EndpointType | java.lang.String
+type EndpointType = _EndpointType | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DEFAULT_4XX
@@ -119,9 +124,10 @@ type EndpointType = typings.awsSdk.apigatewayMod._EndpointType | java.lang.Strin
   - typings.awsSdk.awsSdkStrings.REQUEST_TOO_LARGE
   - typings.awsSdk.awsSdkStrings.THROTTLED
   - typings.awsSdk.awsSdkStrings.QUOTA_EXCEEDED
+  - typings.awsSdk.awsSdkStrings.WAF_FILTERED
   - java.lang.String
 */
-type GatewayResponseType = typings.awsSdk.apigatewayMod._GatewayResponseType | java.lang.String
+type GatewayResponseType = _GatewayResponseType | java.lang.String
 
 type Integer = scala.Double
 
@@ -133,90 +139,90 @@ type Integer = scala.Double
   - typings.awsSdk.awsSdkStrings.AWS_PROXY
   - java.lang.String
 */
-type IntegrationType = typings.awsSdk.apigatewayMod._IntegrationType | java.lang.String
+type IntegrationType = _IntegrationType | java.lang.String
 
-type ListOfARNs = js.Array[typings.awsSdk.apigatewayMod.ProviderARN]
+type ListOfARNs = js.Array[ProviderARN]
 
-type ListOfApiKey = js.Array[typings.awsSdk.apigatewayMod.ApiKey]
+type ListOfApiKey = js.Array[ApiKey]
 
-type ListOfApiStage = js.Array[typings.awsSdk.apigatewayMod.ApiStage]
+type ListOfApiStage = js.Array[ApiStage]
 
-type ListOfAuthorizer = js.Array[typings.awsSdk.apigatewayMod.Authorizer]
+type ListOfAuthorizer = js.Array[Authorizer]
 
-type ListOfBasePathMapping = js.Array[typings.awsSdk.apigatewayMod.BasePathMapping]
+type ListOfBasePathMapping = js.Array[BasePathMapping]
 
-type ListOfClientCertificate = js.Array[typings.awsSdk.apigatewayMod.ClientCertificate]
+type ListOfClientCertificate = js.Array[ClientCertificate]
 
-type ListOfDeployment = js.Array[typings.awsSdk.apigatewayMod.Deployment]
+type ListOfDeployment = js.Array[Deployment]
 
-type ListOfDocumentationPart = js.Array[typings.awsSdk.apigatewayMod.DocumentationPart]
+type ListOfDocumentationPart = js.Array[DocumentationPart]
 
-type ListOfDocumentationVersion = js.Array[typings.awsSdk.apigatewayMod.DocumentationVersion]
+type ListOfDocumentationVersion = js.Array[DocumentationVersion]
 
-type ListOfDomainName = js.Array[typings.awsSdk.apigatewayMod.DomainName]
+type ListOfDomainName = js.Array[DomainName]
 
-type ListOfEndpointType = js.Array[typings.awsSdk.apigatewayMod.EndpointType]
+type ListOfEndpointType = js.Array[EndpointType]
 
-type ListOfGatewayResponse = js.Array[typings.awsSdk.apigatewayMod.GatewayResponse]
+type ListOfGatewayResponse = js.Array[GatewayResponse]
 
-type ListOfLong = js.Array[typings.awsSdk.apigatewayMod.Long]
+type ListOfLong = js.Array[Long]
 
-type ListOfModel = js.Array[typings.awsSdk.apigatewayMod.Model]
+type ListOfModel = js.Array[Model]
 
-type ListOfPatchOperation = js.Array[typings.awsSdk.apigatewayMod.PatchOperation]
+type ListOfPatchOperation = js.Array[PatchOperation]
 
-type ListOfRequestValidator = js.Array[typings.awsSdk.apigatewayMod.RequestValidator]
+type ListOfRequestValidator = js.Array[RequestValidator]
 
-type ListOfResource = js.Array[typings.awsSdk.apigatewayMod.Resource]
+type ListOfResource = js.Array[Resource]
 
-type ListOfRestApi = js.Array[typings.awsSdk.apigatewayMod.RestApi]
+type ListOfRestApi = js.Array[RestApi]
 
-type ListOfSdkConfigurationProperty = js.Array[typings.awsSdk.apigatewayMod.SdkConfigurationProperty]
+type ListOfSdkConfigurationProperty = js.Array[SdkConfigurationProperty]
 
-type ListOfSdkType = js.Array[typings.awsSdk.apigatewayMod.SdkType]
+type ListOfSdkType = js.Array[SdkType]
 
-type ListOfStage = js.Array[typings.awsSdk.apigatewayMod.Stage]
+type ListOfStage = js.Array[Stage]
 
-type ListOfStageKeys = js.Array[typings.awsSdk.apigatewayMod.StageKey]
+type ListOfStageKeys = js.Array[StageKey]
 
-type ListOfString = js.Array[typings.awsSdk.apigatewayMod.String]
+type ListOfString = js.Array[String]
 
-type ListOfUsage = js.Array[typings.awsSdk.apigatewayMod.ListOfLong]
+type ListOfUsage = js.Array[ListOfLong]
 
-type ListOfUsagePlan = js.Array[typings.awsSdk.apigatewayMod.UsagePlan]
+type ListOfUsagePlan = js.Array[UsagePlan]
 
-type ListOfUsagePlanKey = js.Array[typings.awsSdk.apigatewayMod.UsagePlanKey]
+type ListOfUsagePlanKey = js.Array[UsagePlanKey]
 
-type ListOfVpcLink = js.Array[typings.awsSdk.apigatewayMod.VpcLink]
+type ListOfVpcLink = js.Array[VpcLink]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DOCUMENTED
   - typings.awsSdk.awsSdkStrings.UNDOCUMENTED
   - java.lang.String
 */
-type LocationStatusType = typings.awsSdk.apigatewayMod._LocationStatusType | java.lang.String
+type LocationStatusType = _LocationStatusType | java.lang.String
 
 type Long = scala.Double
 
-type MapOfApiStageThrottleSettings = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.apigatewayMod.ThrottleSettings]
+type MapOfApiStageThrottleSettings = StringDictionary[ThrottleSettings]
 
-type MapOfIntegrationResponse = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.apigatewayMod.IntegrationResponse]
+type MapOfIntegrationResponse = StringDictionary[IntegrationResponse]
 
-type MapOfKeyUsages = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.apigatewayMod.ListOfUsage]
+type MapOfKeyUsages = StringDictionary[ListOfUsage]
 
-type MapOfMethod = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.apigatewayMod.Method]
+type MapOfMethod = StringDictionary[Method]
 
-type MapOfMethodResponse = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.apigatewayMod.MethodResponse]
+type MapOfMethodResponse = StringDictionary[MethodResponse]
 
-type MapOfMethodSettings = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.apigatewayMod.MethodSetting]
+type MapOfMethodSettings = StringDictionary[MethodSetting]
 
-type MapOfMethodSnapshot = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.apigatewayMod.MethodSnapshot]
+type MapOfMethodSnapshot = StringDictionary[MethodSnapshot]
 
-type MapOfStringToBoolean = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.apigatewayMod.NullableBoolean]
+type MapOfStringToBoolean = StringDictionary[NullableBoolean]
 
-type MapOfStringToList = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.apigatewayMod.ListOfString]
+type MapOfStringToList = StringDictionary[ListOfString]
 
-type MapOfStringToString = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.apigatewayMod.String]
+type MapOfStringToString = StringDictionary[String]
 
 type NullableBoolean = scala.Boolean
 
@@ -231,18 +237,18 @@ type NullableInteger = scala.Double
   - typings.awsSdk.awsSdkStrings.test__
   - java.lang.String
 */
-type Op = typings.awsSdk.apigatewayMod._Op | java.lang.String
+type Op = _Op | java.lang.String
 
-type PathToMapOfMethodSnapshot = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.apigatewayMod.MapOfMethodSnapshot]
+type PathToMapOfMethodSnapshot = StringDictionary[MapOfMethodSnapshot]
 
 type ProviderARN = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
-  - typings.awsSdk.awsSdkStrings.merge_
-  - typings.awsSdk.awsSdkStrings.overwrite_
+  - typings.awsSdk.awsSdkStrings.merge__
+  - typings.awsSdk.awsSdkStrings.overwrite__
   - java.lang.String
 */
-type PutMode = typings.awsSdk.apigatewayMod._PutMode | java.lang.String
+type PutMode = _PutMode | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DAY
@@ -250,20 +256,20 @@ type PutMode = typings.awsSdk.apigatewayMod._PutMode | java.lang.String
   - typings.awsSdk.awsSdkStrings.MONTH
   - java.lang.String
 */
-type QuotaPeriodType = typings.awsSdk.apigatewayMod._QuotaPeriodType | java.lang.String
+type QuotaPeriodType = _QuotaPeriodType | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.TLS_1_0
   - typings.awsSdk.awsSdkStrings.TLS_1_2
   - java.lang.String
 */
-type SecurityPolicy = typings.awsSdk.apigatewayMod._SecurityPolicy | java.lang.String
+type SecurityPolicy = _SecurityPolicy | java.lang.String
 
 type StatusCode = java.lang.String
 
 type String = java.lang.String
 
-type Timestamp = typings.std.Date
+type Timestamp = js.Date
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FAIL_WITH_403
@@ -271,7 +277,7 @@ type Timestamp = typings.std.Date
   - typings.awsSdk.awsSdkStrings.SUCCEED_WITHOUT_RESPONSE_HEADER
   - java.lang.String
 */
-type UnauthorizedCacheControlHeaderStrategy = typings.awsSdk.apigatewayMod._UnauthorizedCacheControlHeaderStrategy | java.lang.String
+type UnauthorizedCacheControlHeaderStrategy = _UnauthorizedCacheControlHeaderStrategy | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AVAILABLE
@@ -280,13 +286,13 @@ type UnauthorizedCacheControlHeaderStrategy = typings.awsSdk.apigatewayMod._Unau
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type VpcLinkStatus = typings.awsSdk.apigatewayMod._VpcLinkStatus | java.lang.String
+type VpcLinkStatus = _VpcLinkStatus | java.lang.String
 
-type _Blob = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.apigatewayMod.Blob | java.lang.String
+type _Blob = Buffer | js.typedarray.Uint8Array | Blob | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2015-07-09`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.apigatewayMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | java.lang.String

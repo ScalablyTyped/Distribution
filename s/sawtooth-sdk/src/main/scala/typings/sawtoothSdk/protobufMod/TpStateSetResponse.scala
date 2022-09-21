@@ -5,7 +5,6 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
 import typings.sawtoothSdk.protobufMod.TpStateSetResponse.Status
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new TpStateSetResponse.
   * @param [properties] Properties to set
   */
-class TpStateSetResponse ()
+open class TpStateSetResponse ()
   extends StObject
      with ITpStateSetResponse {
   def this(properties: ITpStateSetResponse) = this()
@@ -33,7 +32,7 @@ class TpStateSetResponse ()
     * Converts this TpStateSetResponse to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 /* static members */
 object TpStateSetResponse {
@@ -79,6 +78,8 @@ object TpStateSetResponse {
   inline def create(): TpStateSetResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[TpStateSetResponse]
   inline def create(properties: ITpStateSetResponse): TpStateSetResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[TpStateSetResponse]
   
+  inline def decode(reader: js.typedarray.Uint8Array): TpStateSetResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TpStateSetResponse]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): TpStateSetResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TpStateSetResponse]
   /**
     * Decodes a TpStateSetResponse message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -89,9 +90,8 @@ object TpStateSetResponse {
     */
   inline def decode(reader: Reader): TpStateSetResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TpStateSetResponse]
   inline def decode(reader: Reader, length: Double): TpStateSetResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TpStateSetResponse]
-  inline def decode(reader: Uint8Array): TpStateSetResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TpStateSetResponse]
-  inline def decode(reader: Uint8Array, length: Double): TpStateSetResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TpStateSetResponse]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): TpStateSetResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TpStateSetResponse]
   /**
     * Decodes a TpStateSetResponse message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -100,7 +100,6 @@ object TpStateSetResponse {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   inline def decodeDelimited(reader: Reader): TpStateSetResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TpStateSetResponse]
-  inline def decodeDelimited(reader: Uint8Array): TpStateSetResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TpStateSetResponse]
   
   /**
     * Encodes the specified TpStateSetResponse message. Does not implicitly {@link TpStateSetResponse.verify|verify} messages.
@@ -125,7 +124,7 @@ object TpStateSetResponse {
     * @param object Plain object
     * @returns TpStateSetResponse
     */
-  inline def fromObject(`object`: StringDictionary[js.Any]): TpStateSetResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TpStateSetResponse]
+  inline def fromObject(`object`: StringDictionary[Any]): TpStateSetResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TpStateSetResponse]
   
   /**
     * Creates a plain object from a TpStateSetResponse message. Also converts values to other types if specified.
@@ -133,13 +132,13 @@ object TpStateSetResponse {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  inline def toObject(message: TpStateSetResponse): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: TpStateSetResponse, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: TpStateSetResponse): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: TpStateSetResponse, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a TpStateSetResponse message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

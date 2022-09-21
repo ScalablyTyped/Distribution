@@ -2,7 +2,7 @@ package typings.maximMazurokGapiClientArtifactregistry.gapi.client.artifactregis
 
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientArtifactregistry.anon.Accesstoken
-import typings.maximMazurokGapiClientArtifactregistry.anon.Callback
+import typings.maximMazurokGapiClientArtifactregistry.anon.Filter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,10 +11,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FilesResource extends StObject {
   
   /** Gets a file. */
-  def get(): Request[File] = js.native
-  def get(request: Accesstoken): Request[File] = js.native
+  def get(): Request[GoogleDevtoolsArtifactregistryV1File] = js.native
+  def get(request: Accesstoken): Request[GoogleDevtoolsArtifactregistryV1File] = js.native
   
   /** Lists files. */
   def list(): Request[ListFilesResponse] = js.native
-  def list(request: Callback): Request[ListFilesResponse] = js.native
+  def list(request: Filter): Request[ListFilesResponse] = js.native
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeTaskDefinitionRequest extends StObject {
   
   /**
-    * Specifies whether to see the resource tags for the task definition. If TAGS is specified, the tags are included in the response. If this field is omitted, tags are not included in the response.
+    * Determines whether to see the resource tags for the task definition. If TAGS is specified, the tags are included in the response. If this field is omitted, tags aren't included in the response.
     */
   var include: js.UndefOr[TaskDefinitionFieldList] = js.undefined
   
@@ -29,7 +29,7 @@ object DescribeTaskDefinitionRequest {
     
     inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
-    inline def setIncludeVarargs(value: TaskDefinitionField*): Self = StObject.set(x, "include", js.Array(value :_*))
+    inline def setIncludeVarargs(value: TaskDefinitionField*): Self = StObject.set(x, "include", js.Array(value*))
     
     inline def setTaskDefinition(value: String): Self = StObject.set(x, "taskDefinition", value.asInstanceOf[js.Any])
   }

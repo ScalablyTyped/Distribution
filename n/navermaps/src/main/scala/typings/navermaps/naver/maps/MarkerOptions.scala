@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MarkerOptions extends StObject {
   
-  var animation: js.UndefOr[js.Any] = js.undefined
+  var animation: js.UndefOr[Animation] = js.undefined
   
   var clickable: js.UndefOr[Boolean] = js.undefined
   
@@ -14,13 +14,13 @@ trait MarkerOptions extends StObject {
   
   var draggable: js.UndefOr[Boolean] = js.undefined
   
-  var icon: js.UndefOr[js.Any] = js.undefined
+  var icon: js.UndefOr[String | ImageIcon | SymbolIcon | HtmlIcon] = js.undefined
   
-  var map: js.UndefOr[Map] = js.undefined
+  var map: Map
   
-  var position: js.UndefOr[js.Any] = js.undefined
+  var position: Coord | CoordLiteral
   
-  var shape: js.UndefOr[js.Any] = js.undefined
+  var shape: js.UndefOr[MarkerShape] = js.undefined
   
   var title: js.UndefOr[String] = js.undefined
   
@@ -30,14 +30,14 @@ trait MarkerOptions extends StObject {
 }
 object MarkerOptions {
   
-  inline def apply(): MarkerOptions = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(map: Map, position: Coord | CoordLiteral): MarkerOptions = {
+    val __obj = js.Dynamic.literal(map = map.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkerOptions]
   }
   
   extension [Self <: MarkerOptions](x: Self) {
     
-    inline def setAnimation(value: js.Any): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
@@ -53,19 +53,15 @@ object MarkerOptions {
     
     inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
     
-    inline def setIcon(value: js.Any): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String | ImageIcon | SymbolIcon | HtmlIcon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
     inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
     inline def setMap(value: Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
-    inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+    inline def setPosition(value: Coord | CoordLiteral): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    inline def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
-    
-    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
-    
-    inline def setShape(value: js.Any): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    inline def setShape(value: MarkerShape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
     inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
     

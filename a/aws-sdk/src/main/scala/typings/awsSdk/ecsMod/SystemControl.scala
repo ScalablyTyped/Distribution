@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SystemControl extends StObject {
   
   /**
-    * The namespaced kernel parameter for which to set a value.
+    * The namespaced kernel parameter to set a value for.
     */
   var namespace: js.UndefOr[String] = js.undefined
   
   /**
-    * The value for the namespaced kernel parameter specified in namespace.
+    * The value for the namespaced kernel parameter that's specified in namespace.
     */
   var value: js.UndefOr[String] = js.undefined
 }

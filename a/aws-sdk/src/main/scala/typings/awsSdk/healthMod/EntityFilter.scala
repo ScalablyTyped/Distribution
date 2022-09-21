@@ -49,34 +49,34 @@ object EntityFilter {
     
     inline def setEntityArnsUndefined: Self = StObject.set(x, "entityArns", js.undefined)
     
-    inline def setEntityArnsVarargs(value: entityArn*): Self = StObject.set(x, "entityArns", js.Array(value :_*))
+    inline def setEntityArnsVarargs(value: entityArn*): Self = StObject.set(x, "entityArns", js.Array(value*))
     
     inline def setEntityValues(value: entityValueList): Self = StObject.set(x, "entityValues", value.asInstanceOf[js.Any])
     
     inline def setEntityValuesUndefined: Self = StObject.set(x, "entityValues", js.undefined)
     
-    inline def setEntityValuesVarargs(value: entityValue*): Self = StObject.set(x, "entityValues", js.Array(value :_*))
+    inline def setEntityValuesVarargs(value: entityValue*): Self = StObject.set(x, "entityValues", js.Array(value*))
     
     inline def setEventArns(value: eventArnList): Self = StObject.set(x, "eventArns", value.asInstanceOf[js.Any])
     
-    inline def setEventArnsVarargs(value: eventArn*): Self = StObject.set(x, "eventArns", js.Array(value :_*))
+    inline def setEventArnsVarargs(value: eventArn*): Self = StObject.set(x, "eventArns", js.Array(value*))
     
     inline def setLastUpdatedTimes(value: dateTimeRangeList): Self = StObject.set(x, "lastUpdatedTimes", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedTimesUndefined: Self = StObject.set(x, "lastUpdatedTimes", js.undefined)
     
-    inline def setLastUpdatedTimesVarargs(value: DateTimeRange*): Self = StObject.set(x, "lastUpdatedTimes", js.Array(value :_*))
+    inline def setLastUpdatedTimesVarargs(value: DateTimeRange*): Self = StObject.set(x, "lastUpdatedTimes", js.Array(value*))
     
     inline def setStatusCodes(value: entityStatusCodeList): Self = StObject.set(x, "statusCodes", value.asInstanceOf[js.Any])
     
     inline def setStatusCodesUndefined: Self = StObject.set(x, "statusCodes", js.undefined)
     
-    inline def setStatusCodesVarargs(value: entityStatusCode*): Self = StObject.set(x, "statusCodes", js.Array(value :_*))
+    inline def setStatusCodesVarargs(value: entityStatusCode*): Self = StObject.set(x, "statusCodes", js.Array(value*))
     
     inline def setTags(value: tagFilter): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: tagSet*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: tagSet*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

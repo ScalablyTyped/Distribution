@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "roads-server" : "1.0.3"
+      "roads-server" : "1.1.1"
     }
   ],
   "test-dependencies" : [
     {
-      "roads-server" : "1.0.3"
+      "roads-server" : "1.1.1"
     }
   ],
   "compile-devDependencies" : [

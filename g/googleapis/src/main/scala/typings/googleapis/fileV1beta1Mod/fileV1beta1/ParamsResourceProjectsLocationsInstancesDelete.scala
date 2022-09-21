@@ -1,9 +1,5 @@
 package typings.googleapis.fileV1beta1Mod.fileV1beta1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,13 +9,12 @@ trait ParamsResourceProjectsLocationsInstancesDelete
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
+    * If set to true, any snapshots of the instance will also be deleted. (Otherwise, the request will only work if the instance has no snapshots.)
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
+  var force: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The instance resource name, in the format
-    * projects/{project_id}/locations/{location}/instances/{instance_id}
+    * Required. The instance resource name, in the format `projects/{project_id\}/locations/{location\}/instances/{instance_id\}`
     */
   var name: js.UndefOr[String] = js.undefined
 }
@@ -32,9 +27,9 @@ object ParamsResourceProjectsLocationsInstancesDelete {
   
   extension [Self <: ParamsResourceProjectsLocationsInstancesDelete](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

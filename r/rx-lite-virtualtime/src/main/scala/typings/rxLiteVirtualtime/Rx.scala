@@ -60,26 +60,26 @@ object Rx {
       advanceTo: TAbsolute => Unit,
       getNext: () => ScheduledItem[TAbsolute],
       isEnabled: Boolean,
-      isScheduler: js.Any => Boolean,
+      isScheduler: Any => Boolean,
       now: () => Double,
       schedule: js.Function0[Unit] => IDisposable,
       scheduleAbsolute: (TAbsolute, js.Function0[Unit]) => IDisposable,
-      scheduleAbsoluteWithState: (js.Any, TAbsolute, js.Function2[/* scheduler */ typings.rxCore.Rx.IScheduler, js.Any, IDisposable]) => IDisposable,
+      scheduleAbsoluteWithState: (Any, TAbsolute, js.Function2[/* scheduler */ typings.rxCore.Rx.IScheduler, Any, IDisposable]) => IDisposable,
       schedulePeriodic: (Double, js.Function0[Unit]) => IDisposable,
-      schedulePeriodicWithState: (js.Any, Double, js.Function1[js.Any, js.Any]) => IDisposable,
+      schedulePeriodicWithState: (Any, Double, js.Function1[Any, Any]) => IDisposable,
       scheduleRecursive: js.Function1[/* action */ js.Function0[Unit], Unit] => IDisposable,
       scheduleRecursiveWithAbsolute: (Double, js.Function1[/* action */ js.Function1[/* dueTime */ Double, Unit], Unit]) => IDisposable,
-      scheduleRecursiveWithAbsoluteAndState: (js.Any, Double, js.Function2[js.Any, /* action */ js.Function2[js.Any, /* dueTime */ Double, Unit], Unit]) => IDisposable,
+      scheduleRecursiveWithAbsoluteAndState: (Any, Double, js.Function2[Any, /* action */ js.Function2[Any, /* dueTime */ Double, Unit], Unit]) => IDisposable,
       scheduleRecursiveWithRelative: (Double, js.Function1[/* action */ js.Function1[/* dueTime */ Double, Unit], Unit]) => IDisposable,
-      scheduleRecursiveWithRelativeAndState: (js.Any, Double, js.Function2[js.Any, /* action */ js.Function2[js.Any, /* dueTime */ Double, Unit], Unit]) => IDisposable,
-      scheduleRecursiveWithState: (js.Any, js.Function2[js.Any, /* action */ js.Function1[js.Any, Unit], Unit]) => IDisposable,
+      scheduleRecursiveWithRelativeAndState: (Any, Double, js.Function2[Any, /* action */ js.Function2[Any, /* dueTime */ Double, Unit], Unit]) => IDisposable,
+      scheduleRecursiveWithState: (Any, js.Function2[Any, /* action */ js.Function1[Any, Unit], Unit]) => IDisposable,
       scheduleRelative: (TRelative, js.Function0[Unit]) => IDisposable,
-      scheduleRelativeWithState: (js.Any, TRelative, js.Function2[/* scheduler */ typings.rxCore.Rx.IScheduler, js.Any, IDisposable]) => IDisposable,
+      scheduleRelativeWithState: (Any, TRelative, js.Function2[/* scheduler */ typings.rxCore.Rx.IScheduler, Any, IDisposable]) => IDisposable,
       scheduleWithAbsolute: (Double, js.Function0[Unit]) => IDisposable,
-      scheduleWithAbsoluteAndState: (js.Any, Double, js.Function2[VirtualTimeScheduler[TAbsolute, TRelative], js.Any, IDisposable]) => IDisposable,
+      scheduleWithAbsoluteAndState: (Any, Double, js.Function2[VirtualTimeScheduler[TAbsolute, TRelative], Any, IDisposable]) => IDisposable,
       scheduleWithRelative: (Double, js.Function0[Unit]) => IDisposable,
-      scheduleWithRelativeAndState: (js.Any, Double, js.Function2[VirtualTimeScheduler[TAbsolute, TRelative], js.Any, IDisposable]) => IDisposable,
-      scheduleWithState: (js.Any, js.Function2[VirtualTimeScheduler[TAbsolute, TRelative], js.Any, IDisposable]) => IDisposable,
+      scheduleWithRelativeAndState: (Any, Double, js.Function2[VirtualTimeScheduler[TAbsolute, TRelative], Any, IDisposable]) => IDisposable,
+      scheduleWithState: (Any, js.Function2[VirtualTimeScheduler[TAbsolute, TRelative], Any, IDisposable]) => IDisposable,
       sleep: TRelative => Unit,
       start: () => IDisposable,
       stop: () => Unit,
@@ -105,13 +105,13 @@ object Rx {
       inline def setScheduleAbsolute(value: (TAbsolute, js.Function0[Unit]) => IDisposable): Self = StObject.set(x, "scheduleAbsolute", js.Any.fromFunction2(value))
       
       inline def setScheduleAbsoluteWithState(
-        value: (js.Any, TAbsolute, js.Function2[/* scheduler */ typings.rxCore.Rx.IScheduler, js.Any, IDisposable]) => IDisposable
+        value: (Any, TAbsolute, js.Function2[/* scheduler */ typings.rxCore.Rx.IScheduler, Any, IDisposable]) => IDisposable
       ): Self = StObject.set(x, "scheduleAbsoluteWithState", js.Any.fromFunction3(value))
       
       inline def setScheduleRelative(value: (TRelative, js.Function0[Unit]) => IDisposable): Self = StObject.set(x, "scheduleRelative", js.Any.fromFunction2(value))
       
       inline def setScheduleRelativeWithState(
-        value: (js.Any, TRelative, js.Function2[/* scheduler */ typings.rxCore.Rx.IScheduler, js.Any, IDisposable]) => IDisposable
+        value: (Any, TRelative, js.Function2[/* scheduler */ typings.rxCore.Rx.IScheduler, Any, IDisposable]) => IDisposable
       ): Self = StObject.set(x, "scheduleRelativeWithState", js.Any.fromFunction3(value))
       
       inline def setSleep(value: TRelative => Unit): Self = StObject.set(x, "sleep", js.Any.fromFunction1(value))

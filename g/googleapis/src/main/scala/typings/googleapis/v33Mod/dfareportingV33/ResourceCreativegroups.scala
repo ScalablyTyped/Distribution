@@ -4,30 +4,19 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.3", "dfareporting_v3_3.Resource$Creativegroups")
 @js.native
-class ResourceCreativegroups protected () extends StObject {
+open class ResourceCreativegroups protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native
   
-  /**
-    * dfareporting.creativeGroups.get
-    * @desc Gets one creative group by ID.
-    * @alias dfareporting.creativeGroups.get
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.id Creative group ID.
-    * @param {string} params.profileId User profile ID associated with this request.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def get(): GaxiosPromise[SchemaCreativeGroup] = js.native
   def get(callback: BodyResponseCallback[SchemaCreativeGroup]): Unit = js.native
   def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCreativeGroup] = js.native
@@ -35,8 +24,8 @@ class ResourceCreativegroups protected () extends StObject {
   def get(params: ParamsResourceCreativegroupsGet, callback: BodyResponseCallback[SchemaCreativeGroup]): Unit = js.native
   def get(
     params: ParamsResourceCreativegroupsGet,
-    options: BodyResponseCallback[SchemaCreativeGroup],
-    callback: BodyResponseCallback[SchemaCreativeGroup]
+    options: BodyResponseCallback[Readable | SchemaCreativeGroup],
+    callback: BodyResponseCallback[Readable | SchemaCreativeGroup]
   ): Unit = js.native
   def get(params: ParamsResourceCreativegroupsGet, options: MethodOptions): GaxiosPromise[SchemaCreativeGroup] = js.native
   def get(
@@ -44,20 +33,72 @@ class ResourceCreativegroups protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCreativeGroup]
   ): Unit = js.native
-  
   /**
-    * dfareporting.creativeGroups.insert
-    * @desc Inserts a new creative group.
-    * @alias dfareporting.creativeGroups.insert
-    * @memberOf! ()
+    * Gets one creative group by ID.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/dfareporting.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.profileId User profile ID associated with this request.
-    * @param {().CreativeGroup} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const dfareporting = google.dfareporting('v3.3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/dfatrafficking'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await dfareporting.creativeGroups.get({
+    *     // Creative group ID.
+    *     id: 'placeholder-value',
+    *     // User profile ID associated with this request.
+    *     profileId: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "accountId": "my_accountId",
+    *   //   "advertiserId": "my_advertiserId",
+    *   //   "advertiserIdDimensionValue": {},
+    *   //   "groupNumber": 0,
+    *   //   "id": "my_id",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "subaccountId": "my_subaccountId"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def get(params: ParamsResourceCreativegroupsGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def get(
+    params: ParamsResourceCreativegroupsGet,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def insert(): GaxiosPromise[SchemaCreativeGroup] = js.native
   def insert(callback: BodyResponseCallback[SchemaCreativeGroup]): Unit = js.native
   def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCreativeGroup] = js.native
@@ -65,8 +106,8 @@ class ResourceCreativegroups protected () extends StObject {
   def insert(params: ParamsResourceCreativegroupsInsert, callback: BodyResponseCallback[SchemaCreativeGroup]): Unit = js.native
   def insert(
     params: ParamsResourceCreativegroupsInsert,
-    options: BodyResponseCallback[SchemaCreativeGroup],
-    callback: BodyResponseCallback[SchemaCreativeGroup]
+    options: BodyResponseCallback[Readable | SchemaCreativeGroup],
+    callback: BodyResponseCallback[Readable | SchemaCreativeGroup]
   ): Unit = js.native
   def insert(params: ParamsResourceCreativegroupsInsert, options: MethodOptions): GaxiosPromise[SchemaCreativeGroup] = js.native
   def insert(
@@ -74,28 +115,85 @@ class ResourceCreativegroups protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCreativeGroup]
   ): Unit = js.native
-  
   /**
-    * dfareporting.creativeGroups.list
-    * @desc Retrieves a list of creative groups, possibly filtered. This method
-    * supports paging.
-    * @alias dfareporting.creativeGroups.list
-    * @memberOf! ()
+    * Inserts a new creative group.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/dfareporting.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string=} params.advertiserIds Select only creative groups that belong to these advertisers.
-    * @param {integer=} params.groupNumber Select only creative groups that belong to this subgroup.
-    * @param {string=} params.ids Select only creative groups with these IDs.
-    * @param {integer=} params.maxResults Maximum number of results to return.
-    * @param {string=} params.pageToken Value of the nextPageToken from the previous result page.
-    * @param {string} params.profileId User profile ID associated with this request.
-    * @param {string=} params.searchString Allows searching for creative groups by name or ID. Wildcards (*) are allowed. For example, "creativegroup*2015" will return creative groups with names like "creativegroup June 2015", "creativegroup April 2015", or simply "creativegroup 2015". Most of the searches also add wild-cards implicitly at the start and the end of the search string. For example, a search string of "creativegroup" will match creative groups with the name "my creativegroup", "creativegroup 2015", or simply "creativegroup".
-    * @param {string=} params.sortField Field by which to sort the list.
-    * @param {string=} params.sortOrder Order of sorted results.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const dfareporting = google.dfareporting('v3.3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/dfatrafficking'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await dfareporting.creativeGroups.insert({
+    *     // User profile ID associated with this request.
+    *     profileId: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "accountId": "my_accountId",
+    *       //   "advertiserId": "my_advertiserId",
+    *       //   "advertiserIdDimensionValue": {},
+    *       //   "groupNumber": 0,
+    *       //   "id": "my_id",
+    *       //   "kind": "my_kind",
+    *       //   "name": "my_name",
+    *       //   "subaccountId": "my_subaccountId"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "accountId": "my_accountId",
+    *   //   "advertiserId": "my_advertiserId",
+    *   //   "advertiserIdDimensionValue": {},
+    *   //   "groupNumber": 0,
+    *   //   "id": "my_id",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "subaccountId": "my_subaccountId"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def insert(params: ParamsResourceCreativegroupsInsert, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def insert(
+    params: ParamsResourceCreativegroupsInsert,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def list(): GaxiosPromise[SchemaCreativeGroupsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaCreativeGroupsListResponse]): Unit = js.native
   def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCreativeGroupsListResponse] = js.native
@@ -106,8 +204,8 @@ class ResourceCreativegroups protected () extends StObject {
   ): Unit = js.native
   def list(
     params: ParamsResourceCreativegroupsList,
-    options: BodyResponseCallback[SchemaCreativeGroupsListResponse],
-    callback: BodyResponseCallback[SchemaCreativeGroupsListResponse]
+    options: BodyResponseCallback[Readable | SchemaCreativeGroupsListResponse],
+    callback: BodyResponseCallback[Readable | SchemaCreativeGroupsListResponse]
   ): Unit = js.native
   def list(params: ParamsResourceCreativegroupsList, options: MethodOptions): GaxiosPromise[SchemaCreativeGroupsListResponse] = js.native
   def list(
@@ -115,22 +213,81 @@ class ResourceCreativegroups protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCreativeGroupsListResponse]
   ): Unit = js.native
-  
   /**
-    * dfareporting.creativeGroups.patch
-    * @desc Updates an existing creative group. This method supports patch
-    * semantics.
-    * @alias dfareporting.creativeGroups.patch
-    * @memberOf! ()
+    * Retrieves a list of creative groups, possibly filtered. This method supports paging.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/dfareporting.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.id Creative group ID.
-    * @param {string} params.profileId User profile ID associated with this request.
-    * @param {().CreativeGroup} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const dfareporting = google.dfareporting('v3.3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/dfatrafficking'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await dfareporting.creativeGroups.list({
+    *     // Select only creative groups that belong to these advertisers.
+    *     advertiserIds: 'placeholder-value',
+    *     // Select only creative groups that belong to this subgroup.
+    *     groupNumber: 'placeholder-value',
+    *     // Select only creative groups with these IDs.
+    *     ids: 'placeholder-value',
+    *     // Maximum number of results to return.
+    *     maxResults: 'placeholder-value',
+    *     // Value of the nextPageToken from the previous result page.
+    *     pageToken: 'placeholder-value',
+    *     // User profile ID associated with this request.
+    *     profileId: 'placeholder-value',
+    *     // Allows searching for creative groups by name or ID. Wildcards (*) are allowed. For example, "creativegroup*2015" will return creative groups with names like "creativegroup June 2015", "creativegroup April 2015", or simply "creativegroup 2015". Most of the searches also add wild-cards implicitly at the start and the end of the search string. For example, a search string of "creativegroup" will match creative groups with the name "my creativegroup", "creativegroup 2015", or simply "creativegroup".
+    *     searchString: 'placeholder-value',
+    *     // Field by which to sort the list.
+    *     sortField: 'placeholder-value',
+    *     // Order of sorted results.
+    *     sortOrder: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "creativeGroups": [],
+    *   //   "kind": "my_kind",
+    *   //   "nextPageToken": "my_nextPageToken"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def list(params: ParamsResourceCreativegroupsList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def list(
+    params: ParamsResourceCreativegroupsList,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def patch(): GaxiosPromise[SchemaCreativeGroup] = js.native
   def patch(callback: BodyResponseCallback[SchemaCreativeGroup]): Unit = js.native
   def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCreativeGroup] = js.native
@@ -138,8 +295,8 @@ class ResourceCreativegroups protected () extends StObject {
   def patch(params: ParamsResourceCreativegroupsPatch, callback: BodyResponseCallback[SchemaCreativeGroup]): Unit = js.native
   def patch(
     params: ParamsResourceCreativegroupsPatch,
-    options: BodyResponseCallback[SchemaCreativeGroup],
-    callback: BodyResponseCallback[SchemaCreativeGroup]
+    options: BodyResponseCallback[Readable | SchemaCreativeGroup],
+    callback: BodyResponseCallback[Readable | SchemaCreativeGroup]
   ): Unit = js.native
   def patch(params: ParamsResourceCreativegroupsPatch, options: MethodOptions): GaxiosPromise[SchemaCreativeGroup] = js.native
   def patch(
@@ -147,20 +304,87 @@ class ResourceCreativegroups protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCreativeGroup]
   ): Unit = js.native
-  
   /**
-    * dfareporting.creativeGroups.update
-    * @desc Updates an existing creative group.
-    * @alias dfareporting.creativeGroups.update
-    * @memberOf! ()
+    * Updates an existing creative group. This method supports patch semantics.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/dfareporting.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.profileId User profile ID associated with this request.
-    * @param {().CreativeGroup} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const dfareporting = google.dfareporting('v3.3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/dfatrafficking'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await dfareporting.creativeGroups.patch({
+    *     // CreativeGroup ID.
+    *     id: 'placeholder-value',
+    *     // User profile ID associated with this request.
+    *     profileId: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "accountId": "my_accountId",
+    *       //   "advertiserId": "my_advertiserId",
+    *       //   "advertiserIdDimensionValue": {},
+    *       //   "groupNumber": 0,
+    *       //   "id": "my_id",
+    *       //   "kind": "my_kind",
+    *       //   "name": "my_name",
+    *       //   "subaccountId": "my_subaccountId"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "accountId": "my_accountId",
+    *   //   "advertiserId": "my_advertiserId",
+    *   //   "advertiserIdDimensionValue": {},
+    *   //   "groupNumber": 0,
+    *   //   "id": "my_id",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "subaccountId": "my_subaccountId"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def patch(params: ParamsResourceCreativegroupsPatch, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def patch(
+    params: ParamsResourceCreativegroupsPatch,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def update(): GaxiosPromise[SchemaCreativeGroup] = js.native
   def update(callback: BodyResponseCallback[SchemaCreativeGroup]): Unit = js.native
   def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCreativeGroup] = js.native
@@ -168,13 +392,91 @@ class ResourceCreativegroups protected () extends StObject {
   def update(params: ParamsResourceCreativegroupsUpdate, callback: BodyResponseCallback[SchemaCreativeGroup]): Unit = js.native
   def update(
     params: ParamsResourceCreativegroupsUpdate,
-    options: BodyResponseCallback[SchemaCreativeGroup],
-    callback: BodyResponseCallback[SchemaCreativeGroup]
+    options: BodyResponseCallback[Readable | SchemaCreativeGroup],
+    callback: BodyResponseCallback[Readable | SchemaCreativeGroup]
   ): Unit = js.native
   def update(params: ParamsResourceCreativegroupsUpdate, options: MethodOptions): GaxiosPromise[SchemaCreativeGroup] = js.native
   def update(
     params: ParamsResourceCreativegroupsUpdate,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaCreativeGroup]
+  ): Unit = js.native
+  /**
+    * Updates an existing creative group.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/dfareporting.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const dfareporting = google.dfareporting('v3.3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/dfatrafficking'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await dfareporting.creativeGroups.update({
+    *     // User profile ID associated with this request.
+    *     profileId: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "accountId": "my_accountId",
+    *       //   "advertiserId": "my_advertiserId",
+    *       //   "advertiserIdDimensionValue": {},
+    *       //   "groupNumber": 0,
+    *       //   "id": "my_id",
+    *       //   "kind": "my_kind",
+    *       //   "name": "my_name",
+    *       //   "subaccountId": "my_subaccountId"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "accountId": "my_accountId",
+    *   //   "advertiserId": "my_advertiserId",
+    *   //   "advertiserIdDimensionValue": {},
+    *   //   "groupNumber": 0,
+    *   //   "id": "my_id",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "subaccountId": "my_subaccountId"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def update(params: ParamsResourceCreativegroupsUpdate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def update(
+    params: ParamsResourceCreativegroupsUpdate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
 }

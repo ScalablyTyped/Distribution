@@ -40,7 +40,7 @@ trait b2FixtureDef extends StObject {
   /**
     * Use this to store application specific fixture data.
     **/
-  var userData: js.Any
+  var userData: Any
 }
 object b2FixtureDef {
   
@@ -51,7 +51,7 @@ object b2FixtureDef {
     isSensor: Boolean,
     restitution: Double,
     shape: b2Shape,
-    userData: js.Any
+    userData: Any
   ): b2FixtureDef = {
     val __obj = js.Dynamic.literal(density = density.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], friction = friction.asInstanceOf[js.Any], isSensor = isSensor.asInstanceOf[js.Any], restitution = restitution.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any], userData = userData.asInstanceOf[js.Any])
     __obj.asInstanceOf[b2FixtureDef]
@@ -71,6 +71,6 @@ object b2FixtureDef {
     
     inline def setShape(value: b2Shape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
-    inline def setUserData(value: js.Any): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
+    inline def setUserData(value: Any): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
   }
 }

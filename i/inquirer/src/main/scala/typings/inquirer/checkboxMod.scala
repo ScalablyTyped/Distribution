@@ -2,8 +2,8 @@ package typings.inquirer
 
 import typings.inquirer.mod.Answers
 import typings.inquirer.mod.CheckboxQuestionOptions
-import typings.inquirer.mod.prompts.FailedPromptStateData
-import typings.inquirer.mod.prompts.SuccessfulPromptStateData
+import typings.inquirer.mod.inquirer.prompts.FailedPromptStateData
+import typings.inquirer.mod.inquirer.prompts.SuccessfulPromptStateData
 import typings.node.readlineMod.Interface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,11 +17,11 @@ object checkboxMod {
     * @template TQuestion
     * The options for the question.
     */
-  @JSImport("inquirer/lib/prompts/checkbox", JSImport.Namespace)
+  @JSImport("inquirer/lib/prompts/checkbox", JSImport.Default)
   @js.native
-  class ^[TQuestion /* <: Question */] protected () extends CheckboxPrompt[TQuestion] {
+  open class default[TQuestion /* <: Question */] protected () extends CheckboxPrompt[TQuestion] {
     /**
-      * Initializes a new instance of the `CheckboxPrompt<T>` class.
+      * Initializes a new instance of the {@link CheckboxPrompt `CheckboxPrompt<TQuestion>`} class.
       *
       * @param question
       * The question to prompt the user to answer.
@@ -43,7 +43,7 @@ object checkboxMod {
     */
   @js.native
   trait CheckboxPrompt[TQuestion /* <: Question */]
-    extends typings.inquirer.baseMod.^[TQuestion] {
+    extends typings.inquirer.baseMod.default[TQuestion] {
     
     /**
       * Gets the current value of the prompt.
@@ -51,7 +51,7 @@ object checkboxMod {
       * @returns
       * The current value of the prompt.
       */
-    /* protected */ def getCurrentValue(): js.Any = js.native
+    /* protected */ def getCurrentValue(): Any = js.native
     
     /**
       * Handles the `AllKey`-event of the prompt.
@@ -69,7 +69,7 @@ object checkboxMod {
       * @param eventArgs
       * An object which contains event-data.
       */
-    /* protected */ def onEnd(eventArgs: SuccessfulPromptStateData[js.Any]): Unit = js.native
+    /* protected */ def onEnd(eventArgs: SuccessfulPromptStateData[Any]): Unit = js.native
     
     /**
       * Handles the `error`-event of the prompt.
@@ -105,7 +105,7 @@ object checkboxMod {
     /**
       * Gets or sets an object for paginating the content.
       */
-    /* protected */ var paginator: typings.inquirer.paginatorMod.^ = js.native
+    /* protected */ var paginator: typings.inquirer.paginatorMod.default = js.native
     
     /**
       * Gets or sets the index of the currently focused choice.
@@ -131,7 +131,7 @@ object checkboxMod {
   }
   
   /**
-    * The question-options for the `ChoicePrompt<T>`.
+    * The question-options for the {@link CheckboxPrompt `CheckboxPrompt<TQuestion>`}.
     */
   type Question = CheckboxQuestionOptions[Answers]
 }

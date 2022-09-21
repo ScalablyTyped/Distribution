@@ -43,6 +43,6 @@ object ErrorGroup {
     
     inline def setTrackingIssuesUndefined: Self = StObject.set(x, "trackingIssues", js.undefined)
     
-    inline def setTrackingIssuesVarargs(value: TrackingIssue*): Self = StObject.set(x, "trackingIssues", js.Array(value :_*))
+    inline def setTrackingIssuesVarargs(value: TrackingIssue*): Self = StObject.set(x, "trackingIssues", js.Array(value*))
   }
 }

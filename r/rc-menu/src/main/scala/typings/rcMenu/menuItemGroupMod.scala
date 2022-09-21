@@ -1,10 +1,6 @@
 package typings.rcMenu
 
-import typings.rcMenu.interfaceMod.MenuClickEventHandler
-import typings.rcMenu.interfaceMod.MenuInfo
-import typings.rcMenu.rcMenuStrings.ltr
-import typings.rcMenu.rcMenuStrings.rtl
-import typings.react.mod.Component
+import typings.react.mod.CSSProperties
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
@@ -13,63 +9,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object menuItemGroupMod {
   
-  @JSImport("rc-menu/es/MenuItemGroup", JSImport.Default)
+  @JSImport("rc-menu/es/MenuItemGroup", JSImport.Namespace)
   @js.native
-  class default () extends MenuItemGroup
-  object default {
-    
-    @JSImport("rc-menu/es/MenuItemGroup", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /* static member */
-    object defaultProps {
-      
-      @JSImport("rc-menu/es/MenuItemGroup", "default.defaultProps")
-      @js.native
-      val ^ : js.Any = js.native
-      
-      @JSImport("rc-menu/es/MenuItemGroup", "default.defaultProps.disabled")
-      @js.native
-      def disabled: Boolean = js.native
-      inline def disabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disabled")(x.asInstanceOf[js.Any])
-    }
-    
-    /* static member */
-    @JSImport("rc-menu/es/MenuItemGroup", "default.isMenuItemGroup")
-    @js.native
-    def isMenuItemGroup: Boolean = js.native
-    inline def isMenuItemGroup_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isMenuItemGroup")(x.asInstanceOf[js.Any])
-  }
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait MenuItemGroup
-    extends Component[MenuItemGroupProps, js.Object, js.Any] {
-    
-    def renderInnerMenuItem(item: ReactElement): ReactElement = js.native
-  }
+  inline def default(hasChildrenProps: MenuItemGroupProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasChildrenProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
+  /* Inlined parent std.Omit<rc-menu.rc-menu/es/interface.MenuItemGroupType, 'type' | 'children' | 'label'> */
   trait MenuItemGroupProps extends StObject {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
-    var direction: js.UndefOr[ltr | rtl] = js.undefined
+    /** @private Internal filled key. Do not set it directly */
+    var eventKey: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.undefined
-    
-    var index: js.UndefOr[Double] = js.undefined
-    
-    var onClick: js.UndefOr[MenuClickEventHandler] = js.undefined
-    
-    var renderMenuItem: js.UndefOr[
-        js.Function3[/* item */ ReactElement, /* index */ Double, /* key */ String, ReactElement]
-      ] = js.undefined
-    
-    var rootPrefixCls: js.UndefOr[String] = js.undefined
-    
-    var subMenuKey: js.UndefOr[String] = js.undefined
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
     var title: js.UndefOr[ReactNode] = js.undefined
+    
+    /** @private Do not use. Private warning empty usage */
+    var warnKey: js.UndefOr[Boolean] = js.undefined
   }
   object MenuItemGroupProps {
     
@@ -80,41 +41,29 @@ object menuItemGroupMod {
     
     extension [Self <: MenuItemGroupProps](x: Self) {
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setDirection(value: ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setEventKey(value: String): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
       
-      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      inline def setEventKeyUndefined: Self = StObject.set(x, "eventKey", js.undefined)
       
-      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
-      
-      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
-      
-      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
-      
-      inline def setOnClick(value: /* info */ MenuInfo => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
-      
-      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
-      
-      inline def setRenderMenuItem(value: (/* item */ ReactElement, /* index */ Double, /* key */ String) => ReactElement): Self = StObject.set(x, "renderMenuItem", js.Any.fromFunction3(value))
-      
-      inline def setRenderMenuItemUndefined: Self = StObject.set(x, "renderMenuItem", js.undefined)
-      
-      inline def setRootPrefixCls(value: String): Self = StObject.set(x, "rootPrefixCls", value.asInstanceOf[js.Any])
-      
-      inline def setRootPrefixClsUndefined: Self = StObject.set(x, "rootPrefixCls", js.undefined)
-      
-      inline def setSubMenuKey(value: String): Self = StObject.set(x, "subMenuKey", value.asInstanceOf[js.Any])
-      
-      inline def setSubMenuKeyUndefined: Self = StObject.set(x, "subMenuKey", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
       inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      
+      inline def setWarnKey(value: Boolean): Self = StObject.set(x, "warnKey", value.asInstanceOf[js.Any])
+      
+      inline def setWarnKeyUndefined: Self = StObject.set(x, "warnKey", js.undefined)
     }
   }
 }

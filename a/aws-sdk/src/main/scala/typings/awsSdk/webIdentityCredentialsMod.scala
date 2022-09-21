@@ -17,7 +17,7 @@ object webIdentityCredentialsMod {
     * Creates a new credentials object.
     * @param {string} options - a map of options that are passed to the AWS.STS.assumeRole() or AWS.STS.getSessionToken() operations. If a RoleArn parameter is passed in, credentials will be based on the IAM role.
     */
-  class WebIdentityCredentials () extends Credentials {
+  open class WebIdentityCredentials () extends Credentials {
     /**
       * Creates a new credentials object with optional configuraion.
       * @param {Object} options - a map of options that are passed to the AWS.STS.assumeRole() or AWS.STS.getSessionToken() operations. If a RoleArn parameter is passed in, credentials will be based on the IAM role.

@@ -1,7 +1,6 @@
 package typings.cronConverter
 
 import typings.moment.mod.Moment
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ object mod {
     * Cron objects each represent a cron schedule.
     * @param options The options to use.
     */
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Cron {
     def this(options: Options) = this()
@@ -23,14 +22,14 @@ object mod {
   
   @JSImport("cron-converter", "Seeker")
   @js.native
-  class Seeker protected () extends StObject {
+  open class Seeker protected () extends StObject {
     /**
       * Creates an instance of Seeker.
       * Seeker objects search for execution times of a cron schedule.
       * @param cron A Cron instance.
       * @param now A Date or Moment object.
       */
-    def this(cron: Cron, now: Date) = this()
+    def this(cron: Cron, now: js.Date) = this()
     
     /**
       * Returns the time the schedule would run next.
@@ -68,8 +67,8 @@ object mod {
       * @param now A Date or Moment object.
       */
     def schedule(): Seeker = js.native
+    def schedule(now: js.Date): Seeker = js.native
     def schedule(now: Moment): Seeker = js.native
-    def schedule(now: Date): Seeker = js.native
     
     /**
       * Returns the cron schedule as a 2-dimensional array of integers.

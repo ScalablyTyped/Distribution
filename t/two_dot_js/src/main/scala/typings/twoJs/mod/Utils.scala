@@ -8,7 +8,7 @@ object Utils {
   
   @JSImport("two.js", "Utils.Collection")
   @js.native
-  class Collection[T] ()
+  open class Collection[T] ()
     extends StObject
        with typings.std.Array[T]
 }

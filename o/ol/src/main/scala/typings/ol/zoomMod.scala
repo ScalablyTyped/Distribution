@@ -9,7 +9,7 @@ object zoomMod {
   
   @JSImport("ol/control/Zoom", JSImport.Default)
   @js.native
-  class default () extends Zoom {
+  open class default () extends Zoom {
     def this(opt_options: Options) = this()
   }
   
@@ -23,9 +23,13 @@ object zoomMod {
     
     var target: js.UndefOr[HTMLElement | String] = js.undefined
     
+    var zoomInClassName: js.UndefOr[String] = js.undefined
+    
     var zoomInLabel: js.UndefOr[String | HTMLElement] = js.undefined
     
     var zoomInTipLabel: js.UndefOr[String] = js.undefined
+    
+    var zoomOutClassName: js.UndefOr[String] = js.undefined
     
     var zoomOutLabel: js.UndefOr[String | HTMLElement] = js.undefined
     
@@ -56,6 +60,10 @@ object zoomMod {
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
+      inline def setZoomInClassName(value: String): Self = StObject.set(x, "zoomInClassName", value.asInstanceOf[js.Any])
+      
+      inline def setZoomInClassNameUndefined: Self = StObject.set(x, "zoomInClassName", js.undefined)
+      
       inline def setZoomInLabel(value: String | HTMLElement): Self = StObject.set(x, "zoomInLabel", value.asInstanceOf[js.Any])
       
       inline def setZoomInLabelUndefined: Self = StObject.set(x, "zoomInLabel", js.undefined)
@@ -63,6 +71,10 @@ object zoomMod {
       inline def setZoomInTipLabel(value: String): Self = StObject.set(x, "zoomInTipLabel", value.asInstanceOf[js.Any])
       
       inline def setZoomInTipLabelUndefined: Self = StObject.set(x, "zoomInTipLabel", js.undefined)
+      
+      inline def setZoomOutClassName(value: String): Self = StObject.set(x, "zoomOutClassName", value.asInstanceOf[js.Any])
+      
+      inline def setZoomOutClassNameUndefined: Self = StObject.set(x, "zoomOutClassName", js.undefined)
       
       inline def setZoomOutLabel(value: String | HTMLElement): Self = StObject.set(x, "zoomOutLabel", value.asInstanceOf[js.Any])
       

@@ -9,9 +9,9 @@ trait RefractionPostProcess
   extends StObject
      with PostProcess {
   
-  /* private */ var _ownRefractionTexture: js.Any = js.native
+  /* private */ var _ownRefractionTexture: Any = js.native
   
-  /* private */ var _refTexture: js.Any = js.native
+  /* private */ var _refTexture: Any = js.native
   
   /** the base color of the refraction (used to taint the rendering) */
   var color: Color3 = js.native

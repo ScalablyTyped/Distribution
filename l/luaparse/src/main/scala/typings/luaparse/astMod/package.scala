@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type BreakStatement = typings.luaparse.astMod.Base[typings.luaparse.luaparseStrings.BreakStatement]
+type BreakStatement = Base[typings.luaparse.luaparseStrings.BreakStatement]
 
 /* Rewritten from type alias, can be one of: 
   - typings.luaparse.astMod.Statement
@@ -19,7 +19,7 @@ type BreakStatement = typings.luaparse.astMod.Base[typings.luaparse.luaparseStri
   - typings.luaparse.astMod.TableValue
   - typings.luaparse.astMod.Comment
 */
-type Node = typings.luaparse.astMod._Node | typings.luaparse.astMod.BreakStatement
+type Node = _Node | BreakStatement
 
 /* Rewritten from type alias, can be one of: 
   - typings.luaparse.astMod.LabelStatement
@@ -37,4 +37,4 @@ type Node = typings.luaparse.astMod._Node | typings.luaparse.astMod.BreakStateme
   - typings.luaparse.astMod.ForNumericStatement
   - typings.luaparse.astMod.ForGenericStatement
 */
-type Statement = typings.luaparse.astMod._Statement | typings.luaparse.astMod.BreakStatement
+type Statement = _Statement | BreakStatement

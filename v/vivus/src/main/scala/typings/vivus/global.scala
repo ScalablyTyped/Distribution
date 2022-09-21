@@ -17,7 +17,7 @@ object global {
       */
     @JSGlobal("Vivus")
     @js.native
-    class ^ protected ()
+    open class ^ protected ()
       extends typings.vivus.mod.^ {
       /**
         * @param element Dom element of the SVG or id of it

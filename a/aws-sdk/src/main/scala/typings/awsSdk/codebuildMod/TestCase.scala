@@ -14,7 +14,7 @@ trait TestCase extends StObject {
   /**
     *  The date and time a test case expires. A test case expires 30 days after it is created. An expired test case is not available to view in CodeBuild. 
     */
-  var expired: js.UndefOr[Timestamp] = js.undefined
+  var expired: js.UndefOr[js.Date] = js.undefined
   
   /**
     *  A message associated with a test case. For example, an error message or stack trace. 
@@ -59,7 +59,7 @@ object TestCase {
     
     inline def setDurationInNanoSecondsUndefined: Self = StObject.set(x, "durationInNanoSeconds", js.undefined)
     
-    inline def setExpired(value: Timestamp): Self = StObject.set(x, "expired", value.asInstanceOf[js.Any])
+    inline def setExpired(value: js.Date): Self = StObject.set(x, "expired", value.asInstanceOf[js.Any])
     
     inline def setExpiredUndefined: Self = StObject.set(x, "expired", js.undefined)
     

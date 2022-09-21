@@ -21,10 +21,10 @@ object VastResponse {
     
     inline def setAds(value: js.Array[VastAd]): Self = StObject.set(x, "ads", value.asInstanceOf[js.Any])
     
-    inline def setAdsVarargs(value: VastAd*): Self = StObject.set(x, "ads", js.Array(value :_*))
+    inline def setAdsVarargs(value: VastAd*): Self = StObject.set(x, "ads", js.Array(value*))
     
     inline def setErrorURLTemplates(value: js.Array[String]): Self = StObject.set(x, "errorURLTemplates", value.asInstanceOf[js.Any])
     
-    inline def setErrorURLTemplatesVarargs(value: String*): Self = StObject.set(x, "errorURLTemplates", js.Array(value :_*))
+    inline def setErrorURLTemplatesVarargs(value: String*): Self = StObject.set(x, "errorURLTemplates", js.Array(value*))
   }
 }

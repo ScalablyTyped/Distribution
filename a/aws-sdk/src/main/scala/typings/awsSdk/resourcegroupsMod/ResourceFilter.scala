@@ -29,6 +29,6 @@ object ResourceFilter {
     
     inline def setValues(value: ResourceFilterValues): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    inline def setValuesVarargs(value: ResourceFilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: ResourceFilterValue*): Self = StObject.set(x, "Values", js.Array(value*))
   }
 }

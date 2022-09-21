@@ -40,6 +40,6 @@ object ListUsersResponse {
     
     inline def setUsers(value: userListType): Self = StObject.set(x, "Users", value.asInstanceOf[js.Any])
     
-    inline def setUsersVarargs(value: User*): Self = StObject.set(x, "Users", js.Array(value :_*))
+    inline def setUsersVarargs(value: User*): Self = StObject.set(x, "Users", js.Array(value*))
   }
 }

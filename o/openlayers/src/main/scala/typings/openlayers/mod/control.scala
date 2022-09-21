@@ -46,7 +46,7 @@ object control {
     * @param opt_options Attribution options.
     * @api stable
     */
-  class Attribution () extends Control {
+  open class Attribution () extends Control {
     def this(opt_options: AttributionOptions) = this()
     
     /**
@@ -123,7 +123,7 @@ object control {
     */
   @JSImport("openlayers", "control.Control")
   @js.native
-  class Control protected () extends Object {
+  open class Control protected () extends Object {
     /**
       * @classdesc
       * A control is a visible widget with a DOM element in a fixed position on the
@@ -213,7 +213,7 @@ object control {
     * @param opt_options Options.
     * @api stable
     */
-  class FullScreen () extends Control {
+  open class FullScreen () extends Control {
     def this(opt_options: FullScreenOptions) = this()
   }
   
@@ -241,7 +241,7 @@ object control {
     *     options.
     * @api stable
     */
-  class MousePosition () extends Control {
+  open class MousePosition () extends Control {
     def this(opt_options: MousePositionOptions) = this()
     
     /**
@@ -310,7 +310,7 @@ object control {
     * @param opt_options OverviewMap options.
     * @api
     */
-  class OverviewMap () extends Control {
+  open class OverviewMap () extends Control {
     def this(opt_options: OverviewMapOptions) = this()
     
     /**
@@ -385,7 +385,7 @@ object control {
     * @param opt_options Rotate options.
     * @api stable
     */
-  class Rotate () extends Control {
+  open class Rotate () extends Control {
     def this(opt_options: RotateOptions) = this()
   }
   object Rotate {
@@ -431,7 +431,7 @@ object control {
     * @param opt_options Scale line options.
     * @api stable
     */
-  class ScaleLine () extends Control {
+  open class ScaleLine () extends Control {
     def this(opt_options: ScaleLineOptions) = this()
     
     /**
@@ -516,7 +516,7 @@ object control {
     * @param opt_options Zoom options.
     * @api stable
     */
-  class Zoom () extends Control {
+  open class Zoom () extends Control {
     def this(opt_options: ZoomOptions) = this()
   }
   
@@ -544,7 +544,7 @@ object control {
     * @param opt_options Zoom slider options.
     * @api stable
     */
-  class ZoomSlider () extends Control {
+  open class ZoomSlider () extends Control {
     def this(opt_options: ZoomSliderOptions) = this()
   }
   object ZoomSlider {
@@ -580,7 +580,7 @@ object control {
     * @param opt_options Options.
     * @api stable
     */
-  class ZoomToExtent () extends Control {
+  open class ZoomToExtent () extends Control {
     def this(opt_options: ZoomToExtentOptions) = this()
   }
   

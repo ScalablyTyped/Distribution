@@ -10,10 +10,10 @@ Effortlessly compose compare functions for Array.prototype.sort
 | ------------------ | :-------------: |
 | Full name          | compare-function |
 | Keywords           | array, sort, compare, compose |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 573 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 67.33333333333333 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/michaelrhodes/compare-function)

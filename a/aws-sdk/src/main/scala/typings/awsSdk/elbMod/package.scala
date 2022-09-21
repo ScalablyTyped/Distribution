@@ -5,159 +5,159 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AccessLogEnabled = scala.Boolean
+type AccessLogEnabled = Boolean
 
-type AccessLogInterval = scala.Double
+type AccessLogInterval = Double
 
-type AccessLogPrefix = java.lang.String
+type AccessLogPrefix = String
 
-type AccessPointName = java.lang.String
+type AccessPointName = String
 
-type AccessPointPort = scala.Double
+type AccessPointPort = Double
 
-type AdditionalAttributeKey = java.lang.String
+type AdditionalAttributeKey = String
 
-type AdditionalAttributeValue = java.lang.String
+type AdditionalAttributeValue = String
 
-type AdditionalAttributes = js.Array[typings.awsSdk.elbMod.AdditionalAttribute]
+type AdditionalAttributes = js.Array[AdditionalAttribute]
 
-type AppCookieStickinessPolicies = js.Array[typings.awsSdk.elbMod.AppCookieStickinessPolicy]
+type AppCookieStickinessPolicies = js.Array[AppCookieStickinessPolicy]
 
-type AttributeName = java.lang.String
+type AttributeName = String
 
-type AttributeType = java.lang.String
+type AttributeType = String
 
-type AttributeValue = java.lang.String
+type AttributeValue = String
 
-type AvailabilityZone = java.lang.String
+type AvailabilityZone = String
 
-type AvailabilityZones = js.Array[typings.awsSdk.elbMod.AvailabilityZone]
+type AvailabilityZones = js.Array[AvailabilityZone]
 
-type BackendServerDescriptions = js.Array[typings.awsSdk.elbMod.BackendServerDescription]
+type BackendServerDescriptions = js.Array[BackendServerDescription]
 
-type Cardinality = java.lang.String
+type Cardinality = String
 
-type ConnectionDrainingEnabled = scala.Boolean
+type ConnectionDrainingEnabled = Boolean
 
-type ConnectionDrainingTimeout = scala.Double
+type ConnectionDrainingTimeout = Double
 
-type CookieExpirationPeriod = scala.Double
+type CookieExpirationPeriod = Double
 
-type CookieName = java.lang.String
+type CookieName = String
 
-type CreatedTime = typings.std.Date
+type CreatedTime = js.Date
 
-type CrossZoneLoadBalancingEnabled = scala.Boolean
+type CrossZoneLoadBalancingEnabled = Boolean
 
-type DNSName = java.lang.String
+type DNSName = String
 
-type DefaultValue = java.lang.String
+type DefaultValue = String
 
-type Description = java.lang.String
+type Description = String
 
-type EndPointPort = scala.Double
+type EndPointPort = Double
 
-type HealthCheckInterval = scala.Double
+type HealthCheckInterval = Double
 
-type HealthCheckTarget = java.lang.String
+type HealthCheckTarget = String
 
-type HealthCheckTimeout = scala.Double
+type HealthCheckTimeout = Double
 
-type HealthyThreshold = scala.Double
+type HealthyThreshold = Double
 
-type IdleTimeout = scala.Double
+type IdleTimeout = Double
 
-type InstanceId = java.lang.String
+type InstanceId = String
 
-type InstancePort = scala.Double
+type InstancePort = Double
 
-type InstanceStates = js.Array[typings.awsSdk.elbMod.InstanceState]
+type InstanceStates = js.Array[InstanceState]
 
-type Instances = js.Array[typings.awsSdk.elbMod.Instance]
+type Instances = js.Array[Instance]
 
-type LBCookieStickinessPolicies = js.Array[typings.awsSdk.elbMod.LBCookieStickinessPolicy]
+type LBCookieStickinessPolicies = js.Array[LBCookieStickinessPolicy]
 
-type Limits = js.Array[typings.awsSdk.elbMod.Limit]
+type Limits = js.Array[Limit]
 
-type ListenerDescriptions = js.Array[typings.awsSdk.elbMod.ListenerDescription]
+type ListenerDescriptions = js.Array[ListenerDescription]
 
-type Listeners = js.Array[typings.awsSdk.elbMod.Listener]
+type Listeners = js.Array[Listener]
 
-type LoadBalancerDescriptions = js.Array[typings.awsSdk.elbMod.LoadBalancerDescription]
+type LoadBalancerDescriptions = js.Array[LoadBalancerDescription]
 
-type LoadBalancerNames = js.Array[typings.awsSdk.elbMod.AccessPointName]
+type LoadBalancerNames = js.Array[AccessPointName]
 
-type LoadBalancerNamesMax20 = js.Array[typings.awsSdk.elbMod.AccessPointName]
+type LoadBalancerNamesMax20 = js.Array[AccessPointName]
 
-type LoadBalancerScheme = java.lang.String
+type LoadBalancerScheme = String
 
-type Marker = java.lang.String
+type Marker = String
 
-type Max = java.lang.String
+type Max = String
 
-type Name = java.lang.String
+type Name = String
 
-type PageSize = scala.Double
+type PageSize = Double
 
-type PolicyAttributeDescriptions = js.Array[typings.awsSdk.elbMod.PolicyAttributeDescription]
+type PolicyAttributeDescriptions = js.Array[PolicyAttributeDescription]
 
-type PolicyAttributeTypeDescriptions = js.Array[typings.awsSdk.elbMod.PolicyAttributeTypeDescription]
+type PolicyAttributeTypeDescriptions = js.Array[PolicyAttributeTypeDescription]
 
-type PolicyAttributes = js.Array[typings.awsSdk.elbMod.PolicyAttribute]
+type PolicyAttributes = js.Array[PolicyAttribute]
 
-type PolicyDescriptions = js.Array[typings.awsSdk.elbMod.PolicyDescription]
+type PolicyDescriptions = js.Array[PolicyDescription]
 
-type PolicyName = java.lang.String
+type PolicyName = String
 
-type PolicyNames = js.Array[typings.awsSdk.elbMod.PolicyName]
+type PolicyNames = js.Array[PolicyName]
 
-type PolicyTypeDescriptions = js.Array[typings.awsSdk.elbMod.PolicyTypeDescription]
+type PolicyTypeDescriptions = js.Array[PolicyTypeDescription]
 
-type PolicyTypeName = java.lang.String
+type PolicyTypeName = String
 
-type PolicyTypeNames = js.Array[typings.awsSdk.elbMod.PolicyTypeName]
+type PolicyTypeNames = js.Array[PolicyTypeName]
 
-type Ports = js.Array[typings.awsSdk.elbMod.AccessPointPort]
+type Ports = js.Array[AccessPointPort]
 
-type Protocol = java.lang.String
+type Protocol = String
 
-type ReasonCode = java.lang.String
+type ReasonCode = String
 
-type S3BucketName = java.lang.String
+type S3BucketName = String
 
-type SSLCertificateId = java.lang.String
+type SSLCertificateId = String
 
-type SecurityGroupId = java.lang.String
+type SecurityGroupId = String
 
-type SecurityGroupName = java.lang.String
+type SecurityGroupName = String
 
-type SecurityGroupOwnerAlias = java.lang.String
+type SecurityGroupOwnerAlias = String
 
-type SecurityGroups = js.Array[typings.awsSdk.elbMod.SecurityGroupId]
+type SecurityGroups = js.Array[SecurityGroupId]
 
-type State = java.lang.String
+type State = String
 
-type SubnetId = java.lang.String
+type SubnetId = String
 
-type Subnets = js.Array[typings.awsSdk.elbMod.SubnetId]
+type Subnets = js.Array[SubnetId]
 
-type TagDescriptions = js.Array[typings.awsSdk.elbMod.TagDescription]
+type TagDescriptions = js.Array[TagDescription]
 
-type TagKey = java.lang.String
+type TagKey = String
 
-type TagKeyList = js.Array[typings.awsSdk.elbMod.TagKeyOnly]
+type TagKeyList = js.Array[TagKeyOnly]
 
-type TagList = js.Array[typings.awsSdk.elbMod.Tag]
+type TagList = js.Array[Tag]
 
-type TagValue = java.lang.String
+type TagValue = String
 
-type UnhealthyThreshold = scala.Double
+type UnhealthyThreshold = Double
 
-type VPCId = java.lang.String
+type VPCId = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2012-06-01`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.elbMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

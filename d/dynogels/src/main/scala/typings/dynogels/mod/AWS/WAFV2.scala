@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class WAFV2 ()
+open class WAFV2 ()
   extends typings.awsSdk.mod.WAFV2 {
   def this(options: ClientConfiguration) = this()
 }

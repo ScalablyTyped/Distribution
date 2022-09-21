@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait PrintOrder extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.PrintOrder")
@@ -15,7 +16,8 @@ object PrintOrder extends StObject {
   
   /**
     * Process down the rows before processing across pages or page fields to the right.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait downThenOver
@@ -24,7 +26,8 @@ object PrintOrder extends StObject {
   
   /**
     * Process across pages or page fields to the right before moving down the rows.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
   sealed trait overThenDown

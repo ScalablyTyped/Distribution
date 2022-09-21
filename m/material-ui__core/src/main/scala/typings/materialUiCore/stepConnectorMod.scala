@@ -1,20 +1,16 @@
 package typings.materialUiCore
 
-import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.stepConnectorStepConnectorMod.StepConnectorProps
-import typings.react.mod.ComponentType
+import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object stepConnectorMod extends Shortcut {
+object stepConnectorMod {
   
-  @JSImport("@material-ui/core/StepConnector", JSImport.Default)
+  @JSImport("@material-ui/core/StepConnector", JSImport.Namespace)
   @js.native
-  val default: ComponentType[StepConnectorProps] = js.native
+  val ^ : js.Any = js.native
   
-  type _To = ComponentType[StepConnectorProps]
-  
-  /* This means you don't have to write `default`, but can instead just say `stepConnectorMod.foo` */
-  override def _to: ComponentType[StepConnectorProps] = default
+  inline def default(props: StepConnectorProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

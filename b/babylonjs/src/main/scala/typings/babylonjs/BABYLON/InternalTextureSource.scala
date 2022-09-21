@@ -51,6 +51,14 @@ object InternalTextureSource extends StObject {
        with InternalTextureSource
   
   /**
+    * Texture content is a depth/stencil texture
+    */
+  @js.native
+  sealed trait DepthStencil
+    extends StObject
+       with InternalTextureSource
+  
+  /**
     * Texture content is dynamic (video or dynamic texture)
     */
   @js.native

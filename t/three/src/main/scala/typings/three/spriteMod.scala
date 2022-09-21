@@ -1,7 +1,8 @@
 package typings.three
 
 import typings.three.bufferGeometryMod.BufferGeometry
-import typings.three.materialsMod.SpriteMaterial
+import typings.three.eventDispatcherMod.Event
+import typings.three.materialsMaterialsMod.SpriteMaterial
 import typings.three.object3DMod.Object3D
 import typings.three.threeBooleans.`true`
 import typings.three.vector2Mod.Vector2
@@ -13,7 +14,7 @@ object spriteMod {
   
   @JSImport("three/src/objects/Sprite", "Sprite")
   @js.native
-  class Sprite () extends Object3D {
+  open class Sprite () extends Object3D[Event] {
     def this(material: SpriteMaterial) = this()
     
     var center: Vector2 = js.native

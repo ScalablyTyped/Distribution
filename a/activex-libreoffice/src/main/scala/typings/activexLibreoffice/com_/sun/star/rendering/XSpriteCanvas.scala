@@ -87,7 +87,7 @@ object XSpriteCanvas {
     fillTexturedPolyPolygon: (XPolyPolygon2D, ViewState, RenderState, SeqEquiv[Texture]) => XCachedPrimitive,
     getDevice: () => XGraphicDevice,
     queryAvailableFonts: (FontInfo, SeqEquiv[PropertyValue]) => SafeArray[FontInfo],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     queryStrokeShapes: (XPolyPolygon2D, ViewState, RenderState, StrokeAttributes) => XPolyPolygon2D,
     release: () => Unit,
     strokePolyPolygon: (XPolyPolygon2D, ViewState, RenderState, StrokeAttributes) => XCachedPrimitive,

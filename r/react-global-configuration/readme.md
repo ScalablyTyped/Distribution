@@ -10,15 +10,12 @@ For setting a global config object managed as a requirement
 | ------------------ | :-------------: |
 | Full name          | react-global-configuration |
 | Keywords           | react, global, configurator |
-| # releases         | 3 |
-| # dependents       | 13 |
-| # downloads        | 154604 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 21063.666666666668 |
+| # stars            | 40.0 |
 
 ## Links
-- [Homepage](https://github.com/morenofa/react-global-configuration#readme)
-- [Bugs](https://github.com/morenofa/react-global-configuration/issues)
-- [Repository](https://github.com/morenofa/react-global-configuration)
 - [Npm](https://www.npmjs.com/package/react-global-configuration)
     
 

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.PermissionObject")
 @js.native
-/* private */ class PermissionObject ()
+/* private */ open class PermissionObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.PermissionObject

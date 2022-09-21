@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response message of customer&#39;s listing configuration.
-  */
 trait SchemaCustomerListConfigurationsResponse extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaCustomerListConfigurationsResponse {
     
     inline def setConfigurationsUndefined: Self = StObject.set(x, "configurations", js.undefined)
     
-    inline def setConfigurationsVarargs(value: SchemaConfiguration*): Self = StObject.set(x, "configurations", js.Array(value :_*))
+    inline def setConfigurationsVarargs(value: SchemaConfiguration*): Self = StObject.set(x, "configurations", js.Array(value*))
   }
 }

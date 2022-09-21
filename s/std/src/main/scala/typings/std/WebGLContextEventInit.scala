@@ -8,6 +8,7 @@ trait WebGLContextEventInit
   extends StObject
      with EventInit {
   
+  /* standard dom */
   var statusMessage: js.UndefOr[java.lang.String] = js.undefined
 }
 object WebGLContextEventInit {

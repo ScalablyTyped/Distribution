@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PipeTransform extends StObject {
   
-  def transform(value: js.Any, args: js.Any*): js.Any
+  def transform(value: Any, args: Any*): Any
 }
 object PipeTransform {
   
-  inline def apply(transform: (js.Any, /* repeated */ js.Any) => js.Any): PipeTransform = {
+  inline def apply(transform: (Any, /* repeated */ Any) => Any): PipeTransform = {
     val __obj = js.Dynamic.literal(transform = js.Any.fromFunction2(transform))
     __obj.asInstanceOf[PipeTransform]
   }
   
   extension [Self <: PipeTransform](x: Self) {
     
-    inline def setTransform(value: (js.Any, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
+    inline def setTransform(value: (Any, /* repeated */ Any) => Any): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
   }
 }

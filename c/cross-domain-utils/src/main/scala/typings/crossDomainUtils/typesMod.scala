@@ -3,7 +3,6 @@ package typings.crossDomainUtils
 import typings.crossDomainUtils.anon.MockUserAgent
 import typings.crossDomainUtils.anon.TypeofXMLHttpRequest
 import typings.std.Document
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +22,7 @@ object typesMod {
     
     def focus(): Unit = js.native
     
-    var frames: js.Array[CrossDomainWindowType] | CrossDomainWindowType = js.native
+    var frames: CrossDomainWindowType = js.native
     
     var length: Double = js.native
     
@@ -38,18 +37,18 @@ object typesMod {
     def open(url: Unit, target: String, features: String): CrossDomainWindowType | Null = js.native
     def open(url: Unit, target: Unit, features: String): CrossDomainWindowType | Null = js.native
     
-    var opener: js.UndefOr[CrossDomainWindowType] = js.native
+    var opener: CrossDomainWindowType | Null = js.native
     
-    var parent: CrossDomainWindowType = js.native
+    var parent: CrossDomainWindowType | Null = js.native
     
     def postMessage(a: String, b: String): Unit = js.native
     
     var self: CrossDomainWindowType = js.native
     
-    var top: CrossDomainWindowType = js.native
+    var top: CrossDomainWindowType | Null = js.native
   }
   
-  type DomainMatcher = String | js.Array[String] | RegExp
+  type DomainMatcher = String | js.Array[String] | js.RegExp
   
   @js.native
   trait SameDomainWindowType extends StObject {

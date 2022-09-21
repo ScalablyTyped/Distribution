@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("elo-rank", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with EloRank {
     def this(kFactor: Double) = this()

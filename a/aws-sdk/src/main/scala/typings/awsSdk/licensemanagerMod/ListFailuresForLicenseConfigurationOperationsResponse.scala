@@ -29,7 +29,7 @@ object ListFailuresForLicenseConfigurationOperationsResponse {
     
     inline def setLicenseOperationFailureListUndefined: Self = StObject.set(x, "LicenseOperationFailureList", js.undefined)
     
-    inline def setLicenseOperationFailureListVarargs(value: LicenseOperationFailure*): Self = StObject.set(x, "LicenseOperationFailureList", js.Array(value :_*))
+    inline def setLicenseOperationFailureListVarargs(value: LicenseOperationFailure*): Self = StObject.set(x, "LicenseOperationFailureList", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

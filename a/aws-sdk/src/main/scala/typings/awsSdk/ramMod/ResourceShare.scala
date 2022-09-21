@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ResourceShare extends StObject {
   
   /**
-    * Indicates whether principals outside your AWS organization can be associated with a resource share.
+    * Indicates whether principals outside your organization in Organizations can be associated with a resource share.
     */
   var allowExternalPrincipals: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The time when the resource share was created.
+    * The date and time when the resource share was created.
     */
-  var creationTime: js.UndefOr[DateTime] = js.undefined
+  var creationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * Indicates how the resource share was created. Possible values include:    CREATED_FROM_POLICY - Indicates that the resource share was created from an AWS Identity and Access Management (AWS IAM) policy attached to a resource. These resource shares are visible only to the AWS account that created it. They cannot be modified in AWS RAM.    PROMOTING_TO_STANDARD - The resource share is in the process of being promoted. For more information, see PromoteResourceShareCreatedFromPolicy.    STANDARD - Indicates that the resource share was created in AWS RAM using the console or APIs. These resource shares are visible to all principals. They can be modified in AWS RAM.  
+    * Indicates how the resource share was created. Possible values include:    CREATED_FROM_POLICY - Indicates that the resource share was created from an Identity and Access Management (IAM) resource-based permission policy attached to the resource. This type of resource share is visible only to the Amazon Web Services account that created it. You can't modify it in RAM unless you promote it. For more information, see PromoteResourceShareCreatedFromPolicy.    PROMOTING_TO_STANDARD - The resource share is in the process of being promoted. For more information, see PromoteResourceShareCreatedFromPolicy.    STANDARD - Indicates that the resource share was created in RAM using the console or APIs. These resource shares are visible to all principals you share the resource share with. You can modify these resource shares in RAM using the console or APIs.  
     */
   var featureSet: js.UndefOr[ResourceShareFeatureSet] = js.undefined
   
   /**
-    * The time when the resource share was last updated.
+    * The date and time when the resource share was last updated.
     */
-  var lastUpdatedTime: js.UndefOr[DateTime] = js.undefined
+  var lastUpdatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the resource share.
@@ -32,17 +32,17 @@ trait ResourceShare extends StObject {
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * The ID of the AWS account that owns the resource share.
+    * The ID of the Amazon Web Services account that owns the resource share.
     */
   var owningAccountId: js.UndefOr[String] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the resource share.
+    * The Amazon Resoure Name (ARN) of the resource share
     */
   var resourceShareArn: js.UndefOr[String] = js.undefined
   
   /**
-    * The status of the resource share.
+    * The current status of the resource share.
     */
   var status: js.UndefOr[ResourceShareStatus] = js.undefined
   
@@ -52,7 +52,7 @@ trait ResourceShare extends StObject {
   var statusMessage: js.UndefOr[String] = js.undefined
   
   /**
-    * The tags for the resource share.
+    * The tag key and value pairs attached to the resource share.
     */
   var tags: js.UndefOr[TagList] = js.undefined
 }
@@ -69,7 +69,7 @@ object ResourceShare {
     
     inline def setAllowExternalPrincipalsUndefined: Self = StObject.set(x, "allowExternalPrincipals", js.undefined)
     
-    inline def setCreationTime(value: DateTime): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
@@ -77,7 +77,7 @@ object ResourceShare {
     
     inline def setFeatureSetUndefined: Self = StObject.set(x, "featureSet", js.undefined)
     
-    inline def setLastUpdatedTime(value: DateTime): Self = StObject.set(x, "lastUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTime(value: js.Date): Self = StObject.set(x, "lastUpdatedTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedTimeUndefined: Self = StObject.set(x, "lastUpdatedTime", js.undefined)
     
@@ -105,6 +105,6 @@ object ResourceShare {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

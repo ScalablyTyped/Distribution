@@ -2,8 +2,8 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.FC
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,12 +13,12 @@ object listDescriptionMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/elements/List/ListDescription", JSImport.Default)
   @js.native
-  val default: StatelessComponent[ListDescriptionProps] = js.native
+  val default: FC[ListDescriptionProps] = js.native
   
   trait ListDescriptionProps
     extends StObject
        with StrictListDescriptionProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object ListDescriptionProps {
     
     inline def apply(): ListDescriptionProps = {
@@ -30,7 +30,7 @@ object listDescriptionMod extends Shortcut {
   trait StrictListDescriptionProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -50,7 +50,7 @@ object listDescriptionMod extends Shortcut {
     
     extension [Self <: StrictListDescriptionProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -68,8 +68,8 @@ object listDescriptionMod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[ListDescriptionProps]
+  type _To = FC[ListDescriptionProps]
   
   /* This means you don't have to write `default`, but can instead just say `listDescriptionMod.foo` */
-  override def _to: StatelessComponent[ListDescriptionProps] = default
+  override def _to: FC[ListDescriptionProps] = default
 }

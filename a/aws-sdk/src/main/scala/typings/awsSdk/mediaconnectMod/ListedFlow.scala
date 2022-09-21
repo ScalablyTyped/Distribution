@@ -21,6 +21,8 @@ trait ListedFlow extends StObject {
     */
   var FlowArn: string
   
+  var Maintenance: js.UndefOr[typings.awsSdk.mediaconnectMod.Maintenance] = js.undefined
+  
   /**
     * The name of the flow.
     */
@@ -57,6 +59,10 @@ object ListedFlow {
     inline def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     inline def setFlowArn(value: string): Self = StObject.set(x, "FlowArn", value.asInstanceOf[js.Any])
+    
+    inline def setMaintenance(value: Maintenance): Self = StObject.set(x, "Maintenance", value.asInstanceOf[js.Any])
+    
+    inline def setMaintenanceUndefined: Self = StObject.set(x, "Maintenance", js.undefined)
     
     inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The number of bids with the specified dimension values that did not win the
-  * auction (either were filtered pre-auction or lost the auction), as
-  * described by the specified creative status.
-  */
 trait SchemaCreativeStatusRow extends StObject {
   
   /**
@@ -17,10 +12,9 @@ trait SchemaCreativeStatusRow extends StObject {
   var bidCount: js.UndefOr[SchemaMetricValue] = js.undefined
   
   /**
-    * The ID of the creative status. See
-    * [creative-status-codes](https://developers.google.com/authorized-buyers/rtb/downloads/creative-status-codes).
+    * The ID of the creative status. See [creative-status-codes](https://developers.google.com/authorized-buyers/rtb/downloads/creative-status-codes).
     */
-  var creativeStatusId: js.UndefOr[Double] = js.undefined
+  var creativeStatusId: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * The values of all dimensions associated with metric values in this row.
@@ -41,6 +35,8 @@ object SchemaCreativeStatusRow {
     inline def setBidCountUndefined: Self = StObject.set(x, "bidCount", js.undefined)
     
     inline def setCreativeStatusId(value: Double): Self = StObject.set(x, "creativeStatusId", value.asInstanceOf[js.Any])
+    
+    inline def setCreativeStatusIdNull: Self = StObject.set(x, "creativeStatusId", null)
     
     inline def setCreativeStatusIdUndefined: Self = StObject.set(x, "creativeStatusId", js.undefined)
     

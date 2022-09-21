@@ -14,7 +14,7 @@ object audioLoaderMod {
   
   @JSImport("three/src/loaders/AudioLoader", "AudioLoader")
   @js.native
-  class AudioLoader () extends Loader {
+  open class AudioLoader () extends Loader {
     def this(manager: LoadingManager) = this()
     
     def load(url: String, onLoad: js.Function1[/* audioBuffer */ AudioBuffer, Unit]): Unit = js.native

@@ -1,7 +1,6 @@
 package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ trait ResponseInfo extends StObject {
   var allResponseHeaders: js.UndefOr[String] = js.undefined
   
   /** Can be string or bytearray depending on request.binaryStringResponseBody field */
-  var body: js.UndefOr[String | Uint8Array] = js.undefined
+  var body: js.UndefOr[String | js.typedarray.Uint8Array] = js.undefined
   
   var contentType: js.UndefOr[String] = js.undefined
   
@@ -19,7 +18,7 @@ trait ResponseInfo extends StObject {
   
   var responseAvailable: Boolean
   
-  var state: js.UndefOr[js.Any] = js.undefined
+  var state: js.UndefOr[Any] = js.undefined
   
   var statusCode: js.UndefOr[Double] = js.undefined
   
@@ -38,7 +37,7 @@ object ResponseInfo {
     
     inline def setAllResponseHeadersUndefined: Self = StObject.set(x, "allResponseHeaders", js.undefined)
     
-    inline def setBody(value: String | Uint8Array): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String | js.typedarray.Uint8Array): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
@@ -52,7 +51,7 @@ object ResponseInfo {
     
     inline def setResponseAvailable(value: Boolean): Self = StObject.set(x, "responseAvailable", value.asInstanceOf[js.Any])
     
-    inline def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     

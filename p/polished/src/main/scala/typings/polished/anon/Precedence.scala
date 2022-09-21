@@ -1,51 +1,51 @@
 package typings.polished.anon
 
 import typings.polished.polishedNumbers.`0`
-import typings.polished.polishedNumbers.`2`
-import typings.polished.polishedNumbers.`4`
-import typings.polished.polishedStrings.Slash
-import typings.polished.polishedStrings.infix
+import typings.polished.polishedNumbers.`1`
+import typings.polished.polishedNumbers.`3`
+import typings.polished.polishedStrings.Plussign
+import typings.polished.polishedStrings.prefix
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Precedence extends StObject {
   
-  var argCount: `2`
+  var argCount: `1`
   
-  var f: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify division */ js.Any
+  var f: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify last */ Any
   
-  var notation: infix
+  var notation: prefix
   
-  var precedence: `4`
+  var precedence: `3`
   
   var rightToLeft: `0`
   
-  var symbol: Slash
+  var symbol: Plussign
 }
 object Precedence {
   
   inline def apply(
-    f: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify division */ js.Any
+    f: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify last */ Any
   ): Precedence = {
-    val __obj = js.Dynamic.literal(argCount = 2, f = f.asInstanceOf[js.Any], notation = "infix", precedence = 4, rightToLeft = 0, symbol = "/")
+    val __obj = js.Dynamic.literal(argCount = 1, f = f.asInstanceOf[js.Any], notation = "prefix", precedence = 3, rightToLeft = 0, symbol = "+")
     __obj.asInstanceOf[Precedence]
   }
   
   extension [Self <: Precedence](x: Self) {
     
-    inline def setArgCount(value: `2`): Self = StObject.set(x, "argCount", value.asInstanceOf[js.Any])
+    inline def setArgCount(value: `1`): Self = StObject.set(x, "argCount", value.asInstanceOf[js.Any])
     
     inline def setF(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify division */ js.Any
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify last */ Any
     ): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
     
-    inline def setNotation(value: infix): Self = StObject.set(x, "notation", value.asInstanceOf[js.Any])
+    inline def setNotation(value: prefix): Self = StObject.set(x, "notation", value.asInstanceOf[js.Any])
     
-    inline def setPrecedence(value: `4`): Self = StObject.set(x, "precedence", value.asInstanceOf[js.Any])
+    inline def setPrecedence(value: `3`): Self = StObject.set(x, "precedence", value.asInstanceOf[js.Any])
     
     inline def setRightToLeft(value: `0`): Self = StObject.set(x, "rightToLeft", value.asInstanceOf[js.Any])
     
-    inline def setSymbol(value: Slash): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: Plussign): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }
 }

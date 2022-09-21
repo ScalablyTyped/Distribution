@@ -23,12 +23,12 @@ object LinearInterpolatorProps {
     
     inline def setAroundUndefined: Self = StObject.set(x, "around", js.undefined)
     
-    inline def setAroundVarargs(value: Double*): Self = StObject.set(x, "around", js.Array(value :_*))
+    inline def setAroundVarargs(value: Double*): Self = StObject.set(x, "around", js.Array(value*))
     
     inline def setTransitionProps(value: js.Array[String]): Self = StObject.set(x, "transitionProps", value.asInstanceOf[js.Any])
     
     inline def setTransitionPropsUndefined: Self = StObject.set(x, "transitionProps", js.undefined)
     
-    inline def setTransitionPropsVarargs(value: String*): Self = StObject.set(x, "transitionProps", js.Array(value :_*))
+    inline def setTransitionPropsVarargs(value: String*): Self = StObject.set(x, "transitionProps", js.Array(value*))
   }
 }

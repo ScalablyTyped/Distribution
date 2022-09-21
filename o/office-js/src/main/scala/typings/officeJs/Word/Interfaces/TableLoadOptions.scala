@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a table in a Word document.
   *
+  * @remarks
   * [Api set: WordApi 1.3]
   */
 trait TableLoadOptions extends StObject {
@@ -19,201 +19,201 @@ trait TableLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets or sets the alignment of the table against the page column. The value can be 'Left', 'Centered', or 'Right'.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var alignment: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets the font. Use this to get and set font name, size, color, and other properties.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var font: js.UndefOr[FontLoadOptions] = js.undefined
   
   /**
-    *
     * Gets and sets the number of header rows.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var headerRowCount: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets and sets the horizontal alignment of every cell in the table. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var horizontalAlignment: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Indicates whether all of the table rows are uniform. Read-only.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var isUniform: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets the nesting level of the table. Top-level tables have level 1. Read-only.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var nestingLevel: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets the parent body of the table.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var parentBody: js.UndefOr[BodyLoadOptions] = js.undefined
   
   /**
-    *
     * Gets the content control that contains the table. Throws an error if there isn't a parent content control.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var parentContentControl: js.UndefOr[ContentControlLoadOptions] = js.undefined
   
   /**
-    *
     * Gets the content control that contains the table. Returns a null object if there isn't a parent content control.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var parentContentControlOrNullObject: js.UndefOr[ContentControlLoadOptions] = js.undefined
   
   /**
-    *
     * Gets the table that contains this table. Throws an error if it is not contained in a table.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var parentTable: js.UndefOr[TableLoadOptions] = js.undefined
   
   /**
-    *
     * Gets the table cell that contains this table. Throws an error if it is not contained in a table cell.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var parentTableCell: js.UndefOr[TableCellLoadOptions] = js.undefined
   
   /**
-    *
     * Gets the table cell that contains this table. Returns a null object if it is not contained in a table cell.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var parentTableCellOrNullObject: js.UndefOr[TableCellLoadOptions] = js.undefined
   
   /**
-    *
     * Gets the table that contains this table. Returns a null object if it is not contained in a table.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var parentTableOrNullObject: js.UndefOr[TableLoadOptions] = js.undefined
   
   /**
-    *
     * Gets the number of rows in the table. Read-only.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var rowCount: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets and sets the shading color. Color is specified in "#RRGGBB" format or by using the color name.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var shadingColor: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets or sets the style name for the table. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var style: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets and sets whether the table has banded columns.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var styleBandedColumns: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets and sets whether the table has banded rows.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var styleBandedRows: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets or sets the built-in style name for the table. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var styleBuiltIn: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets and sets whether the table has a first column with a special style.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var styleFirstColumn: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets and sets whether the table has a last column with a special style.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var styleLastColumn: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets and sets whether the table has a total (last) row with a special style.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var styleTotalRow: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets and sets the text values in the table, as a 2D Javascript array.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var values: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets and sets the vertical alignment of every cell in the table. The value can be 'Top', 'Center', or 'Bottom'.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var verticalAlignment: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets and sets the width of the table in points.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var width: js.UndefOr[Boolean] = js.undefined

@@ -9,17 +9,17 @@ trait Trust extends StObject {
   /**
     * The date and time that the trust relationship was created.
     */
-  var CreatedDateTime: js.UndefOr[typings.awsSdk.directoryserviceMod.CreatedDateTime] = js.undefined
+  var CreatedDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The Directory ID of the AWS directory involved in the trust relationship.
+    * The Directory ID of the Amazon Web Services directory involved in the trust relationship.
     */
   var DirectoryId: js.UndefOr[typings.awsSdk.directoryserviceMod.DirectoryId] = js.undefined
   
   /**
     * The date and time that the trust relationship was last updated.
     */
-  var LastUpdatedDateTime: js.UndefOr[typings.awsSdk.directoryserviceMod.LastUpdatedDateTime] = js.undefined
+  var LastUpdatedDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Fully Qualified Domain Name (FQDN) of the external domain involved in the trust relationship.
@@ -34,7 +34,7 @@ trait Trust extends StObject {
   /**
     * The date and time that the TrustState was last updated.
     */
-  var StateLastUpdatedDateTime: js.UndefOr[typings.awsSdk.directoryserviceMod.StateLastUpdatedDateTime] = js.undefined
+  var StateLastUpdatedDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The trust relationship direction.
@@ -70,7 +70,7 @@ object Trust {
   
   extension [Self <: Trust](x: Self) {
     
-    inline def setCreatedDateTime(value: CreatedDateTime): Self = StObject.set(x, "CreatedDateTime", value.asInstanceOf[js.Any])
+    inline def setCreatedDateTime(value: js.Date): Self = StObject.set(x, "CreatedDateTime", value.asInstanceOf[js.Any])
     
     inline def setCreatedDateTimeUndefined: Self = StObject.set(x, "CreatedDateTime", js.undefined)
     
@@ -78,7 +78,7 @@ object Trust {
     
     inline def setDirectoryIdUndefined: Self = StObject.set(x, "DirectoryId", js.undefined)
     
-    inline def setLastUpdatedDateTime(value: LastUpdatedDateTime): Self = StObject.set(x, "LastUpdatedDateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedDateTime(value: js.Date): Self = StObject.set(x, "LastUpdatedDateTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedDateTimeUndefined: Self = StObject.set(x, "LastUpdatedDateTime", js.undefined)
     
@@ -90,7 +90,7 @@ object Trust {
     
     inline def setSelectiveAuthUndefined: Self = StObject.set(x, "SelectiveAuth", js.undefined)
     
-    inline def setStateLastUpdatedDateTime(value: StateLastUpdatedDateTime): Self = StObject.set(x, "StateLastUpdatedDateTime", value.asInstanceOf[js.Any])
+    inline def setStateLastUpdatedDateTime(value: js.Date): Self = StObject.set(x, "StateLastUpdatedDateTime", value.asInstanceOf[js.Any])
     
     inline def setStateLastUpdatedDateTimeUndefined: Self = StObject.set(x, "StateLastUpdatedDateTime", js.undefined)
     

@@ -14,10 +14,10 @@ object baseMod {
   
   @JSImport("openfin/_v2/api/base", "Base")
   @js.native
-  class Base protected () extends StObject {
+  open class Base protected () extends StObject {
     def this(wire: default) = this()
     
-    /* private */ var _topic: js.Any = js.native
+    /* private */ var _topic: Any = js.native
     
     /* protected */ def isNodeEnvironment(): Boolean = js.native
     
@@ -33,14 +33,14 @@ object baseMod {
   
   @JSImport("openfin/_v2/api/base", "EmitterBase")
   @js.native
-  class EmitterBase[EventTypes /* <: BaseEventMap */] protected () extends Base {
+  open class EmitterBase[EventTypes /* <: BaseEventMap */] protected () extends Base {
     def this(wire: default, emitterAccessor: EmitterAccessor) = this()
     
     def addListener(
       eventType: String,
       listener: js.Function2[
           /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[string] */ /* payload */ js.Any, 
-          /* repeated */ js.Any, 
+          /* repeated */ Any, 
           Unit
         ]
     ): js.Promise[this.type] = js.native
@@ -48,7 +48,7 @@ object baseMod {
       eventType: String,
       listener: js.Function2[
           /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[string] */ /* payload */ js.Any, 
-          /* repeated */ js.Any, 
+          /* repeated */ Any, 
           Unit
         ],
       options: SubOptions
@@ -57,7 +57,7 @@ object baseMod {
       eventType: js.Symbol,
       listener: js.Function2[
           /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[symbol] */ /* payload */ js.Any, 
-          /* repeated */ js.Any, 
+          /* repeated */ Any, 
           Unit
         ]
     ): js.Promise[this.type] = js.native
@@ -65,7 +65,7 @@ object baseMod {
       eventType: js.Symbol,
       listener: js.Function2[
           /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[symbol] */ /* payload */ js.Any, 
-          /* repeated */ js.Any, 
+          /* repeated */ Any, 
           Unit
         ],
       options: SubOptions
@@ -74,7 +74,7 @@ object baseMod {
       eventType: E,
       listener: js.Function2[
           /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[E] */ /* payload */ js.Any, 
-          /* repeated */ js.Any, 
+          /* repeated */ Any, 
           Unit
         ]
     ): js.Promise[this.type] = js.native
@@ -82,13 +82,13 @@ object baseMod {
       eventType: E,
       listener: js.Function2[
           /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[E] */ /* payload */ js.Any, 
-          /* repeated */ js.Any, 
+          /* repeated */ Any, 
           Unit
         ],
       options: SubOptions
     ): js.Promise[this.type] = js.native
     
-    /* private */ var deleteEmitterIfNothingRegistered: js.Any = js.native
+    /* private */ var deleteEmitterIfNothingRegistered: Any = js.native
     
     /* protected */ def deregisterAllListeners(eventType: (Extract[/* keyof EventTypes */ String, String]) | String): js.Promise[EventEmitter | Unit] = js.native
     /* protected */ def deregisterAllListeners(eventType: js.Symbol): js.Promise[EventEmitter | Unit] = js.native
@@ -101,26 +101,26 @@ object baseMod {
     def emit(
       eventName: String,
       payload: /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[string] */ js.Any,
-      args: js.Any*
+      args: Any*
     ): Boolean = js.native
     def emit(
       eventName: js.Symbol,
       payload: /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[symbol] */ js.Any,
-      args: js.Any*
+      args: Any*
     ): Boolean = js.native
     def emit[E /* <: /* keyof EventTypes */ String */](
       eventName: E,
       payload: /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[E] */ js.Any,
-      args: js.Any*
+      args: Any*
     ): Boolean = js.native
     
-    /* private */ var emitterAccessor: js.Any = js.native
+    /* private */ var emitterAccessor: Any = js.native
     
     def eventNames(): js.Array[String | js.Symbol] = js.native
     
-    /* private */ var getEmitter: js.Any = js.native
+    /* private */ var getEmitter: Any = js.native
     
-    /* private */ var hasEmitter: js.Any = js.native
+    /* private */ var hasEmitter: Any = js.native
     
     /* protected */ var identity: Identity = js.native
     
@@ -134,7 +134,7 @@ object baseMod {
       eventType: String,
       listener: js.Function2[
           /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[string] */ /* payload */ js.Any, 
-          /* repeated */ js.Any, 
+          /* repeated */ Any, 
           Unit
         ]
     ): js.Promise[this.type] = js.native
@@ -142,7 +142,7 @@ object baseMod {
       eventType: String,
       listener: js.Function2[
           /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[string] */ /* payload */ js.Any, 
-          /* repeated */ js.Any, 
+          /* repeated */ Any, 
           Unit
         ],
       options: SubOptions
@@ -151,7 +151,7 @@ object baseMod {
       eventType: js.Symbol,
       listener: js.Function2[
           /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[symbol] */ /* payload */ js.Any, 
-          /* repeated */ js.Any, 
+          /* repeated */ Any, 
           Unit
         ]
     ): js.Promise[this.type] = js.native
@@ -159,7 +159,7 @@ object baseMod {
       eventType: js.Symbol,
       listener: js.Function2[
           /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[symbol] */ /* payload */ js.Any, 
-          /* repeated */ js.Any, 
+          /* repeated */ Any, 
           Unit
         ],
       options: SubOptions
@@ -168,7 +168,7 @@ object baseMod {
       eventType: E,
       listener: js.Function2[
           /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[E] */ /* payload */ js.Any, 
-          /* repeated */ js.Any, 
+          /* repeated */ Any, 
           Unit
         ]
     ): js.Promise[this.type] = js.native
@@ -176,7 +176,7 @@ object baseMod {
       eventType: E,
       listener: js.Function2[
           /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[E] */ /* payload */ js.Any, 
-          /* repeated */ js.Any, 
+          /* repeated */ Any, 
           Unit
         ],
       options: SubOptions
@@ -186,7 +186,7 @@ object baseMod {
       eventType: String,
       listener: js.Function2[
           /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[string] */ /* payload */ js.Any, 
-          /* repeated */ js.Any, 
+          /* repeated */ Any, 
           Unit
         ]
     ): js.Promise[this.type] = js.native
@@ -194,7 +194,7 @@ object baseMod {
       eventType: String,
       listener: js.Function2[
           /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[string] */ /* payload */ js.Any, 
-          /* repeated */ js.Any, 
+          /* repeated */ Any, 
           Unit
         ],
       options: SubOptions
@@ -203,7 +203,7 @@ object baseMod {
       eventType: js.Symbol,
       listener: js.Function2[
           /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[symbol] */ /* payload */ js.Any, 
-          /* repeated */ js.Any, 
+          /* repeated */ Any, 
           Unit
         ]
     ): js.Promise[this.type] = js.native
@@ -211,7 +211,7 @@ object baseMod {
       eventType: js.Symbol,
       listener: js.Function2[
           /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[symbol] */ /* payload */ js.Any, 
-          /* repeated */ js.Any, 
+          /* repeated */ Any, 
           Unit
         ],
       options: SubOptions
@@ -220,7 +220,7 @@ object baseMod {
       eventType: E,
       listener: js.Function2[
           /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[E] */ /* payload */ js.Any, 
-          /* repeated */ js.Any, 
+          /* repeated */ Any, 
           Unit
         ]
     ): js.Promise[this.type] = js.native
@@ -228,7 +228,7 @@ object baseMod {
       eventType: E,
       listener: js.Function2[
           /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[E] */ /* payload */ js.Any, 
-          /* repeated */ js.Any, 
+          /* repeated */ Any, 
           Unit
         ],
       options: SubOptions
@@ -238,7 +238,7 @@ object baseMod {
       eventType: String,
       listener: js.Function2[
           /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[string] */ /* payload */ js.Any, 
-          /* repeated */ js.Any, 
+          /* repeated */ Any, 
           Unit
         ]
     ): js.Promise[this.type] = js.native
@@ -246,7 +246,7 @@ object baseMod {
       eventType: String,
       listener: js.Function2[
           /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[string] */ /* payload */ js.Any, 
-          /* repeated */ js.Any, 
+          /* repeated */ Any, 
           Unit
         ],
       options: SubOptions
@@ -255,7 +255,7 @@ object baseMod {
       eventType: js.Symbol,
       listener: js.Function2[
           /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[symbol] */ /* payload */ js.Any, 
-          /* repeated */ js.Any, 
+          /* repeated */ Any, 
           Unit
         ]
     ): js.Promise[this.type] = js.native
@@ -263,7 +263,7 @@ object baseMod {
       eventType: js.Symbol,
       listener: js.Function2[
           /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[symbol] */ /* payload */ js.Any, 
-          /* repeated */ js.Any, 
+          /* repeated */ Any, 
           Unit
         ],
       options: SubOptions
@@ -272,7 +272,7 @@ object baseMod {
       eventType: E,
       listener: js.Function2[
           /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[E] */ /* payload */ js.Any, 
-          /* repeated */ js.Any, 
+          /* repeated */ Any, 
           Unit
         ]
     ): js.Promise[this.type] = js.native
@@ -280,7 +280,7 @@ object baseMod {
       eventType: E,
       listener: js.Function2[
           /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[E] */ /* payload */ js.Any, 
-          /* repeated */ js.Any, 
+          /* repeated */ Any, 
           Unit
         ],
       options: SubOptions
@@ -290,7 +290,7 @@ object baseMod {
       eventType: String,
       listener: js.Function2[
           /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[string] */ /* payload */ js.Any, 
-          /* repeated */ js.Any, 
+          /* repeated */ Any, 
           Unit
         ]
     ): js.Promise[this.type] = js.native
@@ -298,7 +298,7 @@ object baseMod {
       eventType: String,
       listener: js.Function2[
           /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[string] */ /* payload */ js.Any, 
-          /* repeated */ js.Any, 
+          /* repeated */ Any, 
           Unit
         ],
       options: SubOptions
@@ -307,7 +307,7 @@ object baseMod {
       eventType: js.Symbol,
       listener: js.Function2[
           /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[symbol] */ /* payload */ js.Any, 
-          /* repeated */ js.Any, 
+          /* repeated */ Any, 
           Unit
         ]
     ): js.Promise[this.type] = js.native
@@ -315,7 +315,7 @@ object baseMod {
       eventType: js.Symbol,
       listener: js.Function2[
           /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[symbol] */ /* payload */ js.Any, 
-          /* repeated */ js.Any, 
+          /* repeated */ Any, 
           Unit
         ],
       options: SubOptions
@@ -324,7 +324,7 @@ object baseMod {
       eventType: E,
       listener: js.Function2[
           /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[E] */ /* payload */ js.Any, 
-          /* repeated */ js.Any, 
+          /* repeated */ Any, 
           Unit
         ]
     ): js.Promise[this.type] = js.native
@@ -332,7 +332,7 @@ object baseMod {
       eventType: E,
       listener: js.Function2[
           /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[E] */ /* payload */ js.Any, 
-          /* repeated */ js.Any, 
+          /* repeated */ Any, 
           Unit
         ],
       options: SubOptions
@@ -351,7 +351,7 @@ object baseMod {
       eventType: String,
       listener: js.Function2[
           /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[string] */ /* payload */ js.Any, 
-          /* repeated */ js.Any, 
+          /* repeated */ Any, 
           Unit
         ]
     ): js.Promise[this.type] = js.native
@@ -359,7 +359,7 @@ object baseMod {
       eventType: String,
       listener: js.Function2[
           /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[string] */ /* payload */ js.Any, 
-          /* repeated */ js.Any, 
+          /* repeated */ Any, 
           Unit
         ],
       options: SubOptions
@@ -368,7 +368,7 @@ object baseMod {
       eventType: js.Symbol,
       listener: js.Function2[
           /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[symbol] */ /* payload */ js.Any, 
-          /* repeated */ js.Any, 
+          /* repeated */ Any, 
           Unit
         ]
     ): js.Promise[this.type] = js.native
@@ -376,7 +376,7 @@ object baseMod {
       eventType: js.Symbol,
       listener: js.Function2[
           /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[symbol] */ /* payload */ js.Any, 
-          /* repeated */ js.Any, 
+          /* repeated */ Any, 
           Unit
         ],
       options: SubOptions
@@ -385,7 +385,7 @@ object baseMod {
       eventType: E,
       listener: js.Function2[
           /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[E] */ /* payload */ js.Any, 
-          /* repeated */ js.Any, 
+          /* repeated */ Any, 
           Unit
         ]
     ): js.Promise[this.type] = js.native
@@ -393,7 +393,7 @@ object baseMod {
       eventType: E,
       listener: js.Function2[
           /* import warning: importer.ImportType#apply Failed type conversion: EventTypes[E] */ /* payload */ js.Any, 
-          /* repeated */ js.Any, 
+          /* repeated */ Any, 
           Unit
         ],
       options: SubOptions
@@ -402,7 +402,7 @@ object baseMod {
   
   @JSImport("openfin/_v2/api/base", "Reply")
   @js.native
-  class Reply[TOPIC /* <: String */, TYPE /* <: String | Unit */] ()
+  open class Reply[TOPIC /* <: String */, TYPE /* <: String | Unit */] ()
     extends StObject
        with Identity {
     

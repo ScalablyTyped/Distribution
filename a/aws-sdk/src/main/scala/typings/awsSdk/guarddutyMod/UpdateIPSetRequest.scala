@@ -22,7 +22,7 @@ trait UpdateIPSetRequest extends StObject {
   var IpSetId: String
   
   /**
-    * The updated URI of the file that contains the IPSet. For example: https://s3.us-west-2.amazonaws.com/my-bucket/my-object-key.
+    * The updated URI of the file that contains the IPSet. 
     */
   var Location: js.UndefOr[typings.awsSdk.guarddutyMod.Location] = js.undefined
   

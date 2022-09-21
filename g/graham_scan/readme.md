@@ -10,10 +10,10 @@ Implementation of the Graham Scan algorithm to calculate a convex hull from a gi
 | ------------------ | :-------------: |
 | Full name          | graham_scan |
 | Keywords           | convex, hull |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 150599 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6648.333333333333 |
+| # stars            | 107.0 |
 
 ## Links
 - [Homepage](http://brian3kb.github.io/graham_scan_js)

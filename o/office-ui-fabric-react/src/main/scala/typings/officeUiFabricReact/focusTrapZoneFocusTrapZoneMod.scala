@@ -11,59 +11,59 @@ object focusTrapZoneFocusTrapZoneMod {
   
   @JSImport("office-ui-fabric-react/lib/components/FocusTrapZone/FocusTrapZone", "FocusTrapZone")
   @js.native
-  class FocusTrapZone protected ()
-    extends Component[IFocusTrapZoneProps, js.Object, js.Any]
+  open class FocusTrapZone protected ()
+    extends Component[IFocusTrapZoneProps, js.Object, Any]
        with IFocusTrapZone {
     def this(props: IFocusTrapZoneProps) = this()
     
     @JSName("UNSAFE_componentWillReceiveProps")
     def UNSAFE_componentWillReceiveProps_MFocusTrapZone(nextProps: IFocusTrapZoneProps): Unit = js.native
     
-    /* private */ var _bringFocusIntoZone: js.Any = js.native
+    /* private */ var _bringFocusIntoZone: Any = js.native
     
-    /* private */ var _disposeClickHandler: js.Any = js.native
+    /* private */ var _disposeClickHandler: Any = js.native
     
-    /* private */ var _disposeFocusHandler: js.Any = js.native
+    /* private */ var _disposeFocusHandler: Any = js.native
     
-    /* private */ var _firstBumper: js.Any = js.native
+    /* private */ var _firstBumper: Any = js.native
     
-    /* private */ var _focusAsync: js.Any = js.native
+    /* private */ var _focusAsync: Any = js.native
     
-    /* private */ var _forceClickInTrap: js.Any = js.native
+    /* private */ var _forceClickInTrap: Any = js.native
     
-    /* private */ var _forceFocusInTrap: js.Any = js.native
+    /* private */ var _forceFocusInTrap: Any = js.native
     
-    /* private */ var _getDocument: js.Any = js.native
+    /* private */ var _getDocument: Any = js.native
     
-    /* private */ var _hasFocus: js.Any = js.native
+    /* private */ var _hasFocus: Any = js.native
     
-    /* private */ var _isBumper: js.Any = js.native
+    /* private */ var _isBumper: Any = js.native
     
-    /* private */ var _lastBumper: js.Any = js.native
+    /* private */ var _lastBumper: Any = js.native
     
-    /* private */ var _onBumperFocus: js.Any = js.native
+    /* private */ var _onBumperFocus: Any = js.native
     
-    /* private */ var _onFirstBumperFocus: js.Any = js.native
+    /* private */ var _onFirstBumperFocus: Any = js.native
     
-    /* private */ var _onFocusCapture: js.Any = js.native
+    /* private */ var _onFocusCapture: Any = js.native
     
-    /* private */ var _onLastBumperFocus: js.Any = js.native
+    /* private */ var _onLastBumperFocus: Any = js.native
     
-    /* private */ var _onRootBlur: js.Any = js.native
+    /* private */ var _onRootBlur: Any = js.native
     
-    /* private */ var _onRootFocus: js.Any = js.native
+    /* private */ var _onRootFocus: Any = js.native
     
-    /* private */ var _previouslyFocusedElementInTrapZone: js.Any = js.native
+    /* private */ var _previouslyFocusedElementInTrapZone: Any = js.native
     
-    /* private */ var _previouslyFocusedElementOutsideTrapZone: js.Any = js.native
+    /* private */ var _previouslyFocusedElementOutsideTrapZone: Any = js.native
     
-    /* private */ var _returnFocusToInitiator: js.Any = js.native
+    /* private */ var _returnFocusToInitiator: Any = js.native
     
-    /* private */ var _root: js.Any = js.native
+    /* private */ var _root: Any = js.native
     
-    /* private */ var _unmodalize: js.Any = js.native
+    /* private */ var _unmodalize: Any = js.native
     
-    /* private */ var _updateEventHandlers: js.Any = js.native
+    /* private */ var _updateEventHandlers: Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MFocusTrapZone(): Unit = js.native
@@ -90,7 +90,7 @@ object focusTrapZoneFocusTrapZoneMod {
     
     @JSImport("office-ui-fabric-react/lib/components/FocusTrapZone/FocusTrapZone", "FocusTrapZone._focusStack")
     @js.native
-    def _focusStack: js.Any = js.native
-    inline def _focusStack_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_focusStack")(x.asInstanceOf[js.Any])
+    def _focusStack: Any = js.native
+    inline def _focusStack_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_focusStack")(x.asInstanceOf[js.Any])
   }
 }

@@ -10,10 +10,10 @@ Websocket Client & Server Library implementing the WebSocket protocol as specifi
 | ------------------ | :-------------: |
 | Full name          | websocket |
 | Keywords           | websocket, websockets, socket, networking, comet, push, RFC-6455, realtime, server, client |
-| # releases         | 6 |
-| # dependents       | 1017 |
-| # downloads        | 29502883 |
-| # stars            | 73 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 3906491.3333333335 |
+| # stars            | 3529.0 |
 
 ## Links
 - [Homepage](https://github.com/theturtle32/WebSocket-Node)

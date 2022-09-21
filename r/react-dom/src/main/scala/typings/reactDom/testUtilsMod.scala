@@ -9,13 +9,13 @@ import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.DOMAttributes
 import typings.react.mod.DOMElement
+import typings.react.mod.FC
+import typings.react.mod.FunctionComponentElement
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactInstance
-import typings.react.mod.SFC
-import typings.react.mod.SFCElement
 import typings.reactDom.anon.TypeofReactTestUtils
+import typings.reactDom.anon.UNDEFINEDVOIDONLY
 import typings.std.DataTransfer
-import typings.std.Date
 import typings.std.Element
 import typings.std.Event
 import typings.std.EventTarget
@@ -306,47 +306,47 @@ object testUtilsMod {
     val wheel: EventSimulator = js.native
   }
   
-  inline def act(callback: js.Function0[js.UndefOr[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("act")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def act(callback: js.Function0[VoidOrUndefinedOnly]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("act")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def act_Promise(callback: js.Function0[js.Promise[js.UndefOr[Unit]]]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("act")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def act_Promise(callback: js.Function0[js.Promise[Unit]]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("act")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   inline def createRenderer(): ShallowRenderer = ^.asInstanceOf[js.Dynamic].applyDynamic("createRenderer")().asInstanceOf[ShallowRenderer]
   
-  inline def findAllInRenderedTree(root: Component[js.Any, js.Object, js.Any], fn: js.Function1[/* i */ ReactInstance, Boolean]): js.Array[ReactInstance] = (^.asInstanceOf[js.Dynamic].applyDynamic("findAllInRenderedTree")(root.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Array[ReactInstance]]
+  inline def findAllInRenderedTree(root: Component[Any, js.Object, Any], fn: js.Function1[/* i */ ReactInstance, Boolean]): js.Array[ReactInstance] = (^.asInstanceOf[js.Dynamic].applyDynamic("findAllInRenderedTree")(root.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Array[ReactInstance]]
   
-  inline def findRenderedComponentWithType[T /* <: Component[js.Any, js.Object, js.Any] */, C /* <: ComponentClass[js.Any, ComponentState] */](root: Component[js.Any, js.Object, js.Any], `type`: ClassType[js.Any, T, C]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("findRenderedComponentWithType")(root.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def findRenderedComponentWithType[T /* <: Component[Any, js.Object, Any] */, C /* <: ComponentClass[Any, ComponentState] */](root: Component[Any, js.Object, Any], `type`: ClassType[Any, T, C]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("findRenderedComponentWithType")(root.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  inline def findRenderedDOMComponentWithClass(root: Component[js.Any, js.Object, js.Any], className: String): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("findRenderedDOMComponentWithClass")(root.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def findRenderedDOMComponentWithClass(root: Component[Any, js.Object, Any], className: String): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("findRenderedDOMComponentWithClass")(root.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Element]
   
-  inline def findRenderedDOMComponentWithTag(root: Component[js.Any, js.Object, js.Any], tagName: String): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("findRenderedDOMComponentWithTag")(root.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def findRenderedDOMComponentWithTag(root: Component[Any, js.Object, Any], tagName: String): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("findRenderedDOMComponentWithTag")(root.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[Element]
   
   inline def isCompositeComponent(instance: ReactInstance): /* is react.react.Component<any, {}, any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCompositeComponent")(instance.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.Component<any, {}, any> */ Boolean]
   
-  inline def isCompositeComponentWithType[T /* <: Component[js.Any, js.Object, js.Any] */, C /* <: ComponentClass[js.Any, ComponentState] */](instance: ReactInstance, `type`: ClassType[js.Any, T, C]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isCompositeComponentWithType")(instance.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isCompositeComponentWithType[T /* <: Component[Any, js.Object, Any] */, C /* <: ComponentClass[Any, ComponentState] */](instance: ReactInstance, `type`: ClassType[Any, T, C]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isCompositeComponentWithType")(instance.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def isDOMComponent(instance: ReactInstance): /* is std.Element */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDOMComponent")(instance.asInstanceOf[js.Any]).asInstanceOf[/* is std.Element */ Boolean]
   
-  inline def isElement(element: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isElement")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isElement(element: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isElement")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def isElementOfType[T /* <: HTMLElement */](element: ReactElement, `type`: String): /* is react.react.ReactHTMLElement<T> */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isElementOfType")(element.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[/* is react.react.ReactHTMLElement<T> */ Boolean]
-  inline def isElementOfType[P](element: ReactElement, `type`: SFC[P]): /* is react.react.SFCElement<P> */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isElementOfType")(element.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[/* is react.react.SFCElement<P> */ Boolean]
-  inline def isElementOfType[P, T /* <: Component[P, js.Object, js.Any] */, C /* <: ComponentClass[P, ComponentState] */](element: ReactElement, `type`: ClassType[P, T, C]): /* is react.react.CElement<P, T> */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isElementOfType")(element.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[/* is react.react.CElement<P, T> */ Boolean]
+  inline def isElementOfType[P](element: ReactElement, `type`: FC[P]): /* is react.react.FunctionComponentElement<P> */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isElementOfType")(element.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[/* is react.react.FunctionComponentElement<P> */ Boolean]
+  inline def isElementOfType[P, T /* <: Component[P, js.Object, Any] */, C /* <: ComponentClass[P, ComponentState] */](element: ReactElement, `type`: ClassType[P, T, C]): /* is react.react.CElement<P, T> */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isElementOfType")(element.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[/* is react.react.CElement<P, T> */ Boolean]
   
   inline def isElementOfType_P_DOMAttributesObjectT_Element[P /* <: DOMAttributes[js.Object] */, T /* <: Element */](element: ReactElement, `type`: String): /* is react.react.DOMElement<P, T> */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isElementOfType")(element.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[/* is react.react.DOMElement<P, T> */ Boolean]
   
   inline def mockComponent(mocked: MockedComponentClass): TypeofReactTestUtils = ^.asInstanceOf[js.Dynamic].applyDynamic("mockComponent")(mocked.asInstanceOf[js.Any]).asInstanceOf[TypeofReactTestUtils]
   inline def mockComponent(mocked: MockedComponentClass, mockTagName: String): TypeofReactTestUtils = (^.asInstanceOf[js.Dynamic].applyDynamic("mockComponent")(mocked.asInstanceOf[js.Any], mockTagName.asInstanceOf[js.Any])).asInstanceOf[TypeofReactTestUtils]
   
-  inline def renderIntoDocument(element: SFCElement[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("renderIntoDocument")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def renderIntoDocument[T /* <: Element */](element: DOMElement[js.Any, T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("renderIntoDocument")(element.asInstanceOf[js.Any]).asInstanceOf[T]
-  inline def renderIntoDocument[P](element: ReactElement): (Component[P, js.Object, js.Any]) | Element | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("renderIntoDocument")(element.asInstanceOf[js.Any]).asInstanceOf[(Component[P, js.Object, js.Any]) | Element | Unit]
-  inline def renderIntoDocument[P, T /* <: Component[P, js.Object, js.Any] */](element: CElement[P, T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("renderIntoDocument")(element.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def renderIntoDocument(element: FunctionComponentElement[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("renderIntoDocument")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def renderIntoDocument[T /* <: Element */](element: DOMElement[Any, T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("renderIntoDocument")(element.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def renderIntoDocument[P](element: ReactElement): (Component[P, js.Object, Any]) | Element | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("renderIntoDocument")(element.asInstanceOf[js.Any]).asInstanceOf[(Component[P, js.Object, Any]) | Element | Unit]
+  inline def renderIntoDocument[P, T /* <: Component[P, js.Object, Any] */](element: CElement[P, T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("renderIntoDocument")(element.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  inline def scryRenderedComponentsWithType[T /* <: Component[js.Any, js.Object, js.Any] */, C /* <: ComponentClass[js.Any, ComponentState] */](root: Component[js.Any, js.Object, js.Any], `type`: ClassType[js.Any, T, C]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("scryRenderedComponentsWithType")(root.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def scryRenderedComponentsWithType[T /* <: Component[Any, js.Object, Any] */, C /* <: ComponentClass[Any, ComponentState] */](root: Component[Any, js.Object, Any], `type`: ClassType[Any, T, C]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("scryRenderedComponentsWithType")(root.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  inline def scryRenderedDOMComponentsWithClass(root: Component[js.Any, js.Object, js.Any], className: String): js.Array[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("scryRenderedDOMComponentsWithClass")(root.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[js.Array[Element]]
+  inline def scryRenderedDOMComponentsWithClass(root: Component[Any, js.Object, Any], className: String): js.Array[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("scryRenderedDOMComponentsWithClass")(root.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[js.Array[Element]]
   
-  inline def scryRenderedDOMComponentsWithTag(root: Component[js.Any, js.Object, js.Any], tagName: String): js.Array[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("scryRenderedDOMComponentsWithTag")(root.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[js.Array[Element]]
+  inline def scryRenderedDOMComponentsWithTag(root: Component[Any, js.Object, Any], tagName: String): js.Array[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("scryRenderedDOMComponentsWithTag")(root.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[js.Array[Element]]
   
   trait DebugPromiseLike extends StObject {
     
@@ -375,7 +375,7 @@ object testUtilsMod {
   }
   
   type EventSimulator = js.Function2[
-    /* element */ Element | (Component[js.Any, js.Object, js.Any]), 
+    /* element */ Element | (Component[Any, js.Object, Any]), 
     /* eventData */ js.UndefOr[SyntheticEventData], 
     Unit
   ]
@@ -383,7 +383,7 @@ object testUtilsMod {
   @js.native
   trait MockedComponentClass
     extends StObject
-       with Instantiable1[/* props */ js.Any, js.Any]
+       with Instantiable1[/* props */ Any, Any]
   
   trait OptionalEventProperties extends StObject {
     
@@ -407,7 +407,7 @@ object testUtilsMod {
     
     var target: js.UndefOr[EventTarget] = js.undefined
     
-    var timeStamp: js.UndefOr[Date] = js.undefined
+    var timeStamp: js.UndefOr[js.Date] = js.undefined
     
     var `type`: js.UndefOr[String] = js.undefined
   }
@@ -460,7 +460,7 @@ object testUtilsMod {
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      inline def setTimeStamp(value: Date): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
+      inline def setTimeStamp(value: js.Date): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
       
       inline def setTimeStampUndefined: Self = StObject.set(x, "timeStamp", js.undefined)
       
@@ -482,7 +482,7 @@ object testUtilsMod {
       * Similar to `ReactDOM.render` but it doesn't require DOM and only renders a single level deep.
       */
     def render(element: ReactElement): Unit = js.native
-    def render(element: ReactElement, context: js.Any): Unit = js.native
+    def render(element: ReactElement, context: Any): Unit = js.native
     
     def unmount(): Unit = js.native
   }
@@ -687,4 +687,7 @@ object testUtilsMod {
       inline def setWhichUndefined: Self = StObject.set(x, "which", js.undefined)
     }
   }
+  
+  // tslint:disable-next-line: void-return
+  type VoidOrUndefinedOnly = Unit | UNDEFINEDVOIDONLY
 }

@@ -31,11 +31,11 @@ object mod {
   inline def adjustHue(degree: Double): js.Function1[/* color */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("adjustHue")(degree.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* color */ String, String]]
   inline def adjustHue(degree: Double, color: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("adjustHue")(degree.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def animation(args: ((js.Array[String | Double]) | String | Double)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("animation")(args.asInstanceOf[js.Any]).asInstanceOf[Styles]
+  inline def animation(args: ((js.Array[String | Double]) | String | Double)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("animation")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Styles]
   
-  inline def backgroundImages(properties: String*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("backgroundImages")(properties.asInstanceOf[js.Any]).asInstanceOf[Styles]
+  inline def backgroundImages(properties: String*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("backgroundImages")(properties.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Styles]
   
-  inline def backgrounds(properties: String*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("backgrounds")(properties.asInstanceOf[js.Any]).asInstanceOf[Styles]
+  inline def backgrounds(properties: String*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("backgrounds")(properties.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Styles]
   
   inline def between(fromSize: String, toSize: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(fromSize.asInstanceOf[js.Any], toSize.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def between(fromSize: String, toSize: String, minScreen: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(fromSize.asInstanceOf[js.Any], toSize.asInstanceOf[js.Any], minScreen.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -54,20 +54,20 @@ object mod {
   inline def between(fromSize: Double, toSize: Double, minScreen: String, maxScreen: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(fromSize.asInstanceOf[js.Any], toSize.asInstanceOf[js.Any], minScreen.asInstanceOf[js.Any], maxScreen.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def between(fromSize: Double, toSize: Double, minScreen: Unit, maxScreen: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(fromSize.asInstanceOf[js.Any], toSize.asInstanceOf[js.Any], minScreen.asInstanceOf[js.Any], maxScreen.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def border(sideKeyword: String, values: (String | Double)*): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("border")(sideKeyword.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Styles]
-  inline def border(sideKeyword: Double, values: (String | Double)*): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("border")(sideKeyword.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Styles]
-  inline def border(sideKeyword: SideKeyword, values: (String | Double)*): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("border")(sideKeyword.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  inline def border(sideKeyword: String, values: (String | Double)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("border")(List(sideKeyword.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Styles]
+  inline def border(sideKeyword: Double, values: (String | Double)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("border")(List(sideKeyword.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Styles]
+  inline def border(sideKeyword: SideKeyword, values: (String | Double)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("border")(List(sideKeyword.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Styles]
   
-  inline def borderColor(values: (Null | Unit | String)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("borderColor")(values.asInstanceOf[js.Any]).asInstanceOf[Styles]
+  inline def borderColor(values: (Null | Unit | String)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("borderColor")(values.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Styles]
   
   inline def borderRadius(side: String, radius: String): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("borderRadius")(side.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[Styles]
   inline def borderRadius(side: String, radius: Double): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("borderRadius")(side.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[Styles]
   
-  inline def borderStyle(values: (Null | Unit | String)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("borderStyle")(values.asInstanceOf[js.Any]).asInstanceOf[Styles]
+  inline def borderStyle(values: (Null | Unit | String)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("borderStyle")(values.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Styles]
   
-  inline def borderWidth(values: (Null | Unit | String | Double)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("borderWidth")(values.asInstanceOf[js.Any]).asInstanceOf[Styles]
+  inline def borderWidth(values: (Null | Unit | String | Double)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("borderWidth")(values.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Styles]
   
-  inline def buttons(states: InteractionState*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buttons")(states.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def buttons(states: InteractionState*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buttons")(states.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
   
   inline def clearFix(): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("clearFix")().asInstanceOf[Styles]
   inline def clearFix(parent: String): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("clearFix")(parent.asInstanceOf[js.Any]).asInstanceOf[Styles]
@@ -79,7 +79,8 @@ object mod {
   inline def cover(offset: Double): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("cover")(offset.asInstanceOf[js.Any]).asInstanceOf[Styles]
   
   inline def cssVar(cssVariable: String): String | Double = ^.asInstanceOf[js.Dynamic].applyDynamic("cssVar")(cssVariable.asInstanceOf[js.Any]).asInstanceOf[String | Double]
-  inline def cssVar(cssVariable: String, passThrough: Boolean): String | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("cssVar")(cssVariable.asInstanceOf[js.Any], passThrough.asInstanceOf[js.Any])).asInstanceOf[String | Double]
+  inline def cssVar(cssVariable: String, defaultValue: String): String | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("cssVar")(cssVariable.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[String | Double]
+  inline def cssVar(cssVariable: String, defaultValue: Double): String | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("cssVar")(cssVariable.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[String | Double]
   
   inline def darken(amount: String): js.Function1[/* color */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("darken")(amount.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* color */ String, String]]
   inline def darken(amount: String, color: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("darken")(amount.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -91,11 +92,22 @@ object mod {
   inline def desaturate(amount: Double): js.Function1[/* color */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("desaturate")(amount.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* color */ String, String]]
   inline def desaturate(amount: Double, color: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("desaturate")(amount.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def directionalProperty(property: String, values: (Null | Unit | String | Double)*): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("directionalProperty")(property.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  inline def directionalProperty(property: String, values: (Null | Unit | String | Double)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("directionalProperty")(List(property.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Styles]
+  
+  inline def easeIn(functionName: String): TimingFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("easeIn")(functionName.asInstanceOf[js.Any]).asInstanceOf[TimingFunction]
+  
+  inline def easeInOut(functionName: String): TimingFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("easeInOut")(functionName.asInstanceOf[js.Any]).asInstanceOf[TimingFunction]
+  
+  inline def easeOut(functionName: String): TimingFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("easeOut")(functionName.asInstanceOf[js.Any]).asInstanceOf[TimingFunction]
   
   inline def ellipsis(): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("ellipsis")().asInstanceOf[Styles]
   inline def ellipsis(width: String): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("ellipsis")(width.asInstanceOf[js.Any]).asInstanceOf[Styles]
+  inline def ellipsis(width: String, lines: Double): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("ellipsis")(width.asInstanceOf[js.Any], lines.asInstanceOf[js.Any])).asInstanceOf[Styles]
   inline def ellipsis(width: Double): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("ellipsis")(width.asInstanceOf[js.Any]).asInstanceOf[Styles]
+  inline def ellipsis(width: Double, lines: Double): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("ellipsis")(width.asInstanceOf[js.Any], lines.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  inline def ellipsis(width: Null, lines: Double): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("ellipsis")(width.asInstanceOf[js.Any], lines.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  inline def ellipsis(width: Unit): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("ellipsis")(width.asInstanceOf[js.Any]).asInstanceOf[Styles]
+  inline def ellipsis(width: Unit, lines: Double): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("ellipsis")(width.asInstanceOf[js.Any], lines.asInstanceOf[js.Any])).asInstanceOf[Styles]
   
   inline def em(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("em")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def em(value: String, base: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("em")(value.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -121,8 +133,8 @@ object mod {
   
   inline def getLuminance(color: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getLuminance")(color.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def getValueAndUnit(value: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getValueAndUnit")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def getValueAndUnit(value: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getValueAndUnit")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getValueAndUnit(value: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getValueAndUnit")(value.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def getValueAndUnit(value: Double): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getValueAndUnit")(value.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def grayscale(color: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("grayscale")(color.asInstanceOf[js.Any]).asInstanceOf[String]
   
@@ -163,6 +175,10 @@ object mod {
   inline def hsla(value: HslaColor, saturation: Unit, lightness: Double, alpha: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hsla")(value.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def hsla(value: HslaColor, saturation: Unit, lightness: Unit, alpha: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hsla")(value.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  inline def important(styleBlock: Styles): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("important")(styleBlock.asInstanceOf[js.Any]).asInstanceOf[Styles]
+  inline def important(styleBlock: Styles, rules: String): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("important")(styleBlock.asInstanceOf[js.Any], rules.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  inline def important(styleBlock: Styles, rules: js.Array[String]): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("important")(styleBlock.asInstanceOf[js.Any], rules.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  
   inline def invert(color: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("invert")(color.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def lighten(amount: String): js.Function1[/* color */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("lighten")(amount.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* color */ String, String]]
@@ -172,7 +188,7 @@ object mod {
   
   inline def linearGradient(hasColorStopsFallbackToDirection: LinearGradientConfiguration): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("linearGradient")(hasColorStopsFallbackToDirection.asInstanceOf[js.Any]).asInstanceOf[Styles]
   
-  inline def margin(values: (Null | Unit | String | Double)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("margin")(values.asInstanceOf[js.Any]).asInstanceOf[Styles]
+  inline def margin(values: (Null | Unit | String | Double)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("margin")(values.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Styles]
   
   inline def math(formula: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("math")(formula.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def math(formula: String, additionalSymbols: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("math")(formula.asInstanceOf[js.Any], additionalSymbols.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -200,26 +216,26 @@ object mod {
   inline def opacify(amount: Double): js.Function1[/* color */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("opacify")(amount.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* color */ String, String]]
   inline def opacify(amount: Double, color: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("opacify")(amount.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def padding(values: (Null | Unit | String | Double)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("padding")(values.asInstanceOf[js.Any]).asInstanceOf[Styles]
+  inline def padding(values: (Null | Unit | String | Double)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("padding")(values.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Styles]
   
   inline def parseToHsl(color: String): HslColor | HslaColor = ^.asInstanceOf[js.Dynamic].applyDynamic("parseToHsl")(color.asInstanceOf[js.Any]).asInstanceOf[HslColor | HslaColor]
   
   inline def parseToRgb(color: String): RgbColor | RgbaColor = ^.asInstanceOf[js.Dynamic].applyDynamic("parseToRgb")(color.asInstanceOf[js.Any]).asInstanceOf[RgbColor | RgbaColor]
   
-  inline def position(firstValue: String, values: (Null | Unit | String | Double)*): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("position")(firstValue.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Styles]
-  inline def position(firstValue: Double, values: (Null | Unit | String | Double)*): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("position")(firstValue.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Styles]
-  inline def position(firstValue: Null, values: (Null | Unit | String | Double)*): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("position")(firstValue.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Styles]
+  inline def position(firstValue: String, values: (Null | Unit | String | Double)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("position")(List(firstValue.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Styles]
+  inline def position(firstValue: Double, values: (Null | Unit | String | Double)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("position")(List(firstValue.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Styles]
+  inline def position(firstValue: Null, values: (Null | Unit | String | Double)*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("position")(List(firstValue.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Styles]
   
   inline def radialGradient(hasColorStopsExtentFallbackPositionShape: RadialGradientConfiguration): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("radialGradient")(hasColorStopsExtentFallbackPositionShape.asInstanceOf[js.Any]).asInstanceOf[Styles]
   
   inline def readableColor(color: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("readableColor")(color.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def readableColor(color: String, lightReturnColor: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readableColor")(color.asInstanceOf[js.Any], lightReturnColor.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def readableColor(color: String, lightReturnColor: String, darkReturnColor: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readableColor")(color.asInstanceOf[js.Any], lightReturnColor.asInstanceOf[js.Any], darkReturnColor.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def readableColor(color: String, lightReturnColor: String, darkReturnColor: String, strict: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readableColor")(color.asInstanceOf[js.Any], lightReturnColor.asInstanceOf[js.Any], darkReturnColor.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def readableColor(color: String, lightReturnColor: String, darkReturnColor: Unit, strict: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readableColor")(color.asInstanceOf[js.Any], lightReturnColor.asInstanceOf[js.Any], darkReturnColor.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def readableColor(color: String, lightReturnColor: Unit, darkReturnColor: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readableColor")(color.asInstanceOf[js.Any], lightReturnColor.asInstanceOf[js.Any], darkReturnColor.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def readableColor(color: String, lightReturnColor: Unit, darkReturnColor: String, strict: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readableColor")(color.asInstanceOf[js.Any], lightReturnColor.asInstanceOf[js.Any], darkReturnColor.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def readableColor(color: String, lightReturnColor: Unit, darkReturnColor: Unit, strict: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readableColor")(color.asInstanceOf[js.Any], lightReturnColor.asInstanceOf[js.Any], darkReturnColor.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def readableColor(color: String, returnIfLightColor: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readableColor")(color.asInstanceOf[js.Any], returnIfLightColor.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def readableColor(color: String, returnIfLightColor: String, returnIfDarkColor: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readableColor")(color.asInstanceOf[js.Any], returnIfLightColor.asInstanceOf[js.Any], returnIfDarkColor.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def readableColor(color: String, returnIfLightColor: String, returnIfDarkColor: String, strict: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readableColor")(color.asInstanceOf[js.Any], returnIfLightColor.asInstanceOf[js.Any], returnIfDarkColor.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def readableColor(color: String, returnIfLightColor: String, returnIfDarkColor: Unit, strict: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readableColor")(color.asInstanceOf[js.Any], returnIfLightColor.asInstanceOf[js.Any], returnIfDarkColor.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def readableColor(color: String, returnIfLightColor: Unit, returnIfDarkColor: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readableColor")(color.asInstanceOf[js.Any], returnIfLightColor.asInstanceOf[js.Any], returnIfDarkColor.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def readableColor(color: String, returnIfLightColor: Unit, returnIfDarkColor: String, strict: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readableColor")(color.asInstanceOf[js.Any], returnIfLightColor.asInstanceOf[js.Any], returnIfDarkColor.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def readableColor(color: String, returnIfLightColor: Unit, returnIfDarkColor: Unit, strict: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readableColor")(color.asInstanceOf[js.Any], returnIfLightColor.asInstanceOf[js.Any], returnIfDarkColor.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def rem(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rem")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def rem(value: String, base: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rem")(value.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -227,6 +243,13 @@ object mod {
   inline def rem(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rem")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def rem(value: Double, base: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rem")(value.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def rem(value: Double, base: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rem")(value.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def remToPx(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("remToPx")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def remToPx(value: String, base: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("remToPx")(value.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def remToPx(value: String, base: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("remToPx")(value.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def remToPx(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("remToPx")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def remToPx(value: Double, base: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("remToPx")(value.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def remToPx(value: Double, base: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("remToPx")(value.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def retinaImage(filename: String): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("retinaImage")(filename.asInstanceOf[js.Any]).asInstanceOf[Styles]
   inline def retinaImage(filename: String, backgroundSize: String): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("retinaImage")(filename.asInstanceOf[js.Any], backgroundSize.asInstanceOf[js.Any])).asInstanceOf[Styles]
@@ -362,12 +385,10 @@ object mod {
   inline def size(height: Double, width: String): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("size")(height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[Styles]
   inline def size(height: Double, width: Double): Styles = (^.asInstanceOf[js.Dynamic].applyDynamic("size")(height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[Styles]
   
-  inline def stripUnit(value: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stripUnit")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def stripUnit(value: String, unitReturn: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stripUnit")(value.asInstanceOf[js.Any], unitReturn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def stripUnit(value: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stripUnit")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def stripUnit(value: Double, unitReturn: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stripUnit")(value.asInstanceOf[js.Any], unitReturn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def stripUnit(value: String): String | Double = ^.asInstanceOf[js.Dynamic].applyDynamic("stripUnit")(value.asInstanceOf[js.Any]).asInstanceOf[String | Double]
+  inline def stripUnit(value: Double): String | Double = ^.asInstanceOf[js.Dynamic].applyDynamic("stripUnit")(value.asInstanceOf[js.Any]).asInstanceOf[String | Double]
   
-  inline def textInputs(states: InteractionState*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("textInputs")(states.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def textInputs(states: InteractionState*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("textInputs")(states.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
   
   inline def timingFunctions(timingFunction: TimingFunction): String = ^.asInstanceOf[js.Dynamic].applyDynamic("timingFunctions")(timingFunction.asInstanceOf[js.Any]).asInstanceOf[String]
   
@@ -378,7 +399,7 @@ object mod {
   
   inline def toColorString(color: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toColorString")(color.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def transitions(properties: (String | js.Array[String])*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("transitions")(properties.asInstanceOf[js.Any]).asInstanceOf[Styles]
+  inline def transitions(properties: (String | js.Array[String])*): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("transitions")(properties.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Styles]
   
   inline def transparentize(amount: String): js.Function1[/* color */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("transparentize")(amount.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* color */ String, String]]
   inline def transparentize(amount: String, color: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("transparentize")(amount.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]

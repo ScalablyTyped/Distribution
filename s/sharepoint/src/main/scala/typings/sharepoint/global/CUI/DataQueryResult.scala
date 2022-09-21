@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CUI.DataQueryResult")
 @js.native
-class DataQueryResult ()
+open class DataQueryResult ()
   extends StObject
      with typings.sharepoint.CUI.DataQueryResult

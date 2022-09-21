@@ -7,37 +7,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListResourcesRequest extends StObject {
   
   /**
-    * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
+    * Specifies the total number of results that you want included on each page of the response. If you do not include this parameter, it defaults to a value that is specific to the operation. If additional items exist beyond the number you specify, the NextToken response element is returned with a value (not null). Include the specified value as the NextToken request parameter in the next call to the operation to get the next part of the results. Note that the service might return fewer results than the maximum even when there are more results available. You should check NextToken after every operation to ensure that you receive all of the results.
     */
   var maxResults: js.UndefOr[MaxResults] = js.undefined
   
   /**
-    * The token for the next page of results.
+    * Specifies that you want to receive the next page of results. Valid only if you received a NextToken response in the previous request. If you did, it indicates that more output is available. Set this parameter to the value provided by the previous call's NextToken response to request the next page of results.
     */
   var nextToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The principal.
+    * Specifies that you want to list only the resource shares that are associated with the specified principal.
     */
   var principal: js.UndefOr[String] = js.undefined
   
   /**
-    * The Amazon Resource Names (ARN) of the resources.
+    * Specifies that you want to list only the resource shares that include resources with the specified Amazon Resource Names (ARNs).
     */
   var resourceArns: js.UndefOr[ResourceArnList] = js.undefined
   
   /**
-    * The type of owner.
+    * Specifies that you want to list only the resource shares that match the following:     SELF  – resources that your account shares with other accounts     OTHER-ACCOUNTS  – resources that other accounts share with your account  
     */
   var resourceOwner: ResourceOwner
   
   /**
-    * The Amazon Resource Names (ARN) of the resource shares.
+    * Specifies that you want the results to include only resources that have the specified scope.    ALL – the results include both global and regional resources or resource types.    GLOBAL – the results include only global resources or resource types.    REGIONAL – the results include only regional resources or resource types.   The default value is ALL.
+    */
+  var resourceRegionScope: js.UndefOr[ResourceRegionScopeFilter] = js.undefined
+  
+  /**
+    * Specifies that you want to list only resources in the resource shares identified by the specified Amazon Resource Names (ARNs).
     */
   var resourceShareArns: js.UndefOr[ResourceShareArnList] = js.undefined
   
   /**
-    * The resource type. Valid values: codebuild:Project | codebuild:ReportGroup | ec2:CapacityReservation | ec2:DedicatedHost | ec2:Subnet | ec2:TrafficMirrorTarget | ec2:TransitGateway | imagebuilder:Component | imagebuilder:Image | imagebuilder:ImageRecipe | license-manager:LicenseConfiguration I resource-groups:Group | rds:Cluster | route53resolver:ResolverRule 
+    * Specifies that you want to list only the resource shares that include resources of the specified resource type. For valid values, query the ListResourceTypes operation.
     */
   var resourceType: js.UndefOr[String] = js.undefined
 }
@@ -66,15 +71,19 @@ object ListResourcesRequest {
     
     inline def setResourceArnsUndefined: Self = StObject.set(x, "resourceArns", js.undefined)
     
-    inline def setResourceArnsVarargs(value: String*): Self = StObject.set(x, "resourceArns", js.Array(value :_*))
+    inline def setResourceArnsVarargs(value: String*): Self = StObject.set(x, "resourceArns", js.Array(value*))
     
     inline def setResourceOwner(value: ResourceOwner): Self = StObject.set(x, "resourceOwner", value.asInstanceOf[js.Any])
+    
+    inline def setResourceRegionScope(value: ResourceRegionScopeFilter): Self = StObject.set(x, "resourceRegionScope", value.asInstanceOf[js.Any])
+    
+    inline def setResourceRegionScopeUndefined: Self = StObject.set(x, "resourceRegionScope", js.undefined)
     
     inline def setResourceShareArns(value: ResourceShareArnList): Self = StObject.set(x, "resourceShareArns", value.asInstanceOf[js.Any])
     
     inline def setResourceShareArnsUndefined: Self = StObject.set(x, "resourceShareArns", js.undefined)
     
-    inline def setResourceShareArnsVarargs(value: String*): Self = StObject.set(x, "resourceShareArns", js.Array(value :_*))
+    inline def setResourceShareArnsVarargs(value: String*): Self = StObject.set(x, "resourceShareArns", js.Array(value*))
     
     inline def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     

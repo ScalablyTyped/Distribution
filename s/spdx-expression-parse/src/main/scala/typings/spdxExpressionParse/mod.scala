@@ -20,47 +20,47 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  trait ConjuctionInfo
+  trait ConjunctionInfo
     extends StObject
        with Info {
     
     var conjunction: and | or
     
-    var left: LicenseInfo | ConjuctionInfo
+    var left: LicenseInfo | ConjunctionInfo
     
-    var right: LicenseInfo | ConjuctionInfo
+    var right: LicenseInfo | ConjunctionInfo
   }
-  object ConjuctionInfo {
+  object ConjunctionInfo {
     
-    inline def apply(conjunction: and | or, left: LicenseInfo | ConjuctionInfo, right: LicenseInfo | ConjuctionInfo): ConjuctionInfo = {
+    inline def apply(conjunction: and | or, left: LicenseInfo | ConjunctionInfo, right: LicenseInfo | ConjunctionInfo): ConjunctionInfo = {
       val __obj = js.Dynamic.literal(conjunction = conjunction.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ConjuctionInfo]
+      __obj.asInstanceOf[ConjunctionInfo]
     }
     
-    extension [Self <: ConjuctionInfo](x: Self) {
+    extension [Self <: ConjunctionInfo](x: Self) {
       
       inline def setConjunction(value: and | or): Self = StObject.set(x, "conjunction", value.asInstanceOf[js.Any])
       
-      inline def setLeft(value: LicenseInfo | ConjuctionInfo): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: LicenseInfo | ConjunctionInfo): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      inline def setRight(value: LicenseInfo | ConjuctionInfo): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: LicenseInfo | ConjunctionInfo): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     }
   }
   
   /* Rewritten from type alias, can be one of: 
     - typings.spdxExpressionParse.mod.LicenseInfo
-    - typings.spdxExpressionParse.mod.ConjuctionInfo
+    - typings.spdxExpressionParse.mod.ConjunctionInfo
   */
   trait Info extends StObject
   object Info {
     
-    inline def ConjuctionInfo(
+    inline def ConjunctionInfo(
       conjunction: and | or,
-      left: LicenseInfo | typings.spdxExpressionParse.mod.ConjuctionInfo,
-      right: LicenseInfo | typings.spdxExpressionParse.mod.ConjuctionInfo
-    ): typings.spdxExpressionParse.mod.ConjuctionInfo = {
+      left: LicenseInfo | typings.spdxExpressionParse.mod.ConjunctionInfo,
+      right: LicenseInfo | typings.spdxExpressionParse.mod.ConjunctionInfo
+    ): typings.spdxExpressionParse.mod.ConjunctionInfo = {
       val __obj = js.Dynamic.literal(conjunction = conjunction.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.spdxExpressionParse.mod.ConjuctionInfo]
+      __obj.asInstanceOf[typings.spdxExpressionParse.mod.ConjunctionInfo]
     }
     
     inline def LicenseInfo(license: String): typings.spdxExpressionParse.mod.LicenseInfo = {

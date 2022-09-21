@@ -29,7 +29,7 @@ object CacheSubnetGroupMessage {
     
     inline def setCacheSubnetGroupsUndefined: Self = StObject.set(x, "CacheSubnetGroups", js.undefined)
     
-    inline def setCacheSubnetGroupsVarargs(value: CacheSubnetGroup*): Self = StObject.set(x, "CacheSubnetGroups", js.Array(value :_*))
+    inline def setCacheSubnetGroupsVarargs(value: CacheSubnetGroup*): Self = StObject.set(x, "CacheSubnetGroups", js.Array(value*))
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

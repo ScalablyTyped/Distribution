@@ -7,24 +7,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * BigQuery API
-  *
-  * A data platform for customers to create, manage, share and query data.
-  *
-  * @example
-  * const {google} = require('googleapis');
-  * const bigquery = google.bigquery('v2');
-  *
-  * @namespace bigquery
-  * @type {Function}
-  * @version v2
-  * @variation v2
-  * @param {object=} options Options for Bigquery
-  */
 @JSImport("googleapis/build/src/apis/bigquery/v2", "bigquery_v2.Bigquery")
 @js.native
-class Bigquery protected () extends StObject {
+open class Bigquery protected () extends StObject {
   def this(options: GlobalOptions) = this()
   def this(options: GlobalOptions, google: GoogleConfigurable) = this()
   
@@ -37,6 +22,10 @@ class Bigquery protected () extends StObject {
   var models: ResourceModels = js.native
   
   var projects: ResourceProjects = js.native
+  
+  var routines: ResourceRoutines = js.native
+  
+  var rowAccessPolicies: ResourceRowaccesspolicies = js.native
   
   var tabledata: ResourceTabledata = js.native
   

@@ -6,15 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RevokeExtras extends StObject {
   
-  /**
-    * extra client assertion payload parameters to be sent as part of a client JWT assertion.
-    * This is only used when the client's token_endpoint_auth_method is either client_secret_jwt or private_key_jwt.
-    */
   var clientAssertionPayload: js.UndefOr[js.Object] = js.undefined
   
-  /**
-    * extra request body properties to be sent to the revocation endpoint.
-    */
   var revokeBody: js.UndefOr[js.Object] = js.undefined
 }
 object RevokeExtras {

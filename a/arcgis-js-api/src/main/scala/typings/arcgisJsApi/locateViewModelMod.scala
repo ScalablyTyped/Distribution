@@ -26,7 +26,7 @@ object locateViewModelMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Locate-LocateViewModel.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with LocateViewModel {
     def this(properties: LocateViewModelProperties) = this()
@@ -34,13 +34,17 @@ object locateViewModelMod extends Shortcut {
     /**
       * The HTML5 Geolocation Position options for locating.
       *
+      * @default { maximumAge: 0, timeout: 15000, enableHighAccuracy: true }
+      *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GeolocationPositioning.html#geolocationOptions)
       */
     /* CompleteClass */
-    var geolocationOptions: js.Any = js.native
+    var geolocationOptions: Any = js.native
     
     /**
       * Indicates whether to navigate the view to the position and scale of the geolocated result.
+      *
+      * @default true
       *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GeolocationPositioning.html#goToLocationEnabled)
       */
@@ -53,9 +57,9 @@ object locateViewModelMod extends Shortcut {
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GoTo.html#goToOverride)
       */
     /* CompleteClass */
-    override def goToOverride(view: MapView, goToParameters: js.Any): Unit = js.native
+    override def goToOverride(view: MapView, goToParameters: Any): Unit = js.native
     /* CompleteClass */
-    override def goToOverride(view: SceneView, goToParameters: js.Any): Unit = js.native
+    override def goToOverride(view: SceneView, goToParameters: Any): Unit = js.native
     /**
       * This function provides the ability to override either the [MapView goTo()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#goTo) or [SceneView goTo()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#goTo) methods.
       *
@@ -75,6 +79,8 @@ object locateViewModelMod extends Shortcut {
     
     /**
       * The scale to set on the view when navigating to the position of the geolocated result.
+      *
+      * @default null
       *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GeolocationPositioning.html#scale)
       */

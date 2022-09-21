@@ -18,10 +18,10 @@ object mod extends Shortcut {
     
     def forEach(callback: js.Function0[Unit]): Unit = js.native
     
-    def get(key: String): js.Any = js.native
-    def get(key: String, `def`: js.Any): js.Any = js.native
+    def get(key: String): Any = js.native
+    def get(key: String, `def`: Any): Any = js.native
     
-    def getAll(): js.Any = js.native
+    def getAll(): Any = js.native
     
     def has(key: String): Boolean = js.native
     
@@ -29,8 +29,8 @@ object mod extends Shortcut {
     
     var session: Storage = js.native
     
-    def set(key: String): js.Any = js.native
-    def set(key: String, `val`: js.Any): js.Any = js.native
+    def set(key: String): Any = js.native
+    def set(key: String, `val`: Any): Any = js.native
   }
   
   type _To = Storage

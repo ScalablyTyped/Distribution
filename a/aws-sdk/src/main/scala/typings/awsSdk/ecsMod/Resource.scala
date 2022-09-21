@@ -32,7 +32,7 @@ trait Resource extends StObject {
   var stringSetValue: js.UndefOr[StringList] = js.undefined
   
   /**
-    * The type of the resource, such as INTEGER, DOUBLE, LONG, or STRINGSET.
+    * The type of the resource. Valid values: INTEGER, DOUBLE, LONG, or STRINGSET.
     */
   var `type`: js.UndefOr[String] = js.undefined
 }
@@ -65,7 +65,7 @@ object Resource {
     
     inline def setStringSetValueUndefined: Self = StObject.set(x, "stringSetValue", js.undefined)
     
-    inline def setStringSetValueVarargs(value: String*): Self = StObject.set(x, "stringSetValue", js.Array(value :_*))
+    inline def setStringSetValueVarargs(value: String*): Self = StObject.set(x, "stringSetValue", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

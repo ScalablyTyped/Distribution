@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("Deposit")
 @js.native
-class Deposit protected ()
+open class Deposit protected ()
   extends StObject
      with typings.screeps.Deposit {
   def this(id: Id[typings.screeps.Deposit]) = this()
@@ -23,7 +23,11 @@ class Deposit protected ()
   var cooldown: Double = js.native
   
   /**
-    * The amount of game ticks until the next harvest action is possible.
+    * The deposit type, one of the following constants:
+    * * `RESOURCE_MIST`
+    * * `RESOURCE_BIOMASS`
+    * * `RESOURCE_METAL`
+    * * `RESOURCE_SILICON`
     */
   /* CompleteClass */
   var depositType: DepositConstant = js.native

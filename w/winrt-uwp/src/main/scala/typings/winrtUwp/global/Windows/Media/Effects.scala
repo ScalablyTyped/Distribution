@@ -42,7 +42,7 @@ object Effects {
   /** Represents an audio effect definition. */
   @JSGlobal("Windows.Media.Effects.AudioEffectDefinition")
   @js.native
-  class AudioEffectDefinition protected ()
+  open class AudioEffectDefinition protected ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Effects.AudioEffectDefinition {
     /**
@@ -266,7 +266,7 @@ object Effects {
   /** Represents the definition of a custom video compositor. */
   @JSGlobal("Windows.Media.Effects.VideoCompositorDefinition")
   @js.native
-  class VideoCompositorDefinition protected ()
+  open class VideoCompositorDefinition protected ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Effects.VideoCompositorDefinition {
     /**
@@ -293,7 +293,7 @@ object Effects {
   /** Represents a video effect definition. */
   @JSGlobal("Windows.Media.Effects.VideoEffectDefinition")
   @js.native
-  class VideoEffectDefinition protected ()
+  open class VideoEffectDefinition protected ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Effects.VideoEffectDefinition {
     /**
@@ -321,7 +321,7 @@ object Effects {
   @JSGlobal("Windows.Media.Effects.VideoTransformEffectDefinition")
   @js.native
   /** Initializes a new instance of the VideoTransformEffectDefinition class. */
-  class VideoTransformEffectDefinition ()
+  open class VideoTransformEffectDefinition ()
     extends StObject
        with typings.winrtUwp.Windows.Media.Effects.VideoTransformEffectDefinition {
     

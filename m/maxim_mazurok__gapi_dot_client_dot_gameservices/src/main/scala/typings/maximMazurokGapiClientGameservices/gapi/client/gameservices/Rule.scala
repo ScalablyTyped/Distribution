@@ -18,7 +18,7 @@ trait Rule extends StObject {
   /** If one or more 'in' clauses are specified, the rule matches if the PRINCIPAL/AUTHORITY_SELECTOR is in at least one of these entries. */
   var in: js.UndefOr[js.Array[String]] = js.undefined
   
-  /** The config returned to callers of tech.iam.IAM.CheckPolicy for any entries that match the LOG action. */
+  /** The config returned to callers of CheckPolicy for any entries that match the LOG action. */
   var logConfig: js.UndefOr[js.Array[LogConfig]] = js.undefined
   
   /**
@@ -47,7 +47,7 @@ object Rule {
     
     inline def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
-    inline def setConditionsVarargs(value: Condition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: Condition*): Self = StObject.set(x, "conditions", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -57,24 +57,24 @@ object Rule {
     
     inline def setInUndefined: Self = StObject.set(x, "in", js.undefined)
     
-    inline def setInVarargs(value: String*): Self = StObject.set(x, "in", js.Array(value :_*))
+    inline def setInVarargs(value: String*): Self = StObject.set(x, "in", js.Array(value*))
     
     inline def setLogConfig(value: js.Array[LogConfig]): Self = StObject.set(x, "logConfig", value.asInstanceOf[js.Any])
     
     inline def setLogConfigUndefined: Self = StObject.set(x, "logConfig", js.undefined)
     
-    inline def setLogConfigVarargs(value: LogConfig*): Self = StObject.set(x, "logConfig", js.Array(value :_*))
+    inline def setLogConfigVarargs(value: LogConfig*): Self = StObject.set(x, "logConfig", js.Array(value*))
     
     inline def setNotIn(value: js.Array[String]): Self = StObject.set(x, "notIn", value.asInstanceOf[js.Any])
     
     inline def setNotInUndefined: Self = StObject.set(x, "notIn", js.undefined)
     
-    inline def setNotInVarargs(value: String*): Self = StObject.set(x, "notIn", js.Array(value :_*))
+    inline def setNotInVarargs(value: String*): Self = StObject.set(x, "notIn", js.Array(value*))
     
     inline def setPermissions(value: js.Array[String]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
     inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
-    inline def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value*))
   }
 }

@@ -19,7 +19,7 @@ object FetchStrategy {
   inline def apply(
     FromLocalCache: FetchStrategySymbol,
     FromServer: FetchStrategySymbol,
-    contains: js.Any => Boolean,
+    contains: Any => Boolean,
     fromName: String => EnumSymbol,
     getNames: () => js.Array[String],
     getSymbols: () => js.Array[EnumSymbol]

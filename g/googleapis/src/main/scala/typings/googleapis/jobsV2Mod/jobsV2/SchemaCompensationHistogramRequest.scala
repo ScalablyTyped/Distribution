@@ -4,23 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Input only.  Compensation based histogram request.
-  */
 trait SchemaCompensationHistogramRequest extends StObject {
   
   /**
-    * Required.  Numeric histogram options, like buckets, whether include min
-    * or max value.
+    * Required. Numeric histogram options, like buckets, whether include min or max value.
     */
   var bucketingOption: js.UndefOr[SchemaNumericBucketingOption] = js.undefined
   
   /**
-    * Required.  Type of the request, representing which field the
-    * histogramming should be performed over. A single request can only specify
-    * one histogram of each `CompensationHistogramRequestType`.
+    * Required. Type of the request, representing which field the histogramming should be performed over. A single request can only specify one histogram of each `CompensationHistogramRequestType`.
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaCompensationHistogramRequest {
   
@@ -36,6 +30,8 @@ object SchemaCompensationHistogramRequest {
     inline def setBucketingOptionUndefined: Self = StObject.set(x, "bucketingOption", js.undefined)
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

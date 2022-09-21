@@ -17,7 +17,7 @@ trait TooltipPayload extends StObject {
   
   var name: String
   
-  var payload: js.UndefOr[js.Any] = js.undefined
+  var payload: js.UndefOr[Any] = js.undefined
   
   var unit: js.UndefOr[String] = js.undefined
   
@@ -38,7 +38,7 @@ object TooltipPayload {
     
     inline def setDataKey(value: DataKey): Self = StObject.set(x, "dataKey", value.asInstanceOf[js.Any])
     
-    inline def setDataKeyFunction1(value: /* dataObject */ js.Any => String | Double | (js.Tuple2[Double, Double]) | Null): Self = StObject.set(x, "dataKey", js.Any.fromFunction1(value))
+    inline def setDataKeyFunction1(value: /* dataObject */ Any => String | Double | (js.Tuple2[Double, Double]) | Null): Self = StObject.set(x, "dataKey", js.Any.fromFunction1(value))
     
     inline def setDataKeyUndefined: Self = StObject.set(x, "dataKey", js.undefined)
     
@@ -54,7 +54,7 @@ object TooltipPayload {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
@@ -64,6 +64,6 @@ object TooltipPayload {
     
     inline def setValue(value: String | Double | (js.Array[String | Double])): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    inline def setValueVarargs(value: (String | Double)*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: (String | Double)*): Self = StObject.set(x, "value", js.Array(value*))
   }
 }

@@ -6,53 +6,49 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait Index extends StObject {
+  trait Index[T /* <: Double | js.Array[Double] */] extends StObject {
     
     var index: Double
     
-    var value: Double | js.Array[Double]
+    var value: T
     
     var valueNow: Double
   }
   object Index {
     
-    inline def apply(index: Double, value: Double | js.Array[Double], valueNow: Double): Index = {
+    inline def apply[T /* <: Double | js.Array[Double] */](index: Double, value: T, valueNow: Double): Index[T] = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], valueNow = valueNow.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Index]
+      __obj.asInstanceOf[Index[T]]
     }
     
-    extension [Self <: Index](x: Self) {
+    extension [Self <: Index[?], T /* <: Double | js.Array[Double] */](x: Self & Index[T]) {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: Double | js.Array[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueNow(value: Double): Self = StObject.set(x, "valueNow", value.asInstanceOf[js.Any])
-      
-      inline def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value :_*))
     }
   }
   
-  trait Value extends StObject {
+  trait Value[T /* <: Double | js.Array[Double] */] extends StObject {
     
     var index: Double
     
-    var value: Double | js.Array[Double]
+    var value: T
   }
   object Value {
     
-    inline def apply(index: Double, value: Double | js.Array[Double]): Value = {
+    inline def apply[T /* <: Double | js.Array[Double] */](index: Double, value: T): Value[T] = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Value]
+      __obj.asInstanceOf[Value[T]]
     }
     
-    extension [Self <: Value](x: Self) {
+    extension [Self <: Value[?], T /* <: Double | js.Array[Double] */](x: Self & Value[T]) {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: Double | js.Array[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-      
-      inline def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

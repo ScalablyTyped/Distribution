@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CatalogTimePeriod")
 @js.native
-class CatalogTimePeriod () extends StObject {
+open class CatalogTimePeriod () extends StObject {
   
   /**
     * An iCalendar (RFC5545) [event](https://tools.ietf.org/html/rfc5545#section-3.6.1), which specifies the name,

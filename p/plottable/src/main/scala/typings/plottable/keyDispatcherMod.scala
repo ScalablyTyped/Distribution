@@ -15,11 +15,11 @@ object keyDispatcherMod {
     *
     * @constructor
     */
-  class Key () extends Dispatcher {
+  open class Key () extends Dispatcher {
     
-    /* private */ def _processKeydown(event: js.Any): js.Any = js.native
+    /* private */ var _processKeydown: Any = js.native
     
-    /* private */ def _processKeyup(event: js.Any): js.Any = js.native
+    /* private */ var _processKeyup: Any = js.native
     
     /**
       * Removes the callback to be called whenever a key is pressed.
@@ -61,18 +61,18 @@ object keyDispatcherMod {
     
     @JSImport("plottable/build/src/dispatchers/keyDispatcher", "Key._DISPATCHER_KEY")
     @js.native
-    def _DISPATCHER_KEY: js.Any = js.native
-    inline def _DISPATCHER_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DISPATCHER_KEY")(x.asInstanceOf[js.Any])
+    def _DISPATCHER_KEY: Any = js.native
+    inline def _DISPATCHER_KEY_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DISPATCHER_KEY")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/dispatchers/keyDispatcher", "Key._KEYDOWN_EVENT_NAME")
     @js.native
-    def _KEYDOWN_EVENT_NAME: js.Any = js.native
-    inline def _KEYDOWN_EVENT_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_KEYDOWN_EVENT_NAME")(x.asInstanceOf[js.Any])
+    def _KEYDOWN_EVENT_NAME: Any = js.native
+    inline def _KEYDOWN_EVENT_NAME_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_KEYDOWN_EVENT_NAME")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/dispatchers/keyDispatcher", "Key._KEYUP_EVENT_NAME")
     @js.native
-    def _KEYUP_EVENT_NAME: js.Any = js.native
-    inline def _KEYUP_EVENT_NAME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_KEYUP_EVENT_NAME")(x.asInstanceOf[js.Any])
+    def _KEYUP_EVENT_NAME: Any = js.native
+    inline def _KEYUP_EVENT_NAME_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_KEYUP_EVENT_NAME")(x.asInstanceOf[js.Any])
     
     /**
       * Gets a Key Dispatcher. If one already exists it will be returned;

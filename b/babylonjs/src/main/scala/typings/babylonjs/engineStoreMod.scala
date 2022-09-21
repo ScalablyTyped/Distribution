@@ -11,7 +11,7 @@ object engineStoreMod {
   
   @JSImport("babylonjs/Engines/engineStore", "EngineStore")
   @js.native
-  class EngineStore () extends StObject
+  open class EngineStore () extends StObject
   /* static members */
   object EngineStore {
     

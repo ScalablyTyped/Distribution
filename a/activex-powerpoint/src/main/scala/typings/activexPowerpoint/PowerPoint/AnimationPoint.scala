@@ -12,14 +12,14 @@ trait AnimationPoint extends StObject {
   
   var Formula: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.AnimationPoint_typekey")
   var PowerPointDotAnimationPoint_typekey: AnimationPoint
   
   var Time: Double
   
-  var Value: js.Any
+  var Value: Any
 }
 object AnimationPoint {
   
@@ -27,10 +27,10 @@ object AnimationPoint {
     Application: Application,
     Delete: () => Unit,
     Formula: String,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotAnimationPoint_typekey: AnimationPoint,
     Time: Double,
-    Value: js.Any
+    Value: Any
   ): AnimationPoint = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Delete = js.Any.fromFunction0(Delete), Formula = Formula.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Time = Time.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.updateDynamic("PowerPoint.AnimationPoint_typekey")(PowerPointDotAnimationPoint_typekey.asInstanceOf[js.Any])
@@ -45,12 +45,12 @@ object AnimationPoint {
     
     inline def setFormula(value: String): Self = StObject.set(x, "Formula", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotAnimationPoint_typekey(value: AnimationPoint): Self = StObject.set(x, "PowerPoint.AnimationPoint_typekey", value.asInstanceOf[js.Any])
     
     inline def setTime(value: Double): Self = StObject.set(x, "Time", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

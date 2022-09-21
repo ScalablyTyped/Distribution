@@ -60,7 +60,7 @@ trait MarkerClusterer
   /**
     * 获取聚合的样式风格集合
     */
-  def getStyles(): js.Array[js.Any]
+  def getStyles(): js.Array[Any]
   
   /**
     * 获取单个聚合点位置是否是聚合内所有标记的平均中心
@@ -119,7 +119,7 @@ trait MarkerClusterer
     * 设置聚合的样式风格
     * @param styles
     */
-  def setStyles(styles: js.Array[js.Any]): Unit
+  def setStyles(styles: js.Array[Any]): Unit
 }
 object MarkerClusterer {
   
@@ -133,7 +133,7 @@ object MarkerClusterer {
     getMarkers: () => js.Array[Marker],
     getMaxZoom: () => Double,
     getMinClusterSize: () => Double,
-    getStyles: () => js.Array[js.Any],
+    getStyles: () => js.Array[Any],
     isAverageCenter: () => Boolean,
     off: (String, EventCallback) => Unit,
     on: (String, EventCallback) => Unit,
@@ -145,7 +145,7 @@ object MarkerClusterer {
     setMarkers: js.Array[Marker] => Unit,
     setMaxZoom: Double => Unit,
     setMinClusterSize: Double => Unit,
-    setStyles: js.Array[js.Any] => Unit
+    setStyles: js.Array[Any] => Unit
   ): MarkerClusterer = {
     val __obj = js.Dynamic.literal(addMarker = js.Any.fromFunction1(addMarker), addMarkers = js.Any.fromFunction1(addMarkers), clearMarkers = js.Any.fromFunction0(clearMarkers), getClustersCount = js.Any.fromFunction0(getClustersCount), getGridSize = js.Any.fromFunction0(getGridSize), getMap = js.Any.fromFunction0(getMap), getMarkers = js.Any.fromFunction0(getMarkers), getMaxZoom = js.Any.fromFunction0(getMaxZoom), getMinClusterSize = js.Any.fromFunction0(getMinClusterSize), getStyles = js.Any.fromFunction0(getStyles), isAverageCenter = js.Any.fromFunction0(isAverageCenter), off = js.Any.fromFunction2(off), on = js.Any.fromFunction2(on), removeMarker = js.Any.fromFunction1(removeMarker), removeMarkers = js.Any.fromFunction1(removeMarkers), setAverageCenter = js.Any.fromFunction1(setAverageCenter), setGridSize = js.Any.fromFunction1(setGridSize), setMap = js.Any.fromFunction1(setMap), setMarkers = js.Any.fromFunction1(setMarkers), setMaxZoom = js.Any.fromFunction1(setMaxZoom), setMinClusterSize = js.Any.fromFunction1(setMinClusterSize), setStyles = js.Any.fromFunction1(setStyles))
     __obj.asInstanceOf[MarkerClusterer]
@@ -171,7 +171,7 @@ object MarkerClusterer {
     
     inline def setGetMinClusterSize(value: () => Double): Self = StObject.set(x, "getMinClusterSize", js.Any.fromFunction0(value))
     
-    inline def setGetStyles(value: () => js.Array[js.Any]): Self = StObject.set(x, "getStyles", js.Any.fromFunction0(value))
+    inline def setGetStyles(value: () => js.Array[Any]): Self = StObject.set(x, "getStyles", js.Any.fromFunction0(value))
     
     inline def setIsAverageCenter(value: () => Boolean): Self = StObject.set(x, "isAverageCenter", js.Any.fromFunction0(value))
     
@@ -191,6 +191,6 @@ object MarkerClusterer {
     
     inline def setSetMinClusterSize(value: Double => Unit): Self = StObject.set(x, "setMinClusterSize", js.Any.fromFunction1(value))
     
-    inline def setSetStyles(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "setStyles", js.Any.fromFunction1(value))
+    inline def setSetStyles(value: js.Array[Any] => Unit): Self = StObject.set(x, "setStyles", js.Any.fromFunction1(value))
   }
 }

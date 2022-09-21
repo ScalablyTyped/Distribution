@@ -17,7 +17,7 @@ object pathUtilsMod {
   
   @JSImport("@uirouter/core/lib/path/pathUtils", "PathUtils")
   @js.native
-  class PathUtils () extends StObject
+  open class PathUtils () extends StObject
   /* static members */
   object PathUtils {
     
@@ -86,7 +86,7 @@ object pathUtilsMod {
     inline def nonDynamicParams(node: PathNode): js.Array[Param] = ^.asInstanceOf[js.Dynamic].applyDynamic("nonDynamicParams")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[Param]]
     
     /** Gets the raw parameter values from a path */
-    inline def paramValues(path: js.Array[PathNode]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("paramValues")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def paramValues(path: js.Array[PathNode]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("paramValues")(path.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /**
       * Return a subpath of a path, which stops at the first matching node

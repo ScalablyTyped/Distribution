@@ -12,7 +12,7 @@ object propertydispatcherMod {
   
   @JSImport("baconjs/types/internal/propertydispatcher", JSImport.Default)
   @js.native
-  class default[V, O /* <: typings.baconjs.observableMod.default[V] */] protected () extends PropertyDispatcher[V, O] {
+  open class default[V, O /* <: typings.baconjs.observableMod.default[V] */] protected () extends PropertyDispatcher[V, O] {
     def this(property: O, subscribe: Subscribe[V]) = this()
     def this(property: O, subscribe: Subscribe[V], handleEvent: EventSink[V]) = this()
   }
@@ -25,7 +25,7 @@ object propertydispatcherMod {
     
     var currentValueRootId: js.UndefOr[Double] = js.native
     
-    def maybeSubSource(sink: EventSink[V], reply: js.Any): js.Function0[Unit] = js.native
+    def maybeSubSource(sink: EventSink[V], reply: Any): js.Function0[Unit] = js.native
     
     var propertyEnded: Boolean = js.native
   }

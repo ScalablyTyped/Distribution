@@ -12,7 +12,7 @@ object stylableMod {
   
   @JSImport("playable/dist/src/modules/ui/core/stylable", JSImport.Default)
   @js.native
-  class default[TStyles] ()
+  open class default[TStyles] ()
     extends StObject
        with Stylable[TStyles] {
     def this(theme: IThemeService) = this()
@@ -32,9 +32,9 @@ object stylableMod {
     /* static member */
     @JSImport("playable/dist/src/modules/ui/core/stylable", "default._moduleTheme")
     @js.native
-    def moduleTheme: js.Any = js.native
+    def moduleTheme: Any = js.native
     
-    inline def moduleTheme_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_moduleTheme")(x.asInstanceOf[js.Any])
+    inline def moduleTheme_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_moduleTheme")(x.asInstanceOf[js.Any])
     
     /* static member */
     inline def resetStyles(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetStyles")().asInstanceOf[Unit]
@@ -45,9 +45,9 @@ object stylableMod {
     /* static member */
     @JSImport("playable/dist/src/modules/ui/core/stylable", "default._styles")
     @js.native
-    def styles: js.Any = js.native
+    def styles: Any = js.native
     
-    inline def styles_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_styles")(x.asInstanceOf[js.Any])
+    inline def styles_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_styles")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -55,7 +55,7 @@ object stylableMod {
     extends StObject
        with IStylable[TStyles] {
     
-    /* private */ var _themeStyles: js.Any = js.native
+    /* private */ var _themeStyles: Any = js.native
     
     @JSName("styleNames")
     def styleNames_MStylable: TStyles = js.native

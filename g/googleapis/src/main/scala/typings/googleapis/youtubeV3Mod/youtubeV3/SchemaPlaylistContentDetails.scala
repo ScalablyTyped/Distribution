@@ -9,7 +9,7 @@ trait SchemaPlaylistContentDetails extends StObject {
   /**
     * The number of videos in the playlist.
     */
-  var itemCount: js.UndefOr[Double] = js.undefined
+  var itemCount: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaPlaylistContentDetails {
   
@@ -21,6 +21,8 @@ object SchemaPlaylistContentDetails {
   extension [Self <: SchemaPlaylistContentDetails](x: Self) {
     
     inline def setItemCount(value: Double): Self = StObject.set(x, "itemCount", value.asInstanceOf[js.Any])
+    
+    inline def setItemCountNull: Self = StObject.set(x, "itemCount", null)
     
     inline def setItemCountUndefined: Self = StObject.set(x, "itemCount", js.undefined)
   }

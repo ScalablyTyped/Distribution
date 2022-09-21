@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-HeatmapSlider.html)
   */
-class HeatmapSliderCls ()
+open class HeatmapSliderCls ()
   extends StObject
      with typings.arcgisJsApi.esri.HeatmapSlider {
   def this(properties: HeatmapSliderProperties) = this()

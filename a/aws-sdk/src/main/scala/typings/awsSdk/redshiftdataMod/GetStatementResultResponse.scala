@@ -39,7 +39,7 @@ object GetStatementResultResponse {
     
     inline def setColumnMetadataUndefined: Self = StObject.set(x, "ColumnMetadata", js.undefined)
     
-    inline def setColumnMetadataVarargs(value: ColumnMetadata*): Self = StObject.set(x, "ColumnMetadata", js.Array(value :_*))
+    inline def setColumnMetadataVarargs(value: ColumnMetadata*): Self = StObject.set(x, "ColumnMetadata", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
@@ -47,7 +47,7 @@ object GetStatementResultResponse {
     
     inline def setRecords(value: SqlRecords): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
     
-    inline def setRecordsVarargs(value: FieldList*): Self = StObject.set(x, "Records", js.Array(value :_*))
+    inline def setRecordsVarargs(value: FieldList*): Self = StObject.set(x, "Records", js.Array(value*))
     
     inline def setTotalNumRows(value: Long): Self = StObject.set(x, "TotalNumRows", value.asInstanceOf[js.Any])
     

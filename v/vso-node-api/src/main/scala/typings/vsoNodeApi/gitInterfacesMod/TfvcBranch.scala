@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -33,9 +32,9 @@ trait TfvcBranch
 object TfvcBranch {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     children: js.Array[TfvcBranch],
-    createdDate: Date,
+    createdDate: js.Date,
     description: String,
     isDeleted: Boolean,
     mappings: js.Array[TfvcBranchMapping],
@@ -53,16 +52,16 @@ object TfvcBranch {
     
     inline def setChildren(value: js.Array[TfvcBranch]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setChildrenVarargs(value: TfvcBranch*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: TfvcBranch*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setMappings(value: js.Array[TfvcBranchMapping]): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
     
-    inline def setMappingsVarargs(value: TfvcBranchMapping*): Self = StObject.set(x, "mappings", js.Array(value :_*))
+    inline def setMappingsVarargs(value: TfvcBranchMapping*): Self = StObject.set(x, "mappings", js.Array(value*))
     
     inline def setParent(value: TfvcShallowBranchRef): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     inline def setRelatedBranches(value: js.Array[TfvcShallowBranchRef]): Self = StObject.set(x, "relatedBranches", value.asInstanceOf[js.Any])
     
-    inline def setRelatedBranchesVarargs(value: TfvcShallowBranchRef*): Self = StObject.set(x, "relatedBranches", js.Array(value :_*))
+    inline def setRelatedBranchesVarargs(value: TfvcShallowBranchRef*): Self = StObject.set(x, "relatedBranches", js.Array(value*))
   }
 }

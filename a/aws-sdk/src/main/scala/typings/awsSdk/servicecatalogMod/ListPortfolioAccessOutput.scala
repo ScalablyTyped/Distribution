@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListPortfolioAccessOutput extends StObject {
   
   /**
-    * Information about the AWS accounts with access to the portfolio.
+    * Information about the Amazon Web Services accounts with access to the portfolio.
     */
   var AccountIds: js.UndefOr[typings.awsSdk.servicecatalogMod.AccountIds] = js.undefined
   
@@ -29,7 +29,7 @@ object ListPortfolioAccessOutput {
     
     inline def setAccountIdsUndefined: Self = StObject.set(x, "AccountIds", js.undefined)
     
-    inline def setAccountIdsVarargs(value: AccountId*): Self = StObject.set(x, "AccountIds", js.Array(value :_*))
+    inline def setAccountIdsVarargs(value: AccountId*): Self = StObject.set(x, "AccountIds", js.Array(value*))
     
     inline def setNextPageToken(value: PageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     

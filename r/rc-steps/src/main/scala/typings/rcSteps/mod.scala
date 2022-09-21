@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("rc-steps", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.rcSteps.stepsMod.default
   /* static members */
   object default {
@@ -32,6 +32,6 @@ object mod {
   
   @JSImport("rc-steps", "Step")
   @js.native
-  class Step ()
+  open class Step ()
     extends typings.rcSteps.stepMod.default
 }

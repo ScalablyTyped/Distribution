@@ -1,24 +1,16 @@
 package typings.postmark
 
-import typings.axios.mod.AxiosError
-import typings.postmark.errorsMod.PostmarkError
+import typings.postmark.errorsErrorsMod.HttpError
+import typings.postmark.errorsErrorsMod.PostmarkError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errorHandlerMod {
   
-  @JSImport("postmark/dist/client/ErrorHandler", "ErrorHandler")
+  @JSImport("postmark/dist/client/errors/ErrorHandler", "ErrorHandler")
   @js.native
-  class ErrorHandler () extends StObject {
-    
-    /**
-      * Build Postmark error based on response from http client.
-      *
-      * @param {AxiosResponse} response - request response used to transform to Postmark error.
-      * @return {PostmarkError} - formatted Postmark error
-      */
-    /* private */ var buildErrorForResponse: js.Any = js.native
+  open class ErrorHandler () extends StObject {
     
     /**
       * Build general Postmark error.
@@ -27,16 +19,10 @@ object errorHandlerMod {
       *
       * @returns properly formatted Postmark error.
       */
-    def buildGeneralError(errorMessage: String): PostmarkError = js.native
-    
-    /**
-      * Process callback function for HTTP request.
-      *
-      * @param error - request error that needs to be transformed to proper Postmark error.
-      *
-      * @return {PostmarkError} - formatted Postmark error
-      */
-    def buildRequestError(error: AxiosError[js.Any]): PostmarkError = js.native
+    def buildError(errorMessage: String): PostmarkError | HttpError = js.native
+    def buildError(errorMessage: String, code: Double): PostmarkError | HttpError = js.native
+    def buildError(errorMessage: String, code: Double, statusCode: Double): PostmarkError | HttpError = js.native
+    def buildError(errorMessage: String, code: Unit, statusCode: Double): PostmarkError | HttpError = js.native
     
     /**
       * Build Postmark error based on HTTP request status.
@@ -45,8 +31,6 @@ object errorHandlerMod {
       *
       * @returns properly formatted Postmark error.
       */
-    /* private */ var buildRequestErrorByStatus: js.Any = js.native
-    
-    /* private */ var retrieveDefaultOrValue: js.Any = js.native
+    /* private */ var buildErrorByHttpStatusCode: Any = js.native
   }
 }

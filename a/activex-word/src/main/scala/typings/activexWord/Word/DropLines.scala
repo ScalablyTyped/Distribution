@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DropLines extends StObject {
   
-  val Application: js.Any
+  val Application: Any
   
   val Border: ChartBorder
   
@@ -18,7 +18,7 @@ trait DropLines extends StObject {
   
   val Name: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   def Select(): Unit
   
@@ -28,13 +28,13 @@ trait DropLines extends StObject {
 object DropLines {
   
   inline def apply(
-    Application: js.Any,
+    Application: Any,
     Border: ChartBorder,
     Creator: Double,
     Delete: () => Unit,
     Format: ChartFormat,
     Name: String,
-    Parent: js.Any,
+    Parent: Any,
     Select: () => Unit,
     WordDotDropLines_typekey: DropLines
   ): DropLines = {
@@ -45,7 +45,7 @@ object DropLines {
   
   extension [Self <: DropLines](x: Self) {
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setBorder(value: ChartBorder): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
     
@@ -57,7 +57,7 @@ object DropLines {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSelect(value: () => Unit): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
     

@@ -110,5 +110,5 @@ trait UITableRow extends StObject {
     * Rows cannot be tapped when the tables is presented in Siri.
     * @see https://docs.scriptable.app/uitablerow/#onselect
     */
-  def onSelect(arg0: Double): Unit = js.native
+  def onSelect(): Unit = js.native
 }

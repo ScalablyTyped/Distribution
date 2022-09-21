@@ -48,7 +48,7 @@ object RegionFilterAnnotationCfg {
     
     inline def setShapes(value: js.Array[IShape]): Self = StObject.set(x, "shapes", value.asInstanceOf[js.Any])
     
-    inline def setShapesVarargs(value: IShape*): Self = StObject.set(x, "shapes", js.Array(value :_*))
+    inline def setShapesVarargs(value: IShape*): Self = StObject.set(x, "shapes", js.Array(value*))
     
     inline def setStart(value: Point): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }

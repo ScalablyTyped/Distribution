@@ -1,7 +1,5 @@
 package typings.jsSha256
 
-import typings.std.ArrayBuffer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,7 +42,7 @@ object mod {
       *
       * @param message The message you want to hash.
       */
-    def arrayBuffer(message: Message): ArrayBuffer = js.native
+    def arrayBuffer(message: Message): js.typedarray.ArrayBuffer = js.native
     
     /**
       * Create a hash object.
@@ -99,7 +97,7 @@ object mod {
     /**
       * Return hash in ArrayBuffer.
       */
-    def arrayBuffer(): ArrayBuffer
+    def arrayBuffer(): js.typedarray.ArrayBuffer
     
     /**
       * Return hash in integer array.
@@ -122,7 +120,7 @@ object mod {
     
     inline def apply(
       array: () => js.Array[Double],
-      arrayBuffer: () => ArrayBuffer,
+      arrayBuffer: () => js.typedarray.ArrayBuffer,
       digest: () => js.Array[Double],
       hex: () => String,
       update: Message => Hasher
@@ -135,7 +133,7 @@ object mod {
       
       inline def setArray(value: () => js.Array[Double]): Self = StObject.set(x, "array", js.Any.fromFunction0(value))
       
-      inline def setArrayBuffer(value: () => ArrayBuffer): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
+      inline def setArrayBuffer(value: () => js.typedarray.ArrayBuffer): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
       
       inline def setDigest(value: () => js.Array[Double]): Self = StObject.set(x, "digest", js.Any.fromFunction0(value))
       
@@ -170,7 +168,7 @@ object mod {
       * @param secretKey The Secret Key
       * @param message The message you want to hash.
       */
-    def arrayBuffer(secretKey: String, message: Message): ArrayBuffer = js.native
+    def arrayBuffer(secretKey: String, message: Message): js.typedarray.ArrayBuffer = js.native
     
     /**
       * Create a hash object using a secret key.
@@ -204,5 +202,5 @@ object mod {
     def update(secretKey: String, message: Message): Hasher = js.native
   }
   
-  type Message = String | js.Array[Double] | ArrayBuffer | Uint8Array
+  type Message = String | js.Array[Double] | js.typedarray.ArrayBuffer | js.typedarray.Uint8Array
 }

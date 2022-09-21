@@ -1,7 +1,7 @@
 package typings.asn1
 
 import typings.asn1.anon.GrowthFactor
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -137,7 +137,7 @@ object mod {
   
   @JSImport("asn1", "BerReader")
   @js.native
-  class BerReader protected () extends StObject {
+  open class BerReader protected () extends StObject {
     def this(data: Buffer) = this()
     
     val _buf: Buffer = js.native
@@ -183,7 +183,7 @@ object mod {
   
   @JSImport("asn1", "BerWriter")
   @js.native
-  class BerWriter () extends StObject {
+  open class BerWriter () extends StObject {
     def this(options: GrowthFactor) = this()
     
     val _buf: Buffer = js.native

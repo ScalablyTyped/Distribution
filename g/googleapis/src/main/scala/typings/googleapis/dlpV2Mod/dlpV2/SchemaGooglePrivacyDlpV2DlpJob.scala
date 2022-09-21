@@ -4,20 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Combines all of the information about a DLP job.
-  */
 trait SchemaGooglePrivacyDlpV2DlpJob extends StObject {
   
   /**
     * Time when the job was created.
     */
-  var createTime: js.UndefOr[String] = js.undefined
+  var createTime: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Time when the job finished.
     */
-  var endTime: js.UndefOr[String] = js.undefined
+  var endTime: js.UndefOr[String | Null] = js.undefined
   
   /**
     * A stream of errors encountered running the job.
@@ -30,15 +27,14 @@ trait SchemaGooglePrivacyDlpV2DlpJob extends StObject {
   var inspectDetails: js.UndefOr[SchemaGooglePrivacyDlpV2InspectDataSourceDetails] = js.undefined
   
   /**
-    * If created by a job trigger, the resource name of the trigger that
-    * instantiated the job.
+    * If created by a job trigger, the resource name of the trigger that instantiated the job.
     */
-  var jobTriggerName: js.UndefOr[String] = js.undefined
+  var jobTriggerName: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The server-assigned name.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Results from analyzing risk of a data source.
@@ -48,17 +44,17 @@ trait SchemaGooglePrivacyDlpV2DlpJob extends StObject {
   /**
     * Time when the job started.
     */
-  var startTime: js.UndefOr[String] = js.undefined
+  var startTime: js.UndefOr[String | Null] = js.undefined
   
   /**
     * State of a job.
     */
-  var state: js.UndefOr[String] = js.undefined
+  var state: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The type of job.
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2DlpJob {
   
@@ -71,9 +67,13 @@ object SchemaGooglePrivacyDlpV2DlpJob {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
+    inline def setCreateTimeNull: Self = StObject.set(x, "createTime", null)
+    
     inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
     inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    
+    inline def setEndTimeNull: Self = StObject.set(x, "endTime", null)
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
@@ -81,7 +81,7 @@ object SchemaGooglePrivacyDlpV2DlpJob {
     
     inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    inline def setErrorsVarargs(value: SchemaGooglePrivacyDlpV2Error*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: SchemaGooglePrivacyDlpV2Error*): Self = StObject.set(x, "errors", js.Array(value*))
     
     inline def setInspectDetails(value: SchemaGooglePrivacyDlpV2InspectDataSourceDetails): Self = StObject.set(x, "inspectDetails", value.asInstanceOf[js.Any])
     
@@ -89,9 +89,13 @@ object SchemaGooglePrivacyDlpV2DlpJob {
     
     inline def setJobTriggerName(value: String): Self = StObject.set(x, "jobTriggerName", value.asInstanceOf[js.Any])
     
+    inline def setJobTriggerNameNull: Self = StObject.set(x, "jobTriggerName", null)
+    
     inline def setJobTriggerNameUndefined: Self = StObject.set(x, "jobTriggerName", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
@@ -101,13 +105,19 @@ object SchemaGooglePrivacyDlpV2DlpJob {
     
     inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
+    inline def setStartTimeNull: Self = StObject.set(x, "startTime", null)
+    
     inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
+    inline def setStateNull: Self = StObject.set(x, "state", null)
+    
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

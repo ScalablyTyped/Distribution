@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Provides data for the local endpoint and remote endpoint for a network connection used by network apps. */
 @JSGlobal("Windows.Networking.EndpointPair")
 @js.native
-class EndpointPair protected ()
+open class EndpointPair protected ()
   extends StObject
      with typings.winrtUwp.Windows.Networking.EndpointPair {
   /**

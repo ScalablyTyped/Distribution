@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "KeyboardEvent")
 @js.native
-class KeyboardEvent protected ()
+open class KeyboardEvent protected ()
   extends typings.wonderJs.keyboardEventMod.KeyboardEvent {
-  def this(event: js.Any, eventName: typings.wonderJs.eventNameHandlerMod.EEventName) = this()
+  def this(event: Any, eventName: typings.wonderJs.eventNameHandlerMod.EEventName) = this()
 }
 /* static members */
 object KeyboardEvent {
@@ -17,5 +17,5 @@ object KeyboardEvent {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def create(event: js.Any, eventName: typings.wonderJs.eventNameHandlerMod.EEventName): typings.wonderJs.keyboardEventMod.KeyboardEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(event.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[typings.wonderJs.keyboardEventMod.KeyboardEvent]
+  inline def create(event: Any, eventName: typings.wonderJs.eventNameHandlerMod.EEventName): typings.wonderJs.keyboardEventMod.KeyboardEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(event.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[typings.wonderJs.keyboardEventMod.KeyboardEvent]
 }

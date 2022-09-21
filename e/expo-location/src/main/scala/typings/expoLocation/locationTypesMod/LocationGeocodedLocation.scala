@@ -6,12 +6,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LocationGeocodedLocation extends StObject {
   
+  /**
+    * The radius of uncertainty for the location, measured in meters.
+    */
   var accuracy: js.UndefOr[Double] = js.undefined
   
+  /**
+    * The altitude in meters above the WGS 84 reference ellipsoid.
+    */
   var altitude: js.UndefOr[Double] = js.undefined
   
+  /**
+    * The latitude in degrees.
+    */
   var latitude: Double
   
+  /**
+    * The longitude in degrees.
+    */
   var longitude: Double
 }
 object LocationGeocodedLocation {

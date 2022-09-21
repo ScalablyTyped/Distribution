@@ -27,7 +27,7 @@ trait AllocateAddressRequest extends StObject {
   var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *  A unique set of Availability Zones, Local Zones, or Wavelength Zones from which AWS advertises IP addresses. Use this parameter to limit the IP address to this location. IP addresses cannot move between network border groups. Use DescribeAvailabilityZones to view the network border groups.  You cannot use a network border group with EC2 Classic. If you attempt this operation on EC2 classic, you will receive an InvalidParameterCombination error. For more information, see Error Codes. 
+    *  A unique set of Availability Zones, Local Zones, or Wavelength Zones from which Amazon Web Services advertises IP addresses. Use this parameter to limit the IP address to this location. IP addresses cannot move between network border groups. Use DescribeAvailabilityZones to view the network border groups. You cannot use a network border group with EC2 Classic. If you attempt this operation on EC2 Classic, you receive an InvalidParameterCombination error.
     */
   var NetworkBorderGroup: js.UndefOr[String] = js.undefined
   
@@ -35,6 +35,11 @@ trait AllocateAddressRequest extends StObject {
     * The ID of an address pool that you own. Use this parameter to let Amazon EC2 select an address from the address pool. To specify a specific address from the address pool, use the Address parameter instead.
     */
   var PublicIpv4Pool: js.UndefOr[Ipv4PoolEc2Id] = js.undefined
+  
+  /**
+    * The tags to assign to the Elastic IP address.
+    */
+  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.undefined
 }
 object AllocateAddressRequest {
   
@@ -68,5 +73,11 @@ object AllocateAddressRequest {
     inline def setPublicIpv4Pool(value: Ipv4PoolEc2Id): Self = StObject.set(x, "PublicIpv4Pool", value.asInstanceOf[js.Any])
     
     inline def setPublicIpv4PoolUndefined: Self = StObject.set(x, "PublicIpv4Pool", js.undefined)
+    
+    inline def setTagSpecifications(value: TagSpecificationList): Self = StObject.set(x, "TagSpecifications", value.asInstanceOf[js.Any])
+    
+    inline def setTagSpecificationsUndefined: Self = StObject.set(x, "TagSpecifications", js.undefined)
+    
+    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value*))
   }
 }

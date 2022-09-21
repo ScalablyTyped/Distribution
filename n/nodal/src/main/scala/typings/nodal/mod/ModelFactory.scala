@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodal", "ModelFactory")
 @js.native
-class ModelFactory protected () extends StObject {
+open class ModelFactory protected () extends StObject {
   /**
     * Create the ModelFactory with a provided Model to use as a reference.
     * @param {Nodal.Model} modelConstructor Must pass the constructor for the type of ModelFactory you wish to create.
     */
   def this(modelConstructor: TypeofModel) = this()
   
-  /* private */ var Model: js.Any = js.native
+  /* private */ var Model: Any = js.native
   
   /**
     * Creates models from an array of Objects containing the model data
@@ -41,7 +41,7 @@ object ModelFactory {
     * Loads all model constructors in your ./app/models directory into an array
     * @return {Array} Array of model Constructors
     */
-  inline def loadModels(): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadModels")().asInstanceOf[js.Array[js.Any]]
+  inline def loadModels(): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadModels")().asInstanceOf[js.Array[Any]]
   
   /**
     * Populates a large amount of model data from an Object.

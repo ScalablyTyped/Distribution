@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("orientjs", "ODB")
 @js.native
-class ODB () extends EventEmitter {
+open class ODB () extends EventEmitter {
   def this(options: EventEmitterOptions) = this()
   
   var `class`: OClass = js.native
@@ -32,11 +32,11 @@ class ODB () extends EventEmitter {
     * @return The query instance.
     */
   def create(): OStatement = js.native
-  def create(params: js.Any): OStatement = js.native
+  def create(params: Any): OStatement = js.native
   def create(paramtype: String, paramname: String): OStatement = js.native
   
-  def createFn(fn: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = js.native
-  def createFn(fn: js.Function1[/* repeated */ js.Any, js.Any], options: js.Any): js.Promise[js.Any] = js.native
+  def createFn(fn: js.Function1[/* repeated */ Any, Any]): js.Promise[Any] = js.native
+  def createFn(fn: js.Function1[/* repeated */ Any, Any], options: Any): js.Promise[Any] = js.native
   /**
     * Create a orient function from a plain Javascript function
     *
@@ -45,8 +45,8 @@ class ODB () extends EventEmitter {
     * @param   options  Not currently used but will be used for 'IDEMPOTENT' arg
     * @promise {Mixed}           The results of the query / command.
     */
-  def createFn(name: String, fn: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = js.native
-  def createFn(name: String, fn: js.Function1[/* repeated */ js.Any, js.Any], options: js.Any): js.Promise[js.Any] = js.native
+  def createFn(name: String, fn: js.Function1[/* repeated */ Any, Any]): js.Promise[Any] = js.native
+  def createFn(name: String, fn: js.Function1[/* repeated */ Any, Any], options: Any): js.Promise[Any] = js.native
   
   /**
     * Create a query instance for this database.
@@ -63,9 +63,9 @@ class ODB () extends EventEmitter {
     * @param  token The authentication token.
     * @return              The object containing the query builder methods.
     */
-  def createUserContext(token: js.Any): js.Any = js.native
+  def createUserContext(token: Any): Any = js.native
   
-  var dataSegments: js.Array[js.Any] = js.native
+  var dataSegments: js.Array[Any] = js.native
   
   /**
     * Create a delete query.
@@ -73,7 +73,7 @@ class ODB () extends EventEmitter {
     * @return The query instance.
     */
   def delete(): OStatement = js.native
-  def delete(params: js.Any): OStatement = js.native
+  def delete(params: Any): OStatement = js.native
   
   /**
     * Escape the given input.
@@ -125,7 +125,7 @@ class ODB () extends EventEmitter {
     * @return The query instance.
     */
   def insert(): OStatement = js.native
-  def insert(params: js.Any): OStatement = js.native
+  def insert(params: Any): OStatement = js.native
   
   /**
     * Create a transactional query.
@@ -135,7 +135,7 @@ class ODB () extends EventEmitter {
   def let(): OStatement = js.native
   def let(name: String, value: String): OStatement = js.native
   def let(name: String, value: OStatement): OStatement = js.native
-  def let(params: js.Any): OStatement = js.native
+  def let(params: Any): OStatement = js.native
   
   var name: String = js.native
   
@@ -144,14 +144,14 @@ class ODB () extends EventEmitter {
     * @param  result The result to normalize.
     * @return        The normalized result.
     */
-  def normalizeResult(result: js.Any): js.Any = js.native
+  def normalizeResult(result: Any): Any = js.native
   
   /**
     * Normalize the content for a result.
     * @param  content The content to normalize.
     * @return         The normalized content.
     */
-  def normalizeResultContent(content: js.Any): js.Any = js.native
+  def normalizeResultContent(content: Any): Any = js.native
   
   /**
     * Open the database.
@@ -195,7 +195,7 @@ class ODB () extends EventEmitter {
     * @return The query instance.
     */
   def select(): OStatement = js.native
-  def select(params: js.Any): OStatement = js.native
+  def select(params: Any): OStatement = js.native
   
   /**
     * Send the given operation to the server, ensuring the
@@ -205,7 +205,7 @@ class ODB () extends EventEmitter {
     * @param  data       The data for the operation.
     * @promise {Mixed}            The result of the operation.
     */
-  def send[R](operation: Double, data: js.Any): js.Promise[R] = js.native
+  def send[R](operation: Double, data: Any): js.Promise[R] = js.native
   
   var sequence: OSequence = js.native
   
@@ -220,11 +220,11 @@ class ODB () extends EventEmitter {
     * @returns
     */
   def sqlFunction(): OSqlFunction = js.native
-  def sqlFunction(options: js.Any): OSqlFunction = js.native
+  def sqlFunction(options: Any): OSqlFunction = js.native
   
   var storage: plocal | memory = js.native
   
-  var token: js.Any = js.native
+  var token: Any = js.native
   
   var transactionId: Double = js.native
   
@@ -233,11 +233,11 @@ class ODB () extends EventEmitter {
     * @param  document The document to transform.
     * @return           The transformed document.
     */
-  def transformDocument(document: ODocument): js.Any = js.native
+  def transformDocument(document: ODocument): Any = js.native
   
-  var transformerFunctions: js.Any = js.native
+  var transformerFunctions: Any = js.native
   
-  var transformers: js.Any = js.native
+  var transformers: Any = js.native
   
   /**
     * Create a traverse query.
@@ -245,7 +245,7 @@ class ODB () extends EventEmitter {
     * @return The query instance.
     */
   def traverse(): OStatement = js.native
-  def traverse(params: js.Any): OStatement = js.native
+  def traverse(params: Any): OStatement = js.native
   
   var `type`: graph | document = js.native
   
@@ -255,7 +255,7 @@ class ODB () extends EventEmitter {
     * @return The query instance.
     */
   def update(): OStatement = js.native
-  def update(params: js.Any): OStatement = js.native
+  def update(params: Any): OStatement = js.native
   
   var username: String = js.native
 }

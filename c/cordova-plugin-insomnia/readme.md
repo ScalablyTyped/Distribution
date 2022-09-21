@@ -10,10 +10,10 @@ Prevent the screen of the mobile device from falling asleep.
 | ------------------ | :-------------: |
 | Full name          | cordova-plugin-insomnia |
 | Keywords           | ecosystem:cordova, cordova-ios, cordova-wp8, cordova-windows, cordova-android, cordova-firefoxos |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 187103 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 27606.0 |
+| # stars            | 265.0 |
 
 ## Links
 - [Homepage](https://github.com/EddyVerbruggen/Insomnia-PhoneGap-Plugin#readme)

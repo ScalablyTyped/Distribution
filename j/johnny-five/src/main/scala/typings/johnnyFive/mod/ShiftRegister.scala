@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("johnny-five", "ShiftRegister")
 @js.native
-class ShiftRegister protected () extends StObject {
+open class ShiftRegister protected () extends StObject {
   def this(option: ShiftRegisterOption) = this()
   
   def clear(): Unit = js.native
@@ -18,11 +18,11 @@ class ShiftRegister protected () extends StObject {
   
   val isAnode: Boolean = js.native
   
-  var pins: js.Any = js.native
+  var pins: Any = js.native
   
   def reset(): Unit = js.native
   
   def send(value: Double*): Unit = js.native
   
-  val value: js.Any = js.native
+  val value: Any = js.native
 }

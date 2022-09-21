@@ -9,6 +9,9 @@ trait TimeWindow extends StObject {
   /** The time that the window ends. The end time should take place after the start time. */
   var endTime: js.UndefOr[String] = js.undefined
   
+  /** MaintenanceExclusionOptions provides maintenance exclusion related options. */
+  var maintenanceExclusionOptions: js.UndefOr[MaintenanceExclusionOptions] = js.undefined
+  
   /** The time that the window first starts. */
   var startTime: js.UndefOr[String] = js.undefined
 }
@@ -24,6 +27,10 @@ object TimeWindow {
     inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    
+    inline def setMaintenanceExclusionOptions(value: MaintenanceExclusionOptions): Self = StObject.set(x, "maintenanceExclusionOptions", value.asInstanceOf[js.Any])
+    
+    inline def setMaintenanceExclusionOptionsUndefined: Self = StObject.set(x, "maintenanceExclusionOptions", js.undefined)
     
     inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     

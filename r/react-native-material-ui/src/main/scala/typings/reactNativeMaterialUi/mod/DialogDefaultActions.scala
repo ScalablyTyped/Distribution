@@ -7,12 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-material-ui", "DialogDefaultActions")
 @js.native
-class DialogDefaultActions protected ()
-  extends Component[DialogDefaultActionsProps, js.Any, js.Any] {
+open class DialogDefaultActions protected () extends Component[DialogDefaultActionsProps, Any, Any] {
   def this(props: DialogDefaultActionsProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: DialogDefaultActionsProps, context: js.Any) = this()
+  def this(props: DialogDefaultActionsProps, context: Any) = this()
 }

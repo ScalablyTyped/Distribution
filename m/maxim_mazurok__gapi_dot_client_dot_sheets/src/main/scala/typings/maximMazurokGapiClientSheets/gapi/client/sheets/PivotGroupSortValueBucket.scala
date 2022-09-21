@@ -29,7 +29,7 @@ object PivotGroupSortValueBucket {
     
     inline def setBucketsUndefined: Self = StObject.set(x, "buckets", js.undefined)
     
-    inline def setBucketsVarargs(value: ExtendedValue*): Self = StObject.set(x, "buckets", js.Array(value :_*))
+    inline def setBucketsVarargs(value: ExtendedValue*): Self = StObject.set(x, "buckets", js.Array(value*))
     
     inline def setValuesIndex(value: Double): Self = StObject.set(x, "valuesIndex", value.asInstanceOf[js.Any])
     

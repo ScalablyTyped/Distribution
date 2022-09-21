@@ -24,7 +24,7 @@ trait ScanCodeOptions extends StObject {
   /**
     * 扫码类型，参数类型是数组，二维码是'qrCode'，一维码是'barCode'，DataMatrix是‘datamatrix’，pdf417是‘pdf417’。
     */
-  var scanType: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var scanType: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * 成功返回的回调函数
@@ -52,11 +52,11 @@ object ScanCodeOptions {
     
     inline def setOnlyFromCameraUndefined: Self = StObject.set(x, "onlyFromCamera", js.undefined)
     
-    inline def setScanType(value: js.Array[js.Any]): Self = StObject.set(x, "scanType", value.asInstanceOf[js.Any])
+    inline def setScanType(value: js.Array[Any]): Self = StObject.set(x, "scanType", value.asInstanceOf[js.Any])
     
     inline def setScanTypeUndefined: Self = StObject.set(x, "scanType", js.undefined)
     
-    inline def setScanTypeVarargs(value: js.Any*): Self = StObject.set(x, "scanType", js.Array(value :_*))
+    inline def setScanTypeVarargs(value: Any*): Self = StObject.set(x, "scanType", js.Array(value*))
     
     inline def setSuccess(value: /* result */ ScanCodeSuccessRes => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

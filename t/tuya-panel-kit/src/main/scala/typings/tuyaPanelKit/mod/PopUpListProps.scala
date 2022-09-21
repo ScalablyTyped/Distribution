@@ -12,7 +12,6 @@ import typings.reactNative.mod.AccessibilityActionEvent
 import typings.reactNative.mod.AccessibilityActionInfo
 import typings.reactNative.mod.AccessibilityRole
 import typings.reactNative.mod.AccessibilityState
-import typings.reactNative.mod.AccessibilityTrait
 import typings.reactNative.mod.AccessibilityValue
 import typings.reactNative.mod.ColorValue
 import typings.reactNative.mod.GestureResponderEvent
@@ -20,7 +19,8 @@ import typings.reactNative.mod.Insets
 import typings.reactNative.mod.LayoutChangeEvent
 import typings.reactNative.mod.NativeScrollEvent
 import typings.reactNative.mod.NativeSyntheticEvent
-import typings.reactNative.mod.PointPropType
+import typings.reactNative.mod.PointProp
+import typings.reactNative.mod.PointerEvent
 import typings.reactNative.mod.ScrollViewProps
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TVParallaxProperties
@@ -29,7 +29,7 @@ import typings.reactNative.mod.ViewStyle
 import typings.reactNative.mod.ViewabilityConfigCallbackPair
 import typings.reactNative.mod.ViewabilityConfigCallbackPairs
 import typings.tuyaPanelKit.anon.BackIconColor
-import typings.tuyaPanelKit.anon.Container
+import typings.tuyaPanelKit.anon.Content
 import typings.tuyaPanelKit.anon.`21`
 import typings.tuyaPanelKit.tuyaPanelKitStrings.Fade
 import typings.tuyaPanelKit.tuyaPanelKitStrings.PullUp
@@ -43,13 +43,13 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.`no-hide-descendants`
 import typings.tuyaPanelKit.tuyaPanelKitStrings.`on-drag`
 import typings.tuyaPanelKit.tuyaPanelKitStrings.`portrait-upside-down`
 import typings.tuyaPanelKit.tuyaPanelKitStrings.always
+import typings.tuyaPanelKit.tuyaPanelKitStrings.arrow
 import typings.tuyaPanelKit.tuyaPanelKitStrings.assertive
 import typings.tuyaPanelKit.tuyaPanelKitStrings.auto
 import typings.tuyaPanelKit.tuyaPanelKitStrings.automatic
 import typings.tuyaPanelKit.tuyaPanelKitStrings.black
 import typings.tuyaPanelKit.tuyaPanelKitStrings.both
 import typings.tuyaPanelKit.tuyaPanelKitStrings.bottom
-import typings.tuyaPanelKit.tuyaPanelKitStrings.button
 import typings.tuyaPanelKit.tuyaPanelKitStrings.center
 import typings.tuyaPanelKit.tuyaPanelKitStrings.default
 import typings.tuyaPanelKit.tuyaPanelKitStrings.end
@@ -69,8 +69,6 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.pageSheet
 import typings.tuyaPanelKit.tuyaPanelKitStrings.polite
 import typings.tuyaPanelKit.tuyaPanelKitStrings.portrait
 import typings.tuyaPanelKit.tuyaPanelKitStrings.radio
-import typings.tuyaPanelKit.tuyaPanelKitStrings.radiobutton_checked
-import typings.tuyaPanelKit.tuyaPanelKitStrings.radiobutton_unchecked
 import typings.tuyaPanelKit.tuyaPanelKitStrings.scrollableAxes
 import typings.tuyaPanelKit.tuyaPanelKitStrings.singleCancel
 import typings.tuyaPanelKit.tuyaPanelKitStrings.singleConfirm
@@ -87,25 +85,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent std.Omit<tuya-panel-kit.tuya-panel-kit.TYFlatListProps<{}>, 'renderItem' | 'data'> */
 trait PopUpListProps extends StObject {
   
-  var CellRendererComponent: js.UndefOr[ComponentType[js.Any]] = js.undefined
+  var CellRendererComponent: js.UndefOr[ComponentType[Any]] = js.undefined
   
-  var ItemSeparatorComponent: js.UndefOr[ComponentType[js.Any] | Null] = js.undefined
+  var ItemSeparatorComponent: js.UndefOr[ComponentType[Any] | Null] = js.undefined
   
-  var ListEmptyComponent: js.UndefOr[ComponentType[js.Any] | ReactElement | Null] = js.undefined
+  var ListEmptyComponent: js.UndefOr[ComponentType[Any] | ReactElement | Null] = js.undefined
   
-  var ListFooterComponent: js.UndefOr[ComponentType[js.Any] | ReactElement | Null] = js.undefined
+  var ListFooterComponent: js.UndefOr[ComponentType[Any] | ReactElement | Null] = js.undefined
   
-  var ListFooterComponentStyle: js.UndefOr[ViewStyle | Null] = js.undefined
+  var ListFooterComponentStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var ListHeaderComponent: js.UndefOr[ComponentType[js.Any] | ReactElement | Null] = js.undefined
+  var ListHeaderComponent: js.UndefOr[ComponentType[Any] | ReactElement | Null] = js.undefined
   
-  var ListHeaderComponentStyle: js.UndefOr[ViewStyle | Null] = js.undefined
+  var ListHeaderComponentStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
+  var StickyHeaderComponent: js.UndefOr[ComponentType[Any]] = js.undefined
+  
+  /**
+    * @language zh-CN
+    * @description 值改变的回调
+    * @defaultValue () => {}
+    */
+  /**
+    * @language en-US
+    * @description Callback of value change
+    * @defaultValue () => {}
+    */
   var _onDataChange: js.UndefOr[js.Function1[/* value */ js.UndefOr[String | js.Array[String]], Unit]] = js.undefined
   
   var accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.undefined
-  
-  var accessibilityComponentType: js.UndefOr[none_ | button | radiobutton_checked | radiobutton_unchecked] = js.undefined
   
   var accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined
   
@@ -115,13 +123,15 @@ trait PopUpListProps extends StObject {
   
   var accessibilityLabel: js.UndefOr[String] = js.undefined
   
+  var accessibilityLabelledBy: js.UndefOr[String | js.Array[String]] = js.undefined
+  
+  var accessibilityLanguage: js.UndefOr[String] = js.undefined
+  
   var accessibilityLiveRegion: js.UndefOr[none_ | polite | assertive] = js.undefined
   
   var accessibilityRole: js.UndefOr[AccessibilityRole] = js.undefined
   
   var accessibilityState: js.UndefOr[AccessibilityState] = js.undefined
-  
-  var accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.undefined
   
   var accessibilityValue: js.UndefOr[AccessibilityValue] = js.undefined
   
@@ -143,8 +153,32 @@ trait PopUpListProps extends StObject {
   
   var automaticallyAdjustContentInsets: js.UndefOr[Boolean] = js.undefined
   
+  var automaticallyAdjustKeyboardInsets: js.UndefOr[Boolean] = js.undefined
+  
+  var automaticallyAdjustsScrollIndicatorInsets: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * @language zh-CN
+    * @description 返回 Icon 颜色
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Back icon color
+    * @defaultValue null
+    */
   var backIconColor: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 返回按钮
+    * @defaultValue 'Back'
+    */
+  /**
+    * @language en-US
+    * @description Back Text
+    * @defaultValue 'Back'
+    */
   var backText: js.UndefOr[String] = js.undefined
   
   var bounces: js.UndefOr[Boolean] = js.undefined
@@ -153,20 +187,76 @@ trait PopUpListProps extends StObject {
   
   var canCancelContentTouches: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 取消文案
+    * @defaultValue "Cancel"
+    */
+  /**
+    * @language en-US
+    * @description Cancel Text
+    * @defaultValue "Cancel"
+    */
   var cancelText: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 取消文案样式
+    * @types <a target="_blank" href="https://reactnative.dev/docs/text-style-props">StyleProp<TextStyle></a>
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Cancellation text style
+    * @types <a target="_blank" href="https://reactnative.dev/docs/text-style-props">StyleProp<TextStyle></a>
+    * @defaultValue null
+    */
   var cancelTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
   var centerContent: js.UndefOr[Boolean] = js.undefined
+  
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   var collapsable: js.UndefOr[Boolean] = js.undefined
   
   var columnWrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 确认文案
+    * @defaultValue "Confirm"
+    */
+  /**
+    * @language en-US
+    * @description Confirm Text
+    * @defaultValue "Confirm"
+    */
   var confirmText: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 确认文案样式
+    * @types <a target="_blank" href="https://reactnative.dev/docs/text-style-props">StyleProp<TextStyle></a>
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Confirmation text style
+    * @types <a target="_blank" href="https://reactnative.dev/docs/text-style-props">StyleProp<TextStyle></a>
+    * @defaultValue null
+    */
   var confirmTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 内容是否居中
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Whether the content is centered
+    * @defaultValue null
+    */
   var contentCenter: js.UndefOr[Boolean] = js.undefined
   
   var contentContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
@@ -175,8 +265,20 @@ trait PopUpListProps extends StObject {
   
   var contentInsetAdjustmentBehavior: js.UndefOr[automatic | scrollableAxes | never | always] = js.undefined
   
-  var contentOffset: js.UndefOr[PointPropType] = js.undefined
+  var contentOffset: js.UndefOr[PointProp] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 数据源
+    * @types <a target="_blank" href="https://github.com/tuya/DefinitelyTyped/blob/299b2dd5a2ac708ca9464aba3685300acb7c865c/types/tuya-panel-kit/index.d.ts#L2770">ListDate[]</a>
+    * @defaultValue []
+    */
+  /**
+    * @language en-US
+    * @description DataSource
+    * @types <a target="_blank" href="https://github.com/tuya/DefinitelyTyped/blob/299b2dd5a2ac708ca9464aba3685300acb7c865c/types/tuya-panel-kit/index.d.ts#L2770">ListDate[]</a>
+    * @defaultValue []
+    */
   var dataSource: js.UndefOr[js.Array[ListDate]] = js.undefined
   
   var debug: js.UndefOr[Boolean] = js.undefined
@@ -193,7 +295,7 @@ trait PopUpListProps extends StObject {
   
   var endFillColor: js.UndefOr[ColorValue] = js.undefined
   
-  var extraData: js.UndefOr[js.Any] = js.undefined
+  var extraData: js.UndefOr[Any] = js.undefined
   
   var fadingEdgeLength: js.UndefOr[Double] = js.undefined
   
@@ -201,15 +303,47 @@ trait PopUpListProps extends StObject {
   
   var focusable: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 自定义底部
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Custom footer
+    * @defaultValue null
+    */
   var footer: js.UndefOr[ReactNode] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description footer 容器显示状态，显示全部、只显示确认、只显示取消
+    * @defaultValue 'both'
+    */
+  /**
+    * @language en-US
+    * @description footer container display status.
+    * @defaultValue 'both'
+    */
   var footerType: js.UndefOr[both | singleConfirm | singleCancel] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 底部样式
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue {}
+    */
+  /**
+    * @language en-US
+    * @description Footer container style
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue {}
+    */
   var footerWrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var getItem: js.UndefOr[js.Function2[/* data */ js.Any, /* index */ Double, js.Object]] = js.undefined
+  var getItem: js.UndefOr[js.Function2[/* data */ Any, /* index */ Double, js.Object]] = js.undefined
   
-  var getItemCount: js.UndefOr[js.Function1[/* data */ js.Any, Double]] = js.undefined
+  var getItemCount: js.UndefOr[js.Function1[/* data */ Any, Double]] = js.undefined
   
   var getItemLayout: js.UndefOr[
     js.Function2[/* data */ js.UndefOr[js.Array[js.Object] | Null], /* index */ Double, Index]
@@ -223,6 +357,16 @@ trait PopUpListProps extends StObject {
   
   var horizontal: js.UndefOr[Boolean | Null] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 设置 type 为 radio 时选中图标的颜色
+    * @defaultValue ''
+    */
+  /**
+    * @language en-US
+    * @description Color of the icon selected when type is set to radio
+    * @defaultValue ''
+    */
   var iconTintColor: js.UndefOr[String] = js.undefined
   
   var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.undefined
@@ -237,6 +381,16 @@ trait PopUpListProps extends StObject {
   
   var inverted: js.UndefOr[Boolean | Null] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 是否垂直居中
+    * @defaultValue false
+    */
+  /**
+    * @language en-US
+    * @description Is it vertically centered
+    * @defaultValue false
+    */
   var isAlign: js.UndefOr[Boolean] = js.undefined
   
   var isTVSelectable: js.UndefOr[Boolean] = js.undefined
@@ -249,10 +403,32 @@ trait PopUpListProps extends StObject {
   
   var legacyImplementation: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 列表弹窗样式
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description List pop up style
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
   var listItemStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   var listKey: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 列表弹窗样式
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description List pop up style
+    * @defaultValue null
+    */
   var listWrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   var maintainVisibleContentPosition: js.UndefOr[Null | AutoscrollToTopThreshold] = js.undefined
@@ -261,6 +437,16 @@ trait PopUpListProps extends StObject {
   
   var maskStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 最大列表数量
+    * @defaultValue 5
+    */
+  /**
+    * @language en-US
+    * @description Maximum number of lists
+    * @defaultValue 5
+    */
   var maxItemNum: js.UndefOr[Double] = js.undefined
   
   var maxToRenderPerBatch: js.UndefOr[Double] = js.undefined
@@ -271,10 +457,32 @@ trait PopUpListProps extends StObject {
   
   var modalChildStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 动画配置
+    * @types <a target="_blank" href="https://github.com/tuya/DefinitelyTyped/blob/299b2dd5a2ac708ca9464aba3685300acb7c865c/types/tuya-panel-kit/index.d.ts#L2438">MotionScaleFadeInProps</a> | <a target="_blank" href="https://github.com/tuya/DefinitelyTyped/blob/299b2dd5a2ac708ca9464aba3685300acb7c865c/types/tuya-panel-kit/index.d.ts#L2430">MotionFadeProps</a> | <a target="_blank" href="https://github.com/tuya/DefinitelyTyped/blob/299b2dd5a2ac708ca9464aba3685300acb7c865c/types/tuya-panel-kit/index.d.ts#L2434">MotionPullUpProps</a> | <a target="_blank" href="https://github.com/tuya/DefinitelyTyped/blob/299b2dd5a2ac708ca9464aba3685300acb7c865c/types/tuya-panel-kit/index.d.ts#L2446">MotionScalePullDownProps</a>
+    * @defaultValue {}
+    */
+  /**
+    * @language en-US
+    * @description Painting configuration
+    * @types <a target="_blank" href="https://github.com/tuya/DefinitelyTyped/blob/299b2dd5a2ac708ca9464aba3685300acb7c865c/types/tuya-panel-kit/index.d.ts#L2438">MotionScaleFadeInProps</a> | <a target="_blank" href="https://github.com/tuya/DefinitelyTyped/blob/299b2dd5a2ac708ca9464aba3685300acb7c865c/types/tuya-panel-kit/index.d.ts#L2430">MotionFadeProps</a> | <a target="_blank" href="https://github.com/tuya/DefinitelyTyped/blob/299b2dd5a2ac708ca9464aba3685300acb7c865c/types/tuya-panel-kit/index.d.ts#L2434">MotionPullUpProps</a> | <a target="_blank" href="https://github.com/tuya/DefinitelyTyped/blob/299b2dd5a2ac708ca9464aba3685300acb7c865c/types/tuya-panel-kit/index.d.ts#L2446">MotionScalePullDownProps</a>
+    * @defaultValue {}
+    */
   var motionConfig: js.UndefOr[
     MotionScaleFadeInProps | MotionFadeProps | MotionPullUpProps | MotionScalePullDownProps
   ] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 动画类型
+    * @defaultValue "PullUp"
+    */
+  /**
+    * @language en-US
+    * @description Animation type
+    * @defaultValue "PullUp"
+    */
   var motionType: js.UndefOr[none_ | ScaleFadeIn | Fade | PullUp | ScalePullDown] = js.undefined
   
   var nativeID: js.UndefOr[String] = js.undefined
@@ -291,11 +499,41 @@ trait PopUpListProps extends StObject {
   
   var onAccessibilityTap: js.UndefOr[js.Function0[Unit]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 返回回调
+    * @defaultValue () => {}
+    */
+  /**
+    * @language en-US
+    * @description Callback of back
+    * @defaultValue () => {}
+    */
   var onBack: js.UndefOr[js.Function1[/* args */ `21`, Unit]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 取消点击回调
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Callback of clicking the cancel button
+    * @defaultValue null
+    */
   var onCancel: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onConfirm: js.UndefOr[js.Function2[/* data */ js.Any, /* args */ `21`, Unit]] = js.undefined
+  /**
+    * @language zh-CN
+    * @description 确认点击回调
+    * @defaultValue () => {}
+    */
+  /**
+    * @language en-US
+    * @description Callback of clicking the confirm button
+    * @defaultValue () => {}
+    */
+  var onConfirm: js.UndefOr[js.Function2[/* data */ Any, /* args */ `21`, Unit]] = js.undefined
   
   var onContentSizeChange: js.UndefOr[js.Function2[/* w */ Double, /* h */ Double, Unit]] = js.undefined
   
@@ -309,6 +547,16 @@ trait PopUpListProps extends StObject {
   
   var onMagicTap: js.UndefOr[js.Function0[Unit]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 遮罩层点击
+    * @defaultValue () => {}
+    */
+  /**
+    * @language en-US
+    * @description Mask layer Click
+    * @defaultValue () => {}
+    */
   var onMaskPress: js.UndefOr[js.Function1[/* args */ `21`, Unit]] = js.undefined
   
   var onMomentumScrollBegin: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[NativeScrollEvent], Unit]] = js.undefined
@@ -319,11 +567,35 @@ trait PopUpListProps extends StObject {
   
   var onMoveShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
   
-  var onOrientationChange: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[js.Any], Unit]] = js.undefined
+  var onOrientationChange: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[Any], Unit]] = js.undefined
+  
+  var onPointerCancel: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerCancelCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerDown: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerDownCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerEnter: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerEnterCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerLeave: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerLeaveCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerMove: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerMoveCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerUp: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerUpCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
   var onRefresh: js.UndefOr[js.Function0[Unit] | Null] = js.undefined
   
-  var onRequestClose: js.UndefOr[js.Function0[Unit]] = js.undefined
+  var onRequestClose: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[Any], Unit]] = js.undefined
   
   var onResponderEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
@@ -353,16 +625,34 @@ trait PopUpListProps extends StObject {
   
   var onScrollToTop: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[NativeScrollEvent], Unit]] = js.undefined
   
-  var onSelect: js.UndefOr[
-    js.Function2[/* value */ String | Double, /* sValue */ js.UndefOr[Boolean], Unit]
-  ] = js.undefined
+  /**
+    * @language zh-CN
+    * @description 选中的回调函数
+    * @defaultValue () => {}
+    */
+  /**
+    * @language en-US
+    * @description Callback of selecting the event
+    * @defaultValue () => {}
+    */
+  var onSelect: js.UndefOr[js.Function2[/* value */ String | Double, /* params */ js.UndefOr[`21`], Unit]] = js.undefined
   
-  var onShow: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[js.Any], Unit]] = js.undefined
+  var onShow: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[Any], Unit]] = js.undefined
   
   var onStartShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
   
   var onStartShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 头部栏开关切换回调
+    * @defaultValue () => {}
+    */
+  /**
+    * @language en-US
+    * @description Callback of switching the header bar button
+    * @defaultValue () => {}
+    */
   var onSwitchValueChange: js.UndefOr[js.Function1[/* value */ Boolean, Unit]] = js.undefined
   
   var onTouchCancel: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
@@ -415,13 +705,45 @@ trait PopUpListProps extends StObject {
   
   var scrollsToTop: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 设置type为radio时选中的图标
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description The icon selected when type is set to radio
+    * @defaultValue null
+    */
   var selectedIcon: js.UndefOr[ReactNode] = js.undefined
   
   var separatorStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   var shouldRasterizeIOS: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 是否显示返回按钮
+    * @defaultValue false
+    */
+  /**
+    * @language en-US
+    * @description Is the return button displayed
+    * @defaultValue false
+    */
   var showBack: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * @language zh-CN
+    * @description 是否显示头部栏与内容框的分割线
+    * @defaultValue true
+    */
+  /**
+    * @language en-US
+    * @description Whether to show the split line between the header bar and the content box
+    * @defaultValue true
+    */
+  var showTitleDivider: js.UndefOr[Boolean] = js.undefined
   
   var showsHorizontalScrollIndicator: js.UndefOr[Boolean] = js.undefined
   
@@ -439,12 +761,36 @@ trait PopUpListProps extends StObject {
   
   var statusBarTranslucent: js.UndefOr[Boolean] = js.undefined
   
+  var stickyHeaderHiddenOnScroll: js.UndefOr[Boolean] = js.undefined
+  
   var stickyHeaderIndices: js.UndefOr[js.Array[Double]] = js.undefined
   
   var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var styles: js.UndefOr[Container] = js.undefined
+  /**
+    * @language zh-CN
+    * @description 各部分的样式
+    * @types <a target="_blank" href="https://github.com/tuya/DefinitelyTyped/blob/299b2dd5a2ac708ca9464aba3685300acb7c865c/types/tuya-panel-kit/index.d.ts#L2969">styles</a>
+    * @defaultValue {}
+    */
+  /**
+    * @language en-US
+    * @description Style of each part
+    * @types <a target="_blank" href="https://github.com/tuya/DefinitelyTyped/blob/299b2dd5a2ac708ca9464aba3685300acb7c865c/types/tuya-panel-kit/index.d.ts#L2969">styles</a>
+    * @defaultValue {}
+    */
+  var styles: js.UndefOr[Content] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 副标题
+    * @defaultValue ''
+    */
+  /**
+    * @language en-US
+    * @description SubTitle
+    * @defaultValue ''
+    */
   var subTitle: js.UndefOr[String] = js.undefined
   
   var supportedOrientations: js.UndefOr[
@@ -453,16 +799,72 @@ trait PopUpListProps extends StObject {
     ]
   ] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 头部栏开关状态，若该值存在则头部栏将会显示 Switch 按钮
+    * @defaultValue undefined
+    */
+  /**
+    * @language en-US
+    * @description The status of the header bar button. If the value exists, the header bar will display the Switch button.
+    * @defaultValue undefined
+    */
   var switchValue: js.UndefOr[Boolean] = js.undefined
   
   var testID: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 样式配置
+    * @types <a target="_blank" href="https://github.com/tuya/DefinitelyTyped/blob/299b2dd5a2ac708ca9464aba3685300acb7c865c/types/tuya-panel-kit/index.d.ts#L2925">theme</a>
+    * @defaultValue {}
+    */
+  /**
+    * @language en-US
+    * @description Style configuration
+    * @types <a target="_blank" href="https://github.com/tuya/DefinitelyTyped/blob/299b2dd5a2ac708ca9464aba3685300acb7c865c/types/tuya-panel-kit/index.d.ts#L2925">theme</a>
+    * @defaultValue {}
+    */
   var theme: js.UndefOr[BackIconColor] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description Popup 头部标题
+    * @defaultValue "Modal"
+    */
+  /**
+    * @language en-US
+    * @description Popup header title
+    * @defaultValue "Modal"
+    */
   var title: js.UndefOr[String | js.Array[String] | ReactNode] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description Popup 头部标题样式
+    * @types <a target="_blank" href="https://reactnative.dev/docs/text-style-props">StyleProp<TextStyle></a>
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Popup header title style
+    * @types <a target="_blank" href="https://reactnative.dev/docs/text-style-props">StyleProp<TextStyle></a>
+    * @defaultValue null
+    */
   var titleTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description Popup 头部样式
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Popup header style
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
   var titleWrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   var transparent: js.UndefOr[Boolean] = js.undefined
@@ -477,7 +879,17 @@ trait PopUpListProps extends StObject {
   
   var tvParallaxTiltAngle: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[radio | switch] = js.undefined
+  /**
+    * @language zh-CN
+    * @description 列表选择弹出层的类型
+    * @defaultValue 'radio'
+    */
+  /**
+    * @language en-US
+    * @description List selection popup type
+    * @defaultValue 'radio'
+    */
+  var `type`: js.UndefOr[radio | switch | arrow] = js.undefined
   
   var updateCellsBatchingPeriod: js.UndefOr[Double] = js.undefined
   
@@ -485,9 +897,19 @@ trait PopUpListProps extends StObject {
   
   var useKeyboardView: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 选中的值
+    * @defaultValue -1
+    */
+  /**
+    * @language en-US
+    * @description The selected value. Multiple selection type is array, and single selection is string or number
+    * @defaultValue -1
+    */
   var value: js.UndefOr[String | Double | (js.Array[Double | String])] = js.undefined
   
-  var viewabilityConfig: js.UndefOr[js.Any] = js.undefined
+  var viewabilityConfig: js.UndefOr[Any] = js.undefined
   
   var viewabilityConfigCallbackPairs: js.UndefOr[ViewabilityConfigCallbackPairs] = js.undefined
   
@@ -495,6 +917,18 @@ trait PopUpListProps extends StObject {
   
   var windowSize: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 容器样式
+    * @types <a target="_blank" href="https://reactnative.dev/docs/text-style-props">StyleProp<TextStyle></a>
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Container style
+    * @types <a target="_blank" href="https://reactnative.dev/docs/text-style-props">StyleProp<TextStyle></a>
+    * @defaultValue null
+    */
   var wrapperStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
   var zoomScale: js.UndefOr[Double] = js.undefined
@@ -512,11 +946,7 @@ object PopUpListProps {
     
     inline def setAccessibilityActionsUndefined: Self = StObject.set(x, "accessibilityActions", js.undefined)
     
-    inline def setAccessibilityActionsVarargs(value: AccessibilityActionInfo*): Self = StObject.set(x, "accessibilityActions", js.Array(value :_*))
-    
-    inline def setAccessibilityComponentType(value: none_ | button | radiobutton_checked | radiobutton_unchecked): Self = StObject.set(x, "accessibilityComponentType", value.asInstanceOf[js.Any])
-    
-    inline def setAccessibilityComponentTypeUndefined: Self = StObject.set(x, "accessibilityComponentType", js.undefined)
+    inline def setAccessibilityActionsVarargs(value: AccessibilityActionInfo*): Self = StObject.set(x, "accessibilityActions", js.Array(value*))
     
     inline def setAccessibilityElementsHidden(value: Boolean): Self = StObject.set(x, "accessibilityElementsHidden", value.asInstanceOf[js.Any])
     
@@ -534,6 +964,16 @@ object PopUpListProps {
     
     inline def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
     
+    inline def setAccessibilityLabelledBy(value: String | js.Array[String]): Self = StObject.set(x, "accessibilityLabelledBy", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityLabelledByUndefined: Self = StObject.set(x, "accessibilityLabelledBy", js.undefined)
+    
+    inline def setAccessibilityLabelledByVarargs(value: String*): Self = StObject.set(x, "accessibilityLabelledBy", js.Array(value*))
+    
+    inline def setAccessibilityLanguage(value: String): Self = StObject.set(x, "accessibilityLanguage", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityLanguageUndefined: Self = StObject.set(x, "accessibilityLanguage", js.undefined)
+    
     inline def setAccessibilityLiveRegion(value: none_ | polite | assertive): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityLiveRegionUndefined: Self = StObject.set(x, "accessibilityLiveRegion", js.undefined)
@@ -545,12 +985,6 @@ object PopUpListProps {
     inline def setAccessibilityState(value: AccessibilityState): Self = StObject.set(x, "accessibilityState", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityStateUndefined: Self = StObject.set(x, "accessibilityState", js.undefined)
-    
-    inline def setAccessibilityTraits(value: AccessibilityTrait | js.Array[AccessibilityTrait]): Self = StObject.set(x, "accessibilityTraits", value.asInstanceOf[js.Any])
-    
-    inline def setAccessibilityTraitsUndefined: Self = StObject.set(x, "accessibilityTraits", js.undefined)
-    
-    inline def setAccessibilityTraitsVarargs(value: AccessibilityTrait*): Self = StObject.set(x, "accessibilityTraits", js.Array(value :_*))
     
     inline def setAccessibilityValue(value: AccessibilityValue): Self = StObject.set(x, "accessibilityValue", value.asInstanceOf[js.Any])
     
@@ -592,6 +1026,14 @@ object PopUpListProps {
     
     inline def setAutomaticallyAdjustContentInsetsUndefined: Self = StObject.set(x, "automaticallyAdjustContentInsets", js.undefined)
     
+    inline def setAutomaticallyAdjustKeyboardInsets(value: Boolean): Self = StObject.set(x, "automaticallyAdjustKeyboardInsets", value.asInstanceOf[js.Any])
+    
+    inline def setAutomaticallyAdjustKeyboardInsetsUndefined: Self = StObject.set(x, "automaticallyAdjustKeyboardInsets", js.undefined)
+    
+    inline def setAutomaticallyAdjustsScrollIndicatorInsets(value: Boolean): Self = StObject.set(x, "automaticallyAdjustsScrollIndicatorInsets", value.asInstanceOf[js.Any])
+    
+    inline def setAutomaticallyAdjustsScrollIndicatorInsetsUndefined: Self = StObject.set(x, "automaticallyAdjustsScrollIndicatorInsets", js.undefined)
+    
     inline def setBackIconColor(value: String): Self = StObject.set(x, "backIconColor", value.asInstanceOf[js.Any])
     
     inline def setBackIconColorUndefined: Self = StObject.set(x, "backIconColor", js.undefined)
@@ -622,13 +1064,17 @@ object PopUpListProps {
     
     inline def setCancelTextUndefined: Self = StObject.set(x, "cancelText", js.undefined)
     
-    inline def setCellRendererComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "CellRendererComponent", value.asInstanceOf[js.Any])
+    inline def setCellRendererComponent(value: ComponentType[Any]): Self = StObject.set(x, "CellRendererComponent", value.asInstanceOf[js.Any])
     
     inline def setCellRendererComponentUndefined: Self = StObject.set(x, "CellRendererComponent", js.undefined)
     
     inline def setCenterContent(value: Boolean): Self = StObject.set(x, "centerContent", value.asInstanceOf[js.Any])
     
     inline def setCenterContentUndefined: Self = StObject.set(x, "centerContent", js.undefined)
+    
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setCollapsable(value: Boolean): Self = StObject.set(x, "collapsable", value.asInstanceOf[js.Any])
     
@@ -668,7 +1114,7 @@ object PopUpListProps {
     
     inline def setContentInsetUndefined: Self = StObject.set(x, "contentInset", js.undefined)
     
-    inline def setContentOffset(value: PointPropType): Self = StObject.set(x, "contentOffset", value.asInstanceOf[js.Any])
+    inline def setContentOffset(value: PointProp): Self = StObject.set(x, "contentOffset", value.asInstanceOf[js.Any])
     
     inline def setContentOffsetUndefined: Self = StObject.set(x, "contentOffset", js.undefined)
     
@@ -676,7 +1122,7 @@ object PopUpListProps {
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
-    inline def setDataSourceVarargs(value: ListDate*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
+    inline def setDataSourceVarargs(value: ListDate*): Self = StObject.set(x, "dataSource", js.Array(value*))
     
     inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
@@ -706,7 +1152,7 @@ object PopUpListProps {
     
     inline def setEndFillColorUndefined: Self = StObject.set(x, "endFillColor", js.undefined)
     
-    inline def setExtraData(value: js.Any): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
+    inline def setExtraData(value: Any): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
     
     inline def setExtraDataUndefined: Self = StObject.set(x, "extraData", js.undefined)
     
@@ -736,9 +1182,9 @@ object PopUpListProps {
     
     inline def setFooterWrapperStyleUndefined: Self = StObject.set(x, "footerWrapperStyle", js.undefined)
     
-    inline def setGetItem(value: (/* data */ js.Any, /* index */ Double) => js.Object): Self = StObject.set(x, "getItem", js.Any.fromFunction2(value))
+    inline def setGetItem(value: (/* data */ Any, /* index */ Double) => js.Object): Self = StObject.set(x, "getItem", js.Any.fromFunction2(value))
     
-    inline def setGetItemCount(value: /* data */ js.Any => Double): Self = StObject.set(x, "getItemCount", js.Any.fromFunction1(value))
+    inline def setGetItemCount(value: /* data */ Any => Double): Self = StObject.set(x, "getItemCount", js.Any.fromFunction1(value))
     
     inline def setGetItemCountUndefined: Self = StObject.set(x, "getItemCount", js.undefined)
     
@@ -806,7 +1252,7 @@ object PopUpListProps {
     
     inline def setIsTVSelectableUndefined: Self = StObject.set(x, "isTVSelectable", js.undefined)
     
-    inline def setItemSeparatorComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "ItemSeparatorComponent", value.asInstanceOf[js.Any])
+    inline def setItemSeparatorComponent(value: ComponentType[Any]): Self = StObject.set(x, "ItemSeparatorComponent", value.asInstanceOf[js.Any])
     
     inline def setItemSeparatorComponentNull: Self = StObject.set(x, "ItemSeparatorComponent", null)
     
@@ -828,17 +1274,17 @@ object PopUpListProps {
     
     inline def setLegacyImplementationUndefined: Self = StObject.set(x, "legacyImplementation", js.undefined)
     
-    inline def setListEmptyComponent(value: ComponentType[js.Any] | ReactElement): Self = StObject.set(x, "ListEmptyComponent", value.asInstanceOf[js.Any])
+    inline def setListEmptyComponent(value: ComponentType[Any] | ReactElement): Self = StObject.set(x, "ListEmptyComponent", value.asInstanceOf[js.Any])
     
     inline def setListEmptyComponentNull: Self = StObject.set(x, "ListEmptyComponent", null)
     
     inline def setListEmptyComponentUndefined: Self = StObject.set(x, "ListEmptyComponent", js.undefined)
     
-    inline def setListFooterComponent(value: ComponentType[js.Any] | ReactElement): Self = StObject.set(x, "ListFooterComponent", value.asInstanceOf[js.Any])
+    inline def setListFooterComponent(value: ComponentType[Any] | ReactElement): Self = StObject.set(x, "ListFooterComponent", value.asInstanceOf[js.Any])
     
     inline def setListFooterComponentNull: Self = StObject.set(x, "ListFooterComponent", null)
     
-    inline def setListFooterComponentStyle(value: ViewStyle): Self = StObject.set(x, "ListFooterComponentStyle", value.asInstanceOf[js.Any])
+    inline def setListFooterComponentStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "ListFooterComponentStyle", value.asInstanceOf[js.Any])
     
     inline def setListFooterComponentStyleNull: Self = StObject.set(x, "ListFooterComponentStyle", null)
     
@@ -846,11 +1292,11 @@ object PopUpListProps {
     
     inline def setListFooterComponentUndefined: Self = StObject.set(x, "ListFooterComponent", js.undefined)
     
-    inline def setListHeaderComponent(value: ComponentType[js.Any] | ReactElement): Self = StObject.set(x, "ListHeaderComponent", value.asInstanceOf[js.Any])
+    inline def setListHeaderComponent(value: ComponentType[Any] | ReactElement): Self = StObject.set(x, "ListHeaderComponent", value.asInstanceOf[js.Any])
     
     inline def setListHeaderComponentNull: Self = StObject.set(x, "ListHeaderComponent", null)
     
-    inline def setListHeaderComponentStyle(value: ViewStyle): Self = StObject.set(x, "ListHeaderComponentStyle", value.asInstanceOf[js.Any])
+    inline def setListHeaderComponentStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "ListHeaderComponentStyle", value.asInstanceOf[js.Any])
     
     inline def setListHeaderComponentStyleNull: Self = StObject.set(x, "ListHeaderComponentStyle", null)
     
@@ -956,7 +1402,7 @@ object PopUpListProps {
     
     inline def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
     
-    inline def setOnConfirm(value: (/* data */ js.Any, /* args */ `21`) => Unit): Self = StObject.set(x, "onConfirm", js.Any.fromFunction2(value))
+    inline def setOnConfirm(value: (/* data */ Any, /* args */ `21`) => Unit): Self = StObject.set(x, "onConfirm", js.Any.fromFunction2(value))
     
     inline def setOnConfirmUndefined: Self = StObject.set(x, "onConfirm", js.undefined)
     
@@ -1008,9 +1454,57 @@ object PopUpListProps {
     
     inline def setOnMoveShouldSetResponderUndefined: Self = StObject.set(x, "onMoveShouldSetResponder", js.undefined)
     
-    inline def setOnOrientationChange(value: /* event */ NativeSyntheticEvent[js.Any] => Unit): Self = StObject.set(x, "onOrientationChange", js.Any.fromFunction1(value))
+    inline def setOnOrientationChange(value: /* event */ NativeSyntheticEvent[Any] => Unit): Self = StObject.set(x, "onOrientationChange", js.Any.fromFunction1(value))
     
     inline def setOnOrientationChangeUndefined: Self = StObject.set(x, "onOrientationChange", js.undefined)
+    
+    inline def setOnPointerCancel(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerCancel", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerCancelCapture(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerCancelCapture", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerCancelCaptureUndefined: Self = StObject.set(x, "onPointerCancelCapture", js.undefined)
+    
+    inline def setOnPointerCancelUndefined: Self = StObject.set(x, "onPointerCancel", js.undefined)
+    
+    inline def setOnPointerDown(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerDown", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerDownCapture(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerDownCapture", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerDownCaptureUndefined: Self = StObject.set(x, "onPointerDownCapture", js.undefined)
+    
+    inline def setOnPointerDownUndefined: Self = StObject.set(x, "onPointerDown", js.undefined)
+    
+    inline def setOnPointerEnter(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerEnter", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerEnterCapture(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerEnterCapture", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerEnterCaptureUndefined: Self = StObject.set(x, "onPointerEnterCapture", js.undefined)
+    
+    inline def setOnPointerEnterUndefined: Self = StObject.set(x, "onPointerEnter", js.undefined)
+    
+    inline def setOnPointerLeave(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerLeave", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerLeaveCapture(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerLeaveCapture", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerLeaveCaptureUndefined: Self = StObject.set(x, "onPointerLeaveCapture", js.undefined)
+    
+    inline def setOnPointerLeaveUndefined: Self = StObject.set(x, "onPointerLeave", js.undefined)
+    
+    inline def setOnPointerMove(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerMove", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerMoveCapture(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerMoveCapture", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerMoveCaptureUndefined: Self = StObject.set(x, "onPointerMoveCapture", js.undefined)
+    
+    inline def setOnPointerMoveUndefined: Self = StObject.set(x, "onPointerMove", js.undefined)
+    
+    inline def setOnPointerUp(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerUp", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerUpCapture(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerUpCapture", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerUpCaptureUndefined: Self = StObject.set(x, "onPointerUpCapture", js.undefined)
+    
+    inline def setOnPointerUpUndefined: Self = StObject.set(x, "onPointerUp", js.undefined)
     
     inline def setOnRefresh(value: () => Unit): Self = StObject.set(x, "onRefresh", js.Any.fromFunction0(value))
     
@@ -1018,7 +1512,7 @@ object PopUpListProps {
     
     inline def setOnRefreshUndefined: Self = StObject.set(x, "onRefresh", js.undefined)
     
-    inline def setOnRequestClose(value: () => Unit): Self = StObject.set(x, "onRequestClose", js.Any.fromFunction0(value))
+    inline def setOnRequestClose(value: /* event */ NativeSyntheticEvent[Any] => Unit): Self = StObject.set(x, "onRequestClose", js.Any.fromFunction1(value))
     
     inline def setOnRequestCloseUndefined: Self = StObject.set(x, "onRequestClose", js.undefined)
     
@@ -1078,11 +1572,11 @@ object PopUpListProps {
     
     inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
     
-    inline def setOnSelect(value: (/* value */ String | Double, /* sValue */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
+    inline def setOnSelect(value: (/* value */ String | Double, /* params */ js.UndefOr[`21`]) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
     
     inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
     
-    inline def setOnShow(value: /* event */ NativeSyntheticEvent[js.Any] => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
+    inline def setOnShow(value: /* event */ NativeSyntheticEvent[Any] => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
     
     inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
     
@@ -1220,6 +1714,10 @@ object PopUpListProps {
     
     inline def setShowBackUndefined: Self = StObject.set(x, "showBack", js.undefined)
     
+    inline def setShowTitleDivider(value: Boolean): Self = StObject.set(x, "showTitleDivider", value.asInstanceOf[js.Any])
+    
+    inline def setShowTitleDividerUndefined: Self = StObject.set(x, "showTitleDivider", js.undefined)
+    
     inline def setShowsHorizontalScrollIndicator(value: Boolean): Self = StObject.set(x, "showsHorizontalScrollIndicator", value.asInstanceOf[js.Any])
     
     inline def setShowsHorizontalScrollIndicatorUndefined: Self = StObject.set(x, "showsHorizontalScrollIndicator", js.undefined)
@@ -1244,7 +1742,7 @@ object PopUpListProps {
     
     inline def setSnapToOffsetsUndefined: Self = StObject.set(x, "snapToOffsets", js.undefined)
     
-    inline def setSnapToOffsetsVarargs(value: Double*): Self = StObject.set(x, "snapToOffsets", js.Array(value :_*))
+    inline def setSnapToOffsetsVarargs(value: Double*): Self = StObject.set(x, "snapToOffsets", js.Array(value*))
     
     inline def setSnapToStart(value: Boolean): Self = StObject.set(x, "snapToStart", value.asInstanceOf[js.Any])
     
@@ -1254,11 +1752,19 @@ object PopUpListProps {
     
     inline def setStatusBarTranslucentUndefined: Self = StObject.set(x, "statusBarTranslucent", js.undefined)
     
+    inline def setStickyHeaderComponent(value: ComponentType[Any]): Self = StObject.set(x, "StickyHeaderComponent", value.asInstanceOf[js.Any])
+    
+    inline def setStickyHeaderComponentUndefined: Self = StObject.set(x, "StickyHeaderComponent", js.undefined)
+    
+    inline def setStickyHeaderHiddenOnScroll(value: Boolean): Self = StObject.set(x, "stickyHeaderHiddenOnScroll", value.asInstanceOf[js.Any])
+    
+    inline def setStickyHeaderHiddenOnScrollUndefined: Self = StObject.set(x, "stickyHeaderHiddenOnScroll", js.undefined)
+    
     inline def setStickyHeaderIndices(value: js.Array[Double]): Self = StObject.set(x, "stickyHeaderIndices", value.asInstanceOf[js.Any])
     
     inline def setStickyHeaderIndicesUndefined: Self = StObject.set(x, "stickyHeaderIndices", js.undefined)
     
-    inline def setStickyHeaderIndicesVarargs(value: Double*): Self = StObject.set(x, "stickyHeaderIndices", js.Array(value :_*))
+    inline def setStickyHeaderIndicesVarargs(value: Double*): Self = StObject.set(x, "stickyHeaderIndices", js.Array(value*))
     
     inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
@@ -1266,7 +1772,7 @@ object PopUpListProps {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setStyles(value: Container): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: Content): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
@@ -1282,7 +1788,7 @@ object PopUpListProps {
     
     inline def setSupportedOrientationsUndefined: Self = StObject.set(x, "supportedOrientations", js.undefined)
     
-    inline def setSupportedOrientationsVarargs(value: (portrait | `portrait-upside-down` | landscape | `landscape-left` | `landscape-right`)*): Self = StObject.set(x, "supportedOrientations", js.Array(value :_*))
+    inline def setSupportedOrientationsVarargs(value: (portrait | `portrait-upside-down` | landscape | `landscape-left` | `landscape-right`)*): Self = StObject.set(x, "supportedOrientations", js.Array(value*))
     
     inline def setSwitchValue(value: Boolean): Self = StObject.set(x, "switchValue", value.asInstanceOf[js.Any])
     
@@ -1306,7 +1812,7 @@ object PopUpListProps {
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    inline def setTitleVarargs(value: String*): Self = StObject.set(x, "title", js.Array(value :_*))
+    inline def setTitleVarargs(value: String*): Self = StObject.set(x, "title", js.Array(value*))
     
     inline def setTitleWrapperStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "titleWrapperStyle", value.asInstanceOf[js.Any])
     
@@ -1338,7 +1844,7 @@ object PopUpListProps {
     
     inline def setTvParallaxTiltAngleUndefined: Self = StObject.set(x, "tvParallaxTiltAngle", js.undefined)
     
-    inline def setType(value: radio | switch): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: radio | switch | arrow): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
@@ -1358,15 +1864,15 @@ object PopUpListProps {
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    inline def setValueVarargs(value: (Double | String)*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: (Double | String)*): Self = StObject.set(x, "value", js.Array(value*))
     
-    inline def setViewabilityConfig(value: js.Any): Self = StObject.set(x, "viewabilityConfig", value.asInstanceOf[js.Any])
+    inline def setViewabilityConfig(value: Any): Self = StObject.set(x, "viewabilityConfig", value.asInstanceOf[js.Any])
     
     inline def setViewabilityConfigCallbackPairs(value: ViewabilityConfigCallbackPairs): Self = StObject.set(x, "viewabilityConfigCallbackPairs", value.asInstanceOf[js.Any])
     
     inline def setViewabilityConfigCallbackPairsUndefined: Self = StObject.set(x, "viewabilityConfigCallbackPairs", js.undefined)
     
-    inline def setViewabilityConfigCallbackPairsVarargs(value: ViewabilityConfigCallbackPair*): Self = StObject.set(x, "viewabilityConfigCallbackPairs", js.Array(value :_*))
+    inline def setViewabilityConfigCallbackPairsVarargs(value: ViewabilityConfigCallbackPair*): Self = StObject.set(x, "viewabilityConfigCallbackPairs", js.Array(value*))
     
     inline def setViewabilityConfigUndefined: Self = StObject.set(x, "viewabilityConfig", js.undefined)
     

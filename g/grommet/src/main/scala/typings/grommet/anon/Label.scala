@@ -15,9 +15,9 @@ trait Label extends StObject {
   
   var label: js.UndefOr[String] = js.undefined
   
-  var onClick: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+  var onClick: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
   
-  var onHover: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+  var onHover: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
   
   var opacity: js.UndefOr[weak | medium | strong | Boolean | Double] = js.undefined
   
@@ -42,11 +42,11 @@ object Label {
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    inline def setOnClick(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(value: /* repeated */ Any => Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
-    inline def setOnHover(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onHover", js.Any.fromFunction1(value))
+    inline def setOnHover(value: /* repeated */ Any => Any): Self = StObject.set(x, "onHover", js.Any.fromFunction1(value))
     
     inline def setOnHoverUndefined: Self = StObject.set(x, "onHover", js.undefined)
     
@@ -60,6 +60,6 @@ object Label {
     
     inline def setValue(value: Double | js.Array[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    inline def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value*))
   }
 }

@@ -16,7 +16,7 @@ trait DataSource extends StObject {
   /**
     * The time that the DataSource was created. The time is expressed in epoch time.
     */
-  var CreatedAt: js.UndefOr[EpochTime] = js.undefined
+  var CreatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The AWS user account from which the DataSource was created. The account type can be either an AWS root account or an AWS Identity and Access Management (IAM) user account.
@@ -43,12 +43,12 @@ trait DataSource extends StObject {
     */
   var DataSourceId: js.UndefOr[EntityId] = js.undefined
   
-  var FinishedAt: js.UndefOr[EpochTime] = js.undefined
+  var FinishedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The time of the most recent edit to the BatchPrediction. The time is expressed in epoch time.
     */
-  var LastUpdatedAt: js.UndefOr[EpochTime] = js.undefined
+  var LastUpdatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A description of the most recent details about creating the DataSource.
@@ -71,10 +71,10 @@ trait DataSource extends StObject {
   
   var RoleARN: js.UndefOr[typings.awsSdk.machinelearningMod.RoleARN] = js.undefined
   
-  var StartedAt: js.UndefOr[EpochTime] = js.undefined
+  var StartedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The current status of the DataSource. This element can have one of the following values:   PENDING - Amazon Machine Learning (Amazon ML) submitted a request to create a DataSource. INPROGRESS - The creation process is underway. FAILED - The request to create a DataSource did not run to completion. It is not usable. COMPLETED - The creation process completed successfully. DELETED - The DataSource is marked as deleted. It is not usable. 
+    * The current status of the DataSource. This element can have one of the following values:    PENDING - Amazon Machine Learning (Amazon ML) submitted a request to create a DataSource.   INPROGRESS - The creation process is underway.   FAILED - The request to create a DataSource did not run to completion. It is not usable.   COMPLETED - The creation process completed successfully.   DELETED - The DataSource is marked as deleted. It is not usable.  
     */
   var Status: js.UndefOr[EntityStatus] = js.undefined
 }
@@ -95,7 +95,7 @@ object DataSource {
     
     inline def setComputeTimeUndefined: Self = StObject.set(x, "ComputeTime", js.undefined)
     
-    inline def setCreatedAt(value: EpochTime): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
@@ -119,11 +119,11 @@ object DataSource {
     
     inline def setDataSourceIdUndefined: Self = StObject.set(x, "DataSourceId", js.undefined)
     
-    inline def setFinishedAt(value: EpochTime): Self = StObject.set(x, "FinishedAt", value.asInstanceOf[js.Any])
+    inline def setFinishedAt(value: js.Date): Self = StObject.set(x, "FinishedAt", value.asInstanceOf[js.Any])
     
     inline def setFinishedAtUndefined: Self = StObject.set(x, "FinishedAt", js.undefined)
     
-    inline def setLastUpdatedAt(value: EpochTime): Self = StObject.set(x, "LastUpdatedAt", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedAt(value: js.Date): Self = StObject.set(x, "LastUpdatedAt", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedAtUndefined: Self = StObject.set(x, "LastUpdatedAt", js.undefined)
     
@@ -151,7 +151,7 @@ object DataSource {
     
     inline def setRoleARNUndefined: Self = StObject.set(x, "RoleARN", js.undefined)
     
-    inline def setStartedAt(value: EpochTime): Self = StObject.set(x, "StartedAt", value.asInstanceOf[js.Any])
+    inline def setStartedAt(value: js.Date): Self = StObject.set(x, "StartedAt", value.asInstanceOf[js.Any])
     
     inline def setStartedAtUndefined: Self = StObject.set(x, "StartedAt", js.undefined)
     

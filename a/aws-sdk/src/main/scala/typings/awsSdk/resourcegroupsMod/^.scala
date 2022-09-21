@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class ^ () extends ResourceGroups {
+open class ^ () extends ResourceGroups {
   def this(options: ClientConfiguration) = this()
 }

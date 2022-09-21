@@ -47,7 +47,7 @@ object IosDeviceFeaturesConfiguration {
     
     inline def setHomeScreenDockIconsUndefined: Self = StObject.set(x, "homeScreenDockIcons", js.undefined)
     
-    inline def setHomeScreenDockIconsVarargs(value: IosHomeScreenItem*): Self = StObject.set(x, "homeScreenDockIcons", js.Array(value :_*))
+    inline def setHomeScreenDockIconsVarargs(value: IosHomeScreenItem*): Self = StObject.set(x, "homeScreenDockIcons", js.Array(value*))
     
     inline def setHomeScreenPages(value: NullableOption[js.Array[IosHomeScreenPage]]): Self = StObject.set(x, "homeScreenPages", value.asInstanceOf[js.Any])
     
@@ -55,7 +55,7 @@ object IosDeviceFeaturesConfiguration {
     
     inline def setHomeScreenPagesUndefined: Self = StObject.set(x, "homeScreenPages", js.undefined)
     
-    inline def setHomeScreenPagesVarargs(value: IosHomeScreenPage*): Self = StObject.set(x, "homeScreenPages", js.Array(value :_*))
+    inline def setHomeScreenPagesVarargs(value: IosHomeScreenPage*): Self = StObject.set(x, "homeScreenPages", js.Array(value*))
     
     inline def setLockScreenFootnote(value: NullableOption[String]): Self = StObject.set(x, "lockScreenFootnote", value.asInstanceOf[js.Any])
     
@@ -69,6 +69,6 @@ object IosDeviceFeaturesConfiguration {
     
     inline def setNotificationSettingsUndefined: Self = StObject.set(x, "notificationSettings", js.undefined)
     
-    inline def setNotificationSettingsVarargs(value: IosNotificationSettings*): Self = StObject.set(x, "notificationSettings", js.Array(value :_*))
+    inline def setNotificationSettingsVarargs(value: IosNotificationSettings*): Self = StObject.set(x, "notificationSettings", js.Array(value*))
   }
 }

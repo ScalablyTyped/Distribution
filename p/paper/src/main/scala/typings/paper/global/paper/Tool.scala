@@ -17,6 +17,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("paper.Tool")
 @js.native
-class Tool ()
+open class Tool ()
   extends StObject
      with typings.paper.paper.Tool

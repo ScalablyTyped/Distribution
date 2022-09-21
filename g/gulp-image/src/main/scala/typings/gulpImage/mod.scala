@@ -14,7 +14,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  type OptimizerSetting = Boolean | js.Array[js.Any]
+  type OptimizerSetting = Boolean | js.Array[Any]
   
   trait Options extends StObject {
     
@@ -55,37 +55,37 @@ object mod {
       
       inline def setGifsicleUndefined: Self = StObject.set(x, "gifsicle", js.undefined)
       
-      inline def setGifsicleVarargs(value: js.Any*): Self = StObject.set(x, "gifsicle", js.Array(value :_*))
+      inline def setGifsicleVarargs(value: Any*): Self = StObject.set(x, "gifsicle", js.Array(value*))
       
       inline def setGuetzli(value: OptimizerSetting): Self = StObject.set(x, "guetzli", value.asInstanceOf[js.Any])
       
       inline def setGuetzliUndefined: Self = StObject.set(x, "guetzli", js.undefined)
       
-      inline def setGuetzliVarargs(value: js.Any*): Self = StObject.set(x, "guetzli", js.Array(value :_*))
+      inline def setGuetzliVarargs(value: Any*): Self = StObject.set(x, "guetzli", js.Array(value*))
       
       inline def setJpegRecompress(value: OptimizerSetting): Self = StObject.set(x, "jpegRecompress", value.asInstanceOf[js.Any])
       
       inline def setJpegRecompressUndefined: Self = StObject.set(x, "jpegRecompress", js.undefined)
       
-      inline def setJpegRecompressVarargs(value: js.Any*): Self = StObject.set(x, "jpegRecompress", js.Array(value :_*))
+      inline def setJpegRecompressVarargs(value: Any*): Self = StObject.set(x, "jpegRecompress", js.Array(value*))
       
       inline def setMozjpeg(value: OptimizerSetting): Self = StObject.set(x, "mozjpeg", value.asInstanceOf[js.Any])
       
       inline def setMozjpegUndefined: Self = StObject.set(x, "mozjpeg", js.undefined)
       
-      inline def setMozjpegVarargs(value: js.Any*): Self = StObject.set(x, "mozjpeg", js.Array(value :_*))
+      inline def setMozjpegVarargs(value: Any*): Self = StObject.set(x, "mozjpeg", js.Array(value*))
       
       inline def setOptipng(value: OptimizerSetting): Self = StObject.set(x, "optipng", value.asInstanceOf[js.Any])
       
       inline def setOptipngUndefined: Self = StObject.set(x, "optipng", js.undefined)
       
-      inline def setOptipngVarargs(value: js.Any*): Self = StObject.set(x, "optipng", js.Array(value :_*))
+      inline def setOptipngVarargs(value: Any*): Self = StObject.set(x, "optipng", js.Array(value*))
       
       inline def setPngquant(value: OptimizerSetting): Self = StObject.set(x, "pngquant", value.asInstanceOf[js.Any])
       
       inline def setPngquantUndefined: Self = StObject.set(x, "pngquant", js.undefined)
       
-      inline def setPngquantVarargs(value: js.Any*): Self = StObject.set(x, "pngquant", js.Array(value :_*))
+      inline def setPngquantVarargs(value: Any*): Self = StObject.set(x, "pngquant", js.Array(value*))
       
       inline def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
       
@@ -95,13 +95,13 @@ object mod {
       
       inline def setSvgoUndefined: Self = StObject.set(x, "svgo", js.undefined)
       
-      inline def setSvgoVarargs(value: js.Any*): Self = StObject.set(x, "svgo", js.Array(value :_*))
+      inline def setSvgoVarargs(value: Any*): Self = StObject.set(x, "svgo", js.Array(value*))
       
       inline def setZopflipng(value: OptimizerSetting): Self = StObject.set(x, "zopflipng", value.asInstanceOf[js.Any])
       
       inline def setZopflipngUndefined: Self = StObject.set(x, "zopflipng", js.undefined)
       
-      inline def setZopflipngVarargs(value: js.Any*): Self = StObject.set(x, "zopflipng", js.Array(value :_*))
+      inline def setZopflipngVarargs(value: Any*): Self = StObject.set(x, "zopflipng", js.Array(value*))
     }
   }
 }

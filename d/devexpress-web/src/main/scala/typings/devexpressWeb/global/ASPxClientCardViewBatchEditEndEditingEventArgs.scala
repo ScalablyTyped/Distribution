@@ -9,18 +9,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientCardViewBatchEditEndEditingEventArgs")
 @js.native
-class ASPxClientCardViewBatchEditEndEditingEventArgs protected ()
+open class ASPxClientCardViewBatchEditEndEditingEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientCardViewBatchEditEndEditingEventArgs {
   /**
-    * Initializes a new instance of the ASPxClientCardViewBatchEditEndEditingEventArgs class with the specified settings.
-    * @param visibleIndex An integer value that specifies the visible index of the card. This value is assigned to the ASPxClientCardViewBatchEditEndEditingEventArgs.visibleIndex property.
-    * @param cardValues A hashtable that stores information about editable cells. This value is assigned to the ASPxClientCardViewBatchEditEndEditingEventArgs.cardValues property.
+    * Initializes a new instance of the ASPxClientCardViewBatchEditEndEditingEventArgs class with specified settings.
     */
-  def this(visibleIndex: Double, cardValues: js.Any) = this()
+  def this(
+    visibleIndex: Double,
+    cardValues: Any,
+    focusedColumn: typings.devexpressWeb.ASPxClientCardViewColumn
+  ) = this()
   
   /**
-    * Gets or sets a value indicating whether the action which raised the event should be canceled.
+    * Specifies whether to cancel the related action (for example, row edit, export).
     */
   /* CompleteClass */
   var cancel: Boolean = js.native
@@ -29,7 +31,13 @@ class ASPxClientCardViewBatchEditEndEditingEventArgs protected ()
     * Gets a hashtable that maintains information about editable cells.
     */
   /* CompleteClass */
-  var cardValues: js.Any = js.native
+  var cardValues: Any = js.native
+  
+  /**
+    * Gets the column to which the edited cell belongs.
+    */
+  /* CompleteClass */
+  var focusedColumn: typings.devexpressWeb.ASPxClientCardViewColumn = js.native
   
   /**
     * Gets the visible index of the card whose cells have been edited.

@@ -9,9 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.babelTypes.mod._Node because Already inherited */ trait OptionalCallExpression_
   extends StObject
      with BaseNode
-     with Expression {
+     with Expression
+     with Standardized {
   
-  var arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName_]
+  var arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName_ | ArgumentPlaceholder_]
   
   var callee: Expression
   
@@ -27,7 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object OptionalCallExpression_ {
   
   inline def apply(
-    arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName_],
+    arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName_ | ArgumentPlaceholder_],
     callee: Expression,
     optional: Boolean
   ): OptionalCallExpression_ = {
@@ -38,9 +39,9 @@ object OptionalCallExpression_ {
   
   extension [Self <: OptionalCallExpression_](x: Self) {
     
-    inline def setArguments(value: js.Array[Expression | SpreadElement_ | JSXNamespacedName_]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: js.Array[Expression | SpreadElement_ | JSXNamespacedName_ | ArgumentPlaceholder_]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
-    inline def setArgumentsVarargs(value: (Expression | SpreadElement_ | JSXNamespacedName_)*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+    inline def setArgumentsVarargs(value: (Expression | SpreadElement_ | JSXNamespacedName_ | ArgumentPlaceholder_)*): Self = StObject.set(x, "arguments", js.Array(value*))
     
     inline def setCallee(value: Expression): Self = StObject.set(x, "callee", value.asInstanceOf[js.Any])
     

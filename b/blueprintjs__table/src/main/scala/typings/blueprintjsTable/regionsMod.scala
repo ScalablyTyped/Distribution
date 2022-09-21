@@ -1,7 +1,7 @@
 package typings.blueprintjsTable
 
 import typings.blueprintjsCore.propsMod.IProps
-import typings.blueprintjsTable.esmRegionsMod.IRegion
+import typings.blueprintjsTable.esmRegionsMod.Region
 import typings.blueprintjsTable.tableQuadrantMod.QuadrantType
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
@@ -13,24 +13,24 @@ object regionsMod {
   
   @JSImport("@blueprintjs/table/lib/esm/layers/regions", "RegionLayer")
   @js.native
-  class RegionLayer protected ()
-    extends Component[IRegionLayerProps, js.Object, js.Any] {
-    def this(props: IRegionLayerProps) = this()
+  open class RegionLayer protected ()
+    extends Component[RegionLayerProps, js.Object, Any] {
+    def this(props: RegionLayerProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: IRegionLayerProps, context: js.Any) = this()
+    def this(props: RegionLayerProps, context: Any) = this()
     
-    /* private */ var renderRegion: js.Any = js.native
+    /* private */ var renderRegion: Any = js.native
     
-    /* private */ var renderRegionChildren: js.Any = js.native
+    /* private */ var renderRegionChildren: Any = js.native
     
     @JSName("shouldComponentUpdate")
-    def shouldComponentUpdate_MRegionLayer(nextProps: IRegionLayerProps): Boolean = js.native
+    def shouldComponentUpdate_MRegionLayer(nextProps: RegionLayerProps): Boolean = js.native
   }
   
-  trait IRegionLayerProps
+  trait RegionLayerProps
     extends StObject
        with IProps {
     
@@ -43,30 +43,30 @@ object regionsMod {
     /**
       * The array of regions to render.
       */
-    var regions: js.UndefOr[js.Array[IRegion]] = js.undefined
+    var regions: js.UndefOr[js.Array[Region]] = js.undefined
   }
-  object IRegionLayerProps {
+  object RegionLayerProps {
     
-    inline def apply(): IRegionLayerProps = {
+    inline def apply(): RegionLayerProps = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[IRegionLayerProps]
+      __obj.asInstanceOf[RegionLayerProps]
     }
     
-    extension [Self <: IRegionLayerProps](x: Self) {
+    extension [Self <: RegionLayerProps](x: Self) {
       
       inline def setRegionStyles(value: js.Array[CSSProperties]): Self = StObject.set(x, "regionStyles", value.asInstanceOf[js.Any])
       
       inline def setRegionStylesUndefined: Self = StObject.set(x, "regionStyles", js.undefined)
       
-      inline def setRegionStylesVarargs(value: CSSProperties*): Self = StObject.set(x, "regionStyles", js.Array(value :_*))
+      inline def setRegionStylesVarargs(value: CSSProperties*): Self = StObject.set(x, "regionStyles", js.Array(value*))
       
-      inline def setRegions(value: js.Array[IRegion]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
+      inline def setRegions(value: js.Array[Region]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
       
       inline def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
       
-      inline def setRegionsVarargs(value: IRegion*): Self = StObject.set(x, "regions", js.Array(value :_*))
+      inline def setRegionsVarargs(value: Region*): Self = StObject.set(x, "regions", js.Array(value*))
     }
   }
   
-  type IRegionStyler = js.Function2[/* region */ IRegion, /* quadrantType */ js.UndefOr[QuadrantType], CSSProperties]
+  type RegionStyler = js.Function2[/* region */ Region, /* quadrantType */ js.UndefOr[QuadrantType], CSSProperties]
 }

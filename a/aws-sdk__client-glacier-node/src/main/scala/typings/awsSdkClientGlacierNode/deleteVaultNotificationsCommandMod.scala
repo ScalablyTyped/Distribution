@@ -16,7 +16,7 @@ object deleteVaultNotificationsCommandMod {
   
   @JSImport("@aws-sdk/client-glacier-node/commands/DeleteVaultNotificationsCommand", "DeleteVaultNotificationsCommand")
   @js.native
-  class DeleteVaultNotificationsCommand protected ()
+  open class DeleteVaultNotificationsCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object deleteVaultNotificationsCommandMod {
     override val middlewareStack: MiddlewareStack[DeleteVaultNotificationsInput, DeleteVaultNotificationsOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: GlacierResolvedConfiguration
     ): Handler[DeleteVaultNotificationsInput, DeleteVaultNotificationsOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: GlacierResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[DeleteVaultNotificationsInput, DeleteVaultNotificationsOutput] = js.native
   }
 }

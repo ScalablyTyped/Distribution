@@ -41,7 +41,7 @@ trait ToolbarButton extends StObject {
   
   var OnAction: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   def PasteFace(): Unit
   
@@ -73,7 +73,7 @@ object ToolbarButton {
     Move: (Toolbar, Double) => Unit,
     Name: String,
     OnAction: String,
-    Parent: js.Any,
+    Parent: Any,
     PasteFace: () => Unit,
     Pushed: Boolean,
     Reset: () => Unit,
@@ -121,7 +121,7 @@ object ToolbarButton {
     
     inline def setOnAction(value: String): Self = StObject.set(x, "OnAction", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPasteFace(value: () => Unit): Self = StObject.set(x, "PasteFace", js.Any.fromFunction0(value))
     

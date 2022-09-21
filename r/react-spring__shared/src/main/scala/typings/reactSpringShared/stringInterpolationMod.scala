@@ -1,13 +1,13 @@
 package typings.reactSpringShared
 
-import typings.reactSpringShared.typesMod.InterpolatorConfig
+import typings.reactSpringTypes.interpolationMod.InterpolatorConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stringInterpolationMod {
   
-  @JSImport("@react-spring/shared/cjs/stringInterpolation", JSImport.Namespace)
+  @JSImport("@react-spring/shared/dist/declarations/src/stringInterpolation", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

@@ -1,6 +1,7 @@
 package typings.node.childProcessMod
 
 import typings.node.processMod.global.NodeJS.Signals
+import typings.std.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,6 +15,8 @@ trait ExecOptions
   var maxBuffer: js.UndefOr[Double] = js.undefined
   
   var shell: js.UndefOr[String] = js.undefined
+  
+  var signal: js.UndefOr[AbortSignal] = js.undefined
 }
 object ExecOptions {
   
@@ -35,5 +38,9 @@ object ExecOptions {
     inline def setShell(value: String): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
     
     inline def setShellUndefined: Self = StObject.set(x, "shell", js.undefined)
+    
+    inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
   }
 }

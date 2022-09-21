@@ -58,11 +58,11 @@ object WifiNetworkData {
     
     inline def setRsnFlags(value: js.Array[String]): Self = StObject.set(x, "rsnFlags", value.asInstanceOf[js.Any])
     
-    inline def setRsnFlagsVarargs(value: String*): Self = StObject.set(x, "rsnFlags", js.Array(value :_*))
+    inline def setRsnFlagsVarargs(value: String*): Self = StObject.set(x, "rsnFlags", js.Array(value*))
     
     inline def setSecurity(value: js.Array[String]): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
     
-    inline def setSecurityVarargs(value: String*): Self = StObject.set(x, "security", js.Array(value :_*))
+    inline def setSecurityVarargs(value: String*): Self = StObject.set(x, "security", js.Array(value*))
     
     inline def setSignalLevel(value: Double): Self = StObject.set(x, "signalLevel", value.asInstanceOf[js.Any])
     
@@ -70,6 +70,6 @@ object WifiNetworkData {
     
     inline def setWpaFlags(value: js.Array[String]): Self = StObject.set(x, "wpaFlags", value.asInstanceOf[js.Any])
     
-    inline def setWpaFlagsVarargs(value: String*): Self = StObject.set(x, "wpaFlags", js.Array(value :_*))
+    inline def setWpaFlagsVarargs(value: String*): Self = StObject.set(x, "wpaFlags", js.Array(value*))
   }
 }

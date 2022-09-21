@@ -18,41 +18,41 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChartErrorBarsData extends StObject {
   
   /**
-    *
     * Specifies if error bars have an end style cap.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var endStyleCap: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies the formatting type of the error bars.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var format: js.UndefOr[ChartErrorBarsFormatData] = js.undefined
   
   /**
-    *
     * Specifies which parts of the error bars to include.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var include: js.UndefOr[ChartErrorBarsInclude | Both | MinusValues | PlusValues] = js.undefined
   
   /**
-    *
     * The type of range marked by the error bars.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var `type`: js.UndefOr[ChartErrorBarsType | FixedValue | Percent | StDev | StError | Custom] = js.undefined
   
   /**
-    *
     * Specifies whether the error bars are displayed.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var visible: js.UndefOr[Boolean] = js.undefined

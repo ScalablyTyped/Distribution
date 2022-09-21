@@ -10,10 +10,10 @@ Customizable Icons for React Native with support for NavBar/TabBar, image source
 | ------------------ | :-------------: |
 | Full name          | react-native-vector-icons |
 | Keywords           | react-native, react-component, react-native-component, react, mobile, ios, android, osx, windows, macos, ui, icon, icons, vector, retina, font |
-| # releases         | 9 |
-| # dependents       | 746 |
-| # downloads        | 11748819 |
-| # stars            | 38 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 1403886.3333333333 |
+| # stars            | 15860.0 |
 
 ## Links
 - [Homepage](https://github.com/oblador/react-native-vector-icons)

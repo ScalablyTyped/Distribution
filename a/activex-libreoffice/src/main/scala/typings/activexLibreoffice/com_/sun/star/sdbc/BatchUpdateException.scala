@@ -26,7 +26,7 @@ object BatchUpdateException {
     Context: XInterface,
     ErrorCode: Double,
     Message: String,
-    NextException: js.Any,
+    NextException: Any,
     SQLState: String,
     UpdateCounts: SafeArray[Double]
   ): BatchUpdateException = {

@@ -26,7 +26,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var name_BreadthFirstLayoutOptions: breadthfirst
   
   // the roots of the trees
-  var roots: js.UndefOr[String] = js.undefined
+  var roots: js.UndefOr[js.Array[String]] = js.undefined
 }
 object BreadthFirstLayoutOptions {
   
@@ -51,8 +51,10 @@ object BreadthFirstLayoutOptions {
     
     inline def setName(value: breadthfirst): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setRoots(value: String): Self = StObject.set(x, "roots", value.asInstanceOf[js.Any])
+    inline def setRoots(value: js.Array[String]): Self = StObject.set(x, "roots", value.asInstanceOf[js.Any])
     
     inline def setRootsUndefined: Self = StObject.set(x, "roots", js.undefined)
+    
+    inline def setRootsVarargs(value: String*): Self = StObject.set(x, "roots", js.Array(value*))
   }
 }

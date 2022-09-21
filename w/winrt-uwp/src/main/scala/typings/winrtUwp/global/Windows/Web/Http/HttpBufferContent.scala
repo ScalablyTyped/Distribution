@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Provides HTTP content that uses a buffer. */
 @JSGlobal("Windows.Web.Http.HttpBufferContent")
 @js.native
-class HttpBufferContent protected ()
+open class HttpBufferContent protected ()
   extends StObject
      with typings.winrtUwp.Windows.Web.Http.HttpBufferContent {
   /**

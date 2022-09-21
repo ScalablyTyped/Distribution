@@ -30,7 +30,7 @@ object HyperParameterTuningJobWarmStartConfig {
     
     inline def setParentHyperParameterTuningJobs(value: ParentHyperParameterTuningJobs): Self = StObject.set(x, "ParentHyperParameterTuningJobs", value.asInstanceOf[js.Any])
     
-    inline def setParentHyperParameterTuningJobsVarargs(value: ParentHyperParameterTuningJob*): Self = StObject.set(x, "ParentHyperParameterTuningJobs", js.Array(value :_*))
+    inline def setParentHyperParameterTuningJobsVarargs(value: ParentHyperParameterTuningJob*): Self = StObject.set(x, "ParentHyperParameterTuningJobs", js.Array(value*))
     
     inline def setWarmStartType(value: HyperParameterTuningJobWarmStartType): Self = StObject.set(x, "WarmStartType", value.asInstanceOf[js.Any])
   }

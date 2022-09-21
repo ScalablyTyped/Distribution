@@ -10,14 +10,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object projectParametersMod extends Shortcut {
   
-  @JSImport("esri/tasks/support/ProjectParameters", JSImport.Namespace)
+  @JSImport("esri/rest/support/ProjectParameters", JSImport.Namespace)
   @js.native
   val ^ : js.Object & ProjectParametersConstructor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-  @JSImport("esri/tasks/support/ProjectParameters", JSImport.Namespace)
+  @JSImport("esri/rest/support/ProjectParameters", JSImport.Namespace)
   @js.native
-  class Class ()
+  /**
+    * Defines the projection parameters used when calling the [geometryService.project()](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geometryService.html#project).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-ProjectParameters.html)
+    */
+  open class Class ()
     extends StObject
        with ProjectParameters {
     def this(properties: ProjectParametersProperties) = this()

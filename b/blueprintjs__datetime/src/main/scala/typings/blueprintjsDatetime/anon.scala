@@ -1,25 +1,26 @@
 package typings.blueprintjsDatetime
 
-import typings.blueprintjsCore.inputGroupMod.IInputGroupProps
+import typings.blueprintjsCore.inputGroupMod.InputGroupProps2
 import typings.blueprintjsCore.popoverMod.PopoverInteractionKind
 import typings.blueprintjsCore.popoverSharedPropsMod.PopoverPosition
-import typings.blueprintjsCore.propsMod.HTMLInputProps
 import typings.blueprintjsDatetime.blueprintjsDatetimeBooleans.`false`
 import typings.blueprintjsDatetime.blueprintjsDatetimeBooleans.`true`
-import typings.blueprintjsDatetime.datePickerCoreMod.IDatePickerModifiers
+import typings.blueprintjsDatetime.datePickerCoreMod.DatePickerModifiers
 import typings.blueprintjsDatetime.dateRangeMod.DateRange
-import typings.blueprintjsDatetime.shortcutsMod.IDatePickerShortcut
-import typings.blueprintjsDatetime.shortcutsMod.IDateRangeShortcut
-import typings.blueprintjsDatetime.timePickerMod.ITimePickerProps
+import typings.blueprintjsDatetime.shortcutsMod.DatePickerShortcut
+import typings.blueprintjsDatetime.shortcutsMod.DateRangeShortcut
+import typings.blueprintjsDatetime.timePickerMod.TimePickerProps
 import typings.blueprintjsDatetime.timePickerMod.TimePrecision
 import typings.popperJs.mod.Boundary
 import typings.popperJs.mod.Modifiers
+import typings.popperJs.mod.Placement
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.HTMLProps
+import typings.react.mod.ReactNode
+import typings.react.mod.Ref
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.global.JSX.Element
-import typings.reactDayPicker.propsMod.DayPickerProps
-import typings.std.Date
+import typings.reactDayPicker.distDayPickerMod.DayPickerProps
 import typings.std.Event
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
@@ -29,8 +30,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  /* Inlined std.Partial<@blueprintjs/datetime.@blueprintjs/datetime/lib/esm/dateInput.IDateInputProps> */
-  trait PartialIDateInputProps extends StObject {
+  /* Inlined std.Partial<@blueprintjs/datetime.@blueprintjs/datetime/lib/esm/dateInput.DateInputProps> */
+  trait PartialDateInputProps extends StObject {
     
     var canClearSelection: js.UndefOr[Boolean] = js.undefined
     
@@ -42,40 +43,46 @@ object anon {
     
     var dayPickerProps: js.UndefOr[DayPickerProps] = js.undefined
     
-    var defaultValue: js.UndefOr[Date] = js.undefined
+    var defaultValue: js.UndefOr[js.Date] = js.undefined
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
     var fill: js.UndefOr[Boolean] = js.undefined
     
-    var formatDate: js.UndefOr[js.Function2[/* date */ Date, /* locale */ js.UndefOr[String], String]] = js.undefined
+    var footerElement: js.UndefOr[Element] = js.undefined
+    
+    var formatDate: js.UndefOr[js.Function2[/* date */ js.Date, /* locale */ js.UndefOr[String], String]] = js.undefined
     
     var highlightCurrentDay: js.UndefOr[Boolean] = js.undefined
     
-    var initialMonth: js.UndefOr[Date] = js.undefined
+    var initialMonth: js.UndefOr[js.Date] = js.undefined
     
-    var inputProps: js.UndefOr[HTMLInputProps & IInputGroupProps] = js.undefined
+    var inputProps: js.UndefOr[InputGroupProps2] = js.undefined
     
     var invalidDateMessage: js.UndefOr[String] = js.undefined
     
     var locale: js.UndefOr[String] = js.undefined
     
-    var localeUtils: js.UndefOr[TypeofLocaleUtils] = js.undefined
+    var localeUtils: js.UndefOr[
+        /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LocaleUtils */ Any
+      ] = js.undefined
     
-    var maxDate: js.UndefOr[Date] = js.undefined
+    var maxDate: js.UndefOr[js.Date] = js.undefined
     
-    var minDate: js.UndefOr[Date] = js.undefined
+    var minDate: js.UndefOr[js.Date] = js.undefined
     
-    var modifiers: js.UndefOr[IDatePickerModifiers] = js.undefined
+    var modifiers: js.UndefOr[DatePickerModifiers] = js.undefined
     
-    var onChange: js.UndefOr[js.Function2[/* selectedDate */ Date, /* isUserChange */ Boolean, Unit]] = js.undefined
+    var onChange: js.UndefOr[
+        js.Function2[/* selectedDate */ js.Date | Null, /* isUserChange */ Boolean, Unit]
+      ] = js.undefined
     
-    var onError: js.UndefOr[js.Function1[/* errorDate */ Date, Unit]] = js.undefined
+    var onError: js.UndefOr[js.Function1[/* errorDate */ js.Date, Unit]] = js.undefined
     
     var outOfRangeMessage: js.UndefOr[String] = js.undefined
     
     var parseDate: js.UndefOr[
-        js.Function2[/* str */ String, /* locale */ js.UndefOr[String], Date | `false` | Null]
+        js.Function2[/* str */ String, /* locale */ js.UndefOr[String], js.Date | `false` | Null]
       ] = js.undefined
     
     var placeholder: js.UndefOr[String] = js.undefined
@@ -86,26 +93,26 @@ object anon {
     
     var rightElement: js.UndefOr[Element] = js.undefined
     
-    var shortcuts: js.UndefOr[Boolean | js.Array[IDatePickerShortcut]] = js.undefined
+    var shortcuts: js.UndefOr[Boolean | js.Array[DatePickerShortcut]] = js.undefined
     
     var showActionsBar: js.UndefOr[Boolean] = js.undefined
     
-    var timePickerProps: js.UndefOr[ITimePickerProps] = js.undefined
+    var timePickerProps: js.UndefOr[TimePickerProps] = js.undefined
     
     var timePrecision: js.UndefOr[TimePrecision] = js.undefined
     
     var todayButtonText: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[Date | Null] = js.undefined
+    var value: js.UndefOr[js.Date | Null] = js.undefined
   }
-  object PartialIDateInputProps {
+  object PartialDateInputProps {
     
-    inline def apply(): PartialIDateInputProps = {
+    inline def apply(): PartialDateInputProps = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[PartialIDateInputProps]
+      __obj.asInstanceOf[PartialDateInputProps]
     }
     
-    extension [Self <: PartialIDateInputProps](x: Self) {
+    extension [Self <: PartialDateInputProps](x: Self) {
       
       inline def setCanClearSelection(value: Boolean): Self = StObject.set(x, "canClearSelection", value.asInstanceOf[js.Any])
       
@@ -127,7 +134,7 @@ object anon {
       
       inline def setDayPickerPropsUndefined: Self = StObject.set(x, "dayPickerProps", js.undefined)
       
-      inline def setDefaultValue(value: Date): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: js.Date): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
@@ -139,7 +146,11 @@ object anon {
       
       inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
       
-      inline def setFormatDate(value: (/* date */ Date, /* locale */ js.UndefOr[String]) => String): Self = StObject.set(x, "formatDate", js.Any.fromFunction2(value))
+      inline def setFooterElement(value: Element): Self = StObject.set(x, "footerElement", value.asInstanceOf[js.Any])
+      
+      inline def setFooterElementUndefined: Self = StObject.set(x, "footerElement", js.undefined)
+      
+      inline def setFormatDate(value: (/* date */ js.Date, /* locale */ js.UndefOr[String]) => String): Self = StObject.set(x, "formatDate", js.Any.fromFunction2(value))
       
       inline def setFormatDateUndefined: Self = StObject.set(x, "formatDate", js.undefined)
       
@@ -147,11 +158,11 @@ object anon {
       
       inline def setHighlightCurrentDayUndefined: Self = StObject.set(x, "highlightCurrentDay", js.undefined)
       
-      inline def setInitialMonth(value: Date): Self = StObject.set(x, "initialMonth", value.asInstanceOf[js.Any])
+      inline def setInitialMonth(value: js.Date): Self = StObject.set(x, "initialMonth", value.asInstanceOf[js.Any])
       
       inline def setInitialMonthUndefined: Self = StObject.set(x, "initialMonth", js.undefined)
       
-      inline def setInputProps(value: HTMLInputProps & IInputGroupProps): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
+      inline def setInputProps(value: InputGroupProps2): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
       
       inline def setInputPropsUndefined: Self = StObject.set(x, "inputProps", js.undefined)
       
@@ -163,27 +174,27 @@ object anon {
       
       inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      inline def setLocaleUtils(value: TypeofLocaleUtils): Self = StObject.set(x, "localeUtils", value.asInstanceOf[js.Any])
+      inline def setLocaleUtils(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LocaleUtils */ Any): Self = StObject.set(x, "localeUtils", value.asInstanceOf[js.Any])
       
       inline def setLocaleUtilsUndefined: Self = StObject.set(x, "localeUtils", js.undefined)
       
-      inline def setMaxDate(value: Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+      inline def setMaxDate(value: js.Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
       
       inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
       
-      inline def setMinDate(value: Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+      inline def setMinDate(value: js.Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
       
       inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
       
-      inline def setModifiers(value: IDatePickerModifiers): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+      inline def setModifiers(value: DatePickerModifiers): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
       
       inline def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
       
-      inline def setOnChange(value: (/* selectedDate */ Date, /* isUserChange */ Boolean) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      inline def setOnChange(value: (/* selectedDate */ js.Date | Null, /* isUserChange */ Boolean) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      inline def setOnError(value: /* errorDate */ Date => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* errorDate */ js.Date => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
@@ -191,7 +202,7 @@ object anon {
       
       inline def setOutOfRangeMessageUndefined: Self = StObject.set(x, "outOfRangeMessage", js.undefined)
       
-      inline def setParseDate(value: (/* str */ String, /* locale */ js.UndefOr[String]) => Date | `false` | Null): Self = StObject.set(x, "parseDate", js.Any.fromFunction2(value))
+      inline def setParseDate(value: (/* str */ String, /* locale */ js.UndefOr[String]) => js.Date | `false` | Null): Self = StObject.set(x, "parseDate", js.Any.fromFunction2(value))
       
       inline def setParseDateUndefined: Self = StObject.set(x, "parseDate", js.undefined)
       
@@ -211,17 +222,17 @@ object anon {
       
       inline def setRightElementUndefined: Self = StObject.set(x, "rightElement", js.undefined)
       
-      inline def setShortcuts(value: Boolean | js.Array[IDatePickerShortcut]): Self = StObject.set(x, "shortcuts", value.asInstanceOf[js.Any])
+      inline def setShortcuts(value: Boolean | js.Array[DatePickerShortcut]): Self = StObject.set(x, "shortcuts", value.asInstanceOf[js.Any])
       
       inline def setShortcutsUndefined: Self = StObject.set(x, "shortcuts", js.undefined)
       
-      inline def setShortcutsVarargs(value: IDatePickerShortcut*): Self = StObject.set(x, "shortcuts", js.Array(value :_*))
+      inline def setShortcutsVarargs(value: DatePickerShortcut*): Self = StObject.set(x, "shortcuts", js.Array(value*))
       
       inline def setShowActionsBar(value: Boolean): Self = StObject.set(x, "showActionsBar", value.asInstanceOf[js.Any])
       
       inline def setShowActionsBarUndefined: Self = StObject.set(x, "showActionsBar", js.undefined)
       
-      inline def setTimePickerProps(value: ITimePickerProps): Self = StObject.set(x, "timePickerProps", value.asInstanceOf[js.Any])
+      inline def setTimePickerProps(value: TimePickerProps): Self = StObject.set(x, "timePickerProps", value.asInstanceOf[js.Any])
       
       inline def setTimePickerPropsUndefined: Self = StObject.set(x, "timePickerProps", js.undefined)
       
@@ -233,7 +244,7 @@ object anon {
       
       inline def setTodayButtonTextUndefined: Self = StObject.set(x, "todayButtonText", js.undefined)
       
-      inline def setValue(value: Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueNull: Self = StObject.set(x, "value", null)
       
@@ -241,8 +252,8 @@ object anon {
     }
   }
   
-  /* Inlined std.Partial<@blueprintjs/datetime.@blueprintjs/datetime/lib/esm/dateRangeInput.IDateRangeInputProps> */
-  trait PartialIDateRangeInputPro extends StObject {
+  /* Inlined std.Partial<@blueprintjs/datetime.@blueprintjs/datetime/lib/esm/dateRangeInput.DateRangeInputProps> */
+  trait PartialDateRangeInputProp extends StObject {
     
     var allowSingleDayRange: js.UndefOr[Boolean] = js.undefined
     
@@ -258,25 +269,29 @@ object anon {
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var endInputProps: js.UndefOr[HTMLInputProps & IInputGroupProps] = js.undefined
+    var endInputProps: js.UndefOr[InputGroupProps2] = js.undefined
     
-    var formatDate: js.UndefOr[js.Function2[/* date */ Date, /* locale */ js.UndefOr[String], String]] = js.undefined
+    var footerElement: js.UndefOr[Element] = js.undefined
+    
+    var formatDate: js.UndefOr[js.Function2[/* date */ js.Date, /* locale */ js.UndefOr[String], String]] = js.undefined
     
     var highlightCurrentDay: js.UndefOr[Boolean] = js.undefined
     
-    var initialMonth: js.UndefOr[Date] = js.undefined
+    var initialMonth: js.UndefOr[js.Date] = js.undefined
     
     var invalidDateMessage: js.UndefOr[String] = js.undefined
     
     var locale: js.UndefOr[String] = js.undefined
     
-    var localeUtils: js.UndefOr[TypeofLocaleUtils] = js.undefined
+    var localeUtils: js.UndefOr[
+        /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LocaleUtils */ Any
+      ] = js.undefined
     
-    var maxDate: js.UndefOr[Date] = js.undefined
+    var maxDate: js.UndefOr[js.Date] = js.undefined
     
-    var minDate: js.UndefOr[Date] = js.undefined
+    var minDate: js.UndefOr[js.Date] = js.undefined
     
-    var modifiers: js.UndefOr[IDatePickerModifiers] = js.undefined
+    var modifiers: js.UndefOr[DatePickerModifiers] = js.undefined
     
     var onChange: js.UndefOr[js.Function1[/* selectedRange */ DateRange, Unit]] = js.undefined
     
@@ -287,7 +302,7 @@ object anon {
     var overlappingDatesMessage: js.UndefOr[String] = js.undefined
     
     var parseDate: js.UndefOr[
-        js.Function2[/* str */ String, /* locale */ js.UndefOr[String], Date | `false` | Null]
+        js.Function2[/* str */ String, /* locale */ js.UndefOr[String], js.Date | `false` | Null]
       ] = js.undefined
     
     var placeholder: js.UndefOr[String] = js.undefined
@@ -298,26 +313,26 @@ object anon {
     
     var selectAllOnFocus: js.UndefOr[Boolean] = js.undefined
     
-    var shortcuts: js.UndefOr[Boolean | js.Array[IDateRangeShortcut]] = js.undefined
+    var shortcuts: js.UndefOr[Boolean | js.Array[DateRangeShortcut]] = js.undefined
     
     var singleMonthOnly: js.UndefOr[Boolean] = js.undefined
     
-    var startInputProps: js.UndefOr[HTMLInputProps & IInputGroupProps] = js.undefined
+    var startInputProps: js.UndefOr[InputGroupProps2] = js.undefined
     
-    var timePickerProps: js.UndefOr[ITimePickerProps] = js.undefined
+    var timePickerProps: js.UndefOr[TimePickerProps] = js.undefined
     
     var timePrecision: js.UndefOr[TimePrecision] = js.undefined
     
     var value: js.UndefOr[DateRange] = js.undefined
   }
-  object PartialIDateRangeInputPro {
+  object PartialDateRangeInputProp {
     
-    inline def apply(): PartialIDateRangeInputPro = {
+    inline def apply(): PartialDateRangeInputProp = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[PartialIDateRangeInputPro]
+      __obj.asInstanceOf[PartialDateRangeInputProp]
     }
     
-    extension [Self <: PartialIDateRangeInputPro](x: Self) {
+    extension [Self <: PartialDateRangeInputProp](x: Self) {
       
       inline def setAllowSingleDayRange(value: Boolean): Self = StObject.set(x, "allowSingleDayRange", value.asInstanceOf[js.Any])
       
@@ -347,11 +362,15 @@ object anon {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      inline def setEndInputProps(value: HTMLInputProps & IInputGroupProps): Self = StObject.set(x, "endInputProps", value.asInstanceOf[js.Any])
+      inline def setEndInputProps(value: InputGroupProps2): Self = StObject.set(x, "endInputProps", value.asInstanceOf[js.Any])
       
       inline def setEndInputPropsUndefined: Self = StObject.set(x, "endInputProps", js.undefined)
       
-      inline def setFormatDate(value: (/* date */ Date, /* locale */ js.UndefOr[String]) => String): Self = StObject.set(x, "formatDate", js.Any.fromFunction2(value))
+      inline def setFooterElement(value: Element): Self = StObject.set(x, "footerElement", value.asInstanceOf[js.Any])
+      
+      inline def setFooterElementUndefined: Self = StObject.set(x, "footerElement", js.undefined)
+      
+      inline def setFormatDate(value: (/* date */ js.Date, /* locale */ js.UndefOr[String]) => String): Self = StObject.set(x, "formatDate", js.Any.fromFunction2(value))
       
       inline def setFormatDateUndefined: Self = StObject.set(x, "formatDate", js.undefined)
       
@@ -359,7 +378,7 @@ object anon {
       
       inline def setHighlightCurrentDayUndefined: Self = StObject.set(x, "highlightCurrentDay", js.undefined)
       
-      inline def setInitialMonth(value: Date): Self = StObject.set(x, "initialMonth", value.asInstanceOf[js.Any])
+      inline def setInitialMonth(value: js.Date): Self = StObject.set(x, "initialMonth", value.asInstanceOf[js.Any])
       
       inline def setInitialMonthUndefined: Self = StObject.set(x, "initialMonth", js.undefined)
       
@@ -371,19 +390,19 @@ object anon {
       
       inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      inline def setLocaleUtils(value: TypeofLocaleUtils): Self = StObject.set(x, "localeUtils", value.asInstanceOf[js.Any])
+      inline def setLocaleUtils(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LocaleUtils */ Any): Self = StObject.set(x, "localeUtils", value.asInstanceOf[js.Any])
       
       inline def setLocaleUtilsUndefined: Self = StObject.set(x, "localeUtils", js.undefined)
       
-      inline def setMaxDate(value: Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+      inline def setMaxDate(value: js.Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
       
       inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
       
-      inline def setMinDate(value: Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+      inline def setMinDate(value: js.Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
       
       inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
       
-      inline def setModifiers(value: IDatePickerModifiers): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+      inline def setModifiers(value: DatePickerModifiers): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
       
       inline def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
       
@@ -403,7 +422,7 @@ object anon {
       
       inline def setOverlappingDatesMessageUndefined: Self = StObject.set(x, "overlappingDatesMessage", js.undefined)
       
-      inline def setParseDate(value: (/* str */ String, /* locale */ js.UndefOr[String]) => Date | `false` | Null): Self = StObject.set(x, "parseDate", js.Any.fromFunction2(value))
+      inline def setParseDate(value: (/* str */ String, /* locale */ js.UndefOr[String]) => js.Date | `false` | Null): Self = StObject.set(x, "parseDate", js.Any.fromFunction2(value))
       
       inline def setParseDateUndefined: Self = StObject.set(x, "parseDate", js.undefined)
       
@@ -423,21 +442,21 @@ object anon {
       
       inline def setSelectAllOnFocusUndefined: Self = StObject.set(x, "selectAllOnFocus", js.undefined)
       
-      inline def setShortcuts(value: Boolean | js.Array[IDateRangeShortcut]): Self = StObject.set(x, "shortcuts", value.asInstanceOf[js.Any])
+      inline def setShortcuts(value: Boolean | js.Array[DateRangeShortcut]): Self = StObject.set(x, "shortcuts", value.asInstanceOf[js.Any])
       
       inline def setShortcutsUndefined: Self = StObject.set(x, "shortcuts", js.undefined)
       
-      inline def setShortcutsVarargs(value: IDateRangeShortcut*): Self = StObject.set(x, "shortcuts", js.Array(value :_*))
+      inline def setShortcutsVarargs(value: DateRangeShortcut*): Self = StObject.set(x, "shortcuts", js.Array(value*))
       
       inline def setSingleMonthOnly(value: Boolean): Self = StObject.set(x, "singleMonthOnly", value.asInstanceOf[js.Any])
       
       inline def setSingleMonthOnlyUndefined: Self = StObject.set(x, "singleMonthOnly", js.undefined)
       
-      inline def setStartInputProps(value: HTMLInputProps & IInputGroupProps): Self = StObject.set(x, "startInputProps", value.asInstanceOf[js.Any])
+      inline def setStartInputProps(value: InputGroupProps2): Self = StObject.set(x, "startInputProps", value.asInstanceOf[js.Any])
       
       inline def setStartInputPropsUndefined: Self = StObject.set(x, "startInputProps", js.undefined)
       
-      inline def setTimePickerProps(value: ITimePickerProps): Self = StObject.set(x, "timePickerProps", value.asInstanceOf[js.Any])
+      inline def setTimePickerProps(value: TimePickerProps): Self = StObject.set(x, "timePickerProps", value.asInstanceOf[js.Any])
       
       inline def setTimePickerPropsUndefined: Self = StObject.set(x, "timePickerProps", js.undefined)
       
@@ -463,6 +482,8 @@ object anon {
     var canEscapeKeyClose: js.UndefOr[Boolean] = js.undefined
     
     var captureDismiss: js.UndefOr[Boolean] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -514,15 +535,19 @@ object anon {
     
     var openOnTargetFocus: js.UndefOr[Boolean] = js.undefined
     
+    var placement: js.UndefOr[Placement] = js.undefined
+    
     var popoverClassName: js.UndefOr[String] = js.undefined
     
-    var popoverRef: js.UndefOr[js.Function1[/* ref */ HTMLElement | Null, Unit]] = js.undefined
+    var popoverRef: js.UndefOr[Ref[HTMLElement]] = js.undefined
     
     var portalClassName: js.UndefOr[String] = js.undefined
     
     var portalContainer: js.UndefOr[HTMLElement] = js.undefined
     
     var position: js.UndefOr[PopoverPosition] = js.undefined
+    
+    var shouldReturnFocusOnClose: js.UndefOr[Boolean] = js.undefined
     
     var target: js.UndefOr[String | Element] = js.undefined
     
@@ -531,7 +556,7 @@ object anon {
     var targetProps: js.UndefOr[HTMLAttributes[HTMLElement]] = js.undefined
     
     var targetTagName: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any
       ] = js.undefined
     
     var transitionDuration: js.UndefOr[Double] = js.undefined
@@ -539,7 +564,7 @@ object anon {
     var usePortal: js.UndefOr[Boolean] = js.undefined
     
     var wrapperTagName: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any
       ] = js.undefined
   }
   object PartialIPopoverProps {
@@ -570,6 +595,10 @@ object anon {
       inline def setCaptureDismiss(value: Boolean): Self = StObject.set(x, "captureDismiss", value.asInstanceOf[js.Any])
       
       inline def setCaptureDismissUndefined: Self = StObject.set(x, "captureDismiss", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -661,11 +690,19 @@ object anon {
       
       inline def setOpenOnTargetFocusUndefined: Self = StObject.set(x, "openOnTargetFocus", js.undefined)
       
+      inline def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      
+      inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+      
       inline def setPopoverClassName(value: String): Self = StObject.set(x, "popoverClassName", value.asInstanceOf[js.Any])
       
       inline def setPopoverClassNameUndefined: Self = StObject.set(x, "popoverClassName", js.undefined)
       
-      inline def setPopoverRef(value: /* ref */ HTMLElement | Null => Unit): Self = StObject.set(x, "popoverRef", js.Any.fromFunction1(value))
+      inline def setPopoverRef(value: Ref[HTMLElement]): Self = StObject.set(x, "popoverRef", value.asInstanceOf[js.Any])
+      
+      inline def setPopoverRefFunction1(value: /* instance */ HTMLElement | Null => Unit): Self = StObject.set(x, "popoverRef", js.Any.fromFunction1(value))
+      
+      inline def setPopoverRefNull: Self = StObject.set(x, "popoverRef", null)
       
       inline def setPopoverRefUndefined: Self = StObject.set(x, "popoverRef", js.undefined)
       
@@ -681,6 +718,10 @@ object anon {
       
       inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
+      inline def setShouldReturnFocusOnClose(value: Boolean): Self = StObject.set(x, "shouldReturnFocusOnClose", value.asInstanceOf[js.Any])
+      
+      inline def setShouldReturnFocusOnCloseUndefined: Self = StObject.set(x, "shouldReturnFocusOnClose", js.undefined)
+      
       inline def setTarget(value: String | Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetClassName(value: String): Self = StObject.set(x, "targetClassName", value.asInstanceOf[js.Any])
@@ -691,7 +732,7 @@ object anon {
       
       inline def setTargetPropsUndefined: Self = StObject.set(x, "targetProps", js.undefined)
       
-      inline def setTargetTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any): Self = StObject.set(x, "targetTagName", value.asInstanceOf[js.Any])
+      inline def setTargetTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any): Self = StObject.set(x, "targetTagName", value.asInstanceOf[js.Any])
       
       inline def setTargetTagNameUndefined: Self = StObject.set(x, "targetTagName", js.undefined)
       
@@ -705,7 +746,7 @@ object anon {
       
       inline def setUsePortalUndefined: Self = StObject.set(x, "usePortal", js.undefined)
       
-      inline def setWrapperTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any): Self = StObject.set(x, "wrapperTagName", value.asInstanceOf[js.Any])
+      inline def setWrapperTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any): Self = StObject.set(x, "wrapperTagName", value.asInstanceOf[js.Any])
       
       inline def setWrapperTagNameUndefined: Self = StObject.set(x, "wrapperTagName", js.undefined)
     }
@@ -716,15 +757,15 @@ object anon {
     
     var allowSingleDayRange: js.UndefOr[Boolean] = js.undefined
     
-    var maxDate: js.UndefOr[Date] = js.undefined
+    var maxDate: js.UndefOr[js.Date] = js.undefined
     
-    var minDate: js.UndefOr[Date] = js.undefined
+    var minDate: js.UndefOr[js.Date] = js.undefined
     
-    var onShortcutClick: js.UndefOr[js.Function2[/* shortcut */ IDateRangeShortcut, /* index */ Double, Unit]] = js.undefined
+    var onShortcutClick: js.UndefOr[js.Function2[/* shortcut */ DateRangeShortcut, /* index */ Double, Unit]] = js.undefined
     
     var selectedShortcutIndex: js.UndefOr[Double] = js.undefined
     
-    var shortcuts: js.UndefOr[js.Array[IDateRangeShortcut] | `true`] = js.undefined
+    var shortcuts: js.UndefOr[js.Array[DateRangeShortcut] | `true`] = js.undefined
     
     var timePrecision: js.UndefOr[TimePrecision] = js.undefined
     
@@ -743,15 +784,15 @@ object anon {
       
       inline def setAllowSingleDayRangeUndefined: Self = StObject.set(x, "allowSingleDayRange", js.undefined)
       
-      inline def setMaxDate(value: Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+      inline def setMaxDate(value: js.Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
       
       inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
       
-      inline def setMinDate(value: Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+      inline def setMinDate(value: js.Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
       
       inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
       
-      inline def setOnShortcutClick(value: (/* shortcut */ IDateRangeShortcut, /* index */ Double) => Unit): Self = StObject.set(x, "onShortcutClick", js.Any.fromFunction2(value))
+      inline def setOnShortcutClick(value: (/* shortcut */ DateRangeShortcut, /* index */ Double) => Unit): Self = StObject.set(x, "onShortcutClick", js.Any.fromFunction2(value))
       
       inline def setOnShortcutClickUndefined: Self = StObject.set(x, "onShortcutClick", js.undefined)
       
@@ -759,11 +800,11 @@ object anon {
       
       inline def setSelectedShortcutIndexUndefined: Self = StObject.set(x, "selectedShortcutIndex", js.undefined)
       
-      inline def setShortcuts(value: js.Array[IDateRangeShortcut] | `true`): Self = StObject.set(x, "shortcuts", value.asInstanceOf[js.Any])
+      inline def setShortcuts(value: js.Array[DateRangeShortcut] | `true`): Self = StObject.set(x, "shortcuts", value.asInstanceOf[js.Any])
       
       inline def setShortcutsUndefined: Self = StObject.set(x, "shortcuts", js.undefined)
       
-      inline def setShortcutsVarargs(value: IDateRangeShortcut*): Self = StObject.set(x, "shortcuts", js.Array(value :_*))
+      inline def setShortcutsVarargs(value: DateRangeShortcut*): Self = StObject.set(x, "shortcuts", js.Array(value*))
       
       inline def setTimePrecision(value: TimePrecision): Self = StObject.set(x, "timePrecision", value.asInstanceOf[js.Any])
       
@@ -773,39 +814,5 @@ object anon {
       
       inline def setUseSingleDateShortcutsUndefined: Self = StObject.set(x, "useSingleDateShortcuts", js.undefined)
     }
-  }
-  
-  @js.native
-  trait TypeofLocaleUtils extends StObject {
-    
-    def formatDate(date: Date): String = js.native
-    def formatDate(date: Date, format: String): String = js.native
-    def formatDate(date: Date, format: String, locale: String): String = js.native
-    def formatDate(date: Date, format: js.Array[String]): String = js.native
-    def formatDate(date: Date, format: js.Array[String], locale: String): String = js.native
-    def formatDate(date: Date, format: Unit, locale: String): String = js.native
-    
-    def formatDay(day: Date): String = js.native
-    def formatDay(day: Date, locale: String): String = js.native
-    
-    def formatMonthTitle(month: Date): String = js.native
-    def formatMonthTitle(month: Date, locale: String): String = js.native
-    
-    def formatWeekdayLong(weekday: Double): String = js.native
-    def formatWeekdayLong(weekday: Double, locale: String): String = js.native
-    
-    def formatWeekdayShort(weekday: Double): String = js.native
-    def formatWeekdayShort(weekday: Double, locale: String): String = js.native
-    
-    def getFirstDayOfWeek(): Double = js.native
-    def getFirstDayOfWeek(locale: String): Double = js.native
-    
-    def getMonths(): js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String] = js.native
-    def getMonths(locale: String): js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String] = js.native
-    
-    def parseDate(str: String): Date = js.native
-    def parseDate(str: String, format: String): Date = js.native
-    def parseDate(str: String, format: String, locale: String): Date = js.native
-    def parseDate(str: String, format: Unit, locale: String): Date = js.native
   }
 }

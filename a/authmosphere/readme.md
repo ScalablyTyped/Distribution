@@ -1,7 +1,7 @@
 
 # Scala.js typings for authmosphere
 
-Typings are for version 3.0.0
+Typings are for version 4.0.4
 
 ## Library description:
 authmosphere is a library to support OAuth2 workflows in JavaScript projects.
@@ -10,10 +10,10 @@ authmosphere is a library to support OAuth2 workflows in JavaScript projects.
 | ------------------ | :-------------: |
 | Full name          | authmosphere |
 | Keywords           | zalando, oauth2, express, node, typescript |
-| # releases         | 6 |
-| # dependents       | 0 |
-| # downloads        | 14504 |
-| # stars            | 1 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 1030.0 |
+| # stars            | 53.0 |
 
 ## Links
 - [Homepage](https://github.com/zalando-incubator/authmosphere#readme)

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-native-pager-view" : "6.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-native-pager-view" : "6.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SpatialPointerPose extends StObject {
   
   /* unmapped type */
-  var head: js.Any
+  var head: Any
   
   /* unmapped type */
-  var timestamp: js.Any
+  var timestamp: Any
 }
 object SpatialPointerPose {
   
-  inline def apply(head: js.Any, timestamp: js.Any): SpatialPointerPose = {
+  inline def apply(head: Any, timestamp: Any): SpatialPointerPose = {
     val __obj = js.Dynamic.literal(head = head.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpatialPointerPose]
   }
   
   extension [Self <: SpatialPointerPose](x: Self) {
     
-    inline def setHead(value: js.Any): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+    inline def setHead(value: Any): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
     
-    inline def setTimestamp(value: js.Any): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Any): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

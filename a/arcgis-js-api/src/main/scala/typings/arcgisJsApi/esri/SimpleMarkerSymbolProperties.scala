@@ -4,8 +4,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.circle
 import typings.arcgisJsApi.arcgisJsApiStrings.cross
 import typings.arcgisJsApi.arcgisJsApiStrings.diamond
 import typings.arcgisJsApi.arcgisJsApiStrings.path
-import typings.arcgisJsApi.arcgisJsApiStrings.square
-import typings.arcgisJsApi.arcgisJsApiStrings.triangle
+import typings.arcgisJsApi.arcgisJsApiStrings.square_
+import typings.arcgisJsApi.arcgisJsApiStrings.triangle_
 import typings.arcgisJsApi.arcgisJsApiStrings.x
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -32,6 +32,8 @@ trait SimpleMarkerSymbolProperties
   /**
     * The size of the marker in points.
     *
+    * @default 12
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html#size)
     */
   var size: js.UndefOr[Double | String] = js.undefined
@@ -39,9 +41,11 @@ trait SimpleMarkerSymbolProperties
   /**
     * The marker style.
     *
+    * @default circle
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html#style)
     */
-  var style: js.UndefOr[circle | square | cross | x | diamond | triangle | path] = js.undefined
+  var style: js.UndefOr[circle | square_ | cross | x | diamond | triangle_ | path] = js.undefined
 }
 object SimpleMarkerSymbolProperties {
   
@@ -65,7 +69,7 @@ object SimpleMarkerSymbolProperties {
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     inline def setStyle(
-      value: circle | square | cross | typings.arcgisJsApi.arcgisJsApiStrings.x | diamond | triangle | path
+      value: circle | square_ | cross | typings.arcgisJsApi.arcgisJsApiStrings.x | diamond | triangle_ | path
     ): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)

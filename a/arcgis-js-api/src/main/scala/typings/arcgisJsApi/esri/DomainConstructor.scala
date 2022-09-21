@@ -9,8 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait DomainConstructor
   extends StObject
-     with Instantiable0[Domain]
+     with /**
+  * Domains define constraints on a [layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html) [field](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html).
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Domain.html)
+  */
+Instantiable0[Domain]
      with Instantiable1[/* properties */ DomainProperties, Domain] {
   
-  def fromJSON(json: js.Any): Domain = js.native
+  def fromJSON(json: Any): Domain = js.native
 }

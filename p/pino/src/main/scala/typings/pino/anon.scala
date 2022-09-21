@@ -1,9 +1,14 @@
 package typings.pino
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.pino.mod.LogEvent
-import typings.pino.mod.LogFn
-import typings.pino.mod.WriteFn
+import typings.node.workerThreadsMod.ResourceLimits_
+import typings.node.workerThreadsMod.TransferListItem
+import typings.pino.mod.pino.LogEvent
+import typings.pino.mod.pino.LogFn
+import typings.pino.mod.pino.Logger
+import typings.pino.mod.pino.WriteFn
+import typings.std.Parameters
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -152,7 +157,7 @@ object anon {
       
       inline def setSerializeUndefined: Self = StObject.set(x, "serialize", js.undefined)
       
-      inline def setSerializeVarargs(value: String*): Self = StObject.set(x, "serialize", js.Array(value :_*))
+      inline def setSerializeVarargs(value: String*): Self = StObject.set(x, "serialize", js.Array(value*))
       
       inline def setTransmit(value: Level): Self = StObject.set(x, "transmit", value.asInstanceOf[js.Any])
       
@@ -174,14 +179,14 @@ object anon {
       * The function takes a single argument, the bindings object.
       * It will be called every time a child logger is created.
       */
-    var bindings: js.UndefOr[js.Function1[/* bindings */ typings.pino.mod.Bindings, js.Object]] = js.undefined
+    var bindings: js.UndefOr[js.Function1[/* bindings */ typings.pino.mod.pino.Bindings, js.Object]] = js.undefined
     
     /**
       * Changes the shape of the log level.
       * The default shape is { level: number }.
       * The function takes two arguments, the label of the level (e.g. 'info') and the numeric value (e.g. 30).
       */
-    var level: js.UndefOr[js.Function2[/* level */ String, /* number */ Double, js.Object]] = js.undefined
+    var level: js.UndefOr[js.Function2[/* label */ String, /* number */ Double, js.Object]] = js.undefined
     
     /**
       * Changes the shape of the log object.
@@ -189,7 +194,7 @@ object anon {
       * All arguments passed to the log method, except the message, will be pass to this function.
       * By default it does not change the shape of the log object.
       */
-    var log: js.UndefOr[js.Function1[/* object */ js.Object, js.Object]] = js.undefined
+    var log: js.UndefOr[js.Function1[/* object */ Record[String, Any], Record[String, Any]]] = js.undefined
   }
   object Bindings {
     
@@ -200,17 +205,34 @@ object anon {
     
     extension [Self <: Bindings](x: Self) {
       
-      inline def setBindings(value: /* bindings */ typings.pino.mod.Bindings => js.Object): Self = StObject.set(x, "bindings", js.Any.fromFunction1(value))
+      inline def setBindings(value: /* bindings */ typings.pino.mod.pino.Bindings => js.Object): Self = StObject.set(x, "bindings", js.Any.fromFunction1(value))
       
       inline def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
       
-      inline def setLevel(value: (/* level */ String, /* number */ Double) => js.Object): Self = StObject.set(x, "level", js.Any.fromFunction2(value))
+      inline def setLevel(value: (/* label */ String, /* number */ Double) => js.Object): Self = StObject.set(x, "level", js.Any.fromFunction2(value))
       
       inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      inline def setLog(value: /* object */ js.Object => js.Object): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
+      inline def setLog(value: /* object */ Record[String, Any] => Record[String, Any]): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
       
       inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+    }
+  }
+  
+  trait CustomLevels extends StObject {
+    
+    var customLevels: Record[String, Double]
+  }
+  object CustomLevels {
+    
+    inline def apply(customLevels: Record[String, Double]): CustomLevels = {
+      val __obj = js.Dynamic.literal(customLevels = customLevels.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CustomLevels]
+    }
+    
+    extension [Self <: CustomLevels](x: Self) {
+      
+      inline def setCustomLevels(value: Record[String, Double]): Self = StObject.set(x, "customLevels", value.asInstanceOf[js.Any])
     }
   }
   
@@ -293,29 +315,60 @@ object anon {
       * the `send` function will be called based on the main logging `level` (set via `options.level`,
       * defaulting to `info`).
       */
-    var level: js.UndefOr[typings.pino.mod.Level | String] = js.undefined
+    var level: js.UndefOr[typings.pino.mod.pino.Level | String] = js.undefined
     
     /**
       * Remotely record log messages.
       *
       * @description Called after writing the log message.
       */
-    def send(level: typings.pino.mod.Level, logEvent: LogEvent): Unit
+    def send(level: typings.pino.mod.pino.Level, logEvent: LogEvent): Unit
   }
   object Level {
     
-    inline def apply(send: (typings.pino.mod.Level, LogEvent) => Unit): Level = {
+    inline def apply(send: (typings.pino.mod.pino.Level, LogEvent) => Unit): Level = {
       val __obj = js.Dynamic.literal(send = js.Any.fromFunction2(send))
       __obj.asInstanceOf[Level]
     }
     
     extension [Self <: Level](x: Self) {
       
-      inline def setLevel(value: typings.pino.mod.Level | String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: typings.pino.mod.pino.Level | String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
       inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      inline def setSend(value: (typings.pino.mod.Level, LogEvent) => Unit): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
+      inline def setSend(value: (typings.pino.mod.pino.Level, LogEvent) => Unit): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
+    }
+  }
+  
+  trait Log extends StObject {
+    
+    var bindings: js.UndefOr[js.Function1[/* bindings */ typings.pino.mod.pino.Bindings, js.Object]] = js.undefined
+    
+    var level: js.UndefOr[js.Function2[/* label */ String, /* number */ Double, js.Object]] = js.undefined
+    
+    var log: js.UndefOr[js.Function1[/* object */ js.Object, js.Object]] = js.undefined
+  }
+  object Log {
+    
+    inline def apply(): Log = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Log]
+    }
+    
+    extension [Self <: Log](x: Self) {
+      
+      inline def setBindings(value: /* bindings */ typings.pino.mod.pino.Bindings => js.Object): Self = StObject.set(x, "bindings", js.Any.fromFunction1(value))
+      
+      inline def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
+      
+      inline def setLevel(value: (/* label */ String, /* number */ Double) => js.Object): Self = StObject.set(x, "level", js.Any.fromFunction2(value))
+      
+      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      
+      inline def setLog(value: /* object */ js.Object => js.Object): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
+      
+      inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
     }
   }
   
@@ -323,11 +376,19 @@ object anon {
     
     /**
       * Allows for manipulating the parameters passed to logger methods. The signature for this hook is
-      * logMethod (args, method) {}, where args is an array of the arguments that were passed to the
-      * log method and method is the log method itself. This hook must invoke the method function by
+      * logMethod (args, method, level) {}, where args is an array of the arguments that were passed to the
+      * log method and method is the log method itself, and level is the log level. This hook must invoke the method function by
       * using apply, like so: method.apply(this, newArgumentsArray).
       */
-    var logMethod: js.UndefOr[js.Function2[/* args */ js.Array[js.Any], /* method */ LogFn, Unit]] = js.undefined
+    var logMethod: js.UndefOr[
+        js.ThisFunction3[
+          /* this */ Logger[this.type], 
+          /* args */ Parameters[LogFn], 
+          /* method */ LogFn, 
+          /* level */ Double, 
+          Unit
+        ]
+      ] = js.undefined
   }
   object LogMethod {
     
@@ -338,9 +399,125 @@ object anon {
     
     extension [Self <: LogMethod](x: Self) {
       
-      inline def setLogMethod(value: (/* args */ js.Array[js.Any], /* method */ LogFn) => Unit): Self = StObject.set(x, "logMethod", js.Any.fromFunction2(value))
+      inline def setLogMethod(
+        value: js.ThisFunction3[
+              /* this */ Logger[LogMethod], 
+              /* args */ Parameters[LogFn], 
+              /* method */ LogFn, 
+              /* level */ Double, 
+              Unit
+            ]
+      ): Self = StObject.set(x, "logMethod", value.asInstanceOf[js.Any])
       
       inline def setLogMethodUndefined: Self = StObject.set(x, "logMethod", js.undefined)
+    }
+  }
+  
+  /* Inlined node.worker_threads.WorkerOptions & {  autoEnd :boolean | undefined} */
+  trait WorkerOptionsautoEndboole extends StObject {
+    
+    /**
+      * List of arguments which would be stringified and appended to
+      * `process.argv` in the worker. This is mostly similar to the `workerData`
+      * but the values will be available on the global `process.argv` as if they
+      * were passed as CLI options to the script.
+      */
+    var argv: js.UndefOr[js.Array[Any]] = js.undefined
+    
+    var autoEnd: js.UndefOr[Boolean] = js.undefined
+    
+    var env: js.UndefOr[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.Dict<string> */ Any) | js.Symbol
+      ] = js.undefined
+    
+    var eval: js.UndefOr[Boolean] = js.undefined
+    
+    var execArgv: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var resourceLimits: js.UndefOr[ResourceLimits_] = js.undefined
+    
+    var stderr: js.UndefOr[Boolean] = js.undefined
+    
+    var stdin: js.UndefOr[Boolean] = js.undefined
+    
+    var stdout: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * @default true
+      */
+    var trackUnmanagedFds: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Additional data to send in the first worker message.
+      */
+    var transferList: js.UndefOr[js.Array[TransferListItem]] = js.undefined
+    
+    var workerData: js.UndefOr[Any] = js.undefined
+  }
+  object WorkerOptionsautoEndboole {
+    
+    inline def apply(): WorkerOptionsautoEndboole = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[WorkerOptionsautoEndboole]
+    }
+    
+    extension [Self <: WorkerOptionsautoEndboole](x: Self) {
+      
+      inline def setArgv(value: js.Array[Any]): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
+      
+      inline def setArgvUndefined: Self = StObject.set(x, "argv", js.undefined)
+      
+      inline def setArgvVarargs(value: Any*): Self = StObject.set(x, "argv", js.Array(value*))
+      
+      inline def setAutoEnd(value: Boolean): Self = StObject.set(x, "autoEnd", value.asInstanceOf[js.Any])
+      
+      inline def setAutoEndUndefined: Self = StObject.set(x, "autoEnd", js.undefined)
+      
+      inline def setEnv(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.Dict<string> */ Any) | js.Symbol
+      ): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      
+      inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+      
+      inline def setEval(value: Boolean): Self = StObject.set(x, "eval", value.asInstanceOf[js.Any])
+      
+      inline def setEvalUndefined: Self = StObject.set(x, "eval", js.undefined)
+      
+      inline def setExecArgv(value: js.Array[String]): Self = StObject.set(x, "execArgv", value.asInstanceOf[js.Any])
+      
+      inline def setExecArgvUndefined: Self = StObject.set(x, "execArgv", js.undefined)
+      
+      inline def setExecArgvVarargs(value: String*): Self = StObject.set(x, "execArgv", js.Array(value*))
+      
+      inline def setResourceLimits(value: ResourceLimits_): Self = StObject.set(x, "resourceLimits", value.asInstanceOf[js.Any])
+      
+      inline def setResourceLimitsUndefined: Self = StObject.set(x, "resourceLimits", js.undefined)
+      
+      inline def setStderr(value: Boolean): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
+      
+      inline def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
+      
+      inline def setStdin(value: Boolean): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
+      
+      inline def setStdinUndefined: Self = StObject.set(x, "stdin", js.undefined)
+      
+      inline def setStdout(value: Boolean): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
+      
+      inline def setStdoutUndefined: Self = StObject.set(x, "stdout", js.undefined)
+      
+      inline def setTrackUnmanagedFds(value: Boolean): Self = StObject.set(x, "trackUnmanagedFds", value.asInstanceOf[js.Any])
+      
+      inline def setTrackUnmanagedFdsUndefined: Self = StObject.set(x, "trackUnmanagedFds", js.undefined)
+      
+      inline def setTransferList(value: js.Array[TransferListItem]): Self = StObject.set(x, "transferList", value.asInstanceOf[js.Any])
+      
+      inline def setTransferListUndefined: Self = StObject.set(x, "transferList", js.undefined)
+      
+      inline def setTransferListVarargs(value: TransferListItem*): Self = StObject.set(x, "transferList", js.Array(value*))
+      
+      inline def setWorkerData(value: Any): Self = StObject.set(x, "workerData", value.asInstanceOf[js.Any])
+      
+      inline def setWorkerDataUndefined: Self = StObject.set(x, "workerData", js.undefined)
     }
   }
 }

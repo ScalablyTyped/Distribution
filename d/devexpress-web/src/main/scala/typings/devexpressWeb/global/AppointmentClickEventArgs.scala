@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("AppointmentClickEventArgs")
 @js.native
-class AppointmentClickEventArgs protected ()
+open class AppointmentClickEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.AppointmentClickEventArgs {
   /**
@@ -17,7 +17,7 @@ class AppointmentClickEventArgs protected ()
     * @param appointmentId Specifies an appointment ID.
     * @param sourceEvent Specifies an event source.
     */
-  def this(appointmentId: String, sourceEvent: js.Any) = this()
+  def this(appointmentId: String, sourceEvent: Any) = this()
   
   /**
     * Gets the client appointment ID for the appointment being clicked.
@@ -35,5 +35,5 @@ class AppointmentClickEventArgs protected ()
     * Gets the HTML element that the event was triggered on.
     */
   /* CompleteClass */
-  var htmlElement: js.Any = js.native
+  var htmlElement: Any = js.native
 }

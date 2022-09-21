@@ -202,9 +202,9 @@ import typings.carbonComponentsReact.tableToolbarMod.TableToolbarProps
 import typings.carbonComponentsReact.tableToolbarSearchMod.TableToolbarSearchProps
 import typings.carbonComponentsReact.typingsSharedMod.FCReturn
 import typings.carbonComponentsReact.typingsSharedMod.ForwardRefProps
+import typings.carbonComponentsReact.typingsSharedMod.ReactComponentConstructor
 import typings.react.mod.Component
 import typings.react.mod.FC
-import typings.react.mod.JSXElementConstructor
 import typings.std.HTMLAnchorElement
 import typings.std.HTMLButtonElement
 import typings.std.HTMLElement
@@ -214,8 +214,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("carbon-components-react/lib/components/DataTable/DataTable", JSImport.Default)
 @js.native
-class default[R /* <: DataTableRow[String] */, H /* <: DataTableHeader[String] */] ()
-  extends Component[DataTableProps[R, H], js.Object, js.Any]
+open class default[R /* <: DataTableRow[String] */, H /* <: DataTableHeader[String] */] ()
+  extends Component[DataTableProps[R, H], js.Object, Any]
 object default {
   
   @JSImport("carbon-components-react/lib/components/DataTable/DataTable", JSImport.Default)
@@ -254,7 +254,7 @@ object default {
   
   /* static member */
   /* was `typeof TableBatchAction` */
-  inline def TableBatchAction_T_JSXElementConstructorAnyR[T /* <: JSXElementConstructor[js.Any] */, R](props: ForwardRefProps[R, ButtonCustomComponentProps[T] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def TableBatchAction_T_ReactComponentConstructorNothingR[T /* <: ReactComponentConstructor[scala.Nothing] */, R](props: ForwardRefProps[R, ButtonCustomComponentProps[T] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("TableBatchAction")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   /* static member */
   /* was `typeof TableBatchActions` */

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMap.WalkingRoute")
 @js.native
-class WalkingRoute protected ()
+open class WalkingRoute protected ()
   extends StObject
      with typings.baidumapWebSdk.BMap.WalkingRoute {
   def this(location: String) = this()

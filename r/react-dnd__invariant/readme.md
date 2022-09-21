@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-dnd__invariant
 
-Typings are for version 2.0.0
+Typings are for version 4.0.2
 
 ## Library description:
 invariantx
@@ -10,15 +10,12 @@ invariantx
 | ------------------ | :-------------: |
 | Full name          | @react-dnd/invariant |
 | Keywords           | test, invariant |
-| # releases         | 5 |
-| # dependents       | 4 |
-| # downloads        | 4867716 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 3807308.6666666665 |
+| # stars            | 17847.0 |
 
 ## Links
-- [Homepage](https://github.com/react-dnd/invariant#readme)
-- [Bugs](https://github.com/react-dnd/invariant/issues)
-- [Repository](https://github.com/react-dnd/invariant)
 - [Npm](https://www.npmjs.com/package/%40react-dnd%2Finvariant)
     
 

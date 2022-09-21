@@ -53,6 +53,6 @@ object PathFinderPath {
     
     inline def setPath(value: js.Array[RoomPosition]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setPathVarargs(value: RoomPosition*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: RoomPosition*): Self = StObject.set(x, "path", js.Array(value*))
   }
 }

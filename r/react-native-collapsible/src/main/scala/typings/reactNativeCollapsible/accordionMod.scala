@@ -18,17 +18,18 @@ object accordionMod {
   
   @JSImport("react-native-collapsible/Accordion", JSImport.Default)
   @js.native
-  class default[T] ()
-    extends Component[AccordionProps[T], js.Object, js.Any]
+  open class default[T] ()
+    extends Component[AccordionProps[T], js.Object, Any]
   
-  type Accordion[T] = Component[AccordionProps[T], js.Object, js.Any]
+  type Accordion[T] = Component[AccordionProps[T], js.Object, Any]
   
   trait AccordionProps[T] extends StObject {
     
     /**
-      * Control which indices in the sections array are currently open. If empty, closes all sections.
+      * Control which indices from keyEctractor in the sections array are currently
+      * open. If empty, closes all sections.
       */
-    var activeSections: js.Array[Double]
+    var activeSections: js.Array[Double | String]
     
     /**
       * Alignment of the content when transitioning, can be top, center or bottom
@@ -59,7 +60,7 @@ object accordionMod {
       *
       * @default easeOutCubic
       */
-    var easing: js.UndefOr[EasingMode | js.Any] = js.undefined
+    var easing: js.UndefOr[EasingMode | Any] = js.undefined
     
     /**
       * Expand content from the bottom instead of the top
@@ -76,9 +77,23 @@ object accordionMod {
     var expandMultiple: js.UndefOr[Boolean] = js.undefined
     
     /**
+      * Used to extract a unique key for a given item at the specified index. Key is used for caching
+      * and as the react key to track item re-ordering. The default extractor checks `item.key`, then
+      * falls back to using the index, like React does.
+      */
+    var keyExtractor: js.UndefOr[js.Function2[/* item */ T, /* index */ Double, Double | String]] = js.undefined
+    
+    /**
       * A function that is called when the currently active section(s) are updated.
       */
     def onChange(indexes: js.Array[Double]): Unit
+    
+    /**
+      * Render the Accordion as a FlatList. Defaults to false for legacy behavior.
+      *
+      * @default false
+      */
+    var renderAsFlatList: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A function that should return a renderable representing the content
@@ -148,7 +163,7 @@ object accordionMod {
   object AccordionProps {
     
     inline def apply[T](
-      activeSections: js.Array[Double],
+      activeSections: js.Array[Double | String],
       onChange: js.Array[Double] => Unit,
       renderContent: (T, Double, Boolean, js.Array[T]) => ReactElement,
       renderHeader: (T, Double, Boolean, js.Array[T]) => ReactElement,
@@ -160,9 +175,9 @@ object accordionMod {
     
     extension [Self <: AccordionProps[?], T](x: Self & AccordionProps[T]) {
       
-      inline def setActiveSections(value: js.Array[Double]): Self = StObject.set(x, "activeSections", value.asInstanceOf[js.Any])
+      inline def setActiveSections(value: js.Array[Double | String]): Self = StObject.set(x, "activeSections", value.asInstanceOf[js.Any])
       
-      inline def setActiveSectionsVarargs(value: Double*): Self = StObject.set(x, "activeSections", js.Array(value :_*))
+      inline def setActiveSectionsVarargs(value: (Double | String)*): Self = StObject.set(x, "activeSections", js.Array(value*))
       
       inline def setAlign(value: top | center | bottom): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -182,7 +197,7 @@ object accordionMod {
       
       inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      inline def setEasing(value: EasingMode | js.Any): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+      inline def setEasing(value: EasingMode | Any): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
       
       inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
       
@@ -194,7 +209,15 @@ object accordionMod {
       
       inline def setExpandMultipleUndefined: Self = StObject.set(x, "expandMultiple", js.undefined)
       
+      inline def setKeyExtractor(value: (/* item */ T, /* index */ Double) => Double | String): Self = StObject.set(x, "keyExtractor", js.Any.fromFunction2(value))
+      
+      inline def setKeyExtractorUndefined: Self = StObject.set(x, "keyExtractor", js.undefined)
+      
       inline def setOnChange(value: js.Array[Double] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      
+      inline def setRenderAsFlatList(value: Boolean): Self = StObject.set(x, "renderAsFlatList", value.asInstanceOf[js.Any])
+      
+      inline def setRenderAsFlatListUndefined: Self = StObject.set(x, "renderAsFlatList", js.undefined)
       
       inline def setRenderContent(value: (T, Double, Boolean, js.Array[T]) => ReactElement): Self = StObject.set(x, "renderContent", js.Any.fromFunction4(value))
       
@@ -220,7 +243,7 @@ object accordionMod {
       
       inline def setSections(value: js.Array[T]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
       
-      inline def setSectionsVarargs(value: T*): Self = StObject.set(x, "sections", js.Array(value :_*))
+      inline def setSectionsVarargs(value: T*): Self = StObject.set(x, "sections", js.Array(value*))
       
       inline def setTouchableComponent(value: ComponentClass[js.Object, ComponentState]): Self = StObject.set(x, "touchableComponent", value.asInstanceOf[js.Any])
       

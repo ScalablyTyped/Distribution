@@ -10,10 +10,10 @@ Extends the matchers jasmine provides.
 | ------------------ | :-------------: |
 | Full name          | jasmine-matchers |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 85249 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3302.3333333333335 |
+| # stars            | 52.0 |
 
 ## Links
 - [Homepage](https://github.com/uxebu/jasmine-matchers/)

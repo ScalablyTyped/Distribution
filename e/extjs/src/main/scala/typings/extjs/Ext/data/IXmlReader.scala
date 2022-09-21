@@ -12,7 +12,7 @@ trait IXmlReader
     * @param data Object The raw data object
     * @returns Object The documentElement property of the data object if present, or the same object if not.
     */
-  var getData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], js.Any]] = js.undefined
+  var getData: js.UndefOr[js.Function1[/* data */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Config Option] (String) */
   var namespace: js.UndefOr[String] = js.undefined
@@ -21,7 +21,7 @@ trait IXmlReader
   var record: js.UndefOr[String] = js.undefined
   
   /** [Property] (Object) */
-  var xmlData: js.UndefOr[js.Any] = js.undefined
+  var xmlData: js.UndefOr[Any] = js.undefined
 }
 object IXmlReader {
   
@@ -32,7 +32,7 @@ object IXmlReader {
   
   extension [Self <: IXmlReader](x: Self) {
     
-    inline def setGetData(value: /* data */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
+    inline def setGetData(value: /* data */ js.UndefOr[Any] => Any): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
     
     inline def setGetDataUndefined: Self = StObject.set(x, "getData", js.undefined)
     
@@ -44,7 +44,7 @@ object IXmlReader {
     
     inline def setRecordUndefined: Self = StObject.set(x, "record", js.undefined)
     
-    inline def setXmlData(value: js.Any): Self = StObject.set(x, "xmlData", value.asInstanceOf[js.Any])
+    inline def setXmlData(value: Any): Self = StObject.set(x, "xmlData", value.asInstanceOf[js.Any])
     
     inline def setXmlDataUndefined: Self = StObject.set(x, "xmlData", js.undefined)
   }

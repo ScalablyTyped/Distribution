@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.SectionProperties")
 @js.native
-/* private */ class SectionProperties ()
+/* private */ open class SectionProperties ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.SectionProperties

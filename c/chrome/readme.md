@@ -9,10 +9,10 @@ Open chrome in shell
 | ------------------ | :-------------: |
 | Full name          | chrome |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 45165 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9032.333333333334 |
+| # stars            | 6.0 |
 
 ## Links
 - [Homepage](https://github.com/afc163/chrome#readme)

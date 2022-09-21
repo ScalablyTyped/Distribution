@@ -10,6 +10,11 @@ trait StartSessionResult extends StObject {
     * Session token of the started session. This SessionToken is required for every subsequent command that is issued during the current session.
     */
   var SessionToken: js.UndefOr[typings.awsSdk.qldbsessionMod.SessionToken] = js.undefined
+  
+  /**
+    * Contains server-side performance information for the command.
+    */
+  var TimingInformation: js.UndefOr[typings.awsSdk.qldbsessionMod.TimingInformation] = js.undefined
 }
 object StartSessionResult {
   
@@ -23,5 +28,9 @@ object StartSessionResult {
     inline def setSessionToken(value: SessionToken): Self = StObject.set(x, "SessionToken", value.asInstanceOf[js.Any])
     
     inline def setSessionTokenUndefined: Self = StObject.set(x, "SessionToken", js.undefined)
+    
+    inline def setTimingInformation(value: TimingInformation): Self = StObject.set(x, "TimingInformation", value.asInstanceOf[js.Any])
+    
+    inline def setTimingInformationUndefined: Self = StObject.set(x, "TimingInformation", js.undefined)
   }
 }

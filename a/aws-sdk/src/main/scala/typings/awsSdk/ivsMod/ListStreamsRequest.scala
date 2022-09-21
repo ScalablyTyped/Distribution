@@ -7,7 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListStreamsRequest extends StObject {
   
   /**
-    * Maximum number of streams to return.
+    * Filters the stream list to match the specified criterion.
+    */
+  var filterBy: js.UndefOr[StreamFilters] = js.undefined
+  
+  /**
+    * Maximum number of streams to return. Default: 100.
     */
   var maxResults: js.UndefOr[MaxStreamResults] = js.undefined
   
@@ -24,6 +29,10 @@ object ListStreamsRequest {
   }
   
   extension [Self <: ListStreamsRequest](x: Self) {
+    
+    inline def setFilterBy(value: StreamFilters): Self = StObject.set(x, "filterBy", value.asInstanceOf[js.Any])
+    
+    inline def setFilterByUndefined: Self = StObject.set(x, "filterBy", js.undefined)
     
     inline def setMaxResults(value: MaxStreamResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

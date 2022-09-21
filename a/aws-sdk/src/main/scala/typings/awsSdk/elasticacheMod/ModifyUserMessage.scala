@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ModifyUserMessage extends StObject {
   
   /**
-    * Access permissions string used for this user account.
+    * Access permissions string used for this user.
     */
   var AccessString: js.UndefOr[typings.awsSdk.elasticacheMod.AccessString] = js.undefined
   
@@ -17,12 +17,12 @@ trait ModifyUserMessage extends StObject {
   var AppendAccessString: js.UndefOr[AccessString] = js.undefined
   
   /**
-    * Indicates no password is required for the user account.
+    * Indicates no password is required for the user.
     */
   var NoPasswordRequired: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
-    * The passwords belonging to the user account. You are allowed up to two.
+    * The passwords belonging to the user. You are allowed up to two.
     */
   var Passwords: js.UndefOr[PasswordListInput] = js.undefined
   
@@ -56,7 +56,7 @@ object ModifyUserMessage {
     
     inline def setPasswordsUndefined: Self = StObject.set(x, "Passwords", js.undefined)
     
-    inline def setPasswordsVarargs(value: String*): Self = StObject.set(x, "Passwords", js.Array(value :_*))
+    inline def setPasswordsVarargs(value: String*): Self = StObject.set(x, "Passwords", js.Array(value*))
     
     inline def setUserId(value: UserId): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
   }

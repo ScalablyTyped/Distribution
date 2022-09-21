@@ -44,7 +44,7 @@ object typesListIdentityPoolsOutputMod {
       
       inline def setIdentityPoolsUndefined: Self = StObject.set(x, "IdentityPools", js.undefined)
       
-      inline def setIdentityPoolsVarargs(value: UnmarshalledIdentityPoolShortDescription*): Self = StObject.set(x, "IdentityPools", js.Array(value :_*))
+      inline def setIdentityPoolsVarargs(value: UnmarshalledIdentityPoolShortDescription*): Self = StObject.set(x, "IdentityPools", js.Array(value*))
       
       inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
       

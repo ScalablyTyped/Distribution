@@ -12,7 +12,7 @@ trait Borders extends StObject {
   
   def Item(BorderType: PpBorderType): LineFormat
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.Borders_typekey")
   var PowerPointDotBorders_typekey: Borders
@@ -23,7 +23,7 @@ object Borders {
     Application: Application,
     Count: Double,
     Item: PpBorderType => LineFormat,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotBorders_typekey: Borders
   ): Borders = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
@@ -39,7 +39,7 @@ object Borders {
     
     inline def setItem(value: PpBorderType => LineFormat): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotBorders_typekey(value: Borders): Self = StObject.set(x, "PowerPoint.Borders_typekey", value.asInstanceOf[js.Any])
   }

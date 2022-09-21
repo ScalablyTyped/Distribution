@@ -32,7 +32,7 @@ object DevAppDetails {
     
     inline def setInterfaces(value: js.Array[Address]): Self = StObject.set(x, "interfaces", value.asInstanceOf[js.Any])
     
-    inline def setInterfacesVarargs(value: Address*): Self = StObject.set(x, "interfaces", js.Array(value :_*))
+    inline def setInterfacesVarargs(value: Address*): Self = StObject.set(x, "interfaces", js.Array(value*))
     
     inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
   }

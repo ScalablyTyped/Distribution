@@ -48,7 +48,7 @@ object auto {
     
     def annotate(fn: Function): js.Array[String] = js.native
     def annotate(fn: Function, strictDi: Boolean): js.Array[String] = js.native
-    def annotate(inlineAnnotatedFunction: js.Array[js.Any]): js.Array[String] = js.native
+    def annotate(inlineAnnotatedFunction: js.Array[Any]): js.Array[String] = js.native
     
     def get[T](name: String): T = js.native
     def get[T](name: String, caller: String): T = js.native
@@ -110,27 +110,19 @@ object auto {
     def has(name: String): Boolean = js.native
     
     def instantiate[T](typeConstructor: Instantiable[T]): T = js.native
-    def instantiate[T](typeConstructor: Instantiable[T], locals: js.Any): T = js.native
+    def instantiate[T](typeConstructor: Instantiable[T], locals: Any): T = js.native
     
-    def invoke[T](func: Injectable[Function | (js.Function1[/* repeated */ js.Any, T])]): T = js.native
-    def invoke[T](func: Injectable[Function | (js.Function1[/* repeated */ js.Any, T])], context: js.Any): T = js.native
-    def invoke[T](
-      func: Injectable[Function | (js.Function1[/* repeated */ js.Any, T])],
-      context: js.Any,
-      locals: js.Any
-    ): T = js.native
-    def invoke[T](
-      func: Injectable[Function | (js.Function1[/* repeated */ js.Any, T])],
-      context: Unit,
-      locals: js.Any
-    ): T = js.native
+    def invoke[T](func: Injectable[Function | (js.Function1[/* repeated */ Any, T])]): T = js.native
+    def invoke[T](func: Injectable[Function | (js.Function1[/* repeated */ Any, T])], context: Any): T = js.native
+    def invoke[T](func: Injectable[Function | (js.Function1[/* repeated */ Any, T])], context: Any, locals: Any): T = js.native
+    def invoke[T](func: Injectable[Function | (js.Function1[/* repeated */ Any, T])], context: Unit, locals: Any): T = js.native
     
     /**
       * Add the specified modules to the current injector.
       * This method will add each of the injectables to the injector and execute all of the config and run blocks for each module passed to the method.
       * @param modules A module, module name or annotated injection function.
       */
-    def loadNewModules(modules: js.Array[IModule | String | (Injectable[js.Function1[/* repeated */ js.Any, Unit]])]): Unit = js.native
+    def loadNewModules(modules: js.Array[IModule | String | (Injectable[js.Function1[/* repeated */ Any, Unit]])]): Unit = js.native
     
     /** An object map of all the modules that have been loaded into the injector. */
     var modules: StringDictionary[IModule] = js.native
@@ -154,7 +146,7 @@ object auto {
       * @param name The name of the constant.
       * @param value The constant value.
       */
-    def constant(name: String, value: js.Any): Unit = js.native
+    def constant(name: String, value: Any): Unit = js.native
     
     /**
       * Register a service decorator with the $injector. A service decorator intercepts the creation of a service, allowing it to override or modify the behaviour of the service. The object returned by the decorator may be the original service, or a new service object which replaces or wraps and delegates to the original service.
@@ -173,17 +165,17 @@ object auto {
       *
       * $delegate - The original service instance, which can be monkey patched, configured, decorated or delegated to.
       */
-    def decorator(name: String, inlineAnnotatedFunction: js.Array[js.Any]): Unit = js.native
+    def decorator(name: String, inlineAnnotatedFunction: js.Array[Any]): Unit = js.native
     
-    def factory(name: String, inlineAnnotatedFunction: js.Array[js.Any]): IServiceProvider = js.native
+    def factory(name: String, inlineAnnotatedFunction: js.Array[Any]): IServiceProvider = js.native
     def factory(name: String, serviceFactoryFunction: Function): IServiceProvider = js.native
     
     def provider(name: String, provider: IServiceProvider): IServiceProvider = js.native
     def provider(name: String, serviceProviderConstructor: Function): IServiceProvider = js.native
     
     def service(name: String, constructor: Function): IServiceProvider = js.native
-    def service(name: String, inlineAnnotatedFunction: js.Array[js.Any]): IServiceProvider = js.native
+    def service(name: String, inlineAnnotatedFunction: js.Array[Any]): IServiceProvider = js.native
     
-    def value(name: String, value: js.Any): IServiceProvider = js.native
+    def value(name: String, value: Any): IServiceProvider = js.native
   }
 }

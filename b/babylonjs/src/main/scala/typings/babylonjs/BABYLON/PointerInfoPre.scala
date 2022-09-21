@@ -1,7 +1,5 @@
 package typings.babylonjs.BABYLON
 
-import typings.std.MouseWheelEvent
-import typings.std.PointerEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +14,12 @@ trait PointerInfoPre
   var localPosition: Vector2
   
   /**
-    * Ray from a pointer if availible (eg. 6dof controller)
+    * Defines picking info coming from a near interaction (proximity instead of ray-based picking)
+    */
+  var nearInteractionPickingInfo: Nullable[PickingInfo]
+  
+  /**
+    * Ray from a pointer if available (eg. 6dof controller)
     */
   var ray: Nullable[Ray]
   
@@ -27,13 +30,8 @@ trait PointerInfoPre
 }
 object PointerInfoPre {
   
-  inline def apply(
-    event: PointerEvent | MouseWheelEvent,
-    localPosition: Vector2,
-    skipOnPointerObservable: Boolean,
-    `type`: Double
-  ): PointerInfoPre = {
-    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], localPosition = localPosition.asInstanceOf[js.Any], skipOnPointerObservable = skipOnPointerObservable.asInstanceOf[js.Any], ray = null)
+  inline def apply(event: IMouseEvent, localPosition: Vector2, skipOnPointerObservable: Boolean, `type`: Double): PointerInfoPre = {
+    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], localPosition = localPosition.asInstanceOf[js.Any], skipOnPointerObservable = skipOnPointerObservable.asInstanceOf[js.Any], nearInteractionPickingInfo = null, ray = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointerInfoPre]
   }
@@ -41,6 +39,10 @@ object PointerInfoPre {
   extension [Self <: PointerInfoPre](x: Self) {
     
     inline def setLocalPosition(value: Vector2): Self = StObject.set(x, "localPosition", value.asInstanceOf[js.Any])
+    
+    inline def setNearInteractionPickingInfo(value: Nullable[PickingInfo]): Self = StObject.set(x, "nearInteractionPickingInfo", value.asInstanceOf[js.Any])
+    
+    inline def setNearInteractionPickingInfoNull: Self = StObject.set(x, "nearInteractionPickingInfo", null)
     
     inline def setRay(value: Nullable[Ray]): Self = StObject.set(x, "ray", value.asInstanceOf[js.Any])
     

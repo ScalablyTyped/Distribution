@@ -11,14 +11,14 @@ object contextHandlerImplMod {
   
   @JSImport("express-validator/src/chain/context-handler-impl", "ContextHandlerImpl")
   @js.native
-  class ContextHandlerImpl[Chain] protected ()
+  open class ContextHandlerImpl[Chain] protected ()
     extends StObject
        with ContextHandler[Chain] {
     def this(builder: ContextBuilder, chain: Chain) = this()
     
-    /* private */ val builder: js.Any = js.native
+    /* private */ val builder: Any = js.native
     
-    /* private */ val chain: js.Any = js.native
+    /* private */ val chain: Any = js.native
     
     def optional(options: Optional): Chain = js.native
   }

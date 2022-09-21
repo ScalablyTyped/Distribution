@@ -16,47 +16,47 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Device extends StObject {
   
   /**
-    * [descr:Device.android]
+    * Indicates whether or not the device platform is Android.
     */
   var android: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * [descr:Device.deviceType]
+    * Specifies the type of the device on which the application is running.
     */
   var deviceType: js.UndefOr[phone | tablet | desktop] = js.undefined
   
   /**
-    * [descr:Device.generic]
+    * Indicates whether or not the device platform is generic, which means that the application will look and behave according to a generic &apos;light&apos; or &apos;dark&apos; theme.
     */
   var generic: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * [descr:Device.grade]
+    * Specifies a performance grade of the current device.
     */
   var grade: js.UndefOr[A | B | C] = js.undefined
   
   /**
-    * [descr:Device.ios]
+    * Indicates whether or not the device platform is iOS.
     */
   var ios: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * [descr:Device.phone]
+    * Indicates whether or not the device type is &apos;phone&apos;.
     */
   var phone: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * [descr:Device.platform]
+    * Specifies the platform of the device on which the application is running.
     */
   var platform: js.UndefOr[android | ios | generic] = js.undefined
   
   /**
-    * [descr:Device.tablet]
+    * Indicates whether or not the device type is &apos;tablet&apos;.
     */
   var tablet: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * [descr:Device.version]
+    * Specifies an array with the major and minor versions of the device platform.
     */
   var version: js.UndefOr[js.Array[Double]] = js.undefined
 }
@@ -105,6 +105,6 @@ object Device {
     
     inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
-    inline def setVersionVarargs(value: Double*): Self = StObject.set(x, "version", js.Array(value :_*))
+    inline def setVersionVarargs(value: Double*): Self = StObject.set(x, "version", js.Array(value*))
   }
 }

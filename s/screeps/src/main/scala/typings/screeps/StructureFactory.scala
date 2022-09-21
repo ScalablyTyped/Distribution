@@ -13,7 +13,7 @@ trait StructureFactory
      with OwnedStructure[STRUCTURE_FACTORY]
      with AnyOwnedStructure
      with AnyStoreStructure
-     with ConcreteStructure[js.Any] {
+     with ConcreteStructure[Any] {
   
   /**
     * The amount of game ticks the factory has to wait until the next produce is possible.
@@ -25,7 +25,7 @@ trait StructureFactory
     * Can be set by applying the PWR_OPERATE_FACTORY power to a newly built factory.
     * Once set, the level cannot be changed.
     */
-  var level: Double = js.native
+  var level: js.UndefOr[Double] = js.native
   
   /**
     * Produces the specified commodity.

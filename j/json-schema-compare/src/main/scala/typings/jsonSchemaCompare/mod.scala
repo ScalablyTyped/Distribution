@@ -75,6 +75,7 @@ object mod {
     - typings.jsonSchemaCompare.jsonSchemaCompareStrings.examples
     - typings.jsonSchemaCompare.jsonSchemaCompareStrings.format
     - typings.jsonSchemaCompare.jsonSchemaCompareStrings.$comment
+    - typings.jsonSchemaCompare.jsonSchemaCompareStrings.$defs
     - typings.jsonSchemaCompare.jsonSchemaCompareStrings.`if`
     - typings.jsonSchemaCompare.jsonSchemaCompareStrings.`then`
     - typings.jsonSchemaCompare.jsonSchemaCompareStrings.`else`
@@ -86,7 +87,7 @@ object mod {
   */
   type JSONSchemaKeys = _JSONSchemaKeys | KnownKeys[JSONSchema4] | (String & _empty)
   
-  type KnownKeys[T] = js.Any
+  type KnownKeys[T] = Any
   
   trait Options extends StObject {
     
@@ -112,7 +113,7 @@ object mod {
       
       inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      inline def setIgnoreVarargs(value: JSONSchemaKeys*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: JSONSchemaKeys*): Self = StObject.set(x, "ignore", js.Array(value*))
     }
   }
   

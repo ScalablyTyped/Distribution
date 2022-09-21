@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait DirtyFlag
   extends StObject
-     with Instantiable1[/* objectToTrack */ js.Any, js.Any]
-     with Instantiable2[/* objectToTrack */ js.Any, /* isInitiallyDirty */ Boolean, js.Any]
+     with Instantiable1[/* objectToTrack */ Any, Any]
+     with Instantiable2[/* objectToTrack */ Any, /* isInitiallyDirty */ Boolean, Any]
      with Instantiable3[
-      /* objectToTrack */ js.Any, 
+      /* objectToTrack */ Any, 
       (/* isInitiallyDirty */ Boolean) | (/* isInitiallyDirty */ Unit), 
-      /* hashFunction */ js.Function0[js.Any], 
-      js.Any
+      /* hashFunction */ js.Function0[Any], 
+      Any
     ] {
   
   def apply(): DirtyFlagResult = js.native

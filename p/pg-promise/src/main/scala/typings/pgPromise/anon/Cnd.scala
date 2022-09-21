@@ -9,7 +9,7 @@ trait Cnd[Ext] extends StObject {
   
   var cnd: js.UndefOr[Boolean | (js.Function1[/* t */ ITask[Ext] & Ext, Boolean])] = js.undefined
   
-  var tag: js.UndefOr[js.Any] = js.undefined
+  var tag: js.UndefOr[Any] = js.undefined
 }
 object Cnd {
   
@@ -26,7 +26,7 @@ object Cnd {
     
     inline def setCndUndefined: Self = StObject.set(x, "cnd", js.undefined)
     
-    inline def setTag(value: js.Any): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: Any): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }

@@ -25,11 +25,11 @@ trait PropertyValue extends StObject {
   var State: PropertyState
   
   /** contains the value of the property or `VOID` , if no value is available. */
-  var Value: js.Any
+  var Value: Any
 }
 object PropertyValue {
   
-  inline def apply(Handle: Double, Name: String, State: PropertyState, Value: js.Any): PropertyValue = {
+  inline def apply(Handle: Double, Name: String, State: PropertyState, Value: Any): PropertyValue = {
     val __obj = js.Dynamic.literal(Handle = Handle.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertyValue]
   }
@@ -42,6 +42,6 @@ object PropertyValue {
     
     inline def setState(value: PropertyState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

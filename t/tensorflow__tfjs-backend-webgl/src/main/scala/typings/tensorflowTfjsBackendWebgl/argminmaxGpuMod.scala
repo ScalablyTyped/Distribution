@@ -12,11 +12,10 @@ object argminmaxGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/argminmax_gpu", "ArgMinMaxProgram")
   @js.native
-  class ArgMinMaxProgram protected ()
+  open class ArgMinMaxProgram protected ()
     extends StObject
        with GPGPUProgram {
-    def this(reduceInfo: ReduceInfo, op: max, firstPass: Boolean) = this()
-    def this(reduceInfo: ReduceInfo, op: min, firstPass: Boolean) = this()
+    def this(reduceInfo: ReduceInfo, op: max | min, firstPass: Boolean) = this()
     
     /* CompleteClass */
     var outputShape: js.Array[Double] = js.native

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.ApplicationModel.Background.DeviceServicingTrigger")
 @js.native
 /** Constructor for DeviceServicingTrigger . Takes no parameters. */
-class DeviceServicingTrigger ()
+open class DeviceServicingTrigger ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Background.DeviceServicingTrigger

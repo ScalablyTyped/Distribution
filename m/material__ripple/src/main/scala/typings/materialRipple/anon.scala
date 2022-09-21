@@ -4,7 +4,7 @@ import typings.materialBase.typesMod.EventType
 import typings.materialBase.typesMod.SpecificEventListener
 import typings.materialRipple.materialRippleStrings.resize
 import typings.materialRipple.typesMod.MDCRipplePoint
-import typings.std.ClientRect
+import typings.std.DOMRect
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -97,7 +97,7 @@ object anon {
     
     var browserSupportsCssVars: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
-    var computeBoundingRect: js.UndefOr[js.Function0[ClientRect]] = js.undefined
+    var computeBoundingRect: js.UndefOr[js.Function0[DOMRect]] = js.undefined
     
     var containsEventTarget: js.UndefOr[js.Function1[/* target */ EventTarget | Null, Boolean]] = js.undefined
     
@@ -150,7 +150,7 @@ object anon {
       
       inline def setBrowserSupportsCssVarsUndefined: Self = StObject.set(x, "browserSupportsCssVars", js.undefined)
       
-      inline def setComputeBoundingRect(value: () => ClientRect): Self = StObject.set(x, "computeBoundingRect", js.Any.fromFunction0(value))
+      inline def setComputeBoundingRect(value: () => DOMRect): Self = StObject.set(x, "computeBoundingRect", js.Any.fromFunction0(value))
       
       inline def setComputeBoundingRectUndefined: Self = StObject.set(x, "computeBoundingRect", js.undefined)
       

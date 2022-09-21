@@ -34,7 +34,7 @@ object DatabaseDefinition {
     getTables: () => XNameAccess,
     getUsers: () => XNameAccess,
     getViews: () => XNameAccess,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): DatabaseDefinition = {
     val __obj = js.Dynamic.literal(Groups = Groups.asInstanceOf[js.Any], Tables = Tables.asInstanceOf[js.Any], Users = Users.asInstanceOf[js.Any], Views = Views.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getGroups = js.Any.fromFunction0(getGroups), getTables = js.Any.fromFunction0(getTables), getUsers = js.Any.fromFunction0(getUsers), getViews = js.Any.fromFunction0(getViews), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

@@ -14,12 +14,12 @@ trait SchemaLiveStreamHealthStatus extends StObject {
   /**
     * The last time this status was updated (in seconds)
     */
-  var lastUpdateTimeSeconds: js.UndefOr[String] = js.undefined
+  var lastUpdateTimeSeconds: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The status code of this stream
     */
-  var status: js.UndefOr[String] = js.undefined
+  var status: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaLiveStreamHealthStatus {
   
@@ -34,13 +34,17 @@ object SchemaLiveStreamHealthStatus {
     
     inline def setConfigurationIssuesUndefined: Self = StObject.set(x, "configurationIssues", js.undefined)
     
-    inline def setConfigurationIssuesVarargs(value: SchemaLiveStreamConfigurationIssue*): Self = StObject.set(x, "configurationIssues", js.Array(value :_*))
+    inline def setConfigurationIssuesVarargs(value: SchemaLiveStreamConfigurationIssue*): Self = StObject.set(x, "configurationIssues", js.Array(value*))
     
     inline def setLastUpdateTimeSeconds(value: String): Self = StObject.set(x, "lastUpdateTimeSeconds", value.asInstanceOf[js.Any])
+    
+    inline def setLastUpdateTimeSecondsNull: Self = StObject.set(x, "lastUpdateTimeSeconds", null)
     
     inline def setLastUpdateTimeSecondsUndefined: Self = StObject.set(x, "lastUpdateTimeSeconds", js.undefined)
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
     
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }

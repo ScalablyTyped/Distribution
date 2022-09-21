@@ -36,6 +36,6 @@ object ListReferenceImagesResponse {
     
     inline def setReferenceImagesUndefined: Self = StObject.set(x, "referenceImages", js.undefined)
     
-    inline def setReferenceImagesVarargs(value: ReferenceImage*): Self = StObject.set(x, "referenceImages", js.Array(value :_*))
+    inline def setReferenceImagesVarargs(value: ReferenceImage*): Self = StObject.set(x, "referenceImages", js.Array(value*))
   }
 }

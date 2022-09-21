@@ -9,11 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Analyzable extends StObject {
   
   /**
-    * Whether to enable App Analytics. Can also be set to a number instead to
-    * control the sample rate, or to an key-value pair with span names as keys
-    * and booleans or sample rates as values for more granular control.
+    * Whether to measure the span. Can also be set to a key-value pair with span
+    * names as keys and booleans as values for more granular control.
     */
-  var analytics: js.UndefOr[Boolean | Double | (StringDictionary[Boolean | Double])] = js.undefined
+  var measured: js.UndefOr[Boolean | StringDictionary[Boolean]] = js.undefined
 }
 object Analyzable {
   
@@ -24,8 +23,8 @@ object Analyzable {
   
   extension [Self <: Analyzable](x: Self) {
     
-    inline def setAnalytics(value: Boolean | Double | (StringDictionary[Boolean | Double])): Self = StObject.set(x, "analytics", value.asInstanceOf[js.Any])
+    inline def setMeasured(value: Boolean | StringDictionary[Boolean]): Self = StObject.set(x, "measured", value.asInstanceOf[js.Any])
     
-    inline def setAnalyticsUndefined: Self = StObject.set(x, "analytics", js.undefined)
+    inline def setMeasuredUndefined: Self = StObject.set(x, "measured", js.undefined)
   }
 }

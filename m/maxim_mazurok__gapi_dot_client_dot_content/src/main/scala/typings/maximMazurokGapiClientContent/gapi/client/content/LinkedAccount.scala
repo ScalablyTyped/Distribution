@@ -29,6 +29,6 @@ object LinkedAccount {
     
     inline def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
     
-    inline def setServicesVarargs(value: LinkService*): Self = StObject.set(x, "services", js.Array(value :_*))
+    inline def setServicesVarargs(value: LinkService*): Self = StObject.set(x, "services", js.Array(value*))
   }
 }

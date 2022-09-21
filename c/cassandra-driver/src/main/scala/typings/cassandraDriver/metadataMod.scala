@@ -17,7 +17,7 @@ import typings.cassandraDriver.typesMod.types.Long
 import typings.cassandraDriver.typesMod.types.Uuid
 import typings.cassandraDriver.typesMod.types.consistencies
 import typings.cassandraDriver.typesMod.types.dataTypes
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -93,7 +93,7 @@ object metadataMod {
         
         inline def setArgumentTypes(value: js.Array[Code]): Self = StObject.set(x, "argumentTypes", value.asInstanceOf[js.Any])
         
-        inline def setArgumentTypesVarargs(value: Code*): Self = StObject.set(x, "argumentTypes", js.Array(value :_*))
+        inline def setArgumentTypesVarargs(value: Code*): Self = StObject.set(x, "argumentTypes", js.Array(value*))
         
         inline def setFinalFunction(value: String): Self = StObject.set(x, "finalFunction", value.asInstanceOf[js.Any])
         
@@ -105,7 +105,7 @@ object metadataMod {
         
         inline def setSignature(value: js.Array[String]): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
         
-        inline def setSignatureVarargs(value: String*): Self = StObject.set(x, "signature", js.Array(value :_*))
+        inline def setSignatureVarargs(value: String*): Self = StObject.set(x, "signature", js.Array(value*))
         
         inline def setStateFunction(value: String): Self = StObject.set(x, "stateFunction", value.asInstanceOf[js.Any])
         
@@ -182,7 +182,7 @@ object metadataMod {
       
       var compactionClass: String
       
-      var compactionOptions: StringDictionary[js.Any]
+      var compactionOptions: StringDictionary[Any]
       
       var compression: Dictoption
       
@@ -190,7 +190,7 @@ object metadataMod {
       
       var defaultTtl: Double
       
-      var extensions: StringDictionary[js.Any]
+      var extensions: StringDictionary[Any]
       
       var gcGraceSeconds: Double
       
@@ -221,10 +221,10 @@ object metadataMod {
         columnsByName: StringDictionary[ColumnInfo],
         comment: String,
         compactionClass: String,
-        compactionOptions: StringDictionary[js.Any],
+        compactionOptions: StringDictionary[Any],
         compression: Dictoption,
         defaultTtl: Double,
-        extensions: StringDictionary[js.Any],
+        extensions: StringDictionary[Any],
         gcGraceSeconds: Double,
         localReadRepairChance: Double,
         name: String,
@@ -245,23 +245,23 @@ object metadataMod {
         
         inline def setClusteringKeys(value: js.Array[ColumnInfo]): Self = StObject.set(x, "clusteringKeys", value.asInstanceOf[js.Any])
         
-        inline def setClusteringKeysVarargs(value: ColumnInfo*): Self = StObject.set(x, "clusteringKeys", js.Array(value :_*))
+        inline def setClusteringKeysVarargs(value: ColumnInfo*): Self = StObject.set(x, "clusteringKeys", js.Array(value*))
         
         inline def setClusteringOrder(value: js.Array[String]): Self = StObject.set(x, "clusteringOrder", value.asInstanceOf[js.Any])
         
-        inline def setClusteringOrderVarargs(value: String*): Self = StObject.set(x, "clusteringOrder", js.Array(value :_*))
+        inline def setClusteringOrderVarargs(value: String*): Self = StObject.set(x, "clusteringOrder", js.Array(value*))
         
         inline def setColumns(value: js.Array[ColumnInfo]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
         
         inline def setColumnsByName(value: StringDictionary[ColumnInfo]): Self = StObject.set(x, "columnsByName", value.asInstanceOf[js.Any])
         
-        inline def setColumnsVarargs(value: ColumnInfo*): Self = StObject.set(x, "columns", js.Array(value :_*))
+        inline def setColumnsVarargs(value: ColumnInfo*): Self = StObject.set(x, "columns", js.Array(value*))
         
         inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
         
         inline def setCompactionClass(value: String): Self = StObject.set(x, "compactionClass", value.asInstanceOf[js.Any])
         
-        inline def setCompactionOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "compactionOptions", value.asInstanceOf[js.Any])
+        inline def setCompactionOptions(value: StringDictionary[Any]): Self = StObject.set(x, "compactionOptions", value.asInstanceOf[js.Any])
         
         inline def setCompression(value: Dictoption): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
         
@@ -271,7 +271,7 @@ object metadataMod {
         
         inline def setDefaultTtl(value: Double): Self = StObject.set(x, "defaultTtl", value.asInstanceOf[js.Any])
         
-        inline def setExtensions(value: StringDictionary[js.Any]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+        inline def setExtensions(value: StringDictionary[Any]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
         
         inline def setGcGraceSeconds(value: Double): Self = StObject.set(x, "gcGraceSeconds", value.asInstanceOf[js.Any])
         
@@ -289,7 +289,7 @@ object metadataMod {
         
         inline def setPartitionKeys(value: js.Array[ColumnInfo]): Self = StObject.set(x, "partitionKeys", value.asInstanceOf[js.Any])
         
-        inline def setPartitionKeysVarargs(value: ColumnInfo*): Self = StObject.set(x, "partitionKeys", js.Array(value :_*))
+        inline def setPartitionKeysVarargs(value: ColumnInfo*): Self = StObject.set(x, "partitionKeys", js.Array(value*))
         
         inline def setPopulateCacheOnFlush(value: Boolean): Self = StObject.set(x, "populateCacheOnFlush", value.asInstanceOf[js.Any])
         
@@ -320,7 +320,7 @@ object metadataMod {
         
         inline def setInfo(value: String | DataTypeInfo | js.Array[DataTypeInfo]): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
         
-        inline def setInfoVarargs(value: DataTypeInfo*): Self = StObject.set(x, "info", js.Array(value :_*))
+        inline def setInfoVarargs(value: DataTypeInfo*): Self = StObject.set(x, "info", js.Array(value*))
         
         inline def setOptions(value: Frozen): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       }
@@ -396,10 +396,10 @@ object metadataMod {
         columnsByName: StringDictionary[ColumnInfo],
         comment: String,
         compactionClass: String,
-        compactionOptions: StringDictionary[js.Any],
+        compactionOptions: StringDictionary[Any],
         compression: Dictoption,
         defaultTtl: Double,
-        extensions: StringDictionary[js.Any],
+        extensions: StringDictionary[Any],
         gcGraceSeconds: Double,
         includeAllColumns: Boolean,
         localReadRepairChance: Double,
@@ -501,7 +501,7 @@ object metadataMod {
       
       var events: js.Array[Activity]
       
-      var parameters: StringDictionary[js.Any]
+      var parameters: StringDictionary[Any]
       
       var requestType: String
       
@@ -514,7 +514,7 @@ object metadataMod {
         coordinator: InetAddress,
         duration: Double,
         events: js.Array[Activity],
-        parameters: StringDictionary[js.Any],
+        parameters: StringDictionary[Any],
         requestType: String,
         startedAt: Double | Long
       ): QueryTrace = {
@@ -532,9 +532,9 @@ object metadataMod {
         
         inline def setEvents(value: js.Array[Activity]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
         
-        inline def setEventsVarargs(value: Activity*): Self = StObject.set(x, "events", js.Array(value :_*))
+        inline def setEventsVarargs(value: Activity*): Self = StObject.set(x, "events", js.Array(value*))
         
-        inline def setParameters(value: StringDictionary[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+        inline def setParameters(value: StringDictionary[Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
         
         inline def setRequestType(value: String): Self = StObject.set(x, "requestType", value.asInstanceOf[js.Any])
         
@@ -583,11 +583,11 @@ object metadataMod {
         
         inline def setArgumentNames(value: js.Array[String]): Self = StObject.set(x, "argumentNames", value.asInstanceOf[js.Any])
         
-        inline def setArgumentNamesVarargs(value: String*): Self = StObject.set(x, "argumentNames", js.Array(value :_*))
+        inline def setArgumentNamesVarargs(value: String*): Self = StObject.set(x, "argumentNames", js.Array(value*))
         
         inline def setArgumentTypes(value: js.Array[Code]): Self = StObject.set(x, "argumentTypes", value.asInstanceOf[js.Any])
         
-        inline def setArgumentTypesVarargs(value: Code*): Self = StObject.set(x, "argumentTypes", js.Array(value :_*))
+        inline def setArgumentTypesVarargs(value: Code*): Self = StObject.set(x, "argumentTypes", js.Array(value*))
         
         inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
         
@@ -603,7 +603,7 @@ object metadataMod {
         
         inline def setSignature(value: js.Array[String]): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
         
-        inline def setSignatureVarargs(value: String*): Self = StObject.set(x, "signature", js.Array(value :_*))
+        inline def setSignatureVarargs(value: String*): Self = StObject.set(x, "signature", js.Array(value*))
       }
     }
     
@@ -636,10 +636,10 @@ object metadataMod {
         columnsByName: StringDictionary[ColumnInfo],
         comment: String,
         compactionClass: String,
-        compactionOptions: StringDictionary[js.Any],
+        compactionOptions: StringDictionary[Any],
         compression: Dictoption,
         defaultTtl: Double,
-        extensions: StringDictionary[js.Any],
+        extensions: StringDictionary[Any],
         gcGraceSeconds: Double,
         indexes: js.Array[Index],
         isCompact: Boolean,
@@ -669,7 +669,7 @@ object metadataMod {
         
         inline def setIndexes(value: js.Array[Index]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
         
-        inline def setIndexesVarargs(value: Index*): Self = StObject.set(x, "indexes", js.Array(value :_*))
+        inline def setIndexesVarargs(value: Index*): Self = StObject.set(x, "indexes", js.Array(value*))
         
         inline def setIsCompact(value: Boolean): Self = StObject.set(x, "isCompact", value.asInstanceOf[js.Any])
         
@@ -698,7 +698,7 @@ object metadataMod {
         
         inline def setFields(value: js.Array[ColumnInfo]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
-        inline def setFieldsVarargs(value: ColumnInfo*): Self = StObject.set(x, "fields", js.Array(value :_*))
+        inline def setFieldsVarargs(value: ColumnInfo*): Self = StObject.set(x, "fields", js.Array(value*))
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       }

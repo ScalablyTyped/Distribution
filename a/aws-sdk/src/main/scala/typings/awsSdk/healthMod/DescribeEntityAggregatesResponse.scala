@@ -24,6 +24,6 @@ object DescribeEntityAggregatesResponse {
     
     inline def setEntityAggregatesUndefined: Self = StObject.set(x, "entityAggregates", js.undefined)
     
-    inline def setEntityAggregatesVarargs(value: EntityAggregate*): Self = StObject.set(x, "entityAggregates", js.Array(value :_*))
+    inline def setEntityAggregatesVarargs(value: EntityAggregate*): Self = StObject.set(x, "entityAggregates", js.Array(value*))
   }
 }

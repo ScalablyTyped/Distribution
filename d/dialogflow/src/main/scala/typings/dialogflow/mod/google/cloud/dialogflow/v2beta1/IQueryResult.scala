@@ -90,7 +90,7 @@ object IQueryResult {
     
     inline def setFulfillmentMessagesUndefined: Self = StObject.set(x, "fulfillmentMessages", js.undefined)
     
-    inline def setFulfillmentMessagesVarargs(value: IMessage*): Self = StObject.set(x, "fulfillmentMessages", js.Array(value :_*))
+    inline def setFulfillmentMessagesVarargs(value: IMessage*): Self = StObject.set(x, "fulfillmentMessages", js.Array(value*))
     
     inline def setFulfillmentText(value: String): Self = StObject.set(x, "fulfillmentText", value.asInstanceOf[js.Any])
     
@@ -128,7 +128,7 @@ object IQueryResult {
     
     inline def setOutputContextsUndefined: Self = StObject.set(x, "outputContexts", js.undefined)
     
-    inline def setOutputContextsVarargs(value: IContext*): Self = StObject.set(x, "outputContexts", js.Array(value :_*))
+    inline def setOutputContextsVarargs(value: IContext*): Self = StObject.set(x, "outputContexts", js.Array(value*))
     
     inline def setParameters(value: IStruct): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

@@ -12,7 +12,7 @@ trait ListRecoveryPointsByResourceOutput extends StObject {
   var NextToken: js.UndefOr[String] = js.undefined
   
   /**
-    * An array of objects that contain detailed information about recovery points of the specified resource type.
+    * An array of objects that contain detailed information about recovery points of the specified resource type.  Only Amazon EFS and Amazon EC2 recovery points return BackupVaultName. 
     */
   var RecoveryPoints: js.UndefOr[RecoveryPointByResourceList] = js.undefined
 }
@@ -33,6 +33,6 @@ object ListRecoveryPointsByResourceOutput {
     
     inline def setRecoveryPointsUndefined: Self = StObject.set(x, "RecoveryPoints", js.undefined)
     
-    inline def setRecoveryPointsVarargs(value: RecoveryPointByResource*): Self = StObject.set(x, "RecoveryPoints", js.Array(value :_*))
+    inline def setRecoveryPointsVarargs(value: RecoveryPointByResource*): Self = StObject.set(x, "RecoveryPoints", js.Array(value*))
   }
 }

@@ -25,7 +25,7 @@ object anon {
       
       inline def setTopics(value: js.Array[String]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
       
-      inline def setTopicsVarargs(value: String*): Self = StObject.set(x, "topics", js.Array(value :_*))
+      inline def setTopicsVarargs(value: String*): Self = StObject.set(x, "topics", js.Array(value*))
     }
   }
 }

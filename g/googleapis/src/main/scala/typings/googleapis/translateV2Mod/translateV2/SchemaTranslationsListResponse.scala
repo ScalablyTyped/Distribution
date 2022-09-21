@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The main language translation response message.
-  */
 trait SchemaTranslationsListResponse extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaTranslationsListResponse {
     
     inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
     
-    inline def setTranslationsVarargs(value: SchemaTranslationsResource*): Self = StObject.set(x, "translations", js.Array(value :_*))
+    inline def setTranslationsVarargs(value: SchemaTranslationsResource*): Self = StObject.set(x, "translations", js.Array(value*))
   }
 }

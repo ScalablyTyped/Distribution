@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("evernote", "Types.Tag")
 @js.native
-class Tag () extends StObject {
+open class Tag () extends StObject {
   def this(args: ParentGuid) = this()
   
   var guid: js.UndefOr[Guid] = js.native

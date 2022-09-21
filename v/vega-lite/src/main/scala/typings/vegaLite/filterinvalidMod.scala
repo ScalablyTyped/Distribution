@@ -15,10 +15,10 @@ object filterinvalidMod {
   
   @JSImport("vega-lite/build/src/compile/data/filterinvalid", "FilterInvalidNode")
   @js.native
-  class FilterInvalidNode protected () extends DataFlowNode {
+  open class FilterInvalidNode protected () extends DataFlowNode {
     def this(
       parent: DataFlowNode,
-      filter: Dict[TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]]
+      filter: Dict[TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]]
     ) = this()
     
     /**
@@ -26,7 +26,7 @@ object filterinvalidMod {
       */
     def assemble(): FilterTransform = js.native
     
-    val filter: Dict[TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]] = js.native
+    val filter: Dict[TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]] = js.native
   }
   /* static members */
   object FilterInvalidNode {

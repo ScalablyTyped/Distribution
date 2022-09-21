@@ -49,7 +49,7 @@ object Key {
     
     inline def setArrayUndefined: Self = StObject.set(x, "array", js.undefined)
     
-    inline def setArrayVarargs(value: Key*): Self = StObject.set(x, "array", js.Array(value :_*))
+    inline def setArrayVarargs(value: Key*): Self = StObject.set(x, "array", js.Array(value*))
     
     inline def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

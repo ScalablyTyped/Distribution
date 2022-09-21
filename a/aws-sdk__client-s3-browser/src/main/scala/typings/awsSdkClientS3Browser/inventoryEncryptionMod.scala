@@ -8,5 +8,5 @@ object inventoryEncryptionMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/_InventoryEncryption", "_InventoryEncryption")
   @js.native
-  val InventoryEncryption: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val InventoryEncryption: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

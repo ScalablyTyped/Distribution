@@ -99,7 +99,7 @@ object anon {
       
       inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
       
-      inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+      inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value*))
       
       inline def setIndent(value: Boolean): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       
@@ -113,7 +113,7 @@ object anon {
       
       inline def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
       
-      inline def setLanguagesVarargs(value: String*): Self = StObject.set(x, "languages", js.Array(value :_*))
+      inline def setLanguagesVarargs(value: String*): Self = StObject.set(x, "languages", js.Array(value*))
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
@@ -143,7 +143,7 @@ object anon {
       
       inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
       
-      inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
+      inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value*))
       
       inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
       

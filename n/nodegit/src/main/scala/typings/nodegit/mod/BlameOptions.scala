@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "BlameOptions")
 @js.native
-class BlameOptions ()
+open class BlameOptions ()
   extends typings.nodegit.blameOptionsMod.BlameOptions

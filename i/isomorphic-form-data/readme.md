@@ -10,10 +10,10 @@ A library to create readable "multipart/form-data" in node and the browser.
 | ------------------ | :-------------: |
 | Full name          | isomorphic-form-data |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 64 |
-| # downloads        | 5961683 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 769928.0 |
+| # stars            | 34.0 |
 
 ## Links
 - [Homepage](https://github.com/form-data/isomorphic-form-data#readme)

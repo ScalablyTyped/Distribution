@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   **/
 @JSImport("winjs", "ErrorFromName")
 @js.native
-class ErrorFromName protected ()
+open class ErrorFromName protected ()
   extends StObject
      with typings.winjs.WinJS.ErrorFromName {
   //#region Constructors

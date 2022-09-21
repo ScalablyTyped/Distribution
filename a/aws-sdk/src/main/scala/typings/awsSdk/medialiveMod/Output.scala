@@ -44,13 +44,13 @@ object Output {
     
     inline def setAudioDescriptionNamesUndefined: Self = StObject.set(x, "AudioDescriptionNames", js.undefined)
     
-    inline def setAudioDescriptionNamesVarargs(value: string*): Self = StObject.set(x, "AudioDescriptionNames", js.Array(value :_*))
+    inline def setAudioDescriptionNamesVarargs(value: string*): Self = StObject.set(x, "AudioDescriptionNames", js.Array(value*))
     
     inline def setCaptionDescriptionNames(value: listOfString): Self = StObject.set(x, "CaptionDescriptionNames", value.asInstanceOf[js.Any])
     
     inline def setCaptionDescriptionNamesUndefined: Self = StObject.set(x, "CaptionDescriptionNames", js.undefined)
     
-    inline def setCaptionDescriptionNamesVarargs(value: string*): Self = StObject.set(x, "CaptionDescriptionNames", js.Array(value :_*))
+    inline def setCaptionDescriptionNamesVarargs(value: string*): Self = StObject.set(x, "CaptionDescriptionNames", js.Array(value*))
     
     inline def setOutputName(value: stringMin1Max255): Self = StObject.set(x, "OutputName", value.asInstanceOf[js.Any])
     

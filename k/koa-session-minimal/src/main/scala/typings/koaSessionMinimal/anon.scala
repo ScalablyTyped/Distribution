@@ -23,7 +23,7 @@ object anon {
     /**
       * session store
       */
-    var store: js.UndefOr[js.Any] = js.undefined
+    var store: js.UndefOr[Any] = js.undefined
   }
   object Cookie {
     
@@ -44,7 +44,7 @@ object anon {
       
       inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      inline def setStore(value: js.Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+      inline def setStore(value: Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       
       inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
     }

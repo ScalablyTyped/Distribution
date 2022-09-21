@@ -36,7 +36,7 @@ object UpdateDeviceInstanceRequest {
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    inline def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value*))
     
     inline def setProfileArn(value: AmazonResourceName): Self = StObject.set(x, "profileArn", value.asInstanceOf[js.Any])
     

@@ -212,7 +212,7 @@ object Usb {
   @JSGlobal("Windows.Devices.Usb.UsbControlRequestType")
   @js.native
   /** Creates a UsbControlRequestType object. */
-  class UsbControlRequestType ()
+  open class UsbControlRequestType ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Usb.UsbControlRequestType {
     
@@ -329,7 +329,7 @@ object Usb {
   @JSGlobal("Windows.Devices.Usb.UsbDeviceClass")
   @js.native
   /** Creates a UsbDeviceClass object. */
-  class UsbDeviceClass ()
+  open class UsbDeviceClass ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Usb.UsbDeviceClass {
     
@@ -773,7 +773,7 @@ object Usb {
   @JSGlobal("Windows.Devices.Usb.UsbSetupPacket")
   @js.native
   /** Creates a UsbSetupPacket object. */
-  class UsbSetupPacket ()
+  open class UsbSetupPacket ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Usb.UsbSetupPacket {
     /**

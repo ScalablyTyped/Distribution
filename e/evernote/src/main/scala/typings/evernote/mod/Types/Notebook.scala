@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("evernote", "Types.Notebook")
 @js.native
-class Notebook () extends StObject {
+open class Notebook () extends StObject {
   def this(args: typings.evernote.anon.BusinessNotebook) = this()
   
   var businessNotebook: js.UndefOr[BusinessNotebook] = js.native

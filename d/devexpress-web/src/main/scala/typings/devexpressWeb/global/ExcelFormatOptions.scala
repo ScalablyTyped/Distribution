@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ExcelFormatOptions")
 @js.native
-class ExcelFormatOptions ()
+open class ExcelFormatOptions ()
   extends StObject
      with typings.devexpressWeb.ExcelFormatOptions {
   

@@ -24,6 +24,6 @@ object IStateChangeList {
     
     inline def setStateChangesUndefined: Self = StObject.set(x, "stateChanges", js.undefined)
     
-    inline def setStateChangesVarargs(value: IStateChange*): Self = StObject.set(x, "stateChanges", js.Array(value :_*))
+    inline def setStateChangesVarargs(value: IStateChange*): Self = StObject.set(x, "stateChanges", js.Array(value*))
   }
 }

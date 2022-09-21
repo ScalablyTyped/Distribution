@@ -11,14 +11,12 @@ Table components for Reactabular
 | Full name          | reactabular-table |
 | Keywords           | react, reactjs, table, tables, reactabular |
 | # releases         | 0 |
-| # dependents       | 13 |
-| # downloads        | 660787 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 33259.333333333336 |
+| # stars            | 910.0 |
 
 ## Links
 - [Homepage](http://reactabular.js.org/)
-- [Bugs](https://github.com/reactabular/reactabular/issues)
-- [Repository](https://github.com/reactabular/reactabular)
 - [Npm](https://www.npmjs.com/package/reactabular-table)
     
 

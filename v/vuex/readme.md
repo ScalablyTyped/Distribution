@@ -1,7 +1,7 @@
 
 # Scala.js typings for vuex
 
-Typings are for version 3.5.1
+Typings are for version 4.0.2
 
 ## Library description:
 state management for Vue.js
@@ -10,10 +10,10 @@ state management for Vue.js
 | ------------------ | :-------------: |
 | Full name          | vuex |
 | Keywords           | - |
-| # releases         | 18 |
-| # dependents       | 6053 |
-| # downloads        | 62345094 |
-| # stars            | 40 |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 7561898.333333333 |
+| # stars            | 27628.0 |
 
 ## Links
 - [Homepage](https://github.com/vuejs/vuex#readme)

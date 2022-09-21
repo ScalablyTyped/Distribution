@@ -27,9 +27,14 @@ trait RegisterAVSDeviceRequest extends StObject {
   var ProductId: typings.awsSdk.alexaforbusinessMod.ProductId
   
   /**
-    * The ARN of the room with which to associate your AVS device.
+    * The Amazon Resource Name (ARN) of the room with which to associate your AVS device.
     */
   var RoomArn: js.UndefOr[Arn] = js.undefined
+  
+  /**
+    * The tags to be added to the specified resource. Do not provide system tags.
+    */
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The code that is obtained after your AVS device has made a POST request to LWA as a part of the Device Authorization Request component of the OAuth code-based linking specification.
@@ -58,6 +63,12 @@ object RegisterAVSDeviceRequest {
     inline def setRoomArn(value: Arn): Self = StObject.set(x, "RoomArn", value.asInstanceOf[js.Any])
     
     inline def setRoomArnUndefined: Self = StObject.set(x, "RoomArn", js.undefined)
+    
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setUserCode(value: UserCode): Self = StObject.set(x, "UserCode", value.asInstanceOf[js.Any])
   }

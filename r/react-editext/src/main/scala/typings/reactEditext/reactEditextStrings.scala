@@ -1,11 +1,24 @@
 package typings.reactEditext
 
+import typings.reactEditext.mod.ButtonsAlignment
 import typings.reactEditext.mod.EdiTextType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactEditextStrings {
+  
+  @js.native
+  sealed trait after
+    extends StObject
+       with ButtonsAlignment
+  inline def after: after = "after".asInstanceOf[after]
+  
+  @js.native
+  sealed trait before
+    extends StObject
+       with ButtonsAlignment
+  inline def before: before = "before".asInstanceOf[before]
   
   @js.native
   sealed trait date

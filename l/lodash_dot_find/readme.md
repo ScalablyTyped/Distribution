@@ -10,10 +10,10 @@ The lodash method `_.find` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.find |
 | Keywords           | lodash-modularized, find |
-| # releases         | 0 |
-| # dependents       | 386 |
-| # downloads        | 31113358 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5226276.666666667 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

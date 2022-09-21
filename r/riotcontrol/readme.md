@@ -10,9 +10,9 @@ Event Controller / Dispatcher For RiotJS, Inspired By Flux
 | Full name          | riotcontrol |
 | Keywords           | riotjs, flux |
 | # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 4204 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 339.3333333333333 |
+| # stars            | 611.0 |
 
 ## Links
 - [Homepage](https://github.com/jimsparkman/RiotControl)

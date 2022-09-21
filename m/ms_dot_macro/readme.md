@@ -11,9 +11,9 @@ Convert various time formats to milliseconds at build time in Babel.
 | Full name          | ms.macro |
 | Keywords           | babel-macros |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 158061 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 48739.333333333336 |
+| # stars            | 189.0 |
 
 ## Links
 - [Homepage](https://github.com/knpwrs/ms.macro#readme)

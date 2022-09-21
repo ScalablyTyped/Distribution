@@ -12,7 +12,7 @@ trait IJqGridJsonReader extends StObject {
     * @param obj 
     * @returns {} 
     */
-  var page: String | (js.Function1[/* obj */ js.Any, Double])
+  var page: String | (js.Function1[/* obj */ Any, Double])
   
   /**
     * total number of records for the query
@@ -32,23 +32,23 @@ trait IJqGridJsonReader extends StObject {
     * @param obj 
     * @returns {} 
     */
-  var root: String | (js.Function1[/* obj */ js.Any, js.Any])
+  var root: String | (js.Function1[/* obj */ Any, Any])
   
   /**
     * total pages for the query
     * @param obj 
     * @returns {} 
     */
-  var total: String | (js.Function1[/* obj */ js.Any, Double])
+  var total: String | (js.Function1[/* obj */ Any, Double])
 }
 object IJqGridJsonReader {
   
   inline def apply(
-    page: String | (js.Function1[/* obj */ js.Any, Double]),
+    page: String | (js.Function1[/* obj */ Any, Double]),
     records: String | (js.Function1[/* obj */ Data, Double]),
     repeatitems: Boolean,
-    root: String | (js.Function1[/* obj */ js.Any, js.Any]),
-    total: String | (js.Function1[/* obj */ js.Any, Double])
+    root: String | (js.Function1[/* obj */ Any, Any]),
+    total: String | (js.Function1[/* obj */ Any, Double])
   ): IJqGridJsonReader = {
     val __obj = js.Dynamic.literal(page = page.asInstanceOf[js.Any], records = records.asInstanceOf[js.Any], repeatitems = repeatitems.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
     __obj.asInstanceOf[IJqGridJsonReader]
@@ -56,9 +56,9 @@ object IJqGridJsonReader {
   
   extension [Self <: IJqGridJsonReader](x: Self) {
     
-    inline def setPage(value: String | (js.Function1[/* obj */ js.Any, Double])): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: String | (js.Function1[/* obj */ Any, Double])): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    inline def setPageFunction1(value: /* obj */ js.Any => Double): Self = StObject.set(x, "page", js.Any.fromFunction1(value))
+    inline def setPageFunction1(value: /* obj */ Any => Double): Self = StObject.set(x, "page", js.Any.fromFunction1(value))
     
     inline def setRecords(value: String | (js.Function1[/* obj */ Data, Double])): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
     
@@ -66,12 +66,12 @@ object IJqGridJsonReader {
     
     inline def setRepeatitems(value: Boolean): Self = StObject.set(x, "repeatitems", value.asInstanceOf[js.Any])
     
-    inline def setRoot(value: String | (js.Function1[/* obj */ js.Any, js.Any])): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String | (js.Function1[/* obj */ Any, Any])): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    inline def setRootFunction1(value: /* obj */ js.Any => js.Any): Self = StObject.set(x, "root", js.Any.fromFunction1(value))
+    inline def setRootFunction1(value: /* obj */ Any => Any): Self = StObject.set(x, "root", js.Any.fromFunction1(value))
     
-    inline def setTotal(value: String | (js.Function1[/* obj */ js.Any, Double])): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: String | (js.Function1[/* obj */ Any, Double])): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
-    inline def setTotalFunction1(value: /* obj */ js.Any => Double): Self = StObject.set(x, "total", js.Any.fromFunction1(value))
+    inline def setTotalFunction1(value: /* obj */ Any => Double): Self = StObject.set(x, "total", js.Any.fromFunction1(value))
   }
 }

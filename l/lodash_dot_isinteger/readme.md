@@ -10,10 +10,10 @@ The lodash method `_.isInteger` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.isinteger |
 | Keywords           | lodash-modularized, isinteger |
-| # releases         | 0 |
-| # dependents       | 40 |
-| # downloads        | 203015408 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3.7271869E7 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

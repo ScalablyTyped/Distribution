@@ -10,15 +10,12 @@ SMTP transport for Nodemailer
 | ------------------ | :-------------: |
 | Full name          | nodemailer-smtp-pool |
 | Keywords           | SMTP, Nodemailer |
-| # releases         | 0 |
-| # dependents       | 38 |
-| # downloads        | 9844904 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 489321.3333333333 |
+| # stars            | 49.0 |
 
 ## Links
-- [Homepage](http://github.com/andris9/nodemailer-smtp-pool)
-- [Bugs](https://github.com/andris9/nodemailer-smtp-pool/issues)
-- [Repository](https://github.com/andris9/nodemailer-smtp-pool)
 - [Npm](https://www.npmjs.com/package/nodemailer-smtp-pool)
     
 

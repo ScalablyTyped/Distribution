@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-defer
 
-Typings are for version 3.0.0
+Typings are for version 4.0.0
 
 ## Library description:
 Create a deferred promise
@@ -10,10 +10,10 @@ Create a deferred promise
 | ------------------ | :-------------: |
 | Full name          | p-defer |
 | Keywords           | promise, defer, deferred, resolve, reject, lazy, later, async, await, promises |
-| # releases         | 5 |
-| # dependents       | 125 |
-| # downloads        | 397600187 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 3.2490342E7 |
+| # stars            | 53.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/p-defer#readme)

@@ -9,7 +9,6 @@ import typings.babylonjs.mathMod.Vector3
 import typings.babylonjs.meshMod.Mesh
 import typings.babylonjs.pointsCloudSystemMod.PointsCloudSystem
 import typings.babylonjs.typesMod.Nullable
-import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ object cloudPointMod {
   
   @JSImport("babylonjs/Particles/cloudPoint", "CloudPoint")
   @js.native
-  class CloudPoint protected () extends StObject {
+  open class CloudPoint protected () extends StObject {
     /**
       * Creates a Point Cloud object.
       * Don't create particles manually, use instead the PCS internal tools like _addParticle()
@@ -84,6 +83,7 @@ object cloudPointMod {
     
     /**
       * get the rotation matrix of the particle
+      * @param m
       * @hidden
       */
     def getRotationMatrix(m: Matrix): Unit = js.native
@@ -107,7 +107,7 @@ object cloudPointMod {
       * Returns a boolean. True if the particle intersects a mesh, else false
       * The intersection is computed on the particle position and Axis Aligned Bounding Box (AABB) or Sphere
       * @param target is the object (point or mesh) what the intersection is computed against
-      * @param isSphere is boolean flag when false (default) bounding box of mesh is used, when true the bouding sphere is used
+      * @param isSphere is boolean flag when false (default) bounding box of mesh is used, when true the bounding sphere is used
       * @returns true if it intersects
       */
     def intersectsMesh(target: Mesh, isSphere: Boolean): Boolean = js.native
@@ -176,10 +176,12 @@ object cloudPointMod {
   
   @JSImport("babylonjs/Particles/cloudPoint", "PointsGroup")
   @js.native
-  class PointsGroup protected () extends StObject {
+  open class PointsGroup protected () extends StObject {
     /**
       * Creates a points group object. This is an internal reference to produce particles for the PCS.
       * PCS internal tool, don't use it manually.
+      * @param id
+      * @param posFunction
       * @hidden
       */
     def this(
@@ -204,7 +206,7 @@ object cloudPointMod {
       * image data for group (internal use)
       * @hidden
       */
-    var _groupImageData: Nullable[ArrayBufferView] = js.native
+    var _groupImageData: Nullable[js.typedarray.ArrayBufferView] = js.native
     
     /**
       * Image Height (internal use)
@@ -238,9 +240,16 @@ object cloudPointMod {
     var _textureNb: Double = js.native
     
     /**
+      * Get or set the groupId
+      * @deprecated Please use groupId instead
+      */
+    def groupID: Double = js.native
+    def groupID_=(groupID: Double): Unit = js.native
+    
+    /**
       * The group id
       * @hidden
       */
-    var groupID: Double = js.native
+    var groupId: Double = js.native
   }
 }

@@ -10,10 +10,10 @@ object bookmarkBorderMod {
   
   @JSImport("material-ui/svg-icons/action/bookmark-border", JSImport.Default)
   @js.native
-  class default () extends ActionBookmarkBorder
+  open class default () extends ActionBookmarkBorder
   
   @JSImport("material-ui/svg-icons/action/bookmark-border", "ActionBookmarkBorder")
   @js.native
-  class ActionBookmarkBorder ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionBookmarkBorder ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientDashboardItemDrillDownStateChangedEventArgs")
 @js.native
-class ASPxClientDashboardItemDrillDownStateChangedEventArgs ()
+open class ASPxClientDashboardItemDrillDownStateChangedEventArgs ()
   extends StObject
      with typings.devexpressWeb.ASPxClientDashboardItemDrillDownStateChangedEventArgs {
   
@@ -24,14 +24,14 @@ class ASPxClientDashboardItemDrillDownStateChangedEventArgs ()
     * @param value The specified value.
     */
   /* CompleteClass */
-  override def IsNullValue(value: js.Any): Boolean = js.native
+  override def IsNullValue(value: Any): Boolean = js.native
   
   /**
     * Returns whether the specified value is 'others'. true, if the specified value is 'others'; otherwise, false.
     * @param value The specified value.
     */
   /* CompleteClass */
-  override def IsOthersValue(value: js.Any): Boolean = js.native
+  override def IsOthersValue(value: Any): Boolean = js.native
   
   /**
     * Gets the component name of the dashboard item.
@@ -43,5 +43,5 @@ class ASPxClientDashboardItemDrillDownStateChangedEventArgs ()
     * Gets values from the current drill-down hierarchy.
     */
   /* CompleteClass */
-  var Values: js.Array[js.Any] = js.native
+  var Values: js.Array[Any] = js.native
 }

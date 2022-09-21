@@ -1,6 +1,8 @@
 package typings.officeUiFabricReact
 
 import typings.react.mod.HTMLAttributes
+import typings.react.mod.RefObject
+import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
@@ -9,7 +11,40 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object layerHostTypesMod {
   
-  trait ILayerHost extends StObject
+  trait ILayerHost extends StObject {
+    
+    /**
+      * The hostId for this host, to be propagatd to layers using Customizer.
+      */
+    var hostId: String
+    
+    /**
+      * Notifies the layer host that layers may have been added or removed within its root element.
+      */
+    def notifyLayersChanged(): Unit
+    
+    /**
+      * An element ref to the layer host's content root.
+      * This is the element to which layers will be added.
+      */
+    var rootRef: RefObject[HTMLDivElement | Null]
+  }
+  object ILayerHost {
+    
+    inline def apply(hostId: String, notifyLayersChanged: () => Unit, rootRef: RefObject[HTMLDivElement | Null]): ILayerHost = {
+      val __obj = js.Dynamic.literal(hostId = hostId.asInstanceOf[js.Any], notifyLayersChanged = js.Any.fromFunction0(notifyLayersChanged), rootRef = rootRef.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ILayerHost]
+    }
+    
+    extension [Self <: ILayerHost](x: Self) {
+      
+      inline def setHostId(value: String): Self = StObject.set(x, "hostId", value.asInstanceOf[js.Any])
+      
+      inline def setNotifyLayersChanged(value: () => Unit): Self = StObject.set(x, "notifyLayersChanged", js.Any.fromFunction0(value))
+      
+      inline def setRootRef(value: RefObject[HTMLDivElement | Null]): Self = StObject.set(x, "rootRef", value.asInstanceOf[js.Any])
+    }
+  }
   
   trait ILayerHostProps
     extends StObject

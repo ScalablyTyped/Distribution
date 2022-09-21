@@ -10,10 +10,10 @@ Routing library for 'single page' applications
 | ------------------ | :-------------: |
 | Full name          | pathjs |
 | Keywords           | ender, path, hash, pushState, routing |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 16058 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1405.3333333333333 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/mtrpcic/pathjs)

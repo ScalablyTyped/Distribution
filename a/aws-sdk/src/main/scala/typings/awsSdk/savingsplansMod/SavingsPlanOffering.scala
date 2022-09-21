@@ -102,13 +102,13 @@ object SavingsPlanOffering {
     
     inline def setProductTypesUndefined: Self = StObject.set(x, "productTypes", js.undefined)
     
-    inline def setProductTypesVarargs(value: SavingsPlanProductType*): Self = StObject.set(x, "productTypes", js.Array(value :_*))
+    inline def setProductTypesVarargs(value: SavingsPlanProductType*): Self = StObject.set(x, "productTypes", js.Array(value*))
     
     inline def setProperties(value: SavingsPlanOfferingPropertyList): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    inline def setPropertiesVarargs(value: SavingsPlanOfferingProperty*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: SavingsPlanOfferingProperty*): Self = StObject.set(x, "properties", js.Array(value*))
     
     inline def setServiceCode(value: SavingsPlanServiceCode): Self = StObject.set(x, "serviceCode", value.asInstanceOf[js.Any])
     

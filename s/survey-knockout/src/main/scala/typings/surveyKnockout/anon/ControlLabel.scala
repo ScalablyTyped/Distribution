@@ -6,84 +6,89 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ControlLabel extends StObject {
   
-  var column: String
-  
   var controlLabel: String
   
   var item: String
   
-  var itemChecked: String
+  var itemContent: String
   
-  var itemControl: String
+  var itemDragMod: String
   
-  var itemDecorator: String
+  var itemGhostMod: String
   
-  var itemInline: String
+  var itemGhostNode: String
   
-  var itemNone: String
+  var itemIcon: String
   
-  var itemSelectAll: String
+  var itemIconContainer: String
   
-  var label: String
+  var itemIconFocusMod: String
   
-  var labelChecked: String
+  var itemIconHoverMod: String
   
-  var materialDecorator: String
-  
-  var other: String
+  var itemIndex: String
   
   var root: String
+  
+  var rootDisabled: String
+  
+  var rootDragMod: String
+  
+  var rootMobileMod: String
 }
 object ControlLabel {
   
   inline def apply(
-    column: String,
     controlLabel: String,
     item: String,
-    itemChecked: String,
-    itemControl: String,
-    itemDecorator: String,
-    itemInline: String,
-    itemNone: String,
-    itemSelectAll: String,
-    label: String,
-    labelChecked: String,
-    materialDecorator: String,
-    other: String,
-    root: String
+    itemContent: String,
+    itemDragMod: String,
+    itemGhostMod: String,
+    itemGhostNode: String,
+    itemIcon: String,
+    itemIconContainer: String,
+    itemIconFocusMod: String,
+    itemIconHoverMod: String,
+    itemIndex: String,
+    root: String,
+    rootDisabled: String,
+    rootDragMod: String,
+    rootMobileMod: String
   ): ControlLabel = {
-    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], controlLabel = controlLabel.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], itemChecked = itemChecked.asInstanceOf[js.Any], itemControl = itemControl.asInstanceOf[js.Any], itemDecorator = itemDecorator.asInstanceOf[js.Any], itemInline = itemInline.asInstanceOf[js.Any], itemNone = itemNone.asInstanceOf[js.Any], itemSelectAll = itemSelectAll.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], labelChecked = labelChecked.asInstanceOf[js.Any], materialDecorator = materialDecorator.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(controlLabel = controlLabel.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], itemContent = itemContent.asInstanceOf[js.Any], itemDragMod = itemDragMod.asInstanceOf[js.Any], itemGhostMod = itemGhostMod.asInstanceOf[js.Any], itemGhostNode = itemGhostNode.asInstanceOf[js.Any], itemIcon = itemIcon.asInstanceOf[js.Any], itemIconContainer = itemIconContainer.asInstanceOf[js.Any], itemIconFocusMod = itemIconFocusMod.asInstanceOf[js.Any], itemIconHoverMod = itemIconHoverMod.asInstanceOf[js.Any], itemIndex = itemIndex.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], rootDisabled = rootDisabled.asInstanceOf[js.Any], rootDragMod = rootDragMod.asInstanceOf[js.Any], rootMobileMod = rootMobileMod.asInstanceOf[js.Any])
     __obj.asInstanceOf[ControlLabel]
   }
   
   extension [Self <: ControlLabel](x: Self) {
     
-    inline def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
-    
     inline def setControlLabel(value: String): Self = StObject.set(x, "controlLabel", value.asInstanceOf[js.Any])
     
     inline def setItem(value: String): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    inline def setItemChecked(value: String): Self = StObject.set(x, "itemChecked", value.asInstanceOf[js.Any])
+    inline def setItemContent(value: String): Self = StObject.set(x, "itemContent", value.asInstanceOf[js.Any])
     
-    inline def setItemControl(value: String): Self = StObject.set(x, "itemControl", value.asInstanceOf[js.Any])
+    inline def setItemDragMod(value: String): Self = StObject.set(x, "itemDragMod", value.asInstanceOf[js.Any])
     
-    inline def setItemDecorator(value: String): Self = StObject.set(x, "itemDecorator", value.asInstanceOf[js.Any])
+    inline def setItemGhostMod(value: String): Self = StObject.set(x, "itemGhostMod", value.asInstanceOf[js.Any])
     
-    inline def setItemInline(value: String): Self = StObject.set(x, "itemInline", value.asInstanceOf[js.Any])
+    inline def setItemGhostNode(value: String): Self = StObject.set(x, "itemGhostNode", value.asInstanceOf[js.Any])
     
-    inline def setItemNone(value: String): Self = StObject.set(x, "itemNone", value.asInstanceOf[js.Any])
+    inline def setItemIcon(value: String): Self = StObject.set(x, "itemIcon", value.asInstanceOf[js.Any])
     
-    inline def setItemSelectAll(value: String): Self = StObject.set(x, "itemSelectAll", value.asInstanceOf[js.Any])
+    inline def setItemIconContainer(value: String): Self = StObject.set(x, "itemIconContainer", value.asInstanceOf[js.Any])
     
-    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setItemIconFocusMod(value: String): Self = StObject.set(x, "itemIconFocusMod", value.asInstanceOf[js.Any])
     
-    inline def setLabelChecked(value: String): Self = StObject.set(x, "labelChecked", value.asInstanceOf[js.Any])
+    inline def setItemIconHoverMod(value: String): Self = StObject.set(x, "itemIconHoverMod", value.asInstanceOf[js.Any])
     
-    inline def setMaterialDecorator(value: String): Self = StObject.set(x, "materialDecorator", value.asInstanceOf[js.Any])
-    
-    inline def setOther(value: String): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
+    inline def setItemIndex(value: String): Self = StObject.set(x, "itemIndex", value.asInstanceOf[js.Any])
     
     inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    
+    inline def setRootDisabled(value: String): Self = StObject.set(x, "rootDisabled", value.asInstanceOf[js.Any])
+    
+    inline def setRootDragMod(value: String): Self = StObject.set(x, "rootDragMod", value.asInstanceOf[js.Any])
+    
+    inline def setRootMobileMod(value: String): Self = StObject.set(x, "rootMobileMod", value.asInstanceOf[js.Any])
   }
 }

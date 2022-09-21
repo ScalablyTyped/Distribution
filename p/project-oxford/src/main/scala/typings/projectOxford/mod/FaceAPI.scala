@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("project-oxford", "FaceAPI")
 @js.native
-class FaceAPI () extends StObject {
+open class FaceAPI () extends StObject {
   
   /**
     * Call the Face Detected API

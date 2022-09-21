@@ -22,11 +22,11 @@ trait UploadImageConfig
     * res: var serverId = res.serverId;  返回图片的服务器端 ID
     */
   @JSName("success")
-  def success_MUploadImageConfig(res: js.Any): Unit
+  def success_MUploadImageConfig(res: Any): Unit
 }
 object UploadImageConfig {
   
-  inline def apply(localId: String, success: js.Any => Unit): UploadImageConfig = {
+  inline def apply(localId: String, success: Any => Unit): UploadImageConfig = {
     val __obj = js.Dynamic.literal(localId = localId.asInstanceOf[js.Any], success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[UploadImageConfig]
   }
@@ -39,6 +39,6 @@ object UploadImageConfig {
     
     inline def setLocalId(value: String): Self = StObject.set(x, "localId", value.asInstanceOf[js.Any])
     
-    inline def setSuccess(value: js.Any => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: Any => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

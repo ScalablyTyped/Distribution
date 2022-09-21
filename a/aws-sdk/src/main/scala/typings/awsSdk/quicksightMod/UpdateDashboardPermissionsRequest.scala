@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateDashboardPermissionsRequest extends StObject {
   
   /**
-    * The ID of the AWS account that contains the dashboard whose permissions you're updating.
+    * The ID of the Amazon Web Services account that contains the dashboard whose permissions you're updating.
     */
   var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
@@ -17,9 +17,19 @@ trait UpdateDashboardPermissionsRequest extends StObject {
   var DashboardId: RestrictiveResourceId
   
   /**
+    * Grants link permissions to all users in a defined namespace.
+    */
+  var GrantLinkPermissions: js.UndefOr[UpdateLinkPermissionList] = js.undefined
+  
+  /**
     * The permissions that you want to grant on this resource.
     */
   var GrantPermissions: js.UndefOr[UpdateResourcePermissionList] = js.undefined
+  
+  /**
+    * Revokes link permissions from all users in a defined namespace.
+    */
+  var RevokeLinkPermissions: js.UndefOr[UpdateLinkPermissionList] = js.undefined
   
   /**
     * The permissions that you want to revoke from this resource.
@@ -39,16 +49,28 @@ object UpdateDashboardPermissionsRequest {
     
     inline def setDashboardId(value: RestrictiveResourceId): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
     
+    inline def setGrantLinkPermissions(value: UpdateLinkPermissionList): Self = StObject.set(x, "GrantLinkPermissions", value.asInstanceOf[js.Any])
+    
+    inline def setGrantLinkPermissionsUndefined: Self = StObject.set(x, "GrantLinkPermissions", js.undefined)
+    
+    inline def setGrantLinkPermissionsVarargs(value: ResourcePermission*): Self = StObject.set(x, "GrantLinkPermissions", js.Array(value*))
+    
     inline def setGrantPermissions(value: UpdateResourcePermissionList): Self = StObject.set(x, "GrantPermissions", value.asInstanceOf[js.Any])
     
     inline def setGrantPermissionsUndefined: Self = StObject.set(x, "GrantPermissions", js.undefined)
     
-    inline def setGrantPermissionsVarargs(value: ResourcePermission*): Self = StObject.set(x, "GrantPermissions", js.Array(value :_*))
+    inline def setGrantPermissionsVarargs(value: ResourcePermission*): Self = StObject.set(x, "GrantPermissions", js.Array(value*))
+    
+    inline def setRevokeLinkPermissions(value: UpdateLinkPermissionList): Self = StObject.set(x, "RevokeLinkPermissions", value.asInstanceOf[js.Any])
+    
+    inline def setRevokeLinkPermissionsUndefined: Self = StObject.set(x, "RevokeLinkPermissions", js.undefined)
+    
+    inline def setRevokeLinkPermissionsVarargs(value: ResourcePermission*): Self = StObject.set(x, "RevokeLinkPermissions", js.Array(value*))
     
     inline def setRevokePermissions(value: UpdateResourcePermissionList): Self = StObject.set(x, "RevokePermissions", value.asInstanceOf[js.Any])
     
     inline def setRevokePermissionsUndefined: Self = StObject.set(x, "RevokePermissions", js.undefined)
     
-    inline def setRevokePermissionsVarargs(value: ResourcePermission*): Self = StObject.set(x, "RevokePermissions", js.Array(value :_*))
+    inline def setRevokePermissionsVarargs(value: ResourcePermission*): Self = StObject.set(x, "RevokePermissions", js.Array(value*))
   }
 }

@@ -29,9 +29,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @remarks
   * 
-  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+  * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
   * 
-  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
+  * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
   */
 trait Entities extends StObject {
   
@@ -89,30 +89,30 @@ object Entities {
     
     inline def setAddresses(value: js.Array[String]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
     
-    inline def setAddressesVarargs(value: String*): Self = StObject.set(x, "addresses", js.Array(value :_*))
+    inline def setAddressesVarargs(value: String*): Self = StObject.set(x, "addresses", js.Array(value*))
     
     inline def setContacts(value: js.Array[Contact]): Self = StObject.set(x, "contacts", value.asInstanceOf[js.Any])
     
-    inline def setContactsVarargs(value: Contact*): Self = StObject.set(x, "contacts", js.Array(value :_*))
+    inline def setContactsVarargs(value: Contact*): Self = StObject.set(x, "contacts", js.Array(value*))
     
     inline def setEmailAddresses(value: js.Array[String]): Self = StObject.set(x, "emailAddresses", value.asInstanceOf[js.Any])
     
-    inline def setEmailAddressesVarargs(value: String*): Self = StObject.set(x, "emailAddresses", js.Array(value :_*))
+    inline def setEmailAddressesVarargs(value: String*): Self = StObject.set(x, "emailAddresses", js.Array(value*))
     
     inline def setMeetingSuggestions(value: js.Array[MeetingSuggestion]): Self = StObject.set(x, "meetingSuggestions", value.asInstanceOf[js.Any])
     
-    inline def setMeetingSuggestionsVarargs(value: MeetingSuggestion*): Self = StObject.set(x, "meetingSuggestions", js.Array(value :_*))
+    inline def setMeetingSuggestionsVarargs(value: MeetingSuggestion*): Self = StObject.set(x, "meetingSuggestions", js.Array(value*))
     
     inline def setPhoneNumbers(value: js.Array[PhoneNumber]): Self = StObject.set(x, "phoneNumbers", value.asInstanceOf[js.Any])
     
-    inline def setPhoneNumbersVarargs(value: PhoneNumber*): Self = StObject.set(x, "phoneNumbers", js.Array(value :_*))
+    inline def setPhoneNumbersVarargs(value: PhoneNumber*): Self = StObject.set(x, "phoneNumbers", js.Array(value*))
     
     inline def setTaskSuggestions(value: js.Array[String]): Self = StObject.set(x, "taskSuggestions", value.asInstanceOf[js.Any])
     
-    inline def setTaskSuggestionsVarargs(value: String*): Self = StObject.set(x, "taskSuggestions", js.Array(value :_*))
+    inline def setTaskSuggestionsVarargs(value: String*): Self = StObject.set(x, "taskSuggestions", js.Array(value*))
     
     inline def setUrls(value: js.Array[String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
     
-    inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
+    inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value*))
   }
 }

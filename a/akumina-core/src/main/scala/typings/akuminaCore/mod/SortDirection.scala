@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // class ContainsExpression extends Expression { }
 @JSImport("akumina-core", "SortDirection")
 @js.native
-class SortDirection () extends StObject
+open class SortDirection () extends StObject
 object SortDirection {
   
   @JSImport("akumina-core", "SortDirection")

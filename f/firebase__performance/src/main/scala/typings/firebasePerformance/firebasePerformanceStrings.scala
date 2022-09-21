@@ -21,6 +21,12 @@ object firebasePerformanceStrings {
   inline def `RC response not ok`: `RC response not ok` = ("RC response not ok").asInstanceOf[`RC response not ok`]
   
   @js.native
+  sealed trait `already initialized`
+    extends StObject
+       with ErrorCode
+  inline def `already initialized`: `already initialized` = ("already initialized").asInstanceOf[`already initialized`]
+  
+  @js.native
   sealed trait frame
     extends StObject
        with EntryType

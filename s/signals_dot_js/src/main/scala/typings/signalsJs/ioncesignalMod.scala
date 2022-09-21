@@ -25,7 +25,7 @@ object ioncesignalMod {
       * @param    valueObjects    Any number of parameters to send to listeners. Will be type-checked against valueClasses.
       * @throws    ArgumentError    <code>ArgumentError</code>:    valueObjects are not compatible with valueClasses.
       */
-    def dispatch(valueObjects: js.Any*): Unit
+    def dispatch(valueObjects: Any*): Unit
     
     /** The current number of listeners for the signal. */
     var numListeners: Double
@@ -45,7 +45,7 @@ object ioncesignalMod {
     /**
       * An optional array of classes defining the types of parameters sent to listeners.
       */
-    var valueClasses: js.Array[js.Any]
+    var valueClasses: js.Array[Any]
   }
   object IOnceSignal {
     
@@ -57,7 +57,7 @@ object ioncesignalMod {
       
       inline def setAddOnce(value: js.Function => ISlot): Self = StObject.set(x, "addOnce", js.Any.fromFunction1(value))
       
-      inline def setDispatch(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
+      inline def setDispatch(value: /* repeated */ Any => Unit): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
       
       inline def setNumListeners(value: Double): Self = StObject.set(x, "numListeners", value.asInstanceOf[js.Any])
       
@@ -65,9 +65,9 @@ object ioncesignalMod {
       
       inline def setRemoveAll(value: () => Unit): Self = StObject.set(x, "removeAll", js.Any.fromFunction0(value))
       
-      inline def setValueClasses(value: js.Array[js.Any]): Self = StObject.set(x, "valueClasses", value.asInstanceOf[js.Any])
+      inline def setValueClasses(value: js.Array[Any]): Self = StObject.set(x, "valueClasses", value.asInstanceOf[js.Any])
       
-      inline def setValueClassesVarargs(value: js.Any*): Self = StObject.set(x, "valueClasses", js.Array(value :_*))
+      inline def setValueClassesVarargs(value: Any*): Self = StObject.set(x, "valueClasses", js.Array(value*))
     }
   }
 }

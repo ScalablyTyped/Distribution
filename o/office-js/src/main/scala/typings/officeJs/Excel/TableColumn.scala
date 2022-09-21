@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a column in a table.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @js.native
@@ -28,14 +28,15 @@ trait TableColumn
   /**
     * Deletes the column from the table.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   def delete(): Unit = js.native
   
   /**
+    * Retrieves the filter applied to the column.
     *
-    * Retrieve the filter applied to the column.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   val filter: Filter = js.native
@@ -43,6 +44,7 @@ trait TableColumn
   /**
     * Gets the range object associated with the data body of the column.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   def getDataBodyRange(): Range = js.native
@@ -50,6 +52,7 @@ trait TableColumn
   /**
     * Gets the range object associated with the header row of the column.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   def getHeaderRowRange(): Range = js.native
@@ -57,6 +60,7 @@ trait TableColumn
   /**
     * Gets the range object associated with the entire column.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   def getRange(): Range = js.native
@@ -64,22 +68,23 @@ trait TableColumn
   /**
     * Gets the range object associated with the totals row of the column.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   def getTotalRowRange(): Range = js.native
   
   /**
-    *
     * Returns a unique key that identifies the column within the table.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   val id: Double = js.native
   
   /**
-    *
     * Returns the index number of the column within the columns collection of the table. Zero-indexed.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   val index: Double = js.native
@@ -96,21 +101,15 @@ trait TableColumn
   def load(propertyNames: js.Array[String]): TableColumn = js.native
   
   /**
-    *
     * Specifies the name of the table column.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1 for getting the name; 1.4 for setting it.]
     */
   var name: String = js.native
   
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.TableColumn): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */
@@ -126,10 +125,11 @@ trait TableColumn
   def toJSON(): TableColumnData = js.native
   
   /**
+    * Represents the raw values of the specified range. The data returned could be a string, number, or boolean. Cells that contain an error will return the error string.
+    If the returned value starts with a plus ("+"), minus ("-"), or equal sign ("="), Excel interprets this value as a formula.
     *
-    * Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
-  var values: js.Array[js.Array[js.Any]] = js.native
+  var values: js.Array[js.Array[Any]] = js.native
 }

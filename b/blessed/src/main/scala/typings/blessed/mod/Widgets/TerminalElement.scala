@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("blessed", "Widgets.TerminalElement")
 @js.native
-class TerminalElement protected () extends BoxElement {
+open class TerminalElement protected () extends BoxElement {
   def this(opts: TerminalOptions) = this()
   
   @JSName("options")
@@ -15,7 +15,7 @@ class TerminalElement protected () extends BoxElement {
   /**
     * reference to the pty.js pseudo terminal.
     */
-  var pty: js.Any = js.native
+  var pty: Any = js.native
   
   def screenshot(xi: Double): String = js.native
   def screenshot(xi: Double, xl: Double): String = js.native
@@ -35,7 +35,7 @@ class TerminalElement protected () extends BoxElement {
   /**
     * reference to the headless term.js terminal.
     */
-  var term: js.Any = js.native
+  var term: Any = js.native
   
   /**
     * write data to the terminal.

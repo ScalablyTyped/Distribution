@@ -1,43 +1,32 @@
 package typings.ldapjs.mod
 
+import typings.ldapjs.mod.^
+import typings.ldapjs.mod.dn.DN
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def createClient(): typings.ldapjs.mod.Client = typings.ldapjs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createClient")().asInstanceOf[typings.ldapjs.mod.Client]
-inline def createClient(options: typings.ldapjs.mod.ClientOptions): typings.ldapjs.mod.Client = typings.ldapjs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(options.asInstanceOf[js.Any]).asInstanceOf[typings.ldapjs.mod.Client]
+inline def createClient(): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")().asInstanceOf[Client]
+inline def createClient(options: ClientOptions): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(options.asInstanceOf[js.Any]).asInstanceOf[Client]
 
-inline def createServer(): typings.ldapjs.mod.Server = typings.ldapjs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[typings.ldapjs.mod.Server]
-inline def createServer(options: typings.ldapjs.mod.ServerOptions): typings.ldapjs.mod.Server = typings.ldapjs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any]).asInstanceOf[typings.ldapjs.mod.Server]
+inline def createServer(): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[Server]
+inline def createServer(options: ServerOptions): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any]).asInstanceOf[Server]
 
-inline def parseDN(dn: java.lang.String): js.Any = typings.ldapjs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseDN")(dn.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+inline def parseDN(dn: String): DN = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDN")(dn.asInstanceOf[js.Any]).asInstanceOf[DN]
 
-inline def parseFilter(filterString: java.lang.String): typings.ldapjs.mod.Filter = typings.ldapjs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseFilter")(filterString.asInstanceOf[js.Any]).asInstanceOf[typings.ldapjs.mod.Filter]
+inline def parseFilter(filterString: String): Filter = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFilter")(filterString.asInstanceOf[js.Any]).asInstanceOf[Filter]
 
-type CallBack = js.Function2[
-/* error */ typings.ldapjs.mod.Error | scala.Null, 
-/* result */ js.UndefOr[js.Any], 
-scala.Unit]
+type CallBack = js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[Any], Unit]
 
-type CompareCallback = js.Function2[
-/* error */ typings.ldapjs.mod.Error | scala.Null, 
-/* matched */ js.UndefOr[scala.Boolean], 
-scala.Unit]
+type CompareCallback = js.Function2[/* error */ Error | Null, /* matched */ js.UndefOr[Boolean], Unit]
 
-type Control = js.Any
+type Control = Any
 
-type ErrorCallback = js.Function1[/* error */ typings.ldapjs.mod.Error, scala.Unit]
+type ErrorCallback = js.Function1[/* error */ Error, Unit]
 
-type ExopCallback = js.Function3[
-/* error */ typings.ldapjs.mod.Error | scala.Null, 
-/* value */ java.lang.String, 
-/* result */ js.UndefOr[js.Any], 
-scala.Unit]
+type ExopCallback = js.Function3[/* error */ Error | Null, /* value */ String, /* result */ js.UndefOr[Any], Unit]
 
-type SearchCallBack = js.Function2[
-/* error */ typings.ldapjs.mod.Error | scala.Null, 
-/* result */ typings.ldapjs.mod.SearchCallbackResponse, 
-scala.Unit]
+type SearchCallBack = js.Function2[/* error */ Error | Null, /* result */ SearchCallbackResponse, Unit]
 
-type SearchReference = js.Any
+type SearchReference = Any

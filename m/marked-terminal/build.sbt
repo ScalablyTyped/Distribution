@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "marked-terminal"
-version := "3.1-dt-20181217Z-c71769"
-scalaVersion := "3.0.1"
+version := "3.1-dt-20211202Z-30df96"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "chalk" % "4.1.0-502e56",
-  "org.scalablytyped" %%% "marked" % "1.2-dt-20201118Z-ecf08c",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
+  "org.scalablytyped" %%% "chalk" % "5.0.1-c21c39",
+  "org.scalablytyped" %%% "marked" % "4.0-dt-20220907Z-f2266f",
+  "org.scalablytyped" %%% "std" % "4.8-958c79")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

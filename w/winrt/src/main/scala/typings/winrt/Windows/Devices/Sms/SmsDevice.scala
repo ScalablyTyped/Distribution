@@ -15,8 +15,8 @@ object SmsDevice {
     cellularClass: CellularClass,
     deviceStatus: SmsDeviceStatus,
     messageStore: SmsDeviceMessageStore,
-    onsmsdevicestatuschanged: js.Any,
-    onsmsmessagereceived: js.Any,
+    onsmsdevicestatuschanged: Any,
+    onsmsmessagereceived: Any,
     sendMessageAsync: ISmsMessage => SendSmsMessageOperation
   ): SmsDevice = {
     val __obj = js.Dynamic.literal(accountPhoneNumber = accountPhoneNumber.asInstanceOf[js.Any], calculateLength = js.Any.fromFunction1(calculateLength), cellularClass = cellularClass.asInstanceOf[js.Any], deviceStatus = deviceStatus.asInstanceOf[js.Any], messageStore = messageStore.asInstanceOf[js.Any], onsmsdevicestatuschanged = onsmsdevicestatuschanged.asInstanceOf[js.Any], onsmsmessagereceived = onsmsmessagereceived.asInstanceOf[js.Any], sendMessageAsync = js.Any.fromFunction1(sendMessageAsync))

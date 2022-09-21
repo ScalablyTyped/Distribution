@@ -1,14 +1,14 @@
 package typings.relayTestUtils
 
 import typings.relayRuntime.relayConcreteNodeMod.ConcreteRequest
+import typings.relayRuntime.relayModernGraphQLTagMod.GraphQLTaggedNode
 import typings.relayRuntime.relayNetworkTypesMod.GraphQLResponse
+import typings.relayRuntime.relayNetworkTypesMod.GraphQLSingularResponse
 import typings.relayRuntime.relayRuntimeTypesMod.CacheConfig
 import typings.relayRuntime.relayRuntimeTypesMod.Variables
 import typings.relayRuntime.relayStoreTypesMod.Environment
 import typings.relayRuntime.relayStoreTypesMod.OperationDescriptor
-import typings.relayRuntime.relayStoreTypesMod.OptimisticUpdate
-import typings.relayTestUtils.anon.HandlerProvider
-import typings.std.Error
+import typings.relayTestUtils.anon.PartialEnvironmentConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +20,7 @@ object relayModernMockEnvironmentMod {
   val ^ : js.Any = js.native
   
   inline def createMockEnvironment(): RelayMockEnvironment = ^.asInstanceOf[js.Dynamic].applyDynamic("createMockEnvironment")().asInstanceOf[RelayMockEnvironment]
-  inline def createMockEnvironment(config: HandlerProvider): RelayMockEnvironment = ^.asInstanceOf[js.Dynamic].applyDynamic("createMockEnvironment")(config.asInstanceOf[js.Any]).asInstanceOf[RelayMockEnvironment]
+  inline def createMockEnvironment(config: PartialEnvironmentConfig): RelayMockEnvironment = ^.asInstanceOf[js.Dynamic].applyDynamic("createMockEnvironment")(config.asInstanceOf[js.Any]).asInstanceOf[RelayMockEnvironment]
   
   trait MockEnvironment extends StObject {
     
@@ -46,8 +46,8 @@ object relayModernMockEnvironmentMod {
   @js.native
   trait MockFunctions extends StObject {
     
-    def cachePayload(request: ConcreteRequest, variables: Variables, payload: GraphQLResponse): Unit = js.native
-    def cachePayload(request: OperationDescriptor, variables: Variables, payload: GraphQLResponse): Unit = js.native
+    def cachePayload(request: ConcreteRequest, variables: Variables, payload: GraphQLSingularResponse): Unit = js.native
+    def cachePayload(request: OperationDescriptor, variables: Variables, payload: GraphQLSingularResponse): Unit = js.native
     
     def clearCache(): Unit = js.native
     
@@ -65,38 +65,33 @@ object relayModernMockEnvironmentMod {
     def isLoading(request: OperationDescriptor, variables: Variables): Boolean = js.native
     def isLoading(request: OperationDescriptor, variables: Variables, cacheConfig: CacheConfig): Boolean = js.native
     
-    def nextValue(request: ConcreteRequest, payload: GraphQLResponse): Unit = js.native
-    def nextValue(request: OperationDescriptor, payload: GraphQLResponse): Unit = js.native
+    def nextValue(request: ConcreteRequest, payload: GraphQLSingularResponse): Unit = js.native
+    def nextValue(request: OperationDescriptor, payload: GraphQLSingularResponse): Unit = js.native
     
     def queueOperationResolver(resolver: OperationMockResolver): Unit = js.native
     
+    def queuePendingOperation(query: GraphQLTaggedNode, variables: Variables): Unit = js.native
+    
     def reject(request: ConcreteRequest, error: String): Unit = js.native
-    def reject(request: ConcreteRequest, error: Error): Unit = js.native
+    def reject(request: ConcreteRequest, error: js.Error): Unit = js.native
     def reject(request: OperationDescriptor, error: String): Unit = js.native
-    def reject(request: OperationDescriptor, error: Error): Unit = js.native
+    def reject(request: OperationDescriptor, error: js.Error): Unit = js.native
     
-    def rejectMostRecentOperation(error: js.Function1[/* operation */ OperationDescriptor, Error]): Unit = js.native
-    def rejectMostRecentOperation(error: Error): Unit = js.native
+    def rejectMostRecentOperation(error: js.Error): Unit = js.native
+    def rejectMostRecentOperation(error: js.Function1[/* operation */ OperationDescriptor, js.Error]): Unit = js.native
     
-    def resolve(request: ConcreteRequest, payload: GraphQLResponse): Unit = js.native
-    def resolve(request: OperationDescriptor, payload: GraphQLResponse): Unit = js.native
+    def resolve(request: ConcreteRequest, payload: GraphQLSingularResponse): Unit = js.native
+    def resolve(request: OperationDescriptor, payload: GraphQLSingularResponse): Unit = js.native
     
-    def resolveMostRecentOperation(payload: js.Function1[/* operation */ OperationDescriptor, GraphQLResponse | Unit]): Unit = js.native
-    def resolveMostRecentOperation(payload: GraphQLResponse): Unit = js.native
+    def resolveMostRecentOperation(payload: js.Function1[/* operation */ OperationDescriptor, GraphQLSingularResponse]): Unit = js.native
+    def resolveMostRecentOperation(payload: GraphQLSingularResponse): Unit = js.native
   }
   
-  type OperationMockResolver = js.Function1[/* operation */ OperationDescriptor, GraphQLResponse | Error | Null]
+  type OperationMockResolver = js.Function1[/* operation */ OperationDescriptor, GraphQLResponse | js.Error | Null]
   
   @js.native
   trait RelayMockEnvironment
     extends StObject
        with MockEnvironment
-       with Environment {
-    
-    var configName: js.UndefOr[String | Null] = js.native
-    
-    def replaceUpdate(update: OptimisticUpdate, newUpdate: OptimisticUpdate): Unit = js.native
-    
-    def revertUpdate(update: OptimisticUpdate): Unit = js.native
-  }
+       with Environment
 }

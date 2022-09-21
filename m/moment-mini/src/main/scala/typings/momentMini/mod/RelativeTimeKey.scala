@@ -3,6 +3,7 @@ package typings.momentMini.mod
 import typings.momentMini.momentMiniStrings.d_
 import typings.momentMini.momentMiniStrings.m_
 import typings.momentMini.momentMiniStrings.mm_
+import typings.momentMini.momentMiniStrings.w_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,6 +17,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.momentMini.momentMiniStrings.hh
   - typings.momentMini.momentMiniStrings.d_
   - typings.momentMini.momentMiniStrings.dd
+  - typings.momentMini.momentMiniStrings.w_
+  - typings.momentMini.momentMiniStrings.ww
   - typings.momentMini.momentMiniStrings.M
   - typings.momentMini.momentMiniStrings.MM
   - typings.momentMini.momentMiniStrings.y
@@ -43,6 +46,10 @@ object RelativeTimeKey {
   inline def s: typings.momentMini.momentMiniStrings.s = "s".asInstanceOf[typings.momentMini.momentMiniStrings.s]
   
   inline def ss: typings.momentMini.momentMiniStrings.ss = "ss".asInstanceOf[typings.momentMini.momentMiniStrings.ss]
+  
+  inline def w: w_ = "w".asInstanceOf[w_]
+  
+  inline def ww: typings.momentMini.momentMiniStrings.ww = "ww".asInstanceOf[typings.momentMini.momentMiniStrings.ww]
   
   inline def y: typings.momentMini.momentMiniStrings.y = "y".asInstanceOf[typings.momentMini.momentMiniStrings.y]
   

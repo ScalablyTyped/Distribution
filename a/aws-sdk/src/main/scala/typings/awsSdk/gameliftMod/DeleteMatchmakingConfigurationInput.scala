@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteMatchmakingConfigurationInput extends StObject {
   
   /**
-    * A unique identifier for a matchmaking configuration. You can use either the configuration name or ARN value.
+    * A unique identifier for the matchmaking configuration. You can use either the configuration name or ARN value.
     */
   var Name: MatchmakingConfigurationName
 }

@@ -20,9 +20,9 @@ trait OverlayView
   
   def getProjection(): MapSystemProjection = js.native
   
-  def onAdd(): js.Any = js.native
+  def onAdd(): Any = js.native
   
-  def onRemove(): js.Any = js.native
+  def onRemove(): Any = js.native
   
   def setMap(): Unit = js.native
   def setMap(map: Map): Unit = js.native

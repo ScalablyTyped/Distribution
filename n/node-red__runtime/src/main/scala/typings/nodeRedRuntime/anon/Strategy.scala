@@ -30,6 +30,6 @@ object Strategy {
     
     inline def setUsers(value: js.Array[UsernamePermissions]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     
-    inline def setUsersVarargs(value: UsernamePermissions*): Self = StObject.set(x, "users", js.Array(value :_*))
+    inline def setUsersVarargs(value: UsernamePermissions*): Self = StObject.set(x, "users", js.Array(value*))
   }
 }

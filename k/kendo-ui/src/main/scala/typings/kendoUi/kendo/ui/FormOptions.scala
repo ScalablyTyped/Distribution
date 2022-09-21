@@ -80,7 +80,7 @@ object FormOptions {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: FormItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: FormItem*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setLayout(value: String | grid): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     

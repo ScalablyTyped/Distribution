@@ -1,7 +1,7 @@
 
 # Scala.js typings for redent
 
-Typings are for version 3.0.0
+Typings are for version 4.0.0
 
 ## Library description:
 Strip redundant indentation and indent the string
@@ -10,10 +10,10 @@ Strip redundant indentation and indent the string
 | ------------------ | :-------------: |
 | Full name          | redent |
 | Keywords           | string, strip, trim, indent, indentation, add, reindent, normalize, remove, whitespace, space |
-| # releases         | 2 |
-| # dependents       | 87 |
-| # downloads        | 527717261 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7.374815333333333E7 |
+| # stars            | 49.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/redent#readme)

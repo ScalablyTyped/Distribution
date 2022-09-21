@@ -92,14 +92,14 @@ object interfaceMod {
       * });
       * ```
       */
-    def uiOnParamsChanged(newValues: js.Any, DollartransitionDollar: Transition): Unit
+    def uiOnParamsChanged(newValues: Any, DollartransitionDollar: Transition): Unit
   }
   object Ng1Controller {
     
     inline def apply(
       $onInit: () => Unit,
       uiCanExit: Transition => HookResult,
-      uiOnParamsChanged: (js.Any, Transition) => Unit
+      uiOnParamsChanged: (Any, Transition) => Unit
     ): Ng1Controller = {
       val __obj = js.Dynamic.literal($onInit = js.Any.fromFunction0($onInit), uiCanExit = js.Any.fromFunction1(uiCanExit), uiOnParamsChanged = js.Any.fromFunction2(uiOnParamsChanged))
       __obj.asInstanceOf[Ng1Controller]
@@ -111,7 +111,7 @@ object interfaceMod {
       
       inline def setUiCanExit(value: Transition => HookResult): Self = StObject.set(x, "uiCanExit", js.Any.fromFunction1(value))
       
-      inline def setUiOnParamsChanged(value: (js.Any, Transition) => Unit): Self = StObject.set(x, "uiOnParamsChanged", js.Any.fromFunction2(value))
+      inline def setUiOnParamsChanged(value: (Any, Transition) => Unit): Self = StObject.set(x, "uiOnParamsChanged", js.Any.fromFunction2(value))
     }
   }
   
@@ -368,27 +368,27 @@ object interfaceMod {
       
       inline def setOnEnter(value: Ng1StateTransitionHook | IInjectable): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
       
-      inline def setOnEnterFunction1(value: /* repeated */ js.Any => HookResult): Self = StObject.set(x, "onEnter", js.Any.fromFunction1(value))
+      inline def setOnEnterFunction1(value: /* repeated */ Any => HookResult): Self = StObject.set(x, "onEnter", js.Any.fromFunction1(value))
       
       inline def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
       
-      inline def setOnEnterVarargs(value: js.Any*): Self = StObject.set(x, "onEnter", js.Array(value :_*))
+      inline def setOnEnterVarargs(value: Any*): Self = StObject.set(x, "onEnter", js.Array(value*))
       
       inline def setOnExit(value: Ng1StateTransitionHook | IInjectable): Self = StObject.set(x, "onExit", value.asInstanceOf[js.Any])
       
-      inline def setOnExitFunction1(value: /* repeated */ js.Any => HookResult): Self = StObject.set(x, "onExit", js.Any.fromFunction1(value))
+      inline def setOnExitFunction1(value: /* repeated */ Any => HookResult): Self = StObject.set(x, "onExit", js.Any.fromFunction1(value))
       
       inline def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
       
-      inline def setOnExitVarargs(value: js.Any*): Self = StObject.set(x, "onExit", js.Array(value :_*))
+      inline def setOnExitVarargs(value: Any*): Self = StObject.set(x, "onExit", js.Array(value*))
       
       inline def setOnRetain(value: Ng1StateTransitionHook | IInjectable): Self = StObject.set(x, "onRetain", value.asInstanceOf[js.Any])
       
-      inline def setOnRetainFunction1(value: /* repeated */ js.Any => HookResult): Self = StObject.set(x, "onRetain", js.Any.fromFunction1(value))
+      inline def setOnRetainFunction1(value: /* repeated */ Any => HookResult): Self = StObject.set(x, "onRetain", js.Any.fromFunction1(value))
       
       inline def setOnRetainUndefined: Self = StObject.set(x, "onRetain", js.undefined)
       
-      inline def setOnRetainVarargs(value: js.Any*): Self = StObject.set(x, "onRetain", js.Array(value :_*))
+      inline def setOnRetainVarargs(value: Any*): Self = StObject.set(x, "onRetain", js.Array(value*))
       
       inline def setViews(value: StringDictionary[String | Ng1ViewDeclaration]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
       
@@ -396,7 +396,7 @@ object interfaceMod {
     }
   }
   
-  type Ng1StateTransitionHook = js.Function1[/* repeated */ js.Any, HookResult]
+  type Ng1StateTransitionHook = js.Function1[/* repeated */ Any, HookResult]
   
   trait Ng1ViewDeclaration
     extends StObject
@@ -669,7 +669,7 @@ object interfaceMod {
       
       inline def setComponentProviderUndefined: Self = StObject.set(x, "componentProvider", js.undefined)
       
-      inline def setComponentProviderVarargs(value: js.Any*): Self = StObject.set(x, "componentProvider", js.Array(value :_*))
+      inline def setComponentProviderVarargs(value: Any*): Self = StObject.set(x, "componentProvider", js.Array(value*))
       
       inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
@@ -683,11 +683,11 @@ object interfaceMod {
       
       inline def setControllerProviderUndefined: Self = StObject.set(x, "controllerProvider", js.undefined)
       
-      inline def setControllerProviderVarargs(value: js.Any*): Self = StObject.set(x, "controllerProvider", js.Array(value :_*))
+      inline def setControllerProviderVarargs(value: Any*): Self = StObject.set(x, "controllerProvider", js.Array(value*))
       
       inline def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
       
-      inline def setControllerVarargs(value: js.Any*): Self = StObject.set(x, "controller", js.Array(value :_*))
+      inline def setControllerVarargs(value: Any*): Self = StObject.set(x, "controller", js.Array(value*))
       
       inline def setResolveAs(value: String): Self = StObject.set(x, "resolveAs", value.asInstanceOf[js.Any])
       
@@ -699,7 +699,7 @@ object interfaceMod {
       
       inline def setTemplateProviderUndefined: Self = StObject.set(x, "templateProvider", js.undefined)
       
-      inline def setTemplateProviderVarargs(value: js.Any*): Self = StObject.set(x, "templateProvider", js.Array(value :_*))
+      inline def setTemplateProviderVarargs(value: Any*): Self = StObject.set(x, "templateProvider", js.Array(value*))
       
       inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
       
@@ -732,18 +732,18 @@ object interfaceMod {
       *
       * @param useUnsafeHttpService `true` to use `$http` to fetch templates
       */
-    def useHttpService(useUnsafeHttpService: Boolean): js.Any
+    def useHttpService(useUnsafeHttpService: Boolean): Any
   }
   object TemplateFactoryProvider {
     
-    inline def apply(useHttpService: Boolean => js.Any): TemplateFactoryProvider = {
+    inline def apply(useHttpService: Boolean => Any): TemplateFactoryProvider = {
       val __obj = js.Dynamic.literal(useHttpService = js.Any.fromFunction1(useHttpService))
       __obj.asInstanceOf[TemplateFactoryProvider]
     }
     
     extension [Self <: TemplateFactoryProvider](x: Self) {
       
-      inline def setUseHttpService(value: Boolean => js.Any): Self = StObject.set(x, "useHttpService", js.Any.fromFunction1(value))
+      inline def setUseHttpService(value: Boolean => Any): Self = StObject.set(x, "useHttpService", js.Any.fromFunction1(value))
     }
   }
   
@@ -752,16 +752,16 @@ object interfaceMod {
        with StateDeclaration {
     
     @JSName("onEnter")
-    var onEnter__Ng1StateDeclaration: js.UndefOr[js.Any] = js.undefined
+    var onEnter__Ng1StateDeclaration: js.UndefOr[Any] = js.undefined
     
     @JSName("onExit")
-    var onExit__Ng1StateDeclaration: js.UndefOr[js.Any] = js.undefined
+    var onExit__Ng1StateDeclaration: js.UndefOr[Any] = js.undefined
     
     @JSName("onRetain")
-    var onRetain__Ng1StateDeclaration: js.UndefOr[js.Any] = js.undefined
+    var onRetain__Ng1StateDeclaration: js.UndefOr[Any] = js.undefined
     
     @JSName("views")
-    var views__Ng1StateDeclaration: js.UndefOr[js.Any] = js.undefined
+    var views__Ng1StateDeclaration: js.UndefOr[Any] = js.undefined
   }
   object _Ng1StateDeclaration {
     
@@ -772,19 +772,19 @@ object interfaceMod {
     
     extension [Self <: _Ng1StateDeclaration](x: Self) {
       
-      inline def setOnEnter(value: js.Any): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
+      inline def setOnEnter(value: Any): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
       
       inline def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
       
-      inline def setOnExit(value: js.Any): Self = StObject.set(x, "onExit", value.asInstanceOf[js.Any])
+      inline def setOnExit(value: Any): Self = StObject.set(x, "onExit", value.asInstanceOf[js.Any])
       
       inline def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
       
-      inline def setOnRetain(value: js.Any): Self = StObject.set(x, "onRetain", value.asInstanceOf[js.Any])
+      inline def setOnRetain(value: Any): Self = StObject.set(x, "onRetain", value.asInstanceOf[js.Any])
       
       inline def setOnRetainUndefined: Self = StObject.set(x, "onRetain", js.undefined)
       
-      inline def setViews(value: js.Any): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
+      inline def setViews(value: Any): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
       
       inline def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
     }
@@ -795,8 +795,8 @@ object interfaceMod {
     @js.native
     trait StateRegistry extends StObject {
       
-      def register(state: Instantiable): js.Any = js.native
-      def register(state: Ng1StateDeclaration): js.Any = js.native
+      def register(state: Instantiable): Any = js.native
+      def register(state: Ng1StateDeclaration): Any = js.native
     }
   }
 }

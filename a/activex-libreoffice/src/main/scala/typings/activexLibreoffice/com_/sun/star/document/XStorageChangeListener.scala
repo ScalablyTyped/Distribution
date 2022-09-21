@@ -25,7 +25,7 @@ object XStorageChangeListener {
     acquire: () => Unit,
     disposing: typings.activexLibreoffice.com_.sun.star.lang.EventObject => Unit,
     notifyStorageChange: (XInterface, XStorage) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XStorageChangeListener = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), disposing = js.Any.fromFunction1(disposing), notifyStorageChange = js.Any.fromFunction2(notifyStorageChange), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

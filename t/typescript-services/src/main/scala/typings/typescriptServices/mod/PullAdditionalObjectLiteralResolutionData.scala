@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "PullAdditionalObjectLiteralResolutionData")
 @js.native
-class PullAdditionalObjectLiteralResolutionData ()
+open class PullAdditionalObjectLiteralResolutionData ()
   extends StObject
      with typings.typescriptServices.TypeScript.PullAdditionalObjectLiteralResolutionData {
   

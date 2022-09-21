@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetMedicalTranscriptionJobRequest extends StObject {
   
   /**
-    * The name of the medical transcription job.
+    * The name of the medical transcription job you want information about. Job names are case sensitive.
     */
   var MedicalTranscriptionJobName: TranscriptionJobName
 }

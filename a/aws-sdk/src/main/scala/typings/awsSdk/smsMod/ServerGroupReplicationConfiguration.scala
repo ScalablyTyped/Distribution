@@ -33,6 +33,6 @@ object ServerGroupReplicationConfiguration {
     
     inline def setServerReplicationConfigurationsUndefined: Self = StObject.set(x, "serverReplicationConfigurations", js.undefined)
     
-    inline def setServerReplicationConfigurationsVarargs(value: ServerReplicationConfiguration*): Self = StObject.set(x, "serverReplicationConfigurations", js.Array(value :_*))
+    inline def setServerReplicationConfigurationsVarargs(value: ServerReplicationConfiguration*): Self = StObject.set(x, "serverReplicationConfigurations", js.Array(value*))
   }
 }

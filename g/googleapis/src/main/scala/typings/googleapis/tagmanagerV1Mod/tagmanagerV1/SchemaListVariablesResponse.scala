@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * List Variables Response.
-  */
 trait SchemaListVariablesResponse extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaListVariablesResponse {
     
     inline def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
     
-    inline def setVariablesVarargs(value: SchemaVariable*): Self = StObject.set(x, "variables", js.Array(value :_*))
+    inline def setVariablesVarargs(value: SchemaVariable*): Self = StObject.set(x, "variables", js.Array(value*))
   }
 }

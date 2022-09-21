@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("monaco-editor", "Range")
 @js.native
-class Range protected () extends StObject {
+open class Range protected () extends StObject {
   def this(startLineNumber: Double, startColumn: Double, endLineNumber: Double, endColumn: Double) = this()
   
   /**
@@ -90,6 +90,8 @@ class Range protected () extends StObject {
     * Test if `range` is strictly in this range. `range` must start after and end before this range for the result to be true.
     */
   def strictContainsRange(range: IRange): Boolean = js.native
+  
+  def toJSON(): IRange = js.native
 }
 /* static members */
 object Range {
@@ -173,13 +175,17 @@ object Range {
   /**
     * Test if `obj` is an `IRange`.
     */
-  inline def isIRange(obj: js.Any): /* is monaco-editor.monaco-editor.IRange */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIRange")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is monaco-editor.monaco-editor.IRange */ Boolean]
+  inline def isIRange(obj: Any): /* is monaco-editor.monaco-editor.IRange */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIRange")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is monaco-editor.monaco-editor.IRange */ Boolean]
   
   /**
     * Create a `Range` from an `IRange`.
     */
   inline def lift(): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("lift")().asInstanceOf[Null]
-  inline def lift(range: IRange): Range = ^.asInstanceOf[js.Dynamic].applyDynamic("lift")(range.asInstanceOf[js.Any]).asInstanceOf[Range]
+  inline def lift(range: IRange): Range | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("lift")(range.asInstanceOf[js.Any]).asInstanceOf[Range | Null]
+  
+  inline def lift_Range(range: IRange): Range = ^.asInstanceOf[js.Dynamic].applyDynamic("lift")(range.asInstanceOf[js.Any]).asInstanceOf[Range]
+  
+  inline def lift_Union(): Range | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("lift")().asInstanceOf[Range | Null]
   
   /**
     * A reunion of the two ranges.
@@ -193,7 +199,7 @@ object Range {
   inline def spansMultipleLines(range: IRange): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("spansMultipleLines")(range.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
-    * Test if `otherRange` is strinctly in `range` (must start after, and end before). If the ranges are equal, will return false.
+    * Test if `otherRange` is strictly in `range` (must start after, and end before). If the ranges are equal, will return false.
     */
   inline def strictContainsRange(range: IRange, otherRange: IRange): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("strictContainsRange")(range.asInstanceOf[js.Any], otherRange.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

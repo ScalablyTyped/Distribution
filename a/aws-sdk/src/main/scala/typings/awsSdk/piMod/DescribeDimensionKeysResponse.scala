@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeDimensionKeysResponse extends StObject {
   
   /**
-    * The end time for the returned dimension keys, after alignment to a granular boundary (as specified by PeriodInSeconds). AlignedEndTime will be greater than or equal to the value of the user-specified Endtime.
+    * The end time for the returned dimension keys, after alignment to a granular boundary (as specified by PeriodInSeconds). AlignedEndTime will be greater than or equal to the value of the user-specified Endtime. 
     */
-  var AlignedEndTime: js.UndefOr[ISOTimestamp] = js.undefined
+  var AlignedEndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The start time for the returned dimension keys, after alignment to a granular boundary (as specified by PeriodInSeconds). AlignedStartTime will be less than or equal to the value of the user-specified StartTime.
+    * The start time for the returned dimension keys, after alignment to a granular boundary (as specified by PeriodInSeconds). AlignedStartTime will be less than or equal to the value of the user-specified StartTime. 
     */
-  var AlignedStartTime: js.UndefOr[ISOTimestamp] = js.undefined
+  var AlignedStartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The dimension keys that were requested.
@@ -22,12 +22,12 @@ trait DescribeDimensionKeysResponse extends StObject {
   var Keys: js.UndefOr[DimensionKeyDescriptionList] = js.undefined
   
   /**
-    * An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the token, up to the value specified by MaxRecords.
+    * A pagination token that indicates the response didn’t return all available records because MaxRecords was specified in the previous request. To get the remaining records, specify NextToken in a separate request with this value. 
     */
-  var NextToken: js.UndefOr[String] = js.undefined
+  var NextToken: js.UndefOr[typings.awsSdk.piMod.NextToken] = js.undefined
   
   /**
-    * If PartitionBy was present in the request, PartitionKeys contains the breakdown of dimension keys by the specified partitions.
+    * If PartitionBy was present in the request, PartitionKeys contains the breakdown of dimension keys by the specified partitions. 
     */
   var PartitionKeys: js.UndefOr[ResponsePartitionKeyList] = js.undefined
 }
@@ -40,11 +40,11 @@ object DescribeDimensionKeysResponse {
   
   extension [Self <: DescribeDimensionKeysResponse](x: Self) {
     
-    inline def setAlignedEndTime(value: ISOTimestamp): Self = StObject.set(x, "AlignedEndTime", value.asInstanceOf[js.Any])
+    inline def setAlignedEndTime(value: js.Date): Self = StObject.set(x, "AlignedEndTime", value.asInstanceOf[js.Any])
     
     inline def setAlignedEndTimeUndefined: Self = StObject.set(x, "AlignedEndTime", js.undefined)
     
-    inline def setAlignedStartTime(value: ISOTimestamp): Self = StObject.set(x, "AlignedStartTime", value.asInstanceOf[js.Any])
+    inline def setAlignedStartTime(value: js.Date): Self = StObject.set(x, "AlignedStartTime", value.asInstanceOf[js.Any])
     
     inline def setAlignedStartTimeUndefined: Self = StObject.set(x, "AlignedStartTime", js.undefined)
     
@@ -52,9 +52,9 @@ object DescribeDimensionKeysResponse {
     
     inline def setKeysUndefined: Self = StObject.set(x, "Keys", js.undefined)
     
-    inline def setKeysVarargs(value: DimensionKeyDescription*): Self = StObject.set(x, "Keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: DimensionKeyDescription*): Self = StObject.set(x, "Keys", js.Array(value*))
     
-    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
@@ -62,6 +62,6 @@ object DescribeDimensionKeysResponse {
     
     inline def setPartitionKeysUndefined: Self = StObject.set(x, "PartitionKeys", js.undefined)
     
-    inline def setPartitionKeysVarargs(value: ResponsePartitionKey*): Self = StObject.set(x, "PartitionKeys", js.Array(value :_*))
+    inline def setPartitionKeysVarargs(value: ResponsePartitionKey*): Self = StObject.set(x, "PartitionKeys", js.Array(value*))
   }
 }

@@ -9,8 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FindParametersConstructor
   extends StObject
-     with Instantiable0[FindParameters]
+     with /**
+  * Input parameters for [find](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-find.html).
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-FindParameters.html)
+  */
+Instantiable0[FindParameters]
      with Instantiable1[/* properties */ FindParametersProperties, FindParameters] {
   
-  def fromJSON(json: js.Any): FindParameters = js.native
+  def fromJSON(json: Any): FindParameters = js.native
 }

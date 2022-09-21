@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.ChartColorFormat")
 @js.native
-/* private */ class ChartColorFormat ()
+/* private */ open class ChartColorFormat ()
   extends StObject
      with typings.activexExcel.Excel.ChartColorFormat {
   
@@ -22,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var ExcelDotChartColorFormat_typekey: typings.activexExcel.Excel.ChartColorFormat = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val RGB: Double = js.native

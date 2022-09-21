@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss-nested
 
-Typings are for version 5.0.1
+Typings are for version 5.0.6
 
 ## Library description:
 PostCSS plugin to unwrap nested rules like how Sass does it
@@ -10,10 +10,10 @@ PostCSS plugin to unwrap nested rules like how Sass does it
 | ------------------ | :-------------: |
 | Full name          | postcss-nested |
 | Keywords           | postcss, css, postcss-plugin, sass, nested |
-| # releases         | 10 |
-| # dependents       | 504 |
-| # downloads        | 31232944 |
-| # stars            | 7 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 1.3718411E7 |
+| # stars            | 987.0 |
 
 ## Links
 - [Homepage](https://github.com/postcss/postcss-nested#readme)

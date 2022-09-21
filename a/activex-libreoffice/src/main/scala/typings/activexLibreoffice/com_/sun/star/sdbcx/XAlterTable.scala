@@ -35,7 +35,7 @@ object XAlterTable {
     acquire: () => Unit,
     alterColumnByIndex: (Double, XPropertySet) => Unit,
     alterColumnByName: (String, XPropertySet) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XAlterTable = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), alterColumnByIndex = js.Any.fromFunction2(alterColumnByIndex), alterColumnByName = js.Any.fromFunction2(alterColumnByName), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

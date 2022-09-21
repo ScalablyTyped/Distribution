@@ -14,17 +14,17 @@ trait MVCxClientBeforeExportRequestEventArgs
   /**
     * Gets an object containing specific information (if any, as name/value pairs) that should be passed as a request parameter from the client to the server side for further processing.
     */
-  var customArgs: js.Any
+  var customArgs: Any
 }
 object MVCxClientBeforeExportRequestEventArgs {
   
-  inline def apply(customArgs: js.Any): MVCxClientBeforeExportRequestEventArgs = {
+  inline def apply(customArgs: Any): MVCxClientBeforeExportRequestEventArgs = {
     val __obj = js.Dynamic.literal(customArgs = customArgs.asInstanceOf[js.Any])
     __obj.asInstanceOf[MVCxClientBeforeExportRequestEventArgs]
   }
   
   extension [Self <: MVCxClientBeforeExportRequestEventArgs](x: Self) {
     
-    inline def setCustomArgs(value: js.Any): Self = StObject.set(x, "customArgs", value.asInstanceOf[js.Any])
+    inline def setCustomArgs(value: Any): Self = StObject.set(x, "customArgs", value.asInstanceOf[js.Any])
   }
 }

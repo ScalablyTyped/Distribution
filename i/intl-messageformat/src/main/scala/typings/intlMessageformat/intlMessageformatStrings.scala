@@ -1,6 +1,5 @@
 package typings.intlMessageformat
 
-import typings.intlMessageformat.srcErrorMod.ErrorCode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,23 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object intlMessageformatStrings {
   
   @js.native
-  sealed trait INVALID_VALUE
-    extends StObject
-       with ErrorCode
-       with typings.intlMessageformat.errorMod.ErrorCode
-  inline def INVALID_VALUE: INVALID_VALUE = "INVALID_VALUE".asInstanceOf[INVALID_VALUE]
+  sealed trait date extends StObject
+  inline def date: date = "date".asInstanceOf[date]
   
   @js.native
-  sealed trait MISSING_INTL_API
-    extends StObject
-       with ErrorCode
-       with typings.intlMessageformat.errorMod.ErrorCode
-  inline def MISSING_INTL_API: MISSING_INTL_API = "MISSING_INTL_API".asInstanceOf[MISSING_INTL_API]
+  sealed trait number extends StObject
+  inline def number: number = "number".asInstanceOf[number]
   
   @js.native
-  sealed trait MISSING_VALUE
-    extends StObject
-       with ErrorCode
-       with typings.intlMessageformat.errorMod.ErrorCode
-  inline def MISSING_VALUE: MISSING_VALUE = "MISSING_VALUE".asInstanceOf[MISSING_VALUE]
+  sealed trait time extends StObject
+  inline def time: time = "time".asInstanceOf[time]
 }

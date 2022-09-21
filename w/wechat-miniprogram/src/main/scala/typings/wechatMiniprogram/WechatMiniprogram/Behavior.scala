@@ -1,7 +1,6 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
 import typings.std.Record
 import typings.wechatMiniprogram.WechatMiniprogram.Component.RelationOption
 import typings.wechatMiniprogram.anon.PartialILifetime
@@ -50,7 +49,9 @@ object Behavior {
     
     var detached: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var error: js.UndefOr[js.Function1[/* err */ Error, Unit]] = js.undefined
+    var error: js.UndefOr[js.Function1[/* err */ js.Error, Unit]] = js.undefined
+    
+    var `export`: js.UndefOr[js.Function0[IAnyObject]] = js.undefined
     
     var externalClasses: js.UndefOr[js.Array[String]] = js.undefined
     
@@ -60,7 +61,7 @@ object Behavior {
     
     var moved: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var observers: js.UndefOr[Record[String, js.Function1[/* repeated */ js.Any, js.Any]]] = js.undefined
+    var observers: js.UndefOr[Record[String, js.Function1[/* repeated */ Any, Any]]] = js.undefined
     
     var pageLifetimes: js.UndefOr[PartialPageLifetimes] = js.undefined
     
@@ -87,7 +88,7 @@ object Behavior {
       
       inline def setBehaviorsUndefined: Self = StObject.set(x, "behaviors", js.undefined)
       
-      inline def setBehaviorsVarargs(value: BehaviorIdentifier*): Self = StObject.set(x, "behaviors", js.Array(value :_*))
+      inline def setBehaviorsVarargs(value: BehaviorIdentifier*): Self = StObject.set(x, "behaviors", js.Array(value*))
       
       inline def setCreated(value: () => Unit): Self = StObject.set(x, "created", js.Any.fromFunction0(value))
       
@@ -97,13 +98,7 @@ object Behavior {
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDefinitionFilter(
-        value: (/* defFields */ typings.wechatMiniprogram.WechatMiniprogram.Component.TrivialOption, /* definitionFilterArr */ js.UndefOr[
-              js.Array[
-                /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias wechat-miniprogram.WechatMiniprogram.Component.DefinitionFilter */ js.Object
-              ]
-            ]) => Unit
-      ): Self = StObject.set(x, "definitionFilter", js.Any.fromFunction2(value))
+      inline def setDefinitionFilter(value: typings.wechatMiniprogram.WechatMiniprogram.Component.DefinitionFilter): Self = StObject.set(x, "definitionFilter", value.asInstanceOf[js.Any])
       
       inline def setDefinitionFilterUndefined: Self = StObject.set(x, "definitionFilter", js.undefined)
       
@@ -111,15 +106,19 @@ object Behavior {
       
       inline def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
       
-      inline def setError(value: /* err */ Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* err */ js.Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      
+      inline def setExport(value: () => IAnyObject): Self = StObject.set(x, "export", js.Any.fromFunction0(value))
+      
+      inline def setExportUndefined: Self = StObject.set(x, "export", js.undefined)
       
       inline def setExternalClasses(value: js.Array[String]): Self = StObject.set(x, "externalClasses", value.asInstanceOf[js.Any])
       
       inline def setExternalClassesUndefined: Self = StObject.set(x, "externalClasses", js.undefined)
       
-      inline def setExternalClassesVarargs(value: String*): Self = StObject.set(x, "externalClasses", js.Array(value :_*))
+      inline def setExternalClassesVarargs(value: String*): Self = StObject.set(x, "externalClasses", js.Array(value*))
       
       inline def setLifetimes(value: Partialcreatedvoidattache): Self = StObject.set(x, "lifetimes", value.asInstanceOf[js.Any])
       
@@ -133,7 +132,7 @@ object Behavior {
       
       inline def setMovedUndefined: Self = StObject.set(x, "moved", js.undefined)
       
-      inline def setObservers(value: Record[String, js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "observers", value.asInstanceOf[js.Any])
+      inline def setObservers(value: Record[String, js.Function1[/* repeated */ Any, Any]]): Self = StObject.set(x, "observers", value.asInstanceOf[js.Any])
       
       inline def setObserversUndefined: Self = StObject.set(x, "observers", js.undefined)
       
@@ -162,9 +161,13 @@ object Behavior {
     
     var definitionFilter: js.UndefOr[typings.wechatMiniprogram.WechatMiniprogram.Component.DefinitionFilter] = js.undefined
     
+    def `export`(): IAnyObject
+    @JSName("export")
+    var export_Original: js.Function0[IAnyObject]
+    
     var externalClasses: js.UndefOr[js.Array[String]] = js.undefined
     
-    var observers: Record[String, js.Function1[/* repeated */ js.Any, js.Any]]
+    var observers: Record[String, js.Function1[/* repeated */ Any, Any]]
     
     var pageLifetimes: js.UndefOr[PartialPageLifetimes] = js.undefined
     
@@ -174,10 +177,12 @@ object Behavior {
     
     inline def apply(
       behaviors: js.Array[BehaviorIdentifier],
-      observers: Record[String, js.Function1[/* repeated */ js.Any, js.Any]],
+      `export`: () => IAnyObject,
+      observers: Record[String, js.Function1[/* repeated */ Any, Any]],
       relations: StringDictionary[RelationOption]
     ): OtherOption = {
       val __obj = js.Dynamic.literal(behaviors = behaviors.asInstanceOf[js.Any], observers = observers.asInstanceOf[js.Any], relations = relations.asInstanceOf[js.Any])
+      __obj.updateDynamic("export")(js.Any.fromFunction0(`export`))
       __obj.asInstanceOf[OtherOption]
     }
     
@@ -185,25 +190,21 @@ object Behavior {
       
       inline def setBehaviors(value: js.Array[BehaviorIdentifier]): Self = StObject.set(x, "behaviors", value.asInstanceOf[js.Any])
       
-      inline def setBehaviorsVarargs(value: BehaviorIdentifier*): Self = StObject.set(x, "behaviors", js.Array(value :_*))
+      inline def setBehaviorsVarargs(value: BehaviorIdentifier*): Self = StObject.set(x, "behaviors", js.Array(value*))
       
-      inline def setDefinitionFilter(
-        value: (/* defFields */ typings.wechatMiniprogram.WechatMiniprogram.Component.TrivialOption, /* definitionFilterArr */ js.UndefOr[
-              js.Array[
-                /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias wechat-miniprogram.WechatMiniprogram.Component.DefinitionFilter */ js.Object
-              ]
-            ]) => Unit
-      ): Self = StObject.set(x, "definitionFilter", js.Any.fromFunction2(value))
+      inline def setDefinitionFilter(value: typings.wechatMiniprogram.WechatMiniprogram.Component.DefinitionFilter): Self = StObject.set(x, "definitionFilter", value.asInstanceOf[js.Any])
       
       inline def setDefinitionFilterUndefined: Self = StObject.set(x, "definitionFilter", js.undefined)
+      
+      inline def setExport(value: () => IAnyObject): Self = StObject.set(x, "export", js.Any.fromFunction0(value))
       
       inline def setExternalClasses(value: js.Array[String]): Self = StObject.set(x, "externalClasses", value.asInstanceOf[js.Any])
       
       inline def setExternalClassesUndefined: Self = StObject.set(x, "externalClasses", js.undefined)
       
-      inline def setExternalClassesVarargs(value: String*): Self = StObject.set(x, "externalClasses", js.Array(value :_*))
+      inline def setExternalClassesVarargs(value: String*): Self = StObject.set(x, "externalClasses", js.Array(value*))
       
-      inline def setObservers(value: Record[String, js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "observers", value.asInstanceOf[js.Any])
+      inline def setObservers(value: Record[String, js.Function1[/* repeated */ Any, Any]]): Self = StObject.set(x, "observers", value.asInstanceOf[js.Any])
       
       inline def setPageLifetimes(value: PartialPageLifetimes): Self = StObject.set(x, "pageLifetimes", value.asInstanceOf[js.Any])
       
@@ -234,7 +235,9 @@ object Behavior {
     
     var detached: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var error: js.UndefOr[js.Function1[/* err */ Error, Unit]] = js.undefined
+    var error: js.UndefOr[js.Function1[/* err */ js.Error, Unit]] = js.undefined
+    
+    var `export`: js.UndefOr[js.Function0[IAnyObject]] = js.undefined
     
     var externalClasses: js.UndefOr[js.Array[String]] = js.undefined
     
@@ -244,7 +247,7 @@ object Behavior {
     
     var moved: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var observers: js.UndefOr[Record[String, js.Function1[/* repeated */ js.Any, js.Any]]] = js.undefined
+    var observers: js.UndefOr[Record[String, js.Function1[/* repeated */ Any, Any]]] = js.undefined
     
     var pageLifetimes: js.UndefOr[PartialPageLifetimes] = js.undefined
     
@@ -271,7 +274,7 @@ object Behavior {
       
       inline def setBehaviorsUndefined: Self = StObject.set(x, "behaviors", js.undefined)
       
-      inline def setBehaviorsVarargs(value: BehaviorIdentifier*): Self = StObject.set(x, "behaviors", js.Array(value :_*))
+      inline def setBehaviorsVarargs(value: BehaviorIdentifier*): Self = StObject.set(x, "behaviors", js.Array(value*))
       
       inline def setCreated(value: () => Unit): Self = StObject.set(x, "created", js.Any.fromFunction0(value))
       
@@ -281,13 +284,7 @@ object Behavior {
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDefinitionFilter(
-        value: (/* defFields */ typings.wechatMiniprogram.WechatMiniprogram.Component.TrivialOption, /* definitionFilterArr */ js.UndefOr[
-              js.Array[
-                /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias wechat-miniprogram.WechatMiniprogram.Component.DefinitionFilter */ js.Object
-              ]
-            ]) => Unit
-      ): Self = StObject.set(x, "definitionFilter", js.Any.fromFunction2(value))
+      inline def setDefinitionFilter(value: typings.wechatMiniprogram.WechatMiniprogram.Component.DefinitionFilter): Self = StObject.set(x, "definitionFilter", value.asInstanceOf[js.Any])
       
       inline def setDefinitionFilterUndefined: Self = StObject.set(x, "definitionFilter", js.undefined)
       
@@ -295,15 +292,19 @@ object Behavior {
       
       inline def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
       
-      inline def setError(value: /* err */ Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* err */ js.Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      
+      inline def setExport(value: () => IAnyObject): Self = StObject.set(x, "export", js.Any.fromFunction0(value))
+      
+      inline def setExportUndefined: Self = StObject.set(x, "export", js.undefined)
       
       inline def setExternalClasses(value: js.Array[String]): Self = StObject.set(x, "externalClasses", value.asInstanceOf[js.Any])
       
       inline def setExternalClassesUndefined: Self = StObject.set(x, "externalClasses", js.undefined)
       
-      inline def setExternalClassesVarargs(value: String*): Self = StObject.set(x, "externalClasses", js.Array(value :_*))
+      inline def setExternalClassesVarargs(value: String*): Self = StObject.set(x, "externalClasses", js.Array(value*))
       
       inline def setLifetimes(value: Partialcreatedvoidattache): Self = StObject.set(x, "lifetimes", value.asInstanceOf[js.Any])
       
@@ -317,7 +318,7 @@ object Behavior {
       
       inline def setMovedUndefined: Self = StObject.set(x, "moved", js.undefined)
       
-      inline def setObservers(value: Record[String, js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "observers", value.asInstanceOf[js.Any])
+      inline def setObservers(value: Record[String, js.Function1[/* repeated */ Any, Any]]): Self = StObject.set(x, "observers", value.asInstanceOf[js.Any])
       
       inline def setObserversUndefined: Self = StObject.set(x, "observers", js.undefined)
       

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LockScreenActivatedEventArgs extends StObject {
   
   /** Gets an object that allows an app that is activated as the lock screen to get the same data that the default lock screen can access, and to register for updates to that data. */
-  var info: js.Any
+  var info: Any
   
   /** Gets the reason for the activation of the app for this event. */
   var kind: ActivationKind
@@ -22,7 +22,7 @@ trait LockScreenActivatedEventArgs extends StObject {
 object LockScreenActivatedEventArgs {
   
   inline def apply(
-    info: js.Any,
+    info: Any,
     kind: ActivationKind,
     previousExecutionState: ApplicationExecutionState,
     splashScreen: SplashScreen
@@ -33,7 +33,7 @@ object LockScreenActivatedEventArgs {
   
   extension [Self <: LockScreenActivatedEventArgs](x: Self) {
     
-    inline def setInfo(value: js.Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
     inline def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

@@ -7,10 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait AnimationEffect extends StObject {
   
+  /* standard dom */
   def getComputedTiming(): ComputedEffectTiming = js.native
   
+  /* standard dom */
   def getTiming(): EffectTiming = js.native
   
+  /* standard dom */
   def updateTiming(): Unit = js.native
   def updateTiming(timing: OptionalEffectTiming): Unit = js.native
 }

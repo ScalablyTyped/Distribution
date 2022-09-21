@@ -10,7 +10,7 @@ trait Data extends StObject {
   
   var iconURL: js.UndefOr[String] = js.undefined
   
-  var onClick: js.UndefOr[js.Function1[/* data */ String, js.Any]] = js.undefined
+  var onClick: js.UndefOr[js.Function1[/* data */ String, Any]] = js.undefined
   
   var text: js.UndefOr[String] = js.undefined
   
@@ -33,7 +33,7 @@ object Data {
     
     inline def setIconURLUndefined: Self = StObject.set(x, "iconURL", js.undefined)
     
-    inline def setOnClick(value: /* data */ String => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(value: /* data */ String => Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     

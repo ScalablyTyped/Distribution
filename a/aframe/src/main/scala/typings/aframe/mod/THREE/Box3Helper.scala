@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("aframe", "THREE.Box3Helper")
 @js.native
-class Box3Helper protected ()
+open class Box3Helper protected ()
   extends typings.three.mod.Box3Helper {
   /**
-  	 * @param box
-  	 * @param [color=0xffff00]
-  	 */
+    * @param box
+    * @param [color=0xffff00]
+    */
   def this(box: typings.three.box3Mod.Box3) = this()
 }

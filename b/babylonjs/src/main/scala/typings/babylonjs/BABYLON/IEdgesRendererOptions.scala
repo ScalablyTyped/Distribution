@@ -21,11 +21,17 @@ trait IEdgesRendererOptions extends StObject {
   var epsilonVertexAligned: js.UndefOr[Double] = js.undefined
   
   /**
-    * During edges processing, the vertices are merged if they are close enough: epsilonVertexMerge is the limit whithin which vertices are considered to be equal.
+    * During edges processing, the vertices are merged if they are close enough: epsilonVertexMerge is the limit within which vertices are considered to be equal.
     * The default value is 1e-6
     * This option is used only if useAlternateEdgeFinder = true
     */
   var epsilonVertexMerge: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Gets or sets a boolean indicating that degenerated triangles should not be processed.
+    * Degenerated triangles are triangles that have 2 or 3 vertices with the same coordinates
+    */
+  var removeDegeneratedTriangles: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets or sets a boolean indicating that the alternate edge finder algorithm must be used
@@ -61,6 +67,10 @@ object IEdgesRendererOptions {
     inline def setEpsilonVertexMerge(value: Double): Self = StObject.set(x, "epsilonVertexMerge", value.asInstanceOf[js.Any])
     
     inline def setEpsilonVertexMergeUndefined: Self = StObject.set(x, "epsilonVertexMerge", js.undefined)
+    
+    inline def setRemoveDegeneratedTriangles(value: Boolean): Self = StObject.set(x, "removeDegeneratedTriangles", value.asInstanceOf[js.Any])
+    
+    inline def setRemoveDegeneratedTrianglesUndefined: Self = StObject.set(x, "removeDegeneratedTriangles", js.undefined)
     
     inline def setUseAlternateEdgeFinder(value: Boolean): Self = StObject.set(x, "useAlternateEdgeFinder", value.asInstanceOf[js.Any])
     

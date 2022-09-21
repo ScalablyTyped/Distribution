@@ -6,11 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CustomPartitionAssignmentProtocol extends StObject {
   
-  def assign(
-    topicPattern: js.Any,
-    groupMembers: js.Any,
-    cb: js.Function2[/* error */ js.Any, /* result */ js.Any, Unit]
-  ): Unit
+  def assign(topicPattern: Any, groupMembers: Any, cb: js.Function2[/* error */ Any, /* result */ Any, Unit]): Unit
   
   var name: String
   
@@ -19,7 +15,7 @@ trait CustomPartitionAssignmentProtocol extends StObject {
 object CustomPartitionAssignmentProtocol {
   
   inline def apply(
-    assign: (js.Any, js.Any, js.Function2[/* error */ js.Any, /* result */ js.Any, Unit]) => Unit,
+    assign: (Any, Any, js.Function2[/* error */ Any, /* result */ Any, Unit]) => Unit,
     name: String,
     version: Double
   ): CustomPartitionAssignmentProtocol = {
@@ -29,7 +25,7 @@ object CustomPartitionAssignmentProtocol {
   
   extension [Self <: CustomPartitionAssignmentProtocol](x: Self) {
     
-    inline def setAssign(value: (js.Any, js.Any, js.Function2[/* error */ js.Any, /* result */ js.Any, Unit]) => Unit): Self = StObject.set(x, "assign", js.Any.fromFunction3(value))
+    inline def setAssign(value: (Any, Any, js.Function2[/* error */ Any, /* result */ Any, Unit]) => Unit): Self = StObject.set(x, "assign", js.Any.fromFunction3(value))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

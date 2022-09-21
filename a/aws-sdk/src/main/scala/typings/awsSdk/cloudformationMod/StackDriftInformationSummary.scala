@@ -9,10 +9,10 @@ trait StackDriftInformationSummary extends StObject {
   /**
     * Most recent time when a drift detection operation was initiated on the stack, or any of its individual resources that support drift detection.
     */
-  var LastCheckTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var LastCheckTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * Status of the stack's actual configuration compared to its expected template configuration.     DRIFTED: The stack differs from its expected template configuration. A stack is considered to have drifted if one or more of its resources have drifted.    NOT_CHECKED: AWS CloudFormation has not checked if the stack differs from its expected template configuration.    IN_SYNC: The stack's actual configuration matches its expected template configuration.    UNKNOWN: This value is reserved for future use.  
+    * Status of the stack's actual configuration compared to its expected template configuration.    DRIFTED: The stack differs from its expected template configuration. A stack is considered to have drifted if one or more of its resources have drifted.    NOT_CHECKED: CloudFormation hasn't checked if the stack differs from its expected template configuration.    IN_SYNC: The stack's actual configuration matches its expected template configuration.    UNKNOWN: This value is reserved for future use.  
     */
   var StackDriftStatus: typings.awsSdk.cloudformationMod.StackDriftStatus
 }
@@ -25,7 +25,7 @@ object StackDriftInformationSummary {
   
   extension [Self <: StackDriftInformationSummary](x: Self) {
     
-    inline def setLastCheckTimestamp(value: Timestamp): Self = StObject.set(x, "LastCheckTimestamp", value.asInstanceOf[js.Any])
+    inline def setLastCheckTimestamp(value: js.Date): Self = StObject.set(x, "LastCheckTimestamp", value.asInstanceOf[js.Any])
     
     inline def setLastCheckTimestampUndefined: Self = StObject.set(x, "LastCheckTimestamp", js.undefined)
     

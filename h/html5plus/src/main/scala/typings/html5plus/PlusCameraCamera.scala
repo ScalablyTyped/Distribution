@@ -22,13 +22,10 @@ trait PlusCameraCamera extends StObject {
     */
   def captureImage(): Unit = js.native
   def captureImage(successCB: js.Function1[/* result */ String, Unit]): Unit = js.native
+  def captureImage(successCB: js.Function1[/* result */ String, Unit], errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def captureImage(
     successCB: js.Function1[/* result */ String, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def captureImage(
-    successCB: js.Function1[/* result */ String, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit],
+    errorCB: js.Function1[/* result */ Any, Unit],
     options: PlusCameraCameraOptions
   ): Unit = js.native
   def captureImage(
@@ -36,12 +33,8 @@ trait PlusCameraCamera extends StObject {
     errorCB: Unit,
     options: PlusCameraCameraOptions
   ): Unit = js.native
-  def captureImage(successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def captureImage(
-    successCB: Unit,
-    errorCB: js.Function1[/* result */ js.Any, Unit],
-    options: PlusCameraCameraOptions
-  ): Unit = js.native
+  def captureImage(successCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
+  def captureImage(successCB: Unit, errorCB: js.Function1[/* result */ Any, Unit], options: PlusCameraCameraOptions): Unit = js.native
   def captureImage(successCB: Unit, errorCB: Unit, options: PlusCameraCameraOptions): Unit = js.native
   
   /**
@@ -54,18 +47,15 @@ trait PlusCameraCamera extends StObject {
     */
   def startVideoCapture(): Unit = js.native
   def startVideoCapture(successCB: js.Function1[/* result */ String, Unit]): Unit = js.native
+  def startVideoCapture(successCB: js.Function1[/* result */ String, Unit], errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def startVideoCapture(
     successCB: js.Function1[/* result */ String, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def startVideoCapture(
-    successCB: js.Function1[/* result */ String, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit],
+    errorCB: js.Function1[/* result */ Any, Unit],
     option: PlusCameraCameraOptions
   ): Unit = js.native
   def startVideoCapture(successCB: js.Function1[/* result */ String, Unit], errorCB: Unit, option: PlusCameraCameraOptions): Unit = js.native
-  def startVideoCapture(successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def startVideoCapture(successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit], option: PlusCameraCameraOptions): Unit = js.native
+  def startVideoCapture(successCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
+  def startVideoCapture(successCB: Unit, errorCB: js.Function1[/* result */ Any, Unit], option: PlusCameraCameraOptions): Unit = js.native
   def startVideoCapture(successCB: Unit, errorCB: Unit, option: PlusCameraCameraOptions): Unit = js.native
   
   /**
@@ -85,7 +75,7 @@ trait PlusCameraCamera extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/camera.html](http://www.html5plus.org/doc/zh_cn/camera.html)
     */
-  var supportedImageFormats: js.UndefOr[js.Array[js.Any]] = js.native
+  var supportedImageFormats: js.UndefOr[js.Array[Any]] = js.native
   
   /**
     * 字符串数组，摄像头支持的拍照分辨率
@@ -94,7 +84,7 @@ trait PlusCameraCamera extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/camera.html](http://www.html5plus.org/doc/zh_cn/camera.html)
     */
-  var supportedImageResolutions: js.UndefOr[js.Array[js.Any]] = js.native
+  var supportedImageResolutions: js.UndefOr[js.Array[Any]] = js.native
   
   /**
     * 字符串数组，摄像头支持的摄像文件格式
@@ -103,7 +93,7 @@ trait PlusCameraCamera extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/camera.html](http://www.html5plus.org/doc/zh_cn/camera.html)
     */
-  var supportedVideoFormats: js.UndefOr[js.Array[js.Any]] = js.native
+  var supportedVideoFormats: js.UndefOr[js.Array[Any]] = js.native
   
   /**
     * 字符串数组，摄像头支持的摄像分辨率
@@ -112,5 +102,5 @@ trait PlusCameraCamera extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/camera.html](http://www.html5plus.org/doc/zh_cn/camera.html)
     */
-  var supportedVideoResolutions: js.UndefOr[js.Array[js.Any]] = js.native
+  var supportedVideoResolutions: js.UndefOr[js.Array[Any]] = js.native
 }

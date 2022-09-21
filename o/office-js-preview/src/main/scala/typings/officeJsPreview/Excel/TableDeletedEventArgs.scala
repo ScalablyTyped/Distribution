@@ -8,49 +8,49 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Provides information about the table that raised the deleted event.
   *
-  * Provides information about the table that raised the OnDeleted event.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 trait TableDeletedEventArgs extends StObject {
   
   /**
+    * Gets the source of the event. See `Excel.EventSource` for details.
     *
-    * Gets the source of the event. See Excel.EventSource for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var source: EventSource | Local | Remote
   
   /**
+    * Gets the ID of the table that is deleted.
     *
-    * Gets the id of the table that is deleted.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var tableId: String
   
   /**
-    *
     * Gets the name of the table that is deleted.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var tableName: String
   
   /**
+    * Gets the type of the event. See `Excel.EventType` for details.
     *
-    * Gets the type of the event. See Excel.EventType for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var `type`: TableDeleted
   
   /**
+    * Gets the ID of the worksheet in which the table is deleted.
     *
-    * Gets the id of the worksheet in which the table is deleted.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var worksheetId: String

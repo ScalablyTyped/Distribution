@@ -51,25 +51,25 @@ object ConversionDimensions {
     
     inline def setActivityFiltersUndefined: Self = StObject.set(x, "activityFilters", js.undefined)
     
-    inline def setActivityFiltersVarargs(value: DimensionValue*): Self = StObject.set(x, "activityFilters", js.Array(value :_*))
+    inline def setActivityFiltersVarargs(value: DimensionValue*): Self = StObject.set(x, "activityFilters", js.Array(value*))
     
     inline def setConversionDimensions(value: js.Array[SortedDimension]): Self = StObject.set(x, "conversionDimensions", value.asInstanceOf[js.Any])
     
     inline def setConversionDimensionsUndefined: Self = StObject.set(x, "conversionDimensions", js.undefined)
     
-    inline def setConversionDimensionsVarargs(value: SortedDimension*): Self = StObject.set(x, "conversionDimensions", js.Array(value :_*))
+    inline def setConversionDimensionsVarargs(value: SortedDimension*): Self = StObject.set(x, "conversionDimensions", js.Array(value*))
     
     inline def setCustomFloodlightVariables(value: js.Array[SortedDimension]): Self = StObject.set(x, "customFloodlightVariables", value.asInstanceOf[js.Any])
     
     inline def setCustomFloodlightVariablesUndefined: Self = StObject.set(x, "customFloodlightVariables", js.undefined)
     
-    inline def setCustomFloodlightVariablesVarargs(value: SortedDimension*): Self = StObject.set(x, "customFloodlightVariables", js.Array(value :_*))
+    inline def setCustomFloodlightVariablesVarargs(value: SortedDimension*): Self = StObject.set(x, "customFloodlightVariables", js.Array(value*))
     
     inline def setCustomRichMediaEvents(value: js.Array[DimensionValue]): Self = StObject.set(x, "customRichMediaEvents", value.asInstanceOf[js.Any])
     
     inline def setCustomRichMediaEventsUndefined: Self = StObject.set(x, "customRichMediaEvents", js.undefined)
     
-    inline def setCustomRichMediaEventsVarargs(value: DimensionValue*): Self = StObject.set(x, "customRichMediaEvents", js.Array(value :_*))
+    inline def setCustomRichMediaEventsVarargs(value: DimensionValue*): Self = StObject.set(x, "customRichMediaEvents", js.Array(value*))
     
     inline def setDateRange(value: typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting.DateRange): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
     
@@ -83,13 +83,13 @@ object ConversionDimensions {
     
     inline def setMetricNamesUndefined: Self = StObject.set(x, "metricNames", js.undefined)
     
-    inline def setMetricNamesVarargs(value: String*): Self = StObject.set(x, "metricNames", js.Array(value :_*))
+    inline def setMetricNamesVarargs(value: String*): Self = StObject.set(x, "metricNames", js.Array(value*))
     
     inline def setPerInteractionDimensions(value: js.Array[SortedDimension]): Self = StObject.set(x, "perInteractionDimensions", value.asInstanceOf[js.Any])
     
     inline def setPerInteractionDimensionsUndefined: Self = StObject.set(x, "perInteractionDimensions", js.undefined)
     
-    inline def setPerInteractionDimensionsVarargs(value: SortedDimension*): Self = StObject.set(x, "perInteractionDimensions", js.Array(value :_*))
+    inline def setPerInteractionDimensionsVarargs(value: SortedDimension*): Self = StObject.set(x, "perInteractionDimensions", js.Array(value*))
     
     inline def setReportProperties(value: ClicksLookbackWindow): Self = StObject.set(x, "reportProperties", value.asInstanceOf[js.Any])
     

@@ -8,21 +8,18 @@ trait ImageBitmap
   extends StObject
      with CanvasImageSource
      with TexImageSource
-     with Transferable {
+     with _Transferable {
   
-  /**
-    * Releases imageBitmap's underlying bitmap data.
-    */
+  /** Releases imageBitmap's underlying bitmap data. */
+  /* standard dom */
   def close(): Unit
   
-  /**
-    * Returns the intrinsic height of the image, in CSS pixels.
-    */
+  /** Returns the intrinsic height of the image, in CSS pixels. */
+  /* standard dom */
   val height: Double
   
-  /**
-    * Returns the intrinsic width of the image, in CSS pixels.
-    */
+  /** Returns the intrinsic width of the image, in CSS pixels. */
+  /* standard dom */
   val width: Double
 }
 object ImageBitmap {

@@ -22,6 +22,6 @@ object GoogleCloudDialogflowV2beta1BatchUpdateIntentsResponse {
     
     inline def setIntentsUndefined: Self = StObject.set(x, "intents", js.undefined)
     
-    inline def setIntentsVarargs(value: GoogleCloudDialogflowV2beta1Intent*): Self = StObject.set(x, "intents", js.Array(value :_*))
+    inline def setIntentsVarargs(value: GoogleCloudDialogflowV2beta1Intent*): Self = StObject.set(x, "intents", js.Array(value*))
   }
 }

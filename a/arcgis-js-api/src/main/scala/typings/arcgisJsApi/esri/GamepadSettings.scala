@@ -1,7 +1,7 @@
 package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.document
-import typings.arcgisJsApi.arcgisJsApiStrings.none
+import typings.arcgisJsApi.arcgisJsApiStrings.none_
 import typings.arcgisJsApi.arcgisJsApiStrings.view
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,7 +22,9 @@ trait GamepadSettings
   /**
     * Determines what focus is required for gamepad events to be dispatched.
     *
+    * @default document
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-input-gamepad-GamepadSettings.html#enabledFocusMode)
     */
-  var enabledFocusMode: document | view | none = js.native
+  var enabledFocusMode: document | view | none_ = js.native
 }

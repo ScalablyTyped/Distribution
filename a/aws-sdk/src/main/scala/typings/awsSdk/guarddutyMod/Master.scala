@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Master extends StObject {
   
   /**
-    * The ID of the account used as the master account.
+    * The ID of the account used as the administrator account.
     */
   var AccountId: js.UndefOr[typings.awsSdk.guarddutyMod.AccountId] = js.undefined
   
   /**
-    * The value used to validate the master account to the member account.
+    * The value used to validate the administrator account to the member account.
     */
   var InvitationId: js.UndefOr[String] = js.undefined
   
@@ -22,7 +22,7 @@ trait Master extends StObject {
   var InvitedAt: js.UndefOr[String] = js.undefined
   
   /**
-    * The status of the relationship between the master and member accounts.
+    * The status of the relationship between the administrator and member accounts.
     */
   var RelationshipStatus: js.UndefOr[String] = js.undefined
 }

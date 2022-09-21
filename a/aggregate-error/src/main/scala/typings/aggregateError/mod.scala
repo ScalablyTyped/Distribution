@@ -1,26 +1,23 @@
 package typings.aggregateError
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.std.Error
-import typings.std.Iterable
-import typings.std.IterableIterator
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("aggregate-error", JSImport.Namespace)
+  @JSImport("aggregate-error", JSImport.Default)
   @js.native
-  class ^[T /* <: Error */] protected ()
+  open class default[T /* <: js.Error */] protected ()
     extends StObject
        with AggregateError[T] {
     /**
     	@param errors - If a string, a new `Error` is created with the string as the error message. If a non-Error object, a new `Error` is created with all properties from the object copied over.
-    	@returns An Error that is also an [`Iterable`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators#Iterables) for the individual errors.
     	@example
     	```
-    	import AggregateError = require('aggregate-error');
+    	import AggregateError from 'aggregate-error';
     	const error = new AggregateError([new Error('foo'), 'bar', {message: 'baz'}]);
     	throw error;
     	// AggregateError:
@@ -40,7 +37,7 @@ object mod {
     	//	at Module.runMain (module.js:590:10)
     	//	at run (bootstrap_node.js:394:7)
     	//	at startup (bootstrap_node.js:149:9)
-    	for (const individualError of error) {
+    	for (const individualError of error.errors) {
     		console.log(individualError);
     	}
     	//=> [Error: foo]
@@ -48,25 +45,46 @@ object mod {
     	//=> [Error: baz]
     	```
     	*/
-    def this(errors: js.Array[T | StringDictionary[js.Any] | String]) = this()
+    def this(errors: js.Array[T | (Record[String, Any]) | String]) = this()
     
+    /* CompleteClass */
+    override val errors: js.Array[T] = js.native
+    
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
+    /* CompleteClass */
+    @JSName("name")
+    override val name_AggregateError: typings.aggregateError.aggregateErrorStrings.AggregateError = js.native
   }
   
-  @js.native
-  trait AggregateError[T /* <: Error */]
+  trait AggregateError[T /* <: js.Error */]
     extends StObject
-       with Error
-       with Iterable[T] {
+       with Error {
     
-    @JSName(js.Symbol.iterator)
-    var iterator_AggregateError: js.Function0[IterableIterator[T]] = js.native
+    val errors: js.Array[T]
     
     @JSName("name")
-    val name_AggregateError: typings.aggregateError.aggregateErrorStrings.AggregateError = js.native
+    val name_AggregateError: typings.aggregateError.aggregateErrorStrings.AggregateError
+  }
+  object AggregateError {
+    
+    inline def apply[T /* <: js.Error */](errors: js.Array[T], message: String): AggregateError[T] = {
+      val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = "AggregateError")
+      __obj.asInstanceOf[AggregateError[T]]
+    }
+    
+    extension [Self <: AggregateError[?], T /* <: js.Error */](x: Self & AggregateError[T]) {
+      
+      inline def setErrors(value: js.Array[T]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      
+      inline def setErrorsVarargs(value: T*): Self = StObject.set(x, "errors", js.Array(value*))
+      
+      inline def setName(value: typings.aggregateError.aggregateErrorStrings.AggregateError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    }
   }
 }

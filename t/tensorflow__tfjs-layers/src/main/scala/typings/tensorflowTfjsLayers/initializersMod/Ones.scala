@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@tensorflow/tfjs-layers/dist/initializers", "Ones")
 @js.native
-class Ones () extends Initializer
+open class Ones () extends Initializer
 /* static members */
 object Ones {
   

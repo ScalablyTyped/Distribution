@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-pinpoint-browser", "GetCampaignActivitiesCommand")
 @js.native
-class GetCampaignActivitiesCommand protected ()
+open class GetCampaignActivitiesCommand protected ()
   extends typings.awsSdkClientPinpointBrowser.getCampaignActivitiesCommandMod.GetCampaignActivitiesCommand {
   def this(input: GetCampaignActivitiesInput) = this()
 }

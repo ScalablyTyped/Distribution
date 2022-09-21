@@ -8,5 +8,5 @@ object itemCollectionMetricsMultipleMod {
   
   @JSImport("@aws-sdk/client-dynamodb-node/model/_ItemCollectionMetricsMultiple", "_ItemCollectionMetricsMultiple")
   @js.native
-  val ItemCollectionMetricsMultiple: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val ItemCollectionMetricsMultiple: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

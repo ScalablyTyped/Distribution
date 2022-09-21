@@ -10,11 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LodashValues extends StObject {
   
-  def apply(`object`: js.Any): js.Array[js.Any] = js.native
+  def apply(`object`: Any): js.Array[Any] = js.native
   def apply[T /* <: js.Object */](): js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-  ] = js.native
-  def apply[T /* <: js.Object */](`object`: T): js.Array[
     /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
   ] = js.native
   def apply[T](`object`: Dictionary[T]): js.Array[T] = js.native

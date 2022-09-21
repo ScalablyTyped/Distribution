@@ -17,7 +17,7 @@ trait AndroidInstrumentationTest extends StObject {
   
   /**
     * The option of whether running each test within its own invocation of instrumentation with Android Test Orchestrator or not. ** Orchestrator is only compatible with
-    * AndroidJUnitRunner version 1.0 or higher! ** Orchestrator offers the following benefits: - No shared state - Crashes are isolated - Logs are scoped per test See for more information
+    * AndroidJUnitRunner version 1.1 or higher! ** Orchestrator offers the following benefits: - No shared state - Crashes are isolated - Logs are scoped per test See for more information
     * about Android Test Orchestrator. If not set, the test will be run without the orchestrator.
     */
   var orchestratorOption: js.UndefOr[String] = js.undefined
@@ -85,6 +85,6 @@ object AndroidInstrumentationTest {
     
     inline def setTestTargetsUndefined: Self = StObject.set(x, "testTargets", js.undefined)
     
-    inline def setTestTargetsVarargs(value: String*): Self = StObject.set(x, "testTargets", js.Array(value :_*))
+    inline def setTestTargetsVarargs(value: String*): Self = StObject.set(x, "testTargets", js.Array(value*))
   }
 }

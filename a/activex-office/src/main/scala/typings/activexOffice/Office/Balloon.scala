@@ -8,7 +8,7 @@ trait Balloon extends StObject {
   
   var Animation: MsoAnimationType
   
-  val Application: js.Any
+  val Application: Any
   
   var BalloonType: MsoBalloonType
   
@@ -39,7 +39,7 @@ trait Balloon extends StObject {
   /* private */ @JSName("Office.Balloon_typekey")
   var OfficeDotBalloon_typekey: Balloon
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Private: Double
   
@@ -53,7 +53,7 @@ object Balloon {
   
   inline def apply(
     Animation: MsoAnimationType,
-    Application: js.Any,
+    Application: Any,
     BalloonType: MsoBalloonType,
     Button: MsoButtonSetType,
     Callback: String,
@@ -66,7 +66,7 @@ object Balloon {
     Mode: MsoModeType,
     Name: String,
     OfficeDotBalloon_typekey: Balloon,
-    Parent: js.Any,
+    Parent: Any,
     Private: Double,
     SetAvoidRectangle: (Double, Double, Double, Double) => Unit,
     Show: () => MsoBalloonButtonType,
@@ -81,7 +81,7 @@ object Balloon {
     
     inline def setAnimation(value: MsoAnimationType): Self = StObject.set(x, "Animation", value.asInstanceOf[js.Any])
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setBalloonType(value: MsoBalloonType): Self = StObject.set(x, "BalloonType", value.asInstanceOf[js.Any])
     
@@ -107,7 +107,7 @@ object Balloon {
     
     inline def setOfficeDotBalloon_typekey(value: Balloon): Self = StObject.set(x, "Office.Balloon_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPrivate(value: Double): Self = StObject.set(x, "Private", value.asInstanceOf[js.Any])
     

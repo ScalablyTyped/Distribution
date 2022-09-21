@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("THREE.Uniform")
 @js.native
-class Uniform protected ()
+open class Uniform protected ()
   extends typings.three.mod.Uniform {
-  def this(value: js.Any) = this()
+  def this(value: Any) = this()
   /**
-  	 * @deprecated
-  	 */
-  def this(`type`: String, value: js.Any) = this()
+    * @deprecated
+    */
+  def this(`type`: String, value: Any) = this()
 }

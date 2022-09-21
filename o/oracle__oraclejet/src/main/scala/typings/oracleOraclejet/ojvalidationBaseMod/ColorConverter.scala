@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@oracle/oraclejet/ojvalidation-base", "ColorConverter")
 @js.native
-class ColorConverter ()
+open class ColorConverter ()
   extends StObject
      with Converter[^] {
   def this(options: ConverterOptions) = this()

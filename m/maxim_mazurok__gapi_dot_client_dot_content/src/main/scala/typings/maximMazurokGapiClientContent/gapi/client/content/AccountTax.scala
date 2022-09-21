@@ -9,10 +9,10 @@ trait AccountTax extends StObject {
   /** Required. The ID of the account to which these account tax settings belong. */
   var accountId: js.UndefOr[String] = js.undefined
   
-  /** Identifies what kind of resource this is. Value: the fixed string "content#accountTax". */
+  /** Identifies what kind of resource this is. Value: the fixed string "`content#accountTax`". */
   var kind: js.UndefOr[String] = js.undefined
   
-  /** Tax rules. Updating the tax rules will enable US taxes (not reversible). Defining no rules is equivalent to not charging tax at all. */
+  /** Tax rules. Updating the tax rules will enable "US" taxes (not reversible). Defining no rules is equivalent to not charging tax at all. */
   var rules: js.UndefOr[js.Array[AccountTaxTaxRule]] = js.undefined
 }
 object AccountTax {
@@ -36,6 +36,6 @@ object AccountTax {
     
     inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    inline def setRulesVarargs(value: AccountTaxTaxRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: AccountTaxTaxRule*): Self = StObject.set(x, "rules", js.Array(value*))
   }
 }

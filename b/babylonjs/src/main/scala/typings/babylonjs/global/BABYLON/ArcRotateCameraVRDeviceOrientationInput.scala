@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Instantiate a new ArcRotateCameraVRDeviceOrientationInput.
   */
-class ArcRotateCameraVRDeviceOrientationInput ()
+open class ArcRotateCameraVRDeviceOrientationInput ()
   extends StObject
      with typings.babylonjs.BABYLON.ArcRotateCameraVRDeviceOrientationInput

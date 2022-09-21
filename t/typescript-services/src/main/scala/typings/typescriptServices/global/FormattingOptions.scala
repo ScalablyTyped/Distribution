@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("FormattingOptions")
 @js.native
-class FormattingOptions protected ()
+open class FormattingOptions protected ()
   extends StObject
      with typings.typescriptServices.FormattingOptions {
   def this(useTabs: Boolean, spacesPerTab: Double, indentSpaces: Double, newLineCharacter: String) = this()

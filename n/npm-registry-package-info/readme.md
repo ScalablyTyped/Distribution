@@ -10,10 +10,10 @@ Get package info for one or more packages.
 | ------------------ | :-------------: |
 | Full name          | npm-registry-package-info |
 | Keywords           | npm, list, info, details, show, view, url, cli, utility, utilities, utils, util, package, registry, meta, pkg, get |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 6734 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 77.66666666666667 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/kgryte/npm-registry-package-info#readme)

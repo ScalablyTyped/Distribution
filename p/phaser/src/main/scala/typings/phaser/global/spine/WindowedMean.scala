@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("spine.WindowedMean")
 @js.native
-class WindowedMean ()
+open class WindowedMean ()
   extends StObject
      with typings.phaser.spine.WindowedMean {
   def this(windowSize: Double) = this()

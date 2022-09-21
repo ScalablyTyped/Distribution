@@ -9,12 +9,16 @@ trait GeolocationPositioning extends StObject {
   /**
     * The HTML5 Geolocation Position options for locating.
     *
+    * @default { maximumAge: 0, timeout: 15000, enableHighAccuracy: true }
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GeolocationPositioning.html#geolocationOptions)
     */
-  var geolocationOptions: js.Any
+  var geolocationOptions: Any
   
   /**
     * Indicates whether to navigate the view to the position and scale of the geolocated result.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GeolocationPositioning.html#goToLocationEnabled)
     */
@@ -30,6 +34,8 @@ trait GeolocationPositioning extends StObject {
   /**
     * The scale to set on the view when navigating to the position of the geolocated result.
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GeolocationPositioning.html#scale)
     */
   var scale: Double
@@ -44,7 +50,7 @@ trait GeolocationPositioning extends StObject {
 object GeolocationPositioning {
   
   inline def apply(
-    geolocationOptions: js.Any,
+    geolocationOptions: Any,
     goToLocationEnabled: Boolean,
     graphic: Graphic,
     scale: Double,
@@ -56,7 +62,7 @@ object GeolocationPositioning {
   
   extension [Self <: GeolocationPositioning](x: Self) {
     
-    inline def setGeolocationOptions(value: js.Any): Self = StObject.set(x, "geolocationOptions", value.asInstanceOf[js.Any])
+    inline def setGeolocationOptions(value: Any): Self = StObject.set(x, "geolocationOptions", value.asInstanceOf[js.Any])
     
     inline def setGoToLocationEnabled(value: Boolean): Self = StObject.set(x, "goToLocationEnabled", value.asInstanceOf[js.Any])
     

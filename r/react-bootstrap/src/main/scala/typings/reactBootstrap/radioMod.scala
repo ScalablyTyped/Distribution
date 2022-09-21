@@ -14,12 +14,10 @@ object radioMod {
   
   @JSImport("react-bootstrap/lib/Radio", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[RadioProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[RadioProps, js.Object, Any]
   
-  @js.native
-  trait Radio
-    extends Component[RadioProps, js.Object, js.Any]
+  type Radio = Component[RadioProps, js.Object, Any]
   
   trait RadioProps
     extends StObject

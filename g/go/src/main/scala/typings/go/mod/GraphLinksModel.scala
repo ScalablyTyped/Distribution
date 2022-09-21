@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param {Array<Object>=} nodedataarray an optional Array containing JavaScript objects to be represented by Nodes.
   * @param {Array<Object>=} linkdataarray an optional Array containing JavaScript objects to be represented by Links.
   */
-class GraphLinksModel () extends Model {
+open class GraphLinksModel () extends Model {
   def this(nodedataarray: js.Array[js.Object]) = this()
   def this(nodedataarray: js.Array[js.Object], linkdataarray: js.Array[js.Object]) = this()
   def this(nodedataarray: Unit, linkdataarray: js.Array[js.Object]) = this()
@@ -59,7 +59,7 @@ class GraphLinksModel () extends Model {
     * When adding or modifying a link data if there is a "from" or "to" key value for which Model.findNodeDataForKey returns null,
     * it will call Model.copyNodeData on this property value and Model.addNodeData on the result.
     */
-  var archetypeNodeData: js.Any = js.native
+  var archetypeNodeData: Any = js.native
   
   /**
     * Decide if a given link data is in this model.
@@ -96,7 +96,7 @@ class GraphLinksModel () extends Model {
     * The return value will be an Object or null.
     * @param {*} key a string or a number.
     */
-  def findLinkDataForKey(key: Key): js.Any = js.native
+  def findLinkDataForKey(key: Key): Any = js.native
   
   /**
     * Find the category of a given link data, a string naming the link template

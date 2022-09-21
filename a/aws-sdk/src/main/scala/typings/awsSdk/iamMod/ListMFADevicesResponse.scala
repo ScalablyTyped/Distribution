@@ -36,7 +36,7 @@ object ListMFADevicesResponse {
     
     inline def setMFADevices(value: mfaDeviceListType): Self = StObject.set(x, "MFADevices", value.asInstanceOf[js.Any])
     
-    inline def setMFADevicesVarargs(value: MFADevice*): Self = StObject.set(x, "MFADevices", js.Array(value :_*))
+    inline def setMFADevicesVarargs(value: MFADevice*): Self = StObject.set(x, "MFADevices", js.Array(value*))
     
     inline def setMarker(value: responseMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("restify-errors", "RestError")
 @js.native
-class RestError protected () extends HttpError {
-  def this(printf: String, args: js.Any*) = this()
-  def this(options: RestifyRestErrorOptions, printf: String, args: js.Any*) = this()
-  def this(options: RestifyRestErrorOptions, printf: Unit, args: js.Any*) = this()
+open class RestError protected () extends HttpError {
+  def this(printf: String, args: Any*) = this()
+  def this(options: RestifyRestErrorOptions, printf: String, args: Any*) = this()
+  def this(options: RestifyRestErrorOptions, printf: Unit, args: Any*) = this()
   // tslint:disable-next-line unified-signatures
-  def this(priorErr: js.Any, printf: String, args: js.Any*) = this()
-  def this(priorErr: js.Any, printf: Unit, args: js.Any*) = this()
-  def this(priorErr: js.Any, options: RestifyRestErrorOptions, printf: String, args: js.Any*) = this()
-  def this(priorErr: js.Any, options: RestifyRestErrorOptions, printf: Unit, args: js.Any*) = this()
+  def this(priorErr: Any, printf: String, args: Any*) = this()
+  def this(priorErr: Any, printf: Unit, args: Any*) = this()
+  def this(priorErr: Any, options: RestifyRestErrorOptions, printf: String, args: Any*) = this()
+  def this(priorErr: Any, options: RestifyRestErrorOptions, printf: Unit, args: Any*) = this()
   
   var restCode: String = js.native
 }

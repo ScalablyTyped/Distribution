@@ -10,7 +10,7 @@ trait MatchedCommand extends StObject {
   
   var instruction: ArtyomCommand
   
-  var wildcard: js.UndefOr[js.Any] = js.undefined
+  var wildcard: js.UndefOr[Any] = js.undefined
 }
 object MatchedCommand {
   
@@ -25,7 +25,7 @@ object MatchedCommand {
     
     inline def setInstruction(value: ArtyomCommand): Self = StObject.set(x, "instruction", value.asInstanceOf[js.Any])
     
-    inline def setWildcard(value: js.Any): Self = StObject.set(x, "wildcard", value.asInstanceOf[js.Any])
+    inline def setWildcard(value: Any): Self = StObject.set(x, "wildcard", value.asInstanceOf[js.Any])
     
     inline def setWildcardUndefined: Self = StObject.set(x, "wildcard", js.undefined)
   }

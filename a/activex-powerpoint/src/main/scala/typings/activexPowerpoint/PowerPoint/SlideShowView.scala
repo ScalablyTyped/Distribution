@@ -60,9 +60,9 @@ trait SlideShowView extends StObject {
   
   def Next(): Unit = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  def Player(ShapeId: js.Any): typings.activexPowerpoint.PowerPoint.Player = js.native
+  def Player(ShapeId: Any): typings.activexPowerpoint.PowerPoint.Player = js.native
   
   val PointerColor: ColorFormat = js.native
   

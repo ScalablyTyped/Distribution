@@ -1,61 +1,70 @@
 package typings.awsSdk.applicationinsightsMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.ACCOUNT_BASED
+import typings.awsSdk.awsSdkStrings.INSIGHTS_FEEDBACK
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AffectedResource = java.lang.String
+type AffectedResource = String
 
-type AmazonResourceName = java.lang.String
+type AmazonResourceName = String
 
-type ApplicationComponentList = js.Array[typings.awsSdk.applicationinsightsMod.ApplicationComponent]
+type ApplicationComponentList = js.Array[ApplicationComponent]
 
-type ApplicationInfoList = js.Array[typings.awsSdk.applicationinsightsMod.ApplicationInfo]
+type ApplicationInfoList = js.Array[ApplicationInfo]
 
-type CWEMonitorEnabled = scala.Boolean
+type AutoConfigEnabled = Boolean
 
-type CloudWatchEventDetailType = java.lang.String
+type AutoCreate = Boolean
 
-type CloudWatchEventId = java.lang.String
+type CWEMonitorEnabled = Boolean
+
+type CloudWatchEventDetailType = String
+
+type CloudWatchEventId = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.EC2
   - typings.awsSdk.awsSdkStrings.CODE_DEPLOY
   - typings.awsSdk.awsSdkStrings.HEALTH
+  - typings.awsSdk.awsSdkStrings.RDS
   - java.lang.String
 */
-type CloudWatchEventSource = typings.awsSdk.applicationinsightsMod._CloudWatchEventSource | java.lang.String
+type CloudWatchEventSource = _CloudWatchEventSource | String
 
-type CodeDeployApplication = java.lang.String
+type CodeDeployApplication = String
 
-type CodeDeployDeploymentGroup = java.lang.String
+type CodeDeployDeploymentGroup = String
 
-type CodeDeployDeploymentId = java.lang.String
+type CodeDeployDeploymentId = String
 
-type CodeDeployInstanceGroupId = java.lang.String
+type CodeDeployInstanceGroupId = String
 
-type CodeDeployState = java.lang.String
+type CodeDeployState = String
 
-type ComponentConfiguration = java.lang.String
+type ComponentConfiguration = String
 
-type ComponentName = java.lang.String
+type ComponentName = String
 
-type ConfigurationEventDetail = java.lang.String
+type ConfigurationEventDetail = String
 
-type ConfigurationEventList = js.Array[typings.awsSdk.applicationinsightsMod.ConfigurationEvent]
+type ConfigurationEventList = js.Array[ConfigurationEvent]
 
-type ConfigurationEventMonitoredResourceARN = java.lang.String
+type ConfigurationEventMonitoredResourceARN = String
 
-type ConfigurationEventResourceName = java.lang.String
+type ConfigurationEventResourceName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CLOUDWATCH_ALARM
+  - typings.awsSdk.awsSdkStrings.CLOUDWATCH_LOG
   - typings.awsSdk.awsSdkStrings.CLOUDFORMATION
   - typings.awsSdk.awsSdkStrings.SSM_ASSOCIATION
   - java.lang.String
 */
-type ConfigurationEventResourceType = typings.awsSdk.applicationinsightsMod._ConfigurationEventResourceType | java.lang.String
+type ConfigurationEventResourceType = _ConfigurationEventResourceType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INFO
@@ -63,17 +72,36 @@ type ConfigurationEventResourceType = typings.awsSdk.applicationinsightsMod._Con
   - typings.awsSdk.awsSdkStrings.ERROR
   - java.lang.String
 */
-type ConfigurationEventStatus = typings.awsSdk.applicationinsightsMod._ConfigurationEventStatus | java.lang.String
+type ConfigurationEventStatus = _ConfigurationEventStatus | String
 
-type ConfigurationEventTime = typings.std.Date
+type ConfigurationEventTime = js.Date
 
-type Ec2State = java.lang.String
+type CustomComponentName = String
 
-type EndTime = typings.std.Date
+type DetectedWorkload = StringDictionary[WorkloadMetaData]
 
-type Feedback = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.applicationinsightsMod.FeedbackValue]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.RESOURCE_GROUP_BASED
+  - typings.awsSdk.awsSdkStrings.ACCOUNT_BASED
+  - java.lang.String
+*/
+type DiscoveryType = _DiscoveryType | String
 
-type FeedbackKey = typings.awsSdk.awsSdkStrings.INSIGHTS_FEEDBACK | java.lang.String
+type EbsCause = String
+
+type EbsEvent = String
+
+type EbsRequestId = String
+
+type EbsResult = String
+
+type Ec2State = String
+
+type EndTime = js.Date
+
+type Feedback = StringDictionary[FeedbackValue]
+
+type FeedbackKey = INSIGHTS_FEEDBACK | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NOT_SPECIFIED
@@ -81,23 +109,27 @@ type FeedbackKey = typings.awsSdk.awsSdkStrings.INSIGHTS_FEEDBACK | java.lang.St
   - typings.awsSdk.awsSdkStrings.NOT_USEFUL
   - java.lang.String
 */
-type FeedbackValue = typings.awsSdk.applicationinsightsMod._FeedbackValue | java.lang.String
+type FeedbackValue = _FeedbackValue | String
 
-type HealthEventArn = java.lang.String
+type GroupingType = ACCOUNT_BASED | String
 
-type HealthEventDescription = java.lang.String
+type HealthEventArn = String
 
-type HealthEventTypeCategory = java.lang.String
+type HealthEventDescription = String
 
-type HealthEventTypeCode = java.lang.String
+type HealthEventTypeCategory = String
 
-type HealthService = java.lang.String
+type HealthEventTypeCode = String
 
-type Insights = java.lang.String
+type HealthService = String
 
-type LifeCycle = java.lang.String
+type Insights = String
 
-type LineTime = typings.std.Date
+type LastRecurrenceTime = js.Date
+
+type LifeCycle = String
+
+type LineTime = js.Date
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ERROR
@@ -105,123 +137,165 @@ type LineTime = typings.std.Date
   - typings.awsSdk.awsSdkStrings.INFO
   - java.lang.String
 */
-type LogFilter = typings.awsSdk.applicationinsightsMod._LogFilter | java.lang.String
+type LogFilter = _LogFilter | String
 
-type LogGroup = java.lang.String
+type LogGroup = String
 
-type LogPatternList = js.Array[typings.awsSdk.applicationinsightsMod.LogPattern]
+type LogPatternList = js.Array[LogPattern]
 
-type LogPatternName = java.lang.String
+type LogPatternName = String
 
-type LogPatternRank = scala.Double
+type LogPatternRank = Double
 
-type LogPatternRegex = java.lang.String
+type LogPatternRegex = String
 
-type LogPatternSetList = js.Array[typings.awsSdk.applicationinsightsMod.LogPatternSetName]
+type LogPatternSetList = js.Array[LogPatternSetName]
 
-type LogPatternSetName = java.lang.String
+type LogPatternSetName = String
 
-type LogText = java.lang.String
+type LogText = String
 
-type MaxEntities = scala.Double
+type MaxEntities = Double
 
-type MetricName = java.lang.String
+type MetaDataKey = String
 
-type MetricNamespace = java.lang.String
+type MetaDataValue = String
 
-type Monitor = scala.Boolean
+type MetricName = String
 
-type NewComponentName = java.lang.String
+type MetricNamespace = String
 
-type ObservationId = java.lang.String
+type Monitor = Boolean
 
-type ObservationList = js.Array[typings.awsSdk.applicationinsightsMod.Observation]
+type ObservationId = String
 
-type OpsCenterEnabled = scala.Boolean
+type ObservationList = js.Array[Observation]
 
-type OpsItemSNSTopicArn = java.lang.String
+type OpsCenterEnabled = Boolean
 
-type PaginationToken = java.lang.String
-
-type ProblemId = java.lang.String
-
-type ProblemList = js.Array[typings.awsSdk.applicationinsightsMod.Problem]
-
-type Remarks = java.lang.String
-
-type RemoveSNSTopic = scala.Boolean
-
-type ResourceARN = java.lang.String
-
-type ResourceGroupName = java.lang.String
-
-type ResourceList = js.Array[typings.awsSdk.applicationinsightsMod.ResourceARN]
-
-type ResourceType = java.lang.String
+type OpsItemSNSTopicArn = String
 
 /* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.WINDOWS
+  - typings.awsSdk.awsSdkStrings.LINUX
+  - java.lang.String
+*/
+type OsType = _OsType | String
+
+type PaginationToken = String
+
+type ProblemId = String
+
+type ProblemList = js.Array[Problem]
+
+type RdsEventCategories = String
+
+type RdsEventMessage = String
+
+type RecurringCount = Double
+
+type Remarks = String
+
+type RemoveSNSTopic = Boolean
+
+type ResourceARN = String
+
+type ResourceGroupName = String
+
+type ResourceList = js.Array[ResourceARN]
+
+type ResourceType = String
+
+type S3EventName = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Informative
   - typings.awsSdk.awsSdkStrings.Low_
   - typings.awsSdk.awsSdkStrings.Medium_
   - typings.awsSdk.awsSdkStrings.High_
   - java.lang.String
 */
-type SeverityLevel = typings.awsSdk.applicationinsightsMod._SeverityLevel | java.lang.String
+type SeverityLevel = _SeverityLevel | String
 
-type SourceARN = java.lang.String
+type SourceARN = String
 
-type SourceType = java.lang.String
+type SourceType = String
 
-type StartTime = typings.std.Date
+type StartTime = js.Date
+
+type StatesArn = String
+
+type StatesExecutionArn = String
+
+type StatesInput = String
+
+type StatesStatus = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.IGNORE
   - typings.awsSdk.awsSdkStrings.RESOLVED
   - typings.awsSdk.awsSdkStrings.PENDING
+  - typings.awsSdk.awsSdkStrings.RECURRING
   - java.lang.String
 */
-type Status = typings.awsSdk.applicationinsightsMod._Status | java.lang.String
+type Status = _Status | String
 
-type TagKey = java.lang.String
+type TagKey = String
 
-type TagKeyList = js.Array[typings.awsSdk.applicationinsightsMod.TagKey]
+type TagKeyList = js.Array[TagKey]
 
-type TagList = js.Array[typings.awsSdk.applicationinsightsMod.Tag]
+type TagList = js.Array[Tag]
 
-type TagValue = java.lang.String
+type TagValue = String
 
 /* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CUSTOM
   - typings.awsSdk.awsSdkStrings.DEFAULT
   - typings.awsSdk.awsSdkStrings.DOT_NET_CORE
   - typings.awsSdk.awsSdkStrings.DOT_NET_WORKER
+  - typings.awsSdk.awsSdkStrings.DOT_NET_WEB_TIER
   - typings.awsSdk.awsSdkStrings.DOT_NET_WEB
   - typings.awsSdk.awsSdkStrings.SQL_SERVER
+  - typings.awsSdk.awsSdkStrings.SQL_SERVER_ALWAYSON_AVAILABILITY_GROUP
+  - typings.awsSdk.awsSdkStrings.MYSQL
+  - typings.awsSdk.awsSdkStrings.POSTGRESQL
+  - typings.awsSdk.awsSdkStrings.JAVA_JMX
+  - typings.awsSdk.awsSdkStrings.ORACLE
+  - typings.awsSdk.awsSdkStrings.SAP_HANA_MULTI_NODE
+  - typings.awsSdk.awsSdkStrings.SAP_HANA_SINGLE_NODE
+  - typings.awsSdk.awsSdkStrings.SAP_HANA_HIGH_AVAILABILITY
+  - typings.awsSdk.awsSdkStrings.SQL_SERVER_FAILOVER_CLUSTER_INSTANCE
+  - typings.awsSdk.awsSdkStrings.SHAREPOINT
+  - typings.awsSdk.awsSdkStrings.ACTIVE_DIRECTORY
   - java.lang.String
 */
-type Tier = typings.awsSdk.applicationinsightsMod._Tier | java.lang.String
+type Tier = _Tier | String
 
-type Title = java.lang.String
+type Title = String
 
-type Unit = java.lang.String
+type Unit = String
 
-type Value = scala.Double
+type Value = Double
 
-type XRayErrorPercent = scala.Double
+type WorkloadMetaData = StringDictionary[MetaDataValue]
 
-type XRayFaultPercent = scala.Double
+type XRayErrorPercent = Double
 
-type XRayNodeName = java.lang.String
+type XRayFaultPercent = Double
 
-type XRayNodeType = java.lang.String
+type XRayNodeName = String
 
-type XRayRequestAverageLatency = scala.Double
+type XRayNodeType = String
 
-type XRayRequestCount = scala.Double
+type XRayRequestAverageLatency = Double
 
-type XRayThrottlePercent = scala.Double
+type XRayRequestCount = Double
+
+type XRayThrottlePercent = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2018-11-25`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.applicationinsightsMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

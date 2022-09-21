@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetAssociationForServiceQuotaTemplateResponse extends StObject {
   
   /**
-    * Specifies whether the template is ASSOCIATED or DISASSOCIATED. If the template is ASSOCIATED, then it requests service quota increases for all new accounts created in your organization. 
+    * The association status. If the status is ASSOCIATED, the quota increase requests in the template are automatically applied to new accounts in your organization.
     */
   var ServiceQuotaTemplateAssociationStatus: js.UndefOr[typings.awsSdk.servicequotasMod.ServiceQuotaTemplateAssociationStatus] = js.undefined
 }

@@ -17,5 +17,5 @@ trait FormTemplateConstructor
 Instantiable0[FormTemplate]
      with Instantiable1[/* properties */ FormTemplateProperties, FormTemplate] {
   
-  def fromJSON(json: js.Any): FormTemplate = js.native
+  def fromJSON(json: Any): FormTemplate = js.native
 }

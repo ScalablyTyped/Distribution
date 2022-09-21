@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "cordova-plugin-statusbar" : "2.4.3"
+      "cordova-plugin-statusbar" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "cordova-plugin-statusbar" : "2.4.3"
+      "cordova-plugin-statusbar" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

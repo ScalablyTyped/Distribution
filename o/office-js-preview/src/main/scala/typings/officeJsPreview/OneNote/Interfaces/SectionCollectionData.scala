@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface describing the data returned by calling "sectionCollection.toJSON()". */
+/** An interface describing the data returned by calling `sectionCollection.toJSON()`. */
 trait SectionCollectionData extends StObject {
   
   var items: js.UndefOr[js.Array[SectionData]] = js.undefined
@@ -22,6 +22,6 @@ object SectionCollectionData {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: SectionData*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: SectionData*): Self = StObject.set(x, "items", js.Array(value*))
   }
 }

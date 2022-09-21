@@ -15,7 +15,7 @@ trait TreeSettings extends StObject {
   var cascadeSelection: js.UndefOr[Boolean] = js.undefined
   
   var checkboxChange: js.UndefOr[
-    js.Function4[/* e */ js.Any, /* node */ js.Any, /* record */ js.Any, /* state */ String, js.Any]
+    js.Function4[/* e */ Any, /* node */ Any, /* record */ Any, /* state */ String, Any]
   ] = js.undefined
   
   var checkboxes: js.UndefOr[Boolean] = js.undefined
@@ -24,25 +24,25 @@ trait TreeSettings extends StObject {
   
   var childrenField: js.UndefOr[String] = js.undefined
   
-  var collapse: js.UndefOr[js.Function3[/* e */ js.Any, /* node */ js.Any, /* id */ String, js.Any]] = js.undefined
+  var collapse: js.UndefOr[js.Function3[/* e */ Any, /* node */ Any, /* id */ String, Any]] = js.undefined
   
-  var dataBinding: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
+  var dataBinding: js.UndefOr[js.Function1[/* e */ Any, Any]] = js.undefined
   
-  var dataBound: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
+  var dataBound: js.UndefOr[js.Function1[/* e */ Any, Any]] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any] = js.undefined
+  var dataSource: js.UndefOr[Any] = js.undefined
   
-  var destroying: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
+  var destroying: js.UndefOr[js.Function1[/* e */ Any, Any]] = js.undefined
   
-  var disable: js.UndefOr[js.Function3[/* e */ js.Any, /* node */ js.Any, /* id */ String, js.Any]] = js.undefined
+  var disable: js.UndefOr[js.Function3[/* e */ Any, /* node */ Any, /* id */ String, Any]] = js.undefined
   
   var disabledField: js.UndefOr[String] = js.undefined
   
   var dragAndDrop: js.UndefOr[Boolean] = js.undefined
   
-  var enable: js.UndefOr[js.Function3[/* e */ js.Any, /* node */ js.Any, /* id */ String, js.Any]] = js.undefined
+  var enable: js.UndefOr[js.Function3[/* e */ Any, /* node */ Any, /* id */ String, Any]] = js.undefined
   
-  var expand: js.UndefOr[js.Function3[/* e */ js.Any, /* node */ js.Any, /* id */ String, js.Any]] = js.undefined
+  var expand: js.UndefOr[js.Function3[/* e */ Any, /* node */ Any, /* id */ String, Any]] = js.undefined
   
   var hasChildrenField: js.UndefOr[String] = js.undefined
   
@@ -57,21 +57,21 @@ trait TreeSettings extends StObject {
   var imageUrlField: js.UndefOr[String] = js.undefined
   
   //Events
-  var initialized: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
+  var initialized: js.UndefOr[js.Function1[/* e */ Any, Any]] = js.undefined
   
   var lazyLoading: js.UndefOr[Boolean] = js.undefined
   
-  var nodeDataBound: js.UndefOr[js.Function3[/* e */ js.Any, /* node */ js.Any, /* id */ String, js.Any]] = js.undefined
+  var nodeDataBound: js.UndefOr[js.Function3[/* e */ Any, /* node */ Any, /* id */ String, Any]] = js.undefined
   
   var nodeDrop: js.UndefOr[
-    js.Function4[/* e */ js.Any, /* id */ String, /* parentId */ String, /* orderNumber */ Double, js.Any]
+    js.Function4[/* e */ Any, /* id */ String, /* parentId */ String, /* orderNumber */ Double, Any]
   ] = js.undefined
   
   var paramNames: js.UndefOr[TreeParamNames] = js.undefined
   
   var primaryKey: js.UndefOr[String] = js.undefined
   
-  var select: js.UndefOr[js.Function3[/* e */ js.Any, /* node */ js.Any, /* id */ String, js.Any]] = js.undefined
+  var select: js.UndefOr[js.Function3[/* e */ Any, /* node */ Any, /* id */ String, Any]] = js.undefined
   
   var selectionType: js.UndefOr[String] = js.undefined
   
@@ -79,7 +79,7 @@ trait TreeSettings extends StObject {
   
   var uiLibrary: js.UndefOr[String] = js.undefined
   
-  var unselect: js.UndefOr[js.Function3[/* e */ js.Any, /* node */ js.Any, /* id */ String, js.Any]] = js.undefined
+  var unselect: js.UndefOr[js.Function3[/* e */ Any, /* node */ Any, /* id */ String, Any]] = js.undefined
   
   var width: js.UndefOr[Double] = js.undefined
 }
@@ -108,7 +108,7 @@ object TreeSettings {
     
     inline def setCascadeSelectionUndefined: Self = StObject.set(x, "cascadeSelection", js.undefined)
     
-    inline def setCheckboxChange(value: (/* e */ js.Any, /* node */ js.Any, /* record */ js.Any, /* state */ String) => js.Any): Self = StObject.set(x, "checkboxChange", js.Any.fromFunction4(value))
+    inline def setCheckboxChange(value: (/* e */ Any, /* node */ Any, /* record */ Any, /* state */ String) => Any): Self = StObject.set(x, "checkboxChange", js.Any.fromFunction4(value))
     
     inline def setCheckboxChangeUndefined: Self = StObject.set(x, "checkboxChange", js.undefined)
     
@@ -124,27 +124,27 @@ object TreeSettings {
     
     inline def setChildrenFieldUndefined: Self = StObject.set(x, "childrenField", js.undefined)
     
-    inline def setCollapse(value: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => js.Any): Self = StObject.set(x, "collapse", js.Any.fromFunction3(value))
+    inline def setCollapse(value: (/* e */ Any, /* node */ Any, /* id */ String) => Any): Self = StObject.set(x, "collapse", js.Any.fromFunction3(value))
     
     inline def setCollapseUndefined: Self = StObject.set(x, "collapse", js.undefined)
     
-    inline def setDataBinding(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "dataBinding", js.Any.fromFunction1(value))
+    inline def setDataBinding(value: /* e */ Any => Any): Self = StObject.set(x, "dataBinding", js.Any.fromFunction1(value))
     
     inline def setDataBindingUndefined: Self = StObject.set(x, "dataBinding", js.undefined)
     
-    inline def setDataBound(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "dataBound", js.Any.fromFunction1(value))
+    inline def setDataBound(value: /* e */ Any => Any): Self = StObject.set(x, "dataBound", js.Any.fromFunction1(value))
     
     inline def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
-    inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
-    inline def setDestroying(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "destroying", js.Any.fromFunction1(value))
+    inline def setDestroying(value: /* e */ Any => Any): Self = StObject.set(x, "destroying", js.Any.fromFunction1(value))
     
     inline def setDestroyingUndefined: Self = StObject.set(x, "destroying", js.undefined)
     
-    inline def setDisable(value: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => js.Any): Self = StObject.set(x, "disable", js.Any.fromFunction3(value))
+    inline def setDisable(value: (/* e */ Any, /* node */ Any, /* id */ String) => Any): Self = StObject.set(x, "disable", js.Any.fromFunction3(value))
     
     inline def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
     
@@ -156,11 +156,11 @@ object TreeSettings {
     
     inline def setDragAndDropUndefined: Self = StObject.set(x, "dragAndDrop", js.undefined)
     
-    inline def setEnable(value: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => js.Any): Self = StObject.set(x, "enable", js.Any.fromFunction3(value))
+    inline def setEnable(value: (/* e */ Any, /* node */ Any, /* id */ String) => Any): Self = StObject.set(x, "enable", js.Any.fromFunction3(value))
     
     inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
     
-    inline def setExpand(value: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => js.Any): Self = StObject.set(x, "expand", js.Any.fromFunction3(value))
+    inline def setExpand(value: (/* e */ Any, /* node */ Any, /* id */ String) => Any): Self = StObject.set(x, "expand", js.Any.fromFunction3(value))
     
     inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
     
@@ -188,7 +188,7 @@ object TreeSettings {
     
     inline def setImageUrlFieldUndefined: Self = StObject.set(x, "imageUrlField", js.undefined)
     
-    inline def setInitialized(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "initialized", js.Any.fromFunction1(value))
+    inline def setInitialized(value: /* e */ Any => Any): Self = StObject.set(x, "initialized", js.Any.fromFunction1(value))
     
     inline def setInitializedUndefined: Self = StObject.set(x, "initialized", js.undefined)
     
@@ -196,13 +196,11 @@ object TreeSettings {
     
     inline def setLazyLoadingUndefined: Self = StObject.set(x, "lazyLoading", js.undefined)
     
-    inline def setNodeDataBound(value: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => js.Any): Self = StObject.set(x, "nodeDataBound", js.Any.fromFunction3(value))
+    inline def setNodeDataBound(value: (/* e */ Any, /* node */ Any, /* id */ String) => Any): Self = StObject.set(x, "nodeDataBound", js.Any.fromFunction3(value))
     
     inline def setNodeDataBoundUndefined: Self = StObject.set(x, "nodeDataBound", js.undefined)
     
-    inline def setNodeDrop(
-      value: (/* e */ js.Any, /* id */ String, /* parentId */ String, /* orderNumber */ Double) => js.Any
-    ): Self = StObject.set(x, "nodeDrop", js.Any.fromFunction4(value))
+    inline def setNodeDrop(value: (/* e */ Any, /* id */ String, /* parentId */ String, /* orderNumber */ Double) => Any): Self = StObject.set(x, "nodeDrop", js.Any.fromFunction4(value))
     
     inline def setNodeDropUndefined: Self = StObject.set(x, "nodeDrop", js.undefined)
     
@@ -214,7 +212,7 @@ object TreeSettings {
     
     inline def setPrimaryKeyUndefined: Self = StObject.set(x, "primaryKey", js.undefined)
     
-    inline def setSelect(value: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => js.Any): Self = StObject.set(x, "select", js.Any.fromFunction3(value))
+    inline def setSelect(value: (/* e */ Any, /* node */ Any, /* id */ String) => Any): Self = StObject.set(x, "select", js.Any.fromFunction3(value))
     
     inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     
@@ -230,7 +228,7 @@ object TreeSettings {
     
     inline def setUiLibraryUndefined: Self = StObject.set(x, "uiLibrary", js.undefined)
     
-    inline def setUnselect(value: (/* e */ js.Any, /* node */ js.Any, /* id */ String) => js.Any): Self = StObject.set(x, "unselect", js.Any.fromFunction3(value))
+    inline def setUnselect(value: (/* e */ Any, /* node */ Any, /* id */ String) => Any): Self = StObject.set(x, "unselect", js.Any.fromFunction3(value))
     
     inline def setUnselectUndefined: Self = StObject.set(x, "unselect", js.undefined)
     

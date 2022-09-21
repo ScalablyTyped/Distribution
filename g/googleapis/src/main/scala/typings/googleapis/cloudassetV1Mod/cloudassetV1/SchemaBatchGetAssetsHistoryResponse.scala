@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Batch get assets history response.
-  */
 trait SchemaBatchGetAssetsHistoryResponse extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaBatchGetAssetsHistoryResponse {
     
     inline def setAssetsUndefined: Self = StObject.set(x, "assets", js.undefined)
     
-    inline def setAssetsVarargs(value: SchemaTemporalAsset*): Self = StObject.set(x, "assets", js.Array(value :_*))
+    inline def setAssetsVarargs(value: SchemaTemporalAsset*): Self = StObject.set(x, "assets", js.Array(value*))
   }
 }

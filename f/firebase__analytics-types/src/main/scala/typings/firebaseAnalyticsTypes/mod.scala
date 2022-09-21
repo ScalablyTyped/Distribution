@@ -1,9 +1,54 @@
 package typings.firebaseAnalyticsTypes
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.firebaseAnalyticsTypes.anon.Affiliation
+import typings.firebaseAnalyticsTypes.anon.Checkoutoption
+import typings.firebaseAnalyticsTypes.anon.Checkoutstep
+import typings.firebaseAnalyticsTypes.anon.Contenttype
+import typings.firebaseAnalyticsTypes.anon.Coupon
+import typings.firebaseAnalyticsTypes.anon.Description
+import typings.firebaseAnalyticsTypes.anon.Dictkey
+import typings.firebaseAnalyticsTypes.anon.DictkeyCurrency
+import typings.firebaseAnalyticsTypes.anon.Eventcategory
+import typings.firebaseAnalyticsTypes.anon.Firebasescreen
+import typings.firebaseAnalyticsTypes.anon.Itemid
+import typings.firebaseAnalyticsTypes.anon.Itemlistid
+import typings.firebaseAnalyticsTypes.anon.Items
+import typings.firebaseAnalyticsTypes.anon.Method
+import typings.firebaseAnalyticsTypes.anon.Pagelocation
+import typings.firebaseAnalyticsTypes.anon.Promotionid
+import typings.firebaseAnalyticsTypes.anon.Searchterm
+import typings.firebaseAnalyticsTypes.anon.Value
+import typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.add_payment_info
+import typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.add_shipping_info
+import typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.add_to_cart
+import typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.add_to_wishlist
+import typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.begin_checkout
+import typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.checkout_progress
 import typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.config
 import typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.event
+import typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.exception
+import typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.generate_lead
+import typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.login
+import typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.page_view
+import typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.purchase
+import typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.refund
+import typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.remove_from_cart
+import typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.screen_view
+import typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.search
+import typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.select_content
+import typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.select_item
+import typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.select_promotion
 import typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.set
+import typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.set_checkout_option
+import typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.share
+import typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.sign_up
+import typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.timing_complete
+import typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.view_cart
+import typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.view_item
+import typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.view_item_list
+import typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.view_promotion
+import typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.view_search_results
 import typings.firebaseAppTypes.mod.FirebaseApp
 import typings.std.IArguments
 import org.scalablytyped.runtime.StObject
@@ -64,19 +109,21 @@ object mod {
       
       inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
       
-      inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
+      inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value*))
       
       inline def setSend_to(value: String | js.Array[String]): Self = StObject.set(x, "send_to", value.asInstanceOf[js.Any])
       
       inline def setSend_toUndefined: Self = StObject.set(x, "send_to", js.undefined)
       
-      inline def setSend_toVarargs(value: String*): Self = StObject.set(x, "send_to", js.Array(value :_*))
+      inline def setSend_toVarargs(value: String*): Self = StObject.set(x, "send_to", js.Array(value*))
     }
   }
   
   type Currency = String | Double
   
-  type CustomParams = StringDictionary[js.Any]
+  type CustomEventName[T] = T
+  
+  type CustomParams = StringDictionary[Any]
   
   type DataLayer = js.Array[IArguments]
   
@@ -238,8 +285,6 @@ object mod {
     
     var checkout_step: js.UndefOr[Double] = js.undefined
     
-    var content_id: js.UndefOr[String] = js.undefined
-    
     var content_type: js.UndefOr[String] = js.undefined
     
     var coupon: js.UndefOr[String] = js.undefined
@@ -253,6 +298,18 @@ object mod {
     var event_label: js.UndefOr[String] = js.undefined
     
     var fatal: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Firebase-specific. Use to log a `screen_name` to Firebase Analytics.
+      */
+    var firebase_screen: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Firebase-specific. Use to log a `screen_class` to Firebase Analytics.
+      */
+    var firebase_screen_class: js.UndefOr[String] = js.undefined
+    
+    var item_id: js.UndefOr[String] = js.undefined
     
     var item_list_id: js.UndefOr[String] = js.undefined
     
@@ -307,10 +364,6 @@ object mod {
       
       inline def setCheckout_stepUndefined: Self = StObject.set(x, "checkout_step", js.undefined)
       
-      inline def setContent_id(value: String): Self = StObject.set(x, "content_id", value.asInstanceOf[js.Any])
-      
-      inline def setContent_idUndefined: Self = StObject.set(x, "content_id", js.undefined)
-      
       inline def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
       
       inline def setContent_typeUndefined: Self = StObject.set(x, "content_type", js.undefined)
@@ -339,6 +392,18 @@ object mod {
       
       inline def setFatalUndefined: Self = StObject.set(x, "fatal", js.undefined)
       
+      inline def setFirebase_screen(value: String): Self = StObject.set(x, "firebase_screen", value.asInstanceOf[js.Any])
+      
+      inline def setFirebase_screenUndefined: Self = StObject.set(x, "firebase_screen", js.undefined)
+      
+      inline def setFirebase_screen_class(value: String): Self = StObject.set(x, "firebase_screen_class", value.asInstanceOf[js.Any])
+      
+      inline def setFirebase_screen_classUndefined: Self = StObject.set(x, "firebase_screen_class", js.undefined)
+      
+      inline def setItem_id(value: String): Self = StObject.set(x, "item_id", value.asInstanceOf[js.Any])
+      
+      inline def setItem_idUndefined: Self = StObject.set(x, "item_id", js.undefined)
+      
       inline def setItem_list_id(value: String): Self = StObject.set(x, "item_list_id", value.asInstanceOf[js.Any])
       
       inline def setItem_list_idUndefined: Self = StObject.set(x, "item_list_id", js.undefined)
@@ -351,7 +416,7 @@ object mod {
       
       inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      inline def setItemsVarargs(value: Item*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: Item*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -377,7 +442,7 @@ object mod {
       
       inline def setPromotionsUndefined: Self = StObject.set(x, "promotions", js.undefined)
       
-      inline def setPromotionsVarargs(value: Promotion*): Self = StObject.set(x, "promotions", js.Array(value :_*))
+      inline def setPromotionsVarargs(value: Promotion*): Self = StObject.set(x, "promotions", js.Array(value*))
       
       inline def setScreen_name(value: String): Self = StObject.set(x, "screen_name", value.asInstanceOf[js.Any])
       
@@ -418,14 +483,306 @@ object mod {
       * Sends analytics event with given `eventParams`. This method
       * automatically associates this logged event with this Firebase web
       * app instance on this device.
-      * List of official event parameters can be found in
-      * {@link https://developers.google.com/gtagjs/reference/event
-      * the gtag.js reference documentation}.
+      * List of recommended event parameters can be found in
+      * {@link https://developers.google.com/gtagjs/reference/ga4-events
+      * | the GA4 reference documentation}.
       */
-    def logEvent(eventName: EventNameString): Unit = js.native
-    def logEvent(eventName: EventNameString, eventParams: Unit, options: AnalyticsCallOptions): Unit = js.native
-    def logEvent(eventName: EventNameString, eventParams: EventParams): Unit = js.native
-    def logEvent(eventName: EventNameString, eventParams: EventParams, options: AnalyticsCallOptions): Unit = js.native
+    def logEvent(
+      eventName: add_to_cart | add_to_wishlist | purchase | refund | remove_from_cart | search | select_promotion | view_cart | view_item | view_promotion | view_search_results
+    ): Unit = js.native
+    def logEvent(
+      eventName: add_to_cart | add_to_wishlist | purchase | refund | remove_from_cart | search | select_promotion | view_cart | view_item | view_promotion | view_search_results,
+      eventParams: Unit,
+      options: AnalyticsCallOptions
+    ): Unit = js.native
+    def logEvent(eventName: purchase | refund, eventParams: Affiliation): Unit = js.native
+    def logEvent(eventName: purchase | refund, eventParams: Affiliation, options: AnalyticsCallOptions): Unit = js.native
+    def logEvent(
+      eventName: add_to_cart | add_to_wishlist | remove_from_cart,
+      eventParams: typings.firebaseAnalyticsTypes.anon.Currency
+    ): Unit = js.native
+    def logEvent(
+      eventName: add_to_cart | add_to_wishlist | remove_from_cart,
+      eventParams: typings.firebaseAnalyticsTypes.anon.Currency,
+      options: AnalyticsCallOptions
+    ): Unit = js.native
+    def logEvent(eventName: view_cart | view_item, eventParams: DictkeyCurrency): Unit = js.native
+    def logEvent(eventName: view_cart | view_item, eventParams: DictkeyCurrency, options: AnalyticsCallOptions): Unit = js.native
+    def logEvent(eventName: select_promotion | view_promotion, eventParams: Promotionid): Unit = js.native
+    def logEvent(
+      eventName: select_promotion | view_promotion,
+      eventParams: Promotionid,
+      options: AnalyticsCallOptions
+    ): Unit = js.native
+    def logEvent(eventName: search | view_search_results, eventParams: Searchterm): Unit = js.native
+    def logEvent(eventName: search | view_search_results, eventParams: Searchterm, options: AnalyticsCallOptions): Unit = js.native
+    /**
+      * Sends analytics event with given `eventParams`. This method
+      * automatically associates this logged event with this Firebase web
+      * app instance on this device.
+      * List of recommended event parameters can be found in
+      * {@link https://developers.google.com/gtagjs/reference/ga4-events
+      * | the GA4 reference documentation}.
+      */
+    def logEvent[T /* <: String */](eventName: CustomEventName[T]): Unit = js.native
+    def logEvent[T /* <: String */](eventName: CustomEventName[T], eventParams: StringDictionary[Any]): Unit = js.native
+    def logEvent[T /* <: String */](eventName: CustomEventName[T], eventParams: StringDictionary[Any], options: AnalyticsCallOptions): Unit = js.native
+    def logEvent[T /* <: String */](eventName: CustomEventName[T], eventParams: Unit, options: AnalyticsCallOptions): Unit = js.native
+    /**
+      * Sends analytics event with given `eventParams`. This method
+      * automatically associates this logged event with this Firebase web
+      * app instance on this device.
+      * List of recommended event parameters can be found in
+      * {@link https://developers.google.com/gtagjs/reference/ga4-events
+      * | the GA4 reference documentation}.
+      */
+    @JSName("logEvent")
+    def logEvent_addpaymentinfo(eventName: add_payment_info): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_addpaymentinfo(eventName: add_payment_info, eventParams: Unit, options: AnalyticsCallOptions): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_addpaymentinfo(eventName: add_payment_info, eventParams: Dictkey): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_addpaymentinfo(eventName: add_payment_info, eventParams: Dictkey, options: AnalyticsCallOptions): Unit = js.native
+    /**
+      * Sends analytics event with given `eventParams`. This method
+      * automatically associates this logged event with this Firebase web
+      * app instance on this device.
+      * List of recommended event parameters can be found in
+      * {@link https://developers.google.com/gtagjs/reference/ga4-events
+      * | the GA4 reference documentation}.
+      */
+    @JSName("logEvent")
+    def logEvent_addshippinginfo(eventName: add_shipping_info): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_addshippinginfo(eventName: add_shipping_info, eventParams: Unit, options: AnalyticsCallOptions): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_addshippinginfo(eventName: add_shipping_info, eventParams: Coupon): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_addshippinginfo(eventName: add_shipping_info, eventParams: Coupon, options: AnalyticsCallOptions): Unit = js.native
+    /**
+      * Sends analytics event with given `eventParams`. This method
+      * automatically associates this logged event with this Firebase web
+      * app instance on this device.
+      * List of recommended event parameters can be found in
+      * {@link https://developers.google.com/gtagjs/reference/ga4-events
+      * | the GA4 reference documentation}.
+      */
+    @JSName("logEvent")
+    def logEvent_begincheckout(eventName: begin_checkout): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_begincheckout(eventName: begin_checkout, eventParams: Unit, options: AnalyticsCallOptions): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_begincheckout(eventName: begin_checkout, eventParams: Items): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_begincheckout(eventName: begin_checkout, eventParams: Items, options: AnalyticsCallOptions): Unit = js.native
+    /**
+      * Sends analytics event with given `eventParams`. This method
+      * automatically associates this logged event with this Firebase web
+      * app instance on this device.
+      * List of recommended event parameters can be found in
+      * {@link https://developers.google.com/gtagjs/reference/ga4-events
+      * | the GA4 reference documentation}.
+      */
+    @JSName("logEvent")
+    def logEvent_checkoutprogress(eventName: checkout_progress): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_checkoutprogress(eventName: checkout_progress, eventParams: Unit, options: AnalyticsCallOptions): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_checkoutprogress(eventName: checkout_progress, eventParams: Checkoutoption): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_checkoutprogress(eventName: checkout_progress, eventParams: Checkoutoption, options: AnalyticsCallOptions): Unit = js.native
+    /**
+      * Sends analytics event with given `eventParams`. This method
+      * automatically associates this logged event with this Firebase web
+      * app instance on this device.
+      * See
+      * {@link https://developers.google.com/analytics/devguides/collection/ga4/exceptions
+      * | Measure exceptions}.
+      */
+    @JSName("logEvent")
+    def logEvent_exception(eventName: exception): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_exception(eventName: exception, eventParams: Unit, options: AnalyticsCallOptions): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_exception(eventName: exception, eventParams: Description): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_exception(eventName: exception, eventParams: Description, options: AnalyticsCallOptions): Unit = js.native
+    /**
+      * Sends analytics event with given `eventParams`. This method
+      * automatically associates this logged event with this Firebase web
+      * app instance on this device.
+      * List of recommended event parameters can be found in
+      * {@link https://developers.google.com/gtagjs/reference/ga4-events
+      * | the GA4 reference documentation}.
+      */
+    @JSName("logEvent")
+    def logEvent_generatelead(eventName: generate_lead): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_generatelead(eventName: generate_lead, eventParams: Unit, options: AnalyticsCallOptions): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_generatelead(eventName: generate_lead, eventParams: Value): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_generatelead(eventName: generate_lead, eventParams: Value, options: AnalyticsCallOptions): Unit = js.native
+    /**
+      * Sends analytics event with given `eventParams`. This method
+      * automatically associates this logged event with this Firebase web
+      * app instance on this device.
+      * List of recommended event parameters can be found in
+      * {@link https://developers.google.com/gtagjs/reference/ga4-events
+      * | the GA4 reference documentation}.
+      */
+    @JSName("logEvent")
+    def logEvent_login(eventName: login): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_login(eventName: login, eventParams: Unit, options: AnalyticsCallOptions): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_login(eventName: login, eventParams: Method): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_login(eventName: login, eventParams: Method, options: AnalyticsCallOptions): Unit = js.native
+    /**
+      * Sends analytics event with given `eventParams`. This method
+      * automatically associates this logged event with this Firebase web
+      * app instance on this device.
+      * See
+      * {@link https://developers.google.com/analytics/devguides/collection/ga4/page-view
+      * | Page views}.
+      */
+    @JSName("logEvent")
+    def logEvent_pageview(eventName: page_view): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_pageview(eventName: page_view, eventParams: Unit, options: AnalyticsCallOptions): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_pageview(eventName: page_view, eventParams: Pagelocation): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_pageview(eventName: page_view, eventParams: Pagelocation, options: AnalyticsCallOptions): Unit = js.native
+    /**
+      * Sends analytics event with given `eventParams`. This method
+      * automatically associates this logged event with this Firebase web
+      * app instance on this device.
+      * See {@link https://firebase.google.com/docs/analytics/screenviews
+      * | Track Screenviews}.
+      */
+    @JSName("logEvent")
+    def logEvent_screenview(eventName: screen_view): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_screenview(eventName: screen_view, eventParams: Unit, options: AnalyticsCallOptions): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_screenview(eventName: screen_view, eventParams: Firebasescreen): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_screenview(eventName: screen_view, eventParams: Firebasescreen, options: AnalyticsCallOptions): Unit = js.native
+    /**
+      * Sends analytics event with given `eventParams`. This method
+      * automatically associates this logged event with this Firebase web
+      * app instance on this device.
+      * List of recommended event parameters can be found in
+      * {@link https://developers.google.com/gtagjs/reference/ga4-events
+      * | the GA4 reference documentation}.
+      */
+    @JSName("logEvent")
+    def logEvent_selectcontent(eventName: select_content): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_selectcontent(eventName: select_content, eventParams: Unit, options: AnalyticsCallOptions): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_selectcontent(eventName: select_content, eventParams: Contenttype): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_selectcontent(eventName: select_content, eventParams: Contenttype, options: AnalyticsCallOptions): Unit = js.native
+    /**
+      * Sends analytics event with given `eventParams`. This method
+      * automatically associates this logged event with this Firebase web
+      * app instance on this device.
+      * List of recommended event parameters can be found in
+      * {@link https://developers.google.com/gtagjs/reference/ga4-events
+      * | the GA4 reference documentation}.
+      */
+    @JSName("logEvent")
+    def logEvent_selectitem(eventName: select_item): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_selectitem(eventName: select_item, eventParams: Unit, options: AnalyticsCallOptions): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_selectitem(eventName: select_item, eventParams: Itemlistid): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_selectitem(eventName: select_item, eventParams: Itemlistid, options: AnalyticsCallOptions): Unit = js.native
+    /**
+      * Sends analytics event with given `eventParams`. This method
+      * automatically associates this logged event with this Firebase web
+      * app instance on this device.
+      * List of recommended event parameters can be found in
+      * {@link https://developers.google.com/gtagjs/reference/ga4-events
+      * | the GA4 reference documentation}.
+      */
+    @JSName("logEvent")
+    def logEvent_setcheckoutoption(eventName: set_checkout_option): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_setcheckoutoption(eventName: set_checkout_option, eventParams: Unit, options: AnalyticsCallOptions): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_setcheckoutoption(eventName: set_checkout_option, eventParams: Checkoutstep): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_setcheckoutoption(eventName: set_checkout_option, eventParams: Checkoutstep, options: AnalyticsCallOptions): Unit = js.native
+    /**
+      * Sends analytics event with given `eventParams`. This method
+      * automatically associates this logged event with this Firebase web
+      * app instance on this device.
+      * List of recommended event parameters can be found in
+      * {@link https://developers.google.com/gtagjs/reference/ga4-events
+      * | the GA4 reference documentation}.
+      */
+    @JSName("logEvent")
+    def logEvent_share(eventName: share): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_share(eventName: share, eventParams: Unit, options: AnalyticsCallOptions): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_share(eventName: share, eventParams: Itemid): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_share(eventName: share, eventParams: Itemid, options: AnalyticsCallOptions): Unit = js.native
+    /**
+      * Sends analytics event with given `eventParams`. This method
+      * automatically associates this logged event with this Firebase web
+      * app instance on this device.
+      * List of recommended event parameters can be found in
+      * {@link https://developers.google.com/gtagjs/reference/ga4-events
+      * | the GA4 reference documentation}.
+      */
+    @JSName("logEvent")
+    def logEvent_signup(eventName: sign_up): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_signup(eventName: sign_up, eventParams: Unit, options: AnalyticsCallOptions): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_signup(eventName: sign_up, eventParams: Method): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_signup(eventName: sign_up, eventParams: Method, options: AnalyticsCallOptions): Unit = js.native
+    /**
+      * Sends analytics event with given `eventParams`. This method
+      * automatically associates this logged event with this Firebase web
+      * app instance on this device.
+      * List of recommended event parameters can be found in
+      * {@link https://developers.google.com/gtagjs/reference/ga4-events
+      * | the GA4 reference documentation}.
+      */
+    @JSName("logEvent")
+    def logEvent_timingcomplete(eventName: timing_complete): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_timingcomplete(eventName: timing_complete, eventParams: Unit, options: AnalyticsCallOptions): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_timingcomplete(eventName: timing_complete, eventParams: Eventcategory): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_timingcomplete(eventName: timing_complete, eventParams: Eventcategory, options: AnalyticsCallOptions): Unit = js.native
+    /**
+      * Sends analytics event with given `eventParams`. This method
+      * automatically associates this logged event with this Firebase web
+      * app instance on this device.
+      * List of recommended event parameters can be found in
+      * {@link https://developers.google.com/gtagjs/reference/ga4-events
+      * | the GA4 reference documentation}.
+      */
+    @JSName("logEvent")
+    def logEvent_viewitemlist(eventName: view_item_list): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_viewitemlist(eventName: view_item_list, eventParams: Unit, options: AnalyticsCallOptions): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_viewitemlist(eventName: view_item_list, eventParams: Itemlistid): Unit = js.native
+    @JSName("logEvent")
+    def logEvent_viewitemlist(eventName: view_item_list, eventParams: Itemlistid, options: AnalyticsCallOptions): Unit = js.native
     
     /**
       * Sets whether analytics collection is enabled for this app on this device.
@@ -448,8 +805,8 @@ object mod {
     /**
       * Use gtag 'config' command to set all params specified.
       */
-    def setUserProperties(properties: StringDictionary[js.Any]): Unit = js.native
-    def setUserProperties(properties: StringDictionary[js.Any], options: AnalyticsCallOptions): Unit = js.native
+    def setUserProperties(properties: StringDictionary[Any]): Unit = js.native
+    def setUserProperties(properties: StringDictionary[Any], options: AnalyticsCallOptions): Unit = js.native
   }
   
   @js.native
@@ -766,18 +1123,19 @@ object mod {
     
     trait NameServiceMapping extends StObject {
       
-      var analytics: FirebaseAnalytics
+      var `analytics-compat`: FirebaseAnalytics
     }
     object NameServiceMapping {
       
-      inline def apply(analytics: FirebaseAnalytics): NameServiceMapping = {
-        val __obj = js.Dynamic.literal(analytics = analytics.asInstanceOf[js.Any])
+      inline def apply(`analytics-compat`: FirebaseAnalytics): NameServiceMapping = {
+        val __obj = js.Dynamic.literal()
+        __obj.updateDynamic("analytics-compat")(`analytics-compat`.asInstanceOf[js.Any])
         __obj.asInstanceOf[NameServiceMapping]
       }
       
       extension [Self <: NameServiceMapping](x: Self) {
         
-        inline def setAnalytics(value: FirebaseAnalytics): Self = StObject.set(x, "analytics", value.asInstanceOf[js.Any])
+        inline def `setAnalytics-compat`(value: FirebaseAnalytics): Self = StObject.set(x, "analytics-compat", value.asInstanceOf[js.Any])
       }
     }
   }

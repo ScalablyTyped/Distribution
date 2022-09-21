@@ -11,78 +11,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object compoundWriteMod {
   
-  @JSImport("@firebase/database/dist/src/core/CompoundWrite", "CompoundWrite")
+  @JSImport("@firebase/database/dist/node-esm/src/core/CompoundWrite", JSImport.Namespace)
   @js.native
-  class CompoundWrite protected () extends StObject {
+  val ^ : js.Any = js.native
+  
+  @JSImport("@firebase/database/dist/node-esm/src/core/CompoundWrite", "CompoundWrite")
+  @js.native
+  open class CompoundWrite protected () extends StObject {
     def this(writeTree_ : ImmutableTree[Node]) = this()
     
-    def addWrite(path: Path, node: Node): CompoundWrite = js.native
-    
-    def addWrites(path: Path, updates: StringDictionary[Node]): CompoundWrite = js.native
-    
-    /**
-      * Applies this CompoundWrite to a node. The node is returned with all writes from this CompoundWrite applied to the
-      * node
-      * @param node The node to apply this CompoundWrite to
-      * @return The node with all writes applied
-      */
-    @JSName("apply")
-    def apply(node: Node): Node = js.native
-    
-    def childCompoundWrite(path: Path): CompoundWrite = js.native
-    
-    /**
-      * Returns all children that are guaranteed to be a complete overwrite.
-      *
-      * @return A list of all complete children.
-      */
-    def getCompleteChildren(): js.Array[NamedNode] = js.native
-    
-    /**
-      * Returns a node for a path if and only if the node is a "complete" overwrite at that path. This will not aggregate
-      * writes from deeper paths, but will return child nodes from a more shallow path.
-      *
-      * @param path The path to get a complete write
-      * @return The node if complete at that path, or null otherwise.
-      */
-    def getCompleteNode(path: Path): Node | Null = js.native
-    
-    /**
-      * Returns whether this CompoundWrite will fully overwrite a node at a given location and can therefore be
-      * considered "complete".
-      *
-      * @param path The path to check for
-      * @return Whether there is a complete write at that path
-      */
-    def hasCompleteWrite(path: Path): Boolean = js.native
-    
-    /**
-      * Returns true if this CompoundWrite is empty and therefore does not modify any nodes.
-      * @return Whether this CompoundWrite is empty
-      */
-    def isEmpty(): Boolean = js.native
-    
-    /**
-      * Will remove a write at the given path and deeper paths. This will <em>not</em> modify a write at a higher
-      * location, which must be removed by calling this method with that path.
-      *
-      * @param path The path at which a write and all deeper writes should be removed
-      * @return {!CompoundWrite} The new CompoundWrite with the removed path
-      */
-    def removeWrite(path: Path): CompoundWrite = js.native
-    
-    /* private */ var writeTree_ : js.Any = js.native
+    var writeTree_ : ImmutableTree[Node] = js.native
   }
   /* static members */
   object CompoundWrite {
     
-    @JSImport("@firebase/database/dist/src/core/CompoundWrite", "CompoundWrite")
+    @JSImport("@firebase/database/dist/node-esm/src/core/CompoundWrite", "CompoundWrite")
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("@firebase/database/dist/src/core/CompoundWrite", "CompoundWrite.Empty")
-    @js.native
-    def Empty: CompoundWrite = js.native
-    inline def Empty_=(x: CompoundWrite): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Empty")(x.asInstanceOf[js.Any])
+    inline def empty(): CompoundWrite = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[CompoundWrite]
   }
+  
+  inline def compoundWriteAddWrite(compoundWrite: CompoundWrite, path: Path, node: Node): CompoundWrite = (^.asInstanceOf[js.Dynamic].applyDynamic("compoundWriteAddWrite")(compoundWrite.asInstanceOf[js.Any], path.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[CompoundWrite]
+  
+  inline def compoundWriteAddWrites(compoundWrite: CompoundWrite, path: Path, updates: StringDictionary[Node]): CompoundWrite = (^.asInstanceOf[js.Dynamic].applyDynamic("compoundWriteAddWrites")(compoundWrite.asInstanceOf[js.Any], path.asInstanceOf[js.Any], updates.asInstanceOf[js.Any])).asInstanceOf[CompoundWrite]
+  
+  inline def compoundWriteApply(compoundWrite: CompoundWrite, node: Node): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("compoundWriteApply")(compoundWrite.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[Node]
+  
+  inline def compoundWriteChildCompoundWrite(compoundWrite: CompoundWrite, path: Path): CompoundWrite = (^.asInstanceOf[js.Dynamic].applyDynamic("compoundWriteChildCompoundWrite")(compoundWrite.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[CompoundWrite]
+  
+  inline def compoundWriteGetCompleteChildren(compoundWrite: CompoundWrite): js.Array[NamedNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("compoundWriteGetCompleteChildren")(compoundWrite.asInstanceOf[js.Any]).asInstanceOf[js.Array[NamedNode]]
+  
+  inline def compoundWriteGetCompleteNode(compoundWrite: CompoundWrite, path: Path): Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("compoundWriteGetCompleteNode")(compoundWrite.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Node | Null]
+  
+  inline def compoundWriteHasCompleteWrite(compoundWrite: CompoundWrite, path: Path): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compoundWriteHasCompleteWrite")(compoundWrite.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def compoundWriteIsEmpty(compoundWrite: CompoundWrite): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("compoundWriteIsEmpty")(compoundWrite.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def compoundWriteRemoveWrite(compoundWrite: CompoundWrite, path: Path): CompoundWrite = (^.asInstanceOf[js.Dynamic].applyDynamic("compoundWriteRemoveWrite")(compoundWrite.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[CompoundWrite]
 }

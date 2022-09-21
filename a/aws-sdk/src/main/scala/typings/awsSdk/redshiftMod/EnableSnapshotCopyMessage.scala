@@ -12,12 +12,12 @@ trait EnableSnapshotCopyMessage extends StObject {
   var ClusterIdentifier: String
   
   /**
-    * The destination AWS Region that you want to copy snapshots to. Constraints: Must be the name of a valid AWS Region. For more information, see Regions and Endpoints in the Amazon Web Services General Reference. 
+    * The destination Amazon Web Services Region that you want to copy snapshots to. Constraints: Must be the name of a valid Amazon Web Services Region. For more information, see Regions and Endpoints in the Amazon Web Services General Reference. 
     */
   var DestinationRegion: String
   
   /**
-    * The number of days to retain newly copied snapshots in the destination AWS Region after they are copied from the source AWS Region. If the value is -1, the manual snapshot is retained indefinitely.  The value must be either -1 or an integer between 1 and 3,653.
+    * The number of days to retain newly copied snapshots in the destination Amazon Web Services Region after they are copied from the source Amazon Web Services Region. If the value is -1, the manual snapshot is retained indefinitely.  The value must be either -1 or an integer between 1 and 3,653.
     */
   var ManualSnapshotRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined
   
@@ -27,7 +27,7 @@ trait EnableSnapshotCopyMessage extends StObject {
   var RetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
-    * The name of the snapshot copy grant to use when snapshots of an AWS KMS-encrypted cluster are copied to the destination region.
+    * The name of the snapshot copy grant to use when snapshots of an Amazon Web Services KMS-encrypted cluster are copied to the destination region.
     */
   var SnapshotCopyGrantName: js.UndefOr[String] = js.undefined
 }

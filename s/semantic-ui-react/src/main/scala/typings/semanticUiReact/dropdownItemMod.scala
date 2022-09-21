@@ -28,10 +28,9 @@ object dropdownItemMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/modules/Dropdown/DropdownItem", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[DropdownItemProps, ComponentState, js.Any] {
+  open class default protected () extends Component[DropdownItemProps, ComponentState, Any] {
     def this(props: DropdownItemProps) = this()
-    def this(props: DropdownItemProps, context: js.Any) = this()
+    def this(props: DropdownItemProps, context: Any) = this()
   }
   @JSImport("semantic-ui-react/dist/commonjs/modules/Dropdown/DropdownItem", JSImport.Default)
   @js.native
@@ -40,7 +39,7 @@ object dropdownItemMod extends Shortcut {
   trait DropdownItemProps
     extends StObject
        with StrictDropdownItemProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object DropdownItemProps {
     
     inline def apply(): DropdownItemProps = {
@@ -55,7 +54,7 @@ object dropdownItemMod extends Shortcut {
     var active: js.UndefOr[Boolean] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -123,7 +122,7 @@ object dropdownItemMod extends Shortcut {
       
       inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       

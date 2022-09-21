@@ -5,8 +5,8 @@ import typings.maximMazurokGapiClientDisplayvideo.anon.AdvertiserId
 import typings.maximMazurokGapiClientDisplayvideo.anon.CallbackCreativeId
 import typings.maximMazurokGapiClientDisplayvideo.anon.CreativeId
 import typings.maximMazurokGapiClientDisplayvideo.anon.CreativeIdFields
-import typings.maximMazurokGapiClientDisplayvideo.anon.Fields
-import typings.maximMazurokGapiClientDisplayvideo.anon.KeyOauthtoken
+import typings.maximMazurokGapiClientDisplayvideo.anon.OauthtokenPrettyPrint
+import typings.maximMazurokGapiClientDisplayvideo.anon.PageToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +16,7 @@ trait CreativesResource extends StObject {
   
   def create(request: AdvertiserId, body: Creative): Request[Creative] = js.native
   /** Creates a new creative. Returns the newly created creative if successful. */
-  def create(request: KeyOauthtoken): Request[Creative] = js.native
+  def create(request: OauthtokenPrettyPrint): Request[Creative] = js.native
   
   /**
     * Deletes a creative. Returns error code `NOT_FOUND` if the creative does not exist. The creative should be archived first, i.e. set entity_status to `ENTITY_STATUS_ARCHIVED`, before
@@ -34,7 +34,7 @@ trait CreativesResource extends StObject {
     * included in the results.
     */
   def list(): Request[ListCreativesResponse] = js.native
-  def list(request: Fields): Request[ListCreativesResponse] = js.native
+  def list(request: PageToken): Request[ListCreativesResponse] = js.native
   
   /** Updates an existing creative. Returns the updated creative if successful. */
   def patch(request: CallbackCreativeId): Request[Creative] = js.native

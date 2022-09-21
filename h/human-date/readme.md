@@ -10,10 +10,10 @@ Return dates and times in easily readable formats
 | ------------------ | :-------------: |
 | Full name          | human-date |
 | Keywords           | date, time, human, humanize, relative, readable |
-| # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 51890 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7295.0 |
+| # stars            | 44.0 |
 
 ## Links
 - [Homepage](https://github.com/montanaflynn/human-date)

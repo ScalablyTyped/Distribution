@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Footnotes")
 @js.native
-/* private */ class Footnotes ()
+/* private */ open class Footnotes ()
   extends StObject
      with typings.activexWord.Word.Footnotes

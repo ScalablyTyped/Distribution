@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * [Api set: WordApi]
+  * @remarks
+  * [Api set: WordApi BETA (PREVIEW ONLY)]
+  * @beta
   */
 @JSGlobal("Word.ImageFormat")
 @js.native

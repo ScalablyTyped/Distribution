@@ -1,7 +1,7 @@
 
 # Scala.js typings for swagger-ui-react
 
-Typings are for version 3.35
+Typings are for version 4.11
 
 ## Library description:
 [![NPM version](https://badge.fury.io/js/swagger-ui-react.svg)](http://badge.fury.io/js/swagger-ui-react)
@@ -10,10 +10,10 @@ Typings are for version 3.35
 | ------------------ | :-------------: |
 | Full name          | swagger-ui-react |
 | Keywords           | - |
-| # releases         | 63 |
-| # dependents       | 9 |
-| # downloads        | 983736 |
-| # stars            | 0 |
+| # releases         | 77 |
+| # dependents       | 0.0 |
+| # downloads        | 330812.0 |
+| # stars            | 22529.0 |
 
 ## Links
 - [Homepage](https://github.com/swagger-api/swagger-ui)

@@ -1,0 +1,82 @@
+package typings.awsSdk.protonMod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait ServiceTemplateSummary extends StObject {
+  
+  /**
+    * The Amazon Resource Name (ARN) of the service template.
+    */
+  var arn: ServiceTemplateArn
+  
+  /**
+    * The time when the service template was created.
+    */
+  var createdAt: js.Date
+  
+  /**
+    * A description of the service template.
+    */
+  var description: js.UndefOr[Description] = js.undefined
+  
+  /**
+    * The service template name as displayed in the developer interface.
+    */
+  var displayName: js.UndefOr[DisplayName] = js.undefined
+  
+  /**
+    * The time when the service template was last modified.
+    */
+  var lastModifiedAt: js.Date
+  
+  /**
+    * The name of the service template.
+    */
+  var name: ResourceName
+  
+  /**
+    * If pipelineProvisioning is true, a service pipeline is included in the service template, otherwise a service pipeline isn't included in the service template.
+    */
+  var pipelineProvisioning: js.UndefOr[Provisioning] = js.undefined
+  
+  /**
+    * The recommended version of the service template.
+    */
+  var recommendedVersion: js.UndefOr[FullTemplateVersionNumber] = js.undefined
+}
+object ServiceTemplateSummary {
+  
+  inline def apply(arn: ServiceTemplateArn, createdAt: js.Date, lastModifiedAt: js.Date, name: ResourceName): ServiceTemplateSummary = {
+    val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], createdAt = createdAt.asInstanceOf[js.Any], lastModifiedAt = lastModifiedAt.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ServiceTemplateSummary]
+  }
+  
+  extension [Self <: ServiceTemplateSummary](x: Self) {
+    
+    inline def setArn(value: ServiceTemplateArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    
+    inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setDisplayName(value: DisplayName): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    
+    inline def setLastModifiedAt(value: js.Date): Self = StObject.set(x, "lastModifiedAt", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setPipelineProvisioning(value: Provisioning): Self = StObject.set(x, "pipelineProvisioning", value.asInstanceOf[js.Any])
+    
+    inline def setPipelineProvisioningUndefined: Self = StObject.set(x, "pipelineProvisioning", js.undefined)
+    
+    inline def setRecommendedVersion(value: FullTemplateVersionNumber): Self = StObject.set(x, "recommendedVersion", value.asInstanceOf[js.Any])
+    
+    inline def setRecommendedVersionUndefined: Self = StObject.set(x, "recommendedVersion", js.undefined)
+  }
+}

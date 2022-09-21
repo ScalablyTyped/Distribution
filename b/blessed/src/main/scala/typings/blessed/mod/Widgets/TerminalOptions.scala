@@ -3,7 +3,7 @@ package typings.blessed.mod.Widgets
 import typings.blessed.blessedStrings.block
 import typings.blessed.blessedStrings.line
 import typings.blessed.blessedStrings.underline
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ trait TerminalOptions
   /**
     * args for shell.
     */
-  var args: js.UndefOr[js.Any] = js.undefined
+  var args: js.UndefOr[Any] = js.undefined
   
   /**
     * can be line, underline, and block.
@@ -25,7 +25,7 @@ trait TerminalOptions
   /**
     * Object for process env.
     */
-  var env: js.UndefOr[js.Any] = js.undefined
+  var env: js.UndefOr[Any] = js.undefined
   
   /**
     * handler for input data.
@@ -48,7 +48,7 @@ object TerminalOptions {
   
   extension [Self <: TerminalOptions](x: Self) {
     
-    inline def setArgs(value: js.Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
@@ -56,7 +56,7 @@ object TerminalOptions {
     
     inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
-    inline def setEnv(value: js.Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+    inline def setEnv(value: Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
     inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     

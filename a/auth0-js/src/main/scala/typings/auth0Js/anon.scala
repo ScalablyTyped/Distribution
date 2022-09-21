@@ -116,19 +116,25 @@ object anon {
   
   trait Connection extends StObject {
     
-    /** name of the connection where the user will be created */
+    /** the connection name */
     var connection: String
     
-    /** user email address */
-    var email: String
+    /** only if type = email */
+    var email: js.UndefOr[String] = js.undefined
     
-    /** user password */
-    var password: String
+    /**  only if type = sms */
+    var phoneNumber: js.UndefOr[String] = js.undefined
+    
+    var `type`: sms | email
+    
+    /** the TOTP code */
+    var verificationCode: String
   }
   object Connection {
     
-    inline def apply(connection: String, email: String, password: String): Connection = {
-      val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any])
+    inline def apply(connection: String, `type`: sms | email, verificationCode: String): Connection = {
+      val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], verificationCode = verificationCode.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Connection]
     }
     
@@ -138,7 +144,15 @@ object anon {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+      
+      inline def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
+      
+      inline def setPhoneNumberUndefined: Self = StObject.set(x, "phoneNumber", js.undefined)
+      
+      inline def setType(value: sms | email): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setVerificationCode(value: String): Self = StObject.set(x, "verificationCode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -161,25 +175,22 @@ object anon {
   
   trait Email extends StObject {
     
-    /** the connection name */
+    /** name of the connection where the user will be created */
     var connection: String
     
-    /** only if type = email */
-    var email: js.UndefOr[String] = js.undefined
+    /** user email address */
+    var email: String
     
-    /**  only if type = sms */
-    var phoneNumber: js.UndefOr[String] = js.undefined
+    /** user password */
+    var password: String
     
-    var `type`: sms | email
-    
-    /** the TOTP code */
-    var verificationCode: String
+    /** allow userMetadata to be passed to signUp */
+    var userMetadata: js.UndefOr[Any] = js.undefined
   }
   object Email {
     
-    inline def apply(connection: String, `type`: sms | email, verificationCode: String): Email = {
-      val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], verificationCode = verificationCode.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    inline def apply(connection: String, email: String, password: String): Email = {
+      val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any])
       __obj.asInstanceOf[Email]
     }
     
@@ -189,15 +200,11 @@ object anon {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      inline def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
+      inline def setUserMetadata(value: Any): Self = StObject.set(x, "userMetadata", value.asInstanceOf[js.Any])
       
-      inline def setPhoneNumberUndefined: Self = StObject.set(x, "phoneNumber", js.undefined)
-      
-      inline def setType(value: sms | email): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-      
-      inline def setVerificationCode(value: String): Self = StObject.set(x, "verificationCode", value.asInstanceOf[js.Any])
+      inline def setUserMetadataUndefined: Self = StObject.set(x, "userMetadata", js.undefined)
     }
   }
   
@@ -377,6 +384,114 @@ object anon {
       inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
       inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    }
+  }
+  
+  /* Inlined {  email :string,   password :string,   connection :string,   userMetadata :unknown | undefined} & auth0-js.auth0-js.CrossOriginLoginOptions */
+  trait emailstringpasswordstring extends StObject {
+    
+    var audience: js.UndefOr[String] = js.undefined
+    
+    var clientID: js.UndefOr[String] = js.undefined
+    
+    /** name of the connection where the user will be created */
+    var connection: String
+    
+    var domain: js.UndefOr[String] = js.undefined
+    
+    /** user email address */
+    var email: String & js.UndefOr[String]
+    
+    var nonce: js.UndefOr[String] = js.undefined
+    
+    var onRedirecting: js.UndefOr[js.Function1[/* done */ js.Function0[Unit], js.UndefOr[Unit]]] = js.undefined
+    
+    /** user password */
+    var password: String
+    
+    var realm: js.UndefOr[String] = js.undefined
+    
+    var redirectUri: js.UndefOr[String] = js.undefined
+    
+    var responseMode: js.UndefOr[String] = js.undefined
+    
+    var responseType: js.UndefOr[String] = js.undefined
+    
+    var scope: js.UndefOr[String] = js.undefined
+    
+    var state: js.UndefOr[String] = js.undefined
+    
+    /** allow userMetadata to be passed to signUp */
+    var userMetadata: js.UndefOr[Any] = js.undefined
+    
+    var username: js.UndefOr[String] = js.undefined
+  }
+  object emailstringpasswordstring {
+    
+    inline def apply(connection: String, email: String & js.UndefOr[String], password: String): emailstringpasswordstring = {
+      val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any])
+      __obj.asInstanceOf[emailstringpasswordstring]
+    }
+    
+    extension [Self <: emailstringpasswordstring](x: Self) {
+      
+      inline def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
+      
+      inline def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
+      
+      inline def setClientID(value: String): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
+      
+      inline def setClientIDUndefined: Self = StObject.set(x, "clientID", js.undefined)
+      
+      inline def setConnection(value: String): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+      
+      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      
+      inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+      
+      inline def setEmail(value: String & js.UndefOr[String]): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
+      
+      inline def setOnRedirecting(value: /* done */ js.Function0[Unit] => js.UndefOr[Unit]): Self = StObject.set(x, "onRedirecting", js.Any.fromFunction1(value))
+      
+      inline def setOnRedirectingUndefined: Self = StObject.set(x, "onRedirecting", js.undefined)
+      
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      
+      inline def setRealm(value: String): Self = StObject.set(x, "realm", value.asInstanceOf[js.Any])
+      
+      inline def setRealmUndefined: Self = StObject.set(x, "realm", js.undefined)
+      
+      inline def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
+      
+      inline def setRedirectUriUndefined: Self = StObject.set(x, "redirectUri", js.undefined)
+      
+      inline def setResponseMode(value: String): Self = StObject.set(x, "responseMode", value.asInstanceOf[js.Any])
+      
+      inline def setResponseModeUndefined: Self = StObject.set(x, "responseMode", js.undefined)
+      
+      inline def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+      
+      inline def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
+      
+      inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      
+      inline def setUserMetadata(value: Any): Self = StObject.set(x, "userMetadata", value.asInstanceOf[js.Any])
+      
+      inline def setUserMetadataUndefined: Self = StObject.set(x, "userMetadata", js.undefined)
+      
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      
+      inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     }
   }
 }

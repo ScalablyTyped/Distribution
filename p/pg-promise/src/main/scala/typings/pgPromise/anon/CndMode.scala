@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CndMode extends StObject {
   
-  var cnd: js.UndefOr[js.Any] = js.undefined
+  var cnd: js.UndefOr[Any] = js.undefined
   
   var mode: js.UndefOr[TransactionMode | Null] = js.undefined
   
-  var tag: js.UndefOr[js.Any] = js.undefined
+  var tag: js.UndefOr[Any] = js.undefined
 }
 object CndMode {
   
@@ -22,7 +22,7 @@ object CndMode {
   
   extension [Self <: CndMode](x: Self) {
     
-    inline def setCnd(value: js.Any): Self = StObject.set(x, "cnd", value.asInstanceOf[js.Any])
+    inline def setCnd(value: Any): Self = StObject.set(x, "cnd", value.asInstanceOf[js.Any])
     
     inline def setCndUndefined: Self = StObject.set(x, "cnd", js.undefined)
     
@@ -32,7 +32,7 @@ object CndMode {
     
     inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    inline def setTag(value: js.Any): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: Any): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
     inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }

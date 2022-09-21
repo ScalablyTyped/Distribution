@@ -54,10 +54,7 @@ trait TextNode
   val hasMissingFont: Boolean = js.native
   
   def insertCharacters(start: Double, characters: String): Unit = js.native
-  @JSName("insertCharacters")
-  def insertCharacters_AFTER(start: Double, characters: String, useStyle: AFTER): Unit = js.native
-  @JSName("insertCharacters")
-  def insertCharacters_BEFORE(start: Double, characters: String, useStyle: BEFORE): Unit = js.native
+  def insertCharacters(start: Double, characters: String, useStyle: BEFORE | AFTER): Unit = js.native
   
   var letterSpacing: LetterSpacing | js.Symbol = js.native
   

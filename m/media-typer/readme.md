@@ -10,10 +10,10 @@ Simple RFC 6838 media type parser and formatter
 | ------------------ | :-------------: |
 | Full name          | media-typer |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 184 |
-| # downloads        | 566092778 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9.490627666666667E7 |
+| # stars            | 48.0 |
 
 ## Links
 - [Homepage](https://github.com/jshttp/media-typer#readme)

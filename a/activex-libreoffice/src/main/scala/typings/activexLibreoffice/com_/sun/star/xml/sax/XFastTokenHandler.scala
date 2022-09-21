@@ -37,7 +37,7 @@ object XFastTokenHandler {
     acquire: () => Unit,
     getTokenFromUTF8: SeqEquiv[Double] => Double,
     getUTF8Identifier: Double => SafeArray[Double],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XFastTokenHandler = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getTokenFromUTF8 = js.Any.fromFunction1(getTokenFromUTF8), getUTF8Identifier = js.Any.fromFunction1(getUTF8Identifier), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

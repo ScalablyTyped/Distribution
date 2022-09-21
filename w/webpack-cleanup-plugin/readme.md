@@ -11,9 +11,9 @@ Plugin for webpack to cleanup extraneous files from the output path directory
 | Full name          | webpack-cleanup-plugin |
 | Keywords           | webpack, webpack-plugin |
 | # releases         | 0 |
-| # dependents       | 29 |
-| # downloads        | 1149021 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 86678.0 |
+| # stars            | 59.0 |
 
 ## Links
 - [Homepage](https://github.com/gpbl/webpack-cleanup-plugin#readme)

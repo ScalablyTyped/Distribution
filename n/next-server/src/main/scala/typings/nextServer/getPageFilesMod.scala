@@ -30,7 +30,7 @@ object getPageFilesMod {
       
       inline def setDevFiles(value: js.Array[String]): Self = StObject.set(x, "devFiles", value.asInstanceOf[js.Any])
       
-      inline def setDevFilesVarargs(value: String*): Self = StObject.set(x, "devFiles", js.Array(value :_*))
+      inline def setDevFilesVarargs(value: String*): Self = StObject.set(x, "devFiles", js.Array(value*))
       
       inline def setPages(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     }

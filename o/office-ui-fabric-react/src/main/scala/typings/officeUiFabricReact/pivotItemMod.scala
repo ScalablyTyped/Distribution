@@ -10,8 +10,8 @@ object pivotItemMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Pivot/PivotItem", "PivotItem")
   @js.native
-  class PivotItem protected ()
-    extends Component[IPivotItemProps, js.Object, js.Any] {
+  open class PivotItem protected ()
+    extends Component[IPivotItemProps, js.Object, Any] {
     def this(props: IPivotItemProps) = this()
   }
 }

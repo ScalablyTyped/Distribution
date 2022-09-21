@@ -15,9 +15,9 @@ trait IHTMLDataTransfer extends StObject {
   
   var effectAllowed: String
   
-  def getData(format: String): js.Any
+  def getData(format: String): Any
   
-  def setData(format: String, data: js.Any): Boolean
+  def setData(format: String, data: Any): Boolean
 }
 object IHTMLDataTransfer {
   
@@ -26,8 +26,8 @@ object IHTMLDataTransfer {
     clearData: String => Boolean,
     dropEffect: String,
     effectAllowed: String,
-    getData: String => js.Any,
-    setData: (String, js.Any) => Boolean
+    getData: String => Any,
+    setData: (String, Any) => Boolean
   ): IHTMLDataTransfer = {
     val __obj = js.Dynamic.literal(clearData = js.Any.fromFunction1(clearData), dropEffect = dropEffect.asInstanceOf[js.Any], effectAllowed = effectAllowed.asInstanceOf[js.Any], getData = js.Any.fromFunction1(getData), setData = js.Any.fromFunction2(setData))
     __obj.updateDynamic("MSHTML.IHTMLDataTransfer_typekey")(MSHTMLDotIHTMLDataTransfer_typekey.asInstanceOf[js.Any])
@@ -42,10 +42,10 @@ object IHTMLDataTransfer {
     
     inline def setEffectAllowed(value: String): Self = StObject.set(x, "effectAllowed", value.asInstanceOf[js.Any])
     
-    inline def setGetData(value: String => js.Any): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
+    inline def setGetData(value: String => Any): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
     
     inline def setMSHTMLDotIHTMLDataTransfer_typekey(value: IHTMLDataTransfer): Self = StObject.set(x, "MSHTML.IHTMLDataTransfer_typekey", value.asInstanceOf[js.Any])
     
-    inline def setSetData(value: (String, js.Any) => Boolean): Self = StObject.set(x, "setData", js.Any.fromFunction2(value))
+    inline def setSetData(value: (String, Any) => Boolean): Self = StObject.set(x, "setData", js.Any.fromFunction2(value))
   }
 }

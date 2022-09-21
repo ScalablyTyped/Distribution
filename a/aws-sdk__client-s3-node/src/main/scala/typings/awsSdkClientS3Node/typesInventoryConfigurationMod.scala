@@ -15,7 +15,6 @@ import typings.awsSdkClientS3Node.typesInventoryFilterMod.InventoryFilter
 import typings.awsSdkClientS3Node.typesInventoryFilterMod.UnmarshalledInventoryFilter
 import typings.awsSdkClientS3Node.typesInventoryScheduleMod.InventorySchedule
 import typings.awsSdkClientS3Node.typesInventoryScheduleMod.UnmarshalledInventorySchedule
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,7 +54,7 @@ object typesInventoryConfigurationMod {
     var OptionalFields: js.UndefOr[
         (js.Array[
           Size | LastModifiedDate | StorageClass | ETag | IsMultipartUploaded | ReplicationStatus | EncryptionStatus | String
-        ]) | (Iterable[
+        ]) | (js.Iterable[
           Size | LastModifiedDate | StorageClass | ETag | IsMultipartUploaded | ReplicationStatus | EncryptionStatus | String
         ])
       ] = js.undefined
@@ -95,7 +94,7 @@ object typesInventoryConfigurationMod {
       inline def setOptionalFields(
         value: (js.Array[
               Size | LastModifiedDate | StorageClass | ETag | IsMultipartUploaded | ReplicationStatus | EncryptionStatus | String
-            ]) | (Iterable[
+            ]) | (js.Iterable[
               Size | LastModifiedDate | StorageClass | ETag | IsMultipartUploaded | ReplicationStatus | EncryptionStatus | String
             ])
       ): Self = StObject.set(x, "OptionalFields", value.asInstanceOf[js.Any])
@@ -104,7 +103,7 @@ object typesInventoryConfigurationMod {
       
       inline def setOptionalFieldsVarargs(
         value: (Size | LastModifiedDate | StorageClass | ETag | IsMultipartUploaded | ReplicationStatus | EncryptionStatus | String)*
-      ): Self = StObject.set(x, "OptionalFields", js.Array(value :_*))
+      ): Self = StObject.set(x, "OptionalFields", js.Array(value*))
       
       inline def setSchedule(value: InventorySchedule): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
     }
@@ -173,7 +172,7 @@ object typesInventoryConfigurationMod {
       
       inline def setOptionalFieldsVarargs(
         value: (Size | LastModifiedDate | StorageClass | ETag | IsMultipartUploaded | ReplicationStatus | EncryptionStatus | String)*
-      ): Self = StObject.set(x, "OptionalFields", js.Array(value :_*))
+      ): Self = StObject.set(x, "OptionalFields", js.Array(value*))
       
       inline def setSchedule(value: UnmarshalledInventorySchedule): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
     }

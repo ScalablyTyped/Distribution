@@ -6,10 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Font extends StObject {
   
+  /**
+    * Specifies the legend subtitle&apos;s font properties.
+    */
   var font: js.UndefOr[typings.devextreme.mod.DevExpress.viz.Font] = js.undefined
   
+  /**
+    * Specifies the distance between the legend&apos;s title and subtitle in pixels.
+    */
   var offset: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the subtitle&apos;s text.
+    */
   var text: js.UndefOr[String] = js.undefined
 }
 object Font {

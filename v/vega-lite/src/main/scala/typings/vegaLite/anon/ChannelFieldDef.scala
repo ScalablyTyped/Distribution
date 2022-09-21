@@ -12,13 +12,13 @@ trait ChannelFieldDef extends StObject {
   
   var channel: NonPositionChannel
   
-  var fieldDef: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]
+  var fieldDef: TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]
 }
 object ChannelFieldDef {
   
   inline def apply(
     channel: NonPositionChannel,
-    fieldDef: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]
+    fieldDef: TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]
   ): ChannelFieldDef = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], fieldDef = fieldDef.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelFieldDef]
@@ -28,6 +28,6 @@ object ChannelFieldDef {
     
     inline def setChannel(value: NonPositionChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    inline def setFieldDef(value: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]): Self = StObject.set(x, "fieldDef", value.asInstanceOf[js.Any])
+    inline def setFieldDef(value: TypedFieldDef[String, Any, Boolean | BinParams | binned | Null]): Self = StObject.set(x, "fieldDef", value.asInstanceOf[js.Any])
   }
 }

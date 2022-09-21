@@ -11,14 +11,14 @@ object mod {
   
   @JSImport("react-lazylog", "LazyLog")
   @js.native
-  class LazyLog protected ()
+  open class LazyLog protected ()
     extends typings.reactLazylog.lazyLogMod.LazyLog {
     def this(props: LazyLogProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: LazyLogProps, context: js.Any) = this()
+    def this(props: LazyLogProps, context: Any) = this()
   }
   /* static members */
   object LazyLog {
@@ -35,13 +35,13 @@ object mod {
   
   @JSImport("react-lazylog", "ScrollFollow")
   @js.native
-  class ScrollFollow protected ()
+  open class ScrollFollow protected ()
     extends typings.reactLazylog.scrollFollowMod.ScrollFollow {
     def this(props: ScrollFollowProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ScrollFollowProps, context: js.Any) = this()
+    def this(props: ScrollFollowProps, context: Any) = this()
   }
 }

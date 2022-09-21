@@ -10,10 +10,10 @@ File system-based approach for handling routes in Express.
 | ------------------ | :-------------: |
 | Full name          | express-route-fs |
 | Keywords           | express, route, fs, file, system |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 616 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 17.666666666666668 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/kripod/express-route-fs#readme)

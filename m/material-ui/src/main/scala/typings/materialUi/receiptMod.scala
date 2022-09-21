@@ -10,10 +10,10 @@ object receiptMod {
   
   @JSImport("material-ui/svg-icons/action/receipt", JSImport.Default)
   @js.native
-  class default () extends ActionReceipt
+  open class default () extends ActionReceipt
   
   @JSImport("material-ui/svg-icons/action/receipt", "ActionReceipt")
   @js.native
-  class ActionReceipt ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionReceipt ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -12,17 +12,22 @@ trait StartActivityStreamRequest extends StObject {
   var ApplyImmediately: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
-    * The AWS KMS key identifier for encrypting messages in the database activity stream. The key identifier can be either a key ID, a key ARN, or a key alias.
+    * Specifies whether the database activity stream includes engine-native audit fields. This option only applies to an Oracle DB instance. By default, no engine-native audit fields are included.
+    */
+  var EngineNativeAuditFieldsIncluded: js.UndefOr[BooleanOptional] = js.undefined
+  
+  /**
+    * The Amazon Web Services KMS key identifier for encrypting messages in the database activity stream. The Amazon Web Services KMS key identifier is the key ARN, key ID, alias ARN, or alias name for the KMS key.
     */
   var KmsKeyId: String
   
   /**
-    * Specifies the mode of the database activity stream. Database events such as a change or access generate an activity stream event. The database session can handle these events either synchronously or asynchronously. 
+    * Specifies the mode of the database activity stream. Database events such as a change or access generate an activity stream event. The database session can handle these events either synchronously or asynchronously.
     */
   var Mode: ActivityStreamMode
   
   /**
-    * The Amazon Resource Name (ARN) of the DB cluster, for example arn:aws:rds:us-east-1:12345667890:cluster:das-cluster.
+    * The Amazon Resource Name (ARN) of the DB cluster, for example, arn:aws:rds:us-east-1:12345667890:cluster:das-cluster.
     */
   var ResourceArn: String
 }
@@ -38,6 +43,10 @@ object StartActivityStreamRequest {
     inline def setApplyImmediately(value: BooleanOptional): Self = StObject.set(x, "ApplyImmediately", value.asInstanceOf[js.Any])
     
     inline def setApplyImmediatelyUndefined: Self = StObject.set(x, "ApplyImmediately", js.undefined)
+    
+    inline def setEngineNativeAuditFieldsIncluded(value: BooleanOptional): Self = StObject.set(x, "EngineNativeAuditFieldsIncluded", value.asInstanceOf[js.Any])
+    
+    inline def setEngineNativeAuditFieldsIncludedUndefined: Self = StObject.set(x, "EngineNativeAuditFieldsIncluded", js.undefined)
     
     inline def setKmsKeyId(value: String): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     

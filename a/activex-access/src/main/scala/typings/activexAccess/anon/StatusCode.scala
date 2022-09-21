@@ -8,17 +8,17 @@ trait StatusCode extends StObject {
   
   var Cancel: Boolean
   
-  val StatusCode: js.Any
+  val StatusCode: Any
   
   val TargetFrameName: String | Null
   
   val URL: String
   
-  val pDisp: js.Any
+  val pDisp: Any
 }
 object StatusCode {
   
-  inline def apply(Cancel: Boolean, StatusCode: js.Any, URL: String, pDisp: js.Any): StatusCode = {
+  inline def apply(Cancel: Boolean, StatusCode: Any, URL: String, pDisp: Any): StatusCode = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], StatusCode = StatusCode.asInstanceOf[js.Any], URL = URL.asInstanceOf[js.Any], pDisp = pDisp.asInstanceOf[js.Any], TargetFrameName = null)
     __obj.asInstanceOf[StatusCode]
   }
@@ -27,9 +27,9 @@ object StatusCode {
     
     inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     
-    inline def setPDisp(value: js.Any): Self = StObject.set(x, "pDisp", value.asInstanceOf[js.Any])
+    inline def setPDisp(value: Any): Self = StObject.set(x, "pDisp", value.asInstanceOf[js.Any])
     
-    inline def setStatusCode(value: js.Any): Self = StObject.set(x, "StatusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Any): Self = StObject.set(x, "StatusCode", value.asInstanceOf[js.Any])
     
     inline def setTargetFrameName(value: String): Self = StObject.set(x, "TargetFrameName", value.asInstanceOf[js.Any])
     

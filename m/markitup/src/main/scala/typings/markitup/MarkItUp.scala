@@ -189,7 +189,7 @@ object MarkItUp {
       
       inline def setDropMenuUndefined: Self = StObject.set(x, "dropMenu", js.undefined)
       
-      inline def setDropMenuVarargs(value: MarkupSet*): Self = StObject.set(x, "dropMenu", js.Array(value :_*))
+      inline def setDropMenuVarargs(value: MarkupSet*): Self = StObject.set(x, "dropMenu", js.Array(value*))
       
       inline def setKeepDefault(value: Boolean): Self = StObject.set(x, "keepDefault", value.asInstanceOf[js.Any])
       
@@ -371,7 +371,7 @@ object MarkItUp {
       
       inline def setMarkupSetUndefined: Self = StObject.set(x, "markupSet", js.undefined)
       
-      inline def setMarkupSetVarargs(value: MarkupSet*): Self = StObject.set(x, "markupSet", js.Array(value :_*))
+      inline def setMarkupSetVarargs(value: MarkupSet*): Self = StObject.set(x, "markupSet", js.Array(value*))
       
       inline def setNameSpace(value: String): Self = StObject.set(x, "nameSpace", value.asInstanceOf[js.Any])
       

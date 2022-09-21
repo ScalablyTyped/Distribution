@@ -10,15 +10,15 @@ object cacheMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def cache(judgeFunc: js.Any, returnCacheValueFunc: js.Any, setCacheFunc: js.Any): js.Function3[/* target */ js.Any, /* name */ js.Any, /* descriptor */ js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("cache")(judgeFunc.asInstanceOf[js.Any], returnCacheValueFunc.asInstanceOf[js.Any], setCacheFunc.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* target */ js.Any, /* name */ js.Any, /* descriptor */ js.Any, js.Any]]
+  inline def cache(judgeFunc: Any, returnCacheValueFunc: Any, setCacheFunc: Any): js.Function3[/* target */ Any, /* name */ Any, /* descriptor */ Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("cache")(judgeFunc.asInstanceOf[js.Any], returnCacheValueFunc.asInstanceOf[js.Any], setCacheFunc.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* target */ Any, /* name */ Any, /* descriptor */ Any, Any]]
   
-  inline def cacheBufferForBufferContainer(): js.Function3[/* target */ js.Any, /* name */ js.Any, /* descriptor */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("cacheBufferForBufferContainer")().asInstanceOf[js.Function3[/* target */ js.Any, /* name */ js.Any, /* descriptor */ js.Any, js.Any]]
+  inline def cacheBufferForBufferContainer(): js.Function3[/* target */ Any, /* name */ Any, /* descriptor */ Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("cacheBufferForBufferContainer")().asInstanceOf[js.Function3[/* target */ Any, /* name */ Any, /* descriptor */ Any, Any]]
   
-  inline def cacheBufferForBufferContainerWithFuncParam(setDataNameFuncName: String): js.Function3[/* target */ js.Any, /* name */ js.Any, /* descriptor */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("cacheBufferForBufferContainerWithFuncParam")(setDataNameFuncName.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* target */ js.Any, /* name */ js.Any, /* descriptor */ js.Any, js.Any]]
+  inline def cacheBufferForBufferContainerWithFuncParam(setDataNameFuncName: String): js.Function3[/* target */ Any, /* name */ Any, /* descriptor */ Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("cacheBufferForBufferContainerWithFuncParam")(setDataNameFuncName.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* target */ Any, /* name */ Any, /* descriptor */ Any, Any]]
   
   inline def cacheGetter(
     judgeFunc: js.Function0[Boolean],
-    returnCacheValueFunc: js.Function0[js.Any],
-    setCacheFunc: js.Function1[/* returnVal */ js.Any, Unit]
-  ): js.Function3[/* target */ js.Any, /* name */ js.Any, /* descriptor */ js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("cacheGetter")(judgeFunc.asInstanceOf[js.Any], returnCacheValueFunc.asInstanceOf[js.Any], setCacheFunc.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* target */ js.Any, /* name */ js.Any, /* descriptor */ js.Any, js.Any]]
+    returnCacheValueFunc: js.Function0[Any],
+    setCacheFunc: js.Function1[/* returnVal */ Any, Unit]
+  ): js.Function3[/* target */ Any, /* name */ Any, /* descriptor */ Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("cacheGetter")(judgeFunc.asInstanceOf[js.Any], returnCacheValueFunc.asInstanceOf[js.Any], setCacheFunc.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* target */ Any, /* name */ Any, /* descriptor */ Any, Any]]
 }

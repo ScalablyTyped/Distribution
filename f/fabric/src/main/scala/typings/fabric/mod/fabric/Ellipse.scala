@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("fabric", "fabric.Ellipse")
 @js.native
-class Ellipse ()
+open class Ellipse ()
   extends typings.fabric.fabricImplMod.Ellipse {
   def this(options: IEllipseOptions) = this()
 }
@@ -39,5 +39,5 @@ object Ellipse {
     * Returns Ellipse instance from an object representation
     * @param object Object to create an instance from
     */
-  inline def fromObject(`object`: js.Any): typings.fabric.fabricImplMod.Ellipse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.fabric.fabricImplMod.Ellipse]
+  inline def fromObject(`object`: Any): typings.fabric.fabricImplMod.Ellipse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.fabric.fabricImplMod.Ellipse]
 }

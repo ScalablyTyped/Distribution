@@ -24,7 +24,7 @@ object XDialogProvider {
   inline def apply(
     acquire: () => Unit,
     createDialog: String => XDialog,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XDialogProvider = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createDialog = js.Any.fromFunction1(createDialog), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents a system condition that must be in effect for a background task to run. */
 @JSGlobal("Windows.ApplicationModel.Background.SystemCondition")
 @js.native
-class SystemCondition protected ()
+open class SystemCondition protected ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Background.SystemCondition {
   /**

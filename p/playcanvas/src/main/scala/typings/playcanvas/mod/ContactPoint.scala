@@ -5,58 +5,76 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Create a new ContactPoint.
-  * @property localPoint - The point on the entity where the contact occurred, relative to the entity.
-  * @property localPointOther - The point on the other entity where the contact occurred, relative to the other entity.
-  * @property point - The point on the entity where the contact occurred, in world space.
-  * @property pointOther - The point on the other entity where the contact occurred, in world space.
-  * @property normal - The normal vector of the contact on the other entity, in world space.
-  * @param localPoint - The point on the entity where the contact occurred, relative to the entity.
-  * @param localPointOther - The point on the other entity where the contact occurred, relative to the other entity.
-  * @param point - The point on the entity where the contact occurred, in world space.
-  * @param pointOther - The point on the other entity where the contact occurred, in world space.
-  * @param normal - The normal vector of the contact on the other entity, in world space.
+  * Object holding the result of a contact between two Entities.
   */
 @JSImport("playcanvas", "ContactPoint")
 @js.native
-class ContactPoint protected ()
-  extends StObject
-     with typings.playcanvas.pc.ContactPoint {
+open class ContactPoint protected () extends StObject {
+  /**
+    * Create a new ContactPoint instance.
+    *
+    * @param {Vec3} [localPoint] - The point on the entity where the contact occurred, relative to
+    * the entity.
+    * @param {Vec3} [localPointOther] - The point on the other entity where the contact occurred,
+    * relative to the other entity.
+    * @param {Vec3} [point] - The point on the entity where the contact occurred, in world space.
+    * @param {Vec3} [pointOther] - The point on the other entity where the contact occurred, in
+    * world space.
+    * @param {Vec3} [normal] - The normal vector of the contact on the other entity, in world
+    * space.
+    * @param {number} [impulse] - The total accumulated impulse applied by the constraint solver
+    * during the last sub-step. Describes how hard two objects collide. Defaults to 0.
+    * @hideconstructor
+    */
   def this(
-    localPoint: typings.playcanvas.pc.Vec3,
-    localPointOther: typings.playcanvas.pc.Vec3,
-    point: typings.playcanvas.pc.Vec3,
-    pointOther: typings.playcanvas.pc.Vec3,
-    normal: typings.playcanvas.pc.Vec3
+    localPoint: js.UndefOr[Vec3],
+    localPointOther: js.UndefOr[Vec3],
+    point: js.UndefOr[Vec3],
+    pointOther: js.UndefOr[Vec3],
+    normal: js.UndefOr[Vec3],
+    impulse: js.UndefOr[Double]
   ) = this()
   
   /**
-    * The point on the entity where the contact occurred, relative to the entity.
+    * The total accumulated impulse applied by the constraint solver during the last sub-step.
+    * Describes how hard two objects collide.
+    *
+    * @type {number}
     */
-  /* CompleteClass */
-  var localPoint: typings.playcanvas.pc.Vec3 = js.native
+  var impulse: Double = js.native
+  
+  /**
+    * The point on the entity where the contact occurred, relative to the entity.
+    *
+    * @type {Vec3}
+    */
+  var localPoint: Vec3 = js.native
   
   /**
     * The point on the other entity where the contact occurred, relative to the other entity.
+    *
+    * @type {Vec3}
     */
-  /* CompleteClass */
-  var localPointOther: typings.playcanvas.pc.Vec3 = js.native
+  var localPointOther: Vec3 = js.native
   
   /**
     * The normal vector of the contact on the other entity, in world space.
+    *
+    * @type {Vec3}
     */
-  /* CompleteClass */
-  var normal: typings.playcanvas.pc.Vec3 = js.native
+  var normal: Vec3 = js.native
   
   /**
     * The point on the entity where the contact occurred, in world space.
+    *
+    * @type {Vec3}
     */
-  /* CompleteClass */
-  var point: typings.playcanvas.pc.Vec3 = js.native
+  var point: Vec3 = js.native
   
   /**
     * The point on the other entity where the contact occurred, in world space.
+    *
+    * @type {Vec3}
     */
-  /* CompleteClass */
-  var pointOther: typings.playcanvas.pc.Vec3 = js.native
+  var pointOther: Vec3 = js.native
 }

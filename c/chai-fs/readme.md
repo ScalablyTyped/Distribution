@@ -10,10 +10,10 @@ Chai assertions for Node.js filesystem
 | ------------------ | :-------------: |
 | Full name          | chai-fs |
 | Keywords           | chai, chai-plugin, vendor, fs, test, assertion, assert, testing, file, path, filesystem |
-| # releases         | 0 |
-| # dependents       | 19 |
-| # downloads        | 568192 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 50192.0 |
+| # stars            | 32.0 |
 
 ## Links
 - [Homepage](https://github.com/chaijs/chai-fs#readme)

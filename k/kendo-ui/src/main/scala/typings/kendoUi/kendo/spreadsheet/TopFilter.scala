@@ -10,7 +10,7 @@ trait TopFilter
   extends StObject
      with Observable {
   
-  def init(options: js.Any): Unit = js.native
+  def init(options: Any): Unit = js.native
   
   var options: TopFilterOptions = js.native
 }

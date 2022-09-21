@@ -1,74 +1,73 @@
 package typings.d
 
-import typings.std.PropertyDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(flags: Flags, value: js.Any): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].apply(flags.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
-  inline def apply(flags: Flags, value: js.Any, options: PropertyDescriptor): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].apply(flags.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
-  inline def apply(value: js.Any): PropertyDescriptor = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[PropertyDescriptor]
-  inline def apply(value: js.Any, options: PropertyDescriptor): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
+  inline def apply(flags: Flags, value: Any): js.PropertyDescriptor = (^.asInstanceOf[js.Dynamic].apply(flags.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.PropertyDescriptor]
+  inline def apply(flags: Flags, value: Any, options: js.PropertyDescriptor): js.PropertyDescriptor = (^.asInstanceOf[js.Dynamic].apply(flags.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.PropertyDescriptor]
+  inline def apply(value: Any): js.PropertyDescriptor = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[js.PropertyDescriptor]
+  inline def apply(value: Any, options: js.PropertyDescriptor): js.PropertyDescriptor = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.PropertyDescriptor]
   
   @JSImport("d", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def gs(flags: GetSetFlags, get: js.Function1[/* repeated */ js.Any, js.Any]): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(flags.asInstanceOf[js.Any], get.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
-  inline def gs(flags: GetSetFlags, get: js.Function1[/* repeated */ js.Any, js.Any], options: PropertyDescriptor): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(flags.asInstanceOf[js.Any], get.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
+  inline def gs(flags: GetSetFlags, get: js.Function1[/* repeated */ Any, Any]): js.PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(flags.asInstanceOf[js.Any], get.asInstanceOf[js.Any])).asInstanceOf[js.PropertyDescriptor]
+  inline def gs(flags: GetSetFlags, get: js.Function1[/* repeated */ Any, Any], options: js.PropertyDescriptor): js.PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(flags.asInstanceOf[js.Any], get.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.PropertyDescriptor]
   inline def gs(
     flags: GetSetFlags,
-    get: js.Function1[/* repeated */ js.Any, js.Any],
-    set: js.Function1[/* repeated */ js.Any, js.Any]
-  ): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(flags.asInstanceOf[js.Any], get.asInstanceOf[js.Any], set.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
+    get: js.Function1[/* repeated */ Any, Any],
+    set: js.Function1[/* repeated */ Any, Any]
+  ): js.PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(flags.asInstanceOf[js.Any], get.asInstanceOf[js.Any], set.asInstanceOf[js.Any])).asInstanceOf[js.PropertyDescriptor]
   inline def gs(
     flags: GetSetFlags,
-    get: js.Function1[/* repeated */ js.Any, js.Any],
-    set: js.Function1[/* repeated */ js.Any, js.Any],
-    options: PropertyDescriptor
-  ): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(flags.asInstanceOf[js.Any], get.asInstanceOf[js.Any], set.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
+    get: js.Function1[/* repeated */ Any, Any],
+    set: js.Function1[/* repeated */ Any, Any],
+    options: js.PropertyDescriptor
+  ): js.PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(flags.asInstanceOf[js.Any], get.asInstanceOf[js.Any], set.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.PropertyDescriptor]
   inline def gs(
     flags: GetSetFlags,
-    get: js.Function1[/* repeated */ js.Any, js.Any],
+    get: js.Function1[/* repeated */ Any, Any],
     set: Null,
-    options: PropertyDescriptor
-  ): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(flags.asInstanceOf[js.Any], get.asInstanceOf[js.Any], set.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
+    options: js.PropertyDescriptor
+  ): js.PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(flags.asInstanceOf[js.Any], get.asInstanceOf[js.Any], set.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.PropertyDescriptor]
   inline def gs(
     flags: GetSetFlags,
-    get: js.Function1[/* repeated */ js.Any, js.Any],
+    get: js.Function1[/* repeated */ Any, Any],
     set: Unit,
-    options: PropertyDescriptor
-  ): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(flags.asInstanceOf[js.Any], get.asInstanceOf[js.Any], set.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
-  inline def gs(flags: GetSetFlags, get: Null, set: js.Function1[/* repeated */ js.Any, js.Any]): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(flags.asInstanceOf[js.Any], get.asInstanceOf[js.Any], set.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
+    options: js.PropertyDescriptor
+  ): js.PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(flags.asInstanceOf[js.Any], get.asInstanceOf[js.Any], set.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.PropertyDescriptor]
+  inline def gs(flags: GetSetFlags, get: Null, set: js.Function1[/* repeated */ Any, Any]): js.PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(flags.asInstanceOf[js.Any], get.asInstanceOf[js.Any], set.asInstanceOf[js.Any])).asInstanceOf[js.PropertyDescriptor]
   inline def gs(
     flags: GetSetFlags,
     get: Null,
-    set: js.Function1[/* repeated */ js.Any, js.Any],
-    options: PropertyDescriptor
-  ): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(flags.asInstanceOf[js.Any], get.asInstanceOf[js.Any], set.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
-  inline def gs(flags: GetSetFlags, get: Unit, set: js.Function1[/* repeated */ js.Any, js.Any]): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(flags.asInstanceOf[js.Any], get.asInstanceOf[js.Any], set.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
+    set: js.Function1[/* repeated */ Any, Any],
+    options: js.PropertyDescriptor
+  ): js.PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(flags.asInstanceOf[js.Any], get.asInstanceOf[js.Any], set.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.PropertyDescriptor]
+  inline def gs(flags: GetSetFlags, get: Unit, set: js.Function1[/* repeated */ Any, Any]): js.PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(flags.asInstanceOf[js.Any], get.asInstanceOf[js.Any], set.asInstanceOf[js.Any])).asInstanceOf[js.PropertyDescriptor]
   inline def gs(
     flags: GetSetFlags,
     get: Unit,
-    set: js.Function1[/* repeated */ js.Any, js.Any],
-    options: PropertyDescriptor
-  ): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(flags.asInstanceOf[js.Any], get.asInstanceOf[js.Any], set.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
-  inline def gs(flags: GetSetFlags, options: PropertyDescriptor): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(flags.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
-  inline def gs(get: js.Function1[/* repeated */ js.Any, js.Any]): PropertyDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("gs")(get.asInstanceOf[js.Any]).asInstanceOf[PropertyDescriptor]
-  inline def gs(get: js.Function1[/* repeated */ js.Any, js.Any], set: js.Function1[/* repeated */ js.Any, js.Any]): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(get.asInstanceOf[js.Any], set.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
+    set: js.Function1[/* repeated */ Any, Any],
+    options: js.PropertyDescriptor
+  ): js.PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(flags.asInstanceOf[js.Any], get.asInstanceOf[js.Any], set.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.PropertyDescriptor]
+  inline def gs(flags: GetSetFlags, options: js.PropertyDescriptor): js.PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(flags.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.PropertyDescriptor]
+  inline def gs(get: js.Function1[/* repeated */ Any, Any]): js.PropertyDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("gs")(get.asInstanceOf[js.Any]).asInstanceOf[js.PropertyDescriptor]
+  inline def gs(get: js.Function1[/* repeated */ Any, Any], set: js.Function1[/* repeated */ Any, Any]): js.PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(get.asInstanceOf[js.Any], set.asInstanceOf[js.Any])).asInstanceOf[js.PropertyDescriptor]
   inline def gs(
-    get: js.Function1[/* repeated */ js.Any, js.Any],
-    set: js.Function1[/* repeated */ js.Any, js.Any],
-    options: PropertyDescriptor
-  ): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(get.asInstanceOf[js.Any], set.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
-  inline def gs(get: js.Function1[/* repeated */ js.Any, js.Any], set: Null, options: PropertyDescriptor): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(get.asInstanceOf[js.Any], set.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
-  inline def gs(get: js.Function1[/* repeated */ js.Any, js.Any], set: Unit, options: PropertyDescriptor): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(get.asInstanceOf[js.Any], set.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
-  inline def gs(get: Null, set: js.Function1[/* repeated */ js.Any, js.Any]): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(get.asInstanceOf[js.Any], set.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
-  inline def gs(get: Null, set: js.Function1[/* repeated */ js.Any, js.Any], options: PropertyDescriptor): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(get.asInstanceOf[js.Any], set.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
-  inline def gs(get: Unit, set: js.Function1[/* repeated */ js.Any, js.Any]): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(get.asInstanceOf[js.Any], set.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
-  inline def gs(get: Unit, set: js.Function1[/* repeated */ js.Any, js.Any], options: PropertyDescriptor): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(get.asInstanceOf[js.Any], set.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
+    get: js.Function1[/* repeated */ Any, Any],
+    set: js.Function1[/* repeated */ Any, Any],
+    options: js.PropertyDescriptor
+  ): js.PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(get.asInstanceOf[js.Any], set.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.PropertyDescriptor]
+  inline def gs(get: js.Function1[/* repeated */ Any, Any], set: Null, options: js.PropertyDescriptor): js.PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(get.asInstanceOf[js.Any], set.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.PropertyDescriptor]
+  inline def gs(get: js.Function1[/* repeated */ Any, Any], set: Unit, options: js.PropertyDescriptor): js.PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(get.asInstanceOf[js.Any], set.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.PropertyDescriptor]
+  inline def gs(get: Null, set: js.Function1[/* repeated */ Any, Any]): js.PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(get.asInstanceOf[js.Any], set.asInstanceOf[js.Any])).asInstanceOf[js.PropertyDescriptor]
+  inline def gs(get: Null, set: js.Function1[/* repeated */ Any, Any], options: js.PropertyDescriptor): js.PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(get.asInstanceOf[js.Any], set.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.PropertyDescriptor]
+  inline def gs(get: Unit, set: js.Function1[/* repeated */ Any, Any]): js.PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(get.asInstanceOf[js.Any], set.asInstanceOf[js.Any])).asInstanceOf[js.PropertyDescriptor]
+  inline def gs(get: Unit, set: js.Function1[/* repeated */ Any, Any], options: js.PropertyDescriptor): js.PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("gs")(get.asInstanceOf[js.Any], set.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.PropertyDescriptor]
   
   /* Rewritten from type alias, can be one of: 
     - typings.d.dStrings.w

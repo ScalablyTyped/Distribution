@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Tag extends StObject {
   
   /**
-    * A user-defined key, which is the minimum required information for a valid tag. For more information, see Tag . 
+    * A user-defined key, which is the minimum required information for a valid tag. For more information, see Tag. 
     */
   var Key: js.UndefOr[String] = js.undefined
   

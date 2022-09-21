@@ -8,28 +8,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaDestinationTableProperties extends StObject {
   
   /**
-    * [Optional] The description for the destination table. This will only be
-    * used if the destination table is newly created. If the table already
-    * exists and a value different than the current description is provided,
-    * the job will fail.
+    * [Optional] The description for the destination table. This will only be used if the destination table is newly created. If the table already exists and a value different than the current description is provided, the job will fail.
     */
-  var description: js.UndefOr[String] = js.undefined
+  var description: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * [Optional] The friendly name for the destination table. This will only be
-    * used if the destination table is newly created. If the table already
-    * exists and a value different than the current friendly name is provided,
-    * the job will fail.
+    * [Internal] This field is for Google internal use only.
     */
-  var friendlyName: js.UndefOr[String] = js.undefined
+  var expirationTime: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * [Optional] The labels associated with this table. You can use these to
-    * organize and group your tables. This will only be used if the destination
-    * table is newly created. If the table already exists and labels are
-    * different than the current labels are provided, the job will fail.
+    * [Optional] The friendly name for the destination table. This will only be used if the destination table is newly created. If the table already exists and a value different than the current friendly name is provided, the job will fail.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
+  var friendlyName: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * [Optional] The labels associated with this table. You can use these to organize and group your tables. This will only be used if the destination table is newly created. If the table already exists and labels are different than the current labels are provided, the job will fail.
+    */
+  var labels: js.UndefOr[StringDictionary[String] | Null] = js.undefined
 }
 object SchemaDestinationTableProperties {
   
@@ -42,13 +38,25 @@ object SchemaDestinationTableProperties {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
+    
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
+    inline def setExpirationTime(value: String): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
+    
+    inline def setExpirationTimeNull: Self = StObject.set(x, "expirationTime", null)
+    
+    inline def setExpirationTimeUndefined: Self = StObject.set(x, "expirationTime", js.undefined)
+    
     inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
+    
+    inline def setFriendlyNameNull: Self = StObject.set(x, "friendlyName", null)
     
     inline def setFriendlyNameUndefined: Self = StObject.set(x, "friendlyName", js.undefined)
     
     inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    
+    inline def setLabelsNull: Self = StObject.set(x, "labels", null)
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
   }

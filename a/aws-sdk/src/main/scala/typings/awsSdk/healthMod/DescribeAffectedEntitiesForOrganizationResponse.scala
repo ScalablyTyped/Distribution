@@ -34,13 +34,13 @@ object DescribeAffectedEntitiesForOrganizationResponse {
     
     inline def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
     
-    inline def setEntitiesVarargs(value: AffectedEntity*): Self = StObject.set(x, "entities", js.Array(value :_*))
+    inline def setEntitiesVarargs(value: AffectedEntity*): Self = StObject.set(x, "entities", js.Array(value*))
     
     inline def setFailedSet(value: DescribeAffectedEntitiesForOrganizationFailedSet): Self = StObject.set(x, "failedSet", value.asInstanceOf[js.Any])
     
     inline def setFailedSetUndefined: Self = StObject.set(x, "failedSet", js.undefined)
     
-    inline def setFailedSetVarargs(value: OrganizationAffectedEntitiesErrorItem*): Self = StObject.set(x, "failedSet", js.Array(value :_*))
+    inline def setFailedSetVarargs(value: OrganizationAffectedEntitiesErrorItem*): Self = StObject.set(x, "failedSet", js.Array(value*))
     
     inline def setNextToken(value: nextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

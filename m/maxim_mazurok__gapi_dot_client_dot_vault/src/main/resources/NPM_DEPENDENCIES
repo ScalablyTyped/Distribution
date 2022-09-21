@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@maxim_mazurok/gapi.client.vault" : "1.0.20201030"
+      "@maxim_mazurok/gapi.client.vault" : "1.0.20220728"
     }
   ],
   "test-dependencies" : [
     {
-      "@maxim_mazurok/gapi.client.vault" : "1.0.20201030"
+      "@maxim_mazurok/gapi.client.vault" : "1.0.20220728"
     }
   ],
   "compile-devDependencies" : [

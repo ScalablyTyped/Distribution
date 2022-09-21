@@ -11,14 +11,11 @@ A promise-based semaphore implementation suitable to be used with async/await.
 | Full name          | semaphore-async-await |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 53 |
-| # downloads        | 696155 |
-| # stars            | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 569019.0 |
+| # stars            | 86.0 |
 
 ## Links
-- [Homepage](https://github.com/jsoendermann/semaphore-async-await)
-- [Bugs](https://github.com/jsoendermann/semaphore-async-await/issues)
-- [Repository](https://github.com/jsoendermann/semaphore-async-await)
 - [Npm](https://www.npmjs.com/package/semaphore-async-await)
     
 

@@ -10,7 +10,7 @@ object mediaControlMod {
   
   @JSImport("@wordpress/customize-browser/MediaControl", "MediaControl")
   @js.native
-  class MediaControl protected () extends Control {
+  open class MediaControl protected () extends Control {
     def this(applicator: js.Object, argsArray: js.Object) = this()
     def this(applicator: js.Object, argsArray: js.Object, options: js.Object) = this()
     

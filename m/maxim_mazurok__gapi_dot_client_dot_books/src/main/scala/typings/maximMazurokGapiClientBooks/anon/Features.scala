@@ -95,7 +95,7 @@ object Features {
     
     inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
-    inline def setFeaturesVarargs(value: String*): Self = StObject.set(x, "features", js.Array(value :_*))
+    inline def setFeaturesVarargs(value: String*): Self = StObject.set(x, "features", js.Array(value*))
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
@@ -145,6 +145,6 @@ object Features {
     
     inline def setVolumeIdsUndefined: Self = StObject.set(x, "volumeIds", js.undefined)
     
-    inline def setVolumeIdsVarargs(value: String*): Self = StObject.set(x, "volumeIds", js.Array(value :_*))
+    inline def setVolumeIdsVarargs(value: String*): Self = StObject.set(x, "volumeIds", js.Array(value*))
   }
 }

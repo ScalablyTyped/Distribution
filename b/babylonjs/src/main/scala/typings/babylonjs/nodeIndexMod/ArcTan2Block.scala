@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Materials/Node/index", "ArcTan2Block")
 @js.native
-class ArcTan2Block protected ()
+open class ArcTan2Block protected ()
   extends typings.babylonjs.blocksIndexMod.ArcTan2Block {
   /**
     * Creates a new ArcTan2Block

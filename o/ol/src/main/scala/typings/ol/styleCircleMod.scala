@@ -1,5 +1,6 @@
 package typings.ol
 
+import typings.ol.sizeMod.Size
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ object styleCircleMod {
   
   @JSImport("ol/style/Circle", JSImport.Default)
   @js.native
-  class default () extends CircleStyle {
+  open class default () extends CircleStyle {
     def this(opt_options: Options) = this()
   }
   
@@ -30,6 +31,12 @@ object styleCircleMod {
     
     var radius: Double
     
+    var rotateWithView: js.UndefOr[Boolean] = js.undefined
+    
+    var rotation: js.UndefOr[Double] = js.undefined
+    
+    var scale: js.UndefOr[Double | Size] = js.undefined
+    
     var stroke: js.UndefOr[typings.ol.strokeMod.default] = js.undefined
   }
   object Options {
@@ -45,13 +52,25 @@ object styleCircleMod {
       
       inline def setDisplacementUndefined: Self = StObject.set(x, "displacement", js.undefined)
       
-      inline def setDisplacementVarargs(value: Double*): Self = StObject.set(x, "displacement", js.Array(value :_*))
+      inline def setDisplacementVarargs(value: Double*): Self = StObject.set(x, "displacement", js.Array(value*))
       
       inline def setFill(value: typings.ol.fillMod.default): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
       inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
       
       inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      
+      inline def setRotateWithView(value: Boolean): Self = StObject.set(x, "rotateWithView", value.asInstanceOf[js.Any])
+      
+      inline def setRotateWithViewUndefined: Self = StObject.set(x, "rotateWithView", js.undefined)
+      
+      inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+      
+      inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
+      
+      inline def setScale(value: Double | Size): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      
+      inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
       
       inline def setStroke(value: typings.ol.strokeMod.default): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
       

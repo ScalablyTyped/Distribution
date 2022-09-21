@@ -29,7 +29,7 @@ object ListActivatedRulesInRuleGroupResponse {
     
     inline def setActivatedRulesUndefined: Self = StObject.set(x, "ActivatedRules", js.undefined)
     
-    inline def setActivatedRulesVarargs(value: ActivatedRule*): Self = StObject.set(x, "ActivatedRules", js.Array(value :_*))
+    inline def setActivatedRulesVarargs(value: ActivatedRule*): Self = StObject.set(x, "ActivatedRules", js.Array(value*))
     
     inline def setNextMarker(value: NextMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     

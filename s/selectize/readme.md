@@ -11,9 +11,9 @@ Selectize is a jQuery-based custom <select> UI control. Useful for tagging, cont
 | Full name          | selectize |
 | Keywords           | select, ui, form, input, control, autocomplete, tagging, tag |
 | # releases         | 0 |
-| # dependents       | 49 |
-| # downloads        | 3579327 |
-| # stars            | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 224825.33333333334 |
+| # stars            | 12827.0 |
 
 ## Links
 - [Homepage](https://github.com/selectize/selectize.js#readme)

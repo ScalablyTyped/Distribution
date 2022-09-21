@@ -8,5 +8,5 @@ object getFileOutputMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/GetFileOutput", "GetFileOutput")
   @js.native
-  val GetFileOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GetFileOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

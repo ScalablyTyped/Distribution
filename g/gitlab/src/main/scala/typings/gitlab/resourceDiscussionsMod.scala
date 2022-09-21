@@ -14,7 +14,7 @@ object resourceDiscussionsMod {
   
   @JSImport("gitlab/dist/types/core/templates/ResourceDiscussions", "ResourceDiscussions")
   @js.native
-  class ResourceDiscussions protected () extends BaseService {
+  open class ResourceDiscussions protected () extends BaseService {
     def this(resourceType: String, resource2Type: String, options: BaseServiceOptions) = this()
     
     def addNote(resourceId: String, resource2Id: String, discussionId: String, noteId: Double, content: String): js.Promise[js.Object] = js.native

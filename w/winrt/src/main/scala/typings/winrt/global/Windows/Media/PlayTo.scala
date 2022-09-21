@@ -1,6 +1,5 @@
 package typings.winrt.global.Windows.Media
 
-import typings.std.Date
 import typings.winrt.Windows.Foundation.Collections.IMapView
 import typings.winrt.Windows.Foundation.Collections.IPropertySet
 import typings.winrt.Windows.Foundation.IAsyncAction
@@ -16,7 +15,7 @@ object PlayTo {
   
   @JSGlobal("Windows.Media.PlayTo.CurrentTimeChangeRequestedEventArgs")
   @js.native
-  class CurrentTimeChangeRequestedEventArgs ()
+  open class CurrentTimeChangeRequestedEventArgs ()
     extends StObject
        with typings.winrt.Windows.Media.PlayTo.CurrentTimeChangeRequestedEventArgs {
     
@@ -26,7 +25,7 @@ object PlayTo {
   
   @JSGlobal("Windows.Media.PlayTo.MuteChangeRequestedEventArgs")
   @js.native
-  class MuteChangeRequestedEventArgs ()
+  open class MuteChangeRequestedEventArgs ()
     extends StObject
        with typings.winrt.Windows.Media.PlayTo.MuteChangeRequestedEventArgs {
     
@@ -36,18 +35,18 @@ object PlayTo {
   
   @JSGlobal("Windows.Media.PlayTo.PlayToConnection")
   @js.native
-  class PlayToConnection ()
+  open class PlayToConnection ()
     extends StObject
        with typings.winrt.Windows.Media.PlayTo.PlayToConnection {
     
     /* CompleteClass */
-    var onerror: js.Any = js.native
+    var onerror: Any = js.native
     
     /* CompleteClass */
-    var onstatechanged: js.Any = js.native
+    var onstatechanged: Any = js.native
     
     /* CompleteClass */
-    var ontransferred: js.Any = js.native
+    var ontransferred: Any = js.native
     
     /* CompleteClass */
     var state: PlayToConnectionState = js.native
@@ -71,7 +70,7 @@ object PlayTo {
   
   @JSGlobal("Windows.Media.PlayTo.PlayToConnectionErrorEventArgs")
   @js.native
-  class PlayToConnectionErrorEventArgs ()
+  open class PlayToConnectionErrorEventArgs ()
     extends StObject
        with typings.winrt.Windows.Media.PlayTo.PlayToConnectionErrorEventArgs {
     
@@ -98,7 +97,7 @@ object PlayTo {
   
   @JSGlobal("Windows.Media.PlayTo.PlayToConnectionStateChangedEventArgs")
   @js.native
-  class PlayToConnectionStateChangedEventArgs ()
+  open class PlayToConnectionStateChangedEventArgs ()
     extends StObject
        with typings.winrt.Windows.Media.PlayTo.PlayToConnectionStateChangedEventArgs {
     
@@ -111,7 +110,7 @@ object PlayTo {
   
   @JSGlobal("Windows.Media.PlayTo.PlayToConnectionTransferredEventArgs")
   @js.native
-  class PlayToConnectionTransferredEventArgs ()
+  open class PlayToConnectionTransferredEventArgs ()
     extends StObject
        with typings.winrt.Windows.Media.PlayTo.PlayToConnectionTransferredEventArgs {
     
@@ -124,7 +123,7 @@ object PlayTo {
   
   @JSGlobal("Windows.Media.PlayTo.PlayToManager")
   @js.native
-  class PlayToManager ()
+  open class PlayToManager ()
     extends StObject
        with typings.winrt.Windows.Media.PlayTo.PlayToManager {
     
@@ -132,10 +131,10 @@ object PlayTo {
     var defaultSourceSelection: Boolean = js.native
     
     /* CompleteClass */
-    var onsourcerequested: js.Any = js.native
+    var onsourcerequested: Any = js.native
     
     /* CompleteClass */
-    var onsourceselected: js.Any = js.native
+    var onsourceselected: Any = js.native
   }
   /* static members */
   object PlayToManager {
@@ -151,7 +150,7 @@ object PlayTo {
   
   @JSGlobal("Windows.Media.PlayTo.PlayToReceiver")
   @js.native
-  class PlayToReceiver ()
+  open class PlayToReceiver ()
     extends StObject
        with typings.winrt.Windows.Media.PlayTo.PlayToReceiver {
     
@@ -195,31 +194,31 @@ object PlayTo {
     override def notifyVolumeChange(volume: Double, mute: Boolean): Unit = js.native
     
     /* CompleteClass */
-    var oncurrenttimechangerequested: js.Any = js.native
+    var oncurrenttimechangerequested: Any = js.native
     
     /* CompleteClass */
-    var onmutechangerequested: js.Any = js.native
+    var onmutechangerequested: Any = js.native
     
     /* CompleteClass */
-    var onpauserequested: js.Any = js.native
+    var onpauserequested: Any = js.native
     
     /* CompleteClass */
-    var onplaybackratechangerequested: js.Any = js.native
+    var onplaybackratechangerequested: Any = js.native
     
     /* CompleteClass */
-    var onplayrequested: js.Any = js.native
+    var onplayrequested: Any = js.native
     
     /* CompleteClass */
-    var onsourcechangerequested: js.Any = js.native
+    var onsourcechangerequested: Any = js.native
     
     /* CompleteClass */
-    var onstoprequested: js.Any = js.native
+    var onstoprequested: Any = js.native
     
     /* CompleteClass */
-    var ontimeupdaterequested: js.Any = js.native
+    var ontimeupdaterequested: Any = js.native
     
     /* CompleteClass */
-    var onvolumechangerequested: js.Any = js.native
+    var onvolumechangerequested: Any = js.native
     
     /* CompleteClass */
     var properties: IPropertySet = js.native
@@ -242,7 +241,7 @@ object PlayTo {
   
   @JSGlobal("Windows.Media.PlayTo.PlayToSource")
   @js.native
-  class PlayToSource ()
+  open class PlayToSource ()
     extends StObject
        with typings.winrt.Windows.Media.PlayTo.PlayToSource {
     
@@ -258,7 +257,7 @@ object PlayTo {
   
   @JSGlobal("Windows.Media.PlayTo.PlayToSourceDeferral")
   @js.native
-  class PlayToSourceDeferral ()
+  open class PlayToSourceDeferral ()
     extends StObject
        with typings.winrt.Windows.Media.PlayTo.PlayToSourceDeferral {
     
@@ -268,12 +267,12 @@ object PlayTo {
   
   @JSGlobal("Windows.Media.PlayTo.PlayToSourceRequest")
   @js.native
-  class PlayToSourceRequest ()
+  open class PlayToSourceRequest ()
     extends StObject
        with typings.winrt.Windows.Media.PlayTo.PlayToSourceRequest {
     
     /* CompleteClass */
-    var deadline: Date = js.native
+    var deadline: js.Date = js.native
     
     /* CompleteClass */
     override def displayErrorString(errorString: String): Unit = js.native
@@ -287,7 +286,7 @@ object PlayTo {
   
   @JSGlobal("Windows.Media.PlayTo.PlayToSourceRequestedEventArgs")
   @js.native
-  class PlayToSourceRequestedEventArgs ()
+  open class PlayToSourceRequestedEventArgs ()
     extends StObject
        with typings.winrt.Windows.Media.PlayTo.PlayToSourceRequestedEventArgs {
     
@@ -297,7 +296,7 @@ object PlayTo {
   
   @JSGlobal("Windows.Media.PlayTo.PlayToSourceSelectedEventArgs")
   @js.native
-  class PlayToSourceSelectedEventArgs ()
+  open class PlayToSourceSelectedEventArgs ()
     extends StObject
        with typings.winrt.Windows.Media.PlayTo.PlayToSourceSelectedEventArgs {
     
@@ -319,7 +318,7 @@ object PlayTo {
   
   @JSGlobal("Windows.Media.PlayTo.PlaybackRateChangeRequestedEventArgs")
   @js.native
-  class PlaybackRateChangeRequestedEventArgs ()
+  open class PlaybackRateChangeRequestedEventArgs ()
     extends StObject
        with typings.winrt.Windows.Media.PlayTo.PlaybackRateChangeRequestedEventArgs {
     
@@ -329,7 +328,7 @@ object PlayTo {
   
   @JSGlobal("Windows.Media.PlayTo.SourceChangeRequestedEventArgs")
   @js.native
-  class SourceChangeRequestedEventArgs ()
+  open class SourceChangeRequestedEventArgs ()
     extends StObject
        with typings.winrt.Windows.Media.PlayTo.SourceChangeRequestedEventArgs {
     
@@ -340,7 +339,7 @@ object PlayTo {
     var author: String = js.native
     
     /* CompleteClass */
-    var date: Date = js.native
+    var date: js.Date = js.native
     
     /* CompleteClass */
     var description: String = js.native
@@ -349,7 +348,7 @@ object PlayTo {
     var genre: String = js.native
     
     /* CompleteClass */
-    var properties: IMapView[String, js.Any] = js.native
+    var properties: IMapView[String, Any] = js.native
     
     /* CompleteClass */
     var rating: Double = js.native
@@ -366,7 +365,7 @@ object PlayTo {
   
   @JSGlobal("Windows.Media.PlayTo.VolumeChangeRequestedEventArgs")
   @js.native
-  class VolumeChangeRequestedEventArgs ()
+  open class VolumeChangeRequestedEventArgs ()
     extends StObject
        with typings.winrt.Windows.Media.PlayTo.VolumeChangeRequestedEventArgs {
     

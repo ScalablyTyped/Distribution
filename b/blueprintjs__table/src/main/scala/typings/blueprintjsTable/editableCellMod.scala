@@ -1,6 +1,6 @@
 package typings.blueprintjsTable
 
-import typings.blueprintjsCore.editableTextMod.IEditableTextProps
+import typings.blueprintjsCore.editableTextMod.EditableTextProps
 import typings.blueprintjsTable.anon.Truncated
 import typings.blueprintjsTable.cellMod.ICellProps
 import typings.react.mod.Component
@@ -13,14 +13,12 @@ object editableCellMod {
   
   @JSImport("@blueprintjs/table/lib/esm/cell/editableCell", "EditableCell")
   @js.native
-  class EditableCell protected ()
-    extends Component[IEditableCellProps, IEditableCellState, js.Any] {
+  open class EditableCell protected () extends Component[IEditableCellProps, IEditableCellState, Any] {
     def this(props: IEditableCellProps) = this()
-    def this(props: IEditableCellProps, context: js.Any) = this()
     
-    /* private */ var cellRef: js.Any = js.native
+    /* private */ var cellRef: Any = js.native
     
-    /* private */ var checkShouldFocus: js.Any = js.native
+    /* private */ var checkShouldFocus: Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MEditableCell(): Unit = js.native
@@ -28,23 +26,23 @@ object editableCellMod {
     @JSName("componentDidUpdate")
     def componentDidUpdate_MEditableCell(prevProps: IEditableCellProps): Unit = js.native
     
-    /* private */ var handleCancel: js.Any = js.native
+    /* private */ var handleCancel: Any = js.native
     
-    /* private */ var handleCellActivate: js.Any = js.native
+    /* private */ var handleCellActivate: Any = js.native
     
-    /* private */ var handleCellDoubleClick: js.Any = js.native
+    /* private */ var handleCellDoubleClick: Any = js.native
     
-    /* private */ var handleChange: js.Any = js.native
+    /* private */ var handleChange: Any = js.native
     
-    /* private */ var handleConfirm: js.Any = js.native
+    /* private */ var handleConfirm: Any = js.native
     
-    /* private */ var handleEdit: js.Any = js.native
+    /* private */ var handleEdit: Any = js.native
     
-    /* private */ var handleKeyPress: js.Any = js.native
+    /* private */ var handleKeyPress: Any = js.native
     
-    /* private */ var invokeCallback: js.Any = js.native
+    /* private */ var invokeCallback: Any = js.native
     
-    /* private */ var refHandlers: js.Any = js.native
+    /* private */ var refHandlers: Any = js.native
     
     def renderHotkeys(): Element = js.native
     
@@ -69,6 +67,8 @@ object editableCellMod {
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
+  type EditableCellProps = IEditableCellProps
+  
   trait IEditableCellProps
     extends StObject
        with ICellProps {
@@ -76,7 +76,7 @@ object editableCellMod {
     /**
       * Props that should be passed to the EditableText when it is used to edit
       */
-    var editableTextProps: js.UndefOr[IEditableTextProps] = js.undefined
+    var editableTextProps: js.UndefOr[EditableTextProps] = js.undefined
     
     /**
       * Whether the given cell is the current active/focused cell.
@@ -144,7 +144,7 @@ object editableCellMod {
     
     extension [Self <: IEditableCellProps](x: Self) {
       
-      inline def setEditableTextProps(value: IEditableTextProps): Self = StObject.set(x, "editableTextProps", value.asInstanceOf[js.Any])
+      inline def setEditableTextProps(value: EditableTextProps): Self = StObject.set(x, "editableTextProps", value.asInstanceOf[js.Any])
       
       inline def setEditableTextPropsUndefined: Self = StObject.set(x, "editableTextProps", js.undefined)
       

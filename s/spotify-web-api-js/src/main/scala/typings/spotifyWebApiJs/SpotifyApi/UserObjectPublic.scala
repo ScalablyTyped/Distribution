@@ -55,7 +55,7 @@ object UserObjectPublic {
     
     inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
     
-    inline def setImagesVarargs(value: ImageObject*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: ImageObject*): Self = StObject.set(x, "images", js.Array(value*))
     
     inline def setType(value: user): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -1,9 +1,5 @@
 package typings.googleapis.accesscontextmanagerV1Mod.accesscontextmanagerV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,14 +9,7 @@ trait ParamsResourceAccesspoliciesServiceperimetersPatch
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Required. Resource name for the ServicePerimeter.  The `short_name`
-    * component must begin with a letter and only include alphanumeric and '_'.
-    * Format: `accessPolicies/{policy_id}/servicePerimeters/{short_name}`
+    * Required. Resource name for the ServicePerimeter. The `short_name` component must begin with a letter and only include alphanumeric and '_'. Format: `accessPolicies/{access_policy\}/servicePerimeters/{service_perimeter\}`
     */
   var name: js.UndefOr[String] = js.undefined
   
@@ -42,10 +31,6 @@ object ParamsResourceAccesspoliciesServiceperimetersPatch {
   }
   
   extension [Self <: ParamsResourceAccesspoliciesServiceperimetersPatch](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

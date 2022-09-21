@@ -29,6 +29,6 @@ object GoogleMapsPlayablelocationsV3SamplePlayableLocationsRequest {
     
     inline def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
     
-    inline def setCriteriaVarargs(value: GoogleMapsPlayablelocationsV3SampleCriterion*): Self = StObject.set(x, "criteria", js.Array(value :_*))
+    inline def setCriteriaVarargs(value: GoogleMapsPlayablelocationsV3SampleCriterion*): Self = StObject.set(x, "criteria", js.Array(value*))
   }
 }

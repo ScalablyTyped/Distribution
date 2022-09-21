@@ -29,7 +29,7 @@ object ListMeetingsResponse {
     
     inline def setMeetingsUndefined: Self = StObject.set(x, "Meetings", js.undefined)
     
-    inline def setMeetingsVarargs(value: Meeting*): Self = StObject.set(x, "Meetings", js.Array(value :_*))
+    inline def setMeetingsVarargs(value: Meeting*): Self = StObject.set(x, "Meetings", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

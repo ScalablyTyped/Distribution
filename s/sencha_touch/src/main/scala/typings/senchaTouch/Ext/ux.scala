@@ -12,7 +12,7 @@ object ux {
        with IMenuButton {
     
     /** [Property] () */
-    var menuItems: js.UndefOr[js.Any] = js.undefined
+    var menuItems: js.UndefOr[Any] = js.undefined
   }
   object IActionOverFlowMenuButton {
     
@@ -23,7 +23,7 @@ object ux {
     
     extension [Self <: IActionOverFlowMenuButton](x: Self) {
       
-      inline def setMenuItems(value: js.Any): Self = StObject.set(x, "menuItems", value.asInstanceOf[js.Any])
+      inline def setMenuItems(value: Any): Self = StObject.set(x, "menuItems", value.asInstanceOf[js.Any])
       
       inline def setMenuItemsUndefined: Self = StObject.set(x, "menuItems", js.undefined)
     }
@@ -80,7 +80,7 @@ object ux {
        with IMenuButton {
     
     /** [Property] () */
-    var menuItems: js.UndefOr[js.Any] = js.undefined
+    var menuItems: js.UndefOr[Any] = js.undefined
   }
   object ITabMenuButton {
     
@@ -91,7 +91,7 @@ object ux {
     
     extension [Self <: ITabMenuButton](x: Self) {
       
-      inline def setMenuItems(value: js.Any): Self = StObject.set(x, "menuItems", value.asInstanceOf[js.Any])
+      inline def setMenuItems(value: Any): Self = StObject.set(x, "menuItems", value.asInstanceOf[js.Any])
       
       inline def setMenuItemsUndefined: Self = StObject.set(x, "menuItems", js.undefined)
     }
@@ -134,7 +134,7 @@ object ux {
         /** [Method] Returns the value of accountID
           * @returns Object
           */
-        var getAccountID: js.UndefOr[js.Function0[js.Any]] = js.undefined
+        var getAccountID: js.UndefOr[js.Function0[Any]] = js.undefined
         
         /** [Method] Registers yur Google Analytics account
           * @param accountID String Your Google Analytics account ID
@@ -144,12 +144,12 @@ object ux {
         /** [Method] Sets the value of accountID
           * @param accountID Object The new value.
           */
-        var setAccountID: js.UndefOr[js.Function1[/* accountID */ js.UndefOr[js.Any], Unit]] = js.undefined
+        var setAccountID: js.UndefOr[js.Function1[/* accountID */ js.UndefOr[Any], Unit]] = js.undefined
         
         /** [Method] Track an event in your application
           * @param config Object
           */
-        var trackEvent: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
+        var trackEvent: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Unit]] = js.undefined
         
         /** [Method] Track an pageview in your application
           * @param config String The page you want to track (must start with a slash).
@@ -165,7 +165,7 @@ object ux {
         
         extension [Self <: IAbstract](x: Self) {
           
-          inline def setGetAccountID(value: () => js.Any): Self = StObject.set(x, "getAccountID", js.Any.fromFunction0(value))
+          inline def setGetAccountID(value: () => Any): Self = StObject.set(x, "getAccountID", js.Any.fromFunction0(value))
           
           inline def setGetAccountIDUndefined: Self = StObject.set(x, "getAccountID", js.undefined)
           
@@ -173,11 +173,11 @@ object ux {
           
           inline def setRegisterAccountUndefined: Self = StObject.set(x, "registerAccount", js.undefined)
           
-          inline def setSetAccountID(value: /* accountID */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setAccountID", js.Any.fromFunction1(value))
+          inline def setSetAccountID(value: /* accountID */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setAccountID", js.Any.fromFunction1(value))
           
           inline def setSetAccountIDUndefined: Self = StObject.set(x, "setAccountID", js.undefined)
           
-          inline def setTrackEvent(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "trackEvent", js.Any.fromFunction1(value))
+          inline def setTrackEvent(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "trackEvent", js.Any.fromFunction1(value))
           
           inline def setTrackEventUndefined: Self = StObject.set(x, "trackEvent", js.undefined)
           
@@ -195,7 +195,7 @@ object ux {
           * @param page Object
           */
         @JSName("trackPageview")
-        var trackPageview_ICordova: js.UndefOr[js.Function1[/* page */ js.UndefOr[js.Any], Unit]] = js.undefined
+        var trackPageview_ICordova: js.UndefOr[js.Function1[/* page */ js.UndefOr[Any], Unit]] = js.undefined
       }
       object ICordova {
         
@@ -206,7 +206,7 @@ object ux {
         
         extension [Self <: ICordova](x: Self) {
           
-          inline def setTrackPageview(value: /* page */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "trackPageview", js.Any.fromFunction1(value))
+          inline def setTrackPageview(value: /* page */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "trackPageview", js.Any.fromFunction1(value))
           
           inline def setTrackPageviewUndefined: Self = StObject.set(x, "trackPageview", js.undefined)
         }
@@ -222,27 +222,27 @@ object ux {
         /** [Method] Pops up a Twitter compose sheet view with your specified tweet
           * @param config Object An object which contains the following config options:
           */
-        var compose: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
+        var compose: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Unit]] = js.undefined
         
         /** [Method] Gets Tweets from Twitter Mentions
           * @param config Object An object which contains the following config options:
           */
-        var getMentions: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
+        var getMentions: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Unit]] = js.undefined
         
         /** [Method] Gets Tweets from Twitter Timeline
           * @param config Object An object which contains the following config options:
           */
-        var getPublicTimeline: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
+        var getPublicTimeline: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Unit]] = js.undefined
         
         /** [Method] Gets a specific Twitter user info
           * @param config Object An object which contains the following config options:
           */
-        var getTwitterRequest: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
+        var getTwitterRequest: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Unit]] = js.undefined
         
         /** [Method] Gets a specific Twitter user info
           * @param config Object An object which contains the following config options:
           */
-        var getTwitterUsername: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
+        var getTwitterUsername: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Unit]] = js.undefined
       }
       object IAbstract {
         
@@ -253,23 +253,23 @@ object ux {
         
         extension [Self <: typings.senchaTouch.Ext.ux.device.twitter.IAbstract](x: Self) {
           
-          inline def setCompose(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "compose", js.Any.fromFunction1(value))
+          inline def setCompose(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "compose", js.Any.fromFunction1(value))
           
           inline def setComposeUndefined: Self = StObject.set(x, "compose", js.undefined)
           
-          inline def setGetMentions(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getMentions", js.Any.fromFunction1(value))
+          inline def setGetMentions(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "getMentions", js.Any.fromFunction1(value))
           
           inline def setGetMentionsUndefined: Self = StObject.set(x, "getMentions", js.undefined)
           
-          inline def setGetPublicTimeline(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getPublicTimeline", js.Any.fromFunction1(value))
+          inline def setGetPublicTimeline(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "getPublicTimeline", js.Any.fromFunction1(value))
           
           inline def setGetPublicTimelineUndefined: Self = StObject.set(x, "getPublicTimeline", js.undefined)
           
-          inline def setGetTwitterRequest(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getTwitterRequest", js.Any.fromFunction1(value))
+          inline def setGetTwitterRequest(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "getTwitterRequest", js.Any.fromFunction1(value))
           
           inline def setGetTwitterRequestUndefined: Self = StObject.set(x, "getTwitterRequest", js.undefined)
           
-          inline def setGetTwitterUsername(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getTwitterUsername", js.Any.fromFunction1(value))
+          inline def setGetTwitterUsername(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "getTwitterUsername", js.Any.fromFunction1(value))
           
           inline def setGetTwitterUsernameUndefined: Self = StObject.set(x, "getTwitterUsername", js.undefined)
         }

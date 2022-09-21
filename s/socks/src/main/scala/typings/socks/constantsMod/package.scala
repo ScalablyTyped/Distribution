@@ -1,17 +1,26 @@
 package typings.socks.constantsMod
 
+import typings.socks.anon.Customauthmethod
+import typings.socks.constantsMod.^
+import typings.socks.socksStrings.host
+import typings.socks.socksStrings.ipaddress
+import typings.socks.utilMod.RequireOnlyOne
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def DEFAULT_TIMEOUT: /* 30000 */ scala.Double = typings.socks.constantsMod.^.asInstanceOf[js.Dynamic].selectDynamic("DEFAULT_TIMEOUT").asInstanceOf[/* 30000 */ scala.Double]
+inline def DEFAULT_TIMEOUT: /* 30000 */ Double = ^.asInstanceOf[js.Dynamic].selectDynamic("DEFAULT_TIMEOUT").asInstanceOf[/* 30000 */ Double]
 
-type SocksClientBoundEvent = typings.socks.constantsMod.SocksClientEstablishedEvent
+inline def SOCKS5_CUSTOM_AUTH_END: /* 254 */ Double = ^.asInstanceOf[js.Dynamic].selectDynamic("SOCKS5_CUSTOM_AUTH_END").asInstanceOf[/* 254 */ Double]
+
+inline def SOCKS5_CUSTOM_AUTH_START: /* 128 */ Double = ^.asInstanceOf[js.Dynamic].selectDynamic("SOCKS5_CUSTOM_AUTH_START").asInstanceOf[/* 128 */ Double]
+
+inline def SOCKS5_NO_ACCEPTABLE_AUTH: /* 255 */ Double = ^.asInstanceOf[js.Dynamic].selectDynamic("SOCKS5_NO_ACCEPTABLE_AUTH").asInstanceOf[/* 255 */ Double]
+
+type SocksClientBoundEvent = SocksClientEstablishedEvent
 
 /**
   * Represents a SocksProxy
   */
-type SocksProxy = typings.socks.utilMod.RequireOnlyOne[
-typings.socks.anon.Host, 
-typings.socks.socksStrings.host | typings.socks.socksStrings.ipaddress]
+type SocksProxy = RequireOnlyOne[Customauthmethod, host | ipaddress]

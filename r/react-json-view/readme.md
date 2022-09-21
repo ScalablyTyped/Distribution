@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-json-view
 
-Typings are for version 1.19.1
+Typings are for version 1.21.3
 
 ## Library description:
 Interactive react component for displaying javascript arrays and JSON objects.
@@ -10,10 +10,10 @@ Interactive react component for displaying javascript arrays and JSON objects.
 | ------------------ | :-------------: |
 | Full name          | react-json-view |
 | Keywords           | array-viewer, base-16, component, interactive, interactive-json, json, json-component, json-display, json-tree, json-view, json-viewer, json-inspector, json-tree, react, react-component, react-json, theme, tree, tree-view, treeview |
-| # releases         | 6 |
-| # dependents       | 192 |
-| # downloads        | 8877614 |
-| # stars            | 4 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 1802840.3333333333 |
+| # stars            | 2654.0 |
 
 ## Links
 - [Homepage](https://github.com/mac-s-g/react-json-view)

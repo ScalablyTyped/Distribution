@@ -20,7 +20,7 @@ trait PlusWebviewWebviewBounceStyle extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var changeoffset: js.UndefOr[js.Any] = js.undefined
+  var changeoffset: js.UndefOr[Any] = js.undefined
   
   /**
     * Webview窗口拖拽偏移的位置
@@ -34,7 +34,7 @@ trait PlusWebviewWebviewBounceStyle extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var offset: js.UndefOr[js.Any] = js.undefined
+  var offset: js.UndefOr[Any] = js.undefined
   
   /**
     * Webview窗口支持回弹效果的方向
@@ -49,7 +49,7 @@ trait PlusWebviewWebviewBounceStyle extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var position: js.UndefOr[js.Any] = js.undefined
+  var position: js.UndefOr[Any] = js.undefined
   
   /**
     * Webview窗口是否阻止touch事件传递给DOM元素
@@ -69,7 +69,7 @@ trait PlusWebviewWebviewBounceStyle extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var slideoffset: js.UndefOr[js.Any] = js.undefined
+  var slideoffset: js.UndefOr[Any] = js.undefined
 }
 object PlusWebviewWebviewBounceStyle {
   
@@ -80,15 +80,15 @@ object PlusWebviewWebviewBounceStyle {
   
   extension [Self <: PlusWebviewWebviewBounceStyle](x: Self) {
     
-    inline def setChangeoffset(value: js.Any): Self = StObject.set(x, "changeoffset", value.asInstanceOf[js.Any])
+    inline def setChangeoffset(value: Any): Self = StObject.set(x, "changeoffset", value.asInstanceOf[js.Any])
     
     inline def setChangeoffsetUndefined: Self = StObject.set(x, "changeoffset", js.undefined)
     
-    inline def setOffset(value: js.Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    inline def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
@@ -96,7 +96,7 @@ object PlusWebviewWebviewBounceStyle {
     
     inline def setPreventTouchEventUndefined: Self = StObject.set(x, "preventTouchEvent", js.undefined)
     
-    inline def setSlideoffset(value: js.Any): Self = StObject.set(x, "slideoffset", value.asInstanceOf[js.Any])
+    inline def setSlideoffset(value: Any): Self = StObject.set(x, "slideoffset", value.asInstanceOf[js.Any])
     
     inline def setSlideoffsetUndefined: Self = StObject.set(x, "slideoffset", js.undefined)
   }

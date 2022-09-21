@@ -23,5 +23,10 @@ trait DataBuffer extends StObject {
   /**
     * Gets the underlying buffer
     */
-  def underlyingResource: js.Any = js.native
+  def underlyingResource: Any = js.native
+  
+  /**
+    * Gets the unique id of this buffer
+    */
+  val uniqueId: Double = js.native
 }

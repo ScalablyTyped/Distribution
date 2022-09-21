@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RemoveHeldAccountsRequest extends StObject {
   
-  /** Account IDs to identify HeldAccounts to remove. */
+  /** The account IDs of the accounts to remove from the hold. */
   var accountIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object RemoveHeldAccountsRequest {
@@ -22,6 +22,6 @@ object RemoveHeldAccountsRequest {
     
     inline def setAccountIdsUndefined: Self = StObject.set(x, "accountIds", js.undefined)
     
-    inline def setAccountIdsVarargs(value: String*): Self = StObject.set(x, "accountIds", js.Array(value :_*))
+    inline def setAccountIdsVarargs(value: String*): Self = StObject.set(x, "accountIds", js.Array(value*))
   }
 }

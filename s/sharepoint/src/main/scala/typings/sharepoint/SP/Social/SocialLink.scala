@@ -24,9 +24,9 @@ trait SocialLink
 object SocialLink {
   
   inline def apply(
-    customFromJson: js.Any => Boolean,
+    customFromJson: Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
-    fromJson: js.Any => Unit,
+    fromJson: Any => Unit,
     get_text: () => String,
     get_typeId: () => String,
     get_uri: () => String,

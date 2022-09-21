@@ -44,6 +44,6 @@ object ITestCase {
     
     inline def setTestStepsUndefined: Self = StObject.set(x, "testSteps", js.undefined)
     
-    inline def setTestStepsVarargs(value: ITestStep*): Self = StObject.set(x, "testSteps", js.Array(value :_*))
+    inline def setTestStepsVarargs(value: ITestStep*): Self = StObject.set(x, "testSteps", js.Array(value*))
   }
 }

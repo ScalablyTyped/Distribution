@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Analytics stats of a Dynamic Link for a given timeframe.
-  */
 trait SchemaDynamicLinkStats extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaDynamicLinkStats {
     
     inline def setLinkEventStatsUndefined: Self = StObject.set(x, "linkEventStats", js.undefined)
     
-    inline def setLinkEventStatsVarargs(value: SchemaDynamicLinkEventStat*): Self = StObject.set(x, "linkEventStats", js.Array(value :_*))
+    inline def setLinkEventStatsVarargs(value: SchemaDynamicLinkEventStat*): Self = StObject.set(x, "linkEventStats", js.Array(value*))
   }
 }

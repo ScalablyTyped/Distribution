@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait IBDD extends StObject {
   
-  def any(clsConstructor: js.Function): js.Any = js.native
+  def any(clsConstructor: js.Function): Any = js.native
   
   def ddescribe(name: String, code: js.Function): Unit = js.native
   def ddescribe(name: String, code: js.Function, timeout: Double): Unit = js.native
@@ -19,7 +19,7 @@ trait IBDD extends StObject {
   def describe(name: String, code: js.Function): Unit = js.native
   def describe(name: String, code: js.Function, timeout: Double): Unit = js.native
   
-  def expect(value: js.Any): Expectation = js.native
+  def expect(value: Any): Expectation = js.native
   
   def iit(name: String, code: js.Function): Unit = js.native
   def iit(name: String, code: js.Function, timeout: Double): Unit = js.native

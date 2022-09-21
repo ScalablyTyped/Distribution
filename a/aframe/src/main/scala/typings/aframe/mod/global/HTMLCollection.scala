@@ -18,5 +18,5 @@ trait HTMLCollection
   /**
     * Retrieves a select object or an object from an options collection.
     */
-  def namedItem(name: String): Element | (Entity[ObjectMap[Component[js.Any, System[js.Any]]]]) | Null = js.native
+  def namedItem(name: String): Element | (Entity[ObjectMap[Component[Any, System[Any]]]]) | Null = js.native
 }

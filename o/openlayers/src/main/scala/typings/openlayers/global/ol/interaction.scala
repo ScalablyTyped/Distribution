@@ -57,7 +57,7 @@ object interaction {
     * @param opt_options Options.
     * @api stable
     */
-  class DoubleClickZoom ()
+  open class DoubleClickZoom ()
     extends typings.openlayers.mod.interaction.DoubleClickZoom {
     def this(opt_options: DoubleClickZoomOptions) = this()
   }
@@ -96,7 +96,7 @@ object interaction {
     * @param opt_options Options.
     * @api stable
     */
-  class DragAndDrop ()
+  open class DragAndDrop ()
     extends typings.openlayers.mod.interaction.DragAndDrop {
     def this(opt_options: DragAndDropOptions) = this()
   }
@@ -118,7 +118,7 @@ object interaction {
       */
     @JSGlobal("ol.interaction.DragAndDrop.Event")
     @js.native
-    class Event protected ()
+    open class Event protected ()
       extends typings.openlayers.mod.interaction.DragAndDrop.Event {
       /**
         * @classdesc
@@ -151,8 +151,8 @@ object interaction {
     /* static member */
     @JSGlobal("ol.interaction.DragAndDrop.handleEvent")
     @js.native
-    def handleEvent: js.Any = js.native
-    inline def handleEvent_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("handleEvent")(x.asInstanceOf[js.Any])
+    def handleEvent: Any = js.native
+    inline def handleEvent_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("handleEvent")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -187,7 +187,7 @@ object interaction {
     * @param opt_options Options.
     * @api stable
     */
-  class DragBox ()
+  open class DragBox ()
     extends typings.openlayers.mod.interaction.DragBox {
     def this(opt_options: DragBoxOptions) = this()
   }
@@ -204,7 +204,7 @@ object interaction {
       */
     @JSGlobal("ol.interaction.DragBox.Event")
     @js.native
-    class Event protected ()
+    open class Event protected ()
       extends typings.openlayers.mod.interaction.DragBox.Event {
       /**
         * @classdesc
@@ -235,7 +235,7 @@ object interaction {
     * @param opt_options Options.
     * @api stable
     */
-  class DragPan ()
+  open class DragPan ()
     extends typings.openlayers.mod.interaction.DragPan {
     def this(opt_options: DragPanOptions) = this()
   }
@@ -264,7 +264,7 @@ object interaction {
     * @param opt_options Options.
     * @api stable
     */
-  class DragRotate ()
+  open class DragRotate ()
     extends typings.openlayers.mod.interaction.DragRotate {
     def this(opt_options: DragRotateOptions) = this()
   }
@@ -297,7 +297,7 @@ object interaction {
     * @param opt_options Options.
     * @api stable
     */
-  class DragRotateAndZoom ()
+  open class DragRotateAndZoom ()
     extends typings.openlayers.mod.interaction.DragRotateAndZoom {
     def this(opt_options: DragRotateAndZoomOptions) = this()
   }
@@ -328,7 +328,7 @@ object interaction {
     * @param opt_options Options.
     * @api stable
     */
-  class DragZoom ()
+  open class DragZoom ()
     extends typings.openlayers.mod.interaction.DragZoom {
     def this(opt_options: DragZoomOptions) = this()
   }
@@ -343,7 +343,7 @@ object interaction {
     */
   @JSGlobal("ol.interaction.Draw")
   @js.native
-  class Draw protected ()
+  open class Draw protected ()
     extends typings.openlayers.mod.interaction.Draw {
     /**
       * @classdesc
@@ -371,7 +371,7 @@ object interaction {
       */
     @JSGlobal("ol.interaction.Draw.Event")
     @js.native
-    class Event protected ()
+    open class Event protected ()
       extends typings.openlayers.mod.interaction.Draw.Event {
       /**
         * @classdesc
@@ -426,7 +426,7 @@ object interaction {
     */
   @JSGlobal("ol.interaction.Extent")
   @js.native
-  class Extent protected ()
+  open class Extent protected ()
     extends typings.openlayers.mod.interaction.Extent {
     /**
       * @fires ol.interaction.Extent.Event
@@ -446,7 +446,7 @@ object interaction {
       */
     @JSGlobal("ol.interaction.Extent.Event")
     @js.native
-    class Event protected ()
+    open class Event protected ()
       extends typings.openlayers.mod.interaction.Extent.Event {
       /**
         * @classdesc
@@ -477,7 +477,7 @@ object interaction {
     */
   @JSGlobal("ol.interaction.Interaction")
   @js.native
-  class Interaction protected ()
+  open class Interaction protected ()
     extends typings.openlayers.mod.interaction.Interaction {
     /**
       * @classdesc
@@ -529,7 +529,7 @@ object interaction {
     * @param opt_options Options.
     * @api stable
     */
-  class KeyboardPan ()
+  open class KeyboardPan ()
     extends typings.openlayers.mod.interaction.KeyboardPan {
     def this(opt_options: KeyboardPanOptions) = this()
   }
@@ -583,7 +583,7 @@ object interaction {
     * @param opt_options Options.
     * @api stable
     */
-  class KeyboardZoom ()
+  open class KeyboardZoom ()
     extends typings.openlayers.mod.interaction.KeyboardZoom {
     def this(opt_options: KeyboardZoomOptions) = this()
   }
@@ -615,7 +615,7 @@ object interaction {
     */
   @JSGlobal("ol.interaction.Modify")
   @js.native
-  class Modify protected ()
+  open class Modify protected ()
     extends typings.openlayers.mod.interaction.Modify {
     /**
       * @classdesc
@@ -641,7 +641,7 @@ object interaction {
       */
     @JSGlobal("ol.interaction.Modify.Event")
     @js.native
-    class Event protected ()
+    open class Event protected ()
       extends typings.openlayers.mod.interaction.Modify.Event {
       /**
         * @classdesc
@@ -677,7 +677,7 @@ object interaction {
     * @param opt_options Options.
     * @api stable
     */
-  class MouseWheelZoom ()
+  open class MouseWheelZoom ()
     extends typings.openlayers.mod.interaction.MouseWheelZoom {
     def this(opt_options: MouseWheelZoomOptions) = this()
   }
@@ -716,7 +716,7 @@ object interaction {
     * @param opt_options Options.
     * @api stable
     */
-  class PinchRotate ()
+  open class PinchRotate ()
     extends typings.openlayers.mod.interaction.PinchRotate {
     def this(opt_options: PinchRotateOptions) = this()
   }
@@ -739,7 +739,7 @@ object interaction {
     * @param opt_options Options.
     * @api stable
     */
-  class PinchZoom ()
+  open class PinchZoom ()
     extends typings.openlayers.mod.interaction.PinchZoom {
     def this(opt_options: PinchZoomOptions) = this()
   }
@@ -772,7 +772,7 @@ object interaction {
     * @param opt_options Options.
     * @api
     */
-  class Pointer ()
+  open class Pointer ()
     extends typings.openlayers.mod.interaction.Pointer {
     def this(opt_options: PointerOptions) = this()
   }
@@ -828,7 +828,7 @@ object interaction {
     * @fires ol.interaction.SelectEvent
     * @api stable
     */
-  class Select ()
+  open class Select ()
     extends typings.openlayers.mod.interaction.Select {
     def this(opt_options: SelectOptions) = this()
   }
@@ -851,7 +851,7 @@ object interaction {
       */
     @JSGlobal("ol.interaction.Select.Event")
     @js.native
-    class Event protected ()
+    open class Event protected ()
       extends typings.openlayers.mod.interaction.Select.Event {
       /**
         * @classdesc
@@ -925,7 +925,7 @@ object interaction {
     * @param opt_options Options.
     * @api
     */
-  class Snap ()
+  open class Snap ()
     extends typings.openlayers.mod.interaction.Snap {
     def this(opt_options: SnapOptions) = this()
   }
@@ -940,7 +940,7 @@ object interaction {
     */
   @JSGlobal("ol.interaction.Translate")
   @js.native
-  class Translate protected ()
+  open class Translate protected ()
     extends typings.openlayers.mod.interaction.Translate {
     /**
       * @classdesc
@@ -965,7 +965,7 @@ object interaction {
       */
     @JSGlobal("ol.interaction.Translate.Event")
     @js.native
-    class Event protected ()
+    open class Event protected ()
       extends typings.openlayers.mod.interaction.Translate.Event {
       /**
         * @classdesc

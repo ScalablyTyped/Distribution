@@ -10,10 +10,10 @@ Context menu plugin using Bootstrap's style
 | ------------------ | :-------------: |
 | Full name          | bootstrap-menu |
 | Keywords           | bootstrap, context, menu |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 20828 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1299.6666666666667 |
+| # stars            | 109.0 |
 
 ## Links
 - [Homepage](https://github.com/dgoguerra/bootstrap-menu)

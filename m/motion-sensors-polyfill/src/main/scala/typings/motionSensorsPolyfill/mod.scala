@@ -4,8 +4,6 @@ import typings.std.DOMHighResTimeStamp
 import typings.std.DOMMatrix
 import typings.std.Event
 import typings.std.EventTarget
-import typings.std.Float32Array
-import typings.std.Float64Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,13 +12,13 @@ object mod {
   
   @JSImport("motion-sensors-polyfill", "AbsoluteOrientationSensor")
   @js.native
-  class AbsoluteOrientationSensor () extends OrientationSensor {
+  open class AbsoluteOrientationSensor () extends OrientationSensor {
     def this(options: OrientationSensorOptions) = this()
   }
   
   @JSImport("motion-sensors-polyfill", "Accelerometer")
   @js.native
-  class Accelerometer () extends Sensor {
+  open class Accelerometer () extends Sensor {
     def this(options: AccelerometerSensorOptions) = this()
     
     val x: Double = js.native
@@ -32,13 +30,13 @@ object mod {
   
   @JSImport("motion-sensors-polyfill", "GravitySensor")
   @js.native
-  class GravitySensor () extends Accelerometer {
+  open class GravitySensor () extends Accelerometer {
     def this(options: AccelerometerSensorOptions) = this()
   }
   
   @JSImport("motion-sensors-polyfill", "Gyroscope")
   @js.native
-  class Gyroscope () extends Sensor {
+  open class Gyroscope () extends Sensor {
     def this(options: GyroscopeSensorOptions) = this()
     
     val x: Double = js.native
@@ -50,13 +48,13 @@ object mod {
   
   @JSImport("motion-sensors-polyfill", "LinearAccelerationSensor")
   @js.native
-  class LinearAccelerationSensor () extends Accelerometer {
+  open class LinearAccelerationSensor () extends Accelerometer {
     def this(options: AccelerometerSensorOptions) = this()
   }
   
   @JSImport("motion-sensors-polyfill", "OrientationSensor")
   @js.native
-  class OrientationSensor () extends Sensor {
+  open class OrientationSensor () extends Sensor {
     
     def populateMatrix(matrix: RotationMatrixType): Unit = js.native
     
@@ -65,13 +63,13 @@ object mod {
   
   @JSImport("motion-sensors-polyfill", "RelativeOrientationSensor")
   @js.native
-  class RelativeOrientationSensor () extends OrientationSensor {
+  open class RelativeOrientationSensor () extends OrientationSensor {
     def this(options: OrientationSensorOptions) = this()
   }
   
   @JSImport("motion-sensors-polyfill", "Sensor")
   @js.native
-  class Sensor ()
+  open class Sensor ()
     extends StObject
        with EventTarget {
     
@@ -197,7 +195,7 @@ object mod {
     }
   }
   
-  type RotationMatrixType = Float32Array | Float64Array | DOMMatrix
+  type RotationMatrixType = js.typedarray.Float32Array | js.typedarray.Float64Array | DOMMatrix
   
   trait SensorOptions extends StObject {
     

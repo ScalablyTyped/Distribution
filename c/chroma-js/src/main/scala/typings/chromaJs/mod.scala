@@ -3,6 +3,7 @@ package typings.chromaJs
 import org.scalablytyped.runtime.Shortcut
 import typings.chromaJs.anon.Accent
 import typings.chromaJs.anon.Call
+import typings.chromaJs.anon.Unclipped
 import typings.chromaJs.chromaJsStrings.alpha
 import typings.chromaJs.chromaJsStrings.auto
 import typings.chromaJs.chromaJsStrings.brighten
@@ -76,6 +77,7 @@ object mod extends Shortcut {
       */
     def apply(color: String): Color = js.native
     def apply(color: Double): Color = js.native
+    def apply(color: Color): Color = js.native
     /**
       * Create a color in the specified color space using values.
       *
@@ -103,65 +105,29 @@ object mod extends Shortcut {
       */
     def bezier(colors: js.Array[String]): Call = js.native
     
-    @JSName("blend")
-    def blend_burn(color1: String, color2: String, blendMode: burn): Color = js.native
-    @JSName("blend")
-    def blend_burn(color1: String, color2: Color, blendMode: burn): Color = js.native
-    @JSName("blend")
-    def blend_burn(color1: Color, color2: String, blendMode: burn): Color = js.native
-    @JSName("blend")
-    def blend_burn(color1: Color, color2: Color, blendMode: burn): Color = js.native
-    @JSName("blend")
-    def blend_darken(color1: String, color2: String, blendMode: darken): Color = js.native
-    @JSName("blend")
-    def blend_darken(color1: String, color2: Color, blendMode: darken): Color = js.native
-    @JSName("blend")
-    def blend_darken(color1: Color, color2: String, blendMode: darken): Color = js.native
-    @JSName("blend")
-    def blend_darken(color1: Color, color2: Color, blendMode: darken): Color = js.native
-    @JSName("blend")
-    def blend_dodge(color1: String, color2: String, blendMode: dodge): Color = js.native
-    @JSName("blend")
-    def blend_dodge(color1: String, color2: Color, blendMode: dodge): Color = js.native
-    @JSName("blend")
-    def blend_dodge(color1: Color, color2: String, blendMode: dodge): Color = js.native
-    @JSName("blend")
-    def blend_dodge(color1: Color, color2: Color, blendMode: dodge): Color = js.native
-    @JSName("blend")
-    def blend_lighten(color1: String, color2: String, blendMode: lighten): Color = js.native
-    @JSName("blend")
-    def blend_lighten(color1: String, color2: Color, blendMode: lighten): Color = js.native
-    @JSName("blend")
-    def blend_lighten(color1: Color, color2: String, blendMode: lighten): Color = js.native
-    @JSName("blend")
-    def blend_lighten(color1: Color, color2: Color, blendMode: lighten): Color = js.native
     /**
       * Blends two colors using RGB channel-wise blend functions.
       */
-    @JSName("blend")
-    def blend_multiply(color1: String, color2: String, blendMode: multiply): Color = js.native
-    @JSName("blend")
-    def blend_multiply(color1: String, color2: Color, blendMode: multiply): Color = js.native
-    @JSName("blend")
-    def blend_multiply(color1: Color, color2: String, blendMode: multiply): Color = js.native
-    @JSName("blend")
-    def blend_multiply(color1: Color, color2: Color, blendMode: multiply): Color = js.native
-    @JSName("blend")
-    def blend_overlay(color1: String, color2: String, blendMode: overlay): Color = js.native
-    @JSName("blend")
-    def blend_overlay(color1: String, color2: Color, blendMode: overlay): Color = js.native
-    @JSName("blend")
-    def blend_overlay(color1: Color, color2: String, blendMode: overlay): Color = js.native
-    @JSName("blend")
-    def blend_overlay(color1: Color, color2: Color, blendMode: overlay): Color = js.native
-    @JSName("blend")
-    def blend_screen(color1: String, color2: String, blendMode: screen): Color = js.native
-    @JSName("blend")
-    def blend_screen(color1: String, color2: Color, blendMode: screen): Color = js.native
-    @JSName("blend")
-    def blend_screen(color1: Color, color2: String, blendMode: screen): Color = js.native
-    @JSName("blend")
-    def blend_screen(color1: Color, color2: Color, blendMode: screen): Color = js.native
+    def blend(
+      color1: String,
+      color2: String,
+      blendMode: multiply | darken | lighten | screen | overlay | burn | dodge
+    ): Color = js.native
+    def blend(
+      color1: String,
+      color2: Color,
+      blendMode: multiply | darken | lighten | screen | overlay | burn | dodge
+    ): Color = js.native
+    def blend(
+      color1: Color,
+      color2: String,
+      blendMode: multiply | darken | lighten | screen | overlay | burn | dodge
+    ): Color = js.native
+    def blend(
+      color1: Color,
+      color2: Color,
+      blendMode: multiply | darken | lighten | screen | overlay | burn | dodge
+    ): Color = js.native
     
     /**
       * chroma.brewer is an map of ColorBrewer scales that are included in chroma.js for convenience.
@@ -245,6 +211,11 @@ object mod extends Shortcut {
     def gl(red: Double, green: Double, blue: Double, alpha: Double): Color = js.native
     
     /**
+      * Same meaning as lch(), but in different order.
+      */
+    def hcl(h: Double, c: Double, l: Double): Color = js.native
+    
+    /**
       * Create a color from a hex or string representation (as supported in CSS).
       *
       * This is an alias of chroma.css().
@@ -294,14 +265,7 @@ object mod extends Shortcut {
       *  [k-means clustering algorithm]{@link https://en.wikipedia.org/wiki/K-means_clustering} to find (roughly) n
       *  groups of "similar" values. Note that this k-means implementation does not guarantee to find exactly n groups.
       */
-    @JSName("limits")
-    def limits_e(data: js.Array[Double], mode: e, c: Double): js.Array[Double] = js.native
-    @JSName("limits")
-    def limits_k(data: js.Array[Double], mode: k, c: Double): js.Array[Double] = js.native
-    @JSName("limits")
-    def limits_l(data: js.Array[Double], mode: l, c: Double): js.Array[Double] = js.native
-    @JSName("limits")
-    def limits_q(data: js.Array[Double], mode: q, c: Double): js.Array[Double] = js.native
+    def limits(data: js.Array[Double], mode: e | q | l | k, c: Double): js.Array[Double] = js.native
     
     /**
       * Mixes two colors. The mix ratio is a value between 0 and 1.
@@ -346,12 +310,20 @@ object mod extends Shortcut {
       */
     def temperature(t: Double): Color = js.native
     
-    def valid(color: js.Any): Boolean = js.native
-    def valid(color: js.Any, mode: String): Boolean = js.native
+    def valid(color: Any): Boolean = js.native
+    def valid(color: Any, mode: String): Boolean = js.native
   }
   
   @js.native
   trait Color extends StObject {
+    
+    /**
+      * The unclipped RGB components.
+      *
+      * @example
+      * chroma.hcl(50, 40, 100)._rgb._unclipped === [322.65,235.24,196.7,1]
+      */
+    var _rgb: Unclipped = js.native
     
     def alpha(): Double = js.native
     /**
@@ -361,6 +333,18 @@ object mod extends Shortcut {
     
     def brighten(): Color = js.native
     def brighten(f: Double): Color = js.native
+    
+    /**
+      * Test if a color has been clipped or not.
+      * Colors generated from CIELab color space may have their RGB
+      * channels clipped to the range of [0..255].
+      * Colors outside that range may exist in nature but are not
+      * displayable on RGB monitors (such as ultraviolet).
+      *
+      * @example
+      * chroma.hcl(50, 40, 20).clipped() === true
+      */
+    def clipped(): Boolean = js.native
     
     /**
       * Just like color.rgb but adds the alpha channel to the returned
@@ -426,12 +410,7 @@ object mod extends Shortcut {
       * chroma('orange').alpha(0.5).hex('rgb') === '#ffa500'
       */
     def hex(): String = js.native
-    @JSName("hex")
-    def hex_auto(mode: auto): String = js.native
-    @JSName("hex")
-    def hex_rgb(mode: rgb): String = js.native
-    @JSName("hex")
-    def hex_rgba(mode: rgba): String = js.native
+    def hex(mode: auto | rgb | rgba): String = js.native
     
     /**
       * Returns an array with the `hue`, `saturation`, and `intensity`
@@ -759,26 +738,18 @@ object mod extends Shortcut {
       */
     def colors(): js.Array[Color] = js.native
     def colors(c: Double): js.Array[Color] = js.native
-    @JSName("colors")
-    def colors_alpha(c: Double, format: alpha): js.Array[Color] = js.native
-    @JSName("colors")
-    def colors_alpha(c: Unit, format: alpha): js.Array[Color] = js.native
-    @JSName("colors")
-    def colors_brighten(c: Double, format: brighten): js.Array[Color] = js.native
-    @JSName("colors")
-    def colors_brighten(c: Unit, format: brighten): js.Array[Color] = js.native
+    def colors(
+      c: Double,
+      format: alpha | brighten | darken | desaturate | hex | luminance | name | saturate | temperature
+    ): js.Array[Color] = js.native
+    def colors(
+      c: Unit,
+      format: alpha | brighten | darken | desaturate | hex | luminance | name | saturate | temperature
+    ): js.Array[Color] = js.native
     @JSName("colors")
     def colors_cmyk(c: Double, format: cmyk): js.Array[js.Tuple4[Double, Double, Double, Double]] = js.native
     @JSName("colors")
     def colors_cmyk(c: Unit, format: cmyk): js.Array[js.Tuple4[Double, Double, Double, Double]] = js.native
-    @JSName("colors")
-    def colors_darken(c: Double, format: darken): js.Array[Color] = js.native
-    @JSName("colors")
-    def colors_darken(c: Unit, format: darken): js.Array[Color] = js.native
-    @JSName("colors")
-    def colors_desaturate(c: Double, format: desaturate): js.Array[Color] = js.native
-    @JSName("colors")
-    def colors_desaturate(c: Unit, format: desaturate): js.Array[Color] = js.native
     @JSName("colors")
     def colors_gl(c: Double, format: gl): js.Array[js.Tuple4[Double, Double, Double, Double]] = js.native
     @JSName("colors")
@@ -787,10 +758,6 @@ object mod extends Shortcut {
     def colors_hcl(c: Double, format: hcl): js.Array[js.Tuple3[Double, Double, Double]] = js.native
     @JSName("colors")
     def colors_hcl(c: Unit, format: hcl): js.Array[js.Tuple3[Double, Double, Double]] = js.native
-    @JSName("colors")
-    def colors_hex(c: Double, format: hex): js.Array[String] = js.native
-    @JSName("colors")
-    def colors_hex(c: Unit, format: hex): js.Array[String] = js.native
     @JSName("colors")
     def colors_hsi(c: Double, format: hsi): js.Array[js.Tuple3[Double, Double, Double]] = js.native
     @JSName("colors")
@@ -812,14 +779,6 @@ object mod extends Shortcut {
     @JSName("colors")
     def colors_lch(c: Unit, format: lch): js.Array[js.Tuple3[Double, Double, Double]] = js.native
     @JSName("colors")
-    def colors_luminance(c: Double, format: luminance): js.Array[Double] = js.native
-    @JSName("colors")
-    def colors_luminance(c: Unit, format: luminance): js.Array[Double] = js.native
-    @JSName("colors")
-    def colors_name(c: Double, format: name): js.Array[String] = js.native
-    @JSName("colors")
-    def colors_name(c: Unit, format: name): js.Array[String] = js.native
-    @JSName("colors")
     def colors_rgb(c: Double, format: rgb): js.Array[js.Tuple3[Double, Double, Double]] = js.native
     @JSName("colors")
     def colors_rgb(c: Unit, format: rgb): js.Array[js.Tuple3[Double, Double, Double]] = js.native
@@ -827,14 +786,6 @@ object mod extends Shortcut {
     def colors_rgba(c: Double, format: rgba): js.Array[js.Tuple4[Double, Double, Double, Double]] = js.native
     @JSName("colors")
     def colors_rgba(c: Unit, format: rgba): js.Array[js.Tuple4[Double, Double, Double, Double]] = js.native
-    @JSName("colors")
-    def colors_saturate(c: Double, format: saturate): js.Array[Color] = js.native
-    @JSName("colors")
-    def colors_saturate(c: Unit, format: saturate): js.Array[Color] = js.native
-    @JSName("colors")
-    def colors_temperature(c: Double, format: temperature): js.Array[Double] = js.native
-    @JSName("colors")
-    def colors_temperature(c: Unit, format: temperature): js.Array[Double] = js.native
     
     def correctLightness(): this.type = js.native
     def correctLightness(enable: Boolean): this.type = js.native

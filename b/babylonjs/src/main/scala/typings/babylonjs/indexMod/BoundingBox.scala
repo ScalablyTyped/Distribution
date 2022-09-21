@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "BoundingBox")
 @js.native
-class BoundingBox protected ()
+open class BoundingBox protected ()
   extends typings.babylonjs.cullingIndexMod.BoundingBox {
   /**
     * Creates a new bounding box
@@ -62,7 +62,7 @@ object BoundingBox {
     * Tests if a bounding box defined with 8 vectors is entirely inside frustum planes
     * @param boundingVectors defines an array of 8 vectors representing a bounding box
     * @param frustumPlanes defines the frustum planes to test
-    * @return true if there is an inclusion
+    * @returns true if there is an inclusion
     */
   inline def IsCompletelyInFrustum(
     boundingVectors: js.Array[DeepImmutable[typings.babylonjs.mathVectorMod.Vector3]],
@@ -73,14 +73,14 @@ object BoundingBox {
     * Tests if a bounding box defined with 8 vectors intersects frustum planes
     * @param boundingVectors defines an array of 8 vectors representing a bounding box
     * @param frustumPlanes defines the frustum planes to test
-    * @return true if there is an intersection
+    * @returns true if there is an intersection
     */
   inline def IsInFrustum(
     boundingVectors: js.Array[DeepImmutable[typings.babylonjs.mathVectorMod.Vector3]],
     frustumPlanes: js.Array[DeepImmutable[typings.babylonjs.mathPlaneMod.Plane]]
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("IsInFrustum")(boundingVectors.asInstanceOf[js.Any], frustumPlanes.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("babylonjs/index", "BoundingBox.TmpVector3")
+  @JSImport("babylonjs/index", "BoundingBox._TmpVector3")
   @js.native
-  val TmpVector3: js.Any = js.native
+  val _TmpVector3: Any = js.native
 }

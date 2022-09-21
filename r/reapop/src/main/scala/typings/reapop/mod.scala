@@ -6,10 +6,10 @@ import typings.reapop.actionsMod.DismissNotificationAction
 import typings.reapop.actionsMod.DismissNotificationsAction
 import typings.reapop.actionsMod.NotificationActions
 import typings.reapop.actionsMod.UpsertNotificationAction
-import typings.reapop.anon.DismissNotification
 import typings.reapop.anon.PartialNotification
 import typings.reapop.anon.PartialNotificationConfig
 import typings.reapop.notificationsSystemMod.Props
+import typings.reapop.reapopNotificationsContextMod.NotificationsContext
 import typings.reapop.reapopStrings.`bottom-center`
 import typings.reapop.reapopStrings.`bottom-left`
 import typings.reapop.reapopStrings.`bottom-right`
@@ -160,7 +160,7 @@ object mod {
   
   inline def setUpNotifications(props: PartialNotificationConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUpNotifications")(props.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def useNotifications(): DismissNotification = ^.asInstanceOf[js.Dynamic].applyDynamic("useNotifications")().asInstanceOf[DismissNotification]
+  inline def useNotifications(): NotificationsContext = ^.asInstanceOf[js.Dynamic].applyDynamic("useNotifications")().asInstanceOf[NotificationsContext]
   
   @JSImport("reapop", "wyboTheme")
   @js.native

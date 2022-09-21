@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeregisterEventTopicRequest extends StObject {
   
   /**
-    * The Directory ID to remove as a publisher. This directory will no longer send messages to the specified SNS topic.
+    * The Directory ID to remove as a publisher. This directory will no longer send messages to the specified Amazon SNS topic.
     */
   var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId
   
   /**
-    * The name of the SNS topic from which to remove the directory as a publisher.
+    * The name of the Amazon SNS topic from which to remove the directory as a publisher.
     */
   var TopicName: typings.awsSdk.directoryserviceMod.TopicName
 }

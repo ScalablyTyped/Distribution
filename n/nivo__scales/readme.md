@@ -1,19 +1,19 @@
 
 # Scala.js typings for nivo__scales
 
-Typings are for version 0.65.0
+Typings are for version 0.80.0
 
 ## Library description:
-[![version](https://img.shields.io/npm/v/@nivo/scales.svg?style=flat-square)](https://www.npmjs.com/package/@nivo/scales)
+<a href="https://nivo.rocks"><img alt="nivo" src="https://raw.githubusercontent.com/plouc/nivo/master/nivo.png" width="216" height="68"/></a>
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @nivo/scales |
 | Keywords           | - |
-| # releases         | 20 |
-| # dependents       | 12 |
-| # downloads        | 3160734 |
-| # stars            | 0 |
+| # releases         | 19 |
+| # dependents       | 0.0 |
+| # downloads        | 1090159.6666666667 |
+| # stars            | 10446.0 |
 
 ## Links
 - [Homepage](https://github.com/plouc/nivo#readme)

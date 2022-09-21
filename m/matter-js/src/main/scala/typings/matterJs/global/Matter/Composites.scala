@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Matter.Composites")
 @js.native
-class Composites ()
+open class Composites ()
   extends typings.matterJs.mod.Composites
 /* static members */
 object Composites {
@@ -16,27 +16,28 @@ object Composites {
   val ^ : js.Any = js.native
   
   /**
-    * Creates a composite with simple car setup of bodies and constraints.
+    * This has now moved to the [car example](https://github.com/liabru/matter-js/blob/master/examples/car.js), follow that instead as this function is deprecated here.
+    * @deprecated moved to car example
     * @method car
     * @param {number} xx
     * @param {number} yy
     * @param {number} width
     * @param {number} height
     * @param {number} wheelSize
-    * @return {composite} A new composite car body
+    * @returns {Composite} A new composite car body
     */
   inline def car(xx: Double, yy: Double, width: Double, height: Double, wheelSize: Double): typings.matterJs.mod.Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("car")(xx.asInstanceOf[js.Any], yy.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], wheelSize.asInstanceOf[js.Any])).asInstanceOf[typings.matterJs.mod.Composite]
   
   /**
     * Chains all bodies in the given composite together using constraints.
     * @method chain
-    * @param {composite} composite
+    * @param {Composite} composite
     * @param {number} xOffsetA
     * @param {number} yOffsetA
     * @param {number} xOffsetB
     * @param {number} yOffsetB
-    * @param {object} options
-    * @return {composite} A new composite containing objects chained together with constraints
+    * @param {any} options
+    * @returns {Composite} A new composite containing objects chained together with constraints
     */
   inline def chain(
     composite: typings.matterJs.mod.Composite,
@@ -44,26 +45,39 @@ object Composites {
     yOffsetA: Double,
     xOffsetB: Double,
     yOffsetB: Double,
-    options: js.Any
+    options: Any
   ): typings.matterJs.mod.Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("chain")(composite.asInstanceOf[js.Any], xOffsetA.asInstanceOf[js.Any], yOffsetA.asInstanceOf[js.Any], xOffsetB.asInstanceOf[js.Any], yOffsetB.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.matterJs.mod.Composite]
   
   /**
     * Connects bodies in the composite with constraints in a grid pattern, with optional cross braces.
     * @method mesh
-    * @param {composite} composite
+    * @param {Composite} composite
     * @param {number} columns
     * @param {number} rows
     * @param {boolean} crossBrace
-    * @param {object} options
-    * @return {composite} The composite containing objects meshed together with constraints
+    * @param {any} options
+    * @returns {Composite} The composite containing objects meshed together with constraints
     */
   inline def mesh(
     composite: typings.matterJs.mod.Composite,
     columns: Double,
     rows: Double,
     crossBrace: Boolean,
-    options: js.Any
+    options: Any
   ): typings.matterJs.mod.Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("mesh")(composite.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], rows.asInstanceOf[js.Any], crossBrace.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.matterJs.mod.Composite]
+  
+  /**
+    * This has now moved to the [newtonsCradle example](https://github.com/liabru/matter-js/blob/master/examples/newtonsCradle.js), follow that instead as this function is deprecated here.
+    * @deprecated moved to newtonsCradle example
+    * @method newtonsCradle
+    * @param {number} xx
+    * @param {number} yy
+    * @param {number} number
+    * @param {number} size
+    * @param {number} length
+    * @returns {Composite} A new composite newtonsCradle body
+    */
+  inline def newtonsCradle(xx: Double, yy: Double, _number: Double, size: Double, length: Double): typings.matterJs.mod.Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("newtonsCradle")(xx.asInstanceOf[js.Any], yy.asInstanceOf[js.Any], _number.asInstanceOf[js.Any], size.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.matterJs.mod.Composite]
   
   /**
     * Create a new composite containing bodies created in the callback in a pyramid arrangement.
@@ -76,7 +90,7 @@ object Composites {
     * @param {number} columnGap
     * @param {number} rowGap
     * @param {function} callback
-    * @return {composite} A new composite containing objects created in the callback
+    * @returns {Composite} A new composite containing objects created in the callback
     */
   inline def pyramid(
     xx: Double,
@@ -89,7 +103,9 @@ object Composites {
   ): typings.matterJs.mod.Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("pyramid")(xx.asInstanceOf[js.Any], yy.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], rows.asInstanceOf[js.Any], columnGap.asInstanceOf[js.Any], rowGap.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.matterJs.mod.Composite]
   
   /**
-    * Creates a simple soft body like object.
+    * This has now moved to the [softBody example](https://github.com/liabru/matter-js/blob/master/examples/softBody.js)
+    * and the [cloth example](https://github.com/liabru/matter-js/blob/master/examples/cloth.js), follow those instead as this function is deprecated here.
+    * @deprecated moved to softBody and cloth examples
     * @method softBody
     * @param {number} xx
     * @param {number} yy
@@ -101,7 +117,7 @@ object Composites {
     * @param {number} particleRadius
     * @param {} particleOptions
     * @param {} constraintOptions
-    * @return {composite} A new composite softBody
+    * @returns {Composite} A new composite softBody
     */
   inline def softBody(
     xx: Double,
@@ -112,8 +128,8 @@ object Composites {
     rowGap: Double,
     crossBrace: Boolean,
     particleRadius: Double,
-    particleOptions: js.Any,
-    constraintOptions: js.Any
+    particleOptions: Any,
+    constraintOptions: Any
   ): typings.matterJs.mod.Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("softBody")(xx.asInstanceOf[js.Any], yy.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], rows.asInstanceOf[js.Any], columnGap.asInstanceOf[js.Any], rowGap.asInstanceOf[js.Any], crossBrace.asInstanceOf[js.Any], particleRadius.asInstanceOf[js.Any], particleOptions.asInstanceOf[js.Any], constraintOptions.asInstanceOf[js.Any])).asInstanceOf[typings.matterJs.mod.Composite]
   
   /**
@@ -127,7 +143,7 @@ object Composites {
     * @param {number} columnGap
     * @param {number} rowGap
     * @param {function} callback
-    * @return {composite} A new composite containing objects created in the callback
+    * @returns {Composite} A new composite containing objects created in the callback
     */
   inline def stack(
     xx: Double,

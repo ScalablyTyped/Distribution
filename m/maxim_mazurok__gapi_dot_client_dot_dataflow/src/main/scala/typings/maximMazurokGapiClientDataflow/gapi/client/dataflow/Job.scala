@@ -49,15 +49,16 @@ trait Job extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Job & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Job & TopLevel[Any]
   ] = js.undefined
   
   /** The [regional endpoint] (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that contains this job. */
   var location: js.UndefOr[String] = js.undefined
   
   /**
-    * The user-specified Cloud Dataflow job name. Only one Job with a given name may exist in a project at any given time. If a caller attempts to create a Job with the same name as an
-    * already-existing Job, the attempt returns the existing Job. The name must match the regular expression `[a-z]([-a-z0-9]{0,38}[a-z0-9])?`
+    * The user-specified Cloud Dataflow job name. Only one Job with a given name can exist in a project within one region at any given time. Jobs in different regions can have the same
+    * name. If a caller attempts to create a Job with the same name as an already-existing Job, the attempt returns the existing Job. The name must match the regular expression
+    * `[a-z]([-a-z0-9]{0,1022}[a-z0-9])?`
     */
   var name: js.UndefOr[String] = js.undefined
   
@@ -85,6 +86,9 @@ trait Job extends StObject {
     */
   var requestedState: js.UndefOr[String] = js.undefined
   
+  /** Reserved for future use. This field is set only in responses from the server; it is ignored if it is set in any requests. */
+  var satisfiesPzs: js.UndefOr[Boolean] = js.undefined
+  
   /** This field may be mutated by the Cloud Dataflow service; callers cannot mutate it. */
   var stageStates: js.UndefOr[js.Array[ExecutionStageState]] = js.undefined
   
@@ -98,7 +102,7 @@ trait Job extends StObject {
   /** Exactly one of step or steps_location should be specified. The top-level steps that constitute the entire job. Only retrieved with JOB_VIEW_ALL. */
   var steps: js.UndefOr[js.Array[Step]] = js.undefined
   
-  /** The GCS location where the steps are stored. */
+  /** The Cloud Storage location where the steps are stored. */
   var stepsLocation: js.UndefOr[String] = js.undefined
   
   /**
@@ -111,7 +115,7 @@ trait Job extends StObject {
   var transformNameMapping: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Job & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Job & TopLevel[Any]
   ] = js.undefined
   
   /** The type of Cloud Dataflow job. */
@@ -165,7 +169,7 @@ object Job {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Job & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Job & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -198,11 +202,15 @@ object Job {
     
     inline def setRequestedStateUndefined: Self = StObject.set(x, "requestedState", js.undefined)
     
+    inline def setSatisfiesPzs(value: Boolean): Self = StObject.set(x, "satisfiesPzs", value.asInstanceOf[js.Any])
+    
+    inline def setSatisfiesPzsUndefined: Self = StObject.set(x, "satisfiesPzs", js.undefined)
+    
     inline def setStageStates(value: js.Array[ExecutionStageState]): Self = StObject.set(x, "stageStates", value.asInstanceOf[js.Any])
     
     inline def setStageStatesUndefined: Self = StObject.set(x, "stageStates", js.undefined)
     
-    inline def setStageStatesVarargs(value: ExecutionStageState*): Self = StObject.set(x, "stageStates", js.Array(value :_*))
+    inline def setStageStatesVarargs(value: ExecutionStageState*): Self = StObject.set(x, "stageStates", js.Array(value*))
     
     inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
@@ -216,18 +224,18 @@ object Job {
     
     inline def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
     
-    inline def setStepsVarargs(value: Step*): Self = StObject.set(x, "steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: Step*): Self = StObject.set(x, "steps", js.Array(value*))
     
     inline def setTempFiles(value: js.Array[String]): Self = StObject.set(x, "tempFiles", value.asInstanceOf[js.Any])
     
     inline def setTempFilesUndefined: Self = StObject.set(x, "tempFiles", js.undefined)
     
-    inline def setTempFilesVarargs(value: String*): Self = StObject.set(x, "tempFiles", js.Array(value :_*))
+    inline def setTempFilesVarargs(value: String*): Self = StObject.set(x, "tempFiles", js.Array(value*))
     
     inline def setTransformNameMapping(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Job & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Job & TopLevel[Any]
     ): Self = StObject.set(x, "transformNameMapping", value.asInstanceOf[js.Any])
     
     inline def setTransformNameMappingUndefined: Self = StObject.set(x, "transformNameMapping", js.undefined)

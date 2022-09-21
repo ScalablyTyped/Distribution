@@ -12,7 +12,7 @@ trait RegisterDelegatedAdministratorRequest extends StObject {
   var AccountId: typings.awsSdk.organizationsMod.AccountId
   
   /**
-    * The service principal of the AWS service for which you want to make the member account a delegated administrator.
+    * The service principal of the Amazon Web Services service for which you want to make the member account a delegated administrator.
     */
   var ServicePrincipal: typings.awsSdk.organizationsMod.ServicePrincipal
 }

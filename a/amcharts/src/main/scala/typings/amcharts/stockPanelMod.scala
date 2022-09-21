@@ -8,7 +8,7 @@ object stockPanelMod {
   
   @JSImport("amcharts/StockPanel", JSImport.Default)
   @js.native
-  class default () extends StockPanel
+  open class default () extends StockPanel
   
   @js.native
   trait StockPanel

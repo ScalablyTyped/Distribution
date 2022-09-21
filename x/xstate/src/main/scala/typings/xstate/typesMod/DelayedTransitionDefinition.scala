@@ -1,7 +1,9 @@
 package typings.xstate.typesMod
 
-import typings.xstate.anon.ContextTContext
+import typings.xstate.anon.Cond
+import typings.xstate.anon.Context
 import typings.xstate.stateNodeMod.StateNode
+import typings.xstate.typegenTypesMod.TypegenDisabled
 import typings.xstate.xstateStrings.Asterisk
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,8 +21,8 @@ object DelayedTransitionDefinition {
     actions: js.Array[ActionObject[TContext, TEvent]],
     delay: Double | String | (DelayExpr[TContext, TEvent]),
     eventType: (/* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any) | typings.xstate.typesMod.ActionTypes.NullEvent | Asterisk,
-    source: StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]],
-    toJSON: () => typings.xstate.anon.Actions[TContext, TEvent]
+    source: StateNode[TContext, Any, TEvent, Context[TContext], ServiceMap, TypegenDisabled],
+    toJSON: () => Cond[TContext, TEvent]
   ): DelayedTransitionDefinition[TContext, TEvent] = {
     val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], eventType = eventType.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
     __obj.asInstanceOf[DelayedTransitionDefinition[TContext, TEvent]]

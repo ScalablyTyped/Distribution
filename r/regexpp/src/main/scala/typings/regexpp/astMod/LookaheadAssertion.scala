@@ -42,7 +42,7 @@ object LookaheadAssertion {
     
     inline def setAlternatives(value: js.Array[Alternative]): Self = StObject.set(x, "alternatives", value.asInstanceOf[js.Any])
     
-    inline def setAlternativesVarargs(value: Alternative*): Self = StObject.set(x, "alternatives", js.Array(value :_*))
+    inline def setAlternativesVarargs(value: Alternative*): Self = StObject.set(x, "alternatives", js.Array(value*))
     
     inline def setKind(value: lookahead): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,7 @@ object GetBotVersionsResponse {
     
     inline def setBotsUndefined: Self = StObject.set(x, "bots", js.undefined)
     
-    inline def setBotsVarargs(value: BotMetadata*): Self = StObject.set(x, "bots", js.Array(value :_*))
+    inline def setBotsVarargs(value: BotMetadata*): Self = StObject.set(x, "bots", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

@@ -1,5 +1,6 @@
 package typings.three
 
+import typings.three.eventDispatcherMod.Event
 import typings.three.object3DMod.Object3D
 import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
@@ -10,7 +11,7 @@ object groupMod {
   
   @JSImport("three/src/objects/Group", "Group")
   @js.native
-  class Group () extends Object3D {
+  open class Group () extends Object3D[Event] {
     
     val isGroup: `true` = js.native
     

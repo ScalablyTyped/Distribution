@@ -22,7 +22,7 @@ object overlayMod {
   
   @JSImport("ol/Overlay", JSImport.Default)
   @js.native
-  class default protected () extends Overlay {
+  open class default protected () extends Overlay {
     def this(options: Options) = this()
   }
   
@@ -97,13 +97,13 @@ object overlayMod {
       
       inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      inline def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value :_*))
+      inline def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value*))
       
       inline def setPosition(value: Coordinate): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
       inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      inline def setPositionVarargs(value: Double*): Self = StObject.set(x, "position", js.Array(value :_*))
+      inline def setPositionVarargs(value: Double*): Self = StObject.set(x, "position", js.Array(value*))
       
       inline def setPositioning(value: OverlayPositioning): Self = StObject.set(x, "positioning", value.asInstanceOf[js.Any])
       
@@ -218,7 +218,7 @@ object overlayMod {
     
     /* protected */ def render(): Unit = js.native
     
-    /* protected */ var rendered: js.Any = js.native
+    /* protected */ var rendered: Any = js.native
     
     /**
       * Set the DOM element to be associated with this overlay.

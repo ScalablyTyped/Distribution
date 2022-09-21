@@ -1,7 +1,7 @@
 
 # Scala.js typings for rdfjs__fetch-lite
 
-Typings are for version 2.0
+Typings are for version 3.0
 
 ## Library description:
 Wrapper for fetch to simplify sending and receiving RDF data
@@ -9,11 +9,11 @@ Wrapper for fetch to simplify sending and receiving RDF data
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @rdfjs/fetch-lite |
-| Keywords           | rdf, rdfjs, fetch, light, lite |
-| # releases         | 5 |
-| # dependents       | 3 |
-| # downloads        | 25540 |
-| # stars            | 0 |
+| Keywords           | fetch, light, lite, rdf, rdfjs |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 32370.666666666668 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/rdfjs-base/fetch-lite)

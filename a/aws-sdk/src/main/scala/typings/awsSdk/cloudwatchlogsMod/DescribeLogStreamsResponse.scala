@@ -26,7 +26,7 @@ object DescribeLogStreamsResponse {
     
     inline def setLogStreamsUndefined: Self = StObject.set(x, "logStreams", js.undefined)
     
-    inline def setLogStreamsVarargs(value: LogStream*): Self = StObject.set(x, "logStreams", js.Array(value :_*))
+    inline def setLogStreamsVarargs(value: LogStream*): Self = StObject.set(x, "logStreams", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

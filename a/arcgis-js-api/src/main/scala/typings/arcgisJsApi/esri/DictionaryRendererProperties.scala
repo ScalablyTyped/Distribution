@@ -16,7 +16,7 @@ trait DictionaryRendererProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DictionaryRenderer.html#config)
     */
-  var config: js.UndefOr[js.Any] = js.undefined
+  var config: js.UndefOr[Any] = js.undefined
   
   /**
     * Defines a field mapping that maps input fields from the feature to the dictionary symbol style's expected fields for symbols and text.
@@ -33,7 +33,7 @@ trait DictionaryRendererProperties
   var scaleExpression: js.UndefOr[String] = js.undefined
   
   /**
-    * The title identifying and describing the associated [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression as defined in the [scaleExpression](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DictionaryRenderer.html#scaleExpression) property.
+    * The title identifying and describing the associated [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression as defined in the [scaleExpression](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DictionaryRenderer.html#scaleExpression) property.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DictionaryRenderer.html#scaleExpressionTitle)
     */
@@ -47,7 +47,7 @@ trait DictionaryRendererProperties
   var `type`: js.UndefOr[dictionary] = js.undefined
   
   /**
-    * The URL to the dictionary style, e.g.
+    * The URL to the dictionary style.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DictionaryRenderer.html#url)
     */
@@ -62,7 +62,7 @@ object DictionaryRendererProperties {
   
   extension [Self <: DictionaryRendererProperties](x: Self) {
     
-    inline def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     

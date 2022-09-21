@@ -1,6 +1,5 @@
 package typings.jqueryCountdown
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,7 +36,7 @@ object jQueryCountdown {
     /**
       * The parsed final date native object
       */
-    var finalDate: Date
+    var finalDate: js.Date
     
     var offset: OffsetEvent
     
@@ -50,7 +49,7 @@ object jQueryCountdown {
     
     inline def apply(
       elapsed: Boolean,
-      finalDate: Date,
+      finalDate: js.Date,
       isDefaultPrevented: () => Boolean,
       isImmediatePropagationStopped: () => Boolean,
       isPropagationStopped: () => Boolean,
@@ -71,7 +70,7 @@ object jQueryCountdown {
       
       inline def setElapsed(value: Boolean): Self = StObject.set(x, "elapsed", value.asInstanceOf[js.Any])
       
-      inline def setFinalDate(value: Date): Self = StObject.set(x, "finalDate", value.asInstanceOf[js.Any])
+      inline def setFinalDate(value: js.Date): Self = StObject.set(x, "finalDate", value.asInstanceOf[js.Any])
       
       inline def setOffset(value: OffsetEvent): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       

@@ -14,7 +14,7 @@ trait Event extends StObject {
   var details: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientGenomics.maximMazurokGapiClientGenomicsStrings.Event & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientGenomics.maximMazurokGapiClientGenomicsStrings.Event & TopLevel[Any]
   ] = js.undefined
   
   /** The time at which the event occurred. */
@@ -36,7 +36,7 @@ object Event {
     inline def setDetails(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientGenomics.maximMazurokGapiClientGenomicsStrings.Event & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientGenomics.maximMazurokGapiClientGenomicsStrings.Event & TopLevel[Any]
     ): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
     inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)

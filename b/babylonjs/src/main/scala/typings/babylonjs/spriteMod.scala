@@ -18,7 +18,7 @@ object spriteMod {
   
   @JSImport("babylonjs/Sprites/sprite", "Sprite")
   @js.native
-  class Sprite protected ()
+  open class Sprite protected ()
     extends ThinSprite
        with IAnimatable {
     /**
@@ -29,11 +29,11 @@ object spriteMod {
     def this(/** defines the name */
     name: String, manager: ISpriteManager) = this()
     
-    /* private */ var _endAnimation: js.Any = js.native
+    /* private */ var _endAnimation: Any = js.native
     
-    /* private */ var _manager: js.Any = js.native
+    /* private */ var _manager: Any = js.native
     
-    /* private */ var _onAnimationEnd: js.Any = js.native
+    /* private */ var _onAnimationEnd: Any = js.native
     
     /**
       * Gets or sets the associated action manager
@@ -102,7 +102,7 @@ object spriteMod {
       * Serializes the sprite to a JSON object
       * @returns the JSON object
       */
-    def serialize(): js.Any = js.native
+    def serialize(): Any = js.native
     
     /**
       * Gets or sets the sprite size
@@ -133,6 +133,6 @@ object spriteMod {
       * @param manager defines the hosting manager
       * @returns the new sprite
       */
-    inline def Parse(parsedSprite: js.Any, manager: SpriteManager): Sprite = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedSprite.asInstanceOf[js.Any], manager.asInstanceOf[js.Any])).asInstanceOf[Sprite]
+    inline def Parse(parsedSprite: Any, manager: SpriteManager): Sprite = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedSprite.asInstanceOf[js.Any], manager.asInstanceOf[js.Any])).asInstanceOf[Sprite]
   }
 }

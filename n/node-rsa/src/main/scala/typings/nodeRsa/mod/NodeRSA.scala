@@ -1,6 +1,6 @@
 package typings.nodeRsa.mod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.nodeRsa.nodeRsaStrings.buffer
 import typings.nodeRsa.nodeRsaStrings.json
 import org.scalablytyped.runtime.StObject

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class Health ()
+open class Health ()
   extends typings.awsSdk.mod.Health {
   def this(options: ClientConfiguration) = this()
 }

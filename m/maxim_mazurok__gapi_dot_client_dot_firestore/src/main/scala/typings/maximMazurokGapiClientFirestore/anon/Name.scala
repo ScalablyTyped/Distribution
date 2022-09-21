@@ -23,7 +23,7 @@ trait Name extends StObject {
   @JSName("currentDocument.exists")
   var currentDocumentDotexists: js.UndefOr[Boolean] = js.undefined
   
-  /** When set, the target document must exist and have been last updated at that time. */
+  /** When set, the target document must exist and have been last updated at that time. Timestamp must be microsecond aligned. */
   @JSName("currentDocument.updateTime")
   var currentDocumentDotupdateTime: js.UndefOr[String] = js.undefined
   
@@ -104,7 +104,7 @@ object Name {
     
     inline def setMaskDotfieldPathsUndefined: Self = StObject.set(x, "mask.fieldPaths", js.undefined)
     
-    inline def setMaskDotfieldPathsVarargs(value: String*): Self = StObject.set(x, "mask.fieldPaths", js.Array(value :_*))
+    inline def setMaskDotfieldPathsVarargs(value: String*): Self = StObject.set(x, "mask.fieldPaths", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -124,7 +124,7 @@ object Name {
     
     inline def setUpdateMaskDotfieldPathsUndefined: Self = StObject.set(x, "updateMask.fieldPaths", js.undefined)
     
-    inline def setUpdateMaskDotfieldPathsVarargs(value: String*): Self = StObject.set(x, "updateMask.fieldPaths", js.Array(value :_*))
+    inline def setUpdateMaskDotfieldPathsVarargs(value: String*): Self = StObject.set(x, "updateMask.fieldPaths", js.Array(value*))
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

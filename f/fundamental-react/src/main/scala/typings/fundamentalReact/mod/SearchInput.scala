@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("fundamental-react", "SearchInput")
 @js.native
-class SearchInput () extends default
+open class SearchInput () extends default
 object SearchInput {
   
   @JSImport("fundamental-react", "SearchInput")

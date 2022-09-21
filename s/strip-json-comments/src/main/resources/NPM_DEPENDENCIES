@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "strip-json-comments" : "3.1.1"
+      "strip-json-comments" : "5.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "strip-json-comments" : "3.1.1"
+      "strip-json-comments" : "5.0.0"
     }
   ],
   "compile-devDependencies" : [

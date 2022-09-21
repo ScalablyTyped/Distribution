@@ -23,10 +23,10 @@ jQuery plugin for in-place image cropping (zoom & pan, as opposed to select and 
 | ------------------ | :-------------: |
 | Full name          | jquery-cropbox |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 2652 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 961.3333333333334 |
+| # stars            | 354.0 |
 
 ## Links
 - [Homepage](https://github.com/acornejo/jquery-cropbox)

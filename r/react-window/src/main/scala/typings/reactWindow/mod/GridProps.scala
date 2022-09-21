@@ -7,16 +7,16 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GridProps
+trait GridProps[T]
   extends StObject
-     with CommonProps {
+     with CommonProps[T] {
   
   /**
     * React component responsible for rendering the individual item specified by an index prop. This component also receives a style prop (used for positioning).
     *
     * If useIsScrolling is enabled for the list, the component also receives an additional isScrolling boolean prop.
     */
-  var children: ComponentType[GridChildComponentProps]
+  var children: ComponentType[GridChildComponentProps[T]]
   
   /**
     * Number of columns in the grid. Note that only a few columns will be rendered and displayed at a time.
@@ -55,17 +55,17 @@ trait GridProps
     *
     * If your grid does not satisfy the above constraints, use the itemKey property to specify your own keys for items.
     */
-  var itemKey: js.UndefOr[GridItemKeySelector] = js.undefined
+  var itemKey: js.UndefOr[GridItemKeySelector[T]] = js.undefined
   
   /**
     * Called when the items rendered by the grid change.
     */
-  var onItemsRendered: js.UndefOr[js.Function1[/* props */ GridOnItemsRenderedProps, js.Any]] = js.undefined
+  var onItemsRendered: js.UndefOr[js.Function1[/* props */ GridOnItemsRenderedProps, Any]] = js.undefined
   
   /**
     * Called when the grid scroll positions changes, as a result of user scrolling or scroll-to method calls.
     */
-  var onScroll: js.UndefOr[js.Function1[/* props */ GridOnScrollProps, js.Any]] = js.undefined
+  var onScroll: js.UndefOr[js.Function1[/* props */ GridOnScrollProps, Any]] = js.undefined
   
   /**
     * The number of columns to render outside of the visible area. This property can be important for two reasons:
@@ -121,20 +121,20 @@ trait GridProps
 }
 object GridProps {
   
-  inline def apply(
-    children: ComponentType[GridChildComponentProps],
+  inline def apply[T](
+    children: ComponentType[GridChildComponentProps[T]],
     columnCount: Double,
     height: Double,
     rowCount: Double,
     width: Double
-  ): GridProps = {
+  ): GridProps[T] = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], columnCount = columnCount.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], rowCount = rowCount.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-    __obj.asInstanceOf[GridProps]
+    __obj.asInstanceOf[GridProps[T]]
   }
   
-  extension [Self <: GridProps](x: Self) {
+  extension [Self <: GridProps[?], T](x: Self & GridProps[T]) {
     
-    inline def setChildren(value: ComponentType[GridChildComponentProps]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ComponentType[GridChildComponentProps[T]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setColumnCount(value: Double): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
     
@@ -152,15 +152,15 @@ object GridProps {
     
     inline def setInitialScrollTopUndefined: Self = StObject.set(x, "initialScrollTop", js.undefined)
     
-    inline def setItemKey(value: /* params */ ColumnIndex => Key): Self = StObject.set(x, "itemKey", js.Any.fromFunction1(value))
+    inline def setItemKey(value: /* params */ ColumnIndex[T] => Key): Self = StObject.set(x, "itemKey", js.Any.fromFunction1(value))
     
     inline def setItemKeyUndefined: Self = StObject.set(x, "itemKey", js.undefined)
     
-    inline def setOnItemsRendered(value: /* props */ GridOnItemsRenderedProps => js.Any): Self = StObject.set(x, "onItemsRendered", js.Any.fromFunction1(value))
+    inline def setOnItemsRendered(value: /* props */ GridOnItemsRenderedProps => Any): Self = StObject.set(x, "onItemsRendered", js.Any.fromFunction1(value))
     
     inline def setOnItemsRenderedUndefined: Self = StObject.set(x, "onItemsRendered", js.undefined)
     
-    inline def setOnScroll(value: /* props */ GridOnScrollProps => js.Any): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+    inline def setOnScroll(value: /* props */ GridOnScrollProps => Any): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     
     inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
     

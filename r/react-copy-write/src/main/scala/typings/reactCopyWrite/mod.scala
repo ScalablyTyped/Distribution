@@ -19,9 +19,9 @@ object mod {
   // It'd be nice if this could somehow be improved! Perhaps we need variadic
   // kinds plus infer keyword? Alternatively unions may solve our issue if we had
   // the ability to restrict type widening.
-  type AnyDeepMemberOfState[T] = js.Any
+  type AnyDeepMemberOfState[T] = Any
   
-  type Consumer[T] = Component[ConsumerProps[T], js.Object, js.Any]
+  type Consumer[T] = Component[ConsumerProps[T], js.Object, Any]
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactCopyWrite.mod.ConsumerPropsExplicitRender[T]
@@ -58,7 +58,7 @@ object mod {
       
       inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
       
-      inline def setSelectVarargs(value: SelectorFn[T]*): Self = StObject.set(x, "select", js.Array(value :_*))
+      inline def setSelectVarargs(value: SelectorFn[T]*): Self = StObject.set(x, "select", js.Array(value*))
     }
   }
   
@@ -110,7 +110,7 @@ object mod {
   
   type Mutator[T] = js.Function1[/* mutator */ MutateFn[T], Unit]
   
-  type Provider[T] = Component[ProviderProps[T], js.Object, js.Any]
+  type Provider[T] = Component[ProviderProps[T], js.Object, Any]
   
   trait ProviderProps[T] extends StObject {
     
@@ -129,7 +129,7 @@ object mod {
       
       inline def setChildren(value: Element | js.Array[Element]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setChildrenVarargs(value: Element*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: Element*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setInitialState(value: Partial[T]): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
       

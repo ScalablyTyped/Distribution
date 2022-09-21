@@ -8,7 +8,7 @@ trait QuickUnion extends StObject {
   
   def connected(v: Double, w: Double): Boolean
   
-  /* private */ var id: js.Any
+  /* private */ var id: Any
   
   def root(q: Double): Double
   
@@ -18,7 +18,7 @@ object QuickUnion {
   
   inline def apply(
     connected: (Double, Double) => Boolean,
-    id: js.Any,
+    id: Any,
     root: Double => Double,
     union: (Double, Double) => Unit
   ): QuickUnion = {
@@ -30,7 +30,7 @@ object QuickUnion {
     
     inline def setConnected(value: (Double, Double) => Boolean): Self = StObject.set(x, "connected", js.Any.fromFunction2(value))
     
-    inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setRoot(value: Double => Double): Self = StObject.set(x, "root", js.Any.fromFunction1(value))
     

@@ -5,6 +5,7 @@ import typings.sipJs.coreMod.URI
 import typings.sipJs.inviteMod.IncomingInviteRequest
 import typings.sipJs.inviterOptionsMod.InviterOptions
 import typings.sipJs.messagerOptionsMod.MessagerOptions
+import typings.sipJs.methodsAckMod.IncomingAckRequest
 import typings.sipJs.methodsByeMod.IncomingByeRequest
 import typings.sipJs.methodsInfoMod.IncomingInfoRequest
 import typings.sipJs.methodsMessageMod.IncomingMessageRequest
@@ -21,9 +22,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object apiMod {
   
+  @JSImport("sip.js/lib/api", "Ack")
+  @js.native
+  open class Ack protected ()
+    extends typings.sipJs.ackMod.Ack {
+    /** @internal */
+    def this(incomingAckRequest: IncomingAckRequest) = this()
+  }
+  
   @JSImport("sip.js/lib/api", "Bye")
   @js.native
-  class Bye protected ()
+  open class Bye protected ()
     extends typings.sipJs.byeMod.Bye {
     /** @internal */
     def this(incomingByeRequest: IncomingByeRequest) = this()
@@ -31,19 +40,19 @@ object apiMod {
   
   @JSImport("sip.js/lib/api", "ContentTypeUnsupportedError")
   @js.native
-  class ContentTypeUnsupportedError ()
+  open class ContentTypeUnsupportedError ()
     extends typings.sipJs.exceptionsMod.ContentTypeUnsupportedError {
     def this(message: String) = this()
   }
   
   @JSImport("sip.js/lib/api", "EmitterImpl")
   @js.native
-  class EmitterImpl[T] ()
+  open class EmitterImpl[T] ()
     extends typings.sipJs.emitterMod.EmitterImpl[T]
   
   @JSImport("sip.js/lib/api", "Info")
   @js.native
-  class Info protected ()
+  open class Info protected ()
     extends typings.sipJs.infoMod.Info {
     /** @internal */
     def this(incomingInfoRequest: IncomingInfoRequest) = this()
@@ -51,7 +60,7 @@ object apiMod {
   
   @JSImport("sip.js/lib/api", "Invitation")
   @js.native
-  class Invitation protected ()
+  open class Invitation protected ()
     extends typings.sipJs.invitationMod.Invitation {
     /** @internal */
     def this(userAgent: typings.sipJs.userAgentMod.UserAgent, incomingInviteRequest: IncomingInviteRequest) = this()
@@ -59,7 +68,7 @@ object apiMod {
   
   @JSImport("sip.js/lib/api", "Inviter")
   @js.native
-  class Inviter protected ()
+  open class Inviter protected ()
     extends typings.sipJs.inviterMod.Inviter {
     /**
       * Constructs a new instance of the `Inviter` class.
@@ -73,7 +82,7 @@ object apiMod {
   
   @JSImport("sip.js/lib/api", "Message")
   @js.native
-  class Message protected ()
+  open class Message protected ()
     extends typings.sipJs.messageMod.Message {
     /** @internal */
     def this(incomingMessageRequest: IncomingMessageRequest) = this()
@@ -81,7 +90,7 @@ object apiMod {
   
   @JSImport("sip.js/lib/api", "Messager")
   @js.native
-  class Messager protected ()
+  open class Messager protected ()
     extends typings.sipJs.messagerMod.Messager {
     /**
       * Constructs a new instance of the `Messager` class.
@@ -116,7 +125,7 @@ object apiMod {
   
   @JSImport("sip.js/lib/api", "Notification")
   @js.native
-  class Notification protected ()
+  open class Notification protected ()
     extends typings.sipJs.notificationMod.Notification {
     /** @internal */
     def this(incomingNotifyRequest: IncomingNotifyRequest) = this()
@@ -124,7 +133,7 @@ object apiMod {
   
   @JSImport("sip.js/lib/api", "Publisher")
   @js.native
-  class Publisher protected ()
+  open class Publisher protected ()
     extends typings.sipJs.publisherMod.Publisher {
     /**
       * Constructs a new instance of the `Publisher` class.
@@ -161,7 +170,7 @@ object apiMod {
   
   @JSImport("sip.js/lib/api", "Referral")
   @js.native
-  class Referral protected ()
+  open class Referral protected ()
     extends typings.sipJs.referralMod.Referral {
     /** @internal */
     def this(incomingReferRequest: IncomingReferRequest, session: typings.sipJs.sessionMod.Session) = this()
@@ -169,7 +178,7 @@ object apiMod {
   
   @JSImport("sip.js/lib/api", "Registerer")
   @js.native
-  class Registerer protected ()
+  open class Registerer protected ()
     extends typings.sipJs.registererMod.Registerer {
     /**
       * Constructs a new instance of the `Registerer` class.
@@ -188,18 +197,22 @@ object apiMod {
     
     @JSImport("sip.js/lib/api", "Registerer.defaultExpires")
     @js.native
-    val defaultExpires: js.Any = js.native
+    val defaultExpires: Any = js.native
     
     /** Default registerer options. */
     @JSImport("sip.js/lib/api", "Registerer.defaultOptions")
     @js.native
-    def defaultOptions: js.Any = js.native
-    inline def defaultOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
+    def defaultOptions: Any = js.native
+    inline def defaultOptions_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
+    
+    @JSImport("sip.js/lib/api", "Registerer.defaultRefreshFrequency")
+    @js.native
+    val defaultRefreshFrequency: Any = js.native
     
     @JSImport("sip.js/lib/api", "Registerer.newUUID")
     @js.native
-    def newUUID: js.Any = js.native
-    inline def newUUID_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("newUUID")(x.asInstanceOf[js.Any])
+    def newUUID: Any = js.native
+    inline def newUUID_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("newUUID")(x.asInstanceOf[js.Any])
     
     /**
       * Strip properties with undefined values from options.
@@ -209,8 +222,8 @@ object apiMod {
       */
     @JSImport("sip.js/lib/api", "Registerer.stripUndefinedProperties")
     @js.native
-    def stripUndefinedProperties: js.Any = js.native
-    inline def stripUndefinedProperties_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stripUndefinedProperties")(x.asInstanceOf[js.Any])
+    def stripUndefinedProperties: Any = js.native
+    inline def stripUndefinedProperties_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stripUndefinedProperties")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("sip.js/lib/api", "RegistererState")
@@ -232,7 +245,7 @@ object apiMod {
   @JSImport("sip.js/lib/api", "RequestPendingError")
   @js.native
   /** @internal */
-  class RequestPendingError ()
+  open class RequestPendingError ()
     extends typings.sipJs.exceptionsMod.RequestPendingError {
     def this(message: String) = this()
   }
@@ -266,7 +279,7 @@ object apiMod {
   
   @JSImport("sip.js/lib/api", "SessionDescriptionHandlerError")
   @js.native
-  class SessionDescriptionHandlerError ()
+  open class SessionDescriptionHandlerError ()
     extends typings.sipJs.exceptionsMod.SessionDescriptionHandlerError {
     def this(message: String) = this()
   }
@@ -291,19 +304,19 @@ object apiMod {
   
   @JSImport("sip.js/lib/api", "SessionTerminatedError")
   @js.native
-  class SessionTerminatedError ()
+  open class SessionTerminatedError ()
     extends typings.sipJs.exceptionsMod.SessionTerminatedError
   
   @JSImport("sip.js/lib/api", "StateTransitionError")
   @js.native
-  class StateTransitionError ()
+  open class StateTransitionError ()
     extends typings.sipJs.exceptionsMod.StateTransitionError {
     def this(message: String) = this()
   }
   
   @JSImport("sip.js/lib/api", "Subscriber")
   @js.native
-  class Subscriber protected ()
+  open class Subscriber protected ()
     extends typings.sipJs.subscriberMod.Subscriber {
     /**
       * Constructor.
@@ -372,7 +385,7 @@ object apiMod {
     * Constructs a new instance of the `UserAgent` class.
     * @param options - Options bucket. See {@link UserAgentOptions} for details.
     */
-  class UserAgent ()
+  open class UserAgent ()
     extends typings.sipJs.userAgentMod.UserAgent {
     def this(options: PartialUserAgentOptions) = this()
   }
@@ -386,8 +399,8 @@ object apiMod {
     /** Default user agent options. */
     @JSImport("sip.js/lib/api", "UserAgent.defaultOptions")
     @js.native
-    def defaultOptions: js.Any = js.native
-    inline def defaultOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
+    def defaultOptions: Any = js.native
+    inline def defaultOptions_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
     
     /**
       * Create a URI instance from a string.
@@ -408,8 +421,8 @@ object apiMod {
       */
     @JSImport("sip.js/lib/api", "UserAgent.stripUndefinedProperties")
     @js.native
-    def stripUndefinedProperties: js.Any = js.native
-    inline def stripUndefinedProperties_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stripUndefinedProperties")(x.asInstanceOf[js.Any])
+    def stripUndefinedProperties: Any = js.native
+    inline def stripUndefinedProperties_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stripUndefinedProperties")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("sip.js/lib/api", "UserAgentState")

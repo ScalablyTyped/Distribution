@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Options specific to read / write transactions.
-  */
 trait SchemaReadWrite extends StObject {
   
   /**
     * The transaction identifier of the transaction being retried.
     */
-  var previousTransaction: js.UndefOr[String] = js.undefined
+  var previousTransaction: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaReadWrite {
   
@@ -24,6 +21,8 @@ object SchemaReadWrite {
   extension [Self <: SchemaReadWrite](x: Self) {
     
     inline def setPreviousTransaction(value: String): Self = StObject.set(x, "previousTransaction", value.asInstanceOf[js.Any])
+    
+    inline def setPreviousTransactionNull: Self = StObject.set(x, "previousTransaction", null)
     
     inline def setPreviousTransactionUndefined: Self = StObject.set(x, "previousTransaction", js.undefined)
   }

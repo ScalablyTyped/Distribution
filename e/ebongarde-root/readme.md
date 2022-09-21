@@ -10,10 +10,10 @@ Utilize your package root directory from anywhere in your module.
 | ------------------ | :-------------: |
 | Full name          | ebongarde-root |
 | Keywords           | application, root, ebongarde |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 715 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 72.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/ebongarde-root)

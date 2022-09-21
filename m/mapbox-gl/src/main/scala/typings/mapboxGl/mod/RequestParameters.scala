@@ -22,7 +22,7 @@ trait RequestParameters extends StObject {
   /**
     * The headers to be sent with the request.
     */
-  var headers: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var headers: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   var method: js.UndefOr[GET | POST | PUT] = js.undefined
   
@@ -48,7 +48,7 @@ object RequestParameters {
     
     inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
     
-    inline def setHeaders(value: StringDictionary[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: StringDictionary[Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     

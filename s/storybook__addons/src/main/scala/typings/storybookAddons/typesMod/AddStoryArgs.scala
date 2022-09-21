@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AddStoryArgs[StoryFnReturnType] extends StObject {
   
-  var id: StoryId
+  var id: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ Any
   
-  var kind: StoryKind
+  var kind: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryKind */ Any
   
-  var name: StoryName
+  var name: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryName */ Any
   
   var parameters: Parameters
   
@@ -19,9 +19,9 @@ trait AddStoryArgs[StoryFnReturnType] extends StObject {
 object AddStoryArgs {
   
   inline def apply[StoryFnReturnType](
-    id: StoryId,
-    kind: StoryKind,
-    name: StoryName,
+    id: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ Any,
+    kind: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryKind */ Any,
+    name: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryName */ Any,
     parameters: Parameters,
     storyFn: StoryFn[StoryFnReturnType]
   ): AddStoryArgs[StoryFnReturnType] = {
@@ -31,18 +31,20 @@ object AddStoryArgs {
   
   extension [Self <: AddStoryArgs[?], StoryFnReturnType](x: Self & AddStoryArgs[StoryFnReturnType]) {
     
-    inline def setId(value: StoryId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ Any
+    ): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setKind(value: StoryKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryKind */ Any
+    ): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    inline def setName(value: StoryName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryName */ Any
+    ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setParameters(value: Parameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setStoryFn(value: StoryFn[StoryFnReturnType]): Self = StObject.set(x, "storyFn", value.asInstanceOf[js.Any])
-    
-    inline def setStoryFnFunction1(value: /* p */ js.UndefOr[StoryContext] => StoryFnReturnType): Self = StObject.set(x, "storyFn", js.Any.fromFunction1(value))
-    
-    inline def setStoryFnFunction2(value: (/* a */ js.UndefOr[Args], /* p */ js.UndefOr[StoryContext]) => StoryFnReturnType): Self = StObject.set(x, "storyFn", js.Any.fromFunction2(value))
   }
 }

@@ -4,24 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Derived describes the derived image portion (Occurrence) of the DockerImage
-  * relationship. This image would be produced from a Dockerfile with FROM
-  * &lt;DockerImage.Basis in attached Note&gt;.
-  */
 trait SchemaDerived extends StObject {
   
   /**
-    * Output only. This contains the base image URL for the derived image
-    * occurrence.
+    * Output only. This contains the base image URL for the derived image occurrence.
     */
-  var baseResourceUrl: js.UndefOr[String] = js.undefined
+  var baseResourceUrl: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Output only. The number of layers by which this image differs from the
-    * associated image basis.
+    * Output only. The number of layers by which this image differs from the associated image basis.
     */
-  var distance: js.UndefOr[Double] = js.undefined
+  var distance: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * Required. The fingerprint of the derived image.
@@ -29,9 +22,7 @@ trait SchemaDerived extends StObject {
   var fingerprint: js.UndefOr[SchemaFingerprint] = js.undefined
   
   /**
-    * This contains layer-specific metadata, if populated it has length
-    * &quot;distance&quot; and is ordered with [distance] being the layer
-    * immediately following the base image and [1] being the final layer.
+    * This contains layer-specific metadata, if populated it has length "distance" and is ordered with [distance] being the layer immediately following the base image and [1] being the final layer.
     */
   var layerInfo: js.UndefOr[js.Array[SchemaLayer]] = js.undefined
 }
@@ -46,9 +37,13 @@ object SchemaDerived {
     
     inline def setBaseResourceUrl(value: String): Self = StObject.set(x, "baseResourceUrl", value.asInstanceOf[js.Any])
     
+    inline def setBaseResourceUrlNull: Self = StObject.set(x, "baseResourceUrl", null)
+    
     inline def setBaseResourceUrlUndefined: Self = StObject.set(x, "baseResourceUrl", js.undefined)
     
     inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    
+    inline def setDistanceNull: Self = StObject.set(x, "distance", null)
     
     inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
     
@@ -60,6 +55,6 @@ object SchemaDerived {
     
     inline def setLayerInfoUndefined: Self = StObject.set(x, "layerInfo", js.undefined)
     
-    inline def setLayerInfoVarargs(value: SchemaLayer*): Self = StObject.set(x, "layerInfo", js.Array(value :_*))
+    inline def setLayerInfoVarargs(value: SchemaLayer*): Self = StObject.set(x, "layerInfo", js.Array(value*))
   }
 }

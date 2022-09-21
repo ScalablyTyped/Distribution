@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "DetailsRowBase")
 @js.native
-class DetailsRowBase protected ()
+open class DetailsRowBase protected ()
   extends typings.officeUiFabricReact.mod.DetailsRowBase {
   def this(props: IDetailsRowBaseProps) = this()
 }

@@ -33,6 +33,6 @@ object PrincipalIdFormat {
     
     inline def setStatusesUndefined: Self = StObject.set(x, "Statuses", js.undefined)
     
-    inline def setStatusesVarargs(value: IdFormat*): Self = StObject.set(x, "Statuses", js.Array(value :_*))
+    inline def setStatusesVarargs(value: IdFormat*): Self = StObject.set(x, "Statuses", js.Array(value*))
   }
 }

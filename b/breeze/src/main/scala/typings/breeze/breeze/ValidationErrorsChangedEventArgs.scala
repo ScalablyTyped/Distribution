@@ -23,12 +23,12 @@ object ValidationErrorsChangedEventArgs {
     
     inline def setAdded(value: js.Array[ValidationError]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
     
-    inline def setAddedVarargs(value: ValidationError*): Self = StObject.set(x, "added", js.Array(value :_*))
+    inline def setAddedVarargs(value: ValidationError*): Self = StObject.set(x, "added", js.Array(value*))
     
     inline def setEntity(value: Entity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
     inline def setRemoved(value: js.Array[ValidationError]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
     
-    inline def setRemovedVarargs(value: ValidationError*): Self = StObject.set(x, "removed", js.Array(value :_*))
+    inline def setRemovedVarargs(value: ValidationError*): Self = StObject.set(x, "removed", js.Array(value*))
   }
 }

@@ -4,15 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Properties of each row in a table.
-  */
 trait SchemaTableRowProperties extends StObject {
   
   /**
-    * Minimum height of the row. The row will be rendered in the Slides editor
-    * at a height equal to or greater than this value in order to show all the
-    * text in the row&#39;s cell(s).
+    * Minimum height of the row. The row will be rendered in the Slides editor at a height equal to or greater than this value in order to show all the text in the row's cell(s).
     */
   var minRowHeight: js.UndefOr[SchemaDimension] = js.undefined
 }

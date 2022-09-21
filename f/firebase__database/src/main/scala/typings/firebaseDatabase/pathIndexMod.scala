@@ -10,23 +10,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object pathIndexMod {
   
-  @JSImport("@firebase/database/dist/src/core/snap/indexes/PathIndex", "PathIndex")
+  @JSImport("@firebase/database/dist/node-esm/src/core/snap/indexes/PathIndex", "PathIndex")
   @js.native
-  class PathIndex protected () extends Index {
+  open class PathIndex protected () extends Index {
     def this(indexPath_ : Path) = this()
     
-    /**
-      * @param {!Node} snap
-      * @return {!Node}
-      * @protected
-      */
     /* protected */ def extractChild(snap: Node): Node = js.native
     
-    /* private */ var indexPath_ : js.Any = js.native
+    /* private */ var indexPath_ : Any = js.native
     
-    /**
-      * @inheritDoc
-      */
     def makePost(indexValue: js.Object, name: String): NamedNode = js.native
   }
 }

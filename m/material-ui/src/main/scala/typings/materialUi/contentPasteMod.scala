@@ -10,10 +10,10 @@ object contentPasteMod {
   
   @JSImport("material-ui/svg-icons/content/content-paste", JSImport.Default)
   @js.native
-  class default () extends ContentContentPaste
+  open class default () extends ContentContentPaste
   
   @JSImport("material-ui/svg-icons/content/content-paste", "ContentContentPaste")
   @js.native
-  class ContentContentPaste ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ContentContentPaste ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

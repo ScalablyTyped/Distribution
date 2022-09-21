@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object useSubscriptionMod {
   
-  @JSImport("react-relay/lib/relay-experimental/useSubscription", JSImport.Namespace)
+  @JSImport("react-relay/relay-hooks/useSubscription", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

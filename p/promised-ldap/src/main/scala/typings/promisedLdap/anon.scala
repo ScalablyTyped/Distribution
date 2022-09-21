@@ -27,7 +27,7 @@ object anon {
       
       inline def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
       
-      inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
+      inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -35,26 +35,26 @@ object anon {
   
   trait Entries extends StObject {
     
-    var entries: js.Array[js.Any]
+    var entries: js.Array[Any]
     
-    var references: js.Array[js.Any]
+    var references: js.Array[Any]
   }
   object Entries {
     
-    inline def apply(entries: js.Array[js.Any], references: js.Array[js.Any]): Entries = {
+    inline def apply(entries: js.Array[Any], references: js.Array[Any]): Entries = {
       val __obj = js.Dynamic.literal(entries = entries.asInstanceOf[js.Any], references = references.asInstanceOf[js.Any])
       __obj.asInstanceOf[Entries]
     }
     
     extension [Self <: Entries](x: Self) {
       
-      inline def setEntries(value: js.Array[js.Any]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+      inline def setEntries(value: js.Array[Any]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
       
-      inline def setEntriesVarargs(value: js.Any*): Self = StObject.set(x, "entries", js.Array(value :_*))
+      inline def setEntriesVarargs(value: Any*): Self = StObject.set(x, "entries", js.Array(value*))
       
-      inline def setReferences(value: js.Array[js.Any]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
+      inline def setReferences(value: js.Array[Any]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
       
-      inline def setReferencesVarargs(value: js.Any*): Self = StObject.set(x, "references", js.Array(value :_*))
+      inline def setReferencesVarargs(value: Any*): Self = StObject.set(x, "references", js.Array(value*))
     }
   }
   

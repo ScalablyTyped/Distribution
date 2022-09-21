@@ -1,7 +1,7 @@
 
 # Scala.js typings for pica
 
-Typings are for version 5.1
+Typings are for version 9.0
 
 ## Library description:
 High quality image resize in browser.
@@ -11,14 +11,11 @@ High quality image resize in browser.
 | Full name          | pica |
 | Keywords           | resize, scale, image, lanczos, canvas |
 | # releases         | 9 |
-| # dependents       | 34 |
-| # downloads        | 879214 |
-| # stars            | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 167765.66666666666 |
+| # stars            | 3102.0 |
 
 ## Links
-- [Homepage](https://github.com/nodeca/pica)
-- [Bugs](https://github.com/nodeca/pica/issues)
-- [Repository](https://github.com/nodeca/pica)
 - [Npm](https://www.npmjs.com/package/pica)
     
 

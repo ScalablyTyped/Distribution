@@ -38,7 +38,7 @@ trait Job extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.Job & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.Job & TopLevel[Any]
   ] = js.undefined
   
   /** Optional. Job is a Pig job. */
@@ -116,7 +116,7 @@ object Job {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.Job & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.Job & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -163,7 +163,7 @@ object Job {
     
     inline def setStatusHistoryUndefined: Self = StObject.set(x, "statusHistory", js.undefined)
     
-    inline def setStatusHistoryVarargs(value: JobStatus*): Self = StObject.set(x, "statusHistory", js.Array(value :_*))
+    inline def setStatusHistoryVarargs(value: JobStatus*): Self = StObject.set(x, "statusHistory", js.Array(value*))
     
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
@@ -171,6 +171,6 @@ object Job {
     
     inline def setYarnApplicationsUndefined: Self = StObject.set(x, "yarnApplications", js.undefined)
     
-    inline def setYarnApplicationsVarargs(value: YarnApplication*): Self = StObject.set(x, "yarnApplications", js.Array(value :_*))
+    inline def setYarnApplicationsVarargs(value: YarnApplication*): Self = StObject.set(x, "yarnApplications", js.Array(value*))
   }
 }

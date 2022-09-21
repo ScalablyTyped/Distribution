@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // API: http://vitaly-t.github.io/pg-promise/txMode.TransactionMode.html
 @JSImport("pg-promise", "TransactionMode")
 @js.native
-class TransactionMode () extends StObject {
+open class TransactionMode () extends StObject {
   def this(options: Deferrable) = this()
   
   def begin(): String = js.native

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.WebService")
 @js.native
-/* private */ class WebService ()
+/* private */ open class WebService ()
   extends StObject
      with typings.activexAccess.Access.WebService {
   
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var AccessDotWebService_typekey: typings.activexAccess.Access.WebService = js.native
   
   /* CompleteClass */
-  override def Entities(Index: js.Any): typings.activexAccess.Access.Entity = js.native
+  override def Entities(Index: Any): typings.activexAccess.Access.Entity = js.native
   /* CompleteClass */
   @JSName("Entities")
   override val Entities_Original: Entities = js.native
@@ -28,5 +28,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Name: String = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
 }

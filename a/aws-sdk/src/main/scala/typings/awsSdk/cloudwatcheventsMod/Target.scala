@@ -12,7 +12,7 @@ trait Target extends StObject {
   var Arn: TargetArn
   
   /**
-    * If the event target is an AWS Batch job, this contains the job definition, job name, and other parameters. For more information, see Jobs in the AWS Batch User Guide.
+    * If the event target is an Batch job, this contains the job definition, job name, and other parameters. For more information, see Jobs in the Batch User Guide.
     */
   var BatchParameters: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.BatchParameters] = js.undefined
   
@@ -27,12 +27,12 @@ trait Target extends StObject {
   var EcsParameters: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.EcsParameters] = js.undefined
   
   /**
-    * Contains the HTTP parameters to use when the target is a API Gateway REST endpoint. If you specify an API Gateway REST API as a target, you can use this parameter to specify headers, path parameter, query string keys/values as part of your target invoking request.
+    * Contains the HTTP parameters to use when the target is a API Gateway REST endpoint or EventBridge ApiDestination. If you specify an API Gateway REST API or EventBridge ApiDestination as a target, you can use this parameter to specify headers, path parameters, and query string keys/values as part of your target invoking request. If you're using ApiDestinations, the corresponding Connection can also have these values configured. In case of any conflicting keys, values from the Connection take precedence.
     */
   var HttpParameters: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.HttpParameters] = js.undefined
   
   /**
-    * The ID of the target.
+    * The ID of the target. We recommend using a memorable and unique string.
     */
   var Id: TargetId
   
@@ -57,7 +57,7 @@ trait Target extends StObject {
   var KinesisParameters: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.KinesisParameters] = js.undefined
   
   /**
-    * Contains the Redshift Data API parameters to use when the target is a Redshift cluster. If you specify a Redshift Cluster as a Target, you can use this to specify parameters to invoke the Redshift Data API ExecuteStatement based on EventBridge events.
+    * Contains the Amazon Redshift Data API parameters to use when the target is a Amazon Redshift cluster. If you specify a Amazon Redshift Cluster as a Target, you can use this to specify parameters to invoke the Amazon Redshift Data API ExecuteStatement based on EventBridge events.
     */
   var RedshiftDataParameters: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.RedshiftDataParameters] = js.undefined
   
@@ -75,6 +75,11 @@ trait Target extends StObject {
     * Parameters used when you are using the rule to invoke Amazon EC2 Run Command.
     */
   var RunCommandParameters: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.RunCommandParameters] = js.undefined
+  
+  /**
+    * Contains the SageMaker Model Building Pipeline parameters to start execution of a SageMaker Model Building Pipeline. If you specify a SageMaker Model Building Pipeline as a target, you can use this to specify parameters to start a pipeline execution based on EventBridge events.
+    */
+  var SageMakerPipelineParameters: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.SageMakerPipelineParameters] = js.undefined
   
   /**
     * Contains the message group ID to use when the target is a FIFO queue. If you specify an SQS FIFO queue as a target, the queue must have content-based deduplication enabled.
@@ -141,6 +146,10 @@ object Target {
     inline def setRunCommandParameters(value: RunCommandParameters): Self = StObject.set(x, "RunCommandParameters", value.asInstanceOf[js.Any])
     
     inline def setRunCommandParametersUndefined: Self = StObject.set(x, "RunCommandParameters", js.undefined)
+    
+    inline def setSageMakerPipelineParameters(value: SageMakerPipelineParameters): Self = StObject.set(x, "SageMakerPipelineParameters", value.asInstanceOf[js.Any])
+    
+    inline def setSageMakerPipelineParametersUndefined: Self = StObject.set(x, "SageMakerPipelineParameters", js.undefined)
     
     inline def setSqsParameters(value: SqsParameters): Self = StObject.set(x, "SqsParameters", value.asInstanceOf[js.Any])
     

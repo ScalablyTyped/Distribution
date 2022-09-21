@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InputTemplate extends StObject {
   
   /**
-    * Specifies set of audio selectors within an input to combine. An input may have multiple audio selector groups. See "Audio Selector Group":#inputs-audio_selector_group for more information.
+    * Use audio selector groups to combine multiple sidecar audio inputs so that you can assign them to a single output audio tab (AudioDescription). Note that, if you're working with embedded audio, it's simpler to assign multiple input tracks into a single audio selector rather than use an audio selector group.
     */
   var AudioSelectorGroups: js.UndefOr[mapOfAudioSelectorGroup] = js.undefined
   
@@ -35,6 +35,11 @@ trait InputTemplate extends StObject {
     * Enable Denoise (InputDenoiseFilter) to filter noise from the input.  Default is disabled. Only applicable to MPEG2, H.264, H.265, and uncompressed video inputs.
     */
   var DenoiseFilter: js.UndefOr[InputDenoiseFilter] = js.undefined
+  
+  /**
+    * Use this setting only when your video source has Dolby Vision studio mastering metadata that is carried in a separate XML file. Specify the Amazon S3 location for the metadata XML file. MediaConvert uses this file to provide global and frame-level metadata for Dolby Vision preprocessing. When you specify a file here and your input also has interleaved global and frame level metadata, MediaConvert ignores the interleaved metadata and uses only the the metadata from this external XML file. Note that your IAM service role must grant MediaConvert read permissions to this file. For more information, see https://docs.aws.amazon.com/mediaconvert/latest/ug/iam-role.html.
+    */
+  var DolbyVisionMetadataXml: js.UndefOr[stringMin14PatternS3XmlXMLHttpsXmlXML] = js.undefined
   
   /**
     * Specify how the transcoding service applies the denoise and deblock filters. You must also enable the filters separately, with Denoise (InputDenoiseFilter) and Deblock (InputDeblockFilter). * Auto - The transcoding service determines whether to apply filtering, depending on input type and quality. * Disable - The input is not filtered. This is true even if you use the API to enable them in (InputDeblockFilter) and (InputDeblockFilter). * Force - The input is filtered regardless of input type.
@@ -87,7 +92,7 @@ trait InputTemplate extends StObject {
   var TimecodeStart: js.UndefOr[stringMin11Max11Pattern01D20305D205D] = js.undefined
   
   /**
-    * Selector for video.
+    * Input video selectors contain the video settings for the input. Each of your inputs can have up to one video selector.
     */
   var VideoSelector: js.UndefOr[typings.awsSdk.mediaconvertMod.VideoSelector] = js.undefined
 }
@@ -124,6 +129,10 @@ object InputTemplate {
     
     inline def setDenoiseFilterUndefined: Self = StObject.set(x, "DenoiseFilter", js.undefined)
     
+    inline def setDolbyVisionMetadataXml(value: stringMin14PatternS3XmlXMLHttpsXmlXML): Self = StObject.set(x, "DolbyVisionMetadataXml", value.asInstanceOf[js.Any])
+    
+    inline def setDolbyVisionMetadataXmlUndefined: Self = StObject.set(x, "DolbyVisionMetadataXml", js.undefined)
+    
     inline def setFilterEnable(value: InputFilterEnable): Self = StObject.set(x, "FilterEnable", value.asInstanceOf[js.Any])
     
     inline def setFilterEnableUndefined: Self = StObject.set(x, "FilterEnable", js.undefined)
@@ -140,7 +149,7 @@ object InputTemplate {
     
     inline def setInputClippingsUndefined: Self = StObject.set(x, "InputClippings", js.undefined)
     
-    inline def setInputClippingsVarargs(value: InputClipping*): Self = StObject.set(x, "InputClippings", js.Array(value :_*))
+    inline def setInputClippingsVarargs(value: InputClipping*): Self = StObject.set(x, "InputClippings", js.Array(value*))
     
     inline def setInputScanType(value: InputScanType): Self = StObject.set(x, "InputScanType", value.asInstanceOf[js.Any])
     

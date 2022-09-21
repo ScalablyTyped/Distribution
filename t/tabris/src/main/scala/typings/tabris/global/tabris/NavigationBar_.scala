@@ -8,7 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("tabris.NavigationBar")
 @js.native
-/* private */ class NavigationBar_ ()
+/**
+  * The navigation bar is the onscreen area where *Back*, *Home* and similar buttons are displayed. The
+  * singleton instance can be accessed via `navigationBar` and is only supported on Android.
+  */
+/* private */ open class NavigationBar_ ()
   extends typings.tabris.mod.NavigationBar_ {
   /* private */ def this(properties: Properties[typings.tabris.mod.NavigationBar_, OmitNavigationBarsetBackground]) = this()
 }

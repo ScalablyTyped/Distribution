@@ -1,14 +1,14 @@
 package typings.maximMazurokGapiClientBigtableadmin.gapi.client.bigtableadmin
 
 import typings.gapiClient.gapi.client.Request
+import typings.maximMazurokGapiClientBigtableadmin.anon.AccesstokenAlt
 import typings.maximMazurokGapiClientBigtableadmin.anon.Alt
-import typings.maximMazurokGapiClientBigtableadmin.anon.KeyName
-import typings.maximMazurokGapiClientBigtableadmin.anon.KeyOauthtoken
 import typings.maximMazurokGapiClientBigtableadmin.anon.NameOauthtoken
+import typings.maximMazurokGapiClientBigtableadmin.anon.OauthtokenParent
+import typings.maximMazurokGapiClientBigtableadmin.anon.OauthtokenPrettyPrint
 import typings.maximMazurokGapiClientBigtableadmin.anon.PageToken
 import typings.maximMazurokGapiClientBigtableadmin.anon.PrettyPrint
 import typings.maximMazurokGapiClientBigtableadmin.anon.UpdateMask
-import typings.maximMazurokGapiClientBigtableadmin.anon.Xgafv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,9 +20,12 @@ trait InstancesResource extends StObject {
   
   var clusters: ClustersResource = js.native
   
-  /** Create an instance within a project. */
-  def create(request: KeyOauthtoken): Request[Operation] = js.native
-  def create(request: Xgafv, body: CreateInstanceRequest): Request[Operation] = js.native
+  def create(request: AccesstokenAlt, body: CreateInstanceRequest): Request[Operation] = js.native
+  /**
+    * Create an instance within a project. Note that exactly one of Cluster.serve_nodes and Cluster.cluster_config.cluster_autoscaling_config can be set. If serve_nodes is set to
+    * non-zero, then the cluster is manually scaled. If cluster_config.cluster_autoscaling_config is non-empty, then autoscaling is enabled.
+    */
+  def create(request: OauthtokenParent): Request[Operation] = js.native
   
   /** Delete an instance from a project. */
   def delete(): Request[js.Object] = js.native
@@ -40,7 +43,7 @@ trait InstancesResource extends StObject {
   def list(request: PageToken): Request[ListInstancesResponse] = js.native
   
   /** Partially updates an instance within a project. This method can modify all fields of an Instance and is the preferred way to update an Instance. */
-  def partialUpdateInstance(request: KeyName): Request[Operation] = js.native
+  def partialUpdateInstance(request: NameOauthtoken): Request[Operation] = js.native
   def partialUpdateInstance(request: UpdateMask, body: Instance): Request[Operation] = js.native
   
   /** Sets the access control policy on an instance resource. Replaces any existing policy. */
@@ -56,5 +59,5 @@ trait InstancesResource extends StObject {
     * Updates an instance within a project. This method updates only the display name and type for an Instance. To update other Instance properties, such as labels, use
     * PartialUpdateInstance.
     */
-  def update(request: NameOauthtoken): Request[Instance] = js.native
+  def update(request: OauthtokenPrettyPrint): Request[Instance] = js.native
 }

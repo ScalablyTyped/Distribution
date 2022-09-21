@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui/svg-icons", "ContentSelectAll")
 @js.native
-class ContentSelectAll ()
-  extends Component[SvgIconProps, js.Object, js.Any]
+open class ContentSelectAll ()
+  extends Component[SvgIconProps, js.Object, Any]

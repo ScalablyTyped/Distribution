@@ -7,4 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait StereoscopicGamepadCamera
   extends StObject
-     with GamepadCamera
+     with GamepadCamera {
+  
+  /* protected */ var _setRigMode: Any = js.native
+}

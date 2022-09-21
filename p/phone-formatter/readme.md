@@ -10,10 +10,10 @@ Parse and format telephone numbers.
 | ------------------ | :-------------: |
 | Full name          | phone-formatter |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 365156 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 34379.666666666664 |
+| # stars            | 46.0 |
 
 ## Links
 - [Homepage](https://github.com/stevekinney/node-phone-formatter)

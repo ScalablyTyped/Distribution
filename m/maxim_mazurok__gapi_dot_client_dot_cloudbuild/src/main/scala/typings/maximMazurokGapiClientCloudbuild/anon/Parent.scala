@@ -30,13 +30,13 @@ trait Parent extends StObject {
   var oauth_token: js.UndefOr[String] = js.undefined
   
   /** The parent resource where this build will be created. Format: `projects/{project}/locations/{location}` */
-  var parent: String
+  var parent: js.UndefOr[String] = js.undefined
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
   /** Required. ID of the project. */
-  var projectId: js.UndefOr[String] = js.undefined
+  var projectId: String
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
@@ -52,8 +52,8 @@ trait Parent extends StObject {
 }
 object Parent {
   
-  inline def apply(parent: String, resource: Build): Parent = {
-    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(projectId: String, resource: Build): Parent = {
+    val __obj = js.Dynamic.literal(projectId = projectId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Parent]
   }
   
@@ -89,13 +89,13 @@ object Parent {
     
     inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
     
     inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
-    
-    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     

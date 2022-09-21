@@ -32,7 +32,7 @@ object InlineFragment {
     
     inline def setDirectivesUndefined: Self = StObject.set(x, "directives", js.undefined)
     
-    inline def setDirectivesVarargs(value: Directive*): Self = StObject.set(x, "directives", js.Array(value :_*))
+    inline def setDirectivesVarargs(value: Directive*): Self = StObject.set(x, "directives", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

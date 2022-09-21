@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "micromark" : "2.10.1"
+      "micromark" : "3.0.10"
     }
   ],
   "test-dependencies" : [
     {
-      "micromark" : "2.10.1"
+      "micromark" : "3.0.10"
     }
   ],
   "compile-devDependencies" : [

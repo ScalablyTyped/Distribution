@@ -23,12 +23,12 @@ object ITemplateManipulators {
     
     inline def setPostWrapperUndefined: Self = StObject.set(x, "postWrapper", js.undefined)
     
-    inline def setPostWrapperVarargs(value: ITemplateManipulator*): Self = StObject.set(x, "postWrapper", js.Array(value :_*))
+    inline def setPostWrapperVarargs(value: ITemplateManipulator*): Self = StObject.set(x, "postWrapper", js.Array(value*))
     
     inline def setPreWrapper(value: js.Array[ITemplateManipulator]): Self = StObject.set(x, "preWrapper", value.asInstanceOf[js.Any])
     
     inline def setPreWrapperUndefined: Self = StObject.set(x, "preWrapper", js.undefined)
     
-    inline def setPreWrapperVarargs(value: ITemplateManipulator*): Self = StObject.set(x, "preWrapper", js.Array(value :_*))
+    inline def setPreWrapperVarargs(value: ITemplateManipulator*): Self = StObject.set(x, "preWrapper", js.Array(value*))
   }
 }

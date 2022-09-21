@@ -12,7 +12,7 @@ object global {
     
     @JSGlobal("Utils.NumberFce")
     @js.native
-    class NumberFce ()
+    open class NumberFce ()
       extends StObject
          with typings.businessRulesEngine.Utils.NumberFce
     object NumberFce {
@@ -27,7 +27,7 @@ object global {
     
     @JSGlobal("Utils.StringFce")
     @js.native
-    class StringFce ()
+    open class StringFce ()
       extends StObject
          with typings.businessRulesEngine.Utils.StringFce
     object StringFce {
@@ -37,7 +37,7 @@ object global {
       val ^ : js.Any = js.native
       
       /* static member */
-      inline def format(s: String, args: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(s.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
+      inline def format(s: String, args: Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(s.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
     }
   }
   
@@ -45,7 +45,7 @@ object global {
     
     @JSGlobal("Validation.AbstractValidator")
     @js.native
-    class AbstractValidator[T] ()
+    open class AbstractValidator[T] ()
       extends typings.businessRulesEngine.mod.AbstractValidator[T]
     
     @JSGlobal("Validation.CompareOperator")
@@ -70,19 +70,19 @@ object global {
     
     @JSGlobal("Validation.CompositeValidationResult")
     @js.native
-    class CompositeValidationResult protected ()
+    open class CompositeValidationResult protected ()
       extends typings.businessRulesEngine.mod.CompositeValidationResult {
       def this(Name: String) = this()
     }
     
     @JSGlobal("Validation.Error")
     @js.native
-    class Error ()
+    open class Error ()
       extends typings.businessRulesEngine.mod.Error
     
     @JSGlobal("Validation.MessageLocalization")
     @js.native
-    class MessageLocalization ()
+    open class MessageLocalization ()
       extends typings.businessRulesEngine.mod.MessageLocalization
     /* static members */
     object MessageLocalization {
@@ -91,7 +91,7 @@ object global {
       @js.native
       val ^ : js.Any = js.native
       
-      inline def GetValidationMessage(validator: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("GetValidationMessage")(validator.asInstanceOf[js.Any]).asInstanceOf[String]
+      inline def GetValidationMessage(validator: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("GetValidationMessage")(validator.asInstanceOf[js.Any]).asInstanceOf[String]
       
       @JSGlobal("Validation.MessageLocalization.ValidationMessages")
       @js.native
@@ -111,14 +111,14 @@ object global {
     
     @JSGlobal("Validation.ValidationFailure")
     @js.native
-    class ValidationFailure protected ()
+    open class ValidationFailure protected ()
       extends typings.businessRulesEngine.mod.ValidationFailure {
       def this(Error: IError, IsAsync: Boolean) = this()
     }
     
     @JSGlobal("Validation.ValidationResult")
     @js.native
-    class ValidationResult protected ()
+    open class ValidationResult protected ()
       extends typings.businessRulesEngine.mod.ValidationResult {
       def this(Name: String) = this()
     }

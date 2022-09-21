@@ -29,6 +29,6 @@ object scopeAwareRuleWalkerMod {
     
     def onScopeStart(): Unit = js.native
     
-    /* private */ val scopeStack: js.Any = js.native
+    /* private */ val scopeStack: Any = js.native
   }
 }

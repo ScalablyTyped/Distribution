@@ -10,15 +10,15 @@ Keep track of the overall completion of many disparate processes
 | ------------------ | :-------------: |
 | Full name          | are-we-there-yet |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 62 |
-| # downloads        | 489358876 |
-| # stars            | 10 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 8.519713333333333E7 |
+| # stars            | 156.0 |
 
 ## Links
-- [Homepage](https://github.com/iarna/are-we-there-yet)
-- [Bugs](https://github.com/iarna/are-we-there-yet/issues)
-- [Repository](https://github.com/iarna/are-we-there-yet)
+- [Homepage](https://github.com/npm/are-we-there-yet)
+- [Bugs](https://github.com/npm/are-we-there-yet/issues)
+- [Repository](https://github.com/npm/are-we-there-yet)
 - [Npm](https://www.npmjs.com/package/are-we-there-yet)
     
 

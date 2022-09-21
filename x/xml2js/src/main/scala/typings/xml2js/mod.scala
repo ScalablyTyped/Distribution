@@ -14,23 +14,39 @@ object mod {
   
   @JSImport("xml2js", "Builder")
   @js.native
-  class Builder () extends StObject {
+  open class Builder () extends StObject {
     def this(options: BuilderOptions) = this()
     
-    def buildObject(rootObj: js.Any): String = js.native
+    def buildObject(rootObj: Any): String = js.native
   }
   
   @JSImport("xml2js", "Parser")
   @js.native
-  class Parser () extends EventEmitter {
+  open class Parser () extends EventEmitter {
     def this(options: ParserOptions) = this()
     
     def parseString(str: convertableToString): Unit = js.native
-    def parseString(str: convertableToString, cb: js.Function): Unit = js.native
+    def parseString(str: convertableToString, cb: js.Function2[/* error */ js.Error | Null, /* result */ Any, Unit]): Unit = js.native
     
-    def parseStringPromise(str: convertableToString): js.Promise[js.Any] = js.native
+    def parseStringPromise(str: convertableToString): js.Promise[Any] = js.native
     
     def reset(): Unit = js.native
+  }
+  
+  @JSImport("xml2js", "ValidationError")
+  @js.native
+  open class ValidationError protected ()
+    extends StObject
+       with Error {
+    def this(message: String) = this()
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   object defaults {
@@ -44,15 +60,18 @@ object mod {
     val `02`: OptionsV2 = js.native
   }
   
-  inline def parseString(str: convertableToString, callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parseString")(str.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def parseString(
+    str: convertableToString,
+    callback: js.Function2[/* err */ js.Error | Null, /* result */ Any, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parseString")(str.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def parseString(
     str: convertableToString,
     options: ParserOptions,
-    callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]
+    callback: js.Function2[/* err */ js.Error | Null, /* result */ Any, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parseString")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def parseStringPromise(str: convertableToString): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseStringPromise")(str.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
-  inline def parseStringPromise(str: convertableToString, options: ParserOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseStringPromise")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def parseStringPromise(str: convertableToString): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseStringPromise")(str.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+  inline def parseStringPromise(str: convertableToString, options: ParserOptions): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseStringPromise")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   
   object processors {
     
@@ -81,7 +100,7 @@ object mod {
     
     var charkey: js.UndefOr[String] = js.undefined
     
-    var doctype: js.UndefOr[js.Any] = js.undefined
+    var doctype: js.UndefOr[Any] = js.undefined
     
     var headless: js.UndefOr[Boolean] = js.undefined
     
@@ -116,7 +135,7 @@ object mod {
       
       inline def setCharkeyUndefined: Self = StObject.set(x, "charkey", js.undefined)
       
-      inline def setDoctype(value: js.Any): Self = StObject.set(x, "doctype", value.asInstanceOf[js.Any])
+      inline def setDoctype(value: Any): Self = StObject.set(x, "doctype", value.asInstanceOf[js.Any])
       
       inline def setDoctypeUndefined: Self = StObject.set(x, "doctype", js.undefined)
       
@@ -143,9 +162,9 @@ object mod {
     
     var async: js.UndefOr[Boolean] = js.undefined
     
-    var attrNameProcessors: js.UndefOr[js.Array[js.Function1[/* name */ String, js.Any]]] = js.undefined
+    var attrNameProcessors: js.UndefOr[js.Array[js.Function1[/* name */ String, Any]]] = js.undefined
     
-    var attrValueProcessors: js.UndefOr[js.Array[js.Function2[/* value */ String, /* name */ String, js.Any]]] = js.undefined
+    var attrValueProcessors: js.UndefOr[js.Array[js.Function2[/* value */ String, /* name */ String, Any]]] = js.undefined
     
     var attrkey: js.UndefOr[String] = js.undefined
     
@@ -155,7 +174,7 @@ object mod {
     
     var childkey: js.UndefOr[String] = js.undefined
     
-    var emptyTag: js.UndefOr[js.Any] = js.undefined
+    var emptyTag: js.UndefOr[js.Function0[Any] | String] = js.undefined
     
     var explicitArray: js.UndefOr[Boolean] = js.undefined
     
@@ -177,13 +196,13 @@ object mod {
     
     var strict: js.UndefOr[Boolean] = js.undefined
     
-    var tagNameProcessors: js.UndefOr[js.Array[js.Function1[/* name */ String, js.Any]]] = js.undefined
+    var tagNameProcessors: js.UndefOr[js.Array[js.Function1[/* name */ String, Any]]] = js.undefined
     
     var trim: js.UndefOr[Boolean] = js.undefined
     
     var validator: js.UndefOr[js.Function] = js.undefined
     
-    var valueProcessors: js.UndefOr[js.Array[js.Function2[/* value */ String, /* name */ String, js.Any]]] = js.undefined
+    var valueProcessors: js.UndefOr[js.Array[js.Function2[/* value */ String, /* name */ String, Any]]] = js.undefined
     
     var xmlns: js.UndefOr[Boolean] = js.undefined
   }
@@ -200,17 +219,17 @@ object mod {
       
       inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       
-      inline def setAttrNameProcessors(value: js.Array[js.Function1[/* name */ String, js.Any]]): Self = StObject.set(x, "attrNameProcessors", value.asInstanceOf[js.Any])
+      inline def setAttrNameProcessors(value: js.Array[js.Function1[/* name */ String, Any]]): Self = StObject.set(x, "attrNameProcessors", value.asInstanceOf[js.Any])
       
       inline def setAttrNameProcessorsUndefined: Self = StObject.set(x, "attrNameProcessors", js.undefined)
       
-      inline def setAttrNameProcessorsVarargs(value: (js.Function1[/* name */ String, js.Any])*): Self = StObject.set(x, "attrNameProcessors", js.Array(value :_*))
+      inline def setAttrNameProcessorsVarargs(value: (js.Function1[/* name */ String, Any])*): Self = StObject.set(x, "attrNameProcessors", js.Array(value*))
       
-      inline def setAttrValueProcessors(value: js.Array[js.Function2[/* value */ String, /* name */ String, js.Any]]): Self = StObject.set(x, "attrValueProcessors", value.asInstanceOf[js.Any])
+      inline def setAttrValueProcessors(value: js.Array[js.Function2[/* value */ String, /* name */ String, Any]]): Self = StObject.set(x, "attrValueProcessors", value.asInstanceOf[js.Any])
       
       inline def setAttrValueProcessorsUndefined: Self = StObject.set(x, "attrValueProcessors", js.undefined)
       
-      inline def setAttrValueProcessorsVarargs(value: (js.Function2[/* value */ String, /* name */ String, js.Any])*): Self = StObject.set(x, "attrValueProcessors", js.Array(value :_*))
+      inline def setAttrValueProcessorsVarargs(value: (js.Function2[/* value */ String, /* name */ String, Any])*): Self = StObject.set(x, "attrValueProcessors", js.Array(value*))
       
       inline def setAttrkey(value: String): Self = StObject.set(x, "attrkey", value.asInstanceOf[js.Any])
       
@@ -228,7 +247,9 @@ object mod {
       
       inline def setChildkeyUndefined: Self = StObject.set(x, "childkey", js.undefined)
       
-      inline def setEmptyTag(value: js.Any): Self = StObject.set(x, "emptyTag", value.asInstanceOf[js.Any])
+      inline def setEmptyTag(value: js.Function0[Any] | String): Self = StObject.set(x, "emptyTag", value.asInstanceOf[js.Any])
+      
+      inline def setEmptyTagFunction0(value: () => Any): Self = StObject.set(x, "emptyTag", js.Any.fromFunction0(value))
       
       inline def setEmptyTagUndefined: Self = StObject.set(x, "emptyTag", js.undefined)
       
@@ -272,11 +293,11 @@ object mod {
       
       inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
       
-      inline def setTagNameProcessors(value: js.Array[js.Function1[/* name */ String, js.Any]]): Self = StObject.set(x, "tagNameProcessors", value.asInstanceOf[js.Any])
+      inline def setTagNameProcessors(value: js.Array[js.Function1[/* name */ String, Any]]): Self = StObject.set(x, "tagNameProcessors", value.asInstanceOf[js.Any])
       
       inline def setTagNameProcessorsUndefined: Self = StObject.set(x, "tagNameProcessors", js.undefined)
       
-      inline def setTagNameProcessorsVarargs(value: (js.Function1[/* name */ String, js.Any])*): Self = StObject.set(x, "tagNameProcessors", js.Array(value :_*))
+      inline def setTagNameProcessorsVarargs(value: (js.Function1[/* name */ String, Any])*): Self = StObject.set(x, "tagNameProcessors", js.Array(value*))
       
       inline def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
       
@@ -286,11 +307,11 @@ object mod {
       
       inline def setValidatorUndefined: Self = StObject.set(x, "validator", js.undefined)
       
-      inline def setValueProcessors(value: js.Array[js.Function2[/* value */ String, /* name */ String, js.Any]]): Self = StObject.set(x, "valueProcessors", value.asInstanceOf[js.Any])
+      inline def setValueProcessors(value: js.Array[js.Function2[/* value */ String, /* name */ String, Any]]): Self = StObject.set(x, "valueProcessors", value.asInstanceOf[js.Any])
       
       inline def setValueProcessorsUndefined: Self = StObject.set(x, "valueProcessors", js.undefined)
       
-      inline def setValueProcessorsVarargs(value: (js.Function2[/* value */ String, /* name */ String, js.Any])*): Self = StObject.set(x, "valueProcessors", js.Array(value :_*))
+      inline def setValueProcessorsVarargs(value: (js.Function2[/* value */ String, /* name */ String, Any])*): Self = StObject.set(x, "valueProcessors", js.Array(value*))
       
       inline def setXmlns(value: Boolean): Self = StObject.set(x, "xmlns", value.asInstanceOf[js.Any])
       
@@ -307,7 +328,7 @@ object mod {
     
     var cdata: js.UndefOr[Boolean] = js.undefined
     
-    var doctype: js.UndefOr[js.Any] = js.undefined
+    var doctype: js.UndefOr[Any] = js.undefined
     
     var headless: js.UndefOr[Boolean] = js.undefined
     
@@ -334,7 +355,7 @@ object mod {
       
       inline def setCdataUndefined: Self = StObject.set(x, "cdata", js.undefined)
       
-      inline def setDoctype(value: js.Any): Self = StObject.set(x, "doctype", value.asInstanceOf[js.Any])
+      inline def setDoctype(value: Any): Self = StObject.set(x, "doctype", value.asInstanceOf[js.Any])
       
       inline def setDoctypeUndefined: Self = StObject.set(x, "doctype", js.undefined)
       
@@ -360,9 +381,9 @@ object mod {
     
     var async: js.UndefOr[Boolean] = js.undefined
     
-    var attrNameProcessors: js.UndefOr[js.Array[js.Function1[/* name */ String, js.Any]]] = js.undefined
+    var attrNameProcessors: js.UndefOr[js.Array[js.Function1[/* name */ String, Any]]] = js.undefined
     
-    var attrValueProcessors: js.UndefOr[js.Array[js.Function2[/* value */ String, /* name */ String, js.Any]]] = js.undefined
+    var attrValueProcessors: js.UndefOr[js.Array[js.Function2[/* value */ String, /* name */ String, Any]]] = js.undefined
     
     var attrkey: js.UndefOr[String] = js.undefined
     
@@ -374,7 +395,7 @@ object mod {
     
     var chunkSize: js.UndefOr[Double] = js.undefined
     
-    var emptyTag: js.UndefOr[js.Any] = js.undefined
+    var emptyTag: js.UndefOr[js.Function0[Any] | String] = js.undefined
     
     var explicitArray: js.UndefOr[Boolean] = js.undefined
     
@@ -398,13 +419,13 @@ object mod {
     
     var strict: js.UndefOr[Boolean] = js.undefined
     
-    var tagNameProcessors: js.UndefOr[js.Array[js.Function1[/* name */ String, js.Any]]] = js.undefined
+    var tagNameProcessors: js.UndefOr[js.Array[js.Function1[/* name */ String, Any]]] = js.undefined
     
     var trim: js.UndefOr[Boolean] = js.undefined
     
     var validator: js.UndefOr[js.Function] = js.undefined
     
-    var valueProcessors: js.UndefOr[js.Array[js.Function2[/* value */ String, /* name */ String, js.Any]]] = js.undefined
+    var valueProcessors: js.UndefOr[js.Array[js.Function2[/* value */ String, /* name */ String, Any]]] = js.undefined
     
     var xmlns: js.UndefOr[Boolean] = js.undefined
   }
@@ -421,17 +442,17 @@ object mod {
       
       inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       
-      inline def setAttrNameProcessors(value: js.Array[js.Function1[/* name */ String, js.Any]]): Self = StObject.set(x, "attrNameProcessors", value.asInstanceOf[js.Any])
+      inline def setAttrNameProcessors(value: js.Array[js.Function1[/* name */ String, Any]]): Self = StObject.set(x, "attrNameProcessors", value.asInstanceOf[js.Any])
       
       inline def setAttrNameProcessorsUndefined: Self = StObject.set(x, "attrNameProcessors", js.undefined)
       
-      inline def setAttrNameProcessorsVarargs(value: (js.Function1[/* name */ String, js.Any])*): Self = StObject.set(x, "attrNameProcessors", js.Array(value :_*))
+      inline def setAttrNameProcessorsVarargs(value: (js.Function1[/* name */ String, Any])*): Self = StObject.set(x, "attrNameProcessors", js.Array(value*))
       
-      inline def setAttrValueProcessors(value: js.Array[js.Function2[/* value */ String, /* name */ String, js.Any]]): Self = StObject.set(x, "attrValueProcessors", value.asInstanceOf[js.Any])
+      inline def setAttrValueProcessors(value: js.Array[js.Function2[/* value */ String, /* name */ String, Any]]): Self = StObject.set(x, "attrValueProcessors", value.asInstanceOf[js.Any])
       
       inline def setAttrValueProcessorsUndefined: Self = StObject.set(x, "attrValueProcessors", js.undefined)
       
-      inline def setAttrValueProcessorsVarargs(value: (js.Function2[/* value */ String, /* name */ String, js.Any])*): Self = StObject.set(x, "attrValueProcessors", js.Array(value :_*))
+      inline def setAttrValueProcessorsVarargs(value: (js.Function2[/* value */ String, /* name */ String, Any])*): Self = StObject.set(x, "attrValueProcessors", js.Array(value*))
       
       inline def setAttrkey(value: String): Self = StObject.set(x, "attrkey", value.asInstanceOf[js.Any])
       
@@ -453,7 +474,9 @@ object mod {
       
       inline def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
       
-      inline def setEmptyTag(value: js.Any): Self = StObject.set(x, "emptyTag", value.asInstanceOf[js.Any])
+      inline def setEmptyTag(value: js.Function0[Any] | String): Self = StObject.set(x, "emptyTag", value.asInstanceOf[js.Any])
+      
+      inline def setEmptyTagFunction0(value: () => Any): Self = StObject.set(x, "emptyTag", js.Any.fromFunction0(value))
       
       inline def setEmptyTagUndefined: Self = StObject.set(x, "emptyTag", js.undefined)
       
@@ -501,11 +524,11 @@ object mod {
       
       inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
       
-      inline def setTagNameProcessors(value: js.Array[js.Function1[/* name */ String, js.Any]]): Self = StObject.set(x, "tagNameProcessors", value.asInstanceOf[js.Any])
+      inline def setTagNameProcessors(value: js.Array[js.Function1[/* name */ String, Any]]): Self = StObject.set(x, "tagNameProcessors", value.asInstanceOf[js.Any])
       
       inline def setTagNameProcessorsUndefined: Self = StObject.set(x, "tagNameProcessors", js.undefined)
       
-      inline def setTagNameProcessorsVarargs(value: (js.Function1[/* name */ String, js.Any])*): Self = StObject.set(x, "tagNameProcessors", js.Array(value :_*))
+      inline def setTagNameProcessorsVarargs(value: (js.Function1[/* name */ String, Any])*): Self = StObject.set(x, "tagNameProcessors", js.Array(value*))
       
       inline def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
       
@@ -515,11 +538,11 @@ object mod {
       
       inline def setValidatorUndefined: Self = StObject.set(x, "validator", js.undefined)
       
-      inline def setValueProcessors(value: js.Array[js.Function2[/* value */ String, /* name */ String, js.Any]]): Self = StObject.set(x, "valueProcessors", value.asInstanceOf[js.Any])
+      inline def setValueProcessors(value: js.Array[js.Function2[/* value */ String, /* name */ String, Any]]): Self = StObject.set(x, "valueProcessors", value.asInstanceOf[js.Any])
       
       inline def setValueProcessorsUndefined: Self = StObject.set(x, "valueProcessors", js.undefined)
       
-      inline def setValueProcessorsVarargs(value: (js.Function2[/* value */ String, /* name */ String, js.Any])*): Self = StObject.set(x, "valueProcessors", js.Array(value :_*))
+      inline def setValueProcessorsVarargs(value: (js.Function2[/* value */ String, /* name */ String, Any])*): Self = StObject.set(x, "valueProcessors", js.Array(value*))
       
       inline def setXmlns(value: Boolean): Self = StObject.set(x, "xmlns", value.asInstanceOf[js.Any])
       

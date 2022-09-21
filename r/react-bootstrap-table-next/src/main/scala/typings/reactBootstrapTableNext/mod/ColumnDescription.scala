@@ -1,7 +1,7 @@
 package typings.reactBootstrapTableNext.mod
 
 import typings.react.mod.CSSProperties
-import typings.react.mod.ReactText
+import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import typings.reactBootstrapTableNext.anon.FilterElement
 import typings.reactBootstrapTableNext.anon.OnClick
@@ -35,7 +35,7 @@ trait ColumnDescription[T /* <: js.Object */, E] extends StObject {
   /**
     * Custom csv cell formatter used when exporting csv
     */
-  var csvFormatter: js.UndefOr[ColumnFormatter[T, E, js.Any]] = js.undefined
+  var csvFormatter: js.UndefOr[ColumnFormatter[T, E, Any]] = js.undefined
   
   /**
     * csvText defaults to column.text
@@ -50,15 +50,15 @@ trait ColumnDescription[T /* <: js.Object */, E] extends StObject {
     */
   var csvType: js.UndefOr[js.Object] = js.undefined
   
-  var dataField: js.Any
+  var dataField: Any
   
   var editable: js.UndefOr[
-    Boolean | (js.Function4[/* cell */ js.Any, /* row */ T, /* rowIndex */ Double, /* colIndex */ Double, Boolean])
+    Boolean | (js.Function4[/* cell */ Any, /* row */ T, /* rowIndex */ Double, /* colIndex */ Double, Boolean])
   ] = js.undefined
   
   var editor: js.UndefOr[Options] = js.undefined
   
-  var filter: js.UndefOr[Boolean | (TableColumnFilterProps[js.Any, js.Any])] = js.undefined
+  var filter: js.UndefOr[Boolean | (TableColumnFilterProps[Any, Any])] = js.undefined
   
   var filterValue: js.UndefOr[
     js.Function2[
@@ -70,7 +70,7 @@ trait ColumnDescription[T /* <: js.Object */, E] extends StObject {
   
   var footer: js.UndefOr[
     Boolean | Double | String | (js.Function3[
-      /* columnData */ js.Any, 
+      /* columnData */ Any, 
       /* column */ ColumnDescription[T, E], 
       /* columnIndex */ Double, 
       String
@@ -97,7 +97,7 @@ trait ColumnDescription[T /* <: js.Object */, E] extends StObject {
   
   var formatExtraData: js.UndefOr[TooltipFormatter[T] & E] = js.undefined
   
-  var formatter: js.UndefOr[ColumnFormatter[T, E, js.Any]] = js.undefined
+  var formatter: js.UndefOr[ColumnFormatter[T, E, Any]] = js.undefined
   
   var headerAlign: js.UndefOr[CellAlignment] = js.undefined
   
@@ -124,7 +124,9 @@ trait ColumnDescription[T /* <: js.Object */, E] extends StObject {
   
   var sortCaret: js.UndefOr[ColumnSortCaret[T, E]] = js.undefined
   
-  var sortFunc: js.UndefOr[ColumnSortFunc[T, js.Any]] = js.undefined
+  var sortFunc: js.UndefOr[ColumnSortFunc[T, Any]] = js.undefined
+  
+  var sortValue: js.UndefOr[ColumnSortValue[T, Any]] = js.undefined
   
   var style: js.UndefOr[
     CSSProperties | (js.Function4[
@@ -143,11 +145,21 @@ trait ColumnDescription[T /* <: js.Object */, E] extends StObject {
   
   var tooltipDataField: js.UndefOr[String] = js.undefined
   
+  var validator: js.UndefOr[
+    js.Function4[
+      /* newValue */ Any, 
+      /* row */ T, 
+      /* column */ ColumnDescription[T, E], 
+      /* done */ js.Function1[/* result */ js.UndefOr[ValidationResult], Any], 
+      Boolean | ValidationResult
+    ]
+  ] = js.undefined
+  
   var width: js.UndefOr[Double] = js.undefined
 }
 object ColumnDescription {
   
-  inline def apply[T /* <: js.Object */, E](dataField: js.Any, text: String): ColumnDescription[T, E] = {
+  inline def apply[T /* <: js.Object */, E](dataField: Any, text: String): ColumnDescription[T, E] = {
     val __obj = js.Dynamic.literal(dataField = dataField.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnDescription[T, E]]
   }
@@ -178,7 +190,7 @@ object ColumnDescription {
     
     inline def setCsvExportUndefined: Self = StObject.set(x, "csvExport", js.undefined)
     
-    inline def setCsvFormatter(value: (js.Any, T, /* rowIndex */ Double, E) => Element | String | Boolean | ReactText): Self = StObject.set(x, "csvFormatter", js.Any.fromFunction4(value))
+    inline def setCsvFormatter(value: (Any, T, /* rowIndex */ Double, /* formatExtraData */ js.UndefOr[E]) => ReactNode): Self = StObject.set(x, "csvFormatter", js.Any.fromFunction4(value))
     
     inline def setCsvFormatterUndefined: Self = StObject.set(x, "csvFormatter", js.undefined)
     
@@ -190,13 +202,13 @@ object ColumnDescription {
     
     inline def setCsvTypeUndefined: Self = StObject.set(x, "csvType", js.undefined)
     
-    inline def setDataField(value: js.Any): Self = StObject.set(x, "dataField", value.asInstanceOf[js.Any])
+    inline def setDataField(value: Any): Self = StObject.set(x, "dataField", value.asInstanceOf[js.Any])
     
     inline def setEditable(
-      value: Boolean | (js.Function4[/* cell */ js.Any, /* row */ T, /* rowIndex */ Double, /* colIndex */ Double, Boolean])
+      value: Boolean | (js.Function4[/* cell */ Any, /* row */ T, /* rowIndex */ Double, /* colIndex */ Double, Boolean])
     ): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
     
-    inline def setEditableFunction4(value: (/* cell */ js.Any, /* row */ T, /* rowIndex */ Double, /* colIndex */ Double) => Boolean): Self = StObject.set(x, "editable", js.Any.fromFunction4(value))
+    inline def setEditableFunction4(value: (/* cell */ Any, /* row */ T, /* rowIndex */ Double, /* colIndex */ Double) => Boolean): Self = StObject.set(x, "editable", js.Any.fromFunction4(value))
     
     inline def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
     
@@ -204,7 +216,7 @@ object ColumnDescription {
     
     inline def setEditorUndefined: Self = StObject.set(x, "editor", js.undefined)
     
-    inline def setFilter(value: Boolean | (TableColumnFilterProps[js.Any, js.Any])): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: Boolean | (TableColumnFilterProps[Any, Any])): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
@@ -216,7 +228,7 @@ object ColumnDescription {
     
     inline def setFooter(
       value: Boolean | Double | String | (js.Function3[
-          /* columnData */ js.Any, 
+          /* columnData */ Any, 
           /* column */ ColumnDescription[T, E], 
           /* columnIndex */ Double, 
           String
@@ -248,7 +260,7 @@ object ColumnDescription {
     inline def setFooterFormatterUndefined: Self = StObject.set(x, "footerFormatter", js.undefined)
     
     inline def setFooterFunction3(
-      value: (/* columnData */ js.Any, /* column */ ColumnDescription[T, E], /* columnIndex */ Double) => String
+      value: (/* columnData */ Any, /* column */ ColumnDescription[T, E], /* columnIndex */ Double) => String
     ): Self = StObject.set(x, "footer", js.Any.fromFunction3(value))
     
     inline def setFooterStyle(value: CSSProperties): Self = StObject.set(x, "footerStyle", value.asInstanceOf[js.Any])
@@ -265,7 +277,7 @@ object ColumnDescription {
     
     inline def setFormatExtraDataUndefined: Self = StObject.set(x, "formatExtraData", js.undefined)
     
-    inline def setFormatter(value: (js.Any, T, /* rowIndex */ Double, E) => Element | String | Boolean | ReactText): Self = StObject.set(x, "formatter", js.Any.fromFunction4(value))
+    inline def setFormatter(value: (Any, T, /* rowIndex */ Double, /* formatExtraData */ js.UndefOr[E]) => ReactNode): Self = StObject.set(x, "formatter", js.Any.fromFunction4(value))
     
     inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
     
@@ -282,7 +294,7 @@ object ColumnDescription {
     inline def setHeaderClassesUndefined: Self = StObject.set(x, "headerClasses", js.undefined)
     
     inline def setHeaderFormatter(
-      value: (/* column */ ColumnDescription[T, js.Any], /* colIndex */ Double, /* components */ FilterElement) => Element | String | Double | ReactText
+      value: (/* column */ ColumnDescription[T, Any], /* colIndex */ Double, /* components */ FilterElement) => ReactNode
     ): Self = StObject.set(x, "headerFormatter", js.Any.fromFunction3(value))
     
     inline def setHeaderFormatterUndefined: Self = StObject.set(x, "headerFormatter", js.undefined)
@@ -322,12 +334,16 @@ object ColumnDescription {
     inline def setSortCaretUndefined: Self = StObject.set(x, "sortCaret", js.undefined)
     
     inline def setSortFunc(
-      value: (/* import warning: importer.ImportType#apply Failed type conversion: T[E] */ /* a */ js.Any, /* import warning: importer.ImportType#apply Failed type conversion: T[E] */ /* b */ js.Any, /* order */ asc | desc, /* dataField */ js.Any, T, T) => Double
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: T[E] */ /* a */ js.Any, /* import warning: importer.ImportType#apply Failed type conversion: T[E] */ /* b */ js.Any, /* order */ asc | desc, /* dataField */ Any, T, T) => Double
     ): Self = StObject.set(x, "sortFunc", js.Any.fromFunction6(value))
     
     inline def setSortFuncUndefined: Self = StObject.set(x, "sortFunc", js.undefined)
     
     inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    
+    inline def setSortValue(value: (Any, T) => Boolean | String | Double): Self = StObject.set(x, "sortValue", js.Any.fromFunction2(value))
+    
+    inline def setSortValueUndefined: Self = StObject.set(x, "sortValue", js.undefined)
     
     inline def setStyle(
       value: CSSProperties | (js.Function4[
@@ -350,6 +366,12 @@ object ColumnDescription {
     inline def setTooltipDataField(value: String): Self = StObject.set(x, "tooltipDataField", value.asInstanceOf[js.Any])
     
     inline def setTooltipDataFieldUndefined: Self = StObject.set(x, "tooltipDataField", js.undefined)
+    
+    inline def setValidator(
+      value: (/* newValue */ Any, /* row */ T, /* column */ ColumnDescription[T, E], /* done */ js.Function1[/* result */ js.UndefOr[ValidationResult], Any]) => Boolean | ValidationResult
+    ): Self = StObject.set(x, "validator", js.Any.fromFunction4(value))
+    
+    inline def setValidatorUndefined: Self = StObject.set(x, "validator", js.undefined)
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

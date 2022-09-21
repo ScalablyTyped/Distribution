@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AssetProperty extends StObject {
   
   /**
-    * The property alias that identifies the property, such as an OPC-UA server data stream path (for example, /company/windfarm/3/turbine/7/temperature). For more information, see Mapping industrial data streams to asset properties in the AWS IoT SiteWise User Guide.
+    * The alias that identifies the property, such as an OPC-UA server data stream path (for example, /company/windfarm/3/turbine/7/temperature). For more information, see Mapping industrial data streams to asset properties in the IoT SiteWise User Guide.
     */
   var alias: js.UndefOr[PropertyAlias] = js.undefined
   
@@ -15,6 +15,11 @@ trait AssetProperty extends StObject {
     * The data type of the asset property.
     */
   var dataType: PropertyDataType
+  
+  /**
+    * The data type of the structure for this property. This parameter exists on properties that have the STRUCT data type.
+    */
+  var dataTypeSpec: js.UndefOr[Name] = js.undefined
   
   /**
     * The ID of the asset property.
@@ -50,6 +55,10 @@ object AssetProperty {
     inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
     
     inline def setDataType(value: PropertyDataType): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+    
+    inline def setDataTypeSpec(value: Name): Self = StObject.set(x, "dataTypeSpec", value.asInstanceOf[js.Any])
+    
+    inline def setDataTypeSpecUndefined: Self = StObject.set(x, "dataTypeSpec", js.undefined)
     
     inline def setId(value: ID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

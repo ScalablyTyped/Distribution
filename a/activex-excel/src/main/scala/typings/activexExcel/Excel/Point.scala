@@ -21,7 +21,7 @@ trait Point extends StObject {
     ShowPercentage: js.UndefOr[Boolean],
     ShowBubbleSize: js.UndefOr[Boolean],
     Separator: js.UndefOr[String]
-  ): js.Any = js.native
+  ): Any = js.native
   
   var ApplyPictToEnd: Boolean = js.native
   
@@ -31,15 +31,15 @@ trait Point extends StObject {
   
   val Border: typings.activexExcel.Excel.Border = js.native
   
-  def ClearFormats(): js.Any = js.native
+  def ClearFormats(): Any = js.native
   
-  def Copy(): js.Any = js.native
+  def Copy(): Any = js.native
   
   val Creator: XlCreator = js.native
   
   val DataLabel: typings.activexExcel.Excel.DataLabel = js.native
   
-  def Delete(): js.Any = js.native
+  def Delete(): Any = js.native
   
   /* private */ @JSName("Excel.Point_typekey")
   var ExcelDotPoint_typekey: Point = js.native
@@ -76,9 +76,9 @@ trait Point extends StObject {
   
   val Name: String = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  def Paste(): js.Any = js.native
+  def Paste(): Any = js.native
   
   var PictureType: XlChartPictureType = js.native
   
@@ -92,7 +92,7 @@ trait Point extends StObject {
   
   var SecondaryPlot: Boolean = js.native
   
-  def Select(): js.Any = js.native
+  def Select(): Any = js.native
   
   var Shadow: Boolean = js.native
   
@@ -101,20 +101,20 @@ trait Point extends StObject {
   val Width: Double = js.native
   
   /** @param Type [Type=2] */
-  def _ApplyDataLabels(): js.Any = js.native
-  def _ApplyDataLabels(Type: Unit, LegendKey: js.Any): js.Any = js.native
-  def _ApplyDataLabels(Type: Unit, LegendKey: js.Any, AutoText: js.Any): js.Any = js.native
-  def _ApplyDataLabels(Type: Unit, LegendKey: js.Any, AutoText: js.Any, HasLeaderLines: js.Any): js.Any = js.native
-  def _ApplyDataLabels(Type: Unit, LegendKey: js.Any, AutoText: Unit, HasLeaderLines: js.Any): js.Any = js.native
-  def _ApplyDataLabels(Type: Unit, LegendKey: Unit, AutoText: js.Any): js.Any = js.native
-  def _ApplyDataLabels(Type: Unit, LegendKey: Unit, AutoText: js.Any, HasLeaderLines: js.Any): js.Any = js.native
-  def _ApplyDataLabels(Type: Unit, LegendKey: Unit, AutoText: Unit, HasLeaderLines: js.Any): js.Any = js.native
-  def _ApplyDataLabels(Type: XlDataLabelsType): js.Any = js.native
-  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: js.Any): js.Any = js.native
-  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: js.Any, AutoText: js.Any): js.Any = js.native
-  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: js.Any, AutoText: js.Any, HasLeaderLines: js.Any): js.Any = js.native
-  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: js.Any, AutoText: Unit, HasLeaderLines: js.Any): js.Any = js.native
-  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Unit, AutoText: js.Any): js.Any = js.native
-  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Unit, AutoText: js.Any, HasLeaderLines: js.Any): js.Any = js.native
-  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Unit, AutoText: Unit, HasLeaderLines: js.Any): js.Any = js.native
+  def _ApplyDataLabels(): Any = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: Any): Any = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: Any, AutoText: Any): Any = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: Any, AutoText: Any, HasLeaderLines: Any): Any = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: Any, AutoText: Unit, HasLeaderLines: Any): Any = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: Unit, AutoText: Any): Any = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: Unit, AutoText: Any, HasLeaderLines: Any): Any = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: Unit, AutoText: Unit, HasLeaderLines: Any): Any = js.native
+  def _ApplyDataLabels(Type: XlDataLabelsType): Any = js.native
+  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Any): Any = js.native
+  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Any, AutoText: Any): Any = js.native
+  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Any, AutoText: Any, HasLeaderLines: Any): Any = js.native
+  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Any, AutoText: Unit, HasLeaderLines: Any): Any = js.native
+  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Unit, AutoText: Any): Any = js.native
+  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Unit, AutoText: Any, HasLeaderLines: Any): Any = js.native
+  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Unit, AutoText: Unit, HasLeaderLines: Any): Any = js.native
 }

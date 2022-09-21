@@ -10,10 +10,10 @@ object settingsMod {
   
   @JSImport("material-ui/svg-icons/action/settings", JSImport.Default)
   @js.native
-  class default () extends ActionSettings
+  open class default () extends ActionSettings
   
   @JSImport("material-ui/svg-icons/action/settings", "ActionSettings")
   @js.native
-  class ActionSettings ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionSettings ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

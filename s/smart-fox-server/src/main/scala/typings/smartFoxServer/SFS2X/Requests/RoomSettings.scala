@@ -84,6 +84,6 @@ object RoomSettings {
     
     inline def setVariables(value: js.Array[ReservedRoomVariables]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     
-    inline def setVariablesVarargs(value: ReservedRoomVariables*): Self = StObject.set(x, "variables", js.Array(value :_*))
+    inline def setVariablesVarargs(value: ReservedRoomVariables*): Self = StObject.set(x, "variables", js.Array(value*))
   }
 }

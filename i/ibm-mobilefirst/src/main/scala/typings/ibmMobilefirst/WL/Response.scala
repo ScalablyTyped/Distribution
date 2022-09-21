@@ -11,7 +11,7 @@ trait Response
   
   def getAllHeaders(): Headers
   
-  def getHeader(name: js.Any): String
+  def getHeader(name: Any): String
   
   def getHeaderNames(): js.Array[String]
 }
@@ -21,13 +21,13 @@ object Response {
     errorCode: Double,
     errorMsg: String,
     getAllHeaders: () => Headers,
-    getHeader: js.Any => String,
+    getHeader: Any => String,
     getHeaderNames: () => js.Array[String],
-    headerJSON: StringDictionary[js.Any],
-    invocationContext: js.Any,
+    headerJSON: StringDictionary[Any],
+    invocationContext: Any,
     readyState: Double,
-    request: js.Any,
-    responseJSON: StringDictionary[js.Any],
+    request: Any,
+    responseJSON: StringDictionary[Any],
     responseText: String,
     responseXML: String,
     status: Double,
@@ -41,7 +41,7 @@ object Response {
     
     inline def setGetAllHeaders(value: () => Headers): Self = StObject.set(x, "getAllHeaders", js.Any.fromFunction0(value))
     
-    inline def setGetHeader(value: js.Any => String): Self = StObject.set(x, "getHeader", js.Any.fromFunction1(value))
+    inline def setGetHeader(value: Any => String): Self = StObject.set(x, "getHeader", js.Any.fromFunction1(value))
     
     inline def setGetHeaderNames(value: () => js.Array[String]): Self = StObject.set(x, "getHeaderNames", js.Any.fromFunction0(value))
   }

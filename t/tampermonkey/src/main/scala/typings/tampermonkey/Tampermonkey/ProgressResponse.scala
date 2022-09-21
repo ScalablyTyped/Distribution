@@ -18,7 +18,7 @@ object ProgressResponse {
     loaded: Double,
     position: Double,
     readyState: ReadyState,
-    response: js.Any,
+    response: Any,
     responseHeaders: String,
     responseText: String,
     status: Double,

@@ -10,10 +10,10 @@ A fully Unicode-aware string reverser written in JavaScript.
 | ------------------ | :-------------: |
 | Full name          | esrever |
 | Keywords           | string, reverse, unicode |
-| # releases         | 0 |
-| # dependents       | 62 |
-| # downloads        | 9215000 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 813791.6666666666 |
+| # stars            | 850.0 |
 
 ## Links
 - [Homepage](https://mths.be/esrever)

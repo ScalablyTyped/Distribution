@@ -90,7 +90,7 @@ object ICollectionObserverSplice {
     
     inline def setRemoved(value: js.Array[T]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
     
-    inline def setRemovedVarargs(value: T*): Self = StObject.set(x, "removed", js.Array(value :_*))
+    inline def setRemovedVarargs(value: T*): Self = StObject.set(x, "removed", js.Array(value*))
     
     inline def setType(value: add | delete | update | clear): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

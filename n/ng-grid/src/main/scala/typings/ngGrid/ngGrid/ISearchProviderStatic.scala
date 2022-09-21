@@ -11,6 +11,6 @@ trait ISearchProviderStatic
      with Instantiable3[
       /* $scope */ IGridScope, 
       /* grid */ IGridInstance, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IFilterService */ /* $filter */ js.Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IFilterService */ /* $filter */ Any, 
       ISearchProvider
     ]

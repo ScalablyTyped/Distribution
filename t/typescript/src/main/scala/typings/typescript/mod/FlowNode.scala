@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.typescript.mod.FlowStart
   - typings.typescript.mod.FlowLabel
   - typings.typescript.mod.FlowAssignment
-  - typings.typescript.mod.FlowCall
   - typings.typescript.mod.FlowCondition
   - typings.typescript.mod.FlowSwitchClause
   - typings.typescript.mod.FlowArrayMutation
+  - typings.typescript.mod.FlowCall
   - typings.typescript.mod.FlowReduceLabel
 */
 trait FlowNode extends StObject

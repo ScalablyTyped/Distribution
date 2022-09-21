@@ -1,16 +1,20 @@
 package typings.muicss.reactMod
 
+import typings.react.mod.HTMLAttributes
+import typings.react.mod.OptionHTMLAttributes
+import typings.std.HTMLDivElement
+import typings.std.HTMLOptionElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type DivProps = typings.react.mod.HTMLAttributes[typings.std.HTMLDivElement]
+type DivProps = HTMLAttributes[HTMLDivElement]
 
-type DividerProps = typings.muicss.reactMod.DivProps
+type DividerProps = DivProps
 
-type OptionProps = typings.react.mod.OptionHTMLAttributes[typings.std.HTMLOptionElement]
+type OptionProps = OptionHTMLAttributes[HTMLOptionElement]
 
-type PanelProps = typings.muicss.reactMod.DivProps
+type PanelProps = DivProps
 
-type RadioProps = typings.muicss.reactMod.CheckboxProps
+type RadioProps = CheckboxProps

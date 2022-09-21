@@ -1,11 +1,14 @@
 package typings.awsSdk.kmsMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.RSA_2048
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AWSAccountIdType = java.lang.String
+type AWSAccountIdType = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.RSAES_PKCS1_V1_5
@@ -13,19 +16,19 @@ type AWSAccountIdType = java.lang.String
   - typings.awsSdk.awsSdkStrings.RSAES_OAEP_SHA_256
   - java.lang.String
 */
-type AlgorithmSpec = typings.awsSdk.kmsMod._AlgorithmSpec | java.lang.String
+type AlgorithmSpec = _AlgorithmSpec | String
 
-type AliasList = js.Array[typings.awsSdk.kmsMod.AliasListEntry]
+type AliasList = js.Array[AliasListEntry]
 
-type AliasNameType = java.lang.String
+type AliasNameType = String
 
-type ArnType = java.lang.String
+type ArnType = String
 
-type BooleanType = scala.Boolean
+type BooleanType = Boolean
 
-type CiphertextType = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.kmsMod.Blob | java.lang.String
+type CiphertextType = Buffer | js.typedarray.Uint8Array | Blob | String
 
-type CloudHsmClusterIdType = java.lang.String
+type CloudHsmClusterIdType = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INVALID_CREDENTIALS
@@ -37,9 +40,10 @@ type CloudHsmClusterIdType = java.lang.String
   - typings.awsSdk.awsSdkStrings.USER_NOT_FOUND
   - typings.awsSdk.awsSdkStrings.USER_LOGGED_IN
   - typings.awsSdk.awsSdkStrings.SUBNET_NOT_FOUND
+  - typings.awsSdk.awsSdkStrings.INSUFFICIENT_FREE_ADDRESSES_IN_SUBNET
   - java.lang.String
 */
-type ConnectionErrorCodeType = typings.awsSdk.kmsMod._ConnectionErrorCodeType | java.lang.String
+type ConnectionErrorCodeType = _ConnectionErrorCodeType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CONNECTED
@@ -49,13 +53,13 @@ type ConnectionErrorCodeType = typings.awsSdk.kmsMod._ConnectionErrorCodeType | 
   - typings.awsSdk.awsSdkStrings.DISCONNECTING
   - java.lang.String
 */
-type ConnectionStateType = typings.awsSdk.kmsMod._ConnectionStateType | java.lang.String
+type ConnectionStateType = _ConnectionStateType | String
 
-type CustomKeyStoreIdType = java.lang.String
+type CustomKeyStoreIdType = String
 
-type CustomKeyStoreNameType = java.lang.String
+type CustomKeyStoreNameType = String
 
-type CustomKeyStoresList = js.Array[typings.awsSdk.kmsMod.CustomKeyStoresListEntry]
+type CustomKeyStoresList = js.Array[CustomKeyStoresListEntry]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.RSA_2048
@@ -66,9 +70,14 @@ type CustomKeyStoresList = js.Array[typings.awsSdk.kmsMod.CustomKeyStoresListEnt
   - typings.awsSdk.awsSdkStrings.ECC_NIST_P521
   - typings.awsSdk.awsSdkStrings.ECC_SECG_P256K1
   - typings.awsSdk.awsSdkStrings.SYMMETRIC_DEFAULT
+  - typings.awsSdk.awsSdkStrings.HMAC_224
+  - typings.awsSdk.awsSdkStrings.HMAC_256
+  - typings.awsSdk.awsSdkStrings.HMAC_384
+  - typings.awsSdk.awsSdkStrings.HMAC_512
+  - typings.awsSdk.awsSdkStrings.SM2
   - java.lang.String
 */
-type CustomerMasterKeySpec = typings.awsSdk.kmsMod._CustomerMasterKeySpec | java.lang.String
+type CustomerMasterKeySpec = _CustomerMasterKeySpec | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.RSA_2048
@@ -78,49 +87,51 @@ type CustomerMasterKeySpec = typings.awsSdk.kmsMod._CustomerMasterKeySpec | java
   - typings.awsSdk.awsSdkStrings.ECC_NIST_P384
   - typings.awsSdk.awsSdkStrings.ECC_NIST_P521
   - typings.awsSdk.awsSdkStrings.ECC_SECG_P256K1
+  - typings.awsSdk.awsSdkStrings.SM2
   - java.lang.String
 */
-type DataKeyPairSpec = typings.awsSdk.kmsMod._DataKeyPairSpec | java.lang.String
+type DataKeyPairSpec = _DataKeyPairSpec | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AES_256
   - typings.awsSdk.awsSdkStrings.AES_128
   - java.lang.String
 */
-type DataKeySpec = typings.awsSdk.kmsMod._DataKeySpec | java.lang.String
+type DataKeySpec = _DataKeySpec | String
 
-type DateType = typings.std.Date
+type DateType = js.Date
 
-type DescriptionType = java.lang.String
+type DescriptionType = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SYMMETRIC_DEFAULT
   - typings.awsSdk.awsSdkStrings.RSAES_OAEP_SHA_1
   - typings.awsSdk.awsSdkStrings.RSAES_OAEP_SHA_256
+  - typings.awsSdk.awsSdkStrings.SM2PKE
   - java.lang.String
 */
-type EncryptionAlgorithmSpec = typings.awsSdk.kmsMod._EncryptionAlgorithmSpec | java.lang.String
+type EncryptionAlgorithmSpec = _EncryptionAlgorithmSpec | String
 
-type EncryptionAlgorithmSpecList = js.Array[typings.awsSdk.kmsMod.EncryptionAlgorithmSpec]
+type EncryptionAlgorithmSpecList = js.Array[EncryptionAlgorithmSpec]
 
-type EncryptionContextKey = java.lang.String
+type EncryptionContextKey = String
 
-type EncryptionContextType = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.kmsMod.EncryptionContextValue]
+type EncryptionContextType = StringDictionary[EncryptionContextValue]
 
-type EncryptionContextValue = java.lang.String
+type EncryptionContextValue = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.KEY_MATERIAL_EXPIRES
   - typings.awsSdk.awsSdkStrings.KEY_MATERIAL_DOES_NOT_EXPIRE
   - java.lang.String
 */
-type ExpirationModelType = typings.awsSdk.kmsMod._ExpirationModelType | java.lang.String
+type ExpirationModelType = _ExpirationModelType | String
 
-type GrantIdType = java.lang.String
+type GrantIdType = String
 
-type GrantList = js.Array[typings.awsSdk.kmsMod.GrantListEntry]
+type GrantList = js.Array[GrantListEntry]
 
-type GrantNameType = java.lang.String
+type GrantNameType = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Decrypt
@@ -137,58 +148,104 @@ type GrantNameType = java.lang.String
   - typings.awsSdk.awsSdkStrings.DescribeKey
   - typings.awsSdk.awsSdkStrings.GenerateDataKeyPair
   - typings.awsSdk.awsSdkStrings.GenerateDataKeyPairWithoutPlaintext
+  - typings.awsSdk.awsSdkStrings.GenerateMac
+  - typings.awsSdk.awsSdkStrings.VerifyMac
   - java.lang.String
 */
-type GrantOperation = typings.awsSdk.kmsMod._GrantOperation | java.lang.String
+type GrantOperation = _GrantOperation | String
 
-type GrantOperationList = js.Array[typings.awsSdk.kmsMod.GrantOperation]
+type GrantOperationList = js.Array[GrantOperation]
 
-type GrantTokenList = js.Array[typings.awsSdk.kmsMod.GrantTokenType]
+type GrantTokenList = js.Array[GrantTokenType]
 
-type GrantTokenType = java.lang.String
+type GrantTokenType = String
 
-type KeyIdType = java.lang.String
+type KeyIdType = String
 
-type KeyList = js.Array[typings.awsSdk.kmsMod.KeyListEntry]
+type KeyList = js.Array[KeyListEntry]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AWS
   - typings.awsSdk.awsSdkStrings.CUSTOMER
   - java.lang.String
 */
-type KeyManagerType = typings.awsSdk.kmsMod._KeyManagerType | java.lang.String
+type KeyManagerType = _KeyManagerType | String
 
 /* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.RSA_2048
+  - typings.awsSdk.awsSdkStrings.RSA_3072
+  - typings.awsSdk.awsSdkStrings.RSA_4096
+  - typings.awsSdk.awsSdkStrings.ECC_NIST_P256
+  - typings.awsSdk.awsSdkStrings.ECC_NIST_P384
+  - typings.awsSdk.awsSdkStrings.ECC_NIST_P521
+  - typings.awsSdk.awsSdkStrings.ECC_SECG_P256K1
+  - typings.awsSdk.awsSdkStrings.SYMMETRIC_DEFAULT
+  - typings.awsSdk.awsSdkStrings.HMAC_224
+  - typings.awsSdk.awsSdkStrings.HMAC_256
+  - typings.awsSdk.awsSdkStrings.HMAC_384
+  - typings.awsSdk.awsSdkStrings.HMAC_512
+  - typings.awsSdk.awsSdkStrings.SM2
+  - java.lang.String
+*/
+type KeySpec = _KeySpec | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Creating_
   - typings.awsSdk.awsSdkStrings.Enabled_
   - typings.awsSdk.awsSdkStrings.Disabled_
   - typings.awsSdk.awsSdkStrings.PendingDeletion
   - typings.awsSdk.awsSdkStrings.PendingImport
+  - typings.awsSdk.awsSdkStrings.PendingReplicaDeletion
   - typings.awsSdk.awsSdkStrings.Unavailable_
+  - typings.awsSdk.awsSdkStrings.Updating_
   - java.lang.String
 */
-type KeyState = typings.awsSdk.kmsMod._KeyState | java.lang.String
+type KeyState = _KeyState | String
 
-type KeyStorePasswordType = java.lang.String
+type KeyStorePasswordType = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SIGN_VERIFY
   - typings.awsSdk.awsSdkStrings.ENCRYPT_DECRYPT
+  - typings.awsSdk.awsSdkStrings.GENERATE_VERIFY_MAC
   - java.lang.String
 */
-type KeyUsageType = typings.awsSdk.kmsMod._KeyUsageType | java.lang.String
+type KeyUsageType = _KeyUsageType | String
 
-type LimitType = scala.Double
+type LimitType = Double
 
-type MarkerType = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.HMAC_SHA_224
+  - typings.awsSdk.awsSdkStrings.HMAC_SHA_256
+  - typings.awsSdk.awsSdkStrings.HMAC_SHA_384
+  - typings.awsSdk.awsSdkStrings.HMAC_SHA_512
+  - java.lang.String
+*/
+type MacAlgorithmSpec = _MacAlgorithmSpec | String
+
+type MacAlgorithmSpecList = js.Array[MacAlgorithmSpec]
+
+type MarkerType = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.RAW
   - typings.awsSdk.awsSdkStrings.DIGEST
   - java.lang.String
 */
-type MessageType = typings.awsSdk.kmsMod._MessageType | java.lang.String
+type MessageType = _MessageType | String
 
-type NumberOfBytesType = scala.Double
+type MultiRegionKeyList = js.Array[MultiRegionKey]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PRIMARY
+  - typings.awsSdk.awsSdkStrings.REPLICA
+  - java.lang.String
+*/
+type MultiRegionKeyType = _MultiRegionKeyType | String
+
+type NullableBooleanType = Boolean
+
+type NumberOfBytesType = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AWS_KMS
@@ -196,21 +253,23 @@ type NumberOfBytesType = scala.Double
   - typings.awsSdk.awsSdkStrings.AWS_CLOUDHSM
   - java.lang.String
 */
-type OriginType = typings.awsSdk.kmsMod._OriginType | java.lang.String
+type OriginType = _OriginType | String
 
-type PendingWindowInDaysType = scala.Double
+type PendingWindowInDaysType = Double
 
-type PlaintextType = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.kmsMod.Blob | java.lang.String
+type PlaintextType = Buffer | js.typedarray.Uint8Array | Blob | String
 
-type PolicyNameList = js.Array[typings.awsSdk.kmsMod.PolicyNameType]
+type PolicyNameList = js.Array[PolicyNameType]
 
-type PolicyNameType = java.lang.String
+type PolicyNameType = String
 
-type PolicyType = java.lang.String
+type PolicyType = String
 
-type PrincipalIdType = java.lang.String
+type PrincipalIdType = String
 
-type PublicKeyType = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.kmsMod.Blob | java.lang.String
+type PublicKeyType = Buffer | js.typedarray.Uint8Array | Blob | String
+
+type RegionType = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.RSASSA_PSS_SHA_256
@@ -222,27 +281,28 @@ type PublicKeyType = typings.node.Buffer | typings.std.Uint8Array | typings.awsS
   - typings.awsSdk.awsSdkStrings.ECDSA_SHA_256
   - typings.awsSdk.awsSdkStrings.ECDSA_SHA_384
   - typings.awsSdk.awsSdkStrings.ECDSA_SHA_512
+  - typings.awsSdk.awsSdkStrings.SM2DSA
   - java.lang.String
 */
-type SigningAlgorithmSpec = typings.awsSdk.kmsMod._SigningAlgorithmSpec | java.lang.String
+type SigningAlgorithmSpec = _SigningAlgorithmSpec | String
 
-type SigningAlgorithmSpecList = js.Array[typings.awsSdk.kmsMod.SigningAlgorithmSpec]
+type SigningAlgorithmSpecList = js.Array[SigningAlgorithmSpec]
 
-type TagKeyList = js.Array[typings.awsSdk.kmsMod.TagKeyType]
+type TagKeyList = js.Array[TagKeyType]
 
-type TagKeyType = java.lang.String
+type TagKeyType = String
 
-type TagList = js.Array[typings.awsSdk.kmsMod.Tag]
+type TagList = js.Array[Tag]
 
-type TagValueType = java.lang.String
+type TagValueType = String
 
-type TrustAnchorCertificateType = java.lang.String
+type TrustAnchorCertificateType = String
 
-type WrappingKeySpec = typings.awsSdk.awsSdkStrings.RSA_2048 | java.lang.String
+type WrappingKeySpec = RSA_2048 | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2014-11-01`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.kmsMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

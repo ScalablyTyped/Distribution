@@ -12,7 +12,7 @@ trait RulerLevels extends StObject {
   
   def Item(Index: Double): RulerLevel
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.RulerLevels_typekey")
   var PowerPointDotRulerLevels_typekey: RulerLevels
@@ -23,7 +23,7 @@ object RulerLevels {
     Application: Application,
     Count: Double,
     Item: Double => RulerLevel,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotRulerLevels_typekey: RulerLevels
   ): RulerLevels = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
@@ -39,7 +39,7 @@ object RulerLevels {
     
     inline def setItem(value: Double => RulerLevel): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotRulerLevels_typekey(value: RulerLevels): Self = StObject.set(x, "PowerPoint.RulerLevels_typekey", value.asInstanceOf[js.Any])
   }

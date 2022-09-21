@@ -14,12 +14,12 @@ trait ListNotebookInstancesInput extends StObject {
   /**
     * A filter that returns only notebook instances that were created after the specified time (timestamp).
     */
-  var CreationTimeAfter: js.UndefOr[CreationTime] = js.undefined
+  var CreationTimeAfter: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A filter that returns only notebook instances that were created before the specified time (timestamp). 
     */
-  var CreationTimeBefore: js.UndefOr[CreationTime] = js.undefined
+  var CreationTimeBefore: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A string in the name or URL of a Git repository associated with this notebook instance. This filter returns only notebook instances associated with a git repository with a name that contains the specified string.
@@ -29,12 +29,12 @@ trait ListNotebookInstancesInput extends StObject {
   /**
     * A filter that returns only notebook instances that were modified after the specified time (timestamp).
     */
-  var LastModifiedTimeAfter: js.UndefOr[LastModifiedTime] = js.undefined
+  var LastModifiedTimeAfter: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A filter that returns only notebook instances that were modified before the specified time (timestamp).
     */
-  var LastModifiedTimeBefore: js.UndefOr[LastModifiedTime] = js.undefined
+  var LastModifiedTimeBefore: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The maximum number of notebook instances to return.
@@ -84,11 +84,11 @@ object ListNotebookInstancesInput {
     
     inline def setAdditionalCodeRepositoryEqualsUndefined: Self = StObject.set(x, "AdditionalCodeRepositoryEquals", js.undefined)
     
-    inline def setCreationTimeAfter(value: CreationTime): Self = StObject.set(x, "CreationTimeAfter", value.asInstanceOf[js.Any])
+    inline def setCreationTimeAfter(value: js.Date): Self = StObject.set(x, "CreationTimeAfter", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeAfterUndefined: Self = StObject.set(x, "CreationTimeAfter", js.undefined)
     
-    inline def setCreationTimeBefore(value: CreationTime): Self = StObject.set(x, "CreationTimeBefore", value.asInstanceOf[js.Any])
+    inline def setCreationTimeBefore(value: js.Date): Self = StObject.set(x, "CreationTimeBefore", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeBeforeUndefined: Self = StObject.set(x, "CreationTimeBefore", js.undefined)
     
@@ -96,11 +96,11 @@ object ListNotebookInstancesInput {
     
     inline def setDefaultCodeRepositoryContainsUndefined: Self = StObject.set(x, "DefaultCodeRepositoryContains", js.undefined)
     
-    inline def setLastModifiedTimeAfter(value: LastModifiedTime): Self = StObject.set(x, "LastModifiedTimeAfter", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTimeAfter(value: js.Date): Self = StObject.set(x, "LastModifiedTimeAfter", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedTimeAfterUndefined: Self = StObject.set(x, "LastModifiedTimeAfter", js.undefined)
     
-    inline def setLastModifiedTimeBefore(value: LastModifiedTime): Self = StObject.set(x, "LastModifiedTimeBefore", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTimeBefore(value: js.Date): Self = StObject.set(x, "LastModifiedTimeBefore", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedTimeBeforeUndefined: Self = StObject.set(x, "LastModifiedTimeBefore", js.undefined)
     

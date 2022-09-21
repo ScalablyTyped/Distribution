@@ -1,7 +1,7 @@
 
 # Scala.js typings for soap
 
-Typings are for version 0.35.0
+Typings are for version 0.45.0
 
 ## Library description:
 A minimal node SOAP client
@@ -10,10 +10,10 @@ A minimal node SOAP client
 | ------------------ | :-------------: |
 | Full name          | soap |
 | Keywords           | soap |
-| # releases         | 13 |
-| # dependents       | 498 |
-| # downloads        | 8467852 |
-| # stars            | 74 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 1028469.3333333334 |
+| # stars            | 2834.0 |
 
 ## Links
 - [Homepage](https://github.com/vpulim/node-soap#readme)

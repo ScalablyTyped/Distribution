@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the shape collection inside a shape group.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @js.native
@@ -28,27 +28,42 @@ trait GroupShapeCollection
   /**
     * Returns the number of shapes in the shape group.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   def getCount(): ClientResult[Double] = js.native
   
   /**
-    * Gets a shape using its Name or ID.
+    * Gets a shape using its name or ID.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     *
-    * @param key The Name or ID of the shape to be retrieved.
+    * @param key The name or ID of the shape to be retrieved.
     */
   def getItem(key: String): Shape = js.native
   
   /**
     * Gets a shape based on its position in the collection.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     *
     * @param index The zero-based index value of the object to be retrieved.
     */
   def getItemAt(index: Double): Shape = js.native
+  
+  /**
+    * Gets a shape using its name or ID.
+    If the shape object does not exist, then this method returns an object with its `isNullObject` property set to `true`.
+    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties  | *OrNullObject methods and properties}.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.14]
+    *
+    * @param key The name or ID of the shape to be retrieved.
+    */
+  def getItemOrNullObject(key: String): Shape = js.native
   
   /** Gets the loaded child items in this collection. */
   val items: js.Array[Shape] = js.native

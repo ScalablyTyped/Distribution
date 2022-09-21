@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ButtonsApiExportDataParameter extends StObject {
   
-  var columns: js.UndefOr[js.Any] = js.undefined
+  var columns: js.UndefOr[Any] = js.undefined
   
   var decodeEntities: js.UndefOr[Boolean] = js.undefined
   
-  var format: js.UndefOr[js.Any] = js.undefined
+  var format: js.UndefOr[Any] = js.undefined
   
-  var modifier: js.UndefOr[js.Any] = js.undefined
+  var modifier: js.UndefOr[Any] = js.undefined
   
   var orthogonal: js.UndefOr[String] = js.undefined
   
-  var rows: js.UndefOr[js.Any] = js.undefined
+  var rows: js.UndefOr[Any] = js.undefined
   
   var stripHtml: js.UndefOr[Boolean] = js.undefined
   
@@ -33,7 +33,7 @@ object ButtonsApiExportDataParameter {
   
   extension [Self <: ButtonsApiExportDataParameter](x: Self) {
     
-    inline def setColumns(value: js.Any): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: Any): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
@@ -41,11 +41,11 @@ object ButtonsApiExportDataParameter {
     
     inline def setDecodeEntitiesUndefined: Self = StObject.set(x, "decodeEntities", js.undefined)
     
-    inline def setFormat(value: js.Any): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: Any): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    inline def setModifier(value: js.Any): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
+    inline def setModifier(value: Any): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
     
     inline def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)
     
@@ -53,7 +53,7 @@ object ButtonsApiExportDataParameter {
     
     inline def setOrthogonalUndefined: Self = StObject.set(x, "orthogonal", js.undefined)
     
-    inline def setRows(value: js.Any): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: Any): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     

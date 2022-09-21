@@ -40,8 +40,8 @@ trait SasPortalInstallationParams extends StObject {
   var eirpCapability: js.UndefOr[Double] = js.undefined
   
   /**
-    * Device antenna height in meters. When the heightType parameter value is "AGL", the antenna height should be given relative to ground level. When the heightType parameter value is
-    * "AMSL", it is given with respect to WGS84 datum.
+    * Device antenna height in meters. When the `heightType` parameter value is "AGL", the antenna height should be given relative to ground level. When the `heightType` parameter value
+    * is "AMSL", it is given with respect to WGS84 datum.
     */
   var height: js.UndefOr[Double] = js.undefined
   
@@ -54,7 +54,7 @@ trait SasPortalInstallationParams extends StObject {
     */
   var horizontalAccuracy: js.UndefOr[Double] = js.undefined
   
-  /** Whether the device antenna is indoor or not. True: indoor. False: outdoor. */
+  /** Whether the device antenna is indoor or not. `true`: indoor. `false`: outdoor. */
   var indoorDeployment: js.UndefOr[Boolean] = js.undefined
   
   /**
@@ -64,7 +64,7 @@ trait SasPortalInstallationParams extends StObject {
   var latitude: js.UndefOr[Double] = js.undefined
   
   /**
-    * Longitude of the device antenna location. in degrees relative to the WGS 84 datum. The allowed range is from -180.000000 to +180.000000. Positive values represent longitudes east of
+    * Longitude of the device antenna location in degrees relative to the WGS 84 datum. The allowed range is from -180.000000 to +180.000000. Positive values represent longitudes east of
     * the prime meridian; negative values west of the prime meridian.
     */
   var longitude: js.UndefOr[Double] = js.undefined

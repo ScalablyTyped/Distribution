@@ -87,6 +87,6 @@ object NativeAndroidChannel {
     
     inline def setVibrationPatternUndefined: Self = StObject.set(x, "vibrationPattern", js.undefined)
     
-    inline def setVibrationPatternVarargs(value: Double*): Self = StObject.set(x, "vibrationPattern", js.Array(value :_*))
+    inline def setVibrationPatternVarargs(value: Double*): Self = StObject.set(x, "vibrationPattern", js.Array(value*))
   }
 }

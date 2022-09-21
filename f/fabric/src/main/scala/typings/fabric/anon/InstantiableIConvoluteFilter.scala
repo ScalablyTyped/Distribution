@@ -17,5 +17,5 @@ trait InstantiableIConvoluteFilter
     * Returns filter instance from an object representation
     * @param object Object to create an instance from
     */
-  def fromObject(`object`: js.Any): IConvoluteFilter = js.native
+  def fromObject(`object`: Any): IConvoluteFilter = js.native
 }

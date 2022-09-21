@@ -12,7 +12,7 @@ trait Wait
   extends StObject
      with IAction {
   
-  var args: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var args: js.UndefOr[js.Array[Any]] = js.undefined
   
   var delay: js.UndefOr[Double] = js.undefined
   
@@ -29,11 +29,11 @@ object Wait {
   
   extension [Self <: Wait](x: Self) {
     
-    inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: Any*): Self = StObject.set(x, "args", js.Array(value*))
     
     inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     

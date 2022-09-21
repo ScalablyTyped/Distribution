@@ -24,6 +24,6 @@ object DescribeCommandsResult {
     
     inline def setCommandsUndefined: Self = StObject.set(x, "Commands", js.undefined)
     
-    inline def setCommandsVarargs(value: Command*): Self = StObject.set(x, "Commands", js.Array(value :_*))
+    inline def setCommandsVarargs(value: Command*): Self = StObject.set(x, "Commands", js.Array(value*))
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CredentialDefinition extends StObject {
   
-  var data: js.Any
+  var data: Any
   
   var id: CredentialDefinitionID
   
@@ -19,7 +19,7 @@ trait CredentialDefinition extends StObject {
 object CredentialDefinition {
   
   inline def apply(
-    data: js.Any,
+    data: Any,
     id: CredentialDefinitionID,
     schema_id: CredentialSchemaID,
     schema_name: String,
@@ -31,7 +31,7 @@ object CredentialDefinition {
   
   extension [Self <: CredentialDefinition](x: Self) {
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setId(value: CredentialDefinitionID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

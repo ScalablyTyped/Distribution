@@ -11,9 +11,9 @@ node.js basic auth parser
 | Full name          | basic-auth |
 | Keywords           | basic, auth, authorization, basicauth |
 | # releases         | 1 |
-| # dependents       | 615 |
-| # downloads        | 137460625 |
-| # stars            | 43 |
+| # dependents       | 0.0 |
+| # downloads        | 2.0746926333333332E7 |
+| # stars            | 679.0 |
 
 ## Links
 - [Homepage](https://github.com/jshttp/basic-auth#readme)

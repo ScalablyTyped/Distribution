@@ -14,7 +14,7 @@ trait CredentialProperties extends StObject {
   var expires: js.UndefOr[Double] = js.undefined
   
   /**
-    * Indicates that this credential was created to access the [ArcGIS REST Admin service](https://developers.arcgis.com/rest/services-reference/rest-api-admin.htm).
+    * Indicates that this credential was created to access the [ArcGIS REST Admin service](https://developers.arcgis.com/rest/services-reference/enterprise/rest-api-admin.htm).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-Credential.html#isAdmin)
     */
@@ -25,7 +25,7 @@ trait CredentialProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-Credential.html#oAuthState)
     */
-  var oAuthState: js.UndefOr[js.Any] = js.undefined
+  var oAuthState: js.UndefOr[Any] = js.undefined
   
   /**
     * The server url.
@@ -72,7 +72,7 @@ object CredentialProperties {
     
     inline def setIsAdminUndefined: Self = StObject.set(x, "isAdmin", js.undefined)
     
-    inline def setOAuthState(value: js.Any): Self = StObject.set(x, "oAuthState", value.asInstanceOf[js.Any])
+    inline def setOAuthState(value: Any): Self = StObject.set(x, "oAuthState", value.asInstanceOf[js.Any])
     
     inline def setOAuthStateUndefined: Self = StObject.set(x, "oAuthState", js.undefined)
     

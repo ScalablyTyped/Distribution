@@ -11,9 +11,9 @@ A lightweight, pause-able timer class
 | Full name          | timer-machine |
 | Keywords           | timer, time, pause, stopwatch |
 | # releases         | 0 |
-| # dependents       | 10 |
-| # downloads        | 13942 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1017.0 |
+| # stars            | 30.0 |
 
 ## Links
 - [Homepage](https://github.com/brentburgoyne/timer-machine)

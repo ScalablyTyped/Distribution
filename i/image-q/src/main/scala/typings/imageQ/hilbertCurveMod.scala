@@ -1,37 +1,16 @@
 package typings.imageQ
 
+import typings.imageQ.imageQuantizerYieldValueMod.ImageQuantizerYieldValue
+import typings.std.Generator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hilbertCurveMod {
   
-  @JSImport("image-q/dist/image/spaceFillingCurves/hilbertCurve", "HilbertCurveBase")
+  @JSImport("image-q/dist/types/src/image/spaceFillingCurves/hilbertCurve", JSImport.Namespace)
   @js.native
-  class HilbertCurveBase () extends StObject {
-    
-    /* private */ var _callback: js.Any = js.native
-    
-    /* private */ var _d: js.Any = js.native
-    
-    /* private */ var _height: js.Any = js.native
-    
-    /* private */ var _level: js.Any = js.native
-    
-    /* private */ def _visit(direction: js.Any): js.Any = js.native
-    
-    /* private */ def _walkHilbert(direction: js.Any): js.Any = js.native
-    
-    /* private */ var _width: js.Any = js.native
-    
-    /* private */ var _x: js.Any = js.native
-    
-    /* private */ var _y: js.Any = js.native
-    
-    def walk(
-      width: Double,
-      height: Double,
-      visitorCallback: js.Function3[/* x */ Double, /* y */ Double, /* d */ Double, Unit]
-    ): Unit = js.native
-  }
+  val ^ : js.Any = js.native
+  
+  inline def hilbertCurve(width: Double, height: Double, callback: js.Function2[/* x */ Double, /* y */ Double, Unit]): Generator[ImageQuantizerYieldValue, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("hilbertCurve")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Generator[ImageQuantizerYieldValue, Unit, Unit]]
 }

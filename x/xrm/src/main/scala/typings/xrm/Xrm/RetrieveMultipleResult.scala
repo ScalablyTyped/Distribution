@@ -12,7 +12,7 @@ trait RetrieveMultipleResult extends StObject {
   /**
     * An array of JSON objects, where each object represents the retrieved entity record containing attributes and their values as key: value pairs. The Id of the entity record is retrieved by default.
     */
-  var entities: js.Array[js.Any]
+  var entities: js.Array[Any]
   
   /**
     * If the number of records being retrieved is more than the value specified in the maxPageSize parameter, this attribute returns the URL to return next set of records.
@@ -21,16 +21,16 @@ trait RetrieveMultipleResult extends StObject {
 }
 object RetrieveMultipleResult {
   
-  inline def apply(entities: js.Array[js.Any], nextLink: String): RetrieveMultipleResult = {
+  inline def apply(entities: js.Array[Any], nextLink: String): RetrieveMultipleResult = {
     val __obj = js.Dynamic.literal(entities = entities.asInstanceOf[js.Any], nextLink = nextLink.asInstanceOf[js.Any])
     __obj.asInstanceOf[RetrieveMultipleResult]
   }
   
   extension [Self <: RetrieveMultipleResult](x: Self) {
     
-    inline def setEntities(value: js.Array[js.Any]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
+    inline def setEntities(value: js.Array[Any]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
-    inline def setEntitiesVarargs(value: js.Any*): Self = StObject.set(x, "entities", js.Array(value :_*))
+    inline def setEntitiesVarargs(value: Any*): Self = StObject.set(x, "entities", js.Array(value*))
     
     inline def setNextLink(value: String): Self = StObject.set(x, "nextLink", value.asInstanceOf[js.Any])
   }

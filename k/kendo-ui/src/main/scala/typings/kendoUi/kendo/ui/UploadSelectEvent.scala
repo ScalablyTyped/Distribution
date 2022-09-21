@@ -8,9 +8,9 @@ trait UploadSelectEvent
   extends StObject
      with UploadEvent {
   
-  var e: js.UndefOr[js.Any] = js.undefined
+  var e: js.UndefOr[Any] = js.undefined
   
-  var files: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var files: js.UndefOr[js.Array[Any]] = js.undefined
 }
 object UploadSelectEvent {
   
@@ -21,14 +21,14 @@ object UploadSelectEvent {
   
   extension [Self <: UploadSelectEvent](x: Self) {
     
-    inline def setE(value: js.Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+    inline def setE(value: Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
     
     inline def setEUndefined: Self = StObject.set(x, "e", js.undefined)
     
-    inline def setFiles(value: js.Array[js.Any]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: js.Array[Any]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    inline def setFilesVarargs(value: js.Any*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: Any*): Self = StObject.set(x, "files", js.Array(value*))
   }
 }

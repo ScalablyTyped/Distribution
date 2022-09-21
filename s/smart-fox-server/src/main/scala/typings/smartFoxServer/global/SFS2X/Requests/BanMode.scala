@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SFS2X.Requests.BanMode")
 @js.native
-class BanMode ()
+open class BanMode ()
   extends StObject
      with typings.smartFoxServer.SFS2X.Requests.BanMode
 /* static members */

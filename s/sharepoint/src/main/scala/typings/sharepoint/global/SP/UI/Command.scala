@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.UI.Command")
 @js.native
-class Command protected ()
+open class Command protected ()
   extends StObject
      with typings.sharepoint.SP.UI.Command {
   def this(name: String, displayName: String) = this()

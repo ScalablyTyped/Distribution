@@ -1,5 +1,6 @@
 package typings.reactOnsenui.mod
 
+import typings.reactOnsenui.anon.Children
 import typings.reactOnsenui.anon.HTMLAttributesidclassName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -7,12 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-onsenui", "SplitterContent")
 @js.native
-class SplitterContent protected ()
-  extends Component[js.Object, js.Object] {
-  def this(props: HTMLAttributesidclassName & js.Object) = this()
+open class SplitterContent protected ()
+  extends Component[Children, js.Object] {
+  def this(props: HTMLAttributesidclassName & Children) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: HTMLAttributesidclassName & js.Object, context: js.Any) = this()
+  def this(props: HTMLAttributesidclassName & Children, context: Any) = this()
 }

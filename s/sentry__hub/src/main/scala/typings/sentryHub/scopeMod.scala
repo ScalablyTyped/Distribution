@@ -1,14 +1,18 @@
 package typings.sentryHub
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.sentryHub.sessionMod.Session
+import typings.sentryTypes.attachmentMod.Attachment
 import typings.sentryTypes.breadcrumbMod.Breadcrumb
 import typings.sentryTypes.contextMod.Contexts
 import typings.sentryTypes.eventMod.Event
 import typings.sentryTypes.eventMod.EventHint
 import typings.sentryTypes.eventprocessorMod.EventProcessor
 import typings.sentryTypes.extraMod.Extras
+import typings.sentryTypes.miscMod.Primitive
+import typings.sentryTypes.sessionMod.RequestSession
+import typings.sentryTypes.sessionMod.Session
 import typings.sentryTypes.severityMod.Severity
+import typings.sentryTypes.severityMod.SeverityLevel
 import typings.sentryTypes.spanMod.Span
 import typings.sentryTypes.userMod.User
 import org.scalablytyped.runtime.StObject
@@ -17,13 +21,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object scopeMod {
   
-  @JSImport("@sentry/hub/dist/scope", JSImport.Namespace)
+  @JSImport("@sentry/hub/types/scope", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@sentry/hub/dist/scope", "Scope")
+  @JSImport("@sentry/hub/types/scope", "Scope")
   @js.native
-  class Scope ()
+  open class Scope ()
     extends StObject
        with typings.sentryTypes.scopeMod.Scope {
     
@@ -31,7 +35,10 @@ object scopeMod {
       * Applies fingerprint from the scope to the event if there's one,
       * uses message if there's one instead or get rid of empty fingerprint
       */
-    /* private */ var _applyFingerprint: js.Any = js.native
+    /* private */ var _applyFingerprint: Any = js.native
+    
+    /** Attachments */
+    /* protected */ var _attachments: js.Array[Attachment] = js.native
     
     /** Array of breadcrumbs. */
     /* protected */ var _breadcrumbs: js.Array[Breadcrumb] = js.native
@@ -49,17 +56,13 @@ object scopeMod {
     /* protected */ var _fingerprint: js.UndefOr[js.Array[String]] = js.native
     
     /** Severity */
-    /* protected */ var _level: js.UndefOr[Severity] = js.native
+    /* protected */ var _level: js.UndefOr[Severity | SeverityLevel] = js.native
     
+    /* protected */ def _notifyEventProcessors(processors: js.Array[EventProcessor], event: Null, hint: EventHint): js.Thenable[Event | Null] = js.native
+    /* protected */ def _notifyEventProcessors(processors: js.Array[EventProcessor], event: Null, hint: EventHint, index: Double): js.Thenable[Event | Null] = js.native
     /**
       * This will be called after {@link applyToEvent} is finished.
       */
-    /* protected */ def _notifyEventProcessors(processors: js.Array[EventProcessor]): js.Thenable[Event | Null] = js.native
-    /* protected */ def _notifyEventProcessors(processors: js.Array[EventProcessor], event: Null, hint: Unit, index: Double): js.Thenable[Event | Null] = js.native
-    /* protected */ def _notifyEventProcessors(processors: js.Array[EventProcessor], event: Null, hint: EventHint): js.Thenable[Event | Null] = js.native
-    /* protected */ def _notifyEventProcessors(processors: js.Array[EventProcessor], event: Null, hint: EventHint, index: Double): js.Thenable[Event | Null] = js.native
-    /* protected */ def _notifyEventProcessors(processors: js.Array[EventProcessor], event: Event): js.Thenable[Event | Null] = js.native
-    /* protected */ def _notifyEventProcessors(processors: js.Array[EventProcessor], event: Event, hint: Unit, index: Double): js.Thenable[Event | Null] = js.native
     /* protected */ def _notifyEventProcessors(processors: js.Array[EventProcessor], event: Event, hint: EventHint): js.Thenable[Event | Null] = js.native
     /* protected */ def _notifyEventProcessors(processors: js.Array[EventProcessor], event: Event, hint: EventHint, index: Double): js.Thenable[Event | Null] = js.native
     
@@ -68,11 +71,20 @@ object scopeMod {
       */
     /* protected */ def _notifyScopeListeners(): Unit = js.native
     
-    /** Flag if notifiying is happening. */
+    /** Flag if notifying is happening. */
     /* protected */ var _notifyingListeners: Boolean = js.native
+    
+    /** Request Mode Session Status */
+    /* protected */ var _requestSession: js.UndefOr[RequestSession] = js.native
     
     /** Callback for client to receive scope changes. */
     /* protected */ var _scopeListeners: js.Array[js.Function1[/* scope */ this.type, Unit]] = js.native
+    
+    /**
+      * A place to stash data which is needed at some point in the SDK's event processing pipeline but which shouldn't get
+      * sent to Sentry
+      */
+    /* protected */ var _sdkProcessingMetadata: StringDictionary[Any] = js.native
     
     /** Session */
     /* protected */ var _session: js.UndefOr[Session] = js.native
@@ -81,7 +93,7 @@ object scopeMod {
     /* protected */ var _span: js.UndefOr[Span] = js.native
     
     /** Tags */
-    /* protected */ var _tags: StringDictionary[String] = js.native
+    /* protected */ var _tags: StringDictionary[Primitive] = js.native
     
     /** Transaction Name */
     /* protected */ var _transactionName: js.UndefOr[String] = js.native
@@ -96,29 +108,24 @@ object scopeMod {
     def addScopeListener(callback: js.Function1[/* scope */ this.type, Unit]): Unit = js.native
     
     /**
-      * Applies the current context and fingerprint to the event.
-      * Note that breadcrumbs will be added by the client.
-      * Also if the event has already breadcrumbs on it, we do not merge them.
+      * Applies data from the scope to the event and runs all event processors on it.
+      *
       * @param event Event
-      * @param hint May contain additional informartion about the original exception.
+      * @param hint Object containing additional information about the original exception, for use by the event processors.
       * @hidden
       */
     def applyToEvent(event: Event): js.Thenable[Event | Null] = js.native
     def applyToEvent(event: Event, hint: EventHint): js.Thenable[Event | Null] = js.native
     
-    def setSession(session: Session): this.type = js.native
-    
     /**
-      * Can be removed in major version.
-      * @deprecated in favor of {@link this.setTransactionName}
+      * Add data which will be accessible during event processing but won't get sent to Sentry
       */
-    def setTransaction(): this.type = js.native
-    def setTransaction(name: String): this.type = js.native
+    def setSDKProcessingMetadata(newData: StringDictionary[Any]): this.type = js.native
   }
   /* static members */
   object Scope {
     
-    @JSImport("@sentry/hub/dist/scope", "Scope")
+    @JSImport("@sentry/hub/types/scope", "Scope")
     @js.native
     val ^ : js.Any = js.native
     

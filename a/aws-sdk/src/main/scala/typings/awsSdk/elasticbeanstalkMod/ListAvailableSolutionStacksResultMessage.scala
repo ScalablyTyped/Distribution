@@ -29,12 +29,12 @@ object ListAvailableSolutionStacksResultMessage {
     
     inline def setSolutionStackDetailsUndefined: Self = StObject.set(x, "SolutionStackDetails", js.undefined)
     
-    inline def setSolutionStackDetailsVarargs(value: SolutionStackDescription*): Self = StObject.set(x, "SolutionStackDetails", js.Array(value :_*))
+    inline def setSolutionStackDetailsVarargs(value: SolutionStackDescription*): Self = StObject.set(x, "SolutionStackDetails", js.Array(value*))
     
     inline def setSolutionStacks(value: AvailableSolutionStackNamesList): Self = StObject.set(x, "SolutionStacks", value.asInstanceOf[js.Any])
     
     inline def setSolutionStacksUndefined: Self = StObject.set(x, "SolutionStacks", js.undefined)
     
-    inline def setSolutionStacksVarargs(value: SolutionStackName*): Self = StObject.set(x, "SolutionStacks", js.Array(value :_*))
+    inline def setSolutionStacksVarargs(value: SolutionStackName*): Self = StObject.set(x, "SolutionStacks", js.Array(value*))
   }
 }

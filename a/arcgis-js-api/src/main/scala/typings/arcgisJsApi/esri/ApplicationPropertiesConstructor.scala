@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ApplicationPropertiesConstructor
   extends StObject
-     with Instantiable0[ApplicationProperties]
+     with /**
+  * Represents configuration of application and UI elements of the [WebMap](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html).
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-ApplicationProperties.html)
+  */
+Instantiable0[ApplicationProperties]
      with Instantiable1[/* properties */ ApplicationPropertiesProperties, ApplicationProperties]

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react", "TooltipHostBase")
 @js.native
-class TooltipHostBase protected ()
+open class TooltipHostBase protected ()
   extends typings.officeUiFabricReact.libTooltipMod.TooltipHostBase {
   def this(props: ITooltipHostProps) = this()
 }
@@ -21,8 +21,8 @@ object TooltipHostBase {
   
   @JSImport("office-ui-fabric-react", "TooltipHostBase._currentVisibleTooltip")
   @js.native
-  def _currentVisibleTooltip: js.Any = js.native
-  inline def _currentVisibleTooltip_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_currentVisibleTooltip")(x.asInstanceOf[js.Any])
+  def _currentVisibleTooltip: Any = js.native
+  inline def _currentVisibleTooltip_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_currentVisibleTooltip")(x.asInstanceOf[js.Any])
   
   @JSImport("office-ui-fabric-react", "TooltipHostBase.defaultProps")
   @js.native

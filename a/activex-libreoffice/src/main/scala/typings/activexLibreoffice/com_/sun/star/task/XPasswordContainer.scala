@@ -80,7 +80,7 @@ object XPasswordContainer {
     find: (String, XInteractionHandler) => UrlRecord,
     findForName: (String, String, XInteractionHandler) => UrlRecord,
     getAllPersistent: XInteractionHandler => SafeArray[UrlRecord],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     remove: (String, String) => Unit,
     removeAllPersistent: () => Unit,

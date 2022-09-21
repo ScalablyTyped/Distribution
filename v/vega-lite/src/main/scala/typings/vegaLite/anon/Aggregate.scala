@@ -1,33 +1,10 @@
 package typings.vegaLite.anon
 
-import typings.vegaLite.aggregateMod.ArgmaxDef
-import typings.vegaLite.aggregateMod.ArgminDef
 import typings.vegaLite.binMod.BinParams
-import typings.vegaLite.vegaLiteStrings.average
+import typings.vegaLite.compositemarkMod.CompositeAggregate
+import typings.vegaLite.srcTimeunitMod.TimeUnitParams
 import typings.vegaLite.vegaLiteStrings.binned
-import typings.vegaLite.vegaLiteStrings.boxplot
-import typings.vegaLite.vegaLiteStrings.ci0
-import typings.vegaLite.vegaLiteStrings.ci1
-import typings.vegaLite.vegaLiteStrings.count
-import typings.vegaLite.vegaLiteStrings.distinct
-import typings.vegaLite.vegaLiteStrings.errorband
-import typings.vegaLite.vegaLiteStrings.errorbar
-import typings.vegaLite.vegaLiteStrings.max
-import typings.vegaLite.vegaLiteStrings.mean
-import typings.vegaLite.vegaLiteStrings.median
-import typings.vegaLite.vegaLiteStrings.min
-import typings.vegaLite.vegaLiteStrings.missing
-import typings.vegaLite.vegaLiteStrings.product
-import typings.vegaLite.vegaLiteStrings.q1
-import typings.vegaLite.vegaLiteStrings.q3
-import typings.vegaLite.vegaLiteStrings.stderr
-import typings.vegaLite.vegaLiteStrings.stdev
-import typings.vegaLite.vegaLiteStrings.stdevp
-import typings.vegaLite.vegaLiteStrings.sum
-import typings.vegaLite.vegaLiteStrings.valid
-import typings.vegaLite.vegaLiteStrings.values
-import typings.vegaLite.vegaLiteStrings.variance
-import typings.vegaLite.vegaLiteStrings.variancep
+import typings.vegaTypings.encodeMod.Text
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -43,24 +20,20 @@ trait Aggregate extends StObject {
     *
     * __See also:__ [`aggregate`](https://vega.github.io/vega-lite/docs/aggregate.html) documentation.
     */
-  var aggregate: js.UndefOr[
-    max | values | count | min | average | distinct | mean | median | missing | product | q1 | q3 | ci0 | ci1 | stderr | stdev | stdevp | sum | valid | variance | variancep | ArgminDef | ArgmaxDef | boxplot | errorbar | errorband
-  ] = js.undefined
+  var aggregate: js.UndefOr[typings.vegaLite.aggregateMod.Aggregate | CompositeAggregate] = js.undefined
   
   /**
-    * For rect-based marks (`rect`, `bar`, and `image`), mark size relative to bandwidth of [band scales](https://vega.github.io/vega-lite/docs/scale.html#band), bins or time units. If set to `1`, the mark size is set to the bandwidth, the bin interval, or the time unit interval. If set to `0.5`, the mark size is half of the bandwidth or the time unit interval.
-    *
-    * For other marks, relative position on a band of a stacked, binned, time unit or band scale. If set to `0`, the marks will be positioned at the beginning of the band. If set to `0.5`, the marks will be positioned in the middle of the band.
+    * Relative position on a band of a stacked, binned, time unit, or band scale. For example, the marks will be positioned at the beginning of the band if set to `0`, and at the middle of the band if set to `0.5`.
     *
     * @minimum 0
     * @maximum 1
     */
-  var band: js.UndefOr[Double] = js.undefined
+  var bandPosition: js.UndefOr[Double] = js.undefined
   
   /**
-    * A flag for binning a `quantitative` field, [an object defining binning parameters](https://vega.github.io/vega-lite/docs/bin.html#params), or indicating that the data for `x` or `y` channel are binned before they are imported into Vega-Lite (`"binned"`).
+    * A flag for binning a `quantitative` field, [an object defining binning parameters](https://vega.github.io/vega-lite/docs/bin.html#bin-parameters), or indicating that the data for `x` or `y` channel are binned before they are imported into Vega-Lite (`"binned"`).
     *
-    * - If `true`, default [binning parameters](https://vega.github.io/vega-lite/docs/bin.html) will be applied.
+    * - If `true`, default [binning parameters](https://vega.github.io/vega-lite/docs/bin.html#bin-parameters) will be applied.
     *
     * - If `"binned"`, this indicates that the data for the `x` (or `y`) channel are already binned. You can map the bin-start field to `x` (or `y`) and the bin-end field to `x2` (or `y2`). The scale and axis will be formatted similar to binning in Vega-Lite.  To adjust the axis ticks based on the bin step, you can also set the axis's [`tickMinStep`](https://vega.github.io/vega-lite/docs/axis.html#ticks) property.
     *
@@ -92,11 +65,9 @@ trait Aggregate extends StObject {
     *
     * __See also:__ [`timeUnit`](https://vega.github.io/vega-lite/docs/timeunit.html) documentation.
     */
-  var timeUnit: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 82 */ js.Any
-  ] = js.undefined
+  var timeUnit: js.UndefOr[typings.vegaLite.srcTimeunitMod.TimeUnit | TimeUnitParams] = js.undefined
   
-  var title: js.UndefOr[String | js.Array[String] | SignalRef] = js.undefined
+  var title: js.UndefOr[SignalRef | Text] = js.undefined
   
   /**
     * The type of measurement (`"quantitative"`, `"temporal"`, `"ordinal"`, or `"nominal"`) for the encoded field or constant value (`datum`).
@@ -128,7 +99,7 @@ trait Aggregate extends StObject {
     *
     * __See also:__ [`type`](https://vega.github.io/vega-lite/docs/type.html) documentation.
     */
-  var `type`: js.UndefOr[js.Any] = js.undefined
+  var `type`: js.UndefOr[Any] = js.undefined
 }
 object Aggregate {
   
@@ -139,15 +110,13 @@ object Aggregate {
   
   extension [Self <: Aggregate](x: Self) {
     
-    inline def setAggregate(
-      value: max | values | count | min | average | distinct | mean | median | missing | product | q1 | q3 | ci0 | ci1 | stderr | stdev | stdevp | sum | valid | variance | variancep | ArgminDef | ArgmaxDef | boxplot | errorbar | errorband
-    ): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
+    inline def setAggregate(value: typings.vegaLite.aggregateMod.Aggregate | CompositeAggregate): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
     
     inline def setAggregateUndefined: Self = StObject.set(x, "aggregate", js.undefined)
     
-    inline def setBand(value: Double): Self = StObject.set(x, "band", value.asInstanceOf[js.Any])
+    inline def setBandPosition(value: Double): Self = StObject.set(x, "bandPosition", value.asInstanceOf[js.Any])
     
-    inline def setBandUndefined: Self = StObject.set(x, "band", js.undefined)
+    inline def setBandPositionUndefined: Self = StObject.set(x, "bandPosition", js.undefined)
     
     inline def setBin(value: Boolean | BinParams | binned): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
     
@@ -157,17 +126,17 @@ object Aggregate {
     
     inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    inline def setTimeUnit(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 82 */ js.Any): Self = StObject.set(x, "timeUnit", value.asInstanceOf[js.Any])
+    inline def setTimeUnit(value: typings.vegaLite.srcTimeunitMod.TimeUnit | TimeUnitParams): Self = StObject.set(x, "timeUnit", value.asInstanceOf[js.Any])
     
     inline def setTimeUnitUndefined: Self = StObject.set(x, "timeUnit", js.undefined)
     
-    inline def setTitle(value: String | js.Array[String] | SignalRef): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: SignalRef | Text): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    inline def setTitleVarargs(value: String*): Self = StObject.set(x, "title", js.Array(value :_*))
+    inline def setTitleVarargs(value: String*): Self = StObject.set(x, "title", js.Array(value*))
     
-    inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

@@ -1,26 +1,20 @@
 package typings.antd
 
-import typings.antd.anon.GapDegree
+import org.scalablytyped.runtime.Shortcut
+import typings.antd.progressProgressMod.ProgressProps
+import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object progressMod {
+object progressMod extends Shortcut {
   
   @JSImport("antd/lib/progress", JSImport.Default)
   @js.native
-  class default ()
-    extends typings.antd.progressProgressMod.default
-  /* static members */
-  object default {
-    
-    @JSImport("antd/lib/progress", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("antd/lib/progress", "default.defaultProps")
-    @js.native
-    def defaultProps: GapDegree = js.native
-    inline def defaultProps_=(x: GapDegree): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
-  }
+  val default: FC[ProgressProps] = js.native
+  
+  type _To = FC[ProgressProps]
+  
+  /* This means you don't have to write `default`, but can instead just say `progressMod.foo` */
+  override def _to: FC[ProgressProps] = default
 }

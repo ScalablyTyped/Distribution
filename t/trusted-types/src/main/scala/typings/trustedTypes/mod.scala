@@ -1,220 +1,155 @@
 package typings.trustedTypes
 
+import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Shortcut
-import typings.std.Extract
-import typings.std.NonNullable
-import typings.std.Parameters
-import typings.std.Pick
-import typings.trustedTypes.mod.global.TrustedTypePolicyFactory
-import typings.trustedTypes.mod.global.TrustedTypePolicyOptions
-import typings.trustedTypes.trustedTypesBooleans.`true`
-import typings.trustedTypes.trustedTypesStrings.createHTML
-import typings.trustedTypes.trustedTypesStrings.createScript
-import typings.trustedTypes.trustedTypesStrings.createScriptURL
-import typings.trustedTypes.trustedTypesStrings.name
+import typings.std.Window
+import typings.trustedTypes.libMod.TrustedTypePolicyOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
   
-  // This is not available in global scope. It's only used for the export. This is
-  // necessary to be able to use these types from nodejs (for SSR).
-  @JSImport("trusted-types", JSImport.Default)
+  // tslint:disable-next-line no-unnecessary-class
+  @JSImport("trusted-types", "TrustedTypeConfig")
   @js.native
-  val default: TrustedTypePolicyFactory = js.native
-  
-  object global {
-    
-    @JSGlobal("TrustedHTML")
-    @js.native
-    /* private */ class TrustedHTML () extends StObject {
-      
-      // To prevent instantiting with 'new'.
-      /* private */ var brand: `true` = js.native
-    }
-    
-    @JSGlobal("TrustedScript")
-    @js.native
-    /* private */ class TrustedScript () extends StObject {
-      
-      // To prevent instantiting with 'new'.
-      /* private */ var brand: `true` = js.native
-    }
-    
-    @JSGlobal("TrustedScriptURL")
-    @js.native
-    /* private */ class TrustedScriptURL () extends StObject {
-      
-      // To prevent instantiting with 'new'.
-      /* private */ var brand: `true` = js.native
-    }
-    
-    trait TrustedTypePolicy[Options /* <: TrustedTypePolicyOptions */] extends StObject {
-      
-      @JSName("createHTML")
-      def createHTML_createHTML(
-        /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Args<Options, 'createHTML'> is not an array type */ args: Args[Options, createHTML]
-      ): TrustedHTML
-      
-      @JSName("createScriptURL")
-      def createScriptURL_createScriptURL(
-        /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Args<Options, 'createScriptURL'> is not an array type */ args: Args[Options, createScriptURL]
-      ): TrustedScriptURL
-      
-      @JSName("createScript")
-      def createScript_createScript(
-        /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Args<Options, 'createScript'> is not an array type */ args: Args[Options, createScript]
-      ): TrustedScript
-      
-      val name: String
-    }
-    object TrustedTypePolicy {
-      
-      inline def apply[Options /* <: TrustedTypePolicyOptions */](
-        createHTML: Args[Options, createHTML] => TrustedHTML,
-        createScript: Args[Options, createScript] => TrustedScript,
-        createScriptURL: Args[Options, createScriptURL] => TrustedScriptURL,
-        name: String
-      ): TrustedTypePolicy[Options] = {
-        val __obj = js.Dynamic.literal(createHTML = js.Any.fromFunction1(createHTML), createScript = js.Any.fromFunction1(createScript), createScriptURL = js.Any.fromFunction1(createScriptURL), name = name.asInstanceOf[js.Any])
-        __obj.asInstanceOf[TrustedTypePolicy[Options]]
-      }
-      
-      extension [Self <: TrustedTypePolicy[?], Options /* <: TrustedTypePolicyOptions */](x: Self & TrustedTypePolicy[Options]) {
-        
-        inline def setCreateHTML(value: Args[Options, createHTML] => TrustedHTML): Self = StObject.set(x, "createHTML", js.Any.fromFunction1(value))
-        
-        inline def setCreateScript(value: Args[Options, createScript] => TrustedScript): Self = StObject.set(x, "createScript", js.Any.fromFunction1(value))
-        
-        inline def setCreateScriptURL(value: Args[Options, createScriptURL] => TrustedScriptURL): Self = StObject.set(x, "createScriptURL", js.Any.fromFunction1(value))
-        
-        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      }
-    }
-    
-    @js.native
-    trait TrustedTypePolicyFactory extends StObject {
-      
-      def createPolicy[Options /* <: TrustedTypePolicyOptions */](policyName: String): Pick[TrustedTypePolicy[Options], name | (Extract[/* keyof Options */ String, FnNames])] = js.native
-      def createPolicy[Options /* <: TrustedTypePolicyOptions */](policyName: String, policyOptions: Options): Pick[TrustedTypePolicy[Options], name | (Extract[/* keyof Options */ String, FnNames])] = js.native
-      
-      val defaultPolicy: TrustedTypePolicy[TrustedTypePolicyOptions] | Null = js.native
-      
-      val emptyHTML: TrustedHTML = js.native
-      
-      val emptyScript: TrustedScript = js.native
-      
-      def getAttributeType(tagName: String, attribute: String): String | Null = js.native
-      def getAttributeType(tagName: String, attribute: String, elementNs: String): String | Null = js.native
-      def getAttributeType(tagName: String, attribute: String, elementNs: String, attrNs: String): String | Null = js.native
-      def getAttributeType(tagName: String, attribute: String, elementNs: Unit, attrNs: String): String | Null = js.native
-      
-      def getPropertyType(tagName: String, property: String): String | Null = js.native
-      def getPropertyType(tagName: String, property: String, elementNs: String): String | Null = js.native
-      
-      def isHTML(value: js.Any): /* is trusted-types.trusted-types.<global>.TrustedHTML */ Boolean = js.native
-      
-      def isScript(value: js.Any): /* is trusted-types.trusted-types.<global>.TrustedScript */ Boolean = js.native
-      
-      def isScriptURL(value: js.Any): /* is trusted-types.trusted-types.<global>.TrustedScriptURL */ Boolean = js.native
-    }
-    
-    trait TrustedTypePolicyOptions extends StObject {
-      
-      var createHTML: js.UndefOr[js.Function2[/* input */ String, /* repeated */ js.Any, String]] = js.undefined
-      
-      var createScript: js.UndefOr[js.Function2[/* input */ String, /* repeated */ js.Any, String]] = js.undefined
-      
-      var createScriptURL: js.UndefOr[js.Function2[/* input */ String, /* repeated */ js.Any, String]] = js.undefined
-    }
-    object TrustedTypePolicyOptions {
-      
-      inline def apply(): TrustedTypePolicyOptions = {
-        val __obj = js.Dynamic.literal()
-        __obj.asInstanceOf[TrustedTypePolicyOptions]
-      }
-      
-      extension [Self <: TrustedTypePolicyOptions](x: Self) {
-        
-        inline def setCreateHTML(value: (/* input */ String, /* repeated */ js.Any) => String): Self = StObject.set(x, "createHTML", js.Any.fromFunction2(value))
-        
-        inline def setCreateHTMLUndefined: Self = StObject.set(x, "createHTML", js.undefined)
-        
-        inline def setCreateScript(value: (/* input */ String, /* repeated */ js.Any) => String): Self = StObject.set(x, "createScript", js.Any.fromFunction2(value))
-        
-        inline def setCreateScriptURL(value: (/* input */ String, /* repeated */ js.Any) => String): Self = StObject.set(x, "createScriptURL", js.Any.fromFunction2(value))
-        
-        inline def setCreateScriptURLUndefined: Self = StObject.set(x, "createScriptURL", js.undefined)
-        
-        inline def setCreateScriptUndefined: Self = StObject.set(x, "createScript", js.undefined)
-      }
-    }
-    
-    trait Window extends StObject {
-      
-      var TrustedHTML: typings.trustedTypes.mod.global.TrustedHTML
-      
-      var TrustedScript: typings.trustedTypes.mod.global.TrustedScript
-      
-      var TrustedScriptURL: typings.trustedTypes.mod.global.TrustedScriptURL
-      
-      var TrustedTypePolicy: typings.trustedTypes.mod.global.TrustedTypePolicy[TrustedTypePolicyOptions]
-      
-      var TrustedTypePolicyFactory: typings.trustedTypes.mod.global.TrustedTypePolicyFactory
-      
-      // `trustedTypes` is left intentionally optional to make sure that
-      // people handle the case when their code is running in a browser not
-      // supporting trustedTypes.
-      var trustedTypes: js.UndefOr[TrustedTypePolicyFactory] = js.undefined
-    }
-    object Window {
-      
-      inline def apply(
-        TrustedHTML: TrustedHTML,
-        TrustedScript: TrustedScript,
-        TrustedScriptURL: TrustedScriptURL,
-        TrustedTypePolicy: TrustedTypePolicy[TrustedTypePolicyOptions],
-        TrustedTypePolicyFactory: TrustedTypePolicyFactory
-      ): Window = {
-        val __obj = js.Dynamic.literal(TrustedHTML = TrustedHTML.asInstanceOf[js.Any], TrustedScript = TrustedScript.asInstanceOf[js.Any], TrustedScriptURL = TrustedScriptURL.asInstanceOf[js.Any], TrustedTypePolicy = TrustedTypePolicy.asInstanceOf[js.Any], TrustedTypePolicyFactory = TrustedTypePolicyFactory.asInstanceOf[js.Any])
-        __obj.asInstanceOf[Window]
-      }
-      
-      extension [Self <: Window](x: Self) {
-        
-        inline def setTrustedHTML(value: TrustedHTML): Self = StObject.set(x, "TrustedHTML", value.asInstanceOf[js.Any])
-        
-        inline def setTrustedScript(value: TrustedScript): Self = StObject.set(x, "TrustedScript", value.asInstanceOf[js.Any])
-        
-        inline def setTrustedScriptURL(value: TrustedScriptURL): Self = StObject.set(x, "TrustedScriptURL", value.asInstanceOf[js.Any])
-        
-        inline def setTrustedTypePolicy(value: TrustedTypePolicy[TrustedTypePolicyOptions]): Self = StObject.set(x, "TrustedTypePolicy", value.asInstanceOf[js.Any])
-        
-        inline def setTrustedTypePolicyFactory(value: TrustedTypePolicyFactory): Self = StObject.set(x, "TrustedTypePolicyFactory", value.asInstanceOf[js.Any])
-        
-        inline def setTrustedTypes(value: TrustedTypePolicyFactory): Self = StObject.set(x, "trustedTypes", value.asInstanceOf[js.Any])
-        
-        inline def setTrustedTypesUndefined: Self = StObject.set(x, "trustedTypes", js.undefined)
-      }
-    }
+  open class TrustedTypeConfig protected () extends StObject {
+    def this(
+      isLoggingEnabled: Boolean,
+      isEnforcementEnabled: Boolean,
+      allowedPolicyNames: js.Array[String],
+      allowDuplicates: Boolean
+    ) = this()
+    def this(
+      isLoggingEnabled: Boolean,
+      isEnforcementEnabled: Boolean,
+      allowedPolicyNames: js.Array[String],
+      allowDuplicates: Boolean,
+      cspString: String
+    ) = this()
+    def this(
+      isLoggingEnabled: Boolean,
+      isEnforcementEnabled: Boolean,
+      allowedPolicyNames: js.Array[String],
+      allowDuplicates: Boolean,
+      cspString: String,
+      windowObject: Window
+    ) = this()
+    def this(
+      isLoggingEnabled: Boolean,
+      isEnforcementEnabled: Boolean,
+      allowedPolicyNames: js.Array[String],
+      allowDuplicates: Boolean,
+      cspString: Null,
+      windowObject: Window
+    ) = this()
+    def this(
+      isLoggingEnabled: Boolean,
+      isEnforcementEnabled: Boolean,
+      allowedPolicyNames: js.Array[String],
+      allowDuplicates: Boolean,
+      cspString: Unit,
+      windowObject: Window
+    ) = this()
   }
   
-  type Args[Options /* <: TrustedTypePolicyOptions */, K /* <: FnNames */] = Parameters[
-    NonNullable[
-      /* import warning: importer.ImportType#apply Failed type conversion: Options[K] */ js.Any
-    ]
-  ]
+  /* was `typeof lib.TrustedTypePolicy` */
+  @JSImport("trusted-types", "TrustedTypePolicy")
+  @js.native
+  abstract class TrustedTypePolicy[Options /* <: TrustedTypePolicyOptions */] ()
+    extends typings.trustedTypes.mod.global.TrustedTypePolicy[Options]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.trustedTypes.trustedTypesStrings.createHTML
-    - typings.trustedTypes.trustedTypesStrings.createScript
-    - typings.trustedTypes.trustedTypesStrings.createScriptURL
-  */
-  trait FnNames extends StObject
+  /* was `typeof lib.TrustedTypePolicyFactory` */
+  @JSImport("trusted-types", "TrustedTypePolicyFactory")
+  @js.native
+  abstract class TrustedTypePolicyFactory ()
+    extends typings.trustedTypes.mod.global.TrustedTypePolicyFactory
   
-  type _To = TrustedTypePolicyFactory
+  @JSImport("trusted-types", "TrustedTypesEnforcer")
+  @js.native
+  open class TrustedTypesEnforcer protected () extends StObject {
+    def this(config: TrustedTypeConfig) = this()
+    
+    def install(): Unit = js.native
+    
+    def uninstall(): Unit = js.native
+  }
   
-  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
-  override def _to: TrustedTypePolicyFactory = default
+  // Re-export the type definitions globally.
+  object global {
+    
+    /* was `typeof lib.TrustedHTML` */
+    @JSGlobal("TrustedHTML")
+    @js.native
+    /* private */ open class TrustedHTML ()
+      extends typings.trustedTypes.libMod.TrustedHTML
+    
+    /* was `typeof lib.TrustedScript` */
+    @JSGlobal("TrustedScript")
+    @js.native
+    /* private */ open class TrustedScript ()
+      extends typings.trustedTypes.libMod.TrustedScript
+    
+    /* was `typeof lib.TrustedScriptURL` */
+    @JSGlobal("TrustedScriptURL")
+    @js.native
+    /* private */ open class TrustedScriptURL ()
+      extends typings.trustedTypes.libMod.TrustedScriptURL
+    
+    /* was `typeof lib.TrustedTypePolicy` */
+    @JSGlobal("TrustedTypePolicy")
+    @js.native
+    abstract class TrustedTypePolicy[Options /* <: typings.trustedTypes.libMod.TrustedTypePolicyOptions */] ()
+      extends typings.trustedTypes.libMod.TrustedTypePolicy[Options]
+    
+    /* was `typeof lib.TrustedTypePolicyFactory` */
+    @JSGlobal("TrustedTypePolicyFactory")
+    @js.native
+    abstract class TrustedTypePolicyFactory ()
+      extends typings.trustedTypes.libMod.TrustedTypePolicyFactory
+    
+    type TrustedTypePolicyOptions = typings.trustedTypes.libMod.TrustedTypePolicyOptions
+  }
+  
+  object trustedTypes extends Shortcut {
+    
+    @JSImport("trusted-types", "trustedTypes")
+    @js.native
+    val ^ : InternalTrustedTypePolicyFactory = js.native
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("trusted-types", "trustedTypes.TrustedHTML")
+    @js.native
+    open class TrustedHTML ()
+      extends typings.trustedTypes.libMod.TrustedHTML
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("trusted-types", "trustedTypes.TrustedScript")
+    @js.native
+    open class TrustedScript ()
+      extends typings.trustedTypes.libMod.TrustedScript
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("trusted-types", "trustedTypes.TrustedScriptURL")
+    @js.native
+    open class TrustedScriptURL ()
+      extends typings.trustedTypes.libMod.TrustedScriptURL
+    
+    type _To = InternalTrustedTypePolicyFactory
+    
+    /* This means you don't have to write `^`, but can instead just say `trustedTypes.foo` */
+    override def _to: InternalTrustedTypePolicyFactory = ^
+  }
+  
+  // These are the available exports when using the polyfill as npm package (e.g. in nodejs)
+  @js.native
+  trait InternalTrustedTypePolicyFactory
+    extends typings.trustedTypes.libMod.TrustedTypePolicyFactory {
+    
+    var TrustedHTML: Instantiable0[typings.trustedTypes.libMod.TrustedHTML] = js.native
+    
+    var TrustedScript: Instantiable0[typings.trustedTypes.libMod.TrustedScript] = js.native
+    
+    var TrustedScriptURL: Instantiable0[typings.trustedTypes.libMod.TrustedScriptURL] = js.native
+  }
 }

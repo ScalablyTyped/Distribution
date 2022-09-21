@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "SubscriptionEventSubscriptionEventType")
 @js.native
-class SubscriptionEventSubscriptionEventType () extends StObject
+open class SubscriptionEventSubscriptionEventType () extends StObject

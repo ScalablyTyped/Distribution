@@ -88,7 +88,7 @@ object WorkItem {
     
     inline def setPackagesUndefined: Self = StObject.set(x, "packages", js.undefined)
     
-    inline def setPackagesVarargs(value: Package*): Self = StObject.set(x, "packages", js.Array(value :_*))
+    inline def setPackagesVarargs(value: Package*): Self = StObject.set(x, "packages", js.Array(value*))
     
     inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     

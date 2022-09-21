@@ -47,7 +47,7 @@ object Buildings {
       
       inline def setPath(value: js.Array[LocationValue]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      inline def setPathVarargs(value: LocationValue*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: LocationValue*): Self = StObject.set(x, "path", js.Array(value*))
       
       inline def setRejectTexture(value: Boolean): Self = StObject.set(x, "rejectTexture", value.asInstanceOf[js.Any])
       
@@ -149,7 +149,7 @@ object Buildings {
       
       inline def setAreas(value: js.Array[AreaStyle]): Self = StObject.set(x, "areas", value.asInstanceOf[js.Any])
       
-      inline def setAreasVarargs(value: AreaStyle*): Self = StObject.set(x, "areas", js.Array(value :_*))
+      inline def setAreasVarargs(value: AreaStyle*): Self = StObject.set(x, "areas", js.Array(value*))
       
       inline def setHideWithoutStyle(value: Boolean): Self = StObject.set(x, "hideWithoutStyle", value.asInstanceOf[js.Any])
       

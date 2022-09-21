@@ -10,10 +10,10 @@ The fastest in-browser base64 library
 | ------------------ | :-------------: |
 | Full name          | fast64 |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 9274 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1283.6666666666667 |
+| # stars            | 75.0 |
 
 ## Links
 - [Homepage](https://github.com/ConradIrwin/fast64#readme)

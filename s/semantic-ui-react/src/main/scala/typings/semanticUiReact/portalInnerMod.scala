@@ -12,15 +12,15 @@ object portalInnerMod {
   
   @JSImport("semantic-ui-react/dist/commonjs/addons/Portal/PortalInner", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[PortalInnerProps, js.Object, js.Any]
+  open class default ()
+    extends Component[PortalInnerProps, js.Object, Any]
   
-  type PortalInner = Component[PortalInnerProps, js.Object, js.Any]
+  type PortalInner = Component[PortalInnerProps, js.Object, Any]
   
   trait PortalInnerProps
     extends StObject
        with StrictPortalInnerProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object PortalInnerProps {
     
     inline def apply(): PortalInnerProps = {
@@ -35,10 +35,10 @@ object portalInnerMod {
     var children: ReactNode
     
     /** Called with a ref to the inner node. */
-    var innerRef: js.UndefOr[Ref[js.Any]] = js.undefined
+    var innerRef: js.UndefOr[Ref[Any]] = js.undefined
     
     /** The node where the portal should mount. */
-    var mountNode: js.UndefOr[js.Any] = js.undefined
+    var mountNode: js.UndefOr[Any] = js.undefined
     
     /**
       * Called when the PortalInner is mounted on the DOM.
@@ -69,15 +69,15 @@ object portalInnerMod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setInnerRef(value: Ref[js.Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      inline def setInnerRef(value: Ref[Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
-      inline def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      inline def setInnerRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
       inline def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
       
       inline def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
       
-      inline def setMountNode(value: js.Any): Self = StObject.set(x, "mountNode", value.asInstanceOf[js.Any])
+      inline def setMountNode(value: Any): Self = StObject.set(x, "mountNode", value.asInstanceOf[js.Any])
       
       inline def setMountNodeUndefined: Self = StObject.set(x, "mountNode", js.undefined)
       

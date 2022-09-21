@@ -35,6 +35,6 @@ object AutomationNonInteractive {
     
     inline def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
     
-    inline def setMatchesVarargs(value: (String | UrlMatches)*): Self = StObject.set(x, "matches", js.Array(value :_*))
+    inline def setMatchesVarargs(value: (String | UrlMatches)*): Self = StObject.set(x, "matches", js.Array(value*))
   }
 }

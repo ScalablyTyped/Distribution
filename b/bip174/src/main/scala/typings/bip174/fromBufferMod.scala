@@ -4,7 +4,7 @@ import typings.bip174.interfacesMod.KeyValue
 import typings.bip174.interfacesMod.Transaction
 import typings.bip174.interfacesMod.TransactionFromBuffer
 import typings.bip174.parserMod.PsbtAttributes
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,15 +44,15 @@ object fromBufferMod {
       
       inline def setGlobalMapKeyVals(value: js.Array[KeyValue]): Self = StObject.set(x, "globalMapKeyVals", value.asInstanceOf[js.Any])
       
-      inline def setGlobalMapKeyValsVarargs(value: KeyValue*): Self = StObject.set(x, "globalMapKeyVals", js.Array(value :_*))
+      inline def setGlobalMapKeyValsVarargs(value: KeyValue*): Self = StObject.set(x, "globalMapKeyVals", js.Array(value*))
       
       inline def setInputKeyVals(value: js.Array[js.Array[KeyValue]]): Self = StObject.set(x, "inputKeyVals", value.asInstanceOf[js.Any])
       
-      inline def setInputKeyValsVarargs(value: js.Array[KeyValue]*): Self = StObject.set(x, "inputKeyVals", js.Array(value :_*))
+      inline def setInputKeyValsVarargs(value: js.Array[KeyValue]*): Self = StObject.set(x, "inputKeyVals", js.Array(value*))
       
       inline def setOutputKeyVals(value: js.Array[js.Array[KeyValue]]): Self = StObject.set(x, "outputKeyVals", value.asInstanceOf[js.Any])
       
-      inline def setOutputKeyValsVarargs(value: js.Array[KeyValue]*): Self = StObject.set(x, "outputKeyVals", js.Array(value :_*))
+      inline def setOutputKeyValsVarargs(value: js.Array[KeyValue]*): Self = StObject.set(x, "outputKeyVals", js.Array(value*))
     }
   }
 }

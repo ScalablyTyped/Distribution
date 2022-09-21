@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeAttackResponse extends StObject {
   
   /**
-    * The attack that is described.
+    * The attack that you requested. 
     */
   var Attack: js.UndefOr[AttackDetail] = js.undefined
 }

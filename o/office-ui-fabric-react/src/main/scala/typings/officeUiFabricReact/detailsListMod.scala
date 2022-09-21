@@ -3,13 +3,22 @@ package typings.officeUiFabricReact
 import typings.officeUiFabricReact.anon.CheckboxVisibility
 import typings.officeUiFabricReact.anon.CollapseAllVisibility
 import typings.officeUiFabricReact.anon.IsSelectedOnFocus
+import typings.officeUiFabricReact.anon.RequiredPickIShimmeredDet
 import typings.officeUiFabricReact.detailsColumnTypesMod.IDetailsColumnProps
+import typings.officeUiFabricReact.detailsColumnTypesMod.IDetailsColumnStyleProps
+import typings.officeUiFabricReact.detailsColumnTypesMod.IDetailsColumnStyles
 import typings.officeUiFabricReact.detailsHeaderTypesMod.IDetailsHeaderBaseProps
+import typings.officeUiFabricReact.detailsHeaderTypesMod.IDetailsHeaderStyleProps
+import typings.officeUiFabricReact.detailsHeaderTypesMod.IDetailsHeaderStyles
 import typings.officeUiFabricReact.detailsListBaseMod.IDetailsListState
 import typings.officeUiFabricReact.detailsListTypesMod.IColumn
 import typings.officeUiFabricReact.detailsListTypesMod.IDetailsListProps
+import typings.officeUiFabricReact.detailsListTypesMod.IDetailsListStyleProps
+import typings.officeUiFabricReact.detailsListTypesMod.IDetailsListStyles
 import typings.officeUiFabricReact.detailsRowBaseMod.IDetailsRowState
 import typings.officeUiFabricReact.detailsRowCheckTypesMod.IDetailsRowCheckProps
+import typings.officeUiFabricReact.detailsRowCheckTypesMod.IDetailsRowCheckStyleProps
+import typings.officeUiFabricReact.detailsRowCheckTypesMod.IDetailsRowCheckStyles
 import typings.officeUiFabricReact.detailsRowFieldsTypesMod.IDetailsRowFieldsProps
 import typings.officeUiFabricReact.detailsRowTypesMod.ICellStyleProps
 import typings.officeUiFabricReact.detailsRowTypesMod.IDetailsRowBaseProps
@@ -17,6 +26,7 @@ import typings.officeUiFabricReact.detailsRowTypesMod.IDetailsRowStyleProps
 import typings.officeUiFabricReact.detailsRowTypesMod.IDetailsRowStyles
 import typings.officeUiFabricReact.selectionZoneMod.ISelectionZoneProps
 import typings.officeUiFabricReact.selectionZoneMod.ISelectionZoneState
+import typings.officeUiFabricReact.shimmeredDetailsListTypesMod.IShimmeredDetailsListStyles
 import typings.react.mod.FunctionComponent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
@@ -120,9 +130,13 @@ object detailsListMod {
     inline def rowHeight_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rowHeight")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("office-ui-fabric-react/lib/components/DetailsList", "DetailsColumn")
+  @js.native
+  val DetailsColumn: FunctionComponent[IDetailsColumnProps] = js.native
+  
   @JSImport("office-ui-fabric-react/lib/components/DetailsList", "DetailsColumnBase")
   @js.native
-  class DetailsColumnBase protected ()
+  open class DetailsColumnBase protected ()
     extends typings.officeUiFabricReact.detailsColumnBaseMod.DetailsColumnBase {
     def this(props: IDetailsColumnProps) = this()
   }
@@ -133,7 +147,7 @@ object detailsListMod {
   
   @JSImport("office-ui-fabric-react/lib/components/DetailsList", "DetailsHeaderBase")
   @js.native
-  class DetailsHeaderBase protected ()
+  open class DetailsHeaderBase protected ()
     extends typings.officeUiFabricReact.detailsHeaderBaseMod.DetailsHeaderBase {
     def this(props: IDetailsHeaderBaseProps) = this()
   }
@@ -156,7 +170,7 @@ object detailsListMod {
   
   @JSImport("office-ui-fabric-react/lib/components/DetailsList", "DetailsListBase")
   @js.native
-  class DetailsListBase protected ()
+  open class DetailsListBase protected ()
     extends typings.officeUiFabricReact.detailsListBaseMod.DetailsListBase {
     def this(props: IDetailsListProps) = this()
   }
@@ -193,7 +207,7 @@ object detailsListMod {
   
   @JSImport("office-ui-fabric-react/lib/components/DetailsList", "DetailsRowBase")
   @js.native
-  class DetailsRowBase protected ()
+  open class DetailsRowBase protected ()
     extends typings.officeUiFabricReact.detailsRowBaseMod.DetailsRowBase {
     def this(props: IDetailsRowBaseProps) = this()
   }
@@ -308,14 +322,14 @@ object detailsListMod {
   
   @JSImport("office-ui-fabric-react/lib/components/DetailsList", "Selection")
   @js.native
-  class Selection[TItem] protected ()
+  open class Selection[TItem] protected ()
     extends typings.officeUiFabricReact.selectionMod.Selection[TItem] {
     /**
       * Create a new Selection. If `TItem` does not have a `key` property, you must provide an options
       * object with a `getKey` implementation. Providing options is optional otherwise.
       * (At most one `options` object is accepted.)
       */
-    def this(/* import warning: parser.TsParser#functionParam Dropping repeated marker of param options because its type TItem extends IObjectWithKey ? [] | [ISelectionOptions<TItem>] : [ISelectionOptionsWithRequiredGetKey<TItem>] is not an array type */ options: js.Array[js.Any | ISelectionOptions[TItem] | ISelectionOptionsWithRequiredGetKey[TItem]]) = this()
+    def this(/* import warning: parser.TsParser#functionParam Dropping repeated marker of param options because its type TItem extends IObjectWithKey ? [] | [ISelectionOptions<TItem>] : [ISelectionOptionsWithRequiredGetKey<TItem>] is not an array type */ options: js.Array[Any | ISelectionOptions[TItem] | ISelectionOptionsWithRequiredGetKey[TItem]]) = this()
   }
   
   @JSImport("office-ui-fabric-react/lib/components/DetailsList", "SelectionDirection")
@@ -346,7 +360,7 @@ object detailsListMod {
   
   @JSImport("office-ui-fabric-react/lib/components/DetailsList", "SelectionZone")
   @js.native
-  class SelectionZone protected ()
+  open class SelectionZone protected ()
     extends typings.officeUiFabricReact.selectionMod.SelectionZone {
     def this(props: ISelectionZoneProps) = this()
   }
@@ -366,7 +380,7 @@ object detailsListMod {
   }
   
   inline def buildColumns(
-    items: js.Array[js.Any],
+    items: js.Array[Any],
     canResizeColumns: js.UndefOr[Boolean],
     onColumnClick: js.UndefOr[
       js.Function2[/* ev */ MouseEvent[HTMLElement, NativeMouseEvent], /* column */ IColumn, Unit]
@@ -377,5 +391,15 @@ object detailsListMod {
     isMultiline: js.UndefOr[Boolean]
   ): js.Array[IColumn] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildColumns")(items.asInstanceOf[js.Any], canResizeColumns.asInstanceOf[js.Any], onColumnClick.asInstanceOf[js.Any], sortedColumnKey.asInstanceOf[js.Any], isSortedDescending.asInstanceOf[js.Any], groupedColumnKey.asInstanceOf[js.Any], isMultiline.asInstanceOf[js.Any])).asInstanceOf[js.Array[IColumn]]
   
+  inline def getDetailsColumnStyles(props: IDetailsColumnStyleProps): IDetailsColumnStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getDetailsColumnStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IDetailsColumnStyles]
+  
+  inline def getDetailsHeaderStyles(props: IDetailsHeaderStyleProps): IDetailsHeaderStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getDetailsHeaderStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IDetailsHeaderStyles]
+  
+  inline def getDetailsListStyles(props: IDetailsListStyleProps): IDetailsListStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getDetailsListStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IDetailsListStyles]
+  
+  inline def getDetailsRowCheckStyles(props: IDetailsRowCheckStyleProps): IDetailsRowCheckStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getDetailsRowCheckStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IDetailsRowCheckStyles]
+  
   inline def getDetailsRowStyles(props: IDetailsRowStyleProps): IDetailsRowStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getDetailsRowStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IDetailsRowStyles]
+  
+  inline def getShimmeredDetailsListStyles(props: RequiredPickIShimmeredDet): IShimmeredDetailsListStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getShimmeredDetailsListStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IShimmeredDetailsListStyles]
 }

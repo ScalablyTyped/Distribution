@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DashLength extends StObject {
   
-  var color: js.UndefOr[typings.cesium.mod.Color] = js.undefined
+  var color: js.UndefOr[Property | typings.cesium.mod.Color] = js.undefined
   
-  var dashLength: js.UndefOr[Property] = js.undefined
+  var dashLength: js.UndefOr[Property | Double] = js.undefined
   
-  var dashPattern: js.UndefOr[Property] = js.undefined
+  var dashPattern: js.UndefOr[Property | Double] = js.undefined
   
-  var gapColor: js.UndefOr[typings.cesium.mod.Color] = js.undefined
+  var gapColor: js.UndefOr[Property | typings.cesium.mod.Color] = js.undefined
 }
 object DashLength {
   
@@ -24,19 +24,19 @@ object DashLength {
   
   extension [Self <: DashLength](x: Self) {
     
-    inline def setColor(value: typings.cesium.mod.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Property | typings.cesium.mod.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setDashLength(value: Property): Self = StObject.set(x, "dashLength", value.asInstanceOf[js.Any])
+    inline def setDashLength(value: Property | Double): Self = StObject.set(x, "dashLength", value.asInstanceOf[js.Any])
     
     inline def setDashLengthUndefined: Self = StObject.set(x, "dashLength", js.undefined)
     
-    inline def setDashPattern(value: Property): Self = StObject.set(x, "dashPattern", value.asInstanceOf[js.Any])
+    inline def setDashPattern(value: Property | Double): Self = StObject.set(x, "dashPattern", value.asInstanceOf[js.Any])
     
     inline def setDashPatternUndefined: Self = StObject.set(x, "dashPattern", js.undefined)
     
-    inline def setGapColor(value: typings.cesium.mod.Color): Self = StObject.set(x, "gapColor", value.asInstanceOf[js.Any])
+    inline def setGapColor(value: Property | typings.cesium.mod.Color): Self = StObject.set(x, "gapColor", value.asInstanceOf[js.Any])
     
     inline def setGapColorUndefined: Self = StObject.set(x, "gapColor", js.undefined)
   }

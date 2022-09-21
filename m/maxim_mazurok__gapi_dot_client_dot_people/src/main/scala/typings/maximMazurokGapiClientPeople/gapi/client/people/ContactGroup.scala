@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ContactGroup extends StObject {
   
+  /** The group's client data. */
+  var clientData: js.UndefOr[js.Array[GroupClientData]] = js.undefined
+  
   /** The [HTTP entity tag](https://en.wikipedia.org/wiki/HTTP_ETag) of the resource. Used for web cache validation. */
   var etag: js.UndefOr[String] = js.undefined
   
@@ -22,15 +25,19 @@ trait ContactGroup extends StObject {
   var memberCount: js.UndefOr[Double] = js.undefined
   
   /**
-    * Output only. The list of contact person resource names that are members of the contact group. The field is not populated for LIST requests and can only be updated through the
-    * [ModifyContactGroupMembers](/people/api/rest/v1/contactgroups/members/modify).
+    * Output only. The list of contact person resource names that are members of the contact group. The field is only populated for GET requests and will only return as many members as
+    * `maxMembers` in the get request.
     */
   var memberResourceNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Output only. Metadata about the contact group. */
   var metadata: js.UndefOr[ContactGroupMetadata] = js.undefined
   
-  /** The contact group name set by the group owner or a system provided name for system groups. */
+  /**
+    * The contact group name set by the group owner or a system provided name for system groups. For [`contactGroups.create`](/people/api/rest/v1/contactGroups/create) or
+    * [`contactGroups.update`](/people/api/rest/v1/contactGroups/update) the name must be unique to the users contact groups. Attempting to create a group with a duplicate name will
+    * return a HTTP 409 error.
+    */
   var name: js.UndefOr[String] = js.undefined
   
   /** The resource name for the contact group, assigned by the server. An ASCII string, in the form of `contactGroups/{contact_group_id}`. */
@@ -44,6 +51,12 @@ object ContactGroup {
   }
   
   extension [Self <: ContactGroup](x: Self) {
+    
+    inline def setClientData(value: js.Array[GroupClientData]): Self = StObject.set(x, "clientData", value.asInstanceOf[js.Any])
+    
+    inline def setClientDataUndefined: Self = StObject.set(x, "clientData", js.undefined)
+    
+    inline def setClientDataVarargs(value: GroupClientData*): Self = StObject.set(x, "clientData", js.Array(value*))
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
@@ -65,7 +78,7 @@ object ContactGroup {
     
     inline def setMemberResourceNamesUndefined: Self = StObject.set(x, "memberResourceNames", js.undefined)
     
-    inline def setMemberResourceNamesVarargs(value: String*): Self = StObject.set(x, "memberResourceNames", js.Array(value :_*))
+    inline def setMemberResourceNamesVarargs(value: String*): Self = StObject.set(x, "memberResourceNames", js.Array(value*))
     
     inline def setMetadata(value: ContactGroupMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     

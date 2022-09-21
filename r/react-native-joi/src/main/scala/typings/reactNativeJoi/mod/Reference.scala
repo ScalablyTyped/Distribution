@@ -9,7 +9,7 @@ trait Reference
   extends StObject
      with JoiObject {
   
-  def apply(value: js.Any, validationOptions: ValidationOptions): js.Any = js.native
+  def apply(value: Any, validationOptions: ValidationOptions): Any = js.native
   
   var isContext: Boolean = js.native
   

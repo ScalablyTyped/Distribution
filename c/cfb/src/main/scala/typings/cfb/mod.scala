@@ -8,8 +8,6 @@ import typings.cfb.cfbStrings.buffer
 import typings.cfb.cfbStrings.file
 import typings.cfb.cfbStrings.mad
 import typings.cfb.cfbStrings.zip
-import typings.std.Date
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -106,11 +104,11 @@ object mod {
   @js.native
   val version: String = js.native
   
-  inline def write(cfb: CFBContainer): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(cfb.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def write(cfb: CFBContainer, options: CFBWritingOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(cfb.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def write(cfb: CFBContainer): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(cfb.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def write(cfb: CFBContainer, options: CFBWritingOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(cfb.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def writeFile(cfb: CFBContainer, filename: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(cfb.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def writeFile(cfb: CFBContainer, filename: String, options: CFBWritingOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(cfb.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def writeFile(cfb: CFBContainer, filename: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(cfb.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def writeFile(cfb: CFBContainer, filename: String, options: CFBWritingOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(cfb.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   trait CFBAddOpts extends StObject {
     
@@ -132,7 +130,7 @@ object mod {
     }
   }
   
-  type CFBBlob = js.Array[Double] | Uint8Array
+  type CFBBlob = js.Array[Double] | js.typedarray.Uint8Array
   
   trait CFBCommonOptions extends StObject {
     
@@ -183,11 +181,11 @@ object mod {
       
       inline def setFileIndex(value: js.Array[CFBEntry]): Self = StObject.set(x, "FileIndex", value.asInstanceOf[js.Any])
       
-      inline def setFileIndexVarargs(value: CFBEntry*): Self = StObject.set(x, "FileIndex", js.Array(value :_*))
+      inline def setFileIndexVarargs(value: CFBEntry*): Self = StObject.set(x, "FileIndex", js.Array(value*))
       
       inline def setFullPaths(value: js.Array[String]): Self = StObject.set(x, "FullPaths", value.asInstanceOf[js.Any])
       
-      inline def setFullPathsVarargs(value: String*): Self = StObject.set(x, "FullPaths", js.Array(value :_*))
+      inline def setFullPathsVarargs(value: String*): Self = StObject.set(x, "FullPaths", js.Array(value*))
       
       inline def setRaw(value: Header): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
@@ -207,13 +205,13 @@ object mod {
     var content: CFBBlob
     
     /** Creation Time */
-    var ct: js.UndefOr[Date] = js.undefined
+    var ct: js.UndefOr[js.Date] = js.undefined
     
     /** Content Type (used for MAD) */
     var ctype: js.UndefOr[String] = js.undefined
     
     /** Modification Time */
-    var mt: js.UndefOr[Date] = js.undefined
+    var mt: js.UndefOr[js.Date] = js.undefined
     
     /** Case-sensitive internal name */
     var name: String
@@ -258,9 +256,9 @@ object mod {
       
       inline def setContent(value: CFBBlob): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      inline def setContentVarargs(value: Double*): Self = StObject.set(x, "content", js.Array(value :_*))
+      inline def setContentVarargs(value: Double*): Self = StObject.set(x, "content", js.Array(value*))
       
-      inline def setCt(value: Date): Self = StObject.set(x, "ct", value.asInstanceOf[js.Any])
+      inline def setCt(value: js.Date): Self = StObject.set(x, "ct", value.asInstanceOf[js.Any])
       
       inline def setCtUndefined: Self = StObject.set(x, "ct", js.undefined)
       
@@ -268,7 +266,7 @@ object mod {
       
       inline def setCtypeUndefined: Self = StObject.set(x, "ctype", js.undefined)
       
-      inline def setMt(value: Date): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
+      inline def setMt(value: js.Date): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
       
       inline def setMtUndefined: Self = StObject.set(x, "mt", js.undefined)
       
@@ -322,10 +320,10 @@ object mod {
     def WarnField(hexstr: String): Unit = js.native
     def WarnField(hexstr: String, fld: String): Unit = js.native
     
-    def bconcat(bufs: js.Array[js.Any]): js.Any = js.native
+    def bconcat(bufs: js.Array[Any]): Any = js.native
     
-    def cfb_add(cfb: CFBContainer, name: String, content: js.Any): CFBEntry = js.native
-    def cfb_add(cfb: CFBContainer, name: String, content: js.Any, opts: CFBAddOpts): CFBEntry = js.native
+    def cfb_add(cfb: CFBContainer, name: String, content: Any): CFBEntry = js.native
+    def cfb_add(cfb: CFBContainer, name: String, content: Any, opts: CFBAddOpts): CFBEntry = js.native
     
     def cfb_del(cfb: CFBContainer, name: String): Boolean = js.native
     
@@ -334,10 +332,10 @@ object mod {
     def cfb_mov(cfb: CFBContainer, old_name: String, new_name: String): Boolean = js.native
     
     def cfb_new(): CFBContainer = js.native
-    def cfb_new(opts: js.Any): CFBContainer = js.native
+    def cfb_new(opts: Any): CFBContainer = js.native
     
-    def prep_blob(blob: js.Any): CFBBlob = js.native
-    def prep_blob(blob: js.Any, pos: Double): CFBBlob = js.native
+    def prep_blob(blob: Any): CFBBlob = js.native
+    def prep_blob(blob: Any, pos: Double): CFBBlob = js.native
   }
   
   trait CFBWritingOptions

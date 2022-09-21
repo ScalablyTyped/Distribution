@@ -6,7 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tabris", "TextResources")
 @js.native
-class TextResources protected () extends Resources[String, String] {
+open class TextResources protected () extends Resources[String, String] {
+  /**
+    * This is the base class for all text resource dictionaries. Instances can be obtained via the `from`
+    * method, or by subclassing. All members of a `TextResources` (or subclass) instance will be of the
+    * type `string`.
+    */
   /* protected */ def this(options: ResourcesConstructorOptions[String, String]) = this()
 }
 /* static members */
@@ -18,11 +23,9 @@ object TextResources {
   
   /**
     * Creates a texts dictionary from the given raw "data" object. The format must match the [Tabris.js
-    * texts JSON
-    * schema](https://github.com/eclipsesource/tabris-js/blob/v${moduleversion}/schema/texts.json). Entries
-    * in the "data" object starting with "$" are considered configuration options and will not become
-    * entries in the final texts dictionary.
-    * @param data The raw data (plain object) to create the dictionary from. The format must match the [Tabris.js texts JSON schema](https://github.com/eclipsesource/tabris-js/blob/v${moduleversion}/schema/texts.json).
+    * texts JSON schema](${doc:texts.json}). Entries in the "data" object starting with "$" are considered
+    * configuration options and will not become entries in the final texts dictionary.
+    * @param data The raw data (plain object) to create the dictionary from. The format must match the [Tabris.js texts JSON schema](${doc:texts.json}).
     */
   inline def from[Data /* <: ResourceDataWithConfig[String] */](data: Data): NamedResources[String, /* keyof Data */ String] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(data.asInstanceOf[js.Any]).asInstanceOf[NamedResources[String, /* keyof Data */ String]]
   /**
@@ -31,7 +34,7 @@ object TextResources {
     * Entries in the "data" object starting with "$" are considered configuration options and will not
     * become entries in the final texts dictionary.
     * @param base A plain object or another `TextResources` instance containing values to inherit by the new `TextResources` dictionary.
-    * @param data The raw data (plain object) to create the dictionary from. The format must match the [Tabris.js texts JSON schema](https://github.com/eclipsesource/tabris-js/blob/v${moduleversion}/schema/texts.json).
+    * @param data The raw data (plain object) to create the dictionary from. The format must match the [Tabris.js texts JSON schema](${doc:texts.json}).
     */
   inline def from[Base /* <: NamedResources[String, /* keyof Base */ String] */, Data /* <: ResourceDataWithConfig[String] */](base: Base, data: Data): NamedResources[String, /* keyof Base & Data */ String] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(base.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[NamedResources[String, /* keyof Base & Data */ String]]
 }

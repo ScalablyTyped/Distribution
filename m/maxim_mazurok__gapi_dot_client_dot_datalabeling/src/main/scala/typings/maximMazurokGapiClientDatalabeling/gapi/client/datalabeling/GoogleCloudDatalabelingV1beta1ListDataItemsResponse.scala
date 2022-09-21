@@ -25,7 +25,7 @@ object GoogleCloudDatalabelingV1beta1ListDataItemsResponse {
     
     inline def setDataItemsUndefined: Self = StObject.set(x, "dataItems", js.undefined)
     
-    inline def setDataItemsVarargs(value: GoogleCloudDatalabelingV1beta1DataItem*): Self = StObject.set(x, "dataItems", js.Array(value :_*))
+    inline def setDataItemsVarargs(value: GoogleCloudDatalabelingV1beta1DataItem*): Self = StObject.set(x, "dataItems", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

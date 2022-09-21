@@ -36,7 +36,7 @@ object XStyleLoader {
     acquire: () => Unit,
     getStyleLoaderOptions: () => SafeArray[PropertyValue],
     loadStylesFromURL: (String, SeqEquiv[PropertyValue]) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XStyleLoader = {
     val __obj = js.Dynamic.literal(StyleLoaderOptions = StyleLoaderOptions.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getStyleLoaderOptions = js.Any.fromFunction0(getStyleLoaderOptions), loadStylesFromURL = js.Any.fromFunction2(loadStylesFromURL), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

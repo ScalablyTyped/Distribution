@@ -33,6 +33,6 @@ object DescribeReplicationSubnetGroupsResponse {
     
     inline def setReplicationSubnetGroupsUndefined: Self = StObject.set(x, "ReplicationSubnetGroups", js.undefined)
     
-    inline def setReplicationSubnetGroupsVarargs(value: ReplicationSubnetGroup*): Self = StObject.set(x, "ReplicationSubnetGroups", js.Array(value :_*))
+    inline def setReplicationSubnetGroupsVarargs(value: ReplicationSubnetGroup*): Self = StObject.set(x, "ReplicationSubnetGroups", js.Array(value*))
   }
 }

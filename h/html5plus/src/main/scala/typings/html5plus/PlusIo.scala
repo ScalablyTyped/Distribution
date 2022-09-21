@@ -190,16 +190,16 @@ trait PlusIo extends StObject {
   def requestFileSystem(
     `type`: Double,
     succesCB: js.Function1[/* result */ PlusIoFileSystem, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def requestFileSystem(`type`: Double, succesCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def requestFileSystem(`type`: Double, succesCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def requestFileSystem(`type`: Unit, succesCB: js.Function1[/* result */ PlusIoFileSystem, Unit]): Unit = js.native
   def requestFileSystem(
     `type`: Unit,
     succesCB: js.Function1[/* result */ PlusIoFileSystem, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def requestFileSystem(`type`: Unit, succesCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def requestFileSystem(`type`: Unit, succesCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   
   /**
     * 通过URL参数获取目录对象或文件对象
@@ -215,14 +215,14 @@ trait PlusIo extends StObject {
   def resolveLocalFileSystemURL(
     url: String,
     succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def resolveLocalFileSystemURL(url: String, succesCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def resolveLocalFileSystemURL(url: String, succesCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def resolveLocalFileSystemURL(url: Unit, succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit]): Unit = js.native
   def resolveLocalFileSystemURL(
     url: Unit,
     succesCB: js.Function1[/* result */ PlusIoDirectoryEntry, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def resolveLocalFileSystemURL(url: Unit, succesCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def resolveLocalFileSystemURL(url: Unit, succesCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
 }

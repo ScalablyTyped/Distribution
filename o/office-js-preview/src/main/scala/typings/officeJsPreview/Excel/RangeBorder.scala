@@ -31,9 +31,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the border of an object.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @js.native
@@ -42,9 +42,9 @@ trait RangeBorder
      with ClientObject {
   
   /**
+    * HTML color code representing the color of the border line, in the form #RRGGBB (e.g., "FFA500"), or as a named HTML color (e.g., "orange").
     *
-    * HTML color code representing the color of the border line, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var color: String = js.native
@@ -64,14 +64,8 @@ trait RangeBorder
   def load(propertyNames: String): RangeBorder = js.native
   def load(propertyNames: js.Array[String]): RangeBorder = js.native
   
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.RangeBorder): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */
@@ -81,26 +75,26 @@ trait RangeBorder
   def set(properties: RangeBorder): Unit = js.native
   
   /**
+    * Constant value that indicates the specific side of the border. See `Excel.BorderIndex` for details.
     *
-    * Constant value that indicates the specific side of the border. See Excel.BorderIndex for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   val sideIndex: BorderIndex | EdgeTop | EdgeBottom | EdgeLeft | EdgeRight | InsideVertical | InsideHorizontal | DiagonalDown | DiagonalUp = js.native
   
   /**
+    * One of the constants of line style specifying the line style for the border. See `Excel.BorderLineStyle` for details.
     *
-    * One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var style: BorderLineStyle | None | Continuous | Dash | DashDot | DashDotDot | Dot | Double | SlantDashDot = js.native
   
   /**
+    * Specifies a double that lightens or darkens a color for the range border, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+    A `null` value indicates that the border doesn't have a uniform `tintAndShade` setting.
     *
-    * Specifies a double that lightens or darkens a color for Range Border, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
-    A null value indicates that the border doesn't have uniform tintAndShade setting.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var tintAndShade: scala.Double = js.native
@@ -112,9 +106,9 @@ trait RangeBorder
   def toJSON(): RangeBorderData = js.native
   
   /**
+    * Specifies the weight of the border around a range. See `Excel.BorderWeight` for details.
     *
-    * Specifies the weight of the border around a range. See Excel.BorderWeight for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var weight: BorderWeight | Hairline | Thin | Medium | Thick = js.native

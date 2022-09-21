@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("MVCxClientGlobalEvents")
 @js.native
-class MVCxClientGlobalEvents ()
+open class MVCxClientGlobalEvents ()
   extends StObject
      with typings.devexpressWeb.MVCxClientGlobalEvents {
   

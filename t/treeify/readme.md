@@ -10,15 +10,12 @@ converts a JS object into a nice and readable tree structure for the console
 | ------------------ | :-------------: |
 | Full name          | treeify |
 | Keywords           | object, tree, print, console, pretty |
-| # releases         | 0 |
-| # dependents       | 147 |
-| # downloads        | 43168856 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4612911.666666667 |
+| # stars            | 203.0 |
 
 ## Links
-- [Homepage](https://github.com/notatestuser/treeify#readme)
-- [Bugs](https://github.com/notatestuser/treeify/issues)
-- [Repository](https://github.com/notatestuser/treeify)
 - [Npm](https://www.npmjs.com/package/treeify)
     
 

@@ -1,8 +1,8 @@
 package typings.googleapis.anon
 
-import typings.googleapis.v32Mod.dfareportingV32.SchemaDateRange
-import typings.googleapis.v32Mod.dfareportingV32.SchemaDimensionValue
-import typings.googleapis.v32Mod.dfareportingV32.SchemaSortedDimension
+import typings.googleapis.v34Mod.dfareportingV34.SchemaDateRange
+import typings.googleapis.v34Mod.dfareportingV34.SchemaDimensionValue
+import typings.googleapis.v34Mod.dfareportingV34.SchemaSortedDimension
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,7 +36,7 @@ object Dimension {
     
     inline def setBreakdownUndefined: Self = StObject.set(x, "breakdown", js.undefined)
     
-    inline def setBreakdownVarargs(value: SchemaSortedDimension*): Self = StObject.set(x, "breakdown", js.Array(value :_*))
+    inline def setBreakdownVarargs(value: SchemaSortedDimension*): Self = StObject.set(x, "breakdown", js.Array(value*))
     
     inline def setDateRange(value: SchemaDateRange): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
     
@@ -48,7 +48,7 @@ object Dimension {
     
     inline def setDimensionFiltersUndefined: Self = StObject.set(x, "dimensionFilters", js.undefined)
     
-    inline def setDimensionFiltersVarargs(value: SchemaDimensionValue*): Self = StObject.set(x, "dimensionFilters", js.Array(value :_*))
+    inline def setDimensionFiltersVarargs(value: SchemaDimensionValue*): Self = StObject.set(x, "dimensionFilters", js.Array(value*))
     
     inline def setDimensionUndefined: Self = StObject.set(x, "dimension", js.undefined)
     
@@ -56,13 +56,13 @@ object Dimension {
     
     inline def setMetricNamesUndefined: Self = StObject.set(x, "metricNames", js.undefined)
     
-    inline def setMetricNamesVarargs(value: String*): Self = StObject.set(x, "metricNames", js.Array(value :_*))
+    inline def setMetricNamesVarargs(value: String*): Self = StObject.set(x, "metricNames", js.Array(value*))
     
     inline def setOverlapMetricNames(value: js.Array[String]): Self = StObject.set(x, "overlapMetricNames", value.asInstanceOf[js.Any])
     
     inline def setOverlapMetricNamesUndefined: Self = StObject.set(x, "overlapMetricNames", js.undefined)
     
-    inline def setOverlapMetricNamesVarargs(value: String*): Self = StObject.set(x, "overlapMetricNames", js.Array(value :_*))
+    inline def setOverlapMetricNamesVarargs(value: String*): Self = StObject.set(x, "overlapMetricNames", js.Array(value*))
     
     inline def setPivoted(value: Boolean): Self = StObject.set(x, "pivoted", value.asInstanceOf[js.Any])
     

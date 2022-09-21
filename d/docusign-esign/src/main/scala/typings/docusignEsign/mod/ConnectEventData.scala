@@ -32,7 +32,7 @@ object ConnectEventData {
     
     inline def setIncludeDataUndefined: Self = StObject.set(x, "includeData", js.undefined)
     
-    inline def setIncludeDataVarargs(value: String*): Self = StObject.set(x, "includeData", js.Array(value :_*))
+    inline def setIncludeDataVarargs(value: String*): Self = StObject.set(x, "includeData", js.Array(value*))
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     

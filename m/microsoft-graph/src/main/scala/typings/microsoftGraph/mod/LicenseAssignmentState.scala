@@ -12,6 +12,8 @@ trait LicenseAssignmentState extends StObject {
   
   var error: js.UndefOr[NullableOption[String]] = js.undefined
   
+  var lastUpdatedDateTime: js.UndefOr[NullableOption[String]] = js.undefined
+  
   var skuId: js.UndefOr[NullableOption[String]] = js.undefined
   
   var state: js.UndefOr[NullableOption[String]] = js.undefined
@@ -37,13 +39,19 @@ object LicenseAssignmentState {
     
     inline def setDisabledPlansUndefined: Self = StObject.set(x, "disabledPlans", js.undefined)
     
-    inline def setDisabledPlansVarargs(value: String*): Self = StObject.set(x, "disabledPlans", js.Array(value :_*))
+    inline def setDisabledPlansVarargs(value: String*): Self = StObject.set(x, "disabledPlans", js.Array(value*))
     
     inline def setError(value: NullableOption[String]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     inline def setErrorNull: Self = StObject.set(x, "error", null)
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    
+    inline def setLastUpdatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "lastUpdatedDateTime", value.asInstanceOf[js.Any])
+    
+    inline def setLastUpdatedDateTimeNull: Self = StObject.set(x, "lastUpdatedDateTime", null)
+    
+    inline def setLastUpdatedDateTimeUndefined: Self = StObject.set(x, "lastUpdatedDateTime", js.undefined)
     
     inline def setSkuId(value: NullableOption[String]): Self = StObject.set(x, "skuId", value.asInstanceOf[js.Any])
     

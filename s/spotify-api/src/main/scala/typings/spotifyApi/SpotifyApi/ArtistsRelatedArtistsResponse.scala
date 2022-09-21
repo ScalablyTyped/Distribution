@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * Get an Artist’s Related Artists
-  * 
+  *
   * GET /v1/artists/{id}/related-artists
   * https://developer.spotify.com/web-api/get-related-artists/
   */
@@ -25,6 +25,6 @@ object ArtistsRelatedArtistsResponse {
     
     inline def setArtists(value: js.Array[ArtistObjectFull]): Self = StObject.set(x, "artists", value.asInstanceOf[js.Any])
     
-    inline def setArtistsVarargs(value: ArtistObjectFull*): Self = StObject.set(x, "artists", js.Array(value :_*))
+    inline def setArtistsVarargs(value: ArtistObjectFull*): Self = StObject.set(x, "artists", js.Array(value*))
   }
 }

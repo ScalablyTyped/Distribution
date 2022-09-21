@@ -14,7 +14,7 @@ trait ActionDescriptor extends StObject {
   /**
     * Data sent on callback being run.
     */
-  var callbackData: js.UndefOr[js.Any] = js.undefined
+  var callbackData: js.UndefOr[Any] = js.undefined
   
   /**
     * User-visible label to display
@@ -34,7 +34,7 @@ object ActionDescriptor {
     
     inline def setActionTitleUndefined: Self = StObject.set(x, "actionTitle", js.undefined)
     
-    inline def setCallbackData(value: js.Any): Self = StObject.set(x, "callbackData", value.asInstanceOf[js.Any])
+    inline def setCallbackData(value: Any): Self = StObject.set(x, "callbackData", value.asInstanceOf[js.Any])
     
     inline def setCallbackDataUndefined: Self = StObject.set(x, "callbackData", js.undefined)
     

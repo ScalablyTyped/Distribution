@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "web-streams-polyfill" : "3.2.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "web-streams-polyfill" : "3.2.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

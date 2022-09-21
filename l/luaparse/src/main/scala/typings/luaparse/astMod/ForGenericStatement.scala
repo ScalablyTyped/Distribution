@@ -27,14 +27,14 @@ object ForGenericStatement {
     
     inline def setBody(value: js.Array[Statement]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    inline def setBodyVarargs(value: Statement*): Self = StObject.set(x, "body", js.Array(value :_*))
+    inline def setBodyVarargs(value: Statement*): Self = StObject.set(x, "body", js.Array(value*))
     
     inline def setIterators(value: js.Array[Expression]): Self = StObject.set(x, "iterators", value.asInstanceOf[js.Any])
     
-    inline def setIteratorsVarargs(value: Expression*): Self = StObject.set(x, "iterators", js.Array(value :_*))
+    inline def setIteratorsVarargs(value: Expression*): Self = StObject.set(x, "iterators", js.Array(value*))
     
     inline def setVariables(value: js.Array[Identifier]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     
-    inline def setVariablesVarargs(value: Identifier*): Self = StObject.set(x, "variables", js.Array(value :_*))
+    inline def setVariablesVarargs(value: Identifier*): Self = StObject.set(x, "variables", js.Array(value*))
   }
 }

@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vexflow", "Flow.KeySigNote")
 @js.native
-class KeySigNote protected ()
+open class KeySigNote protected ()
   extends StObject
      with typings.vexflow.Vex.Flow.KeySigNote {
-  def this(keySpec: js.Any, cancelKeySpec: js.Any, alterKeySpec: js.Any) = this()
+  def this(keySpec: Any, cancelKeySpec: Any, alterKeySpec: Any) = this()
   
   /* CompleteClass */
   override def addModifier(mod: typings.vexflow.Vex.Flow.Modifier): Tickable = js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-share
 
-Typings are for version 3.0
+Typings are for version 4.4.0
 
 ## Library description:
 Social media share buttons and share counts for React.
@@ -10,10 +10,10 @@ Social media share buttons and share counts for React.
 | ------------------ | :-------------: |
 | Full name          | react-share |
 | Keywords           | react, component, react-component, social, media, social-media, share, button, count |
-| # releases         | 14 |
-| # dependents       | 115 |
-| # downloads        | 5725551 |
-| # stars            | 11 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1345146.3333333333 |
+| # stars            | 2136.0 |
 
 ## Links
 - [Homepage](https://github.com/nygardk/react-share#readme)
@@ -24,7 +24,7 @@ Social media share buttons and share counts for React.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

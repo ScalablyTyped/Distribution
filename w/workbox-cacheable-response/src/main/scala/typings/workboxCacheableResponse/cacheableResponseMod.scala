@@ -10,7 +10,7 @@ object cacheableResponseMod {
   
   @JSImport("workbox-cacheable-response/CacheableResponse", "CacheableResponse")
   @js.native
-  class CacheableResponse () extends StObject {
+  open class CacheableResponse () extends StObject {
     def this(config: CacheableResponseConfig) = this()
     
     def isResponseCacheable(response: Response): Boolean = js.native
@@ -39,7 +39,7 @@ object cacheableResponseMod {
       
       inline def setStatusesUndefined: Self = StObject.set(x, "statuses", js.undefined)
       
-      inline def setStatusesVarargs(value: Double*): Self = StObject.set(x, "statuses", js.Array(value :_*))
+      inline def setStatusesVarargs(value: Double*): Self = StObject.set(x, "statuses", js.Array(value*))
     }
   }
 }

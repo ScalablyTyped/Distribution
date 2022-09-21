@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@firebase/auth-types", "GithubAuthProvider")
 @js.native
-class GithubAuthProvider () extends GithubAuthProviderInstance
+open class GithubAuthProvider () extends GithubAuthProviderInstance
 /* static members */
 object GithubAuthProvider {
   

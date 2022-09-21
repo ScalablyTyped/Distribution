@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ionic/utils-object" : "1.0.6"
+      "@ionic/utils-object" : "2.1.5"
     }
   ],
   "test-dependencies" : [
     {
-      "@ionic/utils-object" : "1.0.6"
+      "@ionic/utils-object" : "2.1.5"
     }
   ],
   "compile-devDependencies" : [

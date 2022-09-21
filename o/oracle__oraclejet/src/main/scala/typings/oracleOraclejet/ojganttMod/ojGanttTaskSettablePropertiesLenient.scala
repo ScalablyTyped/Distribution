@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojgantt.ojGanttTaskSettableProperties> */
 trait ojGanttTaskSettablePropertiesLenient
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var baseline: js.UndefOr[End] = js.undefined
   
@@ -38,7 +38,7 @@ trait ojGanttTaskSettablePropertiesLenient
   
   var progress: js.UndefOr[Value] = js.undefined
   
-  var rowId: js.UndefOr[js.Any] = js.undefined
+  var rowId: js.UndefOr[Any] = js.undefined
   
   var shortDesc: js.UndefOr[String | Null] = js.undefined
   
@@ -93,7 +93,7 @@ object ojGanttTaskSettablePropertiesLenient {
     
     inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
     
-    inline def setRowId(value: js.Any): Self = StObject.set(x, "rowId", value.asInstanceOf[js.Any])
+    inline def setRowId(value: Any): Self = StObject.set(x, "rowId", value.asInstanceOf[js.Any])
     
     inline def setRowIdUndefined: Self = StObject.set(x, "rowId", js.undefined)
     

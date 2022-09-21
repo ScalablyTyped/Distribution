@@ -8,7 +8,7 @@ object disposableMod {
   
   @JSImport("ol/Disposable", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with Disposable {
     

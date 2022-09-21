@@ -1,7 +1,7 @@
 
 # Scala.js typings for binaryextensions
 
-Typings are for version 2.1
+Typings are for version 4.18.0
 
 ## Library description:
 A package that contains an array of every single file extension there is for binary files
@@ -9,22 +9,19 @@ A package that contains an array of every single file extension there is for bin
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | binaryextensions |
-| Keywords           | binary, binary extensions, binary-extensions, browser, deno, deno-edition, deno-entry, denoland, es5, export-default, extensions, module, node, typed, types, typescript |
-| # releases         | 68 |
-| # dependents       | 10 |
-| # downloads        | 35596117 |
-| # stars            | 0 |
+| Keywords           | binary, binary extensions, binary-extensions, browser, es5, export-default, extensions, module, node, typed, types, typescript |
+| # releases         | 33 |
+| # dependents       | 0.0 |
+| # downloads        | 5727186.333333333 |
+| # stars            | 5.0 |
 
 ## Links
-- [Homepage](https://github.com/bevry/binaryextensions)
-- [Bugs](https://github.com/bevry/binaryextensions/issues)
-- [Repository](https://github.com/bevry/binaryextensions)
 - [Npm](https://www.npmjs.com/package/binaryextensions)
     
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -2,9 +2,12 @@ package typings.vegaLite
 
 import typings.vegaLite.anon.Bottom
 import typings.vegaLite.exprMod.ExprRef
-import typings.vegaLite.parameterMod.Parameter
+import typings.vegaLite.parameterMod.ParameterName
 import typings.vegaLite.specBaseMod.BaseSpec
 import typings.vegaLite.srcDataMod.InlineDataset
+import typings.vegaLite.srcSelectionMod.IntervalSelectionConfig
+import typings.vegaLite.srcSelectionMod.PointSelectionConfig
+import typings.vegaLite.srcSelectionMod.SelectionType
 import typings.vegaLite.utilMod.Dict
 import typings.vegaLite.vegaLiteStrings.content
 import typings.vegaLite.vegaLiteStrings.height
@@ -25,10 +28,7 @@ object toplevelMod {
   inline def extractTopLevelProperties(t: TopLevelProperties[ExprRef | SignalRef], includeParams: Boolean): TopLevelProperties[SignalRef] = (^.asInstanceOf[js.Dynamic].applyDynamic("extractTopLevelProperties")(t.asInstanceOf[js.Any], includeParams.asInstanceOf[js.Any])).asInstanceOf[TopLevelProperties[SignalRef]]
   
   inline def getFitType(): FitType = ^.asInstanceOf[js.Dynamic].applyDynamic("getFitType")().asInstanceOf[FitType]
-  
-  inline def getFitType_height(sizeType: height): FitType = ^.asInstanceOf[js.Dynamic].applyDynamic("getFitType")(sizeType.asInstanceOf[js.Any]).asInstanceOf[FitType]
-  
-  inline def getFitType_width(sizeType: width): FitType = ^.asInstanceOf[js.Dynamic].applyDynamic("getFitType")(sizeType.asInstanceOf[js.Any]).asInstanceOf[FitType]
+  inline def getFitType(sizeType: width | height): FitType = ^.asInstanceOf[js.Dynamic].applyDynamic("getFitType")(sizeType.asInstanceOf[js.Any]).asInstanceOf[FitType]
   
   inline def isFitType(autoSizeType: AutosizeType): /* is vega-lite.vega-lite/build/src/spec/toplevel.FitType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFitType")(autoSizeType.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/toplevel.FitType */ Boolean]
   
@@ -120,6 +120,24 @@ object toplevelMod {
   
   type TopLevel[S /* <: BaseSpec */] = S & (TopLevelProperties[ExprRef | SignalRef]) & typings.vegaLite.anon.Datasets
   
+  /* Rewritten from type alias, can be one of: 
+    - typings.vegaLite.parameterMod.VariableParameter
+    - typings.vegaLite.srcSelectionMod.TopLevelSelectionParameter
+  */
+  trait TopLevelParameter extends StObject
+  object TopLevelParameter {
+    
+    inline def TopLevelSelectionParameter(name: ParameterName, select: SelectionType | IntervalSelectionConfig | PointSelectionConfig): typings.vegaLite.srcSelectionMod.TopLevelSelectionParameter = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.vegaLite.srcSelectionMod.TopLevelSelectionParameter]
+    }
+    
+    inline def VariableParameter(name: ParameterName): typings.vegaLite.parameterMod.VariableParameter = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.vegaLite.parameterMod.VariableParameter]
+    }
+  }
+  
   trait TopLevelProperties[ES /* <: ExprRef | SignalRef */] extends StObject {
     
     /**
@@ -146,9 +164,9 @@ object toplevelMod {
     var padding: js.UndefOr[Padding | ES] = js.undefined
     
     /**
-      * Dynamic variables that parameterize a visualization.
+      * Dynamic variables or selections that parameterize a visualization.
       */
-    var params: js.UndefOr[js.Array[Parameter]] = js.undefined
+    var params: js.UndefOr[js.Array[TopLevelParameter]] = js.undefined
   }
   object TopLevelProperties {
     
@@ -171,11 +189,11 @@ object toplevelMod {
       
       inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      inline def setParams(value: js.Array[Parameter]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Array[TopLevelParameter]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      inline def setParamsVarargs(value: Parameter*): Self = StObject.set(x, "params", js.Array(value :_*))
+      inline def setParamsVarargs(value: TopLevelParameter*): Self = StObject.set(x, "params", js.Array(value*))
     }
   }
 }

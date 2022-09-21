@@ -31,7 +31,7 @@ trait ErrorCheckingOptions extends StObject {
   
   var OmittedCells: Boolean
   
-  val Parent: js.Any
+  val Parent: Any
   
   var TextDate: Boolean
   
@@ -52,7 +52,7 @@ object ErrorCheckingOptions {
     ListDataValidation: Boolean,
     NumberAsText: Boolean,
     OmittedCells: Boolean,
-    Parent: js.Any,
+    Parent: Any,
     TextDate: Boolean,
     UnlockedFormulaCells: Boolean
   ): ErrorCheckingOptions = {
@@ -87,7 +87,7 @@ object ErrorCheckingOptions {
     
     inline def setOmittedCells(value: Boolean): Self = StObject.set(x, "OmittedCells", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setTextDate(value: Boolean): Self = StObject.set(x, "TextDate", value.asInstanceOf[js.Any])
     

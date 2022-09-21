@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Materials/index", "Effect")
 @js.native
-class Effect protected ()
+open class Effect protected ()
   extends typings.babylonjs.effectMod.Effect {
   /**
     * Instantiates an effect.
@@ -26,9 +26,11 @@ class Effect protected ()
     * @param onCompiled Callback that will be called when the shader is compiled.
     * @param onError Callback that will be called if an error occurs during shader compilation.
     * @param indexParameters Parameters to be used with Babylons include syntax to iterate over an array (eg. {lights: 10})
+    * @param key Effect Key identifying uniquely compiled shader variants
+    * @param shaderLanguage the language the shader is written in (default: GLSL)
     */
   def this(
-    baseName: js.Any,
+    baseName: Any,
     attributesNamesOrOptions: js.Array[String] | IEffectCreationOptions,
     uniformsNamesOrEngine: js.Array[String] | ThinEngine,
     samplers: js.UndefOr[Nullable[js.Array[String]]],
@@ -41,7 +43,9 @@ class Effect protected ()
           js.Function2[/* effect */ typings.babylonjs.effectMod.Effect, /* errors */ String, Unit]
         ]
       ],
-    indexParameters: js.UndefOr[js.Any]
+    indexParameters: js.UndefOr[Any],
+    key: js.UndefOr[String],
+    shaderLanguage: js.UndefOr[typings.babylonjs.shaderLanguageMod.ShaderLanguage]
   ) = this()
 }
 /* static members */
@@ -72,24 +76,41 @@ object Effect {
     * @param name the name of the shader
     * @param pixelShader optional pixel shader content
     * @param vertexShader optional vertex shader content
+    * @param shaderLanguage the language the shader is written in (default: GLSL)
     */
   inline def RegisterShader(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("RegisterShader")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def RegisterShader(name: String, pixelShader: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RegisterShader")(name.asInstanceOf[js.Any], pixelShader.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def RegisterShader(name: String, pixelShader: String, vertexShader: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RegisterShader")(name.asInstanceOf[js.Any], pixelShader.asInstanceOf[js.Any], vertexShader.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def RegisterShader(
+    name: String,
+    pixelShader: String,
+    vertexShader: String,
+    shaderLanguage: typings.babylonjs.shaderLanguageMod.ShaderLanguage
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RegisterShader")(name.asInstanceOf[js.Any], pixelShader.asInstanceOf[js.Any], vertexShader.asInstanceOf[js.Any], shaderLanguage.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def RegisterShader(
+    name: String,
+    pixelShader: String,
+    vertexShader: Unit,
+    shaderLanguage: typings.babylonjs.shaderLanguageMod.ShaderLanguage
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RegisterShader")(name.asInstanceOf[js.Any], pixelShader.asInstanceOf[js.Any], vertexShader.asInstanceOf[js.Any], shaderLanguage.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def RegisterShader(name: String, pixelShader: Unit, vertexShader: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RegisterShader")(name.asInstanceOf[js.Any], pixelShader.asInstanceOf[js.Any], vertexShader.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def RegisterShader(
+    name: String,
+    pixelShader: Unit,
+    vertexShader: String,
+    shaderLanguage: typings.babylonjs.shaderLanguageMod.ShaderLanguage
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RegisterShader")(name.asInstanceOf[js.Any], pixelShader.asInstanceOf[js.Any], vertexShader.asInstanceOf[js.Any], shaderLanguage.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def RegisterShader(
+    name: String,
+    pixelShader: Unit,
+    vertexShader: Unit,
+    shaderLanguage: typings.babylonjs.shaderLanguageMod.ShaderLanguage
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RegisterShader")(name.asInstanceOf[js.Any], pixelShader.asInstanceOf[js.Any], vertexShader.asInstanceOf[js.Any], shaderLanguage.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Resets the cache of effects.
     */
   inline def ResetCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ResetCache")().asInstanceOf[Unit]
-  
-  /**
-    * Gets or sets the relative url used to load shaders if using the engine in non-minified mode
-    */
-  @JSImport("babylonjs/Materials/index", "Effect.ShadersRepository")
-  @js.native
-  def ShadersRepository: String = js.native
-  inline def ShadersRepository_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ShadersRepository")(x.asInstanceOf[js.Any])
   
   /**
     * Store of each shader (The can be looked up using effect.key)
@@ -99,13 +120,13 @@ object Effect {
   def ShadersStore: StringDictionary[String] = js.native
   inline def ShadersStore_=(x: StringDictionary[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ShadersStore")(x.asInstanceOf[js.Any])
   
-  @JSImport("babylonjs/Materials/index", "Effect._baseCache")
+  @JSImport("babylonjs/Materials/index", "Effect._BaseCache")
   @js.native
-  def _baseCache: js.Any = js.native
-  inline def _baseCache_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_baseCache")(x.asInstanceOf[js.Any])
+  def _BaseCache: Any = js.native
+  inline def _BaseCache_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BaseCache")(x.asInstanceOf[js.Any])
   
-  @JSImport("babylonjs/Materials/index", "Effect._uniqueIdSeed")
+  @JSImport("babylonjs/Materials/index", "Effect._UniqueIdSeed")
   @js.native
-  def _uniqueIdSeed: js.Any = js.native
-  inline def _uniqueIdSeed_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_uniqueIdSeed")(x.asInstanceOf[js.Any])
+  def _UniqueIdSeed: Any = js.native
+  inline def _UniqueIdSeed_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_UniqueIdSeed")(x.asInstanceOf[js.Any])
 }

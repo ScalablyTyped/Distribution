@@ -23,7 +23,7 @@ trait BasemapLayerList
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html#baseListItemCreatedFunction)
     */
-  def baseListItemCreatedFunction(event: js.Any): Unit = js.native
+  def baseListItemCreatedFunction(event: Any): scala.Unit = js.native
   /**
     * Specifies a function that accesses each [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html) representing a base layer.
     *
@@ -42,9 +42,20 @@ trait BasemapLayerList
   /**
     * Indicates whether the basemap’s title, layer order and layer grouping can be edited by the user.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html#editingEnabled)
     */
   var editingEnabled: Boolean = js.native
+  
+  /**
+    * Indicates the heading level to use for the widget title (i.e.
+    *
+    * @default 2
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html#headingLevel)
+    */
+  var headingLevel: Double = js.native
   
   /**
     * The widget's default CSS icon class.
@@ -55,6 +66,8 @@ trait BasemapLayerList
   
   /**
     * Indicates whether more than one list item may be selected by the user at a single time.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html#multipleSelectionEnabled)
     */
@@ -75,7 +88,7 @@ trait BasemapLayerList
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html#referenceListItemCreatedFunction)
     */
-  def referenceListItemCreatedFunction(event: js.Any): Unit = js.native
+  def referenceListItemCreatedFunction(event: Any): scala.Unit = js.native
   /**
     * Specifies a function that accesses each [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html) representing a reference layer.
     *
@@ -92,19 +105,12 @@ trait BasemapLayerList
   var selectedItems: Collection[ListItem] = js.native
   
   /**
-    * Option for enabling status indicators, which indicate whether or not each layer is loading resources.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html#statusIndicatorsVisible)
-    */
-  var statusIndicatorsVisible: Boolean = js.native
-  
-  /**
     * Triggers the [trigger-action](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html#event-trigger-action) event and executes the given [action](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionButton.html) or [action toggle](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-actions-ActionToggle.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapLayerList.html#triggerAction)
     */
-  def triggerAction(action: ActionButton, item: ListItem): Unit = js.native
-  def triggerAction(action: ActionToggle, item: ListItem): Unit = js.native
+  def triggerAction(action: ActionButton, item: ListItem): scala.Unit = js.native
+  def triggerAction(action: ActionToggle, item: ListItem): scala.Unit = js.native
   
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).

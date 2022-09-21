@@ -1,7 +1,7 @@
 
 # Scala.js typings for keycloak-connect
 
-Typings are for version 4.5
+Typings are for version 19.0.2
 
 ## Library description:
 Keycloak Connect Middleware
@@ -10,10 +10,10 @@ Keycloak Connect Middleware
 | ------------------ | :-------------: |
 | Full name          | keycloak-connect |
 | Keywords           | sso, keycloak, oauth, oauth2.0, authentication |
-| # releases         | 21 |
-| # dependents       | 58 |
-| # downloads        | 1525151 |
-| # stars            | 0 |
+| # releases         | 26 |
+| # dependents       | 0.0 |
+| # downloads        | 216357.33333333334 |
+| # stars            | 543.0 |
 
 ## Links
 - [Homepage](http://keycloak.org)
@@ -24,7 +24,7 @@ Keycloak Connect Middleware
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

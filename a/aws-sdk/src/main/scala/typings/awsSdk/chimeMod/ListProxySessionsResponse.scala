@@ -33,6 +33,6 @@ object ListProxySessionsResponse {
     
     inline def setProxySessionsUndefined: Self = StObject.set(x, "ProxySessions", js.undefined)
     
-    inline def setProxySessionsVarargs(value: ProxySession*): Self = StObject.set(x, "ProxySessions", js.Array(value :_*))
+    inline def setProxySessionsVarargs(value: ProxySession*): Self = StObject.set(x, "ProxySessions", js.Array(value*))
   }
 }

@@ -22,6 +22,6 @@ object TableColumnCollectionData {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: TableColumnData*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: TableColumnData*): Self = StObject.set(x, "items", js.Array(value*))
   }
 }

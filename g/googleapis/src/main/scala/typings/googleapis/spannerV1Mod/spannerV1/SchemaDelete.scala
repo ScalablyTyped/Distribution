@@ -4,22 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Arguments to delete operations.
-  */
 trait SchemaDelete extends StObject {
   
   /**
-    * Required. The primary keys of the rows within table to delete. Delete is
-    * idempotent. The transaction will succeed even if some or all rows do not
-    * exist.
+    * Required. The primary keys of the rows within table to delete. The primary keys must be specified in the order in which they appear in the `PRIMARY KEY()` clause of the table's equivalent DDL statement (the DDL statement used to create the table). Delete is idempotent. The transaction will succeed even if some or all rows do not exist.
     */
   var keySet: js.UndefOr[SchemaKeySet] = js.undefined
   
   /**
     * Required. The table whose rows will be deleted.
     */
-  var table: js.UndefOr[String] = js.undefined
+  var table: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaDelete {
   
@@ -35,6 +30,8 @@ object SchemaDelete {
     inline def setKeySetUndefined: Self = StObject.set(x, "keySet", js.undefined)
     
     inline def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+    
+    inline def setTableNull: Self = StObject.set(x, "table", null)
     
     inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
   }

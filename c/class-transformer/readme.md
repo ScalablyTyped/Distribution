@@ -1,7 +1,7 @@
 
 # Scala.js typings for class-transformer
 
-Typings are for version 0.3.1
+Typings are for version 0.5.1
 
 ## Library description:
 Proper decorator-based transformation / serialization / deserialization of plain javascript objects to class constructors
@@ -10,10 +10,10 @@ Proper decorator-based transformation / serialization / deserialization of plain
 | ------------------ | :-------------: |
 | Full name          | class-transformer |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 742 |
-| # downloads        | 18740489 |
-| # stars            | 3 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 6997375.0 |
+| # stars            | 4969.0 |
 
 ## Links
 - [Homepage](https://github.com/typestack/class-transformer#readme)

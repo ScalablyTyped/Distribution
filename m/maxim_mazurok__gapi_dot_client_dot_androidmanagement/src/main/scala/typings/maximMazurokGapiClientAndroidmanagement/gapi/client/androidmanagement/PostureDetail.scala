@@ -25,7 +25,7 @@ object PostureDetail {
     
     inline def setAdviceUndefined: Self = StObject.set(x, "advice", js.undefined)
     
-    inline def setAdviceVarargs(value: UserFacingMessage*): Self = StObject.set(x, "advice", js.Array(value :_*))
+    inline def setAdviceVarargs(value: UserFacingMessage*): Self = StObject.set(x, "advice", js.Array(value*))
     
     inline def setSecurityRisk(value: String): Self = StObject.set(x, "securityRisk", value.asInstanceOf[js.Any])
     

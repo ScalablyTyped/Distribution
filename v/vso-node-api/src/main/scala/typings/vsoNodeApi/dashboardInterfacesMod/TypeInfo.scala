@@ -15,8 +15,8 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/DashboardInterfaces", "TypeInfo.DashboardGroup")
   @js.native
-  def DashboardGroup: js.Any = js.native
-  inline def DashboardGroup_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DashboardGroup")(x.asInstanceOf[js.Any])
+  def DashboardGroup: Any = js.native
+  inline def DashboardGroup_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DashboardGroup")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/DashboardInterfaces", "TypeInfo.DashboardScope")
   @js.native
@@ -35,14 +35,14 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/DashboardInterfaces", "TypeInfo.WidgetMetadata")
   @js.native
-  def WidgetMetadata: js.Any = js.native
+  def WidgetMetadata: Any = js.native
   
   @JSImport("vso-node-api/interfaces/DashboardInterfaces", "TypeInfo.WidgetMetadataResponse")
   @js.native
-  def WidgetMetadataResponse: js.Any = js.native
-  inline def WidgetMetadataResponse_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WidgetMetadataResponse")(x.asInstanceOf[js.Any])
+  def WidgetMetadataResponse: Any = js.native
+  inline def WidgetMetadataResponse_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WidgetMetadataResponse")(x.asInstanceOf[js.Any])
   
-  inline def WidgetMetadata_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WidgetMetadata")(x.asInstanceOf[js.Any])
+  inline def WidgetMetadata_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WidgetMetadata")(x.asInstanceOf[js.Any])
   
   @JSImport("vso-node-api/interfaces/DashboardInterfaces", "TypeInfo.WidgetScope")
   @js.native
@@ -51,6 +51,6 @@ object TypeInfo {
   
   @JSImport("vso-node-api/interfaces/DashboardInterfaces", "TypeInfo.WidgetTypesResponse")
   @js.native
-  def WidgetTypesResponse: js.Any = js.native
-  inline def WidgetTypesResponse_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WidgetTypesResponse")(x.asInstanceOf[js.Any])
+  def WidgetTypesResponse: Any = js.native
+  inline def WidgetTypesResponse_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WidgetTypesResponse")(x.asInstanceOf[js.Any])
 }

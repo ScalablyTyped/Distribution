@@ -9,6 +9,9 @@ trait RunReportResponse extends StObject {
   /** Describes dimension columns. The number of DimensionHeaders and ordering of DimensionHeaders matches the dimensions present in rows. */
   var dimensionHeaders: js.UndefOr[js.Array[DimensionHeader]] = js.undefined
   
+  /** Identifies what kind of resource this message is. This `kind` is always the fixed string "analyticsData#runReport". Useful to distinguish between response types in JSON. */
+  var kind: js.UndefOr[String] = js.undefined
+  
   /** If requested, the maximum values of metrics. */
   var maximums: js.UndefOr[js.Array[Row]] = js.undefined
   
@@ -25,9 +28,9 @@ trait RunReportResponse extends StObject {
   var propertyQuota: js.UndefOr[PropertyQuota] = js.undefined
   
   /**
-    * The total number of rows in the query result, regardless of the number of rows returned in the response. For example if a query returns 175 rows and includes limit = 50 in the API
-    * request, the response will contain row_count = 175 but only 50 rows. To learn more about this pagination parameter, see
-    * [Pagination](https://developers.google.com/analytics/devguides/reporting/data/v1/basics#pagination).
+    * The total number of rows in the query result. `rowCount` is independent of the number of rows returned in the response, the `limit` request parameter, and the `offset` request
+    * parameter. For example if a query returns 175 rows and includes `limit` of 50 in the API request, the response will contain `rowCount` of 175 but only 50 rows. To learn more about
+    * this pagination parameter, see [Pagination](https://developers.google.com/analytics/devguides/reporting/data/v1/basics#pagination).
     */
   var rowCount: js.UndefOr[Double] = js.undefined
   
@@ -50,13 +53,17 @@ object RunReportResponse {
     
     inline def setDimensionHeadersUndefined: Self = StObject.set(x, "dimensionHeaders", js.undefined)
     
-    inline def setDimensionHeadersVarargs(value: DimensionHeader*): Self = StObject.set(x, "dimensionHeaders", js.Array(value :_*))
+    inline def setDimensionHeadersVarargs(value: DimensionHeader*): Self = StObject.set(x, "dimensionHeaders", js.Array(value*))
+    
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setMaximums(value: js.Array[Row]): Self = StObject.set(x, "maximums", value.asInstanceOf[js.Any])
     
     inline def setMaximumsUndefined: Self = StObject.set(x, "maximums", js.undefined)
     
-    inline def setMaximumsVarargs(value: Row*): Self = StObject.set(x, "maximums", js.Array(value :_*))
+    inline def setMaximumsVarargs(value: Row*): Self = StObject.set(x, "maximums", js.Array(value*))
     
     inline def setMetadata(value: ResponseMetaData): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
@@ -66,13 +73,13 @@ object RunReportResponse {
     
     inline def setMetricHeadersUndefined: Self = StObject.set(x, "metricHeaders", js.undefined)
     
-    inline def setMetricHeadersVarargs(value: MetricHeader*): Self = StObject.set(x, "metricHeaders", js.Array(value :_*))
+    inline def setMetricHeadersVarargs(value: MetricHeader*): Self = StObject.set(x, "metricHeaders", js.Array(value*))
     
     inline def setMinimums(value: js.Array[Row]): Self = StObject.set(x, "minimums", value.asInstanceOf[js.Any])
     
     inline def setMinimumsUndefined: Self = StObject.set(x, "minimums", js.undefined)
     
-    inline def setMinimumsVarargs(value: Row*): Self = StObject.set(x, "minimums", js.Array(value :_*))
+    inline def setMinimumsVarargs(value: Row*): Self = StObject.set(x, "minimums", js.Array(value*))
     
     inline def setPropertyQuota(value: PropertyQuota): Self = StObject.set(x, "propertyQuota", value.asInstanceOf[js.Any])
     
@@ -86,12 +93,12 @@ object RunReportResponse {
     
     inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    inline def setRowsVarargs(value: Row*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: Row*): Self = StObject.set(x, "rows", js.Array(value*))
     
     inline def setTotals(value: js.Array[Row]): Self = StObject.set(x, "totals", value.asInstanceOf[js.Any])
     
     inline def setTotalsUndefined: Self = StObject.set(x, "totals", js.undefined)
     
-    inline def setTotalsVarargs(value: Row*): Self = StObject.set(x, "totals", js.Array(value :_*))
+    inline def setTotalsVarargs(value: Row*): Self = StObject.set(x, "totals", js.Array(value*))
   }
 }

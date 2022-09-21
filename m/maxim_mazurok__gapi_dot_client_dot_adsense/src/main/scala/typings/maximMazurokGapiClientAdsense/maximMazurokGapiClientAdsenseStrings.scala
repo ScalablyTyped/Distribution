@@ -7,10 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object maximMazurokGapiClientAdsenseStrings {
   
   @js.native
+  sealed trait HttpBody extends StObject
+  inline def HttpBody: HttpBody = "HttpBody".asInstanceOf[HttpBody]
+  
+  @js.native
   sealed trait adsense extends StObject
   inline def adsense: adsense = "adsense".asInstanceOf[adsense]
   
   @js.native
-  sealed trait v1Dot4 extends StObject
-  inline def v1Dot4: v1Dot4 = "v1.4".asInstanceOf[v1Dot4]
+  sealed trait v2 extends StObject
+  inline def v2: v2 = "v2".asInstanceOf[v2]
 }

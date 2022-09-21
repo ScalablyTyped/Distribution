@@ -1,6 +1,6 @@
 package typings.prex
 
-import typings.esfxCancelable.distMod.Cancelable
+import typings.esfxCancelable.mod.Cancelable
 import typings.prex.cancellationMod.CancellationToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

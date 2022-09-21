@@ -66,7 +66,7 @@ object Phase {
     
     inline def setDependencies(value: js.Array[Dependency]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
     
-    inline def setDependenciesVarargs(value: Dependency*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
+    inline def setDependenciesVarargs(value: Dependency*): Self = StObject.set(x, "dependencies", js.Array(value*))
     
     inline def setJobAuthorizationScope(value: BuildAuthorizationScope): Self = StObject.set(x, "jobAuthorizationScope", value.asInstanceOf[js.Any])
     
@@ -78,7 +78,7 @@ object Phase {
     
     inline def setSteps(value: js.Array[BuildDefinitionStep]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
-    inline def setStepsVarargs(value: BuildDefinitionStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: BuildDefinitionStep*): Self = StObject.set(x, "steps", js.Array(value*))
     
     inline def setTarget(value: PhaseTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     

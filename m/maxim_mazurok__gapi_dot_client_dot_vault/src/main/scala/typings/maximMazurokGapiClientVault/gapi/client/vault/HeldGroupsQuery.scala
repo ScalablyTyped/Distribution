@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HeldGroupsQuery extends StObject {
   
-  /** The end time range for the search query. These timestamps are in GMT and rounded down to the start of the given date. */
+  /** The end time for the query. Specify in GMT. The value is rounded to 12 AM on the specified date. */
   var endTime: js.UndefOr[String] = js.undefined
   
-  /** The start time range for the search query. These timestamps are in GMT and rounded down to the start of the given date. */
+  /** The start time for the query. Specify in GMT. The value is rounded to 12 AM on the specified date. */
   var startTime: js.UndefOr[String] = js.undefined
   
-  /** The search terms for the hold. */
+  /** The [search operators](https://support.google.com/vault/answer/2474474) used to refine the messages covered by the hold. */
   var terms: js.UndefOr[String] = js.undefined
 }
 object HeldGroupsQuery {

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "p-waterfall" : "2.1.0"
+      "p-waterfall" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "p-waterfall" : "2.1.0"
+      "p-waterfall" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

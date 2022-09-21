@@ -24,7 +24,7 @@ trait HP extends StObject {
   
   def GetEmailLink(title: String, path: String, client: String, url: String): String
   
-  def GetFriendlyNameForFileType(fileType: js.Any): String
+  def GetFriendlyNameForFileType(fileType: Any): String
   
   def GetNowDateTimeDifference(): String
   
@@ -79,7 +79,7 @@ object HP {
     GetBodySectionContent: () => String,
     GetBodySectionHeading: () => String,
     GetEmailLink: (String, String, String, String) => String,
-    GetFriendlyNameForFileType: js.Any => String,
+    GetFriendlyNameForFileType: Any => String,
     GetNowDateTimeDifference: () => String,
     GetPeopleFollowingControl: () => String,
     Hide: () => Unit,
@@ -124,7 +124,7 @@ object HP {
     
     inline def setGetEmailLink(value: (String, String, String, String) => String): Self = StObject.set(x, "GetEmailLink", js.Any.fromFunction4(value))
     
-    inline def setGetFriendlyNameForFileType(value: js.Any => String): Self = StObject.set(x, "GetFriendlyNameForFileType", js.Any.fromFunction1(value))
+    inline def setGetFriendlyNameForFileType(value: Any => String): Self = StObject.set(x, "GetFriendlyNameForFileType", js.Any.fromFunction1(value))
     
     inline def setGetNowDateTimeDifference(value: () => String): Self = StObject.set(x, "GetNowDateTimeDifference", js.Any.fromFunction0(value))
     

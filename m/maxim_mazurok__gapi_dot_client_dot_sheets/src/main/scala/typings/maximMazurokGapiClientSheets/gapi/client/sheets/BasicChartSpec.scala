@@ -44,6 +44,15 @@ trait BasicChartSpec extends StObject {
   
   /** True to make the chart 3D. Applies to Bar and Column charts. */
   var threeDimensional: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Controls whether to display additional data labels on stacked charts which sum the total value of all stacked values at each value along the domain axis. These data labels can only
+    * be set when chart_type is one of AREA, BAR, COLUMN, COMBO or STEPPED_AREA and stacked_type is either STACKED or PERCENT_STACKED. In addition, for COMBO, this will only be supported
+    * if there is only one type of stackable series type or one type has more series than the others and each of the other types have no more than one series. For example, if a chart has
+    * two stacked bar series and one area series, the total data labels will be supported. If it has three bar series and two area series, total data labels are not allowed. Neither
+    * CUSTOM nor placement can be set on the total_data_label.
+    */
+  var totalDataLabel: js.UndefOr[DataLabel] = js.undefined
 }
 object BasicChartSpec {
   
@@ -58,7 +67,7 @@ object BasicChartSpec {
     
     inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
-    inline def setAxisVarargs(value: BasicChartAxis*): Self = StObject.set(x, "axis", js.Array(value :_*))
+    inline def setAxisVarargs(value: BasicChartAxis*): Self = StObject.set(x, "axis", js.Array(value*))
     
     inline def setChartType(value: String): Self = StObject.set(x, "chartType", value.asInstanceOf[js.Any])
     
@@ -72,7 +81,7 @@ object BasicChartSpec {
     
     inline def setDomainsUndefined: Self = StObject.set(x, "domains", js.undefined)
     
-    inline def setDomainsVarargs(value: BasicChartDomain*): Self = StObject.set(x, "domains", js.Array(value :_*))
+    inline def setDomainsVarargs(value: BasicChartDomain*): Self = StObject.set(x, "domains", js.Array(value*))
     
     inline def setHeaderCount(value: Double): Self = StObject.set(x, "headerCount", value.asInstanceOf[js.Any])
     
@@ -94,7 +103,7 @@ object BasicChartSpec {
     
     inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
-    inline def setSeriesVarargs(value: BasicChartSeries*): Self = StObject.set(x, "series", js.Array(value :_*))
+    inline def setSeriesVarargs(value: BasicChartSeries*): Self = StObject.set(x, "series", js.Array(value*))
     
     inline def setStackedType(value: String): Self = StObject.set(x, "stackedType", value.asInstanceOf[js.Any])
     
@@ -103,5 +112,9 @@ object BasicChartSpec {
     inline def setThreeDimensional(value: Boolean): Self = StObject.set(x, "threeDimensional", value.asInstanceOf[js.Any])
     
     inline def setThreeDimensionalUndefined: Self = StObject.set(x, "threeDimensional", js.undefined)
+    
+    inline def setTotalDataLabel(value: DataLabel): Self = StObject.set(x, "totalDataLabel", value.asInstanceOf[js.Any])
+    
+    inline def setTotalDataLabelUndefined: Self = StObject.set(x, "totalDataLabel", js.undefined)
   }
 }

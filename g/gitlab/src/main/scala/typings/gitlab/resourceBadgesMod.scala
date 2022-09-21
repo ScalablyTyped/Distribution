@@ -14,7 +14,7 @@ object resourceBadgesMod {
   
   @JSImport("gitlab/dist/types/core/templates/ResourceBadges", "ResourceBadges")
   @js.native
-  class ResourceBadges protected () extends BaseService {
+  open class ResourceBadges protected () extends BaseService {
     def this(resourceType: String, options: BaseServiceOptions) = this()
     
     def add(resourceId: String): js.Promise[js.Object] = js.native

@@ -1,6 +1,5 @@
 package typings.winrt.global.Windows.UI
 
-import typings.std.Date
 import typings.winrt.Windows.ApplicationModel.Activation.ActivationKind
 import typings.winrt.Windows.ApplicationModel.Activation.ApplicationExecutionState
 import typings.winrt.Windows.ApplicationModel.Activation.SplashScreen
@@ -24,7 +23,7 @@ object WebUI {
   
   @JSGlobal("Windows.UI.WebUI.ActivatedDeferral")
   @js.native
-  class ActivatedDeferral ()
+  open class ActivatedDeferral ()
     extends StObject
        with typings.winrt.Windows.UI.WebUI.ActivatedDeferral {
     
@@ -34,7 +33,7 @@ object WebUI {
   
   @JSGlobal("Windows.UI.WebUI.ActivatedOperation")
   @js.native
-  class ActivatedOperation ()
+  open class ActivatedOperation ()
     extends StObject
        with typings.winrt.Windows.UI.WebUI.ActivatedOperation {
     
@@ -44,7 +43,7 @@ object WebUI {
   
   @JSGlobal("Windows.UI.WebUI.SuspendingDeferral")
   @js.native
-  class SuspendingDeferral ()
+  open class SuspendingDeferral ()
     extends StObject
        with typings.winrt.Windows.UI.WebUI.SuspendingDeferral {
     
@@ -54,7 +53,7 @@ object WebUI {
   
   @JSGlobal("Windows.UI.WebUI.SuspendingEventArgs")
   @js.native
-  class SuspendingEventArgs ()
+  open class SuspendingEventArgs ()
     extends StObject
        with typings.winrt.Windows.UI.WebUI.SuspendingEventArgs {
     
@@ -64,12 +63,12 @@ object WebUI {
   
   @JSGlobal("Windows.UI.WebUI.SuspendingOperation")
   @js.native
-  class SuspendingOperation ()
+  open class SuspendingOperation ()
     extends StObject
        with typings.winrt.Windows.UI.WebUI.SuspendingOperation {
     
     /* CompleteClass */
-    var deadline: Date = js.native
+    var deadline: js.Date = js.native
     
     /* CompleteClass */
     override def getDeferral(): typings.winrt.Windows.ApplicationModel.SuspendingDeferral = js.native
@@ -77,7 +76,7 @@ object WebUI {
   
   @JSGlobal("Windows.UI.WebUI.WebUIApplication")
   @js.native
-  class WebUIApplication ()
+  open class WebUIApplication ()
     extends StObject
        with typings.winrt.Windows.UI.WebUI.WebUIApplication
   /* static members */
@@ -89,28 +88,28 @@ object WebUI {
     
     @JSGlobal("Windows.UI.WebUI.WebUIApplication.onactivated")
     @js.native
-    def onactivated: js.Any = js.native
-    inline def onactivated_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onactivated")(x.asInstanceOf[js.Any])
+    def onactivated: Any = js.native
+    inline def onactivated_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onactivated")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.UI.WebUI.WebUIApplication.onnavigated")
     @js.native
-    def onnavigated: js.Any = js.native
-    inline def onnavigated_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onnavigated")(x.asInstanceOf[js.Any])
+    def onnavigated: Any = js.native
+    inline def onnavigated_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onnavigated")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.UI.WebUI.WebUIApplication.onresuming")
     @js.native
-    def onresuming: js.Any = js.native
-    inline def onresuming_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onresuming")(x.asInstanceOf[js.Any])
+    def onresuming: Any = js.native
+    inline def onresuming_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onresuming")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.UI.WebUI.WebUIApplication.onsuspending")
     @js.native
-    def onsuspending: js.Any = js.native
-    inline def onsuspending_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onsuspending")(x.asInstanceOf[js.Any])
+    def onsuspending: Any = js.native
+    inline def onsuspending_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onsuspending")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Windows.UI.WebUI.WebUIBackgroundTaskInstance")
   @js.native
-  class WebUIBackgroundTaskInstance ()
+  open class WebUIBackgroundTaskInstance ()
     extends StObject
        with typings.winrt.Windows.UI.WebUI.WebUIBackgroundTaskInstance
   /* static members */
@@ -128,7 +127,7 @@ object WebUI {
   
   @JSGlobal("Windows.UI.WebUI.WebUIBackgroundTaskInstanceRuntimeClass")
   @js.native
-  class WebUIBackgroundTaskInstanceRuntimeClass ()
+  open class WebUIBackgroundTaskInstanceRuntimeClass ()
     extends StObject
        with typings.winrt.Windows.UI.WebUI.WebUIBackgroundTaskInstanceRuntimeClass {
     
@@ -139,7 +138,7 @@ object WebUI {
     var instanceId: String = js.native
     
     /* CompleteClass */
-    var oncanceled: js.Any = js.native
+    var oncanceled: Any = js.native
     
     /* CompleteClass */
     var progress: Double = js.native
@@ -154,12 +153,12 @@ object WebUI {
     var task: BackgroundTaskRegistration = js.native
     
     /* CompleteClass */
-    var triggerDetails: js.Any = js.native
+    var triggerDetails: Any = js.native
   }
   
   @JSGlobal("Windows.UI.WebUI.WebUICachedFileUpdaterActivatedEventArgs")
   @js.native
-  class WebUICachedFileUpdaterActivatedEventArgs ()
+  open class WebUICachedFileUpdaterActivatedEventArgs ()
     extends StObject
        with typings.winrt.Windows.UI.WebUI.WebUICachedFileUpdaterActivatedEventArgs {
     
@@ -181,7 +180,7 @@ object WebUI {
   
   @JSGlobal("Windows.UI.WebUI.WebUICameraSettingsActivatedEventArgs")
   @js.native
-  class WebUICameraSettingsActivatedEventArgs ()
+  open class WebUICameraSettingsActivatedEventArgs ()
     extends StObject
        with typings.winrt.Windows.UI.WebUI.WebUICameraSettingsActivatedEventArgs {
     
@@ -198,15 +197,15 @@ object WebUI {
     var splashScreen: SplashScreen = js.native
     
     /* CompleteClass */
-    var videoDeviceController: js.Any = js.native
+    var videoDeviceController: Any = js.native
     
     /* CompleteClass */
-    var videoDeviceExtension: js.Any = js.native
+    var videoDeviceExtension: Any = js.native
   }
   
   @JSGlobal("Windows.UI.WebUI.WebUIContactPickerActivatedEventArgs")
   @js.native
-  class WebUIContactPickerActivatedEventArgs ()
+  open class WebUIContactPickerActivatedEventArgs ()
     extends StObject
        with typings.winrt.Windows.UI.WebUI.WebUIContactPickerActivatedEventArgs {
     
@@ -228,7 +227,7 @@ object WebUI {
   
   @JSGlobal("Windows.UI.WebUI.WebUIDeviceActivatedEventArgs")
   @js.native
-  class WebUIDeviceActivatedEventArgs ()
+  open class WebUIDeviceActivatedEventArgs ()
     extends StObject
        with typings.winrt.Windows.UI.WebUI.WebUIDeviceActivatedEventArgs {
     
@@ -253,7 +252,7 @@ object WebUI {
   
   @JSGlobal("Windows.UI.WebUI.WebUIFileActivatedEventArgs")
   @js.native
-  class WebUIFileActivatedEventArgs ()
+  open class WebUIFileActivatedEventArgs ()
     extends StObject
        with typings.winrt.Windows.UI.WebUI.WebUIFileActivatedEventArgs {
     
@@ -278,7 +277,7 @@ object WebUI {
   
   @JSGlobal("Windows.UI.WebUI.WebUIFileOpenPickerActivatedEventArgs")
   @js.native
-  class WebUIFileOpenPickerActivatedEventArgs ()
+  open class WebUIFileOpenPickerActivatedEventArgs ()
     extends StObject
        with typings.winrt.Windows.UI.WebUI.WebUIFileOpenPickerActivatedEventArgs {
     
@@ -300,7 +299,7 @@ object WebUI {
   
   @JSGlobal("Windows.UI.WebUI.WebUIFileSavePickerActivatedEventArgs")
   @js.native
-  class WebUIFileSavePickerActivatedEventArgs ()
+  open class WebUIFileSavePickerActivatedEventArgs ()
     extends StObject
        with typings.winrt.Windows.UI.WebUI.WebUIFileSavePickerActivatedEventArgs {
     
@@ -322,7 +321,7 @@ object WebUI {
   
   @JSGlobal("Windows.UI.WebUI.WebUILaunchActivatedEventArgs")
   @js.native
-  class WebUILaunchActivatedEventArgs ()
+  open class WebUILaunchActivatedEventArgs ()
     extends StObject
        with typings.winrt.Windows.UI.WebUI.WebUILaunchActivatedEventArgs {
     
@@ -347,7 +346,7 @@ object WebUI {
   
   @JSGlobal("Windows.UI.WebUI.WebUINavigatedDeferral")
   @js.native
-  class WebUINavigatedDeferral ()
+  open class WebUINavigatedDeferral ()
     extends StObject
        with typings.winrt.Windows.UI.WebUI.WebUINavigatedDeferral {
     
@@ -357,7 +356,7 @@ object WebUI {
   
   @JSGlobal("Windows.UI.WebUI.WebUINavigatedEventArgs")
   @js.native
-  class WebUINavigatedEventArgs ()
+  open class WebUINavigatedEventArgs ()
     extends StObject
        with typings.winrt.Windows.UI.WebUI.WebUINavigatedEventArgs {
     
@@ -367,7 +366,7 @@ object WebUI {
   
   @JSGlobal("Windows.UI.WebUI.WebUINavigatedOperation")
   @js.native
-  class WebUINavigatedOperation ()
+  open class WebUINavigatedOperation ()
     extends StObject
        with typings.winrt.Windows.UI.WebUI.WebUINavigatedOperation {
     
@@ -377,7 +376,7 @@ object WebUI {
   
   @JSGlobal("Windows.UI.WebUI.WebUIPrintTaskSettingsActivatedEventArgs")
   @js.native
-  class WebUIPrintTaskSettingsActivatedEventArgs ()
+  open class WebUIPrintTaskSettingsActivatedEventArgs ()
     extends StObject
        with typings.winrt.Windows.UI.WebUI.WebUIPrintTaskSettingsActivatedEventArgs {
     
@@ -399,7 +398,7 @@ object WebUI {
   
   @JSGlobal("Windows.UI.WebUI.WebUIProtocolActivatedEventArgs")
   @js.native
-  class WebUIProtocolActivatedEventArgs ()
+  open class WebUIProtocolActivatedEventArgs ()
     extends StObject
        with typings.winrt.Windows.UI.WebUI.WebUIProtocolActivatedEventArgs {
     
@@ -421,7 +420,7 @@ object WebUI {
   
   @JSGlobal("Windows.UI.WebUI.WebUISearchActivatedEventArgs")
   @js.native
-  class WebUISearchActivatedEventArgs ()
+  open class WebUISearchActivatedEventArgs ()
     extends StObject
        with typings.winrt.Windows.UI.WebUI.WebUISearchActivatedEventArgs {
     
@@ -446,7 +445,7 @@ object WebUI {
   
   @JSGlobal("Windows.UI.WebUI.WebUIShareTargetActivatedEventArgs")
   @js.native
-  class WebUIShareTargetActivatedEventArgs ()
+  open class WebUIShareTargetActivatedEventArgs ()
     extends StObject
        with typings.winrt.Windows.UI.WebUI.WebUIShareTargetActivatedEventArgs {
     

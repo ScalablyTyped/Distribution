@@ -8,25 +8,25 @@ object mod {
   
   @JSImport("gently", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Gently
   
   @js.native
   trait Gently extends StObject {
     
-    def expect(obj: js.Any, method: String): js.Function1[/* repeated */ js.Any, js.Any] = js.native
-    def expect(obj: js.Any, method: String, count: Double, stubFn: js.Function1[/* repeated */ js.Any, js.Any]): js.Function1[/* repeated */ js.Any, js.Any] = js.native
-    def expect(obj: js.Any, method: String, stubFn: js.Function1[/* repeated */ js.Any, js.Any]): js.Function1[/* repeated */ js.Any, js.Any] = js.native
+    def expect(obj: Any, method: String): js.Function1[/* repeated */ Any, Any] = js.native
+    def expect(obj: Any, method: String, count: Double, stubFn: js.Function1[/* repeated */ Any, Any]): js.Function1[/* repeated */ Any, Any] = js.native
+    def expect(obj: Any, method: String, stubFn: js.Function1[/* repeated */ Any, Any]): js.Function1[/* repeated */ Any, Any] = js.native
     
-    def hijack(realRequire: js.Function1[/* id */ String, js.Any]): js.Function1[/* id */ String, js.Any] = js.native
+    def hijack(realRequire: js.Function1[/* id */ String, Any]): js.Function1[/* id */ String, Any] = js.native
     
-    var hijacked: js.Array[js.Any] = js.native
+    var hijacked: js.Array[Any] = js.native
     
-    def restore(obj: js.Any, method: String): Unit = js.native
+    def restore(obj: Any, method: String): Unit = js.native
     
-    def stub(location: String): js.Any = js.native
-    def stub(location: String, exportsName: String): js.Any = js.native
+    def stub(location: String): Any = js.native
+    def stub(location: String, exportsName: String): Any = js.native
     
     def verify(): Unit = js.native
     def verify(msg: String): Unit = js.native

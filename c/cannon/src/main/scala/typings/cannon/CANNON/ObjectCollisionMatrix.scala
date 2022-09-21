@@ -35,7 +35,7 @@ object ObjectCollisionMatrix {
     
     inline def setMatrix(value: js.Array[Double]): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
     
-    inline def setMatrixVarargs(value: Double*): Self = StObject.set(x, "matrix", js.Array(value :_*))
+    inline def setMatrixVarargs(value: Double*): Self = StObject.set(x, "matrix", js.Array(value*))
     
     inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     

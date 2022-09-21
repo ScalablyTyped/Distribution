@@ -1,5 +1,6 @@
 package typings.typescript.mod
 
+import typings.typescript.typescriptBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,8 +9,16 @@ trait CompletionInfo extends StObject {
   
   var entries: js.Array[CompletionEntry]
   
+  /** For performance telemetry. */
+  var flags: js.UndefOr[CompletionInfoFlags] = js.undefined
+  
   /** Not true for all global completions. This will be true if the enclosing scope matches a few syntax kinds. See `isSnippetScope`. */
   var isGlobalCompletion: Boolean
+  
+  /**
+    * Indicates to client to continue requesting completions on subsequent keystrokes.
+    */
+  var isIncomplete: js.UndefOr[`true`] = js.undefined
   
   var isMemberCompletion: Boolean
   
@@ -41,9 +50,17 @@ object CompletionInfo {
     
     inline def setEntries(value: js.Array[CompletionEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    inline def setEntriesVarargs(value: CompletionEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: CompletionEntry*): Self = StObject.set(x, "entries", js.Array(value*))
+    
+    inline def setFlags(value: CompletionInfoFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    
+    inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
     
     inline def setIsGlobalCompletion(value: Boolean): Self = StObject.set(x, "isGlobalCompletion", value.asInstanceOf[js.Any])
+    
+    inline def setIsIncomplete(value: `true`): Self = StObject.set(x, "isIncomplete", value.asInstanceOf[js.Any])
+    
+    inline def setIsIncompleteUndefined: Self = StObject.set(x, "isIncomplete", js.undefined)
     
     inline def setIsMemberCompletion(value: Boolean): Self = StObject.set(x, "isMemberCompletion", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,7 @@ trait DescribeEnvironmentManagedActionHistoryRequest extends StObject {
   /**
     * The maximum number of items to return for a single request.
     */
-  var MaxItems: js.UndefOr[Integer] = js.undefined
+  var MaxItems: js.UndefOr[ManagedActionHistoryMaxItems] = js.undefined
   
   /**
     * The pagination token returned by a previous request.
@@ -43,7 +43,7 @@ object DescribeEnvironmentManagedActionHistoryRequest {
     
     inline def setEnvironmentNameUndefined: Self = StObject.set(x, "EnvironmentName", js.undefined)
     
-    inline def setMaxItems(value: Integer): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: ManagedActionHistoryMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
     inline def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
     

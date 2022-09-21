@@ -31,7 +31,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.csstype.csstypeStrings.`[color-interpolation-filters]`
   - typings.csstype.csstypeStrings.`[color-interpolation]`
   - typings.csstype.csstypeStrings.`[color-profile]`
-  - typings.csstype.csstypeStrings.`[color-rendering]`
   - typings.csstype.csstypeStrings.`[color]`
   - typings.csstype.csstypeStrings.`[contentScriptType]`
   - typings.csstype.csstypeStrings.`[contentStyleType]`
@@ -53,7 +52,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.csstype.csstypeStrings.`[edgeMode]`
   - typings.csstype.csstypeStrings.`[elevation]`
   - typings.csstype.csstypeStrings.`[enable-background]`
-  - typings.csstype.csstypeStrings.`[externalResourcesRequired]`
   - typings.csstype.csstypeStrings.`[fill-opacity]`
   - typings.csstype.csstypeStrings.`[fill-rule]`
   - typings.csstype.csstypeStrings.`[fill]`
@@ -85,8 +83,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.csstype.csstypeStrings.`[gradientUnits]`
   - typings.csstype.csstypeStrings.`[graphical]`
   - typings.csstype.csstypeStrings.`[hanging]`
-  - typings.csstype.csstypeStrings.`[hatchContentUnits]`
-  - typings.csstype.csstypeStrings.`[hatchUnits]`
   - typings.csstype.csstypeStrings.`[height]`
   - typings.csstype.csstypeStrings.`[horiz-adv-x]`
   - typings.csstype.csstypeStrings.`[horiz-origin-x]`
@@ -110,10 +106,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.csstype.csstypeStrings.`[lang]`
   - typings.csstype.csstypeStrings.`[lengthAdjust]`
   - typings.csstype.csstypeStrings.`[letter-spacing]`
-  - typings.csstype.csstypeStrings.`[lighterForError]`
   - typings.csstype.csstypeStrings.`[lighting-color]`
   - typings.csstype.csstypeStrings.`[limitingConeAngle]`
-  - typings.csstype.csstypeStrings.`[local]`
   - typings.csstype.csstypeStrings.`[marker-end]`
   - typings.csstype.csstypeStrings.`[marker-mid]`
   - typings.csstype.csstypeStrings.`[marker-start]`
@@ -125,7 +119,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.csstype.csstypeStrings.`[mask]`
   - typings.csstype.csstypeStrings.`[mathematical]`
   - typings.csstype.csstypeStrings.`[media]`
-  - typings.csstype.csstypeStrings.`[method]`
   - typings.csstype.csstypeStrings.`[mode]`
   - typings.csstype.csstypeStrings.`[name]`
   - typings.csstype.csstypeStrings.`[numOctaves]`
@@ -146,7 +139,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.csstype.csstypeStrings.`[patternTransform]`
   - typings.csstype.csstypeStrings.`[patternUnits]`
   - typings.csstype.csstypeStrings.`[ping]`
-  - typings.csstype.csstypeStrings.`[pitch]`
   - typings.csstype.csstypeStrings.`[pointer-events]`
   - typings.csstype.csstypeStrings.`[pointsAtX]`
   - typings.csstype.csstypeStrings.`[pointsAtY]`
@@ -159,9 +151,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.csstype.csstypeStrings.`[radius]`
   - typings.csstype.csstypeStrings.`[refX]`
   - typings.csstype.csstypeStrings.`[refY]`
-  - typings.csstype.csstypeStrings.`[referrerPolicy]`
+  - typings.csstype.csstypeStrings.`[referrerpolicy]`
   - typings.csstype.csstypeStrings.`[rel]`
-  - typings.csstype.csstypeStrings.`[rendering-intent]`
   - typings.csstype.csstypeStrings.`[repeatCount]`
   - typings.csstype.csstypeStrings.`[requiredExtensions]`
   - typings.csstype.csstypeStrings.`[requiredFeatures]`
@@ -307,8 +298,6 @@ object SvgAttributes {
   
   inline def `[color-profile]`: typings.csstype.csstypeStrings.`[color-profile]` = "[color-profile]".asInstanceOf[typings.csstype.csstypeStrings.`[color-profile]`]
   
-  inline def `[color-rendering]`: typings.csstype.csstypeStrings.`[color-rendering]` = "[color-rendering]".asInstanceOf[typings.csstype.csstypeStrings.`[color-rendering]`]
-  
   inline def `[color]`: typings.csstype.csstypeStrings.`[color]` = "[color]".asInstanceOf[typings.csstype.csstypeStrings.`[color]`]
   
   inline def `[contentScriptType]`: typings.csstype.csstypeStrings.`[contentScriptType]` = "[contentScriptType]".asInstanceOf[typings.csstype.csstypeStrings.`[contentScriptType]`]
@@ -350,8 +339,6 @@ object SvgAttributes {
   inline def `[elevation]`: typings.csstype.csstypeStrings.`[elevation]` = "[elevation]".asInstanceOf[typings.csstype.csstypeStrings.`[elevation]`]
   
   inline def `[enable-background]`: typings.csstype.csstypeStrings.`[enable-background]` = "[enable-background]".asInstanceOf[typings.csstype.csstypeStrings.`[enable-background]`]
-  
-  inline def `[externalResourcesRequired]`: typings.csstype.csstypeStrings.`[externalResourcesRequired]` = "[externalResourcesRequired]".asInstanceOf[typings.csstype.csstypeStrings.`[externalResourcesRequired]`]
   
   inline def `[fill-opacity]`: typings.csstype.csstypeStrings.`[fill-opacity]` = "[fill-opacity]".asInstanceOf[typings.csstype.csstypeStrings.`[fill-opacity]`]
   
@@ -415,10 +402,6 @@ object SvgAttributes {
   
   inline def `[hanging]`: typings.csstype.csstypeStrings.`[hanging]` = "[hanging]".asInstanceOf[typings.csstype.csstypeStrings.`[hanging]`]
   
-  inline def `[hatchContentUnits]`: typings.csstype.csstypeStrings.`[hatchContentUnits]` = "[hatchContentUnits]".asInstanceOf[typings.csstype.csstypeStrings.`[hatchContentUnits]`]
-  
-  inline def `[hatchUnits]`: typings.csstype.csstypeStrings.`[hatchUnits]` = "[hatchUnits]".asInstanceOf[typings.csstype.csstypeStrings.`[hatchUnits]`]
-  
   inline def `[height]`: typings.csstype.csstypeStrings.`[height]` = "[height]".asInstanceOf[typings.csstype.csstypeStrings.`[height]`]
   
   inline def `[horiz-adv-x]`: typings.csstype.csstypeStrings.`[horiz-adv-x]` = "[horiz-adv-x]".asInstanceOf[typings.csstype.csstypeStrings.`[horiz-adv-x]`]
@@ -465,13 +448,9 @@ object SvgAttributes {
   
   inline def `[letter-spacing]`: typings.csstype.csstypeStrings.`[letter-spacing]` = "[letter-spacing]".asInstanceOf[typings.csstype.csstypeStrings.`[letter-spacing]`]
   
-  inline def `[lighterForError]`: typings.csstype.csstypeStrings.`[lighterForError]` = "[lighterForError]".asInstanceOf[typings.csstype.csstypeStrings.`[lighterForError]`]
-  
   inline def `[lighting-color]`: typings.csstype.csstypeStrings.`[lighting-color]` = "[lighting-color]".asInstanceOf[typings.csstype.csstypeStrings.`[lighting-color]`]
   
   inline def `[limitingConeAngle]`: typings.csstype.csstypeStrings.`[limitingConeAngle]` = "[limitingConeAngle]".asInstanceOf[typings.csstype.csstypeStrings.`[limitingConeAngle]`]
-  
-  inline def `[local]`: typings.csstype.csstypeStrings.`[local]` = "[local]".asInstanceOf[typings.csstype.csstypeStrings.`[local]`]
   
   inline def `[marker-end]`: typings.csstype.csstypeStrings.`[marker-end]` = "[marker-end]".asInstanceOf[typings.csstype.csstypeStrings.`[marker-end]`]
   
@@ -494,8 +473,6 @@ object SvgAttributes {
   inline def `[mathematical]`: typings.csstype.csstypeStrings.`[mathematical]` = "[mathematical]".asInstanceOf[typings.csstype.csstypeStrings.`[mathematical]`]
   
   inline def `[media]`: typings.csstype.csstypeStrings.`[media]` = "[media]".asInstanceOf[typings.csstype.csstypeStrings.`[media]`]
-  
-  inline def `[method]`: typings.csstype.csstypeStrings.`[method]` = "[method]".asInstanceOf[typings.csstype.csstypeStrings.`[method]`]
   
   inline def `[mode]`: typings.csstype.csstypeStrings.`[mode]` = "[mode]".asInstanceOf[typings.csstype.csstypeStrings.`[mode]`]
   
@@ -537,8 +514,6 @@ object SvgAttributes {
   
   inline def `[ping]`: typings.csstype.csstypeStrings.`[ping]` = "[ping]".asInstanceOf[typings.csstype.csstypeStrings.`[ping]`]
   
-  inline def `[pitch]`: typings.csstype.csstypeStrings.`[pitch]` = "[pitch]".asInstanceOf[typings.csstype.csstypeStrings.`[pitch]`]
-  
   inline def `[pointer-events]`: typings.csstype.csstypeStrings.`[pointer-events]` = "[pointer-events]".asInstanceOf[typings.csstype.csstypeStrings.`[pointer-events]`]
   
   inline def `[pointsAtX]`: typings.csstype.csstypeStrings.`[pointsAtX]` = "[pointsAtX]".asInstanceOf[typings.csstype.csstypeStrings.`[pointsAtX]`]
@@ -563,11 +538,9 @@ object SvgAttributes {
   
   inline def `[refY]`: typings.csstype.csstypeStrings.`[refY]` = "[refY]".asInstanceOf[typings.csstype.csstypeStrings.`[refY]`]
   
-  inline def `[referrerPolicy]`: typings.csstype.csstypeStrings.`[referrerPolicy]` = "[referrerPolicy]".asInstanceOf[typings.csstype.csstypeStrings.`[referrerPolicy]`]
+  inline def `[referrerpolicy]`: typings.csstype.csstypeStrings.`[referrerpolicy]` = "[referrerpolicy]".asInstanceOf[typings.csstype.csstypeStrings.`[referrerpolicy]`]
   
   inline def `[rel]`: typings.csstype.csstypeStrings.`[rel]` = "[rel]".asInstanceOf[typings.csstype.csstypeStrings.`[rel]`]
-  
-  inline def `[rendering-intent]`: typings.csstype.csstypeStrings.`[rendering-intent]` = "[rendering-intent]".asInstanceOf[typings.csstype.csstypeStrings.`[rendering-intent]`]
   
   inline def `[repeatCount]`: typings.csstype.csstypeStrings.`[repeatCount]` = "[repeatCount]".asInstanceOf[typings.csstype.csstypeStrings.`[repeatCount]`]
   

@@ -18,7 +18,7 @@ object httpMod {
   
   @JSImport("http", "Agent")
   @js.native
-  class Agent () extends StObject {
+  open class Agent () extends StObject {
     def this(opts: AgentOptions) = this()
     
     /**
@@ -31,9 +31,9 @@ object httpMod {
     
     var maxSockets: Double = js.native
     
-    var requests: js.Any = js.native
+    var requests: Any = js.native
     
-    var sockets: js.Any = js.native
+    var sockets: Any = js.native
   }
   
   @JSImport("http", "METHODS")
@@ -41,24 +41,24 @@ object httpMod {
   def METHODS: js.Array[String] = js.native
   inline def METHODS_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("METHODS")(x.asInstanceOf[js.Any])
   
-  inline def createClient(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")().asInstanceOf[js.Any]
-  inline def createClient(port: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(port.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def createClient(port: Double, host: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def createClient(port: Unit, host: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def createClient(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")().asInstanceOf[Any]
+  inline def createClient(port: Double): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(port.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def createClient(port: Double, host: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def createClient(port: Unit, host: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def createServer(): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[Server]
   inline def createServer(requestListener: js.Function2[/* request */ IncomingMessage, /* response */ ServerResponse, Unit]): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(requestListener.asInstanceOf[js.Any]).asInstanceOf[Server]
   
-  inline def get(options: js.Any): ClientRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any]).asInstanceOf[ClientRequest]
-  inline def get(options: js.Any, callback: js.Function1[/* res */ IncomingMessage, Unit]): ClientRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ClientRequest]
+  inline def get(options: Any): ClientRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any]).asInstanceOf[ClientRequest]
+  inline def get(options: Any, callback: js.Function1[/* res */ IncomingMessage, Unit]): ClientRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ClientRequest]
   
   @JSImport("http", "globalAgent")
   @js.native
   def globalAgent: Agent = js.native
   inline def globalAgent_=(x: Agent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("globalAgent")(x.asInstanceOf[js.Any])
   
-  inline def request(options: js.Any): ClientRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(options.asInstanceOf[js.Any]).asInstanceOf[ClientRequest]
-  inline def request(options: js.Any, callback: js.Function1[/* res */ IncomingMessage, Unit]): ClientRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ClientRequest]
+  inline def request(options: Any): ClientRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(options.asInstanceOf[js.Any]).asInstanceOf[ClientRequest]
+  inline def request(options: Any, callback: js.Function1[/* res */ IncomingMessage, Unit]): ClientRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ClientRequest]
   
   trait AgentOptions extends StObject {
     
@@ -115,8 +115,8 @@ object httpMod {
     
     def abort(): Unit = js.native
     
-    def end(data: js.Any): Unit = js.native
-    def end(data: js.Any, encoding: String): Unit = js.native
+    def end(data: Any): Unit = js.native
+    def end(data: Any, encoding: String): Unit = js.native
     def end(data: Unit, encoding: String): Unit = js.native
     
     def setNoDelay(): Unit = js.native
@@ -130,8 +130,8 @@ object httpMod {
     def setTimeout(timeout: Double): Unit = js.native
     def setTimeout(timeout: Double, callback: js.Function): Unit = js.native
     
-    def write(chunk: js.Any): Unit = js.native
-    def write(chunk: js.Any, encoding: String): Unit = js.native
+    def write(chunk: Any): Unit = js.native
+    def write(chunk: Any, encoding: String): Unit = js.native
     def write(str: String, encoding: String, fd: String): Boolean = js.native
     def write(str: String, encoding: Unit, fd: String): Boolean = js.native
   }
@@ -141,7 +141,7 @@ object httpMod {
   @js.native
   trait IncomingMessage extends Readable {
     
-    var headers: js.Any = js.native
+    var headers: Any = js.native
     
     var httpVersion: String = js.native
     
@@ -152,7 +152,7 @@ object httpMod {
     
     var rawHeaders: js.Array[String] = js.native
     
-    var rawTrailers: js.Any = js.native
+    var rawTrailers: Any = js.native
     
     def setTimeout(msecs: Double, callback: js.Function): Timer = js.native
     
@@ -168,7 +168,7 @@ object httpMod {
       */
     var statusMessage: js.UndefOr[String] = js.native
     
-    var trailers: js.Any = js.native
+    var trailers: Any = js.native
     
     /**
       * Only valid for request obtained from http.Server.
@@ -182,10 +182,10 @@ object httpMod {
     def address(): Address = js.native
     
     def close(): Server = js.native
-    def close(cb: js.Any): Server = js.native
+    def close(cb: Any): Server = js.native
     
-    def listen(handle: js.Any): Server = js.native
-    def listen(handle: js.Any, listeningListener: js.Function): Server = js.native
+    def listen(handle: Any): Server = js.native
+    def listen(handle: Any, listeningListener: js.Function): Server = js.native
     def listen(path: String): Server = js.native
     def listen(path: String, callback: js.Function): Server = js.native
     def listen(port: Double): Server = js.native
@@ -211,10 +211,10 @@ object httpMod {
   @js.native
   trait ServerResponse extends Writable {
     
-    def addTrailers(headers: js.Any): Unit = js.native
+    def addTrailers(headers: Any): Unit = js.native
     
-    def end(data: js.Any): Unit = js.native
-    def end(data: js.Any, encoding: String): Unit = js.native
+    def end(data: Any): Unit = js.native
+    def end(data: Any, encoding: String): Unit = js.native
     def end(data: Unit, encoding: String): Unit = js.native
     
     def getHeader(name: String): String = js.native
@@ -227,17 +227,17 @@ object httpMod {
     
     var statusCode: Double = js.native
     
-    def write(chunk: js.Any): js.Any = js.native
-    def write(chunk: js.Any, encoding: String): js.Any = js.native
+    def write(chunk: Any): Any = js.native
+    def write(chunk: Any, encoding: String): Any = js.native
     def write(str: String, encoding: String, fd: String): Boolean = js.native
     def write(str: String, encoding: Unit, fd: String): Boolean = js.native
     
     def writeContinue(): Unit = js.native
     
     def writeHead(statusCode: Double): Unit = js.native
-    def writeHead(statusCode: Double, headers: js.Any): Unit = js.native
+    def writeHead(statusCode: Double, headers: Any): Unit = js.native
     def writeHead(statusCode: Double, reasonPhrase: String): Unit = js.native
-    def writeHead(statusCode: Double, reasonPhrase: String, headers: js.Any): Unit = js.native
-    def writeHead(statusCode: Double, reasonPhrase: Unit, headers: js.Any): Unit = js.native
+    def writeHead(statusCode: Double, reasonPhrase: String, headers: Any): Unit = js.native
+    def writeHead(statusCode: Double, reasonPhrase: Unit, headers: Any): Unit = js.native
   }
 }

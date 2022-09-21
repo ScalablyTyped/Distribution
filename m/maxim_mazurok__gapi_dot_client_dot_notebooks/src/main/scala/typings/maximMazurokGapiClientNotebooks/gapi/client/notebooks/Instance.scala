@@ -22,11 +22,17 @@ trait Instance extends StObject {
   /** Input only. The type of the boot disk attached to this instance, defaults to standard persistent disk (`PD_STANDARD`). */
   var bootDiskType: js.UndefOr[String] = js.undefined
   
+  /** Optional. Flag to enable ip forwarding or not, default false/off. https://cloud.google.com/vpc/docs/using-routes#canipforward */
+  var canIpForward: js.UndefOr[Boolean] = js.undefined
+  
   /** Use a container image to start the notebook instance. */
   var containerImage: js.UndefOr[ContainerImage] = js.undefined
   
   /** Output only. Instance creation time. */
   var createTime: js.UndefOr[String] = js.undefined
+  
+  /** Output only. Email address of entity that sent original CreateInstance request. */
+  var creator: js.UndefOr[String] = js.undefined
   
   /** Specify a custom Cloud Storage path where the GPU driver is stored. If not specified, we'll automatically choose from official GPU drivers. */
   var customGpuDriverPath: js.UndefOr[String] = js.undefined
@@ -68,7 +74,7 @@ trait Instance extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientNotebooks.maximMazurokGapiClientNotebooksStrings.Instance & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientNotebooks.maximMazurokGapiClientNotebooksStrings.Instance & TopLevel[Any]
   ] = js.undefined
   
   /** Required. The [Compute Engine machine type](/compute/docs/machine-types) of this instance. */
@@ -78,7 +84,7 @@ trait Instance extends StObject {
   var metadata: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientNotebooks.maximMazurokGapiClientNotebooksStrings.Instance & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientNotebooks.maximMazurokGapiClientNotebooksStrings.Instance & TopLevel[Any]
   ] = js.undefined
   
   /** Output only. The name of this notebook instance. Format: `projects/{project_id}/locations/{location}/instances/{instance_id}` */
@@ -86,6 +92,9 @@ trait Instance extends StObject {
   
   /** The name of the VPC that this instance is in. Format: `projects/{project_id}/global/networks/{network_id}` */
   var network: js.UndefOr[String] = js.undefined
+  
+  /** Optional. The type of vNIC to be used on this interface. This may be gVNIC or VirtioNet. */
+  var nicType: js.UndefOr[String] = js.undefined
   
   /** If true, the notebook instance will not register with the proxy. */
   var noProxyAccess: js.UndefOr[Boolean] = js.undefined
@@ -96,11 +105,17 @@ trait Instance extends StObject {
   /** Input only. If true, the data disk will not be auto deleted when deleting the instance. */
   var noRemoveDataDisk: js.UndefOr[Boolean] = js.undefined
   
-  /** Path to a Bash script that automatically runs after a notebook instance fully boots up. The path must be a URL or Cloud Storage path (gs://path-to-file/file-name). */
+  /** Path to a Bash script that automatically runs after a notebook instance fully boots up. The path must be a URL or Cloud Storage path (`gs://path-to-file/file-name`). */
   var postStartupScript: js.UndefOr[String] = js.undefined
   
   /** Output only. The proxy endpoint that is used to access the Jupyter notebook. */
   var proxyUri: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Optional. The optional reservation affinity. Setting this field will apply the specified [Zonal Compute
+    * Reservation](https://cloud.google.com/compute/docs/instances/reserving-zonal-resources) to this notebook instance.
+    */
+  var reservationAffinity: js.UndefOr[ReservationAffinity] = js.undefined
   
   /**
     * The service account on this instance, giving access to other Google Cloud services. You can use any service account within the same project, but you must have the service account
@@ -109,11 +124,24 @@ trait Instance extends StObject {
     */
   var serviceAccount: js.UndefOr[String] = js.undefined
   
+  /**
+    * Optional. The URIs of service account scopes to be included in Compute Engine instances. If not specified, the following
+    * [scopes](https://cloud.google.com/compute/docs/access/service-accounts#accesscopesiam) are defined: - https://www.googleapis.com/auth/cloud-platform -
+    * https://www.googleapis.com/auth/userinfo.email If not using default scopes, you need at least: https://www.googleapis.com/auth/compute
+    */
+  var serviceAccountScopes: js.UndefOr[js.Array[String]] = js.undefined
+  
+  /** Optional. Shielded VM configuration. [Images using supported Shielded VM features](https://cloud.google.com/compute/docs/instances/modifying-shielded-vm). */
+  var shieldedInstanceConfig: js.UndefOr[ShieldedInstanceConfig] = js.undefined
+  
   /** Output only. The state of this instance. */
   var state: js.UndefOr[String] = js.undefined
   
   /** The name of the subnet that this instance is in. Format: `projects/{project_id}/regions/{region}/subnetworks/{subnetwork_id}` */
   var subnet: js.UndefOr[String] = js.undefined
+  
+  /** Optional. The Compute Engine tags to add to runtime (see [Tagging instances](https://cloud.google.com/compute/docs/label-or-tag-resources#tags)). */
+  var tags: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Output only. Instance update time. */
   var updateTime: js.UndefOr[String] = js.undefined
@@ -145,6 +173,10 @@ object Instance {
     
     inline def setBootDiskTypeUndefined: Self = StObject.set(x, "bootDiskType", js.undefined)
     
+    inline def setCanIpForward(value: Boolean): Self = StObject.set(x, "canIpForward", value.asInstanceOf[js.Any])
+    
+    inline def setCanIpForwardUndefined: Self = StObject.set(x, "canIpForward", js.undefined)
+    
     inline def setContainerImage(value: ContainerImage): Self = StObject.set(x, "containerImage", value.asInstanceOf[js.Any])
     
     inline def setContainerImageUndefined: Self = StObject.set(x, "containerImage", js.undefined)
@@ -152,6 +184,10 @@ object Instance {
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    
+    inline def setCreator(value: String): Self = StObject.set(x, "creator", value.asInstanceOf[js.Any])
+    
+    inline def setCreatorUndefined: Self = StObject.set(x, "creator", js.undefined)
     
     inline def setCustomGpuDriverPath(value: String): Self = StObject.set(x, "customGpuDriverPath", value.asInstanceOf[js.Any])
     
@@ -173,7 +209,7 @@ object Instance {
     
     inline def setDisksUndefined: Self = StObject.set(x, "disks", js.undefined)
     
-    inline def setDisksVarargs(value: Disk*): Self = StObject.set(x, "disks", js.Array(value :_*))
+    inline def setDisksVarargs(value: Disk*): Self = StObject.set(x, "disks", js.Array(value*))
     
     inline def setInstallGpuDriver(value: Boolean): Self = StObject.set(x, "installGpuDriver", value.asInstanceOf[js.Any])
     
@@ -183,7 +219,7 @@ object Instance {
     
     inline def setInstanceOwnersUndefined: Self = StObject.set(x, "instanceOwners", js.undefined)
     
-    inline def setInstanceOwnersVarargs(value: String*): Self = StObject.set(x, "instanceOwners", js.Array(value :_*))
+    inline def setInstanceOwnersVarargs(value: String*): Self = StObject.set(x, "instanceOwners", js.Array(value*))
     
     inline def setKmsKey(value: String): Self = StObject.set(x, "kmsKey", value.asInstanceOf[js.Any])
     
@@ -192,7 +228,7 @@ object Instance {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientNotebooks.maximMazurokGapiClientNotebooksStrings.Instance & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientNotebooks.maximMazurokGapiClientNotebooksStrings.Instance & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -204,7 +240,7 @@ object Instance {
     inline def setMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientNotebooks.maximMazurokGapiClientNotebooksStrings.Instance & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientNotebooks.maximMazurokGapiClientNotebooksStrings.Instance & TopLevel[Any]
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
@@ -216,6 +252,10 @@ object Instance {
     inline def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
     inline def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
+    
+    inline def setNicType(value: String): Self = StObject.set(x, "nicType", value.asInstanceOf[js.Any])
+    
+    inline def setNicTypeUndefined: Self = StObject.set(x, "nicType", js.undefined)
     
     inline def setNoProxyAccess(value: Boolean): Self = StObject.set(x, "noProxyAccess", value.asInstanceOf[js.Any])
     
@@ -237,9 +277,23 @@ object Instance {
     
     inline def setProxyUriUndefined: Self = StObject.set(x, "proxyUri", js.undefined)
     
+    inline def setReservationAffinity(value: ReservationAffinity): Self = StObject.set(x, "reservationAffinity", value.asInstanceOf[js.Any])
+    
+    inline def setReservationAffinityUndefined: Self = StObject.set(x, "reservationAffinity", js.undefined)
+    
     inline def setServiceAccount(value: String): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
     
+    inline def setServiceAccountScopes(value: js.Array[String]): Self = StObject.set(x, "serviceAccountScopes", value.asInstanceOf[js.Any])
+    
+    inline def setServiceAccountScopesUndefined: Self = StObject.set(x, "serviceAccountScopes", js.undefined)
+    
+    inline def setServiceAccountScopesVarargs(value: String*): Self = StObject.set(x, "serviceAccountScopes", js.Array(value*))
+    
     inline def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
+    
+    inline def setShieldedInstanceConfig(value: ShieldedInstanceConfig): Self = StObject.set(x, "shieldedInstanceConfig", value.asInstanceOf[js.Any])
+    
+    inline def setShieldedInstanceConfigUndefined: Self = StObject.set(x, "shieldedInstanceConfig", js.undefined)
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
@@ -249,6 +303,12 @@ object Instance {
     
     inline def setSubnetUndefined: Self = StObject.set(x, "subnet", js.undefined)
     
+    inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
+    
     inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
     inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
@@ -257,7 +317,7 @@ object Instance {
     
     inline def setUpgradeHistoryUndefined: Self = StObject.set(x, "upgradeHistory", js.undefined)
     
-    inline def setUpgradeHistoryVarargs(value: UpgradeHistoryEntry*): Self = StObject.set(x, "upgradeHistory", js.Array(value :_*))
+    inline def setUpgradeHistoryVarargs(value: UpgradeHistoryEntry*): Self = StObject.set(x, "upgradeHistory", js.Array(value*))
     
     inline def setVmImage(value: VmImage): Self = StObject.set(x, "vmImage", value.asInstanceOf[js.Any])
     

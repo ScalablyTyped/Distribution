@@ -9,7 +9,7 @@ trait DatasetGroupSummary extends StObject {
   /**
     * When the dataset group was created.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the dataset group.
@@ -24,7 +24,7 @@ trait DatasetGroupSummary extends StObject {
   /**
     * When the dataset group was created or last updated from a call to the UpdateDatasetGroup operation. While the dataset group is being updated, LastModificationTime is the current time of the ListDatasetGroups call.
     */
-  var LastModificationTime: js.UndefOr[Timestamp] = js.undefined
+  var LastModificationTime: js.UndefOr[js.Date] = js.undefined
 }
 object DatasetGroupSummary {
   
@@ -35,7 +35,7 @@ object DatasetGroupSummary {
   
   extension [Self <: DatasetGroupSummary](x: Self) {
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
@@ -47,7 +47,7 @@ object DatasetGroupSummary {
     
     inline def setDatasetGroupNameUndefined: Self = StObject.set(x, "DatasetGroupName", js.undefined)
     
-    inline def setLastModificationTime(value: Timestamp): Self = StObject.set(x, "LastModificationTime", value.asInstanceOf[js.Any])
+    inline def setLastModificationTime(value: js.Date): Self = StObject.set(x, "LastModificationTime", value.asInstanceOf[js.Any])
     
     inline def setLastModificationTimeUndefined: Self = StObject.set(x, "LastModificationTime", js.undefined)
   }

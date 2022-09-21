@@ -10,10 +10,10 @@ Keccak sponge function family
 | ------------------ | :-------------: |
 | Full name          | keccak |
 | Keywords           | sha3, sha-3, keccak, shake |
-| # releases         | 4 |
-| # dependents       | 231 |
-| # downloads        | 8111585 |
-| # stars            | 2 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 2987783.3333333335 |
+| # stars            | 77.0 |
 
 ## Links
 - [Homepage](https://github.com/cryptocoinjs/keccak#readme)

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "opentracing" : "0.14.5"
+      "opentracing" : "0.14.7"
     }
   ],
   "test-dependencies" : [
     {
-      "opentracing" : "0.14.5"
+      "opentracing" : "0.14.7"
     }
   ],
   "compile-devDependencies" : [

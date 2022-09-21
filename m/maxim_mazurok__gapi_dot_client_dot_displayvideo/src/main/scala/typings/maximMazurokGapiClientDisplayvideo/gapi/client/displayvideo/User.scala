@@ -34,7 +34,7 @@ object User {
     
     inline def setAssignedUserRolesUndefined: Self = StObject.set(x, "assignedUserRoles", js.undefined)
     
-    inline def setAssignedUserRolesVarargs(value: AssignedUserRole*): Self = StObject.set(x, "assignedUserRoles", js.Array(value :_*))
+    inline def setAssignedUserRolesVarargs(value: AssignedUserRole*): Self = StObject.set(x, "assignedUserRoles", js.Array(value*))
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

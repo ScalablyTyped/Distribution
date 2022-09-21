@@ -19,6 +19,6 @@ object Expanded {
     
     inline def setExpanded(value: js.Array[typings.react.mod.Key]): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
     
-    inline def setExpandedVarargs(value: typings.react.mod.Key*): Self = StObject.set(x, "expanded", js.Array(value :_*))
+    inline def setExpandedVarargs(value: typings.react.mod.Key*): Self = StObject.set(x, "expanded", js.Array(value*))
   }
 }

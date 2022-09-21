@@ -73,7 +73,7 @@ object XViewSplitable {
     getSplitHorizontal: () => Double,
     getSplitRow: () => Double,
     getSplitVertical: () => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     splitAtPosition: (Double, Double) => Unit
   ): XViewSplitable = {

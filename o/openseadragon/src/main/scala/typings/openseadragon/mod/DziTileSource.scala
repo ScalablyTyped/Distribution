@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("openseadragon", "DziTileSource")
 @js.native
-class DziTileSource protected () extends TileSource {
+open class DziTileSource protected () extends TileSource {
   def this(
     width: Double,
     height: Double,

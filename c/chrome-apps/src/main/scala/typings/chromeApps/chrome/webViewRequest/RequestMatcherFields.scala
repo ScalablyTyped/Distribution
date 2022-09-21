@@ -82,25 +82,25 @@ object RequestMatcherFields {
     
     inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    inline def setContentTypeVarargs(value: String*): Self = StObject.set(x, "contentType", js.Array(value :_*))
+    inline def setContentTypeVarargs(value: String*): Self = StObject.set(x, "contentType", js.Array(value*))
     
     inline def setExcludeContentType(value: js.Array[String]): Self = StObject.set(x, "excludeContentType", value.asInstanceOf[js.Any])
     
     inline def setExcludeContentTypeUndefined: Self = StObject.set(x, "excludeContentType", js.undefined)
     
-    inline def setExcludeContentTypeVarargs(value: String*): Self = StObject.set(x, "excludeContentType", js.Array(value :_*))
+    inline def setExcludeContentTypeVarargs(value: String*): Self = StObject.set(x, "excludeContentType", js.Array(value*))
     
     inline def setExcludeRequestHeaders(value: js.Array[HeaderFilter]): Self = StObject.set(x, "excludeRequestHeaders", value.asInstanceOf[js.Any])
     
     inline def setExcludeRequestHeadersUndefined: Self = StObject.set(x, "excludeRequestHeaders", js.undefined)
     
-    inline def setExcludeRequestHeadersVarargs(value: HeaderFilter*): Self = StObject.set(x, "excludeRequestHeaders", js.Array(value :_*))
+    inline def setExcludeRequestHeadersVarargs(value: HeaderFilter*): Self = StObject.set(x, "excludeRequestHeaders", js.Array(value*))
     
     inline def setExcludeResponseHeaders(value: js.Array[HeaderFilter]): Self = StObject.set(x, "excludeResponseHeaders", value.asInstanceOf[js.Any])
     
     inline def setExcludeResponseHeadersUndefined: Self = StObject.set(x, "excludeResponseHeaders", js.undefined)
     
-    inline def setExcludeResponseHeadersVarargs(value: HeaderFilter*): Self = StObject.set(x, "excludeResponseHeaders", js.Array(value :_*))
+    inline def setExcludeResponseHeadersVarargs(value: HeaderFilter*): Self = StObject.set(x, "excludeResponseHeaders", js.Array(value*))
     
     inline def setFirstPartyForCookiesUrl(value: UrlFilter): Self = StObject.set(x, "firstPartyForCookiesUrl", value.asInstanceOf[js.Any])
     
@@ -110,25 +110,25 @@ object RequestMatcherFields {
     
     inline def setRequestHeadersUndefined: Self = StObject.set(x, "requestHeaders", js.undefined)
     
-    inline def setRequestHeadersVarargs(value: HeaderFilter*): Self = StObject.set(x, "requestHeaders", js.Array(value :_*))
+    inline def setRequestHeadersVarargs(value: HeaderFilter*): Self = StObject.set(x, "requestHeaders", js.Array(value*))
     
     inline def setResourceType(value: js.Array[ResourceType]): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
     inline def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
     
-    inline def setResourceTypeVarargs(value: ResourceType*): Self = StObject.set(x, "resourceType", js.Array(value :_*))
+    inline def setResourceTypeVarargs(value: ResourceType*): Self = StObject.set(x, "resourceType", js.Array(value*))
     
     inline def setResponseHeaders(value: js.Array[HeaderFilter]): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
     
     inline def setResponseHeadersUndefined: Self = StObject.set(x, "responseHeaders", js.undefined)
     
-    inline def setResponseHeadersVarargs(value: HeaderFilter*): Self = StObject.set(x, "responseHeaders", js.Array(value :_*))
+    inline def setResponseHeadersVarargs(value: HeaderFilter*): Self = StObject.set(x, "responseHeaders", js.Array(value*))
     
     inline def setStages(value: js.Array[Stage]): Self = StObject.set(x, "stages", value.asInstanceOf[js.Any])
     
     inline def setStagesUndefined: Self = StObject.set(x, "stages", js.undefined)
     
-    inline def setStagesVarargs(value: Stage*): Self = StObject.set(x, "stages", js.Array(value :_*))
+    inline def setStagesVarargs(value: Stage*): Self = StObject.set(x, "stages", js.Array(value*))
     
     inline def setThirdPartyForCookies(value: Boolean): Self = StObject.set(x, "thirdPartyForCookies", value.asInstanceOf[js.Any])
     

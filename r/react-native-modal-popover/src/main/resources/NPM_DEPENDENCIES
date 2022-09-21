@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-native-modal-popover" : "0.0.12"
+      "react-native-modal-popover" : "2.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "react-native-modal-popover" : "0.0.12"
+      "react-native-modal-popover" : "2.1.0"
     }
   ],
   "compile-devDependencies" : [

@@ -37,7 +37,7 @@ trait SmsDeviceMessageStore extends StObject {
     * @param messageFilter ID of the message to retrieve.
     * @return Returns a new message operation object that is used to start and track the asynchronous operation.
     */
-  def getMessagesAsync(messageFilter: SmsMessageFilter): IPromiseWithIAsyncOperationWithProgress[IVectorView[js.Any], Double]
+  def getMessagesAsync(messageFilter: SmsMessageFilter): IPromiseWithIAsyncOperationWithProgress[IVectorView[Any], Double]
   
   /** Indicates the maximum number of messages that can be stored in the device store. The client can use this value to determine how to maintain enough space in the device store to receive new messages from the network. */
   var maxMessages: Double
@@ -48,7 +48,7 @@ object SmsDeviceMessageStore {
     deleteMessageAsync: Double => IPromiseWithIAsyncAction,
     deleteMessagesAsync: SmsMessageFilter => IPromiseWithIAsyncAction,
     getMessageAsync: Double => IPromiseWithIAsyncOperation[ISmsMessage],
-    getMessagesAsync: SmsMessageFilter => IPromiseWithIAsyncOperationWithProgress[IVectorView[js.Any], Double],
+    getMessagesAsync: SmsMessageFilter => IPromiseWithIAsyncOperationWithProgress[IVectorView[Any], Double],
     maxMessages: Double
   ): SmsDeviceMessageStore = {
     val __obj = js.Dynamic.literal(deleteMessageAsync = js.Any.fromFunction1(deleteMessageAsync), deleteMessagesAsync = js.Any.fromFunction1(deleteMessagesAsync), getMessageAsync = js.Any.fromFunction1(getMessageAsync), getMessagesAsync = js.Any.fromFunction1(getMessagesAsync), maxMessages = maxMessages.asInstanceOf[js.Any])
@@ -63,7 +63,7 @@ object SmsDeviceMessageStore {
     
     inline def setGetMessageAsync(value: Double => IPromiseWithIAsyncOperation[ISmsMessage]): Self = StObject.set(x, "getMessageAsync", js.Any.fromFunction1(value))
     
-    inline def setGetMessagesAsync(value: SmsMessageFilter => IPromiseWithIAsyncOperationWithProgress[IVectorView[js.Any], Double]): Self = StObject.set(x, "getMessagesAsync", js.Any.fromFunction1(value))
+    inline def setGetMessagesAsync(value: SmsMessageFilter => IPromiseWithIAsyncOperationWithProgress[IVectorView[Any], Double]): Self = StObject.set(x, "getMessagesAsync", js.Any.fromFunction1(value))
     
     inline def setMaxMessages(value: Double): Self = StObject.set(x, "maxMessages", value.asInstanceOf[js.Any])
   }

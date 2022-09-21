@@ -2,6 +2,7 @@ package typings.wordpressShortcode
 
 import typings.std.Record
 import typings.wordpressShortcode.mod.ShortcodeAttrs
+import typings.wordpressShortcode.mod.Shortcode_
 import typings.wordpressShortcode.wordpressShortcodeStrings.`self-closing`
 import typings.wordpressShortcode.wordpressShortcodeStrings.closed
 import typings.wordpressShortcode.wordpressShortcodeStrings.single
@@ -10,27 +11,6 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
-  
-  trait Attrs extends StObject {
-    
-    var attrs: ShortcodeAttrs
-    
-    var tag: String
-  }
-  object Attrs {
-    
-    inline def apply(attrs: ShortcodeAttrs, tag: String): Attrs = {
-      val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Attrs]
-    }
-    
-    extension [Self <: Attrs](x: Self) {
-      
-      inline def setAttrs(value: ShortcodeAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
-      
-      inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
-    }
-  }
   
   @js.native
   trait Call extends StObject {
@@ -61,28 +41,6 @@ object anon {
     def clear(): Unit = js.native
   }
   
-  trait Content extends StObject {
-    
-    var content: String
-    
-    var `type`: closed
-  }
-  object Content {
-    
-    inline def apply(content: String): Content = {
-      val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("closed")
-      __obj.asInstanceOf[Content]
-    }
-    
-    extension [Self <: Content](x: Self) {
-      
-      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
-      
-      inline def setType(value: closed): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    }
-  }
-  
   /* Inlined std.Partial<@wordpress/shortcode.@wordpress/shortcode.ShortcodeAttrs> */
   trait PartialShortcodeAttrs extends StObject {
     
@@ -107,7 +65,7 @@ object anon {
       
       inline def setNumericUndefined: Self = StObject.set(x, "numeric", js.undefined)
       
-      inline def setNumericVarargs(value: String*): Self = StObject.set(x, "numeric", js.Array(value :_*))
+      inline def setNumericVarargs(value: String*): Self = StObject.set(x, "numeric", js.Array(value*))
     }
   }
   
@@ -149,19 +107,63 @@ object anon {
     }
   }
   
-  trait Type extends StObject {
+  /* Inlined {  type :'closed',   content :string} & {  attrs :@wordpress/shortcode.@wordpress/shortcode.ShortcodeAttrs,   tag :string} */
+  trait typeclosedcontentstringat
+    extends StObject
+       with Shortcode_ {
+    
+    var attrs: ShortcodeAttrs
+    
+    var content: String
+    
+    var tag: String
+    
+    var `type`: closed
+  }
+  object typeclosedcontentstringat {
+    
+    inline def apply(attrs: ShortcodeAttrs, content: String, tag: String): typeclosedcontentstringat = {
+      val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("closed")
+      __obj.asInstanceOf[typeclosedcontentstringat]
+    }
+    
+    extension [Self <: typeclosedcontentstringat](x: Self) {
+      
+      inline def setAttrs(value: ShortcodeAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+      
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
+      inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      
+      inline def setType(value: closed): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Inlined {  type :'self-closing' | 'single'} & {  attrs :@wordpress/shortcode.@wordpress/shortcode.ShortcodeAttrs,   tag :string} */
+  trait typeselfclosingsingleattr
+    extends StObject
+       with Shortcode_ {
+    
+    var attrs: ShortcodeAttrs
+    
+    var tag: String
     
     var `type`: `self-closing` | single
   }
-  object Type {
+  object typeselfclosingsingleattr {
     
-    inline def apply(`type`: `self-closing` | single): Type = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(attrs: ShortcodeAttrs, tag: String, `type`: `self-closing` | single): typeselfclosingsingleattr = {
+      val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Type]
+      __obj.asInstanceOf[typeselfclosingsingleattr]
     }
     
-    extension [Self <: Type](x: Self) {
+    extension [Self <: typeselfclosingsingleattr](x: Self) {
+      
+      inline def setAttrs(value: ShortcodeAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+      
+      inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
       inline def setType(value: `self-closing` | single): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

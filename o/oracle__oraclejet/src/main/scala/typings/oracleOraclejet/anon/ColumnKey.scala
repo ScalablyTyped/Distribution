@@ -8,7 +8,7 @@ trait ColumnKey extends StObject {
   
   var columnIndex: js.UndefOr[Double] = js.undefined
   
-  var columnKey: js.UndefOr[js.Any] = js.undefined
+  var columnKey: js.UndefOr[Any] = js.undefined
   
   var offsetX: js.UndefOr[Double] = js.undefined
   
@@ -16,7 +16,7 @@ trait ColumnKey extends StObject {
   
   var rowIndex: js.UndefOr[Double] = js.undefined
   
-  var rowKey: js.UndefOr[js.Any] = js.undefined
+  var rowKey: js.UndefOr[Any] = js.undefined
   
   var x: js.UndefOr[Double] = js.undefined
   
@@ -35,7 +35,7 @@ object ColumnKey {
     
     inline def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
     
-    inline def setColumnKey(value: js.Any): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
+    inline def setColumnKey(value: Any): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
     
     inline def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
     
@@ -51,7 +51,7 @@ object ColumnKey {
     
     inline def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
     
-    inline def setRowKey(value: js.Any): Self = StObject.set(x, "rowKey", value.asInstanceOf[js.Any])
+    inline def setRowKey(value: Any): Self = StObject.set(x, "rowKey", value.asInstanceOf[js.Any])
     
     inline def setRowKeyUndefined: Self = StObject.set(x, "rowKey", js.undefined)
     

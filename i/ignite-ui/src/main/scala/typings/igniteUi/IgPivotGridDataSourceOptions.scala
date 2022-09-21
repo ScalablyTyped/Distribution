@@ -10,7 +10,7 @@ trait IgPivotGridDataSourceOptions
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * A list of hierarchy names separated by comma (,). These will be the hierarchies in the columns of the data source.

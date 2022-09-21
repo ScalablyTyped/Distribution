@@ -14,6 +14,7 @@ import typings.reactPlotlyJs.anon.ReadonlyFigure
 import typings.reactPlotlyJs.anon.ReadonlyFrameAnimationEve
 import typings.reactPlotlyJs.anon.ReadonlyHTMLElement
 import typings.reactPlotlyJs.anon.ReadonlyLegendClickEvent
+import typings.reactPlotlyJs.anon.ReadonlyPlotHoverEvent
 import typings.reactPlotlyJs.anon.ReadonlyPlotMouseEvent
 import typings.reactPlotlyJs.anon.ReadonlyPlotRelayoutEvent
 import typings.reactPlotlyJs.anon.ReadonlyPlotSelectionEven
@@ -28,8 +29,8 @@ object mod {
   
   @JSImport("react-plotly.js", JSImport.Default)
   @js.native
-  class default ()
-    extends PureComponent[PlotParams, js.Object, js.Any]
+  open class default ()
+    extends PureComponent[PlotParams, js.Object, Any]
   
   trait Figure extends StObject {
     
@@ -50,19 +51,19 @@ object mod {
       
       inline def setData(value: js.Array[Data]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: Data*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Data*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setFrames(value: js.Array[Frame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
       
       inline def setFramesNull: Self = StObject.set(x, "frames", null)
       
-      inline def setFramesVarargs(value: Frame*): Self = StObject.set(x, "frames", js.Array(value :_*))
+      inline def setFramesVarargs(value: Frame*): Self = StObject.set(x, "frames", js.Array(value*))
       
       inline def setLayout(value: PartialLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     }
   }
   
-  type Plot = PureComponent[PlotParams, js.Object, js.Any]
+  type Plot = PureComponent[PlotParams, js.Object, Any]
   
   trait PlotParams extends StObject {
     
@@ -103,6 +104,8 @@ object mod {
     
     var onBeforeExport: js.UndefOr[js.Function0[Unit]] = js.undefined
     
+    var onBeforeHover: js.UndefOr[js.Function1[/* event */ ReadonlyPlotMouseEvent, Boolean]] = js.undefined
+    
     var onButtonClicked: js.UndefOr[js.Function1[/* event */ ButtonClickEvent, Unit]] = js.undefined
     
     var onClick: js.UndefOr[js.Function1[/* event */ ReadonlyPlotMouseEvent, Unit]] = js.undefined
@@ -121,7 +124,7 @@ object mod {
     
     var onFramework: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onHover: js.UndefOr[js.Function1[/* event */ ReadonlyPlotMouseEvent, Unit]] = js.undefined
+    var onHover: js.UndefOr[js.Function1[/* event */ ReadonlyPlotHoverEvent, Unit]] = js.undefined
     
     /**
       * Callback executed after plot is initialized.
@@ -210,7 +213,7 @@ object mod {
       
       inline def setData(value: js.Array[Data]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: Data*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Data*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -224,7 +227,7 @@ object mod {
       
       inline def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
       
-      inline def setFramesVarargs(value: Frame*): Self = StObject.set(x, "frames", js.Array(value :_*))
+      inline def setFramesVarargs(value: Frame*): Self = StObject.set(x, "frames", js.Array(value*))
       
       inline def setLayout(value: PartialLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
@@ -256,6 +259,10 @@ object mod {
       
       inline def setOnBeforeExportUndefined: Self = StObject.set(x, "onBeforeExport", js.undefined)
       
+      inline def setOnBeforeHover(value: /* event */ ReadonlyPlotMouseEvent => Boolean): Self = StObject.set(x, "onBeforeHover", js.Any.fromFunction1(value))
+      
+      inline def setOnBeforeHoverUndefined: Self = StObject.set(x, "onBeforeHover", js.undefined)
+      
       inline def setOnButtonClicked(value: /* event */ ButtonClickEvent => Unit): Self = StObject.set(x, "onButtonClicked", js.Any.fromFunction1(value))
       
       inline def setOnButtonClickedUndefined: Self = StObject.set(x, "onButtonClicked", js.undefined)
@@ -284,7 +291,7 @@ object mod {
       
       inline def setOnFrameworkUndefined: Self = StObject.set(x, "onFramework", js.undefined)
       
-      inline def setOnHover(value: /* event */ ReadonlyPlotMouseEvent => Unit): Self = StObject.set(x, "onHover", js.Any.fromFunction1(value))
+      inline def setOnHover(value: /* event */ ReadonlyPlotHoverEvent => Unit): Self = StObject.set(x, "onHover", js.Any.fromFunction1(value))
       
       inline def setOnHoverUndefined: Self = StObject.set(x, "onHover", js.undefined)
       

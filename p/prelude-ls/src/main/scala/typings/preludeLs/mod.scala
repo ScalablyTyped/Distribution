@@ -25,7 +25,7 @@ object mod {
     inline def each[A](f: js.Function1[/* x */ A, Unit], `object`: NumberDictionary[A]): NumberDictionary[A] = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(f.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[NumberDictionary[A]]
     inline def each[A](f: js.Function1[/* x */ A, Unit], `object`: StringDictionary[A]): StringDictionary[A] = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(f.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[A]]
     
-    inline def empty[A](`object`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")(`object`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def empty[A](`object`: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")(`object`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     inline def filter[A](f: js.Function1[/* x */ A, Boolean]): js.Function1[/* object */ StringDictionary[A], StringDictionary[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* object */ StringDictionary[A], StringDictionary[A]]]
     inline def filter[A](f: js.Function1[/* x */ A, Boolean], `object`: NumberDictionary[A]): NumberDictionary[A] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(f.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[NumberDictionary[A]]
@@ -139,14 +139,14 @@ object mod {
   
   inline def cos(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("cos")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def countBy[A, B](f: js.Function1[/* x */ A, B]): js.Function1[/* xs */ js.Array[A], js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("countBy")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* xs */ js.Array[A], js.Any]]
-  inline def countBy[A, B](f: js.Function1[/* x */ A, B], xs: js.Array[A]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("countBy")(f.asInstanceOf[js.Any], xs.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def countBy[A, B](f: js.Function1[/* x */ A, B]): js.Function1[/* xs */ js.Array[A], Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("countBy")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* xs */ js.Array[A], Any]]
+  inline def countBy[A, B](f: js.Function1[/* x */ A, B], xs: js.Array[A]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("countBy")(f.asInstanceOf[js.Any], xs.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def curry(f: js.Function): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("curry")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function]
   
   inline def dasherize(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dasherize")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def difference[A](xss: js.Array[A]*): js.Array[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("difference")(xss.asInstanceOf[js.Any]).asInstanceOf[js.Array[A]]
+  inline def difference[A](xss: js.Array[A]*): js.Array[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("difference")(xss.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Array[A]]
   
   inline def div(x: Double): js.Function1[/* y */ Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("div")(x.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* y */ Double, Double]]
   inline def div(x: Double, y: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("div")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Double]
@@ -175,7 +175,7 @@ object mod {
   inline def elemIndices[A](x: A, xs: js.Array[A]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("elemIndices")(x.asInstanceOf[js.Any], xs.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
   inline def empty(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def empty[A](`object`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")(`object`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def empty[A](`object`: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")(`object`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def empty[A](xs: js.Array[A]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")(xs.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def even(x: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("even")(x.asInstanceOf[js.Any]).asInstanceOf[Boolean]
@@ -200,7 +200,7 @@ object mod {
   
   inline def fix(f: js.Function): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("fix")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function]
   
-  inline def flatten(xs: js.Array[js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(xs.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def flatten(xs: js.Array[Any]): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(xs.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
   
   inline def flip[A, B, C](f: js.Function1[/* x */ A, js.Function1[/* y */ B, C]]): js.Function1[/* y */ B, js.Function1[/* x */ A, C]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flip")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* y */ B, js.Function1[/* x */ A, C]]]
   inline def flip[A, B, C](f: js.Function1[/* x */ A, js.Function1[/* y */ B, C]], y: B): js.Function1[/* x */ A, C] = (^.asInstanceOf[js.Dynamic].applyDynamic("flip")(f.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* x */ A, C]]
@@ -232,8 +232,8 @@ object mod {
   inline def gcd(x: Double): js.Function1[/* y */ Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("gcd")(x.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* y */ Double, Double]]
   inline def gcd(x: Double, y: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("gcd")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def groupBy[A, B](f: js.Function1[/* x */ A, B]): js.Function1[/* xs */ js.Array[A], js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("groupBy")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* xs */ js.Array[A], js.Any]]
-  inline def groupBy[A, B](f: js.Function1[/* x */ A, B], xs: js.Array[A]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("groupBy")(f.asInstanceOf[js.Any], xs.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def groupBy[A, B](f: js.Function1[/* x */ A, B]): js.Function1[/* xs */ js.Array[A], Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("groupBy")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* xs */ js.Array[A], Any]]
+  inline def groupBy[A, B](f: js.Function1[/* x */ A, B], xs: js.Array[A]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("groupBy")(f.asInstanceOf[js.Any], xs.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def head[A](xs: js.Array[A]): A = ^.asInstanceOf[js.Dynamic].applyDynamic("head")(xs.asInstanceOf[js.Any]).asInstanceOf[A]
   
@@ -241,7 +241,7 @@ object mod {
   
   inline def initial[A](xs: js.Array[A]): js.Array[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("initial")(xs.asInstanceOf[js.Any]).asInstanceOf[js.Array[A]]
   
-  inline def intersection[A](xss: js.Array[A]*): js.Array[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("intersection")(xss.asInstanceOf[js.Any]).asInstanceOf[js.Array[A]]
+  inline def intersection[A](xss: js.Array[A]*): js.Array[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("intersection")(xss.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Array[A]]
   
   inline def isItNaN(x: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isItNaN")(x.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
@@ -459,7 +459,7 @@ object mod {
   inline def unfoldr[A, B](f: js.Function1[/* x */ B, (js.Tuple2[A, B]) | Unit]): js.Function1[/* x */ B, js.Array[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("unfoldr")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* x */ B, js.Array[A]]]
   inline def unfoldr[A, B](f: js.Function1[/* x */ B, (js.Tuple2[A, B]) | Unit], x: B): js.Array[A] = (^.asInstanceOf[js.Dynamic].applyDynamic("unfoldr")(f.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[js.Array[A]]
   
-  inline def union[A](xss: js.Array[A]*): js.Array[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("union")(xss.asInstanceOf[js.Any]).asInstanceOf[js.Array[A]]
+  inline def union[A](xss: js.Array[A]*): js.Array[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("union")(xss.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Array[A]]
   
   inline def unique[A](xs: js.Array[A]): js.Array[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("unique")(xs.asInstanceOf[js.Any]).asInstanceOf[js.Array[A]]
   
@@ -478,9 +478,9 @@ object mod {
   inline def zip[A, B](xs: js.Array[A]): js.Function1[/* ys */ js.Array[B], js.Array[js.Tuple2[A, B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("zip")(xs.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ys */ js.Array[B], js.Array[js.Tuple2[A, B]]]]
   inline def zip[A, B](xs: js.Array[A], ys: js.Array[B]): js.Array[js.Tuple2[A, B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(xs.asInstanceOf[js.Any], ys.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Tuple2[A, B]]]
   
-  inline def zipAll[A](xss: js.Array[A]*): js.Array[js.Array[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("zipAll")(xss.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[A]]]
+  inline def zipAll[A](xss: js.Array[A]*): js.Array[js.Array[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("zipAll")(xss.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Array[js.Array[A]]]
   
-  inline def zipAllWith[A, B](f: js.Function1[/* repeated */ A, B], xss: js.Array[A]*): js.Array[B] = (^.asInstanceOf[js.Dynamic].applyDynamic("zipAllWith")(f.asInstanceOf[js.Any], xss.asInstanceOf[js.Any])).asInstanceOf[js.Array[B]]
+  inline def zipAllWith[A, B](f: js.Function1[/* repeated */ A, B], xss: js.Array[A]*): js.Array[B] = ^.asInstanceOf[js.Dynamic].applyDynamic("zipAllWith")(List(f.asInstanceOf[js.Any]).`++`(xss.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Array[B]]
   
   inline def zipWith[A, B, C](f: js.Function1[/* x */ A, js.Function1[/* y */ B, C]]): js.Function1[/* xs */ js.Array[A], js.Function1[/* ys */ js.Array[B], js.Array[C]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("zipWith")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* xs */ js.Array[A], js.Function1[/* ys */ js.Array[B], js.Array[C]]]]
   inline def zipWith[A, B, C](f: js.Function1[/* x */ A, js.Function1[/* y */ B, C]], xs: js.Array[A]): js.Function1[/* ys */ js.Array[B], js.Array[C]] = (^.asInstanceOf[js.Dynamic].applyDynamic("zipWith")(f.asInstanceOf[js.Any], xs.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* ys */ js.Array[B], js.Array[C]]]

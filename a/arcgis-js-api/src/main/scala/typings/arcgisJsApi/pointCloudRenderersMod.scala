@@ -26,18 +26,18 @@ object pointCloudRenderersMod {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudClassBreaksRenderer.html)
     */
-  class PointCloudClassBreaksRendererCls ()
+  open class PointCloudClassBreaksRendererCls ()
     extends StObject
        with typings.arcgisJsApi.esri.PointCloudClassBreaksRenderer {
     def this(properties: PointCloudClassBreaksRendererProperties) = this()
     
     /**
-      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
       *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
       */
     /* CompleteClass */
-    override def toJSON(): js.Any = js.native
+    override def toJSON(): Any = js.native
   }
   
   @JSImport("esri/pointCloudRenderers", "PointCloudRGBRenderer")
@@ -52,18 +52,18 @@ object pointCloudRenderersMod {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudRGBRenderer.html)
     */
-  class PointCloudRGBRendererCls ()
+  open class PointCloudRGBRendererCls ()
     extends StObject
        with typings.arcgisJsApi.esri.PointCloudRGBRenderer {
     def this(properties: PointCloudRGBRendererProperties) = this()
     
     /**
-      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
       *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
       */
     /* CompleteClass */
-    override def toJSON(): js.Any = js.native
+    override def toJSON(): Any = js.native
   }
   
   @JSImport("esri/pointCloudRenderers", "PointCloudStretchRenderer")
@@ -78,18 +78,18 @@ object pointCloudRenderersMod {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudStretchRenderer.html)
     */
-  class PointCloudStretchRendererCls ()
+  open class PointCloudStretchRendererCls ()
     extends StObject
        with typings.arcgisJsApi.esri.PointCloudStretchRenderer {
     def this(properties: PointCloudStretchRendererProperties) = this()
     
     /**
-      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
       *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
       */
     /* CompleteClass */
-    override def toJSON(): js.Any = js.native
+    override def toJSON(): Any = js.native
   }
   
   @JSImport("esri/pointCloudRenderers", "PointCloudUniqueValueRenderer")
@@ -104,17 +104,17 @@ object pointCloudRenderersMod {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudUniqueValueRenderer.html)
     */
-  class PointCloudUniqueValueRendererCls ()
+  open class PointCloudUniqueValueRendererCls ()
     extends StObject
        with typings.arcgisJsApi.esri.PointCloudUniqueValueRenderer {
     def this(properties: PointCloudUniqueValueRendererProperties) = this()
     
     /**
-      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      * Converts an instance of this class to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
       *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
       */
     /* CompleteClass */
-    override def toJSON(): js.Any = js.native
+    override def toJSON(): Any = js.native
   }
 }

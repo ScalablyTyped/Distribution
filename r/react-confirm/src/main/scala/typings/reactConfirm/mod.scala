@@ -14,8 +14,8 @@ object mod {
   
   inline def confirmable[P](component: ComponentType[ReactConfirmProps & P]): ComponentType[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("confirmable")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[P]]
   
-  inline def createConfirmation(component: ComponentType[js.Any]): js.Function1[/* props */ js.Any, js.Promise[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createConfirmation")(component.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* props */ js.Any, js.Promise[String]]]
-  inline def createConfirmation(component: ComponentType[js.Any], unmountDelay: Double): js.Function1[/* props */ js.Any, js.Promise[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createConfirmation")(component.asInstanceOf[js.Any], unmountDelay.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* props */ js.Any, js.Promise[String]]]
+  inline def createConfirmation(component: ComponentType[Any]): js.Function1[/* props */ Any, js.Promise[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createConfirmation")(component.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* props */ Any, js.Promise[String]]]
+  inline def createConfirmation(component: ComponentType[Any], unmountDelay: Double): js.Function1[/* props */ Any, js.Promise[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createConfirmation")(component.asInstanceOf[js.Any], unmountDelay.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* props */ Any, js.Promise[String]]]
   
   @js.native
   trait ReactConfirmProps extends StObject {

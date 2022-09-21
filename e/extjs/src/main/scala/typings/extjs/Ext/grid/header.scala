@@ -23,7 +23,7 @@ object header {
     /** [Method] Returns an array of menu CheckItems corresponding to all immediate children of the passed Container which have been c
       * @param headerContainer Object
       */
-    var getColumnMenu: js.UndefOr[js.Function1[/* headerContainer */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var getColumnMenu: js.UndefOr[js.Function1[/* headerContainer */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Gets the full width of all columns that are visible  */
     var getFullWidth: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -34,7 +34,7 @@ object header {
       * @returns Array
       */
     var getGridColumns: js.UndefOr[
-        js.Function2[/* inResult */ js.UndefOr[js.Any], /* hiddenAncestor */ js.UndefOr[js.Any], Array]
+        js.Function2[/* inResult */ js.UndefOr[Any], /* hiddenAncestor */ js.UndefOr[Any], Array]
       ] = js.undefined
     
     /** [Method] Get a leaf level header by index regardless of what the nesting structure is
@@ -98,7 +98,7 @@ object header {
       
       inline def setGetColumnCountUndefined: Self = StObject.set(x, "getColumnCount", js.undefined)
       
-      inline def setGetColumnMenu(value: /* headerContainer */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getColumnMenu", js.Any.fromFunction1(value))
+      inline def setGetColumnMenu(value: /* headerContainer */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "getColumnMenu", js.Any.fromFunction1(value))
       
       inline def setGetColumnMenuUndefined: Self = StObject.set(x, "getColumnMenu", js.undefined)
       
@@ -106,7 +106,7 @@ object header {
       
       inline def setGetFullWidthUndefined: Self = StObject.set(x, "getFullWidth", js.undefined)
       
-      inline def setGetGridColumns(value: (/* inResult */ js.UndefOr[js.Any], /* hiddenAncestor */ js.UndefOr[js.Any]) => Array): Self = StObject.set(x, "getGridColumns", js.Any.fromFunction2(value))
+      inline def setGetGridColumns(value: (/* inResult */ js.UndefOr[Any], /* hiddenAncestor */ js.UndefOr[Any]) => Array): Self = StObject.set(x, "getGridColumns", js.Any.fromFunction2(value))
       
       inline def setGetGridColumnsUndefined: Self = StObject.set(x, "getGridColumns", js.undefined)
       

@@ -10,10 +10,10 @@ object markunreadMailboxMod {
   
   @JSImport("material-ui/svg-icons/action/markunread-mailbox", JSImport.Default)
   @js.native
-  class default () extends ActionMarkunreadMailbox
+  open class default () extends ActionMarkunreadMailbox
   
   @JSImport("material-ui/svg-icons/action/markunread-mailbox", "ActionMarkunreadMailbox")
   @js.native
-  class ActionMarkunreadMailbox ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionMarkunreadMailbox ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

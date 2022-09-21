@@ -20,7 +20,7 @@ object containerMod {
     
     def _animateChangeExpanded(completeCallback: js.Function0[Unit]): Unit = js.native
     
-    def _children(parentType: String, childType: String): js.Array[js.Any] = js.native
+    def _children(parentType: String, childType: String): js.Array[Any] = js.native
     
     def _toggleActive(active: Boolean): Boolean = js.native
     def _toggleActive(active: Boolean, params: ContainerArguments): Boolean = js.native
@@ -137,18 +137,18 @@ object containerMod {
   
   trait ContainerDeferred extends StObject {
     
-    var embedded: Deferred[js.Any, js.Any, js.Any]
+    var embedded: Deferred[Any, Any, Any]
   }
   object ContainerDeferred {
     
-    inline def apply(embedded: Deferred[js.Any, js.Any, js.Any]): ContainerDeferred = {
+    inline def apply(embedded: Deferred[Any, Any, Any]): ContainerDeferred = {
       val __obj = js.Dynamic.literal(embedded = embedded.asInstanceOf[js.Any])
       __obj.asInstanceOf[ContainerDeferred]
     }
     
     extension [Self <: ContainerDeferred](x: Self) {
       
-      inline def setEmbedded(value: Deferred[js.Any, js.Any, js.Any]): Self = StObject.set(x, "embedded", value.asInstanceOf[js.Any])
+      inline def setEmbedded(value: Deferred[Any, Any, Any]): Self = StObject.set(x, "embedded", value.asInstanceOf[js.Any])
     }
   }
   

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("three", "Float32Attribute")
 @js.native
-class Float32Attribute protected ()
-  extends typings.three.bufferAttributeMod.Float32Attribute {
-  def this(array: js.Any, itemSize: Double) = this()
+open class Float32Attribute protected ()
+  extends typings.three.threeMod.Float32Attribute {
+  def this(array: Any, itemSize: Double) = this()
 }

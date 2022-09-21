@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("lime-js", "WebSocketTransport")
 @js.native
-class WebSocketTransport ()
+open class WebSocketTransport ()
   extends StObject
      with Transport {
   def this(traceEnabled: Boolean) = this()
@@ -31,7 +31,7 @@ class WebSocketTransport ()
   override def onClose(): Unit = js.native
   
   /* CompleteClass */
-  override def onEnvelope(envelope: Envelope): js.Any = js.native
+  override def onEnvelope(envelope: Envelope): Any = js.native
   
   /* CompleteClass */
   override def onError(error: String): Unit = js.native

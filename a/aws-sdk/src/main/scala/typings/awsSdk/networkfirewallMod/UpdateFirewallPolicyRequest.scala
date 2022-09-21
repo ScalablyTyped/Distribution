@@ -17,6 +17,11 @@ trait UpdateFirewallPolicyRequest extends StObject {
   var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * A complex type that contains settings for encryption of your firewall policy resources.
+    */
+  var EncryptionConfiguration: js.UndefOr[typings.awsSdk.networkfirewallMod.EncryptionConfiguration] = js.undefined
+  
+  /**
     * The updated firewall policy to use for the firewall. 
     */
   var FirewallPolicy: typings.awsSdk.networkfirewallMod.FirewallPolicy
@@ -52,6 +57,10 @@ object UpdateFirewallPolicyRequest {
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    
+    inline def setEncryptionConfiguration(value: EncryptionConfiguration): Self = StObject.set(x, "EncryptionConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setEncryptionConfigurationUndefined: Self = StObject.set(x, "EncryptionConfiguration", js.undefined)
     
     inline def setFirewallPolicy(value: FirewallPolicy): Self = StObject.set(x, "FirewallPolicy", value.asInstanceOf[js.Any])
     

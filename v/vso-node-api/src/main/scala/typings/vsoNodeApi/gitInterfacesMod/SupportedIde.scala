@@ -56,6 +56,6 @@ object SupportedIde {
     
     inline def setSupportedPlatforms(value: js.Array[String]): Self = StObject.set(x, "supportedPlatforms", value.asInstanceOf[js.Any])
     
-    inline def setSupportedPlatformsVarargs(value: String*): Self = StObject.set(x, "supportedPlatforms", js.Array(value :_*))
+    inline def setSupportedPlatformsVarargs(value: String*): Self = StObject.set(x, "supportedPlatforms", js.Array(value*))
   }
 }

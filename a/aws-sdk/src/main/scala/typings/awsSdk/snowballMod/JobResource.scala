@@ -34,18 +34,18 @@ object JobResource {
     
     inline def setEc2AmiResourcesUndefined: Self = StObject.set(x, "Ec2AmiResources", js.undefined)
     
-    inline def setEc2AmiResourcesVarargs(value: Ec2AmiResource*): Self = StObject.set(x, "Ec2AmiResources", js.Array(value :_*))
+    inline def setEc2AmiResourcesVarargs(value: Ec2AmiResource*): Self = StObject.set(x, "Ec2AmiResources", js.Array(value*))
     
     inline def setLambdaResources(value: LambdaResourceList): Self = StObject.set(x, "LambdaResources", value.asInstanceOf[js.Any])
     
     inline def setLambdaResourcesUndefined: Self = StObject.set(x, "LambdaResources", js.undefined)
     
-    inline def setLambdaResourcesVarargs(value: LambdaResource*): Self = StObject.set(x, "LambdaResources", js.Array(value :_*))
+    inline def setLambdaResourcesVarargs(value: LambdaResource*): Self = StObject.set(x, "LambdaResources", js.Array(value*))
     
     inline def setS3Resources(value: S3ResourceList): Self = StObject.set(x, "S3Resources", value.asInstanceOf[js.Any])
     
     inline def setS3ResourcesUndefined: Self = StObject.set(x, "S3Resources", js.undefined)
     
-    inline def setS3ResourcesVarargs(value: S3Resource*): Self = StObject.set(x, "S3Resources", js.Array(value :_*))
+    inline def setS3ResourcesVarargs(value: S3Resource*): Self = StObject.set(x, "S3Resources", js.Array(value*))
   }
 }

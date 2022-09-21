@@ -11,10 +11,9 @@ object mod {
   
   @JSImport("react-native-keyboard-spacer", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[KeyboardSpacerProps, js.Any, js.Any]
+  open class default () extends Component[KeyboardSpacerProps, Any, Any]
   
-  type KeyboardSpacer = Component[KeyboardSpacerProps, js.Any, js.Any]
+  type KeyboardSpacer = Component[KeyboardSpacerProps, Any, Any]
   
   trait KeyboardSpacerProps extends StObject {
     

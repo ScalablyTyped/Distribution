@@ -15,10 +15,10 @@ trait LodashUpdateWith1x8[T] extends StObject {
   def apply(
     customizer: SetWithCustomizer[T],
     path: PropertyPath,
-    updater: js.Function1[/* oldValue */ js.Any, js.Any]
+    updater: js.Function1[/* oldValue */ Any, Any]
   ): T = js.native
-  def apply(customizer: SetWithCustomizer[T], path: __, updater: js.Function1[/* oldValue */ js.Any, js.Any]): LodashUpdateWith1x13[T] = js.native
+  def apply(customizer: SetWithCustomizer[T], path: __, updater: js.Function1[/* oldValue */ Any, Any]): LodashUpdateWith1x13[T] = js.native
   def apply(customizer: __, path: PropertyPath): LodashUpdateWith1x10[T] = js.native
-  def apply(customizer: __, path: PropertyPath, updater: js.Function1[/* oldValue */ js.Any, js.Any]): LodashUpdateWith1x14[T] = js.native
-  def apply(customizer: __, path: __, updater: js.Function1[/* oldValue */ js.Any, js.Any]): LodashUpdateWith1x12[T] = js.native
+  def apply(customizer: __, path: PropertyPath, updater: js.Function1[/* oldValue */ Any, Any]): LodashUpdateWith1x14[T] = js.native
+  def apply(customizer: __, path: __, updater: js.Function1[/* oldValue */ Any, Any]): LodashUpdateWith1x12[T] = js.native
 }

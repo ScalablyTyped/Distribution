@@ -6,40 +6,83 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
+  trait Actual extends StObject {
+    
+    var actual: js.UndefOr[String] = js.undefined
+    
+    var alt: js.UndefOr[String] = js.undefined
+    
+    var expanded: js.UndefOr[String] = js.undefined
+    
+    var lang: js.UndefOr[String] = js.undefined
+    
+    var title: js.UndefOr[String] = js.undefined
+  }
+  object Actual {
+    
+    inline def apply(): Actual = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Actual]
+    }
+    
+    extension [Self <: Actual](x: Self) {
+      
+      inline def setActual(value: String): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
+      
+      inline def setActualUndefined: Self = StObject.set(x, "actual", js.undefined)
+      
+      inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+      
+      inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+      
+      inline def setExpanded(value: String): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+      
+      inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
+      
+      inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+      
+      inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+      
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    }
+  }
+  
   trait Annots extends StObject {
     
-    var Annots: js.Any
+    var Annots: Any
     
-    var ExtGState: js.UndefOr[js.Any] = js.undefined
+    var ExtGState: js.UndefOr[Any] = js.undefined
     
-    var Font: js.UndefOr[js.Any] = js.undefined
+    var Font: js.UndefOr[Any] = js.undefined
     
-    var Pattern: js.Any
+    var Pattern: Any
     
-    var XObject: js.UndefOr[js.Any] = js.undefined
+    var XObject: js.UndefOr[Any] = js.undefined
   }
   object Annots {
     
-    inline def apply(Annots: js.Any, Pattern: js.Any): Annots = {
+    inline def apply(Annots: Any, Pattern: Any): Annots = {
       val __obj = js.Dynamic.literal(Annots = Annots.asInstanceOf[js.Any], Pattern = Pattern.asInstanceOf[js.Any])
       __obj.asInstanceOf[Annots]
     }
     
     extension [Self <: Annots](x: Self) {
       
-      inline def setAnnots(value: js.Any): Self = StObject.set(x, "Annots", value.asInstanceOf[js.Any])
+      inline def setAnnots(value: Any): Self = StObject.set(x, "Annots", value.asInstanceOf[js.Any])
       
-      inline def setExtGState(value: js.Any): Self = StObject.set(x, "ExtGState", value.asInstanceOf[js.Any])
+      inline def setExtGState(value: Any): Self = StObject.set(x, "ExtGState", value.asInstanceOf[js.Any])
       
       inline def setExtGStateUndefined: Self = StObject.set(x, "ExtGState", js.undefined)
       
-      inline def setFont(value: js.Any): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
+      inline def setFont(value: Any): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
       
       inline def setFontUndefined: Self = StObject.set(x, "Font", js.undefined)
       
-      inline def setPattern(value: js.Any): Self = StObject.set(x, "Pattern", value.asInstanceOf[js.Any])
+      inline def setPattern(value: Any): Self = StObject.set(x, "Pattern", value.asInstanceOf[js.Any])
       
-      inline def setXObject(value: js.Any): Self = StObject.set(x, "XObject", value.asInstanceOf[js.Any])
+      inline def setXObject(value: Any): Self = StObject.set(x, "XObject", value.asInstanceOf[js.Any])
       
       inline def setXObjectUndefined: Self = StObject.set(x, "XObject", js.undefined)
     }
@@ -112,7 +155,26 @@ object anon {
       
       inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
       
-      inline def setOriginVarargs(value: Double*): Self = StObject.set(x, "origin", js.Array(value :_*))
+      inline def setOriginVarargs(value: Double*): Self = StObject.set(x, "origin", js.Array(value*))
+    }
+  }
+  
+  trait Tagged extends StObject {
+    
+    var tagged: js.UndefOr[Boolean] = js.undefined
+  }
+  object Tagged {
+    
+    inline def apply(): Tagged = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Tagged]
+    }
+    
+    extension [Self <: Tagged](x: Self) {
+      
+      inline def setTagged(value: Boolean): Self = StObject.set(x, "tagged", value.asInstanceOf[js.Any])
+      
+      inline def setTaggedUndefined: Self = StObject.set(x, "tagged", js.undefined)
     }
   }
 }

@@ -24,7 +24,7 @@ trait EnvironmentInfoDescription extends StObject {
   /**
     * The time stamp when this information was retrieved.
     */
-  var SampleTimestamp: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.SampleTimestamp] = js.undefined
+  var SampleTimestamp: js.UndefOr[js.Date] = js.undefined
 }
 object EnvironmentInfoDescription {
   
@@ -47,7 +47,7 @@ object EnvironmentInfoDescription {
     
     inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
-    inline def setSampleTimestamp(value: SampleTimestamp): Self = StObject.set(x, "SampleTimestamp", value.asInstanceOf[js.Any])
+    inline def setSampleTimestamp(value: js.Date): Self = StObject.set(x, "SampleTimestamp", value.asInstanceOf[js.Any])
     
     inline def setSampleTimestampUndefined: Self = StObject.set(x, "SampleTimestamp", js.undefined)
   }

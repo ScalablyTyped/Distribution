@@ -190,6 +190,12 @@ object web3UtilsStrings {
   inline def pure: pure = "pure".asInstanceOf[pure]
   
   @js.native
+  sealed trait receive
+    extends StObject
+       with AbiType
+  inline def receive: receive = "receive".asInstanceOf[receive]
+  
+  @js.native
   sealed trait shannon
     extends StObject
        with Unit

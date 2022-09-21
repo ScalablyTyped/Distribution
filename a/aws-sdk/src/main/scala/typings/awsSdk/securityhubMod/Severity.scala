@@ -22,7 +22,7 @@ trait Severity extends StObject {
   var Original: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * Deprecated. This attribute is being deprecated. Instead of providing Product, provide Original. The native severity as defined by the AWS service or integrated partner product that generated the finding.
+    * Deprecated. This attribute is being deprecated. Instead of providing Product, provide Original. The native severity as defined by the Amazon Web Services service or integrated partner product that generated the finding.
     */
   var Product: js.UndefOr[Double] = js.undefined
 }

@@ -24,13 +24,13 @@ object viewMod {
   
   @JSImport("ol/View", JSImport.Default)
   @js.native
-  class default () extends View {
+  open class default () extends View {
     def this(opt_options: ViewOptions) = this()
   }
   
   inline def createCenterConstraint(options: ViewOptions): Type = ^.asInstanceOf[js.Dynamic].applyDynamic("createCenterConstraint")(options.asInstanceOf[js.Any]).asInstanceOf[Type]
   
-  inline def createResolutionConstraint(options: ViewOptions): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createResolutionConstraint")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def createResolutionConstraint(options: ViewOptions): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createResolutionConstraint")(options.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def createRotationConstraint(options: ViewOptions): typings.ol.rotationconstraintMod.Type = ^.asInstanceOf[js.Dynamic].applyDynamic("createRotationConstraint")(options.asInstanceOf[js.Any]).asInstanceOf[typings.ol.rotationconstraintMod.Type]
   
@@ -81,7 +81,7 @@ object viewMod {
       
       inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
       
-      inline def setAnchorVarargs(value: Double*): Self = StObject.set(x, "anchor", js.Array(value :_*))
+      inline def setAnchorVarargs(value: Double*): Self = StObject.set(x, "anchor", js.Array(value*))
       
       inline def setCallback(value: Boolean => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
@@ -95,7 +95,7 @@ object viewMod {
       
       inline def setSourceCenterUndefined: Self = StObject.set(x, "sourceCenter", js.undefined)
       
-      inline def setSourceCenterVarargs(value: Double*): Self = StObject.set(x, "sourceCenter", js.Array(value :_*))
+      inline def setSourceCenterVarargs(value: Double*): Self = StObject.set(x, "sourceCenter", js.Array(value*))
       
       inline def setSourceResolution(value: Double): Self = StObject.set(x, "sourceResolution", value.asInstanceOf[js.Any])
       
@@ -111,7 +111,7 @@ object viewMod {
       
       inline def setTargetCenterUndefined: Self = StObject.set(x, "targetCenter", js.undefined)
       
-      inline def setTargetCenterVarargs(value: Double*): Self = StObject.set(x, "targetCenter", js.Array(value :_*))
+      inline def setTargetCenterVarargs(value: Double*): Self = StObject.set(x, "targetCenter", js.Array(value*))
       
       inline def setTargetResolution(value: Double): Self = StObject.set(x, "targetResolution", value.asInstanceOf[js.Any])
       
@@ -152,13 +152,13 @@ object viewMod {
       
       inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
       
-      inline def setAnchorVarargs(value: Double*): Self = StObject.set(x, "anchor", js.Array(value :_*))
+      inline def setAnchorVarargs(value: Double*): Self = StObject.set(x, "anchor", js.Array(value*))
       
       inline def setCenter(value: Coordinate): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
       inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
       
-      inline def setCenterVarargs(value: Double*): Self = StObject.set(x, "center", js.Array(value :_*))
+      inline def setCenterVarargs(value: Double*): Self = StObject.set(x, "center", js.Array(value*))
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -186,8 +186,12 @@ object viewMod {
     
     def center(p0: Unit, p1: Double, p2: Size): js.UndefOr[Coordinate]
     def center(p0: Unit, p1: Double, p2: Size, p3: Boolean): js.UndefOr[Coordinate]
+    def center(p0: Unit, p1: Double, p2: Size, p3: Boolean, p4: js.Array[Double]): js.UndefOr[Coordinate]
+    def center(p0: Unit, p1: Double, p2: Size, p3: Unit, p4: js.Array[Double]): js.UndefOr[Coordinate]
     def center(p0: Coordinate, p1: Double, p2: Size): js.UndefOr[Coordinate]
     def center(p0: Coordinate, p1: Double, p2: Size, p3: Boolean): js.UndefOr[Coordinate]
+    def center(p0: Coordinate, p1: Double, p2: Size, p3: Boolean, p4: js.Array[Double]): js.UndefOr[Coordinate]
+    def center(p0: Coordinate, p1: Double, p2: Size, p3: Unit, p4: js.Array[Double]): js.UndefOr[Coordinate]
     @JSName("center")
     var center_Original: Type
     
@@ -208,19 +212,19 @@ object viewMod {
   object Constraints {
     
     inline def apply(
-      center: (/* p0 */ js.UndefOr[Coordinate], /* p1 */ Double, /* p2 */ Size, /* p3 */ js.UndefOr[Boolean]) => js.UndefOr[Coordinate],
+      center: (/* p0 */ js.UndefOr[Coordinate], /* p1 */ Double, /* p2 */ Size, /* p3 */ js.UndefOr[Boolean], /* p4 */ js.UndefOr[js.Array[Double]]) => js.UndefOr[Coordinate],
       resolution: (/* p0 */ js.UndefOr[Double], /* p1 */ Double, /* p2 */ Size, /* p3 */ js.UndefOr[Boolean]) => js.UndefOr[Double],
       rotation: (/* p0 */ js.UndefOr[Double], /* p1 */ js.UndefOr[Boolean]) => js.UndefOr[Double]
     ): Constraints = {
-      val __obj = js.Dynamic.literal(center = js.Any.fromFunction4(center), resolution = js.Any.fromFunction4(resolution), rotation = js.Any.fromFunction2(rotation))
+      val __obj = js.Dynamic.literal(center = js.Any.fromFunction5(center), resolution = js.Any.fromFunction4(resolution), rotation = js.Any.fromFunction2(rotation))
       __obj.asInstanceOf[Constraints]
     }
     
     extension [Self <: Constraints](x: Self) {
       
       inline def setCenter(
-        value: (/* p0 */ js.UndefOr[Coordinate], /* p1 */ Double, /* p2 */ Size, /* p3 */ js.UndefOr[Boolean]) => js.UndefOr[Coordinate]
-      ): Self = StObject.set(x, "center", js.Any.fromFunction4(value))
+        value: (/* p0 */ js.UndefOr[Coordinate], /* p1 */ Double, /* p2 */ Size, /* p3 */ js.UndefOr[Boolean], /* p4 */ js.UndefOr[js.Array[Double]]) => js.UndefOr[Coordinate]
+      ): Self = StObject.set(x, "center", js.Any.fromFunction5(value))
       
       inline def setResolution(
         value: (/* p0 */ js.UndefOr[Double], /* p1 */ Double, /* p2 */ Size, /* p3 */ js.UndefOr[Boolean]) => js.UndefOr[Double]
@@ -285,7 +289,7 @@ object viewMod {
       
       inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value :_*))
+      inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value*))
       
       inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -322,7 +326,7 @@ object viewMod {
       
       inline def setCenter(value: Coordinate): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
-      inline def setCenterVarargs(value: Double*): Self = StObject.set(x, "center", js.Array(value :_*))
+      inline def setCenterVarargs(value: Double*): Self = StObject.set(x, "center", js.Array(value*))
       
       inline def setProjection(value: typings.ol.projectionMod.default): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
       
@@ -383,12 +387,12 @@ object viewMod {
       * Animate the view.  The view's center, zoom (or resolution), and rotation
       * can be animated for smooth transitions between view states.  For example,
       * to animate the view to a new zoom level:
-      * By default, the animation lasts one second and uses in-and-out easing.  You
+      * <code>view.animate({zoom: view.getZoom() + 1});</code>By default, the animation lasts one second and uses in-and-out easing.  You
       * can customize this behavior by including duration (in milliseconds) and
       * easing options (see {@link module:ol/easing}).
       * To chain together multiple animations, call the method with multiple
       * animation objects.  For example, to first zoom and then pan:
-      * If you provide a function as the last argument to the animate method, it
+      * <code>view.animate({zoom: 10}, {center: [0, 0]});</code>If you provide a function as the last argument to the animate method, it
       * will get called at the end of an animation series.  The callback will be
       * called with true if the animation series completed on its own or false
       * if it was cancelled.
@@ -413,6 +417,11 @@ object viewMod {
     def beginInteraction(): Unit = js.native
     
     def calculateCenterRotate(rotation: Double, anchor: Coordinate): js.UndefOr[Coordinate] = js.native
+    
+    /**
+      * Calculates the shift between map and viewport center.
+      */
+    def calculateCenterShift(center: Coordinate, resolution: Double, rotation: Double, size: Size): js.UndefOr[js.Array[Double]] = js.native
     
     def calculateCenterZoom(resolution: Double, anchor: Coordinate): js.UndefOr[Coordinate] = js.native
     
@@ -642,6 +651,15 @@ object viewMod {
     def once_changerotation(`type`: changeColonrotation, listener: js.Function1[/* evt */ ObjectEvent, Unit]): EventsKey = js.native
     
     /**
+      * Padding (in css pixels).
+      * If the map viewport is partially covered with other content (overlays) along
+      * its edges, this setting allows to shift the center of the viewport away from that
+      * content. The order of the values in the array is top, right, bottom, left.
+      * The default is no padding, which is equivalent to [0, 0, 0, 0].
+      */
+    var padding: js.Array[Double] = js.native
+    
+    /**
       * If any constraints need to be applied, an animation will be triggered.
       * This is typically done on interaction end.
       * Note: calling this with a duration of 0 will apply the constrained values straight away,
@@ -747,6 +765,8 @@ object viewMod {
     
     var multiWorld: js.UndefOr[Boolean] = js.undefined
     
+    var padding: js.UndefOr[js.Array[Double]] = js.undefined
+    
     var projection: js.UndefOr[ProjectionLike] = js.undefined
     
     var resolution: js.UndefOr[Double] = js.undefined
@@ -778,7 +798,7 @@ object viewMod {
       
       inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
       
-      inline def setCenterVarargs(value: Double*): Self = StObject.set(x, "center", js.Array(value :_*))
+      inline def setCenterVarargs(value: Double*): Self = StObject.set(x, "center", js.Array(value*))
       
       inline def setConstrainOnlyCenter(value: Boolean): Self = StObject.set(x, "constrainOnlyCenter", value.asInstanceOf[js.Any])
       
@@ -820,6 +840,12 @@ object viewMod {
       
       inline def setMultiWorldUndefined: Self = StObject.set(x, "multiWorld", js.undefined)
       
+      inline def setPadding(value: js.Array[Double]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      
+      inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value*))
+      
       inline def setProjection(value: ProjectionLike): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
       
       inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
@@ -832,7 +858,7 @@ object viewMod {
       
       inline def setResolutionsUndefined: Self = StObject.set(x, "resolutions", js.undefined)
       
-      inline def setResolutionsVarargs(value: Double*): Self = StObject.set(x, "resolutions", js.Array(value :_*))
+      inline def setResolutionsVarargs(value: Double*): Self = StObject.set(x, "resolutions", js.Array(value*))
       
       inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
       

@@ -5,7 +5,7 @@ import typings.react.mod.Component
 import typings.react.mod.ElementType
 import typings.react.mod.LabelHTMLAttributes
 import typings.reactstrap.colMod.ColumnProps
-import typings.reactstrap.mod.CSSModule
+import typings.reactstrap.utilsMod.CSSModule
 import typings.std.HTMLLabelElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,17 +13,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object labelMod {
   
-  @JSImport("reactstrap/lib/Label", JSImport.Default)
+  @JSImport("reactstrap/types/lib/Label", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[LabelProps, js.Object, js.Any]
+  open class default ()
+    extends Component[LabelProps, js.Object, Any]
   
-  type Label = Component[LabelProps, js.Object, js.Any]
+  type Label = Component[LabelProps, js.Object, Any]
   
   trait LabelProps
     extends StObject
        with LabelHTMLAttributes[HTMLLabelElement]
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var check: js.UndefOr[Boolean] = js.undefined
     
@@ -33,8 +33,6 @@ object labelMod {
     
     var `for`: js.UndefOr[String] = js.undefined
     
-    var `inline`: js.UndefOr[Boolean] = js.undefined
-    
     var lg: js.UndefOr[ColumnProps] = js.undefined
     
     var md: js.UndefOr[ColumnProps] = js.undefined
@@ -43,7 +41,7 @@ object labelMod {
     
     var sm: js.UndefOr[ColumnProps] = js.undefined
     
-    var tag: js.UndefOr[ElementType[js.Any]] = js.undefined
+    var tag: js.UndefOr[ElementType[Any]] = js.undefined
     
     // custom widths
     var widths: js.UndefOr[js.Array[String]] = js.undefined
@@ -51,6 +49,8 @@ object labelMod {
     var xl: js.UndefOr[ColumnProps] = js.undefined
     
     var xs: js.UndefOr[ColumnProps] = js.undefined
+    
+    var xxl: js.UndefOr[ColumnProps] = js.undefined
   }
   object LabelProps {
     
@@ -77,10 +77,6 @@ object labelMod {
       
       inline def setForUndefined: Self = StObject.set(x, "for", js.undefined)
       
-      inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
-      
-      inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
-      
       inline def setLg(value: ColumnProps): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
       
       inline def setLgUndefined: Self = StObject.set(x, "lg", js.undefined)
@@ -97,7 +93,7 @@ object labelMod {
       
       inline def setSmUndefined: Self = StObject.set(x, "sm", js.undefined)
       
-      inline def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: ElementType[Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
       inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
       
@@ -105,7 +101,7 @@ object labelMod {
       
       inline def setWidthsUndefined: Self = StObject.set(x, "widths", js.undefined)
       
-      inline def setWidthsVarargs(value: String*): Self = StObject.set(x, "widths", js.Array(value :_*))
+      inline def setWidthsVarargs(value: String*): Self = StObject.set(x, "widths", js.Array(value*))
       
       inline def setXl(value: ColumnProps): Self = StObject.set(x, "xl", value.asInstanceOf[js.Any])
       
@@ -114,6 +110,10 @@ object labelMod {
       inline def setXs(value: ColumnProps): Self = StObject.set(x, "xs", value.asInstanceOf[js.Any])
       
       inline def setXsUndefined: Self = StObject.set(x, "xs", js.undefined)
+      
+      inline def setXxl(value: ColumnProps): Self = StObject.set(x, "xxl", value.asInstanceOf[js.Any])
+      
+      inline def setXxlUndefined: Self = StObject.set(x, "xxl", js.undefined)
     }
   }
 }

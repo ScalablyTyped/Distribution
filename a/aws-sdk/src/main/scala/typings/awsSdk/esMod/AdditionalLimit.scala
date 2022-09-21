@@ -33,6 +33,6 @@ object AdditionalLimit {
     
     inline def setLimitValuesUndefined: Self = StObject.set(x, "LimitValues", js.undefined)
     
-    inline def setLimitValuesVarargs(value: LimitValue*): Self = StObject.set(x, "LimitValues", js.Array(value :_*))
+    inline def setLimitValuesVarargs(value: LimitValue*): Self = StObject.set(x, "LimitValues", js.Array(value*))
   }
 }

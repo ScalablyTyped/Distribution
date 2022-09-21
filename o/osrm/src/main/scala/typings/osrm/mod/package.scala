@@ -5,20 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def version: scala.Double = typings.osrm.mod.^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[scala.Double]
+inline def version: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[Double]
 
-type Bearing = js.Array[scala.Double]
+type Bearing = js.Array[Double]
 
-type Coordinate = js.Array[scala.Double]
+type Coordinate = js.Array[Double]
 
-type Distance = scala.Double
+type Distance = Double
 
-type Duration = scala.Double
+type Duration = Double
 
-type Hint = java.lang.String
+type Hint = String
 
-type Polyline = java.lang.String
+type Polyline = String
 
-type Radius = scala.Double
+type Radius = Double
 
-type Tile = js.Tuple3[scala.Double, scala.Double, scala.Double]
+type Tile = js.Tuple3[Double, Double, Double]

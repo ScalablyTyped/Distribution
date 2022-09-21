@@ -27,7 +27,7 @@ object ListDomainAssociationsResult {
     
     inline def setDomainAssociations(value: DomainAssociations): Self = StObject.set(x, "domainAssociations", value.asInstanceOf[js.Any])
     
-    inline def setDomainAssociationsVarargs(value: DomainAssociation*): Self = StObject.set(x, "domainAssociations", js.Array(value :_*))
+    inline def setDomainAssociationsVarargs(value: DomainAssociation*): Self = StObject.set(x, "domainAssociations", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

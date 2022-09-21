@@ -24,12 +24,12 @@ trait EnvironmentDescription extends StObject {
   /**
     * The creation date for this environment.
     */
-  var DateCreated: js.UndefOr[CreationDate] = js.undefined
+  var DateCreated: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The last modified date for this environment.
     */
-  var DateUpdated: js.UndefOr[UpdateDate] = js.undefined
+  var DateUpdated: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Describes this environment.
@@ -132,11 +132,11 @@ object EnvironmentDescription {
     
     inline def setCNAMEUndefined: Self = StObject.set(x, "CNAME", js.undefined)
     
-    inline def setDateCreated(value: CreationDate): Self = StObject.set(x, "DateCreated", value.asInstanceOf[js.Any])
+    inline def setDateCreated(value: js.Date): Self = StObject.set(x, "DateCreated", value.asInstanceOf[js.Any])
     
     inline def setDateCreatedUndefined: Self = StObject.set(x, "DateCreated", js.undefined)
     
-    inline def setDateUpdated(value: UpdateDate): Self = StObject.set(x, "DateUpdated", value.asInstanceOf[js.Any])
+    inline def setDateUpdated(value: js.Date): Self = StObject.set(x, "DateUpdated", value.asInstanceOf[js.Any])
     
     inline def setDateUpdatedUndefined: Self = StObject.set(x, "DateUpdated", js.undefined)
     
@@ -160,7 +160,7 @@ object EnvironmentDescription {
     
     inline def setEnvironmentLinksUndefined: Self = StObject.set(x, "EnvironmentLinks", js.undefined)
     
-    inline def setEnvironmentLinksVarargs(value: EnvironmentLink*): Self = StObject.set(x, "EnvironmentLinks", js.Array(value :_*))
+    inline def setEnvironmentLinksVarargs(value: EnvironmentLink*): Self = StObject.set(x, "EnvironmentLinks", js.Array(value*))
     
     inline def setEnvironmentName(value: EnvironmentName): Self = StObject.set(x, "EnvironmentName", value.asInstanceOf[js.Any])
     

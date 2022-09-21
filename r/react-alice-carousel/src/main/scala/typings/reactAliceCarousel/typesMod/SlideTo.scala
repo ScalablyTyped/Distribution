@@ -8,6 +8,8 @@ trait SlideTo extends StObject {
   
   var activeIndex: Double
   
+  var eventType: js.UndefOr[EventType] = js.undefined
+  
   var fadeoutAnimationIndex: js.UndefOr[Double | Null] = js.undefined
   
   var fadeoutAnimationPosition: js.UndefOr[Double | Null] = js.undefined
@@ -22,6 +24,10 @@ object SlideTo {
   extension [Self <: SlideTo](x: Self) {
     
     inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
+    
+    inline def setEventType(value: EventType): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
+    
+    inline def setEventTypeUndefined: Self = StObject.set(x, "eventType", js.undefined)
     
     inline def setFadeoutAnimationIndex(value: Double): Self = StObject.set(x, "fadeoutAnimationIndex", value.asInstanceOf[js.Any])
     

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.UI.Input.GestureRecognizer")
 @js.native
 /** Initializes a new instance of a GestureRecognizer object. */
-class GestureRecognizer ()
+open class GestureRecognizer ()
   extends StObject
      with typings.winrtUwp.Windows.UI.Input.GestureRecognizer

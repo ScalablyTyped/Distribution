@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@aws-sdk/signature-v4-multi-region" : "3.171.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@aws-sdk/signature-v4-multi-region" : "3.171.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -19,7 +19,7 @@ object mod {
   
   @JSImport("backoff", "Backoff")
   @js.native
-  class Backoff protected () extends EventEmitter {
+  open class Backoff protected () extends EventEmitter {
     /**
       * Constructs a new backoff object from a specific backoff strategy. The backoff
       * strategy must implement the `BackoffStrategy`interface defined bellow.
@@ -38,7 +38,7 @@ object mod {
     @JSName("addListener")
     def addListener_backoff(
       event: typings.backoff.backoffStrings.backoff,
-      listener: js.Function3[/* number */ Double, /* delay */ Double, /* error */ js.UndefOr[js.Any], Unit]
+      listener: js.Function3[/* number */ Double, /* delay */ Double, /* error */ js.UndefOr[Any], Unit]
     ): this.type = js.native
     /**
       * Emitted when the maximum number of backoffs is reached. This event will only
@@ -49,7 +49,7 @@ object mod {
       * @param err: optional error parameter passed to `backoff.backoff([err])`
       */
     @JSName("addListener")
-    def addListener_fail(event: fail, listener: js.Function1[/* error */ js.UndefOr[js.Any], Unit]): this.type = js.native
+    def addListener_fail(event: fail, listener: js.Function1[/* error */ js.UndefOr[Any], Unit]): this.type = js.native
     /**
       * Emitted when a backoff operation is done. Signals that the failing operation
       * should be retried.
@@ -72,16 +72,16 @@ object mod {
       * network, etc.).
       */
     def backoff(): Unit = js.native
-    def backoff(error: js.Any): Unit = js.native
+    def backoff(error: Any): Unit = js.native
     
     @JSName("emit")
     def emit_backoff(event: typings.backoff.backoffStrings.backoff, number: Double, delay: Double): Boolean = js.native
     @JSName("emit")
-    def emit_backoff(event: typings.backoff.backoffStrings.backoff, number: Double, delay: Double, error: js.Any): Boolean = js.native
+    def emit_backoff(event: typings.backoff.backoffStrings.backoff, number: Double, delay: Double, error: Any): Boolean = js.native
     @JSName("emit")
     def emit_fail(event: fail): Boolean = js.native
     @JSName("emit")
-    def emit_fail(event: fail, error: js.Any): Boolean = js.native
+    def emit_fail(event: fail, error: Any): Boolean = js.native
     @JSName("emit")
     def emit_ready(event: ready, number: Double, delay: Double): Boolean = js.native
     
@@ -95,76 +95,66 @@ object mod {
       */
     def failAfter(numberOfBackoffs: Double): Unit = js.native
     
-    @JSName("listenerCount")
-    def listenerCount_backoff(`type`: typings.backoff.backoffStrings.backoff): Double = js.native
-    @JSName("listenerCount")
-    def listenerCount_fail(`type`: fail): Double = js.native
-    @JSName("listenerCount")
-    def listenerCount_ready(`type`: ready): Double = js.native
+    def listenerCount(`type`: typings.backoff.backoffStrings.backoff | ready | fail): Double = js.native
     
     @JSName("listeners")
     def listeners_backoff(event: typings.backoff.backoffStrings.backoff): js.Array[
-        js.Function3[/* number */ Double, /* delay */ Double, /* error */ js.UndefOr[js.Any], Unit]
+        js.Function3[/* number */ Double, /* delay */ Double, /* error */ js.UndefOr[Any], Unit]
       ] = js.native
     @JSName("listeners")
-    def listeners_fail(event: fail): js.Array[js.Function1[/* error */ js.UndefOr[js.Any], Unit]] = js.native
+    def listeners_fail(event: fail): js.Array[js.Function1[/* error */ js.UndefOr[Any], Unit]] = js.native
     @JSName("listeners")
     def listeners_ready(event: ready): js.Array[js.Function2[/* number */ Double, /* delay */ Double, Unit]] = js.native
     
     @JSName("on")
     def on_backoff(
       event: typings.backoff.backoffStrings.backoff,
-      listener: js.Function3[/* number */ Double, /* delay */ Double, /* error */ js.UndefOr[js.Any], Unit]
+      listener: js.Function3[/* number */ Double, /* delay */ Double, /* error */ js.UndefOr[Any], Unit]
     ): this.type = js.native
     @JSName("on")
-    def on_fail(event: fail, listener: js.Function1[/* error */ js.UndefOr[js.Any], Unit]): this.type = js.native
+    def on_fail(event: fail, listener: js.Function1[/* error */ js.UndefOr[Any], Unit]): this.type = js.native
     @JSName("on")
     def on_ready(event: ready, listener: js.Function2[/* number */ Double, /* delay */ Double, Unit]): this.type = js.native
     
     @JSName("once")
     def once_backoff(
       event: typings.backoff.backoffStrings.backoff,
-      listener: js.Function3[/* number */ Double, /* delay */ Double, /* error */ js.UndefOr[js.Any], Unit]
+      listener: js.Function3[/* number */ Double, /* delay */ Double, /* error */ js.UndefOr[Any], Unit]
     ): this.type = js.native
     @JSName("once")
-    def once_fail(event: fail, listener: js.Function1[/* error */ js.UndefOr[js.Any], Unit]): this.type = js.native
+    def once_fail(event: fail, listener: js.Function1[/* error */ js.UndefOr[Any], Unit]): this.type = js.native
     @JSName("once")
     def once_ready(event: ready, listener: js.Function2[/* number */ Double, /* delay */ Double, Unit]): this.type = js.native
     
     @JSName("prependListener")
     def prependListener_backoff(
       event: typings.backoff.backoffStrings.backoff,
-      listener: js.Function3[/* number */ Double, /* delay */ Double, /* error */ js.UndefOr[js.Any], Unit]
+      listener: js.Function3[/* number */ Double, /* delay */ Double, /* error */ js.UndefOr[Any], Unit]
     ): this.type = js.native
     @JSName("prependListener")
-    def prependListener_fail(event: fail, listener: js.Function1[/* error */ js.UndefOr[js.Any], Unit]): this.type = js.native
+    def prependListener_fail(event: fail, listener: js.Function1[/* error */ js.UndefOr[Any], Unit]): this.type = js.native
     @JSName("prependListener")
     def prependListener_ready(event: ready, listener: js.Function2[/* number */ Double, /* delay */ Double, Unit]): this.type = js.native
     
     @JSName("prependOnceListener")
     def prependOnceListener_backoff(
       event: typings.backoff.backoffStrings.backoff,
-      listener: js.Function3[/* number */ Double, /* delay */ Double, /* error */ js.UndefOr[js.Any], Unit]
+      listener: js.Function3[/* number */ Double, /* delay */ Double, /* error */ js.UndefOr[Any], Unit]
     ): this.type = js.native
     @JSName("prependOnceListener")
-    def prependOnceListener_fail(event: fail, listener: js.Function1[/* error */ js.UndefOr[js.Any], Unit]): this.type = js.native
+    def prependOnceListener_fail(event: fail, listener: js.Function1[/* error */ js.UndefOr[Any], Unit]): this.type = js.native
     @JSName("prependOnceListener")
     def prependOnceListener_ready(event: ready, listener: js.Function2[/* number */ Double, /* delay */ Double, Unit]): this.type = js.native
     
-    @JSName("removeAllListeners")
-    def removeAllListeners_backoff(event: typings.backoff.backoffStrings.backoff): this.type = js.native
-    @JSName("removeAllListeners")
-    def removeAllListeners_fail(event: fail): this.type = js.native
-    @JSName("removeAllListeners")
-    def removeAllListeners_ready(event: ready): this.type = js.native
+    def removeAllListeners(event: typings.backoff.backoffStrings.backoff | ready | fail): this.type = js.native
     
     @JSName("removeListener")
     def removeListener_backoff(
       event: typings.backoff.backoffStrings.backoff,
-      listener: js.Function3[/* number */ Double, /* delay */ Double, /* error */ js.UndefOr[js.Any], Unit]
+      listener: js.Function3[/* number */ Double, /* delay */ Double, /* error */ js.UndefOr[Any], Unit]
     ): this.type = js.native
     @JSName("removeListener")
-    def removeListener_fail(event: fail, listener: js.Function1[/* error */ js.UndefOr[js.Any], Unit]): this.type = js.native
+    def removeListener_fail(event: fail, listener: js.Function1[/* error */ js.UndefOr[Any], Unit]): this.type = js.native
     @JSName("removeListener")
     def removeListener_ready(event: ready, listener: js.Function2[/* number */ Double, /* delay */ Double, Unit]): this.type = js.native
     
@@ -221,7 +211,7 @@ object mod {
     * @param options.maxDelay: defaults to 10000 ms
     * @param options.factor: defaults to 2, must be greater than 1
     */
-  class ExponentialStrategy () extends BackoffStrategy {
+  open class ExponentialStrategy () extends BackoffStrategy {
     def this(options: ExponentialOptions) = this()
   }
   
@@ -234,7 +224,7 @@ object mod {
     * @param options.initialDelay: defaults to 100 ms
     * @param options.maxDelay: defaults to 10000 ms
     */
-  class FibonacciStrategy () extends BackoffStrategy {
+  open class FibonacciStrategy () extends BackoffStrategy {
     def this(options: Options) = this()
   }
   
@@ -263,7 +253,7 @@ object mod {
     @JSName("addListener")
     def addListener_backoff(
       event: typings.backoff.backoffStrings.backoff,
-      listener: js.Function3[/* number */ Double, /* delay */ Double, /* error */ js.UndefOr[js.Any], Unit]
+      listener: js.Function3[/* number */ Double, /* delay */ Double, /* error */ js.UndefOr[Any], Unit]
     ): this.type = js.native
     /**
       * Emitted each time the wrapped function is called.
@@ -277,7 +267,7 @@ object mod {
     @JSName("emit")
     def emit_backoff(event: typings.backoff.backoffStrings.backoff, number: Double, delay: Double): Boolean = js.native
     @JSName("emit")
-    def emit_backoff(event: typings.backoff.backoffStrings.backoff, number: Double, delay: Double, error: js.Any): Boolean = js.native
+    def emit_backoff(event: typings.backoff.backoffStrings.backoff, number: Double, delay: Double, error: Any): Boolean = js.native
     @JSName("emit")
     def emit_call(event: call, args: T): Boolean = js.native
     
@@ -320,20 +310,13 @@ object mod {
       */
     def isRunning(): Boolean = js.native
     
-    @JSName("listenerCount")
-    def listenerCount_abort(`type`: abort): Double = js.native
-    @JSName("listenerCount")
-    def listenerCount_backoff(`type`: typings.backoff.backoffStrings.backoff): Double = js.native
-    @JSName("listenerCount")
-    def listenerCount_call(`type`: call): Double = js.native
-    @JSName("listenerCount")
-    def listenerCount_callback(`type`: callback): Double = js.native
+    def listenerCount(`type`: call | callback | typings.backoff.backoffStrings.backoff | abort): Double = js.native
     
     @JSName("listeners")
     def listeners_abort(event: abort): js.Array[js.Function0[Unit]] = js.native
     @JSName("listeners")
     def listeners_backoff(event: typings.backoff.backoffStrings.backoff): js.Array[
-        js.Function3[/* number */ Double, /* delay */ Double, /* error */ js.UndefOr[js.Any], Unit]
+        js.Function3[/* number */ Double, /* delay */ Double, /* error */ js.UndefOr[Any], Unit]
       ] = js.native
     @JSName("listeners")
     def listeners_call(event: call): js.Array[js.Function1[/* args */ T, Unit]] = js.native
@@ -343,7 +326,7 @@ object mod {
     @JSName("on")
     def on_backoff(
       event: typings.backoff.backoffStrings.backoff,
-      listener: js.Function3[/* number */ Double, /* delay */ Double, /* error */ js.UndefOr[js.Any], Unit]
+      listener: js.Function3[/* number */ Double, /* delay */ Double, /* error */ js.UndefOr[Any], Unit]
     ): this.type = js.native
     @JSName("on")
     def on_call(event: call, listener: js.Function1[/* args */ T, Unit]): this.type = js.native
@@ -353,7 +336,7 @@ object mod {
     @JSName("once")
     def once_backoff(
       event: typings.backoff.backoffStrings.backoff,
-      listener: js.Function3[/* number */ Double, /* delay */ Double, /* error */ js.UndefOr[js.Any], Unit]
+      listener: js.Function3[/* number */ Double, /* delay */ Double, /* error */ js.UndefOr[Any], Unit]
     ): this.type = js.native
     @JSName("once")
     def once_call(event: call, listener: js.Function1[/* args */ T, Unit]): this.type = js.native
@@ -363,7 +346,7 @@ object mod {
     @JSName("prependListener")
     def prependListener_backoff(
       event: typings.backoff.backoffStrings.backoff,
-      listener: js.Function3[/* number */ Double, /* delay */ Double, /* error */ js.UndefOr[js.Any], Unit]
+      listener: js.Function3[/* number */ Double, /* delay */ Double, /* error */ js.UndefOr[Any], Unit]
     ): this.type = js.native
     @JSName("prependListener")
     def prependListener_call(event: call, listener: js.Function1[/* args */ T, Unit]): this.type = js.native
@@ -373,26 +356,19 @@ object mod {
     @JSName("prependOnceListener")
     def prependOnceListener_backoff(
       event: typings.backoff.backoffStrings.backoff,
-      listener: js.Function3[/* number */ Double, /* delay */ Double, /* error */ js.UndefOr[js.Any], Unit]
+      listener: js.Function3[/* number */ Double, /* delay */ Double, /* error */ js.UndefOr[Any], Unit]
     ): this.type = js.native
     @JSName("prependOnceListener")
     def prependOnceListener_call(event: call, listener: js.Function1[/* args */ T, Unit]): this.type = js.native
     
-    @JSName("removeAllListeners")
-    def removeAllListeners_abort(event: abort): this.type = js.native
-    @JSName("removeAllListeners")
-    def removeAllListeners_backoff(event: typings.backoff.backoffStrings.backoff): this.type = js.native
-    @JSName("removeAllListeners")
-    def removeAllListeners_call(event: call): this.type = js.native
-    @JSName("removeAllListeners")
-    def removeAllListeners_callback(event: callback): this.type = js.native
+    def removeAllListeners(event: call | callback | typings.backoff.backoffStrings.backoff | abort): this.type = js.native
     
     @JSName("removeListener")
     def removeListener_abort(event: abort, listener: js.Function0[Unit]): this.type = js.native
     @JSName("removeListener")
     def removeListener_backoff(
       event: typings.backoff.backoffStrings.backoff,
-      listener: js.Function3[/* number */ Double, /* delay */ Double, /* error */ js.UndefOr[js.Any], Unit]
+      listener: js.Function3[/* number */ Double, /* delay */ Double, /* error */ js.UndefOr[Any], Unit]
     ): this.type = js.native
     @JSName("removeListener")
     def removeListener_call(event: call, listener: js.Function1[/* args */ T, Unit]): this.type = js.native
@@ -409,7 +385,7 @@ object mod {
       * @param predicate: a function which takes in as its argument the error returned
       * by the wrapped function and determines whether it is retriable.
       */
-    def retryIf(predicate: js.Function1[/* error */ js.Any, Boolean]): this.type = js.native
+    def retryIf(predicate: js.Function1[/* error */ Any, Boolean]): this.type = js.native
     
     /**
       * Sets the backoff strategy to use. This method should be called before
@@ -432,7 +408,7 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("backoff", "FunctionCall")
   @js.native
-  class FunctionCallCls[T1, T2, T3, R1, R2, R3, E] protected ()
+  open class FunctionCallCls[T1, T2, T3, R1, R2, R3, E] protected ()
     extends TypedFunctionCall[js.Tuple3[T1, T2, T3], E, R1, R2, R3] {
     def this(
       wrappedFunction: js.Function4[
@@ -518,7 +494,7 @@ object mod {
     ): this.type = js.native
   }
   
-  inline def call(wrappedFunction: js.Function1[/* repeated */ js.Any, Unit], args: js.Any*): FunctionCallAny = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(wrappedFunction.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[FunctionCallAny]
+  inline def call(wrappedFunction: js.Function1[/* repeated */ Any, Unit], args: Any*): FunctionCallAny = ^.asInstanceOf[js.Dynamic].applyDynamic("call")(List(wrappedFunction.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[FunctionCallAny]
   inline def call[E](
     wrappedFunction: js.Function1[/* cb */ js.Function1[/* err */ E, Unit], Unit],
     callback: js.Function1[/* err */ E, Unit]
@@ -676,7 +652,7 @@ object mod {
   
   @js.native
   trait FunctionCallAny
-    extends typings.backoff.mod.FunctionCall[js.Array[js.Any]]
+    extends typings.backoff.mod.FunctionCall[js.Array[Any]]
        with FunctionCallArgsAny
   
   trait FunctionCallArgs[E, R1, R2, R3] extends StObject {
@@ -783,10 +759,10 @@ object mod {
       * @param results: wrapped function's return values
       */
     @JSName("addListener")
-    def addListener_callback(event: callback, listener: js.Function1[/* results */ js.Array[js.Any], Unit]): this.type
+    def addListener_callback(event: callback, listener: js.Function1[/* results */ js.Array[Any], Unit]): this.type
     
     @JSName("emit")
-    def emit_callback(event: callback, results: js.Array[js.Any]): Boolean
+    def emit_callback(event: callback, results: js.Array[Any]): Boolean
     
     /**
       * Returns an array containing the last arguments passed to the completion callback
@@ -802,38 +778,38 @@ object mod {
       * Note that if the call was aborted, it will contain the abort error and not the
       * last error returned by the wrapped function.
       */
-    def getLastResult(): js.Array[js.Any]
+    def getLastResult(): js.Array[Any]
     
     @JSName("listeners")
-    def listeners_callback(event: callback): js.Array[js.Function1[/* results */ js.Array[js.Any], Unit]]
+    def listeners_callback(event: callback): js.Array[js.Function1[/* results */ js.Array[Any], Unit]]
     
     @JSName("on")
-    def on_callback(event: callback, listener: js.Function1[/* results */ js.Array[js.Any], Unit]): this.type
+    def on_callback(event: callback, listener: js.Function1[/* results */ js.Array[Any], Unit]): this.type
     
     @JSName("once")
-    def once_callback(event: callback, listener: js.Function1[/* results */ js.Array[js.Any], Unit]): this.type
+    def once_callback(event: callback, listener: js.Function1[/* results */ js.Array[Any], Unit]): this.type
     
     @JSName("prependListener")
-    def prependListener_callback(event: callback, listener: js.Function1[/* results */ js.Array[js.Any], Unit]): this.type
+    def prependListener_callback(event: callback, listener: js.Function1[/* results */ js.Array[Any], Unit]): this.type
     
     @JSName("prependOnceListener")
-    def prependOnceListener_callback(event: callback, listener: js.Function1[/* results */ js.Array[js.Any], Unit]): this.type
+    def prependOnceListener_callback(event: callback, listener: js.Function1[/* results */ js.Array[Any], Unit]): this.type
     
     @JSName("removeListener")
-    def removeListener_callback(event: callback, listener: js.Function1[/* results */ js.Array[js.Any], Unit]): this.type
+    def removeListener_callback(event: callback, listener: js.Function1[/* results */ js.Array[Any], Unit]): this.type
   }
   object FunctionCallArgsAny {
     
     inline def apply(
-      addListener: (callback, js.Function1[/* results */ js.Array[js.Any], Unit]) => FunctionCallArgsAny,
-      emit: (callback, js.Array[js.Any]) => Boolean,
-      getLastResult: () => js.Array[js.Any],
-      listeners: callback => js.Array[js.Function1[/* results */ js.Array[js.Any], Unit]],
-      on: (callback, js.Function1[/* results */ js.Array[js.Any], Unit]) => FunctionCallArgsAny,
-      once: (callback, js.Function1[/* results */ js.Array[js.Any], Unit]) => FunctionCallArgsAny,
-      prependListener: (callback, js.Function1[/* results */ js.Array[js.Any], Unit]) => FunctionCallArgsAny,
-      prependOnceListener: (callback, js.Function1[/* results */ js.Array[js.Any], Unit]) => FunctionCallArgsAny,
-      removeListener: (callback, js.Function1[/* results */ js.Array[js.Any], Unit]) => FunctionCallArgsAny
+      addListener: (callback, js.Function1[/* results */ js.Array[Any], Unit]) => FunctionCallArgsAny,
+      emit: (callback, js.Array[Any]) => Boolean,
+      getLastResult: () => js.Array[Any],
+      listeners: callback => js.Array[js.Function1[/* results */ js.Array[Any], Unit]],
+      on: (callback, js.Function1[/* results */ js.Array[Any], Unit]) => FunctionCallArgsAny,
+      once: (callback, js.Function1[/* results */ js.Array[Any], Unit]) => FunctionCallArgsAny,
+      prependListener: (callback, js.Function1[/* results */ js.Array[Any], Unit]) => FunctionCallArgsAny,
+      prependOnceListener: (callback, js.Function1[/* results */ js.Array[Any], Unit]) => FunctionCallArgsAny,
+      removeListener: (callback, js.Function1[/* results */ js.Array[Any], Unit]) => FunctionCallArgsAny
     ): FunctionCallArgsAny = {
       val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction2(addListener), emit = js.Any.fromFunction2(emit), getLastResult = js.Any.fromFunction0(getLastResult), listeners = js.Any.fromFunction1(listeners), on = js.Any.fromFunction2(on), once = js.Any.fromFunction2(once), prependListener = js.Any.fromFunction2(prependListener), prependOnceListener = js.Any.fromFunction2(prependOnceListener), removeListener = js.Any.fromFunction2(removeListener))
       __obj.asInstanceOf[FunctionCallArgsAny]
@@ -841,23 +817,23 @@ object mod {
     
     extension [Self <: FunctionCallArgsAny](x: Self) {
       
-      inline def setAddListener(value: (callback, js.Function1[/* results */ js.Array[js.Any], Unit]) => FunctionCallArgsAny): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
+      inline def setAddListener(value: (callback, js.Function1[/* results */ js.Array[Any], Unit]) => FunctionCallArgsAny): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       
-      inline def setEmit(value: (callback, js.Array[js.Any]) => Boolean): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
+      inline def setEmit(value: (callback, js.Array[Any]) => Boolean): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
       
-      inline def setGetLastResult(value: () => js.Array[js.Any]): Self = StObject.set(x, "getLastResult", js.Any.fromFunction0(value))
+      inline def setGetLastResult(value: () => js.Array[Any]): Self = StObject.set(x, "getLastResult", js.Any.fromFunction0(value))
       
-      inline def setListeners(value: callback => js.Array[js.Function1[/* results */ js.Array[js.Any], Unit]]): Self = StObject.set(x, "listeners", js.Any.fromFunction1(value))
+      inline def setListeners(value: callback => js.Array[js.Function1[/* results */ js.Array[Any], Unit]]): Self = StObject.set(x, "listeners", js.Any.fromFunction1(value))
       
-      inline def setOn(value: (callback, js.Function1[/* results */ js.Array[js.Any], Unit]) => FunctionCallArgsAny): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      inline def setOn(value: (callback, js.Function1[/* results */ js.Array[Any], Unit]) => FunctionCallArgsAny): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
       
-      inline def setOnce(value: (callback, js.Function1[/* results */ js.Array[js.Any], Unit]) => FunctionCallArgsAny): Self = StObject.set(x, "once", js.Any.fromFunction2(value))
+      inline def setOnce(value: (callback, js.Function1[/* results */ js.Array[Any], Unit]) => FunctionCallArgsAny): Self = StObject.set(x, "once", js.Any.fromFunction2(value))
       
-      inline def setPrependListener(value: (callback, js.Function1[/* results */ js.Array[js.Any], Unit]) => FunctionCallArgsAny): Self = StObject.set(x, "prependListener", js.Any.fromFunction2(value))
+      inline def setPrependListener(value: (callback, js.Function1[/* results */ js.Array[Any], Unit]) => FunctionCallArgsAny): Self = StObject.set(x, "prependListener", js.Any.fromFunction2(value))
       
-      inline def setPrependOnceListener(value: (callback, js.Function1[/* results */ js.Array[js.Any], Unit]) => FunctionCallArgsAny): Self = StObject.set(x, "prependOnceListener", js.Any.fromFunction2(value))
+      inline def setPrependOnceListener(value: (callback, js.Function1[/* results */ js.Array[Any], Unit]) => FunctionCallArgsAny): Self = StObject.set(x, "prependOnceListener", js.Any.fromFunction2(value))
       
-      inline def setRemoveListener(value: (callback, js.Function1[/* results */ js.Array[js.Any], Unit]) => FunctionCallArgsAny): Self = StObject.set(x, "removeListener", js.Any.fromFunction2(value))
+      inline def setRemoveListener(value: (callback, js.Function1[/* results */ js.Array[Any], Unit]) => FunctionCallArgsAny): Self = StObject.set(x, "removeListener", js.Any.fromFunction2(value))
     }
   }
   
@@ -866,7 +842,7 @@ object mod {
     extends StObject
        with Instantiable3[
           (/* wrappedFunction */ js.Function1[
-            (/* repeated */ js.Any) | (/* cb */ js.Function1[/* err */ js.Object, Unit]) | (/* cb */ js.Function2[/* err */ js.Object, /* r1 */ js.Object, Unit]) | (/* cb */ js.Function3[/* err */ js.Object, /* r1 */ js.Object, /* r2 */ js.Object, Unit]) | (/* cb */ js.Function4[/* err */ js.Object, /* r1 */ js.Object, /* r2 */ js.Object, /* r3 */ js.Object, Unit]), 
+            (/* repeated */ Any) | (/* cb */ js.Function1[/* err */ js.Object, Unit]) | (/* cb */ js.Function2[/* err */ js.Object, /* r1 */ js.Object, Unit]) | (/* cb */ js.Function3[/* err */ js.Object, /* r1 */ js.Object, /* r2 */ js.Object, Unit]) | (/* cb */ js.Function4[/* err */ js.Object, /* r1 */ js.Object, /* r2 */ js.Object, /* r3 */ js.Object, Unit]), 
             Unit
           ]) | (/* wrappedFunction */ js.Function2[
             /* t1 */ js.Object, 
@@ -884,10 +860,10 @@ object mod {
             (/* cb */ js.Function1[/* err */ js.Object, Unit]) | (/* cb */ js.Function2[/* err */ js.Object, /* r1 */ js.Object, Unit]) | (/* cb */ js.Function3[/* err */ js.Object, /* r1 */ js.Object, /* r2 */ js.Object, Unit]) | (/* cb */ js.Function4[/* err */ js.Object, /* r1 */ js.Object, /* r2 */ js.Object, /* r3 */ js.Object, Unit]), 
             Unit
           ]), 
-          (/* args */ js.Array[js.Any | js.Object | Unit]) | (/* args */ js.Tuple2[js.Object, js.Object]) | (/* args */ js.Tuple3[js.Object, js.Object, js.Object]), 
+          (/* args */ js.Array[Any | js.Object | Unit]) | (/* args */ js.Tuple2[js.Object, js.Object]) | (/* args */ js.Tuple3[js.Object, js.Object, js.Object]), 
           (/* callback */ js.Function1[/* err */ js.Object, Unit]) | (/* callback */ js.Function2[
-            (/* error */ js.Any) | (/* error */ js.Object), 
-            (/* repeated */ js.Any) | (/* r1 */ js.Object), 
+            (/* error */ Any) | (/* error */ js.Object), 
+            (/* repeated */ Any) | (/* r1 */ js.Object), 
             Unit
           ]) | (/* callback */ js.Function3[/* error */ js.Object, /* r1 */ js.Object, /* r2 */ js.Object, Unit]) | (/* callback */ js.Function4[/* error */ js.Object, /* r1 */ js.Object, /* r2 */ js.Object, /* r3 */ js.Object, Unit]), 
           FunctionCallAny | (TypedFunctionCall[

@@ -25,6 +25,6 @@ object FiltersArray {
     
     inline def setFilters(value: js.Array[DeviceFilterStrict]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    inline def setFiltersVarargs(value: DeviceFilterStrict*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: DeviceFilterStrict*): Self = StObject.set(x, "filters", js.Array(value*))
   }
 }

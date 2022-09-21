@@ -5,7 +5,6 @@ import typings.electronNotarize.electronNotarizeNumbers.`2`
 import typings.electronNotarize.electronNotarizeStrings.`in progress`
 import typings.electronNotarize.electronNotarizeStrings.invalid
 import typings.electronNotarize.electronNotarizeStrings.success
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,6 +14,8 @@ object helpersMod {
   @JSImport("electron-notarize/lib/helpers", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def delay(ms: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(ms.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   inline def isSecret(s: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSecret")(s.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
@@ -26,7 +27,7 @@ object helpersMod {
   
   trait NotarizationInfo extends StObject {
     
-    var date: Date
+    var date: js.Date
     
     var logFileUrl: String | Null
     
@@ -40,14 +41,14 @@ object helpersMod {
   }
   object NotarizationInfo {
     
-    inline def apply(date: Date, status: invalid | (`in progress`) | success, uuid: String): NotarizationInfo = {
+    inline def apply(date: js.Date, status: invalid | (`in progress`) | success, uuid: String): NotarizationInfo = {
       val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any], logFileUrl = null)
       __obj.asInstanceOf[NotarizationInfo]
     }
     
     extension [Self <: NotarizationInfo](x: Self) {
       
-      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
       inline def setLogFileUrl(value: String): Self = StObject.set(x, "logFileUrl", value.asInstanceOf[js.Any])
       

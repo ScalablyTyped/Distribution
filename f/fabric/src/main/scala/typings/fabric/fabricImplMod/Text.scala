@@ -11,10 +11,11 @@ import typings.fabric.anon.Left
 import typings.fabric.anon.NumOfSpaces
 import typings.fabric.fabricStrings._empty
 import typings.fabric.fabricStrings.italic
+import typings.fabric.fabricStrings.ltr
 import typings.fabric.fabricStrings.normal
 import typings.fabric.fabricStrings.oblique
+import typings.fabric.fabricStrings.rtl
 import typings.std.CanvasRenderingContext2D
-import typings.std.RegExp
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,9 +23,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.fabric.fabricImplMod.IObjectOptions because Already inherited
-- typings.fabric.fabricImplMod.TextOptions because var conflicts: aCoords, absolutePositioned, angle, backgroundColor, borderColor, borderDashArray, borderOpacityWhenMoving, borderScaleFactor, cacheProperties, canvas, centeredRotation, centeredScaling, clipPath, clipTo, cornerColor, cornerDashArray, cornerSize, cornerStrokeColor, cornerStyle, data, dirty, evented, excludeFromExport, fill, fillRule, flipX, flipY, globalCompositeOperation, group, hasBorders, hasControls, hasRotatingPoint, height, hoverCursor, includeDefaultValues, inverted, left, lockMovementX, lockMovementY, lockRotation, lockScalingFlip, lockScalingX, lockScalingY, lockSkewingX, lockSkewingY, lockUniScaling, matrixCache, minScaleLimit, moveCursor, name, noScaleCache, oCoords, objectCaching, opacity, originX, originY, ownMatrixCache, padding, paintFirst, perPixelTargetFind, rotatingPointOffset, scaleX, scaleY, selectable, selectionBackgroundColor, shadow, skewX, skewY, snapAngle, snapThreshold, stateProperties, statefullCache, stroke, strokeDashArray, strokeDashOffset, strokeLineCap, strokeLineJoin, strokeMiterLimit, strokeUniform, strokeWidth, top, transformMatrix, transparentCorners, `type`, visible, width. Inlined fontSize, fontWeight, fontFamily, underline, overline, linethrough, textAlign, fontStyle, lineHeight, superscript, subscript, textBackgroundColor, charSpacing, styles, deltaY, text */ @JSImport("fabric/fabric-impl", "Text")
+- typings.fabric.fabricImplMod.TextOptions because var conflicts: aCoords, absolutePositioned, angle, backgroundColor, borderColor, borderDashArray, borderOpacityWhenMoving, borderScaleFactor, cacheProperties, canvas, centeredRotation, centeredScaling, clipPath, cornerColor, cornerDashArray, cornerSize, cornerStrokeColor, cornerStyle, data, dirty, evented, excludeFromExport, fill, fillRule, flipX, flipY, globalCompositeOperation, group, hasBorders, hasControls, hasRotatingPoint, height, hoverCursor, includeDefaultValues, inverted, left, lockMovementX, lockMovementY, lockRotation, lockScalingFlip, lockScalingX, lockScalingY, lockSkewingX, lockSkewingY, lockUniScaling, matrixCache, minScaleLimit, moveCursor, name, noScaleCache, oCoords, objectCaching, opacity, originX, originY, ownMatrixCache, padding, paintFirst, perPixelTargetFind, rotatingPointOffset, scaleX, scaleY, selectable, selectionBackgroundColor, shadow, skewX, skewY, snapAngle, snapThreshold, stateProperties, statefullCache, stroke, strokeDashArray, strokeDashOffset, strokeLineCap, strokeLineJoin, strokeMiterLimit, strokeUniform, strokeWidth, top, transparentCorners, `type`, visible, width. Inlined fontSize, fontWeight, fontFamily, underline, overline, linethrough, textAlign, fontStyle, lineHeight, superscript, subscript, textBackgroundColor, charSpacing, styles, deltaY, direction, text */ @JSImport("fabric/fabric-impl", "Text")
 @js.native
-class Text protected () extends Object {
+open class Text protected () extends Object {
   /**
     * Constructor
     * @param text Text string
@@ -83,7 +84,7 @@ class Text protected () extends Object {
     ctx: CanvasRenderingContext2D,
     lineIndex: Double,
     charIndex: Double,
-    styleDeclaration: js.Any
+    styleDeclaration: Any
   ): Unit = js.native
   
   /**
@@ -133,7 +134,7 @@ class Text protected () extends Object {
     * @param {Number} charIndex
     * @return {Object} style object
     */
-  def _getStyleDeclaration(lineIndex: Double, charIndex: Double): js.Any = js.native
+  def _getStyleDeclaration(lineIndex: Double, charIndex: Double): Any = js.native
   
   /**
     * @private
@@ -146,7 +147,7 @@ class Text protected () extends Object {
     * @param {Object} prevStyle
     * @param {Object} thisStyle
     */
-  def _hasStyleChanged(prevStyle: js.Any, thisStyle: js.Any): Boolean = js.native
+  def _hasStyleChanged(prevStyle: Any, thisStyle: Any): Boolean = js.native
   
   /**
     * measure and return the width of a single character.
@@ -159,7 +160,7 @@ class Text protected () extends Object {
     * @param {Object} [prevCharStyle] style of previous char
     * @return {Object} object contained char width anf kerned width
     */
-  def _measureChar(_char: String, charStyle: js.Any, previousChar: String, prevCharStyle: js.Any): KernedWidth = js.native
+  def _measureChar(_char: String, charStyle: Any, previousChar: String, prevCharStyle: Any): KernedWidth = js.native
   
   /**
     * Use this regular expression to filter for whitespace that is not a new line.
@@ -167,7 +168,7 @@ class Text protected () extends Object {
     * @private
     * @type RegExp
     */
-  var _reSpaceAndTab: RegExp = js.native
+  var _reSpaceAndTab: js.RegExp = js.native
   
   /**
     * Use this regular expression to filter for whitespaces that is not a new line.
@@ -175,7 +176,7 @@ class Text protected () extends Object {
     * @private
     * @type RegExp
     */
-  var _reSpacesAndTabs: RegExp = js.native
+  var _reSpacesAndTabs: js.RegExp = js.native
   
   /**
     * @private
@@ -334,6 +335,11 @@ class Text protected () extends Object {
   var deltaY: js.UndefOr[Double] = js.native
   
   /**
+    * Text input direction. supporting RTL languages.
+    */
+  var direction: js.UndefOr[ltr | rtl] = js.native
+  
+  /**
     * Enlarge space boxes and shift the others
     */
   def enlargeSpaces(): Unit = js.native
@@ -379,7 +385,7 @@ class Text protected () extends Object {
     * @param {Number} charIndex position of the character on the line
     * @return {Object} style object
     */
-  def getCompleteStyleDeclaration(lineIndex: Double, charIndex: Double): js.Any = js.native
+  def getCompleteStyleDeclaration(lineIndex: Double, charIndex: Double): Any = js.native
   
   /**
     * Computes height of character at given position
@@ -420,14 +426,14 @@ class Text protected () extends Object {
     * @param {Boolean} [complete] get full style or not
     * @return {Array} styles an array with one, zero or more Style objects
     */
-  def getSelectionStyles(): js.Array[js.Any] = js.native
-  def getSelectionStyles(startIndex: Double): js.Array[js.Any] = js.native
-  def getSelectionStyles(startIndex: Double, endIndex: Double): js.Array[js.Any] = js.native
-  def getSelectionStyles(startIndex: Double, endIndex: Double, complete: Boolean): js.Array[js.Any] = js.native
-  def getSelectionStyles(startIndex: Double, endIndex: Unit, complete: Boolean): js.Array[js.Any] = js.native
-  def getSelectionStyles(startIndex: Unit, endIndex: Double): js.Array[js.Any] = js.native
-  def getSelectionStyles(startIndex: Unit, endIndex: Double, complete: Boolean): js.Array[js.Any] = js.native
-  def getSelectionStyles(startIndex: Unit, endIndex: Unit, complete: Boolean): js.Array[js.Any] = js.native
+  def getSelectionStyles(): js.Array[Any] = js.native
+  def getSelectionStyles(startIndex: Double): js.Array[Any] = js.native
+  def getSelectionStyles(startIndex: Double, endIndex: Double): js.Array[Any] = js.native
+  def getSelectionStyles(startIndex: Double, endIndex: Double, complete: Boolean): js.Array[Any] = js.native
+  def getSelectionStyles(startIndex: Double, endIndex: Unit, complete: Boolean): js.Array[Any] = js.native
+  def getSelectionStyles(startIndex: Unit, endIndex: Double): js.Array[Any] = js.native
+  def getSelectionStyles(startIndex: Unit, endIndex: Double, complete: Boolean): js.Array[Any] = js.native
+  def getSelectionStyles(startIndex: Unit, endIndex: Unit, complete: Boolean): js.Array[Any] = js.native
   
   /**
     * Retrieves the value of property at given character position
@@ -436,7 +442,7 @@ class Text protected () extends Object {
     * @param {String} property the property name
     * @returns the value of 'property'
     */
-  def getValueOfPropertyAt(lineIndex: Double, charIndex: Double, property: String): js.Any = js.native
+  def getValueOfPropertyAt(lineIndex: Double, charIndex: Double, property: String): Any = js.native
   
   /**
     * Initialize or update text dimensions.
@@ -502,10 +508,10 @@ class Text protected () extends Object {
     * @return {fabric.IText} thisArg
     * @chainable
     */
-  def setSelectionStyles(styles: js.Any): Text = js.native
-  def setSelectionStyles(styles: js.Any, startIndex: Double): Text = js.native
-  def setSelectionStyles(styles: js.Any, startIndex: Double, endIndex: Double): Text = js.native
-  def setSelectionStyles(styles: js.Any, startIndex: Unit, endIndex: Double): Text = js.native
+  def setSelectionStyles(styles: Any): Text = js.native
+  def setSelectionStyles(styles: Any, startIndex: Double): Text = js.native
+  def setSelectionStyles(styles: Any, startIndex: Double, endIndex: Double): Text = js.native
+  def setSelectionStyles(styles: Any, startIndex: Unit, endIndex: Double): Text = js.native
   
   /**
     * Turns the character into an 'inferior figure' (i.e. 'subscript')
@@ -538,7 +544,7 @@ class Text protected () extends Object {
     * 2nd-level properties - charater numbers
     * @type Object
     */
-  var styles: js.UndefOr[js.Any] = js.native
+  var styles: js.UndefOr[Any] = js.native
   
   /**
     * Subscript schema object (minimum overlap)
@@ -611,6 +617,6 @@ object Text {
     * @param {Object} object Object to create an instance from
     * @param {Function} [callback] Callback to invoke when an fabric.Text instance is created
     */
-  inline def fromObject(`object`: js.Any): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Text]
-  inline def fromObject(`object`: js.Any, callback: js.Function): Text = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Text]
+  inline def fromObject(`object`: Any): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Text]
+  inline def fromObject(`object`: Any, callback: js.Function): Text = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Text]
 }

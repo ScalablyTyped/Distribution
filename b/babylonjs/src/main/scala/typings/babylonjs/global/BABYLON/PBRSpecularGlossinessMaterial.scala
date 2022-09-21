@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.PBRSpecularGlossinessMaterial")
 @js.native
-class PBRSpecularGlossinessMaterial protected ()
+open class PBRSpecularGlossinessMaterial protected ()
   extends StObject
      with typings.babylonjs.BABYLON.PBRSpecularGlossinessMaterial {
   /**
@@ -16,6 +16,7 @@ class PBRSpecularGlossinessMaterial protected ()
     * @param name The material name
     * @param scene The scene the material will be use in.
     */
+  def this(name: String) = this()
   def this(name: String, scene: typings.babylonjs.BABYLON.Scene) = this()
   
   /**
@@ -32,7 +33,10 @@ object PBRSpecularGlossinessMaterial {
   val ^ : js.Any = js.native
   
   /**
-    * Parses a JSON object correponding to the serialize function.
+    * Parses a JSON object corresponding to the serialize function.
+    * @param source
+    * @param scene
+    * @param rootUrl
     */
-  inline def Parse(source: js.Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): typings.babylonjs.BABYLON.PBRSpecularGlossinessMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.PBRSpecularGlossinessMaterial]
+  inline def Parse(source: Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): typings.babylonjs.BABYLON.PBRSpecularGlossinessMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.PBRSpecularGlossinessMaterial]
 }

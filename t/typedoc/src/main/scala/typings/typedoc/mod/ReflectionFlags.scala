@@ -6,5 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typedoc", "ReflectionFlags")
 @js.native
-class ReflectionFlags ()
-  extends typings.typedoc.reflectionsMod.ReflectionFlags
+open class ReflectionFlags ()
+  extends typings.typedoc.modelsMod.ReflectionFlags
+/* static members */
+object ReflectionFlags {
+  
+  @JSImport("typedoc", "ReflectionFlags")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("typedoc", "ReflectionFlags.serializedFlags")
+  @js.native
+  def serializedFlags: Any = js.native
+  inline def serializedFlags_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serializedFlags")(x.asInstanceOf[js.Any])
+}

@@ -10,7 +10,7 @@ trait OlapFlatDataSourceOptionsMetadataCube
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * A caption for the cube.
@@ -49,7 +49,7 @@ object OlapFlatDataSourceOptionsMetadataCube {
     
     inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
     
-    inline def setDimensionsVarargs(value: OlapFlatDataSourceOptionsMetadataCubeDimension*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+    inline def setDimensionsVarargs(value: OlapFlatDataSourceOptionsMetadataCubeDimension*): Self = StObject.set(x, "dimensions", js.Array(value*))
     
     inline def setMeasuresDimension(value: OlapFlatDataSourceOptionsMetadataCubeMeasuresDimension): Self = StObject.set(x, "measuresDimension", value.asInstanceOf[js.Any])
     

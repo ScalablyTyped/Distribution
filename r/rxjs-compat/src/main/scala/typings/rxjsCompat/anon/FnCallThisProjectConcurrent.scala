@@ -11,15 +11,15 @@ trait FnCallThisProjectConcurrent extends StObject {
     project: js.Function2[
       /* value */ T, 
       /* index */ Double, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ js.Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ Any
     ]
-  ): js.Any = js.native
+  ): Any = js.native
   def apply[T, R](
     project: js.Function2[
       /* value */ T, 
       /* index */ Double, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ js.Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ Any
     ],
     concurrent: Double
-  ): js.Any = js.native
+  ): Any = js.native
 }

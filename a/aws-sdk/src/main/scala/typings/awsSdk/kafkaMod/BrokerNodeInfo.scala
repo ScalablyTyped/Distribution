@@ -36,7 +36,7 @@ trait BrokerNodeInfo extends StObject {
   
   /**
     * 
-    Information about the version of software currently deployed on the Kafka brokers in the cluster.
+    Information about the version of software currently deployed on the Apache Kafka brokers in the cluster.
     
     */
   var CurrentBrokerSoftwareInfo: js.UndefOr[BrokerSoftwareInfo] = js.undefined
@@ -81,6 +81,6 @@ object BrokerNodeInfo {
     
     inline def setEndpointsUndefined: Self = StObject.set(x, "Endpoints", js.undefined)
     
-    inline def setEndpointsVarargs(value: string*): Self = StObject.set(x, "Endpoints", js.Array(value :_*))
+    inline def setEndpointsVarargs(value: string*): Self = StObject.set(x, "Endpoints", js.Array(value*))
   }
 }

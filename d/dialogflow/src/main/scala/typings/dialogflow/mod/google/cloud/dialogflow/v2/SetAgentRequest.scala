@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new SetAgentRequest.
   * @param [properties] Properties to set
   */
-class SetAgentRequest ()
+open class SetAgentRequest ()
   extends StObject
      with ISetAgentRequest {
   def this(properties: ISetAgentRequest) = this()
@@ -25,7 +24,7 @@ class SetAgentRequest ()
     * Converts this SetAgentRequest to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 object SetAgentRequest {
   
@@ -42,6 +41,8 @@ object SetAgentRequest {
   inline def create(): SetAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[SetAgentRequest]
   inline def create(properties: ISetAgentRequest): SetAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[SetAgentRequest]
   
+  inline def decode(reader: js.typedarray.Uint8Array): SetAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SetAgentRequest]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): SetAgentRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SetAgentRequest]
   /**
     * Decodes a SetAgentRequest message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -53,9 +54,8 @@ object SetAgentRequest {
   /* static member */
   inline def decode(reader: Reader): SetAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SetAgentRequest]
   inline def decode(reader: Reader, length: Double): SetAgentRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SetAgentRequest]
-  inline def decode(reader: Uint8Array): SetAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SetAgentRequest]
-  inline def decode(reader: Uint8Array, length: Double): SetAgentRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SetAgentRequest]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): SetAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SetAgentRequest]
   /**
     * Decodes a SetAgentRequest message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -65,7 +65,6 @@ object SetAgentRequest {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): SetAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SetAgentRequest]
-  inline def decodeDelimited(reader: Uint8Array): SetAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SetAgentRequest]
   
   /**
     * Encodes the specified SetAgentRequest message. Does not implicitly {@link google.cloud.dialogflow.v2.SetAgentRequest.verify|verify} messages.
@@ -93,7 +92,7 @@ object SetAgentRequest {
     * @returns SetAgentRequest
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): SetAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[SetAgentRequest]
+  inline def fromObject(`object`: StringDictionary[Any]): SetAgentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[SetAgentRequest]
   
   /**
     * Creates a plain object from a SetAgentRequest message. Also converts values to other types if specified.
@@ -102,8 +101,8 @@ object SetAgentRequest {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: SetAgentRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: SetAgentRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: SetAgentRequest): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: SetAgentRequest, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a SetAgentRequest message.
@@ -111,5 +110,5 @@ object SetAgentRequest {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.CustomerData")
 @js.native
-/* private */ class CustomerData ()
+/* private */ open class CustomerData ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.CustomerData {
   
@@ -27,7 +27,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def Item(Id: String): CustomXMLPart = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("PowerPoint.CustomerData_typekey")

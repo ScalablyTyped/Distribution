@@ -3,12 +3,12 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientDisplayvideo.anon.AccesstokenAltCallback
 import typings.maximMazurokGapiClientDisplayvideo.anon.AdvertiserId
-import typings.maximMazurokGapiClientDisplayvideo.anon.Fields
-import typings.maximMazurokGapiClientDisplayvideo.anon.FieldsKeyOauthtoken
-import typings.maximMazurokGapiClientDisplayvideo.anon.KeyOauthtokenPrettyPrint
-import typings.maximMazurokGapiClientDisplayvideo.anon.OauthtokenPrettyPrintQuotaUser
+import typings.maximMazurokGapiClientDisplayvideo.anon.PageToken
 import typings.maximMazurokGapiClientDisplayvideo.anon.PageTokenPartnerId
-import typings.maximMazurokGapiClientDisplayvideo.anon.QuotaUserUploadType
+import typings.maximMazurokGapiClientDisplayvideo.anon.PrettyPrintQuotaUserUpdateMask
+import typings.maximMazurokGapiClientDisplayvideo.anon.PrettyPrintQuotaUserUploadType
+import typings.maximMazurokGapiClientDisplayvideo.anon.QuotaUserResourceUpdateMask
+import typings.maximMazurokGapiClientDisplayvideo.anon.QuotaUserResourceUploadType
 import typings.maximMazurokGapiClientDisplayvideo.anon.ReadMask
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -32,11 +32,11 @@ trait AdvertisersResource extends StObject {
     * BulkEditAdvertiserAssignedTargetingOptionsRequest.delete_requests and then create the assigned targeting options provided in
     * BulkEditAdvertiserAssignedTargetingOptionsRequest.create_requests .
     */
-  def bulkEditAdvertiserAssignedTargetingOptions(request: FieldsKeyOauthtoken): Request[BulkEditAdvertiserAssignedTargetingOptionsResponse] = js.native
+  def bulkEditAdvertiserAssignedTargetingOptions(request: QuotaUserResourceUploadType): Request[BulkEditAdvertiserAssignedTargetingOptionsResponse] = js.native
   
   /** Lists assigned targeting options of an advertiser across targeting types. */
   def bulkListAdvertiserAssignedTargetingOptions(): Request[BulkListAdvertiserAssignedTargetingOptionsResponse] = js.native
-  def bulkListAdvertiserAssignedTargetingOptions(request: Fields): Request[BulkListAdvertiserAssignedTargetingOptionsResponse] = js.native
+  def bulkListAdvertiserAssignedTargetingOptions(request: PageToken): Request[BulkListAdvertiserAssignedTargetingOptionsResponse] = js.native
   
   var campaigns: CampaignsResource = js.native
   
@@ -44,7 +44,7 @@ trait AdvertisersResource extends StObject {
   
   /** Creates a new advertiser. Returns the newly created advertiser if successful. This method can take up to 180 seconds to complete. */
   def create(request: AccesstokenAltCallback): Request[Advertiser] = js.native
-  def create(request: QuotaUserUploadType, body: Advertiser): Request[Advertiser] = js.native
+  def create(request: PrettyPrintQuotaUserUploadType, body: Advertiser): Request[Advertiser] = js.native
   
   var creatives: CreativesResource = js.native
   
@@ -61,6 +61,8 @@ trait AdvertisersResource extends StObject {
   
   var insertionOrders: InsertionOrdersResource = js.native
   
+  var invoices: InvoicesResource = js.native
+  
   var lineItems: LineItemsResource = js.native
   
   /** Lists advertisers that are accessible to the current user. The order is defined by the order_by parameter. A single partner_id is required. Cross-partner listing is not supported. */
@@ -73,9 +75,9 @@ trait AdvertisersResource extends StObject {
   
   var negativeKeywordLists: NegativeKeywordListsResource = js.native
   
+  def patch(request: PrettyPrintQuotaUserUpdateMask, body: Advertiser): Request[Advertiser] = js.native
   /** Updates an existing advertiser. Returns the updated advertiser if successful. */
-  def patch(request: KeyOauthtokenPrettyPrint): Request[Advertiser] = js.native
-  def patch(request: OauthtokenPrettyPrintQuotaUser, body: Advertiser): Request[Advertiser] = js.native
+  def patch(request: QuotaUserResourceUpdateMask): Request[Advertiser] = js.native
   
   var targetingTypes: TargetingTypesResource = js.native
 }

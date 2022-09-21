@@ -16,7 +16,7 @@ trait LineNumbering extends StObject {
   
   var DistanceFromText: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   var RestartMode: WdNumberingRule
   
@@ -33,7 +33,7 @@ object LineNumbering {
     CountBy: Double,
     Creator: Double,
     DistanceFromText: Double,
-    Parent: js.Any,
+    Parent: Any,
     RestartMode: WdNumberingRule,
     StartingNumber: Double,
     WordDotLineNumbering_typekey: LineNumbering
@@ -55,7 +55,7 @@ object LineNumbering {
     
     inline def setDistanceFromText(value: Double): Self = StObject.set(x, "DistanceFromText", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRestartMode(value: WdNumberingRule): Self = StObject.set(x, "RestartMode", value.asInstanceOf[js.Any])
     

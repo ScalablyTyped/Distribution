@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.Shape")
 @js.native
-/* private */ class Shape ()
+/* private */ open class Shape ()
   extends StObject
      with typings.activexOffice.Office.Shape

@@ -11,7 +11,7 @@ trait AccountOptions extends StObject {
   
   var calendars: js.UndefOr[js.Array[Calendar]] = js.undefined
   
-  var constructor: js.UndefOr[js.Function1[/* options */ js.UndefOr[this.type], js.Any]] = js.undefined
+  var constructor: js.UndefOr[js.Function1[/* options */ js.UndefOr[this.type], Any]] = js.undefined
   
   var credentials: js.UndefOr[Credentials] = js.undefined
   
@@ -36,15 +36,15 @@ object AccountOptions {
     
     inline def setAddressBooksUndefined: Self = StObject.set(x, "addressBooks", js.undefined)
     
-    inline def setAddressBooksVarargs(value: AddressBook*): Self = StObject.set(x, "addressBooks", js.Array(value :_*))
+    inline def setAddressBooksVarargs(value: AddressBook*): Self = StObject.set(x, "addressBooks", js.Array(value*))
     
     inline def setCalendars(value: js.Array[Calendar]): Self = StObject.set(x, "calendars", value.asInstanceOf[js.Any])
     
     inline def setCalendarsUndefined: Self = StObject.set(x, "calendars", js.undefined)
     
-    inline def setCalendarsVarargs(value: Calendar*): Self = StObject.set(x, "calendars", js.Array(value :_*))
+    inline def setCalendarsVarargs(value: Calendar*): Self = StObject.set(x, "calendars", js.Array(value*))
     
-    inline def setConstructor(value: /* options */ js.UndefOr[AccountOptions] => js.Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
+    inline def setConstructor(value: /* options */ js.UndefOr[AccountOptions] => Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
     
     inline def setConstructorUndefined: Self = StObject.set(x, "constructor", js.undefined)
     

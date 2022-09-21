@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.XMLFileAdapterObject")
 @js.native
-/* private */ class XMLFileAdapterObject ()
+/* private */ open class XMLFileAdapterObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.XMLFileAdapterObject {
   

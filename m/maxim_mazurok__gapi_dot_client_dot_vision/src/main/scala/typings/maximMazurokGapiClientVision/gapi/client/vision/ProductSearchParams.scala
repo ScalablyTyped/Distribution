@@ -47,7 +47,7 @@ object ProductSearchParams {
     
     inline def setProductCategoriesUndefined: Self = StObject.set(x, "productCategories", js.undefined)
     
-    inline def setProductCategoriesVarargs(value: String*): Self = StObject.set(x, "productCategories", js.Array(value :_*))
+    inline def setProductCategoriesVarargs(value: String*): Self = StObject.set(x, "productCategories", js.Array(value*))
     
     inline def setProductSet(value: String): Self = StObject.set(x, "productSet", value.asInstanceOf[js.Any])
     

@@ -8,5 +8,5 @@ object getBranchInputMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/GetBranchInput", "GetBranchInput")
   @js.native
-  val GetBranchInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GetBranchInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

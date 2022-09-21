@@ -8,5 +8,5 @@ object deleteAliasMod {
   
   @JSImport("@aws-sdk/client-lambda-node/model/DeleteAlias", "DeleteAlias")
   @js.native
-  val DeleteAlias: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val DeleteAlias: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

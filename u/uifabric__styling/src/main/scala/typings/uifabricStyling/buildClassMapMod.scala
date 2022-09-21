@@ -13,7 +13,7 @@ object buildClassMapMod {
   
   inline def buildClassMap[T /* <: js.Object */](styles: T): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof T ]:? string}
-    */ typings.uifabricStyling.uifabricStylingStrings.buildClassMap & TopLevel[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("buildClassMap")(styles.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    */ typings.uifabricStyling.uifabricStylingStrings.buildClassMap & TopLevel[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("buildClassMap")(styles.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof T ]:? string}
-    */ typings.uifabricStyling.uifabricStylingStrings.buildClassMap & TopLevel[js.Any]]
+    */ typings.uifabricStyling.uifabricStylingStrings.buildClassMap & TopLevel[Any]]
 }

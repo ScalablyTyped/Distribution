@@ -10,10 +10,10 @@ object laptopMod {
   
   @JSImport("material-ui/svg-icons/hardware/laptop", JSImport.Default)
   @js.native
-  class default () extends HardwareLaptop
+  open class default () extends HardwareLaptop
   
   @JSImport("material-ui/svg-icons/hardware/laptop", "HardwareLaptop")
   @js.native
-  class HardwareLaptop ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class HardwareLaptop ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

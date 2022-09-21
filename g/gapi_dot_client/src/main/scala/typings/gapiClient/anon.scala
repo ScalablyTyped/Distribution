@@ -12,12 +12,12 @@ object anon {
     /**
       * The HTTP request body (applies to PUT or POST).
       */
-    var body: js.UndefOr[js.Any] = js.undefined
+    var body: js.UndefOr[Any] = js.undefined
     
     /**
       * Additional HTTP request headers
       */
-    var headers: js.UndefOr[js.Any] = js.undefined
+    var headers: js.UndefOr[Any] = js.undefined
     
     /**
       * The HTTP request method to use. Default is GET
@@ -27,7 +27,7 @@ object anon {
     /**
       * URL params in key-value pair form
       */
-    var params: js.UndefOr[js.Any] = js.undefined
+    var params: js.UndefOr[Any] = js.undefined
     
     /**
       * The URL to handle the request
@@ -43,11 +43,11 @@ object anon {
     
     extension [Self <: Body](x: Self) {
       
-      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
@@ -55,7 +55,7 @@ object anon {
       
       inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
@@ -74,7 +74,7 @@ object anon {
       * is the raw batch ID-response map as a string. It contains all responses to all requests in the batch.
       */
     rawBatchResponse: String
-    ): js.Any
+    ): Any
     
     /**
       * Identifies the response for this request in the map of batch responses. If one is not provided, the system generates a random ID.
@@ -83,14 +83,14 @@ object anon {
   }
   object Callback {
     
-    inline def apply[T](callback: (Response[T], String) => js.Any, id: String): Callback[T] = {
+    inline def apply[T](callback: (Response[T], String) => Any, id: String): Callback[T] = {
       val __obj = js.Dynamic.literal(callback = js.Any.fromFunction2(callback), id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[Callback[T]]
     }
     
     extension [Self <: Callback[?], T](x: Self & Callback[T]) {
       
-      inline def setCallback(value: (Response[T], String) => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+      inline def setCallback(value: (Response[T], String) => Any): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -143,7 +143,7 @@ object anon {
       
       inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value*))
     }
   }
 }

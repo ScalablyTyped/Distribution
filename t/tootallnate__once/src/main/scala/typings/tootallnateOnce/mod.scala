@@ -1,30 +1,38 @@
 package typings.tootallnateOnce
 
 import typings.node.eventsMod.EventEmitter
+import typings.tootallnateOnce.typesMod.AbortSignal
+import typings.tootallnateOnce.typesMod.EventListenerParameters
+import typings.tootallnateOnce.typesMod.EventNames
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply[T](emitter: EventEmitter, name: String): CancelablePromise[T] = (^.asInstanceOf[js.Dynamic].apply(emitter.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[CancelablePromise[T]]
-  
   @JSImport("@tootallnate/once", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def spread[T /* <: js.Array[js.Any] */](emitter: EventEmitter, name: String): CancelablePromise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("spread")(emitter.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[CancelablePromise[T]]
+  inline def default[Emitter /* <: EventEmitter */, Event /* <: EventNames[Emitter] */](emitter: Emitter, name: Event): js.Promise[EventListenerParameters[Emitter, Event]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(emitter.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EventListenerParameters[Emitter, Event]]]
+  inline def default[Emitter /* <: EventEmitter */, Event /* <: EventNames[Emitter] */](emitter: Emitter, name: Event, hasSignal: OnceOptions): js.Promise[EventListenerParameters[Emitter, Event]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(emitter.asInstanceOf[js.Any], name.asInstanceOf[js.Any], hasSignal.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EventListenerParameters[Emitter, Event]]]
   
-  type CancelFunction = js.Function0[Unit]
-  
-  @js.native
-  trait CancelablePromise[T]
-    extends js.Promise[T] {
+  trait OnceOptions extends StObject {
     
-    def cancel(): Unit = js.native
-    @JSName("cancel")
-    var cancel_Original: CancelFunction = js.native
+    var signal: js.UndefOr[AbortSignal] = js.undefined
   }
-  
-  type CancellablePromise[T] = CancelablePromise[T]
+  object OnceOptions {
+    
+    inline def apply(): OnceOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[OnceOptions]
+    }
+    
+    extension [Self <: OnceOptions](x: Self) {
+      
+      inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      
+      inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    }
+  }
 }

@@ -13,13 +13,9 @@ trait Network extends StObject {
   var IPv4Range: js.UndefOr[String] = js.undefined
   
   /**
-    * Must be set to create a VPC network. If not set, a legacy network is created.
-    *
-    * When set to true, the VPC network is created in auto mode. When set to false, the VPC network is created in custom mode.
-    *
-    * An auto mode VPC network starts with one subnet per region. Each subnet has a predetermined range as described in Auto mode VPC network IP ranges.
-    *
-    * For custom mode VPC networks, you can add subnets using the subnetworks insert method.
+    * Must be set to create a VPC network. If not set, a legacy network is created. When set to true, the VPC network is created in auto mode. When set to false, the VPC network is
+    * created in custom mode. An auto mode VPC network starts with one subnet per region. Each subnet has a predetermined range as described in Auto mode VPC network IP ranges. For custom
+    * mode VPC networks, you can add subnets using the subnetworks insert method.
     */
   var autoCreateSubnetworks: js.UndefOr[Boolean] = js.undefined
   
@@ -109,7 +105,7 @@ object Network {
     
     inline def setPeeringsUndefined: Self = StObject.set(x, "peerings", js.undefined)
     
-    inline def setPeeringsVarargs(value: NetworkPeering*): Self = StObject.set(x, "peerings", js.Array(value :_*))
+    inline def setPeeringsVarargs(value: NetworkPeering*): Self = StObject.set(x, "peerings", js.Array(value*))
     
     inline def setRoutingConfig(value: NetworkRoutingConfig): Self = StObject.set(x, "routingConfig", value.asInstanceOf[js.Any])
     
@@ -123,6 +119,6 @@ object Network {
     
     inline def setSubnetworksUndefined: Self = StObject.set(x, "subnetworks", js.undefined)
     
-    inline def setSubnetworksVarargs(value: String*): Self = StObject.set(x, "subnetworks", js.Array(value :_*))
+    inline def setSubnetworksVarargs(value: String*): Self = StObject.set(x, "subnetworks", js.Array(value*))
   }
 }

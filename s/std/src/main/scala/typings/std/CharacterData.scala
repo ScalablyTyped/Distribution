@@ -11,20 +11,28 @@ trait CharacterData
      with ChildNode
      with NonDocumentTypeChildNode {
   
+  /* standard dom */
   def appendData(data: java.lang.String): Unit = js.native
   
+  /* standard dom */
   var data: java.lang.String = js.native
   
+  /* standard dom */
   def deleteData(offset: Double, count: Double): Unit = js.native
   
+  /* standard dom */
   def insertData(offset: Double, data: java.lang.String): Unit = js.native
   
+  /* standard dom */
   val length: Double = js.native
   
+  /* standard dom */
   @JSName("ownerDocument")
   val ownerDocument_CharacterData: Document = js.native
   
+  /* standard dom */
   def replaceData(offset: Double, count: Double, data: java.lang.String): Unit = js.native
   
+  /* standard dom */
   def substringData(offset: Double, count: Double): java.lang.String = js.native
 }

@@ -11,7 +11,7 @@ object customServeMod {
   
   @JSImport("ionic/lib/project/custom/serve", "CustomServeRunner")
   @js.native
-  class CustomServeRunner protected () extends ServeRunner[CustomServeOptions] {
+  open class CustomServeRunner protected () extends ServeRunner[CustomServeOptions] {
     def this(e: ServeRunnerDeps) = this()
   }
 }

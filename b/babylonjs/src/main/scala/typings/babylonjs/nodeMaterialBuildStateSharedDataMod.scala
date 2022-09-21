@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.babylonjs.anon.EmitFragment
 import typings.babylonjs.anon.NeedAlphaBlending
 import typings.babylonjs.currentScreenBlockMod.CurrentScreenBlock
+import typings.babylonjs.imageSourceBlockMod.ImageSourceBlock
 import typings.babylonjs.inputBlockMod.InputBlock
 import typings.babylonjs.nodeMaterialBlockMod.NodeMaterialBlock
 import typings.babylonjs.particleTextureBlockMod.ParticleTextureBlock
@@ -11,6 +12,7 @@ import typings.babylonjs.reflectionTextureBaseBlockMod.ReflectionTextureBaseBloc
 import typings.babylonjs.refractionBlockMod.RefractionBlock
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.textureBlockMod.TextureBlock
+import typings.babylonjs.typesMod.Immutable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +22,7 @@ object nodeMaterialBuildStateSharedDataMod {
   @JSImport("babylonjs/Materials/Node/nodeMaterialBuildStateSharedData", "NodeMaterialBuildStateSharedData")
   @js.native
   /** Creates a new shared data */
-  class NodeMaterialBuildStateSharedData () extends StObject {
+  open class NodeMaterialBuildStateSharedData () extends StObject {
     
     /**
       * Is vertex program allowed to be empty?
@@ -79,6 +81,16 @@ object nodeMaterialBuildStateSharedDataMod {
     def emitErrors(): Unit = js.native
     
     /**
+      * Bindable blocks (Blocks that need to set data to the effect) that will always be called (by bindForSubMesh), contrary to bindableBlocks that won't be called if _mustRebind() returns false
+      */
+    var forcedBindableBlocks: js.Array[NodeMaterialBlock] = js.native
+    
+    /**
+      * List of the fragment output nodes
+      */
+    var fragmentOutputNodes: Immutable[js.Array[NodeMaterialBlock]] = js.native
+    
+    /**
       * Gets the compilation hints emitted at compilation time
       */
     var hints: NeedAlphaBlending = js.native
@@ -105,7 +117,7 @@ object nodeMaterialBuildStateSharedDataMod {
       * Input blocks
       */
     var textureBlocks: js.Array[
-        TextureBlock | ReflectionTextureBaseBlock | RefractionBlock | CurrentScreenBlock | ParticleTextureBlock
+        ImageSourceBlock | TextureBlock | ReflectionTextureBaseBlock | RefractionBlock | CurrentScreenBlock | ParticleTextureBlock
       ] = js.native
     
     /** List of emitted variables */

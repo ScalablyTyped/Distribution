@@ -1,6 +1,5 @@
 package typings.akuminaCore.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,11 +8,11 @@ object AddIn {
   
   @JSImport("akumina-core", "AddIn.Alignment")
   @js.native
-  class Alignment () extends StObject
+  open class Alignment () extends StObject
   
   @JSImport("akumina-core", "AddIn.Cache")
   @js.native
-  class Cache () extends StObject
+  open class Cache () extends StObject
   object Cache {
     
     @JSImport("akumina-core", "AddIn.Cache")
@@ -21,18 +20,18 @@ object AddIn {
     val ^ : js.Any = js.native
     
     /* static member */
-    inline def Get(m: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Get")(m.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def Get(m: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Get")(m.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /* static member */
     inline def Remove(m: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Remove")(m.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* static member */
-    inline def Set(m: String, `object`: js.Any, interval: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Set")(m.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], interval.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Set(m: String, `object`: Any, interval: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Set")(m.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], interval.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSImport("akumina-core", "AddIn.Configuration")
   @js.native
-  class Configuration () extends StObject
+  open class Configuration () extends StObject
   object Configuration {
     
     @JSImport("akumina-core", "AddIn.Configuration")
@@ -48,7 +47,7 @@ object AddIn {
   
   @JSImport("akumina-core", "AddIn.Constants")
   @js.native
-  class Constants () extends StObject
+  open class Constants () extends StObject
   object Constants {
     
     @JSImport("akumina-core", "AddIn.Constants")
@@ -106,11 +105,11 @@ object AddIn {
   
   @JSImport("akumina-core", "AddIn.GenericListPaging")
   @js.native
-  class GenericListPaging () extends StObject
+  open class GenericListPaging () extends StObject
   
   @JSImport("akumina-core", "AddIn.Icons")
   @js.native
-  class Icons () extends StObject
+  open class Icons () extends StObject
   object Icons {
     
     @JSImport("akumina-core", "AddIn.Icons")
@@ -126,18 +125,18 @@ object AddIn {
   
   @JSImport("akumina-core", "AddIn.Instructions")
   @js.native
-  class Instructions () extends StObject {
+  open class Instructions () extends StObject {
     
-    def executeAsync(widget: js.Any, instructionSet: String, propName: String): js.Promise[js.Any] = js.native
+    def executeAsync(widget: Any, instructionSet: String, propName: String): js.Promise[Any] = js.native
   }
   
   @JSImport("akumina-core", "AddIn.Location")
   @js.native
-  class Location () extends StObject
+  open class Location () extends StObject
   
   @JSImport("akumina-core", "AddIn.Logger")
   @js.native
-  class Logger () extends StObject
+  open class Logger () extends StObject
   object Logger {
     
     @JSImport("akumina-core", "AddIn.Logger")
@@ -151,10 +150,10 @@ object AddIn {
     inline def StopTraceLog(m: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("StopTraceLog")(m.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* static member */
-    inline def WriteErrorLog(m: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("WriteErrorLog")(m.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def WriteErrorLog(m: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("WriteErrorLog")(m.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* static member */
-    inline def WriteInfoLog(m: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("WriteInfoLog")(m.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def WriteInfoLog(m: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("WriteInfoLog")(m.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* static member */
     inline def logConnectorCall(m: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logConnectorCall")(m.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -165,7 +164,7 @@ object AddIn {
   
   @JSImport("akumina-core", "AddIn.Utilities")
   @js.native
-  class Utilities () extends StObject
+  open class Utilities () extends StObject
   object Utilities {
     
     @JSImport("akumina-core", "AddIn.Utilities")
@@ -185,25 +184,26 @@ object AddIn {
     inline def ItemExpired(date: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("ItemExpired")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /* static member */
-    inline def TryParseInt(`val`: js.Any, defaultValue: js.Any): Double | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("TryParseInt")(`val`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Double | Null]
+    inline def TryParseInt(`val`: Any, defaultValue: Any): Double | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("TryParseInt")(`val`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Double | Null]
     
     /* static member */
-    inline def addRecurringEvents(data: js.Any, month: Double, year: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addRecurringEvents")(data.asInstanceOf[js.Any], month.asInstanceOf[js.Any], year.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def addRecurringEvents(data: Any, month: Double, year: Double): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addRecurringEvents")(data.asInstanceOf[js.Any], month.asInstanceOf[js.Any], year.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     /* static member */
     inline def getEditMode(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getEditMode")().asInstanceOf[Boolean]
     
     /* static member */
     inline def getQueryStringParameter(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getQueryStringParameter")(url.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getQueryStringParameter(url: String, ret: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getQueryStringParameter")(url.asInstanceOf[js.Any], ret.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /* static member */
-    inline def isInDST(date: Date): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInDST")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isInDST(date: js.Date): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInDST")(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /* static member */
-    inline def isInMonth(item: js.Any, month: Double, year: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isInMonth")(item.asInstanceOf[js.Any], month.asInstanceOf[js.Any], year.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def isInMonth(item: Any, month: Double, year: Double): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isInMonth")(item.asInstanceOf[js.Any], month.asInstanceOf[js.Any], year.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     /* static member */
-    inline def setDateValues(data: js.Any, startDate: Date, endDate: Date): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setDateValues")(data.asInstanceOf[js.Any], startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def setDateValues(data: Any, startDate: js.Date, endDate: js.Date): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setDateValues")(data.asInstanceOf[js.Any], startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     /* static member */
     inline def substring(str: String, maxChar: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("substring")(str.asInstanceOf[js.Any], maxChar.asInstanceOf[js.Any])).asInstanceOf[String]

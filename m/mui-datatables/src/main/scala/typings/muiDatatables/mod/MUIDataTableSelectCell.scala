@@ -20,11 +20,11 @@ trait MUIDataTableSelectCell extends StObject {
   
   var isRowSelectable: js.UndefOr[Boolean] = js.undefined
   
-  var onChange: js.UndefOr[js.Function1[/* args */ js.Any, js.Any]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* args */ Any, Any]] = js.undefined
   
-  var onExpand: js.UndefOr[js.Function1[/* args */ js.Any, js.Any]] = js.undefined
+  var onExpand: js.UndefOr[js.Function1[/* args */ Any, Any]] = js.undefined
   
-  var otherProps: js.UndefOr[js.Any] = js.undefined
+  var otherProps: js.UndefOr[Any] = js.undefined
   
   var selectableOn: js.UndefOr[Boolean] = js.undefined
 }
@@ -61,15 +61,15 @@ object MUIDataTableSelectCell {
     
     inline def setIsRowSelectableUndefined: Self = StObject.set(x, "isRowSelectable", js.undefined)
     
-    inline def setOnChange(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: /* args */ Any => Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
-    inline def setOnExpand(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "onExpand", js.Any.fromFunction1(value))
+    inline def setOnExpand(value: /* args */ Any => Any): Self = StObject.set(x, "onExpand", js.Any.fromFunction1(value))
     
     inline def setOnExpandUndefined: Self = StObject.set(x, "onExpand", js.undefined)
     
-    inline def setOtherProps(value: js.Any): Self = StObject.set(x, "otherProps", value.asInstanceOf[js.Any])
+    inline def setOtherProps(value: Any): Self = StObject.set(x, "otherProps", value.asInstanceOf[js.Any])
     
     inline def setOtherPropsUndefined: Self = StObject.set(x, "otherProps", js.undefined)
     

@@ -6,15 +6,15 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Contains the collection of {@link Word.CustomXmlPart} objects with a specific namespace.
   *
+  * @remarks
   * [Api set: WordApi BETA (PREVIEW ONLY)]
   * @beta
   */
 @JSGlobal("Word.CustomXmlPartScopedCollection")
 @js.native
-class CustomXmlPartScopedCollection ()
+open class CustomXmlPartScopedCollection ()
   extends StObject
      with typings.officeJsPreview.Word.CustomXmlPartScopedCollection {
   

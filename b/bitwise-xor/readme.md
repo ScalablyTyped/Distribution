@@ -10,10 +10,10 @@ Bitwise XOR between two Buffers or Strings, returns a Buffer
 | ------------------ | :-------------: |
 | Full name          | bitwise-xor |
 | Keywords           | bitwise, xor, buffer, string |
-| # releases         | 0 |
-| # dependents       | 15 |
-| # downloads        | 493529 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 104295.33333333333 |
+| # stars            | 21.0 |
 
 ## Links
 - [Homepage](https://github.com/czzarr/node-bitwise-xor)

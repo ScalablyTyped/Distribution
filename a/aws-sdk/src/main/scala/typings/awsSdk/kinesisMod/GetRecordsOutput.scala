@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetRecordsOutput extends StObject {
   
+  /**
+    * The list of the current shard's child shards, returned in the GetRecords API's response only when the end of the current shard is reached.
+    */
   var ChildShards: js.UndefOr[ChildShardList] = js.undefined
   
   /**
@@ -36,7 +39,7 @@ object GetRecordsOutput {
     
     inline def setChildShardsUndefined: Self = StObject.set(x, "ChildShards", js.undefined)
     
-    inline def setChildShardsVarargs(value: ChildShard*): Self = StObject.set(x, "ChildShards", js.Array(value :_*))
+    inline def setChildShardsVarargs(value: ChildShard*): Self = StObject.set(x, "ChildShards", js.Array(value*))
     
     inline def setMillisBehindLatest(value: MillisBehindLatest): Self = StObject.set(x, "MillisBehindLatest", value.asInstanceOf[js.Any])
     
@@ -48,6 +51,6 @@ object GetRecordsOutput {
     
     inline def setRecords(value: RecordList): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
     
-    inline def setRecordsVarargs(value: Record*): Self = StObject.set(x, "Records", js.Array(value :_*))
+    inline def setRecordsVarargs(value: Record*): Self = StObject.set(x, "Records", js.Array(value*))
   }
 }

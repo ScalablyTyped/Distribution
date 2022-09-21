@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Media.Import
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStreamReference
 import org.scalablytyped.runtime.StObject
@@ -26,7 +25,7 @@ trait PhotoImportSource extends StObject {
   def createImportSession(): PhotoImportSession
   
   /** Gets the current date and time on the device. */
-  var dateTime: Date
+  var dateTime: js.Date
   
   /** Gets a human-readable description of the source device. */
   var description: String
@@ -71,7 +70,7 @@ object PhotoImportSource {
     connectionProtocol: String,
     connectionTransport: PhotoImportConnectionTransport,
     createImportSession: () => PhotoImportSession,
-    dateTime: Date,
+    dateTime: js.Date,
     description: String,
     displayName: String,
     id: String,
@@ -100,7 +99,7 @@ object PhotoImportSource {
     
     inline def setCreateImportSession(value: () => PhotoImportSession): Self = StObject.set(x, "createImportSession", js.Any.fromFunction0(value))
     
-    inline def setDateTime(value: Date): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
+    inline def setDateTime(value: js.Date): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

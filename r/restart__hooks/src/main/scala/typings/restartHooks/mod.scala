@@ -1,6 +1,7 @@
 package typings.restartHooks
 
 import typings.react.mod.MutableRefObject
+import typings.restartHooks.restartHooksStrings.DOMContentLoaded
 import typings.restartHooks.restartHooksStrings.`use-credentials`
 import typings.restartHooks.restartHooksStrings.abort
 import typings.restartHooks.restartHooksStrings.animationcancel
@@ -9,13 +10,16 @@ import typings.restartHooks.restartHooksStrings.animationiteration
 import typings.restartHooks.restartHooksStrings.animationstart
 import typings.restartHooks.restartHooksStrings.anonymous
 import typings.restartHooks.restartHooksStrings.auxclick
+import typings.restartHooks.restartHooksStrings.beforeinput
 import typings.restartHooks.restartHooksStrings.blur
-import typings.restartHooks.restartHooksStrings.cancel
 import typings.restartHooks.restartHooksStrings.canplay
 import typings.restartHooks.restartHooksStrings.canplaythrough
 import typings.restartHooks.restartHooksStrings.change
 import typings.restartHooks.restartHooksStrings.click
 import typings.restartHooks.restartHooksStrings.close
+import typings.restartHooks.restartHooksStrings.compositionend
+import typings.restartHooks.restartHooksStrings.compositionstart
+import typings.restartHooks.restartHooksStrings.compositionupdate
 import typings.restartHooks.restartHooksStrings.contextmenu
 import typings.restartHooks.restartHooksStrings.copy
 import typings.restartHooks.restartHooksStrings.cuechange
@@ -24,7 +28,6 @@ import typings.restartHooks.restartHooksStrings.dblclick
 import typings.restartHooks.restartHooksStrings.drag
 import typings.restartHooks.restartHooksStrings.dragend
 import typings.restartHooks.restartHooksStrings.dragenter
-import typings.restartHooks.restartHooksStrings.dragexit
 import typings.restartHooks.restartHooksStrings.dragleave
 import typings.restartHooks.restartHooksStrings.dragover
 import typings.restartHooks.restartHooksStrings.dragstart
@@ -36,6 +39,7 @@ import typings.restartHooks.restartHooksStrings.error
 import typings.restartHooks.restartHooksStrings.focus
 import typings.restartHooks.restartHooksStrings.focusin
 import typings.restartHooks.restartHooksStrings.focusout
+import typings.restartHooks.restartHooksStrings.formdata
 import typings.restartHooks.restartHooksStrings.fullscreenchange
 import typings.restartHooks.restartHooksStrings.fullscreenerror
 import typings.restartHooks.restartHooksStrings.gotpointercapture
@@ -82,6 +86,7 @@ import typings.restartHooks.restartHooksStrings.seeking
 import typings.restartHooks.restartHooksStrings.select
 import typings.restartHooks.restartHooksStrings.selectionchange
 import typings.restartHooks.restartHooksStrings.selectstart
+import typings.restartHooks.restartHooksStrings.slotchange
 import typings.restartHooks.restartHooksStrings.stalled
 import typings.restartHooks.restartHooksStrings.submit
 import typings.restartHooks.restartHooksStrings.suspend
@@ -98,6 +103,10 @@ import typings.restartHooks.restartHooksStrings.transitionstart
 import typings.restartHooks.restartHooksStrings.visibilitychange
 import typings.restartHooks.restartHooksStrings.volumechange
 import typings.restartHooks.restartHooksStrings.waiting
+import typings.restartHooks.restartHooksStrings.webkitanimationend
+import typings.restartHooks.restartHooksStrings.webkitanimationiteration
+import typings.restartHooks.restartHooksStrings.webkitanimationstart
+import typings.restartHooks.restartHooksStrings.webkittransitionend
 import typings.restartHooks.restartHooksStrings.wheel
 import typings.restartHooks.useEventListenerMod.EventHandler
 import typings.restartHooks.useGlobalListenerMod.DocumentEventHandler
@@ -124,7 +133,7 @@ object mod {
   /**
     * Creates a `Ref` whose value is updated in an effect, ensuring the most recent
     * value is the one rendered with. Generally only required for Concurrent mode usage
-    * where previous work in `render()` may be discarded befor being used.
+    * where previous work in `render()` may be discarded before being used.
     *
     * This is safe to access in an event handler.
     *
@@ -132,8 +141,35 @@ object mod {
     */
   inline def useCommittedRef[TValue](value: TValue): MutableRefObject[TValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("useCommittedRef")(value.asInstanceOf[js.Any]).asInstanceOf[MutableRefObject[TValue]]
   
-  inline def useEventCallback[TCallback /* <: js.Function1[/* repeated */ js.Any, js.Any] */](): TCallback = ^.asInstanceOf[js.Dynamic].applyDynamic("useEventCallback")().asInstanceOf[TCallback]
-  inline def useEventCallback[TCallback /* <: js.Function1[/* repeated */ js.Any, js.Any] */](fn: TCallback): TCallback = ^.asInstanceOf[js.Dynamic].applyDynamic("useEventCallback")(fn.asInstanceOf[js.Any]).asInstanceOf[TCallback]
+  inline def useEventCallback[TCallback /* <: js.Function1[/* repeated */ Any, Any] */](): TCallback = ^.asInstanceOf[js.Dynamic].applyDynamic("useEventCallback")().asInstanceOf[TCallback]
+  inline def useEventCallback[TCallback /* <: js.Function1[/* repeated */ Any, Any] */](fn: TCallback): TCallback = ^.asInstanceOf[js.Dynamic].applyDynamic("useEventCallback")(fn.asInstanceOf[js.Any]).asInstanceOf[TCallback]
+  
+  inline def useEventListener_DOMContentLoaded[T /* <: Element | Document | Window */](eventTarget: T, event: DOMContentLoaded, listener: EventHandler[T, DOMContentLoaded]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_DOMContentLoaded[T /* <: Element | Document | Window */](
+    eventTarget: T,
+    event: DOMContentLoaded,
+    listener: EventHandler[T, DOMContentLoaded],
+    capture: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_DOMContentLoaded[T /* <: Element | Document | Window */](
+    eventTarget: T,
+    event: DOMContentLoaded,
+    listener: EventHandler[T, DOMContentLoaded],
+    capture: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_DOMContentLoaded[T /* <: Element | Document | Window */](eventTarget: js.Function0[T], event: DOMContentLoaded, listener: EventHandler[T, DOMContentLoaded]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_DOMContentLoaded[T /* <: Element | Document | Window */](
+    eventTarget: js.Function0[T],
+    event: DOMContentLoaded,
+    listener: EventHandler[T, DOMContentLoaded],
+    capture: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_DOMContentLoaded[T /* <: Element | Document | Window */](
+    eventTarget: js.Function0[T],
+    event: DOMContentLoaded,
+    listener: EventHandler[T, DOMContentLoaded],
+    capture: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def useEventListener_abort[T /* <: Element | Document | Window */](eventTarget: T, event: abort, listener: EventHandler[T, abort]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useEventListener_abort[T /* <: Element | Document | Window */](eventTarget: T, event: abort, listener: EventHandler[T, abort], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -271,6 +307,28 @@ object mod {
     capture: AddEventListenerOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  inline def useEventListener_beforeinput[T /* <: Element | Document | Window */](eventTarget: T, event: beforeinput, listener: EventHandler[T, beforeinput]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_beforeinput[T /* <: Element | Document | Window */](eventTarget: T, event: beforeinput, listener: EventHandler[T, beforeinput], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_beforeinput[T /* <: Element | Document | Window */](
+    eventTarget: T,
+    event: beforeinput,
+    listener: EventHandler[T, beforeinput],
+    capture: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_beforeinput[T /* <: Element | Document | Window */](eventTarget: js.Function0[T], event: beforeinput, listener: EventHandler[T, beforeinput]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_beforeinput[T /* <: Element | Document | Window */](
+    eventTarget: js.Function0[T],
+    event: beforeinput,
+    listener: EventHandler[T, beforeinput],
+    capture: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_beforeinput[T /* <: Element | Document | Window */](
+    eventTarget: js.Function0[T],
+    event: beforeinput,
+    listener: EventHandler[T, beforeinput],
+    capture: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   inline def useEventListener_blur[T /* <: Element | Document | Window */](eventTarget: T, event: blur, listener: EventHandler[T, blur]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useEventListener_blur[T /* <: Element | Document | Window */](eventTarget: T, event: blur, listener: EventHandler[T, blur], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useEventListener_blur[T /* <: Element | Document | Window */](eventTarget: T, event: blur, listener: EventHandler[T, blur], capture: AddEventListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -280,18 +338,6 @@ object mod {
     eventTarget: js.Function0[T],
     event: blur,
     listener: EventHandler[T, blur],
-    capture: AddEventListenerOptions
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def useEventListener_cancel[T /* <: Element | Document | Window */](eventTarget: T, event: cancel, listener: EventHandler[T, cancel]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def useEventListener_cancel[T /* <: Element | Document | Window */](eventTarget: T, event: cancel, listener: EventHandler[T, cancel], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def useEventListener_cancel[T /* <: Element | Document | Window */](eventTarget: T, event: cancel, listener: EventHandler[T, cancel], capture: AddEventListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def useEventListener_cancel[T /* <: Element | Document | Window */](eventTarget: js.Function0[T], event: cancel, listener: EventHandler[T, cancel]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def useEventListener_cancel[T /* <: Element | Document | Window */](eventTarget: js.Function0[T], event: cancel, listener: EventHandler[T, cancel], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def useEventListener_cancel[T /* <: Element | Document | Window */](
-    eventTarget: js.Function0[T],
-    event: cancel,
-    listener: EventHandler[T, cancel],
     capture: AddEventListenerOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -367,6 +413,86 @@ object mod {
     eventTarget: js.Function0[T],
     event: close,
     listener: EventHandler[T, close],
+    capture: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def useEventListener_compositionend[T /* <: Element | Document | Window */](eventTarget: T, event: compositionend, listener: EventHandler[T, compositionend]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_compositionend[T /* <: Element | Document | Window */](eventTarget: T, event: compositionend, listener: EventHandler[T, compositionend], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_compositionend[T /* <: Element | Document | Window */](
+    eventTarget: T,
+    event: compositionend,
+    listener: EventHandler[T, compositionend],
+    capture: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_compositionend[T /* <: Element | Document | Window */](eventTarget: js.Function0[T], event: compositionend, listener: EventHandler[T, compositionend]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_compositionend[T /* <: Element | Document | Window */](
+    eventTarget: js.Function0[T],
+    event: compositionend,
+    listener: EventHandler[T, compositionend],
+    capture: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_compositionend[T /* <: Element | Document | Window */](
+    eventTarget: js.Function0[T],
+    event: compositionend,
+    listener: EventHandler[T, compositionend],
+    capture: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def useEventListener_compositionstart[T /* <: Element | Document | Window */](eventTarget: T, event: compositionstart, listener: EventHandler[T, compositionstart]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_compositionstart[T /* <: Element | Document | Window */](
+    eventTarget: T,
+    event: compositionstart,
+    listener: EventHandler[T, compositionstart],
+    capture: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_compositionstart[T /* <: Element | Document | Window */](
+    eventTarget: T,
+    event: compositionstart,
+    listener: EventHandler[T, compositionstart],
+    capture: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_compositionstart[T /* <: Element | Document | Window */](eventTarget: js.Function0[T], event: compositionstart, listener: EventHandler[T, compositionstart]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_compositionstart[T /* <: Element | Document | Window */](
+    eventTarget: js.Function0[T],
+    event: compositionstart,
+    listener: EventHandler[T, compositionstart],
+    capture: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_compositionstart[T /* <: Element | Document | Window */](
+    eventTarget: js.Function0[T],
+    event: compositionstart,
+    listener: EventHandler[T, compositionstart],
+    capture: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def useEventListener_compositionupdate[T /* <: Element | Document | Window */](eventTarget: T, event: compositionupdate, listener: EventHandler[T, compositionupdate]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_compositionupdate[T /* <: Element | Document | Window */](
+    eventTarget: T,
+    event: compositionupdate,
+    listener: EventHandler[T, compositionupdate],
+    capture: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_compositionupdate[T /* <: Element | Document | Window */](
+    eventTarget: T,
+    event: compositionupdate,
+    listener: EventHandler[T, compositionupdate],
+    capture: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_compositionupdate[T /* <: Element | Document | Window */](
+    eventTarget: js.Function0[T],
+    event: compositionupdate,
+    listener: EventHandler[T, compositionupdate]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_compositionupdate[T /* <: Element | Document | Window */](
+    eventTarget: js.Function0[T],
+    event: compositionupdate,
+    listener: EventHandler[T, compositionupdate],
+    capture: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_compositionupdate[T /* <: Element | Document | Window */](
+    eventTarget: js.Function0[T],
+    event: compositionupdate,
+    listener: EventHandler[T, compositionupdate],
     capture: AddEventListenerOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -508,28 +634,6 @@ object mod {
     eventTarget: js.Function0[T],
     event: dragenter,
     listener: EventHandler[T, dragenter],
-    capture: AddEventListenerOptions
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def useEventListener_dragexit[T /* <: Element | Document | Window */](eventTarget: T, event: dragexit, listener: EventHandler[T, dragexit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def useEventListener_dragexit[T /* <: Element | Document | Window */](eventTarget: T, event: dragexit, listener: EventHandler[T, dragexit], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def useEventListener_dragexit[T /* <: Element | Document | Window */](
-    eventTarget: T,
-    event: dragexit,
-    listener: EventHandler[T, dragexit],
-    capture: AddEventListenerOptions
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def useEventListener_dragexit[T /* <: Element | Document | Window */](eventTarget: js.Function0[T], event: dragexit, listener: EventHandler[T, dragexit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def useEventListener_dragexit[T /* <: Element | Document | Window */](
-    eventTarget: js.Function0[T],
-    event: dragexit,
-    listener: EventHandler[T, dragexit],
-    capture: Boolean
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def useEventListener_dragexit[T /* <: Element | Document | Window */](
-    eventTarget: js.Function0[T],
-    event: dragexit,
-    listener: EventHandler[T, dragexit],
     capture: AddEventListenerOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -722,6 +826,28 @@ object mod {
     eventTarget: js.Function0[T],
     event: focusout,
     listener: EventHandler[T, focusout],
+    capture: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def useEventListener_formdata[T /* <: Element | Document | Window */](eventTarget: T, event: formdata, listener: EventHandler[T, formdata]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_formdata[T /* <: Element | Document | Window */](eventTarget: T, event: formdata, listener: EventHandler[T, formdata], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_formdata[T /* <: Element | Document | Window */](
+    eventTarget: T,
+    event: formdata,
+    listener: EventHandler[T, formdata],
+    capture: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_formdata[T /* <: Element | Document | Window */](eventTarget: js.Function0[T], event: formdata, listener: EventHandler[T, formdata]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_formdata[T /* <: Element | Document | Window */](
+    eventTarget: js.Function0[T],
+    event: formdata,
+    listener: EventHandler[T, formdata],
+    capture: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_formdata[T /* <: Element | Document | Window */](
+    eventTarget: js.Function0[T],
+    event: formdata,
+    listener: EventHandler[T, formdata],
     capture: AddEventListenerOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -1663,6 +1789,28 @@ object mod {
     capture: AddEventListenerOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  inline def useEventListener_slotchange[T /* <: Element | Document | Window */](eventTarget: T, event: slotchange, listener: EventHandler[T, slotchange]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_slotchange[T /* <: Element | Document | Window */](eventTarget: T, event: slotchange, listener: EventHandler[T, slotchange], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_slotchange[T /* <: Element | Document | Window */](
+    eventTarget: T,
+    event: slotchange,
+    listener: EventHandler[T, slotchange],
+    capture: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_slotchange[T /* <: Element | Document | Window */](eventTarget: js.Function0[T], event: slotchange, listener: EventHandler[T, slotchange]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_slotchange[T /* <: Element | Document | Window */](
+    eventTarget: js.Function0[T],
+    event: slotchange,
+    listener: EventHandler[T, slotchange],
+    capture: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_slotchange[T /* <: Element | Document | Window */](
+    eventTarget: js.Function0[T],
+    event: slotchange,
+    listener: EventHandler[T, slotchange],
+    capture: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   inline def useEventListener_stalled[T /* <: Element | Document | Window */](eventTarget: T, event: stalled, listener: EventHandler[T, stalled]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useEventListener_stalled[T /* <: Element | Document | Window */](eventTarget: T, event: stalled, listener: EventHandler[T, stalled], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useEventListener_stalled[T /* <: Element | Document | Window */](
@@ -1995,6 +2143,134 @@ object mod {
     capture: AddEventListenerOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  inline def useEventListener_webkitanimationend[T /* <: Element | Document | Window */](eventTarget: T, event: webkitanimationend, listener: EventHandler[T, webkitanimationend]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_webkitanimationend[T /* <: Element | Document | Window */](
+    eventTarget: T,
+    event: webkitanimationend,
+    listener: EventHandler[T, webkitanimationend],
+    capture: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_webkitanimationend[T /* <: Element | Document | Window */](
+    eventTarget: T,
+    event: webkitanimationend,
+    listener: EventHandler[T, webkitanimationend],
+    capture: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_webkitanimationend[T /* <: Element | Document | Window */](
+    eventTarget: js.Function0[T],
+    event: webkitanimationend,
+    listener: EventHandler[T, webkitanimationend]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_webkitanimationend[T /* <: Element | Document | Window */](
+    eventTarget: js.Function0[T],
+    event: webkitanimationend,
+    listener: EventHandler[T, webkitanimationend],
+    capture: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_webkitanimationend[T /* <: Element | Document | Window */](
+    eventTarget: js.Function0[T],
+    event: webkitanimationend,
+    listener: EventHandler[T, webkitanimationend],
+    capture: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def useEventListener_webkitanimationiteration[T /* <: Element | Document | Window */](
+    eventTarget: T,
+    event: webkitanimationiteration,
+    listener: EventHandler[T, webkitanimationiteration]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_webkitanimationiteration[T /* <: Element | Document | Window */](
+    eventTarget: T,
+    event: webkitanimationiteration,
+    listener: EventHandler[T, webkitanimationiteration],
+    capture: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_webkitanimationiteration[T /* <: Element | Document | Window */](
+    eventTarget: T,
+    event: webkitanimationiteration,
+    listener: EventHandler[T, webkitanimationiteration],
+    capture: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_webkitanimationiteration[T /* <: Element | Document | Window */](
+    eventTarget: js.Function0[T],
+    event: webkitanimationiteration,
+    listener: EventHandler[T, webkitanimationiteration]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_webkitanimationiteration[T /* <: Element | Document | Window */](
+    eventTarget: js.Function0[T],
+    event: webkitanimationiteration,
+    listener: EventHandler[T, webkitanimationiteration],
+    capture: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_webkitanimationiteration[T /* <: Element | Document | Window */](
+    eventTarget: js.Function0[T],
+    event: webkitanimationiteration,
+    listener: EventHandler[T, webkitanimationiteration],
+    capture: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def useEventListener_webkitanimationstart[T /* <: Element | Document | Window */](eventTarget: T, event: webkitanimationstart, listener: EventHandler[T, webkitanimationstart]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_webkitanimationstart[T /* <: Element | Document | Window */](
+    eventTarget: T,
+    event: webkitanimationstart,
+    listener: EventHandler[T, webkitanimationstart],
+    capture: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_webkitanimationstart[T /* <: Element | Document | Window */](
+    eventTarget: T,
+    event: webkitanimationstart,
+    listener: EventHandler[T, webkitanimationstart],
+    capture: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_webkitanimationstart[T /* <: Element | Document | Window */](
+    eventTarget: js.Function0[T],
+    event: webkitanimationstart,
+    listener: EventHandler[T, webkitanimationstart]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_webkitanimationstart[T /* <: Element | Document | Window */](
+    eventTarget: js.Function0[T],
+    event: webkitanimationstart,
+    listener: EventHandler[T, webkitanimationstart],
+    capture: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_webkitanimationstart[T /* <: Element | Document | Window */](
+    eventTarget: js.Function0[T],
+    event: webkitanimationstart,
+    listener: EventHandler[T, webkitanimationstart],
+    capture: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def useEventListener_webkittransitionend[T /* <: Element | Document | Window */](eventTarget: T, event: webkittransitionend, listener: EventHandler[T, webkittransitionend]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_webkittransitionend[T /* <: Element | Document | Window */](
+    eventTarget: T,
+    event: webkittransitionend,
+    listener: EventHandler[T, webkittransitionend],
+    capture: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_webkittransitionend[T /* <: Element | Document | Window */](
+    eventTarget: T,
+    event: webkittransitionend,
+    listener: EventHandler[T, webkittransitionend],
+    capture: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_webkittransitionend[T /* <: Element | Document | Window */](
+    eventTarget: js.Function0[T],
+    event: webkittransitionend,
+    listener: EventHandler[T, webkittransitionend]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_webkittransitionend[T /* <: Element | Document | Window */](
+    eventTarget: js.Function0[T],
+    event: webkittransitionend,
+    listener: EventHandler[T, webkittransitionend],
+    capture: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_webkittransitionend[T /* <: Element | Document | Window */](
+    eventTarget: js.Function0[T],
+    event: webkittransitionend,
+    listener: EventHandler[T, webkittransitionend],
+    capture: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   inline def useEventListener_wheel[T /* <: Element | Document | Window */](eventTarget: T, event: wheel, listener: EventHandler[T, wheel]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useEventListener_wheel[T /* <: Element | Document | Window */](eventTarget: T, event: wheel, listener: EventHandler[T, wheel], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useEventListener_wheel[T /* <: Element | Document | Window */](eventTarget: T, event: wheel, listener: EventHandler[T, wheel], capture: AddEventListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -2006,6 +2282,14 @@ object mod {
     listener: EventHandler[T, wheel],
     capture: AddEventListenerOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEventListener")(eventTarget.asInstanceOf[js.Any], event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def useGlobalListener_DOMContentLoaded(event: DOMContentLoaded, handler: DocumentEventHandler[DOMContentLoaded]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useGlobalListener_DOMContentLoaded(event: DOMContentLoaded, handler: DocumentEventHandler[DOMContentLoaded], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useGlobalListener_DOMContentLoaded(
+    event: DOMContentLoaded,
+    handler: DocumentEventHandler[DOMContentLoaded],
+    capture: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def useGlobalListener_abort(event: abort, handler: DocumentEventHandler[abort]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useGlobalListener_abort(event: abort, handler: DocumentEventHandler[abort], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -2043,13 +2327,13 @@ object mod {
   inline def useGlobalListener_auxclick(event: auxclick, handler: DocumentEventHandler[auxclick], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useGlobalListener_auxclick(event: auxclick, handler: DocumentEventHandler[auxclick], capture: AddEventListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  inline def useGlobalListener_beforeinput(event: beforeinput, handler: DocumentEventHandler[beforeinput]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useGlobalListener_beforeinput(event: beforeinput, handler: DocumentEventHandler[beforeinput], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useGlobalListener_beforeinput(event: beforeinput, handler: DocumentEventHandler[beforeinput], capture: AddEventListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   inline def useGlobalListener_blur(event: blur, handler: DocumentEventHandler[blur]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useGlobalListener_blur(event: blur, handler: DocumentEventHandler[blur], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useGlobalListener_blur(event: blur, handler: DocumentEventHandler[blur], capture: AddEventListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def useGlobalListener_cancel(event: cancel, handler: DocumentEventHandler[cancel]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def useGlobalListener_cancel(event: cancel, handler: DocumentEventHandler[cancel], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def useGlobalListener_cancel(event: cancel, handler: DocumentEventHandler[cancel], capture: AddEventListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def useGlobalListener_canplay(event: canplay, handler: DocumentEventHandler[canplay]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useGlobalListener_canplay(event: canplay, handler: DocumentEventHandler[canplay], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -2074,6 +2358,30 @@ object mod {
   inline def useGlobalListener_close(event: close, handler: DocumentEventHandler[close]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useGlobalListener_close(event: close, handler: DocumentEventHandler[close], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useGlobalListener_close(event: close, handler: DocumentEventHandler[close], capture: AddEventListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def useGlobalListener_compositionend(event: compositionend, handler: DocumentEventHandler[compositionend]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useGlobalListener_compositionend(event: compositionend, handler: DocumentEventHandler[compositionend], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useGlobalListener_compositionend(
+    event: compositionend,
+    handler: DocumentEventHandler[compositionend],
+    capture: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def useGlobalListener_compositionstart(event: compositionstart, handler: DocumentEventHandler[compositionstart]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useGlobalListener_compositionstart(event: compositionstart, handler: DocumentEventHandler[compositionstart], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useGlobalListener_compositionstart(
+    event: compositionstart,
+    handler: DocumentEventHandler[compositionstart],
+    capture: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def useGlobalListener_compositionupdate(event: compositionupdate, handler: DocumentEventHandler[compositionupdate]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useGlobalListener_compositionupdate(event: compositionupdate, handler: DocumentEventHandler[compositionupdate], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useGlobalListener_compositionupdate(
+    event: compositionupdate,
+    handler: DocumentEventHandler[compositionupdate],
+    capture: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def useGlobalListener_contextmenu(event: contextmenu, handler: DocumentEventHandler[contextmenu]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useGlobalListener_contextmenu(event: contextmenu, handler: DocumentEventHandler[contextmenu], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -2106,10 +2414,6 @@ object mod {
   inline def useGlobalListener_dragenter(event: dragenter, handler: DocumentEventHandler[dragenter]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useGlobalListener_dragenter(event: dragenter, handler: DocumentEventHandler[dragenter], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useGlobalListener_dragenter(event: dragenter, handler: DocumentEventHandler[dragenter], capture: AddEventListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def useGlobalListener_dragexit(event: dragexit, handler: DocumentEventHandler[dragexit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def useGlobalListener_dragexit(event: dragexit, handler: DocumentEventHandler[dragexit], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def useGlobalListener_dragexit(event: dragexit, handler: DocumentEventHandler[dragexit], capture: AddEventListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def useGlobalListener_dragleave(event: dragleave, handler: DocumentEventHandler[dragleave]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useGlobalListener_dragleave(event: dragleave, handler: DocumentEventHandler[dragleave], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -2158,6 +2462,10 @@ object mod {
   inline def useGlobalListener_focusout(event: focusout, handler: DocumentEventHandler[focusout]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useGlobalListener_focusout(event: focusout, handler: DocumentEventHandler[focusout], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useGlobalListener_focusout(event: focusout, handler: DocumentEventHandler[focusout], capture: AddEventListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def useGlobalListener_formdata(event: formdata, handler: DocumentEventHandler[formdata]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useGlobalListener_formdata(event: formdata, handler: DocumentEventHandler[formdata], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useGlobalListener_formdata(event: formdata, handler: DocumentEventHandler[formdata], capture: AddEventListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def useGlobalListener_fullscreenchange(event: fullscreenchange, handler: DocumentEventHandler[fullscreenchange]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useGlobalListener_fullscreenchange(event: fullscreenchange, handler: DocumentEventHandler[fullscreenchange], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -2391,6 +2699,10 @@ object mod {
   inline def useGlobalListener_selectstart(event: selectstart, handler: DocumentEventHandler[selectstart], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useGlobalListener_selectstart(event: selectstart, handler: DocumentEventHandler[selectstart], capture: AddEventListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  inline def useGlobalListener_slotchange(event: slotchange, handler: DocumentEventHandler[slotchange]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useGlobalListener_slotchange(event: slotchange, handler: DocumentEventHandler[slotchange], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useGlobalListener_slotchange(event: slotchange, handler: DocumentEventHandler[slotchange], capture: AddEventListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   inline def useGlobalListener_stalled(event: stalled, handler: DocumentEventHandler[stalled]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useGlobalListener_stalled(event: stalled, handler: DocumentEventHandler[stalled], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useGlobalListener_stalled(event: stalled, handler: DocumentEventHandler[stalled], capture: AddEventListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -2475,27 +2787,57 @@ object mod {
   inline def useGlobalListener_waiting(event: waiting, handler: DocumentEventHandler[waiting], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useGlobalListener_waiting(event: waiting, handler: DocumentEventHandler[waiting], capture: AddEventListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  inline def useGlobalListener_webkitanimationend(event: webkitanimationend, handler: DocumentEventHandler[webkitanimationend]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useGlobalListener_webkitanimationend(event: webkitanimationend, handler: DocumentEventHandler[webkitanimationend], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useGlobalListener_webkitanimationend(
+    event: webkitanimationend,
+    handler: DocumentEventHandler[webkitanimationend],
+    capture: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def useGlobalListener_webkitanimationiteration(event: webkitanimationiteration, handler: DocumentEventHandler[webkitanimationiteration]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useGlobalListener_webkitanimationiteration(
+    event: webkitanimationiteration,
+    handler: DocumentEventHandler[webkitanimationiteration],
+    capture: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useGlobalListener_webkitanimationiteration(
+    event: webkitanimationiteration,
+    handler: DocumentEventHandler[webkitanimationiteration],
+    capture: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def useGlobalListener_webkitanimationstart(event: webkitanimationstart, handler: DocumentEventHandler[webkitanimationstart]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useGlobalListener_webkitanimationstart(event: webkitanimationstart, handler: DocumentEventHandler[webkitanimationstart], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useGlobalListener_webkitanimationstart(
+    event: webkitanimationstart,
+    handler: DocumentEventHandler[webkitanimationstart],
+    capture: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def useGlobalListener_webkittransitionend(event: webkittransitionend, handler: DocumentEventHandler[webkittransitionend]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useGlobalListener_webkittransitionend(event: webkittransitionend, handler: DocumentEventHandler[webkittransitionend], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useGlobalListener_webkittransitionend(
+    event: webkittransitionend,
+    handler: DocumentEventHandler[webkittransitionend],
+    capture: AddEventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   inline def useGlobalListener_wheel(event: wheel, handler: DocumentEventHandler[wheel]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useGlobalListener_wheel(event: wheel, handler: DocumentEventHandler[wheel], capture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useGlobalListener_wheel(event: wheel, handler: DocumentEventHandler[wheel], capture: AddEventListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalListener")(event.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def useImage(): State = ^.asInstanceOf[js.Dynamic].applyDynamic("useImage")().asInstanceOf[State]
   inline def useImage(imageOrUrl: String): State = ^.asInstanceOf[js.Dynamic].applyDynamic("useImage")(imageOrUrl.asInstanceOf[js.Any]).asInstanceOf[State]
+  inline def useImage(imageOrUrl: String, crossOrigin: anonymous | `use-credentials`): State = (^.asInstanceOf[js.Dynamic].applyDynamic("useImage")(imageOrUrl.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any])).asInstanceOf[State]
   inline def useImage(imageOrUrl: String, crossOrigin: String): State = (^.asInstanceOf[js.Dynamic].applyDynamic("useImage")(imageOrUrl.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any])).asInstanceOf[State]
+  inline def useImage(imageOrUrl: Null, crossOrigin: anonymous | `use-credentials`): State = (^.asInstanceOf[js.Dynamic].applyDynamic("useImage")(imageOrUrl.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any])).asInstanceOf[State]
   inline def useImage(imageOrUrl: Null, crossOrigin: String): State = (^.asInstanceOf[js.Dynamic].applyDynamic("useImage")(imageOrUrl.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any])).asInstanceOf[State]
+  inline def useImage(imageOrUrl: Unit, crossOrigin: anonymous | `use-credentials`): State = (^.asInstanceOf[js.Dynamic].applyDynamic("useImage")(imageOrUrl.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any])).asInstanceOf[State]
   inline def useImage(imageOrUrl: Unit, crossOrigin: String): State = (^.asInstanceOf[js.Dynamic].applyDynamic("useImage")(imageOrUrl.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any])).asInstanceOf[State]
   inline def useImage(imageOrUrl: HTMLImageElement): State = ^.asInstanceOf[js.Dynamic].applyDynamic("useImage")(imageOrUrl.asInstanceOf[js.Any]).asInstanceOf[State]
+  inline def useImage(imageOrUrl: HTMLImageElement, crossOrigin: anonymous | `use-credentials`): State = (^.asInstanceOf[js.Dynamic].applyDynamic("useImage")(imageOrUrl.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any])).asInstanceOf[State]
   inline def useImage(imageOrUrl: HTMLImageElement, crossOrigin: String): State = (^.asInstanceOf[js.Dynamic].applyDynamic("useImage")(imageOrUrl.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any])).asInstanceOf[State]
-  
-  inline def useImage_anonymous(imageOrUrl: String, crossOrigin: anonymous): State = (^.asInstanceOf[js.Dynamic].applyDynamic("useImage")(imageOrUrl.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any])).asInstanceOf[State]
-  inline def useImage_anonymous(imageOrUrl: Null, crossOrigin: anonymous): State = (^.asInstanceOf[js.Dynamic].applyDynamic("useImage")(imageOrUrl.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any])).asInstanceOf[State]
-  inline def useImage_anonymous(imageOrUrl: Unit, crossOrigin: anonymous): State = (^.asInstanceOf[js.Dynamic].applyDynamic("useImage")(imageOrUrl.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any])).asInstanceOf[State]
-  inline def useImage_anonymous(imageOrUrl: HTMLImageElement, crossOrigin: anonymous): State = (^.asInstanceOf[js.Dynamic].applyDynamic("useImage")(imageOrUrl.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any])).asInstanceOf[State]
-  
-  inline def useImage_usecredentials(imageOrUrl: String, crossOrigin: `use-credentials`): State = (^.asInstanceOf[js.Dynamic].applyDynamic("useImage")(imageOrUrl.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any])).asInstanceOf[State]
-  inline def useImage_usecredentials(imageOrUrl: Null, crossOrigin: `use-credentials`): State = (^.asInstanceOf[js.Dynamic].applyDynamic("useImage")(imageOrUrl.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any])).asInstanceOf[State]
-  inline def useImage_usecredentials(imageOrUrl: Unit, crossOrigin: `use-credentials`): State = (^.asInstanceOf[js.Dynamic].applyDynamic("useImage")(imageOrUrl.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any])).asInstanceOf[State]
-  inline def useImage_usecredentials(imageOrUrl: HTMLImageElement, crossOrigin: `use-credentials`): State = (^.asInstanceOf[js.Dynamic].applyDynamic("useImage")(imageOrUrl.asInstanceOf[js.Any], crossOrigin.asInstanceOf[js.Any])).asInstanceOf[State]
   
   inline def useInterval(fn: js.Function0[Unit], ms: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useInterval")(fn.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**

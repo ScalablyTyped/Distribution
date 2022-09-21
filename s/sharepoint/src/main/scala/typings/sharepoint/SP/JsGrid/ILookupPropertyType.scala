@@ -10,32 +10,32 @@ trait ILookupPropertyType
   extends StObject
      with IPropertyType {
   
-  def DataToLocalized(dataValue: js.Any): String
+  def DataToLocalized(dataValue: Any): String
   
-  def GetImageSource(record: IRecord, dataValue: js.Any): String
+  def GetImageSource(record: IRecord, dataValue: Any): String
   
   def GetIsLimitedToList(): Boolean
   
-  def GetItems(fnCallback: js.Any): Unit
+  def GetItems(fnCallback: Any): Unit
   
   def GetSerializableLookupPropType(): BLimitToList
   
-  def GetStyleId(dataValue: js.Any): String
+  def GetStyleId(dataValue: Any): String
   
-  def LocalizedToData(localized: String): js.Any
+  def LocalizedToData(localized: String): Any
 }
 object ILookupPropertyType {
   
   inline def apply(
-    BeginValidateNormalizeConvert: (Double, String, js.Any, Boolean, js.Function1[/* args */ DataValue, Unit], js.Any) => Unit,
-    DataToLocalized: js.Any => String,
-    GetImageSource: (IRecord, js.Any) => String,
+    BeginValidateNormalizeConvert: (Double, String, Any, Boolean, js.Function1[/* args */ DataValue, Unit], Any) => Unit,
+    DataToLocalized: Any => String,
+    GetImageSource: (IRecord, Any) => String,
     GetIsLimitedToList: () => Boolean,
-    GetItems: js.Any => Unit,
+    GetItems: Any => Unit,
     GetSerializableLookupPropType: () => BLimitToList,
-    GetStyleId: js.Any => String,
+    GetStyleId: Any => String,
     ID: String,
-    LocalizedToData: String => js.Any
+    LocalizedToData: String => Any
   ): ILookupPropertyType = {
     val __obj = js.Dynamic.literal(BeginValidateNormalizeConvert = js.Any.fromFunction6(BeginValidateNormalizeConvert), DataToLocalized = js.Any.fromFunction1(DataToLocalized), GetImageSource = js.Any.fromFunction2(GetImageSource), GetIsLimitedToList = js.Any.fromFunction0(GetIsLimitedToList), GetItems = js.Any.fromFunction1(GetItems), GetSerializableLookupPropType = js.Any.fromFunction0(GetSerializableLookupPropType), GetStyleId = js.Any.fromFunction1(GetStyleId), ID = ID.asInstanceOf[js.Any], LocalizedToData = js.Any.fromFunction1(LocalizedToData))
     __obj.asInstanceOf[ILookupPropertyType]
@@ -43,18 +43,18 @@ object ILookupPropertyType {
   
   extension [Self <: ILookupPropertyType](x: Self) {
     
-    inline def setDataToLocalized(value: js.Any => String): Self = StObject.set(x, "DataToLocalized", js.Any.fromFunction1(value))
+    inline def setDataToLocalized(value: Any => String): Self = StObject.set(x, "DataToLocalized", js.Any.fromFunction1(value))
     
-    inline def setGetImageSource(value: (IRecord, js.Any) => String): Self = StObject.set(x, "GetImageSource", js.Any.fromFunction2(value))
+    inline def setGetImageSource(value: (IRecord, Any) => String): Self = StObject.set(x, "GetImageSource", js.Any.fromFunction2(value))
     
     inline def setGetIsLimitedToList(value: () => Boolean): Self = StObject.set(x, "GetIsLimitedToList", js.Any.fromFunction0(value))
     
-    inline def setGetItems(value: js.Any => Unit): Self = StObject.set(x, "GetItems", js.Any.fromFunction1(value))
+    inline def setGetItems(value: Any => Unit): Self = StObject.set(x, "GetItems", js.Any.fromFunction1(value))
     
     inline def setGetSerializableLookupPropType(value: () => BLimitToList): Self = StObject.set(x, "GetSerializableLookupPropType", js.Any.fromFunction0(value))
     
-    inline def setGetStyleId(value: js.Any => String): Self = StObject.set(x, "GetStyleId", js.Any.fromFunction1(value))
+    inline def setGetStyleId(value: Any => String): Self = StObject.set(x, "GetStyleId", js.Any.fromFunction1(value))
     
-    inline def setLocalizedToData(value: String => js.Any): Self = StObject.set(x, "LocalizedToData", js.Any.fromFunction1(value))
+    inline def setLocalizedToData(value: String => Any): Self = StObject.set(x, "LocalizedToData", js.Any.fromFunction1(value))
   }
 }

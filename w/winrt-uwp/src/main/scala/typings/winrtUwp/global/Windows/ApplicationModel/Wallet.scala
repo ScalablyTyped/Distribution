@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.ApplicationModel
 
-import typings.std.Date
 import typings.winrtUwp.Windows.ApplicationModel.Wallet.WalletBarcodeSymbology
 import typings.winrtUwp.Windows.ApplicationModel.Wallet.WalletDetailViewPosition
 import typings.winrtUwp.Windows.ApplicationModel.Wallet.WalletItemKind
@@ -87,7 +86,7 @@ object Wallet {
   /** Represents a bar code assigned to a wallet item. */
   @JSGlobal("Windows.ApplicationModel.Wallet.WalletBarcode")
   @js.native
-  class WalletBarcode protected ()
+  open class WalletBarcode protected ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Wallet.WalletBarcode {
     /**
@@ -195,7 +194,7 @@ object Wallet {
   /** Represents an item (data) that is stored in the wallet. */
   @JSGlobal("Windows.ApplicationModel.Wallet.WalletItem")
   @js.native
-  class WalletItem protected ()
+  open class WalletItem protected ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Wallet.WalletItem {
     /**
@@ -235,7 +234,7 @@ object Wallet {
     
     /** Gets or sets the expiration date of the wallet item. */
     /* CompleteClass */
-    var expirationDate: Date = js.native
+    var expirationDate: js.Date = js.native
     
     /** Gets or sets the header background image of the wallet item. */
     /* CompleteClass */
@@ -275,7 +274,7 @@ object Wallet {
     
     /** Gets or sets the date and time the data for this item was last updated. */
     /* CompleteClass */
-    var lastUpdated: Date = js.native
+    var lastUpdated: js.Date = js.native
     
     /** Gets or sets the medium (159 x 159) logo image of the wallet item. */
     /* CompleteClass */
@@ -303,7 +302,7 @@ object Wallet {
     
     /** Gets or sets the date on which the item is valid. */
     /* CompleteClass */
-    var relevantDate: Date = js.native
+    var relevantDate: js.Date = js.native
     
     /** Gets or sets the description of the relevant date of the wallet item. */
     /* CompleteClass */
@@ -325,7 +324,7 @@ object Wallet {
   /** Defines a custom property on a wallet item. Apps can show data in the details view or back of card view of the item. */
   @JSGlobal("Windows.ApplicationModel.Wallet.WalletItemCustomProperty")
   @js.native
-  class WalletItemCustomProperty protected ()
+  open class WalletItemCustomProperty protected ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Wallet.WalletItemCustomProperty {
     /**
@@ -410,7 +409,7 @@ object Wallet {
   @JSGlobal("Windows.ApplicationModel.Wallet.WalletRelevantLocation")
   @js.native
   /** Initializes a new instance of the WalletRelevantLocation class. */
-  class WalletRelevantLocation ()
+  open class WalletRelevantLocation ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Wallet.WalletRelevantLocation {
     
@@ -444,7 +443,7 @@ object Wallet {
   @JSGlobal("Windows.ApplicationModel.Wallet.WalletTransaction")
   @js.native
   /** Initializes a new instance of the WalletTransaction class. */
-  class WalletTransaction ()
+  open class WalletTransaction ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Wallet.WalletTransaction {
     
@@ -470,13 +469,13 @@ object Wallet {
     
     /** Gets or sets the date and time of the transaction. */
     /* CompleteClass */
-    var transactionDate: Date = js.native
+    var transactionDate: js.Date = js.native
   }
   
   /** Represents a wallet verb, which is potentially used for app activation. This is a string suitable for UI that is descriptive of the action. */
   @JSGlobal("Windows.ApplicationModel.Wallet.WalletVerb")
   @js.native
-  class WalletVerb protected ()
+  open class WalletVerb protected ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.Wallet.WalletVerb {
     /**

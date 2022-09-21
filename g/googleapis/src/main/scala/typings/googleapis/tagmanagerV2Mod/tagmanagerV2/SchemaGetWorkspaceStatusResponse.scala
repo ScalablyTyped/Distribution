@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The changes that have occurred in the workspace since the base container
-  * version.
-  */
 trait SchemaGetWorkspaceStatusResponse extends StObject {
   
   /**
@@ -33,12 +29,12 @@ object SchemaGetWorkspaceStatusResponse {
     
     inline def setMergeConflictUndefined: Self = StObject.set(x, "mergeConflict", js.undefined)
     
-    inline def setMergeConflictVarargs(value: SchemaMergeConflict*): Self = StObject.set(x, "mergeConflict", js.Array(value :_*))
+    inline def setMergeConflictVarargs(value: SchemaMergeConflict*): Self = StObject.set(x, "mergeConflict", js.Array(value*))
     
     inline def setWorkspaceChange(value: js.Array[SchemaEntity]): Self = StObject.set(x, "workspaceChange", value.asInstanceOf[js.Any])
     
     inline def setWorkspaceChangeUndefined: Self = StObject.set(x, "workspaceChange", js.undefined)
     
-    inline def setWorkspaceChangeVarargs(value: SchemaEntity*): Self = StObject.set(x, "workspaceChange", js.Array(value :_*))
+    inline def setWorkspaceChangeVarargs(value: SchemaEntity*): Self = StObject.set(x, "workspaceChange", js.Array(value*))
   }
 }

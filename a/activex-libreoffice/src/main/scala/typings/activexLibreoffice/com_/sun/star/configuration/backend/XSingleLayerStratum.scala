@@ -48,7 +48,7 @@ object XSingleLayerStratum {
     acquire: () => Unit,
     getLayer: (String, String) => XLayer,
     getUpdatableLayer: String => XUpdatableLayer,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XSingleLayerStratum = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getLayer = js.Any.fromFunction2(getLayer), getUpdatableLayer = js.Any.fromFunction1(getUpdatableLayer), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

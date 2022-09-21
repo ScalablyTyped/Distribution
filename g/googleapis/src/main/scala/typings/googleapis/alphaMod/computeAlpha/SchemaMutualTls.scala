@@ -4,18 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Configuration for the mutual Tls mode for peer authentication.
-  */
 trait SchemaMutualTls extends StObject {
   
   /**
-    * Specifies if the server TLS is configured to be strict or permissive.
-    * This field can be set to one of the following: STRICT: Client certificate
-    * must be presented, connection is in TLS. PERMISSIVE: Client certificate
-    * can be omitted, connection can be either plaintext or TLS.
+    * Specifies if the server TLS is configured to be strict or permissive. This field can be set to one of the following: STRICT: Client certificate must be presented, connection is in TLS. PERMISSIVE: Client certificate can be omitted, connection can be either plaintext or TLS.
     */
-  var mode: js.UndefOr[String] = js.undefined
+  var mode: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaMutualTls {
   
@@ -27,6 +21,8 @@ object SchemaMutualTls {
   extension [Self <: SchemaMutualTls](x: Self) {
     
     inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeNull: Self = StObject.set(x, "mode", null)
     
     inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }

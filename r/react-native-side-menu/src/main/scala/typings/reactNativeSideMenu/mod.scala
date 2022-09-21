@@ -17,7 +17,7 @@ object mod {
   
   @JSImport("react-native-side-menu", JSImport.Default)
   @js.native
-  class default () extends SideMenu
+  open class default () extends SideMenu
   
   trait ReactNativeSideMenuProps extends StObject {
     
@@ -195,7 +195,7 @@ object mod {
   
   @js.native
   trait SideMenu
-    extends Component[ReactNativeSideMenuProps, js.Object, js.Any] {
+    extends Component[ReactNativeSideMenuProps, js.Object, Any] {
     
     def moveLeft(offset: Double): Unit = js.native
     

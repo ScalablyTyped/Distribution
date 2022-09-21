@@ -27,7 +27,7 @@ object XSignatureVerifyResultListener {
   
   inline def apply(
     acquire: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     signatureVerified: (Double, SecurityOperationStatus) => Unit
   ): XSignatureVerifyResultListener = {

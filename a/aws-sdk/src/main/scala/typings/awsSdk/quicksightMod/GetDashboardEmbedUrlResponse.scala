@@ -12,7 +12,7 @@ trait GetDashboardEmbedUrlResponse extends StObject {
   var EmbedUrl: js.UndefOr[EmbeddingUrl] = js.undefined
   
   /**
-    * The AWS request ID for this operation.
+    * The Amazon Web Services request ID for this operation.
     */
   var RequestId: js.UndefOr[String] = js.undefined
   

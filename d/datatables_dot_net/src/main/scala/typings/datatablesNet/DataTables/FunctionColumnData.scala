@@ -12,9 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FunctionColumnData extends StObject {
   
-  def apply(row: js.Any, t: `type`, s: Unit, meta: CellMetaSettings): js.Any = js.native
-  def apply(row: js.Any, t: display, s: Unit, meta: CellMetaSettings): js.Any = js.native
-  def apply(row: js.Any, t: filter, s: Unit, meta: CellMetaSettings): js.Any = js.native
-  def apply(row: js.Any, t: set, s: js.Any, meta: CellMetaSettings): Unit = js.native
-  def apply(row: js.Any, t: sort, s: Unit, meta: CellMetaSettings): js.Any = js.native
+  def apply(row: Any, t: display | sort | filter | `type`, s: Unit, meta: CellMetaSettings): Any = js.native
+  def apply(row: Any, t: set, s: Any, meta: CellMetaSettings): Unit = js.native
 }

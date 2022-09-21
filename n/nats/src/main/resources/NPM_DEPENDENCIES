@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "nats" : "1.4.12"
+      "nats" : "2.7.1"
     }
   ],
   "test-dependencies" : [
     {
-      "nats" : "1.4.12"
+      "nats" : "2.7.1"
     }
   ],
   "compile-devDependencies" : [

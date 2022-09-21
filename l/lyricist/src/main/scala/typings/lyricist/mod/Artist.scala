@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Artist =========================================================================================
 trait Artist extends StObject {
   
-  var alternate_names: js.Array[js.Any]
+  var alternate_names: js.Array[Any]
   
   var api_path: String
   
@@ -42,12 +42,12 @@ trait Artist extends StObject {
   
   var url: String
   
-  var user: js.UndefOr[js.Any] = js.undefined
+  var user: js.UndefOr[Any] = js.undefined
 }
 object Artist {
   
   inline def apply(
-    alternate_names: js.Array[js.Any],
+    alternate_names: js.Array[Any],
     api_path: String,
     current_user_metadata: Permissions,
     description: Description,
@@ -71,9 +71,9 @@ object Artist {
   
   extension [Self <: Artist](x: Self) {
     
-    inline def setAlternate_names(value: js.Array[js.Any]): Self = StObject.set(x, "alternate_names", value.asInstanceOf[js.Any])
+    inline def setAlternate_names(value: js.Array[Any]): Self = StObject.set(x, "alternate_names", value.asInstanceOf[js.Any])
     
-    inline def setAlternate_namesVarargs(value: js.Any*): Self = StObject.set(x, "alternate_names", js.Array(value :_*))
+    inline def setAlternate_namesVarargs(value: Any*): Self = StObject.set(x, "alternate_names", js.Array(value*))
     
     inline def setApi_path(value: String): Self = StObject.set(x, "api_path", value.asInstanceOf[js.Any])
     
@@ -107,7 +107,7 @@ object Artist {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    inline def setUser(value: js.Any): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: Any): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Vex.Flow.Voice")
 @js.native
-class Voice protected ()
+open class Voice protected ()
   extends StObject
      with typings.vexflow.Vex.Flow.Voice {
   def this(time: Beatvalue) = this()

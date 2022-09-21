@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ParameterInformation extends StObject {
   
   /**
-    * The human-readable doc-comment of this signature. Will be shown
+    * The human-readable doc-comment of this parameter. Will be shown
     * in the UI but can be omitted.
     */
   var documentation: js.UndefOr[String | MarkupContent] = js.undefined
@@ -22,11 +22,11 @@ trait ParameterInformation extends StObject {
     * *Note*: a label of type string should be a substring of its containing signature label.
     * Its intended use case is to highlight the parameter label part in the `SignatureInformation.label`.
     */
-  var label: String | (js.Tuple2[Double, Double])
+  var label: String | (js.Tuple2[uinteger, uinteger])
 }
 object ParameterInformation {
   
-  inline def apply(label: String | (js.Tuple2[Double, Double])): ParameterInformation = {
+  inline def apply(label: String | (js.Tuple2[uinteger, uinteger])): ParameterInformation = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParameterInformation]
   }
@@ -43,8 +43,8 @@ object ParameterInformation {
     */
   inline def create(label: String): ParameterInformation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(label.asInstanceOf[js.Any]).asInstanceOf[ParameterInformation]
   inline def create(label: String, documentation: String): ParameterInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(label.asInstanceOf[js.Any], documentation.asInstanceOf[js.Any])).asInstanceOf[ParameterInformation]
-  inline def create(label: js.Tuple2[Double, Double]): ParameterInformation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(label.asInstanceOf[js.Any]).asInstanceOf[ParameterInformation]
-  inline def create(label: js.Tuple2[Double, Double], documentation: String): ParameterInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(label.asInstanceOf[js.Any], documentation.asInstanceOf[js.Any])).asInstanceOf[ParameterInformation]
+  inline def create(label: js.Tuple2[uinteger, uinteger]): ParameterInformation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(label.asInstanceOf[js.Any]).asInstanceOf[ParameterInformation]
+  inline def create(label: js.Tuple2[uinteger, uinteger], documentation: String): ParameterInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(label.asInstanceOf[js.Any], documentation.asInstanceOf[js.Any])).asInstanceOf[ParameterInformation]
   
   extension [Self <: ParameterInformation](x: Self) {
     
@@ -52,6 +52,6 @@ object ParameterInformation {
     
     inline def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
     
-    inline def setLabel(value: String | (js.Tuple2[Double, Double])): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String | (js.Tuple2[uinteger, uinteger])): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
   }
 }

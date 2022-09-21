@@ -24,7 +24,7 @@ trait RenewalSummary extends StObject {
   /**
     * The timestamp when the certificate was last updated.
     */
-  var updatedAt: js.UndefOr[IsoDate] = js.undefined
+  var updatedAt: js.UndefOr[js.Date] = js.undefined
 }
 object RenewalSummary {
   
@@ -39,7 +39,7 @@ object RenewalSummary {
     
     inline def setDomainValidationRecordsUndefined: Self = StObject.set(x, "domainValidationRecords", js.undefined)
     
-    inline def setDomainValidationRecordsVarargs(value: DomainValidationRecord*): Self = StObject.set(x, "domainValidationRecords", js.Array(value :_*))
+    inline def setDomainValidationRecordsVarargs(value: DomainValidationRecord*): Self = StObject.set(x, "domainValidationRecords", js.Array(value*))
     
     inline def setRenewalStatus(value: RenewalStatus): Self = StObject.set(x, "renewalStatus", value.asInstanceOf[js.Any])
     
@@ -49,7 +49,7 @@ object RenewalSummary {
     
     inline def setRenewalStatusUndefined: Self = StObject.set(x, "renewalStatus", js.undefined)
     
-    inline def setUpdatedAt(value: IsoDate): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
+    inline def setUpdatedAt(value: js.Date): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
     
     inline def setUpdatedAtUndefined: Self = StObject.set(x, "updatedAt", js.undefined)
   }

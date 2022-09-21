@@ -1,6 +1,6 @@
 package typings.kafkaNode.mod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +12,7 @@ trait ProduceRequest extends StObject {
   // string[] | Array<KeyedMessage> | string | KeyedMessage
   var key: js.UndefOr[String | Buffer] = js.undefined
   
-  var messages: js.Any
+  var messages: Any
   
   var partition: js.UndefOr[Double] = js.undefined
   
@@ -20,7 +20,7 @@ trait ProduceRequest extends StObject {
 }
 object ProduceRequest {
   
-  inline def apply(messages: js.Any, topic: String): ProduceRequest = {
+  inline def apply(messages: Any, topic: String): ProduceRequest = {
     val __obj = js.Dynamic.literal(messages = messages.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProduceRequest]
   }
@@ -35,7 +35,7 @@ object ProduceRequest {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setMessages(value: js.Any): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: Any): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
     inline def setPartition(value: Double): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
     

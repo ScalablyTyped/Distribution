@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-firebase", "RNFirebase.notifications.Android.RemoteInput")
 @js.native
-class RemoteInput protected () extends StObject {
+open class RemoteInput protected () extends StObject {
   def this(resultKey: String) = this()
   
   var allowFreeFormInput: js.UndefOr[Boolean] = js.native
   
-  var allowedDataTypes: js.Array[js.Any] = js.native
+  var allowedDataTypes: js.Array[Any] = js.native
   
   var choices: js.Array[String] = js.native
   

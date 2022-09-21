@@ -9,24 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object cloudassetV1beta1 {
   
-  /**
-    * Cloud Asset API
-    *
-    * The cloud asset API manages the history and inventory of cloud resources.
-    *
-    * @example
-    * const {google} = require('googleapis');
-    * const cloudasset = google.cloudasset('v1beta1');
-    *
-    * @namespace cloudasset
-    * @type {Function}
-    * @version v1beta1
-    * @variation v1beta1
-    * @param {object=} options Options for Cloudasset
-    */
   @JSImport("googleapis", "cloudasset_v1beta1.Cloudasset")
   @js.native
-  class Cloudasset protected ()
+  open class Cloudasset protected ()
     extends typings.googleapis.cloudassetV1beta1Mod.cloudassetV1beta1.Cloudasset {
     def this(options: GlobalOptions) = this()
     def this(options: GlobalOptions, google: GoogleConfigurable) = this()
@@ -34,42 +19,42 @@ object cloudassetV1beta1 {
   
   @JSImport("googleapis", "cloudasset_v1beta1.Resource$Folders")
   @js.native
-  class ResourceFolders protected ()
+  open class ResourceFolders protected ()
     extends typings.googleapis.cloudassetV1beta1Mod.cloudassetV1beta1.ResourceFolders {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "cloudasset_v1beta1.Resource$Folders$Operations")
   @js.native
-  class ResourceFoldersOperations protected ()
+  open class ResourceFoldersOperations protected ()
     extends typings.googleapis.cloudassetV1beta1Mod.cloudassetV1beta1.ResourceFoldersOperations {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "cloudasset_v1beta1.Resource$Organizations")
   @js.native
-  class ResourceOrganizations protected ()
+  open class ResourceOrganizations protected ()
     extends typings.googleapis.cloudassetV1beta1Mod.cloudassetV1beta1.ResourceOrganizations {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "cloudasset_v1beta1.Resource$Organizations$Operations")
   @js.native
-  class ResourceOrganizationsOperations protected ()
+  open class ResourceOrganizationsOperations protected ()
     extends typings.googleapis.cloudassetV1beta1Mod.cloudassetV1beta1.ResourceOrganizationsOperations {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "cloudasset_v1beta1.Resource$Projects")
   @js.native
-  class ResourceProjects protected ()
+  open class ResourceProjects protected ()
     extends typings.googleapis.cloudassetV1beta1Mod.cloudassetV1beta1.ResourceProjects {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "cloudasset_v1beta1.Resource$Projects$Operations")
   @js.native
-  class ResourceProjectsOperations protected ()
+  open class ResourceProjectsOperations protected ()
     extends typings.googleapis.cloudassetV1beta1Mod.cloudassetV1beta1.ResourceProjectsOperations {
     def this(context: APIRequestContext) = this()
   }

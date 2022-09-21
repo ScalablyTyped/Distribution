@@ -24,7 +24,7 @@ object DescribeBudgetActionHistoriesResponse {
     
     inline def setActionHistories(value: ActionHistories): Self = StObject.set(x, "ActionHistories", value.asInstanceOf[js.Any])
     
-    inline def setActionHistoriesVarargs(value: ActionHistory*): Self = StObject.set(x, "ActionHistories", js.Array(value :_*))
+    inline def setActionHistoriesVarargs(value: ActionHistory*): Self = StObject.set(x, "ActionHistories", js.Array(value*))
     
     inline def setNextToken(value: GenericString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

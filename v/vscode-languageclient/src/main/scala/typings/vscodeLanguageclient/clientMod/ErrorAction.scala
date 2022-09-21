@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 sealed trait ErrorAction extends StObject
-@JSImport("vscode-languageclient/lib/client", "ErrorAction")
+@JSImport("vscode-languageclient/lib/common/client", "ErrorAction")
 @js.native
 object ErrorAction extends StObject {
   

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait plotOptions extends StObject {
   
-  var colors: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var colors: js.UndefOr[js.Array[Any]] = js.undefined
   
   var grid: js.UndefOr[gridOptions] = js.undefined
   
@@ -35,11 +35,11 @@ object plotOptions {
   
   extension [Self <: plotOptions](x: Self) {
     
-    inline def setColors(value: js.Array[js.Any]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+    inline def setColors(value: js.Array[Any]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
     inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    inline def setColorsVarargs(value: js.Any*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: Any*): Self = StObject.set(x, "colors", js.Array(value*))
     
     inline def setGrid(value: gridOptions): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     
@@ -65,7 +65,7 @@ object plotOptions {
     
     inline def setXaxesUndefined: Self = StObject.set(x, "xaxes", js.undefined)
     
-    inline def setXaxesVarargs(value: axisOptions*): Self = StObject.set(x, "xaxes", js.Array(value :_*))
+    inline def setXaxesVarargs(value: axisOptions*): Self = StObject.set(x, "xaxes", js.Array(value*))
     
     inline def setXaxis(value: axisOptions): Self = StObject.set(x, "xaxis", value.asInstanceOf[js.Any])
     
@@ -75,7 +75,7 @@ object plotOptions {
     
     inline def setYaxesUndefined: Self = StObject.set(x, "yaxes", js.undefined)
     
-    inline def setYaxesVarargs(value: axisOptions*): Self = StObject.set(x, "yaxes", js.Array(value :_*))
+    inline def setYaxesVarargs(value: axisOptions*): Self = StObject.set(x, "yaxes", js.Array(value*))
     
     inline def setYaxis(value: axisOptions): Self = StObject.set(x, "yaxis", value.asInstanceOf[js.Any])
     

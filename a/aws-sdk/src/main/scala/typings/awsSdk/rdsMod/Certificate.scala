@@ -29,7 +29,7 @@ trait Certificate extends StObject {
   /**
     * If there is an override for the default certificate identifier, when the override expires.
     */
-  var CustomerOverrideValidTill: js.UndefOr[TStamp] = js.undefined
+  var CustomerOverrideValidTill: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The thumbprint of the certificate.
@@ -39,12 +39,12 @@ trait Certificate extends StObject {
   /**
     * The starting date from which the certificate is valid.
     */
-  var ValidFrom: js.UndefOr[TStamp] = js.undefined
+  var ValidFrom: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The final date that the certificate continues to be valid.
     */
-  var ValidTill: js.UndefOr[TStamp] = js.undefined
+  var ValidTill: js.UndefOr[js.Date] = js.undefined
 }
 object Certificate {
   
@@ -71,7 +71,7 @@ object Certificate {
     
     inline def setCustomerOverrideUndefined: Self = StObject.set(x, "CustomerOverride", js.undefined)
     
-    inline def setCustomerOverrideValidTill(value: TStamp): Self = StObject.set(x, "CustomerOverrideValidTill", value.asInstanceOf[js.Any])
+    inline def setCustomerOverrideValidTill(value: js.Date): Self = StObject.set(x, "CustomerOverrideValidTill", value.asInstanceOf[js.Any])
     
     inline def setCustomerOverrideValidTillUndefined: Self = StObject.set(x, "CustomerOverrideValidTill", js.undefined)
     
@@ -79,11 +79,11 @@ object Certificate {
     
     inline def setThumbprintUndefined: Self = StObject.set(x, "Thumbprint", js.undefined)
     
-    inline def setValidFrom(value: TStamp): Self = StObject.set(x, "ValidFrom", value.asInstanceOf[js.Any])
+    inline def setValidFrom(value: js.Date): Self = StObject.set(x, "ValidFrom", value.asInstanceOf[js.Any])
     
     inline def setValidFromUndefined: Self = StObject.set(x, "ValidFrom", js.undefined)
     
-    inline def setValidTill(value: TStamp): Self = StObject.set(x, "ValidTill", value.asInstanceOf[js.Any])
+    inline def setValidTill(value: js.Date): Self = StObject.set(x, "ValidTill", value.asInstanceOf[js.Any])
     
     inline def setValidTillUndefined: Self = StObject.set(x, "ValidTill", js.undefined)
   }

@@ -19,7 +19,7 @@ trait Test extends StObject {
   /**
     * When the test was created.
     */
-  var created: js.UndefOr[DateTime] = js.undefined
+  var created: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Represents the total (metered or unmetered) minutes used by the test.
@@ -44,7 +44,7 @@ trait Test extends StObject {
   /**
     * The test's start time.
     */
-  var started: js.UndefOr[DateTime] = js.undefined
+  var started: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The test's status. Allowed values include:   PENDING   PENDING_CONCURRENCY   PENDING_DEVICE   PROCESSING   SCHEDULING   PREPARING   RUNNING   COMPLETED   STOPPING  
@@ -54,7 +54,7 @@ trait Test extends StObject {
   /**
     * The test's stop time.
     */
-  var stopped: js.UndefOr[DateTime] = js.undefined
+  var stopped: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The test's type. Must be one of the following values:   BUILTIN_FUZZ   BUILTIN_EXPLORER  For Android, an app explorer that traverses an Android app, interacting with it and capturing screenshots at the same time.    APPIUM_JAVA_JUNIT   APPIUM_JAVA_TESTNG   APPIUM_PYTHON   APPIUM_NODE   APPIUM_RUBY   APPIUM_WEB_JAVA_JUNIT   APPIUM_WEB_JAVA_TESTNG   APPIUM_WEB_PYTHON   APPIUM_WEB_NODE   APPIUM_WEB_RUBY   CALABASH   INSTRUMENTATION   UIAUTOMATION   UIAUTOMATOR   XCTEST   XCTEST_UI  
@@ -78,7 +78,7 @@ object Test {
     
     inline def setCountersUndefined: Self = StObject.set(x, "counters", js.undefined)
     
-    inline def setCreated(value: DateTime): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: js.Date): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
@@ -98,7 +98,7 @@ object Test {
     
     inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     
-    inline def setStarted(value: DateTime): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
+    inline def setStarted(value: js.Date): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
     
     inline def setStartedUndefined: Self = StObject.set(x, "started", js.undefined)
     
@@ -106,7 +106,7 @@ object Test {
     
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    inline def setStopped(value: DateTime): Self = StObject.set(x, "stopped", value.asInstanceOf[js.Any])
+    inline def setStopped(value: js.Date): Self = StObject.set(x, "stopped", value.asInstanceOf[js.Any])
     
     inline def setStoppedUndefined: Self = StObject.set(x, "stopped", js.undefined)
     

@@ -30,8 +30,8 @@ object stylesMod {
   
   @JSImport("material-ui/styles", "MuiThemeProvider")
   @js.native
-  class MuiThemeProvider ()
-    extends Component[MuiThemeProviderProps, js.Object, js.Any]
+  open class MuiThemeProvider ()
+    extends Component[MuiThemeProviderProps, js.Object, Any]
   
   @JSImport("material-ui/styles", "colors")
   @js.native
@@ -43,7 +43,7 @@ object stylesMod {
   def darkBaseTheme: RawTheme = js.native
   inline def darkBaseTheme_=(x: RawTheme): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("darkBaseTheme")(x.asInstanceOf[js.Any])
   
-  inline def getMuiTheme(muiTheme: typings.materialUi.MaterialUI.Styles.MuiTheme*): typings.materialUi.MaterialUI.Styles.MuiTheme = ^.asInstanceOf[js.Dynamic].applyDynamic("getMuiTheme")(muiTheme.asInstanceOf[js.Any]).asInstanceOf[typings.materialUi.MaterialUI.Styles.MuiTheme]
+  inline def getMuiTheme(muiTheme: typings.materialUi.MaterialUI.Styles.MuiTheme*): typings.materialUi.MaterialUI.Styles.MuiTheme = ^.asInstanceOf[js.Dynamic].applyDynamic("getMuiTheme")(muiTheme.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.materialUi.MaterialUI.Styles.MuiTheme]
   
   @JSImport("material-ui/styles", "lightBaseTheme")
   @js.native

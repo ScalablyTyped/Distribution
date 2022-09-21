@@ -1,6 +1,5 @@
 package typings.tabris
 
-import typings.std.ArrayBuffer
 import typings.tabris.tabrisStrings._empty
 import typings.tabris.tabrisStrings.arraybuffer
 import typings.tabris.tabrisStrings.readystatechange
@@ -32,11 +31,11 @@ trait XMLHttpRequest
   /* InferMemberOverrides */
   override def addEventListener(`type`: String, listener: EventListener, useCapture: Boolean): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
+  def addEventListener_readystatechange(`type`: readystatechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readystatechange(
     `type`: readystatechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
     useCapture: Boolean
   ): Unit = js.native
   
@@ -44,7 +43,7 @@ trait XMLHttpRequest
   
   def getResponseHeader(header: String): String | Null = js.native
   
-  def onreadystatechange(ev: Event): js.Any = js.native
+  def onreadystatechange(ev: Event): Any = js.native
   
   def open(method: String, url: String): Unit = js.native
   def open(method: String, url: String, async: Boolean): Unit = js.native
@@ -57,7 +56,7 @@ trait XMLHttpRequest
   
   val readyState: Double = js.native
   
-  val response: js.Any = js.native
+  val response: Any = js.native
   
   val responseText: String = js.native
   
@@ -65,7 +64,7 @@ trait XMLHttpRequest
   
   def send(): Unit = js.native
   def send(data: String): Unit = js.native
-  def send(data: ArrayBuffer): Unit = js.native
+  def send(data: js.typedarray.ArrayBuffer): Unit = js.native
   def send(data: Blob): Unit = js.native
   def send(data: FormData): Unit = js.native
   

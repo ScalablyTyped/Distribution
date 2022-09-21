@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AdminAccount extends StObject {
   
   /**
-    * The AWS account ID for the account.
+    * The Amazon Web Services account ID for the account.
     */
   var accountId: js.UndefOr[string] = js.undefined
   
   /**
-    * The current status of the account as a delegated administrator of Amazon Macie for the organization.
+    * The current status of the account as the delegated Amazon Macie administrator account for the organization.
     */
   var status: js.UndefOr[AdminStatus] = js.undefined
 }

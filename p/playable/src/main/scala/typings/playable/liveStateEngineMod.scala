@@ -10,7 +10,7 @@ object liveStateEngineMod {
   
   @JSImport("playable/dist/src/modules/playback-engine/live-state-engine", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with LiveStateEngine {
     def this(hasEventEmitterEngine: ILiveStateEngineDependencies) = this()
@@ -37,25 +37,25 @@ object liveStateEngineMod {
   @js.native
   trait LiveStateEngine extends StObject {
     
-    /* private */ var _bindEvents: js.Any = js.native
+    /* private */ var _bindEvents: Any = js.native
     
-    /* private */ var _engine: js.Any = js.native
+    /* private */ var _engine: Any = js.native
     
-    /* private */ var _eventEmitter: js.Any = js.native
+    /* private */ var _eventEmitter: Any = js.native
     
-    /* private */ var _isSeekedByUIWhilePlaying: js.Any = js.native
+    /* private */ var _isSeekedByUIWhilePlaying: Any = js.native
     
-    /* private */ var _onDynamicContentEnded: js.Any = js.native
+    /* private */ var _onDynamicContentEnded: Any = js.native
     
-    /* private */ var _processSeekByUI: js.Any = js.native
+    /* private */ var _processSeekByUI: Any = js.native
     
-    /* private */ var _processStateChange: js.Any = js.native
+    /* private */ var _processStateChange: Any = js.native
     
-    /* private */ var _setState: js.Any = js.native
+    /* private */ var _setState: Any = js.native
     
-    /* private */ var _state: js.Any = js.native
+    /* private */ var _state: Any = js.native
     
-    /* private */ var _unbindEvents: js.Any = js.native
+    /* private */ var _unbindEvents: Any = js.native
     
     def destroy(): Unit = js.native
     

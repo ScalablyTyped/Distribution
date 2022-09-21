@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elastic.js", "MatchQuery")
 @js.native
-class MatchQuery protected ()
+open class MatchQuery protected ()
   extends StObject
      with Query {
   /*
@@ -132,7 +132,7 @@ class MatchQuery protected ()
     Retrieves the internal query object. This is typically used by
     internal API functions so use with caution.
     */
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
   
   /*
     Sets the type of the MatchQuery.  Valid values are

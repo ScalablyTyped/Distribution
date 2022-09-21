@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait History extends StObject {
   
-  var history: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var history: js.UndefOr[js.Array[Any]] = js.undefined
   
   var index: Double
   
@@ -15,7 +15,7 @@ trait History extends StObject {
   
   var routeNames: js.Array[String]
   
-  var routes: js.Array[Key & Params & `0`]
+  var routes: js.Array[Key & `0` & `1`]
   
   var stale: `false`
   
@@ -27,7 +27,7 @@ object History {
     index: Double,
     key: String,
     routeNames: js.Array[String],
-    routes: js.Array[Key & Params & `0`],
+    routes: js.Array[Key & `0` & `1`],
     `type`: String
   ): History = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], routeNames = routeNames.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], stale = false)
@@ -37,11 +37,11 @@ object History {
   
   extension [Self <: History](x: Self) {
     
-    inline def setHistory(value: js.Array[js.Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+    inline def setHistory(value: js.Array[Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
     inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
     
-    inline def setHistoryVarargs(value: js.Any*): Self = StObject.set(x, "history", js.Array(value :_*))
+    inline def setHistoryVarargs(value: Any*): Self = StObject.set(x, "history", js.Array(value*))
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
@@ -49,11 +49,11 @@ object History {
     
     inline def setRouteNames(value: js.Array[String]): Self = StObject.set(x, "routeNames", value.asInstanceOf[js.Any])
     
-    inline def setRouteNamesVarargs(value: String*): Self = StObject.set(x, "routeNames", js.Array(value :_*))
+    inline def setRouteNamesVarargs(value: String*): Self = StObject.set(x, "routeNames", js.Array(value*))
     
-    inline def setRoutes(value: js.Array[Key & Params & `0`]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+    inline def setRoutes(value: js.Array[Key & `0` & `1`]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     
-    inline def setRoutesVarargs(value: (Key & Params & `0`)*): Self = StObject.set(x, "routes", js.Array(value :_*))
+    inline def setRoutesVarargs(value: (Key & `0` & `1`)*): Self = StObject.set(x, "routes", js.Array(value*))
     
     inline def setStale(value: `false`): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
     

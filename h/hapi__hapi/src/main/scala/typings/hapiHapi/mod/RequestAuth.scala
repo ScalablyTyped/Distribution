@@ -1,6 +1,5 @@
 package typings.hapiHapi.mod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RequestAuth extends StObject {
   
   /** an artifact object received from the authentication strategy and used in authentication-related actions. */
-  var artifacts: js.Object
+  var artifacts: AuthArtifacts
   
   /** the credential object received during the authentication process. The presence of an object does not mean successful authentication. */
   var credentials: AuthCredentials
   
   /** the authentication error is failed and mode set to 'try'. */
-  var error: Error
+  var error: js.Error
   
   /** true if the request has been successfully authenticated, otherwise false. */
   var isAuthenticated: Boolean
@@ -34,9 +33,9 @@ trait RequestAuth extends StObject {
 object RequestAuth {
   
   inline def apply(
-    artifacts: js.Object,
+    artifacts: AuthArtifacts,
     credentials: AuthCredentials,
-    error: Error,
+    error: js.Error,
     isAuthenticated: Boolean,
     isAuthorized: Boolean,
     mode: AuthMode,
@@ -48,11 +47,11 @@ object RequestAuth {
   
   extension [Self <: RequestAuth](x: Self) {
     
-    inline def setArtifacts(value: js.Object): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
+    inline def setArtifacts(value: AuthArtifacts): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
     
     inline def setCredentials(value: AuthCredentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
-    inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     inline def setIsAuthenticated(value: Boolean): Self = StObject.set(x, "isAuthenticated", value.asInstanceOf[js.Any])
     

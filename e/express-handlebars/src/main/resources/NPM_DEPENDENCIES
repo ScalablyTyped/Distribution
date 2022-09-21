@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "express-handlebars" : "6.0.6"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "express-handlebars" : "6.0.6"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

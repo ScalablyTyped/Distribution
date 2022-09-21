@@ -10,10 +10,10 @@ Converts an audio stream to speech events in the browser
 | ------------------ | :-------------: |
 | Full name          | hark |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 42 |
-| # downloads        | 617405 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 61407.666666666664 |
+| # stars            | 39.0 |
 
 ## Links
 - [Homepage](https://github.com/latentflip/hark#readme)

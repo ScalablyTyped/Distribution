@@ -15,39 +15,38 @@ object stickyStickyMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Sticky/Sticky", "Sticky")
   @js.native
-  class Sticky protected ()
-    extends Component[IStickyProps, IStickyState, js.Any] {
+  open class Sticky protected () extends Component[IStickyProps, IStickyState, Any] {
     def this(props: IStickyProps) = this()
     
-    /* private */ var _activeElement: js.Any = js.native
+    /* private */ var _activeElement: Any = js.native
     
-    /* private */ var _getBackground: js.Any = js.native
+    /* private */ var _getBackground: Any = js.native
     
-    /* private */ var _getContentStyles: js.Any = js.native
+    /* private */ var _getContentStyles: Any = js.native
     
-    /* private */ var _getContext: js.Any = js.native
+    /* private */ var _getContext: Any = js.native
     
-    /* private */ var _getNonStickyDistanceFromTop: js.Any = js.native
+    /* private */ var _getNonStickyDistanceFromTop: Any = js.native
     
-    /* private */ var _getNonStickyPlaceholderHeightAndWidth: js.Any = js.native
+    /* private */ var _getNonStickyPlaceholderHeightAndWidth: Any = js.native
     
-    /* private */ var _getStickyDistanceFromTop: js.Any = js.native
+    /* private */ var _getStickyDistanceFromTop: Any = js.native
     
-    /* private */ var _getStickyDistanceFromTopForFooter: js.Any = js.native
+    /* private */ var _getStickyDistanceFromTopForFooter: Any = js.native
     
-    /* private */ var _getStickyPlaceholderHeight: js.Any = js.native
+    /* private */ var _getStickyPlaceholderHeight: Any = js.native
     
-    /* private */ var _nonStickyContent: js.Any = js.native
+    /* private */ var _nonStickyContent: Any = js.native
     
-    /* private */ var _onScrollEvent: js.Any = js.native
+    /* private */ var _onScrollEvent: Any = js.native
     
-    /* private */ var _placeHolder: js.Any = js.native
+    /* private */ var _placeHolder: Any = js.native
     
-    /* private */ var _root: js.Any = js.native
+    /* private */ var _root: Any = js.native
     
-    /* private */ var _stickyContentBottom: js.Any = js.native
+    /* private */ var _stickyContentBottom: Any = js.native
     
-    /* private */ var _stickyContentTop: js.Any = js.native
+    /* private */ var _stickyContentTop: Any = js.native
     
     def addSticky(stickyContent: HTMLDivElement): Unit = js.native
     

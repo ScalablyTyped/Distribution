@@ -40,11 +40,16 @@ object windows {
     var left: js.UndefOr[Double] = js.undefined
     
     /**
+      * If true, the newly-created window's 'window.opener' is set to the caller and is in the same [unit of related browsing contexts](https://www.w3.org/TR/html51/browsers.html#unit-of-related-browsing-contexts) as the caller.
+      * @since Chrome 64.
+      */
+    var setSelfAsOpener: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * Optional. The initial state of the window. The 'minimized', 'maximized' and 'fullscreen' states cannot be combined with 'left', 'top', 'width' or 'height'.
-      * One of: "normal", "minimized", "maximized", "fullscreen", or "docked"
       * @since Chrome 44.
       */
-    var state: js.UndefOr[String] = js.undefined
+    var state: js.UndefOr[windowStateEnum] = js.undefined
     
     /**
       * Optional. The id of the tab for which you want to adopt to the new window.
@@ -58,11 +63,8 @@ object windows {
       */
     var top: js.UndefOr[Double] = js.undefined
     
-    /**
-      * Optional. Specifies what type of browser window to create. The 'panel' and 'detached_panel' types create a popup unless the '--enable-panels' flag is set.
-      * One of: "normal", "popup", "panel", or "detached_panel"
-      */
-    var `type`: js.UndefOr[String] = js.undefined
+    /** Optional. Specifies what type of browser window to create. */
+    var `type`: js.UndefOr[createTypeEnum] = js.undefined
     
     /**
       * Optional.
@@ -101,7 +103,11 @@ object windows {
       
       inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
       
-      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setSetSelfAsOpener(value: Boolean): Self = StObject.set(x, "setSelfAsOpener", value.asInstanceOf[js.Any])
+      
+      inline def setSetSelfAsOpenerUndefined: Self = StObject.set(x, "setSelfAsOpener", js.undefined)
+      
+      inline def setState(value: windowStateEnum): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
       inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
@@ -113,7 +119,7 @@ object windows {
       
       inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
       
-      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: createTypeEnum): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
@@ -121,7 +127,7 @@ object windows {
       
       inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
-      inline def setUrlVarargs(value: String*): Self = StObject.set(x, "url", js.Array(value :_*))
+      inline def setUrlVarargs(value: String*): Self = StObject.set(x, "url", js.Array(value*))
       
       inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
@@ -129,39 +135,38 @@ object windows {
     }
   }
   
-  trait GetInfo extends StObject {
+  trait QueryOptions extends StObject {
     
     /**
       * Optional.
-      * If true, the windows.Window object will have a tabs property that contains a list of the tabs.Tab objects. The Tab objects only contain the url, title and favIconUrl properties if the extension's manifest file includes the "tabs" permission.
+      * If true, the windows.Window object will have a tabs property that contains a list of the tabs.Tab objects.
+      * The Tab objects only contain the url, pendingUrl, title and favIconUrl properties if the extension's manifest file includes the "tabs" permission.
       */
     var populate: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * If set, the windows.Window returned will be filtered based on its type. If unset the default filter is set to ['app', 'normal', 'panel', 'popup'], with 'app' and 'panel' window types limited to the extension's own windows.
-      * Each one of: "normal", "popup", "panel", "app", or "devtools"
-      * @since Chrome 46. Warning: this is the current Beta channel.
+      * If set, the Window returned is filtered based on its type. If unset, the default filter is set to ['normal', 'popup'].
       */
-    var windowTypes: js.UndefOr[js.Array[String]] = js.undefined
+    var windowTypes: js.UndefOr[js.Array[windowTypeEnum]] = js.undefined
   }
-  object GetInfo {
+  object QueryOptions {
     
-    inline def apply(): GetInfo = {
+    inline def apply(): QueryOptions = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[GetInfo]
+      __obj.asInstanceOf[QueryOptions]
     }
     
-    extension [Self <: GetInfo](x: Self) {
+    extension [Self <: QueryOptions](x: Self) {
       
       inline def setPopulate(value: Boolean): Self = StObject.set(x, "populate", value.asInstanceOf[js.Any])
       
       inline def setPopulateUndefined: Self = StObject.set(x, "populate", js.undefined)
       
-      inline def setWindowTypes(value: js.Array[String]): Self = StObject.set(x, "windowTypes", value.asInstanceOf[js.Any])
+      inline def setWindowTypes(value: js.Array[windowTypeEnum]): Self = StObject.set(x, "windowTypes", value.asInstanceOf[js.Any])
       
       inline def setWindowTypesUndefined: Self = StObject.set(x, "windowTypes", js.undefined)
       
-      inline def setWindowTypesVarargs(value: String*): Self = StObject.set(x, "windowTypes", js.Array(value :_*))
+      inline def setWindowTypesVarargs(value: windowTypeEnum*): Self = StObject.set(x, "windowTypes", js.Array(value*))
     }
   }
   
@@ -187,10 +192,9 @@ object windows {
     
     /**
       * Optional. The new state of the window. The 'minimized', 'maximized' and 'fullscreen' states cannot be combined with 'left', 'top', 'width' or 'height'.
-      * One of: "normal", "minimized", "maximized", "fullscreen", or "docked"
       * @since Chrome 17.
       */
-    var state: js.UndefOr[String] = js.undefined
+    var state: js.UndefOr[windowStateEnum] = js.undefined
     
     /** Optional. The offset from the top edge of the screen to move the window to in pixels. This value is ignored for panels. */
     var top: js.UndefOr[Double] = js.undefined
@@ -223,7 +227,7 @@ object windows {
       
       inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
       
-      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: windowStateEnum): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
       inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
@@ -252,7 +256,7 @@ object windows {
     var height: js.UndefOr[Double] = js.undefined
     
     /** Optional. The ID of the window. Window IDs are unique within a browser session. Under some circumstances a Window may not be assigned an ID, for example when querying windows using the sessions API, in which case a session ID may be present. */
-    var id: Double
+    var id: js.UndefOr[Double] = js.undefined
     
     /** Whether the window is incognito. */
     var incognito: Boolean
@@ -261,19 +265,18 @@ object windows {
     var left: js.UndefOr[Double] = js.undefined
     
     /**
-      * The session ID used to uniquely identify a Window obtained from the sessions API.
+      * Optional. The session ID used to uniquely identify a Window obtained from the sessions API.
       * @since Chrome 31.
       */
     var sessionId: js.UndefOr[String] = js.undefined
     
     /**
       * The state of this browser window.
-      * One of: "normal", "minimized", "maximized", "fullscreen", or "docked"
       * @since Chrome 17.
       */
-    var state: String
+    var state: js.UndefOr[windowStateEnum] = js.undefined
     
-    /** Array of tabs.Tab objects representing the current tabs in the window. */
+    /** Optional. Array of tabs.Tab objects representing the current tabs in the window. */
     var tabs: js.UndefOr[js.Array[Tab]] = js.undefined
     
     /** Optional. The offset of the window from the top edge of the screen in pixels. Under some circumstances a Window may not be assigned top property, for example when querying closed windows from the sessions API. */
@@ -281,25 +284,16 @@ object windows {
     
     /**
       * The type of browser window this is.
-      * One of: "normal", "popup", "panel", "app", or "devtools"
       */
-    var `type`: String
+    var `type`: js.UndefOr[windowTypeEnum] = js.undefined
     
     /** Optional. The width of the window, including the frame, in pixels. Under some circumstances a Window may not be assigned width property, for example when querying closed windows from the sessions API. */
     var width: js.UndefOr[Double] = js.undefined
   }
   object Window {
     
-    inline def apply(
-      alwaysOnTop: Boolean,
-      focused: Boolean,
-      id: Double,
-      incognito: Boolean,
-      state: String,
-      `type`: String
-    ): Window = {
-      val __obj = js.Dynamic.literal(alwaysOnTop = alwaysOnTop.asInstanceOf[js.Any], focused = focused.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], incognito = incognito.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    inline def apply(alwaysOnTop: Boolean, focused: Boolean, incognito: Boolean): Window = {
+      val __obj = js.Dynamic.literal(alwaysOnTop = alwaysOnTop.asInstanceOf[js.Any], focused = focused.asInstanceOf[js.Any], incognito = incognito.asInstanceOf[js.Any])
       __obj.asInstanceOf[Window]
     }
     
@@ -315,6 +309,8 @@ object windows {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      
       inline def setIncognito(value: Boolean): Self = StObject.set(x, "incognito", value.asInstanceOf[js.Any])
       
       inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
@@ -325,19 +321,23 @@ object windows {
       
       inline def setSessionIdUndefined: Self = StObject.set(x, "sessionId", js.undefined)
       
-      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: windowStateEnum): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
       inline def setTabs(value: js.Array[Tab]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
       
       inline def setTabsUndefined: Self = StObject.set(x, "tabs", js.undefined)
       
-      inline def setTabsVarargs(value: Tab*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+      inline def setTabsVarargs(value: Tab*): Self = StObject.set(x, "tabs", js.Array(value*))
       
       inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
       inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
       
-      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: windowTypeEnum): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
       inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
@@ -349,30 +349,94 @@ object windows {
     
     /**
       * Conditions that the window's type being created must satisfy. By default it will satisfy ['app', 'normal', 'panel', 'popup'], with 'app' and 'panel' window types limited to the extension's own windows.
-      * Each one of: "normal", "popup", "panel", "app", or "devtools"
       */
-    var windowTypes: js.Array[String]
+    var windowTypes: js.Array[windowTypeEnum]
   }
   object WindowEventFilter {
     
-    inline def apply(windowTypes: js.Array[String]): WindowEventFilter = {
+    inline def apply(windowTypes: js.Array[windowTypeEnum]): WindowEventFilter = {
       val __obj = js.Dynamic.literal(windowTypes = windowTypes.asInstanceOf[js.Any])
       __obj.asInstanceOf[WindowEventFilter]
     }
     
     extension [Self <: WindowEventFilter](x: Self) {
       
-      inline def setWindowTypes(value: js.Array[String]): Self = StObject.set(x, "windowTypes", value.asInstanceOf[js.Any])
+      inline def setWindowTypes(value: js.Array[windowTypeEnum]): Self = StObject.set(x, "windowTypes", value.asInstanceOf[js.Any])
       
-      inline def setWindowTypesVarargs(value: String*): Self = StObject.set(x, "windowTypes", js.Array(value :_*))
+      inline def setWindowTypesVarargs(value: windowTypeEnum*): Self = StObject.set(x, "windowTypes", js.Array(value*))
     }
   }
   
-  type WindowIdEvent = Event[
-    js.Function2[/* windowId */ Double, /* filters */ js.UndefOr[WindowEventFilter], Unit]
-  ]
+  @js.native
+  trait WindowIdEvent
+    extends StObject
+       with Event[js.Function1[/* windowId */ Double, Unit]] {
+    
+    def addListener(callback: js.Function1[/* windowId */ Double, Unit], filters: WindowEventFilter): Unit = js.native
+  }
   
-  type WindowReferenceEvent = Event[
-    js.Function2[/* window */ Window, /* filters */ js.UndefOr[WindowEventFilter], Unit]
-  ]
+  @js.native
+  trait WindowReferenceEvent
+    extends StObject
+       with Event[js.Function1[/* window */ Window, Unit]] {
+    
+    def addListener(callback: js.Function1[/* window */ Window, Unit], filters: WindowEventFilter): Unit = js.native
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.chrome.chromeStrings.normal
+    - typings.chrome.chromeStrings.popup
+    - typings.chrome.chromeStrings.panel
+  */
+  trait createTypeEnum extends StObject
+  object createTypeEnum {
+    
+    inline def normal: typings.chrome.chromeStrings.normal = "normal".asInstanceOf[typings.chrome.chromeStrings.normal]
+    
+    inline def panel: typings.chrome.chromeStrings.panel = "panel".asInstanceOf[typings.chrome.chromeStrings.panel]
+    
+    inline def popup: typings.chrome.chromeStrings.popup = "popup".asInstanceOf[typings.chrome.chromeStrings.popup]
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.chrome.chromeStrings.normal
+    - typings.chrome.chromeStrings.minimized
+    - typings.chrome.chromeStrings.maximized
+    - typings.chrome.chromeStrings.fullscreen
+    - typings.chrome.chromeStrings.`locked-fullscreen`
+  */
+  trait windowStateEnum extends StObject
+  object windowStateEnum {
+    
+    inline def fullscreen: typings.chrome.chromeStrings.fullscreen = "fullscreen".asInstanceOf[typings.chrome.chromeStrings.fullscreen]
+    
+    inline def `locked-fullscreen`: typings.chrome.chromeStrings.`locked-fullscreen` = "locked-fullscreen".asInstanceOf[typings.chrome.chromeStrings.`locked-fullscreen`]
+    
+    inline def maximized: typings.chrome.chromeStrings.maximized = "maximized".asInstanceOf[typings.chrome.chromeStrings.maximized]
+    
+    inline def minimized: typings.chrome.chromeStrings.minimized = "minimized".asInstanceOf[typings.chrome.chromeStrings.minimized]
+    
+    inline def normal: typings.chrome.chromeStrings.normal = "normal".asInstanceOf[typings.chrome.chromeStrings.normal]
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.chrome.chromeStrings.normal
+    - typings.chrome.chromeStrings.popup
+    - typings.chrome.chromeStrings.panel
+    - typings.chrome.chromeStrings.app
+    - typings.chrome.chromeStrings.devtools
+  */
+  trait windowTypeEnum extends StObject
+  object windowTypeEnum {
+    
+    inline def app: typings.chrome.chromeStrings.app = "app".asInstanceOf[typings.chrome.chromeStrings.app]
+    
+    inline def devtools: typings.chrome.chromeStrings.devtools = "devtools".asInstanceOf[typings.chrome.chromeStrings.devtools]
+    
+    inline def normal: typings.chrome.chromeStrings.normal = "normal".asInstanceOf[typings.chrome.chromeStrings.normal]
+    
+    inline def panel: typings.chrome.chromeStrings.panel = "panel".asInstanceOf[typings.chrome.chromeStrings.panel]
+    
+    inline def popup: typings.chrome.chromeStrings.popup = "popup".asInstanceOf[typings.chrome.chromeStrings.popup]
+  }
 }

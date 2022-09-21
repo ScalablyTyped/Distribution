@@ -19,7 +19,7 @@ object modifier {
     * @param {HTMLElemenet} element Target element.
     * @param {String} modifier Name of the modifier.
     */
-  inline def add(element: HTMLElement, modifier: String*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(element.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def add(element: HTMLElement, modifier: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(List(element.asInstanceOf[js.Any]).`++`(modifier.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
   /**
     * @description Check whether the specified modifier is included in the element.
@@ -34,7 +34,7 @@ object modifier {
     * @param {HTMLElemenet} element Target element.
     * @param {String} modifier Name of the modifier.
     */
-  inline def remove(element: HTMLElement, modifier: String*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(element.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def remove(element: HTMLElement, modifier: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(List(element.asInstanceOf[js.Any]).`++`(modifier.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
   /**
     * @description Toggle the specified modifier.

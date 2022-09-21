@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("DeleteHyperlinkCommand")
 @js.native
-class DeleteHyperlinkCommand ()
+open class DeleteHyperlinkCommand ()
   extends StObject
      with typings.devexpressWeb.DeleteHyperlinkCommand {
   

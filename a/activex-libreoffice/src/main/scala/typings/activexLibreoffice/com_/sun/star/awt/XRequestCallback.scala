@@ -12,17 +12,17 @@ trait XRequestCallback extends StObject {
     * @param aData any private data which will be provided to the callback implementation.
     * @param xCallback a reference to the callback which should be called by the implementation of this interface.
     */
-  def addCallback(xCallback: XCallback, aData: js.Any): Unit
+  def addCallback(xCallback: XCallback, aData: Any): Unit
 }
 object XRequestCallback {
   
-  inline def apply(addCallback: (XCallback, js.Any) => Unit): XRequestCallback = {
+  inline def apply(addCallback: (XCallback, Any) => Unit): XRequestCallback = {
     val __obj = js.Dynamic.literal(addCallback = js.Any.fromFunction2(addCallback))
     __obj.asInstanceOf[XRequestCallback]
   }
   
   extension [Self <: XRequestCallback](x: Self) {
     
-    inline def setAddCallback(value: (XCallback, js.Any) => Unit): Self = StObject.set(x, "addCallback", js.Any.fromFunction2(value))
+    inline def setAddCallback(value: (XCallback, Any) => Unit): Self = StObject.set(x, "addCallback", js.Any.fromFunction2(value))
   }
 }

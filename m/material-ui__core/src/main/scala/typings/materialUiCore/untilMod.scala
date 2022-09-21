@@ -13,5 +13,5 @@ object untilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[P, S](selector: String, options: Context): CommonWrapper[P, S, Component[P, S, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CommonWrapper[P, S, Component[P, S, js.Any]]]
+  inline def default[P, S](selector: String, options: Context): CommonWrapper[P, S, Component[P, S, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CommonWrapper[P, S, Component[P, S, Any]]]
 }

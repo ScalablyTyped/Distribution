@@ -516,7 +516,7 @@ object Sites {
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      inline def setTypeVarargs(value: PageType*): Self = StObject.set(x, "type", js.Array(value :_*))
+      inline def setTypeVarargs(value: PageType*): Self = StObject.set(x, "type", js.Array(value*))
     }
   }
   
@@ -648,9 +648,9 @@ object Sites {
   @js.native
   trait SitesApp extends StObject {
     
-    var AttachmentType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AttachmentType */ js.Any = js.native
+    var AttachmentType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AttachmentType */ Any = js.native
     
-    var PageType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageType */ js.Any = js.native
+    var PageType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PageType */ Any = js.native
     
     def copySite(domain: String, name: String, title: String, summary: String, site: Site): Site = js.native
     

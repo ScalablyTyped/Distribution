@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A Google Apps Domain membership.
-  */
 trait SchemaDomainMembership extends StObject {
   
   /**
-    * True if the person is in the viewer&#39;s Google Apps domain.
+    * True if the person is in the viewer's Google Workspace domain.
     */
-  var inViewerDomain: js.UndefOr[Boolean] = js.undefined
+  var inViewerDomain: js.UndefOr[Boolean | Null] = js.undefined
 }
 object SchemaDomainMembership {
   
@@ -24,6 +21,8 @@ object SchemaDomainMembership {
   extension [Self <: SchemaDomainMembership](x: Self) {
     
     inline def setInViewerDomain(value: Boolean): Self = StObject.set(x, "inViewerDomain", value.asInstanceOf[js.Any])
+    
+    inline def setInViewerDomainNull: Self = StObject.set(x, "inViewerDomain", null)
     
     inline def setInViewerDomainUndefined: Self = StObject.set(x, "inViewerDomain", js.undefined)
   }

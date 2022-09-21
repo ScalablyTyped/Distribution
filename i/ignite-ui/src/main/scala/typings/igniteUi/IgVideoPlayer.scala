@@ -11,7 +11,7 @@ trait IgVideoPlayer
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Gets/Sets whether player controls will auto hide when video is not hovered. This is applicable only when Infragistics playback controls are used.
@@ -223,7 +223,7 @@ trait IgVideoPlayer
     * Gets/Sets a list of video sources to choose from. Best coded/format is automatically detected by the control. Supported types are depending on the browser and could be one of the following mov, mp4, webm, ogg.
     *
     */
-  var sources: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var sources: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Gets/Sets video title.
@@ -289,7 +289,7 @@ object IgVideoPlayer {
     
     inline def setBannersUndefined: Self = StObject.set(x, "banners", js.undefined)
     
-    inline def setBannersVarargs(value: IgVideoPlayerBanner*): Self = StObject.set(x, "banners", js.Array(value :_*))
+    inline def setBannersVarargs(value: IgVideoPlayerBanner*): Self = StObject.set(x, "banners", js.Array(value*))
     
     inline def setBookmarkClick(value: (/* event */ Event, /* ui */ BookmarkClickEventUIParam) => Unit): Self = StObject.set(x, "bookmarkClick", js.Any.fromFunction2(value))
     
@@ -303,7 +303,7 @@ object IgVideoPlayer {
     
     inline def setBookmarksUndefined: Self = StObject.set(x, "bookmarks", js.undefined)
     
-    inline def setBookmarksVarargs(value: IgVideoPlayerBookmark*): Self = StObject.set(x, "bookmarks", js.Array(value :_*))
+    inline def setBookmarksVarargs(value: IgVideoPlayerBookmark*): Self = StObject.set(x, "bookmarks", js.Array(value*))
     
     inline def setBrowserControls(value: Boolean): Self = StObject.set(x, "browserControls", value.asInstanceOf[js.Any])
     
@@ -397,17 +397,17 @@ object IgVideoPlayer {
     
     inline def setRelatedVideosUndefined: Self = StObject.set(x, "relatedVideos", js.undefined)
     
-    inline def setRelatedVideosVarargs(value: IgVideoPlayerRelatedVideo*): Self = StObject.set(x, "relatedVideos", js.Array(value :_*))
+    inline def setRelatedVideosVarargs(value: IgVideoPlayerRelatedVideo*): Self = StObject.set(x, "relatedVideos", js.Array(value*))
     
     inline def setShowSeekTime(value: Boolean): Self = StObject.set(x, "showSeekTime", value.asInstanceOf[js.Any])
     
     inline def setShowSeekTimeUndefined: Self = StObject.set(x, "showSeekTime", js.undefined)
     
-    inline def setSources(value: js.Array[js.Any]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
+    inline def setSources(value: js.Array[Any]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
     inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
-    inline def setSourcesVarargs(value: js.Any*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: Any*): Self = StObject.set(x, "sources", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

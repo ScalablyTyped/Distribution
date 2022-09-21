@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientDashboardItemDataDimensionValue")
 @js.native
-class ASPxClientDashboardItemDataDimensionValue ()
+open class ASPxClientDashboardItemDataDimensionValue ()
   extends StObject
      with typings.devexpressWeb.ASPxClientDashboardItemDataDimensionValue {
   
@@ -23,11 +23,11 @@ class ASPxClientDashboardItemDataDimensionValue ()
     * Gets the unique value for the current dimension value.
     */
   /* CompleteClass */
-  override def GetUniqueValue(): js.Any = js.native
+  override def GetUniqueValue(): Any = js.native
   
   /**
     * Gets the current dimension value.
     */
   /* CompleteClass */
-  override def GetValue(): js.Any = js.native
+  override def GetValue(): Any = js.native
 }

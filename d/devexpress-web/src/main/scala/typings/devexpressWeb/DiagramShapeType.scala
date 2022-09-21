@@ -58,9 +58,6 @@ object DiagramShapeType extends StObject {
     extends StObject
        with DiagramShapeType
   
-  /**
-    * The connector.
-    */
   @js.native
   sealed trait Connector
     extends StObject

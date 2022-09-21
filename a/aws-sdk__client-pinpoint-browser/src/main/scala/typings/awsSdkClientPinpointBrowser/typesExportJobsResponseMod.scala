@@ -2,7 +2,6 @@ package typings.awsSdkClientPinpointBrowser
 
 import typings.awsSdkClientPinpointBrowser.typesExportJobResponseMod.ExportJobResponse
 import typings.awsSdkClientPinpointBrowser.typesExportJobResponseMod.UnmarshalledExportJobResponse
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ object typesExportJobsResponseMod {
     /**
       * A list of export jobs for the application.
       */
-    var Item: js.UndefOr[js.Array[ExportJobResponse] | Iterable[ExportJobResponse]] = js.undefined
+    var Item: js.UndefOr[js.Array[ExportJobResponse] | js.Iterable[ExportJobResponse]] = js.undefined
     
     /**
       * The string that you use in a subsequent request to get the next page of results in a paginated response.
@@ -30,11 +29,11 @@ object typesExportJobsResponseMod {
     
     extension [Self <: ExportJobsResponse](x: Self) {
       
-      inline def setItem(value: js.Array[ExportJobResponse] | Iterable[ExportJobResponse]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
+      inline def setItem(value: js.Array[ExportJobResponse] | js.Iterable[ExportJobResponse]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
       
       inline def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
       
-      inline def setItemVarargs(value: ExportJobResponse*): Self = StObject.set(x, "Item", js.Array(value :_*))
+      inline def setItemVarargs(value: ExportJobResponse*): Self = StObject.set(x, "Item", js.Array(value*))
       
       inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
       
@@ -65,7 +64,7 @@ object typesExportJobsResponseMod {
       
       inline def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
       
-      inline def setItemVarargs(value: UnmarshalledExportJobResponse*): Self = StObject.set(x, "Item", js.Array(value :_*))
+      inline def setItemVarargs(value: UnmarshalledExportJobResponse*): Self = StObject.set(x, "Item", js.Array(value*))
     }
   }
 }

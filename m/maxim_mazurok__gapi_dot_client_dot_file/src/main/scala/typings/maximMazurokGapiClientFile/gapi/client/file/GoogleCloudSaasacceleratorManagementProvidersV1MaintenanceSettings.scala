@@ -13,15 +13,18 @@ trait GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings extends
     */
   var exclude: js.UndefOr[Boolean] = js.undefined
   
+  /** Optional. If the update call is triggered from rollback, set the value as true. */
+  var isRollback: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Optional. The MaintenancePolicies that have been attached to the instance. The key must be of the type name of the oneof policy name defined in MaintenancePolicy, and the embedded
-    * policy must define the same policy type. For complete details of MaintenancePolicy, please refer to go/cloud-saas-mw-ug. If only the name is needed (like in the deprecated
-    * Instance.maintenance_policy_names field) then only populate MaintenancePolicy.name.
+    * policy must define the same policy type. For complete details of MaintenancePolicy, please refer to go/cloud-saas-mw-ug. If only the name is needed, then only populate
+    * MaintenancePolicy.name.
     */
   var maintenancePolicies: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.file.gapi.client.file.MaintenancePolicy}
-    */ typings.maximMazurokGapiClientFile.maximMazurokGapiClientFileStrings.GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientFile.maximMazurokGapiClientFileStrings.GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings & TopLevel[Any]
   ] = js.undefined
 }
 object GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings {
@@ -37,10 +40,14 @@ object GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings {
     
     inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
+    inline def setIsRollback(value: Boolean): Self = StObject.set(x, "isRollback", value.asInstanceOf[js.Any])
+    
+    inline def setIsRollbackUndefined: Self = StObject.set(x, "isRollback", js.undefined)
+    
     inline def setMaintenancePolicies(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.file.gapi.client.file.MaintenancePolicy}
-      */ typings.maximMazurokGapiClientFile.maximMazurokGapiClientFileStrings.GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientFile.maximMazurokGapiClientFileStrings.GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings & TopLevel[Any]
     ): Self = StObject.set(x, "maintenancePolicies", value.asInstanceOf[js.Any])
     
     inline def setMaintenancePoliciesUndefined: Self = StObject.set(x, "maintenancePolicies", js.undefined)

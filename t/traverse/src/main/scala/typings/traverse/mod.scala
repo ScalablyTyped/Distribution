@@ -20,53 +20,50 @@ object mod {
   /**
     * Execute `fn` for each node in the object but unlike `.map()`, when `this.update()` is called it updates the object in-place.
     */
-  inline def forEach(obj: js.Any, cb: js.ThisFunction1[/* this */ TraverseContext, /* v */ js.Any, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(obj.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def forEach(obj: Any, cb: js.ThisFunction1[/* this */ TraverseContext, /* v */ Any, Unit]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(obj.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /**
     * Get the element at the array `path`.
     */
-  inline def get(obj: js.Any, path: js.Array[String]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def get(obj: Any, path: js.Array[String]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /**
     * Return whether the element at the array `path` exists.
     */
-  inline def has(obj: js.Any, path: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def has(obj: Any, path: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Execute `fn` for each node in the object and return a new object with the results of the walk. To update nodes in the result use `this.update(value)`.
     */
-  inline def map(obj: js.Any, cb: js.ThisFunction1[/* this */ TraverseContext, /* v */ js.Any, Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(obj.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def map(obj: Any, cb: js.ThisFunction1[/* this */ TraverseContext, /* v */ Any, Unit]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(obj.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /**
     * Return an `Array` of every node in the object.
     */
-  inline def nodes(obj: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("nodes")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def nodes(obj: Any): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("nodes")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
   
   /**
     * Return an `Array` of every possible non-cyclic path in the object. 
     * Paths are `Array`s of string keys.
     */
-  inline def paths(obj: js.Any): js.Array[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("paths")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[String]]]
+  inline def paths(obj: Any): js.Array[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("paths")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[String]]]
   
   /**
     * For each node in the object, perform a [left-fold](http://en.wikipedia.org/wiki/Fold_(higher-order_function)) with the return value of `fn(acc, node)`.
     * 
     * If `init` isn't specified, `init` is set to the root object for the first step and the root element is skipped.
     */
+  inline def reduce(obj: Any, cb: js.ThisFunction2[/* this */ TraverseContext, /* acc */ Any, /* v */ Any, Unit]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(obj.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Any]
   inline def reduce(
-    obj: js.Any,
-    cb: js.ThisFunction2[/* this */ TraverseContext, /* acc */ js.Any, /* v */ js.Any, Unit]
-  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(obj.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def reduce(
-    obj: js.Any,
-    cb: js.ThisFunction2[/* this */ TraverseContext, /* acc */ js.Any, /* v */ js.Any, Unit],
-    init: js.Any
-  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(obj.asInstanceOf[js.Any], cb.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    obj: Any,
+    cb: js.ThisFunction2[/* this */ TraverseContext, /* acc */ Any, /* v */ Any, Unit],
+    init: Any
+  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(obj.asInstanceOf[js.Any], cb.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /**
     * Set the element at the array `path` to `value`.
     */
-  inline def set(obj: js.Any, path: js.Array[String], value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def set(obj: Any, path: js.Array[String], value: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @js.native
   trait Traverse[T] extends StObject {
@@ -74,12 +71,12 @@ object mod {
     /**
       * Execute `fn` for each node in the object but unlike `.map()`, when `this.update()` is called it updates the object in-place.
       */
-    def forEach(cb: js.ThisFunction1[/* this */ TraverseContext, /* v */ js.Any, Unit]): js.Any = js.native
+    def forEach(cb: js.ThisFunction1[/* this */ TraverseContext, /* v */ Any, Unit]): Any = js.native
     
     /**
       * Get the element at the array `path`.
       */
-    def get(path: js.Array[String]): js.Any = js.native
+    def get(path: js.Array[String]): Any = js.native
     
     /**
       * Return whether the element at the array `path` exists.
@@ -89,12 +86,12 @@ object mod {
     /**
       * Execute `fn` for each node in the object and return a new object with the results of the walk. To update nodes in the result use `this.update(value)`.
       */
-    def map(cb: js.ThisFunction1[/* this */ TraverseContext, /* v */ js.Any, Unit]): js.Any = js.native
+    def map(cb: js.ThisFunction1[/* this */ TraverseContext, /* v */ Any, Unit]): Any = js.native
     
     /**
       * Return an `Array` of every node in the object.
       */
-    def nodes(): js.Array[js.Any] = js.native
+    def nodes(): js.Array[Any] = js.native
     
     /**
       * Return an `Array` of every possible non-cyclic path in the object. 
@@ -107,16 +104,13 @@ object mod {
       * 
       * If `init` isn't specified, `init` is set to the root object for the first step and the root element is skipped.
       */
-    def reduce(cb: js.ThisFunction2[/* this */ TraverseContext, /* acc */ js.Any, /* v */ js.Any, Unit]): js.Any = js.native
-    def reduce(
-      cb: js.ThisFunction2[/* this */ TraverseContext, /* acc */ js.Any, /* v */ js.Any, Unit],
-      init: js.Any
-    ): js.Any = js.native
+    def reduce(cb: js.ThisFunction2[/* this */ TraverseContext, /* acc */ Any, /* v */ Any, Unit]): Any = js.native
+    def reduce(cb: js.ThisFunction2[/* this */ TraverseContext, /* acc */ Any, /* v */ Any, Unit], init: Any): Any = js.native
     
     /**
       * Set the element at the array `path` to `value`.
       */
-    def set(path: js.Array[String], value: js.Any): js.Any = js.native
+    def set(path: js.Array[String], value: Any): Any = js.native
   }
   
   @js.native
@@ -125,13 +119,13 @@ object mod {
     /**
       * Call this function after all of the children are traversed.
       */
-    def after(callback: js.ThisFunction1[/* this */ this.type, /* value */ js.Any, Unit]): Unit = js.native
+    def after(callback: js.ThisFunction1[/* this */ this.type, /* value */ Any, Unit]): Unit = js.native
     
     /**
       * Call this function before all of the children are traversed.
       * You can assign into `this.keys` here to traverse in a custom order.
       */
-    def before(callback: js.ThisFunction1[/* this */ this.type, /* value */ js.Any, Unit]): Unit = js.native
+    def before(callback: js.ThisFunction1[/* this */ this.type, /* value */ Any, Unit]): Unit = js.native
     
     /**
       * Prevents traversing descendents of the current node.
@@ -178,7 +172,7 @@ object mod {
     /**
       * The present node on the recursive walk
       */
-    var node: js.Any = js.native
+    var node: Any = js.native
     
     /**
       * Whether or not the present node is not a leaf node (has children)
@@ -209,12 +203,12 @@ object mod {
     /**
       * Call this function after each of the children are traversed.
       */
-    def post(callback: js.ThisFunction1[/* this */ this.type, /* child */ js.Any, Unit]): Unit = js.native
+    def post(callback: js.ThisFunction1[/* this */ this.type, /* child */ Any, Unit]): Unit = js.native
     
     /**
       * Call this function before each of the children are traversed.
       */
-    def pre(callback: js.ThisFunction1[/* this */ this.type, /* child */ js.Any, Unit]): Unit = js.native
+    def pre(callback: js.ThisFunction1[/* this */ this.type, /* child */ Any, Unit]): Unit = js.native
     
     /**
       * Remove the current element from the output. If the node is in an Array it will be spliced off. Otherwise it will be deleted from its parent.
@@ -232,7 +226,7 @@ object mod {
       * 
       * All the elements in `value` will be recursively traversed unless `stopHere` is true (false by default).
       */
-    def update(value: js.Any): Unit = js.native
-    def update(value: js.Any, stopHere: Boolean): Unit = js.native
+    def update(value: Any): Unit = js.native
+    def update(value: Any, stopHere: Boolean): Unit = js.native
   }
 }

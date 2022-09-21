@@ -11,14 +11,11 @@ Utility to help find out why Node isn't exiting
 | Full name          | wtfnode |
 | Keywords           | - |
 | # releases         | 5 |
-| # dependents       | 19 |
-| # downloads        | 1349222 |
-| # stars            | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 208597.66666666666 |
+| # stars            | 469.0 |
 
 ## Links
-- [Homepage](https://github.com/myndzi/wtfnode#readme)
-- [Bugs](https://github.com/myndzi/wtfnode/issues)
-- [Repository](https://github.com/myndzi/wtfnode)
 - [Npm](https://www.npmjs.com/package/wtfnode)
     
 

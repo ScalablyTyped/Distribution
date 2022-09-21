@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EvaluationResultIdentifier extends StObject {
   
   /**
-    * Identifies an AWS Config rule used to evaluate an AWS resource, and provides the type and ID of the evaluated resource.
+    * Identifies an Config rule used to evaluate an Amazon Web Services resource, and provides the type and ID of the evaluated resource.
     */
   var EvaluationResultQualifier: js.UndefOr[typings.awsSdk.configserviceMod.EvaluationResultQualifier] = js.undefined
   
   /**
-    * The time of the event that triggered the evaluation of your AWS resources. The time can indicate when AWS Config delivered a configuration item change notification, or it can indicate when AWS Config delivered the configuration snapshot, depending on which event triggered the evaluation.
+    * The time of the event that triggered the evaluation of your Amazon Web Services resources. The time can indicate when Config delivered a configuration item change notification, or it can indicate when Config delivered the configuration snapshot, depending on which event triggered the evaluation.
     */
-  var OrderingTimestamp: js.UndefOr[Date] = js.undefined
+  var OrderingTimestamp: js.UndefOr[js.Date] = js.undefined
 }
 object EvaluationResultIdentifier {
   
@@ -29,7 +29,7 @@ object EvaluationResultIdentifier {
     
     inline def setEvaluationResultQualifierUndefined: Self = StObject.set(x, "EvaluationResultQualifier", js.undefined)
     
-    inline def setOrderingTimestamp(value: Date): Self = StObject.set(x, "OrderingTimestamp", value.asInstanceOf[js.Any])
+    inline def setOrderingTimestamp(value: js.Date): Self = StObject.set(x, "OrderingTimestamp", value.asInstanceOf[js.Any])
     
     inline def setOrderingTimestampUndefined: Self = StObject.set(x, "OrderingTimestamp", js.undefined)
   }

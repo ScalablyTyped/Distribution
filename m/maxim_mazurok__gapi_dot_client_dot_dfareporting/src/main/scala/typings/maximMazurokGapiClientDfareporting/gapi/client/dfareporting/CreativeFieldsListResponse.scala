@@ -28,7 +28,7 @@ object CreativeFieldsListResponse {
     
     inline def setCreativeFieldsUndefined: Self = StObject.set(x, "creativeFields", js.undefined)
     
-    inline def setCreativeFieldsVarargs(value: CreativeField*): Self = StObject.set(x, "creativeFields", js.Array(value :_*))
+    inline def setCreativeFieldsVarargs(value: CreativeField*): Self = StObject.set(x, "creativeFields", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

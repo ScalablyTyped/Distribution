@@ -1,9 +1,6 @@
 package typings.reactNative
 
 import typings.reactNative.anon.DictoptionName
-import typings.std.ArrayBuffer
-import typings.std.Blob
-import typings.std.Error
 import typings.std.PropertyKey
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -17,7 +14,7 @@ object global {
   /**
     * Initialize this controller.
     */
-  class AbortController ()
+  open class AbortController ()
     extends StObject
        with typings.reactNative.AbortController {
     
@@ -39,34 +36,62 @@ object global {
   /**
     * AbortSignal cannot be constructed directly.
     */
-  class AbortSignal ()
+  open class AbortSignal ()
     extends StObject
-       with typings.reactNative.AbortSignal {
+       with typings.reactNative.AbortSignal
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSGlobal("Blob")
+  @js.native
+  open class Blob ()
+    extends StObject
+       with typings.reactNative.Blob {
+    def this(blobParts: js.Array[typings.reactNative.Blob | String]) = this()
+    def this(blobParts: js.Array[typings.reactNative.Blob | String], options: BlobOptions) = this()
+    def this(blobParts: Unit, options: BlobOptions) = this()
+  }
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSGlobal("FileReader")
+  @js.native
+  open class FileReader ()
+    extends StObject
+       with typings.reactNative.FileReader
+  object FileReader {
     
-    /**
-      * Returns `true` if this `AbortSignal`'s `AbortController` has signaled to abort, and `false` otherwise.
-      */
-    /* CompleteClass */
-    override val aborted: Boolean = js.native
+    @JSGlobal("FileReader.DONE")
+    @js.native
+    val DONE: Double = js.native
     
-    /* CompleteClass */
-    override def onabort(event: AbortEvent): Unit = js.native
+    @JSGlobal("FileReader.EMPTY")
+    @js.native
+    val EMPTY: Double = js.native
+    
+    @JSGlobal("FileReader.LOADING")
+    @js.native
+    val LOADING: Double = js.native
   }
   
   @JSGlobal("FormData")
   @js.native
-  class FormData ()
+  open class FormData ()
     extends StObject
        with typings.reactNative.FormData {
     
     /* CompleteClass */
-    override def append(name: String, value: js.Any): Unit = js.native
+    override def append(name: String, value: Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def getAll(): js.Array[FormDataValue] = js.native
+    
+    /* CompleteClass */
+    override def getParts(): js.Array[FormDataPart] = js.native
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("Headers")
   @js.native
-  class Headers ()
+  open class Headers ()
     extends StObject
        with typings.reactNative.Headers {
     def this(init: HeadersInit) = this()
@@ -74,7 +99,7 @@ object global {
   
   @JSGlobal("MessageQueue")
   @js.native
-  class MessageQueue ()
+  open class MessageQueue ()
     extends StObject
        with typings.reactNative.MessageQueue {
     
@@ -101,7 +126,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("Request")
   @js.native
-  class Request protected ()
+  open class Request protected ()
     extends StObject
        with typings.reactNative.Request {
     def this(input: String) = this()
@@ -110,15 +135,16 @@ object global {
     def this(input: typings.reactNative.Request, init: RequestInit) = this()
     
     /* CompleteClass */
-    override def arrayBuffer(): js.Promise[ArrayBuffer] = js.native
+    override def arrayBuffer(): js.Promise[js.typedarray.ArrayBuffer] = js.native
     
     /* CompleteClass */
-    override def blob(): js.Promise[Blob] = js.native
+    override def blob(): js.Promise[typings.reactNative.Blob] = js.native
     
     /* CompleteClass */
     override val bodyUsed: Boolean = js.native
     
     /** The initial value of Object.prototype.constructor is the standard built-in Object constructor. */
+    /* standard es5 */
     /* CompleteClass */
     var constructor: js.Function = js.native
     
@@ -132,6 +158,7 @@ object global {
       * Determines whether an object has a property with the specified name.
       * @param v A property name.
       */
+    /* standard es5 */
     /* CompleteClass */
     override def hasOwnProperty(v: PropertyKey): Boolean = js.native
     
@@ -139,7 +166,7 @@ object global {
     override val headers: typings.reactNative.Headers = js.native
     
     /* CompleteClass */
-    override def json(): js.Promise[js.Any] = js.native
+    override def json(): js.Promise[Any] = js.native
     
     /* CompleteClass */
     override val method: String = js.native
@@ -151,6 +178,7 @@ object global {
       * Determines whether a specified property is enumerable.
       * @param v A property name.
       */
+    /* standard es5 */
     /* CompleteClass */
     override def propertyIsEnumerable(v: PropertyKey): Boolean = js.native
     
@@ -167,7 +195,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("Response")
   @js.native
-  class Response ()
+  open class Response ()
     extends StObject
        with typings.reactNative.Response {
     def this(body: BodyInit) = this()
@@ -175,15 +203,16 @@ object global {
     def this(body: BodyInit, init: ResponseInit) = this()
     
     /* CompleteClass */
-    override def arrayBuffer(): js.Promise[ArrayBuffer] = js.native
+    override def arrayBuffer(): js.Promise[js.typedarray.ArrayBuffer] = js.native
     
     /* CompleteClass */
-    override def blob(): js.Promise[Blob] = js.native
+    override def blob(): js.Promise[typings.reactNative.Blob] = js.native
     
     /* CompleteClass */
     override val bodyUsed: Boolean = js.native
     
     /** The initial value of Object.prototype.constructor is the standard built-in Object constructor. */
+    /* standard es5 */
     /* CompleteClass */
     var constructor: js.Function = js.native
     
@@ -194,6 +223,7 @@ object global {
       * Determines whether an object has a property with the specified name.
       * @param v A property name.
       */
+    /* standard es5 */
     /* CompleteClass */
     override def hasOwnProperty(v: PropertyKey): Boolean = js.native
     
@@ -201,7 +231,7 @@ object global {
     override val headers: typings.reactNative.Headers = js.native
     
     /* CompleteClass */
-    override def json(): js.Promise[js.Any] = js.native
+    override def json(): js.Promise[Any] = js.native
     
     /* CompleteClass */
     override val ok: Boolean = js.native
@@ -210,6 +240,7 @@ object global {
       * Determines whether a specified property is enumerable.
       * @param v A property name.
       */
+    /* standard es5 */
     /* CompleteClass */
     override def propertyIsEnumerable(v: PropertyKey): Boolean = js.native
     
@@ -250,7 +281,7 @@ object global {
     */
   @JSGlobal("URL")
   @js.native
-  class URL protected ()
+  open class URL protected ()
     extends StObject
        with typings.reactNative.URL {
     def this(url: String) = this()
@@ -302,7 +333,7 @@ object global {
     val ^ : js.Any = js.native
     
     /* static member */
-    inline def createObjectURL(blob: Blob): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createObjectURL")(blob.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def createObjectURL(blob: typings.reactNative.Blob): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createObjectURL")(blob.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /* static member */
     inline def revokeObjectURL(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("revokeObjectURL")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -313,7 +344,7 @@ object global {
     */
   @JSGlobal("URLSearchParams")
   @js.native
-  class URLSearchParams ()
+  open class URLSearchParams ()
     extends StObject
        with typings.reactNative.URLSearchParams {
     def this(init: String) = this()
@@ -325,7 +356,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("WebSocket")
   @js.native
-  class WebSocket protected ()
+  open class WebSocket protected ()
     extends StObject
        with typings.reactNative.WebSocket {
     def this(uri: String) = this()
@@ -358,7 +389,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("XMLHttpRequest")
   @js.native
-  class XMLHttpRequest ()
+  open class XMLHttpRequest ()
     extends StObject
        with typings.reactNative.XMLHttpRequest
   object XMLHttpRequest {
@@ -387,7 +418,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("XMLHttpRequestUpload")
   @js.native
-  class XMLHttpRequestUpload ()
+  open class XMLHttpRequestUpload ()
     extends StObject
        with typings.reactNative.XMLHttpRequestUpload
   
@@ -402,17 +433,37 @@ object global {
   inline def fetch(input: RequestInfo): js.Promise[typings.reactNative.Response] = js.Dynamic.global.applyDynamic("fetch")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.reactNative.Response]]
   inline def fetch(input: RequestInfo, init: RequestInit): js.Promise[typings.reactNative.Response] = (js.Dynamic.global.applyDynamic("fetch")(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.reactNative.Response]]
   
-  inline def fetchBundle(bundleId: Double, callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Unit = (js.Dynamic.global.applyDynamic("fetchBundle")(bundleId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def fetchBundle(bundleId: Double, callback: js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit]): Unit = (js.Dynamic.global.applyDynamic("fetchBundle")(bundleId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def requestAnimationFrame(callback: js.Function1[/* time */ Double, Unit]): Double = js.Dynamic.global.applyDynamic("requestAnimationFrame")(callback.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def setImmediate(handler: js.Function1[/* repeated */ js.Any, Unit]): Double = js.Dynamic.global.applyDynamic("setImmediate")(handler.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def setImmediate(handler: js.Function0[Unit]): Double = js.Dynamic.global.applyDynamic("setImmediate")(handler.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def setImmediate[Args /* <: js.Array[Any] */](
+    handler: js.Function1[/* args */ Args, Unit],
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Args is not an array type */ args: Args
+  ): Double = (js.Dynamic.global.applyDynamic("setImmediate")(handler.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def setInterval(handler: js.Any, timeout: js.Any, args: js.Any*): Double = (js.Dynamic.global.applyDynamic("setInterval")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def setInterval(handler: js.Any, timeout: Unit, args: js.Any*): Double = (js.Dynamic.global.applyDynamic("setInterval")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def setInterval(handler: js.Function1[/* repeated */ js.Any, Unit], timeout: Double): Double = (js.Dynamic.global.applyDynamic("setInterval")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def setInterval(handler: js.Function0[Unit], timeout: Double): Double = (js.Dynamic.global.applyDynamic("setInterval")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def setInterval[Args /* <: js.Array[Any] */](
+    handler: js.Function1[/* args */ Args, Unit],
+    timeout: Double,
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Args is not an array type */ args: Args
+  ): Double = (js.Dynamic.global.applyDynamic("setInterval")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def setInterval[Args /* <: js.Array[Any] */](
+    handler: js.Function1[/* args */ Args, Unit],
+    timeout: Unit,
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Args is not an array type */ args: Args
+  ): Double = (js.Dynamic.global.applyDynamic("setInterval")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def setTimeout(handler: js.Any, timeout: js.Any, args: js.Any*): Double = (js.Dynamic.global.applyDynamic("setTimeout")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def setTimeout(handler: js.Any, timeout: Unit, args: js.Any*): Double = (js.Dynamic.global.applyDynamic("setTimeout")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def setTimeout(handler: js.Function1[/* repeated */ js.Any, Unit], timeout: Double): Double = (js.Dynamic.global.applyDynamic("setTimeout")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def setTimeout(handler: js.Function0[Unit], timeout: Double): Double = (js.Dynamic.global.applyDynamic("setTimeout")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def setTimeout[Args /* <: js.Array[Any] */](
+    handler: js.Function1[/* args */ Args, Unit],
+    timeout: Double,
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Args is not an array type */ args: Args
+  ): Double = (js.Dynamic.global.applyDynamic("setTimeout")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def setTimeout[Args /* <: js.Array[Any] */](
+    handler: js.Function1[/* args */ Args, Unit],
+    timeout: Unit,
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Args is not an array type */ args: Args
+  ): Double = (js.Dynamic.global.applyDynamic("setTimeout")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

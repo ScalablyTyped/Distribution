@@ -19,7 +19,7 @@ trait MetadataDroppedEventUIParam extends StObject {
   /**
     * Gets a reference to the data.
     */
-  var metadata: js.UndefOr[js.Any] = js.undefined
+  var metadata: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets the index at which the metadata is inserted.
@@ -29,12 +29,12 @@ trait MetadataDroppedEventUIParam extends StObject {
   /**
     * Gets a reference to the offset.
     */
-  var offset: js.UndefOr[js.Any] = js.undefined
+  var offset: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets a reference to the current position of the draggable element.
     */
-  var position: js.UndefOr[js.Any] = js.undefined
+  var position: js.UndefOr[Any] = js.undefined
   
   /**
     * A reference to the drop target.
@@ -58,7 +58,7 @@ object MetadataDroppedEventUIParam {
     
     inline def setHelperUndefined: Self = StObject.set(x, "helper", js.undefined)
     
-    inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setMetadataIndex(value: Double): Self = StObject.set(x, "metadataIndex", value.asInstanceOf[js.Any])
     
@@ -66,11 +66,11 @@ object MetadataDroppedEventUIParam {
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    inline def setOffset(value: js.Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    inline def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     

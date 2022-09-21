@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-svg-charts", "StackedBarChart")
 @js.native
-class StackedBarChart[T] protected ()
-  extends PureComponent[StackedBarChartProps[T], js.Object, js.Any] {
+open class StackedBarChart[T] protected ()
+  extends PureComponent[StackedBarChartProps[T], js.Object, Any] {
   def this(props: StackedBarChartProps[T]) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: StackedBarChartProps[T], context: js.Any) = this()
+  def this(props: StackedBarChartProps[T], context: Any) = this()
 }
 /* static members */
 object StackedBarChart {

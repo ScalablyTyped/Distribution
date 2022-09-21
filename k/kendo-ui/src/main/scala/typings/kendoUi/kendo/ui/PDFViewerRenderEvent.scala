@@ -8,7 +8,7 @@ trait PDFViewerRenderEvent
   extends StObject
      with PDFViewerEvent {
   
-  var page: js.UndefOr[js.Any] = js.undefined
+  var page: js.UndefOr[Any] = js.undefined
 }
 object PDFViewerRenderEvent {
   
@@ -19,7 +19,7 @@ object PDFViewerRenderEvent {
   
   extension [Self <: PDFViewerRenderEvent](x: Self) {
     
-    inline def setPage(value: js.Any): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: Any): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
     inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
   }

@@ -10,10 +10,10 @@ Makes your videos fluid-width.
 | ------------------ | :-------------: |
 | Full name          | fitvids |
 | Keywords           | video, responsive, fluid, width, fitvids, wrapper |
-| # releases         | 3 |
-| # dependents       | 8 |
-| # downloads        | 140036 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 19732.0 |
+| # stars            | 114.0 |
 
 ## Links
 - [Homepage](https://github.com/rosszurowski/vanilla-fitvids#readme)

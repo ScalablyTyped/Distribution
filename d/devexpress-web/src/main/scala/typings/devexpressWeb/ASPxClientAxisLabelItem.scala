@@ -19,7 +19,7 @@ trait ASPxClientAxisLabelItem
   /**
     * Gets the axis value to which an axis label item corresponds.
     */
-  var axisValue: js.Any
+  var axisValue: Any
   
   /**
     * Gets the internal representation of the axis value to which an axis label item corresponds.
@@ -35,7 +35,7 @@ object ASPxClientAxisLabelItem {
   
   inline def apply(
     axis: ASPxClientAxisBase,
-    axisValue: js.Any,
+    axisValue: Any,
     axisValueInternal: Double,
     chart: ASPxClientWebChart,
     text: String
@@ -48,7 +48,7 @@ object ASPxClientAxisLabelItem {
     
     inline def setAxis(value: ASPxClientAxisBase): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
-    inline def setAxisValue(value: js.Any): Self = StObject.set(x, "axisValue", value.asInstanceOf[js.Any])
+    inline def setAxisValue(value: Any): Self = StObject.set(x, "axisValue", value.asInstanceOf[js.Any])
     
     inline def setAxisValueInternal(value: Double): Self = StObject.set(x, "axisValueInternal", value.asInstanceOf[js.Any])
     

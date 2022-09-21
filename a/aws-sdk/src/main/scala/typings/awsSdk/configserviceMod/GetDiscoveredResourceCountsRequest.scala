@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetDiscoveredResourceCountsRequest extends StObject {
   
   /**
-    * The maximum number of ResourceCount objects returned on each page. The default is 100. You cannot specify a number greater than 100. If you specify 0, AWS Config uses the default.
+    * The maximum number of ResourceCount objects returned on each page. The default is 100. You cannot specify a number greater than 100. If you specify 0, Config uses the default.
     */
   var limit: js.UndefOr[Limit] = js.undefined
   
@@ -17,7 +17,7 @@ trait GetDiscoveredResourceCountsRequest extends StObject {
   var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
-    * The comma-separated list that specifies the resource types that you want AWS Config to return (for example, "AWS::EC2::Instance", "AWS::IAM::User"). If a value for resourceTypes is not specified, AWS Config returns all resource types that AWS Config is recording in the region for your account.  If the configuration recorder is turned off, AWS Config returns an empty list of ResourceCount objects. If the configuration recorder is not recording a specific resource type (for example, S3 buckets), that resource type is not returned in the list of ResourceCount objects. 
+    * The comma-separated list that specifies the resource types that you want Config to return (for example, "AWS::EC2::Instance", "AWS::IAM::User"). If a value for resourceTypes is not specified, Config returns all resource types that Config is recording in the region for your account.  If the configuration recorder is turned off, Config returns an empty list of ResourceCount objects. If the configuration recorder is not recording a specific resource type (for example, S3 buckets), that resource type is not returned in the list of ResourceCount objects. 
     */
   var resourceTypes: js.UndefOr[ResourceTypes] = js.undefined
 }
@@ -42,6 +42,6 @@ object GetDiscoveredResourceCountsRequest {
     
     inline def setResourceTypesUndefined: Self = StObject.set(x, "resourceTypes", js.undefined)
     
-    inline def setResourceTypesVarargs(value: StringWithCharLimit256*): Self = StObject.set(x, "resourceTypes", js.Array(value :_*))
+    inline def setResourceTypesVarargs(value: StringWithCharLimit256*): Self = StObject.set(x, "resourceTypes", js.Array(value*))
   }
 }

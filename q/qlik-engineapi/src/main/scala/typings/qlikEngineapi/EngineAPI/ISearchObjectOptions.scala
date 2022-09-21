@@ -36,7 +36,7 @@ object ISearchObjectOptions {
     
     inline def setQAttributes(value: js.Array[String]): Self = StObject.set(x, "qAttributes", value.asInstanceOf[js.Any])
     
-    inline def setQAttributesVarargs(value: String*): Self = StObject.set(x, "qAttributes", js.Array(value :_*))
+    inline def setQAttributesVarargs(value: String*): Self = StObject.set(x, "qAttributes", js.Array(value*))
     
     inline def setQCharEncoding(value: String): Self = StObject.set(x, "qCharEncoding", value.asInstanceOf[js.Any])
   }

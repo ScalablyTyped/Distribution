@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "es-module-lexer" : "1.0.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "es-module-lexer" : "1.0.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

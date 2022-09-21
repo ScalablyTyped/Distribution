@@ -1,7 +1,7 @@
 
 # Scala.js typings for vega-themes
 
-Typings are for version 2.9.1
+Typings are for version 2.12.0
 
 ## Library description:
 Themes for stylized Vega and Vega-Lite visualizations.
@@ -10,10 +10,10 @@ Themes for stylized Vega and Vega-Lite visualizations.
 | ------------------ | :-------------: |
 | Full name          | vega-themes |
 | Keywords           | vega, vega-lite, themes, style |
-| # releases         | 14 |
-| # dependents       | 3 |
-| # downloads        | 1968276 |
-| # stars            | 0 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 301394.6666666667 |
+| # stars            | 90.0 |
 
 ## Links
 - [Homepage](https://github.com/vega/vega-themes#readme)

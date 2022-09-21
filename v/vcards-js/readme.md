@@ -11,9 +11,9 @@ Create vCards to import contacts into Outlook, iOS, Mac OS, Android devices, and
 | Full name          | vcards-js |
 | Keywords           | vCard, vCards, contacts |
 | # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 198722 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 44746.333333333336 |
+| # stars            | 326.0 |
 
 ## Links
 - [Homepage](https://github.com/enesser/vCards-JS)

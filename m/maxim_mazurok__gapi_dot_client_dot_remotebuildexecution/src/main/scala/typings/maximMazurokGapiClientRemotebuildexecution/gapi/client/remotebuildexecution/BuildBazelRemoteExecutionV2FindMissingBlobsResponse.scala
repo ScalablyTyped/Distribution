@@ -22,6 +22,6 @@ object BuildBazelRemoteExecutionV2FindMissingBlobsResponse {
     
     inline def setMissingBlobDigestsUndefined: Self = StObject.set(x, "missingBlobDigests", js.undefined)
     
-    inline def setMissingBlobDigestsVarargs(value: BuildBazelRemoteExecutionV2Digest*): Self = StObject.set(x, "missingBlobDigests", js.Array(value :_*))
+    inline def setMissingBlobDigestsVarargs(value: BuildBazelRemoteExecutionV2Digest*): Self = StObject.set(x, "missingBlobDigests", js.Array(value*))
   }
 }

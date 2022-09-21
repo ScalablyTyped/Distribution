@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the application object.
   *
+  * @remarks
   * [Api set: WordApi 1.3]
   */
 @js.native
@@ -24,6 +24,7 @@ trait Application
   /**
     * Creates a new document by using an optional base64 encoded .docx file.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     *
     * @param base64File Optional. The base64 encoded .docx file. The default value is null.

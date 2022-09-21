@@ -23,6 +23,6 @@ trait MVCxClientHtmlEditor
     * @param data An object containing any information that needs to be passed to a handling Action specified via the HtmlEditorSettings.CustomDataActionRouteValues property.
     * @param onCallback An ASPxClientDataCallback object that is the JavaScript function which receives the callback data as a parameter.
     */
-  def PerformDataCallback(data: js.Any): Unit = js.native
-  def PerformDataCallback(data: js.Any, onCallback: ASPxClientDataCallback): Unit = js.native
+  def PerformDataCallback(data: Any): Unit = js.native
+  def PerformDataCallback(data: Any, onCallback: ASPxClientDataCallback): Unit = js.native
 }

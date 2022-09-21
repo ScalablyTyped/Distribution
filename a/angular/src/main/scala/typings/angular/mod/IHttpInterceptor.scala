@@ -10,17 +10,17 @@ trait IHttpInterceptor extends StObject {
     js.Function1[/* config */ IRequestConfig, IRequestConfig | IPromise[IRequestConfig]]
   ] = js.undefined
   
-  var requestError: js.UndefOr[js.Function1[/* rejection */ js.Any, IRequestConfig | IPromise[IRequestConfig]]] = js.undefined
+  var requestError: js.UndefOr[js.Function1[/* rejection */ Any, IRequestConfig | IPromise[IRequestConfig]]] = js.undefined
   
   var response: js.UndefOr[
     js.Function1[
-      /* response */ IHttpResponse[js.Any], 
-      IPromise[IHttpResponse[js.Any]] | IHttpResponse[js.Any]
+      /* response */ IHttpResponse[Any], 
+      IPromise[IHttpResponse[Any]] | IHttpResponse[Any]
     ]
   ] = js.undefined
   
   var responseError: js.UndefOr[
-    js.Function1[/* rejection */ js.Any, IPromise[IHttpResponse[js.Any]] | IHttpResponse[js.Any]]
+    js.Function1[/* rejection */ Any, IPromise[IHttpResponse[Any]] | IHttpResponse[Any]]
   ] = js.undefined
 }
 object IHttpInterceptor {
@@ -34,17 +34,15 @@ object IHttpInterceptor {
     
     inline def setRequest(value: /* config */ IRequestConfig => IRequestConfig | IPromise[IRequestConfig]): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
     
-    inline def setRequestError(value: /* rejection */ js.Any => IRequestConfig | IPromise[IRequestConfig]): Self = StObject.set(x, "requestError", js.Any.fromFunction1(value))
+    inline def setRequestError(value: /* rejection */ Any => IRequestConfig | IPromise[IRequestConfig]): Self = StObject.set(x, "requestError", js.Any.fromFunction1(value))
     
     inline def setRequestErrorUndefined: Self = StObject.set(x, "requestError", js.undefined)
     
     inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
-    inline def setResponse(
-      value: /* response */ IHttpResponse[js.Any] => IPromise[IHttpResponse[js.Any]] | IHttpResponse[js.Any]
-    ): Self = StObject.set(x, "response", js.Any.fromFunction1(value))
+    inline def setResponse(value: /* response */ IHttpResponse[Any] => IPromise[IHttpResponse[Any]] | IHttpResponse[Any]): Self = StObject.set(x, "response", js.Any.fromFunction1(value))
     
-    inline def setResponseError(value: /* rejection */ js.Any => IPromise[IHttpResponse[js.Any]] | IHttpResponse[js.Any]): Self = StObject.set(x, "responseError", js.Any.fromFunction1(value))
+    inline def setResponseError(value: /* rejection */ Any => IPromise[IHttpResponse[Any]] | IHttpResponse[Any]): Self = StObject.set(x, "responseError", js.Any.fromFunction1(value))
     
     inline def setResponseErrorUndefined: Self = StObject.set(x, "responseError", js.undefined)
     

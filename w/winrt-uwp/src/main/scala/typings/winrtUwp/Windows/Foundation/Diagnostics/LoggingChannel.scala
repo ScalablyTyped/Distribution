@@ -12,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LoggingChannel extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_loggingenabled(`type`: loggingenabled, listener: TypedEventHandler[ILoggingChannel, js.Any]): Unit = js.native
+  def addEventListener_loggingenabled(`type`: loggingenabled, listener: TypedEventHandler[ILoggingChannel, Any]): Unit = js.native
   
   /** Ends logging on the current logging channel. */
   def close(): Unit = js.native
@@ -104,14 +104,14 @@ trait LoggingChannel extends StObject {
   var name: String = js.native
   
   /** Raised when the logging channel is attached to a LoggingSession or other event tracing and debugging tools. */
-  def onloggingenabled(ev: js.Any & WinRTEvent[ILoggingChannel]): Unit = js.native
+  def onloggingenabled(ev: Any & WinRTEvent[ILoggingChannel]): Unit = js.native
   /** Raised when the logging channel is attached to a LoggingSession or other event tracing and debugging tools. */
   @JSName("onloggingenabled")
-  var onloggingenabled_Original: TypedEventHandler[ILoggingChannel, js.Any] = js.native
+  var onloggingenabled_Original: TypedEventHandler[ILoggingChannel, Any] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_loggingenabled(`type`: loggingenabled, listener: TypedEventHandler[ILoggingChannel, js.Any]): Unit = js.native
+  def removeEventListener_loggingenabled(`type`: loggingenabled, listener: TypedEventHandler[ILoggingChannel, Any]): Unit = js.native
   
   /**
     * Writes an activity start event and creates a LoggingActivity object.

@@ -19,6 +19,10 @@ object maximMazurokGapiClientDatafusionStrings {
   inline def Operation: Operation = "Operation".asInstanceOf[Operation]
   
   @js.native
+  sealed trait OperationMetadata extends StObject
+  inline def OperationMetadata: OperationMetadata = "OperationMetadata".asInstanceOf[OperationMetadata]
+  
+  @js.native
   sealed trait Status extends StObject
   inline def Status: Status = "Status".asInstanceOf[Status]
   

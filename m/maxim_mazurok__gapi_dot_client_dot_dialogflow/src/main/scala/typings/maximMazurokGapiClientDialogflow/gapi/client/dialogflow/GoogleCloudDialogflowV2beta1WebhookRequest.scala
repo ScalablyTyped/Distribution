@@ -37,7 +37,7 @@ object GoogleCloudDialogflowV2beta1WebhookRequest {
     
     inline def setAlternativeQueryResultsUndefined: Self = StObject.set(x, "alternativeQueryResults", js.undefined)
     
-    inline def setAlternativeQueryResultsVarargs(value: GoogleCloudDialogflowV2beta1QueryResult*): Self = StObject.set(x, "alternativeQueryResults", js.Array(value :_*))
+    inline def setAlternativeQueryResultsVarargs(value: GoogleCloudDialogflowV2beta1QueryResult*): Self = StObject.set(x, "alternativeQueryResults", js.Array(value*))
     
     inline def setOriginalDetectIntentRequest(value: GoogleCloudDialogflowV2beta1OriginalDetectIntentRequest): Self = StObject.set(x, "originalDetectIntentRequest", value.asInstanceOf[js.Any])
     

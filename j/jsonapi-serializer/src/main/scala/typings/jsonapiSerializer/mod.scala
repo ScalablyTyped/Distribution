@@ -26,8 +26,8 @@ object mod {
   @js.native
   trait Deserializer extends StObject {
     
-    def deserialize(data: js.Any): js.Promise[js.Any] = js.native
-    def deserialize(data: js.Any, callback: Callback): Unit = js.native
+    def deserialize(data: Any): js.Promise[Any] = js.native
+    def deserialize(data: Any, callback: Callback): Unit = js.native
   }
   @JSImport("jsonapi-serializer", "Deserializer")
   @js.native
@@ -36,7 +36,7 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("jsonapi-serializer", "Deserializer")
   @js.native
-  class DeserializerCls protected ()
+  open class DeserializerCls protected ()
     extends StObject
        with Deserializer {
     def this(opts: DeserializerOptions) = this()
@@ -47,14 +47,14 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("jsonapi-serializer", "Error")
   @js.native
-  class Error protected ()
+  open class Error protected ()
     extends StObject
        with JSONAPIError {
     def this(opts: js.Array[JSONAPIErrorOptions]) = this()
     def this(opts: JSONAPIErrorOptions) = this()
     
     /* CompleteClass */
-    var errors: js.Array[js.Any] = js.native
+    var errors: js.Array[Any] = js.native
   }
   @JSImport("jsonapi-serializer", "Error")
   @js.native
@@ -63,7 +63,7 @@ object mod {
   
   trait Serializer extends StObject {
     
-    def serialize(data: js.Any): js.Any
+    def serialize(data: Any): Any
   }
   object Serializer {
     
@@ -73,23 +73,23 @@ object mod {
     
     extension [Self <: Serializer](x: Self) {
       
-      inline def setSerialize(value: js.Any => js.Any): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
+      inline def setSerialize(value: Any => Any): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
     }
   }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("jsonapi-serializer", "Serializer")
   @js.native
-  class SerializerCls protected ()
+  open class SerializerCls protected ()
     extends StObject
        with Serializer {
     def this(collectionName: String, opts: SerializerOptions) = this()
     
     /* CompleteClass */
-    override def serialize(data: js.Any): js.Any = js.native
+    override def serialize(data: Any): Any = js.native
   }
   
-  type Callback = js.Function2[/* error */ typings.std.Error, /* response */ js.Any, js.Any]
+  type Callback = js.Function2[/* error */ js.Error, /* response */ Any, Any]
   
   @js.native
   trait DeserializerConstructor
@@ -135,7 +135,7 @@ object mod {
       
       inline def setPluralizeTypeUndefined: Self = StObject.set(x, "pluralizeType", js.undefined)
       
-      inline def setTransform(value: /* record */ js.Any => js.Any): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+      inline def setTransform(value: /* record */ Any => Any): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
       
       inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       
@@ -155,20 +155,20 @@ object mod {
   
   trait JSONAPIError extends StObject {
     
-    var errors: js.Array[js.Any]
+    var errors: js.Array[Any]
   }
   object JSONAPIError {
     
-    inline def apply(errors: js.Array[js.Any]): JSONAPIError = {
+    inline def apply(errors: js.Array[Any]): JSONAPIError = {
       val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any])
       __obj.asInstanceOf[JSONAPIError]
     }
     
     extension [Self <: JSONAPIError](x: Self) {
       
-      inline def setErrors(value: js.Array[js.Any]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[Any]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      inline def setErrorsVarargs(value: js.Any*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: Any*): Self = StObject.set(x, "errors", js.Array(value*))
     }
   }
   
@@ -182,7 +182,7 @@ object mod {
     
     var links: js.UndefOr[About] = js.undefined
     
-    var meta: js.UndefOr[js.Any] = js.undefined
+    var meta: js.UndefOr[Any] = js.undefined
     
     var source: js.UndefOr[Parameter] = js.undefined
     
@@ -215,7 +215,7 @@ object mod {
       
       inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
       
-      inline def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
       inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
       
@@ -238,10 +238,10 @@ object mod {
   @js.native
   trait LinkFunction extends StObject {
     
-    def apply(records: js.Any*): js.Any = js.native
+    def apply(records: Any*): Any = js.native
   }
   
-  type RefFunction = js.Function2[/* current */ js.Any, /* item */ js.Any, String]
+  type RefFunction = js.Function2[/* current */ Any, /* item */ Any, String]
   
   trait Relation extends StObject {
     
@@ -264,7 +264,7 @@ object mod {
       
       inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+      inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value*))
       
       inline def setIncluded(value: Boolean): Self = StObject.set(x, "included", value.asInstanceOf[js.Any])
       
@@ -272,7 +272,7 @@ object mod {
       
       inline def setRef(value: String | RefFunction): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      inline def setRefFunction2(value: (/* current */ js.Any, /* item */ js.Any) => String): Self = StObject.set(x, "ref", js.Any.fromFunction2(value))
+      inline def setRefFunction2(value: (/* current */ Any, /* item */ Any) => String): Self = StObject.set(x, "ref", js.Any.fromFunction2(value))
     }
   }
   
@@ -281,7 +281,9 @@ object mod {
     extends StObject
        with Instantiable2[/* collectionName */ String, /* opts */ SerializerOptions, Serializer]
   
-  trait SerializerOptions extends StObject {
+  trait SerializerOptions
+    extends StObject
+       with /* key */ StringDictionary[Any] {
     
     var attributes: js.UndefOr[js.Array[String]] = js.undefined
     
@@ -328,7 +330,7 @@ object mod {
       
       inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+      inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value*))
       
       inline def setDataLinks(value: StringDictionary[String | LinkFunction]): Self = StObject.set(x, "dataLinks", value.asInstanceOf[js.Any])
       
@@ -388,17 +390,17 @@ object mod {
       
       inline def setTopLevelLinksUndefined: Self = StObject.set(x, "topLevelLinks", js.undefined)
       
-      inline def setTransform(value: /* record */ js.Any => js.Any): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+      inline def setTransform(value: /* record */ Any => Any): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
       
       inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       
-      inline def setTypeForAttribute(value: (/* attribute */ String, /* object */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "typeForAttribute", js.Any.fromFunction2(value))
+      inline def setTypeForAttribute(value: (/* attribute */ String, /* object */ js.UndefOr[Any]) => Any): Self = StObject.set(x, "typeForAttribute", js.Any.fromFunction2(value))
       
       inline def setTypeForAttributeUndefined: Self = StObject.set(x, "typeForAttribute", js.undefined)
     }
   }
   
-  type Transform = js.Function1[/* record */ js.Any, js.Any]
+  type Transform = js.Function1[/* record */ Any, Any]
   
-  type TypeForAttribute = js.Function2[/* attribute */ String, /* object */ js.UndefOr[js.Any], js.Any]
+  type TypeForAttribute = js.Function2[/* attribute */ String, /* object */ js.UndefOr[Any], Any]
 }

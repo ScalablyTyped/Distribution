@@ -8,42 +8,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Recordgunrootidbackontagg extends StObject {
   
   @JSName("$")
-  var $: js.Any
+  var $: Any
   
-  var ack: js.Any
+  var ack: Any
   
-  var back: js.Any
+  var back: Any
   
-  var get: js.Any
+  var get: Any
   
-  var gun: js.Any
+  var gun: Any
   
-  var id: js.Any
+  var id: Any
   
-  var on: js.Any
+  var on: Any
   
-  var put: js.Any
+  var put: Any
   
-  var root: js.Any
+  var root: Any
   
-  var soul: js.Any
+  var soul: Any
   
-  var tag: js.Any
+  var tag: Any
 }
 object Recordgunrootidbackontagg {
   
   inline def apply(
-    $: js.Any,
-    ack: js.Any,
-    back: js.Any,
-    get: js.Any,
-    gun: js.Any,
-    id: js.Any,
-    on: js.Any,
-    put: js.Any,
-    root: js.Any,
-    soul: js.Any,
-    tag: js.Any
+    $: Any,
+    ack: Any,
+    back: Any,
+    get: Any,
+    gun: Any,
+    id: Any,
+    on: Any,
+    put: Any,
+    root: Any,
+    soul: Any,
+    tag: Any
   ): Recordgunrootidbackontagg = {
     val __obj = js.Dynamic.literal($ = $.asInstanceOf[js.Any], ack = ack.asInstanceOf[js.Any], back = back.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], gun = gun.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], on = on.asInstanceOf[js.Any], put = put.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], soul = soul.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[Recordgunrootidbackontagg]
@@ -51,26 +51,26 @@ object Recordgunrootidbackontagg {
   
   extension [Self <: Recordgunrootidbackontagg](x: Self) {
     
-    inline def set$(value: js.Any): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
+    inline def set$(value: Any): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
     
-    inline def setAck(value: js.Any): Self = StObject.set(x, "ack", value.asInstanceOf[js.Any])
+    inline def setAck(value: Any): Self = StObject.set(x, "ack", value.asInstanceOf[js.Any])
     
-    inline def setBack(value: js.Any): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
+    inline def setBack(value: Any): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
     
-    inline def setGet(value: js.Any): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setGet(value: Any): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setGun(value: js.Any): Self = StObject.set(x, "gun", value.asInstanceOf[js.Any])
+    inline def setGun(value: Any): Self = StObject.set(x, "gun", value.asInstanceOf[js.Any])
     
-    inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setOn(value: js.Any): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+    inline def setOn(value: Any): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
     
-    inline def setPut(value: js.Any): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
+    inline def setPut(value: Any): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
     
-    inline def setRoot(value: js.Any): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: Any): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    inline def setSoul(value: js.Any): Self = StObject.set(x, "soul", value.asInstanceOf[js.Any])
+    inline def setSoul(value: Any): Self = StObject.set(x, "soul", value.asInstanceOf[js.Any])
     
-    inline def setTag(value: js.Any): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: Any): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
   }
 }

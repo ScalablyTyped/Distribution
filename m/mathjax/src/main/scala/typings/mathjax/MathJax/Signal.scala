@@ -80,5 +80,5 @@ trait Signal extends StObject {
     * they can be informed of the signals that have been posted so far. This can be cleared using the signal’s
     * Clear() method.
     */
-  var posted: js.Array[js.Any] = js.native
+  var posted: js.Array[Any] = js.native
 }

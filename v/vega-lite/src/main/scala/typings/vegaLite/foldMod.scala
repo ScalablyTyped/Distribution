@@ -10,11 +10,11 @@ object foldMod {
   
   @JSImport("vega-lite/build/src/compile/data/fold", "FoldTransformNode")
   @js.native
-  class FoldTransformNode protected () extends DataFlowNode {
+  open class FoldTransformNode protected () extends DataFlowNode {
     def this(parent: DataFlowNode, transform: FoldTransform) = this()
     
     def assemble(): typings.vegaTypings.transformMod.FoldTransform = js.native
     
-    /* private */ var transform: js.Any = js.native
+    /* private */ var transform: Any = js.native
   }
 }

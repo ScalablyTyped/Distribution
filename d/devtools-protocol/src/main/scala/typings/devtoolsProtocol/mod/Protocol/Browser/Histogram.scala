@@ -38,7 +38,7 @@ object Histogram {
     
     inline def setBuckets(value: js.Array[Bucket]): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
     
-    inline def setBucketsVarargs(value: Bucket*): Self = StObject.set(x, "buckets", js.Array(value :_*))
+    inline def setBucketsVarargs(value: Bucket*): Self = StObject.set(x, "buckets", js.Array(value*))
     
     inline def setCount(value: integer): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

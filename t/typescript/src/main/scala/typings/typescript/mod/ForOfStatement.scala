@@ -9,9 +9,10 @@ trait ForOfStatement
   extends StObject
      with IterationStatement
      with ForInOrOfStatement
-     with HasInitializer {
+     with HasInitializer
+     with HasJSDoc {
   
-  val awaitModifier: js.UndefOr[AwaitKeywordToken] = js.native
+  val awaitModifier: js.UndefOr[AwaitKeyword] = js.native
   
   val expression: Expression = js.native
   

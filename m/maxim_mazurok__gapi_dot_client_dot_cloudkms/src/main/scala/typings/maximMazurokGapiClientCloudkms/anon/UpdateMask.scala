@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientCloudkms.anon
 
-import typings.maximMazurokGapiClientCloudkms.gapi.client.cloudkms.CryptoKey
+import typings.maximMazurokGapiClientCloudkms.gapi.client.cloudkms.CryptoKeyVersion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,7 @@ trait UpdateMask extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Output only. The resource name for this CryptoKey in the format `projects/∗/locations/∗/keyRings/∗/cryptoKeys/ *`. */
+  /** Output only. The resource name for this CryptoKeyVersion in the format `projects/ *‍/locations/ *‍/keyRings/ *‍/cryptoKeys/ *‍/cryptoKeyVersions/ *`. */
   var name: String
   
   /** OAuth 2.0 token for the current user. */
@@ -39,7 +39,7 @@ trait UpdateMask extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: CryptoKey
+  var resource: CryptoKeyVersion
   
   /** Required. List of fields to be updated in this request. */
   var updateMask: js.UndefOr[String] = js.undefined
@@ -52,7 +52,7 @@ trait UpdateMask extends StObject {
 }
 object UpdateMask {
   
-  inline def apply(name: String, resource: CryptoKey): UpdateMask = {
+  inline def apply(name: String, resource: CryptoKeyVersion): UpdateMask = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateMask]
   }
@@ -97,7 +97,7 @@ object UpdateMask {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: CryptoKey): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: CryptoKeyVersion): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     

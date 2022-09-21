@@ -73,7 +73,7 @@ object snWs {
   
   trait RESTAPIRequestBody extends StObject {
     
-    val data: js.Any
+    val data: Any
     
     val dataStream: js.Object
     
@@ -81,24 +81,18 @@ object snWs {
     
     def hasNext(): Boolean
     
-    def nextEntry(): js.Any
+    def nextEntry(): Any
   }
   object RESTAPIRequestBody {
     
-    inline def apply(
-      data: js.Any,
-      dataStream: js.Object,
-      dataString: String,
-      hasNext: () => Boolean,
-      nextEntry: () => js.Any
-    ): RESTAPIRequestBody = {
+    inline def apply(data: Any, dataStream: js.Object, dataString: String, hasNext: () => Boolean, nextEntry: () => Any): RESTAPIRequestBody = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], dataStream = dataStream.asInstanceOf[js.Any], dataString = dataString.asInstanceOf[js.Any], hasNext = js.Any.fromFunction0(hasNext), nextEntry = js.Any.fromFunction0(nextEntry))
       __obj.asInstanceOf[RESTAPIRequestBody]
     }
     
     extension [Self <: RESTAPIRequestBody](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataStream(value: js.Object): Self = StObject.set(x, "dataStream", value.asInstanceOf[js.Any])
       
@@ -106,7 +100,7 @@ object snWs {
       
       inline def setHasNext(value: () => Boolean): Self = StObject.set(x, "hasNext", js.Any.fromFunction0(value))
       
-      inline def setNextEntry(value: () => js.Any): Self = StObject.set(x, "nextEntry", js.Any.fromFunction0(value))
+      inline def setNextEntry(value: () => Any): Self = StObject.set(x, "nextEntry", js.Any.fromFunction0(value))
     }
   }
   
@@ -114,15 +108,15 @@ object snWs {
     
     def getStreamWriter(): RESTAPIResponseStream
     
-    def setBody(body: js.Any): Unit
+    def setBody(body: Any): Unit
     
     def setContentType(contentType: String): Unit
     
-    def setError(error: js.Any): Unit
+    def setError(error: Any): Unit
     
     def setHeader(header: String, value: String): Unit
     
-    def setHeaders(headers: js.Any): Unit
+    def setHeaders(headers: Any): Unit
     
     def setLocation(location: String): Unit
     
@@ -132,11 +126,11 @@ object snWs {
     
     inline def apply(
       getStreamWriter: () => RESTAPIResponseStream,
-      setBody: js.Any => Unit,
+      setBody: Any => Unit,
       setContentType: String => Unit,
-      setError: js.Any => Unit,
+      setError: Any => Unit,
       setHeader: (String, String) => Unit,
-      setHeaders: js.Any => Unit,
+      setHeaders: Any => Unit,
       setLocation: String => Unit,
       setStatus: Double => Unit
     ): RESTAPIResponse = {
@@ -148,15 +142,15 @@ object snWs {
       
       inline def setGetStreamWriter(value: () => RESTAPIResponseStream): Self = StObject.set(x, "getStreamWriter", js.Any.fromFunction0(value))
       
-      inline def setSetBody(value: js.Any => Unit): Self = StObject.set(x, "setBody", js.Any.fromFunction1(value))
+      inline def setSetBody(value: Any => Unit): Self = StObject.set(x, "setBody", js.Any.fromFunction1(value))
       
       inline def setSetContentType(value: String => Unit): Self = StObject.set(x, "setContentType", js.Any.fromFunction1(value))
       
-      inline def setSetError(value: js.Any => Unit): Self = StObject.set(x, "setError", js.Any.fromFunction1(value))
+      inline def setSetError(value: Any => Unit): Self = StObject.set(x, "setError", js.Any.fromFunction1(value))
       
       inline def setSetHeader(value: (String, String) => Unit): Self = StObject.set(x, "setHeader", js.Any.fromFunction2(value))
       
-      inline def setSetHeaders(value: js.Any => Unit): Self = StObject.set(x, "setHeaders", js.Any.fromFunction1(value))
+      inline def setSetHeaders(value: Any => Unit): Self = StObject.set(x, "setHeaders", js.Any.fromFunction1(value))
       
       inline def setSetLocation(value: String => Unit): Self = StObject.set(x, "setLocation", js.Any.fromFunction1(value))
       
@@ -523,8 +517,6 @@ object snWs {
       */
     def setHttpTimeout(timeoutMs: Double): Unit = js.native
     
-    @JSName("setLogLevel")
-    def setLogLevel_all(level: all): Unit = js.native
     /**
       * Set the log level for this message and the corresponding response.
       *
@@ -539,10 +531,7 @@ object snWs {
       * var rm = new sn_ws.RESTMessageV2();
       * rm.setLogLevel('all');
       */
-    @JSName("setLogLevel")
-    def setLogLevel_basic(level: basic): Unit = js.native
-    @JSName("setLogLevel")
-    def setLogLevel_elevated(level: elevated): Unit = js.native
+    def setLogLevel(level: basic | elevated | all): Unit = js.native
     
     /**
       * Configure the REST message to communicate through a MID Server.

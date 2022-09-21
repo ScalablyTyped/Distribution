@@ -16,7 +16,7 @@ trait CanvasShapes extends StObject {
   
   def AddConnector(Type: MsoConnectorType, BeginX: Double, BeginY: Double, EndX: Double, EndY: Double): Shape
   
-  def AddCurve(SafeArrayOfPoints: js.Any): Shape
+  def AddCurve(SafeArrayOfPoints: Any): Shape
   
   def AddLabel(Orientation: MsoTextOrientation, Left: Double, Top: Double, Width: Double, Height: Double): Shape
   
@@ -24,15 +24,15 @@ trait CanvasShapes extends StObject {
   
   def AddPicture(
     FileName: String,
-    LinkToFile: js.UndefOr[js.Any],
-    SaveWithDocument: js.UndefOr[js.Any],
-    Left: js.UndefOr[js.Any],
-    Top: js.UndefOr[js.Any],
-    Width: js.UndefOr[js.Any],
-    Height: js.UndefOr[js.Any]
+    LinkToFile: js.UndefOr[Any],
+    SaveWithDocument: js.UndefOr[Any],
+    Left: js.UndefOr[Any],
+    Top: js.UndefOr[Any],
+    Width: js.UndefOr[Any],
+    Height: js.UndefOr[Any]
   ): Shape
   
-  def AddPolyline(SafeArrayOfPoints: js.Any): Shape
+  def AddPolyline(SafeArrayOfPoints: Any): Shape
   
   def AddShape(Type: Double, Left: Double, Top: Double, Width: Double, Height: Double): Shape
   
@@ -57,11 +57,11 @@ trait CanvasShapes extends StObject {
   
   val Creator: Double
   
-  def Item(Index: js.Any): Shape
+  def Item(Index: Any): Shape
   
-  val Parent: js.Any
+  val Parent: Any
   
-  def Range(Index: js.Any): ShapeRange
+  def Range(Index: Any): ShapeRange
   
   def SelectAll(): Unit
   
@@ -73,11 +73,11 @@ object CanvasShapes {
   inline def apply(
     AddCallout: (MsoCalloutType, Double, Double, Double, Double) => Shape,
     AddConnector: (MsoConnectorType, Double, Double, Double, Double) => Shape,
-    AddCurve: js.Any => Shape,
+    AddCurve: Any => Shape,
     AddLabel: (MsoTextOrientation, Double, Double, Double, Double) => Shape,
     AddLine: (Double, Double, Double, Double) => Shape,
-    AddPicture: (String, js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any]) => Shape,
-    AddPolyline: js.Any => Shape,
+    AddPicture: (String, js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any]) => Shape,
+    AddPolyline: Any => Shape,
     AddShape: (Double, Double, Double, Double, Double) => Shape,
     AddTextEffect: (MsoPresetTextEffect, String, String, Double, MsoTriState, MsoTriState, Double, Double) => Shape,
     AddTextbox: (MsoTextOrientation, Double, Double, Double, Double) => Shape,
@@ -85,9 +85,9 @@ object CanvasShapes {
     BuildFreeform: (MsoEditingType, Double, Double) => FreeformBuilder,
     Count: Double,
     Creator: Double,
-    Item: js.Any => Shape,
-    Parent: js.Any,
-    Range: js.Any => ShapeRange,
+    Item: Any => Shape,
+    Parent: Any,
+    Range: Any => ShapeRange,
     SelectAll: () => Unit,
     WordDotCanvasShapes_typekey: CanvasShapes
   ): CanvasShapes = {
@@ -102,17 +102,17 @@ object CanvasShapes {
     
     inline def setAddConnector(value: (MsoConnectorType, Double, Double, Double, Double) => Shape): Self = StObject.set(x, "AddConnector", js.Any.fromFunction5(value))
     
-    inline def setAddCurve(value: js.Any => Shape): Self = StObject.set(x, "AddCurve", js.Any.fromFunction1(value))
+    inline def setAddCurve(value: Any => Shape): Self = StObject.set(x, "AddCurve", js.Any.fromFunction1(value))
     
     inline def setAddLabel(value: (MsoTextOrientation, Double, Double, Double, Double) => Shape): Self = StObject.set(x, "AddLabel", js.Any.fromFunction5(value))
     
     inline def setAddLine(value: (Double, Double, Double, Double) => Shape): Self = StObject.set(x, "AddLine", js.Any.fromFunction4(value))
     
     inline def setAddPicture(
-      value: (String, js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any], js.UndefOr[js.Any]) => Shape
+      value: (String, js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any], js.UndefOr[Any]) => Shape
     ): Self = StObject.set(x, "AddPicture", js.Any.fromFunction7(value))
     
-    inline def setAddPolyline(value: js.Any => Shape): Self = StObject.set(x, "AddPolyline", js.Any.fromFunction1(value))
+    inline def setAddPolyline(value: Any => Shape): Self = StObject.set(x, "AddPolyline", js.Any.fromFunction1(value))
     
     inline def setAddShape(value: (Double, Double, Double, Double, Double) => Shape): Self = StObject.set(x, "AddShape", js.Any.fromFunction5(value))
     
@@ -130,11 +130,11 @@ object CanvasShapes {
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => Shape): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => Shape): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    inline def setRange(value: js.Any => ShapeRange): Self = StObject.set(x, "Range", js.Any.fromFunction1(value))
+    inline def setRange(value: Any => ShapeRange): Self = StObject.set(x, "Range", js.Any.fromFunction1(value))
     
     inline def setSelectAll(value: () => Unit): Self = StObject.set(x, "SelectAll", js.Any.fromFunction0(value))
     

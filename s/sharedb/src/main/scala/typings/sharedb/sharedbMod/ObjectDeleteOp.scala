@@ -8,23 +8,23 @@ trait ObjectDeleteOp
   extends StObject
      with Op {
   
-  var od: js.Any
+  var od: Any
   
   var p: Path
 }
 object ObjectDeleteOp {
   
-  inline def apply(od: js.Any, p: Path): ObjectDeleteOp = {
+  inline def apply(od: Any, p: Path): ObjectDeleteOp = {
     val __obj = js.Dynamic.literal(od = od.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectDeleteOp]
   }
   
   extension [Self <: ObjectDeleteOp](x: Self) {
     
-    inline def setOd(value: js.Any): Self = StObject.set(x, "od", value.asInstanceOf[js.Any])
+    inline def setOd(value: Any): Self = StObject.set(x, "od", value.asInstanceOf[js.Any])
     
     inline def setP(value: Path): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
-    inline def setPVarargs(value: (String | Double)*): Self = StObject.set(x, "p", js.Array(value :_*))
+    inline def setPVarargs(value: (String | Double)*): Self = StObject.set(x, "p", js.Array(value*))
   }
 }

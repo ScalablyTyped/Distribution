@@ -42,7 +42,7 @@ object mod extends Shortcut {
       
       inline def setZones(value: js.Array[String]): Self = StObject.set(x, "zones", value.asInstanceOf[js.Any])
       
-      inline def setZonesVarargs(value: String*): Self = StObject.set(x, "zones", js.Array(value :_*))
+      inline def setZonesVarargs(value: String*): Self = StObject.set(x, "zones", js.Array(value*))
     }
   }
   

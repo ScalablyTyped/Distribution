@@ -1,5 +1,6 @@
 package typings.plottable.mod
 
+import typings.plottable.labelMod.LabelFontSizePx
 import typings.plottable.scalesMod.Color
 import typings.plottable.scalesMod.InterpolatedColor
 import org.scalablytyped.runtime.StObject
@@ -15,7 +16,7 @@ object Components {
     * @param {string} [text]
     * @param {number} [angle] One of -90/0/90. 0 is horizontal.
     */
-  class AxisLabel ()
+  open class AxisLabel ()
     extends typings.plottable.componentsMod.AxisLabel {
     def this(text: String) = this()
     def this(text: String, angle: Double) = this()
@@ -45,12 +46,12 @@ object Components {
     *
     * @constructor
     */
-  class DragBoxLayer ()
+  open class DragBoxLayer ()
     extends typings.plottable.componentsMod.DragBoxLayer
   
   @JSImport("plottable", "Components.DragLineLayer")
   @js.native
-  class DragLineLayer[D] protected ()
+  open class DragLineLayer[D] protected ()
     extends typings.plottable.componentsMod.DragLineLayer[D] {
     def this(orientation: String) = this()
   }
@@ -62,13 +63,13 @@ object Components {
     * @param {Scale} xScale The scale to base the x gridlines on. Pass null if no gridlines are desired.
     * @param {Scale} yScale The scale to base the y gridlines on. Pass null if no gridlines are desired.
     */
-  class Gridlines ()
+  open class Gridlines ()
     extends typings.plottable.componentsMod.Gridlines {
-    def this(xScale: typings.plottable.scaleMod.Scale[js.Any, js.Any]) = this()
-    def this(xScale: Null, yScale: typings.plottable.scaleMod.Scale[js.Any, js.Any]) = this()
+    def this(xScale: typings.plottable.scaleMod.Scale[Any, Any]) = this()
+    def this(xScale: Null, yScale: typings.plottable.scaleMod.Scale[Any, Any]) = this()
     def this(
-      xScale: typings.plottable.scaleMod.Scale[js.Any, js.Any],
-      yScale: typings.plottable.scaleMod.Scale[js.Any, js.Any]
+      xScale: typings.plottable.scaleMod.Scale[Any, Any],
+      yScale: typings.plottable.scaleMod.Scale[Any, Any]
     ) = this()
   }
   
@@ -83,14 +84,14 @@ object Components {
     * @constructor
     * @param {Component[]} [components=[]] Components to be added to the Group.
     */
-  class Group ()
+  open class Group ()
     extends typings.plottable.componentsMod.Group {
     def this(components: js.Array[typings.plottable.componentMod.Component]) = this()
   }
   
   @JSImport("plottable", "Components.GuideLineLayer")
   @js.native
-  class GuideLineLayer[D] protected ()
+  open class GuideLineLayer[D] protected ()
     extends typings.plottable.componentsMod.GuideLineLayer[D] {
     def this(orientation: String) = this()
   }
@@ -114,7 +115,7 @@ object Components {
   
   @JSImport("plottable", "Components.InterpolatedColorLegend")
   @js.native
-  class InterpolatedColorLegend protected ()
+  open class InterpolatedColorLegend protected ()
     extends typings.plottable.componentsMod.InterpolatedColorLegend {
     /**
       * Creates an InterpolatedColorLegend.
@@ -145,10 +146,13 @@ object Components {
     
     @JSImport("plottable", "Components.InterpolatedColorLegend._DEFAULT_NUM_SWATCHES")
     @js.native
-    def _DEFAULT_NUM_SWATCHES: js.Any = js.native
-    inline def _DEFAULT_NUM_SWATCHES_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_NUM_SWATCHES")(x.asInstanceOf[js.Any])
+    def _DEFAULT_NUM_SWATCHES: Any = js.native
+    inline def _DEFAULT_NUM_SWATCHES_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_NUM_SWATCHES")(x.asInstanceOf[js.Any])
     
-    inline def _ensureOrientation(orientation: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_ensureOrientation")(orientation.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @JSImport("plottable", "Components.InterpolatedColorLegend._ensureOrientation")
+    @js.native
+    def _ensureOrientation: Any = js.native
+    inline def _ensureOrientation_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ensureOrientation")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("plottable", "Components.Label")
@@ -160,16 +164,38 @@ object Components {
     * @param {string} [displayText=""] The text of the Label.
     * @param {number} [angle=0] The angle of the Label in degrees (-90/0/90). 0 is horizontal.
     */
-  class Label ()
+  open class Label ()
     extends typings.plottable.componentsMod.Label {
     def this(displayText: String) = this()
     def this(displayText: String, angle: Double) = this()
     def this(displayText: Unit, angle: Double) = this()
   }
+  /* static members */
+  object Label {
+    
+    @JSImport("plottable", "Components.Label")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("plottable", "Components.Label._DEFAULT_FONT_SIZE_PX")
+    @js.native
+    def _DEFAULT_FONT_SIZE_PX: LabelFontSizePx = js.native
+    inline def _DEFAULT_FONT_SIZE_PX_=(x: LabelFontSizePx): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_FONT_SIZE_PX")(x.asInstanceOf[js.Any])
+    
+    @JSImport("plottable", "Components.Label._MAX_FONT_SIZE_PX")
+    @js.native
+    def _MAX_FONT_SIZE_PX: LabelFontSizePx = js.native
+    inline def _MAX_FONT_SIZE_PX_=(x: LabelFontSizePx): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MAX_FONT_SIZE_PX")(x.asInstanceOf[js.Any])
+    
+    @JSImport("plottable", "Components.Label._MIN_FONT_SIZE_PX")
+    @js.native
+    def _MIN_FONT_SIZE_PX: LabelFontSizePx = js.native
+    inline def _MIN_FONT_SIZE_PX_=(x: LabelFontSizePx): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MIN_FONT_SIZE_PX")(x.asInstanceOf[js.Any])
+  }
   
   @JSImport("plottable", "Components.Legend")
   @js.native
-  class Legend protected ()
+  open class Legend protected ()
     extends typings.plottable.componentsMod.Legend {
     /**
       * The Legend consists of a series of entries, each with a color and label taken from the Color Scale.
@@ -222,7 +248,7 @@ object Components {
     * @constructor
     * @param {Component[]} [components=[]] Components to be added to the Group.
     */
-  class PlotGroup ()
+  open class PlotGroup ()
     extends typings.plottable.componentsMod.PlotGroup {
     def this(components: js.Array[typings.plottable.componentMod.Component]) = this()
   }
@@ -241,7 +267,7 @@ object Components {
   
   @JSImport("plottable", "Components.SelectionBoxLayer")
   @js.native
-  class SelectionBoxLayer ()
+  open class SelectionBoxLayer ()
     extends typings.plottable.componentsMod.SelectionBoxLayer
   
   @JSImport("plottable", "Components.Table")
@@ -258,7 +284,7 @@ object Components {
     * @param {(Component|null|undefined)[][]} [rows=[]] A 2-D array of Components to be added to the Table.
     *   null can be used if a cell is empty.
     */
-  class Table ()
+  open class Table ()
     extends typings.plottable.componentsMod.Table {
     def this(rows: js.Array[js.Array[js.UndefOr[typings.plottable.componentMod.Component | Null]]]) = this()
   }
@@ -269,11 +295,20 @@ object Components {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def _calcComponentWeights(setWeights: js.Any, componentGroups: js.Any, fixityAccessor: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_calcComponentWeights")(setWeights.asInstanceOf[js.Any], componentGroups.asInstanceOf[js.Any], fixityAccessor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @JSImport("plottable", "Components.Table._calcComponentWeights")
+    @js.native
+    def _calcComponentWeights: Any = js.native
+    inline def _calcComponentWeights_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_calcComponentWeights")(x.asInstanceOf[js.Any])
     
-    inline def _calcProportionalSpace(weights: js.Any, freeSpace: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_calcProportionalSpace")(weights.asInstanceOf[js.Any], freeSpace.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @JSImport("plottable", "Components.Table._calcProportionalSpace")
+    @js.native
+    def _calcProportionalSpace: Any = js.native
+    inline def _calcProportionalSpace_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_calcProportionalSpace")(x.asInstanceOf[js.Any])
     
-    inline def _fixedSpace(componentGroup: js.Any, fixityAccessor: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_fixedSpace")(componentGroup.asInstanceOf[js.Any], fixityAccessor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @JSImport("plottable", "Components.Table._fixedSpace")
+    @js.native
+    def _fixedSpace: Any = js.native
+    inline def _fixedSpace_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_fixedSpace")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("plottable", "Components.TitleLabel")
@@ -283,7 +318,7 @@ object Components {
     * @param {string} [text]
     * @param {number} [angle] One of -90/0/90. 0 is horizontal.
     */
-  class TitleLabel ()
+  open class TitleLabel ()
     extends typings.plottable.componentsMod.TitleLabel {
     def this(text: String) = this()
     def this(text: String, angle: Double) = this()
@@ -311,7 +346,7 @@ object Components {
     * @param {string} [displayText=""] The text of the Label.
     * @param {number} [angle=0] The angle of the Label in degrees (-90/0/90). 0 is horizontal.
     */
-  class WrappedLabel ()
+  open class WrappedLabel ()
     extends typings.plottable.componentsMod.WrappedLabel {
     def this(displayText: String) = this()
     def this(displayText: String, angle: Double) = this()
@@ -326,7 +361,7 @@ object Components {
     *
     * @constructor
     */
-  class XDragBoxLayer ()
+  open class XDragBoxLayer ()
     extends typings.plottable.componentsMod.XDragBoxLayer
   
   @JSImport("plottable", "Components.YDragBoxLayer")
@@ -337,6 +372,6 @@ object Components {
     *
     * @constructor
     */
-  class YDragBoxLayer ()
+  open class YDragBoxLayer ()
     extends typings.plottable.componentsMod.YDragBoxLayer
 }

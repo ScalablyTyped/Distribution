@@ -49,7 +49,7 @@ object ManifestData {
     
     inline def setPgs(value: js.Array[Page]): Self = StObject.set(x, "pgs", value.asInstanceOf[js.Any])
     
-    inline def setPgsVarargs(value: Page*): Self = StObject.set(x, "pgs", js.Array(value :_*))
+    inline def setPgsVarargs(value: Page*): Self = StObject.set(x, "pgs", js.Array(value*))
     
     inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     

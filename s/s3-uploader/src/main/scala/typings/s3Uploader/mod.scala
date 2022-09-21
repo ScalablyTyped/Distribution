@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("s3-uploader", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Upload {
     def this(awsBucketName: String, opts: S3UploaderOptions) = this()
@@ -148,7 +148,7 @@ object mod {
       
       inline def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
       
-      inline def setVersionsVarargs(value: S3UploaderVersion*): Self = StObject.set(x, "versions", js.Array(value :_*))
+      inline def setVersionsVarargs(value: S3UploaderVersion*): Self = StObject.set(x, "versions", js.Array(value*))
       
       inline def setWorkers(value: Double): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
       

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("p2", "Box")
 @js.native
-class Box () extends Convex {
+open class Box () extends Convex {
   def this(options: BoxOptions) = this()
   
   var height: Double = js.native

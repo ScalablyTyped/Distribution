@@ -49,7 +49,7 @@ object anon {
       
       inline def setParsedData(value: js.Array[Double]): Self = StObject.set(x, "parsedData", value.asInstanceOf[js.Any])
       
-      inline def setParsedDataVarargs(value: Double*): Self = StObject.set(x, "parsedData", js.Array(value :_*))
+      inline def setParsedDataVarargs(value: Double*): Self = StObject.set(x, "parsedData", js.Array(value*))
     }
   }
 }

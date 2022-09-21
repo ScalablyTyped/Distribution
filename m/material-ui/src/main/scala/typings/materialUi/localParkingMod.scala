@@ -10,10 +10,10 @@ object localParkingMod {
   
   @JSImport("material-ui/svg-icons/maps/local-parking", JSImport.Default)
   @js.native
-  class default () extends MapsLocalParking
+  open class default () extends MapsLocalParking
   
   @JSImport("material-ui/svg-icons/maps/local-parking", "MapsLocalParking")
   @js.native
-  class MapsLocalParking ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class MapsLocalParking ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

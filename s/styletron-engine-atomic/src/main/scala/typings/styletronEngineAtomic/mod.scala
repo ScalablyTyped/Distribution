@@ -2,14 +2,14 @@ package typings.styletronEngineAtomic
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Element
+import typings.std.FontFace
 import typings.std.HTMLCollectionOf
 import typings.std.HTMLStyleElement
 import typings.std.NodeListOf
 import typings.styletronEngineAtomic.anon.Block
-import typings.styletronStandard.mod.FontFace
-import typings.styletronStandard.mod.KeyframesObject
 import typings.styletronStandard.mod.StandardEngine
 import typings.styletronStandard.mod.StyleObject
+import typings.styletronStandard.styleTypesMod.KeyframesObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,10 +18,10 @@ object mod {
   
   @JSImport("styletron-engine-atomic", "Cache")
   @js.native
-  class Cache[T] protected () extends StObject {
+  open class Cache[T] protected () extends StObject {
     def this(
       idGenerator: SequentialIDGenerator,
-      onNewValue: js.Function3[/* cache */ Cache[T], /* id */ String, /* value */ js.Any, js.Any]
+      onNewValue: js.Function3[/* cache */ Cache[T], /* id */ String, /* value */ Any, Any]
     ) = this()
     
     def addValue(key: String, value: T): Double = js.native
@@ -32,12 +32,12 @@ object mod {
     
     var key: String = js.native
     
-    def onNewValue(cache: Cache[T], id: String, value: js.Any): js.Any = js.native
+    def onNewValue(cache: Cache[T], id: String, value: Any): Any = js.native
   }
   
   @JSImport("styletron-engine-atomic", "Client")
   @js.native
-  class Client ()
+  open class Client ()
     extends StObject
        with StandardEngine {
     def this(opts: ClientOptions) = this()
@@ -50,8 +50,9 @@ object mod {
     
     var keyframesSheet: HTMLStyleElement = js.native
     
+    def renderFontFace(fontFace: FontFace): String = js.native
     /* CompleteClass */
-    override def renderFontFace(fontFace: FontFace): String = js.native
+    override def renderFontFace(fontFace: typings.styletronStandard.styleTypesMod.FontFace): String = js.native
     
     /* CompleteClass */
     override def renderKeyframes(keyframes: KeyframesObject): String = js.native
@@ -66,12 +67,8 @@ object mod {
   
   @JSImport("styletron-engine-atomic", "MultiCache")
   @js.native
-  class MultiCache[T] protected () extends StObject {
-    def this(
-      idGenerator: SequentialIDGenerator,
-      onNewCache: js.Function0[js.Any],
-      onNewValue: js.Function0[js.Any]
-    ) = this()
+  open class MultiCache[T] protected () extends StObject {
+    def this(idGenerator: SequentialIDGenerator, onNewCache: js.Function0[Any], onNewValue: js.Function0[Any]) = this()
     
     var caches: StringDictionary[Cache[T]] = js.native
     
@@ -81,16 +78,16 @@ object mod {
     
     var idGenerator: SequentialIDGenerator = js.native
     
-    def onNewCache(key: String, cache: Cache[T], insertAtIndex: Double): js.Any = js.native
+    def onNewCache(key: String, cache: Cache[T], insertAtIndex: Double): Any = js.native
     
-    def onNewValue(cache: Cache[T], id: String, value: T): js.Any = js.native
+    def onNewValue(cache: Cache[T], id: String, value: T): Any = js.native
     
     var sortedCacheKeys: js.Array[String] = js.native
   }
   
   @JSImport("styletron-engine-atomic", "SequentialIDGenerator")
   @js.native
-  class SequentialIDGenerator protected () extends StObject {
+  open class SequentialIDGenerator protected () extends StObject {
     def this(prefix: String) = this()
     
     var count: Double = js.native
@@ -110,7 +107,7 @@ object mod {
   
   @JSImport("styletron-engine-atomic", "Server")
   @js.native
-  class Server ()
+  open class Server ()
     extends StObject
        with StandardEngine {
     def this(opts: ServerOptions) = this()
@@ -126,8 +123,9 @@ object mod {
     
     var keyframesRules: String = js.native
     
+    def renderFontFace(fontFace: FontFace): String = js.native
     /* CompleteClass */
-    override def renderFontFace(fontFace: FontFace): String = js.native
+    override def renderFontFace(fontFace: typings.styletronStandard.styleTypesMod.FontFace): String = js.native
     
     /* CompleteClass */
     override def renderKeyframes(keyframes: KeyframesObject): String = js.native
@@ -163,7 +161,7 @@ object mod {
       
       inline def setHydrateUndefined: Self = StObject.set(x, "hydrate", js.undefined)
       
-      inline def setHydrateVarargs(value: HTMLStyleElement*): Self = StObject.set(x, "hydrate", js.Array(value :_*))
+      inline def setHydrateVarargs(value: HTMLStyleElement*): Self = StObject.set(x, "hydrate", js.Array(value*))
       
       inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       

@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-alphanumerical
 
-Typings are for version 1.0
+Typings are for version 2.0.1
 
 ## Library description:
 Check if a character is alphanumerical
@@ -11,9 +11,9 @@ Check if a character is alphanumerical
 | Full name          | is-alphanumerical |
 | Keywords           | string, character, char, code, alphabetical, numerical, alphanumerical |
 | # releases         | 3 |
-| # dependents       | 12 |
-| # downloads        | 178537819 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2.8673316E7 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/wooorm/is-alphanumerical#readme)
@@ -24,7 +24,7 @@ Check if a character is alphanumerical
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

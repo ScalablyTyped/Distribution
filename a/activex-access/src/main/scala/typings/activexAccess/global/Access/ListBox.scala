@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.ListBox")
 @js.native
-/* private */ class ListBox ()
+/* private */ open class ListBox ()
   extends StObject
      with typings.activexAccess.Access.ListBox

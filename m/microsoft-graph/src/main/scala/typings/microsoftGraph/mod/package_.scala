@@ -1,88 +1,139 @@
 package typings.microsoftGraph.mod
 
+import typings.microsoftGraph.microsoftGraphStrings.accept
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type ActivityBasedTimeoutPolicy = typings.microsoftGraph.mod.StsPolicy
+type AcceptJoinResponse = ParticipantJoiningResponse
 
-type AllDevicesAssignmentTarget = typings.microsoftGraph.mod.DeviceAndAppManagementAssignmentTarget
+type ActivityBasedTimeoutPolicy = StsPolicy
 
-type AllLicensedUsersAssignmentTarget = typings.microsoftGraph.mod.DeviceAndAppManagementAssignmentTarget
+type AgreementFileVersion = AgreementFileProperties
 
-type AndroidManagedAppRegistration = typings.microsoftGraph.mod.ManagedAppRegistration
+type AllDevicesAssignmentTarget = DeviceAndAppManagementAssignmentTarget
 
-type AppleDeviceFeaturesConfigurationBase = typings.microsoftGraph.mod.DeviceConfiguration
+type AllLicensedUsersAssignmentTarget = DeviceAndAppManagementAssignmentTarget
 
-type ApplicationEnforcedRestrictionsSessionControl = typings.microsoftGraph.mod.ConditionalAccessSessionControl
+type AndroidManagedAppRegistration = ManagedAppRegistration
 
-type CalendarSharingActionType = typings.microsoftGraph.microsoftGraphStrings.accept
+type AppleDeviceFeaturesConfigurationBase = DeviceConfiguration
 
-type CancelMediaProcessingOperation = typings.microsoftGraph.mod.CommsOperation
+type ApplicationEnforcedRestrictionsSessionControl = ConditionalAccessSessionControl
 
-type Chat = typings.microsoftGraph.mod.Entity
+type AssociatedTeamInfo = TeamInfo
 
-type ChatMessageHostedContent = typings.microsoftGraph.mod.Entity
+type AuthenticationMethod = Entity
 
-type ClaimsMappingPolicy = typings.microsoftGraph.mod.StsPolicy
+type BookingCustomerBase = Entity
 
-type DeviceAndAppManagementRoleDefinition = typings.microsoftGraph.mod.RoleDefinition
+type BookingStaffMemberBase = Entity
 
-type ExclusionGroupAssignmentTarget = typings.microsoftGraph.mod.GroupAssignmentTarget
+type CalendarSharingActionType = accept
 
-type Extension = typings.microsoftGraph.mod.Entity
+type CancelMediaProcessingOperation = CommsOperation
 
-type FieldValueSet = typings.microsoftGraph.mod.Entity
+type ChatMessageFromIdentitySet = IdentitySet
 
-type HomeRealmDiscoveryPolicy = typings.microsoftGraph.mod.StsPolicy
+type ChatMessageHostedContent = TeamworkHostedContent
 
-type IosCertificateProfile = typings.microsoftGraph.mod.DeviceConfiguration
+type ChatMessageReactionIdentitySet = IdentitySet
 
-type IosManagedAppRegistration = typings.microsoftGraph.mod.ManagedAppRegistration
+type ClaimsMappingPolicy = StsPolicy
 
-type IosVppEBookAssignment = typings.microsoftGraph.mod.ManagedEBookAssignment
+type DeviceAndAppManagementRoleDefinition = RoleDefinition
 
-type MacOSDeviceFeaturesConfiguration = typings.microsoftGraph.mod.AppleDeviceFeaturesConfigurationBase
+type DisableAndDeleteUserApplyAction = AccessReviewApplyAction
 
-type MacOSOfficeSuiteApp = typings.microsoftGraph.mod.MobileApp
+type EducationAssignmentClassRecipient = EducationAssignmentRecipient
 
-type MdmWindowsInformationProtectionPolicy = typings.microsoftGraph.mod.WindowsInformationProtection
+type EducationAssignmentGroupRecipient = EducationAssignmentRecipient
 
-type MuteParticipantOperation = typings.microsoftGraph.mod.CommsOperation
+type ExclusionGroupAssignmentTarget = GroupAssignmentTarget
 
-type NullableOption[T] = T | scala.Null
+type Extension = Entity
 
-type OutgoingCallOptions = typings.microsoftGraph.mod.CallOptions
+type ExternalDomainName = Entity
 
-type PlayPromptOperation = typings.microsoftGraph.mod.CommsOperation
+type ExternalSponsors = SubjectSet
 
-type ReferenceAttachment = typings.microsoftGraph.mod.Attachment
+type FieldValueSet = Entity
 
-type ReportRoot = typings.microsoftGraph.mod.Entity
+type HomeRealmDiscoveryPolicy = StsPolicy
 
-type SearchEntity = typings.microsoftGraph.mod.Entity
+type IdentityBuiltInUserFlowAttribute = IdentityUserFlowAttribute
 
-type SubscribeToToneOperation = typings.microsoftGraph.mod.CommsOperation
+type IdentityCustomUserFlowAttribute = IdentityUserFlowAttribute
 
-type TeamsTemplate = typings.microsoftGraph.mod.Entity
+type IncomingCallOptions = CallOptions
 
-type TeleconferenceDeviceAudioQuality = typings.microsoftGraph.mod.TeleconferenceDeviceMediaQuality
+type InternalSponsors = SubjectSet
 
-type TeleconferenceDeviceScreenSharingQuality = typings.microsoftGraph.mod.TeleconferenceDeviceVideoQuality
+type IosCertificateProfile = DeviceConfiguration
 
-type TokenIssuancePolicy = typings.microsoftGraph.mod.StsPolicy
+type IosManagedAppRegistration = ManagedAppRegistration
 
-type TokenLifetimePolicy = typings.microsoftGraph.mod.StsPolicy
+type IosVppEBookAssignment = ManagedEBookAssignment
 
-type UnmuteParticipantOperation = typings.microsoftGraph.mod.CommsOperation
+type MacOSDeviceFeaturesConfiguration = AppleDeviceFeaturesConfigurationBase
 
-type UpdateRecordingStatusOperation = typings.microsoftGraph.mod.CommsOperation
+type MacOSOfficeSuiteApp = MobileApp
 
-type WindowsInformationProtectionStoreApp = typings.microsoftGraph.mod.WindowsInformationProtectionApp
+type MdmWindowsInformationProtectionPolicy = WindowsInformationProtection
 
-type WorkbookChartFill = typings.microsoftGraph.mod.Entity
+type MuteParticipantOperation = CommsOperation
 
-type WorkbookFunctions = typings.microsoftGraph.mod.Entity
+type NullableOption[T] = T | Null
 
-type WorkbookRangeSort = typings.microsoftGraph.mod.Entity
+type OrganizationalBrandingLocalization = OrganizationalBrandingProperties
+
+type OutgoingCallOptions = CallOptions
+
+type PlayPromptOperation = CommsOperation
+
+type ProvisioningServicePrincipal = Identity
+
+type ReferenceAttachment = Attachment
+
+type RemoveAccessApplyAction = AccessReviewApplyAction
+
+type ResultTemplateDictionary = Dictionary
+
+type SearchEntity = Entity
+
+type StartHoldMusicOperation = CommsOperation
+
+type StopHoldMusicOperation = CommsOperation
+
+type SubscribeToToneOperation = CommsOperation
+
+type TargetApplicationOwners = SubjectSet
+
+type TeamsTemplate = Entity
+
+type TeamworkBot = Entity
+
+type TeamworkTagIdentity = Identity
+
+type TeleconferenceDeviceAudioQuality = TeleconferenceDeviceMediaQuality
+
+type TeleconferenceDeviceScreenSharingQuality = TeleconferenceDeviceVideoQuality
+
+type TokenIssuancePolicy = StsPolicy
+
+type TokenLifetimePolicy = StsPolicy
+
+type UnmuteParticipantOperation = CommsOperation
+
+type UpdateRecordingStatusOperation = CommsOperation
+
+type UserFlowLanguagePage = Entity
+
+type WindowsInformationProtectionStoreApp = WindowsInformationProtectionApp
+
+type WorkbookChartFill = Entity
+
+type WorkbookFunctions = Entity
+
+type WorkbookRangeSort = Entity

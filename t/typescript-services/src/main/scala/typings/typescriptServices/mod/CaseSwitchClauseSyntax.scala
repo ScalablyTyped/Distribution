@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "CaseSwitchClauseSyntax")
 @js.native
-class CaseSwitchClauseSyntax protected ()
+open class CaseSwitchClauseSyntax protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.CaseSwitchClauseSyntax {
   def this(
@@ -25,7 +25,7 @@ class CaseSwitchClauseSyntax protected ()
   ) = this()
   
   /* CompleteClass */
-  override def accept(visitor: ISyntaxVisitor): js.Any = js.native
+  override def accept(visitor: ISyntaxVisitor): Any = js.native
   
   /* CompleteClass */
   override def childAt(index: Double): ISyntaxElement = js.native

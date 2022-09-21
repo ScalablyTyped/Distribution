@@ -4,14 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The input content for the `ImportProductSets` method.
-  */
 trait SchemaImportProductSetsInputConfig extends StObject {
   
   /**
-    * The Google Cloud Storage location for a csv file which preserves a list
-    * of ImportProductSetRequests in each line.
+    * The Google Cloud Storage location for a csv file which preserves a list of ImportProductSetRequests in each line.
     */
   var gcsSource: js.UndefOr[SchemaImportProductSetsGcsSource] = js.undefined
 }

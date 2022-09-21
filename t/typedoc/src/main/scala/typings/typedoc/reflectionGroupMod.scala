@@ -1,8 +1,8 @@
 package typings.typedoc
 
-import typings.typedoc.abstractMod.Reflection
-import typings.typedoc.abstractMod.ReflectionKind
+import typings.typedoc.modelsMod.DeclarationReflection
 import typings.typedoc.reflectionCategoryMod.ReflectionCategory
+import typings.typedoc.serializationMod.Serializer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,31 +11,34 @@ object reflectionGroupMod {
   
   @JSImport("typedoc/dist/lib/models/ReflectionGroup", "ReflectionGroup")
   @js.native
-  class ReflectionGroup protected () extends StObject {
-    def this(title: String, kind: ReflectionKind) = this()
+  open class ReflectionGroup protected () extends StObject {
+    /**
+      * Create a new ReflectionGroup instance.
+      *
+      * @param title The title of this group.
+      */
+    def this(title: String) = this()
     
-    var allChildrenAreExternal: js.UndefOr[Boolean] = js.native
+    /**
+      * Do all children of this group have a separate document?
+      */
+    def allChildrenHaveOwnDocument(): Boolean = js.native
     
-    var allChildrenAreInherited: js.UndefOr[Boolean] = js.native
-    
-    var allChildrenArePrivate: js.UndefOr[Boolean] = js.native
-    
-    var allChildrenAreProtectedOrPrivate: js.UndefOr[Boolean] = js.native
-    
-    var allChildrenHaveOwnDocument: js.Function = js.native
-    
+    /**
+      * Categories contained within this group.
+      */
     var categories: js.UndefOr[js.Array[ReflectionCategory]] = js.native
     
-    var children: js.Array[Reflection] = js.native
+    /**
+      * All reflections of this group.
+      */
+    var children: js.Array[DeclarationReflection] = js.native
     
-    var cssClasses: js.UndefOr[String] = js.native
-    
-    /* private */ var getAllChildrenHaveOwnDocument: js.Any = js.native
-    
-    var kind: ReflectionKind = js.native
-    
-    var someChildrenAreExported: js.UndefOr[Boolean] = js.native
-    
+    /**
+      * The title, a string representation of the typescript kind, of this group.
+      */
     var title: String = js.native
+    
+    def toObject(serializer: Serializer): typings.typedoc.schemaMod.ReflectionGroup = js.native
   }
 }

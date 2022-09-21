@@ -58,17 +58,17 @@ object categoryListCategoryListMod {
       
       inline def setIconsMetadata(value: js.Array[IconMetadata]): Self = StObject.set(x, "iconsMetadata", value.asInstanceOf[js.Any])
       
-      inline def setIconsMetadataVarargs(value: IconMetadata*): Self = StObject.set(x, "iconsMetadata", js.Array(value :_*))
+      inline def setIconsMetadataVarargs(value: IconMetadata*): Self = StObject.set(x, "iconsMetadata", js.Array(value*))
       
       inline def setMapIconToRow(value: IconMetadata => CategoryTableRow): Self = StObject.set(x, "mapIconToRow", js.Any.fromFunction1(value))
       
       inline def setSearchKeys(value: js.Array[String]): Self = StObject.set(x, "searchKeys", value.asInstanceOf[js.Any])
       
-      inline def setSearchKeysVarargs(value: String*): Self = StObject.set(x, "searchKeys", js.Array(value :_*))
+      inline def setSearchKeysVarargs(value: String*): Self = StObject.set(x, "searchKeys", js.Array(value*))
       
       inline def setTableHeaderTitles(value: js.Array[String]): Self = StObject.set(x, "tableHeaderTitles", value.asInstanceOf[js.Any])
       
-      inline def setTableHeaderTitlesVarargs(value: String*): Self = StObject.set(x, "tableHeaderTitles", js.Array(value :_*))
+      inline def setTableHeaderTitlesVarargs(value: String*): Self = StObject.set(x, "tableHeaderTitles", js.Array(value*))
     }
   }
 }

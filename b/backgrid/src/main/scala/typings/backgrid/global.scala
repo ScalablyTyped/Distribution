@@ -5,6 +5,7 @@ import typings.backbone.mod.Model
 import typings.backbone.mod.ModelSetOptions
 import typings.backbone.mod.ViewOptions
 import typings.backgrid.mod.GridOptions
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,120 +16,114 @@ object global {
     
     @JSGlobal("Backgrid.Body")
     @js.native
-    class Body ()
+    open class Body ()
       extends typings.backgrid.mod.Body {
-      def this(options: ViewOptions[Model[js.Any, ModelSetOptions, js.Object]]) = this()
+      def this(options: ViewOptions[Model[Any, ModelSetOptions, Any], HTMLElement]) = this()
     }
     
     @JSGlobal("Backgrid.Cell")
     @js.native
-    class Cell ()
+    open class Cell ()
       extends typings.backgrid.mod.Cell {
-      def this(options: ViewOptions[Model[js.Any, ModelSetOptions, js.Object]]) = this()
+      def this(options: ViewOptions[Model[Any, ModelSetOptions, Any], HTMLElement]) = this()
     }
     
     @JSGlobal("Backgrid.CellEditor")
     @js.native
-    class CellEditor ()
+    open class CellEditor ()
       extends typings.backgrid.mod.CellEditor {
-      def this(options: ViewOptions[Model[js.Any, ModelSetOptions, js.Object]]) = this()
+      def this(options: ViewOptions[Model[Any, ModelSetOptions, Any], HTMLElement]) = this()
     }
     
     @JSGlobal("Backgrid.CellFormatter")
     @js.native
-    class CellFormatter ()
+    open class CellFormatter ()
       extends typings.backgrid.mod.CellFormatter
     
     @JSGlobal("Backgrid.Column")
     @js.native
-    class Column ()
+    open class Column ()
       extends typings.backgrid.mod.Column {
-      def this(attributes: js.Any) = this()
-      def this(
-        attributes: js.Any,
-        options: CombinedModelConstructorOptions[js.Object, Model[js.Any, ModelSetOptions, js.Object]]
-      ) = this()
-      def this(
-        attributes: Unit,
-        options: CombinedModelConstructorOptions[js.Object, Model[js.Any, ModelSetOptions, js.Object]]
-      ) = this()
+      def this(attributes: Any) = this()
+      def this(attributes: Any, options: CombinedModelConstructorOptions[Any, Model[Any, ModelSetOptions, Any]]) = this()
+      def this(attributes: Unit, options: CombinedModelConstructorOptions[Any, Model[Any, ModelSetOptions, Any]]) = this()
     }
     
     @JSGlobal("Backgrid.Command")
     @js.native
-    class Command ()
+    open class Command ()
       extends typings.backgrid.mod.Command
     
     @JSGlobal("Backgrid.DateTimeFormatter")
     @js.native
-    class DateTimeFormatter ()
+    open class DateTimeFormatter ()
       extends typings.backgrid.mod.DateTimeFormatter
     
     @JSGlobal("Backgrid.EmailFormatter")
     @js.native
-    class EmailFormatter ()
+    open class EmailFormatter ()
       extends typings.backgrid.mod.EmailFormatter
     
     @JSGlobal("Backgrid.Footer")
     @js.native
-    class Footer ()
+    open class Footer ()
       extends typings.backgrid.mod.Footer {
-      def this(options: ViewOptions[Model[js.Any, ModelSetOptions, js.Object]]) = this()
+      def this(options: ViewOptions[Model[Any, ModelSetOptions, Any], HTMLElement]) = this()
     }
     
     @JSGlobal("Backgrid.Grid")
     @js.native
-    class Grid protected ()
+    open class Grid protected ()
       extends typings.backgrid.mod.Grid {
       def this(options: GridOptions) = this()
     }
     
     @JSGlobal("Backgrid.Header")
     @js.native
-    class Header ()
+    open class Header ()
       extends typings.backgrid.mod.Header {
-      def this(options: ViewOptions[Model[js.Any, ModelSetOptions, js.Object]]) = this()
+      def this(options: ViewOptions[Model[Any, ModelSetOptions, Any], HTMLElement]) = this()
     }
     
     @JSGlobal("Backgrid.InputCellEditor")
     @js.native
-    class InputCellEditor ()
+    open class InputCellEditor ()
       extends typings.backgrid.mod.InputCellEditor {
-      def this(options: ViewOptions[Model[js.Any, ModelSetOptions, js.Object]]) = this()
+      def this(options: ViewOptions[Model[Any, ModelSetOptions, Any], HTMLElement]) = this()
     }
     
     @JSGlobal("Backgrid.NumberFormatter")
     @js.native
-    class NumberFormatter ()
+    open class NumberFormatter ()
       extends typings.backgrid.mod.NumberFormatter
     
     @JSGlobal("Backgrid.PercentFormatter")
     @js.native
-    class PercentFormatter ()
+    open class PercentFormatter ()
       extends typings.backgrid.mod.PercentFormatter
     
     @JSGlobal("Backgrid.Row")
     @js.native
-    class Row ()
+    open class Row ()
       extends typings.backgrid.mod.Row {
-      def this(options: ViewOptions[Model[js.Any, ModelSetOptions, js.Object]]) = this()
+      def this(options: ViewOptions[Model[Any, ModelSetOptions, Any], HTMLElement]) = this()
     }
     
     @JSGlobal("Backgrid.SelectFormatter")
     @js.native
-    class SelectFormatter ()
+    open class SelectFormatter ()
       extends typings.backgrid.mod.SelectFormatter
     
     @JSGlobal("Backgrid.StringCell")
     @js.native
-    class StringCell ()
+    open class StringCell ()
       extends typings.backgrid.mod.StringCell {
-      def this(options: ViewOptions[Model[js.Any, ModelSetOptions, js.Object]]) = this()
+      def this(options: ViewOptions[Model[Any, ModelSetOptions, Any], HTMLElement]) = this()
     }
     
     @JSGlobal("Backgrid.StringFormatter")
     @js.native
-    class StringFormatter ()
+    open class StringFormatter ()
       extends typings.backgrid.mod.StringFormatter
   }
 }

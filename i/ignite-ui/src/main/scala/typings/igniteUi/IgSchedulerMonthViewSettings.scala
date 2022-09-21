@@ -10,7 +10,7 @@ trait IgSchedulerMonthViewSettings
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Gets/Sets the scope of appointments that are displayed in a MonthView's AgendaView.

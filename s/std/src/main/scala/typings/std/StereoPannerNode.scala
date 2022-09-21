@@ -10,5 +10,6 @@ trait StereoPannerNode
   extends StObject
      with AudioNode {
   
+  /* standard dom */
   val pan: AudioParam = js.native
 }

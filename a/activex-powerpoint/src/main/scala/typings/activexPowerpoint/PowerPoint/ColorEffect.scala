@@ -12,7 +12,7 @@ trait ColorEffect extends StObject {
   
   val From: ColorFormat
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.ColorEffect_typekey")
   var PowerPointDotColorEffect_typekey: ColorEffect
@@ -25,7 +25,7 @@ object ColorEffect {
     Application: Application,
     By: ColorFormat,
     From: ColorFormat,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotColorEffect_typekey: ColorEffect,
     To: ColorFormat
   ): ColorEffect = {
@@ -42,7 +42,7 @@ object ColorEffect {
     
     inline def setFrom(value: ColorFormat): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotColorEffect_typekey(value: ColorEffect): Self = StObject.set(x, "PowerPoint.ColorEffect_typekey", value.asInstanceOf[js.Any])
     

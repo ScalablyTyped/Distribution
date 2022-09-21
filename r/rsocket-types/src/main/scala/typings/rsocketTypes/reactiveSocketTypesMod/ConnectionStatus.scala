@@ -29,7 +29,7 @@ object ConnectionStatus {
     __obj.asInstanceOf[typings.rsocketTypes.anon.`2`]
   }
   
-  inline def Error(error: typings.std.Error): typings.rsocketTypes.anon.Error = {
+  inline def Error(error: js.Error): typings.rsocketTypes.anon.Error = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], kind = "ERROR")
     __obj.asInstanceOf[typings.rsocketTypes.anon.Error]
   }

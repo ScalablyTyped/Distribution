@@ -10,10 +10,10 @@ The lodash method `_.toSafeInteger` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.tosafeinteger |
 | Keywords           | lodash-modularized, tosafeinteger |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 8421 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 36787.666666666664 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

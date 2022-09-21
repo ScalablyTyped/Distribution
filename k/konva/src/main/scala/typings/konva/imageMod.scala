@@ -12,14 +12,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object imageMod {
   
-  @JSImport("konva/types/shapes/Image", "Image")
+  @JSImport("konva/lib/shapes/Image", "Image")
   @js.native
-  class Image () extends Shape[ImageConfig] {
-    def this(config: ImageConfig) = this()
+  open class Image protected () extends Shape[ImageConfig] {
+    def this(attrs: ImageConfig) = this()
     
-    def _hitFunc(context: js.Any): Unit = js.native
+    def _hitFunc(context: Any): Unit = js.native
     
     def _sceneFunc(context: Context): Unit = js.native
+    
+    def _setImageLoad(): Unit = js.native
     
     def crop(): IRect = js.native
     def crop(v: IRect): this.type = js.native
@@ -47,9 +49,9 @@ object imageMod {
     @JSName("crop")
     var crop_Original: GetSet[IRect, this.type] = js.native
     
-    def getHeight(): js.Any = js.native
+    def getHeight(): Any = js.native
     
-    def getWidth(): js.Any = js.native
+    def getWidth(): Any = js.native
     
     def image(): this.type = js.native
     def image(v: CanvasImageSource): this.type = js.native
@@ -61,11 +63,12 @@ object imageMod {
   /* static members */
   object Image {
     
-    @JSImport("konva/types/shapes/Image", "Image")
+    @JSImport("konva/lib/shapes/Image", "Image")
     @js.native
     val ^ : js.Any = js.native
     
-    inline def fromURL(url: js.Any, callback: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def fromURL(url: Any, callback: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def fromURL(url: Any, callback: Any, onError: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   trait ImageConfig

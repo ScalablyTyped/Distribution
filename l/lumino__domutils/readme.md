@@ -1,7 +1,7 @@
 
 # Scala.js typings for lumino__domutils
 
-Typings are for version 1.2.3
+Typings are for version 1.8.2
 
 ## Library description:
 Lumino DOM Utilities
@@ -10,10 +10,10 @@ Lumino DOM Utilities
 | ------------------ | :-------------: |
 | Full name          | @lumino/domutils |
 | Keywords           | - |
-| # releases         | 11 |
-| # dependents       | 29 |
-| # downloads        | 1333921 |
-| # stars            | 0 |
+| # releases         | 18 |
+| # dependents       | 0.0 |
+| # downloads        | 283247.3333333333 |
+| # stars            | 370.0 |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/lumino)

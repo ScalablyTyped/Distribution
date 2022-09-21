@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("guacamole-client", "VideoPlayer")
 @js.native
-class VideoPlayer ()
+open class VideoPlayer ()
   extends typings.guacamoleClient.videoPlayerMod.VideoPlayer
 /* static members */
 object VideoPlayer {

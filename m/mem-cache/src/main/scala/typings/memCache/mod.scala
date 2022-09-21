@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("mem-cache", JSImport.Namespace)
   @js.native
-  class ^ () extends Cache {
+  open class ^ () extends Cache {
     def this(options: Double) = this()
     def this(options: CacheOptions) = this()
   }
@@ -19,7 +19,7 @@ object mod {
     
     def clean(): Unit = js.native
     
-    def get(key: String): js.Any = js.native
+    def get(key: String): Any = js.native
     
     var keys: js.Array[String] = js.native
     
@@ -27,8 +27,8 @@ object mod {
     
     def remove(key: String): Unit = js.native
     
-    def set(key: String, value: js.Any): Unit = js.native
-    def set(key: String, value: js.Any, timeout: Double): Unit = js.native
+    def set(key: String, value: Any): Unit = js.native
+    def set(key: String, value: Any, timeout: Double): Unit = js.native
   }
   
   trait CacheOptions extends StObject {

@@ -10,14 +10,17 @@ trait NodeMaterialConnectionPoint extends StObject {
   /** @hidden */
   var _acceptedConnectionPointType: Nullable[NodeMaterialConnectionPoint] = js.native
   
-  /* private */ var _associatedVariableName: js.Any = js.native
+  /* private */ var _associatedVariableName: Any = js.native
   
   /** @hidden */
   var _connectedPoint: Nullable[NodeMaterialConnectionPoint] = js.native
   
-  /* private */ var _direction: js.Any = js.native
+  /** @hidden */
+  var _defaultConnectionPointType: Nullable[NodeMaterialBlockConnectionPointTypes] = js.native
   
-  /* private */ var _endpoints: js.Any = js.native
+  /* private */ var _direction: Any = js.native
+  
+  /* private */ var _endpoints: Any = js.native
   
   /** @hidden */
   var _enforceAssociatedVariableName: Boolean = js.native
@@ -31,9 +34,9 @@ trait NodeMaterialConnectionPoint extends StObject {
   /** @hidden */
   var _prioritizeVertex: Boolean = js.native
   
-  /* private */ var _target: js.Any = js.native
+  /* private */ var _target: Any = js.native
   
-  /* private */ var _type: js.Any = js.native
+  /* private */ var _type: Any = js.native
   
   /** @hidden */
   var _typeConnectionSource: Nullable[NodeMaterialConnectionPoint] = js.native
@@ -156,6 +159,9 @@ trait NodeMaterialConnectionPoint extends StObject {
     */
   def isConnectedToInputBlock: Boolean = js.native
   
+  /** Gets a boolean indicating that this connection has a path to the vertex output*/
+  def isDirectlyConnectedToVertexOutput: Boolean = js.native
+  
   /**
     * Gets or sets a boolean indicating that this connection point is exposed on a frame
     */
@@ -187,8 +193,8 @@ trait NodeMaterialConnectionPoint extends StObject {
     * @param isInput defines if the connection point is an input (default is true)
     * @returns the serialized point object
     */
-  def serialize(): js.Any = js.native
-  def serialize(isInput: Boolean): js.Any = js.native
+  def serialize(): Any = js.native
+  def serialize(isInput: Boolean): Any = js.native
   
   /** Get the block connected on the other side of this connection (if any) */
   def sourceBlock: Nullable[NodeMaterialBlock] = js.native

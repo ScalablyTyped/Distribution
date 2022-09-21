@@ -1,8 +1,7 @@
 package typings.ssbKeys
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.ssbKeys.anon.Signature
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +27,7 @@ object mod {
   inline def hash(data: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hash")(data.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def hash(data: Buffer, encoding: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(data.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def loadOrCreate(filename: String, cb: js.Function2[/* err */ Error | Null, /* keys */ Keys, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadOrCreate")(filename.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def loadOrCreate(filename: String, cb: js.Function2[/* err */ js.Error | Null, /* keys */ Keys, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadOrCreate")(filename.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def loadOrCreateSync(filename: String): Keys = ^.asInstanceOf[js.Dynamic].applyDynamic("loadOrCreateSync")(filename.asInstanceOf[js.Any]).asInstanceOf[Keys]
   

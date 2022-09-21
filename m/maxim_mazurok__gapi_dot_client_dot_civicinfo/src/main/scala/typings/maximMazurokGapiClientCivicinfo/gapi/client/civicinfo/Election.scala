@@ -20,6 +20,8 @@ trait Election extends StObject {
     * as ocd-division/country:us/state:ca or for the midterms or general election the entire US (i.e. ocd-division/country:us).
     */
   var ocdDivisionId: js.UndefOr[String] = js.undefined
+  
+  var shapeLookupBehavior: js.UndefOr[String] = js.undefined
 }
 object Election {
   
@@ -45,5 +47,9 @@ object Election {
     inline def setOcdDivisionId(value: String): Self = StObject.set(x, "ocdDivisionId", value.asInstanceOf[js.Any])
     
     inline def setOcdDivisionIdUndefined: Self = StObject.set(x, "ocdDivisionId", js.undefined)
+    
+    inline def setShapeLookupBehavior(value: String): Self = StObject.set(x, "shapeLookupBehavior", value.asInstanceOf[js.Any])
+    
+    inline def setShapeLookupBehaviorUndefined: Self = StObject.set(x, "shapeLookupBehavior", js.undefined)
   }
 }

@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the legend in a chart.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @JSGlobal("Excel.ChartLegend")
 @js.native
-class ChartLegend ()
+open class ChartLegend ()
   extends StObject
      with typings.officeJsPreview.Excel.ChartLegend {
   

@@ -22,7 +22,7 @@ trait GeoJSONLayerApplyEditsEdits
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#applyEdits)
     */
-  var deleteFeatures: js.UndefOr[(js.Array[js.Any | Graphic]) | Collection[Graphic]] = js.undefined
+  var deleteFeatures: js.UndefOr[(js.Array[Any | Graphic]) | Collection[Graphic]] = js.undefined
   
   /**
     * An array or a [collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) of features to be updated.
@@ -48,18 +48,18 @@ object GeoJSONLayerApplyEditsEdits {
     
     inline def setAddFeaturesUndefined: Self = StObject.set(x, "addFeatures", js.undefined)
     
-    inline def setAddFeaturesVarargs(value: Graphic*): Self = StObject.set(x, "addFeatures", js.Array(value :_*))
+    inline def setAddFeaturesVarargs(value: Graphic*): Self = StObject.set(x, "addFeatures", js.Array(value*))
     
-    inline def setDeleteFeatures(value: (js.Array[js.Any | Graphic]) | Collection[Graphic]): Self = StObject.set(x, "deleteFeatures", value.asInstanceOf[js.Any])
+    inline def setDeleteFeatures(value: (js.Array[Any | Graphic]) | Collection[Graphic]): Self = StObject.set(x, "deleteFeatures", value.asInstanceOf[js.Any])
     
     inline def setDeleteFeaturesUndefined: Self = StObject.set(x, "deleteFeatures", js.undefined)
     
-    inline def setDeleteFeaturesVarargs(value: (js.Any | Graphic)*): Self = StObject.set(x, "deleteFeatures", js.Array(value :_*))
+    inline def setDeleteFeaturesVarargs(value: (Any | Graphic)*): Self = StObject.set(x, "deleteFeatures", js.Array(value*))
     
     inline def setUpdateFeatures(value: js.Array[Graphic] | Collection[Graphic]): Self = StObject.set(x, "updateFeatures", value.asInstanceOf[js.Any])
     
     inline def setUpdateFeaturesUndefined: Self = StObject.set(x, "updateFeatures", js.undefined)
     
-    inline def setUpdateFeaturesVarargs(value: Graphic*): Self = StObject.set(x, "updateFeatures", js.Array(value :_*))
+    inline def setUpdateFeaturesVarargs(value: Graphic*): Self = StObject.set(x, "updateFeatures", js.Array(value*))
   }
 }

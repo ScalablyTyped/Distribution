@@ -8,7 +8,7 @@ object serviceMetadataMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/ServiceMetadata", "ServiceMetadata")
   @js.native
-  val ServiceMetadata: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _ServiceMetadata_ */ js.Any = js.native
+  val ServiceMetadata: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _ServiceMetadata_ */ Any = js.native
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/ServiceMetadata", "clientVersion")
   @js.native

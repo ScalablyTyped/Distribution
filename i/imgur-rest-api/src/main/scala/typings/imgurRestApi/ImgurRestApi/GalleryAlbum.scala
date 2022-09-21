@@ -61,7 +61,7 @@ object GalleryAlbum {
     
     inline def setImages(value: js.Array[Image]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
-    inline def setImagesVarargs(value: Image*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: Image*): Self = StObject.set(x, "images", js.Array(value*))
     
     inline def setImages_count(value: Double): Self = StObject.set(x, "images_count", value.asInstanceOf[js.Any])
     

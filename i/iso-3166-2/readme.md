@@ -10,10 +10,10 @@ Lookup information about ISO-3166-2 subdivisions.
 | ------------------ | :-------------: |
 | Full name          | iso-3166-2 |
 | Keywords           | iso3166, iso-3166, iso-3166-2, geo |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 401434 |
-| # stars            | 7 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 107010.66666666667 |
+| # stars            | 96.0 |
 
 ## Links
 - [Homepage](https://github.com/olahol/iso-3166-2.js#readme)

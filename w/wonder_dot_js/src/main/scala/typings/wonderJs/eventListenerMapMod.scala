@@ -13,7 +13,7 @@ object eventListenerMapMod {
   @js.native
   abstract class EventListenerMap () extends StObject {
     
-    def appendChild(args: js.Any*): Unit = js.native
+    def appendChild(args: Any*): Unit = js.native
     
     /* protected */ def buildFirstLevelKey(target: HTMLElement): String = js.native
     /* protected */ def buildFirstLevelKey(target: EntityObject): String = js.native
@@ -24,7 +24,7 @@ object eventListenerMapMod {
     
     def forEachAll(
       func: js.Function2[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<any> */ /* list */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<any> */ /* list */ Any, 
           /* eventName */ EEventName, 
           Unit
         ]
@@ -32,16 +32,16 @@ object eventListenerMapMod {
     
     def forEachEventName(
       func: js.Function2[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<any> */ /* list */ js.Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<any> */ /* list */ Any, 
           /* eventName */ EEventName, 
           Unit
         ]
     ): Unit = js.native
     
-    def getChild(args: js.Any*): js.Any = js.native
+    def getChild(args: Any*): Any = js.native
     
-    def hasChild(args: js.Any*): Boolean = js.native
+    def hasChild(args: Any*): Boolean = js.native
     
-    def removeChild(args: js.Any*): js.Any = js.native
+    def removeChild(args: Any*): Any = js.native
   }
 }

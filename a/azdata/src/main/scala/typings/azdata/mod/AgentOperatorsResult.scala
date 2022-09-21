@@ -21,6 +21,6 @@ object AgentOperatorsResult {
     
     inline def setOperators(value: js.Array[AgentOperatorInfo]): Self = StObject.set(x, "operators", value.asInstanceOf[js.Any])
     
-    inline def setOperatorsVarargs(value: AgentOperatorInfo*): Self = StObject.set(x, "operators", js.Array(value :_*))
+    inline def setOperatorsVarargs(value: AgentOperatorInfo*): Self = StObject.set(x, "operators", js.Array(value*))
   }
 }

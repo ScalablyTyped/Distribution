@@ -1,24 +1,24 @@
 
 # Scala.js typings for antv__scale
 
-Typings are for version 0.3.4
+Typings are for version 0.4.10
 
 ## Library description:
-The scale module for G2
+Toolkit for mapping abstract data into visual representation.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @antv/scale |
-| Keywords           | - |
-| # releases         | 27 |
-| # dependents       | 18 |
-| # downloads        | 2870570 |
-| # stars            | 0 |
+| Keywords           | antv, visualization, mapping |
+| # releases         | 29 |
+| # dependents       | 0.0 |
+| # downloads        | 453475.3333333333 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/antvis/scale#readme)
-- [Bugs](https://github.com/antvis/scale/issues)
-- [Repository](https://github.com/antvis/scale)
+- [Homepage](https://github.com/antvis/template#readme)
+- [Bugs](https://github.com/antvis/template/issues)
+- [Repository](https://github.com/antvis/template)
 - [Npm](https://www.npmjs.com/package/%40antv%2Fscale)
     
 

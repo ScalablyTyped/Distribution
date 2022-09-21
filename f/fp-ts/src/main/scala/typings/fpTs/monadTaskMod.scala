@@ -1,5 +1,12 @@
 package typings.fpTs
 
+import typings.fpTs.fromTaskMod.FromTask
+import typings.fpTs.fromTaskMod.FromTask1
+import typings.fpTs.fromTaskMod.FromTask2
+import typings.fpTs.fromTaskMod.FromTask2C
+import typings.fpTs.fromTaskMod.FromTask3
+import typings.fpTs.fromTaskMod.FromTask3C
+import typings.fpTs.fromTaskMod.FromTask4
 import typings.fpTs.iOMod.IO_
 import typings.fpTs.monadIOMod.MonadIO
 import typings.fpTs.monadIOMod.MonadIO1
@@ -17,23 +24,25 @@ object monadTaskMod {
   
   trait MonadTask[M]
     extends StObject
-       with MonadIO[M] {
+       with MonadIO[M]
+       with FromTask[M] {
     
-    def fromTask[A](fa: Task_[A]): js.Any
+    /* InferMemberOverrides */
+    override val URI: M
   }
   object MonadTask {
     
     inline def apply[M](
       URI: M,
-      ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, (a : A): B> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any) => js.Any,
-      chain: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any, js.Function1[
-          js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, B> */ js.Any
-        ]) => js.Any,
-      fromIO: IO_[js.Any] => js.Any,
-      fromTask: Task_[js.Any] => js.Any,
-      map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any, js.Function1[js.Any, js.Any]) => js.Any,
-      of: js.Any => js.Any
+      ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, (a : A): B> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any) => Any,
+      chain: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any, js.Function1[
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, B> */ Any
+        ]) => Any,
+      fromIO: IO_[Any] => Any,
+      fromTask: Task_[Any] => Any,
+      map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any, js.Function1[Any, Any]) => Any,
+      of: Any => Any
     ): MonadTask[M] = {
       val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], ap = js.Any.fromFunction2(ap), chain = js.Any.fromFunction2(chain), fromIO = js.Any.fromFunction1(fromIO), fromTask = js.Any.fromFunction1(fromTask), map = js.Any.fromFunction2(map), of = js.Any.fromFunction1(of))
       __obj.asInstanceOf[MonadTask[M]]
@@ -41,189 +50,184 @@ object monadTaskMod {
     
     extension [Self <: MonadTask[?], M](x: Self & MonadTask[M]) {
       
-      inline def setFromTask(value: Task_[js.Any] => js.Any): Self = StObject.set(x, "fromTask", js.Any.fromFunction1(value))
+      inline def setURI(value: M): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     }
   }
   
-  trait MonadTask1[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */]
+  trait MonadTask1[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */]
     extends StObject
-       with MonadIO1[M] {
-    
-    def fromTask[A](fa: Task_[A]): js.Any
-  }
+       with MonadIO1[M]
+       with FromTask1[M]
   object MonadTask1 {
     
-    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](
       URI: M,
-      ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, (a : A): B> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ js.Any) => js.Any,
-      chain: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ js.Any, js.Function1[
-          js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, B> */ js.Any
-        ]) => js.Any,
-      fromIO: IO_[js.Any] => js.Any,
-      fromTask: Task_[js.Any] => js.Any,
-      map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ js.Any, js.Function1[js.Any, js.Any]) => js.Any,
-      of: js.Any => js.Any
+      ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, (a : A): B> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any) => Any,
+      chain: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any, js.Function1[
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, B> */ Any
+        ]) => Any,
+      fromIO: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any => Any,
+      fromTask: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any => Any,
+      map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any, js.Function1[Any, Any]) => Any,
+      of: Any => Any
     ): MonadTask1[M] = {
       val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], ap = js.Any.fromFunction2(ap), chain = js.Any.fromFunction2(chain), fromIO = js.Any.fromFunction1(fromIO), fromTask = js.Any.fromFunction1(fromTask), map = js.Any.fromFunction2(map), of = js.Any.fromFunction1(of))
       __obj.asInstanceOf[MonadTask1[M]]
     }
-    
-    extension [Self <: MonadTask1[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](x: Self & MonadTask1[M]) {
-      
-      inline def setFromTask(value: Task_[js.Any] => js.Any): Self = StObject.set(x, "fromTask", js.Any.fromFunction1(value))
-    }
   }
   
-  trait MonadTask2[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */]
+  trait MonadTask2[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */]
     extends StObject
-       with MonadIO2[M] {
-    
-    def fromTask[E, A](fa: Task_[A]): js.Any
-  }
+       with MonadIO2[M]
+       with FromTask2[M]
   object MonadTask2 {
     
-    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](
       URI: M,
-      ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, (a : A): B> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any) => js.Any,
-      chain: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any, js.Function1[
-          js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, B> */ js.Any
-        ]) => js.Any,
-      fromIO: IO_[js.Any] => js.Any,
-      fromTask: Task_[js.Any] => js.Any,
-      map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any, js.Function1[js.Any, js.Any]) => js.Any,
-      of: js.Any => js.Any
+      ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, (a : A): B> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any) => Any,
+      chain: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any, js.Function1[
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, B> */ Any
+        ]) => Any,
+      fromIO: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any => Any,
+      fromTask: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any => Any,
+      map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any, js.Function1[Any, Any]) => Any,
+      of: Any => Any
     ): MonadTask2[M] = {
       val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], ap = js.Any.fromFunction2(ap), chain = js.Any.fromFunction2(chain), fromIO = js.Any.fromFunction1(fromIO), fromTask = js.Any.fromFunction1(fromTask), map = js.Any.fromFunction2(map), of = js.Any.fromFunction1(of))
       __obj.asInstanceOf[MonadTask2[M]]
     }
-    
-    extension [Self <: MonadTask2[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](x: Self & MonadTask2[M]) {
-      
-      inline def setFromTask(value: Task_[js.Any] => js.Any): Self = StObject.set(x, "fromTask", js.Any.fromFunction1(value))
-    }
   }
   
-  trait MonadTask2C[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E]
+  trait MonadTask2C[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E]
     extends StObject
-       with MonadIO2C[M, E] {
+       with MonadIO2C[M, E]
+       with FromTask2C[M, E] {
     
-    def fromTask[A](fa: Task_[A]): js.Any
+    /* InferMemberOverrides */
+    override val URI: M
+    
+    /* InferMemberOverrides */
+    override val _E: E
   }
   object MonadTask2C {
     
-    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](
       URI: M,
       _E: E,
-      ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, (a : A): B> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any) => js.Any,
-      chain: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any, js.Function1[
-          js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, B> */ js.Any
-        ]) => js.Any,
-      fromIO: IO_[js.Any] => js.Any,
-      fromTask: Task_[js.Any] => js.Any,
-      map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any, js.Function1[js.Any, js.Any]) => js.Any,
-      of: js.Any => js.Any
+      ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, (a : A): B> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any) => Any,
+      chain: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any, js.Function1[
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, B> */ Any
+        ]) => Any,
+      fromIO: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any => Any,
+      fromTask: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any => Any,
+      map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any, js.Function1[Any, Any]) => Any,
+      of: Any => Any
     ): MonadTask2C[M, E] = {
       val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _E = _E.asInstanceOf[js.Any], ap = js.Any.fromFunction2(ap), chain = js.Any.fromFunction2(chain), fromIO = js.Any.fromFunction1(fromIO), fromTask = js.Any.fromFunction1(fromTask), map = js.Any.fromFunction2(map), of = js.Any.fromFunction1(of))
       __obj.asInstanceOf[MonadTask2C[M, E]]
     }
     
-    extension [Self <: MonadTask2C[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](x: Self & (MonadTask2C[M, E])) {
+    extension [Self <: MonadTask2C[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](x: Self & (MonadTask2C[M, E])) {
       
-      inline def setFromTask(value: Task_[js.Any] => js.Any): Self = StObject.set(x, "fromTask", js.Any.fromFunction1(value))
+      inline def setURI(value: M): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
+      
+      inline def set_E(value: E): Self = StObject.set(x, "_E", value.asInstanceOf[js.Any])
     }
   }
   
-  trait MonadTask3[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */]
+  trait MonadTask3[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */]
     extends StObject
-       with MonadIO3[M] {
+       with MonadIO3[M]
+       with FromTask3[M] {
     
-    def fromTask[R, E, A](fa: Task_[A]): js.Any
+    /* InferMemberOverrides */
+    override val URI: M
   }
   object MonadTask3 {
     
-    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](
       URI: M,
-      ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, (a : A): B> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any) => js.Any,
-      chain: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any, js.Function1[
-          js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, B> */ js.Any
-        ]) => js.Any,
-      fromIO: IO_[js.Any] => js.Any,
-      fromTask: Task_[js.Any] => js.Any,
-      map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any, js.Function1[js.Any, js.Any]) => js.Any,
-      of: js.Any => js.Any
+      ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, (a : A): B> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any) => Any,
+      chain: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any, js.Function1[
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, B> */ Any
+        ]) => Any,
+      fromIO: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any => Any,
+      fromTask: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any => Any,
+      map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any, js.Function1[Any, Any]) => Any,
+      of: Any => Any
     ): MonadTask3[M] = {
       val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], ap = js.Any.fromFunction2(ap), chain = js.Any.fromFunction2(chain), fromIO = js.Any.fromFunction1(fromIO), fromTask = js.Any.fromFunction1(fromTask), map = js.Any.fromFunction2(map), of = js.Any.fromFunction1(of))
       __obj.asInstanceOf[MonadTask3[M]]
     }
     
-    extension [Self <: MonadTask3[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](x: Self & MonadTask3[M]) {
+    extension [Self <: MonadTask3[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](x: Self & MonadTask3[M]) {
       
-      inline def setFromTask(value: Task_[js.Any] => js.Any): Self = StObject.set(x, "fromTask", js.Any.fromFunction1(value))
+      inline def setURI(value: M): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     }
   }
   
-  trait MonadTask3C[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E]
+  trait MonadTask3C[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E]
     extends StObject
-       with MonadIO3C[M, E] {
+       with MonadIO3C[M, E]
+       with FromTask3C[M, E] {
     
-    def fromTask[R, A](fa: Task_[A]): js.Any
+    /* InferMemberOverrides */
+    override val URI: M
+    
+    /* InferMemberOverrides */
+    override val _E: E
   }
   object MonadTask3C {
     
-    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E](
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](
       URI: M,
       _E: E,
-      ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, (a : A): B> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any) => js.Any,
-      chain: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any, js.Function1[
-          js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, B> */ js.Any
-        ]) => js.Any,
-      fromIO: IO_[js.Any] => js.Any,
-      fromTask: Task_[js.Any] => js.Any,
-      map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any, js.Function1[js.Any, js.Any]) => js.Any,
-      of: js.Any => js.Any
+      ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, (a : A): B> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any) => Any,
+      chain: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any, js.Function1[
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, B> */ Any
+        ]) => Any,
+      fromIO: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any => Any,
+      fromTask: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any => Any,
+      map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any, js.Function1[Any, Any]) => Any,
+      of: Any => Any
     ): MonadTask3C[M, E] = {
       val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], _E = _E.asInstanceOf[js.Any], ap = js.Any.fromFunction2(ap), chain = js.Any.fromFunction2(chain), fromIO = js.Any.fromFunction1(fromIO), fromTask = js.Any.fromFunction1(fromTask), map = js.Any.fromFunction2(map), of = js.Any.fromFunction1(of))
       __obj.asInstanceOf[MonadTask3C[M, E]]
     }
     
-    extension [Self <: MonadTask3C[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E](x: Self & (MonadTask3C[M, E])) {
+    extension [Self <: MonadTask3C[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](x: Self & (MonadTask3C[M, E])) {
       
-      inline def setFromTask(value: Task_[js.Any] => js.Any): Self = StObject.set(x, "fromTask", js.Any.fromFunction1(value))
+      inline def setURI(value: M): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
+      
+      inline def set_E(value: E): Self = StObject.set(x, "_E", value.asInstanceOf[js.Any])
     }
   }
   
-  trait MonadTask4[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */]
+  trait MonadTask4[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */]
     extends StObject
-       with MonadIO4[M] {
-    
-    def fromTask[S, R, E, A](fa: Task_[A]): js.Any
-  }
+       with MonadIO4[M]
+       with FromTask4[M]
   object MonadTask4 {
     
-    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](
       URI: M,
-      ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, (a : A): B> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ js.Any) => js.Any,
-      chain: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ js.Any, js.Function1[
-          js.Any, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, B> */ js.Any
-        ]) => js.Any,
-      fromIO: IO_[js.Any] => js.Any,
-      fromTask: Task_[js.Any] => js.Any,
-      map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ js.Any, js.Function1[js.Any, js.Any]) => js.Any,
-      of: js.Any => js.Any
+      ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, (a : A): B> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ Any) => Any,
+      chain: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ Any, js.Function1[
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, B> */ Any
+        ]) => Any,
+      fromIO: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any => Any,
+      fromTask: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any => Any,
+      map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ Any, js.Function1[Any, Any]) => Any,
+      of: Any => Any
     ): MonadTask4[M] = {
       val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], ap = js.Any.fromFunction2(ap), chain = js.Any.fromFunction2(chain), fromIO = js.Any.fromFunction1(fromIO), fromTask = js.Any.fromFunction1(fromTask), map = js.Any.fromFunction2(map), of = js.Any.fromFunction1(of))
       __obj.asInstanceOf[MonadTask4[M]]
-    }
-    
-    extension [Self <: MonadTask4[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](x: Self & MonadTask4[M]) {
-      
-      inline def setFromTask(value: Task_[js.Any] => js.Any): Self = StObject.set(x, "fromTask", js.Any.fromFunction1(value))
     }
   }
 }

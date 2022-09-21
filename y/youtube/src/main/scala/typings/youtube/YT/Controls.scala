@@ -1,32 +1,36 @@
 package typings.youtube.YT
 
-import typings.youtube.youtubeNumbers.`0`
-import typings.youtube.youtubeNumbers.`1`
-import typings.youtube.youtubeNumbers.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.youtube.youtubeNumbers.`0`
-  - typings.youtube.youtubeNumbers.`1`
-  - typings.youtube.youtubeNumbers.`2`
-*/
-trait Controls extends StObject
-object Controls {
+@js.native
+sealed trait Controls extends StObject
+@JSGlobal("YT.Controls")
+@js.native
+object Controls extends StObject {
   
   /**
     * Player controls do not display.
     */
-  inline def Hide: `0` = 0.asInstanceOf[`0`]
+  @js.native
+  sealed trait Hide
+    extends StObject
+       with Controls
   
   /**
     * Player controls display after a delay.
     */
-  inline def ShowDelayLoadPlayer: `2` = 2.asInstanceOf[`2`]
+  @js.native
+  sealed trait ShowDelayLoadPlayer
+    extends StObject
+       with Controls
   
   /**
     * Player controls display.
     */
-  inline def ShowLoadPlayer: `1` = 1.asInstanceOf[`1`]
+  @js.native
+  sealed trait ShowLoadPlayer
+    extends StObject
+       with Controls
 }

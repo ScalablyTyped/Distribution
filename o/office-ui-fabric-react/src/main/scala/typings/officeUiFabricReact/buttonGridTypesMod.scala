@@ -56,7 +56,7 @@ object buttonGridTypesMod {
     /**
       * Items to display in a ButtonGrid with the specified number of columns.
       */
-    var items: js.Array[js.Any]
+    var items: js.Array[Any]
     
     /**
       * Handler for when focus leaves the ButtonGrid.
@@ -67,7 +67,7 @@ object buttonGridTypesMod {
     /**
       * Custom renderer for the individual items.
       */
-    def onRenderItem(item: js.Any, index: Double): Element
+    def onRenderItem(item: Any, index: Double): Element
     
     /**
       * @deprecated Use `ariaPosInSet`
@@ -97,7 +97,7 @@ object buttonGridTypesMod {
   }
   object IButtonGridProps {
     
-    inline def apply(columnCount: Double, items: js.Array[js.Any], onRenderItem: (js.Any, Double) => Element): IButtonGridProps = {
+    inline def apply(columnCount: Double, items: js.Array[Any], onRenderItem: (Any, Double) => Element): IButtonGridProps = {
       val __obj = js.Dynamic.literal(columnCount = columnCount.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], onRenderItem = js.Any.fromFunction2(onRenderItem))
       __obj.asInstanceOf[IButtonGridProps]
     }
@@ -128,15 +128,15 @@ object buttonGridTypesMod {
       
       inline def setDoNotContainWithinFocusZoneUndefined: Self = StObject.set(x, "doNotContainWithinFocusZone", js.undefined)
       
-      inline def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      inline def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: Any*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setOnBlur(value: () => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction0(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      inline def setOnRenderItem(value: (js.Any, Double) => Element): Self = StObject.set(x, "onRenderItem", js.Any.fromFunction2(value))
+      inline def setOnRenderItem(value: (Any, Double) => Element): Self = StObject.set(x, "onRenderItem", js.Any.fromFunction2(value))
       
       inline def setPositionInSet(value: Double): Self = StObject.set(x, "positionInSet", value.asInstanceOf[js.Any])
       

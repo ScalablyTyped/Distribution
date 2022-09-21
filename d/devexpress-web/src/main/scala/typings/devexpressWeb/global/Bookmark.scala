@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Bookmark")
 @js.native
-class Bookmark ()
+open class Bookmark ()
   extends StObject
      with typings.devexpressWeb.Bookmark {
   

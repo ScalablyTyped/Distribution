@@ -8,6 +8,7 @@ trait MediaTrackConstraints
   extends StObject
      with MediaTrackConstraintSet {
   
+  /* standard dom */
   var advanced: js.UndefOr[js.Array[MediaTrackConstraintSet]] = js.undefined
 }
 object MediaTrackConstraints {
@@ -23,6 +24,6 @@ object MediaTrackConstraints {
     
     inline def setAdvancedUndefined: Self = StObject.set(x, "advanced", js.undefined)
     
-    inline def setAdvancedVarargs(value: MediaTrackConstraintSet*): Self = StObject.set(x, "advanced", js.Array(value :_*))
+    inline def setAdvancedVarargs(value: MediaTrackConstraintSet*): Self = StObject.set(x, "advanced", js.Array(value*))
   }
 }

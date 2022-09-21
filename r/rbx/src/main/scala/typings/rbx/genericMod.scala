@@ -54,7 +54,7 @@ object genericMod {
   
   @JSImport("rbx/base/generic", "Generic")
   @js.native
-  val Generic: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val Generic: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
   
   /* Inlined rbx.rbx/base/helpers.HelpersProps */
   trait GenericProps extends StObject {

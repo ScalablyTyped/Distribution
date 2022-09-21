@@ -23,7 +23,7 @@ trait MemberListResponse extends StObject {
   
   var pageInfo: js.UndefOr[PageInfo] = js.undefined
   
-  var tokenPagination: js.UndefOr[js.Any] = js.undefined
+  var tokenPagination: js.UndefOr[Any] = js.undefined
   
   /** The visitorId identifies the visitor. */
   var visitorId: js.UndefOr[String] = js.undefined
@@ -49,7 +49,7 @@ object MemberListResponse {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: Member*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Member*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
@@ -63,7 +63,7 @@ object MemberListResponse {
     
     inline def setPageInfoUndefined: Self = StObject.set(x, "pageInfo", js.undefined)
     
-    inline def setTokenPagination(value: js.Any): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
+    inline def setTokenPagination(value: Any): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
     
     inline def setTokenPaginationUndefined: Self = StObject.set(x, "tokenPagination", js.undefined)
     

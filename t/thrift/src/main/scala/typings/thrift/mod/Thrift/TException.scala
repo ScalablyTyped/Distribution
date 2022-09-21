@@ -7,16 +7,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("thrift", "Thrift.TException")
 @js.native
-class TException protected ()
+open class TException protected ()
   extends StObject
      with Error {
   def this(message: String) = this()
   
   def getMessage(): String = js.native
   
+  /* standard es5 */
   /* CompleteClass */
   var message: String = js.native
   
+  /* standard es5 */
   /* CompleteClass */
   var name: String = js.native
 }

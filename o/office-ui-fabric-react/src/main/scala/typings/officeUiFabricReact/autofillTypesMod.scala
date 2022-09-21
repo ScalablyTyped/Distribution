@@ -188,7 +188,7 @@ object autofillTypesMod {
       
       inline def setEnableAutofillOnKeyPressUndefined: Self = StObject.set(x, "enableAutofillOnKeyPress", js.undefined)
       
-      inline def setEnableAutofillOnKeyPressVarargs(value: KeyCodes*): Self = StObject.set(x, "enableAutofillOnKeyPress", js.Array(value :_*))
+      inline def setEnableAutofillOnKeyPressVarargs(value: KeyCodes*): Self = StObject.set(x, "enableAutofillOnKeyPress", js.Array(value*))
       
       inline def setOnInputChange(value: (/* value */ String, /* composing */ Boolean) => String): Self = StObject.set(x, "onInputChange", js.Any.fromFunction2(value))
       

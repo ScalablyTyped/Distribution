@@ -11,9 +11,9 @@ object mixinMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(srcs: js.Object*): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(srcs.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator]
+  inline def default(srcs: js.Object*): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(srcs.asInstanceOf[Seq[js.Any]]*).asInstanceOf[ClassDecorator]
   
-  inline def Mixin_(srcs: js.Object*): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Mixin")(srcs.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator]
+  inline def Mixin_(srcs: js.Object*): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Mixin")(srcs.asInstanceOf[Seq[js.Any]]*).asInstanceOf[ClassDecorator]
   
-  inline def mixin(srcs: js.Object*): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("mixin")(srcs.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator]
+  inline def mixin(srcs: js.Object*): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("mixin")(srcs.asInstanceOf[Seq[js.Any]]*).asInstanceOf[ClassDecorator]
 }

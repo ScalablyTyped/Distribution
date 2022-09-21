@@ -2,7 +2,6 @@ package typings.awsSdkClientS3Browser
 
 import typings.awsSdkClientS3Browser.typesTargetGrantMod.TargetGrant
 import typings.awsSdkClientS3Browser.typesTargetGrantMod.UnmarshalledTargetGrant
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ object typesLoggingEnabledMod {
     /**
       * _TargetGrants shape
       */
-    var TargetGrants: js.UndefOr[js.Array[TargetGrant] | Iterable[TargetGrant]] = js.undefined
+    var TargetGrants: js.UndefOr[js.Array[TargetGrant] | js.Iterable[TargetGrant]] = js.undefined
     
     /**
       * <p>This element lets you specify a prefix for the keys that the log files will be stored under.</p>
@@ -37,11 +36,11 @@ object typesLoggingEnabledMod {
       
       inline def setTargetBucket(value: String): Self = StObject.set(x, "TargetBucket", value.asInstanceOf[js.Any])
       
-      inline def setTargetGrants(value: js.Array[TargetGrant] | Iterable[TargetGrant]): Self = StObject.set(x, "TargetGrants", value.asInstanceOf[js.Any])
+      inline def setTargetGrants(value: js.Array[TargetGrant] | js.Iterable[TargetGrant]): Self = StObject.set(x, "TargetGrants", value.asInstanceOf[js.Any])
       
       inline def setTargetGrantsUndefined: Self = StObject.set(x, "TargetGrants", js.undefined)
       
-      inline def setTargetGrantsVarargs(value: TargetGrant*): Self = StObject.set(x, "TargetGrants", js.Array(value :_*))
+      inline def setTargetGrantsVarargs(value: TargetGrant*): Self = StObject.set(x, "TargetGrants", js.Array(value*))
       
       inline def setTargetPrefix(value: String): Self = StObject.set(x, "TargetPrefix", value.asInstanceOf[js.Any])
     }
@@ -70,7 +69,7 @@ object typesLoggingEnabledMod {
       
       inline def setTargetGrantsUndefined: Self = StObject.set(x, "TargetGrants", js.undefined)
       
-      inline def setTargetGrantsVarargs(value: UnmarshalledTargetGrant*): Self = StObject.set(x, "TargetGrants", js.Array(value :_*))
+      inline def setTargetGrantsVarargs(value: UnmarshalledTargetGrant*): Self = StObject.set(x, "TargetGrants", js.Array(value*))
     }
   }
 }

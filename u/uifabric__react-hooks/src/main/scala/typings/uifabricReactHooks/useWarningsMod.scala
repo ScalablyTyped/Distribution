@@ -76,7 +76,7 @@ object useWarningsMod {
       
       inline def setConditionallyRequiredUndefined: Self = StObject.set(x, "conditionallyRequired", js.undefined)
       
-      inline def setConditionallyRequiredVarargs(value: Condition*): Self = StObject.set(x, "conditionallyRequired", js.Array(value :_*))
+      inline def setConditionallyRequiredVarargs(value: Condition*): Self = StObject.set(x, "conditionallyRequired", js.Array(value*))
       
       inline def setControlledUsage(
         value: Pick[
@@ -101,7 +101,7 @@ object useWarningsMod {
       
       inline def setOtherUndefined: Self = StObject.set(x, "other", js.undefined)
       
-      inline def setOtherVarargs(value: String*): Self = StObject.set(x, "other", js.Array(value :_*))
+      inline def setOtherVarargs(value: String*): Self = StObject.set(x, "other", js.Array(value*))
       
       inline def setProps(value: P): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     }

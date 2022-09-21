@@ -33,7 +33,7 @@ object global_ {
     *
     * var builder = new GlideDBFunctionBuilder();
     */
-  class GlideDBFunctionBuilder ()
+  open class GlideDBFunctionBuilder ()
     extends StObject
        with typings.servicenowLondon.GlideDBFunctionBuilder {
     
@@ -233,7 +233,7 @@ object global_ {
   /**
     * Creates a GlideDate object with the current date time.
     */
-  class GlideDate ()
+  open class GlideDate ()
     extends StObject
        with typings.servicenowLondon.GlideDate {
     
@@ -406,7 +406,7 @@ object global_ {
     * Instantiates a new GlideDateTime object with the current date and time in Greenwich Mean Time
     * (GMT).
     */
-  class GlideDateTime ()
+  open class GlideDateTime ()
     extends StObject
        with typings.servicenowLondon.GlideDateTime {
     /**
@@ -453,7 +453,7 @@ object global_ {
   /**
     * Instantiates a GlideDuration object.
     */
-  class GlideDuration ()
+  open class GlideDuration ()
     extends StObject
        with typings.servicenowLondon.GlideDuration {
     /**
@@ -616,7 +616,7 @@ object global_ {
   /**
     * Instantiates a scoped GlideEmailOutbound object.
     */
-  class GlideEmailOutbound ()
+  open class GlideEmailOutbound ()
     extends StObject
        with typings.servicenowLondon.GlideEmailOutbound
   
@@ -659,7 +659,7 @@ object global_ {
   
   @JSGlobal("GlideLocale")
   @js.native
-  class GlideLocale ()
+  open class GlideLocale ()
     extends StObject
        with typings.servicenowLondon.GlideLocale {
     
@@ -710,7 +710,7 @@ object global_ {
   
   @JSGlobal("GlidePluginManager")
   @js.native
-  class GlidePluginManager ()
+  open class GlidePluginManager ()
     extends StObject
        with typings.servicenowLondon.GlidePluginManager {
     
@@ -746,7 +746,7 @@ object global_ {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("GlideRecord")
   @js.native
-  class GlideRecord protected ()
+  open class GlideRecord protected ()
     extends StObject
        with ScopedGlideRecord {
     /**
@@ -766,7 +766,7 @@ object global_ {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("GlideRecordSecure")
   @js.native
-  class GlideRecordSecure protected ()
+  open class GlideRecordSecure protected ()
     extends StObject
        with ScopedGlideRecord {
     /**
@@ -788,7 +788,7 @@ object global_ {
   /**
     * Instantiates an empty GlideSchedule object.
     */
-  class GlideSchedule ()
+  open class GlideSchedule ()
     extends StObject
        with typings.servicenowLondon.GlideSchedule {
     /**
@@ -810,7 +810,7 @@ object global_ {
   /**
     * Instantiates a GlideScopedEvaluator object.
     */
-  class GlideScopedEvaluator ()
+  open class GlideScopedEvaluator ()
     extends StObject
        with typings.servicenowLondon.GlideScopedEvaluator
   
@@ -901,7 +901,7 @@ object global_ {
   
   @JSGlobal("GlideSysAttachment")
   @js.native
-  class GlideSysAttachment ()
+  open class GlideSysAttachment ()
     extends StObject
        with typings.servicenowLondon.GlideSysAttachment {
     
@@ -912,7 +912,7 @@ object global_ {
     override def deleteAttachment(sysId: String): Unit = js.native
     
     /* CompleteClass */
-    override def getContent(record: ScopedGlideRecord): js.Any = js.native
+    override def getContent(record: ScopedGlideRecord): Any = js.native
     
     /* CompleteClass */
     override def getContentBase64(record: ScopedGlideRecord): String = js.native
@@ -921,7 +921,7 @@ object global_ {
     override def getContentStream(sysId: String): js.Object = js.native
     
     /* CompleteClass */
-    override def write(record: ScopedGlideRecord, fileName: String, contentType: String, data: js.Any): String = js.native
+    override def write(record: ScopedGlideRecord, fileName: String, contentType: String, data: Any): String = js.native
     
     /* CompleteClass */
     override def writeBase64(record: ScopedGlideRecord, fileName: String, contentType: String, base64Content: String): String = js.native
@@ -940,7 +940,7 @@ object global_ {
     * var gt = new GlideTime();
     * gs.info(gt.getDisplayValue());
     */
-  class GlideTime ()
+  open class GlideTime ()
     extends StObject
        with typings.servicenowLondon.GlideTime {
     /**
@@ -1124,7 +1124,7 @@ object global_ {
   
   @JSGlobal("XMLDocument2")
   @js.native
-  class XMLDocument2 ()
+  open class XMLDocument2 ()
     extends StObject
        with typings.servicenowLondon.XMLDocument2 {
     
@@ -1159,7 +1159,7 @@ object global_ {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("current")
   @js.native
-  class current protected ()
+  open class current protected ()
     extends StObject
        with ScopedGlideRecord {
     /**
@@ -1196,7 +1196,7 @@ object global_ {
     
     @JSGlobal("global.Workflow")
     @js.native
-    class Workflow ()
+    open class Workflow ()
       extends StObject
          with typings.servicenowLondon.global.Workflow
   }
@@ -1208,7 +1208,7 @@ object global_ {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("previous")
   @js.native
-  class previous protected ()
+  open class previous protected ()
     extends StObject
        with ScopedGlideRecord {
     /**
@@ -1244,7 +1244,7 @@ object global_ {
       *
       * var sm = new sn_ws.RESTMessageV2();
       */
-    class RESTMessageV2 ()
+    open class RESTMessageV2 ()
       extends StObject
          with typings.servicenowLondon.snWs.RESTMessageV2 {
       /**
@@ -1271,7 +1271,7 @@ object global_ {
       */
     @JSGlobal("sn_ws.RESTResponseV2")
     @js.native
-    class RESTResponseV2 ()
+    open class RESTResponseV2 ()
       extends StObject
          with typings.servicenowLondon.snWs.RESTResponseV2 {
       
@@ -1471,7 +1471,7 @@ object global_ {
     
     @JSGlobal("sn_ws.SOAPMessageV2")
     @js.native
-    class SOAPMessageV2 ()
+    open class SOAPMessageV2 ()
       extends StObject
          with typings.servicenowLondon.snWs.SOAPMessageV2 {
       def this(soapMessage: String, soapFunction: String) = this()

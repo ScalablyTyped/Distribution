@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_script
 
-Typings are for version 1.0.20201107
+Typings are for version 1.0.20220806
 
 ## Library description:
 TypeScript typings for Apps Script API v1
@@ -10,10 +10,10 @@ TypeScript typings for Apps Script API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.script |
 | Keywords           | - |
-| # releases         | 11 |
-| # dependents       | 1 |
-| # downloads        | 1092 |
-| # stars            | 0 |
+| # releases         | 73 |
+| # dependents       | 0.0 |
+| # downloads        | 1031.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

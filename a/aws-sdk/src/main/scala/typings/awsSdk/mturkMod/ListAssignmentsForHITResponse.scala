@@ -31,7 +31,7 @@ object ListAssignmentsForHITResponse {
     
     inline def setAssignmentsUndefined: Self = StObject.set(x, "Assignments", js.undefined)
     
-    inline def setAssignmentsVarargs(value: Assignment*): Self = StObject.set(x, "Assignments", js.Array(value :_*))
+    inline def setAssignmentsVarargs(value: Assignment*): Self = StObject.set(x, "Assignments", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.ColorFilter")
 @js.native
-class ColorFilter protected ()
+open class ColorFilter protected ()
   extends StObject
      with typings.easeljs.createjs.ColorFilter {
   def this(

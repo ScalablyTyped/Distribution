@@ -19,7 +19,7 @@ trait LayerListViewModel
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-LayerListViewModel.html#listItemCreatedFunction)
     */
-  def listItemCreatedFunction(event: js.Any): Unit = js.native
+  def listItemCreatedFunction(event: Any): scala.Unit = js.native
   /**
     * Specifies a function that accesses each [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html).
     *
@@ -33,7 +33,7 @@ trait LayerListViewModel
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-LayerListViewModel.html#moveListItem)
     */
-  def moveListItem(targetItem: ListItem, fromParentItem: ListItem, toParentItem: ListItem, newIndex: Double): Unit = js.native
+  def moveListItem(targetItem: ListItem, fromParentItem: ListItem, toParentItem: ListItem, newIndex: Double): scala.Unit = js.native
   
   @JSName("on")
   def on_triggeraction(name: `trigger-action`, eventHandler: LayerListViewModelTriggerActionEventHandler): IHandle = js.native
@@ -48,6 +48,8 @@ trait LayerListViewModel
   /**
     * The view model's state.
     *
+    * @default disabled
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-LayerListViewModel.html#state)
     */
   val state: loading | ready | disabled = js.native
@@ -57,8 +59,8 @@ trait LayerListViewModel
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-LayerListViewModel.html#triggerAction)
     */
-  def triggerAction(action: ActionButton, item: ListItem): Unit = js.native
-  def triggerAction(action: ActionToggle, item: ListItem): Unit = js.native
+  def triggerAction(action: ActionButton, item: ListItem): scala.Unit = js.native
+  def triggerAction(action: ActionToggle, item: ListItem): scala.Unit = js.native
   
   /**
     * The view from which the widget will operate.

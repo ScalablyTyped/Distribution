@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "browserslist" : "4.21.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "browserslist" : "4.21.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

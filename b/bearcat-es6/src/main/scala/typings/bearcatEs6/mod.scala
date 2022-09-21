@@ -386,7 +386,7 @@ object mod extends Shortcut {
       * @param   id
       * @api     public
       */
-    def require(id: String): js.Any = js.native
+    def require(id: String): Any = js.native
     
     var resourceLoader: ResourceLoader = js.native
     
@@ -893,9 +893,9 @@ object mod extends Shortcut {
       * @param   args
       * @api     public
       */
-    def call(beanName: String, context: js.Object, args: js.Any*): Unit = js.native
-    def call(beanName: String, context: Null, args: js.Any*): Unit = js.native
-    def call(beanName: String, context: Unit, args: js.Any*): Unit = js.native
+    def call(beanName: String, context: js.Object, args: Any*): Unit = js.native
+    def call(beanName: String, context: Null, args: Any*): Unit = js.native
+    def call(beanName: String, context: Unit, args: Any*): Unit = js.native
     
     var configLocations: js.Array[String] = js.native
     
@@ -1078,7 +1078,7 @@ object mod extends Shortcut {
       * @param   id
       * @api     public
       */
-    def require(id: String): js.Any = js.native
+    def require(id: String): Any = js.native
     
     /**
       * Bearcat start app.
@@ -1196,7 +1196,7 @@ object mod extends Shortcut {
   @js.native
   trait ConstructorFunction extends StObject {
     
-    def apply(params: js.Any*): js.Any = js.native
+    def apply(params: Any*): Any = js.native
   }
   
   trait MetaLoader extends StObject {
@@ -1261,7 +1261,7 @@ object mod extends Shortcut {
     
     var moduleMap: js.Object
     
-    def require(id: String): js.Any
+    def require(id: String): Any
   }
   object ModuleFactory {
     
@@ -1269,7 +1269,7 @@ object mod extends Shortcut {
       define: (String, js.Object) => Unit,
       factoryMap: js.Object,
       moduleMap: js.Object,
-      require: String => js.Any
+      require: String => Any
     ): ModuleFactory = {
       val __obj = js.Dynamic.literal(define = js.Any.fromFunction2(define), factoryMap = factoryMap.asInstanceOf[js.Any], moduleMap = moduleMap.asInstanceOf[js.Any], require = js.Any.fromFunction1(require))
       __obj.asInstanceOf[ModuleFactory]
@@ -1283,7 +1283,7 @@ object mod extends Shortcut {
       
       inline def setModuleMap(value: js.Object): Self = StObject.set(x, "moduleMap", value.asInstanceOf[js.Any])
       
-      inline def setRequire(value: String => js.Any): Self = StObject.set(x, "require", js.Any.fromFunction1(value))
+      inline def setRequire(value: String => Any): Self = StObject.set(x, "require", js.Any.fromFunction1(value))
     }
   }
   

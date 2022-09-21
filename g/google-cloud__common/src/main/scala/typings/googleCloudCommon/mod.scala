@@ -15,7 +15,7 @@ object mod {
   
   @JSImport("@google-cloud/common", "ApiError")
   @js.native
-  class ApiError protected ()
+  open class ApiError protected ()
     extends typings.googleCloudCommon.utilMod.ApiError {
     def this(errorBody: GoogleErrorBody) = this()
     def this(errorMessage: String) = this()
@@ -43,7 +43,7 @@ object mod {
   
   @JSImport("@google-cloud/common", "Operation")
   @js.native
-  class Operation[T] protected ()
+  open class Operation[T] protected ()
     extends typings.googleCloudCommon.operationMod.Operation[T] {
     /**
       * An Operation object allows you to interact with APIs that take longer to
@@ -60,7 +60,7 @@ object mod {
   
   @JSImport("@google-cloud/common", "Service")
   @js.native
-  class Service protected ()
+  open class Service protected ()
     extends typings.googleCloudCommon.serviceMod.Service {
     /**
       * Service is a base class, meant to be inherited from by a "service," like
@@ -94,7 +94,7 @@ object mod {
     */
   @JSImport("@google-cloud/common", "ServiceObject")
   @js.native
-  class ServiceObject[T] protected ()
+  open class ServiceObject[T] protected ()
     extends typings.googleCloudCommon.serviceObjectMod.ServiceObject[T] {
     def this(config: ServiceObjectConfig) = this()
   }
@@ -108,7 +108,7 @@ object mod {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("@google-cloud/common", "util.ApiError")
     @js.native
-    class ApiErrorCls protected ()
+    open class ApiErrorCls protected ()
       extends typings.googleCloudCommon.utilMod.ApiError {
       def this(errorMessage: String) = this()
     }
@@ -116,7 +116,7 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("@google-cloud/common", "util.PartialFailureError")
     @js.native
-    class PartialFailureError protected ()
+    open class PartialFailureError protected ()
       extends typings.googleCloudCommon.utilMod.PartialFailureError {
       def this(b: GoogleErrorBody) = this()
     }

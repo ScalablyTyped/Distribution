@@ -7,12 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetDeployablePatchSnapshotForInstanceRequest extends StObject {
   
   /**
-    * The ID of the instance for which the appropriate patch snapshot should be retrieved.
+    * Defines the basic information about a patch baseline override.
+    */
+  var BaselineOverride: js.UndefOr[typings.awsSdk.ssmMod.BaselineOverride] = js.undefined
+  
+  /**
+    * The ID of the managed node for which the appropriate patch snapshot should be retrieved.
     */
   var InstanceId: typings.awsSdk.ssmMod.InstanceId
   
   /**
-    * The user-defined snapshot ID.
+    * The snapshot ID provided by the user when running AWS-RunPatchBaseline.
     */
   var SnapshotId: typings.awsSdk.ssmMod.SnapshotId
 }
@@ -24,6 +29,10 @@ object GetDeployablePatchSnapshotForInstanceRequest {
   }
   
   extension [Self <: GetDeployablePatchSnapshotForInstanceRequest](x: Self) {
+    
+    inline def setBaselineOverride(value: BaselineOverride): Self = StObject.set(x, "BaselineOverride", value.asInstanceOf[js.Any])
+    
+    inline def setBaselineOverrideUndefined: Self = StObject.set(x, "BaselineOverride", js.undefined)
     
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

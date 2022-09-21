@@ -1,49 +1,43 @@
 package typings.reactSketchapp
 
+import typings.propTypes.mod.InferProps
 import typings.react.mod.Component
-import typings.reactSketchapp.propsMod.NumberProp
-import typings.reactSketchapp.propsMod.PathProps
+import typings.reactSketchapp.anon.ClipRule
+import typings.reactSketchapp.anon.Cy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ellipseMod {
   
-  @JSImport("react-sketchapp/lib/components/Svg/Ellipse", JSImport.Default)
+  @JSImport("react-sketchapp/lib/components/Svg/Ellipse", "Ellipse")
   @js.native
-  class default ()
-    extends Component[EllipseProps, js.Object, js.Any]
-  
-  type Ellipse = Component[EllipseProps, js.Object, js.Any]
-  
-  trait EllipseProps
-    extends StObject
-       with PathProps {
-    
-    var cx: NumberProp
-    
-    var cy: NumberProp
-    
-    var rx: NumberProp
-    
-    var ry: NumberProp
+  open class Ellipse protected ()
+    extends Component[Props, js.Object, Any] {
+    def this(props: Props) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: Props, context: Any) = this()
   }
-  object EllipseProps {
+  /* static members */
+  object Ellipse {
     
-    inline def apply(cx: NumberProp, cy: NumberProp, rx: NumberProp, ry: NumberProp): EllipseProps = {
-      val __obj = js.Dynamic.literal(cx = cx.asInstanceOf[js.Any], cy = cy.asInstanceOf[js.Any], rx = rx.asInstanceOf[js.Any], ry = ry.asInstanceOf[js.Any])
-      __obj.asInstanceOf[EllipseProps]
-    }
+    @JSImport("react-sketchapp/lib/components/Svg/Ellipse", "Ellipse")
+    @js.native
+    val ^ : js.Any = js.native
     
-    extension [Self <: EllipseProps](x: Self) {
-      
-      inline def setCx(value: NumberProp): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
-      
-      inline def setCy(value: NumberProp): Self = StObject.set(x, "cy", value.asInstanceOf[js.Any])
-      
-      inline def setRx(value: NumberProp): Self = StObject.set(x, "rx", value.asInstanceOf[js.Any])
-      
-      inline def setRy(value: NumberProp): Self = StObject.set(x, "ry", value.asInstanceOf[js.Any])
-    }
+    @JSImport("react-sketchapp/lib/components/Svg/Ellipse", "Ellipse.defaultProps")
+    @js.native
+    def defaultProps: Cy = js.native
+    inline def defaultProps_=(x: Cy): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-sketchapp/lib/components/Svg/Ellipse", "Ellipse.propTypes")
+    @js.native
+    def propTypes: ClipRule = js.native
+    inline def propTypes_=(x: ClipRule): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
+  
+  type Props = InferProps[ClipRule]
 }

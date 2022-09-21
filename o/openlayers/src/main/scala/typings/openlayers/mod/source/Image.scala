@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("openlayers", "source.Image")
 @js.native
-class Image protected () extends Source {
+open class Image protected () extends Source {
   /**
     * @classdesc
     * Abstract base class; normally only used for creating subclasses and not

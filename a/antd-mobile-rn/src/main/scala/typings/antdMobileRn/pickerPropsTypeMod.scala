@@ -29,7 +29,7 @@ object pickerPropsTypeMod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: PickerData*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: PickerData*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -51,9 +51,9 @@ object pickerPropsTypeMod {
     
     var format: js.UndefOr[js.Function1[/* values */ js.Array[String], String]] = js.undefined
     
-    var indicatorStyle: js.UndefOr[js.Any] = js.undefined
+    var indicatorStyle: js.UndefOr[Any] = js.undefined
     
-    var itemStyle: js.UndefOr[js.Any] = js.undefined
+    var itemStyle: js.UndefOr[Any] = js.undefined
     
     var onChange: js.UndefOr[js.Function1[/* date */ js.UndefOr[CascaderValue], Unit]] = js.undefined
     
@@ -81,7 +81,7 @@ object pickerPropsTypeMod {
       
       inline def setData(value: js.Array[js.Array[PickerData] | PickerData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: (js.Array[PickerData] | PickerData)*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: (js.Array[PickerData] | PickerData)*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setExtra(value: String): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
       
@@ -91,11 +91,11 @@ object pickerPropsTypeMod {
       
       inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      inline def setIndicatorStyle(value: js.Any): Self = StObject.set(x, "indicatorStyle", value.asInstanceOf[js.Any])
+      inline def setIndicatorStyle(value: Any): Self = StObject.set(x, "indicatorStyle", value.asInstanceOf[js.Any])
       
       inline def setIndicatorStyleUndefined: Self = StObject.set(x, "indicatorStyle", js.undefined)
       
-      inline def setItemStyle(value: js.Any): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
+      inline def setItemStyle(value: Any): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
       
       inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
       
@@ -111,7 +111,7 @@ object pickerPropsTypeMod {
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValueVarargs(value: (String | Double)*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: (String | Double)*): Self = StObject.set(x, "value", js.Array(value*))
     }
   }
 }

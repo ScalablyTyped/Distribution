@@ -14,7 +14,7 @@ object issueRefMod {
   
   @JSImport("typed-github-api/dist/issue-ref", "IssueRefClass")
   @js.native
-  class IssueRefClass protected ()
+  open class IssueRefClass protected ()
     extends GitHubRef
        with IssueRef {
     def this(repository: RepositoryRefClass, issueNumber: Double) = this()

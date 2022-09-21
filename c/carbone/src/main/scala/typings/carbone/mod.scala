@@ -2,9 +2,7 @@ package typings.carbone
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.carbone.anon.Rates
-import typings.node.Buffer
-import typings.node.NodeJS.ErrnoException
-import typings.std.RegExp
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,7 +65,11 @@ object mod {
     }
   }
   
-  type ConvertCallback = js.Function2[/* err */ ErrnoException | Null, /* result */ Buffer, Unit]
+  type ConvertCallback = js.Function2[
+    /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+    /* result */ Buffer, 
+    Unit
+  ]
   
   type CurrencyRates = StringDictionary[Double]
   
@@ -97,7 +99,7 @@ object mod {
   @js.native
   trait Formatter extends StObject {
     
-    def apply(data: js.Any, params: js.Any*): Unit = js.native
+    def apply(data: Any, params: Any*): Unit = js.native
   }
   
   trait FormatterContext extends StObject {
@@ -139,17 +141,25 @@ object mod {
   
   trait Options extends StObject {
     
+    var attempts: js.UndefOr[Double] = js.undefined
+    
     var currencyRates: js.UndefOr[CurrencyRates] = js.undefined
     
     var currencySource: js.UndefOr[String] = js.undefined
     
     var currencyTarget: js.UndefOr[String] = js.undefined
     
+    var factories: js.UndefOr[Double] = js.undefined
+    
     var lang: js.UndefOr[String] = js.undefined
+    
+    var startFactory: js.UndefOr[Boolean] = js.undefined
     
     var tempPath: js.UndefOr[String] = js.undefined
     
     var templatePath: js.UndefOr[String] = js.undefined
+    
+    var timezone: js.UndefOr[String] = js.undefined
     
     var translations: js.UndefOr[Translations] = js.undefined
   }
@@ -161,6 +171,10 @@ object mod {
     }
     
     extension [Self <: Options](x: Self) {
+      
+      inline def setAttempts(value: Double): Self = StObject.set(x, "attempts", value.asInstanceOf[js.Any])
+      
+      inline def setAttemptsUndefined: Self = StObject.set(x, "attempts", js.undefined)
       
       inline def setCurrencyRates(value: CurrencyRates): Self = StObject.set(x, "currencyRates", value.asInstanceOf[js.Any])
       
@@ -174,9 +188,17 @@ object mod {
       
       inline def setCurrencyTargetUndefined: Self = StObject.set(x, "currencyTarget", js.undefined)
       
+      inline def setFactories(value: Double): Self = StObject.set(x, "factories", value.asInstanceOf[js.Any])
+      
+      inline def setFactoriesUndefined: Self = StObject.set(x, "factories", js.undefined)
+      
       inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       
       inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+      
+      inline def setStartFactory(value: Boolean): Self = StObject.set(x, "startFactory", value.asInstanceOf[js.Any])
+      
+      inline def setStartFactoryUndefined: Self = StObject.set(x, "startFactory", js.undefined)
       
       inline def setTempPath(value: String): Self = StObject.set(x, "tempPath", value.asInstanceOf[js.Any])
       
@@ -186,6 +208,10 @@ object mod {
       
       inline def setTemplatePathUndefined: Self = StObject.set(x, "templatePath", js.undefined)
       
+      inline def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
+      
+      inline def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
+      
       inline def setTranslations(value: Translations): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
       
       inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
@@ -193,7 +219,7 @@ object mod {
   }
   
   type RenderCallback = js.Function3[
-    /* err */ ErrnoException | Null, 
+    /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
     /* result */ Buffer | String, 
     /* reportName */ String, 
     Unit
@@ -214,6 +240,8 @@ object mod {
     var `enum`: js.UndefOr[Enums] = js.undefined
     
     var lang: js.UndefOr[String] = js.undefined
+    
+    var timezone: js.UndefOr[String] = js.undefined
     
     var translations: js.UndefOr[Translations] = js.undefined
     
@@ -256,6 +284,10 @@ object mod {
       
       inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
       
+      inline def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
+      
+      inline def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
+      
       inline def setTranslations(value: Translations): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
       
       inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
@@ -266,7 +298,11 @@ object mod {
     }
   }
   
-  type RenderXMLCallback = js.Function2[/* err */ ErrnoException | Null, /* xmlResult */ String, Unit]
+  type RenderXMLCallback = js.Function2[
+    /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+    /* xmlResult */ String, 
+    Unit
+  ]
   
   trait RenderXMLOptions extends StObject {
     
@@ -279,6 +315,8 @@ object mod {
     var formatters: js.UndefOr[Formatters] = js.undefined
     
     var lang: js.UndefOr[String] = js.undefined
+    
+    var timezone: js.UndefOr[String] = js.undefined
     
     var translations: js.UndefOr[Translations] = js.undefined
   }
@@ -299,7 +337,7 @@ object mod {
       
       inline def setExistingVariablesUndefined: Self = StObject.set(x, "existingVariables", js.undefined)
       
-      inline def setExistingVariablesVarargs(value: Variable*): Self = StObject.set(x, "existingVariables", js.Array(value :_*))
+      inline def setExistingVariablesVarargs(value: Variable*): Self = StObject.set(x, "existingVariables", js.Array(value*))
       
       inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
       
@@ -312,6 +350,10 @@ object mod {
       inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       
       inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+      
+      inline def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
+      
+      inline def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
       
       inline def setTranslations(value: Translations): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
       
@@ -327,11 +369,11 @@ object mod {
     
     var name: String
     
-    var regex: RegExp
+    var regex: js.RegExp
   }
   object Variable {
     
-    inline def apply(code: String, name: String, regex: RegExp): Variable = {
+    inline def apply(code: String, name: String, regex: js.RegExp): Variable = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], regex = regex.asInstanceOf[js.Any])
       __obj.asInstanceOf[Variable]
     }
@@ -342,9 +384,12 @@ object mod {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+      inline def setRegex(value: js.RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
     }
   }
   
-  type VoidCallback = js.Function1[/* err */ ErrnoException | Null, Unit]
+  type VoidCallback = js.Function1[
+    /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+    Unit
+  ]
 }

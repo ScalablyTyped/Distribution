@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait HtmlDlgSafeHelper extends StObject {
   
-  val BlockFormats: js.Any = js.native
+  val BlockFormats: Any = js.native
   
   /* private */ @JSName("MSHTML.HtmlDlgSafeHelper_typekey")
   var MSHTMLDotHtmlDlgSafeHelper_typekey: HtmlDlgSafeHelper = js.native
   
-  def choosecolordlg(): js.Any = js.native
-  def choosecolordlg(initColor: js.Any): js.Any = js.native
+  def choosecolordlg(): Any = js.native
+  def choosecolordlg(initColor: Any): Any = js.native
   
-  val fonts: js.Any = js.native
+  val fonts: Any = js.native
   
-  def getCharset(fontName: String): js.Any = js.native
+  def getCharset(fontName: String): Any = js.native
 }

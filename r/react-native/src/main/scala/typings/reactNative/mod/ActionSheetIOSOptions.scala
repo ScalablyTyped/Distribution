@@ -1,5 +1,7 @@
 package typings.reactNative.mod
 
+import typings.reactNative.reactNativeStrings.dark
+import typings.reactNative.reactNativeStrings.light
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +12,11 @@ trait ActionSheetIOSOptions extends StObject {
   
   var cancelButtonIndex: js.UndefOr[Double] = js.undefined
   
-  var destructiveButtonIndex: js.UndefOr[Double] = js.undefined
+  var cancelButtonTintColor: js.UndefOr[ColorValue | ProcessedColorValue] = js.undefined
+  
+  var destructiveButtonIndex: js.UndefOr[Double | js.Array[Double] | Null] = js.undefined
+  
+  var disabledButtonIndices: js.UndefOr[js.Array[Double]] = js.undefined
   
   var message: js.UndefOr[String] = js.undefined
   
@@ -19,6 +25,8 @@ trait ActionSheetIOSOptions extends StObject {
   var tintColor: js.UndefOr[ColorValue | ProcessedColorValue] = js.undefined
   
   var title: js.UndefOr[String] = js.undefined
+  
+  var userInterfaceStyle: js.UndefOr[light | dark] = js.undefined
 }
 object ActionSheetIOSOptions {
   
@@ -37,9 +45,23 @@ object ActionSheetIOSOptions {
     
     inline def setCancelButtonIndexUndefined: Self = StObject.set(x, "cancelButtonIndex", js.undefined)
     
-    inline def setDestructiveButtonIndex(value: Double): Self = StObject.set(x, "destructiveButtonIndex", value.asInstanceOf[js.Any])
+    inline def setCancelButtonTintColor(value: ColorValue | ProcessedColorValue): Self = StObject.set(x, "cancelButtonTintColor", value.asInstanceOf[js.Any])
+    
+    inline def setCancelButtonTintColorUndefined: Self = StObject.set(x, "cancelButtonTintColor", js.undefined)
+    
+    inline def setDestructiveButtonIndex(value: Double | js.Array[Double]): Self = StObject.set(x, "destructiveButtonIndex", value.asInstanceOf[js.Any])
+    
+    inline def setDestructiveButtonIndexNull: Self = StObject.set(x, "destructiveButtonIndex", null)
     
     inline def setDestructiveButtonIndexUndefined: Self = StObject.set(x, "destructiveButtonIndex", js.undefined)
+    
+    inline def setDestructiveButtonIndexVarargs(value: Double*): Self = StObject.set(x, "destructiveButtonIndex", js.Array(value*))
+    
+    inline def setDisabledButtonIndices(value: js.Array[Double]): Self = StObject.set(x, "disabledButtonIndices", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledButtonIndicesUndefined: Self = StObject.set(x, "disabledButtonIndices", js.undefined)
+    
+    inline def setDisabledButtonIndicesVarargs(value: Double*): Self = StObject.set(x, "disabledButtonIndices", js.Array(value*))
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
@@ -47,7 +69,7 @@ object ActionSheetIOSOptions {
     
     inline def setOptions(value: js.Array[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    inline def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value*))
     
     inline def setTintColor(value: ColorValue | ProcessedColorValue): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
     
@@ -56,5 +78,9 @@ object ActionSheetIOSOptions {
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setUserInterfaceStyle(value: light | dark): Self = StObject.set(x, "userInterfaceStyle", value.asInstanceOf[js.Any])
+    
+    inline def setUserInterfaceStyleUndefined: Self = StObject.set(x, "userInterfaceStyle", js.undefined)
   }
 }

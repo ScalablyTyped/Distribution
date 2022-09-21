@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type GraphObjectId = java.lang.String
+type GraphObjectId = String
 
-type NodeType = java.lang.String
+type NodeType = String
 
-type ParamType = java.lang.String
+type ParamType = String

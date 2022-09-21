@@ -9,7 +9,7 @@ trait FlowDefinition extends StObject {
   /**
     *  Specifies when the flow was created. 
     */
-  var createdAt: js.UndefOr[Date] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     *  The ARN of the user who created the flow. 
@@ -20,6 +20,11 @@ trait FlowDefinition extends StObject {
     *  A user-entered description of the flow. 
     */
   var description: js.UndefOr[FlowDescription] = js.undefined
+  
+  /**
+    * The label of the destination connector in the flow.
+    */
+  var destinationConnectorLabel: js.UndefOr[ConnectorLabel] = js.undefined
   
   /**
     *  Specifies the destination connector type, such as Salesforce, Amazon S3, Amplitude, and so on. 
@@ -49,12 +54,17 @@ trait FlowDefinition extends StObject {
   /**
     *  Specifies when the flow was last updated. 
     */
-  var lastUpdatedAt: js.UndefOr[Date] = js.undefined
+  var lastUpdatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     *  Specifies the account user name that most recently updated the flow. 
     */
   var lastUpdatedBy: js.UndefOr[UpdatedBy] = js.undefined
+  
+  /**
+    * The label of the source connector in the flow.
+    */
+  var sourceConnectorLabel: js.UndefOr[ConnectorLabel] = js.undefined
   
   /**
     *  Specifies the source connector type, such as Salesforce, Amazon S3, Amplitude, and so on. 
@@ -80,7 +90,7 @@ object FlowDefinition {
   
   extension [Self <: FlowDefinition](x: Self) {
     
-    inline def setCreatedAt(value: Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
@@ -91,6 +101,10 @@ object FlowDefinition {
     inline def setDescription(value: FlowDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setDestinationConnectorLabel(value: ConnectorLabel): Self = StObject.set(x, "destinationConnectorLabel", value.asInstanceOf[js.Any])
+    
+    inline def setDestinationConnectorLabelUndefined: Self = StObject.set(x, "destinationConnectorLabel", js.undefined)
     
     inline def setDestinationConnectorType(value: ConnectorType): Self = StObject.set(x, "destinationConnectorType", value.asInstanceOf[js.Any])
     
@@ -112,13 +126,17 @@ object FlowDefinition {
     
     inline def setLastRunExecutionDetailsUndefined: Self = StObject.set(x, "lastRunExecutionDetails", js.undefined)
     
-    inline def setLastUpdatedAt(value: Date): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedAt(value: js.Date): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedAtUndefined: Self = StObject.set(x, "lastUpdatedAt", js.undefined)
     
     inline def setLastUpdatedBy(value: UpdatedBy): Self = StObject.set(x, "lastUpdatedBy", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedByUndefined: Self = StObject.set(x, "lastUpdatedBy", js.undefined)
+    
+    inline def setSourceConnectorLabel(value: ConnectorLabel): Self = StObject.set(x, "sourceConnectorLabel", value.asInstanceOf[js.Any])
+    
+    inline def setSourceConnectorLabelUndefined: Self = StObject.set(x, "sourceConnectorLabel", js.undefined)
     
     inline def setSourceConnectorType(value: ConnectorType): Self = StObject.set(x, "sourceConnectorType", value.asInstanceOf[js.Any])
     

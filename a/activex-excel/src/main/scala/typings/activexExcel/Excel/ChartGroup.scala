@@ -46,7 +46,7 @@ trait ChartGroup extends StObject {
   
   var Overlap: Double = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   val RadarAxisLabels: TickLabels = js.native
   

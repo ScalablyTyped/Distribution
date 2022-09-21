@@ -8,5 +8,5 @@ object listVaultsInputMod {
   
   @JSImport("@aws-sdk/client-glacier-node/model/ListVaultsInput", "ListVaultsInput")
   @js.native
-  val ListVaultsInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ListVaultsInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

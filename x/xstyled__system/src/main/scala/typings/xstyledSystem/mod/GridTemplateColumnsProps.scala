@@ -1,16 +1,13 @@
 package typings.xstyledSystem.mod
 
+import typings.csstype.mod.Property.GridTemplateColumns
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait GridTemplateColumnsProps[TLength] extends StObject {
   
-  val gridTemplateColumns: js.UndefOr[
-    ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateColumns<TLength> */ js.Any
-    ]
-  ] = js.undefined
+  val gridTemplateColumns: js.UndefOr[ResponsiveValue[GridTemplateColumns[TLength]]] = js.undefined
 }
 object GridTemplateColumnsProps {
   
@@ -21,16 +18,10 @@ object GridTemplateColumnsProps {
   
   extension [Self <: GridTemplateColumnsProps[?], TLength](x: Self & GridTemplateColumnsProps[TLength]) {
     
-    inline def setGridTemplateColumns(
-      value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateColumns<TLength> */ js.Any
-        ]
-    ): Self = StObject.set(x, "gridTemplateColumns", value.asInstanceOf[js.Any])
+    inline def setGridTemplateColumns(value: ResponsiveValue[GridTemplateColumns[TLength]]): Self = StObject.set(x, "gridTemplateColumns", value.asInstanceOf[js.Any])
     
     inline def setGridTemplateColumnsUndefined: Self = StObject.set(x, "gridTemplateColumns", js.undefined)
     
-    inline def setGridTemplateColumnsVarargs(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateColumns<TLength> */ js.Any)*
-    ): Self = StObject.set(x, "gridTemplateColumns", js.Array(value :_*))
+    inline def setGridTemplateColumnsVarargs(value: GridTemplateColumns[TLength]*): Self = StObject.set(x, "gridTemplateColumns", js.Array(value*))
   }
 }

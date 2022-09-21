@@ -1,40 +1,44 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.antd.anon.Affix
+import org.scalablytyped.runtime.Shortcut
+import typings.antd.anchorAnchorMod.Anchor
+import typings.antd.anchorAnchorMod.AnchorProps
+import typings.antd.anchorLinkMod.default
 import typings.antd.anon.TypeofAnchorLink
-import typings.antd.configProviderContextMod.ConfigConsumerProps
-import typings.react.mod.Context
+import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.RefAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anchorMod {
   
-  @JSImport("antd/lib/anchor", JSImport.Default)
-  @js.native
-  class default ()
-    extends typings.antd.anchorAnchorMod.default
-  /* static members */
-  object default {
+  object default extends Shortcut {
     
     @JSImport("antd/lib/anchor", JSImport.Default)
     @js.native
-    val ^ : js.Any = js.native
+    val ^ : AnchorInterface = js.native
     
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("antd/lib/anchor", "default.Link")
     @js.native
-    def Link: Instantiable0[typings.antd.anchorLinkMod.default] & TypeofAnchorLink = js.native
-    inline def Link_=(x: Instantiable0[typings.antd.anchorLinkMod.default] & TypeofAnchorLink): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Link")(x.asInstanceOf[js.Any])
+    open class Link ()
+      extends typings.antd.anchorLinkMod.default
     
-    @JSImport("antd/lib/anchor", "default.contextType")
-    @js.native
-    def contextType: Context[ConfigConsumerProps] = js.native
-    inline def contextType_=(x: Context[ConfigConsumerProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+    type _To = AnchorInterface
     
-    @JSImport("antd/lib/anchor", "default.defaultProps")
-    @js.native
-    def defaultProps: Affix = js.native
-    inline def defaultProps_=(x: Affix): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    /* This means you don't have to write `^`, but can instead just say `default.foo` */
+    override def _to: AnchorInterface = ^
   }
+  
+  @js.native
+  trait AnchorInterface
+    extends StObject
+       with ForwardRefExoticComponent[AnchorProps & RefAttributes[Anchor]] {
+    
+    var Link: Instantiable0[default] & TypeofAnchorLink = js.native
+  }
+  
+  type InternalAnchorType = ForwardRefExoticComponent[AnchorProps & RefAttributes[Anchor]]
 }

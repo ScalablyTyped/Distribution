@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CatalogImage")
 @js.native
-class CatalogImage () extends StObject {
+open class CatalogImage () extends StObject {
   
   /**
     * A caption that describes what is shown in the image. Displayed in the Square Online Store.

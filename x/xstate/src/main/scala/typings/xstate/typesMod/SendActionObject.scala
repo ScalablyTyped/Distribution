@@ -1,6 +1,5 @@
 package typings.xstate.typesMod
 
-import typings.xstate.actorMod.Actor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ trait SendActionObject[TContext, TEvent /* <: EventObject */, TSentEvent /* <: E
   var event_SendActionObject: TSentEvent
   
   @JSName("to")
-  var to_SendActionObject: js.UndefOr[String | Double | (Actor[js.Any, AnyEventObject])] = js.undefined
+  var to_SendActionObject: js.UndefOr[String | Double | (ActorRef[Any, Any])] = js.undefined
 }
 object SendActionObject {
   
@@ -41,7 +40,7 @@ object SendActionObject {
     
     inline def setEvent(value: TSentEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    inline def setTo(value: String | Double | (Actor[js.Any, AnyEventObject])): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: String | Double | (ActorRef[Any, Any])): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
     inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     

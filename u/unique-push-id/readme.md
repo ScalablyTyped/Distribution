@@ -11,9 +11,9 @@ Typings are for version 1.0
 | Full name          | unique-push-id |
 | Keywords           | push, id, guid, uuid, chronological, sortable |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 1921 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 57.0 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/limit-zero/unique-push-id#readme)

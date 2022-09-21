@@ -18,12 +18,7 @@ trait XErrorQuery
 }
 object XErrorQuery {
   
-  inline def apply(
-    acquire: () => Unit,
-    hasError: () => Boolean,
-    queryInterface: `type` => js.Any,
-    release: () => Unit
-  ): XErrorQuery = {
+  inline def apply(acquire: () => Unit, hasError: () => Boolean, queryInterface: `type` => Any, release: () => Unit): XErrorQuery = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), hasError = js.Any.fromFunction0(hasError), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XErrorQuery]
   }

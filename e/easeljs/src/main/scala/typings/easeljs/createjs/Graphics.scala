@@ -134,7 +134,7 @@ trait Graphics extends StObject {
     */
   def getInstructions(): js.Array[js.Object] = js.native
   
-  def inject(callback: js.Function1[/* data */ js.Any, js.Any], data: js.Any): Graphics = js.native
+  def inject(callback: js.Function1[/* data */ Any, Any], data: Any): Graphics = js.native
   
   var instructions: js.Array[js.Object] = js.native
   

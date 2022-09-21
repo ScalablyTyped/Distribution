@@ -10,10 +10,10 @@ An interceptor which makes it easier to work with tokens in [axios](https://gith
 | ------------------ | :-------------: |
 | Full name          | axios-token-interceptor |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 5 |
-| # downloads        | 175422 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 47679.666666666664 |
+| # stars            | 35.0 |
 
 ## Links
 - [Homepage](https://github.com/sandrinodimattia/axios-token-interceptor#readme)

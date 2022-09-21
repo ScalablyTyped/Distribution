@@ -40,12 +40,12 @@ object AdvertiseReqObj {
     
     inline def setManufacturerDataUndefined: Self = StObject.set(x, "manufacturerData", js.undefined)
     
-    inline def setManufacturerDataVarargs(value: ManufacturerData*): Self = StObject.set(x, "manufacturerData", js.Array(value :_*))
+    inline def setManufacturerDataVarargs(value: ManufacturerData*): Self = StObject.set(x, "manufacturerData", js.Array(value*))
     
     inline def setServiceUuids(value: js.Array[String]): Self = StObject.set(x, "serviceUuids", value.asInstanceOf[js.Any])
     
     inline def setServiceUuidsUndefined: Self = StObject.set(x, "serviceUuids", js.undefined)
     
-    inline def setServiceUuidsVarargs(value: String*): Self = StObject.set(x, "serviceUuids", js.Array(value :_*))
+    inline def setServiceUuidsVarargs(value: String*): Self = StObject.set(x, "serviceUuids", js.Array(value*))
   }
 }

@@ -8,5 +8,5 @@ object applicationSettingsResourceMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/_ApplicationSettingsResource", "_ApplicationSettingsResource")
   @js.native
-  val ApplicationSettingsResource: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ApplicationSettingsResource: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

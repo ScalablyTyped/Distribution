@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Initializes a new instance of the DiagramItem class.
   */
-class DiagramItem ()
+open class DiagramItem ()
   extends StObject
      with typings.devexpressWeb.DiagramItem {
   
@@ -26,5 +26,5 @@ class DiagramItem ()
     * Gets the item's key from a data source.
     */
   /* CompleteClass */
-  var key: js.Any = js.native
+  var key: Any = js.native
 }

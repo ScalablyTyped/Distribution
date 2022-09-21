@@ -41,6 +41,6 @@ object BaseFunction {
     
     inline def setParams(value: js.Array[Pattern]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    inline def setParamsVarargs(value: Pattern*): Self = StObject.set(x, "params", js.Array(value :_*))
+    inline def setParamsVarargs(value: Pattern*): Self = StObject.set(x, "params", js.Array(value*))
   }
 }

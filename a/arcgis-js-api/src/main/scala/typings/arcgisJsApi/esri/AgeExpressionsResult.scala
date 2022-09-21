@@ -15,17 +15,17 @@ trait AgeExpressionsResult
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-support-ageUtils.html#AgeExpressionsResult)
     */
-  var histogramQuery: js.Any
+  var histogramQuery: Any
   
   /**
     * A SQL expression and where clause that matches the generated `valueExpression` used to query statistics from the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-support-ageUtils.html#AgeExpressionsResult)
     */
-  var statisticsQuery: js.Any
+  var statisticsQuery: Any
   
   /**
-    * The [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression used to calculate the age of a feature based on the difference between the end time and the start time.
+    * An [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression following the specification defined by the [Arcade Visualization Profile](https://developers.arcgis.com/javascript/latest/arcade/#visualization).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-support-ageUtils.html#AgeExpressionsResult)
     */
@@ -36,9 +36,9 @@ object AgeExpressionsResult {
   inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
-    histogramQuery: js.Any,
+    histogramQuery: Any,
     propertyIsEnumerable: PropertyKey => Boolean,
-    statisticsQuery: js.Any,
+    statisticsQuery: Any,
     valueExpression: String
   ): AgeExpressionsResult = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), histogramQuery = histogramQuery.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), statisticsQuery = statisticsQuery.asInstanceOf[js.Any], valueExpression = valueExpression.asInstanceOf[js.Any])
@@ -47,9 +47,9 @@ object AgeExpressionsResult {
   
   extension [Self <: AgeExpressionsResult](x: Self) {
     
-    inline def setHistogramQuery(value: js.Any): Self = StObject.set(x, "histogramQuery", value.asInstanceOf[js.Any])
+    inline def setHistogramQuery(value: Any): Self = StObject.set(x, "histogramQuery", value.asInstanceOf[js.Any])
     
-    inline def setStatisticsQuery(value: js.Any): Self = StObject.set(x, "statisticsQuery", value.asInstanceOf[js.Any])
+    inline def setStatisticsQuery(value: Any): Self = StObject.set(x, "statisticsQuery", value.asInstanceOf[js.Any])
     
     inline def setValueExpression(value: String): Self = StObject.set(x, "valueExpression", value.asInstanceOf[js.Any])
   }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Sparkline")
 @js.native
-/* private */ class Sparkline ()
+/* private */ open class Sparkline ()
   extends StObject
      with typings.activexExcel.Excel.Sparkline {
   
@@ -39,7 +39,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def ModifySourceData(Formula: String): Unit = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var SourceData: String = js.native

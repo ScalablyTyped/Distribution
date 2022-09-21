@@ -9,7 +9,7 @@ object boxMod {
   
   @JSImport("ol/render/Box", JSImport.Default)
   @js.native
-  class default protected () extends RenderBox {
+  open class default protected () extends RenderBox {
     def this(className: String) = this()
   }
   

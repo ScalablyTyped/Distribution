@@ -33,18 +33,18 @@ object anon {
   
   trait Send extends StObject {
     
-    def send(rendererOpts: js.Any, transportOptions: js.Any): js.Any
+    def send(rendererOpts: Any, transportOptions: Any): Any
   }
   object Send {
     
-    inline def apply(send: (js.Any, js.Any) => js.Any): Send = {
+    inline def apply(send: (Any, Any) => Any): Send = {
       val __obj = js.Dynamic.literal(send = js.Any.fromFunction2(send))
       __obj.asInstanceOf[Send]
     }
     
     extension [Self <: Send](x: Self) {
       
-      inline def setSend(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
+      inline def setSend(value: (Any, Any) => Any): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
     }
   }
 }

@@ -95,7 +95,7 @@ object ScheduledInstancesNetworkInterface {
     
     inline def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
     
-    inline def setGroupsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "Groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "Groups", js.Array(value*))
     
     inline def setIpv6AddressCount(value: Integer): Self = StObject.set(x, "Ipv6AddressCount", value.asInstanceOf[js.Any])
     
@@ -105,7 +105,7 @@ object ScheduledInstancesNetworkInterface {
     
     inline def setIpv6AddressesUndefined: Self = StObject.set(x, "Ipv6Addresses", js.undefined)
     
-    inline def setIpv6AddressesVarargs(value: ScheduledInstancesIpv6Address*): Self = StObject.set(x, "Ipv6Addresses", js.Array(value :_*))
+    inline def setIpv6AddressesVarargs(value: ScheduledInstancesIpv6Address*): Self = StObject.set(x, "Ipv6Addresses", js.Array(value*))
     
     inline def setNetworkInterfaceId(value: NetworkInterfaceId): Self = StObject.set(x, "NetworkInterfaceId", value.asInstanceOf[js.Any])
     
@@ -117,7 +117,7 @@ object ScheduledInstancesNetworkInterface {
     
     inline def setPrivateIpAddressConfigsUndefined: Self = StObject.set(x, "PrivateIpAddressConfigs", js.undefined)
     
-    inline def setPrivateIpAddressConfigsVarargs(value: ScheduledInstancesPrivateIpAddressConfig*): Self = StObject.set(x, "PrivateIpAddressConfigs", js.Array(value :_*))
+    inline def setPrivateIpAddressConfigsVarargs(value: ScheduledInstancesPrivateIpAddressConfig*): Self = StObject.set(x, "PrivateIpAddressConfigs", js.Array(value*))
     
     inline def setPrivateIpAddressUndefined: Self = StObject.set(x, "PrivateIpAddress", js.undefined)
     

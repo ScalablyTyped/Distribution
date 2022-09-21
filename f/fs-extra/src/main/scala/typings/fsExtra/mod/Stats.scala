@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("fs-extra", "Stats")
 @js.native
-class Stats ()
+open class Stats ()
   extends typings.node.fsMod.Stats

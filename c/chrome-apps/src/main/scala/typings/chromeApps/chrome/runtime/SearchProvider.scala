@@ -50,7 +50,7 @@ object SearchProvider {
     
     inline def setAlternate_urlsUndefined: Self = StObject.set(x, "alternate_urls", js.undefined)
     
-    inline def setAlternate_urlsVarargs(value: String*): Self = StObject.set(x, "alternate_urls", js.Array(value :_*))
+    inline def setAlternate_urlsVarargs(value: String*): Self = StObject.set(x, "alternate_urls", js.Array(value*))
     
     inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     

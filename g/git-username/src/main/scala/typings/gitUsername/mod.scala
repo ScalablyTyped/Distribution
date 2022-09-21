@@ -1,6 +1,5 @@
 package typings.gitUsername
 
-import typings.gitUsername.gitUsernameBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,28 +7,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   inline def apply(): String | Null = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String | Null]
-  inline def apply(options: String): String | Null = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[String | Null]
-  inline def apply(options: BaseOptions): String | Null = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[String | Null]
-  inline def apply(options: StrictOptions): String = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(cwd: String): String | Null = ^.asInstanceOf[js.Dynamic].apply(cwd.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def apply(cwd: String, options: OptionsWithoutCwd): String | Null = (^.asInstanceOf[js.Dynamic].apply(cwd.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def apply(cwd: Unit, options: OptionsWithoutCwd): String | Null = (^.asInstanceOf[js.Dynamic].apply(cwd.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  inline def apply(options: Options): String | Null = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   @JSImport("git-username", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  trait BaseOptions extends StObject {
+  trait Options extends StObject {
     
     var cwd: js.UndefOr[String] = js.undefined
     
     var strict: js.UndefOr[Boolean] = js.undefined
   }
-  object BaseOptions {
+  object Options {
     
-    inline def apply(): BaseOptions = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[BaseOptions]
+      __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: BaseOptions](x: Self) {
+    extension [Self <: Options](x: Self) {
       
       inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
@@ -41,23 +41,23 @@ object mod {
     }
   }
   
-  trait StrictOptions
-    extends StObject
-       with BaseOptions {
+  /* Inlined std.Omit<git-username.git-username.Options, 'cwd'> */
+  trait OptionsWithoutCwd extends StObject {
     
-    @JSName("strict")
-    var strict_StrictOptions: `true`
+    var strict: js.UndefOr[Boolean] = js.undefined
   }
-  object StrictOptions {
+  object OptionsWithoutCwd {
     
-    inline def apply(): StrictOptions = {
-      val __obj = js.Dynamic.literal(strict = true)
-      __obj.asInstanceOf[StrictOptions]
+    inline def apply(): OptionsWithoutCwd = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[OptionsWithoutCwd]
     }
     
-    extension [Self <: StrictOptions](x: Self) {
+    extension [Self <: OptionsWithoutCwd](x: Self) {
       
-      inline def setStrict(value: `true`): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
     }
   }
 }

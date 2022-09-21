@@ -99,7 +99,7 @@ object AccessibleEdit {
     grabFocus: () => Unit,
     insertText: (String, Double) => Boolean,
     pasteText: Double => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeAccessibleEventListener: XAccessibleEventListener => Unit,
     replaceText: (Double, Double, String) => Boolean,

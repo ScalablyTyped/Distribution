@@ -10,10 +10,10 @@ Unzip cross-platform streaming API
 | ------------------ | :-------------: |
 | Full name          | unzipper |
 | Keywords           | zip, unzip, zlib, uncompress, archive, stream, extract |
-| # releases         | 18 |
-| # dependents       | 542 |
-| # downloads        | 43330240 |
-| # stars            | 9 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 7590789.333333333 |
+| # stars            | 354.0 |
 
 ## Links
 - [Homepage](https://github.com/ZJONSSON/node-unzipper#readme)

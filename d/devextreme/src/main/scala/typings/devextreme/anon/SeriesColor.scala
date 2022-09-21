@@ -10,7 +10,7 @@ trait SeriesColor extends StObject {
   
   var seriesIndex: js.UndefOr[Double] = js.undefined
   
-  var seriesName: js.UndefOr[js.Any] = js.undefined
+  var seriesName: js.UndefOr[Any] = js.undefined
 }
 object SeriesColor {
   
@@ -29,7 +29,7 @@ object SeriesColor {
     
     inline def setSeriesIndexUndefined: Self = StObject.set(x, "seriesIndex", js.undefined)
     
-    inline def setSeriesName(value: js.Any): Self = StObject.set(x, "seriesName", value.asInstanceOf[js.Any])
+    inline def setSeriesName(value: Any): Self = StObject.set(x, "seriesName", value.asInstanceOf[js.Any])
     
     inline def setSeriesNameUndefined: Self = StObject.set(x, "seriesName", js.undefined)
   }

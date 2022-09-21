@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.webix.webix.ui.baseview because Already inherited
-- typings.webix.webix.ui.barcode because var conflicts: $height, $scope, $skin_Original, $view, $width, config, name, types. Inlined  */ @JSGlobal("webix.ui.barcode")
+- typings.webix.webix.ui.barcode because var conflicts: $height, $scope, $setNode, $skin_Original, $view, $width, config, name, types. Inlined  */ @JSGlobal("webix.ui.barcode")
 @js.native
-class barcode ()
+open class barcode ()
   extends typings.webix.mod.ui.barcode

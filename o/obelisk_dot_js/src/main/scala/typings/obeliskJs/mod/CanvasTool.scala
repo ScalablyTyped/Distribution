@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("obelisk.js", "CanvasTool")
 @js.native
-class CanvasTool () extends StObject
+open class CanvasTool () extends StObject
 /* static members */
 object CanvasTool {
   

@@ -1,8 +1,9 @@
 package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.boolean
+import typings.arcgisJsApi.arcgisJsApiStrings.date
 import typings.arcgisJsApi.arcgisJsApiStrings.number
-import typings.arcgisJsApi.arcgisJsApiStrings.string
+import typings.arcgisJsApi.arcgisJsApiStrings.string_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ trait ExpressionInfo
      with JSONSupport {
   
   /**
-    * An [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression evaluating to either a string, number, dictionary, or array.
+    * An [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression following the specification defined by the [Constraint Profile](https://developers.arcgis.com/javascript/latest/arcade/#forms).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-ExpressionInfo.html#expression)
     */
@@ -32,7 +33,7 @@ trait ExpressionInfo
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-ExpressionInfo.html#returnType)
     */
-  var returnType: boolean | number | string = js.native
+  var returnType: boolean | date | number | string_ = js.native
   
   /**
     * The title used to describe the value returned by the expression.

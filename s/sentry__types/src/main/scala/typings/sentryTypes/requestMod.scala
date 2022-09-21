@@ -7,11 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object requestMod {
   
+  type QueryParams = String | StringDictionary[String] | (js.Array[js.Tuple2[String, String]])
+  
   trait Request extends StObject {
     
     var cookies: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     var env: js.UndefOr[StringDictionary[String]] = js.undefined
     
@@ -19,7 +21,7 @@ object requestMod {
     
     var method: js.UndefOr[String] = js.undefined
     
-    var query_string: js.UndefOr[String] = js.undefined
+    var query_string: js.UndefOr[QueryParams] = js.undefined
     
     var url: js.UndefOr[String] = js.undefined
   }
@@ -36,7 +38,7 @@ object requestMod {
       
       inline def setCookiesUndefined: Self = StObject.set(x, "cookies", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -52,54 +54,15 @@ object requestMod {
       
       inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      inline def setQuery_string(value: String): Self = StObject.set(x, "query_string", value.asInstanceOf[js.Any])
+      inline def setQuery_string(value: QueryParams): Self = StObject.set(x, "query_string", value.asInstanceOf[js.Any])
       
       inline def setQuery_stringUndefined: Self = StObject.set(x, "query_string", js.undefined)
+      
+      inline def setQuery_stringVarargs(value: (js.Tuple2[String, String])*): Self = StObject.set(x, "query_string", js.Array(value*))
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
       inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
-  }
-  
-  trait SentryRequest extends StObject {
-    
-    var body: String
-    
-    var `type`: SentryRequestType
-    
-    var url: String
-  }
-  object SentryRequest {
-    
-    inline def apply(body: String, `type`: SentryRequestType, url: String): SentryRequest = {
-      val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[SentryRequest]
-    }
-    
-    extension [Self <: SentryRequest](x: Self) {
-      
-      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
-      
-      inline def setType(value: SentryRequestType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-      
-      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.sentryTypes.sentryTypesStrings.event
-    - typings.sentryTypes.sentryTypesStrings.transaction
-    - typings.sentryTypes.sentryTypesStrings.session
-  */
-  trait SentryRequestType extends StObject
-  object SentryRequestType {
-    
-    inline def event: typings.sentryTypes.sentryTypesStrings.event = "event".asInstanceOf[typings.sentryTypes.sentryTypesStrings.event]
-    
-    inline def session: typings.sentryTypes.sentryTypesStrings.session = "session".asInstanceOf[typings.sentryTypes.sentryTypesStrings.session]
-    
-    inline def transaction: typings.sentryTypes.sentryTypesStrings.transaction = "transaction".asInstanceOf[typings.sentryTypes.sentryTypesStrings.transaction]
   }
 }

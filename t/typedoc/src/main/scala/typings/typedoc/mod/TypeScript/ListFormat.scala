@@ -53,6 +53,8 @@ object ListFormat extends StObject {
   
   /* 512 */ val HeritageClauses: typings.typescript.mod.ListFormat.HeritageClauses & Double = js.native
   
+  /* 526226 */ val ImportClauseEntries: typings.typescript.mod.ListFormat.ImportClauseEntries & Double = js.native
+  
   /* 128 */ val Indented: typings.typescript.mod.ListFormat.Indented & Double = js.native
   
   /* 8848 */ val IndexSignatureParameters: typings.typescript.mod.ListFormat.IndexSignatureParameters & Double = js.native
@@ -69,7 +71,7 @@ object ListFormat extends StObject {
   
   /* 3 */ val LinesMask: typings.typescript.mod.ListFormat.LinesMask & Double = js.native
   
-  /* 262656 */ val Modifiers: typings.typescript.mod.ListFormat.Modifiers & Double = js.native
+  /* 2359808 */ val Modifiers: typings.typescript.mod.ListFormat.Modifiers & Double = js.native
   
   /* 1 */ val MultiLine: typings.typescript.mod.ListFormat.MultiLine & Double = js.native
   

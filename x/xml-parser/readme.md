@@ -11,14 +11,11 @@ the little xml parser that could
 | Full name          | xml-parser |
 | Keywords           | xml, sucks |
 | # releases         | 0 |
-| # dependents       | 105 |
-| # downloads        | 2859267 |
-| # stars            | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 308167.6666666667 |
+| # stars            | 95.0 |
 
 ## Links
-- [Homepage](https://github.com/segmentio/xml-parser)
-- [Bugs](https://github.com/segmentio/xml-parser/issues)
-- [Repository](https://github.com/segmentio/xml-parser)
 - [Npm](https://www.npmjs.com/package/xml-parser)
     
 

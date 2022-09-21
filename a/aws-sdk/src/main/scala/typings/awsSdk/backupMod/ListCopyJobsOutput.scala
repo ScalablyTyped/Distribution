@@ -29,7 +29,7 @@ object ListCopyJobsOutput {
     
     inline def setCopyJobsUndefined: Self = StObject.set(x, "CopyJobs", js.undefined)
     
-    inline def setCopyJobsVarargs(value: CopyJob*): Self = StObject.set(x, "CopyJobs", js.Array(value :_*))
+    inline def setCopyJobsVarargs(value: CopyJob*): Self = StObject.set(x, "CopyJobs", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

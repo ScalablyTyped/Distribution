@@ -9,22 +9,22 @@ trait SchemaBooksAnnotationsRange extends StObject {
   /**
     * The offset from the ending position.
     */
-  var endOffset: js.UndefOr[String] = js.undefined
+  var endOffset: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The ending position for the range.
     */
-  var endPosition: js.UndefOr[String] = js.undefined
+  var endPosition: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The offset from the starting position.
     */
-  var startOffset: js.UndefOr[String] = js.undefined
+  var startOffset: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The starting position for the range.
     */
-  var startPosition: js.UndefOr[String] = js.undefined
+  var startPosition: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaBooksAnnotationsRange {
   
@@ -37,17 +37,25 @@ object SchemaBooksAnnotationsRange {
     
     inline def setEndOffset(value: String): Self = StObject.set(x, "endOffset", value.asInstanceOf[js.Any])
     
+    inline def setEndOffsetNull: Self = StObject.set(x, "endOffset", null)
+    
     inline def setEndOffsetUndefined: Self = StObject.set(x, "endOffset", js.undefined)
     
     inline def setEndPosition(value: String): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
+    
+    inline def setEndPositionNull: Self = StObject.set(x, "endPosition", null)
     
     inline def setEndPositionUndefined: Self = StObject.set(x, "endPosition", js.undefined)
     
     inline def setStartOffset(value: String): Self = StObject.set(x, "startOffset", value.asInstanceOf[js.Any])
     
+    inline def setStartOffsetNull: Self = StObject.set(x, "startOffset", null)
+    
     inline def setStartOffsetUndefined: Self = StObject.set(x, "startOffset", js.undefined)
     
     inline def setStartPosition(value: String): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
+    
+    inline def setStartPositionNull: Self = StObject.set(x, "startPosition", null)
     
     inline def setStartPositionUndefined: Self = StObject.set(x, "startPosition", js.undefined)
   }

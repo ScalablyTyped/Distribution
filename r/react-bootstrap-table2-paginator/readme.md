@@ -10,10 +10,10 @@ it's the pagination addon for react-bootstrap-table2
 | ------------------ | :-------------: |
 | Full name          | react-bootstrap-table2-paginator |
 | Keywords           | react, bootstrap, table, grid, react-bootstrap-table-addons, react-component |
-| # releases         | 11 |
-| # dependents       | 20 |
-| # downloads        | 1576052 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 199181.0 |
+| # stars            | 1202.0 |
 
 ## Links
 - [Homepage](https://github.com/react-bootstrap-table/react-bootstrap-table2#readme)

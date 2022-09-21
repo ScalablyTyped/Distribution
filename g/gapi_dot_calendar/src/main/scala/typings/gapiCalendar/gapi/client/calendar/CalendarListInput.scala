@@ -49,7 +49,7 @@ object CalendarListInput {
     
     inline def setDefaultRemindersUndefined: Self = StObject.set(x, "defaultReminders", js.undefined)
     
-    inline def setDefaultRemindersVarargs(value: Method*): Self = StObject.set(x, "defaultReminders", js.Array(value :_*))
+    inline def setDefaultRemindersVarargs(value: Method*): Self = StObject.set(x, "defaultReminders", js.Array(value*))
     
     inline def setForegroundColor(value: String): Self = StObject.set(x, "foregroundColor", value.asInstanceOf[js.Any])
     

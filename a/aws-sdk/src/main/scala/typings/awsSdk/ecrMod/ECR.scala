@@ -58,6 +58,22 @@ trait ECR extends Service {
   ): Request[BatchGetImageResponse, AWSError] = js.native
   
   /**
+    * Gets the scanning configuration for one or more repositories.
+    */
+  def batchGetRepositoryScanningConfiguration(): Request[BatchGetRepositoryScanningConfigurationResponse, AWSError] = js.native
+  def batchGetRepositoryScanningConfiguration(
+    callback: js.Function2[/* err */ AWSError, /* data */ BatchGetRepositoryScanningConfigurationResponse, Unit]
+  ): Request[BatchGetRepositoryScanningConfigurationResponse, AWSError] = js.native
+  /**
+    * Gets the scanning configuration for one or more repositories.
+    */
+  def batchGetRepositoryScanningConfiguration(params: BatchGetRepositoryScanningConfigurationRequest): Request[BatchGetRepositoryScanningConfigurationResponse, AWSError] = js.native
+  def batchGetRepositoryScanningConfiguration(
+    params: BatchGetRepositoryScanningConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ BatchGetRepositoryScanningConfigurationResponse, Unit]
+  ): Request[BatchGetRepositoryScanningConfigurationResponse, AWSError] = js.native
+  
+  /**
     * Informs Amazon ECR that the image layer upload has completed for a specified registry, repository name, and upload ID. You can optionally provide a sha256 digest of the image layer for data validation purposes. When an image is pushed, the CompleteLayerUpload API is called once per each new image layer to verify that the upload has completed.  This operation is used by the Amazon ECR proxy and is not generally used by customers for pulling and pushing images. In most cases, you should use the docker CLI to pull, tag, and push images. 
     */
   def completeLayerUpload(): Request[CompleteLayerUploadResponse, AWSError] = js.native
@@ -75,12 +91,26 @@ trait ECR extends Service {
   var config_ECR: ConfigBase & ClientConfiguration = js.native
   
   /**
-    * Creates a repository. For more information, see Amazon ECR Repositories in the Amazon Elastic Container Registry User Guide.
+    * Creates a pull through cache rule. A pull through cache rule provides a way to cache images from an external public registry in your Amazon ECR private registry.
+    */
+  def createPullThroughCacheRule(): Request[CreatePullThroughCacheRuleResponse, AWSError] = js.native
+  def createPullThroughCacheRule(callback: js.Function2[/* err */ AWSError, /* data */ CreatePullThroughCacheRuleResponse, Unit]): Request[CreatePullThroughCacheRuleResponse, AWSError] = js.native
+  /**
+    * Creates a pull through cache rule. A pull through cache rule provides a way to cache images from an external public registry in your Amazon ECR private registry.
+    */
+  def createPullThroughCacheRule(params: CreatePullThroughCacheRuleRequest): Request[CreatePullThroughCacheRuleResponse, AWSError] = js.native
+  def createPullThroughCacheRule(
+    params: CreatePullThroughCacheRuleRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreatePullThroughCacheRuleResponse, Unit]
+  ): Request[CreatePullThroughCacheRuleResponse, AWSError] = js.native
+  
+  /**
+    * Creates a repository. For more information, see Amazon ECR repositories in the Amazon Elastic Container Registry User Guide.
     */
   def createRepository(): Request[CreateRepositoryResponse, AWSError] = js.native
   def createRepository(callback: js.Function2[/* err */ AWSError, /* data */ CreateRepositoryResponse, Unit]): Request[CreateRepositoryResponse, AWSError] = js.native
   /**
-    * Creates a repository. For more information, see Amazon ECR Repositories in the Amazon Elastic Container Registry User Guide.
+    * Creates a repository. For more information, see Amazon ECR repositories in the Amazon Elastic Container Registry User Guide.
     */
   def createRepository(params: CreateRepositoryRequest): Request[CreateRepositoryResponse, AWSError] = js.native
   def createRepository(
@@ -101,6 +131,34 @@ trait ECR extends Service {
     params: DeleteLifecyclePolicyRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteLifecyclePolicyResponse, Unit]
   ): Request[DeleteLifecyclePolicyResponse, AWSError] = js.native
+  
+  /**
+    * Deletes a pull through cache rule.
+    */
+  def deletePullThroughCacheRule(): Request[DeletePullThroughCacheRuleResponse, AWSError] = js.native
+  def deletePullThroughCacheRule(callback: js.Function2[/* err */ AWSError, /* data */ DeletePullThroughCacheRuleResponse, Unit]): Request[DeletePullThroughCacheRuleResponse, AWSError] = js.native
+  /**
+    * Deletes a pull through cache rule.
+    */
+  def deletePullThroughCacheRule(params: DeletePullThroughCacheRuleRequest): Request[DeletePullThroughCacheRuleResponse, AWSError] = js.native
+  def deletePullThroughCacheRule(
+    params: DeletePullThroughCacheRuleRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeletePullThroughCacheRuleResponse, Unit]
+  ): Request[DeletePullThroughCacheRuleResponse, AWSError] = js.native
+  
+  /**
+    * Deletes the registry permissions policy.
+    */
+  def deleteRegistryPolicy(): Request[DeleteRegistryPolicyResponse, AWSError] = js.native
+  def deleteRegistryPolicy(callback: js.Function2[/* err */ AWSError, /* data */ DeleteRegistryPolicyResponse, Unit]): Request[DeleteRegistryPolicyResponse, AWSError] = js.native
+  /**
+    * Deletes the registry permissions policy.
+    */
+  def deleteRegistryPolicy(params: DeleteRegistryPolicyRequest): Request[DeleteRegistryPolicyResponse, AWSError] = js.native
+  def deleteRegistryPolicy(
+    params: DeleteRegistryPolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteRegistryPolicyResponse, Unit]
+  ): Request[DeleteRegistryPolicyResponse, AWSError] = js.native
   
   /**
     * Deletes a repository. If the repository contains images, you must either delete all images in the repository or use the force option to delete the repository.
@@ -131,6 +189,22 @@ trait ECR extends Service {
   ): Request[DeleteRepositoryPolicyResponse, AWSError] = js.native
   
   /**
+    * Returns the replication status for a specified image.
+    */
+  def describeImageReplicationStatus(): Request[DescribeImageReplicationStatusResponse, AWSError] = js.native
+  def describeImageReplicationStatus(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeImageReplicationStatusResponse, Unit]
+  ): Request[DescribeImageReplicationStatusResponse, AWSError] = js.native
+  /**
+    * Returns the replication status for a specified image.
+    */
+  def describeImageReplicationStatus(params: DescribeImageReplicationStatusRequest): Request[DescribeImageReplicationStatusResponse, AWSError] = js.native
+  def describeImageReplicationStatus(
+    params: DescribeImageReplicationStatusRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeImageReplicationStatusResponse, Unit]
+  ): Request[DescribeImageReplicationStatusResponse, AWSError] = js.native
+  
+  /**
     * Returns the scan findings for the specified image.
     */
   def describeImageScanFindings(): Request[DescribeImageScanFindingsResponse, AWSError] = js.native
@@ -159,6 +233,34 @@ trait ECR extends Service {
   ): Request[DescribeImagesResponse, AWSError] = js.native
   
   /**
+    * Returns the pull through cache rules for a registry.
+    */
+  def describePullThroughCacheRules(): Request[DescribePullThroughCacheRulesResponse, AWSError] = js.native
+  def describePullThroughCacheRules(callback: js.Function2[/* err */ AWSError, /* data */ DescribePullThroughCacheRulesResponse, Unit]): Request[DescribePullThroughCacheRulesResponse, AWSError] = js.native
+  /**
+    * Returns the pull through cache rules for a registry.
+    */
+  def describePullThroughCacheRules(params: DescribePullThroughCacheRulesRequest): Request[DescribePullThroughCacheRulesResponse, AWSError] = js.native
+  def describePullThroughCacheRules(
+    params: DescribePullThroughCacheRulesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribePullThroughCacheRulesResponse, Unit]
+  ): Request[DescribePullThroughCacheRulesResponse, AWSError] = js.native
+  
+  /**
+    * Describes the settings for a registry. The replication configuration for a repository can be created or updated with the PutReplicationConfiguration API action.
+    */
+  def describeRegistry(): Request[DescribeRegistryResponse, AWSError] = js.native
+  def describeRegistry(callback: js.Function2[/* err */ AWSError, /* data */ DescribeRegistryResponse, Unit]): Request[DescribeRegistryResponse, AWSError] = js.native
+  /**
+    * Describes the settings for a registry. The replication configuration for a repository can be created or updated with the PutReplicationConfiguration API action.
+    */
+  def describeRegistry(params: DescribeRegistryRequest): Request[DescribeRegistryResponse, AWSError] = js.native
+  def describeRegistry(
+    params: DescribeRegistryRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeRegistryResponse, Unit]
+  ): Request[DescribeRegistryResponse, AWSError] = js.native
+  
+  /**
     * Describes image repositories in a registry.
     */
   def describeRepositories(): Request[DescribeRepositoriesResponse, AWSError] = js.native
@@ -173,12 +275,12 @@ trait ECR extends Service {
   ): Request[DescribeRepositoriesResponse, AWSError] = js.native
   
   /**
-    * Retrieves an authorization token. An authorization token represents your IAM authentication credentials and can be used to access any Amazon ECR registry that your IAM principal has access to. The authorization token is valid for 12 hours. The authorizationToken returned is a base64 encoded string that can be decoded and used in a docker login command to authenticate to a registry. The AWS CLI offers an get-login-password command that simplifies the login process. For more information, see Registry Authentication in the Amazon Elastic Container Registry User Guide.
+    * Retrieves an authorization token. An authorization token represents your IAM authentication credentials and can be used to access any Amazon ECR registry that your IAM principal has access to. The authorization token is valid for 12 hours. The authorizationToken returned is a base64 encoded string that can be decoded and used in a docker login command to authenticate to a registry. The CLI offers an get-login-password command that simplifies the login process. For more information, see Registry authentication in the Amazon Elastic Container Registry User Guide.
     */
   def getAuthorizationToken(): Request[GetAuthorizationTokenResponse, AWSError] = js.native
   def getAuthorizationToken(callback: js.Function2[/* err */ AWSError, /* data */ GetAuthorizationTokenResponse, Unit]): Request[GetAuthorizationTokenResponse, AWSError] = js.native
   /**
-    * Retrieves an authorization token. An authorization token represents your IAM authentication credentials and can be used to access any Amazon ECR registry that your IAM principal has access to. The authorization token is valid for 12 hours. The authorizationToken returned is a base64 encoded string that can be decoded and used in a docker login command to authenticate to a registry. The AWS CLI offers an get-login-password command that simplifies the login process. For more information, see Registry Authentication in the Amazon Elastic Container Registry User Guide.
+    * Retrieves an authorization token. An authorization token represents your IAM authentication credentials and can be used to access any Amazon ECR registry that your IAM principal has access to. The authorization token is valid for 12 hours. The authorizationToken returned is a base64 encoded string that can be decoded and used in a docker login command to authenticate to a registry. The CLI offers an get-login-password command that simplifies the login process. For more information, see Registry authentication in the Amazon Elastic Container Registry User Guide.
     */
   def getAuthorizationToken(params: GetAuthorizationTokenRequest): Request[GetAuthorizationTokenResponse, AWSError] = js.native
   def getAuthorizationToken(
@@ -227,6 +329,36 @@ trait ECR extends Service {
     params: GetLifecyclePolicyPreviewRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetLifecyclePolicyPreviewResponse, Unit]
   ): Request[GetLifecyclePolicyPreviewResponse, AWSError] = js.native
+  
+  /**
+    * Retrieves the permissions policy for a registry.
+    */
+  def getRegistryPolicy(): Request[GetRegistryPolicyResponse, AWSError] = js.native
+  def getRegistryPolicy(callback: js.Function2[/* err */ AWSError, /* data */ GetRegistryPolicyResponse, Unit]): Request[GetRegistryPolicyResponse, AWSError] = js.native
+  /**
+    * Retrieves the permissions policy for a registry.
+    */
+  def getRegistryPolicy(params: GetRegistryPolicyRequest): Request[GetRegistryPolicyResponse, AWSError] = js.native
+  def getRegistryPolicy(
+    params: GetRegistryPolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetRegistryPolicyResponse, Unit]
+  ): Request[GetRegistryPolicyResponse, AWSError] = js.native
+  
+  /**
+    * Retrieves the scanning configuration for a registry.
+    */
+  def getRegistryScanningConfiguration(): Request[GetRegistryScanningConfigurationResponse, AWSError] = js.native
+  def getRegistryScanningConfiguration(
+    callback: js.Function2[/* err */ AWSError, /* data */ GetRegistryScanningConfigurationResponse, Unit]
+  ): Request[GetRegistryScanningConfigurationResponse, AWSError] = js.native
+  /**
+    * Retrieves the scanning configuration for a registry.
+    */
+  def getRegistryScanningConfiguration(params: GetRegistryScanningConfigurationRequest): Request[GetRegistryScanningConfigurationResponse, AWSError] = js.native
+  def getRegistryScanningConfiguration(
+    params: GetRegistryScanningConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetRegistryScanningConfigurationResponse, Unit]
+  ): Request[GetRegistryScanningConfigurationResponse, AWSError] = js.native
   
   /**
     * Retrieves the repository policy for the specified repository.
@@ -299,12 +431,12 @@ trait ECR extends Service {
   ): Request[PutImageResponse, AWSError] = js.native
   
   /**
-    * Updates the image scanning configuration for the specified repository.
+    *  The PutImageScanningConfiguration API is being deprecated, in favor of specifying the image scanning configuration at the registry level. For more information, see PutRegistryScanningConfiguration.  Updates the image scanning configuration for the specified repository.
     */
   def putImageScanningConfiguration(): Request[PutImageScanningConfigurationResponse, AWSError] = js.native
   def putImageScanningConfiguration(callback: js.Function2[/* err */ AWSError, /* data */ PutImageScanningConfigurationResponse, Unit]): Request[PutImageScanningConfigurationResponse, AWSError] = js.native
   /**
-    * Updates the image scanning configuration for the specified repository.
+    *  The PutImageScanningConfiguration API is being deprecated, in favor of specifying the image scanning configuration at the registry level. For more information, see PutRegistryScanningConfiguration.  Updates the image scanning configuration for the specified repository.
     */
   def putImageScanningConfiguration(params: PutImageScanningConfigurationRequest): Request[PutImageScanningConfigurationResponse, AWSError] = js.native
   def putImageScanningConfiguration(
@@ -313,12 +445,12 @@ trait ECR extends Service {
   ): Request[PutImageScanningConfigurationResponse, AWSError] = js.native
   
   /**
-    * Updates the image tag mutability settings for the specified repository. For more information, see Image Tag Mutability in the Amazon Elastic Container Registry User Guide.
+    * Updates the image tag mutability settings for the specified repository. For more information, see Image tag mutability in the Amazon Elastic Container Registry User Guide.
     */
   def putImageTagMutability(): Request[PutImageTagMutabilityResponse, AWSError] = js.native
   def putImageTagMutability(callback: js.Function2[/* err */ AWSError, /* data */ PutImageTagMutabilityResponse, Unit]): Request[PutImageTagMutabilityResponse, AWSError] = js.native
   /**
-    * Updates the image tag mutability settings for the specified repository. For more information, see Image Tag Mutability in the Amazon Elastic Container Registry User Guide.
+    * Updates the image tag mutability settings for the specified repository. For more information, see Image tag mutability in the Amazon Elastic Container Registry User Guide.
     */
   def putImageTagMutability(params: PutImageTagMutabilityRequest): Request[PutImageTagMutabilityResponse, AWSError] = js.native
   def putImageTagMutability(
@@ -327,12 +459,12 @@ trait ECR extends Service {
   ): Request[PutImageTagMutabilityResponse, AWSError] = js.native
   
   /**
-    * Creates or updates the lifecycle policy for the specified repository. For more information, see Lifecycle Policy Template.
+    * Creates or updates the lifecycle policy for the specified repository. For more information, see Lifecycle policy template.
     */
   def putLifecyclePolicy(): Request[PutLifecyclePolicyResponse, AWSError] = js.native
   def putLifecyclePolicy(callback: js.Function2[/* err */ AWSError, /* data */ PutLifecyclePolicyResponse, Unit]): Request[PutLifecyclePolicyResponse, AWSError] = js.native
   /**
-    * Creates or updates the lifecycle policy for the specified repository. For more information, see Lifecycle Policy Template.
+    * Creates or updates the lifecycle policy for the specified repository. For more information, see Lifecycle policy template.
     */
   def putLifecyclePolicy(params: PutLifecyclePolicyRequest): Request[PutLifecyclePolicyResponse, AWSError] = js.native
   def putLifecyclePolicy(
@@ -341,12 +473,56 @@ trait ECR extends Service {
   ): Request[PutLifecyclePolicyResponse, AWSError] = js.native
   
   /**
-    * Applies a repository policy to the specified repository to control access permissions. For more information, see Amazon ECR Repository Policies in the Amazon Elastic Container Registry User Guide.
+    * Creates or updates the permissions policy for your registry. A registry policy is used to specify permissions for another Amazon Web Services account and is used when configuring cross-account replication. For more information, see Registry permissions in the Amazon Elastic Container Registry User Guide.
+    */
+  def putRegistryPolicy(): Request[PutRegistryPolicyResponse, AWSError] = js.native
+  def putRegistryPolicy(callback: js.Function2[/* err */ AWSError, /* data */ PutRegistryPolicyResponse, Unit]): Request[PutRegistryPolicyResponse, AWSError] = js.native
+  /**
+    * Creates or updates the permissions policy for your registry. A registry policy is used to specify permissions for another Amazon Web Services account and is used when configuring cross-account replication. For more information, see Registry permissions in the Amazon Elastic Container Registry User Guide.
+    */
+  def putRegistryPolicy(params: PutRegistryPolicyRequest): Request[PutRegistryPolicyResponse, AWSError] = js.native
+  def putRegistryPolicy(
+    params: PutRegistryPolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutRegistryPolicyResponse, Unit]
+  ): Request[PutRegistryPolicyResponse, AWSError] = js.native
+  
+  /**
+    * Creates or updates the scanning configuration for your private registry.
+    */
+  def putRegistryScanningConfiguration(): Request[PutRegistryScanningConfigurationResponse, AWSError] = js.native
+  def putRegistryScanningConfiguration(
+    callback: js.Function2[/* err */ AWSError, /* data */ PutRegistryScanningConfigurationResponse, Unit]
+  ): Request[PutRegistryScanningConfigurationResponse, AWSError] = js.native
+  /**
+    * Creates or updates the scanning configuration for your private registry.
+    */
+  def putRegistryScanningConfiguration(params: PutRegistryScanningConfigurationRequest): Request[PutRegistryScanningConfigurationResponse, AWSError] = js.native
+  def putRegistryScanningConfiguration(
+    params: PutRegistryScanningConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutRegistryScanningConfigurationResponse, Unit]
+  ): Request[PutRegistryScanningConfigurationResponse, AWSError] = js.native
+  
+  /**
+    * Creates or updates the replication configuration for a registry. The existing replication configuration for a repository can be retrieved with the DescribeRegistry API action. The first time the PutReplicationConfiguration API is called, a service-linked IAM role is created in your account for the replication process. For more information, see Using service-linked roles for Amazon ECR in the Amazon Elastic Container Registry User Guide.  When configuring cross-account replication, the destination account must grant the source account permission to replicate. This permission is controlled using a registry permissions policy. For more information, see PutRegistryPolicy. 
+    */
+  def putReplicationConfiguration(): Request[PutReplicationConfigurationResponse, AWSError] = js.native
+  def putReplicationConfiguration(callback: js.Function2[/* err */ AWSError, /* data */ PutReplicationConfigurationResponse, Unit]): Request[PutReplicationConfigurationResponse, AWSError] = js.native
+  /**
+    * Creates or updates the replication configuration for a registry. The existing replication configuration for a repository can be retrieved with the DescribeRegistry API action. The first time the PutReplicationConfiguration API is called, a service-linked IAM role is created in your account for the replication process. For more information, see Using service-linked roles for Amazon ECR in the Amazon Elastic Container Registry User Guide.  When configuring cross-account replication, the destination account must grant the source account permission to replicate. This permission is controlled using a registry permissions policy. For more information, see PutRegistryPolicy. 
+    */
+  def putReplicationConfiguration(params: PutReplicationConfigurationRequest): Request[PutReplicationConfigurationResponse, AWSError] = js.native
+  def putReplicationConfiguration(
+    params: PutReplicationConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutReplicationConfigurationResponse, Unit]
+  ): Request[PutReplicationConfigurationResponse, AWSError] = js.native
+  
+  /**
+    * Applies a repository policy to the specified repository to control access permissions. For more information, see Amazon ECR Repository policies in the Amazon Elastic Container Registry User Guide.
     */
   def setRepositoryPolicy(): Request[SetRepositoryPolicyResponse, AWSError] = js.native
   def setRepositoryPolicy(callback: js.Function2[/* err */ AWSError, /* data */ SetRepositoryPolicyResponse, Unit]): Request[SetRepositoryPolicyResponse, AWSError] = js.native
   /**
-    * Applies a repository policy to the specified repository to control access permissions. For more information, see Amazon ECR Repository Policies in the Amazon Elastic Container Registry User Guide.
+    * Applies a repository policy to the specified repository to control access permissions. For more information, see Amazon ECR Repository policies in the Amazon Elastic Container Registry User Guide.
     */
   def setRepositoryPolicy(params: SetRepositoryPolicyRequest): Request[SetRepositoryPolicyResponse, AWSError] = js.native
   def setRepositoryPolicy(
@@ -355,12 +531,12 @@ trait ECR extends Service {
   ): Request[SetRepositoryPolicyResponse, AWSError] = js.native
   
   /**
-    * Starts an image vulnerability scan. An image scan can only be started once per day on an individual image. This limit includes if an image was scanned on initial push. For more information, see Image Scanning in the Amazon Elastic Container Registry User Guide.
+    * Starts an image vulnerability scan. An image scan can only be started once per 24 hours on an individual image. This limit includes if an image was scanned on initial push. For more information, see Image scanning in the Amazon Elastic Container Registry User Guide.
     */
   def startImageScan(): Request[StartImageScanResponse, AWSError] = js.native
   def startImageScan(callback: js.Function2[/* err */ AWSError, /* data */ StartImageScanResponse, Unit]): Request[StartImageScanResponse, AWSError] = js.native
   /**
-    * Starts an image vulnerability scan. An image scan can only be started once per day on an individual image. This limit includes if an image was scanned on initial push. For more information, see Image Scanning in the Amazon Elastic Container Registry User Guide.
+    * Starts an image vulnerability scan. An image scan can only be started once per 24 hours on an individual image. This limit includes if an image was scanned on initial push. For more information, see Image scanning in the Amazon Elastic Container Registry User Guide.
     */
   def startImageScan(params: StartImageScanRequest): Request[StartImageScanResponse, AWSError] = js.native
   def startImageScan(

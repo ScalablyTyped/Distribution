@@ -65,7 +65,7 @@ object DevicePool {
     
     inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    inline def setRulesVarargs(value: Rule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: Rule*): Self = StObject.set(x, "rules", js.Array(value*))
     
     inline def setType(value: DevicePoolType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

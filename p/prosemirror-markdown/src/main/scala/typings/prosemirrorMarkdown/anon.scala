@@ -6,6 +6,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
+  trait EscapeExtraCharacters extends StObject {
+    
+    var escapeExtraCharacters: js.UndefOr[js.RegExp | Null] = js.undefined
+  }
+  object EscapeExtraCharacters {
+    
+    inline def apply(): EscapeExtraCharacters = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[EscapeExtraCharacters]
+    }
+    
+    extension [Self <: EscapeExtraCharacters](x: Self) {
+      
+      inline def setEscapeExtraCharacters(value: js.RegExp): Self = StObject.set(x, "escapeExtraCharacters", value.asInstanceOf[js.Any])
+      
+      inline def setEscapeExtraCharactersNull: Self = StObject.set(x, "escapeExtraCharacters", null)
+      
+      inline def setEscapeExtraCharactersUndefined: Self = StObject.set(x, "escapeExtraCharacters", js.undefined)
+    }
+  }
+  
   trait Leading extends StObject {
     
     var leading: js.UndefOr[String | Null] = js.undefined

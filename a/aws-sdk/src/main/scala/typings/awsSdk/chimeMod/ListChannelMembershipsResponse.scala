@@ -38,7 +38,7 @@ object ListChannelMembershipsResponse {
     
     inline def setChannelMembershipsUndefined: Self = StObject.set(x, "ChannelMemberships", js.undefined)
     
-    inline def setChannelMembershipsVarargs(value: ChannelMembershipSummary*): Self = StObject.set(x, "ChannelMemberships", js.Array(value :_*))
+    inline def setChannelMembershipsVarargs(value: ChannelMembershipSummary*): Self = StObject.set(x, "ChannelMemberships", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

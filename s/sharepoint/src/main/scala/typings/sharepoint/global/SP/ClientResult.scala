@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // }
 @JSGlobal("SP.ClientResult")
 @js.native
-class ClientResult[T] ()
+open class ClientResult[T] ()
   extends StObject
      with typings.sharepoint.SP.ClientResult[T] {
   

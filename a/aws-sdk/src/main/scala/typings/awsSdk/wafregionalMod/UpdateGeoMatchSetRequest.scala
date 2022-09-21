@@ -36,6 +36,6 @@ object UpdateGeoMatchSetRequest {
     
     inline def setUpdates(value: GeoMatchSetUpdates): Self = StObject.set(x, "Updates", value.asInstanceOf[js.Any])
     
-    inline def setUpdatesVarargs(value: GeoMatchSetUpdate*): Self = StObject.set(x, "Updates", js.Array(value :_*))
+    inline def setUpdatesVarargs(value: GeoMatchSetUpdate*): Self = StObject.set(x, "Updates", js.Array(value*))
   }
 }

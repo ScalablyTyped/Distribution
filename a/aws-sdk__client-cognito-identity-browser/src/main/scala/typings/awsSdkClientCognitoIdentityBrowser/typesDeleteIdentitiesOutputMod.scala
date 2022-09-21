@@ -39,7 +39,7 @@ object typesDeleteIdentitiesOutputMod {
       
       inline def setUnprocessedIdentityIdsUndefined: Self = StObject.set(x, "UnprocessedIdentityIds", js.undefined)
       
-      inline def setUnprocessedIdentityIdsVarargs(value: UnmarshalledUnprocessedIdentityId*): Self = StObject.set(x, "UnprocessedIdentityIds", js.Array(value :_*))
+      inline def setUnprocessedIdentityIdsVarargs(value: UnmarshalledUnprocessedIdentityId*): Self = StObject.set(x, "UnprocessedIdentityIds", js.Array(value*))
     }
   }
 }

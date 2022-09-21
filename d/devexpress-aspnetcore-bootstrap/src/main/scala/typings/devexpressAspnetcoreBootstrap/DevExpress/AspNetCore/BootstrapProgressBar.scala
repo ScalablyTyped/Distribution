@@ -23,7 +23,7 @@ trait BootstrapProgressBar
   
   def getPosition(): Double = js.native
   
-  def getValue(): js.Any = js.native
+  def getValue(): Any = js.native
   
   def off(
     eventName: Unit,
@@ -44,5 +44,5 @@ trait BootstrapProgressBar
   
   def setPosition(position: Double): Unit = js.native
   
-  def setValue(value: js.Any): Unit = js.native
+  def setValue(value: Any): Unit = js.native
 }

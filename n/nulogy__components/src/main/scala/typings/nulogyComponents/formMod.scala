@@ -8,17 +8,17 @@ object formMod {
   
   @JSImport("@nulogy/components/src/Form", "Field")
   @js.native
-  val Field: js.Any = js.native
+  val Field: Any = js.native
   
   @JSImport("@nulogy/components/src/Form", "Fieldset")
   @js.native
-  val Fieldset: js.Any = js.native
+  val Fieldset: Any = js.native
   
   @JSImport("@nulogy/components/src/Form", "Form")
   @js.native
-  val Form: js.Any = js.native
+  val Form: Any = js.native
   
   @JSImport("@nulogy/components/src/Form", "FormSection")
   @js.native
-  val FormSection: js.Any = js.native
+  val FormSection: Any = js.native
 }

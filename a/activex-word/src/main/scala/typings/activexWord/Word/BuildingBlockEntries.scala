@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BuildingBlockEntries extends StObject {
   
   /** @param Word.WdDocPartInsertOptions [InsertOptions=0] */
-  def Add(Name: String, Type: WdBuildingBlockTypes, Category: String, Range: Range, Description: js.Any): BuildingBlock = js.native
+  def Add(Name: String, Type: WdBuildingBlockTypes, Category: String, Range: Range, Description: Any): BuildingBlock = js.native
   def Add(
     Name: String,
     Type: WdBuildingBlockTypes,
     Category: String,
     Range: Range,
-    Description: js.Any,
+    Description: Any,
     InsertOptions: WdDocPartInsertOptions
   ): BuildingBlock = js.native
   
@@ -24,9 +24,9 @@ trait BuildingBlockEntries extends StObject {
   
   val Creator: Double = js.native
   
-  def Item(Index: js.Any): BuildingBlock = js.native
+  def Item(Index: Any): BuildingBlock = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   /* private */ @JSName("Word.BuildingBlockEntries_typekey")
   var WordDotBuildingBlockEntries_typekey: BuildingBlockEntries = js.native

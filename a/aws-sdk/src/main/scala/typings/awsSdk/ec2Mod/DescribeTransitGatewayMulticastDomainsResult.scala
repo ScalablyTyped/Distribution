@@ -33,6 +33,6 @@ object DescribeTransitGatewayMulticastDomainsResult {
     
     inline def setTransitGatewayMulticastDomainsUndefined: Self = StObject.set(x, "TransitGatewayMulticastDomains", js.undefined)
     
-    inline def setTransitGatewayMulticastDomainsVarargs(value: TransitGatewayMulticastDomain*): Self = StObject.set(x, "TransitGatewayMulticastDomains", js.Array(value :_*))
+    inline def setTransitGatewayMulticastDomainsVarargs(value: TransitGatewayMulticastDomain*): Self = StObject.set(x, "TransitGatewayMulticastDomains", js.Array(value*))
   }
 }

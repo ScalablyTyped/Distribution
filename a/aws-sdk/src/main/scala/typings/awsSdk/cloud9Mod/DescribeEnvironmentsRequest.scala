@@ -22,6 +22,6 @@ object DescribeEnvironmentsRequest {
     
     inline def setEnvironmentIds(value: BoundedEnvironmentIdList): Self = StObject.set(x, "environmentIds", value.asInstanceOf[js.Any])
     
-    inline def setEnvironmentIdsVarargs(value: EnvironmentId*): Self = StObject.set(x, "environmentIds", js.Array(value :_*))
+    inline def setEnvironmentIdsVarargs(value: EnvironmentId*): Self = StObject.set(x, "environmentIds", js.Array(value*))
   }
 }

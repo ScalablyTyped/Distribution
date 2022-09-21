@@ -1,7 +1,7 @@
 
 # Scala.js typings for electron-is-dev
 
-Typings are for version 1.2.0
+Typings are for version 2.0.0
 
 ## Library description:
 Check if Electron is running in development
@@ -10,10 +10,10 @@ Check if Electron is running in development
 | ------------------ | :-------------: |
 | Full name          | electron-is-dev |
 | Keywords           | electron, dev, development, mode, prod, production, detect, check, debug, app |
-| # releases         | 3 |
-| # dependents       | 120 |
-| # downloads        | 3239345 |
-| # stars            | 2 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 562015.0 |
+| # stars            | 401.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/electron-is-dev#readme)

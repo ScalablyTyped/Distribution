@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_kgsearch
 
-Typings are for version 1.0.20201107
+Typings are for version 1.0.20220806
 
 ## Library description:
 TypeScript typings for Knowledge Graph Search API v1
@@ -10,10 +10,10 @@ TypeScript typings for Knowledge Graph Search API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.kgsearch |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 1 |
-| # downloads        | 658 |
-| # stars            | 0 |
+| # releases         | 37 |
+| # dependents       | 0.0 |
+| # downloads        | 822.6666666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

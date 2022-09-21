@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.PhotoDome")
 @js.native
-class PhotoDome ()
+open class PhotoDome ()
   extends StObject
      with typings.babylonjs.BABYLON.PhotoDome {
   
@@ -44,19 +44,19 @@ object PhotoDome {
     */
   @JSGlobal("BABYLON.PhotoDome.MODE_MONOSCOPIC")
   @js.native
-  val MODE_MONOSCOPIC: Double = js.native
+  val MODE_MONOSCOPIC: /* 0 */ Double = js.native
   
   /**
     * Define the image as a Stereoscopic Side by Side panoramic 360 image.
     */
   @JSGlobal("BABYLON.PhotoDome.MODE_SIDEBYSIDE")
   @js.native
-  val MODE_SIDEBYSIDE: Double = js.native
+  val MODE_SIDEBYSIDE: /* 2 */ Double = js.native
   
   /**
     * Define the image as a Stereoscopic TopBottom/OverUnder panoramic 360 image.
     */
   @JSGlobal("BABYLON.PhotoDome.MODE_TOPBOTTOM")
   @js.native
-  val MODE_TOPBOTTOM: Double = js.native
+  val MODE_TOPBOTTOM: /* 1 */ Double = js.native
 }

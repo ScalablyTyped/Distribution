@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetCertificatesRequest extends StObject {
   
   /**
-    * The name for the certificate for which to return information. When omitted, the response includes all of your certificates in the AWS Region where the request is made.
+    * The name for the certificate for which to return information. When omitted, the response includes all of your certificates in the Amazon Web Services Region where the request is made.
     */
   var certificateName: js.UndefOr[CertificateName] = js.undefined
   
   /**
-    * The status of the certificates for which to return information. For example, specify ISSUED to return only certificates with an ISSUED status. When omitted, the response includes all of your certificates in the AWS Region where the request is made, regardless of their current status.
+    * The status of the certificates for which to return information. For example, specify ISSUED to return only certificates with an ISSUED status. When omitted, the response includes all of your certificates in the Amazon Web Services Region where the request is made, regardless of their current status.
     */
   var certificateStatuses: js.UndefOr[CertificateStatusList] = js.undefined
   
@@ -38,7 +38,7 @@ object GetCertificatesRequest {
     
     inline def setCertificateStatusesUndefined: Self = StObject.set(x, "certificateStatuses", js.undefined)
     
-    inline def setCertificateStatusesVarargs(value: CertificateStatus*): Self = StObject.set(x, "certificateStatuses", js.Array(value :_*))
+    inline def setCertificateStatusesVarargs(value: CertificateStatus*): Self = StObject.set(x, "certificateStatuses", js.Array(value*))
     
     inline def setIncludeCertificateDetails(value: IncludeCertificateDetails): Self = StObject.set(x, "includeCertificateDetails", value.asInstanceOf[js.Any])
     

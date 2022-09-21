@@ -9,7 +9,7 @@ trait AccountAssignmentOperationStatus extends StObject {
   /**
     * The date that the permission set was created.
     */
-  var CreatedDate: js.UndefOr[Date] = js.undefined
+  var CreatedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The message that contains an error or exception in case of an operation failure.
@@ -22,7 +22,7 @@ trait AccountAssignmentOperationStatus extends StObject {
   var PermissionSetArn: js.UndefOr[typings.awsSdk.ssoadminMod.PermissionSetArn] = js.undefined
   
   /**
-    * An identifier for an object in AWS SSO, such as a user or group. PrincipalIds are GUIDs (For example, f81d4fae-7dec-11d0-a765-00a0c91e6bf6). For more information about PrincipalIds in AWS SSO, see the AWS SSO Identity Store API Reference.
+    * An identifier for an object in IAM Identity Center, such as a user or group. PrincipalIds are GUIDs (For example, f81d4fae-7dec-11d0-a765-00a0c91e6bf6). For more information about PrincipalIds in IAM Identity Center, see the IAM Identity Center Identity Store API Reference.
     */
   var PrincipalId: js.UndefOr[typings.awsSdk.ssoadminMod.PrincipalId] = js.undefined
   
@@ -60,7 +60,7 @@ object AccountAssignmentOperationStatus {
   
   extension [Self <: AccountAssignmentOperationStatus](x: Self) {
     
-    inline def setCreatedDate(value: Date): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     
     inline def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
     

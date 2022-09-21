@@ -17,20 +17,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object updateIdentityPoolCommandMod {
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/commands/UpdateIdentityPoolCommand", "UpdateIdentityPoolCommand")
+  @JSImport("@aws-sdk/client-cognito-identity/dist-types/commands/UpdateIdentityPoolCommand", "UpdateIdentityPoolCommand")
   @js.native
-  class UpdateIdentityPoolCommand protected ()
-    extends Command[
+  open class UpdateIdentityPoolCommand protected () extends Command[
           UpdateIdentityPoolCommandInput, 
           UpdateIdentityPoolCommandOutput, 
           CognitoIdentityClientResolvedConfig, 
-          js.Any, 
-          js.Any
+          Any, 
+          Any
         ] {
     def this(input: UpdateIdentityPoolCommandInput) = this()
     
-    /* private */ var deserialize: js.Any = js.native
+    /* private */ var deserialize: Any = js.native
     
+    /**
+      * @internal
+      */
     def resolveMiddleware(
       clientStack: MiddlewareStack[ServiceInputTypes, ServiceOutputTypes],
       configuration: CognitoIdentityClientResolvedConfig
@@ -41,7 +43,7 @@ object updateIdentityPoolCommandMod {
       options: HttpHandlerOptions
     ): Handler[UpdateIdentityPoolCommandInput, UpdateIdentityPoolCommandOutput] = js.native
     
-    /* private */ var serialize: js.Any = js.native
+    /* private */ var serialize: Any = js.native
   }
   
   type UpdateIdentityPoolCommandInput = IdentityPool

@@ -31,7 +31,7 @@ trait CreateTransmission extends StObject {
   var description: js.UndefOr[String] = js.undefined
   
   /** Transmission level metadata containing key/value pairs */
-  var metadata: js.UndefOr[js.Any] = js.undefined
+  var metadata: js.UndefOr[Any] = js.undefined
   
   /** JSON object in which transmission options are defined */
   var options: js.UndefOr[TransmissionOptions] = js.undefined
@@ -43,7 +43,7 @@ trait CreateTransmission extends StObject {
   var return_path: js.UndefOr[String] = js.undefined
   
   /** Key/value pairs that are provided to the substitution engine */
-  var substitution_data: js.UndefOr[js.Any] = js.undefined
+  var substitution_data: js.UndefOr[Any] = js.undefined
 }
 object CreateTransmission {
   
@@ -58,7 +58,7 @@ object CreateTransmission {
     
     inline def setBccUndefined: Self = StObject.set(x, "bcc", js.undefined)
     
-    inline def setBccVarargs(value: Recipient*): Self = StObject.set(x, "bcc", js.Array(value :_*))
+    inline def setBccVarargs(value: Recipient*): Self = StObject.set(x, "bcc", js.Array(value*))
     
     inline def setCampaign_id(value: String): Self = StObject.set(x, "campaign_id", value.asInstanceOf[js.Any])
     
@@ -68,7 +68,7 @@ object CreateTransmission {
     
     inline def setCcUndefined: Self = StObject.set(x, "cc", js.undefined)
     
-    inline def setCcVarargs(value: Recipient*): Self = StObject.set(x, "cc", js.Array(value :_*))
+    inline def setCcVarargs(value: Recipient*): Self = StObject.set(x, "cc", js.Array(value*))
     
     inline def setContent(value: InlineContent | Templateid | Emailrfc822): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
@@ -76,7 +76,7 @@ object CreateTransmission {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
@@ -88,13 +88,13 @@ object CreateTransmission {
     
     inline def setRecipientsUndefined: Self = StObject.set(x, "recipients", js.undefined)
     
-    inline def setRecipientsVarargs(value: Recipient*): Self = StObject.set(x, "recipients", js.Array(value :_*))
+    inline def setRecipientsVarargs(value: Recipient*): Self = StObject.set(x, "recipients", js.Array(value*))
     
     inline def setReturn_path(value: String): Self = StObject.set(x, "return_path", value.asInstanceOf[js.Any])
     
     inline def setReturn_pathUndefined: Self = StObject.set(x, "return_path", js.undefined)
     
-    inline def setSubstitution_data(value: js.Any): Self = StObject.set(x, "substitution_data", value.asInstanceOf[js.Any])
+    inline def setSubstitution_data(value: Any): Self = StObject.set(x, "substitution_data", value.asInstanceOf[js.Any])
     
     inline def setSubstitution_dataUndefined: Self = StObject.set(x, "substitution_data", js.undefined)
   }

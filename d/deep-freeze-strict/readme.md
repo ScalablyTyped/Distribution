@@ -10,10 +10,10 @@ recursively Object.freeze() objects and functions, works in strict mode
 | ------------------ | :-------------: |
 | Full name          | deep-freeze-strict |
 | Keywords           | freeze, deep, object, recursive, strict-mode |
-| # releases         | 0 |
-| # dependents       | 40 |
-| # downloads        | 4262351 |
-| # stars            | 10 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 433444.6666666667 |
+| # stars            | 31.0 |
 
 ## Links
 - [Homepage](https://github.com/jsdf/deep-freeze)

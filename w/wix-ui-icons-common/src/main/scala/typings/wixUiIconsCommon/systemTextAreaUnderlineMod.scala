@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.wixUiIconsCommon.textAreaUnderlineMod.TextAreaUnderlineProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,10 +11,10 @@ object systemTextAreaUnderlineMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/system/TextAreaUnderline", JSImport.Default)
   @js.native
-  val default: SFC[TextAreaUnderlineProps] = js.native
+  val default: FC[TextAreaUnderlineProps] = js.native
   
-  type _To = SFC[TextAreaUnderlineProps]
+  type _To = FC[TextAreaUnderlineProps]
   
   /* This means you don't have to write `default`, but can instead just say `systemTextAreaUnderlineMod.foo` */
-  override def _to: SFC[TextAreaUnderlineProps] = default
+  override def _to: FC[TextAreaUnderlineProps] = default
 }

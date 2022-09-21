@@ -1,6 +1,8 @@
 package typings.carbonComponents.componentsMod
 
+import typings.carbonComponents.anon.PartialToolbarOptions
 import typings.carbonComponents.toolbarMod.default
+import typings.std.HTMLElement
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,8 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("carbon-components/globals/js/components", "Toolbar")
 @js.native
-class Toolbar protected () extends default {
-  def this(element: js.Any, options: js.Any) = this()
+open class Toolbar protected () extends default {
+  def this(element: HTMLElement) = this()
+  def this(element: HTMLElement, options: PartialToolbarOptions) = this()
 }
 object Toolbar {
   
@@ -20,6 +23,6 @@ object Toolbar {
   /* static member */
   @JSImport("carbon-components/globals/js/components", "Toolbar.components")
   @js.native
-  def components: WeakMap[js.Object, js.Any] = js.native
-  inline def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
+  def components: WeakMap[js.Object, Any] = js.native
+  inline def components_=(x: WeakMap[js.Object, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
 }

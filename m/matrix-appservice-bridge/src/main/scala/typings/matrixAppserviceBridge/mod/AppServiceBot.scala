@@ -6,10 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("matrix-appservice-bridge", "AppServiceBot")
 @js.native
-class AppServiceBot protected ()
+open class AppServiceBot protected ()
   extends typings.matrixAppserviceBridge.appServiceBotMod.AppServiceBot {
   def this(
-    client: js.Any,
+    client: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MatrixClient */ Any,
+    userId: String,
     registration: typings.matrixAppservice.mod.AppServiceRegistration,
     memberCache: typings.matrixAppserviceBridge.membershipCacheMod.MembershipCache
   ) = this()

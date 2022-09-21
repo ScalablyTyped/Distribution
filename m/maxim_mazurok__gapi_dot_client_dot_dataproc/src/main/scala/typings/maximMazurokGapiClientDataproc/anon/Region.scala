@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientDataproc.anon
 
+import typings.maximMazurokGapiClientDataproc.gapi.client.dataproc.DiagnoseClusterRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,6 +19,9 @@ trait Region extends StObject {
   
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
+  
+  /** Required. The cluster name. */
+  var clusterName: String
   
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
@@ -40,13 +44,8 @@ trait Region extends StObject {
   /** Required. The Dataproc region in which to handle the request. */
   var region: String
   
-  /**
-    * Optional. A unique id used to identify the request. If the server receives two CreateClusterRequest requests with the same id, then the second request will be ignored and the
-    * first google.longrunning.Operation created and stored in the backend is returned.It is recommended to always set this value to a UUID
-    * (https://en.wikipedia.org/wiki/Universally_unique_identifier).The id must contain only letters (a-z, A-Z), numbers (0-9), underscores (_), and hyphens (-). The maximum length is
-    * 40 characters.
-    */
-  var requestId: js.UndefOr[String] = js.undefined
+  /** Request body */
+  var resource: DiagnoseClusterRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -56,8 +55,8 @@ trait Region extends StObject {
 }
 object Region {
   
-  inline def apply(projectId: String, region: String): Region = {
-    val __obj = js.Dynamic.literal(projectId = projectId.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any])
+  inline def apply(clusterName: String, projectId: String, region: String, resource: DiagnoseClusterRequest): Region = {
+    val __obj = js.Dynamic.literal(clusterName = clusterName.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Region]
   }
   
@@ -78,6 +77,8 @@ object Region {
     inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    
+    inline def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
@@ -103,9 +104,7 @@ object Region {
     
     inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
-    
-    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+    inline def setResource(value: DiagnoseClusterRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

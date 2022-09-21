@@ -38,7 +38,7 @@ object ActionExecutionOutput {
     
     inline def setOutputArtifactsUndefined: Self = StObject.set(x, "outputArtifacts", js.undefined)
     
-    inline def setOutputArtifactsVarargs(value: ArtifactDetail*): Self = StObject.set(x, "outputArtifacts", js.Array(value :_*))
+    inline def setOutputArtifactsVarargs(value: ArtifactDetail*): Self = StObject.set(x, "outputArtifacts", js.Array(value*))
     
     inline def setOutputVariables(value: OutputVariablesMap): Self = StObject.set(x, "outputVariables", value.asInstanceOf[js.Any])
     

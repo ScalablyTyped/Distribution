@@ -34,7 +34,7 @@ object CohortGroup {
     
     inline def setCohortsUndefined: Self = StObject.set(x, "cohorts", js.undefined)
     
-    inline def setCohortsVarargs(value: Cohort*): Self = StObject.set(x, "cohorts", js.Array(value :_*))
+    inline def setCohortsVarargs(value: Cohort*): Self = StObject.set(x, "cohorts", js.Array(value*))
     
     inline def setLifetimeValue(value: Boolean): Self = StObject.set(x, "lifetimeValue", value.asInstanceOf[js.Any])
     

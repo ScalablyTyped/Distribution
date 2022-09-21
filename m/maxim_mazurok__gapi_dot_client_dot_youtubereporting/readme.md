@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_youtubereporting
 
-Typings are for version 1.0.20201118
+Typings are for version 1.0.20220808
 
 ## Library description:
 TypeScript typings for YouTube Reporting API v1
@@ -10,10 +10,10 @@ TypeScript typings for YouTube Reporting API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.youtubereporting |
 | Keywords           | - |
-| # releases         | 46 |
-| # dependents       | 1 |
-| # downloads        | 3130 |
-| # stars            | 0 |
+| # releases         | 263 |
+| # dependents       | 0.0 |
+| # downloads        | 2273.6666666666665 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

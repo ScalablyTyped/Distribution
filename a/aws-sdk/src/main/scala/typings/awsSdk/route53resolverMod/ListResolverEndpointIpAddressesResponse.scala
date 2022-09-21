@@ -34,7 +34,7 @@ object ListResolverEndpointIpAddressesResponse {
     
     inline def setIpAddressesUndefined: Self = StObject.set(x, "IpAddresses", js.undefined)
     
-    inline def setIpAddressesVarargs(value: IpAddressResponse*): Self = StObject.set(x, "IpAddresses", js.Array(value :_*))
+    inline def setIpAddressesVarargs(value: IpAddressResponse*): Self = StObject.set(x, "IpAddresses", js.Array(value*))
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

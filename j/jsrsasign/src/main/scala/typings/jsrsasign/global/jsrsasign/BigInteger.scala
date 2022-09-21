@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("jsrsasign.BigInteger")
 @js.native
-class BigInteger ()
+open class BigInteger ()
   extends typings.jsrsasign.mod.BigInteger
 object BigInteger {
   

@@ -7,9 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateFleetOutput extends StObject {
   
   /**
-    * Properties for the newly created fleet.
+    * The properties for the new fleet, including the current status. All fleets are placed in NEW status on creation. 
     */
   var FleetAttributes: js.UndefOr[typings.awsSdk.gameliftMod.FleetAttributes] = js.undefined
+  
+  /**
+    * The fleet's locations and life-cycle status of each location. For new fleets, the status of all locations is set to NEW. During fleet creation, GameLift updates each location status as instances are deployed there and prepared for game hosting. This list includes an entry for the fleet's home Region. For fleets with no remote locations, only one entry, representing the home Region, is returned.
+    */
+  var LocationStates: js.UndefOr[LocationStateList] = js.undefined
 }
 object CreateFleetOutput {
   
@@ -23,5 +28,11 @@ object CreateFleetOutput {
     inline def setFleetAttributes(value: FleetAttributes): Self = StObject.set(x, "FleetAttributes", value.asInstanceOf[js.Any])
     
     inline def setFleetAttributesUndefined: Self = StObject.set(x, "FleetAttributes", js.undefined)
+    
+    inline def setLocationStates(value: LocationStateList): Self = StObject.set(x, "LocationStates", value.asInstanceOf[js.Any])
+    
+    inline def setLocationStatesUndefined: Self = StObject.set(x, "LocationStates", js.undefined)
+    
+    inline def setLocationStatesVarargs(value: LocationState*): Self = StObject.set(x, "LocationStates", js.Array(value*))
   }
 }

@@ -13,21 +13,21 @@ trait AfterCellEdit[TEntity] extends StObject {
   /**
     * raised when cell editing is complete
     * @param scope The grid scope
-    * @param {afterCellEditHandler} handler Callback
+    * @param handler Callback
     */
   def afterCellEdit(scope: IScope, handler: afterCellEditHandler[TEntity]): Unit
   
   /**
     * raised when cell editing starts on a cell
     * @param scope The grid scope
-    * @param {beginCellEditHandler} handler Callback
+    * @param handler Callback
     */
   def beginCellEdit(scope: IScope, handler: beginCellEditHandler[TEntity]): Unit
   
   /**
     * raised when cell editing is cancelled on a cell
     * @param scope The grid scope
-    * @param {cancelCellEditHandler} handler Callback
+    * @param handler Callback
     */
   def cancelCellEdit(scope: IScope, handler: cancelCellEditHandler[TEntity]): Unit
 }

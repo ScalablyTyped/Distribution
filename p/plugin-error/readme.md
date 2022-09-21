@@ -1,7 +1,7 @@
 
 # Scala.js typings for plugin-error
 
-Typings are for version 1.0.1
+Typings are for version 2.0.0
 
 ## Library description:
 Error handling for Vinyl plugins.
@@ -10,15 +10,12 @@ Error handling for Vinyl plugins.
 | ------------------ | :-------------: |
 | Full name          | plugin-error |
 | Keywords           | error, plugin, gulp-util |
-| # releases         | 0 |
-| # dependents       | 1116 |
-| # downloads        | 108481024 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 9242348.333333334 |
+| # stars            | 16.0 |
 
 ## Links
-- [Homepage](https://github.com/gulpjs/plugin-error#readme)
-- [Bugs](https://github.com/gulpjs/plugin-error/issues)
-- [Repository](https://github.com/gulpjs/plugin-error)
 - [Npm](https://www.npmjs.com/package/plugin-error)
     
 

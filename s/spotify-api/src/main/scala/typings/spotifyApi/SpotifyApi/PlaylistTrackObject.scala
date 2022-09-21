@@ -16,12 +16,12 @@ trait PlaylistTrackObject extends StObject {
   
   var is_local: Boolean
   
-  var track: TrackObjectFull
+  var track: TrackObjectFull | Null
 }
 object PlaylistTrackObject {
   
-  inline def apply(added_at: String, added_by: UserObjectPublic, is_local: Boolean, track: TrackObjectFull): PlaylistTrackObject = {
-    val __obj = js.Dynamic.literal(added_at = added_at.asInstanceOf[js.Any], added_by = added_by.asInstanceOf[js.Any], is_local = is_local.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any])
+  inline def apply(added_at: String, added_by: UserObjectPublic, is_local: Boolean): PlaylistTrackObject = {
+    val __obj = js.Dynamic.literal(added_at = added_at.asInstanceOf[js.Any], added_by = added_by.asInstanceOf[js.Any], is_local = is_local.asInstanceOf[js.Any], track = null)
     __obj.asInstanceOf[PlaylistTrackObject]
   }
   
@@ -34,5 +34,7 @@ object PlaylistTrackObject {
     inline def setIs_local(value: Boolean): Self = StObject.set(x, "is_local", value.asInstanceOf[js.Any])
     
     inline def setTrack(value: TrackObjectFull): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+    
+    inline def setTrackNull: Self = StObject.set(x, "track", null)
   }
 }

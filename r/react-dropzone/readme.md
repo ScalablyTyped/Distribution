@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-dropzone
 
-Typings are for version 11.2.4
+Typings are for version 14.2.2
 
 ## Library description:
 Simple HTML5 drag-drop zone with React.js
@@ -10,10 +10,10 @@ Simple HTML5 drag-drop zone with React.js
 | ------------------ | :-------------: |
 | Full name          | react-dropzone |
 | Keywords           | react-component, react, drag, drop, upload |
-| # releases         | 34 |
-| # dependents       | 965 |
-| # downloads        | 49436277 |
-| # stars            | 30 |
+| # releases         | 42 |
+| # dependents       | 0.0 |
+| # downloads        | 8694527.0 |
+| # stars            | 9065.0 |
 
 ## Links
 - [Homepage](https://github.com/react-dropzone/react-dropzone)

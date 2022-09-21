@@ -9,10 +9,10 @@ Element queries, fast and light
 | ------------------ | :-------------: |
 | Full name          | eq.js |
 | Keywords           | Element Queries, Responsive Web Design, JavaScript, RWD |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 28666 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1979.3333333333333 |
+| # stars            | 530.0 |
 
 ## Links
 - [Homepage](https://github.com/Snugug/eq.js#readme)

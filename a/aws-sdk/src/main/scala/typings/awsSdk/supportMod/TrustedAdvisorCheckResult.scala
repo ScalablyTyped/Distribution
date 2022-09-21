@@ -55,7 +55,7 @@ object TrustedAdvisorCheckResult {
     
     inline def setFlaggedResources(value: TrustedAdvisorResourceDetailList): Self = StObject.set(x, "flaggedResources", value.asInstanceOf[js.Any])
     
-    inline def setFlaggedResourcesVarargs(value: TrustedAdvisorResourceDetail*): Self = StObject.set(x, "flaggedResources", js.Array(value :_*))
+    inline def setFlaggedResourcesVarargs(value: TrustedAdvisorResourceDetail*): Self = StObject.set(x, "flaggedResources", js.Array(value*))
     
     inline def setResourcesSummary(value: TrustedAdvisorResourcesSummary): Self = StObject.set(x, "resourcesSummary", value.asInstanceOf[js.Any])
     

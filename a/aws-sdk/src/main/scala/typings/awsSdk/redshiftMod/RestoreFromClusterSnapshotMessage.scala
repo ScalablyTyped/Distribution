@@ -17,7 +17,12 @@ trait RestoreFromClusterSnapshotMessage extends StObject {
   var AllowVersionUpgrade: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
-    * The number of days that automated snapshots are retained. If the value is 0, automated snapshots are disabled. Even if automated snapshots are disabled, you can still create manual snapshots when you want with CreateClusterSnapshot.  Default: The value selected for the cluster from which the snapshot was taken. Constraints: Must be a value from 0 to 35.
+    * This parameter is retired. It does not set the AQUA configuration status. Amazon Redshift automatically determines whether to use AQUA (Advanced Query Accelerator).
+    */
+  var AquaConfigurationStatus: js.UndefOr[typings.awsSdk.redshiftMod.AquaConfigurationStatus] = js.undefined
+  
+  /**
+    * The number of days that automated snapshots are retained. If the value is 0, automated snapshots are disabled. Even if automated snapshots are disabled, you can still create manual snapshots when you want with CreateClusterSnapshot.  You can't disable automated snapshots for RA3 node types. Set the automated retention period from 1-35 days. Default: The value selected for the cluster from which the snapshot was taken. Constraints: Must be a value from 0 to 35.
     */
   var AutomatedSnapshotRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined
   
@@ -27,7 +32,12 @@ trait RestoreFromClusterSnapshotMessage extends StObject {
   var AvailabilityZone: js.UndefOr[String] = js.undefined
   
   /**
-    * The identifier of the cluster that will be created from restoring the snapshot. Constraints:   Must contain from 1 to 63 alphanumeric characters or hyphens.   Alphabetic characters must be lowercase.   First character must be a letter.   Cannot end with a hyphen or contain two consecutive hyphens.   Must be unique for all clusters within an AWS account.  
+    * The option to enable relocation for an Amazon Redshift cluster between Availability Zones after the cluster is restored.
+    */
+  var AvailabilityZoneRelocation: js.UndefOr[BooleanOptional] = js.undefined
+  
+  /**
+    * The identifier of the cluster that will be created from restoring the snapshot. Constraints:   Must contain from 1 to 63 alphanumeric characters or hyphens.   Alphabetic characters must be lowercase.   First character must be a letter.   Cannot end with a hyphen or contain two consecutive hyphens.   Must be unique for all clusters within an Amazon Web Services account.  
     */
   var ClusterIdentifier: String
   
@@ -47,9 +57,19 @@ trait RestoreFromClusterSnapshotMessage extends StObject {
   var ClusterSubnetGroupName: js.UndefOr[String] = js.undefined
   
   /**
+    * The Amazon Resource Name (ARN) for the IAM role that was set as default for the cluster when the cluster was last modified while it was restored from a snapshot.
+    */
+  var DefaultIamRoleArn: js.UndefOr[String] = js.undefined
+  
+  /**
     * The elastic IP (EIP) address for the cluster.
     */
   var ElasticIp: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Enables support for restoring an unencrypted snapshot to a cluster encrypted with Key Management Service (KMS) and a customer managed key.
+    */
+  var Encrypted: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
     * An option that specifies whether to create the cluster with enhanced VPC routing enabled. To create a cluster that uses enhanced VPC routing, the cluster must be in a VPC. For more information, see Enhanced VPC Routing in the Amazon Redshift Cluster Management Guide. If this option is true, enhanced VPC routing is enabled.  Default: false
@@ -67,12 +87,12 @@ trait RestoreFromClusterSnapshotMessage extends StObject {
   var HsmConfigurationIdentifier: js.UndefOr[String] = js.undefined
   
   /**
-    * A list of AWS Identity and Access Management (IAM) roles that can be used by the cluster to access other AWS services. You must supply the IAM roles in their Amazon Resource Name (ARN) format. You can supply up to 10 IAM roles in a single request. A cluster can have up to 10 IAM roles associated at any time.
+    * A list of Identity and Access Management (IAM) roles that can be used by the cluster to access other Amazon Web Services services. You must supply the IAM roles in their Amazon Resource Name (ARN) format.  The maximum number of IAM roles that you can associate is subject to a quota. For more information, go to Quotas and limits in the Amazon Redshift Cluster Management Guide.
     */
   var IamRoles: js.UndefOr[IamRoleArnList] = js.undefined
   
   /**
-    * The AWS Key Management Service (KMS) key ID of the encryption key that you want to use to encrypt data in the cluster that you restore from a shared snapshot.
+    * The Key Management Service (KMS) key ID of the encryption key that encrypts data in the cluster restored from a shared snapshot. You can also provide the key ID when you restore from an unencrypted snapshot to an encrypted cluster in the same account. Additionally, you can specify a new KMS key ID when you restore from an encrypted snapshot in the same account in order to change it. In that case, the restored cluster is encrypted with the new KMS key ID.
     */
   var KmsKeyId: js.UndefOr[String] = js.undefined
   
@@ -97,7 +117,7 @@ trait RestoreFromClusterSnapshotMessage extends StObject {
   var NumberOfNodes: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
-    * The AWS customer account used to create or copy the snapshot. Required if you are restoring a snapshot you do not own, optional if you own the snapshot.
+    * The Amazon Web Services account used to create or copy the snapshot. Required if you are restoring a snapshot you do not own, optional if you own the snapshot.
     */
   var OwnerAccount: js.UndefOr[String] = js.undefined
   
@@ -117,19 +137,34 @@ trait RestoreFromClusterSnapshotMessage extends StObject {
   var PubliclyAccessible: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
+    * The identifier of the target reserved node offering.
+    */
+  var ReservedNodeId: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The Amazon Resource Name (ARN) of the snapshot associated with the message to restore from a cluster. You can specify this parameter or snapshotIdentifier, but not both.
+    */
+  var SnapshotArn: js.UndefOr[String] = js.undefined
+  
+  /**
     * The name of the cluster the source snapshot was created from. This parameter is required if your IAM user has a policy containing a snapshot resource element that specifies anything other than * for the cluster name.
     */
   var SnapshotClusterIdentifier: js.UndefOr[String] = js.undefined
   
   /**
-    * The name of the snapshot from which to create the new cluster. This parameter isn't case sensitive. Example: my-snapshot-id 
+    * The name of the snapshot from which to create the new cluster. This parameter isn't case sensitive. You can specify this parameter or snapshotArn, but not both. Example: my-snapshot-id 
     */
-  var SnapshotIdentifier: String
+  var SnapshotIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * A unique identifier for the snapshot schedule.
     */
   var SnapshotScheduleIdentifier: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The identifier of the target reserved node offering.
+    */
+  var TargetReservedNodeOfferingId: js.UndefOr[String] = js.undefined
   
   /**
     * A list of Virtual Private Cloud (VPC) security groups to be associated with the cluster. Default: The default VPC security group is associated with the cluster. VPC security groups only apply to clusters in VPCs.
@@ -138,8 +173,8 @@ trait RestoreFromClusterSnapshotMessage extends StObject {
 }
 object RestoreFromClusterSnapshotMessage {
   
-  inline def apply(ClusterIdentifier: String, SnapshotIdentifier: String): RestoreFromClusterSnapshotMessage = {
-    val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier.asInstanceOf[js.Any], SnapshotIdentifier = SnapshotIdentifier.asInstanceOf[js.Any])
+  inline def apply(ClusterIdentifier: String): RestoreFromClusterSnapshotMessage = {
+    val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestoreFromClusterSnapshotMessage]
   }
   
@@ -153,11 +188,19 @@ object RestoreFromClusterSnapshotMessage {
     
     inline def setAllowVersionUpgradeUndefined: Self = StObject.set(x, "AllowVersionUpgrade", js.undefined)
     
+    inline def setAquaConfigurationStatus(value: AquaConfigurationStatus): Self = StObject.set(x, "AquaConfigurationStatus", value.asInstanceOf[js.Any])
+    
+    inline def setAquaConfigurationStatusUndefined: Self = StObject.set(x, "AquaConfigurationStatus", js.undefined)
+    
     inline def setAutomatedSnapshotRetentionPeriod(value: IntegerOptional): Self = StObject.set(x, "AutomatedSnapshotRetentionPeriod", value.asInstanceOf[js.Any])
     
     inline def setAutomatedSnapshotRetentionPeriodUndefined: Self = StObject.set(x, "AutomatedSnapshotRetentionPeriod", js.undefined)
     
     inline def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
+    
+    inline def setAvailabilityZoneRelocation(value: BooleanOptional): Self = StObject.set(x, "AvailabilityZoneRelocation", value.asInstanceOf[js.Any])
+    
+    inline def setAvailabilityZoneRelocationUndefined: Self = StObject.set(x, "AvailabilityZoneRelocation", js.undefined)
     
     inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
@@ -171,15 +214,23 @@ object RestoreFromClusterSnapshotMessage {
     
     inline def setClusterSecurityGroupsUndefined: Self = StObject.set(x, "ClusterSecurityGroups", js.undefined)
     
-    inline def setClusterSecurityGroupsVarargs(value: String*): Self = StObject.set(x, "ClusterSecurityGroups", js.Array(value :_*))
+    inline def setClusterSecurityGroupsVarargs(value: String*): Self = StObject.set(x, "ClusterSecurityGroups", js.Array(value*))
     
     inline def setClusterSubnetGroupName(value: String): Self = StObject.set(x, "ClusterSubnetGroupName", value.asInstanceOf[js.Any])
     
     inline def setClusterSubnetGroupNameUndefined: Self = StObject.set(x, "ClusterSubnetGroupName", js.undefined)
     
+    inline def setDefaultIamRoleArn(value: String): Self = StObject.set(x, "DefaultIamRoleArn", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultIamRoleArnUndefined: Self = StObject.set(x, "DefaultIamRoleArn", js.undefined)
+    
     inline def setElasticIp(value: String): Self = StObject.set(x, "ElasticIp", value.asInstanceOf[js.Any])
     
     inline def setElasticIpUndefined: Self = StObject.set(x, "ElasticIp", js.undefined)
+    
+    inline def setEncrypted(value: BooleanOptional): Self = StObject.set(x, "Encrypted", value.asInstanceOf[js.Any])
+    
+    inline def setEncryptedUndefined: Self = StObject.set(x, "Encrypted", js.undefined)
     
     inline def setEnhancedVpcRouting(value: BooleanOptional): Self = StObject.set(x, "EnhancedVpcRouting", value.asInstanceOf[js.Any])
     
@@ -197,7 +248,7 @@ object RestoreFromClusterSnapshotMessage {
     
     inline def setIamRolesUndefined: Self = StObject.set(x, "IamRoles", js.undefined)
     
-    inline def setIamRolesVarargs(value: String*): Self = StObject.set(x, "IamRoles", js.Array(value :_*))
+    inline def setIamRolesVarargs(value: String*): Self = StObject.set(x, "IamRoles", js.Array(value*))
     
     inline def setKmsKeyId(value: String): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     
@@ -235,20 +286,34 @@ object RestoreFromClusterSnapshotMessage {
     
     inline def setPubliclyAccessibleUndefined: Self = StObject.set(x, "PubliclyAccessible", js.undefined)
     
+    inline def setReservedNodeId(value: String): Self = StObject.set(x, "ReservedNodeId", value.asInstanceOf[js.Any])
+    
+    inline def setReservedNodeIdUndefined: Self = StObject.set(x, "ReservedNodeId", js.undefined)
+    
+    inline def setSnapshotArn(value: String): Self = StObject.set(x, "SnapshotArn", value.asInstanceOf[js.Any])
+    
+    inline def setSnapshotArnUndefined: Self = StObject.set(x, "SnapshotArn", js.undefined)
+    
     inline def setSnapshotClusterIdentifier(value: String): Self = StObject.set(x, "SnapshotClusterIdentifier", value.asInstanceOf[js.Any])
     
     inline def setSnapshotClusterIdentifierUndefined: Self = StObject.set(x, "SnapshotClusterIdentifier", js.undefined)
     
     inline def setSnapshotIdentifier(value: String): Self = StObject.set(x, "SnapshotIdentifier", value.asInstanceOf[js.Any])
     
+    inline def setSnapshotIdentifierUndefined: Self = StObject.set(x, "SnapshotIdentifier", js.undefined)
+    
     inline def setSnapshotScheduleIdentifier(value: String): Self = StObject.set(x, "SnapshotScheduleIdentifier", value.asInstanceOf[js.Any])
     
     inline def setSnapshotScheduleIdentifierUndefined: Self = StObject.set(x, "SnapshotScheduleIdentifier", js.undefined)
+    
+    inline def setTargetReservedNodeOfferingId(value: String): Self = StObject.set(x, "TargetReservedNodeOfferingId", value.asInstanceOf[js.Any])
+    
+    inline def setTargetReservedNodeOfferingIdUndefined: Self = StObject.set(x, "TargetReservedNodeOfferingId", js.undefined)
     
     inline def setVpcSecurityGroupIds(value: VpcSecurityGroupIdList): Self = StObject.set(x, "VpcSecurityGroupIds", value.asInstanceOf[js.Any])
     
     inline def setVpcSecurityGroupIdsUndefined: Self = StObject.set(x, "VpcSecurityGroupIds", js.undefined)
     
-    inline def setVpcSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "VpcSecurityGroupIds", js.Array(value :_*))
+    inline def setVpcSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "VpcSecurityGroupIds", js.Array(value*))
   }
 }

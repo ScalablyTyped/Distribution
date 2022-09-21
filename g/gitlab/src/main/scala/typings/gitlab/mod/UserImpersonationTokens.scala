@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("gitlab", "UserImpersonationTokens")
 @js.native
-class UserImpersonationTokens ()
+open class UserImpersonationTokens ()
   extends typings.gitlab.servicesMod.UserImpersonationTokens {
   def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
 }

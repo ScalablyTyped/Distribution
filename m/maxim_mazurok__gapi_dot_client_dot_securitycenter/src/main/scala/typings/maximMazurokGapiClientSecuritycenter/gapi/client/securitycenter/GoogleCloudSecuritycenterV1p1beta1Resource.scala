@@ -6,6 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GoogleCloudSecuritycenterV1p1beta1Resource extends StObject {
   
+  /**
+    * Output only. Contains a Folder message for each folder in the assets ancestry. The first folder is the deepest nested folder, and the last folder is the folder directly under the
+    * Organization.
+    */
+  var folders: js.UndefOr[js.Array[GoogleCloudSecuritycenterV1p1beta1Folder]] = js.undefined
+  
   /** The full resource name of the resource. See: https://cloud.google.com/apis/design/resource_names#full_resource_name */
   var name: js.UndefOr[String] = js.undefined
   
@@ -18,7 +24,7 @@ trait GoogleCloudSecuritycenterV1p1beta1Resource extends StObject {
   /** The full resource name of project that the resource belongs to. */
   var project: js.UndefOr[String] = js.undefined
   
-  /** The human readable name of project that the resource belongs to. */
+  /** The project id that the resource belongs to. */
   var projectDisplayName: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudSecuritycenterV1p1beta1Resource {
@@ -29,6 +35,12 @@ object GoogleCloudSecuritycenterV1p1beta1Resource {
   }
   
   extension [Self <: GoogleCloudSecuritycenterV1p1beta1Resource](x: Self) {
+    
+    inline def setFolders(value: js.Array[GoogleCloudSecuritycenterV1p1beta1Folder]): Self = StObject.set(x, "folders", value.asInstanceOf[js.Any])
+    
+    inline def setFoldersUndefined: Self = StObject.set(x, "folders", js.undefined)
+    
+    inline def setFoldersVarargs(value: GoogleCloudSecuritycenterV1p1beta1Folder*): Self = StObject.set(x, "folders", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

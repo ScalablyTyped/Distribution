@@ -1,5 +1,6 @@
 package typings.blueprintjsCore
 
+import typings.blueprintjsCore.anon.End
 import typings.blueprintjsCore.commonMod.AbstractPureComponent2
 import typings.blueprintjsCore.multiSliderMod.ISliderBaseProps
 import org.scalablytyped.runtime.StObject
@@ -10,10 +11,10 @@ object rangeSliderMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/slider/rangeSlider", "RangeSlider")
   @js.native
-  class RangeSlider protected ()
-    extends AbstractPureComponent2[IRangeSliderProps, js.Object, js.Object] {
-    def this(props: IRangeSliderProps) = this()
-    def this(props: IRangeSliderProps, context: js.Any) = this()
+  open class RangeSlider protected ()
+    extends AbstractPureComponent2[RangeSliderProps, js.Object, js.Object] {
+    def this(props: RangeSliderProps) = this()
+    def this(props: RangeSliderProps, context: Any) = this()
   }
   /* static members */
   object RangeSlider {
@@ -24,8 +25,8 @@ object rangeSliderMod {
     
     @JSImport("@blueprintjs/core/lib/esm/components/slider/rangeSlider", "RangeSlider.defaultProps")
     @js.native
-    def defaultProps: IRangeSliderProps = js.native
-    inline def defaultProps_=(x: IRangeSliderProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: RangeSliderProps = js.native
+    inline def defaultProps_=(x: RangeSliderProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/slider/rangeSlider", "RangeSlider.displayName")
     @js.native
@@ -37,6 +38,9 @@ object rangeSliderMod {
     extends StObject
        with ISliderBaseProps {
     
+    /** HTML props to apply to the slider Handles */
+    var handleHtmlProps: js.UndefOr[End] = js.undefined
+    
     /** Callback invoked when the range value changes. */
     var onChange: js.UndefOr[js.Function1[/* value */ NumberRange, Unit]] = js.undefined
     
@@ -45,6 +49,7 @@ object rangeSliderMod {
     
     /**
       * Range value of slider. Handles will be rendered at each position in the range.
+      *
       * @default [0, 10]
       */
     var value: js.UndefOr[NumberRange] = js.undefined
@@ -57,6 +62,10 @@ object rangeSliderMod {
     }
     
     extension [Self <: IRangeSliderProps](x: Self) {
+      
+      inline def setHandleHtmlProps(value: End): Self = StObject.set(x, "handleHtmlProps", value.asInstanceOf[js.Any])
+      
+      inline def setHandleHtmlPropsUndefined: Self = StObject.set(x, "handleHtmlProps", js.undefined)
       
       inline def setOnChange(value: /* value */ NumberRange => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
@@ -73,4 +82,6 @@ object rangeSliderMod {
   }
   
   type NumberRange = js.Tuple2[Double, Double]
+  
+  type RangeSliderProps = IRangeSliderProps
 }

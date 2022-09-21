@@ -12,12 +12,16 @@ trait ColorSlider
   /**
     * Only applicable when three thumbs (i.e.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSlider.html#handlesSyncedToPrimary)
     */
   var handlesSyncedToPrimary: Boolean = js.native
   
   /**
     * When `true`, the slider will render a third handle between the two handles already provided by default.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSlider.html#primaryHandleEnabled)
     */
@@ -35,8 +39,8 @@ trait ColorSlider
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSlider.html#updateFromRendererResult)
     */
-  def updateFromRendererResult(rendererResult: ContinuousRendererResult): Unit = js.native
-  def updateFromRendererResult(rendererResult: ContinuousRendererResult, histogramResult: HistogramResult): Unit = js.native
+  def updateFromRendererResult(rendererResult: ContinuousRendererResult): scala.Unit = js.native
+  def updateFromRendererResult(rendererResult: ContinuousRendererResult, histogramResult: HistogramResult): scala.Unit = js.native
   
   /**
     * The view model for the ColorSlider widget.

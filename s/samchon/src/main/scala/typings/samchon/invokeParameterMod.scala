@@ -1,7 +1,6 @@
 package typings.samchon
 
 import typings.samchon.entityMod.Entity
-import typings.std.Uint8Array
 import typings.sxml.mod.XML
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,13 +13,14 @@ object invokeParameterMod {
   /**
     * Default Constructor.
     */
-  class InvokeParameter () extends Entity {
+  open class InvokeParameter () extends Entity {
     def this(`val`: String) = this()
+    def this(`val`: js.typedarray.Uint8Array) = this()
     def this(`val`: Boolean) = this()
     def this(`val`: Double) = this()
-    def this(`val`: Uint8Array) = this()
     def this(`val`: XML) = this()
     def this(name: String, `val`: String) = this()
+    def this(name: String, `val`: js.typedarray.Uint8Array) = this()
     /**
       * Construct from variable name and number value.
       *
@@ -29,7 +29,6 @@ object invokeParameterMod {
       */
     def this(name: String, `val`: Boolean) = this()
     def this(name: String, `val`: Double) = this()
-    def this(name: String, `val`: Uint8Array) = this()
     def this(name: String, `val`: XML) = this()
     
     /**
@@ -45,7 +44,7 @@ object invokeParameterMod {
     /**
       * Get value.
       */
-    def getValue(): js.Any = js.native
+    def getValue(): Any = js.native
     
     /**
       * Name of the parameter.
@@ -55,9 +54,9 @@ object invokeParameterMod {
     /* protected */ var name: String = js.native
     
     def setValue(value: String): Unit = js.native
+    def setValue(value: js.typedarray.Uint8Array): Unit = js.native
     def setValue(value: Boolean): Unit = js.native
     def setValue(value: Double): Unit = js.native
-    def setValue(value: Uint8Array): Unit = js.native
     def setValue(value: XML): Unit = js.native
     
     /**
@@ -68,6 +67,6 @@ object invokeParameterMod {
     /**
       * Value of the parameter.
       */
-    /* protected */ var value: Boolean | Double | String | XML | Uint8Array = js.native
+    /* protected */ var value: Boolean | Double | String | XML | js.typedarray.Uint8Array = js.native
   }
 }

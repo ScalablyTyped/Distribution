@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeChannelBanResponse extends StObject {
   
   /**
-    * The the details of the ban.
+    * The details of the ban.
     */
   var ChannelBan: js.UndefOr[typings.awsSdk.chimeMod.ChannelBan] = js.undefined
 }

@@ -21,10 +21,10 @@ object GELJPY {
     
     inline def setGEL(value: js.Array[String]): Self = StObject.set(x, "GEL", value.asInstanceOf[js.Any])
     
-    inline def setGELVarargs(value: String*): Self = StObject.set(x, "GEL", js.Array(value :_*))
+    inline def setGELVarargs(value: String*): Self = StObject.set(x, "GEL", js.Array(value*))
     
     inline def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
     
-    inline def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value :_*))
+    inline def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value*))
   }
 }

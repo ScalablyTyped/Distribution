@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.WebXRControllerPhysics")
 @js.native
-class WebXRControllerPhysics protected ()
+open class WebXRControllerPhysics protected ()
   extends StObject
      with typings.babylonjs.BABYLON.WebXRControllerPhysics {
   /**
@@ -33,7 +33,7 @@ object WebXRControllerPhysics {
     */
   @JSGlobal("BABYLON.WebXRControllerPhysics.Name")
   @js.native
-  val Name: String = js.native
+  val Name: /* "xr-physics-controller" */ String = js.native
   
   /**
     * The (Babylon) version of this module.
@@ -42,5 +42,5 @@ object WebXRControllerPhysics {
     */
   @JSGlobal("BABYLON.WebXRControllerPhysics.Version")
   @js.native
-  val Version: Double = js.native
+  val Version: /* 1 */ Double = js.native
 }

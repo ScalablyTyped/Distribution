@@ -18,6 +18,9 @@ trait ScanConfig extends StObject {
   /** Controls export of scan configurations and results to Security Command Center. */
   var exportToSecurityCommandCenter: js.UndefOr[String] = js.undefined
   
+  /** Whether to keep scanning even if most requests return HTTP error codes. */
+  var ignoreHttpStatusErrors: js.UndefOr[Boolean] = js.undefined
+  
   /** Whether the scan config is managed by Web Security Scanner, output only. */
   var managedScan: js.UndefOr[Boolean] = js.undefined
   
@@ -62,7 +65,7 @@ object ScanConfig {
     
     inline def setBlacklistPatternsUndefined: Self = StObject.set(x, "blacklistPatterns", js.undefined)
     
-    inline def setBlacklistPatternsVarargs(value: String*): Self = StObject.set(x, "blacklistPatterns", js.Array(value :_*))
+    inline def setBlacklistPatternsVarargs(value: String*): Self = StObject.set(x, "blacklistPatterns", js.Array(value*))
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
@@ -71,6 +74,10 @@ object ScanConfig {
     inline def setExportToSecurityCommandCenter(value: String): Self = StObject.set(x, "exportToSecurityCommandCenter", value.asInstanceOf[js.Any])
     
     inline def setExportToSecurityCommandCenterUndefined: Self = StObject.set(x, "exportToSecurityCommandCenter", js.undefined)
+    
+    inline def setIgnoreHttpStatusErrors(value: Boolean): Self = StObject.set(x, "ignoreHttpStatusErrors", value.asInstanceOf[js.Any])
+    
+    inline def setIgnoreHttpStatusErrorsUndefined: Self = StObject.set(x, "ignoreHttpStatusErrors", js.undefined)
     
     inline def setManagedScan(value: Boolean): Self = StObject.set(x, "managedScan", value.asInstanceOf[js.Any])
     
@@ -96,7 +103,7 @@ object ScanConfig {
     
     inline def setStartingUrlsUndefined: Self = StObject.set(x, "startingUrls", js.undefined)
     
-    inline def setStartingUrlsVarargs(value: String*): Self = StObject.set(x, "startingUrls", js.Array(value :_*))
+    inline def setStartingUrlsVarargs(value: String*): Self = StObject.set(x, "startingUrls", js.Array(value*))
     
     inline def setStaticIpScan(value: Boolean): Self = StObject.set(x, "staticIpScan", value.asInstanceOf[js.Any])
     

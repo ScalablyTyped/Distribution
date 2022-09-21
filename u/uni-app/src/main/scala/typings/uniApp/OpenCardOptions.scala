@@ -39,7 +39,7 @@ object OpenCardOptions {
     
     inline def setCardListUndefined: Self = StObject.set(x, "cardList", js.undefined)
     
-    inline def setCardListVarargs(value: OpenCardData*): Self = StObject.set(x, "cardList", js.Array(value :_*))
+    inline def setCardListVarargs(value: OpenCardData*): Self = StObject.set(x, "cardList", js.Array(value*))
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

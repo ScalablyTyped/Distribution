@@ -37,7 +37,7 @@ object AccelerometerAnalogOption {
     
     inline def setPins(value: js.Array[String]): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
     
-    inline def setPinsVarargs(value: String*): Self = StObject.set(x, "pins", js.Array(value :_*))
+    inline def setPinsVarargs(value: String*): Self = StObject.set(x, "pins", js.Array(value*))
     
     inline def setSensitivity(value: Double): Self = StObject.set(x, "sensitivity", value.asInstanceOf[js.Any])
     
@@ -47,6 +47,6 @@ object AccelerometerAnalogOption {
     
     inline def setZeroVUndefined: Self = StObject.set(x, "zeroV", js.undefined)
     
-    inline def setZeroVVarargs(value: Double*): Self = StObject.set(x, "zeroV", js.Array(value :_*))
+    inline def setZeroVVarargs(value: Double*): Self = StObject.set(x, "zeroV", js.Array(value*))
   }
 }

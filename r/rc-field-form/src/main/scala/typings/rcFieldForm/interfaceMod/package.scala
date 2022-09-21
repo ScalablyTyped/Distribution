@@ -1,46 +1,46 @@
 package typings.rcFieldForm.interfaceMod
 
+import org.scalablytyped.runtime.TopLevel
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type EventArgs = js.Array[js.Any]
+type EventArgs = js.Array[Any]
 
-type InternalNamePath = js.Array[java.lang.String | scala.Double]
+type InternalNamePath = js.Array[String | Double]
 
-type InternalValidateFields = js.Function2[
-/* nameList */ js.UndefOr[js.Array[typings.rcFieldForm.interfaceMod.NamePath]], 
-/* options */ js.UndefOr[typings.rcFieldForm.interfaceMod.ValidateOptions], 
-js.Promise[typings.rcFieldForm.interfaceMod.Store]]
+type InternalValidateFields[Values] = js.Function2[
+/* nameList */ js.UndefOr[js.Array[NamePath]], 
+/* options */ js.UndefOr[ValidateOptions], 
+js.Promise[Values]]
 
-type NamePath = java.lang.String | scala.Double | typings.rcFieldForm.interfaceMod.InternalNamePath
+type NamePath = String | Double | InternalNamePath
 
 /** Only return partial when type is not any */
 type RecursivePartial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-{[ P in keyof T ]:? T[P] extends std.Array<infer U>? std.Array</ * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias rc-field-form.rc-field-form/es/interface.RecursivePartial<U> * / object> : T[P] extends object? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias rc-field-form.rc-field-form/es/interface.RecursivePartial<T[P]> * / object : T[P]}
-  */ typings.rcFieldForm.rcFieldFormStrings.RecursivePartial & org.scalablytyped.runtime.TopLevel[js.Any]
+{[ P in keyof T ]:? T[P] extends std.Array<infer U>? std.Array<rc-field-form.rc-field-form/es/interface.RecursivePartial<any>> : T[P] extends object? rc-field-form.rc-field-form/es/interface.RecursivePartial<T[P]> : T[P]}
+  */ typings.rcFieldForm.rcFieldFormStrings.RecursivePartial & TopLevel[Any]
 
-type Rule = typings.rcFieldForm.interfaceMod.RuleObject | typings.rcFieldForm.interfaceMod.RuleRender
+type Rule = RuleObject | RuleRender
 
-type RuleRender = js.Function1[
-/* form */ typings.rcFieldForm.interfaceMod.FormInstance[js.Any], 
-typings.rcFieldForm.interfaceMod.RuleObject]
+type RuleRender = js.Function1[/* form */ FormInstance[Any], RuleObject]
 
-type Store = org.scalablytyped.runtime.StringDictionary[typings.rcFieldForm.interfaceMod.StoreValue]
+type Store = Record[String, StoreValue]
 
-type StoreValue = js.Any
+type StoreValue = Any
 
-type ValidateFields = js.Function1[
-/* nameList */ js.UndefOr[js.Array[typings.rcFieldForm.interfaceMod.NamePath]], 
-js.Promise[typings.rcFieldForm.interfaceMod.Store]]
+type ValidateFields[Values] = js.Function1[/* nameList */ js.UndefOr[js.Array[NamePath]], js.Promise[Values]]
 
-type ValidateMessage = java.lang.String | js.Function0[java.lang.String]
+type ValidateMessage = String | js.Function0[String]
 
 type Validator = js.Function3[
-/* rule */ typings.rcFieldForm.interfaceMod.RuleObject, 
-/* value */ typings.rcFieldForm.interfaceMod.StoreValue, 
-/* callback */ js.Function1[/* error */ js.UndefOr[java.lang.String], scala.Unit], 
-(js.Promise[scala.Unit | js.Any]) | scala.Unit]
+/* rule */ RuleObject, 
+/* value */ StoreValue, 
+/* callback */ js.Function1[/* error */ js.UndefOr[String], Unit], 
+(js.Promise[Unit | Any]) | Unit]
 
-type ValuedNotifyInfo = typings.rcFieldForm.interfaceMod.NotifyInfo & typings.rcFieldForm.anon.Store
+type ValuedNotifyInfo = NotifyInfo & typings.rcFieldForm.anon.Store
+
+type WatchCallBack = js.Function2[/* values */ Store, /* namePathList */ js.Array[InternalNamePath], Unit]

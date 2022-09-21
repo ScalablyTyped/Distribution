@@ -27,15 +27,15 @@ trait JsonRpcClient extends StObject {
     */
   def batch(
     callback: js.Function1[/* batch */ this.type, Unit],
-    allDoneCb: js.Function1[/* result */ js.Any, Unit],
-    errorCb: js.Function1[/* error */ js.Any, Unit]
+    allDoneCb: js.Function1[/* result */ Any, Unit],
+    errorCb: js.Function1[/* error */ Any, Unit]
   ): Unit = js.native
   
   def call(
     method: String,
-    params: js.Array[js.Any],
-    successCb: js.Function1[/* result */ js.Any, Unit],
-    errorCb: js.Function1[/* result */ js.Any, Unit]
+    params: js.Array[Any],
+    successCb: js.Function1[/* result */ Any, Unit],
+    errorCb: js.Function1[/* result */ Any, Unit]
   ): JQueryDeferred[JQueryXHR] = js.native
   /**
     * @fn call
@@ -51,11 +51,11 @@ trait JsonRpcClient extends StObject {
   def call(
     method: String,
     params: js.Object,
-    successCb: js.Function1[/* result */ js.Any, Unit],
-    errorCb: js.Function1[/* result */ js.Any, Unit]
+    successCb: js.Function1[/* result */ Any, Unit],
+    errorCb: js.Function1[/* result */ Any, Unit]
   ): JQueryDeferred[JQueryXHR] = js.native
   
-  def notify(method: String, params: js.Array[js.Any]): JQueryDeferred[JQueryXHR] = js.native
+  def notify(method: String, params: js.Array[Any]): JQueryDeferred[JQueryXHR] = js.native
   /**
     * Notify sends a command to the server that won't need a response.  In http, there is probably
     * an empty response - that will be dropped, but in ws there should be no response at all.

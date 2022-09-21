@@ -1,0 +1,26 @@
+package typings.antdMobile.anon
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait Action extends StObject {
+  
+  var action: typings.antdMobile.dialogActionButtonMod.Action
+  
+  def onAction(): Unit | js.Promise[Unit]
+}
+object Action {
+  
+  inline def apply(action: typings.antdMobile.dialogActionButtonMod.Action, onAction: () => Unit | js.Promise[Unit]): Action = {
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], onAction = js.Any.fromFunction0(onAction))
+    __obj.asInstanceOf[Action]
+  }
+  
+  extension [Self <: Action](x: Self) {
+    
+    inline def setAction(value: typings.antdMobile.dialogActionButtonMod.Action): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    
+    inline def setOnAction(value: () => Unit | js.Promise[Unit]): Self = StObject.set(x, "onAction", js.Any.fromFunction0(value))
+  }
+}

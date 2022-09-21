@@ -114,6 +114,6 @@ object SlideProperties {
     
     inline def setVisibleLayersUndefined: Self = StObject.set(x, "visibleLayers", js.undefined)
     
-    inline def setVisibleLayersVarargs(value: SlideVisibleLayersProperties*): Self = StObject.set(x, "visibleLayers", js.Array(value :_*))
+    inline def setVisibleLayersVarargs(value: SlideVisibleLayersProperties*): Self = StObject.set(x, "visibleLayers", js.Array(value*))
   }
 }

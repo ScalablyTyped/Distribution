@@ -20,7 +20,7 @@ trait SearchFieldProps extends StObject {
   /**
     * callback funciton to call when a key is released
     */
-  var onKeyUp: js.UndefOr[js.Function1[/* e */ KeyboardEvent[js.Any], Unit]] = js.undefined
+  var onKeyUp: js.UndefOr[js.Function1[/* e */ KeyboardEvent[Any], Unit]] = js.undefined
   
   /**
     * Placeholder text for the search field
@@ -44,7 +44,7 @@ object SearchFieldProps {
     
     inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    inline def setOnKeyUp(value: /* e */ KeyboardEvent[js.Any] => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
+    inline def setOnKeyUp(value: /* e */ KeyboardEvent[Any] => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
     
     inline def setOnKeyUpUndefined: Self = StObject.set(x, "onKeyUp", js.undefined)
     

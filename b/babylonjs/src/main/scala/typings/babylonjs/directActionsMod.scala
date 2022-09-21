@@ -11,20 +11,38 @@ object directActionsMod {
   
   @JSImport("babylonjs/Actions/directActions", "CombineAction")
   @js.native
-  class CombineAction protected () extends Action {
+  open class CombineAction protected () extends Action {
     /**
       * Instantiate the action
       * @param triggerOptions defines the trigger options
       * @param children defines the list of aggregated animations to run
       * @param condition defines the trigger related conditions
+      * @param enableChildrenConditions defines if the children actions conditions should be check before execution
       */
-    def this(triggerOptions: js.Any, children: js.Array[Action]) = this()
-    def this(triggerOptions: js.Any, children: js.Array[Action], condition: Condition) = this()
+    def this(triggerOptions: Any, children: js.Array[Action]) = this()
+    def this(triggerOptions: Any, children: js.Array[Action], condition: Condition) = this()
+    def this(
+      triggerOptions: Any,
+      children: js.Array[Action],
+      condition: Unit,
+      enableChildrenConditions: Boolean
+    ) = this()
+    def this(
+      triggerOptions: Any,
+      children: js.Array[Action],
+      condition: Condition,
+      enableChildrenConditions: Boolean
+    ) = this()
     
     /**
       * The list of aggregated animations to run.
       */
     var children: js.Array[Action] = js.native
+    
+    /**
+      * defines if the children actions conditions should be check before execution
+      */
+    var enableChildrenConditions: Boolean = js.native
   }
   
   @JSImport("babylonjs/Actions/directActions", "DoNothingAction")
@@ -34,23 +52,23 @@ object directActionsMod {
     * @param triggerOptions defines the trigger options
     * @param condition defines the trigger related conditions
     */
-  class DoNothingAction () extends Action {
-    def this(triggerOptions: js.Any) = this()
-    def this(triggerOptions: js.Any, condition: Condition) = this()
+  open class DoNothingAction () extends Action {
+    def this(triggerOptions: Any) = this()
+    def this(triggerOptions: Any, condition: Condition) = this()
     def this(triggerOptions: Unit, condition: Condition) = this()
   }
   
   @JSImport("babylonjs/Actions/directActions", "ExecuteCodeAction")
   @js.native
-  class ExecuteCodeAction protected () extends Action {
+  open class ExecuteCodeAction protected () extends Action {
     /**
       * Instantiate the action
       * @param triggerOptions defines the trigger options
       * @param func defines the callback function to run
       * @param condition defines the trigger related conditions
       */
-    def this(triggerOptions: js.Any, func: js.Function1[/* evt */ ActionEvent, Unit]) = this()
-    def this(triggerOptions: js.Any, func: js.Function1[/* evt */ ActionEvent, Unit], condition: Condition) = this()
+    def this(triggerOptions: Any, func: js.Function1[/* evt */ ActionEvent, Unit]) = this()
+    def this(triggerOptions: Any, func: js.Function1[/* evt */ ActionEvent, Unit], condition: Condition) = this()
     
     /**
       * The callback function to run.
@@ -60,7 +78,7 @@ object directActionsMod {
   
   @JSImport("babylonjs/Actions/directActions", "IncrementValueAction")
   @js.native
-  class IncrementValueAction protected () extends Action {
+  open class IncrementValueAction protected () extends Action {
     /**
       * Instantiate the action
       * @param triggerOptions defines the trigger options
@@ -69,14 +87,14 @@ object directActionsMod {
       * @param value defines the value value we should increment the property by
       * @param condition defines the trigger related conditions
       */
-    def this(triggerOptions: js.Any, target: js.Any, propertyPath: String, value: js.Any) = this()
-    def this(triggerOptions: js.Any, target: js.Any, propertyPath: String, value: js.Any, condition: Condition) = this()
+    def this(triggerOptions: Any, target: Any, propertyPath: String, value: Any) = this()
+    def this(triggerOptions: Any, target: Any, propertyPath: String, value: Any, condition: Condition) = this()
     
-    /* private */ var _effectiveTarget: js.Any = js.native
+    /* private */ var _effectiveTarget: Any = js.native
     
-    /* private */ var _property: js.Any = js.native
+    /* private */ var _property: Any = js.native
     
-    /* private */ var _target: js.Any = js.native
+    /* private */ var _target: Any = js.native
     
     /**
       * The path of the property to increment in the target.
@@ -86,34 +104,27 @@ object directActionsMod {
     /**
       * The value we should increment the property by.
       */
-    var value: js.Any = js.native
+    var value: Any = js.native
   }
   
   @JSImport("babylonjs/Actions/directActions", "PlayAnimationAction")
   @js.native
-  class PlayAnimationAction protected () extends Action {
+  open class PlayAnimationAction protected () extends Action {
     /**
       * Instantiate the action
       * @param triggerOptions defines the trigger options
       * @param target defines the target animation or animation name
       * @param from defines from where the animation should start (animation frame)
-      * @param end defines where the animation should stop (animation frame)
+      * @param to defines where the animation should stop (animation frame)
       * @param loop defines if the animation should loop or stop after the first play
       * @param condition defines the trigger related conditions
       */
-    def this(triggerOptions: js.Any, target: js.Any, from: Double, to: Double) = this()
-    def this(triggerOptions: js.Any, target: js.Any, from: Double, to: Double, loop: Boolean) = this()
-    def this(
-      triggerOptions: js.Any,
-      target: js.Any,
-      from: Double,
-      to: Double,
-      loop: Boolean,
-      condition: Condition
-    ) = this()
-    def this(triggerOptions: js.Any, target: js.Any, from: Double, to: Double, loop: Unit, condition: Condition) = this()
+    def this(triggerOptions: Any, target: Any, from: Double, to: Double) = this()
+    def this(triggerOptions: Any, target: Any, from: Double, to: Double, loop: Boolean) = this()
+    def this(triggerOptions: Any, target: Any, from: Double, to: Double, loop: Boolean, condition: Condition) = this()
+    def this(triggerOptions: Any, target: Any, from: Double, to: Double, loop: Unit, condition: Condition) = this()
     
-    /* private */ var _target: js.Any = js.native
+    /* private */ var _target: Any = js.native
     
     /**
       * Where the animation should start (animation frame)
@@ -133,7 +144,7 @@ object directActionsMod {
   
   @JSImport("babylonjs/Actions/directActions", "SetParentAction")
   @js.native
-  class SetParentAction protected () extends Action {
+  open class SetParentAction protected () extends Action {
     /**
       * Instantiate the action
       * @param triggerOptions defines the trigger options
@@ -141,17 +152,17 @@ object directActionsMod {
       * @param parent defines from where the animation should start (animation frame)
       * @param condition defines the trigger related conditions
       */
-    def this(triggerOptions: js.Any, target: js.Any, parent: js.Any) = this()
-    def this(triggerOptions: js.Any, target: js.Any, parent: js.Any, condition: Condition) = this()
+    def this(triggerOptions: Any, target: Any, parent: Any) = this()
+    def this(triggerOptions: Any, target: Any, parent: Any, condition: Condition) = this()
     
-    /* private */ var _parent: js.Any = js.native
+    /* private */ var _parent: Any = js.native
     
-    /* private */ var _target: js.Any = js.native
+    /* private */ var _target: Any = js.native
   }
   
   @JSImport("babylonjs/Actions/directActions", "SetStateAction")
   @js.native
-  class SetStateAction protected () extends Action {
+  open class SetStateAction protected () extends Action {
     /**
       * Instantiate the action
       * @param triggerOptions defines the trigger options
@@ -159,10 +170,10 @@ object directActionsMod {
       * @param value defines the value to store in the state field
       * @param condition defines the trigger related conditions
       */
-    def this(triggerOptions: js.Any, target: js.Any, value: String) = this()
-    def this(triggerOptions: js.Any, target: js.Any, value: String, condition: Condition) = this()
+    def this(triggerOptions: Any, target: Any, value: String) = this()
+    def this(triggerOptions: Any, target: Any, value: String, condition: Condition) = this()
     
-    /* private */ var _target: js.Any = js.native
+    /* private */ var _target: Any = js.native
     
     /**
       * The value to store in the state field.
@@ -172,7 +183,7 @@ object directActionsMod {
   
   @JSImport("babylonjs/Actions/directActions", "SetValueAction")
   @js.native
-  class SetValueAction protected () extends Action {
+  open class SetValueAction protected () extends Action {
     /**
       * Instantiate the action
       * @param triggerOptions defines the trigger options
@@ -181,14 +192,14 @@ object directActionsMod {
       * @param value defines the value to set in the property
       * @param condition defines the trigger related conditions
       */
-    def this(triggerOptions: js.Any, target: js.Any, propertyPath: String, value: js.Any) = this()
-    def this(triggerOptions: js.Any, target: js.Any, propertyPath: String, value: js.Any, condition: Condition) = this()
+    def this(triggerOptions: Any, target: Any, propertyPath: String, value: Any) = this()
+    def this(triggerOptions: Any, target: Any, propertyPath: String, value: Any, condition: Condition) = this()
     
-    /* private */ var _effectiveTarget: js.Any = js.native
+    /* private */ var _effectiveTarget: Any = js.native
     
-    /* private */ var _property: js.Any = js.native
+    /* private */ var _property: Any = js.native
     
-    /* private */ var _target: js.Any = js.native
+    /* private */ var _target: Any = js.native
     
     /**
       * The path of the property to set in the target.
@@ -198,27 +209,27 @@ object directActionsMod {
     /**
       * The value to set in the property
       */
-    var value: js.Any = js.native
+    var value: Any = js.native
   }
   
   @JSImport("babylonjs/Actions/directActions", "StopAnimationAction")
   @js.native
-  class StopAnimationAction protected () extends Action {
+  open class StopAnimationAction protected () extends Action {
     /**
       * Instantiate the action
       * @param triggerOptions defines the trigger options
       * @param target defines the target animation or animation name
       * @param condition defines the trigger related conditions
       */
-    def this(triggerOptions: js.Any, target: js.Any) = this()
-    def this(triggerOptions: js.Any, target: js.Any, condition: Condition) = this()
+    def this(triggerOptions: Any, target: Any) = this()
+    def this(triggerOptions: Any, target: Any, condition: Condition) = this()
     
-    /* private */ var _target: js.Any = js.native
+    /* private */ var _target: Any = js.native
   }
   
   @JSImport("babylonjs/Actions/directActions", "SwitchBooleanAction")
   @js.native
-  class SwitchBooleanAction protected () extends Action {
+  open class SwitchBooleanAction protected () extends Action {
     /**
       * Instantiate the action
       * @param triggerOptions defines the trigger options
@@ -226,14 +237,14 @@ object directActionsMod {
       * @param propertyPath defines the path to the boolean property in the target object
       * @param condition defines the trigger related conditions
       */
-    def this(triggerOptions: js.Any, target: js.Any, propertyPath: String) = this()
-    def this(triggerOptions: js.Any, target: js.Any, propertyPath: String, condition: Condition) = this()
+    def this(triggerOptions: Any, target: Any, propertyPath: String) = this()
+    def this(triggerOptions: Any, target: Any, propertyPath: String, condition: Condition) = this()
     
-    /* private */ var _effectiveTarget: js.Any = js.native
+    /* private */ var _effectiveTarget: Any = js.native
     
-    /* private */ var _property: js.Any = js.native
+    /* private */ var _property: Any = js.native
     
-    /* private */ var _target: js.Any = js.native
+    /* private */ var _target: Any = js.native
     
     /**
       * The path to the boolean property in the target object

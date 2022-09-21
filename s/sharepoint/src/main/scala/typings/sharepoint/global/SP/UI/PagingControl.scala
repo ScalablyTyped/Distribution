@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.UI.PagingControl")
 @js.native
-class PagingControl protected ()
+open class PagingControl protected ()
   extends StObject
      with typings.sharepoint.SP.UI.PagingControl {
   def this(id: String) = this()

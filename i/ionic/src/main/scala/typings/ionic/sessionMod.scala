@@ -17,7 +17,7 @@ object sessionMod {
   
   @JSImport("ionic/lib/session", "BaseSession")
   @js.native
-  class BaseSession protected () extends StObject {
+  open class BaseSession protected () extends StObject {
     def this(e: SessionDeps) = this()
     
     val e: SessionDeps = js.native
@@ -33,7 +33,7 @@ object sessionMod {
   
   @JSImport("ionic/lib/session", "ProSession")
   @js.native
-  class ProSession protected ()
+  open class ProSession protected ()
     extends BaseSession
        with ISession {
     def this(e: SessionDeps) = this()

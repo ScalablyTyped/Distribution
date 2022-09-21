@@ -21,7 +21,7 @@ trait ColumnFormat extends StObject {
   /* private */ @JSName("Outlook.ColumnFormat_typekey")
   var OutlookDotColumnFormat_typekey: ColumnFormat
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Session: NameSpace
   
@@ -37,7 +37,7 @@ object ColumnFormat {
     FieldType: OlUserPropertyType,
     Label: String,
     OutlookDotColumnFormat_typekey: ColumnFormat,
-    Parent: js.Any,
+    Parent: Any,
     Session: NameSpace,
     Width: Double
   ): ColumnFormat = {
@@ -62,7 +62,7 @@ object ColumnFormat {
     
     inline def setOutlookDotColumnFormat_typekey(value: ColumnFormat): Self = StObject.set(x, "Outlook.ColumnFormat_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     

@@ -46,10 +46,5 @@ trait FirestoreModule extends StObject {
   
   var nativeModuleExists: Boolean = js.native
   
-  @JSName("setLogLevel")
-  def setLogLevel_debug(logLevel: debug): Unit = js.native
-  @JSName("setLogLevel")
-  def setLogLevel_error(logLevel: error_): Unit = js.native
-  @JSName("setLogLevel")
-  def setLogLevel_silent(logLevel: silent): Unit = js.native
+  def setLogLevel(logLevel: debug | error_ | silent): Unit = js.native
 }

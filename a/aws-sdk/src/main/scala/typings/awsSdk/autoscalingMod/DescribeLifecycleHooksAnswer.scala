@@ -24,6 +24,6 @@ object DescribeLifecycleHooksAnswer {
     
     inline def setLifecycleHooksUndefined: Self = StObject.set(x, "LifecycleHooks", js.undefined)
     
-    inline def setLifecycleHooksVarargs(value: LifecycleHook*): Self = StObject.set(x, "LifecycleHooks", js.Array(value :_*))
+    inline def setLifecycleHooksVarargs(value: LifecycleHook*): Self = StObject.set(x, "LifecycleHooks", js.Array(value*))
   }
 }

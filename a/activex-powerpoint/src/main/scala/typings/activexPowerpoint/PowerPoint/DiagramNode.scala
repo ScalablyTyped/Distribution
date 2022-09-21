@@ -19,7 +19,7 @@ trait DiagramNode extends StObject {
   def AddNode(Pos: MsoRelativeNodePosition): DiagramNode = js.native
   def AddNode(Pos: MsoRelativeNodePosition, NodeType: MsoDiagramNodeType): DiagramNode = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val Children: DiagramNodeChildren = js.native
   
@@ -39,7 +39,7 @@ trait DiagramNode extends StObject {
   
   def NextNode(): DiagramNode = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   /* private */ @JSName("PowerPoint.DiagramNode_typekey")
   var PowerPointDotDiagramNode_typekey: DiagramNode = js.native

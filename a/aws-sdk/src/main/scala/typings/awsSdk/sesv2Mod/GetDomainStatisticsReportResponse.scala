@@ -27,7 +27,7 @@ object GetDomainStatisticsReportResponse {
     
     inline def setDailyVolumes(value: DailyVolumes): Self = StObject.set(x, "DailyVolumes", value.asInstanceOf[js.Any])
     
-    inline def setDailyVolumesVarargs(value: DailyVolume*): Self = StObject.set(x, "DailyVolumes", js.Array(value :_*))
+    inline def setDailyVolumesVarargs(value: DailyVolume*): Self = StObject.set(x, "DailyVolumes", js.Array(value*))
     
     inline def setOverallVolume(value: OverallVolume): Self = StObject.set(x, "OverallVolume", value.asInstanceOf[js.Any])
   }

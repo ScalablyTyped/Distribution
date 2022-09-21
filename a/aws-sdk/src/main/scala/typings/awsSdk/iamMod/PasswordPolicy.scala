@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PasswordPolicy extends StObject {
   
   /**
-    * Specifies whether IAM users are allowed to change their own password.
+    * Specifies whether IAM users are allowed to change their own password. Gives IAM users permissions to iam:ChangePassword for only their user and to the iam:GetAccountPasswordPolicy action. This option does not attach a permissions policy to each user, rather the permissions are applied at the account-level for all users by IAM.
     */
   var AllowUsersToChangePassword: js.UndefOr[booleanType] = js.undefined
   
@@ -17,7 +17,7 @@ trait PasswordPolicy extends StObject {
   var ExpirePasswords: js.UndefOr[booleanType] = js.undefined
   
   /**
-    * Specifies whether IAM users are prevented from setting a new password after their password has expired.
+    * Specifies whether IAM users are prevented from setting a new password via the Amazon Web Services Management Console after their password has expired. The IAM user cannot access the console until an administrator resets the password. IAM users with iam:ChangePassword permission and active access keys can reset their own expired console password using the CLI or API.
     */
   var HardExpiry: js.UndefOr[booleanObjectType] = js.undefined
   
@@ -37,22 +37,22 @@ trait PasswordPolicy extends StObject {
   var PasswordReusePrevention: js.UndefOr[passwordReusePreventionType] = js.undefined
   
   /**
-    * Specifies whether to require lowercase characters for IAM user passwords.
+    * Specifies whether IAM user passwords must contain at least one lowercase character (a to z).
     */
   var RequireLowercaseCharacters: js.UndefOr[booleanType] = js.undefined
   
   /**
-    * Specifies whether to require numbers for IAM user passwords.
+    * Specifies whether IAM user passwords must contain at least one numeric character (0 to 9).
     */
   var RequireNumbers: js.UndefOr[booleanType] = js.undefined
   
   /**
-    * Specifies whether to require symbols for IAM user passwords.
+    * Specifies whether IAM user passwords must contain at least one of the following symbols: ! @ # $ % ^ &amp; * ( ) _ + - = [ ] { } | '
     */
   var RequireSymbols: js.UndefOr[booleanType] = js.undefined
   
   /**
-    * Specifies whether to require uppercase characters for IAM user passwords.
+    * Specifies whether IAM user passwords must contain at least one uppercase character (A to Z).
     */
   var RequireUppercaseCharacters: js.UndefOr[booleanType] = js.undefined
 }

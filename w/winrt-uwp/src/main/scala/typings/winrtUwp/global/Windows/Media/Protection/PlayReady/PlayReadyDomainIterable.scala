@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Exposes the PlayReady PlayReadyDomain class iterator. */
 @JSGlobal("Windows.Media.Protection.PlayReady.PlayReadyDomainIterable")
 @js.native
-class PlayReadyDomainIterable protected ()
+open class PlayReadyDomainIterable protected ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Protection.PlayReady.PlayReadyDomainIterable {
   /**

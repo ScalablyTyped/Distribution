@@ -1,12 +1,15 @@
 package typings.awsSdkMiddlewareUserAgent
 
+import typings.awsSdkTypes.utilMod.Provider
+import typings.awsSdkTypes.utilMod.UserAgent
+import typings.awsSdkTypes.utilMod.UserAgentPair
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object configurationsMod {
   
-  @JSImport("@aws-sdk/middleware-user-agent/dist/cjs/configurations", JSImport.Namespace)
+  @JSImport("@aws-sdk/middleware-user-agent/dist-types/configurations", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -14,20 +17,22 @@ object configurationsMod {
   
   trait PreviouslyResolved extends StObject {
     
-    var defaultUserAgent: String
+    def defaultUserAgentProvider(): js.Promise[UserAgent]
+    @JSName("defaultUserAgentProvider")
+    var defaultUserAgentProvider_Original: Provider[UserAgent]
     
     var runtime: String
   }
   object PreviouslyResolved {
     
-    inline def apply(defaultUserAgent: String, runtime: String): PreviouslyResolved = {
-      val __obj = js.Dynamic.literal(defaultUserAgent = defaultUserAgent.asInstanceOf[js.Any], runtime = runtime.asInstanceOf[js.Any])
+    inline def apply(defaultUserAgentProvider: () => js.Promise[UserAgent], runtime: String): PreviouslyResolved = {
+      val __obj = js.Dynamic.literal(defaultUserAgentProvider = js.Any.fromFunction0(defaultUserAgentProvider), runtime = runtime.asInstanceOf[js.Any])
       __obj.asInstanceOf[PreviouslyResolved]
     }
     
     extension [Self <: PreviouslyResolved](x: Self) {
       
-      inline def setDefaultUserAgent(value: String): Self = StObject.set(x, "defaultUserAgent", value.asInstanceOf[js.Any])
+      inline def setDefaultUserAgentProvider(value: () => js.Promise[UserAgent]): Self = StObject.set(x, "defaultUserAgentProvider", js.Any.fromFunction0(value))
       
       inline def setRuntime(value: String): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
     }
@@ -38,7 +43,7 @@ object configurationsMod {
     /**
       * The custom user agent header that would be appended to default one
       */
-    var customUserAgent: js.UndefOr[String] = js.undefined
+    var customUserAgent: js.UndefOr[String | UserAgent] = js.undefined
   }
   object UserAgentInputConfig {
     
@@ -49,34 +54,54 @@ object configurationsMod {
     
     extension [Self <: UserAgentInputConfig](x: Self) {
       
-      inline def setCustomUserAgent(value: String): Self = StObject.set(x, "customUserAgent", value.asInstanceOf[js.Any])
+      inline def setCustomUserAgent(value: String | UserAgent): Self = StObject.set(x, "customUserAgent", value.asInstanceOf[js.Any])
       
       inline def setCustomUserAgentUndefined: Self = StObject.set(x, "customUserAgent", js.undefined)
+      
+      inline def setCustomUserAgentVarargs(value: UserAgentPair*): Self = StObject.set(x, "customUserAgent", js.Array(value*))
     }
   }
   
   trait UserAgentResolvedConfig extends StObject {
     
-    var customUserAgent: js.UndefOr[String] = js.undefined
+    /**
+      * The custom user agent header that would be appended to default one
+      */
+    var customUserAgent: js.UndefOr[UserAgent] = js.undefined
     
-    var defaultUserAgent: String
+    /**
+      * The provider populating default tracking information to be sent with `user-agent`, `x-amz-user-agent` header.
+      * @internal
+      */
+    def defaultUserAgentProvider(): js.Promise[UserAgent]
+    /**
+      * The provider populating default tracking information to be sent with `user-agent`, `x-amz-user-agent` header.
+      * @internal
+      */
+    @JSName("defaultUserAgentProvider")
+    var defaultUserAgentProvider_Original: Provider[UserAgent]
     
+    /**
+      * The runtime environment
+      */
     var runtime: String
   }
   object UserAgentResolvedConfig {
     
-    inline def apply(defaultUserAgent: String, runtime: String): UserAgentResolvedConfig = {
-      val __obj = js.Dynamic.literal(defaultUserAgent = defaultUserAgent.asInstanceOf[js.Any], runtime = runtime.asInstanceOf[js.Any])
+    inline def apply(defaultUserAgentProvider: () => js.Promise[UserAgent], runtime: String): UserAgentResolvedConfig = {
+      val __obj = js.Dynamic.literal(defaultUserAgentProvider = js.Any.fromFunction0(defaultUserAgentProvider), runtime = runtime.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserAgentResolvedConfig]
     }
     
     extension [Self <: UserAgentResolvedConfig](x: Self) {
       
-      inline def setCustomUserAgent(value: String): Self = StObject.set(x, "customUserAgent", value.asInstanceOf[js.Any])
+      inline def setCustomUserAgent(value: UserAgent): Self = StObject.set(x, "customUserAgent", value.asInstanceOf[js.Any])
       
       inline def setCustomUserAgentUndefined: Self = StObject.set(x, "customUserAgent", js.undefined)
       
-      inline def setDefaultUserAgent(value: String): Self = StObject.set(x, "defaultUserAgent", value.asInstanceOf[js.Any])
+      inline def setCustomUserAgentVarargs(value: UserAgentPair*): Self = StObject.set(x, "customUserAgent", js.Array(value*))
+      
+      inline def setDefaultUserAgentProvider(value: () => js.Promise[UserAgent]): Self = StObject.set(x, "defaultUserAgentProvider", js.Any.fromFunction0(value))
       
       inline def setRuntime(value: String): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
     }

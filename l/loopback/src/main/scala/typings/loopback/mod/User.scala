@@ -2,8 +2,6 @@ package typings.loopback.mod
 
 import typings.loopback.anon.CaseSensitiveEmail
 import typings.loopback.anon.GenerateVerificationToken
-import typings.std.Date
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,8 +45,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("loopback", "User")
 @js.native
-class User protected () extends PersistedModel {
-  def this(data: js.Any) = this()
+open class User protected () extends PersistedModel {
+  def this(data: Any) = this()
   
   /**
     * Create access token for the logged in user. This method can be overridden to
@@ -60,20 +58,20 @@ class User protected () extends PersistedModel {
     * @param {AccessToken} token The generated access token object
     */
   def createAccessToken(ttl: Double): js.Promise[AccessToken] | Unit = js.native
-  def createAccessToken(ttl: Double, options: js.Any): js.Promise[AccessToken] | Unit = js.native
+  def createAccessToken(ttl: Double, options: Any): js.Promise[AccessToken] | Unit = js.native
   def createAccessToken(
     ttl: Double,
-    options: js.Any,
-    callback: js.Function2[/* err */ String | Error, /* token */ AccessToken, Unit]
+    options: Any,
+    callback: js.Function2[/* err */ String | js.Error, /* token */ AccessToken, Unit]
   ): js.Promise[AccessToken] | Unit = js.native
   def createAccessToken(
     ttl: Double,
     options: Unit,
-    callback: js.Function2[/* err */ String | Error, /* token */ AccessToken, Unit]
+    callback: js.Function2[/* err */ String | js.Error, /* token */ AccessToken, Unit]
   ): js.Promise[AccessToken] | Unit = js.native
   
   /** The property is not used by LoopBack, you are free to use it for your own purposes. */
-  var created: Date = js.native
+  var created: js.Date = js.native
   
   /** Must be valid email. */
   var email: String = js.native
@@ -89,10 +87,10 @@ class User protected () extends PersistedModel {
     * @param {boolean} isMatch Returns true if the given `password` matches recor
     */
   def hasPassword(password: String): js.Promise[Boolean] | Unit = js.native
-  def hasPassword(password: String, callback: js.Function2[/* err */ Error, /* isMatch */ Boolean, Unit]): js.Promise[Boolean] | Unit = js.native
+  def hasPassword(password: String, callback: js.Function2[/* err */ js.Error, /* isMatch */ Boolean, Unit]): js.Promise[Boolean] | Unit = js.native
   
   /** The property is not used by LoopBack, you are free to use it for your own purposes. */
-  var lastUpdate: Date = js.native
+  var lastUpdate: js.Date = js.native
   
   /** Hidden from remote clients. */
   var password: String = js.native
@@ -174,8 +172,8 @@ object User {
     * @param {Error} er
     */
   /* static member */
-  inline def confirm(userId: js.Any, token: String, redirect: String): js.Promise[Unit] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(userId.asInstanceOf[js.Any], token.asInstanceOf[js.Any], redirect.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit] | Unit]
-  inline def confirm(userId: js.Any, token: String, redirect: String, callback: js.Function1[/* err */ Error, Unit]): js.Promise[Unit] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(userId.asInstanceOf[js.Any], token.asInstanceOf[js.Any], redirect.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit] | Unit]
+  inline def confirm(userId: Any, token: String, redirect: String): js.Promise[Unit] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(userId.asInstanceOf[js.Any], token.asInstanceOf[js.Any], redirect.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit] | Unit]
+  inline def confirm(userId: Any, token: String, redirect: String, callback: js.Function1[/* err */ js.Error, Unit]): js.Promise[Unit] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(userId.asInstanceOf[js.Any], token.asInstanceOf[js.Any], redirect.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit] | Unit]
   
   /**
     * A default verification token generator which accepts the user the token is
@@ -187,8 +185,8 @@ object User {
     * @param {() => void} cb The generator must pass back the new token with this function cal
     */
   /* static member */
-  inline def generateVerificationToken(user: js.Any): js.Promise[Unit] | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("generateVerificationToken")(user.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit] | Unit]
-  inline def generateVerificationToken(user: js.Any, callback: js.Function0[Unit]): js.Promise[Unit] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateVerificationToken")(user.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit] | Unit]
+  inline def generateVerificationToken(user: Any): js.Promise[Unit] | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("generateVerificationToken")(user.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit] | Unit]
+  inline def generateVerificationToken(user: Any, callback: js.Function0[Unit]): js.Promise[Unit] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateVerificationToken")(user.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit] | Unit]
   
   /**
     * Login a user by with the given `credentials`
@@ -207,23 +205,23 @@ object User {
     * @param {AccessToken} token Access token if login is successfu
     */
   /* static member */
-  inline def login(credentials: js.Any): js.Promise[AccessToken] | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("login")(credentials.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AccessToken] | Unit]
-  inline def login(credentials: js.Any, include: String): js.Promise[AccessToken] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("login")(credentials.asInstanceOf[js.Any], include.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AccessToken] | Unit]
+  inline def login(credentials: Any): js.Promise[AccessToken] | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("login")(credentials.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AccessToken] | Unit]
+  inline def login(credentials: Any, include: String): js.Promise[AccessToken] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("login")(credentials.asInstanceOf[js.Any], include.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AccessToken] | Unit]
   inline def login(
-    credentials: js.Any,
+    credentials: Any,
     include: String,
-    callback: js.Function2[/* err */ Error, /* token */ AccessToken, Unit]
+    callback: js.Function2[/* err */ js.Error, /* token */ AccessToken, Unit]
   ): js.Promise[AccessToken] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("login")(credentials.asInstanceOf[js.Any], include.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AccessToken] | Unit]
-  inline def login(credentials: js.Any, include: js.Array[String]): js.Promise[AccessToken] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("login")(credentials.asInstanceOf[js.Any], include.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AccessToken] | Unit]
+  inline def login(credentials: Any, include: js.Array[String]): js.Promise[AccessToken] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("login")(credentials.asInstanceOf[js.Any], include.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AccessToken] | Unit]
   inline def login(
-    credentials: js.Any,
+    credentials: Any,
     include: js.Array[String],
-    callback: js.Function2[/* err */ Error, /* token */ AccessToken, Unit]
+    callback: js.Function2[/* err */ js.Error, /* token */ AccessToken, Unit]
   ): js.Promise[AccessToken] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("login")(credentials.asInstanceOf[js.Any], include.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AccessToken] | Unit]
   inline def login(
-    credentials: js.Any,
+    credentials: Any,
     include: Unit,
-    callback: js.Function2[/* err */ Error, /* token */ AccessToken, Unit]
+    callback: js.Function2[/* err */ js.Error, /* token */ AccessToken, Unit]
   ): js.Promise[AccessToken] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("login")(credentials.asInstanceOf[js.Any], include.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AccessToken] | Unit]
   
   /**
@@ -241,7 +239,7 @@ object User {
     */
   /* static member */
   inline def logout(accessTokenID: String): js.Promise[Unit] | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logout")(accessTokenID.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit] | Unit]
-  inline def logout(accessTokenID: String, callback: js.Function1[/* err */ Error, Unit]): js.Promise[Unit] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logout")(accessTokenID.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit] | Unit]
+  inline def logout(accessTokenID: String, callback: js.Function1[/* err */ js.Error, Unit]): js.Promise[Unit] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logout")(accessTokenID.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit] | Unit]
   
   /**
     * Normalize the credentials
@@ -251,7 +249,7 @@ object User {
     * @returns {any} The normalized credential objec
     */
   /* static member */
-  inline def normalizeCredentials(credentials: js.Any, realmRequired: Boolean, realmDelimiter: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeCredentials")(credentials.asInstanceOf[js.Any], realmRequired.asInstanceOf[js.Any], realmDelimiter.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def normalizeCredentials(credentials: Any, realmRequired: Boolean, realmDelimiter: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeCredentials")(credentials.asInstanceOf[js.Any], realmRequired.asInstanceOf[js.Any], realmDelimiter.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /**
     * Create a short lived acess token for temporary login. Allows users
@@ -263,5 +261,5 @@ object User {
     */
   /* static member */
   inline def resetPassword(options: js.Object): js.Promise[Unit] | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetPassword")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit] | Unit]
-  inline def resetPassword(options: js.Object, callback: js.Function1[/* err */ Error, Unit]): js.Promise[Unit] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resetPassword")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit] | Unit]
+  inline def resetPassword(options: js.Object, callback: js.Function1[/* err */ js.Error, Unit]): js.Promise[Unit] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resetPassword")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit] | Unit]
 }

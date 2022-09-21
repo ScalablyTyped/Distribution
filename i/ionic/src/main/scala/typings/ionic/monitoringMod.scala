@@ -10,7 +10,7 @@ object monitoringMod {
   
   @JSImport("ionic/commands/monitoring", "MonitoringNamespace")
   @js.native
-  class MonitoringNamespace () extends Namespace {
+  open class MonitoringNamespace () extends Namespace {
     def this(parent: INamespace) = this()
   }
 }

@@ -22,8 +22,8 @@ object sessionMod {
   
   @JSImport("redux-orm/Session", JSImport.Default)
   @js.native
-  class default[I /* <: IndexedModelClasses[
-    js.Any, 
+  open class default[I /* <: IndexedModelClasses[
+    Any, 
     Extract[
       /* keyof any */ String, 
       /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
@@ -139,10 +139,10 @@ object sessionMod {
     override val state: OrmState[I] = js.native
   }
   
-  type BatchToken = js.Any
+  type BatchToken = Any
   
   type OrmSession[I /* <: IndexedModelClasses[
-    js.Any, 
+    Any, 
     Extract[
       /* keyof any */ String, 
       /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
@@ -171,7 +171,7 @@ object sessionMod {
   ]
   
   trait Session[I /* <: IndexedModelClasses[
-    js.Any, 
+    Any, 
     Extract[
       /* keyof any */ String, 
       /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
@@ -227,13 +227,13 @@ object sessionMod {
   object Session {
     
     inline def apply[I /* <: IndexedModelClasses[
-        js.Any, 
+        Any, 
         Extract[
           /* keyof any */ String, 
           /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
         ]
       ] */](
-      applyUpdate: UpdateSpec[js.Any] => js.Any,
+      applyUpdate: UpdateSpec[Any] => Any,
       query: QuerySpec => QueryResult[js.Object],
       sessionBoundModels: js.Array[
           ModelType[
@@ -249,14 +249,14 @@ object sessionMod {
     }
     
     extension [Self <: Session[?], I /* <: IndexedModelClasses[
-        js.Any, 
+        Any, 
         Extract[
           /* keyof any */ String, 
           /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
         ]
       ] */](x: Self & Session[I]) {
       
-      inline def setApplyUpdate(value: UpdateSpec[js.Any] => js.Any): Self = StObject.set(x, "applyUpdate", js.Any.fromFunction1(value))
+      inline def setApplyUpdate(value: UpdateSpec[Any] => Any): Self = StObject.set(x, "applyUpdate", js.Any.fromFunction1(value))
       
       inline def setQuery(value: QuerySpec => QueryResult[js.Object]): Self = StObject.set(x, "query", js.Any.fromFunction1(value))
       
@@ -276,7 +276,7 @@ object sessionMod {
                 /* import warning: importer.ImportType#apply Failed type conversion: I[keyof I] */ js.Any
               ]
             ])*
-      ): Self = StObject.set(x, "sessionBoundModels", js.Array(value :_*))
+      ): Self = StObject.set(x, "sessionBoundModels", js.Array(value*))
       
       inline def setState(value: OrmState[I]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }

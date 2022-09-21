@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "file-url" : "3.0.0"
+      "file-url" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "file-url" : "3.0.0"
+      "file-url" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

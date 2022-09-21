@@ -11,7 +11,7 @@ object onceSignalMod {
   
   @JSImport("signals.js/lib/org/osflash/signals/OnceSignal", "OnceSignal")
   @js.native
-  class OnceSignal protected ()
+  open class OnceSignal protected ()
     extends StObject
        with IOnceSignal {
     /**
@@ -25,9 +25,9 @@ object onceSignalMod {
       * NOTE: In AS3, subclasses cannot call super.apply(null, valueClasses),
       * but this constructor has logic to support super(valueClasses).
       */
-    def this(valueClasses: js.Any*) = this()
+    def this(valueClasses: Any*) = this()
     
-    /* protected */ var _valueClasses: js.Array[js.Any] = js.native
+    /* protected */ var _valueClasses: js.Array[Any] = js.native
     
     /**
       * Subscribes a one-time listener for this signal.
@@ -47,7 +47,7 @@ object onceSignalMod {
       * @throws    ArgumentError    <code>ArgumentError</code>:    valueObjects are not compatible with valueClasses.
       */
     /* CompleteClass */
-    override def dispatch(valueObjects: js.Any*): Unit = js.native
+    override def dispatch(valueObjects: Any*): Unit = js.native
     
     /** The current number of listeners for the signal. */
     /* CompleteClass */
@@ -78,6 +78,6 @@ object onceSignalMod {
       * An optional array of classes defining the types of parameters sent to listeners.
       */
     /* CompleteClass */
-    var valueClasses: js.Array[js.Any] = js.native
+    var valueClasses: js.Array[Any] = js.native
   }
 }

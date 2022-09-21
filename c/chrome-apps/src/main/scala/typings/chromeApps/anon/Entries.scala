@@ -20,6 +20,6 @@ object Entries {
     
     inline def setEntries(value: js.Array[FileEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    inline def setEntriesVarargs(value: FileEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: FileEntry*): Self = StObject.set(x, "entries", js.Array(value*))
   }
 }

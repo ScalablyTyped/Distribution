@@ -25,9 +25,9 @@ trait CalculatedFields extends StObject {
   def Item(Index: String): PivotField = js.native
   def Item(Index: Double): PivotField = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def _Add(Name: String, Formula: String): PivotField = js.native
   
-  def _Default(Field: js.Any): PivotField = js.native
+  def _Default(Field: Any): PivotField = js.native
 }

@@ -8,5 +8,5 @@ object removeAttributesMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/RemoveAttributes", "RemoveAttributes")
   @js.native
-  val RemoveAttributes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val RemoveAttributes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

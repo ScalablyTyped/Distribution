@@ -11,22 +11,22 @@ object calendarYearMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Calendar/CalendarYear", "CalendarYear")
   @js.native
-  class CalendarYear protected ()
-    extends Component[ICalendarYearProps, ICalendarYearState, js.Any]
+  open class CalendarYear protected ()
+    extends Component[ICalendarYearProps, ICalendarYearState, Any]
        with ICalendarYear {
     def this(props: ICalendarYearProps) = this()
     
-    /* private */ var _calculateInitialStateFromProps: js.Any = js.native
+    /* private */ var _calculateInitialStateFromProps: Any = js.native
     
-    /* private */ var _gridRef: js.Any = js.native
+    /* private */ var _gridRef: Any = js.native
     
-    /* private */ var _onNavNext: js.Any = js.native
+    /* private */ var _onNavNext: Any = js.native
     
-    /* private */ var _onNavPrev: js.Any = js.native
+    /* private */ var _onNavPrev: Any = js.native
     
-    /* private */ var _renderGrid: js.Any = js.native
+    /* private */ var _renderGrid: Any = js.native
     
-    /* private */ var _renderHeader: js.Any = js.native
+    /* private */ var _renderHeader: Any = js.native
     
     /* CompleteClass */
     override def focus(): Unit = js.native

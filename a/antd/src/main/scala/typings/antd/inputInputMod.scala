@@ -1,8 +1,6 @@
 package typings.antd
 
-import typings.antd.anon.AutoComplete
-import typings.antd.anon.PartialInputState
-import typings.antd.antdStrings._empty
+import org.scalablytyped.runtime.StringDictionary
 import typings.antd.antdStrings.`additions removals`
 import typings.antd.antdStrings.`additions text`
 import typings.antd.antdStrings.`datetime-local`
@@ -26,7 +24,9 @@ import typings.antd.antdStrings.descending
 import typings.antd.antdStrings.dialog
 import typings.antd.antdStrings.done
 import typings.antd.antdStrings.email
+import typings.antd.antdStrings.end
 import typings.antd.antdStrings.enter
+import typings.antd.antdStrings.environment
 import typings.antd.antdStrings.execute
 import typings.antd.antdStrings.file
 import typings.antd.antdStrings.go
@@ -34,7 +34,7 @@ import typings.antd.antdStrings.grammar
 import typings.antd.antdStrings.grid
 import typings.antd.antdStrings.hidden
 import typings.antd.antdStrings.horizontal
-import typings.antd.antdStrings.image
+import typings.antd.antdStrings.image_
 import typings.antd.antdStrings.inherit
 import typings.antd.antdStrings.link
 import typings.antd.antdStrings.list
@@ -64,6 +64,7 @@ import typings.antd.antdStrings.reset
 import typings.antd.antdStrings.search
 import typings.antd.antdStrings.send
 import typings.antd.antdStrings.spelling
+import typings.antd.antdStrings.start
 import typings.antd.antdStrings.step
 import typings.antd.antdStrings.submit
 import typings.antd.antdStrings.tel
@@ -71,33 +72,30 @@ import typings.antd.antdStrings.text_
 import typings.antd.antdStrings.time
 import typings.antd.antdStrings.tree
 import typings.antd.antdStrings.url
+import typings.antd.antdStrings.user
 import typings.antd.antdStrings.vertical
 import typings.antd.antdStrings.week
 import typings.antd.antdStrings.yes
-import typings.antd.configProviderContextMod.ConfigConsumerProps
-import typings.antd.configProviderContextMod.DirectionType
 import typings.antd.configProviderSizeContextMod.SizeType
-import typings.antd.inputGroupMod.GroupProps
-import typings.antd.passwordMod.PasswordProps
-import typings.antd.searchMod.SearchProps
-import typings.antd.textAreaMod.TextAreaProps
-import typings.antd.textAreaMod.TextAreaRef
-import typings.antd.typeMod.LiteralUnion
+import typings.antd.statusUtilsMod.InputStatus
+import typings.rcInput.anon.ClearIcon
+import typings.rcInput.interfaceMod.InputRef
+import typings.rcInput.interfaceMod.ShowCountProps
+import typings.rcInput.typesMod.LiteralUnion
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ChangeEvent
 import typings.react.mod.ChangeEventHandler
 import typings.react.mod.ClipboardEvent
 import typings.react.mod.ClipboardEventHandler
-import typings.react.mod.Component
 import typings.react.mod.CompositionEvent
 import typings.react.mod.CompositionEventHandler
 import typings.react.mod.DragEvent
 import typings.react.mod.DragEventHandler
-import typings.react.mod.FC
 import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
@@ -122,8 +120,9 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
-import typings.react.mod.global.JSX.Element
+import typings.std.Element
 import typings.std.Event
+import typings.std.FocusOptions
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
 import typings.std.HTMLTextAreaElement
@@ -140,150 +139,136 @@ object inputInputMod {
   
   @JSImport("antd/lib/input/Input", JSImport.Default)
   @js.native
-  class default protected () extends Input {
-    def this(props: InputProps) = this()
-  }
-  object default {
-    
-    @JSImport("antd/lib/input/Input", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /* static member */
-    /* was `typeof Group` */
-    @JSImport("antd/lib/input/Input", "default.Group")
-    @js.native
-    def Group: FC[GroupProps] = js.native
-    inline def Group_=(x: FC[GroupProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Group")(x.asInstanceOf[js.Any])
-    
-    /* static member */
-    /* was `typeof Password` */
-    @JSImport("antd/lib/input/Input", "default.Password")
-    @js.native
-    def Password: ForwardRefExoticComponent[PasswordProps & RefAttributes[js.Any]] = js.native
-    inline def Password_=(x: ForwardRefExoticComponent[PasswordProps & RefAttributes[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Password")(x.asInstanceOf[js.Any])
-    
-    /* static member */
-    /* was `typeof Search` */
-    @JSImport("antd/lib/input/Input", "default.Search")
-    @js.native
-    def Search: ForwardRefExoticComponent[SearchProps & RefAttributes[default]] = js.native
-    inline def Search_=(x: ForwardRefExoticComponent[SearchProps & RefAttributes[default]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Search")(x.asInstanceOf[js.Any])
-    
-    /* static member */
-    /* was `typeof TextArea` */
-    @JSImport("antd/lib/input/Input", "default.TextArea")
-    @js.native
-    def TextArea: ForwardRefExoticComponent[TextAreaProps & RefAttributes[TextAreaRef]] = js.native
-    inline def TextArea_=(x: ForwardRefExoticComponent[TextAreaProps & RefAttributes[TextAreaRef]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TextArea")(x.asInstanceOf[js.Any])
-    
-    /* static member */
-    object defaultProps {
-      
-      @JSImport("antd/lib/input/Input", "default.defaultProps.type")
-      @js.native
-      val `type`: String = js.native
-    }
-    
-    /* static member */
-    inline def getDerivedStateFromProps(nextProps: InputProps, hasPrevValue: InputState): PartialInputState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], hasPrevValue.asInstanceOf[js.Any])).asInstanceOf[PartialInputState]
-  }
+  val default: ForwardRefExoticComponent[InputProps & RefAttributes[InputRef]] = js.native
   
-  inline def fixControlledValue[T](value: T): _empty | T = ^.asInstanceOf[js.Dynamic].applyDynamic("fixControlledValue")(value.asInstanceOf[js.Any]).asInstanceOf[_empty | T]
+  inline def fixControlledValue[T](value: T): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fixControlledValue")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def getInputClassName(prefixCls: String, bordered: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputClassName")(prefixCls.asInstanceOf[js.Any], bordered.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def getInputClassName(prefixCls: String, bordered: Boolean, size: Unit, disabled: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputClassName")(prefixCls.asInstanceOf[js.Any], bordered.asInstanceOf[js.Any], size.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def getInputClassName(prefixCls: String, bordered: Boolean, size: Unit, disabled: Boolean, direction: DirectionType): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputClassName")(prefixCls.asInstanceOf[js.Any], bordered.asInstanceOf[js.Any], size.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def getInputClassName(prefixCls: String, bordered: Boolean, size: Unit, disabled: Unit, direction: DirectionType): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputClassName")(prefixCls.asInstanceOf[js.Any], bordered.asInstanceOf[js.Any], size.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def getInputClassName(prefixCls: String, bordered: Boolean, size: SizeType): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputClassName")(prefixCls.asInstanceOf[js.Any], bordered.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def getInputClassName(prefixCls: String, bordered: Boolean, size: SizeType, disabled: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputClassName")(prefixCls.asInstanceOf[js.Any], bordered.asInstanceOf[js.Any], size.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def getInputClassName(prefixCls: String, bordered: Boolean, size: SizeType, disabled: Boolean, direction: DirectionType): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputClassName")(prefixCls.asInstanceOf[js.Any], bordered.asInstanceOf[js.Any], size.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def getInputClassName(prefixCls: String, bordered: Boolean, size: SizeType, disabled: Unit, direction: DirectionType): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputClassName")(prefixCls.asInstanceOf[js.Any], bordered.asInstanceOf[js.Any], size.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[String]
-  
-  inline def resolveOnChange(target: HTMLInputElement, e: ChangeEvent[HTMLTextAreaElement | HTMLInputElement]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveOnChange")(target.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def resolveOnChange(target: HTMLInputElement, e: ChangeEvent[HTMLInputElement]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveOnChange")(target.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def resolveOnChange(
     target: HTMLInputElement,
-    e: ChangeEvent[HTMLTextAreaElement | HTMLInputElement],
-    onChange: js.Function1[/* event */ ChangeEvent[HTMLInputElement | HTMLTextAreaElement], Unit]
+    e: ChangeEvent[HTMLInputElement],
+    onChange: js.Function1[/* event */ ChangeEvent[HTMLInputElement], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveOnChange")(target.asInstanceOf[js.Any], e.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def resolveOnChange(
+    target: HTMLInputElement,
+    e: ChangeEvent[HTMLInputElement],
+    onChange: js.Function1[/* event */ ChangeEvent[HTMLInputElement], Unit],
+    targetValue: String
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveOnChange")(target.asInstanceOf[js.Any], e.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any], targetValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def resolveOnChange(target: HTMLInputElement, e: ChangeEvent[HTMLInputElement], onChange: Unit, targetValue: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveOnChange")(target.asInstanceOf[js.Any], e.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any], targetValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def resolveOnChange(target: HTMLInputElement, e: CompositionEvent[HTMLElement]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveOnChange")(target.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def resolveOnChange(
+    target: HTMLInputElement,
+    e: CompositionEvent[HTMLElement],
+    onChange: js.Function1[/* event */ ChangeEvent[HTMLInputElement], Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveOnChange")(target.asInstanceOf[js.Any], e.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def resolveOnChange(
+    target: HTMLInputElement,
+    e: CompositionEvent[HTMLElement],
+    onChange: js.Function1[/* event */ ChangeEvent[HTMLInputElement], Unit],
+    targetValue: String
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveOnChange")(target.asInstanceOf[js.Any], e.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any], targetValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def resolveOnChange(target: HTMLInputElement, e: CompositionEvent[HTMLElement], onChange: Unit, targetValue: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveOnChange")(target.asInstanceOf[js.Any], e.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any], targetValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def resolveOnChange(target: HTMLInputElement, e: typings.react.mod.MouseEvent[HTMLElement, MouseEvent]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveOnChange")(target.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def resolveOnChange(
     target: HTMLInputElement,
     e: typings.react.mod.MouseEvent[HTMLElement, MouseEvent],
-    onChange: js.Function1[/* event */ ChangeEvent[HTMLInputElement | HTMLTextAreaElement], Unit]
+    onChange: js.Function1[/* event */ ChangeEvent[HTMLInputElement], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveOnChange")(target.asInstanceOf[js.Any], e.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def resolveOnChange(target: HTMLTextAreaElement, e: ChangeEvent[HTMLTextAreaElement | HTMLInputElement]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveOnChange")(target.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def resolveOnChange(
+    target: HTMLInputElement,
+    e: typings.react.mod.MouseEvent[HTMLElement, MouseEvent],
+    onChange: js.Function1[/* event */ ChangeEvent[HTMLInputElement], Unit],
+    targetValue: String
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveOnChange")(target.asInstanceOf[js.Any], e.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any], targetValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def resolveOnChange(
+    target: HTMLInputElement,
+    e: typings.react.mod.MouseEvent[HTMLElement, MouseEvent],
+    onChange: Unit,
+    targetValue: String
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveOnChange")(target.asInstanceOf[js.Any], e.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any], targetValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def resolveOnChange(target: HTMLTextAreaElement, e: ChangeEvent[HTMLTextAreaElement]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveOnChange")(target.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def resolveOnChange(
     target: HTMLTextAreaElement,
-    e: ChangeEvent[HTMLTextAreaElement | HTMLInputElement],
-    onChange: js.Function1[/* event */ ChangeEvent[HTMLInputElement | HTMLTextAreaElement], Unit]
+    e: ChangeEvent[HTMLTextAreaElement],
+    onChange: js.Function1[/* event */ ChangeEvent[HTMLTextAreaElement], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveOnChange")(target.asInstanceOf[js.Any], e.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def resolveOnChange(
+    target: HTMLTextAreaElement,
+    e: ChangeEvent[HTMLTextAreaElement],
+    onChange: js.Function1[/* event */ ChangeEvent[HTMLTextAreaElement], Unit],
+    targetValue: String
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveOnChange")(target.asInstanceOf[js.Any], e.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any], targetValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def resolveOnChange(
+    target: HTMLTextAreaElement,
+    e: ChangeEvent[HTMLTextAreaElement],
+    onChange: Unit,
+    targetValue: String
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveOnChange")(target.asInstanceOf[js.Any], e.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any], targetValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def resolveOnChange(target: HTMLTextAreaElement, e: CompositionEvent[HTMLElement]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveOnChange")(target.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def resolveOnChange(
+    target: HTMLTextAreaElement,
+    e: CompositionEvent[HTMLElement],
+    onChange: js.Function1[/* event */ ChangeEvent[HTMLTextAreaElement], Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveOnChange")(target.asInstanceOf[js.Any], e.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def resolveOnChange(
+    target: HTMLTextAreaElement,
+    e: CompositionEvent[HTMLElement],
+    onChange: js.Function1[/* event */ ChangeEvent[HTMLTextAreaElement], Unit],
+    targetValue: String
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveOnChange")(target.asInstanceOf[js.Any], e.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any], targetValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def resolveOnChange(target: HTMLTextAreaElement, e: CompositionEvent[HTMLElement], onChange: Unit, targetValue: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveOnChange")(target.asInstanceOf[js.Any], e.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any], targetValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def resolveOnChange(target: HTMLTextAreaElement, e: typings.react.mod.MouseEvent[HTMLElement, MouseEvent]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveOnChange")(target.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def resolveOnChange(
     target: HTMLTextAreaElement,
     e: typings.react.mod.MouseEvent[HTMLElement, MouseEvent],
-    onChange: js.Function1[/* event */ ChangeEvent[HTMLInputElement | HTMLTextAreaElement], Unit]
+    onChange: js.Function1[/* event */ ChangeEvent[HTMLTextAreaElement], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveOnChange")(target.asInstanceOf[js.Any], e.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def resolveOnChange(
+    target: HTMLTextAreaElement,
+    e: typings.react.mod.MouseEvent[HTMLElement, MouseEvent],
+    onChange: js.Function1[/* event */ ChangeEvent[HTMLTextAreaElement], Unit],
+    targetValue: String
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveOnChange")(target.asInstanceOf[js.Any], e.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any], targetValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def resolveOnChange(
+    target: HTMLTextAreaElement,
+    e: typings.react.mod.MouseEvent[HTMLElement, MouseEvent],
+    onChange: Unit,
+    targetValue: String
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveOnChange")(target.asInstanceOf[js.Any], e.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any], targetValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
-  trait Input
-    extends Component[InputProps, InputState, js.Any] {
+  inline def triggerFocus(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("triggerFocus")().asInstanceOf[Unit]
+  inline def triggerFocus(element: Unit, option: InputFocusOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerFocus")(element.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerFocus(element: HTMLInputElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("triggerFocus")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def triggerFocus(element: HTMLInputElement, option: InputFocusOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerFocus")(element.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def triggerFocus(element: HTMLTextAreaElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("triggerFocus")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def triggerFocus(element: HTMLTextAreaElement, option: InputFocusOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("triggerFocus")(element.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  trait InputFocusOptions
+    extends StObject
+       with FocusOptions {
     
-    def blur(): Unit = js.native
+    var cursor: js.UndefOr[start | end | all] = js.undefined
+  }
+  object InputFocusOptions {
     
-    def clearPasswordValueAttribute(): Unit = js.native
+    inline def apply(): InputFocusOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[InputFocusOptions]
+    }
     
-    var clearableInput: typings.antd.clearableLabeledInputMod.default = js.native
-    
-    @JSName("componentDidMount")
-    def componentDidMount_MInput(): Unit = js.native
-    
-    @JSName("componentDidUpdate")
-    def componentDidUpdate_MInput(): Unit = js.native
-    
-    @JSName("componentWillUnmount")
-    def componentWillUnmount_MInput(): Unit = js.native
-    
-    var direction: DirectionType = js.native
-    
-    def focus(): Unit = js.native
-    
-    @JSName("getSnapshotBeforeUpdate")
-    def getSnapshotBeforeUpdate_MInput(prevProps: InputProps): Null = js.native
-    
-    def handleChange(e: ChangeEvent[HTMLInputElement]): Unit = js.native
-    
-    def handleKeyDown(e: KeyboardEvent[HTMLInputElement]): Unit = js.native
-    
-    def handleReset(e: typings.react.mod.MouseEvent[HTMLElement, MouseEvent]): Unit = js.native
-    
-    var input: HTMLInputElement = js.native
-    
-    var onBlur: FocusEventHandler[HTMLInputElement] = js.native
-    
-    var onFocus: FocusEventHandler[HTMLInputElement] = js.native
-    
-    var removePasswordTimeout: Double = js.native
-    
-    def renderComponent(hasGetPrefixClsDirectionInput: ConfigConsumerProps): Element = js.native
-    
-    def renderInput(prefixCls: String, size: Unit, bordered: Boolean): Element = js.native
-    def renderInput(prefixCls: String, size: Unit, bordered: Boolean, input: js.UndefOr[AutoComplete]): Element = js.native
-    def renderInput(prefixCls: String, size: SizeType, bordered: Boolean): Element = js.native
-    def renderInput(prefixCls: String, size: SizeType, bordered: Boolean, input: js.UndefOr[AutoComplete]): Element = js.native
-    
-    def saveClearableInput(input: typings.antd.clearableLabeledInputMod.default): Unit = js.native
-    
-    def saveInput(input: HTMLInputElement): Unit = js.native
-    
-    def select(): Unit = js.native
-    
-    def setValue(value: String): Unit = js.native
-    def setValue(value: String, callback: js.Function0[Unit]): Unit = js.native
+    extension [Self <: InputFocusOptions](x: Self) {
+      
+      inline def setCursor(value: start | end | all): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+      
+      inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
+    }
   }
   
-  /* Inlined parent antd.antd/lib/_util/type.Omit<react.react.InputHTMLAttributes<std.HTMLInputElement>, 'size' | 'prefix' | 'type'> */
-  trait InputProps extends StObject {
+  /* Inlined parent std.Omit<rc-input.rc-input.InputProps, 'wrapperClassName' | 'groupClassName' | 'inputClassName' | 'affixWrapperClassName'> */
+  trait InputProps
+    extends StObject
+       with /* key */ StringDictionary[js.UndefOr[String]] {
     
     var about: js.UndefOr[String] = js.undefined
     
@@ -295,17 +280,17 @@ object inputInputMod {
     
     var addonBefore: js.UndefOr[ReactNode] = js.undefined
     
-    var allowClear: js.UndefOr[Boolean] = js.undefined
+    var allowClear: js.UndefOr[Boolean | ClearIcon] = js.undefined
     
     var alt: js.UndefOr[String] = js.undefined
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+    var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
-    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+    var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
@@ -323,21 +308,21 @@ object inputInputMod {
     
     var `aria-details`: js.UndefOr[String] = js.undefined
     
-    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+    var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
     
     var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+    var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+    var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
-    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+    var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
     
@@ -351,11 +336,11 @@ object inputInputMod {
     
     var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+    var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
     
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+    var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
@@ -367,13 +352,13 @@ object inputInputMod {
     
     var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+    var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text_ | (`text additions`) | (`text removals`)
       ] = js.undefined
     
-    var `aria-required`: js.UndefOr[Boolean] = js.undefined
+    var `aria-required`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-roledescription`: js.UndefOr[String] = js.undefined
     
@@ -383,7 +368,7 @@ object inputInputMod {
     
     var `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+    var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
     
     var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
@@ -409,7 +394,7 @@ object inputInputMod {
     
     var bordered: js.UndefOr[Boolean] = js.undefined
     
-    var capture: js.UndefOr[Boolean | String] = js.undefined
+    var capture: js.UndefOr[Boolean | user | environment] = js.undefined
     
     var checked: js.UndefOr[Boolean] = js.undefined
     
@@ -457,9 +442,11 @@ object inputInputMod {
     
     var hidden: js.UndefOr[Boolean] = js.undefined
     
+    var htmlSize: js.UndefOr[Double] = js.undefined
+    
     var id: js.UndefOr[String] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var inlist: js.UndefOr[Any] = js.undefined
     
     var inputMode: js.UndefOr[none | text_ | tel | url | email | numeric | decimal | search] = js.undefined
     
@@ -671,9 +658,11 @@ object inputInputMod {
     
     var results: js.UndefOr[Double] = js.undefined
     
-    var role: js.UndefOr[String] = js.undefined
+    var role: js.UndefOr[AriaRole] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
+    
+    var showCount: js.UndefOr[Boolean | ShowCountProps] = js.undefined
     
     var size: js.UndefOr[SizeType] = js.undefined
     
@@ -682,6 +671,8 @@ object inputInputMod {
     var spellCheck: js.UndefOr[Booleanish] = js.undefined
     
     var src: js.UndefOr[String] = js.undefined
+    
+    var status: js.UndefOr[InputStatus] = js.undefined
     
     var step: js.UndefOr[Double | String] = js.undefined
     
@@ -701,7 +692,7 @@ object inputInputMod {
     
     var `type`: js.UndefOr[
         LiteralUnion[
-          button | checkbox | color | date | `datetime-local` | email | file | hidden | image | month | number | password | radio | range | reset | search | submit | tel | text_ | time | url | week, 
+          button | checkbox | color | date | `datetime-local` | email | file | hidden | image_ | month | number | password | radio | range | reset | search | submit | tel | text_ | time | url | week, 
           String
         ]
       ] = js.undefined
@@ -745,7 +736,7 @@ object inputInputMod {
       
       inline def setAddonBeforeUndefined: Self = StObject.set(x, "addonBefore", js.undefined)
       
-      inline def setAllowClear(value: Boolean): Self = StObject.set(x, "allowClear", value.asInstanceOf[js.Any])
+      inline def setAllowClear(value: Boolean | ClearIcon): Self = StObject.set(x, "allowClear", value.asInstanceOf[js.Any])
       
       inline def setAllowClearUndefined: Self = StObject.set(x, "allowClear", js.undefined)
       
@@ -757,7 +748,7 @@ object inputInputMod {
       
       inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
       
-      inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+      inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
       
       inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
       
@@ -765,7 +756,7 @@ object inputInputMod {
       
       inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
       
-      inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+      inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
       
       inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
       
@@ -801,7 +792,7 @@ object inputInputMod {
       
       inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
       
-      inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+      inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
       
       inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
       
@@ -813,7 +804,7 @@ object inputInputMod {
       
       inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
       
-      inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+      inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
       
       inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
       
@@ -821,7 +812,7 @@ object inputInputMod {
       
       inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
       
-      inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+      inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
       
       inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
       
@@ -829,7 +820,7 @@ object inputInputMod {
       
       inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
       
-      inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+      inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       
       inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
       
@@ -857,15 +848,15 @@ object inputInputMod {
       
       inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
       
-      inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+      inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
       
       inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
       
-      inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+      inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
       
       inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
       
-      inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+      inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
       
       inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
       
@@ -889,7 +880,7 @@ object inputInputMod {
       
       inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
       
-      inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+      inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
       
       inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
       
@@ -899,7 +890,7 @@ object inputInputMod {
       
       inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
       
-      inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+      inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
       
       inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
       
@@ -919,7 +910,7 @@ object inputInputMod {
       
       inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
       
-      inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+      inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
       
       inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
       
@@ -971,7 +962,7 @@ object inputInputMod {
       
       inline def setBorderedUndefined: Self = StObject.set(x, "bordered", js.undefined)
       
-      inline def setCapture(value: Boolean | String): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+      inline def setCapture(value: Boolean | user | environment): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
       inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
       
@@ -1019,7 +1010,7 @@ object inputInputMod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -1069,11 +1060,15 @@ object inputInputMod {
       
       inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
       
+      inline def setHtmlSize(value: Double): Self = StObject.set(x, "htmlSize", value.asInstanceOf[js.Any])
+      
+      inline def setHtmlSizeUndefined: Self = StObject.set(x, "htmlSize", js.undefined)
+      
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
@@ -1161,7 +1156,7 @@ object inputInputMod {
       
       inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
-      inline def setOnBlur(value: FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLInputElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
@@ -1261,7 +1256,7 @@ object inputInputMod {
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnFocus(value: FocusEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLInputElement, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
@@ -1497,13 +1492,17 @@ object inputInputMod {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
       inline def setSecurity(value: String): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
       
       inline def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
+      
+      inline def setShowCount(value: Boolean | ShowCountProps): Self = StObject.set(x, "showCount", value.asInstanceOf[js.Any])
+      
+      inline def setShowCountUndefined: Self = StObject.set(x, "showCount", js.undefined)
       
       inline def setSize(value: SizeType): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -1520,6 +1519,10 @@ object inputInputMod {
       inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
       inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
+      
+      inline def setStatus(value: InputStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
       inline def setStep(value: Double | String): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       
@@ -1555,7 +1558,7 @@ object inputInputMod {
       
       inline def setType(
         value: LiteralUnion[
-              button | checkbox | color | date | `datetime-local` | email | file | hidden | image | month | number | password | radio | range | reset | search | submit | tel | text_ | time | url | week, 
+              button | checkbox | color | date | `datetime-local` | email | file | hidden | image_ | month | number | password | radio | range | reset | search | submit | tel | text_ | time | url | week, 
               String
             ]
       ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
@@ -1574,7 +1577,7 @@ object inputInputMod {
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
       
       inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
       
@@ -1583,32 +1586,6 @@ object inputInputMod {
       inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
-    }
-  }
-  
-  trait InputState extends StObject {
-    
-    var focused: Boolean
-    
-    /** `value` from prev props */
-    var prevValue: js.Any
-    
-    var value: js.Any
-  }
-  object InputState {
-    
-    inline def apply(focused: Boolean, prevValue: js.Any, value: js.Any): InputState = {
-      val __obj = js.Dynamic.literal(focused = focused.asInstanceOf[js.Any], prevValue = prevValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[InputState]
-    }
-    
-    extension [Self <: InputState](x: Self) {
-      
-      inline def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
-      
-      inline def setPrevValue(value: js.Any): Self = StObject.set(x, "prevValue", value.asInstanceOf[js.Any])
-      
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

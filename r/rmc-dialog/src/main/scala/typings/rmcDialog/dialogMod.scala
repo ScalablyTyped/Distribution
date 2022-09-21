@@ -12,7 +12,7 @@ object dialogMod {
   
   @JSImport("rmc-dialog/lib/Dialog", JSImport.Default)
   @js.native
-  class default () extends Dialog
+  open class default () extends Dialog
   /* static members */
   object default {
     
@@ -27,42 +27,41 @@ object dialogMod {
   }
   
   @js.native
-  trait Dialog
-    extends Component[IDialogPropTypes, js.Any, js.Any] {
+  trait Dialog extends Component[IDialogPropTypes, Any, Any] {
     
-    var bodyRef: js.Any = js.native
+    var bodyRef: Any = js.native
     
-    def close(e: js.Any): Unit = js.native
+    def close(e: Any): Unit = js.native
     
     @JSName("componentWillUnmount")
     def componentWillUnmount_MDialog(): Unit = js.native
     
-    var dialogRef: js.Any = js.native
+    var dialogRef: Any = js.native
     
-    var footerRef: js.Any = js.native
+    var footerRef: Any = js.native
     
     def getDialogElement(): Element = js.native
     
-    def getMaskElement(): js.Any = js.native
+    def getMaskElement(): Any = js.native
     
-    def getMaskStyle(): js.Any = js.native
+    def getMaskStyle(): Any = js.native
     
     def getMaskTransitionName(): js.UndefOr[String] = js.native
     
     def getTransitionName(): js.UndefOr[String] = js.native
     
-    def getWrapStyle(): js.Any = js.native
+    def getWrapStyle(): Any = js.native
     
-    def getZIndexStyle(): js.Any = js.native
+    def getZIndexStyle(): Any = js.native
     
-    var headerRef: js.Any = js.native
+    var headerRef: Any = js.native
     
     def onAnimateAppear(): Unit = js.native
     
     def onAnimateLeave(): Unit = js.native
     
-    def onMaskClick(e: js.Any): Unit = js.native
+    def onMaskClick(e: Any): Unit = js.native
     
-    var wrapRef: js.Any = js.native
+    var wrapRef: Any = js.native
   }
 }

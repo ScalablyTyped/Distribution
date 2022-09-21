@@ -60,23 +60,17 @@ object anon {
     
     var count: Double
     
-    var endDate: typings.std.Date
+    var endDate: js.Date
     
     var predefinedPeriod: String
     
-    var startDate: typings.std.Date
+    var startDate: js.Date
     
     var `type`: String
   }
   object Count {
     
-    inline def apply(
-      count: Double,
-      endDate: typings.std.Date,
-      predefinedPeriod: String,
-      startDate: typings.std.Date,
-      `type`: String
-    ): Count = {
+    inline def apply(count: Double, endDate: js.Date, predefinedPeriod: String, startDate: js.Date, `type`: String): Count = {
       val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], endDate = endDate.asInstanceOf[js.Any], predefinedPeriod = predefinedPeriod.asInstanceOf[js.Any], startDate = startDate.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Count]
@@ -86,11 +80,11 @@ object anon {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      inline def setEndDate(value: typings.std.Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+      inline def setEndDate(value: js.Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
       
       inline def setPredefinedPeriod(value: String): Self = StObject.set(x, "predefinedPeriod", value.asInstanceOf[js.Any])
       
-      inline def setStartDate(value: typings.std.Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+      inline def setStartDate(value: js.Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -155,9 +149,9 @@ object anon {
     
     var chart: this.type
     
-    var date: js.UndefOr[typings.std.Date] = js.undefined
+    var date: js.UndefOr[js.Date] = js.undefined
     
-    var endDate: js.UndefOr[typings.std.Date] = js.undefined
+    var endDate: js.UndefOr[js.Date] = js.undefined
     
     var eventObject: js.UndefOr[typings.amcharts.stockEventMod.default] = js.undefined
     
@@ -167,7 +161,7 @@ object anon {
     
     var period: js.UndefOr[String] = js.undefined
     
-    var startDate: js.UndefOr[typings.std.Date] = js.undefined
+    var startDate: js.UndefOr[js.Date] = js.undefined
     
     var `type`: String
   }
@@ -183,11 +177,11 @@ object anon {
       
       inline def setChart(value: Date): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
       
-      inline def setDate(value: typings.std.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
       inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      inline def setEndDate(value: typings.std.Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+      inline def setEndDate(value: js.Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
       
       inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
       
@@ -207,7 +201,7 @@ object anon {
       
       inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
       
-      inline def setStartDate(value: typings.std.Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+      inline def setStartDate(value: js.Date): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
       
       inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
       
@@ -337,9 +331,9 @@ object anon {
     
     var chart: default
     
-    var endValue: js.UndefOr[typings.std.Date] = js.undefined
+    var endValue: js.UndefOr[js.Date] = js.undefined
     
-    var startValue: js.UndefOr[typings.std.Date] = js.undefined
+    var startValue: js.UndefOr[js.Date] = js.undefined
     
     var `type`: String
   }
@@ -355,11 +349,11 @@ object anon {
       
       inline def setChart(value: default): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
       
-      inline def setEndValue(value: typings.std.Date): Self = StObject.set(x, "endValue", value.asInstanceOf[js.Any])
+      inline def setEndValue(value: js.Date): Self = StObject.set(x, "endValue", value.asInstanceOf[js.Any])
       
       inline def setEndValueUndefined: Self = StObject.set(x, "endValue", js.undefined)
       
-      inline def setStartValue(value: typings.std.Date): Self = StObject.set(x, "startValue", value.asInstanceOf[js.Any])
+      inline def setStartValue(value: js.Date): Self = StObject.set(x, "startValue", value.asInstanceOf[js.Any])
       
       inline def setStartValueUndefined: Self = StObject.set(x, "startValue", js.undefined)
       

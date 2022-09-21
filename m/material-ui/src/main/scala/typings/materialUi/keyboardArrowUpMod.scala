@@ -10,10 +10,10 @@ object keyboardArrowUpMod {
   
   @JSImport("material-ui/svg-icons/hardware/keyboard-arrow-up", JSImport.Default)
   @js.native
-  class default () extends HardwareKeyboardArrowUp
+  open class default () extends HardwareKeyboardArrowUp
   
   @JSImport("material-ui/svg-icons/hardware/keyboard-arrow-up", "HardwareKeyboardArrowUp")
   @js.native
-  class HardwareKeyboardArrowUp ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class HardwareKeyboardArrowUp ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

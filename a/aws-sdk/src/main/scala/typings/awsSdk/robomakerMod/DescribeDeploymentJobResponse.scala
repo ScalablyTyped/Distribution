@@ -14,7 +14,7 @@ trait DescribeDeploymentJobResponse extends StObject {
   /**
     * The time, in milliseconds since the epoch, when the deployment job was created.
     */
-  var createdAt: js.UndefOr[CreatedAt] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The deployment application configuration.
@@ -69,7 +69,7 @@ object DescribeDeploymentJobResponse {
     
     inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    inline def setCreatedAt(value: CreatedAt): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
@@ -77,7 +77,7 @@ object DescribeDeploymentJobResponse {
     
     inline def setDeploymentApplicationConfigsUndefined: Self = StObject.set(x, "deploymentApplicationConfigs", js.undefined)
     
-    inline def setDeploymentApplicationConfigsVarargs(value: DeploymentApplicationConfig*): Self = StObject.set(x, "deploymentApplicationConfigs", js.Array(value :_*))
+    inline def setDeploymentApplicationConfigsVarargs(value: DeploymentApplicationConfig*): Self = StObject.set(x, "deploymentApplicationConfigs", js.Array(value*))
     
     inline def setDeploymentConfig(value: DeploymentConfig): Self = StObject.set(x, "deploymentConfig", value.asInstanceOf[js.Any])
     
@@ -99,7 +99,7 @@ object DescribeDeploymentJobResponse {
     
     inline def setRobotDeploymentSummaryUndefined: Self = StObject.set(x, "robotDeploymentSummary", js.undefined)
     
-    inline def setRobotDeploymentSummaryVarargs(value: RobotDeployment*): Self = StObject.set(x, "robotDeploymentSummary", js.Array(value :_*))
+    inline def setRobotDeploymentSummaryVarargs(value: RobotDeployment*): Self = StObject.set(x, "robotDeploymentSummary", js.Array(value*))
     
     inline def setStatus(value: DeploymentStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

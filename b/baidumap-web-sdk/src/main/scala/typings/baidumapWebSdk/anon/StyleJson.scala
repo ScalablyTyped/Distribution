@@ -23,6 +23,6 @@ object StyleJson {
     
     inline def setStyleJson(value: js.Array[MapStyleItem]): Self = StObject.set(x, "styleJson", value.asInstanceOf[js.Any])
     
-    inline def setStyleJsonVarargs(value: MapStyleItem*): Self = StObject.set(x, "styleJson", js.Array(value :_*))
+    inline def setStyleJsonVarargs(value: MapStyleItem*): Self = StObject.set(x, "styleJson", js.Array(value*))
   }
 }

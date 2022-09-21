@@ -12,14 +12,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Pedometer extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readingchanged(`type`: readingchanged, listener: TypedEventHandler[Pedometer, PedometerReadingChangedEventArgs]): Unit = js.native
   
   /** Gets the device identifier. */
   var deviceId: String = js.native
   
-  var getCurrentReadings: js.Any = js.native
+  var getCurrentReadings: Any = js.native
   
   /* unmapped type */
   /** The smallest report interval that is supported by this pedometer. */
@@ -34,7 +34,7 @@ trait Pedometer extends StObject {
   /** Gets the power that the sensor consumes. */
   var powerInMilliwatts: Double = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_readingchanged(`type`: readingchanged, listener: TypedEventHandler[Pedometer, PedometerReadingChangedEventArgs]): Unit = js.native
   

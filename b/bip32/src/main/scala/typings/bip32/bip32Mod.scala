@@ -1,7 +1,7 @@
 package typings.bip32
 
 import typings.bip32.anon.Private
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,17 +12,23 @@ object bip32Mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromBase58(inString: String): BIP32Interface = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBase58")(inString.asInstanceOf[js.Any]).asInstanceOf[BIP32Interface]
-  inline def fromBase58(inString: String, network: Network): BIP32Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBase58")(inString.asInstanceOf[js.Any], network.asInstanceOf[js.Any])).asInstanceOf[BIP32Interface]
+  inline def BIP32Factory(ecc: TinySecp256k1Interface): BIP32API = ^.asInstanceOf[js.Dynamic].applyDynamic("BIP32Factory")(ecc.asInstanceOf[js.Any]).asInstanceOf[BIP32API]
   
-  inline def fromPrivateKey(privateKey: Buffer, chainCode: Buffer): BIP32Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivateKey")(privateKey.asInstanceOf[js.Any], chainCode.asInstanceOf[js.Any])).asInstanceOf[BIP32Interface]
-  inline def fromPrivateKey(privateKey: Buffer, chainCode: Buffer, network: Network): BIP32Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivateKey")(privateKey.asInstanceOf[js.Any], chainCode.asInstanceOf[js.Any], network.asInstanceOf[js.Any])).asInstanceOf[BIP32Interface]
-  
-  inline def fromPublicKey(publicKey: Buffer, chainCode: Buffer): BIP32Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPublicKey")(publicKey.asInstanceOf[js.Any], chainCode.asInstanceOf[js.Any])).asInstanceOf[BIP32Interface]
-  inline def fromPublicKey(publicKey: Buffer, chainCode: Buffer, network: Network): BIP32Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPublicKey")(publicKey.asInstanceOf[js.Any], chainCode.asInstanceOf[js.Any], network.asInstanceOf[js.Any])).asInstanceOf[BIP32Interface]
-  
-  inline def fromSeed(seed: Buffer): BIP32Interface = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSeed")(seed.asInstanceOf[js.Any]).asInstanceOf[BIP32Interface]
-  inline def fromSeed(seed: Buffer, network: Network): BIP32Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("fromSeed")(seed.asInstanceOf[js.Any], network.asInstanceOf[js.Any])).asInstanceOf[BIP32Interface]
+  @js.native
+  trait BIP32API extends StObject {
+    
+    def fromBase58(inString: String): BIP32Interface = js.native
+    def fromBase58(inString: String, network: Network): BIP32Interface = js.native
+    
+    def fromPrivateKey(privateKey: Buffer, chainCode: Buffer): BIP32Interface = js.native
+    def fromPrivateKey(privateKey: Buffer, chainCode: Buffer, network: Network): BIP32Interface = js.native
+    
+    def fromPublicKey(publicKey: Buffer, chainCode: Buffer): BIP32Interface = js.native
+    def fromPublicKey(publicKey: Buffer, chainCode: Buffer, network: Network): BIP32Interface = js.native
+    
+    def fromSeed(seed: Buffer): BIP32Interface = js.native
+    def fromSeed(seed: Buffer, network: Network): BIP32Interface = js.native
+  }
   
   @js.native
   trait BIP32Interface extends StObject {
@@ -60,11 +66,15 @@ object bip32Mod {
     def sign(hash: Buffer): Buffer = js.native
     def sign(hash: Buffer, lowR: Boolean): Buffer = js.native
     
+    def signSchnorr(hash: Buffer): Buffer = js.native
+    
     def toBase58(): String = js.native
     
     def toWIF(): String = js.native
     
     def verify(hash: Buffer, signature: Buffer): Boolean = js.native
+    
+    def verifySchnorr(hash: Buffer, signature: Buffer): Boolean = js.native
   }
   
   trait Network extends StObject {
@@ -110,5 +120,50 @@ object bip32Mod {
       
       inline def setWif(value: Double): Self = StObject.set(x, "wif", value.asInstanceOf[js.Any])
     }
+  }
+  
+  @js.native
+  trait TinySecp256k1Interface extends StObject {
+    
+    def isPoint(p: js.typedarray.Uint8Array): Boolean = js.native
+    
+    def isPrivate(d: js.typedarray.Uint8Array): Boolean = js.native
+    
+    def pointAddScalar(p: js.typedarray.Uint8Array, tweak: js.typedarray.Uint8Array): js.typedarray.Uint8Array | Null = js.native
+    def pointAddScalar(p: js.typedarray.Uint8Array, tweak: js.typedarray.Uint8Array, compressed: Boolean): js.typedarray.Uint8Array | Null = js.native
+    
+    def pointFromScalar(d: js.typedarray.Uint8Array): js.typedarray.Uint8Array | Null = js.native
+    def pointFromScalar(d: js.typedarray.Uint8Array, compressed: Boolean): js.typedarray.Uint8Array | Null = js.native
+    
+    def privateAdd(d: js.typedarray.Uint8Array, tweak: js.typedarray.Uint8Array): js.typedarray.Uint8Array | Null = js.native
+    
+    def sign(h: js.typedarray.Uint8Array, d: js.typedarray.Uint8Array): js.typedarray.Uint8Array = js.native
+    def sign(h: js.typedarray.Uint8Array, d: js.typedarray.Uint8Array, e: js.typedarray.Uint8Array): js.typedarray.Uint8Array = js.native
+    
+    var signSchnorr: js.UndefOr[
+        js.Function3[
+          /* h */ js.typedarray.Uint8Array, 
+          /* d */ js.typedarray.Uint8Array, 
+          /* e */ js.UndefOr[js.typedarray.Uint8Array], 
+          js.typedarray.Uint8Array
+        ]
+      ] = js.native
+    
+    def verify(h: js.typedarray.Uint8Array, Q: js.typedarray.Uint8Array, signature: js.typedarray.Uint8Array): Boolean = js.native
+    def verify(
+      h: js.typedarray.Uint8Array,
+      Q: js.typedarray.Uint8Array,
+      signature: js.typedarray.Uint8Array,
+      strict: Boolean
+    ): Boolean = js.native
+    
+    var verifySchnorr: js.UndefOr[
+        js.Function3[
+          /* h */ js.typedarray.Uint8Array, 
+          /* Q */ js.typedarray.Uint8Array, 
+          /* signature */ js.typedarray.Uint8Array, 
+          Boolean
+        ]
+      ] = js.native
   }
 }

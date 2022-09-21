@@ -29,7 +29,7 @@ object DescribeNetworkAclsResult {
     
     inline def setNetworkAclsUndefined: Self = StObject.set(x, "NetworkAcls", js.undefined)
     
-    inline def setNetworkAclsVarargs(value: NetworkAcl*): Self = StObject.set(x, "NetworkAcls", js.Array(value :_*))
+    inline def setNetworkAclsVarargs(value: NetworkAcl*): Self = StObject.set(x, "NetworkAcls", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

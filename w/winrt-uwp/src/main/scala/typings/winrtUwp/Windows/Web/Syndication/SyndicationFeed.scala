@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Web.Syndication
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Data.Xml.Dom.XmlDocument
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Foundation.Uri
@@ -58,7 +57,7 @@ trait SyndicationFeed extends StObject {
   var language: String
   
   /** Gets or sets the time the feed was last modified. This property represents the /rss/channel/lastBuildDate or atom:updated element. */
-  var lastUpdatedTime: Date
+  var lastUpdatedTime: js.Date
   
   /** Gets the last Uniform Resource Identifier (URI) in the sequence. This property represents the atom:link element with attribute rel=”last”. */
   var lastUri: Uri
@@ -122,7 +121,7 @@ object SyndicationFeed {
     imageUri: Uri,
     items: IVector[SyndicationItem],
     language: String,
-    lastUpdatedTime: Date,
+    lastUpdatedTime: js.Date,
     lastUri: Uri,
     links: IVector[SyndicationLink],
     load: String => Unit,
@@ -171,7 +170,7 @@ object SyndicationFeed {
     
     inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    inline def setLastUpdatedTime(value: Date): Self = StObject.set(x, "lastUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTime(value: js.Date): Self = StObject.set(x, "lastUpdatedTime", value.asInstanceOf[js.Any])
     
     inline def setLastUri(value: Uri): Self = StObject.set(x, "lastUri", value.asInstanceOf[js.Any])
     

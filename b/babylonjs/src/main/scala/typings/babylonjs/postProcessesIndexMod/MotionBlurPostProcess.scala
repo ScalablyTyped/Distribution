@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/PostProcesses/index", "MotionBlurPostProcess")
 @js.native
-class MotionBlurPostProcess protected ()
+open class MotionBlurPostProcess protected ()
   extends typings.babylonjs.motionBlurPostProcessMod.MotionBlurPostProcess {
   /**
     * Creates a new instance MotionBlurPostProcess
@@ -46,6 +46,12 @@ object MotionBlurPostProcess {
   @js.native
   val ^ : js.Any = js.native
   
-  /** @hidden */
-  inline def _Parse(parsedPostProcess: js.Any, targetCamera: Camera, scene: Scene, rootUrl: String): Nullable[typings.babylonjs.motionBlurPostProcessMod.MotionBlurPostProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.motionBlurPostProcessMod.MotionBlurPostProcess]]
+  /**
+    * @param parsedPostProcess
+    * @param targetCamera
+    * @param scene
+    * @param rootUrl
+    * @hidden
+    */
+  inline def _Parse(parsedPostProcess: Any, targetCamera: Camera, scene: Scene, rootUrl: String): Nullable[typings.babylonjs.motionBlurPostProcessMod.MotionBlurPostProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.motionBlurPostProcessMod.MotionBlurPostProcess]]
 }

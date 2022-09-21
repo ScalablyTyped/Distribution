@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PolicyRole extends StObject {
   
   /**
-    * The stable and unique string identifying the role. For more information about IDs, see IAM Identifiers in the IAM User Guide.
+    * The stable and unique string identifying the role. For more information about IDs, see IAM identifiers in the IAM User Guide.
     */
   var RoleId: js.UndefOr[idType] = js.undefined
   

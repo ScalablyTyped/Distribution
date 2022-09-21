@@ -9,14 +9,14 @@ object arcMod {
   
   @JSImport("@antv/component/lib/annotation/arc", JSImport.Default)
   @js.native
-  class default () extends ArcAnnotation
+  open class default () extends ArcAnnotation
   
   @js.native
   trait ArcAnnotation
     extends typings.antvComponent.groupComponentMod.default[ArcAnnotationCfg] {
     
-    /* private */ var getArcPath: js.Any = js.native
+    /* private */ var getArcPath: Any = js.native
     
-    /* private */ var renderArc: js.Any = js.native
+    /* private */ var renderArc: Any = js.native
   }
 }

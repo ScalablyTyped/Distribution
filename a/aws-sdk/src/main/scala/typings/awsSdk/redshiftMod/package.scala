@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AccountsWithRestoreAccessList = js.Array[typings.awsSdk.redshiftMod.AccountWithRestoreAccess]
+type AccountsWithRestoreAccessList = js.Array[AccountWithRestoreAccess]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`restore-cluster`
@@ -13,89 +13,161 @@ type AccountsWithRestoreAccessList = js.Array[typings.awsSdk.redshiftMod.Account
   - typings.awsSdk.awsSdkStrings.`resize-cluster`
   - java.lang.String
 */
-type ActionType = typings.awsSdk.redshiftMod._ActionType | java.lang.String
+type ActionType = _ActionType | java.lang.String
 
-type AssociatedClusterList = js.Array[typings.awsSdk.redshiftMod.ClusterAssociatedToSchedule]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.enabled__
+  - typings.awsSdk.awsSdkStrings.disabled__
+  - typings.awsSdk.awsSdkStrings.auto__
+  - java.lang.String
+*/
+type AquaConfigurationStatus = _AquaConfigurationStatus | java.lang.String
 
-type AttributeList = js.Array[typings.awsSdk.redshiftMod.AccountAttribute]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.enabled__
+  - typings.awsSdk.awsSdkStrings.disabled__
+  - typings.awsSdk.awsSdkStrings.applying_
+  - java.lang.String
+*/
+type AquaStatus = _AquaStatus | java.lang.String
 
-type AttributeNameList = js.Array[typings.awsSdk.redshiftMod.String]
+type AssociatedClusterList = js.Array[ClusterAssociatedToSchedule]
 
-type AttributeValueList = js.Array[typings.awsSdk.redshiftMod.AttributeValueTarget]
+type AttributeList = js.Array[AccountAttribute]
 
-type AvailabilityZoneList = js.Array[typings.awsSdk.redshiftMod.AvailabilityZone]
+type AttributeNameList = js.Array[String]
 
-type BatchSnapshotOperationErrorList = js.Array[typings.awsSdk.redshiftMod.SnapshotErrorMessage]
+type AttributeValueList = js.Array[AttributeValueTarget]
 
-type BatchSnapshotOperationErrors = js.Array[typings.awsSdk.redshiftMod.SnapshotErrorMessage]
+type AuthenticationProfileList = js.Array[AuthenticationProfile]
+
+type AuthenticationProfileNameString = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Authorized_
+  - typings.awsSdk.awsSdkStrings.Revoking
+  - java.lang.String
+*/
+type AuthorizationStatus = _AuthorizationStatus | java.lang.String
+
+type AvailabilityZoneList = js.Array[AvailabilityZone]
+
+type BatchSnapshotOperationErrorList = js.Array[SnapshotErrorMessage]
+
+type BatchSnapshotOperationErrors = js.Array[SnapshotErrorMessage]
 
 type Boolean = scala.Boolean
 
 type BooleanOptional = scala.Boolean
 
-type ClusterDbRevisionsList = js.Array[typings.awsSdk.redshiftMod.ClusterDbRevision]
+type ClusterDbRevisionsList = js.Array[ClusterDbRevision]
 
-type ClusterIamRoleList = js.Array[typings.awsSdk.redshiftMod.ClusterIamRole]
+type ClusterIamRoleList = js.Array[ClusterIamRole]
 
-type ClusterList = js.Array[typings.awsSdk.redshiftMod.Cluster]
+type ClusterList = js.Array[Cluster]
 
-type ClusterNodesList = js.Array[typings.awsSdk.redshiftMod.ClusterNode]
+type ClusterNodesList = js.Array[ClusterNode]
 
-type ClusterParameterGroupStatusList = js.Array[typings.awsSdk.redshiftMod.ClusterParameterGroupStatus]
+type ClusterParameterGroupStatusList = js.Array[ClusterParameterGroupStatus]
 
-type ClusterParameterStatusList = js.Array[typings.awsSdk.redshiftMod.ClusterParameterStatus]
+type ClusterParameterStatusList = js.Array[ClusterParameterStatus]
 
-type ClusterSecurityGroupMembershipList = js.Array[typings.awsSdk.redshiftMod.ClusterSecurityGroupMembership]
+type ClusterSecurityGroupMembershipList = js.Array[ClusterSecurityGroupMembership]
 
-type ClusterSecurityGroupNameList = js.Array[typings.awsSdk.redshiftMod.String]
+type ClusterSecurityGroupNameList = js.Array[String]
 
-type ClusterSecurityGroups = js.Array[typings.awsSdk.redshiftMod.ClusterSecurityGroup]
+type ClusterSecurityGroups = js.Array[ClusterSecurityGroup]
 
-type ClusterSubnetGroups = js.Array[typings.awsSdk.redshiftMod.ClusterSubnetGroup]
+type ClusterSubnetGroups = js.Array[ClusterSubnetGroup]
 
-type ClusterVersionList = js.Array[typings.awsSdk.redshiftMod.ClusterVersion]
+type ClusterVersionList = js.Array[ClusterVersion]
 
-type DbGroupList = js.Array[typings.awsSdk.redshiftMod.String]
+type DataShareAssociationList = js.Array[DataShareAssociation]
 
-type DeferredMaintenanceWindowsList = js.Array[typings.awsSdk.redshiftMod.DeferredMaintenanceWindow]
+type DataShareList = js.Array[DataShare]
 
-type DeleteClusterSnapshotMessageList = js.Array[typings.awsSdk.redshiftMod.DeleteClusterSnapshotMessage]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ACTIVE
+  - typings.awsSdk.awsSdkStrings.PENDING_AUTHORIZATION
+  - typings.awsSdk.awsSdkStrings.AUTHORIZED
+  - typings.awsSdk.awsSdkStrings.DEAUTHORIZED
+  - typings.awsSdk.awsSdkStrings.REJECTED
+  - typings.awsSdk.awsSdkStrings.AVAILABLE
+  - java.lang.String
+*/
+type DataShareStatus = _DataShareStatus | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ACTIVE
+  - typings.awsSdk.awsSdkStrings.AVAILABLE
+  - java.lang.String
+*/
+type DataShareStatusForConsumer = _DataShareStatusForConsumer | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ACTIVE
+  - typings.awsSdk.awsSdkStrings.AUTHORIZED
+  - typings.awsSdk.awsSdkStrings.PENDING_AUTHORIZATION
+  - typings.awsSdk.awsSdkStrings.DEAUTHORIZED
+  - typings.awsSdk.awsSdkStrings.REJECTED
+  - java.lang.String
+*/
+type DataShareStatusForProducer = _DataShareStatusForProducer | java.lang.String
+
+type DbGroupList = js.Array[String]
+
+type DeferredMaintenanceWindowsList = js.Array[DeferredMaintenanceWindow]
+
+type DeleteClusterSnapshotMessageList = js.Array[DeleteClusterSnapshotMessage]
 
 type Double = scala.Double
 
 type DoubleOptional = scala.Double
 
-type EC2SecurityGroupList = js.Array[typings.awsSdk.redshiftMod.EC2SecurityGroup]
+type EC2SecurityGroupList = js.Array[EC2SecurityGroup]
 
-type EligibleTracksToUpdateList = js.Array[typings.awsSdk.redshiftMod.UpdateTarget]
+type EligibleTracksToUpdateList = js.Array[UpdateTarget]
 
-type EventCategoriesList = js.Array[typings.awsSdk.redshiftMod.String]
+type EndpointAccesses = js.Array[EndpointAccess]
 
-type EventCategoriesMapList = js.Array[typings.awsSdk.redshiftMod.EventCategoriesMap]
+type EndpointAuthorizations = js.Array[EndpointAuthorization]
 
-type EventInfoMapList = js.Array[typings.awsSdk.redshiftMod.EventInfoMap]
+type EventCategoriesList = js.Array[String]
 
-type EventList = js.Array[typings.awsSdk.redshiftMod.Event]
+type EventCategoriesMapList = js.Array[EventCategoriesMap]
 
-type EventSubscriptionsList = js.Array[typings.awsSdk.redshiftMod.EventSubscription]
+type EventInfoMapList = js.Array[EventInfoMap]
 
-type HsmClientCertificateList = js.Array[typings.awsSdk.redshiftMod.HsmClientCertificate]
+type EventList = js.Array[Event]
 
-type HsmConfigurationList = js.Array[typings.awsSdk.redshiftMod.HsmConfiguration]
+type EventSubscriptionsList = js.Array[EventSubscription]
 
-type IPRangeList = js.Array[typings.awsSdk.redshiftMod.IPRange]
+type HsmClientCertificateList = js.Array[HsmClientCertificate]
 
-type IamRoleArnList = js.Array[typings.awsSdk.redshiftMod.String]
+type HsmConfigurationList = js.Array[HsmConfiguration]
 
-type ImportTablesCompleted = js.Array[typings.awsSdk.redshiftMod.String]
+type IPRangeList = js.Array[IPRange]
 
-type ImportTablesInProgress = js.Array[typings.awsSdk.redshiftMod.String]
+type IamRoleArnList = js.Array[String]
 
-type ImportTablesNotStarted = js.Array[typings.awsSdk.redshiftMod.String]
+type ImportTablesCompleted = js.Array[String]
+
+type ImportTablesInProgress = js.Array[String]
+
+type ImportTablesNotStarted = js.Array[String]
 
 type Integer = scala.Double
 
 type IntegerOptional = scala.Double
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.s3_
+  - typings.awsSdk.awsSdkStrings.cloudwatch_
+  - java.lang.String
+*/
+type LogDestinationType = _LogDestinationType | java.lang.String
+
+type LogTypeList = js.Array[String]
 
 type Long = scala.Double
 
@@ -106,11 +178,13 @@ type LongOptional = scala.Double
   - typings.awsSdk.awsSdkStrings.`high-performance`
   - java.lang.String
 */
-type Mode = typings.awsSdk.redshiftMod._Mode | java.lang.String
+type Mode = _Mode | java.lang.String
 
-type NodeConfigurationOptionList = js.Array[typings.awsSdk.redshiftMod.NodeConfigurationOption]
+type NetworkInterfaceList = js.Array[NetworkInterface]
 
-type NodeConfigurationOptionsFilterList = js.Array[typings.awsSdk.redshiftMod.NodeConfigurationOptionsFilter]
+type NodeConfigurationOptionList = js.Array[NodeConfigurationOption]
+
+type NodeConfigurationOptionsFilterList = js.Array[NodeConfigurationOptionsFilter]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NodeType
@@ -119,10 +193,10 @@ type NodeConfigurationOptionsFilterList = js.Array[typings.awsSdk.redshiftMod.No
   - typings.awsSdk.awsSdkStrings.Mode
   - java.lang.String
 */
-type NodeConfigurationOptionsFilterName = typings.awsSdk.redshiftMod._NodeConfigurationOptionsFilterName | java.lang.String
+type NodeConfigurationOptionsFilterName = _NodeConfigurationOptionsFilterName | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
-  - typings.awsSdk.awsSdkStrings.eq_
+  - typings.awsSdk.awsSdkStrings.eq__
   - typings.awsSdk.awsSdkStrings.lt_
   - typings.awsSdk.awsSdkStrings.gt_
   - typings.awsSdk.awsSdkStrings.le_
@@ -131,41 +205,84 @@ type NodeConfigurationOptionsFilterName = typings.awsSdk.redshiftMod._NodeConfig
   - typings.awsSdk.awsSdkStrings.between_
   - java.lang.String
 */
-type OperatorType = typings.awsSdk.redshiftMod._OperatorType | java.lang.String
+type OperatorType = _OperatorType | java.lang.String
 
-type OrderableClusterOptionsList = js.Array[typings.awsSdk.redshiftMod.OrderableClusterOption]
+type OrderableClusterOptionsList = js.Array[OrderableClusterOption]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.static__
   - typings.awsSdk.awsSdkStrings.dynamic__
   - java.lang.String
 */
-type ParameterApplyType = typings.awsSdk.redshiftMod._ParameterApplyType | java.lang.String
+type ParameterApplyType = _ParameterApplyType | java.lang.String
 
-type ParameterGroupList = js.Array[typings.awsSdk.redshiftMod.ClusterParameterGroup]
+type ParameterGroupList = js.Array[ClusterParameterGroup]
 
-type ParametersList = js.Array[typings.awsSdk.redshiftMod.Parameter]
+type ParametersList = js.Array[Parameter]
 
-type PendingActionsList = js.Array[typings.awsSdk.redshiftMod.String]
+type PartnerIntegrationAccountId = java.lang.String
 
-type RecurringChargeList = js.Array[typings.awsSdk.redshiftMod.RecurringCharge]
+type PartnerIntegrationClusterIdentifier = java.lang.String
 
-type ReservedNodeList = js.Array[typings.awsSdk.redshiftMod.ReservedNode]
+type PartnerIntegrationDatabaseName = java.lang.String
 
-type ReservedNodeOfferingList = js.Array[typings.awsSdk.redshiftMod.ReservedNodeOffering]
+type PartnerIntegrationInfoList = js.Array[PartnerIntegrationInfo]
+
+type PartnerIntegrationPartnerName = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Active_
+  - typings.awsSdk.awsSdkStrings.Inactive_
+  - typings.awsSdk.awsSdkStrings.RuntimeFailure
+  - typings.awsSdk.awsSdkStrings.ConnectionFailure
+  - java.lang.String
+*/
+type PartnerIntegrationStatus = _PartnerIntegrationStatus | java.lang.String
+
+type PartnerIntegrationStatusMessage = java.lang.String
+
+type PendingActionsList = js.Array[String]
+
+type RecurringChargeList = js.Array[RecurringCharge]
+
+type ReservedNodeConfigurationOptionList = js.Array[ReservedNodeConfigurationOption]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.`restore-cluster`
+  - typings.awsSdk.awsSdkStrings.`resize-cluster`
+  - java.lang.String
+*/
+type ReservedNodeExchangeActionType = _ReservedNodeExchangeActionType | java.lang.String
+
+type ReservedNodeExchangeStatusList = js.Array[ReservedNodeExchangeStatus]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.REQUESTED
+  - typings.awsSdk.awsSdkStrings.PENDING
+  - typings.awsSdk.awsSdkStrings.IN_PROGRESS
+  - typings.awsSdk.awsSdkStrings.RETRYING
+  - typings.awsSdk.awsSdkStrings.SUCCEEDED
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - java.lang.String
+*/
+type ReservedNodeExchangeStatusType = _ReservedNodeExchangeStatusType | java.lang.String
+
+type ReservedNodeList = js.Array[ReservedNode]
+
+type ReservedNodeOfferingList = js.Array[ReservedNodeOffering]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Regular_
   - typings.awsSdk.awsSdkStrings.Upgradable
   - java.lang.String
 */
-type ReservedNodeOfferingType = typings.awsSdk.redshiftMod._ReservedNodeOfferingType | java.lang.String
+type ReservedNodeOfferingType = _ReservedNodeOfferingType | java.lang.String
 
-type RestorableNodeTypeList = js.Array[typings.awsSdk.redshiftMod.String]
+type RestorableNodeTypeList = js.Array[String]
 
-type RevisionTargetsList = js.Array[typings.awsSdk.redshiftMod.RevisionTarget]
+type RevisionTargetsList = js.Array[RevisionTarget]
 
-type ScheduleDefinitionList = js.Array[typings.awsSdk.redshiftMod.String]
+type ScheduleDefinitionList = js.Array[String]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.MODIFYING
@@ -173,27 +290,27 @@ type ScheduleDefinitionList = js.Array[typings.awsSdk.redshiftMod.String]
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type ScheduleState = typings.awsSdk.redshiftMod._ScheduleState | java.lang.String
+type ScheduleState = _ScheduleState | java.lang.String
 
-type ScheduledActionFilterList = js.Array[typings.awsSdk.redshiftMod.ScheduledActionFilter]
+type ScheduledActionFilterList = js.Array[ScheduledActionFilter]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`cluster-identifier`
   - typings.awsSdk.awsSdkStrings.`iam-role`
   - java.lang.String
 */
-type ScheduledActionFilterName = typings.awsSdk.redshiftMod._ScheduledActionFilterName | java.lang.String
+type ScheduledActionFilterName = _ScheduledActionFilterName | java.lang.String
 
-type ScheduledActionList = js.Array[typings.awsSdk.redshiftMod.ScheduledAction]
+type ScheduledActionList = js.Array[ScheduledAction]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ACTIVE
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type ScheduledActionState = typings.awsSdk.redshiftMod._ScheduledActionState | java.lang.String
+type ScheduledActionState = _ScheduledActionState | java.lang.String
 
-type ScheduledActionTimeList = js.Array[typings.awsSdk.redshiftMod.TStamp]
+type ScheduledActionTimeList = js.Array[js.Date]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ResizeCluster
@@ -201,9 +318,9 @@ type ScheduledActionTimeList = js.Array[typings.awsSdk.redshiftMod.TStamp]
   - typings.awsSdk.awsSdkStrings.ResumeCluster
   - java.lang.String
 */
-type ScheduledActionTypeValues = typings.awsSdk.redshiftMod._ScheduledActionTypeValues | java.lang.String
+type ScheduledActionTypeValues = _ScheduledActionTypeValues | java.lang.String
 
-type ScheduledSnapshotTimeList = js.Array[typings.awsSdk.redshiftMod.TStamp]
+type ScheduledSnapshotTimeList = js.Array[js.Date]
 
 type SensitiveString = java.lang.String
 
@@ -213,26 +330,26 @@ type SensitiveString = java.lang.String
   - typings.awsSdk.awsSdkStrings.CREATE_TIME
   - java.lang.String
 */
-type SnapshotAttributeToSortBy = typings.awsSdk.redshiftMod._SnapshotAttributeToSortBy | java.lang.String
+type SnapshotAttributeToSortBy = _SnapshotAttributeToSortBy | java.lang.String
 
-type SnapshotCopyGrantList = js.Array[typings.awsSdk.redshiftMod.SnapshotCopyGrant]
+type SnapshotCopyGrantList = js.Array[SnapshotCopyGrant]
 
-type SnapshotIdentifierList = js.Array[typings.awsSdk.redshiftMod.String]
+type SnapshotIdentifierList = js.Array[String]
 
-type SnapshotList = js.Array[typings.awsSdk.redshiftMod.Snapshot]
+type SnapshotList = js.Array[Snapshot]
 
-type SnapshotScheduleList = js.Array[typings.awsSdk.redshiftMod.SnapshotSchedule]
+type SnapshotScheduleList = js.Array[SnapshotSchedule]
 
-type SnapshotSortingEntityList = js.Array[typings.awsSdk.redshiftMod.SnapshotSortingEntity]
+type SnapshotSortingEntityList = js.Array[SnapshotSortingEntity]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ASC
   - typings.awsSdk.awsSdkStrings.DESC
   - java.lang.String
 */
-type SortByOrder = typings.awsSdk.redshiftMod._SortByOrder | java.lang.String
+type SortByOrder = _SortByOrder | java.lang.String
 
-type SourceIdsList = js.Array[typings.awsSdk.redshiftMod.String]
+type SourceIdsList = js.Array[String]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.cluster_
@@ -242,21 +359,21 @@ type SourceIdsList = js.Array[typings.awsSdk.redshiftMod.String]
   - typings.awsSdk.awsSdkStrings.`scheduled-action`
   - java.lang.String
 */
-type SourceType = typings.awsSdk.redshiftMod._SourceType | java.lang.String
+type SourceType = _SourceType | java.lang.String
 
 type String = java.lang.String
 
-type SubnetIdentifierList = js.Array[typings.awsSdk.redshiftMod.String]
+type SubnetIdentifierList = js.Array[String]
 
-type SubnetList = js.Array[typings.awsSdk.redshiftMod.Subnet]
+type SubnetList = js.Array[Subnet]
 
-type SupportedOperationList = js.Array[typings.awsSdk.redshiftMod.SupportedOperation]
+type SupportedOperationList = js.Array[SupportedOperation]
 
-type SupportedPlatformsList = js.Array[typings.awsSdk.redshiftMod.SupportedPlatform]
+type SupportedPlatformsList = js.Array[SupportedPlatform]
 
-type TStamp = typings.std.Date
+type TStamp = js.Date
 
-type TableRestoreStatusList = js.Array[typings.awsSdk.redshiftMod.TableRestoreStatus]
+type TableRestoreStatusList = js.Array[TableRestoreStatus]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PENDING
@@ -266,17 +383,17 @@ type TableRestoreStatusList = js.Array[typings.awsSdk.redshiftMod.TableRestoreSt
   - typings.awsSdk.awsSdkStrings.CANCELED
   - java.lang.String
 */
-type TableRestoreStatusType = typings.awsSdk.redshiftMod._TableRestoreStatusType | java.lang.String
+type TableRestoreStatusType = _TableRestoreStatusType | java.lang.String
 
-type TagKeyList = js.Array[typings.awsSdk.redshiftMod.String]
+type TagKeyList = js.Array[String]
 
-type TagList = js.Array[typings.awsSdk.redshiftMod.Tag]
+type TagList = js.Array[Tag]
 
-type TagValueList = js.Array[typings.awsSdk.redshiftMod.String]
+type TagValueList = js.Array[String]
 
-type TaggedResourceList = js.Array[typings.awsSdk.redshiftMod.TaggedResource]
+type TaggedResourceList = js.Array[TaggedResource]
 
-type TrackList = js.Array[typings.awsSdk.redshiftMod.MaintenanceTrack]
+type TrackList = js.Array[MaintenanceTrack]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.log_
@@ -284,41 +401,46 @@ type TrackList = js.Array[typings.awsSdk.redshiftMod.MaintenanceTrack]
   - typings.awsSdk.awsSdkStrings.disable_
   - java.lang.String
 */
-type UsageLimitBreachAction = typings.awsSdk.redshiftMod._UsageLimitBreachAction | java.lang.String
+type UsageLimitBreachAction = _UsageLimitBreachAction | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.spectrum
   - typings.awsSdk.awsSdkStrings.`concurrency-scaling`
+  - typings.awsSdk.awsSdkStrings.`cross-region-datasharing`
   - java.lang.String
 */
-type UsageLimitFeatureType = typings.awsSdk.redshiftMod._UsageLimitFeatureType | java.lang.String
+type UsageLimitFeatureType = _UsageLimitFeatureType | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.time_
   - typings.awsSdk.awsSdkStrings.`data-scanned`
   - java.lang.String
 */
-type UsageLimitLimitType = typings.awsSdk.redshiftMod._UsageLimitLimitType | java.lang.String
+type UsageLimitLimitType = _UsageLimitLimitType | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.daily__
   - typings.awsSdk.awsSdkStrings.weekly__
-  - typings.awsSdk.awsSdkStrings.monthly_
+  - typings.awsSdk.awsSdkStrings.monthly__
   - java.lang.String
 */
-type UsageLimitPeriod = typings.awsSdk.redshiftMod._UsageLimitPeriod | java.lang.String
+type UsageLimitPeriod = _UsageLimitPeriod | java.lang.String
 
-type UsageLimits = js.Array[typings.awsSdk.redshiftMod.UsageLimit]
+type UsageLimits = js.Array[UsageLimit]
 
-type ValueStringList = js.Array[typings.awsSdk.redshiftMod.String]
+type ValueStringList = js.Array[String]
 
-type VpcSecurityGroupIdList = js.Array[typings.awsSdk.redshiftMod.String]
+type VpcEndpointsList = js.Array[VpcEndpoint]
 
-type VpcSecurityGroupMembershipList = js.Array[typings.awsSdk.redshiftMod.VpcSecurityGroupMembership]
+type VpcIdentifierList = js.Array[String]
+
+type VpcSecurityGroupIdList = js.Array[String]
+
+type VpcSecurityGroupMembershipList = js.Array[VpcSecurityGroupMembership]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2012-12-01`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.redshiftMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | java.lang.String

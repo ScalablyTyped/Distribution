@@ -2,7 +2,6 @@ package typings.glReactHeadless
 
 import typings.react.mod.Component
 import typings.std.Blob
-import typings.std.Error
 import typings.std.HTMLCanvasElement
 import typings.std.WebGLContextAttributes
 import typings.std.WebGLRenderingContext
@@ -14,14 +13,14 @@ object glviewheadlessMod {
   
   @JSImport("gl-react-headless/GLViewHeadless", "GLViewHeadless")
   @js.native
-  class GLViewHeadless protected ()
-    extends Component[GLViewHeadlessProps, js.Object, js.Any] {
+  open class GLViewHeadless protected ()
+    extends Component[GLViewHeadlessProps, js.Object, Any] {
     def this(props: GLViewHeadlessProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: GLViewHeadlessProps, context: js.Any) = this()
+    def this(props: GLViewHeadlessProps, context: Any) = this()
     
     var canvas: js.UndefOr[HTMLCanvasElement] = js.native
     
@@ -46,7 +45,7 @@ object glviewheadlessMod {
     
     var onContextCreate: js.UndefOr[js.Function1[/* gl */ WebGLRenderingContext, Unit]] = js.undefined
     
-    var onContextFailure: js.UndefOr[js.Function1[/* e */ Error, Unit]] = js.undefined
+    var onContextFailure: js.UndefOr[js.Function1[/* e */ js.Error, Unit]] = js.undefined
     
     var onContextLost: js.UndefOr[js.Function0[Unit]] = js.undefined
     
@@ -73,7 +72,7 @@ object glviewheadlessMod {
       
       inline def setOnContextCreateUndefined: Self = StObject.set(x, "onContextCreate", js.undefined)
       
-      inline def setOnContextFailure(value: /* e */ Error => Unit): Self = StObject.set(x, "onContextFailure", js.Any.fromFunction1(value))
+      inline def setOnContextFailure(value: /* e */ js.Error => Unit): Self = StObject.set(x, "onContextFailure", js.Any.fromFunction1(value))
       
       inline def setOnContextFailureUndefined: Self = StObject.set(x, "onContextFailure", js.undefined)
       

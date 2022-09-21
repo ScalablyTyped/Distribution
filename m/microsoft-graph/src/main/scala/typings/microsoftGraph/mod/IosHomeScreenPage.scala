@@ -9,7 +9,7 @@ trait IosHomeScreenPage extends StObject {
   // Name of the page
   var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // A list of apps and folders to appear on a page. This collection can contain a maximum of 500 elements.
+  // A list of apps, folders, and web clips to appear on a page. This collection can contain a maximum of 500 elements.
   var icons: js.UndefOr[js.Array[IosHomeScreenItem]] = js.undefined
 }
 object IosHomeScreenPage {
@@ -31,6 +31,6 @@ object IosHomeScreenPage {
     
     inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
-    inline def setIconsVarargs(value: IosHomeScreenItem*): Self = StObject.set(x, "icons", js.Array(value :_*))
+    inline def setIconsVarargs(value: IosHomeScreenItem*): Self = StObject.set(x, "icons", js.Array(value*))
   }
 }

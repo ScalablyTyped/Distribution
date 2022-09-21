@@ -10,10 +10,10 @@ A very lightweight promise based Node.js wrapper for the native Raspberry Pi Cam
 | ------------------ | :-------------: |
 | Full name          | pi-camera |
 | Keywords           | Raspberry, Pi, Camera, Picture, Photo, Video, raspicam, raspistill, raspivid, picamera, pi-camera |
-| # releases         | 4 |
-| # dependents       | 1 |
-| # downloads        | 3554 |
-| # stars            | 2 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 212.66666666666666 |
+| # stars            | 71.0 |
 
 ## Links
 - [Homepage](https://github.com/stetsmando/pi-camera#readme)

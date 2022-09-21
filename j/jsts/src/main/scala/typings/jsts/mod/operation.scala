@@ -1,6 +1,7 @@
 package typings.jsts.mod
 
 import typings.jsts.jsts.algorithm.BoundaryNodeRule
+import typings.jsts.jsts.geom.Coordinate
 import typings.jsts.jsts.geom.Geometry
 import typings.jsts.jsts.geom.IntersectionMatrix
 import typings.jsts.jsts.geom.PrecisionModel
@@ -12,7 +13,7 @@ object operation {
   
   @JSImport("jsts", "operation.GeometryGraphOperation")
   @js.native
-  class GeometryGraphOperation protected ()
+  open class GeometryGraphOperation protected ()
     extends StObject
        with typings.jsts.jsts.operation.GeometryGraphOperation {
     def this(g0: Geometry) = this()
@@ -30,7 +31,7 @@ object operation {
     
     @JSImport("jsts", "operation.buffer.BufferOp")
     @js.native
-    class BufferOp protected ()
+    open class BufferOp protected ()
       extends StObject
          with typings.jsts.jsts.operation.buffer.BufferOp {
       /**
@@ -196,7 +197,7 @@ object operation {
       *
       * @constructor
       */
-    class BufferParameters ()
+    open class BufferParameters ()
       extends StObject
          with typings.jsts.jsts.operation.buffer.BufferParameters {
       def this(quadrantSegments: Double) = this()
@@ -422,11 +423,163 @@ object operation {
     }
   }
   
+  object distance {
+    
+    @JSImport("jsts", "operation.distance.DistanceOp")
+    @js.native
+    open class DistanceOp protected ()
+      extends StObject
+         with typings.jsts.jsts.operation.distance.DistanceOp {
+      /**
+        * Constructs a DistanceOp that computes the distance and nearest points
+        * between the two specified geometries.
+        */
+      def this(g0: Geometry, g1: Geometry) = this()
+      /**
+        * Constructs a DistanceOp that computes the distance and nearest points
+        * between the two specified geometries.
+        *
+        * @param {double} terminateDistance the distance on which to terminate the search
+        */
+      def this(g0: Geometry, g1: Geometry, terminateDistance: Double) = this()
+      
+      /**
+        * Report the distance between the nearest points on the input geometries.
+        *
+        * @returns {double} the distance between the geometries or 0 if either input geometry is empty
+        *
+        * @throws {IllegalArgumentException} if either input geometry is null
+        */
+      /* CompleteClass */
+      override def distance(): Double = js.native
+      
+      /**
+        * Report the locations of the nearest points in the input geometries.
+        * The locations are presented in the same order as the input Geometries.
+        *
+        * @returns a pair of GeometryLocations for the nearest points
+        */
+      /* CompleteClass */
+      override def nearestLocations(): js.Tuple2[
+            typings.jsts.jsts.operation.distance.GeometryLocation, 
+            typings.jsts.jsts.operation.distance.GeometryLocation
+          ] = js.native
+      
+      /**
+        * Report the coordinates of the nearest points in the input geometries.
+        * The points are presented in the same order as the input Geometries.
+        *
+        * @returns a pair of Coordinates of the nearest points
+        */
+      /* CompleteClass */
+      override def nearestPoints(): js.Tuple2[Coordinate, Coordinate] = js.native
+    }
+    /* static members */
+    object DistanceOp {
+      
+      @JSImport("jsts", "operation.distance.DistanceOp")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      /**
+        * Compute the distance between the nearest points of two geometries.
+        *
+        * @returns {double} the distance between the geometries
+        */
+      inline def distance(g0: Geometry, g1: Geometry): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(g0.asInstanceOf[js.Any], g1.asInstanceOf[js.Any])).asInstanceOf[Double]
+      
+      /**
+        * Test whether two geometries lie within a given distance of each other.
+        *
+        * @param {double} distance
+        *
+        * @returns true if g0.distance(g1) <= distance
+        */
+      inline def isWithinDistance(g0: Geometry, g1: Geometry, distance: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isWithinDistance")(g0.asInstanceOf[js.Any], g1.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      
+      /**
+        * Compute the the nearest points of two geometries.
+        * The points are presented in the same order as the input Geometries.
+        *
+        * @returns the nearest points in the geometries
+        */
+      inline def nearestPoints(g0: Geometry, g1: Geometry): js.Tuple2[Coordinate, Coordinate] = (^.asInstanceOf[js.Dynamic].applyDynamic("nearestPoints")(g0.asInstanceOf[js.Any], g1.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Coordinate, Coordinate]]
+    }
+    
+    @JSImport("jsts", "operation.distance.GeometryLocation")
+    @js.native
+    open class GeometryLocation protected ()
+      extends StObject
+         with typings.jsts.jsts.operation.distance.GeometryLocation {
+      /**
+        * Constructs a GeometryLocation specifying a point inside an area geometry.
+        *
+        * @param component the component of the geometry containing the point
+        * @param pt the coordinate of the location
+        */
+      def this(component: Geometry, pt: Coordinate) = this()
+      /**
+        * Constructs a GeometryLocation specifying a point on a geometry,
+        * as well as the segment that the point is on
+        * (or INSIDE_AREA if the point is not on a segment).
+        *
+        * @param component the component of the geometry containing the point
+        * @param {int} segIndex the segment index of the location, or INSIDE_AREA
+        * @param pt the coordinate of the location
+        */
+      def this(component: Geometry, segIndex: Double, pt: Coordinate) = this()
+      
+      /**
+        * Returns the Coordinate of this location.
+        */
+      /* CompleteClass */
+      override def getCoordinate(): Coordinate = js.native
+      
+      /**
+        * Returns the geometry component on (or in) which this location occurs.
+        */
+      /* CompleteClass */
+      override def getGeometryComponent(): Geometry = js.native
+      
+      /**
+        * Returns the segment index for this location.
+        * If the location is inside an area, the index will have the value INSIDE_AREA;
+        *
+        * @returns {int} the segment index for the location, or INSIDE_AREA
+        */
+      /* CompleteClass */
+      override def getSegmentIndex(): Double = js.native
+      
+      /**
+        * Tests whether this location represents a point inside an area geometry.
+        */
+      /* CompleteClass */
+      override def isInsideArea(): Boolean = js.native
+    }
+    /* static members */
+    object GeometryLocation {
+      
+      @JSImport("jsts", "operation.distance.GeometryLocation")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      /**
+        * A special value of segmentIndex used for locations inside area geometries.
+        *
+        * @type {int}
+        */
+      @JSImport("jsts", "operation.distance.GeometryLocation.INSIDE_AREA")
+      @js.native
+      def INSIDE_AREA: Double = js.native
+      inline def INSIDE_AREA_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INSIDE_AREA")(x.asInstanceOf[js.Any])
+    }
+  }
+  
   object relate {
     
     @JSImport("jsts", "operation.relate.RelateOp")
     @js.native
-    class RelateOp protected ()
+    open class RelateOp protected ()
       extends StObject
          with typings.jsts.jsts.operation.relate.RelateOp {
       def this(g1: Geometry, g2: Geometry) = this()

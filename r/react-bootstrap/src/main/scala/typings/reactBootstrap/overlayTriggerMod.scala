@@ -1,7 +1,8 @@
 package typings.reactBootstrap
 
 import typings.react.mod.Component
-import typings.react.mod.Props
+import typings.react.mod.LegacyRef
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,23 +11,21 @@ object overlayTriggerMod {
   
   @JSImport("react-bootstrap/lib/OverlayTrigger", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[OverlayTriggerProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[OverlayTriggerProps, js.Object, Any]
   
-  @js.native
-  trait OverlayTrigger
-    extends Component[OverlayTriggerProps, js.Object, js.Any]
+  type OverlayTrigger = Component[OverlayTriggerProps, js.Object, Any]
   
-  trait OverlayTriggerProps
-    extends StObject
-       with Props[OverlayTrigger] {
+  trait OverlayTriggerProps extends StObject {
     
     // TODO: Add more specific type
     // Optional
-    var animation: js.UndefOr[js.Any] = js.undefined
+    var animation: js.UndefOr[Any] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     // TODO: Add more specific type
-    var container: js.UndefOr[js.Any] = js.undefined
+    var container: js.UndefOr[Any] = js.undefined
     
     // TODO: Add more specific type
     var containerPadding: js.UndefOr[Double] = js.undefined
@@ -52,9 +51,11 @@ object overlayTriggerMod {
     var onExiting: js.UndefOr[js.Function] = js.undefined
     
     // Required
-    var overlay: js.Any
+    var overlay: Any
     
     var placement: js.UndefOr[String] = js.undefined
+    
+    var ref: js.UndefOr[LegacyRef[OverlayTrigger]] = js.undefined
     
     var rootClose: js.UndefOr[Boolean] = js.undefined
     
@@ -62,18 +63,22 @@ object overlayTriggerMod {
   }
   object OverlayTriggerProps {
     
-    inline def apply(overlay: js.Any): OverlayTriggerProps = {
+    inline def apply(overlay: Any): OverlayTriggerProps = {
       val __obj = js.Dynamic.literal(overlay = overlay.asInstanceOf[js.Any])
       __obj.asInstanceOf[OverlayTriggerProps]
     }
     
     extension [Self <: OverlayTriggerProps](x: Self) {
       
-      inline def setAnimation(value: js.Any): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      inline def setAnimation(value: Any): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
       inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
-      inline def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setContainer(value: Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
       inline def setContainerPadding(value: Double): Self = StObject.set(x, "containerPadding", value.asInstanceOf[js.Any])
       
@@ -121,11 +126,19 @@ object overlayTriggerMod {
       
       inline def setOnExitingUndefined: Self = StObject.set(x, "onExiting", js.undefined)
       
-      inline def setOverlay(value: js.Any): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+      inline def setOverlay(value: Any): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
       
       inline def setPlacement(value: String): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
       inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+      
+      inline def setRef(value: LegacyRef[OverlayTrigger]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      
+      inline def setRefFunction1(value: /* instance */ OverlayTrigger | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       
       inline def setRootClose(value: Boolean): Self = StObject.set(x, "rootClose", value.asInstanceOf[js.Any])
       
@@ -135,7 +148,7 @@ object overlayTriggerMod {
       
       inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
       
-      inline def setTriggerVarargs(value: String*): Self = StObject.set(x, "trigger", js.Array(value :_*))
+      inline def setTriggerVarargs(value: String*): Self = StObject.set(x, "trigger", js.Array(value*))
     }
   }
 }

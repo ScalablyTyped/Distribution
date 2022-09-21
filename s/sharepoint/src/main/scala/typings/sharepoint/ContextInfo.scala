@@ -15,7 +15,7 @@ trait ContextInfo
   
   var AllowGridMode: Boolean
   
-  var BasePermissions: js.Any
+  var BasePermissions: Any
   
   var CanShareLinkForNewDocument: Boolean
   
@@ -52,7 +52,7 @@ trait ContextInfo
   
   var LastSelectedItemIID: Double
   
-  var ListData: js.Any
+  var ListData: Any
   
   // SPClientTemplates.ListData_InView | SPClientTemplates.ListData_InForm
   var ListSchema: typings.sharepoint.SPClientTemplates.ListSchema
@@ -83,21 +83,21 @@ trait ContextInfo
   
   var StateInitDone: Boolean
   
-  def TableCbxFocusHandler(instance: js.Any, eventArgs: js.Any): Unit
+  def TableCbxFocusHandler(instance: Any, eventArgs: Any): Unit
   
-  def TableMouseoverHandler(instance: js.Any, eventArgs: js.Any): Unit
+  def TableMouseoverHandler(instance: Any, eventArgs: Any): Unit
   
   var TotalListItems: Double
   
   var WorkflowsAssociated: Boolean
   
-  var clvp: js.Any
+  var clvp: Any
   
   var ctxId: Double
   
-  var ctxType: js.Any
+  var ctxType: Any
   
-  var dictSel: js.Any
+  var dictSel: Any
   
   var displayFormUrl: String
   
@@ -136,7 +136,7 @@ trait ContextInfo
   var noGroupCollapse: Boolean
   
   @JSName("onRefreshFailed")
-  def onRefreshFailed_MContextInfo(context: js.Any, requrest: js.Any, response: js.Any): Unit
+  def onRefreshFailed_MContextInfo(context: Any, requrest: Any, response: Any): Unit
   
   var overrideDeleteConfirmation: String
   
@@ -163,7 +163,7 @@ object ContextInfo {
   inline def apply(
     AllowCreateFolder: Boolean,
     AllowGridMode: Boolean,
-    BasePermissions: js.Any,
+    BasePermissions: Any,
     CanShareLinkForNewDocument: Boolean,
     CascadeDeleteWarningMessage: String,
     ContentTypesEnabled: Boolean,
@@ -181,7 +181,7 @@ object ContextInfo {
     LastRowIndexSelected: Double,
     LastSelectableRowIdx: Double,
     LastSelectedItemIID: Double,
-    ListData: js.Any,
+    ListData: Any,
     ListSchema: ListSchema,
     ListTitle: String,
     ModerationStatus: Double,
@@ -196,14 +196,14 @@ object ContextInfo {
     SiteTemplateId: Double,
     SiteTitle: String,
     StateInitDone: Boolean,
-    TableCbxFocusHandler: (js.Any, js.Any) => Unit,
-    TableMouseoverHandler: (js.Any, js.Any) => Unit,
+    TableCbxFocusHandler: (Any, Any) => Unit,
+    TableMouseoverHandler: (Any, Any) => Unit,
     TotalListItems: Double,
     WorkflowsAssociated: Boolean,
-    clvp: js.Any,
+    clvp: Any,
     ctxId: Double,
-    ctxType: js.Any,
-    dictSel: js.Any,
+    ctxType: Any,
+    dictSel: Any,
     displayFormUrl: String,
     editFormUrl: String,
     imagesPath: String,
@@ -222,7 +222,7 @@ object ContextInfo {
     loadingAsyncData: Boolean,
     newFormUrl: String,
     noGroupCollapse: Boolean,
-    onRefreshFailed: (js.Any, js.Any, js.Any) => Unit,
+    onRefreshFailed: (Any, Any, Any) => Unit,
     overrideDeleteConfirmation: String,
     overrideFilterQstring: String,
     queryString: String,
@@ -244,19 +244,19 @@ object ContextInfo {
     
     inline def setAllowGridMode(value: Boolean): Self = StObject.set(x, "AllowGridMode", value.asInstanceOf[js.Any])
     
-    inline def setBasePermissions(value: js.Any): Self = StObject.set(x, "BasePermissions", value.asInstanceOf[js.Any])
+    inline def setBasePermissions(value: Any): Self = StObject.set(x, "BasePermissions", value.asInstanceOf[js.Any])
     
     inline def setCanShareLinkForNewDocument(value: Boolean): Self = StObject.set(x, "CanShareLinkForNewDocument", value.asInstanceOf[js.Any])
     
     inline def setCascadeDeleteWarningMessage(value: String): Self = StObject.set(x, "CascadeDeleteWarningMessage", value.asInstanceOf[js.Any])
     
-    inline def setClvp(value: js.Any): Self = StObject.set(x, "clvp", value.asInstanceOf[js.Any])
+    inline def setClvp(value: Any): Self = StObject.set(x, "clvp", value.asInstanceOf[js.Any])
     
     inline def setContentTypesEnabled(value: Boolean): Self = StObject.set(x, "ContentTypesEnabled", value.asInstanceOf[js.Any])
     
     inline def setCtxId(value: Double): Self = StObject.set(x, "ctxId", value.asInstanceOf[js.Any])
     
-    inline def setCtxType(value: js.Any): Self = StObject.set(x, "ctxType", value.asInstanceOf[js.Any])
+    inline def setCtxType(value: Any): Self = StObject.set(x, "ctxType", value.asInstanceOf[js.Any])
     
     inline def setCurrentSelectedItems(value: Boolean): Self = StObject.set(x, "CurrentSelectedItems", value.asInstanceOf[js.Any])
     
@@ -264,7 +264,7 @@ object ContextInfo {
     
     inline def setCurrentUserIsSiteAdmin(value: Boolean): Self = StObject.set(x, "CurrentUserIsSiteAdmin", value.asInstanceOf[js.Any])
     
-    inline def setDictSel(value: js.Any): Self = StObject.set(x, "dictSel", value.asInstanceOf[js.Any])
+    inline def setDictSel(value: Any): Self = StObject.set(x, "dictSel", value.asInstanceOf[js.Any])
     
     inline def setDisplayFormUrl(value: String): Self = StObject.set(x, "displayFormUrl", value.asInstanceOf[js.Any])
     
@@ -312,7 +312,7 @@ object ContextInfo {
     
     inline def setListBaseType(value: Double): Self = StObject.set(x, "listBaseType", value.asInstanceOf[js.Any])
     
-    inline def setListData(value: js.Any): Self = StObject.set(x, "ListData", value.asInstanceOf[js.Any])
+    inline def setListData(value: Any): Self = StObject.set(x, "ListData", value.asInstanceOf[js.Any])
     
     inline def setListName(value: String): Self = StObject.set(x, "listName", value.asInstanceOf[js.Any])
     
@@ -336,7 +336,7 @@ object ContextInfo {
     
     inline def setNoGroupCollapse(value: Boolean): Self = StObject.set(x, "noGroupCollapse", value.asInstanceOf[js.Any])
     
-    inline def setOnRefreshFailed(value: (js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "onRefreshFailed", js.Any.fromFunction3(value))
+    inline def setOnRefreshFailed(value: (Any, Any, Any) => Unit): Self = StObject.set(x, "onRefreshFailed", js.Any.fromFunction3(value))
     
     inline def setOverrideDeleteConfirmation(value: String): Self = StObject.set(x, "overrideDeleteConfirmation", value.asInstanceOf[js.Any])
     
@@ -370,9 +370,9 @@ object ContextInfo {
     
     inline def setStateInitDone(value: Boolean): Self = StObject.set(x, "StateInitDone", value.asInstanceOf[js.Any])
     
-    inline def setTableCbxFocusHandler(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "TableCbxFocusHandler", js.Any.fromFunction2(value))
+    inline def setTableCbxFocusHandler(value: (Any, Any) => Unit): Self = StObject.set(x, "TableCbxFocusHandler", js.Any.fromFunction2(value))
     
-    inline def setTableMouseoverHandler(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "TableMouseoverHandler", js.Any.fromFunction2(value))
+    inline def setTableMouseoverHandler(value: (Any, Any) => Unit): Self = StObject.set(x, "TableMouseoverHandler", js.Any.fromFunction2(value))
     
     inline def setTotalListItems(value: Double): Self = StObject.set(x, "TotalListItems", value.asInstanceOf[js.Any])
     

@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the Excel Runtime class.
   *
+  * @remarks
   * [Api set: ExcelApi 1.5]
   */
 trait RuntimeLoadOptions extends StObject {
@@ -19,9 +19,9 @@ trait RuntimeLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Toggle JavaScript events in the current task pane or content add-in.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var enableEvents: js.UndefOr[Boolean] = js.undefined

@@ -33,6 +33,6 @@ object GetStaticIpsResult {
     
     inline def setStaticIpsUndefined: Self = StObject.set(x, "staticIps", js.undefined)
     
-    inline def setStaticIpsVarargs(value: StaticIp*): Self = StObject.set(x, "staticIps", js.Array(value :_*))
+    inline def setStaticIpsVarargs(value: StaticIp*): Self = StObject.set(x, "staticIps", js.Array(value*))
   }
 }

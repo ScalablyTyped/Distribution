@@ -21,23 +21,11 @@ trait PaginatorOptions extends StObject {
   var numberOfPages: js.UndefOr[Double] = js.undefined
   
   var onPageChanged: js.UndefOr[
-    js.Function4[
-      /* event */ js.Any, 
-      /* originalEvent */ js.Any, 
-      /* type */ String, 
-      /* page */ Double, 
-      Unit
-    ]
+    js.Function4[/* event */ Any, /* originalEvent */ Any, /* type */ String, /* page */ Double, Unit]
   ] = js.undefined
   
   var onPageClicked: js.UndefOr[
-    js.Function4[
-      /* event */ js.Any, 
-      /* originalEvent */ js.Any, 
-      /* type */ String, 
-      /* page */ Double, 
-      Unit
-    ]
+    js.Function4[/* event */ Any, /* originalEvent */ Any, /* type */ String, /* page */ Double, Unit]
   ] = js.undefined
   
   var pageUrl: js.UndefOr[js.Function3[/* type */ String, /* page */ Double, /* current */ Double, String]] = js.undefined
@@ -89,15 +77,11 @@ object PaginatorOptions {
     
     inline def setNumberOfPagesUndefined: Self = StObject.set(x, "numberOfPages", js.undefined)
     
-    inline def setOnPageChanged(
-      value: (/* event */ js.Any, /* originalEvent */ js.Any, /* type */ String, /* page */ Double) => Unit
-    ): Self = StObject.set(x, "onPageChanged", js.Any.fromFunction4(value))
+    inline def setOnPageChanged(value: (/* event */ Any, /* originalEvent */ Any, /* type */ String, /* page */ Double) => Unit): Self = StObject.set(x, "onPageChanged", js.Any.fromFunction4(value))
     
     inline def setOnPageChangedUndefined: Self = StObject.set(x, "onPageChanged", js.undefined)
     
-    inline def setOnPageClicked(
-      value: (/* event */ js.Any, /* originalEvent */ js.Any, /* type */ String, /* page */ Double) => Unit
-    ): Self = StObject.set(x, "onPageClicked", js.Any.fromFunction4(value))
+    inline def setOnPageClicked(value: (/* event */ Any, /* originalEvent */ Any, /* type */ String, /* page */ Double) => Unit): Self = StObject.set(x, "onPageClicked", js.Any.fromFunction4(value))
     
     inline def setOnPageClickedUndefined: Self = StObject.set(x, "onPageClicked", js.undefined)
     

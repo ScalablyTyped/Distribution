@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.ContextPermissions")
 @js.native
-class ContextPermissions ()
+open class ContextPermissions ()
   extends StObject
      with typings.sharepoint.SP.ContextPermissions {
   

@@ -12,21 +12,21 @@ trait XVeto extends StObject {
     *
     * The concrete semantics of this attribute is to be defined in the service implementing this interface.
     */
-  var Details: js.Any
+  var Details: Any
   
   /** describes the reason for the veto */
   var Reason: String
 }
 object XVeto {
   
-  inline def apply(Details: js.Any, Reason: String): XVeto = {
+  inline def apply(Details: Any, Reason: String): XVeto = {
     val __obj = js.Dynamic.literal(Details = Details.asInstanceOf[js.Any], Reason = Reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[XVeto]
   }
   
   extension [Self <: XVeto](x: Self) {
     
-    inline def setDetails(value: js.Any): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: Any): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
     
     inline def setReason(value: String): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
   }

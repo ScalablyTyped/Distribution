@@ -45,7 +45,7 @@ object global {
     
     @JSGlobal("AMap.AdvancedInfoWindow")
     @js.native
-    class AdvancedInfoWindow ()
+    open class AdvancedInfoWindow ()
       extends StObject
          with typings.amapJsSdk.AMap.AdvancedInfoWindow {
       def this(options: AsDestination) = this()
@@ -59,7 +59,7 @@ object global {
     
     @JSGlobal("AMap.Autocomplete")
     @js.native
-    class Autocomplete protected ()
+    open class Autocomplete protected ()
       extends StObject
          with typings.amapJsSdk.AMap.Autocomplete {
       def this(opts: Citylimit) = this()
@@ -76,7 +76,7 @@ object global {
       */
     @JSGlobal("AMap.Bounds")
     @js.native
-    class Bounds protected ()
+    open class Bounds protected ()
       extends StObject
          with typings.amapJsSdk.AMap.Bounds {
       /**
@@ -114,7 +114,7 @@ object global {
     
     @JSGlobal("AMap.Circle")
     @js.native
-    class Circle ()
+    open class Circle ()
       extends StObject
          with typings.amapJsSdk.AMap.Circle {
       def this(options: CircleOptions) = this()
@@ -129,7 +129,7 @@ object global {
       override def getCenter(): typings.amapJsSdk.AMap.LngLat = js.native
       
       /* CompleteClass */
-      override def getExtData(): js.Any = js.native
+      override def getExtData(): Any = js.native
       
       /* CompleteClass */
       override def getOptions(): CircleOptions = js.native
@@ -144,7 +144,7 @@ object global {
       override def setCenter(lnglat: typings.amapJsSdk.AMap.LngLat): Unit = js.native
       
       /* CompleteClass */
-      override def setExtData(ext: js.Any): Unit = js.native
+      override def setExtData(ext: Any): Unit = js.native
       
       /* CompleteClass */
       override def setMap(map: typings.amapJsSdk.AMap.Map): Unit = js.native
@@ -161,7 +161,7 @@ object global {
     
     @JSGlobal("AMap.CitySearch")
     @js.native
-    class CitySearch ()
+    open class CitySearch ()
       extends StObject
          with typings.amapJsSdk.AMap.CitySearch {
       
@@ -183,7 +183,7 @@ object global {
     
     @JSGlobal("AMap.DistrictSearch")
     @js.native
-    class DistrictSearch protected ()
+    open class DistrictSearch protected ()
       extends StObject
          with typings.amapJsSdk.AMap.DistrictSearch {
       def this(opts: DistrictSearchOptions) = this()
@@ -191,7 +191,7 @@ object global {
     
     @JSGlobal("AMap.Driving")
     @js.native
-    class Driving ()
+    open class Driving ()
       extends StObject
          with typings.amapJsSdk.AMap.Driving {
       def this(options: Extensions) = this()
@@ -234,7 +234,7 @@ object global {
     
     @JSGlobal("AMap.Geocoder")
     @js.native
-    class Geocoder ()
+    open class Geocoder ()
       extends StObject
          with typings.amapJsSdk.AMap.Geocoder {
       def this(opts: Batch) = this()
@@ -242,7 +242,7 @@ object global {
     
     @JSGlobal("AMap.Geolocation")
     @js.native
-    class Geolocation protected ()
+    open class Geolocation protected ()
       extends StObject
          with typings.amapJsSdk.AMap.Geolocation {
       def this(options: ButtonDom) = this()
@@ -268,7 +268,7 @@ object global {
     
     @JSGlobal("AMap.Icon")
     @js.native
-    class Icon ()
+    open class Icon ()
       extends StObject
          with typings.amapJsSdk.AMap.Icon {
       def this(options: Image) = this()
@@ -282,7 +282,7 @@ object global {
     
     @JSGlobal("AMap.IndoorMap")
     @js.native
-    class IndoorMap protected ()
+    open class IndoorMap protected ()
       extends StObject
          with typings.amapJsSdk.AMap.IndoorMap {
       def this(opts: AlwaysShow) = this()
@@ -332,7 +332,7 @@ object global {
     
     @JSGlobal("AMap.InfoWindow")
     @js.native
-    class InfoWindow ()
+    open class InfoWindow ()
       extends StObject
          with typings.amapJsSdk.AMap.InfoWindow {
       def this(options: AutoMove) = this()
@@ -389,7 +389,7 @@ object global {
       */
     @JSGlobal("AMap.LngLat")
     @js.native
-    class LngLat protected ()
+    open class LngLat protected ()
       extends StObject
          with typings.amapJsSdk.AMap.LngLat {
       /**
@@ -402,7 +402,7 @@ object global {
     
     @JSGlobal("AMap.Map")
     @js.native
-    class Map protected ()
+    open class Map protected ()
       extends StObject
          with typings.amapJsSdk.AMap.Map {
       def this(mapDiv: String) = this()
@@ -417,7 +417,7 @@ object global {
     
     @JSGlobal("AMap.MapType")
     @js.native
-    class MapType ()
+    open class MapType ()
       extends StObject
          with typings.amapJsSdk.AMap.MapType {
       def this(options: DefaultType) = this()
@@ -434,7 +434,7 @@ object global {
       */
     @JSGlobal("AMap.Marker")
     @js.native
-    class Marker ()
+    open class Marker ()
       extends StObject
          with typings.amapJsSdk.AMap.Marker {
       def this(options: MarkerOptions) = this()
@@ -451,7 +451,7 @@ object global {
       */
     @JSGlobal("AMap.MarkerClusterer")
     @js.native
-    class MarkerClusterer protected ()
+    open class MarkerClusterer protected ()
       extends StObject
          with typings.amapJsSdk.AMap.MarkerClusterer {
       def this(map: typings.amapJsSdk.AMap.Map, markers: js.Array[typings.amapJsSdk.AMap.Marker]) = this()
@@ -520,7 +520,7 @@ object global {
         * 获取聚合的样式风格集合
         */
       /* CompleteClass */
-      override def getStyles(): js.Array[js.Any] = js.native
+      override def getStyles(): js.Array[Any] = js.native
       
       /**
         * 获取单个聚合点位置是否是聚合内所有标记的平均中心
@@ -595,7 +595,7 @@ object global {
         * @param styles
         */
       /* CompleteClass */
-      override def setStyles(styles: js.Array[js.Any]): Unit = js.native
+      override def setStyles(styles: js.Array[Any]): Unit = js.native
     }
     
     /**
@@ -603,7 +603,7 @@ object global {
       */
     @JSGlobal("AMap.MarkerShape")
     @js.native
-    class MarkerShape protected ()
+    open class MarkerShape protected ()
       extends StObject
          with typings.amapJsSdk.AMap.MarkerShape {
       def this(options: Coords) = this()
@@ -611,7 +611,7 @@ object global {
     
     @JSGlobal("AMap.OverView")
     @js.native
-    class OverView ()
+    open class OverView ()
       extends StObject
          with typings.amapJsSdk.AMap.OverView {
       def this(options: IsOpen) = this()
@@ -648,7 +648,7 @@ object global {
       */
     @JSGlobal("AMap.Pixel")
     @js.native
-    class Pixel protected ()
+    open class Pixel protected ()
       extends StObject
          with typings.amapJsSdk.AMap.Pixel {
       /**
@@ -677,7 +677,7 @@ object global {
     
     @JSGlobal("AMap.PlaceSearch")
     @js.native
-    class PlaceSearch protected ()
+    open class PlaceSearch protected ()
       extends StObject
          with typings.amapJsSdk.AMap.PlaceSearch {
       def this(opts: AutoFitView) = this()
@@ -685,7 +685,7 @@ object global {
     
     @JSGlobal("AMap.Polygon")
     @js.native
-    class Polygon ()
+    open class Polygon ()
       extends StObject
          with typings.amapJsSdk.AMap.Polygon {
       def this(options: PolygonOptions) = this()
@@ -699,7 +699,7 @@ object global {
     
     @JSGlobal("AMap.Polyline")
     @js.native
-    class Polyline ()
+    open class Polyline ()
       extends StObject
          with typings.amapJsSdk.AMap.Polyline {
       def this(options: PolylineOptions) = this()
@@ -708,7 +708,7 @@ object global {
       override def getBounds(): typings.amapJsSdk.AMap.Bounds = js.native
       
       /* CompleteClass */
-      override def getExtData(): js.Any = js.native
+      override def getExtData(): Any = js.native
       
       /* CompleteClass */
       override def getLength(): Double = js.native
@@ -729,7 +729,7 @@ object global {
       override def on(eventName: String, callback: EventCallback): Unit = js.native
       
       /* CompleteClass */
-      override def setExtData(ext: js.Any): Unit = js.native
+      override def setExtData(ext: Any): Unit = js.native
       
       /* CompleteClass */
       override def setMap(map: typings.amapJsSdk.AMap.Map): Unit = js.native
@@ -746,7 +746,7 @@ object global {
     
     @JSGlobal("AMap.Scale")
     @js.native
-    class Scale ()
+    open class Scale ()
       extends StObject
          with typings.amapJsSdk.AMap.Scale {
       
@@ -774,7 +774,7 @@ object global {
       */
     @JSGlobal("AMap.Size")
     @js.native
-    class Size protected ()
+    open class Size protected ()
       extends StObject
          with typings.amapJsSdk.AMap.Size {
       /**
@@ -799,7 +799,7 @@ object global {
     
     @JSGlobal("AMap.TileLayer")
     @js.native
-    class TileLayer ()
+    open class TileLayer ()
       extends StObject
          with typings.amapJsSdk.AMap.Layer {
       def this(tileOpt: DetectRetina) = this()
@@ -882,7 +882,7 @@ object global {
       
       @JSGlobal("AMap.TileLayer.RoadNet")
       @js.native
-      class RoadNet ()
+      open class RoadNet ()
         extends StObject
            with typings.amapJsSdk.AMap.Layer {
         
@@ -922,7 +922,7 @@ object global {
       
       @JSGlobal("AMap.TileLayer.Satellite")
       @js.native
-      class Satellite ()
+      open class Satellite ()
         extends StObject
            with typings.amapJsSdk.AMap.Layer {
         
@@ -962,7 +962,7 @@ object global {
       
       @JSGlobal("AMap.TileLayer.Traffic")
       @js.native
-      class Traffic ()
+      open class Traffic ()
         extends StObject
            with typings.amapJsSdk.AMap.TileLayer.Traffic {
         def this(options: AutoRefresh) = this()
@@ -1010,7 +1010,7 @@ object global {
     
     @JSGlobal("AMap.ToolBar")
     @js.native
-    class ToolBar ()
+    open class ToolBar ()
       extends StObject
          with typings.amapJsSdk.AMap.ToolBar {
       def this(options: AutoPosition) = this()
@@ -1060,7 +1060,7 @@ object global {
     
     @JSGlobal("AMap.View2D")
     @js.native
-    class View2D protected ()
+    open class View2D protected ()
       extends StObject
          with typings.amapJsSdk.AMap.View2D {
       def this(opt: Center) = this()
@@ -1068,7 +1068,7 @@ object global {
     
     @JSGlobal("AMap.Weather")
     @js.native
-    class Weather ()
+    open class Weather ()
       extends StObject
          with typings.amapJsSdk.AMap.Weather {
       
@@ -1080,7 +1080,7 @@ object global {
       /* CompleteClass */
       override def getForecast(
         district: String,
-        callback: js.Function2[/* errorStatus */ js.Any, /* result */ WeatherForecastResult, Unit]
+        callback: js.Function2[/* errorStatus */ Any, /* result */ WeatherForecastResult, Unit]
       ): Unit = js.native
       
       /**
@@ -1091,7 +1091,7 @@ object global {
       /* CompleteClass */
       override def getLive(
         district: String,
-        callback: js.Function2[/* errorStatus */ js.Any, /* result */ WeatherLiveResult, Unit]
+        callback: js.Function2[/* errorStatus */ Any, /* result */ WeatherLiveResult, Unit]
       ): Unit = js.native
     }
     
@@ -1127,8 +1127,8 @@ object global {
         * @param handler：事件功能函数（必填）
         * @param context：事件上下文（可选，缺省时，handler中this指向参数instance引用的对象，否则this指向context引用的对象）
         */
-      inline def addDomListener(instance: js.Any, eventName: String, handler: EventCallback): EventListener = (^.asInstanceOf[js.Dynamic].applyDynamic("addDomListener")(instance.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventListener]
-      inline def addDomListener(instance: js.Any, eventName: String, handler: EventCallback, context: js.Any): EventListener = (^.asInstanceOf[js.Dynamic].applyDynamic("addDomListener")(instance.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[EventListener]
+      inline def addDomListener(instance: Any, eventName: String, handler: EventCallback): EventListener = (^.asInstanceOf[js.Dynamic].applyDynamic("addDomListener")(instance.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventListener]
+      inline def addDomListener(instance: Any, eventName: String, handler: EventCallback, context: Any): EventListener = (^.asInstanceOf[js.Dynamic].applyDynamic("addDomListener")(instance.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[EventListener]
       
       /**
         * 注册对象事件：给对象注册事件，并返回eventListener。运行AMap.event.removeListener(eventListener)可以删除该事件的监听器。
@@ -1137,14 +1137,14 @@ object global {
         * @param handler：事件功能函数（必填）
         * @param context：事件上下文（可选，缺省时，handler中this指向参数instance引用的对象，否则this指向context引用的对象）
         */
-      inline def addListener(instance: js.Any, eventName: String, handler: EventCallback): EventListener = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(instance.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventListener]
-      inline def addListener(instance: js.Any, eventName: String, handler: EventCallback, context: js.Any): EventListener = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(instance.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[EventListener]
+      inline def addListener(instance: Any, eventName: String, handler: EventCallback): EventListener = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(instance.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventListener]
+      inline def addListener(instance: Any, eventName: String, handler: EventCallback, context: Any): EventListener = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(instance.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[EventListener]
       
       /**
         * 类似于addListener，但处理程序会在处理完第一个事件后将自已移除。
         */
-      inline def addListenerOnce(instance: js.Any, eventName: String, handler: EventCallback): EventListener = (^.asInstanceOf[js.Dynamic].applyDynamic("addListenerOnce")(instance.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventListener]
-      inline def addListenerOnce(instance: js.Any, eventName: String, handler: EventCallback, context: js.Any): EventListener = (^.asInstanceOf[js.Dynamic].applyDynamic("addListenerOnce")(instance.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[EventListener]
+      inline def addListenerOnce(instance: Any, eventName: String, handler: EventCallback): EventListener = (^.asInstanceOf[js.Dynamic].applyDynamic("addListenerOnce")(instance.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[EventListener]
+      inline def addListenerOnce(instance: Any, eventName: String, handler: EventCallback, context: Any): EventListener = (^.asInstanceOf[js.Dynamic].applyDynamic("addListenerOnce")(instance.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[EventListener]
       
       /**
         * 删除由上述 event.addDomListener 和 event.addListener 传回的指定侦听器。
@@ -1154,7 +1154,7 @@ object global {
       /**
         * 触发非DOM事件：触发非DOM事件eventName，extArgs将扩展到事件监听函数（handler）接受到的event参数中。如:在extArgs内写入{m:10,p:2}，eventName监听函数（handler）可以接收到包含m,p两个key值的event对象。
         */
-      inline def trigger(instance: js.Any, eventName: String, extArgs: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(instance.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], extArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def trigger(instance: Any, eventName: String, extArgs: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(instance.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], extArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
     
     /**

@@ -17,6 +17,11 @@ trait SnapshotInfo extends StObject {
   var Encrypted: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * The ARN of the Outpost on which the snapshot is stored. For more information, see Amazon EBS local snapshots on Outposts in the Amazon Elastic Compute Cloud User Guide.
+    */
+  var OutpostArn: js.UndefOr[String] = js.undefined
+  
+  /**
     * Account id used when creating this snapshot.
     */
   var OwnerId: js.UndefOr[String] = js.undefined
@@ -34,7 +39,7 @@ trait SnapshotInfo extends StObject {
   /**
     * Time this snapshot was started. This is the same for all snapshots initiated by the same request.
     */
-  var StartTime: js.UndefOr[MillisecondDateTime] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Current state of the snapshot.
@@ -73,6 +78,10 @@ object SnapshotInfo {
     
     inline def setEncryptedUndefined: Self = StObject.set(x, "Encrypted", js.undefined)
     
+    inline def setOutpostArn(value: String): Self = StObject.set(x, "OutpostArn", value.asInstanceOf[js.Any])
+    
+    inline def setOutpostArnUndefined: Self = StObject.set(x, "OutpostArn", js.undefined)
+    
     inline def setOwnerId(value: String): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
     
     inline def setOwnerIdUndefined: Self = StObject.set(x, "OwnerId", js.undefined)
@@ -85,7 +94,7 @@ object SnapshotInfo {
     
     inline def setSnapshotIdUndefined: Self = StObject.set(x, "SnapshotId", js.undefined)
     
-    inline def setStartTime(value: MillisecondDateTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
@@ -97,7 +106,7 @@ object SnapshotInfo {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setVolumeId(value: String): Self = StObject.set(x, "VolumeId", value.asInstanceOf[js.Any])
     

@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("node-slack", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Slack {
     def this(hookUrl: String) = this()
@@ -18,7 +18,7 @@ object mod {
   
   trait Message extends StObject {
     
-    var attachments: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var attachments: js.UndefOr[js.Array[Any]] = js.undefined
     
     var channel: js.UndefOr[String] = js.undefined
     
@@ -41,11 +41,11 @@ object mod {
     
     extension [Self <: Message](x: Self) {
       
-      inline def setAttachments(value: js.Array[js.Any]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
+      inline def setAttachments(value: js.Array[Any]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
       
       inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
       
-      inline def setAttachmentsVarargs(value: js.Any*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+      inline def setAttachmentsVarargs(value: Any*): Self = StObject.set(x, "attachments", js.Array(value*))
       
       inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
@@ -147,9 +147,9 @@ object mod {
     }
   }
   
-  type ResponseCallback = js.Function2[/* err */ js.Any, /* query */ Query, js.Any]
+  type ResponseCallback = js.Function2[/* err */ Any, /* query */ Query, Any]
   
-  type SendCallback = js.Function2[/* err */ js.Any, /* body */ js.Any, js.Any]
+  type SendCallback = js.Function2[/* err */ Any, /* body */ Any, Any]
   
   @js.native
   trait Slack extends StObject {
@@ -157,7 +157,7 @@ object mod {
     def respond(query: Query): TextResponse = js.native
     def respond(query: Query, callback: ResponseCallback): TextResponse = js.native
     
-    def send(message: Message): js.Any = js.native
+    def send(message: Message): Any = js.native
     //TODO: Here comes deferred's promise as a return type
     def send(message: Message, callback: SendCallback): Request = js.native
   }

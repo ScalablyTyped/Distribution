@@ -31,7 +31,7 @@ object mod {
   
   @JSImport("lightpick", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Lightpick {
     def this(options: Options) = this()
@@ -590,7 +590,7 @@ object mod {
       
       inline def setDisableDatesUndefined: Self = StObject.set(x, "disableDates", js.undefined)
       
-      inline def setDisableDatesVarargs(value: DisabledDate*): Self = StObject.set(x, "disableDates", js.Array(value :_*))
+      inline def setDisableDatesVarargs(value: DisabledDate*): Self = StObject.set(x, "disableDates", js.Array(value*))
       
       inline def setDisableWeekends(value: Boolean): Self = StObject.set(x, "disableWeekends", value.asInstanceOf[js.Any])
       
@@ -610,7 +610,7 @@ object mod {
       
       inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
       
-      inline def setEndDateVarargs(value: (Double | String)*): Self = StObject.set(x, "endDate", js.Array(value :_*))
+      inline def setEndDateVarargs(value: (Double | String)*): Self = StObject.set(x, "endDate", js.Array(value*))
       
       inline def setField(value: Field): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
@@ -652,7 +652,7 @@ object mod {
       
       inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
       
-      inline def setMaxDateVarargs(value: (Double | String)*): Self = StObject.set(x, "maxDate", js.Array(value :_*))
+      inline def setMaxDateVarargs(value: (Double | String)*): Self = StObject.set(x, "maxDate", js.Array(value*))
       
       inline def setMaxDays(value: Double): Self = StObject.set(x, "maxDays", value.asInstanceOf[js.Any])
       
@@ -664,7 +664,7 @@ object mod {
       
       inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
       
-      inline def setMinDateVarargs(value: (Double | String)*): Self = StObject.set(x, "minDate", js.Array(value :_*))
+      inline def setMinDateVarargs(value: (Double | String)*): Self = StObject.set(x, "minDate", js.Array(value*))
       
       inline def setMinDays(value: Double): Self = StObject.set(x, "minDays", value.asInstanceOf[js.Any])
       
@@ -748,7 +748,7 @@ object mod {
       
       inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
       
-      inline def setStartDateVarargs(value: (Double | String)*): Self = StObject.set(x, "startDate", js.Array(value :_*))
+      inline def setStartDateVarargs(value: (Double | String)*): Self = StObject.set(x, "startDate", js.Array(value*))
       
       inline def setTooltipNights(value: Boolean): Self = StObject.set(x, "tooltipNights", value.asInstanceOf[js.Any])
       

@@ -43,7 +43,7 @@ trait MessageEvent extends StObject {
   var raw_reason: String
   
   /** Metadata describing the message recipient */
-  var rcpt_meta: js.Any
+  var rcpt_meta: Any
   
   /** Tags applied to the message which generated this event */
   var rcpt_tags: js.Array[String]
@@ -93,7 +93,7 @@ object MessageEvent {
     msg_size: String,
     num_retries: String,
     raw_reason: String,
-    rcpt_meta: js.Any,
+    rcpt_meta: Any,
     rcpt_tags: js.Array[String],
     rcpt_to: String,
     rcpt_type: String,
@@ -137,11 +137,11 @@ object MessageEvent {
     
     inline def setRaw_reason(value: String): Self = StObject.set(x, "raw_reason", value.asInstanceOf[js.Any])
     
-    inline def setRcpt_meta(value: js.Any): Self = StObject.set(x, "rcpt_meta", value.asInstanceOf[js.Any])
+    inline def setRcpt_meta(value: Any): Self = StObject.set(x, "rcpt_meta", value.asInstanceOf[js.Any])
     
     inline def setRcpt_tags(value: js.Array[String]): Self = StObject.set(x, "rcpt_tags", value.asInstanceOf[js.Any])
     
-    inline def setRcpt_tagsVarargs(value: String*): Self = StObject.set(x, "rcpt_tags", js.Array(value :_*))
+    inline def setRcpt_tagsVarargs(value: String*): Self = StObject.set(x, "rcpt_tags", js.Array(value*))
     
     inline def setRcpt_to(value: String): Self = StObject.set(x, "rcpt_to", value.asInstanceOf[js.Any])
     

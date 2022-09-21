@@ -12,7 +12,7 @@ trait DistributionList extends StObject {
   var IsTruncated: Boolean
   
   /**
-    * A complex type that contains one DistributionSummary element for each distribution that was created by the current AWS account.
+    * A complex type that contains one DistributionSummary element for each distribution that was created by the current Amazon Web Services account.
     */
   var Items: js.UndefOr[DistributionSummaryList] = js.undefined
   
@@ -32,7 +32,7 @@ trait DistributionList extends StObject {
   var NextMarker: js.UndefOr[String] = js.undefined
   
   /**
-    * The number of distributions that were created by the current AWS account. 
+    * The number of distributions that were created by the current Amazon Web Services account.
     */
   var Quantity: integer
 }
@@ -51,7 +51,7 @@ object DistributionList {
     
     inline def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
     
-    inline def setItemsVarargs(value: DistributionSummary*): Self = StObject.set(x, "Items", js.Array(value :_*))
+    inline def setItemsVarargs(value: DistributionSummary*): Self = StObject.set(x, "Items", js.Array(value*))
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

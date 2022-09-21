@@ -14,7 +14,7 @@ object resultIndexNativeMod {
   
   @JSImport("antd-mobile-rn/lib/result/index.native", JSImport.Default)
   @js.native
-  class default () extends Result
+  open class default () extends Result
   /* static members */
   object default {
     
@@ -29,8 +29,7 @@ object resultIndexNativeMod {
   }
   
   @js.native
-  trait Result
-    extends Component[ResultNativeProps, js.Any, js.Any]
+  trait Result extends Component[ResultNativeProps, Any, Any]
   
   trait ResultNativeProps
     extends StObject

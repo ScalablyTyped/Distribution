@@ -22,6 +22,6 @@ object TableStyle {
     
     inline def setTableColumnPropertiesUndefined: Self = StObject.set(x, "tableColumnProperties", js.undefined)
     
-    inline def setTableColumnPropertiesVarargs(value: TableColumnProperties*): Self = StObject.set(x, "tableColumnProperties", js.Array(value :_*))
+    inline def setTableColumnPropertiesVarargs(value: TableColumnProperties*): Self = StObject.set(x, "tableColumnProperties", js.Array(value*))
   }
 }

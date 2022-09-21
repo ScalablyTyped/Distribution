@@ -13,7 +13,6 @@ import typings.progressStream.progressStreamStrings.pipe
 import typings.progressStream.progressStreamStrings.progress
 import typings.progressStream.progressStreamStrings.readable
 import typings.progressStream.progressStreamStrings.unpipe
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -131,6 +130,10 @@ object mod {
   @js.native
   trait ProgressStream extends Transform {
     
+    // events shared by stream.Readable and stream.Writable
+    /* tslint:disable-next-line adjacent-overload-signatures */
+    def on(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    def on(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     // We have to redeclare all on/once overloads from stream.Transform in
     // order for this ProgressStream interface to extend stream.Transform
     // correctly. Using an intersection type instead may be an option once
@@ -140,7 +143,7 @@ object mod {
     @JSName("on")
     def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
     @JSName("on")
-    def on_data(event: data, listener: js.Function1[/* chunk */ js.Any, Unit]): this.type = js.native
+    def on_data(event: data, listener: js.Function1[/* chunk */ Any, Unit]): this.type = js.native
     // stream.Writable events
     /* tslint:disable-next-line adjacent-overload-signatures unified-signatures */
     @JSName("on")
@@ -149,7 +152,7 @@ object mod {
     @JSName("on")
     def on_end(event: end, listener: js.Function0[Unit]): this.type = js.native
     @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def on_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     /* tslint:disable-next-line unified-signatures */
     @JSName("on")
     def on_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native
@@ -167,10 +170,13 @@ object mod {
     def on_unpipe(event: unpipe, listener: js.Function1[/* src */ Readable, Unit]): this.type = js.native
     
     /* tslint:disable-next-line adjacent-overload-signatures */
+    def once(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    def once(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
+    /* tslint:disable-next-line adjacent-overload-signatures */
     @JSName("once")
     def once_close(event: close, listener: js.Function0[Unit]): this.type = js.native
     @JSName("once")
-    def once_data(event: data, listener: js.Function1[/* chunk */ js.Any, Unit]): this.type = js.native
+    def once_data(event: data, listener: js.Function1[/* chunk */ Any, Unit]): this.type = js.native
     /* tslint:disable-next-line adjacent-overload-signatures unified-signatures */
     @JSName("once")
     def once_drain(event: drain, listener: js.Function0[Unit]): this.type = js.native
@@ -178,7 +184,7 @@ object mod {
     @JSName("once")
     def once_end(event: end, listener: js.Function0[Unit]): this.type = js.native
     @JSName("once")
-    def once_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def once_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     /* tslint:disable-next-line unified-signatures */
     @JSName("once")
     def once_finish(event: finish, listener: js.Function0[Unit]): this.type = js.native

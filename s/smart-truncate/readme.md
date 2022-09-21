@@ -11,9 +11,9 @@ A small library that truncates a string. It can insert or append an ellipsis at 
 | Full name          | smart-truncate |
 | Keywords           | string, truncate, ellipsis, smart |
 | # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 86288 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4112.0 |
+| # stars            | 6.0 |
 
 ## Links
 - [Homepage](https://github.com/millerized/smart-truncate#readme)

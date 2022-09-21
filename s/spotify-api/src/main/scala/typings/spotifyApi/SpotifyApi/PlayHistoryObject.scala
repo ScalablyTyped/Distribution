@@ -14,11 +14,11 @@ trait PlayHistoryObject extends StObject {
   
   var played_at: String
   
-  var track: TrackObjectSimplified
+  var track: TrackObjectFull
 }
 object PlayHistoryObject {
   
-  inline def apply(context: ContextObject, played_at: String, track: TrackObjectSimplified): PlayHistoryObject = {
+  inline def apply(context: ContextObject, played_at: String, track: TrackObjectFull): PlayHistoryObject = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], played_at = played_at.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlayHistoryObject]
   }
@@ -29,6 +29,6 @@ object PlayHistoryObject {
     
     inline def setPlayed_at(value: String): Self = StObject.set(x, "played_at", value.asInstanceOf[js.Any])
     
-    inline def setTrack(value: TrackObjectSimplified): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+    inline def setTrack(value: TrackObjectFull): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
   }
 }

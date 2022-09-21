@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "memoize-one" : "5.1.1"
+      "memoize-one" : "6.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "memoize-one" : "5.1.1"
+      "memoize-one" : "6.0.0"
     }
   ],
   "compile-devDependencies" : [

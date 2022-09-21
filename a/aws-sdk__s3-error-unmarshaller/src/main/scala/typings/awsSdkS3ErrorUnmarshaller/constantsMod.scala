@@ -9,7 +9,7 @@ object constantsMod {
   
   @JSImport("@aws-sdk/s3-error-unmarshaller/build/constants", "ERR_RESP_SHAPE")
   @js.native
-  val ERR_RESP_SHAPE: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Member */ js.Any = js.native
+  val ERR_RESP_SHAPE: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Member */ Any = js.native
   
   trait ParsedErrorResponse extends StObject {
     

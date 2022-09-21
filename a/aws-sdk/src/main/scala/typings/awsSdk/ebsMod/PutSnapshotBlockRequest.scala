@@ -27,7 +27,7 @@ trait PutSnapshotBlockRequest extends StObject {
   var ChecksumAlgorithm: typings.awsSdk.ebsMod.ChecksumAlgorithm
   
   /**
-    * The size of the data to write to the block, in bytes. Currently, the only supported size is 524288. Valid values: 524288 
+    * The size of the data to write to the block, in bytes. Currently, the only supported size is 524288 bytes. Valid values: 524288 
     */
   var DataLength: typings.awsSdk.ebsMod.DataLength
   
@@ -37,7 +37,7 @@ trait PutSnapshotBlockRequest extends StObject {
   var Progress: js.UndefOr[typings.awsSdk.ebsMod.Progress] = js.undefined
   
   /**
-    * The ID of the snapshot.
+    * The ID of the snapshot.  If the specified snapshot is encrypted, you must have permission to use the KMS key that was used to encrypt the snapshot. For more information, see  Using encryption in the Amazon Elastic Compute Cloud User Guide.. 
     */
   var SnapshotId: typings.awsSdk.ebsMod.SnapshotId
 }

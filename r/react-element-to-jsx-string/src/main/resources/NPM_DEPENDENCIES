@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-element-to-jsx-string" : "15.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-element-to-jsx-string" : "15.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

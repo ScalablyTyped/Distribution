@@ -33,6 +33,12 @@ trait AnnotationsOptions extends StObject {
   var crookedLine: js.UndefOr[AnnotationsCrookedLineOptions] = js.undefined
   
   /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Whether to hide the part of the
+    * annotation that is outside the plot area.
+    */
+  var crop: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * (Highcharts, Highstock, Highmaps, Gantt) Allow an annotation to be
     * draggable by a user. Possible values are `'x'`, `'xy'`, `'y'` and `''`
     * (disabled).
@@ -53,6 +59,11 @@ trait AnnotationsOptions extends StObject {
     * (Highstock) A fibonacci annotation.
     */
   var fibonacci: js.UndefOr[AnnotationsFibonacciOptions] = js.undefined
+  
+  /**
+    * (Highstock) The Fibonacci Time Zones annotation.
+    */
+  var fibonacciTimeZones: js.UndefOr[AnnotationsFibonacciTimeZonesOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Sets an ID for an annotation.
@@ -105,6 +116,11 @@ trait AnnotationsOptions extends StObject {
   var shapes: js.UndefOr[js.Array[AnnotationsShapesOptions]] = js.undefined
   
   /**
+    * (Highstock) The TimeCycles Annotation
+    */
+  var timeCycles: js.UndefOr[AnnotationsTimeCyclesOptions] = js.undefined
+  
+  /**
     * (Highstock) A tunnel annotation.
     */
   var tunnel: js.UndefOr[AnnotationsTunnelOptions] = js.undefined
@@ -146,6 +162,10 @@ object AnnotationsOptions {
     
     inline def setCrookedLineUndefined: Self = StObject.set(x, "crookedLine", js.undefined)
     
+    inline def setCrop(value: Boolean): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
+    
+    inline def setCropUndefined: Self = StObject.set(x, "crop", js.undefined)
+    
     inline def setDraggable(value: AnnotationDraggableValue): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
     
     inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
@@ -159,6 +179,10 @@ object AnnotationsOptions {
     inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
     inline def setFibonacci(value: AnnotationsFibonacciOptions): Self = StObject.set(x, "fibonacci", value.asInstanceOf[js.Any])
+    
+    inline def setFibonacciTimeZones(value: AnnotationsFibonacciTimeZonesOptions): Self = StObject.set(x, "fibonacciTimeZones", value.asInstanceOf[js.Any])
+    
+    inline def setFibonacciTimeZonesUndefined: Self = StObject.set(x, "fibonacciTimeZones", js.undefined)
     
     inline def setFibonacciUndefined: Self = StObject.set(x, "fibonacci", js.undefined)
     
@@ -178,7 +202,7 @@ object AnnotationsOptions {
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    inline def setLabelsVarargs(value: AnnotationsLabelsOptions*): Self = StObject.set(x, "labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: AnnotationsLabelsOptions*): Self = StObject.set(x, "labels", js.Array(value*))
     
     inline def setMeasure(value: AnnotationsMeasureOptions): Self = StObject.set(x, "measure", value.asInstanceOf[js.Any])
     
@@ -196,7 +220,11 @@ object AnnotationsOptions {
     
     inline def setShapesUndefined: Self = StObject.set(x, "shapes", js.undefined)
     
-    inline def setShapesVarargs(value: AnnotationsShapesOptions*): Self = StObject.set(x, "shapes", js.Array(value :_*))
+    inline def setShapesVarargs(value: AnnotationsShapesOptions*): Self = StObject.set(x, "shapes", js.Array(value*))
+    
+    inline def setTimeCycles(value: AnnotationsTimeCyclesOptions): Self = StObject.set(x, "timeCycles", value.asInstanceOf[js.Any])
+    
+    inline def setTimeCyclesUndefined: Self = StObject.set(x, "timeCycles", js.undefined)
     
     inline def setTunnel(value: AnnotationsTunnelOptions): Self = StObject.set(x, "tunnel", value.asInstanceOf[js.Any])
     

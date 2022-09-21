@@ -10,7 +10,7 @@ object operationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isHttpTrait(arg: js.Any): /* is / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HttpTrait * / any */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHttpTrait")(arg.asInstanceOf[js.Any]).asInstanceOf[/* is / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HttpTrait * / any */ Boolean]
+  inline def isHttpTrait(arg: Any): /* is / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HttpTrait * / any */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHttpTrait")(arg.asInstanceOf[js.Any]).asInstanceOf[/* is / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HttpTrait * / any */ Boolean]
   
-  inline def isOperation(arg: js.Any): /* is @aws-sdk/build-types.@aws-sdk/build-types/build/ApiModel.Operation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOperation")(arg.asInstanceOf[js.Any]).asInstanceOf[/* is @aws-sdk/build-types.@aws-sdk/build-types/build/ApiModel.Operation */ Boolean]
+  inline def isOperation(arg: Any): /* is @aws-sdk/build-types.@aws-sdk/build-types/build/ApiModel.Operation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOperation")(arg.asInstanceOf[js.Any]).asInstanceOf[/* is @aws-sdk/build-types.@aws-sdk/build-types/build/ApiModel.Operation */ Boolean]
 }

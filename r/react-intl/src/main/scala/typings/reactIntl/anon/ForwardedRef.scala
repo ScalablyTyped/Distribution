@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ForwardedRef extends StObject {
   
-  var forwardedRef: js.UndefOr[Ref[js.Any]] = js.undefined
+  var forwardedRef: js.UndefOr[Ref[Any]] = js.undefined
 }
 object ForwardedRef {
   
@@ -18,9 +18,9 @@ object ForwardedRef {
   
   extension [Self <: ForwardedRef](x: Self) {
     
-    inline def setForwardedRef(value: Ref[js.Any]): Self = StObject.set(x, "forwardedRef", value.asInstanceOf[js.Any])
+    inline def setForwardedRef(value: Ref[Any]): Self = StObject.set(x, "forwardedRef", value.asInstanceOf[js.Any])
     
-    inline def setForwardedRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "forwardedRef", js.Any.fromFunction1(value))
+    inline def setForwardedRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "forwardedRef", js.Any.fromFunction1(value))
     
     inline def setForwardedRefNull: Self = StObject.set(x, "forwardedRef", null)
     

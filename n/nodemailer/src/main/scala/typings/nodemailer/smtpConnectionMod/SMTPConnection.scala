@@ -1,6 +1,6 @@
 package typings.nodemailer.smtpConnectionMod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.node.netMod.Socket
 import typings.node.streamMod.Readable
@@ -11,7 +11,6 @@ import typings.nodemailer.nodemailerStrings.end
 import typings.nodemailer.nodemailerStrings.error
 import typings.nodemailer.nodemailerStrings.init
 import typings.nodemailer.sharedMod.Logger
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,10 +21,7 @@ trait SMTPConnection extends EventEmitter {
   /** The socket connecting to the server */
   var _socket: Socket = js.native
   
-  @JSName("addListener")
-  def addListener_connect(event: connect, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("addListener")
-  def addListener_end(event: end, listener: js.Function0[Unit]): this.type = js.native
+  def addListener(event: connect | end, listener: js.Function0[Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_error(event: error, listener: js.Function1[/* err */ SMTPError, Unit]): this.type = js.native
   
@@ -43,12 +39,9 @@ trait SMTPConnection extends EventEmitter {
   /** If set to true, this instance is no longer active */
   var destroyed: Boolean = js.native
   
+  def emit(event: connect | end): Boolean = js.native
   @JSName("emit")
-  def emit_connect(event: connect): Boolean = js.native
-  @JSName("emit")
-  def emit_end(event: end): Boolean = js.native
-  @JSName("emit")
-  def emit_error(event: error, error: Error): Boolean = js.native
+  def emit_error(event: error, error: js.Error): Boolean = js.native
   
   var host: String = js.native
   
@@ -56,17 +49,9 @@ trait SMTPConnection extends EventEmitter {
   
   var lastServerResponse: String | `false` = js.native
   
-  @JSName("listenerCount")
-  def listenerCount_connect(event: connect): Double = js.native
-  @JSName("listenerCount")
-  def listenerCount_end(event: end): Double = js.native
-  @JSName("listenerCount")
-  def listenerCount_error(event: error): Double = js.native
+  def listenerCount(event: connect | end | error): Double = js.native
   
-  @JSName("listeners")
-  def listeners_connect(event: connect): js.Array[js.Function0[Unit]] = js.native
-  @JSName("listeners")
-  def listeners_end(event: end): js.Array[js.Function0[Unit]] = js.native
+  def listeners(event: connect | end): js.Array[js.Function0[Unit]] = js.native
   @JSName("listeners")
   def listeners_error(event: error): js.Array[js.Function1[/* err */ SMTPError, Unit]] = js.native
   
@@ -79,24 +64,15 @@ trait SMTPConnection extends EventEmitter {
   
   var name: String = js.native
   
-  @JSName("off")
-  def off_connect(event: connect, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("off")
-  def off_end(event: end, listener: js.Function0[Unit]): this.type = js.native
+  def off(event: connect | end, listener: js.Function0[Unit]): this.type = js.native
   @JSName("off")
   def off_error(event: error, listener: js.Function1[/* err */ SMTPError, Unit]): this.type = js.native
   
-  @JSName("on")
-  def on_connect(event: connect, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("on")
-  def on_end(event: end, listener: js.Function0[Unit]): this.type = js.native
+  def on(event: connect | end, listener: js.Function0[Unit]): this.type = js.native
   @JSName("on")
   def on_error(event: error, listener: js.Function1[/* err */ SMTPError, Unit]): this.type = js.native
   
-  @JSName("once")
-  def once_connect(event: connect, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("once")
-  def once_end(event: end, listener: js.Function0[Unit]): this.type = js.native
+  def once(event: connect | end, listener: js.Function0[Unit]): this.type = js.native
   @JSName("once")
   def once_error(event: error, listener: js.Function1[/* err */ SMTPError, Unit]): this.type = js.native
   
@@ -104,41 +80,24 @@ trait SMTPConnection extends EventEmitter {
   
   var port: Double = js.native
   
-  @JSName("prependListener")
-  def prependListener_connect(event: connect, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_end(event: end, listener: js.Function0[Unit]): this.type = js.native
+  def prependListener(event: connect | end, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_error(event: error, listener: js.Function1[/* err */ SMTPError, Unit]): this.type = js.native
   
-  @JSName("prependOnceListener")
-  def prependOnceListener_connect(event: connect, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_end(event: end, listener: js.Function0[Unit]): this.type = js.native
+  def prependOnceListener(event: connect | end, listener: js.Function0[Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_error(event: error, listener: js.Function1[/* err */ SMTPError, Unit]): this.type = js.native
   
   /** Sends QUIT */
   def quit(): Unit = js.native
   
-  @JSName("rawListeners")
-  def rawListeners_connect(event: connect): js.Array[js.Function0[Unit]] = js.native
-  @JSName("rawListeners")
-  def rawListeners_end(event: end): js.Array[js.Function0[Unit]] = js.native
+  def rawListeners(event: connect | end): js.Array[js.Function0[Unit]] = js.native
   @JSName("rawListeners")
   def rawListeners_error(event: error): js.Array[js.Function1[/* err */ SMTPError, Unit]] = js.native
   
-  @JSName("removeAllListener")
-  def removeAllListener_connect(event: connect): this.type = js.native
-  @JSName("removeAllListener")
-  def removeAllListener_end(event: end): this.type = js.native
-  @JSName("removeAllListener")
-  def removeAllListener_error(event: error): this.type = js.native
+  def removeAllListener(event: connect | end | error): this.type = js.native
   
-  @JSName("removeListener")
-  def removeListener_connect(event: connect, listener: js.Function0[Unit]): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_end(event: end, listener: js.Function0[Unit]): this.type = js.native
+  def removeListener(event: connect | end, listener: js.Function0[Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_error(event: error, listener: js.Function1[/* err */ SMTPError, Unit]): this.type = js.native
   

@@ -163,7 +163,7 @@ trait XParameters
     * @param x the parameter value
     * @throws SQLException if a database access error occurs.
     */
-  def setObject(parameterIndex: Double, x: js.Any): Unit
+  def setObject(parameterIndex: Double, x: Any): Unit
   
   /**
     * sets the designated parameter to SQL NULL. This version of setNull should be used for user-named types and REF type parameters. Examples of user-named
@@ -195,7 +195,7 @@ trait XParameters
     * @param scale for {@link com.sun.star.sdbc.DataType.DECIMAL} or {@link com.sun.star.sdbc.DataType.NUMERIC} types, this is the number of digits after the
     * @throws SQLException if a database access error occurs.
     */
-  def setObjectWithInfo(parameterIndex: Double, x: js.Any, targetSqlType: Double, scale: Double): Unit
+  def setObjectWithInfo(parameterIndex: Double, x: Any, targetSqlType: Double, scale: Double): Unit
   
   /**
     * sets a REF(&lt;structured-type&gt;) parameter.
@@ -243,7 +243,7 @@ object XParameters {
   inline def apply(
     acquire: () => Unit,
     clearParameters: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setArray: (Double, XArray) => Unit,
     setBinaryStream: (Double, XInputStream, Double) => Unit,
@@ -259,9 +259,9 @@ object XParameters {
     setInt: (Double, Double) => Unit,
     setLong: (Double, Double) => Unit,
     setNull: (Double, Double) => Unit,
-    setObject: (Double, js.Any) => Unit,
+    setObject: (Double, Any) => Unit,
     setObjectNull: (Double, Double, String) => Unit,
-    setObjectWithInfo: (Double, js.Any, Double, Double) => Unit,
+    setObjectWithInfo: (Double, Any, Double, Double) => Unit,
     setRef: (Double, XRef) => Unit,
     setShort: (Double, Double) => Unit,
     setString: (Double, String) => Unit,
@@ -304,11 +304,11 @@ object XParameters {
     
     inline def setSetNull(value: (Double, Double) => Unit): Self = StObject.set(x, "setNull", js.Any.fromFunction2(value))
     
-    inline def setSetObject(value: (Double, js.Any) => Unit): Self = StObject.set(x, "setObject", js.Any.fromFunction2(value))
+    inline def setSetObject(value: (Double, Any) => Unit): Self = StObject.set(x, "setObject", js.Any.fromFunction2(value))
     
     inline def setSetObjectNull(value: (Double, Double, String) => Unit): Self = StObject.set(x, "setObjectNull", js.Any.fromFunction3(value))
     
-    inline def setSetObjectWithInfo(value: (Double, js.Any, Double, Double) => Unit): Self = StObject.set(x, "setObjectWithInfo", js.Any.fromFunction4(value))
+    inline def setSetObjectWithInfo(value: (Double, Any, Double, Double) => Unit): Self = StObject.set(x, "setObjectWithInfo", js.Any.fromFunction4(value))
     
     inline def setSetRef(value: (Double, XRef) => Unit): Self = StObject.set(x, "setRef", js.Any.fromFunction2(value))
     

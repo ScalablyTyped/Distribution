@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mapbox-gl", "BoxZoomHandler")
 @js.native
-class BoxZoomHandler protected () extends StObject {
+open class BoxZoomHandler protected () extends StObject {
   def this(map: Map) = this()
   
   def disable(): Unit = js.native

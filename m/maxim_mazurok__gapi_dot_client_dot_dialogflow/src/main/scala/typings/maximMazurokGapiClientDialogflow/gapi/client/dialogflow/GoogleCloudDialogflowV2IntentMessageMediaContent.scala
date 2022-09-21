@@ -25,7 +25,7 @@ object GoogleCloudDialogflowV2IntentMessageMediaContent {
     
     inline def setMediaObjectsUndefined: Self = StObject.set(x, "mediaObjects", js.undefined)
     
-    inline def setMediaObjectsVarargs(value: GoogleCloudDialogflowV2IntentMessageMediaContentResponseMediaObject*): Self = StObject.set(x, "mediaObjects", js.Array(value :_*))
+    inline def setMediaObjectsVarargs(value: GoogleCloudDialogflowV2IntentMessageMediaContentResponseMediaObject*): Self = StObject.set(x, "mediaObjects", js.Array(value*))
     
     inline def setMediaType(value: String): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     

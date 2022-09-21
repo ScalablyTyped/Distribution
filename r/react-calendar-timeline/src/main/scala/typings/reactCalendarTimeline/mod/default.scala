@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-calendar-timeline", JSImport.Default)
 @js.native
-class default[CustomItem /* <: TimelineItemBase[js.Any] */, CustomGroup /* <: TimelineGroupBase */] ()
-  extends Component[ReactCalendarTimelineProps[CustomItem, CustomGroup], js.Object, js.Any]
+open class default[CustomItem /* <: TimelineItemBase[Any] */, CustomGroup /* <: TimelineGroupBase */] ()
+  extends Component[ReactCalendarTimelineProps[CustomItem, CustomGroup], js.Object, Any]

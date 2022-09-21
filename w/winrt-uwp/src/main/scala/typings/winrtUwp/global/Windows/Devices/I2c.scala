@@ -29,7 +29,7 @@ object I2c {
   /** Represents the connection settings you want to use for an inter-integrated circuit (I²C) device. */
   @JSGlobal("Windows.Devices.I2c.I2cConnectionSettings")
   @js.native
-  class I2cConnectionSettings protected ()
+  open class I2cConnectionSettings protected ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.I2c.I2cConnectionSettings {
     /**
@@ -78,7 +78,7 @@ object I2c {
       * @return When the method completes successfully, it returns a list of values that represent the available I²C controllers on the system.
       */
     /* static member */
-    inline def getControllersAsync(provider: II2cProvider): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getControllersAsync")(provider.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+    inline def getControllersAsync(provider: II2cProvider): IPromiseWithIAsyncOperation[IVectorView[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getControllersAsync")(provider.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[Any]]]
     
     /**
       * Gets the default I²C controller on the system.
@@ -224,13 +224,13 @@ object I2c {
       /* unmapped type */
       @JSGlobal("Windows.Devices.I2c.Provider.ProviderI2cBusSpeed.fastMode")
       @js.native
-      def fastMode: js.Any = js.native
-      inline def fastMode_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fastMode")(x.asInstanceOf[js.Any])
+      def fastMode: Any = js.native
+      inline def fastMode_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fastMode")(x.asInstanceOf[js.Any])
       
       @JSGlobal("Windows.Devices.I2c.Provider.ProviderI2cBusSpeed.standardMode")
       @js.native
-      def standardMode: js.Any = js.native
-      inline def standardMode_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("standardMode")(x.asInstanceOf[js.Any])
+      def standardMode: Any = js.native
+      inline def standardMode_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("standardMode")(x.asInstanceOf[js.Any])
     }
     
     @JSGlobal("Windows.Devices.I2c.Provider.ProviderI2cConnectionSettings")
@@ -240,15 +240,15 @@ object I2c {
          with typings.winrtUwp.Windows.Devices.I2c.Provider.ProviderI2cConnectionSettings {
       
       /* CompleteClass */
-      var busSpeed: js.Any = js.native
+      var busSpeed: Any = js.native
       
       /* unmapped type */
       /* CompleteClass */
-      var sharingMode: js.Any = js.native
+      var sharingMode: Any = js.native
       
       /* unmapped type */
       /* CompleteClass */
-      var slaveAddress: js.Any = js.native
+      var slaveAddress: Any = js.native
     }
     
     object ProviderI2cSharingMode {
@@ -259,14 +259,14 @@ object I2c {
       
       @JSGlobal("Windows.Devices.I2c.Provider.ProviderI2cSharingMode.exclusive")
       @js.native
-      def exclusive: js.Any = js.native
-      inline def exclusive_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("exclusive")(x.asInstanceOf[js.Any])
+      def exclusive: Any = js.native
+      inline def exclusive_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("exclusive")(x.asInstanceOf[js.Any])
       
       /* unmapped type */
       @JSGlobal("Windows.Devices.I2c.Provider.ProviderI2cSharingMode.shared")
       @js.native
-      def shared: js.Any = js.native
-      inline def shared_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shared")(x.asInstanceOf[js.Any])
+      def shared: Any = js.native
+      inline def shared_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shared")(x.asInstanceOf[js.Any])
     }
     
     object ProviderI2cTransferStatus {
@@ -277,20 +277,20 @@ object I2c {
       
       @JSGlobal("Windows.Devices.I2c.Provider.ProviderI2cTransferStatus.fullTransfer")
       @js.native
-      def fullTransfer: js.Any = js.native
-      inline def fullTransfer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fullTransfer")(x.asInstanceOf[js.Any])
+      def fullTransfer: Any = js.native
+      inline def fullTransfer_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fullTransfer")(x.asInstanceOf[js.Any])
       
       /* unmapped type */
       @JSGlobal("Windows.Devices.I2c.Provider.ProviderI2cTransferStatus.partialTransfer")
       @js.native
-      def partialTransfer: js.Any = js.native
-      inline def partialTransfer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("partialTransfer")(x.asInstanceOf[js.Any])
+      def partialTransfer: Any = js.native
+      inline def partialTransfer_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("partialTransfer")(x.asInstanceOf[js.Any])
       
       /* unmapped type */
       @JSGlobal("Windows.Devices.I2c.Provider.ProviderI2cTransferStatus.slaveAddressNotAcknowledged")
       @js.native
-      def slaveAddressNotAcknowledged: js.Any = js.native
-      inline def slaveAddressNotAcknowledged_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("slaveAddressNotAcknowledged")(x.asInstanceOf[js.Any])
+      def slaveAddressNotAcknowledged: Any = js.native
+      inline def slaveAddressNotAcknowledged_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("slaveAddressNotAcknowledged")(x.asInstanceOf[js.Any])
     }
   }
 }

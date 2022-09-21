@@ -71,9 +71,9 @@ trait PartialOptionsobjectDatas extends StObject {
   
   var objectData: (js.UndefOr[js.Object | String]) & (String | js.Object)
   
-  var onGotoSubmit: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var onGotoSubmit: js.UndefOr[js.Function0[Any]] = js.undefined
   
-  var pageAliasFunction: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var pageAliasFunction: js.UndefOr[js.Function0[Any]] = js.undefined
   
   var pageAliases: js.UndefOr[js.Object] = js.undefined
   
@@ -232,11 +232,11 @@ object PartialOptionsobjectDatas {
     
     inline def setObjectData(value: (js.UndefOr[js.Object | String]) & (String | js.Object)): Self = StObject.set(x, "objectData", value.asInstanceOf[js.Any])
     
-    inline def setOnGotoSubmit(value: () => js.Any): Self = StObject.set(x, "onGotoSubmit", js.Any.fromFunction0(value))
+    inline def setOnGotoSubmit(value: () => Any): Self = StObject.set(x, "onGotoSubmit", js.Any.fromFunction0(value))
     
     inline def setOnGotoSubmitUndefined: Self = StObject.set(x, "onGotoSubmit", js.undefined)
     
-    inline def setPageAliasFunction(value: () => js.Any): Self = StObject.set(x, "pageAliasFunction", js.Any.fromFunction0(value))
+    inline def setPageAliasFunction(value: () => Any): Self = StObject.set(x, "pageAliasFunction", js.Any.fromFunction0(value))
     
     inline def setPageAliasFunctionUndefined: Self = StObject.set(x, "pageAliasFunction", js.undefined)
     

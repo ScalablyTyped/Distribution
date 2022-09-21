@@ -13,7 +13,7 @@ trait XAudio
      with XAnimationNode {
   
   /** This attribute specifies the source element that contains the audio. */
-  var Source: js.Any
+  var Source: Any
   
   var Volume: Double
 }
@@ -22,25 +22,25 @@ object XAudio {
   inline def apply(
     Acceleration: Double,
     AutoReverse: Boolean,
-    Begin: js.Any,
+    Begin: Any,
     Decelerate: Double,
-    Duration: js.Any,
-    End: js.Any,
-    EndSync: js.Any,
+    Duration: Any,
+    End: Any,
+    EndSync: Any,
     Fill: Double,
     FillDefault: Double,
     Parent: XInterface,
-    RepeatCount: js.Any,
-    RepeatDuration: js.Any,
+    RepeatCount: Any,
+    RepeatDuration: Any,
     Restart: Double,
     RestartDefault: Double,
-    Source: js.Any,
+    Source: Any,
     Type: Double,
     UserData: SafeArray[NamedValue],
     Volume: Double,
     acquire: () => Unit,
     getParent: () => XInterface,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setParent: XInterface => Unit
   ): XAudio = {
@@ -50,7 +50,7 @@ object XAudio {
   
   extension [Self <: XAudio](x: Self) {
     
-    inline def setSource(value: js.Any): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Any): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     
     inline def setVolume(value: Double): Self = StObject.set(x, "Volume", value.asInstanceOf[js.Any])
   }

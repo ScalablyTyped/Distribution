@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListIngestionsRequest extends StObject {
   
   /**
-    * The AWS account ID.
+    * The Amazon Web Services account ID.
     */
   var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
   /**
     * The ID of the dataset used in the ingestion.
     */
-  var DataSetId: java.lang.String
+  var DataSetId: String
   
   /**
     * The maximum number of results to be returned per request.
@@ -24,11 +24,11 @@ trait ListIngestionsRequest extends StObject {
   /**
     * The token for the next set of results, or null if there are no more results.
     */
-  var NextToken: js.UndefOr[java.lang.String] = js.undefined
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object ListIngestionsRequest {
   
-  inline def apply(AwsAccountId: AwsAccountId, DataSetId: java.lang.String): ListIngestionsRequest = {
+  inline def apply(AwsAccountId: AwsAccountId, DataSetId: String): ListIngestionsRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], DataSetId = DataSetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListIngestionsRequest]
   }
@@ -37,13 +37,13 @@ object ListIngestionsRequest {
     
     inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    inline def setDataSetId(value: java.lang.String): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
+    inline def setDataSetId(value: String): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
     
     inline def setMaxResults(value: IngestionMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    inline def setNextToken(value: java.lang.String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }

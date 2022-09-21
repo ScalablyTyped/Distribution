@@ -8,6 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object parseStrings {
   
   @js.native
+  sealed trait ACL extends StObject
+  inline def ACL: ACL = "ACL".asInstanceOf[ACL]
+  
+  @js.native
   sealed trait Array
     extends StObject
        with TYPE

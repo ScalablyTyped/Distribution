@@ -17,7 +17,7 @@ object blameMod {
   
   @JSImport("nodegit/blame", "Blame")
   @js.native
-  class Blame () extends StObject {
+  open class Blame () extends StObject {
     
     def buffer(buffer: String, bufferLen: Double): js.Promise[Blame] = js.native
     

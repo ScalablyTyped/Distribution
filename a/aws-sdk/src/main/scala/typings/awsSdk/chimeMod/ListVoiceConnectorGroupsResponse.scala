@@ -33,6 +33,6 @@ object ListVoiceConnectorGroupsResponse {
     
     inline def setVoiceConnectorGroupsUndefined: Self = StObject.set(x, "VoiceConnectorGroups", js.undefined)
     
-    inline def setVoiceConnectorGroupsVarargs(value: VoiceConnectorGroup*): Self = StObject.set(x, "VoiceConnectorGroups", js.Array(value :_*))
+    inline def setVoiceConnectorGroupsVarargs(value: VoiceConnectorGroup*): Self = StObject.set(x, "VoiceConnectorGroups", js.Array(value*))
   }
 }

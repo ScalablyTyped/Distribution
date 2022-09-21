@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.Filter")
 @js.native
-class Filter ()
+open class Filter ()
   extends StObject
      with typings.easeljs.createjs.Filter

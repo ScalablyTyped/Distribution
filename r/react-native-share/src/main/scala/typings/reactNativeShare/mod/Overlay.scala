@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-share", "Overlay")
 @js.native
-class Overlay ()
+open class Overlay ()
   extends typings.reactNativeShare.overlayMod.default

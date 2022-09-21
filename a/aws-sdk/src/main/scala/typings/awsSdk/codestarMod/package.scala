@@ -1,99 +1,100 @@
 package typings.awsSdk.codestarMod
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type BucketKey = java.lang.String
+type BucketKey = String
 
-type BucketName = java.lang.String
+type BucketName = String
 
-type ClientRequestToken = java.lang.String
+type ClientRequestToken = String
 
-type CreatedTimestamp = typings.std.Date
+type CreatedTimestamp = js.Date
 
-type DeleteStack = scala.Boolean
+type DeleteStack = Boolean
 
-type Email = java.lang.String
+type Email = String
 
-type GitHubPersonalToken = java.lang.String
+type GitHubPersonalToken = String
 
-type LastModifiedTimestamp = typings.std.Date
+type LastModifiedTimestamp = js.Date
 
-type MaxResults = scala.Double
+type MaxResults = Double
 
-type PaginationToken = java.lang.String
+type PaginationToken = String
 
-type ProjectArn = java.lang.String
+type ProjectArn = String
 
-type ProjectDescription = java.lang.String
+type ProjectDescription = String
 
-type ProjectId = java.lang.String
+type ProjectId = String
 
-type ProjectName = java.lang.String
+type ProjectName = String
 
-type ProjectTemplateId = java.lang.String
+type ProjectTemplateId = String
 
-type ProjectsList = js.Array[typings.awsSdk.codestarMod.ProjectSummary]
+type ProjectsList = js.Array[ProjectSummary]
 
-type Reason = java.lang.String
+type Reason = String
 
-type RemoteAccessAllowed = scala.Boolean
+type RemoteAccessAllowed = Boolean
 
-type RepositoryDescription = java.lang.String
+type RepositoryDescription = String
 
-type RepositoryEnableIssues = scala.Boolean
+type RepositoryEnableIssues = Boolean
 
-type RepositoryIsPrivate = scala.Boolean
+type RepositoryIsPrivate = Boolean
 
-type RepositoryName = java.lang.String
+type RepositoryName = String
 
-type RepositoryOwner = java.lang.String
+type RepositoryOwner = String
 
-type RepositoryType = java.lang.String
+type RepositoryType = String
 
-type ResourceId = java.lang.String
+type ResourceId = String
 
-type ResourcesResult = js.Array[typings.awsSdk.codestarMod.Resource]
+type ResourcesResult = js.Array[Resource]
 
-type Role = java.lang.String
+type Role = String
 
-type RoleArn = java.lang.String
+type RoleArn = String
 
-type SourceCode = js.Array[typings.awsSdk.codestarMod.Code]
+type SourceCode = js.Array[Code]
 
-type SshPublicKey = java.lang.String
+type SshPublicKey = String
 
-type StackId = java.lang.String
+type StackId = String
 
-type State = java.lang.String
+type State = String
 
-type TagKey = java.lang.String
+type TagKey = String
 
-type TagKeys = js.Array[typings.awsSdk.codestarMod.TagKey]
+type TagKeys = js.Array[TagKey]
 
-type TagValue = java.lang.String
+type TagValue = String
 
-type Tags = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.codestarMod.TagValue]
+type Tags = StringDictionary[TagValue]
 
-type TeamMemberResult = js.Array[typings.awsSdk.codestarMod.TeamMember]
+type TeamMemberResult = js.Array[TeamMember]
 
-type TemplateParameterKey = java.lang.String
+type TemplateParameterKey = String
 
-type TemplateParameterMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.codestarMod.TemplateParameterValue]
+type TemplateParameterMap = StringDictionary[TemplateParameterValue]
 
-type TemplateParameterValue = java.lang.String
+type TemplateParameterValue = String
 
-type UserArn = java.lang.String
+type UserArn = String
 
-type UserProfileDisplayName = java.lang.String
+type UserProfileDisplayName = String
 
-type UserProfilesList = js.Array[typings.awsSdk.codestarMod.UserProfileSummary]
+type UserProfilesList = js.Array[UserProfileSummary]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2017-04-19`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.codestarMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

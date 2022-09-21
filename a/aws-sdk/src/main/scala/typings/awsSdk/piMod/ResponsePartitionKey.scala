@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ResponsePartitionKey extends StObject {
   
   /**
-    * A dimension map that contains the dimension(s) for this partition.
+    * A dimension map that contains the dimensions for this partition.
     */
   var Dimensions: DimensionMap
 }

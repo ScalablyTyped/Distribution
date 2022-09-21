@@ -22,6 +22,6 @@ object GoogleAudienceGroup {
     
     inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
     
-    inline def setSettingsVarargs(value: GoogleAudienceTargetingSetting*): Self = StObject.set(x, "settings", js.Array(value :_*))
+    inline def setSettingsVarargs(value: GoogleAudienceTargetingSetting*): Self = StObject.set(x, "settings", js.Array(value*))
   }
 }

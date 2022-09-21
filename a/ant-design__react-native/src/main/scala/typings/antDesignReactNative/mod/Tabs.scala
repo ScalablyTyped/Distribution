@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@ant-design/react-native", "Tabs")
 @js.native
-class Tabs protected () extends default {
+open class Tabs protected () extends default {
   def this(props: PropsType) = this()
 }
 /* static members */

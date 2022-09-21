@@ -50,7 +50,7 @@ object plotsMod {
     *
     * @constructor
     */
-  class Area[X] ()
+  open class Area[X] ()
     extends typings.plottable.areaPlotMod.Area[X]
   /* static members */
   object Area {
@@ -61,8 +61,8 @@ object plotsMod {
     
     @JSImport("plottable/build/src/plots", "Area._Y0_KEY")
     @js.native
-    def _Y0_KEY: js.Any = js.native
-    inline def _Y0_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Y0_KEY")(x.asInstanceOf[js.Any])
+    def _Y0_KEY: Any = js.native
+    inline def _Y0_KEY_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Y0_KEY")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("plottable/build/src/plots", "Bar")
@@ -73,7 +73,7 @@ object plotsMod {
     * @constructor
     * @param {string} [orientation="vertical"] One of "vertical"/"horizontal".
     */
-  class Bar[X, Y] ()
+  open class Bar[X, Y] ()
     extends typings.plottable.barPlotMod.Bar[X, Y] {
     def this(orientation: BarOrientation) = this()
   }
@@ -86,13 +86,13 @@ object plotsMod {
     
     @JSImport("plottable/build/src/plots", "Bar._BAR_AREA_CLASS")
     @js.native
-    def _BAR_AREA_CLASS: js.Any = js.native
-    inline def _BAR_AREA_CLASS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BAR_AREA_CLASS")(x.asInstanceOf[js.Any])
+    def _BAR_AREA_CLASS: Any = js.native
+    inline def _BAR_AREA_CLASS_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BAR_AREA_CLASS")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/plots", "Bar._BAR_END_KEY")
     @js.native
-    def _BAR_END_KEY: js.Any = js.native
-    inline def _BAR_END_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BAR_END_KEY")(x.asInstanceOf[js.Any])
+    def _BAR_END_KEY: Any = js.native
+    inline def _BAR_END_KEY_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BAR_END_KEY")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/plots", "Bar._BAR_GAPLESS_THRESHOLD_PX")
     @js.native
@@ -178,7 +178,7 @@ object plotsMod {
     * @constructor
     * @param {string} [orientation="vertical"] One of "vertical"/"horizontal".
     */
-  class ClusteredBar[X, Y] ()
+  open class ClusteredBar[X, Y] ()
     extends typings.plottable.clusteredBarPlotMod.ClusteredBar[X, Y] {
     def this(orientation: BarOrientation) = this()
   }
@@ -293,7 +293,7 @@ object plotsMod {
     *
     * @constructor
     */
-  class Line[X] ()
+  open class Line[X] ()
     extends typings.plottable.linePlotMod.Line[X]
   
   @JSImport("plottable/build/src/plots", "Pie")
@@ -301,7 +301,7 @@ object plotsMod {
   /**
     * @constructor
     */
-  class Pie ()
+  open class Pie ()
     extends typings.plottable.piePlotMod.Pie
   /* static members */
   object Pie {
@@ -312,20 +312,20 @@ object plotsMod {
     
     @JSImport("plottable/build/src/plots", "Pie._INNER_RADIUS_KEY")
     @js.native
-    def _INNER_RADIUS_KEY: js.Any = js.native
-    inline def _INNER_RADIUS_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_INNER_RADIUS_KEY")(x.asInstanceOf[js.Any])
+    def _INNER_RADIUS_KEY: Any = js.native
+    inline def _INNER_RADIUS_KEY_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_INNER_RADIUS_KEY")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/plots", "Pie._OUTER_RADIUS_KEY")
     @js.native
-    def _OUTER_RADIUS_KEY: js.Any = js.native
-    inline def _OUTER_RADIUS_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_OUTER_RADIUS_KEY")(x.asInstanceOf[js.Any])
+    def _OUTER_RADIUS_KEY: Any = js.native
+    inline def _OUTER_RADIUS_KEY_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_OUTER_RADIUS_KEY")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/plots", "Pie._SECTOR_VALUE_KEY")
     @js.native
-    def _SECTOR_VALUE_KEY: js.Any = js.native
-    inline def _SECTOR_VALUE_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SECTOR_VALUE_KEY")(x.asInstanceOf[js.Any])
+    def _SECTOR_VALUE_KEY: Any = js.native
+    inline def _SECTOR_VALUE_KEY_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SECTOR_VALUE_KEY")(x.asInstanceOf[js.Any])
     
-    inline def _isValidData(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("_isValidData")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def _isValidData(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("_isValidData")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   @JSImport("plottable/build/src/plots", "Rectangle")
@@ -341,7 +341,7 @@ object plotsMod {
     * @param {Scale.Scale} xScale
     * @param {Scale.Scale} yScale
     */
-  class Rectangle[X, Y] ()
+  open class Rectangle[X, Y] ()
     extends typings.plottable.rectanglePlotMod.Rectangle[X, Y]
   /* static members */
   object Rectangle {
@@ -352,13 +352,13 @@ object plotsMod {
     
     @JSImport("plottable/build/src/plots", "Rectangle._X2_KEY")
     @js.native
-    def _X2_KEY: js.Any = js.native
-    inline def _X2_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_X2_KEY")(x.asInstanceOf[js.Any])
+    def _X2_KEY: Any = js.native
+    inline def _X2_KEY_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_X2_KEY")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/plots", "Rectangle._Y2_KEY")
     @js.native
-    def _Y2_KEY: js.Any = js.native
-    inline def _Y2_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Y2_KEY")(x.asInstanceOf[js.Any])
+    def _Y2_KEY: Any = js.native
+    inline def _Y2_KEY_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Y2_KEY")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("plottable/build/src/plots", "Scatter")
@@ -368,7 +368,7 @@ object plotsMod {
     *
     * @constructor
     */
-  class Scatter[X, Y] ()
+  open class Scatter[X, Y] ()
     extends typings.plottable.scatterPlotMod.Scatter[X, Y]
   /* static members */
   object Scatter {
@@ -389,13 +389,13 @@ object plotsMod {
     
     @JSImport("plottable/build/src/plots", "Scatter._SIZE_KEY")
     @js.native
-    def _SIZE_KEY: js.Any = js.native
-    inline def _SIZE_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SIZE_KEY")(x.asInstanceOf[js.Any])
+    def _SIZE_KEY: Any = js.native
+    inline def _SIZE_KEY_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SIZE_KEY")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/plots", "Scatter._SYMBOL_KEY")
     @js.native
-    def _SYMBOL_KEY: js.Any = js.native
-    inline def _SYMBOL_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SYMBOL_KEY")(x.asInstanceOf[js.Any])
+    def _SYMBOL_KEY: Any = js.native
+    inline def _SYMBOL_KEY_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SYMBOL_KEY")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("plottable/build/src/plots", "Segment")
@@ -405,7 +405,7 @@ object plotsMod {
     *
     * @constructor
     */
-  class Segment[X, Y] ()
+  open class Segment[X, Y] ()
     extends typings.plottable.segmentPlotMod.Segment[X, Y]
   /* static members */
   object Segment {
@@ -416,13 +416,13 @@ object plotsMod {
     
     @JSImport("plottable/build/src/plots", "Segment._X2_KEY")
     @js.native
-    def _X2_KEY: js.Any = js.native
-    inline def _X2_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_X2_KEY")(x.asInstanceOf[js.Any])
+    def _X2_KEY: Any = js.native
+    inline def _X2_KEY_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_X2_KEY")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/plots", "Segment._Y2_KEY")
     @js.native
-    def _Y2_KEY: js.Any = js.native
-    inline def _Y2_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Y2_KEY")(x.asInstanceOf[js.Any])
+    def _Y2_KEY: Any = js.native
+    inline def _Y2_KEY_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Y2_KEY")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("plottable/build/src/plots", "StackedArea")
@@ -430,7 +430,7 @@ object plotsMod {
   /**
     * @constructor
     */
-  class StackedArea[X] ()
+  open class StackedArea[X] ()
     extends typings.plottable.stackedAreaPlotMod.StackedArea[X]
   /* static members */
   object StackedArea {
@@ -448,7 +448,10 @@ object plotsMod {
       * @param {Accessor<any>} keyAccessor The accessor for the key of the data
       * @return {string[]} An array of stringified keys
       */
-    inline def _domainKeys(datasets: js.Any, keyAccessor: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_domainKeys")(datasets.asInstanceOf[js.Any], keyAccessor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @JSImport("plottable/build/src/plots", "StackedArea._domainKeys")
+    @js.native
+    def _domainKeys: Any = js.native
+    inline def _domainKeys_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_domainKeys")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("plottable/build/src/plots", "StackedBar")
@@ -463,7 +466,7 @@ object plotsMod {
     * @param {Scale} yScale
     * @param {string} [orientation="vertical"] One of "vertical"/"horizontal".
     */
-  class StackedBar[X, Y] ()
+  open class StackedBar[X, Y] ()
     extends typings.plottable.stackedBarPlotMod.StackedBar[X, Y] {
     def this(orientation: BarOrientation) = this()
   }
@@ -482,7 +485,7 @@ object plotsMod {
   
   @JSImport("plottable/build/src/plots", "Waterfall")
   @js.native
-  class Waterfall[X, Y] ()
+  open class Waterfall[X, Y] ()
     extends typings.plottable.waterfallPlotMod.Waterfall[X, Y]
   /* static members */
   object Waterfall {
@@ -493,32 +496,32 @@ object plotsMod {
     
     @JSImport("plottable/build/src/plots", "Waterfall._BAR_DECLINE_CLASS")
     @js.native
-    def _BAR_DECLINE_CLASS: js.Any = js.native
-    inline def _BAR_DECLINE_CLASS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BAR_DECLINE_CLASS")(x.asInstanceOf[js.Any])
+    def _BAR_DECLINE_CLASS: Any = js.native
+    inline def _BAR_DECLINE_CLASS_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BAR_DECLINE_CLASS")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/plots", "Waterfall._BAR_GROWTH_CLASS")
     @js.native
-    def _BAR_GROWTH_CLASS: js.Any = js.native
-    inline def _BAR_GROWTH_CLASS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BAR_GROWTH_CLASS")(x.asInstanceOf[js.Any])
+    def _BAR_GROWTH_CLASS: Any = js.native
+    inline def _BAR_GROWTH_CLASS_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BAR_GROWTH_CLASS")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/plots", "Waterfall._BAR_TOTAL_CLASS")
     @js.native
-    def _BAR_TOTAL_CLASS: js.Any = js.native
-    inline def _BAR_TOTAL_CLASS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BAR_TOTAL_CLASS")(x.asInstanceOf[js.Any])
+    def _BAR_TOTAL_CLASS: Any = js.native
+    inline def _BAR_TOTAL_CLASS_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BAR_TOTAL_CLASS")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/plots", "Waterfall._CONNECTOR_AREA_CLASS")
     @js.native
-    def _CONNECTOR_AREA_CLASS: js.Any = js.native
-    inline def _CONNECTOR_AREA_CLASS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CONNECTOR_AREA_CLASS")(x.asInstanceOf[js.Any])
+    def _CONNECTOR_AREA_CLASS: Any = js.native
+    inline def _CONNECTOR_AREA_CLASS_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CONNECTOR_AREA_CLASS")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/plots", "Waterfall._CONNECTOR_CLASS")
     @js.native
-    def _CONNECTOR_CLASS: js.Any = js.native
-    inline def _CONNECTOR_CLASS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CONNECTOR_CLASS")(x.asInstanceOf[js.Any])
+    def _CONNECTOR_CLASS: Any = js.native
+    inline def _CONNECTOR_CLASS_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CONNECTOR_CLASS")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/plots", "Waterfall._TOTAL_KEY")
     @js.native
-    def _TOTAL_KEY: js.Any = js.native
-    inline def _TOTAL_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TOTAL_KEY")(x.asInstanceOf[js.Any])
+    def _TOTAL_KEY: Any = js.native
+    inline def _TOTAL_KEY_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TOTAL_KEY")(x.asInstanceOf[js.Any])
   }
 }

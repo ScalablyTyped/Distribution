@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.Slash")
 @js.native
-class Slash ()
+open class Slash ()
   extends typings.ranjs.mod.dist.Slash

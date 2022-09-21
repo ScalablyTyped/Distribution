@@ -17,6 +17,10 @@ object mod {
   inline def ancestor[TState](node: Node, visitors: AncestorVisitors[TState], base: RecursiveVisitors[TState]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ancestor")(node.asInstanceOf[js.Any], visitors.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def ancestor[TState](node: Node, visitors: AncestorVisitors[TState], base: RecursiveVisitors[TState], state: TState): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ancestor")(node.asInstanceOf[js.Any], visitors.asInstanceOf[js.Any], base.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  @JSImport("acorn-walk", "base")
+  @js.native
+  val base: RecursiveVisitors[Any] = js.native
+  
   inline def findNodeAfter[TState](node: Node): js.UndefOr[Found[TState]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAfter")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Found[TState]]]
   inline def findNodeAfter[TState](node: Node, start: Double): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAfter")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]
   inline def findNodeAfter[TState](node: Node, start: Double, `type`: String): js.UndefOr[Found[TState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodeAfter")(node.asInstanceOf[js.Any], start.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Found[TState]]]

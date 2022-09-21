@@ -25,10 +25,10 @@ object Linux {
     
     inline def setCapabilities(value: js.Array[String]): Self = StObject.set(x, "Capabilities", value.asInstanceOf[js.Any])
     
-    inline def setCapabilitiesVarargs(value: String*): Self = StObject.set(x, "Capabilities", js.Array(value :_*))
+    inline def setCapabilitiesVarargs(value: String*): Self = StObject.set(x, "Capabilities", js.Array(value*))
     
     inline def setDevices(value: js.Array[PluginDevice]): Self = StObject.set(x, "Devices", value.asInstanceOf[js.Any])
     
-    inline def setDevicesVarargs(value: PluginDevice*): Self = StObject.set(x, "Devices", js.Array(value :_*))
+    inline def setDevicesVarargs(value: PluginDevice*): Self = StObject.set(x, "Devices", js.Array(value*))
   }
 }

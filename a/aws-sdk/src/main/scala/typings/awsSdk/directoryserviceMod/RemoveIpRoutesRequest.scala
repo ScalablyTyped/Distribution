@@ -27,7 +27,7 @@ object RemoveIpRoutesRequest {
     
     inline def setCidrIps(value: CidrIps): Self = StObject.set(x, "CidrIps", value.asInstanceOf[js.Any])
     
-    inline def setCidrIpsVarargs(value: CidrIp*): Self = StObject.set(x, "CidrIps", js.Array(value :_*))
+    inline def setCidrIpsVarargs(value: CidrIp*): Self = StObject.set(x, "CidrIps", js.Array(value*))
     
     inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
   }

@@ -10,10 +10,10 @@ The lodash method `_.join` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.join |
 | Keywords           | lodash-modularized, join |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 122940 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6755.0 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

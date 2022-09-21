@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("thrift", "Thrift.TApplicationException")
 @js.native
-class TApplicationException () extends TException {
+open class TApplicationException () extends TException {
   def this(`type`: TApplicationExceptionType) = this()
   def this(`type`: Unit, message: String) = this()
   def this(`type`: TApplicationExceptionType, message: String) = this()

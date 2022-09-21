@@ -4,30 +4,19 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.3", "dfareporting_v3_3.Resource$Remarketinglists")
 @js.native
-class ResourceRemarketinglists protected () extends StObject {
+open class ResourceRemarketinglists protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native
   
-  /**
-    * dfareporting.remarketingLists.get
-    * @desc Gets one remarketing list by ID.
-    * @alias dfareporting.remarketingLists.get
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.id Remarketing list ID.
-    * @param {string} params.profileId User profile ID associated with this request.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def get(): GaxiosPromise[SchemaRemarketingList] = js.native
   def get(callback: BodyResponseCallback[SchemaRemarketingList]): Unit = js.native
   def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRemarketingList] = js.native
@@ -35,8 +24,8 @@ class ResourceRemarketinglists protected () extends StObject {
   def get(params: ParamsResourceRemarketinglistsGet, callback: BodyResponseCallback[SchemaRemarketingList]): Unit = js.native
   def get(
     params: ParamsResourceRemarketinglistsGet,
-    options: BodyResponseCallback[SchemaRemarketingList],
-    callback: BodyResponseCallback[SchemaRemarketingList]
+    options: BodyResponseCallback[Readable | SchemaRemarketingList],
+    callback: BodyResponseCallback[Readable | SchemaRemarketingList]
   ): Unit = js.native
   def get(params: ParamsResourceRemarketinglistsGet, options: MethodOptions): GaxiosPromise[SchemaRemarketingList] = js.native
   def get(
@@ -44,20 +33,77 @@ class ResourceRemarketinglists protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRemarketingList]
   ): Unit = js.native
-  
   /**
-    * dfareporting.remarketingLists.insert
-    * @desc Inserts a new remarketing list.
-    * @alias dfareporting.remarketingLists.insert
-    * @memberOf! ()
+    * Gets one remarketing list by ID.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/dfareporting.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.profileId User profile ID associated with this request.
-    * @param {().RemarketingList} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const dfareporting = google.dfareporting('v3.3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/dfatrafficking'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await dfareporting.remarketingLists.get({
+    *     // Remarketing list ID.
+    *     id: 'placeholder-value',
+    *     // User profile ID associated with this request.
+    *     profileId: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "accountId": "my_accountId",
+    *   //   "active": false,
+    *   //   "advertiserId": "my_advertiserId",
+    *   //   "advertiserIdDimensionValue": {},
+    *   //   "description": "my_description",
+    *   //   "id": "my_id",
+    *   //   "kind": "my_kind",
+    *   //   "lifeSpan": "my_lifeSpan",
+    *   //   "listPopulationRule": {},
+    *   //   "listSize": "my_listSize",
+    *   //   "listSource": "my_listSource",
+    *   //   "name": "my_name",
+    *   //   "subaccountId": "my_subaccountId"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def get(params: ParamsResourceRemarketinglistsGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def get(
+    params: ParamsResourceRemarketinglistsGet,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def insert(): GaxiosPromise[SchemaRemarketingList] = js.native
   def insert(callback: BodyResponseCallback[SchemaRemarketingList]): Unit = js.native
   def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRemarketingList] = js.native
@@ -68,8 +114,8 @@ class ResourceRemarketinglists protected () extends StObject {
   ): Unit = js.native
   def insert(
     params: ParamsResourceRemarketinglistsInsert,
-    options: BodyResponseCallback[SchemaRemarketingList],
-    callback: BodyResponseCallback[SchemaRemarketingList]
+    options: BodyResponseCallback[Readable | SchemaRemarketingList],
+    callback: BodyResponseCallback[Readable | SchemaRemarketingList]
   ): Unit = js.native
   def insert(params: ParamsResourceRemarketinglistsInsert, options: MethodOptions): GaxiosPromise[SchemaRemarketingList] = js.native
   def insert(
@@ -77,28 +123,95 @@ class ResourceRemarketinglists protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRemarketingList]
   ): Unit = js.native
-  
   /**
-    * dfareporting.remarketingLists.list
-    * @desc Retrieves a list of remarketing lists, possibly filtered. This
-    * method supports paging.
-    * @alias dfareporting.remarketingLists.list
-    * @memberOf! ()
+    * Inserts a new remarketing list.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/dfareporting.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {boolean=} params.active Select only active or only inactive remarketing lists.
-    * @param {string} params.advertiserId Select only remarketing lists owned by this advertiser.
-    * @param {string=} params.floodlightActivityId Select only remarketing lists that have this floodlight activity ID.
-    * @param {integer=} params.maxResults Maximum number of results to return.
-    * @param {string=} params.name Allows searching for objects by name or ID. Wildcards (*) are allowed. For example, "remarketing list*2015" will return objects with names like "remarketing list June 2015", "remarketing list April 2015", or simply "remarketing list 2015". Most of the searches also add wildcards implicitly at the start and the end of the search string. For example, a search string of "remarketing list" will match objects with name "my remarketing list", "remarketing list 2015", or simply "remarketing list".
-    * @param {string=} params.pageToken Value of the nextPageToken from the previous result page.
-    * @param {string} params.profileId User profile ID associated with this request.
-    * @param {string=} params.sortField Field by which to sort the list.
-    * @param {string=} params.sortOrder Order of sorted results.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const dfareporting = google.dfareporting('v3.3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/dfatrafficking'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await dfareporting.remarketingLists.insert({
+    *     // User profile ID associated with this request.
+    *     profileId: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "accountId": "my_accountId",
+    *       //   "active": false,
+    *       //   "advertiserId": "my_advertiserId",
+    *       //   "advertiserIdDimensionValue": {},
+    *       //   "description": "my_description",
+    *       //   "id": "my_id",
+    *       //   "kind": "my_kind",
+    *       //   "lifeSpan": "my_lifeSpan",
+    *       //   "listPopulationRule": {},
+    *       //   "listSize": "my_listSize",
+    *       //   "listSource": "my_listSource",
+    *       //   "name": "my_name",
+    *       //   "subaccountId": "my_subaccountId"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "accountId": "my_accountId",
+    *   //   "active": false,
+    *   //   "advertiserId": "my_advertiserId",
+    *   //   "advertiserIdDimensionValue": {},
+    *   //   "description": "my_description",
+    *   //   "id": "my_id",
+    *   //   "kind": "my_kind",
+    *   //   "lifeSpan": "my_lifeSpan",
+    *   //   "listPopulationRule": {},
+    *   //   "listSize": "my_listSize",
+    *   //   "listSource": "my_listSource",
+    *   //   "name": "my_name",
+    *   //   "subaccountId": "my_subaccountId"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def insert(params: ParamsResourceRemarketinglistsInsert, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def insert(
+    params: ParamsResourceRemarketinglistsInsert,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def list(): GaxiosPromise[SchemaRemarketingListsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaRemarketingListsListResponse]): Unit = js.native
   def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRemarketingListsListResponse] = js.native
@@ -109,8 +222,8 @@ class ResourceRemarketinglists protected () extends StObject {
   ): Unit = js.native
   def list(
     params: ParamsResourceRemarketinglistsList,
-    options: BodyResponseCallback[SchemaRemarketingListsListResponse],
-    callback: BodyResponseCallback[SchemaRemarketingListsListResponse]
+    options: BodyResponseCallback[Readable | SchemaRemarketingListsListResponse],
+    callback: BodyResponseCallback[Readable | SchemaRemarketingListsListResponse]
   ): Unit = js.native
   def list(params: ParamsResourceRemarketinglistsList, options: MethodOptions): GaxiosPromise[SchemaRemarketingListsListResponse] = js.native
   def list(
@@ -118,22 +231,81 @@ class ResourceRemarketinglists protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRemarketingListsListResponse]
   ): Unit = js.native
-  
   /**
-    * dfareporting.remarketingLists.patch
-    * @desc Updates an existing remarketing list. This method supports patch
-    * semantics.
-    * @alias dfareporting.remarketingLists.patch
-    * @memberOf! ()
+    * Retrieves a list of remarketing lists, possibly filtered. This method supports paging.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/dfareporting.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.id Remarketing list ID.
-    * @param {string} params.profileId User profile ID associated with this request.
-    * @param {().RemarketingList} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const dfareporting = google.dfareporting('v3.3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/dfatrafficking'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await dfareporting.remarketingLists.list({
+    *     // Select only active or only inactive remarketing lists.
+    *     active: 'placeholder-value',
+    *     // Select only remarketing lists owned by this advertiser.
+    *     advertiserId: 'placeholder-value',
+    *     // Select only remarketing lists that have this floodlight activity ID.
+    *     floodlightActivityId: 'placeholder-value',
+    *     // Maximum number of results to return.
+    *     maxResults: 'placeholder-value',
+    *     // Allows searching for objects by name or ID. Wildcards (*) are allowed. For example, "remarketing list*2015" will return objects with names like "remarketing list June 2015", "remarketing list April 2015", or simply "remarketing list 2015". Most of the searches also add wildcards implicitly at the start and the end of the search string. For example, a search string of "remarketing list" will match objects with name "my remarketing list", "remarketing list 2015", or simply "remarketing list".
+    *     name: 'placeholder-value',
+    *     // Value of the nextPageToken from the previous result page.
+    *     pageToken: 'placeholder-value',
+    *     // User profile ID associated with this request.
+    *     profileId: 'placeholder-value',
+    *     // Field by which to sort the list.
+    *     sortField: 'placeholder-value',
+    *     // Order of sorted results.
+    *     sortOrder: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "kind": "my_kind",
+    *   //   "nextPageToken": "my_nextPageToken",
+    *   //   "remarketingLists": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def list(params: ParamsResourceRemarketinglistsList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def list(
+    params: ParamsResourceRemarketinglistsList,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def patch(): GaxiosPromise[SchemaRemarketingList] = js.native
   def patch(callback: BodyResponseCallback[SchemaRemarketingList]): Unit = js.native
   def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRemarketingList] = js.native
@@ -141,8 +313,8 @@ class ResourceRemarketinglists protected () extends StObject {
   def patch(params: ParamsResourceRemarketinglistsPatch, callback: BodyResponseCallback[SchemaRemarketingList]): Unit = js.native
   def patch(
     params: ParamsResourceRemarketinglistsPatch,
-    options: BodyResponseCallback[SchemaRemarketingList],
-    callback: BodyResponseCallback[SchemaRemarketingList]
+    options: BodyResponseCallback[Readable | SchemaRemarketingList],
+    callback: BodyResponseCallback[Readable | SchemaRemarketingList]
   ): Unit = js.native
   def patch(params: ParamsResourceRemarketinglistsPatch, options: MethodOptions): GaxiosPromise[SchemaRemarketingList] = js.native
   def patch(
@@ -150,20 +322,97 @@ class ResourceRemarketinglists protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRemarketingList]
   ): Unit = js.native
-  
   /**
-    * dfareporting.remarketingLists.update
-    * @desc Updates an existing remarketing list.
-    * @alias dfareporting.remarketingLists.update
-    * @memberOf! ()
+    * Updates an existing remarketing list. This method supports patch semantics.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/dfareporting.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.profileId User profile ID associated with this request.
-    * @param {().RemarketingList} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const dfareporting = google.dfareporting('v3.3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/dfatrafficking'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await dfareporting.remarketingLists.patch({
+    *     // RemarketingList ID.
+    *     id: 'placeholder-value',
+    *     // User profile ID associated with this request.
+    *     profileId: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "accountId": "my_accountId",
+    *       //   "active": false,
+    *       //   "advertiserId": "my_advertiserId",
+    *       //   "advertiserIdDimensionValue": {},
+    *       //   "description": "my_description",
+    *       //   "id": "my_id",
+    *       //   "kind": "my_kind",
+    *       //   "lifeSpan": "my_lifeSpan",
+    *       //   "listPopulationRule": {},
+    *       //   "listSize": "my_listSize",
+    *       //   "listSource": "my_listSource",
+    *       //   "name": "my_name",
+    *       //   "subaccountId": "my_subaccountId"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "accountId": "my_accountId",
+    *   //   "active": false,
+    *   //   "advertiserId": "my_advertiserId",
+    *   //   "advertiserIdDimensionValue": {},
+    *   //   "description": "my_description",
+    *   //   "id": "my_id",
+    *   //   "kind": "my_kind",
+    *   //   "lifeSpan": "my_lifeSpan",
+    *   //   "listPopulationRule": {},
+    *   //   "listSize": "my_listSize",
+    *   //   "listSource": "my_listSource",
+    *   //   "name": "my_name",
+    *   //   "subaccountId": "my_subaccountId"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def patch(params: ParamsResourceRemarketinglistsPatch, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def patch(
+    params: ParamsResourceRemarketinglistsPatch,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def update(): GaxiosPromise[SchemaRemarketingList] = js.native
   def update(callback: BodyResponseCallback[SchemaRemarketingList]): Unit = js.native
   def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRemarketingList] = js.native
@@ -174,13 +423,101 @@ class ResourceRemarketinglists protected () extends StObject {
   ): Unit = js.native
   def update(
     params: ParamsResourceRemarketinglistsUpdate,
-    options: BodyResponseCallback[SchemaRemarketingList],
-    callback: BodyResponseCallback[SchemaRemarketingList]
+    options: BodyResponseCallback[Readable | SchemaRemarketingList],
+    callback: BodyResponseCallback[Readable | SchemaRemarketingList]
   ): Unit = js.native
   def update(params: ParamsResourceRemarketinglistsUpdate, options: MethodOptions): GaxiosPromise[SchemaRemarketingList] = js.native
   def update(
     params: ParamsResourceRemarketinglistsUpdate,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRemarketingList]
+  ): Unit = js.native
+  /**
+    * Updates an existing remarketing list.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/dfareporting.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const dfareporting = google.dfareporting('v3.3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/dfatrafficking'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await dfareporting.remarketingLists.update({
+    *     // User profile ID associated with this request.
+    *     profileId: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "accountId": "my_accountId",
+    *       //   "active": false,
+    *       //   "advertiserId": "my_advertiserId",
+    *       //   "advertiserIdDimensionValue": {},
+    *       //   "description": "my_description",
+    *       //   "id": "my_id",
+    *       //   "kind": "my_kind",
+    *       //   "lifeSpan": "my_lifeSpan",
+    *       //   "listPopulationRule": {},
+    *       //   "listSize": "my_listSize",
+    *       //   "listSource": "my_listSource",
+    *       //   "name": "my_name",
+    *       //   "subaccountId": "my_subaccountId"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "accountId": "my_accountId",
+    *   //   "active": false,
+    *   //   "advertiserId": "my_advertiserId",
+    *   //   "advertiserIdDimensionValue": {},
+    *   //   "description": "my_description",
+    *   //   "id": "my_id",
+    *   //   "kind": "my_kind",
+    *   //   "lifeSpan": "my_lifeSpan",
+    *   //   "listPopulationRule": {},
+    *   //   "listSize": "my_listSize",
+    *   //   "listSource": "my_listSource",
+    *   //   "name": "my_name",
+    *   //   "subaccountId": "my_subaccountId"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def update(params: ParamsResourceRemarketinglistsUpdate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def update(
+    params: ParamsResourceRemarketinglistsUpdate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
 }

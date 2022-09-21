@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "v8-to-istanbul" : "7.0.0"
+      "v8-to-istanbul" : "9.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "v8-to-istanbul" : "7.0.0"
+      "v8-to-istanbul" : "9.0.1"
     }
   ],
   "compile-devDependencies" : [

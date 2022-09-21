@@ -6,9 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON._OcclusionDataStorage")
 @js.native
-class OcclusionDataStorage ()
+open class OcclusionDataStorage ()
   extends StObject
      with typings.babylonjs.BABYLON.OcclusionDataStorage {
+  
+  /** @hidden */
+  /* CompleteClass */
+  var forceRenderingWhenOccluded: Boolean = js.native
   
   /** @hidden */
   /* CompleteClass */

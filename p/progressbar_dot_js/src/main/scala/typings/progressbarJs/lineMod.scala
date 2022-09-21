@@ -8,7 +8,7 @@ object lineMod {
   
   @JSImport("progressbar.js/line", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends typings.progressbarJs.shapeMod.^
   
   type Line = typings.progressbarJs.shapeMod.^

@@ -1,15 +1,19 @@
 package typings.axiosCaseConverter
 
-import typings.axios.mod.AxiosInstance
+import org.scalablytyped.runtime.Shortcut
+import typings.axiosCaseConverter.typesMod.ApplyCaseMiddleware
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod {
+object mod extends Shortcut {
   
-  @JSImport("axios-case-converter", JSImport.Namespace)
+  @JSImport("axios-case-converter", JSImport.Default)
   @js.native
-  val ^ : js.Any = js.native
+  val default: ApplyCaseMiddleware = js.native
   
-  inline def default(axios: AxiosInstance): AxiosInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(axios.asInstanceOf[js.Any]).asInstanceOf[AxiosInstance]
+  type _To = ApplyCaseMiddleware
+  
+  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
+  override def _to: ApplyCaseMiddleware = default
 }

@@ -1,6 +1,5 @@
 package typings.meyda
 
-import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,18 +23,18 @@ object anon {
       
       inline def setImag(value: js.Array[Double]): Self = StObject.set(x, "imag", value.asInstanceOf[js.Any])
       
-      inline def setImagVarargs(value: Double*): Self = StObject.set(x, "imag", js.Array(value :_*))
+      inline def setImagVarargs(value: Double*): Self = StObject.set(x, "imag", js.Array(value*))
       
       inline def setReal(value: js.Array[Double]): Self = StObject.set(x, "real", value.asInstanceOf[js.Any])
       
-      inline def setRealVarargs(value: Double*): Self = StObject.set(x, "real", js.Array(value :_*))
+      inline def setRealVarargs(value: Double*): Self = StObject.set(x, "real", js.Array(value*))
     }
   }
   
   /* Inlined std.Partial<meyda.meyda.MeydaFeaturesObject> */
   trait PartialMeydaFeaturesObjec extends StObject {
     
-    var amplitudeSpectrum: js.UndefOr[Float32Array] = js.undefined
+    var amplitudeSpectrum: js.UndefOr[js.typedarray.Float32Array] = js.undefined
     
     var buffer: js.UndefOr[js.Array[Double]] = js.undefined
     
@@ -53,7 +52,7 @@ object anon {
     
     var perceptualSpread: js.UndefOr[Double] = js.undefined
     
-    var powerSpectrum: js.UndefOr[Float32Array] = js.undefined
+    var powerSpectrum: js.UndefOr[js.typedarray.Float32Array] = js.undefined
     
     var rms: js.UndefOr[Double] = js.undefined
     
@@ -82,7 +81,7 @@ object anon {
     
     extension [Self <: PartialMeydaFeaturesObjec](x: Self) {
       
-      inline def setAmplitudeSpectrum(value: Float32Array): Self = StObject.set(x, "amplitudeSpectrum", value.asInstanceOf[js.Any])
+      inline def setAmplitudeSpectrum(value: js.typedarray.Float32Array): Self = StObject.set(x, "amplitudeSpectrum", value.asInstanceOf[js.Any])
       
       inline def setAmplitudeSpectrumUndefined: Self = StObject.set(x, "amplitudeSpectrum", js.undefined)
       
@@ -90,13 +89,13 @@ object anon {
       
       inline def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
       
-      inline def setBufferVarargs(value: Double*): Self = StObject.set(x, "buffer", js.Array(value :_*))
+      inline def setBufferVarargs(value: Double*): Self = StObject.set(x, "buffer", js.Array(value*))
       
       inline def setChroma(value: js.Array[Double]): Self = StObject.set(x, "chroma", value.asInstanceOf[js.Any])
       
       inline def setChromaUndefined: Self = StObject.set(x, "chroma", js.undefined)
       
-      inline def setChromaVarargs(value: Double*): Self = StObject.set(x, "chroma", js.Array(value :_*))
+      inline def setChromaVarargs(value: Double*): Self = StObject.set(x, "chroma", js.Array(value*))
       
       inline def setComplexSpectrum(value: Imag): Self = StObject.set(x, "complexSpectrum", value.asInstanceOf[js.Any])
       
@@ -114,7 +113,7 @@ object anon {
       
       inline def setMfccUndefined: Self = StObject.set(x, "mfcc", js.undefined)
       
-      inline def setMfccVarargs(value: Double*): Self = StObject.set(x, "mfcc", js.Array(value :_*))
+      inline def setMfccVarargs(value: Double*): Self = StObject.set(x, "mfcc", js.Array(value*))
       
       inline def setPerceptualSharpness(value: Double): Self = StObject.set(x, "perceptualSharpness", value.asInstanceOf[js.Any])
       
@@ -124,7 +123,7 @@ object anon {
       
       inline def setPerceptualSpreadUndefined: Self = StObject.set(x, "perceptualSpread", js.undefined)
       
-      inline def setPowerSpectrum(value: Float32Array): Self = StObject.set(x, "powerSpectrum", value.asInstanceOf[js.Any])
+      inline def setPowerSpectrum(value: js.typedarray.Float32Array): Self = StObject.set(x, "powerSpectrum", value.asInstanceOf[js.Any])
       
       inline def setPowerSpectrumUndefined: Self = StObject.set(x, "powerSpectrum", js.undefined)
       
@@ -168,20 +167,20 @@ object anon {
   
   trait Specific extends StObject {
     
-    var specific: Float32Array
+    var specific: js.typedarray.Float32Array
     
     var total: Double
   }
   object Specific {
     
-    inline def apply(specific: Float32Array, total: Double): Specific = {
+    inline def apply(specific: js.typedarray.Float32Array, total: Double): Specific = {
       val __obj = js.Dynamic.literal(specific = specific.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
       __obj.asInstanceOf[Specific]
     }
     
     extension [Self <: Specific](x: Self) {
       
-      inline def setSpecific(value: Float32Array): Self = StObject.set(x, "specific", value.asInstanceOf[js.Any])
+      inline def setSpecific(value: js.typedarray.Float32Array): Self = StObject.set(x, "specific", value.asInstanceOf[js.Any])
       
       inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     }

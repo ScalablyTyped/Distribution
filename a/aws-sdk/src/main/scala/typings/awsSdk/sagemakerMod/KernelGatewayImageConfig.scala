@@ -31,6 +31,6 @@ object KernelGatewayImageConfig {
     
     inline def setKernelSpecs(value: KernelSpecs): Self = StObject.set(x, "KernelSpecs", value.asInstanceOf[js.Any])
     
-    inline def setKernelSpecsVarargs(value: KernelSpec*): Self = StObject.set(x, "KernelSpecs", js.Array(value :_*))
+    inline def setKernelSpecsVarargs(value: KernelSpec*): Self = StObject.set(x, "KernelSpecs", js.Array(value*))
   }
 }

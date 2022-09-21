@@ -9,9 +9,8 @@ object resultDemoBasicMod {
   
   @JSImport("@ant-design/react-native/lib/result/demo/basic", JSImport.Default)
   @js.native
-  class default () extends ResultExample
+  open class default () extends ResultExample
   
   @js.native
-  trait ResultExample
-    extends Component[js.Any, js.Any, js.Any]
+  trait ResultExample extends Component[Any, Any, Any]
 }

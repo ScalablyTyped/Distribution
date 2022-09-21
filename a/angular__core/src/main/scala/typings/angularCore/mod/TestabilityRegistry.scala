@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/core", "TestabilityRegistry")
 @js.native
-class TestabilityRegistry () extends StObject {
+open class TestabilityRegistry () extends StObject {
   
   /**
     * Find testability of a node in the Tree
@@ -21,7 +21,7 @@ class TestabilityRegistry () extends StObject {
   /**
     * Get all registered applications(root elements)
     */
-  def getAllRootElements(): js.Array[js.Any] = js.native
+  def getAllRootElements(): js.Array[Any] = js.native
   
   /**
     * Get all registered testabilities
@@ -32,14 +32,14 @@ class TestabilityRegistry () extends StObject {
     * Get a testability hook associated with the application
     * @param elem root element
     */
-  def getTestability(elem: js.Any): Testability | Null = js.native
+  def getTestability(elem: Any): Testability | Null = js.native
   
   /**
     * Registers an application with a testability hook so that it can be tracked
     * @param token token of application, root element
     * @param testability Testability hook
     */
-  def registerApplication(token: js.Any, testability: Testability): Unit = js.native
+  def registerApplication(token: Any, testability: Testability): Unit = js.native
   
   /**
     * Unregisters all applications
@@ -50,5 +50,22 @@ class TestabilityRegistry () extends StObject {
     * Unregisters an application.
     * @param token token of application, root element
     */
-  def unregisterApplication(token: js.Any): Unit = js.native
+  def unregisterApplication(token: Any): Unit = js.native
+}
+/* static members */
+object TestabilityRegistry {
+  
+  @JSImport("@angular/core", "TestabilityRegistry")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@angular/core", "TestabilityRegistry.\u0275fac")
+  @js.native
+  def ɵfac: ɵɵFactoryDeclaration[TestabilityRegistry, scala.Nothing] = js.native
+  inline def ɵfac_=(x: ɵɵFactoryDeclaration[TestabilityRegistry, scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@angular/core", "TestabilityRegistry.\u0275prov")
+  @js.native
+  def ɵprov: ɵɵInjectableDeclaration[TestabilityRegistry] = js.native
+  inline def ɵprov_=(x: ɵɵInjectableDeclaration[TestabilityRegistry]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275prov")(x.asInstanceOf[js.Any])
 }

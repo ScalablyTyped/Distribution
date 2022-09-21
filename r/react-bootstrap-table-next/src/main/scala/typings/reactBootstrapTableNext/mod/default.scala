@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap-table-next", JSImport.Default)
 @js.native
-class default[T /* <: js.Object */, K] ()
-  extends Component[BootstrapTableProps[T, K], js.Object, js.Any]
+open class default[T /* <: js.Object */, K] ()
+  extends Component[BootstrapTableProps[T, K], js.Object, Any]

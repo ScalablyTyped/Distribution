@@ -13,7 +13,7 @@ object flexItemNativeMod {
   
   @JSImport("antd-mobile-rn/lib/flex/FlexItem.native", JSImport.Default)
   @js.native
-  class default () extends FlexItem
+  open class default () extends FlexItem
   /* static members */
   object default {
     
@@ -28,8 +28,7 @@ object flexItemNativeMod {
   }
   
   @js.native
-  trait FlexItem
-    extends Component[FlexItemProps, js.Any, js.Any]
+  trait FlexItem extends Component[FlexItemProps, Any, Any]
   
   trait FlexItemProps
     extends StObject

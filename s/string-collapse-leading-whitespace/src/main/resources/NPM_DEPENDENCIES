@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "string-collapse-leading-whitespace" : "6.1.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "string-collapse-leading-whitespace" : "6.1.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

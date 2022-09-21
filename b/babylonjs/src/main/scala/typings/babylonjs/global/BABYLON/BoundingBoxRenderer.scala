@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.BoundingBoxRenderer")
 @js.native
-class BoundingBoxRenderer protected ()
+open class BoundingBoxRenderer protected ()
   extends StObject
      with typings.babylonjs.BABYLON.BoundingBoxRenderer {
   /**
@@ -16,31 +16,49 @@ class BoundingBoxRenderer protected ()
   def this(scene: typings.babylonjs.BABYLON.Scene) = this()
   
   /* private */ /* CompleteClass */
-  var _colorShader: js.Any = js.native
+  var _buildUniformLayout: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _createIndexBuffer: js.Any = js.native
+  var _colorShader: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _evaluateSubMesh: js.Any = js.native
+  var _colorShaderForOcclusionQuery: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _fillIndexBuffer: js.Any = js.native
+  var _createIndexBuffer: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _fillIndexData: js.Any = js.native
+  var _createWrappersForBoundingBox: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _indexBuffer: js.Any = js.native
+  var _evaluateSubMesh: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _preActiveMesh: js.Any = js.native
+  var _fillIndexBuffer: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _prepareResources: js.Any = js.native
+  var _fillIndexData: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _vertexBuffers: js.Any = js.native
+  var _indexBuffer: Any = js.native
+  
+  /* private */ /* CompleteClass */
+  var _preActiveMesh: Any = js.native
+  
+  /* private */ /* CompleteClass */
+  var _prepareResources: Any = js.native
+  
+  /* private */ /* CompleteClass */
+  var _renderPassIdForOcclusionQuery: Any = js.native
+  
+  /* private */ /* CompleteClass */
+  var _uniformBufferBack: Any = js.native
+  
+  /* private */ /* CompleteClass */
+  var _uniformBufferFront: Any = js.native
+  
+  /* private */ /* CompleteClass */
+  var _vertexBuffers: Any = js.native
   
   /**
     * Color of the bounding box lines placed behind an object

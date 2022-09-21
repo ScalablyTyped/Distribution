@@ -10,10 +10,10 @@ The lodash method `_.toLength` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.tolength |
 | Keywords           | lodash-modularized, tolength |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 1393 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 92.0 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

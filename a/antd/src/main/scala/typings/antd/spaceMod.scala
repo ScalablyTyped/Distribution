@@ -1,6 +1,7 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
+import typings.antd.anon.HorizontalSize
 import typings.antd.antdStrings.baseline
 import typings.antd.antdStrings.center
 import typings.antd.antdStrings.end
@@ -8,10 +9,11 @@ import typings.antd.antdStrings.horizontal
 import typings.antd.antdStrings.start
 import typings.antd.antdStrings.vertical
 import typings.antd.configProviderSizeContextMod.SizeType
-import typings.react.mod.CSSProperties
 import typings.react.mod.Context
 import typings.react.mod.FC
+import typings.react.mod.HTMLAttributes
 import typings.react.mod.ReactNode
+import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,25 +24,25 @@ object spaceMod extends Shortcut {
   @js.native
   val default: FC[SpaceProps] = js.native
   
-  @JSImport("antd/lib/space", "LastIndexContext")
+  @JSImport("antd/lib/space", "SpaceContext")
   @js.native
-  val LastIndexContext: Context[Double] = js.native
+  val SpaceContext: Context[HorizontalSize] = js.native
   
-  trait SpaceProps extends StObject {
+  trait SpaceProps
+    extends StObject
+       with HTMLAttributes[HTMLDivElement] {
     
     var align: js.UndefOr[start | end | center | baseline] = js.undefined
-    
-    var className: js.UndefOr[String] = js.undefined
     
     var direction: js.UndefOr[horizontal | vertical] = js.undefined
     
     var prefixCls: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[SizeType | Double] = js.undefined
+    var size: js.UndefOr[SpaceSize | (js.Tuple2[SpaceSize, SpaceSize])] = js.undefined
     
     var split: js.UndefOr[ReactNode] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.undefined
+    var wrap: js.UndefOr[Boolean] = js.undefined
   }
   object SpaceProps {
     
@@ -55,10 +57,6 @@ object spaceMod extends Shortcut {
       
       inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
-      
-      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
-      
       inline def setDirection(value: horizontal | vertical): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
@@ -67,7 +65,7 @@ object spaceMod extends Shortcut {
       
       inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      inline def setSize(value: SizeType | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: SpaceSize | (js.Tuple2[SpaceSize, SpaceSize])): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
@@ -75,11 +73,13 @@ object spaceMod extends Shortcut {
       
       inline def setSplitUndefined: Self = StObject.set(x, "split", js.undefined)
       
-      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setWrap(value: Boolean): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
       
-      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
     }
   }
+  
+  type SpaceSize = SizeType | Double
   
   type _To = FC[SpaceProps]
   

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "style-to-js" : "1.1.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "style-to-js" : "1.1.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

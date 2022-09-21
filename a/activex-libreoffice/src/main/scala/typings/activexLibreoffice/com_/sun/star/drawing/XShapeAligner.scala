@@ -22,7 +22,7 @@ object XShapeAligner {
   inline def apply(
     acquire: () => Unit,
     alignShapes: (js.Array[XShapes], Alignment) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XShapeAligner = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), alignShapes = js.Any.fromFunction2(alignShapes), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

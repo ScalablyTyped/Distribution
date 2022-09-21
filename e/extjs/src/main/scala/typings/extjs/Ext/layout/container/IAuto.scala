@@ -13,7 +13,7 @@ trait IAuto
     * @param ownerContext Object
     */
   @JSName("beginLayoutCycle")
-  var beginLayoutCycle_IAuto: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var beginLayoutCycle_IAuto: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Handles overflow processing for a container
     * @param ownerContext Ext.layout.ContextItem
@@ -24,19 +24,19 @@ trait IAuto
     * @param ownerContext Object
     */
   @JSName("calculate")
-  var calculate_IAuto: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var calculate_IAuto: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] This method if implemented is called at the end of the cycle in which this layout completes by not setting done to
     * @param ownerContext Object
     */
   @JSName("completeLayout")
-  var completeLayout_IAuto: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var completeLayout_IAuto: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] This method is called after all layouts are complete and their calculations flushed to the DOM
     * @param ownerContext Object
     */
   @JSName("finishedLayout")
-  var finishedLayout_IAuto: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var finishedLayout_IAuto: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Returns the overflow x style of the render target
     * @param ownerContext Ext.layout.ContextItem
@@ -66,7 +66,7 @@ trait IAuto
   var setCtSizeIfNeeded: js.UndefOr[
     js.Function2[
       /* ownerContext */ js.UndefOr[IContextItem], 
-      /* containerSize */ js.UndefOr[js.Any], 
+      /* containerSize */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -80,11 +80,11 @@ object IAuto {
   
   extension [Self <: IAuto](x: Self) {
     
-    inline def setBeginLayoutCycle(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beginLayoutCycle", js.Any.fromFunction1(value))
+    inline def setBeginLayoutCycle(value: /* ownerContext */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "beginLayoutCycle", js.Any.fromFunction1(value))
     
     inline def setBeginLayoutCycleUndefined: Self = StObject.set(x, "beginLayoutCycle", js.undefined)
     
-    inline def setCalculate(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "calculate", js.Any.fromFunction1(value))
+    inline def setCalculate(value: /* ownerContext */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "calculate", js.Any.fromFunction1(value))
     
     inline def setCalculateOverflow(value: /* ownerContext */ js.UndefOr[IContextItem] => Unit): Self = StObject.set(x, "calculateOverflow", js.Any.fromFunction1(value))
     
@@ -92,11 +92,11 @@ object IAuto {
     
     inline def setCalculateUndefined: Self = StObject.set(x, "calculate", js.undefined)
     
-    inline def setCompleteLayout(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "completeLayout", js.Any.fromFunction1(value))
+    inline def setCompleteLayout(value: /* ownerContext */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "completeLayout", js.Any.fromFunction1(value))
     
     inline def setCompleteLayoutUndefined: Self = StObject.set(x, "completeLayout", js.undefined)
     
-    inline def setFinishedLayout(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "finishedLayout", js.Any.fromFunction1(value))
+    inline def setFinishedLayout(value: /* ownerContext */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "finishedLayout", js.Any.fromFunction1(value))
     
     inline def setFinishedLayoutUndefined: Self = StObject.set(x, "finishedLayout", js.undefined)
     
@@ -120,9 +120,7 @@ object IAuto {
     
     inline def setReserveScrollbarUndefined: Self = StObject.set(x, "reserveScrollbar", js.undefined)
     
-    inline def setSetCtSizeIfNeeded(
-      value: (/* ownerContext */ js.UndefOr[IContextItem], /* containerSize */ js.UndefOr[js.Any]) => Unit
-    ): Self = StObject.set(x, "setCtSizeIfNeeded", js.Any.fromFunction2(value))
+    inline def setSetCtSizeIfNeeded(value: (/* ownerContext */ js.UndefOr[IContextItem], /* containerSize */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "setCtSizeIfNeeded", js.Any.fromFunction2(value))
     
     inline def setSetCtSizeIfNeededUndefined: Self = StObject.set(x, "setCtSizeIfNeeded", js.undefined)
   }

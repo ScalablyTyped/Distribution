@@ -33,6 +33,6 @@ object BatchUpdatePartitionFailureEntry {
     
     inline def setPartitionValueListUndefined: Self = StObject.set(x, "PartitionValueList", js.undefined)
     
-    inline def setPartitionValueListVarargs(value: ValueString*): Self = StObject.set(x, "PartitionValueList", js.Array(value :_*))
+    inline def setPartitionValueListVarargs(value: ValueString*): Self = StObject.set(x, "PartitionValueList", js.Array(value*))
   }
 }

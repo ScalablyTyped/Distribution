@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TextFrame extends StObject {
   
-  val Application: js.Any
+  val Application: Any
   
   val Creator: Double
   
@@ -23,12 +23,12 @@ trait TextFrame extends StObject {
   
   var Orientation: MsoTextOrientation
   
-  val Parent: js.Any
+  val Parent: Any
 }
 object TextFrame {
   
   inline def apply(
-    Application: js.Any,
+    Application: Any,
     Creator: Double,
     MarginBottom: Double,
     MarginLeft: Double,
@@ -36,7 +36,7 @@ object TextFrame {
     MarginTop: Double,
     OfficeDotTextFrame_typekey: TextFrame,
     Orientation: MsoTextOrientation,
-    Parent: js.Any
+    Parent: Any
   ): TextFrame = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], MarginBottom = MarginBottom.asInstanceOf[js.Any], MarginLeft = MarginLeft.asInstanceOf[js.Any], MarginRight = MarginRight.asInstanceOf[js.Any], MarginTop = MarginTop.asInstanceOf[js.Any], Orientation = Orientation.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any])
     __obj.updateDynamic("Office.TextFrame_typekey")(OfficeDotTextFrame_typekey.asInstanceOf[js.Any])
@@ -45,7 +45,7 @@ object TextFrame {
   
   extension [Self <: TextFrame](x: Self) {
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
@@ -61,6 +61,6 @@ object TextFrame {
     
     inline def setOrientation(value: MsoTextOrientation): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
   }
 }

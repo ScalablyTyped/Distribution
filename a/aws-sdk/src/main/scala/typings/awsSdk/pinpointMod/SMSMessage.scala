@@ -12,6 +12,11 @@ trait SMSMessage extends StObject {
   var Body: js.UndefOr[string] = js.undefined
   
   /**
+    * The entity ID or Principal Entity (PE) id received from the regulatory body for sending SMS in your country.
+    */
+  var EntityId: js.UndefOr[string] = js.undefined
+  
+  /**
     * The SMS program name that you provided to AWS Support when you requested your dedicated number.
     */
   var Keyword: js.UndefOr[string] = js.undefined
@@ -40,6 +45,11 @@ trait SMSMessage extends StObject {
     * The message variables to use in the SMS message. You can override the default variables with individual address variables.
     */
   var Substitutions: js.UndefOr[MapOfListOfString] = js.undefined
+  
+  /**
+    * The template ID received from the regulatory body for sending SMS in your country.
+    */
+  var TemplateId: js.UndefOr[string] = js.undefined
 }
 object SMSMessage {
   
@@ -53,6 +63,10 @@ object SMSMessage {
     inline def setBody(value: string): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
     
     inline def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
+    
+    inline def setEntityId(value: string): Self = StObject.set(x, "EntityId", value.asInstanceOf[js.Any])
+    
+    inline def setEntityIdUndefined: Self = StObject.set(x, "EntityId", js.undefined)
     
     inline def setKeyword(value: string): Self = StObject.set(x, "Keyword", value.asInstanceOf[js.Any])
     
@@ -77,5 +91,9 @@ object SMSMessage {
     inline def setSubstitutions(value: MapOfListOfString): Self = StObject.set(x, "Substitutions", value.asInstanceOf[js.Any])
     
     inline def setSubstitutionsUndefined: Self = StObject.set(x, "Substitutions", js.undefined)
+    
+    inline def setTemplateId(value: string): Self = StObject.set(x, "TemplateId", value.asInstanceOf[js.Any])
+    
+    inline def setTemplateIdUndefined: Self = StObject.set(x, "TemplateId", js.undefined)
   }
 }

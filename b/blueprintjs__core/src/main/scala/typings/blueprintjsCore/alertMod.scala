@@ -5,8 +5,9 @@ import typings.blueprintjsCore.intentMod.Intent
 import typings.blueprintjsCore.overlayMod.IOverlayLifecycleProps
 import typings.blueprintjsCore.propsMod.IProps
 import typings.blueprintjsCore.propsMod.MaybeElement
-import typings.blueprintjsIcons.iconNameMod.IconName
+import typings.blueprintjsIcons.blueprintIcons16Mod.BlueprintIcons16Id
 import typings.react.mod.CSSProperties
+import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
 import typings.std.Event
 import typings.std.HTMLElement
@@ -18,16 +19,16 @@ object alertMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/alert/alert", "Alert")
   @js.native
-  class Alert protected ()
-    extends AbstractPureComponent2[IAlertProps, js.Object, js.Object] {
-    def this(props: IAlertProps) = this()
-    def this(props: IAlertProps, context: js.Any) = this()
+  open class Alert protected ()
+    extends AbstractPureComponent2[AlertProps, js.Object, js.Object] {
+    def this(props: AlertProps) = this()
+    def this(props: AlertProps, context: Any) = this()
     
-    /* private */ var handleCancel: js.Any = js.native
+    /* private */ var handleCancel: Any = js.native
     
-    /* private */ var handleConfirm: js.Any = js.native
+    /* private */ var handleConfirm: Any = js.native
     
-    /* private */ var internalHandleCallbacks: js.Any = js.native
+    /* private */ var internalHandleCallbacks: Any = js.native
   }
   /* static members */
   object Alert {
@@ -38,14 +39,16 @@ object alertMod {
     
     @JSImport("@blueprintjs/core/lib/esm/components/alert/alert", "Alert.defaultProps")
     @js.native
-    def defaultProps: IAlertProps = js.native
-    inline def defaultProps_=(x: IAlertProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    def defaultProps: AlertProps = js.native
+    inline def defaultProps_=(x: AlertProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/alert/alert", "Alert.displayName")
     @js.native
     def displayName: String = js.native
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
+  
+  type AlertProps = IAlertProps
   
   trait IAlertProps
     extends StObject
@@ -55,6 +58,7 @@ object alertMod {
     /**
       * Whether pressing <kbd>escape</kbd> when focused on the Alert should cancel the alert.
       * If this prop is enabled, then either `onCancel` or `onClose` must also be defined.
+      *
       * @default false
       */
     var canEscapeKeyCancel: js.UndefOr[Boolean] = js.undefined
@@ -62,6 +66,7 @@ object alertMod {
     /**
       * Whether clicking outside the Alert should cancel the alert.
       * If this prop is enabled, then either `onCancel` or `onClose` must also be defined.
+      *
       * @default false
       */
     var canOutsideClickCancel: js.UndefOr[Boolean] = js.undefined
@@ -72,15 +77,19 @@ object alertMod {
       */
     var cancelButtonText: js.UndefOr[String] = js.undefined
     
+    /** Dialog contents. */
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     /**
       * The text for the confirm (right-most) button.
       * This button will always appear, and uses the value of the `intent` prop below.
+      *
       * @default "OK"
       */
     var confirmButtonText: js.UndefOr[String] = js.undefined
     
     /** Name of a Blueprint UI icon (or an icon element) to display on the left side. */
-    var icon: js.UndefOr[IconName | MaybeElement] = js.undefined
+    var icon: js.UndefOr[BlueprintIcons16Id | MaybeElement] = js.undefined
     
     /**
       * The intent to be applied to the confirm (right-most) button and the icon (if provided).
@@ -92,6 +101,14 @@ object alertMod {
       * This prop is required because the component is controlled.
       */
     var isOpen: Boolean
+    
+    /**
+      * If set to `true`, the confirm button will be set to its loading state. The cancel button, if
+      * visible, will be disabled.
+      *
+      * @default false
+      */
+    var loading: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Handler invoked when the alert is canceled. Alerts can be **canceled** in the following ways:
@@ -126,6 +143,7 @@ object alertMod {
     /**
       * The container element into which the overlay renders its contents, when `usePortal` is `true`.
       * This prop is ignored if `usePortal` is `false`.
+      *
       * @default document.body
       */
     var portalContainer: js.UndefOr[HTMLElement] = js.undefined
@@ -140,6 +158,7 @@ object alertMod {
       * This is used by React `CSSTransition` to know when a transition completes and must match
       * the duration of the animation in CSS. Only set this prop if you override Blueprint's default
       * transitions with new transitions of a different length.
+      *
       * @default 300
       */
     var transitionDuration: js.UndefOr[Double] = js.undefined
@@ -165,11 +184,15 @@ object alertMod {
       
       inline def setCancelButtonTextUndefined: Self = StObject.set(x, "cancelButtonText", js.undefined)
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setConfirmButtonText(value: String): Self = StObject.set(x, "confirmButtonText", value.asInstanceOf[js.Any])
       
       inline def setConfirmButtonTextUndefined: Self = StObject.set(x, "confirmButtonText", js.undefined)
       
-      inline def setIcon(value: IconName | MaybeElement): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: BlueprintIcons16Id | MaybeElement): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
       inline def setIconNull: Self = StObject.set(x, "icon", null)
       
@@ -180,6 +203,10 @@ object alertMod {
       inline def setIntentUndefined: Self = StObject.set(x, "intent", js.undefined)
       
       inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+      
+      inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      
+      inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
       
       inline def setOnCancel(value: /* evt */ js.UndefOr[SyntheticEvent[HTMLElement, Event]] => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction1(value))
       

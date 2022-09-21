@@ -4,23 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request for iSDK to execute strong match flow for post-install attribution.
-  * This is meant for iOS requests only. Requests from other platforms will not
-  * be honored.
-  */
 trait SchemaGetIosPostInstallAttributionRequest extends StObject {
   
   /**
-    * App installation epoch time (https://en.wikipedia.org/wiki/Unix_time).
-    * This is a client signal for a more accurate weak match.
+    * App installation epoch time (https://en.wikipedia.org/wiki/Unix_time). This is a client signal for a more accurate weak match.
     */
-  var appInstallationTime: js.UndefOr[String] = js.undefined
+  var appInstallationTime: js.UndefOr[String | Null] = js.undefined
   
   /**
     * APP bundle ID.
     */
-  var bundleId: js.UndefOr[String] = js.undefined
+  var bundleId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Device information.
@@ -28,35 +22,29 @@ trait SchemaGetIosPostInstallAttributionRequest extends StObject {
   var device: js.UndefOr[SchemaDeviceInfo] = js.undefined
   
   /**
-    * iOS version, ie: 9.3.5. Consider adding &quot;build&quot;.
+    * iOS version, ie: 9.3.5. Consider adding "build".
     */
-  var iosVersion: js.UndefOr[String] = js.undefined
+  var iosVersion: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * App post install attribution retrieval information. Disambiguates
-    * mechanism (iSDK or developer invoked) to retrieve payload from clicked
-    * link.
+    * App post install attribution retrieval information. Disambiguates mechanism (iSDK or developer invoked) to retrieve payload from clicked link.
     */
-  var retrievalMethod: js.UndefOr[String] = js.undefined
+  var retrievalMethod: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Google SDK version. Version takes the form
-    * &quot;$major.$minor.$patch&quot;
+    * Google SDK version. Version takes the form "$major.$minor.$patch"
     */
-  var sdkVersion: js.UndefOr[String] = js.undefined
+  var sdkVersion: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Possible unique matched link that server need to check before performing
-    * fingerprint match. If passed link is short server need to expand the
-    * link. If link is long server need to vslidate the link.
+    * Possible unique matched link that server need to check before performing fingerprint match. If passed link is short server need to expand the link. If link is long server need to vslidate the link.
     */
-  var uniqueMatchLinkToCheck: js.UndefOr[String] = js.undefined
+  var uniqueMatchLinkToCheck: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Strong match page information. Disambiguates between default UI and
-    * custom page to present when strong match succeeds/fails to find cookie.
+    * Strong match page information. Disambiguates between default UI and custom page to present when strong match succeeds/fails to find cookie.
     */
-  var visualStyle: js.UndefOr[String] = js.undefined
+  var visualStyle: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGetIosPostInstallAttributionRequest {
   
@@ -69,9 +57,13 @@ object SchemaGetIosPostInstallAttributionRequest {
     
     inline def setAppInstallationTime(value: String): Self = StObject.set(x, "appInstallationTime", value.asInstanceOf[js.Any])
     
+    inline def setAppInstallationTimeNull: Self = StObject.set(x, "appInstallationTime", null)
+    
     inline def setAppInstallationTimeUndefined: Self = StObject.set(x, "appInstallationTime", js.undefined)
     
     inline def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
+    
+    inline def setBundleIdNull: Self = StObject.set(x, "bundleId", null)
     
     inline def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
     
@@ -81,21 +73,31 @@ object SchemaGetIosPostInstallAttributionRequest {
     
     inline def setIosVersion(value: String): Self = StObject.set(x, "iosVersion", value.asInstanceOf[js.Any])
     
+    inline def setIosVersionNull: Self = StObject.set(x, "iosVersion", null)
+    
     inline def setIosVersionUndefined: Self = StObject.set(x, "iosVersion", js.undefined)
     
     inline def setRetrievalMethod(value: String): Self = StObject.set(x, "retrievalMethod", value.asInstanceOf[js.Any])
+    
+    inline def setRetrievalMethodNull: Self = StObject.set(x, "retrievalMethod", null)
     
     inline def setRetrievalMethodUndefined: Self = StObject.set(x, "retrievalMethod", js.undefined)
     
     inline def setSdkVersion(value: String): Self = StObject.set(x, "sdkVersion", value.asInstanceOf[js.Any])
     
+    inline def setSdkVersionNull: Self = StObject.set(x, "sdkVersion", null)
+    
     inline def setSdkVersionUndefined: Self = StObject.set(x, "sdkVersion", js.undefined)
     
     inline def setUniqueMatchLinkToCheck(value: String): Self = StObject.set(x, "uniqueMatchLinkToCheck", value.asInstanceOf[js.Any])
     
+    inline def setUniqueMatchLinkToCheckNull: Self = StObject.set(x, "uniqueMatchLinkToCheck", null)
+    
     inline def setUniqueMatchLinkToCheckUndefined: Self = StObject.set(x, "uniqueMatchLinkToCheck", js.undefined)
     
     inline def setVisualStyle(value: String): Self = StObject.set(x, "visualStyle", value.asInstanceOf[js.Any])
+    
+    inline def setVisualStyleNull: Self = StObject.set(x, "visualStyle", null)
     
     inline def setVisualStyleUndefined: Self = StObject.set(x, "visualStyle", js.undefined)
   }

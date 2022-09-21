@@ -9,7 +9,7 @@ trait DatafeedstatusesCustomBatchResponse extends StObject {
   /** The result of the execution of the batch requests. */
   var entries: js.UndefOr[js.Array[DatafeedstatusesCustomBatchResponseEntry]] = js.undefined
   
-  /** Identifies what kind of resource this is. Value: the fixed string "content#datafeedstatusesCustomBatchResponse". */
+  /** Identifies what kind of resource this is. Value: the fixed string "`content#datafeedstatusesCustomBatchResponse`". */
   var kind: js.UndefOr[String] = js.undefined
 }
 object DatafeedstatusesCustomBatchResponse {
@@ -25,7 +25,7 @@ object DatafeedstatusesCustomBatchResponse {
     
     inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
-    inline def setEntriesVarargs(value: DatafeedstatusesCustomBatchResponseEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: DatafeedstatusesCustomBatchResponseEntry*): Self = StObject.set(x, "entries", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

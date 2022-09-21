@@ -29,7 +29,7 @@ object ListFleetsResponse {
     
     inline def setFleetDetailsUndefined: Self = StObject.set(x, "fleetDetails", js.undefined)
     
-    inline def setFleetDetailsVarargs(value: Fleet*): Self = StObject.set(x, "fleetDetails", js.Array(value :_*))
+    inline def setFleetDetailsVarargs(value: Fleet*): Self = StObject.set(x, "fleetDetails", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

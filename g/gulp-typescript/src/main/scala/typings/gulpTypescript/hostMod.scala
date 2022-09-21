@@ -12,7 +12,7 @@ object hostMod {
   
   @JSImport("gulp-typescript/release/host", "Host")
   @js.native
-  class Host protected ()
+  open class Host protected ()
     extends StObject
        with CompilerHost {
     def this(typescript: Typeofts, currentDirectory: String, input: FileCache, options: CompilerOptions) = this()
@@ -61,5 +61,8 @@ object hostMod {
     def realpath_MHost(path: String): String = js.native
     
     var typescript: Typeofts = js.native
+    
+    @JSName("useCaseSensitiveFileNames")
+    def useCaseSensitiveFileNames_MHost(): Boolean = js.native
   }
 }

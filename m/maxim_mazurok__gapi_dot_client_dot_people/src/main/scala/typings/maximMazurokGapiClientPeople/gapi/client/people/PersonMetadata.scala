@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PersonMetadata extends StObject {
   
-  /** Output only. True if the person resource has been deleted. Populated only for [`connections.list`](/people/api/rest/v1/people.connections/list) requests that include a sync token. */
+  /** Output only. True if the person resource has been deleted. Populated only for `people.connections.list` and `otherContacts.list` sync requests. */
   var deleted: js.UndefOr[Boolean] = js.undefined
   
   /** Output only. Resource names of people linked to this resource. */
@@ -16,8 +16,8 @@ trait PersonMetadata extends StObject {
   var objectType: js.UndefOr[String] = js.undefined
   
   /**
-    * Output only. Any former resource names this person has had. Populated only for [`connections.list`](/people/api/rest/v1/people.connections/list) requests that include a sync token.
-    * The resource name may change when adding or removing fields that link a contact and profile such as a verified email, verified phone number, or profile URL.
+    * Output only. Any former resource names this person has had. Populated only for `people.connections.list` requests that include a sync token. The resource name may change when adding
+    * or removing fields that link a contact and profile such as a verified email, verified phone number, or profile URL.
     */
   var previousResourceNames: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -41,7 +41,7 @@ object PersonMetadata {
     
     inline def setLinkedPeopleResourceNamesUndefined: Self = StObject.set(x, "linkedPeopleResourceNames", js.undefined)
     
-    inline def setLinkedPeopleResourceNamesVarargs(value: String*): Self = StObject.set(x, "linkedPeopleResourceNames", js.Array(value :_*))
+    inline def setLinkedPeopleResourceNamesVarargs(value: String*): Self = StObject.set(x, "linkedPeopleResourceNames", js.Array(value*))
     
     inline def setObjectType(value: String): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
     
@@ -51,12 +51,12 @@ object PersonMetadata {
     
     inline def setPreviousResourceNamesUndefined: Self = StObject.set(x, "previousResourceNames", js.undefined)
     
-    inline def setPreviousResourceNamesVarargs(value: String*): Self = StObject.set(x, "previousResourceNames", js.Array(value :_*))
+    inline def setPreviousResourceNamesVarargs(value: String*): Self = StObject.set(x, "previousResourceNames", js.Array(value*))
     
     inline def setSources(value: js.Array[Source]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
     inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
-    inline def setSourcesVarargs(value: Source*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: Source*): Self = StObject.set(x, "sources", js.Array(value*))
   }
 }

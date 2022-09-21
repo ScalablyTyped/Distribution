@@ -1,7 +1,7 @@
 
 # Scala.js typings for scroll-into-view
 
-Typings are for version 1.6.0
+Typings are for version 1.16.0
 
 ## Library description:
 scrolls an elements into view, recursively aligning parents.
@@ -10,10 +10,10 @@ scrolls an elements into view, recursively aligning parents.
 | ------------------ | :-------------: |
 | Full name          | scroll-into-view |
 | Keywords           | scroll into view, scrollIntoView, scroll into view if needed, smooth scroll, scroll parents |
-| # releases         | 16 |
-| # dependents       | 39 |
-| # downloads        | 2653012 |
-| # stars            | 5 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 211728.66666666666 |
+| # stars            | 306.0 |
 
 ## Links
 - [Homepage](https://github.com/KoryNunn/scroll-into-view#readme)

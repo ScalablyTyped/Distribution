@@ -1,13 +1,12 @@
 package typings.athenajs.mod
 
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("athenajs", "Map")
 @js.native
-class Map protected () extends StObject {
+open class Map protected () extends StObject {
   def this(options: MapOptions) = this()
   
   def addObject(obj: Drawable): Unit = js.native
@@ -38,7 +37,7 @@ class Map protected () extends StObject {
   
   def respawn(): Unit = js.native
   
-  def setData(map: Uint8Array, behaviors: Uint8Array): Unit = js.native
+  def setData(map: js.typedarray.Uint8Array, behaviors: js.typedarray.Uint8Array): Unit = js.native
   
   def setEasing(easing: String): Unit = js.native
   

@@ -1,6 +1,5 @@
 package typings.cordovaPluginContacts
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ trait ContactProperties extends StObject {
   var addresses: js.UndefOr[js.Array[ContactAddress]] = js.undefined
   
   /** The birthday of the contact. */
-  var birthday: js.UndefOr[Date] = js.undefined
+  var birthday: js.UndefOr[js.Date] = js.undefined
   
   /** An array of all the user-defined categories associated with the contact. */
   var categories: js.UndefOr[js.Array[ContactField]] = js.undefined
@@ -62,9 +61,9 @@ object ContactProperties {
     
     inline def setAddressesUndefined: Self = StObject.set(x, "addresses", js.undefined)
     
-    inline def setAddressesVarargs(value: ContactAddress*): Self = StObject.set(x, "addresses", js.Array(value :_*))
+    inline def setAddressesVarargs(value: ContactAddress*): Self = StObject.set(x, "addresses", js.Array(value*))
     
-    inline def setBirthday(value: Date): Self = StObject.set(x, "birthday", value.asInstanceOf[js.Any])
+    inline def setBirthday(value: js.Date): Self = StObject.set(x, "birthday", value.asInstanceOf[js.Any])
     
     inline def setBirthdayUndefined: Self = StObject.set(x, "birthday", js.undefined)
     
@@ -72,7 +71,7 @@ object ContactProperties {
     
     inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    inline def setCategoriesVarargs(value: ContactField*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: ContactField*): Self = StObject.set(x, "categories", js.Array(value*))
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
@@ -82,7 +81,7 @@ object ContactProperties {
     
     inline def setEmailsUndefined: Self = StObject.set(x, "emails", js.undefined)
     
-    inline def setEmailsVarargs(value: ContactField*): Self = StObject.set(x, "emails", js.Array(value :_*))
+    inline def setEmailsVarargs(value: ContactField*): Self = StObject.set(x, "emails", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -92,7 +91,7 @@ object ContactProperties {
     
     inline def setImsUndefined: Self = StObject.set(x, "ims", js.undefined)
     
-    inline def setImsVarargs(value: ContactField*): Self = StObject.set(x, "ims", js.Array(value :_*))
+    inline def setImsVarargs(value: ContactField*): Self = StObject.set(x, "ims", js.Array(value*))
     
     inline def setName(value: ContactName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -110,24 +109,24 @@ object ContactProperties {
     
     inline def setOrganizationsUndefined: Self = StObject.set(x, "organizations", js.undefined)
     
-    inline def setOrganizationsVarargs(value: ContactOrganization*): Self = StObject.set(x, "organizations", js.Array(value :_*))
+    inline def setOrganizationsVarargs(value: ContactOrganization*): Self = StObject.set(x, "organizations", js.Array(value*))
     
     inline def setPhoneNumbers(value: js.Array[ContactField]): Self = StObject.set(x, "phoneNumbers", value.asInstanceOf[js.Any])
     
     inline def setPhoneNumbersUndefined: Self = StObject.set(x, "phoneNumbers", js.undefined)
     
-    inline def setPhoneNumbersVarargs(value: ContactField*): Self = StObject.set(x, "phoneNumbers", js.Array(value :_*))
+    inline def setPhoneNumbersVarargs(value: ContactField*): Self = StObject.set(x, "phoneNumbers", js.Array(value*))
     
     inline def setPhotos(value: js.Array[ContactField]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
     
     inline def setPhotosUndefined: Self = StObject.set(x, "photos", js.undefined)
     
-    inline def setPhotosVarargs(value: ContactField*): Self = StObject.set(x, "photos", js.Array(value :_*))
+    inline def setPhotosVarargs(value: ContactField*): Self = StObject.set(x, "photos", js.Array(value*))
     
     inline def setUrls(value: js.Array[ContactField]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
     
     inline def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
     
-    inline def setUrlsVarargs(value: ContactField*): Self = StObject.set(x, "urls", js.Array(value :_*))
+    inline def setUrlsVarargs(value: ContactField*): Self = StObject.set(x, "urls", js.Array(value*))
   }
 }

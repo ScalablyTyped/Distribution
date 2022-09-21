@@ -6,8 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SourceBufferListEventMap extends StObject {
   
+  /* standard dom */
   var addsourcebuffer: Event
   
+  /* standard dom */
   var removesourcebuffer: Event
 }
 object SourceBufferListEventMap {

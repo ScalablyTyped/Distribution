@@ -1,10 +1,11 @@
 package typings.nodeIpc
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.netMod.Socket
 import typings.nodeIpc.anon.Family
 import typings.nodeIpc.anon.Private
+import typings.nodeIpc.mod.NodeIPC.Client
 import typings.nodeIpc.mod.NodeIPC.Config
 import typings.nodeIpc.mod.NodeIPC.EmptyCallback
 import typings.nodeIpc.mod.NodeIPC.Server
@@ -22,6 +23,7 @@ import typings.nodeIpc.nodeIpcStrings.udp4
 import typings.nodeIpc.nodeIpcStrings.udp6
 import typings.nodeIpc.nodeIpcStrings.utf16le
 import typings.nodeIpc.nodeIpcStrings.utf8
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,7 +38,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("node-ipc", "IPC")
   @js.native
-  class IPC ()
+  open class IPC ()
     extends StObject
        with typings.nodeIpc.mod.NodeIPC.IPC
   @JSImport("node-ipc", "IPC")
@@ -142,16 +144,16 @@ object mod {
   /**
     * https://www.npmjs.com/package/node-ipc#log
     */
-  inline def log(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def log(args: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
   
   /**
-    * This is where socket connection refrences will be stored when connecting to them as a client via the ipc.connectTo
+    * This is where socket connection references will be stored when connecting to them as a client via the ipc.connectTo
     * or iupc.connectToNet. They will be stored based on the ID used to create them, eg : ipc.of.mySocket
     */
   @JSImport("node-ipc", "of")
   @js.native
-  def of: js.Any = js.native
-  inline def of_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("of")(x.asInstanceOf[js.Any])
+  def of: Record[String, Client] = js.native
+  inline def of_=(x: Record[String, Client]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("of")(x.asInstanceOf[js.Any])
   
   /**
     * https://www.npmjs.com/package/node-ipc#serve
@@ -191,6 +193,14 @@ object mod {
     * @param callback Function to be called when the server is created
     */
   inline def serveNet(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")().asInstanceOf[Unit]
+  /**
+    * https://www.npmjs.com/package/node-ipc#servenet
+    * @param UDPType If set this will create the server as a UDP socket. 'udp4' or 'udp6' are valid values.
+    * This defaults to not being set. When using udp6 make sure to specify a valid IPv6 host, like ::1
+    * @param callback Function to be called when the server is created
+    */
+  inline def serveNet(UDPType: udp4 | udp6): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(UDPType.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def serveNet(UDPType: udp4 | udp6, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def serveNet(callbackOrPort: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(callbackOrPort.asInstanceOf[js.Any]).asInstanceOf[Unit]
   /**
     * https://www.npmjs.com/package/node-ipc#servenet
@@ -207,40 +217,20 @@ object mod {
     * @param callback Function to be called when the server is created
     */
   inline def serveNet(host: String, port: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serveNet(host: String, port: Double, UDPType: udp4 | udp6): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serveNet(host: String, port: Double, UDPType: udp4 | udp6, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def serveNet(host: String, port: Double, UDPType: Unit, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def serveNet(host: String, port: Double, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serveNet(host: String, port: Unit, UDPType: udp4 | udp6): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serveNet(host: String, port: Unit, UDPType: udp4 | udp6, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def serveNet(host: String, port: Unit, UDPType: Unit, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def serveNet(host: Unit, port: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serveNet(host: Unit, port: Double, UDPType: udp4 | udp6): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serveNet(host: Unit, port: Double, UDPType: udp4 | udp6, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def serveNet(host: Unit, port: Double, UDPType: Unit, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serveNet(host: Unit, port: Unit, UDPType: udp4 | udp6): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serveNet(host: Unit, port: Unit, UDPType: udp4 | udp6, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def serveNet(host: Unit, port: Unit, UDPType: Unit, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  /**
-    * https://www.npmjs.com/package/node-ipc#servenet
-    * @param UDPType If set this will create the server as a UDP socket. 'udp4' or 'udp6' are valid values.
-    * This defaults to not being set. When using udp6 make sure to specify a valid IPv6 host, like ::1
-    * @param callback Function to be called when the server is created
-    */
-  inline def serveNet_udp4(UDPType: udp4): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(UDPType.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def serveNet_udp4(UDPType: udp4, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def serveNet_udp4(host: String, port: Double, UDPType: udp4): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def serveNet_udp4(host: String, port: Double, UDPType: udp4, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def serveNet_udp4(host: String, port: Unit, UDPType: udp4): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def serveNet_udp4(host: String, port: Unit, UDPType: udp4, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def serveNet_udp4(host: Unit, port: Double, UDPType: udp4): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def serveNet_udp4(host: Unit, port: Double, UDPType: udp4, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def serveNet_udp4(host: Unit, port: Unit, UDPType: udp4): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def serveNet_udp4(host: Unit, port: Unit, UDPType: udp4, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def serveNet_udp6(UDPType: udp6): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(UDPType.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def serveNet_udp6(UDPType: udp6, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def serveNet_udp6(host: String, port: Double, UDPType: udp6): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def serveNet_udp6(host: String, port: Double, UDPType: udp6, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def serveNet_udp6(host: String, port: Unit, UDPType: udp6): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def serveNet_udp6(host: String, port: Unit, UDPType: udp6, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def serveNet_udp6(host: Unit, port: Double, UDPType: udp6): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def serveNet_udp6(host: Unit, port: Double, UDPType: udp6, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def serveNet_udp6(host: Unit, port: Unit, UDPType: udp6): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def serveNet_udp6(host: Unit, port: Unit, UDPType: udp6, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serveNet")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], UDPType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * This is a refrence to the server created by ipc.serve or ipc.serveNet
@@ -256,39 +246,34 @@ object mod {
     trait Client extends StObject {
       
       def emit(event: String): Client = js.native
-      def emit(event: String, value: js.Any): Client = js.native
+      def emit(event: String, value: Any): Client = js.native
       
       /**
         * Unbind subscribed events
         */
-      def off(event: String, handler: js.Any): Client = js.native
+      def off(event: String, handler: Any): Client = js.native
       
-      /**
-        * triggered when a JSON message is received. The event name will be the type string from your message
-        * and the param will be the data object from your message eg : { type:'myEvent',data:{a:1}}
-        */
-      def on(event: String, callback: js.Function1[/* repeated */ js.Any, Unit]): Client = js.native
       /**
         * connect - triggered when socket connected
         * disconnect - triggered by client when socket has disconnected from server
         * destroy - triggered when socket has been totally destroyed, no further auto retries will happen and all references are gone
         */
-      @JSName("on")
-      def on_connect(event: connect, callback: js.Function0[Unit]): Client = js.native
+      def on(event: connect | disconnect | destroy, callback: js.Function0[Unit]): Client = js.native
+      /**
+        * triggered when a JSON message is received. The event name will be the type string from your message
+        * and the param will be the data object from your message eg : { type:'myEvent',data:{a:1}}
+        */
+      def on(event: String, callback: js.Function1[/* repeated */ Any, Unit]): Client = js.native
       /**
         * triggered when ipc.config.rawBuffer is true and a message is received
         */
       @JSName("on")
       def on_data(event: data, callback: js.Function1[/* buffer */ Buffer, Unit]): Client = js.native
-      @JSName("on")
-      def on_destroy(event: destroy, callback: js.Function0[Unit]): Client = js.native
-      @JSName("on")
-      def on_disconnect(event: disconnect, callback: js.Function0[Unit]): Client = js.native
       /**
         * triggered when an error has occured
         */
       @JSName("on")
-      def on_error(event: error, callback: js.Function1[/* err */ js.Any, Unit]): Client = js.native
+      def on_error(event: error, callback: js.Function1[/* err */ Any, Unit]): Client = js.native
       /**
         * triggered by server when a client socket has disconnected
         */
@@ -384,6 +369,12 @@ object mod {
       var rawBuffer: Boolean
       
       /**
+        * Default: false
+        * Makes the pipe readable for all users including windows services
+        */
+      var readableAll: Boolean
+      
+      /**
         * Default: 500
         * This is the time in milliseconds a client will wait before trying to reconnect to a server if the connection is lost.
         * This does not effect UDP sockets since they do not have a client server relationship like Unix Sockets and TCP Sockets
@@ -426,6 +417,12 @@ object mod {
         * you must set this to false and then take care of deleting the socket in your own code.
         */
       var unlink: Boolean
+      
+      /**
+        * Default: false
+        * Makes the pipe writable for all users including windows services
+        */
+      var writableAll: Boolean
     }
     object Config {
       
@@ -442,15 +439,17 @@ object mod {
         networkHost: String,
         networkPort: Double,
         rawBuffer: Boolean,
+        readableAll: Boolean,
         retry: Double,
         silent: Boolean,
         socketRoot: String,
         stopRetrying: Boolean,
         sync: Boolean,
         tls: Private,
-        unlink: Boolean
+        unlink: Boolean,
+        writableAll: Boolean
       ): Config = {
-        val __obj = js.Dynamic.literal(appspace = appspace.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], interfaces = interfaces.asInstanceOf[js.Any], logDepth = logDepth.asInstanceOf[js.Any], logInColor = logInColor.asInstanceOf[js.Any], logger = js.Any.fromFunction1(logger), maxConnections = maxConnections.asInstanceOf[js.Any], maxRetries = maxRetries.asInstanceOf[js.Any], networkHost = networkHost.asInstanceOf[js.Any], networkPort = networkPort.asInstanceOf[js.Any], rawBuffer = rawBuffer.asInstanceOf[js.Any], retry = retry.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], socketRoot = socketRoot.asInstanceOf[js.Any], stopRetrying = stopRetrying.asInstanceOf[js.Any], sync = sync.asInstanceOf[js.Any], tls = tls.asInstanceOf[js.Any], unlink = unlink.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(appspace = appspace.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], interfaces = interfaces.asInstanceOf[js.Any], logDepth = logDepth.asInstanceOf[js.Any], logInColor = logInColor.asInstanceOf[js.Any], logger = js.Any.fromFunction1(logger), maxConnections = maxConnections.asInstanceOf[js.Any], maxRetries = maxRetries.asInstanceOf[js.Any], networkHost = networkHost.asInstanceOf[js.Any], networkPort = networkPort.asInstanceOf[js.Any], rawBuffer = rawBuffer.asInstanceOf[js.Any], readableAll = readableAll.asInstanceOf[js.Any], retry = retry.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], socketRoot = socketRoot.asInstanceOf[js.Any], stopRetrying = stopRetrying.asInstanceOf[js.Any], sync = sync.asInstanceOf[js.Any], tls = tls.asInstanceOf[js.Any], unlink = unlink.asInstanceOf[js.Any], writableAll = writableAll.asInstanceOf[js.Any])
         __obj.asInstanceOf[Config]
       }
       
@@ -480,6 +479,8 @@ object mod {
         
         inline def setRawBuffer(value: Boolean): Self = StObject.set(x, "rawBuffer", value.asInstanceOf[js.Any])
         
+        inline def setReadableAll(value: Boolean): Self = StObject.set(x, "readableAll", value.asInstanceOf[js.Any])
+        
         inline def setRetry(value: Double): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
         
         inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
@@ -493,6 +494,8 @@ object mod {
         inline def setTls(value: Private): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
         
         inline def setUnlink(value: Boolean): Self = StObject.set(x, "unlink", value.asInstanceOf[js.Any])
+        
+        inline def setWritableAll(value: Boolean): Self = StObject.set(x, "writableAll", value.asInstanceOf[js.Any])
       }
     }
     
@@ -576,13 +579,13 @@ object mod {
       /**
         * https://www.npmjs.com/package/node-ipc#log
         */
-      def log(args: js.Any*): Unit = js.native
+      def log(args: Any*): Unit = js.native
       
       /**
-        * This is where socket connection refrences will be stored when connecting to them as a client via the ipc.connectTo
+        * This is where socket connection references will be stored when connecting to them as a client via the ipc.connectTo
         * or iupc.connectToNet. They will be stored based on the ID used to create them, eg : ipc.of.mySocket
         */
-      var of: js.Any = js.native
+      var of: Record[String, Client] = js.native
       
       /**
         * https://www.npmjs.com/package/node-ipc#serve
@@ -622,6 +625,14 @@ object mod {
         * @param callback Function to be called when the server is created
         */
       def serveNet(): Unit = js.native
+      /**
+        * https://www.npmjs.com/package/node-ipc#servenet
+        * @param UDPType If set this will create the server as a UDP socket. 'udp4' or 'udp6' are valid values.
+        * This defaults to not being set. When using udp6 make sure to specify a valid IPv6 host, like ::1
+        * @param callback Function to be called when the server is created
+        */
+      def serveNet(UDPType: udp4 | udp6): Unit = js.native
+      def serveNet(UDPType: udp4 | udp6, callback: js.Function0[Unit]): Unit = js.native
       def serveNet(callbackOrPort: Double): Unit = js.native
       /**
         * https://www.npmjs.com/package/node-ipc#servenet
@@ -631,58 +642,20 @@ object mod {
       def serveNet(callbackOrPort: EmptyCallback): Unit = js.native
       def serveNet(host: String): Unit = js.native
       def serveNet(host: String, port: Double): Unit = js.native
+      def serveNet(host: String, port: Double, UDPType: udp4 | udp6): Unit = js.native
+      def serveNet(host: String, port: Double, UDPType: udp4 | udp6, callback: js.Function0[Unit]): Unit = js.native
       def serveNet(host: String, port: Double, UDPType: Unit, callback: js.Function0[Unit]): Unit = js.native
       def serveNet(host: String, port: Double, callback: js.Function0[Unit]): Unit = js.native
+      def serveNet(host: String, port: Unit, UDPType: udp4 | udp6): Unit = js.native
+      def serveNet(host: String, port: Unit, UDPType: udp4 | udp6, callback: js.Function0[Unit]): Unit = js.native
       def serveNet(host: String, port: Unit, UDPType: Unit, callback: js.Function0[Unit]): Unit = js.native
       def serveNet(host: Unit, port: Double): Unit = js.native
+      def serveNet(host: Unit, port: Double, UDPType: udp4 | udp6): Unit = js.native
+      def serveNet(host: Unit, port: Double, UDPType: udp4 | udp6, callback: js.Function0[Unit]): Unit = js.native
       def serveNet(host: Unit, port: Double, UDPType: Unit, callback: js.Function0[Unit]): Unit = js.native
+      def serveNet(host: Unit, port: Unit, UDPType: udp4 | udp6): Unit = js.native
+      def serveNet(host: Unit, port: Unit, UDPType: udp4 | udp6, callback: js.Function0[Unit]): Unit = js.native
       def serveNet(host: Unit, port: Unit, UDPType: Unit, callback: js.Function0[Unit]): Unit = js.native
-      /**
-        * https://www.npmjs.com/package/node-ipc#servenet
-        * @param UDPType If set this will create the server as a UDP socket. 'udp4' or 'udp6' are valid values.
-        * This defaults to not being set. When using udp6 make sure to specify a valid IPv6 host, like ::1
-        * @param callback Function to be called when the server is created
-        */
-      @JSName("serveNet")
-      def serveNet_udp4(UDPType: udp4): Unit = js.native
-      @JSName("serveNet")
-      def serveNet_udp4(UDPType: udp4, callback: js.Function0[Unit]): Unit = js.native
-      @JSName("serveNet")
-      def serveNet_udp4(host: String, port: Double, UDPType: udp4): Unit = js.native
-      @JSName("serveNet")
-      def serveNet_udp4(host: String, port: Double, UDPType: udp4, callback: js.Function0[Unit]): Unit = js.native
-      @JSName("serveNet")
-      def serveNet_udp4(host: String, port: Unit, UDPType: udp4): Unit = js.native
-      @JSName("serveNet")
-      def serveNet_udp4(host: String, port: Unit, UDPType: udp4, callback: js.Function0[Unit]): Unit = js.native
-      @JSName("serveNet")
-      def serveNet_udp4(host: Unit, port: Double, UDPType: udp4): Unit = js.native
-      @JSName("serveNet")
-      def serveNet_udp4(host: Unit, port: Double, UDPType: udp4, callback: js.Function0[Unit]): Unit = js.native
-      @JSName("serveNet")
-      def serveNet_udp4(host: Unit, port: Unit, UDPType: udp4): Unit = js.native
-      @JSName("serveNet")
-      def serveNet_udp4(host: Unit, port: Unit, UDPType: udp4, callback: js.Function0[Unit]): Unit = js.native
-      @JSName("serveNet")
-      def serveNet_udp6(UDPType: udp6): Unit = js.native
-      @JSName("serveNet")
-      def serveNet_udp6(UDPType: udp6, callback: js.Function0[Unit]): Unit = js.native
-      @JSName("serveNet")
-      def serveNet_udp6(host: String, port: Double, UDPType: udp6): Unit = js.native
-      @JSName("serveNet")
-      def serveNet_udp6(host: String, port: Double, UDPType: udp6, callback: js.Function0[Unit]): Unit = js.native
-      @JSName("serveNet")
-      def serveNet_udp6(host: String, port: Unit, UDPType: udp6): Unit = js.native
-      @JSName("serveNet")
-      def serveNet_udp6(host: String, port: Unit, UDPType: udp6, callback: js.Function0[Unit]): Unit = js.native
-      @JSName("serveNet")
-      def serveNet_udp6(host: Unit, port: Double, UDPType: udp6): Unit = js.native
-      @JSName("serveNet")
-      def serveNet_udp6(host: Unit, port: Double, UDPType: udp6, callback: js.Function0[Unit]): Unit = js.native
-      @JSName("serveNet")
-      def serveNet_udp6(host: Unit, port: Unit, UDPType: udp6): Unit = js.native
-      @JSName("serveNet")
-      def serveNet_udp6(host: Unit, port: Unit, UDPType: udp6, callback: js.Function0[Unit]): Unit = js.native
       
       /**
         * This is a refrence to the server created by ipc.serve or ipc.serveNet
@@ -695,15 +668,18 @@ object mod {
       extends StObject
          with Client {
       
+      def broadcast(event: String): Client = js.native
+      def broadcast(event: String, value: Any): Client = js.native
+      
       def emit(socketConfig: Socket): Server = js.native
-      def emit(socketConfig: Socket, value: js.Any): Server = js.native
+      def emit(socketConfig: Socket, value: Any): Server = js.native
       def emit(socketConfig: SocketConfig): Server = js.native
-      def emit(socketConfig: SocketConfig, value: js.Any): Server = js.native
+      def emit(socketConfig: SocketConfig, value: Any): Server = js.native
       def emit(socket: Socket, event: String): Server = js.native
-      def emit(socket: Socket, event: String, value: js.Any): Server = js.native
+      def emit(socket: Socket, event: String, value: Any): Server = js.native
       def emit(socket: SocketConfig, event: String): Server = js.native
-      def emit(socket: SocketConfig, event: String, value: js.Any): Server = js.native
-      def emit(value: js.Any): Client = js.native
+      def emit(socket: SocketConfig, event: String, value: Any): Server = js.native
+      def emit(value: Any): Client = js.native
       
       /**
         * start serving need top call serve or serveNet first to set up the server

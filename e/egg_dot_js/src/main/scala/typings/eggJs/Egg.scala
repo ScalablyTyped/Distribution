@@ -17,7 +17,7 @@ trait Egg extends StObject {
     *                    callback (which can either be in plain English or JavaScript key codes).
     * @param fn A function to trigger when it happens.
     */
-  def AddCode(keySequence: String, fn: js.Function0[js.Any]): Egg = js.native
+  def AddCode(keySequence: String, fn: js.Function0[Any]): Egg = js.native
   /**
     * Use to add in your easter eggs.
     * @param keySequence You need to pass it the character sequence to trigger the easter egg
@@ -25,7 +25,7 @@ trait Egg extends StObject {
     * @param fn A function to trigger when it happens.
     * @param metadata An optional set of metadata.
     */
-  def AddCode(keySequence: String, fn: js.Function0[js.Any], metadata: js.Any): Egg = js.native
+  def AddCode(keySequence: String, fn: js.Function0[Any], metadata: Any): Egg = js.native
   
   /**
     * Add a hook, that will run after any egg code is triggered. You could use it to fire a Google
@@ -34,7 +34,7 @@ trait Egg extends StObject {
     * fired via this.activeEgg.
     * @param fn A function to trigger when it happens.
     */
-  def AddHook(fn: js.Function0[js.Any]): Egg = js.native
+  def AddHook(fn: js.Function0[Any]): Egg = js.native
   
   /**
     * Start listening to key codes.
@@ -47,7 +47,7 @@ trait Egg extends StObject {
     *                    callback (which can either be in plain English or JavaScript key codes).
     * @param fn A function to trigger when it happens.
     */
-  def addCode(keySequence: String, fn: js.Function0[js.Any]): Egg = js.native
+  def addCode(keySequence: String, fn: js.Function0[Any]): Egg = js.native
   /**
     * Use to add in your easter eggs.
     * @param keySequence You need to pass it the character sequence to trigger the easter egg
@@ -55,7 +55,7 @@ trait Egg extends StObject {
     * @param fn A function to trigger when it happens.
     * @param metadata An optional set of metadata.
     */
-  def addCode(keySequence: String, fn: js.Function0[js.Any], metadata: js.Any): Egg = js.native
+  def addCode(keySequence: String, fn: js.Function0[Any], metadata: Any): Egg = js.native
   
   /**
     * Add a hook, that will run after any egg code is triggered. You could use it to fire a Google
@@ -64,7 +64,7 @@ trait Egg extends StObject {
     * fired via this.activeEgg.
     * @param fn A function to trigger when it happens.
     */
-  def addHook(fn: js.Function0[js.Any]): Egg = js.native
+  def addHook(fn: js.Function0[Any]): Egg = js.native
   
   /**
     * Start listening to key codes.

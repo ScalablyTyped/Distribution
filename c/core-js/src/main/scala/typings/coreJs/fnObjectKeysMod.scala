@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object fnObjectKeysMod {
   
   /* was `typeof core.Object.keys` */
-  inline def apply(o: js.Any): Array[java.lang.String] = ^.asInstanceOf[js.Dynamic].apply(o.asInstanceOf[js.Any]).asInstanceOf[Array[java.lang.String]]
+  inline def apply(o: Any): Array[java.lang.String] = ^.asInstanceOf[js.Dynamic].apply(o.asInstanceOf[js.Any]).asInstanceOf[Array[java.lang.String]]
   
   @JSImport("core-js/library/fn/object/keys", JSImport.Namespace)
   @js.native

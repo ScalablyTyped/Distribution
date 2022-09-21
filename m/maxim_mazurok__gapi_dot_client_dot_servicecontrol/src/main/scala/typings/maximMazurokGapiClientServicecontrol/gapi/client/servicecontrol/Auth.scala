@@ -31,7 +31,7 @@ trait Auth extends StObject {
   var claims: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.Auth & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.Auth & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -59,18 +59,18 @@ object Auth {
     
     inline def setAccessLevelsUndefined: Self = StObject.set(x, "accessLevels", js.undefined)
     
-    inline def setAccessLevelsVarargs(value: String*): Self = StObject.set(x, "accessLevels", js.Array(value :_*))
+    inline def setAccessLevelsVarargs(value: String*): Self = StObject.set(x, "accessLevels", js.Array(value*))
     
     inline def setAudiences(value: js.Array[String]): Self = StObject.set(x, "audiences", value.asInstanceOf[js.Any])
     
     inline def setAudiencesUndefined: Self = StObject.set(x, "audiences", js.undefined)
     
-    inline def setAudiencesVarargs(value: String*): Self = StObject.set(x, "audiences", js.Array(value :_*))
+    inline def setAudiencesVarargs(value: String*): Self = StObject.set(x, "audiences", js.Array(value*))
     
     inline def setClaims(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.Auth & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.Auth & TopLevel[Any]
     ): Self = StObject.set(x, "claims", value.asInstanceOf[js.Any])
     
     inline def setClaimsUndefined: Self = StObject.set(x, "claims", js.undefined)

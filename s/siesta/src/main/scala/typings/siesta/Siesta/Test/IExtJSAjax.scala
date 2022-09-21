@@ -10,19 +10,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait IExtJSAjax extends StObject {
   
-  def ajaxRequestAndThen(url: String, callback: js.Function, scope: js.Any): Unit = js.native
+  def ajaxRequestAndThen(url: String, callback: js.Function, scope: Any): Unit = js.native
   
   def isAjaxLoading(): Unit = js.native
-  def isAjaxLoading(`object`: js.Any): Unit = js.native
-  def isAjaxLoading(`object`: js.Any, description: String): Unit = js.native
+  def isAjaxLoading(`object`: Any): Unit = js.native
+  def isAjaxLoading(`object`: Any, description: String): Unit = js.native
   def isAjaxLoading(`object`: Unit, description: String): Unit = js.native
   
   def waitForAjaxRequest(callback: js.Function): Unit = js.native
-  def waitForAjaxRequest(callback: js.Function, scope: js.Any): Unit = js.native
-  def waitForAjaxRequest(callback: js.Function, scope: js.Any, timeout: Double): Unit = js.native
+  def waitForAjaxRequest(callback: js.Function, scope: Any): Unit = js.native
+  def waitForAjaxRequest(callback: js.Function, scope: Any, timeout: Double): Unit = js.native
   def waitForAjaxRequest(callback: js.Function, scope: Unit, timeout: Double): Unit = js.native
-  def waitForAjaxRequest(`object`: js.Any, callback: js.Function): Unit = js.native
-  def waitForAjaxRequest(`object`: js.Any, callback: js.Function, scope: js.Any): Unit = js.native
-  def waitForAjaxRequest(`object`: js.Any, callback: js.Function, scope: js.Any, timeout: Double): Unit = js.native
-  def waitForAjaxRequest(`object`: js.Any, callback: js.Function, scope: Unit, timeout: Double): Unit = js.native
+  def waitForAjaxRequest(`object`: Any, callback: js.Function): Unit = js.native
+  def waitForAjaxRequest(`object`: Any, callback: js.Function, scope: Any): Unit = js.native
+  def waitForAjaxRequest(`object`: Any, callback: js.Function, scope: Any, timeout: Double): Unit = js.native
+  def waitForAjaxRequest(`object`: Any, callback: js.Function, scope: Unit, timeout: Double): Unit = js.native
 }

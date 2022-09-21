@@ -1,19 +1,18 @@
 package typings.ssh2Streams.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait InputAttributes extends StObject {
   
-  var atime: js.UndefOr[Double | Date] = js.undefined
+  var atime: js.UndefOr[Double | js.Date] = js.undefined
   
   var gid: js.UndefOr[Double] = js.undefined
   
   var mode: js.UndefOr[Double | String] = js.undefined
   
-  var mtime: js.UndefOr[Double | Date] = js.undefined
+  var mtime: js.UndefOr[Double | js.Date] = js.undefined
   
   var size: js.UndefOr[Double] = js.undefined
   
@@ -28,7 +27,7 @@ object InputAttributes {
   
   extension [Self <: InputAttributes](x: Self) {
     
-    inline def setAtime(value: Double | Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
+    inline def setAtime(value: Double | js.Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
     
     inline def setAtimeUndefined: Self = StObject.set(x, "atime", js.undefined)
     
@@ -40,7 +39,7 @@ object InputAttributes {
     
     inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    inline def setMtime(value: Double | Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+    inline def setMtime(value: Double | js.Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
     
     inline def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
     

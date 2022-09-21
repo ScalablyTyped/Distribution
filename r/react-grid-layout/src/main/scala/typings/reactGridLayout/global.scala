@@ -15,7 +15,7 @@ object global {
     
     @JSGlobal("ReactGridLayout")
     @js.native
-    class ^ ()
+    open class ^ ()
       extends typings.reactGridLayout.mod.^
     
     @JSGlobal("ReactGridLayout")
@@ -24,14 +24,14 @@ object global {
     
     @JSGlobal("ReactGridLayout.Responsive")
     @js.native
-    class Responsive protected ()
+    open class Responsive protected ()
       extends typings.reactGridLayout.mod.Responsive {
       def this(props: ResponsiveProps) = this()
       /**
         * @deprecated
         * @see https://reactjs.org/docs/legacy-context.html
         */
-      def this(props: ResponsiveProps, context: js.Any) = this()
+      def this(props: ResponsiveProps, context: Any) = this()
     }
     
     inline def WidthProvider[P](component: ComponentClass[P, ComponentState]): ComponentClass[P & WidthProviderProps, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("WidthProvider")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[P & WidthProviderProps, ComponentState]]

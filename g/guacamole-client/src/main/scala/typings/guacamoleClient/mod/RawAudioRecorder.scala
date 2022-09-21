@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("guacamole-client", "RawAudioRecorder")
 @js.native
-class RawAudioRecorder protected ()
+open class RawAudioRecorder protected ()
   extends typings.guacamoleClient.rawAudioRecorderMod.RawAudioRecorder {
   /**
     * @param stream The Guacamole.OutputStream to write audio data to.

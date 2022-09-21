@@ -1,8 +1,6 @@
 package typings.phaser.phaserMod.GameObjects
 
 import typings.phaser.Phaser.Scene
-import typings.phaser.Phaser.Types.GameObjects.Text.TextMetrics
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,7 +43,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("phaser", "GameObjects.Text")
 @js.native
-class Text protected ()
+open class Text protected ()
   extends StObject
      with typings.phaser.Phaser.GameObjects.Text {
   /**
@@ -154,7 +152,7 @@ class Text protected ()
     * @param value The depth of this Game Object.
     */
   /* CompleteClass */
-  override def setDepth(value: integer): this.type = js.native
+  override def setDepth(value: Double): this.type = js.native
   
   /**
     * Sets the display size of this Game Object.
@@ -254,26 +252,4 @@ class Text protected ()
     */
   /* CompleteClass */
   var width: Double = js.native
-}
-object Text {
-  
-  @JSImport("phaser", "GameObjects.Text")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  /**
-    * Returns an object containing dimensions of the Text object.
-    * @param text The Text object to calculate the size from.
-    * @param size The Text metrics to use when calculating the size.
-    * @param lines The lines of text to calculate the size from.
-    */
-  /* static member */
-  inline def GetTextSize(text: typings.phaser.Phaser.GameObjects.Text, size: TextMetrics, lines: js.Array[js.Any]): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("GetTextSize")(text.asInstanceOf[js.Any], size.asInstanceOf[js.Any], lines.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-  
-  /**
-    * Calculates the ascent, descent and fontSize of a given font style.
-    * @param textStyle The TextStyle object to measure.
-    */
-  /* static member */
-  inline def MeasureText(textStyle: typings.phaser.Phaser.GameObjects.TextStyle): TextMetrics = ^.asInstanceOf[js.Dynamic].applyDynamic("MeasureText")(textStyle.asInstanceOf[js.Any]).asInstanceOf[TextMetrics]
 }

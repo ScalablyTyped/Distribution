@@ -1,9 +1,6 @@
 package typings.octokitGraphql
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.octokitGraphql.typesMod.GraphQlQueryResponse
-import typings.octokitTypes.responseHeadersMod.ResponseHeaders
-import typings.std.Required
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,62 +28,47 @@ object anon {
     }
   }
   
-  trait Data[ResponseData] extends StObject {
-    
-    var data: Required[GraphQlQueryResponse[ResponseData]]
-    
-    var headers: ResponseHeaders
-  }
-  object Data {
-    
-    inline def apply[ResponseData](data: Required[GraphQlQueryResponse[ResponseData]], headers: ResponseHeaders): Data[ResponseData] = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Data[ResponseData]]
-    }
-    
-    extension [Self <: Data[?], ResponseData](x: Self & Data[ResponseData]) {
-      
-      inline def setData(value: Required[GraphQlQueryResponse[ResponseData]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-      
-      inline def setHeaders(value: ResponseHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
-    }
-  }
-  
   trait Extensions extends StObject {
     
-    var extensions: StringDictionary[js.Any]
+    var extensions: StringDictionary[Any]
     
     var locations: js.Array[Column]
     
     var message: String
     
     var path: js.Array[String]
+    
+    var `type`: String
   }
   object Extensions {
     
     inline def apply(
-      extensions: StringDictionary[js.Any],
+      extensions: StringDictionary[Any],
       locations: js.Array[Column],
       message: String,
-      path: js.Array[String]
+      path: js.Array[String],
+      `type`: String
     ): Extensions = {
       val __obj = js.Dynamic.literal(extensions = extensions.asInstanceOf[js.Any], locations = locations.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Extensions]
     }
     
     extension [Self <: Extensions](x: Self) {
       
-      inline def setExtensions(value: StringDictionary[js.Any]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: StringDictionary[Any]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
       inline def setLocations(value: js.Array[Column]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
       
-      inline def setLocationsVarargs(value: Column*): Self = StObject.set(x, "locations", js.Array(value :_*))
+      inline def setLocationsVarargs(value: Column*): Self = StObject.set(x, "locations", js.Array(value*))
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
       inline def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value*))
+      
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

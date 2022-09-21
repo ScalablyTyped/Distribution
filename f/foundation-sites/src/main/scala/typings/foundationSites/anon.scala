@@ -21,8 +21,13 @@ import typings.foundationSites.FoundationSites.IInterchangeOptions
 import typings.foundationSites.FoundationSites.IMagellanOptions
 import typings.foundationSites.FoundationSites.IOffCanvasOptions
 import typings.foundationSites.FoundationSites.IOrbitOptions
+import typings.foundationSites.FoundationSites.IPositionableOptions
+import typings.foundationSites.FoundationSites.IResponsiveAccordionTabsOptions
+import typings.foundationSites.FoundationSites.IResponsiveMenuOptions
+import typings.foundationSites.FoundationSites.IResponsiveToggleOptions
 import typings.foundationSites.FoundationSites.IRevealOptions
 import typings.foundationSites.FoundationSites.ISliderOptions
+import typings.foundationSites.FoundationSites.ISmoothScrollOptions
 import typings.foundationSites.FoundationSites.IStickyOptions
 import typings.foundationSites.FoundationSites.ITabsOptions
 import typings.foundationSites.FoundationSites.ITogglerOptions
@@ -31,8 +36,13 @@ import typings.foundationSites.FoundationSites.Interchange
 import typings.foundationSites.FoundationSites.Magellan
 import typings.foundationSites.FoundationSites.OffCanvas
 import typings.foundationSites.FoundationSites.Orbit
+import typings.foundationSites.FoundationSites.Positionable
+import typings.foundationSites.FoundationSites.ResponsiveAccordionTabs
+import typings.foundationSites.FoundationSites.ResponsiveMenu
+import typings.foundationSites.FoundationSites.ResponsiveToggle
 import typings.foundationSites.FoundationSites.Reveal
 import typings.foundationSites.FoundationSites.Slider
+import typings.foundationSites.FoundationSites.SmoothScroll
 import typings.foundationSites.FoundationSites.Sticky
 import typings.foundationSites.FoundationSites.Tabs
 import typings.foundationSites.FoundationSites.Toggler
@@ -113,6 +123,34 @@ object anon {
        with Instantiable2[/* element */ JQuery, /* options */ IOrbitOptions, Orbit]
   
   @js.native
+  trait InstantiablePositionable
+    extends StObject
+       with Instantiable1[/* element */ JQuery, Positionable]
+       with Instantiable2[/* element */ JQuery, /* options */ IPositionableOptions, Positionable]
+  
+  @js.native
+  trait InstantiableResponsiveAccordionTabs
+    extends StObject
+       with Instantiable1[/* element */ JQuery, ResponsiveAccordionTabs]
+       with Instantiable2[
+          /* element */ JQuery, 
+          /* options */ IResponsiveAccordionTabsOptions, 
+          ResponsiveAccordionTabs
+        ]
+  
+  @js.native
+  trait InstantiableResponsiveMenu
+    extends StObject
+       with Instantiable1[/* element */ JQuery, ResponsiveMenu]
+       with Instantiable2[/* element */ JQuery, /* options */ IResponsiveMenuOptions, ResponsiveMenu]
+  
+  @js.native
+  trait InstantiableResponsiveToggle
+    extends StObject
+       with Instantiable1[/* element */ JQuery, ResponsiveToggle]
+       with Instantiable2[/* element */ JQuery, /* options */ IResponsiveToggleOptions, ResponsiveToggle]
+  
+  @js.native
   trait InstantiableReveal
     extends StObject
        with Instantiable1[/* element */ JQuery, Reveal]
@@ -123,6 +161,12 @@ object anon {
     extends StObject
        with Instantiable1[/* element */ JQuery, Slider]
        with Instantiable2[/* element */ JQuery, /* options */ ISliderOptions, Slider]
+  
+  @js.native
+  trait InstantiableSmoothScroll
+    extends StObject
+       with Instantiable1[/* element */ JQuery, SmoothScroll]
+       with Instantiable2[/* element */ JQuery, /* options */ ISmoothScrollOptions, SmoothScroll]
   
   @js.native
   trait InstantiableSticky
@@ -150,22 +194,18 @@ object anon {
   
   trait Throttle extends StObject {
     
-    def throttle(func: js.Function1[/* repeated */ js.Any, js.Any], delay: Double): js.Function1[/* repeated */ js.Any, js.Any]
+    def throttle(func: js.Function1[/* repeated */ Any, Any], delay: Double): js.Function1[/* repeated */ Any, Any]
   }
   object Throttle {
     
-    inline def apply(
-      throttle: (js.Function1[/* repeated */ js.Any, js.Any], Double) => js.Function1[/* repeated */ js.Any, js.Any]
-    ): Throttle = {
+    inline def apply(throttle: (js.Function1[/* repeated */ Any, Any], Double) => js.Function1[/* repeated */ Any, Any]): Throttle = {
       val __obj = js.Dynamic.literal(throttle = js.Any.fromFunction2(throttle))
       __obj.asInstanceOf[Throttle]
     }
     
     extension [Self <: Throttle](x: Self) {
       
-      inline def setThrottle(
-        value: (js.Function1[/* repeated */ js.Any, js.Any], Double) => js.Function1[/* repeated */ js.Any, js.Any]
-      ): Self = StObject.set(x, "throttle", js.Any.fromFunction2(value))
+      inline def setThrottle(value: (js.Function1[/* repeated */ Any, Any], Double) => js.Function1[/* repeated */ Any, Any]): Self = StObject.set(x, "throttle", js.Any.fromFunction2(value))
     }
   }
 }

@@ -22,7 +22,7 @@ object widgetsHistogramMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with Histogram_ {
     def this(properties: HistogramProperties) = this()

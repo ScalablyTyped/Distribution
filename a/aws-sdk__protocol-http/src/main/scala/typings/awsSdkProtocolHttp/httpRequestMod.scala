@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object httpRequestMod {
   
-  @JSImport("@aws-sdk/protocol-http/dist/cjs/httpRequest", "HttpRequest")
+  @JSImport("@aws-sdk/protocol-http/dist-types/httpRequest", "HttpRequest")
   @js.native
-  class HttpRequest protected ()
+  open class HttpRequest protected ()
     extends StObject
        with typings.awsSdkTypes.httpMod.HttpRequest {
     def this(options: HttpRequestOptions) = this()
@@ -33,17 +33,17 @@ object httpRequestMod {
   /* static members */
   object HttpRequest {
     
-    @JSImport("@aws-sdk/protocol-http/dist/cjs/httpRequest", "HttpRequest")
+    @JSImport("@aws-sdk/protocol-http/dist-types/httpRequest", "HttpRequest")
     @js.native
     val ^ : js.Any = js.native
     
-    inline def isInstance(request: js.Any): /* is @aws-sdk/protocol-http.@aws-sdk/protocol-http/dist/cjs/httpRequest.HttpRequest */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(request.asInstanceOf[js.Any]).asInstanceOf[/* is @aws-sdk/protocol-http.@aws-sdk/protocol-http/dist/cjs/httpRequest.HttpRequest */ Boolean]
+    inline def isInstance(request: Any): /* is @aws-sdk/protocol-http.@aws-sdk/protocol-http/dist-types/httpRequest.HttpRequest */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(request.asInstanceOf[js.Any]).asInstanceOf[/* is @aws-sdk/protocol-http.@aws-sdk/protocol-http/dist-types/httpRequest.HttpRequest */ Boolean]
   }
   
   /* Inlined std.Partial<@aws-sdk/types.@aws-sdk/types.HttpMessage> & std.Partial<@aws-sdk/types.@aws-sdk/types.Endpoint> & {  method :string | undefined} */
   trait HttpRequestOptions extends StObject {
     
-    var body: js.UndefOr[js.Any] = js.undefined
+    var body: js.UndefOr[Any] = js.undefined
     
     var headers: js.UndefOr[HeaderBag] = js.undefined
     
@@ -68,7 +68,7 @@ object httpRequestMod {
     
     extension [Self <: HttpRequestOptions](x: Self) {
       
-      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       

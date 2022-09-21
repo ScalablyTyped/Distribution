@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * _Presents an alert._
   * @see https://docs.scriptable.app/alert/#-new-alert
   */
-class Alert ()
+open class Alert ()
   extends StObject
      with typings.scriptableIos.Alert

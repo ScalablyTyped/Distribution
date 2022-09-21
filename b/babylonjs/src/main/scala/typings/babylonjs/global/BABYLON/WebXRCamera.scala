@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.WebXRCamera")
 @js.native
-class WebXRCamera protected ()
+open class WebXRCamera protected ()
   extends StObject
      with typings.babylonjs.BABYLON.WebXRCamera {
   /**
@@ -46,4 +46,16 @@ class WebXRCamera protected ()
     */
   /* CompleteClass */
   override def removeBehavior(behavior: Behavior[typings.babylonjs.BABYLON.Node]): typings.babylonjs.BABYLON.Node = js.native
+}
+/* static members */
+object WebXRCamera {
+  
+  @JSGlobal("BABYLON.WebXRCamera")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSGlobal("BABYLON.WebXRCamera._ScaleReadOnly")
+  @js.native
+  def _ScaleReadOnly: Any = js.native
+  inline def _ScaleReadOnly_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ScaleReadOnly")(x.asInstanceOf[js.Any])
 }

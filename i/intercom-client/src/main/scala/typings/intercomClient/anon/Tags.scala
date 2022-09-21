@@ -24,7 +24,7 @@ object Tags {
     
     inline def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setType(value: tagDotlist): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

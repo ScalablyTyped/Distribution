@@ -50,7 +50,7 @@ object VertexAttachment {
     
     inline def setBones(value: js.Array[Double]): Self = StObject.set(x, "bones", value.asInstanceOf[js.Any])
     
-    inline def setBonesVarargs(value: Double*): Self = StObject.set(x, "bones", js.Array(value :_*))
+    inline def setBonesVarargs(value: Double*): Self = StObject.set(x, "bones", js.Array(value*))
     
     inline def setComputeWorldVertices(value: (Slot, Double, Double, ArrayLike[Double], Double, Double) => Unit): Self = StObject.set(x, "computeWorldVertices", js.Any.fromFunction6(value))
     

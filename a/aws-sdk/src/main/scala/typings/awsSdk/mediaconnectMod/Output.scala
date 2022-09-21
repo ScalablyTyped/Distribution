@@ -32,9 +32,19 @@ trait Output extends StObject {
   var EntitlementArn: js.UndefOr[string] = js.undefined
   
   /**
+    * The IP address that the receiver requires in order to establish a connection with the flow. For public networking, the ListenerAddress is represented by the elastic IP address of the flow. For private networking, the ListenerAddress is represented by the elastic network interface IP address of the VPC. This field applies only to outputs that use the Zixi pull or SRT listener protocol.
+    */
+  var ListenerAddress: js.UndefOr[string] = js.undefined
+  
+  /**
     * The input ARN of the AWS Elemental MediaLive channel. This parameter is relevant only for outputs that were added by creating a MediaLive input.
     */
   var MediaLiveInputArn: js.UndefOr[string] = js.undefined
+  
+  /**
+    * The configuration for each media stream that is associated with the output.
+    */
+  var MediaStreamOutputConfigurations: js.UndefOr[listOfMediaStreamOutputConfiguration] = js.undefined
   
   /**
     * The name of the output. This value must be unique within the current flow.
@@ -90,9 +100,19 @@ object Output {
     
     inline def setEntitlementArnUndefined: Self = StObject.set(x, "EntitlementArn", js.undefined)
     
+    inline def setListenerAddress(value: string): Self = StObject.set(x, "ListenerAddress", value.asInstanceOf[js.Any])
+    
+    inline def setListenerAddressUndefined: Self = StObject.set(x, "ListenerAddress", js.undefined)
+    
     inline def setMediaLiveInputArn(value: string): Self = StObject.set(x, "MediaLiveInputArn", value.asInstanceOf[js.Any])
     
     inline def setMediaLiveInputArnUndefined: Self = StObject.set(x, "MediaLiveInputArn", js.undefined)
+    
+    inline def setMediaStreamOutputConfigurations(value: listOfMediaStreamOutputConfiguration): Self = StObject.set(x, "MediaStreamOutputConfigurations", value.asInstanceOf[js.Any])
+    
+    inline def setMediaStreamOutputConfigurationsUndefined: Self = StObject.set(x, "MediaStreamOutputConfigurations", js.undefined)
+    
+    inline def setMediaStreamOutputConfigurationsVarargs(value: MediaStreamOutputConfiguration*): Self = StObject.set(x, "MediaStreamOutputConfigurations", js.Array(value*))
     
     inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

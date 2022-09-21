@@ -10,14 +10,14 @@ trait RouterChangeEvent
   
   var backButtonPressed: Boolean
   
-  var params: js.Any
+  var params: Any
 }
 object RouterChangeEvent {
   
   inline def apply(
     backButtonPressed: Boolean,
     isDefaultPrevented: () => Boolean,
-    params: js.Any,
+    params: Any,
     preventDefault: js.Function,
     sender: Router,
     url: String
@@ -30,6 +30,6 @@ object RouterChangeEvent {
     
     inline def setBackButtonPressed(value: Boolean): Self = StObject.set(x, "backButtonPressed", value.asInstanceOf[js.Any])
     
-    inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
   }
 }

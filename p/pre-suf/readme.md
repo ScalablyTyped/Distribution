@@ -10,10 +10,10 @@ Manipulate strings with prefixes and suffixes.
 | ------------------ | :-------------: |
 | Full name          | pre-suf |
 | Keywords           | pre-suf, prefix, suffix, string, replace, leading, ending, remove, ensure |
-| # releases         | 2 |
-| # dependents       | 6 |
-| # downloads        | 31611 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2749.3333333333335 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/kaelzhang/node-pre-suf#readme)

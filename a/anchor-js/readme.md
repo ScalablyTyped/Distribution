@@ -10,15 +10,13 @@ A JavaScript utility for adding deep anchor links to online docs.
 | ------------------ | :-------------: |
 | Full name          | anchor-js |
 | Keywords           | anchor, links, urlify |
-| # releases         | 4 |
-| # dependents       | 19 |
-| # downloads        | 109957 |
-| # stars            | 2 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 20165.666666666668 |
+| # stars            | 834.0 |
 
 ## Links
 - [Homepage](https://www.bryanbraun.com/anchorjs/)
-- [Bugs](https://github.com/bryanbraun/anchorjs/issues)
-- [Repository](https://github.com/bryanbraun/anchorjs)
 - [Npm](https://www.npmjs.com/package/anchor-js)
     
 

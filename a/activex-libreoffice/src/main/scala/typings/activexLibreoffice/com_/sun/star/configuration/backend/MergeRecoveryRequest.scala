@@ -27,7 +27,7 @@ trait MergeRecoveryRequest
     *
     * If no more detail information is available, this may be left `VOID` .
     */
-  var ErrorDetails: js.Any
+  var ErrorDetails: Any
   
   /** Identifier of the layer object containing the invalid data. */
   var ErrorLayerId: String
@@ -44,7 +44,7 @@ object MergeRecoveryRequest {
   
   inline def apply(
     Context: XInterface,
-    ErrorDetails: js.Any,
+    ErrorDetails: Any,
     ErrorLayerId: String,
     IsRemovalRequest: Boolean,
     Message: String
@@ -55,7 +55,7 @@ object MergeRecoveryRequest {
   
   extension [Self <: MergeRecoveryRequest](x: Self) {
     
-    inline def setErrorDetails(value: js.Any): Self = StObject.set(x, "ErrorDetails", value.asInstanceOf[js.Any])
+    inline def setErrorDetails(value: Any): Self = StObject.set(x, "ErrorDetails", value.asInstanceOf[js.Any])
     
     inline def setErrorLayerId(value: String): Self = StObject.set(x, "ErrorLayerId", value.asInstanceOf[js.Any])
     

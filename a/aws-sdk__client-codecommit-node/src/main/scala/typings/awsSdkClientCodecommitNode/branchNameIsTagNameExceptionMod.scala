@@ -8,5 +8,5 @@ object branchNameIsTagNameExceptionMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/BranchNameIsTagNameException", "BranchNameIsTagNameException")
   @js.native
-  val BranchNameIsTagNameException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val BranchNameIsTagNameException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

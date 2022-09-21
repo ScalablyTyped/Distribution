@@ -17,7 +17,7 @@ trait ListMembersRequest extends StObject {
   var nextToken: js.UndefOr[string] = js.undefined
   
   /**
-    * Specifies which accounts to include in the response, based on the status of an account's relationship with the master account. By default, the response includes only current member accounts. To include all accounts, set the value for this parameter to false.
+    * Specifies which accounts to include in the response, based on the status of an account's relationship with the administrator account. By default, the response includes only current member accounts. To include all accounts, set this value to false.
     */
   var onlyAssociated: js.UndefOr[string] = js.undefined
 }

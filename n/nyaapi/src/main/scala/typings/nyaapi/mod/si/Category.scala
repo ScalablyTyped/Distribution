@@ -14,140 +14,140 @@ object Category extends StObject {
   def apply(value: String): js.UndefOr[Category & String] = js.native
   
   @js.native
-  sealed trait ANIME
+  sealed trait `1_0`
     extends StObject
        with Category
-  /* "1_0" */ val ANIME: typings.nyaapi.mod.si.Category.ANIME & String = js.native
+  /* "ANIME" */ val `1_0`: typings.nyaapi.mod.si.Category.`1_0` & String = js.native
   
   @js.native
-  sealed trait ANIME_AMV
+  sealed trait `1_1`
     extends StObject
        with Category
-  /* "1_1" */ val ANIME_AMV: typings.nyaapi.mod.si.Category.ANIME_AMV & String = js.native
+  /* "ANIME_AMV" */ val `1_1`: typings.nyaapi.mod.si.Category.`1_1` & String = js.native
   
   @js.native
-  sealed trait ANIME_ENGLISH
+  sealed trait `1_2`
     extends StObject
        with Category
-  /* "1_2" */ val ANIME_ENGLISH: typings.nyaapi.mod.si.Category.ANIME_ENGLISH & String = js.native
+  /* "ANIME_ENGLISH" */ val `1_2`: typings.nyaapi.mod.si.Category.`1_2` & String = js.native
   
   @js.native
-  sealed trait ANIME_NON_ENGLISH
+  sealed trait `1_3`
     extends StObject
        with Category
-  /* "1_3" */ val ANIME_NON_ENGLISH: typings.nyaapi.mod.si.Category.ANIME_NON_ENGLISH & String = js.native
+  /* "ANIME_NON_ENGLISH" */ val `1_3`: typings.nyaapi.mod.si.Category.`1_3` & String = js.native
   
   @js.native
-  sealed trait ANIME_RAW
+  sealed trait `1_4`
     extends StObject
        with Category
-  /* "1_4" */ val ANIME_RAW: typings.nyaapi.mod.si.Category.ANIME_RAW & String = js.native
+  /* "ANIME_RAW" */ val `1_4`: typings.nyaapi.mod.si.Category.`1_4` & String = js.native
   
   @js.native
-  sealed trait AUDIO
+  sealed trait `2_0`
     extends StObject
        with Category
-  /* "2_0" */ val AUDIO: typings.nyaapi.mod.si.Category.AUDIO & String = js.native
+  /* "AUDIO" */ val `2_0`: typings.nyaapi.mod.si.Category.`2_0` & String = js.native
   
   @js.native
-  sealed trait AUDIO_LOSSLESS
+  sealed trait `2_1`
     extends StObject
        with Category
-  /* "2_1" */ val AUDIO_LOSSLESS: typings.nyaapi.mod.si.Category.AUDIO_LOSSLESS & String = js.native
+  /* "AUDIO_LOSSLESS" */ val `2_1`: typings.nyaapi.mod.si.Category.`2_1` & String = js.native
   
   @js.native
-  sealed trait AUDIO_LOSSY
+  sealed trait `2_2`
     extends StObject
        with Category
-  /* "2_2" */ val AUDIO_LOSSY: typings.nyaapi.mod.si.Category.AUDIO_LOSSY & String = js.native
+  /* "AUDIO_LOSSY" */ val `2_2`: typings.nyaapi.mod.si.Category.`2_2` & String = js.native
   
   @js.native
-  sealed trait LITERATURE
+  sealed trait `3_0`
     extends StObject
        with Category
-  /* "3_0" */ val LITERATURE: typings.nyaapi.mod.si.Category.LITERATURE & String = js.native
+  /* "LITERATURE" */ val `3_0`: typings.nyaapi.mod.si.Category.`3_0` & String = js.native
   
   @js.native
-  sealed trait LITERATURE_ENGLISH
+  sealed trait `3_1`
     extends StObject
        with Category
-  /* "3_1" */ val LITERATURE_ENGLISH: typings.nyaapi.mod.si.Category.LITERATURE_ENGLISH & String = js.native
+  /* "LITERATURE_ENGLISH" */ val `3_1`: typings.nyaapi.mod.si.Category.`3_1` & String = js.native
   
   @js.native
-  sealed trait LITERATURE_NON_ENGLISH
+  sealed trait `3_2`
     extends StObject
        with Category
-  /* "3_2" */ val LITERATURE_NON_ENGLISH: typings.nyaapi.mod.si.Category.LITERATURE_NON_ENGLISH & String = js.native
+  /* "LITERATURE_NON_ENGLISH" */ val `3_2`: typings.nyaapi.mod.si.Category.`3_2` & String = js.native
   
   @js.native
-  sealed trait LITERATURE_RAW
+  sealed trait `3_3`
     extends StObject
        with Category
-  /* "3_3" */ val LITERATURE_RAW: typings.nyaapi.mod.si.Category.LITERATURE_RAW & String = js.native
+  /* "LITERATURE_RAW" */ val `3_3`: typings.nyaapi.mod.si.Category.`3_3` & String = js.native
   
   @js.native
-  sealed trait LIVE_ACTION
+  sealed trait `4_0`
     extends StObject
        with Category
-  /* "4_0" */ val LIVE_ACTION: typings.nyaapi.mod.si.Category.LIVE_ACTION & String = js.native
+  /* "LIVE_ACTION" */ val `4_0`: typings.nyaapi.mod.si.Category.`4_0` & String = js.native
   
   @js.native
-  sealed trait LIVE_ACTION_ENGLISH
+  sealed trait `4_1`
     extends StObject
        with Category
-  /* "4_1" */ val LIVE_ACTION_ENGLISH: typings.nyaapi.mod.si.Category.LIVE_ACTION_ENGLISH & String = js.native
+  /* "LIVE_ACTION_ENGLISH" */ val `4_1`: typings.nyaapi.mod.si.Category.`4_1` & String = js.native
   
   @js.native
-  sealed trait LIVE_ACTION_IDOL_PV
+  sealed trait `4_2`
     extends StObject
        with Category
-  /* "4_2" */ val LIVE_ACTION_IDOL_PV: typings.nyaapi.mod.si.Category.LIVE_ACTION_IDOL_PV & String = js.native
+  /* "LIVE_ACTION_IDOL_PV" */ val `4_2`: typings.nyaapi.mod.si.Category.`4_2` & String = js.native
   
   @js.native
-  sealed trait LIVE_ACTION_NON_ENGLISH
+  sealed trait `4_3`
     extends StObject
        with Category
-  /* "4_3" */ val LIVE_ACTION_NON_ENGLISH: typings.nyaapi.mod.si.Category.LIVE_ACTION_NON_ENGLISH & String = js.native
+  /* "LIVE_ACTION_NON_ENGLISH" */ val `4_3`: typings.nyaapi.mod.si.Category.`4_3` & String = js.native
   
   @js.native
-  sealed trait LIVE_ACTION_RAW
+  sealed trait `4_4`
     extends StObject
        with Category
-  /* "4_4" */ val LIVE_ACTION_RAW: typings.nyaapi.mod.si.Category.LIVE_ACTION_RAW & String = js.native
+  /* "LIVE_ACTION_RAW" */ val `4_4`: typings.nyaapi.mod.si.Category.`4_4` & String = js.native
   
   @js.native
-  sealed trait PICTURES
+  sealed trait `5_0`
     extends StObject
        with Category
-  /* "5_0" */ val PICTURES: typings.nyaapi.mod.si.Category.PICTURES & String = js.native
+  /* "PICTURES" */ val `5_0`: typings.nyaapi.mod.si.Category.`5_0` & String = js.native
   
   @js.native
-  sealed trait PICTURES_GRAPHICS
+  sealed trait `5_1`
     extends StObject
        with Category
-  /* "5_1" */ val PICTURES_GRAPHICS: typings.nyaapi.mod.si.Category.PICTURES_GRAPHICS & String = js.native
+  /* "PICTURES_GRAPHICS" */ val `5_1`: typings.nyaapi.mod.si.Category.`5_1` & String = js.native
   
   @js.native
-  sealed trait PICTURES_PHOTOS
+  sealed trait `5_2`
     extends StObject
        with Category
-  /* "5_2" */ val PICTURES_PHOTOS: typings.nyaapi.mod.si.Category.PICTURES_PHOTOS & String = js.native
+  /* "PICTURES_PHOTOS" */ val `5_2`: typings.nyaapi.mod.si.Category.`5_2` & String = js.native
   
   @js.native
-  sealed trait SOFTWARE
+  sealed trait `6_0`
     extends StObject
        with Category
-  /* "6_0" */ val SOFTWARE: typings.nyaapi.mod.si.Category.SOFTWARE & String = js.native
+  /* "SOFTWARE" */ val `6_0`: typings.nyaapi.mod.si.Category.`6_0` & String = js.native
   
   @js.native
-  sealed trait SOFTWARE_APPS
+  sealed trait `6_1`
     extends StObject
        with Category
-  /* "6_1" */ val SOFTWARE_APPS: typings.nyaapi.mod.si.Category.SOFTWARE_APPS & String = js.native
+  /* "SOFTWARE_APPS" */ val `6_1`: typings.nyaapi.mod.si.Category.`6_1` & String = js.native
   
   @js.native
-  sealed trait SOFTWARE_GAMES
+  sealed trait `6_2`
     extends StObject
        with Category
-  /* "6_2" */ val SOFTWARE_GAMES: typings.nyaapi.mod.si.Category.SOFTWARE_GAMES & String = js.native
+  /* "SOFTWARE_GAMES" */ val `6_2`: typings.nyaapi.mod.si.Category.`6_2` & String = js.native
 }

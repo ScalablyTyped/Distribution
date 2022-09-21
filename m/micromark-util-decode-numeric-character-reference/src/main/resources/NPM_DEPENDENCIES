@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "micromark-util-decode-numeric-character-reference" : "1.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "micromark-util-decode-numeric-character-reference" : "1.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

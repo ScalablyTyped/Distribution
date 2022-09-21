@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Curry extends StObject {
   
-  def apply(func: js.Function1[/* repeated */ js.Any, js.Any]): js.Function1[/* repeated */ js.Any, js.Any] = js.native
-  def apply(func: js.Function1[/* repeated */ js.Any, js.Any], arity: Double): js.Function1[/* repeated */ js.Any, js.Any] = js.native
+  def apply(func: js.Function1[/* repeated */ Any, Any]): js.Function1[/* repeated */ Any, Any] = js.native
+  def apply(func: js.Function1[/* repeated */ Any, Any], arity: Double): js.Function1[/* repeated */ Any, Any] = js.native
   def apply[T1, T2, R](func: js.Function2[/* t1 */ T1, /* t2 */ T2, R]): CurriedFunction2[T1, T2, R] = js.native
   def apply[T1, T2, R](func: js.Function2[/* t1 */ T1, /* t2 */ T2, R], arity: Double): CurriedFunction2[T1, T2, R] = js.native
   def apply[T1, T2, T3, R](func: js.Function3[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, R]): CurriedFunction3[T1, T2, T3, R] = js.native
@@ -23,16 +23,16 @@ trait Curry extends StObject {
   
   def placeholder(): String = js.native
   def placeholder(value: java.lang.String): String = js.native
-  def placeholder[T /* <: js.Function1[/* args */ js.Any, js.Any] */](value: T): Function[T] = js.native
+  def placeholder[T /* <: js.Object */](value: T): Object[T] = js.native
   def placeholder[T](value: List[T]): Collection[T] = js.native
   @JSName("placeholder")
   var placeholder_Original: __ = js.native
   @JSName("placeholder")
   def placeholder_T_Collection[T](): Collection[T] = js.native
   @JSName("placeholder")
-  def placeholder_T_Object_Object[T /* <: js.Object */](): Object[T] = js.native
+  def placeholder_T_Function1AnyAny_Function[T /* <: js.Function1[/* args */ Any, Any] */](value: T): Function[T] = js.native
   @JSName("placeholder")
-  def placeholder_T_Object_Object[T /* <: js.Object */](value: T): Object[T] = js.native
+  def placeholder_T_Object_Object[T /* <: js.Object */](): Object[T] = js.native
   @JSName("placeholder")
   def placeholder_T_Primitive[T](value: T): Primitive[T] = js.native
   @JSName("placeholder")
@@ -106,5 +106,5 @@ trait Curry extends StObject {
     * upperFirst, value, and words.
     **/
   @JSName("placeholder")
-  def placeholder_TrapAny_TrapAny_Intersection[TrapAny /* <: typings.lodash.anon.TrapAny */](value: TrapAny): Collection[js.Any] & Function[js.Any] & Object[js.Any] & Primitive[js.Any] & String = js.native
+  def placeholder_TrapAny_TrapAny_Intersection[TrapAny /* <: typings.lodash.anon.TrapAny */](value: TrapAny): Collection[Any] & Function[Any] & Object[Any] & Primitive[Any] & String = js.native
 }

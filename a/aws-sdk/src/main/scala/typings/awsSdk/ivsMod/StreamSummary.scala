@@ -17,9 +17,9 @@ trait StreamSummary extends StObject {
   var health: js.UndefOr[StreamHealth] = js.undefined
   
   /**
-    * ISO-8601 formatted timestamp of the stream’s start.
+    * Time of the stream’s start. This is an ISO 8601 timestamp; note that this is returned as a string. 
     */
-  var startTime: js.UndefOr[StreamStartTime] = js.undefined
+  var startTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The stream’s state.
@@ -27,7 +27,12 @@ trait StreamSummary extends StObject {
   var state: js.UndefOr[StreamState] = js.undefined
   
   /**
-    * Number of current viewers of the stream.
+    * Unique identifier for a live or previously live stream in the specified channel.
+    */
+  var streamId: js.UndefOr[StreamId] = js.undefined
+  
+  /**
+    * A count of concurrent views of the stream. Typically, a new view appears in viewerCount within 15 seconds of when video playback starts and a view is removed from viewerCount within 1 minute of when video playback ends. A value of -1 indicates that the request timed out; in this case, retry.
     */
   var viewerCount: js.UndefOr[StreamViewerCount] = js.undefined
 }
@@ -48,13 +53,17 @@ object StreamSummary {
     
     inline def setHealthUndefined: Self = StObject.set(x, "health", js.undefined)
     
-    inline def setStartTime(value: StreamStartTime): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
     inline def setState(value: StreamState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    
+    inline def setStreamId(value: StreamId): Self = StObject.set(x, "streamId", value.asInstanceOf[js.Any])
+    
+    inline def setStreamIdUndefined: Self = StObject.set(x, "streamId", js.undefined)
     
     inline def setViewerCount(value: StreamViewerCount): Self = StObject.set(x, "viewerCount", value.asInstanceOf[js.Any])
     

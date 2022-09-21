@@ -23,7 +23,7 @@ object SanitizeOpts {
     
     inline def setElements(value: js.Array[String]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
-    inline def setElementsVarargs(value: String*): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: String*): Self = StObject.set(x, "elements", js.Array(value*))
     
     inline def setEventAttributes(value: Boolean): Self = StObject.set(x, "eventAttributes", value.asInstanceOf[js.Any])
     

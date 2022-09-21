@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "p-filter" : "2.1.0"
+      "p-filter" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "p-filter" : "2.1.0"
+      "p-filter" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

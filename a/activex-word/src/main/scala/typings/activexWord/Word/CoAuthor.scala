@@ -20,7 +20,7 @@ trait CoAuthor extends StObject {
   
   val Name: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.CoAuthor_typekey")
   var WordDotCoAuthor_typekey: CoAuthor
@@ -35,7 +35,7 @@ object CoAuthor {
     IsMe: Boolean,
     Locks: CoAuthLocks,
     Name: String,
-    Parent: js.Any,
+    Parent: Any,
     WordDotCoAuthor_typekey: CoAuthor
   ): CoAuthor = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], EmailAddress = EmailAddress.asInstanceOf[js.Any], ID = ID.asInstanceOf[js.Any], IsMe = IsMe.asInstanceOf[js.Any], Locks = Locks.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any])
@@ -59,7 +59,7 @@ object CoAuthor {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotCoAuthor_typekey(value: CoAuthor): Self = StObject.set(x, "Word.CoAuthor_typekey", value.asInstanceOf[js.Any])
   }

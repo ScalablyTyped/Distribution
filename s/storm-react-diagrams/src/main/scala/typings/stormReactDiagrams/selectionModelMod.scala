@@ -16,14 +16,14 @@ object selectionModelMod {
     
     var initialY: Double
     
-    var model: BaseModel[BaseEntity[BaseListener[js.Any]], BaseModelListener]
+    var model: BaseModel[BaseEntity[BaseListener[Any]], BaseModelListener]
   }
   object SelectionModel {
     
     inline def apply(
       initialX: Double,
       initialY: Double,
-      model: BaseModel[BaseEntity[BaseListener[js.Any]], BaseModelListener]
+      model: BaseModel[BaseEntity[BaseListener[Any]], BaseModelListener]
     ): SelectionModel = {
       val __obj = js.Dynamic.literal(initialX = initialX.asInstanceOf[js.Any], initialY = initialY.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any])
       __obj.asInstanceOf[SelectionModel]
@@ -35,7 +35,7 @@ object selectionModelMod {
       
       inline def setInitialY(value: Double): Self = StObject.set(x, "initialY", value.asInstanceOf[js.Any])
       
-      inline def setModel(value: BaseModel[BaseEntity[BaseListener[js.Any]], BaseModelListener]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: BaseModel[BaseEntity[BaseListener[Any]], BaseModelListener]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     }
   }
 }

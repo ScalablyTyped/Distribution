@@ -13,7 +13,7 @@ object mod {
   
   @JSImport("typescript-collections", "BSTree")
   @js.native
-  class BSTree[T] () extends default[T]
+  open class BSTree[T] () extends default[T]
   
   @JSImport("typescript-collections", "BSTreeKV")
   @js.native
@@ -52,7 +52,7 @@ object mod {
     * zero, or a positive integer as the first argument is less than, equal to,
     * or greater than the second.
     */
-  class BSTreeKV[K, V /* <: K */] ()
+  open class BSTreeKV[K, V /* <: K */] ()
     extends typings.typescriptCollections.bstreekvMod.default[K, V] {
     def this(compareFunction: ICompareFunction[K]) = this()
   }
@@ -78,14 +78,14 @@ object mod {
     * is not appropriate, a custom function which receives an object and returns a
     * unique string must be provided.
     */
-  class Bag[T] ()
+  open class Bag[T] ()
     extends typings.typescriptCollections.bagMod.default[T] {
     def this(toStrFunction: js.Function1[/* item */ T, String]) = this()
   }
   
   @JSImport("typescript-collections", "DefaultDictionary")
   @js.native
-  class DefaultDictionary[K, V] protected ()
+  open class DefaultDictionary[K, V] protected ()
     extends typings.typescriptCollections.factoryDictionaryMod.default[K, V] {
     /**
       * Creates an empty dictionary.
@@ -139,14 +139,14 @@ object mod {
     * is not appropriate, a custom function which receives a key and returns a
     * unique string must be provided.
     */
-  class Dictionary[K, V] ()
+  open class Dictionary[K, V] ()
     extends typings.typescriptCollections.dictionaryMod.default[K, V] {
     def this(toStrFunction: js.Function1[/* key */ K, String]) = this()
   }
   
   @JSImport("typescript-collections", "FactoryDictionary")
   @js.native
-  class FactoryDictionary[K, V] protected ()
+  open class FactoryDictionary[K, V] protected ()
     extends typings.typescriptCollections.factoryDictionaryMod.default[K, V] {
     /**
       * Creates an empty dictionary.
@@ -225,14 +225,14 @@ object mod {
     * zero, or a positive integer as the first argument is less than, equal to,
     * or greater than the second.
     */
-  class Heap[T] ()
+  open class Heap[T] ()
     extends typings.typescriptCollections.heapMod.default[T] {
     def this(compareFunction: ICompareFunction[T]) = this()
   }
   
   @JSImport("typescript-collections", "LinkedDictionary")
   @js.native
-  class LinkedDictionary[K, V] ()
+  open class LinkedDictionary[K, V] ()
     extends typings.typescriptCollections.linkedDictionaryMod.default[K, V] {
     def this(toStrFunction: js.Function1[/* key */ K, String]) = this()
   }
@@ -245,7 +245,7 @@ object mod {
     * which together represent a sequence.
     * @constructor
     */
-  class LinkedList[T] ()
+  open class LinkedList[T] ()
     extends typings.typescriptCollections.linkedListMod.default[T]
   
   @JSImport("typescript-collections", "MultiDictionary")
@@ -285,7 +285,7 @@ object mod {
     *
     * @param allowDuplicateValues
     */
-  class MultiDictionary[K, V] ()
+  open class MultiDictionary[K, V] ()
     extends typings.typescriptCollections.multiDictionaryMod.default[K, V] {
     def this(toStrFunction: js.Function1[/* key */ K, String]) = this()
     def this(toStrFunction: js.Function1[/* key */ K, String], valuesEqualsFunction: IEqualsFunction[V]) = this()
@@ -306,7 +306,7 @@ object mod {
   
   @JSImport("typescript-collections", "MultiRootTree")
   @js.native
-  class MultiRootTree ()
+  open class MultiRootTree ()
     extends typings.typescriptCollections.multiRootTreeMod.default {
     def this(rootIds: js.Array[String]) = this()
     def this(rootIds: js.Array[String], nodes: StringDictionary[js.Array[String]]) = this()
@@ -339,7 +339,7 @@ object mod {
     * zero, or a positive integer as the first argument is less than, equal to,
     * or greater than the second.
     */
-  class PriorityQueue[T] ()
+  open class PriorityQueue[T] ()
     extends typings.typescriptCollections.priorityQueueMod.default[T] {
     def this(compareFunction: ICompareFunction[T]) = this()
   }
@@ -353,7 +353,7 @@ object mod {
     * implementation uses a linked list as a container.
     * @constructor
     */
-  class Queue[T] ()
+  open class Queue[T] ()
     extends typings.typescriptCollections.queueMod.default[T]
   
   @JSImport("typescript-collections", "Set")
@@ -376,7 +376,7 @@ object mod {
     * is not appropriate, a custom function which receives an object and returns a
     * unique string must be provided.
     */
-  class Set[T] ()
+  open class Set[T] ()
     extends typings.typescriptCollections.setMod.default[T] {
     def this(toStringFunction: js.Function1[/* item */ T, String]) = this()
   }
@@ -390,7 +390,7 @@ object mod {
     * implementation uses a linked list as a container.
     * @constructor
     */
-  class Stack[T] ()
+  open class Stack[T] ()
     extends typings.typescriptCollections.stackMod.default[T]
   
   object arrays {
@@ -438,15 +438,15 @@ object mod {
     
     inline def defaultEquals[T](a: T, b: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultEquals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def defaultToString(item: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultToString")(item.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def defaultToString(item: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultToString")(item.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    inline def has(obj: js.Any, prop: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(obj.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def has(obj: Any, prop: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(obj.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def isFunction(func: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(func.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isFunction(func: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(func.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    inline def isString(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isString(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    inline def isUndefined(obj: js.Any): /* is undefined */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUndefined")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is undefined */ Boolean]
+    inline def isUndefined(obj: Any): /* is undefined */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUndefined")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is undefined */ Boolean]
     
     inline def makeString[T](item: T): String = ^.asInstanceOf[js.Dynamic].applyDynamic("makeString")(item.asInstanceOf[js.Any]).asInstanceOf[String]
     inline def makeString[T](item: T, join: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("makeString")(item.asInstanceOf[js.Any], join.asInstanceOf[js.Any])).asInstanceOf[String]

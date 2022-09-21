@@ -16,22 +16,26 @@ object mod {
   
   trait AudioPlayHandle extends StObject {
     
-    def pause(): js.Any
+    var currentTime: Double
     
-    def play(): js.Any
+    def pause(): Any
+    
+    def play(): Any
   }
   object AudioPlayHandle {
     
-    inline def apply(pause: () => js.Any, play: () => js.Any): AudioPlayHandle = {
-      val __obj = js.Dynamic.literal(pause = js.Any.fromFunction0(pause), play = js.Any.fromFunction0(play))
+    inline def apply(currentTime: Double, pause: () => Any, play: () => Any): AudioPlayHandle = {
+      val __obj = js.Dynamic.literal(currentTime = currentTime.asInstanceOf[js.Any], pause = js.Any.fromFunction0(pause), play = js.Any.fromFunction0(play))
       __obj.asInstanceOf[AudioPlayHandle]
     }
     
     extension [Self <: AudioPlayHandle](x: Self) {
       
-      inline def setPause(value: () => js.Any): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
+      inline def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
       
-      inline def setPlay(value: () => js.Any): Self = StObject.set(x, "play", js.Any.fromFunction0(value))
+      inline def setPause(value: () => Any): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
+      
+      inline def setPlay(value: () => Any): Self = StObject.set(x, "play", js.Any.fromFunction0(value))
     }
   }
   

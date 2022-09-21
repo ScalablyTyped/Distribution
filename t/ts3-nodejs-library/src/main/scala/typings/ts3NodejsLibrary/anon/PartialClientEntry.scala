@@ -176,7 +176,7 @@ object PartialClientEntry {
     
     inline def setClientServergroupsUndefined: Self = StObject.set(x, "clientServergroups", js.undefined)
     
-    inline def setClientServergroupsVarargs(value: String*): Self = StObject.set(x, "clientServergroups", js.Array(value :_*))
+    inline def setClientServergroupsVarargs(value: String*): Self = StObject.set(x, "clientServergroups", js.Array(value*))
     
     inline def setClientTalkPower(value: Double): Self = StObject.set(x, "clientTalkPower", value.asInstanceOf[js.Any])
     

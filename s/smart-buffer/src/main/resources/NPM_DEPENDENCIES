@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "smart-buffer" : "4.1.0"
+      "smart-buffer" : "4.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "smart-buffer" : "4.1.0"
+      "smart-buffer" : "4.2.0"
     }
   ],
   "compile-devDependencies" : [

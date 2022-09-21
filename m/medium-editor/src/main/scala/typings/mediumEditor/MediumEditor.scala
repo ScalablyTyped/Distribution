@@ -156,7 +156,7 @@ object MediumEditor {
       
       inline def setClassListUndefined: Self = StObject.set(x, "classList", js.undefined)
       
-      inline def setClassListVarargs(value: String*): Self = StObject.set(x, "classList", js.Array(value :_*))
+      inline def setClassListVarargs(value: String*): Self = StObject.set(x, "classList", js.Array(value*))
       
       inline def setContentDefault(value: String): Self = StObject.set(x, "contentDefault", value.asInstanceOf[js.Any])
       
@@ -178,7 +178,7 @@ object MediumEditor {
       
       inline def setTagNamesUndefined: Self = StObject.set(x, "tagNames", js.undefined)
       
-      inline def setTagNamesVarargs(value: String*): Self = StObject.set(x, "tagNames", js.Array(value :_*))
+      inline def setTagNamesVarargs(value: String*): Self = StObject.set(x, "tagNames", js.Array(value*))
       
       inline def setUseQueryState(value: Boolean): Self = StObject.set(x, "useQueryState", value.asInstanceOf[js.Any])
       
@@ -214,7 +214,7 @@ object MediumEditor {
     
     var elementsContainer: js.UndefOr[HTMLElement] = js.undefined
     
-    var extensions: js.UndefOr[js.Any] = js.undefined
+    var extensions: js.UndefOr[Any] = js.undefined
     
     var imageDragging: js.UndefOr[Boolean] = js.undefined
     
@@ -293,7 +293,7 @@ object MediumEditor {
       
       inline def setElementsContainerUndefined: Self = StObject.set(x, "elementsContainer", js.undefined)
       
-      inline def setExtensions(value: js.Any): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: Any): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
       inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
@@ -410,7 +410,7 @@ object MediumEditor {
       
       inline def setCommandsUndefined: Self = StObject.set(x, "commands", js.undefined)
       
-      inline def setCommandsVarargs(value: KeyboardCommandOptions*): Self = StObject.set(x, "commands", js.Array(value :_*))
+      inline def setCommandsVarargs(value: KeyboardCommandOptions*): Self = StObject.set(x, "commands", js.Array(value*))
     }
   }
   
@@ -439,7 +439,7 @@ object MediumEditor {
     
     def createLink(opts: CreateLinkOptions): Unit = js.native
     
-    def delay(fn: js.Function0[js.Any]): Unit = js.native
+    def delay(fn: js.Function0[Any]): Unit = js.native
     
     def destroy(): Unit = js.native
     
@@ -455,7 +455,7 @@ object MediumEditor {
     // Static Function
     def getEditorFromElement(element: HTMLElement): typings.mediumEditor.MediumEditor.MediumEditor = js.native
     
-    def getExtensionByName(name: String): js.Any = js.native
+    def getExtensionByName(name: String): Any = js.native
     
     def getFocusedElement(): HTMLElement = js.native
     
@@ -508,7 +508,7 @@ object MediumEditor {
     
     def selectElement(element: HTMLElement): Unit = js.native
     
-    def serialize(): js.Any = js.native
+    def serialize(): Any = js.native
     
     def setContent(html: String): Unit = js.native
     def setContent(html: String, index: Double): Unit = js.native
@@ -519,11 +519,11 @@ object MediumEditor {
     
     def stopSelectionUpdates(): Unit = js.native
     
-    def subscribe(name: String, listener: js.Function2[/* data */ js.Any, /* editable */ HTMLElement, Unit]): typings.mediumEditor.MediumEditor.MediumEditor = js.native
+    def subscribe(name: String, listener: js.Function2[/* data */ Any, /* editable */ HTMLElement, Unit]): typings.mediumEditor.MediumEditor.MediumEditor = js.native
     
-    def trigger(name: String, data: js.Any, editable: HTMLElement): typings.mediumEditor.MediumEditor.MediumEditor = js.native
+    def trigger(name: String, data: Any, editable: HTMLElement): typings.mediumEditor.MediumEditor.MediumEditor = js.native
     
-    def unsubscribe(name: String, listener: js.Function2[/* data */ js.Any, /* editable */ HTMLElement, Unit]): typings.mediumEditor.MediumEditor.MediumEditor = js.native
+    def unsubscribe(name: String, listener: js.Function2[/* data */ Any, /* editable */ HTMLElement, Unit]): typings.mediumEditor.MediumEditor.MediumEditor = js.native
     
     // Properties
     var version: Major = js.native
@@ -550,19 +550,19 @@ object MediumEditor {
       
       inline def setCleanAttrsUndefined: Self = StObject.set(x, "cleanAttrs", js.undefined)
       
-      inline def setCleanAttrsVarargs(value: String*): Self = StObject.set(x, "cleanAttrs", js.Array(value :_*))
+      inline def setCleanAttrsVarargs(value: String*): Self = StObject.set(x, "cleanAttrs", js.Array(value*))
       
       inline def setCleanTags(value: js.Array[String]): Self = StObject.set(x, "cleanTags", value.asInstanceOf[js.Any])
       
       inline def setCleanTagsUndefined: Self = StObject.set(x, "cleanTags", js.undefined)
       
-      inline def setCleanTagsVarargs(value: String*): Self = StObject.set(x, "cleanTags", js.Array(value :_*))
+      inline def setCleanTagsVarargs(value: String*): Self = StObject.set(x, "cleanTags", js.Array(value*))
       
       inline def setUnwrapTags(value: js.Array[String]): Self = StObject.set(x, "unwrapTags", value.asInstanceOf[js.Any])
       
       inline def setUnwrapTagsUndefined: Self = StObject.set(x, "unwrapTags", js.undefined)
       
-      inline def setUnwrapTagsVarargs(value: String*): Self = StObject.set(x, "unwrapTags", js.Array(value :_*))
+      inline def setUnwrapTagsVarargs(value: String*): Self = StObject.set(x, "unwrapTags", js.Array(value*))
     }
   }
   
@@ -572,13 +572,13 @@ object MediumEditor {
     
     var cleanPastedHTML: js.UndefOr[Boolean] = js.undefined
     
-    var cleanReplacements: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var cleanReplacements: js.UndefOr[js.Array[Any]] = js.undefined
     
     var cleanTags: js.UndefOr[js.Array[String]] = js.undefined
     
     var forcePlainText: js.UndefOr[Boolean] = js.undefined
     
-    var preCleanReplacements: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var preCleanReplacements: js.UndefOr[js.Array[Any]] = js.undefined
     
     var unwrapTags: js.UndefOr[js.Array[String]] = js.undefined
   }
@@ -595,39 +595,39 @@ object MediumEditor {
       
       inline def setCleanAttrsUndefined: Self = StObject.set(x, "cleanAttrs", js.undefined)
       
-      inline def setCleanAttrsVarargs(value: String*): Self = StObject.set(x, "cleanAttrs", js.Array(value :_*))
+      inline def setCleanAttrsVarargs(value: String*): Self = StObject.set(x, "cleanAttrs", js.Array(value*))
       
       inline def setCleanPastedHTML(value: Boolean): Self = StObject.set(x, "cleanPastedHTML", value.asInstanceOf[js.Any])
       
       inline def setCleanPastedHTMLUndefined: Self = StObject.set(x, "cleanPastedHTML", js.undefined)
       
-      inline def setCleanReplacements(value: js.Array[js.Any]): Self = StObject.set(x, "cleanReplacements", value.asInstanceOf[js.Any])
+      inline def setCleanReplacements(value: js.Array[Any]): Self = StObject.set(x, "cleanReplacements", value.asInstanceOf[js.Any])
       
       inline def setCleanReplacementsUndefined: Self = StObject.set(x, "cleanReplacements", js.undefined)
       
-      inline def setCleanReplacementsVarargs(value: js.Any*): Self = StObject.set(x, "cleanReplacements", js.Array(value :_*))
+      inline def setCleanReplacementsVarargs(value: Any*): Self = StObject.set(x, "cleanReplacements", js.Array(value*))
       
       inline def setCleanTags(value: js.Array[String]): Self = StObject.set(x, "cleanTags", value.asInstanceOf[js.Any])
       
       inline def setCleanTagsUndefined: Self = StObject.set(x, "cleanTags", js.undefined)
       
-      inline def setCleanTagsVarargs(value: String*): Self = StObject.set(x, "cleanTags", js.Array(value :_*))
+      inline def setCleanTagsVarargs(value: String*): Self = StObject.set(x, "cleanTags", js.Array(value*))
       
       inline def setForcePlainText(value: Boolean): Self = StObject.set(x, "forcePlainText", value.asInstanceOf[js.Any])
       
       inline def setForcePlainTextUndefined: Self = StObject.set(x, "forcePlainText", js.undefined)
       
-      inline def setPreCleanReplacements(value: js.Array[js.Any]): Self = StObject.set(x, "preCleanReplacements", value.asInstanceOf[js.Any])
+      inline def setPreCleanReplacements(value: js.Array[Any]): Self = StObject.set(x, "preCleanReplacements", value.asInstanceOf[js.Any])
       
       inline def setPreCleanReplacementsUndefined: Self = StObject.set(x, "preCleanReplacements", js.undefined)
       
-      inline def setPreCleanReplacementsVarargs(value: js.Any*): Self = StObject.set(x, "preCleanReplacements", js.Array(value :_*))
+      inline def setPreCleanReplacementsVarargs(value: Any*): Self = StObject.set(x, "preCleanReplacements", js.Array(value*))
       
       inline def setUnwrapTags(value: js.Array[String]): Self = StObject.set(x, "unwrapTags", value.asInstanceOf[js.Any])
       
       inline def setUnwrapTagsUndefined: Self = StObject.set(x, "unwrapTags", js.undefined)
       
-      inline def setUnwrapTagsVarargs(value: String*): Self = StObject.set(x, "unwrapTags", js.Array(value :_*))
+      inline def setUnwrapTagsVarargs(value: String*): Self = StObject.set(x, "unwrapTags", js.Array(value*))
     }
   }
   
@@ -705,7 +705,7 @@ object MediumEditor {
       
       inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
       
-      inline def setButtonsVarargs(value: Button*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+      inline def setButtonsVarargs(value: Button*): Self = StObject.set(x, "buttons", js.Array(value*))
       
       inline def setDiffLeft(value: Double): Self = StObject.set(x, "diffLeft", value.asInstanceOf[js.Any])
       

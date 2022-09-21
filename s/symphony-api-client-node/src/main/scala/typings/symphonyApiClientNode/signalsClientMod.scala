@@ -288,7 +288,7 @@ object signalsClientMod {
       
       inline def setData(value: js.Array[SignalSubscriber]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: SignalSubscriber*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: SignalSubscriber*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setHasMore(value: Boolean): Self = StObject.set(x, "hasMore", value.asInstanceOf[js.Any])
       
@@ -304,7 +304,7 @@ object signalsClientMod {
     
     var requestedSubscription: Double
     
-    var subscriptionErrors: js.Array[js.Any]
+    var subscriptionErrors: js.Array[Any]
     
     var successfulSubscription: Double
   }
@@ -313,7 +313,7 @@ object signalsClientMod {
     inline def apply(
       failedSubscription: Double,
       requestedSubscription: Double,
-      subscriptionErrors: js.Array[js.Any],
+      subscriptionErrors: js.Array[Any],
       successfulSubscription: Double
     ): SignalSubscriptionResult = {
       val __obj = js.Dynamic.literal(failedSubscription = failedSubscription.asInstanceOf[js.Any], requestedSubscription = requestedSubscription.asInstanceOf[js.Any], subscriptionErrors = subscriptionErrors.asInstanceOf[js.Any], successfulSubscription = successfulSubscription.asInstanceOf[js.Any])
@@ -326,9 +326,9 @@ object signalsClientMod {
       
       inline def setRequestedSubscription(value: Double): Self = StObject.set(x, "requestedSubscription", value.asInstanceOf[js.Any])
       
-      inline def setSubscriptionErrors(value: js.Array[js.Any]): Self = StObject.set(x, "subscriptionErrors", value.asInstanceOf[js.Any])
+      inline def setSubscriptionErrors(value: js.Array[Any]): Self = StObject.set(x, "subscriptionErrors", value.asInstanceOf[js.Any])
       
-      inline def setSubscriptionErrorsVarargs(value: js.Any*): Self = StObject.set(x, "subscriptionErrors", js.Array(value :_*))
+      inline def setSubscriptionErrorsVarargs(value: Any*): Self = StObject.set(x, "subscriptionErrors", js.Array(value*))
       
       inline def setSuccessfulSubscription(value: Double): Self = StObject.set(x, "successfulSubscription", value.asInstanceOf[js.Any])
     }

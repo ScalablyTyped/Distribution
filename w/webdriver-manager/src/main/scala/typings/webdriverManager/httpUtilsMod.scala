@@ -13,7 +13,7 @@ object httpUtilsMod {
   
   @JSImport("webdriver-manager/built/lib/http_utils", "HttpUtils")
   @js.native
-  class HttpUtils () extends StObject
+  open class HttpUtils () extends StObject
   /* static members */
   object HttpUtils {
     

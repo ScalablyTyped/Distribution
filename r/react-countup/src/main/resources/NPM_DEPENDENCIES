@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-countup" : "6.3.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-countup" : "6.3.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

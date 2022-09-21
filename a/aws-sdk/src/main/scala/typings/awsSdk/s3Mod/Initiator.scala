@@ -12,7 +12,7 @@ trait Initiator extends StObject {
   var DisplayName: js.UndefOr[typings.awsSdk.s3Mod.DisplayName] = js.undefined
   
   /**
-    * If the principal is an AWS account, it provides the Canonical User ID. If the principal is an IAM User, it provides a user ARN value.
+    * If the principal is an Amazon Web Services account, it provides the Canonical User ID. If the principal is an IAM User, it provides a user ARN value.
     */
   var ID: js.UndefOr[typings.awsSdk.s3Mod.ID] = js.undefined
 }

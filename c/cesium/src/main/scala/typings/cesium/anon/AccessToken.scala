@@ -7,14 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AccessToken extends StObject {
   
-  var accessToken: String
+  var accessToken: js.UndefOr[String] = js.undefined
   
-  var server: String | Resource
+  var scene: typings.cesium.mod.Scene
+  
+  var server: js.UndefOr[String | Resource] = js.undefined
 }
 object AccessToken {
   
-  inline def apply(accessToken: String, server: String | Resource): AccessToken = {
-    val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any])
+  inline def apply(scene: typings.cesium.mod.Scene): AccessToken = {
+    val __obj = js.Dynamic.literal(scene = scene.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessToken]
   }
   
@@ -22,6 +24,12 @@ object AccessToken {
     
     inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     
+    inline def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
+    
+    inline def setScene(value: typings.cesium.mod.Scene): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
+    
     inline def setServer(value: String | Resource): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    
+    inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
   }
 }

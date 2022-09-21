@@ -4,8 +4,4 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request message for
-  * google.bigtable.admin.v2.BigtableTableAdmin.GenerateConsistencyToken
-  */
 trait SchemaGenerateConsistencyTokenRequest extends StObject

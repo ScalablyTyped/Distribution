@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait QueryAstNode
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var subNodes: js.UndefOr[js.Array[QueryAstNode]] = js.undefined
   
@@ -27,7 +27,7 @@ object QueryAstNode {
     
     inline def setSubNodesUndefined: Self = StObject.set(x, "subNodes", js.undefined)
     
-    inline def setSubNodesVarargs(value: QueryAstNode*): Self = StObject.set(x, "subNodes", js.Array(value :_*))
+    inline def setSubNodesVarargs(value: QueryAstNode*): Self = StObject.set(x, "subNodes", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

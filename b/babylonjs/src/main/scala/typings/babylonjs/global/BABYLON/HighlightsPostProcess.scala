@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.HighlightsPostProcess")
 @js.native
-class HighlightsPostProcess protected ()
+open class HighlightsPostProcess protected ()
   extends StObject
      with typings.babylonjs.BABYLON.HighlightsPostProcess {
   /**

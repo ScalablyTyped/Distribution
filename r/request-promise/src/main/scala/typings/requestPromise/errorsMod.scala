@@ -15,9 +15,10 @@ object errorsMod {
     extends StObject
        with Error {
     
-    var cause: js.Any
+    var error: Any
     
-    var error: js.Any
+    @JSName("name")
+    var name_RequestError: typings.requestPromise.requestPromiseStrings.RequestError
     
     var options: Options
     
@@ -31,9 +32,9 @@ object errorsMod {
     
     extension [Self <: RequestError](x: Self) {
       
-      inline def setCause(value: js.Any): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
+      inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.requestPromise.requestPromiseStrings.RequestError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -44,22 +45,24 @@ object errorsMod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("request-promise/errors", "RequestError")
   @js.native
-  class RequestErrorCls protected ()
+  open class RequestErrorCls protected ()
     extends StObject
        with RequestError {
-    def this(cause: js.Any, options: Options, response: IncomingMessage) = this()
+    def this(cause: Any, options: Options, response: IncomingMessage) = this()
     
     /* CompleteClass */
-    var cause: js.Any = js.native
+    var error: Any = js.native
     
-    /* CompleteClass */
-    var error: js.Any = js.native
-    
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
+    /* CompleteClass */
+    @JSName("name")
+    var name_RequestError: typings.requestPromise.requestPromiseStrings.RequestError = js.native
     
     /* CompleteClass */
     var options: Options = js.native
@@ -72,7 +75,10 @@ object errorsMod {
     extends StObject
        with Error {
     
-    var error: js.Any
+    var error: Any
+    
+    @JSName("name")
+    var name_StatusCodeError: typings.requestPromise.requestPromiseStrings.StatusCodeError
     
     var options: Options
     
@@ -88,7 +94,9 @@ object errorsMod {
     
     extension [Self <: StatusCodeError](x: Self) {
       
-      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      
+      inline def setName(value: typings.requestPromise.requestPromiseStrings.StatusCodeError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -101,19 +109,24 @@ object errorsMod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("request-promise/errors", "StatusCodeError")
   @js.native
-  class StatusCodeErrorCls protected ()
+  open class StatusCodeErrorCls protected ()
     extends StObject
        with StatusCodeError {
-    def this(statusCode: Double, body: js.Any, options: Options, response: IncomingMessage) = this()
+    def this(statusCode: Double, body: Any, options: Options, response: IncomingMessage) = this()
     
     /* CompleteClass */
-    var error: js.Any = js.native
+    var error: Any = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
+    /* CompleteClass */
+    @JSName("name")
+    var name_StatusCodeError: typings.requestPromise.requestPromiseStrings.StatusCodeError = js.native
     
     /* CompleteClass */
     var options: Options = js.native
@@ -129,9 +142,10 @@ object errorsMod {
     extends StObject
        with Error {
     
-    var cause: js.Any
+    var error: Any
     
-    var error: js.Any
+    @JSName("name")
+    var name_TransformError: typings.requestPromise.requestPromiseStrings.TransformError
     
     var options: Options
     
@@ -145,9 +159,9 @@ object errorsMod {
     
     extension [Self <: TransformError](x: Self) {
       
-      inline def setCause(value: js.Any): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
+      inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.requestPromise.requestPromiseStrings.TransformError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -158,22 +172,24 @@ object errorsMod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("request-promise/errors", "TransformError")
   @js.native
-  class TransformErrorCls protected ()
+  open class TransformErrorCls protected ()
     extends StObject
        with TransformError {
-    def this(cause: js.Any, options: Options, response: IncomingMessage) = this()
+    def this(cause: Any, options: Options, response: IncomingMessage) = this()
     
     /* CompleteClass */
-    var cause: js.Any = js.native
+    var error: Any = js.native
     
-    /* CompleteClass */
-    var error: js.Any = js.native
-    
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
+    /* CompleteClass */
+    @JSName("name")
+    var name_TransformError: typings.requestPromise.requestPromiseStrings.TransformError = js.native
     
     /* CompleteClass */
     var options: Options = js.native
@@ -185,14 +201,9 @@ object errorsMod {
   @js.native
   trait RequestErrorConstructor
     extends StObject
-       with Instantiable3[
-          /* cause */ js.Any, 
-          /* options */ Options, 
-          /* response */ IncomingMessage, 
-          RequestError
-        ] {
+       with Instantiable3[/* cause */ Any, /* options */ Options, /* response */ IncomingMessage, RequestError] {
     
-    def apply(cause: js.Any, options: Options, response: IncomingMessage): RequestError = js.native
+    def apply(cause: Any, options: Options, response: IncomingMessage): RequestError = js.native
   }
   
   @js.native
@@ -201,26 +212,21 @@ object errorsMod {
        with Error
        with Instantiable4[
           /* statusCode */ Double, 
-          /* body */ js.Any, 
+          /* body */ Any, 
           /* options */ Options, 
           /* response */ IncomingMessage, 
           StatusCodeError
         ] {
     
-    def apply(statusCode: Double, body: js.Any, options: Options, response: IncomingMessage): StatusCodeError = js.native
+    def apply(statusCode: Double, body: Any, options: Options, response: IncomingMessage): StatusCodeError = js.native
   }
   
   @js.native
   trait TransformErrorConstructor
     extends StObject
        with Error
-       with Instantiable3[
-          /* cause */ js.Any, 
-          /* options */ Options, 
-          /* response */ IncomingMessage, 
-          TransformError
-        ] {
+       with Instantiable3[/* cause */ Any, /* options */ Options, /* response */ IncomingMessage, TransformError] {
     
-    def apply(cause: js.Any, options: Options, response: IncomingMessage): TransformError = js.native
+    def apply(cause: Any, options: Options, response: IncomingMessage): TransformError = js.native
   }
 }

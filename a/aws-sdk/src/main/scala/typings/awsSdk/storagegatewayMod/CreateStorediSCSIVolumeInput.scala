@@ -14,7 +14,7 @@ trait CreateStorediSCSIVolumeInput extends StObject {
   var GatewayARN: typings.awsSdk.storagegatewayMod.GatewayARN
   
   /**
-    * Set to true to use Amazon S3 server-side encryption with your own AWS KMS key, or false to use a key managed by Amazon S3. Optional. Valid Values: true | false 
+    * Set to true to use Amazon S3 server-side encryption with your own KMS key, or false to use a key managed by Amazon S3. Optional. Valid Values: true | false 
     */
   var KMSEncrypted: js.UndefOr[Boolean] = js.undefined
   
@@ -29,12 +29,12 @@ trait CreateStorediSCSIVolumeInput extends StObject {
   var NetworkInterfaceId: typings.awsSdk.storagegatewayMod.NetworkInterfaceId
   
   /**
-    * Set to true true if you want to preserve the data on the local disk. Otherwise, set to false to create an empty volume. Valid Values: true | false 
+    * Set to true if you want to preserve the data on the local disk. Otherwise, set to false to create an empty volume. Valid Values: true | false 
     */
   var PreserveExistingData: scala.Boolean
   
   /**
-    * The snapshot ID (e.g. "snap-1122aabb") of the snapshot to restore as the new stored volume. Specify this field if you want to create the iSCSI storage volume from a snapshot; otherwise, do not include this field. To list snapshots for your account use DescribeSnapshots in the Amazon Elastic Compute Cloud API Reference.
+    * The snapshot ID (e.g., "snap-1122aabb") of the snapshot to restore as the new stored volume. Specify this field if you want to create the iSCSI storage volume from a snapshot; otherwise, do not include this field. To list snapshots for your account use DescribeSnapshots in the Amazon Elastic Compute Cloud API Reference.
     */
   var SnapshotId: js.UndefOr[typings.awsSdk.storagegatewayMod.SnapshotId] = js.undefined
   
@@ -87,7 +87,7 @@ object CreateStorediSCSIVolumeInput {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setTargetName(value: TargetName): Self = StObject.set(x, "TargetName", value.asInstanceOf[js.Any])
   }

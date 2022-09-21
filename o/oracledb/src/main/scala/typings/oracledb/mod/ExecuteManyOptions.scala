@@ -78,7 +78,7 @@ object ExecuteManyOptions {
     
     inline def setBindDefsUndefined: Self = StObject.set(x, "bindDefs", js.undefined)
     
-    inline def setBindDefsVarargs(value: BindDefinition*): Self = StObject.set(x, "bindDefs", js.Array(value :_*))
+    inline def setBindDefsVarargs(value: BindDefinition*): Self = StObject.set(x, "bindDefs", js.Array(value*))
     
     inline def setDmlRowCounts(value: Boolean): Self = StObject.set(x, "dmlRowCounts", value.asInstanceOf[js.Any])
     

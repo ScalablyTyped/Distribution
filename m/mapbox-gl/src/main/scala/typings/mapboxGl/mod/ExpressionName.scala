@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.mapboxGl.mapboxGlStrings.format
   - typings.mapboxGl.mapboxGlStrings.literal
   - typings.mapboxGl.mapboxGlStrings.number
+  - typings.mapboxGl.mapboxGlStrings.`number-format`
   - typings.mapboxGl.mapboxGlStrings.`object`
   - typings.mapboxGl.mapboxGlStrings.string
   - typings.mapboxGl.mapboxGlStrings.image_
@@ -46,6 +47,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.mapboxGl.mapboxGlStrings.`case`
   - typings.mapboxGl.mapboxGlStrings.`match`
   - typings.mapboxGl.mapboxGlStrings.coalesce
+  - typings.mapboxGl.mapboxGlStrings.within
   - typings.mapboxGl.mapboxGlStrings.interpolate
   - typings.mapboxGl.mapboxGlStrings.`interpolate-hcl`
   - typings.mapboxGl.mapboxGlStrings.`interpolate-lab`
@@ -59,6 +61,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.mapboxGl.mapboxGlStrings.upcase
   - typings.mapboxGl.mapboxGlStrings.rgb
   - typings.mapboxGl.mapboxGlStrings.rgba
+  - typings.mapboxGl.mapboxGlStrings.`to-rgba`
   - typings.mapboxGl.mapboxGlStrings.`-_`
   - typings.mapboxGl.mapboxGlStrings.Asterisk
   - typings.mapboxGl.mapboxGlStrings.Slash
@@ -204,6 +207,8 @@ object ExpressionName {
   
   inline def number: typings.mapboxGl.mapboxGlStrings.number = "number".asInstanceOf[typings.mapboxGl.mapboxGlStrings.number]
   
+  inline def `number-format`: typings.mapboxGl.mapboxGlStrings.`number-format` = "number-format".asInstanceOf[typings.mapboxGl.mapboxGlStrings.`number-format`]
+  
   inline def `object`: typings.mapboxGl.mapboxGlStrings.`object` = "object".asInstanceOf[typings.mapboxGl.mapboxGlStrings.`object`]
   
   inline def pi: typings.mapboxGl.mapboxGlStrings.pi = "pi".asInstanceOf[typings.mapboxGl.mapboxGlStrings.pi]
@@ -236,6 +241,8 @@ object ExpressionName {
   
   inline def `to-number`: typings.mapboxGl.mapboxGlStrings.`to-number` = "to-number".asInstanceOf[typings.mapboxGl.mapboxGlStrings.`to-number`]
   
+  inline def `to-rgba`: typings.mapboxGl.mapboxGlStrings.`to-rgba` = "to-rgba".asInstanceOf[typings.mapboxGl.mapboxGlStrings.`to-rgba`]
+  
   inline def `to-string`: typings.mapboxGl.mapboxGlStrings.`to-string` = "to-string".asInstanceOf[typings.mapboxGl.mapboxGlStrings.`to-string`]
   
   inline def typeof: typings.mapboxGl.mapboxGlStrings.typeof = "typeof".asInstanceOf[typings.mapboxGl.mapboxGlStrings.typeof]
@@ -243,6 +250,8 @@ object ExpressionName {
   inline def upcase: typings.mapboxGl.mapboxGlStrings.upcase = "upcase".asInstanceOf[typings.mapboxGl.mapboxGlStrings.upcase]
   
   inline def `var`: typings.mapboxGl.mapboxGlStrings.`var` = "var".asInstanceOf[typings.mapboxGl.mapboxGlStrings.`var`]
+  
+  inline def within: typings.mapboxGl.mapboxGlStrings.within = "within".asInstanceOf[typings.mapboxGl.mapboxGlStrings.within]
   
   inline def zoom: typings.mapboxGl.mapboxGlStrings.zoom = "zoom".asInstanceOf[typings.mapboxGl.mapboxGlStrings.zoom]
 }

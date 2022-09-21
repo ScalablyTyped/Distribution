@@ -8,21 +8,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SVGStyleElement
   extends StObject
-     with SVGElement {
+     with SVGElement
+     with LinkStyle {
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(
     `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
+    callback: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
   
+  /* standard dom */
   var disabled: scala.Boolean = js.native
   
+  /* standard dom */
   var media: java.lang.String = js.native
   
   /* InferMemberOverrides */
@@ -36,7 +39,9 @@ trait SVGStyleElement
     options: EventListenerOptions
   ): Unit = js.native
   
+  /* standard dom */
   var title: java.lang.String = js.native
   
+  /* standard dom */
   var `type`: java.lang.String = js.native
 }

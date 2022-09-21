@@ -20,6 +20,11 @@ trait CreateAddressBookRequest extends StObject {
     * The name of the address book.
     */
   var Name: AddressBookName
+  
+  /**
+    * The tags to be added to the specified resource. Do not provide system tags.
+    */
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateAddressBookRequest {
   
@@ -39,5 +44,11 @@ object CreateAddressBookRequest {
     inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     inline def setName(value: AddressBookName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

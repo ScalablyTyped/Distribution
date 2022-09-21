@@ -8,4 +8,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DatePickerViewModel
   extends StObject
      with Accessor
-     with MomentElementViewModel
+     with DateTimeElementViewModel

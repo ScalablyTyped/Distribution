@@ -11,7 +11,7 @@ trait IComposite
   /** [Method] Adds a sprite to the composite
     * @param sprite Object
     */
-  var add: js.UndefOr[js.Function1[/* sprite */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var add: js.UndefOr[js.Function1[/* sprite */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Renders all sprites contained in the composite to the surface
     * @param surface Object
@@ -21,9 +21,9 @@ trait IComposite
   @JSName("render")
   var render_IComposite: js.UndefOr[
     js.Function3[
-      /* surface */ js.UndefOr[js.Any], 
-      /* ctx */ js.UndefOr[js.Any], 
-      /* region */ js.UndefOr[js.Any], 
+      /* surface */ js.UndefOr[Any], 
+      /* ctx */ js.UndefOr[Any], 
+      /* region */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -37,12 +37,12 @@ object IComposite {
   
   extension [Self <: IComposite](x: Self) {
     
-    inline def setAdd(value: /* sprite */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: /* sprite */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
     inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     
     inline def setRender(
-      value: (/* surface */ js.UndefOr[js.Any], /* ctx */ js.UndefOr[js.Any], /* region */ js.UndefOr[js.Any]) => Unit
+      value: (/* surface */ js.UndefOr[Any], /* ctx */ js.UndefOr[Any], /* region */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
     
     inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)

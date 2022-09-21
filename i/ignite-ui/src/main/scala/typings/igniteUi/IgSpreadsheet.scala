@@ -11,7 +11,7 @@ trait IgSpreadsheet
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Invoked when an action is executed on the Spreadsheet.
@@ -48,7 +48,7 @@ trait IgSpreadsheet
     * Returns or sets the Worksheet from the workbook whose content should be displayed within the control.
     *
     */
-  var activeWorksheet: js.UndefOr[js.Any] = js.undefined
+  var activeWorksheet: js.UndefOr[Any] = js.undefined
   
   /**
     * Invoked when the activeWorksheet of the Spreadsheet has changed.
@@ -211,7 +211,7 @@ trait IgSpreadsheet
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.undefined
+  var locale: js.UndefOr[Any] = js.undefined
   
   /**
     * Returns or sets the width of the name box within the formula bar.
@@ -229,7 +229,7 @@ trait IgSpreadsheet
     * Type="ig.excel.Worksheet[]" Returns or sets an array of the Worksheets whose tabs are selected.
     *
     */
-  var selectedWorksheets: js.UndefOr[js.Any] = js.undefined
+  var selectedWorksheets: js.UndefOr[Any] = js.undefined
   
   /**
     * Invoked when the selection for a ig.spreadsheet.SpreadsheetPane of the Spreadsheet is changed.
@@ -255,7 +255,7 @@ trait IgSpreadsheet
     *
     * The provided object should have numeric properties called x and y.
     */
-  var validationInputMessagePosition: js.UndefOr[js.Any] = js.undefined
+  var validationInputMessagePosition: js.UndefOr[Any] = js.undefined
   
   /**
     * The width of the spreadsheet. It can be set as a number in pixels, string (px) or percentage (%).
@@ -271,7 +271,7 @@ trait IgSpreadsheet
     * Returns or sets the workbook whose information is displayed in the control.
     *
     */
-  var workbook: js.UndefOr[js.Any] = js.undefined
+  var workbook: js.UndefOr[Any] = js.undefined
   
   /**
     * Invoked when a change has been made to the workbook that might require a save.
@@ -321,7 +321,7 @@ object IgSpreadsheet {
     
     inline def setActiveTableChangedUndefined: Self = StObject.set(x, "activeTableChanged", js.undefined)
     
-    inline def setActiveWorksheet(value: js.Any): Self = StObject.set(x, "activeWorksheet", value.asInstanceOf[js.Any])
+    inline def setActiveWorksheet(value: Any): Self = StObject.set(x, "activeWorksheet", value.asInstanceOf[js.Any])
     
     inline def setActiveWorksheetChanged(value: (/* event */ Event, /* ui */ ActiveWorksheetChangedEventUIParam) => Unit): Self = StObject.set(x, "activeWorksheetChanged", js.Any.fromFunction2(value))
     
@@ -421,7 +421,7 @@ object IgSpreadsheet {
     
     inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    inline def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
@@ -433,7 +433,7 @@ object IgSpreadsheet {
     
     inline def setRegionalUndefined: Self = StObject.set(x, "regional", js.undefined)
     
-    inline def setSelectedWorksheets(value: js.Any): Self = StObject.set(x, "selectedWorksheets", value.asInstanceOf[js.Any])
+    inline def setSelectedWorksheets(value: Any): Self = StObject.set(x, "selectedWorksheets", value.asInstanceOf[js.Any])
     
     inline def setSelectedWorksheetsUndefined: Self = StObject.set(x, "selectedWorksheets", js.undefined)
     
@@ -449,7 +449,7 @@ object IgSpreadsheet {
     
     inline def setUserPromptDisplayingUndefined: Self = StObject.set(x, "userPromptDisplaying", js.undefined)
     
-    inline def setValidationInputMessagePosition(value: js.Any): Self = StObject.set(x, "validationInputMessagePosition", value.asInstanceOf[js.Any])
+    inline def setValidationInputMessagePosition(value: Any): Self = StObject.set(x, "validationInputMessagePosition", value.asInstanceOf[js.Any])
     
     inline def setValidationInputMessagePositionUndefined: Self = StObject.set(x, "validationInputMessagePosition", js.undefined)
     
@@ -457,7 +457,7 @@ object IgSpreadsheet {
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
-    inline def setWorkbook(value: js.Any): Self = StObject.set(x, "workbook", value.asInstanceOf[js.Any])
+    inline def setWorkbook(value: Any): Self = StObject.set(x, "workbook", value.asInstanceOf[js.Any])
     
     inline def setWorkbookDirtied(value: (/* event */ Event, /* ui */ WorkbookDirtiedEventUIParam) => Unit): Self = StObject.set(x, "workbookDirtied", js.Any.fromFunction2(value))
     

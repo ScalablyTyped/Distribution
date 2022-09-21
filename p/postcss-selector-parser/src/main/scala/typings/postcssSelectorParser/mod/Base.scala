@@ -17,9 +17,9 @@ trait Base[Value /* <: js.UndefOr[String] */, ParentType /* <: js.UndefOr[Contai
     * @param {any} value the unescaped value of the property
     * @param {string} valueEscaped optional. the escaped value of the property.
     */
-  def appendToPropertyAndEscape(name: String, value: js.Any, valueEscaped: String): Unit
+  def appendToPropertyAndEscape(name: String, value: Any, valueEscaped: String): Unit
   
-  def clone(opts: StringDictionary[js.Any]): Node
+  def clone(opts: StringDictionary[Any]): Node
   
   /**
     * Return whether this node includes the character at the position of the given line and column.
@@ -51,7 +51,7 @@ trait Base[Value /* <: js.UndefOr[String] */, ParentType /* <: js.UndefOr[Contai
     * @param value the unescaped value of the property
     * @param valueEscaped optional. the escaped value of the property.
     */
-  def setPropertyAndEscape(name: String, value: js.Any, valueEscaped: String): Unit
+  def setPropertyAndEscape(name: String, value: Any, valueEscaped: String): Unit
   
   /**
     * When you want a value to passed through to CSS directly. This method
@@ -60,7 +60,7 @@ trait Base[Value /* <: js.UndefOr[String] */, ParentType /* <: js.UndefOr[Contai
     * @param name the property to set.
     * @param value The value that is both escaped and unescaped.
     */
-  def setPropertyWithoutEscape(name: String, value: js.Any): Unit
+  def setPropertyWithoutEscape(name: String, value: Any): Unit
   
   var source: js.UndefOr[NodeSource] = js.undefined
   
@@ -75,8 +75,8 @@ trait Base[Value /* <: js.UndefOr[String] */, ParentType /* <: js.UndefOr[Contai
 object Base {
   
   inline def apply[Value /* <: js.UndefOr[String] */, ParentType /* <: js.UndefOr[Container[String, Node]] */](
-    appendToPropertyAndEscape: (String, js.Any, String) => Unit,
-    clone_ : StringDictionary[js.Any] => Node,
+    appendToPropertyAndEscape: (String, Any, String) => Unit,
+    clone_ : StringDictionary[Any] => Node,
     isAtPosition: (Double, Double) => js.UndefOr[Boolean],
     next: () => Node,
     parent: ParentType,
@@ -85,8 +85,8 @@ object Base {
     rawSpaceBefore: String,
     remove: () => Node,
     replaceWith: /* repeated */ Node => Node,
-    setPropertyAndEscape: (String, js.Any, String) => Unit,
-    setPropertyWithoutEscape: (String, js.Any) => Unit,
+    setPropertyAndEscape: (String, Any, String) => Unit,
+    setPropertyWithoutEscape: (String, Any) => Unit,
     sourceIndex: Double,
     spaces: Spaces,
     `type`: typings.postcssSelectorParser.postcssSelectorParserStrings.tag | typings.postcssSelectorParser.postcssSelectorParserStrings.string | typings.postcssSelectorParser.postcssSelectorParserStrings.selector | typings.postcssSelectorParser.postcssSelectorParserStrings.root | typings.postcssSelectorParser.postcssSelectorParserStrings.pseudo | typings.postcssSelectorParser.postcssSelectorParserStrings.nesting | typings.postcssSelectorParser.postcssSelectorParserStrings.id | typings.postcssSelectorParser.postcssSelectorParserStrings.comment | typings.postcssSelectorParser.postcssSelectorParserStrings.combinator | `class` | typings.postcssSelectorParser.postcssSelectorParserStrings.attribute | typings.postcssSelectorParser.postcssSelectorParserStrings.universal,
@@ -100,9 +100,9 @@ object Base {
   
   extension [Self <: Base[?, ?], Value /* <: js.UndefOr[String] */, ParentType /* <: js.UndefOr[Container[String, Node]] */](x: Self & (Base[Value, ParentType])) {
     
-    inline def setAppendToPropertyAndEscape(value: (String, js.Any, String) => Unit): Self = StObject.set(x, "appendToPropertyAndEscape", js.Any.fromFunction3(value))
+    inline def setAppendToPropertyAndEscape(value: (String, Any, String) => Unit): Self = StObject.set(x, "appendToPropertyAndEscape", js.Any.fromFunction3(value))
     
-    inline def setClone_(value: StringDictionary[js.Any] => Node): Self = StObject.set(x, "clone", js.Any.fromFunction1(value))
+    inline def setClone_(value: StringDictionary[Any] => Node): Self = StObject.set(x, "clone", js.Any.fromFunction1(value))
     
     inline def setIsAtPosition(value: (Double, Double) => js.UndefOr[Boolean]): Self = StObject.set(x, "isAtPosition", js.Any.fromFunction2(value))
     
@@ -120,9 +120,9 @@ object Base {
     
     inline def setReplaceWith(value: /* repeated */ Node => Node): Self = StObject.set(x, "replaceWith", js.Any.fromFunction1(value))
     
-    inline def setSetPropertyAndEscape(value: (String, js.Any, String) => Unit): Self = StObject.set(x, "setPropertyAndEscape", js.Any.fromFunction3(value))
+    inline def setSetPropertyAndEscape(value: (String, Any, String) => Unit): Self = StObject.set(x, "setPropertyAndEscape", js.Any.fromFunction3(value))
     
-    inline def setSetPropertyWithoutEscape(value: (String, js.Any) => Unit): Self = StObject.set(x, "setPropertyWithoutEscape", js.Any.fromFunction2(value))
+    inline def setSetPropertyWithoutEscape(value: (String, Any) => Unit): Self = StObject.set(x, "setPropertyWithoutEscape", js.Any.fromFunction2(value))
     
     inline def setSource(value: NodeSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

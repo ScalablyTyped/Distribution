@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientSecuritycenter.anon
 
-import typings.maximMazurokGapiClientSecuritycenter.gapi.client.securitycenter.GroupFindingsRequest
+import typings.maximMazurokGapiClientSecuritycenter.gapi.client.securitycenter.BulkMuteFindingsRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,10 +29,7 @@ trait Resource extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /**
-    * Required. Name of the source to groupBy. Its format is "organizations/[organization_id]/sources/[source_id]". To groupBy across all sources provide a source_id of `-`. For
-    * example: organizations/{organization_id}/sources/-
-    */
+  /** Required. The parent, at which bulk action needs to be applied. Its format is "organizations/[organization_id]", "folders/[folder_id]", "projects/[project_id]". */
   var parent: String
   
   /** Returns response with indentations and line breaks. */
@@ -42,7 +39,7 @@ trait Resource extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: GroupFindingsRequest
+  var resource: BulkMuteFindingsRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,7 +49,7 @@ trait Resource extends StObject {
 }
 object Resource {
   
-  inline def apply(parent: String, resource: GroupFindingsRequest): Resource = {
+  inline def apply(parent: String, resource: BulkMuteFindingsRequest): Resource = {
     val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Resource]
   }
@@ -97,7 +94,7 @@ object Resource {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: GroupFindingsRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: BulkMuteFindingsRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

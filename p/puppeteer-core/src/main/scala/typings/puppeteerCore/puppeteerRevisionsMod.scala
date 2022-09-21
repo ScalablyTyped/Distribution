@@ -1,34 +1,22 @@
 package typings.puppeteerCore
 
+import typings.puppeteerCore.puppeteerCoreStrings.`1036745`
+import typings.puppeteerCore.puppeteerCoreStrings.latest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object puppeteerRevisionsMod {
   
-  @JSImport("puppeteer-core/lib/esm/puppeteer/revisions", "PUPPETEER_REVISIONS")
-  @js.native
-  val PUPPETEER_REVISIONS: Revisions = js.native
-  
-  /* Inlined std.Readonly<{ readonly chromium :string,  readonly firefox :string}> */
-  trait Revisions extends StObject {
+  /* Inlined std.Readonly<{  chromium :'1036745',   firefox :'latest'}> */
+  object PUPPETEER_REVISIONS {
     
-    val chromium: String
+    @JSImport("puppeteer-core/lib/esm/puppeteer/revisions", "PUPPETEER_REVISIONS.chromium")
+    @js.native
+    val chromium: `1036745` = js.native
     
-    val firefox: String
-  }
-  object Revisions {
-    
-    inline def apply(chromium: String, firefox: String): Revisions = {
-      val __obj = js.Dynamic.literal(chromium = chromium.asInstanceOf[js.Any], firefox = firefox.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Revisions]
-    }
-    
-    extension [Self <: Revisions](x: Self) {
-      
-      inline def setChromium(value: String): Self = StObject.set(x, "chromium", value.asInstanceOf[js.Any])
-      
-      inline def setFirefox(value: String): Self = StObject.set(x, "firefox", value.asInstanceOf[js.Any])
-    }
+    @JSImport("puppeteer-core/lib/esm/puppeteer/revisions", "PUPPETEER_REVISIONS.firefox")
+    @js.native
+    val firefox: latest = js.native
   }
 }

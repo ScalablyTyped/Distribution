@@ -8,5 +8,5 @@ object lifecycleRuleMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/_LifecycleRule", "_LifecycleRule")
   @js.native
-  val LifecycleRule: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val LifecycleRule: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

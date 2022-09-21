@@ -11,29 +11,32 @@ trait HTMLHRElement
      with HTMLElement {
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(
     `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
+    callback: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
   
   /**
     * Sets or retrieves how the object is aligned with adjacent text.
+    * @deprecated
     */
-  /** @deprecated */
+  /* standard dom */
   var align: java.lang.String = js.native
   
   /** @deprecated */
+  /* standard dom */
   var color: java.lang.String = js.native
   
   /**
     * Sets or retrieves whether the horizontal rule is drawn with 3-D shading.
+    * @deprecated
     */
-  /** @deprecated */
+  /* standard dom */
   var noShade: scala.Boolean = js.native
   
   /* InferMemberOverrides */
@@ -48,11 +51,13 @@ trait HTMLHRElement
   ): Unit = js.native
   
   /** @deprecated */
+  /* standard dom */
   var size: java.lang.String = js.native
   
   /**
     * Sets or retrieves the width of the object.
+    * @deprecated
     */
-  /** @deprecated */
+  /* standard dom */
   var width: java.lang.String = js.native
 }

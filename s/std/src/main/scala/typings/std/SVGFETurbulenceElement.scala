@@ -11,33 +11,42 @@ trait SVGFETurbulenceElement
      with SVGElement
      with SVGFilterPrimitiveStandardAttributes {
   
+  /* standard dom */
   val SVG_STITCHTYPE_NOSTITCH: Double = js.native
   
+  /* standard dom */
   val SVG_STITCHTYPE_STITCH: Double = js.native
   
+  /* standard dom */
   val SVG_STITCHTYPE_UNKNOWN: Double = js.native
   
+  /* standard dom */
   val SVG_TURBULENCE_TYPE_FRACTALNOISE: Double = js.native
   
+  /* standard dom */
   val SVG_TURBULENCE_TYPE_TURBULENCE: Double = js.native
   
+  /* standard dom */
   val SVG_TURBULENCE_TYPE_UNKNOWN: Double = js.native
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(
     `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
+    callback: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
   
+  /* standard dom */
   val baseFrequencyX: SVGAnimatedNumber = js.native
   
+  /* standard dom */
   val baseFrequencyY: SVGAnimatedNumber = js.native
   
+  /* standard dom */
   val numOctaves: SVGAnimatedInteger = js.native
   
   /* InferMemberOverrides */
@@ -51,9 +60,12 @@ trait SVGFETurbulenceElement
     options: EventListenerOptions
   ): Unit = js.native
   
+  /* standard dom */
   val seed: SVGAnimatedNumber = js.native
   
+  /* standard dom */
   val stitchTiles: SVGAnimatedEnumeration = js.native
   
+  /* standard dom */
   val `type`: SVGAnimatedEnumeration = js.native
 }

@@ -11,56 +11,41 @@ trait FileSystemWatcher extends Disposable {
     * true if this file system watcher has been created such that
     * it ignores change file system events.
     */
-  var ignoreChangeEvents: Boolean = js.native
+  val ignoreChangeEvents: Boolean = js.native
   
   /**
     * true if this file system watcher has been created such that
     * it ignores creation file system events.
     */
-  var ignoreCreateEvents: Boolean = js.native
+  val ignoreCreateEvents: Boolean = js.native
   
   /**
     * true if this file system watcher has been created such that
     * it ignores delete file system events.
     */
-  var ignoreDeleteEvents: Boolean = js.native
+  val ignoreDeleteEvents: Boolean = js.native
   
   /**
     * An event which fires on file/folder change.
     */
-  def onDidChange(listener: js.Function1[/* e */ Uri, js.Any]): Disposable = js.native
-  def onDidChange(listener: js.Function1[/* e */ Uri, js.Any], thisArgs: js.Any): Disposable = js.native
-  def onDidChange(listener: js.Function1[/* e */ Uri, js.Any], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
-  def onDidChange(listener: js.Function1[/* e */ Uri, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
-  /**
-    * An event which fires on file/folder change.
-    */
-  @JSName("onDidChange")
-  var onDidChange_Original: Event[Uri] = js.native
+  def onDidChange(listener: js.Function1[/* e */ Uri, Any]): Disposable = js.native
+  def onDidChange(listener: js.Function1[/* e */ Uri, Any], thisArgs: Any): Disposable = js.native
+  def onDidChange(listener: js.Function1[/* e */ Uri, Any], thisArgs: Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onDidChange(listener: js.Function1[/* e */ Uri, Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
   
   /**
     * An event which fires on file/folder creation.
     */
-  def onDidCreate(listener: js.Function1[/* e */ Uri, js.Any]): Disposable = js.native
-  def onDidCreate(listener: js.Function1[/* e */ Uri, js.Any], thisArgs: js.Any): Disposable = js.native
-  def onDidCreate(listener: js.Function1[/* e */ Uri, js.Any], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
-  def onDidCreate(listener: js.Function1[/* e */ Uri, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
-  /**
-    * An event which fires on file/folder creation.
-    */
-  @JSName("onDidCreate")
-  var onDidCreate_Original: Event[Uri] = js.native
+  def onDidCreate(listener: js.Function1[/* e */ Uri, Any]): Disposable = js.native
+  def onDidCreate(listener: js.Function1[/* e */ Uri, Any], thisArgs: Any): Disposable = js.native
+  def onDidCreate(listener: js.Function1[/* e */ Uri, Any], thisArgs: Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onDidCreate(listener: js.Function1[/* e */ Uri, Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
   
   /**
     * An event which fires on file/folder deletion.
     */
-  def onDidDelete(listener: js.Function1[/* e */ Uri, js.Any]): Disposable = js.native
-  def onDidDelete(listener: js.Function1[/* e */ Uri, js.Any], thisArgs: js.Any): Disposable = js.native
-  def onDidDelete(listener: js.Function1[/* e */ Uri, js.Any], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
-  def onDidDelete(listener: js.Function1[/* e */ Uri, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
-  /**
-    * An event which fires on file/folder deletion.
-    */
-  @JSName("onDidDelete")
-  var onDidDelete_Original: Event[Uri] = js.native
+  def onDidDelete(listener: js.Function1[/* e */ Uri, Any]): Disposable = js.native
+  def onDidDelete(listener: js.Function1[/* e */ Uri, Any], thisArgs: Any): Disposable = js.native
+  def onDidDelete(listener: js.Function1[/* e */ Uri, Any], thisArgs: Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onDidDelete(listener: js.Function1[/* e */ Uri, Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
 }

@@ -47,7 +47,7 @@ object ListBucketMetricsConfigurationsOutput {
     
     inline def setMetricsConfigurationListUndefined: Self = StObject.set(x, "MetricsConfigurationList", js.undefined)
     
-    inline def setMetricsConfigurationListVarargs(value: MetricsConfiguration*): Self = StObject.set(x, "MetricsConfigurationList", js.Array(value :_*))
+    inline def setMetricsConfigurationListVarargs(value: MetricsConfiguration*): Self = StObject.set(x, "MetricsConfigurationList", js.Array(value*))
     
     inline def setNextContinuationToken(value: NextToken): Self = StObject.set(x, "NextContinuationToken", value.asInstanceOf[js.Any])
     

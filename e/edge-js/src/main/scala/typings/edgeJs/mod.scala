@@ -1,7 +1,6 @@
 package typings.edgeJs
 
 import typings.edgeJs.edgeJsBooleans.`true`
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +25,7 @@ object mod {
   @js.native
   trait Func_[TInput, TOutput] extends StObject {
     
-    def apply(payload: TInput, callback: js.Function2[/* error */ Error, /* result */ TOutput, Unit]): Unit = js.native
+    def apply(payload: TInput, callback: js.Function2[/* error */ js.Error, /* result */ TOutput, Unit]): Unit = js.native
     def apply(payload: TInput, sync: `true`): TOutput = js.native
   }
   
@@ -78,7 +77,7 @@ object mod {
       
       inline def setReferencesUndefined: Self = StObject.set(x, "references", js.undefined)
       
-      inline def setReferencesVarargs(value: String*): Self = StObject.set(x, "references", js.Array(value :_*))
+      inline def setReferencesVarargs(value: String*): Self = StObject.set(x, "references", js.Array(value*))
       
       inline def setSource(value: String | js.Function): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }

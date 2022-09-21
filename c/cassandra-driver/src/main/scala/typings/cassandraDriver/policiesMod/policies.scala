@@ -16,8 +16,6 @@ import typings.cassandraDriver.policiesMod.policies.timestampGeneration.Timestam
 import typings.cassandraDriver.typesMod.types.Long
 import typings.cassandraDriver.typesMod.types.consistencies
 import typings.cassandraDriver.typesMod.types.distance
-import typings.std.Error
-import typings.std.Iterator
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -33,7 +31,7 @@ object policies {
     
     @JSImport("cassandra-driver/lib/policies", "policies.addressResolution.EC2MultiRegionTranslator")
     @js.native
-    class EC2MultiRegionTranslator ()
+    open class EC2MultiRegionTranslator ()
       extends StObject
          with AddressTranslator {
       
@@ -76,19 +74,19 @@ object policies {
     
     @JSImport("cassandra-driver/lib/policies", "policies.loadBalancing.AllowListPolicy")
     @js.native
-    class AllowListPolicy protected () extends LoadBalancingPolicy {
+    open class AllowListPolicy protected () extends LoadBalancingPolicy {
       def this(childPolicy: LoadBalancingPolicy, allowList: js.Array[String]) = this()
     }
     
     @JSImport("cassandra-driver/lib/policies", "policies.loadBalancing.DCAwareRoundRobinPolicy")
     @js.native
-    class DCAwareRoundRobinPolicy protected () extends LoadBalancingPolicy {
+    open class DCAwareRoundRobinPolicy protected () extends LoadBalancingPolicy {
       def this(localDc: String) = this()
     }
     
     @JSImport("cassandra-driver/lib/policies", "policies.loadBalancing.DefaultLoadBalancingPolicy")
     @js.native
-    class DefaultLoadBalancingPolicy () extends LoadBalancingPolicy {
+    open class DefaultLoadBalancingPolicy () extends LoadBalancingPolicy {
       def this(options: Filter) = this()
     }
     
@@ -105,23 +103,23 @@ object policies {
       def newQueryPlan(
         keyspace: String,
         executionOptions: ExecutionOptions,
-        callback: js.Function2[/* error */ Error, /* iterator */ Iterator[Host, js.Any, Unit], Unit]
+        callback: js.Function2[/* error */ js.Error, /* iterator */ js.Iterator[Host], Unit]
       ): Unit = js.native
     }
     
     @JSImport("cassandra-driver/lib/policies", "policies.loadBalancing.RoundRobinPolicy")
     @js.native
-    class RoundRobinPolicy () extends LoadBalancingPolicy
+    open class RoundRobinPolicy () extends LoadBalancingPolicy
     
     @JSImport("cassandra-driver/lib/policies", "policies.loadBalancing.TokenAwarePolicy")
     @js.native
-    class TokenAwarePolicy protected () extends LoadBalancingPolicy {
+    open class TokenAwarePolicy protected () extends LoadBalancingPolicy {
       def this(childPolicy: LoadBalancingPolicy) = this()
     }
     
     @JSImport("cassandra-driver/lib/policies", "policies.loadBalancing.WhiteListPolicy")
     @js.native
-    class WhiteListPolicy protected () extends AllowListPolicy {
+    open class WhiteListPolicy protected () extends AllowListPolicy {
       def this(childPolicy: LoadBalancingPolicy, allowList: js.Array[String]) = this()
     }
   }
@@ -130,7 +128,7 @@ object policies {
     
     @JSImport("cassandra-driver/lib/policies", "policies.reconnection.ConstantReconnectionPolicy")
     @js.native
-    class ConstantReconnectionPolicy protected ()
+    open class ConstantReconnectionPolicy protected ()
       extends StObject
          with ReconnectionPolicy {
       def this(delay: Double) = this()
@@ -139,12 +137,12 @@ object policies {
       override def getOptions(): Map[String, js.Object] = js.native
       
       /* CompleteClass */
-      override def newSchedule(): Iterator[Double, js.Any, Unit] = js.native
+      override def newSchedule(): js.Iterator[Double] = js.native
     }
     
     @JSImport("cassandra-driver/lib/policies", "policies.reconnection.ExponentialReconnectionPolicy")
     @js.native
-    class ExponentialReconnectionPolicy protected ()
+    open class ExponentialReconnectionPolicy protected ()
       extends StObject
          with ReconnectionPolicy {
       def this(baseDelay: Double, maxDelay: Double) = this()
@@ -154,18 +152,18 @@ object policies {
       override def getOptions(): Map[String, js.Object] = js.native
       
       /* CompleteClass */
-      override def newSchedule(): Iterator[Double, js.Any, Unit] = js.native
+      override def newSchedule(): js.Iterator[Double] = js.native
     }
     
     trait ReconnectionPolicy extends StObject {
       
       def getOptions(): Map[String, js.Object]
       
-      def newSchedule(): Iterator[Double, js.Any, Unit]
+      def newSchedule(): js.Iterator[Double]
     }
     object ReconnectionPolicy {
       
-      inline def apply(getOptions: () => Map[String, js.Object], newSchedule: () => Iterator[Double, js.Any, Unit]): ReconnectionPolicy = {
+      inline def apply(getOptions: () => Map[String, js.Object], newSchedule: () => js.Iterator[Double]): ReconnectionPolicy = {
         val __obj = js.Dynamic.literal(getOptions = js.Any.fromFunction0(getOptions), newSchedule = js.Any.fromFunction0(newSchedule))
         __obj.asInstanceOf[ReconnectionPolicy]
       }
@@ -174,7 +172,7 @@ object policies {
         
         inline def setGetOptions(value: () => Map[String, js.Object]): Self = StObject.set(x, "getOptions", js.Any.fromFunction0(value))
         
-        inline def setNewSchedule(value: () => Iterator[Double, js.Any, Unit]): Self = StObject.set(x, "newSchedule", js.Any.fromFunction0(value))
+        inline def setNewSchedule(value: () => js.Iterator[Double]): Self = StObject.set(x, "newSchedule", js.Any.fromFunction0(value))
       }
     }
   }
@@ -183,7 +181,7 @@ object policies {
     
     @JSImport("cassandra-driver/lib/policies", "policies.retry.DecisionInfo")
     @js.native
-    class DecisionInfo () extends StObject {
+    open class DecisionInfo () extends StObject {
       
       var consistency: consistencies = js.native
       
@@ -192,17 +190,17 @@ object policies {
     
     @JSImport("cassandra-driver/lib/policies", "policies.retry.FallthroughRetryPolicy")
     @js.native
-    class FallthroughRetryPolicy () extends RetryPolicy
+    open class FallthroughRetryPolicy () extends RetryPolicy
     
     @JSImport("cassandra-driver/lib/policies", "policies.retry.IdempotenceAwareRetryPolicy")
     @js.native
-    class IdempotenceAwareRetryPolicy protected () extends RetryPolicy {
+    open class IdempotenceAwareRetryPolicy protected () extends RetryPolicy {
       def this(childPolicy: RetryPolicy) = this()
     }
     
     @JSImport("cassandra-driver/lib/policies", "policies.retry.OperationInfo")
     @js.native
-    class OperationInfo () extends StObject {
+    open class OperationInfo () extends StObject {
       
       var executionOptions: ExecutionOptions = js.native
       
@@ -244,7 +242,7 @@ object policies {
     
     @JSImport("cassandra-driver/lib/policies", "policies.retry.RetryPolicy")
     @js.native
-    class RetryPolicy () extends StObject {
+    open class RetryPolicy () extends StObject {
       
       def onReadTimeout(
         info: OperationInfo,
@@ -254,7 +252,7 @@ object policies {
         isDataPresent: Boolean
       ): DecisionInfo = js.native
       
-      def onRequestError(info: OperationInfo, consistency: consistencies, err: Error): DecisionInfo = js.native
+      def onRequestError(info: OperationInfo, consistency: consistencies, err: js.Error): DecisionInfo = js.native
       
       def onUnavailable(info: OperationInfo, consistency: consistencies, required: Double, alive: Boolean): DecisionInfo = js.native
       
@@ -277,7 +275,7 @@ object policies {
     
     @JSImport("cassandra-driver/lib/policies", "policies.speculativeExecution.ConstantSpeculativeExecutionPolicy")
     @js.native
-    class ConstantSpeculativeExecutionPolicy protected ()
+    open class ConstantSpeculativeExecutionPolicy protected ()
       extends StObject
          with SpeculativeExecutionPolicy {
       def this(delay: Double, maxSpeculativeExecutions: Double) = this()
@@ -285,7 +283,7 @@ object policies {
     
     @JSImport("cassandra-driver/lib/policies", "policies.speculativeExecution.NoSpeculativeExecutionPolicy")
     @js.native
-    class NoSpeculativeExecutionPolicy ()
+    open class NoSpeculativeExecutionPolicy ()
       extends StObject
          with SpeculativeExecutionPolicy
     
@@ -307,7 +305,7 @@ object policies {
     
     @JSImport("cassandra-driver/lib/policies", "policies.timestampGeneration.MonotonicTimestampGenerator")
     @js.native
-    class MonotonicTimestampGenerator protected ()
+    open class MonotonicTimestampGenerator protected ()
       extends StObject
          with TimestampGenerator {
       def this(warningThreshold: Double, minLogInterval: Double) = this()

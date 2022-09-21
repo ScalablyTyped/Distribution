@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListAWSServiceAccessForOrganizationResponse extends StObject {
   
   /**
-    * A list of the service principals for the services that are enabled to integrate with your organization. Each principal is a structure that includes the name and the date that it was enabled for integration with AWS Organizations.
+    * A list of the service principals for the services that are enabled to integrate with your organization. Each principal is a structure that includes the name and the date that it was enabled for integration with Organizations.
     */
   var EnabledServicePrincipals: js.UndefOr[typings.awsSdk.organizationsMod.EnabledServicePrincipals] = js.undefined
   
@@ -29,7 +29,7 @@ object ListAWSServiceAccessForOrganizationResponse {
     
     inline def setEnabledServicePrincipalsUndefined: Self = StObject.set(x, "EnabledServicePrincipals", js.undefined)
     
-    inline def setEnabledServicePrincipalsVarargs(value: EnabledServicePrincipal*): Self = StObject.set(x, "EnabledServicePrincipals", js.Array(value :_*))
+    inline def setEnabledServicePrincipalsVarargs(value: EnabledServicePrincipal*): Self = StObject.set(x, "EnabledServicePrincipals", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

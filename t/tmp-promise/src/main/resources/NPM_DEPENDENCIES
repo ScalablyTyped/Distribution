@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "tmp-promise" : "1.1.0"
+      "tmp-promise" : "3.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "tmp-promise" : "1.1.0"
+      "tmp-promise" : "3.0.3"
     }
   ],
   "compile-devDependencies" : [

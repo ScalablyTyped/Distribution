@@ -26,6 +26,20 @@ object mod extends Shortcut {
     /* "standalone" */ val Standalone: typings.expoConstants.constantsTypesMod.AppOwnership.Standalone & String = js.native
   }
   
+  @JSImport("expo-constants", "ExecutionEnvironment")
+  @js.native
+  object ExecutionEnvironment extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.expoConstants.constantsTypesMod.ExecutionEnvironment & String] = js.native
+    
+    /* "bare" */ val Bare: typings.expoConstants.constantsTypesMod.ExecutionEnvironment.Bare & String = js.native
+    
+    /* "standalone" */ val Standalone: typings.expoConstants.constantsTypesMod.ExecutionEnvironment.Standalone & String = js.native
+    
+    /* "storeClient" */ val StoreClient: typings.expoConstants.constantsTypesMod.ExecutionEnvironment.StoreClient & String = js.native
+  }
+  
   @JSImport("expo-constants", "UserInterfaceIdiom")
   @js.native
   object UserInterfaceIdiom extends StObject {

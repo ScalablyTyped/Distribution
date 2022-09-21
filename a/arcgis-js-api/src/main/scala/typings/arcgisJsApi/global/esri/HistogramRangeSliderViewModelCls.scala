@@ -8,7 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSGlobal("__esri.HistogramRangeSliderViewModel")
 @js.native
-class HistogramRangeSliderViewModelCls ()
+/**
+  * Provides the logic for the [HistogramRangeSlider](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html) widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider-HistogramRangeSliderViewModel.html)
+  */
+open class HistogramRangeSliderViewModelCls ()
   extends StObject
      with typings.arcgisJsApi.esri.HistogramRangeSliderViewModel {
   def this(properties: HistogramRangeSliderViewModelProperties) = this()

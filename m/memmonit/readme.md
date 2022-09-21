@@ -10,10 +10,10 @@ Library to help monitor operating system memory
 | ------------------ | :-------------: |
 | Full name          | memmonit |
 | Keywords           | memory, monitoring, lib |
-| # releases         | 8 |
-| # dependents       | 0 |
-| # downloads        | 752 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 53.0 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/diegodamato/memmonit#readme)

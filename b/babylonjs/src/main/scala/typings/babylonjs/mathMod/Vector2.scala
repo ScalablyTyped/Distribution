@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param x defines the first coordinate
   * @param y defines the second coordinate
   */
-class Vector2 ()
+open class Vector2 ()
   extends typings.babylonjs.mathVectorMod.Vector2 {
   def this(/** defines the first coordinate */
   x: Double) = this()
@@ -58,6 +58,19 @@ object Vector2 {
     value1: DeepImmutable[typings.babylonjs.mathVectorMod.Vector2],
     value2: DeepImmutable[typings.babylonjs.mathVectorMod.Vector2]
   ): typings.babylonjs.mathVectorMod.Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("Center")(value1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Vector2]
+  
+  /**
+    * Gets the center of the vectors "value1" and "value2" and stores the result in the vector "ref"
+    * @param value1 defines first vector
+    * @param value2 defines second vector
+    * @param ref defines third vector
+    * @returns ref
+    */
+  inline def CenterToRef(
+    value1: DeepImmutable[typings.babylonjs.mathVectorMod.Vector2],
+    value2: DeepImmutable[typings.babylonjs.mathVectorMod.Vector2],
+    ref: DeepImmutable[typings.babylonjs.mathVectorMod.Vector2]
+  ): typings.babylonjs.mathVectorMod.Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("CenterToRef")(value1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Vector2]
   
   /**
     * Returns a new Vector2 set with same the coordinates than "value" ones if the vector "value" is in the square defined by "min" and "max".
@@ -142,7 +155,7 @@ object Vector2 {
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromArrayToRef")(array.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
-    * Returns a new Vector2 located for "amount" (float) on the Hermite spline defined by the vectors "value1", "value3", "tangent1", "tangent2"
+    * Returns a new Vector2 located for "amount" (float) on the Hermite spline defined by the vectors "value1", "value2", "tangent1", "tangent2"
     * @param value1 defines the 1st control point
     * @param tangent1 defines the outgoing tangent
     * @param value2 defines the 2nd control point
@@ -159,6 +172,41 @@ object Vector2 {
   ): typings.babylonjs.mathVectorMod.Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("Hermite")(value1.asInstanceOf[js.Any], tangent1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], tangent2.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Vector2]
   
   /**
+    * Returns a new Vector2 which is the 1st derivative of the Hermite spline defined by the vectors "value1", "value2", "tangent1", "tangent2".
+    * @param value1 defines the first control point
+    * @param tangent1 defines the first tangent
+    * @param value2 defines the second control point
+    * @param tangent2 defines the second tangent
+    * @param time define where the derivative must be done
+    * @returns 1st derivative
+    */
+  inline def Hermite1stDerivative(
+    value1: DeepImmutable[typings.babylonjs.mathVectorMod.Vector2],
+    tangent1: DeepImmutable[typings.babylonjs.mathVectorMod.Vector2],
+    value2: DeepImmutable[typings.babylonjs.mathVectorMod.Vector2],
+    tangent2: DeepImmutable[typings.babylonjs.mathVectorMod.Vector2],
+    time: Double
+  ): typings.babylonjs.mathVectorMod.Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("Hermite1stDerivative")(value1.asInstanceOf[js.Any], tangent1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], tangent2.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Vector2]
+  
+  /**
+    * Returns a new Vector2 which is the 1st derivative of the Hermite spline defined by the vectors "value1", "value2", "tangent1", "tangent2".
+    * @param value1 defines the first control point
+    * @param tangent1 defines the first tangent
+    * @param value2 defines the second control point
+    * @param tangent2 defines the second tangent
+    * @param time define where the derivative must be done
+    * @param result define where the derivative will be stored
+    */
+  inline def Hermite1stDerivativeToRef(
+    value1: DeepImmutable[typings.babylonjs.mathVectorMod.Vector2],
+    tangent1: DeepImmutable[typings.babylonjs.mathVectorMod.Vector2],
+    value2: DeepImmutable[typings.babylonjs.mathVectorMod.Vector2],
+    tangent2: DeepImmutable[typings.babylonjs.mathVectorMod.Vector2],
+    time: Double,
+    result: typings.babylonjs.mathVectorMod.Vector2
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Hermite1stDerivativeToRef")(value1.asInstanceOf[js.Any], tangent1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], tangent2.asInstanceOf[js.Any], time.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  /**
     * Returns a new Vector2 located for "amount" (float) on the linear interpolation between the vector "start" adn the vector "end".
     * @param start defines the start vector
     * @param end defines the end vector
@@ -172,7 +220,7 @@ object Vector2 {
   ): typings.babylonjs.mathVectorMod.Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("Lerp")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathVectorMod.Vector2]
   
   /**
-    * Gets a new Vecto2 set with the maximal coordinate values from the "left" and "right" vectors
+    * Gets a new Vector2 set with the maximal coordinate values from the "left" and "right" vectors
     * @param left defines 1st vector
     * @param right defines 2nd vector
     * @returns a new Vector2
@@ -201,6 +249,16 @@ object Vector2 {
   inline def Normalize(vector: DeepImmutable[typings.babylonjs.mathVectorMod.Vector2]): typings.babylonjs.mathVectorMod.Vector2 = ^.asInstanceOf[js.Dynamic].applyDynamic("Normalize")(vector.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.mathVectorMod.Vector2]
   
   /**
+    * Normalize a given vector into a second one
+    * @param vector defines the vector to normalize
+    * @param result defines the vector where to store the result
+    */
+  inline def NormalizeToRef(
+    vector: DeepImmutable[typings.babylonjs.mathVectorMod.Vector2],
+    result: typings.babylonjs.mathVectorMod.Vector2
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("NormalizeToRef")(vector.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  /**
     * Gets a new Vector2(1, 1)
     * @returns a new Vector2
     */
@@ -212,7 +270,7 @@ object Vector2 {
     * @param p0 defines 1st triangle point
     * @param p1 defines 2nd triangle point
     * @param p2 defines 3rd triangle point
-    * @returns true if the point "p" is in the triangle defined by the vertors "p0", "p1", "p2"
+    * @returns true if the point "p" is in the triangle defined by the vectors "p0", "p1", "p2"
     */
   inline def PointInTriangle(
     p: DeepImmutable[typings.babylonjs.mathVectorMod.Vector2],
@@ -249,4 +307,9 @@ object Vector2 {
     * @returns a new Vector2
     */
   inline def Zero(): typings.babylonjs.mathVectorMod.Vector2 = ^.asInstanceOf[js.Dynamic].applyDynamic("Zero")().asInstanceOf[typings.babylonjs.mathVectorMod.Vector2]
+  
+  @JSImport("babylonjs/Maths/math", "Vector2._ZeroReadOnly")
+  @js.native
+  def _ZeroReadOnly: Any = js.native
+  inline def _ZeroReadOnly_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ZeroReadOnly")(x.asInstanceOf[js.Any])
 }

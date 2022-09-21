@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "BulkUpdateTeamMembersRequest")
 @js.native
-class BulkUpdateTeamMembersRequest () extends StObject {
+open class BulkUpdateTeamMembersRequest () extends StObject {
   
   /**
     * The data which will be used to update the `TeamMember` objects.

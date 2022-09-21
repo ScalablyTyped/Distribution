@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Next extends StObject {
   
-  var next: js.UndefOr[js.Any] = js.undefined
+  var next: js.UndefOr[String] = js.undefined
   
-  var previous: js.UndefOr[js.Any] = js.undefined
+  var previous: js.UndefOr[String] = js.undefined
 }
 object Next {
   
@@ -19,11 +19,11 @@ object Next {
   
   extension [Self <: Next](x: Self) {
     
-    inline def setNext(value: js.Any): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
     inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     
-    inline def setPrevious(value: js.Any): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
+    inline def setPrevious(value: String): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
     
     inline def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
   }

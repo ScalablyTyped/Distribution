@@ -18,7 +18,7 @@ trait IGroup
   /** [Method] Add a list of sprites to group
     * @param sprites Array|Ext.draw.sprite.Sprite
     */
-  var addAll: js.UndefOr[js.Function1[/* sprites */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var addAll: js.UndefOr[js.Function1[/* sprites */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Clear the group
     * @param destroySprite Boolean
@@ -28,13 +28,13 @@ trait IGroup
   /** [Method] Iterate all sprites with specific function
     * @param fn Function Function to iterate.
     */
-  var each: js.UndefOr[js.Function1[/* fn */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var each: js.UndefOr[js.Function1[/* fn */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Get the sprite with id or index
     * @param id String|Number
     * @returns Ext.draw.sprite.Sprite
     */
-  var get: js.UndefOr[js.Function1[/* id */ js.UndefOr[js.Any], ISprite]] = js.undefined
+  var get: js.UndefOr[js.Function1[/* id */ js.UndefOr[Any], ISprite]] = js.undefined
   
   /** [Method] Get the i th sprite of the group
     * @param index Number
@@ -45,12 +45,12 @@ trait IGroup
   /** [Method] Return the minimal bounding box that contains all the sprites bounding boxes in this group
     * @param isWithTransform Object
     */
-  var getBBox: js.UndefOr[js.Function1[/* isWithTransform */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var getBBox: js.UndefOr[js.Function1[/* isWithTransform */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Returns the value of surface
     * @returns Object
     */
-  var getSurface: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getSurface: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Hide all sprites in the group
     * @param o Boolean Whether to re-render the frame.
@@ -64,7 +64,7 @@ trait IGroup
     */
   @JSName("relayEvents")
   var relayEvents_IGroup: js.UndefOr[
-    js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
+    js.Function2[/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any], IObservable]
   ] = js.undefined
   
   /** [Method] Remote sprite from group
@@ -78,7 +78,7 @@ trait IGroup
   /** [Method] Set attributes to all sprites in the group
     * @param o Object Sprite attribute options just like in Ext.draw.sprite.Sprite.
     */
-  var setAttributes: js.UndefOr[js.Function1[/* o */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setAttributes: js.UndefOr[js.Function1[/* o */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Set dirty flag for all sprites in the group */
   var setDirty: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -86,7 +86,7 @@ trait IGroup
   /** [Method] Sets the value of surface
     * @param surface Object The new value.
     */
-  var setSurface: js.UndefOr[js.Function1[/* surface */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setSurface: js.UndefOr[js.Function1[/* surface */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Display all sprites in the group
     * @param o Boolean Whether to re-render the frame.
@@ -104,7 +104,7 @@ object IGroup {
     
     inline def setAdd(value: /* sprite */ js.UndefOr[ISprite] => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    inline def setAddAll(value: /* sprites */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "addAll", js.Any.fromFunction1(value))
+    inline def setAddAll(value: /* sprites */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "addAll", js.Any.fromFunction1(value))
     
     inline def setAddAllUndefined: Self = StObject.set(x, "addAll", js.undefined)
     
@@ -114,21 +114,21 @@ object IGroup {
     
     inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
-    inline def setEach(value: /* fn */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "each", js.Any.fromFunction1(value))
+    inline def setEach(value: /* fn */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "each", js.Any.fromFunction1(value))
     
     inline def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
     
-    inline def setGet(value: /* id */ js.UndefOr[js.Any] => ISprite): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: /* id */ js.UndefOr[Any] => ISprite): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
     inline def setGetAt(value: /* index */ js.UndefOr[Double] => ISprite): Self = StObject.set(x, "getAt", js.Any.fromFunction1(value))
     
     inline def setGetAtUndefined: Self = StObject.set(x, "getAt", js.undefined)
     
-    inline def setGetBBox(value: /* isWithTransform */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getBBox", js.Any.fromFunction1(value))
+    inline def setGetBBox(value: /* isWithTransform */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "getBBox", js.Any.fromFunction1(value))
     
     inline def setGetBBoxUndefined: Self = StObject.set(x, "getBBox", js.undefined)
     
-    inline def setGetSurface(value: () => js.Any): Self = StObject.set(x, "getSurface", js.Any.fromFunction0(value))
+    inline def setGetSurface(value: () => Any): Self = StObject.set(x, "getSurface", js.Any.fromFunction0(value))
     
     inline def setGetSurfaceUndefined: Self = StObject.set(x, "getSurface", js.undefined)
     
@@ -138,7 +138,7 @@ object IGroup {
     
     inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
-    inline def setRelayEvents(value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
+    inline def setRelayEvents(value: (/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
     
     inline def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
     
@@ -146,7 +146,7 @@ object IGroup {
     
     inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
-    inline def setSetAttributes(value: /* o */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setAttributes", js.Any.fromFunction1(value))
+    inline def setSetAttributes(value: /* o */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setAttributes", js.Any.fromFunction1(value))
     
     inline def setSetAttributesUndefined: Self = StObject.set(x, "setAttributes", js.undefined)
     
@@ -154,7 +154,7 @@ object IGroup {
     
     inline def setSetDirtyUndefined: Self = StObject.set(x, "setDirty", js.undefined)
     
-    inline def setSetSurface(value: /* surface */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setSurface", js.Any.fromFunction1(value))
+    inline def setSetSurface(value: /* surface */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setSurface", js.Any.fromFunction1(value))
     
     inline def setSetSurfaceUndefined: Self = StObject.set(x, "setSurface", js.undefined)
     

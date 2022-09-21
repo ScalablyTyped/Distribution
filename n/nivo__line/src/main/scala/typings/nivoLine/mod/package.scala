@@ -1,19 +1,30 @@
-package typings.nivoLine
+package typings.nivoLine.mod
 
+import typings.nivoLine.anon.XFormatted
+import typings.react.mod.FunctionComponent
+import typings.react.mod.MouseEvent
+import typings.react.mod.NativeMouseEvent
+import typings.react.mod.ReactNode
+import typings.std.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type AccessorFunc = js.Function1[/* datum */ typings.nivoLine.anon.XFormatted, java.lang.String]
-  type CustomLayer = js.Function1[/* props */ typings.nivoLine.mod.CustomLayerProps, typings.react.mod.ReactNode]
-  type DatumValue = typings.nivoCore.mod.DatumValue
-  type Layer = typings.nivoLine.mod.LineLayerType | typings.nivoLine.mod.CustomLayer
-  type PointMouseHandler = js.Function2[
-    /* point */ typings.nivoLine.mod.Point, 
-    /* event */ typings.react.mod.MouseEvent[typings.std.Element, typings.react.mod.NativeMouseEvent], 
-    scala.Unit
-  ]
-  type PointTooltip = typings.react.mod.FunctionComponent[typings.nivoLine.mod.PointTooltipProps]
-  type SliceTooltip = typings.react.mod.FunctionComponent[typings.nivoLine.mod.SliceTooltipProps]
-}
+
+type AccessorFunc = js.Function1[/* datum */ XFormatted, String]
+
+type CanvasLayer = LineLayerType | CustomCanvasLayer
+
+type CustomCanvasLayer = js.Function1[/* props */ CustomCanvasLayerProps, Unit]
+
+type CustomLayer = js.Function1[/* props */ CustomLayerProps, ReactNode]
+
+type DatumValue = typings.nivoCore.mod.DatumValue
+
+type Layer = LineLayerType | CustomLayer
+
+type PointMouseHandler = js.Function2[/* point */ Point, /* event */ MouseEvent[Element, NativeMouseEvent], Unit]
+
+type PointTooltip = FunctionComponent[PointTooltipProps]
+
+type SliceTooltip = FunctionComponent[SliceTooltipProps]

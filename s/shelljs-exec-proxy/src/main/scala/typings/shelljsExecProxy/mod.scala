@@ -28,7 +28,6 @@ import typings.shelljs.mod.UniqFunction
 import typings.shelljsExecProxy.shelljsExecProxyStrings.PlussignN
 import typings.shelljsExecProxy.shelljsExecProxyStrings.`-N`
 import typings.shelljsExecProxy.shelljsExecProxyStrings.`-c`
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,7 +41,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("shelljs-exec-proxy", "ShellString")
   @js.native
-  class ShellString protected ()
+  open class ShellString protected ()
     extends StObject
        with typings.shelljs.mod.ShellString {
     /**
@@ -278,9 +277,9 @@ object mod extends Shortcut {
     /* CompleteClass */
     override def grep(options: String, regex_filter: String, files: js.Array[String]): typings.shelljs.mod.ShellString = js.native
     /* CompleteClass */
-    override def grep(options: String, regex_filter: RegExp, files: String*): typings.shelljs.mod.ShellString = js.native
+    override def grep(options: String, regex_filter: js.RegExp, files: String*): typings.shelljs.mod.ShellString = js.native
     /* CompleteClass */
-    override def grep(options: String, regex_filter: RegExp, files: js.Array[String]): typings.shelljs.mod.ShellString = js.native
+    override def grep(options: String, regex_filter: js.RegExp, files: js.Array[String]): typings.shelljs.mod.ShellString = js.native
     /**
       * Reads input string from given files and returns a string containing all lines
       * of the file that match the given `regex_filter`. Wildcard `*` accepted.
@@ -316,9 +315,9 @@ object mod extends Shortcut {
     /* CompleteClass */
     override def grep(regex_filter: String, files: js.Array[String]): typings.shelljs.mod.ShellString = js.native
     /* CompleteClass */
-    override def grep(regex_filter: RegExp, files: String*): typings.shelljs.mod.ShellString = js.native
+    override def grep(regex_filter: js.RegExp, files: String*): typings.shelljs.mod.ShellString = js.native
     /* CompleteClass */
-    override def grep(regex_filter: RegExp, files: js.Array[String]): typings.shelljs.mod.ShellString = js.native
+    override def grep(regex_filter: js.RegExp, files: js.Array[String]): typings.shelljs.mod.ShellString = js.native
     /**
       * Reads input string from given files and returns a string containing all lines
       * of the file that match the given `regex_filter`. Wildcard `*` accepted.
@@ -397,9 +396,9 @@ object mod extends Shortcut {
     /* CompleteClass */
     override def sed(options: String, searchRegex: String, replacement: String, files: js.Array[String]): typings.shelljs.mod.ShellString = js.native
     /* CompleteClass */
-    override def sed(options: String, searchRegex: RegExp, replacement: String, files: String*): typings.shelljs.mod.ShellString = js.native
+    override def sed(options: String, searchRegex: js.RegExp, replacement: String, files: String*): typings.shelljs.mod.ShellString = js.native
     /* CompleteClass */
-    override def sed(options: String, searchRegex: RegExp, replacement: String, files: js.Array[String]): typings.shelljs.mod.ShellString = js.native
+    override def sed(options: String, searchRegex: js.RegExp, replacement: String, files: js.Array[String]): typings.shelljs.mod.ShellString = js.native
     /**
       * Reads an input string from pipeline and performs a JavaScript `replace()`
       * on the input using the given search regex and replacement string or function.
@@ -434,9 +433,9 @@ object mod extends Shortcut {
     /* CompleteClass */
     override def sed(searchRegex: String, replacement: String, files: js.Array[String]): typings.shelljs.mod.ShellString = js.native
     /* CompleteClass */
-    override def sed(searchRegex: RegExp, replacement: String, files: String*): typings.shelljs.mod.ShellString = js.native
+    override def sed(searchRegex: js.RegExp, replacement: String, files: String*): typings.shelljs.mod.ShellString = js.native
     /* CompleteClass */
-    override def sed(searchRegex: RegExp, replacement: String, files: js.Array[String]): typings.shelljs.mod.ShellString = js.native
+    override def sed(searchRegex: js.RegExp, replacement: String, files: js.Array[String]): typings.shelljs.mod.ShellString = js.native
     /**
       * Reads an input string from pipeline and performs a JavaScript `replace()`
       * on the input using the given search regex and replacement string or function.
@@ -853,8 +852,8 @@ object mod extends Shortcut {
       * @return Returns a string containing all lines of the file that match the given regex_filter.
       */
     def grep(options: String, regex_filter: String, files: js.Array[String]): typings.shelljs.mod.ShellString = js.native
-    def grep(options: String, regex_filter: RegExp, files: String*): typings.shelljs.mod.ShellString = js.native
-    def grep(options: String, regex_filter: RegExp, files: js.Array[String]): typings.shelljs.mod.ShellString = js.native
+    def grep(options: String, regex_filter: js.RegExp, files: String*): typings.shelljs.mod.ShellString = js.native
+    def grep(options: String, regex_filter: js.RegExp, files: js.Array[String]): typings.shelljs.mod.ShellString = js.native
     def grep(regex_filter: String, files: String*): typings.shelljs.mod.ShellString = js.native
     /**
       * Reads input string from given files and returns a string containing all lines
@@ -865,8 +864,8 @@ object mod extends Shortcut {
       * @return             Returns a string containing all lines of the file that match the given `regex_filter`.
       */
     def grep(regex_filter: String, files: js.Array[String]): typings.shelljs.mod.ShellString = js.native
-    def grep(regex_filter: RegExp, files: String*): typings.shelljs.mod.ShellString = js.native
-    def grep(regex_filter: RegExp, files: js.Array[String]): typings.shelljs.mod.ShellString = js.native
+    def grep(regex_filter: js.RegExp, files: String*): typings.shelljs.mod.ShellString = js.native
+    def grep(regex_filter: js.RegExp, files: js.Array[String]): typings.shelljs.mod.ShellString = js.native
     
     def head(files: String*): typings.shelljs.mod.ShellString = js.native
     def head(files: js.Array[String]): typings.shelljs.mod.ShellString = js.native
@@ -1164,8 +1163,8 @@ object mod extends Shortcut {
       * @return            The new string after replacement.
       */
     def sed(options: String, searchRegex: String, replacement: String, files: js.Array[String]): typings.shelljs.mod.ShellString = js.native
-    def sed(options: String, searchRegex: RegExp, replacement: String, files: String*): typings.shelljs.mod.ShellString = js.native
-    def sed(options: String, searchRegex: RegExp, replacement: String, files: js.Array[String]): typings.shelljs.mod.ShellString = js.native
+    def sed(options: String, searchRegex: js.RegExp, replacement: String, files: String*): typings.shelljs.mod.ShellString = js.native
+    def sed(options: String, searchRegex: js.RegExp, replacement: String, files: js.Array[String]): typings.shelljs.mod.ShellString = js.native
     def sed(searchRegex: String, replacement: String, files: String*): typings.shelljs.mod.ShellString = js.native
     /**
       * Reads an input string from file and performs a JavaScript `replace()`
@@ -1177,8 +1176,8 @@ object mod extends Shortcut {
       * @return            The new string after replacement.
       */
     def sed(searchRegex: String, replacement: String, files: js.Array[String]): typings.shelljs.mod.ShellString = js.native
-    def sed(searchRegex: RegExp, replacement: String, files: String*): typings.shelljs.mod.ShellString = js.native
-    def sed(searchRegex: RegExp, replacement: String, files: js.Array[String]): typings.shelljs.mod.ShellString = js.native
+    def sed(searchRegex: js.RegExp, replacement: String, files: String*): typings.shelljs.mod.ShellString = js.native
+    def sed(searchRegex: js.RegExp, replacement: String, files: js.Array[String]): typings.shelljs.mod.ShellString = js.native
     
     def set(options: String): Unit = js.native
     
@@ -1230,7 +1229,7 @@ object mod extends Shortcut {
     def uniq(options: String, input: String): typings.shelljs.mod.ShellString = js.native
     def uniq(options: String, input: String, output: String): typings.shelljs.mod.ShellString = js.native
     
-    def which(command: String): typings.shelljs.mod.ShellString = js.native
+    def which(command: String): typings.shelljs.mod.ShellString | Null = js.native
   }
   
   type _To = ShelljsExecProxy

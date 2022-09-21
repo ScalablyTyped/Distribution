@@ -21,7 +21,7 @@ object StaticLifecycle {
   
   extension [Self <: StaticLifecycle[?, ?], P, S](x: Self & (StaticLifecycle[P, S])) {
     
-    inline def setGetDerivedStateFromError(value: /* error */ js.Any => Partial[S] | Null): Self = StObject.set(x, "getDerivedStateFromError", js.Any.fromFunction1(value))
+    inline def setGetDerivedStateFromError(value: /* error */ Any => Partial[S] | Null): Self = StObject.set(x, "getDerivedStateFromError", js.Any.fromFunction1(value))
     
     inline def setGetDerivedStateFromErrorUndefined: Self = StObject.set(x, "getDerivedStateFromError", js.undefined)
     

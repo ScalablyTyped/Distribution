@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.Confirm")
 @js.native
-class Confirm protected ()
+open class Confirm protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.Confirm {
   def this(element: Element) = this()

@@ -16,7 +16,7 @@ trait Category extends StObject {
   
   val Name: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Type: BuildingBlockType
   
@@ -31,7 +31,7 @@ object Category {
     Creator: Double,
     Index: Double,
     Name: String,
-    Parent: js.Any,
+    Parent: Any,
     Type: BuildingBlockType,
     WordDotCategory_typekey: Category
   ): Category = {
@@ -52,7 +52,7 @@ object Category {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setType(value: BuildingBlockType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

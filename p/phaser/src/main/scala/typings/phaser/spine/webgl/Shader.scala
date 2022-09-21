@@ -16,19 +16,19 @@ trait Shader
   
   def bind(): Unit
   
-  /* private */ var compile: js.Any
+  /* private */ var compile: Any
   
-  /* private */ var compileProgram: js.Any
+  /* private */ var compileProgram: Any
   
-  /* private */ var compileShader: js.Any
+  /* private */ var compileShader: Any
   
-  /* private */ var context: js.Any
+  /* private */ var context: Any
   
-  /* private */ var fragmentShader: js.Any
+  /* private */ var fragmentShader: Any
   
-  /* private */ var fs: js.Any
+  /* private */ var fs: Any
   
-  /* private */ var fsSource: js.Any
+  /* private */ var fsSource: Any
   
   def getAttributeLocation(attribute: String): Double
   
@@ -44,7 +44,7 @@ trait Shader
   
   def getVertexShaderSource(): String
   
-  /* private */ var program: js.Any
+  /* private */ var program: Any
   
   def setUniform2f(uniform: String, value: Double, value2: Double): Unit
   
@@ -62,32 +62,32 @@ trait Shader
   
   def setUniformi(uniform: String, value: Double): Unit
   
-  /* private */ var tmp2x2: js.Any
+  /* private */ var tmp2x2: Any
   
-  /* private */ var tmp3x3: js.Any
+  /* private */ var tmp3x3: Any
   
-  /* private */ var tmp4x4: js.Any
+  /* private */ var tmp4x4: Any
   
   def unbind(): Unit
   
-  /* private */ var vertexShader: js.Any
+  /* private */ var vertexShader: Any
   
-  /* private */ var vs: js.Any
+  /* private */ var vs: Any
   
-  /* private */ var vsSource: js.Any
+  /* private */ var vsSource: Any
 }
 object Shader {
   
   inline def apply(
     bind: () => Unit,
-    compile: js.Any,
-    compileProgram: js.Any,
-    compileShader: js.Any,
-    context: js.Any,
+    compile: Any,
+    compileProgram: Any,
+    compileShader: Any,
+    context: Any,
     dispose: () => Unit,
-    fragmentShader: js.Any,
-    fs: js.Any,
-    fsSource: js.Any,
+    fragmentShader: Any,
+    fs: Any,
+    fsSource: Any,
     getAttributeLocation: String => Double,
     getFragmentShader: () => String,
     getFragmentSource: () => String,
@@ -95,7 +95,7 @@ object Shader {
     getUniformLocation: String => WebGLUniformLocation,
     getVertexShader: () => String,
     getVertexShaderSource: () => String,
-    program: js.Any,
+    program: Any,
     restore: () => Unit,
     setUniform2f: (String, Double, Double) => Unit,
     setUniform2x2f: (String, ArrayLike[Double]) => Unit,
@@ -105,13 +105,13 @@ object Shader {
     setUniform4x4f: (String, ArrayLike[Double]) => Unit,
     setUniformf: (String, Double) => Unit,
     setUniformi: (String, Double) => Unit,
-    tmp2x2: js.Any,
-    tmp3x3: js.Any,
-    tmp4x4: js.Any,
+    tmp2x2: Any,
+    tmp3x3: Any,
+    tmp4x4: Any,
     unbind: () => Unit,
-    vertexShader: js.Any,
-    vs: js.Any,
-    vsSource: js.Any
+    vertexShader: Any,
+    vs: Any,
+    vsSource: Any
   ): Shader = {
     val __obj = js.Dynamic.literal(bind = js.Any.fromFunction0(bind), compile = compile.asInstanceOf[js.Any], compileProgram = compileProgram.asInstanceOf[js.Any], compileShader = compileShader.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), fragmentShader = fragmentShader.asInstanceOf[js.Any], fs = fs.asInstanceOf[js.Any], fsSource = fsSource.asInstanceOf[js.Any], getAttributeLocation = js.Any.fromFunction1(getAttributeLocation), getFragmentShader = js.Any.fromFunction0(getFragmentShader), getFragmentSource = js.Any.fromFunction0(getFragmentSource), getProgram = js.Any.fromFunction0(getProgram), getUniformLocation = js.Any.fromFunction1(getUniformLocation), getVertexShader = js.Any.fromFunction0(getVertexShader), getVertexShaderSource = js.Any.fromFunction0(getVertexShaderSource), program = program.asInstanceOf[js.Any], restore = js.Any.fromFunction0(restore), setUniform2f = js.Any.fromFunction3(setUniform2f), setUniform2x2f = js.Any.fromFunction2(setUniform2x2f), setUniform3f = js.Any.fromFunction4(setUniform3f), setUniform3x3f = js.Any.fromFunction2(setUniform3x3f), setUniform4f = js.Any.fromFunction5(setUniform4f), setUniform4x4f = js.Any.fromFunction2(setUniform4x4f), setUniformf = js.Any.fromFunction2(setUniformf), setUniformi = js.Any.fromFunction2(setUniformi), tmp2x2 = tmp2x2.asInstanceOf[js.Any], tmp3x3 = tmp3x3.asInstanceOf[js.Any], tmp4x4 = tmp4x4.asInstanceOf[js.Any], unbind = js.Any.fromFunction0(unbind), vertexShader = vertexShader.asInstanceOf[js.Any], vs = vs.asInstanceOf[js.Any], vsSource = vsSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Shader]
@@ -121,19 +121,19 @@ object Shader {
     
     inline def setBind(value: () => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction0(value))
     
-    inline def setCompile(value: js.Any): Self = StObject.set(x, "compile", value.asInstanceOf[js.Any])
+    inline def setCompile(value: Any): Self = StObject.set(x, "compile", value.asInstanceOf[js.Any])
     
-    inline def setCompileProgram(value: js.Any): Self = StObject.set(x, "compileProgram", value.asInstanceOf[js.Any])
+    inline def setCompileProgram(value: Any): Self = StObject.set(x, "compileProgram", value.asInstanceOf[js.Any])
     
-    inline def setCompileShader(value: js.Any): Self = StObject.set(x, "compileShader", value.asInstanceOf[js.Any])
+    inline def setCompileShader(value: Any): Self = StObject.set(x, "compileShader", value.asInstanceOf[js.Any])
     
-    inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    inline def setFragmentShader(value: js.Any): Self = StObject.set(x, "fragmentShader", value.asInstanceOf[js.Any])
+    inline def setFragmentShader(value: Any): Self = StObject.set(x, "fragmentShader", value.asInstanceOf[js.Any])
     
-    inline def setFs(value: js.Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+    inline def setFs(value: Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
     
-    inline def setFsSource(value: js.Any): Self = StObject.set(x, "fsSource", value.asInstanceOf[js.Any])
+    inline def setFsSource(value: Any): Self = StObject.set(x, "fsSource", value.asInstanceOf[js.Any])
     
     inline def setGetAttributeLocation(value: String => Double): Self = StObject.set(x, "getAttributeLocation", js.Any.fromFunction1(value))
     
@@ -149,7 +149,7 @@ object Shader {
     
     inline def setGetVertexShaderSource(value: () => String): Self = StObject.set(x, "getVertexShaderSource", js.Any.fromFunction0(value))
     
-    inline def setProgram(value: js.Any): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
+    inline def setProgram(value: Any): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
     
     inline def setSetUniform2f(value: (String, Double, Double) => Unit): Self = StObject.set(x, "setUniform2f", js.Any.fromFunction3(value))
     
@@ -167,18 +167,18 @@ object Shader {
     
     inline def setSetUniformi(value: (String, Double) => Unit): Self = StObject.set(x, "setUniformi", js.Any.fromFunction2(value))
     
-    inline def setTmp2x2(value: js.Any): Self = StObject.set(x, "tmp2x2", value.asInstanceOf[js.Any])
+    inline def setTmp2x2(value: Any): Self = StObject.set(x, "tmp2x2", value.asInstanceOf[js.Any])
     
-    inline def setTmp3x3(value: js.Any): Self = StObject.set(x, "tmp3x3", value.asInstanceOf[js.Any])
+    inline def setTmp3x3(value: Any): Self = StObject.set(x, "tmp3x3", value.asInstanceOf[js.Any])
     
-    inline def setTmp4x4(value: js.Any): Self = StObject.set(x, "tmp4x4", value.asInstanceOf[js.Any])
+    inline def setTmp4x4(value: Any): Self = StObject.set(x, "tmp4x4", value.asInstanceOf[js.Any])
     
     inline def setUnbind(value: () => Unit): Self = StObject.set(x, "unbind", js.Any.fromFunction0(value))
     
-    inline def setVertexShader(value: js.Any): Self = StObject.set(x, "vertexShader", value.asInstanceOf[js.Any])
+    inline def setVertexShader(value: Any): Self = StObject.set(x, "vertexShader", value.asInstanceOf[js.Any])
     
-    inline def setVs(value: js.Any): Self = StObject.set(x, "vs", value.asInstanceOf[js.Any])
+    inline def setVs(value: Any): Self = StObject.set(x, "vs", value.asInstanceOf[js.Any])
     
-    inline def setVsSource(value: js.Any): Self = StObject.set(x, "vsSource", value.asInstanceOf[js.Any])
+    inline def setVsSource(value: Any): Self = StObject.set(x, "vsSource", value.asInstanceOf[js.Any])
   }
 }

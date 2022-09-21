@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaAccountStatusProducts extends StObject {
   
   /**
-    * The channel the data applies to.
+    * The channel the data applies to. Acceptable values are: - "`local`" - "`online`"
     */
-  var channel: js.UndefOr[String] = js.undefined
+  var channel: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The country the data applies to.
     */
-  var country: js.UndefOr[String] = js.undefined
+  var country: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The destination the data applies to.
     */
-  var destination: js.UndefOr[String] = js.undefined
+  var destination: js.UndefOr[String | Null] = js.undefined
   
   /**
     * List of item-level issues.
@@ -42,13 +42,19 @@ object SchemaAccountStatusProducts {
     
     inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
+    inline def setChannelNull: Self = StObject.set(x, "channel", null)
+    
     inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
     
     inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
+    inline def setCountryNull: Self = StObject.set(x, "country", null)
+    
     inline def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
     inline def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    
+    inline def setDestinationNull: Self = StObject.set(x, "destination", null)
     
     inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
@@ -56,7 +62,7 @@ object SchemaAccountStatusProducts {
     
     inline def setItemLevelIssuesUndefined: Self = StObject.set(x, "itemLevelIssues", js.undefined)
     
-    inline def setItemLevelIssuesVarargs(value: SchemaAccountStatusItemLevelIssue*): Self = StObject.set(x, "itemLevelIssues", js.Array(value :_*))
+    inline def setItemLevelIssuesVarargs(value: SchemaAccountStatusItemLevelIssue*): Self = StObject.set(x, "itemLevelIssues", js.Array(value*))
     
     inline def setStatistics(value: SchemaAccountStatusStatistics): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
     

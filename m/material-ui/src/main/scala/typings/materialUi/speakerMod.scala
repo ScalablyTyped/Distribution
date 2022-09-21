@@ -10,10 +10,10 @@ object speakerMod {
   
   @JSImport("material-ui/svg-icons/hardware/speaker", JSImport.Default)
   @js.native
-  class default () extends HardwareSpeaker
+  open class default () extends HardwareSpeaker
   
   @JSImport("material-ui/svg-icons/hardware/speaker", "HardwareSpeaker")
   @js.native
-  class HardwareSpeaker ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class HardwareSpeaker ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

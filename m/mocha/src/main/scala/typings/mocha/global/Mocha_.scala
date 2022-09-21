@@ -7,6 +7,7 @@ import typings.mocha.Mocha.HookFunction
 import typings.mocha.Mocha.MochaOptions
 import typings.mocha.Mocha.PendingTestFunction
 import typings.mocha.Mocha.RunnerConstants
+import typings.mocha.Mocha.RunnerOptions
 import typings.mocha.Mocha.Stats
 import typings.mocha.Mocha.Suite
 import typings.mocha.Mocha.SuiteConstants
@@ -15,7 +16,6 @@ import typings.mocha.Mocha.Test
 import typings.mocha.Mocha.TestFunction
 import typings.mocha.Mocha.reporters.Base_.ColorMap
 import typings.mocha.Mocha.reporters.Base_.SymbolMap
-import typings.std.Error
 import typings.std.HTMLLIElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Mocha")
 @js.native
-class Mocha_ ()
+open class Mocha_ ()
   extends StObject
      with Mocha {
   def this(options: MochaOptions) = this()
@@ -42,7 +42,7 @@ object Mocha_ {
     */
   @JSGlobal("Mocha.Context")
   @js.native
-  class Context ()
+  open class Context ()
     extends StObject
        with typings.mocha.Mocha.Context
   
@@ -54,7 +54,7 @@ object Mocha_ {
     */
   @JSGlobal("Mocha.Hook")
   @js.native
-  class Hook ()
+  open class Hook ()
     extends StObject
        with typings.mocha.Mocha.Hook
   
@@ -68,7 +68,7 @@ object Mocha_ {
     */
   @JSGlobal("Mocha.Runnable")
   @js.native
-  class Runnable protected ()
+  open class Runnable protected ()
     extends StObject
        with typings.mocha.Mocha.Runnable {
     def this(title: String) = this()
@@ -108,10 +108,18 @@ object Mocha_ {
     */
   @JSGlobal("Mocha.Runner")
   @js.native
-  class Runner protected ()
+  open class Runner protected ()
     extends StObject
        with typings.mocha.Mocha.Runner {
-    def this(suite: Suite, delay: Boolean) = this()
+    /**
+      * Initialize a `Runner` at the Root Suite, which represents a hierarchy of Suites and Tests.
+      *
+      * @param suite Root suite
+      * @param optionsOrDelay Options. If boolean (deprecated), whether or not to delay execution of root suite until ready.
+      */
+    def this(suite: Suite) = this()
+    def this(suite: Suite, optionsOrDelay: Boolean) = this()
+    def this(suite: Suite, optionsOrDelay: RunnerOptions) = this()
   }
   object Runner {
     
@@ -159,7 +167,7 @@ object Mocha_ {
     */
   @JSGlobal("Mocha.Suite")
   @js.native
-  class Suite_ protected ()
+  open class Suite_ protected ()
     extends StObject
        with Suite {
     def this(title: String) = this()
@@ -194,7 +202,7 @@ object Mocha_ {
     */
   @JSGlobal("Mocha.Test")
   @js.native
-  class Test_ ()
+  open class Test_ ()
     extends StObject
        with Test
   
@@ -296,7 +304,7 @@ object Mocha_ {
       */
     @JSGlobal("Mocha.reporters.Base")
     @js.native
-    class Base_ protected ()
+    open class Base_ protected ()
       extends StObject
          with typings.mocha.Mocha.reporters.Base_ {
       def this(runner: typings.mocha.Mocha.Runner) = this()
@@ -455,7 +463,7 @@ object Mocha_ {
       */
     @JSGlobal("Mocha.reporters.Doc")
     @js.native
-    class Doc_ ()
+    open class Doc_ ()
       extends StObject
          with typings.mocha.Mocha.reporters.Base_ {
       
@@ -493,7 +501,7 @@ object Mocha_ {
       */
     @JSGlobal("Mocha.reporters.Dot")
     @js.native
-    class Dot_ ()
+    open class Dot_ ()
       extends StObject
          with typings.mocha.Mocha.reporters.Base_ {
       
@@ -533,7 +541,7 @@ object Mocha_ {
       */
     @JSGlobal("Mocha.reporters.HTML")
     @js.native
-    class HTML_ ()
+    open class HTML_ ()
       extends StObject
          with typings.mocha.Mocha.reporters.HTML_ {
       
@@ -595,7 +603,7 @@ object Mocha_ {
       */
     @JSGlobal("Mocha.reporters.JSONStream")
     @js.native
-    class JSONStream ()
+    open class JSONStream ()
       extends StObject
          with typings.mocha.Mocha.reporters.Base_ {
       
@@ -633,7 +641,7 @@ object Mocha_ {
       */
     @JSGlobal("Mocha.reporters.JSON")
     @js.native
-    class JSON_ ()
+    open class JSON_ ()
       extends StObject
          with typings.mocha.Mocha.reporters.Base_ {
       
@@ -671,7 +679,7 @@ object Mocha_ {
       */
     @JSGlobal("Mocha.reporters.Landing")
     @js.native
-    class Landing_ ()
+    open class Landing_ ()
       extends StObject
          with typings.mocha.Mocha.reporters.Base_ {
       
@@ -709,7 +717,7 @@ object Mocha_ {
       */
     @JSGlobal("Mocha.reporters.List")
     @js.native
-    class List_ ()
+    open class List_ ()
       extends StObject
          with typings.mocha.Mocha.reporters.Base_ {
       
@@ -747,7 +755,7 @@ object Mocha_ {
       */
     @JSGlobal("Mocha.reporters.Markdown")
     @js.native
-    class Markdown_ ()
+    open class Markdown_ ()
       extends StObject
          with typings.mocha.Mocha.reporters.Base_ {
       
@@ -785,7 +793,7 @@ object Mocha_ {
       */
     @JSGlobal("Mocha.reporters.Min")
     @js.native
-    class Min ()
+    open class Min ()
       extends StObject
          with typings.mocha.Mocha.reporters.Base_ {
       
@@ -823,33 +831,33 @@ object Mocha_ {
       */
     @JSGlobal("Mocha.reporters.Nyan")
     @js.native
-    class Nyan_ ()
+    open class Nyan_ ()
       extends StObject
          with typings.mocha.Mocha.reporters.Nyan_ {
       
       /* private */ /* CompleteClass */
-      var appendRainbow: js.Any = js.native
+      var appendRainbow: Any = js.native
       
       /* private */ /* CompleteClass */
-      var colorIndex: js.Any = js.native
+      var colorIndex: Any = js.native
       
       /* private */ /* CompleteClass */
-      var cursorDown: js.Any = js.native
+      var cursorDown: Any = js.native
       
       /* private */ /* CompleteClass */
-      var cursorUp: js.Any = js.native
+      var cursorUp: Any = js.native
       
       /* private */ /* CompleteClass */
-      var draw: js.Any = js.native
+      var draw: Any = js.native
       
       /* private */ /* CompleteClass */
-      var drawNyanCat: js.Any = js.native
+      var drawNyanCat: Any = js.native
       
       /* private */ /* CompleteClass */
-      var drawRainbow: js.Any = js.native
+      var drawRainbow: Any = js.native
       
       /* private */ /* CompleteClass */
-      var drawScoreboard: js.Any = js.native
+      var drawScoreboard: Any = js.native
       
       /**
         * Output common epilogue used by many of the bundled reporters.
@@ -860,7 +868,7 @@ object Mocha_ {
       override def epilogue(): Unit = js.native
       
       /* private */ /* CompleteClass */
-      var face: js.Any = js.native
+      var face: Any = js.native
       
       /**
         * Test failures
@@ -869,16 +877,16 @@ object Mocha_ {
       var failures: js.Array[Test] = js.native
       
       /* private */ /* CompleteClass */
-      var generateColors: js.Any = js.native
+      var generateColors: Any = js.native
       
       /* private */ /* CompleteClass */
-      var numberOfLines: js.Any = js.native
+      var numberOfLines: Any = js.native
       
       /* private */ /* CompleteClass */
-      var rainbowColors: js.Any = js.native
+      var rainbowColors: Any = js.native
       
       /* private */ /* CompleteClass */
-      var rainbowify: js.Any = js.native
+      var rainbowify: Any = js.native
       
       /**
         * The configured runner
@@ -887,7 +895,7 @@ object Mocha_ {
       var runner: typings.mocha.Mocha.Runner = js.native
       
       /* private */ /* CompleteClass */
-      var scoreboardWidth: js.Any = js.native
+      var scoreboardWidth: Any = js.native
       
       /**
         * Test run statistics
@@ -896,13 +904,13 @@ object Mocha_ {
       var stats: Stats = js.native
       
       /* private */ /* CompleteClass */
-      var tick: js.Any = js.native
+      var tick: Any = js.native
       
       /* private */ /* CompleteClass */
-      var trajectories: js.Any = js.native
+      var trajectories: Any = js.native
       
       /* private */ /* CompleteClass */
-      var trajectoryWidthMax: js.Any = js.native
+      var trajectoryWidthMax: Any = js.native
     }
     
     /**
@@ -912,7 +920,7 @@ object Mocha_ {
       */
     @JSGlobal("Mocha.reporters.Progress")
     @js.native
-    class Progress_ protected ()
+    open class Progress_ protected ()
       extends StObject
          with typings.mocha.Mocha.reporters.Base_ {
       def this(runner: typings.mocha.Mocha.Runner) = this()
@@ -952,7 +960,7 @@ object Mocha_ {
       */
     @JSGlobal("Mocha.reporters.Spec")
     @js.native
-    class Spec_ ()
+    open class Spec_ ()
       extends StObject
          with typings.mocha.Mocha.reporters.Base_ {
       
@@ -990,7 +998,7 @@ object Mocha_ {
       */
     @JSGlobal("Mocha.reporters.TAP")
     @js.native
-    class TAP_ ()
+    open class TAP_ ()
       extends StObject
          with typings.mocha.Mocha.reporters.Base_ {
       
@@ -1028,7 +1036,7 @@ object Mocha_ {
       */
     @JSGlobal("Mocha.reporters.XUnit")
     @js.native
-    class XUnit_ protected ()
+    open class XUnit_ protected ()
       extends StObject
          with typings.mocha.Mocha.reporters.XUnit_ {
       def this(runner: typings.mocha.Mocha.Runner) = this()
@@ -1097,7 +1105,7 @@ object Mocha_ {
     /* was `typeof Base` */
     @JSGlobal("Mocha.reporters.base")
     @js.native
-    class base protected ()
+    open class base protected ()
       extends StObject
          with typings.mocha.Mocha.reporters.Base_ {
       def this(runner: typings.mocha.Mocha.Runner) = this()
@@ -1258,7 +1266,7 @@ object Mocha_ {
     /* was `typeof Doc` */
     @JSGlobal("Mocha.reporters.doc")
     @js.native
-    class doc ()
+    open class doc ()
       extends StObject
          with typings.mocha.Mocha.reporters.Base_ {
       
@@ -1297,7 +1305,7 @@ object Mocha_ {
     /* was `typeof Dot` */
     @JSGlobal("Mocha.reporters.dot")
     @js.native
-    class dot ()
+    open class dot ()
       extends StObject
          with typings.mocha.Mocha.reporters.Base_ {
       
@@ -1338,7 +1346,7 @@ object Mocha_ {
     /* was `typeof HTML` */
     @JSGlobal("Mocha.reporters.html")
     @js.native
-    class html ()
+    open class html ()
       extends StObject
          with typings.mocha.Mocha.reporters.HTML_ {
       
@@ -1401,7 +1409,7 @@ object Mocha_ {
     /* was `typeof JSON` */
     @JSGlobal("Mocha.reporters.json")
     @js.native
-    class json ()
+    open class json ()
       extends StObject
          with typings.mocha.Mocha.reporters.Base_ {
       
@@ -1440,7 +1448,7 @@ object Mocha_ {
     /* was `typeof Landing` */
     @JSGlobal("Mocha.reporters.landing")
     @js.native
-    class landing ()
+    open class landing ()
       extends StObject
          with typings.mocha.Mocha.reporters.Base_ {
       
@@ -1479,7 +1487,7 @@ object Mocha_ {
     /* was `typeof List` */
     @JSGlobal("Mocha.reporters.list")
     @js.native
-    class list ()
+    open class list ()
       extends StObject
          with typings.mocha.Mocha.reporters.Base_ {
       
@@ -1518,7 +1526,7 @@ object Mocha_ {
     /* was `typeof Markdown` */
     @JSGlobal("Mocha.reporters.markdown")
     @js.native
-    class markdown ()
+    open class markdown ()
       extends StObject
          with typings.mocha.Mocha.reporters.Base_ {
       
@@ -1557,33 +1565,33 @@ object Mocha_ {
     /* was `typeof Nyan` */
     @JSGlobal("Mocha.reporters.nyan")
     @js.native
-    class nyan ()
+    open class nyan ()
       extends StObject
          with typings.mocha.Mocha.reporters.Nyan_ {
       
       /* private */ /* CompleteClass */
-      var appendRainbow: js.Any = js.native
+      var appendRainbow: Any = js.native
       
       /* private */ /* CompleteClass */
-      var colorIndex: js.Any = js.native
+      var colorIndex: Any = js.native
       
       /* private */ /* CompleteClass */
-      var cursorDown: js.Any = js.native
+      var cursorDown: Any = js.native
       
       /* private */ /* CompleteClass */
-      var cursorUp: js.Any = js.native
+      var cursorUp: Any = js.native
       
       /* private */ /* CompleteClass */
-      var draw: js.Any = js.native
+      var draw: Any = js.native
       
       /* private */ /* CompleteClass */
-      var drawNyanCat: js.Any = js.native
+      var drawNyanCat: Any = js.native
       
       /* private */ /* CompleteClass */
-      var drawRainbow: js.Any = js.native
+      var drawRainbow: Any = js.native
       
       /* private */ /* CompleteClass */
-      var drawScoreboard: js.Any = js.native
+      var drawScoreboard: Any = js.native
       
       /**
         * Output common epilogue used by many of the bundled reporters.
@@ -1594,7 +1602,7 @@ object Mocha_ {
       override def epilogue(): Unit = js.native
       
       /* private */ /* CompleteClass */
-      var face: js.Any = js.native
+      var face: Any = js.native
       
       /**
         * Test failures
@@ -1603,16 +1611,16 @@ object Mocha_ {
       var failures: js.Array[Test] = js.native
       
       /* private */ /* CompleteClass */
-      var generateColors: js.Any = js.native
+      var generateColors: Any = js.native
       
       /* private */ /* CompleteClass */
-      var numberOfLines: js.Any = js.native
+      var numberOfLines: Any = js.native
       
       /* private */ /* CompleteClass */
-      var rainbowColors: js.Any = js.native
+      var rainbowColors: Any = js.native
       
       /* private */ /* CompleteClass */
-      var rainbowify: js.Any = js.native
+      var rainbowify: Any = js.native
       
       /**
         * The configured runner
@@ -1621,7 +1629,7 @@ object Mocha_ {
       var runner: typings.mocha.Mocha.Runner = js.native
       
       /* private */ /* CompleteClass */
-      var scoreboardWidth: js.Any = js.native
+      var scoreboardWidth: Any = js.native
       
       /**
         * Test run statistics
@@ -1630,13 +1638,13 @@ object Mocha_ {
       var stats: Stats = js.native
       
       /* private */ /* CompleteClass */
-      var tick: js.Any = js.native
+      var tick: Any = js.native
       
       /* private */ /* CompleteClass */
-      var trajectories: js.Any = js.native
+      var trajectories: Any = js.native
       
       /* private */ /* CompleteClass */
-      var trajectoryWidthMax: js.Any = js.native
+      var trajectoryWidthMax: Any = js.native
     }
     
     /**
@@ -1647,7 +1655,7 @@ object Mocha_ {
     /* was `typeof Progress` */
     @JSGlobal("Mocha.reporters.progress")
     @js.native
-    class progress protected ()
+    open class progress protected ()
       extends StObject
          with typings.mocha.Mocha.reporters.Base_ {
       def this(runner: typings.mocha.Mocha.Runner) = this()
@@ -1688,7 +1696,7 @@ object Mocha_ {
     /* was `typeof Spec` */
     @JSGlobal("Mocha.reporters.spec")
     @js.native
-    class spec ()
+    open class spec ()
       extends StObject
          with typings.mocha.Mocha.reporters.Base_ {
       
@@ -1727,7 +1735,7 @@ object Mocha_ {
     /* was `typeof TAP` */
     @JSGlobal("Mocha.reporters.tap")
     @js.native
-    class tap ()
+    open class tap ()
       extends StObject
          with typings.mocha.Mocha.reporters.Base_ {
       
@@ -1766,7 +1774,7 @@ object Mocha_ {
     /* was `typeof XUnit` */
     @JSGlobal("Mocha.reporters.xunit")
     @js.native
-    class xunit protected ()
+    open class xunit protected ()
       extends StObject
          with typings.mocha.Mocha.reporters.XUnit_ {
       def this(runner: typings.mocha.Mocha.Runner) = this()
@@ -1924,7 +1932,7 @@ object Mocha_ {
       *
       * @see https://mochajs.org/api/module-utils.html#.canonicalize
       */
-    inline def canonicalize(value: js.Any, stack: js.Array[js.Any], typeHint: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("canonicalize")(value.asInstanceOf[js.Any], stack.asInstanceOf[js.Any], typeHint.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def canonicalize(value: Any, stack: js.Array[Any], typeHint: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("canonicalize")(value.asInstanceOf[js.Any], stack.asInstanceOf[js.Any], typeHint.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     /**
       * Strip the function definition from `str`, and re-indent for pre whitespace.
@@ -1938,23 +1946,13 @@ object Mocha_ {
       *
       * @see https://mochajs.org/api/module-utils.html#.getError
       */
-    inline def getError(): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("getError")().asInstanceOf[Error]
-    inline def getError(err: Error): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("getError")(err.asInstanceOf[js.Any]).asInstanceOf[Error]
+    inline def getError(): js.Error = ^.asInstanceOf[js.Dynamic].applyDynamic("getError")().asInstanceOf[js.Error]
+    inline def getError(err: js.Error): js.Error = ^.asInstanceOf[js.Dynamic].applyDynamic("getError")(err.asInstanceOf[js.Any]).asInstanceOf[js.Error]
     
     /**
       * Highlight the given string of `js`.
       */
     inline def highlight(js_ : String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("highlight")(js_.asInstanceOf[js.Any]).asInstanceOf[String]
-    
-    /**
-      * Lookup file names at the given `path`.
-      *
-      * @see https://mochajs.org/api/Mocha.utils.html#.exports.lookupFiles
-      */
-    inline def lookupFiles(filepath: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("lookupFiles")(filepath.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-    inline def lookupFiles(filepath: String, extensions: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupFiles")(filepath.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-    inline def lookupFiles(filepath: String, extensions: js.Array[String], recursive: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupFiles")(filepath.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any], recursive.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-    inline def lookupFiles(filepath: String, extensions: Unit, recursive: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupFiles")(filepath.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any], recursive.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     
     /**
       * Compute a slug from the given `str`.
@@ -1982,19 +1980,19 @@ object Mocha_ {
       *
       * @see https://mochajs.org/api/module-utils.html#.stringify
       */
-    inline def stringify(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def stringify(value: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Takes some variable and asks `Object.prototype.toString()` what it thinks it is.
       */
-    inline def `type`(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def `type`(value: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(value.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Generate an undefined error with a message warning the user.
       *
       * @see https://mochajs.org/api/module-utils.html#.undefinedError
       */
-    inline def undefinedError(): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("undefinedError")().asInstanceOf[Error]
+    inline def undefinedError(): js.Error = ^.asInstanceOf[js.Dynamic].applyDynamic("undefinedError")().asInstanceOf[js.Error]
   }
   
   /**

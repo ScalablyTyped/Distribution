@@ -10,13 +10,13 @@ object mod {
   
   @JSImport("typed-github-api", JSImport.Default)
   @js.native
-  class default protected () extends GitHubApi {
+  open class default protected () extends GitHubApi {
     def this(options: OptionsOrRef) = this()
   }
   
   @JSImport("typed-github-api", "IssueWebHook")
   @js.native
-  class IssueWebHook protected ()
+  open class IssueWebHook protected ()
     extends typings.typedGithubApi.webHookMod.IssueWebHook {
     def this(options: OptionsOrRef) = this()
     def this(secret: String, options: OptionsOrRef) = this()

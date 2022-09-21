@@ -22,7 +22,7 @@ object IValidatorFce {
   
   extension [Self <: IValidatorFce](x: Self) {
     
-    inline def setAsyncValidationFce(value: /* args */ IError => Promise[js.Any]): Self = StObject.set(x, "AsyncValidationFce", js.Any.fromFunction1(value))
+    inline def setAsyncValidationFce(value: /* args */ IError => Promise[Any]): Self = StObject.set(x, "AsyncValidationFce", js.Any.fromFunction1(value))
     
     inline def setAsyncValidationFceUndefined: Self = StObject.set(x, "AsyncValidationFce", js.undefined)
     

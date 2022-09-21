@@ -13,58 +13,58 @@ object chromecastMod {
   
   @JSImport("playable/dist/src/modules/ui/controls/chromecast/chromecast", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with ChromecastButton {
     def this(hasEventEmitterTextMapTooltipServiceThemeChromecastManagerBottomBlock: BottomBlock) = this()
     
     /* private */ /* CompleteClass */
-    var _bindCallbacks: js.Any = js.native
+    var _bindCallbacks: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _bindEvents: js.Any = js.native
+    var _bindEvents: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _bottomBlock: js.Any = js.native
+    var _bottomBlock: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _callback: js.Any = js.native
+    var _callback: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _chromecastManager: js.Any = js.native
+    var _chromecastManager: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _connectToPanel: js.Any = js.native
+    var _connectToPanel: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _destroyInterceptor: js.Any = js.native
+    var _destroyInterceptor: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _eventEmitter: js.Any = js.native
+    var _eventEmitter: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _initInterceptor: js.Any = js.native
+    var _initInterceptor: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _initUI: js.Any = js.native
+    var _initUI: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _interceptor: js.Any = js.native
+    var _interceptor: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _textMap: js.Any = js.native
+    var _textMap: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _theme: js.Any = js.native
+    var _theme: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _tooltipService: js.Any = js.native
+    var _tooltipService: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _triggerCallback: js.Any = js.native
+    var _triggerCallback: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _unbindEvents: js.Any = js.native
+    var _unbindEvents: Any = js.native
     
     /* CompleteClass */
     override def destroy(): Unit = js.native
@@ -114,37 +114,37 @@ object chromecastMod {
     extends StObject
        with IChromecastButton {
     
-    /* private */ var _bindCallbacks: js.Any
+    /* private */ var _bindCallbacks: Any
     
-    /* private */ var _bindEvents: js.Any
+    /* private */ var _bindEvents: Any
     
-    /* private */ var _bottomBlock: js.Any
+    /* private */ var _bottomBlock: Any
     
-    /* private */ var _callback: js.Any
+    /* private */ var _callback: Any
     
-    /* private */ var _chromecastManager: js.Any
+    /* private */ var _chromecastManager: Any
     
-    /* private */ var _connectToPanel: js.Any
+    /* private */ var _connectToPanel: Any
     
-    /* private */ var _destroyInterceptor: js.Any
+    /* private */ var _destroyInterceptor: Any
     
-    /* private */ var _eventEmitter: js.Any
+    /* private */ var _eventEmitter: Any
     
-    /* private */ var _initInterceptor: js.Any
+    /* private */ var _initInterceptor: Any
     
-    /* private */ var _initUI: js.Any
+    /* private */ var _initUI: Any
     
-    /* private */ var _interceptor: js.Any
+    /* private */ var _interceptor: Any
     
-    /* private */ var _textMap: js.Any
+    /* private */ var _textMap: Any
     
-    /* private */ var _theme: js.Any
+    /* private */ var _theme: Any
     
-    /* private */ var _tooltipService: js.Any
+    /* private */ var _tooltipService: Any
     
-    /* private */ var _triggerCallback: js.Any
+    /* private */ var _triggerCallback: Any
     
-    /* private */ var _unbindEvents: js.Any
+    /* private */ var _unbindEvents: Any
     
     var isHidden: Boolean
     
@@ -153,22 +153,22 @@ object chromecastMod {
   object ChromecastButton {
     
     inline def apply(
-      _bindCallbacks: js.Any,
-      _bindEvents: js.Any,
-      _bottomBlock: js.Any,
-      _callback: js.Any,
-      _chromecastManager: js.Any,
-      _connectToPanel: js.Any,
-      _destroyInterceptor: js.Any,
-      _eventEmitter: js.Any,
-      _initInterceptor: js.Any,
-      _initUI: js.Any,
-      _interceptor: js.Any,
-      _textMap: js.Any,
-      _theme: js.Any,
-      _tooltipService: js.Any,
-      _triggerCallback: js.Any,
-      _unbindEvents: js.Any,
+      _bindCallbacks: Any,
+      _bindEvents: Any,
+      _bottomBlock: Any,
+      _callback: Any,
+      _chromecastManager: Any,
+      _connectToPanel: Any,
+      _destroyInterceptor: Any,
+      _eventEmitter: Any,
+      _initInterceptor: Any,
+      _initUI: Any,
+      _interceptor: Any,
+      _textMap: Any,
+      _theme: Any,
+      _tooltipService: Any,
+      _triggerCallback: Any,
+      _unbindEvents: Any,
       destroy: () => Unit,
       getElement: () => HTMLElement,
       hide: () => Unit,
@@ -187,37 +187,37 @@ object chromecastMod {
       
       inline def setView(value: typings.playable.chromecastViewMod.default): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
       
-      inline def set_bindCallbacks(value: js.Any): Self = StObject.set(x, "_bindCallbacks", value.asInstanceOf[js.Any])
+      inline def set_bindCallbacks(value: Any): Self = StObject.set(x, "_bindCallbacks", value.asInstanceOf[js.Any])
       
-      inline def set_bindEvents(value: js.Any): Self = StObject.set(x, "_bindEvents", value.asInstanceOf[js.Any])
+      inline def set_bindEvents(value: Any): Self = StObject.set(x, "_bindEvents", value.asInstanceOf[js.Any])
       
-      inline def set_bottomBlock(value: js.Any): Self = StObject.set(x, "_bottomBlock", value.asInstanceOf[js.Any])
+      inline def set_bottomBlock(value: Any): Self = StObject.set(x, "_bottomBlock", value.asInstanceOf[js.Any])
       
-      inline def set_callback(value: js.Any): Self = StObject.set(x, "_callback", value.asInstanceOf[js.Any])
+      inline def set_callback(value: Any): Self = StObject.set(x, "_callback", value.asInstanceOf[js.Any])
       
-      inline def set_chromecastManager(value: js.Any): Self = StObject.set(x, "_chromecastManager", value.asInstanceOf[js.Any])
+      inline def set_chromecastManager(value: Any): Self = StObject.set(x, "_chromecastManager", value.asInstanceOf[js.Any])
       
-      inline def set_connectToPanel(value: js.Any): Self = StObject.set(x, "_connectToPanel", value.asInstanceOf[js.Any])
+      inline def set_connectToPanel(value: Any): Self = StObject.set(x, "_connectToPanel", value.asInstanceOf[js.Any])
       
-      inline def set_destroyInterceptor(value: js.Any): Self = StObject.set(x, "_destroyInterceptor", value.asInstanceOf[js.Any])
+      inline def set_destroyInterceptor(value: Any): Self = StObject.set(x, "_destroyInterceptor", value.asInstanceOf[js.Any])
       
-      inline def set_eventEmitter(value: js.Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
+      inline def set_eventEmitter(value: Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
       
-      inline def set_initInterceptor(value: js.Any): Self = StObject.set(x, "_initInterceptor", value.asInstanceOf[js.Any])
+      inline def set_initInterceptor(value: Any): Self = StObject.set(x, "_initInterceptor", value.asInstanceOf[js.Any])
       
-      inline def set_initUI(value: js.Any): Self = StObject.set(x, "_initUI", value.asInstanceOf[js.Any])
+      inline def set_initUI(value: Any): Self = StObject.set(x, "_initUI", value.asInstanceOf[js.Any])
       
-      inline def set_interceptor(value: js.Any): Self = StObject.set(x, "_interceptor", value.asInstanceOf[js.Any])
+      inline def set_interceptor(value: Any): Self = StObject.set(x, "_interceptor", value.asInstanceOf[js.Any])
       
-      inline def set_textMap(value: js.Any): Self = StObject.set(x, "_textMap", value.asInstanceOf[js.Any])
+      inline def set_textMap(value: Any): Self = StObject.set(x, "_textMap", value.asInstanceOf[js.Any])
       
-      inline def set_theme(value: js.Any): Self = StObject.set(x, "_theme", value.asInstanceOf[js.Any])
+      inline def set_theme(value: Any): Self = StObject.set(x, "_theme", value.asInstanceOf[js.Any])
       
-      inline def set_tooltipService(value: js.Any): Self = StObject.set(x, "_tooltipService", value.asInstanceOf[js.Any])
+      inline def set_tooltipService(value: Any): Self = StObject.set(x, "_tooltipService", value.asInstanceOf[js.Any])
       
-      inline def set_triggerCallback(value: js.Any): Self = StObject.set(x, "_triggerCallback", value.asInstanceOf[js.Any])
+      inline def set_triggerCallback(value: Any): Self = StObject.set(x, "_triggerCallback", value.asInstanceOf[js.Any])
       
-      inline def set_unbindEvents(value: js.Any): Self = StObject.set(x, "_unbindEvents", value.asInstanceOf[js.Any])
+      inline def set_unbindEvents(value: Any): Self = StObject.set(x, "_unbindEvents", value.asInstanceOf[js.Any])
     }
   }
 }

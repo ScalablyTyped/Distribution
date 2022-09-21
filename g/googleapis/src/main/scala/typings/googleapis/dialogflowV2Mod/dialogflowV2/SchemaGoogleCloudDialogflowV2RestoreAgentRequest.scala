@@ -4,29 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The request message for Agents.RestoreAgent.
-  */
 trait SchemaGoogleCloudDialogflowV2RestoreAgentRequest extends StObject {
   
   /**
-    * The agent to restore.  Example for how to restore an agent via the
-    * command line: &lt;pre&gt;curl \
-    * &#39;https://dialogflow.googleapis.com/v2/projects/&amp;lt;project_name&amp;gt;/agent:restore\
-    * -X POST \    -H &#39;Authorization: Bearer &#39;$(gcloud auth
-    * application-default    print-access-token) \    -H &#39;Accept:
-    * application/json&#39; \    -H &#39;Content-Type: application/json&#39; \
-    * --compressed \    --data-binary &quot;{        &#39;agentContent&#39;:
-    * &#39;$(cat &amp;lt;agent zip file&amp;gt; | base64 -w 0)&#39;
-    * }&quot;&lt;/pre&gt;
+    * Zip compressed raw byte content for agent.
     */
-  var agentContent: js.UndefOr[String] = js.undefined
+  var agentContent: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The URI to a Google Cloud Storage file containing the agent to restore.
-    * Note: The URI must start with &quot;gs://&quot;.
+    * The URI to a Google Cloud Storage file containing the agent to restore. Note: The URI must start with "gs://". Dialogflow performs a read operation for the Cloud Storage object on the caller's behalf, so your request authentication must have read permissions for the object. For more information, see [Dialogflow access control](https://cloud.google.com/dialogflow/cx/docs/concept/access-control#storage).
     */
-  var agentUri: js.UndefOr[String] = js.undefined
+  var agentUri: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2RestoreAgentRequest {
   
@@ -39,9 +27,13 @@ object SchemaGoogleCloudDialogflowV2RestoreAgentRequest {
     
     inline def setAgentContent(value: String): Self = StObject.set(x, "agentContent", value.asInstanceOf[js.Any])
     
+    inline def setAgentContentNull: Self = StObject.set(x, "agentContent", null)
+    
     inline def setAgentContentUndefined: Self = StObject.set(x, "agentContent", js.undefined)
     
     inline def setAgentUri(value: String): Self = StObject.set(x, "agentUri", value.asInstanceOf[js.Any])
+    
+    inline def setAgentUriNull: Self = StObject.set(x, "agentUri", null)
     
     inline def setAgentUriUndefined: Self = StObject.set(x, "agentUri", js.undefined)
   }

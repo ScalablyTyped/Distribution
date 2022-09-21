@@ -8,7 +8,7 @@ trait PullFunctionExpressionDecl
   extends StObject
      with NormalPullDecl {
   
-  /* private */ var functionExpressionName: js.Any
+  /* private */ var functionExpressionName: Any
   
   def getFunctionExpressionName(): String
 }
@@ -24,16 +24,16 @@ object PullFunctionExpressionDecl {
     childDeclTypeCache: IIndexable[js.Array[PullDecl]],
     childDeclTypeParameterCache: IIndexable[js.Array[PullDecl]],
     childDeclValueCache: IIndexable[js.Array[PullDecl]],
-    childDecls: js.Any,
-    containerDecl: js.Any,
-    declDisplayName: js.Any,
-    declGroups: js.Any,
+    childDecls: Any,
+    containerDecl: Any,
+    declDisplayName: Any,
+    declGroups: Any,
     declID: Double,
     ensureSymbolIsBound: () => Unit,
     fileName: () => String,
     flags: PullElementFlags,
-    functionExpressionName: js.Any,
-    getChildDeclCache: js.Any => js.Any,
+    functionExpressionName: Any,
+    getChildDeclCache: Any => Any,
     getChildDecls: () => js.Array[PullDecl],
     getContainerDecl: () => PullDecl,
     getDisplayName: () => String,
@@ -54,8 +54,8 @@ object PullFunctionExpressionDecl {
     isSynthesized: () => Boolean,
     kind: PullElementKind,
     name: String,
-    parentDecl: js.Any,
-    parentPath: js.Any,
+    parentDecl: Any,
+    parentPath: Any,
     searchChildDecls: (String, PullElementKind) => js.Array[PullDecl],
     semanticInfoChain: SemanticInfoChain,
     setFlag: PullElementFlags => Unit,
@@ -63,8 +63,8 @@ object PullFunctionExpressionDecl {
     setSignatureSymbol: PullSignatureSymbol => Unit,
     setSymbol: PullSymbol => Unit,
     setValueDecl: PullDecl => Unit,
-    synthesizedValDecl: js.Any,
-    typeParameters: js.Any
+    synthesizedValDecl: Any,
+    typeParameters: Any
   ): PullFunctionExpressionDecl = {
     val __obj = js.Dynamic.literal(_getEnclosingDeclFromParentDecl = js.Any.fromFunction0(_getEnclosingDeclFromParentDecl), _rootDecl = _rootDecl.asInstanceOf[js.Any], addChildDecl = js.Any.fromFunction1(addChildDecl), addVariableDeclToGroup = js.Any.fromFunction1(addVariableDeclToGroup), ast = js.Any.fromFunction0(ast), childDeclNamespaceCache = childDeclNamespaceCache.asInstanceOf[js.Any], childDeclTypeCache = childDeclTypeCache.asInstanceOf[js.Any], childDeclTypeParameterCache = childDeclTypeParameterCache.asInstanceOf[js.Any], childDeclValueCache = childDeclValueCache.asInstanceOf[js.Any], childDecls = childDecls.asInstanceOf[js.Any], containerDecl = containerDecl.asInstanceOf[js.Any], declDisplayName = declDisplayName.asInstanceOf[js.Any], declGroups = declGroups.asInstanceOf[js.Any], declID = declID.asInstanceOf[js.Any], ensureSymbolIsBound = js.Any.fromFunction0(ensureSymbolIsBound), fileName = js.Any.fromFunction0(fileName), flags = flags.asInstanceOf[js.Any], functionExpressionName = functionExpressionName.asInstanceOf[js.Any], getChildDeclCache = js.Any.fromFunction1(getChildDeclCache), getChildDecls = js.Any.fromFunction0(getChildDecls), getContainerDecl = js.Any.fromFunction0(getContainerDecl), getDisplayName = js.Any.fromFunction0(getDisplayName), getEnclosingDecl = js.Any.fromFunction0(getEnclosingDecl), getFunctionExpressionName = js.Any.fromFunction0(getFunctionExpressionName), getParentDecl = js.Any.fromFunction0(getParentDecl), getParentPath = js.Any.fromFunction0(getParentPath), getSignatureSymbol = js.Any.fromFunction0(getSignatureSymbol), getSymbol = js.Any.fromFunction0(getSymbol), getTypeParameters = js.Any.fromFunction0(getTypeParameters), getValueDecl = js.Any.fromFunction0(getValueDecl), getVariableDeclGroups = js.Any.fromFunction0(getVariableDeclGroups), hasBeenBound = js.Any.fromFunction0(hasBeenBound), hasSignatureSymbol = js.Any.fromFunction0(hasSignatureSymbol), hasSymbol = js.Any.fromFunction0(hasSymbol), isExternalModule = js.Any.fromFunction0(isExternalModule), isRootDecl = js.Any.fromFunction0(isRootDecl), isSynthesized = js.Any.fromFunction0(isSynthesized), kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parentDecl = parentDecl.asInstanceOf[js.Any], parentPath = parentPath.asInstanceOf[js.Any], searchChildDecls = js.Any.fromFunction2(searchChildDecls), semanticInfoChain = semanticInfoChain.asInstanceOf[js.Any], setFlag = js.Any.fromFunction1(setFlag), setFlags = js.Any.fromFunction1(setFlags), setSignatureSymbol = js.Any.fromFunction1(setSignatureSymbol), setSymbol = js.Any.fromFunction1(setSymbol), setValueDecl = js.Any.fromFunction1(setValueDecl), synthesizedValDecl = synthesizedValDecl.asInstanceOf[js.Any], typeParameters = typeParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[PullFunctionExpressionDecl]
@@ -72,7 +72,7 @@ object PullFunctionExpressionDecl {
   
   extension [Self <: PullFunctionExpressionDecl](x: Self) {
     
-    inline def setFunctionExpressionName(value: js.Any): Self = StObject.set(x, "functionExpressionName", value.asInstanceOf[js.Any])
+    inline def setFunctionExpressionName(value: Any): Self = StObject.set(x, "functionExpressionName", value.asInstanceOf[js.Any])
     
     inline def setGetFunctionExpressionName(value: () => String): Self = StObject.set(x, "getFunctionExpressionName", js.Any.fromFunction0(value))
   }

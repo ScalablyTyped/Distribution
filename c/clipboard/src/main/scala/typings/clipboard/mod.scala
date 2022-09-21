@@ -1,9 +1,5 @@
 package typings.clipboard
 
-import typings.clipboard.clipboardStrings.copy
-import typings.clipboard.clipboardStrings.cut
-import typings.clipboard.clipboardStrings.error
-import typings.clipboard.clipboardStrings.success
 import typings.std.Element
 import typings.std.NodeListOf
 import org.scalablytyped.runtime.StObject
@@ -12,9 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  /**
+    * Base class which takes one or more elements, adds event listeners to them,
+    * and instantiates a new `ClipboardAction` on each click.
+    */
   @JSImport("clipboard", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with ClipboardJS {
     def this(selector: String) = this()
@@ -29,11 +29,43 @@ object mod {
   val ^ : js.Any = js.native
   
   /**
+    * Fires a copy action
+    */
+  /* static member */
+  inline def copy(target: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("copy")(target.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def copy(target: String, options: CopyActionOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def copy(target: Element): String = ^.asInstanceOf[js.Dynamic].applyDynamic("copy")(target.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def copy(target: Element, options: CopyActionOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  /**
+    * Fires a cut action
+    */
+  /* static member */
+  inline def cut(target: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cut")(target.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def cut(target: Element): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cut")(target.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  /**
     * Checks if clipboard.js is supported
     */
   /* static member */
   inline def isSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[Boolean]
   
+  /* Rewritten from type alias, can be one of: 
+    - typings.clipboard.clipboardStrings.cut
+    - typings.clipboard.clipboardStrings.copy
+  */
+  trait Action extends StObject
+  object Action {
+    
+    inline def copy: typings.clipboard.clipboardStrings.copy = "copy".asInstanceOf[typings.clipboard.clipboardStrings.copy]
+    
+    inline def cut: typings.clipboard.clipboardStrings.cut = "cut".asInstanceOf[typings.clipboard.clipboardStrings.cut]
+  }
+  
+  /**
+    * Base class which takes one or more elements, adds event listeners to them,
+    * and instantiates a new `ClipboardAction` on each click.
+    */
   @js.native
   trait ClipboardJS extends StObject {
     
@@ -42,16 +74,32 @@ object mod {
       */
     def destroy(): Unit = js.native
     
-    def on(`type`: String, handler: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    @JSName("on")
-    def on_error(`type`: error, handler: js.Function1[/* e */ Event, Unit]): this.type = js.native
+    def on(`type`: String, handler: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     /**
       * Subscribes to events that indicate the result of a copy/cut operation.
       * @param type Event type ('success' or 'error').
       * @param handler Callback function.
       */
-    @JSName("on")
-    def on_success(`type`: success, handler: js.Function1[/* e */ Event, Unit]): this.type = js.native
+    def on(`type`: Response, handler: js.Function1[/* e */ Event, Unit]): this.type = js.native
+  }
+  
+  trait CopyActionOptions extends StObject {
+    
+    var container: js.UndefOr[Element] = js.undefined
+  }
+  object CopyActionOptions {
+    
+    inline def apply(): CopyActionOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[CopyActionOptions]
+    }
+    
+    extension [Self <: CopyActionOptions](x: Self) {
+      
+      inline def setContainer(value: Element): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    }
   }
   
   trait Event extends StObject {
@@ -89,7 +137,7 @@ object mod {
       * Overwrites default command ('cut' or 'copy').
       * @param elem Current element
       */
-    var action: js.UndefOr[js.Function1[/* elem */ Element, cut | copy]] = js.undefined
+    var action: js.UndefOr[js.Function1[/* elem */ Element, Action]] = js.undefined
     
     /**
       * For use in Bootstrap Modals or with any
@@ -122,7 +170,7 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setAction(value: /* elem */ Element => cut | copy): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
+      inline def setAction(value: /* elem */ Element => Action): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
       
       inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
@@ -138,5 +186,17 @@ object mod {
       
       inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.clipboard.clipboardStrings.success
+    - typings.clipboard.clipboardStrings.error
+  */
+  trait Response extends StObject
+  object Response {
+    
+    inline def error: typings.clipboard.clipboardStrings.error = "error".asInstanceOf[typings.clipboard.clipboardStrings.error]
+    
+    inline def success: typings.clipboard.clipboardStrings.success = "success".asInstanceOf[typings.clipboard.clipboardStrings.success]
   }
 }

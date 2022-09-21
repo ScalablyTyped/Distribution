@@ -43,6 +43,6 @@ object TestOrderPickupDetails {
     
     inline def setPickupPersonsUndefined: Self = StObject.set(x, "pickupPersons", js.undefined)
     
-    inline def setPickupPersonsVarargs(value: TestOrderPickupDetailsPickupPerson*): Self = StObject.set(x, "pickupPersons", js.Array(value :_*))
+    inline def setPickupPersonsVarargs(value: TestOrderPickupDetailsPickupPerson*): Self = StObject.set(x, "pickupPersons", js.Array(value*))
   }
 }

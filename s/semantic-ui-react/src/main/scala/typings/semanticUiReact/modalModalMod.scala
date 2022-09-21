@@ -7,12 +7,12 @@ import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.ElementType
+import typings.react.mod.FC
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.ReactNodeArray
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticShorthandItem
 import typings.semanticUiReact.modalActionsMod.ModalActionsProps
 import typings.semanticUiReact.modalContentMod.ModalContentProps
@@ -38,10 +38,9 @@ object modalModalMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/modules/Modal/Modal", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[ModalProps, ComponentState, js.Any] {
+  open class default protected () extends Component[ModalProps, ComponentState, Any] {
     def this(props: ModalProps) = this()
-    def this(props: ModalProps, context: js.Any) = this()
+    def this(props: ModalProps, context: Any) = this()
   }
   object default extends Shortcut {
     
@@ -52,10 +51,9 @@ object modalModalMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("semantic-ui-react/dist/commonjs/modules/Modal/Modal", "default.Actions")
     @js.native
-    class Actions protected ()
-      extends Component[ModalActionsProps, ComponentState, js.Any] {
+    open class Actions protected () extends Component[ModalActionsProps, ComponentState, Any] {
       def this(props: ModalActionsProps) = this()
-      def this(props: ModalActionsProps, context: js.Any) = this()
+      def this(props: ModalActionsProps, context: Any) = this()
     }
     
     type _To = ModalComponent
@@ -71,19 +69,19 @@ object modalModalMod {
     
     var Actions: ComponentClass[ModalActionsProps, ComponentState] = js.native
     
-    var Content: StatelessComponent[ModalContentProps] = js.native
+    var Content: FC[ModalContentProps] = js.native
     
-    var Description: StatelessComponent[ModalDescriptionProps] = js.native
+    var Description: FC[ModalDescriptionProps] = js.native
     
-    var Dimmer: StatelessComponent[ModalDimmerProps] = js.native
+    var Dimmer: FC[ModalDimmerProps] = js.native
     
-    var Header: StatelessComponent[ModalHeaderProps] = js.native
+    var Header: FC[ModalHeaderProps] = js.native
   }
   
   trait ModalProps
     extends StObject
        with StrictModalProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object ModalProps {
     
     inline def apply(): ModalProps = {
@@ -100,7 +98,7 @@ object modalModalMod {
     var actions: js.UndefOr[SemanticShorthandItem[ModalActionsProps]] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** A Modal can reduce its complexity */
     var basic: js.UndefOr[Boolean] = js.undefined
@@ -112,7 +110,7 @@ object modalModalMod {
     var className: js.UndefOr[String] = js.undefined
     
     /** Icon. */
-    var closeIcon: js.UndefOr[js.Any] = js.undefined
+    var closeIcon: js.UndefOr[Any] = js.undefined
     
     /** Whether or not the Modal should close when the dimmer is clicked. */
     var closeOnDimmerClick: js.UndefOr[Boolean] = js.undefined
@@ -199,7 +197,7 @@ object modalModalMod {
       
       inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -215,7 +213,7 @@ object modalModalMod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setCloseIcon(value: js.Any): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
+      inline def setCloseIcon(value: Any): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
       
       inline def setCloseIconUndefined: Self = StObject.set(x, "closeIcon", js.undefined)
       

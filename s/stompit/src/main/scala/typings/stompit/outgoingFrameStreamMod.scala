@@ -11,7 +11,7 @@ object outgoingFrameStreamMod {
   
   @JSImport("stompit/lib/OutgoingFrameStream", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with OutgoingFrameStream {
     def this(destination: Duplex) = this()
@@ -23,8 +23,8 @@ object outgoingFrameStreamMod {
     def finish(): Unit = js.native
     
     def frame(command: String): Writable = js.native
-    def frame(command: String, headers: js.Any): Writable = js.native
-    def frame(command: String, headers: js.Any, streamOptions: WritableOptions): Writable = js.native
+    def frame(command: String, headers: Any): Writable = js.native
+    def frame(command: String, headers: Any, streamOptions: WritableOptions): Writable = js.native
     def frame(command: String, headers: Unit, streamOptions: WritableOptions): Writable = js.native
     
     def hasFinished(): Boolean = js.native

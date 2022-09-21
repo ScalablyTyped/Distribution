@@ -28,7 +28,7 @@ object GoogleCloudVideointelligenceV1TextDetectionConfig {
     
     inline def setLanguageHintsUndefined: Self = StObject.set(x, "languageHints", js.undefined)
     
-    inline def setLanguageHintsVarargs(value: String*): Self = StObject.set(x, "languageHints", js.Array(value :_*))
+    inline def setLanguageHintsVarargs(value: String*): Self = StObject.set(x, "languageHints", js.Array(value*))
     
     inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     

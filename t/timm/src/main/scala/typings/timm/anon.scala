@@ -80,17 +80,17 @@ object anon {
     def apply[V](obj: Unit, key: Double, `val`: V): js.Array[V] = js.native
     def apply[K /* <: String */, V](obj: Null, key: K, `val`: V): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in K ]: V}
-      */ typings.timm.timmStrings.FnCallObjKeyVal & TopLevel[js.Any] = js.native
+      */ typings.timm.timmStrings.FnCallObjKeyVal & TopLevel[Any] = js.native
     def apply[K /* <: String */, V](obj: Unit, key: K, `val`: V): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in K ]: V}
-      */ typings.timm.timmStrings.FnCallObjKeyVal & TopLevel[js.Any] = js.native
-    def apply[T /* <: js.Object */, K /* <: String */, V](obj: T, key: K, `val`: V): (Omit[T, /* keyof {[ P in K ]: any} */ String]) & typings.timm.timmStrings.FnCallObjKeyVal & TopLevel[js.Any] = js.native
+      */ typings.timm.timmStrings.FnCallObjKeyVal & TopLevel[Any] = js.native
+    def apply[T /* <: js.Object */, K /* <: String */, V](obj: T, key: K, `val`: V): (Omit[T, /* keyof {[ P in K ]: any} */ String]) & typings.timm.timmStrings.FnCallObjKeyVal & TopLevel[Any] = js.native
   }
   
   @js.native
   trait FnCallObjPath extends StObject {
     
-    def apply(obj: js.Object, path: js.Array[Key]): js.Any = js.native
+    def apply(obj: js.Object, path: js.Array[Key]): Any = js.native
     def apply(obj: Null, path: js.Array[Key]): Null = js.native
     def apply(obj: Unit, path: js.Array[Key]): Unit = js.native
   }

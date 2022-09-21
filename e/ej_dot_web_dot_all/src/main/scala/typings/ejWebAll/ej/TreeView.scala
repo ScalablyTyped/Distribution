@@ -17,20 +17,20 @@ trait TreeView
     * @returns {void}
     */
   def addNode(newNodeText: String, target: String, preventTargetExpand: Boolean): Unit = js.native
-  def addNode(newNodeText: String, target: js.Any, preventTargetExpand: Boolean): Unit = js.native
-  def addNode(newNodeText: js.Any, target: String, preventTargetExpand: Boolean): Unit = js.native
-  def addNode(newNodeText: js.Any, target: js.Any, preventTargetExpand: Boolean): Unit = js.native
+  def addNode(newNodeText: String, target: Any, preventTargetExpand: Boolean): Unit = js.native
+  def addNode(newNodeText: Any, target: String, preventTargetExpand: Boolean): Unit = js.native
+  def addNode(newNodeText: Any, target: Any, preventTargetExpand: Boolean): Unit = js.native
   
+  def addNodes(collection: js.Array[Any], target: String, preventTargetExpand: Boolean): Unit = js.native
+  def addNodes(collection: js.Array[Any], target: Any, preventTargetExpand: Boolean): Unit = js.native
   /** To add a collection of nodes in TreeView. If target tree node is specified, then the given nodes are added as child of target tree node, otherwise nodes are added in TreeView.
     * @param {any|any[]} New node details in JSON object
     * @param {string|any} ID of TreeView node/object of TreeView node
     * @param {boolean} Parent node will be prevented from auto expanding
     * @returns {void}
     */
-  def addNodes(collection: js.Any, target: String, preventTargetExpand: Boolean): Unit = js.native
-  def addNodes(collection: js.Any, target: js.Any, preventTargetExpand: Boolean): Unit = js.native
-  def addNodes(collection: js.Array[js.Any], target: String, preventTargetExpand: Boolean): Unit = js.native
-  def addNodes(collection: js.Array[js.Any], target: js.Any, preventTargetExpand: Boolean): Unit = js.native
+  def addNodes(collection: Any, target: String, preventTargetExpand: Boolean): Unit = js.native
+  def addNodes(collection: Any, target: Any, preventTargetExpand: Boolean): Unit = js.native
   
   /** To check all the nodes in TreeView.
     * @returns {void}
@@ -42,8 +42,8 @@ trait TreeView
     * @returns {void}
     */
   def checkNode(element: String): Unit = js.native
-  def checkNode(element: js.Any): Unit = js.native
-  def checkNode(element: js.Array[js.Any]): Unit = js.native
+  def checkNode(element: js.Array[Any]): Unit = js.native
+  def checkNode(element: Any): Unit = js.native
   
   /** This method is used to collapse all nodes in TreeView control. If you want to collapse all nodes up to the specific level in TreeView control then we need to pass levelUntil as
     * argument to this method.
@@ -61,8 +61,8 @@ trait TreeView
     * @returns {void}
     */
   def collapseNode(element: String): Unit = js.native
-  def collapseNode(element: js.Any): Unit = js.native
-  def collapseNode(element: js.Array[js.Any]): Unit = js.native
+  def collapseNode(element: js.Array[Any]): Unit = js.native
+  def collapseNode(element: Any): Unit = js.native
   
   var defaults: Model = js.native
   
@@ -71,23 +71,23 @@ trait TreeView
     * @returns {void}
     */
   def disableNode(element: String): Unit = js.native
-  def disableNode(element: js.Any): Unit = js.native
-  def disableNode(element: js.Array[js.Any]): Unit = js.native
+  def disableNode(element: js.Array[Any]): Unit = js.native
+  def disableNode(element: Any): Unit = js.native
   
   /** To enable the node in the TreeView.
     * @param {string|any|any[]} ID of TreeView node/object of TreeView node/collection of ID/object of TreeView nodes
     * @returns {void}
     */
   def enableNode(element: String): Unit = js.native
-  def enableNode(element: js.Any): Unit = js.native
-  def enableNode(element: js.Array[js.Any]): Unit = js.native
+  def enableNode(element: js.Array[Any]): Unit = js.native
+  def enableNode(element: Any): Unit = js.native
   
   /** To ensure that the TreeView node is visible in the TreeView. This method is useful if we need select a TreeView node dynamically.
     * @param {string|any} ID of TreeView node/object of TreeView node
     * @returns {boolean}
     */
   def ensureVisible(element: String): Boolean = js.native
-  def ensureVisible(element: js.Any): Boolean = js.native
+  def ensureVisible(element: Any): Boolean = js.native
   
   /** This method is used to expand all nodes in TreeView control. If you want to expand all nodes up to the specific level in TreeView control then we need to pass levelUntil as
     * argument to this method.
@@ -105,18 +105,18 @@ trait TreeView
     * @returns {void}
     */
   def expandNode(element: String): Unit = js.native
-  def expandNode(element: js.Any): Unit = js.native
-  def expandNode(element: js.Array[js.Any]): Unit = js.native
+  def expandNode(element: js.Array[Any]): Unit = js.native
+  def expandNode(element: Any): Unit = js.native
   
   /** To get currently checked nodes in TreeView.
     * @returns {any}
     */
-  def getCheckedNodes(): js.Any = js.native
+  def getCheckedNodes(): Any = js.native
   
   /** To get currently checked nodes indexes in TreeView.
     * @returns {any[]}
     */
-  def getCheckedNodesIndex(): js.Array[js.Any] = js.native
+  def getCheckedNodesIndex(): js.Array[Any] = js.native
   
   /** This method is used to get immediate child nodes of a node in TreeView control. If you want to get the all child nodes include nested child nodes then we need to pass
     * includeNestedChild as true along with element arguments to this method.
@@ -124,33 +124,33 @@ trait TreeView
     * @param {boolean} Weather include nested child nodes of TreeView node
     * @returns {any[]}
     */
-  def getChildren(element: String): js.Array[js.Any] = js.native
-  def getChildren(element: String, includeNestedChild: Boolean): js.Array[js.Any] = js.native
-  def getChildren(element: js.Any): js.Array[js.Any] = js.native
-  def getChildren(element: js.Any, includeNestedChild: Boolean): js.Array[js.Any] = js.native
+  def getChildren(element: String): js.Array[Any] = js.native
+  def getChildren(element: String, includeNestedChild: Boolean): js.Array[Any] = js.native
+  def getChildren(element: Any): js.Array[Any] = js.native
+  def getChildren(element: Any, includeNestedChild: Boolean): js.Array[Any] = js.native
   
   /** To get currently expanded nodes in TreeView.
     * @returns {any}
     */
-  def getExpandedNodes(): js.Any = js.native
+  def getExpandedNodes(): Any = js.native
   
   /** To get currently expanded nodes indexes in TreeView.
     * @returns {any[]}
     */
-  def getExpandedNodesIndex(): js.Array[js.Any] = js.native
+  def getExpandedNodesIndex(): js.Array[Any] = js.native
   
   /** To get TreeView node data such as id, text, parentId, selected, checked, expanded, level, childes and index.
     * @param {string|any} ID of TreeView node/object of TreeView node
     * @returns {any}
     */
-  def getNode(element: String): js.Any = js.native
-  def getNode(element: js.Any): js.Any = js.native
+  def getNode(element: String): Any = js.native
+  def getNode(element: Any): Any = js.native
   
   /** To get TreeView node by using index position in TreeView.
     * @param {number} Index position of TreeView node
     * @returns {any}
     */
-  def getNodeByIndex(index: Double): js.Any = js.native
+  def getNodeByIndex(index: Double): Any = js.native
   
   /** To get number of nodes in TreeView.
     * @returns {number}
@@ -162,19 +162,19 @@ trait TreeView
     * @returns {number}
     */
   def getNodeIndex(element: String): Double = js.native
-  def getNodeIndex(element: js.Any): Double = js.native
+  def getNodeIndex(element: Any): Double = js.native
   
   /** To get immediate parent TreeView node of particular TreeView node.
     * @param {string|any} ID of TreeView node/object of TreeView node
     * @returns {any}
     */
-  def getParent(element: String): js.Any = js.native
-  def getParent(element: js.Any): js.Any = js.native
+  def getParent(element: String): Any = js.native
+  def getParent(element: Any): Any = js.native
   
   /** To get the currently selected node in TreeView.
     * @returns {any}
     */
-  def getSelectedNode(): js.Any = js.native
+  def getSelectedNode(): Any = js.native
   
   /** To get the index position of currently selected node in TreeView.
     * @returns {number}
@@ -184,39 +184,39 @@ trait TreeView
   /** To get the currently selected nodes in TreeView.
     * @returns {any[]}
     */
-  def getSelectedNodes(): js.Array[js.Any] = js.native
+  def getSelectedNodes(): js.Array[Any] = js.native
   
   /** To get the index positions of currently selected nodes in TreeView.
     * @returns {any[]}
     */
-  def getSelectedNodesIndex(): js.Array[js.Any] = js.native
+  def getSelectedNodesIndex(): js.Array[Any] = js.native
   
   /** To get the text of a node in TreeView.
     * @param {string|any} ID of TreeView node/object of TreeView node
     * @returns {string}
     */
   def getText(element: String): String = js.native
-  def getText(element: js.Any): String = js.native
+  def getText(element: Any): String = js.native
   
   /** To get the updated datasource of TreeView after performing some operation like drag and drop, node editing, adding and removing node.
     * @param {string|number} ID of TreeView node
     * @returns {any[]}
     */
-  def getTreeData(): js.Array[js.Any] = js.native
-  def getTreeData(id: String): js.Array[js.Any] = js.native
-  def getTreeData(id: Double): js.Array[js.Any] = js.native
+  def getTreeData(): js.Array[Any] = js.native
+  def getTreeData(id: String): js.Array[Any] = js.native
+  def getTreeData(id: Double): js.Array[Any] = js.native
   
   /** To get currently visible nodes in TreeView.
     * @returns {any}
     */
-  def getVisibleNodes(): js.Any = js.native
+  def getVisibleNodes(): Any = js.native
   
   /** To check a node having child or not.
     * @param {string|any} ID of TreeView node/object of TreeView node
     * @returns {boolean}
     */
   def hasChildNode(element: String): Boolean = js.native
-  def hasChildNode(element: js.Any): Boolean = js.native
+  def hasChildNode(element: Any): Boolean = js.native
   
   /** To show nodes in TreeView.
     * @returns {void}
@@ -228,8 +228,8 @@ trait TreeView
     * @returns {void}
     */
   def hideNode(element: String): Unit = js.native
-  def hideNode(element: js.Any): Unit = js.native
-  def hideNode(element: js.Array[js.Any]): Unit = js.native
+  def hideNode(element: js.Array[Any]): Unit = js.native
+  def hideNode(element: Any): Unit = js.native
   
   /** To add a Node or collection of nodes after the particular TreeView node.
     * @param {string|any} New node text or JSON object
@@ -237,9 +237,9 @@ trait TreeView
     * @returns {void}
     */
   def insertAfter(newNodeText: String, target: String): Unit = js.native
-  def insertAfter(newNodeText: String, target: js.Any): Unit = js.native
-  def insertAfter(newNodeText: js.Any, target: String): Unit = js.native
-  def insertAfter(newNodeText: js.Any, target: js.Any): Unit = js.native
+  def insertAfter(newNodeText: String, target: Any): Unit = js.native
+  def insertAfter(newNodeText: Any, target: String): Unit = js.native
+  def insertAfter(newNodeText: Any, target: Any): Unit = js.native
   
   /** To add a Node or collection of nodes before the particular TreeView node.
     * @param {string|any} New node text or JSON object
@@ -247,58 +247,58 @@ trait TreeView
     * @returns {void}
     */
   def insertBefore(newNodeText: String, target: String): Unit = js.native
-  def insertBefore(newNodeText: String, target: js.Any): Unit = js.native
-  def insertBefore(newNodeText: js.Any, target: String): Unit = js.native
-  def insertBefore(newNodeText: js.Any, target: js.Any): Unit = js.native
+  def insertBefore(newNodeText: String, target: Any): Unit = js.native
+  def insertBefore(newNodeText: Any, target: String): Unit = js.native
+  def insertBefore(newNodeText: Any, target: Any): Unit = js.native
   
   /** To check whether the child nodes are loaded of the given TreeView node.
     * @param {string|any} ID of TreeView node/object of TreeView node
     * @returns {boolean}
     */
   def isChildLoaded(element: String): Boolean = js.native
-  def isChildLoaded(element: js.Any): Boolean = js.native
+  def isChildLoaded(element: Any): Boolean = js.native
   
   /** To check the given TreeView node is disabled or enabled.
     * @param {string|any} ID of TreeView node/object of TreeView node
     * @returns {boolean}
     */
   def isDisabled(element: String): Boolean = js.native
-  def isDisabled(element: js.Any): Boolean = js.native
+  def isDisabled(element: Any): Boolean = js.native
   
   /** To check the given node is exist in TreeView.
     * @param {string|any} ID of TreeView node/object of TreeView node
     * @returns {boolean}
     */
   def isExist(element: String): Boolean = js.native
-  def isExist(element: js.Any): Boolean = js.native
+  def isExist(element: Any): Boolean = js.native
   
   /** To get the expand status of the given TreeView node.
     * @param {string|any} ID of TreeView node/object of TreeView node
     * @returns {boolean}
     */
   def isExpanded(element: String): Boolean = js.native
-  def isExpanded(element: js.Any): Boolean = js.native
+  def isExpanded(element: Any): Boolean = js.native
   
   /** To check the given TreeView node is checked or unchecked.
     * @param {string|any} ID of TreeView node/object of TreeView node
     * @returns {boolean}
     */
   def isNodeChecked(element: String): Boolean = js.native
-  def isNodeChecked(element: js.Any): Boolean = js.native
+  def isNodeChecked(element: Any): Boolean = js.native
   
   /** To get the select status of the given TreeView node.
     * @param {string|any} ID of TreeView node/object of TreeView node
     * @returns {boolean}
     */
   def isSelected(element: String): Boolean = js.native
-  def isSelected(element: js.Any): Boolean = js.native
+  def isSelected(element: Any): Boolean = js.native
   
   /** To get the visibility status of the given TreeView node.
     * @param {string|any} ID of TreeView node/object of TreeView node
     * @returns {boolean}
     */
   def isVisible(element: String): Boolean = js.native
-  def isVisible(element: js.Any): Boolean = js.native
+  def isVisible(element: Any): Boolean = js.native
   
   /** To load the TreeView nodes from the particular URL. If target tree node is specified, then the given nodes are added as child of target tree node, otherwise nodes are added in
     * TreeView.
@@ -307,7 +307,7 @@ trait TreeView
     * @returns {void}
     */
   def loadData(URL: String, target: String): Unit = js.native
-  def loadData(URL: String, target: js.Any): Unit = js.native
+  def loadData(URL: String, target: Any): Unit = js.native
   
   @JSName("model")
   var model_TreeView: Model = js.native
@@ -319,9 +319,9 @@ trait TreeView
     * @returns {void}
     */
   def moveNode(sourceNode: String, destinationNode: String, index: Double): Unit = js.native
-  def moveNode(sourceNode: String, destinationNode: js.Any, index: Double): Unit = js.native
-  def moveNode(sourceNode: js.Any, destinationNode: String, index: Double): Unit = js.native
-  def moveNode(sourceNode: js.Any, destinationNode: js.Any, index: Double): Unit = js.native
+  def moveNode(sourceNode: String, destinationNode: Any, index: Double): Unit = js.native
+  def moveNode(sourceNode: Any, destinationNode: String, index: Double): Unit = js.native
+  def moveNode(sourceNode: Any, destinationNode: Any, index: Double): Unit = js.native
   
   /** To refresh the TreeView
     * @returns {void}
@@ -338,8 +338,8 @@ trait TreeView
     * @returns {void}
     */
   def removeNode(element: String): Unit = js.native
-  def removeNode(element: js.Any): Unit = js.native
-  def removeNode(element: js.Array[js.Any]): Unit = js.native
+  def removeNode(element: js.Array[Any]): Unit = js.native
+  def removeNode(element: Any): Unit = js.native
   
   /** To select all the TreeView nodes when enable allowMultiSelection property.
     * @returns {void}
@@ -351,8 +351,8 @@ trait TreeView
     * @returns {void}
     */
   def selectNode(element: String): Unit = js.native
-  def selectNode(element: js.Any): Unit = js.native
-  def selectNode(element: js.Array[js.Any]): Unit = js.native
+  def selectNode(element: js.Array[Any]): Unit = js.native
+  def selectNode(element: Any): Unit = js.native
   
   /** To show nodes in TreeView.
     * @returns {void}
@@ -364,8 +364,8 @@ trait TreeView
     * @returns {void}
     */
   def showNode(element: String): Unit = js.native
-  def showNode(element: js.Any): Unit = js.native
-  def showNode(element: js.Array[js.Any]): Unit = js.native
+  def showNode(element: js.Array[Any]): Unit = js.native
+  def showNode(element: Any): Unit = js.native
   
   /** To uncheck all the nodes in TreeView.
     * @returns {void}
@@ -377,8 +377,8 @@ trait TreeView
     * @returns {void}
     */
   def uncheckNode(element: String): Unit = js.native
-  def uncheckNode(element: js.Any): Unit = js.native
-  def uncheckNode(element: js.Array[js.Any]): Unit = js.native
+  def uncheckNode(element: js.Array[Any]): Unit = js.native
+  def uncheckNode(element: Any): Unit = js.native
   
   /** To unselect all the TreeView nodes when enable allowMultiSelection property.
     * @returns {void}
@@ -390,8 +390,8 @@ trait TreeView
     * @returns {void}
     */
   def unselectNode(element: String): Unit = js.native
-  def unselectNode(element: js.Any): Unit = js.native
-  def unselectNode(element: js.Array[js.Any]): Unit = js.native
+  def unselectNode(element: js.Array[Any]): Unit = js.native
+  def unselectNode(element: Any): Unit = js.native
   
   /** To edit or update the text of the TreeView node.
     * @param {string|any} ID of TreeView node/object of TreeView node
@@ -399,7 +399,7 @@ trait TreeView
     * @returns {void}
     */
   def updateText(target: String, newText: String): Unit = js.native
-  def updateText(target: js.Any, newText: String): Unit = js.native
+  def updateText(target: Any, newText: String): Unit = js.native
 }
 object TreeView {
   
@@ -411,7 +411,7 @@ object TreeView {
     
     /** returns the given new node data
       */
-    var data: js.UndefOr[String | js.Any] = js.undefined
+    var data: js.UndefOr[String | Any] = js.undefined
     
     /** returns the TreeView model
       */
@@ -419,11 +419,11 @@ object TreeView {
     
     /** returns the given parent node details
       */
-    var parentDetails: js.UndefOr[js.Any] = js.undefined
+    var parentDetails: js.UndefOr[Any] = js.undefined
     
     /** returns the parent element, the given new nodes to be appended to the given parent element
       */
-    var targetParent: js.UndefOr[js.Any] = js.undefined
+    var targetParent: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -442,7 +442,7 @@ object TreeView {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: String | js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String | Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -450,11 +450,11 @@ object TreeView {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setParentDetails(value: js.Any): Self = StObject.set(x, "parentDetails", value.asInstanceOf[js.Any])
+      inline def setParentDetails(value: Any): Self = StObject.set(x, "parentDetails", value.asInstanceOf[js.Any])
       
       inline def setParentDetailsUndefined: Self = StObject.set(x, "parentDetails", js.undefined)
       
-      inline def setTargetParent(value: js.Any): Self = StObject.set(x, "targetParent", value.asInstanceOf[js.Any])
+      inline def setTargetParent(value: Any): Self = StObject.set(x, "targetParent", value.asInstanceOf[js.Any])
       
       inline def setTargetParentUndefined: Self = StObject.set(x, "targetParent", js.undefined)
       
@@ -476,7 +476,7 @@ object TreeView {
     
     /** returns the current element of the node clicked
       */
-    var currentElement: js.UndefOr[js.Any] = js.undefined
+    var currentElement: js.UndefOr[Any] = js.undefined
     
     /** returns the id of currently clicked node
       */
@@ -519,7 +519,7 @@ object TreeView {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCurrentElement(value: js.Any): Self = StObject.set(x, "currentElement", value.asInstanceOf[js.Any])
+      inline def setCurrentElement(value: Any): Self = StObject.set(x, "currentElement", value.asInstanceOf[js.Any])
       
       inline def setCurrentElementUndefined: Self = StObject.set(x, "currentElement", js.undefined)
       
@@ -557,7 +557,7 @@ object TreeView {
     
     /** returns the event object
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** returns the key pressed key code value
       */
@@ -569,11 +569,11 @@ object TreeView {
     
     /** returns the given target node values
       */
-    var nodeDetails: js.UndefOr[js.Any] = js.undefined
+    var nodeDetails: js.UndefOr[Any] = js.undefined
     
     /** returns the target element, the given node to be cut
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -592,7 +592,7 @@ object TreeView {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
@@ -604,11 +604,11 @@ object TreeView {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setNodeDetails(value: js.Any): Self = StObject.set(x, "nodeDetails", value.asInstanceOf[js.Any])
+      inline def setNodeDetails(value: Any): Self = StObject.set(x, "nodeDetails", value.asInstanceOf[js.Any])
       
       inline def setNodeDetailsUndefined: Self = StObject.set(x, "nodeDetails", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -626,7 +626,7 @@ object TreeView {
     
     /** returns the event object
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** returns the TreeView model
       */
@@ -634,23 +634,23 @@ object TreeView {
     
     /** returns the given target node values
       */
-    var nodeDetails: js.UndefOr[js.Any] = js.undefined
+    var nodeDetails: js.UndefOr[Any] = js.undefined
     
     /** returns the parent node values
       */
-    var parentDetails: js.UndefOr[js.Any] = js.undefined
+    var parentDetails: js.UndefOr[Any] = js.undefined
     
     /** returns the current parent element of the target node
       */
-    var parentElement: js.UndefOr[js.Any] = js.undefined
+    var parentElement: js.UndefOr[Any] = js.undefined
     
     /** returns the currently removed nodes
       */
-    var removedNodes: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var removedNodes: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** returns the target element, the given node to be deleted
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -669,7 +669,7 @@ object TreeView {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
@@ -677,25 +677,25 @@ object TreeView {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setNodeDetails(value: js.Any): Self = StObject.set(x, "nodeDetails", value.asInstanceOf[js.Any])
+      inline def setNodeDetails(value: Any): Self = StObject.set(x, "nodeDetails", value.asInstanceOf[js.Any])
       
       inline def setNodeDetailsUndefined: Self = StObject.set(x, "nodeDetails", js.undefined)
       
-      inline def setParentDetails(value: js.Any): Self = StObject.set(x, "parentDetails", value.asInstanceOf[js.Any])
+      inline def setParentDetails(value: Any): Self = StObject.set(x, "parentDetails", value.asInstanceOf[js.Any])
       
       inline def setParentDetailsUndefined: Self = StObject.set(x, "parentDetails", js.undefined)
       
-      inline def setParentElement(value: js.Any): Self = StObject.set(x, "parentElement", value.asInstanceOf[js.Any])
+      inline def setParentElement(value: Any): Self = StObject.set(x, "parentElement", value.asInstanceOf[js.Any])
       
       inline def setParentElementUndefined: Self = StObject.set(x, "parentElement", js.undefined)
       
-      inline def setRemovedNodes(value: js.Array[js.Any]): Self = StObject.set(x, "removedNodes", value.asInstanceOf[js.Any])
+      inline def setRemovedNodes(value: js.Array[Any]): Self = StObject.set(x, "removedNodes", value.asInstanceOf[js.Any])
       
       inline def setRemovedNodesUndefined: Self = StObject.set(x, "removedNodes", js.undefined)
       
-      inline def setRemovedNodesVarargs(value: js.Any*): Self = StObject.set(x, "removedNodes", js.Array(value :_*))
+      inline def setRemovedNodesVarargs(value: Any*): Self = StObject.set(x, "removedNodes", js.Array(value*))
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -713,7 +713,7 @@ object TreeView {
     
     /** returns the current element of the node clicked
       */
-    var currentElement: js.UndefOr[js.Any] = js.undefined
+    var currentElement: js.UndefOr[Any] = js.undefined
     
     /** returns the TreeView model
       */
@@ -736,7 +736,7 @@ object TreeView {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCurrentElement(value: js.Any): Self = StObject.set(x, "currentElement", value.asInstanceOf[js.Any])
+      inline def setCurrentElement(value: Any): Self = StObject.set(x, "currentElement", value.asInstanceOf[js.Any])
       
       inline def setCurrentElementUndefined: Self = StObject.set(x, "currentElement", js.undefined)
       
@@ -762,7 +762,7 @@ object TreeView {
     
     /** returns the current element of the node clicked
       */
-    var currentElement: js.UndefOr[js.Any] = js.undefined
+    var currentElement: js.UndefOr[Any] = js.undefined
     
     /** returns the id of currently clicked node
       */
@@ -805,7 +805,7 @@ object TreeView {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCurrentElement(value: js.Any): Self = StObject.set(x, "currentElement", value.asInstanceOf[js.Any])
+      inline def setCurrentElement(value: Any): Self = StObject.set(x, "currentElement", value.asInstanceOf[js.Any])
       
       inline def setCurrentElementUndefined: Self = StObject.set(x, "currentElement", js.undefined)
       
@@ -839,7 +839,7 @@ object TreeView {
     
     /** returns the AJAX settings object
       */
-    var AjaxOptions: js.UndefOr[js.Any] = js.undefined
+    var AjaxOptions: js.UndefOr[Any] = js.undefined
     
     /** if the event should be canceled; otherwise, false.
       */
@@ -862,7 +862,7 @@ object TreeView {
     
     extension [Self <: BeforeLoadEventArgs](x: Self) {
       
-      inline def setAjaxOptions(value: js.Any): Self = StObject.set(x, "AjaxOptions", value.asInstanceOf[js.Any])
+      inline def setAjaxOptions(value: Any): Self = StObject.set(x, "AjaxOptions", value.asInstanceOf[js.Any])
       
       inline def setAjaxOptionsUndefined: Self = StObject.set(x, "AjaxOptions", js.undefined)
       
@@ -888,7 +888,7 @@ object TreeView {
     
     /** returns the event object
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** returns the key pressed key code value
       */
@@ -900,11 +900,11 @@ object TreeView {
     
     /** returns the given target node values
       */
-    var nodeDetails: js.UndefOr[js.Any] = js.undefined
+    var nodeDetails: js.UndefOr[Any] = js.undefined
     
     /** returns the target element, the given node to be pasted
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -923,7 +923,7 @@ object TreeView {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
@@ -935,11 +935,11 @@ object TreeView {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setNodeDetails(value: js.Any): Self = StObject.set(x, "nodeDetails", value.asInstanceOf[js.Any])
+      inline def setNodeDetails(value: Any): Self = StObject.set(x, "nodeDetails", value.asInstanceOf[js.Any])
       
       inline def setNodeDetailsUndefined: Self = StObject.set(x, "nodeDetails", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -961,11 +961,11 @@ object TreeView {
     
     /** returns the given target node values
       */
-    var nodeDetails: js.UndefOr[js.Any] = js.undefined
+    var nodeDetails: js.UndefOr[Any] = js.undefined
     
     /** returns the target element, the given node to be selected
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -988,11 +988,11 @@ object TreeView {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setNodeDetails(value: js.Any): Self = StObject.set(x, "nodeDetails", value.asInstanceOf[js.Any])
+      inline def setNodeDetails(value: Any): Self = StObject.set(x, "nodeDetails", value.asInstanceOf[js.Any])
       
       inline def setNodeDetailsUndefined: Self = StObject.set(x, "nodeDetails", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -1080,11 +1080,11 @@ object TreeView {
     
     /** It receives the child level or inner level data source such as Essential DataManager object and JSON object.
       */
-    var child: js.UndefOr[js.Any] = js.undefined
+    var child: js.UndefOr[Any] = js.undefined
     
     /** It receives Essential DataManager object and JSON object.
       */
-    var dataSource: js.UndefOr[js.Any] = js.undefined
+    var dataSource: js.UndefOr[Any] = js.undefined
     
     /** Specifies the node to be in expanded state.
       */
@@ -1096,7 +1096,7 @@ object TreeView {
     
     /** Specifies the HTML Attributes to &quot;li&quot; item list.
       */
-    var htmlAttribute: js.UndefOr[js.Any] = js.undefined
+    var htmlAttribute: js.UndefOr[Any] = js.undefined
     
     /** Specifies the id to TreeView node items list.
       */
@@ -1104,7 +1104,7 @@ object TreeView {
     
     /** Specifies the image attribute to â€œimgâ€ tag inside items list
       */
-    var imageAttribute: js.UndefOr[js.Any] = js.undefined
+    var imageAttribute: js.UndefOr[Any] = js.undefined
     
     /** Specifies the HTML Attributes to &quot;li&quot; item list.
       */
@@ -1116,7 +1116,7 @@ object TreeView {
     
     /** Specifies the link attribute to â€œaâ€ tag in item list.
       */
-    var linkAttribute: js.UndefOr[js.Any] = js.undefined
+    var linkAttribute: js.UndefOr[Any] = js.undefined
     
     /** Specifies the parent id of the node. The nodes are listed as child nodes of the specified parent node by using its parent id.
       */
@@ -1124,7 +1124,7 @@ object TreeView {
     
     /** It receives query to retrieve data from the table (query is same as SQL).
       */
-    var query: js.UndefOr[js.Any] = js.undefined
+    var query: js.UndefOr[Any] = js.undefined
     
     /** Allow us to specify the node to be in selected state
       */
@@ -1151,11 +1151,11 @@ object TreeView {
     
     extension [Self <: Fields](x: Self) {
       
-      inline def setChild(value: js.Any): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
+      inline def setChild(value: Any): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
       
       inline def setChildUndefined: Self = StObject.set(x, "child", js.undefined)
       
-      inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
       
@@ -1167,7 +1167,7 @@ object TreeView {
       
       inline def setHasChildUndefined: Self = StObject.set(x, "hasChild", js.undefined)
       
-      inline def setHtmlAttribute(value: js.Any): Self = StObject.set(x, "htmlAttribute", value.asInstanceOf[js.Any])
+      inline def setHtmlAttribute(value: Any): Self = StObject.set(x, "htmlAttribute", value.asInstanceOf[js.Any])
       
       inline def setHtmlAttributeUndefined: Self = StObject.set(x, "htmlAttribute", js.undefined)
       
@@ -1175,7 +1175,7 @@ object TreeView {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setImageAttribute(value: js.Any): Self = StObject.set(x, "imageAttribute", value.asInstanceOf[js.Any])
+      inline def setImageAttribute(value: Any): Self = StObject.set(x, "imageAttribute", value.asInstanceOf[js.Any])
       
       inline def setImageAttributeUndefined: Self = StObject.set(x, "imageAttribute", js.undefined)
       
@@ -1187,7 +1187,7 @@ object TreeView {
       
       inline def setIsCheckedUndefined: Self = StObject.set(x, "isChecked", js.undefined)
       
-      inline def setLinkAttribute(value: js.Any): Self = StObject.set(x, "linkAttribute", value.asInstanceOf[js.Any])
+      inline def setLinkAttribute(value: Any): Self = StObject.set(x, "linkAttribute", value.asInstanceOf[js.Any])
       
       inline def setLinkAttributeUndefined: Self = StObject.set(x, "linkAttribute", js.undefined)
       
@@ -1195,7 +1195,7 @@ object TreeView {
       
       inline def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
       
-      inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
@@ -1225,7 +1225,7 @@ object TreeView {
     
     /** returns the current node element id
       */
-    var id: js.UndefOr[js.Any] = js.undefined
+    var id: js.UndefOr[Any] = js.undefined
     
     /** returns the TreeView model
       */
@@ -1256,7 +1256,7 @@ object TreeView {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
@@ -1286,11 +1286,11 @@ object TreeView {
     
     /** returns the current element of the node clicked
       */
-    var currentElement: js.UndefOr[js.Any] = js.undefined
+    var currentElement: js.UndefOr[Any] = js.undefined
     
     /** returns the event object
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** returns the id of current TreeView node
       */
@@ -1337,11 +1337,11 @@ object TreeView {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCurrentElement(value: js.Any): Self = StObject.set(x, "currentElement", value.asInstanceOf[js.Any])
+      inline def setCurrentElement(value: Any): Self = StObject.set(x, "currentElement", value.asInstanceOf[js.Any])
       
       inline def setCurrentElementUndefined: Self = StObject.set(x, "currentElement", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
@@ -1387,7 +1387,7 @@ object TreeView {
     
     /** returns the AJAX error object
       */
-    var error: js.UndefOr[js.Any] = js.undefined
+    var error: js.UndefOr[Any] = js.undefined
     
     /** returns the TreeView model
       */
@@ -1410,7 +1410,7 @@ object TreeView {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
@@ -1432,7 +1432,7 @@ object TreeView {
     
     /** returns the success data from the URL
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** returns the TreeView model
       */
@@ -1440,11 +1440,11 @@ object TreeView {
     
     /** returns the given parent node details
       */
-    var parentDetails: js.UndefOr[js.Any] = js.undefined
+    var parentDetails: js.UndefOr[Any] = js.undefined
     
     /** returns the target parent element, the data returned from the URL to be appended to the given parent element, else in TreeView
       */
-    var targetParent: js.UndefOr[js.Any] = js.undefined
+    var targetParent: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -1463,7 +1463,7 @@ object TreeView {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -1471,11 +1471,11 @@ object TreeView {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setParentDetails(value: js.Any): Self = StObject.set(x, "parentDetails", value.asInstanceOf[js.Any])
+      inline def setParentDetails(value: Any): Self = StObject.set(x, "parentDetails", value.asInstanceOf[js.Any])
       
       inline def setParentDetailsUndefined: Self = StObject.set(x, "parentDetails", js.undefined)
       
-      inline def setTargetParent(value: js.Any): Self = StObject.set(x, "targetParent", value.asInstanceOf[js.Any])
+      inline def setTargetParent(value: Any): Self = StObject.set(x, "targetParent", value.asInstanceOf[js.Any])
       
       inline def setTargetParentUndefined: Self = StObject.set(x, "targetParent", js.undefined)
       
@@ -1571,7 +1571,7 @@ object TreeView {
     /** Gets or sets a value that indicates the checkedNodes index collection as an array. The given array index position denotes the nodes, that are checked while rendering TreeView.
       * @Default {[]}
       */
-    var checkedNodes: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var checkedNodes: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Fires when TreeView created successfully.
       */
@@ -1619,7 +1619,7 @@ object TreeView {
       * TreeView.
       * @Default {[]}
       */
-    var expandedNodes: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var expandedNodes: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Gets or sets a fields object that allow us to map the data members with field properties in order to make the data binding easier.
       * @Default {null}
@@ -1639,7 +1639,7 @@ object TreeView {
     /** Specifies the HTML Attributes for the TreeView. Using this API we can add custom attributes in TreeView control.
       * @Default {{}}
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
+    var htmlAttributes: js.UndefOr[Any] = js.undefined
     
     /** Fires before nodeEdit Successful.
       */
@@ -1738,7 +1738,7 @@ object TreeView {
     /** Gets or sets a value that indicates the selectedNodes index collection as an array. The given array index position denotes the nodes, that are selected while rendering TreeView.
       * @Default {[]}
       */
-    var selectedNodes: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var selectedNodes: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Gets or sets a value that indicates whether to display or hide checkbox for all TreeView nodes.
       * @Default {false}
@@ -1840,11 +1840,11 @@ object TreeView {
       
       inline def setBeforeSelectUndefined: Self = StObject.set(x, "beforeSelect", js.undefined)
       
-      inline def setCheckedNodes(value: js.Array[js.Any]): Self = StObject.set(x, "checkedNodes", value.asInstanceOf[js.Any])
+      inline def setCheckedNodes(value: js.Array[Any]): Self = StObject.set(x, "checkedNodes", value.asInstanceOf[js.Any])
       
       inline def setCheckedNodesUndefined: Self = StObject.set(x, "checkedNodes", js.undefined)
       
-      inline def setCheckedNodesVarargs(value: js.Any*): Self = StObject.set(x, "checkedNodes", js.Array(value :_*))
+      inline def setCheckedNodesVarargs(value: Any*): Self = StObject.set(x, "checkedNodes", js.Array(value*))
       
       inline def setCreate(value: /* e */ CreateEventArgs => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       
@@ -1882,11 +1882,11 @@ object TreeView {
       
       inline def setExpandOnUndefined: Self = StObject.set(x, "expandOn", js.undefined)
       
-      inline def setExpandedNodes(value: js.Array[js.Any]): Self = StObject.set(x, "expandedNodes", value.asInstanceOf[js.Any])
+      inline def setExpandedNodes(value: js.Array[Any]): Self = StObject.set(x, "expandedNodes", value.asInstanceOf[js.Any])
       
       inline def setExpandedNodesUndefined: Self = StObject.set(x, "expandedNodes", js.undefined)
       
-      inline def setExpandedNodesVarargs(value: js.Any*): Self = StObject.set(x, "expandedNodes", js.Array(value :_*))
+      inline def setExpandedNodesVarargs(value: Any*): Self = StObject.set(x, "expandedNodes", js.Array(value*))
       
       inline def setFields(value: Fields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
@@ -1900,7 +1900,7 @@ object TreeView {
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setHtmlAttributes(value: js.Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
+      inline def setHtmlAttributes(value: Any): Self = StObject.set(x, "htmlAttributes", value.asInstanceOf[js.Any])
       
       inline def setHtmlAttributesUndefined: Self = StObject.set(x, "htmlAttributes", js.undefined)
       
@@ -1996,11 +1996,11 @@ object TreeView {
       
       inline def setSelectedNodeUndefined: Self = StObject.set(x, "selectedNode", js.undefined)
       
-      inline def setSelectedNodes(value: js.Array[js.Any]): Self = StObject.set(x, "selectedNodes", value.asInstanceOf[js.Any])
+      inline def setSelectedNodes(value: js.Array[Any]): Self = StObject.set(x, "selectedNodes", value.asInstanceOf[js.Any])
       
       inline def setSelectedNodesUndefined: Self = StObject.set(x, "selectedNodes", js.undefined)
       
-      inline def setSelectedNodesVarargs(value: js.Any*): Self = StObject.set(x, "selectedNodes", js.Array(value :_*))
+      inline def setSelectedNodesVarargs(value: Any*): Self = StObject.set(x, "selectedNodes", js.Array(value*))
       
       inline def setShowCheckbox(value: Boolean): Self = StObject.set(x, "showCheckbox", value.asInstanceOf[js.Any])
       
@@ -2028,7 +2028,7 @@ object TreeView {
     
     /** returns the added data, that are given initially
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** returns the TreeView model
       */
@@ -2036,15 +2036,15 @@ object TreeView {
     
     /** returns the newly added elements
       */
-    var nodes: js.UndefOr[js.Any] = js.undefined
+    var nodes: js.UndefOr[Any] = js.undefined
     
     /** returns the given parent node details
       */
-    var parentDetails: js.UndefOr[js.Any] = js.undefined
+    var parentDetails: js.UndefOr[Any] = js.undefined
     
     /** returns the target parent element of the added element
       */
-    var parentElement: js.UndefOr[js.Any] = js.undefined
+    var parentElement: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -2063,7 +2063,7 @@ object TreeView {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -2071,15 +2071,15 @@ object TreeView {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setNodes(value: js.Any): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+      inline def setNodes(value: Any): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
       inline def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
       
-      inline def setParentDetails(value: js.Any): Self = StObject.set(x, "parentDetails", value.asInstanceOf[js.Any])
+      inline def setParentDetails(value: Any): Self = StObject.set(x, "parentDetails", value.asInstanceOf[js.Any])
       
       inline def setParentDetailsUndefined: Self = StObject.set(x, "parentDetails", js.undefined)
       
-      inline def setParentElement(value: js.Any): Self = StObject.set(x, "parentElement", value.asInstanceOf[js.Any])
+      inline def setParentElement(value: Any): Self = StObject.set(x, "parentElement", value.asInstanceOf[js.Any])
       
       inline def setParentElementUndefined: Self = StObject.set(x, "parentElement", js.undefined)
       
@@ -2097,19 +2097,19 @@ object TreeView {
     
     /** it returns the currently checked and its child node details
       */
-    var currentCheckedNodes: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var currentCheckedNodes: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** returns the current element of the node clicked
       */
-    var currentElement: js.UndefOr[js.Any] = js.undefined
+    var currentElement: js.UndefOr[Any] = js.undefined
     
     /** it returns the currently checked node name
       */
-    var currentNode: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var currentNode: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** returns the event object
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** returns the id of the current element of the node clicked
       */
@@ -2148,23 +2148,23 @@ object TreeView {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCurrentCheckedNodes(value: js.Array[js.Any]): Self = StObject.set(x, "currentCheckedNodes", value.asInstanceOf[js.Any])
+      inline def setCurrentCheckedNodes(value: js.Array[Any]): Self = StObject.set(x, "currentCheckedNodes", value.asInstanceOf[js.Any])
       
       inline def setCurrentCheckedNodesUndefined: Self = StObject.set(x, "currentCheckedNodes", js.undefined)
       
-      inline def setCurrentCheckedNodesVarargs(value: js.Any*): Self = StObject.set(x, "currentCheckedNodes", js.Array(value :_*))
+      inline def setCurrentCheckedNodesVarargs(value: Any*): Self = StObject.set(x, "currentCheckedNodes", js.Array(value*))
       
-      inline def setCurrentElement(value: js.Any): Self = StObject.set(x, "currentElement", value.asInstanceOf[js.Any])
+      inline def setCurrentElement(value: Any): Self = StObject.set(x, "currentElement", value.asInstanceOf[js.Any])
       
       inline def setCurrentElementUndefined: Self = StObject.set(x, "currentElement", js.undefined)
       
-      inline def setCurrentNode(value: js.Array[js.Any]): Self = StObject.set(x, "currentNode", value.asInstanceOf[js.Any])
+      inline def setCurrentNode(value: js.Array[Any]): Self = StObject.set(x, "currentNode", value.asInstanceOf[js.Any])
       
       inline def setCurrentNodeUndefined: Self = StObject.set(x, "currentNode", js.undefined)
       
-      inline def setCurrentNodeVarargs(value: js.Any*): Self = StObject.set(x, "currentNode", js.Array(value :_*))
+      inline def setCurrentNodeVarargs(value: Any*): Self = StObject.set(x, "currentNode", js.Array(value*))
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
@@ -2202,11 +2202,11 @@ object TreeView {
     
     /** returns the current element of the node clicked
       */
-    var currentElement: js.UndefOr[js.Any] = js.undefined
+    var currentElement: js.UndefOr[Any] = js.undefined
     
     /** returns the event object
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** returns the id of currently clicked TreeView node
       */
@@ -2237,11 +2237,11 @@ object TreeView {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCurrentElement(value: js.Any): Self = StObject.set(x, "currentElement", value.asInstanceOf[js.Any])
+      inline def setCurrentElement(value: Any): Self = StObject.set(x, "currentElement", value.asInstanceOf[js.Any])
       
       inline def setCurrentElementUndefined: Self = StObject.set(x, "currentElement", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
@@ -2275,7 +2275,7 @@ object TreeView {
     
     /** returns the current element of the node clicked
       */
-    var currentElement: js.UndefOr[js.Any] = js.undefined
+    var currentElement: js.UndefOr[Any] = js.undefined
     
     /** returns the id of the current element of the node clicked
       */
@@ -2318,7 +2318,7 @@ object TreeView {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCurrentElement(value: js.Any): Self = StObject.set(x, "currentElement", value.asInstanceOf[js.Any])
+      inline def setCurrentElement(value: Any): Self = StObject.set(x, "currentElement", value.asInstanceOf[js.Any])
       
       inline def setCurrentElementUndefined: Self = StObject.set(x, "currentElement", js.undefined)
       
@@ -2356,7 +2356,7 @@ object TreeView {
     
     /** returns the event object
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** returns the key pressed key code value
       */
@@ -2368,11 +2368,11 @@ object TreeView {
     
     /** returns the given parent node details
       */
-    var parentDetails: js.UndefOr[js.Any] = js.undefined
+    var parentDetails: js.UndefOr[Any] = js.undefined
     
     /** returns the current parent element of the cut node
       */
-    var parentElement: js.UndefOr[js.Any] = js.undefined
+    var parentElement: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -2391,7 +2391,7 @@ object TreeView {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
@@ -2403,11 +2403,11 @@ object TreeView {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setParentDetails(value: js.Any): Self = StObject.set(x, "parentDetails", value.asInstanceOf[js.Any])
+      inline def setParentDetails(value: Any): Self = StObject.set(x, "parentDetails", value.asInstanceOf[js.Any])
       
       inline def setParentDetailsUndefined: Self = StObject.set(x, "parentDetails", js.undefined)
       
-      inline def setParentElement(value: js.Any): Self = StObject.set(x, "parentElement", value.asInstanceOf[js.Any])
+      inline def setParentElement(value: Any): Self = StObject.set(x, "parentElement", value.asInstanceOf[js.Any])
       
       inline def setParentElementUndefined: Self = StObject.set(x, "parentElement", js.undefined)
       
@@ -2425,7 +2425,7 @@ object TreeView {
     
     /** returns the event object
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** returns the TreeView model
       */
@@ -2433,15 +2433,15 @@ object TreeView {
     
     /** returns the given parent node details
       */
-    var parentDetails: js.UndefOr[js.Any] = js.undefined
+    var parentDetails: js.UndefOr[Any] = js.undefined
     
     /** returns the current parent element of the deleted node
       */
-    var parentElement: js.UndefOr[js.Any] = js.undefined
+    var parentElement: js.UndefOr[Any] = js.undefined
     
     /** returns the currently removed nodes
       */
-    var removedNodes: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var removedNodes: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** returns the name of the event
       */
@@ -2460,7 +2460,7 @@ object TreeView {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
@@ -2468,19 +2468,19 @@ object TreeView {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setParentDetails(value: js.Any): Self = StObject.set(x, "parentDetails", value.asInstanceOf[js.Any])
+      inline def setParentDetails(value: Any): Self = StObject.set(x, "parentDetails", value.asInstanceOf[js.Any])
       
       inline def setParentDetailsUndefined: Self = StObject.set(x, "parentDetails", js.undefined)
       
-      inline def setParentElement(value: js.Any): Self = StObject.set(x, "parentElement", value.asInstanceOf[js.Any])
+      inline def setParentElement(value: Any): Self = StObject.set(x, "parentElement", value.asInstanceOf[js.Any])
       
       inline def setParentElementUndefined: Self = StObject.set(x, "parentElement", js.undefined)
       
-      inline def setRemovedNodes(value: js.Array[js.Any]): Self = StObject.set(x, "removedNodes", value.asInstanceOf[js.Any])
+      inline def setRemovedNodes(value: js.Array[Any]): Self = StObject.set(x, "removedNodes", value.asInstanceOf[js.Any])
       
       inline def setRemovedNodesUndefined: Self = StObject.set(x, "removedNodes", js.undefined)
       
-      inline def setRemovedNodesVarargs(value: js.Any*): Self = StObject.set(x, "removedNodes", js.Array(value :_*))
+      inline def setRemovedNodesVarargs(value: Any*): Self = StObject.set(x, "removedNodes", js.Array(value*))
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -2496,19 +2496,19 @@ object TreeView {
     
     /** returns the original drag target
       */
-    var dragTarget: js.UndefOr[js.Any] = js.undefined
+    var dragTarget: js.UndefOr[Any] = js.undefined
     
     /** returns the current parent element of the target node
       */
-    var draggedElement: js.UndefOr[js.Any] = js.undefined
+    var draggedElement: js.UndefOr[Any] = js.undefined
     
     /** returns the given parent node details
       */
-    var draggedElementData: js.UndefOr[js.Any] = js.undefined
+    var draggedElementData: js.UndefOr[Any] = js.undefined
     
     /** returns the event object
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** returns the TreeView model
       */
@@ -2516,11 +2516,11 @@ object TreeView {
     
     /** returns the current target TreeView node
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** returns the current target details
       */
-    var targetElementData: js.UndefOr[js.Any] = js.undefined
+    var targetElementData: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -2539,19 +2539,19 @@ object TreeView {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setDragTarget(value: js.Any): Self = StObject.set(x, "dragTarget", value.asInstanceOf[js.Any])
+      inline def setDragTarget(value: Any): Self = StObject.set(x, "dragTarget", value.asInstanceOf[js.Any])
       
       inline def setDragTargetUndefined: Self = StObject.set(x, "dragTarget", js.undefined)
       
-      inline def setDraggedElement(value: js.Any): Self = StObject.set(x, "draggedElement", value.asInstanceOf[js.Any])
+      inline def setDraggedElement(value: Any): Self = StObject.set(x, "draggedElement", value.asInstanceOf[js.Any])
       
-      inline def setDraggedElementData(value: js.Any): Self = StObject.set(x, "draggedElementData", value.asInstanceOf[js.Any])
+      inline def setDraggedElementData(value: Any): Self = StObject.set(x, "draggedElementData", value.asInstanceOf[js.Any])
       
       inline def setDraggedElementDataUndefined: Self = StObject.set(x, "draggedElementData", js.undefined)
       
       inline def setDraggedElementUndefined: Self = StObject.set(x, "draggedElement", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
@@ -2559,9 +2559,9 @@ object TreeView {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      inline def setTargetElementData(value: js.Any): Self = StObject.set(x, "targetElementData", value.asInstanceOf[js.Any])
+      inline def setTargetElementData(value: Any): Self = StObject.set(x, "targetElementData", value.asInstanceOf[js.Any])
       
       inline def setTargetElementDataUndefined: Self = StObject.set(x, "targetElementData", js.undefined)
       
@@ -2581,11 +2581,11 @@ object TreeView {
     
     /** returns the original drag target
       */
-    var dragTarget: js.UndefOr[js.Any] = js.undefined
+    var dragTarget: js.UndefOr[Any] = js.undefined
     
     /** returns the event object
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** returns the TreeView model
       */
@@ -2593,19 +2593,19 @@ object TreeView {
     
     /** returns the current dragging parent TreeView node
       */
-    var parentElement: js.UndefOr[js.Any] = js.undefined
+    var parentElement: js.UndefOr[Any] = js.undefined
     
     /** returns the current dragging parent TreeView node details
       */
-    var parentElementData: js.UndefOr[js.Any] = js.undefined
+    var parentElementData: js.UndefOr[Any] = js.undefined
     
     /** returns the current parent element of the dragging node
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** returns the given parent node details
       */
-    var targetElementData: js.UndefOr[js.Any] = js.undefined
+    var targetElementData: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -2624,11 +2624,11 @@ object TreeView {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setDragTarget(value: js.Any): Self = StObject.set(x, "dragTarget", value.asInstanceOf[js.Any])
+      inline def setDragTarget(value: Any): Self = StObject.set(x, "dragTarget", value.asInstanceOf[js.Any])
       
       inline def setDragTargetUndefined: Self = StObject.set(x, "dragTarget", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
@@ -2636,17 +2636,17 @@ object TreeView {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setParentElement(value: js.Any): Self = StObject.set(x, "parentElement", value.asInstanceOf[js.Any])
+      inline def setParentElement(value: Any): Self = StObject.set(x, "parentElement", value.asInstanceOf[js.Any])
       
-      inline def setParentElementData(value: js.Any): Self = StObject.set(x, "parentElementData", value.asInstanceOf[js.Any])
+      inline def setParentElementData(value: Any): Self = StObject.set(x, "parentElementData", value.asInstanceOf[js.Any])
       
       inline def setParentElementDataUndefined: Self = StObject.set(x, "parentElementData", js.undefined)
       
       inline def setParentElementUndefined: Self = StObject.set(x, "parentElement", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      inline def setTargetElementData(value: js.Any): Self = StObject.set(x, "targetElementData", value.asInstanceOf[js.Any])
+      inline def setTargetElementData(value: Any): Self = StObject.set(x, "targetElementData", value.asInstanceOf[js.Any])
       
       inline def setTargetElementDataUndefined: Self = StObject.set(x, "targetElementData", js.undefined)
       
@@ -2666,19 +2666,19 @@ object TreeView {
     
     /** returns the current dragged TreeView node
       */
-    var draggedElement: js.UndefOr[js.Any] = js.undefined
+    var draggedElement: js.UndefOr[Any] = js.undefined
     
     /** returns the current dragged TreeView node details
       */
-    var draggedElementData: js.UndefOr[js.Any] = js.undefined
+    var draggedElementData: js.UndefOr[Any] = js.undefined
     
     /** returns the original drop target
       */
-    var dropTarget: js.UndefOr[js.Any] = js.undefined
+    var dropTarget: js.UndefOr[Any] = js.undefined
     
     /** returns the event object
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** returns the TreeView model
       */
@@ -2694,11 +2694,11 @@ object TreeView {
     
     /** returns the current parent element of the dragged node
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** returns the given parent node details
       */
-    var targetElementData: js.UndefOr[js.Any] = js.undefined
+    var targetElementData: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -2717,19 +2717,19 @@ object TreeView {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setDraggedElement(value: js.Any): Self = StObject.set(x, "draggedElement", value.asInstanceOf[js.Any])
+      inline def setDraggedElement(value: Any): Self = StObject.set(x, "draggedElement", value.asInstanceOf[js.Any])
       
-      inline def setDraggedElementData(value: js.Any): Self = StObject.set(x, "draggedElementData", value.asInstanceOf[js.Any])
+      inline def setDraggedElementData(value: Any): Self = StObject.set(x, "draggedElementData", value.asInstanceOf[js.Any])
       
       inline def setDraggedElementDataUndefined: Self = StObject.set(x, "draggedElementData", js.undefined)
       
       inline def setDraggedElementUndefined: Self = StObject.set(x, "draggedElement", js.undefined)
       
-      inline def setDropTarget(value: js.Any): Self = StObject.set(x, "dropTarget", value.asInstanceOf[js.Any])
+      inline def setDropTarget(value: Any): Self = StObject.set(x, "dropTarget", value.asInstanceOf[js.Any])
       
       inline def setDropTargetUndefined: Self = StObject.set(x, "dropTarget", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
@@ -2745,9 +2745,9 @@ object TreeView {
       
       inline def setPreventTargetExpandUndefined: Self = StObject.set(x, "preventTargetExpand", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      inline def setTargetElementData(value: js.Any): Self = StObject.set(x, "targetElementData", value.asInstanceOf[js.Any])
+      inline def setTargetElementData(value: Any): Self = StObject.set(x, "targetElementData", value.asInstanceOf[js.Any])
       
       inline def setTargetElementDataUndefined: Self = StObject.set(x, "targetElementData", js.undefined)
       
@@ -2767,19 +2767,19 @@ object TreeView {
     
     /** returns the original drop target
       */
-    var dropTarget: js.UndefOr[js.Any] = js.undefined
+    var dropTarget: js.UndefOr[Any] = js.undefined
     
     /** returns the current dropped TreeView node
       */
-    var droppedElement: js.UndefOr[js.Any] = js.undefined
+    var droppedElement: js.UndefOr[Any] = js.undefined
     
     /** returns the current dropped TreeView node details
       */
-    var droppedElementData: js.UndefOr[js.Any] = js.undefined
+    var droppedElementData: js.UndefOr[Any] = js.undefined
     
     /** returns the event object
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** returns the TreeView model
       */
@@ -2791,11 +2791,11 @@ object TreeView {
     
     /** returns the current parent element of the dropped node
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** returns the given parent node details
       */
-    var targetElementData: js.UndefOr[js.Any] = js.undefined
+    var targetElementData: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -2814,19 +2814,19 @@ object TreeView {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setDropTarget(value: js.Any): Self = StObject.set(x, "dropTarget", value.asInstanceOf[js.Any])
+      inline def setDropTarget(value: Any): Self = StObject.set(x, "dropTarget", value.asInstanceOf[js.Any])
       
       inline def setDropTargetUndefined: Self = StObject.set(x, "dropTarget", js.undefined)
       
-      inline def setDroppedElement(value: js.Any): Self = StObject.set(x, "droppedElement", value.asInstanceOf[js.Any])
+      inline def setDroppedElement(value: Any): Self = StObject.set(x, "droppedElement", value.asInstanceOf[js.Any])
       
-      inline def setDroppedElementData(value: js.Any): Self = StObject.set(x, "droppedElementData", value.asInstanceOf[js.Any])
+      inline def setDroppedElementData(value: Any): Self = StObject.set(x, "droppedElementData", value.asInstanceOf[js.Any])
       
       inline def setDroppedElementDataUndefined: Self = StObject.set(x, "droppedElementData", js.undefined)
       
       inline def setDroppedElementUndefined: Self = StObject.set(x, "droppedElement", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
@@ -2838,9 +2838,9 @@ object TreeView {
       
       inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      inline def setTargetElementData(value: js.Any): Self = StObject.set(x, "targetElementData", value.asInstanceOf[js.Any])
+      inline def setTargetElementData(value: Any): Self = StObject.set(x, "targetElementData", value.asInstanceOf[js.Any])
       
       inline def setTargetElementDataUndefined: Self = StObject.set(x, "targetElementData", js.undefined)
       
@@ -2860,7 +2860,7 @@ object TreeView {
     
     /** returns the event object
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** returns the id of the element
       */
@@ -2876,7 +2876,7 @@ object TreeView {
     
     /** returns the given target node values
       */
-    var nodeDetails: js.UndefOr[js.Any] = js.undefined
+    var nodeDetails: js.UndefOr[Any] = js.undefined
     
     /** returns the oldText of the element
       */
@@ -2884,7 +2884,7 @@ object TreeView {
     
     /** returns the target element, the given node to be cut
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -2903,7 +2903,7 @@ object TreeView {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
@@ -2919,7 +2919,7 @@ object TreeView {
       
       inline def setNewTextUndefined: Self = StObject.set(x, "newText", js.undefined)
       
-      inline def setNodeDetails(value: js.Any): Self = StObject.set(x, "nodeDetails", value.asInstanceOf[js.Any])
+      inline def setNodeDetails(value: Any): Self = StObject.set(x, "nodeDetails", value.asInstanceOf[js.Any])
       
       inline def setNodeDetailsUndefined: Self = StObject.set(x, "nodeDetails", js.undefined)
       
@@ -2927,7 +2927,7 @@ object TreeView {
       
       inline def setOldTextUndefined: Self = StObject.set(x, "oldText", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -2949,7 +2949,7 @@ object TreeView {
     
     /** returns the current element of the node clicked
       */
-    var currentElement: js.UndefOr[js.Any] = js.undefined
+    var currentElement: js.UndefOr[Any] = js.undefined
     
     /** returns the id of currently clicked node
       */
@@ -2992,7 +2992,7 @@ object TreeView {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCurrentElement(value: js.Any): Self = StObject.set(x, "currentElement", value.asInstanceOf[js.Any])
+      inline def setCurrentElement(value: Any): Self = StObject.set(x, "currentElement", value.asInstanceOf[js.Any])
       
       inline def setCurrentElementUndefined: Self = StObject.set(x, "currentElement", js.undefined)
       
@@ -3030,7 +3030,7 @@ object TreeView {
     
     /** returns the event object
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** returns the key pressed key code value
       */
@@ -3042,11 +3042,11 @@ object TreeView {
     
     /** returns the given target node values
       */
-    var nodeDetails: js.UndefOr[js.Any] = js.undefined
+    var nodeDetails: js.UndefOr[Any] = js.undefined
     
     /** returns the pasted element
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -3065,7 +3065,7 @@ object TreeView {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
@@ -3077,11 +3077,11 @@ object TreeView {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setNodeDetails(value: js.Any): Self = StObject.set(x, "nodeDetails", value.asInstanceOf[js.Any])
+      inline def setNodeDetails(value: Any): Self = StObject.set(x, "nodeDetails", value.asInstanceOf[js.Any])
       
       inline def setNodeDetailsUndefined: Self = StObject.set(x, "nodeDetails", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -3099,11 +3099,11 @@ object TreeView {
     
     /** returns the current element of the node clicked
       */
-    var currentElement: js.UndefOr[js.Any] = js.undefined
+    var currentElement: js.UndefOr[Any] = js.undefined
     
     /** returns the id of the current element of the node clicked
       */
-    var id: js.UndefOr[js.Any] = js.undefined
+    var id: js.UndefOr[Any] = js.undefined
     
     /** returns the TreeView model
       */
@@ -3111,11 +3111,11 @@ object TreeView {
     
     /** returns the id of the parent element of current element of the node clicked
       */
-    var parentId: js.UndefOr[js.Any] = js.undefined
+    var parentId: js.UndefOr[Any] = js.undefined
     
     /** returns the current selected nodes index of TreeView
       */
-    var selectedNodes: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var selectedNodes: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** returns the name of the event
       */
@@ -3138,11 +3138,11 @@ object TreeView {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCurrentElement(value: js.Any): Self = StObject.set(x, "currentElement", value.asInstanceOf[js.Any])
+      inline def setCurrentElement(value: Any): Self = StObject.set(x, "currentElement", value.asInstanceOf[js.Any])
       
       inline def setCurrentElementUndefined: Self = StObject.set(x, "currentElement", js.undefined)
       
-      inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
@@ -3150,15 +3150,15 @@ object TreeView {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setParentId(value: js.Any): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
+      inline def setParentId(value: Any): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
       
       inline def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
       
-      inline def setSelectedNodes(value: js.Array[js.Any]): Self = StObject.set(x, "selectedNodes", value.asInstanceOf[js.Any])
+      inline def setSelectedNodes(value: js.Array[Any]): Self = StObject.set(x, "selectedNodes", value.asInstanceOf[js.Any])
       
       inline def setSelectedNodesUndefined: Self = StObject.set(x, "selectedNodes", js.undefined)
       
-      inline def setSelectedNodesVarargs(value: js.Any*): Self = StObject.set(x, "selectedNodes", js.Array(value :_*))
+      inline def setSelectedNodesVarargs(value: Any*): Self = StObject.set(x, "selectedNodes", js.Array(value*))
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -3178,7 +3178,7 @@ object TreeView {
     
     /** returns the current element of the node clicked
       */
-    var currentElement: js.UndefOr[js.Any] = js.undefined
+    var currentElement: js.UndefOr[Any] = js.undefined
     
     /** it returns currently unchecked node name
       */
@@ -3186,15 +3186,15 @@ object TreeView {
     
     /** it returns currently unchecked node and its child node details.
       */
-    var currentUncheckedNodes: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var currentUncheckedNodes: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** returns the event object
       */
-    var event: js.UndefOr[js.Any] = js.undefined
+    var event: js.UndefOr[Any] = js.undefined
     
     /** returns the id of the current element of the node clicked
       */
-    var id: js.UndefOr[js.Any] = js.undefined
+    var id: js.UndefOr[Any] = js.undefined
     
     /** it returns true when the node checkbox is checked; otherwise, false.
       */
@@ -3206,7 +3206,7 @@ object TreeView {
     
     /** returns the id of the parent element of current element of the node clicked
       */
-    var parentId: js.UndefOr[js.Any] = js.undefined
+    var parentId: js.UndefOr[Any] = js.undefined
     
     /** returns the name of the event
       */
@@ -3229,7 +3229,7 @@ object TreeView {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCurrentElement(value: js.Any): Self = StObject.set(x, "currentElement", value.asInstanceOf[js.Any])
+      inline def setCurrentElement(value: Any): Self = StObject.set(x, "currentElement", value.asInstanceOf[js.Any])
       
       inline def setCurrentElementUndefined: Self = StObject.set(x, "currentElement", js.undefined)
       
@@ -3237,17 +3237,17 @@ object TreeView {
       
       inline def setCurrentNodeUndefined: Self = StObject.set(x, "currentNode", js.undefined)
       
-      inline def setCurrentUncheckedNodes(value: js.Array[js.Any]): Self = StObject.set(x, "currentUncheckedNodes", value.asInstanceOf[js.Any])
+      inline def setCurrentUncheckedNodes(value: js.Array[Any]): Self = StObject.set(x, "currentUncheckedNodes", value.asInstanceOf[js.Any])
       
       inline def setCurrentUncheckedNodesUndefined: Self = StObject.set(x, "currentUncheckedNodes", js.undefined)
       
-      inline def setCurrentUncheckedNodesVarargs(value: js.Any*): Self = StObject.set(x, "currentUncheckedNodes", js.Array(value :_*))
+      inline def setCurrentUncheckedNodesVarargs(value: Any*): Self = StObject.set(x, "currentUncheckedNodes", js.Array(value*))
       
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
       
-      inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
@@ -3259,7 +3259,7 @@ object TreeView {
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setParentId(value: js.Any): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
+      inline def setParentId(value: Any): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
       
       inline def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
       
@@ -3281,7 +3281,7 @@ object TreeView {
     
     /** returns the current element of the node unselected
       */
-    var currentElement: js.UndefOr[js.Any] = js.undefined
+    var currentElement: js.UndefOr[Any] = js.undefined
     
     /** returns the id of the current element of the node unselected
       */
@@ -3297,7 +3297,7 @@ object TreeView {
     
     /** returns the current selected nodes index of TreeView
       */
-    var selectedNodes: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var selectedNodes: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** returns the name of the event
       */
@@ -3320,7 +3320,7 @@ object TreeView {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCurrentElement(value: js.Any): Self = StObject.set(x, "currentElement", value.asInstanceOf[js.Any])
+      inline def setCurrentElement(value: Any): Self = StObject.set(x, "currentElement", value.asInstanceOf[js.Any])
       
       inline def setCurrentElementUndefined: Self = StObject.set(x, "currentElement", js.undefined)
       
@@ -3336,11 +3336,11 @@ object TreeView {
       
       inline def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
       
-      inline def setSelectedNodes(value: js.Array[js.Any]): Self = StObject.set(x, "selectedNodes", value.asInstanceOf[js.Any])
+      inline def setSelectedNodes(value: js.Array[Any]): Self = StObject.set(x, "selectedNodes", value.asInstanceOf[js.Any])
       
       inline def setSelectedNodesUndefined: Self = StObject.set(x, "selectedNodes", js.undefined)
       
-      inline def setSelectedNodesVarargs(value: js.Any*): Self = StObject.set(x, "selectedNodes", js.Array(value :_*))
+      inline def setSelectedNodesVarargs(value: Any*): Self = StObject.set(x, "selectedNodes", js.Array(value*))
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

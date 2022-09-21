@@ -12,10 +12,7 @@ trait ReportStateAndNotificationRequest extends StObject {
   /** Unique identifier per event (for example, a doorbell press). */
   var eventId: js.UndefOr[String] = js.undefined
   
-  /**
-    * Token to maintain state in the follow up notification response. Deprecated. See the [notifications guide](https://developers.google.com/assistant/smarthome/develop/notifications)
-    * for details on implementing follow up notifications.
-    */
+  /** Deprecated. */
   var followUpToken: js.UndefOr[String] = js.undefined
   
   /** Required. State of devices to update and notification metadata for devices. */

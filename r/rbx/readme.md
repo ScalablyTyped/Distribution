@@ -10,10 +10,10 @@ The Comprehensive Bulma UI Framework for React
 | ------------------ | :-------------: |
 | Full name          | rbx |
 | Keywords           | react, bulma, bulma.io, typescript |
-| # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 30807 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2261.0 |
+| # stars            | 475.0 |
 
 ## Links
 - [Homepage](https://github.com/dfee/rbx#readme)

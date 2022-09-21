@@ -2,7 +2,8 @@ package typings.remarkAbbr
 
 import org.scalablytyped.runtime.Shortcut
 import typings.unified.mod.Plugin
-import typings.unified.mod.Settings
+import typings.unist.mod.Data
+import typings.unist.mod.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ object mod extends Shortcut {
   @js.native
   val ^ : Abbr = js.native
   
-  type Abbr = Plugin[js.Array[js.UndefOr[Options]], Settings]
+  type Abbr = Plugin[js.Array[js.UndefOr[Options]], Node[Data], Node[Data]]
   
   trait Options extends StObject {
     

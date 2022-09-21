@@ -24,7 +24,7 @@ object anon {
       
       inline def setAlternateUndefined: Self = StObject.set(x, "alternate", js.undefined)
       
-      inline def setAlternateVarargs(value: String*): Self = StObject.set(x, "alternate", js.Array(value :_*))
+      inline def setAlternateVarargs(value: String*): Self = StObject.set(x, "alternate", js.Array(value*))
     }
   }
 }

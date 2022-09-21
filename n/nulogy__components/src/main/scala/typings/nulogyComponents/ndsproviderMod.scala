@@ -8,9 +8,9 @@ object ndsproviderMod {
   
   @JSImport("@nulogy/components/src/NDSProvider", "NDSProvider")
   @js.native
-  val NDSProvider: js.Any = js.native
+  val NDSProvider: Any = js.native
   
   @JSImport("@nulogy/components/src/NDSProvider", "render")
   @js.native
-  val render: js.Any = js.native
+  val render: Any = js.native
 }

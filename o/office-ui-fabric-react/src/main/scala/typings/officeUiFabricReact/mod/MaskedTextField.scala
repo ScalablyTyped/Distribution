@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react", "MaskedTextField")
 @js.native
-class MaskedTextField protected ()
+open class MaskedTextField protected ()
   extends typings.officeUiFabricReact.libTextFieldMod.MaskedTextField {
   def this(props: IMaskedTextFieldProps) = this()
 }

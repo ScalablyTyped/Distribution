@@ -11,6 +11,6 @@ object getStyleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(dom: HTMLElement, name: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(dom.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def default(dom: HTMLElement, name: String, defaultValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(dom.asInstanceOf[js.Any], name.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def default(dom: HTMLElement, name: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(dom.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def default(dom: HTMLElement, name: String, defaultValue: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(dom.asInstanceOf[js.Any], name.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Any]
 }

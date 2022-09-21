@@ -49,7 +49,7 @@ trait ClassDbConnection
     * 
     * @async
     */
-  def execute(sql: String, args: js.Any*): js.Array[js.Any] = js.native
+  def execute(sql: String, args: Any*): js.Array[Any] = js.native
   
   /**
     * 
@@ -62,7 +62,7 @@ trait ClassDbConnection
     * 
     * 
     */
-  def format(sql: String, args: js.Any*): String = js.native
+  def format(sql: String, args: Any*): String = js.native
   
   /**
     * 

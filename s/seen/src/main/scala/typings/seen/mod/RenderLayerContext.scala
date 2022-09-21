@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("seen", "RenderLayerContext")
 @js.native
-class RenderLayerContext () extends StObject {
+open class RenderLayerContext () extends StObject {
   
-  def circle(): js.Any = js.native
+  def circle(): Any = js.native
   
   def cleanup(): Unit = js.native
   
-  def path(): js.Any = js.native
+  def path(): Any = js.native
   
-  def rect(): js.Any = js.native
+  def rect(): Any = js.native
   
   def reset(): Unit = js.native
   
-  def text(): js.Any = js.native
+  def text(): Any = js.native
 }

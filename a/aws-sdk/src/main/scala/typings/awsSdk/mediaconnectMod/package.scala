@@ -1,5 +1,9 @@
 package typings.awsSdk.mediaconnectMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.HOURLY
+import typings.awsSdk.awsSdkStrings.MONTHS
+import typings.awsSdk.awsSdkStrings.Mbps_Outbound_Bandwidth
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,27 +15,90 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.awsSdk.awsSdkStrings.aes256_
   - java.lang.String
 */
-type Algorithm = typings.awsSdk.mediaconnectMod._Algorithm | java.lang.String
+type Algorithm = _Algorithm | String
 
-type DurationUnits = typings.awsSdk.awsSdkStrings.MONTHS | java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.BT601
+  - typings.awsSdk.awsSdkStrings.BT709
+  - typings.awsSdk.awsSdkStrings.BT2020
+  - typings.awsSdk.awsSdkStrings.BT2100
+  - typings.awsSdk.awsSdkStrings.`ST2065-1`
+  - typings.awsSdk.awsSdkStrings.`ST2065-3`
+  - typings.awsSdk.awsSdkStrings.XYZ
+  - java.lang.String
+*/
+type Colorimetry = _Colorimetry | String
+
+type DurationUnits = MONTHS | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.main_
+  - typings.awsSdk.awsSdkStrings.high__
+  - java.lang.String
+*/
+type EncoderProfile = _EncoderProfile | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.jxsv
+  - typings.awsSdk.awsSdkStrings.raw__
+  - typings.awsSdk.awsSdkStrings.smpte291
+  - typings.awsSdk.awsSdkStrings.pcm
+  - java.lang.String
+*/
+type EncodingName = _EncodingName | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLED
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type EntitlementStatus = typings.awsSdk.mediaconnectMod._EntitlementStatus | java.lang.String
+type EntitlementStatus = _EntitlementStatus | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.MERGE
+  - typings.awsSdk.awsSdkStrings.FAILOVER
+  - java.lang.String
+*/
+type FailoverMode = _FailoverMode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.speke_
   - typings.awsSdk.awsSdkStrings.`static-key`
+  - typings.awsSdk.awsSdkStrings.`srt-password`
   - java.lang.String
 */
-type KeyType = typings.awsSdk.mediaconnectMod._KeyType | java.lang.String
+type KeyType = _KeyType | String
 
-type MaxResults = scala.Double
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Monday_
+  - typings.awsSdk.awsSdkStrings.Tuesday_
+  - typings.awsSdk.awsSdkStrings.Wednesday_
+  - typings.awsSdk.awsSdkStrings.Thursday_
+  - typings.awsSdk.awsSdkStrings.Friday_
+  - typings.awsSdk.awsSdkStrings.Saturday_
+  - typings.awsSdk.awsSdkStrings.Sunday_
+  - java.lang.String
+*/
+type MaintenanceDay = _MaintenanceDay | String
 
-type PriceUnits = typings.awsSdk.awsSdkStrings.HOURLY | java.lang.String
+type MaxResults = Double
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.video_
+  - typings.awsSdk.awsSdkStrings.audio_
+  - typings.awsSdk.awsSdkStrings.`ancillary-data`
+  - java.lang.String
+*/
+type MediaStreamType = _MediaStreamType | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ena
+  - typings.awsSdk.awsSdkStrings.efa
+  - java.lang.String
+*/
+type NetworkInterfaceType = _NetworkInterfaceType | String
+
+type PriceUnits = HOURLY | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`zixi-push`
@@ -39,9 +106,22 @@ type PriceUnits = typings.awsSdk.awsSdkStrings.HOURLY | java.lang.String
   - typings.awsSdk.awsSdkStrings.rtp
   - typings.awsSdk.awsSdkStrings.`zixi-pull`
   - typings.awsSdk.awsSdkStrings.rist
+  - typings.awsSdk.awsSdkStrings.`st2110-jpegxs`
+  - typings.awsSdk.awsSdkStrings.cdi
+  - typings.awsSdk.awsSdkStrings.`srt-listener`
+  - typings.awsSdk.awsSdkStrings.`srt-caller`
+  - typings.awsSdk.awsSdkStrings.`fujitsu-qos`
   - java.lang.String
 */
-type Protocol = typings.awsSdk.mediaconnectMod._Protocol | java.lang.String
+type Protocol = _Protocol | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.NARROW
+  - typings.awsSdk.awsSdkStrings.FULL
+  - typings.awsSdk.awsSdkStrings.FULLPROTECT
+  - java.lang.String
+*/
+type Range = _Range | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ACTIVE
@@ -50,23 +130,31 @@ type Protocol = typings.awsSdk.mediaconnectMod._Protocol | java.lang.String
   - typings.awsSdk.awsSdkStrings.CANCELED
   - java.lang.String
 */
-type ReservationState = typings.awsSdk.mediaconnectMod._ReservationState | java.lang.String
+type ReservationState = _ReservationState | String
 
-type ResourceType = typings.awsSdk.awsSdkStrings.Mbps_Outbound_Bandwidth | java.lang.String
+type ResourceType = Mbps_Outbound_Bandwidth | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.progressive_
+  - typings.awsSdk.awsSdkStrings.interlace
+  - typings.awsSdk.awsSdkStrings.`progressive-segmented-frame`
+  - java.lang.String
+*/
+type ScanMode = _ScanMode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.OWNED
   - typings.awsSdk.awsSdkStrings.ENTITLED
   - java.lang.String
 */
-type SourceType = typings.awsSdk.mediaconnectMod._SourceType | java.lang.String
+type SourceType = _SourceType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLED
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type State = typings.awsSdk.mediaconnectMod._State | java.lang.String
+type State = _State | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.STANDBY
@@ -78,43 +166,79 @@ type State = typings.awsSdk.mediaconnectMod._State | java.lang.String
   - typings.awsSdk.awsSdkStrings.ERROR
   - java.lang.String
 */
-type Status = typings.awsSdk.mediaconnectMod._Status | java.lang.String
+type Status = _Status | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SDR
+  - typings.awsSdk.awsSdkStrings.PQ
+  - typings.awsSdk.awsSdkStrings.HLG
+  - typings.awsSdk.awsSdkStrings.LINEAR
+  - typings.awsSdk.awsSdkStrings.BT2100LINPQ
+  - typings.awsSdk.awsSdkStrings.BT2100LINHLG
+  - typings.awsSdk.awsSdkStrings.`ST2065-1`
+  - typings.awsSdk.awsSdkStrings.`ST428-1`
+  - typings.awsSdk.awsSdkStrings.DENSITY
+  - java.lang.String
+*/
+type Tcs = _Tcs | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2018-11-14`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.mediaconnectMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String
 
-type integer = scala.Double
+type double = Double
 
-type listOfAddOutputRequest = js.Array[typings.awsSdk.mediaconnectMod.AddOutputRequest]
+type integer = Double
 
-type listOfEntitlement = js.Array[typings.awsSdk.mediaconnectMod.Entitlement]
+type listOfAddMediaStreamRequest = js.Array[AddMediaStreamRequest]
 
-type listOfGrantEntitlementRequest = js.Array[typings.awsSdk.mediaconnectMod.GrantEntitlementRequest]
+type listOfAddOutputRequest = js.Array[AddOutputRequest]
 
-type listOfListedEntitlement = js.Array[typings.awsSdk.mediaconnectMod.ListedEntitlement]
+type listOfDestinationConfiguration = js.Array[DestinationConfiguration]
 
-type listOfListedFlow = js.Array[typings.awsSdk.mediaconnectMod.ListedFlow]
+type listOfDestinationConfigurationRequest = js.Array[DestinationConfigurationRequest]
 
-type listOfOffering = js.Array[typings.awsSdk.mediaconnectMod.Offering]
+type listOfEntitlement = js.Array[Entitlement]
 
-type listOfOutput = js.Array[typings.awsSdk.mediaconnectMod.Output]
+type listOfGrantEntitlementRequest = js.Array[GrantEntitlementRequest]
 
-type listOfReservation = js.Array[typings.awsSdk.mediaconnectMod.Reservation]
+type listOfInputConfiguration = js.Array[InputConfiguration]
 
-type listOfSetSourceRequest = js.Array[typings.awsSdk.mediaconnectMod.SetSourceRequest]
+type listOfInputConfigurationRequest = js.Array[InputConfigurationRequest]
 
-type listOfSource = js.Array[typings.awsSdk.mediaconnectMod.Source]
+type listOfListedEntitlement = js.Array[ListedEntitlement]
 
-type listOfString = js.Array[typings.awsSdk.mediaconnectMod.string]
+type listOfListedFlow = js.Array[ListedFlow]
 
-type listOfVpcInterface = js.Array[typings.awsSdk.mediaconnectMod.VpcInterface]
+type listOfMediaStream = js.Array[MediaStream]
 
-type listOfVpcInterfaceRequest = js.Array[typings.awsSdk.mediaconnectMod.VpcInterfaceRequest]
+type listOfMediaStreamOutputConfiguration = js.Array[MediaStreamOutputConfiguration]
 
-type mapOfString = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.mediaconnectMod.string]
+type listOfMediaStreamOutputConfigurationRequest = js.Array[MediaStreamOutputConfigurationRequest]
 
-type string = java.lang.String
+type listOfMediaStreamSourceConfiguration = js.Array[MediaStreamSourceConfiguration]
+
+type listOfMediaStreamSourceConfigurationRequest = js.Array[MediaStreamSourceConfigurationRequest]
+
+type listOfOffering = js.Array[Offering]
+
+type listOfOutput = js.Array[Output]
+
+type listOfReservation = js.Array[Reservation]
+
+type listOfSetSourceRequest = js.Array[SetSourceRequest]
+
+type listOfSource = js.Array[Source]
+
+type listOfString = js.Array[string]
+
+type listOfVpcInterface = js.Array[VpcInterface]
+
+type listOfVpcInterfaceRequest = js.Array[VpcInterfaceRequest]
+
+type mapOfString = StringDictionary[string]
+
+type string = String

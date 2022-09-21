@@ -36,8 +36,10 @@ object `extension` {
   def inIncognitoContext: Boolean = js.native
   inline def inIncognitoContext_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inIncognitoContext")(x.asInstanceOf[js.Any])
   
+  inline def isAllowedFileSchemeAccess(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isAllowedFileSchemeAccess")().asInstanceOf[js.Promise[Boolean]]
   inline def isAllowedFileSchemeAccess(callback: js.Function1[/* isAllowedAccess */ Boolean, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isAllowedFileSchemeAccess")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
+  inline def isAllowedIncognitoAccess(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isAllowedIncognitoAccess")().asInstanceOf[js.Promise[Boolean]]
   inline def isAllowedIncognitoAccess(callback: js.Function1[/* isAllowedAccess */ Boolean, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isAllowedIncognitoAccess")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSGlobal("chrome.extension.lastError")
@@ -56,10 +58,14 @@ object `extension` {
   
   inline def onRequest_=(x: OnRequestEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onRequest")(x.asInstanceOf[js.Any])
   
-  inline def sendRequest(extensionId: String, request: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendRequest")(extensionId.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def sendRequest(extensionId: String, request: js.Any, responseCallback: js.Function1[/* response */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendRequest")(extensionId.asInstanceOf[js.Any], request.asInstanceOf[js.Any], responseCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def sendRequest(request: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendRequest")(request.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def sendRequest(request: js.Any, responseCallback: js.Function1[/* response */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendRequest")(request.asInstanceOf[js.Any], responseCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sendRequest[Request, Response](extensionId: String, request: Request): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendRequest")(extensionId.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sendRequest[Request, Response](
+    extensionId: String,
+    request: Request,
+    responseCallback: js.Function1[/* response */ Response, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendRequest")(extensionId.asInstanceOf[js.Any], request.asInstanceOf[js.Any], responseCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sendRequest[Request, Response](request: Request): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendRequest")(request.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def sendRequest[Request, Response](request: Request, responseCallback: js.Function1[/* response */ Response, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendRequest")(request.asInstanceOf[js.Any], responseCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def setUpdateUrlData(data: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUpdateUrlData")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

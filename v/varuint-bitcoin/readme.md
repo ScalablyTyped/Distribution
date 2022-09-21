@@ -10,10 +10,10 @@ encode/decode number as bitcoin variable length integer
 | ------------------ | :-------------: |
 | Full name          | varuint-bitcoin |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 152 |
-| # downloads        | 1691034 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 251904.0 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/bitcoinjs/varuint-bitcoin)

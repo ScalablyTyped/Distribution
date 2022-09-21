@@ -12,7 +12,7 @@ object userMod {
     
     var createdAt: String
     
-    var customData: js.UndefOr[js.Any] = js.undefined
+    var customData: js.UndefOr[Any] = js.undefined
     
     var id: String
     
@@ -37,7 +37,7 @@ object userMod {
       
       inline def setCreatedAt(value: String): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
       
-      inline def setCustomData(value: js.Any): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+      inline def setCustomData(value: Any): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
       
       inline def setCustomDataUndefined: Self = StObject.set(x, "customData", js.undefined)
       

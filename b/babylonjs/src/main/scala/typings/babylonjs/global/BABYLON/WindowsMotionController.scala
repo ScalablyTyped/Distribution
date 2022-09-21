@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.WindowsMotionController")
 @js.native
-class WindowsMotionController protected ()
+open class WindowsMotionController protected ()
   extends StObject
      with typings.babylonjs.BABYLON.WindowsMotionController {
   /**
     * Creates a new WindowsMotionController from a gamepad
     * @param vrGamepad the gamepad that the controller should be created from
     */
-  def this(vrGamepad: js.Any) = this()
+  def this(vrGamepad: Any) = this()
   
   /**
     * The rotation quaternion of the device in babylon space.
@@ -66,7 +66,7 @@ object WindowsMotionController {
     */
   @JSGlobal("BABYLON.WindowsMotionController.GAMEPAD_ID_PATTERN")
   @js.native
-  val GAMEPAD_ID_PATTERN: js.Any = js.native
+  val GAMEPAD_ID_PATTERN: Any = js.native
   
   /**
     * The controller name prefix for this controller type

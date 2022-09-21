@@ -24,7 +24,7 @@ object mod {
       allowDestinationSubdomains: Boolean
     ): Unit = js.native
     
-    var argv: js.Any = js.native
+    var argv: Any = js.native
     
     def clearCache(): Unit = js.native
     
@@ -36,11 +36,11 @@ object mod {
     
     var dataPath: String = js.native
     
-    var fullArgv: js.Any = js.native
+    var fullArgv: Any = js.native
     
     def getProxyForURL(url: String): Unit = js.native
     
-    var manifest: js.Any = js.native
+    var manifest: Any = js.native
     
     def quit(): Unit = js.native
     
@@ -64,7 +64,7 @@ object mod {
   
   @JSImport("nw.gui", "Clipboard")
   @js.native
-  class Clipboard () extends StObject {
+  open class Clipboard () extends StObject {
     
     def clear(): Unit = js.native
     
@@ -86,7 +86,7 @@ object mod {
   
   @JSImport("nw.gui", "Menu")
   @js.native
-  class Menu () extends StObject {
+  open class Menu () extends StObject {
     def this(config: MenuConfig) = this()
     
     def append(item: MenuItem): Unit = js.native
@@ -108,7 +108,7 @@ object mod {
   
   @JSImport("nw.gui", "MenuItem")
   @js.native
-  class MenuItem protected ()
+  open class MenuItem protected ()
     extends StObject
        with EventEmitter
        with MenuItemConfig {
@@ -171,7 +171,7 @@ object mod {
   
   @JSImport("nw.gui", "Shortcut")
   @js.native
-  class Shortcut protected ()
+  open class Shortcut protected ()
     extends StObject
        with EventEmitter {
     def this(option: ShortcutOption) = this()
@@ -185,7 +185,7 @@ object mod {
   
   @JSImport("nw.gui", "Tray")
   @js.native
-  class Tray protected ()
+  open class Tray protected ()
     extends StObject
        with EventEmitter
        with TrayOption {
@@ -211,7 +211,7 @@ object mod {
   
   @JSImport("nw.gui", "Window")
   @js.native
-  class Window ()
+  open class Window ()
     extends StObject
        with EventEmitter {
     
@@ -320,7 +320,7 @@ object mod {
     val ^ : js.Any = js.native
     
     inline def get(): Window = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[Window]
-    inline def get(windowObject: js.Any): Window = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(windowObject.asInstanceOf[js.Any]).asInstanceOf[Window]
+    inline def get(windowObject: Any): Window = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(windowObject.asInstanceOf[js.Any]).asInstanceOf[Window]
     
     inline def open(url: String): Window = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(url.asInstanceOf[js.Any]).asInstanceOf[Window]
     inline def open(url: String, options: WindowManifestOptions): Window = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Window]
@@ -357,7 +357,7 @@ object mod {
     
     def addListener(event: String, listener: js.Function): EventEmitter = js.native
     
-    def emit(event: String, args: js.Any*): Boolean = js.native
+    def emit(event: String, args: Any*): Boolean = js.native
     
     def listeners(event: String): js.Array[js.Function] = js.native
     

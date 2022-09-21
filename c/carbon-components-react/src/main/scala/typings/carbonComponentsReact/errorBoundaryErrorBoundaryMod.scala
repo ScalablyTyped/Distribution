@@ -10,10 +10,10 @@ object errorBoundaryErrorBoundaryMod {
   
   @JSImport("carbon-components-react/lib/components/ErrorBoundary/ErrorBoundary", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ErrorBoundaryProps, js.Object, js.Any]
+  open class default ()
+    extends Component[ErrorBoundaryProps, js.Object, Any]
   
-  type ErrorBoundary = Component[ErrorBoundaryProps, js.Object, js.Any]
+  type ErrorBoundary = Component[ErrorBoundaryProps, js.Object, Any]
   
   trait ErrorBoundaryProps extends StObject {
     

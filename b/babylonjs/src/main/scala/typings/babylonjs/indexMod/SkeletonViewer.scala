@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "SkeletonViewer")
 @js.native
-class SkeletonViewer protected ()
+open class SkeletonViewer protected ()
   extends typings.babylonjs.debugIndexMod.SkeletonViewer {
   /**
     * Creates a new SkeletonViewer
@@ -164,6 +164,6 @@ object SkeletonViewer {
     */
   @JSImport("babylonjs/index", "SkeletonViewer._CreateBoneMapColorBuffer")
   @js.native
-  def _CreateBoneMapColorBuffer: js.Any = js.native
-  inline def _CreateBoneMapColorBuffer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateBoneMapColorBuffer")(x.asInstanceOf[js.Any])
+  def _CreateBoneMapColorBuffer: Any = js.native
+  inline def _CreateBoneMapColorBuffer_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CreateBoneMapColorBuffer")(x.asInstanceOf[js.Any])
 }

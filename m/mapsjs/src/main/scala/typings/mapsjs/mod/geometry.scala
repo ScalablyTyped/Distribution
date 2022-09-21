@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mapsjs", "geometry")
 @js.native
-class geometry () extends StObject {
+open class geometry () extends StObject {
   def this(isPath: Boolean) = this()
   def this(isPath: Boolean, isClosed: Boolean) = this()
   def this(isPath: Unit, isClosed: Boolean) = this()
@@ -35,7 +35,7 @@ class geometry () extends StObject {
     * whether the geometry is closed.
     * @returns {any} A new polyline or polygon geometry.
     */
-  def factoryPoly(): js.Any = js.native
+  def factoryPoly(): Any = js.native
   
   /**
     * Finds point along boundary of geometry nearest to the given point
@@ -159,7 +159,7 @@ object geometry {
     */
   @JSImport("mapsjs", "geometry.polygon")
   @js.native
-  class polygon protected () extends geometry {
+  open class polygon protected () extends geometry {
     def this(geom: geometry) = this()
     
     /**
@@ -261,7 +261,7 @@ object geometry {
     */
   @JSImport("mapsjs", "geometry.polyline")
   @js.native
-  class polyline protected () extends geometry {
+  open class polyline protected () extends geometry {
     def this(geom: geometry) = this()
     
     /**

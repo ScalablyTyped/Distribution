@@ -10,7 +10,17 @@ object CrashReporting {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def reportJSException(Exception: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reportJSException")(Exception.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  /**
+    * Send handled JS error object
+    *
+    * @param errorObject Error object to be sent to Instabug's servers
+    */
+  inline def reportJSException(errorObject: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reportJSException")(errorObject.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
+  /**
+    * Enables and disables everything related to crash reporting including intercepting
+    * errors in the global error handler. It is enabled by default.
+    * @param {boolean} isEnabled
+    */
   inline def setEnabled(isEnabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEnabled")(isEnabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

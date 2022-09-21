@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "InstantiatedEntries")
 @js.native
-class InstantiatedEntries ()
+open class InstantiatedEntries ()
   extends typings.babylonjs.indexMod.InstantiatedEntries

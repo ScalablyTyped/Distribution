@@ -1,6 +1,5 @@
 package typings.googleapis.mod
 
-import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.googleapisCommon.apiMod.GoogleConfigurable
 import org.scalablytyped.runtime.StObject
@@ -26,16 +25,9 @@ object androidpublisherV1 {
     */
   @JSImport("googleapis", "androidpublisher_v1.Androidpublisher")
   @js.native
-  class Androidpublisher protected ()
+  open class Androidpublisher protected ()
     extends typings.googleapis.androidpublisherV1Mod.androidpublisherV1.Androidpublisher {
     def this(options: GlobalOptions) = this()
     def this(options: GlobalOptions, google: GoogleConfigurable) = this()
-  }
-  
-  @JSImport("googleapis", "androidpublisher_v1.Resource$Purchases")
-  @js.native
-  class ResourcePurchases protected ()
-    extends typings.googleapis.androidpublisherV1Mod.androidpublisherV1.ResourcePurchases {
-    def this(context: APIRequestContext) = this()
   }
 }

@@ -8,11 +8,11 @@ trait Type extends StObject {
   
   var default: Boolean
   
-  var `type`: js.Any
+  var `type`: scala.Any
 }
 object Type {
   
-  inline def apply(default: Boolean, `type`: js.Any): Type = {
+  inline def apply(default: Boolean, `type`: scala.Any): Type = {
     val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Type]
@@ -22,6 +22,6 @@ object Type {
     
     inline def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: scala.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -1,6 +1,5 @@
 package typings.breeze.global.breeze
 
-import typings.breeze.breeze.core.EnumSymbol
 import typings.breeze.breeze.core.IEnum
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,12 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("breeze.FilterQueryOpSymbol")
 @js.native
-class FilterQueryOpSymbol ()
+open class FilterQueryOpSymbol ()
   extends StObject
-     with EnumSymbol {
+     with typings.breeze.breeze.FilterQueryOpSymbol {
   
   /* CompleteClass */
   override def getName(): String = js.native
+  
+  /* CompleteClass */
+  var operator: String = js.native
   
   /* CompleteClass */
   var parentEnum: IEnum = js.native

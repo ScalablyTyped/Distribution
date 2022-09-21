@@ -22,23 +22,23 @@ object Spi {
          with typings.winrtUwp.Windows.Devices.Spi.Provider.ProviderSpiConnectionSettings {
       
       /* CompleteClass */
-      var chipSelectLine: js.Any = js.native
+      var chipSelectLine: Any = js.native
       
       /* unmapped type */
       /* CompleteClass */
-      var clockFrequency: js.Any = js.native
+      var clockFrequency: Any = js.native
       
       /* unmapped type */
       /* CompleteClass */
-      var dataBitLength: js.Any = js.native
+      var dataBitLength: Any = js.native
       
       /* unmapped type */
       /* CompleteClass */
-      var mode: js.Any = js.native
+      var mode: Any = js.native
       
       /* unmapped type */
       /* CompleteClass */
-      var sharingMode: js.Any = js.native
+      var sharingMode: Any = js.native
     }
     
     object ProviderSpiMode {
@@ -49,26 +49,26 @@ object Spi {
       
       @JSGlobal("Windows.Devices.Spi.Provider.ProviderSpiMode.mode0")
       @js.native
-      def mode0: js.Any = js.native
-      inline def mode0_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mode0")(x.asInstanceOf[js.Any])
+      def mode0: Any = js.native
+      inline def mode0_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mode0")(x.asInstanceOf[js.Any])
       
       /* unmapped type */
       @JSGlobal("Windows.Devices.Spi.Provider.ProviderSpiMode.mode1")
       @js.native
-      def mode1: js.Any = js.native
-      inline def mode1_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mode1")(x.asInstanceOf[js.Any])
+      def mode1: Any = js.native
+      inline def mode1_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mode1")(x.asInstanceOf[js.Any])
       
       /* unmapped type */
       @JSGlobal("Windows.Devices.Spi.Provider.ProviderSpiMode.mode2")
       @js.native
-      def mode2: js.Any = js.native
-      inline def mode2_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mode2")(x.asInstanceOf[js.Any])
+      def mode2: Any = js.native
+      inline def mode2_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mode2")(x.asInstanceOf[js.Any])
       
       /* unmapped type */
       @JSGlobal("Windows.Devices.Spi.Provider.ProviderSpiMode.mode3")
       @js.native
-      def mode3: js.Any = js.native
-      inline def mode3_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mode3")(x.asInstanceOf[js.Any])
+      def mode3: Any = js.native
+      inline def mode3_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mode3")(x.asInstanceOf[js.Any])
     }
     
     object ProviderSpiSharingMode {
@@ -79,14 +79,14 @@ object Spi {
       
       @JSGlobal("Windows.Devices.Spi.Provider.ProviderSpiSharingMode.exclusive")
       @js.native
-      def exclusive: js.Any = js.native
-      inline def exclusive_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("exclusive")(x.asInstanceOf[js.Any])
+      def exclusive: Any = js.native
+      inline def exclusive_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("exclusive")(x.asInstanceOf[js.Any])
       
       /* unmapped type */
       @JSGlobal("Windows.Devices.Spi.Provider.ProviderSpiSharingMode.shared")
       @js.native
-      def shared: js.Any = js.native
-      inline def shared_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shared")(x.asInstanceOf[js.Any])
+      def shared: Any = js.native
+      inline def shared_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shared")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -117,7 +117,7 @@ object Spi {
   /** Represents the settings for the connection with a device. */
   @JSGlobal("Windows.Devices.Spi.SpiConnectionSettings")
   @js.native
-  class SpiConnectionSettings protected ()
+  open class SpiConnectionSettings protected ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.Spi.SpiConnectionSettings {
     /**
@@ -174,7 +174,7 @@ object Spi {
       * @return When the method completes successfully, it returns a list of values that represent the available SPI controllers on the system.
       */
     /* static member */
-    inline def getControllersAsync(provider: ISpiProvider): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getControllersAsync")(provider.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+    inline def getControllersAsync(provider: ISpiProvider): IPromiseWithIAsyncOperation[IVectorView[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getControllersAsync")(provider.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[Any]]]
     
     /**
       * Gets the default SPI controller on the system.

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TransferResult extends StObject {
   
   /** Either void if the transfer has been carried out successfully, or an exception indicating the kind of failure. */
-  var Result: js.Any
+  var Result: Any
   
   /** The URL of the source object. */
   var Source: String
@@ -18,14 +18,14 @@ trait TransferResult extends StObject {
 }
 object TransferResult {
   
-  inline def apply(Result: js.Any, Source: String, Target: String): TransferResult = {
+  inline def apply(Result: Any, Source: String, Target: String): TransferResult = {
     val __obj = js.Dynamic.literal(Result = Result.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any], Target = Target.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransferResult]
   }
   
   extension [Self <: TransferResult](x: Self) {
     
-    inline def setResult(value: js.Any): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Any): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
     
     inline def setSource(value: String): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     

@@ -21,6 +21,8 @@ trait NavigationToggle
   /**
     * Sets the layout of the widget to either `horizontal` or `vertical`.
     *
+    * @default vertical
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-NavigationToggle.html#layout)
     */
   var layout: vertical | horizontal = js.native
@@ -30,7 +32,7 @@ trait NavigationToggle
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-NavigationToggle.html#toggle)
     */
-  def toggle(): Unit = js.native
+  def toggle(): scala.Unit = js.native
   
   /**
     * A reference to the SceneView.

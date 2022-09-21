@@ -21,6 +21,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param opt_options Options.
   * @api stable
   */
-class Zoomify () extends TileImage {
+open class Zoomify () extends TileImage {
   def this(opt_options: ZoomifyOptions) = this()
 }

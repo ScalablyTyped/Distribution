@@ -32,6 +32,6 @@ object TimeConstraint {
     
     inline def setTimeSlotsUndefined: Self = StObject.set(x, "timeSlots", js.undefined)
     
-    inline def setTimeSlotsVarargs(value: TimeSlot*): Self = StObject.set(x, "timeSlots", js.Array(value :_*))
+    inline def setTimeSlotsVarargs(value: TimeSlot*): Self = StObject.set(x, "timeSlots", js.Array(value*))
   }
 }

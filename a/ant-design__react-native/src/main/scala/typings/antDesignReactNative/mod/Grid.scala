@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@ant-design/react-native", "Grid")
 @js.native
-class Grid () extends default
+open class Grid () extends default
 /* static members */
 object Grid {
   

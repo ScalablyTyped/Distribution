@@ -1,7 +1,7 @@
 
 # Scala.js typings for mdast-util-to-hast
 
-Typings are for version 9.1.0
+Typings are for version 12.2.2
 
 ## Library description:
 mdast utility to transform to hast
@@ -10,10 +10,10 @@ mdast utility to transform to hast
 | ------------------ | :-------------: |
 | Full name          | mdast-util-to-hast |
 | Keywords           | unist, mdast, mdast-util, hast, hast-util, util, utility, markdown, html |
-| # releases         | 15 |
-| # dependents       | 58 |
-| # downloads        | 25893190 |
-| # stars            | 0 |
+| # releases         | 20 |
+| # dependents       | 0.0 |
+| # downloads        | 2.0714957333333332E7 |
+| # stars            | 59.0 |
 
 ## Links
 - [Homepage](https://github.com/syntax-tree/mdast-util-to-hast#readme)

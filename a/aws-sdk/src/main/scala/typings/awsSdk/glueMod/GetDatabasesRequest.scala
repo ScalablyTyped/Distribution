@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetDatabasesRequest extends StObject {
   
   /**
-    * The ID of the Data Catalog from which to retrieve Databases. If none is provided, the AWS account ID is used by default.
+    * The ID of the Data Catalog from which to retrieve Databases. If none is provided, the Amazon Web Services account ID is used by default.
     */
   var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   
   /**
     * The maximum number of databases to return in one response.
     */
-  var MaxResults: js.UndefOr[PageSize] = js.undefined
+  var MaxResults: js.UndefOr[CatalogGetterPageSize] = js.undefined
   
   /**
     * A continuation token, if this is a continuation call.
@@ -39,7 +39,7 @@ object GetDatabasesRequest {
     
     inline def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
     
-    inline def setMaxResults(value: PageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: CatalogGetterPageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
     inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     

@@ -4,17 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A position that encapsulates an inner position and an index for the inner
-  * position. A ConcatPosition can be used by a reader of a source that
-  * encapsulates a set of other sources.
-  */
 trait SchemaConcatPosition extends StObject {
   
   /**
     * Index of the inner source.
     */
-  var index: js.UndefOr[Double] = js.undefined
+  var index: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * Position within the inner source.
@@ -31,6 +26,8 @@ object SchemaConcatPosition {
   extension [Self <: SchemaConcatPosition](x: Self) {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    
+    inline def setIndexNull: Self = StObject.set(x, "index", null)
     
     inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     

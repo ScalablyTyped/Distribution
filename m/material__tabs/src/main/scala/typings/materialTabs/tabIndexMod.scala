@@ -1,10 +1,10 @@
 package typings.materialTabs
 
+import typings.materialBase.Element
 import typings.materialTabs.anon.ACTIVE
 import typings.materialTabs.anon.PartialMDCTabAdapter
 import typings.materialTabs.anon.SELECTEDEVENT
 import typings.materialTabs.tabAdapterMod.MDCTabAdapter
-import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,10 +13,10 @@ object tabIndexMod {
   
   @JSImport("@material/tabs/tab/index", "MDCTab")
   @js.native
-  class MDCTab protected ()
+  open class MDCTab protected ()
     extends typings.materialTabs.tabComponentMod.MDCTab {
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
-    def this(root: Element, foundation: typings.materialTabs.tabFoundationMod.MDCTabFoundation, args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: Any*) = this()
+    def this(root: Element, foundation: typings.materialTabs.tabFoundationMod.MDCTabFoundation, args: Any*) = this()
   }
   /* static members */
   object MDCTab {
@@ -25,12 +25,12 @@ object tabIndexMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: Element): typings.materialTabs.tabComponentMod.MDCTab = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTabs.tabComponentMod.MDCTab]
+    inline def attachTo(root: typings.std.Element): typings.materialTabs.tabComponentMod.MDCTab = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTabs.tabComponentMod.MDCTab]
   }
   
   @JSImport("@material/tabs/tab/index", "MDCTabFoundation")
   @js.native
-  class MDCTabFoundation ()
+  open class MDCTabFoundation ()
     extends typings.materialTabs.tabFoundationMod.MDCTabFoundation {
     def this(adapter: PartialMDCTabAdapter) = this()
   }

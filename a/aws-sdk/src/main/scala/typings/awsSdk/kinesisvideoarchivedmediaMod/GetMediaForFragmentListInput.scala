@@ -12,14 +12,19 @@ trait GetMediaForFragmentListInput extends StObject {
   var Fragments: FragmentNumberList
   
   /**
-    * The name of the stream from which to retrieve fragment media.
+    * The Amazon Resource Name (ARN) of the stream from which to retrieve fragment media. Specify either this parameter or the StreamName parameter.
     */
-  var StreamName: typings.awsSdk.kinesisvideoarchivedmediaMod.StreamName
+  var StreamARN: js.UndefOr[ResourceARN] = js.undefined
+  
+  /**
+    * The name of the stream from which to retrieve fragment media. Specify either this parameter or the StreamARN parameter.
+    */
+  var StreamName: js.UndefOr[typings.awsSdk.kinesisvideoarchivedmediaMod.StreamName] = js.undefined
 }
 object GetMediaForFragmentListInput {
   
-  inline def apply(Fragments: FragmentNumberList, StreamName: StreamName): GetMediaForFragmentListInput = {
-    val __obj = js.Dynamic.literal(Fragments = Fragments.asInstanceOf[js.Any], StreamName = StreamName.asInstanceOf[js.Any])
+  inline def apply(Fragments: FragmentNumberList): GetMediaForFragmentListInput = {
+    val __obj = js.Dynamic.literal(Fragments = Fragments.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMediaForFragmentListInput]
   }
   
@@ -27,8 +32,14 @@ object GetMediaForFragmentListInput {
     
     inline def setFragments(value: FragmentNumberList): Self = StObject.set(x, "Fragments", value.asInstanceOf[js.Any])
     
-    inline def setFragmentsVarargs(value: FragmentNumberString*): Self = StObject.set(x, "Fragments", js.Array(value :_*))
+    inline def setFragmentsVarargs(value: FragmentNumberString*): Self = StObject.set(x, "Fragments", js.Array(value*))
+    
+    inline def setStreamARN(value: ResourceARN): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
+    
+    inline def setStreamARNUndefined: Self = StObject.set(x, "StreamARN", js.undefined)
     
     inline def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
+    
+    inline def setStreamNameUndefined: Self = StObject.set(x, "StreamName", js.undefined)
   }
 }

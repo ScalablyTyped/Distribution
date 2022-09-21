@@ -13,10 +13,10 @@ object testkitMod {
   
   inline def default(): GetModule = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[GetModule]
   inline def default(config: js.Object): GetModule = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[GetModule]
-  inline def default(config: js.Object, adapters: js.Any): GetModule = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any], adapters.asInstanceOf[js.Any])).asInstanceOf[GetModule]
-  inline def default(config: Unit, adapters: js.Any): GetModule = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any], adapters.asInstanceOf[js.Any])).asInstanceOf[GetModule]
+  inline def default(config: js.Object, adapters: Any): GetModule = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any], adapters.asInstanceOf[js.Any])).asInstanceOf[GetModule]
+  inline def default(config: Unit, adapters: Any): GetModule = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any], adapters.asInstanceOf[js.Any])).asInstanceOf[GetModule]
   
-  inline def resetProperty(target: js.Any, propertyKey: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resetProperty")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def resetProperty(target: Any, propertyKey: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resetProperty")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def setProperty(target: js.Any, propertyKey: js.Any, propertyValue: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setProperty")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any], propertyValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setProperty(target: Any, propertyKey: Any, propertyValue: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setProperty")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any], propertyValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

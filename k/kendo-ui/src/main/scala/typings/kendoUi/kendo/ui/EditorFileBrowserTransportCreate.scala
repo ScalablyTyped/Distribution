@@ -8,7 +8,7 @@ trait EditorFileBrowserTransportCreate extends StObject {
   
   var contentType: js.UndefOr[String] = js.undefined
   
-  var data: js.UndefOr[js.Any | String | js.Function] = js.undefined
+  var data: js.UndefOr[Any | String | js.Function] = js.undefined
   
   var dataType: js.UndefOr[String] = js.undefined
   
@@ -29,7 +29,7 @@ object EditorFileBrowserTransportCreate {
     
     inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    inline def setData(value: js.Any | String | js.Function): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any | String | js.Function): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     

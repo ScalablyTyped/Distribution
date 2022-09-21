@@ -1,113 +1,135 @@
 package typings.scrivito.mod
 
+import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
+import typings.react.mod.ComponentType
+import typings.scrivito.anon.Content
+import typings.scrivito.anon.DumpLoaded
+import typings.scrivito.anon.Hash
+import typings.scrivito.anon.Length
+import typings.scrivito.anon.Message
+import typings.scrivito.anon.PreloadDump
+import typings.scrivito.anon.Query
+import typings.scrivito.mod.^
+import typings.scrivito.scrivitoStrings.asc
+import typings.scrivito.scrivitoStrings.desc
+import typings.std.History
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def canWrite(): scala.Boolean = typings.scrivito.mod.^.asInstanceOf[js.Dynamic].applyDynamic("canWrite")().asInstanceOf[scala.Boolean]
+inline def canWrite(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canWrite")().asInstanceOf[Boolean]
 
-inline def configure(options: typings.scrivito.mod.ConfigOptions): scala.Unit = typings.scrivito.mod.^.asInstanceOf[js.Dynamic].applyDynamic("configure")(options.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def configure(options: ConfigOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def configureContentBrowser(options: js.Any): scala.Unit = typings.scrivito.mod.^.asInstanceOf[js.Dynamic].applyDynamic("configureContentBrowser")(options.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def configureContentBrowser(options: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configureContentBrowser")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def connect(component: typings.react.mod.ComponentClass[js.Object, typings.react.mod.ComponentState]): scala.Unit = typings.scrivito.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connect")(component.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def connect(component: typings.react.mod.FunctionComponent[js.Object]): scala.Unit = typings.scrivito.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connect")(component.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def configureObjClassForContentType(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configureObjClassForContentType")().asInstanceOf[Unit]
+inline def configureObjClassForContentType(mapping: StringDictionary[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configureObjClassForContentType")(mapping.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def createObjClass(options: typings.scrivito.mod.ObjClassOptions): typings.scrivito.mod.AbstractObjClass = typings.scrivito.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createObjClass")(options.asInstanceOf[js.Any]).asInstanceOf[typings.scrivito.mod.AbstractObjClass]
+inline def connect[C /* <: ComponentType[Any] */](component: C): C = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(component.asInstanceOf[js.Any]).asInstanceOf[C]
 
-inline def createWidgetClass(options: typings.scrivito.mod.WidgetClassOptions): typings.scrivito.mod.AbstractWidgetClass = typings.scrivito.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createWidgetClass")(options.asInstanceOf[js.Any]).asInstanceOf[typings.scrivito.mod.AbstractWidgetClass]
+inline def createObjClass(options: ObjClassOptions): Obj = ^.asInstanceOf[js.Dynamic].applyDynamic("createObjClass")(options.asInstanceOf[js.Any]).asInstanceOf[Obj]
 
-inline def currentPage(): typings.scrivito.mod.Obj = typings.scrivito.mod.^.asInstanceOf[js.Dynamic].applyDynamic("currentPage")().asInstanceOf[typings.scrivito.mod.Obj]
+inline def createWidgetClass(options: WidgetClassOptions): AbstractWidgetClass = ^.asInstanceOf[js.Dynamic].applyDynamic("createWidgetClass")(options.asInstanceOf[js.Any]).asInstanceOf[AbstractWidgetClass]
 
-inline def currentPageParams(): js.Any = typings.scrivito.mod.^.asInstanceOf[js.Dynamic].applyDynamic("currentPageParams")().asInstanceOf[js.Any]
+inline def currentEditor(): Editor | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("currentEditor")().asInstanceOf[Editor | Null]
 
-inline def extendMenu(menuCallback: js.Any): scala.Unit = typings.scrivito.mod.^.asInstanceOf[js.Dynamic].applyDynamic("extendMenu")(menuCallback.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def currentPage(): Obj = ^.asInstanceOf[js.Dynamic].applyDynamic("currentPage")().asInstanceOf[Obj]
 
-inline def extractText(obj: typings.scrivito.mod.Obj, options: typings.scrivito.anon.Length): java.lang.String = (typings.scrivito.mod.^.asInstanceOf[js.Dynamic].applyDynamic("extractText")(obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def currentPageParams(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("currentPageParams")().asInstanceOf[Any]
 
-inline def finishLoading(): js.Promise[js.Object] = typings.scrivito.mod.^.asInstanceOf[js.Dynamic].applyDynamic("finishLoading")().asInstanceOf[js.Promise[js.Object]]
+inline def currentWorkspace(): Workspace = ^.asInstanceOf[js.Dynamic].applyDynamic("currentWorkspace")().asInstanceOf[Workspace]
 
-inline def getClass_(name: java.lang.String): typings.scrivito.mod.ObjClass | typings.scrivito.mod.WidgetClass | scala.Null = typings.scrivito.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getClass")(name.asInstanceOf[js.Any]).asInstanceOf[typings.scrivito.mod.ObjClass | typings.scrivito.mod.WidgetClass | scala.Null]
+inline def currentWorkspaceId(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("currentWorkspaceId")().asInstanceOf[String]
 
-inline def isEditorLoggedIn(): scala.Boolean = typings.scrivito.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isEditorLoggedIn")().asInstanceOf[scala.Boolean]
+inline def extendMenu(menuCallback: js.Function1[/* menu */ Menu, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("extendMenu")(menuCallback.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def isInPlaceEditingActive(): scala.Boolean = typings.scrivito.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isInPlaceEditingActive")().asInstanceOf[scala.Boolean]
+inline def extractText(obj: Obj, options: Length): String = (^.asInstanceOf[js.Dynamic].applyDynamic("extractText")(obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
 
-inline def load[T](functionToLoad: js.Function0[T]): js.Promise[T] = typings.scrivito.mod.^.asInstanceOf[js.Dynamic].applyDynamic("load")(functionToLoad.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+inline def finishLoading(): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("finishLoading")().asInstanceOf[js.Promise[js.Object]]
 
-inline def navigateTo(target: js.Function0[typings.scrivito.mod.Obj | typings.scrivito.mod.Link]): scala.Unit = typings.scrivito.mod.^.asInstanceOf[js.Dynamic].applyDynamic("navigateTo")(target.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def navigateTo(
-  target: js.Function0[typings.scrivito.mod.Obj | typings.scrivito.mod.Link],
-  options: typings.scrivito.anon.Hash
-): scala.Unit = (typings.scrivito.mod.^.asInstanceOf[js.Dynamic].applyDynamic("navigateTo")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def navigateTo(target: typings.scrivito.mod.Link): scala.Unit = typings.scrivito.mod.^.asInstanceOf[js.Dynamic].applyDynamic("navigateTo")(target.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def navigateTo(target: typings.scrivito.mod.Link, options: typings.scrivito.anon.Hash): scala.Unit = (typings.scrivito.mod.^.asInstanceOf[js.Dynamic].applyDynamic("navigateTo")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def navigateTo(target: typings.scrivito.mod.Obj): scala.Unit = typings.scrivito.mod.^.asInstanceOf[js.Dynamic].applyDynamic("navigateTo")(target.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def navigateTo(target: typings.scrivito.mod.Obj, options: typings.scrivito.anon.Hash): scala.Unit = (typings.scrivito.mod.^.asInstanceOf[js.Dynamic].applyDynamic("navigateTo")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def getClass_(name: String): ObjClass | WidgetClass | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getClass")(name.asInstanceOf[js.Any]).asInstanceOf[ObjClass | WidgetClass | Null]
 
-inline def openDialog(name: java.lang.String): scala.Unit = typings.scrivito.mod.^.asInstanceOf[js.Dynamic].applyDynamic("openDialog")(name.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def isComparisonActive(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isComparisonActive")().asInstanceOf[Boolean]
 
-inline def preload(preloadDump: js.Any): js.Promise[typings.scrivito.anon.DumpLoaded] = typings.scrivito.mod.^.asInstanceOf[js.Dynamic].applyDynamic("preload")(preloadDump.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.scrivito.anon.DumpLoaded]]
+inline def isEditorLoggedIn(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEditorLoggedIn")().asInstanceOf[Boolean]
 
-inline def provideComponent(
-  className: java.lang.String,
-  component: typings.scrivito.mod.ObjComponent | typings.scrivito.mod.WidgetComponent
-): scala.Unit = (typings.scrivito.mod.^.asInstanceOf[js.Dynamic].applyDynamic("provideComponent")(className.asInstanceOf[js.Any], component.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def isInPlaceEditingActive(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInPlaceEditingActive")().asInstanceOf[Boolean]
 
-inline def provideEditingConfig(name: java.lang.String, editingConfig: typings.scrivito.mod.EditingConfig): scala.Unit = (typings.scrivito.mod.^.asInstanceOf[js.Dynamic].applyDynamic("provideEditingConfig")(name.asInstanceOf[js.Any], editingConfig.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def load[T](functionToLoad: js.Function0[T]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(functionToLoad.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
 
-inline def provideObjClass(name: java.lang.String, contentClassOrOptions: typings.scrivito.mod.AbstractObjClass): typings.scrivito.mod.ObjClass = (typings.scrivito.mod.^.asInstanceOf[js.Dynamic].applyDynamic("provideObjClass")(name.asInstanceOf[js.Any], contentClassOrOptions.asInstanceOf[js.Any])).asInstanceOf[typings.scrivito.mod.ObjClass]
-inline def provideObjClass(name: java.lang.String, contentClassOrOptions: typings.scrivito.mod.ObjClassOptions): typings.scrivito.mod.ObjClass = (typings.scrivito.mod.^.asInstanceOf[js.Dynamic].applyDynamic("provideObjClass")(name.asInstanceOf[js.Any], contentClassOrOptions.asInstanceOf[js.Any])).asInstanceOf[typings.scrivito.mod.ObjClass]
+inline def navigateTo(target: js.Function0[Obj | Link]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("navigateTo")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def navigateTo(target: js.Function0[Obj | Link], options: Hash): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("navigateTo")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def navigateTo(target: Link): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("navigateTo")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def navigateTo(target: Link, options: Hash): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("navigateTo")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def navigateTo(target: Obj): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("navigateTo")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
+inline def navigateTo(target: Obj, options: Hash): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("navigateTo")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def provideWidgetClass(name: java.lang.String, contentClassOrOptions: typings.scrivito.mod.AbstractWidgetClass): typings.scrivito.mod.WidgetClass = (typings.scrivito.mod.^.asInstanceOf[js.Dynamic].applyDynamic("provideWidgetClass")(name.asInstanceOf[js.Any], contentClassOrOptions.asInstanceOf[js.Any])).asInstanceOf[typings.scrivito.mod.WidgetClass]
-inline def provideWidgetClass(name: java.lang.String, contentClassOrOptions: typings.scrivito.mod.WidgetClassOptions): typings.scrivito.mod.WidgetClass = (typings.scrivito.mod.^.asInstanceOf[js.Dynamic].applyDynamic("provideWidgetClass")(name.asInstanceOf[js.Any], contentClassOrOptions.asInstanceOf[js.Any])).asInstanceOf[typings.scrivito.mod.WidgetClass]
+inline def openDialog(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openDialog")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def registerComponent(
-  name: java.lang.String,
-  component: typings.scrivito.mod.ObjComponent | typings.scrivito.mod.WidgetComponent
-): scala.Unit = (typings.scrivito.mod.^.asInstanceOf[js.Dynamic].applyDynamic("registerComponent")(name.asInstanceOf[js.Any], component.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def preload(preloadDump: Any): js.Promise[DumpLoaded] = ^.asInstanceOf[js.Dynamic].applyDynamic("preload")(preloadDump.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DumpLoaded]]
 
-inline def renderPage(page: js.Any, renderFunction: js.Function0[scala.Unit]): js.Promise[typings.scrivito.anon.PreloadDump] = (typings.scrivito.mod.^.asInstanceOf[js.Dynamic].applyDynamic("renderPage")(page.asInstanceOf[js.Any], renderFunction.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.scrivito.anon.PreloadDump]]
+inline def provideAuthGroups(options: AuthGroupsOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("provideAuthGroups")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def setVisitorIdToken(idToken: java.lang.String): scala.Unit = typings.scrivito.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setVisitorIdToken")(idToken.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def provideComponent(className: String, component: ObjComponent | WidgetComponent): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("provideComponent")(className.asInstanceOf[js.Any], component.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def updateContent(): scala.Unit = typings.scrivito.mod.^.asInstanceOf[js.Dynamic].applyDynamic("updateContent")().asInstanceOf[scala.Unit]
+inline def provideEditingConfig(name: String, editingConfig: EditingConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("provideEditingConfig")(name.asInstanceOf[js.Any], editingConfig.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def updateMenuExtensions(): scala.Unit = typings.scrivito.mod.^.asInstanceOf[js.Dynamic].applyDynamic("updateMenuExtensions")().asInstanceOf[scala.Unit]
+inline def provideObjClass(name: String, contentClassOrOptions: AbstractObjClass): ObjClass = (^.asInstanceOf[js.Dynamic].applyDynamic("provideObjClass")(name.asInstanceOf[js.Any], contentClassOrOptions.asInstanceOf[js.Any])).asInstanceOf[ObjClass]
+inline def provideObjClass(name: String, contentClassOrOptions: ObjClassOptions): ObjClass = (^.asInstanceOf[js.Dynamic].applyDynamic("provideObjClass")(name.asInstanceOf[js.Any], contentClassOrOptions.asInstanceOf[js.Any])).asInstanceOf[ObjClass]
 
-inline def urlFor(target: typings.scrivito.mod.Binary): scala.Unit = typings.scrivito.mod.^.asInstanceOf[js.Dynamic].applyDynamic("urlFor")(target.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def urlFor(target: typings.scrivito.mod.Binary, options: typings.scrivito.anon.Query): scala.Unit = (typings.scrivito.mod.^.asInstanceOf[js.Dynamic].applyDynamic("urlFor")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def urlFor(target: typings.scrivito.mod.Link): scala.Unit = typings.scrivito.mod.^.asInstanceOf[js.Dynamic].applyDynamic("urlFor")(target.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def urlFor(target: typings.scrivito.mod.Link, options: typings.scrivito.anon.Query): scala.Unit = (typings.scrivito.mod.^.asInstanceOf[js.Dynamic].applyDynamic("urlFor")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def urlFor(target: typings.scrivito.mod.Obj): scala.Unit = typings.scrivito.mod.^.asInstanceOf[js.Dynamic].applyDynamic("urlFor")(target.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-inline def urlFor(target: typings.scrivito.mod.Obj, options: typings.scrivito.anon.Query): scala.Unit = (typings.scrivito.mod.^.asInstanceOf[js.Dynamic].applyDynamic("urlFor")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def provideWidgetClass(name: String, contentClassOrOptions: AbstractWidgetClass): WidgetClass = (^.asInstanceOf[js.Dynamic].applyDynamic("provideWidgetClass")(name.asInstanceOf[js.Any], contentClassOrOptions.asInstanceOf[js.Any])).asInstanceOf[WidgetClass]
+inline def provideWidgetClass(name: String, contentClassOrOptions: WidgetClassOptions): WidgetClass = (^.asInstanceOf[js.Dynamic].applyDynamic("provideWidgetClass")(name.asInstanceOf[js.Any], contentClassOrOptions.asInstanceOf[js.Any])).asInstanceOf[WidgetClass]
 
-inline def useHistory(history: typings.std.History): scala.Unit = typings.scrivito.mod.^.asInstanceOf[js.Dynamic].applyDynamic("useHistory")(history.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def registerComponent(name: String, component: ObjComponent | WidgetComponent): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerComponent")(name.asInstanceOf[js.Any], component.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def validationResults(model: typings.scrivito.mod.Obj, attribute: java.lang.String): js.Array[js.Object] = (typings.scrivito.mod.^.asInstanceOf[js.Dynamic].applyDynamic("validationResults")(model.asInstanceOf[js.Any], attribute.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Object]]
-inline def validationResults(model: typings.scrivito.mod.Widget, attribute: java.lang.String): js.Array[js.Object] = (typings.scrivito.mod.^.asInstanceOf[js.Dynamic].applyDynamic("validationResults")(model.asInstanceOf[js.Any], attribute.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Object]]
+inline def renderPage(page: Obj, renderFunction: js.Function0[Unit]): js.Promise[PreloadDump] = (^.asInstanceOf[js.Dynamic].applyDynamic("renderPage")(page.asInstanceOf[js.Any], renderFunction.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PreloadDump]]
 
-type AttributeBasedValidation = js.Tuple2[java.lang.String, typings.scrivito.mod.AttributeValidationCallback]
+inline def setVisitorIdToken(idToken: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setVisitorIdToken")(idToken.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-type AttributeValidationCallback = js.Function2[
-/* current */ js.Any, 
-/* options */ typings.scrivito.anon.Content, 
-typings.scrivito.mod.ValidationReturnType]
+inline def updateContent(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateContent")().asInstanceOf[Unit]
 
-type AttributeWithOptions = js.Tuple2[typings.scrivito.mod.Attribute, typings.scrivito.mod.AttributeOptions]
+inline def updateMenuExtensions(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateMenuExtensions")().asInstanceOf[Unit]
 
-type ClassBasedValidation = js.Function1[
-/* target */ typings.scrivito.mod.Widget | typings.scrivito.mod.Obj, 
-typings.scrivito.mod.ValidationReturnType]
+inline def urlFor(target: Binary): String = ^.asInstanceOf[js.Dynamic].applyDynamic("urlFor")(target.asInstanceOf[js.Any]).asInstanceOf[String]
+inline def urlFor(target: Binary, options: Query): String = (^.asInstanceOf[js.Dynamic].applyDynamic("urlFor")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def urlFor(target: Link): String = ^.asInstanceOf[js.Dynamic].applyDynamic("urlFor")(target.asInstanceOf[js.Any]).asInstanceOf[String]
+inline def urlFor(target: Link, options: Query): String = (^.asInstanceOf[js.Dynamic].applyDynamic("urlFor")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def urlFor(target: Obj): String = ^.asInstanceOf[js.Dynamic].applyDynamic("urlFor")(target.asInstanceOf[js.Any]).asInstanceOf[String]
+inline def urlFor(target: Obj, options: Query): String = (^.asInstanceOf[js.Dynamic].applyDynamic("urlFor")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
 
-type EditingConfigAttributes = org.scalablytyped.runtime.StringDictionary[typings.scrivito.mod.AttributeProps]
+inline def useHistory(history: History): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useHistory")(history.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-type ObjComponent = typings.react.mod.FC[typings.scrivito.mod.ObjComponentProps]
+inline def validationResultsFor(model: Obj, attribute: String): js.Array[ValidationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("validationResultsFor")(model.asInstanceOf[js.Any], attribute.asInstanceOf[js.Any])).asInstanceOf[js.Array[ValidationResult]]
+inline def validationResultsFor(model: Widget, attribute: String): js.Array[ValidationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("validationResultsFor")(model.asInstanceOf[js.Any], attribute.asInstanceOf[js.Any])).asInstanceOf[js.Array[ValidationResult]]
 
-type ObjSearchAttribute = typings.scrivito.mod.ObjSearchSingleAttribute | js.Array[typings.scrivito.mod.ObjSearchSingleAttribute]
+type AttributeBasedValidation = js.Tuple2[String, AttributeValidationCallback]
 
-type ObjSearchAttributeBasedBoost = org.scalablytyped.runtime.StringDictionary[scala.Double]
+// utility types
+type AttributeKeys[T /* <: WidgetClassOptions | ObjClassOptions */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+{[ Property in keyof T['attributes'] ]: any}
+  */ typings.scrivito.scrivitoStrings.AttributeKeys & TopLevel[Any]
+
+type AttributeValidationCallback = js.Function2[/* current */ Any, /* options */ js.UndefOr[Content], ValidationReturnType]
+
+type AttributeWithOptions = js.Tuple2[Attribute, AttributeOptions]
+
+type AuthGroupsOptions = StringDictionary[String]
+
+type ClassBasedValidation = js.Function1[/* target */ Widget | Obj, ValidationReturnType]
+
+type CreateAttributes = StringDictionary[Any]
+
+type EditingConfigAttributes = StringDictionary[AttributeProps]
+
+type ObjComponent = ComponentType[ObjComponentProps]
+
+type ObjSearchAttribute = ObjSearchSingleAttribute | js.Array[ObjSearchSingleAttribute]
+
+type ObjSearchAttributeBasedBoost = StringDictionary[Double]
 
 /* Rewritten from type alias, can be one of: 
   - typings.scrivito.scrivitoStrings.Asterisk
@@ -121,18 +143,16 @@ type ObjSearchAttributeBasedBoost = org.scalablytyped.runtime.StringDictionary[s
   - typings.scrivito.scrivitoStrings.MetadataCollection
   - java.lang.String
 */
-type ObjSearchSingleAttribute = typings.scrivito.mod._ObjSearchSingleAttribute | java.lang.String
+type ObjSearchSingleAttribute = _ObjSearchSingleAttribute | String
 
-type ObjSearchValue = java.lang.String | typings.std.Date | scala.Double | typings.scrivito.mod.Obj | js.Array[js.Any]
+type ObjSearchValue = String | js.Date | Double | Obj | js.Array[Any]
 
-type OrderParam = typings.scrivito.mod.ObjSearchSingleAttribute | (js.Tuple2[
-typings.scrivito.mod.ObjSearchSingleAttribute, 
-typings.scrivito.scrivitoStrings.asc | typings.scrivito.scrivitoStrings.desc])
+type OrderParam = ObjSearchSingleAttribute | (js.Tuple2[ObjSearchSingleAttribute, asc | desc])
 
-type Validation = typings.scrivito.mod.AttributeBasedValidation | typings.scrivito.mod.ClassBasedValidation
+type Validation = AttributeBasedValidation | ClassBasedValidation
 
-type ValidationReturnType = js.UndefOr[typings.scrivito.anon.Message | java.lang.String]
+type ValidationReturnType = js.UndefOr[Message | String]
 
-type WidgetClass = org.scalablytyped.runtime.Instantiable1[/* arg */ js.Object, typings.scrivito.mod.Widget]
+type WidgetClass = Instantiable1[/* arg */ js.Object, Widget]
 
-type WidgetComponent = typings.react.mod.FC[typings.scrivito.mod.WidgetComponentProps]
+type WidgetComponent = ComponentType[WidgetComponentProps]

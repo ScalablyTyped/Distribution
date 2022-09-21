@@ -19,10 +19,10 @@ trait DomainDescription extends StObject {
   /**
     *  A timestamp that represents the date and time the domain was created. 
     */
-  var createdTime: js.UndefOr[Timestamp] = js.undefined
+  var createdTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    *  The ARN of an AWS Key Management Service (AWS KMS) key associated with a domain. 
+    *  The ARN of an Key Management Service (KMS) key associated with a domain. 
     */
   var encryptionKey: js.UndefOr[Arn] = js.undefined
   
@@ -32,7 +32,7 @@ trait DomainDescription extends StObject {
   var name: js.UndefOr[DomainName] = js.undefined
   
   /**
-    *  The AWS account ID that owns the domain. 
+    *  The Amazon Web Services account ID that owns the domain. 
     */
   var owner: js.UndefOr[AccountId] = js.undefined
   
@@ -47,7 +47,7 @@ trait DomainDescription extends StObject {
   var s3BucketArn: js.UndefOr[Arn] = js.undefined
   
   /**
-    *  The current status of a domain. The valid values are     Active     Deleted   
+    *  The current status of a domain. 
     */
   var status: js.UndefOr[DomainStatus] = js.undefined
 }
@@ -68,7 +68,7 @@ object DomainDescription {
     
     inline def setAssetSizeBytesUndefined: Self = StObject.set(x, "assetSizeBytes", js.undefined)
     
-    inline def setCreatedTime(value: Timestamp): Self = StObject.set(x, "createdTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "createdTime", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimeUndefined: Self = StObject.set(x, "createdTime", js.undefined)
     

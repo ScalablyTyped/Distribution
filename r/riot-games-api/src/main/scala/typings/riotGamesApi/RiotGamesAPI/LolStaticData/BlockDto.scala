@@ -24,7 +24,7 @@ object BlockDto {
     
     inline def setItems(value: js.Array[BlockItemDto]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: BlockItemDto*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: BlockItemDto*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setRecMath(value: Boolean): Self = StObject.set(x, "recMath", value.asInstanceOf[js.Any])
     

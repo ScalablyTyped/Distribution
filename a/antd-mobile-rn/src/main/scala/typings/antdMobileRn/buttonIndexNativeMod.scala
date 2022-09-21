@@ -4,6 +4,7 @@ import typings.antdMobileRn.anon.Container
 import typings.antdMobileRn.anon.Disabled
 import typings.antdMobileRn.buttonPropsTypeMod.ButtonPropsType
 import typings.react.mod.Component
+import typings.react.mod.ReactNode
 import typings.reactNative.mod.AccessibilityProps
 import typings.reactNative.mod.ColorValue
 import typings.reactNative.mod.GestureResponderEvent
@@ -23,7 +24,7 @@ object buttonIndexNativeMod {
   
   @JSImport("antd-mobile-rn/lib/button/index.native", JSImport.Default)
   @js.native
-  class default protected () extends Button {
+  open class default protected () extends Button {
     def this(props: ButtonProps) = this()
   }
   /* static members */
@@ -40,20 +41,19 @@ object buttonIndexNativeMod {
   }
   
   @js.native
-  trait Button
-    extends Component[ButtonProps, js.Any, js.Any] {
+  trait Button extends Component[ButtonProps, Any, Any] {
     
-    def onHideUnderlay(arg: js.Any*): Unit = js.native
+    def onHideUnderlay(arg: Any*): Unit = js.native
     
-    def onPressIn(arg: js.Any*): Unit = js.native
+    def onPressIn(arg: Any*): Unit = js.native
     
-    def onPressOut(arg: js.Any*): Unit = js.native
+    def onPressOut(arg: Any*): Unit = js.native
     
-    def onShowUnderlay(arg: js.Any*): Unit = js.native
+    def onShowUnderlay(arg: Any*): Unit = js.native
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.reactNative.mod.TouchableWithoutFeedbackProps because var conflicts: disabled. Inlined onPress, onPressOut, hitSlop, style, onFocus, onLayout, delayLongPress, onLongPress, onBlur, delayPressOut, pressRetentionOffset, delayPressIn, onPressIn, testID
+  - typings.reactNative.mod.TouchableWithoutFeedbackProps because var conflicts: disabled. Inlined onPress, onPressOut, hitSlop, style, onFocus, onLayout, delayLongPress, onLongPress, onBlur, delayPressOut, pressRetentionOffset, children, delayPressIn, onPressIn, testID
   - typings.reactNative.mod.TouchableHighlightProps because var conflicts: disabled. Inlined onShowUnderlay, onHideUnderlay, underlayColor, activeOpacity */ trait ButtonProps
     extends StObject
        with ButtonPropsType
@@ -67,6 +67,8 @@ object buttonIndexNativeMod {
     var activeOpacity: js.UndefOr[Double] = js.undefined
     
     var activeStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * Delay in ms, from onPressIn, before onLongPress is called.
@@ -99,7 +101,7 @@ object buttonIndexNativeMod {
       */
     var onBlur: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TargetedEvent], Unit]] = js.undefined
     
-    var onClick: js.UndefOr[js.Function1[/* _ */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onClick: js.UndefOr[js.Function1[/* _ */ js.UndefOr[Any], Unit]] = js.undefined
     
     /**
       * When `accessible` is true (which is the default) this may be called when
@@ -183,6 +185,10 @@ object buttonIndexNativeMod {
       
       inline def setActiveStyleUndefined: Self = StObject.set(x, "activeStyle", js.undefined)
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setDelayLongPress(value: Double): Self = StObject.set(x, "delayLongPress", value.asInstanceOf[js.Any])
       
       inline def setDelayLongPressUndefined: Self = StObject.set(x, "delayLongPress", js.undefined)
@@ -203,7 +209,7 @@ object buttonIndexNativeMod {
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      inline def setOnClick(value: /* _ */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: /* _ */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       

@@ -6,21 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ServerOptions extends StObject {
   
-  var loadTransaction: Boolean
-  
-  var store: js.Any
+  var store: Any
 }
 object ServerOptions {
   
-  inline def apply(loadTransaction: Boolean, store: js.Any): ServerOptions = {
-    val __obj = js.Dynamic.literal(loadTransaction = loadTransaction.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any])
+  inline def apply(store: Any): ServerOptions = {
+    val __obj = js.Dynamic.literal(store = store.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerOptions]
   }
   
   extension [Self <: ServerOptions](x: Self) {
     
-    inline def setLoadTransaction(value: Boolean): Self = StObject.set(x, "loadTransaction", value.asInstanceOf[js.Any])
-    
-    inline def setStore(value: js.Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+    inline def setStore(value: Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
   }
 }

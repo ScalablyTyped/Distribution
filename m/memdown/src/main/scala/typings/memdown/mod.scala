@@ -1,86 +1,51 @@
 package typings.memdown
 
-import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.Shortcut
 import typings.abstractLeveldown.mod.AbstractLevelDOWN
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod {
-  
-  @JSImport("memdown", JSImport.Namespace)
-  @js.native
-  val ^ : js.Any = js.native
+object mod extends Shortcut {
   
   @JSImport("memdown", JSImport.Default)
   @js.native
   val default: MemDownConstructor = js.native
   
-  inline def clearGlobalStore(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("clearGlobalStore")().asInstanceOf[js.Any]
-  inline def clearGlobalStore(strict: Boolean): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("clearGlobalStore")(strict.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @JSImport("memdown", "MemDown")
+  @js.native
+  val MemDown: MemDownConstructor = js.native
+  type MemDown[K, V] = AbstractLevelDOWN[K, V]
+  
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("memdown", "MemDown")
+  @js.native
+  // tslint:disable-next-line no-unnecessary-generics
+  open class MemDownCls[K, V] ()
+    extends StObject
+       with AbstractLevelDOWN[K, V]
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("memdown", JSImport.Default)
   @js.native
-  class defaultCls[K, V] protected ()
+  // tslint:disable-next-line no-unnecessary-generics
+  open class defaultCls[K, V] ()
     extends StObject
-       with AbstractLevelDOWN[K, V] {
-    def this(location: String) = this()
-  }
-  
-  inline def destroy(location: String, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("destroy")(location.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  type MemDown[K, V] = AbstractLevelDOWN[K, V]
+       with AbstractLevelDOWN[K, V]
   
   @js.native
   trait MemDownConstructor
     extends StObject
-       with Instantiable1[/* location */ String, MemDown[js.Object, js.Object]] {
+       with // tslint:disable-next-line no-unnecessary-generics
+  Instantiable0[typings.memdown.mod.MemDown[js.Object, js.Object]] {
     
-    def apply[K, V](location: String): MemDown[K, V] = js.native
+    // tslint:disable-next-line no-unnecessary-generics
+    def apply[K, V](): typings.memdown.mod.MemDown[K, V] = js.native
   }
   
-  trait MemDownGetOptions extends StObject {
-    
-    var asBuffer: js.UndefOr[Boolean] = js.undefined
-  }
-  object MemDownGetOptions {
-    
-    inline def apply(): MemDownGetOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[MemDownGetOptions]
-    }
-    
-    extension [Self <: MemDownGetOptions](x: Self) {
-      
-      inline def setAsBuffer(value: Boolean): Self = StObject.set(x, "asBuffer", value.asInstanceOf[js.Any])
-      
-      inline def setAsBufferUndefined: Self = StObject.set(x, "asBuffer", js.undefined)
-    }
-  }
+  type _To = MemDownConstructor
   
-  trait MemDownIteratorOptions extends StObject {
-    
-    var keyAsBuffer: js.UndefOr[Boolean] = js.undefined
-    
-    var valueAsBuffer: js.UndefOr[Boolean] = js.undefined
-  }
-  object MemDownIteratorOptions {
-    
-    inline def apply(): MemDownIteratorOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[MemDownIteratorOptions]
-    }
-    
-    extension [Self <: MemDownIteratorOptions](x: Self) {
-      
-      inline def setKeyAsBuffer(value: Boolean): Self = StObject.set(x, "keyAsBuffer", value.asInstanceOf[js.Any])
-      
-      inline def setKeyAsBufferUndefined: Self = StObject.set(x, "keyAsBuffer", js.undefined)
-      
-      inline def setValueAsBuffer(value: Boolean): Self = StObject.set(x, "valueAsBuffer", value.asInstanceOf[js.Any])
-      
-      inline def setValueAsBufferUndefined: Self = StObject.set(x, "valueAsBuffer", js.undefined)
-    }
-  }
+  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
+  override def _to: MemDownConstructor = default
 }

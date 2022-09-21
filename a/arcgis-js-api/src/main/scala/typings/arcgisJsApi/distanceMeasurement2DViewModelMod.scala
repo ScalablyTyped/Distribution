@@ -17,7 +17,12 @@ object distanceMeasurement2DViewModelMod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/widgets/DistanceMeasurement2D/DistanceMeasurement2DViewModel", JSImport.Namespace)
   @js.native
-  class Class ()
+  /**
+    * Provides the logic for the [DistanceMeasurement2D](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D.html) widget.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D-DistanceMeasurement2DViewModel.html)
+    */
+  open class Class ()
     extends StObject
        with DistanceMeasurement2DViewModel {
     def this(properties: DistanceMeasurement2DViewModelProperties) = this()

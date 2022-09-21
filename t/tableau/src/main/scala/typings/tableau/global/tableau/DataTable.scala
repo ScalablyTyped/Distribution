@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("tableau.DataTable")
 @js.native
-class DataTable ()
+open class DataTable ()
   extends StObject
      with typings.tableau.tableau.DataTable {
   
@@ -19,7 +19,7 @@ class DataTable ()
     * The first array index is the row index and the second array index is the column index.
     */
   /* CompleteClass */
-  override def getData(): js.Array[js.Any] = js.native
+  override def getData(): js.Array[Any] = js.native
   
   /** Whether the data is summary data or underlying data. Returns true for summary data. */
   /* CompleteClass */

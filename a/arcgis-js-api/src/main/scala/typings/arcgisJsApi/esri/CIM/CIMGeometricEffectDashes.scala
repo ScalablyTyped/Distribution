@@ -65,7 +65,7 @@ object CIMGeometricEffectDashes {
     
     inline def setDashTemplateUndefined: Self = StObject.set(x, "dashTemplate", js.undefined)
     
-    inline def setDashTemplateVarargs(value: Double*): Self = StObject.set(x, "dashTemplate", js.Array(value :_*))
+    inline def setDashTemplateVarargs(value: Double*): Self = StObject.set(x, "dashTemplate", js.Array(value*))
     
     inline def setLineDashEnding(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LineDashEnding * / any */ String

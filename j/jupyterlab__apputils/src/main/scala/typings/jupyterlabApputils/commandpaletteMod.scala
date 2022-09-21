@@ -1,8 +1,14 @@
 package typings.jupyterlabApputils
 
+import typings.jupyterlabApputils.commandpaletteMod.ModalCommandPalette.IOptions
 import typings.luminoCoreutils.mod.Token
 import typings.luminoDisposable.mod.IDisposable
 import typings.luminoWidgets.commandpaletteMod.CommandPalette.IItemOptions
+import typings.luminoWidgets.mod.CommandPalette
+import typings.luminoWidgets.mod.Panel
+import typings.std.Event
+import typings.std.HTMLDivElement
+import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,6 +49,65 @@ object commandpaletteMod {
       inline def setAddItem(value: IPaletteItem => IDisposable): Self = StObject.set(x, "addItem", js.Any.fromFunction1(value))
       
       inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  @JSImport("@jupyterlab/apputils/lib/commandpalette", "ModalCommandPalette")
+  @js.native
+  open class ModalCommandPalette protected () extends Panel {
+    def this(options: IOptions) = this()
+    
+    /* private */ var _commandPalette: Any = js.native
+    
+    /**
+      * Handle the `'keydown'` event for the widget.
+      */
+    /* protected */ def _evtKeydown(event: KeyboardEvent): Unit = js.native
+    
+    def attach(): Unit = js.native
+    
+    /**
+      * Create element with search icon group.
+      */
+    /* protected */ def createSearchIconGroup(): HTMLDivElement = js.native
+    
+    def detach(): Unit = js.native
+    
+    /**
+      * Handle incoming events.
+      */
+    def handleEvent(event: Event): Unit = js.native
+    
+    /**
+      * Hide the modal command palette and reset its search.
+      */
+    def hideAndReset(): Unit = js.native
+    
+    def palette: CommandPalette = js.native
+    def palette_=(value: CommandPalette): Unit = js.native
+    
+    /**
+      * Find the element with search icon group.
+      */
+    /* protected */ def searchIconGroup: js.UndefOr[HTMLDivElement] = js.native
+  }
+  object ModalCommandPalette {
+    
+    trait IOptions extends StObject {
+      
+      var commandPalette: CommandPalette
+    }
+    object IOptions {
+      
+      inline def apply(commandPalette: CommandPalette): IOptions = {
+        val __obj = js.Dynamic.literal(commandPalette = commandPalette.asInstanceOf[js.Any])
+        __obj.asInstanceOf[IOptions]
+      }
+      
+      extension [Self <: IOptions](x: Self) {
+        
+        inline def setCommandPalette(value: CommandPalette): Self = StObject.set(x, "commandPalette", value.asInstanceOf[js.Any])
+      }
     }
   }
   

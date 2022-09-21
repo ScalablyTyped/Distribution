@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ol.ObjectEvent")
 @js.native
-class ObjectEvent protected ()
+open class ObjectEvent protected ()
   extends typings.openlayers.mod.ObjectEvent {
   /**
     * @classdesc
@@ -16,5 +16,5 @@ class ObjectEvent protected ()
     * @param key The property name.
     * @param oldValue The old value for `key`.
     */
-  def this(`type`: String, key: String, oldValue: js.Any) = this()
+  def this(`type`: String, key: String, oldValue: Any) = this()
 }

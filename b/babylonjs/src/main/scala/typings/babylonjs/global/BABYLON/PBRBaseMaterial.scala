@@ -16,6 +16,7 @@ abstract class PBRBaseMaterial protected ()
     * @param name The material name
     * @param scene The scene the material will be use in.
     */
+  def this(name: String) = this()
   def this(name: String, scene: typings.babylonjs.BABYLON.Scene) = this()
   
   /**
@@ -46,14 +47,14 @@ object PBRBaseMaterial {
     */
   @JSGlobal("BABYLON.PBRBaseMaterial.LIGHTFALLOFF_GLTF")
   @js.native
-  val LIGHTFALLOFF_GLTF: Double = js.native
+  val LIGHTFALLOFF_GLTF: /* 1 */ Double = js.native
   
   /**
     * PBRMaterialLightFalloff Physical: light is falling off following the inverse squared distance law.
     */
   @JSGlobal("BABYLON.PBRBaseMaterial.LIGHTFALLOFF_PHYSICAL")
   @js.native
-  val LIGHTFALLOFF_PHYSICAL: Double = js.native
+  val LIGHTFALLOFF_PHYSICAL: /* 0 */ Double = js.native
   
   /**
     * PBRMaterialLightFalloff Standard: light is falling off like in the standard material
@@ -61,21 +62,21 @@ object PBRBaseMaterial {
     */
   @JSGlobal("BABYLON.PBRBaseMaterial.LIGHTFALLOFF_STANDARD")
   @js.native
-  val LIGHTFALLOFF_STANDARD: Double = js.native
+  val LIGHTFALLOFF_STANDARD: /* 2 */ Double = js.native
   
   /**
     * PBRMaterialTransparencyMode: Pixels are blended (according to the alpha mode) with the already drawn pixels in the current frame buffer.
     */
   @JSGlobal("BABYLON.PBRBaseMaterial.PBRMATERIAL_ALPHABLEND")
   @js.native
-  val PBRMATERIAL_ALPHABLEND: Double = js.native
+  val PBRMATERIAL_ALPHABLEND: /* 2 */ Double = js.native
   
   /**
     * PBRMaterialTransparencyMode: Alpha Test mode, pixel are discarded below a certain threshold defined by the alpha cutoff value.
     */
   @JSGlobal("BABYLON.PBRBaseMaterial.PBRMATERIAL_ALPHATEST")
   @js.native
-  val PBRMATERIAL_ALPHATEST: Double = js.native
+  val PBRMATERIAL_ALPHATEST: /* 1 */ Double = js.native
   
   /**
     * PBRMaterialTransparencyMode: Pixels are blended (according to the alpha mode) with the already drawn pixels in the current frame buffer.
@@ -83,12 +84,12 @@ object PBRBaseMaterial {
     */
   @JSGlobal("BABYLON.PBRBaseMaterial.PBRMATERIAL_ALPHATESTANDBLEND")
   @js.native
-  val PBRMATERIAL_ALPHATESTANDBLEND: Double = js.native
+  val PBRMATERIAL_ALPHATESTANDBLEND: /* 3 */ Double = js.native
   
   /**
     * PBRMaterialTransparencyMode: No transparency mode, Alpha channel is not use.
     */
   @JSGlobal("BABYLON.PBRBaseMaterial.PBRMATERIAL_OPAQUE")
   @js.native
-  val PBRMATERIAL_OPAQUE: Double = js.native
+  val PBRMATERIAL_OPAQUE: /* 0 */ Double = js.native
 }

@@ -10,7 +10,7 @@ trait IKernel extends StObject {
   
   /**
     * Gets the full specification for this kernel, which can be serialized to
-    * a noteobok file
+    * a notebook file
     */
   def getSpec(): Thenable[IKernelSpec] = js.native
   

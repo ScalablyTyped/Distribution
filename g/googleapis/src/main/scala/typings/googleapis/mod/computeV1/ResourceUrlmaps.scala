@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("googleapis", "compute_v1.Resource$Urlmaps")
 @js.native
-class ResourceUrlmaps protected ()
+open class ResourceUrlmaps protected ()
   extends typings.googleapis.computeV1Mod.computeV1.ResourceUrlmaps {
   def this(context: APIRequestContext) = this()
 }

@@ -29,7 +29,7 @@ object EmailRequest {
     
     inline def setCc_emailsUndefined: Self = StObject.set(x, "cc_emails", js.undefined)
     
-    inline def setCc_emailsVarargs(value: String*): Self = StObject.set(x, "cc_emails", js.Array(value :_*))
+    inline def setCc_emailsVarargs(value: String*): Self = StObject.set(x, "cc_emails", js.Array(value*))
     
     inline def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     

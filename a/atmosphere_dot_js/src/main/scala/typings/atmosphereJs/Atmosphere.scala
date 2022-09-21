@@ -17,7 +17,7 @@ object Atmosphere {
       */
     var subscribe: js.UndefOr[
         js.Function3[
-          /* requestOrUrl */ js.Any, 
+          /* requestOrUrl */ Any, 
           /* callback */ js.UndefOr[js.Function], 
           /* request */ js.UndefOr[Request], 
           Request
@@ -40,7 +40,7 @@ object Atmosphere {
       inline def setAtmosphereRequestUndefined: Self = StObject.set(x, "AtmosphereRequest", js.undefined)
       
       inline def setSubscribe(
-        value: (/* requestOrUrl */ js.Any, /* callback */ js.UndefOr[js.Function], /* request */ js.UndefOr[Request]) => Request
+        value: (/* requestOrUrl */ Any, /* callback */ js.UndefOr[js.Function], /* request */ js.UndefOr[Request]) => Request
       ): Self = StObject.set(x, "subscribe", js.Any.fromFunction3(value))
       
       inline def setSubscribeUndefined: Self = StObject.set(x, "subscribe", js.undefined)
@@ -98,7 +98,7 @@ object Atmosphere {
     
     var getUrl: js.UndefOr[js.Function0[String]] = js.undefined
     
-    var headers: js.UndefOr[js.Any] = js.undefined
+    var headers: js.UndefOr[Any] = js.undefined
     
     var lastIndex: js.UndefOr[Double] = js.undefined
     
@@ -180,9 +180,9 @@ object Atmosphere {
     
     var uuid: js.UndefOr[String] = js.undefined
     
-    var webSocketBinaryType: js.UndefOr[js.Any] = js.undefined
+    var webSocketBinaryType: js.UndefOr[Any] = js.undefined
     
-    var webSocketImpl: js.UndefOr[js.Any] = js.undefined
+    var webSocketImpl: js.UndefOr[Any] = js.undefined
     
     var webSocketPathDelimiter: js.UndefOr[String] = js.undefined
     
@@ -275,7 +275,7 @@ object Atmosphere {
       
       inline def setGetUrlUndefined: Self = StObject.set(x, "getUrl", js.undefined)
       
-      inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
@@ -423,11 +423,11 @@ object Atmosphere {
       
       inline def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
       
-      inline def setWebSocketBinaryType(value: js.Any): Self = StObject.set(x, "webSocketBinaryType", value.asInstanceOf[js.Any])
+      inline def setWebSocketBinaryType(value: Any): Self = StObject.set(x, "webSocketBinaryType", value.asInstanceOf[js.Any])
       
       inline def setWebSocketBinaryTypeUndefined: Self = StObject.set(x, "webSocketBinaryType", js.undefined)
       
-      inline def setWebSocketImpl(value: js.Any): Self = StObject.set(x, "webSocketImpl", value.asInstanceOf[js.Any])
+      inline def setWebSocketImpl(value: Any): Self = StObject.set(x, "webSocketImpl", value.asInstanceOf[js.Any])
       
       inline def setWebSocketImplUndefined: Self = StObject.set(x, "webSocketImpl", js.undefined)
       
@@ -496,13 +496,13 @@ object Atmosphere {
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      inline def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value*))
       
       inline def setMessages(value: js.Array[String]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
       inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
       
-      inline def setMessagesVarargs(value: String*): Self = StObject.set(x, "messages", js.Array(value :_*))
+      inline def setMessagesVarargs(value: String*): Self = StObject.set(x, "messages", js.Array(value*))
       
       inline def setPartialMessage(value: String): Self = StObject.set(x, "partialMessage", value.asInstanceOf[js.Any])
       

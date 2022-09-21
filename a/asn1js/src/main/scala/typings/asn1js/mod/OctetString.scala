@@ -6,16 +6,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("asn1js", "OctetString")
 @js.native
-class OctetString () extends BaseBlock[LocalOctetStringValueBlock] {
-  def this(params: LocalOctetStringValueBlockParams) = this()
+open class OctetString ()
+  extends BaseBlock[LocalOctetStringValueBlock, LocalOctetStringValueBlockJson]
+     with _AsnType {
+  def this(hasIdBlockLenBlockParameters: OctetStringParams) = this()
   
   /**
-    * Checking that two OCTETSTRINGs are equal
-    * 
-    * @param {OctetString} octetString
-    * @returns {boolean}
-    * 
-    * @memberOf OctetString
+    * Returns OctetString value. If OctetString is constructed, returns concatenated internal OctetString values
+    * @returns Array buffer
+    * @since 3.0.0
     */
-  def isEqual(octetString: OctetString): scala.Boolean = js.native
+  def getValue(): js.typedarray.ArrayBuffer = js.native
+}
+object OctetString {
+  
+  @JSImport("asn1js", "OctetString")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("asn1js", "OctetString.NAME")
+  @js.native
+  def NAME: String = js.native
+  inline def NAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAME")(x.asInstanceOf[js.Any])
 }

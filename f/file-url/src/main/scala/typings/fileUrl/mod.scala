@@ -6,34 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  /**
-  Convert a file path to a file URL.
-  @param filePath - File path to convert.
-  @returns The `filePath` converted to a file URL.
-  @example
-  ```
-  import fileUrl = require('file-url');
-  fileUrl('unicorn.jpg');
-  //=> 'file:///Users/sindresorhus/dev/file-url/unicorn.jpg'
-  fileUrl('/Users/pony/pics/unicorn.jpg');
-  //=> 'file:///Users/pony/pics/unicorn.jpg'
-  fileUrl('unicorn.jpg', {resolve: false});
-  //=> 'file:///unicorn.jpg'
-  ```
-  */
-  inline def apply(filePath: String): String = ^.asInstanceOf[js.Dynamic].apply(filePath.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def apply(filePath: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(filePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  
   @JSImport("file-url", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
+  inline def default(filePath: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(filePath.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(filePath: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(filePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   trait Options extends StObject {
     
     /**
-    		Passing `false` will make it not call `path.resolve()` on the path.
-    		@default true
-    		*/
+    	Passing `false` will make it not call `path.resolve()` on the path.
+    	@default true
+    	*/
     val resolve: js.UndefOr[Boolean] = js.undefined
   }
   object Options {

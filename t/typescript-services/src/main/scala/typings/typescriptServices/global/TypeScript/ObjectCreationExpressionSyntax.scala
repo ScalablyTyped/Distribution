@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.ObjectCreationExpressionSyntax")
 @js.native
-class ObjectCreationExpressionSyntax protected ()
+open class ObjectCreationExpressionSyntax protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.ObjectCreationExpressionSyntax {
   def this(
@@ -23,7 +23,7 @@ class ObjectCreationExpressionSyntax protected ()
   ) = this()
   
   /* CompleteClass */
-  override def accept(visitor: ISyntaxVisitor): js.Any = js.native
+  override def accept(visitor: ISyntaxVisitor): Any = js.native
   
   /* CompleteClass */
   override def childAt(index: Double): ISyntaxElement = js.native

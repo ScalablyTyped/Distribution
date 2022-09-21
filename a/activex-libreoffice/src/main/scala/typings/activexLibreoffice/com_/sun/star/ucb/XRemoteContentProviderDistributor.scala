@@ -43,7 +43,7 @@ object XRemoteContentProviderDistributor {
     connectToRemoteAcceptor: (String, String) => Boolean,
     disconnectFromAll: () => Unit,
     disconnectFromRemoteAcceptor: String => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XRemoteContentProviderDistributor = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), connectToRemoteAcceptor = js.Any.fromFunction2(connectToRemoteAcceptor), disconnectFromAll = js.Any.fromFunction0(disconnectFromAll), disconnectFromRemoteAcceptor = js.Any.fromFunction1(disconnectFromRemoteAcceptor), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

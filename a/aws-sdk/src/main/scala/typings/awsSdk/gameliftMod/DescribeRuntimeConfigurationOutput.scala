@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeRuntimeConfigurationOutput extends StObject {
   
   /**
-    * Instructions describing how server processes should be launched and maintained on each instance in the fleet.
+    * Instructions that describe how server processes should be launched and maintained on each instance in the fleet.
     */
   var RuntimeConfiguration: js.UndefOr[typings.awsSdk.gameliftMod.RuntimeConfiguration] = js.undefined
 }

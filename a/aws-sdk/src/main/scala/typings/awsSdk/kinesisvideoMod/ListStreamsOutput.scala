@@ -33,6 +33,6 @@ object ListStreamsOutput {
     
     inline def setStreamInfoListUndefined: Self = StObject.set(x, "StreamInfoList", js.undefined)
     
-    inline def setStreamInfoListVarargs(value: StreamInfo*): Self = StObject.set(x, "StreamInfoList", js.Array(value :_*))
+    inline def setStreamInfoListVarargs(value: StreamInfo*): Self = StObject.set(x, "StreamInfoList", js.Array(value*))
   }
 }

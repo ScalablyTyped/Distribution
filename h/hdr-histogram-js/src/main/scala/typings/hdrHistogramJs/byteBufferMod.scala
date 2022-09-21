@@ -1,22 +1,20 @@
 package typings.hdrHistogramJs
 
-import typings.std.Uint32Array
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object byteBufferMod {
   
-  @JSImport("hdr-histogram-js/ByteBuffer", JSImport.Default)
+  @JSImport("hdr-histogram-js/dist/ByteBuffer", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with ByteBuffer {
-    def this(data: Uint8Array) = this()
+    def this(data: js.typedarray.Uint8Array) = this()
     
     /* CompleteClass */
-    var data: Uint8Array = js.native
+    var data: js.typedarray.Uint8Array = js.native
     
     /* CompleteClass */
     override def get(): Double = js.native
@@ -28,10 +26,10 @@ object byteBufferMod {
     override def getInt64(): Double = js.native
     
     /* CompleteClass */
-    var int32ArrayForConvert: Uint32Array = js.native
+    var int32ArrayForConvert: js.typedarray.Uint32Array = js.native
     
     /* CompleteClass */
-    var int8ArrayForConvert: Uint8Array = js.native
+    var int8ArrayForConvert: js.typedarray.Uint8Array = js.native
     
     /* CompleteClass */
     var position: Double = js.native
@@ -40,7 +38,7 @@ object byteBufferMod {
     override def put(value: Double): Unit = js.native
     
     /* CompleteClass */
-    override def putArray(array: Uint8Array): Unit = js.native
+    override def putArray(array: js.typedarray.Uint8Array): Unit = js.native
     
     /* CompleteClass */
     override def putInt32(value: Double): Unit = js.native
@@ -53,7 +51,7 @@ object byteBufferMod {
   }
   object default {
     
-    @JSImport("hdr-histogram-js/ByteBuffer", JSImport.Default)
+    @JSImport("hdr-histogram-js/dist/ByteBuffer", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
@@ -64,7 +62,7 @@ object byteBufferMod {
   
   trait ByteBuffer extends StObject {
     
-    var data: Uint8Array
+    var data: js.typedarray.Uint8Array
     
     def get(): Double
     
@@ -72,15 +70,15 @@ object byteBufferMod {
     
     def getInt64(): Double
     
-    var int32ArrayForConvert: Uint32Array
+    var int32ArrayForConvert: js.typedarray.Uint32Array
     
-    var int8ArrayForConvert: Uint8Array
+    var int8ArrayForConvert: js.typedarray.Uint8Array
     
     var position: Double
     
     def put(value: Double): Unit
     
-    def putArray(array: Uint8Array): Unit
+    def putArray(array: js.typedarray.Uint8Array): Unit
     
     def putInt32(value: Double): Unit
     
@@ -91,15 +89,15 @@ object byteBufferMod {
   object ByteBuffer {
     
     inline def apply(
-      data: Uint8Array,
+      data: js.typedarray.Uint8Array,
       get: () => Double,
       getInt32: () => Double,
       getInt64: () => Double,
-      int32ArrayForConvert: Uint32Array,
-      int8ArrayForConvert: Uint8Array,
+      int32ArrayForConvert: js.typedarray.Uint32Array,
+      int8ArrayForConvert: js.typedarray.Uint8Array,
       position: Double,
       put: Double => Unit,
-      putArray: Uint8Array => Unit,
+      putArray: js.typedarray.Uint8Array => Unit,
       putInt32: Double => Unit,
       putInt64: Double => Unit,
       resetPosition: () => Unit
@@ -110,7 +108,7 @@ object byteBufferMod {
     
     extension [Self <: ByteBuffer](x: Self) {
       
-      inline def setData(value: Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setGet(value: () => Double): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
       
@@ -118,15 +116,15 @@ object byteBufferMod {
       
       inline def setGetInt64(value: () => Double): Self = StObject.set(x, "getInt64", js.Any.fromFunction0(value))
       
-      inline def setInt32ArrayForConvert(value: Uint32Array): Self = StObject.set(x, "int32ArrayForConvert", value.asInstanceOf[js.Any])
+      inline def setInt32ArrayForConvert(value: js.typedarray.Uint32Array): Self = StObject.set(x, "int32ArrayForConvert", value.asInstanceOf[js.Any])
       
-      inline def setInt8ArrayForConvert(value: Uint8Array): Self = StObject.set(x, "int8ArrayForConvert", value.asInstanceOf[js.Any])
+      inline def setInt8ArrayForConvert(value: js.typedarray.Uint8Array): Self = StObject.set(x, "int8ArrayForConvert", value.asInstanceOf[js.Any])
       
       inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
       inline def setPut(value: Double => Unit): Self = StObject.set(x, "put", js.Any.fromFunction1(value))
       
-      inline def setPutArray(value: Uint8Array => Unit): Self = StObject.set(x, "putArray", js.Any.fromFunction1(value))
+      inline def setPutArray(value: js.typedarray.Uint8Array => Unit): Self = StObject.set(x, "putArray", js.Any.fromFunction1(value))
       
       inline def setPutInt32(value: Double => Unit): Self = StObject.set(x, "putInt32", js.Any.fromFunction1(value))
       

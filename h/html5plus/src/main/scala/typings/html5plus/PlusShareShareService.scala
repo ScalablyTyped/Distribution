@@ -40,11 +40,11 @@ trait PlusShareShareService extends StObject {
   def authorize(successCallback: js.Function1[/* result */ this.type, Unit]): Unit = js.native
   def authorize(
     successCallback: js.Function1[/* result */ this.type, Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def authorize(
     successCallback: js.Function1[/* result */ this.type, Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit],
+    errorCallback: js.Function1[/* result */ Any, Unit],
     options: PlusShareAuthOptions
   ): Unit = js.native
   def authorize(
@@ -52,10 +52,10 @@ trait PlusShareShareService extends StObject {
     errorCallback: Unit,
     options: PlusShareAuthOptions
   ): Unit = js.native
-  def authorize(successCallback: Unit, errorCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def authorize(successCallback: Unit, errorCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def authorize(
     successCallback: Unit,
-    errorCallback: js.Function1[/* result */ js.Any, Unit],
+    errorCallback: js.Function1[/* result */ Any, Unit],
     options: PlusShareAuthOptions
   ): Unit = js.native
   def authorize(successCallback: Unit, errorCallback: Unit, options: PlusShareAuthOptions): Unit = js.native
@@ -115,14 +115,14 @@ trait PlusShareShareService extends StObject {
     */
   def send(): Unit = js.native
   def send(msg: Unit, successCB: js.Function0[Unit]): Unit = js.native
-  def send(msg: Unit, successCB: js.Function0[Unit], errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def send(msg: Unit, successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def send(msg: Unit, successCB: js.Function0[Unit], errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
+  def send(msg: Unit, successCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def send(msg: PlusShareShareMessage): Unit = js.native
   def send(msg: PlusShareShareMessage, successCB: js.Function0[Unit]): Unit = js.native
   def send(
     msg: PlusShareShareMessage,
     successCB: js.Function0[Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def send(msg: PlusShareShareMessage, successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def send(msg: PlusShareShareMessage, successCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
 }

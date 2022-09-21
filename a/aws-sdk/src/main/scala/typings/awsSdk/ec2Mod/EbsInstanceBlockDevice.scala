@@ -9,7 +9,7 @@ trait EbsInstanceBlockDevice extends StObject {
   /**
     * The time stamp when the attachment initiated.
     */
-  var AttachTime: js.UndefOr[DateTime] = js.undefined
+  var AttachTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Indicates whether the volume is deleted on instance termination.
@@ -35,7 +35,7 @@ object EbsInstanceBlockDevice {
   
   extension [Self <: EbsInstanceBlockDevice](x: Self) {
     
-    inline def setAttachTime(value: DateTime): Self = StObject.set(x, "AttachTime", value.asInstanceOf[js.Any])
+    inline def setAttachTime(value: js.Date): Self = StObject.set(x, "AttachTime", value.asInstanceOf[js.Any])
     
     inline def setAttachTimeUndefined: Self = StObject.set(x, "AttachTime", js.undefined)
     

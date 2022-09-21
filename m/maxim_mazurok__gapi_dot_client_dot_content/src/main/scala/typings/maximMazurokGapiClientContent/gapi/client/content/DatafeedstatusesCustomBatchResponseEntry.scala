@@ -12,7 +12,7 @@ trait DatafeedstatusesCustomBatchResponseEntry extends StObject {
   /** The requested data feed status. Defined if and only if the request was successful. */
   var datafeedStatus: js.UndefOr[DatafeedStatus] = js.undefined
   
-  /** A list of errors defined if and only if the request failed. */
+  /** A list of errors for failed custombatch entries. *Note:* Schema errors fail the whole request. */
   var errors: js.UndefOr[Errors] = js.undefined
 }
 object DatafeedstatusesCustomBatchResponseEntry {

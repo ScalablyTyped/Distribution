@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Security.Authentication.Web.Provider
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Security.Authentication.Web.Core.WebProviderError
 import org.scalablytyped.runtime.StObject
@@ -12,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WebAccountProviderGetTokenSilentOperation extends StObject {
   
   /** Gets or sets the cache expiration time. */
-  var cacheExpirationTime: Date = js.native
+  var cacheExpirationTime: js.Date = js.native
   
   /** Gets the kind of web account provider operation. */
   var kind: WebAccountProviderOperationKind = js.native

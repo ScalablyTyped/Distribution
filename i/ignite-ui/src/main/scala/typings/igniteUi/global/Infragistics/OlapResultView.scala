@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.OlapResultView")
 @js.native
-class OlapResultView protected ()
+open class OlapResultView protected ()
   extends StObject
      with typings.igniteUi.Infragistics.OlapResultView {
   def this(options: OlapResultViewOptions) = this()

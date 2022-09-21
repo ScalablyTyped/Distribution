@@ -12,7 +12,7 @@ trait Filter extends StObject {
   var Name: js.UndefOr[String] = js.undefined
   
   /**
-    * The filter values. Filter values are case-sensitive.
+    * The filter values. Filter values are case-sensitive. If you specify multiple values for a filter, the values are joined with an OR, and the request returns all results that match any of the specified values.
     */
   var Values: js.UndefOr[ValueStringList] = js.undefined
 }
@@ -33,6 +33,6 @@ object Filter {
     
     inline def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
-    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "Values", js.Array(value*))
   }
 }

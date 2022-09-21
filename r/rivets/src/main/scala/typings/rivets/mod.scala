@@ -41,7 +41,7 @@ object mod {
       // Global formatters.
       var formatters: js.Object = js.native
       
-      def handler(context: js.Any, ev: Event, biding: js.Any): Unit = js.native
+      def handler(context: Any, ev: Event, biding: Any): Unit = js.native
       
       // Default attribute prefix.
       var prefix: String = js.native

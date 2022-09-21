@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SmartCardReader extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_cardadded(`type`: cardadded, listener: TypedEventHandler[SmartCardReader, CardAddedEventArgs]): Unit = js.native
   @JSName("addEventListener")
@@ -28,7 +28,7 @@ trait SmartCardReader extends StObject {
     * Returns a list of info about all smart cards that are connected to the smart card reader.
     * @return After the operation completes, returns the list of info about all smart cards that are connected to the smart card reader.
     */
-  def findAllCardsAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+  def findAllCardsAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
   
   /**
     * Returns the smart card reader's status.
@@ -54,7 +54,7 @@ trait SmartCardReader extends StObject {
   @JSName("oncardremoved")
   var oncardremoved_Original: TypedEventHandler[SmartCardReader, CardRemovedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_cardadded(`type`: cardadded, listener: TypedEventHandler[SmartCardReader, CardAddedEventArgs]): Unit = js.native
   @JSName("removeEventListener")

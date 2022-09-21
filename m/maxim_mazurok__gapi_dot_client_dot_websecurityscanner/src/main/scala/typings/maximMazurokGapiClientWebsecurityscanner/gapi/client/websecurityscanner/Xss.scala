@@ -39,7 +39,7 @@ object Xss {
     
     inline def setStackTracesUndefined: Self = StObject.set(x, "stackTraces", js.undefined)
     
-    inline def setStackTracesVarargs(value: String*): Self = StObject.set(x, "stackTraces", js.Array(value :_*))
+    inline def setStackTracesVarargs(value: String*): Self = StObject.set(x, "stackTraces", js.Array(value*))
     
     inline def setStoredXssSeedingUrl(value: String): Self = StObject.set(x, "storedXssSeedingUrl", value.asInstanceOf[js.Any])
     

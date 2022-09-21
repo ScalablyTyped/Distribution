@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "EngineInstrumentation")
 @js.native
-class EngineInstrumentation protected ()
+open class EngineInstrumentation protected ()
   extends typings.babylonjs.indexMod.EngineInstrumentation {
   /**
     * Instantiates a new engine instrumentation.

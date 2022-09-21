@@ -57,7 +57,7 @@ object SendBounceRequest {
     
     inline def setBouncedRecipientInfoList(value: BouncedRecipientInfoList): Self = StObject.set(x, "BouncedRecipientInfoList", value.asInstanceOf[js.Any])
     
-    inline def setBouncedRecipientInfoListVarargs(value: BouncedRecipientInfo*): Self = StObject.set(x, "BouncedRecipientInfoList", js.Array(value :_*))
+    inline def setBouncedRecipientInfoListVarargs(value: BouncedRecipientInfo*): Self = StObject.set(x, "BouncedRecipientInfoList", js.Array(value*))
     
     inline def setExplanation(value: Explanation): Self = StObject.set(x, "Explanation", value.asInstanceOf[js.Any])
     

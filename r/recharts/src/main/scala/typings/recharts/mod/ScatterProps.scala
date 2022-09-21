@@ -123,8 +123,6 @@ trait ScatterProps extends StObject {
     normal | bold | bolder | lighter | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900` | inherit
   ] = js.undefined
   
-  var glyphOrientationVertical: js.UndefOr[String] = js.undefined
-  
   var height: js.UndefOr[Double] = js.undefined
   
   var hide: js.UndefOr[Boolean] = js.undefined
@@ -200,7 +198,7 @@ trait ScatterProps extends StObject {
   var r: js.UndefOr[Double] = js.undefined
   
   var shape: js.UndefOr[
-    circle | cross | diamond | square | star | triangle | wye | ReactElement | ContentRenderer[js.Any]
+    circle | cross | diamond | square | star | triangle | wye | ReactElement | ContentRenderer[Any]
   ] = js.undefined
   
   var shapeRendering: js.UndefOr[auto | optimizeSpeed | crispEdges | geometricPrecision | inherit] = js.undefined
@@ -340,13 +338,13 @@ object ScatterProps {
     
     inline def setDataKey(value: DataKey): Self = StObject.set(x, "dataKey", value.asInstanceOf[js.Any])
     
-    inline def setDataKeyFunction1(value: /* dataObject */ js.Any => String | Double | (js.Tuple2[Double, Double]) | Null): Self = StObject.set(x, "dataKey", js.Any.fromFunction1(value))
+    inline def setDataKeyFunction1(value: /* dataObject */ Any => String | Double | (js.Tuple2[Double, Double]) | Null): Self = StObject.set(x, "dataKey", js.Any.fromFunction1(value))
     
     inline def setDataKeyUndefined: Self = StObject.set(x, "dataKey", js.undefined)
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: js.Object*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: js.Object*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
@@ -425,10 +423,6 @@ object ScatterProps {
     ): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
     inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
-    
-    inline def setGlyphOrientationVertical(value: String): Self = StObject.set(x, "glyphOrientationVertical", value.asInstanceOf[js.Any])
-    
-    inline def setGlyphOrientationVerticalUndefined: Self = StObject.set(x, "glyphOrientationVertical", js.undefined)
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
@@ -576,17 +570,17 @@ object ScatterProps {
     
     inline def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
     
-    inline def setPointsVarargs(value: ScatterPoint*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: ScatterPoint*): Self = StObject.set(x, "points", js.Array(value*))
     
     inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     
     inline def setRUndefined: Self = StObject.set(x, "r", js.undefined)
     
     inline def setShape(
-      value: circle | cross | diamond | square | star | triangle | wye | ReactElement | ContentRenderer[js.Any]
+      value: circle | cross | diamond | square | star | triangle | wye | ReactElement | ContentRenderer[Any]
     ): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
-    inline def setShapeFunction1(value: js.Any => ReactNode): Self = StObject.set(x, "shape", js.Any.fromFunction1(value))
+    inline def setShapeFunction1(value: Any => ReactNode): Self = StObject.set(x, "shape", js.Any.fromFunction1(value))
     
     inline def setShapeRendering(value: auto | optimizeSpeed | crispEdges | geometricPrecision | inherit): Self = StObject.set(x, "shapeRendering", value.asInstanceOf[js.Any])
     

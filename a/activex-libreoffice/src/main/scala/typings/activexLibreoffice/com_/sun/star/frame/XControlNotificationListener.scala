@@ -25,7 +25,7 @@ object XControlNotificationListener {
   inline def apply(
     acquire: () => Unit,
     controlEvent: ControlEvent => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XControlNotificationListener = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), controlEvent = js.Any.fromFunction1(controlEvent), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

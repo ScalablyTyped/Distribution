@@ -10,10 +10,10 @@ utility to return a react components display name
 | ------------------ | :-------------: |
 | Full name          | react-display-name |
 | Keywords           | react, redux, getDisplayName |
-| # releases         | 2 |
-| # dependents       | 165 |
-| # downloads        | 11383717 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1409259.3333333333 |
+| # stars            | 58.0 |
 
 ## Links
 - [Homepage](https://github.com/jurassix/react-display-name#readme)

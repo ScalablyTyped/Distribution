@@ -24,6 +24,6 @@ object GetContactMethodsResult {
     
     inline def setContactMethodsUndefined: Self = StObject.set(x, "contactMethods", js.undefined)
     
-    inline def setContactMethodsVarargs(value: ContactMethod*): Self = StObject.set(x, "contactMethods", js.Array(value :_*))
+    inline def setContactMethodsVarargs(value: ContactMethod*): Self = StObject.set(x, "contactMethods", js.Array(value*))
   }
 }

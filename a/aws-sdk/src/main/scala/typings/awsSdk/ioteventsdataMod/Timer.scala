@@ -12,13 +12,13 @@ trait Timer extends StObject {
   var name: TimerName
   
   /**
-    * The number of seconds which have elapsed on the timer.
+    * The expiration time for the timer.
     */
-  var timestamp: Timestamp
+  var timestamp: js.Date
 }
 object Timer {
   
-  inline def apply(name: TimerName, timestamp: Timestamp): Timer = {
+  inline def apply(name: TimerName, timestamp: js.Date): Timer = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[Timer]
   }
@@ -27,6 +27,6 @@ object Timer {
     
     inline def setName(value: TimerName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

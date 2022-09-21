@@ -1,7 +1,6 @@
 package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +20,7 @@ trait InformationNode extends StObject {
   /**
     * Date this node was last modified
     */
-  var lastModifiedDate: Date
+  var lastModifiedDate: js.Date
   
   /**
     * Node Id of this information node
@@ -43,7 +42,7 @@ object InformationNode {
   inline def apply(
     fields: StringDictionary[String],
     lastModifiedBy: String,
-    lastModifiedDate: Date,
+    lastModifiedDate: js.Date,
     nodeId: Double,
     parentId: Double,
     `type`: String
@@ -59,7 +58,7 @@ object InformationNode {
     
     inline def setLastModifiedBy(value: String): Self = StObject.set(x, "lastModifiedBy", value.asInstanceOf[js.Any])
     
-    inline def setLastModifiedDate(value: Date): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: js.Date): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setNodeId(value: Double): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     

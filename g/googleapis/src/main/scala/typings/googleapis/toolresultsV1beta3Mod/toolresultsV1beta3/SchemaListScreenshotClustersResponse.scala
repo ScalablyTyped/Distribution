@@ -24,6 +24,6 @@ object SchemaListScreenshotClustersResponse {
     
     inline def setClustersUndefined: Self = StObject.set(x, "clusters", js.undefined)
     
-    inline def setClustersVarargs(value: SchemaScreenshotCluster*): Self = StObject.set(x, "clusters", js.Array(value :_*))
+    inline def setClustersVarargs(value: SchemaScreenshotCluster*): Self = StObject.set(x, "clusters", js.Array(value*))
   }
 }

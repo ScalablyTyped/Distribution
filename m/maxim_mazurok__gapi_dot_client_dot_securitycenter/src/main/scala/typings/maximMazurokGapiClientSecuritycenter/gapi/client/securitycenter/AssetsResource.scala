@@ -6,7 +6,7 @@ import typings.maximMazurokGapiClientSecuritycenter.anon.Alt
 import typings.maximMazurokGapiClientSecuritycenter.anon.Callback
 import typings.maximMazurokGapiClientSecuritycenter.anon.Fields
 import typings.maximMazurokGapiClientSecuritycenter.anon.Key
-import typings.maximMazurokGapiClientSecuritycenter.anon.Name
+import typings.maximMazurokGapiClientSecuritycenter.anon.Oauthtoken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,9 +27,9 @@ trait AssetsResource extends StObject {
     * Runs asset discovery. The discovery is tracked with a long-running operation. This API can only be called with limited frequency for an organization. If it is called too frequently
     * the caller will receive a TOO_MANY_REQUESTS error.
     */
-  def runDiscovery(request: Fields): Request[Operation] = js.native
+  def runDiscovery(request: Oauthtoken): Request[Operation] = js.native
   
   /** Updates security marks. */
-  def updateSecurityMarks(request: Key): Request[SecurityMarks] = js.native
-  def updateSecurityMarks(request: Name, body: SecurityMarks): Request[SecurityMarks] = js.native
+  def updateSecurityMarks(request: Fields): Request[SecurityMarks] = js.native
+  def updateSecurityMarks(request: Key, body: SecurityMarks): Request[SecurityMarks] = js.native
 }

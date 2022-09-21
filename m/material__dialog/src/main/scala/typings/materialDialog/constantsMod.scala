@@ -17,6 +17,11 @@ object constantsMod {
     def CLOSING: String = js.native
     inline def CLOSING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSING")(x.asInstanceOf[js.Any])
     
+    @JSImport("@material/dialog/constants", "cssClasses.FULLSCREEN")
+    @js.native
+    def FULLSCREEN: String = js.native
+    inline def FULLSCREEN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FULLSCREEN")(x.asInstanceOf[js.Any])
+    
     @JSImport("@material/dialog/constants", "cssClasses.OPEN")
     @js.native
     def OPEN: String = js.native
@@ -28,10 +33,25 @@ object constantsMod {
     
     inline def OPEN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPEN")(x.asInstanceOf[js.Any])
     
+    @JSImport("@material/dialog/constants", "cssClasses.SCRIM_HIDDEN")
+    @js.native
+    def SCRIM_HIDDEN: String = js.native
+    inline def SCRIM_HIDDEN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SCRIM_HIDDEN")(x.asInstanceOf[js.Any])
+    
     @JSImport("@material/dialog/constants", "cssClasses.SCROLLABLE")
     @js.native
     def SCROLLABLE: String = js.native
     inline def SCROLLABLE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SCROLLABLE")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/dialog/constants", "cssClasses.SCROLL_DIVIDER_FOOTER")
+    @js.native
+    def SCROLL_DIVIDER_FOOTER: String = js.native
+    inline def SCROLL_DIVIDER_FOOTER_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SCROLL_DIVIDER_FOOTER")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/dialog/constants", "cssClasses.SCROLL_DIVIDER_HEADER")
+    @js.native
+    def SCROLL_DIVIDER_HEADER: String = js.native
+    inline def SCROLL_DIVIDER_HEADER_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SCROLL_DIVIDER_HEADER")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/dialog/constants", "cssClasses.SCROLL_LOCK")
     @js.native
@@ -42,6 +62,21 @@ object constantsMod {
     @js.native
     def STACKED: String = js.native
     inline def STACKED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STACKED")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/dialog/constants", "cssClasses.SURFACE_SCRIM_HIDING")
+    @js.native
+    def SURFACE_SCRIM_HIDING: String = js.native
+    inline def SURFACE_SCRIM_HIDING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SURFACE_SCRIM_HIDING")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/dialog/constants", "cssClasses.SURFACE_SCRIM_SHOWING")
+    @js.native
+    def SURFACE_SCRIM_SHOWING: String = js.native
+    inline def SURFACE_SCRIM_SHOWING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SURFACE_SCRIM_SHOWING")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/dialog/constants", "cssClasses.SURFACE_SCRIM_SHOWN")
+    @js.native
+    def SURFACE_SCRIM_SHOWN: String = js.native
+    inline def SURFACE_SCRIM_SHOWN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SURFACE_SCRIM_SHOWN")(x.asInstanceOf[js.Any])
   }
   
   object numbers {

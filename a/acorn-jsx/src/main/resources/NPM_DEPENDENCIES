@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "acorn-jsx" : "5.3.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "acorn-jsx" : "5.3.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

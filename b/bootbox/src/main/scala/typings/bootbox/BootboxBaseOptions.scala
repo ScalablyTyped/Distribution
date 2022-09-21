@@ -20,7 +20,7 @@ trait BootboxBaseOptions[T] extends StObject {
   
   var buttons: js.UndefOr[BootboxButtonMap] = js.undefined
   
-  var callback: js.UndefOr[js.Function1[/* result */ T, js.Any]] = js.undefined
+  var callback: js.UndefOr[js.Function1[/* result */ T, Any]] = js.undefined
   
   var className: js.UndefOr[String] = js.undefined
   
@@ -28,7 +28,7 @@ trait BootboxBaseOptions[T] extends StObject {
   
   var locale: js.UndefOr[String] = js.undefined
   
-  var onEscape: js.UndefOr[js.Function0[js.Any] | Boolean] = js.undefined
+  var onEscape: js.UndefOr[js.Function0[Any] | Boolean] = js.undefined
   
   // complex object where each key is of type BootboxButton
   var scrollable: js.UndefOr[Boolean] = js.undefined
@@ -61,7 +61,7 @@ object BootboxBaseOptions {
     
     inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    inline def setCallback(value: /* result */ T => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+    inline def setCallback(value: /* result */ T => Any): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
@@ -77,9 +77,9 @@ object BootboxBaseOptions {
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    inline def setOnEscape(value: js.Function0[js.Any] | Boolean): Self = StObject.set(x, "onEscape", value.asInstanceOf[js.Any])
+    inline def setOnEscape(value: js.Function0[Any] | Boolean): Self = StObject.set(x, "onEscape", value.asInstanceOf[js.Any])
     
-    inline def setOnEscapeFunction0(value: () => js.Any): Self = StObject.set(x, "onEscape", js.Any.fromFunction0(value))
+    inline def setOnEscapeFunction0(value: () => Any): Self = StObject.set(x, "onEscape", js.Any.fromFunction0(value))
     
     inline def setOnEscapeUndefined: Self = StObject.set(x, "onEscape", js.undefined)
     

@@ -6,13 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("chrome.cast.ReceiverDisplayStatus")
 @js.native
-class ReceiverDisplayStatus protected ()
+open class ReceiverDisplayStatus protected ()
   extends StObject
      with typings.chrome.chrome.cast.ReceiverDisplayStatus {
   /**
-    * @param {string} statusText
-    * @param {!Array<chrome.cast.Image>} appImages
-    * @constructor
+    * @param statusText
+    * @param appImages
     * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.ReceiverDisplayStatus
     */
   def this(statusText: String, appImages: js.Array[typings.chrome.chrome.cast.Image]) = this()

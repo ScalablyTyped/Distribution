@@ -24,6 +24,6 @@ object IOpList {
     
     inline def setOpUndefined: Self = StObject.set(x, "op", js.undefined)
     
-    inline def setOpVarargs(value: IOpDef*): Self = StObject.set(x, "op", js.Array(value :_*))
+    inline def setOpVarargs(value: IOpDef*): Self = StObject.set(x, "op", js.Array(value*))
   }
 }

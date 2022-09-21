@@ -32,7 +32,7 @@ object XSAXDocumentBuilder2 {
     getState: () => SAXDocumentBuilderState,
     ignorableWhitespace: String => Unit,
     processingInstruction: (String, String) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     reset: () => Unit,
     setDocumentLocator: XLocator => Unit,

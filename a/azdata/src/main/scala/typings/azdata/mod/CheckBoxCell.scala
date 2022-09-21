@@ -14,7 +14,7 @@ trait CheckBoxCell
 }
 object CheckBoxCell {
   
-  inline def apply(checked: Boolean, column: Double, columnName: String, row: Double, value: js.Any): CheckBoxCell = {
+  inline def apply(checked: Boolean, column: Double, columnName: String, row: Double, value: Any): CheckBoxCell = {
     val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], columnName = columnName.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckBoxCell]
   }

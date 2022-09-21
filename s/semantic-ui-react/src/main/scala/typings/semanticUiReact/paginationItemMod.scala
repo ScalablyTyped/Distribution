@@ -19,15 +19,15 @@ object paginationItemMod {
   
   @JSImport("semantic-ui-react/dist/commonjs/addons/Pagination/PaginationItem", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[PaginationItemProps, js.Object, js.Any]
+  open class default ()
+    extends Component[PaginationItemProps, js.Object, Any]
   
-  type PaginationItem = Component[PaginationItemProps, js.Object, js.Any]
+  type PaginationItem = Component[PaginationItemProps, js.Object, Any]
   
   trait PaginationItemProps
     extends StObject
        with StrictPaginationItemProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object PaginationItemProps {
     
     inline def apply(): PaginationItemProps = {

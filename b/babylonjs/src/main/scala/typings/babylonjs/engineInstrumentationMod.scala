@@ -11,7 +11,7 @@ object engineInstrumentationMod {
   
   @JSImport("babylonjs/Instrumentation/engineInstrumentation", "EngineInstrumentation")
   @js.native
-  class EngineInstrumentation protected ()
+  open class EngineInstrumentation protected ()
     extends StObject
        with IDisposable {
     /**
@@ -25,23 +25,19 @@ object engineInstrumentationMod {
       */
     engine: Engine) = this()
     
-    /* private */ var _captureGPUFrameTime: js.Any = js.native
+    /* private */ var _captureGPUFrameTime: Any = js.native
     
-    /* private */ var _captureShaderCompilationTime: js.Any = js.native
+    /* private */ var _captureShaderCompilationTime: Any = js.native
     
-    /* private */ var _gpuFrameTime: js.Any = js.native
+    /* private */ var _onAfterShaderCompilationObserver: Any = js.native
     
-    /* private */ var _gpuFrameTimeToken: js.Any = js.native
+    /* private */ var _onBeforeShaderCompilationObserver: Any = js.native
     
-    /* private */ var _onAfterShaderCompilationObserver: js.Any = js.native
+    /* private */ var _onBeginFrameObserver: Any = js.native
     
-    /* private */ var _onBeforeShaderCompilationObserver: js.Any = js.native
+    /* private */ var _onEndFrameObserver: Any = js.native
     
-    /* private */ var _onBeginFrameObserver: js.Any = js.native
-    
-    /* private */ var _onEndFrameObserver: js.Any = js.native
-    
-    /* private */ var _shaderCompilationTime: js.Any = js.native
+    /* private */ var _shaderCompilationTime: Any = js.native
     
     /**
       * Gets the GPU frame time capture status

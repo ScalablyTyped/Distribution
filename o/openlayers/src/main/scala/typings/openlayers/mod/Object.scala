@@ -50,8 +50,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @fires ol.ObjectEvent
   * @api
   */
-class Object () extends Observable {
-  def this(opt_values: StringDictionary[js.Any]) = this()
+open class Object () extends Observable {
+  def this(opt_values: StringDictionary[Any]) = this()
   
   /**
     * Gets a value.
@@ -59,7 +59,7 @@ class Object () extends Observable {
     * @return Value.
     * @api stable
     */
-  def get(key: String): js.Any = js.native
+  def get(key: String): Any = js.native
   
   /**
     * Get a list of object property names.
@@ -73,7 +73,7 @@ class Object () extends Observable {
     * @return Object.
     * @api stable
     */
-  def getProperties(): StringDictionary[js.Any] = js.native
+  def getProperties(): StringDictionary[Any] = js.native
   
   /**
     * Sets a value.
@@ -82,8 +82,8 @@ class Object () extends Observable {
     * @param opt_silent Update without triggering an event.
     * @api stable
     */
-  def set(key: String, value: js.Any): Unit = js.native
-  def set(key: String, value: js.Any, opt_silent: Boolean): Unit = js.native
+  def set(key: String, value: Any): Unit = js.native
+  def set(key: String, value: Any, opt_silent: Boolean): Unit = js.native
   
   /**
     * Sets a collection of key-value pairs.  Note that this changes any existing
@@ -92,8 +92,8 @@ class Object () extends Observable {
     * @param opt_silent Update without triggering an event.
     * @api stable
     */
-  def setProperties(values: StringDictionary[js.Any]): Unit = js.native
-  def setProperties(values: StringDictionary[js.Any], opt_silent: Boolean): Unit = js.native
+  def setProperties(values: StringDictionary[Any]): Unit = js.native
+  def setProperties(values: StringDictionary[Any], opt_silent: Boolean): Unit = js.native
   
   /**
     * Unsets a property.

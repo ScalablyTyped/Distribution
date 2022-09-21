@@ -11,22 +11,22 @@ trait UpsertExpression
      with PartialStatement
      with Instantiable7[
       /* prev */ PartialStatement, 
-      /* upsertExpr */ js.Any, 
-      /* insertExpr */ js.Any, 
+      /* upsertExpr */ Any, 
+      /* insertExpr */ Any, 
       /* replace */ Boolean, 
-      /* updateOrReplaceExpr */ js.Any, 
-      /* collection */ js.Any, 
-      /* options */ js.Any, 
+      /* updateOrReplaceExpr */ Any, 
+      /* collection */ Any, 
+      /* options */ Any, 
       PartialStatement
     ] {
   
   var _updateOrReplace: String = js.native
   
-  def options(newOpts: js.Any): UpsertExpression = js.native
+  def options(newOpts: Any): UpsertExpression = js.native
   
-  def returnNew(x: js.Any): ReturnExpression = js.native
+  def returnNew(x: Any): ReturnExpression = js.native
   
-  def returnOld(x: js.Any): ReturnExpression = js.native
+  def returnOld(x: Any): ReturnExpression = js.native
   
   def toAQL(): String = js.native
 }

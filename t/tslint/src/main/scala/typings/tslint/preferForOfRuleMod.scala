@@ -11,7 +11,7 @@ object preferForOfRuleMod {
   
   @JSImport("tslint/lib/rules/preferForOfRule", "Rule")
   @js.native
-  class Rule protected () extends AbstractRule {
+  open class Rule protected () extends AbstractRule {
     def this(options: IOptions) = this()
   }
   /* static members */

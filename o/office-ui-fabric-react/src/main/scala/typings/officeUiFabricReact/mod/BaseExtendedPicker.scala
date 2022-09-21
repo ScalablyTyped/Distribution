@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react", "BaseExtendedPicker")
 @js.native
-class BaseExtendedPicker[T, P /* <: IBaseExtendedPickerProps[T] */] protected ()
+open class BaseExtendedPicker[T, P /* <: IBaseExtendedPickerProps[T] */] protected ()
   extends typings.officeUiFabricReact.libExtendedPickerMod.BaseExtendedPicker[T, P] {
   def this(basePickerProps: P) = this()
 }

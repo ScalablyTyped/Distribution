@@ -332,7 +332,7 @@ object createjs {
     
     var pan: Double
     
-    def set(props: js.Any): PlayPropsConfig
+    def set(props: Any): PlayPropsConfig
     
     var startTime: Double
     
@@ -347,7 +347,7 @@ object createjs {
       loop: Double,
       offset: Double,
       pan: Double,
-      set: js.Any => PlayPropsConfig,
+      set: Any => PlayPropsConfig,
       startTime: Double,
       volume: Double
     ): PlayPropsConfig = {
@@ -369,7 +369,7 @@ object createjs {
       
       inline def setPan(value: Double): Self = StObject.set(x, "pan", value.asInstanceOf[js.Any])
       
-      inline def setSet(value: js.Any => PlayPropsConfig): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+      inline def setSet(value: Any => PlayPropsConfig): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
       
       inline def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       

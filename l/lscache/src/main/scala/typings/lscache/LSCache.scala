@@ -27,7 +27,7 @@ trait LSCache extends StObject {
     * @param {string} key
     * @return {string|Object}
     */
-  def get(key: String): js.Any = js.native
+  def get(key: String): Any = js.native
   
   /**
     * @returns {number} The currently set number of milliseconds each time unit represents in
@@ -54,8 +54,8 @@ trait LSCache extends StObject {
     * @param {number} time
     * @return true if the value was inserted successfully
     */
-  def set(key: String, value: js.Any): Boolean = js.native
-  def set(key: String, value: js.Any, time: Double): Boolean = js.native
+  def set(key: String, value: Any): Boolean = js.native
+  def set(key: String, value: Any, time: Double): Boolean = js.native
   
   /**
     * Appends CACHE_PREFIX so lscache will partition data in to different buckets.

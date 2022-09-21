@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "rehype-retext" : "3.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "rehype-retext" : "3.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

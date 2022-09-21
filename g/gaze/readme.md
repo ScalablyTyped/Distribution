@@ -10,10 +10,10 @@ A globbing fs.watch wrapper built from the best parts of other fine watch libs.
 | ------------------ | :-------------: |
 | Full name          | gaze |
 | Keywords           | watch, glob |
-| # releases         | 0 |
-| # dependents       | 485 |
-| # downloads        | 280427912 |
-| # stars            | 40 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.9798010666666668E7 |
+| # stars            | 1152.0 |
 
 ## Links
 - [Homepage](https://github.com/shama/gaze)

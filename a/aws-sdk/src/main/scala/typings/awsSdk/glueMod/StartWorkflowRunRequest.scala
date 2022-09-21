@@ -10,6 +10,11 @@ trait StartWorkflowRunRequest extends StObject {
     * The name of the workflow to start.
     */
   var Name: NameString
+  
+  /**
+    * The workflow run properties for the new workflow run.
+    */
+  var RunProperties: js.UndefOr[WorkflowRunProperties] = js.undefined
 }
 object StartWorkflowRunRequest {
   
@@ -21,5 +26,9 @@ object StartWorkflowRunRequest {
   extension [Self <: StartWorkflowRunRequest](x: Self) {
     
     inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    
+    inline def setRunProperties(value: WorkflowRunProperties): Self = StObject.set(x, "RunProperties", value.asInstanceOf[js.Any])
+    
+    inline def setRunPropertiesUndefined: Self = StObject.set(x, "RunProperties", js.undefined)
   }
 }

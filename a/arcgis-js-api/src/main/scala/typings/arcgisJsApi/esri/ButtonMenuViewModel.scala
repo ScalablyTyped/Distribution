@@ -19,6 +19,8 @@ trait ButtonMenuViewModel
   /**
     * Indicates if the menu content is visible.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-support-ButtonMenuViewModel.html#open)
     */
   var open: Boolean = js.native

@@ -104,10 +104,10 @@ object anon {
   @js.native
   trait FnCallFilepathContentsReplacerSpace extends StObject {
     
-    def apply(filepath: String, contents: js.Any): String = js.native
-    def apply(filepath: String, contents: js.Any, replacer: Unit, space: WriteJsonSpace): String = js.native
-    def apply(filepath: String, contents: js.Any, replacer: WriteJsonReplacer): String = js.native
-    def apply(filepath: String, contents: js.Any, replacer: WriteJsonReplacer, space: WriteJsonSpace): String = js.native
+    def apply(filepath: String, contents: Any): String = js.native
+    def apply(filepath: String, contents: Any, replacer: Unit, space: WriteJsonSpace): String = js.native
+    def apply(filepath: String, contents: Any, replacer: WriteJsonReplacer): String = js.native
+    def apply(filepath: String, contents: Any, replacer: WriteJsonReplacer, space: WriteJsonSpace): String = js.native
   }
   
   @js.native

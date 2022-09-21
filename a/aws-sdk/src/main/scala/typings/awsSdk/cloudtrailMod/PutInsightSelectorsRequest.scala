@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PutInsightSelectorsRequest extends StObject {
   
   /**
-    * A JSON string that contains the insight types you want to log on a trail. In this release, only ApiCallRateInsight is supported as an insight type.
+    * A JSON string that contains the insight types you want to log on a trail. ApiCallRateInsight and ApiErrorRateInsight are valid insight types.
     */
   var InsightSelectors: typings.awsSdk.cloudtrailMod.InsightSelectors
   
@@ -27,7 +27,7 @@ object PutInsightSelectorsRequest {
     
     inline def setInsightSelectors(value: InsightSelectors): Self = StObject.set(x, "InsightSelectors", value.asInstanceOf[js.Any])
     
-    inline def setInsightSelectorsVarargs(value: InsightSelector*): Self = StObject.set(x, "InsightSelectors", js.Array(value :_*))
+    inline def setInsightSelectorsVarargs(value: InsightSelector*): Self = StObject.set(x, "InsightSelectors", js.Array(value*))
     
     inline def setTrailName(value: String): Self = StObject.set(x, "TrailName", value.asInstanceOf[js.Any])
   }

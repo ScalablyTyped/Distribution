@@ -49,7 +49,7 @@ object DescribeSavingsPlansRequest {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    inline def setFiltersVarargs(value: SavingsPlanFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: SavingsPlanFilter*): Self = StObject.set(x, "filters", js.Array(value*))
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
@@ -63,18 +63,18 @@ object DescribeSavingsPlansRequest {
     
     inline def setSavingsPlanArnsUndefined: Self = StObject.set(x, "savingsPlanArns", js.undefined)
     
-    inline def setSavingsPlanArnsVarargs(value: SavingsPlanArn*): Self = StObject.set(x, "savingsPlanArns", js.Array(value :_*))
+    inline def setSavingsPlanArnsVarargs(value: SavingsPlanArn*): Self = StObject.set(x, "savingsPlanArns", js.Array(value*))
     
     inline def setSavingsPlanIds(value: SavingsPlanIdList): Self = StObject.set(x, "savingsPlanIds", value.asInstanceOf[js.Any])
     
     inline def setSavingsPlanIdsUndefined: Self = StObject.set(x, "savingsPlanIds", js.undefined)
     
-    inline def setSavingsPlanIdsVarargs(value: SavingsPlanId*): Self = StObject.set(x, "savingsPlanIds", js.Array(value :_*))
+    inline def setSavingsPlanIdsVarargs(value: SavingsPlanId*): Self = StObject.set(x, "savingsPlanIds", js.Array(value*))
     
     inline def setStates(value: SavingsPlanStateList): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     
     inline def setStatesUndefined: Self = StObject.set(x, "states", js.undefined)
     
-    inline def setStatesVarargs(value: SavingsPlanState*): Self = StObject.set(x, "states", js.Array(value :_*))
+    inline def setStatesVarargs(value: SavingsPlanState*): Self = StObject.set(x, "states", js.Array(value*))
   }
 }

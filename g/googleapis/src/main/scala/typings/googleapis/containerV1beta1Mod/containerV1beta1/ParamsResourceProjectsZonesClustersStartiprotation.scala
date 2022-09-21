@@ -1,9 +1,5 @@
 package typings.googleapis.containerV1beta1Mod.containerV1beta1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,20 +9,12 @@ trait ParamsResourceProjectsZonesClustersStartiprotation
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Deprecated. The name of the cluster. This field has been deprecated and
-    * replaced by the name field.
+    * Required. Deprecated. The name of the cluster. This field has been deprecated and replaced by the name field.
     */
   var clusterId: js.UndefOr[String] = js.undefined
   
   /**
-    * Deprecated. The Google Developers Console [project ID or project
-    * number](https://developers.google.com/console/help/new/#projectnumber).
-    * This field has been deprecated and replaced by the name field.
+    * Required. Deprecated. The Google Developers Console [project ID or project number](https://cloud.google.com/resource-manager/docs/creating-managing-projects). This field has been deprecated and replaced by the name field.
     */
   var projectId: js.UndefOr[String] = js.undefined
   
@@ -36,9 +24,7 @@ trait ParamsResourceProjectsZonesClustersStartiprotation
   var requestBody: js.UndefOr[SchemaStartIPRotationRequest] = js.undefined
   
   /**
-    * Deprecated. The name of the Google Compute Engine
-    * [zone](/compute/docs/zones#available) in which the cluster resides. This
-    * field has been deprecated and replaced by the name field.
+    * Required. Deprecated. The name of the Google Compute Engine [zone](https://cloud.google.com/compute/docs/zones#available) in which the cluster resides. This field has been deprecated and replaced by the name field.
     */
   var zone: js.UndefOr[String] = js.undefined
 }
@@ -50,10 +36,6 @@ object ParamsResourceProjectsZonesClustersStartiprotation {
   }
   
   extension [Self <: ParamsResourceProjectsZonesClustersStartiprotation](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setClusterId(value: String): Self = StObject.set(x, "clusterId", value.asInstanceOf[js.Any])
     

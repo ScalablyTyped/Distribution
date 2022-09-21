@@ -37,7 +37,7 @@ trait MapImageLayerFetchImageOptions
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#fetchImage)
     */
-  var timeExtent: js.UndefOr[js.Any] = js.undefined
+  var timeExtent: js.UndefOr[Any] = js.undefined
 }
 object MapImageLayerFetchImageOptions {
   
@@ -64,7 +64,7 @@ object MapImageLayerFetchImageOptions {
     
     inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
-    inline def setTimeExtent(value: js.Any): Self = StObject.set(x, "timeExtent", value.asInstanceOf[js.Any])
+    inline def setTimeExtent(value: Any): Self = StObject.set(x, "timeExtent", value.asInstanceOf[js.Any])
     
     inline def setTimeExtentUndefined: Self = StObject.set(x, "timeExtent", js.undefined)
   }

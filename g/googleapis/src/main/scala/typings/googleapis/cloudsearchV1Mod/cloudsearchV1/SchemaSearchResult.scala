@@ -4,15 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Results containing indexed information for a document.
-  */
 trait SchemaSearchResult extends StObject {
   
   /**
-    * If source is clustered, provide list of clustered results. There will
-    * only be one level of clustered results. If current source is not enabled
-    * for clustering, this field will be empty.
+    * If source is clustered, provide list of clustered results. There will only be one level of clustered results. If current source is not enabled for clustering, this field will be empty.
     */
   var clusteredResults: js.UndefOr[js.Array[SchemaSearchResult]] = js.undefined
   
@@ -34,13 +29,12 @@ trait SchemaSearchResult extends StObject {
   /**
     * Title of the search result.
     */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The URL of the search result. The URL contains a Google redirect to the
-    * actual item.
+    * The URL of the search result. The URL contains a Google redirect to the actual item. This URL is signed and shouldn't be changed.
     */
-  var url: js.UndefOr[String] = js.undefined
+  var url: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaSearchResult {
   
@@ -55,7 +49,7 @@ object SchemaSearchResult {
     
     inline def setClusteredResultsUndefined: Self = StObject.set(x, "clusteredResults", js.undefined)
     
-    inline def setClusteredResultsVarargs(value: SchemaSearchResult*): Self = StObject.set(x, "clusteredResults", js.Array(value :_*))
+    inline def setClusteredResultsVarargs(value: SchemaSearchResult*): Self = StObject.set(x, "clusteredResults", js.Array(value*))
     
     inline def setDebugInfo(value: SchemaResultDebugInfo): Self = StObject.set(x, "debugInfo", value.asInstanceOf[js.Any])
     
@@ -71,9 +65,13 @@ object SchemaSearchResult {
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
+    inline def setTitleNull: Self = StObject.set(x, "title", null)
+    
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlNull: Self = StObject.set(x, "url", null)
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }

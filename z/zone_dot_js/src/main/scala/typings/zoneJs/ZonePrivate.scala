@@ -1,7 +1,5 @@
 package typings.zoneJs
 
-import typings.std.Error
-import typings.std.PropertyDescriptor
 import typings.std.PropertyDescriptorMap
 import typings.std.PropertyKey
 import typings.std.ThisType
@@ -17,29 +15,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ZonePrivate extends StObject {
   
-  def ArraySlice(): js.Array[js.Any] = js.native
-  def ArraySlice(start: Double): js.Array[js.Any] = js.native
-  def ArraySlice(start: Double, end: Double): js.Array[js.Any] = js.native
-  def ArraySlice(start: Unit, end: Double): js.Array[js.Any] = js.native
+  def ArraySlice(): js.Array[Any] = js.native
+  def ArraySlice(start: Double): js.Array[Any] = js.native
+  def ArraySlice(start: Double, end: Double): js.Array[Any] = js.native
+  def ArraySlice(start: Unit, end: Double): js.Array[Any] = js.native
   
-  def ObjectCreate(): js.Any = js.native
-  def ObjectCreate(o: js.Object): js.Any = js.native
-  def ObjectCreate(o: js.Object, properties: PropertyDescriptorMap & ThisType[js.Any]): js.Any = js.native
-  def ObjectCreate(o: Null, properties: PropertyDescriptorMap & ThisType[js.Any]): js.Any = js.native
+  def ObjectCreate(): Any = js.native
+  def ObjectCreate(o: js.Object): Any = js.native
+  def ObjectCreate(o: js.Object, properties: PropertyDescriptorMap & ThisType[Any]): Any = js.native
+  def ObjectCreate(o: Null, properties: PropertyDescriptorMap & ThisType[Any]): Any = js.native
   
-  def ObjectDefineProperty(o: js.Any, p: PropertyKey, attributes: PropertyDescriptor & ThisType[js.Any]): js.Any = js.native
+  def ObjectDefineProperty(o: Any, p: PropertyKey, attributes: js.PropertyDescriptor & ThisType[Any]): Any = js.native
   
-  def ObjectGetOwnPropertyDescriptor(o: js.Any, p: PropertyKey): js.UndefOr[PropertyDescriptor] = js.native
+  def ObjectGetOwnPropertyDescriptor(o: Any, p: PropertyKey): js.UndefOr[js.PropertyDescriptor] = js.native
   
-  def _redefineProperty(target: js.Any, callback: String, desc: js.Any): Unit = js.native
+  def _redefineProperty(target: Any, callback: String, desc: Any): Unit = js.native
   
-  def attachOriginToPatched(target: js.Any, origin: js.Any): Unit = js.native
+  def attachOriginToPatched(target: Any, origin: Any): Unit = js.native
   
-  def bindArguments(args: js.Array[js.Any], source: String): js.Array[js.Any] = js.native
+  def bindArguments(args: js.Array[Any], source: String): js.Array[Any] = js.native
   
   def currentZoneFrame(): ZoneFrame = js.native
   
-  def filterProperties(target: js.Any, onProperties: js.Array[String], ignoreProperties: js.Array[js.Any]): js.Array[String] = js.native
+  def filterProperties(target: Any, onProperties: js.Array[String], ignoreProperties: js.Array[Any]): js.Array[String] = js.native
   
   def getGlobalObjects(): js.UndefOr[ADDEVENTLISTENERSTR] = js.native
   
@@ -47,38 +45,40 @@ trait ZonePrivate extends StObject {
   
   def microtaskDrainDone(): Unit = js.native
   
-  def onUnhandledError(error: Error): Unit = js.native
+  def nativeScheduleMicroTask(func: js.Function): Unit = js.native
   
-  def patchCallbacks(api: ZonePrivate, target: js.Any, targetName: String, method: String, callbacks: js.Array[String]): Unit = js.native
+  def onUnhandledError(error: js.Error): Unit = js.native
+  
+  def patchCallbacks(api: ZonePrivate, target: Any, targetName: String, method: String, callbacks: js.Array[String]): Unit = js.native
   
   def patchClass(className: String): Unit = js.native
   
-  def patchEventPrototype(_global: js.Any, api: ZonePrivate): Unit = js.native
+  def patchEventPrototype(_global: Any, api: ZonePrivate): Unit = js.native
   
-  def patchEventTarget(global: js.Any, apis: js.Array[js.Any]): js.Array[Boolean] = js.native
-  def patchEventTarget(global: js.Any, apis: js.Array[js.Any], options: js.Any): js.Array[Boolean] = js.native
+  def patchEventTarget(global: Any, api: ZonePrivate, apis: js.Array[Any]): js.Array[Boolean] = js.native
+  def patchEventTarget(global: Any, api: ZonePrivate, apis: js.Array[Any], options: Any): js.Array[Boolean] = js.native
   
   def patchMacroTask(
-    obj: js.Any,
+    obj: Any,
     funcName: String,
-    metaCreator: js.Function2[/* self */ js.Any, /* args */ js.Array[js.Any], js.Any]
+    metaCreator: js.Function2[/* self */ Any, /* args */ js.Array[Any], Any]
   ): Unit = js.native
   
   def patchMethod(
-    target: js.Any,
+    target: Any,
     name: String,
     patchFn: js.Function3[
       /* delegate */ js.Function, 
       /* delegateName */ String, 
       /* name */ String, 
-      js.Function2[/* self */ js.Any, /* args */ js.Array[js.Any], js.Any]
+      js.Function2[/* self */ Any, /* args */ js.Array[Any], Any]
     ]
   ): js.Function | Null = js.native
   
-  def patchOnProperties(obj: js.Any): Unit = js.native
-  def patchOnProperties(obj: js.Any, properties: js.Array[String]): Unit = js.native
-  def patchOnProperties(obj: js.Any, properties: js.Array[String], prototype: js.Any): Unit = js.native
-  def patchOnProperties(obj: js.Any, properties: Null, prototype: js.Any): Unit = js.native
+  def patchOnProperties(obj: Any): Unit = js.native
+  def patchOnProperties(obj: Any, properties: js.Array[String]): Unit = js.native
+  def patchOnProperties(obj: Any, properties: js.Array[String], prototype: Any): Unit = js.native
+  def patchOnProperties(obj: Any, properties: Null, prototype: Any): Unit = js.native
   
   def patchThen(ctro: js.Function): Unit = js.native
   
@@ -89,5 +89,5 @@ trait ZonePrivate extends StObject {
   
   def symbol(name: String): String = js.native
   
-  def wrapWithCurrentZone(callback: js.Any, source: String): js.Any = js.native
+  def wrapWithCurrentZone(callback: Any, source: String): Any = js.native
 }

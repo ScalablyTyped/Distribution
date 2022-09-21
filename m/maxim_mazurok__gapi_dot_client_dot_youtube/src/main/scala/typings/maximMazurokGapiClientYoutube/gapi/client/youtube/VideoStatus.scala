@@ -26,7 +26,7 @@ trait VideoStatus extends StObject {
     */
   var publicStatsViewable: js.UndefOr[Boolean] = js.undefined
   
-  /** The date and time when the video is scheduled to publish. It can be set only if the privacy status of the video is private. The value is specified in ISO 8601 format. */
+  /** The date and time when the video is scheduled to publish. It can be set only if the privacy status of the video is private.. */
   var publishAt: js.UndefOr[String] = js.undefined
   
   /** This value explains why YouTube rejected an uploaded video. This property is only present if the uploadStatus property indicates that the upload was rejected. */

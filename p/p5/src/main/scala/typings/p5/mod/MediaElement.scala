@@ -32,16 +32,18 @@ trait MediaElement extends StObject {
     *   @return id ID of this cue, useful for
     *   removeCue(id)
     */
-  def addCue(time: Double, callback: js.Function1[/* repeated */ js.Any, js.Any]): Double = js.native
-  def addCue(time: Double, callback: js.Function1[/* repeated */ js.Any, js.Any], value: js.Object): Double = js.native
+  def addCue(time: Double, callback: js.Function1[/* repeated */ Any, Any]): Double = js.native
+  def addCue(time: Double, callback: js.Function1[/* repeated */ Any, Any], value: js.Object): Double = js.native
   
   /**
-    *   Set HTML5 media element to autoplay or not.
-    *   @param autoplay whether the element should
+    *   Set HTML5 media element to autoplay or not. If no
+    *   argument is specified, by default it will
+    *   autoplay.
+    *   @param shouldAutoplay whether the element should
     *   autoplay
     *   @chainable
     */
-  def autoplay(autoplay: Boolean): MediaElement = js.native
+  def autoplay(shouldAutoplay: Boolean): MediaElement = js.native
   
   /**
     *   Remove all of the callbacks that had originally
@@ -54,12 +56,11 @@ trait MediaElement extends StObject {
   /**
     *   Send the audio output of this element to a
     *   specified audioNode or p5.sound object. If no
-    *   element is provided, connects to p5's master
-    *   output. That connection is established when this
-    *   method is first called. All connections are
-    *   removed by the .disconnect() method. This method
-    *   is meant to be used with the p5.sound.js addon
-    *   library.
+    *   element is provided, connects to p5's main output.
+    *   That connection is established when this method is
+    *   first called. All connections are removed by the
+    *   .disconnect() method. This method is meant to be
+    *   used with the p5.sound.js addon library.
     *   @param audioNode AudioNode from the Web Audio API,
     *   or an object from the p5.sound library
     */
@@ -67,7 +68,7 @@ trait MediaElement extends StObject {
   
   /**
     *   Disconnect all Web Audio routing, including to
-    *   master output. This is useful if you want to
+    *   main output. This is useful if you want to
     *   re-route the output through audio effects, for
     *   example.
     */
@@ -108,7 +109,7 @@ trait MediaElement extends StObject {
     *   passed in as the argument to the callback.
     *   @chainable
     */
-  def onended(callback: js.Function1[/* repeated */ js.Any, js.Any]): MediaElement = js.native
+  def onended(callback: js.Function1[/* repeated */ Any, Any]): MediaElement = js.native
   
   /**
     *   Pauses an HTML5 media element.
@@ -164,7 +165,7 @@ trait MediaElement extends StObject {
   /**
     *   Path to the media element source.
     */
-  var src: js.Any = js.native
+  var src: Any = js.native
   
   /**
     *   Stops an HTML5 media element (sets current time to

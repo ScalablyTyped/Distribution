@@ -13,4 +13,8 @@ object oracledbStrings {
   @js.native
   sealed trait DBObject_OUT extends StObject
   inline def DBObject_OUT: DBObject_OUT = "DBObject_OUT".asInstanceOf[DBObject_OUT]
+  
+  @js.native
+  sealed trait metadata extends StObject
+  inline def metadata: metadata = "metadata".asInstanceOf[metadata]
 }

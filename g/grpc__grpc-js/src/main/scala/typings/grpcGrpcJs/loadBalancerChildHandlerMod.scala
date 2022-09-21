@@ -3,8 +3,8 @@ package typings.grpcGrpcJs
 import org.scalablytyped.runtime.StringDictionary
 import typings.grpcGrpcJs.loadBalancerMod.ChannelControlHelper
 import typings.grpcGrpcJs.loadBalancerMod.LoadBalancer
-import typings.grpcGrpcJs.loadBalancingConfigMod.LoadBalancingConfig
-import typings.grpcGrpcJs.subchannelMod.SubchannelAddress
+import typings.grpcGrpcJs.loadBalancerMod.LoadBalancingConfig
+import typings.grpcGrpcJs.subchannelAddressMod.SubchannelAddress
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,16 +13,16 @@ object loadBalancerChildHandlerMod {
   
   @JSImport("@grpc/grpc-js/build/src/load-balancer-child-handler", "ChildLoadBalancerHandler")
   @js.native
-  class ChildLoadBalancerHandler protected ()
+  open class ChildLoadBalancerHandler protected ()
     extends StObject
        with LoadBalancer {
     def this(channelControlHelper: ChannelControlHelper) = this()
     
-    /* private */ var ChildPolicyHelper: js.Any = js.native
+    /* private */ var ChildPolicyHelper: Any = js.native
     
-    /* private */ val channelControlHelper: js.Any = js.native
+    /* private */ val channelControlHelper: Any = js.native
     
-    /* private */ var currentChild: js.Any = js.native
+    /* private */ var currentChild: Any = js.native
     
     /**
       * The load balancer unrefs all of its subchannels and stops calling methods
@@ -45,7 +45,7 @@ object loadBalancerChildHandlerMod {
     /* CompleteClass */
     override def getTypeName(): String = js.native
     
-    /* private */ var pendingChild: js.Any = js.native
+    /* private */ var pendingChild: Any = js.native
     
     /**
       * If the load balancer is currently in the CONNECTING or TRANSIENT_FAILURE
@@ -68,7 +68,7 @@ object loadBalancerChildHandlerMod {
     override def updateAddressList(
       addressList: js.Array[SubchannelAddress],
       lbConfig: LoadBalancingConfig,
-      attributes: StringDictionary[js.Any]
+      attributes: StringDictionary[Any]
     ): Unit = js.native
   }
 }

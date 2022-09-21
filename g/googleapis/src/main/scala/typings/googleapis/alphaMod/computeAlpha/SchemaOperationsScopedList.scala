@@ -13,10 +13,9 @@ trait SchemaOperationsScopedList extends StObject {
   var operations: js.UndefOr[js.Array[SchemaOperation]] = js.undefined
   
   /**
-    * [Output Only] Informational warning which replaces the list of operations
-    * when the list is empty.
+    * [Output Only] Informational warning which replaces the list of operations when the list is empty.
     */
-  var warning: js.UndefOr[Code] = js.undefined
+  var warning: js.UndefOr[Code | Null] = js.undefined
 }
 object SchemaOperationsScopedList {
   
@@ -31,9 +30,11 @@ object SchemaOperationsScopedList {
     
     inline def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
     
-    inline def setOperationsVarargs(value: SchemaOperation*): Self = StObject.set(x, "operations", js.Array(value :_*))
+    inline def setOperationsVarargs(value: SchemaOperation*): Self = StObject.set(x, "operations", js.Array(value*))
     
     inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    
+    inline def setWarningNull: Self = StObject.set(x, "warning", null)
     
     inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }

@@ -1,34 +1,28 @@
 package typings.sift
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object siftStrings {
-  @js.native
-  sealed trait ElemMatch extends js.Object
   
   @js.native
-  sealed trait g extends js.Object
+  sealed trait ShapeQuery extends StObject
+  inline def ShapeQuery: ShapeQuery = "ShapeQuery".asInstanceOf[ShapeQuery]
   
   @js.native
-  sealed trait i extends js.Object
+  sealed trait g extends StObject
+  inline def g: g = "g".asInstanceOf[g]
   
   @js.native
-  sealed trait m extends js.Object
+  sealed trait i extends StObject
+  inline def i: i = "i".asInstanceOf[i]
   
   @js.native
-  sealed trait u extends js.Object
+  sealed trait m extends StObject
+  inline def m: m = "m".asInstanceOf[m]
   
-  @scala.inline
-  def ElemMatch: ElemMatch = "ElemMatch".asInstanceOf[ElemMatch]
-  @scala.inline
-  def g: g = "g".asInstanceOf[g]
-  @scala.inline
-  def i: i = "i".asInstanceOf[i]
-  @scala.inline
-  def m: m = "m".asInstanceOf[m]
-  @scala.inline
-  def u: u = "u".asInstanceOf[u]
+  @js.native
+  sealed trait u extends StObject
+  inline def u: u = "u".asInstanceOf[u]
 }
-

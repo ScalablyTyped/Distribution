@@ -13,6 +13,13 @@ trait GoogleCloudMlV1TrainingInput extends StObject {
   var args: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
+    * Optional. Whether you want AI Platform Training to enable [interactive shell access](https://cloud.google.com/ai-platform/training/docs/monitor-debug-interactive-shell) to training
+    * containers. If set to `true`, you can access interactive shells at the URIs given by TrainingOutput.web_access_uris or HyperparameterOutput.web_access_uris (within
+    * TrainingOutput.trials).
+    */
+  var enableWebAccess: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Optional. Options for using customer-managed encryption keys (CMEK) to protect resources created by a training job, instead of using Google's default encryption. If this is set,
     * then all resources created by the training job will be encrypted with the customer-managed encryption key that you specify. [Learn how and when to use CMEK with AI Platform
     * Training](/ai-platform/training/docs/cmek).
@@ -59,13 +66,10 @@ trait GoogleCloudMlV1TrainingInput extends StObject {
   
   /**
     * Optional. Specifies the type of virtual machine to use for your training job's master worker. You must specify this field when `scaleTier` is set to `CUSTOM`. You can use certain
-    * Compute Engine machine types directly in this field. The following types are supported: - `n1-standard-4` - `n1-standard-8` - `n1-standard-16` - `n1-standard-32` - `n1-standard-64`
-    * - `n1-standard-96` - `n1-highmem-2` - `n1-highmem-4` - `n1-highmem-8` - `n1-highmem-16` - `n1-highmem-32` - `n1-highmem-64` - `n1-highmem-96` - `n1-highcpu-16` - `n1-highcpu-32` -
-    * `n1-highcpu-64` - `n1-highcpu-96` Learn more about [using Compute Engine machine types](/ml-engine/docs/machine-types#compute-engine-machine-types). Alternatively, you can use the
-    * following legacy machine types: - `standard` - `large_model` - `complex_model_s` - `complex_model_m` - `complex_model_l` - `standard_gpu` - `complex_model_m_gpu` -
-    * `complex_model_l_gpu` - `standard_p100` - `complex_model_m_p100` - `standard_v100` - `large_model_v100` - `complex_model_m_v100` - `complex_model_l_v100` Learn more about [using
-    * legacy machine types](/ml-engine/docs/machine-types#legacy-machine-types). Finally, if you want to use a TPU for training, specify `cloud_tpu` in this field. Learn more about the
-    * [special configuration options for training with TPUs](/ml-engine/docs/tensorflow/using-tpus#configuring_a_custom_tpu_machine).
+    * Compute Engine machine types directly in this field. See the [list of compatible Compute Engine machine
+    * types](/ai-platform/training/docs/machine-types#compute-engine-machine-types). Alternatively, you can use the certain legacy machine types in this field. See the [list of legacy
+    * machine types](/ai-platform/training/docs/machine-types#legacy-machine-types). Finally, if you want to use a TPU for training, specify `cloud_tpu` in this field. Learn more about
+    * the [special configuration options for training with TPUs](/ai-platform/training/docs/using-tpus#configuring_a_custom_tpu_machine).
     */
   var masterType: js.UndefOr[String] = js.undefined
   
@@ -173,7 +177,11 @@ object GoogleCloudMlV1TrainingInput {
     
     inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
+    
+    inline def setEnableWebAccess(value: Boolean): Self = StObject.set(x, "enableWebAccess", value.asInstanceOf[js.Any])
+    
+    inline def setEnableWebAccessUndefined: Self = StObject.set(x, "enableWebAccess", js.undefined)
     
     inline def setEncryptionConfig(value: GoogleCloudMlV1EncryptionConfig): Self = StObject.set(x, "encryptionConfig", value.asInstanceOf[js.Any])
     
@@ -215,7 +223,7 @@ object GoogleCloudMlV1TrainingInput {
     
     inline def setPackageUrisUndefined: Self = StObject.set(x, "packageUris", js.undefined)
     
-    inline def setPackageUrisVarargs(value: String*): Self = StObject.set(x, "packageUris", js.Array(value :_*))
+    inline def setPackageUrisVarargs(value: String*): Self = StObject.set(x, "packageUris", js.Array(value*))
     
     inline def setParameterServerConfig(value: GoogleCloudMlV1ReplicaConfig): Self = StObject.set(x, "parameterServerConfig", value.asInstanceOf[js.Any])
     

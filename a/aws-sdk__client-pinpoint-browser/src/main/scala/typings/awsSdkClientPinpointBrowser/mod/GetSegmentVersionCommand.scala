@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-pinpoint-browser", "GetSegmentVersionCommand")
 @js.native
-class GetSegmentVersionCommand protected ()
+open class GetSegmentVersionCommand protected ()
   extends typings.awsSdkClientPinpointBrowser.getSegmentVersionCommandMod.GetSegmentVersionCommand {
   def this(input: GetSegmentVersionInput) = this()
 }

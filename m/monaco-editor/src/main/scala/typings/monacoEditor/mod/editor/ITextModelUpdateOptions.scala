@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ITextModelUpdateOptions extends StObject {
   
+  var bracketColorizationOptions: js.UndefOr[BracketPairColorizationOptions] = js.undefined
+  
   var indentSize: js.UndefOr[Double] = js.undefined
   
   var insertSpaces: js.UndefOr[Boolean] = js.undefined
@@ -22,6 +24,10 @@ object ITextModelUpdateOptions {
   }
   
   extension [Self <: ITextModelUpdateOptions](x: Self) {
+    
+    inline def setBracketColorizationOptions(value: BracketPairColorizationOptions): Self = StObject.set(x, "bracketColorizationOptions", value.asInstanceOf[js.Any])
+    
+    inline def setBracketColorizationOptionsUndefined: Self = StObject.set(x, "bracketColorizationOptions", js.undefined)
     
     inline def setIndentSize(value: Double): Self = StObject.set(x, "indentSize", value.asInstanceOf[js.Any])
     

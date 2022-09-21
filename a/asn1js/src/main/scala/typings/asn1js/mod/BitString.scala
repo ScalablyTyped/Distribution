@@ -6,12 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("asn1js", "BitString")
 @js.native
-class BitString () extends BaseBlock[LocalBitStringValueBlock] {
-  def this(params: LocalBitStringValueBlockParams) = this()
+open class BitString ()
+  extends BaseBlock[LocalBitStringValueBlock, LocalBitStringValueBlockJson]
+     with _AsnType {
+  def this(hasIdBlockLenBlockParameters: BitStringParams) = this()
+}
+object BitString {
   
-  /**
-    * Checking that two BITSTRINGs are equal
-    * @param {BitString} bitString
-    */
-  def isEqual(bitString: BitString): scala.Boolean = js.native
+  @JSImport("asn1js", "BitString")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("asn1js", "BitString.NAME")
+  @js.native
+  def NAME: String = js.native
+  inline def NAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAME")(x.asInstanceOf[js.Any])
 }

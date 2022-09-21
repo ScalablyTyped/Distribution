@@ -10,10 +10,10 @@ Assert a Map has a given key and return the value for it.
 | ------------------ | :-------------: |
 | Full name          | get-certain |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 573 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 44.666666666666664 |
+| # stars            | 12.0 |
 
 ## Links
 - [Homepage](https://github.com/wtgtybhertgeghgtwtg/get-certain#readme)

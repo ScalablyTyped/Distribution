@@ -27,6 +27,11 @@ trait ProvisionByoipCidrRequest extends StObject {
   var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Reserved.
+    */
+  var MultiRegion: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * The tags to apply to the address pool.
     */
   var PoolTagSpecifications: js.UndefOr[TagSpecificationList] = js.undefined
@@ -59,11 +64,15 @@ object ProvisionByoipCidrRequest {
     
     inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
+    inline def setMultiRegion(value: Boolean): Self = StObject.set(x, "MultiRegion", value.asInstanceOf[js.Any])
+    
+    inline def setMultiRegionUndefined: Self = StObject.set(x, "MultiRegion", js.undefined)
+    
     inline def setPoolTagSpecifications(value: TagSpecificationList): Self = StObject.set(x, "PoolTagSpecifications", value.asInstanceOf[js.Any])
     
     inline def setPoolTagSpecificationsUndefined: Self = StObject.set(x, "PoolTagSpecifications", js.undefined)
     
-    inline def setPoolTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "PoolTagSpecifications", js.Array(value :_*))
+    inline def setPoolTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "PoolTagSpecifications", js.Array(value*))
     
     inline def setPubliclyAdvertisable(value: Boolean): Self = StObject.set(x, "PubliclyAdvertisable", value.asInstanceOf[js.Any])
     

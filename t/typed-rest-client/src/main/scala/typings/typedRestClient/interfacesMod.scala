@@ -1,11 +1,10 @@
 package typings.typedRestClient
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.NodeJS.ReadableStream
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.RequestOptions
 import typings.node.urlMod.Url
-import typings.std.RegExp
+import typings.std.ReadableStream
 import typings.typedRestClient.anon.ArrayFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -71,7 +70,7 @@ object interfacesMod {
     }
   }
   
-  type IHeaders = StringDictionary[js.Any]
+  type IHeaders = StringDictionary[Any]
   
   @js.native
   trait IHttpClient extends StObject {
@@ -95,24 +94,24 @@ object interfacesMod {
     def put(requestUrl: String, data: String, additionalHeaders: IHeaders): js.Promise[IHttpClientResponse] = js.native
     
     def request(verb: String, requestUrl: String, data: String, headers: IHeaders): js.Promise[IHttpClientResponse] = js.native
-    def request(verb: String, requestUrl: String, data: ReadableStream, headers: IHeaders): js.Promise[IHttpClientResponse] = js.native
+    def request(verb: String, requestUrl: String, data: ReadableStream[Any], headers: IHeaders): js.Promise[IHttpClientResponse] = js.native
     
     def requestRaw(info: IRequestInfo, data: String): js.Promise[IHttpClientResponse] = js.native
-    def requestRaw(info: IRequestInfo, data: ReadableStream): js.Promise[IHttpClientResponse] = js.native
+    def requestRaw(info: IRequestInfo, data: ReadableStream[Any]): js.Promise[IHttpClientResponse] = js.native
     
     def requestRawWithCallback(
       info: IRequestInfo,
       data: String,
-      onResult: js.Function2[/* err */ js.Any, /* res */ IHttpClientResponse, Unit]
+      onResult: js.Function2[/* err */ Any, /* res */ IHttpClientResponse, Unit]
     ): Unit = js.native
     def requestRawWithCallback(
       info: IRequestInfo,
-      data: ReadableStream,
-      onResult: js.Function2[/* err */ js.Any, /* res */ IHttpClientResponse, Unit]
+      data: ReadableStream[Any],
+      onResult: js.Function2[/* err */ Any, /* res */ IHttpClientResponse, Unit]
     ): Unit = js.native
     
-    def sendStream(verb: String, requestUrl: String, stream: ReadableStream): js.Promise[IHttpClientResponse] = js.native
-    def sendStream(verb: String, requestUrl: String, stream: ReadableStream, additionalHeaders: IHeaders): js.Promise[IHttpClientResponse] = js.native
+    def sendStream(verb: String, requestUrl: String, stream: ReadableStream[Any]): js.Promise[IHttpClientResponse] = js.native
+    def sendStream(verb: String, requestUrl: String, stream: ReadableStream[Any], additionalHeaders: IHeaders): js.Promise[IHttpClientResponse] = js.native
   }
   
   trait IHttpClientResponse extends StObject {
@@ -159,7 +158,7 @@ object interfacesMod {
       
       inline def setProxyBypassHostsUndefined: Self = StObject.set(x, "proxyBypassHosts", js.undefined)
       
-      inline def setProxyBypassHostsVarargs(value: String*): Self = StObject.set(x, "proxyBypassHosts", js.Array(value :_*))
+      inline def setProxyBypassHostsVarargs(value: String*): Self = StObject.set(x, "proxyBypassHosts", js.Array(value*))
       
       inline def setProxyPassword(value: String): Self = StObject.set(x, "proxyPassword", value.asInstanceOf[js.Any])
       
@@ -177,7 +176,7 @@ object interfacesMod {
     
     def canHandleAuthentication(response: IHttpClientResponse): Boolean
     
-    def handleAuthentication(httpClient: IHttpClient, requestInfo: IRequestInfo, objs: js.Any): js.Promise[IHttpClientResponse]
+    def handleAuthentication(httpClient: IHttpClient, requestInfo: IRequestInfo, objs: Any): js.Promise[IHttpClientResponse]
     
     def prepareRequest(options: RequestOptions): Unit
   }
@@ -185,7 +184,7 @@ object interfacesMod {
     
     inline def apply(
       canHandleAuthentication: IHttpClientResponse => Boolean,
-      handleAuthentication: (IHttpClient, IRequestInfo, js.Any) => js.Promise[IHttpClientResponse],
+      handleAuthentication: (IHttpClient, IRequestInfo, Any) => js.Promise[IHttpClientResponse],
       prepareRequest: RequestOptions => Unit
     ): IRequestHandler = {
       val __obj = js.Dynamic.literal(canHandleAuthentication = js.Any.fromFunction1(canHandleAuthentication), handleAuthentication = js.Any.fromFunction3(handleAuthentication), prepareRequest = js.Any.fromFunction1(prepareRequest))
@@ -196,7 +195,7 @@ object interfacesMod {
       
       inline def setCanHandleAuthentication(value: IHttpClientResponse => Boolean): Self = StObject.set(x, "canHandleAuthentication", js.Any.fromFunction1(value))
       
-      inline def setHandleAuthentication(value: (IHttpClient, IRequestInfo, js.Any) => js.Promise[IHttpClientResponse]): Self = StObject.set(x, "handleAuthentication", js.Any.fromFunction3(value))
+      inline def setHandleAuthentication(value: (IHttpClient, IRequestInfo, Any) => js.Promise[IHttpClientResponse]): Self = StObject.set(x, "handleAuthentication", js.Any.fromFunction3(value))
       
       inline def setPrepareRequest(value: RequestOptions => Unit): Self = StObject.set(x, "prepareRequest", js.Any.fromFunction1(value))
     }
@@ -204,7 +203,7 @@ object interfacesMod {
   
   trait IRequestInfo extends StObject {
     
-    var httpModule: js.Any
+    var httpModule: Any
     
     var options: RequestOptions
     
@@ -212,14 +211,14 @@ object interfacesMod {
   }
   object IRequestInfo {
     
-    inline def apply(httpModule: js.Any, options: RequestOptions, parsedUrl: Url): IRequestInfo = {
+    inline def apply(httpModule: Any, options: RequestOptions, parsedUrl: Url): IRequestInfo = {
       val __obj = js.Dynamic.literal(httpModule = httpModule.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], parsedUrl = parsedUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[IRequestInfo]
     }
     
     extension [Self <: IRequestInfo](x: Self) {
       
-      inline def setHttpModule(value: js.Any): Self = StObject.set(x, "httpModule", value.asInstanceOf[js.Any])
+      inline def setHttpModule(value: Any): Self = StObject.set(x, "httpModule", value.asInstanceOf[js.Any])
       
       inline def setOptions(value: RequestOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -249,7 +248,7 @@ object interfacesMod {
     
     var maxSockets: js.UndefOr[Double] = js.undefined
     
-    var presignedUrlPatterns: js.UndefOr[js.Array[RegExp]] = js.undefined
+    var presignedUrlPatterns: js.UndefOr[js.Array[js.RegExp]] = js.undefined
     
     var proxy: js.UndefOr[IProxyConfiguration] = js.undefined
     
@@ -304,11 +303,11 @@ object interfacesMod {
       
       inline def setMaxSocketsUndefined: Self = StObject.set(x, "maxSockets", js.undefined)
       
-      inline def setPresignedUrlPatterns(value: js.Array[RegExp]): Self = StObject.set(x, "presignedUrlPatterns", value.asInstanceOf[js.Any])
+      inline def setPresignedUrlPatterns(value: js.Array[js.RegExp]): Self = StObject.set(x, "presignedUrlPatterns", value.asInstanceOf[js.Any])
       
       inline def setPresignedUrlPatternsUndefined: Self = StObject.set(x, "presignedUrlPatterns", js.undefined)
       
-      inline def setPresignedUrlPatternsVarargs(value: RegExp*): Self = StObject.set(x, "presignedUrlPatterns", js.Array(value :_*))
+      inline def setPresignedUrlPatternsVarargs(value: js.RegExp*): Self = StObject.set(x, "presignedUrlPatterns", js.Array(value*))
       
       inline def setProxy(value: IProxyConfiguration): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
       

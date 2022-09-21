@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@twilio/mcs-client" : "0.5.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@twilio/mcs-client" : "0.5.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

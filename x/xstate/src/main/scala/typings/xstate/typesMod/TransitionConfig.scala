@@ -1,8 +1,9 @@
 package typings.xstate.typesMod
 
 import typings.std.Record
-import typings.xstate.anon.ContextTContext
+import typings.xstate.anon.Context
 import typings.xstate.stateNodeMod.StateNode
+import typings.xstate.typegenTypesMod.TypegenDisabled
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,11 +14,13 @@ trait TransitionConfig[TContext, TEvent /* <: EventObject */] extends StObject {
   
   var cond: js.UndefOr[Condition[TContext, TEvent]] = js.undefined
   
+  var description: js.UndefOr[String] = js.undefined
+  
   var in: js.UndefOr[StateValue] = js.undefined
   
   var internal: js.UndefOr[Boolean] = js.undefined
   
-  var meta: js.UndefOr[Record[String, js.Any]] = js.undefined
+  var meta: js.UndefOr[Record[String, Any]] = js.undefined
   
   var target: js.UndefOr[TransitionTarget[TContext, TEvent]] = js.undefined
 }
@@ -32,17 +35,21 @@ object TransitionConfig {
     
     inline def setActions(value: Actions[TContext, TEvent]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    inline def setActionsFunction3(value: (TContext, TEvent, /* meta */ ActionMeta[TContext, TEvent]) => Unit): Self = StObject.set(x, "actions", js.Any.fromFunction3(value))
+    inline def setActionsFunction3(value: (TContext, TEvent, /* meta */ ActionMeta[TContext, TEvent, BaseActionObject]) => Unit): Self = StObject.set(x, "actions", js.Any.fromFunction3(value))
     
     inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    inline def setActionsVarargs(value: (Action[TContext, TEvent])*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: (Action[TContext, TEvent])*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setCond(value: Condition[TContext, TEvent]): Self = StObject.set(x, "cond", value.asInstanceOf[js.Any])
     
     inline def setCondFunction3(value: (TContext, TEvent, /* meta */ GuardMeta[TContext, TEvent]) => Boolean): Self = StObject.set(x, "cond", js.Any.fromFunction3(value))
     
     inline def setCondUndefined: Self = StObject.set(x, "cond", js.undefined)
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     inline def setIn(value: StateValue): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
     
@@ -52,7 +59,7 @@ object TransitionConfig {
     
     inline def setInternalUndefined: Self = StObject.set(x, "internal", js.undefined)
     
-    inline def setMeta(value: Record[String, js.Any]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: Record[String, Any]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
     inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
     
@@ -60,6 +67,8 @@ object TransitionConfig {
     
     inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    inline def setTargetVarargs(value: (String | (StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]]))*): Self = StObject.set(x, "target", js.Array(value :_*))
+    inline def setTargetVarargs(
+      value: (String | (StateNode[TContext, Any, TEvent, Context[TContext], ServiceMap, TypegenDisabled]))*
+    ): Self = StObject.set(x, "target", js.Array(value*))
   }
 }

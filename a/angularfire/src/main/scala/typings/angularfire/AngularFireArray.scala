@@ -37,8 +37,8 @@ trait AngularFireArray
     * @returns a promise resolved after data is added
     */
   @JSName("$add")
-  def $add(newData: js.Any): IPromise[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ js.Any
+  def $add(newData: Any): IPromise[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ Any
   ] = js.native
   
   /**
@@ -78,7 +78,7 @@ trait AngularFireArray
     * @returns {null|string}
     */
   @JSName("$keyAt")
-  def $keyAt(recordOrIndex: js.Any): String = js.native
+  def $keyAt(recordOrIndex: Any): String = js.native
   
   /**
     * The loaded method is invoked after the initial batch of data arrives from the server.
@@ -99,16 +99,16 @@ trait AngularFireArray
   @JSName("$loaded")
   def $loaded(
     resolve: js.Function1[/* x */ this.type, IHttpPromise[js.Object] | IPromise[js.Object] | Unit],
-    reject: js.Function1[/* err */ js.Any, js.Any]
+    reject: js.Function1[/* err */ Any, Any]
   ): IPromise[AngularFireArray] = js.native
   @JSName("$loaded")
-  def $loaded(resolve: Unit, reject: js.Function1[/* err */ js.Any, js.Any]): IPromise[AngularFireArray] = js.native
+  def $loaded(resolve: Unit, reject: js.Function1[/* err */ Any, Any]): IPromise[AngularFireArray] = js.native
   
   /**
     * @returns {Firebase} the original Firebase ref used to create this object.
     */
   @JSName("$ref")
-  def $ref(): js.Any = js.native
+  def $ref(): Any = js.native
   
   /**
     * Pass either an existing item in this array or the index of that item and it will
@@ -125,8 +125,8 @@ trait AngularFireArray
     * @returns a promise which resolves after data is removed
     */
   @JSName("$remove")
-  def $remove(recordOrIndex: js.Any): IPromise[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ js.Any
+  def $remove(recordOrIndex: Any): IPromise[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ Any
   ] = js.native
   
   /**
@@ -144,8 +144,8 @@ trait AngularFireArray
     * @returns a promise resolved after data is saved
     */
   @JSName("$save")
-  def $save(recordOrIndex: js.Any): IPromise[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ js.Any
+  def $save(recordOrIndex: Any): IPromise[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ Any
   ] = js.native
   
   /**
@@ -166,8 +166,5 @@ trait AngularFireArray
   @JSName("$watch")
   def $watch(cb: js.Function3[/* event */ String, /* key */ String, /* prevChild */ String, Unit]): js.Function = js.native
   @JSName("$watch")
-  def $watch(
-    cb: js.Function3[/* event */ String, /* key */ String, /* prevChild */ String, Unit],
-    context: js.Any
-  ): js.Function = js.native
+  def $watch(cb: js.Function3[/* event */ String, /* key */ String, /* prevChild */ String, Unit], context: Any): js.Function = js.native
 }

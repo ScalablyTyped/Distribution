@@ -10,7 +10,7 @@ object knockoutBindableMod {
   
   @JSImport("aurelia-knockout/dist/commonjs/knockout-bindable", "KnockoutBindable")
   @js.native
-  class KnockoutBindable protected () extends StObject {
+  open class KnockoutBindable protected () extends StObject {
     def this(observerLocator: ObserverLocator) = this()
     
     /**
@@ -23,13 +23,13 @@ object knockoutBindableMod {
       * @param target - the target view model
       * @param applyOnlyObservables - `true` if only observable values should be applied, false by default.
       */
-    def applyBindableValues(data: js.Any, target: js.Any, applyOnlyObservables: Boolean): Unit = js.native
+    def applyBindableValues(data: Any, target: Any, applyOnlyObservables: Boolean): Unit = js.native
     
     /** internal: do not use */
-    def getObserver(target: js.Any, key: String): InternalPropertyObserver = js.native
+    def getObserver(target: Any, key: String): InternalPropertyObserver = js.native
     
     var observerLocator: ObserverLocator = js.native
     
-    var subscriptions: js.Array[js.Any] = js.native
+    var subscriptions: js.Array[Any] = js.native
   }
 }

@@ -17,8 +17,8 @@ trait X86MemOperand
 }
 object X86MemOperand {
   
-  inline def apply(size: Double, value: Base): X86MemOperand = {
-    val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  inline def apply(access: OperandAccess, size: Double, value: Base): X86MemOperand = {
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("mem")
     __obj.asInstanceOf[X86MemOperand]
   }

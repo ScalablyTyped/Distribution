@@ -1,6 +1,6 @@
 package typings.bufferhelper
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,18 +9,18 @@ object mod {
   
   @JSImport("bufferhelper", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with BufferHelper {
     
     /* CompleteClass */
-    override def concat(buffer: js.Any): BufferHelper = js.native
+    override def concat(buffer: Any): BufferHelper = js.native
     
     /* CompleteClass */
     override def empty(): BufferHelper = js.native
     
     /* CompleteClass */
-    override def load(stream: js.Any, callback: js.Function1[/* arg */ js.Any, js.Any]): Unit = js.native
+    override def load(stream: Any, callback: js.Function1[/* arg */ Any, Any]): Unit = js.native
     
     /* CompleteClass */
     override def toBuffer(): Buffer = js.native
@@ -31,11 +31,11 @@ object mod {
   
   trait BufferHelper extends StObject {
     
-    def concat(buffer: js.Any): BufferHelper
+    def concat(buffer: Any): BufferHelper
     
     def empty(): BufferHelper
     
-    def load(stream: js.Any, callback: js.Function1[/* arg */ js.Any, js.Any]): Unit
+    def load(stream: Any, callback: js.Function1[/* arg */ Any, Any]): Unit
     
     def toBuffer(): Buffer
     
@@ -44,9 +44,9 @@ object mod {
   object BufferHelper {
     
     inline def apply(
-      concat: js.Any => BufferHelper,
+      concat: Any => BufferHelper,
       empty: () => BufferHelper,
-      load: (js.Any, js.Function1[/* arg */ js.Any, js.Any]) => Unit,
+      load: (Any, js.Function1[/* arg */ Any, Any]) => Unit,
       toBuffer: () => Buffer,
       toString_ : encoding => String
     ): BufferHelper = {
@@ -57,11 +57,11 @@ object mod {
     
     extension [Self <: BufferHelper](x: Self) {
       
-      inline def setConcat(value: js.Any => BufferHelper): Self = StObject.set(x, "concat", js.Any.fromFunction1(value))
+      inline def setConcat(value: Any => BufferHelper): Self = StObject.set(x, "concat", js.Any.fromFunction1(value))
       
       inline def setEmpty(value: () => BufferHelper): Self = StObject.set(x, "empty", js.Any.fromFunction0(value))
       
-      inline def setLoad(value: (js.Any, js.Function1[/* arg */ js.Any, js.Any]) => Unit): Self = StObject.set(x, "load", js.Any.fromFunction2(value))
+      inline def setLoad(value: (Any, js.Function1[/* arg */ Any, Any]) => Unit): Self = StObject.set(x, "load", js.Any.fromFunction2(value))
       
       inline def setToBuffer(value: () => Buffer): Self = StObject.set(x, "toBuffer", js.Any.fromFunction0(value))
       

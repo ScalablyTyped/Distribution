@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Creative Group List Response
-  */
 trait SchemaCreativeGroupsListResponse extends StObject {
   
   /**
@@ -15,15 +12,14 @@ trait SchemaCreativeGroupsListResponse extends StObject {
   var creativeGroups: js.UndefOr[js.Array[SchemaCreativeGroup]] = js.undefined
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;dfareporting#creativeGroupsListResponse&quot;.
+    * Identifies what kind of resource this is. Value: the fixed string "dfareporting#creativeGroupsListResponse".
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Pagination token to be used for the next list operation.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaCreativeGroupsListResponse {
   
@@ -38,13 +34,17 @@ object SchemaCreativeGroupsListResponse {
     
     inline def setCreativeGroupsUndefined: Self = StObject.set(x, "creativeGroups", js.undefined)
     
-    inline def setCreativeGroupsVarargs(value: SchemaCreativeGroup*): Self = StObject.set(x, "creativeGroups", js.Array(value :_*))
+    inline def setCreativeGroupsVarargs(value: SchemaCreativeGroup*): Self = StObject.set(x, "creativeGroups", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

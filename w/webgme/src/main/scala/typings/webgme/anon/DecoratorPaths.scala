@@ -74,7 +74,7 @@ object DecoratorPaths {
     
     inline def setDecoratorPaths(value: js.Array[String]): Self = StObject.set(x, "decoratorPaths", value.asInstanceOf[js.Any])
     
-    inline def setDecoratorPathsVarargs(value: String*): Self = StObject.set(x, "decoratorPaths", js.Array(value :_*))
+    inline def setDecoratorPathsVarargs(value: String*): Self = StObject.set(x, "decoratorPaths", js.Array(value*))
     
     inline def setDecoratorToPreload(value: Double): Self = StObject.set(x, "decoratorToPreload", value.asInstanceOf[js.Any])
     
@@ -82,20 +82,20 @@ object DecoratorPaths {
     
     inline def setExtraCss(value: js.Array[String]): Self = StObject.set(x, "extraCss", value.asInstanceOf[js.Any])
     
-    inline def setExtraCssVarargs(value: String*): Self = StObject.set(x, "extraCss", js.Array(value :_*))
+    inline def setExtraCssVarargs(value: String*): Self = StObject.set(x, "extraCss", js.Array(value*))
     
     inline def setLayout(value: Default): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     inline def setPanelPaths(value: js.Array[String]): Self = StObject.set(x, "panelPaths", value.asInstanceOf[js.Any])
     
-    inline def setPanelPathsVarargs(value: String*): Self = StObject.set(x, "panelPaths", js.Array(value :_*))
+    inline def setPanelPathsVarargs(value: String*): Self = StObject.set(x, "panelPaths", js.Array(value*))
     
     inline def setSvgDirs(value: js.Array[String]): Self = StObject.set(x, "svgDirs", value.asInstanceOf[js.Any])
     
-    inline def setSvgDirsVarargs(value: String*): Self = StObject.set(x, "svgDirs", js.Array(value :_*))
+    inline def setSvgDirsVarargs(value: String*): Self = StObject.set(x, "svgDirs", js.Array(value*))
     
     inline def setVisualizerDescriptors(value: js.Array[String]): Self = StObject.set(x, "visualizerDescriptors", value.asInstanceOf[js.Any])
     
-    inline def setVisualizerDescriptorsVarargs(value: String*): Self = StObject.set(x, "visualizerDescriptors", js.Array(value :_*))
+    inline def setVisualizerDescriptorsVarargs(value: String*): Self = StObject.set(x, "visualizerDescriptors", js.Array(value*))
   }
 }

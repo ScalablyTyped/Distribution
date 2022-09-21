@@ -4,21 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The information about the HTTP Cookie on which the hash function is based
-  * for load balancing policies that use a consistent hash.
-  */
 trait SchemaConsistentHashLoadBalancerSettingsHttpCookie extends StObject {
   
   /**
     * Name of the cookie.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Path to set for the cookie.
     */
-  var path: js.UndefOr[String] = js.undefined
+  var path: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Lifetime of the cookie.
@@ -36,9 +32,13 @@ object SchemaConsistentHashLoadBalancerSettingsHttpCookie {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setPathNull: Self = StObject.set(x, "path", null)
     
     inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     

@@ -17,7 +17,7 @@ object dragdropInterfacesMod {
     /**
       * Data associated with drag & drop action.
       */
-    var data: js.Any
+    var data: Any
     
     /**
       * Index of drag & drop action.
@@ -31,14 +31,14 @@ object dragdropInterfacesMod {
   }
   object IDragDropContext {
     
-    inline def apply(data: js.Any, index: Double): IDragDropContext = {
+    inline def apply(data: Any, index: Double): IDragDropContext = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDragDropContext]
     }
     
     extension [Self <: IDragDropContext](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -75,7 +75,7 @@ object dragdropInterfacesMod {
     /**
       * Whether or not drag action is allowed.
       */
-    var canDrag: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Boolean]] = js.undefined
+    var canDrag: js.UndefOr[js.Function1[/* item */ js.UndefOr[Any], Boolean]] = js.undefined
     
     /**
       * Whether the whole group is draggable. This applies after canDrag returns true for the group.
@@ -97,7 +97,7 @@ object dragdropInterfacesMod {
       * On drag end event callback.
       */
     var onDragEnd: js.UndefOr[
-        js.Function2[/* item */ js.UndefOr[js.Any], /* event */ js.UndefOr[DragEvent], Unit]
+        js.Function2[/* item */ js.UndefOr[Any], /* event */ js.UndefOr[DragEvent], Unit]
       ] = js.undefined
     
     /**
@@ -105,21 +105,21 @@ object dragdropInterfacesMod {
       * Returned string is the css classes that will be added to the entering element.
       */
     var onDragEnter: js.UndefOr[
-        js.Function2[/* item */ js.UndefOr[js.Any], /* event */ js.UndefOr[DragEvent], String]
+        js.Function2[/* item */ js.UndefOr[Any], /* event */ js.UndefOr[DragEvent], String]
       ] = js.undefined
     
     /**
       * On drag leave region event callback.
       */
     var onDragLeave: js.UndefOr[
-        js.Function2[/* item */ js.UndefOr[js.Any], /* event */ js.UndefOr[DragEvent], Unit]
+        js.Function2[/* item */ js.UndefOr[Any], /* event */ js.UndefOr[DragEvent], Unit]
       ] = js.undefined
     
     /**
       * On drag over event callback.
       */
     var onDragOver: js.UndefOr[
-        js.Function2[/* item */ js.UndefOr[js.Any], /* event */ js.UndefOr[DragEvent], Unit]
+        js.Function2[/* item */ js.UndefOr[Any], /* event */ js.UndefOr[DragEvent], Unit]
       ] = js.undefined
     
     /**
@@ -127,9 +127,9 @@ object dragdropInterfacesMod {
       */
     var onDragStart: js.UndefOr[
         js.Function4[
-          /* item */ js.UndefOr[js.Any], 
+          /* item */ js.UndefOr[Any], 
           /* itemIndex */ js.UndefOr[Double], 
-          /* selectedItems */ js.UndefOr[js.Array[js.Any]], 
+          /* selectedItems */ js.UndefOr[js.Array[Any]], 
           /* event */ js.UndefOr[MouseEvent], 
           Unit
         ]
@@ -139,7 +139,7 @@ object dragdropInterfacesMod {
       * On drop event callback.
       */
     var onDrop: js.UndefOr[
-        js.Function2[/* item */ js.UndefOr[js.Any], /* event */ js.UndefOr[DragEvent], Unit]
+        js.Function2[/* item */ js.UndefOr[Any], /* event */ js.UndefOr[DragEvent], Unit]
       ] = js.undefined
   }
   object IDragDropEvents {
@@ -151,7 +151,7 @@ object dragdropInterfacesMod {
     
     extension [Self <: IDragDropEvents](x: Self) {
       
-      inline def setCanDrag(value: /* item */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "canDrag", js.Any.fromFunction1(value))
+      inline def setCanDrag(value: /* item */ js.UndefOr[Any] => Boolean): Self = StObject.set(x, "canDrag", js.Any.fromFunction1(value))
       
       inline def setCanDragGroups(value: Boolean): Self = StObject.set(x, "canDragGroups", value.asInstanceOf[js.Any])
       
@@ -165,29 +165,29 @@ object dragdropInterfacesMod {
       
       inline def setCanDropUndefined: Self = StObject.set(x, "canDrop", js.undefined)
       
-      inline def setOnDragEnd(value: (/* item */ js.UndefOr[js.Any], /* event */ js.UndefOr[DragEvent]) => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction2(value))
+      inline def setOnDragEnd(value: (/* item */ js.UndefOr[Any], /* event */ js.UndefOr[DragEvent]) => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction2(value))
       
       inline def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
       
-      inline def setOnDragEnter(value: (/* item */ js.UndefOr[js.Any], /* event */ js.UndefOr[DragEvent]) => String): Self = StObject.set(x, "onDragEnter", js.Any.fromFunction2(value))
+      inline def setOnDragEnter(value: (/* item */ js.UndefOr[Any], /* event */ js.UndefOr[DragEvent]) => String): Self = StObject.set(x, "onDragEnter", js.Any.fromFunction2(value))
       
       inline def setOnDragEnterUndefined: Self = StObject.set(x, "onDragEnter", js.undefined)
       
-      inline def setOnDragLeave(value: (/* item */ js.UndefOr[js.Any], /* event */ js.UndefOr[DragEvent]) => Unit): Self = StObject.set(x, "onDragLeave", js.Any.fromFunction2(value))
+      inline def setOnDragLeave(value: (/* item */ js.UndefOr[Any], /* event */ js.UndefOr[DragEvent]) => Unit): Self = StObject.set(x, "onDragLeave", js.Any.fromFunction2(value))
       
       inline def setOnDragLeaveUndefined: Self = StObject.set(x, "onDragLeave", js.undefined)
       
-      inline def setOnDragOver(value: (/* item */ js.UndefOr[js.Any], /* event */ js.UndefOr[DragEvent]) => Unit): Self = StObject.set(x, "onDragOver", js.Any.fromFunction2(value))
+      inline def setOnDragOver(value: (/* item */ js.UndefOr[Any], /* event */ js.UndefOr[DragEvent]) => Unit): Self = StObject.set(x, "onDragOver", js.Any.fromFunction2(value))
       
       inline def setOnDragOverUndefined: Self = StObject.set(x, "onDragOver", js.undefined)
       
       inline def setOnDragStart(
-        value: (/* item */ js.UndefOr[js.Any], /* itemIndex */ js.UndefOr[Double], /* selectedItems */ js.UndefOr[js.Array[js.Any]], /* event */ js.UndefOr[MouseEvent]) => Unit
+        value: (/* item */ js.UndefOr[Any], /* itemIndex */ js.UndefOr[Double], /* selectedItems */ js.UndefOr[js.Array[Any]], /* event */ js.UndefOr[MouseEvent]) => Unit
       ): Self = StObject.set(x, "onDragStart", js.Any.fromFunction4(value))
       
       inline def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
       
-      inline def setOnDrop(value: (/* item */ js.UndefOr[js.Any], /* event */ js.UndefOr[DragEvent]) => Unit): Self = StObject.set(x, "onDrop", js.Any.fromFunction2(value))
+      inline def setOnDrop(value: (/* item */ js.UndefOr[Any], /* event */ js.UndefOr[DragEvent]) => Unit): Self = StObject.set(x, "onDrop", js.Any.fromFunction2(value))
       
       inline def setOnDropUndefined: Self = StObject.set(x, "onDrop", js.undefined)
     }
@@ -236,7 +236,7 @@ object dragdropInterfacesMod {
     /**
       * Whether or not drag action is allowed.
       */
-    var canDrag: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], Boolean]] = js.undefined
+    var canDrag: js.UndefOr[js.Function1[/* item */ js.UndefOr[Any], Boolean]] = js.undefined
     
     /**
       * Whether or not drop action is allowed.
@@ -268,14 +268,14 @@ object dragdropInterfacesMod {
       * On drag end event callback.
       */
     var onDragEnd: js.UndefOr[
-        js.Function2[/* item */ js.UndefOr[js.Any], /* event */ js.UndefOr[DragEvent], Unit]
+        js.Function2[/* item */ js.UndefOr[Any], /* event */ js.UndefOr[DragEvent], Unit]
       ] = js.undefined
     
     /**
       * On drag over element(s) event callback.
       */
     var onDragOver: js.UndefOr[
-        js.Function2[/* item */ js.UndefOr[js.Any], /* event */ js.UndefOr[DragEvent], Unit]
+        js.Function2[/* item */ js.UndefOr[Any], /* event */ js.UndefOr[DragEvent], Unit]
       ] = js.undefined
     
     /**
@@ -283,9 +283,9 @@ object dragdropInterfacesMod {
       */
     var onDragStart: js.UndefOr[
         js.Function4[
-          /* item */ js.UndefOr[js.Any], 
+          /* item */ js.UndefOr[Any], 
           /* itemIndex */ js.UndefOr[Double], 
-          /* selectedItems */ js.UndefOr[js.Array[js.Any]], 
+          /* selectedItems */ js.UndefOr[js.Array[Any]], 
           /* event */ js.UndefOr[MouseEvent], 
           Unit
         ]
@@ -295,7 +295,7 @@ object dragdropInterfacesMod {
       * On drop event callback.
       */
     var onDrop: js.UndefOr[
-        js.Function2[/* item */ js.UndefOr[js.Any], /* event */ js.UndefOr[DragEvent], Unit]
+        js.Function2[/* item */ js.UndefOr[Any], /* event */ js.UndefOr[DragEvent], Unit]
       ] = js.undefined
     
     /**
@@ -317,7 +317,7 @@ object dragdropInterfacesMod {
     
     extension [Self <: IDragDropOptions](x: Self) {
       
-      inline def setCanDrag(value: /* item */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "canDrag", js.Any.fromFunction1(value))
+      inline def setCanDrag(value: /* item */ js.UndefOr[Any] => Boolean): Self = StObject.set(x, "canDrag", js.Any.fromFunction1(value))
       
       inline def setCanDragUndefined: Self = StObject.set(x, "canDrag", js.undefined)
       
@@ -333,27 +333,27 @@ object dragdropInterfacesMod {
       
       inline def setEventMapUndefined: Self = StObject.set(x, "eventMap", js.undefined)
       
-      inline def setEventMapVarargs(value: Callback*): Self = StObject.set(x, "eventMap", js.Array(value :_*))
+      inline def setEventMapVarargs(value: Callback*): Self = StObject.set(x, "eventMap", js.Array(value*))
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
       inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      inline def setOnDragEnd(value: (/* item */ js.UndefOr[js.Any], /* event */ js.UndefOr[DragEvent]) => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction2(value))
+      inline def setOnDragEnd(value: (/* item */ js.UndefOr[Any], /* event */ js.UndefOr[DragEvent]) => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction2(value))
       
       inline def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
       
-      inline def setOnDragOver(value: (/* item */ js.UndefOr[js.Any], /* event */ js.UndefOr[DragEvent]) => Unit): Self = StObject.set(x, "onDragOver", js.Any.fromFunction2(value))
+      inline def setOnDragOver(value: (/* item */ js.UndefOr[Any], /* event */ js.UndefOr[DragEvent]) => Unit): Self = StObject.set(x, "onDragOver", js.Any.fromFunction2(value))
       
       inline def setOnDragOverUndefined: Self = StObject.set(x, "onDragOver", js.undefined)
       
       inline def setOnDragStart(
-        value: (/* item */ js.UndefOr[js.Any], /* itemIndex */ js.UndefOr[Double], /* selectedItems */ js.UndefOr[js.Array[js.Any]], /* event */ js.UndefOr[MouseEvent]) => Unit
+        value: (/* item */ js.UndefOr[Any], /* itemIndex */ js.UndefOr[Double], /* selectedItems */ js.UndefOr[js.Array[Any]], /* event */ js.UndefOr[MouseEvent]) => Unit
       ): Self = StObject.set(x, "onDragStart", js.Any.fromFunction4(value))
       
       inline def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
       
-      inline def setOnDrop(value: (/* item */ js.UndefOr[js.Any], /* event */ js.UndefOr[DragEvent]) => Unit): Self = StObject.set(x, "onDrop", js.Any.fromFunction2(value))
+      inline def setOnDrop(value: (/* item */ js.UndefOr[Any], /* event */ js.UndefOr[DragEvent]) => Unit): Self = StObject.set(x, "onDrop", js.Any.fromFunction2(value))
       
       inline def setOnDropUndefined: Self = StObject.set(x, "onDrop", js.undefined)
       

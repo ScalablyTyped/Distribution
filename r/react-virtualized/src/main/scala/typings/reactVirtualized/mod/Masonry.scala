@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-virtualized", "Masonry")
 @js.native
-class Masonry protected ()
+open class Masonry protected ()
   extends typings.reactVirtualized.esMasonryMod.Masonry {
   def this(props: MasonryProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: MasonryProps, context: js.Any) = this()
+  def this(props: MasonryProps, context: Any) = this()
 }
 /* static members */
 object Masonry {

@@ -28,7 +28,7 @@ trait AzureTokenCredentialsOptions extends StObject {
   /**
     * The token cache. Default value is MemoryCache from adal.
     */
-  var tokenCache: js.UndefOr[js.Any] = js.undefined
+  var tokenCache: js.UndefOr[Any] = js.undefined
 }
 object AzureTokenCredentialsOptions {
   
@@ -51,7 +51,7 @@ object AzureTokenCredentialsOptions {
     
     inline def setTokenAudienceUndefined: Self = StObject.set(x, "tokenAudience", js.undefined)
     
-    inline def setTokenCache(value: js.Any): Self = StObject.set(x, "tokenCache", value.asInstanceOf[js.Any])
+    inline def setTokenCache(value: Any): Self = StObject.set(x, "tokenCache", value.asInstanceOf[js.Any])
     
     inline def setTokenCacheUndefined: Self = StObject.set(x, "tokenCache", js.undefined)
   }

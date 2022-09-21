@@ -12,9 +12,9 @@ object booleanMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def and(left: Property[js.Any], right: Property[js.Any]): Property[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("and")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Property[Boolean]]
+  inline def and(left: Property[Any], right: Property[Any]): Property[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("and")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Property[Boolean]]
   
-  inline def not(src: default[js.Any]): default[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(src.asInstanceOf[js.Any]).asInstanceOf[default[Boolean]]
+  inline def not(src: default[Any]): default[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(src.asInstanceOf[js.Any]).asInstanceOf[default[Boolean]]
   
-  inline def or(left: Property[js.Any], right: Property[js.Any]): Property[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("or")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Property[Boolean]]
+  inline def or(left: Property[Any], right: Property[Any]): Property[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("or")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Property[Boolean]]
 }

@@ -32,7 +32,7 @@ object GoogleCloudDatalabelingV1beta1VideoObjectTrackingAnnotation {
     
     inline def setObjectTrackingFramesUndefined: Self = StObject.set(x, "objectTrackingFrames", js.undefined)
     
-    inline def setObjectTrackingFramesVarargs(value: GoogleCloudDatalabelingV1beta1ObjectTrackingFrame*): Self = StObject.set(x, "objectTrackingFrames", js.Array(value :_*))
+    inline def setObjectTrackingFramesVarargs(value: GoogleCloudDatalabelingV1beta1ObjectTrackingFrame*): Self = StObject.set(x, "objectTrackingFrames", js.Array(value*))
     
     inline def setTimeSegment(value: GoogleCloudDatalabelingV1beta1TimeSegment): Self = StObject.set(x, "timeSegment", value.asInstanceOf[js.Any])
     

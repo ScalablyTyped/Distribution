@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FnCallThisBufferSizeWindowTimeScheduler extends StObject {
   
-  def apply[T](): js.Any = js.native
-  def apply[T](bufferSize: Double): js.Any = js.native
-  def apply[T](bufferSize: Double, windowTime: Double): js.Any = js.native
+  def apply[T](): Any = js.native
+  def apply[T](bufferSize: Double): Any = js.native
+  def apply[T](bufferSize: Double, windowTime: Double): Any = js.native
   def apply[T](
     bufferSize: Double,
     windowTime: Double,
-    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-  ): js.Any = js.native
+    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+  ): Any = js.native
   def apply[T](
     bufferSize: Double,
     windowTime: Unit,
-    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-  ): js.Any = js.native
-  def apply[T](bufferSize: Unit, windowTime: Double): js.Any = js.native
+    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+  ): Any = js.native
+  def apply[T](bufferSize: Unit, windowTime: Double): Any = js.native
   def apply[T](
     bufferSize: Unit,
     windowTime: Double,
-    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-  ): js.Any = js.native
+    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+  ): Any = js.native
   def apply[T](
     bufferSize: Unit,
     windowTime: Unit,
-    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-  ): js.Any = js.native
+    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ Any
+  ): Any = js.native
   def apply[T](
-    config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ShareReplayConfig */ js.Any
-  ): js.Any = js.native
+    config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ShareReplayConfig */ Any
+  ): Any = js.native
 }

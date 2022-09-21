@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents a scoped collection of PivotTables. The PivotTables are sorted based on the location of the PivotTable's top-left corner. They are ordered top-to-bottom and then left-to-right.
   *
-  * Represents a scoped collection of PivotTables. The PivotTables are sorted based on the location of the PivotTable's top-left corner. They are ordered top to bottom and then left to right.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.12]
   */
 @js.native
@@ -28,20 +28,33 @@ trait PivotTableScopedCollection
   /**
     * Gets the number of PivotTables in the collection.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   def getCount(): ClientResult[Double] = js.native
   
   /**
-    * Gets the first PivotTable in the collection. The PivotTables in the collection are sorted top to bottom and left to right, such that top-left table is the first PivotTable in the collection.
+    * Gets the first PivotTable in the collection. The PivotTables in the collection are sorted top-to-bottom and left-to-right, such that top-left table is the first PivotTable in the collection.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   def getFirst(): PivotTable = js.native
   
   /**
+    * Gets the first PivotTable in the collection. The PivotTables in the collection are sorted top-to-bottom and left-to-right, such that the top-left table is the first PivotTable in the collection.
+    If the collection is empty, then this method returns an object with its `isNullObject` property set to `true`.
+    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.15]
+    */
+  def getFirstOrNullObject(): PivotTable = js.native
+  
+  /**
     * Gets a PivotTable by name.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     *
     * @param key Name of the PivotTable to be retrieved.
@@ -49,8 +62,10 @@ trait PivotTableScopedCollection
   def getItem(key: String): PivotTable = js.native
   
   /**
-    * Gets a PivotTable by name. If the PivotTable does not exist, will return a null object.
+    * Gets a PivotTable by name. If the PivotTable does not exist, then this method returns an object with its `isNullObject` property set to `true`.
+    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     *
     * @param name Name of the PivotTable to be retrieved.

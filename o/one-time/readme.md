@@ -10,10 +10,10 @@ Run the supplied function exactly one time (once)
 | ------------------ | :-------------: |
 | Full name          | one-time |
 | Keywords           | once, function, single, one, one-time, execution, nope |
-| # releases         | 2 |
-| # dependents       | 48 |
-| # downloads        | 128066404 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2.3149776E7 |
+| # stars            | 8.0 |
 
 ## Links
 - [Homepage](https://github.com/3rd-Eden/one-time#readme)

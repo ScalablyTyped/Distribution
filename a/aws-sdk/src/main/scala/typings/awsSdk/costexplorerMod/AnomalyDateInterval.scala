@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AnomalyDateInterval extends StObject {
   
   /**
-    *  The last date an anomaly was observed. 
+    * The last date an anomaly was observed. 
     */
   var EndDate: js.UndefOr[YearMonthDay] = js.undefined
   
   /**
-    *  The first date an anomaly was observed. 
+    * The first date an anomaly was observed. 
     */
   var StartDate: YearMonthDay
 }

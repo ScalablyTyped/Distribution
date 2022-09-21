@@ -9,10 +9,10 @@ Utils for easy-xapi
 | ------------------ | :-------------: |
 | Full name          | easy-xapi-utils |
 | Keywords           | xapi, utils |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 729 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 70.0 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/DeadAlready/easy-xapi-utils)

@@ -8,6 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LogMetric extends StObject {
   
   /**
+    * Optional. The resource name of the Log Bucket that owns the Log Metric. Only Log Buckets in projects are supported. The bucket has to be in the same project as the metric.For
+    * example:projects/my-project/locations/global/buckets/my-bucketIf empty, then the Log Metric is considered a non-Bucket Log Metric.
+    */
+  var bucketName: js.UndefOr[String] = js.undefined
+  
+  /**
     * Optional. The bucket_options are required when the logs-based metric is using a DISTRIBUTION value type and it describes the bucket boundaries used to create a histogram of the
     * extracted values.
     */
@@ -19,6 +25,9 @@ trait LogMetric extends StObject {
   /** Optional. A description of this metric, which is used in documentation. The maximum length of the description is 8000 characters. */
   var description: js.UndefOr[String] = js.undefined
   
+  /** Optional. If set to True, then this metric is disabled and it does not generate any points. */
+  var disabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Required. An advanced logs filter (https://cloud.google.com/logging/docs/view/advanced_filters) which is used to match log entries. Example: "resource.type=gae_app AND
     * severity>=ERROR" The maximum length of the filter is 20000 characters.
@@ -28,14 +37,14 @@ trait LogMetric extends StObject {
   /**
     * Optional. A map from a label key string to an extractor expression which is used to extract data from a log entry field and assign as the label value. Each label key specified in
     * the LabelDescriptor must have an associated extractor expression in this map. The syntax of the extractor expression is the same as for the value_extractor field.The extracted value
-    * is converted to the type defined in the label descriptor. If the either the extraction or the type conversion fails, the label will have a default value. The default value for a
-    * string label is an empty string, for an integer label its 0, and for a boolean label its false.Note that there are upper bounds on the maximum number of labels and the number of
-    * active time series that are allowed in a project.
+    * is converted to the type defined in the label descriptor. If either the extraction or the type conversion fails, the label will have a default value. The default value for a string
+    * label is an empty string, for an integer label its 0, and for a boolean label its false.Note that there are upper bounds on the maximum number of labels and the number of active
+    * time series that are allowed in a project.
     */
   var labelExtractors: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.LogMetric & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.LogMetric & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -51,8 +60,8 @@ trait LogMetric extends StObject {
   /**
     * Required. The client-assigned metric identifier. Examples: "error_count", "nginx/requests".Metric identifiers are limited to 100 characters and can include only the following
     * characters: A-Z, a-z, 0-9, and the special characters _-.,+!*',()%/. The forward-slash character (/) denotes a hierarchy of name pieces, and it cannot be the first character of the
-    * name.The metric identifier in this field must not be URL-encoded (https://en.wikipedia.org/wiki/Percent-encoding). However, when the metric identifier appears as the [METRIC_ID]
-    * part of a metric_name API parameter, then the metric identifier must be URL-encoded. Example: "projects/my-project/metrics/nginx%2Frequests".
+    * name.This field is the [METRIC_ID] part of a metric resource name in the format "projects/PROJECT_ID/metrics/METRIC_ID". Example: If the resource name of a metric is
+    * "projects/my-project/metrics/nginx%2Frequests", this field's value is "nginx/requests".
     */
   var name: js.UndefOr[String] = js.undefined
   
@@ -81,6 +90,10 @@ object LogMetric {
   
   extension [Self <: LogMetric](x: Self) {
     
+    inline def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
+    
+    inline def setBucketNameUndefined: Self = StObject.set(x, "bucketName", js.undefined)
+    
     inline def setBucketOptions(value: BucketOptions): Self = StObject.set(x, "bucketOptions", value.asInstanceOf[js.Any])
     
     inline def setBucketOptionsUndefined: Self = StObject.set(x, "bucketOptions", js.undefined)
@@ -93,6 +106,10 @@ object LogMetric {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
@@ -100,7 +117,7 @@ object LogMetric {
     inline def setLabelExtractors(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.LogMetric & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.LogMetric & TopLevel[Any]
     ): Self = StObject.set(x, "labelExtractors", value.asInstanceOf[js.Any])
     
     inline def setLabelExtractorsUndefined: Self = StObject.set(x, "labelExtractors", js.undefined)

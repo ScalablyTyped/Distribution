@@ -1,7 +1,7 @@
 
 # Scala.js typings for node-forge
 
-Typings are for version 0.9.1
+Typings are for version 1.0.0
 
 ## Library description:
 JavaScript implementations of network transports, cryptography, ciphers, PKI, message digests, and various utilities.
@@ -10,10 +10,10 @@ JavaScript implementations of network transports, cryptography, ciphers, PKI, me
 | ------------------ | :-------------: |
 | Full name          | node-forge |
 | Keywords           | aes, asn, asn.1, cbc, crypto, cryptography, csr, des, gcm, hmac, http, https, md5, network, pkcs, pki, prng, rc2, rsa, sha1, sha256, sha384, sha512, ssh, tls, x.509, x509 |
-| # releases         | 10 |
-| # dependents       | 903 |
-| # downloads        | 567308186 |
-| # stars            | 36 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 7.1054911E7 |
+| # stars            | 4407.0 |
 
 ## Links
 - [Homepage](https://github.com/digitalbazaar/forge)

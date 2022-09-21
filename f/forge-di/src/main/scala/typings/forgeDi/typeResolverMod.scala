@@ -9,7 +9,7 @@ object typeResolverMod {
   
   @JSImport("forge-di/dist/resolvers/TypeResolver", JSImport.Default)
   @js.native
-  class default protected () extends TypeResolver {
+  open class default protected () extends TypeResolver {
     def this(
       forge: typings.forgeDi.forgeMod.default,
       binding: typings.forgeDi.bindingMod.default,

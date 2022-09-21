@@ -32,6 +32,11 @@ trait GrimoireSpell extends StObject {
     */
   var failDesc: js.UndefOr[String] = js.undefined
   
+  /**
+    * If set, the fail chance is overwritten with the result of the function
+    */
+  var failFunc: js.UndefOr[js.Function1[/* failChance */ Double, Double]] = js.undefined
+  
   var icon: Icon
   
   var id: Double
@@ -40,6 +45,11 @@ trait GrimoireSpell extends StObject {
     * The displayed name for the spell
     */
   var name: String
+  
+  /**
+    * If true, this spell doesn't count for the total spell count
+    */
+  var passthrough: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Called when the spell succeeds, always called if no fail function
@@ -69,6 +79,10 @@ object GrimoireSpell {
     
     inline def setFailDescUndefined: Self = StObject.set(x, "failDesc", js.undefined)
     
+    inline def setFailFunc(value: /* failChance */ Double => Double): Self = StObject.set(x, "failFunc", js.Any.fromFunction1(value))
+    
+    inline def setFailFuncUndefined: Self = StObject.set(x, "failFunc", js.undefined)
+    
     inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
     inline def setIcon(value: Icon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
@@ -76,6 +90,10 @@ object GrimoireSpell {
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setPassthrough(value: Boolean): Self = StObject.set(x, "passthrough", value.asInstanceOf[js.Any])
+    
+    inline def setPassthroughUndefined: Self = StObject.set(x, "passthrough", js.undefined)
     
     inline def setWin(value: () => `-1` | Unit): Self = StObject.set(x, "win", js.Any.fromFunction0(value))
   }

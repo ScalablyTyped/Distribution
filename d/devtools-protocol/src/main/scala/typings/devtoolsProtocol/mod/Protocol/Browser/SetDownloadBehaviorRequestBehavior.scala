@@ -1,7 +1,7 @@
 package typings.devtoolsProtocol.mod.Protocol.Browser
 
-import typings.devtoolsProtocol.devtoolsProtocolStrings.allow
 import typings.devtoolsProtocol.devtoolsProtocolStrings.allowAndName
+import typings.devtoolsProtocol.devtoolsProtocolStrings.allow_
 import typings.devtoolsProtocol.devtoolsProtocolStrings.default_
 import typings.devtoolsProtocol.devtoolsProtocolStrings.deny
 import org.scalablytyped.runtime.StObject
@@ -10,14 +10,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Rewritten from type alias, can be one of: 
   - typings.devtoolsProtocol.devtoolsProtocolStrings.deny
-  - typings.devtoolsProtocol.devtoolsProtocolStrings.allow
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.allow_
   - typings.devtoolsProtocol.devtoolsProtocolStrings.allowAndName
   - typings.devtoolsProtocol.devtoolsProtocolStrings.default_
 */
 trait SetDownloadBehaviorRequestBehavior extends StObject
 object SetDownloadBehaviorRequestBehavior {
   
-  inline def Allow: allow = "allow".asInstanceOf[allow]
+  inline def Allow: allow_ = "allow".asInstanceOf[allow_]
   
   inline def AllowAndName: allowAndName = "allowAndName".asInstanceOf[allowAndName]
   

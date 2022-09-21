@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NullLiteral
   extends StObject
      with Expression
-     with Instantiable1[/* value */ js.Any, Expression] {
+     with Instantiable1[/* value */ Any, Expression] {
   
   def toAQL(): String = js.native
 }

@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TrustedSigners extends StObject {
   
   /**
-    * This field is true if any of the AWS accounts have public keys that CloudFront can use to verify the signatures of signed URLs and signed cookies. If not, this field is false.
+    * This field is true if any of the Amazon Web Services accounts have public keys that CloudFront can use to verify the signatures of signed URLs and signed cookies. If not, this field is false.
     */
   var Enabled: Boolean
   
   /**
-    * A list of AWS account identifiers.
+    * A list of Amazon Web Services account identifiers.
     */
   var Items: js.UndefOr[AwsAccountNumberList] = js.undefined
   
   /**
-    * The number of AWS accounts in the list.
+    * The number of Amazon Web Services accounts in the list.
     */
   var Quantity: integer
 }
@@ -36,7 +36,7 @@ object TrustedSigners {
     
     inline def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
     
-    inline def setItemsVarargs(value: String*): Self = StObject.set(x, "Items", js.Array(value :_*))
+    inline def setItemsVarargs(value: String*): Self = StObject.set(x, "Items", js.Array(value*))
     
     inline def setQuantity(value: integer): Self = StObject.set(x, "Quantity", value.asInstanceOf[js.Any])
   }

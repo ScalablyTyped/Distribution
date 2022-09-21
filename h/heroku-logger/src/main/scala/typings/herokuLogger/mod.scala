@@ -12,7 +12,7 @@ object mod {
   
   @JSImport("heroku-logger", "Logger")
   @js.native
-  class Logger protected () extends StObject {
+  open class Logger protected () extends StObject {
     def this(config: LoggerConfig) = this()
     
     def debug(message: String): Unit = js.native

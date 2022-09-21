@@ -12,9 +12,9 @@ trait SmartTagRecognizers extends StObject {
   
   val Creator: Double
   
-  def Item(Index: js.Any): SmartTagRecognizer
+  def Item(Index: Any): SmartTagRecognizer
   
-  val Parent: js.Any
+  val Parent: Any
   
   def ReloadRecognizers(): Unit
   
@@ -27,8 +27,8 @@ object SmartTagRecognizers {
     Application: Application,
     Count: Double,
     Creator: Double,
-    Item: js.Any => SmartTagRecognizer,
-    Parent: js.Any,
+    Item: Any => SmartTagRecognizer,
+    Parent: Any,
     ReloadRecognizers: () => Unit,
     WordDotSmartTagRecognizers_typekey: SmartTagRecognizers
   ): SmartTagRecognizers = {
@@ -45,9 +45,9 @@ object SmartTagRecognizers {
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => SmartTagRecognizer): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => SmartTagRecognizer): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setReloadRecognizers(value: () => Unit): Self = StObject.set(x, "ReloadRecognizers", js.Any.fromFunction0(value))
     

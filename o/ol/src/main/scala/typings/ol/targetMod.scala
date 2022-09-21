@@ -10,8 +10,8 @@ object targetMod {
   
   @JSImport("ol/events/Target", JSImport.Default)
   @js.native
-  class default () extends Target {
-    def this(opt_target: js.Any) = this()
+  open class default () extends Target {
+    def this(opt_target: Any) = this()
   }
   
   type EventTargetLike = EventTarget | Target

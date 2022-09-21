@@ -1,6 +1,6 @@
 package typings.readableStream.mod
 
-import typings.node.BufferEncoding
+import typings.node.bufferMod.global.BufferEncoding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ trait ReadableState extends StObject {
   
   var awaitDrain: Double
   
-  var buffer: BufferList[js.Any]
+  var buffer: BufferList[Any]
   
   var decoder: StringDecoder | Null
   
@@ -25,7 +25,7 @@ trait ReadableState extends StObject {
   
   var ended: Boolean
   
-  var flowing: js.Any
+  var flowing: Any
   
   var highWaterMark: Double
   
@@ -35,9 +35,8 @@ trait ReadableState extends StObject {
   
   var objectMode: Boolean
   
-  var pipes: js.Any
+  var pipes: Any
   
-  // NodeJS.WritableStream | any[]; // TODO
   var pipesCount: Double
   
   var readableListening: Boolean
@@ -54,18 +53,18 @@ object ReadableState {
   
   inline def apply(
     awaitDrain: Double,
-    buffer: BufferList[js.Any],
+    buffer: BufferList[Any],
     defaultEncoding: BufferEncoding,
     destroyed: Boolean,
     emittedReadable: Boolean,
     endEmitted: Boolean,
     ended: Boolean,
-    flowing: js.Any,
+    flowing: Any,
     highWaterMark: Double,
     length: Double,
     needReadable: Boolean,
     objectMode: Boolean,
-    pipes: js.Any,
+    pipes: Any,
     pipesCount: Double,
     readableListening: Boolean,
     reading: Boolean,
@@ -81,7 +80,7 @@ object ReadableState {
     
     inline def setAwaitDrain(value: Double): Self = StObject.set(x, "awaitDrain", value.asInstanceOf[js.Any])
     
-    inline def setBuffer(value: BufferList[js.Any]): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+    inline def setBuffer(value: BufferList[Any]): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     
     inline def setDecoder(value: StringDecoder): Self = StObject.set(x, "decoder", value.asInstanceOf[js.Any])
     
@@ -101,7 +100,7 @@ object ReadableState {
     
     inline def setEnded(value: Boolean): Self = StObject.set(x, "ended", value.asInstanceOf[js.Any])
     
-    inline def setFlowing(value: js.Any): Self = StObject.set(x, "flowing", value.asInstanceOf[js.Any])
+    inline def setFlowing(value: Any): Self = StObject.set(x, "flowing", value.asInstanceOf[js.Any])
     
     inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
     
@@ -111,7 +110,7 @@ object ReadableState {
     
     inline def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
     
-    inline def setPipes(value: js.Any): Self = StObject.set(x, "pipes", value.asInstanceOf[js.Any])
+    inline def setPipes(value: Any): Self = StObject.set(x, "pipes", value.asInstanceOf[js.Any])
     
     inline def setPipesCount(value: Double): Self = StObject.set(x, "pipesCount", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for fs-jetpack
 
-Typings are for version 4.1.0
+Typings are for version 5.0.0
 
 ## Library description:
 Better file system API
@@ -10,10 +10,10 @@ Better file system API
 | ------------------ | :-------------: |
 | Full name          | fs-jetpack |
 | Keywords           | fs, file system |
-| # releases         | 12 |
-| # dependents       | 287 |
-| # downloads        | 2660210 |
-| # stars            | 18 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 997830.3333333334 |
+| # stars            | 692.0 |
 
 ## Links
 - [Homepage](https://github.com/szwacz/fs-jetpack)

@@ -14,28 +14,28 @@ object vpscMod {
   
   @JSImport("webcola/dist/src/vpsc", "Block")
   @js.native
-  class Block protected () extends StObject {
+  open class Block protected () extends StObject {
     def this(v: Variable) = this()
     
-    /* private */ var addVariable: js.Any = js.native
+    /* private */ var addVariable: Any = js.native
     
     var blockInd: Double = js.native
     
-    /* private */ var compute_lm: js.Any = js.native
+    /* private */ var compute_lm: Any = js.native
     
     def cost(): Double = js.native
     
     def findMinLM(): Constraint = js.native
     
-    /* private */ var findMinLMBetween: js.Any = js.native
+    /* private */ var findMinLMBetween: Any = js.native
     
-    /* private */ var findPath: js.Any = js.native
+    /* private */ var findPath: Any = js.native
     
     def isActiveDirectedPathBetween(u: Variable, v: Variable): Boolean = js.native
     
     def mergeAcross(b: Block, c: Constraint, dist: Double): Unit = js.native
     
-    /* private */ var populateSplitBlock: js.Any = js.native
+    /* private */ var populateSplitBlock: Any = js.native
     
     var posn: Double = js.native
     
@@ -43,15 +43,10 @@ object vpscMod {
     
     def splitBetween(vl: Variable, vr: Variable): typings.webcola.anon.Constraint = js.native
     
-    def traverse(visit: js.Function1[/* c */ Constraint, js.Any], acc: js.Array[js.Any]): Unit = js.native
-    def traverse(visit: js.Function1[/* c */ Constraint, js.Any], acc: js.Array[js.Any], v: Unit, prev: Variable): Unit = js.native
-    def traverse(visit: js.Function1[/* c */ Constraint, js.Any], acc: js.Array[js.Any], v: Variable): Unit = js.native
-    def traverse(
-      visit: js.Function1[/* c */ Constraint, js.Any],
-      acc: js.Array[js.Any],
-      v: Variable,
-      prev: Variable
-    ): Unit = js.native
+    def traverse(visit: js.Function1[/* c */ Constraint, Any], acc: js.Array[Any]): Unit = js.native
+    def traverse(visit: js.Function1[/* c */ Constraint, Any], acc: js.Array[Any], v: Unit, prev: Variable): Unit = js.native
+    def traverse(visit: js.Function1[/* c */ Constraint, Any], acc: js.Array[Any], v: Variable): Unit = js.native
+    def traverse(visit: js.Function1[/* c */ Constraint, Any], acc: js.Array[Any], v: Variable, prev: Variable): Unit = js.native
     
     def updateWeightedPosition(): Unit = js.native
     
@@ -66,15 +61,15 @@ object vpscMod {
     
     @JSImport("webcola/dist/src/vpsc", "Block.createSplitBlock")
     @js.native
-    def createSplitBlock: js.Any = js.native
-    inline def createSplitBlock_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createSplitBlock")(x.asInstanceOf[js.Any])
+    def createSplitBlock: Any = js.native
+    inline def createSplitBlock_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createSplitBlock")(x.asInstanceOf[js.Any])
     
     inline def split(c: Constraint): js.Array[Block] = ^.asInstanceOf[js.Dynamic].applyDynamic("split")(c.asInstanceOf[js.Any]).asInstanceOf[js.Array[Block]]
   }
   
   @JSImport("webcola/dist/src/vpsc", "Blocks")
   @js.native
-  class Blocks protected () extends StObject {
+  open class Blocks protected () extends StObject {
     def this(vs: js.Array[Variable]) = this()
     
     def cost(): Double = js.native
@@ -83,7 +78,7 @@ object vpscMod {
     
     def insert(b: Block): Unit = js.native
     
-    /* private */ var list: js.Any = js.native
+    /* private */ var list: Any = js.native
     
     def merge(c: Constraint): Unit = js.native
     
@@ -98,7 +93,7 @@ object vpscMod {
   
   @JSImport("webcola/dist/src/vpsc", "Constraint")
   @js.native
-  class Constraint protected () extends StObject {
+  open class Constraint protected () extends StObject {
     def this(left: Variable, right: Variable, gap: Double) = this()
     def this(left: Variable, right: Variable, gap: Double, equality: Boolean) = this()
     
@@ -121,7 +116,7 @@ object vpscMod {
   
   @JSImport("webcola/dist/src/vpsc", "PositionStats")
   @js.native
-  class PositionStats protected () extends StObject {
+  open class PositionStats protected () extends StObject {
     def this(scale: Double) = this()
     
     var A2: Double = js.native
@@ -139,7 +134,7 @@ object vpscMod {
   
   @JSImport("webcola/dist/src/vpsc", "Solver")
   @js.native
-  class Solver protected () extends StObject {
+  open class Solver protected () extends StObject {
     def this(vs: js.Array[Variable], cs: js.Array[Constraint]) = this()
     
     var bs: Blocks = js.native
@@ -150,7 +145,7 @@ object vpscMod {
     
     var inactive: js.Array[Constraint] = js.native
     
-    /* private */ var mostViolated: js.Any = js.native
+    /* private */ var mostViolated: Any = js.native
     
     def satisfy(): Unit = js.native
     
@@ -182,7 +177,7 @@ object vpscMod {
   
   @JSImport("webcola/dist/src/vpsc", "Variable")
   @js.native
-  class Variable protected () extends StObject {
+  open class Variable protected () extends StObject {
     def this(desiredPosition: Double) = this()
     def this(desiredPosition: Double, weight: Double) = this()
     def this(desiredPosition: Double, weight: Double, scale: Double) = this()

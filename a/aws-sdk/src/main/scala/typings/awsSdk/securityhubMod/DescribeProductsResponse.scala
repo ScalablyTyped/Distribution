@@ -31,6 +31,6 @@ object DescribeProductsResponse {
     
     inline def setProducts(value: ProductsList): Self = StObject.set(x, "Products", value.asInstanceOf[js.Any])
     
-    inline def setProductsVarargs(value: Product*): Self = StObject.set(x, "Products", js.Array(value :_*))
+    inline def setProductsVarargs(value: Product*): Self = StObject.set(x, "Products", js.Array(value*))
   }
 }

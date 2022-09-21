@@ -10,10 +10,10 @@ A front-end flow tool.
 | ------------------ | :-------------: |
 | Full name          | @feflow/cli |
 | Keywords           | feflow, front-end, flow |
-| # releases         | 96 |
-| # dependents       | 0 |
-| # downloads        | 13703 |
-| # stars            | 0 |
+| # releases         | 54 |
+| # dependents       | 0.0 |
+| # downloads        | 1857.6666666666667 |
+| # stars            | 1198.0 |
 
 ## Links
 - [Homepage](https://github.com/Tencent/feflow#readme)

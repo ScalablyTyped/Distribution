@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Measurement.html)
   */
-class MeasurementCls ()
+open class MeasurementCls ()
   extends StObject
      with typings.arcgisJsApi.esri.Measurement {
   def this(properties: MeasurementProperties) = this()

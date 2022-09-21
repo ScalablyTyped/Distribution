@@ -36,7 +36,7 @@ object ExportServerEngineAttributeRequest {
     
     inline def setInputAttributesUndefined: Self = StObject.set(x, "InputAttributes", js.undefined)
     
-    inline def setInputAttributesVarargs(value: EngineAttribute*): Self = StObject.set(x, "InputAttributes", js.Array(value :_*))
+    inline def setInputAttributesVarargs(value: EngineAttribute*): Self = StObject.set(x, "InputAttributes", js.Array(value*))
     
     inline def setServerName(value: ServerName): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
   }

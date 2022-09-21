@@ -1,29 +1,29 @@
 package typings.chromeApps.chrome.networking.onc
 
+import typings.chromeApps.chrome.integer
+import typings.chromeApps.chrome.networking.onc.internal.NetworkConfigBase
+import typings.chromeApps.chrome.networking.onc.internal.ObjectFunction
+import typings.chromeApps.chromeAppsStrings.full
+import typings.chromeApps.chromeAppsStrings.managed
+import typings.chromeApps.chromeAppsStrings.partial
+import typings.chromeApps.chromeAppsStrings.unmanaged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type ManagedBoolean = typings.chromeApps.chrome.networking.onc.ManagedType[scala.Boolean]
+type ManagedBoolean = ManagedType[Boolean]
 
-type ManagedDOMString = typings.chromeApps.chrome.networking.onc.ManagedType[java.lang.String]
+type ManagedDOMString = ManagedType[String]
 
-type ManagedDOMStringList = typings.chromeApps.chrome.networking.onc.ManagedType[js.Array[java.lang.String]]
+type ManagedDOMStringList = ManagedType[js.Array[String]]
 
-type ManagedIPConfigType = typings.chromeApps.chrome.networking.onc.ManagedType[js.Array[typings.chromeApps.chrome.networking.onc.IPConfigType]]
+type ManagedIPConfigType = ManagedType[js.Array[IPConfigType]]
 
-type ManagedLong = typings.chromeApps.chrome.networking.onc.ManagedType[typings.chromeApps.chrome.integer]
+type ManagedLong = ManagedType[integer]
 
-type ManagedProperties = typings.chromeApps.chrome.networking.onc.NetworkProperties[
-typings.chromeApps.chromeAppsStrings.managed, 
-typings.chromeApps.chromeAppsStrings.full]
+type ManagedProperties = NetworkProperties[managed, full]
 
-type NetworkConfigProperties[OF /* <: typings.chromeApps.chrome.networking.onc.internal.ObjectFunction */] = typings.chromeApps.chrome.networking.onc.internal.NetworkConfigBase[
-typings.chromeApps.chromeAppsStrings.unmanaged, 
-typings.chromeApps.chromeAppsStrings.full, 
-OF]
+type NetworkConfigProperties[OF /* <: ObjectFunction */] = NetworkConfigBase[unmanaged, full, OF]
 
-type NetworkStateProperties = typings.chromeApps.chrome.networking.onc.NetworkProperties[
-typings.chromeApps.chromeAppsStrings.unmanaged, 
-typings.chromeApps.chromeAppsStrings.partial]
+type NetworkStateProperties = NetworkProperties[unmanaged, partial]

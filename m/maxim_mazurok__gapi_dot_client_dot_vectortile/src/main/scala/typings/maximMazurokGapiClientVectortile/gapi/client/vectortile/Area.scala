@@ -6,6 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Area extends StObject {
   
+  /**
+    * The z-order of this geometry when rendered on a flat basemap. Geometry with a lower z-order should be rendered beneath geometry with a higher z-order. This z-ordering does not imply
+    * anything about the altitude of the area relative to the ground, but it can be used to prevent z-fighting. Unlike Area.z_order this can be used to compare with Line.basemap_z_order,
+    * and in fact may yield more accurate rendering (where a line may be rendered beneath an area).
+    */
+  var basemapZOrder: js.UndefOr[BasemapZOrder] = js.undefined
+  
   /** True if the polygon is not entirely internal to the feature that it belongs to: that is, some of the edges are bordering another feature. */
   var hasExternalEdges: js.UndefOr[Boolean] = js.undefined
   
@@ -38,7 +45,7 @@ trait Area extends StObject {
   /**
     * The z-ordering of this area. Areas with a lower z-order should be rendered beneath areas with a higher z-order. This z-ordering does not imply anything about the altitude of the
     * line relative to the ground, but it can be used to prevent z-fighting during rendering on the client. This z-ordering can only be used to compare areas, and cannot be compared with
-    * the z_order field in the Line message. The z-order may be negative or zero.
+    * the z_order field in the Line message. The z-order may be negative or zero. Prefer Area.basemap_z_order.
     */
   var zOrder: js.UndefOr[Double] = js.undefined
 }
@@ -51,6 +58,10 @@ object Area {
   
   extension [Self <: Area](x: Self) {
     
+    inline def setBasemapZOrder(value: BasemapZOrder): Self = StObject.set(x, "basemapZOrder", value.asInstanceOf[js.Any])
+    
+    inline def setBasemapZOrderUndefined: Self = StObject.set(x, "basemapZOrder", js.undefined)
+    
     inline def setHasExternalEdges(value: Boolean): Self = StObject.set(x, "hasExternalEdges", value.asInstanceOf[js.Any])
     
     inline def setHasExternalEdgesUndefined: Self = StObject.set(x, "hasExternalEdges", js.undefined)
@@ -59,19 +70,19 @@ object Area {
     
     inline def setInternalEdgesUndefined: Self = StObject.set(x, "internalEdges", js.undefined)
     
-    inline def setInternalEdgesVarargs(value: Double*): Self = StObject.set(x, "internalEdges", js.Array(value :_*))
+    inline def setInternalEdgesVarargs(value: Double*): Self = StObject.set(x, "internalEdges", js.Array(value*))
     
     inline def setLoopBreaks(value: js.Array[Double]): Self = StObject.set(x, "loopBreaks", value.asInstanceOf[js.Any])
     
     inline def setLoopBreaksUndefined: Self = StObject.set(x, "loopBreaks", js.undefined)
     
-    inline def setLoopBreaksVarargs(value: Double*): Self = StObject.set(x, "loopBreaks", js.Array(value :_*))
+    inline def setLoopBreaksVarargs(value: Double*): Self = StObject.set(x, "loopBreaks", js.Array(value*))
     
     inline def setTriangleIndices(value: js.Array[Double]): Self = StObject.set(x, "triangleIndices", value.asInstanceOf[js.Any])
     
     inline def setTriangleIndicesUndefined: Self = StObject.set(x, "triangleIndices", js.undefined)
     
-    inline def setTriangleIndicesVarargs(value: Double*): Self = StObject.set(x, "triangleIndices", js.Array(value :_*))
+    inline def setTriangleIndicesVarargs(value: Double*): Self = StObject.set(x, "triangleIndices", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

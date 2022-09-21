@@ -24,6 +24,6 @@ object DescribeAutoScalingNotificationTypesAnswer {
     
     inline def setAutoScalingNotificationTypesUndefined: Self = StObject.set(x, "AutoScalingNotificationTypes", js.undefined)
     
-    inline def setAutoScalingNotificationTypesVarargs(value: XmlStringMaxLen255*): Self = StObject.set(x, "AutoScalingNotificationTypes", js.Array(value :_*))
+    inline def setAutoScalingNotificationTypesVarargs(value: XmlStringMaxLen255*): Self = StObject.set(x, "AutoScalingNotificationTypes", js.Array(value*))
   }
 }

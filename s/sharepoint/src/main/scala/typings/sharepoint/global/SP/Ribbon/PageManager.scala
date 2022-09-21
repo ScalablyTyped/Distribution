@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.Ribbon.PageManager")
 @js.native
-class PageManager ()
+open class PageManager ()
   extends StObject
      with typings.sharepoint.SP.Ribbon.PageManager {
   
@@ -19,7 +19,7 @@ class PageManager ()
   override def addPageComponent(component: Component): Unit = js.native
   
   /* CompleteClass */
-  override def add_ribbonInited(value: js.Function0[Unit]): js.Any = js.native
+  override def add_ribbonInited(value: js.Function0[Unit]): Any = js.native
   
   /* CompleteClass */
   override def canHandleCommand(commandId: String): Boolean = js.native
@@ -37,7 +37,7 @@ class PageManager ()
   override def get_undoManager(): UndoManager = js.native
   
   /* CompleteClass */
-  override def handleCommand(commandId: String, properties: js.Any, sequenceNumber: Double): Boolean = js.native
+  override def handleCommand(commandId: String, properties: Any, sequenceNumber: Double): Boolean = js.native
   
   /* CompleteClass */
   override def isRootCommandEnabled(commandId: String, root: Root): Boolean = js.native

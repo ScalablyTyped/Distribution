@@ -31,6 +31,10 @@ object reactMonacoEditorStrings {
   inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
+  sealed trait beforeWhitespace extends StObject
+  inline def beforeWhitespace: beforeWhitespace = "beforeWhitespace".asInstanceOf[beforeWhitespace]
+  
+  @js.native
   sealed trait bottom extends StObject
   inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
@@ -41,6 +45,10 @@ object reactMonacoEditorStrings {
   @js.native
   sealed trait bounded extends StObject
   inline def bounded: bounded = "bounded".asInstanceOf[bounded]
+  
+  @js.native
+  sealed trait brackets extends StObject
+  inline def brackets: brackets = "brackets".asInstanceOf[brackets]
   
   @js.native
   sealed trait copy extends StObject
@@ -75,8 +83,16 @@ object reactMonacoEditorStrings {
   inline def indentation: indentation = "indentation".asInstanceOf[indentation]
   
   @js.native
+  sealed trait inherit extends StObject
+  inline def inherit: inherit = "inherit".asInstanceOf[inherit]
+  
+  @js.native
   sealed trait `inline` extends StObject
   inline def `inline`: `inline` = "inline".asInstanceOf[`inline`]
+  
+  @js.native
+  sealed trait languageDefined extends StObject
+  inline def languageDefined: languageDefined = "languageDefined".asInstanceOf[languageDefined]
   
   @js.native
   sealed trait line extends StObject
@@ -117,6 +133,10 @@ object reactMonacoEditorStrings {
   @js.native
   sealed trait prompt extends StObject
   inline def prompt: prompt = "prompt".asInstanceOf[prompt]
+  
+  @js.native
+  sealed trait quotes extends StObject
+  inline def quotes: quotes = "quotes".asInstanceOf[quotes]
   
   @js.native
   sealed trait recentlyUsed extends StObject

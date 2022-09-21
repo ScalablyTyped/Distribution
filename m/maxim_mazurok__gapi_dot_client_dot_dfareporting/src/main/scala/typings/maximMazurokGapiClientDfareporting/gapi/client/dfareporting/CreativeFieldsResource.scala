@@ -3,8 +3,8 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientDfareporting.anon.Alt
 import typings.maximMazurokGapiClientDfareporting.anon.Callback
-import typings.maximMazurokGapiClientDfareporting.anon.PrettyPrintProfileId
 import typings.maximMazurokGapiClientDfareporting.anon.ProfileIdQuotaUser
+import typings.maximMazurokGapiClientDfareporting.anon.QuotaUserResource
 import typings.maximMazurokGapiClientDfareporting.anon.SearchString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,7 +23,7 @@ trait CreativeFieldsResource extends StObject {
   
   def insert(request: Callback, body: CreativeField): Request[CreativeField] = js.native
   /** Inserts a new creative field. */
-  def insert(request: PrettyPrintProfileId): Request[CreativeField] = js.native
+  def insert(request: ProfileIdQuotaUser): Request[CreativeField] = js.native
   
   /** Retrieves a list of creative fields, possibly filtered. This method supports paging. */
   def list(): Request[CreativeFieldsListResponse] = js.native
@@ -31,9 +31,9 @@ trait CreativeFieldsResource extends StObject {
   
   def patch(request: Alt, body: CreativeField): Request[CreativeField] = js.native
   /** Updates an existing creative field. This method supports patch semantics. */
-  def patch(request: ProfileIdQuotaUser): Request[CreativeField] = js.native
+  def patch(request: QuotaUserResource): Request[CreativeField] = js.native
   
   def update(request: Callback, body: CreativeField): Request[CreativeField] = js.native
   /** Updates an existing creative field. */
-  def update(request: PrettyPrintProfileId): Request[CreativeField] = js.native
+  def update(request: ProfileIdQuotaUser): Request[CreativeField] = js.native
 }

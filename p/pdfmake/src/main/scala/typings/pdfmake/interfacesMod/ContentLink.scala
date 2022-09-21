@@ -6,10 +6,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ContentLink extends StObject {
   
+  /**
+    * URL to open when the element is clicked on.
+    *
+    * Use in combination with a `text` or `image` property.
+    */
   var link: js.UndefOr[String] = js.undefined
   
+  /**
+    * `id` of an element to jump to when the element is clicked on.
+    *
+    * Use in combination with a `text` or `image` property.
+    *
+    * - To display the target element's content, use `textReference` instead.
+    * - To display the target element's page number, use `pageReference` instead.
+    *
+    * To link to a fixed page number (without a reference target), use `linkToPage` instead.
+    */
   var linkToDestination: js.UndefOr[String] = js.undefined
   
+  /**
+    * Page to jump to when the element is clicked on.
+    *
+    * Use in combination with a `text` or `image` property.
+    *
+    * To link to another element, use {@link linkToDestination}, `textReference`
+    * or `pageReference` instead.
+    */
   var linkToPage: js.UndefOr[Double] = js.undefined
 }
 object ContentLink {

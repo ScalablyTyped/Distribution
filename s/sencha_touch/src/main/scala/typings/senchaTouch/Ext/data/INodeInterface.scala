@@ -14,7 +14,7 @@ trait INodeInterface
     * @param node Ext.data.NodeInterface/Ext.data.NodeInterface[] The node or Array of nodes to append.
     * @returns Ext.data.NodeInterface The appended node if single append, or null if an array was passed.
     */
-  var appendChild: js.UndefOr[js.Function1[/* node */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var appendChild: js.UndefOr[js.Function1[/* node */ js.UndefOr[Any], this.type]] = js.undefined
   
   /** [Method] Bubbles up the tree from this node calling the specified function with each node
     * @param fn Function The function to call.
@@ -23,8 +23,8 @@ trait INodeInterface
     */
   var bubble: js.UndefOr[
     js.Function3[
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       /* args */ js.UndefOr[Array], 
       Unit
     ]
@@ -37,15 +37,15 @@ trait INodeInterface
     */
   var cascadeBy: js.UndefOr[
     js.Function3[
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       /* args */ js.UndefOr[Array], 
       Unit
     ]
   ] = js.undefined
   
   /** [Property] (Object) */
-  var childNodes: js.UndefOr[js.Any] = js.undefined
+  var childNodes: js.UndefOr[Any] = js.undefined
   
   /** [Method] Collapse this node
     * @param recursive Function true to recursively collapse all the children.
@@ -54,9 +54,9 @@ trait INodeInterface
     */
   var collapse: js.UndefOr[
     js.Function3[
-      /* recursive */ js.UndefOr[js.Any], 
-      /* callback */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* recursive */ js.UndefOr[Any], 
+      /* callback */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -80,7 +80,7 @@ trait INodeInterface
     * @param silent Object
     */
   @JSName("destroy")
-  var destroy_INodeInterface: js.UndefOr[js.Function1[/* silent */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var destroy_INodeInterface: js.UndefOr[js.Function1[/* silent */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Iterates the child nodes of this node calling the specified function with each node
     * @param fn Function The function to call.
@@ -89,8 +89,8 @@ trait INodeInterface
     */
   var eachChild: js.UndefOr[
     js.Function3[
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       /* args */ js.UndefOr[Array], 
       Unit
     ]
@@ -103,9 +103,9 @@ trait INodeInterface
     */
   var expand: js.UndefOr[
     js.Function3[
-      /* recursive */ js.UndefOr[js.Any], 
-      /* callback */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* recursive */ js.UndefOr[Any], 
+      /* callback */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -119,7 +119,7 @@ trait INodeInterface
   var findChild: js.UndefOr[
     js.Function3[
       /* attribute */ js.UndefOr[String], 
-      /* value */ js.UndefOr[js.Any], 
+      /* value */ js.UndefOr[Any], 
       /* deep */ js.UndefOr[Boolean], 
       this.type
     ]
@@ -133,15 +133,15 @@ trait INodeInterface
     */
   var findChildBy: js.UndefOr[
     js.Function3[
-      /* fn */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* fn */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       /* deep */ js.UndefOr[Boolean], 
       this.type
     ]
   ] = js.undefined
   
   /** [Property] (Object) */
-  var firstChild: js.UndefOr[js.Any] = js.undefined
+  var firstChild: js.UndefOr[Any] = js.undefined
   
   /** [Method] Returns the child node at the specified index
     * @param index Number
@@ -244,16 +244,16 @@ trait INodeInterface
   var isVisible: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Property] (Object) */
-  var lastChild: js.UndefOr[js.Any] = js.undefined
+  var lastChild: js.UndefOr[Any] = js.undefined
   
   /** [Property] (Object) */
-  var nextSibling: js.UndefOr[js.Any] = js.undefined
+  var nextSibling: js.UndefOr[Any] = js.undefined
   
   /** [Property] (Object) */
-  var parentNode: js.UndefOr[js.Any] = js.undefined
+  var parentNode: js.UndefOr[Any] = js.undefined
   
   /** [Property] (Object) */
-  var previousSibling: js.UndefOr[js.Any] = js.undefined
+  var previousSibling: js.UndefOr[Any] = js.undefined
   
   /** [Method] Removes this node from its parent
     * @param destroy Boolean true to destroy the node upon removal.
@@ -296,7 +296,7 @@ trait INodeInterface
     */
   var sort: js.UndefOr[
     js.Function3[
-      /* sortFn */ js.UndefOr[js.Any], 
+      /* sortFn */ js.UndefOr[Any], 
       /* recursive */ js.UndefOr[Boolean], 
       /* suppressEvent */ js.UndefOr[Boolean], 
       Unit
@@ -307,7 +307,7 @@ trait INodeInterface
     * @param silent Object
     * @returns Boolean
     */
-  var updateInfo: js.UndefOr[js.Function1[/* silent */ js.UndefOr[js.Any], Boolean]] = js.undefined
+  var updateInfo: js.UndefOr[js.Function1[/* silent */ js.UndefOr[Any], Boolean]] = js.undefined
 }
 object INodeInterface {
   
@@ -318,28 +318,28 @@ object INodeInterface {
   
   extension [Self <: INodeInterface](x: Self) {
     
-    inline def setAppendChild(value: /* node */ js.UndefOr[js.Any] => INodeInterface): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
+    inline def setAppendChild(value: /* node */ js.UndefOr[Any] => INodeInterface): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
     
     inline def setAppendChildUndefined: Self = StObject.set(x, "appendChild", js.undefined)
     
     inline def setBubble(
-      value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* args */ js.UndefOr[Array]) => Unit
+      value: (/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* args */ js.UndefOr[Array]) => Unit
     ): Self = StObject.set(x, "bubble", js.Any.fromFunction3(value))
     
     inline def setBubbleUndefined: Self = StObject.set(x, "bubble", js.undefined)
     
     inline def setCascadeBy(
-      value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* args */ js.UndefOr[Array]) => Unit
+      value: (/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* args */ js.UndefOr[Array]) => Unit
     ): Self = StObject.set(x, "cascadeBy", js.Any.fromFunction3(value))
     
     inline def setCascadeByUndefined: Self = StObject.set(x, "cascadeBy", js.undefined)
     
-    inline def setChildNodes(value: js.Any): Self = StObject.set(x, "childNodes", value.asInstanceOf[js.Any])
+    inline def setChildNodes(value: Any): Self = StObject.set(x, "childNodes", value.asInstanceOf[js.Any])
     
     inline def setChildNodesUndefined: Self = StObject.set(x, "childNodes", js.undefined)
     
     inline def setCollapse(
-      value: (/* recursive */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+      value: (/* recursive */ js.UndefOr[Any], /* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "collapse", js.Any.fromFunction3(value))
     
     inline def setCollapseUndefined: Self = StObject.set(x, "collapse", js.undefined)
@@ -352,35 +352,35 @@ object INodeInterface {
     
     inline def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
     
-    inline def setDestroy(value: /* silent */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
+    inline def setDestroy(value: /* silent */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
     
     inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
     
     inline def setEachChild(
-      value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* args */ js.UndefOr[Array]) => Unit
+      value: (/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* args */ js.UndefOr[Array]) => Unit
     ): Self = StObject.set(x, "eachChild", js.Any.fromFunction3(value))
     
     inline def setEachChildUndefined: Self = StObject.set(x, "eachChild", js.undefined)
     
     inline def setExpand(
-      value: (/* recursive */ js.UndefOr[js.Any], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+      value: (/* recursive */ js.UndefOr[Any], /* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "expand", js.Any.fromFunction3(value))
     
     inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
     
     inline def setFindChild(
-      value: (/* attribute */ js.UndefOr[String], /* value */ js.UndefOr[js.Any], /* deep */ js.UndefOr[Boolean]) => INodeInterface
+      value: (/* attribute */ js.UndefOr[String], /* value */ js.UndefOr[Any], /* deep */ js.UndefOr[Boolean]) => INodeInterface
     ): Self = StObject.set(x, "findChild", js.Any.fromFunction3(value))
     
     inline def setFindChildBy(
-      value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* deep */ js.UndefOr[Boolean]) => INodeInterface
+      value: (/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* deep */ js.UndefOr[Boolean]) => INodeInterface
     ): Self = StObject.set(x, "findChildBy", js.Any.fromFunction3(value))
     
     inline def setFindChildByUndefined: Self = StObject.set(x, "findChildBy", js.undefined)
     
     inline def setFindChildUndefined: Self = StObject.set(x, "findChild", js.undefined)
     
-    inline def setFirstChild(value: js.Any): Self = StObject.set(x, "firstChild", value.asInstanceOf[js.Any])
+    inline def setFirstChild(value: Any): Self = StObject.set(x, "firstChild", value.asInstanceOf[js.Any])
     
     inline def setFirstChildUndefined: Self = StObject.set(x, "firstChild", js.undefined)
     
@@ -454,19 +454,19 @@ object INodeInterface {
     
     inline def setIsVisibleUndefined: Self = StObject.set(x, "isVisible", js.undefined)
     
-    inline def setLastChild(value: js.Any): Self = StObject.set(x, "lastChild", value.asInstanceOf[js.Any])
+    inline def setLastChild(value: Any): Self = StObject.set(x, "lastChild", value.asInstanceOf[js.Any])
     
     inline def setLastChildUndefined: Self = StObject.set(x, "lastChild", js.undefined)
     
-    inline def setNextSibling(value: js.Any): Self = StObject.set(x, "nextSibling", value.asInstanceOf[js.Any])
+    inline def setNextSibling(value: Any): Self = StObject.set(x, "nextSibling", value.asInstanceOf[js.Any])
     
     inline def setNextSiblingUndefined: Self = StObject.set(x, "nextSibling", js.undefined)
     
-    inline def setParentNode(value: js.Any): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
+    inline def setParentNode(value: Any): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
     
     inline def setParentNodeUndefined: Self = StObject.set(x, "parentNode", js.undefined)
     
-    inline def setPreviousSibling(value: js.Any): Self = StObject.set(x, "previousSibling", value.asInstanceOf[js.Any])
+    inline def setPreviousSibling(value: Any): Self = StObject.set(x, "previousSibling", value.asInstanceOf[js.Any])
     
     inline def setPreviousSiblingUndefined: Self = StObject.set(x, "previousSibling", js.undefined)
     
@@ -491,12 +491,12 @@ object INodeInterface {
     inline def setReplaceChildUndefined: Self = StObject.set(x, "replaceChild", js.undefined)
     
     inline def setSort(
-      value: (/* sortFn */ js.UndefOr[js.Any], /* recursive */ js.UndefOr[Boolean], /* suppressEvent */ js.UndefOr[Boolean]) => Unit
+      value: (/* sortFn */ js.UndefOr[Any], /* recursive */ js.UndefOr[Boolean], /* suppressEvent */ js.UndefOr[Boolean]) => Unit
     ): Self = StObject.set(x, "sort", js.Any.fromFunction3(value))
     
     inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
-    inline def setUpdateInfo(value: /* silent */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "updateInfo", js.Any.fromFunction1(value))
+    inline def setUpdateInfo(value: /* silent */ js.UndefOr[Any] => Boolean): Self = StObject.set(x, "updateInfo", js.Any.fromFunction1(value))
     
     inline def setUpdateInfoUndefined: Self = StObject.set(x, "updateInfo", js.undefined)
   }

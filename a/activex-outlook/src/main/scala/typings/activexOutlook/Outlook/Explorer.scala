@@ -10,7 +10,7 @@ trait Explorer extends StObject {
   
   def Activate(): Unit
   
-  def AddToSelection(Item: js.Any): Unit
+  def AddToSelection(Item: Any): Unit
   
   val Application: typings.activexOutlook.Outlook.Application
   
@@ -26,23 +26,23 @@ trait Explorer extends StObject {
   
   def Close(): Unit
   
-  val CommandBars: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.CommandBars */ js.Any
+  val CommandBars: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.CommandBars */ Any
   
   var CurrentFolder: Folder
   
-  var CurrentView: js.Any
+  var CurrentView: Any
   
   def DeselectFolder(Folder: Folder): Unit
   
   def Display(): Unit
   
-  val HTMLDocument: js.Any
+  val HTMLDocument: Any
   
   var Height: Double
   
   def IsFolderSelected(Folder: Folder): Boolean
   
-  def IsItemSelectableInView(Item: js.Any): Boolean
+  def IsItemSelectableInView(Item: Any): Boolean
   
   def IsPaneVisible(Pane: OlPane): Boolean
   
@@ -55,9 +55,9 @@ trait Explorer extends StObject {
   
   val Panes: typings.activexOutlook.Outlook.Panes
   
-  val Parent: js.Any
+  val Parent: Any
   
-  def RemoveFromSelection(Item: js.Any): Unit
+  def RemoveFromSelection(Item: Any): Unit
   
   def Search(Query: String, SearchScope: OlSearchScope): Unit
   
@@ -73,7 +73,7 @@ trait Explorer extends StObject {
   
   var Top: Double
   
-  val Views: js.Any
+  val Views: Any
   
   var Width: Double
   
@@ -84,7 +84,7 @@ object Explorer {
   inline def apply(
     AccountSelector: AccountSelector,
     Activate: () => Unit,
-    AddToSelection: js.Any => Unit,
+    AddToSelection: Any => Unit,
     Application: Application,
     AttachmentSelection: AttachmentSelection,
     Caption: String,
@@ -92,22 +92,22 @@ object Explorer {
     ClearSearch: () => Unit,
     ClearSelection: () => Unit,
     Close: () => Unit,
-    CommandBars: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.CommandBars */ js.Any,
+    CommandBars: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.CommandBars */ Any,
     CurrentFolder: Folder,
-    CurrentView: js.Any,
+    CurrentView: Any,
     DeselectFolder: Folder => Unit,
     Display: () => Unit,
-    HTMLDocument: js.Any,
+    HTMLDocument: Any,
     Height: Double,
     IsFolderSelected: Folder => Boolean,
-    IsItemSelectableInView: js.Any => Boolean,
+    IsItemSelectableInView: Any => Boolean,
     IsPaneVisible: OlPane => Boolean,
     Left: Double,
     NavigationPane: NavigationPane,
     OutlookDotExplorer_typekey: Explorer,
     Panes: Panes,
-    Parent: js.Any,
-    RemoveFromSelection: js.Any => Unit,
+    Parent: Any,
+    RemoveFromSelection: Any => Unit,
     Search: (String, OlSearchScope) => Unit,
     SelectAllItems: () => Unit,
     SelectFolder: Folder => Unit,
@@ -115,7 +115,7 @@ object Explorer {
     Session: NameSpace,
     ShowPane: (OlPane, Boolean) => Unit,
     Top: Double,
-    Views: js.Any,
+    Views: Any,
     Width: Double,
     WindowState: OlWindowState
   ): Explorer = {
@@ -130,7 +130,7 @@ object Explorer {
     
     inline def setActivate(value: () => Unit): Self = StObject.set(x, "Activate", js.Any.fromFunction0(value))
     
-    inline def setAddToSelection(value: js.Any => Unit): Self = StObject.set(x, "AddToSelection", js.Any.fromFunction1(value))
+    inline def setAddToSelection(value: Any => Unit): Self = StObject.set(x, "AddToSelection", js.Any.fromFunction1(value))
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
@@ -147,24 +147,24 @@ object Explorer {
     inline def setClose(value: () => Unit): Self = StObject.set(x, "Close", js.Any.fromFunction0(value))
     
     inline def setCommandBars(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.CommandBars */ js.Any
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.CommandBars */ Any
     ): Self = StObject.set(x, "CommandBars", value.asInstanceOf[js.Any])
     
     inline def setCurrentFolder(value: Folder): Self = StObject.set(x, "CurrentFolder", value.asInstanceOf[js.Any])
     
-    inline def setCurrentView(value: js.Any): Self = StObject.set(x, "CurrentView", value.asInstanceOf[js.Any])
+    inline def setCurrentView(value: Any): Self = StObject.set(x, "CurrentView", value.asInstanceOf[js.Any])
     
     inline def setDeselectFolder(value: Folder => Unit): Self = StObject.set(x, "DeselectFolder", js.Any.fromFunction1(value))
     
     inline def setDisplay(value: () => Unit): Self = StObject.set(x, "Display", js.Any.fromFunction0(value))
     
-    inline def setHTMLDocument(value: js.Any): Self = StObject.set(x, "HTMLDocument", value.asInstanceOf[js.Any])
+    inline def setHTMLDocument(value: Any): Self = StObject.set(x, "HTMLDocument", value.asInstanceOf[js.Any])
     
     inline def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
     inline def setIsFolderSelected(value: Folder => Boolean): Self = StObject.set(x, "IsFolderSelected", js.Any.fromFunction1(value))
     
-    inline def setIsItemSelectableInView(value: js.Any => Boolean): Self = StObject.set(x, "IsItemSelectableInView", js.Any.fromFunction1(value))
+    inline def setIsItemSelectableInView(value: Any => Boolean): Self = StObject.set(x, "IsItemSelectableInView", js.Any.fromFunction1(value))
     
     inline def setIsPaneVisible(value: OlPane => Boolean): Self = StObject.set(x, "IsPaneVisible", js.Any.fromFunction1(value))
     
@@ -176,9 +176,9 @@ object Explorer {
     
     inline def setPanes(value: Panes): Self = StObject.set(x, "Panes", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    inline def setRemoveFromSelection(value: js.Any => Unit): Self = StObject.set(x, "RemoveFromSelection", js.Any.fromFunction1(value))
+    inline def setRemoveFromSelection(value: Any => Unit): Self = StObject.set(x, "RemoveFromSelection", js.Any.fromFunction1(value))
     
     inline def setSearch(value: (String, OlSearchScope) => Unit): Self = StObject.set(x, "Search", js.Any.fromFunction2(value))
     
@@ -194,7 +194,7 @@ object Explorer {
     
     inline def setTop(value: Double): Self = StObject.set(x, "Top", value.asInstanceOf[js.Any])
     
-    inline def setViews(value: js.Any): Self = StObject.set(x, "Views", value.asInstanceOf[js.Any])
+    inline def setViews(value: Any): Self = StObject.set(x, "Views", value.asInstanceOf[js.Any])
     
     inline def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
     

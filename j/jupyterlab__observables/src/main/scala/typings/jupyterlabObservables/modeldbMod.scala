@@ -23,25 +23,25 @@ object modeldbMod {
   /**
     * Constructor for the `ModelDB`.
     */
-  class ModelDB ()
+  open class ModelDB ()
     extends StObject
        with IModelDB {
     def this(options: ICreateOptions) = this()
     
-    /* private */ var _basePath: js.Any = js.native
+    /* private */ var _basePath: Any = js.native
     
-    /* private */ var _db: js.Any = js.native
+    /* private */ var _db: Any = js.native
     
-    /* private */ var _disposables: js.Any = js.native
+    /* private */ var _disposables: Any = js.native
     
-    /* private */ var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: Any = js.native
     
     /**
       * Compute the fully resolved path for a path argument.
       */
-    /* private */ var _resolvePath: js.Any = js.native
+    /* private */ var _resolvePath: Any = js.native
     
-    /* private */ var _toDispose: js.Any = js.native
+    /* private */ var _toDispose: Any = js.native
     
     /**
       * The base path for the `IModelDB`. This is prepended
@@ -284,16 +284,16 @@ object modeldbMod {
     *
     * @param initialValue: the starting value for the `ObservableValue`.
     */
-  class ObservableValue ()
+  open class ObservableValue ()
     extends StObject
        with IObservableValue {
     def this(initialValue: JSONValue) = this()
     
-    /* private */ var _changed: js.Any = js.native
+    /* private */ var _changed: Any = js.native
     
-    /* private */ var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: Any = js.native
     
-    /* private */ var _value: js.Any = js.native
+    /* private */ var _value: Any = js.native
     
     /**
       * The changed signal.
@@ -370,7 +370,7 @@ object modeldbMod {
       */
     @JSImport("@jupyterlab/observables/lib/modeldb", "ObservableValue.IChangedArgs")
     @js.native
-    class IChangedArgs () extends StObject {
+    open class IChangedArgs () extends StObject {
       
       /**
         * The new value.
@@ -608,7 +608,7 @@ object modeldbMod {
     inline def apply(
       basePath: String,
       connected: js.Promise[Unit],
-      createList: String => IObservableUndoableList[js.Any],
+      createList: String => IObservableUndoableList[Any],
       createMap: String => IObservableJSON,
       createString: String => IObservableString,
       createValue: String => IObservableValue,
@@ -636,7 +636,7 @@ object modeldbMod {
       
       inline def setConnected(value: js.Promise[Unit]): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
       
-      inline def setCreateList(value: String => IObservableUndoableList[js.Any]): Self = StObject.set(x, "createList", js.Any.fromFunction1(value))
+      inline def setCreateList(value: String => IObservableUndoableList[Any]): Self = StObject.set(x, "createList", js.Any.fromFunction1(value))
       
       inline def setCreateMap(value: String => IObservableJSON): Self = StObject.set(x, "createMap", js.Any.fromFunction1(value))
       

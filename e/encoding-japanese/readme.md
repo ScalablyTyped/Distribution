@@ -1,7 +1,7 @@
 
 # Scala.js typings for encoding-japanese
 
-Typings are for version v1.0
+Typings are for version 2.0
 
 ## Library description:
 Convert or detect character encoding in JavaScript
@@ -9,11 +9,11 @@ Convert or detect character encoding in JavaScript
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | encoding-japanese |
-| Keywords           | encoding, charset, iconv, japanese, unicode, utf, utf-8, utf-16, utf-32, sjis, shift_jis, eucjp, euc-jp, jis, iso-2022-jp, base64, convert, detect, urlencode, urldecode |
+| Keywords           | base64, charset, convert, detect, encoding, euc-jp, eucjp, iconv, iso-2022-jp, japanese, jis, shift_jis, sjis, unicode, urldecode, urlencode, utf-16, utf-32, utf-8 |
 | # releases         | 2 |
-| # dependents       | 38 |
-| # downloads        | 5644950 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1780171.3333333333 |
+| # stars            | 432.0 |
 
 ## Links
 - [Homepage](https://github.com/polygonplanet/encoding.js)

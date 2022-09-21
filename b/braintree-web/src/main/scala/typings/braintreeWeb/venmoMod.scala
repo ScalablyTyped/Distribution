@@ -2,7 +2,6 @@ package typings.braintreeWeb
 
 import typings.braintreeWeb.anon.AllowNewBrowserTab
 import typings.braintreeWeb.anon.ProcessResultsDelay
-import typings.braintreeWeb.anon.Username
 import typings.braintreeWeb.coreMod.BraintreeError
 import typings.braintreeWeb.coreMod.callback
 import org.scalablytyped.runtime.StObject
@@ -17,7 +16,7 @@ object venmoMod {
     var VERSION: String = js.native
     
     def create(options: AllowNewBrowserTab): Unit = js.native
-    def create(options: AllowNewBrowserTab, callback: callback[js.Any]): Unit = js.native
+    def create(options: AllowNewBrowserTab, callback: callback[Any]): Unit = js.native
     /**
       * braintree.venmo.create({
       *   client: clientInstance
@@ -119,9 +118,26 @@ object venmoMod {
     def tokenize_Promise(options: ProcessResultsDelay): js.Promise[VenmoTokenizePayload] = js.native
   }
   
+  trait VenmoAccountDetails extends StObject {
+    
+    var username: String
+  }
+  object VenmoAccountDetails {
+    
+    inline def apply(username: String): VenmoAccountDetails = {
+      val __obj = js.Dynamic.literal(username = username.asInstanceOf[js.Any])
+      __obj.asInstanceOf[VenmoAccountDetails]
+    }
+    
+    extension [Self <: VenmoAccountDetails](x: Self) {
+      
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait VenmoTokenizePayload extends StObject {
     
-    var details: Username
+    var details: VenmoAccountDetails
     
     var nonce: String
     
@@ -129,7 +145,7 @@ object venmoMod {
   }
   object VenmoTokenizePayload {
     
-    inline def apply(details: Username, nonce: String, `type`: String): VenmoTokenizePayload = {
+    inline def apply(details: VenmoAccountDetails, nonce: String, `type`: String): VenmoTokenizePayload = {
       val __obj = js.Dynamic.literal(details = details.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[VenmoTokenizePayload]
@@ -137,7 +153,7 @@ object venmoMod {
     
     extension [Self <: VenmoTokenizePayload](x: Self) {
       
-      inline def setDetails(value: Username): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: VenmoAccountDetails): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
       inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       

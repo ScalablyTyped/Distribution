@@ -22,6 +22,6 @@ object ListHeldAccountsResponse {
     
     inline def setAccountsUndefined: Self = StObject.set(x, "accounts", js.undefined)
     
-    inline def setAccountsVarargs(value: HeldAccount*): Self = StObject.set(x, "accounts", js.Array(value :_*))
+    inline def setAccountsVarargs(value: HeldAccount*): Self = StObject.set(x, "accounts", js.Array(value*))
   }
 }

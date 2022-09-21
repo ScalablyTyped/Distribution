@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Pick<materialize-css.M.Timepicker, 'showView'> */
 trait PickTimepickershowView extends StObject {
   
-  var showView: js.UndefOr[js.Any] = js.undefined
+  var showView: js.UndefOr[Any] = js.undefined
 }
 object PickTimepickershowView {
   
@@ -18,7 +18,7 @@ object PickTimepickershowView {
   
   extension [Self <: PickTimepickershowView](x: Self) {
     
-    inline def setShowView(value: js.Any): Self = StObject.set(x, "showView", value.asInstanceOf[js.Any])
+    inline def setShowView(value: Any): Self = StObject.set(x, "showView", value.asInstanceOf[js.Any])
     
     inline def setShowViewUndefined: Self = StObject.set(x, "showView", js.undefined)
   }

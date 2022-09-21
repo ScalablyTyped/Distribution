@@ -9,7 +9,7 @@ trait WebPageFonts extends StObject {
   
   def apply(Index: MsoCharacterSet): WebPageFont = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val Count: Double = js.native
   

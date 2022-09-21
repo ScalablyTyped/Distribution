@@ -10,15 +10,12 @@ History manager for `prompt-sync`
 | ------------------ | :-------------: |
 | Full name          | prompt-sync-history |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 60620 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3783.0 |
+| # stars            | 0.0 |
 
 ## Links
-- [Homepage](https://github.com/davidmarkclements/prompt-sync-history#readme)
-- [Bugs](https://github.com/davidmarkclements/prompt-sync-history/issues)
-- [Repository](https://github.com/davidmarkclements/prompt-sync-history)
 - [Npm](https://www.npmjs.com/package/prompt-sync-history)
     
 

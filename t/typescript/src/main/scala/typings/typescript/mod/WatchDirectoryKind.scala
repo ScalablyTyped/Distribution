@@ -20,6 +20,12 @@ object WatchDirectoryKind extends StObject {
   /* 2 */ val DynamicPriorityPolling: typings.typescript.mod.WatchDirectoryKind.DynamicPriorityPolling & Double = js.native
   
   @js.native
+  sealed trait FixedChunkSizePolling
+    extends StObject
+       with WatchDirectoryKind
+  /* 3 */ val FixedChunkSizePolling: typings.typescript.mod.WatchDirectoryKind.FixedChunkSizePolling & Double = js.native
+  
+  @js.native
   sealed trait FixedPollingInterval
     extends StObject
        with WatchDirectoryKind

@@ -29,7 +29,7 @@ object ListFragmentsOutput {
     
     inline def setFragmentsUndefined: Self = StObject.set(x, "Fragments", js.undefined)
     
-    inline def setFragmentsVarargs(value: Fragment*): Self = StObject.set(x, "Fragments", js.Array(value :_*))
+    inline def setFragmentsVarargs(value: Fragment*): Self = StObject.set(x, "Fragments", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

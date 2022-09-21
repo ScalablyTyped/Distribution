@@ -78,7 +78,7 @@ trait initializeConfig extends StObject {
     * timeout: number
     *      Same as the root timeout parameter, but used for streaming connections. Defaults to the root timeout + 25000 (25 seconds).
     */
-  var stream: js.UndefOr[js.Any] = js.undefined
+  var stream: js.UndefOr[Any] = js.undefined
   
   /**
     * The number of milliseconds to wait for a standard request to return a response before it is cancelled and a new attempt is made. Defaults to 15000 (15 seconds).
@@ -115,7 +115,7 @@ trait initializeConfig extends StObject {
     * disconnect: string
     * The URL to use for all client.disconnect requests.
     */
-  var urls: js.UndefOr[js.Any] = js.undefined
+  var urls: js.UndefOr[Any] = js.undefined
 }
 object initializeConfig {
   
@@ -166,7 +166,7 @@ object initializeConfig {
     
     inline def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
     
-    inline def setStream(value: js.Any): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+    inline def setStream(value: Any): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     
     inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
     
@@ -178,7 +178,7 @@ object initializeConfig {
     
     inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
     
-    inline def setUrls(value: js.Any): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
+    inline def setUrls(value: Any): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
     
     inline def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
   }

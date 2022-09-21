@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.CalculatedMember")
 @js.native
-/* private */ class CalculatedMember ()
+/* private */ open class CalculatedMember ()
   extends StObject
      with typings.activexExcel.Excel.CalculatedMember {
   
@@ -47,7 +47,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Name: String = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val SolveOrder: Double = js.native

@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Class_RedisSortedSet")
 @js.native
-class ClassRedisSortedSet ()
+open class ClassRedisSortedSet ()
   extends StObject
      with typings.fibjs.ClassRedisSortedSet

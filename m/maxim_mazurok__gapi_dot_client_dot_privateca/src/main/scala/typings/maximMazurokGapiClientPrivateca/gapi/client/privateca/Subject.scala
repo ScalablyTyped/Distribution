@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Subject extends StObject {
   
+  /** The "common name" of the subject. */
+  var commonName: js.UndefOr[String] = js.undefined
+  
   /** The country code of the subject. */
   var countryCode: js.UndefOr[String] = js.undefined
   
@@ -35,6 +38,10 @@ object Subject {
   }
   
   extension [Self <: Subject](x: Self) {
+    
+    inline def setCommonName(value: String): Self = StObject.set(x, "commonName", value.asInstanceOf[js.Any])
+    
+    inline def setCommonNameUndefined: Self = StObject.set(x, "commonName", js.undefined)
     
     inline def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
     

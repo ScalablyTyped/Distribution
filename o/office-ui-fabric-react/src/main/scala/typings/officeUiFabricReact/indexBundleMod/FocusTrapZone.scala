@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "FocusTrapZone")
 @js.native
-class FocusTrapZone protected ()
+open class FocusTrapZone protected ()
   extends typings.officeUiFabricReact.mod.FocusTrapZone {
   def this(props: IFocusTrapZoneProps) = this()
 }
@@ -20,6 +20,6 @@ object FocusTrapZone {
   
   @JSImport("office-ui-fabric-react/lib/index.bundle", "FocusTrapZone._focusStack")
   @js.native
-  def _focusStack: js.Any = js.native
-  inline def _focusStack_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_focusStack")(x.asInstanceOf[js.Any])
+  def _focusStack: Any = js.native
+  inline def _focusStack_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_focusStack")(x.asInstanceOf[js.Any])
 }

@@ -21,7 +21,7 @@ trait BootstrapTreeViewNode
   
   def getExpanded(): Boolean = js.native
   
-  def getHtmlElement(): js.Any = js.native
+  def getHtmlElement(): Any = js.native
   
   def getIconCssClass(): String = js.native
   

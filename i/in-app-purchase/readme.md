@@ -10,10 +10,10 @@ In-App-Purchase validation and subscription management for iOS, Android, Amazon,
 | ------------------ | :-------------: |
 | Full name          | in-app-purchase |
 | Keywords           | Apple, iOS, Android, Windows, Amazon, Roku, Purchase, Subscription, App, in-app-purchase, in-app-billing, Validation, IAP |
-| # releases         | 12 |
-| # dependents       | 4 |
-| # downloads        | 636026 |
-| # stars            | 13 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 67264.0 |
+| # stars            | 937.0 |
 
 ## Links
 - [Homepage](https://github.com/voltrue2/in-app-purchase#readme)

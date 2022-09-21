@@ -10,14 +10,14 @@ trait ICursor extends StObject {
   def clear(): Request = js.native
   def clear(i: Double): Request = js.native
   
-  def getKey(): js.Any = js.native
-  def getKey(i: Double): js.Any = js.native
+  def getKey(): Any = js.native
+  def getKey(i: Double): Any = js.native
   
-  def getPrimaryKey(): js.Any = js.native
-  def getPrimaryKey(i: Double): js.Any = js.native
+  def getPrimaryKey(): Any = js.native
+  def getPrimaryKey(i: Double): Any = js.native
   
-  def getValue(): js.Any = js.native
-  def getValue(i: Double): js.Any = js.native
+  def getValue(): Any = js.native
+  def getValue(i: Double): Any = js.native
   
   def update(value: js.Object): Request = js.native
   def update(value: js.Object, i: Double): Request = js.native

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeBackupsResponse extends StObject {
   
   /**
-    * Any array of backups.
+    * An array of backups.
     */
   var Backups: js.UndefOr[typings.awsSdk.fsxMod.Backups] = js.undefined
   
   /**
-    * This is present if there are more backups than returned in the response (String). You can use the NextToken value in the later request to fetch the backups. 
+    * A NextToken value is present if there are more backups than returned in the response. You can use the NextToken value in the subsequent request to fetch the backups. 
     */
   var NextToken: js.UndefOr[typings.awsSdk.fsxMod.NextToken] = js.undefined
 }
@@ -29,7 +29,7 @@ object DescribeBackupsResponse {
     
     inline def setBackupsUndefined: Self = StObject.set(x, "Backups", js.undefined)
     
-    inline def setBackupsVarargs(value: Backup*): Self = StObject.set(x, "Backups", js.Array(value :_*))
+    inline def setBackupsVarargs(value: Backup*): Self = StObject.set(x, "Backups", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

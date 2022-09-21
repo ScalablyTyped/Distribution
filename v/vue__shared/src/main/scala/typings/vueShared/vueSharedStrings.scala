@@ -7,14 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object vueSharedStrings {
   
   @js.native
-  sealed trait bigInt extends StObject
-  inline def bigInt: bigInt = "bigInt".asInstanceOf[bigInt]
-  
-  @js.native
-  sealed trait nullishCoalescingOperator extends StObject
-  inline def nullishCoalescingOperator: nullishCoalescingOperator = "nullishCoalescingOperator".asInstanceOf[nullishCoalescingOperator]
-  
-  @js.native
-  sealed trait optionalChaining extends StObject
-  inline def optionalChaining: optionalChaining = "optionalChaining".asInstanceOf[optionalChaining]
+  sealed trait LooseRequired extends StObject
+  inline def LooseRequired: LooseRequired = "LooseRequired".asInstanceOf[LooseRequired]
 }

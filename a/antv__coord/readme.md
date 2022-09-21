@@ -1,19 +1,19 @@
 
 # Scala.js typings for antv__coord
 
-Typings are for version 0.3.0
+Typings are for version 0.4.4
 
 ## Library description:
-The coordinate module for G2
+Toolkit for mapping elements of sets into geometric objects.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @antv/coord |
-| Keywords           | - |
+| Keywords           | coordinate, transformation, visualization |
 | # releases         | 10 |
-| # dependents       | 5 |
-| # downloads        | 2222752 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 364546.3333333333 |
+| # stars            | 37.0 |
 
 ## Links
 - [Homepage](https://github.com/antvis/coord#readme)

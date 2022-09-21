@@ -12,13 +12,13 @@ trait Item extends StObject {
   /** Item content to be indexed and made text searchable. */
   var content: js.UndefOr[ItemContent] = js.undefined
   
-  /** Type for this item. */
+  /** The type for this item. */
   var itemType: js.UndefOr[String] = js.undefined
   
-  /** Metadata information. */
+  /** The metadata information. */
   var metadata: js.UndefOr[ItemMetadata] = js.undefined
   
-  /** Name of the Item. Format: datasources/{source_id}/items/{item_id} This is a required field. The maximum length is 1536 characters. */
+  /** The name of the Item. Format: datasources/{source_id}/items/{item_id} This is a required field. The maximum length is 1536 characters. */
   var name: js.UndefOr[String] = js.undefined
   
   /** Additional state connector can store for this item. The maximum length is 10000 bytes. */
@@ -36,7 +36,8 @@ trait Item extends StObject {
   /**
     * Required. The indexing system stores the version from the datasource as a byte string and compares the Item version in the index to the version of the queued Item using lexical
     * ordering. Cloud Search Indexing won't index or delete any queued item with a version value that is less than or equal to the version of the currently indexed item. The maximum
-    * length for this field is 1024 bytes.
+    * length for this field is 1024 bytes. For information on how item version affects the deletion process, refer to [Handle revisions after manual
+    * deletes](https://developers.google.com/cloud-search/docs/guides/operations).
     */
   var version: js.UndefOr[String] = js.undefined
 }

@@ -14,7 +14,7 @@ trait Table extends StObject {
   /**
     * The time when the Timestream table was created. 
     */
-  var CreationTime: js.UndefOr[Date] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the Timestream database that contains this table.
@@ -24,7 +24,12 @@ trait Table extends StObject {
   /**
     * The time when the Timestream table was last updated.
     */
-  var LastUpdatedTime: js.UndefOr[Date] = js.undefined
+  var LastUpdatedTime: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * Contains properties to set on the table when enabling magnetic store writes.
+    */
+  var MagneticStoreWriteProperties: js.UndefOr[typings.awsSdk.timestreamwriteMod.MagneticStoreWriteProperties] = js.undefined
   
   /**
     * The retention duration for the memory store and magnetic store.
@@ -54,7 +59,7 @@ object Table {
     
     inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    inline def setCreationTime(value: Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
@@ -62,9 +67,13 @@ object Table {
     
     inline def setDatabaseNameUndefined: Self = StObject.set(x, "DatabaseName", js.undefined)
     
-    inline def setLastUpdatedTime(value: Date): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTime(value: js.Date): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedTimeUndefined: Self = StObject.set(x, "LastUpdatedTime", js.undefined)
+    
+    inline def setMagneticStoreWriteProperties(value: MagneticStoreWriteProperties): Self = StObject.set(x, "MagneticStoreWriteProperties", value.asInstanceOf[js.Any])
+    
+    inline def setMagneticStoreWritePropertiesUndefined: Self = StObject.set(x, "MagneticStoreWriteProperties", js.undefined)
     
     inline def setRetentionProperties(value: RetentionProperties): Self = StObject.set(x, "RetentionProperties", value.asInstanceOf[js.Any])
     

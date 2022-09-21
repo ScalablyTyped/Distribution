@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param {any[]} [data=[]] The data for this Dataset.
   * @param {any} [metadata={}] An object containing additional information.
   */
-class Dataset ()
+open class Dataset ()
   extends typings.plottable.datasetMod.Dataset {
-  def this(data: js.Array[js.Any]) = this()
-  def this(data: js.Array[js.Any], metadata: js.Any) = this()
-  def this(data: Unit, metadata: js.Any) = this()
+  def this(data: js.Array[Any]) = this()
+  def this(data: js.Array[Any], metadata: Any) = this()
+  def this(data: Unit, metadata: Any) = this()
 }

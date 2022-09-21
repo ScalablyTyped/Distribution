@@ -12,11 +12,11 @@ object anon {
     
     var id: String
     
-    var stream: js.Any
+    var stream: Any
   }
   object Filename {
     
-    inline def apply(id: String, stream: js.Any): Filename = {
+    inline def apply(id: String, stream: Any): Filename = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], stream = stream.asInstanceOf[js.Any])
       __obj.asInstanceOf[Filename]
     }
@@ -29,7 +29,7 @@ object anon {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      inline def setStream(value: js.Any): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: Any): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     }
   }
   

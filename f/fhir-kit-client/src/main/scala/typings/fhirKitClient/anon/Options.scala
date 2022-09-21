@@ -1,6 +1,5 @@
 package typings.fhirKitClient.anon
 
-import typings.fhirKitClient.fhirKitClientStrings.ActivityDefinition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,12 +12,14 @@ trait Options extends StObject {
   
   var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: ActivityDefinition
+  var resourceType: typings.fhirKitClient.mod.ResourceType
+  
+  var version: String
 }
 object Options {
   
-  inline def apply(id: String): Options = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], resourceType = "ActivityDefinition")
+  inline def apply(id: String, resourceType: typings.fhirKitClient.mod.ResourceType, version: String): Options = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
   
@@ -34,6 +35,8 @@ object Options {
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    inline def setResourceType(value: ActivityDefinition): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: typings.fhirKitClient.mod.ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

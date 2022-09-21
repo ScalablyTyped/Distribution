@@ -13,7 +13,7 @@ object tooltipTriggerMod {
   
   @JSImport("react-popper-tooltip/dist/TooltipTrigger", JSImport.Default)
   @js.native
-  class default () extends TooltipTrigger
+  open class default () extends TooltipTrigger
   object default {
     
     /* static member */
@@ -23,10 +23,10 @@ object tooltipTriggerMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @JSImport("react-popper-tooltip/dist/TooltipTrigger", "default.defaultProps.closeOnReferenceHidden")
+      @JSImport("react-popper-tooltip/dist/TooltipTrigger", "default.defaultProps.closeOnOutOfBoundaries")
       @js.native
-      def closeOnReferenceHidden: Boolean = js.native
-      inline def closeOnReferenceHidden_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("closeOnReferenceHidden")(x.asInstanceOf[js.Any])
+      def closeOnOutOfBoundaries: Boolean = js.native
+      inline def closeOnOutOfBoundaries_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("closeOnOutOfBoundaries")(x.asInstanceOf[js.Any])
       
       @JSImport("react-popper-tooltip/dist/TooltipTrigger", "default.defaultProps.defaultTooltipShown")
       @js.native
@@ -47,11 +47,6 @@ object tooltipTriggerMod {
       @js.native
       def followCursor: Boolean = js.native
       inline def followCursor_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("followCursor")(x.asInstanceOf[js.Any])
-      
-      @JSImport("react-popper-tooltip/dist/TooltipTrigger", "default.defaultProps.modifiers")
-      @js.native
-      def modifiers: js.Array[scala.Nothing] = js.native
-      inline def modifiers_=(x: js.Array[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modifiers")(x.asInstanceOf[js.Any])
       
       @JSImport("react-popper-tooltip/dist/TooltipTrigger", "default.defaultProps.mutationObserverOptions")
       @js.native
@@ -83,38 +78,37 @@ object tooltipTriggerMod {
   }
   
   @js.native
-  trait TooltipTrigger
-    extends Component[TooltipTriggerProps, TooltipTriggerState, js.Any] {
+  trait TooltipTrigger extends Component[TooltipTriggerProps, TooltipTriggerState, Any] {
     
-    /* private */ var clearScheduled: js.Any = js.native
+    /* private */ var clearScheduled: Any = js.native
     
-    /* private */ var clickToggle: js.Any = js.native
+    /* private */ var clickToggle: Any = js.native
     
     @JSName("componentWillUnmount")
     def componentWillUnmount_MTooltipTrigger(): Unit = js.native
     
-    /* private */ var contextMenuToggle: js.Any = js.native
+    /* private */ var contextMenuToggle: Any = js.native
     
-    /* private */ var getState: js.Any = js.native
+    /* private */ var getState: Any = js.native
     
-    /* private */ var getTriggerProps: js.Any = js.native
+    /* private */ var getTriggerProps: Any = js.native
     
-    /* private */ var hideTimeout: js.Any = js.native
+    /* private */ var hideTimeout: Any = js.native
     
-    /* private */ var hideTooltip: js.Any = js.native
+    /* private */ var hideTooltip: Any = js.native
     
-    /* private */ var isControlled: js.Any = js.native
+    /* private */ var isControlled: Any = js.native
     
-    /* private */ var isTriggeredBy: js.Any = js.native
+    /* private */ var isTriggeredBy: Any = js.native
     
-    /* private */ var popperOffset: js.Any = js.native
+    /* private */ var popperOffset: Any = js.native
     
-    /* private */ var setTooltipState: js.Any = js.native
+    /* private */ var setTooltipState: Any = js.native
     
-    /* private */ var showTimeout: js.Any = js.native
+    /* private */ var showTimeout: Any = js.native
     
-    /* private */ var showTooltip: js.Any = js.native
+    /* private */ var showTooltip: Any = js.native
     
-    /* private */ var toggleTooltip: js.Any = js.native
+    /* private */ var toggleTooltip: Any = js.native
   }
 }

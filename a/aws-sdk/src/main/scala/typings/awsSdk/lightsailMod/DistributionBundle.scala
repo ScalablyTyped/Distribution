@@ -12,7 +12,7 @@ trait DistributionBundle extends StObject {
   var bundleId: js.UndefOr[String] = js.undefined
   
   /**
-    * Indicates whether the bundle is active, and can be specified for a new distribution.
+    * Indicates whether the bundle is active, and can be specified for a new or existing distribution.
     */
   var isActive: js.UndefOr[Boolean] = js.undefined
   

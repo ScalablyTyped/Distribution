@@ -8,5 +8,5 @@ object invalidSortByExceptionMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/InvalidSortByException", "InvalidSortByException")
   @js.native
-  val InvalidSortByException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val InvalidSortByException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

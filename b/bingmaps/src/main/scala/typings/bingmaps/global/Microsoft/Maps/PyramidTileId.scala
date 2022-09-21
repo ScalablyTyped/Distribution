@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Microsoft.Maps.PyramidTileId")
 @js.native
-class PyramidTileId protected ()
+open class PyramidTileId protected ()
   extends StObject
      with typings.bingmaps.Microsoft.Maps.PyramidTileId {
   /**

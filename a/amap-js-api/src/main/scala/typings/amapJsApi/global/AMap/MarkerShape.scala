@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("AMap.MarkerShape")
 @js.native
-class MarkerShape protected ()
+open class MarkerShape protected ()
   extends StObject
      with typings.amapJsApi.AMap.EventEmitter {
   /**

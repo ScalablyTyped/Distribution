@@ -10,10 +10,10 @@ Node.js path.parse() ponyfill
 | ------------------ | :-------------: |
 | Full name          | path-parse |
 | Keywords           | path, paths, file, dir, parse, built-in, util, utils, core, ponyfill, polyfill, shim |
-| # releases         | 0 |
-| # dependents       | 189 |
-| # downloads        | 741187094 |
-| # stars            | 4 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1.2317612233333333E8 |
+| # stars            | 46.0 |
 
 ## Links
 - [Homepage](https://github.com/jbgutierrez/path-parse#readme)

@@ -13,7 +13,7 @@ trait Route extends StObject {
   /** An optional description of this resource. Provide this field when you create the resource. */
   var description: js.UndefOr[String] = js.undefined
   
-  /** The destination range of outgoing packets that this route applies to. Only IPv4 is supported. */
+  /** The destination range of outgoing packets that this route applies to. Both IPv4 and IPv6 are supported. */
   var destRange: js.UndefOr[String] = js.undefined
   
   /** [Output Only] The unique identifier for the resource. This identifier is defined by the server. */
@@ -33,17 +33,14 @@ trait Route extends StObject {
   var network: js.UndefOr[String] = js.undefined
   
   /**
-    * The URL to a gateway that should handle matching packets. You can only specify the internet gateway using a full or partial valid URL:
-    * projects/project/global/gateways/default-internet-gateway
+    * The URL to a gateway that should handle matching packets. You can only specify the internet gateway using a full or partial valid URL: projects/
+    * project/global/gateways/default-internet-gateway
     */
   var nextHopGateway: js.UndefOr[String] = js.undefined
   
   /**
     * The URL to a forwarding rule of type loadBalancingScheme=INTERNAL that should handle matching packets or the IP address of the forwarding Rule. For example, the following are all
-    * valid URLs:
-    * - 10.128.0.56
-    * - https://www.googleapis.com/compute/v1/projects/project/regions/region/forwardingRules/forwardingRule
-    * - regions/region/forwardingRules/forwardingRule
+    * valid URLs: - 10.128.0.56 - https://www.googleapis.com/compute/v1/projects/project/regions/region /forwardingRules/forwardingRule - regions/region/forwardingRules/forwardingRule
     */
   var nextHopIlb: js.UndefOr[String] = js.undefined
   
@@ -157,12 +154,12 @@ object Route {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setWarnings(value: js.Array[Code]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     
     inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
     
-    inline def setWarningsVarargs(value: Code*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+    inline def setWarningsVarargs(value: Code*): Self = StObject.set(x, "warnings", js.Array(value*))
   }
 }

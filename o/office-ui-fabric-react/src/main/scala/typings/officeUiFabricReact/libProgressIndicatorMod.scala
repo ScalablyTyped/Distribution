@@ -15,14 +15,9 @@ object libProgressIndicatorMod {
   
   @JSImport("office-ui-fabric-react/lib/ProgressIndicator", "ProgressIndicatorBase")
   @js.native
-  class ProgressIndicatorBase protected ()
+  open class ProgressIndicatorBase protected ()
     extends typings.officeUiFabricReact.progressIndicatorMod.ProgressIndicatorBase {
     def this(props: IProgressIndicatorProps) = this()
-    /**
-      * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
-      */
-    def this(props: IProgressIndicatorProps, context: js.Any) = this()
   }
   /* static members */
   object ProgressIndicatorBase {

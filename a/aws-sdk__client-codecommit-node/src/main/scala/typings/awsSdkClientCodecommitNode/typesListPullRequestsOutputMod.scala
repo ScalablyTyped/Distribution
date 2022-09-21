@@ -45,7 +45,7 @@ object typesListPullRequestsOutputMod {
       
       inline def setPullRequestIds(value: js.Array[String]): Self = StObject.set(x, "pullRequestIds", value.asInstanceOf[js.Any])
       
-      inline def setPullRequestIdsVarargs(value: String*): Self = StObject.set(x, "pullRequestIds", js.Array(value :_*))
+      inline def setPullRequestIdsVarargs(value: String*): Self = StObject.set(x, "pullRequestIds", js.Array(value*))
     }
   }
 }

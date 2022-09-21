@@ -1,7 +1,7 @@
 
 # Scala.js typings for lorem-ipsum
 
-Typings are for version 2.0.3
+Typings are for version 2.0.8
 
 ## Library description:
 Generates passages of lorem ipsum text suitable for use as placeholder copy in web pages, graphics, and more. Works in the browser, NodeJS, and React Native.
@@ -10,10 +10,10 @@ Generates passages of lorem ipsum text suitable for use as placeholder copy in w
 | ------------------ | :-------------: |
 | Full name          | lorem-ipsum |
 | Keywords           | lorem, ipsum, placeholder, text, dummy, filler |
-| # releases         | 14 |
-| # dependents       | 119 |
-| # downloads        | 3624620 |
-| # stars            | 14 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 823851.6666666666 |
+| # stars            | 234.0 |
 
 ## Links
 - [Homepage](https://github.com/knicklabs/node-lorem-ipsum#readme)

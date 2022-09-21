@@ -44,7 +44,7 @@ object ToolExecution {
     
     inline def setCommandLineArgumentsUndefined: Self = StObject.set(x, "commandLineArguments", js.undefined)
     
-    inline def setCommandLineArgumentsVarargs(value: String*): Self = StObject.set(x, "commandLineArguments", js.Array(value :_*))
+    inline def setCommandLineArgumentsVarargs(value: String*): Self = StObject.set(x, "commandLineArguments", js.Array(value*))
     
     inline def setExitCode(value: ToolExitCode): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
     
@@ -54,12 +54,12 @@ object ToolExecution {
     
     inline def setToolLogsUndefined: Self = StObject.set(x, "toolLogs", js.undefined)
     
-    inline def setToolLogsVarargs(value: FileReference*): Self = StObject.set(x, "toolLogs", js.Array(value :_*))
+    inline def setToolLogsVarargs(value: FileReference*): Self = StObject.set(x, "toolLogs", js.Array(value*))
     
     inline def setToolOutputs(value: js.Array[ToolOutputReference]): Self = StObject.set(x, "toolOutputs", value.asInstanceOf[js.Any])
     
     inline def setToolOutputsUndefined: Self = StObject.set(x, "toolOutputs", js.undefined)
     
-    inline def setToolOutputsVarargs(value: ToolOutputReference*): Self = StObject.set(x, "toolOutputs", js.Array(value :_*))
+    inline def setToolOutputsVarargs(value: ToolOutputReference*): Self = StObject.set(x, "toolOutputs", js.Array(value*))
   }
 }

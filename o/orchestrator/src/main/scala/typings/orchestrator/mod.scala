@@ -21,7 +21,7 @@ object mod {
     */
   @JSImport("orchestrator", JSImport.Namespace)
   @js.native
-  class ^ () extends Orchestrator
+  open class ^ () extends Orchestrator
   
   @js.native
   trait AddMethod extends StObject {
@@ -106,7 +106,7 @@ object mod {
   }
   object OnAllCallbackEvent {
     
-    inline def apply(err: js.Any, message: String, src: String, task: String): OnAllCallbackEvent = {
+    inline def apply(err: Any, message: String, src: String, task: String): OnAllCallbackEvent = {
       val __obj = js.Dynamic.literal(err = err.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], task = task.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnAllCallbackEvent]
     }
@@ -121,7 +121,7 @@ object mod {
     
     var duration: js.UndefOr[Double] = js.undefined
     
-    var err: js.Any
+    var err: Any
     
     var message: String
     
@@ -129,7 +129,7 @@ object mod {
   }
   object OnCallbackEvent {
     
-    inline def apply(err: js.Any, message: String, task: String): OnCallbackEvent = {
+    inline def apply(err: Any, message: String, task: String): OnCallbackEvent = {
       val __obj = js.Dynamic.literal(err = err.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], task = task.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnCallbackEvent]
     }
@@ -140,7 +140,7 @@ object mod {
       
       inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      inline def setErr(value: js.Any): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
+      inline def setErr(value: Any): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -154,7 +154,7 @@ object mod {
   trait Orchestrator extends EventEmitter {
     
     def _emitTaskDone(task: Task, message: String): Unit = js.native
-    def _emitTaskDone(task: Task, message: String, err: js.Any): Unit = js.native
+    def _emitTaskDone(task: Task, message: String, err: Any): Unit = js.native
     
     def _readyToRunTask(task: Task): Boolean = js.native
     
@@ -185,7 +185,7 @@ object mod {
     
     def allDone(): Boolean = js.native
     
-    var doneCallback: js.UndefOr[js.Function1[/* error */ js.UndefOr[js.Any], js.Any]] = js.native
+    var doneCallback: js.UndefOr[js.Function1[/* error */ js.UndefOr[Any], Any]] = js.native
     
     /** Have you defined a task with this name?
       * @param name The task name to query
@@ -206,16 +206,16 @@ object mod {
       *  - task_recursion: from start() method, there are recursive dependencies in your task list
       * @param cb Passes single argument: e: event details
       */
-    def on(event: EventNames, cb: js.Function1[/* e */ OnCallbackEvent, js.Any]): this.type = js.native
+    def on(event: EventNames, cb: js.Function1[/* e */ OnCallbackEvent, Any]): this.type = js.native
     
     /** Listen to all orchestrator events from one callback
       * @param cb Passes single argument: e: event details
       */
-    def onAll(cb: js.Function1[/* e */ OnAllCallbackEvent, js.Any]): Unit = js.native
+    def onAll(cb: js.Function1[/* e */ OnAllCallbackEvent, Any]): Unit = js.native
     
     def reset(): Orchestrator = js.native
     
-    var seq: js.Array[js.Any] = js.native
+    var seq: js.Array[Any] = js.native
     
     def sequence(tasks: js.Array[Dep], names: js.Array[String]): MissingTasks = js.native
     @JSName("sequence")
@@ -223,21 +223,16 @@ object mod {
     
     // TODO: TypeScript 2.1.5 cannot express varargs followed by callback as a last argument...
     def start(task1: Strings, task2: Strings): Orchestrator = js.native
-    def start(task1: Strings, task2: Strings, cb: js.Function1[/* error */ js.UndefOr[js.Any], js.Any]): Orchestrator = js.native
+    def start(task1: Strings, task2: Strings, cb: js.Function1[/* error */ js.UndefOr[Any], Any]): Orchestrator = js.native
     def start(task1: Strings, task2: Strings, task3: Strings): Orchestrator = js.native
-    def start(
-      task1: Strings,
-      task2: Strings,
-      task3: Strings,
-      cb: js.Function1[/* error */ js.UndefOr[js.Any], js.Any]
-    ): Orchestrator = js.native
+    def start(task1: Strings, task2: Strings, task3: Strings, cb: js.Function1[/* error */ js.UndefOr[Any], Any]): Orchestrator = js.native
     def start(task1: Strings, task2: Strings, task3: Strings, task4: Strings): Orchestrator = js.native
     def start(
       task1: Strings,
       task2: Strings,
       task3: Strings,
       task4: Strings,
-      cb: js.Function1[/* error */ js.UndefOr[js.Any], js.Any]
+      cb: js.Function1[/* error */ js.UndefOr[Any], Any]
     ): Orchestrator = js.native
     def start(task1: Strings, task2: Strings, task3: Strings, task4: Strings, task5: Strings): Orchestrator = js.native
     def start(
@@ -246,7 +241,7 @@ object mod {
       task3: Strings,
       task4: Strings,
       task5: Strings,
-      cb: js.Function1[/* error */ js.UndefOr[js.Any], js.Any]
+      cb: js.Function1[/* error */ js.UndefOr[Any], Any]
     ): Orchestrator = js.native
     def start(task1: Strings, task2: Strings, task3: Strings, task4: Strings, task5: Strings, task6: Strings): Orchestrator = js.native
     def start(
@@ -256,7 +251,7 @@ object mod {
       task4: Strings,
       task5: Strings,
       task6: Strings,
-      cb: js.Function1[/* error */ js.UndefOr[js.Any], js.Any]
+      cb: js.Function1[/* error */ js.UndefOr[Any], Any]
     ): Orchestrator = js.native
     /** Start running the tasks
       * @param tasks Tasks to be executed. You may pass any number of tasks as individual arguments.
@@ -268,13 +263,13 @@ object mod {
       * @param cb Callback to call after run completed.
       */
     def start(tasks: Strings): Orchestrator = js.native
-    def start(tasks: Strings, cb: js.Function1[/* error */ js.UndefOr[js.Any], js.Any]): Orchestrator = js.native
+    def start(tasks: Strings, cb: js.Function1[/* error */ js.UndefOr[Any], Any]): Orchestrator = js.native
     @JSName("start")
     var start_Original: StartMethod = js.native
     
     def stop(): Unit = js.native
-    def stop(err: js.Any): Unit = js.native
-    def stop(err: js.Any, successfulFinish: Boolean): Unit = js.native
+    def stop(err: Any): Unit = js.native
+    def stop(err: Any, successfulFinish: Boolean): Unit = js.native
     def stop(err: Unit, successfulFinish: Boolean): Unit = js.native
     
     def task(name: String): Task = js.native
@@ -287,7 +282,7 @@ object mod {
   /** The method export generated by orchestrator/lib/runTask.js */
   type RunTask = js.Function2[
     /* task */ TaskFunc, 
-    /* done */ js.Function2[/* err */ js.Any, /* meta */ Meta, Unit], 
+    /* done */ js.Function2[/* err */ Any, /* meta */ Meta, Unit], 
     Unit
   ]
   
@@ -301,21 +296,16 @@ object mod {
     
     // TODO: TypeScript 2.1.5 cannot express varargs followed by callback as a last argument...
     def apply(task1: Strings, task2: Strings): Orchestrator = js.native
-    def apply(task1: Strings, task2: Strings, cb: js.Function1[/* error */ js.UndefOr[js.Any], js.Any]): Orchestrator = js.native
+    def apply(task1: Strings, task2: Strings, cb: js.Function1[/* error */ js.UndefOr[Any], Any]): Orchestrator = js.native
     def apply(task1: Strings, task2: Strings, task3: Strings): Orchestrator = js.native
-    def apply(
-      task1: Strings,
-      task2: Strings,
-      task3: Strings,
-      cb: js.Function1[/* error */ js.UndefOr[js.Any], js.Any]
-    ): Orchestrator = js.native
+    def apply(task1: Strings, task2: Strings, task3: Strings, cb: js.Function1[/* error */ js.UndefOr[Any], Any]): Orchestrator = js.native
     def apply(task1: Strings, task2: Strings, task3: Strings, task4: Strings): Orchestrator = js.native
     def apply(
       task1: Strings,
       task2: Strings,
       task3: Strings,
       task4: Strings,
-      cb: js.Function1[/* error */ js.UndefOr[js.Any], js.Any]
+      cb: js.Function1[/* error */ js.UndefOr[Any], Any]
     ): Orchestrator = js.native
     def apply(task1: Strings, task2: Strings, task3: Strings, task4: Strings, task5: Strings): Orchestrator = js.native
     def apply(
@@ -324,7 +314,7 @@ object mod {
       task3: Strings,
       task4: Strings,
       task5: Strings,
-      cb: js.Function1[/* error */ js.UndefOr[js.Any], js.Any]
+      cb: js.Function1[/* error */ js.UndefOr[Any], Any]
     ): Orchestrator = js.native
     def apply(task1: Strings, task2: Strings, task3: Strings, task4: Strings, task5: Strings, task6: Strings): Orchestrator = js.native
     def apply(
@@ -334,7 +324,7 @@ object mod {
       task4: Strings,
       task5: Strings,
       task6: Strings,
-      cb: js.Function1[/* error */ js.UndefOr[js.Any], js.Any]
+      cb: js.Function1[/* error */ js.UndefOr[Any], Any]
     ): Orchestrator = js.native
     /** Start running the tasks
       * @param tasks Tasks to be executed. You may pass any number of tasks as individual arguments.
@@ -346,7 +336,7 @@ object mod {
       * @param cb Callback to call after run completed.
       */
     def apply(tasks: Strings): Orchestrator = js.native
-    def apply(tasks: Strings, cb: js.Function1[/* error */ js.UndefOr[js.Any], js.Any]): Orchestrator = js.native
+    def apply(tasks: Strings, cb: js.Function1[/* error */ js.UndefOr[Any], Any]): Orchestrator = js.native
   }
   
   type Strings = String | js.Array[String]
@@ -359,7 +349,7 @@ object mod {
     
     var duration: js.UndefOr[Double] = js.undefined
     
-    def fn(callback: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): Promise[js.Any] | Stream | js.Any
+    def fn(callback: js.Function1[/* err */ js.UndefOr[Any], Unit]): Promise[Any] | Stream | Any
     @JSName("fn")
     var fn_Original: TaskFunc
     
@@ -373,7 +363,7 @@ object mod {
     
     inline def apply(
       dep: js.Array[String],
-      fn: /* callback */ js.Function1[/* err */ js.UndefOr[js.Any], Unit] => Promise[js.Any] | Stream | js.Any,
+      fn: /* callback */ js.Function1[/* err */ js.UndefOr[Any], Unit] => Promise[Any] | Stream | Any,
       name: String
     ): Task = {
       val __obj = js.Dynamic.literal(dep = dep.asInstanceOf[js.Any], fn = js.Any.fromFunction1(fn), name = name.asInstanceOf[js.Any])
@@ -384,7 +374,7 @@ object mod {
       
       inline def setDep(value: js.Array[String]): Self = StObject.set(x, "dep", value.asInstanceOf[js.Any])
       
-      inline def setDepVarargs(value: String*): Self = StObject.set(x, "dep", js.Array(value :_*))
+      inline def setDepVarargs(value: String*): Self = StObject.set(x, "dep", js.Array(value*))
       
       inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       
@@ -394,9 +384,7 @@ object mod {
       
       inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      inline def setFn(
-        value: /* callback */ js.Function1[/* err */ js.UndefOr[js.Any], Unit] => Promise[js.Any] | Stream | js.Any
-      ): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
+      inline def setFn(value: /* callback */ js.Function1[/* err */ js.UndefOr[Any], Unit] => Promise[Any] | Stream | Any): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
       
       inline def setHrDuration(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "hrDuration", value.asInstanceOf[js.Any])
       
@@ -413,7 +401,7 @@ object mod {
   /** A task, can either call a callback to indicate task completion or return a promise or a stream: (task is marked complete when promise.then() resolves/fails or stream ends)
     */
   type TaskFunc = js.Function1[
-    /* callback */ js.Function1[/* err */ js.UndefOr[js.Any], Unit], 
-    Promise[js.Any] | Stream | js.Any
+    /* callback */ js.Function1[/* err */ js.UndefOr[Any], Unit], 
+    Promise[Any] | Stream | Any
   ]
 }

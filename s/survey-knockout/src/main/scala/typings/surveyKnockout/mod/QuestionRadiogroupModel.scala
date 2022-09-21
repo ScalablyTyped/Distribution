@@ -6,19 +6,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "QuestionRadiogroupModel")
 @js.native
-class QuestionRadiogroupModel protected () extends QuestionCheckboxBase {
+open class QuestionRadiogroupModel protected () extends QuestionCheckboxBase {
   def this(name: String) = this()
   
-  val canShowClearButton: Boolean = js.native
+  def canShowClearButton: Boolean = js.native
   
-  val clearButtonCaption: js.Any = js.native
+  def clearButtonCaption: String = js.native
   
-  def getItemClass(item: js.Any): js.Any = js.native
+  /*
+    * Return the selected item in the radio group. Returns null if the value is empty
+    */
+  def selectedItem: ItemValue = js.native
   
-  val selectedItem: ItemValue = js.native
-  
-  /**
+  /*
     * Show "clear button" flag.
     */
-  var showClearButton: Boolean = js.native
+  def showClearButton: Boolean = js.native
+  
+  def showClearButtonInContent: Boolean = js.native
+  
+  def showClearButton_=(`val`: Boolean): Unit = js.native
 }

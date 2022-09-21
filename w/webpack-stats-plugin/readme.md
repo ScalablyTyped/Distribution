@@ -10,10 +10,10 @@ Webpack stats plugin
 | ------------------ | :-------------: |
 | Full name          | webpack-stats-plugin |
 | Keywords           | webpack |
-| # releases         | 8 |
-| # dependents       | 103 |
-| # downloads        | 22095917 |
-| # stars            | 4 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 2217922.6666666665 |
+| # stars            | 332.0 |
 
 ## Links
 - [Homepage](https://github.com/FormidableLabs/webpack-stats-plugin#readme)

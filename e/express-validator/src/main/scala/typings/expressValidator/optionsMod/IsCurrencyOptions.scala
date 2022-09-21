@@ -73,7 +73,7 @@ object IsCurrencyOptions {
     
     inline def setDigits_after_decimalUndefined: Self = StObject.set(x, "digits_after_decimal", js.undefined)
     
-    inline def setDigits_after_decimalVarargs(value: Double*): Self = StObject.set(x, "digits_after_decimal", js.Array(value :_*))
+    inline def setDigits_after_decimalVarargs(value: Double*): Self = StObject.set(x, "digits_after_decimal", js.Array(value*))
     
     inline def setNegative_sign_after_digits(value: Boolean): Self = StObject.set(x, "negative_sign_after_digits", value.asInstanceOf[js.Any])
     

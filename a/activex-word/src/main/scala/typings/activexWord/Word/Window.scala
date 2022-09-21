@@ -18,9 +18,9 @@ trait Window extends StObject {
   var Caption: String = js.native
   
   def Close(): Unit = js.native
-  def Close(SaveChanges: js.Any): Unit = js.native
-  def Close(SaveChanges: js.Any, RouteDocument: js.Any): Unit = js.native
-  def Close(SaveChanges: Unit, RouteDocument: js.Any): Unit = js.native
+  def Close(SaveChanges: Any): Unit = js.native
+  def Close(SaveChanges: Any, RouteDocument: Any): Unit = js.native
+  def Close(SaveChanges: Unit, RouteDocument: Any): Unit = js.native
   
   val Creator: Double = js.native
   
@@ -51,7 +51,7 @@ trait Window extends StObject {
     ScreenPixelsTop: Double,
     ScreenPixelsWidth: Double,
     ScreenPixelsHeight: Double,
-    obj: js.Any
+    obj: Any
   ): Unit = js.native
   
   var Height: Double = js.native
@@ -63,21 +63,21 @@ trait Window extends StObject {
   val Index: Double = js.native
   
   def LargeScroll(): Unit = js.native
-  def LargeScroll(Down: js.Any): Unit = js.native
-  def LargeScroll(Down: js.Any, Up: js.Any): Unit = js.native
-  def LargeScroll(Down: js.Any, Up: js.Any, ToRight: js.Any): Unit = js.native
-  def LargeScroll(Down: js.Any, Up: js.Any, ToRight: js.Any, ToLeft: js.Any): Unit = js.native
-  def LargeScroll(Down: js.Any, Up: js.Any, ToRight: Unit, ToLeft: js.Any): Unit = js.native
-  def LargeScroll(Down: js.Any, Up: Unit, ToRight: js.Any): Unit = js.native
-  def LargeScroll(Down: js.Any, Up: Unit, ToRight: js.Any, ToLeft: js.Any): Unit = js.native
-  def LargeScroll(Down: js.Any, Up: Unit, ToRight: Unit, ToLeft: js.Any): Unit = js.native
-  def LargeScroll(Down: Unit, Up: js.Any): Unit = js.native
-  def LargeScroll(Down: Unit, Up: js.Any, ToRight: js.Any): Unit = js.native
-  def LargeScroll(Down: Unit, Up: js.Any, ToRight: js.Any, ToLeft: js.Any): Unit = js.native
-  def LargeScroll(Down: Unit, Up: js.Any, ToRight: Unit, ToLeft: js.Any): Unit = js.native
-  def LargeScroll(Down: Unit, Up: Unit, ToRight: js.Any): Unit = js.native
-  def LargeScroll(Down: Unit, Up: Unit, ToRight: js.Any, ToLeft: js.Any): Unit = js.native
-  def LargeScroll(Down: Unit, Up: Unit, ToRight: Unit, ToLeft: js.Any): Unit = js.native
+  def LargeScroll(Down: Any): Unit = js.native
+  def LargeScroll(Down: Any, Up: Any): Unit = js.native
+  def LargeScroll(Down: Any, Up: Any, ToRight: Any): Unit = js.native
+  def LargeScroll(Down: Any, Up: Any, ToRight: Any, ToLeft: Any): Unit = js.native
+  def LargeScroll(Down: Any, Up: Any, ToRight: Unit, ToLeft: Any): Unit = js.native
+  def LargeScroll(Down: Any, Up: Unit, ToRight: Any): Unit = js.native
+  def LargeScroll(Down: Any, Up: Unit, ToRight: Any, ToLeft: Any): Unit = js.native
+  def LargeScroll(Down: Any, Up: Unit, ToRight: Unit, ToLeft: Any): Unit = js.native
+  def LargeScroll(Down: Unit, Up: Any): Unit = js.native
+  def LargeScroll(Down: Unit, Up: Any, ToRight: Any): Unit = js.native
+  def LargeScroll(Down: Unit, Up: Any, ToRight: Any, ToLeft: Any): Unit = js.native
+  def LargeScroll(Down: Unit, Up: Any, ToRight: Unit, ToLeft: Any): Unit = js.native
+  def LargeScroll(Down: Unit, Up: Unit, ToRight: Any): Unit = js.native
+  def LargeScroll(Down: Unit, Up: Unit, ToRight: Any, ToLeft: Any): Unit = js.native
+  def LargeScroll(Down: Unit, Up: Unit, ToRight: Unit, ToLeft: Any): Unit = js.native
   
   var Left: Double = js.native
   
@@ -86,79 +86,79 @@ trait Window extends StObject {
   val Next: Window = js.native
   
   def PageScroll(): Unit = js.native
-  def PageScroll(Down: js.Any): Unit = js.native
-  def PageScroll(Down: js.Any, Up: js.Any): Unit = js.native
-  def PageScroll(Down: Unit, Up: js.Any): Unit = js.native
+  def PageScroll(Down: Any): Unit = js.native
+  def PageScroll(Down: Any, Up: Any): Unit = js.native
+  def PageScroll(Down: Unit, Up: Any): Unit = js.native
   
   val Panes: typings.activexWord.Word.Panes = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   val Previous: Window = js.native
   
   def PrintOut(
-    Background: js.UndefOr[js.Any],
-    Append: js.UndefOr[js.Any],
-    Range: js.UndefOr[js.Any],
-    OutputFileName: js.UndefOr[js.Any],
-    From: js.UndefOr[js.Any],
-    To: js.UndefOr[js.Any],
-    Item: js.UndefOr[js.Any],
-    Copies: js.UndefOr[js.Any],
-    Pages: js.UndefOr[js.Any],
-    PageType: js.UndefOr[js.Any],
-    PrintToFile: js.UndefOr[js.Any],
-    Collate: js.UndefOr[js.Any],
-    ActivePrinterMacGX: js.UndefOr[js.Any],
-    ManualDuplexPrint: js.UndefOr[js.Any],
-    PrintZoomColumn: js.UndefOr[js.Any],
-    PrintZoomRow: js.UndefOr[js.Any],
-    PrintZoomPaperWidth: js.UndefOr[js.Any],
-    PrintZoomPaperHeight: js.UndefOr[js.Any]
+    Background: js.UndefOr[Any],
+    Append: js.UndefOr[Any],
+    Range: js.UndefOr[Any],
+    OutputFileName: js.UndefOr[Any],
+    From: js.UndefOr[Any],
+    To: js.UndefOr[Any],
+    Item: js.UndefOr[Any],
+    Copies: js.UndefOr[Any],
+    Pages: js.UndefOr[Any],
+    PageType: js.UndefOr[Any],
+    PrintToFile: js.UndefOr[Any],
+    Collate: js.UndefOr[Any],
+    ActivePrinterMacGX: js.UndefOr[Any],
+    ManualDuplexPrint: js.UndefOr[Any],
+    PrintZoomColumn: js.UndefOr[Any],
+    PrintZoomRow: js.UndefOr[Any],
+    PrintZoomPaperWidth: js.UndefOr[Any],
+    PrintZoomPaperHeight: js.UndefOr[Any]
   ): Unit = js.native
   
   def PrintOut2000(
-    Background: js.UndefOr[js.Any],
-    Append: js.UndefOr[js.Any],
-    Range: js.UndefOr[js.Any],
-    OutputFileName: js.UndefOr[js.Any],
-    From: js.UndefOr[js.Any],
-    To: js.UndefOr[js.Any],
-    Item: js.UndefOr[js.Any],
-    Copies: js.UndefOr[js.Any],
-    Pages: js.UndefOr[js.Any],
-    PageType: js.UndefOr[js.Any],
-    PrintToFile: js.UndefOr[js.Any],
-    Collate: js.UndefOr[js.Any],
-    ActivePrinterMacGX: js.UndefOr[js.Any],
-    ManualDuplexPrint: js.UndefOr[js.Any],
-    PrintZoomColumn: js.UndefOr[js.Any],
-    PrintZoomRow: js.UndefOr[js.Any],
-    PrintZoomPaperWidth: js.UndefOr[js.Any],
-    PrintZoomPaperHeight: js.UndefOr[js.Any]
+    Background: js.UndefOr[Any],
+    Append: js.UndefOr[Any],
+    Range: js.UndefOr[Any],
+    OutputFileName: js.UndefOr[Any],
+    From: js.UndefOr[Any],
+    To: js.UndefOr[Any],
+    Item: js.UndefOr[Any],
+    Copies: js.UndefOr[Any],
+    Pages: js.UndefOr[Any],
+    PageType: js.UndefOr[Any],
+    PrintToFile: js.UndefOr[Any],
+    Collate: js.UndefOr[Any],
+    ActivePrinterMacGX: js.UndefOr[Any],
+    ManualDuplexPrint: js.UndefOr[Any],
+    PrintZoomColumn: js.UndefOr[Any],
+    PrintZoomRow: js.UndefOr[Any],
+    PrintZoomPaperWidth: js.UndefOr[Any],
+    PrintZoomPaperHeight: js.UndefOr[Any]
   ): Unit = js.native
   
   def PrintOutOld(
-    Background: js.UndefOr[js.Any],
-    Append: js.UndefOr[js.Any],
-    Range: js.UndefOr[js.Any],
-    OutputFileName: js.UndefOr[js.Any],
-    From: js.UndefOr[js.Any],
-    To: js.UndefOr[js.Any],
-    Item: js.UndefOr[js.Any],
-    Copies: js.UndefOr[js.Any],
-    Pages: js.UndefOr[js.Any],
-    PageType: js.UndefOr[js.Any],
-    PrintToFile: js.UndefOr[js.Any],
-    Collate: js.UndefOr[js.Any],
-    ActivePrinterMacGX: js.UndefOr[js.Any],
-    ManualDuplexPrint: js.UndefOr[js.Any]
+    Background: js.UndefOr[Any],
+    Append: js.UndefOr[Any],
+    Range: js.UndefOr[Any],
+    OutputFileName: js.UndefOr[Any],
+    From: js.UndefOr[Any],
+    To: js.UndefOr[Any],
+    Item: js.UndefOr[Any],
+    Copies: js.UndefOr[Any],
+    Pages: js.UndefOr[Any],
+    PageType: js.UndefOr[Any],
+    PrintToFile: js.UndefOr[Any],
+    Collate: js.UndefOr[Any],
+    ActivePrinterMacGX: js.UndefOr[Any],
+    ManualDuplexPrint: js.UndefOr[Any]
   ): Unit = js.native
   
-  def RangeFromPoint(x: Double, y: Double): js.Any = js.native
+  def RangeFromPoint(x: Double, y: Double): Any = js.native
   
-  def ScrollIntoView(obj: js.Any): Unit = js.native
-  def ScrollIntoView(obj: js.Any, Start: js.Any): Unit = js.native
+  def ScrollIntoView(obj: Any): Unit = js.native
+  def ScrollIntoView(obj: Any, Start: Any): Unit = js.native
   
   val Selection: typings.activexWord.Word.Selection = js.native
   
@@ -167,21 +167,21 @@ trait Window extends StObject {
   var ShowSourceDocuments: WdShowSourceDocuments = js.native
   
   def SmallScroll(): Unit = js.native
-  def SmallScroll(Down: js.Any): Unit = js.native
-  def SmallScroll(Down: js.Any, Up: js.Any): Unit = js.native
-  def SmallScroll(Down: js.Any, Up: js.Any, ToRight: js.Any): Unit = js.native
-  def SmallScroll(Down: js.Any, Up: js.Any, ToRight: js.Any, ToLeft: js.Any): Unit = js.native
-  def SmallScroll(Down: js.Any, Up: js.Any, ToRight: Unit, ToLeft: js.Any): Unit = js.native
-  def SmallScroll(Down: js.Any, Up: Unit, ToRight: js.Any): Unit = js.native
-  def SmallScroll(Down: js.Any, Up: Unit, ToRight: js.Any, ToLeft: js.Any): Unit = js.native
-  def SmallScroll(Down: js.Any, Up: Unit, ToRight: Unit, ToLeft: js.Any): Unit = js.native
-  def SmallScroll(Down: Unit, Up: js.Any): Unit = js.native
-  def SmallScroll(Down: Unit, Up: js.Any, ToRight: js.Any): Unit = js.native
-  def SmallScroll(Down: Unit, Up: js.Any, ToRight: js.Any, ToLeft: js.Any): Unit = js.native
-  def SmallScroll(Down: Unit, Up: js.Any, ToRight: Unit, ToLeft: js.Any): Unit = js.native
-  def SmallScroll(Down: Unit, Up: Unit, ToRight: js.Any): Unit = js.native
-  def SmallScroll(Down: Unit, Up: Unit, ToRight: js.Any, ToLeft: js.Any): Unit = js.native
-  def SmallScroll(Down: Unit, Up: Unit, ToRight: Unit, ToLeft: js.Any): Unit = js.native
+  def SmallScroll(Down: Any): Unit = js.native
+  def SmallScroll(Down: Any, Up: Any): Unit = js.native
+  def SmallScroll(Down: Any, Up: Any, ToRight: Any): Unit = js.native
+  def SmallScroll(Down: Any, Up: Any, ToRight: Any, ToLeft: Any): Unit = js.native
+  def SmallScroll(Down: Any, Up: Any, ToRight: Unit, ToLeft: Any): Unit = js.native
+  def SmallScroll(Down: Any, Up: Unit, ToRight: Any): Unit = js.native
+  def SmallScroll(Down: Any, Up: Unit, ToRight: Any, ToLeft: Any): Unit = js.native
+  def SmallScroll(Down: Any, Up: Unit, ToRight: Unit, ToLeft: Any): Unit = js.native
+  def SmallScroll(Down: Unit, Up: Any): Unit = js.native
+  def SmallScroll(Down: Unit, Up: Any, ToRight: Any): Unit = js.native
+  def SmallScroll(Down: Unit, Up: Any, ToRight: Any, ToLeft: Any): Unit = js.native
+  def SmallScroll(Down: Unit, Up: Any, ToRight: Unit, ToLeft: Any): Unit = js.native
+  def SmallScroll(Down: Unit, Up: Unit, ToRight: Any): Unit = js.native
+  def SmallScroll(Down: Unit, Up: Unit, ToRight: Any, ToLeft: Any): Unit = js.native
+  def SmallScroll(Down: Unit, Up: Unit, ToRight: Unit, ToLeft: Any): Unit = js.native
   
   var Split: Boolean = js.native
   

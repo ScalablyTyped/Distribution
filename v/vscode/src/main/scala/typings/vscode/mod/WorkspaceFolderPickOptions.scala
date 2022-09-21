@@ -8,6 +8,7 @@ trait WorkspaceFolderPickOptions extends StObject {
   
   /**
     * Set to `true` to keep the picker open when focus moves to another part of the editor or to another window.
+    * This setting is ignored on iPad and is always false.
     */
   var ignoreFocusOut: js.UndefOr[Boolean] = js.undefined
   

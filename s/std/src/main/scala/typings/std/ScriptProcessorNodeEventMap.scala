@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ScriptProcessorNodeEventMap extends StObject {
   
+  /* standard dom */
   var audioprocess: AudioProcessingEvent
 }
 object ScriptProcessorNodeEventMap {

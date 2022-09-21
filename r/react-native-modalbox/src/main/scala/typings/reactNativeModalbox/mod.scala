@@ -15,11 +15,11 @@ object mod {
   
   @JSImport("react-native-modalbox", JSImport.Default)
   @js.native
-  class default () extends Modal
+  open class default () extends Modal
   
   @js.native
   trait Modal
-    extends Component[ModalProps, js.Object, js.Any] {
+    extends Component[ModalProps, js.Object, Any] {
     
     /**
       * Close the modal
@@ -93,6 +93,8 @@ object mod {
       *
       */
     var backdropPressToClose: js.UndefOr[Boolean] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /**
       *
@@ -241,6 +243,10 @@ object mod {
       inline def setBackdropPressToCloseUndefined: Self = StObject.set(x, "backdropPressToClose", js.undefined)
       
       inline def setBackdropUndefined: Self = StObject.set(x, "backdrop", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setCoverScreen(value: Boolean): Self = StObject.set(x, "coverScreen", value.asInstanceOf[js.Any])
       

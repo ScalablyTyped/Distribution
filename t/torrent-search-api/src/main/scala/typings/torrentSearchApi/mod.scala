@@ -20,7 +20,7 @@ object mod {
   inline def downloadTorrent(torrent: Torrent, filenamePath: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("downloadTorrent")(torrent.asInstanceOf[js.Any], filenamePath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   inline def enableProvider(providerName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableProvider")(providerName.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def enableProvider(providerName: String, args: String*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("enableProvider")(providerName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def enableProvider(providerName: String, args: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableProvider")(List(providerName.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   inline def enableProvider(providerName: String, args: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("enableProvider")(providerName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def enablePublicProviders(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enablePublicProviders")().asInstanceOf[Unit]
@@ -40,7 +40,7 @@ object mod {
   inline def loadProvider(providerParam: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadProvider")(providerParam.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def loadProvider(providerParam: TorrentProvider): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadProvider")(providerParam.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def loadProviders(args: (String | TorrentProvider)*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadProviders")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def loadProviders(args: (String | TorrentProvider)*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadProviders")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
   
   inline def lodProvider(providerParam: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("lodProvider")(providerParam.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
@@ -94,16 +94,16 @@ object mod {
     
     var baseUrl: String
     
-    var categories: js.Any
+    var categories: Any
     
     // FIXME {key: [string]}
     var defaultCategory: String
     
     var enableCloudFareBypass: Boolean
     
-    var headers: js.Any
+    var headers: Any
     
-    var itemSelectors: js.Any
+    var itemSelectors: Any
     
     var itemsSelector: String
     
@@ -138,11 +138,11 @@ object mod {
     inline def apply(
       autoFixUnstableUrl: Boolean,
       baseUrl: String,
-      categories: js.Any,
+      categories: Any,
       defaultCategory: String,
       enableCloudFareBypass: Boolean,
-      headers: js.Any,
-      itemSelectors: js.Any,
+      headers: Any,
+      itemSelectors: Any,
       itemsSelector: String,
       loginQueryString: String,
       loginUrl: String,
@@ -167,15 +167,15 @@ object mod {
       
       inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
-      inline def setCategories(value: js.Any): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+      inline def setCategories(value: Any): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
       
       inline def setDefaultCategory(value: String): Self = StObject.set(x, "defaultCategory", value.asInstanceOf[js.Any])
       
       inline def setEnableCloudFareBypass(value: Boolean): Self = StObject.set(x, "enableCloudFareBypass", value.asInstanceOf[js.Any])
       
-      inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      inline def setItemSelectors(value: js.Any): Self = StObject.set(x, "itemSelectors", value.asInstanceOf[js.Any])
+      inline def setItemSelectors(value: Any): Self = StObject.set(x, "itemSelectors", value.asInstanceOf[js.Any])
       
       inline def setItemsSelector(value: String): Self = StObject.set(x, "itemsSelector", value.asInstanceOf[js.Any])
       

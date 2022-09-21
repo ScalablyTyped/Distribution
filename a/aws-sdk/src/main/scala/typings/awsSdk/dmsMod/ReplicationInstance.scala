@@ -34,15 +34,15 @@ trait ReplicationInstance extends StObject {
   /**
     *  The expiration date of the free replication instance that is part of the Free DMS program. 
     */
-  var FreeUntil: js.UndefOr[TStamp] = js.undefined
+  var FreeUntil: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The time the replication instance was created.
     */
-  var InstanceCreateTime: js.UndefOr[TStamp] = js.undefined
+  var InstanceCreateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * An AWS KMS key identifier that is used to encrypt the data on the replication instance. If you don't specify a value for the KmsKeyId parameter, then AWS DMS uses your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS Region.
+    * An KMS key identifier that is used to encrypt the data on the replication instance. If you don't specify a value for the KmsKeyId parameter, then DMS uses your default encryption key. KMS creates the default encryption key for your Amazon Web Services account. Your Amazon Web Services account has a different default encryption key for each Amazon Web Services Region.
     */
   var KmsKeyId: js.UndefOr[String] = js.undefined
   
@@ -72,7 +72,7 @@ trait ReplicationInstance extends StObject {
   var ReplicationInstanceArn: js.UndefOr[String] = js.undefined
   
   /**
-    * The compute and memory capacity of the replication instance as defined for the specified replication instance class. It is a required parameter, although a defualt value is pre-selected in the DMS console. For more information on the settings and capacities for the available replication instance classes, see  Selecting the right AWS DMS replication instance for your migration. 
+    * The compute and memory capacity of the replication instance as defined for the specified replication instance class. It is a required parameter, although a default value is pre-selected in the DMS console. For more information on the settings and capacities for the available replication instance classes, see  Selecting the right DMS replication instance for your migration. 
     */
   var ReplicationInstanceClass: js.UndefOr[String] = js.undefined
   
@@ -150,11 +150,11 @@ object ReplicationInstance {
     
     inline def setEngineVersionUndefined: Self = StObject.set(x, "EngineVersion", js.undefined)
     
-    inline def setFreeUntil(value: TStamp): Self = StObject.set(x, "FreeUntil", value.asInstanceOf[js.Any])
+    inline def setFreeUntil(value: js.Date): Self = StObject.set(x, "FreeUntil", value.asInstanceOf[js.Any])
     
     inline def setFreeUntilUndefined: Self = StObject.set(x, "FreeUntil", js.undefined)
     
-    inline def setInstanceCreateTime(value: TStamp): Self = StObject.set(x, "InstanceCreateTime", value.asInstanceOf[js.Any])
+    inline def setInstanceCreateTime(value: js.Date): Self = StObject.set(x, "InstanceCreateTime", value.asInstanceOf[js.Any])
     
     inline def setInstanceCreateTimeUndefined: Self = StObject.set(x, "InstanceCreateTime", js.undefined)
     
@@ -198,7 +198,7 @@ object ReplicationInstance {
     
     inline def setReplicationInstancePrivateIpAddressesUndefined: Self = StObject.set(x, "ReplicationInstancePrivateIpAddresses", js.undefined)
     
-    inline def setReplicationInstancePrivateIpAddressesVarargs(value: String*): Self = StObject.set(x, "ReplicationInstancePrivateIpAddresses", js.Array(value :_*))
+    inline def setReplicationInstancePrivateIpAddressesVarargs(value: String*): Self = StObject.set(x, "ReplicationInstancePrivateIpAddresses", js.Array(value*))
     
     inline def setReplicationInstancePublicIpAddress(value: String): Self = StObject.set(x, "ReplicationInstancePublicIpAddress", value.asInstanceOf[js.Any])
     
@@ -208,7 +208,7 @@ object ReplicationInstance {
     
     inline def setReplicationInstancePublicIpAddressesUndefined: Self = StObject.set(x, "ReplicationInstancePublicIpAddresses", js.undefined)
     
-    inline def setReplicationInstancePublicIpAddressesVarargs(value: String*): Self = StObject.set(x, "ReplicationInstancePublicIpAddresses", js.Array(value :_*))
+    inline def setReplicationInstancePublicIpAddressesVarargs(value: String*): Self = StObject.set(x, "ReplicationInstancePublicIpAddresses", js.Array(value*))
     
     inline def setReplicationInstanceStatus(value: String): Self = StObject.set(x, "ReplicationInstanceStatus", value.asInstanceOf[js.Any])
     
@@ -226,6 +226,6 @@ object ReplicationInstance {
     
     inline def setVpcSecurityGroupsUndefined: Self = StObject.set(x, "VpcSecurityGroups", js.undefined)
     
-    inline def setVpcSecurityGroupsVarargs(value: VpcSecurityGroupMembership*): Self = StObject.set(x, "VpcSecurityGroups", js.Array(value :_*))
+    inline def setVpcSecurityGroupsVarargs(value: VpcSecurityGroupMembership*): Self = StObject.set(x, "VpcSecurityGroups", js.Array(value*))
   }
 }

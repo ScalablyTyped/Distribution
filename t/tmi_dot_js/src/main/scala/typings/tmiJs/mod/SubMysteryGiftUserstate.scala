@@ -12,12 +12,15 @@ trait SubMysteryGiftUserstate
   
   var `message-type`: js.UndefOr[submysterygift] = js.undefined
   
+  var `msg-param-origin-id`: String
+  
   var `msg-param-sender-count`: js.UndefOr[String | Boolean] = js.undefined
 }
 object SubMysteryGiftUserstate {
   
-  inline def apply(): SubMysteryGiftUserstate = {
+  inline def apply(`msg-param-origin-id`: String): SubMysteryGiftUserstate = {
     val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("msg-param-origin-id")(`msg-param-origin-id`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubMysteryGiftUserstate]
   }
   
@@ -26,6 +29,8 @@ object SubMysteryGiftUserstate {
     inline def `setMessage-type`(value: submysterygift): Self = StObject.set(x, "message-type", value.asInstanceOf[js.Any])
     
     inline def `setMessage-typeUndefined`: Self = StObject.set(x, "message-type", js.undefined)
+    
+    inline def `setMsg-param-origin-id`(value: String): Self = StObject.set(x, "msg-param-origin-id", value.asInstanceOf[js.Any])
     
     inline def `setMsg-param-sender-count`(value: String | Boolean): Self = StObject.set(x, "msg-param-sender-count", value.asInstanceOf[js.Any])
     

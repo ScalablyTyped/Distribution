@@ -16,7 +16,7 @@ object spec1Mod {
     */
   @JSImport("cloudevents-sdk/lib/bindings/http/v1/spec_1", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Spec1
   
@@ -45,37 +45,37 @@ object spec1Mod {
   @js.native
   trait Spec1 extends StObject {
     
-    def addExtension(key: js.Any, value: js.Any): Spec1 = js.native
+    def addExtension(key: Any, value: Any): Spec1 = js.native
     
     def check(): Unit = js.native
     
-    def data: js.Any = js.native
+    def data: Any = js.native
     
-    def dataContentType: js.Any = js.native
-    def dataContentType_=(arg: js.Any): Unit = js.native
+    def dataContentType: Any = js.native
+    def dataContentType_=(arg: Any): Unit = js.native
     
-    def dataSchema: js.Any = js.native
-    def dataSchema_=(arg: js.Any): Unit = js.native
+    def dataSchema: Any = js.native
+    def dataSchema_=(arg: Any): Unit = js.native
     
-    def data_=(arg: js.Any): Unit = js.native
+    def data_=(arg: Any): Unit = js.native
     
-    def id: js.Any = js.native
-    def id_=(arg: js.Any): Unit = js.native
+    def id: Any = js.native
+    def id_=(arg: Any): Unit = js.native
     
     var payload: Id = js.native
     
-    def source: js.Any = js.native
-    def source_=(arg: js.Any): Unit = js.native
+    def source: Any = js.native
+    def source_=(arg: Any): Unit = js.native
     
     def specversion: String = js.native
     
-    def subject: js.Any = js.native
-    def subject_=(arg: js.Any): Unit = js.native
+    def subject: Any = js.native
+    def subject_=(arg: Any): Unit = js.native
     
     def time: String = js.native
     def time_=(arg: String): Unit = js.native
     
-    def `type`: js.Any = js.native
-    def type_=(arg: js.Any): Unit = js.native
+    def `type`: Any = js.native
+    def type_=(arg: Any): Unit = js.native
   }
 }

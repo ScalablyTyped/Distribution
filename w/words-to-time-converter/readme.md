@@ -11,9 +11,9 @@ A simple library that turns words to time
 | Full name          | words-to-time-converter |
 | Keywords           | javascript, words, time, converter, wordstotime, react, angular, nodejs, js, time, convertor, conversion, time, units |
 | # releases         | 7 |
-| # dependents       | 0 |
-| # downloads        | 456 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 51.333333333333336 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/Svetloslav15/words-to-time#readme)

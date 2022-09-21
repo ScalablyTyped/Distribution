@@ -10,26 +10,26 @@ object anon {
   
   trait Current extends StObject {
     
-    var current: js.Any
+    var current: Any
   }
   object Current {
     
-    inline def apply(current: js.Any): Current = {
+    inline def apply(current: Any): Current = {
       val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any])
       __obj.asInstanceOf[Current]
     }
     
     extension [Self <: Current](x: Self) {
       
-      inline def setCurrent(value: js.Any): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: Any): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     }
   }
   
   trait Dictkey
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
-    var children: js.UndefOr[js.Any] = js.undefined
+    var children: js.UndefOr[Any] = js.undefined
     
     var withParent: js.UndefOr[Boolean] = js.undefined
   }
@@ -42,7 +42,7 @@ object anon {
     
     extension [Self <: Dictkey](x: Self) {
       
-      inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
@@ -95,7 +95,7 @@ object anon {
       
       inline def setDisplayedChildrenUndefined: Self = StObject.set(x, "displayedChildren", js.undefined)
       
-      inline def setDisplayedChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "displayedChildren", js.Array(value :_*))
+      inline def setDisplayedChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "displayedChildren", js.Array(value*))
       
       inline def setFinishedLeaving(value: StringDictionary[Boolean]): Self = StObject.set(x, "finishedLeaving", value.asInstanceOf[js.Any])
       

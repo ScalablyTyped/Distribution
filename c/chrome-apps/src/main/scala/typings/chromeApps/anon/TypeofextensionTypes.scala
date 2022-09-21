@@ -11,17 +11,17 @@ trait TypeofextensionTypes extends StObject {
     * @private
     * @internal
     */
-  val _internal_ : js.Any
+  val _internal_ : Any
 }
 object TypeofextensionTypes {
   
-  inline def apply(_internal_ : js.Any): TypeofextensionTypes = {
+  inline def apply(_internal_ : Any): TypeofextensionTypes = {
     val __obj = js.Dynamic.literal(_internal_ = _internal_.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofextensionTypes]
   }
   
   extension [Self <: TypeofextensionTypes](x: Self) {
     
-    inline def set_internal_(value: js.Any): Self = StObject.set(x, "_internal_", value.asInstanceOf[js.Any])
+    inline def set_internal_(value: Any): Self = StObject.set(x, "_internal_", value.asInstanceOf[js.Any])
   }
 }

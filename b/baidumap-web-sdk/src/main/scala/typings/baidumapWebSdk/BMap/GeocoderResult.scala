@@ -41,6 +41,6 @@ object GeocoderResult {
     
     inline def setSurroundingPoi(value: js.Array[LocalResultPoi]): Self = StObject.set(x, "surroundingPoi", value.asInstanceOf[js.Any])
     
-    inline def setSurroundingPoiVarargs(value: LocalResultPoi*): Self = StObject.set(x, "surroundingPoi", js.Array(value :_*))
+    inline def setSurroundingPoiVarargs(value: LocalResultPoi*): Self = StObject.set(x, "surroundingPoi", js.Array(value*))
   }
 }

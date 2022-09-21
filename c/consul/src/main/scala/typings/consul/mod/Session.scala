@@ -19,12 +19,12 @@ trait Session extends StObject {
   /**
     * Creates a new session
     */
-  def create[TData](): Thenable[TData] = js.native
+  def create[TData](): js.Promise[TData] = js.native
   /**
     * Creates a new session
     */
   def create[TData](callback: Callback[TData]): Unit = js.native
-  def create[TData](opts: CreateOptions): Thenable[TData] = js.native
+  def create[TData](opts: CreateOptions): js.Promise[TData] = js.native
   /**
     * Creates a new session
     */
@@ -33,7 +33,7 @@ trait Session extends StObject {
   /**
     * Destroys a given session
     */
-  def destroy[TData](id: String): Thenable[TData] = js.native
+  def destroy[TData](id: String): js.Promise[TData] = js.native
   /**
     * Destroys a given session
     */
@@ -41,21 +41,21 @@ trait Session extends StObject {
   /**
     * Destroys a given session
     */
-  def destroy[TData](opts: DestroyOptions): Thenable[TData] = js.native
+  def destroy[TData](opts: DestroyOptions): js.Promise[TData] = js.native
   /**
     * Destroys a given session
     */
   def destroy[TData](opts: DestroyOptions, callback: Callback[TData]): Unit = js.native
   
-  def get[TData](id: String): Thenable[TData] = js.native
+  def get[TData](id: String): js.Promise[TData] = js.native
   def get[TData](id: String, callback: Callback[TData]): Unit = js.native
-  def get[TData](opts: GetOptions): Thenable[TData] = js.native
+  def get[TData](opts: GetOptions): js.Promise[TData] = js.native
   def get[TData](opts: GetOptions, callback: Callback[TData]): Unit = js.native
   
   /**
     * Queries a given session
     */
-  def info[TData](id: String): Thenable[TData] = js.native
+  def info[TData](id: String): js.Promise[TData] = js.native
   /**
     * Queries a given session
     */
@@ -63,7 +63,7 @@ trait Session extends StObject {
   /**
     * Queries a given session
     */
-  def info[TData](opts: InfoOptions): Thenable[TData] = js.native
+  def info[TData](opts: InfoOptions): js.Promise[TData] = js.native
   /**
     * Queries a given session
     */
@@ -72,12 +72,12 @@ trait Session extends StObject {
   /**
     * Lists all the active sessions
     */
-  def list[TData](): Thenable[TData] = js.native
+  def list[TData](): js.Promise[TData] = js.native
   /**
     * Lists all the active sessions
     */
   def list[TData](callback: Callback[TData]): Unit = js.native
-  def list[TData](opts: ListOptions): Thenable[TData] = js.native
+  def list[TData](opts: ListOptions): js.Promise[TData] = js.native
   /**
     * Lists all the active sessions
     */
@@ -86,7 +86,7 @@ trait Session extends StObject {
   /**
     * Lists sessions belonging to a node
     */
-  def node[TData](node: String): Thenable[TData] = js.native
+  def node[TData](node: String): js.Promise[TData] = js.native
   /**
     * Lists sessions belonging to a node
     */
@@ -94,7 +94,7 @@ trait Session extends StObject {
   /**
     * Lists sessions belonging to a node
     */
-  def node[TData](opts: NodeOptions): Thenable[TData] = js.native
+  def node[TData](opts: NodeOptions): js.Promise[TData] = js.native
   /**
     * Lists sessions belonging to a node
     */
@@ -103,7 +103,7 @@ trait Session extends StObject {
   /**
     * Renews a TTL-based session
     */
-  def renew[TData](id: String): Thenable[TData] = js.native
+  def renew[TData](id: String): js.Promise[TData] = js.native
   /**
     * Renews a TTL-based session
     */
@@ -111,7 +111,7 @@ trait Session extends StObject {
   /**
     * Renews a TTL-based session
     */
-  def renew[TData](opts: RenewOptions): Thenable[TData] = js.native
+  def renew[TData](opts: RenewOptions): js.Promise[TData] = js.native
   /**
     * Renews a TTL-based session
     */
@@ -152,7 +152,7 @@ object Session {
       
       inline def setChecksUndefined: Self = StObject.set(x, "checks", js.undefined)
       
-      inline def setChecksVarargs(value: String*): Self = StObject.set(x, "checks", js.Array(value :_*))
+      inline def setChecksVarargs(value: String*): Self = StObject.set(x, "checks", js.Array(value*))
       
       inline def setLockdelay(value: String): Self = StObject.set(x, "lockdelay", value.asInstanceOf[js.Any])
       

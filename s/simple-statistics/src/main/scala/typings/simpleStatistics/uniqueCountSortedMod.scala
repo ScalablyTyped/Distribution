@@ -10,5 +10,5 @@ object uniqueCountSortedMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(x: js.Array[js.Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def default(x: js.Array[Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

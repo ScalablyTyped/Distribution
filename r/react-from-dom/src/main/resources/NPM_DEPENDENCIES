@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-from-dom" : "0.5.0"
+      "react-from-dom" : "0.6.2"
     }
   ],
   "test-dependencies" : [
     {
-      "react-from-dom" : "0.5.0"
+      "react-from-dom" : "0.6.2"
     }
   ],
   "compile-devDependencies" : [

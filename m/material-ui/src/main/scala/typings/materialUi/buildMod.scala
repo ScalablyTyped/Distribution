@@ -10,10 +10,10 @@ object buildMod {
   
   @JSImport("material-ui/svg-icons/action/build", JSImport.Default)
   @js.native
-  class default () extends ActionBuild
+  open class default () extends ActionBuild
   
   @JSImport("material-ui/svg-icons/action/build", "ActionBuild")
   @js.native
-  class ActionBuild ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionBuild ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

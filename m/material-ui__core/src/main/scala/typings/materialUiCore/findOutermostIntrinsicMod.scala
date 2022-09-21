@@ -12,5 +12,5 @@ object findOutermostIntrinsicMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(reactWrapper: ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, js.Any]]): ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(reactWrapper.asInstanceOf[js.Any]).asInstanceOf[ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, js.Any]]]
+  inline def default(reactWrapper: ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, Any]]): ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(reactWrapper.asInstanceOf[js.Any]).asInstanceOf[ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, Any]]]
 }

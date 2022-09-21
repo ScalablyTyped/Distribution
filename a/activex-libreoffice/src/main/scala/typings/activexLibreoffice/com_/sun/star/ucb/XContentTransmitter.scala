@@ -22,7 +22,7 @@ object XContentTransmitter {
   
   inline def apply(
     acquire: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     transmit: (String, String, Double) => Unit
   ): XContentTransmitter = {

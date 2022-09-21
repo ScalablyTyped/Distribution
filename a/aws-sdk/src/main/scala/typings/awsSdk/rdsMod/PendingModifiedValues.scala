@@ -7,42 +7,52 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PendingModifiedValues extends StObject {
   
   /**
-    *  Contains the new AllocatedStorage size for the DB instance that will be applied or is currently being applied. 
+    * The allocated storage size for the DB instance specified in gibibytes (GiB).
     */
   var AllocatedStorage: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
-    * Specifies the pending number of days for which automated backups are retained.
+    * The automation mode of the RDS Custom DB instance: full or all-paused. If full, the DB instance automates monitoring and instance recovery. If all-paused, the instance pauses automation for the duration set by --resume-full-automation-mode-minutes.
+    */
+  var AutomationMode: js.UndefOr[typings.awsSdk.rdsMod.AutomationMode] = js.undefined
+  
+  /**
+    * The number of days for which automated backups are retained.
     */
   var BackupRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
-    * Specifies the identifier of the CA certificate for the DB instance.
+    * The identifier of the CA certificate for the DB instance.
     */
   var CACertificateIdentifier: js.UndefOr[String] = js.undefined
   
   /**
-    *  Contains the new DBInstanceClass for the DB instance that will be applied or is currently being applied. 
+    * The name of the compute and memory capacity class for the DB instance.
     */
   var DBInstanceClass: js.UndefOr[String] = js.undefined
   
   /**
-    *  Contains the new DBInstanceIdentifier for the DB instance that will be applied or is currently being applied. 
+    * The database identifier for the DB instance.
     */
   var DBInstanceIdentifier: js.UndefOr[String] = js.undefined
   
   /**
-    * The new DB subnet group for the DB instance. 
+    * The DB subnet group for the DB instance.
     */
   var DBSubnetGroupName: js.UndefOr[String] = js.undefined
   
   /**
-    * Indicates the database engine version.
+    * The database engine version.
     */
   var EngineVersion: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies the new Provisioned IOPS value for the DB instance that will be applied or is currently being applied.
+    * Whether mapping of Amazon Web Services Identity and Access Management (IAM) accounts to database accounts is enabled.
+    */
+  var IAMDatabaseAuthenticationEnabled: js.UndefOr[BooleanOptional] = js.undefined
+  
+  /**
+    * The Provisioned IOPS value for the DB instance.
     */
   var Iops: js.UndefOr[IntegerOptional] = js.undefined
   
@@ -52,19 +62,19 @@ trait PendingModifiedValues extends StObject {
   var LicenseModel: js.UndefOr[String] = js.undefined
   
   /**
-    * Contains the pending or currently-in-progress change of the master credentials for the DB instance.
+    * The master credentials for the DB instance.
     */
   var MasterUserPassword: js.UndefOr[String] = js.undefined
   
   /**
-    * Indicates that the Single-AZ DB instance is to change to a Multi-AZ deployment.
+    * A value that indicates that the Single-AZ DB instance will change to a Multi-AZ deployment.
     */
   var MultiAZ: js.UndefOr[BooleanOptional] = js.undefined
   
   var PendingCloudwatchLogsExports: js.UndefOr[typings.awsSdk.rdsMod.PendingCloudwatchLogsExports] = js.undefined
   
   /**
-    * Specifies the pending port for the DB instance.
+    * The port for the DB instance.
     */
   var Port: js.UndefOr[IntegerOptional] = js.undefined
   
@@ -74,7 +84,12 @@ trait PendingModifiedValues extends StObject {
   var ProcessorFeatures: js.UndefOr[ProcessorFeatureList] = js.undefined
   
   /**
-    * Specifies the storage type to be associated with the DB instance.
+    * The number of minutes to pause the automation. When the time period ends, RDS Custom resumes full automation. The minimum value is 60 (default). The maximum value is 1,440.
+    */
+  var ResumeFullAutomationModeTime: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * The storage type of the DB instance.
     */
   var StorageType: js.UndefOr[String] = js.undefined
 }
@@ -90,6 +105,10 @@ object PendingModifiedValues {
     inline def setAllocatedStorage(value: IntegerOptional): Self = StObject.set(x, "AllocatedStorage", value.asInstanceOf[js.Any])
     
     inline def setAllocatedStorageUndefined: Self = StObject.set(x, "AllocatedStorage", js.undefined)
+    
+    inline def setAutomationMode(value: AutomationMode): Self = StObject.set(x, "AutomationMode", value.asInstanceOf[js.Any])
+    
+    inline def setAutomationModeUndefined: Self = StObject.set(x, "AutomationMode", js.undefined)
     
     inline def setBackupRetentionPeriod(value: IntegerOptional): Self = StObject.set(x, "BackupRetentionPeriod", value.asInstanceOf[js.Any])
     
@@ -114,6 +133,10 @@ object PendingModifiedValues {
     inline def setEngineVersion(value: String): Self = StObject.set(x, "EngineVersion", value.asInstanceOf[js.Any])
     
     inline def setEngineVersionUndefined: Self = StObject.set(x, "EngineVersion", js.undefined)
+    
+    inline def setIAMDatabaseAuthenticationEnabled(value: BooleanOptional): Self = StObject.set(x, "IAMDatabaseAuthenticationEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setIAMDatabaseAuthenticationEnabledUndefined: Self = StObject.set(x, "IAMDatabaseAuthenticationEnabled", js.undefined)
     
     inline def setIops(value: IntegerOptional): Self = StObject.set(x, "Iops", value.asInstanceOf[js.Any])
     
@@ -143,7 +166,11 @@ object PendingModifiedValues {
     
     inline def setProcessorFeaturesUndefined: Self = StObject.set(x, "ProcessorFeatures", js.undefined)
     
-    inline def setProcessorFeaturesVarargs(value: ProcessorFeature*): Self = StObject.set(x, "ProcessorFeatures", js.Array(value :_*))
+    inline def setProcessorFeaturesVarargs(value: ProcessorFeature*): Self = StObject.set(x, "ProcessorFeatures", js.Array(value*))
+    
+    inline def setResumeFullAutomationModeTime(value: js.Date): Self = StObject.set(x, "ResumeFullAutomationModeTime", value.asInstanceOf[js.Any])
+    
+    inline def setResumeFullAutomationModeTimeUndefined: Self = StObject.set(x, "ResumeFullAutomationModeTime", js.undefined)
     
     inline def setStorageType(value: String): Self = StObject.set(x, "StorageType", value.asInstanceOf[js.Any])
     

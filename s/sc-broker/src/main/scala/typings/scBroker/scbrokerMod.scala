@@ -16,7 +16,6 @@ import typings.scBroker.scBrokerStrings.publishIn
 import typings.scBroker.scBrokerStrings.subscribe
 import typings.scBroker.scBrokerStrings.unsubscribe
 import typings.scBroker.scBrokerStrings.warning
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +24,7 @@ object scbrokerMod {
   
   @JSImport("sc-broker/scbroker", JSImport.Namespace)
   @js.native
-  class ^ () extends SCBroker {
+  open class ^ () extends SCBroker {
     def this(options: Run) = this()
   }
   @JSImport("sc-broker/scbroker", JSImport.Namespace)
@@ -67,7 +66,7 @@ object scbrokerMod {
     /* dataMap */ FlexiMap, 
     /* dataExpirer */ ExpiryManager, 
     /* subscriptions */ Subscriptions, 
-    js.Any
+    Any
   ]
   
   @js.native
@@ -88,19 +87,20 @@ object scbrokerMod {
     
     var debugPort: Double = js.native
     
-    def exec(query: QueryFunction): js.Any = js.native
-    def exec(query: QueryFunction, baseKey: KeyChain): js.Any = js.native
+    def exec(query: QueryFunction): Any = js.native
+    def exec(query: QueryFunction, baseKey: KeyChain): Any = js.native
     
     var id: Double = js.native
     
     var instanceId: Double = js.native
     
+    def on(event: subscribe | unsubscribe, listener: js.Function1[/* channel */ String, Unit]): this.type = js.native
     @JSName("on")
     def on_masterMessage(
       event: masterMessage,
       listener: js.Function2[
-          /* data */ js.Any, 
-          /* respond */ js.Function2[/* err */ Error | Null, /* responseData */ js.Any, Unit], 
+          /* data */ Any, 
+          /* respond */ js.Function2[/* err */ js.Error | Null, /* responseData */ Any, Unit], 
           Unit
         ]
     ): this.type = js.native
@@ -108,23 +108,19 @@ object scbrokerMod {
     def on_message(
       event: message,
       listener: js.Function2[
-          /* message */ js.Any, 
-          /* respond */ js.Function2[/* err */ Error | Null, /* responseData */ js.Any, Unit], 
+          /* message */ Any, 
+          /* respond */ js.Function2[/* err */ js.Error | Null, /* responseData */ Any, Unit], 
           Unit
         ]
     ): this.type = js.native
     @JSName("on")
-    def on_publish(event: publish, listener: js.Function2[/* channel */ String, /* data */ js.Any, Unit]): this.type = js.native
+    def on_publish(event: publish, listener: js.Function2[/* channel */ String, /* data */ Any, Unit]): this.type = js.native
     @JSName("on")
-    def on_subscribe(event: subscribe, listener: js.Function1[/* channel */ String, Unit]): this.type = js.native
-    @JSName("on")
-    def on_unsubscribe(event: unsubscribe, listener: js.Function1[/* channel */ String, Unit]): this.type = js.native
-    @JSName("on")
-    def on_warning(event: warning, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def on_warning(event: warning, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     
     var options: SCBrokerOptions = js.native
     
-    def publish(channel: String, message: js.Any): Unit = js.native
+    def publish(channel: String, message: Any): Unit = js.native
     
     @JSName("removeMiddleware")
     def removeMiddleware_publish(`type`: publish, middleware: PublishMiddleware): Unit = js.native
@@ -133,8 +129,8 @@ object scbrokerMod {
     
     def run(): Unit = js.native
     
-    def sendToMaster(data: js.Any): Unit = js.native
-    def sendToMaster(data: js.Any, callback: js.Function2[/* err */ Error | Null, /* responseData */ js.Any, Unit]): Unit = js.native
+    def sendToMaster(data: Any): Unit = js.native
+    def sendToMaster(data: Any, callback: js.Function2[/* err */ js.Error | Null, /* responseData */ Any, Unit]): Unit = js.native
     
     var subscriptions: Subscriptions = js.native
     
@@ -143,7 +139,7 @@ object scbrokerMod {
   
   trait SCBrokerOptions
     extends StObject
-       with /* additionalOptions */ StringDictionary[js.Any] {
+       with /* additionalOptions */ StringDictionary[Any] {
     
     // An ID to associate with this specific instance of SC
     // this may be useful if you are running an SC app on multiple

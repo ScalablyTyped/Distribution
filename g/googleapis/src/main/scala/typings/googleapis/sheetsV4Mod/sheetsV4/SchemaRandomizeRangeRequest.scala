@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Randomizes the order of the rows in a range.
-  */
 trait SchemaRandomizeRangeRequest extends StObject {
   
   /**

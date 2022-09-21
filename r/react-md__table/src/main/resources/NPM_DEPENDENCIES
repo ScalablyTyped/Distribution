@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@react-md/table" : "2.4.3"
+      "@react-md/table" : "5.1.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@react-md/table" : "2.4.3"
+      "@react-md/table" : "5.1.4"
     }
   ],
   "compile-devDependencies" : [

@@ -3,24 +3,6 @@
 
 Typings are for version 2.0.2
 
-## Library description:
-Dark theme variables for Ant Design
-
-|                    |                 |
-| ------------------ | :-------------: |
-| Full name          | @ant-design/dark-theme |
-| Keywords           | - |
-| # releases         | 14 |
-| # dependents       | 6 |
-| # downloads        | 241066 |
-| # stars            | 0 |
-
-## Links
-- [Homepage](https://github.com/ant-design/ant-design-dark-theme)
-- [Bugs](https://github.com/ant-design/ant-design-dark-theme/issues)
-- [Repository](https://github.com/ant-design/ant-design-dark-theme)
-- [Npm](https://www.npmjs.com/package/%40ant-design%2Fdark-theme)
-    
 
 
 ## Note

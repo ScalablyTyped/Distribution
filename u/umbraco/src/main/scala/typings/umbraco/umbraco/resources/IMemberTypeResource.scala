@@ -12,17 +12,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IMemberTypeResource extends StObject {
   
   //return all member types
-  def getTypes(): js.Any
+  def getTypes(): Any
 }
 object IMemberTypeResource {
   
-  inline def apply(getTypes: () => js.Any): IMemberTypeResource = {
+  inline def apply(getTypes: () => Any): IMemberTypeResource = {
     val __obj = js.Dynamic.literal(getTypes = js.Any.fromFunction0(getTypes))
     __obj.asInstanceOf[IMemberTypeResource]
   }
   
   extension [Self <: IMemberTypeResource](x: Self) {
     
-    inline def setGetTypes(value: () => js.Any): Self = StObject.set(x, "getTypes", js.Any.fromFunction0(value))
+    inline def setGetTypes(value: () => Any): Self = StObject.set(x, "getTypes", js.Any.fromFunction0(value))
   }
 }

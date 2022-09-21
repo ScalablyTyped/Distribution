@@ -1,7 +1,7 @@
 package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.`stay-above`
-import typings.arcgisJsApi.arcgisJsApiStrings.none
+import typings.arcgisJsApi.arcgisJsApiStrings.none_
 import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
@@ -17,7 +17,7 @@ trait GroundNavigationConstraintProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html#navigationConstraint)
     */
-  var `type`: js.UndefOr[`stay-above` | none] = js.undefined
+  var `type`: js.UndefOr[`stay-above` | none_] = js.undefined
 }
 object GroundNavigationConstraintProperties {
   
@@ -32,7 +32,7 @@ object GroundNavigationConstraintProperties {
   
   extension [Self <: GroundNavigationConstraintProperties](x: Self) {
     
-    inline def setType(value: `stay-above` | none): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `stay-above` | none_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

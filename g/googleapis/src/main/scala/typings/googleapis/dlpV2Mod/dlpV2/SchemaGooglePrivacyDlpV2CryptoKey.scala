@@ -4,18 +4,21 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * This is a data encryption key (DEK) (as opposed to a key encryption key
-  * (KEK) stored by KMS). When using KMS to wrap/unwrap DEKs, be sure to set an
-  * appropriate IAM policy on the KMS CryptoKey (KEK) to ensure an attacker
-  * cannot unwrap the data crypto key.
-  */
 trait SchemaGooglePrivacyDlpV2CryptoKey extends StObject {
   
+  /**
+    * Key wrapped using Cloud KMS
+    */
   var kmsWrapped: js.UndefOr[SchemaGooglePrivacyDlpV2KmsWrappedCryptoKey] = js.undefined
   
+  /**
+    * Transient crypto key
+    */
   var transient: js.UndefOr[SchemaGooglePrivacyDlpV2TransientCryptoKey] = js.undefined
   
+  /**
+    * Unwrapped crypto key
+    */
   var unwrapped: js.UndefOr[SchemaGooglePrivacyDlpV2UnwrappedCryptoKey] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2CryptoKey {

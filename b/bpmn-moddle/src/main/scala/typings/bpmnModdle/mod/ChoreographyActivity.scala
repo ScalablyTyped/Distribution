@@ -41,7 +41,7 @@ object ChoreographyActivity {
     
     inline def setCorrelationKeys(value: js.Array[CorrelationKey]): Self = StObject.set(x, "correlationKeys", value.asInstanceOf[js.Any])
     
-    inline def setCorrelationKeysVarargs(value: CorrelationKey*): Self = StObject.set(x, "correlationKeys", js.Array(value :_*))
+    inline def setCorrelationKeysVarargs(value: CorrelationKey*): Self = StObject.set(x, "correlationKeys", js.Array(value*))
     
     inline def setInitiatingParticipantRef(value: Participant): Self = StObject.set(x, "initiatingParticipantRef", value.asInstanceOf[js.Any])
     
@@ -49,6 +49,6 @@ object ChoreographyActivity {
     
     inline def setParticipantRef(value: js.Array[Participant]): Self = StObject.set(x, "participantRef", value.asInstanceOf[js.Any])
     
-    inline def setParticipantRefVarargs(value: Participant*): Self = StObject.set(x, "participantRef", js.Array(value :_*))
+    inline def setParticipantRefVarargs(value: Participant*): Self = StObject.set(x, "participantRef", js.Array(value*))
   }
 }

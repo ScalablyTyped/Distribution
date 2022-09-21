@@ -17,7 +17,7 @@ trait Prefix extends StObject {
   
   // property key to get values from objects in data
   var render: js.UndefOr[
-    js.Function3[/* value */ js.Any, /* datum */ js.Object, /* property */ String, ReactNode]
+    js.Function3[/* value */ Any, /* datum */ js.Object, /* property */ String, ReactNode]
   ] = js.undefined
   
   // used for hover/touch detail
@@ -42,7 +42,7 @@ object Prefix {
     
     inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
-    inline def setRender(value: (/* value */ js.Any, /* datum */ js.Object, /* property */ String) => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
+    inline def setRender(value: (/* value */ Any, /* datum */ js.Object, /* property */ String) => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
     
     inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     

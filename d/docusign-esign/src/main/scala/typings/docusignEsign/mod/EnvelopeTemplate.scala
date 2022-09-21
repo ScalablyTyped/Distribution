@@ -668,7 +668,7 @@ object EnvelopeTemplate {
     
     inline def setDocumentsUriUndefined: Self = StObject.set(x, "documentsUri", js.undefined)
     
-    inline def setDocumentsVarargs(value: (/* A document object. */ Document)*): Self = StObject.set(x, "documents", js.Array(value :_*))
+    inline def setDocumentsVarargs(value: (/* A document object. */ Document)*): Self = StObject.set(x, "documents", js.Array(value*))
     
     inline def setEmailBlurb(value: String): Self = StObject.set(x, "emailBlurb", value.asInstanceOf[js.Any])
     
@@ -694,13 +694,13 @@ object EnvelopeTemplate {
     
     inline def setEnvelopeAttachmentsUndefined: Self = StObject.set(x, "envelopeAttachments", js.undefined)
     
-    inline def setEnvelopeAttachmentsVarargs(value: (/* Contains information about an attachment. */ Attachment)*): Self = StObject.set(x, "envelopeAttachments", js.Array(value :_*))
+    inline def setEnvelopeAttachmentsVarargs(value: (/* Contains information about an attachment. */ Attachment)*): Self = StObject.set(x, "envelopeAttachments", js.Array(value*))
     
     inline def setEnvelopeDocuments(value: js.Array[/* This object contains details about the envelope document. */ EnvelopeDocument]): Self = StObject.set(x, "envelopeDocuments", value.asInstanceOf[js.Any])
     
     inline def setEnvelopeDocumentsUndefined: Self = StObject.set(x, "envelopeDocuments", js.undefined)
     
-    inline def setEnvelopeDocumentsVarargs(value: (/* This object contains details about the envelope document. */ EnvelopeDocument)*): Self = StObject.set(x, "envelopeDocuments", js.Array(value :_*))
+    inline def setEnvelopeDocumentsVarargs(value: (/* This object contains details about the envelope document. */ EnvelopeDocument)*): Self = StObject.set(x, "envelopeDocuments", js.Array(value*))
     
     inline def setEnvelopeId(value: String): Self = StObject.set(x, "envelopeId", value.asInstanceOf[js.Any])
     
@@ -750,7 +750,7 @@ object EnvelopeTemplate {
     
     inline def setFolderIdsUndefined: Self = StObject.set(x, "folderIds", js.undefined)
     
-    inline def setFolderIdsVarargs(value: String*): Self = StObject.set(x, "folderIds", js.Array(value :_*))
+    inline def setFolderIdsVarargs(value: String*): Self = StObject.set(x, "folderIds", js.Array(value*))
     
     inline def setFolderName(value: String): Self = StObject.set(x, "folderName", value.asInstanceOf[js.Any])
     
@@ -760,7 +760,7 @@ object EnvelopeTemplate {
     
     inline def setFoldersUndefined: Self = StObject.set(x, "folders", js.undefined)
     
-    inline def setFoldersVarargs(value: (/* This object contains details about a folder. */ Folder)*): Self = StObject.set(x, "folders", js.Array(value :_*))
+    inline def setFoldersVarargs(value: (/* This object contains details about a folder. */ Folder)*): Self = StObject.set(x, "folders", js.Array(value*))
     
     inline def setHasComments(value: String): Self = StObject.set(x, "hasComments", value.asInstanceOf[js.Any])
     
@@ -864,7 +864,7 @@ object EnvelopeTemplate {
     
     inline def setPowerFormsUndefined: Self = StObject.set(x, "powerForms", js.undefined)
     
-    inline def setPowerFormsVarargs(value: (/* Contains details about a PowerForm. */ PowerForm)*): Self = StObject.set(x, "powerForms", js.Array(value :_*))
+    inline def setPowerFormsVarargs(value: (/* Contains details about a PowerForm. */ PowerForm)*): Self = StObject.set(x, "powerForms", js.Array(value*))
     
     inline def setPurgeCompletedDate(value: String): Self = StObject.set(x, "purgeCompletedDate", value.asInstanceOf[js.Any])
     

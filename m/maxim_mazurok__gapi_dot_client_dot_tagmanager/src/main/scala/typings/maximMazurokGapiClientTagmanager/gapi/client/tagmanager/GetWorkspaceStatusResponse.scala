@@ -25,12 +25,12 @@ object GetWorkspaceStatusResponse {
     
     inline def setMergeConflictUndefined: Self = StObject.set(x, "mergeConflict", js.undefined)
     
-    inline def setMergeConflictVarargs(value: MergeConflict*): Self = StObject.set(x, "mergeConflict", js.Array(value :_*))
+    inline def setMergeConflictVarargs(value: MergeConflict*): Self = StObject.set(x, "mergeConflict", js.Array(value*))
     
     inline def setWorkspaceChange(value: js.Array[Entity]): Self = StObject.set(x, "workspaceChange", value.asInstanceOf[js.Any])
     
     inline def setWorkspaceChangeUndefined: Self = StObject.set(x, "workspaceChange", js.undefined)
     
-    inline def setWorkspaceChangeVarargs(value: Entity*): Self = StObject.set(x, "workspaceChange", js.Array(value :_*))
+    inline def setWorkspaceChangeVarargs(value: Entity*): Self = StObject.set(x, "workspaceChange", js.Array(value*))
   }
 }

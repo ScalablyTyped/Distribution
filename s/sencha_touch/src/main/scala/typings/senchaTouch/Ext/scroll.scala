@@ -45,30 +45,30 @@ object scroll {
     /** [Method] Returns the value of initialOffset
       * @returns Object/Number
       */
-    var getInitialOffset: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getInitialOffset: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of momentumEasing
       * @returns Object
       */
-    var getMomentumEasing: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getMomentumEasing: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of slotSnapEasing
       * @returns Object
       */
-    var getSlotSnapEasing: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getSlotSnapEasing: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of slotSnapSize
       * @returns Number/Object
       */
-    var getSlotSnapSize: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getSlotSnapSize: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of translatable
       * @returns Object
       */
-    var getTranslatable: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getTranslatable: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Config Option] (Object/Number) */
-    var initialOffset: js.UndefOr[js.Any] = js.undefined
+    var initialOffset: js.UndefOr[Any] = js.undefined
     
     /** [Method] Returns true if a specified axis is enabled
       * @param axis String The axis to check (x or y).
@@ -77,7 +77,7 @@ object scroll {
     var isAxisEnabled: js.UndefOr[js.Function1[/* axis */ js.UndefOr[java.lang.String], Boolean]] = js.undefined
     
     /** [Config Option] (Object) */
-    var momentumEasing: js.UndefOr[js.Any] = js.undefined
+    var momentumEasing: js.UndefOr[Any] = js.undefined
     
     /** [Method] Change the scroll offset by the given amount
       * @param x Number The offset to scroll by on the x axis.
@@ -89,7 +89,7 @@ object scroll {
         js.Function3[
           /* x */ js.UndefOr[Double], 
           /* y */ js.UndefOr[Double], 
-          /* animation */ js.UndefOr[js.Any], 
+          /* animation */ js.UndefOr[Any], 
           this.type
         ]
       ] = js.undefined
@@ -104,7 +104,7 @@ object scroll {
         js.Function3[
           /* x */ js.UndefOr[Double], 
           /* y */ js.UndefOr[Double], 
-          /* animation */ js.UndefOr[js.Any], 
+          /* animation */ js.UndefOr[Any], 
           this.type
         ]
       ] = js.undefined
@@ -113,7 +113,7 @@ object scroll {
       * @param animation Object
       * @returns Ext.scroll.Scroller this
       */
-    var scrollToEnd: js.UndefOr[js.Function1[/* animation */ js.UndefOr[js.Any], this.type]] = js.undefined
+    var scrollToEnd: js.UndefOr[js.Function1[/* animation */ js.UndefOr[Any], this.type]] = js.undefined
     
     /** [Method] Sets the value of direction
       * @param direction String The new value.
@@ -133,36 +133,36 @@ object scroll {
     /** [Method] Sets the value of initialOffset
       * @param initialOffset Object/Number The new value.
       */
-    var setInitialOffset: js.UndefOr[js.Function1[/* initialOffset */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setInitialOffset: js.UndefOr[js.Function1[/* initialOffset */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of momentumEasing
       * @param momentumEasing Object The new value.
       */
-    var setMomentumEasing: js.UndefOr[js.Function1[/* momentumEasing */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setMomentumEasing: js.UndefOr[js.Function1[/* momentumEasing */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the offset of this scroller
       * @param offset Object The offset to move to.
       * @returns Ext.scroll.Scroller this
       */
-    var setOffset: js.UndefOr[js.Function1[/* offset */ js.UndefOr[js.Any], this.type]] = js.undefined
+    var setOffset: js.UndefOr[js.Function1[/* offset */ js.UndefOr[Any], this.type]] = js.undefined
     
     /** [Method] Sets the value of slotSnapEasing
       * @param slotSnapEasing Object The new value.
       */
-    var setSlotSnapEasing: js.UndefOr[js.Function1[/* slotSnapEasing */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setSlotSnapEasing: js.UndefOr[js.Function1[/* slotSnapEasing */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of slotSnapSize
       * @param slotSnapSize Number/Object The new value.
       */
-    var setSlotSnapSize: js.UndefOr[js.Function1[/* slotSnapSize */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setSlotSnapSize: js.UndefOr[js.Function1[/* slotSnapSize */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of translatable
       * @param translatable Object The new value.
       */
-    var setTranslatable: js.UndefOr[js.Function1[/* translatable */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setTranslatable: js.UndefOr[js.Function1[/* translatable */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Config Option] (Number/Object) */
-    var slotSnapSize: js.UndefOr[js.Any] = js.undefined
+    var slotSnapSize: js.UndefOr[Any] = js.undefined
     
     /** [Method] Updates the boundary information for this scroller
       * @returns Ext.scroll.Scroller this
@@ -210,27 +210,27 @@ object scroll {
       
       inline def setGetDisabledUndefined: Self = StObject.set(x, "getDisabled", js.undefined)
       
-      inline def setGetInitialOffset(value: () => js.Any): Self = StObject.set(x, "getInitialOffset", js.Any.fromFunction0(value))
+      inline def setGetInitialOffset(value: () => Any): Self = StObject.set(x, "getInitialOffset", js.Any.fromFunction0(value))
       
       inline def setGetInitialOffsetUndefined: Self = StObject.set(x, "getInitialOffset", js.undefined)
       
-      inline def setGetMomentumEasing(value: () => js.Any): Self = StObject.set(x, "getMomentumEasing", js.Any.fromFunction0(value))
+      inline def setGetMomentumEasing(value: () => Any): Self = StObject.set(x, "getMomentumEasing", js.Any.fromFunction0(value))
       
       inline def setGetMomentumEasingUndefined: Self = StObject.set(x, "getMomentumEasing", js.undefined)
       
-      inline def setGetSlotSnapEasing(value: () => js.Any): Self = StObject.set(x, "getSlotSnapEasing", js.Any.fromFunction0(value))
+      inline def setGetSlotSnapEasing(value: () => Any): Self = StObject.set(x, "getSlotSnapEasing", js.Any.fromFunction0(value))
       
       inline def setGetSlotSnapEasingUndefined: Self = StObject.set(x, "getSlotSnapEasing", js.undefined)
       
-      inline def setGetSlotSnapSize(value: () => js.Any): Self = StObject.set(x, "getSlotSnapSize", js.Any.fromFunction0(value))
+      inline def setGetSlotSnapSize(value: () => Any): Self = StObject.set(x, "getSlotSnapSize", js.Any.fromFunction0(value))
       
       inline def setGetSlotSnapSizeUndefined: Self = StObject.set(x, "getSlotSnapSize", js.undefined)
       
-      inline def setGetTranslatable(value: () => js.Any): Self = StObject.set(x, "getTranslatable", js.Any.fromFunction0(value))
+      inline def setGetTranslatable(value: () => Any): Self = StObject.set(x, "getTranslatable", js.Any.fromFunction0(value))
       
       inline def setGetTranslatableUndefined: Self = StObject.set(x, "getTranslatable", js.undefined)
       
-      inline def setInitialOffset(value: js.Any): Self = StObject.set(x, "initialOffset", value.asInstanceOf[js.Any])
+      inline def setInitialOffset(value: Any): Self = StObject.set(x, "initialOffset", value.asInstanceOf[js.Any])
       
       inline def setInitialOffsetUndefined: Self = StObject.set(x, "initialOffset", js.undefined)
       
@@ -238,21 +238,21 @@ object scroll {
       
       inline def setIsAxisEnabledUndefined: Self = StObject.set(x, "isAxisEnabled", js.undefined)
       
-      inline def setMomentumEasing(value: js.Any): Self = StObject.set(x, "momentumEasing", value.asInstanceOf[js.Any])
+      inline def setMomentumEasing(value: Any): Self = StObject.set(x, "momentumEasing", value.asInstanceOf[js.Any])
       
       inline def setMomentumEasingUndefined: Self = StObject.set(x, "momentumEasing", js.undefined)
       
       inline def setScrollBy(
-        value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], /* animation */ js.UndefOr[js.Any]) => IScroller
+        value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], /* animation */ js.UndefOr[Any]) => IScroller
       ): Self = StObject.set(x, "scrollBy", js.Any.fromFunction3(value))
       
       inline def setScrollByUndefined: Self = StObject.set(x, "scrollBy", js.undefined)
       
       inline def setScrollTo(
-        value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], /* animation */ js.UndefOr[js.Any]) => IScroller
+        value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], /* animation */ js.UndefOr[Any]) => IScroller
       ): Self = StObject.set(x, "scrollTo", js.Any.fromFunction3(value))
       
-      inline def setScrollToEnd(value: /* animation */ js.UndefOr[js.Any] => IScroller): Self = StObject.set(x, "scrollToEnd", js.Any.fromFunction1(value))
+      inline def setScrollToEnd(value: /* animation */ js.UndefOr[Any] => IScroller): Self = StObject.set(x, "scrollToEnd", js.Any.fromFunction1(value))
       
       inline def setScrollToEndUndefined: Self = StObject.set(x, "scrollToEnd", js.undefined)
       
@@ -270,31 +270,31 @@ object scroll {
       
       inline def setSetDisabledUndefined: Self = StObject.set(x, "setDisabled", js.undefined)
       
-      inline def setSetInitialOffset(value: /* initialOffset */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setInitialOffset", js.Any.fromFunction1(value))
+      inline def setSetInitialOffset(value: /* initialOffset */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setInitialOffset", js.Any.fromFunction1(value))
       
       inline def setSetInitialOffsetUndefined: Self = StObject.set(x, "setInitialOffset", js.undefined)
       
-      inline def setSetMomentumEasing(value: /* momentumEasing */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setMomentumEasing", js.Any.fromFunction1(value))
+      inline def setSetMomentumEasing(value: /* momentumEasing */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setMomentumEasing", js.Any.fromFunction1(value))
       
       inline def setSetMomentumEasingUndefined: Self = StObject.set(x, "setMomentumEasing", js.undefined)
       
-      inline def setSetOffset(value: /* offset */ js.UndefOr[js.Any] => IScroller): Self = StObject.set(x, "setOffset", js.Any.fromFunction1(value))
+      inline def setSetOffset(value: /* offset */ js.UndefOr[Any] => IScroller): Self = StObject.set(x, "setOffset", js.Any.fromFunction1(value))
       
       inline def setSetOffsetUndefined: Self = StObject.set(x, "setOffset", js.undefined)
       
-      inline def setSetSlotSnapEasing(value: /* slotSnapEasing */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setSlotSnapEasing", js.Any.fromFunction1(value))
+      inline def setSetSlotSnapEasing(value: /* slotSnapEasing */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setSlotSnapEasing", js.Any.fromFunction1(value))
       
       inline def setSetSlotSnapEasingUndefined: Self = StObject.set(x, "setSlotSnapEasing", js.undefined)
       
-      inline def setSetSlotSnapSize(value: /* slotSnapSize */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setSlotSnapSize", js.Any.fromFunction1(value))
+      inline def setSetSlotSnapSize(value: /* slotSnapSize */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setSlotSnapSize", js.Any.fromFunction1(value))
       
       inline def setSetSlotSnapSizeUndefined: Self = StObject.set(x, "setSlotSnapSize", js.undefined)
       
-      inline def setSetTranslatable(value: /* translatable */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setTranslatable", js.Any.fromFunction1(value))
+      inline def setSetTranslatable(value: /* translatable */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setTranslatable", js.Any.fromFunction1(value))
       
       inline def setSetTranslatableUndefined: Self = StObject.set(x, "setTranslatable", js.undefined)
       
-      inline def setSlotSnapSize(value: js.Any): Self = StObject.set(x, "slotSnapSize", value.asInstanceOf[js.Any])
+      inline def setSlotSnapSize(value: Any): Self = StObject.set(x, "slotSnapSize", value.asInstanceOf[js.Any])
       
       inline def setSlotSnapSizeUndefined: Self = StObject.set(x, "slotSnapSize", js.undefined)
       
@@ -316,12 +316,12 @@ object scroll {
     /** [Method] Returns the value of element
       * @returns Object
       */
-    var getElement: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getElement: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of indicators
       * @returns Object
       */
-    var getIndicators: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getIndicators: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of indicatorsHidingDelay
       * @returns Number
@@ -349,12 +349,12 @@ object scroll {
     /** [Method] Sets the value of element
       * @param element Object The new value.
       */
-    var setElement: js.UndefOr[js.Function1[/* element */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setElement: js.UndefOr[js.Function1[/* element */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of indicators
       * @param indicators Object The new value.
       */
-    var setIndicators: js.UndefOr[js.Function1[/* indicators */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setIndicators: js.UndefOr[js.Function1[/* indicators */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of indicatorsHidingDelay
       * @param indicatorsHidingDelay Number The new value.
@@ -369,7 +369,7 @@ object scroll {
     /** [Method] Sets the value of scroller
       * @param scroller Object The new value.
       */
-    var setScroller: js.UndefOr[js.Function1[/* scroller */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setScroller: js.UndefOr[js.Function1[/* scroller */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object IView {
     
@@ -384,11 +384,11 @@ object scroll {
       
       inline def setGetClsUndefined: Self = StObject.set(x, "getCls", js.undefined)
       
-      inline def setGetElement(value: () => js.Any): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+      inline def setGetElement(value: () => Any): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
       
       inline def setGetElementUndefined: Self = StObject.set(x, "getElement", js.undefined)
       
-      inline def setGetIndicators(value: () => js.Any): Self = StObject.set(x, "getIndicators", js.Any.fromFunction0(value))
+      inline def setGetIndicators(value: () => Any): Self = StObject.set(x, "getIndicators", js.Any.fromFunction0(value))
       
       inline def setGetIndicatorsHidingDelay(value: () => Double): Self = StObject.set(x, "getIndicatorsHidingDelay", js.Any.fromFunction0(value))
       
@@ -412,11 +412,11 @@ object scroll {
       
       inline def setSetClsUndefined: Self = StObject.set(x, "setCls", js.undefined)
       
-      inline def setSetElement(value: /* element */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setElement", js.Any.fromFunction1(value))
+      inline def setSetElement(value: /* element */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setElement", js.Any.fromFunction1(value))
       
       inline def setSetElementUndefined: Self = StObject.set(x, "setElement", js.undefined)
       
-      inline def setSetIndicators(value: /* indicators */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setIndicators", js.Any.fromFunction1(value))
+      inline def setSetIndicators(value: /* indicators */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setIndicators", js.Any.fromFunction1(value))
       
       inline def setSetIndicatorsHidingDelay(value: /* indicatorsHidingDelay */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setIndicatorsHidingDelay", js.Any.fromFunction1(value))
       
@@ -428,7 +428,7 @@ object scroll {
       
       inline def setSetIndicatorsUndefined: Self = StObject.set(x, "setIndicators", js.undefined)
       
-      inline def setSetScroller(value: /* scroller */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setScroller", js.Any.fromFunction1(value))
+      inline def setSetScroller(value: /* scroller */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setScroller", js.Any.fromFunction1(value))
       
       inline def setSetScrollerUndefined: Self = StObject.set(x, "setScroller", js.undefined)
     }
@@ -466,7 +466,7 @@ object scroll {
       /** [Method] Returns the value of length
         * @returns Object
         */
-      var getLength: js.UndefOr[js.Function0[js.Any]] = js.undefined
+      var getLength: js.UndefOr[js.Function0[Any]] = js.undefined
       
       /** [Method] Returns the value of minLength
         * @returns Number
@@ -481,7 +481,7 @@ object scroll {
       /** [Method] Returns the value of value
         * @returns Object
         */
-      var getValue: js.UndefOr[js.Function0[js.Any]] = js.undefined
+      var getValue: js.UndefOr[js.Function0[Any]] = js.undefined
       
       /** [Method] Sets the value of active
         * @param active Boolean The new value.
@@ -506,7 +506,7 @@ object scroll {
       /** [Method] Sets the value of length
         * @param length Object The new value.
         */
-      var setLength: js.UndefOr[js.Function1[/* length */ js.UndefOr[js.Any], Unit]] = js.undefined
+      var setLength: js.UndefOr[js.Function1[/* length */ js.UndefOr[Any], Unit]] = js.undefined
       
       /** [Method] Sets the value of minLength
         * @param minLength Number The new value.
@@ -521,7 +521,7 @@ object scroll {
       /** [Method] Sets the value of value
         * @param value Object The new value.
         */
-      var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
+      var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[Any], Unit]] = js.undefined
     }
     object IAbstract {
       
@@ -552,7 +552,7 @@ object scroll {
         
         inline def setGetBarClsUndefined: Self = StObject.set(x, "getBarCls", js.undefined)
         
-        inline def setGetLength(value: () => js.Any): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
+        inline def setGetLength(value: () => Any): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
         
         inline def setGetLengthUndefined: Self = StObject.set(x, "getLength", js.undefined)
         
@@ -564,7 +564,7 @@ object scroll {
         
         inline def setGetRatioUndefined: Self = StObject.set(x, "getRatio", js.undefined)
         
-        inline def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+        inline def setGetValue(value: () => Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
         
         inline def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
         
@@ -584,7 +584,7 @@ object scroll {
         
         inline def setSetBarClsUndefined: Self = StObject.set(x, "setBarCls", js.undefined)
         
-        inline def setSetLength(value: /* length */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setLength", js.Any.fromFunction1(value))
+        inline def setSetLength(value: /* length */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setLength", js.Any.fromFunction1(value))
         
         inline def setSetLengthUndefined: Self = StObject.set(x, "setLength", js.undefined)
         
@@ -596,7 +596,7 @@ object scroll {
         
         inline def setSetRatioUndefined: Self = StObject.set(x, "setRatio", js.undefined)
         
-        inline def setSetValue(value: /* value */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+        inline def setSetValue(value: /* value */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
         
         inline def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
       }

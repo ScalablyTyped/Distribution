@@ -53,7 +53,7 @@ object CustomMessageActivity {
     
     inline def setEndpointTypesUndefined: Self = StObject.set(x, "EndpointTypes", js.undefined)
     
-    inline def setEndpointTypesVarargs(value: EndpointTypesElement*): Self = StObject.set(x, "EndpointTypes", js.Array(value :_*))
+    inline def setEndpointTypesVarargs(value: EndpointTypesElement*): Self = StObject.set(x, "EndpointTypes", js.Array(value*))
     
     inline def setMessageConfig(value: JourneyCustomMessage): Self = StObject.set(x, "MessageConfig", value.asInstanceOf[js.Any])
     

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("SwitchTextCaseCommand")
 @js.native
-class SwitchTextCaseCommand ()
+open class SwitchTextCaseCommand ()
   extends StObject
      with typings.devexpressWeb.SwitchTextCaseCommand {
   

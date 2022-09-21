@@ -10,10 +10,10 @@ Captures and cleans stack traces
 | ------------------ | :-------------: |
 | Full name          | stack-utils |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 120 |
-| # downloads        | 403206498 |
-| # stars            | 3 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 7.891824466666667E7 |
+| # stars            | 170.0 |
 
 ## Links
 - [Homepage](https://github.com/tapjs/stack-utils#readme)

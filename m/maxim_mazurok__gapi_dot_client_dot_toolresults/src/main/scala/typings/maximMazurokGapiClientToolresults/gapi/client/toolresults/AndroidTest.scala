@@ -16,7 +16,7 @@ trait AndroidTest extends StObject {
   var androidRoboTest: js.UndefOr[AndroidRoboTest] = js.undefined
   
   /** An Android test loop. */
-  var androidTestLoop: js.UndefOr[js.Any] = js.undefined
+  var androidTestLoop: js.UndefOr[scala.Any] = js.undefined
   
   /** Max time a test is allowed to run before it is automatically cancelled. */
   var testTimeout: js.UndefOr[Duration] = js.undefined
@@ -42,7 +42,7 @@ object AndroidTest {
     
     inline def setAndroidRoboTestUndefined: Self = StObject.set(x, "androidRoboTest", js.undefined)
     
-    inline def setAndroidTestLoop(value: js.Any): Self = StObject.set(x, "androidTestLoop", value.asInstanceOf[js.Any])
+    inline def setAndroidTestLoop(value: scala.Any): Self = StObject.set(x, "androidTestLoop", value.asInstanceOf[js.Any])
     
     inline def setAndroidTestLoopUndefined: Self = StObject.set(x, "androidTestLoop", js.undefined)
     

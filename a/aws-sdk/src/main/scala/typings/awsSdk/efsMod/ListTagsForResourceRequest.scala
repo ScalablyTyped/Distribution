@@ -12,7 +12,7 @@ trait ListTagsForResourceRequest extends StObject {
   var MaxResults: js.UndefOr[typings.awsSdk.efsMod.MaxResults] = js.undefined
   
   /**
-    * You can use NextToken in a subsequent request to fetch the next page of access point descriptions if the response payload was paginated.
+    * (Optional) You can use NextToken in a subsequent request to fetch the next page of access point descriptions if the response payload was paginated.
     */
   var NextToken: js.UndefOr[Token] = js.undefined
   

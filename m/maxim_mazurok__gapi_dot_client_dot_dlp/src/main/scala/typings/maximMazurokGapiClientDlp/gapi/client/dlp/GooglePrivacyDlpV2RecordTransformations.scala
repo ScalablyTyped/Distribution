@@ -25,12 +25,12 @@ object GooglePrivacyDlpV2RecordTransformations {
     
     inline def setFieldTransformationsUndefined: Self = StObject.set(x, "fieldTransformations", js.undefined)
     
-    inline def setFieldTransformationsVarargs(value: GooglePrivacyDlpV2FieldTransformation*): Self = StObject.set(x, "fieldTransformations", js.Array(value :_*))
+    inline def setFieldTransformationsVarargs(value: GooglePrivacyDlpV2FieldTransformation*): Self = StObject.set(x, "fieldTransformations", js.Array(value*))
     
     inline def setRecordSuppressions(value: js.Array[GooglePrivacyDlpV2RecordSuppression]): Self = StObject.set(x, "recordSuppressions", value.asInstanceOf[js.Any])
     
     inline def setRecordSuppressionsUndefined: Self = StObject.set(x, "recordSuppressions", js.undefined)
     
-    inline def setRecordSuppressionsVarargs(value: GooglePrivacyDlpV2RecordSuppression*): Self = StObject.set(x, "recordSuppressions", js.Array(value :_*))
+    inline def setRecordSuppressionsVarargs(value: GooglePrivacyDlpV2RecordSuppression*): Self = StObject.set(x, "recordSuppressions", js.Array(value*))
   }
 }

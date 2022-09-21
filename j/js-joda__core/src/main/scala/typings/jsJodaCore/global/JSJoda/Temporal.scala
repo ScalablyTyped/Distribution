@@ -1,0 +1,10 @@
+package typings.jsJodaCore.global.JSJoda
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@JSGlobal("JSJoda.Temporal")
+@js.native
+abstract class Temporal ()
+  extends typings.jsJodaCore.mod.Temporal

@@ -15,7 +15,7 @@ trait EventChannel extends StObject {
     /** 事件名称 */
   eventName: String,
     /** 事件参数 */
-  /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
+  /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: Any
   ): Unit
   
   /** [EventChannel.off(string eventName, function fn)](https://developers.weixin.qq.com/miniprogram/dev/api/route/EventChannel.off.html)
@@ -48,7 +48,7 @@ trait EventChannel extends StObject {
 object EventChannel {
   
   inline def apply(
-    emit: (String, js.Any) => Unit,
+    emit: (String, Any) => Unit,
     off: (String, EventCallback) => Unit,
     on: (String, EventCallback) => Unit,
     once: (String, EventCallback) => Unit
@@ -59,7 +59,7 @@ object EventChannel {
   
   extension [Self <: EventChannel](x: Self) {
     
-    inline def setEmit(value: (String, js.Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
+    inline def setEmit(value: (String, Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
     
     inline def setOff(value: (String, EventCallback) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
     

@@ -16,7 +16,7 @@ trait Source extends StObject {
     js.Array[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Source & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Source & TopLevel[Any]
     ]
   ] = js.undefined
   
@@ -24,7 +24,7 @@ trait Source extends StObject {
   var codec: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Source & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Source & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -46,7 +46,7 @@ trait Source extends StObject {
   var spec: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Source & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Source & TopLevel[Any]
   ] = js.undefined
 }
 object Source {
@@ -62,7 +62,7 @@ object Source {
       value: js.Array[
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Source & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Source & TopLevel[Any]
         ]
     ): Self = StObject.set(x, "baseSpecs", value.asInstanceOf[js.Any])
     
@@ -71,13 +71,13 @@ object Source {
     inline def setBaseSpecsVarargs(
       value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Source & TopLevel[js.Any])*
-    ): Self = StObject.set(x, "baseSpecs", js.Array(value :_*))
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Source & TopLevel[Any])*
+    ): Self = StObject.set(x, "baseSpecs", js.Array(value*))
     
     inline def setCodec(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Source & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Source & TopLevel[Any]
     ): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
     
     inline def setCodecUndefined: Self = StObject.set(x, "codec", js.undefined)
@@ -93,7 +93,7 @@ object Source {
     inline def setSpec(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Source & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Source & TopLevel[Any]
     ): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
     
     inline def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)

@@ -69,12 +69,12 @@ object DictionaryBuilder_ {
     
     inline def setTid_entries(value: js.Array[String]): Self = StObject.set(x, "tid_entries", value.asInstanceOf[js.Any])
     
-    inline def setTid_entriesVarargs(value: String*): Self = StObject.set(x, "tid_entries", js.Array(value :_*))
+    inline def setTid_entriesVarargs(value: String*): Self = StObject.set(x, "tid_entries", js.Array(value*))
     
     inline def setUnkDef(value: String => DictionaryBuilder_): Self = StObject.set(x, "unkDef", js.Any.fromFunction1(value))
     
     inline def setUnk_entries(value: js.Array[String]): Self = StObject.set(x, "unk_entries", value.asInstanceOf[js.Any])
     
-    inline def setUnk_entriesVarargs(value: String*): Self = StObject.set(x, "unk_entries", js.Array(value :_*))
+    inline def setUnk_entriesVarargs(value: String*): Self = StObject.set(x, "unk_entries", js.Array(value*))
   }
 }

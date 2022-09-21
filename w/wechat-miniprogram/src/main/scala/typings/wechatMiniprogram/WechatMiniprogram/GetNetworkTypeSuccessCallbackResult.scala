@@ -26,11 +26,18 @@ trait GetNetworkTypeSuccessCallbackResult extends StObject {
     * - 'unknown': Android 下不常见的网络类型;
     * - 'none': 无网络; */
   var networkType: wifi | `2g` | `3g` | `4g` | `5g` | unknown | none
+  
+  /** 信号强弱，单位 dbm */
+  var signalStrength: Double
 }
 object GetNetworkTypeSuccessCallbackResult {
   
-  inline def apply(errMsg: String, networkType: wifi | `2g` | `3g` | `4g` | `5g` | unknown | none): GetNetworkTypeSuccessCallbackResult = {
-    val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], networkType = networkType.asInstanceOf[js.Any])
+  inline def apply(
+    errMsg: String,
+    networkType: wifi | `2g` | `3g` | `4g` | `5g` | unknown | none,
+    signalStrength: Double
+  ): GetNetworkTypeSuccessCallbackResult = {
+    val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], networkType = networkType.asInstanceOf[js.Any], signalStrength = signalStrength.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetNetworkTypeSuccessCallbackResult]
   }
   
@@ -39,5 +46,7 @@ object GetNetworkTypeSuccessCallbackResult {
     inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
     inline def setNetworkType(value: wifi | `2g` | `3g` | `4g` | `5g` | unknown | none): Self = StObject.set(x, "networkType", value.asInstanceOf[js.Any])
+    
+    inline def setSignalStrength(value: Double): Self = StObject.set(x, "signalStrength", value.asInstanceOf[js.Any])
   }
 }

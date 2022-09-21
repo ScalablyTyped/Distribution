@@ -36,6 +36,11 @@ trait PlotGaugeDialOptions extends StObject {
   var borderWidth: js.UndefOr[Double] = js.undefined
   
   /**
+    * (Highcharts) An array with an SVG path for the custom dial.
+    */
+  var path: js.UndefOr[SVGPathArray] = js.undefined
+  
+  /**
     * (Highcharts) The radius or length of the dial, in percentages relative to
     * the radius of the gauge itself.
     */
@@ -81,6 +86,14 @@ object PlotGaugeDialOptions {
     inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
     inline def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
+    
+    inline def setPath(value: SVGPathArray): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    
+    inline def setPathVarargs(
+      value: (js.Array[SVGPathCommand] | (js.Tuple2[SVGPathCommand, Double]) | (js.Tuple3[SVGPathCommand, Double, Double]) | (js.Tuple5[SVGPathCommand, Double, Double, Double, Double]) | (js.Tuple7[SVGPathCommand, Double, Double, Double, Double, Double, Double]) | (js.Tuple8[SVGPathCommand, Double, Double, Double, Double, Double, Double, Double]))*
+    ): Self = StObject.set(x, "path", js.Array(value*))
     
     inline def setRadius(value: String): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,7 @@ object Subscription {
       
       inline def setCancellation_datesUndefined: Self = StObject.set(x, "cancellation_dates", js.undefined)
       
-      inline def setCancellation_datesVarargs(value: String*): Self = StObject.set(x, "cancellation_dates", js.Array(value :_*))
+      inline def setCancellation_datesVarargs(value: String*): Self = StObject.set(x, "cancellation_dates", js.Array(value*))
       
       inline def setCancelled_at(value: String): Self = StObject.set(x, "cancelled_at", value.asInstanceOf[js.Any])
       
@@ -76,7 +76,7 @@ object Subscription {
       
       inline def setCancellation_dates(value: Strings): Self = StObject.set(x, "cancellation_dates", value.asInstanceOf[js.Any])
       
-      inline def setCancellation_datesVarargs(value: String*): Self = StObject.set(x, "cancellation_dates", js.Array(value :_*))
+      inline def setCancellation_datesVarargs(value: String*): Self = StObject.set(x, "cancellation_dates", js.Array(value*))
       
       inline def setCustomer_uuid(value: String): Self = StObject.set(x, "customer_uuid", value.asInstanceOf[js.Any])
       
@@ -113,7 +113,7 @@ object Subscription {
       
       inline def setSubscriptions(value: js.Array[typings.chartmogulNode.mod.Subscription.Subscription]): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
       
-      inline def setSubscriptionsVarargs(value: typings.chartmogulNode.mod.Subscription.Subscription*): Self = StObject.set(x, "subscriptions", js.Array(value :_*))
+      inline def setSubscriptionsVarargs(value: typings.chartmogulNode.mod.Subscription.Subscription*): Self = StObject.set(x, "subscriptions", js.Array(value*))
     }
   }
 }

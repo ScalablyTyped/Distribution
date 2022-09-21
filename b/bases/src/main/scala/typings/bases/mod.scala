@@ -12,8 +12,8 @@ object mod {
   
   @JSImport("bases", "KNOWN_ALPHABETS")
   @js.native
-  def KNOWN_ALPHABETS: js.Any = js.native
-  inline def KNOWN_ALPHABETS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KNOWN_ALPHABETS")(x.asInstanceOf[js.Any])
+  def KNOWN_ALPHABETS: Any = js.native
+  inline def KNOWN_ALPHABETS_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KNOWN_ALPHABETS")(x.asInstanceOf[js.Any])
   
   @JSImport("bases", "LETTERS_LOWERCASE")
   @js.native

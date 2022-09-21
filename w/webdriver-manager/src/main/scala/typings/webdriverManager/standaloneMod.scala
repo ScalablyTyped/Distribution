@@ -10,7 +10,7 @@ object standaloneMod {
   
   @JSImport("webdriver-manager/built/lib/binaries/standalone", "Standalone")
   @js.native
-  class Standalone () extends Binary {
+  open class Standalone () extends Binary {
     def this(opt_alternativeCdn: String) = this()
   }
   /* static members */

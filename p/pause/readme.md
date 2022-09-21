@@ -10,10 +10,10 @@ Pause a stream's data events
 | ------------------ | :-------------: |
 | Full name          | pause |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 45 |
-| # downloads        | 49072948 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6468303.0 |
+| # stars            | 26.0 |
 
 ## Links
 - [Homepage](https://github.com/stream-utils/pause)

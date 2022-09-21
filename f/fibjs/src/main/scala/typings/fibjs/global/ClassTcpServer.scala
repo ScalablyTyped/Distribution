@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Class_TcpServer")
 @js.native
-class ClassTcpServer protected ()
+open class ClassTcpServer protected ()
   extends StObject
      with typings.fibjs.ClassTcpServer {
   /**

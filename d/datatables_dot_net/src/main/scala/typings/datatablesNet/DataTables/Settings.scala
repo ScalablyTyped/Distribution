@@ -44,7 +44,7 @@ trait Settings extends StObject {
   /**
     * Data to use as the display data for the table. Since: 1.10
     */
-  var data: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var data: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Delay the loading of server-side data until second draw
@@ -203,7 +203,7 @@ trait Settings extends StObject {
   /**
     * Data property name that DataTables will use to set <tr> element DOM IDs. Since: 1.10.8
     */
-  var rowId: js.UndefOr[String] = js.undefined
+  var rowId: js.UndefOr[String | (js.Function1[/* data */ Any, String])] = js.undefined
   
   /**
     * Allow the table to reduce in height when a limited number of rows are shown. Since: 1.10
@@ -307,7 +307,7 @@ object Settings {
     inline def setAjax(value: String | AjaxSettings | FunctionAjax): Self = StObject.set(x, "ajax", value.asInstanceOf[js.Any])
     
     inline def setAjaxFunction3(
-      value: (/* data */ js.Object, /* callback */ js.Function1[/* data */ js.Any, Unit], /* settings */ SettingsLegacy) => Unit
+      value: (/* data */ js.Object, /* callback */ js.Function1[/* data */ Any, Unit], /* settings */ SettingsLegacy) => Unit
     ): Self = StObject.set(x, "ajax", js.Any.fromFunction3(value))
     
     inline def setAjaxUndefined: Self = StObject.set(x, "ajax", js.undefined)
@@ -320,29 +320,31 @@ object Settings {
     
     inline def setColumnDefsUndefined: Self = StObject.set(x, "columnDefs", js.undefined)
     
-    inline def setColumnDefsVarargs(value: ColumnDefsSettings*): Self = StObject.set(x, "columnDefs", js.Array(value :_*))
+    inline def setColumnDefsVarargs(value: ColumnDefsSettings*): Self = StObject.set(x, "columnDefs", js.Array(value*))
     
     inline def setColumns(value: js.Array[ColumnSettings]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    inline def setColumnsVarargs(value: ColumnSettings*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: ColumnSettings*): Self = StObject.set(x, "columns", js.Array(value*))
     
-    inline def setCreatedRow(value: (/* row */ Node, /* data */ js.Array[js.Any] | js.Object, /* dataIndex */ Double) => Unit): Self = StObject.set(x, "createdRow", js.Any.fromFunction3(value))
+    inline def setCreatedRow(
+      value: (/* row */ Node, /* data */ js.Array[Any] | js.Object, /* dataIndex */ Double, /* cells */ js.Array[Node]) => Unit
+    ): Self = StObject.set(x, "createdRow", js.Any.fromFunction4(value))
     
     inline def setCreatedRowUndefined: Self = StObject.set(x, "createdRow", js.undefined)
     
-    inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setDeferLoading(value: Double | js.Array[Double]): Self = StObject.set(x, "deferLoading", value.asInstanceOf[js.Any])
     
     inline def setDeferLoadingUndefined: Self = StObject.set(x, "deferLoading", js.undefined)
     
-    inline def setDeferLoadingVarargs(value: Double*): Self = StObject.set(x, "deferLoading", js.Array(value :_*))
+    inline def setDeferLoadingVarargs(value: Double*): Self = StObject.set(x, "deferLoading", js.Array(value*))
     
     inline def setDeferRender(value: Boolean): Self = StObject.set(x, "deferRender", value.asInstanceOf[js.Any])
     
@@ -365,7 +367,7 @@ object Settings {
     inline def setDrawCallbackUndefined: Self = StObject.set(x, "drawCallback", js.undefined)
     
     inline def setFooterCallback(
-      value: (/* tfoot */ Node, /* data */ js.Array[js.Any], /* start */ Double, /* end */ Double, /* display */ js.Array[js.Any]) => Unit
+      value: (/* tfoot */ Node, /* data */ js.Array[Any], /* start */ Double, /* end */ Double, /* display */ js.Array[Any]) => Unit
     ): Self = StObject.set(x, "footerCallback", js.Any.fromFunction5(value))
     
     inline def setFooterCallbackUndefined: Self = StObject.set(x, "footerCallback", js.undefined)
@@ -375,7 +377,7 @@ object Settings {
     inline def setFormatNumberUndefined: Self = StObject.set(x, "formatNumber", js.undefined)
     
     inline def setHeaderCallback(
-      value: (/* thead */ Node, /* data */ js.Array[js.Any], /* start */ Double, /* end */ Double, /* display */ js.Array[js.Any]) => Unit
+      value: (/* thead */ Node, /* data */ js.Array[Any], /* start */ Double, /* end */ Double, /* display */ js.Array[Any]) => Unit
     ): Self = StObject.set(x, "headerCallback", js.Any.fromFunction5(value))
     
     inline def setHeaderCallbackUndefined: Self = StObject.set(x, "headerCallback", js.undefined)
@@ -410,7 +412,7 @@ object Settings {
     
     inline def setLengthMenuUndefined: Self = StObject.set(x, "lengthMenu", js.undefined)
     
-    inline def setLengthMenuVarargs(value: ((js.Array[Double | String]) | Double | String)*): Self = StObject.set(x, "lengthMenu", js.Array(value :_*))
+    inline def setLengthMenuVarargs(value: ((js.Array[Double | String]) | Double | String)*): Self = StObject.set(x, "lengthMenu", js.Array(value*))
     
     inline def setOrder(value: js.Array[(js.Array[Double | String]) | Double | String]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
@@ -426,7 +428,7 @@ object Settings {
     
     inline def setOrderFixedUndefined: Self = StObject.set(x, "orderFixed", js.undefined)
     
-    inline def setOrderFixedVarargs(value: ((js.Array[Double | String]) | Double | String)*): Self = StObject.set(x, "orderFixed", js.Array(value :_*))
+    inline def setOrderFixedVarargs(value: ((js.Array[Double | String]) | Double | String)*): Self = StObject.set(x, "orderFixed", js.Array(value*))
     
     inline def setOrderMulti(value: Boolean): Self = StObject.set(x, "orderMulti", value.asInstanceOf[js.Any])
     
@@ -434,7 +436,7 @@ object Settings {
     
     inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
-    inline def setOrderVarargs(value: ((js.Array[Double | String]) | Double | String)*): Self = StObject.set(x, "order", js.Array(value :_*))
+    inline def setOrderVarargs(value: ((js.Array[Double | String]) | Double | String)*): Self = StObject.set(x, "order", js.Array(value*))
     
     inline def setOrdering(value: Boolean): Self = StObject.set(x, "ordering", value.asInstanceOf[js.Any])
     
@@ -472,11 +474,13 @@ object Settings {
     
     inline def setRetrieveUndefined: Self = StObject.set(x, "retrieve", js.undefined)
     
-    inline def setRowCallback(value: (/* row */ Node, /* data */ js.Array[js.Any] | js.Object, /* index */ Double) => Unit): Self = StObject.set(x, "rowCallback", js.Any.fromFunction3(value))
+    inline def setRowCallback(value: (/* row */ Node, /* data */ js.Array[Any] | js.Object, /* index */ Double) => Unit): Self = StObject.set(x, "rowCallback", js.Any.fromFunction3(value))
     
     inline def setRowCallbackUndefined: Self = StObject.set(x, "rowCallback", js.undefined)
     
-    inline def setRowId(value: String): Self = StObject.set(x, "rowId", value.asInstanceOf[js.Any])
+    inline def setRowId(value: String | (js.Function1[/* data */ Any, String])): Self = StObject.set(x, "rowId", value.asInstanceOf[js.Any])
+    
+    inline def setRowIdFunction1(value: /* data */ Any => String): Self = StObject.set(x, "rowId", js.Any.fromFunction1(value))
     
     inline def setRowIdUndefined: Self = StObject.set(x, "rowId", js.undefined)
     
@@ -498,7 +502,7 @@ object Settings {
     
     inline def setSearchColsUndefined: Self = StObject.set(x, "searchCols", js.undefined)
     
-    inline def setSearchColsVarargs(value: SearchSettings*): Self = StObject.set(x, "searchCols", js.Array(value :_*))
+    inline def setSearchColsVarargs(value: SearchSettings*): Self = StObject.set(x, "searchCols", js.Array(value*))
     
     inline def setSearchDelay(value: Double): Self = StObject.set(x, "searchDelay", value.asInstanceOf[js.Any])
     
@@ -550,7 +554,7 @@ object Settings {
     
     inline def setStripeClassesUndefined: Self = StObject.set(x, "stripeClasses", js.undefined)
     
-    inline def setStripeClassesVarargs(value: String*): Self = StObject.set(x, "stripeClasses", js.Array(value :_*))
+    inline def setStripeClassesVarargs(value: String*): Self = StObject.set(x, "stripeClasses", js.Array(value*))
     
     inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
     

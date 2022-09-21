@@ -18,6 +18,11 @@ trait RefactorActionInfo extends StObject {
   var description: java.lang.String
   
   /**
+    * The hierarchical dotted name of the refactor action.
+    */
+  var kind: js.UndefOr[java.lang.String] = js.undefined
+  
+  /**
     * The programmatic name of the refactoring action
     */
   var name: java.lang.String
@@ -38,6 +43,10 @@ object RefactorActionInfo {
   extension [Self <: RefactorActionInfo](x: Self) {
     
     inline def setDescription(value: java.lang.String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setKind(value: java.lang.String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -22,10 +22,10 @@ trait Dialog extends StObject {
   
   def Execute(): Unit = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def Show(): Double = js.native
-  def Show(TimeOut: js.Any): Double = js.native
+  def Show(TimeOut: Any): Double = js.native
   
   val Type: WdWordDialog = js.native
   

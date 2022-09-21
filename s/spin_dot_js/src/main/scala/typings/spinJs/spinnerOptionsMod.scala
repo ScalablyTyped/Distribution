@@ -121,7 +121,7 @@ object spinnerOptionsMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setColorVarargs(value: String*): Self = StObject.set(x, "color", js.Array(value :_*))
+      inline def setColorVarargs(value: String*): Self = StObject.set(x, "color", js.Array(value*))
       
       inline def setCorners(value: Double): Self = StObject.set(x, "corners", value.asInstanceOf[js.Any])
       
@@ -135,7 +135,7 @@ object spinnerOptionsMod {
       
       inline def setFadeColorUndefined: Self = StObject.set(x, "fadeColor", js.undefined)
       
-      inline def setFadeColorVarargs(value: String*): Self = StObject.set(x, "fadeColor", js.Array(value :_*))
+      inline def setFadeColorVarargs(value: String*): Self = StObject.set(x, "fadeColor", js.Array(value*))
       
       inline def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       

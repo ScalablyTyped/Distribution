@@ -2,23 +2,22 @@ package typings.atomically
 
 import typings.atomically.anon.Gid
 import typings.atomically.atomicallyBooleans.`false`
-import typings.node.Buffer
-import typings.node.NodeJS.ErrnoException
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  type Callback = js.Function1[/* error */ Exception | Unit, js.Any]
+  type Callback = js.Function1[/* error */ Exception | Unit, Any]
   
   type Data = js.UndefOr[Buffer | String]
   
   type Disposer = js.Function0[Unit]
   
-  type Exception = ErrnoException
+  type Exception = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
   
-  type FN[Arguments /* <: js.Array[js.Any] */, Return] = js.Function1[/* args */ Arguments, Return]
+  type FN[Arguments /* <: js.Array[Any] */, Return] = js.Function1[/* args */ Arguments, Return]
   
   type Path = String
   
@@ -73,7 +72,7 @@ object typesMod {
     
     var tmpCreate: js.UndefOr[js.Function1[/* filePath */ String, String]] = js.undefined
     
-    var tmpCreated: js.UndefOr[js.Function1[/* filePath */ String, js.Any]] = js.undefined
+    var tmpCreated: js.UndefOr[js.Function1[/* filePath */ String, Any]] = js.undefined
     
     var tmpPurge: js.UndefOr[Boolean] = js.undefined
   }
@@ -120,7 +119,7 @@ object typesMod {
       
       inline def setTmpCreateUndefined: Self = StObject.set(x, "tmpCreate", js.undefined)
       
-      inline def setTmpCreated(value: /* filePath */ String => js.Any): Self = StObject.set(x, "tmpCreated", js.Any.fromFunction1(value))
+      inline def setTmpCreated(value: /* filePath */ String => Any): Self = StObject.set(x, "tmpCreated", js.Any.fromFunction1(value))
       
       inline def setTmpCreatedUndefined: Self = StObject.set(x, "tmpCreated", js.undefined)
       

@@ -115,7 +115,7 @@ object LayerIds {
     
     inline def setLayerIdsUndefined: Self = StObject.set(x, "layerIds", js.undefined)
     
-    inline def setLayerIdsVarargs(value: String*): Self = StObject.set(x, "layerIds", js.Array(value :_*))
+    inline def setLayerIdsVarargs(value: String*): Self = StObject.set(x, "layerIds", js.Array(value*))
     
     inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

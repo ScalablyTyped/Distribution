@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Scripting {
   
-  // tslint:disable-next-line:no-const-enum
+  // eslint-disable-next-line no-const-enum
   /* Rewritten from type alias, can be one of: 
     - typings.activexScripting.activexScriptingNumbers.`0`
     - typings.activexScripting.activexScriptingNumbers.`2`
@@ -56,7 +56,7 @@ object Scripting {
     /** Determine if a given key is in the dictionary. */
     def Exists(Key: TKey): Boolean = js.native
     
-    def HashVal(Key: TKey): js.Any = js.native
+    def HashVal(Key: TKey): Any = js.native
     
     /** Set or get the item for a given key */
     def Item(Key: TKey): TItem = js.native
@@ -171,7 +171,7 @@ object Scripting {
     }
   }
   
-  // tslint:disable-next-line:no-const-enum
+  // eslint-disable-next-line no-const-enum
   /* Rewritten from type alias, can be one of: 
     - typings.activexScripting.activexScriptingNumbers.`4`
     - typings.activexScripting.activexScriptingNumbers.`2`
@@ -292,7 +292,7 @@ object Scripting {
     val Type: String = js.native
   }
   
-  // tslint:disable-next-line:no-const-enum
+  // eslint-disable-next-line no-const-enum
   /* Rewritten from type alias, can be one of: 
     - typings.activexScripting.activexScriptingNumbers.`1024`
     - typings.activexScripting.activexScriptingNumbers.`32`
@@ -577,7 +577,7 @@ object Scripting {
     def Item(Key: String): Folder = js.native
   }
   
-  // tslint:disable-next-line:no-const-enum
+  // eslint-disable-next-line no-const-enum
   /* Rewritten from type alias, can be one of: 
     - typings.activexScripting.activexScriptingNumbers.`8`
     - typings.activexScripting.activexScriptingNumbers.`1`
@@ -593,7 +593,7 @@ object Scripting {
     inline def ForWriting: `2` = 2.asInstanceOf[`2`]
   }
   
-  // tslint:disable-next-line:no-const-enum
+  // eslint-disable-next-line no-const-enum
   /* Rewritten from type alias, can be one of: 
     - typings.activexScripting.activexScriptingNumbers.`1`
     - typings.activexScripting.activexScriptingNumbers.`2`
@@ -609,7 +609,7 @@ object Scripting {
     inline def WindowsFolder: `0` = 0.asInstanceOf[`0`]
   }
   
-  // tslint:disable-next-line:no-const-enum
+  // eslint-disable-next-line no-const-enum
   /* Rewritten from type alias, can be one of: 
     - typings.activexScripting.activexScriptingNumbers.`2`
     - typings.activexScripting.activexScriptingNumbers.`0`
@@ -676,7 +676,7 @@ object Scripting {
     def WriteLine(Text: String): Unit = js.native
   }
   
-  // tslint:disable-next-line:no-const-enum
+  // eslint-disable-next-line no-const-enum
   /* Rewritten from type alias, can be one of: 
     - typings.activexScripting.activexScriptingNumbers.`0`
     - typings.activexScripting.activexScriptingNumbers.`-2`

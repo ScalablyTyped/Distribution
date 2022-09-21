@@ -11,9 +11,9 @@ HTTP content negotiation
 | Full name          | negotiator |
 | Keywords           | http, content negotiation, accept, accept-language, accept-encoding, accept-charset |
 | # releases         | 2 |
-| # dependents       | 245 |
-| # downloads        | 739615168 |
-| # stars            | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 1.1190310966666667E8 |
+| # stars            | 218.0 |
 
 ## Links
 - [Homepage](https://github.com/jshttp/negotiator#readme)

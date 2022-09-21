@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "mali" : "0.21.0"
+      "mali" : "0.47.1"
     }
   ],
   "test-dependencies" : [
     {
-      "mali" : "0.21.0"
+      "mali" : "0.47.1"
     }
   ],
   "compile-devDependencies" : [

@@ -10,10 +10,10 @@ Port of YUI CSS Compressor to NodeJS
 | ------------------ | :-------------: |
 | Full name          | uglifycss |
 | Keywords           | css, stylesheet, uglify, minify |
-| # releases         | 1 |
-| # dependents       | 171 |
-| # downloads        | 2716460 |
-| # stars            | 13 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 243570.33333333334 |
+| # stars            | 266.0 |
 
 ## Links
 - [Homepage](https://github.com/fmarcia/uglifycss)

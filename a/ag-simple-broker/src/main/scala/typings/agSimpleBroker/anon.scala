@@ -6,23 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait Error extends StObject {
-    
-    var error: typings.std.Error
-  }
-  object Error {
-    
-    inline def apply(error: typings.std.Error): Error = {
-      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Error]
-    }
-    
-    extension [Self <: Error](x: Self) {
-      
-      inline def setError(value: typings.std.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
-    }
-  }
-  
   trait Id extends StObject {
     
     var id: String

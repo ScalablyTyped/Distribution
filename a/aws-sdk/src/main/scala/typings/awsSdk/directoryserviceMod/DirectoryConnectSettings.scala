@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DirectoryConnectSettings extends StObject {
   
   /**
-    * A list of one or more IP addresses of DNS servers or domain controllers in the on-premises directory.
+    * A list of one or more IP addresses of DNS servers or domain controllers in your self-managed directory.
     */
   var CustomerDnsIps: DnsIpAddrs
   
   /**
-    * The user name of an account in the on-premises directory that is used to connect to the directory. This account must have the following permissions:   Read users and groups   Create computer objects   Join computers to the domain  
+    * The user name of an account in your self-managed directory that is used to connect to the directory. This account must have the following permissions:   Read users and groups   Create computer objects   Join computers to the domain  
     */
   var CustomerUserName: UserName
   
@@ -37,13 +37,13 @@ object DirectoryConnectSettings {
     
     inline def setCustomerDnsIps(value: DnsIpAddrs): Self = StObject.set(x, "CustomerDnsIps", value.asInstanceOf[js.Any])
     
-    inline def setCustomerDnsIpsVarargs(value: IpAddr*): Self = StObject.set(x, "CustomerDnsIps", js.Array(value :_*))
+    inline def setCustomerDnsIpsVarargs(value: IpAddr*): Self = StObject.set(x, "CustomerDnsIps", js.Array(value*))
     
     inline def setCustomerUserName(value: UserName): Self = StObject.set(x, "CustomerUserName", value.asInstanceOf[js.Any])
     
     inline def setSubnetIds(value: SubnetIds): Self = StObject.set(x, "SubnetIds", value.asInstanceOf[js.Any])
     
-    inline def setSubnetIdsVarargs(value: SubnetId*): Self = StObject.set(x, "SubnetIds", js.Array(value :_*))
+    inline def setSubnetIdsVarargs(value: SubnetId*): Self = StObject.set(x, "SubnetIds", js.Array(value*))
     
     inline def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
   }

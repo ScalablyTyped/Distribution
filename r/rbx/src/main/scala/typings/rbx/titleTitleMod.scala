@@ -65,7 +65,7 @@ object titleTitleMod {
   
   @JSImport("rbx/elements/title/title", "Title")
   @js.native
-  val Title: ForwardRefAsExoticComponent[TitleProps, ElementType[js.Any]] = js.native
+  val Title: ForwardRefAsExoticComponent[TitleProps, ElementType[Any]] = js.native
   
   trait TitleModifierProps extends StObject {
     

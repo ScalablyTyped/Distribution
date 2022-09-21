@@ -40,6 +40,20 @@ trait DataExchange extends Service {
   ): Request[CreateDataSetResponse, AWSError] = js.native
   
   /**
+    * This operation creates an event action.
+    */
+  def createEventAction(): Request[CreateEventActionResponse, AWSError] = js.native
+  def createEventAction(callback: js.Function2[/* err */ AWSError, /* data */ CreateEventActionResponse, Unit]): Request[CreateEventActionResponse, AWSError] = js.native
+  /**
+    * This operation creates an event action.
+    */
+  def createEventAction(params: CreateEventActionRequest): Request[CreateEventActionResponse, AWSError] = js.native
+  def createEventAction(
+    params: CreateEventActionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateEventActionResponse, Unit]
+  ): Request[CreateEventActionResponse, AWSError] = js.native
+  
+  /**
     * This operation creates a job.
     */
   def createJob(): Request[CreateJobResponse, AWSError] = js.native
@@ -93,6 +107,20 @@ trait DataExchange extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
+    * This operation deletes the event action.
+    */
+  def deleteEventAction(): Request[js.Object, AWSError] = js.native
+  def deleteEventAction(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * This operation deletes the event action.
+    */
+  def deleteEventAction(params: DeleteEventActionRequest): Request[js.Object, AWSError] = js.native
+  def deleteEventAction(
+    params: DeleteEventActionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
     * This operation deletes a revision.
     */
   def deleteRevision(): Request[js.Object, AWSError] = js.native
@@ -133,6 +161,20 @@ trait DataExchange extends Service {
     params: GetDataSetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetDataSetResponse, Unit]
   ): Request[GetDataSetResponse, AWSError] = js.native
+  
+  /**
+    * This operation retrieves information about an event action.
+    */
+  def getEventAction(): Request[GetEventActionResponse, AWSError] = js.native
+  def getEventAction(callback: js.Function2[/* err */ AWSError, /* data */ GetEventActionResponse, Unit]): Request[GetEventActionResponse, AWSError] = js.native
+  /**
+    * This operation retrieves information about an event action.
+    */
+  def getEventAction(params: GetEventActionRequest): Request[GetEventActionResponse, AWSError] = js.native
+  def getEventAction(
+    params: GetEventActionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetEventActionResponse, Unit]
+  ): Request[GetEventActionResponse, AWSError] = js.native
   
   /**
     * This operation returns information about a job.
@@ -188,6 +230,20 @@ trait DataExchange extends Service {
   ): Request[ListDataSetsResponse, AWSError] = js.native
   
   /**
+    * This operation lists your event actions.
+    */
+  def listEventActions(): Request[ListEventActionsResponse, AWSError] = js.native
+  def listEventActions(callback: js.Function2[/* err */ AWSError, /* data */ ListEventActionsResponse, Unit]): Request[ListEventActionsResponse, AWSError] = js.native
+  /**
+    * This operation lists your event actions.
+    */
+  def listEventActions(params: ListEventActionsRequest): Request[ListEventActionsResponse, AWSError] = js.native
+  def listEventActions(
+    params: ListEventActionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListEventActionsResponse, Unit]
+  ): Request[ListEventActionsResponse, AWSError] = js.native
+  
+  /**
     * This operation lists your jobs sorted by CreatedAt in descending order.
     */
   def listJobs(): Request[ListJobsResponse, AWSError] = js.native
@@ -228,6 +284,34 @@ trait DataExchange extends Service {
     params: ListTagsForResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  
+  /**
+    * This operation revokes subscribers' access to a revision.
+    */
+  def revokeRevision(): Request[RevokeRevisionResponse, AWSError] = js.native
+  def revokeRevision(callback: js.Function2[/* err */ AWSError, /* data */ RevokeRevisionResponse, Unit]): Request[RevokeRevisionResponse, AWSError] = js.native
+  /**
+    * This operation revokes subscribers' access to a revision.
+    */
+  def revokeRevision(params: RevokeRevisionRequest): Request[RevokeRevisionResponse, AWSError] = js.native
+  def revokeRevision(
+    params: RevokeRevisionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RevokeRevisionResponse, Unit]
+  ): Request[RevokeRevisionResponse, AWSError] = js.native
+  
+  /**
+    * This operation invokes an API Gateway API asset. The request is proxied to the provider’s API Gateway API.
+    */
+  def sendApiAsset(): Request[SendApiAssetResponse, AWSError] = js.native
+  def sendApiAsset(callback: js.Function2[/* err */ AWSError, /* data */ SendApiAssetResponse, Unit]): Request[SendApiAssetResponse, AWSError] = js.native
+  /**
+    * This operation invokes an API Gateway API asset. The request is proxied to the provider’s API Gateway API.
+    */
+  def sendApiAsset(params: SendApiAssetRequest): Request[SendApiAssetResponse, AWSError] = js.native
+  def sendApiAsset(
+    params: SendApiAssetRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ SendApiAssetResponse, Unit]
+  ): Request[SendApiAssetResponse, AWSError] = js.native
   
   /**
     * This operation starts a job.
@@ -295,6 +379,20 @@ trait DataExchange extends Service {
     params: UpdateDataSetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateDataSetResponse, Unit]
   ): Request[UpdateDataSetResponse, AWSError] = js.native
+  
+  /**
+    * This operation updates the event action.
+    */
+  def updateEventAction(): Request[UpdateEventActionResponse, AWSError] = js.native
+  def updateEventAction(callback: js.Function2[/* err */ AWSError, /* data */ UpdateEventActionResponse, Unit]): Request[UpdateEventActionResponse, AWSError] = js.native
+  /**
+    * This operation updates the event action.
+    */
+  def updateEventAction(params: UpdateEventActionRequest): Request[UpdateEventActionResponse, AWSError] = js.native
+  def updateEventAction(
+    params: UpdateEventActionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateEventActionResponse, Unit]
+  ): Request[UpdateEventActionResponse, AWSError] = js.native
   
   /**
     * This operation updates a revision.

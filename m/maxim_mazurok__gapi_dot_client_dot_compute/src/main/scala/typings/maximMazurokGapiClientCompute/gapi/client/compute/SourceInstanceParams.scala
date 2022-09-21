@@ -25,6 +25,6 @@ object SourceInstanceParams {
     
     inline def setDiskConfigsUndefined: Self = StObject.set(x, "diskConfigs", js.undefined)
     
-    inline def setDiskConfigsVarargs(value: DiskInstantiationConfig*): Self = StObject.set(x, "diskConfigs", js.Array(value :_*))
+    inline def setDiskConfigsVarargs(value: DiskInstantiationConfig*): Self = StObject.set(x, "diskConfigs", js.Array(value*))
   }
 }

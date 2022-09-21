@@ -13,31 +13,41 @@ trait CampaignIds extends StObject {
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.undefined
   
-  /** Select only placement groups that belong to these advertisers. */
+  /** Select only placements with these active statuses. */
+  var activeStatus: js.UndefOr[String | js.Array[String]] = js.undefined
+  
+  /** Select only placements that belong to these advertisers. */
   var advertiserIds: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /** Data format for response. */
   var alt: js.UndefOr[String] = js.undefined
   
-  /** Select only archived placements. Don't set this field to select both archived and non-archived placements. */
-  var archived: js.UndefOr[Boolean] = js.undefined
-  
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
-  /** Select only placement groups that belong to these campaigns. */
+  /** Select only placements that belong to these campaigns. */
   var campaignIds: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  /** Select only placement groups that are associated with these content categories. */
+  /**
+    * Select only placements that are associated with these compatibilities. DISPLAY and DISPLAY_INTERSTITIAL refer to rendering either on desktop or on mobile devices for regular or
+    * interstitial ads respectively. APP and APP_INTERSTITIAL are for rendering in mobile apps. IN_STREAM_VIDEO refers to rendering in in-stream video ads developed with the VAST
+    * standard.
+    */
+  var compatibilities: js.UndefOr[String | js.Array[String]] = js.undefined
+  
+  /** Select only placements that are associated with these content categories. */
   var contentCategoryIds: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  /** Select only placement groups that are associated with these directory sites. */
+  /** Select only placements that are associated with these directory sites. */
   var directorySiteIds: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
-  /** Select only placement groups with these IDs. */
+  /** Select only placements that belong to these placement groups. */
+  var groupIds: js.UndefOr[String | js.Array[String]] = js.undefined
+  
+  /** Select only placements with these IDs. */
   var ids: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
@@ -64,20 +74,16 @@ trait CampaignIds extends StObject {
   /** Value of the nextPageToken from the previous result page. */
   var pageToken: js.UndefOr[String] = js.undefined
   
-  /**
-    * Select only placement groups belonging with this group type. A package is a simple group of placements that acts as a single pricing point for a group of tags. A roadblock is a
-    * group of placements that not only acts as a single pricing point but also assumes that all the tags in it will be served at the same time. A roadblock requires one of its
-    * assigned placements to be marked as primary for reporting.
-    */
-  var placementGroupType: js.UndefOr[String] = js.undefined
+  /** Select only placements with this payment source. */
+  var paymentSource: js.UndefOr[String] = js.undefined
   
-  /** Select only placement groups that are associated with these placement strategies. */
+  /** Select only placements that are associated with these placement strategies. */
   var placementStrategyIds: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
-  /** Select only placement groups with these pricing types. */
+  /** Select only placements with these pricing types. */
   var pricingTypes: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /** User profile ID associated with this request. */
@@ -87,14 +93,17 @@ trait CampaignIds extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /**
-    * Allows searching for placement groups by name or ID. Wildcards (*) are allowed. For example, "placement*2015" will return placement groups with names like "placement group June
-    * 2015", "placement group May 2015", or simply "placements 2015". Most of the searches also add wildcards implicitly at the start and the end of the search string. For example, a
-    * search string of "placementgroup" will match placement groups with name "my placementgroup", "placementgroup 2015", or simply "placementgroup".
+    * Allows searching for placements by name or ID. Wildcards (*) are allowed. For example, "placement*2015" will return placements with names like "placement June 2015", "placement
+    * May 2015", or simply "placements 2015". Most of the searches also add wildcards implicitly at the start and the end of the search string. For example, a search string of
+    * "placement" will match placements with name "my placement", "placement 2015", or simply "placement" .
     */
   var searchString: js.UndefOr[String] = js.undefined
   
-  /** Select only placement groups that are associated with these sites. */
+  /** Select only placements that are associated with these sites. */
   var siteIds: js.UndefOr[String | js.Array[String]] = js.undefined
+  
+  /** Select only placements that are associated with these sizes. */
+  var sizeIds: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /** Field by which to sort the list. */
   var sortField: js.UndefOr[String] = js.undefined
@@ -125,19 +134,21 @@ object CampaignIds {
     
     inline def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
     
+    inline def setActiveStatus(value: String | js.Array[String]): Self = StObject.set(x, "activeStatus", value.asInstanceOf[js.Any])
+    
+    inline def setActiveStatusUndefined: Self = StObject.set(x, "activeStatus", js.undefined)
+    
+    inline def setActiveStatusVarargs(value: String*): Self = StObject.set(x, "activeStatus", js.Array(value*))
+    
     inline def setAdvertiserIds(value: String | js.Array[String]): Self = StObject.set(x, "advertiserIds", value.asInstanceOf[js.Any])
     
     inline def setAdvertiserIdsUndefined: Self = StObject.set(x, "advertiserIds", js.undefined)
     
-    inline def setAdvertiserIdsVarargs(value: String*): Self = StObject.set(x, "advertiserIds", js.Array(value :_*))
+    inline def setAdvertiserIdsVarargs(value: String*): Self = StObject.set(x, "advertiserIds", js.Array(value*))
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
     inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
-    
-    inline def setArchived(value: Boolean): Self = StObject.set(x, "archived", value.asInstanceOf[js.Any])
-    
-    inline def setArchivedUndefined: Self = StObject.set(x, "archived", js.undefined)
     
     inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
@@ -147,29 +158,41 @@ object CampaignIds {
     
     inline def setCampaignIdsUndefined: Self = StObject.set(x, "campaignIds", js.undefined)
     
-    inline def setCampaignIdsVarargs(value: String*): Self = StObject.set(x, "campaignIds", js.Array(value :_*))
+    inline def setCampaignIdsVarargs(value: String*): Self = StObject.set(x, "campaignIds", js.Array(value*))
+    
+    inline def setCompatibilities(value: String | js.Array[String]): Self = StObject.set(x, "compatibilities", value.asInstanceOf[js.Any])
+    
+    inline def setCompatibilitiesUndefined: Self = StObject.set(x, "compatibilities", js.undefined)
+    
+    inline def setCompatibilitiesVarargs(value: String*): Self = StObject.set(x, "compatibilities", js.Array(value*))
     
     inline def setContentCategoryIds(value: String | js.Array[String]): Self = StObject.set(x, "contentCategoryIds", value.asInstanceOf[js.Any])
     
     inline def setContentCategoryIdsUndefined: Self = StObject.set(x, "contentCategoryIds", js.undefined)
     
-    inline def setContentCategoryIdsVarargs(value: String*): Self = StObject.set(x, "contentCategoryIds", js.Array(value :_*))
+    inline def setContentCategoryIdsVarargs(value: String*): Self = StObject.set(x, "contentCategoryIds", js.Array(value*))
     
     inline def setDirectorySiteIds(value: String | js.Array[String]): Self = StObject.set(x, "directorySiteIds", value.asInstanceOf[js.Any])
     
     inline def setDirectorySiteIdsUndefined: Self = StObject.set(x, "directorySiteIds", js.undefined)
     
-    inline def setDirectorySiteIdsVarargs(value: String*): Self = StObject.set(x, "directorySiteIds", js.Array(value :_*))
+    inline def setDirectorySiteIdsVarargs(value: String*): Self = StObject.set(x, "directorySiteIds", js.Array(value*))
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
+    inline def setGroupIds(value: String | js.Array[String]): Self = StObject.set(x, "groupIds", value.asInstanceOf[js.Any])
+    
+    inline def setGroupIdsUndefined: Self = StObject.set(x, "groupIds", js.undefined)
+    
+    inline def setGroupIdsVarargs(value: String*): Self = StObject.set(x, "groupIds", js.Array(value*))
+    
     inline def setIds(value: String | js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
     inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
-    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value*))
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
@@ -203,15 +226,15 @@ object CampaignIds {
     
     inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
-    inline def setPlacementGroupType(value: String): Self = StObject.set(x, "placementGroupType", value.asInstanceOf[js.Any])
+    inline def setPaymentSource(value: String): Self = StObject.set(x, "paymentSource", value.asInstanceOf[js.Any])
     
-    inline def setPlacementGroupTypeUndefined: Self = StObject.set(x, "placementGroupType", js.undefined)
+    inline def setPaymentSourceUndefined: Self = StObject.set(x, "paymentSource", js.undefined)
     
     inline def setPlacementStrategyIds(value: String | js.Array[String]): Self = StObject.set(x, "placementStrategyIds", value.asInstanceOf[js.Any])
     
     inline def setPlacementStrategyIdsUndefined: Self = StObject.set(x, "placementStrategyIds", js.undefined)
     
-    inline def setPlacementStrategyIdsVarargs(value: String*): Self = StObject.set(x, "placementStrategyIds", js.Array(value :_*))
+    inline def setPlacementStrategyIdsVarargs(value: String*): Self = StObject.set(x, "placementStrategyIds", js.Array(value*))
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
@@ -221,7 +244,7 @@ object CampaignIds {
     
     inline def setPricingTypesUndefined: Self = StObject.set(x, "pricingTypes", js.undefined)
     
-    inline def setPricingTypesVarargs(value: String*): Self = StObject.set(x, "pricingTypes", js.Array(value :_*))
+    inline def setPricingTypesVarargs(value: String*): Self = StObject.set(x, "pricingTypes", js.Array(value*))
     
     inline def setProfileId(value: String): Self = StObject.set(x, "profileId", value.asInstanceOf[js.Any])
     
@@ -237,7 +260,13 @@ object CampaignIds {
     
     inline def setSiteIdsUndefined: Self = StObject.set(x, "siteIds", js.undefined)
     
-    inline def setSiteIdsVarargs(value: String*): Self = StObject.set(x, "siteIds", js.Array(value :_*))
+    inline def setSiteIdsVarargs(value: String*): Self = StObject.set(x, "siteIds", js.Array(value*))
+    
+    inline def setSizeIds(value: String | js.Array[String]): Self = StObject.set(x, "sizeIds", value.asInstanceOf[js.Any])
+    
+    inline def setSizeIdsUndefined: Self = StObject.set(x, "sizeIds", js.undefined)
+    
+    inline def setSizeIdsVarargs(value: String*): Self = StObject.set(x, "sizeIds", js.Array(value*))
     
     inline def setSortField(value: String): Self = StObject.set(x, "sortField", value.asInstanceOf[js.Any])
     

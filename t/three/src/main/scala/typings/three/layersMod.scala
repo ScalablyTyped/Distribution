@@ -8,7 +8,7 @@ object layersMod {
   
   @JSImport("three/src/core/Layers", "Layers")
   @js.native
-  class Layers () extends StObject {
+  open class Layers () extends StObject {
     
     def disable(channel: Double): Unit = js.native
     
@@ -18,9 +18,11 @@ object layersMod {
     
     def enableAll(): Unit = js.native
     
+    def isEnabled(channel: Double): Boolean = js.native
+    
     /**
-    	 * @default 1 | 0
-    	 */
+      * @default 1 | 0
+      */
     var mask: Double = js.native
     
     def set(channel: Double): Unit = js.native

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Attribute definitions
   */
 /* Rewritten from type alias, can be one of: 
+  - typings.scrivito.scrivitoStrings.boolean
   - typings.scrivito.scrivitoStrings.date
   - typings.scrivito.scrivitoStrings.datetime
   - typings.scrivito.scrivitoStrings.`enum`
@@ -28,6 +29,8 @@ trait Attribute extends StObject
 object Attribute {
   
   inline def binary: typings.scrivito.scrivitoStrings.binary = "binary".asInstanceOf[typings.scrivito.scrivitoStrings.binary]
+  
+  inline def boolean: typings.scrivito.scrivitoStrings.boolean = "boolean".asInstanceOf[typings.scrivito.scrivitoStrings.boolean]
   
   inline def date: typings.scrivito.scrivitoStrings.date = "date".asInstanceOf[typings.scrivito.scrivitoStrings.date]
   

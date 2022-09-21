@@ -9,17 +9,17 @@ trait SchemaAccountCustomerService extends StObject {
   /**
     * Customer service email.
     */
-  var email: js.UndefOr[String] = js.undefined
+  var email: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Customer service phone number.
     */
-  var phoneNumber: js.UndefOr[String] = js.undefined
+  var phoneNumber: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Customer service URL.
     */
-  var url: js.UndefOr[String] = js.undefined
+  var url: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaAccountCustomerService {
   
@@ -32,13 +32,19 @@ object SchemaAccountCustomerService {
     
     inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
+    inline def setEmailNull: Self = StObject.set(x, "email", null)
+    
     inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
     inline def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
     
+    inline def setPhoneNumberNull: Self = StObject.set(x, "phoneNumber", null)
+    
     inline def setPhoneNumberUndefined: Self = StObject.set(x, "phoneNumber", js.undefined)
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlNull: Self = StObject.set(x, "url", null)
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }

@@ -9,17 +9,17 @@ trait IDecorator
      with IComponent {
   
   /** [Config Option] (Object) */
-  var component: js.UndefOr[js.Any] = js.undefined
+  var component: js.UndefOr[Any] = js.undefined
   
   /** [Method] Returns the value of component
     * @returns Object
     */
-  var getComponent: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getComponent: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Sets the value of component
     * @param component Object The new value.
     */
-  var setComponent: js.UndefOr[js.Function1[/* component */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setComponent: js.UndefOr[js.Function1[/* component */ js.UndefOr[Any], Unit]] = js.undefined
 }
 object IDecorator {
   
@@ -30,15 +30,15 @@ object IDecorator {
   
   extension [Self <: IDecorator](x: Self) {
     
-    inline def setComponent(value: js.Any): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: Any): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
     inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
-    inline def setGetComponent(value: () => js.Any): Self = StObject.set(x, "getComponent", js.Any.fromFunction0(value))
+    inline def setGetComponent(value: () => Any): Self = StObject.set(x, "getComponent", js.Any.fromFunction0(value))
     
     inline def setGetComponentUndefined: Self = StObject.set(x, "getComponent", js.undefined)
     
-    inline def setSetComponent(value: /* component */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setComponent", js.Any.fromFunction1(value))
+    inline def setSetComponent(value: /* component */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setComponent", js.Any.fromFunction1(value))
     
     inline def setSetComponentUndefined: Self = StObject.set(x, "setComponent", js.undefined)
   }

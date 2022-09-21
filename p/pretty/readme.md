@@ -10,10 +10,10 @@ Some tweaks for beautifying HTML with js-beautify according to my preferences.
 | ------------------ | :-------------: |
 | Full name          | pretty |
 | Keywords           | beautify, format, formatter, html, js, js-beautify, prettify, pretty |
-| # releases         | 0 |
-| # dependents       | 291 |
-| # downloads        | 25712261 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4918141.666666667 |
+| # stars            | 118.0 |
 
 ## Links
 - [Homepage](https://github.com/jonschlinkert/pretty)

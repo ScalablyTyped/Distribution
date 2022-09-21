@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "parse5-htmlparser2-tree-adapter" : "7.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "parse5-htmlparser2-tree-adapter" : "7.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

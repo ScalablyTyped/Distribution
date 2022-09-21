@@ -29,90 +29,100 @@ object anon {
   
   trait Typeofgeometry extends StObject {
     
-    val encoding: js.Any
+    val encoding: Any
     
-    val poly: js.Any
+    val poly: Any
     
-    /**
-      * Utility functions for computing geodesic angles, distances and areas.
-      * The default radius is Earth's radius of 6378137 meters.
-      */
-    val spherical: js.Any
+    val spherical: Any
   }
   object Typeofgeometry {
     
-    inline def apply(encoding: js.Any, poly: js.Any, spherical: js.Any): Typeofgeometry = {
+    inline def apply(encoding: Any, poly: Any, spherical: Any): Typeofgeometry = {
       val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any], poly = poly.asInstanceOf[js.Any], spherical = spherical.asInstanceOf[js.Any])
       __obj.asInstanceOf[Typeofgeometry]
     }
     
     extension [Self <: Typeofgeometry](x: Self) {
       
-      inline def setEncoding(value: js.Any): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: Any): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      inline def setPoly(value: js.Any): Self = StObject.set(x, "poly", value.asInstanceOf[js.Any])
+      inline def setPoly(value: Any): Self = StObject.set(x, "poly", value.asInstanceOf[js.Any])
       
-      inline def setSpherical(value: js.Any): Self = StObject.set(x, "spherical", value.asInstanceOf[js.Any])
+      inline def setSpherical(value: Any): Self = StObject.set(x, "spherical", value.asInstanceOf[js.Any])
     }
   }
   
   trait Typeofmaps extends StObject {
     
-    val Data: js.Any
+    val Data: Any
     
-    val Marker: js.Any
+    val Map: Any
     
-    val OverlayView: js.Any
+    val Marker: Any
     
-    // TODO find source documentation
-    val adsense: js.Any
+    val OverlayView: Any
     
-    val drawing: js.Any
+    val Settings: Any
     
-    val event: js.Any
+    val drawing: Any
+    
+    val event: Any
     
     val geometry: Typeofgeometry
     
-    val places: js.Any
+    val journeySharing: Any
     
-    val visualization: js.Any
+    val localContext: Any
+    
+    val places: Any
+    
+    val visualization: Any
   }
   object Typeofmaps {
     
     inline def apply(
-      Data: js.Any,
-      Marker: js.Any,
-      OverlayView: js.Any,
-      adsense: js.Any,
-      drawing: js.Any,
-      event: js.Any,
+      Data: Any,
+      Map: Any,
+      Marker: Any,
+      OverlayView: Any,
+      Settings: Any,
+      drawing: Any,
+      event: Any,
       geometry: Typeofgeometry,
-      places: js.Any,
-      visualization: js.Any
+      journeySharing: Any,
+      localContext: Any,
+      places: Any,
+      visualization: Any
     ): Typeofmaps = {
-      val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any], Marker = Marker.asInstanceOf[js.Any], OverlayView = OverlayView.asInstanceOf[js.Any], adsense = adsense.asInstanceOf[js.Any], drawing = drawing.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], geometry = geometry.asInstanceOf[js.Any], places = places.asInstanceOf[js.Any], visualization = visualization.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any], Map = Map.asInstanceOf[js.Any], Marker = Marker.asInstanceOf[js.Any], OverlayView = OverlayView.asInstanceOf[js.Any], Settings = Settings.asInstanceOf[js.Any], drawing = drawing.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], geometry = geometry.asInstanceOf[js.Any], journeySharing = journeySharing.asInstanceOf[js.Any], localContext = localContext.asInstanceOf[js.Any], places = places.asInstanceOf[js.Any], visualization = visualization.asInstanceOf[js.Any])
       __obj.asInstanceOf[Typeofmaps]
     }
     
     extension [Self <: Typeofmaps](x: Self) {
       
-      inline def setAdsense(value: js.Any): Self = StObject.set(x, "adsense", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+      inline def setDrawing(value: Any): Self = StObject.set(x, "drawing", value.asInstanceOf[js.Any])
       
-      inline def setDrawing(value: js.Any): Self = StObject.set(x, "drawing", value.asInstanceOf[js.Any])
-      
-      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       inline def setGeometry(value: Typeofgeometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
       
-      inline def setMarker(value: js.Any): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+      inline def setJourneySharing(value: Any): Self = StObject.set(x, "journeySharing", value.asInstanceOf[js.Any])
       
-      inline def setOverlayView(value: js.Any): Self = StObject.set(x, "OverlayView", value.asInstanceOf[js.Any])
+      inline def setLocalContext(value: Any): Self = StObject.set(x, "localContext", value.asInstanceOf[js.Any])
       
-      inline def setPlaces(value: js.Any): Self = StObject.set(x, "places", value.asInstanceOf[js.Any])
+      inline def setMap(value: Any): Self = StObject.set(x, "Map", value.asInstanceOf[js.Any])
       
-      inline def setVisualization(value: js.Any): Self = StObject.set(x, "visualization", value.asInstanceOf[js.Any])
+      inline def setMarker(value: Any): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+      
+      inline def setOverlayView(value: Any): Self = StObject.set(x, "OverlayView", value.asInstanceOf[js.Any])
+      
+      inline def setPlaces(value: Any): Self = StObject.set(x, "places", value.asInstanceOf[js.Any])
+      
+      inline def setSettings(value: Any): Self = StObject.set(x, "Settings", value.asInstanceOf[js.Any])
+      
+      inline def setVisualization(value: Any): Self = StObject.set(x, "visualization", value.asInstanceOf[js.Any])
     }
   }
 }

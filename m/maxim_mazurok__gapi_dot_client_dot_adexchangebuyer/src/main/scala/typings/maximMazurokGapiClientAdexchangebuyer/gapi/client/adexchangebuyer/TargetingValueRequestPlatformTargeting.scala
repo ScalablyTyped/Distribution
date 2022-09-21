@@ -21,6 +21,6 @@ object TargetingValueRequestPlatformTargeting {
     
     inline def setRequestPlatformsUndefined: Self = StObject.set(x, "requestPlatforms", js.undefined)
     
-    inline def setRequestPlatformsVarargs(value: String*): Self = StObject.set(x, "requestPlatforms", js.Array(value :_*))
+    inline def setRequestPlatformsVarargs(value: String*): Self = StObject.set(x, "requestPlatforms", js.Array(value*))
   }
 }

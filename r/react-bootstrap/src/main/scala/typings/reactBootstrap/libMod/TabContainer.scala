@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap/lib", "TabContainer")
 @js.native
-class TabContainer () extends ^
+open class TabContainer () extends ^

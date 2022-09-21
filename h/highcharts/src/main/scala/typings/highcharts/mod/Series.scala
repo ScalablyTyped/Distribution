@@ -1,14 +1,16 @@
 package typings.highcharts.mod
 
 import typings.highcharts.anon.PartialAnimationOptionsOb
+import typings.highcharts.anon.TypeofSeries
 import typings.highcharts.highchartsStrings._empty
+import typings.std.PointerEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts", "Series")
 @js.native
-class Series protected () extends StObject {
+open class Series protected () extends StObject {
   /**
     * This is the base series prototype that all other series types inherit
     * from. A new series is initialized either through the series option
@@ -147,8 +149,7 @@ class Series protected () extends StObject {
     * Animate in the series. Called internally twice. First with the `init`
     * parameter set to true, which sets up the initial state of the animation.
     * Then when ready, it is called with the `init` parameter undefined, in
-    * order to perform the actual animation. After the second run, the function
-    * is removed.
+    * order to perform the actual animation.
     *
     * @param init
     *        Initialize the animation.
@@ -195,12 +196,6 @@ class Series protected () extends StObject {
   val dataMin: js.UndefOr[Double] = js.native
   
   /**
-    * If implemented in the core, parts of this can probably be shared with
-    * other similar methods in Highcharts.
-    */
-  def destroyGraphics(): Unit = js.native
-  
-  /**
     * Draw the graph. Called internally when rendering line-like series types.
     * The first time it generates the `series.graph` item and optionally other
     * series-wide items like `series.area` for area charts. On subsequent calls
@@ -217,16 +212,6 @@ class Series protected () extends StObject {
   def drawPoints(): Unit = js.native
   
   /**
-    * Enter boost mode and apply boost-specific properties.
-    */
-  def enterBoost(): Unit = js.native
-  
-  /**
-    * Exit from boost mode and restore non-boost properties.
-    */
-  def exitBoost(): Unit = js.native
-  
-  /**
     * Return series name in "Series {Number}" format or the one defined by a
     * user. This method can be simply overridden as series name format can vary
     * (e.g. technical indicators).
@@ -238,20 +223,7 @@ class Series protected () extends StObject {
   /**
     * Get the translation and scale for the plot area of this series.
     */
-  def getPlotBox(): SeriesPlotBoxObject = js.native
-  
-  /**
-    * Return a full Point object based on the index. The boost module uses
-    * stripped point objects for performance reasons.
-    *
-    * @param boostPoint
-    *        A stripped-down point object
-    *
-    * @return A Point object as per
-    *         https://api.highcharts.com/highcharts#Point
-    */
-  def getPoint(boostPoint: js.Object): Point = js.native
-  def getPoint(boostPoint: Point): Point = js.native
+  def getPlotBox(): Unit = js.native
   
   /**
     * Return the series points with null points filtered out.
@@ -404,7 +376,7 @@ class Series protected () extends StObject {
   /**
     * Remove a point from the series. Unlike the Highcharts.Point#remove
     * method, this can also be done on a point that is not instanciated because
-    * it is outside the view or subject to Highstock data grouping.
+    * it is outside the view or subject to Highcharts Stock data grouping.
     *
     * @param i
     *        The index of the point in the data array.
@@ -438,6 +410,23 @@ class Series protected () extends StObject {
   def render(): Unit = js.native
   
   /**
+    * Find the nearest point from a pointer event. This applies to series that
+    * use k-d-trees to get the nearest point. Native pointer events must be
+    * normalized using `Pointer.normalize`, that adds `chartX` and `chartY`
+    * properties.
+    *
+    * @param e
+    *        The normalized pointer event
+    *
+    * @param compareX
+    *        Search only by the X value, not Y
+    *
+    * @return The closest point to the pointer event
+    */
+  def searchPoint(e: PointerEvent): js.UndefOr[Point] = js.native
+  def searchPoint(e: PointerEvent, compareX: Boolean): js.UndefOr[Point] = js.native
+  
+  /**
     * Select or unselect the series. This means its selected property is set,
     * the checkbox in the legend is toggled and when selected, the series is
     * returned by the Highcharts.Chart#getSelectedSeries function.
@@ -458,15 +447,41 @@ class Series protected () extends StObject {
   var selected: Boolean = js.native
   
   /**
-    * Highstock only. Set the compare mode of the series after render time.
-    * In most cases it is more useful running Axis#setCompare on the X axis
-    * to update all its series.
+    * Highcharts Stock only. Set the compare mode of the series after
+    * render time. In most cases it is more useful running Axis#setCompare
+    * on the X axis to update all its series.
     *
     * @param compare
-    *        Can be one of `null` (default), `"percent"` or `"value"`.
+    *        Can be one of `undefined` (default), `null`, `"percent"` or
+    *        `"value"`.
+    *
+    * @param redraw
+    *        Whether to redraw the chart or to wait for a later call to
+    *        Chart#redraw.
     */
   def setCompare(): Unit = js.native
   def setCompare(compare: String): Unit = js.native
+  def setCompare(compare: String, redraw: Boolean): Unit = js.native
+  def setCompare(compare: Null, redraw: Boolean): Unit = js.native
+  def setCompare(compare: Unit, redraw: Boolean): Unit = js.native
+  
+  /**
+    * Highcharts Stock only. Set the cumulative mode of the series after
+    * render time. In most cases it is more useful running
+    * Axis#setCumulative on the Y axis to update all its series.
+    *
+    * @param cumulative
+    *        Either enable or disable Cumulative Sum mode. Can be one of
+    *        `false` (default) or `true`.
+    *
+    * @param redraw
+    *        Whether to redraw the chart or to wait for a later call to
+    *        Chart#redraw.
+    */
+  def setCumulative(): Unit = js.native
+  def setCumulative(cumulative: Boolean): Unit = js.native
+  def setCumulative(cumulative: Boolean, redraw: Boolean): Unit = js.native
+  def setCumulative(cumulative: Unit, redraw: Boolean): Unit = js.native
   
   /**
     * Apply a new set of data to the series and optionally redraw it. The new
@@ -642,4 +657,31 @@ class Series protected () extends StObject {
     * Read only. The unique yAxis object associated with the series.
     */
   var yAxis: Axis = js.native
+}
+/* static members */
+object Series {
+  
+  @JSImport("highcharts", "Series")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    * Registers a series class to be accessible via `Series.types`.
+    *
+    * @param seriesType
+    *        The series type as an identifier string in lower case.
+    *
+    * @param SeriesClass
+    *        The series class as a class pattern or a constructor function with
+    *        prototype.
+    */
+  inline def registerType(seriesType: String, SeriesClass: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerType")(seriesType.asInstanceOf[js.Any], SeriesClass.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  /**
+    * Registry of all available series types.
+    */
+  @JSImport("highcharts", "Series.types")
+  @js.native
+  def types: Dictionary[TypeofSeries] = js.native
+  inline def types_=(x: Dictionary[TypeofSeries]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("types")(x.asInstanceOf[js.Any])
 }

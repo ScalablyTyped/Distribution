@@ -22,7 +22,7 @@ object defaultUIMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-DefaultUI.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with DefaultUI {
     def this(properties: DefaultUIProperties) = this()

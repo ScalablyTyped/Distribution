@@ -8,5 +8,5 @@ object updateIdentityPoolMod {
   
   @JSImport("@aws-sdk/client-cognito-identity-browser/model/UpdateIdentityPool", "UpdateIdentityPool")
   @js.native
-  val UpdateIdentityPool: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val UpdateIdentityPool: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

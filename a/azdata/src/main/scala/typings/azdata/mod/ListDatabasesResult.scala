@@ -21,12 +21,12 @@ object ListDatabasesResult {
     
     inline def setDatabaseNames(value: js.Array[String]): Self = StObject.set(x, "databaseNames", value.asInstanceOf[js.Any])
     
-    inline def setDatabaseNamesVarargs(value: String*): Self = StObject.set(x, "databaseNames", js.Array(value :_*))
+    inline def setDatabaseNamesVarargs(value: String*): Self = StObject.set(x, "databaseNames", js.Array(value*))
     
     inline def setDatabases(value: js.Array[DatabaseInfo]): Self = StObject.set(x, "databases", value.asInstanceOf[js.Any])
     
     inline def setDatabasesUndefined: Self = StObject.set(x, "databases", js.undefined)
     
-    inline def setDatabasesVarargs(value: DatabaseInfo*): Self = StObject.set(x, "databases", js.Array(value :_*))
+    inline def setDatabasesVarargs(value: DatabaseInfo*): Self = StObject.set(x, "databases", js.Array(value*))
   }
 }

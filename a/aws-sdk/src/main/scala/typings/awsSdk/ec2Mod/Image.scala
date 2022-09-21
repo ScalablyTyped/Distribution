@@ -17,9 +17,19 @@ trait Image extends StObject {
   var BlockDeviceMappings: js.UndefOr[BlockDeviceMappingList] = js.undefined
   
   /**
+    * The boot mode of the image. For more information, see Boot modes in the Amazon Elastic Compute Cloud User Guide.
+    */
+  var BootMode: js.UndefOr[BootModeValues] = js.undefined
+  
+  /**
     * The date and time the image was created.
     */
   var CreationDate: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The date and time to deprecate the AMI, in UTC, in the following format: YYYY-MM-DDTHH:MM:SSZ. If you specified a value for seconds, Amazon EC2 rounds the seconds to the nearest minute.
+    */
+  var DeprecationTime: js.UndefOr[String] = js.undefined
   
   /**
     * The description of the AMI that was provided during image creation.
@@ -47,7 +57,7 @@ trait Image extends StObject {
   var ImageLocation: js.UndefOr[String] = js.undefined
   
   /**
-    * The AWS account alias (for example, amazon, self) or the AWS account ID of the AMI owner.
+    * The Amazon Web Services account alias (for example, amazon, self) or the Amazon Web Services account ID of the AMI owner.
     */
   var ImageOwnerAlias: js.UndefOr[String] = js.undefined
   
@@ -67,7 +77,7 @@ trait Image extends StObject {
   var Name: js.UndefOr[String] = js.undefined
   
   /**
-    * The AWS account ID of the image owner.
+    * The ID of the Amazon Web Services account that owns the image.
     */
   var OwnerId: js.UndefOr[String] = js.undefined
   
@@ -77,7 +87,7 @@ trait Image extends StObject {
   var Platform: js.UndefOr[PlatformValues] = js.undefined
   
   /**
-    * The platform details associated with the billing code of the AMI. For more information, see Obtaining Billing Information in the Amazon Elastic Compute Cloud User Guide.
+    * The platform details associated with the billing code of the AMI. For more information, see Understanding AMI billing in the Amazon Elastic Compute Cloud User Guide.
     */
   var PlatformDetails: js.UndefOr[String] = js.undefined
   
@@ -102,7 +112,7 @@ trait Image extends StObject {
   var RootDeviceName: js.UndefOr[String] = js.undefined
   
   /**
-    * The type of root device used by the AMI. The AMI can use an EBS volume or an instance store volume.
+    * The type of root device used by the AMI. The AMI can use an Amazon EBS volume or an instance store volume.
     */
   var RootDeviceType: js.UndefOr[DeviceType] = js.undefined
   
@@ -127,7 +137,12 @@ trait Image extends StObject {
   var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
-    * The operation of the Amazon EC2 instance and the billing code that is associated with the AMI. usageOperation corresponds to the lineitem/Operation column on your AWS Cost and Usage Report and in the AWS Price List API. For the list of UsageOperation codes, see Platform Details and Usage Operation Billing Codes in the Amazon Elastic Compute Cloud User Guide.
+    * If the image is configured for NitroTPM support, the value is v2.0. For more information, see NitroTPM in the Amazon Elastic Compute Cloud User Guide.
+    */
+  var TpmSupport: js.UndefOr[TpmSupportValues] = js.undefined
+  
+  /**
+    * The operation of the Amazon EC2 instance and the billing code that is associated with the AMI. usageOperation corresponds to the lineitem/Operation column on your Amazon Web Services Cost and Usage Report and in the Amazon Web Services Price List API. You can view these fields on the Instances or AMIs pages in the Amazon EC2 console, or in the responses that are returned by the DescribeImages command in the Amazon EC2 API, or the describe-images command in the CLI.
     */
   var UsageOperation: js.UndefOr[String] = js.undefined
   
@@ -153,11 +168,19 @@ object Image {
     
     inline def setBlockDeviceMappingsUndefined: Self = StObject.set(x, "BlockDeviceMappings", js.undefined)
     
-    inline def setBlockDeviceMappingsVarargs(value: BlockDeviceMapping*): Self = StObject.set(x, "BlockDeviceMappings", js.Array(value :_*))
+    inline def setBlockDeviceMappingsVarargs(value: BlockDeviceMapping*): Self = StObject.set(x, "BlockDeviceMappings", js.Array(value*))
+    
+    inline def setBootMode(value: BootModeValues): Self = StObject.set(x, "BootMode", value.asInstanceOf[js.Any])
+    
+    inline def setBootModeUndefined: Self = StObject.set(x, "BootMode", js.undefined)
     
     inline def setCreationDate(value: String): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
+    
+    inline def setDeprecationTime(value: String): Self = StObject.set(x, "DeprecationTime", value.asInstanceOf[js.Any])
+    
+    inline def setDeprecationTimeUndefined: Self = StObject.set(x, "DeprecationTime", js.undefined)
     
     inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
@@ -211,7 +234,7 @@ object Image {
     
     inline def setProductCodesUndefined: Self = StObject.set(x, "ProductCodes", js.undefined)
     
-    inline def setProductCodesVarargs(value: ProductCode*): Self = StObject.set(x, "ProductCodes", js.Array(value :_*))
+    inline def setProductCodesVarargs(value: ProductCode*): Self = StObject.set(x, "ProductCodes", js.Array(value*))
     
     inline def setPublic(value: Boolean): Self = StObject.set(x, "Public", value.asInstanceOf[js.Any])
     
@@ -245,7 +268,11 @@ object Image {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
+    
+    inline def setTpmSupport(value: TpmSupportValues): Self = StObject.set(x, "TpmSupport", value.asInstanceOf[js.Any])
+    
+    inline def setTpmSupportUndefined: Self = StObject.set(x, "TpmSupport", js.undefined)
     
     inline def setUsageOperation(value: String): Self = StObject.set(x, "UsageOperation", value.asInstanceOf[js.Any])
     

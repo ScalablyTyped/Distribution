@@ -1,7 +1,7 @@
 
 # Scala.js typings for mvdan-sh
 
-Typings are for version 0.5
+Typings are for version 0.10
 
 ## Library description:
 A shell parser and formatter (POSIX/Bash/mksh)
@@ -10,10 +10,10 @@ A shell parser and formatter (POSIX/Bash/mksh)
 | ------------------ | :-------------: |
 | Full name          | mvdan-sh |
 | Keywords           | shell, bash, sh, parser, ast, syntax, posix, bash-parser |
-| # releases         | 8 |
-| # dependents       | 2 |
-| # downloads        | 42700 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 84335.0 |
+| # stars            | 4888.0 |
 
 ## Links
 - [Homepage](https://github.com/mvdan/sh#readme)

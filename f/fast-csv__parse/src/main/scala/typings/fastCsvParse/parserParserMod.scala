@@ -9,20 +9,20 @@ object parserParserMod {
   
   @JSImport("@fast-csv/parse/build/src/parser/Parser", "Parser")
   @js.native
-  class Parser protected () extends StObject {
+  open class Parser protected () extends StObject {
     def this(parserOptions: ParserOptions) = this()
     
     def parse(line: String, hasMoreData: Boolean): ParseResult = js.native
     
-    /* private */ var parseRow: js.Any = js.native
+    /* private */ var parseRow: Any = js.native
     
-    /* private */ var parseWithComments: js.Any = js.native
+    /* private */ var parseWithComments: Any = js.native
     
-    /* private */ var parseWithoutComments: js.Any = js.native
+    /* private */ var parseWithoutComments: Any = js.native
     
-    /* private */ val parserOptions: js.Any = js.native
+    /* private */ val parserOptions: Any = js.native
     
-    /* private */ val rowParser: js.Any = js.native
+    /* private */ val rowParser: Any = js.native
   }
   /* static members */
   object Parser {
@@ -33,8 +33,8 @@ object parserParserMod {
     
     @JSImport("@fast-csv/parse/build/src/parser/Parser", "Parser.removeBOM")
     @js.native
-    def removeBOM: js.Any = js.native
-    inline def removeBOM_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("removeBOM")(x.asInstanceOf[js.Any])
+    def removeBOM: Any = js.native
+    inline def removeBOM_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("removeBOM")(x.asInstanceOf[js.Any])
   }
   
   trait ParseResult extends StObject {
@@ -56,7 +56,7 @@ object parserParserMod {
       
       inline def setRows(value: js.Array[js.Array[String]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
-      inline def setRowsVarargs(value: js.Array[String]*): Self = StObject.set(x, "rows", js.Array(value :_*))
+      inline def setRowsVarargs(value: js.Array[String]*): Self = StObject.set(x, "rows", js.Array(value*))
     }
   }
 }

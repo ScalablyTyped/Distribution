@@ -29,6 +29,6 @@ object MultiClassClassificationMetrics {
     
     inline def setConfusionMatrixListUndefined: Self = StObject.set(x, "confusionMatrixList", js.undefined)
     
-    inline def setConfusionMatrixListVarargs(value: ConfusionMatrix*): Self = StObject.set(x, "confusionMatrixList", js.Array(value :_*))
+    inline def setConfusionMatrixListVarargs(value: ConfusionMatrix*): Self = StObject.set(x, "confusionMatrixList", js.Array(value*))
   }
 }

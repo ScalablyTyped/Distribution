@@ -13,22 +13,22 @@ trait ErrorsCollection extends StObject {
     * @param number [lErrorCode=0]
     * @param string [bstrType='modeless']
     */
-  def Add(varNode: js.Any, bstrConditionName: String, bstrShortErrorMessage: String): Error = js.native
+  def Add(varNode: Any, bstrConditionName: String, bstrShortErrorMessage: String): Error = js.native
   def Add(
-    varNode: js.Any,
+    varNode: Any,
     bstrConditionName: String,
     bstrShortErrorMessage: String,
     bstrDetailedErrorMessage: String
   ): Error = js.native
   def Add(
-    varNode: js.Any,
+    varNode: Any,
     bstrConditionName: String,
     bstrShortErrorMessage: String,
     bstrDetailedErrorMessage: String,
     lErrorCode: Double
   ): Error = js.native
   def Add(
-    varNode: js.Any,
+    varNode: Any,
     bstrConditionName: String,
     bstrShortErrorMessage: String,
     bstrDetailedErrorMessage: String,
@@ -36,7 +36,7 @@ trait ErrorsCollection extends StObject {
     bstrType: String
   ): Error = js.native
   def Add(
-    varNode: js.Any,
+    varNode: Any,
     bstrConditionName: String,
     bstrShortErrorMessage: String,
     bstrDetailedErrorMessage: String,
@@ -44,14 +44,14 @@ trait ErrorsCollection extends StObject {
     bstrType: String
   ): Error = js.native
   def Add(
-    varNode: js.Any,
+    varNode: Any,
     bstrConditionName: String,
     bstrShortErrorMessage: String,
     bstrDetailedErrorMessage: Unit,
     lErrorCode: Double
   ): Error = js.native
   def Add(
-    varNode: js.Any,
+    varNode: Any,
     bstrConditionName: String,
     bstrShortErrorMessage: String,
     bstrDetailedErrorMessage: Unit,
@@ -59,7 +59,7 @@ trait ErrorsCollection extends StObject {
     bstrType: String
   ): Error = js.native
   def Add(
-    varNode: js.Any,
+    varNode: Any,
     bstrConditionName: String,
     bstrShortErrorMessage: String,
     bstrDetailedErrorMessage: Unit,
@@ -69,7 +69,7 @@ trait ErrorsCollection extends StObject {
   
   val Count: Double = js.native
   
-  def Delete(varNode: js.Any, bstrConditionName: String): Unit = js.native
+  def Delete(varNode: Any, bstrConditionName: String): Unit = js.native
   
   def DeleteAll(): Unit = js.native
   

@@ -11,6 +11,7 @@ import typings.vegaLite.channeldefMod.FieldDefWithoutScale
 import typings.vegaLite.channeldefMod.LatLongDef
 import typings.vegaLite.channeldefMod.NumericArrayMarkPropDef
 import typings.vegaLite.channeldefMod.NumericMarkPropDef
+import typings.vegaLite.channeldefMod.OffsetDef
 import typings.vegaLite.channeldefMod.OrderFieldDef
 import typings.vegaLite.channeldefMod.OrderValueDef
 import typings.vegaLite.channeldefMod.PolarDef
@@ -37,6 +38,8 @@ import typings.vegaLite.specFacetMod.EncodingFacetMapping
 import typings.vegaLite.specLayerMod.NormalizedLayerSpec
 import typings.vegaLite.specUnitMod.GenericUnitSpec
 import typings.vegaLite.specUnitMod.NormalizedUnitSpec
+import typings.vegaLite.srcSelectionMod.SelectionParameter
+import typings.vegaLite.srcSelectionMod.SelectionType
 import typings.vegaLite.srcTypeMod.StandardType
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
@@ -87,7 +90,7 @@ object compositemarkMod {
   type CompositeMarkDef = BoxPlotDef | ErrorBarDef | ErrorBandDef
   
   type CompositeMarkNormalizerRun = js.Function2[
-    /* spec */ GenericUnitSpec[js.Any, js.Any], 
+    /* spec */ GenericUnitSpec[Any, Any, SelectionParameter[SelectionType]], 
     /* params */ NormalizerParams, 
     NormalizedLayerSpec | NormalizedUnitSpec
   ]
@@ -105,7 +108,7 @@ object compositemarkMod {
     }
   }
   
-  type PartialIndex[T /* <: Encoding[js.Any] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  type PartialIndex[T /* <: Encoding[Any] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ t in keyof T ]:? std.Partial<T[t]>}
     */ typings.vegaLite.vegaLiteStrings.PartialIndex & TopLevel[T]
   
@@ -190,6 +193,8 @@ object compositemarkMod {
     
     var xError2: js.UndefOr[Partial[js.UndefOr[SecondaryFieldDef[F] | ValueDef[Double]]]] = js.undefined
     
+    var xOffset: js.UndefOr[Partial[js.UndefOr[OffsetDef[F, StandardType]]]] = js.undefined
+    
     var y: js.UndefOr[Partial[js.UndefOr[PositionDef[F]]]] = js.undefined
     
     var y2: js.UndefOr[Partial[js.UndefOr[Position2Def[F]]]] = js.undefined
@@ -197,6 +202,8 @@ object compositemarkMod {
     var yError: js.UndefOr[Partial[js.UndefOr[SecondaryFieldDef[F] | ValueDef[Double]]]] = js.undefined
     
     var yError2: js.UndefOr[Partial[js.UndefOr[SecondaryFieldDef[F] | ValueDef[Double]]]] = js.undefined
+    
+    var yOffset: js.UndefOr[Partial[js.UndefOr[OffsetDef[F, StandardType]]]] = js.undefined
   }
   object SharedCompositeEncoding {
     
@@ -227,7 +234,7 @@ object compositemarkMod {
       
       inline def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
       
-      inline def setDetailVarargs(value: (FieldDefWithoutScale[F, StandardType])*): Self = StObject.set(x, "detail", js.Array(value :_*))
+      inline def setDetailVarargs(value: (FieldDefWithoutScale[F, StandardType])*): Self = StObject.set(x, "detail", js.Array(value*))
       
       inline def setFill(value: Partial[js.UndefOr[ColorDef[F]]]): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
@@ -273,7 +280,7 @@ object compositemarkMod {
       
       inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
-      inline def setOrderVarargs(value: OrderFieldDef[F]*): Self = StObject.set(x, "order", js.Array(value :_*))
+      inline def setOrderVarargs(value: OrderFieldDef[F]*): Self = StObject.set(x, "order", js.Array(value*))
       
       inline def setRadius(value: Partial[js.UndefOr[PolarDef[F]]]): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
@@ -327,7 +334,7 @@ object compositemarkMod {
       
       inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
       
-      inline def setTooltipVarargs(value: StringFieldDef[F]*): Self = StObject.set(x, "tooltip", js.Array(value :_*))
+      inline def setTooltipVarargs(value: StringFieldDef[F]*): Self = StObject.set(x, "tooltip", js.Array(value*))
       
       inline def setUrl(
         value: Partial[
@@ -351,6 +358,10 @@ object compositemarkMod {
       
       inline def setXErrorUndefined: Self = StObject.set(x, "xError", js.undefined)
       
+      inline def setXOffset(value: Partial[js.UndefOr[OffsetDef[F, StandardType]]]): Self = StObject.set(x, "xOffset", value.asInstanceOf[js.Any])
+      
+      inline def setXOffsetUndefined: Self = StObject.set(x, "xOffset", js.undefined)
+      
       inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
       inline def setY(value: Partial[js.UndefOr[PositionDef[F]]]): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
@@ -366,6 +377,10 @@ object compositemarkMod {
       inline def setYError2Undefined: Self = StObject.set(x, "yError2", js.undefined)
       
       inline def setYErrorUndefined: Self = StObject.set(x, "yError", js.undefined)
+      
+      inline def setYOffset(value: Partial[js.UndefOr[OffsetDef[F, StandardType]]]): Self = StObject.set(x, "yOffset", value.asInstanceOf[js.Any])
+      
+      inline def setYOffsetUndefined: Self = StObject.set(x, "yOffset", js.undefined)
       
       inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     }

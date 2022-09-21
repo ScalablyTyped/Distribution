@@ -4,24 +4,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A worker_message response allows the server to pass information to the
-  * sender.
-  */
 trait SchemaWorkerMessageResponse extends StObject {
   
   /**
-    * The service&#39;s response to a worker&#39;s health report.
+    * The service's response to a worker's health report.
     */
   var workerHealthReportResponse: js.UndefOr[SchemaWorkerHealthReportResponse] = js.undefined
   
   /**
-    * Service&#39;s response to reporting worker metrics (currently empty).
+    * Service's response to reporting worker metrics (currently empty).
     */
   var workerMetricsResponse: js.UndefOr[SchemaResourceUtilizationReportResponse] = js.undefined
   
   /**
-    * Service&#39;s response to shutdown notice (currently empty).
+    * Service's response to shutdown notice (currently empty).
     */
   var workerShutdownNoticeResponse: js.UndefOr[SchemaWorkerShutdownNoticeResponse] = js.undefined
 }

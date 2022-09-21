@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientPubsub.anon
 
-import typings.maximMazurokGapiClientPubsub.gapi.client.pubsub.PullRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,6 +25,13 @@ trait Xgafv extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
+  /**
+    * Required. The name of the subscription. It must have the format `"projects/{project}/subscriptions/{subscription}"`. `{subscription}` must start with a letter, and contain only
+    * letters (`[A-Za-z]`), numbers (`[0-9]`), dashes (`-`), underscores (`_`), periods (`.`), tildes (`~`), plus (`+`) or percent signs (`%`). It must be between 3 and 255 characters
+    * in length, and it must not start with `"goog"`.
+    */
+  var name: String
+  
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
@@ -36,10 +42,7 @@ trait Xgafv extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: PullRequest
-  
-  /** Required. The subscription from which messages should be pulled. Format is `projects/{project}/subscriptions/{sub}`. */
-  var subscription: String
+  var resource: typings.maximMazurokGapiClientPubsub.gapi.client.pubsub.Subscription
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,8 +52,8 @@ trait Xgafv extends StObject {
 }
 object Xgafv {
   
-  inline def apply(resource: PullRequest, subscription: String): Xgafv = {
-    val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any], subscription = subscription.asInstanceOf[js.Any])
+  inline def apply(name: String, resource: typings.maximMazurokGapiClientPubsub.gapi.client.pubsub.Subscription): Xgafv = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Xgafv]
   }
   
@@ -80,6 +83,8 @@ object Xgafv {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
@@ -92,9 +97,7 @@ object Xgafv {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: PullRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
-    
-    inline def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
+    inline def setResource(value: typings.maximMazurokGapiClientPubsub.gapi.client.pubsub.Subscription): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

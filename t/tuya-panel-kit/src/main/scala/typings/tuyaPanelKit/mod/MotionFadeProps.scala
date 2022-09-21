@@ -8,6 +8,16 @@ trait MotionFadeProps
   extends StObject
      with MotionProps {
   
+  /**
+    * @language zh-CN
+    * @description 动画不透明度
+    * @defaultValue 1
+    */
+  /**
+    * @language en-US
+    * @description Animation opacity
+    * @defaultValue 1
+    */
   var fadeOpacity: js.UndefOr[Double] = js.undefined
 }
 object MotionFadeProps {

@@ -1,58 +1,53 @@
 package typings.egjsComponent
 
-import org.scalablytyped.runtime.StringDictionary
+import typings.egjsComponent.typesMod.ComponentEventConstructor
+import typings.egjsComponent.typesMod.DefaultProps
+import typings.egjsComponent.typesMod.EventMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@egjs/component", JSImport.Namespace)
+  @JSImport("@egjs/component", JSImport.Default)
   @js.native
-  class ^ ()
-    extends StObject
-       with Component {
-    def this(options: StringDictionary[js.Any]) = this()
+  open class default[T /* <: EventMap */] ()
+    extends typings.egjsComponent.componentMod.default[T]
+  object default {
+    
+    @JSImport("@egjs/component", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSImport("@egjs/component", "default.VERSION")
+    @js.native
+    def VERSION: String = js.native
+    inline def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
   }
-  @JSImport("@egjs/component", JSImport.Namespace)
+  
+  @JSImport("@egjs/component", "ComponentEvent")
   @js.native
-  val ^ : js.Any = js.native
+  val ComponentEvent: ComponentEventConstructor = js.native
   
-  inline def hasOn(eventName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasOn")(eventName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  
-  inline def off(): Component = ^.asInstanceOf[js.Dynamic].applyDynamic("off")().asInstanceOf[Component]
-  inline def off(eventName: String): Component = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(eventName.asInstanceOf[js.Any]).asInstanceOf[Component]
-  inline def off(eventName: String, handlerToAttach: js.Function1[/* event */ StringDictionary[js.Any], js.Any]): Component = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(eventName.asInstanceOf[js.Any], handlerToAttach.asInstanceOf[js.Any])).asInstanceOf[Component]
-  inline def off(eventName: Unit, handlerToAttach: js.Function1[/* event */ StringDictionary[js.Any], js.Any]): Component = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(eventName.asInstanceOf[js.Any], handlerToAttach.asInstanceOf[js.Any])).asInstanceOf[Component]
-  
-  inline def on(eventName: String, handlerToAttach: js.Function1[/* event */ StringDictionary[js.Any], js.Any]): Component = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(eventName.asInstanceOf[js.Any], handlerToAttach.asInstanceOf[js.Any])).asInstanceOf[Component]
-  inline def on(events: StringDictionary[js.Function1[/* event */ StringDictionary[js.Any], js.Any]]): Component = ^.asInstanceOf[js.Dynamic].applyDynamic("on")(events.asInstanceOf[js.Any]).asInstanceOf[Component]
-  
-  inline def once(eventName: String, handlerToAttach: js.Function1[/* event */ StringDictionary[js.Any], js.Any]): Component = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(eventName.asInstanceOf[js.Any], handlerToAttach.asInstanceOf[js.Any])).asInstanceOf[Component]
-  inline def once(events: StringDictionary[js.Function1[/* event */ StringDictionary[js.Any], js.Any]]): Component = ^.asInstanceOf[js.Dynamic].applyDynamic("once")(events.asInstanceOf[js.Any]).asInstanceOf[Component]
-  
-  inline def trigger(eventName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(eventName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def trigger(eventName: String, customEvent: StringDictionary[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(eventName.asInstanceOf[js.Any], customEvent.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("@egjs/component", "ComponentEvent")
   @js.native
-  trait Component extends StObject {
+  open class ComponentEventCls[TYPE /* <: String */, THIS] protected ()
+    extends StObject
+       with DefaultProps[TYPE, THIS] {
+    def this(eventType: TYPE) = this()
     
-    def hasOn(eventName: String): Boolean = js.native
+    /* CompleteClass */
+    var currentTarget: THIS = js.native
     
-    def off(): Component = js.native
-    def off(eventName: String): Component = js.native
-    def off(eventName: String, handlerToAttach: js.Function1[/* event */ StringDictionary[js.Any], js.Any]): Component = js.native
-    def off(eventName: Unit, handlerToAttach: js.Function1[/* event */ StringDictionary[js.Any], js.Any]): Component = js.native
+    /* CompleteClass */
+    var eventType: TYPE = js.native
     
-    def on(eventName: String, handlerToAttach: js.Function1[/* event */ StringDictionary[js.Any], js.Any]): Component = js.native
-    def on(events: StringDictionary[js.Function1[/* event */ StringDictionary[js.Any], js.Any]]): Component = js.native
+    /* CompleteClass */
+    override def isCanceled(): Boolean = js.native
     
-    def once(eventName: String, handlerToAttach: js.Function1[/* event */ StringDictionary[js.Any], js.Any]): Component = js.native
-    def once(events: StringDictionary[js.Function1[/* event */ StringDictionary[js.Any], js.Any]]): Component = js.native
-    
-    var options: StringDictionary[js.Any] = js.native
-    
-    def trigger(eventName: String): Boolean = js.native
-    def trigger(eventName: String, customEvent: StringDictionary[js.Any]): Boolean = js.native
+    /* CompleteClass */
+    override def stop(): Unit = js.native
   }
 }

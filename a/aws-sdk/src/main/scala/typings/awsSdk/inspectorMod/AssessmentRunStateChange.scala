@@ -14,11 +14,11 @@ trait AssessmentRunStateChange extends StObject {
   /**
     * The last time the assessment run state changed.
     */
-  var stateChangedAt: Timestamp
+  var stateChangedAt: js.Date
 }
 object AssessmentRunStateChange {
   
-  inline def apply(state: AssessmentRunState, stateChangedAt: Timestamp): AssessmentRunStateChange = {
+  inline def apply(state: AssessmentRunState, stateChangedAt: js.Date): AssessmentRunStateChange = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any], stateChangedAt = stateChangedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssessmentRunStateChange]
   }
@@ -27,6 +27,6 @@ object AssessmentRunStateChange {
     
     inline def setState(value: AssessmentRunState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    inline def setStateChangedAt(value: Timestamp): Self = StObject.set(x, "stateChangedAt", value.asInstanceOf[js.Any])
+    inline def setStateChangedAt(value: js.Date): Self = StObject.set(x, "stateChangedAt", value.asInstanceOf[js.Any])
   }
 }

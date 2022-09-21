@@ -12,10 +12,10 @@ trait GetFileOptions extends StObject {
   /**
     * A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult object that is passed to a callback.
     */
-  var asyncContext: js.UndefOr[js.Any] = js.undefined
+  var asyncContext: js.UndefOr[Any] = js.undefined
   
   /**
-    * The the size of the slices in bytes. The maximum (and the default) is 4194304 (4MB).
+    * The size of the slices in bytes. The maximum (and the default) is 4194304 (4MB).
     */
   var sliceSize: js.UndefOr[Double] = js.undefined
 }
@@ -28,7 +28,7 @@ object GetFileOptions {
   
   extension [Self <: GetFileOptions](x: Self) {
     
-    inline def setAsyncContext(value: js.Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
+    inline def setAsyncContext(value: Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
     
     inline def setAsyncContextUndefined: Self = StObject.set(x, "asyncContext", js.undefined)
     

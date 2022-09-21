@@ -1,5 +1,11 @@
 package typings.carbonComponents
 
+import typings.carbonComponents.anon.Details
+import typings.carbonComponents.anon.Dictx
+import typings.carbonComponents.anon.PartialTooltipOptions
+import typings.std.Element
+import typings.std.Event
+import typings.std.HTMLElement
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,25 +15,11 @@ object tooltipMod {
   
   @JSImport("carbon-components/components/tooltip/tooltip", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Tooltip {
-    def this(element: js.Any, options: js.Any) = this()
-    
-    /* CompleteClass */
-    override def _handleClick(hasRelatedTargetTypeHadContextMenuDetails: js.Any): Unit = js.native
-    
-    /* CompleteClass */
-    var _hasContextMenu: Boolean = js.native
-    
-    /* CompleteClass */
-    override def _hookOn(element: js.Any): Unit = js.native
-    
-    /* CompleteClass */
-    override def changeState(state: js.Any, detail: js.Any, callback: js.Any): Unit = js.native
-    
-    /* CompleteClass */
-    override def createdByEvent(event: js.Any): Unit = js.native
+    def this(element: HTMLElement) = this()
+    def this(element: HTMLElement, options: PartialTooltipOptions) = this()
   }
   object default {
     
@@ -38,47 +30,69 @@ object tooltipMod {
     /* static member */
     @JSImport("carbon-components/components/tooltip/tooltip", "default.components")
     @js.native
-    def components: WeakMap[js.Object, js.Any] = js.native
-    inline def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
+    def components: WeakMap[js.Object, Any] = js.native
+    inline def components_=(x: WeakMap[js.Object, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped any */ trait Tooltip extends StObject {
+  - Dropped any */ @js.native
+  trait Tooltip extends StObject {
     
-    def _handleClick(hasRelatedTargetTypeHadContextMenuDetails: js.Any): Unit
+    def _handleClick(hasRelatedTargetTypeHadContextMenuDetails: Details): Unit = js.native
     
-    var _hasContextMenu: Boolean
+    var _hasContextMenu: Boolean = js.native
     
-    def _hookOn(element: js.Any): Unit
+    def _hookOn(element: HTMLElement): Unit = js.native
     
-    def changeState(state: js.Any, detail: js.Any, callback: js.Any): Unit
+    def changeState(state: String, detail: js.Object): Unit = js.native
+    def changeState(state: String, detail: js.Object, callback: js.Function0[Unit]): Unit = js.native
     
-    def createdByEvent(event: js.Any): Unit
+    def createdByEvent(event: Event): Unit = js.native
   }
-  object Tooltip {
+  
+  trait TooltipOptions extends StObject {
+    
+    var attribTooltipTarget: String
+    
+    var classShown: String
+    
+    var initEventNames: js.Array[String]
+    
+    def objMenuOffset(menuBody: Element, menuDirection: String): js.UndefOr[Dictx]
+    
+    var selectorContent: String
+    
+    var selectorInit: String
+  }
+  object TooltipOptions {
     
     inline def apply(
-      _handleClick: js.Any => Unit,
-      _hasContextMenu: Boolean,
-      _hookOn: js.Any => Unit,
-      changeState: (js.Any, js.Any, js.Any) => Unit,
-      createdByEvent: js.Any => Unit
-    ): Tooltip = {
-      val __obj = js.Dynamic.literal(_handleClick = js.Any.fromFunction1(_handleClick), _hasContextMenu = _hasContextMenu.asInstanceOf[js.Any], _hookOn = js.Any.fromFunction1(_hookOn), changeState = js.Any.fromFunction3(changeState), createdByEvent = js.Any.fromFunction1(createdByEvent))
-      __obj.asInstanceOf[Tooltip]
+      attribTooltipTarget: String,
+      classShown: String,
+      initEventNames: js.Array[String],
+      objMenuOffset: (Element, String) => js.UndefOr[Dictx],
+      selectorContent: String,
+      selectorInit: String
+    ): TooltipOptions = {
+      val __obj = js.Dynamic.literal(attribTooltipTarget = attribTooltipTarget.asInstanceOf[js.Any], classShown = classShown.asInstanceOf[js.Any], initEventNames = initEventNames.asInstanceOf[js.Any], objMenuOffset = js.Any.fromFunction2(objMenuOffset), selectorContent = selectorContent.asInstanceOf[js.Any], selectorInit = selectorInit.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TooltipOptions]
     }
     
-    extension [Self <: Tooltip](x: Self) {
+    extension [Self <: TooltipOptions](x: Self) {
       
-      inline def setChangeState(value: (js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "changeState", js.Any.fromFunction3(value))
+      inline def setAttribTooltipTarget(value: String): Self = StObject.set(x, "attribTooltipTarget", value.asInstanceOf[js.Any])
       
-      inline def setCreatedByEvent(value: js.Any => Unit): Self = StObject.set(x, "createdByEvent", js.Any.fromFunction1(value))
+      inline def setClassShown(value: String): Self = StObject.set(x, "classShown", value.asInstanceOf[js.Any])
       
-      inline def set_handleClick(value: js.Any => Unit): Self = StObject.set(x, "_handleClick", js.Any.fromFunction1(value))
+      inline def setInitEventNames(value: js.Array[String]): Self = StObject.set(x, "initEventNames", value.asInstanceOf[js.Any])
       
-      inline def set_hasContextMenu(value: Boolean): Self = StObject.set(x, "_hasContextMenu", value.asInstanceOf[js.Any])
+      inline def setInitEventNamesVarargs(value: String*): Self = StObject.set(x, "initEventNames", js.Array(value*))
       
-      inline def set_hookOn(value: js.Any => Unit): Self = StObject.set(x, "_hookOn", js.Any.fromFunction1(value))
+      inline def setObjMenuOffset(value: (Element, String) => js.UndefOr[Dictx]): Self = StObject.set(x, "objMenuOffset", js.Any.fromFunction2(value))
+      
+      inline def setSelectorContent(value: String): Self = StObject.set(x, "selectorContent", value.asInstanceOf[js.Any])
+      
+      inline def setSelectorInit(value: String): Self = StObject.set(x, "selectorInit", value.asInstanceOf[js.Any])
     }
   }
 }

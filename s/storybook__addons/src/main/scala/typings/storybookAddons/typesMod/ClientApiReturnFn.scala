@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ClientApiReturnFn[StoryFnReturnType] extends StObject {
   
-  def apply(args: js.Any*): StoryApi[StoryFnReturnType] = js.native
+  def apply(args: Any*): StoryApi[StoryFnReturnType] = js.native
 }

@@ -1,18 +1,15 @@
 package typings.hapiPino
 
 import org.scalablytyped.runtime.Shortcut
-import org.scalablytyped.runtime.StringDictionary
 import typings.hapiHapi.mod.Plugin
 import typings.hapiHapi.mod.Request
 import typings.hapiPino.anon.Dictkey
 import typings.hapiPino.anon.keyinLevelstring
 import typings.hapiPino.hapiPinoBooleans.`false`
 import typings.node.processMod.global.NodeJS.WriteStream
-import typings.pino.mod.Level
-import typings.pino.mod.Logger
-import typings.pino.mod.PrettyOptions
-import typings.pino.mod.SerializerFn
-import typings.pino.mod.redactOptions
+import typings.pino.mod.pino.Level
+import typings.pino.mod.pino.Logger
+import typings.pino.mod.pino.LoggerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,21 +20,37 @@ object mod extends Shortcut {
   @js.native
   val ^ : Plugin[Options] = js.native
   
-  trait Options extends StObject {
+  trait Options
+    extends StObject
+       with LoggerOptions {
     
     var allTags: js.UndefOr[Level] = js.undefined
     
+    var customRequestCompleteMessage: js.UndefOr[js.Function2[/* req */ Request, /* responseTime */ Double, String]] = js.undefined
+    
+    var customRequestErrorMessage: js.UndefOr[js.Function2[/* req */ Request, /* error */ js.Error, String]] = js.undefined
+    
+    var customRequestStartMessage: js.UndefOr[js.Function1[/* req */ Request, String]] = js.undefined
+    
     var getChildBindings: js.UndefOr[js.Function1[/* req */ Request, Dictkey]] = js.undefined
+    
+    var ignoreFunc: js.UndefOr[js.Function2[/* options */ this.type, /* request */ Request, Boolean]] = js.undefined
     
     var ignorePaths: js.UndefOr[js.Array[String]] = js.undefined
     
-    var instance: js.UndefOr[Logger] = js.undefined
+    var ignoreTags: js.UndefOr[js.Array[String]] = js.undefined
     
-    var level: js.UndefOr[Level] = js.undefined
+    var ignoredEventTags: js.UndefOr[js.Array[js.Object]] = js.undefined
+    
+    var instance: js.UndefOr[Logger[LoggerOptions]] = js.undefined
     
     var logEvents: js.UndefOr[js.Array[String] | `false` | Null] = js.undefined
     
+    var logPathParams: js.UndefOr[Boolean] = js.undefined
+    
     var logPayload: js.UndefOr[Boolean] = js.undefined
+    
+    var logQueryParams: js.UndefOr[Boolean] = js.undefined
     
     var logRequestComplete: js.UndefOr[Boolean | (js.Function1[/* req */ Request, Boolean])] = js.undefined
     
@@ -47,15 +60,14 @@ object mod extends Shortcut {
     
     var mergeHapiLogData: js.UndefOr[Boolean] = js.undefined
     
-    var prettyPrint: js.UndefOr[Boolean | PrettyOptions] = js.undefined
-    
-    var redact: js.UndefOr[js.Array[String] | redactOptions] = js.undefined
-    
-    var serializers: js.UndefOr[Serializers] = js.undefined
-    
     var stream: js.UndefOr[WriteStream] = js.undefined
     
     var tags: js.UndefOr[keyinLevelstring] = js.undefined
+    
+    @JSName("timestamp")
+    var timestamp_Options: js.UndefOr[Boolean | js.Function0[String]] = js.undefined
+    
+    var wrapSerializers: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -70,23 +82,47 @@ object mod extends Shortcut {
       
       inline def setAllTagsUndefined: Self = StObject.set(x, "allTags", js.undefined)
       
+      inline def setCustomRequestCompleteMessage(value: (/* req */ Request, /* responseTime */ Double) => String): Self = StObject.set(x, "customRequestCompleteMessage", js.Any.fromFunction2(value))
+      
+      inline def setCustomRequestCompleteMessageUndefined: Self = StObject.set(x, "customRequestCompleteMessage", js.undefined)
+      
+      inline def setCustomRequestErrorMessage(value: (/* req */ Request, /* error */ js.Error) => String): Self = StObject.set(x, "customRequestErrorMessage", js.Any.fromFunction2(value))
+      
+      inline def setCustomRequestErrorMessageUndefined: Self = StObject.set(x, "customRequestErrorMessage", js.undefined)
+      
+      inline def setCustomRequestStartMessage(value: /* req */ Request => String): Self = StObject.set(x, "customRequestStartMessage", js.Any.fromFunction1(value))
+      
+      inline def setCustomRequestStartMessageUndefined: Self = StObject.set(x, "customRequestStartMessage", js.undefined)
+      
       inline def setGetChildBindings(value: /* req */ Request => Dictkey): Self = StObject.set(x, "getChildBindings", js.Any.fromFunction1(value))
       
       inline def setGetChildBindingsUndefined: Self = StObject.set(x, "getChildBindings", js.undefined)
+      
+      inline def setIgnoreFunc(value: (Options, /* request */ Request) => Boolean): Self = StObject.set(x, "ignoreFunc", js.Any.fromFunction2(value))
+      
+      inline def setIgnoreFuncUndefined: Self = StObject.set(x, "ignoreFunc", js.undefined)
       
       inline def setIgnorePaths(value: js.Array[String]): Self = StObject.set(x, "ignorePaths", value.asInstanceOf[js.Any])
       
       inline def setIgnorePathsUndefined: Self = StObject.set(x, "ignorePaths", js.undefined)
       
-      inline def setIgnorePathsVarargs(value: String*): Self = StObject.set(x, "ignorePaths", js.Array(value :_*))
+      inline def setIgnorePathsVarargs(value: String*): Self = StObject.set(x, "ignorePaths", js.Array(value*))
       
-      inline def setInstance(value: Logger): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+      inline def setIgnoreTags(value: js.Array[String]): Self = StObject.set(x, "ignoreTags", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreTagsUndefined: Self = StObject.set(x, "ignoreTags", js.undefined)
+      
+      inline def setIgnoreTagsVarargs(value: String*): Self = StObject.set(x, "ignoreTags", js.Array(value*))
+      
+      inline def setIgnoredEventTags(value: js.Array[js.Object]): Self = StObject.set(x, "ignoredEventTags", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoredEventTagsUndefined: Self = StObject.set(x, "ignoredEventTags", js.undefined)
+      
+      inline def setIgnoredEventTagsVarargs(value: js.Object*): Self = StObject.set(x, "ignoredEventTags", js.Array(value*))
+      
+      inline def setInstance(value: Logger[LoggerOptions]): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
       
       inline def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
-      
-      inline def setLevel(value: Level): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
-      
-      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
       inline def setLogEvents(value: js.Array[String] | `false`): Self = StObject.set(x, "logEvents", value.asInstanceOf[js.Any])
       
@@ -94,11 +130,19 @@ object mod extends Shortcut {
       
       inline def setLogEventsUndefined: Self = StObject.set(x, "logEvents", js.undefined)
       
-      inline def setLogEventsVarargs(value: String*): Self = StObject.set(x, "logEvents", js.Array(value :_*))
+      inline def setLogEventsVarargs(value: String*): Self = StObject.set(x, "logEvents", js.Array(value*))
+      
+      inline def setLogPathParams(value: Boolean): Self = StObject.set(x, "logPathParams", value.asInstanceOf[js.Any])
+      
+      inline def setLogPathParamsUndefined: Self = StObject.set(x, "logPathParams", js.undefined)
       
       inline def setLogPayload(value: Boolean): Self = StObject.set(x, "logPayload", value.asInstanceOf[js.Any])
       
       inline def setLogPayloadUndefined: Self = StObject.set(x, "logPayload", js.undefined)
+      
+      inline def setLogQueryParams(value: Boolean): Self = StObject.set(x, "logQueryParams", value.asInstanceOf[js.Any])
+      
+      inline def setLogQueryParamsUndefined: Self = StObject.set(x, "logQueryParams", js.undefined)
       
       inline def setLogRequestComplete(value: Boolean | (js.Function1[/* req */ Request, Boolean])): Self = StObject.set(x, "logRequestComplete", value.asInstanceOf[js.Any])
       
@@ -120,20 +164,6 @@ object mod extends Shortcut {
       
       inline def setMergeHapiLogDataUndefined: Self = StObject.set(x, "mergeHapiLogData", js.undefined)
       
-      inline def setPrettyPrint(value: Boolean | PrettyOptions): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
-      
-      inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
-      
-      inline def setRedact(value: js.Array[String] | redactOptions): Self = StObject.set(x, "redact", value.asInstanceOf[js.Any])
-      
-      inline def setRedactUndefined: Self = StObject.set(x, "redact", js.undefined)
-      
-      inline def setRedactVarargs(value: String*): Self = StObject.set(x, "redact", js.Array(value :_*))
-      
-      inline def setSerializers(value: Serializers): Self = StObject.set(x, "serializers", value.asInstanceOf[js.Any])
-      
-      inline def setSerializersUndefined: Self = StObject.set(x, "serializers", js.undefined)
-      
       inline def setStream(value: WriteStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
       inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
@@ -141,10 +171,18 @@ object mod extends Shortcut {
       inline def setTags(value: keyinLevelstring): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
       inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      
+      inline def setTimestamp(value: Boolean | js.Function0[String]): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      
+      inline def setTimestampFunction0(value: () => String): Self = StObject.set(x, "timestamp", js.Any.fromFunction0(value))
+      
+      inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+      
+      inline def setWrapSerializers(value: Boolean): Self = StObject.set(x, "wrapSerializers", value.asInstanceOf[js.Any])
+      
+      inline def setWrapSerializersUndefined: Self = StObject.set(x, "wrapSerializers", js.undefined)
     }
   }
-  
-  type Serializers = StringDictionary[SerializerFn]
   
   type _To = Plugin[Options]
   
@@ -156,35 +194,35 @@ object mod extends Shortcut {
     
     trait Request extends StObject {
       
-      var logger: Logger
+      var logger: Logger[LoggerOptions]
     }
     object Request {
       
-      inline def apply(logger: Logger): typings.hapiPino.mod.hapiHapiAugmentingMod.Request = {
+      inline def apply(logger: Logger[LoggerOptions]): typings.hapiPino.mod.hapiHapiAugmentingMod.Request = {
         val __obj = js.Dynamic.literal(logger = logger.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.hapiPino.mod.hapiHapiAugmentingMod.Request]
       }
       
       extension [Self <: typings.hapiPino.mod.hapiHapiAugmentingMod.Request](x: Self) {
         
-        inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+        inline def setLogger(value: Logger[LoggerOptions]): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       }
     }
     
     trait Server extends StObject {
       
-      var logger: Logger
+      var logger: Logger[LoggerOptions]
     }
     object Server {
       
-      inline def apply(logger: Logger): Server = {
+      inline def apply(logger: Logger[LoggerOptions]): Server = {
         val __obj = js.Dynamic.literal(logger = logger.asInstanceOf[js.Any])
         __obj.asInstanceOf[Server]
       }
       
       extension [Self <: Server](x: Self) {
         
-        inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+        inline def setLogger(value: Logger[LoggerOptions]): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       }
     }
   }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Boundary extends StObject {
   
-  var boundary: js.UndefOr[js.Array[js.Array[Latitude]]] = js.undefined
+  var boundary: js.UndefOr[js.Array[String]] = js.undefined
   
   var cachePolicy: js.UndefOr[String] = js.undefined
   
@@ -31,11 +31,11 @@ object Boundary {
   
   extension [Self <: Boundary](x: Self) {
     
-    inline def setBoundary(value: js.Array[js.Array[Latitude]]): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
+    inline def setBoundary(value: js.Array[String]): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
     
     inline def setBoundaryUndefined: Self = StObject.set(x, "boundary", js.undefined)
     
-    inline def setBoundaryVarargs(value: js.Array[Latitude]*): Self = StObject.set(x, "boundary", js.Array(value :_*))
+    inline def setBoundaryVarargs(value: String*): Self = StObject.set(x, "boundary", js.Array(value*))
     
     inline def setCachePolicy(value: String): Self = StObject.set(x, "cachePolicy", value.asInstanceOf[js.Any])
     

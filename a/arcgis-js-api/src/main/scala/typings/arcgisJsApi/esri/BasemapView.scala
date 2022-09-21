@@ -26,6 +26,8 @@ trait BasemapView
   /**
     * Value is `true` when the basemap is updating; for example, if it is in the process of fetching data.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-BasemapView.html#updating)
     */
   val updating: Boolean = js.native

@@ -12,7 +12,7 @@ trait DescribeDashboardResponse extends StObject {
   var Dashboard: js.UndefOr[typings.awsSdk.quicksightMod.Dashboard] = js.undefined
   
   /**
-    * The AWS request ID for this operation.
+    * The Amazon Web Services request ID for this operation.
     */
   var RequestId: js.UndefOr[String] = js.undefined
   

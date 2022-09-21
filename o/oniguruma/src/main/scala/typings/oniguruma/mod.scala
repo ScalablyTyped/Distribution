@@ -1,7 +1,6 @@
 package typings.oniguruma
 
 import typings.oniguruma.anon.CaptureIndexmatchstring
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ object mod {
   
   @JSImport("oniguruma", "OnigRegExp")
   @js.native
-  class OnigRegExp protected () extends StObject {
+  open class OnigRegExp protected () extends StObject {
     /**
       * Create a new regex with the given pattern
       * @param pattern A string pattern
@@ -26,7 +25,7 @@ object mod {
       * @return An array of CaptureIndex objects which have been augmented with
       *         the original text that triggered the match
       */
-    def captureIndicesForMatch(string: js.Any, `match`: Match): js.Array[CaptureIndexmatchstring] = js.native
+    def captureIndicesForMatch(string: Any, `match`: Match): js.Array[CaptureIndexmatchstring] = js.native
     
     /** The OnigScanner instance used internally for regex matching */
     val scanner: OnigScanner = js.native
@@ -81,7 +80,7 @@ object mod {
   
   @JSImport("oniguruma", "OnigScanner")
   @js.native
-  class OnigScanner protected () extends StObject {
+  open class OnigScanner protected () extends StObject {
     /**
       * Create a new scanner with the given patterns.
       * @param patterns An array of string patterns.
@@ -93,7 +92,7 @@ object mod {
       * @param value A value of any type
       * @return A number representing 'value'
       */
-    /* private */ def convertToNumber(value: js.Any): Double = js.native
+    /* private */ def convertToNumber(value: Any): Double = js.native
     
     /**
       * Coerce the provided value into either a string primitive or a wrapped
@@ -101,7 +100,7 @@ object mod {
       * @param value A value of any type
       * @return A string primitive or OnigString object representing 'value'
       */
-    /* private */ def convertToString(value: js.Any): String | OnigString = js.native
+    /* private */ def convertToString(value: Any): String | OnigString = js.native
     
     /**
       * Find the next match from the beginning of a string
@@ -131,7 +130,7 @@ object mod {
   
   @JSImport("oniguruma", "OnigString")
   @js.native
-  class OnigString protected () extends StObject {
+  open class OnigString protected () extends StObject {
     /**
       * Wrap a string primitive in a new OnigString object
       * @param string The string primitive to be wrapped
@@ -153,7 +152,7 @@ object mod {
     def substring(start: Double, end: Double): String = js.native
   }
   
-  type Callback[T] = js.Function2[/* error */ Error, /* match */ T, Unit]
+  type Callback[T] = js.Function2[/* error */ js.Error, /* match */ T, Unit]
   
   trait CaptureIndex extends StObject {
     
@@ -207,7 +206,7 @@ object mod {
       
       inline def setCaptureIndices(value: js.Array[CaptureIndex]): Self = StObject.set(x, "captureIndices", value.asInstanceOf[js.Any])
       
-      inline def setCaptureIndicesVarargs(value: CaptureIndex*): Self = StObject.set(x, "captureIndices", js.Array(value :_*))
+      inline def setCaptureIndicesVarargs(value: CaptureIndex*): Self = StObject.set(x, "captureIndices", js.Array(value*))
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     }

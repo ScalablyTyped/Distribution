@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListServicesResponse extends StObject {
   
   /**
-    * If the response contains NextToken, submit another ListServices request to get the next group of results. Specify the value of NextToken from the previous response in the next request.  AWS Cloud Map gets MaxResults services and then filters them based on the specified criteria. It's possible that no services in the first MaxResults services matched the specified criteria but that subsequent groups of MaxResults services do contain services that match the criteria. 
+    * If the response contains NextToken, submit another ListServices request to get the next group of results. Specify the value of NextToken from the previous response in the next request.  Cloud Map gets MaxResults services and then filters them based on the specified criteria. It's possible that no services in the first MaxResults services matched the specified criteria but that subsequent groups of MaxResults services do contain services that match the criteria. 
     */
   var NextToken: js.UndefOr[typings.awsSdk.servicediscoveryMod.NextToken] = js.undefined
   
@@ -33,6 +33,6 @@ object ListServicesResponse {
     
     inline def setServicesUndefined: Self = StObject.set(x, "Services", js.undefined)
     
-    inline def setServicesVarargs(value: ServiceSummary*): Self = StObject.set(x, "Services", js.Array(value :_*))
+    inline def setServicesVarargs(value: ServiceSummary*): Self = StObject.set(x, "Services", js.Array(value*))
   }
 }

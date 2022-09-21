@@ -10,10 +10,10 @@ Turn a writable and readable stream into a streams2 duplex stream with support f
 | ------------------ | :-------------: |
 | Full name          | duplexify |
 | Keywords           | duplex, streams2, streams, stream, writable, readable, async |
-| # releases         | 3 |
-| # dependents       | 384 |
-| # downloads        | 658745526 |
-| # stars            | 10 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 6.843136666666667E7 |
+| # stars            | 182.0 |
 
 ## Links
 - [Homepage](https://github.com/mafintosh/duplexify)

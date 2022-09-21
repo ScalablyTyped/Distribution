@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@hapi/ammo" : "5.0.1"
+      "@hapi/ammo" : "6.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@hapi/ammo" : "5.0.1"
+      "@hapi/ammo" : "6.0.0"
     }
   ],
   "compile-devDependencies" : [

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react", "ResizeGroupBase")
 @js.native
-class ResizeGroupBase protected ()
+open class ResizeGroupBase protected ()
   extends typings.officeUiFabricReact.libResizeGroupMod.ResizeGroupBase {
   def this(props: IResizeGroupProps) = this()
 }

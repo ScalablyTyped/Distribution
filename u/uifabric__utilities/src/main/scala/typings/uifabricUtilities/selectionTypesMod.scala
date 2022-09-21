@@ -10,6 +10,10 @@ object selectionTypesMod {
   @js.native
   val SELECTION_CHANGE: /* "change" */ String = js.native
   
+  @JSImport("@uifabric/utilities/lib/selection/Selection.types", "SELECTION_ITEMS_CHANGE")
+  @js.native
+  val SELECTION_ITEMS_CHANGE: /* "items-change" */ String = js.native
+  
   @js.native
   sealed trait SelectionDirection extends StObject
   @JSImport("@uifabric/utilities/lib/selection/Selection.types", "SelectionDirection")
@@ -87,6 +91,8 @@ object selectionTypesMod {
     
     var count: Double = js.native
     
+    var getItemIndex: js.UndefOr[js.Function1[/* key */ String, Double]] = js.native
+    
     def getItems(): js.Array[TItem] = js.native
     
     def getSelectedCount(): Double = js.native
@@ -113,6 +119,10 @@ object selectionTypesMod {
     def selectToKey(key: String): Unit = js.native
     def selectToKey(key: String, clearSelection: Boolean): Unit = js.native
     
+    var selectToRange: js.UndefOr[
+        js.Function3[/* index */ Double, /* count */ Double, /* clearSelection */ js.UndefOr[Boolean], Unit]
+      ] = js.native
+    
     def setAllSelected(isAllSelected: Boolean): Unit = js.native
     
     def setChangeEvents(isEnabled: Boolean): Unit = js.native
@@ -125,6 +135,16 @@ object selectionTypesMod {
     def setKeySelected(key: String, isSelected: Boolean, shouldAnchor: Boolean): Unit = js.native
     
     var setModal: js.UndefOr[js.Function1[/* isModal */ Boolean, Unit]] = js.native
+    
+    var setRangeSelected: js.UndefOr[
+        js.Function4[
+          /* fromIndex */ Double, 
+          /* count */ Double, 
+          /* isSelected */ Boolean, 
+          /* shouldAnchor */ Boolean, 
+          Unit
+        ]
+      ] = js.native
     
     def toggleAllSelected(): Unit = js.native
     

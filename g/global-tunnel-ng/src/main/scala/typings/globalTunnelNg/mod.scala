@@ -40,7 +40,7 @@ object mod {
     
     var host: String
     
-    var originHttpsOptions: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var originHttpsOptions: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     var port: Double
     
@@ -48,7 +48,7 @@ object mod {
     
     var proxyAuth: js.UndefOr[String] = js.undefined
     
-    var proxyHttpsOptions: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var proxyHttpsOptions: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     var sockets: js.UndefOr[Double] = js.undefined
   }
@@ -67,7 +67,7 @@ object mod {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      inline def setOriginHttpsOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "originHttpsOptions", value.asInstanceOf[js.Any])
+      inline def setOriginHttpsOptions(value: StringDictionary[Any]): Self = StObject.set(x, "originHttpsOptions", value.asInstanceOf[js.Any])
       
       inline def setOriginHttpsOptionsUndefined: Self = StObject.set(x, "originHttpsOptions", js.undefined)
       
@@ -81,7 +81,7 @@ object mod {
       
       inline def setProxyAuthUndefined: Self = StObject.set(x, "proxyAuth", js.undefined)
       
-      inline def setProxyHttpsOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "proxyHttpsOptions", value.asInstanceOf[js.Any])
+      inline def setProxyHttpsOptions(value: StringDictionary[Any]): Self = StObject.set(x, "proxyHttpsOptions", value.asInstanceOf[js.Any])
       
       inline def setProxyHttpsOptionsUndefined: Self = StObject.set(x, "proxyHttpsOptions", js.undefined)
       

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.Scene")
 @js.native
-class Scene protected ()
+open class Scene protected ()
   extends StObject
      with typings.babylonjs.BABYLON.Scene {
   /**
@@ -71,7 +71,6 @@ object Scene {
   
   /**
     * Factory used to create the default material.
-    * @param name The name of the material to create
     * @param scene The scene to create the material for
     * @returns The default material
     */
@@ -80,22 +79,22 @@ object Scene {
   /** The fog density is following an exponential function */
   @JSGlobal("BABYLON.Scene.FOGMODE_EXP")
   @js.native
-  val FOGMODE_EXP: Double = js.native
+  val FOGMODE_EXP: /* 1 */ Double = js.native
   
   /** The fog density is following an exponential function faster than FOGMODE_EXP */
   @JSGlobal("BABYLON.Scene.FOGMODE_EXP2")
   @js.native
-  val FOGMODE_EXP2: Double = js.native
+  val FOGMODE_EXP2: /* 2 */ Double = js.native
   
   /** The fog density is following a linear function. */
   @JSGlobal("BABYLON.Scene.FOGMODE_LINEAR")
   @js.native
-  val FOGMODE_LINEAR: Double = js.native
+  val FOGMODE_LINEAR: /* 3 */ Double = js.native
   
   /** The fog is deactivated */
   @JSGlobal("BABYLON.Scene.FOGMODE_NONE")
   @js.native
-  val FOGMODE_NONE: Double = js.native
+  val FOGMODE_NONE: /* 0 */ Double = js.native
   
   /**
     * Gets or sets the maximum deltatime when deterministic lock step is enabled

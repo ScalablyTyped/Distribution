@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("monaco-editor", "editor.FindMatch")
 @js.native
-class FindMatch () extends StObject {
+open class FindMatch () extends StObject {
   
   var _findMatchBrand: Unit = js.native
   

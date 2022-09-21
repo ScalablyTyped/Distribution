@@ -22,6 +22,8 @@ trait AttributionViewModel
   /**
     * The view model's state.
     *
+    * @default disabled
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Attribution-AttributionViewModel.html#state)
     */
   val state: disabled | ready | loading = js.native

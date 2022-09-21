@@ -6,18 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ResolvedCollatorOptions extends StObject {
   
+  /* standard es5 */
   var caseFirst: String
   
+  /* standard es5 */
   var collation: String
   
+  /* standard es5 */
   var ignorePunctuation: Boolean
   
+  /* standard es5 */
   var locale: String
   
+  /* standard es5 */
   var numeric: Boolean
   
+  /* standard es5 */
   var sensitivity: String
   
+  /* standard es5 */
   var usage: String
 }
 object ResolvedCollatorOptions {

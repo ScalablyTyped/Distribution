@@ -43,6 +43,9 @@ trait Permission extends StObject {
   /** Identifies what kind of resource this is. Value: the fixed string "drive#permission". */
   var kind: js.UndefOr[String] = js.undefined
   
+  /** Whether the account associated with this permission is a pending owner. Only populated for user type permissions for files that are not in a shared drive. */
+  var pendingOwner: js.UndefOr[Boolean] = js.undefined
+  
   /** Details of whether the permissions on this shared drive item are inherited or directly on this item. This is an output-only field which is present only for shared drive items. */
   var permissionDetails: js.UndefOr[js.Array[Inherited]] = js.undefined
   
@@ -117,11 +120,15 @@ object Permission {
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
+    inline def setPendingOwner(value: Boolean): Self = StObject.set(x, "pendingOwner", value.asInstanceOf[js.Any])
+    
+    inline def setPendingOwnerUndefined: Self = StObject.set(x, "pendingOwner", js.undefined)
+    
     inline def setPermissionDetails(value: js.Array[Inherited]): Self = StObject.set(x, "permissionDetails", value.asInstanceOf[js.Any])
     
     inline def setPermissionDetailsUndefined: Self = StObject.set(x, "permissionDetails", js.undefined)
     
-    inline def setPermissionDetailsVarargs(value: Inherited*): Self = StObject.set(x, "permissionDetails", js.Array(value :_*))
+    inline def setPermissionDetailsVarargs(value: Inherited*): Self = StObject.set(x, "permissionDetails", js.Array(value*))
     
     inline def setPhotoLink(value: String): Self = StObject.set(x, "photoLink", value.asInstanceOf[js.Any])
     
@@ -135,7 +142,7 @@ object Permission {
     
     inline def setTeamDrivePermissionDetailsUndefined: Self = StObject.set(x, "teamDrivePermissionDetails", js.undefined)
     
-    inline def setTeamDrivePermissionDetailsVarargs(value: InheritedFrom*): Self = StObject.set(x, "teamDrivePermissionDetails", js.Array(value :_*))
+    inline def setTeamDrivePermissionDetailsVarargs(value: InheritedFrom*): Self = StObject.set(x, "teamDrivePermissionDetails", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

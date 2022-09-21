@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.TagRequest")
 @js.native
-class TagRequest ()
+open class TagRequest ()
   extends StObject
      with typings.preloadjs.createjs.TagRequest

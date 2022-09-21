@@ -103,12 +103,6 @@ trait IObjectOptions extends StObject {
   var clipPath: js.UndefOr[Object] = js.undefined
   
   /**
-    * Function that determines clipping of an object (context is passed as a first argument)
-    * Note that context origin is at the object's center point (not left/top corner)
-    */
-  var clipTo: js.UndefOr[js.Function] = js.undefined
-  
-  /**
     * Color of controlling corners of an object (when it's active)
     */
   var cornerColor: js.UndefOr[String] = js.undefined
@@ -136,7 +130,7 @@ trait IObjectOptions extends StObject {
   /**
     * Not used by fabric, just for convenience
     */
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
   /**
     * When set to `true`, object's cache will be rerendered next render call.
@@ -282,7 +276,7 @@ trait IObjectOptions extends StObject {
   /**
     * storage for object full transform matrix
     */
-  var matrixCache: js.UndefOr[js.Any] = js.undefined
+  var matrixCache: js.UndefOr[Any] = js.undefined
   
   /**
     * Minimum allowed scale value of an object
@@ -346,7 +340,7 @@ trait IObjectOptions extends StObject {
   /**
     * storage for object transform matrix
     */
-  var ownMatrixCache: js.UndefOr[js.Any] = js.undefined
+  var ownMatrixCache: js.UndefOr[Any] = js.undefined
   
   /**
     * Padding between object and its controlling borders (in pixels)
@@ -491,11 +485,6 @@ trait IObjectOptions extends StObject {
   var top: js.UndefOr[Double] = js.undefined
   
   /**
-    * Transform matrix (similar to SVG's transform matrix)
-    */
-  var transformMatrix: js.UndefOr[js.Array[js.Any]] = js.undefined
-  
-  /**
     * When true, object's controlling corners are rendered as transparent inside (i.e. stroke instead of fill)
     */
   var transparentCorners: js.UndefOr[Boolean] = js.undefined
@@ -550,7 +539,7 @@ object IObjectOptions {
     
     inline def setBorderDashArrayUndefined: Self = StObject.set(x, "borderDashArray", js.undefined)
     
-    inline def setBorderDashArrayVarargs(value: Double*): Self = StObject.set(x, "borderDashArray", js.Array(value :_*))
+    inline def setBorderDashArrayVarargs(value: Double*): Self = StObject.set(x, "borderDashArray", js.Array(value*))
     
     inline def setBorderOpacityWhenMoving(value: Double): Self = StObject.set(x, "borderOpacityWhenMoving", value.asInstanceOf[js.Any])
     
@@ -564,7 +553,7 @@ object IObjectOptions {
     
     inline def setCachePropertiesUndefined: Self = StObject.set(x, "cacheProperties", js.undefined)
     
-    inline def setCachePropertiesVarargs(value: String*): Self = StObject.set(x, "cacheProperties", js.Array(value :_*))
+    inline def setCachePropertiesVarargs(value: String*): Self = StObject.set(x, "cacheProperties", js.Array(value*))
     
     inline def setCanvas(value: Canvas): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
     
@@ -582,10 +571,6 @@ object IObjectOptions {
     
     inline def setClipPathUndefined: Self = StObject.set(x, "clipPath", js.undefined)
     
-    inline def setClipTo(value: js.Function): Self = StObject.set(x, "clipTo", value.asInstanceOf[js.Any])
-    
-    inline def setClipToUndefined: Self = StObject.set(x, "clipTo", js.undefined)
-    
     inline def setCornerColor(value: String): Self = StObject.set(x, "cornerColor", value.asInstanceOf[js.Any])
     
     inline def setCornerColorUndefined: Self = StObject.set(x, "cornerColor", js.undefined)
@@ -594,7 +579,7 @@ object IObjectOptions {
     
     inline def setCornerDashArrayUndefined: Self = StObject.set(x, "cornerDashArray", js.undefined)
     
-    inline def setCornerDashArrayVarargs(value: Double*): Self = StObject.set(x, "cornerDashArray", js.Array(value :_*))
+    inline def setCornerDashArrayVarargs(value: Double*): Self = StObject.set(x, "cornerDashArray", js.Array(value*))
     
     inline def setCornerSize(value: Double): Self = StObject.set(x, "cornerSize", value.asInstanceOf[js.Any])
     
@@ -608,7 +593,7 @@ object IObjectOptions {
     
     inline def setCornerStyleUndefined: Self = StObject.set(x, "cornerStyle", js.undefined)
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -716,7 +701,7 @@ object IObjectOptions {
     
     inline def setLockUniScalingUndefined: Self = StObject.set(x, "lockUniScaling", js.undefined)
     
-    inline def setMatrixCache(value: js.Any): Self = StObject.set(x, "matrixCache", value.asInstanceOf[js.Any])
+    inline def setMatrixCache(value: Any): Self = StObject.set(x, "matrixCache", value.asInstanceOf[js.Any])
     
     inline def setMatrixCacheUndefined: Self = StObject.set(x, "matrixCache", js.undefined)
     
@@ -756,7 +741,7 @@ object IObjectOptions {
     
     inline def setOriginYUndefined: Self = StObject.set(x, "originY", js.undefined)
     
-    inline def setOwnMatrixCache(value: js.Any): Self = StObject.set(x, "ownMatrixCache", value.asInstanceOf[js.Any])
+    inline def setOwnMatrixCache(value: Any): Self = StObject.set(x, "ownMatrixCache", value.asInstanceOf[js.Any])
     
     inline def setOwnMatrixCacheUndefined: Self = StObject.set(x, "ownMatrixCache", js.undefined)
     
@@ -818,7 +803,7 @@ object IObjectOptions {
     
     inline def setStatePropertiesUndefined: Self = StObject.set(x, "stateProperties", js.undefined)
     
-    inline def setStatePropertiesVarargs(value: String*): Self = StObject.set(x, "stateProperties", js.Array(value :_*))
+    inline def setStatePropertiesVarargs(value: String*): Self = StObject.set(x, "stateProperties", js.Array(value*))
     
     inline def setStatefullCache(value: Boolean): Self = StObject.set(x, "statefullCache", value.asInstanceOf[js.Any])
     
@@ -830,7 +815,7 @@ object IObjectOptions {
     
     inline def setStrokeDashArrayUndefined: Self = StObject.set(x, "strokeDashArray", js.undefined)
     
-    inline def setStrokeDashArrayVarargs(value: Double*): Self = StObject.set(x, "strokeDashArray", js.Array(value :_*))
+    inline def setStrokeDashArrayVarargs(value: Double*): Self = StObject.set(x, "strokeDashArray", js.Array(value*))
     
     inline def setStrokeDashOffset(value: Double): Self = StObject.set(x, "strokeDashOffset", value.asInstanceOf[js.Any])
     
@@ -861,12 +846,6 @@ object IObjectOptions {
     inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
     inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
-    
-    inline def setTransformMatrix(value: js.Array[js.Any]): Self = StObject.set(x, "transformMatrix", value.asInstanceOf[js.Any])
-    
-    inline def setTransformMatrixUndefined: Self = StObject.set(x, "transformMatrix", js.undefined)
-    
-    inline def setTransformMatrixVarargs(value: js.Any*): Self = StObject.set(x, "transformMatrix", js.Array(value :_*))
     
     inline def setTransparentCorners(value: Boolean): Self = StObject.set(x, "transparentCorners", value.asInstanceOf[js.Any])
     

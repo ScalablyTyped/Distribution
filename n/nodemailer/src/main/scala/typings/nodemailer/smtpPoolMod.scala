@@ -13,7 +13,6 @@ import typings.nodemailer.smtpConnectionMod.AuthenticationType
 import typings.nodemailer.smtpConnectionMod.CustomAuthenticationHandlers
 import typings.nodemailer.smtpConnectionMod.DSNOptions
 import typings.nodemailer.smtpConnectionMod.ms
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +24,7 @@ object smtpPoolMod {
     */
   @JSImport("nodemailer/lib/smtp-pool", JSImport.Namespace)
   @js.native
-  class ^ () extends SMTPPool {
+  open class ^ () extends SMTPPool {
     def this(options: String) = this()
     def this(options: Options) = this()
     
@@ -34,13 +33,13 @@ object smtpPoolMod {
     
     /* CompleteClass */
     override def send(
-      mail: typings.nodemailer.mailMessageMod.^,
-      callback: js.Function2[/* err */ Error | Null, /* info */ typings.nodemailer.mod.SentMessageInfo, Unit]
+      mail: typings.nodemailer.mailMessageMod.^[SentMessageInfo],
+      callback: js.Function2[/* err */ js.Error | Null, SentMessageInfo, Unit]
     ): Unit = js.native
     
     /* CompleteClass */
     var verify: (js.UndefOr[
-        js.Function1[/* callback */ js.Function2[/* err */ Error | Null, `true`, Unit], Unit]
+        js.Function1[/* callback */ js.Function2[/* err */ js.Error | Null, `true`, Unit], Unit]
       ]) & js.UndefOr[js.Function0[js.Promise[`true`]]] = js.native
     
     /* CompleteClass */
@@ -97,7 +96,7 @@ object smtpPoolMod {
     var getSocket: js.UndefOr[
         js.Function2[
           /* options */ this.type, 
-          /* callback */ js.Function2[/* err */ Error | Null, /* socketOptions */ js.Any, Unit], 
+          /* callback */ js.Function2[/* err */ js.Error | Null, /* socketOptions */ Any, Unit], 
           Unit
         ]
       ] = js.undefined
@@ -194,7 +193,7 @@ object smtpPoolMod {
       inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
       inline def setGetSocket(
-        value: (Options, /* callback */ js.Function2[/* err */ Error | Null, /* socketOptions */ js.Any, Unit]) => Unit
+        value: (Options, /* callback */ js.Function2[/* err */ js.Error | Null, /* socketOptions */ Any, Unit]) => Unit
       ): Self = StObject.set(x, "getSocket", js.Any.fromFunction2(value))
       
       inline def setGetSocketUndefined: Self = StObject.set(x, "getSocket", js.undefined)
@@ -289,7 +288,7 @@ object smtpPoolMod {
   @js.native
   trait SMTPPool
     extends EventEmitter
-       with Transport {
+       with Transport[SentMessageInfo] {
     
     @JSName("addListener")
     def addListener_idle(event: idle, listener: js.Function0[Unit]): this.type = js.native
@@ -302,7 +301,7 @@ object smtpPoolMod {
     def emit_idle(event: idle): Boolean = js.native
     
     /** Placeholder function for creating proxy sockets. This method immediatelly returns without a socket */
-    def getSocket(options: Options, callback: js.Function2[/* err */ Error | Null, /* socketOptions */ js.Any, Unit]): Unit = js.native
+    def getSocket(options: Options, callback: js.Function2[/* err */ js.Error | Null, /* socketOptions */ Any, Unit]): Unit = js.native
     
     var idling: Boolean = js.native
     
@@ -315,7 +314,7 @@ object smtpPoolMod {
     var logger: Logger = js.native
     
     @JSName("mailer")
-    var mailer_SMTPPool: typings.nodemailer.mailerMod.^ = js.native
+    var mailer_SMTPPool: typings.nodemailer.mailerMod.^[SentMessageInfo] = js.native
     
     @JSName("on")
     def on_idle(event: idle, listener: js.Function0[Unit]): this.type = js.native
@@ -335,7 +334,7 @@ object smtpPoolMod {
     def verify_MSMTPPool(): js.Promise[`true`] = js.native
     /** Verifies SMTP configuration */
     @JSName("verify")
-    def verify_true(callback: js.Function2[/* err */ Error | Null, `true`, Unit]): Unit = js.native
+    def verify_true(callback: js.Function2[/* err */ js.Error | Null, `true`, Unit]): Unit = js.native
   }
   
   trait SentMessageInfo

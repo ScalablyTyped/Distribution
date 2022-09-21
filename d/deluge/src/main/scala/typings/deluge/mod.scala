@@ -2,6 +2,7 @@ package typings.deluge
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.deluge.anon.State
+import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -27,12 +28,22 @@ object mod {
     def add(
       magnet: String,
       dlPath: String,
-      callback: js.Function3[/* error */ String, /* result */ Boolean, /* response */ ServerResponse, Unit]
+      callback: js.Function3[
+          /* error */ String, 
+          /* result */ Boolean, 
+          /* response */ ServerResponse[IncomingMessage], 
+          Unit
+        ]
     ): Unit = js.native
     def add(
       magnet: String,
       dlPath: DownloadOptions,
-      callback: js.Function3[/* error */ String, /* result */ Boolean, /* response */ ServerResponse, Unit]
+      callback: js.Function3[
+          /* error */ String, 
+          /* result */ Boolean, 
+          /* response */ ServerResponse[IncomingMessage], 
+          Unit
+        ]
     ): Unit = js.native
     
     /**
@@ -42,7 +53,12 @@ object mod {
       */
     def connect(
       hostID: String,
-      callback: js.Function3[/* error */ String, /* result */ Boolean, /* response */ ServerResponse, Unit]
+      callback: js.Function3[
+          /* error */ String, 
+          /* result */ Boolean, 
+          /* response */ ServerResponse[IncomingMessage], 
+          Unit
+        ]
     ): Unit = js.native
     
     /**
@@ -50,7 +66,12 @@ object mod {
       * @param callback
       */
     def getHosts(
-      callback: js.Function3[/* error */ String, /* result */ js.Array[Host], /* response */ ServerResponse, Unit]
+      callback: js.Function3[
+          /* error */ String, 
+          /* result */ js.Array[Host], 
+          /* response */ ServerResponse[IncomingMessage], 
+          Unit
+        ]
     ): Unit = js.native
     
     /**
@@ -58,7 +79,12 @@ object mod {
       * @param callback
       */
     def getTorrentRecord(
-      callback: js.Function3[/* error */ String, /* result */ TorrentRecord, /* response */ ServerResponse, Unit]
+      callback: js.Function3[
+          /* error */ String, 
+          /* result */ TorrentRecord, 
+          /* response */ ServerResponse[IncomingMessage], 
+          Unit
+        ]
     ): Unit = js.native
     
     /**
@@ -66,7 +92,12 @@ object mod {
       * @param callback
       */
     def isConnected(
-      callback: js.Function3[/* error */ String, /* result */ Boolean, /* response */ ServerResponse, Unit]
+      callback: js.Function3[
+          /* error */ String, 
+          /* result */ Boolean, 
+          /* response */ ServerResponse[IncomingMessage], 
+          Unit
+        ]
     ): Unit = js.native
     
     /**
@@ -76,7 +107,12 @@ object mod {
       */
     def setCookies(
       cookies: StringDictionary[String],
-      callback: js.Function3[/* error */ String, /* result */ Boolean, /* response */ ServerResponse, Unit]
+      callback: js.Function3[
+          /* error */ String, 
+          /* result */ Boolean, 
+          /* response */ ServerResponse[IncomingMessage], 
+          Unit
+        ]
     ): Unit = js.native
   }
   
@@ -157,7 +193,7 @@ object mod {
     
     var download_location: String
     
-    var file_priorities: js.Array[js.Any]
+    var file_priorities: js.Array[Any]
     
     var max_connections: Double
     
@@ -175,7 +211,7 @@ object mod {
       add_paused: Boolean,
       compact_allocation: Boolean,
       download_location: String,
-      file_priorities: js.Array[js.Any],
+      file_priorities: js.Array[Any],
       max_connections: Double,
       max_download_speed: Double,
       max_upload_slots: Double,
@@ -194,9 +230,9 @@ object mod {
       
       inline def setDownload_location(value: String): Self = StObject.set(x, "download_location", value.asInstanceOf[js.Any])
       
-      inline def setFile_priorities(value: js.Array[js.Any]): Self = StObject.set(x, "file_priorities", value.asInstanceOf[js.Any])
+      inline def setFile_priorities(value: js.Array[Any]): Self = StObject.set(x, "file_priorities", value.asInstanceOf[js.Any])
       
-      inline def setFile_prioritiesVarargs(value: js.Any*): Self = StObject.set(x, "file_priorities", js.Array(value :_*))
+      inline def setFile_prioritiesVarargs(value: Any*): Self = StObject.set(x, "file_priorities", js.Array(value*))
       
       inline def setMax_connections(value: Double): Self = StObject.set(x, "max_connections", value.asInstanceOf[js.Any])
       

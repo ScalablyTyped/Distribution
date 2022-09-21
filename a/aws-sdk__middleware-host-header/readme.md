@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__middleware-host-header
 
-Typings are for version 1.0.0-rc.7
+Typings are for version 3.171.0
 
 ## Library description:
 [![NPM version](https://img.shields.io/npm/v/@aws-sdk/middleware-host-header/latest.svg)](https://www.npmjs.com/package/@aws-sdk/middleware-host-header) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/middleware-host-header.svg)](https://www.npmj
@@ -10,10 +10,10 @@ Typings are for version 1.0.0-rc.7
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/middleware-host-header |
 | Keywords           | - |
-| # releases         | 38 |
-| # dependents       | 247 |
-| # downloads        | 6728397 |
-| # stars            | 0 |
+| # releases         | 58 |
+| # dependents       | 0.0 |
+| # downloads        | 1.4949256E7 |
+| # stars            | 1854.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/middleware-host-header)

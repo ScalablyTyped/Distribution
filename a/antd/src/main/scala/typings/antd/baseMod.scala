@@ -1,180 +1,30 @@
 package typings.antd
 
-import typings.antd.configProviderContextMod.ConfigConsumerProps
+import org.scalablytyped.runtime.Shortcut
+import typings.antd.antdStrings.icon_
+import typings.antd.antdStrings.textSlashhtml
+import typings.antd.antdStrings.textSlashplain
+import typings.antd.antdStrings.text_
+import typings.antd.tooltipMod.TooltipProps
 import typings.antd.typographyTypographyMod.TypographyProps
 import typings.rcTextarea.resizableTextAreaMod.AutoSizeType
-import typings.react.mod.Component
-import typings.react.mod.Context
+import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
-import typings.react.mod.RefObject
-import typings.react.mod.global.JSX.Element
+import typings.react.mod.RefAttributes
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object baseMod {
+object baseMod extends Shortcut {
   
   @JSImport("antd/lib/typography/Base", JSImport.Default)
   @js.native
-  class default () extends Base
-  object default {
-    
-    @JSImport("antd/lib/typography/Base", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /* static member */
-    @JSImport("antd/lib/typography/Base", "default.contextType")
-    @js.native
-    def contextType: Context[ConfigConsumerProps] = js.native
-    inline def contextType_=(x: Context[ConfigConsumerProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
-    
-    /* static member */
-    object defaultProps {
-      
-      @JSImport("antd/lib/typography/Base", "default.defaultProps")
-      @js.native
-      val ^ : js.Any = js.native
-      
-      @JSImport("antd/lib/typography/Base", "default.defaultProps.children")
-      @js.native
-      def children: String = js.native
-      inline def children_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
-    }
-    
-    /* static member */
-    inline def getDerivedStateFromProps(nextProps: BlockProps): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any]).asInstanceOf[js.Object]
-  }
-  
-  @js.native
-  trait Base
-    extends Component[InternalBlockProps, BaseState, js.Any] {
-    
-    def canUseCSSEllipsis(): Boolean = js.native
-    
-    @JSName("componentDidMount")
-    def componentDidMount_MBase(): Unit = js.native
-    
-    @JSName("componentDidUpdate")
-    def componentDidUpdate_MBase(prevProps: BlockProps): Unit = js.native
-    
-    @JSName("componentWillUnmount")
-    def componentWillUnmount_MBase(): Unit = js.native
-    
-    var contentRef: RefObject[HTMLElement] = js.native
-    
-    @JSName("context")
-    var context_Base: ConfigConsumerProps = js.native
-    
-    var copiedStr: js.UndefOr[String] = js.native
-    
-    var copyId: js.UndefOr[Double] = js.native
-    
-    var copyStr: js.UndefOr[String] = js.native
-    
-    var editIcon: js.UndefOr[HTMLDivElement] = js.native
-    
-    var editStr: js.UndefOr[String] = js.native
-    
-    var expandStr: js.UndefOr[String] = js.native
-    
-    def getEditable(): EditConfig = js.native
-    def getEditable(props: BlockProps): EditConfig = js.native
-    
-    def getEllipsis(): EllipsisConfig = js.native
-    def getEllipsis(props: BlockProps): EllipsisConfig = js.native
-    
-    def getPrefixCls(): String = js.native
-    
-    def onCopyClick(): Unit = js.native
-    
-    def onEditCancel(): Unit = js.native
-    
-    def onEditChange(value: String): Unit = js.native
-    
-    def onEditClick(): Unit = js.native
-    
-    var onExpandClick: MouseEventHandler[HTMLElement] = js.native
-    
-    var rafId: js.UndefOr[Double] = js.native
-    
-    def renderContent(): Element = js.native
-    
-    def renderCopy(): js.UndefOr[Element] = js.native
-    
-    def renderEdit(): js.UndefOr[Element] = js.native
-    
-    def renderEditInput(): Element = js.native
-    
-    def renderExpand(): Element | Null = js.native
-    def renderExpand(forceRender: Boolean): Element | Null = js.native
-    
-    def renderOperations(): js.Array[js.UndefOr[Element | Null]] = js.native
-    def renderOperations(forceRenderExpanded: Boolean): js.Array[js.UndefOr[Element | Null]] = js.native
-    
-    def resizeOnNextFrame(): Unit = js.native
-    
-    def setEditRef(node: HTMLDivElement): Unit = js.native
-    
-    def syncEllipsis(): Unit = js.native
-    
-    def triggerEdit(edit: Boolean): Unit = js.native
-  }
-  
-  trait BaseState extends StObject {
-    
-    var clientRendered: Boolean
-    
-    var copied: Boolean
-    
-    var edit: Boolean
-    
-    var ellipsisContent: ReactNode
-    
-    var ellipsisText: String
-    
-    var expanded: Boolean
-    
-    var isEllipsis: Boolean
-  }
-  object BaseState {
-    
-    inline def apply(
-      clientRendered: Boolean,
-      copied: Boolean,
-      edit: Boolean,
-      ellipsisText: String,
-      expanded: Boolean,
-      isEllipsis: Boolean
-    ): BaseState = {
-      val __obj = js.Dynamic.literal(clientRendered = clientRendered.asInstanceOf[js.Any], copied = copied.asInstanceOf[js.Any], edit = edit.asInstanceOf[js.Any], ellipsisText = ellipsisText.asInstanceOf[js.Any], expanded = expanded.asInstanceOf[js.Any], isEllipsis = isEllipsis.asInstanceOf[js.Any])
-      __obj.asInstanceOf[BaseState]
-    }
-    
-    extension [Self <: BaseState](x: Self) {
-      
-      inline def setClientRendered(value: Boolean): Self = StObject.set(x, "clientRendered", value.asInstanceOf[js.Any])
-      
-      inline def setCopied(value: Boolean): Self = StObject.set(x, "copied", value.asInstanceOf[js.Any])
-      
-      inline def setEdit(value: Boolean): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
-      
-      inline def setEllipsisContent(value: ReactNode): Self = StObject.set(x, "ellipsisContent", value.asInstanceOf[js.Any])
-      
-      inline def setEllipsisContentUndefined: Self = StObject.set(x, "ellipsisContent", js.undefined)
-      
-      inline def setEllipsisText(value: String): Self = StObject.set(x, "ellipsisText", value.asInstanceOf[js.Any])
-      
-      inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
-      
-      inline def setIsEllipsis(value: Boolean): Self = StObject.set(x, "isEllipsis", value.asInstanceOf[js.Any])
-    }
-  }
+  val default: ForwardRefExoticComponent[InternalBlockProps & RefAttributes[Any]] = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.antd.antdStrings.secondary
@@ -209,6 +59,8 @@ object baseMod {
     var editable: js.UndefOr[Boolean | EditConfig] = js.undefined
     
     var ellipsis: js.UndefOr[Boolean | EllipsisConfig] = js.undefined
+    
+    var italic: js.UndefOr[Boolean] = js.undefined
     
     var keyboard: js.UndefOr[Boolean] = js.undefined
     
@@ -255,6 +107,10 @@ object baseMod {
       
       inline def setEllipsisUndefined: Self = StObject.set(x, "ellipsis", js.undefined)
       
+      inline def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
+      
+      inline def setItalicUndefined: Self = StObject.set(x, "italic", js.undefined)
+      
       inline def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
       
       inline def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
@@ -283,9 +139,13 @@ object baseMod {
   
   trait CopyConfig extends StObject {
     
+    var format: js.UndefOr[textSlashplain | textSlashhtml] = js.undefined
+    
     var icon: js.UndefOr[ReactNode] = js.undefined
     
-    var onCopy: js.UndefOr[js.Function0[Unit]] = js.undefined
+    var onCopy: js.UndefOr[
+        js.Function1[/* event */ js.UndefOr[MouseEvent[HTMLDivElement, NativeMouseEvent]], Unit]
+      ] = js.undefined
     
     var text: js.UndefOr[String] = js.undefined
     
@@ -300,11 +160,15 @@ object baseMod {
     
     extension [Self <: CopyConfig](x: Self) {
       
+      inline def setFormat(value: textSlashplain | textSlashhtml): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      
       inline def setIcon(value: ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      inline def setOnCopy(value: () => Unit): Self = StObject.set(x, "onCopy", js.Any.fromFunction0(value))
+      inline def setOnCopy(value: /* event */ js.UndefOr[MouseEvent[HTMLDivElement, NativeMouseEvent]] => Unit): Self = StObject.set(x, "onCopy", js.Any.fromFunction1(value))
       
       inline def setOnCopyUndefined: Self = StObject.set(x, "onCopy", js.undefined)
       
@@ -324,15 +188,23 @@ object baseMod {
     
     var editing: js.UndefOr[Boolean] = js.undefined
     
+    var enterIcon: js.UndefOr[ReactNode] = js.undefined
+    
     var icon: js.UndefOr[ReactNode] = js.undefined
     
     var maxLength: js.UndefOr[Double] = js.undefined
     
+    var onCancel: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
     var onChange: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
+    
+    var onEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var onStart: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var tooltip: js.UndefOr[Boolean | ReactNode] = js.undefined
+    
+    var triggerType: js.UndefOr[js.Array[icon_ | text_]] = js.undefined
   }
   object EditConfig {
     
@@ -351,6 +223,10 @@ object baseMod {
       
       inline def setEditingUndefined: Self = StObject.set(x, "editing", js.undefined)
       
+      inline def setEnterIcon(value: ReactNode): Self = StObject.set(x, "enterIcon", value.asInstanceOf[js.Any])
+      
+      inline def setEnterIconUndefined: Self = StObject.set(x, "enterIcon", js.undefined)
+      
       inline def setIcon(value: ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
@@ -359,9 +235,17 @@ object baseMod {
       
       inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
       
+      inline def setOnCancel(value: () => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction0(value))
+      
+      inline def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
+      
       inline def setOnChange(value: /* value */ String => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      
+      inline def setOnEnd(value: () => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction0(value))
+      
+      inline def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
       
       inline def setOnStart(value: () => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction0(value))
       
@@ -370,6 +254,12 @@ object baseMod {
       inline def setTooltip(value: Boolean | ReactNode): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
       
       inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+      
+      inline def setTriggerType(value: js.Array[icon_ | text_]): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
+      
+      inline def setTriggerTypeUndefined: Self = StObject.set(x, "triggerType", js.undefined)
+      
+      inline def setTriggerTypeVarargs(value: (icon_ | text_)*): Self = StObject.set(x, "triggerType", js.Array(value*))
     }
   }
   
@@ -386,6 +276,8 @@ object baseMod {
     var suffix: js.UndefOr[String] = js.undefined
     
     var symbol: js.UndefOr[ReactNode] = js.undefined
+    
+    var tooltip: js.UndefOr[ReactNode | TooltipProps] = js.undefined
   }
   object EllipsisConfig {
     
@@ -419,6 +311,10 @@ object baseMod {
       inline def setSymbol(value: ReactNode): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
       
       inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+      
+      inline def setTooltip(value: ReactNode | TooltipProps): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+      
+      inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     }
   }
   
@@ -440,4 +336,9 @@ object baseMod {
       inline def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     }
   }
+  
+  type _To = ForwardRefExoticComponent[InternalBlockProps & RefAttributes[Any]]
+  
+  /* This means you don't have to write `default`, but can instead just say `baseMod.foo` */
+  override def _to: ForwardRefExoticComponent[InternalBlockProps & RefAttributes[Any]] = default
 }

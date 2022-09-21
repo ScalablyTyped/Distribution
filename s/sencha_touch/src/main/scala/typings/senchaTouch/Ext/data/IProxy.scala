@@ -13,7 +13,7 @@ trait IProxy
     * @param options Object Object containing one or more properties supported by the batch method:
     * @returns Ext.data.Batch The newly created Batch
     */
-  var batch: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], IBatch]] = js.undefined
+  var batch: js.UndefOr[js.Function1[/* options */ js.UndefOr[Any], IBatch]] = js.undefined
   
   /** [Config Option] (Boolean) */
   var batchActions: js.UndefOr[Boolean] = js.undefined
@@ -29,8 +29,8 @@ trait IProxy
   var create: js.UndefOr[
     js.Function3[
       /* operation */ js.UndefOr[IOperation], 
-      /* callback */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* callback */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -44,8 +44,8 @@ trait IProxy
   var destroy_IProxy: js.UndefOr[
     js.Function3[
       /* operation */ js.UndefOr[IOperation], 
-      /* callback */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* callback */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -63,20 +63,20 @@ trait IProxy
   /** [Method] Returns the value of model
     * @returns String/Ext.data.Model
     */
-  var getModel: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getModel: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of reader
     * @returns Object/String/Ext.data.reader.Reader
     */
-  var getReader: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getReader: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of writer
     * @returns Object/String/Ext.data.writer.Writer
     */
-  var getWriter: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getWriter: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Config Option] (String/Ext.data.Model) */
-  var model: js.UndefOr[js.Any] = js.undefined
+  var model: js.UndefOr[Any] = js.undefined
   
   /** [Method] Performs the given read operation
     * @param operation Ext.data.Operation The Operation to perform
@@ -86,14 +86,14 @@ trait IProxy
   var read: js.UndefOr[
     js.Function3[
       /* operation */ js.UndefOr[IOperation], 
-      /* callback */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* callback */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
   
   /** [Config Option] (Object/String/Ext.data.reader.Reader) */
-  var reader: js.UndefOr[js.Any] = js.undefined
+  var reader: js.UndefOr[Any] = js.undefined
   
   /** [Method] Sets the value of batchActions
     * @param batchActions Boolean The new value.
@@ -108,17 +108,17 @@ trait IProxy
   /** [Method] Sets the value of model
     * @param model String/Ext.data.Model The new value.
     */
-  var setModel: js.UndefOr[js.Function1[/* model */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setModel: js.UndefOr[js.Function1[/* model */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of reader
     * @param reader Object/String/Ext.data.reader.Reader The new value.
     */
-  var setReader: js.UndefOr[js.Function1[/* reader */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setReader: js.UndefOr[js.Function1[/* reader */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of writer
     * @param writer Object/String/Ext.data.writer.Writer The new value.
     */
-  var setWriter: js.UndefOr[js.Function1[/* writer */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setWriter: js.UndefOr[js.Function1[/* writer */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Performs the given update operation
     * @param operation Ext.data.Operation The Operation to perform
@@ -128,14 +128,14 @@ trait IProxy
   var update: js.UndefOr[
     js.Function3[
       /* operation */ js.UndefOr[IOperation], 
-      /* callback */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
+      /* callback */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
   
   /** [Config Option] (Object/String/Ext.data.writer.Writer) */
-  var writer: js.UndefOr[js.Any] = js.undefined
+  var writer: js.UndefOr[Any] = js.undefined
 }
 object IProxy {
   
@@ -146,7 +146,7 @@ object IProxy {
   
   extension [Self <: IProxy](x: Self) {
     
-    inline def setBatch(value: /* options */ js.UndefOr[js.Any] => IBatch): Self = StObject.set(x, "batch", js.Any.fromFunction1(value))
+    inline def setBatch(value: /* options */ js.UndefOr[Any] => IBatch): Self = StObject.set(x, "batch", js.Any.fromFunction1(value))
     
     inline def setBatchActions(value: Boolean): Self = StObject.set(x, "batchActions", value.asInstanceOf[js.Any])
     
@@ -159,13 +159,13 @@ object IProxy {
     inline def setBatchUndefined: Self = StObject.set(x, "batch", js.undefined)
     
     inline def setCreate(
-      value: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+      value: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "create", js.Any.fromFunction3(value))
     
     inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
     
     inline def setDestroy(
-      value: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+      value: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "destroy", js.Any.fromFunction3(value))
     
     inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
@@ -178,29 +178,29 @@ object IProxy {
     
     inline def setGetBatchOrderUndefined: Self = StObject.set(x, "getBatchOrder", js.undefined)
     
-    inline def setGetModel(value: () => js.Any): Self = StObject.set(x, "getModel", js.Any.fromFunction0(value))
+    inline def setGetModel(value: () => Any): Self = StObject.set(x, "getModel", js.Any.fromFunction0(value))
     
     inline def setGetModelUndefined: Self = StObject.set(x, "getModel", js.undefined)
     
-    inline def setGetReader(value: () => js.Any): Self = StObject.set(x, "getReader", js.Any.fromFunction0(value))
+    inline def setGetReader(value: () => Any): Self = StObject.set(x, "getReader", js.Any.fromFunction0(value))
     
     inline def setGetReaderUndefined: Self = StObject.set(x, "getReader", js.undefined)
     
-    inline def setGetWriter(value: () => js.Any): Self = StObject.set(x, "getWriter", js.Any.fromFunction0(value))
+    inline def setGetWriter(value: () => Any): Self = StObject.set(x, "getWriter", js.Any.fromFunction0(value))
     
     inline def setGetWriterUndefined: Self = StObject.set(x, "getWriter", js.undefined)
     
-    inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
     inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
     inline def setRead(
-      value: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+      value: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "read", js.Any.fromFunction3(value))
     
     inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
     
-    inline def setReader(value: js.Any): Self = StObject.set(x, "reader", value.asInstanceOf[js.Any])
+    inline def setReader(value: Any): Self = StObject.set(x, "reader", value.asInstanceOf[js.Any])
     
     inline def setReaderUndefined: Self = StObject.set(x, "reader", js.undefined)
     
@@ -212,25 +212,25 @@ object IProxy {
     
     inline def setSetBatchOrderUndefined: Self = StObject.set(x, "setBatchOrder", js.undefined)
     
-    inline def setSetModel(value: /* model */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setModel", js.Any.fromFunction1(value))
+    inline def setSetModel(value: /* model */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setModel", js.Any.fromFunction1(value))
     
     inline def setSetModelUndefined: Self = StObject.set(x, "setModel", js.undefined)
     
-    inline def setSetReader(value: /* reader */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setReader", js.Any.fromFunction1(value))
+    inline def setSetReader(value: /* reader */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setReader", js.Any.fromFunction1(value))
     
     inline def setSetReaderUndefined: Self = StObject.set(x, "setReader", js.undefined)
     
-    inline def setSetWriter(value: /* writer */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setWriter", js.Any.fromFunction1(value))
+    inline def setSetWriter(value: /* writer */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setWriter", js.Any.fromFunction1(value))
     
     inline def setSetWriterUndefined: Self = StObject.set(x, "setWriter", js.undefined)
     
     inline def setUpdate(
-      value: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
+      value: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
     
     inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     
-    inline def setWriter(value: js.Any): Self = StObject.set(x, "writer", value.asInstanceOf[js.Any])
+    inline def setWriter(value: Any): Self = StObject.set(x, "writer", value.asInstanceOf[js.Any])
     
     inline def setWriterUndefined: Self = StObject.set(x, "writer", js.undefined)
   }

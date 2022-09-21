@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "LoyaltyReward")
 @js.native
-class LoyaltyReward () extends StObject {
+open class LoyaltyReward () extends StObject {
   
   /**
     * The timestamp when the reward was created, in RFC 3339 format.

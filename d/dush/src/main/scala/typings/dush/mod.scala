@@ -20,7 +20,7 @@ object mod extends Shortcut {
     
     var _allEvents: js.Array[StringDictionary[js.Array[Handler]]] = js.native
     
-    def emit(`type`: String, event: js.Any*): Emitter = js.native
+    def emit(`type`: String, event: Any*): Emitter = js.native
     
     def off(`type`: String): Emitter = js.native
     def off(`type`: String, handler: Handler): Emitter = js.native
@@ -33,21 +33,21 @@ object mod extends Shortcut {
     def once(`type`: String, handler: Handler): Emitter = js.native
     def once(`type`: Asterisk, handler: WildcardHandler): Emitter = js.native
     
-    def use(plugin: js.Function2[/* app */ this.type, /* options */ js.Any, Unit]): Emitter = js.native
-    def use(plugin: js.Function2[/* app */ this.type, /* options */ js.Any, Unit], options: js.Any): Emitter = js.native
+    def use(plugin: js.Function2[/* app */ this.type, /* options */ Any, Unit]): Emitter = js.native
+    def use(plugin: js.Function2[/* app */ this.type, /* options */ Any, Unit], options: Any): Emitter = js.native
   }
   
   @js.native
   trait Handler extends StObject {
     
-    def apply(event: js.Any*): Unit = js.native
+    def apply(event: Any*): Unit = js.native
   }
   
   @js.native
   trait WildcardHandler extends StObject {
     
-    def apply(`type`: String, event: js.Any*): Unit = js.native
-    def apply(`type`: Unit, event: js.Any*): Unit = js.native
+    def apply(`type`: String, event: Any*): Unit = js.native
+    def apply(`type`: Unit, event: Any*): Unit = js.native
   }
   
   type _To = DushStatic

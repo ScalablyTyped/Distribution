@@ -11,9 +11,9 @@ trait FileEntry
      with FileSystemEntry {
   
   def copyTo(
-    parentEntry: DirectoryEntry,
+    parentEntry: FileSystemDirectoryEntry,
     file: String,
-    onSuccess: js.Function1[/* arg */ DirectoryEntry, Unit],
+    onSuccess: js.Function1[/* arg */ FileSystemDirectoryEntry, Unit],
     onError: js.Function1[/* arg */ FileError, Unit]
   ): Unit = js.native
   
@@ -31,9 +31,9 @@ trait FileEntry
   def file(onSuccess: Unit, onError: js.Function1[/* arg */ FileError, Unit]): Unit = js.native
   
   def moveTo(
-    parentEntry: DirectoryEntry,
+    parentEntry: FileSystemDirectoryEntry,
     file: String,
-    onSuccess: js.Function1[/* arg */ DirectoryEntry, Unit],
+    onSuccess: js.Function1[/* arg */ FileSystemDirectoryEntry, Unit],
     onError: js.Function1[/* arg */ FileError, Unit]
   ): Unit = js.native
 }

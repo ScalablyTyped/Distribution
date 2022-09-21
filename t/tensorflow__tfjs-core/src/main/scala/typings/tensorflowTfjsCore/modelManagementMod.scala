@@ -15,9 +15,9 @@ object modelManagementMod {
   
   @JSImport("@tensorflow/tfjs-core/dist/io/model_management", "ModelStoreManagerRegistry")
   @js.native
-  /* private */ class ModelStoreManagerRegistry () extends StObject {
+  /* private */ open class ModelStoreManagerRegistry () extends StObject {
     
-    /* private */ var managers: js.Any = js.native
+    /* private */ var managers: Any = js.native
   }
   /* static members */
   object ModelStoreManagerRegistry {
@@ -28,8 +28,8 @@ object modelManagementMod {
     
     @JSImport("@tensorflow/tfjs-core/dist/io/model_management", "ModelStoreManagerRegistry.getInstance")
     @js.native
-    def getInstance: js.Any = js.native
-    inline def getInstance_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
+    def getInstance: Any = js.native
+    inline def getInstance_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
     
     inline def getManager(scheme: String): ModelStoreManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getManager")(scheme.asInstanceOf[js.Any]).asInstanceOf[ModelStoreManager]
     
@@ -37,8 +37,8 @@ object modelManagementMod {
     
     @JSImport("@tensorflow/tfjs-core/dist/io/model_management", "ModelStoreManagerRegistry.instance")
     @js.native
-    def instance: js.Any = js.native
-    inline def instance_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("instance")(x.asInstanceOf[js.Any])
+    def instance: Any = js.native
+    inline def instance_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("instance")(x.asInstanceOf[js.Any])
     
     /**
       * Register a save-handler router.

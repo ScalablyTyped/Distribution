@@ -20,7 +20,7 @@ object mod {
   
   @JSImport("react-native-drawer-layout", JSImport.Default)
   @js.native
-  class default () extends DrawerLayout
+  open class default () extends DrawerLayout
   /* static members */
   object default {
     
@@ -36,7 +36,7 @@ object mod {
   
   @js.native
   trait DrawerLayout
-    extends Component[DrawerLayoutProperties, js.Object, js.Any] {
+    extends Component[DrawerLayoutProperties, js.Object, Any] {
     
     /**
       * Closes the drawer.
@@ -56,11 +56,6 @@ object mod {
   trait DrawerLayoutProperties
     extends StObject
        with ViewProps {
-    
-    /**
-      * Child content.
-      */
-    var children: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * Specifies the background color of the drawer. The default value is white. If you want to set
@@ -126,7 +121,7 @@ object mod {
     /**
       * The navigation view that will be rendered to the side of the screen and can be pulled in.
       */
-    var renderNavigationView: ReactNode
+    def renderNavigationView(): ReactNode
     
     /**
       * Make the drawer take the entire screen and draw the background of the status bar to allow it
@@ -141,16 +136,12 @@ object mod {
   }
   object DrawerLayoutProperties {
     
-    inline def apply(drawerPosition: left | right, drawerWidth: Double): DrawerLayoutProperties = {
-      val __obj = js.Dynamic.literal(drawerPosition = drawerPosition.asInstanceOf[js.Any], drawerWidth = drawerWidth.asInstanceOf[js.Any])
+    inline def apply(drawerPosition: left | right, drawerWidth: Double, renderNavigationView: () => ReactNode): DrawerLayoutProperties = {
+      val __obj = js.Dynamic.literal(drawerPosition = drawerPosition.asInstanceOf[js.Any], drawerWidth = drawerWidth.asInstanceOf[js.Any], renderNavigationView = js.Any.fromFunction0(renderNavigationView))
       __obj.asInstanceOf[DrawerLayoutProperties]
     }
     
     extension [Self <: DrawerLayoutProperties](x: Self) {
-      
-      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-      
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setDrawerBackgroundColor(value: String): Self = StObject.set(x, "drawerBackgroundColor", value.asInstanceOf[js.Any])
       
@@ -184,9 +175,7 @@ object mod {
       
       inline def setOnDrawerStateChangedUndefined: Self = StObject.set(x, "onDrawerStateChanged", js.undefined)
       
-      inline def setRenderNavigationView(value: ReactNode): Self = StObject.set(x, "renderNavigationView", value.asInstanceOf[js.Any])
-      
-      inline def setRenderNavigationViewUndefined: Self = StObject.set(x, "renderNavigationView", js.undefined)
+      inline def setRenderNavigationView(value: () => ReactNode): Self = StObject.set(x, "renderNavigationView", js.Any.fromFunction0(value))
       
       inline def setStatusBarBackgroundColor(value: String): Self = StObject.set(x, "statusBarBackgroundColor", value.asInstanceOf[js.Any])
       

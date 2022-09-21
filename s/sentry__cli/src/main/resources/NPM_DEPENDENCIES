@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@sentry/cli" : "2.5.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@sentry/cli" : "2.5.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

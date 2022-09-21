@@ -10,10 +10,10 @@ Add a header to a file.
 | ------------------ | :-------------: |
 | Full name          | postcss-header |
 | Keywords           | header, banner, postcss, postcss-plugin, css |
-| # releases         | 1 |
-| # dependents       | 0 |
-| # downloads        | 282306 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 34914.333333333336 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/fengyuanchen/postcss-header#readme)

@@ -10,16 +10,18 @@ object mod {
   
   @JSImport("standard-error", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with StandardError {
     def this(message: String) = this()
-    def this(props: js.Any) = this()
-    def this(message: String, props: js.Any) = this()
+    def this(props: Any) = this()
+    def this(message: String, props: Any) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
@@ -27,7 +29,7 @@ object mod {
   trait StandardError
     extends StObject
        with Error
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object StandardError {
     
     inline def apply(message: String, name: String): StandardError = {

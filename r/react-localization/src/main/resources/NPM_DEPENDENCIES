@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-localization" : "1.0.15"
+      "react-localization" : "1.0.19"
     }
   ],
   "test-dependencies" : [
     {
-      "react-localization" : "1.0.15"
+      "react-localization" : "1.0.19"
     }
   ],
   "compile-devDependencies" : [

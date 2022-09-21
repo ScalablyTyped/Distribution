@@ -10,10 +10,10 @@ Allow you add metrics via Server-Timing header
 | ------------------ | :-------------: |
 | Full name          | server-timing-header |
 | Keywords           | expressjs, performance, server, timing, servertiming, server-timing, monitor, monitoring, speed, middleware, express |
-| # releases         | 18 |
-| # dependents       | 0 |
-| # downloads        | 20686 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 2766.0 |
+| # stars            | 20.0 |
 
 ## Links
 - [Homepage](https://github.com/SilentImp/express-middleware-headers-server-timing#readme)

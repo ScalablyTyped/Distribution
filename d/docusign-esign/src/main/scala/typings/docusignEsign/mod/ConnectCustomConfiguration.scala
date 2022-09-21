@@ -245,7 +245,7 @@ object ConnectCustomConfiguration {
     
     inline def setEnvelopeEventsUndefined: Self = StObject.set(x, "envelopeEvents", js.undefined)
     
-    inline def setEnvelopeEventsVarargs(value: String*): Self = StObject.set(x, "envelopeEvents", js.Array(value :_*))
+    inline def setEnvelopeEventsVarargs(value: String*): Self = StObject.set(x, "envelopeEvents", js.Array(value*))
     
     inline def setEventData(value: ConnectEventData): Self = StObject.set(x, "eventData", value.asInstanceOf[js.Any])
     
@@ -303,7 +303,7 @@ object ConnectCustomConfiguration {
     
     inline def setRecipientEventsUndefined: Self = StObject.set(x, "recipientEvents", js.undefined)
     
-    inline def setRecipientEventsVarargs(value: String*): Self = StObject.set(x, "recipientEvents", js.Array(value :_*))
+    inline def setRecipientEventsVarargs(value: String*): Self = StObject.set(x, "recipientEvents", js.Array(value*))
     
     inline def setRequireMutualTls(value: String): Self = StObject.set(x, "requireMutualTls", value.asInstanceOf[js.Any])
     
@@ -337,13 +337,13 @@ object ConnectCustomConfiguration {
     
     inline def setSenderSelectableItemsUndefined: Self = StObject.set(x, "senderSelectableItems", js.undefined)
     
-    inline def setSenderSelectableItemsVarargs(value: String*): Self = StObject.set(x, "senderSelectableItems", js.Array(value :_*))
+    inline def setSenderSelectableItemsVarargs(value: String*): Self = StObject.set(x, "senderSelectableItems", js.Array(value*))
     
     inline def setSfObjects(value: js.Array[ConnectSalesforceObject]): Self = StObject.set(x, "sfObjects", value.asInstanceOf[js.Any])
     
     inline def setSfObjectsUndefined: Self = StObject.set(x, "sfObjects", js.undefined)
     
-    inline def setSfObjectsVarargs(value: ConnectSalesforceObject*): Self = StObject.set(x, "sfObjects", js.Array(value :_*))
+    inline def setSfObjectsVarargs(value: ConnectSalesforceObject*): Self = StObject.set(x, "sfObjects", js.Array(value*))
     
     inline def setSignMessageWithX509Certificate(value: String): Self = StObject.set(x, "signMessageWithX509Certificate", value.asInstanceOf[js.Any])
     
@@ -365,7 +365,7 @@ object ConnectCustomConfiguration {
     
     inline def setUserIdsUndefined: Self = StObject.set(x, "userIds", js.undefined)
     
-    inline def setUserIdsVarargs(value: String*): Self = StObject.set(x, "userIds", js.Array(value :_*))
+    inline def setUserIdsVarargs(value: String*): Self = StObject.set(x, "userIds", js.Array(value*))
     
     inline def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
     

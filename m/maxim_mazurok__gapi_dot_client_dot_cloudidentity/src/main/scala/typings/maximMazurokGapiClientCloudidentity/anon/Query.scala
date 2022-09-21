@@ -28,22 +28,25 @@ trait Query extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /**
-    * The maximum number of results to return. Note that the number of results returned may be less than this value even if there are more available results. To fetch all results,
-    * clients must continue calling this method repeatedly until the response no longer contains a `next_page_token`. If unspecified, defaults to 200 for `GroupView.BASIC` and 50 for
-    * `GroupView.FULL`. Must not be greater than 1000 for `GroupView.BASIC` or 500 for `GroupView.FULL`.
-    */
+  /** The default page size is 200 (max 1000). */
   var pageSize: js.UndefOr[Double] = js.undefined
   
-  /** The `next_page_token` value returned from a previous search request, if any. */
+  /** The next_page_token value returned from a previous list request, if any. */
   var pageToken: js.UndefOr[String] = js.undefined
+  
+  /**
+    * [Resource name](https://cloud.google.com/apis/design/resource_names) of the group to search transitive memberships in. Format: `groups/{group}`, where `group` is always '-' as
+    * this API will search across all groups for a given member.
+    */
+  var parent: String
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Required. The search query. Must be specified in [Common Expression Language](https://opensource.google/projects/cel). May only contain equality operators on the parent and
-    * inclusion operators on labels (e.g., `parent == 'customers/{customer_id}' && 'cloudidentity.googleapis.com/groups.discussion_forum' in labels`).
+    * Required. A CEL expression that MUST include member specification AND label(s). This is a `required` field. Users can search on label attributes of groups. CONTAINS match ('in')
+    * is supported on labels. Identity-mapped groups are uniquely identified by both a `member_key_id` and a `member_key_namespace`, which requires an additional query input:
+    * `member_key_namespace`. Example query: `member_key_id == 'member_key_id_value' && in labels`
     */
   var query: js.UndefOr[String] = js.undefined
   
@@ -55,14 +58,11 @@ trait Query extends StObject {
   
   /** Upload protocol for media (e.g. "raw", "multipart"). */
   var upload_protocol: js.UndefOr[String] = js.undefined
-  
-  /** The level of detail to be returned. If unspecified, defaults to `View.BASIC`. */
-  var view: js.UndefOr[String] = js.undefined
 }
 object Query {
   
-  inline def apply(): Query = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(parent: String): Query = {
+    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Query]
   }
   
@@ -104,6 +104,8 @@ object Query {
     
     inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
@@ -123,9 +125,5 @@ object Query {
     inline def setUpload_protocol(value: String): Self = StObject.set(x, "upload_protocol", value.asInstanceOf[js.Any])
     
     inline def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
-    
-    inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
-    
-    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

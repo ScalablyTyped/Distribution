@@ -1,7 +1,7 @@
 
 # Scala.js typings for p5
 
-Typings are for version 0.9
+Typings are for version 1.4
 
 ## Library description:
 [![npm version](https://badge.fury.io/js/p5.svg)](https://www.npmjs.com/package/p5)
@@ -10,10 +10,10 @@ Typings are for version 0.9
 | ------------------ | :-------------: |
 | Full name          | p5 |
 | Keywords           | - |
-| # releases         | 18 |
-| # dependents       | 81 |
-| # downloads        | 189195 |
-| # stars            | 17 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 114940.66666666667 |
+| # stars            | 17802.0 |
 
 ## Links
 - [Homepage](https://github.com/processing/p5.js#readme)

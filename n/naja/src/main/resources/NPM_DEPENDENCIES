@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "naja" : "2.0.1"
+      "naja" : "2.4.0"
     }
   ],
   "test-dependencies" : [
     {
-      "naja" : "2.0.1"
+      "naja" : "2.4.0"
     }
   ],
   "compile-devDependencies" : [

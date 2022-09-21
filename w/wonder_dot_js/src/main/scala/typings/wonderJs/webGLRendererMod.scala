@@ -10,7 +10,7 @@ object webGLRendererMod {
   
   @JSImport("wonder.js/dist/es2015/renderer/renderer/WebGLRenderer", "WebGLRenderer")
   @js.native
-  class WebGLRenderer () extends Renderer {
+  open class WebGLRenderer () extends Renderer {
     
     def setClearColor(color: Color): Unit = js.native
   }

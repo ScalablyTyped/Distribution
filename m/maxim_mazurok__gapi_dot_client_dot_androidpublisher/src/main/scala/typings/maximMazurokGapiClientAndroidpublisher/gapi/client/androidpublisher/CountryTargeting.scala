@@ -25,7 +25,7 @@ object CountryTargeting {
     
     inline def setCountriesUndefined: Self = StObject.set(x, "countries", js.undefined)
     
-    inline def setCountriesVarargs(value: String*): Self = StObject.set(x, "countries", js.Array(value :_*))
+    inline def setCountriesVarargs(value: String*): Self = StObject.set(x, "countries", js.Array(value*))
     
     inline def setIncludeRestOfWorld(value: Boolean): Self = StObject.set(x, "includeRestOfWorld", value.asInstanceOf[js.Any])
     

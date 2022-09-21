@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "node-fetch" : "3.2.10"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "node-fetch" : "3.2.10"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

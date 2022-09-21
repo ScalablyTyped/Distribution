@@ -10,10 +10,10 @@ object phonelinkEraseMod {
   
   @JSImport("material-ui/svg-icons/communication/phonelink-erase", JSImport.Default)
   @js.native
-  class default () extends CommunicationPhonelinkErase
+  open class default () extends CommunicationPhonelinkErase
   
   @JSImport("material-ui/svg-icons/communication/phonelink-erase", "CommunicationPhonelinkErase")
   @js.native
-  class CommunicationPhonelinkErase ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class CommunicationPhonelinkErase ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

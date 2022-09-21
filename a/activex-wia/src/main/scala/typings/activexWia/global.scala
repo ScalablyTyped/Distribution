@@ -24,14 +24,14 @@ object global {
       */
     @JSGlobal("WIA.CommonDialog")
     @js.native
-    /* private */ class CommonDialog ()
+    /* private */ open class CommonDialog ()
       extends StObject
          with typings.activexWia.WIA.CommonDialog
     
     /** The Device object represents an active connection to an imaging device. */
     @JSGlobal("WIA.Device")
     @js.native
-    /* private */ class Device ()
+    /* private */ open class Device ()
       extends StObject
          with typings.activexWia.WIA.Device {
       
@@ -100,7 +100,7 @@ object global {
     /** The DeviceCommand object describes a CommandID that can be used when calling ExecuteCommand on a Device or Item object. */
     @JSGlobal("WIA.DeviceCommand")
     @js.native
-    /* private */ class DeviceCommand ()
+    /* private */ open class DeviceCommand ()
       extends StObject
          with typings.activexWia.WIA.DeviceCommand {
       
@@ -124,7 +124,7 @@ object global {
     /** The DeviceEvent object describes an EventID that can be used when calling RegisterEvent or RegisterPersistentEvent on a DeviceManager object. */
     @JSGlobal("WIA.DeviceEvent")
     @js.native
-    /* private */ class DeviceEvent ()
+    /* private */ open class DeviceEvent ()
       extends StObject
          with typings.activexWia.WIA.DeviceEvent {
       
@@ -155,7 +155,7 @@ object global {
       */
     @JSGlobal("WIA.DeviceInfo")
     @js.native
-    /* private */ class DeviceInfo ()
+    /* private */ open class DeviceInfo ()
       extends StObject
          with typings.activexWia.WIA.DeviceInfo {
       
@@ -193,7 +193,7 @@ object global {
       */
     @JSGlobal("WIA.DeviceManager")
     @js.native
-    /* private */ class DeviceManager ()
+    /* private */ open class DeviceManager ()
       extends StObject
          with typings.activexWia.WIA.DeviceManager
     
@@ -203,7 +203,7 @@ object global {
       */
     @JSGlobal("WIA.Filter")
     @js.native
-    /* private */ class Filter ()
+    /* private */ open class Filter ()
       extends StObject
          with typings.activexWia.WIA.Filter {
       
@@ -241,7 +241,7 @@ object global {
       */
     @JSGlobal("WIA.FilterInfo")
     @js.native
-    /* private */ class FilterInfo ()
+    /* private */ open class FilterInfo ()
       extends StObject
          with typings.activexWia.WIA.FilterInfo {
       
@@ -268,18 +268,18 @@ object global {
       */
     @JSGlobal("WIA.ImageFile")
     @js.native
-    /* private */ class ImageFile ()
+    /* private */ open class ImageFile ()
       extends StObject
          with typings.activexWia.WIA.ImageFile {
       
       /** Returns the specified item in the vector by position */
       /** Returns the raw image bits as a Vector of Long values */
       /* CompleteClass */
-      override def ARGBData(Index: Double): js.Any = js.native
+      override def ARGBData(Index: Double): Any = js.native
       /** Returns the raw image bits as a Vector of Long values */
       /* CompleteClass */
       @JSName("ARGBData")
-      override val ARGBData_Original: Vector[js.Any] = js.native
+      override val ARGBData_Original: Vector[Any] = js.native
       
       /** Returns/Sets the current frame in the image */
       /* CompleteClass */
@@ -288,11 +288,11 @@ object global {
       /** Returns the specified item in the vector by position */
       /** Returns the raw image file as a Vector of Bytes */
       /* CompleteClass */
-      override def FileData(Index: Double): js.Any = js.native
+      override def FileData(Index: Double): Any = js.native
       /** Returns the raw image file as a Vector of Bytes */
       /* CompleteClass */
       @JSName("FileData")
-      override val FileData_Original: Vector[js.Any] = js.native
+      override val FileData_Original: Vector[Any] = js.native
       
       /** Returns the file extension for this image file type */
       /* CompleteClass */
@@ -369,7 +369,7 @@ object global {
     /** The ImageProcess object manages the filter chain. An ImageProcess object can be created using "WIA.ImageProcess" in a call to CreateObject. */
     @JSGlobal("WIA.ImageProcess")
     @js.native
-    /* private */ class ImageProcess ()
+    /* private */ open class ImageProcess ()
       extends StObject
          with typings.activexWia.WIA.ImageProcess {
       
@@ -408,7 +408,7 @@ object global {
       */
     @JSGlobal("WIA.Item")
     @js.native
-    /* private */ class Item ()
+    /* private */ open class Item ()
       extends StObject
          with typings.activexWia.WIA.Item
     
@@ -418,7 +418,7 @@ object global {
       */
     @JSGlobal("WIA.Property")
     @js.native
-    /* private */ class Property ()
+    /* private */ open class Property ()
       extends StObject
          with typings.activexWia.WIA.Property {
       
@@ -444,7 +444,7 @@ object global {
       
       /** Returns the default Property Value if the SubType is not UnspecifiedSubType */
       /* CompleteClass */
-      override val SubTypeDefault: js.Any = js.native
+      override val SubTypeDefault: Any = js.native
       
       /** Returns the maximum valid Property Value if the SubType is RangeSubType */
       /* CompleteClass */
@@ -461,11 +461,11 @@ object global {
       /** Returns the specified item in the vector by position */
       /** Returns a Vector of valid Property Values if the SubType is ListSubType or valid flag Values that can be ored together if the SubType is FlagSubType */
       /* CompleteClass */
-      override def SubTypeValues(Index: Double): js.Any = js.native
+      override def SubTypeValues(Index: Double): Any = js.native
       /** Returns a Vector of valid Property Values if the SubType is ListSubType or valid flag Values that can be ored together if the SubType is FlagSubType */
       /* CompleteClass */
       @JSName("SubTypeValues")
-      override val SubTypeValues_Original: Vector[js.Any] = js.native
+      override val SubTypeValues_Original: Vector[Any] = js.native
       
       /** Returns either a WiaPropertyType or a WiaImagePropertyType */
       /* CompleteClass */
@@ -473,7 +473,7 @@ object global {
       
       /** Returns/Sets the Property Value */
       /* CompleteClass */
-      var Value: js.Any = js.native
+      var Value: Any = js.native
       
       /* private */ /* CompleteClass */
       @JSName("WIA.Property_typekey")
@@ -486,7 +486,7 @@ object global {
       */
     @JSGlobal("WIA.Rational")
     @js.native
-    /* private */ class Rational ()
+    /* private */ open class Rational ()
       extends StObject
          with typings.activexWia.WIA.Rational {
       

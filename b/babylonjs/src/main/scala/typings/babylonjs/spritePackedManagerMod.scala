@@ -10,7 +10,7 @@ object spritePackedManagerMod {
   
   @JSImport("babylonjs/Sprites/spritePackedManager", "SpritePackedManager")
   @js.native
-  class SpritePackedManager protected () extends SpriteManager {
+  open class SpritePackedManager protected () extends SpriteManager {
     /**
       * Creates a new sprite manager from a packed sprite sheet
       * @param name defines the manager's name
@@ -19,7 +19,7 @@ object spritePackedManagerMod {
       * @param scene defines the hosting scene
       * @param spriteJSON null otherwise a JSON object defining sprite sheet data
       * @param epsilon defines the epsilon value to align texture (0.01 by default)
-      * @param samplingMode defines the smapling mode to use with spritesheet
+      * @param samplingMode defines the sampling mode to use with spritesheet
       * @param fromPacked set to true; do not alter
       */
     def this(

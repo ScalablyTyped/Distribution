@@ -10,10 +10,10 @@ An object merging function that has special support for environment variables
 | ------------------ | :-------------: |
 | Full name          | merge-env |
 | Keywords           | environment, merge, object, parse |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 611 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 104.66666666666667 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/bholloway/merge-env)

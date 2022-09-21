@@ -3,13 +3,13 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientYoutube.anon.AutoLevels
 import typings.maximMazurokGapiClientYoutube.anon.Chart
-import typings.maximMazurokGapiClientYoutube.anon.IdKey
 import typings.maximMazurokGapiClientYoutube.anon.NotifySubscribers
 import typings.maximMazurokGapiClientYoutube.anon.OnBehalfOfContentOwnerPrettyPrint
 import typings.maximMazurokGapiClientYoutube.anon.PrettyPrint
 import typings.maximMazurokGapiClientYoutube.anon.QuotaUser
 import typings.maximMazurokGapiClientYoutube.anon.QuotaUserUploadType
 import typings.maximMazurokGapiClientYoutube.anon.Rating
+import typings.maximMazurokGapiClientYoutube.anon.UploadTypeUploadprotocol
 import typings.maximMazurokGapiClientYoutube.anon.UploadprotocolXgafv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,8 +23,8 @@ trait VideosResource extends StObject {
   def delete(request: QuotaUser): Request[Unit] = js.native
   
   /** Retrieves the ratings that the authorized user gave to a list of specified videos. */
-  def getRating(): Request[VideoRatingListResponse] = js.native
-  def getRating(request: IdKey): Request[VideoRatingListResponse] = js.native
+  def getRating(): Request[VideoGetRatingResponse] = js.native
+  def getRating(request: OnBehalfOfContentOwnerPrettyPrint): Request[VideoGetRatingResponse] = js.native
   
   /** Inserts a new resource into this collection. */
   def insert(request: AutoLevels): Request[Video] = js.native
@@ -38,9 +38,9 @@ trait VideosResource extends StObject {
   def rate(): Request[Unit] = js.native
   def rate(request: Rating): Request[Unit] = js.native
   
-  /** Report abuse for a video. */
-  def reportAbuse(request: OnBehalfOfContentOwnerPrettyPrint): Request[Unit] = js.native
   def reportAbuse(request: QuotaUserUploadType, body: VideoAbuseReport): Request[Unit] = js.native
+  /** Report abuse for a video. */
+  def reportAbuse(request: UploadTypeUploadprotocol): Request[Unit] = js.native
   
   def update(request: PrettyPrint, body: Video): Request[Video] = js.native
   /** Updates an existing resource. */

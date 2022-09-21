@@ -221,27 +221,27 @@ object webdriverCommandsMod {
   
   @JSImport("blocking-proxy/built/lib/webdriver_commands", "WebDriverCommand")
   @js.native
-  class WebDriverCommand protected () extends EventEmitter {
+  open class WebDriverCommand protected () extends EventEmitter {
     def this(commandName: CommandName, url: String, method: HttpMethod) = this()
-    def this(commandName: CommandName, url: String, method: HttpMethod, params: js.Any) = this()
+    def this(commandName: CommandName, url: String, method: HttpMethod, params: Any) = this()
     
     var commandName: CommandName = js.native
     
-    var data: js.Any = js.native
+    var data: Any = js.native
     
     def getParam(key: paramKey): String = js.native
     
     def handleData(): Unit = js.native
-    def handleData(data: js.Any): Unit = js.native
+    def handleData(data: Any): Unit = js.native
     
     def handleResponse(statusCode: Double): Unit = js.native
-    def handleResponse(statusCode: Double, data: js.Any): Unit = js.native
+    def handleResponse(statusCode: Double, data: Any): Unit = js.native
     
     val method: HttpMethod = js.native
     
-    /* private */ var params: js.Any = js.native
+    /* private */ var params: Any = js.native
     
-    var responseData: js.Any = js.native
+    var responseData: Any = js.native
     
     var responseStatus: Double = js.native
     
@@ -250,7 +250,7 @@ object webdriverCommandsMod {
     val url: String = js.native
   }
   
-  inline def parseWebDriverCommand(url: js.Any, method: js.Any): WebDriverCommand = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWebDriverCommand")(url.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[WebDriverCommand]
+  inline def parseWebDriverCommand(url: Any, method: Any): WebDriverCommand = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWebDriverCommand")(url.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[WebDriverCommand]
   
   /* Rewritten from type alias, can be one of: 
     - typings.blockingProxy.blockingProxyStrings.GET

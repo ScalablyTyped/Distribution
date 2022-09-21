@@ -10,15 +10,12 @@ A thin wrapper that provides promisified methods for the `jsonwebtoken` module.
 | ------------------ | :-------------: |
 | Full name          | jsonwebtoken-promisified |
 | Keywords           | jsonwebtoken, jwt, promises, bluebird |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 18605 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 833.6666666666666 |
+| # stars            | 0.0 |
 
 ## Links
-- [Homepage](https://github.com/joepie91/node-jsonwebtoken-promisified#readme)
-- [Bugs](https://github.com/joepie91/node-jsonwebtoken-promisified/issues)
-- [Repository](https://github.com/joepie91/node-jsonwebtoken-promisified)
 - [Npm](https://www.npmjs.com/package/jsonwebtoken-promisified)
     
 

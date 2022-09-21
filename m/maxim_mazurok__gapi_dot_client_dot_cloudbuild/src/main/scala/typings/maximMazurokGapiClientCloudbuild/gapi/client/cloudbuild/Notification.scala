@@ -23,7 +23,7 @@ trait Notification extends StObject {
   var structDelivery: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.Notification & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.Notification & TopLevel[Any]
   ] = js.undefined
 }
 object Notification {
@@ -54,7 +54,7 @@ object Notification {
     inline def setStructDelivery(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.Notification & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.Notification & TopLevel[Any]
     ): Self = StObject.set(x, "structDelivery", value.asInstanceOf[js.Any])
     
     inline def setStructDeliveryUndefined: Self = StObject.set(x, "structDelivery", js.undefined)

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "ssr-window" : "4.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "ssr-window" : "4.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

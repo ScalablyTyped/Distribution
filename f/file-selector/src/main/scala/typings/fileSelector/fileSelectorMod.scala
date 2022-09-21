@@ -13,5 +13,6 @@ object fileSelectorMod {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def fromEvent(evt: Any): js.Promise[js.Array[FileWithPath | DataTransferItem]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(evt.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[FileWithPath | DataTransferItem]]]
   inline def fromEvent(evt: Event): js.Promise[js.Array[FileWithPath | DataTransferItem]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEvent")(evt.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[FileWithPath | DataTransferItem]]]
 }

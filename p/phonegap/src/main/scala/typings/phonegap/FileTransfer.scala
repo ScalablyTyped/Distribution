@@ -20,7 +20,7 @@ trait FileTransfer extends StObject {
     target: String,
     successCallback: js.Function1[/* fileEntry */ FileEntry, Unit],
     errorCallback: js.Function1[/* error */ FileError, Unit],
-    options: js.Any
+    options: Any
   ): Unit = js.native
   
   var onprogress: js.Function = js.native
@@ -37,6 +37,6 @@ trait FileTransfer extends StObject {
     server: String,
     successCallback: js.Function1[/* result */ FileUploadResult, Unit],
     errorCallback: js.Function1[/* error */ FileError, Unit],
-    options: js.Any
+    options: Any
   ): Unit = js.native
 }

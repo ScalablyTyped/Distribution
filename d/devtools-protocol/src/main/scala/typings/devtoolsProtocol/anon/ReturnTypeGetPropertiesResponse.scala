@@ -23,7 +23,7 @@ object ReturnTypeGetPropertiesResponse {
     
     inline def setParamsType(value: js.Array[GetPropertiesRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    inline def setParamsTypeVarargs(value: GetPropertiesRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: GetPropertiesRequest*): Self = StObject.set(x, "paramsType", js.Array(value*))
     
     inline def setReturnType(value: GetPropertiesResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }

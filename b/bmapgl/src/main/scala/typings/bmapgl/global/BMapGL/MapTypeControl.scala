@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMapGL.MapTypeControl")
 @js.native
-class MapTypeControl ()
+open class MapTypeControl ()
   extends StObject
      with typings.bmapgl.BMapGL.Control {
   def this(opts: MapTypeControlOptions) = this()

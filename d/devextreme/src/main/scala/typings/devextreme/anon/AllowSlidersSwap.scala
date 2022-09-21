@@ -1,23 +1,40 @@
 package typings.devextreme.anon
 
-import typings.devextreme.devextremeStrings.onMoving
-import typings.devextreme.devextremeStrings.onMovingComplete
+import typings.devextreme.mod.DevExpress.viz.dxRangeSelector.ValueChangedCallMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait AllowSlidersSwap extends StObject {
   
+  /**
+    * Indicates whether or not you can swap sliders.
+    */
   var allowSlidersSwap: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Indicates whether or not animation is enabled.
+    */
   var animationEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var callValueChanged: js.UndefOr[onMoving | onMovingComplete] = js.undefined
+  /**
+    * Specifies when to call the onValueChanged function.
+    */
+  var callValueChanged: js.UndefOr[ValueChangedCallMode] = js.undefined
   
+  /**
+    * Indicates whether or not an end user can specify the range using a mouse, without the use of sliders.
+    */
   var manualRangeSelectionEnabled: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Indicates whether or not an end user can shift the selected range to the required location on a scale by clicking.
+    */
   var moveSelectedRangeByClick: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Indicates whether to snap a slider to ticks.
+    */
   var snapToTicks: js.UndefOr[Boolean] = js.undefined
 }
 object AllowSlidersSwap {
@@ -37,7 +54,7 @@ object AllowSlidersSwap {
     
     inline def setAnimationEnabledUndefined: Self = StObject.set(x, "animationEnabled", js.undefined)
     
-    inline def setCallValueChanged(value: onMoving | onMovingComplete): Self = StObject.set(x, "callValueChanged", value.asInstanceOf[js.Any])
+    inline def setCallValueChanged(value: ValueChangedCallMode): Self = StObject.set(x, "callValueChanged", value.asInstanceOf[js.Any])
     
     inline def setCallValueChangedUndefined: Self = StObject.set(x, "callValueChanged", js.undefined)
     

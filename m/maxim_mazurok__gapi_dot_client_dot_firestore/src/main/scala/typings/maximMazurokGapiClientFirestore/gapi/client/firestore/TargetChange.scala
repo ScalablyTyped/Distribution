@@ -54,6 +54,6 @@ object TargetChange {
     
     inline def setTargetIdsUndefined: Self = StObject.set(x, "targetIds", js.undefined)
     
-    inline def setTargetIdsVarargs(value: Double*): Self = StObject.set(x, "targetIds", js.Array(value :_*))
+    inline def setTargetIdsVarargs(value: Double*): Self = StObject.set(x, "targetIds", js.Array(value*))
   }
 }

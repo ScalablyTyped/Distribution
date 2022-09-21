@@ -1,7 +1,8 @@
 package typings.cwise
 
 import typings.cwiseCompiler.mod.ArgType
-import typings.ndarray.mod.ndarray
+import typings.ndarray.mod.Data
+import typings.ndarray.mod.NdArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,12 +16,12 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  type Arg = ndarray[Double] | (js.Function2[/* row */ Double, /* col */ Double, Double]) | js.Array[Double] | js.Any
+  type Arg = NdArray[Data[Double]] | (js.Function2[/* row */ Double, /* col */ Double, Double]) | js.Array[Double] | Any
   
   @js.native
   trait Return extends StObject {
     
-    def apply(a: ndarray[Double], b: Arg*): Unit = js.native
+    def apply(a: NdArray[Data[Double]], b: Arg*): Unit = js.native
   }
   
   trait UserArgs extends StObject {
@@ -29,19 +30,19 @@ object mod {
     
     var blockSize: js.UndefOr[Double] = js.undefined
     
-    def body(a: Double, args: js.Any*): Unit
+    def body(a: Double, args: Any*): Unit
     
     var funcName: js.UndefOr[String] = js.undefined
     
-    var post: js.UndefOr[js.Function2[/* a */ Double, /* repeated */ js.Any, Unit]] = js.undefined
+    var post: js.UndefOr[js.Function2[/* a */ Double, /* repeated */ Any, Unit]] = js.undefined
     
-    var pre: js.UndefOr[js.Function2[/* a */ Double, /* repeated */ js.Any, Unit]] = js.undefined
+    var pre: js.UndefOr[js.Function2[/* a */ Double, /* repeated */ Any, Unit]] = js.undefined
     
     var printCode: js.UndefOr[Boolean] = js.undefined
   }
   object UserArgs {
     
-    inline def apply(args: js.Array[ArgType], body: (Double, /* repeated */ js.Any) => Unit): UserArgs = {
+    inline def apply(args: js.Array[ArgType], body: (Double, /* repeated */ Any) => Unit): UserArgs = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], body = js.Any.fromFunction2(body))
       __obj.asInstanceOf[UserArgs]
     }
@@ -50,23 +51,23 @@ object mod {
       
       inline def setArgs(value: js.Array[ArgType]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      inline def setArgsVarargs(value: ArgType*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: ArgType*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setBlockSize(value: Double): Self = StObject.set(x, "blockSize", value.asInstanceOf[js.Any])
       
       inline def setBlockSizeUndefined: Self = StObject.set(x, "blockSize", js.undefined)
       
-      inline def setBody(value: (Double, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "body", js.Any.fromFunction2(value))
+      inline def setBody(value: (Double, /* repeated */ Any) => Unit): Self = StObject.set(x, "body", js.Any.fromFunction2(value))
       
       inline def setFuncName(value: String): Self = StObject.set(x, "funcName", value.asInstanceOf[js.Any])
       
       inline def setFuncNameUndefined: Self = StObject.set(x, "funcName", js.undefined)
       
-      inline def setPost(value: (/* a */ Double, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "post", js.Any.fromFunction2(value))
+      inline def setPost(value: (/* a */ Double, /* repeated */ Any) => Unit): Self = StObject.set(x, "post", js.Any.fromFunction2(value))
       
       inline def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
       
-      inline def setPre(value: (/* a */ Double, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "pre", js.Any.fromFunction2(value))
+      inline def setPre(value: (/* a */ Double, /* repeated */ Any) => Unit): Self = StObject.set(x, "pre", js.Any.fromFunction2(value))
       
       inline def setPreUndefined: Self = StObject.set(x, "pre", js.undefined)
       

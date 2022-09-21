@@ -11,9 +11,9 @@ URL and cookie safe UIDs
 | Full name          | random-bytes |
 | Keywords           | bytes, generator, random, safe |
 | # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 51668262 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 6579571.666666667 |
+| # stars            | 26.0 |
 
 ## Links
 - [Homepage](https://github.com/crypto-utils/random-bytes)

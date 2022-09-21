@@ -48,6 +48,6 @@ object Base {
     
     inline def setTaxes(value: js.Array[SubscriptionPricingStateTax]): Self = StObject.set(x, "taxes", value.asInstanceOf[js.Any])
     
-    inline def setTaxesVarargs(value: SubscriptionPricingStateTax*): Self = StObject.set(x, "taxes", js.Array(value :_*))
+    inline def setTaxesVarargs(value: SubscriptionPricingStateTax*): Self = StObject.set(x, "taxes", js.Array(value*))
   }
 }

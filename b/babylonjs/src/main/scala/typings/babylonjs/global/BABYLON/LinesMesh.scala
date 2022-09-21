@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.LinesMesh")
 @js.native
-class LinesMesh protected ()
+open class LinesMesh protected ()
   extends StObject
      with typings.babylonjs.BABYLON.LinesMesh {
   /**
@@ -22,6 +22,7 @@ class LinesMesh protected ()
     * This will make creation of children, recursive.
     * @param useVertexColor defines if this LinesMesh supports vertex color
     * @param useVertexAlpha defines if this LinesMesh supports vertex alpha
+    * @param material material to use to draw the line. If not provided, will create a new one
     */
   def this(
     name: String,
@@ -36,7 +37,8 @@ class LinesMesh protected ()
     /**
     * If vertex alpha should be applied to the mesh
     */
-  useVertexAlpha: js.UndefOr[Boolean]
+  useVertexAlpha: js.UndefOr[Boolean],
+    material: js.UndefOr[typings.babylonjs.BABYLON.Material]
   ) = this()
   
   /**
@@ -63,7 +65,7 @@ class LinesMesh protected ()
   
   /**
     * Checks if a cullable object (mesh...) is in the camera frustum
-    * Unlike isInFrustum this cheks the full bounding box
+    * Unlike isInFrustum this checks the full bounding box
     * @param frustumPlanes Camera near/planes
     * @returns true if the object is in frustum otherwise false
     */
@@ -85,4 +87,19 @@ class LinesMesh protected ()
     */
   /* CompleteClass */
   override def removeBehavior(behavior: Behavior[typings.babylonjs.BABYLON.Node]): typings.babylonjs.BABYLON.Node = js.native
+}
+/* static members */
+object LinesMesh {
+  
+  @JSGlobal("BABYLON.LinesMesh")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    * Parses a serialized ground mesh
+    * @param parsedMesh the serialized mesh
+    * @param scene the scene to create the ground mesh in
+    * @returns the created ground mesh
+    */
+  inline def Parse(parsedMesh: Any, scene: typings.babylonjs.BABYLON.Scene): typings.babylonjs.BABYLON.LinesMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedMesh.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.LinesMesh]
 }

@@ -1,5 +1,16 @@
 package typings.awsSdk.ecsMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.APPMESH
+import typings.awsSdk.awsSdkStrings.CONTAINER_RUNTIME
+import typings.awsSdk.awsSdkStrings.ExecuteCommandAgent
+import typings.awsSdk.awsSdkStrings.GPU
+import typings.awsSdk.awsSdkStrings.PERCENT
+import typings.awsSdk.awsSdkStrings.TAGS
+import typings.awsSdk.awsSdkStrings.`container-instance`
+import typings.awsSdk.awsSdkStrings.containerInsights
+import typings.awsSdk.awsSdkStrings.memberOf
+import typings.awsSdk.awsSdkStrings.s3_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,22 +25,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type AgentUpdateStatus = typings.awsSdk.ecsMod._AgentUpdateStatus | java.lang.String
+type AgentUpdateStatus = _AgentUpdateStatus | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLED
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type AssignPublicIp = typings.awsSdk.ecsMod._AssignPublicIp | java.lang.String
+type AssignPublicIp = _AssignPublicIp | java.lang.String
 
-type AttachmentDetails = js.Array[typings.awsSdk.ecsMod.KeyValuePair]
+type AttachmentDetails = js.Array[KeyValuePair]
 
-type AttachmentStateChanges = js.Array[typings.awsSdk.ecsMod.AttachmentStateChange]
+type AttachmentStateChanges = js.Array[AttachmentStateChange]
 
-type Attachments = js.Array[typings.awsSdk.ecsMod.Attachment]
+type Attachments = js.Array[Attachment]
 
-type Attributes = js.Array[typings.awsSdk.ecsMod.Attribute]
+type Attributes = js.Array[Attribute]
 
 type Boolean = scala.Boolean
 
@@ -37,18 +48,25 @@ type BoxedBoolean = scala.Boolean
 
 type BoxedInteger = scala.Double
 
-type CapacityProviderField = typings.awsSdk.awsSdkStrings.TAGS | java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.X86_64
+  - typings.awsSdk.awsSdkStrings.ARM64
+  - java.lang.String
+*/
+type CPUArchitecture = _CPUArchitecture | java.lang.String
 
-type CapacityProviderFieldList = js.Array[typings.awsSdk.ecsMod.CapacityProviderField]
+type CapacityProviderField = TAGS | java.lang.String
+
+type CapacityProviderFieldList = js.Array[CapacityProviderField]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ACTIVE
   - typings.awsSdk.awsSdkStrings.INACTIVE
   - java.lang.String
 */
-type CapacityProviderStatus = typings.awsSdk.ecsMod._CapacityProviderStatus | java.lang.String
+type CapacityProviderStatus = _CapacityProviderStatus | java.lang.String
 
-type CapacityProviderStrategy = js.Array[typings.awsSdk.ecsMod.CapacityProviderStrategyItem]
+type CapacityProviderStrategy = js.Array[CapacityProviderStrategyItem]
 
 type CapacityProviderStrategyItemBase = scala.Double
 
@@ -58,44 +76,49 @@ type CapacityProviderStrategyItemWeight = scala.Double
   - typings.awsSdk.awsSdkStrings.DELETE_IN_PROGRESS
   - typings.awsSdk.awsSdkStrings.DELETE_COMPLETE
   - typings.awsSdk.awsSdkStrings.DELETE_FAILED
+  - typings.awsSdk.awsSdkStrings.UPDATE_IN_PROGRESS
+  - typings.awsSdk.awsSdkStrings.UPDATE_COMPLETE
+  - typings.awsSdk.awsSdkStrings.UPDATE_FAILED
   - java.lang.String
 */
-type CapacityProviderUpdateStatus = typings.awsSdk.ecsMod._CapacityProviderUpdateStatus | java.lang.String
+type CapacityProviderUpdateStatus = _CapacityProviderUpdateStatus | java.lang.String
 
-type CapacityProviders = js.Array[typings.awsSdk.ecsMod.CapacityProvider]
+type CapacityProviders = js.Array[CapacityProvider]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ATTACHMENTS
+  - typings.awsSdk.awsSdkStrings.CONFIGURATIONS
   - typings.awsSdk.awsSdkStrings.SETTINGS
   - typings.awsSdk.awsSdkStrings.STATISTICS
   - typings.awsSdk.awsSdkStrings.TAGS
   - java.lang.String
 */
-type ClusterField = typings.awsSdk.ecsMod._ClusterField | java.lang.String
+type ClusterField = _ClusterField | java.lang.String
 
-type ClusterFieldList = js.Array[typings.awsSdk.ecsMod.ClusterField]
+type ClusterFieldList = js.Array[ClusterField]
 
-type ClusterSettingName = typings.awsSdk.awsSdkStrings.containerInsights | java.lang.String
+type ClusterSettingName = containerInsights | java.lang.String
 
-type ClusterSettings = js.Array[typings.awsSdk.ecsMod.ClusterSetting]
+type ClusterSettings = js.Array[ClusterSetting]
 
-type Clusters = js.Array[typings.awsSdk.ecsMod.Cluster]
+type Clusters = js.Array[Cluster]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.EC2
   - typings.awsSdk.awsSdkStrings.FARGATE
+  - typings.awsSdk.awsSdkStrings.EXTERNAL
   - java.lang.String
 */
-type Compatibility = typings.awsSdk.ecsMod._Compatibility | java.lang.String
+type Compatibility = _Compatibility | java.lang.String
 
-type CompatibilityList = js.Array[typings.awsSdk.ecsMod.Compatibility]
+type CompatibilityList = js.Array[Compatibility]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CONNECTED
   - typings.awsSdk.awsSdkStrings.DISCONNECTED
   - java.lang.String
 */
-type Connectivity = typings.awsSdk.ecsMod._Connectivity | java.lang.String
+type Connectivity = _Connectivity | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.START
@@ -104,15 +127,20 @@ type Connectivity = typings.awsSdk.ecsMod._Connectivity | java.lang.String
   - typings.awsSdk.awsSdkStrings.HEALTHY
   - java.lang.String
 */
-type ContainerCondition = typings.awsSdk.ecsMod._ContainerCondition | java.lang.String
+type ContainerCondition = _ContainerCondition | java.lang.String
 
-type ContainerDefinitions = js.Array[typings.awsSdk.ecsMod.ContainerDefinition]
+type ContainerDefinitions = js.Array[ContainerDefinition]
 
-type ContainerDependencies = js.Array[typings.awsSdk.ecsMod.ContainerDependency]
+type ContainerDependencies = js.Array[ContainerDependency]
 
-type ContainerInstanceField = typings.awsSdk.awsSdkStrings.TAGS | java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.TAGS
+  - typings.awsSdk.awsSdkStrings.CONTAINER_INSTANCE_HEALTH
+  - java.lang.String
+*/
+type ContainerInstanceField = _ContainerInstanceField | java.lang.String
 
-type ContainerInstanceFieldList = js.Array[typings.awsSdk.ecsMod.ContainerInstanceField]
+type ContainerInstanceFieldList = js.Array[ContainerInstanceField]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ACTIVE
@@ -122,15 +150,15 @@ type ContainerInstanceFieldList = js.Array[typings.awsSdk.ecsMod.ContainerInstan
   - typings.awsSdk.awsSdkStrings.REGISTRATION_FAILED
   - java.lang.String
 */
-type ContainerInstanceStatus = typings.awsSdk.ecsMod._ContainerInstanceStatus | java.lang.String
+type ContainerInstanceStatus = _ContainerInstanceStatus | java.lang.String
 
-type ContainerInstances = js.Array[typings.awsSdk.ecsMod.ContainerInstance]
+type ContainerInstances = js.Array[ContainerInstance]
 
-type ContainerOverrides = js.Array[typings.awsSdk.ecsMod.ContainerOverride]
+type ContainerOverrides = js.Array[ContainerOverride]
 
-type ContainerStateChanges = js.Array[typings.awsSdk.ecsMod.ContainerStateChange]
+type ContainerStateChanges = js.Array[ContainerStateChange]
 
-type Containers = js.Array[typings.awsSdk.ecsMod.Container]
+type Containers = js.Array[Container]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ECS
@@ -138,9 +166,17 @@ type Containers = js.Array[typings.awsSdk.ecsMod.Container]
   - typings.awsSdk.awsSdkStrings.EXTERNAL
   - java.lang.String
 */
-type DeploymentControllerType = typings.awsSdk.ecsMod._DeploymentControllerType | java.lang.String
+type DeploymentControllerType = _DeploymentControllerType | java.lang.String
 
-type Deployments = js.Array[typings.awsSdk.ecsMod.Deployment]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.COMPLETED
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - typings.awsSdk.awsSdkStrings.IN_PROGRESS
+  - java.lang.String
+*/
+type DeploymentRolloutState = _DeploymentRolloutState | java.lang.String
+
+type Deployments = js.Array[Deployment]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.RUNNING
@@ -148,7 +184,7 @@ type Deployments = js.Array[typings.awsSdk.ecsMod.Deployment]
   - typings.awsSdk.awsSdkStrings.STOPPED
   - java.lang.String
 */
-type DesiredStatus = typings.awsSdk.ecsMod._DesiredStatus | java.lang.String
+type DesiredStatus = _DesiredStatus | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.read_
@@ -156,13 +192,13 @@ type DesiredStatus = typings.awsSdk.ecsMod._DesiredStatus | java.lang.String
   - typings.awsSdk.awsSdkStrings.mknod_
   - java.lang.String
 */
-type DeviceCgroupPermission = typings.awsSdk.ecsMod._DeviceCgroupPermission | java.lang.String
+type DeviceCgroupPermission = _DeviceCgroupPermission | java.lang.String
 
-type DeviceCgroupPermissions = js.Array[typings.awsSdk.ecsMod.DeviceCgroupPermission]
+type DeviceCgroupPermissions = js.Array[DeviceCgroupPermission]
 
-type DevicesList = js.Array[typings.awsSdk.ecsMod.Device]
+type DevicesList = js.Array[Device]
 
-type DockerLabelsMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.ecsMod.String]
+type DockerLabelsMap = StringDictionary[String]
 
 type Double = scala.Double
 
@@ -171,33 +207,41 @@ type Double = scala.Double
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type EFSAuthorizationConfigIAM = typings.awsSdk.ecsMod._EFSAuthorizationConfigIAM | java.lang.String
+type EFSAuthorizationConfigIAM = _EFSAuthorizationConfigIAM | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLED
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type EFSTransitEncryption = typings.awsSdk.ecsMod._EFSTransitEncryption | java.lang.String
+type EFSTransitEncryption = _EFSTransitEncryption | java.lang.String
 
-type EnvironmentFileType = typings.awsSdk.awsSdkStrings.s3_ | java.lang.String
+type EnvironmentFileType = s3_ | java.lang.String
 
-type EnvironmentFiles = js.Array[typings.awsSdk.ecsMod.EnvironmentFile]
+type EnvironmentFiles = js.Array[EnvironmentFile]
 
-type EnvironmentVariables = js.Array[typings.awsSdk.ecsMod.KeyValuePair]
+type EnvironmentVariables = js.Array[KeyValuePair]
 
-type Failures = js.Array[typings.awsSdk.ecsMod.Failure]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.NONE
+  - typings.awsSdk.awsSdkStrings.DEFAULT
+  - typings.awsSdk.awsSdkStrings.OVERRIDE
+  - java.lang.String
+*/
+type ExecuteCommandLogging = _ExecuteCommandLogging | java.lang.String
 
-type FirelensConfigurationOptionsMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.ecsMod.String]
+type Failures = js.Array[Failure]
+
+type FirelensConfigurationOptionsMap = StringDictionary[String]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.fluentd
   - typings.awsSdk.awsSdkStrings.fluentbit
   - java.lang.String
 */
-type FirelensConfigurationType = typings.awsSdk.ecsMod._FirelensConfigurationType | java.lang.String
+type FirelensConfigurationType = _FirelensConfigurationType | java.lang.String
 
-type GpuIds = js.Array[typings.awsSdk.ecsMod.String]
+type GpuIds = js.Array[String]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.HEALTHY
@@ -205,34 +249,48 @@ type GpuIds = js.Array[typings.awsSdk.ecsMod.String]
   - typings.awsSdk.awsSdkStrings.UNKNOWN
   - java.lang.String
 */
-type HealthStatus = typings.awsSdk.ecsMod._HealthStatus | java.lang.String
+type HealthStatus = _HealthStatus | java.lang.String
 
-type HostEntryList = js.Array[typings.awsSdk.ecsMod.HostEntry]
+type HostEntryList = js.Array[HostEntry]
 
-type InferenceAcceleratorOverrides = js.Array[typings.awsSdk.ecsMod.InferenceAcceleratorOverride]
+type InferenceAcceleratorOverrides = js.Array[InferenceAcceleratorOverride]
 
-type InferenceAccelerators = js.Array[typings.awsSdk.ecsMod.InferenceAccelerator]
+type InferenceAccelerators = js.Array[InferenceAccelerator]
+
+type InstanceHealthCheckResultList = js.Array[InstanceHealthCheckResult]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.OK
+  - typings.awsSdk.awsSdkStrings.IMPAIRED
+  - typings.awsSdk.awsSdkStrings.INSUFFICIENT_DATA
+  - typings.awsSdk.awsSdkStrings.INITIALIZING
+  - java.lang.String
+*/
+type InstanceHealthCheckState = _InstanceHealthCheckState | java.lang.String
+
+type InstanceHealthCheckType = CONTAINER_RUNTIME | java.lang.String
 
 type Integer = scala.Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.host__
-  - typings.awsSdk.awsSdkStrings.task_
+  - typings.awsSdk.awsSdkStrings.task__
   - typings.awsSdk.awsSdkStrings.none__
   - java.lang.String
 */
-type IpcMode = typings.awsSdk.ecsMod._IpcMode | java.lang.String
+type IpcMode = _IpcMode | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.EC2
   - typings.awsSdk.awsSdkStrings.FARGATE
+  - typings.awsSdk.awsSdkStrings.EXTERNAL
   - java.lang.String
 */
-type LaunchType = typings.awsSdk.ecsMod._LaunchType | java.lang.String
+type LaunchType = _LaunchType | java.lang.String
 
-type LoadBalancers = js.Array[typings.awsSdk.ecsMod.LoadBalancer]
+type LoadBalancers = js.Array[LoadBalancer]
 
-type LogConfigurationOptionsMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.ecsMod.String]
+type LogConfigurationOptionsMap = StringDictionary[String]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`json-file`
@@ -245,16 +303,24 @@ type LogConfigurationOptionsMap = org.scalablytyped.runtime.StringDictionary[typ
   - typings.awsSdk.awsSdkStrings.awsfirelens
   - java.lang.String
 */
-type LogDriver = typings.awsSdk.ecsMod._LogDriver | java.lang.String
+type LogDriver = _LogDriver | java.lang.String
 
 type Long = scala.Double
+
+type ManagedAgentName = ExecuteCommandAgent | java.lang.String
+
+type ManagedAgentStateChanges = js.Array[ManagedAgentStateChange]
+
+type ManagedAgents = js.Array[ManagedAgent]
+
+type ManagedScalingInstanceWarmupPeriod = scala.Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLED
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type ManagedScalingStatus = typings.awsSdk.ecsMod._ManagedScalingStatus | java.lang.String
+type ManagedScalingStatus = _ManagedScalingStatus | java.lang.String
 
 type ManagedScalingStepSize = scala.Double
 
@@ -265,13 +331,13 @@ type ManagedScalingTargetCapacity = scala.Double
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type ManagedTerminationProtection = typings.awsSdk.ecsMod._ManagedTerminationProtection | java.lang.String
+type ManagedTerminationProtection = _ManagedTerminationProtection | java.lang.String
 
-type MountPointList = js.Array[typings.awsSdk.ecsMod.MountPoint]
+type MountPointList = js.Array[MountPoint]
 
-type NetworkBindings = js.Array[typings.awsSdk.ecsMod.NetworkBinding]
+type NetworkBindings = js.Array[NetworkBinding]
 
-type NetworkInterfaces = js.Array[typings.awsSdk.ecsMod.NetworkInterface]
+type NetworkInterfaces = js.Array[NetworkInterface]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.bridge
@@ -280,25 +346,38 @@ type NetworkInterfaces = js.Array[typings.awsSdk.ecsMod.NetworkInterface]
   - typings.awsSdk.awsSdkStrings.none__
   - java.lang.String
 */
-type NetworkMode = typings.awsSdk.ecsMod._NetworkMode | java.lang.String
+type NetworkMode = _NetworkMode | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.WINDOWS_SERVER_2019_FULL
+  - typings.awsSdk.awsSdkStrings.WINDOWS_SERVER_2019_CORE
+  - typings.awsSdk.awsSdkStrings.WINDOWS_SERVER_2016_FULL
+  - typings.awsSdk.awsSdkStrings.WINDOWS_SERVER_2004_CORE
+  - typings.awsSdk.awsSdkStrings.WINDOWS_SERVER_2022_CORE
+  - typings.awsSdk.awsSdkStrings.WINDOWS_SERVER_2022_FULL
+  - typings.awsSdk.awsSdkStrings.WINDOWS_SERVER_20H2_CORE
+  - typings.awsSdk.awsSdkStrings.LINUX
+  - java.lang.String
+*/
+type OSFamily = _OSFamily | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.host__
-  - typings.awsSdk.awsSdkStrings.task_
+  - typings.awsSdk.awsSdkStrings.task__
   - java.lang.String
 */
-type PidMode = typings.awsSdk.ecsMod._PidMode | java.lang.String
+type PidMode = _PidMode | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.distinctInstance
   - typings.awsSdk.awsSdkStrings.memberOf
   - java.lang.String
 */
-type PlacementConstraintType = typings.awsSdk.ecsMod._PlacementConstraintType | java.lang.String
+type PlacementConstraintType = _PlacementConstraintType | java.lang.String
 
-type PlacementConstraints = js.Array[typings.awsSdk.ecsMod.PlacementConstraint]
+type PlacementConstraints = js.Array[PlacementConstraint]
 
-type PlacementStrategies = js.Array[typings.awsSdk.ecsMod.PlacementStrategy]
+type PlacementStrategies = js.Array[PlacementStrategy]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.random__
@@ -306,65 +385,68 @@ type PlacementStrategies = js.Array[typings.awsSdk.ecsMod.PlacementStrategy]
   - typings.awsSdk.awsSdkStrings.binpack
   - java.lang.String
 */
-type PlacementStrategyType = typings.awsSdk.ecsMod._PlacementStrategyType | java.lang.String
+type PlacementStrategyType = _PlacementStrategyType | java.lang.String
 
-type PlatformDeviceType = typings.awsSdk.awsSdkStrings.GPU | java.lang.String
+type PlatformDeviceType = GPU | java.lang.String
 
-type PlatformDevices = js.Array[typings.awsSdk.ecsMod.PlatformDevice]
+type PlatformDevices = js.Array[PlatformDevice]
 
-type PortMappingList = js.Array[typings.awsSdk.ecsMod.PortMapping]
+type PortMappingList = js.Array[PortMapping]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.TASK_DEFINITION
   - typings.awsSdk.awsSdkStrings.SERVICE
+  - typings.awsSdk.awsSdkStrings.NONE
   - java.lang.String
 */
-type PropagateTags = typings.awsSdk.ecsMod._PropagateTags | java.lang.String
+type PropagateTags = _PropagateTags | java.lang.String
 
-type ProxyConfigurationProperties = js.Array[typings.awsSdk.ecsMod.KeyValuePair]
+type ProxyConfigurationProperties = js.Array[KeyValuePair]
 
-type ProxyConfigurationType = typings.awsSdk.awsSdkStrings.APPMESH | java.lang.String
+type ProxyConfigurationType = APPMESH | java.lang.String
 
-type RequiresAttributes = js.Array[typings.awsSdk.ecsMod.Attribute]
+type RequiresAttributes = js.Array[Attribute]
 
-type ResourceRequirements = js.Array[typings.awsSdk.ecsMod.ResourceRequirement]
+type ResourceRequirements = js.Array[ResourceRequirement]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.GPU
   - typings.awsSdk.awsSdkStrings.InferenceAccelerator
   - java.lang.String
 */
-type ResourceType = typings.awsSdk.ecsMod._ResourceType | java.lang.String
+type ResourceType = _ResourceType | java.lang.String
 
-type Resources = js.Array[typings.awsSdk.ecsMod.Resource]
+type Resources = js.Array[Resource]
 
-type ScaleUnit = typings.awsSdk.awsSdkStrings.PERCENT | java.lang.String
+type ScaleUnit = PERCENT | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.REPLICA
   - typings.awsSdk.awsSdkStrings.DAEMON
   - java.lang.String
 */
-type SchedulingStrategy = typings.awsSdk.ecsMod._SchedulingStrategy | java.lang.String
+type SchedulingStrategy = _SchedulingStrategy | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
-  - typings.awsSdk.awsSdkStrings.task_
+  - typings.awsSdk.awsSdkStrings.task__
   - typings.awsSdk.awsSdkStrings.shared__
   - java.lang.String
 */
-type Scope = typings.awsSdk.ecsMod._Scope | java.lang.String
+type Scope = _Scope | java.lang.String
 
-type SecretList = js.Array[typings.awsSdk.ecsMod.Secret]
+type SecretList = js.Array[Secret]
 
-type ServiceEvents = js.Array[typings.awsSdk.ecsMod.ServiceEvent]
+type SensitiveString = java.lang.String
 
-type ServiceField = typings.awsSdk.awsSdkStrings.TAGS | java.lang.String
+type ServiceEvents = js.Array[ServiceEvent]
 
-type ServiceFieldList = js.Array[typings.awsSdk.ecsMod.ServiceField]
+type ServiceField = TAGS | java.lang.String
 
-type ServiceRegistries = js.Array[typings.awsSdk.ecsMod.ServiceRegistry]
+type ServiceFieldList = js.Array[ServiceField]
 
-type Services = js.Array[typings.awsSdk.ecsMod.Service]
+type ServiceRegistries = js.Array[ServiceRegistry]
+
+type Services = js.Array[Service]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.serviceLongArnFormat
@@ -374,43 +456,43 @@ type Services = js.Array[typings.awsSdk.ecsMod.Service]
   - typings.awsSdk.awsSdkStrings.containerInsights
   - java.lang.String
 */
-type SettingName = typings.awsSdk.ecsMod._SettingName | java.lang.String
+type SettingName = _SettingName | java.lang.String
 
-type Settings = js.Array[typings.awsSdk.ecsMod.Setting]
+type Settings = js.Array[Setting]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ASC
   - typings.awsSdk.awsSdkStrings.DESC
   - java.lang.String
 */
-type SortOrder = typings.awsSdk.ecsMod._SortOrder | java.lang.String
+type SortOrder = _SortOrder | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.STEADY_STATE
   - typings.awsSdk.awsSdkStrings.STABILIZING
   - java.lang.String
 */
-type StabilityStatus = typings.awsSdk.ecsMod._StabilityStatus | java.lang.String
+type StabilityStatus = _StabilityStatus | java.lang.String
 
-type Statistics = js.Array[typings.awsSdk.ecsMod.KeyValuePair]
+type Statistics = js.Array[KeyValuePair]
 
 type String = java.lang.String
 
-type StringList = js.Array[typings.awsSdk.ecsMod.String]
+type StringList = js.Array[String]
 
-type StringMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.ecsMod.String]
+type StringMap = StringDictionary[String]
 
-type SystemControls = js.Array[typings.awsSdk.ecsMod.SystemControl]
+type SystemControls = js.Array[SystemControl]
 
 type TagKey = java.lang.String
 
-type TagKeys = js.Array[typings.awsSdk.ecsMod.TagKey]
+type TagKeys = js.Array[TagKey]
 
 type TagValue = java.lang.String
 
-type Tags = js.Array[typings.awsSdk.ecsMod.Tag]
+type Tags = js.Array[Tag]
 
-type TargetType = typings.awsSdk.awsSdkStrings.`container-instance` | java.lang.String
+type TargetType = `container-instance` | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ACTIVE
@@ -418,32 +500,32 @@ type TargetType = typings.awsSdk.awsSdkStrings.`container-instance` | java.lang.
   - typings.awsSdk.awsSdkStrings.ALL
   - java.lang.String
 */
-type TaskDefinitionFamilyStatus = typings.awsSdk.ecsMod._TaskDefinitionFamilyStatus | java.lang.String
+type TaskDefinitionFamilyStatus = _TaskDefinitionFamilyStatus | java.lang.String
 
-type TaskDefinitionField = typings.awsSdk.awsSdkStrings.TAGS | java.lang.String
+type TaskDefinitionField = TAGS | java.lang.String
 
-type TaskDefinitionFieldList = js.Array[typings.awsSdk.ecsMod.TaskDefinitionField]
+type TaskDefinitionFieldList = js.Array[TaskDefinitionField]
 
-type TaskDefinitionPlacementConstraintType = typings.awsSdk.awsSdkStrings.memberOf | java.lang.String
+type TaskDefinitionPlacementConstraintType = memberOf | java.lang.String
 
-type TaskDefinitionPlacementConstraints = js.Array[typings.awsSdk.ecsMod.TaskDefinitionPlacementConstraint]
+type TaskDefinitionPlacementConstraints = js.Array[TaskDefinitionPlacementConstraint]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ACTIVE
   - typings.awsSdk.awsSdkStrings.INACTIVE
   - java.lang.String
 */
-type TaskDefinitionStatus = typings.awsSdk.ecsMod._TaskDefinitionStatus | java.lang.String
+type TaskDefinitionStatus = _TaskDefinitionStatus | java.lang.String
 
-type TaskField = typings.awsSdk.awsSdkStrings.TAGS | java.lang.String
+type TaskField = TAGS | java.lang.String
 
-type TaskFieldList = js.Array[typings.awsSdk.ecsMod.TaskField]
+type TaskFieldList = js.Array[TaskField]
 
-type TaskSetField = typings.awsSdk.awsSdkStrings.TAGS | java.lang.String
+type TaskSetField = TAGS | java.lang.String
 
-type TaskSetFieldList = js.Array[typings.awsSdk.ecsMod.TaskSetField]
+type TaskSetFieldList = js.Array[TaskSetField]
 
-type TaskSets = js.Array[typings.awsSdk.ecsMod.TaskSet]
+type TaskSets = js.Array[TaskSet]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.TaskFailedToStart
@@ -451,22 +533,22 @@ type TaskSets = js.Array[typings.awsSdk.ecsMod.TaskSet]
   - typings.awsSdk.awsSdkStrings.UserInitiated
   - java.lang.String
 */
-type TaskStopCode = typings.awsSdk.ecsMod._TaskStopCode | java.lang.String
+type TaskStopCode = _TaskStopCode | java.lang.String
 
-type Tasks = js.Array[typings.awsSdk.ecsMod.Task]
+type Tasks = js.Array[Task]
 
-type Timestamp = typings.std.Date
+type Timestamp = js.Date
 
-type TmpfsList = js.Array[typings.awsSdk.ecsMod.Tmpfs]
+type TmpfsList = js.Array[Tmpfs]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.tcp_
   - typings.awsSdk.awsSdkStrings.udp_
   - java.lang.String
 */
-type TransportProtocol = typings.awsSdk.ecsMod._TransportProtocol | java.lang.String
+type TransportProtocol = _TransportProtocol | java.lang.String
 
-type UlimitList = js.Array[typings.awsSdk.ecsMod.Ulimit]
+type UlimitList = js.Array[Ulimit]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.core__
@@ -486,15 +568,15 @@ type UlimitList = js.Array[typings.awsSdk.ecsMod.Ulimit]
   - typings.awsSdk.awsSdkStrings.stack
   - java.lang.String
 */
-type UlimitName = typings.awsSdk.ecsMod._UlimitName | java.lang.String
+type UlimitName = _UlimitName | java.lang.String
 
-type VolumeFromList = js.Array[typings.awsSdk.ecsMod.VolumeFrom]
+type VolumeFromList = js.Array[VolumeFrom]
 
-type VolumeList = js.Array[typings.awsSdk.ecsMod.Volume]
+type VolumeList = js.Array[Volume]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2014-11-13`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.ecsMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | java.lang.String

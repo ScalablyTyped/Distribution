@@ -23,11 +23,11 @@ object installResultMod {
       
       inline def setNotUpdatedURLs(value: js.Array[String]): Self = StObject.set(x, "notUpdatedURLs", value.asInstanceOf[js.Any])
       
-      inline def setNotUpdatedURLsVarargs(value: String*): Self = StObject.set(x, "notUpdatedURLs", js.Array(value :_*))
+      inline def setNotUpdatedURLsVarargs(value: String*): Self = StObject.set(x, "notUpdatedURLs", js.Array(value*))
       
       inline def setUpdatedURLs(value: js.Array[String]): Self = StObject.set(x, "updatedURLs", value.asInstanceOf[js.Any])
       
-      inline def setUpdatedURLsVarargs(value: String*): Self = StObject.set(x, "updatedURLs", js.Array(value :_*))
+      inline def setUpdatedURLsVarargs(value: String*): Self = StObject.set(x, "updatedURLs", js.Array(value*))
     }
   }
 }

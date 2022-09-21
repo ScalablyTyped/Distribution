@@ -6,38 +6,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("gitana", "DomainPrincipal")
 @js.native
-class DomainPrincipal protected () extends StObject {
-  def this(domain: js.Any, `object`: js.Any) = this()
+open class DomainPrincipal protected () extends StObject {
+  def this(domain: Any, `object`: Any) = this()
   
-  def attach(attachmentId: js.Any, contentType: js.Any, data: js.Any): js.Any = js.native
+  def attach(attachmentId: Any, contentType: Any, data: Any): Any = js.native
   
-  def attachment(attachmentId: js.Any): js.Any = js.native
+  def attachment(attachmentId: Any): Any = js.native
   
   def base(): Unit = js.native
   
   def beforeChainRun(): Unit = js.native
   
-  def getDomainQualifiedId(): js.Any = js.native
+  def getDomainQualifiedId(): Any = js.native
   
-  def getDomainQualifiedName(): js.Any = js.native
+  def getDomainQualifiedName(): Any = js.native
   
-  def getName(): js.Any = js.native
+  def getName(): Any = js.native
   
-  def getPreviewUri(name: js.Any, config: js.Any): js.Any = js.native
+  def getPreviewUri(name: Any, config: Any): Any = js.native
   
-  def getType(): js.Any = js.native
+  def getType(): Any = js.native
   
-  def getUri(): js.Any = js.native
+  def getUri(): Any = js.native
   
-  def listAttachments(local: js.Any): js.Any = js.native
+  def listAttachments(local: Any): Any = js.native
   
-  def listAuthenticationGrants(pagination: js.Any): js.Any = js.native
+  def listAuthenticationGrants(pagination: Any): Any = js.native
   
-  def listMemberships(indirect: js.Any, pagination: js.Any): js.Any = js.native
+  def listMemberships(indirect: Any, pagination: Any): Any = js.native
   
-  def listTeamMemberships(teamable: js.Any, pagination: js.Any): js.Any = js.native
+  def listTeamMemberships(teamable: Any, pagination: Any): Any = js.native
   
-  def unattach(attachmentId: js.Any): js.Any = js.native
+  def unattach(attachmentId: Any): Any = js.native
 }
 object DomainPrincipal {
   
@@ -46,17 +46,17 @@ object DomainPrincipal {
   val ^ : js.Any = js.native
   
   /* static member */
-  inline def extend(_instance: js.Any, _static: js.Any, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(_instance.asInstanceOf[js.Any], _static.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def extend(_instance: Any, _static: Any, args: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")((List(_instance.asInstanceOf[js.Any], _static.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
   
   /* static member */
-  inline def forEach(`object`: js.Any, block: js.Any, context: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(`object`.asInstanceOf[js.Any], block.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def forEach(`object`: Any, block: Any, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(`object`.asInstanceOf[js.Any], block.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  inline def implement(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("implement")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def implement(args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("implement")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Any]
   
   /* static member */
-  inline def toString_(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")().asInstanceOf[js.Any]
+  inline def toString_(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")().asInstanceOf[Any]
   
   /* static member */
-  inline def valueOf_(`type`: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("valueOf")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def valueOf_(`type`: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("valueOf")(`type`.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

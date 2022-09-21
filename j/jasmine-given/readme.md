@@ -10,10 +10,10 @@ Adds a Given-When-Then DSL to jasmine as an alternative style for specs
 | ------------------ | :-------------: |
 | Full name          | jasmine-given |
 | Keywords           | jasmine, bdd |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 137168 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7938.666666666667 |
+| # stars            | 175.0 |
 
 ## Links
 - [Homepage](https://github.com/searls/jasmine-given)

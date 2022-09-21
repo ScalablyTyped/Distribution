@@ -56,7 +56,7 @@ object SPClientTemplates {
   
   @JSGlobal("SPClientTemplates.ClientFormContext")
   @js.native
-  class ClientFormContext ()
+  open class ClientFormContext ()
     extends StObject
        with typings.sharepoint.SPClientTemplates.ClientFormContext {
     
@@ -70,7 +70,7 @@ object SPClientTemplates {
     var fieldSchema: FieldSchemaInForm = js.native
     
     /* CompleteClass */
-    var fieldValue: js.Any = js.native
+    var fieldValue: Any = js.native
     
     /* CompleteClass */
     var itemAttributes: ExternalListItem = js.native
@@ -85,19 +85,19 @@ object SPClientTemplates {
     override def registerFocusCallback(fieldname: String, callback: js.Function0[Unit]): Unit = js.native
     
     /* CompleteClass */
-    override def registerGetValueCallback(fieldname: String, callback: js.Function0[js.Any]): Unit = js.native
+    override def registerGetValueCallback(fieldname: String, callback: js.Function0[Any]): Unit = js.native
     
     /* CompleteClass */
-    override def registerHasValueChangedCallback(fieldname: String, callback: js.Function1[/* eventArg */ js.UndefOr[js.Any], Unit]): Unit = js.native
+    override def registerHasValueChangedCallback(fieldname: String, callback: js.Function1[/* eventArg */ js.UndefOr[Any], Unit]): Unit = js.native
     
     /* CompleteClass */
     override def registerInitCallback(fieldname: String, callback: js.Function0[Unit]): Unit = js.native
     
     /* CompleteClass */
-    override def registerValidationErrorCallback(fieldname: String, callback: js.Function1[/* error */ js.Any, Unit]): Unit = js.native
+    override def registerValidationErrorCallback(fieldname: String, callback: js.Function1[/* error */ Any, Unit]): Unit = js.native
     
     /* CompleteClass */
-    override def updateControlValue(fieldname: String, value: js.Any): Unit = js.native
+    override def updateControlValue(fieldname: String, value: Any): Unit = js.native
     
     /* CompleteClass */
     var webAttributes: AllowScriptableWebParts = js.native
@@ -191,7 +191,7 @@ object SPClientTemplates {
   
   @JSGlobal("SPClientTemplates.TemplateManager")
   @js.native
-  class TemplateManager ()
+  open class TemplateManager ()
     extends StObject
        with typings.sharepoint.SPClientTemplates.TemplateManager
   object TemplateManager {
@@ -233,7 +233,7 @@ object SPClientTemplates {
   
   @JSGlobal("SPClientTemplates.Utility")
   @js.native
-  class Utility ()
+  open class Utility ()
     extends StObject
        with typings.sharepoint.SPClientTemplates.Utility
   object Utility {
@@ -250,7 +250,7 @@ object SPClientTemplates {
     inline def ChoiceFormatTypeToString(fileSystemObjectType: ChoiceFormatType): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ChoiceFormatTypeToString")(fileSystemObjectType.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /* static member */
-    inline def ComputeRegisterTypeInfo(renderCtx: TemplateOverridesOptions): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ComputeRegisterTypeInfo")(renderCtx.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def ComputeRegisterTypeInfo(renderCtx: TemplateOverridesOptions): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ComputeRegisterTypeInfo")(renderCtx.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /* static member */
     inline def ControlModeToString(mode: ClientControlMode): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ControlModeToString")(mode.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -259,7 +259,7 @@ object SPClientTemplates {
     inline def FileSystemObjectTypeToString(fileSystemObjectType: FileSystemObjectType): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FileSystemObjectTypeToString")(fileSystemObjectType.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /* static member */
-    inline def GetControlOptions(control: HTMLElement): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetControlOptions")(control.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def GetControlOptions(control: HTMLElement): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetControlOptions")(control.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /* static member */
     inline def GetFormContextForCurrentField(context: RenderContextForm): typings.sharepoint.SPClientTemplates.ClientFormContext = ^.asInstanceOf[js.Dynamic].applyDynamic("GetFormContextForCurrentField")(context.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SPClientTemplates.ClientFormContext]
@@ -299,7 +299,7 @@ object SPClientTemplates {
     
     /** Tries to resolve user names from string. Pushes either ClientUserValue (if resolved successfully) or original string (if not) to the resulting array. */
     /* static member */
-    inline def TryParseUserControlValue(userStr: String, separator: String): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("TryParseUserControlValue")(userStr.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def TryParseUserControlValue(userStr: String, separator: String): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("TryParseUserControlValue")(userStr.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     
     /** Returns ";#" */
     /* static member */

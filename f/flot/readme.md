@@ -9,10 +9,10 @@
 | ------------------ | :-------------: |
 | Full name          | flot |
 | Keywords           | - |
-| # releases         | 36 |
-| # dependents       | 24 |
-| # downloads        | 1525436 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 206815.66666666666 |
+| # stars            | 5942.0 |
 
 ## Links
 - [Homepage](https://github.com/flot/flot#readme)

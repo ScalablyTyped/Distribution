@@ -4,32 +4,19 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/analytics/v3", "analytics_v3.Resource$Management$Experiments")
 @js.native
-class ResourceManagementExperiments protected () extends StObject {
+open class ResourceManagementExperiments protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native
   
-  /**
-    * analytics.management.experiments.delete
-    * @desc Delete an experiment.
-    * @alias analytics.management.experiments.delete
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.accountId Account ID to which the experiment belongs
-    * @param {string} params.experimentId ID of the experiment to delete
-    * @param {string} params.profileId View (Profile) ID to which the experiment belongs
-    * @param {string} params.webPropertyId Web property ID to which the experiment belongs
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
@@ -37,8 +24,8 @@ class ResourceManagementExperiments protected () extends StObject {
   def delete(params: ParamsResourceManagementExperimentsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
     params: ParamsResourceManagementExperimentsDelete,
-    options: BodyResponseCallback[Unit],
-    callback: BodyResponseCallback[Unit]
+    options: BodyResponseCallback[Readable | Unit],
+    callback: BodyResponseCallback[Readable | Unit]
   ): Unit = js.native
   def delete(params: ParamsResourceManagementExperimentsDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(
@@ -46,22 +33,67 @@ class ResourceManagementExperiments protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
-  
   /**
-    * analytics.management.experiments.get
-    * @desc Returns an experiment to which the user has access.
-    * @alias analytics.management.experiments.get
-    * @memberOf! ()
+    * Delete an experiment.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/analytics.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.accountId Account ID to retrieve the experiment for.
-    * @param {string} params.experimentId Experiment ID to retrieve the experiment for.
-    * @param {string} params.profileId View (Profile) ID to retrieve the experiment for.
-    * @param {string} params.webPropertyId Web property ID to retrieve the experiment for.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const analytics = google.analytics('v3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/analytics',
+    *       'https://www.googleapis.com/auth/analytics.edit',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await analytics.management.experiments.delete({
+    *     // Account ID to which the experiment belongs
+    *     accountId: 'placeholder-value',
+    *     // ID of the experiment to delete
+    *     experimentId: 'placeholder-value',
+    *     // View (Profile) ID to which the experiment belongs
+    *     profileId: 'placeholder-value',
+    *     // Web property ID to which the experiment belongs
+    *     webPropertyId: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def delete(params: ParamsResourceManagementExperimentsDelete, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def delete(
+    params: ParamsResourceManagementExperimentsDelete,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def get(): GaxiosPromise[SchemaExperiment] = js.native
   def get(callback: BodyResponseCallback[SchemaExperiment]): Unit = js.native
   def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaExperiment] = js.native
@@ -69,8 +101,8 @@ class ResourceManagementExperiments protected () extends StObject {
   def get(params: ParamsResourceManagementExperimentsGet, callback: BodyResponseCallback[SchemaExperiment]): Unit = js.native
   def get(
     params: ParamsResourceManagementExperimentsGet,
-    options: BodyResponseCallback[SchemaExperiment],
-    callback: BodyResponseCallback[SchemaExperiment]
+    options: BodyResponseCallback[Readable | SchemaExperiment],
+    callback: BodyResponseCallback[Readable | SchemaExperiment]
   ): Unit = js.native
   def get(params: ParamsResourceManagementExperimentsGet, options: MethodOptions): GaxiosPromise[SchemaExperiment] = js.native
   def get(
@@ -78,22 +110,100 @@ class ResourceManagementExperiments protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaExperiment]
   ): Unit = js.native
-  
   /**
-    * analytics.management.experiments.insert
-    * @desc Create a new experiment.
-    * @alias analytics.management.experiments.insert
-    * @memberOf! ()
+    * Returns an experiment to which the user has access.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/analytics.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.accountId Account ID to create the experiment for.
-    * @param {string} params.profileId View (Profile) ID to create the experiment for.
-    * @param {string} params.webPropertyId Web property ID to create the experiment for.
-    * @param {().Experiment} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const analytics = google.analytics('v3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/analytics',
+    *       'https://www.googleapis.com/auth/analytics.edit',
+    *       'https://www.googleapis.com/auth/analytics.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await analytics.management.experiments.get({
+    *     // Account ID to retrieve the experiment for.
+    *     accountId: 'placeholder-value',
+    *     // Experiment ID to retrieve the experiment for.
+    *     experimentId: 'placeholder-value',
+    *     // View (Profile) ID to retrieve the experiment for.
+    *     profileId: 'placeholder-value',
+    *     // Web property ID to retrieve the experiment for.
+    *     webPropertyId: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "accountId": "my_accountId",
+    *   //   "created": "my_created",
+    *   //   "description": "my_description",
+    *   //   "editableInGaUi": false,
+    *   //   "endTime": "my_endTime",
+    *   //   "equalWeighting": false,
+    *   //   "id": "my_id",
+    *   //   "internalWebPropertyId": "my_internalWebPropertyId",
+    *   //   "kind": "my_kind",
+    *   //   "minimumExperimentLengthInDays": 0,
+    *   //   "name": "my_name",
+    *   //   "objectiveMetric": "my_objectiveMetric",
+    *   //   "optimizationType": "my_optimizationType",
+    *   //   "parentLink": {},
+    *   //   "profileId": "my_profileId",
+    *   //   "reasonExperimentEnded": "my_reasonExperimentEnded",
+    *   //   "rewriteVariationUrlsAsOriginal": false,
+    *   //   "selfLink": "my_selfLink",
+    *   //   "servingFramework": "my_servingFramework",
+    *   //   "snippet": "my_snippet",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "trafficCoverage": {},
+    *   //   "updated": "my_updated",
+    *   //   "variations": [],
+    *   //   "webPropertyId": "my_webPropertyId",
+    *   //   "winnerConfidenceLevel": {},
+    *   //   "winnerFound": false
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def get(params: ParamsResourceManagementExperimentsGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def get(
+    params: ParamsResourceManagementExperimentsGet,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def insert(): GaxiosPromise[SchemaExperiment] = js.native
   def insert(callback: BodyResponseCallback[SchemaExperiment]): Unit = js.native
   def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaExperiment] = js.native
@@ -104,8 +214,8 @@ class ResourceManagementExperiments protected () extends StObject {
   ): Unit = js.native
   def insert(
     params: ParamsResourceManagementExperimentsInsert,
-    options: BodyResponseCallback[SchemaExperiment],
-    callback: BodyResponseCallback[SchemaExperiment]
+    options: BodyResponseCallback[Readable | SchemaExperiment],
+    callback: BodyResponseCallback[Readable | SchemaExperiment]
   ): Unit = js.native
   def insert(params: ParamsResourceManagementExperimentsInsert, options: MethodOptions): GaxiosPromise[SchemaExperiment] = js.native
   def insert(
@@ -113,23 +223,132 @@ class ResourceManagementExperiments protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaExperiment]
   ): Unit = js.native
-  
   /**
-    * analytics.management.experiments.list
-    * @desc Lists experiments to which the user has access.
-    * @alias analytics.management.experiments.list
-    * @memberOf! ()
+    * Create a new experiment.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/analytics.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.accountId Account ID to retrieve experiments for.
-    * @param {integer=} params.max-results The maximum number of experiments to include in this response.
-    * @param {string} params.profileId View (Profile) ID to retrieve experiments for.
-    * @param {integer=} params.start-index An index of the first experiment to retrieve. Use this parameter as a pagination mechanism along with the max-results parameter.
-    * @param {string} params.webPropertyId Web property ID to retrieve experiments for.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const analytics = google.analytics('v3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/analytics',
+    *       'https://www.googleapis.com/auth/analytics.edit',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await analytics.management.experiments.insert({
+    *     // Account ID to create the experiment for.
+    *     accountId: 'placeholder-value',
+    *     // View (Profile) ID to create the experiment for.
+    *     profileId: 'placeholder-value',
+    *     // Web property ID to create the experiment for.
+    *     webPropertyId: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "accountId": "my_accountId",
+    *       //   "created": "my_created",
+    *       //   "description": "my_description",
+    *       //   "editableInGaUi": false,
+    *       //   "endTime": "my_endTime",
+    *       //   "equalWeighting": false,
+    *       //   "id": "my_id",
+    *       //   "internalWebPropertyId": "my_internalWebPropertyId",
+    *       //   "kind": "my_kind",
+    *       //   "minimumExperimentLengthInDays": 0,
+    *       //   "name": "my_name",
+    *       //   "objectiveMetric": "my_objectiveMetric",
+    *       //   "optimizationType": "my_optimizationType",
+    *       //   "parentLink": {},
+    *       //   "profileId": "my_profileId",
+    *       //   "reasonExperimentEnded": "my_reasonExperimentEnded",
+    *       //   "rewriteVariationUrlsAsOriginal": false,
+    *       //   "selfLink": "my_selfLink",
+    *       //   "servingFramework": "my_servingFramework",
+    *       //   "snippet": "my_snippet",
+    *       //   "startTime": "my_startTime",
+    *       //   "status": "my_status",
+    *       //   "trafficCoverage": {},
+    *       //   "updated": "my_updated",
+    *       //   "variations": [],
+    *       //   "webPropertyId": "my_webPropertyId",
+    *       //   "winnerConfidenceLevel": {},
+    *       //   "winnerFound": false
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "accountId": "my_accountId",
+    *   //   "created": "my_created",
+    *   //   "description": "my_description",
+    *   //   "editableInGaUi": false,
+    *   //   "endTime": "my_endTime",
+    *   //   "equalWeighting": false,
+    *   //   "id": "my_id",
+    *   //   "internalWebPropertyId": "my_internalWebPropertyId",
+    *   //   "kind": "my_kind",
+    *   //   "minimumExperimentLengthInDays": 0,
+    *   //   "name": "my_name",
+    *   //   "objectiveMetric": "my_objectiveMetric",
+    *   //   "optimizationType": "my_optimizationType",
+    *   //   "parentLink": {},
+    *   //   "profileId": "my_profileId",
+    *   //   "reasonExperimentEnded": "my_reasonExperimentEnded",
+    *   //   "rewriteVariationUrlsAsOriginal": false,
+    *   //   "selfLink": "my_selfLink",
+    *   //   "servingFramework": "my_servingFramework",
+    *   //   "snippet": "my_snippet",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "trafficCoverage": {},
+    *   //   "updated": "my_updated",
+    *   //   "variations": [],
+    *   //   "webPropertyId": "my_webPropertyId",
+    *   //   "winnerConfidenceLevel": {},
+    *   //   "winnerFound": false
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def insert(params: ParamsResourceManagementExperimentsInsert, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def insert(
+    params: ParamsResourceManagementExperimentsInsert,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def list(): GaxiosPromise[SchemaExperiments] = js.native
   def list(callback: BodyResponseCallback[SchemaExperiments]): Unit = js.native
   def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaExperiments] = js.native
@@ -137,8 +356,8 @@ class ResourceManagementExperiments protected () extends StObject {
   def list(params: ParamsResourceManagementExperimentsList, callback: BodyResponseCallback[SchemaExperiments]): Unit = js.native
   def list(
     params: ParamsResourceManagementExperimentsList,
-    options: BodyResponseCallback[SchemaExperiments],
-    callback: BodyResponseCallback[SchemaExperiments]
+    options: BodyResponseCallback[Readable | SchemaExperiments],
+    callback: BodyResponseCallback[Readable | SchemaExperiments]
   ): Unit = js.native
   def list(params: ParamsResourceManagementExperimentsList, options: MethodOptions): GaxiosPromise[SchemaExperiments] = js.native
   def list(
@@ -146,24 +365,82 @@ class ResourceManagementExperiments protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaExperiments]
   ): Unit = js.native
-  
   /**
-    * analytics.management.experiments.patch
-    * @desc Update an existing experiment. This method supports patch
-    * semantics.
-    * @alias analytics.management.experiments.patch
-    * @memberOf! ()
+    * Lists experiments to which the user has access.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/analytics.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.accountId Account ID of the experiment to update.
-    * @param {string} params.experimentId Experiment ID of the experiment to update.
-    * @param {string} params.profileId View (Profile) ID of the experiment to update.
-    * @param {string} params.webPropertyId Web property ID of the experiment to update.
-    * @param {().Experiment} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const analytics = google.analytics('v3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/analytics',
+    *       'https://www.googleapis.com/auth/analytics.edit',
+    *       'https://www.googleapis.com/auth/analytics.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await analytics.management.experiments.list({
+    *     // Account ID to retrieve experiments for.
+    *     accountId: 'd+',
+    *     // The maximum number of experiments to include in this response.
+    *     'max-results': 'placeholder-value',
+    *     // View (Profile) ID to retrieve experiments for.
+    *     profileId: 'd+',
+    *     // An index of the first experiment to retrieve. Use this parameter as a pagination mechanism along with the max-results parameter.
+    *     'start-index': 'placeholder-value',
+    *     // Web property ID to retrieve experiments for.
+    *     webPropertyId: 'UA-(d+)-(d+)',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "items": [],
+    *   //   "itemsPerPage": 0,
+    *   //   "kind": "my_kind",
+    *   //   "nextLink": "my_nextLink",
+    *   //   "previousLink": "my_previousLink",
+    *   //   "startIndex": 0,
+    *   //   "totalResults": 0,
+    *   //   "username": "my_username"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def list(params: ParamsResourceManagementExperimentsList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def list(
+    params: ParamsResourceManagementExperimentsList,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def patch(): GaxiosPromise[SchemaExperiment] = js.native
   def patch(callback: BodyResponseCallback[SchemaExperiment]): Unit = js.native
   def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaExperiment] = js.native
@@ -171,8 +448,8 @@ class ResourceManagementExperiments protected () extends StObject {
   def patch(params: ParamsResourceManagementExperimentsPatch, callback: BodyResponseCallback[SchemaExperiment]): Unit = js.native
   def patch(
     params: ParamsResourceManagementExperimentsPatch,
-    options: BodyResponseCallback[SchemaExperiment],
-    callback: BodyResponseCallback[SchemaExperiment]
+    options: BodyResponseCallback[Readable | SchemaExperiment],
+    callback: BodyResponseCallback[Readable | SchemaExperiment]
   ): Unit = js.native
   def patch(params: ParamsResourceManagementExperimentsPatch, options: MethodOptions): GaxiosPromise[SchemaExperiment] = js.native
   def patch(
@@ -180,23 +457,134 @@ class ResourceManagementExperiments protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaExperiment]
   ): Unit = js.native
-  
   /**
-    * analytics.management.experiments.update
-    * @desc Update an existing experiment.
-    * @alias analytics.management.experiments.update
-    * @memberOf! ()
+    * Update an existing experiment. This method supports patch semantics.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/analytics.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.accountId Account ID of the experiment to update.
-    * @param {string} params.experimentId Experiment ID of the experiment to update.
-    * @param {string} params.profileId View (Profile) ID of the experiment to update.
-    * @param {string} params.webPropertyId Web property ID of the experiment to update.
-    * @param {().Experiment} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const analytics = google.analytics('v3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/analytics',
+    *       'https://www.googleapis.com/auth/analytics.edit',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await analytics.management.experiments.patch({
+    *     // Account ID of the experiment to update.
+    *     accountId: 'placeholder-value',
+    *     // Experiment ID of the experiment to update.
+    *     experimentId: 'placeholder-value',
+    *     // View (Profile) ID of the experiment to update.
+    *     profileId: 'placeholder-value',
+    *     // Web property ID of the experiment to update.
+    *     webPropertyId: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "accountId": "my_accountId",
+    *       //   "created": "my_created",
+    *       //   "description": "my_description",
+    *       //   "editableInGaUi": false,
+    *       //   "endTime": "my_endTime",
+    *       //   "equalWeighting": false,
+    *       //   "id": "my_id",
+    *       //   "internalWebPropertyId": "my_internalWebPropertyId",
+    *       //   "kind": "my_kind",
+    *       //   "minimumExperimentLengthInDays": 0,
+    *       //   "name": "my_name",
+    *       //   "objectiveMetric": "my_objectiveMetric",
+    *       //   "optimizationType": "my_optimizationType",
+    *       //   "parentLink": {},
+    *       //   "profileId": "my_profileId",
+    *       //   "reasonExperimentEnded": "my_reasonExperimentEnded",
+    *       //   "rewriteVariationUrlsAsOriginal": false,
+    *       //   "selfLink": "my_selfLink",
+    *       //   "servingFramework": "my_servingFramework",
+    *       //   "snippet": "my_snippet",
+    *       //   "startTime": "my_startTime",
+    *       //   "status": "my_status",
+    *       //   "trafficCoverage": {},
+    *       //   "updated": "my_updated",
+    *       //   "variations": [],
+    *       //   "webPropertyId": "my_webPropertyId",
+    *       //   "winnerConfidenceLevel": {},
+    *       //   "winnerFound": false
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "accountId": "my_accountId",
+    *   //   "created": "my_created",
+    *   //   "description": "my_description",
+    *   //   "editableInGaUi": false,
+    *   //   "endTime": "my_endTime",
+    *   //   "equalWeighting": false,
+    *   //   "id": "my_id",
+    *   //   "internalWebPropertyId": "my_internalWebPropertyId",
+    *   //   "kind": "my_kind",
+    *   //   "minimumExperimentLengthInDays": 0,
+    *   //   "name": "my_name",
+    *   //   "objectiveMetric": "my_objectiveMetric",
+    *   //   "optimizationType": "my_optimizationType",
+    *   //   "parentLink": {},
+    *   //   "profileId": "my_profileId",
+    *   //   "reasonExperimentEnded": "my_reasonExperimentEnded",
+    *   //   "rewriteVariationUrlsAsOriginal": false,
+    *   //   "selfLink": "my_selfLink",
+    *   //   "servingFramework": "my_servingFramework",
+    *   //   "snippet": "my_snippet",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "trafficCoverage": {},
+    *   //   "updated": "my_updated",
+    *   //   "variations": [],
+    *   //   "webPropertyId": "my_webPropertyId",
+    *   //   "winnerConfidenceLevel": {},
+    *   //   "winnerFound": false
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def patch(params: ParamsResourceManagementExperimentsPatch, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def patch(
+    params: ParamsResourceManagementExperimentsPatch,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def update(): GaxiosPromise[SchemaExperiment] = js.native
   def update(callback: BodyResponseCallback[SchemaExperiment]): Unit = js.native
   def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaExperiment] = js.native
@@ -207,13 +595,140 @@ class ResourceManagementExperiments protected () extends StObject {
   ): Unit = js.native
   def update(
     params: ParamsResourceManagementExperimentsUpdate,
-    options: BodyResponseCallback[SchemaExperiment],
-    callback: BodyResponseCallback[SchemaExperiment]
+    options: BodyResponseCallback[Readable | SchemaExperiment],
+    callback: BodyResponseCallback[Readable | SchemaExperiment]
   ): Unit = js.native
   def update(params: ParamsResourceManagementExperimentsUpdate, options: MethodOptions): GaxiosPromise[SchemaExperiment] = js.native
   def update(
     params: ParamsResourceManagementExperimentsUpdate,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaExperiment]
+  ): Unit = js.native
+  /**
+    * Update an existing experiment.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/analytics.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const analytics = google.analytics('v3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/analytics',
+    *       'https://www.googleapis.com/auth/analytics.edit',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await analytics.management.experiments.update({
+    *     // Account ID of the experiment to update.
+    *     accountId: 'placeholder-value',
+    *     // Experiment ID of the experiment to update.
+    *     experimentId: 'placeholder-value',
+    *     // View (Profile) ID of the experiment to update.
+    *     profileId: 'placeholder-value',
+    *     // Web property ID of the experiment to update.
+    *     webPropertyId: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "accountId": "my_accountId",
+    *       //   "created": "my_created",
+    *       //   "description": "my_description",
+    *       //   "editableInGaUi": false,
+    *       //   "endTime": "my_endTime",
+    *       //   "equalWeighting": false,
+    *       //   "id": "my_id",
+    *       //   "internalWebPropertyId": "my_internalWebPropertyId",
+    *       //   "kind": "my_kind",
+    *       //   "minimumExperimentLengthInDays": 0,
+    *       //   "name": "my_name",
+    *       //   "objectiveMetric": "my_objectiveMetric",
+    *       //   "optimizationType": "my_optimizationType",
+    *       //   "parentLink": {},
+    *       //   "profileId": "my_profileId",
+    *       //   "reasonExperimentEnded": "my_reasonExperimentEnded",
+    *       //   "rewriteVariationUrlsAsOriginal": false,
+    *       //   "selfLink": "my_selfLink",
+    *       //   "servingFramework": "my_servingFramework",
+    *       //   "snippet": "my_snippet",
+    *       //   "startTime": "my_startTime",
+    *       //   "status": "my_status",
+    *       //   "trafficCoverage": {},
+    *       //   "updated": "my_updated",
+    *       //   "variations": [],
+    *       //   "webPropertyId": "my_webPropertyId",
+    *       //   "winnerConfidenceLevel": {},
+    *       //   "winnerFound": false
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "accountId": "my_accountId",
+    *   //   "created": "my_created",
+    *   //   "description": "my_description",
+    *   //   "editableInGaUi": false,
+    *   //   "endTime": "my_endTime",
+    *   //   "equalWeighting": false,
+    *   //   "id": "my_id",
+    *   //   "internalWebPropertyId": "my_internalWebPropertyId",
+    *   //   "kind": "my_kind",
+    *   //   "minimumExperimentLengthInDays": 0,
+    *   //   "name": "my_name",
+    *   //   "objectiveMetric": "my_objectiveMetric",
+    *   //   "optimizationType": "my_optimizationType",
+    *   //   "parentLink": {},
+    *   //   "profileId": "my_profileId",
+    *   //   "reasonExperimentEnded": "my_reasonExperimentEnded",
+    *   //   "rewriteVariationUrlsAsOriginal": false,
+    *   //   "selfLink": "my_selfLink",
+    *   //   "servingFramework": "my_servingFramework",
+    *   //   "snippet": "my_snippet",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "trafficCoverage": {},
+    *   //   "updated": "my_updated",
+    *   //   "variations": [],
+    *   //   "webPropertyId": "my_webPropertyId",
+    *   //   "winnerConfidenceLevel": {},
+    *   //   "winnerFound": false
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def update(params: ParamsResourceManagementExperimentsUpdate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def update(
+    params: ParamsResourceManagementExperimentsUpdate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
 }

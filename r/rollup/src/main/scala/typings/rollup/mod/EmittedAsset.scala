@@ -1,7 +1,6 @@
 package typings.rollup.mod
 
 import typings.rollup.rollupStrings.asset
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ trait EmittedAsset
   
   var name: js.UndefOr[String] = js.undefined
   
-  var source: js.UndefOr[String | Uint8Array] = js.undefined
+  var source: js.UndefOr[String | js.typedarray.Uint8Array] = js.undefined
   
   var `type`: asset
 }
@@ -36,7 +35,7 @@ object EmittedAsset {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setSource(value: String | Uint8Array): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String | js.typedarray.Uint8Array): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     

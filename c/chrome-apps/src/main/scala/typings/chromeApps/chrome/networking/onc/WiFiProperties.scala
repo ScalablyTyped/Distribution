@@ -63,13 +63,13 @@ object WiFiProperties {
     
     inline def setFrequencyListUndefined: Self = StObject.set(x, "FrequencyList", js.undefined)
     
-    inline def setFrequencyListVarargs(value: integer*): Self = StObject.set(x, "FrequencyList", js.Array(value :_*))
+    inline def setFrequencyListVarargs(value: integer*): Self = StObject.set(x, "FrequencyList", js.Array(value*))
     
     inline def setHiddenSSID(value: B): Self = StObject.set(x, "HiddenSSID", value.asInstanceOf[js.Any])
     
     inline def setHiddenSSIDUndefined: Self = StObject.set(x, "HiddenSSID", js.undefined)
     
-    inline def setPassphrase(value: String): Self = StObject.set(x, "Passphrase", value.asInstanceOf[js.Any])
+    inline def setPassphrase(value: scala.Nothing | String): Self = StObject.set(x, "Passphrase", value.asInstanceOf[js.Any])
     
     inline def setPassphraseUndefined: Self = StObject.set(x, "Passphrase", js.undefined)
     

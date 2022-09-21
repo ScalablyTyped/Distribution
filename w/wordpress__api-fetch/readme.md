@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__api-fetch
 
-Typings are for version 3.2
+Typings are for version 6.14.0
 
 ## Library description:
 Utility to make WordPress REST API requests.
@@ -10,10 +10,10 @@ Utility to make WordPress REST API requests.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/api-fetch |
 | Keywords           | wordpress, gutenberg, rest-api, fetch |
-| # releases         | 35 |
-| # dependents       | 22 |
-| # downloads        | 882111 |
-| # stars            | 0 |
+| # releases         | 59 |
+| # dependents       | 0.0 |
+| # downloads        | 205355.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/WordPress/gutenberg/tree/HEAD/packages/api-fetch/README.md)
@@ -24,7 +24,7 @@ Utility to make WordPress REST API requests.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

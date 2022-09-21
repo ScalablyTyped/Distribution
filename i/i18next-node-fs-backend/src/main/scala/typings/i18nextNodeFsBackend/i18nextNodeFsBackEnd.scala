@@ -57,7 +57,7 @@ object i18nextNodeFsBackEnd {
       * @summary custom parser
       * @type {function}
       */
-    var parse: js.UndefOr[js.Function1[/* data */ js.Any, js.Any]] = js.undefined
+    var parse: js.UndefOr[js.Function1[/* data */ Any, Any]] = js.undefined
   }
   object i18nextNodeFsBackEndOptions {
     
@@ -74,7 +74,7 @@ object i18nextNodeFsBackEnd {
       
       inline def setLoadPath(value: String): Self = StObject.set(x, "loadPath", value.asInstanceOf[js.Any])
       
-      inline def setParse(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+      inline def setParse(value: /* data */ Any => Any): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
       
       inline def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
     }

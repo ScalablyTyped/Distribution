@@ -1,7 +1,7 @@
 
 # Scala.js typings for material__dialog
 
-Typings are for version 8.0.0
+Typings are for version 14.0.0
 
 ## Library description:
 The Material Components Web dialog component
@@ -10,10 +10,10 @@ The Material Components Web dialog component
 | ------------------ | :-------------: |
 | Full name          | @material/dialog |
 | Keywords           | material components, material design, dialog, modal |
-| # releases         | 619 |
-| # dependents       | 62 |
-| # downloads        | 1937081 |
-| # stars            | 0 |
+| # releases         | 713 |
+| # dependents       | 0.0 |
+| # downloads        | 265921.6666666667 |
+| # stars            | 16381.0 |
 
 ## Links
 - [Homepage](https://github.com/material-components/material-components-web#readme)

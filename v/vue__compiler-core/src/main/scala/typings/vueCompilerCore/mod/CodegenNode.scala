@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CodegenNode extends StObject
 object CodegenNode {
   
-  inline def ArrayExpression(elements: js.Array[String | JSChildNode], loc: SourceLocation): typings.vueCompilerCore.mod.ArrayExpression = {
+  inline def ArrayExpression(elements: js.Array[String | Node2], loc: SourceLocation): typings.vueCompilerCore.mod.ArrayExpression = {
     val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(17)
     __obj.asInstanceOf[typings.vueCompilerCore.mod.ArrayExpression]
@@ -162,8 +162,8 @@ object CodegenNode {
     __obj.asInstanceOf[typings.vueCompilerCore.mod.SequenceExpression]
   }
   
-  inline def SimpleExpressionNode(content: String, isConstant: Boolean, isStatic: Boolean, loc: SourceLocation): typings.vueCompilerCore.mod.SimpleExpressionNode = {
-    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], isConstant = isConstant.asInstanceOf[js.Any], isStatic = isStatic.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
+  inline def SimpleExpressionNode(constType: ConstantTypes, content: String, isStatic: Boolean, loc: SourceLocation): typings.vueCompilerCore.mod.SimpleExpressionNode = {
+    val __obj = js.Dynamic.literal(constType = constType.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], isStatic = isStatic.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(4)
     __obj.asInstanceOf[typings.vueCompilerCore.mod.SimpleExpressionNode]
   }
@@ -220,10 +220,11 @@ object CodegenNode {
   inline def VNodeCall(
     disableTracking: Boolean,
     isBlock: Boolean,
+    isComponent: Boolean,
     loc: SourceLocation,
     tag: String | js.Symbol | CallExpression
   ): typings.vueCompilerCore.mod.VNodeCall = {
-    val __obj = js.Dynamic.literal(disableTracking = disableTracking.asInstanceOf[js.Any], isBlock = isBlock.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(disableTracking = disableTracking.asInstanceOf[js.Any], isBlock = isBlock.asInstanceOf[js.Any], isComponent = isComponent.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(13)
     __obj.asInstanceOf[typings.vueCompilerCore.mod.VNodeCall]
   }

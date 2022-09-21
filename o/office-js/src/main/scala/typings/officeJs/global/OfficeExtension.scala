@@ -24,7 +24,7 @@ object OfficeExtension {
     */
   @JSGlobal("OfficeExtension.ClientObject")
   @js.native
-  class ClientObject ()
+  open class ClientObject ()
     extends StObject
        with typings.officeJs.OfficeExtension.ClientObject {
     
@@ -46,7 +46,7 @@ object OfficeExtension {
     */
   @JSGlobal("OfficeExtension.ClientRequestContext")
   @js.native
-  class ClientRequestContext ()
+  open class ClientRequestContext ()
     extends StObject
        with typings.officeJs.OfficeExtension.ClientRequestContext {
     def this(url: String) = this()
@@ -55,7 +55,7 @@ object OfficeExtension {
   /** Contains the result for methods that return primitive types. The object's value property is retrieved from the document after `context.sync()` is invoked. */
   @JSGlobal("OfficeExtension.ClientResult")
   @js.native
-  class ClientResult[T] ()
+  open class ClientResult[T] ()
     extends StObject
        with typings.officeJs.OfficeExtension.ClientResult[T] {
     
@@ -66,20 +66,20 @@ object OfficeExtension {
   
   @JSGlobal("OfficeExtension.EmbeddedSession")
   @js.native
-  class EmbeddedSession protected ()
+  open class EmbeddedSession protected ()
     extends StObject
        with typings.officeJs.OfficeExtension.EmbeddedSession {
     def this(url: String) = this()
     def this(url: String, options: EmbeddedOptions) = this()
     
     /* CompleteClass */
-    override def init(): js.Promise[js.Any] = js.native
+    override def init(): js.Promise[Any] = js.native
   }
   
   /** The error object returned by `context.sync()`, if a promise is rejected due to an error while processing the request. */
   @JSGlobal("OfficeExtension.Error")
   @js.native
-  class Error ()
+  open class Error ()
     extends StObject
        with typings.officeJs.OfficeExtension.Error {
     
@@ -118,7 +118,7 @@ object OfficeExtension {
   
   @JSGlobal("OfficeExtension.ErrorCodes")
   @js.native
-  class ErrorCodes ()
+  open class ErrorCodes ()
     extends StObject
        with typings.officeJs.OfficeExtension.ErrorCodes
   object ErrorCodes {
@@ -202,13 +202,13 @@ object OfficeExtension {
   
   @JSGlobal("OfficeExtension.EventHandlerResult")
   @js.native
-  class EventHandlerResult[T] protected ()
+  open class EventHandlerResult[T] protected ()
     extends StObject
        with typings.officeJs.OfficeExtension.EventHandlerResult[T] {
     def this(
       context: typings.officeJs.OfficeExtension.ClientRequestContext,
       handlers: typings.officeJs.OfficeExtension.EventHandlers[T],
-      handler: js.Function1[/* args */ T, js.Promise[js.Any]]
+      handler: js.Function1[/* args */ T, js.Promise[Any]]
     ) = this()
     
     /** The request context associated with the object */
@@ -221,7 +221,7 @@ object OfficeExtension {
   
   @JSGlobal("OfficeExtension.EventHandlers")
   @js.native
-  class EventHandlers[T] protected ()
+  open class EventHandlers[T] protected ()
     extends StObject
        with typings.officeJs.OfficeExtension.EventHandlers[T] {
     def this(
@@ -236,24 +236,24 @@ object OfficeExtension {
       * @param handler A promise-based function that takes in any relevant event arguments.
       */
     /* CompleteClass */
-    override def add(handler: js.Function1[T, js.Promise[js.Any]]): typings.officeJs.OfficeExtension.EventHandlerResult[T] = js.native
+    override def add(handler: js.Function1[T, js.Promise[Any]]): typings.officeJs.OfficeExtension.EventHandlerResult[T] = js.native
     
     /**
       * Removes the specified function from the event handler list so that it will not be called on subsequent events. 
       * 
       * **Note**: The same {@link OfficeExtension.ClientRequestContext | RequestContext} object that the handler was added in must be used when removing the handler. 
-      * More information can be found in {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-events#remove-an-event-handler | Remove an event handler}. 
+      * More information can be found in {@link https://learn.microsoft.com/office/dev/add-ins/excel/excel-add-ins-events#remove-an-event-handler | Remove an event handler}. 
       * 
       * @param handler A reference to a function previously provided to the `add` method as an event handler. 
       */
     /* CompleteClass */
-    override def remove(handler: js.Function1[T, js.Promise[js.Any]]): Unit = js.native
+    override def remove(handler: js.Function1[T, js.Promise[Any]]): Unit = js.native
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("OfficeExtension.Promise")
   @js.native
-  class Promise[T] protected ()
+  open class Promise[T] protected ()
     extends StObject
        with typings.std.Promise[T] {
     /**
@@ -264,7 +264,7 @@ object OfficeExtension {
       */
     def this(executor: js.Function2[
             /* resolve */ js.Function1[/* value */ js.UndefOr[T | js.Thenable[T]], Unit], 
-            /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 
+            /* reject */ js.Function1[/* reason */ js.UndefOr[Any], Unit], 
             Unit
           ]) = this()
   }
@@ -279,10 +279,14 @@ object OfficeExtension {
   @js.native
   val Promise: IPromiseConstructor = js.native
   
-  /** Collection of tracked objects, contained within a request context. See "context.trackedObjects" for more information. */
+  /**
+    * Collection of tracked objects, contained within a request context.
+    * See {@link https://learn.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects}
+    * for more information.
+    */
   @JSGlobal("OfficeExtension.TrackedObjects")
   @js.native
-  class TrackedObjects ()
+  open class TrackedObjects ()
     extends StObject
        with typings.officeJs.OfficeExtension.TrackedObjects
   

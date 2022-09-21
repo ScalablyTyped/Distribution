@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("power-radix", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with PowerRadix {
     def this(digits: String, sourceRadix: js.Array[Double]) = this()

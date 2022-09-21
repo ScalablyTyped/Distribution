@@ -11,7 +11,7 @@ object postProcessRenderPipelineManagerSceneComponentMod {
   
   @JSImport("babylonjs/PostProcesses/RenderPipeline/postProcessRenderPipelineManagerSceneComponent", "PostProcessRenderPipelineManagerSceneComponent")
   @js.native
-  class PostProcessRenderPipelineManagerSceneComponent protected ()
+  open class PostProcessRenderPipelineManagerSceneComponent protected ()
     extends StObject
        with ISceneComponent {
     /**
@@ -20,7 +20,7 @@ object postProcessRenderPipelineManagerSceneComponentMod {
       */
     def this(scene: Scene) = this()
     
-    /* private */ var _gatherRenderTargets: js.Any = js.native
+    /* private */ var _gatherRenderTargets: Any = js.native
     
     /**
       * Disposes the component and the associated ressources.

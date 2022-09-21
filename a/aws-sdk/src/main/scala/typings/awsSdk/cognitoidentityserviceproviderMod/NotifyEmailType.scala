@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NotifyEmailType extends StObject {
   
   /**
-    * The HTML body.
+    * The email HTML body.
     */
   var HtmlBody: js.UndefOr[EmailNotificationBodyType] = js.undefined
   
   /**
-    * The subject.
+    * The email subject.
     */
   var Subject: EmailNotificationSubjectType
   
   /**
-    * The text body.
+    * The email text body.
     */
   var TextBody: js.UndefOr[EmailNotificationBodyType] = js.undefined
 }

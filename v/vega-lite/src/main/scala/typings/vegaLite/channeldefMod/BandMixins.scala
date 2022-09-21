@@ -7,14 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BandMixins extends StObject {
   
   /**
-    * For rect-based marks (`rect`, `bar`, and `image`), mark size relative to bandwidth of [band scales](https://vega.github.io/vega-lite/docs/scale.html#band), bins or time units. If set to `1`, the mark size is set to the bandwidth, the bin interval, or the time unit interval. If set to `0.5`, the mark size is half of the bandwidth or the time unit interval.
-    *
-    * For other marks, relative position on a band of a stacked, binned, time unit or band scale. If set to `0`, the marks will be positioned at the beginning of the band. If set to `0.5`, the marks will be positioned in the middle of the band.
+    * Relative position on a band of a stacked, binned, time unit, or band scale. For example, the marks will be positioned at the beginning of the band if set to `0`, and at the middle of the band if set to `0.5`.
     *
     * @minimum 0
     * @maximum 1
     */
-  var band: js.UndefOr[Double] = js.undefined
+  var bandPosition: js.UndefOr[Double] = js.undefined
 }
 object BandMixins {
   
@@ -25,8 +23,8 @@ object BandMixins {
   
   extension [Self <: BandMixins](x: Self) {
     
-    inline def setBand(value: Double): Self = StObject.set(x, "band", value.asInstanceOf[js.Any])
+    inline def setBandPosition(value: Double): Self = StObject.set(x, "bandPosition", value.asInstanceOf[js.Any])
     
-    inline def setBandUndefined: Self = StObject.set(x, "band", js.undefined)
+    inline def setBandPositionUndefined: Self = StObject.set(x, "bandPosition", js.undefined)
   }
 }

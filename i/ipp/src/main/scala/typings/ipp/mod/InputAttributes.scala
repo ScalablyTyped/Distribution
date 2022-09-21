@@ -111,7 +111,7 @@ object InputAttributes {
     
     inline def `setInput-scan-regionsUndefined`: Self = StObject.set(x, "input-scan-regions", js.undefined)
     
-    inline def `setInput-scan-regionsVarargs`(value: PPScanRegions*): Self = StObject.set(x, "input-scan-regions", js.Array(value :_*))
+    inline def `setInput-scan-regionsVarargs`(value: PPScanRegions*): Self = StObject.set(x, "input-scan-regions", js.Array(value*))
     
     inline def `setInput-sharpness`(value: Double): Self = StObject.set(x, "input-sharpness", value.asInstanceOf[js.Any])
     

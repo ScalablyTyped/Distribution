@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.NavigationFolders")
 @js.native
-/* private */ class NavigationFolders ()
+/* private */ open class NavigationFolders ()
   extends StObject
      with typings.activexOutlook.Outlook.NavigationFolders {
   
@@ -24,14 +24,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Count: Double = js.native
   
   /* CompleteClass */
-  override def Item(Index: js.Any): typings.activexOutlook.Outlook.NavigationFolder = js.native
+  override def Item(Index: Any): typings.activexOutlook.Outlook.NavigationFolder = js.native
   
   /* private */ /* CompleteClass */
   @JSName("Outlook.NavigationFolders_typekey")
   var OutlookDotNavigationFolders_typekey: typings.activexOutlook.Outlook.NavigationFolders = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override def Remove(RemovableFolder: typings.activexOutlook.Outlook.NavigationFolder): Unit = js.native

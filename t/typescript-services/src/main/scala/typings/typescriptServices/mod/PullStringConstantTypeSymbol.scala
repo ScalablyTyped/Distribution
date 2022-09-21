@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "PullStringConstantTypeSymbol")
 @js.native
-class PullStringConstantTypeSymbol protected ()
+open class PullStringConstantTypeSymbol protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.PullStringConstantTypeSymbol {
   def this(name: String) = this()

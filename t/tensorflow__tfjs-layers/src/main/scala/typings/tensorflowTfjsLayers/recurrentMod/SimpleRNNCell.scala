@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@tensorflow/tfjs-layers/dist/layers/recurrent", "SimpleRNNCell")
 @js.native
-class SimpleRNNCell protected () extends RNNCell {
+open class SimpleRNNCell protected () extends RNNCell {
   def this(args: SimpleRNNCellLayerArgs) = this()
   
   val DEFAULT_ACTIVATION: /* "tanh" */ String = js.native
@@ -34,6 +34,8 @@ class SimpleRNNCell protected () extends RNNCell {
   val biasRegularizer: Regularizer = js.native
   
   val dropout: Double = js.native
+  
+  val dropoutFunc: js.Function = js.native
   
   var kernel: LayerVariable = js.native
   

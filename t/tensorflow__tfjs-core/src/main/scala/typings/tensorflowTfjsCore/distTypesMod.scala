@@ -1,9 +1,6 @@
 package typings.tensorflowTfjsCore
 
 import org.scalablytyped.runtime.NumberDictionary
-import typings.std.Float32Array
-import typings.std.Int32Array
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -107,31 +104,31 @@ object distTypesMod {
       
       inline def setR1(value: js.Array[Double]): Self = StObject.set(x, "R1", value.asInstanceOf[js.Any])
       
-      inline def setR1Varargs(value: Double*): Self = StObject.set(x, "R1", js.Array(value :_*))
+      inline def setR1Varargs(value: Double*): Self = StObject.set(x, "R1", js.Array(value*))
       
       inline def setR2(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "R2", value.asInstanceOf[js.Any])
       
-      inline def setR2Varargs(value: js.Array[Double]*): Self = StObject.set(x, "R2", js.Array(value :_*))
+      inline def setR2Varargs(value: js.Array[Double]*): Self = StObject.set(x, "R2", js.Array(value*))
       
       inline def setR3(value: js.Array[js.Array[js.Array[Double]]]): Self = StObject.set(x, "R3", value.asInstanceOf[js.Any])
       
-      inline def setR3Varargs(value: js.Array[js.Array[Double]]*): Self = StObject.set(x, "R3", js.Array(value :_*))
+      inline def setR3Varargs(value: js.Array[js.Array[Double]]*): Self = StObject.set(x, "R3", js.Array(value*))
       
       inline def setR4(value: js.Array[js.Array[js.Array[js.Array[Double]]]]): Self = StObject.set(x, "R4", value.asInstanceOf[js.Any])
       
-      inline def setR4Varargs(value: js.Array[js.Array[js.Array[Double]]]*): Self = StObject.set(x, "R4", js.Array(value :_*))
+      inline def setR4Varargs(value: js.Array[js.Array[js.Array[Double]]]*): Self = StObject.set(x, "R4", js.Array(value*))
       
       inline def setR5(value: js.Array[js.Array[js.Array[js.Array[js.Array[Double]]]]]): Self = StObject.set(x, "R5", value.asInstanceOf[js.Any])
       
-      inline def setR5Varargs(value: js.Array[js.Array[js.Array[js.Array[Double]]]]*): Self = StObject.set(x, "R5", js.Array(value :_*))
+      inline def setR5Varargs(value: js.Array[js.Array[js.Array[js.Array[Double]]]]*): Self = StObject.set(x, "R5", js.Array(value*))
       
       inline def setR6(value: js.Array[js.Array[js.Array[js.Array[js.Array[js.Array[Double]]]]]]): Self = StObject.set(x, "R6", value.asInstanceOf[js.Any])
       
-      inline def setR6Varargs(value: js.Array[js.Array[js.Array[js.Array[js.Array[Double]]]]]*): Self = StObject.set(x, "R6", js.Array(value :_*))
+      inline def setR6Varargs(value: js.Array[js.Array[js.Array[js.Array[js.Array[Double]]]]]*): Self = StObject.set(x, "R6", js.Array(value*))
     }
   }
   
-  type BackendValues = Float32Array | Int32Array | Uint8Array | js.Array[Uint8Array]
+  type BackendValues = js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | js.Array[js.typedarray.Uint8Array]
   
   /* Rewritten from type alias, can be one of: 
     - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.float32
@@ -144,23 +141,23 @@ object distTypesMod {
   
   trait DataTypeMap extends StObject {
     
-    var bool: Uint8Array
+    var bool: js.typedarray.Uint8Array
     
-    var complex64: Float32Array
+    var complex64: js.typedarray.Float32Array
     
-    var float32: Float32Array
+    var float32: js.typedarray.Float32Array
     
-    var int32: Int32Array
+    var int32: js.typedarray.Int32Array
     
     var string: js.Array[String]
   }
   object DataTypeMap {
     
     inline def apply(
-      bool: Uint8Array,
-      complex64: Float32Array,
-      float32: Float32Array,
-      int32: Int32Array,
+      bool: js.typedarray.Uint8Array,
+      complex64: js.typedarray.Float32Array,
+      float32: js.typedarray.Float32Array,
+      int32: js.typedarray.Int32Array,
       string: js.Array[String]
     ): DataTypeMap = {
       val __obj = js.Dynamic.literal(bool = bool.asInstanceOf[js.Any], complex64 = complex64.asInstanceOf[js.Any], float32 = float32.asInstanceOf[js.Any], int32 = int32.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any])
@@ -169,17 +166,17 @@ object distTypesMod {
     
     extension [Self <: DataTypeMap](x: Self) {
       
-      inline def setBool(value: Uint8Array): Self = StObject.set(x, "bool", value.asInstanceOf[js.Any])
+      inline def setBool(value: js.typedarray.Uint8Array): Self = StObject.set(x, "bool", value.asInstanceOf[js.Any])
       
-      inline def setComplex64(value: Float32Array): Self = StObject.set(x, "complex64", value.asInstanceOf[js.Any])
+      inline def setComplex64(value: js.typedarray.Float32Array): Self = StObject.set(x, "complex64", value.asInstanceOf[js.Any])
       
-      inline def setFloat32(value: Float32Array): Self = StObject.set(x, "float32", value.asInstanceOf[js.Any])
+      inline def setFloat32(value: js.typedarray.Float32Array): Self = StObject.set(x, "float32", value.asInstanceOf[js.Any])
       
-      inline def setInt32(value: Int32Array): Self = StObject.set(x, "int32", value.asInstanceOf[js.Any])
+      inline def setInt32(value: js.typedarray.Int32Array): Self = StObject.set(x, "int32", value.asInstanceOf[js.Any])
       
       inline def setString(value: js.Array[String]): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
       
-      inline def setStringVarargs(value: String*): Self = StObject.set(x, "string", js.Array(value :_*))
+      inline def setStringVarargs(value: String*): Self = StObject.set(x, "string", js.Array(value*))
     }
   }
   
@@ -208,6 +205,7 @@ object distTypesMod {
     - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.flat
     - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.splice
     - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.some
+    - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.at
     - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.unshift
     - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.filter
     - typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.subarray
@@ -229,6 +227,8 @@ object distTypesMod {
   object DataValues {
     
     inline def BYTES_PER_ELEMENT: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BYTES_PER_ELEMENT = "BYTES_PER_ELEMENT".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.BYTES_PER_ELEMENT]
+    
+    inline def at: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.at = "at".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.at]
     
     inline def buffer: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.buffer = "buffer".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.buffer]
     
@@ -323,7 +323,7 @@ object distTypesMod {
   
   trait PixelData extends StObject {
     
-    var data: Uint8Array
+    var data: js.typedarray.Uint8Array
     
     var height: Double
     
@@ -331,14 +331,14 @@ object distTypesMod {
   }
   object PixelData {
     
-    inline def apply(data: Uint8Array, height: Double, width: Double): PixelData = {
+    inline def apply(data: js.typedarray.Uint8Array, height: Double, width: Double): PixelData = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[PixelData]
     }
     
     extension [Self <: PixelData](x: Self) {
       
-      inline def setData(value: Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -346,12 +346,12 @@ object distTypesMod {
     }
   }
   
-  trait RecursiveArray[T /* <: js.Any */]
+  trait RecursiveArray[T /* <: Any */]
     extends StObject
        with /* index */ NumberDictionary[T | RecursiveArray[T]]
   object RecursiveArray {
     
-    inline def apply[T /* <: js.Any */](): RecursiveArray[T] = {
+    inline def apply[T /* <: Any */](): RecursiveArray[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RecursiveArray[T]]
     }
@@ -359,7 +359,7 @@ object distTypesMod {
   
   type RegularArray[T] = js.Array[(js.Array[(js.Array[(js.Array[(js.Array[js.Array[T] | T]) | T]) | T]) | T]) | T]
   
-  type ScalarLike = Double | Boolean | String | Uint8Array
+  type ScalarLike = Double | Boolean | String | js.typedarray.Uint8Array
   
   trait ShapeMap extends StObject {
     
@@ -396,11 +396,11 @@ object distTypesMod {
       
       inline def setR0(value: js.Array[Double]): Self = StObject.set(x, "R0", value.asInstanceOf[js.Any])
       
-      inline def setR0Varargs(value: Double*): Self = StObject.set(x, "R0", js.Array(value :_*))
+      inline def setR0Varargs(value: Double*): Self = StObject.set(x, "R0", js.Array(value*))
       
       inline def setR1(value: js.Array[Double]): Self = StObject.set(x, "R1", value.asInstanceOf[js.Any])
       
-      inline def setR1Varargs(value: Double*): Self = StObject.set(x, "R1", js.Array(value :_*))
+      inline def setR1Varargs(value: Double*): Self = StObject.set(x, "R1", js.Array(value*))
       
       inline def setR2(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "R2", value.asInstanceOf[js.Any])
       
@@ -447,29 +447,35 @@ object distTypesMod {
     }
   }
   
-  type TensorLike = TypedArray | Double | Boolean | String | (RecursiveArray[js.Array[Double] | Boolean | Double | String | TypedArray]) | js.Array[Uint8Array]
+  type TensorLike = TypedArray | Double | Boolean | String | (RecursiveArray[js.Array[Double] | Boolean | Double | String | TypedArray]) | js.Array[js.typedarray.Uint8Array]
   
-  type TensorLike1D = TypedArray | (js.Array[Boolean | Double | String | Uint8Array])
+  type TensorLike1D = TypedArray | (js.Array[Boolean | Double | String | js.typedarray.Uint8Array])
   
   type TensorLike2D = TypedArray | (js.Array[
-    (js.Array[Boolean | Double | String | Uint8Array]) | Boolean | Double | String | Uint8Array
+    (js.Array[Boolean | Double | String | js.typedarray.Uint8Array]) | Boolean | Double | String | js.typedarray.Uint8Array
   ])
   
   type TensorLike3D = TypedArray | (js.Array[
-    (js.Array[js.Array[Boolean | Double | String | Uint8Array]]) | Boolean | Double | String | Uint8Array
+    (js.Array[js.Array[Boolean | Double | String | js.typedarray.Uint8Array]]) | Boolean | Double | String | js.typedarray.Uint8Array
   ])
   
   type TensorLike4D = TypedArray | (js.Array[
-    (js.Array[js.Array[js.Array[Boolean | Double | String | Uint8Array]]]) | Boolean | Double | String | Uint8Array
+    (js.Array[js.Array[js.Array[Boolean | Double | String | js.typedarray.Uint8Array]]]) | Boolean | Double | String | js.typedarray.Uint8Array
   ])
   
   type TensorLike5D = TypedArray | (js.Array[
-    (js.Array[js.Array[js.Array[js.Array[Boolean | Double | String | Uint8Array]]]]) | Boolean | Double | String | Uint8Array
+    (js.Array[
+      js.Array[js.Array[js.Array[Boolean | Double | String | js.typedarray.Uint8Array]]]
+    ]) | Boolean | Double | String | js.typedarray.Uint8Array
   ])
   
   type TensorLike6D = TypedArray | (js.Array[
-    (js.Array[js.Array[js.Array[js.Array[(js.Array[Boolean | Double | String]) | Uint8Array]]]]) | Boolean | Double | String | Uint8Array
+    (js.Array[
+      js.Array[
+        js.Array[js.Array[(js.Array[Boolean | Double | String]) | js.typedarray.Uint8Array]]
+      ]
+    ]) | Boolean | Double | String | js.typedarray.Uint8Array
   ])
   
-  type TypedArray = Float32Array | Int32Array | Uint8Array
+  type TypedArray = js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array
 }

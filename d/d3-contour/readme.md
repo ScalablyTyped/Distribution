@@ -1,7 +1,7 @@
 
 # Scala.js typings for d3-contour
 
-Typings are for version 2.0
+Typings are for version 3.0
 
 ## Library description:
 Compute contour polygons using marching squares.
@@ -10,10 +10,10 @@ Compute contour polygons using marching squares.
 | ------------------ | :-------------: |
 | Full name          | d3-contour |
 | Keywords           | d3, d3-module, contour, isoline |
-| # releases         | 3 |
-| # dependents       | 33 |
-| # downloads        | 26823100 |
-| # stars            | 0 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 5419938.0 |
+| # stars            | 430.0 |
 
 ## Links
 - [Homepage](https://d3js.org/d3-contour/)

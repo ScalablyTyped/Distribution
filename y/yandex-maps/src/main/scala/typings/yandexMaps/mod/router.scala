@@ -9,7 +9,7 @@ object router {
   
   @JSImport("yandex-maps", "router.Editor")
   @js.native
-  class Editor ()
+  open class Editor ()
     extends StObject
        with ICustomizable {
     

@@ -31,19 +31,19 @@ object WBProps {
     
     inline def setNamesUndefined: Self = StObject.set(x, "Names", js.undefined)
     
-    inline def setNamesVarargs(value: DefinedName*): Self = StObject.set(x, "Names", js.Array(value :_*))
+    inline def setNamesVarargs(value: DefinedName*): Self = StObject.set(x, "Names", js.Array(value*))
     
     inline def setSheets(value: js.Array[SheetProps]): Self = StObject.set(x, "Sheets", value.asInstanceOf[js.Any])
     
     inline def setSheetsUndefined: Self = StObject.set(x, "Sheets", js.undefined)
     
-    inline def setSheetsVarargs(value: SheetProps*): Self = StObject.set(x, "Sheets", js.Array(value :_*))
+    inline def setSheetsVarargs(value: SheetProps*): Self = StObject.set(x, "Sheets", js.Array(value*))
     
     inline def setViews(value: js.Array[WBView]): Self = StObject.set(x, "Views", value.asInstanceOf[js.Any])
     
     inline def setViewsUndefined: Self = StObject.set(x, "Views", js.undefined)
     
-    inline def setViewsVarargs(value: WBView*): Self = StObject.set(x, "Views", js.Array(value :_*))
+    inline def setViewsVarargs(value: WBView*): Self = StObject.set(x, "Views", js.Array(value*))
     
     inline def setWBProps(value: WorkbookProperties): Self = StObject.set(x, "WBProps", value.asInstanceOf[js.Any])
     

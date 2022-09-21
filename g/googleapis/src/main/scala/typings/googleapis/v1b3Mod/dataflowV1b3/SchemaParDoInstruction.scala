@@ -5,10 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An instruction that does a ParDo operation. Takes one main input and zero
-  * or more side inputs, and produces zero or more outputs. Runs user code.
-  */
 trait SchemaParDoInstruction extends StObject {
   
   /**
@@ -17,14 +13,14 @@ trait SchemaParDoInstruction extends StObject {
   var input: js.UndefOr[SchemaInstructionInput] = js.undefined
   
   /**
-    * Information about each of the outputs, if user_fn is a  MultiDoFn.
+    * Information about each of the outputs, if user_fn is a MultiDoFn.
     */
   var multiOutputInfos: js.UndefOr[js.Array[SchemaMultiOutputInfo]] = js.undefined
   
   /**
     * The number of outputs.
     */
-  var numOutputs: js.UndefOr[Double] = js.undefined
+  var numOutputs: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * Zero or more side inputs.
@@ -34,7 +30,7 @@ trait SchemaParDoInstruction extends StObject {
   /**
     * The user function to invoke.
     */
-  var userFn: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var userFn: js.UndefOr[StringDictionary[Any] | Null] = js.undefined
 }
 object SchemaParDoInstruction {
   
@@ -53,9 +49,11 @@ object SchemaParDoInstruction {
     
     inline def setMultiOutputInfosUndefined: Self = StObject.set(x, "multiOutputInfos", js.undefined)
     
-    inline def setMultiOutputInfosVarargs(value: SchemaMultiOutputInfo*): Self = StObject.set(x, "multiOutputInfos", js.Array(value :_*))
+    inline def setMultiOutputInfosVarargs(value: SchemaMultiOutputInfo*): Self = StObject.set(x, "multiOutputInfos", js.Array(value*))
     
     inline def setNumOutputs(value: Double): Self = StObject.set(x, "numOutputs", value.asInstanceOf[js.Any])
+    
+    inline def setNumOutputsNull: Self = StObject.set(x, "numOutputs", null)
     
     inline def setNumOutputsUndefined: Self = StObject.set(x, "numOutputs", js.undefined)
     
@@ -63,9 +61,11 @@ object SchemaParDoInstruction {
     
     inline def setSideInputsUndefined: Self = StObject.set(x, "sideInputs", js.undefined)
     
-    inline def setSideInputsVarargs(value: SchemaSideInputInfo*): Self = StObject.set(x, "sideInputs", js.Array(value :_*))
+    inline def setSideInputsVarargs(value: SchemaSideInputInfo*): Self = StObject.set(x, "sideInputs", js.Array(value*))
     
-    inline def setUserFn(value: StringDictionary[js.Any]): Self = StObject.set(x, "userFn", value.asInstanceOf[js.Any])
+    inline def setUserFn(value: StringDictionary[Any]): Self = StObject.set(x, "userFn", value.asInstanceOf[js.Any])
+    
+    inline def setUserFnNull: Self = StObject.set(x, "userFn", null)
     
     inline def setUserFnUndefined: Self = StObject.set(x, "userFn", js.undefined)
   }

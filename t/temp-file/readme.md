@@ -1,7 +1,7 @@
 
 # Scala.js typings for temp-file
 
-Typings are for version 3.3.7
+Typings are for version 3.4.0
 
 ## Library description:
 ```typescript export function getTempName(prefix?: string | null | undefined): string;
@@ -10,10 +10,10 @@ Typings are for version 3.3.7
 | ------------------ | :-------------: |
 | Full name          | temp-file |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 21 |
-| # downloads        | 5546746 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1452896.6666666667 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/develar/temp-file)

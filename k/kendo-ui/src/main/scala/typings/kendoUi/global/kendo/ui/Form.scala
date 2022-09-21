@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.Form")
 @js.native
-class Form protected ()
+open class Form protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.Form {
   def this(element: Element) = this()

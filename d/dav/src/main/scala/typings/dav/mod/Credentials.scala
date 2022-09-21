@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("dav", "Credentials")
 @js.native
-class Credentials () extends StObject {
+open class Credentials () extends StObject {
   def this(options: CredentialsOptions) = this()
   
   /**

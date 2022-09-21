@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.ChartCharacters")
 @js.native
-/* private */ class ChartCharacters ()
+/* private */ open class ChartCharacters ()
   extends StObject
      with typings.activexWord.Word.ChartCharacters {
   
   /* CompleteClass */
-  override val Application: js.Any = js.native
+  override val Application: Any = js.native
   
   /* CompleteClass */
   var Caption: String = js.native
@@ -23,16 +23,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Creator: Double = js.native
   
   /* CompleteClass */
-  override def Delete(): js.Any = js.native
+  override def Delete(): Any = js.native
   
   /* CompleteClass */
   override val Font: typings.activexWord.Word.ChartFont = js.native
   
   /* CompleteClass */
-  override def Insert(String: String): js.Any = js.native
+  override def Insert(String: String): Any = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var PhoneticCharacters: String = js.native

@@ -1,28 +1,43 @@
 package typings.firebaseFirestore.anon
 
 import typings.firebaseFirestore.asyncQueueMod.AsyncQueue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DontPurgeData extends js.Object {
+trait DontPurgeData extends StObject {
+  
   var dontPurgeData: js.UndefOr[Boolean] = js.undefined
+  
   var queue: js.UndefOr[AsyncQueue] = js.undefined
+  
+  var schemaVersion: js.UndefOr[Double] = js.undefined
+  
   var synchronizeTabs: js.UndefOr[Boolean] = js.undefined
 }
-
 object DontPurgeData {
-  @scala.inline
-  def apply(
-    dontPurgeData: js.UndefOr[Boolean] = js.undefined,
-    queue: AsyncQueue = null,
-    synchronizeTabs: js.UndefOr[Boolean] = js.undefined
-  ): DontPurgeData = {
+  
+  inline def apply(): DontPurgeData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dontPurgeData)) __obj.updateDynamic("dontPurgeData")(dontPurgeData.get.asInstanceOf[js.Any])
-    if (queue != null) __obj.updateDynamic("queue")(queue.asInstanceOf[js.Any])
-    if (!js.isUndefined(synchronizeTabs)) __obj.updateDynamic("synchronizeTabs")(synchronizeTabs.get.asInstanceOf[js.Any])
     __obj.asInstanceOf[DontPurgeData]
   }
+  
+  extension [Self <: DontPurgeData](x: Self) {
+    
+    inline def setDontPurgeData(value: Boolean): Self = StObject.set(x, "dontPurgeData", value.asInstanceOf[js.Any])
+    
+    inline def setDontPurgeDataUndefined: Self = StObject.set(x, "dontPurgeData", js.undefined)
+    
+    inline def setQueue(value: AsyncQueue): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+    
+    inline def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
+    
+    inline def setSchemaVersion(value: Double): Self = StObject.set(x, "schemaVersion", value.asInstanceOf[js.Any])
+    
+    inline def setSchemaVersionUndefined: Self = StObject.set(x, "schemaVersion", js.undefined)
+    
+    inline def setSynchronizeTabs(value: Boolean): Self = StObject.set(x, "synchronizeTabs", value.asInstanceOf[js.Any])
+    
+    inline def setSynchronizeTabsUndefined: Self = StObject.set(x, "synchronizeTabs", js.undefined)
+  }
 }
-

@@ -12,7 +12,7 @@ trait BatchCheckLayerAvailabilityRequest extends StObject {
   var layerDigests: BatchedOperationLayerDigestList
   
   /**
-    * The AWS account ID associated with the registry that contains the image layers to check. If you do not specify a registry, the default registry is assumed.
+    * The Amazon Web Services account ID associated with the registry that contains the image layers to check. If you do not specify a registry, the default registry is assumed.
     */
   var registryId: js.UndefOr[RegistryId] = js.undefined
   
@@ -32,7 +32,7 @@ object BatchCheckLayerAvailabilityRequest {
     
     inline def setLayerDigests(value: BatchedOperationLayerDigestList): Self = StObject.set(x, "layerDigests", value.asInstanceOf[js.Any])
     
-    inline def setLayerDigestsVarargs(value: BatchedOperationLayerDigest*): Self = StObject.set(x, "layerDigests", js.Array(value :_*))
+    inline def setLayerDigestsVarargs(value: BatchedOperationLayerDigest*): Self = StObject.set(x, "layerDigests", js.Array(value*))
     
     inline def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
     

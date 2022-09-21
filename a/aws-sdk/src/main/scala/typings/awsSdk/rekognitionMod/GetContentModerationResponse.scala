@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetContentModerationResponse extends StObject {
   
   /**
-    * The current status of the unsafe content analysis job.
+    * The current status of the content moderation analysis job.
     */
   var JobStatus: js.UndefOr[VideoJobStatus] = js.undefined
   
   /**
-    * The detected unsafe content labels and the time(s) they were detected.
+    * The detected inappropriate, unwanted, or offensive content moderation labels and the time(s) they were detected.
     */
   var ModerationLabels: js.UndefOr[ContentModerationDetections] = js.undefined
   
   /**
-    * Version number of the moderation detection model that was used to detect unsafe content.
+    * Version number of the moderation detection model that was used to detect inappropriate, unwanted, or offensive content.
     */
   var ModerationModelVersion: js.UndefOr[String] = js.undefined
   
   /**
-    * If the response is truncated, Amazon Rekognition Video returns this token that you can use in the subsequent request to retrieve the next set of unsafe content labels. 
+    * If the response is truncated, Amazon Rekognition Video returns this token that you can use in the subsequent request to retrieve the next set of content moderation labels. 
     */
   var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
@@ -53,7 +53,7 @@ object GetContentModerationResponse {
     
     inline def setModerationLabelsUndefined: Self = StObject.set(x, "ModerationLabels", js.undefined)
     
-    inline def setModerationLabelsVarargs(value: ContentModerationDetection*): Self = StObject.set(x, "ModerationLabels", js.Array(value :_*))
+    inline def setModerationLabelsVarargs(value: ContentModerationDetection*): Self = StObject.set(x, "ModerationLabels", js.Array(value*))
     
     inline def setModerationModelVersion(value: String): Self = StObject.set(x, "ModerationModelVersion", value.asInstanceOf[js.Any])
     

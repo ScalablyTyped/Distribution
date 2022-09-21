@@ -13,12 +13,12 @@ trait JQueryPromise[T]
      with JQueryGenericPromise[T] {
   
   def always(
-    alwaysCallback1: js.Array[JQueryPromiseCallback[js.Any]],
-    alwaysCallbacksN: (JQueryPromiseCallback[js.Any] | js.Array[JQueryPromiseCallback[js.Any]])*
+    alwaysCallback1: js.Array[JQueryPromiseCallback[Any]],
+    alwaysCallbacksN: (JQueryPromiseCallback[Any] | js.Array[JQueryPromiseCallback[Any]])*
   ): JQueryPromise[T] = js.native
   def always(
     alwaysCallback1: Unit,
-    alwaysCallbacksN: (JQueryPromiseCallback[js.Any] | js.Array[JQueryPromiseCallback[js.Any]])*
+    alwaysCallbacksN: (JQueryPromiseCallback[Any] | js.Array[JQueryPromiseCallback[Any]])*
   ): JQueryPromise[T] = js.native
   /**
     * Add handlers to be called when the Deferred object is either resolved or rejected.
@@ -27,8 +27,8 @@ trait JQueryPromise[T]
     * @param alwaysCallbacks2 Optional additional functions, or arrays of functions, that are called when the Deferred is resolved or rejected.
     */
   def always(
-    alwaysCallback1: JQueryPromiseCallback[js.Any],
-    alwaysCallbacksN: (JQueryPromiseCallback[js.Any] | js.Array[JQueryPromiseCallback[js.Any]])*
+    alwaysCallback1: JQueryPromiseCallback[Any],
+    alwaysCallbacksN: (JQueryPromiseCallback[Any] | js.Array[JQueryPromiseCallback[Any]])*
   ): JQueryPromise[T] = js.native
   
   def done(
@@ -51,12 +51,12 @@ trait JQueryPromise[T]
   ): JQueryPromise[T] = js.native
   
   def fail(
-    failCallback1: js.Array[JQueryPromiseCallback[js.Any]],
-    failCallbacksN: (JQueryPromiseCallback[js.Any] | js.Array[JQueryPromiseCallback[js.Any]])*
+    failCallback1: js.Array[JQueryPromiseCallback[Any]],
+    failCallbacksN: (JQueryPromiseCallback[Any] | js.Array[JQueryPromiseCallback[Any]])*
   ): JQueryPromise[T] = js.native
   def fail(
     failCallback1: Unit,
-    failCallbacksN: (JQueryPromiseCallback[js.Any] | js.Array[JQueryPromiseCallback[js.Any]])*
+    failCallbacksN: (JQueryPromiseCallback[Any] | js.Array[JQueryPromiseCallback[Any]])*
   ): JQueryPromise[T] = js.native
   /**
     * Add handlers to be called when the Deferred object is rejected.
@@ -65,39 +65,39 @@ trait JQueryPromise[T]
     * @param failCallbacks2 Optional additional functions, or arrays of functions, that are called when the Deferred is rejected.
     */
   def fail(
-    failCallback1: JQueryPromiseCallback[js.Any],
-    failCallbacksN: (JQueryPromiseCallback[js.Any] | js.Array[JQueryPromiseCallback[js.Any]])*
+    failCallback1: JQueryPromiseCallback[Any],
+    failCallbacksN: (JQueryPromiseCallback[Any] | js.Array[JQueryPromiseCallback[Any]])*
   ): JQueryPromise[T] = js.native
   
   // Deprecated - given no typings
-  def pipe(): JQueryPromise[js.Any] = js.native
-  def pipe(doneFilter: js.Function1[/* x */ js.Any, js.Any]): JQueryPromise[js.Any] = js.native
-  def pipe(doneFilter: js.Function1[/* x */ js.Any, js.Any], failFilter: js.Function1[/* x */ js.Any, js.Any]): JQueryPromise[js.Any] = js.native
+  def pipe(): JQueryPromise[Any] = js.native
+  def pipe(doneFilter: js.Function1[/* x */ Any, Any]): JQueryPromise[Any] = js.native
+  def pipe(doneFilter: js.Function1[/* x */ Any, Any], failFilter: js.Function1[/* x */ Any, Any]): JQueryPromise[Any] = js.native
   def pipe(
-    doneFilter: js.Function1[/* x */ js.Any, js.Any],
-    failFilter: js.Function1[/* x */ js.Any, js.Any],
-    progressFilter: js.Function1[/* x */ js.Any, js.Any]
-  ): JQueryPromise[js.Any] = js.native
+    doneFilter: js.Function1[/* x */ Any, Any],
+    failFilter: js.Function1[/* x */ Any, Any],
+    progressFilter: js.Function1[/* x */ Any, Any]
+  ): JQueryPromise[Any] = js.native
   def pipe(
-    doneFilter: js.Function1[/* x */ js.Any, js.Any],
+    doneFilter: js.Function1[/* x */ Any, Any],
     failFilter: Unit,
-    progressFilter: js.Function1[/* x */ js.Any, js.Any]
-  ): JQueryPromise[js.Any] = js.native
-  def pipe(doneFilter: Unit, failFilter: js.Function1[/* x */ js.Any, js.Any]): JQueryPromise[js.Any] = js.native
+    progressFilter: js.Function1[/* x */ Any, Any]
+  ): JQueryPromise[Any] = js.native
+  def pipe(doneFilter: Unit, failFilter: js.Function1[/* x */ Any, Any]): JQueryPromise[Any] = js.native
   def pipe(
     doneFilter: Unit,
-    failFilter: js.Function1[/* x */ js.Any, js.Any],
-    progressFilter: js.Function1[/* x */ js.Any, js.Any]
-  ): JQueryPromise[js.Any] = js.native
-  def pipe(doneFilter: Unit, failFilter: Unit, progressFilter: js.Function1[/* x */ js.Any, js.Any]): JQueryPromise[js.Any] = js.native
+    failFilter: js.Function1[/* x */ Any, Any],
+    progressFilter: js.Function1[/* x */ Any, Any]
+  ): JQueryPromise[Any] = js.native
+  def pipe(doneFilter: Unit, failFilter: Unit, progressFilter: js.Function1[/* x */ Any, Any]): JQueryPromise[Any] = js.native
   
   def progress(
-    progressCallback1: js.Array[JQueryPromiseCallback[js.Any]],
-    progressCallbackN: (JQueryPromiseCallback[js.Any] | js.Array[JQueryPromiseCallback[js.Any]])*
+    progressCallback1: js.Array[JQueryPromiseCallback[Any]],
+    progressCallbackN: (JQueryPromiseCallback[Any] | js.Array[JQueryPromiseCallback[Any]])*
   ): JQueryPromise[T] = js.native
   def progress(
     progressCallback1: Unit,
-    progressCallbackN: (JQueryPromiseCallback[js.Any] | js.Array[JQueryPromiseCallback[js.Any]])*
+    progressCallbackN: (JQueryPromiseCallback[Any] | js.Array[JQueryPromiseCallback[Any]])*
   ): JQueryPromise[T] = js.native
   /**
     * Add handlers to be called when the Deferred object generates progress notifications.
@@ -105,8 +105,8 @@ trait JQueryPromise[T]
     * @param progressCallbacks A function, or array of functions, to be called when the Deferred generates progress notifications.
     */
   def progress(
-    progressCallback1: JQueryPromiseCallback[js.Any],
-    progressCallbackN: (JQueryPromiseCallback[js.Any] | js.Array[JQueryPromiseCallback[js.Any]])*
+    progressCallback1: JQueryPromiseCallback[Any],
+    progressCallbackN: (JQueryPromiseCallback[Any] | js.Array[JQueryPromiseCallback[Any]])*
   ): JQueryPromise[T] = js.native
   
   /**

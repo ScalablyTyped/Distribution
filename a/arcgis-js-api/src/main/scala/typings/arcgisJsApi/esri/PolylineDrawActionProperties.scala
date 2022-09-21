@@ -14,6 +14,8 @@ trait PolylineDrawActionProperties
   /**
     * The drawing mode.
     *
+    * @default hybrid
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-PolylineDrawAction.html#mode)
     */
   var mode: js.UndefOr[hybrid | freehand | click] = js.undefined

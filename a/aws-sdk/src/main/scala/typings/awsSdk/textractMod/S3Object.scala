@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait S3Object extends StObject {
   
   /**
-    * The name of the S3 bucket.
+    * The name of the S3 bucket. Note that the # character is not valid in the file name.
     */
   var Bucket: js.UndefOr[S3Bucket] = js.undefined
   
   /**
-    * The file name of the input document. Synchronous operations can use image files that are in JPEG or PNG format. Asynchronous operations also support PDF format files.
+    * The file name of the input document. Synchronous operations can use image files that are in JPEG or PNG format. Asynchronous operations also support PDF and TIFF format files.
     */
   var Name: js.UndefOr[S3ObjectName] = js.undefined
   

@@ -40,11 +40,9 @@ trait Tier extends StObject {
     */
   var unlock: Double
   
-  var upgrades: js.Array[
-    TieredUpgradeClass[
-      /* import warning: importer.ImportType#apply Failed type conversion: this['name'] */ js.Any
-    ]
-  ]
+  var unshackleUpgrade: js.UndefOr[HeavenlyUpgrade] = js.undefined
+  
+  var upgrades: js.Array[GenericTieredUpgrade[String | Double]]
 }
 object Tier {
   
@@ -56,11 +54,7 @@ object Tier {
     price: Double,
     special: PseudoBoolean | Boolean,
     unlock: Double,
-    upgrades: js.Array[
-      TieredUpgradeClass[
-        /* import warning: importer.ImportType#apply Failed type conversion: this['name'] */ js.Any
-      ]
-    ]
+    upgrades: js.Array[GenericTieredUpgrade[String | Double]]
   ): Tier = {
     val __obj = js.Dynamic.literal(achievUnlock = achievUnlock.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], iconRow = iconRow.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], price = price.asInstanceOf[js.Any], special = special.asInstanceOf[js.Any], unlock = unlock.asInstanceOf[js.Any], upgrades = upgrades.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tier]
@@ -86,18 +80,12 @@ object Tier {
     
     inline def setUnlock(value: Double): Self = StObject.set(x, "unlock", value.asInstanceOf[js.Any])
     
-    inline def setUpgrades(
-      value: js.Array[
-          TieredUpgradeClass[
-            /* import warning: importer.ImportType#apply Failed type conversion: this['name'] */ js.Any
-          ]
-        ]
-    ): Self = StObject.set(x, "upgrades", value.asInstanceOf[js.Any])
+    inline def setUnshackleUpgrade(value: HeavenlyUpgrade): Self = StObject.set(x, "unshackleUpgrade", value.asInstanceOf[js.Any])
     
-    inline def setUpgradesVarargs(
-      value: (TieredUpgradeClass[
-          /* import warning: importer.ImportType#apply Failed type conversion: this['name'] */ js.Any
-        ])*
-    ): Self = StObject.set(x, "upgrades", js.Array(value :_*))
+    inline def setUnshackleUpgradeUndefined: Self = StObject.set(x, "unshackleUpgrade", js.undefined)
+    
+    inline def setUpgrades(value: js.Array[GenericTieredUpgrade[String | Double]]): Self = StObject.set(x, "upgrades", value.asInstanceOf[js.Any])
+    
+    inline def setUpgradesVarargs(value: (GenericTieredUpgrade[String | Double])*): Self = StObject.set(x, "upgrades", js.Array(value*))
   }
 }

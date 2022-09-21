@@ -27,7 +27,7 @@ object GetAssetPropertyValueHistoryResponse {
     
     inline def setAssetPropertyValueHistory(value: AssetPropertyValueHistory): Self = StObject.set(x, "assetPropertyValueHistory", value.asInstanceOf[js.Any])
     
-    inline def setAssetPropertyValueHistoryVarargs(value: AssetPropertyValue*): Self = StObject.set(x, "assetPropertyValueHistory", js.Array(value :_*))
+    inline def setAssetPropertyValueHistoryVarargs(value: AssetPropertyValue*): Self = StObject.set(x, "assetPropertyValueHistory", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

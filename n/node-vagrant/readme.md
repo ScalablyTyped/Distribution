@@ -10,10 +10,10 @@ Node js wrapper for vagrant CLI - command line tool.
 | ------------------ | :-------------: |
 | Full name          | node-vagrant |
 | Keywords           | vagrant |
-| # releases         | 6 |
-| # dependents       | 2 |
-| # downloads        | 4602 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 144.0 |
+| # stars            | 28.0 |
 
 ## Links
 - [Homepage](https://github.com/edin-m/node-vagrant)

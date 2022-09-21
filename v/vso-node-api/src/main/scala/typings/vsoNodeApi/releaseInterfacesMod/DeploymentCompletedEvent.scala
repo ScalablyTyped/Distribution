@@ -9,7 +9,7 @@ trait DeploymentCompletedEvent extends StObject {
   
   var comment: String
   
-  var data: StringDictionary[js.Any]
+  var data: StringDictionary[Any]
   
   var deployment: Deployment
   
@@ -21,7 +21,7 @@ object DeploymentCompletedEvent {
   
   inline def apply(
     comment: String,
-    data: StringDictionary[js.Any],
+    data: StringDictionary[Any],
     deployment: Deployment,
     environment: ReleaseEnvironment,
     project: ProjectReference
@@ -34,7 +34,7 @@ object DeploymentCompletedEvent {
     
     inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    inline def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: StringDictionary[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDeployment(value: Deployment): Self = StObject.set(x, "deployment", value.asInstanceOf[js.Any])
     

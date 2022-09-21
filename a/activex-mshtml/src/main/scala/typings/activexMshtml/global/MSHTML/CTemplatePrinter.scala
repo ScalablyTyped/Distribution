@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.CTemplatePrinter")
 @js.native
-/* private */ class CTemplatePrinter ()
+/* private */ open class CTemplatePrinter ()
   extends StObject
      with typings.activexMshtml.MSHTML.CTemplatePrinter {
   
@@ -30,7 +30,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var currentPageAvail: Boolean = js.native
   
   /* CompleteClass */
-  override def deviceSupports(bstrProperty: String): js.Any = js.native
+  override def deviceSupports(bstrProperty: String): Any = js.native
   
   /* CompleteClass */
   override val duplex: Boolean = js.native
@@ -54,28 +54,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var framesetDocument: Boolean = js.native
   
   /* CompleteClass */
-  override def getPageMarginBottom(pageRule: js.Any, pageWidth: Double, pageHeight: Double): js.Any = js.native
+  override def getPageMarginBottom(pageRule: Any, pageWidth: Double, pageHeight: Double): Any = js.native
   
   /* CompleteClass */
-  override def getPageMarginBottomImportant(pageRule: js.Any): Boolean = js.native
+  override def getPageMarginBottomImportant(pageRule: Any): Boolean = js.native
   
   /* CompleteClass */
-  override def getPageMarginLeft(pageRule: js.Any, pageWidth: Double, pageHeight: Double): js.Any = js.native
+  override def getPageMarginLeft(pageRule: Any, pageWidth: Double, pageHeight: Double): Any = js.native
   
   /* CompleteClass */
-  override def getPageMarginLeftImportant(pageRule: js.Any): Boolean = js.native
+  override def getPageMarginLeftImportant(pageRule: Any): Boolean = js.native
   
   /* CompleteClass */
-  override def getPageMarginRight(pageRule: js.Any, pageWidth: Double, pageHeight: Double): js.Any = js.native
+  override def getPageMarginRight(pageRule: Any, pageWidth: Double, pageHeight: Double): Any = js.native
   
   /* CompleteClass */
-  override def getPageMarginRightImportant(pageRule: js.Any): Boolean = js.native
+  override def getPageMarginRightImportant(pageRule: Any): Boolean = js.native
   
   /* CompleteClass */
-  override def getPageMarginTop(pageRule: js.Any, pageWidth: Double, pageHeight: Double): js.Any = js.native
+  override def getPageMarginTop(pageRule: Any, pageWidth: Double, pageHeight: Double): Any = js.native
   
   /* CompleteClass */
-  override def getPageMarginTopImportant(pageRule: js.Any): Boolean = js.native
+  override def getPageMarginTopImportant(pageRule: Any): Boolean = js.native
   
   /* CompleteClass */
   var header: String = js.native
@@ -114,13 +114,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def printBlankPage(): Unit = js.native
   
   /* CompleteClass */
-  override def printNonNative(pMarkup: js.Any): Boolean = js.native
+  override def printNonNative(pMarkup: Any): Boolean = js.native
   
   /* CompleteClass */
-  override def printNonNativeFrames(pMarkup: js.Any, fActiveFrame: Boolean): Unit = js.native
+  override def printNonNativeFrames(pMarkup: Any, fActiveFrame: Boolean): Unit = js.native
   
   /* CompleteClass */
-  override def printPage(pElemDisp: js.Any): Unit = js.native
+  override def printPage(pElemDisp: Any): Unit = js.native
   
   /* CompleteClass */
   var selectedPages: Boolean = js.native

@@ -10,6 +10,6 @@ trait IChart extends StObject {
   
   def addSeries(series: ISeries): ISeries = js.native
   
-  def draw(): js.Any = js.native
-  def draw(context: CanvasRenderingContext2D): js.Any = js.native
+  def draw(): Any = js.native
+  def draw(context: CanvasRenderingContext2D): Any = js.native
 }

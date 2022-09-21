@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Matter.Grid")
 @js.native
-class Grid ()
+open class Grid ()
   extends typings.matterJs.mod.Grid
 /* static members */
 object Grid {
@@ -18,6 +18,7 @@ object Grid {
   
   /**
     * Clears the grid.
+    * @deprecated replaced by Matter.Detector
     * @method clear
     * @param {grid} grid
     */
@@ -25,9 +26,10 @@ object Grid {
   
   /**
     * Creates a new grid.
+    * @deprecated replaced by Matter.Detector
     * @method create
     * @param {} options
-    * @return {grid} A new grid
+    * @returns {grid} A new grid
     */
   inline def create(): typings.matterJs.mod.Grid = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.matterJs.mod.Grid]
   inline def create(options: IGridDefinition): typings.matterJs.mod.Grid = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[typings.matterJs.mod.Grid]
@@ -35,8 +37,9 @@ object Grid {
   /**
     * Updates the grid.
     * @method update
+    * @deprecated replaced by Matter.Detector
     * @param {grid} grid
-    * @param {body[]} bodies
+    * @param {Body[]} bodies
     * @param {engine} engine
     * @param {boolean} forceUpdate
     */

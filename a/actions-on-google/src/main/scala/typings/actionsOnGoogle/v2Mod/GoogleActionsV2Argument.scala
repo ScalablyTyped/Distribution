@@ -25,7 +25,7 @@ trait GoogleActionsV2Argument extends StObject {
     * `actions.intent.SIGN_IN` intent, then this extension will
     * contain a SignInValue value.
     */
-  var `extension`: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
+  var `extension`: js.UndefOr[ApiClientObjectMap[Any]] = js.undefined
   
   /**
     * Specified for built-in intent: \"actions.intent.NUMBER\"
@@ -64,7 +64,7 @@ trait GoogleActionsV2Argument extends StObject {
   /**
     * Specified when Google needs to pass data value in JSON format.
     */
-  var structuredValue: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
+  var structuredValue: js.UndefOr[ApiClientObjectMap[Any]] = js.undefined
   
   /**
     * Specified when query pattern includes a `$org.schema.type.Text` type or
@@ -92,7 +92,7 @@ object GoogleActionsV2Argument {
     
     inline def setDatetimeValueUndefined: Self = StObject.set(x, "datetimeValue", js.undefined)
     
-    inline def setExtension(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: ApiClientObjectMap[Any]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
     inline def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
     
@@ -120,7 +120,7 @@ object GoogleActionsV2Argument {
     
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    inline def setStructuredValue(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "structuredValue", value.asInstanceOf[js.Any])
+    inline def setStructuredValue(value: ApiClientObjectMap[Any]): Self = StObject.set(x, "structuredValue", value.asInstanceOf[js.Any])
     
     inline def setStructuredValueUndefined: Self = StObject.set(x, "structuredValue", js.undefined)
     

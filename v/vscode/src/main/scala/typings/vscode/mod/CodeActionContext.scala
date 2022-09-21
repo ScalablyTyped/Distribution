@@ -17,11 +17,16 @@ trait CodeActionContext extends StObject {
     * Actions not of this kind are filtered out before being shown by the [lightbulb](https://code.visualstudio.com/docs/editor/editingevolved#_code-action).
     */
   val only: js.UndefOr[CodeActionKind] = js.undefined
+  
+  /**
+    * The reason why code actions were requested.
+    */
+  val triggerKind: CodeActionTriggerKind
 }
 object CodeActionContext {
   
-  inline def apply(diagnostics: js.Array[Diagnostic]): CodeActionContext = {
-    val __obj = js.Dynamic.literal(diagnostics = diagnostics.asInstanceOf[js.Any])
+  inline def apply(diagnostics: js.Array[Diagnostic], triggerKind: CodeActionTriggerKind): CodeActionContext = {
+    val __obj = js.Dynamic.literal(diagnostics = diagnostics.asInstanceOf[js.Any], triggerKind = triggerKind.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeActionContext]
   }
   
@@ -29,10 +34,12 @@ object CodeActionContext {
     
     inline def setDiagnostics(value: js.Array[Diagnostic]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
     
-    inline def setDiagnosticsVarargs(value: Diagnostic*): Self = StObject.set(x, "diagnostics", js.Array(value :_*))
+    inline def setDiagnosticsVarargs(value: Diagnostic*): Self = StObject.set(x, "diagnostics", js.Array(value*))
     
     inline def setOnly(value: CodeActionKind): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
     
     inline def setOnlyUndefined: Self = StObject.set(x, "only", js.undefined)
+    
+    inline def setTriggerKind(value: CodeActionTriggerKind): Self = StObject.set(x, "triggerKind", value.asInstanceOf[js.Any])
   }
 }

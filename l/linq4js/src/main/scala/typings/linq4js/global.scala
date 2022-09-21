@@ -1,7 +1,6 @@
 package typings.linq4js
 
 import typings.linq4js.Linq4JS.OrderDirection
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ object global {
     
     @JSGlobal("Linq4JS.EvaluateCommand")
     @js.native
-    class EvaluateCommand protected ()
+    open class EvaluateCommand protected ()
       extends StObject
          with typings.linq4js.Linq4JS.EvaluateCommand {
       def this(command: String, identifier: String*) = this()
@@ -21,15 +20,15 @@ object global {
       var Command: String = js.native
       
       /* CompleteClass */
-      var Finder: Array[RegExp] = js.native
+      var Finder: Array[js.RegExp] = js.native
       
       /* CompleteClass */
-      var SplitRegex: Array[RegExp] = js.native
+      var SplitRegex: Array[js.RegExp] = js.native
     }
     
     @JSGlobal("Linq4JS.EvaluateCommandResult")
     @js.native
-    class EvaluateCommandResult protected ()
+    open class EvaluateCommandResult protected ()
       extends StObject
          with typings.linq4js.Linq4JS.EvaluateCommandResult {
       def this(cmd: String, fn: String) = this()
@@ -43,7 +42,7 @@ object global {
     
     @JSGlobal("Linq4JS.GeneratedEntity")
     @js.native
-    class GeneratedEntity ()
+    open class GeneratedEntity ()
       extends StObject
          with typings.linq4js.Linq4JS.GeneratedEntity {
       
@@ -56,7 +55,7 @@ object global {
     
     @JSGlobal("Linq4JS.Helper")
     @js.native
-    class Helper ()
+    open class Helper ()
       extends StObject
          with typings.linq4js.Linq4JS.Helper
     object Helper {
@@ -84,12 +83,12 @@ object global {
       /* static member */
       @JSGlobal("Linq4JS.Helper.ConvertStringFunction")
       @js.native
-      def ConvertStringFunction: js.Any = js.native
-      inline def ConvertStringFunction_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ConvertStringFunction")(x.asInstanceOf[js.Any])
+      def ConvertStringFunction: Any = js.native
+      inline def ConvertStringFunction_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ConvertStringFunction")(x.asInstanceOf[js.Any])
       
       /* static member */
-      inline def CreateArrayData(array: Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateArrayData")(array.asInstanceOf[js.Any]).asInstanceOf[Unit]
-      inline def CreateArrayData(array: Array[js.Any], value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateArrayData")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def CreateArrayData(array: Array[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateArrayData")(array.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def CreateArrayData(array: Array[Any], value: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateArrayData")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /* static member */
       inline def MatchCommand(cmd: String): typings.linq4js.Linq4JS.EvaluateCommandResult = ^.asInstanceOf[js.Dynamic].applyDynamic("MatchCommand")(cmd.asInstanceOf[js.Any]).asInstanceOf[typings.linq4js.Linq4JS.EvaluateCommandResult]
@@ -98,7 +97,7 @@ object global {
       inline def NonEnumerable(name: String, value: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("NonEnumerable")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /* static member */
-      inline def OrderCompareFunction[T](valueSelector: js.Function1[/* item */ T, js.Any], a: T, b: T, invert: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("OrderCompareFunction")(valueSelector.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Double]
+      inline def OrderCompareFunction[T](valueSelector: js.Function1[/* item */ T, Any], a: T, b: T, invert: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("OrderCompareFunction")(valueSelector.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Double]
       
       /* static member */
       inline def SplitCommand(command: String): Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("SplitCommand")(command.asInstanceOf[js.Any]).asInstanceOf[Array[String]]
@@ -118,21 +117,21 @@ object global {
     
     @JSGlobal("Linq4JS.OrderEntry")
     @js.native
-    class OrderEntry protected ()
+    open class OrderEntry protected ()
       extends StObject
          with typings.linq4js.Linq4JS.OrderEntry {
-      def this(_direction: OrderDirection, _valueSelector: js.Function1[/* item */ js.Any, js.Any]) = this()
+      def this(_direction: OrderDirection, _valueSelector: js.Function1[/* item */ Any, Any]) = this()
       
       /* CompleteClass */
       var Direction: OrderDirection = js.native
       
       /* CompleteClass */
-      override def ValueSelector(item: js.Any): js.Any = js.native
+      override def ValueSelector(item: Any): Any = js.native
     }
     
     @JSGlobal("Linq4JS.SelectEntry")
     @js.native
-    class SelectEntry protected ()
+    open class SelectEntry protected ()
       extends StObject
          with typings.linq4js.Linq4JS.SelectEntry {
       def this(n: String, p: String) = this()

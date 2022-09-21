@@ -26,7 +26,7 @@ trait ContextMenuOptions extends StObject {
   
   var dataImageUrlField: js.UndefOr[String] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any | HierarchicalDataSource] = js.undefined
+  var dataSource: js.UndefOr[Any | HierarchicalDataSource] = js.undefined
   
   var dataSpriteCssClassField: js.UndefOr[String] = js.undefined
   
@@ -103,7 +103,7 @@ object ContextMenuOptions {
     
     inline def setDataImageUrlFieldUndefined: Self = StObject.set(x, "dataImageUrlField", js.undefined)
     
-    inline def setDataSource(value: js.Any | HierarchicalDataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any | HierarchicalDataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     

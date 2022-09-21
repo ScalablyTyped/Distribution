@@ -74,10 +74,10 @@ object feature {
       */
     var getFireEventArgs: js.UndefOr[
         js.Function4[
-          /* eventName */ js.UndefOr[js.Any], 
-          /* view */ js.UndefOr[js.Any], 
-          /* featureTarget */ js.UndefOr[js.Any], 
-          /* e */ js.UndefOr[js.Any], 
+          /* eventName */ js.UndefOr[Any], 
+          /* view */ js.UndefOr[Any], 
+          /* featureTarget */ js.UndefOr[Any], 
+          /* e */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
@@ -121,7 +121,7 @@ object feature {
       inline def setEventSelectorUndefined: Self = StObject.set(x, "eventSelector", js.undefined)
       
       inline def setGetFireEventArgs(
-        value: (/* eventName */ js.UndefOr[js.Any], /* view */ js.UndefOr[js.Any], /* featureTarget */ js.UndefOr[js.Any], /* e */ js.UndefOr[js.Any]) => Unit
+        value: (/* eventName */ js.UndefOr[Any], /* view */ js.UndefOr[Any], /* featureTarget */ js.UndefOr[Any], /* e */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "getFireEventArgs", js.Any.fromFunction4(value))
       
       inline def setGetFireEventArgsUndefined: Self = StObject.set(x, "getFireEventArgs", js.undefined)
@@ -207,13 +207,13 @@ object feature {
       * @param record Ext.data.Model The record for which to return group information.
       * @returns Object A single group data block as returned from Store.getGroups. Returns undefined if the Store is not grouped.
       */
-    var getRecordGroup: js.UndefOr[js.Function1[/* record */ js.UndefOr[IModel], js.Any]] = js.undefined
+    var getRecordGroup: js.UndefOr[js.Function1[/* record */ js.UndefOr[IModel], Any]] = js.undefined
     
     /** [Config Option] (String) */
     var groupByText: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (String/Array/Ext.Template) */
-    var groupHeaderTpl: js.UndefOr[js.Any] = js.undefined
+    var groupHeaderTpl: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Boolean) */
     var hideGroupedHeader: js.UndefOr[Boolean] = js.undefined
@@ -271,7 +271,7 @@ object feature {
       
       inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
       
-      inline def setGetRecordGroup(value: /* record */ js.UndefOr[IModel] => js.Any): Self = StObject.set(x, "getRecordGroup", js.Any.fromFunction1(value))
+      inline def setGetRecordGroup(value: /* record */ js.UndefOr[IModel] => Any): Self = StObject.set(x, "getRecordGroup", js.Any.fromFunction1(value))
       
       inline def setGetRecordGroupUndefined: Self = StObject.set(x, "getRecordGroup", js.undefined)
       
@@ -279,7 +279,7 @@ object feature {
       
       inline def setGroupByTextUndefined: Self = StObject.set(x, "groupByText", js.undefined)
       
-      inline def setGroupHeaderTpl(value: js.Any): Self = StObject.set(x, "groupHeaderTpl", value.asInstanceOf[js.Any])
+      inline def setGroupHeaderTpl(value: Any): Self = StObject.set(x, "groupHeaderTpl", value.asInstanceOf[js.Any])
       
       inline def setGroupHeaderTplUndefined: Self = StObject.set(x, "groupHeaderTpl", js.undefined)
       
@@ -324,10 +324,10 @@ object feature {
       */
     var getAdditionalData: js.UndefOr[
         js.Function4[
-          /* data */ js.UndefOr[js.Any], 
+          /* data */ js.UndefOr[Any], 
           /* idx */ js.UndefOr[Double], 
           /* record */ js.UndefOr[IModel], 
-          /* orig */ js.UndefOr[js.Any], 
+          /* orig */ js.UndefOr[Any], 
           Unit
         ]
       ] = js.undefined
@@ -342,7 +342,7 @@ object feature {
     extension [Self <: IRowBody](x: Self) {
       
       inline def setGetAdditionalData(
-        value: (/* data */ js.UndefOr[js.Any], /* idx */ js.UndefOr[Double], /* record */ js.UndefOr[IModel], /* orig */ js.UndefOr[js.Any]) => Unit
+        value: (/* data */ js.UndefOr[Any], /* idx */ js.UndefOr[Double], /* record */ js.UndefOr[IModel], /* orig */ js.UndefOr[Any]) => Unit
       ): Self = StObject.set(x, "getAdditionalData", js.Any.fromFunction4(value))
       
       inline def setGetAdditionalDataUndefined: Self = StObject.set(x, "getAdditionalData", js.undefined)

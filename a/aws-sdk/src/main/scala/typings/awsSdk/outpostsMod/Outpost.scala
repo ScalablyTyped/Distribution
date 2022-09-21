@@ -18,11 +18,26 @@ trait Outpost extends StObject {
   
   var OutpostArn: js.UndefOr[typings.awsSdk.outpostsMod.OutpostArn] = js.undefined
   
+  /**
+    *  The ID of the Outpost. 
+    */
   var OutpostId: js.UndefOr[typings.awsSdk.outpostsMod.OutpostId] = js.undefined
   
   var OwnerId: js.UndefOr[typings.awsSdk.outpostsMod.OwnerId] = js.undefined
   
+  var SiteArn: js.UndefOr[typings.awsSdk.outpostsMod.SiteArn] = js.undefined
+  
   var SiteId: js.UndefOr[typings.awsSdk.outpostsMod.SiteId] = js.undefined
+  
+  /**
+    *  The hardware type. 
+    */
+  var SupportedHardwareType: js.UndefOr[typings.awsSdk.outpostsMod.SupportedHardwareType] = js.undefined
+  
+  /**
+    * The Outpost tags.
+    */
+  var Tags: js.UndefOr[TagMap] = js.undefined
 }
 object Outpost {
   
@@ -65,8 +80,20 @@ object Outpost {
     
     inline def setOwnerIdUndefined: Self = StObject.set(x, "OwnerId", js.undefined)
     
+    inline def setSiteArn(value: SiteArn): Self = StObject.set(x, "SiteArn", value.asInstanceOf[js.Any])
+    
+    inline def setSiteArnUndefined: Self = StObject.set(x, "SiteArn", js.undefined)
+    
     inline def setSiteId(value: SiteId): Self = StObject.set(x, "SiteId", value.asInstanceOf[js.Any])
     
     inline def setSiteIdUndefined: Self = StObject.set(x, "SiteId", js.undefined)
+    
+    inline def setSupportedHardwareType(value: SupportedHardwareType): Self = StObject.set(x, "SupportedHardwareType", value.asInstanceOf[js.Any])
+    
+    inline def setSupportedHardwareTypeUndefined: Self = StObject.set(x, "SupportedHardwareType", js.undefined)
+    
+    inline def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

@@ -9,48 +9,48 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait INode extends StObject {
   
   def cache(): INode = js.native
-  def cache(cacheConfig: js.Any): INode = js.native
+  def cache(cacheConfig: Any): INode = js.native
   
-  def clone(attrs: js.Any): INode = js.native
+  def clone(attrs: Any): INode = js.native
   
   def destroy(): Unit = js.native
   
   def draw(): INode = js.native
   
-  def drawBuffer(): js.Any = js.native
+  def drawBuffer(): Any = js.native
   
-  def drawScene(): js.Any = js.native
+  def drawScene(): Any = js.native
   
-  def fire(typeStr: String): js.Any = js.native
-  def fire(typeStr: String, event: js.Any): js.Any = js.native
-  def fire(typeStr: String, event: js.Any, bubble: Boolean): js.Any = js.native
-  def fire(typeStr: String, event: Unit, bubble: Boolean): js.Any = js.native
+  def fire(typeStr: String): Any = js.native
+  def fire(typeStr: String, event: Any): Any = js.native
+  def fire(typeStr: String, event: Any, bubble: Boolean): Any = js.native
+  def fire(typeStr: String, event: Unit, bubble: Boolean): Any = js.native
   
   def getAbsoluteOpacity(): Double = js.native
   
   def getAbsolutePosition(): Vector2d = js.native
   
-  def getAbsoluteTransform(): js.Any = js.native
+  def getAbsoluteTransform(): Any = js.native
   
   def getAbsoluteZIndex(): Double = js.native
   
-  def getAttrs(): js.Any = js.native
+  def getAttrs(): Any = js.native
   
-  def getDragBounds(): js.Any = js.native
+  def getDragBounds(): Any = js.native
   
-  def getDragConstraint(): js.Any = js.native
+  def getDragConstraint(): Any = js.native
   
   def getDraggable(): Boolean = js.native
   
-  def getHeight(): js.Any = js.native
+  def getHeight(): Any = js.native
   
   def getId(): String = js.native
   
-  def getLayer(): js.Any = js.native
+  def getLayer(): Any = js.native
   
   def getLevel(): Double = js.native
   
-  def getListening(): js.Any = js.native
+  def getListening(): Any = js.native
   
   def getName(): String = js.native
   
@@ -58,7 +58,7 @@ trait INode extends StObject {
   
   def getOpacity(): Double = js.native
   
-  def getParent(): js.Any = js.native
+  def getParent(): Any = js.native
   
   def getPosition(): Vector2d = js.native
   
@@ -76,9 +76,9 @@ trait INode extends StObject {
   
   def getStage(): IStage = js.native
   
-  def getTransform(): js.Any = js.native
+  def getTransform(): Any = js.native
   
-  def getWidth(): js.Any = js.native
+  def getWidth(): Any = js.native
   
   def getX(): Double = js.native
   
@@ -119,9 +119,9 @@ trait INode extends StObject {
   def off(typesStr: String): Unit = js.native
   
   // Events
-  def on(typesStr: String, handler: js.Function1[/* data */ js.Any, js.Any]): Unit = js.native
+  def on(typesStr: String, handler: js.Function1[/* data */ Any, Any]): Unit = js.native
   
-  def remove(): js.Any = js.native
+  def remove(): Any = js.native
   
   def rotate(theta: Double): Unit = js.native
   
@@ -129,25 +129,25 @@ trait INode extends StObject {
   
   def setAbsolutePosition(pos: Vector2d): Unit = js.native
   
-  def setAttrs(config: js.Any): Unit = js.native
+  def setAttrs(config: Any): Unit = js.native
   
-  def setDefaultAttrs(config: js.Any): Unit = js.native
+  def setDefaultAttrs(config: Any): Unit = js.native
   
-  def setDragBounds(bounds: js.Any): Unit = js.native
+  def setDragBounds(bounds: Any): Unit = js.native
   
   def setDragConstraint(constraint: String): Unit = js.native
   
   def setDraggable(draggable: Boolean): Unit = js.native
   
-  def setHeight(height: Double): js.Any = js.native
+  def setHeight(height: Double): Any = js.native
   
   def setId(id: String): Unit = js.native
   
   def setListening(listening: Boolean): Unit = js.native
   
-  def setOffset(offset: Vector2d): js.Any = js.native
+  def setOffset(offset: Vector2d): Any = js.native
   
-  def setOpacity(opacity: js.Any): Unit = js.native
+  def setOpacity(opacity: Any): Unit = js.native
   
   def setPosition(position: Vector2d): Unit = js.native
   
@@ -161,7 +161,7 @@ trait INode extends StObject {
   
   def setScaleY(scale: Double): Unit = js.native
   
-  def setSize(size: ISize): js.Any = js.native
+  def setSize(size: ISize): Any = js.native
   
   def setWidth(width: Double): Unit = js.native
   
@@ -175,9 +175,9 @@ trait INode extends StObject {
   
   def simulate(eventType: String): Unit = js.native
   
-  def toDataURL(config: js.Any): Unit = js.native
+  def toDataURL(config: Any): Unit = js.native
   
-  def transitionTo(config: js.Any): Unit = js.native
+  def transitionTo(config: Any): Unit = js.native
   
   // Width / Height
   def width(): Double = js.native

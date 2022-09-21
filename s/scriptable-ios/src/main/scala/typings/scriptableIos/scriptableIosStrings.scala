@@ -31,12 +31,24 @@ object scriptableIosStrings {
   inline def event: event = "event".asInstanceOf[event]
   
   @js.native
+  sealed trait extraLarge extends StObject
+  inline def extraLarge: extraLarge = "extraLarge".asInstanceOf[extraLarge]
+  
+  @js.native
   sealed trait failure extends StObject
   inline def failure: failure = "failure".asInstanceOf[failure]
   
   @js.native
   sealed trait free extends StObject
   inline def free: free = "free".asInstanceOf[free]
+  
+  @js.native
+  sealed trait large extends StObject
+  inline def large: large = "large".asInstanceOf[large]
+  
+  @js.native
+  sealed trait medium extends StObject
+  inline def medium: medium = "medium".asInstanceOf[medium]
   
   @js.native
   sealed trait piano_error extends StObject
@@ -49,6 +61,10 @@ object scriptableIosStrings {
   @js.native
   sealed trait popup extends StObject
   inline def popup: popup = "popup".asInstanceOf[popup]
+  
+  @js.native
+  sealed trait small extends StObject
+  inline def small: small = "small".asInstanceOf[small]
   
   @js.native
   sealed trait tentative extends StObject

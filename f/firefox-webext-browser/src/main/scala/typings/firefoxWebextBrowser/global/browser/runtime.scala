@@ -57,6 +57,7 @@ object runtime {
   /* runtime functions */
   /**
     * Retrieves the JavaScript 'window' object for the background page running inside the current extension/app. If the background page is an event page, the system will ensure it is loaded before calling the callback. If there is no background page, an error is set.
+    * Not supported on manifest versions above 2.
     */
   inline def getBackgroundPage(): js.Promise[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBackgroundPage")().asInstanceOf[js.Promise[Window]]
   
@@ -130,10 +131,10 @@ object runtime {
   @js.native
   val onMessage: WebExtEvent[
     js.Function3[
-      /* message */ js.Any, 
+      /* message */ Any, 
       /* sender */ MessageSender, 
-      /* sendResponse */ js.Function1[/* response */ js.UndefOr[js.Any], Unit], 
-      Boolean | js.Promise[js.Any] | Unit
+      /* sendResponse */ js.Function1[/* response */ js.UndefOr[Any], Unit], 
+      Boolean | js.Promise[Any] | Unit
     ]
   ] = js.native
   
@@ -147,10 +148,10 @@ object runtime {
   @js.native
   val onMessageExternal: WebExtEvent[
     js.Function3[
-      /* message */ js.Any, 
+      /* message */ Any, 
       /* sender */ MessageSender, 
-      /* sendResponse */ js.Function1[/* response */ js.UndefOr[js.Any], Unit], 
-      Boolean | js.Promise[js.Any] | Unit
+      /* sendResponse */ js.Function1[/* response */ js.UndefOr[Any], Unit], 
+      Boolean | js.Promise[Any] | Unit
     ]
   ] = js.native
   
@@ -223,13 +224,13 @@ object runtime {
     * Sends a single message to event listeners within your extension/app or a different extension/app. Similar to `runtime.connect` but only sends a single message, with an optional response. If sending to your extension, the `runtime.onMessage` event will be fired in each page, or `runtime.onMessageExternal`, if a different extension. Note that extensions cannot send messages to content scripts using this method. To send messages to content scripts, use `tabs.sendMessage`.
     * @param extensionId The ID of the extension/app to send the message to. If omitted, the message will be sent to your own extension/app. Required if sending messages from a web page for web messaging.
     */
-  inline def sendMessage(extensionId: String, message: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(extensionId.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-  inline def sendMessage(extensionId: String, message: js.Any, options: SendMessageOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(extensionId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def sendMessage(extensionId: String, message: Any): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(extensionId.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+  inline def sendMessage(extensionId: String, message: Any, options: SendMessageOptions): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(extensionId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   /**
     * Sends a single message to event listeners within your extension/app or a different extension/app. Similar to `runtime.connect` but only sends a single message, with an optional response. If sending to your extension, the `runtime.onMessage` event will be fired in each page, or `runtime.onMessageExternal`, if a different extension. Note that extensions cannot send messages to content scripts using this method. To send messages to content scripts, use `tabs.sendMessage`.
     */
-  inline def sendMessage(message: js.Any): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(message.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
-  inline def sendMessage(message: js.Any, options: SendMessageOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def sendMessage(message: Any): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(message.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+  inline def sendMessage(message: Any, options: SendMessageOptions): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   
   /**
     * Send a single message to a native application.
@@ -238,7 +239,7 @@ object runtime {
     * @param application The name of the native messaging host.
     * @param message The message that will be passed to the native messaging host.
     */
-  inline def sendNativeMessage(application: String, message: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendNativeMessage")(application.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def sendNativeMessage(application: String, message: Any): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendNativeMessage")(application.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   
   /**
     * Sets the URL to be visited upon uninstallation. This may be used to clean up server-side data, do analytics, and implement surveys. Maximum 255 characters.

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AwsIamConfig extends StObject {
   
   /**
-    * The signing region for AWS IAM authorization.
+    * The signing Amazon Web Services Region for IAM authorization.
     */
   var signingRegion: js.UndefOr[String] = js.undefined
   
   /**
-    * The signing service name for AWS IAM authorization.
+    * The signing service name for IAM authorization.
     */
   var signingServiceName: js.UndefOr[String] = js.undefined
 }

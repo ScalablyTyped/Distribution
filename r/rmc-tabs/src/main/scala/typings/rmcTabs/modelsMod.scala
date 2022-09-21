@@ -13,7 +13,7 @@ object modelsMod {
     trait TabData
       extends StObject
          with /** for user's custom extends */
-    /* key */ StringDictionary[js.Any] {
+    /* key */ StringDictionary[Any] {
       
       var key: js.UndefOr[String] = js.undefined
       

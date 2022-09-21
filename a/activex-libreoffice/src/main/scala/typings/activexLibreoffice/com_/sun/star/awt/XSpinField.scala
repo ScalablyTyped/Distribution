@@ -41,7 +41,7 @@ object XSpinField {
     enableRepeat: Boolean => Unit,
     first: () => Unit,
     last: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeSpinListener: XSpinListener => Unit,
     up: () => Unit

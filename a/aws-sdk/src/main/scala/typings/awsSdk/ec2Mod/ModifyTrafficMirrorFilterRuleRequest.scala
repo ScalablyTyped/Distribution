@@ -57,7 +57,7 @@ trait ModifyTrafficMirrorFilterRuleRequest extends StObject {
   var SourcePortRange: js.UndefOr[TrafficMirrorPortRangeRequest] = js.undefined
   
   /**
-    * The type of traffic (ingress | egress) to assign to the rule.
+    * The type of traffic to assign to the rule.
     */
   var TrafficDirection: js.UndefOr[typings.awsSdk.ec2Mod.TrafficDirection] = js.undefined
   
@@ -99,7 +99,7 @@ object ModifyTrafficMirrorFilterRuleRequest {
     
     inline def setRemoveFieldsUndefined: Self = StObject.set(x, "RemoveFields", js.undefined)
     
-    inline def setRemoveFieldsVarargs(value: TrafficMirrorFilterRuleField*): Self = StObject.set(x, "RemoveFields", js.Array(value :_*))
+    inline def setRemoveFieldsVarargs(value: TrafficMirrorFilterRuleField*): Self = StObject.set(x, "RemoveFields", js.Array(value*))
     
     inline def setRuleAction(value: TrafficMirrorRuleAction): Self = StObject.set(x, "RuleAction", value.asInstanceOf[js.Any])
     

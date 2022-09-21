@@ -11,9 +11,9 @@ Give me a string and I'll tell you if it's a valid npm package license string
 | Full name          | validate-npm-package-license |
 | Keywords           | license, npm, package, validation |
 | # releases         | 0 |
-| # dependents       | 205 |
-| # downloads        | 668656614 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 8.2512881E7 |
+| # stars            | 23.0 |
 
 ## Links
 - [Homepage](https://github.com/kemitchell/validate-npm-package-license.js#readme)

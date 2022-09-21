@@ -7,6 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExecutionRecord extends StObject {
   
   /**
+    *  The timestamp that indicates the last new or updated record to be transferred in the flow run. 
+    */
+  var dataPullEndTime: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    *  The timestamp that determines the first new or updated record to be transferred in the flow run. 
+    */
+  var dataPullStartTime: js.UndefOr[js.Date] = js.undefined
+  
+  /**
     *  Specifies the identifier of the given flow run. 
     */
   var executionId: js.UndefOr[ExecutionId] = js.undefined
@@ -24,12 +34,12 @@ trait ExecutionRecord extends StObject {
   /**
     *  Specifies the time of the most recent update. 
     */
-  var lastUpdatedAt: js.UndefOr[Date] = js.undefined
+  var lastUpdatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     *  Specifies the start time of the flow run. 
     */
-  var startedAt: js.UndefOr[Date] = js.undefined
+  var startedAt: js.UndefOr[js.Date] = js.undefined
 }
 object ExecutionRecord {
   
@@ -39,6 +49,14 @@ object ExecutionRecord {
   }
   
   extension [Self <: ExecutionRecord](x: Self) {
+    
+    inline def setDataPullEndTime(value: js.Date): Self = StObject.set(x, "dataPullEndTime", value.asInstanceOf[js.Any])
+    
+    inline def setDataPullEndTimeUndefined: Self = StObject.set(x, "dataPullEndTime", js.undefined)
+    
+    inline def setDataPullStartTime(value: js.Date): Self = StObject.set(x, "dataPullStartTime", value.asInstanceOf[js.Any])
+    
+    inline def setDataPullStartTimeUndefined: Self = StObject.set(x, "dataPullStartTime", js.undefined)
     
     inline def setExecutionId(value: ExecutionId): Self = StObject.set(x, "executionId", value.asInstanceOf[js.Any])
     
@@ -52,11 +70,11 @@ object ExecutionRecord {
     
     inline def setExecutionStatusUndefined: Self = StObject.set(x, "executionStatus", js.undefined)
     
-    inline def setLastUpdatedAt(value: Date): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedAt(value: js.Date): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedAtUndefined: Self = StObject.set(x, "lastUpdatedAt", js.undefined)
     
-    inline def setStartedAt(value: Date): Self = StObject.set(x, "startedAt", value.asInstanceOf[js.Any])
+    inline def setStartedAt(value: js.Date): Self = StObject.set(x, "startedAt", value.asInstanceOf[js.Any])
     
     inline def setStartedAtUndefined: Self = StObject.set(x, "startedAt", js.undefined)
   }

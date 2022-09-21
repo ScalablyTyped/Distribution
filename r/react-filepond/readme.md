@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-filepond
 
-Typings are for version 7.1.0
+Typings are for version 7.1.2
 
 ## Library description:
 A handy FilePond adapter component for React
@@ -10,10 +10,10 @@ A handy FilePond adapter component for React
 | ------------------ | :-------------: |
 | Full name          | react-filepond |
 | Keywords           | react, reactjs, filepond, file, upload, drag, drop, browse, image, preview |
-| # releases         | 1 |
-| # dependents       | 31 |
-| # downloads        | 815852 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 108330.66666666667 |
+| # stars            | 1319.0 |
 
 ## Links
 - [Homepage](https://pqina.nl/filepond)

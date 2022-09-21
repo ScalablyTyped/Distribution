@@ -197,11 +197,11 @@ object ChartOptions {
     
     inline def setAxisX2Undefined: Self = StObject.set(x, "axisX2", js.undefined)
     
-    inline def setAxisX2Varargs(value: ChartAxisXOptions*): Self = StObject.set(x, "axisX2", js.Array(value :_*))
+    inline def setAxisX2Varargs(value: ChartAxisXOptions*): Self = StObject.set(x, "axisX2", js.Array(value*))
     
     inline def setAxisXUndefined: Self = StObject.set(x, "axisX", js.undefined)
     
-    inline def setAxisXVarargs(value: ChartAxisXOptions*): Self = StObject.set(x, "axisX", js.Array(value :_*))
+    inline def setAxisXVarargs(value: ChartAxisXOptions*): Self = StObject.set(x, "axisX", js.Array(value*))
     
     inline def setAxisY(value: ChartAxisYOptions | js.Array[ChartAxisYOptions]): Self = StObject.set(x, "axisY", value.asInstanceOf[js.Any])
     
@@ -209,11 +209,11 @@ object ChartOptions {
     
     inline def setAxisY2Undefined: Self = StObject.set(x, "axisY2", js.undefined)
     
-    inline def setAxisY2Varargs(value: ChartAxisYOptions*): Self = StObject.set(x, "axisY2", js.Array(value :_*))
+    inline def setAxisY2Varargs(value: ChartAxisYOptions*): Self = StObject.set(x, "axisY2", js.Array(value*))
     
     inline def setAxisYUndefined: Self = StObject.set(x, "axisY", js.undefined)
     
-    inline def setAxisYVarargs(value: ChartAxisYOptions*): Self = StObject.set(x, "axisY", js.Array(value :_*))
+    inline def setAxisYVarargs(value: ChartAxisYOptions*): Self = StObject.set(x, "axisY", js.Array(value*))
     
     inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
@@ -241,7 +241,7 @@ object ChartOptions {
     
     inline def setDataPointWidthUndefined: Self = StObject.set(x, "dataPointWidth", js.undefined)
     
-    inline def setDataVarargs(value: ChartDataSeriesOptions*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: ChartDataSeriesOptions*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setExportEnabled(value: Boolean): Self = StObject.set(x, "exportEnabled", value.asInstanceOf[js.Any])
     
@@ -267,7 +267,7 @@ object ChartOptions {
     
     inline def setSubtitlesUndefined: Self = StObject.set(x, "subtitles", js.undefined)
     
-    inline def setSubtitlesVarargs(value: ChartTitleOptions*): Self = StObject.set(x, "subtitles", js.Array(value :_*))
+    inline def setSubtitlesVarargs(value: ChartTitleOptions*): Self = StObject.set(x, "subtitles", js.Array(value*))
     
     inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     

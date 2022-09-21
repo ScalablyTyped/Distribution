@@ -11,14 +11,11 @@ Extends Chai with assertions about promises.
 | Full name          | chai-as-promised |
 | Keywords           | chai, chai-plugin, browser, async, testing, assertions, promises, promises-aplus |
 | # releases         | 1 |
-| # dependents       | 534 |
-| # downloads        | 35409417 |
-| # stars            | 60 |
+| # dependents       | 0.0 |
+| # downloads        | 4733674.666666667 |
+| # stars            | 1392.0 |
 
 ## Links
-- [Homepage](https://github.com/domenic/chai-as-promised#readme)
-- [Bugs](https://github.com/domenic/chai-as-promised/issues)
-- [Repository](https://github.com/domenic/chai-as-promised)
 - [Npm](https://www.npmjs.com/package/chai-as-promised)
     
 

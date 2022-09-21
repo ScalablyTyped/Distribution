@@ -11,7 +11,7 @@ object mod {
   /**
     * Initializes a new empty PriorityQueue wich uses .DEFAULT_COMPARATOR() as the comparator function for its elements.
     */
-  class ^[T] ()
+  open class ^[T] ()
     extends StObject
        with PriorityQueue[T] {
     /**

@@ -10,7 +10,7 @@ trait Backend extends StObject {
   
   var background: String
   
-  var context: js.Any
+  var context: Any
   
   var elementId: String
   
@@ -23,7 +23,7 @@ object Backend {
   inline def apply(
     backend: Double,
     background: String,
-    context: js.Any,
+    context: Any,
     elementId: String,
     height: Double,
     width: Double
@@ -38,7 +38,7 @@ object Backend {
     
     inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     inline def setElementId(value: String): Self = StObject.set(x, "elementId", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,7 @@ trait ChannelSection extends StObject {
   var localizations: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.youtube.gapi.client.youtube.ChannelSectionLocalization}
-    */ typings.maximMazurokGapiClientYoutube.maximMazurokGapiClientYoutubeStrings.ChannelSection & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientYoutube.maximMazurokGapiClientYoutubeStrings.ChannelSection & TopLevel[Any]
   ] = js.undefined
   
   /** The snippet object contains basic details about the channel section, such as its type, style and title. */
@@ -60,7 +60,7 @@ object ChannelSection {
     inline def setLocalizations(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.youtube.gapi.client.youtube.ChannelSectionLocalization}
-      */ typings.maximMazurokGapiClientYoutube.maximMazurokGapiClientYoutubeStrings.ChannelSection & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientYoutube.maximMazurokGapiClientYoutubeStrings.ChannelSection & TopLevel[Any]
     ): Self = StObject.set(x, "localizations", value.asInstanceOf[js.Any])
     
     inline def setLocalizationsUndefined: Self = StObject.set(x, "localizations", js.undefined)

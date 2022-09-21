@@ -1,18 +1,14 @@
 package typings.reactYoutube
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.propTypes.mod.Requireable
+import typings.react.mod.CSSProperties
 import typings.react.mod.Component
-import typings.reactYoutube.anon.Data
-import typings.reactYoutube.anon.DataTarget
-import typings.reactYoutube.anon.Target
-import typings.reactYoutube.reactYoutubeNumbers.`0`
-import typings.reactYoutube.reactYoutubeNumbers.`1`
-import typings.reactYoutube.reactYoutubeNumbers.`2`
-import typings.reactYoutube.reactYoutubeNumbers.`3`
-import typings.reactYoutube.reactYoutubeStrings.playlist
-import typings.reactYoutube.reactYoutubeStrings.red
-import typings.reactYoutube.reactYoutubeStrings.search
-import typings.reactYoutube.reactYoutubeStrings.user_uploads
-import typings.reactYoutube.reactYoutubeStrings.white
+import typings.reactYoutube.reactYoutubeStrings.`lazy`
+import typings.reactYoutube.reactYoutubeStrings.eager
+import typings.std.HTMLDivElement
+import typings.youtubePlayer.typesMod.Options
+import typings.youtubePlayer.typesMod.YouTubePlayer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,201 +17,362 @@ object mod {
   
   @JSImport("react-youtube", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[YouTubeProps, js.Object, js.Any]
-  
-  trait Options extends StObject {
-    
-    var height: js.UndefOr[String] = js.undefined
-    
-    var playerVars: js.UndefOr[PlayerVars] = js.undefined
-    
-    var width: js.UndefOr[String] = js.undefined
+  open class default protected () extends YouTube {
+    def this(props: Any) = this()
   }
-  object Options {
+  object default {
     
-    inline def apply(): Options = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Options]
+    @JSImport("react-youtube", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Expose PlayerState constants for convenience. These constants can also be
+      * accessed through the global YT object after the YouTube IFrame API is instantiated.
+      * https://developers.google.com/youtube/iframe_api_reference#onStateChange
+      */
+    /* static member */
+    object PlayerState {
+      
+      @JSImport("react-youtube", "default.PlayerState")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      @JSImport("react-youtube", "default.PlayerState.BUFFERING")
+      @js.native
+      def BUFFERING: Double = js.native
+      inline def BUFFERING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BUFFERING")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-youtube", "default.PlayerState.CUED")
+      @js.native
+      def CUED: Double = js.native
+      inline def CUED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CUED")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-youtube", "default.PlayerState.ENDED")
+      @js.native
+      def ENDED: Double = js.native
+      inline def ENDED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENDED")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-youtube", "default.PlayerState.PAUSED")
+      @js.native
+      def PAUSED: Double = js.native
+      inline def PAUSED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PAUSED")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-youtube", "default.PlayerState.PLAYING")
+      @js.native
+      def PLAYING: Double = js.native
+      inline def PLAYING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PLAYING")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-youtube", "default.PlayerState.UNSTARTED")
+      @js.native
+      def UNSTARTED: Double = js.native
+      inline def UNSTARTED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNSTARTED")(x.asInstanceOf[js.Any])
     }
     
-    extension [Self <: Options](x: Self) {
-      
-      inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
-      
-      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
-      
-      inline def setPlayerVars(value: PlayerVars): Self = StObject.set(x, "playerVars", value.asInstanceOf[js.Any])
-      
-      inline def setPlayerVarsUndefined: Self = StObject.set(x, "playerVars", js.undefined)
-      
-      inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
-      
-      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
-    }
-  }
-  
-  trait PlayerVars extends StObject {
+    /* static member */
+    @JSImport("react-youtube", "default.defaultProps")
+    @js.native
+    def defaultProps: YouTubeProps = js.native
+    inline def defaultProps_=(x: YouTubeProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    var autoplay: js.UndefOr[`0` | `1`] = js.undefined
-    
-    var cc_load_policy: js.UndefOr[`1`] = js.undefined
-    
-    var color: js.UndefOr[red | white] = js.undefined
-    
-    var controls: js.UndefOr[`0` | `1` | `2`] = js.undefined
-    
-    var disablekb: js.UndefOr[`0` | `1`] = js.undefined
-    
-    var enablejsapi: js.UndefOr[`0` | `1`] = js.undefined
-    
-    var end: js.UndefOr[Double] = js.undefined
-    
-    var fs: js.UndefOr[`0` | `1`] = js.undefined
-    
-    var hl: js.UndefOr[String] = js.undefined
-    
-    var iv_load_policy: js.UndefOr[`1` | `3`] = js.undefined
-    
-    var list: js.UndefOr[String] = js.undefined
-    
-    var listType: js.UndefOr[playlist | search | user_uploads] = js.undefined
-    
-    var loop: js.UndefOr[`0` | `1`] = js.undefined
-    
-    var modestbranding: js.UndefOr[`1`] = js.undefined
-    
-    var origin: js.UndefOr[String] = js.undefined
-    
-    var playlist: js.UndefOr[String] = js.undefined
-    
-    var playsinline: js.UndefOr[`0` | `1`] = js.undefined
-    
-    var rel: js.UndefOr[`0` | `1`] = js.undefined
-    
-    var showinfo: js.UndefOr[`0` | `1`] = js.undefined
-    
-    var start: js.UndefOr[Double] = js.undefined
-  }
-  object PlayerVars {
-    
-    inline def apply(): PlayerVars = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[PlayerVars]
-    }
-    
-    extension [Self <: PlayerVars](x: Self) {
+    /* static member */
+    object propTypes {
       
-      inline def setAutoplay(value: `0` | `1`): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
+      @JSImport("react-youtube", "default.propTypes")
+      @js.native
+      val ^ : js.Any = js.native
       
-      inline def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
+      @JSImport("react-youtube", "default.propTypes.className")
+      @js.native
+      def className: Requireable[String] = js.native
+      inline def className_=(x: Requireable[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
       
-      inline def setCc_load_policy(value: `1`): Self = StObject.set(x, "cc_load_policy", value.asInstanceOf[js.Any])
+      @JSImport("react-youtube", "default.propTypes.id")
+      @js.native
+      def id: Requireable[String] = js.native
+      inline def id_=(x: Requireable[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
       
-      inline def setCc_load_policyUndefined: Self = StObject.set(x, "cc_load_policy", js.undefined)
+      @JSImport("react-youtube", "default.propTypes.iframeClassName")
+      @js.native
+      def iframeClassName: Requireable[String] = js.native
+      inline def iframeClassName_=(x: Requireable[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("iframeClassName")(x.asInstanceOf[js.Any])
       
-      inline def setColor(value: red | white): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      @JSImport("react-youtube", "default.propTypes.loading")
+      @js.native
+      def loading: Requireable[String] = js.native
+      inline def loading_=(x: Requireable[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("loading")(x.asInstanceOf[js.Any])
       
-      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      @JSImport("react-youtube", "default.propTypes.onEnd")
+      @js.native
+      def onEnd: Requireable[js.Function1[/* repeated */ Any, Any]] = js.native
+      inline def onEnd_=(x: Requireable[js.Function1[/* repeated */ Any, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onEnd")(x.asInstanceOf[js.Any])
       
-      inline def setControls(value: `0` | `1` | `2`): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
+      @JSImport("react-youtube", "default.propTypes.onError")
+      @js.native
+      def onError: Requireable[js.Function1[/* repeated */ Any, Any]] = js.native
+      inline def onError_=(x: Requireable[js.Function1[/* repeated */ Any, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onError")(x.asInstanceOf[js.Any])
       
-      inline def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
+      @JSImport("react-youtube", "default.propTypes.onPause")
+      @js.native
+      def onPause: Requireable[js.Function1[/* repeated */ Any, Any]] = js.native
+      inline def onPause_=(x: Requireable[js.Function1[/* repeated */ Any, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onPause")(x.asInstanceOf[js.Any])
       
-      inline def setDisablekb(value: `0` | `1`): Self = StObject.set(x, "disablekb", value.asInstanceOf[js.Any])
+      @JSImport("react-youtube", "default.propTypes.onPlay")
+      @js.native
+      def onPlay: Requireable[js.Function1[/* repeated */ Any, Any]] = js.native
+      inline def onPlay_=(x: Requireable[js.Function1[/* repeated */ Any, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onPlay")(x.asInstanceOf[js.Any])
       
-      inline def setDisablekbUndefined: Self = StObject.set(x, "disablekb", js.undefined)
+      @JSImport("react-youtube", "default.propTypes.onPlaybackQualityChange")
+      @js.native
+      def onPlaybackQualityChange: Requireable[js.Function1[/* repeated */ Any, Any]] = js.native
+      inline def onPlaybackQualityChange_=(x: Requireable[js.Function1[/* repeated */ Any, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onPlaybackQualityChange")(x.asInstanceOf[js.Any])
       
-      inline def setEnablejsapi(value: `0` | `1`): Self = StObject.set(x, "enablejsapi", value.asInstanceOf[js.Any])
+      @JSImport("react-youtube", "default.propTypes.onPlaybackRateChange")
+      @js.native
+      def onPlaybackRateChange: Requireable[js.Function1[/* repeated */ Any, Any]] = js.native
+      inline def onPlaybackRateChange_=(x: Requireable[js.Function1[/* repeated */ Any, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onPlaybackRateChange")(x.asInstanceOf[js.Any])
       
-      inline def setEnablejsapiUndefined: Self = StObject.set(x, "enablejsapi", js.undefined)
+      @JSImport("react-youtube", "default.propTypes.onReady")
+      @js.native
+      def onReady: Requireable[js.Function1[/* repeated */ Any, Any]] = js.native
+      inline def onReady_=(x: Requireable[js.Function1[/* repeated */ Any, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onReady")(x.asInstanceOf[js.Any])
       
-      inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      @JSImport("react-youtube", "default.propTypes.onStateChange")
+      @js.native
+      def onStateChange: Requireable[js.Function1[/* repeated */ Any, Any]] = js.native
+      inline def onStateChange_=(x: Requireable[js.Function1[/* repeated */ Any, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onStateChange")(x.asInstanceOf[js.Any])
       
-      inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+      @JSImport("react-youtube", "default.propTypes.opts")
+      @js.native
+      def opts: Requireable[StringDictionary[Any]] = js.native
+      inline def opts_=(x: Requireable[StringDictionary[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("opts")(x.asInstanceOf[js.Any])
       
-      inline def setFs(value: `0` | `1`): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+      @JSImport("react-youtube", "default.propTypes.style")
+      @js.native
+      def style: Requireable[js.Object] = js.native
+      inline def style_=(x: Requireable[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("style")(x.asInstanceOf[js.Any])
       
-      inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
+      @JSImport("react-youtube", "default.propTypes.title")
+      @js.native
+      def title: Requireable[String] = js.native
+      inline def title_=(x: Requireable[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
       
-      inline def setHl(value: String): Self = StObject.set(x, "hl", value.asInstanceOf[js.Any])
-      
-      inline def setHlUndefined: Self = StObject.set(x, "hl", js.undefined)
-      
-      inline def setIv_load_policy(value: `1` | `3`): Self = StObject.set(x, "iv_load_policy", value.asInstanceOf[js.Any])
-      
-      inline def setIv_load_policyUndefined: Self = StObject.set(x, "iv_load_policy", js.undefined)
-      
-      inline def setList(value: String): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
-      
-      inline def setListType(value: playlist | search | user_uploads): Self = StObject.set(x, "listType", value.asInstanceOf[js.Any])
-      
-      inline def setListTypeUndefined: Self = StObject.set(x, "listType", js.undefined)
-      
-      inline def setListUndefined: Self = StObject.set(x, "list", js.undefined)
-      
-      inline def setLoop(value: `0` | `1`): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
-      
-      inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
-      
-      inline def setModestbranding(value: `1`): Self = StObject.set(x, "modestbranding", value.asInstanceOf[js.Any])
-      
-      inline def setModestbrandingUndefined: Self = StObject.set(x, "modestbranding", js.undefined)
-      
-      inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
-      
-      inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
-      
-      inline def setPlaylist(value: String): Self = StObject.set(x, "playlist", value.asInstanceOf[js.Any])
-      
-      inline def setPlaylistUndefined: Self = StObject.set(x, "playlist", js.undefined)
-      
-      inline def setPlaysinline(value: `0` | `1`): Self = StObject.set(x, "playsinline", value.asInstanceOf[js.Any])
-      
-      inline def setPlaysinlineUndefined: Self = StObject.set(x, "playsinline", js.undefined)
-      
-      inline def setRel(value: `0` | `1`): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
-      
-      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
-      
-      inline def setShowinfo(value: `0` | `1`): Self = StObject.set(x, "showinfo", value.asInstanceOf[js.Any])
-      
-      inline def setShowinfoUndefined: Self = StObject.set(x, "showinfo", js.undefined)
-      
-      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
-      
-      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      @JSImport("react-youtube", "default.propTypes.videoId")
+      @js.native
+      def videoId: Requireable[String] = js.native
+      inline def videoId_=(x: Requireable[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("videoId")(x.asInstanceOf[js.Any])
     }
   }
   
-  type YouTube = Component[YouTubeProps, js.Object, js.Any]
+  @js.native
+  trait YouTube
+    extends Component[YouTubeProps, js.Object, Any] {
+    
+    @JSName("componentDidMount")
+    def componentDidMount_MYouTube(): Unit = js.native
+    
+    @JSName("componentDidUpdate")
+    def componentDidUpdate_MYouTube(prevProps: YouTubeProps): js.Promise[Unit] = js.native
+    
+    @JSName("componentWillUnmount")
+    def componentWillUnmount_MYouTube(): Unit = js.native
+    
+    var container: HTMLDivElement | Null = js.native
+    
+    /**
+      * Initialize the YouTube Player API on the container and attach event handlers
+      */
+    def createPlayer(): Unit = js.native
+    
+    /**
+      * Destroy the YouTube Player using its async API and store the promise so we
+      * can await before re-creating it.
+      */
+    def destroyPlayer(): js.Promise[Unit] = js.native
+    
+    /**
+      * Note: The `youtube-player` package that is used promisifies all YouTube
+      * Player API calls, which introduces a delay of a tick before it actually
+      * gets destroyed.
+      *
+      * The promise to destroy the player is stored here so we can make sure to
+      * only re-create the Player after it's been destroyed.
+      *
+      * See: https://github.com/tjallingt/react-youtube/issues/355
+      */
+    var destroyPlayerPromise: js.UndefOr[js.Promise[Unit]] = js.native
+    
+    /**
+      *  Method to return the internalPlayer object.
+      */
+    def getInternalPlayer(): YouTubePlayer | Null = js.native
+    
+    var internalPlayer: YouTubePlayer | Null = js.native
+    
+    /**
+      * This event fires if an error occurs in the player.
+      * https://developers.google.com/youtube/iframe_api_reference#onError
+      */
+    def onPlayerError(event: YouTubeEvent[Double]): js.UndefOr[Unit] = js.native
+    
+    /**
+      * This event fires whenever the video playback rate changes.
+      * https://developers.google.com/youtube/iframe_api_reference#onPlaybackQualityChange
+      */
+    def onPlayerPlaybackQualityChange(event: YouTubeEvent[String]): js.UndefOr[Unit] = js.native
+    
+    /**
+      * This event fires whenever the video playback quality changes.
+      * https://developers.google.com/youtube/iframe_api_reference#onPlaybackRateChange
+      */
+    def onPlayerPlaybackRateChange(event: YouTubeEvent[Double]): js.UndefOr[Unit] = js.native
+    
+    /**
+      * This event fires whenever a player has finished loading and is ready to begin receiving API calls.
+      * https://developers.google.com/youtube/iframe_api_reference#onReady
+      */
+    def onPlayerReady(event: YouTubeEvent[Any]): js.UndefOr[Unit] = js.native
+    
+    /**
+      * This event fires whenever the video playback quality changes.
+      * https://developers.google.com/youtube/iframe_api_reference#onStateChange
+      */
+    def onPlayerStateChange(event: YouTubeEvent[Double]): Unit = js.native
+    
+    def refContainer(container: HTMLDivElement): Unit = js.native
+    
+    /**
+      * Shorthand for destroying and then re-creating the YouTube Player
+      */
+    def resetPlayer(): js.Promise[Unit] = js.native
+    
+    /**
+      * Method to update the id and class of the YouTube Player iframe.
+      * React should update this automatically but since the YouTube Player API
+      * replaced the DIV that is mounted by React we need to do this manually.
+      */
+    def updatePlayer(): Unit = js.native
+    
+    /**
+      * Call YouTube Player API methods to update the currently playing video.
+      * Depending on the `opts.playerVars.autoplay` this function uses one of two
+      * YouTube Player API methods to update the video.
+      */
+    def updateVideo(): Unit = js.native
+  }
+  
+  trait YouTubeEvent[T] extends StObject {
+    
+    var data: T
+    
+    var target: YouTubePlayer
+  }
+  object YouTubeEvent {
+    
+    inline def apply[T](data: T, target: YouTubePlayer): YouTubeEvent[T] = {
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+      __obj.asInstanceOf[YouTubeEvent[T]]
+    }
+    
+    extension [Self <: YouTubeEvent[?], T](x: Self & YouTubeEvent[T]) {
+      
+      inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setTarget(value: YouTubePlayer): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    }
+  }
   
   trait YouTubeProps extends StObject {
     
+    /**
+      * Custom class name for the player element
+      */
     var className: js.UndefOr[String] = js.undefined
     
-    var containerClassName: js.UndefOr[String] = js.undefined
-    
+    /**
+      * Custom ID for the player element
+      */
     var id: js.UndefOr[String] = js.undefined
     
-    var onEnd: js.UndefOr[js.Function1[/* event */ Data, Unit]] = js.undefined
+    /**
+      * Custom class name for the iframe element
+      */
+    var iframeClassName: js.UndefOr[String] = js.undefined
     
-    var onError: js.UndefOr[js.Function1[/* event */ Data, Unit]] = js.undefined
+    /**
+      * Indicates how the browser should load the iframe
+      * {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attr-loading}
+      */
+    var loading: js.UndefOr[eager | `lazy`] = js.undefined
     
-    var onPause: js.UndefOr[js.Function1[/* event */ Data, Unit]] = js.undefined
+    /**
+      * This event fires when the layer's state changes to PlayerState.ENDED.
+      */
+    var onEnd: js.UndefOr[js.Function1[/* event */ YouTubeEvent[Double], Unit]] = js.undefined
     
-    var onPlay: js.UndefOr[js.Function1[/* event */ Data, Unit]] = js.undefined
+    /**
+      * This event fires if an error occurs in the player.
+      * {@link https://developers.google.com/youtube/iframe_api_reference#onError}
+      */
+    var onError: js.UndefOr[js.Function1[/* event */ YouTubeEvent[Double], Unit]] = js.undefined
     
-    var onPlaybackQualityChange: js.UndefOr[js.Function1[/* event */ DataTarget, Unit]] = js.undefined
+    /**
+      * This event fires when the layer's state changes to PlayerState.PAUSED.
+      */
+    var onPause: js.UndefOr[js.Function1[/* event */ YouTubeEvent[Double], Unit]] = js.undefined
     
-    var onPlaybackRateChange: js.UndefOr[js.Function1[/* event */ Data, Unit]] = js.undefined
+    /**
+      * This event fires when the layer's state changes to PlayerState.PLAYING.
+      */
+    var onPlay: js.UndefOr[js.Function1[/* event */ YouTubeEvent[Double], Unit]] = js.undefined
     
-    var onReady: js.UndefOr[js.Function1[/* event */ Target, Unit]] = js.undefined
+    /**
+      * This event fires whenever the video playback rate changes.
+      * {@link https://developers.google.com/youtube/iframe_api_reference#onPlaybackQualityChange}
+      */
+    var onPlaybackQualityChange: js.UndefOr[js.Function1[/* event */ YouTubeEvent[String], Unit]] = js.undefined
     
-    var onStateChange: js.UndefOr[js.Function1[/* event */ Data, Unit]] = js.undefined
+    /**
+      * This event fires whenever the video playback quality changes.
+      * {@link https://developers.google.com/youtube/iframe_api_reference#onPlaybackRateChange}
+      */
+    var onPlaybackRateChange: js.UndefOr[js.Function1[/* event */ YouTubeEvent[Double], Unit]] = js.undefined
     
+    /**
+      * This event fires whenever a player has finished loading and is ready to begin receiving API calls.
+      * {@link https://developers.google.com/youtube/iframe_api_reference#onReady}
+      */
+    var onReady: js.UndefOr[js.Function1[/* event */ YouTubeEvent[Any], Unit]] = js.undefined
+    
+    /**
+      * This event fires whenever the player's state changes.
+      * {@link https://developers.google.com/youtube/iframe_api_reference#onStateChange}
+      */
+    var onStateChange: js.UndefOr[js.Function1[/* event */ YouTubeEvent[Double], Unit]] = js.undefined
+    
+    /**
+      * An object that specifies player options
+      * {@link https://developers.google.com/youtube/iframe_api_reference#Loading_a_Video_Player}
+      */
     var opts: js.UndefOr[Options] = js.undefined
     
+    /**
+      * Custom style for the player container element
+      */
+    var style: js.UndefOr[CSSProperties] = js.undefined
+    
+    /**
+      * Title of the video for the iframe's title tag.
+      */
+    var title: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The YouTube video ID.
+      *
+      * Examples
+      * - https://www.youtube.com/watch?v=XxVg_s8xAms (`XxVg_s8xAms` is the ID)
+      * - https://www.youtube.com/embed/-DX3vJiqxm4 (`-DX3vJiqxm4` is the ID)
+      */
     var videoId: js.UndefOr[String] = js.undefined
   }
   object YouTubeProps {
@@ -231,49 +388,61 @@ object mod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setContainerClassName(value: String): Self = StObject.set(x, "containerClassName", value.asInstanceOf[js.Any])
-      
-      inline def setContainerClassNameUndefined: Self = StObject.set(x, "containerClassName", js.undefined)
-      
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setOnEnd(value: /* event */ Data => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction1(value))
+      inline def setIframeClassName(value: String): Self = StObject.set(x, "iframeClassName", value.asInstanceOf[js.Any])
+      
+      inline def setIframeClassNameUndefined: Self = StObject.set(x, "iframeClassName", js.undefined)
+      
+      inline def setLoading(value: eager | `lazy`): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      
+      inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+      
+      inline def setOnEnd(value: /* event */ YouTubeEvent[Double] => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction1(value))
       
       inline def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
       
-      inline def setOnError(value: /* event */ Data => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* event */ YouTubeEvent[Double] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnPause(value: /* event */ Data => Unit): Self = StObject.set(x, "onPause", js.Any.fromFunction1(value))
+      inline def setOnPause(value: /* event */ YouTubeEvent[Double] => Unit): Self = StObject.set(x, "onPause", js.Any.fromFunction1(value))
       
       inline def setOnPauseUndefined: Self = StObject.set(x, "onPause", js.undefined)
       
-      inline def setOnPlay(value: /* event */ Data => Unit): Self = StObject.set(x, "onPlay", js.Any.fromFunction1(value))
+      inline def setOnPlay(value: /* event */ YouTubeEvent[Double] => Unit): Self = StObject.set(x, "onPlay", js.Any.fromFunction1(value))
       
       inline def setOnPlayUndefined: Self = StObject.set(x, "onPlay", js.undefined)
       
-      inline def setOnPlaybackQualityChange(value: /* event */ DataTarget => Unit): Self = StObject.set(x, "onPlaybackQualityChange", js.Any.fromFunction1(value))
+      inline def setOnPlaybackQualityChange(value: /* event */ YouTubeEvent[String] => Unit): Self = StObject.set(x, "onPlaybackQualityChange", js.Any.fromFunction1(value))
       
       inline def setOnPlaybackQualityChangeUndefined: Self = StObject.set(x, "onPlaybackQualityChange", js.undefined)
       
-      inline def setOnPlaybackRateChange(value: /* event */ Data => Unit): Self = StObject.set(x, "onPlaybackRateChange", js.Any.fromFunction1(value))
+      inline def setOnPlaybackRateChange(value: /* event */ YouTubeEvent[Double] => Unit): Self = StObject.set(x, "onPlaybackRateChange", js.Any.fromFunction1(value))
       
       inline def setOnPlaybackRateChangeUndefined: Self = StObject.set(x, "onPlaybackRateChange", js.undefined)
       
-      inline def setOnReady(value: /* event */ Target => Unit): Self = StObject.set(x, "onReady", js.Any.fromFunction1(value))
+      inline def setOnReady(value: /* event */ YouTubeEvent[Any] => Unit): Self = StObject.set(x, "onReady", js.Any.fromFunction1(value))
       
       inline def setOnReadyUndefined: Self = StObject.set(x, "onReady", js.undefined)
       
-      inline def setOnStateChange(value: /* event */ Data => Unit): Self = StObject.set(x, "onStateChange", js.Any.fromFunction1(value))
+      inline def setOnStateChange(value: /* event */ YouTubeEvent[Double] => Unit): Self = StObject.set(x, "onStateChange", js.Any.fromFunction1(value))
       
       inline def setOnStateChangeUndefined: Self = StObject.set(x, "onStateChange", js.undefined)
       
       inline def setOpts(value: Options): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
       
       inline def setOptsUndefined: Self = StObject.set(x, "opts", js.undefined)
+      
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
       inline def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
       

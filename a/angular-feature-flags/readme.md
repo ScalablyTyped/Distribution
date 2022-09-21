@@ -10,10 +10,10 @@ Feature Flag module for Angular JS apps
 | ------------------ | :-------------: |
 | Full name          | angular-feature-flags |
 | Keywords           | angular, feature flag, feature switch |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 163919 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 13205.666666666666 |
+| # stars            | 197.0 |
 
 ## Links
 - [Homepage](https://github.com/mjt01/angular-feature-flags)

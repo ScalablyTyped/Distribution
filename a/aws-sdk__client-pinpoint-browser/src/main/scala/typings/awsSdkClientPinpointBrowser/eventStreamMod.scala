@@ -8,5 +8,5 @@ object eventStreamMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/_EventStream", "_EventStream")
   @js.native
-  val EventStream: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val EventStream: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -6,20 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LocalSearchSearchOptions extends StObject {
   
-  var customData: js.Any
+  var customData: Any
   
   var forceLocal: Boolean
 }
 object LocalSearchSearchOptions {
   
-  inline def apply(customData: js.Any, forceLocal: Boolean): LocalSearchSearchOptions = {
+  inline def apply(customData: Any, forceLocal: Boolean): LocalSearchSearchOptions = {
     val __obj = js.Dynamic.literal(customData = customData.asInstanceOf[js.Any], forceLocal = forceLocal.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalSearchSearchOptions]
   }
   
   extension [Self <: LocalSearchSearchOptions](x: Self) {
     
-    inline def setCustomData(value: js.Any): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+    inline def setCustomData(value: Any): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
     
     inline def setForceLocal(value: Boolean): Self = StObject.set(x, "forceLocal", value.asInstanceOf[js.Any])
   }

@@ -2,7 +2,6 @@ package typings.hapiJoi.mod
 
 import org.scalablytyped.runtime.Instantiable3
 import typings.hapiJoi.anon.Alternatives
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,8 +12,8 @@ trait Root extends StObject {
   
   var ValidationError: Instantiable3[
     /* message */ String, 
-    /* details */ js.Any, 
-    /* original */ js.Any, 
+    /* details */ Any, 
+    /* original */ Any, 
     typings.hapiJoi.mod.ValidationError
   ] = js.native
   
@@ -24,7 +23,7 @@ trait Root extends StObject {
   /**
     * Whitelists a value
     */
-  def allow(values: js.Any*): Schema = js.native
+  def allow(values: Any*): Schema = js.native
   
   def alt(types: SchemaLike*): AlternativesSchema = js.native
   /**
@@ -55,12 +54,12 @@ trait Root extends StObject {
     * @param schema - the schema object.
     * @param message - optional message string prefix added in front of the error message. may also be an Error object.
     */
-  def assert(value: js.Any, schema: SchemaLike): Unit = js.native
-  def assert(value: js.Any, schema: SchemaLike, message: String): Unit = js.native
-  def assert(value: js.Any, schema: SchemaLike, message: String, options: ValidationOptions): Unit = js.native
-  def assert(value: js.Any, schema: SchemaLike, message: Error): Unit = js.native
-  def assert(value: js.Any, schema: SchemaLike, message: Error, options: ValidationOptions): Unit = js.native
-  def assert(value: js.Any, schema: SchemaLike, options: ValidationOptions): Unit = js.native
+  def assert(value: Any, schema: SchemaLike): Unit = js.native
+  def assert(value: Any, schema: SchemaLike, message: String): Unit = js.native
+  def assert(value: Any, schema: SchemaLike, message: String, options: ValidationOptions): Unit = js.native
+  def assert(value: Any, schema: SchemaLike, message: js.Error): Unit = js.native
+  def assert(value: Any, schema: SchemaLike, message: js.Error, options: ValidationOptions): Unit = js.native
+  def assert(value: Any, schema: SchemaLike, options: ValidationOptions): Unit = js.native
   
   /**
     * Validates a value against a schema, returns valid object, and throws if validation fails.
@@ -69,12 +68,12 @@ trait Root extends StObject {
     * @param schema - the schema object.
     * @param message - optional message string prefix added in front of the error message. may also be an Error object.
     */
-  def attempt(value: js.Any, schema: SchemaLike): js.Any = js.native
-  def attempt(value: js.Any, schema: SchemaLike, message: String): js.Any = js.native
-  def attempt(value: js.Any, schema: SchemaLike, message: String, options: ValidationOptions): js.Any = js.native
-  def attempt(value: js.Any, schema: SchemaLike, message: Error): js.Any = js.native
-  def attempt(value: js.Any, schema: SchemaLike, message: Error, options: ValidationOptions): js.Any = js.native
-  def attempt(value: js.Any, schema: SchemaLike, options: ValidationOptions): js.Any = js.native
+  def attempt(value: Any, schema: SchemaLike): Any = js.native
+  def attempt(value: Any, schema: SchemaLike, message: String): Any = js.native
+  def attempt(value: Any, schema: SchemaLike, message: String, options: ValidationOptions): Any = js.native
+  def attempt(value: Any, schema: SchemaLike, message: js.Error): Any = js.native
+  def attempt(value: Any, schema: SchemaLike, message: js.Error, options: ValidationOptions): Any = js.native
+  def attempt(value: Any, schema: SchemaLike, options: ValidationOptions): Any = js.native
   
   /**
     * Generates a schema object that matches a Buffer data type (as well as the strings which will be converted to Buffers).
@@ -94,7 +93,7 @@ trait Root extends StObject {
   /**
     * Unsure, maybe alias for `compile`?
     */
-  def build(args: js.Any*): js.Any = js.native
+  def build(args: Any*): Any = js.native
   
   var cache: CacheConfiguration = js.native
   
@@ -117,8 +116,8 @@ trait Root extends StObject {
   /**
     * Creates a custom validation schema.
     */
-  def custom(fn: CustomValidator[js.Any]): Schema = js.native
-  def custom(fn: CustomValidator[js.Any], description: String): Schema = js.native
+  def custom(fn: CustomValidator[Any]): Schema = js.native
+  def custom(fn: CustomValidator[Any], description: String): Schema = js.native
   
   /**
     * Generates a schema object that matches a date type (as well as a JavaScript date string or number of milliseconds).
@@ -133,9 +132,9 @@ trait Root extends StObject {
     */
   def defaults(fn: SchemaFunction): Root = js.native
   
-  def disallow(values: js.Any*): Schema = js.native
+  def disallow(values: Any*): Schema = js.native
   
-  def equal(values: js.Any*): Schema = js.native
+  def equal(values: Any*): Schema = js.native
   
   /**
     * Alias of `required`.
@@ -145,13 +144,13 @@ trait Root extends StObject {
   /**
     * Generates a dynamic expression using a template string.
     */
-  def expression(template: String): js.Any = js.native
-  def expression(template: String, options: ReferenceOptions): js.Any = js.native
+  def expression(template: String): Any = js.native
+  def expression(template: String, options: ReferenceOptions): Any = js.native
   
   /**
     * Creates a new Joi instance customized with the extension(s) you provide included.
     */
-  def extend(extensions: (Extension | ExtensionFactory)*): js.Any = js.native
+  def extend(extensions: (Extension | ExtensionFactory)*): Any = js.native
   
   /**
     * Marks a key as forbidden which will not allow any value except undefined. Used to explicitly forbid keys.
@@ -177,28 +176,28 @@ trait Root extends StObject {
   /**
     * Blacklists a value
     */
-  def invalid(values: js.Any*): Schema = js.native
+  def invalid(values: Any*): Schema = js.native
   
   /**
     * Checks whether or not the provided argument is an instance of ValidationError
     */
-  def isError(error: js.Any): /* is @hapi/joi.@hapi/joi.ValidationError */ Boolean = js.native
+  def isError(error: Any): /* is @hapi/joi.@hapi/joi.ValidationError */ Boolean = js.native
   
   /**
     * Checks whether or not the provided argument is an expression.
     */
-  def isExpression(expression: js.Any): Boolean = js.native
+  def isExpression(expression: Any): Boolean = js.native
   
   /**
     * Checks whether or not the provided argument is a reference. It's especially useful if you want to post-process error messages.
     */
-  def isRef(ref: js.Any): /* is @hapi/joi.@hapi/joi.Reference */ Boolean = js.native
+  def isRef(ref: Any): /* is @hapi/joi.@hapi/joi.Reference */ Boolean = js.native
   
   /**
     * Checks whether or not the provided argument is a joi schema.
     */
-  def isSchema(schema: js.Any): Boolean = js.native
-  def isSchema(schema: js.Any, options: CompileOptions): Boolean = js.native
+  def isSchema(schema: Any): Boolean = js.native
+  def isSchema(schema: Any, options: CompileOptions): Boolean = js.native
   
   /**
     * Links to another schema node and reuses it for validation, typically for creative recursive schemas.
@@ -212,7 +211,7 @@ trait Root extends StObject {
   def link(): LinkSchema = js.native
   def link(ref: String): LinkSchema = js.native
   
-  def not(values: js.Any*): Schema = js.native
+  def not(values: Any*): Schema = js.native
   
   /**
     * Generates a schema object that matches a number data type (as well as strings that can be converted to numbers).
@@ -234,7 +233,7 @@ trait Root extends StObject {
   /**
     * Unsure, maybe alias for `preferences`?
     */
-  def options(args: js.Any*): js.Any = js.native
+  def options(args: Any*): Any = js.native
   
   /**
     * A special value used with `any.allow()`, `any.invalid()`, and `any.valid()` as the first value to reset any previously set values.
@@ -275,7 +274,7 @@ trait Root extends StObject {
   /**
     * Unsure, maybe leaked from `@hapi/lab/coverage/initialize`
     */
-  def trace(args: js.Any*): js.Any = js.native
+  def trace(args: Any*): Any = js.native
   
   /**
     * Returns an object where each key is a plain joi schema type.
@@ -284,12 +283,12 @@ trait Root extends StObject {
     */
   def types(): Alternatives = js.native
   
-  def untrace(args: js.Any*): js.Any = js.native
+  def untrace(args: Any*): Any = js.native
   
   /**
     * Adds the provided values into the allowed whitelist and marks them as the only valid values allowed.
     */
-  def valid(values: js.Any*): Schema = js.native
+  def valid(values: Any*): Schema = js.native
   
   /**
     * Current version of the joi package.
@@ -306,6 +305,6 @@ trait Root extends StObject {
   /**
     * Generates a dynamic expression using a template string.
     */
-  def x(template: String): js.Any = js.native
-  def x(template: String, options: ReferenceOptions): js.Any = js.native
+  def x(template: String): Any = js.native
+  def x(template: String, options: ReferenceOptions): Any = js.native
 }

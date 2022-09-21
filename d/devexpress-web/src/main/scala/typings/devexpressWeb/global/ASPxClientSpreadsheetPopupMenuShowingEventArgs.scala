@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientSpreadsheetPopupMenuShowingEventArgs")
 @js.native
-class ASPxClientSpreadsheetPopupMenuShowingEventArgs protected ()
+open class ASPxClientSpreadsheetPopupMenuShowingEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientSpreadsheetPopupMenuShowingEventArgs {
   /**
@@ -17,10 +17,10 @@ class ASPxClientSpreadsheetPopupMenuShowingEventArgs protected ()
     * @param menuItems Provides access to the context menu's item collection.
     * @param menuType Specifies the currently displayed context menu's type.
     */
-  def this(menuItems: js.Any, menuType: js.Any) = this()
+  def this(menuItems: Any, menuType: Any) = this()
   
   /**
-    * Gets or sets a value indicating whether the action which raised the event should be canceled.
+    * Specifies whether to cancel the related action (for example, row edit, export).
     */
   /* CompleteClass */
   var cancel: Boolean = js.native

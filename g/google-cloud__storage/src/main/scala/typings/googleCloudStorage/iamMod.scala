@@ -1,35 +1,57 @@
 package typings.googleCloudStorage
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.googleCloudCommon.serviceObjectMod.Metadata
 import typings.googleCloudStorage.bucketMod.Bucket
-import typings.std.Error
+import typings.googleCloudStorage.serviceObjectMod.Metadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iamMod {
   
+  @js.native
+  sealed trait IAMExceptionMessages extends StObject
+  @JSImport("@google-cloud/storage/build/src/iam", "IAMExceptionMessages")
+  @js.native
+  object IAMExceptionMessages extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[IAMExceptionMessages & String] = js.native
+    
+    @js.native
+    sealed trait PERMISSIONS_REQUIRED
+      extends StObject
+         with IAMExceptionMessages
+    /* "Permissions are required." */ val PERMISSIONS_REQUIRED: typings.googleCloudStorage.iamMod.IAMExceptionMessages.PERMISSIONS_REQUIRED & String = js.native
+    
+    @js.native
+    sealed trait POLICY_OBJECT_REQUIRED
+      extends StObject
+         with IAMExceptionMessages
+    /* "A policy object is required." */ val POLICY_OBJECT_REQUIRED: typings.googleCloudStorage.iamMod.IAMExceptionMessages.POLICY_OBJECT_REQUIRED & String = js.native
+  }
+  
   /**
     * Get and set IAM policies for your Cloud Storage bucket.
     *
-    * @see [Cloud Storage IAM Management](https://cloud.google.com/storage/docs/access-control/iam#short_title_iam_management)
-    * @see [Granting, Changing, and Revoking Access](https://cloud.google.com/iam/docs/granting-changing-revoking-access)
-    * @see [IAM Roles](https://cloud.google.com/iam/docs/understanding-roles)
+    * See {@link https://cloud.google.com/storage/docs/access-control/iam#short_title_iam_management| Cloud Storage IAM Management}
+    * See {@link https://cloud.google.com/iam/docs/granting-changing-revoking-access| Granting, Changing, and Revoking Access}
+    * See {@link https://cloud.google.com/iam/docs/understanding-roles| IAM Roles}
     *
     * @constructor Iam
-    * @mixin
     *
     * @param {Bucket} bucket The parent instance.
     * @example
+    * ```
     * const {Storage} = require('@google-cloud/storage');
     * const storage = new Storage();
     * const bucket = storage.bucket('my-bucket');
     * // bucket.iam
+    * ```
     */
   @JSImport("@google-cloud/storage/build/src/iam", "Iam")
   @js.native
-  class Iam protected () extends StObject {
+  open class Iam protected () extends StObject {
     def this(bucket: Bucket) = this()
     
     def getPolicy(): js.Promise[GetPolicyResponse] = js.native
@@ -37,9 +59,9 @@ object iamMod {
     def getPolicy(options: GetPolicyOptions): js.Promise[GetPolicyResponse] = js.native
     def getPolicy(options: GetPolicyOptions, callback: GetPolicyCallback): Unit = js.native
     
-    /* private */ var request_ : js.Any = js.native
+    /* private */ var request_ : Any = js.native
     
-    /* private */ var resourceId_ : js.Any = js.native
+    /* private */ var resourceId_ : Any = js.native
     
     def setPolicy(policy: Policy): js.Promise[SetPolicyResponse] = js.native
     def setPolicy(policy: Policy, callback: SetPolicyCallback): Unit = js.native
@@ -90,7 +112,7 @@ object iamMod {
   }
   
   type GetPolicyCallback = js.Function3[
-    /* err */ js.UndefOr[Error | Null], 
+    /* err */ js.UndefOr[js.Error | Null], 
     /* acl */ js.UndefOr[Policy], 
     /* apiResponse */ js.UndefOr[Metadata], 
     Unit
@@ -142,7 +164,7 @@ object iamMod {
       
       inline def setBindings(value: js.Array[PolicyBinding]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
       
-      inline def setBindingsVarargs(value: PolicyBinding*): Self = StObject.set(x, "bindings", js.Array(value :_*))
+      inline def setBindingsVarargs(value: PolicyBinding*): Self = StObject.set(x, "bindings", js.Array(value*))
       
       inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
       
@@ -177,14 +199,14 @@ object iamMod {
       
       inline def setMembers(value: js.Array[String]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
       
-      inline def setMembersVarargs(value: String*): Self = StObject.set(x, "members", js.Array(value :_*))
+      inline def setMembersVarargs(value: String*): Self = StObject.set(x, "members", js.Array(value*))
       
       inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     }
   }
   
   type SetPolicyCallback = js.Function3[
-    /* err */ js.UndefOr[Error | Null], 
+    /* err */ js.UndefOr[js.Error | Null], 
     /* acl */ js.UndefOr[Policy], 
     /* apiResponse */ js.UndefOr[js.Object], 
     Unit
@@ -212,7 +234,7 @@ object iamMod {
   type SetPolicyResponse = js.Tuple2[Policy, Metadata]
   
   type TestIamPermissionsCallback = js.Function3[
-    /* err */ js.UndefOr[Error | Null], 
+    /* err */ js.UndefOr[js.Error | Null], 
     /* acl */ js.UndefOr[StringDictionary[Boolean] | Null], 
     /* apiResponse */ js.UndefOr[Metadata], 
     Unit

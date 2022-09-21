@@ -10,13 +10,11 @@ trait HashChangeEvent
   extends StObject
      with Event {
   
-  /**
-    * Returns the URL of the session history entry that is now current.
-    */
+  /** Returns the URL of the session history entry that is now current. */
+  /* standard dom */
   val newURL: java.lang.String = js.native
   
-  /**
-    * Returns the URL of the session history entry that was previously current.
-    */
+  /** Returns the URL of the session history entry that was previously current. */
+  /* standard dom */
   val oldURL: java.lang.String = js.native
 }

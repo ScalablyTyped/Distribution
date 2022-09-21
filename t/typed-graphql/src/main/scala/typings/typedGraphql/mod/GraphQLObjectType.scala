@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("graphql", "GraphQLObjectType")
 @js.native
-class GraphQLObjectType protected ()
+open class GraphQLObjectType protected ()
   extends StObject
      with GraphQLCompositeType
      with GraphQLNamedType

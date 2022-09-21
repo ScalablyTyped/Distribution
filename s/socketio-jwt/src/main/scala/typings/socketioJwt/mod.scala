@@ -1,6 +1,9 @@
 package typings.socketioJwt
 
-import typings.socketIo.mod.Socket
+import typings.socketioJwt.anon.Code
+import typings.socketioJwt.anon.Message
+import typings.socketioJwt.socketioJwtBooleans.`false`
+import typings.socketioJwt.socketioJwtStrings.authenticated
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,66 +15,116 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("socketio-jwt", "UnauthorizedError")
   @js.native
-  class UnauthorizedError protected ()
+  open class UnauthorizedErrorCls protected ()
     extends StObject
-       with Error {
-    def this(code: String, error: Error) = this()
+       with UnauthorizedError {
+    def this(code: String, error: Message) = this()
     
-    var data: JwtData = js.native
+    /* CompleteClass */
+    override val data: Code = js.native
     
-    var inner: Error = js.native
+    /* CompleteClass */
+    override val inner: js.Object = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
-  inline def authorize(options: JwtAuthOptions): js.Function1[/* socket */ Socket, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("authorize")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* socket */ Socket, Unit]]
-  inline def authorize(options: JwtAuthOptions, callback: JwtAuthorizeCallback): js.Function1[/* socket */ Socket, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("authorize")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* socket */ Socket, Unit]]
+  inline def authorize(options: IOptions): ISocketIOMiddleware = ^.asInstanceOf[js.Dynamic].applyDynamic("authorize")(options.asInstanceOf[js.Any]).asInstanceOf[ISocketIOMiddleware]
   
-  trait JwtAuthOptions extends StObject {
+  trait IOptions extends StObject {
     
-    // In milliseconds to handle the second round trip.
-    var callback: js.UndefOr[Boolean] = js.undefined
+    var additional_auth: js.UndefOr[
+        js.Function3[
+          /* decoded */ js.Object, 
+          /* onSuccess */ js.Function0[Unit], 
+          /* onError */ js.Function2[/* err */ String | ISocketIOError, /* code */ String, Unit], 
+          Unit
+        ]
+      ] = js.undefined
     
-    // To disconnect socket server-side without a client-side callback if no valid token.
+    var auth_header_required: js.UndefOr[Boolean] = js.undefined
+    
+    var callback: js.UndefOr[`false` | Double] = js.undefined
+    
+    var cookie: js.UndefOr[String] = js.undefined
+    
+    var customDecoded: js.UndefOr[js.Function1[/* decoded */ js.Object, js.Object]] = js.undefined
+    
     var decodedPropertyName: js.UndefOr[String] = js.undefined
     
-    // Property to store the decoded token to.
+    var encodedPropertyName: js.UndefOr[String] = js.undefined
+    
     var handshake: js.UndefOr[Boolean] = js.undefined
     
-    var secret: String | JwtSecretFunc
+    var required: js.UndefOr[Boolean] = js.undefined
+    
+    var secret: String | (js.Function3[/* request */ Any, /* decodedToken */ js.Object, /* callback */ ISocketCallback, Unit])
     
     var timeout: js.UndefOr[Double] = js.undefined
   }
-  object JwtAuthOptions {
+  object IOptions {
     
-    inline def apply(secret: String | JwtSecretFunc): JwtAuthOptions = {
+    inline def apply(
+      secret: String | (js.Function3[/* request */ Any, /* decodedToken */ js.Object, /* callback */ ISocketCallback, Unit])
+    ): IOptions = {
       val __obj = js.Dynamic.literal(secret = secret.asInstanceOf[js.Any])
-      __obj.asInstanceOf[JwtAuthOptions]
+      __obj.asInstanceOf[IOptions]
     }
     
-    extension [Self <: JwtAuthOptions](x: Self) {
+    extension [Self <: IOptions](x: Self) {
       
-      inline def setCallback(value: Boolean): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+      inline def setAdditional_auth(
+        value: (/* decoded */ js.Object, /* onSuccess */ js.Function0[Unit], /* onError */ js.Function2[/* err */ String | ISocketIOError, /* code */ String, Unit]) => Unit
+      ): Self = StObject.set(x, "additional_auth", js.Any.fromFunction3(value))
+      
+      inline def setAdditional_authUndefined: Self = StObject.set(x, "additional_auth", js.undefined)
+      
+      inline def setAuth_header_required(value: Boolean): Self = StObject.set(x, "auth_header_required", value.asInstanceOf[js.Any])
+      
+      inline def setAuth_header_requiredUndefined: Self = StObject.set(x, "auth_header_required", js.undefined)
+      
+      inline def setCallback(value: `false` | Double): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
       inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      
+      inline def setCookie(value: String): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
+      
+      inline def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
+      
+      inline def setCustomDecoded(value: /* decoded */ js.Object => js.Object): Self = StObject.set(x, "customDecoded", js.Any.fromFunction1(value))
+      
+      inline def setCustomDecodedUndefined: Self = StObject.set(x, "customDecoded", js.undefined)
       
       inline def setDecodedPropertyName(value: String): Self = StObject.set(x, "decodedPropertyName", value.asInstanceOf[js.Any])
       
       inline def setDecodedPropertyNameUndefined: Self = StObject.set(x, "decodedPropertyName", js.undefined)
       
+      inline def setEncodedPropertyName(value: String): Self = StObject.set(x, "encodedPropertyName", value.asInstanceOf[js.Any])
+      
+      inline def setEncodedPropertyNameUndefined: Self = StObject.set(x, "encodedPropertyName", js.undefined)
+      
       inline def setHandshake(value: Boolean): Self = StObject.set(x, "handshake", value.asInstanceOf[js.Any])
       
       inline def setHandshakeUndefined: Self = StObject.set(x, "handshake", js.undefined)
       
-      inline def setSecret(value: String | JwtSecretFunc): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+      inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
-      inline def setSecretFunction3(value: (/* request */ js.Any, /* payload */ js.Any, /* callback */ JwtSecretFuncCallback) => Unit): Self = StObject.set(x, "secret", js.Any.fromFunction3(value))
+      inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+      
+      inline def setSecret(
+        value: String | (js.Function3[/* request */ Any, /* decodedToken */ js.Object, /* callback */ ISocketCallback, Unit])
+      ): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+      
+      inline def setSecretFunction3(value: (/* request */ Any, /* decodedToken */ js.Object, /* callback */ ISocketCallback) => Unit): Self = StObject.set(x, "secret", js.Any.fromFunction3(value))
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
@@ -79,35 +132,88 @@ object mod {
     }
   }
   
-  type JwtAuthorizeCallback = js.Function0[Unit]
+  /**
+    * Callback gets called, if secret is given dynamically.
+    */
+  type ISocketCallback = js.Function2[/* err */ ISocketIOError, /* success */ String, Unit]
   
-  trait JwtData extends StObject {
+  /**
+    * Defines possible errors for the secret-callback.
+    */
+  trait ISocketIOError extends StObject {
     
-    var code: String
+    val code: String
     
-    var message: String
-    
-    var `type`: String
+    val message: String
   }
-  object JwtData {
+  object ISocketIOError {
     
-    inline def apply(code: String, message: String, `type`: String): JwtData = {
+    inline def apply(code: String, message: String): ISocketIOError = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[JwtData]
+      __obj.asInstanceOf[ISocketIOError]
     }
     
-    extension [Self <: JwtData](x: Self) {
+    extension [Self <: ISocketIOError](x: Self) {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
-      
-      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  type JwtSecretFunc = js.Function3[/* request */ js.Any, /* payload */ js.Any, /* callback */ JwtSecretFuncCallback, Unit]
+  type ISocketIOMiddleware = js.Function2[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SocketIO.Socket */ /* socket */ Any, 
+    /* fn */ js.Function1[/* err */ js.UndefOr[Any], Unit], 
+    Unit
+  ]
   
-  type JwtSecretFuncCallback = js.Function2[/* err */ Error | Null, /* secret */ String, Unit]
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SocketIO.Server * / any */ @js.native
+  trait JWTServer extends StObject {
+    
+    /**
+      * The event gets fired when a new connection is authenticated via JWT.
+      * @param event The event being fired: 'authenticated'
+      * @param listener A listener that should take one parameter of type Socket
+      * @return The default '/' Namespace
+      */
+    def on(
+      event: String,
+      listener: js.Function1[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SocketIO.Socket */ /* socket */ Any, 
+          Unit
+        ]
+    ): Any = js.native
+    @JSName("on")
+    def on_authenticated(
+      event: authenticated,
+      listener: js.Function1[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SocketIO.Socket */ /* socket */ Any, 
+          Unit
+        ]
+    ): Any = js.native
+  }
+  
+  trait UnauthorizedError
+    extends StObject
+       with Error {
+    
+    val data: Code
+    
+    val inner: js.Object
+  }
+  object UnauthorizedError {
+    
+    inline def apply(data: Code, inner: js.Object, message: String, name: String): UnauthorizedError = {
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], inner = inner.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[UnauthorizedError]
+    }
+    
+    extension [Self <: UnauthorizedError](x: Self) {
+      
+      inline def setData(value: Code): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setInner(value: js.Object): Self = StObject.set(x, "inner", value.asInstanceOf[js.Any])
+    }
+  }
 }

@@ -103,7 +103,7 @@ trait Typeofspine extends StObject {
   var AnimationStateData: Instantiable1[/* skeletonData */ SkeletonData, typings.phaser.spine.AnimationStateData]
   
   var AssetManager: (Instantiable2[
-    /* textureLoader */ js.Function1[/* image */ HTMLImageElement, js.Any], 
+    /* textureLoader */ js.Function1[/* image */ HTMLImageElement, Any], 
     /* pathPrefix */ js.UndefOr[String], 
     typings.phaser.spine.AssetManager
   ]) & TypeofAssetManager
@@ -206,7 +206,7 @@ trait Typeofspine extends StObject {
   var PointAttachment: Instantiable1[/* name */ String, typings.phaser.spine.PointAttachment]
   
   var Pool: Instantiable1[
-    /* instantiator */ js.Function0[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
+    /* instantiator */ js.Function0[/* import warning: RewrittenClass.unapply cls was tparam T */ Any], 
     typings.phaser.spine.Pool[js.Object]
   ]
   
@@ -260,7 +260,7 @@ trait Typeofspine extends StObject {
   
   var TextureAtlas: Instantiable2[
     /* atlasText */ String, 
-    /* textureLoader */ js.Function1[/* path */ String, js.Any], 
+    /* textureLoader */ js.Function1[/* path */ String, Any], 
     typings.phaser.spine.TextureAtlas
   ]
   
@@ -315,7 +315,7 @@ object Typeofspine {
     AnimationStateAdapter2: Instantiable0[AnimationStateAdapter2],
     AnimationStateData: Instantiable1[/* skeletonData */ SkeletonData, AnimationStateData],
     AssetManager: (Instantiable2[
-      /* textureLoader */ js.Function1[/* image */ HTMLImageElement, js.Any], 
+      /* textureLoader */ js.Function1[/* image */ HTMLImageElement, Any], 
       /* pathPrefix */ js.UndefOr[String], 
       AssetManager
     ]) & TypeofAssetManager,
@@ -360,7 +360,7 @@ object Typeofspine {
     PathConstraintSpacingTimeline: Instantiable1[/* frameCount */ Double, PathConstraintSpacingTimeline],
     PointAttachment: Instantiable1[/* name */ String, PointAttachment],
     Pool: Instantiable1[
-      /* instantiator */ js.Function0[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
+      /* instantiator */ js.Function0[/* import warning: RewrittenClass.unapply cls was tparam T */ Any], 
       Pool[js.Object]
     ],
     Pow: Instantiable1[/* power */ Double, Pow],
@@ -384,7 +384,7 @@ object Typeofspine {
     Texture: (Instantiable1[/* image */ HTMLImageElement, Texture]) & TypeofTexture,
     TextureAtlas: Instantiable2[
       /* atlasText */ String, 
-      /* textureLoader */ js.Function1[/* path */ String, js.Any], 
+      /* textureLoader */ js.Function1[/* path */ String, Any], 
       TextureAtlas
     ],
     TextureAtlasPage: Instantiable0[TextureAtlasPage],
@@ -428,7 +428,7 @@ object Typeofspine {
     
     inline def setAssetManager(
       value: (Instantiable2[
-          /* textureLoader */ js.Function1[/* image */ HTMLImageElement, js.Any], 
+          /* textureLoader */ js.Function1[/* image */ HTMLImageElement, Any], 
           /* pathPrefix */ js.UndefOr[String], 
           AssetManager
         ]) & TypeofAssetManager
@@ -522,7 +522,7 @@ object Typeofspine {
     
     inline def setPool(
       value: Instantiable1[
-          /* instantiator */ js.Function0[/* import warning: RewrittenClass.unapply cls was tparam T */ js.Any], 
+          /* instantiator */ js.Function0[/* import warning: RewrittenClass.unapply cls was tparam T */ Any], 
           Pool[js.Object]
         ]
     ): Self = StObject.set(x, "Pool", value.asInstanceOf[js.Any])
@@ -572,7 +572,7 @@ object Typeofspine {
     inline def setTextureAtlas(
       value: Instantiable2[
           /* atlasText */ String, 
-          /* textureLoader */ js.Function1[/* path */ String, js.Any], 
+          /* textureLoader */ js.Function1[/* path */ String, Any], 
           TextureAtlas
         ]
     ): Self = StObject.set(x, "TextureAtlas", value.asInstanceOf[js.Any])

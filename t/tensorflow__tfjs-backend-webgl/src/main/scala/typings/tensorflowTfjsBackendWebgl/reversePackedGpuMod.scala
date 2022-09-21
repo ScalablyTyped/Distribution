@@ -9,7 +9,7 @@ object reversePackedGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/reverse_packed_gpu", "ReversePackedProgram")
   @js.native
-  class ReversePackedProgram protected ()
+  open class ReversePackedProgram protected ()
     extends StObject
        with GPGPUProgram {
     def this(xShape: js.Array[Double], axis: js.Array[Double]) = this()

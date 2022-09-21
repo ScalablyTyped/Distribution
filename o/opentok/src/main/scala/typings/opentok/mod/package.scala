@@ -5,4 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type Token = java.lang.String
+type StreamId = String
+
+type Token = String

@@ -1,0 +1,30 @@
+package typings.googleapis.recommenderV1beta1Mod.recommenderV1beta1
+
+import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait SchemaGoogleCloudRecommenderV1beta1InsightTypeGenerationConfig extends StObject {
+  
+  /**
+    * Parameters for this InsightTypeGenerationConfig. These configs can be used by or are applied to all subtypes.
+    */
+  var params: js.UndefOr[StringDictionary[Any] | Null] = js.undefined
+}
+object SchemaGoogleCloudRecommenderV1beta1InsightTypeGenerationConfig {
+  
+  inline def apply(): SchemaGoogleCloudRecommenderV1beta1InsightTypeGenerationConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[SchemaGoogleCloudRecommenderV1beta1InsightTypeGenerationConfig]
+  }
+  
+  extension [Self <: SchemaGoogleCloudRecommenderV1beta1InsightTypeGenerationConfig](x: Self) {
+    
+    inline def setParams(value: StringDictionary[Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    
+    inline def setParamsNull: Self = StObject.set(x, "params", null)
+    
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+  }
+}

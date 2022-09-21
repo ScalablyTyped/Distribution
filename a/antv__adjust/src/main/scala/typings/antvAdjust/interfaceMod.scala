@@ -40,7 +40,7 @@ object interfaceMod {
       
       inline def setAdjustNamesUndefined: Self = StObject.set(x, "adjustNames", js.undefined)
       
-      inline def setAdjustNamesVarargs(value: String*): Self = StObject.set(x, "adjustNames", js.Array(value :_*))
+      inline def setAdjustNamesVarargs(value: String*): Self = StObject.set(x, "adjustNames", js.Array(value*))
       
       inline def setDodgeBy(value: String): Self = StObject.set(x, "dodgeBy", value.asInstanceOf[js.Any])
       
@@ -76,13 +76,15 @@ object interfaceMod {
     }
   }
   
-  type Data = StringDictionary[js.Any]
+  type Data = StringDictionary[Any]
   
   trait DodgeCfg extends StObject {
     
     val adjustNames: js.UndefOr[js.Array[String]] = js.undefined
     
     val columnWidthRatio: js.UndefOr[Double] = js.undefined
+    
+    val customOffset: js.UndefOr[(js.Function2[/* data */ Any, /* range */ Any, Double]) | Double] = js.undefined
     
     val defaultSize: js.UndefOr[Double] = js.undefined
     
@@ -121,11 +123,17 @@ object interfaceMod {
       
       inline def setAdjustNamesUndefined: Self = StObject.set(x, "adjustNames", js.undefined)
       
-      inline def setAdjustNamesVarargs(value: String*): Self = StObject.set(x, "adjustNames", js.Array(value :_*))
+      inline def setAdjustNamesVarargs(value: String*): Self = StObject.set(x, "adjustNames", js.Array(value*))
       
       inline def setColumnWidthRatio(value: Double): Self = StObject.set(x, "columnWidthRatio", value.asInstanceOf[js.Any])
       
       inline def setColumnWidthRatioUndefined: Self = StObject.set(x, "columnWidthRatio", js.undefined)
+      
+      inline def setCustomOffset(value: (js.Function2[/* data */ Any, /* range */ Any, Double]) | Double): Self = StObject.set(x, "customOffset", value.asInstanceOf[js.Any])
+      
+      inline def setCustomOffsetFunction2(value: (/* data */ Any, /* range */ Any) => Double): Self = StObject.set(x, "customOffset", js.Any.fromFunction2(value))
+      
+      inline def setCustomOffsetUndefined: Self = StObject.set(x, "customOffset", js.undefined)
       
       inline def setDefaultSize(value: Double): Self = StObject.set(x, "defaultSize", value.asInstanceOf[js.Any])
       
@@ -223,7 +231,7 @@ object interfaceMod {
       
       inline def setAdjustNamesUndefined: Self = StObject.set(x, "adjustNames", js.undefined)
       
-      inline def setAdjustNamesVarargs(value: String*): Self = StObject.set(x, "adjustNames", js.Array(value :_*))
+      inline def setAdjustNamesVarargs(value: String*): Self = StObject.set(x, "adjustNames", js.Array(value*))
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

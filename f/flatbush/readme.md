@@ -10,10 +10,10 @@ Fast static spatial index for rectangles
 | ------------------ | :-------------: |
 | Full name          | flatbush |
 | Keywords           | geometry, spatial, tree, index, rectangle, search |
-| # releases         | 6 |
-| # dependents       | 25 |
-| # downloads        | 241589 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 52912.0 |
+| # stars            | 1156.0 |
 
 ## Links
 - [Homepage](https://github.com/mourner/flatbush#readme)

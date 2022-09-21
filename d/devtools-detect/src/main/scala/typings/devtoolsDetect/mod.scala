@@ -1,6 +1,6 @@
 package typings.devtoolsDetect
 
-import org.scalablytyped.runtime.Shortcut
+import typings.devtoolsDetect.anon.IsOpen
 import typings.devtoolsDetect.devtoolsDetectStrings.devtoolschange
 import typings.std.AddEventListenerOptions
 import typings.std.Event
@@ -8,39 +8,23 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
   
-  @JSImport("devtools-detect", JSImport.Namespace)
-  @js.native
-  val ^ : DevTools = js.native
-  
-  trait DevTools extends StObject {
+  object default {
     
     /**
-    		Whether DevTools is open.
-    		*/
-    val isOpen: Boolean
+    	Whether DevTools is open.
+    	*/
+    @JSImport("devtools-detect", "default.isOpen")
+    @js.native
+    val isOpen: Boolean = js.native
     
     /**
-    		Orientation of the DevTools if it's open.
-    		*/
-    val orientation: js.UndefOr[Orientation] = js.undefined
-  }
-  object DevTools {
-    
-    inline def apply(isOpen: Boolean): DevTools = {
-      val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any])
-      __obj.asInstanceOf[DevTools]
-    }
-    
-    extension [Self <: DevTools](x: Self) {
-      
-      inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
-      
-      inline def setOrientation(value: Orientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
-      
-      inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
-    }
+    	Orientation of the DevTools if it's open.
+    	*/
+    @JSImport("devtools-detect", "default.orientation")
+    @js.native
+    val orientation: js.UndefOr[Orientation] = js.native
   }
   
   @js.native
@@ -48,7 +32,7 @@ object mod extends Shortcut {
     extends StObject
        with Event {
     
-    var detail: DevTools = js.native
+    var detail: IsOpen = js.native
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -63,28 +47,19 @@ object mod extends Shortcut {
     inline def vertical: typings.devtoolsDetect.devtoolsDetectStrings.vertical = "vertical".asInstanceOf[typings.devtoolsDetect.devtoolsDetectStrings.vertical]
   }
   
-  type _To = DevTools
-  
-  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: DevTools = ^
-  
   object global {
     
     @js.native
     trait Window extends StObject {
       
       @JSName("addEventListener")
-      def addEventListener_devtoolschange(`type`: devtoolschange, listener: js.Function1[/* event */ DevToolsEvent, js.Any]): Unit = js.native
+      def addEventListener_devtoolschange(`type`: devtoolschange, listener: js.Function1[/* event */ DevToolsEvent, Any]): Unit = js.native
+      @JSName("addEventListener")
+      def addEventListener_devtoolschange(`type`: devtoolschange, listener: js.Function1[/* event */ DevToolsEvent, Any], options: Boolean): Unit = js.native
       @JSName("addEventListener")
       def addEventListener_devtoolschange(
         `type`: devtoolschange,
-        listener: js.Function1[/* event */ DevToolsEvent, js.Any],
-        options: Boolean
-      ): Unit = js.native
-      @JSName("addEventListener")
-      def addEventListener_devtoolschange(
-        `type`: devtoolschange,
-        listener: js.Function1[/* event */ DevToolsEvent, js.Any],
+        listener: js.Function1[/* event */ DevToolsEvent, Any],
         options: AddEventListenerOptions
       ): Unit = js.native
     }

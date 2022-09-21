@@ -1,71 +1,67 @@
 package typings.ractive.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.ractive.anon.Teardown
+import typings.ractive.ractiveNumbers.`-1`
+import typings.ractive.ractiveNumbers.`0`
+import typings.ractive.ractiveNumbers.`1`
+import typings.std.ArrayLike
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AdaptorPrefixer = js.Function1[/* map */ typings.ractive.mod.ValueMap, typings.ractive.mod.ValueMap]
+type AdaptorPrefixer = js.Function1[/* map */ ValueMap, ValueMap]
 
-type Component = typings.ractive.mod.Static[typings.ractive.mod.Ractive[typings.ractive.mod.Ractive[js.Any]]] | (js.Promise[
-typings.ractive.mod.Static[typings.ractive.mod.Ractive[typings.ractive.mod.Ractive[js.Any]]]])
+type Component = Static[Any] | js.Promise[Static[Any]]
 
-type Computation[T /* <: typings.ractive.mod.Ractive[T] */] = java.lang.String | typings.ractive.mod.ComputationFn[T] | typings.ractive.mod.ComputationDescriptor[T]
+type Computation[T /* <: Ractive[T] */] = String | ComputationFn[T] | ComputationDescriptor[T]
 
-type ComputationFn[T /* <: typings.ractive.mod.Ractive[T] */] = js.ThisFunction0[/* this */ T, js.Any]
+type ComputationFn[T /* <: Ractive[T] */] = js.ThisFunction2[/* this */ T, /* context */ Any, /* keypath */ String, Any]
 
-type CssFn = js.Function1[/* data */ typings.ractive.mod.DataGetFn, java.lang.String]
+type CssFn = js.Function1[/* data */ DataGetFn, String]
 
-type Data = typings.ractive.mod.ValueMap
+type Data = ValueMap
 
-type DataFn[T /* <: typings.ractive.mod.Ractive[T] */] = js.ThisFunction0[/* this */ T, typings.ractive.mod.ValueMap]
+type DataFn[T /* <: Ractive[T] */] = js.ThisFunction0[/* this */ T, ValueMap]
 
-type DataGetFn = js.Function1[/* keypath */ java.lang.String, js.Any]
+type DataGetFn = js.Function1[/* keypath */ String, Any]
 
-type Easing = js.Function1[/* time */ scala.Double, scala.Double]
+type Easing = js.Function1[/* time */ Double, Double]
 
-type EventPlugin[T /* <: typings.ractive.mod.Ractive[T] */] = js.ThisFunction2[
+type EventPlugin[T /* <: Ractive[T] */] = js.ThisFunction2[
 /* this */ T, 
-/* node */ typings.std.HTMLElement, 
-/* fire */ js.Function1[/* event */ typings.std.Event, scala.Unit], 
-typings.ractive.anon.Teardown]
+/* node */ HTMLElement, 
+/* fire */ js.Function1[/* event */ js.UndefOr[ValueMap], Unit], 
+Teardown]
 
-type Interpolator = js.Function2[/* from */ js.Any, /* to */ js.Any, js.Function1[/* t */ scala.Double, js.Any]]
+type Interpolator = js.Function2[/* from */ Any, /* to */ Any, js.Function1[/* t */ Double, Any]]
 
-type MacroFn = js.Function1[/* MacroHelper */ js.Any, typings.ractive.mod.MacroHandle]
+type MacroFn = js.Function1[/* helper */ MacroHelper, MacroHandle]
 
-type ObserverArrayCallback[T /* <: typings.ractive.mod.Ractive[T] */] = js.ThisFunction1[
-/* this */ T, 
-/* changes */ typings.ractive.mod.ArrayChanges, 
-scala.Unit | js.Promise[js.Any]]
+type Merge[T, U /* <: js.Array[Any] */, X] = /* import warning: importer.ImportType#apply Failed type conversion: ractive.anon.0<T, U, X>[U['length'] extends 0 ? 0 : 1] */ js.Any
 
-type ParseDelimiters = js.Tuple2[java.lang.String, java.lang.String]
+type ObserverArrayCallback[T /* <: Ractive[T] */] = js.ThisFunction1[/* this */ T, /* changes */ ArrayChanges, Unit | js.Promise[Any]]
 
-type ParseFn = js.Function1[
-/* helper */ typings.ractive.mod.ParseHelper, 
-java.lang.String | (js.Array[js.Object | java.lang.String]) | typings.ractive.mod.ParsedTemplate]
+type ParseDelimiters = js.Tuple2[String, String]
 
-type Partial = java.lang.String | js.Array[js.Any] | typings.ractive.mod.ParseFn | typings.ractive.mod.Macro
+type ParseFn = js.Function1[/* helper */ ParseHelper, String | (js.Array[js.Object | String]) | ParsedTemplate]
 
-type PartialMap = org.scalablytyped.runtime.StringDictionary[typings.ractive.mod.Partial]
+type Partial = String | js.Array[Any] | ParseFn | Macro
 
-type Plugin = js.Function1[/* PluginArgsBase */ js.Any, scala.Unit]
+type PartialMap = StringDictionary[Partial]
 
-type PluginExtend = js.Function1[/* PluginArgsExtend */ js.Any, scala.Unit]
+type Plugin = js.Function1[/* args */ PluginArgs, Unit]
 
-type PluginInstance = js.Function1[/* PluginArgsInstance */ js.Any, scala.Unit]
+type Registry[T] = StringDictionary[T]
 
-type Registry[T] = org.scalablytyped.runtime.StringDictionary[T]
+type ShuffleFn = js.Function2[/* left */ Any, /* right */ Any, `1` | `0` | `-1`]
 
-type ShuffleFn = js.Function2[
-/* left */ js.Any, 
-/* right */ js.Any, 
-typings.ractive.ractiveNumbers.`1` | typings.ractive.ractiveNumbers.`0` | typings.ractive.ractiveNumbers.`-1`]
+type Shuffler = Boolean | String | ShuffleFn
 
-type Shuffler = scala.Boolean | java.lang.String | typings.ractive.mod.ShuffleFn
+type Target = String | HTMLElement | ArrayLike[Any]
 
-type Target = java.lang.String | typings.std.HTMLElement | typings.std.ArrayLike[js.Any]
+type Template = ParsedTemplate | String | js.Array[Any] | ParseFn
 
-type Template = typings.ractive.mod.ParsedTemplate | java.lang.String | js.Array[js.Any] | typings.ractive.mod.ParseFn
-
-type ValueMap = org.scalablytyped.runtime.StringDictionary[js.Any]
+type ValueMap = StringDictionary[Any]

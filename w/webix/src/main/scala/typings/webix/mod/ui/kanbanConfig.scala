@@ -9,27 +9,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait kanbanConfig extends StObject {
   
-  var animate: js.UndefOr[js.Any] = js.undefined
+  var animate: js.UndefOr[Any] = js.undefined
   
   var attachments: js.UndefOr[String] = js.undefined
   
   var borderless: js.UndefOr[Boolean] = js.undefined
   
-  var cardActions: js.UndefOr[Boolean | js.Array[js.Any]] = js.undefined
+  var cardActions: js.UndefOr[Boolean | js.Array[Any]] = js.undefined
   
   var collapsed: js.UndefOr[Boolean] = js.undefined
   
-  var colors: js.UndefOr[js.Array[js.Any] | String] = js.undefined
+  var colors: js.UndefOr[js.Array[Any] | String] = js.undefined
   
-  var cols: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var cols: js.UndefOr[js.Array[Any]] = js.undefined
   
-  var comments: js.UndefOr[js.Any] = js.undefined
+  var comments: js.UndefOr[Any] = js.undefined
   
   var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[js.Any] = js.undefined
+  var css: js.UndefOr[Any] = js.undefined
   
-  var data: js.UndefOr[String | js.Array[js.Any]] = js.undefined
+  var data: js.UndefOr[String | js.Array[Any]] = js.undefined
   
   var datathrottle: js.UndefOr[Double] = js.undefined
   
@@ -39,7 +39,7 @@ trait kanbanConfig extends StObject {
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var editor: js.UndefOr[js.Any] = js.undefined
+  var editor: js.UndefOr[Any] = js.undefined
   
   var gravity: js.UndefOr[Double] = js.undefined
   
@@ -67,7 +67,7 @@ trait kanbanConfig extends StObject {
   
   var on: js.UndefOr[EventHash] = js.undefined
   
-  var padding: js.UndefOr[js.Any] = js.undefined
+  var padding: js.UndefOr[Any] = js.undefined
   
   var paddingX: js.UndefOr[Double] = js.undefined
   
@@ -81,21 +81,21 @@ trait kanbanConfig extends StObject {
   
   var responsive: js.UndefOr[String] = js.undefined
   
-  var rows: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var rows: js.UndefOr[js.Array[Any]] = js.undefined
   
-  var save: js.UndefOr[js.Any] = js.undefined
+  var save: js.UndefOr[Any] = js.undefined
   
-  var scheme: js.UndefOr[js.Any] = js.undefined
+  var scheme: js.UndefOr[Any] = js.undefined
   
-  var tags: js.UndefOr[js.Array[js.Any] | String] = js.undefined
+  var tags: js.UndefOr[js.Array[Any] | String] = js.undefined
   
   var `type`: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[js.Any] = js.undefined
+  var url: js.UndefOr[Any] = js.undefined
   
-  var userList: js.UndefOr[js.Any] = js.undefined
+  var userList: js.UndefOr[Any] = js.undefined
   
-  var users: js.UndefOr[js.Array[js.Any] | String] = js.undefined
+  var users: js.UndefOr[js.Array[Any] | String] = js.undefined
   
   var view: js.UndefOr[String] = js.undefined
   
@@ -112,7 +112,7 @@ object kanbanConfig {
   
   extension [Self <: kanbanConfig](x: Self) {
     
-    inline def setAnimate(value: js.Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
@@ -124,29 +124,29 @@ object kanbanConfig {
     
     inline def setBorderlessUndefined: Self = StObject.set(x, "borderless", js.undefined)
     
-    inline def setCardActions(value: Boolean | js.Array[js.Any]): Self = StObject.set(x, "cardActions", value.asInstanceOf[js.Any])
+    inline def setCardActions(value: Boolean | js.Array[Any]): Self = StObject.set(x, "cardActions", value.asInstanceOf[js.Any])
     
     inline def setCardActionsUndefined: Self = StObject.set(x, "cardActions", js.undefined)
     
-    inline def setCardActionsVarargs(value: js.Any*): Self = StObject.set(x, "cardActions", js.Array(value :_*))
+    inline def setCardActionsVarargs(value: Any*): Self = StObject.set(x, "cardActions", js.Array(value*))
     
     inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
     
     inline def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
     
-    inline def setColors(value: js.Array[js.Any] | String): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+    inline def setColors(value: js.Array[Any] | String): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
     inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    inline def setColorsVarargs(value: js.Any*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: Any*): Self = StObject.set(x, "colors", js.Array(value*))
     
-    inline def setCols(value: js.Array[js.Any]): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
+    inline def setCols(value: js.Array[Any]): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
     
     inline def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
     
-    inline def setColsVarargs(value: js.Any*): Self = StObject.set(x, "cols", js.Array(value :_*))
+    inline def setColsVarargs(value: Any*): Self = StObject.set(x, "cols", js.Array(value*))
     
-    inline def setComments(value: js.Any): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+    inline def setComments(value: Any): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
     inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
@@ -154,15 +154,15 @@ object kanbanConfig {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setCss(value: js.Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
-    inline def setData(value: String | js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setDatathrottle(value: Double): Self = StObject.set(x, "datathrottle", value.asInstanceOf[js.Any])
     
@@ -180,7 +180,7 @@ object kanbanConfig {
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    inline def setEditor(value: js.Any): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
+    inline def setEditor(value: Any): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
     
     inline def setEditorUndefined: Self = StObject.set(x, "editor", js.undefined)
     
@@ -236,7 +236,7 @@ object kanbanConfig {
     
     inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     
-    inline def setPadding(value: js.Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
@@ -264,43 +264,43 @@ object kanbanConfig {
     
     inline def setResponsiveUndefined: Self = StObject.set(x, "responsive", js.undefined)
     
-    inline def setRows(value: js.Array[js.Any]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: js.Array[Any]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    inline def setRowsVarargs(value: js.Any*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: Any*): Self = StObject.set(x, "rows", js.Array(value*))
     
-    inline def setSave(value: js.Any): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
+    inline def setSave(value: Any): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
     
     inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
     
-    inline def setScheme(value: js.Any): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+    inline def setScheme(value: Any): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
     
     inline def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
     
-    inline def setTags(value: js.Array[js.Any] | String): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[Any] | String): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: js.Any*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Any*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    inline def setUrl(value: js.Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    inline def setUserList(value: js.Any): Self = StObject.set(x, "userList", value.asInstanceOf[js.Any])
+    inline def setUserList(value: Any): Self = StObject.set(x, "userList", value.asInstanceOf[js.Any])
     
     inline def setUserListUndefined: Self = StObject.set(x, "userList", js.undefined)
     
-    inline def setUsers(value: js.Array[js.Any] | String): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+    inline def setUsers(value: js.Array[Any] | String): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     
     inline def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
     
-    inline def setUsersVarargs(value: js.Any*): Self = StObject.set(x, "users", js.Array(value :_*))
+    inline def setUsersVarargs(value: Any*): Self = StObject.set(x, "users", js.Array(value*))
     
     inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     

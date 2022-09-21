@@ -68,14 +68,14 @@ trait PlusMessaging extends StObject {
     */
   def sendMessage(): Unit = js.native
   def sendMessage(msg: Unit, successCB: js.Function0[Unit]): Unit = js.native
-  def sendMessage(msg: Unit, successCB: js.Function0[Unit], errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def sendMessage(msg: Unit, successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def sendMessage(msg: Unit, successCB: js.Function0[Unit], errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
+  def sendMessage(msg: Unit, successCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def sendMessage(msg: PlusMessagingMessage): Unit = js.native
   def sendMessage(msg: PlusMessagingMessage, successCB: js.Function0[Unit]): Unit = js.native
   def sendMessage(
     msg: PlusMessagingMessage,
     successCB: js.Function0[Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def sendMessage(msg: PlusMessagingMessage, successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def sendMessage(msg: PlusMessagingMessage, successCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
 }

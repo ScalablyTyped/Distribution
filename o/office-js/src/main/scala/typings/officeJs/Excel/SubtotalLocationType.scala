@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait SubtotalLocationType extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
 @JSGlobal("Excel.SubtotalLocationType")
@@ -15,7 +16,8 @@ object SubtotalLocationType extends StObject {
   
   /**
     * Subtotals are at the bottom.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
   sealed trait atBottom
@@ -24,7 +26,8 @@ object SubtotalLocationType extends StObject {
   
   /**
     * Subtotals are at the top.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
   sealed trait atTop
@@ -33,7 +36,8 @@ object SubtotalLocationType extends StObject {
   
   /**
     * Subtotals are off.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
   sealed trait off

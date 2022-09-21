@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.jupyterlabServices.jupyterlabServicesStrings.error
   - typings.jupyterlabServices.jupyterlabServicesStrings.execute_input
   - typings.jupyterlabServices.jupyterlabServicesStrings.execute_result
+  - typings.jupyterlabServices.jupyterlabServicesStrings.shutdown_reply
   - typings.jupyterlabServices.jupyterlabServicesStrings.status
   - typings.jupyterlabServices.jupyterlabServicesStrings.stream
   - typings.jupyterlabServices.jupyterlabServicesStrings.update_display_data
@@ -38,6 +39,8 @@ object IOPubMessageType {
   inline def execute_input: typings.jupyterlabServices.jupyterlabServicesStrings.execute_input = "execute_input".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.execute_input]
   
   inline def execute_result: typings.jupyterlabServices.jupyterlabServicesStrings.execute_result = "execute_result".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.execute_result]
+  
+  inline def shutdown_reply: typings.jupyterlabServices.jupyterlabServicesStrings.shutdown_reply = "shutdown_reply".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.shutdown_reply]
   
   inline def status: typings.jupyterlabServices.jupyterlabServicesStrings.status = "status".asInstanceOf[typings.jupyterlabServices.jupyterlabServicesStrings.status]
   

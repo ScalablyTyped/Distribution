@@ -23,13 +23,13 @@ trait TaskDefinition extends StObject {
   
   var definitionType: String
   
-  var demands: js.Array[js.Any]
+  var demands: js.Array[Any]
   
   var description: String
   
   var disabled: Boolean
   
-  var execution: StringDictionary[js.Any]
+  var execution: StringDictionary[Any]
   
   var friendlyName: String
   
@@ -82,10 +82,10 @@ object TaskDefinition {
     contributionVersion: String,
     dataSourceBindings: js.Array[DataSourceBinding],
     definitionType: String,
-    demands: js.Array[js.Any],
+    demands: js.Array[Any],
     description: String,
     disabled: Boolean,
-    execution: StringDictionary[js.Any],
+    execution: StringDictionary[Any],
     friendlyName: String,
     groups: js.Array[TaskGroupDefinition],
     helpMarkDown: String,
@@ -127,25 +127,25 @@ object TaskDefinition {
     
     inline def setDataSourceBindings(value: js.Array[DataSourceBinding]): Self = StObject.set(x, "dataSourceBindings", value.asInstanceOf[js.Any])
     
-    inline def setDataSourceBindingsVarargs(value: DataSourceBinding*): Self = StObject.set(x, "dataSourceBindings", js.Array(value :_*))
+    inline def setDataSourceBindingsVarargs(value: DataSourceBinding*): Self = StObject.set(x, "dataSourceBindings", js.Array(value*))
     
     inline def setDefinitionType(value: String): Self = StObject.set(x, "definitionType", value.asInstanceOf[js.Any])
     
-    inline def setDemands(value: js.Array[js.Any]): Self = StObject.set(x, "demands", value.asInstanceOf[js.Any])
+    inline def setDemands(value: js.Array[Any]): Self = StObject.set(x, "demands", value.asInstanceOf[js.Any])
     
-    inline def setDemandsVarargs(value: js.Any*): Self = StObject.set(x, "demands", js.Array(value :_*))
+    inline def setDemandsVarargs(value: Any*): Self = StObject.set(x, "demands", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    inline def setExecution(value: StringDictionary[js.Any]): Self = StObject.set(x, "execution", value.asInstanceOf[js.Any])
+    inline def setExecution(value: StringDictionary[Any]): Self = StObject.set(x, "execution", value.asInstanceOf[js.Any])
     
     inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
     
     inline def setGroups(value: js.Array[TaskGroupDefinition]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
-    inline def setGroupsVarargs(value: TaskGroupDefinition*): Self = StObject.set(x, "groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: TaskGroupDefinition*): Self = StObject.set(x, "groups", js.Array(value*))
     
     inline def setHelpMarkDown(value: String): Self = StObject.set(x, "helpMarkDown", value.asInstanceOf[js.Any])
     
@@ -157,7 +157,7 @@ object TaskDefinition {
     
     inline def setInputs(value: js.Array[TaskInputDefinition]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
-    inline def setInputsVarargs(value: TaskInputDefinition*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+    inline def setInputsVarargs(value: TaskInputDefinition*): Self = StObject.set(x, "inputs", js.Array(value*))
     
     inline def setInstanceNameFormat(value: String): Self = StObject.set(x, "instanceNameFormat", value.asInstanceOf[js.Any])
     
@@ -175,13 +175,13 @@ object TaskDefinition {
     
     inline def setRunsOn(value: js.Array[String]): Self = StObject.set(x, "runsOn", value.asInstanceOf[js.Any])
     
-    inline def setRunsOnVarargs(value: String*): Self = StObject.set(x, "runsOn", js.Array(value :_*))
+    inline def setRunsOnVarargs(value: String*): Self = StObject.set(x, "runsOn", js.Array(value*))
     
     inline def setServerOwned(value: Boolean): Self = StObject.set(x, "serverOwned", value.asInstanceOf[js.Any])
     
     inline def setSourceDefinitions(value: js.Array[TaskSourceDefinition]): Self = StObject.set(x, "sourceDefinitions", value.asInstanceOf[js.Any])
     
-    inline def setSourceDefinitionsVarargs(value: TaskSourceDefinition*): Self = StObject.set(x, "sourceDefinitions", js.Array(value :_*))
+    inline def setSourceDefinitionsVarargs(value: TaskSourceDefinition*): Self = StObject.set(x, "sourceDefinitions", js.Array(value*))
     
     inline def setSourceLocation(value: String): Self = StObject.set(x, "sourceLocation", value.asInstanceOf[js.Any])
     
@@ -189,6 +189,6 @@ object TaskDefinition {
     
     inline def setVisibility(value: js.Array[String]): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
-    inline def setVisibilityVarargs(value: String*): Self = StObject.set(x, "visibility", js.Array(value :_*))
+    inline def setVisibilityVarargs(value: String*): Self = StObject.set(x, "visibility", js.Array(value*))
   }
 }

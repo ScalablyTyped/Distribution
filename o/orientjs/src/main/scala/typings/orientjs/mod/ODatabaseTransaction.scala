@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("orientjs", "ODatabaseTransaction")
 @js.native
-class ODatabaseTransaction () extends StObject {
+open class ODatabaseTransaction () extends StObject {
   
   /**
     * Execute an SQL command against the database and retreive the results
@@ -15,13 +15,13 @@ class ODatabaseTransaction () extends StObject {
     * @return           The results of the command
     */
   def command[R](command: String): OResult[R] = js.native
-  def command[R](command: String, options: js.Any): OResult[R] = js.native
+  def command[R](command: String, options: Any): OResult[R] = js.native
   
   /**
     * Commit the transaction.
     * @return The results of the transaction.
     */
-  def commit(changes: js.Any): js.Promise[js.Any] = js.native
+  def commit(changes: Any): js.Promise[Any] = js.native
   
   /**
     * Rollbacks the transaction.

@@ -1,6 +1,7 @@
 package typings.sharedb
 
 import typings.sharedb.mod.middleware.SnapshotType
+import typings.sharedb.sharedbMod.ConnectionState
 import typings.sharedb.sharedbMod.DocEvent
 import typings.sharedb.sharedbMod.OTType
 import typings.sharedb.sharedbMod.QueryEvent
@@ -12,8 +13,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object sharedbStrings {
   
   @js.native
+  sealed trait ListenerSignature extends StObject
+  inline def ListenerSignature: ListenerSignature = "ListenerSignature".asInstanceOf[ListenerSignature]
+  
+  @js.native
   sealed trait afterSubmit extends StObject
   inline def afterSubmit: afterSubmit = "afterSubmit".asInstanceOf[afterSubmit]
+  
+  @js.native
+  sealed trait afterWrite extends StObject
+  inline def afterWrite: afterWrite = "afterWrite".asInstanceOf[afterWrite]
   
   @js.native
   sealed trait apply extends StObject
@@ -24,6 +33,12 @@ object sharedbStrings {
     extends StObject
        with DocEvent
   inline def `before op`: `before op` = ("before op").asInstanceOf[`before op`]
+  
+  @js.native
+  sealed trait `before op batch`
+    extends StObject
+       with DocEvent
+  inline def `before op batch`: `before op batch` = ("before op batch").asInstanceOf[`before op batch`]
   
   @js.native
   sealed trait bf
@@ -62,8 +77,10 @@ object sharedbStrings {
   inline def changed: changed = "changed".asInstanceOf[changed]
   
   @js.native
-  sealed trait close extends StObject
-  inline def close: close = "close".asInstanceOf[close]
+  sealed trait closed
+    extends StObject
+       with ConnectionState
+  inline def closed: closed = "closed".asInstanceOf[closed]
   
   @js.native
   sealed trait commit extends StObject
@@ -72,6 +89,18 @@ object sharedbStrings {
   @js.native
   sealed trait connect extends StObject
   inline def connect: connect = "connect".asInstanceOf[connect]
+  
+  @js.native
+  sealed trait connected
+    extends StObject
+       with ConnectionState
+  inline def connected: connected = "connected".asInstanceOf[connected]
+  
+  @js.native
+  sealed trait connecting
+    extends StObject
+       with ConnectionState
+  inline def connecting: connecting = "connecting".asInstanceOf[connecting]
   
   @js.native
   sealed trait create
@@ -96,16 +125,20 @@ object sharedbStrings {
   inline def del: del = "del".asInstanceOf[del]
   
   @js.native
+  sealed trait destroy
+    extends StObject
+       with DocEvent
+  inline def destroy: destroy = "destroy".asInstanceOf[destroy]
+  
+  @js.native
+  sealed trait disconnected
+    extends StObject
+       with ConnectionState
+  inline def disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
+  
+  @js.native
   sealed trait doc extends StObject
   inline def doc: doc = "doc".asInstanceOf[doc]
-  
-  @js.native
-  sealed trait drain extends StObject
-  inline def drain: drain = "drain".asInstanceOf[drain]
-  
-  @js.native
-  sealed trait end extends StObject
-  inline def end: end = "end".asInstanceOf[end]
   
   @js.native
   sealed trait error
@@ -125,10 +158,6 @@ object sharedbStrings {
     extends StObject
        with RequestAction
   inline def f: f = "f".asInstanceOf[f]
-  
-  @js.native
-  sealed trait finish extends StObject
-  inline def finish: finish = "finish".asInstanceOf[finish]
   
   @js.native
   sealed trait insert
@@ -184,6 +213,12 @@ object sharedbStrings {
   inline def op: op = "op".asInstanceOf[op]
   
   @js.native
+  sealed trait `op batch`
+    extends StObject
+       with DocEvent
+  inline def `op batch`: `op batch` = ("op batch").asInstanceOf[`op batch`]
+  
+  @js.native
   sealed trait `ot-json0`
     extends StObject
        with OTType
@@ -208,12 +243,8 @@ object sharedbStrings {
   inline def `ot-text-tp2`: `ot-text-tp2` = "ot-text-tp2".asInstanceOf[`ot-text-tp2`]
   
   @js.native
-  sealed trait pause extends StObject
-  inline def pause: pause = "pause".asInstanceOf[pause]
-  
-  @js.native
-  sealed trait pipe extends StObject
-  inline def pipe: pipe = "pipe".asInstanceOf[pipe]
+  sealed trait p extends StObject
+  inline def p: p = "p".asInstanceOf[p]
   
   @js.native
   sealed trait qf
@@ -242,10 +273,6 @@ object sharedbStrings {
   inline def readSnapshots: readSnapshots = "readSnapshots".asInstanceOf[readSnapshots]
   
   @js.native
-  sealed trait readable extends StObject
-  inline def readable: readable = "readable".asInstanceOf[readable]
-  
-  @js.native
   sealed trait ready
     extends StObject
        with QueryEvent
@@ -256,6 +283,10 @@ object sharedbStrings {
   inline def receive: receive = "receive".asInstanceOf[receive]
   
   @js.native
+  sealed trait receivePresence extends StObject
+  inline def receivePresence: receivePresence = "receivePresence".asInstanceOf[receivePresence]
+  
+  @js.native
   sealed trait remove
     extends StObject
        with QueryEvent
@@ -264,10 +295,6 @@ object sharedbStrings {
   @js.native
   sealed trait reply extends StObject
   inline def reply: reply = "reply".asInstanceOf[reply]
-  
-  @js.native
-  sealed trait resume extends StObject
-  inline def resume: resume = "resume".asInstanceOf[resume]
   
   @js.native
   sealed trait `rich-text`
@@ -286,8 +313,34 @@ object sharedbStrings {
   inline def s: s = "s".asInstanceOf[s]
   
   @js.native
+  sealed trait send extends StObject
+  inline def send: send = "send".asInstanceOf[send]
+  
+  @js.native
+  sealed trait sendPresence extends StObject
+  inline def sendPresence: sendPresence = "sendPresence".asInstanceOf[sendPresence]
+  
+  @js.native
+  sealed trait stopped
+    extends StObject
+       with ConnectionState
+  inline def stopped: stopped = "stopped".asInstanceOf[stopped]
+  
+  @js.native
   sealed trait submit extends StObject
   inline def submit: submit = "submit".asInstanceOf[submit]
+  
+  @js.native
+  sealed trait submitRequestEnd extends StObject
+  inline def submitRequestEnd: submitRequestEnd = "submitRequestEnd".asInstanceOf[submitRequestEnd]
+  
+  @js.native
+  sealed trait timing extends StObject
+  inline def timing: timing = "timing".asInstanceOf[timing]
+  
+  @js.native
+  sealed trait `type` extends StObject
+  inline def `type`: `type` = "type".asInstanceOf[`type`]
   
   @js.native
   sealed trait u
@@ -296,6 +349,6 @@ object sharedbStrings {
   inline def u: u = "u".asInstanceOf[u]
   
   @js.native
-  sealed trait unpipe extends StObject
-  inline def unpipe: unpipe = "unpipe".asInstanceOf[unpipe]
+  sealed trait v extends StObject
+  inline def v: v = "v".asInstanceOf[v]
 }

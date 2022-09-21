@@ -44,7 +44,7 @@ object XCustomShapeEngine {
     getInteraction: () => SafeArray[XCustomShapeHandle],
     getLineGeometry: () => PolyPolygonBezierCoords,
     getTextBounds: () => Rectangle,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     render: () => XShape
   ): XCustomShapeEngine = {

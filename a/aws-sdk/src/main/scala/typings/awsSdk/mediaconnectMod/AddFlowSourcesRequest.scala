@@ -29,6 +29,6 @@ object AddFlowSourcesRequest {
     
     inline def setSources(value: listOfSetSourceRequest): Self = StObject.set(x, "Sources", value.asInstanceOf[js.Any])
     
-    inline def setSourcesVarargs(value: SetSourceRequest*): Self = StObject.set(x, "Sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: SetSourceRequest*): Self = StObject.set(x, "Sources", js.Array(value*))
   }
 }

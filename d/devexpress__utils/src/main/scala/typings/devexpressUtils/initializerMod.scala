@@ -16,7 +16,7 @@ object initializerMod {
   
   @JSImport("@devexpress/utils/lib/class/initializer", "Initializer")
   @js.native
-  class Initializer () extends StObject {
+  open class Initializer () extends StObject {
     
     def set[TProp /* <: Exclude[/* keyof this */ String, typings.devexpressUtils.devexpressUtilsStrings.set] */](
       property: TProp,

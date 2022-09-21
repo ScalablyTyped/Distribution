@@ -78,11 +78,11 @@ object mod {
       * explains what's wrong, eg. 'this is a top-10 common password'.
       * not always set -- sometimes an empty string
       */
-    var warning: String
+    var warning: ZXCVBNFeedbackWarning
   }
   object ZXCVBNFeedback {
     
-    inline def apply(suggestions: js.Array[String], warning: String): ZXCVBNFeedback = {
+    inline def apply(suggestions: js.Array[String], warning: ZXCVBNFeedbackWarning): ZXCVBNFeedback = {
       val __obj = js.Dynamic.literal(suggestions = suggestions.asInstanceOf[js.Any], warning = warning.asInstanceOf[js.Any])
       __obj.asInstanceOf[ZXCVBNFeedback]
     }
@@ -91,10 +91,64 @@ object mod {
       
       inline def setSuggestions(value: js.Array[String]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
       
-      inline def setSuggestionsVarargs(value: String*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
+      inline def setSuggestionsVarargs(value: String*): Self = StObject.set(x, "suggestions", js.Array(value*))
       
-      inline def setWarning(value: String): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+      inline def setWarning(value: ZXCVBNFeedbackWarning): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.zxcvbn.zxcvbnStrings.`Straight rows of keys are easy to guess`
+    - typings.zxcvbn.zxcvbnStrings.`Short keyboard patterns are easy to guess`
+    - typings.zxcvbn.zxcvbnStrings.`Use a longer keyboard pattern with more turns`
+    - typings.zxcvbn.zxcvbnStrings.`Repeats like QuotationmarkaaaQuotationmark are easy to guess`
+    - typings.zxcvbn.zxcvbnStrings.`Repeats like QuotationmarkabcabcabcQuotationmark are only slightly harder to guess than QuotationmarkabcQuotationmark`
+    - typings.zxcvbn.zxcvbnStrings.`Sequences like abc or 6543 are easy to guess`
+    - typings.zxcvbn.zxcvbnStrings.`Recent years are easy to guess`
+    - typings.zxcvbn.zxcvbnStrings.`Dates are often easy to guess`
+    - typings.zxcvbn.zxcvbnStrings.`This is a top-10 common password`
+    - typings.zxcvbn.zxcvbnStrings.`This is a top-100 common password`
+    - typings.zxcvbn.zxcvbnStrings.`This is a very common password`
+    - typings.zxcvbn.zxcvbnStrings.`This is similar to a commonly used password`
+    - typings.zxcvbn.zxcvbnStrings.`A word by itself is easy to guess`
+    - typings.zxcvbn.zxcvbnStrings.`Names and surnames by themselves are easy to guess`
+    - typings.zxcvbn.zxcvbnStrings.`Common names and surnames are easy to guess`
+    - typings.zxcvbn.zxcvbnStrings._empty
+  */
+  trait ZXCVBNFeedbackWarning extends StObject
+  object ZXCVBNFeedbackWarning {
+    
+    inline def `A word by itself is easy to guess`: typings.zxcvbn.zxcvbnStrings.`A word by itself is easy to guess` = ("A word by itself is easy to guess").asInstanceOf[typings.zxcvbn.zxcvbnStrings.`A word by itself is easy to guess`]
+    
+    inline def `Common names and surnames are easy to guess`: typings.zxcvbn.zxcvbnStrings.`Common names and surnames are easy to guess` = ("Common names and surnames are easy to guess").asInstanceOf[typings.zxcvbn.zxcvbnStrings.`Common names and surnames are easy to guess`]
+    
+    inline def `Dates are often easy to guess`: typings.zxcvbn.zxcvbnStrings.`Dates are often easy to guess` = ("Dates are often easy to guess").asInstanceOf[typings.zxcvbn.zxcvbnStrings.`Dates are often easy to guess`]
+    
+    inline def `Names and surnames by themselves are easy to guess`: typings.zxcvbn.zxcvbnStrings.`Names and surnames by themselves are easy to guess` = ("Names and surnames by themselves are easy to guess").asInstanceOf[typings.zxcvbn.zxcvbnStrings.`Names and surnames by themselves are easy to guess`]
+    
+    inline def `Recent years are easy to guess`: typings.zxcvbn.zxcvbnStrings.`Recent years are easy to guess` = ("Recent years are easy to guess").asInstanceOf[typings.zxcvbn.zxcvbnStrings.`Recent years are easy to guess`]
+    
+    inline def `Repeats like QuotationmarkaaaQuotationmark are easy to guess`: typings.zxcvbn.zxcvbnStrings.`Repeats like QuotationmarkaaaQuotationmark are easy to guess` = ("Repeats like \"aaa\" are easy to guess").asInstanceOf[typings.zxcvbn.zxcvbnStrings.`Repeats like QuotationmarkaaaQuotationmark are easy to guess`]
+    
+    inline def `Repeats like QuotationmarkabcabcabcQuotationmark are only slightly harder to guess than QuotationmarkabcQuotationmark`: typings.zxcvbn.zxcvbnStrings.`Repeats like QuotationmarkabcabcabcQuotationmark are only slightly harder to guess than QuotationmarkabcQuotationmark` = ("Repeats like \"abcabcabc\" are only slightly harder to guess than \"abc\"").asInstanceOf[typings.zxcvbn.zxcvbnStrings.`Repeats like QuotationmarkabcabcabcQuotationmark are only slightly harder to guess than QuotationmarkabcQuotationmark`]
+    
+    inline def `Sequences like abc or 6543 are easy to guess`: typings.zxcvbn.zxcvbnStrings.`Sequences like abc or 6543 are easy to guess` = ("Sequences like abc or 6543 are easy to guess").asInstanceOf[typings.zxcvbn.zxcvbnStrings.`Sequences like abc or 6543 are easy to guess`]
+    
+    inline def `Short keyboard patterns are easy to guess`: typings.zxcvbn.zxcvbnStrings.`Short keyboard patterns are easy to guess` = ("Short keyboard patterns are easy to guess").asInstanceOf[typings.zxcvbn.zxcvbnStrings.`Short keyboard patterns are easy to guess`]
+    
+    inline def `Straight rows of keys are easy to guess`: typings.zxcvbn.zxcvbnStrings.`Straight rows of keys are easy to guess` = ("Straight rows of keys are easy to guess").asInstanceOf[typings.zxcvbn.zxcvbnStrings.`Straight rows of keys are easy to guess`]
+    
+    inline def `This is a top-10 common password`: typings.zxcvbn.zxcvbnStrings.`This is a top-10 common password` = ("This is a top-10 common password").asInstanceOf[typings.zxcvbn.zxcvbnStrings.`This is a top-10 common password`]
+    
+    inline def `This is a top-100 common password`: typings.zxcvbn.zxcvbnStrings.`This is a top-100 common password` = ("This is a top-100 common password").asInstanceOf[typings.zxcvbn.zxcvbnStrings.`This is a top-100 common password`]
+    
+    inline def `This is a very common password`: typings.zxcvbn.zxcvbnStrings.`This is a very common password` = ("This is a very common password").asInstanceOf[typings.zxcvbn.zxcvbnStrings.`This is a very common password`]
+    
+    inline def `This is similar to a commonly used password`: typings.zxcvbn.zxcvbnStrings.`This is similar to a commonly used password` = ("This is similar to a commonly used password").asInstanceOf[typings.zxcvbn.zxcvbnStrings.`This is similar to a commonly used password`]
+    
+    inline def `Use a longer keyboard pattern with more turns`: typings.zxcvbn.zxcvbnStrings.`Use a longer keyboard pattern with more turns` = ("Use a longer keyboard pattern with more turns").asInstanceOf[typings.zxcvbn.zxcvbnStrings.`Use a longer keyboard pattern with more turns`]
+    
+    inline def _empty: typings.zxcvbn.zxcvbnStrings._empty = "".asInstanceOf[typings.zxcvbn.zxcvbnStrings._empty]
   }
   
   trait ZXCVBNResult extends StObject {
@@ -183,7 +237,7 @@ object mod {
       
       inline def setSequence(value: js.Array[ZXCVBNSequence]): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
       
-      inline def setSequenceVarargs(value: ZXCVBNSequence*): Self = StObject.set(x, "sequence", js.Array(value :_*))
+      inline def setSequenceVarargs(value: ZXCVBNSequence*): Self = StObject.set(x, "sequence", js.Array(value*))
     }
   }
   

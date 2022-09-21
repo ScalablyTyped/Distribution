@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.cytoscape.cytoscapeStrings.vee
   - typings.cytoscape.cytoscapeStrings.triangle
   - typings.cytoscape.cytoscapeStrings.`triangle-tee`
+  - typings.cytoscape.cytoscapeStrings.`circle-triangle`
   - typings.cytoscape.cytoscapeStrings.`triangle-cross`
   - typings.cytoscape.cytoscapeStrings.`triangle-backcurve`
   - typings.cytoscape.cytoscapeStrings.square
@@ -23,6 +24,8 @@ object ArrowShape {
   inline def chevron: typings.cytoscape.cytoscapeStrings.chevron = "chevron".asInstanceOf[typings.cytoscape.cytoscapeStrings.chevron]
   
   inline def circle: typings.cytoscape.cytoscapeStrings.circle = "circle".asInstanceOf[typings.cytoscape.cytoscapeStrings.circle]
+  
+  inline def `circle-triangle`: typings.cytoscape.cytoscapeStrings.`circle-triangle` = "circle-triangle".asInstanceOf[typings.cytoscape.cytoscapeStrings.`circle-triangle`]
   
   inline def diamond: typings.cytoscape.cytoscapeStrings.diamond = "diamond".asInstanceOf[typings.cytoscape.cytoscapeStrings.diamond]
   

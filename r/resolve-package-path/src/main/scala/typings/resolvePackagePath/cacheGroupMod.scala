@@ -11,7 +11,7 @@ object cacheGroupMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("resolve-package-path/lib/cache-group", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with MODULEENTRY {
     

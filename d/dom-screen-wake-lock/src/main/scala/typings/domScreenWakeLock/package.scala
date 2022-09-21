@@ -1,8 +1,9 @@
 package typings.domScreenWakeLock
 
+import typings.domScreenWakeLock.domScreenWakeLockStrings.screen
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type WakeLockType = typings.domScreenWakeLock.domScreenWakeLockStrings.screen
+type WakeLockType = screen

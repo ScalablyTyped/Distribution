@@ -132,7 +132,7 @@ object FieldPropertyMetadata {
       
       inline def setTargets(value: js.Array[String]): Self = StObject.set(x, "Targets", value.asInstanceOf[js.Any])
       
-      inline def setTargetsVarargs(value: String*): Self = StObject.set(x, "Targets", js.Array(value :_*))
+      inline def setTargetsVarargs(value: String*): Self = StObject.set(x, "Targets", js.Array(value*))
     }
   }
   
@@ -247,7 +247,7 @@ object FieldPropertyMetadata {
       
       inline def setOptions(value: js.Array[OptionMetadata]): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
       
-      inline def setOptionsVarargs(value: OptionMetadata*): Self = StObject.set(x, "Options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: OptionMetadata*): Self = StObject.set(x, "Options", js.Array(value*))
     }
   }
   

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "it-parallel" : "2.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "it-parallel" : "2.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

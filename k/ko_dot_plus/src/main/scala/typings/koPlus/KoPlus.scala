@@ -17,31 +17,31 @@ object KoPlus {
     
     def always(callback: js.Function): Command = js.native
     
-    var canExecute: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutComputed<boolean> */ js.Any = js.native
+    var canExecute: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutComputed<boolean> */ Any = js.native
     
-    var completed: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any = js.native
+    var completed: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ Any = js.native
     
     //
     // functions
     // see https://github.com/stevegreatrex/ko.plus#functions
     //
-    def done(callback: js.Function1[/* data */ js.Any, Unit]): Command = js.native
+    def done(callback: js.Function1[/* data */ Any, Unit]): Command = js.native
     
     def fail(
       callback: js.Function3[
-          /* response */ js.Any, 
+          /* response */ Any, 
           /* status */ js.UndefOr[String], 
           /* statusText */ js.UndefOr[String], 
           Unit
         ]
     ): Command = js.native
     
-    var failed: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any = js.native
+    var failed: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ Any = js.native
     
     //
     // properties: https://github.com/stevegreatrex/ko.plus#properties
     //
-    var isRunning: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any = js.native
+    var isRunning: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ Any = js.native
     
     def `then`(resolve: js.Function, reject: js.Function): Command = js.native
   }
@@ -55,7 +55,7 @@ object KoPlus {
     var canExecute: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     // [optional] context to use in the command
-    var context: js.UndefOr[js.Any] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
   }
   object CommandOptions {
     
@@ -72,7 +72,7 @@ object KoPlus {
       
       inline def setCanExecuteUndefined: Self = StObject.set(x, "canExecute", js.undefined)
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     }
@@ -88,7 +88,7 @@ object KoPlus {
       beginEdit: () => Unit,
       cancelEdit: () => Unit,
       endEdit: () => Unit,
-      isEditing: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any,
+      isEditing: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ Any,
       rollback: () => Unit
     ): Editable[T] = {
       val __obj = js.Dynamic.literal(beginEdit = js.Any.fromFunction0(beginEdit), cancelEdit = js.Any.fromFunction0(cancelEdit), endEdit = js.Any.fromFunction0(endEdit), isEditing = isEditing.asInstanceOf[js.Any], rollback = js.Any.fromFunction0(rollback))
@@ -106,11 +106,11 @@ object KoPlus {
       beginEdit: () => Unit,
       cancelEdit: () => Unit,
       endEdit: () => Unit,
-      isEditing: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any,
+      isEditing: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ Any,
       rollback: () => Unit,
       setSourceKey: String => Unit,
-      sortDescending: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any,
-      sortKey: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<string> */ js.Any
+      sortDescending: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ Any,
+      sortKey: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<string> */ Any
     ): EditableArray[T] = {
       val __obj = js.Dynamic.literal(beginEdit = js.Any.fromFunction0(beginEdit), cancelEdit = js.Any.fromFunction0(cancelEdit), endEdit = js.Any.fromFunction0(endEdit), isEditing = isEditing.asInstanceOf[js.Any], rollback = js.Any.fromFunction0(rollback), setSourceKey = js.Any.fromFunction1(setSourceKey), sortDescending = sortDescending.asInstanceOf[js.Any], sortKey = sortKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[EditableArray[T]]
@@ -124,7 +124,7 @@ object KoPlus {
     def apply[T](): EditableArray[T] = js.native
     def apply[T](value: js.Array[T]): EditableArray[T] = js.native
     
-    def makeEditable(target: js.Any): Unit = js.native
+    def makeEditable(target: Any): Unit = js.native
   }
   
   trait EditableFunctions extends StObject {
@@ -135,7 +135,7 @@ object KoPlus {
     
     def endEdit(): Unit
     
-    var isEditing: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any
+    var isEditing: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ Any
     
     def rollback(): Unit
   }
@@ -145,7 +145,7 @@ object KoPlus {
       beginEdit: () => Unit,
       cancelEdit: () => Unit,
       endEdit: () => Unit,
-      isEditing: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any,
+      isEditing: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ Any,
       rollback: () => Unit
     ): EditableFunctions = {
       val __obj = js.Dynamic.literal(beginEdit = js.Any.fromFunction0(beginEdit), cancelEdit = js.Any.fromFunction0(cancelEdit), endEdit = js.Any.fromFunction0(endEdit), isEditing = isEditing.asInstanceOf[js.Any], rollback = js.Any.fromFunction0(rollback))
@@ -161,7 +161,7 @@ object KoPlus {
       inline def setEndEdit(value: () => Unit): Self = StObject.set(x, "endEdit", js.Any.fromFunction0(value))
       
       inline def setIsEditing(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ Any
       ): Self = StObject.set(x, "isEditing", value.asInstanceOf[js.Any])
       
       inline def setRollback(value: () => Unit): Self = StObject.set(x, "rollback", js.Any.fromFunction0(value))
@@ -175,6 +175,6 @@ object KoPlus {
     def apply[T](): Editable[T] = js.native
     def apply[T](value: T): Editable[T] = js.native
     
-    def makeEditable(target: js.Any): Unit = js.native
+    def makeEditable(target: Any): Unit = js.native
   }
 }

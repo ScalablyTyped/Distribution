@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("matter", "MouseConstraint")
 @js.native
-class MouseConstraint ()
+open class MouseConstraint ()
   extends StObject
      with typings.phaser.MatterJS.MouseConstraint {
   

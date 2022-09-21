@@ -15,19 +15,19 @@ trait BackupConfiguration extends StObject {
   /** Whether this configuration is enabled. */
   var enabled: js.UndefOr[Boolean] = js.undefined
   
-  /** This is always *sql#backupConfiguration*. */
+  /** This is always `sql#backupConfiguration`. */
   var kind: js.UndefOr[String] = js.undefined
   
   /** Location of the backup */
   var location: js.UndefOr[String] = js.undefined
   
-  /** Reserved for future use. */
+  /** (Postgres only) Whether point in time recovery is enabled. */
   var pointInTimeRecoveryEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Reserved for future use. */
   var replicationLogArchivingEnabled: js.UndefOr[Boolean] = js.undefined
   
-  /** Start time for the daily backup configuration in UTC timezone in the 24 hour format - *HH:MM*. */
+  /** Start time for the daily backup configuration in UTC timezone in the 24 hour format - `HH:MM`. */
   var startTime: js.UndefOr[String] = js.undefined
   
   /** The number of days of transaction logs we retain for point in time restore, from 1-7. */

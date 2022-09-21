@@ -11,7 +11,7 @@ trait IResizable
      with IObservable {
   
   /** [Config Option] (Ext.Element/Ext.util.Region) */
-  var constrainTo: js.UndefOr[js.Any] = js.undefined
+  var constrainTo: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Boolean) */
   var dynamic: js.UndefOr[Boolean] = js.undefined
@@ -27,7 +27,7 @@ trait IResizable
   /** [Method] Returns the element or component that was configured with the target config property
     * @returns Ext.Element/Ext.Component
     */
-  var getTarget: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getTarget: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Config Option] (String) */
   var handles: js.UndefOr[java.lang.String] = js.undefined
@@ -51,7 +51,7 @@ trait IResizable
   var minWidth: js.UndefOr[Double] = js.undefined
   
   /** [Property] (Ext.Element/Ext.Component) */
-  var originalTarget: js.UndefOr[js.Any] = js.undefined
+  var originalTarget: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Boolean) */
   var pinned: js.UndefOr[Boolean] = js.undefined
@@ -71,7 +71,7 @@ trait IResizable
   var resizeTracker: js.UndefOr[IResizeTracker] = js.undefined
   
   /** [Config Option] (Ext.Element/Ext.Component) */
-  var target: js.UndefOr[js.Any] = js.undefined
+  var target: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Boolean) */
   var transparent: js.UndefOr[Boolean] = js.undefined
@@ -91,7 +91,7 @@ object IResizable {
   
   extension [Self <: IResizable](x: Self) {
     
-    inline def setConstrainTo(value: js.Any): Self = StObject.set(x, "constrainTo", value.asInstanceOf[js.Any])
+    inline def setConstrainTo(value: Any): Self = StObject.set(x, "constrainTo", value.asInstanceOf[js.Any])
     
     inline def setConstrainToUndefined: Self = StObject.set(x, "constrainTo", js.undefined)
     
@@ -107,7 +107,7 @@ object IResizable {
     
     inline def setGetElUndefined: Self = StObject.set(x, "getEl", js.undefined)
     
-    inline def setGetTarget(value: () => js.Any): Self = StObject.set(x, "getTarget", js.Any.fromFunction0(value))
+    inline def setGetTarget(value: () => Any): Self = StObject.set(x, "getTarget", js.Any.fromFunction0(value))
     
     inline def setGetTargetUndefined: Self = StObject.set(x, "getTarget", js.undefined)
     
@@ -139,7 +139,7 @@ object IResizable {
     
     inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
-    inline def setOriginalTarget(value: js.Any): Self = StObject.set(x, "originalTarget", value.asInstanceOf[js.Any])
+    inline def setOriginalTarget(value: Any): Self = StObject.set(x, "originalTarget", value.asInstanceOf[js.Any])
     
     inline def setOriginalTargetUndefined: Self = StObject.set(x, "originalTarget", js.undefined)
     
@@ -159,7 +159,7 @@ object IResizable {
     
     inline def setResizeTrackerUndefined: Self = StObject.set(x, "resizeTracker", js.undefined)
     
-    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     

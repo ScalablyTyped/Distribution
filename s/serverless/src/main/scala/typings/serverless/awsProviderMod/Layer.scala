@@ -33,13 +33,13 @@ object Layer {
     
     inline def setAllowedAccountsUndefined: Self = StObject.set(x, "allowedAccounts", js.undefined)
     
-    inline def setAllowedAccountsVarargs(value: String*): Self = StObject.set(x, "allowedAccounts", js.Array(value :_*))
+    inline def setAllowedAccountsVarargs(value: String*): Self = StObject.set(x, "allowedAccounts", js.Array(value*))
     
     inline def setCompatibleRuntimes(value: js.Array[String]): Self = StObject.set(x, "compatibleRuntimes", value.asInstanceOf[js.Any])
     
     inline def setCompatibleRuntimesUndefined: Self = StObject.set(x, "compatibleRuntimes", js.undefined)
     
-    inline def setCompatibleRuntimesVarargs(value: String*): Self = StObject.set(x, "compatibleRuntimes", js.Array(value :_*))
+    inline def setCompatibleRuntimesVarargs(value: String*): Self = StObject.set(x, "compatibleRuntimes", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

@@ -22,6 +22,6 @@ object DescribeSuggestersResponse {
     
     inline def setSuggesters(value: SuggesterStatusList): Self = StObject.set(x, "Suggesters", value.asInstanceOf[js.Any])
     
-    inline def setSuggestersVarargs(value: SuggesterStatus*): Self = StObject.set(x, "Suggesters", js.Array(value :_*))
+    inline def setSuggestersVarargs(value: SuggesterStatus*): Self = StObject.set(x, "Suggesters", js.Array(value*))
   }
 }

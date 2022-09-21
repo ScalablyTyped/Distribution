@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Outline")
 @js.native
-/* private */ class Outline ()
+/* private */ open class Outline ()
   extends StObject
      with typings.activexExcel.Excel.Outline

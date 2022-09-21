@@ -23,7 +23,7 @@ trait ClassHeapGraphNode
     * @readonly
     * @type NArray
     */
-  var childs: js.Array[js.Any] = js.native
+  var childs: js.Array[Any] = js.native
   
   /**
     * class prop 

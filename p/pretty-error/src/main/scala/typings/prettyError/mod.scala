@@ -1,6 +1,5 @@
 package typings.prettyError
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ object mod {
   
   @JSImport("pretty-error", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with PrettyError
   @JSImport("pretty-error", JSImport.Namespace)
@@ -18,34 +17,15 @@ object mod {
   
   @JSImport("pretty-error", "ParsedError")
   @js.native
-  class ParsedError protected () extends StObject {
-    def this(error: Error) = this()
+  open class ParsedError protected () extends StObject {
+    def this(error: js.Error) = this()
   }
   
-  inline def start(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("start")().asInstanceOf[js.Any]
+  inline def start(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("start")().asInstanceOf[Any]
   
-  inline def stop(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")().asInstanceOf[js.Any]
+  inline def stop(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")().asInstanceOf[Any]
   
-  trait Callback extends StObject {
-    
-    var lineNumber: Double
-    
-    var traceLine: js.Object | js.Any
-  }
-  object Callback {
-    
-    inline def apply(lineNumber: Double, traceLine: js.Object | js.Any): Callback = {
-      val __obj = js.Dynamic.literal(lineNumber = lineNumber.asInstanceOf[js.Any], traceLine = traceLine.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Callback]
-    }
-    
-    extension [Self <: Callback](x: Self) {
-      
-      inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
-      
-      inline def setTraceLine(value: js.Object | js.Any): Self = StObject.set(x, "traceLine", value.asInstanceOf[js.Any])
-    }
-  }
+  type Callback = js.Function2[/* traceLine */ js.Object | Any, /* lineNumber */ Double, Boolean]
   
   trait ConfigObject extends StObject {
     
@@ -60,7 +40,7 @@ object mod {
     
     var skip: js.UndefOr[Boolean | Callback | js.Array[Callback]] = js.undefined
     
-    var skipNodeFiles: js.UndefOr[Boolean | js.Any] = js.undefined
+    var skipNodeFiles: js.UndefOr[Boolean | Any] = js.undefined
     
     var skipPackages: js.UndefOr[Boolean | js.Array[String]] = js.undefined
     
@@ -81,9 +61,11 @@ object mod {
       
       inline def setFilters(value: Boolean | Callback | js.Array[Callback]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
+      inline def setFiltersFunction2(value: (/* traceLine */ js.Object | Any, /* lineNumber */ Double) => Boolean): Self = StObject.set(x, "filters", js.Any.fromFunction2(value))
+      
       inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      inline def setFiltersVarargs(value: Callback*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: Callback*): Self = StObject.set(x, "filters", js.Array(value*))
       
       inline def setMaxItems(value: Double): Self = StObject.set(x, "maxItems", value.asInstanceOf[js.Any])
       
@@ -91,13 +73,17 @@ object mod {
       
       inline def setParsedErrorFilters(value: Boolean | Callback | js.Array[Callback]): Self = StObject.set(x, "parsedErrorFilters", value.asInstanceOf[js.Any])
       
+      inline def setParsedErrorFiltersFunction2(value: (/* traceLine */ js.Object | Any, /* lineNumber */ Double) => Boolean): Self = StObject.set(x, "parsedErrorFilters", js.Any.fromFunction2(value))
+      
       inline def setParsedErrorFiltersUndefined: Self = StObject.set(x, "parsedErrorFilters", js.undefined)
       
-      inline def setParsedErrorFiltersVarargs(value: Callback*): Self = StObject.set(x, "parsedErrorFilters", js.Array(value :_*))
+      inline def setParsedErrorFiltersVarargs(value: Callback*): Self = StObject.set(x, "parsedErrorFilters", js.Array(value*))
       
       inline def setSkip(value: Boolean | Callback | js.Array[Callback]): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
       
-      inline def setSkipNodeFiles(value: Boolean | js.Any): Self = StObject.set(x, "skipNodeFiles", value.asInstanceOf[js.Any])
+      inline def setSkipFunction2(value: (/* traceLine */ js.Object | Any, /* lineNumber */ Double) => Boolean): Self = StObject.set(x, "skip", js.Any.fromFunction2(value))
+      
+      inline def setSkipNodeFiles(value: Boolean | Any): Self = StObject.set(x, "skipNodeFiles", value.asInstanceOf[js.Any])
       
       inline def setSkipNodeFilesUndefined: Self = StObject.set(x, "skipNodeFiles", js.undefined)
       
@@ -105,17 +91,17 @@ object mod {
       
       inline def setSkipPackagesUndefined: Self = StObject.set(x, "skipPackages", js.undefined)
       
-      inline def setSkipPackagesVarargs(value: String*): Self = StObject.set(x, "skipPackages", js.Array(value :_*))
+      inline def setSkipPackagesVarargs(value: String*): Self = StObject.set(x, "skipPackages", js.Array(value*))
       
       inline def setSkipPaths(value: Boolean | js.Array[String]): Self = StObject.set(x, "skipPaths", value.asInstanceOf[js.Any])
       
       inline def setSkipPathsUndefined: Self = StObject.set(x, "skipPaths", js.undefined)
       
-      inline def setSkipPathsVarargs(value: String*): Self = StObject.set(x, "skipPaths", js.Array(value :_*))
+      inline def setSkipPathsVarargs(value: String*): Self = StObject.set(x, "skipPaths", js.Array(value*))
       
       inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
       
-      inline def setSkipVarargs(value: Callback*): Self = StObject.set(x, "skip", js.Array(value :_*))
+      inline def setSkipVarargs(value: Callback*): Self = StObject.set(x, "skip", js.Array(value*))
     }
   }
   
@@ -155,7 +141,7 @@ object mod {
     
     def skip(callbacks: Callback): PrettyError = js.native
     
-    def skipNodeFiles(): js.Any = js.native
+    def skipNodeFiles(): Any = js.native
     
     def skipPackage(packages: String*): PrettyError = js.native
     
@@ -163,7 +149,7 @@ object mod {
     
     def start(): PrettyError = js.native
     
-    def stop(): js.Any = js.native
+    def stop(): Any = js.native
     
     def unskip(callbacks: Callback): PrettyError = js.native
     
@@ -173,7 +159,7 @@ object mod {
     
     def unskipAllPaths(): PrettyError = js.native
     
-    def unskipNodeFiles(): js.Any = js.native
+    def unskipNodeFiles(): Any = js.native
     
     def unskipPackage(packages: String*): PrettyError = js.native
     

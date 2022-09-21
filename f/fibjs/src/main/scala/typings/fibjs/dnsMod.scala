@@ -17,5 +17,5 @@ object dnsMod {
   
   inline def lookup(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def resolve(name: String): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(name.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def resolve(name: String): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(name.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
 }

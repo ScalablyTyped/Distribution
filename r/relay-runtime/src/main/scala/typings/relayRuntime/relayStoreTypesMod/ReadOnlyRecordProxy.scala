@@ -19,6 +19,6 @@ trait ReadOnlyRecordProxy extends StObject {
   
   def getType(): String = js.native
   
-  def getValue(name: String): js.Any = js.native
-  def getValue(name: String, args: Variables): js.Any = js.native
+  def getValue(name: String): Any = js.native
+  def getValue(name: String, args: Variables): Any = js.native
 }

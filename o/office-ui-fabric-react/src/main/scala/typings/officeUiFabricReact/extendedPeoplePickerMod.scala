@@ -13,13 +13,13 @@ object extendedPeoplePickerMod {
   
   @JSImport("office-ui-fabric-react/lib/components/ExtendedPicker/PeoplePicker/ExtendedPeoplePicker", "BaseExtendedPeoplePicker")
   @js.native
-  class BaseExtendedPeoplePicker protected () extends BaseExtendedPicker[IPersonaProps, IExtendedPeoplePickerProps] {
+  open class BaseExtendedPeoplePicker protected () extends BaseExtendedPicker[IPersonaProps, IExtendedPeoplePickerProps] {
     def this(basePickerProps: IExtendedPeoplePickerProps) = this()
   }
   
   @JSImport("office-ui-fabric-react/lib/components/ExtendedPicker/PeoplePicker/ExtendedPeoplePicker", "ExtendedPeoplePicker")
   @js.native
-  class ExtendedPeoplePicker protected () extends BaseExtendedPeoplePicker {
+  open class ExtendedPeoplePicker protected () extends BaseExtendedPeoplePicker {
     def this(basePickerProps: IExtendedPeoplePickerProps) = this()
   }
   

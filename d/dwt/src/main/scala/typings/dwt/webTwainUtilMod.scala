@@ -13,7 +13,7 @@ object webTwainUtilMod {
     /**
       * Details of the authorization.
       */
-    var Detail: js.Any
+    var Detail: Any
     
     /**
       * The domain bound in the product key.
@@ -22,14 +22,14 @@ object webTwainUtilMod {
   }
   object Authorization {
     
-    inline def apply(Detail: js.Any, Domain: String): Authorization = {
+    inline def apply(Detail: Any, Domain: String): Authorization = {
       val __obj = js.Dynamic.literal(Detail = Detail.asInstanceOf[js.Any], Domain = Domain.asInstanceOf[js.Any])
       __obj.asInstanceOf[Authorization]
     }
     
     extension [Self <: Authorization](x: Self) {
       
-      inline def setDetail(value: js.Any): Self = StObject.set(x, "Detail", value.asInstanceOf[js.Any])
+      inline def setDetail(value: Any): Self = StObject.set(x, "Detail", value.asInstanceOf[js.Any])
       
       inline def setDomain(value: String): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
     }
@@ -111,7 +111,7 @@ object webTwainUtilMod {
       * @param name Specify the event
       * @param callback The event listener
       */
-    def RegisterEvent(name: String, callback: js.Function1[/* repeated */ js.Any, Unit]): Boolean = js.native
+    def RegisterEvent(name: String, callback: js.Function1[/* repeated */ Any, Unit]): Boolean = js.native
     
     def SetLanguage(language: Double): Boolean = js.native
     /**

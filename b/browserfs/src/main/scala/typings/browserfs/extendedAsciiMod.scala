@@ -1,6 +1,6 @@
 package typings.browserfs
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ object extendedAsciiMod {
   
   @JSImport("browserfs/dist/node/generic/extended_ascii", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with ExtendedASCII
   /* static members */
@@ -25,8 +25,8 @@ object extendedAsciiMod {
     
     @JSImport("browserfs/dist/node/generic/extended_ascii", "default.extendedChars")
     @js.native
-    def extendedChars: js.Any = js.native
-    inline def extendedChars_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extendedChars")(x.asInstanceOf[js.Any])
+    def extendedChars: Any = js.native
+    inline def extendedChars_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extendedChars")(x.asInstanceOf[js.Any])
     
     inline def str2byte(str: String, buf: Buffer): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("str2byte")(str.asInstanceOf[js.Any], buf.asInstanceOf[js.Any])).asInstanceOf[Double]
   }

@@ -3,7 +3,6 @@ package typings.phaser.global.Phaser.GameObjects
 import typings.phaser.Phaser.Scene
 import typings.phaser.Phaser.Textures.Frame
 import typings.phaser.Phaser.Textures.Texture
-import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Phaser.GameObjects.Image")
 @js.native
-class Image protected ()
+open class Image protected ()
   extends StObject
      with typings.phaser.Phaser.GameObjects.Image {
   /**
@@ -32,9 +31,9 @@ class Image protected ()
   def this(scene: Scene, x: Double, y: Double, texture: String) = this()
   def this(scene: Scene, x: Double, y: Double, texture: Texture) = this()
   def this(scene: Scene, x: Double, y: Double, texture: String, frame: String) = this()
-  def this(scene: Scene, x: Double, y: Double, texture: String, frame: integer) = this()
+  def this(scene: Scene, x: Double, y: Double, texture: String, frame: Double) = this()
   def this(scene: Scene, x: Double, y: Double, texture: Texture, frame: String) = this()
-  def this(scene: Scene, x: Double, y: Double, texture: Texture, frame: integer) = this()
+  def this(scene: Scene, x: Double, y: Double, texture: Texture, frame: Double) = this()
   
   /**
     * The depth of this Game Object within the Scene.
@@ -119,7 +118,7 @@ class Image protected ()
     * @param value The depth of this Game Object.
     */
   /* CompleteClass */
-  override def setDepth(value: integer): this.type = js.native
+  override def setDepth(value: Double): this.type = js.native
   
   /**
     * Sets the display size of this Game Object.

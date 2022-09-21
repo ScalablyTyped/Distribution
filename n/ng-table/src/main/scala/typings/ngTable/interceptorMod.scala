@@ -9,9 +9,9 @@ object interceptorMod {
   
   trait IInterceptor[T] extends StObject {
     
-    var response: js.UndefOr[js.Function2[/* data */ js.Any, /* params */ NgTableParams[T], js.Any]] = js.undefined
+    var response: js.UndefOr[js.Function2[/* data */ Any, /* params */ NgTableParams[T], Any]] = js.undefined
     
-    var responseError: js.UndefOr[js.Function2[/* reason */ js.Any, /* params */ NgTableParams[T], js.Any]] = js.undefined
+    var responseError: js.UndefOr[js.Function2[/* reason */ Any, /* params */ NgTableParams[T], Any]] = js.undefined
   }
   object IInterceptor {
     
@@ -22,9 +22,9 @@ object interceptorMod {
     
     extension [Self <: IInterceptor[?], T](x: Self & IInterceptor[T]) {
       
-      inline def setResponse(value: (/* data */ js.Any, /* params */ NgTableParams[T]) => js.Any): Self = StObject.set(x, "response", js.Any.fromFunction2(value))
+      inline def setResponse(value: (/* data */ Any, /* params */ NgTableParams[T]) => Any): Self = StObject.set(x, "response", js.Any.fromFunction2(value))
       
-      inline def setResponseError(value: (/* reason */ js.Any, /* params */ NgTableParams[T]) => js.Any): Self = StObject.set(x, "responseError", js.Any.fromFunction2(value))
+      inline def setResponseError(value: (/* reason */ Any, /* params */ NgTableParams[T]) => Any): Self = StObject.set(x, "responseError", js.Any.fromFunction2(value))
       
       inline def setResponseErrorUndefined: Self = StObject.set(x, "responseError", js.undefined)
       

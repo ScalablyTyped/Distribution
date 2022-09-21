@@ -1,5 +1,6 @@
 package typings.vimeo
 
+import typings.std.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ object mod {
   
   @JSImport("vimeo", "Vimeo")
   @js.native
-  class Vimeo protected () extends StObject {
+  open class Vimeo protected () extends StObject {
     /**
       * This object is used to interface with the Vimeo API.
       *
@@ -74,7 +75,7 @@ object mod {
       *
       * https://developer.vimeo.com/api/reference/videos#create_video_version
       *
-      * @param file              Path to the file you wish to upload.
+      * @param file              Path to the file or File you wish to upload.
       * @param videoUri          Video URI of the video file to replace.
       * @param params            Parameters to send when creating a new video (name,
       *                                      privacy restrictions, etc.). See the API documentation for
@@ -85,6 +86,22 @@ object mod {
       */
     def replace(
       file: String,
+      videoUri: String,
+      params: js.Object,
+      completeCallback: UriCallback,
+      progressCallback: ProgressCallback,
+      errorCallback: ErrorCallback
+    ): Unit = js.native
+    def replace(
+      file: File,
+      videoUri: String,
+      params: js.Object,
+      completeCallback: UriCallback,
+      progressCallback: Unit,
+      errorCallback: ErrorCallback
+    ): Unit = js.native
+    def replace(
+      file: File,
       videoUri: String,
       params: js.Object,
       completeCallback: UriCallback,
@@ -130,20 +147,15 @@ object mod {
       */
     def setAccessToken(accessToken: String): Unit = js.native
     
+    def upload(file: String, completeCallback: UriCallback, progressCallback: Unit, errorCallback: ErrorCallback): Unit = js.native
     def upload(
-      filePath: String,
-      completeCallback: UriCallback,
-      progressCallback: Unit,
-      errorCallback: ErrorCallback
-    ): Unit = js.native
-    def upload(
-      filePath: String,
+      file: String,
       completeCallback: UriCallback,
       progressCallback: ProgressCallback,
       errorCallback: ErrorCallback
     ): Unit = js.native
     def upload(
-      filePath: String,
+      file: String,
       params: js.Object,
       completeCallback: UriCallback,
       progressCallback: Unit,
@@ -157,7 +169,7 @@ object mod {
       *
       * https://developer.vimeo.com/api/reference/videos#upload_video
       *
-      * @param file              Path to the file you wish to upload.
+      * @param file              Path to the file or File you wish to upload.
       * @param params            Parameters to send when creating a new video (name,
       *                                      privacy restrictions, etc.). See the API documentation for
       *                                      supported parameters.
@@ -166,7 +178,28 @@ object mod {
       * @param errorCallback     Callback to be executed when the upload returns an error.
       */
     def upload(
-      filePath: String,
+      file: String,
+      params: js.Object,
+      completeCallback: UriCallback,
+      progressCallback: ProgressCallback,
+      errorCallback: ErrorCallback
+    ): Unit = js.native
+    def upload(file: File, completeCallback: UriCallback, progressCallback: Unit, errorCallback: ErrorCallback): Unit = js.native
+    def upload(
+      file: File,
+      completeCallback: UriCallback,
+      progressCallback: ProgressCallback,
+      errorCallback: ErrorCallback
+    ): Unit = js.native
+    def upload(
+      file: File,
+      params: js.Object,
+      completeCallback: UriCallback,
+      progressCallback: Unit,
+      errorCallback: ErrorCallback
+    ): Unit = js.native
+    def upload(
+      file: File,
       params: js.Object,
       completeCallback: UriCallback,
       progressCallback: ProgressCallback,
@@ -175,8 +208,8 @@ object mod {
   }
   
   type CompleteCallback = js.Function4[
-    /* err */ js.UndefOr[String], 
-    /* result */ js.Any, 
+    /* err */ js.Error | Null, 
+    /* result */ Any, 
     /* statusCode */ js.UndefOr[Double], 
     /* headers */ js.UndefOr[js.Object], 
     Unit

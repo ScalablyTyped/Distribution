@@ -6,12 +6,12 @@ import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.ElementType
+import typings.react.mod.FC
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.ReactNodeArray
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticCOLORS
 import typings.semanticUiReact.genericMod.SemanticSIZES
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
@@ -39,10 +39,9 @@ object labelLabelMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/elements/Label/Label", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[LabelProps, ComponentState, js.Any] {
+  open class default protected () extends Component[LabelProps, ComponentState, Any] {
     def this(props: LabelProps) = this()
-    def this(props: LabelProps, context: js.Any) = this()
+    def this(props: LabelProps, context: Any) = this()
   }
   @JSImport("semantic-ui-react/dist/commonjs/elements/Label/Label", JSImport.Default)
   @js.native
@@ -53,15 +52,15 @@ object labelLabelMod extends Shortcut {
     extends StObject
        with ComponentClass[LabelProps, ComponentState] {
     
-    var Detail: StatelessComponent[LabelDetailProps] = js.native
+    var Detail: FC[LabelDetailProps] = js.native
     
-    var Group: StatelessComponent[LabelGroupProps] = js.native
+    var Group: FC[LabelGroupProps] = js.native
   }
   
   trait LabelProps
     extends StObject
        with StrictLabelProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object LabelProps {
     
     inline def apply(): LabelProps = {
@@ -76,7 +75,7 @@ object labelLabelMod extends Shortcut {
     var active: js.UndefOr[Boolean] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** A label can attach to a content segment. */
     var attached: js.UndefOr[top | bottom | (`top right`) | (`top left`) | (`bottom left`) | (`bottom right`)] = js.undefined
@@ -106,7 +105,7 @@ object labelLabelMod extends Shortcut {
     var detail: js.UndefOr[SemanticShorthandItem[LabelDetailProps]] = js.undefined
     
     /** Formats the label as a dot. */
-    var empty: js.UndefOr[js.Any] = js.undefined
+    var empty: js.UndefOr[Any] = js.undefined
     
     /** Float above another element in the upper right corner. */
     var floating: js.UndefOr[Boolean] = js.undefined
@@ -118,7 +117,7 @@ object labelLabelMod extends Shortcut {
     var icon: js.UndefOr[SemanticShorthandItem[IconProps]] = js.undefined
     
     /** A label can be formatted to emphasize an image or prop can be used as shorthand for Image. */
-    var image: js.UndefOr[js.Any] = js.undefined
+    var image: js.UndefOr[Any] = js.undefined
     
     /**
       * Called on click.
@@ -171,7 +170,7 @@ object labelLabelMod extends Shortcut {
       
       inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -215,7 +214,7 @@ object labelLabelMod extends Shortcut {
       
       inline def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
       
-      inline def setEmpty(value: js.Any): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
+      inline def setEmpty(value: Any): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
       
       inline def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
       
@@ -235,7 +234,7 @@ object labelLabelMod extends Shortcut {
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      inline def setImage(value: js.Any): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: Any): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
       inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
       

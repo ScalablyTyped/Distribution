@@ -37,7 +37,7 @@ object ModeSwitchConfig {
     
     inline def setItems(value: js.Array[ModeSwitchItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: ModeSwitchItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ModeSwitchItem*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setPreventclose(value: Boolean): Self = StObject.set(x, "preventclose", value.asInstanceOf[js.Any])
     

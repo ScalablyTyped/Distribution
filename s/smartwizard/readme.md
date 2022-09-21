@@ -1,19 +1,19 @@
 
 # Scala.js typings for smartwizard
 
-Typings are for version 4.3
+Typings are for version 5.0
 
 ## Library description:
-The awesome jQuery step wizard plugin
+The awesome step wizard plugin for jQuery
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | smartwizard |
 | Keywords           | jQuery, Wizard, Tabs, Steps, Bootstrap, Plugin, Step, ui, jquery-plugin, Tabs |
-| # releases         | 5 |
-| # dependents       | 0 |
-| # downloads        | 132788 |
-| # stars            | 2 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 20468.666666666668 |
+| # stars            | 709.0 |
 
 ## Links
 - [Homepage](http://techlaboratory.net/jquery-smartwizard)

@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Allowed values for priority in ResultsCachePolicy Used for querying both
-  * cache and execution valid priority ranges.
-  */
 trait SchemaBuildBazelRemoteExecutionV2PriorityCapabilities extends StObject {
   
   var priorities: js.UndefOr[js.Array[SchemaBuildBazelRemoteExecutionV2PriorityCapabilitiesPriorityRange]] = js.undefined
@@ -25,6 +21,6 @@ object SchemaBuildBazelRemoteExecutionV2PriorityCapabilities {
     
     inline def setPrioritiesUndefined: Self = StObject.set(x, "priorities", js.undefined)
     
-    inline def setPrioritiesVarargs(value: SchemaBuildBazelRemoteExecutionV2PriorityCapabilitiesPriorityRange*): Self = StObject.set(x, "priorities", js.Array(value :_*))
+    inline def setPrioritiesVarargs(value: SchemaBuildBazelRemoteExecutionV2PriorityCapabilitiesPriorityRange*): Self = StObject.set(x, "priorities", js.Array(value*))
   }
 }

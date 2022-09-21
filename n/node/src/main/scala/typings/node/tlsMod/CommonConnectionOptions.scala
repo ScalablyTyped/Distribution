@@ -1,7 +1,5 @@
 package typings.node.tlsMod
 
-import typings.std.Error
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +10,7 @@ trait CommonConnectionOptions extends StObject {
     * An array of strings or a Buffer naming possible ALPN protocols.
     * (Protocols should be ordered by their priority.)
     */
-  var ALPNProtocols: js.UndefOr[(js.Array[String | Uint8Array]) | Uint8Array] = js.undefined
+  var ALPNProtocols: js.UndefOr[(js.Array[String | js.typedarray.Uint8Array]) | js.typedarray.Uint8Array] = js.undefined
   
   /**
     * SNICallback(servername, cb) <Function> A function that will be
@@ -26,7 +24,7 @@ trait CommonConnectionOptions extends StObject {
   var SNICallback: js.UndefOr[
     js.Function2[
       /* servername */ String, 
-      /* cb */ js.Function2[/* err */ Error | Null, /* ctx */ SecureContext, Unit], 
+      /* cb */ js.Function2[/* err */ js.Error | Null, /* ctx */ js.UndefOr[SecureContext], Unit], 
       Unit
     ]
   ] = js.undefined
@@ -67,11 +65,11 @@ object CommonConnectionOptions {
   
   extension [Self <: CommonConnectionOptions](x: Self) {
     
-    inline def setALPNProtocols(value: (js.Array[String | Uint8Array]) | Uint8Array): Self = StObject.set(x, "ALPNProtocols", value.asInstanceOf[js.Any])
+    inline def setALPNProtocols(value: (js.Array[String | js.typedarray.Uint8Array]) | js.typedarray.Uint8Array): Self = StObject.set(x, "ALPNProtocols", value.asInstanceOf[js.Any])
     
     inline def setALPNProtocolsUndefined: Self = StObject.set(x, "ALPNProtocols", js.undefined)
     
-    inline def setALPNProtocolsVarargs(value: (String | Uint8Array)*): Self = StObject.set(x, "ALPNProtocols", js.Array(value :_*))
+    inline def setALPNProtocolsVarargs(value: (String | js.typedarray.Uint8Array)*): Self = StObject.set(x, "ALPNProtocols", js.Array(value*))
     
     inline def setEnableTrace(value: Boolean): Self = StObject.set(x, "enableTrace", value.asInstanceOf[js.Any])
     
@@ -86,7 +84,7 @@ object CommonConnectionOptions {
     inline def setRequestCertUndefined: Self = StObject.set(x, "requestCert", js.undefined)
     
     inline def setSNICallback(
-      value: (/* servername */ String, /* cb */ js.Function2[/* err */ Error | Null, /* ctx */ SecureContext, Unit]) => Unit
+      value: (/* servername */ String, /* cb */ js.Function2[/* err */ js.Error | Null, /* ctx */ js.UndefOr[SecureContext], Unit]) => Unit
     ): Self = StObject.set(x, "SNICallback", js.Any.fromFunction2(value))
     
     inline def setSNICallbackUndefined: Self = StObject.set(x, "SNICallback", js.undefined)

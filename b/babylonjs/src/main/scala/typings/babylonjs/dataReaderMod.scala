@@ -1,7 +1,5 @@
 package typings.babylonjs
 
-import typings.std.ArrayBufferView
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,16 +8,16 @@ object dataReaderMod {
   
   @JSImport("babylonjs/Misc/dataReader", "DataReader")
   @js.native
-  class DataReader protected () extends StObject {
+  open class DataReader protected () extends StObject {
     /**
       * Constructor
       * @param buffer The buffer to read
       */
     def this(buffer: IDataBuffer) = this()
     
-    /* private */ var _dataByteOffset: js.Any = js.native
+    /* private */ var _dataByteOffset: Any = js.native
     
-    /* private */ var _dataView: js.Any = js.native
+    /* private */ var _dataView: Any = js.native
     
     /**
       * The data buffer associated with this data reader.
@@ -56,7 +54,7 @@ object dataReaderMod {
       * @param byteLength The byte length to read
       * @returns The byte array read
       */
-    def readUint8Array(byteLength: Double): Uint8Array = js.native
+    def readUint8Array(byteLength: Double): js.typedarray.Uint8Array = js.native
     
     /**
       * Skips the given byte length the currently loaded data range.
@@ -78,11 +76,11 @@ object dataReaderMod {
       * @param byteLength The byte length to read
       * @returns A promise that resolves when the bytes are read
       */
-    def readAsync(byteOffset: Double, byteLength: Double): js.Promise[ArrayBufferView]
+    def readAsync(byteOffset: Double, byteLength: Double): js.Promise[js.typedarray.ArrayBufferView]
   }
   object IDataBuffer {
     
-    inline def apply(byteLength: Double, readAsync: (Double, Double) => js.Promise[ArrayBufferView]): IDataBuffer = {
+    inline def apply(byteLength: Double, readAsync: (Double, Double) => js.Promise[js.typedarray.ArrayBufferView]): IDataBuffer = {
       val __obj = js.Dynamic.literal(byteLength = byteLength.asInstanceOf[js.Any], readAsync = js.Any.fromFunction2(readAsync))
       __obj.asInstanceOf[IDataBuffer]
     }
@@ -91,7 +89,7 @@ object dataReaderMod {
       
       inline def setByteLength(value: Double): Self = StObject.set(x, "byteLength", value.asInstanceOf[js.Any])
       
-      inline def setReadAsync(value: (Double, Double) => js.Promise[ArrayBufferView]): Self = StObject.set(x, "readAsync", js.Any.fromFunction2(value))
+      inline def setReadAsync(value: (Double, Double) => js.Promise[js.typedarray.ArrayBufferView]): Self = StObject.set(x, "readAsync", js.Any.fromFunction2(value))
     }
   }
 }

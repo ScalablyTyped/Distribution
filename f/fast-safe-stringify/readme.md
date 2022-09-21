@@ -1,7 +1,7 @@
 
 # Scala.js typings for fast-safe-stringify
 
-Typings are for version 2.0.7
+Typings are for version 2.1.1
 
 ## Library description:
 Safely and quickly serialize JavaScript objects
@@ -10,10 +10,10 @@ Safely and quickly serialize JavaScript objects
 | ------------------ | :-------------: |
 | Full name          | fast-safe-stringify |
 | Keywords           | stable, stringify, JSON, JSON.stringify, safe, serialize |
-| # releases         | 2 |
-| # dependents       | 325 |
-| # downloads        | 228739020 |
-| # stars            | 5 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 4.067012E7 |
+| # stars            | 307.0 |
 
 ## Links
 - [Homepage](https://github.com/davidmarkclements/fast-safe-stringify#readme)

@@ -25,7 +25,7 @@ trait ConnectParams extends StObject {
   
   var overlays: js.UndefOr[js.Array[OverlaySpec]] = js.undefined
   
-  var parameters: js.UndefOr[Record[String, js.Any]] = js.undefined
+  var parameters: js.UndefOr[Record[String, Any]] = js.undefined
   
   var source: js.UndefOr[ElementRef | Endpoint] = js.undefined
   
@@ -46,7 +46,7 @@ object ConnectParams {
     
     inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
     
-    inline def setAnchorVarargs(value: (AnchorStaticSpec | AnchorDynamicId | AnchorPerimeterSpec | AnchorContinuousSpec)*): Self = StObject.set(x, "anchor", js.Array(value :_*))
+    inline def setAnchorVarargs(value: (AnchorStaticSpec | AnchorDynamicId | AnchorPerimeterSpec | AnchorContinuousSpec)*): Self = StObject.set(x, "anchor", js.Array(value*))
     
     inline def setAnchors(value: js.Tuple2[AnchorSpec, AnchorSpec]): Self = StObject.set(x, "anchors", value.asInstanceOf[js.Any])
     
@@ -80,9 +80,9 @@ object ConnectParams {
     
     inline def setOverlaysUndefined: Self = StObject.set(x, "overlays", js.undefined)
     
-    inline def setOverlaysVarargs(value: OverlaySpec*): Self = StObject.set(x, "overlays", js.Array(value :_*))
+    inline def setOverlaysVarargs(value: OverlaySpec*): Self = StObject.set(x, "overlays", js.Array(value*))
     
-    inline def setParameters(value: Record[String, js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: Record[String, Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     

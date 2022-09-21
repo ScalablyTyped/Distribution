@@ -17,7 +17,12 @@ object portalRatingMod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/portal/PortalRating", JSImport.Namespace)
   @js.native
-  class Class ()
+  /**
+    * PortalRating provides details about the rating associated with a [Portal item](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalRating.html)
+    */
+  open class Class ()
     extends StObject
        with PortalRating {
     def this(properties: PortalRatingProperties) = this()

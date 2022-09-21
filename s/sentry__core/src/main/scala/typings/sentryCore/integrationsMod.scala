@@ -7,43 +7,43 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object integrationsMod {
   
-  @JSImport("@sentry/core/dist/integrations", "FunctionToString")
+  @JSImport("@sentry/core/types/integrations", "FunctionToString")
   @js.native
-  class FunctionToString ()
+  open class FunctionToString ()
     extends typings.sentryCore.functiontostringMod.FunctionToString
   /* static members */
   object FunctionToString {
     
-    @JSImport("@sentry/core/dist/integrations", "FunctionToString")
+    @JSImport("@sentry/core/types/integrations", "FunctionToString")
     @js.native
     val ^ : js.Any = js.native
     
     /**
       * @inheritDoc
       */
-    @JSImport("@sentry/core/dist/integrations", "FunctionToString.id")
+    @JSImport("@sentry/core/types/integrations", "FunctionToString.id")
     @js.native
     def id: String = js.native
     inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@sentry/core/dist/integrations", "InboundFilters")
+  @JSImport("@sentry/core/types/integrations", "InboundFilters")
   @js.native
-  class InboundFilters ()
+  open class InboundFilters ()
     extends typings.sentryCore.inboundfiltersMod.InboundFilters {
     def this(_options: PartialInboundFiltersOpti) = this()
   }
   /* static members */
   object InboundFilters {
     
-    @JSImport("@sentry/core/dist/integrations", "InboundFilters")
+    @JSImport("@sentry/core/types/integrations", "InboundFilters")
     @js.native
     val ^ : js.Any = js.native
     
     /**
       * @inheritDoc
       */
-    @JSImport("@sentry/core/dist/integrations", "InboundFilters.id")
+    @JSImport("@sentry/core/types/integrations", "InboundFilters.id")
     @js.native
     def id: String = js.native
     inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])

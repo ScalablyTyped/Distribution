@@ -9,7 +9,7 @@ object gamepadMod {
   
   @JSImport("babylonjs/Gamepads/gamepad", "Gamepad")
   @js.native
-  class Gamepad protected () extends StObject {
+  open class Gamepad protected () extends StObject {
     /**
       * Initializes the gamepad
       * @param id The id of the gamepad
@@ -32,7 +32,7 @@ object gamepadMod {
       /**
       * The browser gamepad
       */
-    browserGamepad: js.Any
+    browserGamepad: Any
     ) = this()
     def this(
       /**
@@ -46,7 +46,7 @@ object gamepadMod {
       /**
       * The browser gamepad
       */
-    browserGamepad: js.Any,
+    browserGamepad: Any,
       leftStickX: Double
     ) = this()
     def this(
@@ -61,7 +61,7 @@ object gamepadMod {
       /**
       * The browser gamepad
       */
-    browserGamepad: js.Any,
+    browserGamepad: Any,
       leftStickX: Double,
       leftStickY: Double
     ) = this()
@@ -77,7 +77,7 @@ object gamepadMod {
       /**
       * The browser gamepad
       */
-    browserGamepad: js.Any,
+    browserGamepad: Any,
       leftStickX: Unit,
       leftStickY: Double
     ) = this()
@@ -93,7 +93,7 @@ object gamepadMod {
       /**
       * The browser gamepad
       */
-    browserGamepad: js.Any,
+    browserGamepad: Any,
       leftStickX: Double,
       leftStickY: Double,
       rightStickX: Double
@@ -110,7 +110,7 @@ object gamepadMod {
       /**
       * The browser gamepad
       */
-    browserGamepad: js.Any,
+    browserGamepad: Any,
       leftStickX: Double,
       leftStickY: Unit,
       rightStickX: Double
@@ -127,7 +127,7 @@ object gamepadMod {
       /**
       * The browser gamepad
       */
-    browserGamepad: js.Any,
+    browserGamepad: Any,
       leftStickX: Unit,
       leftStickY: Double,
       rightStickX: Double
@@ -144,7 +144,7 @@ object gamepadMod {
       /**
       * The browser gamepad
       */
-    browserGamepad: js.Any,
+    browserGamepad: Any,
       leftStickX: Unit,
       leftStickY: Unit,
       rightStickX: Double
@@ -161,7 +161,7 @@ object gamepadMod {
       /**
       * The browser gamepad
       */
-    browserGamepad: js.Any,
+    browserGamepad: Any,
       leftStickX: Double,
       leftStickY: Double,
       rightStickX: Double,
@@ -179,7 +179,7 @@ object gamepadMod {
       /**
       * The browser gamepad
       */
-    browserGamepad: js.Any,
+    browserGamepad: Any,
       leftStickX: Double,
       leftStickY: Double,
       rightStickX: Unit,
@@ -197,7 +197,7 @@ object gamepadMod {
       /**
       * The browser gamepad
       */
-    browserGamepad: js.Any,
+    browserGamepad: Any,
       leftStickX: Double,
       leftStickY: Unit,
       rightStickX: Double,
@@ -215,7 +215,7 @@ object gamepadMod {
       /**
       * The browser gamepad
       */
-    browserGamepad: js.Any,
+    browserGamepad: Any,
       leftStickX: Double,
       leftStickY: Unit,
       rightStickX: Unit,
@@ -233,7 +233,7 @@ object gamepadMod {
       /**
       * The browser gamepad
       */
-    browserGamepad: js.Any,
+    browserGamepad: Any,
       leftStickX: Unit,
       leftStickY: Double,
       rightStickX: Double,
@@ -251,7 +251,7 @@ object gamepadMod {
       /**
       * The browser gamepad
       */
-    browserGamepad: js.Any,
+    browserGamepad: Any,
       leftStickX: Unit,
       leftStickY: Double,
       rightStickX: Unit,
@@ -269,7 +269,7 @@ object gamepadMod {
       /**
       * The browser gamepad
       */
-    browserGamepad: js.Any,
+    browserGamepad: Any,
       leftStickX: Unit,
       leftStickY: Unit,
       rightStickX: Double,
@@ -287,7 +287,7 @@ object gamepadMod {
       /**
       * The browser gamepad
       */
-    browserGamepad: js.Any,
+    browserGamepad: Any,
       leftStickX: Unit,
       leftStickY: Unit,
       rightStickX: Unit,
@@ -302,32 +302,32 @@ object gamepadMod {
     /** @hidden */
     var _isConnected: Boolean = js.native
     
-    /* private */ var _leftStick: js.Any = js.native
+    /* private */ var _leftStick: Any = js.native
     
-    /* private */ var _leftStickAxisX: js.Any = js.native
+    /* private */ var _leftStickAxisX: Any = js.native
     
-    /* private */ var _leftStickAxisY: js.Any = js.native
+    /* private */ var _leftStickAxisY: Any = js.native
     
     /**
       * Triggered when the left control stick has been changed
       */
-    /* private */ var _onleftstickchanged: js.Any = js.native
+    /* private */ var _onleftstickchanged: Any = js.native
     
     /**
       * Triggered when the right control stick has been changed
       */
-    /* private */ var _onrightstickchanged: js.Any = js.native
+    /* private */ var _onrightstickchanged: Any = js.native
     
-    /* private */ var _rightStick: js.Any = js.native
+    /* private */ var _rightStick: Any = js.native
     
-    /* private */ var _rightStickAxisX: js.Any = js.native
+    /* private */ var _rightStickAxisX: Any = js.native
     
-    /* private */ var _rightStickAxisY: js.Any = js.native
+    /* private */ var _rightStickAxisY: Any = js.native
     
     /**
       * The browser gamepad
       */
-    var browserGamepad: js.Any = js.native
+    var browserGamepad: Any = js.native
     
     /**
       * Disposes the gamepad
@@ -439,7 +439,7 @@ object gamepadMod {
   
   @JSImport("babylonjs/Gamepads/gamepad", "GenericPad")
   @js.native
-  class GenericPad protected ()
+  open class GenericPad protected ()
     extends typings.babylonjs.gamepadMod.Gamepad {
     /**
       * Initializes the generic gamepad
@@ -447,15 +447,15 @@ object gamepadMod {
       * @param index The index of the generic gamepad
       * @param browserGamepad The browser gamepad
       */
-    def this(id: String, index: Double, browserGamepad: js.Any) = this()
+    def this(id: String, index: Double, browserGamepad: Any) = this()
     
-    /* private */ var _buttons: js.Any = js.native
+    /* private */ var _buttons: Any = js.native
     
-    /* private */ var _onbuttondown: js.Any = js.native
+    /* private */ var _onbuttondown: Any = js.native
     
-    /* private */ var _onbuttonup: js.Any = js.native
+    /* private */ var _onbuttonup: Any = js.native
     
-    /* private */ var _setButtonValue: js.Any = js.native
+    /* private */ var _setButtonValue: Any = js.native
     
     /**
       * Observable triggered when a button has been pressed
@@ -482,7 +482,7 @@ object gamepadMod {
   
   @JSImport("babylonjs/Gamepads/gamepad", "StickValues")
   @js.native
-  class StickValues protected () extends StObject {
+  open class StickValues protected () extends StObject {
     /**
       * Initializes the gamepad x and y control stick values
       * @param x The x component of the gamepad control stick value

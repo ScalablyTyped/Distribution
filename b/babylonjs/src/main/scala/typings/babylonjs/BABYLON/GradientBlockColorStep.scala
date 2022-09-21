@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait GradientBlockColorStep extends StObject {
   
-  /* private */ var _color: js.Any = js.native
+  /* private */ var _color: Any = js.native
   
-  /* private */ var _step: js.Any = js.native
+  /* private */ var _step: Any = js.native
   
   /**
     * Gets the color associated with this step

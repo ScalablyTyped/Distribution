@@ -1,7 +1,7 @@
 package typings.escpos.anon
 
 import typings.escpos.escposStrings.Acknowledge
-import typings.escpos.escposStrings.Bell
+import typings.escpos.escposStrings.Bel
 import typings.escpos.escposStrings.Endoftext
 import typings.escpos.escposStrings.Endoftransmission
 import typings.escpos.escposStrings.Enquiry
@@ -28,7 +28,7 @@ trait `1` extends StObject {
   
   var `7`: Acknowledge
   
-  var `8`: Bell
+  var `8`: Bel
 }
 object `1` {
   
@@ -61,6 +61,6 @@ object `1` {
     
     inline def set7(value: Acknowledge): Self = StObject.set(x, "7", value.asInstanceOf[js.Any])
     
-    inline def set8(value: Bell): Self = StObject.set(x, "8", value.asInstanceOf[js.Any])
+    inline def set8(value: Bel): Self = StObject.set(x, "8", value.asInstanceOf[js.Any])
   }
 }

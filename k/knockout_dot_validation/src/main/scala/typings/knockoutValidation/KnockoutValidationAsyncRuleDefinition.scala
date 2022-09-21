@@ -10,14 +10,14 @@ trait KnockoutValidationAsyncRuleDefinition
   
   var async: Boolean
   
-  def validator(value: js.Any, params: js.Any, callback: KnockoutValidationAsyncCallback): Unit
+  def validator(value: Any, params: Any, callback: KnockoutValidationAsyncCallback): Unit
 }
 object KnockoutValidationAsyncRuleDefinition {
   
   inline def apply(
     async: Boolean,
     message: String | KnockoutValidationMessageFunction,
-    validator: (js.Any, js.Any, KnockoutValidationAsyncCallback) => Unit
+    validator: (Any, Any, KnockoutValidationAsyncCallback) => Unit
   ): KnockoutValidationAsyncRuleDefinition = {
     val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], validator = js.Any.fromFunction3(validator))
     __obj.asInstanceOf[KnockoutValidationAsyncRuleDefinition]
@@ -27,6 +27,6 @@ object KnockoutValidationAsyncRuleDefinition {
     
     inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
-    inline def setValidator(value: (js.Any, js.Any, KnockoutValidationAsyncCallback) => Unit): Self = StObject.set(x, "validator", js.Any.fromFunction3(value))
+    inline def setValidator(value: (Any, Any, KnockoutValidationAsyncCallback) => Unit): Self = StObject.set(x, "validator", js.Any.fromFunction3(value))
   }
 }

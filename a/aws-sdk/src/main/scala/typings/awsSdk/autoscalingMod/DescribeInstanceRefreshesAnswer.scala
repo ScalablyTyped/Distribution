@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeInstanceRefreshesAnswer extends StObject {
   
   /**
-    * The instance refreshes for the specified group.
+    * The instance refreshes for the specified group, sorted by creation timestamp in descending order.
     */
   var InstanceRefreshes: js.UndefOr[typings.awsSdk.autoscalingMod.InstanceRefreshes] = js.undefined
   
@@ -29,7 +29,7 @@ object DescribeInstanceRefreshesAnswer {
     
     inline def setInstanceRefreshesUndefined: Self = StObject.set(x, "InstanceRefreshes", js.undefined)
     
-    inline def setInstanceRefreshesVarargs(value: InstanceRefresh*): Self = StObject.set(x, "InstanceRefreshes", js.Array(value :_*))
+    inline def setInstanceRefreshesVarargs(value: InstanceRefresh*): Self = StObject.set(x, "InstanceRefreshes", js.Array(value*))
     
     inline def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

@@ -9,17 +9,17 @@ trait TrainingJobSummary extends StObject {
   /**
     * A timestamp that shows when the training job was created.
     */
-  var CreationTime: Timestamp
+  var CreationTime: js.Date
   
   /**
     *  Timestamp when the training job was last modified. 
     */
-  var LastModifiedTime: js.UndefOr[Timestamp] = js.undefined
+  var LastModifiedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A timestamp that shows when the training job ended. This field is set only if the training job has one of the terminal statuses (Completed, Failed, or Stopped). 
     */
-  var TrainingEndTime: js.UndefOr[Timestamp] = js.undefined
+  var TrainingEndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the training job.
@@ -39,7 +39,7 @@ trait TrainingJobSummary extends StObject {
 object TrainingJobSummary {
   
   inline def apply(
-    CreationTime: Timestamp,
+    CreationTime: js.Date,
     TrainingJobArn: TrainingJobArn,
     TrainingJobName: TrainingJobName,
     TrainingJobStatus: TrainingJobStatus
@@ -50,13 +50,13 @@ object TrainingJobSummary {
   
   extension [Self <: TrainingJobSummary](x: Self) {
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    inline def setLastModifiedTime(value: Timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
     
-    inline def setTrainingEndTime(value: Timestamp): Self = StObject.set(x, "TrainingEndTime", value.asInstanceOf[js.Any])
+    inline def setTrainingEndTime(value: js.Date): Self = StObject.set(x, "TrainingEndTime", value.asInstanceOf[js.Any])
     
     inline def setTrainingEndTimeUndefined: Self = StObject.set(x, "TrainingEndTime", js.undefined)
     

@@ -10,13 +10,13 @@ trait ArtyomCommand extends StObject {
   
   var description: js.UndefOr[String] = js.undefined
   
-  var indexes: js.Array[js.Any]
+  var indexes: js.Array[Any]
   
   var smart: js.UndefOr[Boolean] = js.undefined
 }
 object ArtyomCommand {
   
-  inline def apply(action: js.Function, indexes: js.Array[js.Any]): ArtyomCommand = {
+  inline def apply(action: js.Function, indexes: js.Array[Any]): ArtyomCommand = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], indexes = indexes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArtyomCommand]
   }
@@ -29,9 +29,9 @@ object ArtyomCommand {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setIndexes(value: js.Array[js.Any]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
+    inline def setIndexes(value: js.Array[Any]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
     
-    inline def setIndexesVarargs(value: js.Any*): Self = StObject.set(x, "indexes", js.Array(value :_*))
+    inline def setIndexesVarargs(value: Any*): Self = StObject.set(x, "indexes", js.Array(value*))
     
     inline def setSmart(value: Boolean): Self = StObject.set(x, "smart", value.asInstanceOf[js.Any])
     

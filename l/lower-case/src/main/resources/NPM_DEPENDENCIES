@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "lower-case" : "2.0.1"
+      "lower-case" : "2.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "lower-case" : "2.0.1"
+      "lower-case" : "2.0.2"
     }
   ],
   "compile-devDependencies" : [

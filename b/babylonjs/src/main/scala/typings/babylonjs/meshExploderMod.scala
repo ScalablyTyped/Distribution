@@ -9,7 +9,7 @@ object meshExploderMod {
   
   @JSImport("babylonjs/Misc/meshExploder", "MeshExploder")
   @js.native
-  class MeshExploder protected () extends StObject {
+  open class MeshExploder protected () extends StObject {
     /**
       * Explodes meshes from a center mesh.
       * @param meshes The meshes to explode.
@@ -18,21 +18,21 @@ object meshExploderMod {
     def this(meshes: js.Array[Mesh]) = this()
     def this(meshes: js.Array[Mesh], centerMesh: Mesh) = this()
     
-    /* private */ var _centerMesh: js.Any = js.native
+    /* private */ var _centerMesh: Any = js.native
     
-    /* private */ var _centerPosition: js.Any = js.native
+    /* private */ var _centerPosition: Any = js.native
     
-    /* private */ var _meshes: js.Any = js.native
+    /* private */ var _meshes: Any = js.native
     
-    /* private */ var _meshesOrigins: js.Any = js.native
+    /* private */ var _meshesOrigins: Any = js.native
     
-    /* private */ var _newPosition: js.Any = js.native
+    /* private */ var _newPosition: Any = js.native
     
-    /* private */ var _scaledDirection: js.Any = js.native
+    /* private */ var _scaledDirection: Any = js.native
     
-    /* private */ var _setCenterMesh: js.Any = js.native
+    /* private */ var _setCenterMesh: Any = js.native
     
-    /* private */ var _toCenterVectors: js.Any = js.native
+    /* private */ var _toCenterVectors: Any = js.native
     
     /**
       * Explodes meshes giving a specific direction

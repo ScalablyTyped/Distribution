@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait CMRequestInit extends StObject {
   
-  var body: js.UndefOr[js.Any] = js.undefined
+  var body: js.UndefOr[Any] = js.undefined
   
   var cache: js.UndefOr[String] = js.undefined
   
   var credentials: js.UndefOr[PasswordCredential | FederatedCredential | String] = js.undefined
   
-  var headers: js.UndefOr[js.Any] = js.undefined
+  var headers: js.UndefOr[Any] = js.undefined
   
   var integrity: js.UndefOr[String] = js.undefined
   
@@ -33,7 +33,7 @@ trait CMRequestInit extends StObject {
   
   var referrerPolicy: js.UndefOr[String] = js.undefined
   
-  var window: js.UndefOr[js.Any] = js.undefined
+  var window: js.UndefOr[Any] = js.undefined
 }
 object CMRequestInit {
   
@@ -44,7 +44,7 @@ object CMRequestInit {
   
   extension [Self <: CMRequestInit](x: Self) {
     
-    inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
@@ -56,7 +56,7 @@ object CMRequestInit {
     
     inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
     
-    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
@@ -88,7 +88,7 @@ object CMRequestInit {
     
     inline def setReferrerUndefined: Self = StObject.set(x, "referrer", js.undefined)
     
-    inline def setWindow(value: js.Any): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+    inline def setWindow(value: Any): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
     
     inline def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
   }

@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CloudEndpoints extends StObject {
   
   /**
-    * The name of the Cloud Endpoints service underlying this service. Corresponds to the service resource label in the api monitored resource:
-    * https://cloud.google.com/monitoring/api/resources#tag_api
+    * The name of the Cloud Endpoints service underlying this service. Corresponds to the service resource label in the api monitored resource
+    * (https://cloud.google.com/monitoring/api/resources#tag_api).
     */
   var service: js.UndefOr[String] = js.undefined
 }

@@ -9,22 +9,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.Type */
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.S<typedoc.typedoc/dist/lib/models.TypeOperatorType, 'type' | 'operator' | 'target'> */
-trait TypeOperatorType
-  extends StObject
-     with SomeType {
+trait TypeOperatorType extends StObject {
   
-  var operator: (ModelToObject[keyof | unique | readonly]) | keyof | unique | readonly
+  var operator: ToSerialized[keyof | unique | readonly]
   
-  var target: ModelToObject[typings.typedoc.typesAbstractMod.Type] | typings.typedoc.typesAbstractMod.Type
+  var target: ToSerialized[typings.typedoc.modelsTypesMod.SomeType]
   
-  var `type`: (ModelToObject[/* "typeOperator" */ String]) | (/* "typeOperator" */ String)
+  var `type`: ToSerialized[/* "typeOperator" */ String]
 }
 object TypeOperatorType {
   
   inline def apply(
-    operator: (ModelToObject[keyof | unique | readonly]) | keyof | unique | readonly,
-    target: ModelToObject[typings.typedoc.typesAbstractMod.Type] | typings.typedoc.typesAbstractMod.Type,
-    `type`: (ModelToObject[/* "typeOperator" */ String]) | (/* "typeOperator" */ String)
+    operator: ToSerialized[keyof | unique | readonly],
+    target: ToSerialized[typings.typedoc.modelsTypesMod.SomeType],
+    `type`: ToSerialized[/* "typeOperator" */ String]
   ): TypeOperatorType = {
     val __obj = js.Dynamic.literal(operator = operator.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -33,18 +31,16 @@ object TypeOperatorType {
   
   extension [Self <: TypeOperatorType](x: Self) {
     
-    inline def setOperator(value: (ModelToObject[keyof | unique | readonly]) | keyof | unique | readonly): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: ToSerialized[keyof | unique | readonly]): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    inline def setOperatorVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "operator", js.Array(value :_*))
+    inline def setOperatorVarargs(value: _ModelToObject[Any]*): Self = StObject.set(x, "operator", js.Array(value*))
     
-    inline def setTarget(
-      value: ModelToObject[typings.typedoc.typesAbstractMod.Type] | typings.typedoc.typesAbstractMod.Type
-    ): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: ToSerialized[typings.typedoc.modelsTypesMod.SomeType]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    inline def setTargetVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "target", js.Array(value :_*))
+    inline def setTargetVarargs(value: _ModelToObject[Any]*): Self = StObject.set(x, "target", js.Array(value*))
     
-    inline def setType(value: (ModelToObject[/* "typeOperator" */ String]) | (/* "typeOperator" */ String)): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ToSerialized[/* "typeOperator" */ String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: _ModelToObject[Any]*): Self = StObject.set(x, "type", js.Array(value*))
   }
 }

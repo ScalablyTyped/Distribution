@@ -1,7 +1,7 @@
 
 # Scala.js typings for egg-logger
 
-Typings are for version 2.4.2
+Typings are for version 2.9.0
 
 ## Library description:
 egg logger
@@ -10,10 +10,10 @@ egg logger
 | ------------------ | :-------------: |
 | Full name          | egg-logger |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 82 |
-| # downloads        | 1280931 |
-| # stars            | 0 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 202129.33333333334 |
+| # stars            | 139.0 |
 
 ## Links
 - [Homepage](https://github.com/eggjs/egg-logger)

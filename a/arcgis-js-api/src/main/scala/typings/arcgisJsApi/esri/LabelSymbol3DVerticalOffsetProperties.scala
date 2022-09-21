@@ -29,7 +29,7 @@ trait LabelSymbol3DVerticalOffsetProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LabelSymbol3D.html#verticalOffset)
     */
-  var screenLength: js.UndefOr[Double] = js.undefined
+  var screenLength: js.UndefOr[Double | String] = js.undefined
 }
 object LabelSymbol3DVerticalOffsetProperties {
   
@@ -52,7 +52,7 @@ object LabelSymbol3DVerticalOffsetProperties {
     
     inline def setMinWorldLengthUndefined: Self = StObject.set(x, "minWorldLength", js.undefined)
     
-    inline def setScreenLength(value: Double): Self = StObject.set(x, "screenLength", value.asInstanceOf[js.Any])
+    inline def setScreenLength(value: Double | String): Self = StObject.set(x, "screenLength", value.asInstanceOf[js.Any])
     
     inline def setScreenLengthUndefined: Self = StObject.set(x, "screenLength", js.undefined)
   }

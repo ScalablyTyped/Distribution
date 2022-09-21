@@ -1,7 +1,7 @@
 
 # Scala.js typings for chartmogul-node
 
-Typings are for version 1.0
+Typings are for version 2.0
 
 ## Library description:
 Official Chartmogul API Node.js Client
@@ -11,9 +11,9 @@ Official Chartmogul API Node.js Client
 | Full name          | chartmogul-node |
 | Keywords           | chartmogul, api |
 | # releases         | 6 |
-| # dependents       | 0 |
-| # downloads        | 61235 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 7965.0 |
+| # stars            | 21.0 |
 
 ## Links
 - [Homepage](https://github.com/chartmogul/chartmogul-node)

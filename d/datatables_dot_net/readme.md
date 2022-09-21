@@ -4,16 +4,16 @@
 Typings are for version 1.10
 
 ## Library description:
-DataTables for jQuery
+jQuery DataTables
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | datatables.net |
-| Keywords           | filter, sort, DataTables, jQuery, table, DataTables |
-| # releases         | 5 |
-| # dependents       | 141 |
-| # downloads        | 11180356 |
-| # stars            | 7 |
+| Keywords           | Datatables, jQuery, table, filter, sort |
+| # releases         | 13 |
+| # dependents       | 0.0 |
+| # downloads        | 1473990.3333333333 |
+| # stars            | 31.0 |
 
 ## Links
 - [Homepage](https://datatables.net)

@@ -14,8 +14,8 @@ trait KnockoutPostBox extends StObject {
   
   def reset(): Unit = js.native
   
-  def serializer(`object`: js.Any): String = js.native
+  def serializer(`object`: Any): String = js.native
   
-  def subscribe[T](topic: String, handler: js.Function1[/* value */ T, Unit]): js.Any = js.native
-  def subscribe[T](topic: String, handler: js.Function1[/* value */ T, Unit], target: js.Any): js.Any = js.native
+  def subscribe[T](topic: String, handler: js.Function1[/* value */ T, Unit]): Any = js.native
+  def subscribe[T](topic: String, handler: js.Function1[/* value */ T, Unit], target: Any): Any = js.native
 }

@@ -15,7 +15,13 @@ trait Pose extends StObject {
   /** Altitude of the pose in meters above WGS84 ellipsoid. NaN indicates an unmeasured quantity. */
   var altitude: js.UndefOr[Double] = js.undefined
   
-  /** Compass heading, measured at the center of the photo in degrees clockwise from North. Value must be >=0 and <360. NaN indicates an unmeasured quantity. */
+  /** Time of the GPS record since UTC epoch. */
+  var gpsRecordTimestampUnixEpoch: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The following pose parameters pertain to the center of the photo. They match https://developers.google.com/streetview/spherical-metadata. Compass heading, measured at the center of
+    * the photo in degrees clockwise from North. Value must be >=0 and <360. NaN indicates an unmeasured quantity.
+    */
   var heading: js.UndefOr[Double] = js.undefined
   
   /**
@@ -53,6 +59,10 @@ object Pose {
     inline def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
     
     inline def setAltitudeUndefined: Self = StObject.set(x, "altitude", js.undefined)
+    
+    inline def setGpsRecordTimestampUnixEpoch(value: String): Self = StObject.set(x, "gpsRecordTimestampUnixEpoch", value.asInstanceOf[js.Any])
+    
+    inline def setGpsRecordTimestampUnixEpochUndefined: Self = StObject.set(x, "gpsRecordTimestampUnixEpoch", js.undefined)
     
     inline def setHeading(value: Double): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
     

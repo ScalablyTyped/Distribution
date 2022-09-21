@@ -34,6 +34,10 @@ object coinbaseStrings {
   inline def address: address = "address".asInstanceOf[address]
   
   @js.native
+  sealed trait asc extends StObject
+  inline def asc: asc = "asc".asInstanceOf[asc]
+  
+  @js.native
   sealed trait bank_wire
     extends StObject
        with PaymentMethodType
@@ -86,6 +90,10 @@ object coinbaseStrings {
     extends StObject
        with ResourceType
   inline def deposit: deposit = "deposit".asInstanceOf[deposit]
+  
+  @js.native
+  sealed trait desc extends StObject
+  inline def desc: desc = "desc".asInstanceOf[desc]
   
   @js.native
   sealed trait eft_bank_account
@@ -207,6 +215,12 @@ object coinbaseStrings {
     extends StObject
        with PaymentMethodType
   inline def sepa_bank_account: sepa_bank_account = "sepa_bank_account".asInstanceOf[sepa_bank_account]
+  
+  @js.native
+  sealed trait trade
+    extends StObject
+       with TransactionType
+  inline def trade: trade = "trade".asInstanceOf[trade]
   
   @js.native
   sealed trait transaction

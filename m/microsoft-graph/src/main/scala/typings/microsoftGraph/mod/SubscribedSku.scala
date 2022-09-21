@@ -11,7 +11,10 @@ trait SubscribedSku
   // For example, 'User' or 'Company'.
   var appliesTo: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Possible values are: Enabled, Warning, Suspended, Deleted, LockedOut.
+  /**
+    * Possible values are: Enabled, Warning, Suspended, Deleted, LockedOut. The capabilityStatus is Enabled if the
+    * prepaidUnits property has at least 1 unit that is enabled, and LockedOut if the customer cancelled their subscription.
+    */
   var capabilityStatus: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The number of licenses that have been assigned.
@@ -69,7 +72,7 @@ object SubscribedSku {
     
     inline def setServicePlansUndefined: Self = StObject.set(x, "servicePlans", js.undefined)
     
-    inline def setServicePlansVarargs(value: ServicePlanInfo*): Self = StObject.set(x, "servicePlans", js.Array(value :_*))
+    inline def setServicePlansVarargs(value: ServicePlanInfo*): Self = StObject.set(x, "servicePlans", js.Array(value*))
     
     inline def setSkuId(value: NullableOption[String]): Self = StObject.set(x, "skuId", value.asInstanceOf[js.Any])
     

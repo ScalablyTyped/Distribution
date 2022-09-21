@@ -1,17 +1,20 @@
 package typings.reactNativeElements.anon
 
+import typings.reactNativeElements.inputMod.InputProps
+import typings.reactNativeElements.searchBarMod.SearchBarProps
+import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<react-native-elements.react-native-elements.FullTheme> */
+/* Inlined std.Partial<react-native-elements.react-native-elements/dist/config/theme.FullTheme> */
 trait PartialFullTheme extends StObject {
   
-  var Accessory: js.UndefOr[PartialIconPropsPartialIm] = js.undefined
+  var AirbnbRating: js.UndefOr[PartialSwipeRatingProps] = js.undefined
   
-  var AirbnbRating: js.UndefOr[PartialAirbnbRatingProps] = js.undefined
+  var Avatar: js.UndefOr[PartialAvatarPropsActiveOpacity] = js.undefined
   
-  var Avatar: js.UndefOr[PartialAvatarProps] = js.undefined
+  var AvatarAccessory: js.UndefOr[PartialAccessoryProps] = js.undefined
   
   var Badge: js.UndefOr[PartialBadgeProps] = js.undefined
   
@@ -37,15 +40,21 @@ trait PartialFullTheme extends StObject {
   
   var Divider: js.UndefOr[PartialDividerProps] = js.undefined
   
+  var FAB: js.UndefOr[PartialFABProps] = js.undefined
+  
   var Header: js.UndefOr[PartialHeaderProps] = js.undefined
   
   var Icon: js.UndefOr[PartialIconProps] = js.undefined
   
   var Image: js.UndefOr[PartialImageProps] = js.undefined
   
-  var Input: js.UndefOr[PartialInputProps] = js.undefined
+  var Input: js.UndefOr[Partial[InputProps]] = js.undefined
   
-  var ListItem: js.UndefOr[PartialListItemPropsAccessibilityActions] = js.undefined
+  var LinearProgress: js.UndefOr[PartialLinearProgressProp] = js.undefined
+  
+  var ListItem: js.UndefOr[PartialListItemProps] = js.undefined
+  
+  var ListItemAccordion: js.UndefOr[PartialListItemAccordionP] = js.undefined
   
   var ListItemButtonGroup: js.UndefOr[PartialButtonGroupProps] = js.undefined
   
@@ -53,9 +62,9 @@ trait PartialFullTheme extends StObject {
   
   var ListItemChevron: js.UndefOr[PartialIconProps] = js.undefined
   
-  var ListItemContent: js.UndefOr[PartialViewProperties] = js.undefined
+  var ListItemContent: js.UndefOr[PartialViewProps] = js.undefined
   
-  var ListItemInput: js.UndefOr[PartialInputProps] = js.undefined
+  var ListItemInput: js.UndefOr[Partial[InputProps]] = js.undefined
   
   var ListItemSubtitle: js.UndefOr[PartialTextProps] = js.undefined
   
@@ -65,21 +74,35 @@ trait PartialFullTheme extends StObject {
   
   var PricingCard: js.UndefOr[PartialPricingCardProps] = js.undefined
   
-  var Rating: js.UndefOr[PartialRatingProps] = js.undefined
+  var Rating: js.UndefOr[PartialTapRatingProps] = js.undefined
   
-  var SearchBar: js.UndefOr[PartialSearchBarProps] = js.undefined
+  var SearchBar: js.UndefOr[Partial[SearchBarProps]] = js.undefined
   
   var Slider: js.UndefOr[PartialSliderProps] = js.undefined
   
   var SocialIcon: js.UndefOr[PartialSocialIconProps] = js.undefined
   
+  var SpeedDial: js.UndefOr[PartialSpeedDialProps] = js.undefined
+  
+  var SpeedDialAction: js.UndefOr[PartialSpeedDialActionPro] = js.undefined
+  
+  var Switch: js.UndefOr[PartialSwitchProps] = js.undefined
+  
+  var Tab: js.UndefOr[PartialTabProps] = js.undefined
+  
+  var TabItem: js.UndefOr[PartialTabItemProps] = js.undefined
+  
+  var TabView: js.UndefOr[PartialTabViewPropsAnimationConfig] = js.undefined
+  
+  var TabViewItem: js.UndefOr[PartialViewProps] = js.undefined
+  
   var Text: js.UndefOr[PartialTextProps] = js.undefined
   
-  var Tile: js.UndefOr[PartialTileProps] = js.undefined
+  var Tile: js.UndefOr[PartialTilePropsAccessibilityActions] = js.undefined
   
   var Tooltip: js.UndefOr[PartialTooltipProps] = js.undefined
   
-  var colors: js.UndefOr[RecursivePartialColorsDisabled] = js.undefined
+  var colors: js.UndefOr[RecursivePartialColorsBlack] = js.undefined
 }
 object PartialFullTheme {
   
@@ -90,15 +113,15 @@ object PartialFullTheme {
   
   extension [Self <: PartialFullTheme](x: Self) {
     
-    inline def setAccessory(value: PartialIconPropsPartialIm): Self = StObject.set(x, "Accessory", value.asInstanceOf[js.Any])
-    
-    inline def setAccessoryUndefined: Self = StObject.set(x, "Accessory", js.undefined)
-    
-    inline def setAirbnbRating(value: PartialAirbnbRatingProps): Self = StObject.set(x, "AirbnbRating", value.asInstanceOf[js.Any])
+    inline def setAirbnbRating(value: PartialSwipeRatingProps): Self = StObject.set(x, "AirbnbRating", value.asInstanceOf[js.Any])
     
     inline def setAirbnbRatingUndefined: Self = StObject.set(x, "AirbnbRating", js.undefined)
     
-    inline def setAvatar(value: PartialAvatarProps): Self = StObject.set(x, "Avatar", value.asInstanceOf[js.Any])
+    inline def setAvatar(value: PartialAvatarPropsActiveOpacity): Self = StObject.set(x, "Avatar", value.asInstanceOf[js.Any])
+    
+    inline def setAvatarAccessory(value: PartialAccessoryProps): Self = StObject.set(x, "AvatarAccessory", value.asInstanceOf[js.Any])
+    
+    inline def setAvatarAccessoryUndefined: Self = StObject.set(x, "AvatarAccessory", js.undefined)
     
     inline def setAvatarUndefined: Self = StObject.set(x, "Avatar", js.undefined)
     
@@ -146,13 +169,17 @@ object PartialFullTheme {
     
     inline def setCheckBoxUndefined: Self = StObject.set(x, "CheckBox", js.undefined)
     
-    inline def setColors(value: RecursivePartialColorsDisabled): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+    inline def setColors(value: RecursivePartialColorsBlack): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
     inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
     inline def setDivider(value: PartialDividerProps): Self = StObject.set(x, "Divider", value.asInstanceOf[js.Any])
     
     inline def setDividerUndefined: Self = StObject.set(x, "Divider", js.undefined)
+    
+    inline def setFAB(value: PartialFABProps): Self = StObject.set(x, "FAB", value.asInstanceOf[js.Any])
+    
+    inline def setFABUndefined: Self = StObject.set(x, "FAB", js.undefined)
     
     inline def setHeader(value: PartialHeaderProps): Self = StObject.set(x, "Header", value.asInstanceOf[js.Any])
     
@@ -166,11 +193,19 @@ object PartialFullTheme {
     
     inline def setImageUndefined: Self = StObject.set(x, "Image", js.undefined)
     
-    inline def setInput(value: PartialInputProps): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
+    inline def setInput(value: Partial[InputProps]): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
     
     inline def setInputUndefined: Self = StObject.set(x, "Input", js.undefined)
     
-    inline def setListItem(value: PartialListItemPropsAccessibilityActions): Self = StObject.set(x, "ListItem", value.asInstanceOf[js.Any])
+    inline def setLinearProgress(value: PartialLinearProgressProp): Self = StObject.set(x, "LinearProgress", value.asInstanceOf[js.Any])
+    
+    inline def setLinearProgressUndefined: Self = StObject.set(x, "LinearProgress", js.undefined)
+    
+    inline def setListItem(value: PartialListItemProps): Self = StObject.set(x, "ListItem", value.asInstanceOf[js.Any])
+    
+    inline def setListItemAccordion(value: PartialListItemAccordionP): Self = StObject.set(x, "ListItemAccordion", value.asInstanceOf[js.Any])
+    
+    inline def setListItemAccordionUndefined: Self = StObject.set(x, "ListItemAccordion", js.undefined)
     
     inline def setListItemButtonGroup(value: PartialButtonGroupProps): Self = StObject.set(x, "ListItemButtonGroup", value.asInstanceOf[js.Any])
     
@@ -184,11 +219,11 @@ object PartialFullTheme {
     
     inline def setListItemChevronUndefined: Self = StObject.set(x, "ListItemChevron", js.undefined)
     
-    inline def setListItemContent(value: PartialViewProperties): Self = StObject.set(x, "ListItemContent", value.asInstanceOf[js.Any])
+    inline def setListItemContent(value: PartialViewProps): Self = StObject.set(x, "ListItemContent", value.asInstanceOf[js.Any])
     
     inline def setListItemContentUndefined: Self = StObject.set(x, "ListItemContent", js.undefined)
     
-    inline def setListItemInput(value: PartialInputProps): Self = StObject.set(x, "ListItemInput", value.asInstanceOf[js.Any])
+    inline def setListItemInput(value: Partial[InputProps]): Self = StObject.set(x, "ListItemInput", value.asInstanceOf[js.Any])
     
     inline def setListItemInputUndefined: Self = StObject.set(x, "ListItemInput", js.undefined)
     
@@ -210,11 +245,11 @@ object PartialFullTheme {
     
     inline def setPricingCardUndefined: Self = StObject.set(x, "PricingCard", js.undefined)
     
-    inline def setRating(value: PartialRatingProps): Self = StObject.set(x, "Rating", value.asInstanceOf[js.Any])
+    inline def setRating(value: PartialTapRatingProps): Self = StObject.set(x, "Rating", value.asInstanceOf[js.Any])
     
     inline def setRatingUndefined: Self = StObject.set(x, "Rating", js.undefined)
     
-    inline def setSearchBar(value: PartialSearchBarProps): Self = StObject.set(x, "SearchBar", value.asInstanceOf[js.Any])
+    inline def setSearchBar(value: Partial[SearchBarProps]): Self = StObject.set(x, "SearchBar", value.asInstanceOf[js.Any])
     
     inline def setSearchBarUndefined: Self = StObject.set(x, "SearchBar", js.undefined)
     
@@ -226,11 +261,39 @@ object PartialFullTheme {
     
     inline def setSocialIconUndefined: Self = StObject.set(x, "SocialIcon", js.undefined)
     
+    inline def setSpeedDial(value: PartialSpeedDialProps): Self = StObject.set(x, "SpeedDial", value.asInstanceOf[js.Any])
+    
+    inline def setSpeedDialAction(value: PartialSpeedDialActionPro): Self = StObject.set(x, "SpeedDialAction", value.asInstanceOf[js.Any])
+    
+    inline def setSpeedDialActionUndefined: Self = StObject.set(x, "SpeedDialAction", js.undefined)
+    
+    inline def setSpeedDialUndefined: Self = StObject.set(x, "SpeedDial", js.undefined)
+    
+    inline def setSwitch(value: PartialSwitchProps): Self = StObject.set(x, "Switch", value.asInstanceOf[js.Any])
+    
+    inline def setSwitchUndefined: Self = StObject.set(x, "Switch", js.undefined)
+    
+    inline def setTab(value: PartialTabProps): Self = StObject.set(x, "Tab", value.asInstanceOf[js.Any])
+    
+    inline def setTabItem(value: PartialTabItemProps): Self = StObject.set(x, "TabItem", value.asInstanceOf[js.Any])
+    
+    inline def setTabItemUndefined: Self = StObject.set(x, "TabItem", js.undefined)
+    
+    inline def setTabUndefined: Self = StObject.set(x, "Tab", js.undefined)
+    
+    inline def setTabView(value: PartialTabViewPropsAnimationConfig): Self = StObject.set(x, "TabView", value.asInstanceOf[js.Any])
+    
+    inline def setTabViewItem(value: PartialViewProps): Self = StObject.set(x, "TabViewItem", value.asInstanceOf[js.Any])
+    
+    inline def setTabViewItemUndefined: Self = StObject.set(x, "TabViewItem", js.undefined)
+    
+    inline def setTabViewUndefined: Self = StObject.set(x, "TabView", js.undefined)
+    
     inline def setText(value: PartialTextProps): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     
     inline def setTextUndefined: Self = StObject.set(x, "Text", js.undefined)
     
-    inline def setTile(value: PartialTileProps): Self = StObject.set(x, "Tile", value.asInstanceOf[js.Any])
+    inline def setTile(value: PartialTilePropsAccessibilityActions): Self = StObject.set(x, "Tile", value.asInstanceOf[js.Any])
     
     inline def setTileUndefined: Self = StObject.set(x, "Tile", js.undefined)
     

@@ -1,12 +1,11 @@
 package typings.peculiarAsn1Schema
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* This can be used to `require` the library as a side effect.
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("@peculiar/asn1-schema", JSImport.Namespace)
 @js.native
-object peculiarAsn1SchemaRequire extends js.Object
-
+object peculiarAsn1SchemaRequire extends StObject

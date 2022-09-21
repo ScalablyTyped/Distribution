@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object uniqueIdMod {
   
-  @JSImport("@antv/util/lib/unique-id", JSImport.Namespace)
+  @JSImport("@antv/util/lib/lodash/unique-id", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "DeviceCheckoutOptions")
 @js.native
-class DeviceCheckoutOptions () extends StObject {
+open class DeviceCheckoutOptions () extends StObject {
   
   /**
     * The unique ID of the device intended for this `TerminalCheckout`.

@@ -4,23 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A reference to a particular snapshot of the source tree used to build and
-  * deploy an application.
-  */
 trait SchemaSourceReference extends StObject {
   
   /**
-    * Optional. A URI string identifying the repository. Example:
-    * &quot;https://github.com/GoogleCloudPlatform/kubernetes.git&quot;
+    * Optional. A URI string identifying the repository. Example: "https://github.com/GoogleCloudPlatform/kubernetes.git"
     */
-  var repository: js.UndefOr[String] = js.undefined
+  var repository: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The canonical and persistent identifier of the deployed revision. Example
-    * (git): &quot;0035781c50ec7aa23385dc841529ce8a4b70db1b&quot;
+    * The canonical and persistent identifier of the deployed revision. Example (git): "0035781c50ec7aa23385dc841529ce8a4b70db1b"
     */
-  var revisionId: js.UndefOr[String] = js.undefined
+  var revisionId: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaSourceReference {
   
@@ -33,9 +27,13 @@ object SchemaSourceReference {
     
     inline def setRepository(value: String): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
+    inline def setRepositoryNull: Self = StObject.set(x, "repository", null)
+    
     inline def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
     
     inline def setRevisionId(value: String): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
+    
+    inline def setRevisionIdNull: Self = StObject.set(x, "revisionId", null)
     
     inline def setRevisionIdUndefined: Self = StObject.set(x, "revisionId", js.undefined)
   }

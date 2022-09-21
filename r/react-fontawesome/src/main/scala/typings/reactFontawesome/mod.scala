@@ -11,10 +11,10 @@ object mod {
   
   @JSImport("react-fontawesome", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[FontAwesomeProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[FontAwesomeProps, js.Object, Any]
   
-  type FontAwesome = Component[FontAwesomeProps, js.Object, js.Any]
+  type FontAwesome = Component[FontAwesomeProps, js.Object, Any]
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactFontawesome.reactFontawesomeStrings.horizontal
@@ -36,7 +36,7 @@ object mod {
     
     var border: js.UndefOr[Boolean] = js.undefined
     
-    var cssModule: js.UndefOr[js.Any] = js.undefined
+    var cssModule: js.UndefOr[Any] = js.undefined
     
     var fixedWidth: js.UndefOr[Boolean] = js.undefined
     
@@ -77,7 +77,7 @@ object mod {
       
       inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
       
-      inline def setCssModule(value: js.Any): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
+      inline def setCssModule(value: Any): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       
       inline def setCssModuleUndefined: Self = StObject.set(x, "cssModule", js.undefined)
       
@@ -159,7 +159,7 @@ object mod {
        with AllHTMLAttributes[HTMLElement] {
     
     @JSName("size")
-    var size_Intermediate: js.UndefOr[js.Any] = js.undefined
+    var size_Intermediate: js.UndefOr[Any] = js.undefined
   }
   object Intermediate {
     
@@ -170,7 +170,7 @@ object mod {
     
     extension [Self <: Intermediate](x: Self) {
       
-      inline def setSize(value: js.Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }

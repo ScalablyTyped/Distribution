@@ -10,9 +10,9 @@ trait CredentialonCompleteanyun extends StObject {
   
   var formSubmitURL: js.UndefOr[String] = js.undefined
   
-  var onComplete: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var onComplete: js.UndefOr[js.Function0[Any]] = js.undefined
   
-  var onError: js.UndefOr[js.Function1[/* error */ NSIException, js.Any]] = js.undefined
+  var onError: js.UndefOr[js.Function1[/* error */ NSIException, Any]] = js.undefined
   
   var password: String
   
@@ -39,11 +39,11 @@ object CredentialonCompleteanyun {
     
     inline def setFormSubmitURLUndefined: Self = StObject.set(x, "formSubmitURL", js.undefined)
     
-    inline def setOnComplete(value: () => js.Any): Self = StObject.set(x, "onComplete", js.Any.fromFunction0(value))
+    inline def setOnComplete(value: () => Any): Self = StObject.set(x, "onComplete", js.Any.fromFunction0(value))
     
     inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
     
-    inline def setOnError(value: /* error */ NSIException => js.Any): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+    inline def setOnError(value: /* error */ NSIException => Any): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
     inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     

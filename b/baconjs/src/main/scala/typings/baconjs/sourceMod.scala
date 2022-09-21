@@ -15,7 +15,7 @@ object sourceMod {
   
   @JSImport("baconjs/types/internal/source", "BufferingSource")
   @js.native
-  class BufferingSource[V] protected ()
+  open class BufferingSource[V] protected ()
     extends Source[V, js.Array[V]] {
     def this(obs: default[V]) = this()
     
@@ -24,7 +24,7 @@ object sourceMod {
   
   @JSImport("baconjs/types/internal/source", "ConsumingSource")
   @js.native
-  class ConsumingSource[V] protected () extends Source[V, V] {
+  open class ConsumingSource[V] protected () extends Source[V, V] {
     def this(obs: default[V], sync: Boolean) = this()
     
     var queue: js.Array[Event[V]] = js.native
@@ -32,7 +32,7 @@ object sourceMod {
   
   @JSImport("baconjs/types/internal/source", "DefaultSource")
   @js.native
-  class DefaultSource[V] protected () extends Source[V, V] {
+  open class DefaultSource[V] protected () extends Source[V, V] {
     def this(obs: default[V], sync: Boolean) = this()
     
     var value: js.UndefOr[Event[V]] = js.native
@@ -69,7 +69,7 @@ object sourceMod {
   inline def fromObservable[V](s: default[V]): Source[V, V] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObservable")(s.asInstanceOf[js.Any]).asInstanceOf[Source[V, V]]
   inline def fromObservable[V](s: Source[V, V]): Source[V, V] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObservable")(s.asInstanceOf[js.Any]).asInstanceOf[Source[V, V]]
   
-  inline def isTrigger(s: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTrigger")(s.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isTrigger(s: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTrigger")(s.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   trait Event[V] extends StObject {
     

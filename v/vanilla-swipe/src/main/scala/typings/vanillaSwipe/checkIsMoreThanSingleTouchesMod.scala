@@ -10,5 +10,5 @@ object checkIsMoreThanSingleTouchesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def checkIsMoreThanSingleTouches(e: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("checkIsMoreThanSingleTouches")(e.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def checkIsMoreThanSingleTouches(e: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("checkIsMoreThanSingleTouches")(e.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

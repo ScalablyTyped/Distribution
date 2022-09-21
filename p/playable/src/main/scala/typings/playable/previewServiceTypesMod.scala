@@ -67,7 +67,7 @@ object previewServiceTypesMod {
       
       inline def setQualities(value: js.Array[IFramesQuality]): Self = StObject.set(x, "qualities", value.asInstanceOf[js.Any])
       
-      inline def setQualitiesVarargs(value: IFramesQuality*): Self = StObject.set(x, "qualities", js.Array(value :_*))
+      inline def setQualitiesVarargs(value: IFramesQuality*): Self = StObject.set(x, "qualities", js.Array(value*))
     }
   }
   

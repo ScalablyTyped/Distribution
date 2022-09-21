@@ -12,6 +12,11 @@ trait Cluster extends StObject {
   var AllowVersionUpgrade: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * This field is retired. Amazon Redshift automatically determines whether to use AQUA (Advanced Query Accelerator).
+    */
+  var AquaConfiguration: js.UndefOr[typings.awsSdk.redshiftMod.AquaConfiguration] = js.undefined
+  
+  /**
     * The number of days that automatic cluster snapshots are retained.
     */
   var AutomatedSnapshotRetentionPeriod: js.UndefOr[Integer] = js.undefined
@@ -22,6 +27,11 @@ trait Cluster extends StObject {
   var AvailabilityZone: js.UndefOr[String] = js.undefined
   
   /**
+    * Describes the status of the Availability Zone relocation operation.
+    */
+  var AvailabilityZoneRelocationStatus: js.UndefOr[String] = js.undefined
+  
+  /**
     * The availability status of the cluster for queries. Possible values are the following:   Available - The cluster is available for queries.    Unavailable - The cluster is not available for queries.   Maintenance - The cluster is intermittently available for queries due to maintenance activities.   Modifying - The cluster is intermittently available for queries due to changes that modify the cluster.   Failed - The cluster failed and is not available for queries.  
     */
   var ClusterAvailabilityStatus: js.UndefOr[String] = js.undefined
@@ -29,7 +39,7 @@ trait Cluster extends StObject {
   /**
     * The date and time that the cluster was created.
     */
-  var ClusterCreateTime: js.UndefOr[TStamp] = js.undefined
+  var ClusterCreateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The unique identifier of the cluster.
@@ -97,6 +107,11 @@ trait Cluster extends StObject {
   var DataTransferProgress: js.UndefOr[typings.awsSdk.redshiftMod.DataTransferProgress] = js.undefined
   
   /**
+    * The Amazon Resource Name (ARN) for the IAM role set as default for the cluster.
+    */
+  var DefaultIamRoleArn: js.UndefOr[String] = js.undefined
+  
+  /**
     * Describes a group of DeferredMaintenanceWindow objects.
     */
   var DeferredMaintenanceWindows: js.UndefOr[DeferredMaintenanceWindowsList] = js.undefined
@@ -129,7 +144,7 @@ trait Cluster extends StObject {
   /**
     * The date and time when the next snapshot is expected to be taken for clusters with a valid snapshot schedule and backups enabled. 
     */
-  var ExpectedNextSnapshotScheduleTime: js.UndefOr[TStamp] = js.undefined
+  var ExpectedNextSnapshotScheduleTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     *  The status of next expected snapshot for clusters having a valid snapshot schedule and backups enabled. Possible values are the following:   OnTrack - The next snapshot is expected to be taken on time.    Pending - The next snapshot is pending to be taken.   
@@ -142,12 +157,12 @@ trait Cluster extends StObject {
   var HsmStatus: js.UndefOr[typings.awsSdk.redshiftMod.HsmStatus] = js.undefined
   
   /**
-    * A list of AWS Identity and Access Management (IAM) roles that can be used by the cluster to access other AWS services.
+    * A list of Identity and Access Management (IAM) roles that can be used by the cluster to access other Amazon Web Services services.
     */
   var IamRoles: js.UndefOr[ClusterIamRoleList] = js.undefined
   
   /**
-    * The AWS Key Management Service (AWS KMS) key ID of the encryption key used to encrypt data in the cluster.
+    * The Key Management Service (KMS) key ID of the encryption key used to encrypt data in the cluster.
     */
   var KmsKeyId: js.UndefOr[String] = js.undefined
   
@@ -162,7 +177,7 @@ trait Cluster extends StObject {
   var ManualSnapshotRetentionPeriod: js.UndefOr[Integer] = js.undefined
   
   /**
-    * The master user name for the cluster. This name is used to connect to the database that is specified in the DBName parameter. 
+    * The admin user name for the cluster. This name is used to connect to the database that is specified in the DBName parameter. 
     */
   var MasterUsername: js.UndefOr[String] = js.undefined
   
@@ -174,7 +189,7 @@ trait Cluster extends StObject {
   /**
     * The date and time in UTC when system maintenance can begin.
     */
-  var NextMaintenanceWindowStartTime: js.UndefOr[TStamp] = js.undefined
+  var NextMaintenanceWindowStartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The node type for the nodes in the cluster.
@@ -207,6 +222,11 @@ trait Cluster extends StObject {
   var PubliclyAccessible: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * The status of the reserved-node exchange request. Statuses include in-progress and requested.
+    */
+  var ReservedNodeExchangeStatus: js.UndefOr[typings.awsSdk.redshiftMod.ReservedNodeExchangeStatus] = js.undefined
+  
+  /**
     * Returns the following:   AllowCancelResize: a boolean value indicating if the resize operation can be cancelled.   ResizeType: Returns ClassicResize  
     */
   var ResizeInfo: js.UndefOr[typings.awsSdk.redshiftMod.ResizeInfo] = js.undefined
@@ -232,6 +252,11 @@ trait Cluster extends StObject {
   var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
+    * The total storage capacity of the cluster in megabytes. 
+    */
+  var TotalStorageCapacityInMegaBytes: js.UndefOr[LongOptional] = js.undefined
+  
+  /**
     * The identifier of the VPC the cluster is in, if the cluster is in a VPC.
     */
   var VpcId: js.UndefOr[String] = js.undefined
@@ -254,11 +279,19 @@ object Cluster {
     
     inline def setAllowVersionUpgradeUndefined: Self = StObject.set(x, "AllowVersionUpgrade", js.undefined)
     
+    inline def setAquaConfiguration(value: AquaConfiguration): Self = StObject.set(x, "AquaConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setAquaConfigurationUndefined: Self = StObject.set(x, "AquaConfiguration", js.undefined)
+    
     inline def setAutomatedSnapshotRetentionPeriod(value: Integer): Self = StObject.set(x, "AutomatedSnapshotRetentionPeriod", value.asInstanceOf[js.Any])
     
     inline def setAutomatedSnapshotRetentionPeriodUndefined: Self = StObject.set(x, "AutomatedSnapshotRetentionPeriod", js.undefined)
     
     inline def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
+    
+    inline def setAvailabilityZoneRelocationStatus(value: String): Self = StObject.set(x, "AvailabilityZoneRelocationStatus", value.asInstanceOf[js.Any])
+    
+    inline def setAvailabilityZoneRelocationStatusUndefined: Self = StObject.set(x, "AvailabilityZoneRelocationStatus", js.undefined)
     
     inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
@@ -266,7 +299,7 @@ object Cluster {
     
     inline def setClusterAvailabilityStatusUndefined: Self = StObject.set(x, "ClusterAvailabilityStatus", js.undefined)
     
-    inline def setClusterCreateTime(value: TStamp): Self = StObject.set(x, "ClusterCreateTime", value.asInstanceOf[js.Any])
+    inline def setClusterCreateTime(value: js.Date): Self = StObject.set(x, "ClusterCreateTime", value.asInstanceOf[js.Any])
     
     inline def setClusterCreateTimeUndefined: Self = StObject.set(x, "ClusterCreateTime", js.undefined)
     
@@ -282,13 +315,13 @@ object Cluster {
     
     inline def setClusterNodesUndefined: Self = StObject.set(x, "ClusterNodes", js.undefined)
     
-    inline def setClusterNodesVarargs(value: ClusterNode*): Self = StObject.set(x, "ClusterNodes", js.Array(value :_*))
+    inline def setClusterNodesVarargs(value: ClusterNode*): Self = StObject.set(x, "ClusterNodes", js.Array(value*))
     
     inline def setClusterParameterGroups(value: ClusterParameterGroupStatusList): Self = StObject.set(x, "ClusterParameterGroups", value.asInstanceOf[js.Any])
     
     inline def setClusterParameterGroupsUndefined: Self = StObject.set(x, "ClusterParameterGroups", js.undefined)
     
-    inline def setClusterParameterGroupsVarargs(value: ClusterParameterGroupStatus*): Self = StObject.set(x, "ClusterParameterGroups", js.Array(value :_*))
+    inline def setClusterParameterGroupsVarargs(value: ClusterParameterGroupStatus*): Self = StObject.set(x, "ClusterParameterGroups", js.Array(value*))
     
     inline def setClusterPublicKey(value: String): Self = StObject.set(x, "ClusterPublicKey", value.asInstanceOf[js.Any])
     
@@ -302,7 +335,7 @@ object Cluster {
     
     inline def setClusterSecurityGroupsUndefined: Self = StObject.set(x, "ClusterSecurityGroups", js.undefined)
     
-    inline def setClusterSecurityGroupsVarargs(value: ClusterSecurityGroupMembership*): Self = StObject.set(x, "ClusterSecurityGroups", js.Array(value :_*))
+    inline def setClusterSecurityGroupsVarargs(value: ClusterSecurityGroupMembership*): Self = StObject.set(x, "ClusterSecurityGroups", js.Array(value*))
     
     inline def setClusterSnapshotCopyStatus(value: ClusterSnapshotCopyStatus): Self = StObject.set(x, "ClusterSnapshotCopyStatus", value.asInstanceOf[js.Any])
     
@@ -328,11 +361,15 @@ object Cluster {
     
     inline def setDataTransferProgressUndefined: Self = StObject.set(x, "DataTransferProgress", js.undefined)
     
+    inline def setDefaultIamRoleArn(value: String): Self = StObject.set(x, "DefaultIamRoleArn", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultIamRoleArnUndefined: Self = StObject.set(x, "DefaultIamRoleArn", js.undefined)
+    
     inline def setDeferredMaintenanceWindows(value: DeferredMaintenanceWindowsList): Self = StObject.set(x, "DeferredMaintenanceWindows", value.asInstanceOf[js.Any])
     
     inline def setDeferredMaintenanceWindowsUndefined: Self = StObject.set(x, "DeferredMaintenanceWindows", js.undefined)
     
-    inline def setDeferredMaintenanceWindowsVarargs(value: DeferredMaintenanceWindow*): Self = StObject.set(x, "DeferredMaintenanceWindows", js.Array(value :_*))
+    inline def setDeferredMaintenanceWindowsVarargs(value: DeferredMaintenanceWindow*): Self = StObject.set(x, "DeferredMaintenanceWindows", js.Array(value*))
     
     inline def setElasticIpStatus(value: ElasticIpStatus): Self = StObject.set(x, "ElasticIpStatus", value.asInstanceOf[js.Any])
     
@@ -354,7 +391,7 @@ object Cluster {
     
     inline def setEnhancedVpcRoutingUndefined: Self = StObject.set(x, "EnhancedVpcRouting", js.undefined)
     
-    inline def setExpectedNextSnapshotScheduleTime(value: TStamp): Self = StObject.set(x, "ExpectedNextSnapshotScheduleTime", value.asInstanceOf[js.Any])
+    inline def setExpectedNextSnapshotScheduleTime(value: js.Date): Self = StObject.set(x, "ExpectedNextSnapshotScheduleTime", value.asInstanceOf[js.Any])
     
     inline def setExpectedNextSnapshotScheduleTimeStatus(value: String): Self = StObject.set(x, "ExpectedNextSnapshotScheduleTimeStatus", value.asInstanceOf[js.Any])
     
@@ -370,7 +407,7 @@ object Cluster {
     
     inline def setIamRolesUndefined: Self = StObject.set(x, "IamRoles", js.undefined)
     
-    inline def setIamRolesVarargs(value: ClusterIamRole*): Self = StObject.set(x, "IamRoles", js.Array(value :_*))
+    inline def setIamRolesVarargs(value: ClusterIamRole*): Self = StObject.set(x, "IamRoles", js.Array(value*))
     
     inline def setKmsKeyId(value: String): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     
@@ -392,7 +429,7 @@ object Cluster {
     
     inline def setModifyStatusUndefined: Self = StObject.set(x, "ModifyStatus", js.undefined)
     
-    inline def setNextMaintenanceWindowStartTime(value: TStamp): Self = StObject.set(x, "NextMaintenanceWindowStartTime", value.asInstanceOf[js.Any])
+    inline def setNextMaintenanceWindowStartTime(value: js.Date): Self = StObject.set(x, "NextMaintenanceWindowStartTime", value.asInstanceOf[js.Any])
     
     inline def setNextMaintenanceWindowStartTimeUndefined: Self = StObject.set(x, "NextMaintenanceWindowStartTime", js.undefined)
     
@@ -408,7 +445,7 @@ object Cluster {
     
     inline def setPendingActionsUndefined: Self = StObject.set(x, "PendingActions", js.undefined)
     
-    inline def setPendingActionsVarargs(value: String*): Self = StObject.set(x, "PendingActions", js.Array(value :_*))
+    inline def setPendingActionsVarargs(value: String*): Self = StObject.set(x, "PendingActions", js.Array(value*))
     
     inline def setPendingModifiedValues(value: PendingModifiedValues): Self = StObject.set(x, "PendingModifiedValues", value.asInstanceOf[js.Any])
     
@@ -421,6 +458,10 @@ object Cluster {
     inline def setPubliclyAccessible(value: Boolean): Self = StObject.set(x, "PubliclyAccessible", value.asInstanceOf[js.Any])
     
     inline def setPubliclyAccessibleUndefined: Self = StObject.set(x, "PubliclyAccessible", js.undefined)
+    
+    inline def setReservedNodeExchangeStatus(value: ReservedNodeExchangeStatus): Self = StObject.set(x, "ReservedNodeExchangeStatus", value.asInstanceOf[js.Any])
+    
+    inline def setReservedNodeExchangeStatusUndefined: Self = StObject.set(x, "ReservedNodeExchangeStatus", js.undefined)
     
     inline def setResizeInfo(value: ResizeInfo): Self = StObject.set(x, "ResizeInfo", value.asInstanceOf[js.Any])
     
@@ -442,7 +483,11 @@ object Cluster {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
+    
+    inline def setTotalStorageCapacityInMegaBytes(value: LongOptional): Self = StObject.set(x, "TotalStorageCapacityInMegaBytes", value.asInstanceOf[js.Any])
+    
+    inline def setTotalStorageCapacityInMegaBytesUndefined: Self = StObject.set(x, "TotalStorageCapacityInMegaBytes", js.undefined)
     
     inline def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     
@@ -452,6 +497,6 @@ object Cluster {
     
     inline def setVpcSecurityGroupsUndefined: Self = StObject.set(x, "VpcSecurityGroups", js.undefined)
     
-    inline def setVpcSecurityGroupsVarargs(value: VpcSecurityGroupMembership*): Self = StObject.set(x, "VpcSecurityGroups", js.Array(value :_*))
+    inline def setVpcSecurityGroupsVarargs(value: VpcSecurityGroupMembership*): Self = StObject.set(x, "VpcSecurityGroups", js.Array(value*))
   }
 }

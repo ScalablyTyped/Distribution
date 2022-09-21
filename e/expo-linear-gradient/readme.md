@@ -1,7 +1,7 @@
 
 # Scala.js typings for expo-linear-gradient
 
-Typings are for version 8.3.1
+Typings are for version 11.4.0
 
 ## Library description:
 Provides a React component that renders a gradient view.
@@ -10,13 +10,13 @@ Provides a React component that renders a gradient view.
 | ------------------ | :-------------: |
 | Full name          | expo-linear-gradient |
 | Keywords           | react-native, expo, gradient |
-| # releases         | 5 |
-| # dependents       | 1 |
-| # downloads        | 1319 |
-| # stars            | 0 |
+| # releases         | 20 |
+| # dependents       | 0.0 |
+| # downloads        | 350398.3333333333 |
+| # stars            | 16865.0 |
 
 ## Links
-- [Homepage](https://docs.expo.io/versions/latest/sdk/linear-gradient/)
+- [Homepage](https://docs.expo.dev/versions/latest/sdk/linear-gradient/)
 - [Bugs](https://github.com/expo/expo/issues)
 - [Repository](https://github.com/expo/expo)
 - [Npm](https://www.npmjs.com/package/expo-linear-gradient)

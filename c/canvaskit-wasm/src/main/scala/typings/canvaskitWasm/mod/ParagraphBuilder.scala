@@ -77,9 +77,40 @@ trait ParagraphBuilder
   
   /**
     * Returns a Paragraph object that can be used to be layout and paint the text to an
-    * SkCanvas.
+    * Canvas.
     */
   def build(): Paragraph = js.native
+  
+  /**
+    * Returns a Paragraph object that can be used to be layout and
+    * paint the text to an Canvas.
+    * @param bidiRegions is an array of unsigned integers that should be
+    * treated as triples (starting index, ending index, direction).
+    * Direction == 0 means left-to-right, direction == 1 is right-to-left.
+    * @param words is an array of word edges (starting or ending). You can
+    * pass 2 elements (0 as a start of the entire text and text.size as the
+    * end). This information only needed for a specific API method getWords.
+    * @param graphemes is an array of indexes in the input text that point
+    * to the start of each grapheme.
+    * @param softLineBreaks is an array of indexes in the input text that
+    * point to the places of possible line breaking if needed. It should
+    * include 0 as the first element.
+    * #param hardLineBreaks is an array of indexes in the input text that
+    * point to the places of mandatory line breaking.
+    */
+  def buildWithClientInfo(
+    bidiRegions: js.UndefOr[InputBidiRegions | Null],
+    words: js.UndefOr[InputWords | Null],
+    graphemes: js.UndefOr[InputGraphemes | Null],
+    softLineBreaks: js.UndefOr[InputLineBreaks | Null],
+    hardLineBreaks: js.UndefOr[InputLineBreaks | Null]
+  ): Paragraph = js.native
+  
+  /**
+    * Returns the entire Paragraph text (which is useful in case that text
+    * was produced as a set of addText calls).
+    */
+  def getText(): String = js.native
   
   /**
     * Remove a style from the stack. Useful to apply different styles to chunks
@@ -93,7 +124,7 @@ trait ParagraphBuilder
     * @param fg
     * @param bg
     */
-  def pushPaintStyle(textStyle: TextStyle, fg: SkPaint, bg: SkPaint): Unit = js.native
+  def pushPaintStyle(textStyle: TextStyle, fg: Paint, bg: Paint): Unit = js.native
   
   /**
     * Push a style to the stack. The corresponding text added with addText will
@@ -101,4 +132,10 @@ trait ParagraphBuilder
     * @param text
     */
   def pushStyle(text: TextStyle): Unit = js.native
+  
+  /**
+    * Resets this builder to its initial state, discarding any text, styles, placeholders that have
+    * been added, but keeping the initial ParagraphStyle.
+    */
+  def reset(): Unit = js.native
 }

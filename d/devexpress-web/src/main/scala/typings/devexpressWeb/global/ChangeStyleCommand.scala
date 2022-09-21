@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ChangeStyleCommand")
 @js.native
-class ChangeStyleCommand ()
+open class ChangeStyleCommand ()
   extends StObject
      with typings.devexpressWeb.ChangeStyleCommand

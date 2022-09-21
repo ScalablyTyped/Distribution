@@ -1,5 +1,9 @@
 package typings.awsSdk.lightsailMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.AutoSnapshot
+import typings.awsSdk.awsSdkStrings.Email_
+import typings.awsSdk.awsSdkStrings.mysql__
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,13 +14,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.awsSdk.awsSdkStrings.outbound__
   - java.lang.String
 */
-type AccessDirection = typings.awsSdk.lightsailMod._AccessDirection | java.lang.String
+type AccessDirection = _AccessDirection | String
 
-type AddOnList = js.Array[typings.awsSdk.lightsailMod.AddOn]
+type AccessKeyList = js.Array[AccessKey]
 
-type AddOnRequestList = js.Array[typings.awsSdk.lightsailMod.AddOnRequest]
+type AccessReceiverList = js.Array[ResourceReceivingAccess]
 
-type AddOnType = typings.awsSdk.awsSdkStrings.AutoSnapshot | java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.public__
+  - typings.awsSdk.awsSdkStrings.private__
+  - java.lang.String
+*/
+type AccessType = _AccessType | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.InSync_
+  - typings.awsSdk.awsSdkStrings.Failed_
+  - typings.awsSdk.awsSdkStrings.NeverSynced
+  - typings.awsSdk.awsSdkStrings.Defaulted
+  - java.lang.String
+*/
+type AccountLevelBpaSyncStatus = _AccountLevelBpaSyncStatus | String
+
+type AddOnList = js.Array[AddOn]
+
+type AddOnRequestList = js.Array[AddOnRequest]
+
+type AddOnType = AutoSnapshot | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.OK
@@ -24,17 +48,17 @@ type AddOnType = typings.awsSdk.awsSdkStrings.AutoSnapshot | java.lang.String
   - typings.awsSdk.awsSdkStrings.INSUFFICIENT_DATA
   - java.lang.String
 */
-type AlarmState = typings.awsSdk.lightsailMod._AlarmState | java.lang.String
+type AlarmState = _AlarmState | String
 
-type AlarmsList = js.Array[typings.awsSdk.lightsailMod.Alarm]
+type AlarmsList = js.Array[Alarm]
 
-type AttachedDiskList = js.Array[typings.awsSdk.lightsailMod.AttachedDisk]
+type AttachedDiskList = js.Array[AttachedDisk]
 
-type AttachedDiskMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.lightsailMod.DiskMapList]
+type AttachedDiskMap = StringDictionary[DiskMapList]
 
-type AutoSnapshotDate = java.lang.String
+type AutoSnapshotDate = String
 
-type AutoSnapshotDetailsList = js.Array[typings.awsSdk.lightsailMod.AutoSnapshotDetails]
+type AutoSnapshotDetailsList = js.Array[AutoSnapshotDetails]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Success_
@@ -43,33 +67,57 @@ type AutoSnapshotDetailsList = js.Array[typings.awsSdk.lightsailMod.AutoSnapshot
   - typings.awsSdk.awsSdkStrings.NotFound
   - java.lang.String
 */
-type AutoSnapshotStatus = typings.awsSdk.lightsailMod._AutoSnapshotStatus | java.lang.String
+type AutoSnapshotStatus = _AutoSnapshotStatus | String
 
-type AvailabilityZoneList = js.Array[typings.awsSdk.lightsailMod.AvailabilityZone]
+type AvailabilityZoneList = js.Array[AvailabilityZone]
 
-type Base64 = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DEFAULTED_FOR_SLR_MISSING
+  - typings.awsSdk.awsSdkStrings.SYNC_ON_HOLD
+  - typings.awsSdk.awsSdkStrings.DEFAULTED_FOR_SLR_MISSING_ON_HOLD
+  - typings.awsSdk.awsSdkStrings.Unknown_
+  - java.lang.String
+*/
+type BPAStatusMessage = _BPAStatusMessage | String
+
+type Base64 = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`dont-cache`
-  - typings.awsSdk.awsSdkStrings.cache
+  - typings.awsSdk.awsSdkStrings.cache_
   - java.lang.String
 */
-type BehaviorEnum = typings.awsSdk.lightsailMod._BehaviorEnum | java.lang.String
+type BehaviorEnum = _BehaviorEnum | String
 
-type BlueprintList = js.Array[typings.awsSdk.lightsailMod.Blueprint]
+type BlueprintList = js.Array[Blueprint]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.os_
   - typings.awsSdk.awsSdkStrings.app_
   - java.lang.String
 */
-type BlueprintType = typings.awsSdk.lightsailMod._BlueprintType | java.lang.String
+type BlueprintType = _BlueprintType | String
 
-type BundleList = js.Array[typings.awsSdk.lightsailMod.Bundle]
+type BucketAccessLogPrefix = String
 
-type CacheBehaviorList = js.Array[typings.awsSdk.lightsailMod.CacheBehaviorPerPath]
+type BucketBundleList = js.Array[BucketBundle]
 
-type CertificateName = java.lang.String
+type BucketList = js.Array[Bucket]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.BucketSizeBytes
+  - typings.awsSdk.awsSdkStrings.NumberOfObjects
+  - java.lang.String
+*/
+type BucketMetricName = _BucketMetricName | String
+
+type BucketName = String
+
+type BundleList = js.Array[Bundle]
+
+type CacheBehaviorList = js.Array[CacheBehaviorPerPath]
+
+type CertificateName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PENDING_VALIDATION
@@ -81,17 +129,17 @@ type CertificateName = java.lang.String
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type CertificateStatus = typings.awsSdk.lightsailMod._CertificateStatus | java.lang.String
+type CertificateStatus = _CertificateStatus | String
 
-type CertificateStatusList = js.Array[typings.awsSdk.lightsailMod.CertificateStatus]
+type CertificateStatusList = js.Array[CertificateStatus]
 
-type CertificateSummaryList = js.Array[typings.awsSdk.lightsailMod.CertificateSummary]
+type CertificateSummaryList = js.Array[CertificateSummary]
 
-type CloudFormationStackRecordList = js.Array[typings.awsSdk.lightsailMod.CloudFormationStackRecord]
+type CloudFormationStackRecordList = js.Array[CloudFormationStackRecord]
 
-type CloudFormationStackRecordSourceInfoList = js.Array[typings.awsSdk.lightsailMod.CloudFormationStackRecordSourceInfo]
+type CloudFormationStackRecordSourceInfoList = js.Array[CloudFormationStackRecordSourceInfo]
 
-type CloudFormationStackRecordSourceType = typings.awsSdk.awsSdkStrings.ExportSnapshotRecord | java.lang.String
+type CloudFormationStackRecordSourceType = typings.awsSdk.awsSdkStrings.ExportSnapshotRecord | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.GreaterThanOrEqualToThreshold
@@ -100,7 +148,7 @@ type CloudFormationStackRecordSourceType = typings.awsSdk.awsSdkStrings.ExportSn
   - typings.awsSdk.awsSdkStrings.LessThanOrEqualToThreshold
   - java.lang.String
 */
-type ComparisonOperator = typings.awsSdk.lightsailMod._ComparisonOperator | java.lang.String
+type ComparisonOperator = _ComparisonOperator | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PendingVerification
@@ -108,30 +156,30 @@ type ComparisonOperator = typings.awsSdk.lightsailMod._ComparisonOperator | java
   - typings.awsSdk.awsSdkStrings.Invalid_
   - java.lang.String
 */
-type ContactMethodStatus = typings.awsSdk.lightsailMod._ContactMethodStatus | java.lang.String
+type ContactMethodStatus = _ContactMethodStatus | String
 
-type ContactMethodVerificationProtocol = typings.awsSdk.awsSdkStrings.Email_ | java.lang.String
+type ContactMethodVerificationProtocol = Email_ | String
 
-type ContactMethodsList = js.Array[typings.awsSdk.lightsailMod.ContactMethod]
+type ContactMethodsList = js.Array[ContactMethod]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Email_
   - typings.awsSdk.awsSdkStrings.SMS
   - java.lang.String
 */
-type ContactProtocol = typings.awsSdk.lightsailMod._ContactProtocol | java.lang.String
+type ContactProtocol = _ContactProtocol | String
 
-type ContactProtocolsList = js.Array[typings.awsSdk.lightsailMod.ContactProtocol]
+type ContactProtocolsList = js.Array[ContactProtocol]
 
-type ContainerImageList = js.Array[typings.awsSdk.lightsailMod.ContainerImage]
+type ContainerImageList = js.Array[ContainerImage]
 
-type ContainerLabel = java.lang.String
+type ContainerLabel = String
 
-type ContainerMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.lightsailMod.Container]
+type ContainerMap = StringDictionary[Container]
 
-type ContainerName = java.lang.String
+type ContainerName = String
 
-type ContainerServiceDeploymentList = js.Array[typings.awsSdk.lightsailMod.ContainerServiceDeployment]
+type ContainerServiceDeploymentList = js.Array[ContainerServiceDeployment]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ACTIVATING
@@ -140,26 +188,26 @@ type ContainerServiceDeploymentList = js.Array[typings.awsSdk.lightsailMod.Conta
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type ContainerServiceDeploymentState = typings.awsSdk.lightsailMod._ContainerServiceDeploymentState | java.lang.String
+type ContainerServiceDeploymentState = _ContainerServiceDeploymentState | String
 
-type ContainerServiceList = js.Array[typings.awsSdk.lightsailMod.ContainerService]
+type ContainerServiceList = js.Array[ContainerService]
 
-type ContainerServiceLogEventList = js.Array[typings.awsSdk.lightsailMod.ContainerServiceLogEvent]
+type ContainerServiceLogEventList = js.Array[ContainerServiceLogEvent]
 
-type ContainerServiceMetadataEntry = org.scalablytyped.runtime.StringDictionary[java.lang.String]
+type ContainerServiceMetadataEntry = StringDictionary[String]
 
-type ContainerServiceMetadataEntryList = js.Array[typings.awsSdk.lightsailMod.ContainerServiceMetadataEntry]
+type ContainerServiceMetadataEntryList = js.Array[ContainerServiceMetadataEntry]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CPUUtilization
   - typings.awsSdk.awsSdkStrings.MemoryUtilization
   - java.lang.String
 */
-type ContainerServiceMetricName = typings.awsSdk.lightsailMod._ContainerServiceMetricName | java.lang.String
+type ContainerServiceMetricName = _ContainerServiceMetricName | String
 
-type ContainerServiceName = java.lang.String
+type ContainerServiceName = String
 
-type ContainerServicePowerList = js.Array[typings.awsSdk.lightsailMod.ContainerServicePower]
+type ContainerServicePowerList = js.Array[ContainerServicePower]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.nano
@@ -170,7 +218,7 @@ type ContainerServicePowerList = js.Array[typings.awsSdk.lightsailMod.ContainerS
   - typings.awsSdk.awsSdkStrings.xlarge_
   - java.lang.String
 */
-type ContainerServicePowerName = typings.awsSdk.lightsailMod._ContainerServicePowerName | java.lang.String
+type ContainerServicePowerName = _ContainerServicePowerName | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.HTTP
@@ -179,13 +227,13 @@ type ContainerServicePowerName = typings.awsSdk.lightsailMod._ContainerServicePo
   - typings.awsSdk.awsSdkStrings.UDP
   - java.lang.String
 */
-type ContainerServiceProtocol = typings.awsSdk.lightsailMod._ContainerServiceProtocol | java.lang.String
+type ContainerServiceProtocol = _ContainerServiceProtocol | String
 
-type ContainerServicePublicDomains = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.lightsailMod.ContainerServicePublicDomainsList]
+type ContainerServicePublicDomains = StringDictionary[ContainerServicePublicDomainsList]
 
-type ContainerServicePublicDomainsList = js.Array[java.lang.String]
+type ContainerServicePublicDomainsList = js.Array[String]
 
-type ContainerServiceScale = scala.Double
+type ContainerServiceScale = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PENDING
@@ -194,17 +242,32 @@ type ContainerServiceScale = scala.Double
   - typings.awsSdk.awsSdkStrings.UPDATING
   - typings.awsSdk.awsSdkStrings.DELETING
   - typings.awsSdk.awsSdkStrings.DISABLED
+  - typings.awsSdk.awsSdkStrings.DEPLOYING
   - java.lang.String
 */
-type ContainerServiceState = typings.awsSdk.lightsailMod._ContainerServiceState | java.lang.String
+type ContainerServiceState = _ContainerServiceState | String
 
-type DiskInfoList = js.Array[typings.awsSdk.lightsailMod.DiskInfo]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CREATING_SYSTEM_RESOURCES
+  - typings.awsSdk.awsSdkStrings.CREATING_NETWORK_INFRASTRUCTURE
+  - typings.awsSdk.awsSdkStrings.PROVISIONING_CERTIFICATE
+  - typings.awsSdk.awsSdkStrings.PROVISIONING_SERVICE
+  - typings.awsSdk.awsSdkStrings.CREATING_DEPLOYMENT
+  - typings.awsSdk.awsSdkStrings.EVALUATING_HEALTH_CHECK
+  - typings.awsSdk.awsSdkStrings.ACTIVATING_DEPLOYMENT
+  - typings.awsSdk.awsSdkStrings.CERTIFICATE_LIMIT_EXCEEDED
+  - typings.awsSdk.awsSdkStrings.UNKNOWN_ERROR
+  - java.lang.String
+*/
+type ContainerServiceStateDetailCode = _ContainerServiceStateDetailCode | String
 
-type DiskList = js.Array[typings.awsSdk.lightsailMod.Disk]
+type DiskInfoList = js.Array[DiskInfo]
 
-type DiskMapList = js.Array[typings.awsSdk.lightsailMod.DiskMap]
+type DiskList = js.Array[Disk]
 
-type DiskSnapshotList = js.Array[typings.awsSdk.lightsailMod.DiskSnapshot]
+type DiskMapList = js.Array[DiskMap]
+
+type DiskSnapshotList = js.Array[DiskSnapshot]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.pending__
@@ -213,7 +276,7 @@ type DiskSnapshotList = js.Array[typings.awsSdk.lightsailMod.DiskSnapshot]
   - typings.awsSdk.awsSdkStrings.unknown__
   - java.lang.String
 */
-type DiskSnapshotState = typings.awsSdk.lightsailMod._DiskSnapshotState | java.lang.String
+type DiskSnapshotState = _DiskSnapshotState | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.pending__
@@ -223,11 +286,11 @@ type DiskSnapshotState = typings.awsSdk.lightsailMod._DiskSnapshotState | java.l
   - typings.awsSdk.awsSdkStrings.unknown__
   - java.lang.String
 */
-type DiskState = typings.awsSdk.lightsailMod._DiskState | java.lang.String
+type DiskState = _DiskState | String
 
-type DistributionBundleList = js.Array[typings.awsSdk.lightsailMod.DistributionBundle]
+type DistributionBundleList = js.Array[DistributionBundle]
 
-type DistributionList = js.Array[typings.awsSdk.lightsailMod.LightsailDistribution]
+type DistributionList = js.Array[LightsailDistribution]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Requests_
@@ -238,36 +301,36 @@ type DistributionList = js.Array[typings.awsSdk.lightsailMod.LightsailDistributi
   - typings.awsSdk.awsSdkStrings.Http5xxErrorRate
   - java.lang.String
 */
-type DistributionMetricName = typings.awsSdk.lightsailMod._DistributionMetricName | java.lang.String
+type DistributionMetricName = _DistributionMetricName | String
 
-type DomainEntryList = js.Array[typings.awsSdk.lightsailMod.DomainEntry]
+type DomainEntryList = js.Array[DomainEntry]
 
-type DomainEntryOptions = org.scalablytyped.runtime.StringDictionary[java.lang.String]
+type DomainEntryOptions = StringDictionary[String]
 
-type DomainEntryOptionsKeys = java.lang.String
+type DomainEntryOptionsKeys = String
 
-type DomainEntryType = java.lang.String
+type DomainEntryType = String
 
-type DomainList = js.Array[typings.awsSdk.lightsailMod.Domain]
+type DomainList = js.Array[Domain]
 
-type DomainName = java.lang.String
+type DomainName = String
 
-type DomainNameList = js.Array[typings.awsSdk.lightsailMod.DomainName]
+type DomainNameList = js.Array[DomainName]
 
-type DomainValidationRecordList = js.Array[typings.awsSdk.lightsailMod.DomainValidationRecord]
+type DomainValidationRecordList = js.Array[DomainValidationRecord]
 
-type EligibleToRenew = java.lang.String
+type EligibleToRenew = String
 
-type Environment = org.scalablytyped.runtime.StringDictionary[java.lang.String]
+type Environment = StringDictionary[String]
 
-type ExportSnapshotRecordList = js.Array[typings.awsSdk.lightsailMod.ExportSnapshotRecord]
+type ExportSnapshotRecordList = js.Array[ExportSnapshotRecord]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.InstanceSnapshot
   - typings.awsSdk.awsSdkStrings.DiskSnapshot
   - java.lang.String
 */
-type ExportSnapshotRecordSourceType = typings.awsSdk.lightsailMod._ExportSnapshotRecordSourceType | java.lang.String
+type ExportSnapshotRecordSourceType = _ExportSnapshotRecordSourceType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.none__
@@ -275,7 +338,7 @@ type ExportSnapshotRecordSourceType = typings.awsSdk.lightsailMod._ExportSnapsho
   - typings.awsSdk.awsSdkStrings.all__
   - java.lang.String
 */
-type ForwardValues = typings.awsSdk.lightsailMod._ForwardValues | java.lang.String
+type ForwardValues = _ForwardValues | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Accept_
@@ -291,28 +354,30 @@ type ForwardValues = typings.awsSdk.lightsailMod._ForwardValues | java.lang.Stri
   - typings.awsSdk.awsSdkStrings.`CloudFront-Is-Tablet-Viewer`
   - typings.awsSdk.awsSdkStrings.`CloudFront-Viewer-Country`
   - typings.awsSdk.awsSdkStrings.Host_
-  - typings.awsSdk.awsSdkStrings.Origin
+  - typings.awsSdk.awsSdkStrings.Origin_
   - typings.awsSdk.awsSdkStrings.Referer
   - java.lang.String
 */
-type HeaderEnum = typings.awsSdk.lightsailMod._HeaderEnum | java.lang.String
+type HeaderEnum = _HeaderEnum | String
 
-type HeaderForwardList = js.Array[typings.awsSdk.lightsailMod.HeaderEnum]
+type HeaderForwardList = js.Array[HeaderEnum]
 
-type HostKeysList = js.Array[typings.awsSdk.lightsailMod.HostKeyAttributes]
+type HostKeysList = js.Array[HostKeyAttributes]
 
-type InUseResourceCount = scala.Double
+type IAMAccessKeyId = String
 
-type IncludeCertificateDetails = scala.Boolean
+type InUseResourceCount = Double
+
+type IncludeCertificateDetails = Boolean
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ssh_
   - typings.awsSdk.awsSdkStrings.rdp
   - java.lang.String
 */
-type InstanceAccessProtocol = typings.awsSdk.lightsailMod._InstanceAccessProtocol | java.lang.String
+type InstanceAccessProtocol = _InstanceAccessProtocol | String
 
-type InstanceEntryList = js.Array[typings.awsSdk.lightsailMod.InstanceEntry]
+type InstanceEntryList = js.Array[InstanceEntry]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.LbDotRegistrationInProgress
@@ -328,10 +393,10 @@ type InstanceEntryList = js.Array[typings.awsSdk.lightsailMod.InstanceEntry]
   - typings.awsSdk.awsSdkStrings.InstanceDotIpUnusable
   - java.lang.String
 */
-type InstanceHealthReason = typings.awsSdk.lightsailMod._InstanceHealthReason | java.lang.String
+type InstanceHealthReason = _InstanceHealthReason | String
 
 /* Rewritten from type alias, can be one of: 
-  - typings.awsSdk.awsSdkStrings.initial_
+  - typings.awsSdk.awsSdkStrings.initial__
   - typings.awsSdk.awsSdkStrings.healthy__
   - typings.awsSdk.awsSdkStrings.unhealthy__
   - typings.awsSdk.awsSdkStrings.unused
@@ -339,11 +404,11 @@ type InstanceHealthReason = typings.awsSdk.lightsailMod._InstanceHealthReason | 
   - typings.awsSdk.awsSdkStrings.unavailable__
   - java.lang.String
 */
-type InstanceHealthState = typings.awsSdk.lightsailMod._InstanceHealthState | java.lang.String
+type InstanceHealthState = _InstanceHealthState | String
 
-type InstanceHealthSummaryList = js.Array[typings.awsSdk.lightsailMod.InstanceHealthSummary]
+type InstanceHealthSummaryList = js.Array[InstanceHealthSummary]
 
-type InstanceList = js.Array[typings.awsSdk.lightsailMod.Instance]
+type InstanceList = js.Array[Instance]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CPUUtilization
@@ -356,22 +421,22 @@ type InstanceList = js.Array[typings.awsSdk.lightsailMod.Instance]
   - typings.awsSdk.awsSdkStrings.BurstCapacityPercentage
   - java.lang.String
 */
-type InstanceMetricName = typings.awsSdk.lightsailMod._InstanceMetricName | java.lang.String
+type InstanceMetricName = _InstanceMetricName | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.LINUX_UNIX
   - typings.awsSdk.awsSdkStrings.WINDOWS
   - java.lang.String
 */
-type InstancePlatform = typings.awsSdk.lightsailMod._InstancePlatform | java.lang.String
+type InstancePlatform = _InstancePlatform | String
 
-type InstancePlatformList = js.Array[typings.awsSdk.lightsailMod.InstancePlatform]
+type InstancePlatformList = js.Array[InstancePlatform]
 
-type InstancePortInfoList = js.Array[typings.awsSdk.lightsailMod.InstancePortInfo]
+type InstancePortInfoList = js.Array[InstancePortInfo]
 
-type InstancePortStateList = js.Array[typings.awsSdk.lightsailMod.InstancePortState]
+type InstancePortStateList = js.Array[InstancePortState]
 
-type InstanceSnapshotList = js.Array[typings.awsSdk.lightsailMod.InstanceSnapshot]
+type InstanceSnapshotList = js.Array[InstanceSnapshot]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.pending__
@@ -379,31 +444,42 @@ type InstanceSnapshotList = js.Array[typings.awsSdk.lightsailMod.InstanceSnapsho
   - typings.awsSdk.awsSdkStrings.available__
   - java.lang.String
 */
-type InstanceSnapshotState = typings.awsSdk.lightsailMod._InstanceSnapshotState | java.lang.String
+type InstanceSnapshotState = _InstanceSnapshotState | String
 
-type IpAddress = java.lang.String
+type IpAddress = String
 
-type IpV6Address = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.dualstack
+  - typings.awsSdk.awsSdkStrings.ipv4__
+  - java.lang.String
+*/
+type IpAddressType = _IpAddressType | String
 
-type IsoDate = typings.std.Date
+type Ipv6Address = String
 
-type IssuerCA = java.lang.String
+type Ipv6AddressList = js.Array[Ipv6Address]
 
-type KeyAlgorithm = java.lang.String
+type IsoDate = js.Date
 
-type KeyPairList = js.Array[typings.awsSdk.lightsailMod.KeyPair]
+type IssuerCA = String
+
+type KeyAlgorithm = String
+
+type KeyPairList = js.Array[KeyPair]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.HealthCheckPath
   - typings.awsSdk.awsSdkStrings.SessionStickinessEnabled
   - typings.awsSdk.awsSdkStrings.SessionStickiness_LB_CookieDurationSeconds
+  - typings.awsSdk.awsSdkStrings.HttpsRedirectionEnabled
+  - typings.awsSdk.awsSdkStrings.TlsPolicyName
   - java.lang.String
 */
-type LoadBalancerAttributeName = typings.awsSdk.lightsailMod._LoadBalancerAttributeName | java.lang.String
+type LoadBalancerAttributeName = _LoadBalancerAttributeName | String
 
-type LoadBalancerConfigurationOptions = org.scalablytyped.runtime.StringDictionary[java.lang.String]
+type LoadBalancerConfigurationOptions = StringDictionary[String]
 
-type LoadBalancerList = js.Array[typings.awsSdk.lightsailMod.LoadBalancer]
+type LoadBalancerList = js.Array[LoadBalancer]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ClientTLSNegotiationErrorCount
@@ -420,14 +496,14 @@ type LoadBalancerList = js.Array[typings.awsSdk.lightsailMod.LoadBalancer]
   - typings.awsSdk.awsSdkStrings.RequestCount
   - java.lang.String
 */
-type LoadBalancerMetricName = typings.awsSdk.lightsailMod._LoadBalancerMetricName | java.lang.String
+type LoadBalancerMetricName = _LoadBalancerMetricName | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.HTTP_HTTPS
   - typings.awsSdk.awsSdkStrings.HTTP
   - java.lang.String
 */
-type LoadBalancerProtocol = typings.awsSdk.lightsailMod._LoadBalancerProtocol | java.lang.String
+type LoadBalancerProtocol = _LoadBalancerProtocol | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.active__
@@ -437,7 +513,7 @@ type LoadBalancerProtocol = typings.awsSdk.lightsailMod._LoadBalancerProtocol | 
   - typings.awsSdk.awsSdkStrings.unknown__
   - java.lang.String
 */
-type LoadBalancerState = typings.awsSdk.lightsailMod._LoadBalancerState | java.lang.String
+type LoadBalancerState = _LoadBalancerState | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PENDING_VALIDATION
@@ -445,11 +521,11 @@ type LoadBalancerState = typings.awsSdk.lightsailMod._LoadBalancerState | java.l
   - typings.awsSdk.awsSdkStrings.SUCCESS
   - java.lang.String
 */
-type LoadBalancerTlsCertificateDomainStatus = typings.awsSdk.lightsailMod._LoadBalancerTlsCertificateDomainStatus | java.lang.String
+type LoadBalancerTlsCertificateDomainStatus = _LoadBalancerTlsCertificateDomainStatus | String
 
-type LoadBalancerTlsCertificateDomainValidationOptionList = js.Array[typings.awsSdk.lightsailMod.LoadBalancerTlsCertificateDomainValidationOption]
+type LoadBalancerTlsCertificateDomainValidationOptionList = js.Array[LoadBalancerTlsCertificateDomainValidationOption]
 
-type LoadBalancerTlsCertificateDomainValidationRecordList = js.Array[typings.awsSdk.lightsailMod.LoadBalancerTlsCertificateDomainValidationRecord]
+type LoadBalancerTlsCertificateDomainValidationRecordList = js.Array[LoadBalancerTlsCertificateDomainValidationRecord]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NO_AVAILABLE_CONTACTS
@@ -459,9 +535,9 @@ type LoadBalancerTlsCertificateDomainValidationRecordList = js.Array[typings.aws
   - typings.awsSdk.awsSdkStrings.OTHER
   - java.lang.String
 */
-type LoadBalancerTlsCertificateFailureReason = typings.awsSdk.lightsailMod._LoadBalancerTlsCertificateFailureReason | java.lang.String
+type LoadBalancerTlsCertificateFailureReason = _LoadBalancerTlsCertificateFailureReason | String
 
-type LoadBalancerTlsCertificateList = js.Array[typings.awsSdk.lightsailMod.LoadBalancerTlsCertificate]
+type LoadBalancerTlsCertificateList = js.Array[LoadBalancerTlsCertificate]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PENDING_AUTO_RENEWAL
@@ -470,7 +546,7 @@ type LoadBalancerTlsCertificateList = js.Array[typings.awsSdk.lightsailMod.LoadB
   - typings.awsSdk.awsSdkStrings.FAILED
   - java.lang.String
 */
-type LoadBalancerTlsCertificateRenewalStatus = typings.awsSdk.lightsailMod._LoadBalancerTlsCertificateRenewalStatus | java.lang.String
+type LoadBalancerTlsCertificateRenewalStatus = _LoadBalancerTlsCertificateRenewalStatus | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.UNSPECIFIED
@@ -485,7 +561,7 @@ type LoadBalancerTlsCertificateRenewalStatus = typings.awsSdk.lightsailMod._Load
   - typings.awsSdk.awsSdkStrings.A_A_COMPROMISE
   - java.lang.String
 */
-type LoadBalancerTlsCertificateRevocationReason = typings.awsSdk.lightsailMod._LoadBalancerTlsCertificateRevocationReason | java.lang.String
+type LoadBalancerTlsCertificateRevocationReason = _LoadBalancerTlsCertificateRevocationReason | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PENDING_VALIDATION
@@ -498,13 +574,15 @@ type LoadBalancerTlsCertificateRevocationReason = typings.awsSdk.lightsailMod._L
   - typings.awsSdk.awsSdkStrings.UNKNOWN
   - java.lang.String
 */
-type LoadBalancerTlsCertificateStatus = typings.awsSdk.lightsailMod._LoadBalancerTlsCertificateStatus | java.lang.String
+type LoadBalancerTlsCertificateStatus = _LoadBalancerTlsCertificateStatus | String
 
-type LoadBalancerTlsCertificateSummaryList = js.Array[typings.awsSdk.lightsailMod.LoadBalancerTlsCertificateSummary]
+type LoadBalancerTlsCertificateSummaryList = js.Array[LoadBalancerTlsCertificateSummary]
 
-type LogEventList = js.Array[typings.awsSdk.lightsailMod.LogEvent]
+type LoadBalancerTlsPolicyList = js.Array[LoadBalancerTlsPolicy]
 
-type MetricDatapointList = js.Array[typings.awsSdk.lightsailMod.MetricDatapoint]
+type LogEventList = js.Array[LogEvent]
+
+type MetricDatapointList = js.Array[MetricDatapoint]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CPUUtilization
@@ -534,9 +612,9 @@ type MetricDatapointList = js.Array[typings.awsSdk.lightsailMod.MetricDatapoint]
   - typings.awsSdk.awsSdkStrings.BurstCapacityPercentage
   - java.lang.String
 */
-type MetricName = typings.awsSdk.lightsailMod._MetricName | java.lang.String
+type MetricName = _MetricName | String
 
-type MetricPeriod = scala.Double
+type MetricPeriod = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Minimum_
@@ -546,9 +624,9 @@ type MetricPeriod = scala.Double
   - typings.awsSdk.awsSdkStrings.SampleCount
   - java.lang.String
 */
-type MetricStatistic = typings.awsSdk.lightsailMod._MetricStatistic | java.lang.String
+type MetricStatistic = _MetricStatistic | String
 
-type MetricStatisticList = js.Array[typings.awsSdk.lightsailMod.MetricStatistic]
+type MetricStatisticList = js.Array[MetricStatistic]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Seconds_
@@ -580,7 +658,7 @@ type MetricStatisticList = js.Array[typings.awsSdk.lightsailMod.MetricStatistic]
   - typings.awsSdk.awsSdkStrings.None_
   - java.lang.String
 */
-type MetricUnit = typings.awsSdk.lightsailMod._MetricUnit | java.lang.String
+type MetricUnit = _MetricUnit | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.tcp_
@@ -589,13 +667,13 @@ type MetricUnit = typings.awsSdk.lightsailMod._MetricUnit | java.lang.String
   - typings.awsSdk.awsSdkStrings.icmp_
   - java.lang.String
 */
-type NetworkProtocol = typings.awsSdk.lightsailMod._NetworkProtocol | java.lang.String
+type NetworkProtocol = _NetworkProtocol | String
 
-type NonEmptyString = java.lang.String
+type NonEmptyString = String
 
-type NotificationTriggerList = js.Array[typings.awsSdk.lightsailMod.AlarmState]
+type NotificationTriggerList = js.Array[AlarmState]
 
-type OperationList = js.Array[typings.awsSdk.lightsailMod.Operation]
+type OperationList = js.Array[Operation]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NotStarted
@@ -605,7 +683,7 @@ type OperationList = js.Array[typings.awsSdk.lightsailMod.Operation]
   - typings.awsSdk.awsSdkStrings.Succeeded_
   - java.lang.String
 */
-type OperationStatus = typings.awsSdk.lightsailMod._OperationStatus | java.lang.String
+type OperationStatus = _OperationStatus | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DeleteKnownHostKeys
@@ -670,6 +748,7 @@ type OperationStatus = typings.awsSdk.lightsailMod._OperationStatus | java.lang.
   - typings.awsSdk.awsSdkStrings.AttachCertificateToDistribution
   - typings.awsSdk.awsSdkStrings.DetachCertificateFromDistribution
   - typings.awsSdk.awsSdkStrings.UpdateDistributionBundle
+  - typings.awsSdk.awsSdkStrings.SetIpAddressType
   - typings.awsSdk.awsSdkStrings.CreateCertificate
   - typings.awsSdk.awsSdkStrings.DeleteCertificate
   - typings.awsSdk.awsSdkStrings.CreateContainerService
@@ -679,29 +758,38 @@ type OperationStatus = typings.awsSdk.lightsailMod._OperationStatus | java.lang.
   - typings.awsSdk.awsSdkStrings.CreateContainerServiceRegistryLogin
   - typings.awsSdk.awsSdkStrings.RegisterContainerImage
   - typings.awsSdk.awsSdkStrings.DeleteContainerImage
+  - typings.awsSdk.awsSdkStrings.CreateBucket
+  - typings.awsSdk.awsSdkStrings.DeleteBucket
+  - typings.awsSdk.awsSdkStrings.CreateBucketAccessKey
+  - typings.awsSdk.awsSdkStrings.DeleteBucketAccessKey
+  - typings.awsSdk.awsSdkStrings.UpdateBucketBundle
+  - typings.awsSdk.awsSdkStrings.UpdateBucket
+  - typings.awsSdk.awsSdkStrings.SetResourceAccessForBucket
   - java.lang.String
 */
-type OperationType = typings.awsSdk.lightsailMod._OperationType | java.lang.String
+type OperationType = _OperationType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`http-only`
   - typings.awsSdk.awsSdkStrings.`https-only`
   - java.lang.String
 */
-type OriginProtocolPolicyEnum = typings.awsSdk.lightsailMod._OriginProtocolPolicyEnum | java.lang.String
+type OriginProtocolPolicyEnum = _OriginProtocolPolicyEnum | String
 
-type PendingMaintenanceActionList = js.Array[typings.awsSdk.lightsailMod.PendingMaintenanceAction]
+type PartnerIdList = js.Array[NonEmptyString]
 
-type Port = scala.Double
+type PendingMaintenanceActionList = js.Array[PendingMaintenanceAction]
+
+type Port = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Public_
   - typings.awsSdk.awsSdkStrings.Private_
   - java.lang.String
 */
-type PortAccessType = typings.awsSdk.lightsailMod._PortAccessType | java.lang.String
+type PortAccessType = _PortAccessType | String
 
-type PortInfoList = js.Array[typings.awsSdk.lightsailMod.PortInfo]
+type PortInfoList = js.Array[PortInfo]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DEFAULT
@@ -710,18 +798,18 @@ type PortInfoList = js.Array[typings.awsSdk.lightsailMod.PortInfo]
   - typings.awsSdk.awsSdkStrings.CLOSED
   - java.lang.String
 */
-type PortInfoSourceType = typings.awsSdk.lightsailMod._PortInfoSourceType | java.lang.String
+type PortInfoSourceType = _PortInfoSourceType | String
 
-type PortList = js.Array[typings.awsSdk.lightsailMod.Port]
+type PortList = js.Array[Port]
 
-type PortMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.lightsailMod.ContainerServiceProtocol]
+type PortMap = StringDictionary[ContainerServiceProtocol]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.open__
   - typings.awsSdk.awsSdkStrings.closed__
   - java.lang.String
 */
-type PortState = typings.awsSdk.lightsailMod._PortState | java.lang.String
+type PortState = _PortState | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Started_
@@ -729,9 +817,9 @@ type PortState = typings.awsSdk.lightsailMod._PortState | java.lang.String
   - typings.awsSdk.awsSdkStrings.Failed_
   - java.lang.String
 */
-type RecordState = typings.awsSdk.lightsailMod._RecordState | java.lang.String
+type RecordState = _RecordState | String
 
-type RegionList = js.Array[typings.awsSdk.lightsailMod.Region]
+type RegionList = js.Array[Region]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`us-east-1`
@@ -748,19 +836,20 @@ type RegionList = js.Array[typings.awsSdk.lightsailMod.Region]
   - typings.awsSdk.awsSdkStrings.`ap-southeast-2`
   - typings.awsSdk.awsSdkStrings.`ap-northeast-1`
   - typings.awsSdk.awsSdkStrings.`ap-northeast-2`
+  - typings.awsSdk.awsSdkStrings.`eu-north-1`
   - java.lang.String
 */
-type RegionName = typings.awsSdk.lightsailMod._RegionName | java.lang.String
+type RegionName = _RegionName | String
 
-type RelationalDatabaseBlueprintList = js.Array[typings.awsSdk.lightsailMod.RelationalDatabaseBlueprint]
+type RelationalDatabaseBlueprintList = js.Array[RelationalDatabaseBlueprint]
 
-type RelationalDatabaseBundleList = js.Array[typings.awsSdk.lightsailMod.RelationalDatabaseBundle]
+type RelationalDatabaseBundleList = js.Array[RelationalDatabaseBundle]
 
-type RelationalDatabaseEngine = typings.awsSdk.awsSdkStrings.mysql_ | java.lang.String
+type RelationalDatabaseEngine = mysql__ | String
 
-type RelationalDatabaseEventList = js.Array[typings.awsSdk.lightsailMod.RelationalDatabaseEvent]
+type RelationalDatabaseEventList = js.Array[RelationalDatabaseEvent]
 
-type RelationalDatabaseList = js.Array[typings.awsSdk.lightsailMod.RelationalDatabase]
+type RelationalDatabaseList = js.Array[RelationalDatabase]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CPUUtilization
@@ -771,9 +860,9 @@ type RelationalDatabaseList = js.Array[typings.awsSdk.lightsailMod.RelationalDat
   - typings.awsSdk.awsSdkStrings.NetworkTransmitThroughput
   - java.lang.String
 */
-type RelationalDatabaseMetricName = typings.awsSdk.lightsailMod._RelationalDatabaseMetricName | java.lang.String
+type RelationalDatabaseMetricName = _RelationalDatabaseMetricName | String
 
-type RelationalDatabaseParameterList = js.Array[typings.awsSdk.lightsailMod.RelationalDatabaseParameter]
+type RelationalDatabaseParameterList = js.Array[RelationalDatabaseParameter]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CURRENT
@@ -781,9 +870,9 @@ type RelationalDatabaseParameterList = js.Array[typings.awsSdk.lightsailMod.Rela
   - typings.awsSdk.awsSdkStrings.PENDING
   - java.lang.String
 */
-type RelationalDatabasePasswordVersion = typings.awsSdk.lightsailMod._RelationalDatabasePasswordVersion | java.lang.String
+type RelationalDatabasePasswordVersion = _RelationalDatabasePasswordVersion | String
 
-type RelationalDatabaseSnapshotList = js.Array[typings.awsSdk.lightsailMod.RelationalDatabaseSnapshot]
+type RelationalDatabaseSnapshotList = js.Array[RelationalDatabaseSnapshot]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PendingAutoRenewal
@@ -792,17 +881,24 @@ type RelationalDatabaseSnapshotList = js.Array[typings.awsSdk.lightsailMod.Relat
   - typings.awsSdk.awsSdkStrings.Failed_
   - java.lang.String
 */
-type RenewalStatus = typings.awsSdk.lightsailMod._RenewalStatus | java.lang.String
+type RenewalStatus = _RenewalStatus | String
 
-type RenewalStatusReason = java.lang.String
+type RenewalStatusReason = String
 
-type RequestFailureReason = java.lang.String
+type RequestFailureReason = String
 
-type ResourceArn = java.lang.String
+type ResourceArn = String
 
-type ResourceName = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.allow__
+  - typings.awsSdk.awsSdkStrings.deny__
+  - java.lang.String
+*/
+type ResourceBucketAccess = _ResourceBucketAccess | String
 
-type ResourceNameList = js.Array[typings.awsSdk.lightsailMod.ResourceName]
+type ResourceName = String
+
+type ResourceNameList = js.Array[ResourceName]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ContainerService
@@ -812,7 +908,7 @@ type ResourceNameList = js.Array[typings.awsSdk.lightsailMod.ResourceName]
   - typings.awsSdk.awsSdkStrings.InstanceSnapshot
   - typings.awsSdk.awsSdkStrings.Domain_
   - typings.awsSdk.awsSdkStrings.PeeredVpc
-  - typings.awsSdk.awsSdkStrings.LoadBalancer
+  - typings.awsSdk.awsSdkStrings.LoadBalancer_
   - typings.awsSdk.awsSdkStrings.LoadBalancerTlsCertificate
   - typings.awsSdk.awsSdkStrings.Disk
   - typings.awsSdk.awsSdkStrings.DiskSnapshot
@@ -824,33 +920,41 @@ type ResourceNameList = js.Array[typings.awsSdk.lightsailMod.ResourceName]
   - typings.awsSdk.awsSdkStrings.ContactMethod
   - typings.awsSdk.awsSdkStrings.Distribution
   - typings.awsSdk.awsSdkStrings.Certificate_
+  - typings.awsSdk.awsSdkStrings.Bucket
   - java.lang.String
 */
-type ResourceType = typings.awsSdk.lightsailMod._ResourceType | java.lang.String
+type ResourceType = _ResourceType | String
 
-type RevocationReason = java.lang.String
+type RevocationReason = String
 
-type SensitiveString = java.lang.String
+type SensitiveString = String
 
-type SerialNumber = java.lang.String
+type SerialNumber = String
 
-type StaticIpList = js.Array[typings.awsSdk.lightsailMod.StaticIp]
+type StaticIpList = js.Array[StaticIp]
 
-type StringList = js.Array[java.lang.String]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Active_
+  - typings.awsSdk.awsSdkStrings.Inactive_
+  - java.lang.String
+*/
+type StatusType = _StatusType | String
 
-type StringMax256 = java.lang.String
+type StringList = js.Array[String]
 
-type SubjectAlternativeNameList = js.Array[typings.awsSdk.lightsailMod.DomainName]
+type StringMax256 = String
 
-type TagKey = java.lang.String
+type SubjectAlternativeNameList = js.Array[DomainName]
 
-type TagKeyList = js.Array[typings.awsSdk.lightsailMod.TagKey]
+type TagKey = String
 
-type TagList = js.Array[typings.awsSdk.lightsailMod.Tag]
+type TagKeyList = js.Array[TagKey]
 
-type TagValue = java.lang.String
+type TagList = js.Array[Tag]
 
-type TimeOfDay = java.lang.String
+type TagValue = String
+
+type TimeOfDay = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.breaching
@@ -859,21 +963,21 @@ type TimeOfDay = java.lang.String
   - typings.awsSdk.awsSdkStrings.missing_
   - java.lang.String
 */
-type TreatMissingData = typings.awsSdk.lightsailMod._TreatMissingData | java.lang.String
+type TreatMissingData = _TreatMissingData | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2016-11-28`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.lightsailMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String
 
-type double = scala.Double
+type double = Double
 
-type float = scala.Double
+type float = Double
 
-type integer = scala.Double
+type integer = Double
 
-type long = scala.Double
+type long = Double
 
-type timestamp = typings.std.Date
+type timestamp = js.Date

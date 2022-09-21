@@ -2,8 +2,8 @@ package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientSqladmin.anon.Callback
-import typings.maximMazurokGapiClientSqladmin.anon.InstanceKey
-import typings.maximMazurokGapiClientSqladmin.anon.KeyOauthtoken
+import typings.maximMazurokGapiClientSqladmin.anon.ProjectQuotaUser
+import typings.maximMazurokGapiClientSqladmin.anon.QuotaUserResource
 import typings.maximMazurokGapiClientSqladmin.anon.Sha1Fingerprint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,7 +17,7 @@ trait SslCertsResource extends StObject {
     * Generates a short-lived X509 certificate containing the provided public key and signed by a private key specific to the target instance. Users may use the certificate to
     * authenticate as themselves when connecting to the database.
     */
-  def createEphemeral(request: InstanceKey): Request[SslCert] = js.native
+  def createEphemeral(request: ProjectQuotaUser): Request[SslCert] = js.native
   
   /** Deletes the SSL certificate. For First Generation instances, the certificate remains valid until the instance is restarted. */
   def delete(): Request[Operation] = js.native
@@ -29,7 +29,7 @@ trait SslCertsResource extends StObject {
   
   def insert(request: Callback, body: SslCertsInsertRequest): Request[SslCertsInsertResponse] = js.native
   /** Creates an SSL certificate and returns it along with the private key and server certificate authority. The new certificate will not be usable until the instance is restarted. */
-  def insert(request: KeyOauthtoken): Request[SslCertsInsertResponse] = js.native
+  def insert(request: QuotaUserResource): Request[SslCertsInsertResponse] = js.native
   
   /** Lists all of the current SSL certificates for the instance. */
   def list(): Request[SslCertsListResponse] = js.native

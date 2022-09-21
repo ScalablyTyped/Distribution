@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ChartGroup extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   var AxisGroup: XlAxisGroup = js.native
   
@@ -43,14 +43,14 @@ trait ChartGroup extends StObject {
   
   var Overlap: Double = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   val RadarAxisLabels: TickLabels = js.native
   
   var SecondPlotSize: Double = js.native
   
-  def SeriesCollection(): js.Any = js.native
-  def SeriesCollection(Index: js.Any): js.Any = js.native
+  def SeriesCollection(): Any = js.native
+  def SeriesCollection(Index: Any): Any = js.native
   
   val SeriesLines: typings.activexWord.Word.SeriesLines = js.native
   
@@ -60,7 +60,7 @@ trait ChartGroup extends StObject {
   
   var SplitType: XlChartSplitType = js.native
   
-  var SplitValue: js.Any = js.native
+  var SplitValue: Any = js.native
   
   var SubType: Double = js.native
   

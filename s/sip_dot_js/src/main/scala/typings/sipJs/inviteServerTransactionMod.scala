@@ -4,7 +4,6 @@ import typings.sipJs.coreTransportMod.Transport
 import typings.sipJs.messagesMod.IncomingRequestMessage
 import typings.sipJs.serverTransactionMod.ServerTransaction
 import typings.sipJs.transactionUserMod.ServerTransactionUser
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ object inviteServerTransactionMod {
   
   @JSImport("sip.js/lib/core/transactions/invite-server-transaction", "InviteServerTransaction")
   @js.native
-  class InviteServerTransaction protected () extends ServerTransaction {
+  open class InviteServerTransaction protected () extends ServerTransaction {
     /**
       * Constructor.
       * Upon construction, a "100 Trying" reply will be immediately sent.
@@ -26,15 +25,15 @@ object inviteServerTransactionMod {
       */
     def this(request: IncomingRequestMessage, transport: Transport, user: ServerTransactionUser) = this()
     
-    /* private */ var H: js.Any = js.native
+    /* private */ var H: Any = js.native
     
-    /* private */ var I: js.Any = js.native
+    /* private */ var I: Any = js.native
     
-    /* private */ var L: js.Any = js.native
+    /* private */ var L: Any = js.native
     
-    /* private */ var lastFinalResponse: js.Any = js.native
+    /* private */ var lastFinalResponse: Any = js.native
     
-    /* private */ var lastProvisionalResponse: js.Any = js.native
+    /* private */ var lastProvisionalResponse: Any = js.native
     
     /**
       * First, the procedures in [4] are followed, which attempt to deliver the response to a backup.
@@ -42,7 +41,7 @@ object inviteServerTransactionMod {
       * inform the TU that a failure has occurred, and MUST remain in the current state.
       * https://tools.ietf.org/html/rfc6026#section-8.8
       */
-    /* protected */ def onTransportError(error: Error): Unit = js.native
+    /* protected */ def onTransportError(error: js.Error): Unit = js.native
     
     /**
       * FIXME: This should not be here. It should be in the UAS.
@@ -62,7 +61,7 @@ object inviteServerTransactionMod {
       *   systems.
       * https://tools.ietf.org/html/rfc3261#section-13.3.1.1
       */
-    /* private */ var progressExtensionTimer: js.Any = js.native
+    /* private */ var progressExtensionTimer: Any = js.native
     
     /**
       * Retransmit the last 2xx response. This is a noop if not in the "accepted" state.
@@ -73,19 +72,19 @@ object inviteServerTransactionMod {
       * FIXME: UAS Provisional Retransmission Timer. See RFC 3261 Section 13.3.1.1
       * This is in the wrong place. This is not a transaction level thing. It's a UAS level thing.
       */
-    /* private */ var startProgressExtensionTimer: js.Any = js.native
+    /* private */ var startProgressExtensionTimer: Any = js.native
     
     /**
       * Execute a state transition.
       * @param newState - New state.
       */
-    /* private */ var stateTransition: js.Any = js.native
+    /* private */ var stateTransition: Any = js.native
     
     /**
       * FIXME: UAS Provisional Retransmission Timer id. See RFC 3261 Section 13.3.1.1
       * This is in the wrong place. This is not a transaction level thing. It's a UAS level thing.
       */
-    /* private */ var stopProgressExtensionTimer: js.Any = js.native
+    /* private */ var stopProgressExtensionTimer: Any = js.native
     
     /**
       * While in the "Proceeding" state, if the TU passes a response with status code
@@ -99,7 +98,7 @@ object inviteServerTransactionMod {
       * it is reset with the value of T2.
       * https://tools.ietf.org/html/rfc3261#section-17.2.1
       */
-    /* private */ var timerG: js.Any = js.native
+    /* private */ var timerG: Any = js.native
     
     /**
       * If timer H fires while in the "Completed" state, it implies that the ACK was never received.
@@ -107,13 +106,13 @@ object inviteServerTransactionMod {
       * indicate to the TU that a transaction failure has occurred.
       * https://tools.ietf.org/html/rfc3261#section-17.2.1
       */
-    /* private */ var timerH: js.Any = js.native
+    /* private */ var timerH: Any = js.native
     
     /**
       * Once timer I fires, the server MUST transition to the "Terminated" state.
       * https://tools.ietf.org/html/rfc3261#section-17.2.1
       */
-    /* private */ var timerI: js.Any = js.native
+    /* private */ var timerI: Any = js.native
     
     /**
       * When Timer L fires and the state machine is in the "Accepted" state, the machine MUST
@@ -124,6 +123,6 @@ object inviteServerTransactionMod {
       * https://tools.ietf.org/html/rfc6026#section-7.1
       * https://tools.ietf.org/html/rfc6026#section-8.7
       */
-    /* private */ var timerL: js.Any = js.native
+    /* private */ var timerL: Any = js.native
   }
 }

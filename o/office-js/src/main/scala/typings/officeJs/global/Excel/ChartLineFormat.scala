@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Encapsulates the formatting options for line elements.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @JSGlobal("Excel.ChartLineFormat")
 @js.native
-class ChartLineFormat ()
+open class ChartLineFormat ()
   extends StObject
      with typings.officeJs.Excel.ChartLineFormat {
   

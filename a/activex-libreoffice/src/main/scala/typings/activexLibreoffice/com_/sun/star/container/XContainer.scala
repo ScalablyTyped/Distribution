@@ -43,7 +43,7 @@ object XContainer {
   inline def apply(
     acquire: () => Unit,
     addContainerListener: XContainerListener => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeContainerListener: XContainerListener => Unit
   ): XContainer = {

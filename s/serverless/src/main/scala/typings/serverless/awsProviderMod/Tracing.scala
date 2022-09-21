@@ -1,5 +1,7 @@
 package typings.serverless.awsProviderMod
 
+import typings.serverless.serverlessStrings.Active
+import typings.serverless.serverlessStrings.PassThrough
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +10,7 @@ trait Tracing extends StObject {
   
   var apiGateway: Boolean
   
-  var lambda: js.UndefOr[Boolean] = js.undefined
+  var lambda: js.UndefOr[Active | PassThrough | Boolean] = js.undefined
 }
 object Tracing {
   
@@ -21,7 +23,7 @@ object Tracing {
     
     inline def setApiGateway(value: Boolean): Self = StObject.set(x, "apiGateway", value.asInstanceOf[js.Any])
     
-    inline def setLambda(value: Boolean): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
+    inline def setLambda(value: Active | PassThrough | Boolean): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
     
     inline def setLambdaUndefined: Self = StObject.set(x, "lambda", js.undefined)
   }

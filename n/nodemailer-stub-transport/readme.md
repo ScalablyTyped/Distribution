@@ -10,10 +10,10 @@ Stub transport for Nodemailer
 | ------------------ | :-------------: |
 | Full name          | nodemailer-stub-transport |
 | Keywords           | Stub, Nodemailer |
-| # releases         | 0 |
-| # dependents       | 55 |
-| # downloads        | 2176945 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 156069.33333333334 |
+| # stars            | 26.0 |
 
 ## Links
 - [Homepage](http://github.com/andris9/nodemailer-stub-transport)

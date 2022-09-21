@@ -9,12 +9,12 @@ object anon {
   @js.native
   trait Call extends StObject {
     
-    def apply(pluginName: String, info: PopcornPlugin): js.Any = js.native
-    def apply(pluginName: String, info: PopcornPlugin, manifest: js.Any): js.Any = js.native
+    def apply(pluginName: String, info: PopcornPlugin): Any = js.native
+    def apply(pluginName: String, info: PopcornPlugin, manifest: Any): Any = js.native
     
     var debug: Boolean = js.native
     
-    var errors: js.Array[js.Any] = js.native
+    var errors: js.Array[Any] = js.native
   }
   
   @js.native

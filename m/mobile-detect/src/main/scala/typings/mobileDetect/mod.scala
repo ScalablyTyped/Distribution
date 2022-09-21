@@ -3,7 +3,6 @@ package typings.mobileDetect
 import org.scalablytyped.runtime.StringDictionary
 import typings.mobileDetect.anon.FullPattern
 import typings.mobileDetect.anon.Oss
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ object mod {
   
   @JSImport("mobile-detect", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with MobileDetect {
     def this(userAgent: String) = this()
@@ -49,17 +48,17 @@ object mod {
     def isPhoneSized(maxPhoneWidth: Double): Boolean = js.native
     
     def `match`(pattern: String): Boolean = js.native
-    def `match`(pattern: RegExp): Boolean = js.native
+    def `match`(pattern: js.RegExp): Boolean = js.native
     
-    def mobile(): String = js.native
+    def mobile(): String | Null = js.native
     
     def mobileGrade(): String = js.native
     
     def os(): String = js.native
     
-    def phone(): String = js.native
+    def phone(): String | Null = js.native
     
-    def tablet(): String = js.native
+    def tablet(): String | Null = js.native
     
     def userAgent(): String = js.native
     
@@ -70,7 +69,7 @@ object mod {
     def versionStr(value: String): String = js.native
   }
   
-  type MobileDetectComplexRules = StringDictionary[String | RegExp | (js.Array[RegExp | String])]
+  type MobileDetectComplexRules = StringDictionary[String | js.RegExp | (js.Array[js.RegExp | String])]
   
   @js.native
   trait MobileDetectImpl extends StObject {
@@ -109,5 +108,5 @@ object mod {
     def prepareVersionNo(version: String): Double = js.native
   }
   
-  type MobileDetectRules = StringDictionary[String | RegExp]
+  type MobileDetectRules = StringDictionary[String | js.RegExp]
 }

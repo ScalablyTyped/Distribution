@@ -30,10 +30,10 @@ object RoleBasedFilter {
     
     inline def setExclusions(value: js.Array[String]): Self = StObject.set(x, "exclusions", value.asInstanceOf[js.Any])
     
-    inline def setExclusionsVarargs(value: String*): Self = StObject.set(x, "exclusions", js.Array(value :_*))
+    inline def setExclusionsVarargs(value: String*): Self = StObject.set(x, "exclusions", js.Array(value*))
     
     inline def setInclusions(value: js.Array[String]): Self = StObject.set(x, "inclusions", value.asInstanceOf[js.Any])
     
-    inline def setInclusionsVarargs(value: String*): Self = StObject.set(x, "inclusions", js.Array(value :_*))
+    inline def setInclusionsVarargs(value: String*): Self = StObject.set(x, "inclusions", js.Array(value*))
   }
 }

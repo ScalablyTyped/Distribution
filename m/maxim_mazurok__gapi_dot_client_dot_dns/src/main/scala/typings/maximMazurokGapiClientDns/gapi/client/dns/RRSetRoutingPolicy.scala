@@ -6,11 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RRSetRoutingPolicy extends StObject {
   
-  var geoPolicy: js.UndefOr[RRSetRoutingPolicyGeoPolicy] = js.undefined
+  var geo: js.UndefOr[RRSetRoutingPolicyGeoPolicy] = js.undefined
   
   var kind: js.UndefOr[String] = js.undefined
   
-  var wrrPolicy: js.UndefOr[RRSetRoutingPolicyWrrPolicy] = js.undefined
+  var primaryBackup: js.UndefOr[RRSetRoutingPolicyPrimaryBackupPolicy] = js.undefined
+  
+  var wrr: js.UndefOr[RRSetRoutingPolicyWrrPolicy] = js.undefined
 }
 object RRSetRoutingPolicy {
   
@@ -21,16 +23,20 @@ object RRSetRoutingPolicy {
   
   extension [Self <: RRSetRoutingPolicy](x: Self) {
     
-    inline def setGeoPolicy(value: RRSetRoutingPolicyGeoPolicy): Self = StObject.set(x, "geoPolicy", value.asInstanceOf[js.Any])
+    inline def setGeo(value: RRSetRoutingPolicyGeoPolicy): Self = StObject.set(x, "geo", value.asInstanceOf[js.Any])
     
-    inline def setGeoPolicyUndefined: Self = StObject.set(x, "geoPolicy", js.undefined)
+    inline def setGeoUndefined: Self = StObject.set(x, "geo", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    inline def setWrrPolicy(value: RRSetRoutingPolicyWrrPolicy): Self = StObject.set(x, "wrrPolicy", value.asInstanceOf[js.Any])
+    inline def setPrimaryBackup(value: RRSetRoutingPolicyPrimaryBackupPolicy): Self = StObject.set(x, "primaryBackup", value.asInstanceOf[js.Any])
     
-    inline def setWrrPolicyUndefined: Self = StObject.set(x, "wrrPolicy", js.undefined)
+    inline def setPrimaryBackupUndefined: Self = StObject.set(x, "primaryBackup", js.undefined)
+    
+    inline def setWrr(value: RRSetRoutingPolicyWrrPolicy): Self = StObject.set(x, "wrr", value.asInstanceOf[js.Any])
+    
+    inline def setWrrUndefined: Self = StObject.set(x, "wrr", js.undefined)
   }
 }

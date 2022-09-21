@@ -13,8 +13,7 @@ import typings.qs.qsStrings.indices
 import typings.qs.qsStrings.key
 import typings.qs.qsStrings.repeat
 import typings.qs.qsStrings.value
-import typings.std.Date
-import typings.std.RegExp
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,12 +26,14 @@ object mod {
   
   inline def parse(str: String): ParsedQs = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[ParsedQs]
   inline def parse(str: String, options: IParseOptionsdecodernever): ParsedQs = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParsedQs]
-  inline def parse(str: String, options: IParseOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def parse(str: String, options: IParseOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
+  inline def parse(str: Record[String, String]): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def parse(str: Record[String, String], options: IParseOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
-  inline def parse_StringDictionary(str: String): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def parse_StringDictionary(str: String): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
   
-  inline def stringify(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def stringify(obj: js.Any, options: IStringifyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(obj: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringify(obj: Any, options: IStringifyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait IParseOptions extends StObject {
     
@@ -54,11 +55,11 @@ object mod {
           /* defaultDecoder */ defaultDecoder, 
           /* charset */ String, 
           /* type */ key | value, 
-          js.Any
+          Any
         ]
       ] = js.undefined
     
-    var delimiter: js.UndefOr[String | RegExp] = js.undefined
+    var delimiter: js.UndefOr[String | js.RegExp] = js.undefined
     
     var depth: js.UndefOr[Double | `false`] = js.undefined
     
@@ -108,12 +109,12 @@ object mod {
       inline def setCommaUndefined: Self = StObject.set(x, "comma", js.undefined)
       
       inline def setDecoder(
-        value: (/* str */ String, /* defaultDecoder */ defaultDecoder, /* charset */ String, /* type */ key | value) => js.Any
+        value: (/* str */ String, /* defaultDecoder */ defaultDecoder, /* charset */ String, /* type */ key | value) => Any
       ): Self = StObject.set(x, "decoder", js.Any.fromFunction4(value))
       
       inline def setDecoderUndefined: Self = StObject.set(x, "decoder", js.undefined)
       
-      inline def setDelimiter(value: String | RegExp): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+      inline def setDelimiter(value: String | js.RegExp): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       
       inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
       
@@ -167,7 +168,7 @@ object mod {
     
     var encoder: js.UndefOr[
         js.Function4[
-          /* str */ js.Any, 
+          /* str */ Any, 
           /* defaultEncoder */ defaultEncoder, 
           /* charset */ String, 
           /* type */ key | value, 
@@ -176,18 +177,18 @@ object mod {
       ] = js.undefined
     
     var filter: js.UndefOr[
-        (js.Array[String | Double]) | (js.Function2[/* prefix */ String, /* value */ js.Any, js.Any])
+        (js.Array[String | Double]) | (js.Function2[/* prefix */ String, /* value */ Any, Any])
       ] = js.undefined
     
     var format: js.UndefOr[RFC1738 | RFC3986] = js.undefined
     
     var indices: js.UndefOr[Boolean] = js.undefined
     
-    var serializeDate: js.UndefOr[js.Function1[/* d */ Date, String]] = js.undefined
+    var serializeDate: js.UndefOr[js.Function1[/* d */ js.Date, String]] = js.undefined
     
     var skipNulls: js.UndefOr[Boolean] = js.undefined
     
-    var sort: js.UndefOr[js.Function2[/* a */ js.Any, /* b */ js.Any, Double]] = js.undefined
+    var sort: js.UndefOr[js.Function2[/* a */ Any, /* b */ Any, Double]] = js.undefined
     
     var strictNullHandling: js.UndefOr[Boolean] = js.undefined
   }
@@ -233,20 +234,18 @@ object mod {
       inline def setEncodeValuesOnlyUndefined: Self = StObject.set(x, "encodeValuesOnly", js.undefined)
       
       inline def setEncoder(
-        value: (/* str */ js.Any, /* defaultEncoder */ defaultEncoder, /* charset */ String, /* type */ key | value) => String
+        value: (/* str */ Any, /* defaultEncoder */ defaultEncoder, /* charset */ String, /* type */ key | value) => String
       ): Self = StObject.set(x, "encoder", js.Any.fromFunction4(value))
       
       inline def setEncoderUndefined: Self = StObject.set(x, "encoder", js.undefined)
       
-      inline def setFilter(
-        value: (js.Array[String | Double]) | (js.Function2[/* prefix */ String, /* value */ js.Any, js.Any])
-      ): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: (js.Array[String | Double]) | (js.Function2[/* prefix */ String, /* value */ Any, Any])): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      inline def setFilterFunction2(value: (/* prefix */ String, /* value */ js.Any) => js.Any): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
+      inline def setFilterFunction2(value: (/* prefix */ String, /* value */ Any) => Any): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
       
       inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      inline def setFilterVarargs(value: (String | Double)*): Self = StObject.set(x, "filter", js.Array(value :_*))
+      inline def setFilterVarargs(value: (String | Double)*): Self = StObject.set(x, "filter", js.Array(value*))
       
       inline def setFormat(value: RFC1738 | RFC3986): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -256,7 +255,7 @@ object mod {
       
       inline def setIndicesUndefined: Self = StObject.set(x, "indices", js.undefined)
       
-      inline def setSerializeDate(value: /* d */ Date => String): Self = StObject.set(x, "serializeDate", js.Any.fromFunction1(value))
+      inline def setSerializeDate(value: /* d */ js.Date => String): Self = StObject.set(x, "serializeDate", js.Any.fromFunction1(value))
       
       inline def setSerializeDateUndefined: Self = StObject.set(x, "serializeDate", js.undefined)
       
@@ -264,7 +263,7 @@ object mod {
       
       inline def setSkipNullsUndefined: Self = StObject.set(x, "skipNulls", js.undefined)
       
-      inline def setSort(value: (/* a */ js.Any, /* b */ js.Any) => Double): Self = StObject.set(x, "sort", js.Any.fromFunction2(value))
+      inline def setSort(value: (/* a */ Any, /* b */ Any) => Double): Self = StObject.set(x, "sort", js.Any.fromFunction2(value))
       
       inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
       
@@ -287,14 +286,14 @@ object mod {
   
   type defaultDecoder = js.Function3[
     /* str */ String, 
-    /* decoder */ js.UndefOr[js.Any], 
+    /* decoder */ js.UndefOr[Any], 
     /* charset */ js.UndefOr[String], 
     String
   ]
   
   type defaultEncoder = js.Function3[
-    /* str */ js.Any, 
-    /* defaultEncoder */ js.UndefOr[js.Any], 
+    /* str */ Any, 
+    /* defaultEncoder */ js.UndefOr[Any], 
     /* charset */ js.UndefOr[String], 
     String
   ]

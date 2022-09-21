@@ -28,7 +28,7 @@ object mod {
   
   @JSImport("turndown", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with TurndownService {
     def this(options: Options) = this()
@@ -154,7 +154,7 @@ object mod {
       
       inline def setFilterFunction2(value: (/* node */ HTMLElement, /* options */ Options) => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
       
-      inline def setFilterVarargs(value: TagName*): Self = StObject.set(x, "filter", js.Array(value :_*))
+      inline def setFilterVarargs(value: TagName*): Self = StObject.set(x, "filter", js.Array(value*))
       
       inline def setReplacement(value: (/* content */ String, /* node */ Node, /* options */ Options) => String): Self = StObject.set(x, "replacement", js.Any.fromFunction3(value))
       
@@ -176,7 +176,7 @@ object mod {
     @JSName("defaultRule")
     var defaultRule_Original: ReplacementFunction
     
-    def forEach(callback: js.Function2[/* rule */ Rule, /* index */ Double, js.Any]): Unit
+    def forEach(callback: js.Function2[/* rule */ Rule, /* index */ Double, Any]): Unit
     
     def forNode(node: Node): Rule
     
@@ -197,7 +197,7 @@ object mod {
       array: js.Array[Rule],
       blankRule: (/* content */ String, /* node */ Node, /* options */ Options) => String,
       defaultRule: (/* content */ String, /* node */ Node, /* options */ Options) => String,
-      forEach: js.Function2[/* rule */ Rule, /* index */ Double, js.Any] => Unit,
+      forEach: js.Function2[/* rule */ Rule, /* index */ Double, Any] => Unit,
       forNode: Node => Rule,
       keep: Filter => Unit,
       keepReplacement: (/* content */ String, /* node */ Node, /* options */ Options) => String,
@@ -214,13 +214,13 @@ object mod {
       
       inline def setArray(value: js.Array[Rule]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
       
-      inline def setArrayVarargs(value: Rule*): Self = StObject.set(x, "array", js.Array(value :_*))
+      inline def setArrayVarargs(value: Rule*): Self = StObject.set(x, "array", js.Array(value*))
       
       inline def setBlankRule(value: (/* content */ String, /* node */ Node, /* options */ Options) => String): Self = StObject.set(x, "blankRule", js.Any.fromFunction3(value))
       
       inline def setDefaultRule(value: (/* content */ String, /* node */ Node, /* options */ Options) => String): Self = StObject.set(x, "defaultRule", js.Any.fromFunction3(value))
       
-      inline def setForEach(value: js.Function2[/* rule */ Rule, /* index */ Double, js.Any] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
+      inline def setForEach(value: js.Function2[/* rule */ Rule, /* index */ Double, Any] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
       
       inline def setForNode(value: Node => Rule): Self = StObject.set(x, "forNode", js.Any.fromFunction1(value))
       
@@ -238,14 +238,12 @@ object mod {
     - typings.turndown.turndownStrings.a
     - typings.turndown.turndownStrings.abbr
     - typings.turndown.turndownStrings.address
-    - typings.turndown.turndownStrings.applet
     - typings.turndown.turndownStrings.area
     - typings.turndown.turndownStrings.article
     - typings.turndown.turndownStrings.aside
     - typings.turndown.turndownStrings.audio
     - typings.turndown.turndownStrings.b
     - typings.turndown.turndownStrings.base
-    - typings.turndown.turndownStrings.basefont
     - typings.turndown.turndownStrings.bdi
     - typings.turndown.turndownStrings.bdo
     - typings.turndown.turndownStrings.blockquote
@@ -265,7 +263,6 @@ object mod {
     - typings.turndown.turndownStrings.details
     - typings.turndown.turndownStrings.dfn
     - typings.turndown.turndownStrings.dialog
-    - typings.turndown.turndownStrings.dir
     - typings.turndown.turndownStrings.div
     - typings.turndown.turndownStrings.dl
     - typings.turndown.turndownStrings.dt
@@ -274,11 +271,8 @@ object mod {
     - typings.turndown.turndownStrings.fieldset
     - typings.turndown.turndownStrings.figcaption
     - typings.turndown.turndownStrings.figure
-    - typings.turndown.turndownStrings.font
     - typings.turndown.turndownStrings.footer
     - typings.turndown.turndownStrings.form
-    - typings.turndown.turndownStrings.frame
-    - typings.turndown.turndownStrings.frameset
     - typings.turndown.turndownStrings.h1
     - typings.turndown.turndownStrings.h2
     - typings.turndown.turndownStrings.h3
@@ -303,7 +297,6 @@ object mod {
     - typings.turndown.turndownStrings.main
     - typings.turndown.turndownStrings.map
     - typings.turndown.turndownStrings.mark
-    - typings.turndown.turndownStrings.marquee
     - typings.turndown.turndownStrings.menu
     - typings.turndown.turndownStrings.meta
     - typings.turndown.turndownStrings.meter
@@ -315,7 +308,6 @@ object mod {
     - typings.turndown.turndownStrings.option
     - typings.turndown.turndownStrings.output
     - typings.turndown.turndownStrings.p
-    - typings.turndown.turndownStrings.param
     - typings.turndown.turndownStrings.picture
     - typings.turndown.turndownStrings.pre
     - typings.turndown.turndownStrings.progress

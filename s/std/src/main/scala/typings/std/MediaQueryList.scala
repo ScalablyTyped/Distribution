@@ -11,53 +11,60 @@ trait MediaQueryList
   extends StObject
      with EventTarget {
   
+  /* standard dom */
   @JSName("addEventListener")
   def addEventListener_change(
     `type`: change,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaQueryListEvent, js.Any]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaQueryListEvent, Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_change(
     `type`: change,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaQueryListEvent, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaQueryListEvent, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_change(
     `type`: change,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaQueryListEvent, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaQueryListEvent, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   
   /** @deprecated */
+  /* standard dom */
   def addListener(): Unit = js.native
-  def addListener(listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaQueryListEvent, js.Any]): Unit = js.native
+  def addListener(callback: js.ThisFunction1[/* this */ this.type, /* ev */ MediaQueryListEvent, Any]): Unit = js.native
   
+  /* standard dom */
   val matches: scala.Boolean = js.native
   
+  /* standard dom */
   val media: java.lang.String = js.native
   
-  var onchange: (js.ThisFunction1[/* this */ this.type, /* ev */ MediaQueryListEvent, js.Any]) | Null = js.native
+  /* standard dom */
+  var onchange: (js.ThisFunction1[/* this */ this.type, /* ev */ MediaQueryListEvent, Any]) | Null = js.native
   
+  /* standard dom */
   @JSName("removeEventListener")
   def removeEventListener_change(
     `type`: change,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaQueryListEvent, js.Any]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaQueryListEvent, Any]
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_change(
     `type`: change,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaQueryListEvent, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaQueryListEvent, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_change(
     `type`: change,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaQueryListEvent, js.Any],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaQueryListEvent, Any],
     options: EventListenerOptions
   ): Unit = js.native
   
   /** @deprecated */
+  /* standard dom */
   def removeListener(): Unit = js.native
-  def removeListener(listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaQueryListEvent, js.Any]): Unit = js.native
+  def removeListener(callback: js.ThisFunction1[/* this */ this.type, /* ev */ MediaQueryListEvent, Any]): Unit = js.native
 }

@@ -22,12 +22,12 @@ trait Phonon extends StObject {
   def alert(text: String, title: Unit, cancelable: Boolean, textOk: String): PhononDialogComponent = js.native
   def alert(text: String, title: Unit, cancelable: Unit, textOk: String): PhononDialogComponent = js.native
   
-  def autocomplete(input: String): js.Any = js.native
-  def autocomplete(input: String, o: Options): js.Any = js.native
-  def autocomplete(input: Element): js.Any = js.native
-  def autocomplete(input: Element, o: Options): js.Any = js.native
-  def autocomplete(input: HTMLElement): js.Any = js.native
-  def autocomplete(input: HTMLElement, o: Options): js.Any = js.native
+  def autocomplete(input: String): Any = js.native
+  def autocomplete(input: String, o: Options): Any = js.native
+  def autocomplete(input: Element): Any = js.native
+  def autocomplete(input: Element, o: Options): Any = js.native
+  def autocomplete(input: HTMLElement): Any = js.native
+  def autocomplete(input: HTMLElement, o: Options): Any = js.native
   
   var browser: PhononBrowserObject = js.native
   

@@ -20,13 +20,13 @@ trait FlashText extends StObject {
   
   var embeddedCharacters: String
   
-  def getTextAttr(): js.Any
+  def getTextAttr(): Any
   
-  def getTextString(): js.Any
+  def getTextString(): Any
   
-  def setTextAttr(): js.Any
+  def setTextAttr(): Any
   
-  def setTextString(): js.Any
+  def setTextString(): Any
 }
 object FlashText {
   
@@ -38,10 +38,10 @@ object FlashText {
     border: Boolean,
     description: String,
     embeddedCharacters: String,
-    getTextAttr: () => js.Any,
-    getTextString: () => js.Any,
-    setTextAttr: () => js.Any,
-    setTextString: () => js.Any
+    getTextAttr: () => Any,
+    getTextString: () => Any,
+    setTextAttr: () => Any,
+    setTextString: () => Any
   ): FlashText = {
     val __obj = js.Dynamic.literal(accName = accName.asInstanceOf[js.Any], antiAliasSharpness = antiAliasSharpness.asInstanceOf[js.Any], antiAliasThickness = antiAliasThickness.asInstanceOf[js.Any], autoExpand = autoExpand.asInstanceOf[js.Any], border = border.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], embeddedCharacters = embeddedCharacters.asInstanceOf[js.Any], getTextAttr = js.Any.fromFunction0(getTextAttr), getTextString = js.Any.fromFunction0(getTextString), setTextAttr = js.Any.fromFunction0(setTextAttr), setTextString = js.Any.fromFunction0(setTextString))
     __obj.asInstanceOf[FlashText]
@@ -63,12 +63,12 @@ object FlashText {
     
     inline def setEmbeddedCharacters(value: String): Self = StObject.set(x, "embeddedCharacters", value.asInstanceOf[js.Any])
     
-    inline def setGetTextAttr(value: () => js.Any): Self = StObject.set(x, "getTextAttr", js.Any.fromFunction0(value))
+    inline def setGetTextAttr(value: () => Any): Self = StObject.set(x, "getTextAttr", js.Any.fromFunction0(value))
     
-    inline def setGetTextString(value: () => js.Any): Self = StObject.set(x, "getTextString", js.Any.fromFunction0(value))
+    inline def setGetTextString(value: () => Any): Self = StObject.set(x, "getTextString", js.Any.fromFunction0(value))
     
-    inline def setSetTextAttr(value: () => js.Any): Self = StObject.set(x, "setTextAttr", js.Any.fromFunction0(value))
+    inline def setSetTextAttr(value: () => Any): Self = StObject.set(x, "setTextAttr", js.Any.fromFunction0(value))
     
-    inline def setSetTextString(value: () => js.Any): Self = StObject.set(x, "setTextString", js.Any.fromFunction0(value))
+    inline def setSetTextString(value: () => Any): Self = StObject.set(x, "setTextString", js.Any.fromFunction0(value))
   }
 }

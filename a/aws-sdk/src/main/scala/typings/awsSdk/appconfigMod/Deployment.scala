@@ -12,9 +12,14 @@ trait Deployment extends StObject {
   var ApplicationId: js.UndefOr[Id] = js.undefined
   
   /**
+    * A list of extensions that were processed as part of the deployment. The extensions that were previously associated to the configuration profile, environment, or the application when StartDeployment was called.
+    */
+  var AppliedExtensions: js.UndefOr[typings.awsSdk.appconfigMod.AppliedExtensions] = js.undefined
+  
+  /**
     * The time the deployment completed. 
     */
-  var CompletedAt: js.UndefOr[Iso8601DateTime] = js.undefined
+  var CompletedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Information about the source location of the configuration.
@@ -67,7 +72,7 @@ trait Deployment extends StObject {
   var EventLog: js.UndefOr[DeploymentEvents] = js.undefined
   
   /**
-    * The amount of time AppConfig monitored for alarms before considering the deployment to be complete and no longer eligible for automatic roll back.
+    * The amount of time that AppConfig monitored for alarms before considering the deployment to be complete and no longer eligible for automatic rollback.
     */
   var FinalBakeTimeInMinutes: js.UndefOr[MinutesBetween0And24Hours] = js.undefined
   
@@ -89,7 +94,7 @@ trait Deployment extends StObject {
   /**
     * The time the deployment started.
     */
-  var StartedAt: js.UndefOr[Iso8601DateTime] = js.undefined
+  var StartedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The state of the deployment.
@@ -109,7 +114,13 @@ object Deployment {
     
     inline def setApplicationIdUndefined: Self = StObject.set(x, "ApplicationId", js.undefined)
     
-    inline def setCompletedAt(value: Iso8601DateTime): Self = StObject.set(x, "CompletedAt", value.asInstanceOf[js.Any])
+    inline def setAppliedExtensions(value: AppliedExtensions): Self = StObject.set(x, "AppliedExtensions", value.asInstanceOf[js.Any])
+    
+    inline def setAppliedExtensionsUndefined: Self = StObject.set(x, "AppliedExtensions", js.undefined)
+    
+    inline def setAppliedExtensionsVarargs(value: AppliedExtension*): Self = StObject.set(x, "AppliedExtensions", js.Array(value*))
+    
+    inline def setCompletedAt(value: js.Date): Self = StObject.set(x, "CompletedAt", value.asInstanceOf[js.Any])
     
     inline def setCompletedAtUndefined: Self = StObject.set(x, "CompletedAt", js.undefined)
     
@@ -153,7 +164,7 @@ object Deployment {
     
     inline def setEventLogUndefined: Self = StObject.set(x, "EventLog", js.undefined)
     
-    inline def setEventLogVarargs(value: DeploymentEvent*): Self = StObject.set(x, "EventLog", js.Array(value :_*))
+    inline def setEventLogVarargs(value: DeploymentEvent*): Self = StObject.set(x, "EventLog", js.Array(value*))
     
     inline def setFinalBakeTimeInMinutes(value: MinutesBetween0And24Hours): Self = StObject.set(x, "FinalBakeTimeInMinutes", value.asInstanceOf[js.Any])
     
@@ -171,7 +182,7 @@ object Deployment {
     
     inline def setPercentageCompleteUndefined: Self = StObject.set(x, "PercentageComplete", js.undefined)
     
-    inline def setStartedAt(value: Iso8601DateTime): Self = StObject.set(x, "StartedAt", value.asInstanceOf[js.Any])
+    inline def setStartedAt(value: js.Date): Self = StObject.set(x, "StartedAt", value.asInstanceOf[js.Any])
     
     inline def setStartedAtUndefined: Self = StObject.set(x, "StartedAt", js.undefined)
     

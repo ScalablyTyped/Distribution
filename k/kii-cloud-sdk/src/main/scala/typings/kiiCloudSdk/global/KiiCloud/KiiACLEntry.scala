@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("KiiCloud.KiiACLEntry")
 @js.native
-class KiiACLEntry ()
+open class KiiACLEntry ()
   extends StObject
      with typings.kiiCloudSdk.KiiCloud.KiiACLEntry {
   

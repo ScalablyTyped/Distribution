@@ -1,6 +1,5 @@
 package typings.restify.mod
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,13 +12,13 @@ trait Route extends StObject {
   
   var name: String
   
-  var path: String | RegExp
+  var path: String | js.RegExp
   
   var spec: RouteSpec
 }
 object Route {
   
-  inline def apply(chain: Chain, method: String, name: String, path: String | RegExp, spec: RouteSpec): Route = {
+  inline def apply(chain: Chain, method: String, name: String, path: String | js.RegExp, spec: RouteSpec): Route = {
     val __obj = js.Dynamic.literal(chain = chain.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any])
     __obj.asInstanceOf[Route]
   }
@@ -32,7 +31,7 @@ object Route {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setPath(value: String | RegExp): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String | js.RegExp): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     inline def setSpec(value: RouteSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
   }

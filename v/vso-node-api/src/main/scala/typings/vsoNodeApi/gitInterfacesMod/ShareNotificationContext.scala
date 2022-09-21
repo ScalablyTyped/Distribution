@@ -30,6 +30,6 @@ object ShareNotificationContext {
     
     inline def setReceivers(value: js.Array[IdentityRef]): Self = StObject.set(x, "receivers", value.asInstanceOf[js.Any])
     
-    inline def setReceiversVarargs(value: IdentityRef*): Self = StObject.set(x, "receivers", js.Array(value :_*))
+    inline def setReceiversVarargs(value: IdentityRef*): Self = StObject.set(x, "receivers", js.Array(value*))
   }
 }

@@ -15,7 +15,7 @@ object listMod {
   
   @JSImport("@ant-design/react-native/lib/list", JSImport.Default)
   @js.native
-  class default () extends List
+  open class default () extends List
   /* static members */
   object default {
     
@@ -30,8 +30,7 @@ object listMod {
   }
   
   @js.native
-  trait List
-    extends Component[ListProps, js.Any, js.Any]
+  trait List extends Component[ListProps, Any, Any]
   
   trait ListProps
     extends StObject

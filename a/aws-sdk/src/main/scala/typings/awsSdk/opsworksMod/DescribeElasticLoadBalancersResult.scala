@@ -24,6 +24,6 @@ object DescribeElasticLoadBalancersResult {
     
     inline def setElasticLoadBalancersUndefined: Self = StObject.set(x, "ElasticLoadBalancers", js.undefined)
     
-    inline def setElasticLoadBalancersVarargs(value: ElasticLoadBalancer*): Self = StObject.set(x, "ElasticLoadBalancers", js.Array(value :_*))
+    inline def setElasticLoadBalancersVarargs(value: ElasticLoadBalancer*): Self = StObject.set(x, "ElasticLoadBalancers", js.Array(value*))
   }
 }

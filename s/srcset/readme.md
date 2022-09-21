@@ -1,7 +1,7 @@
 
 # Scala.js typings for srcset
 
-Typings are for version 3.0.0
+Typings are for version 5.0.0
 
 ## Library description:
 Parse and stringify the HTML `<img>` srcset attribute
@@ -11,9 +11,9 @@ Parse and stringify the HTML `<img>` srcset attribute
 | Full name          | srcset |
 | Keywords           | html, attribute, image, img, src, parse, stringify, srcset, responsive, picture, element |
 | # releases         | 4 |
-| # dependents       | 39 |
-| # downloads        | 36362826 |
-| # stars            | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 1738267.3333333333 |
+| # stars            | 121.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/srcset#readme)

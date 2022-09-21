@@ -11,5 +11,7 @@ object AnimationKeyInterpolation extends StObject {
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.babylonjs.BABYLON.AnimationKeyInterpolation & Double] = js.native
   
+  /* 0 */ val NONE: typings.babylonjs.BABYLON.AnimationKeyInterpolation.NONE & Double = js.native
+  
   /* 1 */ val STEP: typings.babylonjs.BABYLON.AnimationKeyInterpolation.STEP & Double = js.native
 }

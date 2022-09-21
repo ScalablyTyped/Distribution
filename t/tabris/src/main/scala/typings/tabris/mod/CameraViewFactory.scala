@@ -10,5 +10,5 @@ trait CameraViewFactory
   extends Factory[
       CameraViewConstructor, 
       InstanceType[CameraViewConstructor], 
-      js.Function1[/* repeated */ js.Any, InstanceType[CameraViewConstructor]]
+      js.Function1[/* repeated */ Any, Widget[Any]]
     ]

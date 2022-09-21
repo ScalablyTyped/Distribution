@@ -11,14 +11,11 @@ Connect/Express middleware that auto provides mysql connections.
 | Full name          | express-myconnection |
 | Keywords           | express, mysql, connect, pool, middleware |
 | # releases         | 1 |
-| # dependents       | 12 |
-| # downloads        | 41522 |
-| # stars            | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 3768.0 |
+| # stars            | 33.0 |
 
 ## Links
-- [Homepage](http://github.com/pwalczyszyn/express-myconnection)
-- [Bugs](https://github.com/pwalczyszyn/express-myconnection/issues)
-- [Repository](https://github.com/pwalczyszyn/express-myconnection)
 - [Npm](https://www.npmjs.com/package/express-myconnection)
     
 

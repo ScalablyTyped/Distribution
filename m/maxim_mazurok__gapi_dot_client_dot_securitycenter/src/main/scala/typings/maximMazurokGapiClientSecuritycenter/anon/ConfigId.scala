@@ -35,7 +35,7 @@ trait ConfigId extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Required. Resource name of the new notification config's parent. Its format is "organizations/[organization_id]". */
+  /** Required. Resource name of the new notification config's parent. Its format is "organizations/[organization_id]" or "projects/[project_id]". */
   var parent: String
   
   /** Returns response with indentations and line breaks. */

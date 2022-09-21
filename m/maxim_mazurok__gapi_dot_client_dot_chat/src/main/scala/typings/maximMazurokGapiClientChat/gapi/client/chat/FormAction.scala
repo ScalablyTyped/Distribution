@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FormAction extends StObject {
   
   /**
-    * The method name is used to identify which part of the form triggered the form submission. This information is echoed back to the bot as part of the card click event. The same method
-    * name can be used for several elements that trigger a common behavior if desired.
+    * The method name is used to identify which part of the form triggered the form submission. This information is echoed back to the Chat app as part of the card click event. The same
+    * method name can be used for several elements that trigger a common behavior if desired.
     */
   var actionMethodName: js.UndefOr[String] = js.undefined
   
@@ -32,6 +32,6 @@ object FormAction {
     
     inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    inline def setParametersVarargs(value: ActionParameter*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: ActionParameter*): Self = StObject.set(x, "parameters", js.Array(value*))
   }
 }

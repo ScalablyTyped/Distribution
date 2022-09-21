@@ -1,6 +1,5 @@
 package typings.devexpressWeb.global
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("MoreButtonClickedEventArgs")
 @js.native
-class MoreButtonClickedEventArgs protected ()
+open class MoreButtonClickedEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.MoreButtonClickedEventArgs {
   /**
@@ -18,7 +17,7 @@ class MoreButtonClickedEventArgs protected ()
     * @param dateTime A DateTime value which corresponds to the top visible time of the target view.
     * @param resource A Resource associated with the time cell where the "More" button is located.
     */
-  def this(dateTime: Date, resource: String) = this()
+  def this(dateTime: js.Date, resource: String) = this()
   
   /**
     * Gets or sets whether an event is handled. If it is handled, default actions are not required.
@@ -48,5 +47,5 @@ class MoreButtonClickedEventArgs protected ()
     * Gets the Start or End values of the target appointment.
     */
   /* CompleteClass */
-  var targetDateTime: Date = js.native
+  var targetDateTime: js.Date = js.native
 }

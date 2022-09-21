@@ -11,19 +11,40 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AcceptInvitation extends StObject {
   
+  /**
+    * @deprecated octokit.rest.repos.acceptInvitation() has been renamed to octokit.rest.repos.acceptInvitationForAuthenticatedUser() (2021-10-05)
+    */
   def acceptInvitation(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /user/repository_invitations/:invitation_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /user/repository_invitations/{invitation_id}']['response'] */ js.Any
   ]
   def acceptInvitation(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /user/repository_invitations/:invitation_id']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /user/repository_invitations/{invitation_id}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /user/repository_invitations/:invitation_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /user/repository_invitations/{invitation_id}']['response'] */ js.Any
   ]
+  
+  def acceptInvitationForAuthenticatedUser(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /user/repository_invitations/{invitation_id}']['response'] */ js.Any
+  ]
+  def acceptInvitationForAuthenticatedUser(
+    params: RequestParameters & (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /user/repository_invitations/{invitation_id}']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /user/repository_invitations/{invitation_id}']['response'] */ js.Any
+  ]
+  @JSName("acceptInvitationForAuthenticatedUser")
+  var acceptInvitationForAuthenticatedUser_Original: `516`
+  
+  /**
+    * @deprecated octokit.rest.repos.acceptInvitation() has been renamed to octokit.rest.repos.acceptInvitationForAuthenticatedUser() (2021-10-05)
+    */
   @JSName("acceptInvitation")
-  var acceptInvitation_Original: `339`
+  var acceptInvitation_Original: `516`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -35,15 +56,15 @@ trait AcceptInvitation extends StObject {
     * | `array` | The GitHub Apps that have push access to this branch. Use the app's `slug`. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
     */
   def addAppAccessRestrictions(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/branches/:branch/protection/restrictions/apps']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/apps']['response'] */ js.Any
   ]
   def addAppAccessRestrictions(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/branches/:branch/protection/restrictions/apps']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/apps']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/branches/:branch/protection/restrictions/apps']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/apps']['response'] */ js.Any
   ]
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -55,67 +76,87 @@ trait AcceptInvitation extends StObject {
     * | `array` | The GitHub Apps that have push access to this branch. Use the app's `slug`. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
     */
   @JSName("addAppAccessRestrictions")
-  var addAppAccessRestrictions_Original: `340`
+  var addAppAccessRestrictions_Original: `517`
   
   /**
-    * This endpoint triggers [notifications](https://docs.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
+    * This endpoint triggers [notifications](https://docs.github.com/github/managing-subscriptions-and-notifications-on-github/about-notifications). Creating content too quickly using this endpoint may result in secondary rate limiting. See "[Secondary rate limits](https://docs.github.com/rest/overview/resources-in-the-rest-api#secondary-rate-limits)" and "[Dealing with secondary rate limits](https://docs.github.com/rest/guides/best-practices-for-integrators#dealing-with-secondary-rate-limits)" for details.
     *
-    * For more information the permission levels, see "[Repository permission levels for an organization](https://docs.github.com/en/github/setting-up-and-managing-organizations-and-teams/repository-permission-levels-for-an-organization#permission-levels-for-repositories-owned-by-an-organization)".
+    * Adding an outside collaborator may be restricted by enterprise administrators. For more information, see "[Enforcing repository management policies in your enterprise](https://docs.github.com/enterprise-cloud@latest/admin/policies/enforcing-policies-for-your-enterprise/enforcing-repository-management-policies-in-your-enterprise#enforcing-a-policy-for-inviting-outside-collaborators-to-repositories)."
     *
-    * Note that, if you choose not to pass any parameters, you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
+    * For more information on permission levels, see "[Repository permission levels for an organization](https://docs.github.com/github/setting-up-and-managing-organizations-and-teams/repository-permission-levels-for-an-organization#permission-levels-for-repositories-owned-by-an-organization)". There are restrictions on which permissions can be granted to organization members when an organization base role is in place. In this case, the permission being given must be equal to or higher than the org base permission. Otherwise, the request will fail with:
     *
-    * The invitee will receive a notification that they have been invited to the repository, which they must accept or decline. They may do this via the notifications page, the email they receive, or by using the [repository invitations API endpoints](https://developer.github.com/v3/repos/invitations/).
+    * ```
+    * Cannot assign {member} permission of {role name}
+    * ```
+    *
+    * Note that, if you choose not to pass any parameters, you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://docs.github.com/rest/overview/resources-in-the-rest-api#http-verbs)."
+    *
+    * The invitee will receive a notification that they have been invited to the repository, which they must accept or decline. They may do this via the notifications page, the email they receive, or by using the [repository invitations API endpoints](https://docs.github.com/rest/reference/repos#invitations).
+    *
+    * **Updating an existing collaborator's permission level**
+    *
+    * The endpoint can also be used to change the permissions of an existing collaborator without first removing and re-adding the collaborator. To change the permissions, use the same endpoint and pass a different `permission` parameter. The response will be a `204`, with no other indication that the permission level changed.
     *
     * **Rate limits**
     *
-    * To prevent abuse, you are limited to sending 50 invitations to a repository per 24 hour period. Note there is no limit if you are inviting organization members to an organization repository.
+    * You are limited to sending 50 invitations to a repository per 24 hour period. Note there is no limit if you are inviting organization members to an organization repository.
     */
   def addCollaborator(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/collaborators/:username']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/collaborators/{username}']['response'] */ js.Any
   ]
   def addCollaborator(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/collaborators/:username']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/collaborators/{username}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/collaborators/:username']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/collaborators/{username}']['response'] */ js.Any
   ]
   /**
-    * This endpoint triggers [notifications](https://docs.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
+    * This endpoint triggers [notifications](https://docs.github.com/github/managing-subscriptions-and-notifications-on-github/about-notifications). Creating content too quickly using this endpoint may result in secondary rate limiting. See "[Secondary rate limits](https://docs.github.com/rest/overview/resources-in-the-rest-api#secondary-rate-limits)" and "[Dealing with secondary rate limits](https://docs.github.com/rest/guides/best-practices-for-integrators#dealing-with-secondary-rate-limits)" for details.
     *
-    * For more information the permission levels, see "[Repository permission levels for an organization](https://docs.github.com/en/github/setting-up-and-managing-organizations-and-teams/repository-permission-levels-for-an-organization#permission-levels-for-repositories-owned-by-an-organization)".
+    * Adding an outside collaborator may be restricted by enterprise administrators. For more information, see "[Enforcing repository management policies in your enterprise](https://docs.github.com/enterprise-cloud@latest/admin/policies/enforcing-policies-for-your-enterprise/enforcing-repository-management-policies-in-your-enterprise#enforcing-a-policy-for-inviting-outside-collaborators-to-repositories)."
     *
-    * Note that, if you choose not to pass any parameters, you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://developer.github.com/v3/#http-verbs)."
+    * For more information on permission levels, see "[Repository permission levels for an organization](https://docs.github.com/github/setting-up-and-managing-organizations-and-teams/repository-permission-levels-for-an-organization#permission-levels-for-repositories-owned-by-an-organization)". There are restrictions on which permissions can be granted to organization members when an organization base role is in place. In this case, the permission being given must be equal to or higher than the org base permission. Otherwise, the request will fail with:
     *
-    * The invitee will receive a notification that they have been invited to the repository, which they must accept or decline. They may do this via the notifications page, the email they receive, or by using the [repository invitations API endpoints](https://developer.github.com/v3/repos/invitations/).
+    * ```
+    * Cannot assign {member} permission of {role name}
+    * ```
+    *
+    * Note that, if you choose not to pass any parameters, you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://docs.github.com/rest/overview/resources-in-the-rest-api#http-verbs)."
+    *
+    * The invitee will receive a notification that they have been invited to the repository, which they must accept or decline. They may do this via the notifications page, the email they receive, or by using the [repository invitations API endpoints](https://docs.github.com/rest/reference/repos#invitations).
+    *
+    * **Updating an existing collaborator's permission level**
+    *
+    * The endpoint can also be used to change the permissions of an existing collaborator without first removing and re-adding the collaborator. To change the permissions, use the same endpoint and pass a different `permission` parameter. The response will be a `204`, with no other indication that the permission level changed.
     *
     * **Rate limits**
     *
-    * To prevent abuse, you are limited to sending 50 invitations to a repository per 24 hour period. Note there is no limit if you are inviting organization members to an organization repository.
+    * You are limited to sending 50 invitations to a repository per 24 hour period. Note there is no limit if you are inviting organization members to an organization repository.
     */
   @JSName("addCollaborator")
-  var addCollaborator_Original: `341`
+  var addCollaborator_Original: `518`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   def addStatusCheckContexts(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks/contexts']['response'] */ js.Any
   ]
   def addStatusCheckContexts(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks/contexts']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks/contexts']['response'] */ js.Any
   ]
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   @JSName("addStatusCheckContexts")
-  var addStatusCheckContexts_Original: `342`
+  var addStatusCheckContexts_Original: `519`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -127,15 +168,15 @@ trait AcceptInvitation extends StObject {
     * | `array` | The teams that can have push access. Use the team's `slug`. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
     */
   def addTeamAccessRestrictions(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/branches/:branch/protection/restrictions/teams']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/teams']['response'] */ js.Any
   ]
   def addTeamAccessRestrictions(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/branches/:branch/protection/restrictions/teams']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/teams']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/branches/:branch/protection/restrictions/teams']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/teams']['response'] */ js.Any
   ]
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -147,7 +188,7 @@ trait AcceptInvitation extends StObject {
     * | `array` | The teams that can have push access. Use the team's `slug`. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
     */
   @JSName("addTeamAccessRestrictions")
-  var addTeamAccessRestrictions_Original: `343`
+  var addTeamAccessRestrictions_Original: `520`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -159,15 +200,15 @@ trait AcceptInvitation extends StObject {
     * | `array` | Usernames for people who can have push access. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
     */
   def addUserAccessRestrictions(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/branches/:branch/protection/restrictions/users']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/users']['response'] */ js.Any
   ]
   def addUserAccessRestrictions(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/branches/:branch/protection/restrictions/users']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/users']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/branches/:branch/protection/restrictions/users']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/users']['response'] */ js.Any
   ]
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -179,65 +220,100 @@ trait AcceptInvitation extends StObject {
     * | `array` | Usernames for people who can have push access. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
     */
   @JSName("addUserAccessRestrictions")
-  var addUserAccessRestrictions_Original: `344`
+  var addUserAccessRestrictions_Original: `521`
   
   /**
     * For organization-owned repositories, the list of collaborators includes outside collaborators, organization members that are direct collaborators, organization members with access through team memberships, organization members with access through default organization permissions, and organization owners.
     *
     * Team members will include the members of child teams.
+    *
+    * You must authenticate using an access token with the `read:org` and `repo` scopes with push access to use this
+    * endpoint. GitHub Apps must have the `members` organization permission and `metadata` repository permission to use this
+    * endpoint.
     */
   def checkCollaborator(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/collaborators/:username']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/collaborators/{username}']['response'] */ js.Any
   ]
   def checkCollaborator(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/collaborators/:username']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/collaborators/{username}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/collaborators/:username']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/collaborators/{username}']['response'] */ js.Any
   ]
   /**
     * For organization-owned repositories, the list of collaborators includes outside collaborators, organization members that are direct collaborators, organization members with access through team memberships, organization members with access through default organization permissions, and organization owners.
     *
     * Team members will include the members of child teams.
+    *
+    * You must authenticate using an access token with the `read:org` and `repo` scopes with push access to use this
+    * endpoint. GitHub Apps must have the `members` organization permission and `metadata` repository permission to use this
+    * endpoint.
     */
   @JSName("checkCollaborator")
-  var checkCollaborator_Original: `345`
+  var checkCollaborator_Original: `522`
   
   /**
-    * Shows whether dependency alerts are enabled or disabled for a repository. The authenticated user must have admin access to the repository. For more information, see "[About security alerts for vulnerable dependencies](https://docs.github.com/en/articles/about-security-alerts-for-vulnerable-dependencies)".
+    * Shows whether dependency alerts are enabled or disabled for a repository. The authenticated user must have admin read access to the repository. For more information, see "[About security alerts for vulnerable dependencies](https://docs.github.com/en/articles/about-security-alerts-for-vulnerable-dependencies)".
     */
   def checkVulnerabilityAlerts(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/vulnerability-alerts']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/vulnerability-alerts']['response'] */ js.Any
   ]
   def checkVulnerabilityAlerts(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/vulnerability-alerts']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/vulnerability-alerts']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/vulnerability-alerts']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/vulnerability-alerts']['response'] */ js.Any
   ]
   /**
-    * Shows whether dependency alerts are enabled or disabled for a repository. The authenticated user must have admin access to the repository. For more information, see "[About security alerts for vulnerable dependencies](https://docs.github.com/en/articles/about-security-alerts-for-vulnerable-dependencies)".
+    * Shows whether dependency alerts are enabled or disabled for a repository. The authenticated user must have admin read access to the repository. For more information, see "[About security alerts for vulnerable dependencies](https://docs.github.com/en/articles/about-security-alerts-for-vulnerable-dependencies)".
     */
   @JSName("checkVulnerabilityAlerts")
-  var checkVulnerabilityAlerts_Original: `346`
+  var checkVulnerabilityAlerts_Original: `523`
   
   /**
-    * Both `:base` and `:head` must be branch names in `:repo`. To compare branches across other repositories in the same network as `:repo`, use the format `<USERNAME>:branch`.
+    * List any syntax errors that are detected in the CODEOWNERS
+    * file.
     *
-    * The response from the API is equivalent to running the `git log base..head` command; however, commits are returned in chronological order. Pass the appropriate [media type](https://developer.github.com/v3/media/#commits-commit-comparison-and-pull-requests) to fetch diff and patch formats.
+    * For more information about the correct CODEOWNERS syntax,
+    * see "[About code owners](https://docs.github.com/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners)."
+    */
+  def codeownersErrors(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/codeowners/errors']['response'] */ js.Any
+  ]
+  def codeownersErrors(
+    params: RequestParameters & (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/codeowners/errors']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/codeowners/errors']['response'] */ js.Any
+  ]
+  /**
+    * List any syntax errors that are detected in the CODEOWNERS
+    * file.
+    *
+    * For more information about the correct CODEOWNERS syntax,
+    * see "[About code owners](https://docs.github.com/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners)."
+    */
+  @JSName("codeownersErrors")
+  var codeownersErrors_Original: `524`
+  
+  /**
+    * **Deprecated**: Use `repos.compareCommitsWithBasehead()` (`GET /repos/{owner}/{repo}/compare/{basehead}`) instead. Both `:base` and `:head` must be branch names in `:repo`. To compare branches across other repositories in the same network as `:repo`, use the format `<USERNAME>:branch`.
+    *
+    * The response from the API is equivalent to running the `git log base..head` command; however, commits are returned in chronological order. Pass the appropriate [media type](https://docs.github.com/rest/overview/media-types/#commits-commit-comparison-and-pull-requests) to fetch diff and patch formats.
     *
     * The response also includes details on the files that were changed between the two commits. This includes the status of the change (for example, if a file was added, removed, modified, or renamed), and details of the change itself. For example, files with a `renamed` status have a `previous_filename` field showing the previous filename of the file, and files with a `modified` status have a `patch` field showing the changes made to the file.
     *
     * **Working with large comparisons**
     *
-    * The response will include a comparison of up to 250 commits. If you are working with a larger commit range, you can use the [List commits](https://developer.github.com/v3/repos/commits/#list-commits) to enumerate all commits in the range.
+    * To process a response with a large number of commits, you can use (`per_page` or `page`) to paginate the results. When using paging, the list of changed files is only returned with page 1, but includes all changed files for the entire comparison. For more information on working with pagination, see "[Traversing with pagination](/rest/guides/traversing-with-pagination)."
     *
-    * For comparisons with extremely large diffs, you may receive an error response indicating that the diff took too long
-    * to generate. You can typically resolve this error by using a smaller commit range.
+    * When calling this API without any paging parameters (`per_page` or `page`), the returned list is limited to 250 commits and the last commit in the list is the most recent of the entire comparison. When a paging parameter is specified, the first commit in the returned list of each page is the earliest.
     *
     * **Signature verification object**
     *
@@ -269,29 +345,127 @@ trait AcceptInvitation extends StObject {
     * | `valid` | None of the above errors applied, so the signature is considered to be verified. |
     */
   def compareCommits(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/compare/:base...:head']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/compare/{base}...{head}']['response'] */ js.Any
   ]
   def compareCommits(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/compare/:base...:head']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/compare/{base}...{head}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/compare/:base...:head']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/compare/{base}...{head}']['response'] */ js.Any
   ]
+  
   /**
-    * Both `:base` and `:head` must be branch names in `:repo`. To compare branches across other repositories in the same network as `:repo`, use the format `<USERNAME>:branch`.
+    * The `basehead` param is comprised of two parts: `base` and `head`. Both must be branch names in `repo`. To compare branches across other repositories in the same network as `repo`, use the format `<USERNAME>:branch`.
     *
-    * The response from the API is equivalent to running the `git log base..head` command; however, commits are returned in chronological order. Pass the appropriate [media type](https://developer.github.com/v3/media/#commits-commit-comparison-and-pull-requests) to fetch diff and patch formats.
+    * The response from the API is equivalent to running the `git log base..head` command; however, commits are returned in chronological order. Pass the appropriate [media type](https://docs.github.com/rest/overview/media-types/#commits-commit-comparison-and-pull-requests) to fetch diff and patch formats.
     *
     * The response also includes details on the files that were changed between the two commits. This includes the status of the change (for example, if a file was added, removed, modified, or renamed), and details of the change itself. For example, files with a `renamed` status have a `previous_filename` field showing the previous filename of the file, and files with a `modified` status have a `patch` field showing the changes made to the file.
     *
     * **Working with large comparisons**
     *
-    * The response will include a comparison of up to 250 commits. If you are working with a larger commit range, you can use the [List commits](https://developer.github.com/v3/repos/commits/#list-commits) to enumerate all commits in the range.
+    * To process a response with a large number of commits, you can use (`per_page` or `page`) to paginate the results. When using paging, the list of changed files is only returned with page 1, but includes all changed files for the entire comparison. For more information on working with pagination, see "[Traversing with pagination](/rest/guides/traversing-with-pagination)."
     *
-    * For comparisons with extremely large diffs, you may receive an error response indicating that the diff took too long
-    * to generate. You can typically resolve this error by using a smaller commit range.
+    * When calling this API without any paging parameters (`per_page` or `page`), the returned list is limited to 250 commits and the last commit in the list is the most recent of the entire comparison. When a paging parameter is specified, the first commit in the returned list of each page is the earliest.
+    *
+    * **Signature verification object**
+    *
+    * The response will include a `verification` object that describes the result of verifying the commit's signature. The following fields are included in the `verification` object:
+    *
+    * | Name | Type | Description |
+    * | ---- | ---- | ----------- |
+    * | `verified` | `boolean` | Indicates whether GitHub considers the signature in this commit to be verified. |
+    * | `reason` | `string` | The reason for verified value. Possible values and their meanings are enumerated in table below. |
+    * | `signature` | `string` | The signature that was extracted from the commit. |
+    * | `payload` | `string` | The value that was signed. |
+    *
+    * These are the possible values for `reason` in the `verification` object:
+    *
+    * | Value | Description |
+    * | ----- | ----------- |
+    * | `expired_key` | The key that made the signature is expired. |
+    * | `not_signing_key` | The "signing" flag is not among the usage flags in the GPG key that made the signature. |
+    * | `gpgverify_error` | There was an error communicating with the signature verification service. |
+    * | `gpgverify_unavailable` | The signature verification service is currently unavailable. |
+    * | `unsigned` | The object does not include a signature. |
+    * | `unknown_signature_type` | A non-PGP signature was found in the commit. |
+    * | `no_user` | No user was associated with the `committer` email address in the commit. |
+    * | `unverified_email` | The `committer` email address in the commit was associated with a user, but the email address is not verified on her/his account. |
+    * | `bad_email` | The `committer` email address in the commit is not included in the identities of the PGP key that made the signature. |
+    * | `unknown_key` | The key that made the signature has not been registered with any user's account. |
+    * | `malformed_signature` | There was an error parsing the signature. |
+    * | `invalid` | The signature could not be cryptographically verified using the key whose key-id was found in the signature. |
+    * | `valid` | None of the above errors applied, so the signature is considered to be verified. |
+    */
+  def compareCommitsWithBasehead(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/compare/{basehead}']['response'] */ js.Any
+  ]
+  def compareCommitsWithBasehead(
+    params: RequestParameters & (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/compare/{basehead}']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/compare/{basehead}']['response'] */ js.Any
+  ]
+  /**
+    * The `basehead` param is comprised of two parts: `base` and `head`. Both must be branch names in `repo`. To compare branches across other repositories in the same network as `repo`, use the format `<USERNAME>:branch`.
+    *
+    * The response from the API is equivalent to running the `git log base..head` command; however, commits are returned in chronological order. Pass the appropriate [media type](https://docs.github.com/rest/overview/media-types/#commits-commit-comparison-and-pull-requests) to fetch diff and patch formats.
+    *
+    * The response also includes details on the files that were changed between the two commits. This includes the status of the change (for example, if a file was added, removed, modified, or renamed), and details of the change itself. For example, files with a `renamed` status have a `previous_filename` field showing the previous filename of the file, and files with a `modified` status have a `patch` field showing the changes made to the file.
+    *
+    * **Working with large comparisons**
+    *
+    * To process a response with a large number of commits, you can use (`per_page` or `page`) to paginate the results. When using paging, the list of changed files is only returned with page 1, but includes all changed files for the entire comparison. For more information on working with pagination, see "[Traversing with pagination](/rest/guides/traversing-with-pagination)."
+    *
+    * When calling this API without any paging parameters (`per_page` or `page`), the returned list is limited to 250 commits and the last commit in the list is the most recent of the entire comparison. When a paging parameter is specified, the first commit in the returned list of each page is the earliest.
+    *
+    * **Signature verification object**
+    *
+    * The response will include a `verification` object that describes the result of verifying the commit's signature. The following fields are included in the `verification` object:
+    *
+    * | Name | Type | Description |
+    * | ---- | ---- | ----------- |
+    * | `verified` | `boolean` | Indicates whether GitHub considers the signature in this commit to be verified. |
+    * | `reason` | `string` | The reason for verified value. Possible values and their meanings are enumerated in table below. |
+    * | `signature` | `string` | The signature that was extracted from the commit. |
+    * | `payload` | `string` | The value that was signed. |
+    *
+    * These are the possible values for `reason` in the `verification` object:
+    *
+    * | Value | Description |
+    * | ----- | ----------- |
+    * | `expired_key` | The key that made the signature is expired. |
+    * | `not_signing_key` | The "signing" flag is not among the usage flags in the GPG key that made the signature. |
+    * | `gpgverify_error` | There was an error communicating with the signature verification service. |
+    * | `gpgverify_unavailable` | The signature verification service is currently unavailable. |
+    * | `unsigned` | The object does not include a signature. |
+    * | `unknown_signature_type` | A non-PGP signature was found in the commit. |
+    * | `no_user` | No user was associated with the `committer` email address in the commit. |
+    * | `unverified_email` | The `committer` email address in the commit was associated with a user, but the email address is not verified on her/his account. |
+    * | `bad_email` | The `committer` email address in the commit is not included in the identities of the PGP key that made the signature. |
+    * | `unknown_key` | The key that made the signature has not been registered with any user's account. |
+    * | `malformed_signature` | There was an error parsing the signature. |
+    * | `invalid` | The signature could not be cryptographically verified using the key whose key-id was found in the signature. |
+    * | `valid` | None of the above errors applied, so the signature is considered to be verified. |
+    */
+  @JSName("compareCommitsWithBasehead")
+  var compareCommitsWithBasehead_Original: `526`
+  
+  /**
+    * **Deprecated**: Use `repos.compareCommitsWithBasehead()` (`GET /repos/{owner}/{repo}/compare/{basehead}`) instead. Both `:base` and `:head` must be branch names in `:repo`. To compare branches across other repositories in the same network as `:repo`, use the format `<USERNAME>:branch`.
+    *
+    * The response from the API is equivalent to running the `git log base..head` command; however, commits are returned in chronological order. Pass the appropriate [media type](https://docs.github.com/rest/overview/media-types/#commits-commit-comparison-and-pull-requests) to fetch diff and patch formats.
+    *
+    * The response also includes details on the files that were changed between the two commits. This includes the status of the change (for example, if a file was added, removed, modified, or renamed), and details of the change itself. For example, files with a `renamed` status have a `previous_filename` field showing the previous filename of the file, and files with a `modified` status have a `patch` field showing the changes made to the file.
+    *
+    * **Working with large comparisons**
+    *
+    * To process a response with a large number of commits, you can use (`per_page` or `page`) to paginate the results. When using paging, the list of changed files is only returned with page 1, but includes all changed files for the entire comparison. For more information on working with pagination, see "[Traversing with pagination](/rest/guides/traversing-with-pagination)."
+    *
+    * When calling this API without any paging parameters (`per_page` or `page`), the returned list is limited to 250 commits and the last commit in the list is the most recent of the entire comparison. When a paging parameter is specified, the first commit in the returned list of each page is the earliest.
     *
     * **Signature verification object**
     *
@@ -323,31 +497,51 @@ trait AcceptInvitation extends StObject {
     * | `valid` | None of the above errors applied, so the signature is considered to be verified. |
     */
   @JSName("compareCommits")
-  var compareCommits_Original: `347`
+  var compareCommits_Original: `525`
+  
+  /**
+    * Users with admin access to the repository can create an autolink.
+    */
+  def createAutolink(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/autolinks']['response'] */ js.Any
+  ]
+  def createAutolink(
+    params: RequestParameters & (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/autolinks']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/autolinks']['response'] */ js.Any
+  ]
+  /**
+    * Users with admin access to the repository can create an autolink.
+    */
+  @JSName("createAutolink")
+  var createAutolink_Original: `527`
   
   /**
     * Create a comment for a commit using its `:commit_sha`.
     *
-    * This endpoint triggers [notifications](https://docs.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
+    * This endpoint triggers [notifications](https://docs.github.com/en/github/managing-subscriptions-and-notifications-on-github/about-notifications). Creating content too quickly using this endpoint may result in secondary rate limiting. See "[Secondary rate limits](https://docs.github.com/rest/overview/resources-in-the-rest-api#secondary-rate-limits)" and "[Dealing with secondary rate limits](https://docs.github.com/rest/guides/best-practices-for-integrators#dealing-with-secondary-rate-limits)" for details.
     */
   def createCommitComment(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/commits/:commit_sha/comments']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/commits/{commit_sha}/comments']['response'] */ js.Any
   ]
   def createCommitComment(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/commits/:commit_sha/comments']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/commits/{commit_sha}/comments']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/commits/:commit_sha/comments']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/commits/{commit_sha}/comments']['response'] */ js.Any
   ]
   /**
     * Create a comment for a commit using its `:commit_sha`.
     *
-    * This endpoint triggers [notifications](https://docs.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
+    * This endpoint triggers [notifications](https://docs.github.com/en/github/managing-subscriptions-and-notifications-on-github/about-notifications). Creating content too quickly using this endpoint may result in secondary rate limiting. See "[Secondary rate limits](https://docs.github.com/rest/overview/resources-in-the-rest-api#secondary-rate-limits)" and "[Dealing with secondary rate limits](https://docs.github.com/rest/guides/best-practices-for-integrators#dealing-with-secondary-rate-limits)" for details.
     */
   @JSName("createCommitComment")
-  var createCommitComment_Original: `348`
+  var createCommitComment_Original: `528`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -355,15 +549,15 @@ trait AcceptInvitation extends StObject {
     * When authenticated with admin or owner permissions to the repository, you can use this endpoint to require signed commits on a branch. You must enable branch protection to require signed commits.
     */
   def createCommitSignatureProtection(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/branches/:branch/protection/required_signatures']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/branches/{branch}/protection/required_signatures']['response'] */ js.Any
   ]
   def createCommitSignatureProtection(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/branches/:branch/protection/required_signatures']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/branches/{branch}/protection/required_signatures']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/branches/:branch/protection/required_signatures']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/branches/{branch}/protection/required_signatures']['response'] */ js.Any
   ]
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -371,7 +565,7 @@ trait AcceptInvitation extends StObject {
     * When authenticated with admin or owner permissions to the repository, you can use this endpoint to require signed commits on a branch. You must enable branch protection to require signed commits.
     */
   @JSName("createCommitSignatureProtection")
-  var createCommitSignatureProtection_Original: `349`
+  var createCommitSignatureProtection_Original: `529`
   
   /**
     * Users with push access in a repository can create commit statuses for a given SHA.
@@ -379,15 +573,15 @@ trait AcceptInvitation extends StObject {
     * Note: there is a limit of 1000 statuses per `sha` and `context` within a repository. Attempts to create more than 1000 statuses will result in a validation error.
     */
   def createCommitStatus(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/statuses/:sha']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/statuses/{sha}']['response'] */ js.Any
   ]
   def createCommitStatus(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/statuses/:sha']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/statuses/{sha}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/statuses/:sha']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/statuses/{sha}']['response'] */ js.Any
   ]
   /**
     * Users with push access in a repository can create commit statuses for a given SHA.
@@ -395,27 +589,27 @@ trait AcceptInvitation extends StObject {
     * Note: there is a limit of 1000 statuses per `sha` and `context` within a repository. Attempts to create more than 1000 statuses will result in a validation error.
     */
   @JSName("createCommitStatus")
-  var createCommitStatus_Original: `350`
+  var createCommitStatus_Original: `530`
   
   /**
     * You can create a read-only deploy key.
     */
   def createDeployKey(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/keys']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/keys']['response'] */ js.Any
   ]
   def createDeployKey(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/keys']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/keys']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/keys']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/keys']['response'] */ js.Any
   ]
   /**
     * You can create a read-only deploy key.
     */
   @JSName("createDeployKey")
-  var createDeployKey_Original: `351`
+  var createDeployKey_Original: `531`
   
   /**
     * Deployments offer a few configurable parameters with certain defaults.
@@ -432,7 +626,7 @@ trait AcceptInvitation extends StObject {
     * the API will return a successful merge commit. If merge conflicts prevent the merge from succeeding, the API will
     * return a failure response.
     *
-    * By default, [commit statuses](https://developer.github.com/v3/repos/statuses) for every submitted context must be in a `success`
+    * By default, [commit statuses](https://docs.github.com/rest/commits/statuses) for every submitted context must be in a `success`
     * state. The `required_contexts` parameter allows you to specify a subset of contexts that must be `success`, or to
     * specify contexts that have not yet been submitted. You are not required to use commit statuses to deploy. If you do
     * not require any contexts or create any commit statuses, the deployment will always succeed.
@@ -465,16 +659,40 @@ trait AcceptInvitation extends StObject {
     * status for the commit to be deployed, but one or more of the required contexts do not have a state of `success`.
     */
   def createDeployment(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/deployments']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/deployments']['response'] */ js.Any
   ]
   def createDeployment(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/deployments']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/deployments']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/deployments']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/deployments']['response'] */ js.Any
   ]
+  
+  /**
+    * Creates a deployment branch policy for an environment.
+    *
+    * You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `administration:write` permission for the repository to use this endpoint.
+    */
+  def createDeploymentBranchPolicy(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/environments/{environment_name}/deployment-branch-policies']['response'] */ js.Any
+  ]
+  def createDeploymentBranchPolicy(
+    params: RequestParameters & (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/environments/{environment_name}/deployment-branch-policies']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/environments/{environment_name}/deployment-branch-policies']['response'] */ js.Any
+  ]
+  /**
+    * Creates a deployment branch policy for an environment.
+    *
+    * You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `administration:write` permission for the repository to use this endpoint.
+    */
+  @JSName("createDeploymentBranchPolicy")
+  var createDeploymentBranchPolicy_Original: `533`
   
   /**
     * Users with `push` access can create deployment statuses for a given deployment.
@@ -482,15 +700,15 @@ trait AcceptInvitation extends StObject {
     * GitHub Apps require `read & write` access to "Deployments" and `read-only` access to "Repo contents" (for private repos). OAuth Apps require the `repo_deployment` scope.
     */
   def createDeploymentStatus(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/deployments/:deployment_id/statuses']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/deployments/{deployment_id}/statuses']['response'] */ js.Any
   ]
   def createDeploymentStatus(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/deployments/:deployment_id/statuses']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/deployments/{deployment_id}/statuses']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/deployments/:deployment_id/statuses']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/deployments/{deployment_id}/statuses']['response'] */ js.Any
   ]
   /**
     * Users with `push` access can create deployment statuses for a given deployment.
@@ -498,7 +716,7 @@ trait AcceptInvitation extends StObject {
     * GitHub Apps require `read & write` access to "Deployments" and `read-only` access to "Repo contents" (for private repos). OAuth Apps require the `repo_deployment` scope.
     */
   @JSName("createDeploymentStatus")
-  var createDeploymentStatus_Original: `353`
+  var createDeploymentStatus_Original: `534`
   
   /**
     * Deployments offer a few configurable parameters with certain defaults.
@@ -515,7 +733,7 @@ trait AcceptInvitation extends StObject {
     * the API will return a successful merge commit. If merge conflicts prevent the merge from succeeding, the API will
     * return a failure response.
     *
-    * By default, [commit statuses](https://developer.github.com/v3/repos/statuses) for every submitted context must be in a `success`
+    * By default, [commit statuses](https://docs.github.com/rest/commits/statuses) for every submitted context must be in a `success`
     * state. The `required_contexts` parameter allows you to specify a subset of contexts that must be `success`, or to
     * specify contexts that have not yet been submitted. You are not required to use commit statuses to deploy. If you do
     * not require any contexts or create any commit statuses, the deployment will always succeed.
@@ -548,49 +766,55 @@ trait AcceptInvitation extends StObject {
     * status for the commit to be deployed, but one or more of the required contexts do not have a state of `success`.
     */
   @JSName("createDeployment")
-  var createDeployment_Original: `352`
+  var createDeployment_Original: `532`
   
   /**
-    * You can use this endpoint to trigger a webhook event called `repository_dispatch` when you want activity that happens outside of GitHub to trigger a GitHub Actions workflow or GitHub App webhook. You must configure your GitHub Actions workflow or GitHub App to run when the `repository_dispatch` event occurs. For an example `repository_dispatch` webhook payload, see "[RepositoryDispatchEvent](https://developer.github.com/webhooks/event-payloads/#repository_dispatch)."
+    * You can use this endpoint to trigger a webhook event called `repository_dispatch` when you want activity that happens outside of GitHub to trigger a GitHub Actions workflow or GitHub App webhook. You must configure your GitHub Actions workflow or GitHub App to run when the `repository_dispatch` event occurs. For an example `repository_dispatch` webhook payload, see "[RepositoryDispatchEvent](https://docs.github.com/webhooks/event-payloads/#repository_dispatch)."
     *
-    * The `client_payload` parameter is available for any extra information that your workflow might need. This parameter is a JSON payload that will be passed on when the webhook event is dispatched. For example, the `client_payload` can include a message that a user would like to send using a GitHub Actions workflow. Or the `client_payload` can be used as a test to debug your workflow. For a test example, see the [input example](https://developer.github.com/v3/repos/#example-4).
+    * The `client_payload` parameter is available for any extra information that your workflow might need. This parameter is a JSON payload that will be passed on when the webhook event is dispatched. For example, the `client_payload` can include a message that a user would like to send using a GitHub Actions workflow. Or the `client_payload` can be used as a test to debug your workflow.
     *
-    * To give you write access to the repository, you must use a personal access token with the `repo` scope. For more information, see "[Creating a personal access token for the command line](https://docs.github.com/articles/creating-a-personal-access-token-for-the-command-line)" in the GitHub Help documentation.
+    * This endpoint requires write access to the repository by providing either:
+    *
+    *   - Personal access tokens with `repo` scope. For more information, see "[Creating a personal access token for the command line](https://docs.github.com/articles/creating-a-personal-access-token-for-the-command-line)" in the GitHub Help documentation.
+    *   - GitHub Apps with both `metadata:read` and `contents:read&write` permissions.
     *
     * This input example shows how you can use the `client_payload` as a test to debug your workflow.
     */
   def createDispatchEvent(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/dispatches']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/dispatches']['response'] */ js.Any
   ]
   def createDispatchEvent(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/dispatches']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/dispatches']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/dispatches']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/dispatches']['response'] */ js.Any
   ]
   /**
-    * You can use this endpoint to trigger a webhook event called `repository_dispatch` when you want activity that happens outside of GitHub to trigger a GitHub Actions workflow or GitHub App webhook. You must configure your GitHub Actions workflow or GitHub App to run when the `repository_dispatch` event occurs. For an example `repository_dispatch` webhook payload, see "[RepositoryDispatchEvent](https://developer.github.com/webhooks/event-payloads/#repository_dispatch)."
+    * You can use this endpoint to trigger a webhook event called `repository_dispatch` when you want activity that happens outside of GitHub to trigger a GitHub Actions workflow or GitHub App webhook. You must configure your GitHub Actions workflow or GitHub App to run when the `repository_dispatch` event occurs. For an example `repository_dispatch` webhook payload, see "[RepositoryDispatchEvent](https://docs.github.com/webhooks/event-payloads/#repository_dispatch)."
     *
-    * The `client_payload` parameter is available for any extra information that your workflow might need. This parameter is a JSON payload that will be passed on when the webhook event is dispatched. For example, the `client_payload` can include a message that a user would like to send using a GitHub Actions workflow. Or the `client_payload` can be used as a test to debug your workflow. For a test example, see the [input example](https://developer.github.com/v3/repos/#example-4).
+    * The `client_payload` parameter is available for any extra information that your workflow might need. This parameter is a JSON payload that will be passed on when the webhook event is dispatched. For example, the `client_payload` can include a message that a user would like to send using a GitHub Actions workflow. Or the `client_payload` can be used as a test to debug your workflow.
     *
-    * To give you write access to the repository, you must use a personal access token with the `repo` scope. For more information, see "[Creating a personal access token for the command line](https://docs.github.com/articles/creating-a-personal-access-token-for-the-command-line)" in the GitHub Help documentation.
+    * This endpoint requires write access to the repository by providing either:
+    *
+    *   - Personal access tokens with `repo` scope. For more information, see "[Creating a personal access token for the command line](https://docs.github.com/articles/creating-a-personal-access-token-for-the-command-line)" in the GitHub Help documentation.
+    *   - GitHub Apps with both `metadata:read` and `contents:read&write` permissions.
     *
     * This input example shows how you can use the `client_payload` as a test to debug your workflow.
     */
   @JSName("createDispatchEvent")
-  var createDispatchEvent_Original: `354`
+  var createDispatchEvent_Original: `535`
   
   /**
     * Creates a new repository for the authenticated user.
     *
     * **OAuth scope requirements**
     *
-    * When using [OAuth](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/), authorizations must include:
+    * When using [OAuth](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/), authorizations must include:
     *
-    * *   `public_repo` scope or `repo` scope to create a public repository
-    * *   `repo` scope to create a private repository
+    * *   `public_repo` scope or `repo` scope to create a public repository. Note: For GitHub AE, use `repo` scope to create an internal repository.
+    * *   `repo` scope to create a private repository.
     */
   def createForAuthenticatedUser(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /user/repos']['response'] */ js.Any
@@ -608,205 +832,308 @@ trait AcceptInvitation extends StObject {
     *
     * **OAuth scope requirements**
     *
-    * When using [OAuth](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/), authorizations must include:
+    * When using [OAuth](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/), authorizations must include:
     *
-    * *   `public_repo` scope or `repo` scope to create a public repository
-    * *   `repo` scope to create a private repository
+    * *   `public_repo` scope or `repo` scope to create a public repository. Note: For GitHub AE, use `repo` scope to create an internal repository.
+    * *   `repo` scope to create a private repository.
     */
   @JSName("createForAuthenticatedUser")
-  var createForAuthenticatedUser_Original: `355`
+  var createForAuthenticatedUser_Original: `536`
   
   /**
     * Create a fork for the authenticated user.
     *
-    * **Note**: Forking a Repository happens asynchronously. You may have to wait a short period of time before you can access the git objects. If this takes longer than 5 minutes, be sure to contact [GitHub Support](https://github.com/contact) or [GitHub Premium Support](https://premium.githubsupport.com).
+    * **Note**: Forking a Repository happens asynchronously. You may have to wait a short period of time before you can access the git objects. If this takes longer than 5 minutes, be sure to contact [GitHub Support](https://support.github.com/contact?tags=dotcom-rest-api).
     */
   def createFork(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/forks']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/forks']['response'] */ js.Any
   ]
   def createFork(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/forks']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/forks']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/forks']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/forks']['response'] */ js.Any
   ]
   /**
     * Create a fork for the authenticated user.
     *
-    * **Note**: Forking a Repository happens asynchronously. You may have to wait a short period of time before you can access the git objects. If this takes longer than 5 minutes, be sure to contact [GitHub Support](https://github.com/contact) or [GitHub Premium Support](https://premium.githubsupport.com).
+    * **Note**: Forking a Repository happens asynchronously. You may have to wait a short period of time before you can access the git objects. If this takes longer than 5 minutes, be sure to contact [GitHub Support](https://support.github.com/contact?tags=dotcom-rest-api).
     */
   @JSName("createFork")
-  var createFork_Original: `356`
+  var createFork_Original: `537`
   
   /**
     * Creates a new repository in the specified organization. The authenticated user must be a member of the organization.
     *
     * **OAuth scope requirements**
     *
-    * When using [OAuth](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/), authorizations must include:
+    * When using [OAuth](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/), authorizations must include:
     *
-    * *   `public_repo` scope or `repo` scope to create a public repository
+    * *   `public_repo` scope or `repo` scope to create a public repository. Note: For GitHub AE, use `repo` scope to create an internal repository.
     * *   `repo` scope to create a private repository
     */
   def createInOrg(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /orgs/:org/repos']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /orgs/{org}/repos']['response'] */ js.Any
   ]
   def createInOrg(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /orgs/:org/repos']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /orgs/{org}/repos']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /orgs/:org/repos']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /orgs/{org}/repos']['response'] */ js.Any
   ]
   /**
     * Creates a new repository in the specified organization. The authenticated user must be a member of the organization.
     *
     * **OAuth scope requirements**
     *
-    * When using [OAuth](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/), authorizations must include:
+    * When using [OAuth](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/), authorizations must include:
     *
-    * *   `public_repo` scope or `repo` scope to create a public repository
+    * *   `public_repo` scope or `repo` scope to create a public repository. Note: For GitHub AE, use `repo` scope to create an internal repository.
     * *   `repo` scope to create a private repository
     */
   @JSName("createInOrg")
-  var createInOrg_Original: `357`
+  var createInOrg_Original: `538`
   
   /**
-    * Creates a new file or replaces an existing file in a repository.
+    * Create or update an environment with protection rules, such as required reviewers. For more information about environment protection rules, see "[Environments](/actions/reference/environments#environment-protection-rules)."
+    *
+    * **Note:** To create or update name patterns that branches must match in order to deploy to this environment, see "[Deployment branch policies](/rest/deployments/branch-policies)."
+    *
+    * **Note:** To create or update secrets for an environment, see "[Secrets](/rest/reference/actions#secrets)."
+    *
+    * You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `administration:write` permission for the repository to use this endpoint.
     */
-  def createOrUpdateFileContents(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/contents/:path']['response'] */ js.Any
+  def createOrUpdateEnvironment(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/environments/{environment_name}']['response'] */ js.Any
   ]
-  def createOrUpdateFileContents(
+  def createOrUpdateEnvironment(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/contents/:path']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/environments/{environment_name}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/contents/:path']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/environments/{environment_name}']['response'] */ js.Any
   ]
   /**
-    * Creates a new file or replaces an existing file in a repository.
+    * Create or update an environment with protection rules, such as required reviewers. For more information about environment protection rules, see "[Environments](/actions/reference/environments#environment-protection-rules)."
+    *
+    * **Note:** To create or update name patterns that branches must match in order to deploy to this environment, see "[Deployment branch policies](/rest/deployments/branch-policies)."
+    *
+    * **Note:** To create or update secrets for an environment, see "[Secrets](/rest/reference/actions#secrets)."
+    *
+    * You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `administration:write` permission for the repository to use this endpoint.
+    */
+  @JSName("createOrUpdateEnvironment")
+  var createOrUpdateEnvironment_Original: `539`
+  
+  /**
+    * Creates a new file or replaces an existing file in a repository. You must authenticate using an access token with the `workflow` scope to use this endpoint.
+    *
+    * **Note:** If you use this endpoint and the "[Delete a file](https://docs.github.com/rest/reference/repos/#delete-file)" endpoint in parallel, the concurrent requests will conflict and you will receive errors. You must use these endpoints serially instead.
+    */
+  def createOrUpdateFileContents(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/contents/{path}']['response'] */ js.Any
+  ]
+  def createOrUpdateFileContents(
+    params: RequestParameters & (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/contents/{path}']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/contents/{path}']['response'] */ js.Any
+  ]
+  /**
+    * Creates a new file or replaces an existing file in a repository. You must authenticate using an access token with the `workflow` scope to use this endpoint.
+    *
+    * **Note:** If you use this endpoint and the "[Delete a file](https://docs.github.com/rest/reference/repos/#delete-file)" endpoint in parallel, the concurrent requests will conflict and you will receive errors. You must use these endpoints serially instead.
     */
   @JSName("createOrUpdateFileContents")
-  var createOrUpdateFileContents_Original: `358`
+  var createOrUpdateFileContents_Original: `540`
+  
+  /**
+    * Create a GitHub Pages deployment for a repository.
+    *
+    * Users must have write permissions. GitHub Apps must have the `pages:write` permission to use this endpoint.
+    */
+  def createPagesDeployment(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/pages/deployment']['response'] */ js.Any
+  ]
+  def createPagesDeployment(
+    params: RequestParameters & (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/pages/deployment']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/pages/deployment']['response'] */ js.Any
+  ]
+  /**
+    * Create a GitHub Pages deployment for a repository.
+    *
+    * Users must have write permissions. GitHub Apps must have the `pages:write` permission to use this endpoint.
+    */
+  @JSName("createPagesDeployment")
+  var createPagesDeployment_Original: `541`
   
   /**
     * Configures a GitHub Pages site. For more information, see "[About GitHub Pages](/github/working-with-github-pages/about-github-pages)."
     */
   def createPagesSite(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/pages']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/pages']['response'] */ js.Any
   ]
   def createPagesSite(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/pages']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/pages']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/pages']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/pages']['response'] */ js.Any
   ]
   /**
     * Configures a GitHub Pages site. For more information, see "[About GitHub Pages](/github/working-with-github-pages/about-github-pages)."
     */
   @JSName("createPagesSite")
-  var createPagesSite_Original: `359`
+  var createPagesSite_Original: `542`
   
   /**
     * Users with push access to the repository can create a release.
     *
-    * This endpoint triggers [notifications](https://docs.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
+    * This endpoint triggers [notifications](https://docs.github.com/en/github/managing-subscriptions-and-notifications-on-github/about-notifications). Creating content too quickly using this endpoint may result in secondary rate limiting. See "[Secondary rate limits](https://docs.github.com/rest/overview/resources-in-the-rest-api#secondary-rate-limits)" and "[Dealing with secondary rate limits](https://docs.github.com/rest/guides/best-practices-for-integrators#dealing-with-secondary-rate-limits)" for details.
     */
   def createRelease(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/releases']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/releases']['response'] */ js.Any
   ]
   def createRelease(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/releases']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/releases']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/releases']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/releases']['response'] */ js.Any
   ]
   /**
     * Users with push access to the repository can create a release.
     *
-    * This endpoint triggers [notifications](https://docs.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
+    * This endpoint triggers [notifications](https://docs.github.com/en/github/managing-subscriptions-and-notifications-on-github/about-notifications). Creating content too quickly using this endpoint may result in secondary rate limiting. See "[Secondary rate limits](https://docs.github.com/rest/overview/resources-in-the-rest-api#secondary-rate-limits)" and "[Dealing with secondary rate limits](https://docs.github.com/rest/guides/best-practices-for-integrators#dealing-with-secondary-rate-limits)" for details.
     */
   @JSName("createRelease")
-  var createRelease_Original: `360`
+  var createRelease_Original: `543`
   
   /**
-    * Creates a new repository using a repository template. Use the `template_owner` and `template_repo` route parameters to specify the repository to use as the template. The authenticated user must own or be a member of an organization that owns the repository. To check if a repository is available to use as a template, get the repository's information using the [Get a repository](https://developer.github.com/v3/repos/#get-a-repository) endpoint and check that the `is_template` key is `true`.
-    *
-    * **OAuth scope requirements**
-    *
-    * When using [OAuth](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/), authorizations must include:
-    *
-    * *   `public_repo` scope or `repo` scope to create a public repository
-    * *   `repo` scope to create a private repository
+    * This creates a tag protection state for a repository.
+    * This endpoint is only available to repository administrators.
     */
-  def createUsingTemplate(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:template_owner/:template_repo/generate']['response'] */ js.Any
+  def createTagProtection(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/tags/protection']['response'] */ js.Any
   ]
-  def createUsingTemplate(
+  def createTagProtection(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:template_owner/:template_repo/generate']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/tags/protection']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:template_owner/:template_repo/generate']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/tags/protection']['response'] */ js.Any
   ]
   /**
-    * Creates a new repository using a repository template. Use the `template_owner` and `template_repo` route parameters to specify the repository to use as the template. The authenticated user must own or be a member of an organization that owns the repository. To check if a repository is available to use as a template, get the repository's information using the [Get a repository](https://developer.github.com/v3/repos/#get-a-repository) endpoint and check that the `is_template` key is `true`.
+    * This creates a tag protection state for a repository.
+    * This endpoint is only available to repository administrators.
+    */
+  @JSName("createTagProtection")
+  var createTagProtection_Original: `544`
+  
+  /**
+    * Creates a new repository using a repository template. Use the `template_owner` and `template_repo` route parameters to specify the repository to use as the template. If the repository is not public, the authenticated user must own or be a member of an organization that owns the repository. To check if a repository is available to use as a template, get the repository's information using the [Get a repository](https://docs.github.com/rest/reference/repos#get-a-repository) endpoint and check that the `is_template` key is `true`.
     *
     * **OAuth scope requirements**
     *
-    * When using [OAuth](https://developer.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/), authorizations must include:
+    * When using [OAuth](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/), authorizations must include:
     *
-    * *   `public_repo` scope or `repo` scope to create a public repository
+    * *   `public_repo` scope or `repo` scope to create a public repository. Note: For GitHub AE, use `repo` scope to create an internal repository.
+    * *   `repo` scope to create a private repository
+    */
+  def createUsingTemplate(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{template_owner}/{template_repo}/generate']['response'] */ js.Any
+  ]
+  def createUsingTemplate(
+    params: RequestParameters & (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{template_owner}/{template_repo}/generate']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{template_owner}/{template_repo}/generate']['response'] */ js.Any
+  ]
+  /**
+    * Creates a new repository using a repository template. Use the `template_owner` and `template_repo` route parameters to specify the repository to use as the template. If the repository is not public, the authenticated user must own or be a member of an organization that owns the repository. To check if a repository is available to use as a template, get the repository's information using the [Get a repository](https://docs.github.com/rest/reference/repos#get-a-repository) endpoint and check that the `is_template` key is `true`.
+    *
+    * **OAuth scope requirements**
+    *
+    * When using [OAuth](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/), authorizations must include:
+    *
+    * *   `public_repo` scope or `repo` scope to create a public repository. Note: For GitHub AE, use `repo` scope to create an internal repository.
     * *   `repo` scope to create a private repository
     */
   @JSName("createUsingTemplate")
-  var createUsingTemplate_Original: `361`
+  var createUsingTemplate_Original: `545`
   
   /**
     * Repositories can have multiple webhooks installed. Each webhook should have a unique `config`. Multiple webhooks can
     * share the same `config` as long as those webhooks do not have any `events` that overlap.
     */
   def createWebhook(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/hooks']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/hooks']['response'] */ js.Any
   ]
   def createWebhook(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/hooks']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/hooks']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/hooks']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/hooks']['response'] */ js.Any
   ]
   /**
     * Repositories can have multiple webhooks installed. Each webhook should have a unique `config`. Multiple webhooks can
     * share the same `config` as long as those webhooks do not have any `events` that overlap.
     */
   @JSName("createWebhook")
-  var createWebhook_Original: `362`
+  var createWebhook_Original: `546`
   
+  /**
+    * @deprecated octokit.rest.repos.declineInvitation() has been renamed to octokit.rest.repos.declineInvitationForAuthenticatedUser() (2021-10-05)
+    */
   def declineInvitation(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /user/repository_invitations/:invitation_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /user/repository_invitations/{invitation_id}']['response'] */ js.Any
   ]
   def declineInvitation(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /user/repository_invitations/:invitation_id']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /user/repository_invitations/{invitation_id}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /user/repository_invitations/:invitation_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /user/repository_invitations/{invitation_id}']['response'] */ js.Any
   ]
+  
+  def declineInvitationForAuthenticatedUser(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /user/repository_invitations/{invitation_id}']['response'] */ js.Any
+  ]
+  def declineInvitationForAuthenticatedUser(
+    params: RequestParameters & (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /user/repository_invitations/{invitation_id}']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /user/repository_invitations/{invitation_id}']['response'] */ js.Any
+  ]
+  @JSName("declineInvitationForAuthenticatedUser")
+  var declineInvitationForAuthenticatedUser_Original: `547`
+  
+  /**
+    * @deprecated octokit.rest.repos.declineInvitation() has been renamed to octokit.rest.repos.declineInvitationForAuthenticatedUser() (2021-10-05)
+    */
   @JSName("declineInvitation")
-  var declineInvitation_Original: `363`
+  var declineInvitation_Original: `547`
   
   /**
     * Deleting a repository requires admin access. If OAuth is used, the `delete_repo` scope is required.
@@ -815,15 +1142,15 @@ trait AcceptInvitation extends StObject {
     * repositories, you will get a `403 Forbidden` response.
     */
   def delete(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}']['response'] */ js.Any
   ]
   def delete(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}']['response'] */ js.Any
   ]
   
   /**
@@ -832,15 +1159,15 @@ trait AcceptInvitation extends StObject {
     * Disables the ability to restrict who can push to this branch.
     */
   def deleteAccessRestrictions(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/branches/{branch}/protection/restrictions']['response'] */ js.Any
   ]
   def deleteAccessRestrictions(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/branches/{branch}/protection/restrictions']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/branches/{branch}/protection/restrictions']['response'] */ js.Any
   ]
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -848,7 +1175,7 @@ trait AcceptInvitation extends StObject {
     * Disables the ability to restrict who can push to this branch.
     */
   @JSName("deleteAccessRestrictions")
-  var deleteAccessRestrictions_Original: `365`
+  var deleteAccessRestrictions_Original: `549`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -856,15 +1183,15 @@ trait AcceptInvitation extends StObject {
     * Removing admin enforcement requires admin or owner permissions to the repository and branch protection to be enabled.
     */
   def deleteAdminBranchProtection(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/branches/:branch/protection/enforce_admins']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/branches/{branch}/protection/enforce_admins']['response'] */ js.Any
   ]
   def deleteAdminBranchProtection(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/branches/:branch/protection/enforce_admins']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/branches/{branch}/protection/enforce_admins']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/branches/:branch/protection/enforce_admins']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/branches/{branch}/protection/enforce_admins']['response'] */ js.Any
   ]
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -872,41 +1199,85 @@ trait AcceptInvitation extends StObject {
     * Removing admin enforcement requires admin or owner permissions to the repository and branch protection to be enabled.
     */
   @JSName("deleteAdminBranchProtection")
-  var deleteAdminBranchProtection_Original: `366`
+  var deleteAdminBranchProtection_Original: `550`
+  
+  /**
+    * You must authenticate using an access token with the repo scope to use this endpoint.
+    */
+  def deleteAnEnvironment(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/environments/{environment_name}']['response'] */ js.Any
+  ]
+  def deleteAnEnvironment(
+    params: RequestParameters & (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/environments/{environment_name}']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/environments/{environment_name}']['response'] */ js.Any
+  ]
+  /**
+    * You must authenticate using an access token with the repo scope to use this endpoint.
+    */
+  @JSName("deleteAnEnvironment")
+  var deleteAnEnvironment_Original: `551`
+  
+  /**
+    * This deletes a single autolink reference by ID that was configured for the given repository.
+    *
+    * Information about autolinks are only available to repository administrators.
+    */
+  def deleteAutolink(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/autolinks/{autolink_id}']['response'] */ js.Any
+  ]
+  def deleteAutolink(
+    params: RequestParameters & (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/autolinks/{autolink_id}']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/autolinks/{autolink_id}']['response'] */ js.Any
+  ]
+  /**
+    * This deletes a single autolink reference by ID that was configured for the given repository.
+    *
+    * Information about autolinks are only available to repository administrators.
+    */
+  @JSName("deleteAutolink")
+  var deleteAutolink_Original: `552`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   def deleteBranchProtection(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/branches/:branch/protection']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/branches/{branch}/protection']['response'] */ js.Any
   ]
   def deleteBranchProtection(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/branches/:branch/protection']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/branches/{branch}/protection']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/branches/:branch/protection']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/branches/{branch}/protection']['response'] */ js.Any
   ]
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   @JSName("deleteBranchProtection")
-  var deleteBranchProtection_Original: `367`
+  var deleteBranchProtection_Original: `553`
   
   def deleteCommitComment(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/comments/:comment_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/comments/{comment_id}']['response'] */ js.Any
   ]
   def deleteCommitComment(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/comments/:comment_id']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/comments/{comment_id}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/comments/:comment_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/comments/{comment_id}']['response'] */ js.Any
   ]
   @JSName("deleteCommitComment")
-  var deleteCommitComment_Original: `368`
+  var deleteCommitComment_Original: `554`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -914,15 +1285,15 @@ trait AcceptInvitation extends StObject {
     * When authenticated with admin or owner permissions to the repository, you can use this endpoint to disable required signed commits on a branch. You must enable branch protection to require signed commits.
     */
   def deleteCommitSignatureProtection(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/branches/:branch/protection/required_signatures']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/branches/{branch}/protection/required_signatures']['response'] */ js.Any
   ]
   def deleteCommitSignatureProtection(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/branches/:branch/protection/required_signatures']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/branches/{branch}/protection/required_signatures']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/branches/:branch/protection/required_signatures']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/branches/{branch}/protection/required_signatures']['response'] */ js.Any
   ]
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -930,61 +1301,86 @@ trait AcceptInvitation extends StObject {
     * When authenticated with admin or owner permissions to the repository, you can use this endpoint to disable required signed commits on a branch. You must enable branch protection to require signed commits.
     */
   @JSName("deleteCommitSignatureProtection")
-  var deleteCommitSignatureProtection_Original: `369`
+  var deleteCommitSignatureProtection_Original: `555`
   
   /**
     * Deploy keys are immutable. If you need to update a key, remove the key and create a new one instead.
     */
   def deleteDeployKey(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/keys/:key_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/keys/{key_id}']['response'] */ js.Any
   ]
   def deleteDeployKey(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/keys/:key_id']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/keys/{key_id}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/keys/:key_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/keys/{key_id}']['response'] */ js.Any
   ]
   /**
     * Deploy keys are immutable. If you need to update a key, remove the key and create a new one instead.
     */
   @JSName("deleteDeployKey")
-  var deleteDeployKey_Original: `370`
+  var deleteDeployKey_Original: `556`
   
   /**
-    * To ensure there can always be an active deployment, you can only delete an _inactive_ deployment. Anyone with `repo` or `repo_deployment` scopes can delete an inactive deployment.
+    * If the repository only has one deployment, you can delete the deployment regardless of its status. If the repository has more than one deployment, you can only delete inactive deployments. This ensures that repositories with multiple deployments will always have an active deployment. Anyone with `repo` or `repo_deployment` scopes can delete a deployment.
     *
     * To set a deployment as inactive, you must:
     *
     * *   Create a new deployment that is active so that the system has a record of the current state, then delete the previously active deployment.
     * *   Mark the active deployment as inactive by adding any non-successful deployment status.
     *
-    * For more information, see "[Create a deployment](https://developer.github.com/v3/repos/deployments/#create-a-deployment)" and "[Create a deployment status](https://developer.github.com/v3/repos/deployments/#create-a-deployment-status)."
+    * For more information, see "[Create a deployment](https://docs.github.com/rest/reference/repos/#create-a-deployment)" and "[Create a deployment status](https://docs.github.com/rest/reference/repos#create-a-deployment-status)."
     */
   def deleteDeployment(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/deployments/:deployment_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/deployments/{deployment_id}']['response'] */ js.Any
   ]
   def deleteDeployment(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/deployments/:deployment_id']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/deployments/{deployment_id}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/deployments/:deployment_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/deployments/{deployment_id}']['response'] */ js.Any
+  ]
+  
+  /**
+    * Deletes a deployment branch policy for an environment.
+    *
+    * You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `administration:write` permission for the repository to use this endpoint.
+    */
+  def deleteDeploymentBranchPolicy(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/environments/{environment_name}/deployment-branch-policies/{branch_policy_id}']['response'] */ js.Any
+  ]
+  def deleteDeploymentBranchPolicy(
+    params: RequestParameters & (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/environments/{environment_name}/deployment-branch-policies/{branch_policy_id}']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/environments/{environment_name}/deployment-branch-policies/{branch_policy_id}']['response'] */ js.Any
   ]
   /**
-    * To ensure there can always be an active deployment, you can only delete an _inactive_ deployment. Anyone with `repo` or `repo_deployment` scopes can delete an inactive deployment.
+    * Deletes a deployment branch policy for an environment.
+    *
+    * You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `administration:write` permission for the repository to use this endpoint.
+    */
+  @JSName("deleteDeploymentBranchPolicy")
+  var deleteDeploymentBranchPolicy_Original: `558`
+  
+  /**
+    * If the repository only has one deployment, you can delete the deployment regardless of its status. If the repository has more than one deployment, you can only delete inactive deployments. This ensures that repositories with multiple deployments will always have an active deployment. Anyone with `repo` or `repo_deployment` scopes can delete a deployment.
     *
     * To set a deployment as inactive, you must:
     *
     * *   Create a new deployment that is active so that the system has a record of the current state, then delete the previously active deployment.
     * *   Mark the active deployment as inactive by adding any non-successful deployment status.
     *
-    * For more information, see "[Create a deployment](https://developer.github.com/v3/repos/deployments/#create-a-deployment)" and "[Create a deployment status](https://developer.github.com/v3/repos/deployments/#create-a-deployment-status)."
+    * For more information, see "[Create a deployment](https://docs.github.com/rest/reference/repos/#create-a-deployment)" and "[Create a deployment status](https://docs.github.com/rest/reference/repos#create-a-deployment-status)."
     */
   @JSName("deleteDeployment")
-  var deleteDeployment_Original: `371`
+  var deleteDeployment_Original: `557`
   
   /**
     * Deletes a file in a repository.
@@ -994,17 +1390,19 @@ trait AcceptInvitation extends StObject {
     * The `author` section is optional and is filled in with the `committer` information if omitted. If the `committer` information is omitted, the authenticated user's information is used.
     *
     * You must provide values for both `name` and `email`, whether you choose to use `author` or `committer`. Otherwise, you'll receive a `422` status code.
+    *
+    * **Note:** If you use this endpoint and the "[Create or update file contents](https://docs.github.com/rest/reference/repos/#create-or-update-file-contents)" endpoint in parallel, the concurrent requests will conflict and you will receive errors. You must use these endpoints serially instead.
     */
   def deleteFile(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/contents/:path']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/contents/{path}']['response'] */ js.Any
   ]
   def deleteFile(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/contents/:path']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/contents/{path}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/contents/:path']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/contents/{path}']['response'] */ js.Any
   ]
   /**
     * Deletes a file in a repository.
@@ -1014,106 +1412,130 @@ trait AcceptInvitation extends StObject {
     * The `author` section is optional and is filled in with the `committer` information if omitted. If the `committer` information is omitted, the authenticated user's information is used.
     *
     * You must provide values for both `name` and `email`, whether you choose to use `author` or `committer`. Otherwise, you'll receive a `422` status code.
+    *
+    * **Note:** If you use this endpoint and the "[Create or update file contents](https://docs.github.com/rest/reference/repos/#create-or-update-file-contents)" endpoint in parallel, the concurrent requests will conflict and you will receive errors. You must use these endpoints serially instead.
     */
   @JSName("deleteFile")
-  var deleteFile_Original: `372`
+  var deleteFile_Original: `559`
   
   def deleteInvitation(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/invitations/:invitation_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/invitations/{invitation_id}']['response'] */ js.Any
   ]
   def deleteInvitation(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/invitations/:invitation_id']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/invitations/{invitation_id}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/invitations/:invitation_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/invitations/{invitation_id}']['response'] */ js.Any
   ]
   @JSName("deleteInvitation")
-  var deleteInvitation_Original: `373`
+  var deleteInvitation_Original: `560`
   
   def deletePagesSite(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/pages']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/pages']['response'] */ js.Any
   ]
   def deletePagesSite(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/pages']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/pages']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/pages']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/pages']['response'] */ js.Any
   ]
   @JSName("deletePagesSite")
-  var deletePagesSite_Original: `374`
+  var deletePagesSite_Original: `561`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   def deletePullRequestReviewProtection(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/branches/:branch/protection/required_pull_request_reviews']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/branches/{branch}/protection/required_pull_request_reviews']['response'] */ js.Any
   ]
   def deletePullRequestReviewProtection(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/branches/:branch/protection/required_pull_request_reviews']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/branches/{branch}/protection/required_pull_request_reviews']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/branches/:branch/protection/required_pull_request_reviews']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/branches/{branch}/protection/required_pull_request_reviews']['response'] */ js.Any
   ]
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   @JSName("deletePullRequestReviewProtection")
-  var deletePullRequestReviewProtection_Original: `375`
+  var deletePullRequestReviewProtection_Original: `562`
   
   /**
     * Users with push access to the repository can delete a release.
     */
   def deleteRelease(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/releases/:release_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/releases/{release_id}']['response'] */ js.Any
   ]
   def deleteRelease(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/releases/:release_id']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/releases/{release_id}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/releases/:release_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/releases/{release_id}']['response'] */ js.Any
   ]
   
   def deleteReleaseAsset(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/releases/assets/:asset_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/releases/assets/{asset_id}']['response'] */ js.Any
   ]
   def deleteReleaseAsset(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/releases/assets/:asset_id']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/releases/assets/{asset_id}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/releases/assets/:asset_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/releases/assets/{asset_id}']['response'] */ js.Any
   ]
   @JSName("deleteReleaseAsset")
-  var deleteReleaseAsset_Original: `377`
+  var deleteReleaseAsset_Original: `564`
   
   /**
     * Users with push access to the repository can delete a release.
     */
   @JSName("deleteRelease")
-  var deleteRelease_Original: `376`
+  var deleteRelease_Original: `563`
   
-  def deleteWebhook(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/hooks/:hook_id']['response'] */ js.Any
+  /**
+    * This deletes a tag protection state for a repository.
+    * This endpoint is only available to repository administrators.
+    */
+  def deleteTagProtection(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/tags/protection/{tag_protection_id}']['response'] */ js.Any
   ]
-  def deleteWebhook(
+  def deleteTagProtection(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/hooks/:hook_id']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/tags/protection/{tag_protection_id}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/hooks/:hook_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/tags/protection/{tag_protection_id}']['response'] */ js.Any
+  ]
+  /**
+    * This deletes a tag protection state for a repository.
+    * This endpoint is only available to repository administrators.
+    */
+  @JSName("deleteTagProtection")
+  var deleteTagProtection_Original: `565`
+  
+  def deleteWebhook(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/hooks/{hook_id}']['response'] */ js.Any
+  ]
+  def deleteWebhook(
+    params: RequestParameters & (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/hooks/{hook_id}']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/hooks/{hook_id}']['response'] */ js.Any
   ]
   @JSName("deleteWebhook")
-  var deleteWebhook_Original: `378`
+  var deleteWebhook_Original: `566`
   
   /**
     * Deleting a repository requires admin access. If OAuth is used, the `delete_repo` scope is required.
@@ -1122,133 +1544,233 @@ trait AcceptInvitation extends StObject {
     * repositories, you will get a `403 Forbidden` response.
     */
   @JSName("delete")
-  var delete_Original: `364`
+  var delete_Original: `548`
   
   /**
     * Disables automated security fixes for a repository. The authenticated user must have admin access to the repository. For more information, see "[Configuring automated security fixes](https://docs.github.com/en/articles/configuring-automated-security-fixes)".
     */
   def disableAutomatedSecurityFixes(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/automated-security-fixes']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/automated-security-fixes']['response'] */ js.Any
   ]
   def disableAutomatedSecurityFixes(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/automated-security-fixes']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/automated-security-fixes']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/automated-security-fixes']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/automated-security-fixes']['response'] */ js.Any
   ]
   /**
     * Disables automated security fixes for a repository. The authenticated user must have admin access to the repository. For more information, see "[Configuring automated security fixes](https://docs.github.com/en/articles/configuring-automated-security-fixes)".
     */
   @JSName("disableAutomatedSecurityFixes")
-  var disableAutomatedSecurityFixes_Original: `379`
+  var disableAutomatedSecurityFixes_Original: `567`
+  
+  def disableLfsForRepo(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/lfs']['response'] */ js.Any
+  ]
+  def disableLfsForRepo(
+    params: RequestParameters & (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/lfs']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/lfs']['response'] */ js.Any
+  ]
+  @JSName("disableLfsForRepo")
+  var disableLfsForRepo_Original: `568`
   
   /**
     * Disables dependency alerts and the dependency graph for a repository. The authenticated user must have admin access to the repository. For more information, see "[About security alerts for vulnerable dependencies](https://docs.github.com/en/articles/about-security-alerts-for-vulnerable-dependencies)".
     */
   def disableVulnerabilityAlerts(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/vulnerability-alerts']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/vulnerability-alerts']['response'] */ js.Any
   ]
   def disableVulnerabilityAlerts(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/vulnerability-alerts']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/vulnerability-alerts']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/vulnerability-alerts']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/vulnerability-alerts']['response'] */ js.Any
   ]
   /**
     * Disables dependency alerts and the dependency graph for a repository. The authenticated user must have admin access to the repository. For more information, see "[About security alerts for vulnerable dependencies](https://docs.github.com/en/articles/about-security-alerts-for-vulnerable-dependencies)".
     */
   @JSName("disableVulnerabilityAlerts")
-  var disableVulnerabilityAlerts_Original: `380`
+  var disableVulnerabilityAlerts_Original: `569`
   
   /**
-    * Gets a redirect URL to download an archive for a repository. The `:archive_format` can be either `tarball` or
-    * `zipball`. The `:ref` must be a valid Git reference. If you omit `:ref`, the repository’s default branch (usually
+    * Gets a redirect URL to download a zip archive for a repository. If you omit `:ref`, the repository’s default branch (usually
     * `master`) will be used. Please make sure your HTTP framework is configured to follow redirects or you will need to use
     * the `Location` header to make a second `GET` request.
     *
-    * **Note**: For private repositories, these links are temporary and expire after five minutes.
+    * **Note**: For private repositories, these links are temporary and expire after five minutes. If the repository is empty, you will receive a 404 when you follow the redirect.
+    * @deprecated octokit.rest.repos.downloadArchive() has been renamed to octokit.rest.repos.downloadZipballArchive() (2020-09-17)
     */
   def downloadArchive(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/:archive_format/:ref']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/zipball/{ref}']['response'] */ js.Any
   ]
   def downloadArchive(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/:archive_format/:ref']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/zipball/{ref}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/:archive_format/:ref']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/zipball/{ref}']['response'] */ js.Any
   ]
   /**
-    * Gets a redirect URL to download an archive for a repository. The `:archive_format` can be either `tarball` or
-    * `zipball`. The `:ref` must be a valid Git reference. If you omit `:ref`, the repository’s default branch (usually
+    * Gets a redirect URL to download a zip archive for a repository. If you omit `:ref`, the repository’s default branch (usually
     * `master`) will be used. Please make sure your HTTP framework is configured to follow redirects or you will need to use
     * the `Location` header to make a second `GET` request.
     *
-    * **Note**: For private repositories, these links are temporary and expire after five minutes.
+    * **Note**: For private repositories, these links are temporary and expire after five minutes. If the repository is empty, you will receive a 404 when you follow the redirect.
+    * @deprecated octokit.rest.repos.downloadArchive() has been renamed to octokit.rest.repos.downloadZipballArchive() (2020-09-17)
     */
   @JSName("downloadArchive")
-  var downloadArchive_Original: `381`
+  var downloadArchive_Original: `570`
+  
+  /**
+    * Gets a redirect URL to download a tar archive for a repository. If you omit `:ref`, the repository’s default branch (usually
+    * `master`) will be used. Please make sure your HTTP framework is configured to follow redirects or you will need to use
+    * the `Location` header to make a second `GET` request.
+    * **Note**: For private repositories, these links are temporary and expire after five minutes.
+    */
+  def downloadTarballArchive(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/tarball/{ref}']['response'] */ js.Any
+  ]
+  def downloadTarballArchive(
+    params: RequestParameters & (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/tarball/{ref}']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/tarball/{ref}']['response'] */ js.Any
+  ]
+  /**
+    * Gets a redirect URL to download a tar archive for a repository. If you omit `:ref`, the repository’s default branch (usually
+    * `master`) will be used. Please make sure your HTTP framework is configured to follow redirects or you will need to use
+    * the `Location` header to make a second `GET` request.
+    * **Note**: For private repositories, these links are temporary and expire after five minutes.
+    */
+  @JSName("downloadTarballArchive")
+  var downloadTarballArchive_Original: `571`
+  
+  /**
+    * Gets a redirect URL to download a zip archive for a repository. If you omit `:ref`, the repository’s default branch (usually
+    * `master`) will be used. Please make sure your HTTP framework is configured to follow redirects or you will need to use
+    * the `Location` header to make a second `GET` request.
+    *
+    * **Note**: For private repositories, these links are temporary and expire after five minutes. If the repository is empty, you will receive a 404 when you follow the redirect.
+    */
+  def downloadZipballArchive(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/zipball/{ref}']['response'] */ js.Any
+  ]
+  def downloadZipballArchive(
+    params: RequestParameters & (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/zipball/{ref}']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/zipball/{ref}']['response'] */ js.Any
+  ]
+  /**
+    * Gets a redirect URL to download a zip archive for a repository. If you omit `:ref`, the repository’s default branch (usually
+    * `master`) will be used. Please make sure your HTTP framework is configured to follow redirects or you will need to use
+    * the `Location` header to make a second `GET` request.
+    *
+    * **Note**: For private repositories, these links are temporary and expire after five minutes. If the repository is empty, you will receive a 404 when you follow the redirect.
+    */
+  @JSName("downloadZipballArchive")
+  var downloadZipballArchive_Original: `570`
   
   /**
     * Enables automated security fixes for a repository. The authenticated user must have admin access to the repository. For more information, see "[Configuring automated security fixes](https://docs.github.com/en/articles/configuring-automated-security-fixes)".
     */
   def enableAutomatedSecurityFixes(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/automated-security-fixes']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/automated-security-fixes']['response'] */ js.Any
   ]
   def enableAutomatedSecurityFixes(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/automated-security-fixes']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/automated-security-fixes']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/automated-security-fixes']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/automated-security-fixes']['response'] */ js.Any
   ]
   /**
     * Enables automated security fixes for a repository. The authenticated user must have admin access to the repository. For more information, see "[Configuring automated security fixes](https://docs.github.com/en/articles/configuring-automated-security-fixes)".
     */
   @JSName("enableAutomatedSecurityFixes")
-  var enableAutomatedSecurityFixes_Original: `382`
+  var enableAutomatedSecurityFixes_Original: `572`
+  
+  def enableLfsForRepo(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/lfs']['response'] */ js.Any
+  ]
+  def enableLfsForRepo(
+    params: RequestParameters & (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/lfs']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/lfs']['response'] */ js.Any
+  ]
+  @JSName("enableLfsForRepo")
+  var enableLfsForRepo_Original: `573`
   
   /**
     * Enables dependency alerts and the dependency graph for a repository. The authenticated user must have admin access to the repository. For more information, see "[About security alerts for vulnerable dependencies](https://docs.github.com/en/articles/about-security-alerts-for-vulnerable-dependencies)".
     */
   def enableVulnerabilityAlerts(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/vulnerability-alerts']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/vulnerability-alerts']['response'] */ js.Any
   ]
   def enableVulnerabilityAlerts(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/vulnerability-alerts']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/vulnerability-alerts']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/vulnerability-alerts']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/vulnerability-alerts']['response'] */ js.Any
   ]
   /**
     * Enables dependency alerts and the dependency graph for a repository. The authenticated user must have admin access to the repository. For more information, see "[About security alerts for vulnerable dependencies](https://docs.github.com/en/articles/about-security-alerts-for-vulnerable-dependencies)".
     */
   @JSName("enableVulnerabilityAlerts")
-  var enableVulnerabilityAlerts_Original: `383`
+  var enableVulnerabilityAlerts_Original: `574`
   
   /**
-    * When you pass the `scarlet-witch-preview` media type, requests to get a repository will also return the repository's code of conduct if it can be detected from the repository's code of conduct file.
-    *
-    * The `parent` and `source` objects are present when the repository is a fork. `parent` is the repository this repository was forked from, `source` is the ultimate source for the network.
+    * Generate a name and body describing a [release](https://docs.github.com/rest/reference/repos#releases). The body content will be markdown formatted and contain information like the changes since last release and users who contributed. The generated release notes are not saved anywhere. They are intended to be generated and used when creating a new release.
     */
-  def get(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo']['response'] */ js.Any
+  def generateReleaseNotes(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/releases/generate-notes']['response'] */ js.Any
   ]
-  def get(
+  def generateReleaseNotes(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/releases/generate-notes']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/releases/generate-notes']['response'] */ js.Any
+  ]
+  /**
+    * Generate a name and body describing a [release](https://docs.github.com/rest/reference/repos#releases). The body content will be markdown formatted and contain information like the changes since last release and users who contributed. The generated release notes are not saved anywhere. They are intended to be generated and used when creating a new release.
+    */
+  @JSName("generateReleaseNotes")
+  var generateReleaseNotes_Original: `575`
+  
+  /**
+    * The `parent` and `source` objects are present when the repository is a fork. `parent` is the repository this repository was forked from, `source` is the ultimate source for the network.
+    */
+  def get(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}']['response'] */ js.Any
+  ]
+  def get(
+    params: RequestParameters & (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}']['response'] */ js.Any
   ]
   
   /**
@@ -1259,15 +1781,15 @@ trait AcceptInvitation extends StObject {
     * **Note**: Users, apps, and teams `restrictions` are only available for organization-owned repositories.
     */
   def getAccessRestrictions(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/branches/:branch/protection/restrictions']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/branches/{branch}/protection/restrictions']['response'] */ js.Any
   ]
   def getAccessRestrictions(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/branches/:branch/protection/restrictions']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/branches/{branch}/protection/restrictions']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/branches/:branch/protection/restrictions']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/branches/{branch}/protection/restrictions']['response'] */ js.Any
   ]
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -1277,61 +1799,85 @@ trait AcceptInvitation extends StObject {
     * **Note**: Users, apps, and teams `restrictions` are only available for organization-owned repositories.
     */
   @JSName("getAccessRestrictions")
-  var getAccessRestrictions_Original: `385`
+  var getAccessRestrictions_Original: `577`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   def getAdminBranchProtection(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/branches/:branch/protection/enforce_admins']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/branches/{branch}/protection/enforce_admins']['response'] */ js.Any
   ]
   def getAdminBranchProtection(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/branches/:branch/protection/enforce_admins']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/branches/{branch}/protection/enforce_admins']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/branches/:branch/protection/enforce_admins']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/branches/{branch}/protection/enforce_admins']['response'] */ js.Any
   ]
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   @JSName("getAdminBranchProtection")
-  var getAdminBranchProtection_Original: `386`
+  var getAdminBranchProtection_Original: `578`
+  
+  /**
+    * Lists the environments for a repository.
+    *
+    * Anyone with read access to the repository can use this endpoint. If the repository is private, you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
+    */
+  def getAllEnvironments(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/environments']['response'] */ js.Any
+  ]
+  def getAllEnvironments(
+    params: RequestParameters & (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/environments']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/environments']['response'] */ js.Any
+  ]
+  /**
+    * Lists the environments for a repository.
+    *
+    * Anyone with read access to the repository can use this endpoint. If the repository is private, you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
+    */
+  @JSName("getAllEnvironments")
+  var getAllEnvironments_Original: `579`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   def getAllStatusCheckContexts(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks/contexts']['response'] */ js.Any
   ]
   def getAllStatusCheckContexts(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks/contexts']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks/contexts']['response'] */ js.Any
   ]
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   @JSName("getAllStatusCheckContexts")
-  var getAllStatusCheckContexts_Original: `387`
+  var getAllStatusCheckContexts_Original: `580`
   
   def getAllTopics(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/topics']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/topics']['response'] */ js.Any
   ]
   def getAllTopics(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/topics']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/topics']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/topics']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/topics']['response'] */ js.Any
   ]
   @JSName("getAllTopics")
-  var getAllTopics_Original: `388`
+  var getAllTopics_Original: `581`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -1339,15 +1885,15 @@ trait AcceptInvitation extends StObject {
     * Lists the GitHub Apps that have push access to this branch. Only installed GitHub Apps with `write` access to the `contents` permission can be added as authorized actors on a protected branch.
     */
   def getAppsWithAccessToProtectedBranch(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/branches/:branch/protection/restrictions/apps']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/apps']['response'] */ js.Any
   ]
   def getAppsWithAccessToProtectedBranch(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/branches/:branch/protection/restrictions/apps']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/apps']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/branches/:branch/protection/restrictions/apps']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/apps']['response'] */ js.Any
   ]
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -1355,107 +1901,130 @@ trait AcceptInvitation extends StObject {
     * Lists the GitHub Apps that have push access to this branch. Only installed GitHub Apps with `write` access to the `contents` permission can be added as authorized actors on a protected branch.
     */
   @JSName("getAppsWithAccessToProtectedBranch")
-  var getAppsWithAccessToProtectedBranch_Original: `389`
+  var getAppsWithAccessToProtectedBranch_Original: `582`
   
-  def getBranch(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/branches/:branch']['response'] */ js.Any
+  /**
+    * This returns a single autolink reference by ID that was configured for the given repository.
+    *
+    * Information about autolinks are only available to repository administrators.
+    */
+  def getAutolink(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/autolinks/{autolink_id}']['response'] */ js.Any
   ]
-  def getBranch(
+  def getAutolink(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/branches/:branch']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/autolinks/{autolink_id}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/branches/:branch']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/autolinks/{autolink_id}']['response'] */ js.Any
+  ]
+  /**
+    * This returns a single autolink reference by ID that was configured for the given repository.
+    *
+    * Information about autolinks are only available to repository administrators.
+    */
+  @JSName("getAutolink")
+  var getAutolink_Original: `583`
+  
+  def getBranch(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/branches/{branch}']['response'] */ js.Any
+  ]
+  def getBranch(
+    params: RequestParameters & (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/branches/{branch}']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/branches/{branch}']['response'] */ js.Any
   ]
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   def getBranchProtection(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/branches/:branch/protection']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/branches/{branch}/protection']['response'] */ js.Any
   ]
   def getBranchProtection(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/branches/:branch/protection']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/branches/{branch}/protection']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/branches/:branch/protection']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/branches/{branch}/protection']['response'] */ js.Any
   ]
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   @JSName("getBranchProtection")
-  var getBranchProtection_Original: `391`
+  var getBranchProtection_Original: `585`
   
   @JSName("getBranch")
-  var getBranch_Original: `390`
+  var getBranch_Original: `584`
   
   /**
     * Get the total number of clones and breakdown per day or week for the last 14 days. Timestamps are aligned to UTC midnight of the beginning of the day or week. Week begins on Monday.
     */
   def getClones(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/traffic/clones']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/traffic/clones']['response'] */ js.Any
   ]
   def getClones(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/traffic/clones']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/traffic/clones']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/traffic/clones']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/traffic/clones']['response'] */ js.Any
   ]
   /**
     * Get the total number of clones and breakdown per day or week for the last 14 days. Timestamps are aligned to UTC midnight of the beginning of the day or week. Week begins on Monday.
     */
   @JSName("getClones")
-  var getClones_Original: `392`
+  var getClones_Original: `586`
   
   /**
     * Returns a weekly aggregate of the number of additions and deletions pushed to a repository.
     */
   def getCodeFrequencyStats(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/stats/code_frequency']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/stats/code_frequency']['response'] */ js.Any
   ]
   def getCodeFrequencyStats(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/stats/code_frequency']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/stats/code_frequency']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/stats/code_frequency']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/stats/code_frequency']['response'] */ js.Any
   ]
   /**
     * Returns a weekly aggregate of the number of additions and deletions pushed to a repository.
     */
   @JSName("getCodeFrequencyStats")
-  var getCodeFrequencyStats_Original: `393`
+  var getCodeFrequencyStats_Original: `587`
   
   /**
     * Checks the repository permission of a collaborator. The possible repository permissions are `admin`, `write`, `read`, and `none`.
     */
   def getCollaboratorPermissionLevel(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/collaborators/:username/permission']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/collaborators/{username}/permission']['response'] */ js.Any
   ]
   def getCollaboratorPermissionLevel(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/collaborators/:username/permission']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/collaborators/{username}/permission']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/collaborators/:username/permission']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/collaborators/{username}/permission']['response'] */ js.Any
   ]
   /**
     * Checks the repository permission of a collaborator. The possible repository permissions are `admin`, `write`, `read`, and `none`.
     */
   @JSName("getCollaboratorPermissionLevel")
-  var getCollaboratorPermissionLevel_Original: `394`
+  var getCollaboratorPermissionLevel_Original: `588`
   
   /**
     * Users with pull access in a repository can access a combined view of commit statuses for a given ref. The ref can be a SHA, a branch name, or a tag name.
     *
-    * The most recent status for each context is returned, up to 100. This field [paginates](https://developer.github.com/v3/#pagination) if there are over 100 contexts.
     *
     * Additionally, a combined `state` is returned. The `state` is one of:
     *
@@ -1464,20 +2033,19 @@ trait AcceptInvitation extends StObject {
     * *   **success** if the latest status for all contexts is `success`
     */
   def getCombinedStatusForRef(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/commits/:ref/status']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/commits/{ref}/status']['response'] */ js.Any
   ]
   def getCombinedStatusForRef(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/commits/:ref/status']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/commits/{ref}/status']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/commits/:ref/status']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/commits/{ref}/status']['response'] */ js.Any
   ]
   /**
     * Users with pull access in a repository can access a combined view of commit statuses for a given ref. The ref can be a SHA, a branch name, or a tag name.
     *
-    * The most recent status for each context is returned, up to 100. This field [paginates](https://developer.github.com/v3/#pagination) if there are over 100 contexts.
     *
     * Additionally, a combined `state` is returned. The `state` is one of:
     *
@@ -1486,16 +2054,16 @@ trait AcceptInvitation extends StObject {
     * *   **success** if the latest status for all contexts is `success`
     */
   @JSName("getCombinedStatusForRef")
-  var getCombinedStatusForRef_Original: `395`
+  var getCombinedStatusForRef_Original: `589`
   
   /**
     * Returns the contents of a single commit reference. You must have `read` access for the repository to use this endpoint.
     *
     * **Note:** If there are more than 300 files in the commit diff, the response will include pagination link headers for the remaining files, up to a limit of 3000 files. Each page contains the static commit information, and the only changes are to the file listing.
     *
-    * You can pass the appropriate [media type](https://developer.github.com/v3/media/#commits-commit-comparison-and-pull-requests) to  fetch `diff` and `patch` formats. Diffs with binary data will have no `patch` property.
+    * You can pass the appropriate [media type](https://docs.github.com/rest/overview/media-types/#commits-commit-comparison-and-pull-requests) to  fetch `diff` and `patch` formats. Diffs with binary data will have no `patch` property.
     *
-    * To return only the SHA-1 hash of the commit reference, you can provide the `sha` custom [media type](https://developer.github.com/v3/media/#commits-commit-comparison-and-pull-requests) in the `Accept` header. You can use this endpoint to check if a remote reference's SHA-1 hash is the same as your local reference's SHA-1 hash by providing the local SHA-1 reference as the ETag.
+    * To return only the SHA-1 hash of the commit reference, you can provide the `sha` custom [media type](https://docs.github.com/rest/overview/media-types/#commits-commit-comparison-and-pull-requests) in the `Accept` header. You can use this endpoint to check if a remote reference's SHA-1 hash is the same as your local reference's SHA-1 hash by providing the local SHA-1 reference as the ETag.
     *
     * **Signature verification object**
     *
@@ -1527,50 +2095,50 @@ trait AcceptInvitation extends StObject {
     * | `valid` | None of the above errors applied, so the signature is considered to be verified. |
     */
   def getCommit(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/commits/:ref']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/commits/{ref}']['response'] */ js.Any
   ]
   def getCommit(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/commits/:ref']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/commits/{ref}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/commits/:ref']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/commits/{ref}']['response'] */ js.Any
   ]
   
   /**
     * Returns the last year of commit activity grouped by week. The `days` array is a group of commits per day, starting on `Sunday`.
     */
   def getCommitActivityStats(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/stats/commit_activity']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/stats/commit_activity']['response'] */ js.Any
   ]
   def getCommitActivityStats(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/stats/commit_activity']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/stats/commit_activity']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/stats/commit_activity']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/stats/commit_activity']['response'] */ js.Any
   ]
   /**
     * Returns the last year of commit activity grouped by week. The `days` array is a group of commits per day, starting on `Sunday`.
     */
   @JSName("getCommitActivityStats")
-  var getCommitActivityStats_Original: `397`
+  var getCommitActivityStats_Original: `591`
   
   def getCommitComment(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/comments/:comment_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/comments/{comment_id}']['response'] */ js.Any
   ]
   def getCommitComment(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/comments/:comment_id']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/comments/{comment_id}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/comments/:comment_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/comments/{comment_id}']['response'] */ js.Any
   ]
   @JSName("getCommitComment")
-  var getCommitComment_Original: `398`
+  var getCommitComment_Original: `592`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -1580,15 +2148,15 @@ trait AcceptInvitation extends StObject {
     * **Note**: You must enable branch protection to require signed commits.
     */
   def getCommitSignatureProtection(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/branches/:branch/protection/required_signatures']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/branches/{branch}/protection/required_signatures']['response'] */ js.Any
   ]
   def getCommitSignatureProtection(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/branches/:branch/protection/required_signatures']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/branches/{branch}/protection/required_signatures']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/branches/:branch/protection/required_signatures']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/branches/{branch}/protection/required_signatures']['response'] */ js.Any
   ]
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -1598,16 +2166,16 @@ trait AcceptInvitation extends StObject {
     * **Note**: You must enable branch protection to require signed commits.
     */
   @JSName("getCommitSignatureProtection")
-  var getCommitSignatureProtection_Original: `399`
+  var getCommitSignatureProtection_Original: `593`
   
   /**
     * Returns the contents of a single commit reference. You must have `read` access for the repository to use this endpoint.
     *
     * **Note:** If there are more than 300 files in the commit diff, the response will include pagination link headers for the remaining files, up to a limit of 3000 files. Each page contains the static commit information, and the only changes are to the file listing.
     *
-    * You can pass the appropriate [media type](https://developer.github.com/v3/media/#commits-commit-comparison-and-pull-requests) to  fetch `diff` and `patch` formats. Diffs with binary data will have no `patch` property.
+    * You can pass the appropriate [media type](https://docs.github.com/rest/overview/media-types/#commits-commit-comparison-and-pull-requests) to  fetch `diff` and `patch` formats. Diffs with binary data will have no `patch` property.
     *
-    * To return only the SHA-1 hash of the commit reference, you can provide the `sha` custom [media type](https://developer.github.com/v3/media/#commits-commit-comparison-and-pull-requests) in the `Accept` header. You can use this endpoint to check if a remote reference's SHA-1 hash is the same as your local reference's SHA-1 hash by providing the local SHA-1 reference as the ETag.
+    * To return only the SHA-1 hash of the commit reference, you can provide the `sha` custom [media type](https://docs.github.com/rest/overview/media-types/#commits-commit-comparison-and-pull-requests) in the `Accept` header. You can use this endpoint to check if a remote reference's SHA-1 hash is the same as your local reference's SHA-1 hash by providing the local SHA-1 reference as the ETag.
     *
     * **Signature verification object**
     *
@@ -1639,42 +2207,69 @@ trait AcceptInvitation extends StObject {
     * | `valid` | None of the above errors applied, so the signature is considered to be verified. |
     */
   @JSName("getCommit")
-  var getCommit_Original: `396`
+  var getCommit_Original: `590`
   
   /**
-    * This endpoint will return all community profile metrics, including an overall health score, repository description, the presence of documentation, detected code of conduct, detected license, and the presence of ISSUE\_TEMPLATE, PULL\_REQUEST\_TEMPLATE, README, and CONTRIBUTING files.
+    * This endpoint will return all community profile metrics, including an
+    * overall health score, repository description, the presence of documentation, detected
+    * code of conduct, detected license, and the presence of ISSUE\_TEMPLATE, PULL\_REQUEST\_TEMPLATE,
+    * README, and CONTRIBUTING files.
+    *
+    * The `health_percentage` score is defined as a percentage of how many of
+    * these four documents are present: README, CONTRIBUTING, LICENSE, and
+    * CODE_OF_CONDUCT. For example, if all four documents are present, then
+    * the `health_percentage` is `100`. If only one is present, then the
+    * `health_percentage` is `25`.
+    *
+    * `content_reports_enabled` is only returned for organization-owned repositories.
     */
   def getCommunityProfileMetrics(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/community/profile']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/community/profile']['response'] */ js.Any
   ]
   def getCommunityProfileMetrics(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/community/profile']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/community/profile']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/community/profile']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/community/profile']['response'] */ js.Any
   ]
   /**
-    * This endpoint will return all community profile metrics, including an overall health score, repository description, the presence of documentation, detected code of conduct, detected license, and the presence of ISSUE\_TEMPLATE, PULL\_REQUEST\_TEMPLATE, README, and CONTRIBUTING files.
+    * This endpoint will return all community profile metrics, including an
+    * overall health score, repository description, the presence of documentation, detected
+    * code of conduct, detected license, and the presence of ISSUE\_TEMPLATE, PULL\_REQUEST\_TEMPLATE,
+    * README, and CONTRIBUTING files.
+    *
+    * The `health_percentage` score is defined as a percentage of how many of
+    * these four documents are present: README, CONTRIBUTING, LICENSE, and
+    * CODE_OF_CONDUCT. For example, if all four documents are present, then
+    * the `health_percentage` is `100`. If only one is present, then the
+    * `health_percentage` is `25`.
+    *
+    * `content_reports_enabled` is only returned for organization-owned repositories.
     */
   @JSName("getCommunityProfileMetrics")
-  var getCommunityProfileMetrics_Original: `400`
+  var getCommunityProfileMetrics_Original: `594`
   
   /**
     * Gets the contents of a file or directory in a repository. Specify the file path or directory in `:path`. If you omit
-    * `:path`, you will receive the contents of all files in the repository.
+    * `:path`, you will receive the contents of the repository's root directory. See the description below regarding what the API response includes for directories.
     *
-    * Files and symlinks support [a custom media type](https://developer.github.com/v3/repos/contents/#custom-media-types) for
+    * Files and symlinks support [a custom media type](https://docs.github.com/rest/reference/repos#custom-media-types) for
     * retrieving the raw content or rendered HTML (when supported). All content types support [a custom media
-    * type](https://developer.github.com/v3/repos/contents/#custom-media-types) to ensure the content is returned in a consistent
+    * type](https://docs.github.com/rest/reference/repos#custom-media-types) to ensure the content is returned in a consistent
     * object format.
     *
-    * **Note**:
-    * *   To get a repository's contents recursively, you can [recursively get the tree](https://developer.github.com/v3/git/trees/).
+    * **Notes**:
+    * *   To get a repository's contents recursively, you can [recursively get the tree](https://docs.github.com/rest/reference/git#trees).
     * *   This API has an upper limit of 1,000 files for a directory. If you need to retrieve more files, use the [Git Trees
-    * API](https://developer.github.com/v3/git/trees/#get-a-tree).
-    * *   This API supports files up to 1 megabyte in size.
+    * API](https://docs.github.com/rest/reference/git#get-a-tree).
+    *  *  Download URLs expire and are meant to be used just once. To ensure the download URL does not expire, please use the contents API to obtain a fresh download URL for each download.
+    * #### Size limits
+    * If the requested file's size is:
+    * * 1 MB or smaller: All features of this endpoint are supported.
+    * * Between 1-100 MB: Only the `raw` or `object` [custom media types](https://docs.github.com/rest/repos/contents#custom-media-types-for-repository-contents) are supported. Both will work as normal, except that when using the `object` media type, the `content` field will be an empty string and the `encoding` field will be `"none"`. To get the contents of these larger files, use the `raw` media type.
+    *  * Greater than 100 MB: This endpoint is not supported.
     *
     * #### If the content is a directory
     * The response will be an array of objects, one object for each item in the directory.
@@ -1696,30 +2291,35 @@ trait AcceptInvitation extends StObject {
     * github.com URLs (`html_url` and `_links["html"]`) will have null values.
     */
   def getContent(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/contents/:path']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/contents/{path}']['response'] */ js.Any
   ]
   def getContent(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/contents/:path']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/contents/{path}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/contents/:path']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/contents/{path}']['response'] */ js.Any
   ]
   /**
     * Gets the contents of a file or directory in a repository. Specify the file path or directory in `:path`. If you omit
-    * `:path`, you will receive the contents of all files in the repository.
+    * `:path`, you will receive the contents of the repository's root directory. See the description below regarding what the API response includes for directories.
     *
-    * Files and symlinks support [a custom media type](https://developer.github.com/v3/repos/contents/#custom-media-types) for
+    * Files and symlinks support [a custom media type](https://docs.github.com/rest/reference/repos#custom-media-types) for
     * retrieving the raw content or rendered HTML (when supported). All content types support [a custom media
-    * type](https://developer.github.com/v3/repos/contents/#custom-media-types) to ensure the content is returned in a consistent
+    * type](https://docs.github.com/rest/reference/repos#custom-media-types) to ensure the content is returned in a consistent
     * object format.
     *
-    * **Note**:
-    * *   To get a repository's contents recursively, you can [recursively get the tree](https://developer.github.com/v3/git/trees/).
+    * **Notes**:
+    * *   To get a repository's contents recursively, you can [recursively get the tree](https://docs.github.com/rest/reference/git#trees).
     * *   This API has an upper limit of 1,000 files for a directory. If you need to retrieve more files, use the [Git Trees
-    * API](https://developer.github.com/v3/git/trees/#get-a-tree).
-    * *   This API supports files up to 1 megabyte in size.
+    * API](https://docs.github.com/rest/reference/git#get-a-tree).
+    *  *  Download URLs expire and are meant to be used just once. To ensure the download URL does not expire, please use the contents API to obtain a fresh download URL for each download.
+    * #### Size limits
+    * If the requested file's size is:
+    * * 1 MB or smaller: All features of this endpoint are supported.
+    * * Between 1-100 MB: Only the `raw` or `object` [custom media types](https://docs.github.com/rest/repos/contents#custom-media-types-for-repository-contents) are supported. Both will work as normal, except that when using the `object` media type, the `content` field will be an empty string and the `encoding` field will be `"none"`. To get the contents of these larger files, use the `raw` media type.
+    *  * Greater than 100 MB: This endpoint is not supported.
     *
     * #### If the content is a directory
     * The response will be an array of objects, one object for each item in the directory.
@@ -1741,7 +2341,7 @@ trait AcceptInvitation extends StObject {
     * github.com URLs (`html_url` and `_links["html"]`) will have null values.
     */
   @JSName("getContent")
-  var getContent_Original: `401`
+  var getContent_Original: `595`
   
   /**
     * Returns the `total` number of commits authored by the contributor. In addition, the response includes a Weekly Hash (`weeks` array) with the following information:
@@ -1752,15 +2352,15 @@ trait AcceptInvitation extends StObject {
     * *   `c` - Number of commits
     */
   def getContributorsStats(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/stats/contributors']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/stats/contributors']['response'] */ js.Any
   ]
   def getContributorsStats(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/stats/contributors']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/stats/contributors']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/stats/contributors']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/stats/contributors']['response'] */ js.Any
   ]
   /**
     * Returns the `total` number of commits authored by the contributor. In addition, the response includes a Weekly Hash (`weeks` array) with the following information:
@@ -1771,70 +2371,122 @@ trait AcceptInvitation extends StObject {
     * *   `c` - Number of commits
     */
   @JSName("getContributorsStats")
-  var getContributorsStats_Original: `402`
+  var getContributorsStats_Original: `596`
   
   def getDeployKey(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/keys/:key_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/keys/{key_id}']['response'] */ js.Any
   ]
   def getDeployKey(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/keys/:key_id']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/keys/{key_id}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/keys/:key_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/keys/{key_id}']['response'] */ js.Any
   ]
   @JSName("getDeployKey")
-  var getDeployKey_Original: `403`
+  var getDeployKey_Original: `597`
   
   def getDeployment(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/deployments/:deployment_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/deployments/{deployment_id}']['response'] */ js.Any
   ]
   def getDeployment(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/deployments/:deployment_id']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/deployments/{deployment_id}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/deployments/:deployment_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/deployments/{deployment_id}']['response'] */ js.Any
   ]
+  
+  /**
+    * Gets a deployment branch policy for an environment.
+    *
+    * Anyone with read access to the repository can use this endpoint. If the repository is private, you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
+    */
+  def getDeploymentBranchPolicy(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/environments/{environment_name}/deployment-branch-policies/{branch_policy_id}']['response'] */ js.Any
+  ]
+  def getDeploymentBranchPolicy(
+    params: RequestParameters & (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/environments/{environment_name}/deployment-branch-policies/{branch_policy_id}']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/environments/{environment_name}/deployment-branch-policies/{branch_policy_id}']['response'] */ js.Any
+  ]
+  /**
+    * Gets a deployment branch policy for an environment.
+    *
+    * Anyone with read access to the repository can use this endpoint. If the repository is private, you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
+    */
+  @JSName("getDeploymentBranchPolicy")
+  var getDeploymentBranchPolicy_Original: `599`
   
   /**
     * Users with pull access can view a deployment status for a deployment:
     */
   def getDeploymentStatus(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/deployments/:deployment_id/statuses/:status_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/deployments/{deployment_id}/statuses/{status_id}']['response'] */ js.Any
   ]
   def getDeploymentStatus(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/deployments/:deployment_id/statuses/:status_id']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/deployments/{deployment_id}/statuses/{status_id}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/deployments/:deployment_id/statuses/:status_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/deployments/{deployment_id}/statuses/{status_id}']['response'] */ js.Any
   ]
   /**
     * Users with pull access can view a deployment status for a deployment:
     */
   @JSName("getDeploymentStatus")
-  var getDeploymentStatus_Original: `405`
+  var getDeploymentStatus_Original: `600`
   
   @JSName("getDeployment")
-  var getDeployment_Original: `404`
+  var getDeployment_Original: `598`
   
-  def getLatestPagesBuild(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pages/builds/latest']['response'] */ js.Any
+  /**
+    * **Note:** To get information about name patterns that branches must match in order to deploy to this environment, see "[Get a deployment branch policy](/rest/deployments/branch-policies#get-a-deployment-branch-policy)."
+    *
+    * Anyone with read access to the repository can use this endpoint. If the
+    * repository is private, you must use an access token with the `repo` scope. GitHub
+    * Apps must have the `actions:read` permission to use this endpoint.
+    */
+  def getEnvironment(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/environments/{environment_name}']['response'] */ js.Any
   ]
-  def getLatestPagesBuild(
+  def getEnvironment(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pages/builds/latest']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/environments/{environment_name}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pages/builds/latest']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/environments/{environment_name}']['response'] */ js.Any
+  ]
+  /**
+    * **Note:** To get information about name patterns that branches must match in order to deploy to this environment, see "[Get a deployment branch policy](/rest/deployments/branch-policies#get-a-deployment-branch-policy)."
+    *
+    * Anyone with read access to the repository can use this endpoint. If the
+    * repository is private, you must use an access token with the `repo` scope. GitHub
+    * Apps must have the `actions:read` permission to use this endpoint.
+    */
+  @JSName("getEnvironment")
+  var getEnvironment_Original: `601`
+  
+  def getLatestPagesBuild(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/pages/builds/latest']['response'] */ js.Any
+  ]
+  def getLatestPagesBuild(
+    params: RequestParameters & (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/pages/builds/latest']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/pages/builds/latest']['response'] */ js.Any
   ]
   @JSName("getLatestPagesBuild")
-  var getLatestPagesBuild_Original: `406`
+  var getLatestPagesBuild_Original: `602`
   
   /**
     * View the latest published full release for the repository.
@@ -1842,15 +2494,15 @@ trait AcceptInvitation extends StObject {
     * The latest release is the most recent non-prerelease, non-draft release, sorted by the `created_at` attribute. The `created_at` attribute is the date of the commit used for the release, and not the date when the release was drafted or published.
     */
   def getLatestRelease(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/releases/latest']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/releases/latest']['response'] */ js.Any
   ]
   def getLatestRelease(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/releases/latest']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/releases/latest']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/releases/latest']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/releases/latest']['response'] */ js.Any
   ]
   /**
     * View the latest published full release for the repository.
@@ -1858,36 +2510,64 @@ trait AcceptInvitation extends StObject {
     * The latest release is the most recent non-prerelease, non-draft release, sorted by the `created_at` attribute. The `created_at` attribute is the date of the commit used for the release, and not the date when the release was drafted or published.
     */
   @JSName("getLatestRelease")
-  var getLatestRelease_Original: `407`
+  var getLatestRelease_Original: `603`
   
   def getPages(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pages']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/pages']['response'] */ js.Any
   ]
   def getPages(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pages']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/pages']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pages']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/pages']['response'] */ js.Any
   ]
   
   def getPagesBuild(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pages/builds/:build_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/pages/builds/{build_id}']['response'] */ js.Any
   ]
   def getPagesBuild(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pages/builds/:build_id']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/pages/builds/{build_id}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pages/builds/:build_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/pages/builds/{build_id}']['response'] */ js.Any
   ]
   @JSName("getPagesBuild")
-  var getPagesBuild_Original: `409`
+  var getPagesBuild_Original: `605`
+  
+  /**
+    * Gets a health check of the DNS settings for the `CNAME` record configured for a repository's GitHub Pages.
+    *
+    * The first request to this endpoint returns a `202 Accepted` status and starts an asynchronous background task to get the results for the domain. After the background task completes, subsequent requests to this endpoint return a `200 OK` status with the health check results in the response.
+    *
+    * Users must have admin or owner permissions. GitHub Apps must have the `pages:write` and `administration:write` permission to use this endpoint.
+    */
+  def getPagesHealthCheck(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/pages/health']['response'] */ js.Any
+  ]
+  def getPagesHealthCheck(
+    params: RequestParameters & (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/pages/health']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/pages/health']['response'] */ js.Any
+  ]
+  /**
+    * Gets a health check of the DNS settings for the `CNAME` record configured for a repository's GitHub Pages.
+    *
+    * The first request to this endpoint returns a `202 Accepted` status and starts an asynchronous background task to get the results for the domain. After the background task completes, subsequent requests to this endpoint return a `200 OK` status with the health check results in the response.
+    *
+    * Users must have admin or owner permissions. GitHub Apps must have the `pages:write` and `administration:write` permission to use this endpoint.
+    */
+  @JSName("getPagesHealthCheck")
+  var getPagesHealthCheck_Original: `606`
   
   @JSName("getPages")
-  var getPages_Original: `408`
+  var getPages_Original: `604`
   
   /**
     * Returns the total commit counts for the `owner` and total commit counts in `all`. `all` is everyone combined, including the `owner` in the last 52 weeks. If you'd like to get the commit counts for non-owners, you can subtract `owner` from `all`.
@@ -1895,15 +2575,15 @@ trait AcceptInvitation extends StObject {
     * The array order is oldest week (index 0) to most recent week.
     */
   def getParticipationStats(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/stats/participation']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/stats/participation']['response'] */ js.Any
   ]
   def getParticipationStats(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/stats/participation']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/stats/participation']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/stats/participation']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/stats/participation']['response'] */ js.Any
   ]
   /**
     * Returns the total commit counts for the `owner` and total commit counts in `all`. `all` is everyone combined, including the `owner` in the last 52 weeks. If you'd like to get the commit counts for non-owners, you can subtract `owner` from `all`.
@@ -1911,27 +2591,27 @@ trait AcceptInvitation extends StObject {
     * The array order is oldest week (index 0) to most recent week.
     */
   @JSName("getParticipationStats")
-  var getParticipationStats_Original: `410`
+  var getParticipationStats_Original: `607`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   def getPullRequestReviewProtection(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/branches/:branch/protection/required_pull_request_reviews']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/branches/{branch}/protection/required_pull_request_reviews']['response'] */ js.Any
   ]
   def getPullRequestReviewProtection(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/branches/:branch/protection/required_pull_request_reviews']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/branches/{branch}/protection/required_pull_request_reviews']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/branches/:branch/protection/required_pull_request_reviews']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/branches/{branch}/protection/required_pull_request_reviews']['response'] */ js.Any
   ]
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   @JSName("getPullRequestReviewProtection")
-  var getPullRequestReviewProtection_Original: `411`
+  var getPullRequestReviewProtection_Original: `608`
   
   /**
     * Each array contains the day number, hour number, and number of commits:
@@ -1943,15 +2623,15 @@ trait AcceptInvitation extends StObject {
     * For example, `[2, 14, 25]` indicates that there were 25 total commits, during the 2:00pm hour on Tuesdays. All times are based on the time zone of individual commits.
     */
   def getPunchCardStats(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/stats/punch_card']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/stats/punch_card']['response'] */ js.Any
   ]
   def getPunchCardStats(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/stats/punch_card']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/stats/punch_card']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/stats/punch_card']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/stats/punch_card']['response'] */ js.Any
   ]
   /**
     * Each array contains the day number, hour number, and number of commits:
@@ -1963,112 +2643,137 @@ trait AcceptInvitation extends StObject {
     * For example, `[2, 14, 25]` indicates that there were 25 total commits, during the 2:00pm hour on Tuesdays. All times are based on the time zone of individual commits.
     */
   @JSName("getPunchCardStats")
-  var getPunchCardStats_Original: `412`
+  var getPunchCardStats_Original: `609`
   
   /**
     * Gets the preferred README for a repository.
     *
-    * READMEs support [custom media types](https://developer.github.com/v3/repos/contents/#custom-media-types) for retrieving the raw content or rendered HTML.
+    * READMEs support [custom media types](https://docs.github.com/rest/reference/repos#custom-media-types) for retrieving the raw content or rendered HTML.
     */
   def getReadme(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/readme']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/readme']['response'] */ js.Any
   ]
   def getReadme(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/readme']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/readme']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/readme']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/readme']['response'] */ js.Any
   ]
+  
+  /**
+    * Gets the README from a repository directory.
+    *
+    * READMEs support [custom media types](https://docs.github.com/rest/reference/repos#custom-media-types) for retrieving the raw content or rendered HTML.
+    */
+  def getReadmeInDirectory(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/readme/{dir}']['response'] */ js.Any
+  ]
+  def getReadmeInDirectory(
+    params: RequestParameters & (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/readme/{dir}']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/readme/{dir}']['response'] */ js.Any
+  ]
+  /**
+    * Gets the README from a repository directory.
+    *
+    * READMEs support [custom media types](https://docs.github.com/rest/reference/repos#custom-media-types) for retrieving the raw content or rendered HTML.
+    */
+  @JSName("getReadmeInDirectory")
+  var getReadmeInDirectory_Original: `611`
+  
   /**
     * Gets the preferred README for a repository.
     *
-    * READMEs support [custom media types](https://developer.github.com/v3/repos/contents/#custom-media-types) for retrieving the raw content or rendered HTML.
+    * READMEs support [custom media types](https://docs.github.com/rest/reference/repos#custom-media-types) for retrieving the raw content or rendered HTML.
     */
   @JSName("getReadme")
-  var getReadme_Original: `413`
+  var getReadme_Original: `610`
   
   /**
-    * **Note:** This returns an `upload_url` key corresponding to the endpoint for uploading release assets. This key is a [hypermedia resource](https://developer.github.com/v3/#hypermedia).
+    * **Note:** This returns an `upload_url` key corresponding to the endpoint for uploading release assets. This key is a [hypermedia resource](https://docs.github.com/rest/overview/resources-in-the-rest-api#hypermedia).
     */
   def getRelease(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/releases/:release_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/releases/{release_id}']['response'] */ js.Any
   ]
   def getRelease(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/releases/:release_id']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/releases/{release_id}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/releases/:release_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/releases/{release_id}']['response'] */ js.Any
   ]
   
   /**
-    * To download the asset's binary content, set the `Accept` header of the request to [`application/octet-stream`](https://developer.github.com/v3/media/#media-types). The API will either redirect the client to the location, or stream it directly if possible. API clients should handle both a `200` or `302` response.
+    * To download the asset's binary content, set the `Accept` header of the request to [`application/octet-stream`](https://docs.github.com/rest/overview/media-types). The API will either redirect the client to the location, or stream it directly if possible. API clients should handle both a `200` or `302` response.
     */
   def getReleaseAsset(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/releases/assets/:asset_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/releases/assets/{asset_id}']['response'] */ js.Any
   ]
   def getReleaseAsset(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/releases/assets/:asset_id']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/releases/assets/{asset_id}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/releases/assets/:asset_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/releases/assets/{asset_id}']['response'] */ js.Any
   ]
   /**
-    * To download the asset's binary content, set the `Accept` header of the request to [`application/octet-stream`](https://developer.github.com/v3/media/#media-types). The API will either redirect the client to the location, or stream it directly if possible. API clients should handle both a `200` or `302` response.
+    * To download the asset's binary content, set the `Accept` header of the request to [`application/octet-stream`](https://docs.github.com/rest/overview/media-types). The API will either redirect the client to the location, or stream it directly if possible. API clients should handle both a `200` or `302` response.
     */
   @JSName("getReleaseAsset")
-  var getReleaseAsset_Original: `415`
+  var getReleaseAsset_Original: `613`
   
   /**
     * Get a published release with the specified tag.
     */
   def getReleaseByTag(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/releases/tags/:tag']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/releases/tags/{tag}']['response'] */ js.Any
   ]
   def getReleaseByTag(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/releases/tags/:tag']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/releases/tags/{tag}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/releases/tags/:tag']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/releases/tags/{tag}']['response'] */ js.Any
   ]
   /**
     * Get a published release with the specified tag.
     */
   @JSName("getReleaseByTag")
-  var getReleaseByTag_Original: `416`
+  var getReleaseByTag_Original: `614`
   
   /**
-    * **Note:** This returns an `upload_url` key corresponding to the endpoint for uploading release assets. This key is a [hypermedia resource](https://developer.github.com/v3/#hypermedia).
+    * **Note:** This returns an `upload_url` key corresponding to the endpoint for uploading release assets. This key is a [hypermedia resource](https://docs.github.com/rest/overview/resources-in-the-rest-api#hypermedia).
     */
   @JSName("getRelease")
-  var getRelease_Original: `414`
+  var getRelease_Original: `612`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   def getStatusChecksProtection(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/branches/:branch/protection/required_status_checks']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks']['response'] */ js.Any
   ]
   def getStatusChecksProtection(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/branches/:branch/protection/required_status_checks']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/branches/:branch/protection/required_status_checks']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks']['response'] */ js.Any
   ]
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   @JSName("getStatusChecksProtection")
-  var getStatusChecksProtection_Original: `417`
+  var getStatusChecksProtection_Original: `615`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -2076,15 +2781,15 @@ trait AcceptInvitation extends StObject {
     * Lists the teams who have push access to this branch. The list includes child teams.
     */
   def getTeamsWithAccessToProtectedBranch(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/branches/:branch/protection/restrictions/teams']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/teams']['response'] */ js.Any
   ]
   def getTeamsWithAccessToProtectedBranch(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/branches/:branch/protection/restrictions/teams']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/teams']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/branches/:branch/protection/restrictions/teams']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/teams']['response'] */ js.Any
   ]
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -2092,47 +2797,47 @@ trait AcceptInvitation extends StObject {
     * Lists the teams who have push access to this branch. The list includes child teams.
     */
   @JSName("getTeamsWithAccessToProtectedBranch")
-  var getTeamsWithAccessToProtectedBranch_Original: `418`
+  var getTeamsWithAccessToProtectedBranch_Original: `616`
   
   /**
     * Get the top 10 popular contents over the last 14 days.
     */
   def getTopPaths(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/traffic/popular/paths']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/traffic/popular/paths']['response'] */ js.Any
   ]
   def getTopPaths(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/traffic/popular/paths']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/traffic/popular/paths']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/traffic/popular/paths']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/traffic/popular/paths']['response'] */ js.Any
   ]
   /**
     * Get the top 10 popular contents over the last 14 days.
     */
   @JSName("getTopPaths")
-  var getTopPaths_Original: `419`
+  var getTopPaths_Original: `617`
   
   /**
     * Get the top 10 referrers over the last 14 days.
     */
   def getTopReferrers(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/traffic/popular/referrers']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/traffic/popular/referrers']['response'] */ js.Any
   ]
   def getTopReferrers(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/traffic/popular/referrers']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/traffic/popular/referrers']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/traffic/popular/referrers']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/traffic/popular/referrers']['response'] */ js.Any
   ]
   /**
     * Get the top 10 referrers over the last 14 days.
     */
   @JSName("getTopReferrers")
-  var getTopReferrers_Original: `420`
+  var getTopReferrers_Original: `618`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -2140,15 +2845,15 @@ trait AcceptInvitation extends StObject {
     * Lists the people who have push access to this branch.
     */
   def getUsersWithAccessToProtectedBranch(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/branches/:branch/protection/restrictions/users']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/users']['response'] */ js.Any
   ]
   def getUsersWithAccessToProtectedBranch(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/branches/:branch/protection/restrictions/users']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/users']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/branches/:branch/protection/restrictions/users']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/users']['response'] */ js.Any
   ]
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -2156,60 +2861,133 @@ trait AcceptInvitation extends StObject {
     * Lists the people who have push access to this branch.
     */
   @JSName("getUsersWithAccessToProtectedBranch")
-  var getUsersWithAccessToProtectedBranch_Original: `421`
+  var getUsersWithAccessToProtectedBranch_Original: `619`
   
   /**
     * Get the total number of views and breakdown per day or week for the last 14 days. Timestamps are aligned to UTC midnight of the beginning of the day or week. Week begins on Monday.
     */
   def getViews(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/traffic/views']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/traffic/views']['response'] */ js.Any
   ]
   def getViews(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/traffic/views']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/traffic/views']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/traffic/views']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/traffic/views']['response'] */ js.Any
   ]
   /**
     * Get the total number of views and breakdown per day or week for the last 14 days. Timestamps are aligned to UTC midnight of the beginning of the day or week. Week begins on Monday.
     */
   @JSName("getViews")
-  var getViews_Original: `422`
+  var getViews_Original: `620`
   
+  /**
+    * Returns a webhook configured in a repository. To get only the webhook `config` properties, see "[Get a webhook configuration for a repository](/rest/reference/repos#get-a-webhook-configuration-for-a-repository)."
+    */
   def getWebhook(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/hooks/:hook_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/hooks/{hook_id}']['response'] */ js.Any
   ]
   def getWebhook(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/hooks/:hook_id']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/hooks/{hook_id}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/hooks/:hook_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/hooks/{hook_id}']['response'] */ js.Any
   ]
-  @JSName("getWebhook")
-  var getWebhook_Original: `423`
   
   /**
-    * When you pass the `scarlet-witch-preview` media type, requests to get a repository will also return the repository's code of conduct if it can be detected from the repository's code of conduct file.
+    * Returns the webhook configuration for a repository. To get more information about the webhook, including the `active` state and `events`, use "[Get a repository webhook](/rest/reference/orgs#get-a-repository-webhook)."
     *
+    * Access tokens must have the `read:repo_hook` or `repo` scope, and GitHub Apps must have the `repository_hooks:read` permission.
+    */
+  def getWebhookConfigForRepo(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/hooks/{hook_id}/config']['response'] */ js.Any
+  ]
+  def getWebhookConfigForRepo(
+    params: RequestParameters & (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/hooks/{hook_id}/config']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/hooks/{hook_id}/config']['response'] */ js.Any
+  ]
+  /**
+    * Returns the webhook configuration for a repository. To get more information about the webhook, including the `active` state and `events`, use "[Get a repository webhook](/rest/reference/orgs#get-a-repository-webhook)."
+    *
+    * Access tokens must have the `read:repo_hook` or `repo` scope, and GitHub Apps must have the `repository_hooks:read` permission.
+    */
+  @JSName("getWebhookConfigForRepo")
+  var getWebhookConfigForRepo_Original: `622`
+  
+  /**
+    * Returns a delivery for a webhook configured in a repository.
+    */
+  def getWebhookDelivery(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/hooks/{hook_id}/deliveries/{delivery_id}']['response'] */ js.Any
+  ]
+  def getWebhookDelivery(
+    params: RequestParameters & (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/hooks/{hook_id}/deliveries/{delivery_id}']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/hooks/{hook_id}/deliveries/{delivery_id}']['response'] */ js.Any
+  ]
+  /**
+    * Returns a delivery for a webhook configured in a repository.
+    */
+  @JSName("getWebhookDelivery")
+  var getWebhookDelivery_Original: `623`
+  
+  /**
+    * Returns a webhook configured in a repository. To get only the webhook `config` properties, see "[Get a webhook configuration for a repository](/rest/reference/repos#get-a-webhook-configuration-for-a-repository)."
+    */
+  @JSName("getWebhook")
+  var getWebhook_Original: `621`
+  
+  /**
     * The `parent` and `source` objects are present when the repository is a fork. `parent` is the repository this repository was forked from, `source` is the ultimate source for the network.
     */
   @JSName("get")
-  var get_Original: `384`
+  var get_Original: `576`
   
-  def listBranches(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/branches']['response'] */ js.Any
+  /**
+    * This returns a list of autolinks configured for the given repository.
+    *
+    * Information about autolinks are only available to repository administrators.
+    */
+  def listAutolinks(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/autolinks']['response'] */ js.Any
   ]
-  def listBranches(
+  def listAutolinks(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/branches']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/autolinks']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/branches']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/autolinks']['response'] */ js.Any
+  ]
+  /**
+    * This returns a list of autolinks configured for the given repository.
+    *
+    * Information about autolinks are only available to repository administrators.
+    */
+  @JSName("listAutolinks")
+  var listAutolinks_Original: `624`
+  
+  def listBranches(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/branches']['response'] */ js.Any
+  ]
+  def listBranches(
+    params: RequestParameters & (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/branches']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/branches']['response'] */ js.Any
   ]
   
   /**
@@ -2218,15 +2996,15 @@ trait AcceptInvitation extends StObject {
     * Returns all branches where the given commit SHA is the HEAD, or latest commit for the branch.
     */
   def listBranchesForHeadCommit(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/commits/:commit_sha/branches-where-head']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/commits/{commit_sha}/branches-where-head']['response'] */ js.Any
   ]
   def listBranchesForHeadCommit(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/commits/:commit_sha/branches-where-head']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/commits/{commit_sha}/branches-where-head']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/commits/:commit_sha/branches-where-head']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/commits/{commit_sha}/branches-where-head']['response'] */ js.Any
   ]
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -2234,78 +3012,88 @@ trait AcceptInvitation extends StObject {
     * Returns all branches where the given commit SHA is the HEAD, or latest commit for the branch.
     */
   @JSName("listBranchesForHeadCommit")
-  var listBranchesForHeadCommit_Original: `425`
+  var listBranchesForHeadCommit_Original: `626`
   
   @JSName("listBranches")
-  var listBranches_Original: `424`
+  var listBranches_Original: `625`
   
   /**
     * For organization-owned repositories, the list of collaborators includes outside collaborators, organization members that are direct collaborators, organization members with access through team memberships, organization members with access through default organization permissions, and organization owners.
+    * Organization members with write, maintain, or admin privileges on the organization-owned repository can use this endpoint.
     *
     * Team members will include the members of child teams.
+    *
+    * You must authenticate using an access token with the `read:org` and `repo` scopes with push access to use this
+    * endpoint. GitHub Apps must have the `members` organization permission and `metadata` repository permission to use this
+    * endpoint.
     */
   def listCollaborators(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/collaborators']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/collaborators']['response'] */ js.Any
   ]
   def listCollaborators(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/collaborators']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/collaborators']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/collaborators']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/collaborators']['response'] */ js.Any
   ]
   /**
     * For organization-owned repositories, the list of collaborators includes outside collaborators, organization members that are direct collaborators, organization members with access through team memberships, organization members with access through default organization permissions, and organization owners.
+    * Organization members with write, maintain, or admin privileges on the organization-owned repository can use this endpoint.
     *
     * Team members will include the members of child teams.
+    *
+    * You must authenticate using an access token with the `read:org` and `repo` scopes with push access to use this
+    * endpoint. GitHub Apps must have the `members` organization permission and `metadata` repository permission to use this
+    * endpoint.
     */
   @JSName("listCollaborators")
-  var listCollaborators_Original: `426`
+  var listCollaborators_Original: `627`
   
   /**
     * Use the `:commit_sha` to specify the commit that will have its comments listed.
     */
   def listCommentsForCommit(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/commits/:commit_sha/comments']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/commits/{commit_sha}/comments']['response'] */ js.Any
   ]
   def listCommentsForCommit(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/commits/:commit_sha/comments']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/commits/{commit_sha}/comments']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/commits/:commit_sha/comments']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/commits/{commit_sha}/comments']['response'] */ js.Any
   ]
   /**
     * Use the `:commit_sha` to specify the commit that will have its comments listed.
     */
   @JSName("listCommentsForCommit")
-  var listCommentsForCommit_Original: `427`
+  var listCommentsForCommit_Original: `628`
   
   /**
-    * Commit Comments use [these custom media types](https://developer.github.com/v3/repos/comments/#custom-media-types). You can read more about the use of media types in the API [here](https://developer.github.com/v3/media/).
+    * Commit Comments use [these custom media types](https://docs.github.com/rest/reference/repos#custom-media-types). You can read more about the use of media types in the API [here](https://docs.github.com/rest/overview/media-types/).
     *
     * Comments are ordered by ascending ID.
     */
   def listCommitCommentsForRepo(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/comments']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/comments']['response'] */ js.Any
   ]
   def listCommitCommentsForRepo(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/comments']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/comments']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/comments']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/comments']['response'] */ js.Any
   ]
   /**
-    * Commit Comments use [these custom media types](https://developer.github.com/v3/repos/comments/#custom-media-types). You can read more about the use of media types in the API [here](https://developer.github.com/v3/media/).
+    * Commit Comments use [these custom media types](https://docs.github.com/rest/reference/repos#custom-media-types). You can read more about the use of media types in the API [here](https://docs.github.com/rest/overview/media-types/).
     *
     * Comments are ordered by ascending ID.
     */
   @JSName("listCommitCommentsForRepo")
-  var listCommitCommentsForRepo_Original: `428`
+  var listCommitCommentsForRepo_Original: `629`
   
   /**
     * Users with pull access in a repository can view commit statuses for a given ref. The ref can be a SHA, a branch name, or a tag name. Statuses are returned in reverse chronological order. The first status in the list will be the latest one.
@@ -2313,15 +3101,15 @@ trait AcceptInvitation extends StObject {
     * This resource is also available via a legacy route: `GET /repos/:owner/:repo/statuses/:ref`.
     */
   def listCommitStatusesForRef(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/commits/:ref/statuses']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/commits/{ref}/statuses']['response'] */ js.Any
   ]
   def listCommitStatusesForRef(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/commits/:ref/statuses']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/commits/{ref}/statuses']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/commits/:ref/statuses']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/commits/{ref}/statuses']['response'] */ js.Any
   ]
   /**
     * Users with pull access in a repository can view commit statuses for a given ref. The ref can be a SHA, a branch name, or a tag name. Statuses are returned in reverse chronological order. The first status in the list will be the latest one.
@@ -2329,7 +3117,7 @@ trait AcceptInvitation extends StObject {
     * This resource is also available via a legacy route: `GET /repos/:owner/:repo/statuses/:ref`.
     */
   @JSName("listCommitStatusesForRef")
-  var listCommitStatusesForRef_Original: `429`
+  var listCommitStatusesForRef_Original: `630`
   
   /**
     * **Signature verification object**
@@ -2362,15 +3150,15 @@ trait AcceptInvitation extends StObject {
     * | `valid` | None of the above errors applied, so the signature is considered to be verified. |
     */
   def listCommits(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/commits']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/commits']['response'] */ js.Any
   ]
   def listCommits(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/commits']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/commits']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/commits']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/commits']['response'] */ js.Any
   ]
   /**
     * **Signature verification object**
@@ -2403,7 +3191,7 @@ trait AcceptInvitation extends StObject {
     * | `valid` | None of the above errors applied, so the signature is considered to be verified. |
     */
   @JSName("listCommits")
-  var listCommits_Original: `430`
+  var listCommits_Original: `631`
   
   /**
     * Lists contributors to the specified repository and sorts them by the number of commits per contributor in descending order. This endpoint may return information that is a few hours old because the GitHub REST API v3 caches contributor data to improve performance.
@@ -2411,15 +3199,15 @@ trait AcceptInvitation extends StObject {
     * GitHub identifies contributors by author email address. This endpoint groups contribution counts by GitHub user, which includes all associated email addresses. To improve performance, only the first 500 author email addresses in the repository link to GitHub users. The rest will appear as anonymous contributors without associated GitHub user information.
     */
   def listContributors(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/contributors']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/contributors']['response'] */ js.Any
   ]
   def listContributors(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/contributors']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/contributors']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/contributors']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/contributors']['response'] */ js.Any
   ]
   /**
     * Lists contributors to the specified repository and sorts them by the number of commits per contributor in descending order. This endpoint may return information that is a few hours old because the GitHub REST API v3 caches contributor data to improve performance.
@@ -2427,61 +3215,85 @@ trait AcceptInvitation extends StObject {
     * GitHub identifies contributors by author email address. This endpoint groups contribution counts by GitHub user, which includes all associated email addresses. To improve performance, only the first 500 author email addresses in the repository link to GitHub users. The rest will appear as anonymous contributors without associated GitHub user information.
     */
   @JSName("listContributors")
-  var listContributors_Original: `431`
+  var listContributors_Original: `632`
   
   def listDeployKeys(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/keys']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/keys']['response'] */ js.Any
   ]
   def listDeployKeys(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/keys']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/keys']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/keys']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/keys']['response'] */ js.Any
   ]
   @JSName("listDeployKeys")
-  var listDeployKeys_Original: `432`
+  var listDeployKeys_Original: `633`
+  
+  /**
+    * Lists the deployment branch policies for an environment.
+    *
+    * Anyone with read access to the repository can use this endpoint. If the repository is private, you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
+    */
+  def listDeploymentBranchPolicies(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/environments/{environment_name}/deployment-branch-policies']['response'] */ js.Any
+  ]
+  def listDeploymentBranchPolicies(
+    params: RequestParameters & (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/environments/{environment_name}/deployment-branch-policies']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/environments/{environment_name}/deployment-branch-policies']['response'] */ js.Any
+  ]
+  /**
+    * Lists the deployment branch policies for an environment.
+    *
+    * Anyone with read access to the repository can use this endpoint. If the repository is private, you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
+    */
+  @JSName("listDeploymentBranchPolicies")
+  var listDeploymentBranchPolicies_Original: `634`
   
   /**
     * Users with pull access can view deployment statuses for a deployment:
     */
   def listDeploymentStatuses(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/deployments/:deployment_id/statuses']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/deployments/{deployment_id}/statuses']['response'] */ js.Any
   ]
   def listDeploymentStatuses(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/deployments/:deployment_id/statuses']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/deployments/{deployment_id}/statuses']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/deployments/:deployment_id/statuses']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/deployments/{deployment_id}/statuses']['response'] */ js.Any
   ]
   /**
     * Users with pull access can view deployment statuses for a deployment:
     */
   @JSName("listDeploymentStatuses")
-  var listDeploymentStatuses_Original: `433`
+  var listDeploymentStatuses_Original: `635`
   
   /**
     * Simple filtering of deployments is available via query parameters:
     */
   def listDeployments(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/deployments']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/deployments']['response'] */ js.Any
   ]
   def listDeployments(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/deployments']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/deployments']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/deployments']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/deployments']['response'] */ js.Any
   ]
   /**
     * Simple filtering of deployments is available via query parameters:
     */
   @JSName("listDeployments")
-  var listDeployments_Original: `434`
+  var listDeployments_Original: `636`
   
   /**
     * Lists repositories that the authenticated user has explicit permission (`:read`, `:write`, or `:admin`) to access.
@@ -2505,75 +3317,75 @@ trait AcceptInvitation extends StObject {
     * The authenticated user has explicit permission to access repositories they own, repositories where they are a collaborator, and repositories that they can access through an organization membership.
     */
   @JSName("listForAuthenticatedUser")
-  var listForAuthenticatedUser_Original: `435`
+  var listForAuthenticatedUser_Original: `637`
   
   /**
     * Lists repositories for the specified organization.
     */
   def listForOrg(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/repos']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/repos']['response'] */ js.Any
   ]
   def listForOrg(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/repos']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/repos']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/:org/repos']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /orgs/{org}/repos']['response'] */ js.Any
   ]
   /**
     * Lists repositories for the specified organization.
     */
   @JSName("listForOrg")
-  var listForOrg_Original: `436`
+  var listForOrg_Original: `638`
   
   /**
-    * Lists public repositories for the specified user.
+    * Lists public repositories for the specified user. Note: For GitHub AE, this endpoint will list internal repositories for the specified user.
     */
   def listForUser(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /users/:username/repos']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /users/{username}/repos']['response'] */ js.Any
   ]
   def listForUser(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /users/:username/repos']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /users/{username}/repos']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /users/:username/repos']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /users/{username}/repos']['response'] */ js.Any
   ]
   /**
-    * Lists public repositories for the specified user.
+    * Lists public repositories for the specified user. Note: For GitHub AE, this endpoint will list internal repositories for the specified user.
     */
   @JSName("listForUser")
-  var listForUser_Original: `437`
+  var listForUser_Original: `639`
   
   def listForks(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/forks']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/forks']['response'] */ js.Any
   ]
   def listForks(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/forks']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/forks']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/forks']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/forks']['response'] */ js.Any
   ]
   @JSName("listForks")
-  var listForks_Original: `438`
+  var listForks_Original: `640`
   
   /**
     * When authenticating as a user with admin rights to a repository, this endpoint will list all currently open repository invitations.
     */
   def listInvitations(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/invitations']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/invitations']['response'] */ js.Any
   ]
   def listInvitations(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/invitations']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/invitations']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/invitations']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/invitations']['response'] */ js.Any
   ]
   
   /**
@@ -2594,52 +3406,54 @@ trait AcceptInvitation extends StObject {
     * When authenticating as a user, this endpoint will list all currently open repository invitations for that user.
     */
   @JSName("listInvitationsForAuthenticatedUser")
-  var listInvitationsForAuthenticatedUser_Original: `440`
+  var listInvitationsForAuthenticatedUser_Original: `642`
   
   /**
     * When authenticating as a user with admin rights to a repository, this endpoint will list all currently open repository invitations.
     */
   @JSName("listInvitations")
-  var listInvitations_Original: `439`
+  var listInvitations_Original: `641`
   
   /**
     * Lists languages for the specified repository. The value shown for each language is the number of bytes of code written in that language.
     */
   def listLanguages(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/languages']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/languages']['response'] */ js.Any
   ]
   def listLanguages(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/languages']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/languages']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/languages']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/languages']['response'] */ js.Any
   ]
   /**
     * Lists languages for the specified repository. The value shown for each language is the number of bytes of code written in that language.
     */
   @JSName("listLanguages")
-  var listLanguages_Original: `441`
+  var listLanguages_Original: `643`
   
   def listPagesBuilds(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pages/builds']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/pages/builds']['response'] */ js.Any
   ]
   def listPagesBuilds(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pages/builds']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/pages/builds']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pages/builds']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/pages/builds']['response'] */ js.Any
   ]
   @JSName("listPagesBuilds")
-  var listPagesBuilds_Original: `442`
+  var listPagesBuilds_Original: `644`
   
   /**
     * Lists all public repositories in the order that they were created.
     *
-    * Note: Pagination is powered exclusively by the `since` parameter. Use the [Link header](https://developer.github.com/v3/#link-header) to get the URL for the next page of repositories.
+    * Note:
+    * - For GitHub Enterprise Server, this endpoint will only list repositories available to all users on the enterprise.
+    * - Pagination is powered exclusively by the `since` parameter. Use the [Link header](https://docs.github.com/rest/overview/resources-in-the-rest-api#link-header) to get the URL for the next page of repositories.
     */
   def listPublic(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repositories']['response'] */ js.Any
@@ -2655,144 +3469,237 @@ trait AcceptInvitation extends StObject {
   /**
     * Lists all public repositories in the order that they were created.
     *
-    * Note: Pagination is powered exclusively by the `since` parameter. Use the [Link header](https://developer.github.com/v3/#link-header) to get the URL for the next page of repositories.
+    * Note:
+    * - For GitHub Enterprise Server, this endpoint will only list repositories available to all users on the enterprise.
+    * - Pagination is powered exclusively by the `since` parameter. Use the [Link header](https://docs.github.com/rest/overview/resources-in-the-rest-api#link-header) to get the URL for the next page of repositories.
     */
   @JSName("listPublic")
-  var listPublic_Original: `443`
+  var listPublic_Original: `645`
   
   /**
-    * Lists all pull requests containing the provided commit SHA, which can be from any point in the commit history. The results will include open and closed pull requests. Additional preview headers may be required to see certain details for associated pull requests, such as whether a pull request is in a draft state. For more information about previews that might affect this endpoint, see the [List pull requests](https://developer.github.com/v3/pulls/#list-pull-requests) endpoint.
+    * Lists the merged pull request that introduced the commit to the repository. If the commit is not present in the default branch, additionally returns open pull requests associated with the commit. The results may include open and closed pull requests.
     */
   def listPullRequestsAssociatedWithCommit(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/commits/:commit_sha/pulls']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/commits/{commit_sha}/pulls']['response'] */ js.Any
   ]
   def listPullRequestsAssociatedWithCommit(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/commits/:commit_sha/pulls']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/commits/{commit_sha}/pulls']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/commits/:commit_sha/pulls']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/commits/{commit_sha}/pulls']['response'] */ js.Any
   ]
   /**
-    * Lists all pull requests containing the provided commit SHA, which can be from any point in the commit history. The results will include open and closed pull requests. Additional preview headers may be required to see certain details for associated pull requests, such as whether a pull request is in a draft state. For more information about previews that might affect this endpoint, see the [List pull requests](https://developer.github.com/v3/pulls/#list-pull-requests) endpoint.
+    * Lists the merged pull request that introduced the commit to the repository. If the commit is not present in the default branch, additionally returns open pull requests associated with the commit. The results may include open and closed pull requests.
     */
   @JSName("listPullRequestsAssociatedWithCommit")
-  var listPullRequestsAssociatedWithCommit_Original: `444`
+  var listPullRequestsAssociatedWithCommit_Original: `646`
   
   def listReleaseAssets(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/releases/:release_id/assets']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/releases/{release_id}/assets']['response'] */ js.Any
   ]
   def listReleaseAssets(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/releases/:release_id/assets']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/releases/{release_id}/assets']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/releases/:release_id/assets']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/releases/{release_id}/assets']['response'] */ js.Any
   ]
   @JSName("listReleaseAssets")
-  var listReleaseAssets_Original: `445`
+  var listReleaseAssets_Original: `647`
   
   /**
-    * This returns a list of releases, which does not include regular Git tags that have not been associated with a release. To get a list of Git tags, use the [Repository Tags API](https://developer.github.com/v3/repos/#list-repository-tags).
+    * This returns a list of releases, which does not include regular Git tags that have not been associated with a release. To get a list of Git tags, use the [Repository Tags API](https://docs.github.com/rest/reference/repos#list-repository-tags).
     *
     * Information about published releases are available to everyone. Only users with push access will receive listings for draft releases.
     */
   def listReleases(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/releases']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/releases']['response'] */ js.Any
   ]
   def listReleases(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/releases']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/releases']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/releases']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/releases']['response'] */ js.Any
   ]
   /**
-    * This returns a list of releases, which does not include regular Git tags that have not been associated with a release. To get a list of Git tags, use the [Repository Tags API](https://developer.github.com/v3/repos/#list-repository-tags).
+    * This returns a list of releases, which does not include regular Git tags that have not been associated with a release. To get a list of Git tags, use the [Repository Tags API](https://docs.github.com/rest/reference/repos#list-repository-tags).
     *
     * Information about published releases are available to everyone. Only users with push access will receive listings for draft releases.
     */
   @JSName("listReleases")
-  var listReleases_Original: `446`
+  var listReleases_Original: `648`
+  
+  /**
+    * This returns the tag protection states of a repository.
+    *
+    * This information is only available to repository administrators.
+    */
+  def listTagProtection(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/tags/protection']['response'] */ js.Any
+  ]
+  def listTagProtection(
+    params: RequestParameters & (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/tags/protection']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/tags/protection']['response'] */ js.Any
+  ]
+  /**
+    * This returns the tag protection states of a repository.
+    *
+    * This information is only available to repository administrators.
+    */
+  @JSName("listTagProtection")
+  var listTagProtection_Original: `649`
   
   def listTags(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/tags']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/tags']['response'] */ js.Any
   ]
   def listTags(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/tags']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/tags']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/tags']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/tags']['response'] */ js.Any
   ]
   @JSName("listTags")
-  var listTags_Original: `447`
+  var listTags_Original: `650`
   
   def listTeams(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/teams']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/teams']['response'] */ js.Any
   ]
   def listTeams(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/teams']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/teams']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/teams']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/teams']['response'] */ js.Any
   ]
   @JSName("listTeams")
-  var listTeams_Original: `448`
+  var listTeams_Original: `651`
   
+  /**
+    * Returns a list of webhook deliveries for a webhook configured in a repository.
+    */
+  def listWebhookDeliveries(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/hooks/{hook_id}/deliveries']['response'] */ js.Any
+  ]
+  def listWebhookDeliveries(
+    params: RequestParameters & (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/hooks/{hook_id}/deliveries']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/hooks/{hook_id}/deliveries']['response'] */ js.Any
+  ]
+  /**
+    * Returns a list of webhook deliveries for a webhook configured in a repository.
+    */
+  @JSName("listWebhookDeliveries")
+  var listWebhookDeliveries_Original: `652`
+  
+  /**
+    * Lists webhooks for a repository. `last response` may return null if there have not been any deliveries within 30 days.
+    */
   def listWebhooks(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/hooks']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/hooks']['response'] */ js.Any
   ]
   def listWebhooks(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/hooks']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/hooks']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/hooks']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/{owner}/{repo}/hooks']['response'] */ js.Any
   ]
+  /**
+    * Lists webhooks for a repository. `last response` may return null if there have not been any deliveries within 30 days.
+    */
   @JSName("listWebhooks")
-  var listWebhooks_Original: `449`
+  var listWebhooks_Original: `653`
   
   def merge(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/merges']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/merges']['response'] */ js.Any
   ]
   def merge(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/merges']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/merges']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/merges']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/merges']['response'] */ js.Any
   ]
-  @JSName("merge")
-  var merge_Original: `450`
   
   /**
-    * This will trigger a [ping event](https://developer.github.com/webhooks/#ping-event) to be sent to the hook.
+    * Sync a branch of a forked repository to keep it up-to-date with the upstream repository.
+    */
+  def mergeUpstream(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/merge-upstream']['response'] */ js.Any
+  ]
+  def mergeUpstream(
+    params: RequestParameters & (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/merge-upstream']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/merge-upstream']['response'] */ js.Any
+  ]
+  /**
+    * Sync a branch of a forked repository to keep it up-to-date with the upstream repository.
+    */
+  @JSName("mergeUpstream")
+  var mergeUpstream_Original: `655`
+  
+  @JSName("merge")
+  var merge_Original: `654`
+  
+  /**
+    * This will trigger a [ping event](https://docs.github.com/webhooks/#ping-event) to be sent to the hook.
     */
   def pingWebhook(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/hooks/:hook_id/pings']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/hooks/{hook_id}/pings']['response'] */ js.Any
   ]
   def pingWebhook(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/hooks/:hook_id/pings']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/hooks/{hook_id}/pings']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/hooks/:hook_id/pings']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/hooks/{hook_id}/pings']['response'] */ js.Any
   ]
   /**
-    * This will trigger a [ping event](https://developer.github.com/webhooks/#ping-event) to be sent to the hook.
+    * This will trigger a [ping event](https://docs.github.com/webhooks/#ping-event) to be sent to the hook.
     */
   @JSName("pingWebhook")
-  var pingWebhook_Original: `451`
+  var pingWebhook_Original: `656`
+  
+  /**
+    * Redeliver a webhook delivery for a webhook configured in a repository.
+    */
+  def redeliverWebhookDelivery(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/hooks/{hook_id}/deliveries/{delivery_id}/attempts']['response'] */ js.Any
+  ]
+  def redeliverWebhookDelivery(
+    params: RequestParameters & (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/hooks/{hook_id}/deliveries/{delivery_id}/attempts']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/hooks/{hook_id}/deliveries/{delivery_id}/attempts']['response'] */ js.Any
+  ]
+  /**
+    * Redeliver a webhook delivery for a webhook configured in a repository.
+    */
+  @JSName("redeliverWebhookDelivery")
+  var redeliverWebhookDelivery_Original: `657`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -2804,15 +3711,15 @@ trait AcceptInvitation extends StObject {
     * | `array` | The GitHub Apps that have push access to this branch. Use the app's `slug`. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
     */
   def removeAppAccessRestrictions(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions/apps']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/apps']['response'] */ js.Any
   ]
   def removeAppAccessRestrictions(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions/apps']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/apps']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions/apps']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/apps']['response'] */ js.Any
   ]
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -2824,61 +3731,61 @@ trait AcceptInvitation extends StObject {
     * | `array` | The GitHub Apps that have push access to this branch. Use the app's `slug`. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
     */
   @JSName("removeAppAccessRestrictions")
-  var removeAppAccessRestrictions_Original: `452`
+  var removeAppAccessRestrictions_Original: `658`
   
   def removeCollaborator(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/collaborators/:username']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/collaborators/{username}']['response'] */ js.Any
   ]
   def removeCollaborator(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/collaborators/:username']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/collaborators/{username}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/collaborators/:username']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/collaborators/{username}']['response'] */ js.Any
   ]
   @JSName("removeCollaborator")
-  var removeCollaborator_Original: `453`
+  var removeCollaborator_Original: `659`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   def removeStatusCheckContexts(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks/contexts']['response'] */ js.Any
   ]
   def removeStatusCheckContexts(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks/contexts']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks/contexts']['response'] */ js.Any
   ]
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   @JSName("removeStatusCheckContexts")
-  var removeStatusCheckContexts_Original: `454`
+  var removeStatusCheckContexts_Original: `660`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   def removeStatusCheckProtection(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/branches/:branch/protection/required_status_checks']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks']['response'] */ js.Any
   ]
   def removeStatusCheckProtection(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/branches/:branch/protection/required_status_checks']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/branches/:branch/protection/required_status_checks']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks']['response'] */ js.Any
   ]
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   @JSName("removeStatusCheckProtection")
-  var removeStatusCheckProtection_Original: `455`
+  var removeStatusCheckProtection_Original: `661`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -2890,15 +3797,15 @@ trait AcceptInvitation extends StObject {
     * | `array` | Teams that should no longer have push access. Use the team's `slug`. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
     */
   def removeTeamAccessRestrictions(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions/teams']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/teams']['response'] */ js.Any
   ]
   def removeTeamAccessRestrictions(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions/teams']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/teams']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions/teams']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/teams']['response'] */ js.Any
   ]
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -2910,7 +3817,7 @@ trait AcceptInvitation extends StObject {
     * | `array` | Teams that should no longer have push access. Use the team's `slug`. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
     */
   @JSName("removeTeamAccessRestrictions")
-  var removeTeamAccessRestrictions_Original: `456`
+  var removeTeamAccessRestrictions_Original: `662`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -2922,15 +3829,15 @@ trait AcceptInvitation extends StObject {
     * | `array` | Usernames of the people who should no longer have push access. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
     */
   def removeUserAccessRestrictions(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions/users']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/users']['response'] */ js.Any
   ]
   def removeUserAccessRestrictions(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions/users']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/users']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions/users']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/users']['response'] */ js.Any
   ]
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -2942,21 +3849,69 @@ trait AcceptInvitation extends StObject {
     * | `array` | Usernames of the people who should no longer have push access. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
     */
   @JSName("removeUserAccessRestrictions")
-  var removeUserAccessRestrictions_Original: `457`
+  var removeUserAccessRestrictions_Original: `663`
   
-  def replaceAllTopics(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/topics']['response'] */ js.Any
+  /**
+    * Renames a branch in a repository.
+    *
+    * **Note:** Although the API responds immediately, the branch rename process might take some extra time to complete in the background. You won't be able to push to the old branch name while the rename process is in progress. For more information, see "[Renaming a branch](https://docs.github.com/github/administering-a-repository/renaming-a-branch)".
+    *
+    * The permissions required to use this endpoint depends on whether you are renaming the default branch.
+    *
+    * To rename a non-default branch:
+    *
+    * * Users must have push access.
+    * * GitHub Apps must have the `contents:write` repository permission.
+    *
+    * To rename the default branch:
+    *
+    * * Users must have admin or owner permissions.
+    * * GitHub Apps must have the `administration:write` repository permission.
+    */
+  def renameBranch(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/branches/{branch}/rename']['response'] */ js.Any
   ]
-  def replaceAllTopics(
+  def renameBranch(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/topics']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/branches/{branch}/rename']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/topics']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/branches/{branch}/rename']['response'] */ js.Any
+  ]
+  /**
+    * Renames a branch in a repository.
+    *
+    * **Note:** Although the API responds immediately, the branch rename process might take some extra time to complete in the background. You won't be able to push to the old branch name while the rename process is in progress. For more information, see "[Renaming a branch](https://docs.github.com/github/administering-a-repository/renaming-a-branch)".
+    *
+    * The permissions required to use this endpoint depends on whether you are renaming the default branch.
+    *
+    * To rename a non-default branch:
+    *
+    * * Users must have push access.
+    * * GitHub Apps must have the `contents:write` repository permission.
+    *
+    * To rename the default branch:
+    *
+    * * Users must have admin or owner permissions.
+    * * GitHub Apps must have the `administration:write` repository permission.
+    */
+  @JSName("renameBranch")
+  var renameBranch_Original: `664`
+  
+  def replaceAllTopics(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/topics']['response'] */ js.Any
+  ]
+  def replaceAllTopics(
+    params: RequestParameters & (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/topics']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/topics']['response'] */ js.Any
   ]
   @JSName("replaceAllTopics")
-  var replaceAllTopics_Original: `458`
+  var replaceAllTopics_Original: `665`
   
   /**
     * You can request that your site be built from the latest revision on the default branch. This has the same effect as pushing a commit to your default branch, but does not require an additional commit. Manually triggering page builds can be helpful when diagnosing build warnings and failures.
@@ -2964,15 +3919,15 @@ trait AcceptInvitation extends StObject {
     * Build requests are limited to one concurrent build per repository and one concurrent build per requester. If you request a build while another is still in progress, the second request will be queued until the first completes.
     */
   def requestPagesBuild(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/pages/builds']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/pages/builds']['response'] */ js.Any
   ]
   def requestPagesBuild(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/pages/builds']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/pages/builds']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/pages/builds']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/pages/builds']['response'] */ js.Any
   ]
   /**
     * You can request that your site be built from the latest revision on the default branch. This has the same effect as pushing a commit to your default branch, but does not require an additional commit. Manually triggering page builds can be helpful when diagnosing build warnings and failures.
@@ -2980,7 +3935,7 @@ trait AcceptInvitation extends StObject {
     * Build requests are limited to one concurrent build per repository and one concurrent build per requester. If you request a build while another is still in progress, the second request will be queued until the first completes.
     */
   @JSName("requestPagesBuild")
-  var requestPagesBuild_Original: `459`
+  var requestPagesBuild_Original: `666`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -2988,15 +3943,15 @@ trait AcceptInvitation extends StObject {
     * Adding admin enforcement requires admin or owner permissions to the repository and branch protection to be enabled.
     */
   def setAdminBranchProtection(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/branches/:branch/protection/enforce_admins']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/branches/{branch}/protection/enforce_admins']['response'] */ js.Any
   ]
   def setAdminBranchProtection(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/branches/:branch/protection/enforce_admins']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/branches/{branch}/protection/enforce_admins']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/branches/:branch/protection/enforce_admins']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/branches/{branch}/protection/enforce_admins']['response'] */ js.Any
   ]
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -3004,7 +3959,7 @@ trait AcceptInvitation extends StObject {
     * Adding admin enforcement requires admin or owner permissions to the repository and branch protection to be enabled.
     */
   @JSName("setAdminBranchProtection")
-  var setAdminBranchProtection_Original: `460`
+  var setAdminBranchProtection_Original: `667`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -3016,15 +3971,15 @@ trait AcceptInvitation extends StObject {
     * | `array` | The GitHub Apps that have push access to this branch. Use the app's `slug`. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
     */
   def setAppAccessRestrictions(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/branches/:branch/protection/restrictions/apps']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/apps']['response'] */ js.Any
   ]
   def setAppAccessRestrictions(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/branches/:branch/protection/restrictions/apps']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/apps']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/branches/:branch/protection/restrictions/apps']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/apps']['response'] */ js.Any
   ]
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -3036,27 +3991,27 @@ trait AcceptInvitation extends StObject {
     * | `array` | The GitHub Apps that have push access to this branch. Use the app's `slug`. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
     */
   @JSName("setAppAccessRestrictions")
-  var setAppAccessRestrictions_Original: `461`
+  var setAppAccessRestrictions_Original: `668`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   def setStatusCheckContexts(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks/contexts']['response'] */ js.Any
   ]
   def setStatusCheckContexts(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks/contexts']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks/contexts']['response'] */ js.Any
   ]
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   @JSName("setStatusCheckContexts")
-  var setStatusCheckContexts_Original: `462`
+  var setStatusCheckContexts_Original: `669`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -3068,15 +4023,15 @@ trait AcceptInvitation extends StObject {
     * | `array` | The teams that can have push access. Use the team's `slug`. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
     */
   def setTeamAccessRestrictions(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/branches/:branch/protection/restrictions/teams']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/teams']['response'] */ js.Any
   ]
   def setTeamAccessRestrictions(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/branches/:branch/protection/restrictions/teams']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/teams']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/branches/:branch/protection/restrictions/teams']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/teams']['response'] */ js.Any
   ]
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -3088,7 +4043,7 @@ trait AcceptInvitation extends StObject {
     * | `array` | The teams that can have push access. Use the team's `slug`. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
     */
   @JSName("setTeamAccessRestrictions")
-  var setTeamAccessRestrictions_Original: `463`
+  var setTeamAccessRestrictions_Original: `670`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -3100,15 +4055,15 @@ trait AcceptInvitation extends StObject {
     * | `array` | Usernames for people who can have push access. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
     */
   def setUserAccessRestrictions(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/branches/:branch/protection/restrictions/users']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/users']['response'] */ js.Any
   ]
   def setUserAccessRestrictions(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/branches/:branch/protection/restrictions/users']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/users']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/branches/:branch/protection/restrictions/users']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/branches/{branch}/protection/restrictions/users']['response'] */ js.Any
   ]
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -3120,7 +4075,7 @@ trait AcceptInvitation extends StObject {
     * | `array` | Usernames for people who can have push access. **Note**: The list of users, apps, and teams in total is limited to 100 items. |
     */
   @JSName("setUserAccessRestrictions")
-  var setUserAccessRestrictions_Original: `464`
+  var setUserAccessRestrictions_Original: `671`
   
   /**
     * This will trigger the hook with the latest push to the current repository if the hook is subscribed to `push` events. If the hook is not subscribed to `push` events, the server will respond with 204 but no test POST will be generated.
@@ -3128,15 +4083,15 @@ trait AcceptInvitation extends StObject {
     * **Note**: Previously `/repos/:owner/:repo/hooks/:hook_id/test`
     */
   def testPushWebhook(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/hooks/:hook_id/tests']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/hooks/{hook_id}/tests']['response'] */ js.Any
   ]
   def testPushWebhook(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/hooks/:hook_id/tests']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/hooks/{hook_id}/tests']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/hooks/:hook_id/tests']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/hooks/{hook_id}/tests']['response'] */ js.Any
   ]
   /**
     * This will trigger the hook with the latest push to the current repository if the hook is subscribed to `push` events. If the hook is not subscribed to `push` events, the server will respond with 204 but no test POST will be generated.
@@ -3144,41 +4099,41 @@ trait AcceptInvitation extends StObject {
     * **Note**: Previously `/repos/:owner/:repo/hooks/:hook_id/test`
     */
   @JSName("testPushWebhook")
-  var testPushWebhook_Original: `465`
+  var testPushWebhook_Original: `672`
   
   /**
     * A transfer request will need to be accepted by the new owner when transferring a personal repository to another user. The response will contain the original `owner`, and the transfer will continue asynchronously. For more details on the requirements to transfer personal and organization-owned repositories, see [about repository transfers](https://docs.github.com/articles/about-repository-transfers/).
     */
   def transfer(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/transfer']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/transfer']['response'] */ js.Any
   ]
   def transfer(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/transfer']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/transfer']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/transfer']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/{owner}/{repo}/transfer']['response'] */ js.Any
   ]
   /**
     * A transfer request will need to be accepted by the new owner when transferring a personal repository to another user. The response will contain the original `owner`, and the transfer will continue asynchronously. For more details on the requirements to transfer personal and organization-owned repositories, see [about repository transfers](https://docs.github.com/articles/about-repository-transfers/).
     */
   @JSName("transfer")
-  var transfer_Original: `466`
+  var transfer_Original: `673`
   
   /**
-    * **Note**: To edit a repository's topics, use the [Replace all repository topics](https://developer.github.com/v3/repos/#replace-all-repository-topics) endpoint.
+    * **Note**: To edit a repository's topics, use the [Replace all repository topics](https://docs.github.com/rest/reference/repos#replace-all-repository-topics) endpoint.
     */
   def update(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/:owner/:repo']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/{owner}/{repo}']['response'] */ js.Any
   ]
   def update(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/:owner/:repo']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/{owner}/{repo}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/:owner/:repo']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/{owner}/{repo}']['response'] */ js.Any
   ]
   
   /**
@@ -3191,15 +4146,15 @@ trait AcceptInvitation extends StObject {
     * **Note**: The list of users, apps, and teams in total is limited to 100 items.
     */
   def updateBranchProtection(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/branches/:branch/protection']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/branches/{branch}/protection']['response'] */ js.Any
   ]
   def updateBranchProtection(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/branches/:branch/protection']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/branches/{branch}/protection']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/branches/:branch/protection']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/branches/{branch}/protection']['response'] */ js.Any
   ]
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -3211,55 +4166,79 @@ trait AcceptInvitation extends StObject {
     * **Note**: The list of users, apps, and teams in total is limited to 100 items.
     */
   @JSName("updateBranchProtection")
-  var updateBranchProtection_Original: `468`
+  var updateBranchProtection_Original: `675`
   
   def updateCommitComment(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/:owner/:repo/comments/:comment_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/{owner}/{repo}/comments/{comment_id}']['response'] */ js.Any
   ]
   def updateCommitComment(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/:owner/:repo/comments/:comment_id']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/{owner}/{repo}/comments/{comment_id}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/:owner/:repo/comments/:comment_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/{owner}/{repo}/comments/{comment_id}']['response'] */ js.Any
   ]
   @JSName("updateCommitComment")
-  var updateCommitComment_Original: `469`
+  var updateCommitComment_Original: `676`
+  
+  /**
+    * Updates a deployment branch policy for an environment.
+    *
+    * You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `administration:write` permission for the repository to use this endpoint.
+    */
+  def updateDeploymentBranchPolicy(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/environments/{environment_name}/deployment-branch-policies/{branch_policy_id}']['response'] */ js.Any
+  ]
+  def updateDeploymentBranchPolicy(
+    params: RequestParameters & (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/environments/{environment_name}/deployment-branch-policies/{branch_policy_id}']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/environments/{environment_name}/deployment-branch-policies/{branch_policy_id}']['response'] */ js.Any
+  ]
+  /**
+    * Updates a deployment branch policy for an environment.
+    *
+    * You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `administration:write` permission for the repository to use this endpoint.
+    */
+  @JSName("updateDeploymentBranchPolicy")
+  var updateDeploymentBranchPolicy_Original: `677`
   
   /**
     * Updates information for a GitHub Pages site. For more information, see "[About GitHub Pages](/github/working-with-github-pages/about-github-pages).
     */
   def updateInformationAboutPagesSite(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/pages']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/pages']['response'] */ js.Any
   ]
   def updateInformationAboutPagesSite(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/pages']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/pages']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/pages']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/{owner}/{repo}/pages']['response'] */ js.Any
   ]
   /**
     * Updates information for a GitHub Pages site. For more information, see "[About GitHub Pages](/github/working-with-github-pages/about-github-pages).
     */
   @JSName("updateInformationAboutPagesSite")
-  var updateInformationAboutPagesSite_Original: `470`
+  var updateInformationAboutPagesSite_Original: `678`
   
   def updateInvitation(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/:owner/:repo/invitations/:invitation_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/{owner}/{repo}/invitations/{invitation_id}']['response'] */ js.Any
   ]
   def updateInvitation(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/:owner/:repo/invitations/:invitation_id']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/{owner}/{repo}/invitations/{invitation_id}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/:owner/:repo/invitations/:invitation_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/{owner}/{repo}/invitations/{invitation_id}']['response'] */ js.Any
   ]
   @JSName("updateInvitation")
-  var updateInvitation_Original: `471`
+  var updateInvitation_Original: `679`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -3269,15 +4248,15 @@ trait AcceptInvitation extends StObject {
     * **Note**: Passing new arrays of `users` and `teams` replaces their previous values.
     */
   def updatePullRequestReviewProtection(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/:owner/:repo/branches/:branch/protection/required_pull_request_reviews']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/{owner}/{repo}/branches/{branch}/protection/required_pull_request_reviews']['response'] */ js.Any
   ]
   def updatePullRequestReviewProtection(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/:owner/:repo/branches/:branch/protection/required_pull_request_reviews']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/{owner}/{repo}/branches/{branch}/protection/required_pull_request_reviews']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/:owner/:repo/branches/:branch/protection/required_pull_request_reviews']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/{owner}/{repo}/branches/{branch}/protection/required_pull_request_reviews']['response'] */ js.Any
   ]
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -3287,96 +4266,153 @@ trait AcceptInvitation extends StObject {
     * **Note**: Passing new arrays of `users` and `teams` replaces their previous values.
     */
   @JSName("updatePullRequestReviewProtection")
-  var updatePullRequestReviewProtection_Original: `472`
+  var updatePullRequestReviewProtection_Original: `680`
   
   /**
     * Users with push access to the repository can edit a release.
     */
   def updateRelease(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/:owner/:repo/releases/:release_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/{owner}/{repo}/releases/{release_id}']['response'] */ js.Any
   ]
   def updateRelease(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/:owner/:repo/releases/:release_id']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/{owner}/{repo}/releases/{release_id}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/:owner/:repo/releases/:release_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/{owner}/{repo}/releases/{release_id}']['response'] */ js.Any
   ]
   
   /**
     * Users with push access to the repository can edit a release asset.
     */
   def updateReleaseAsset(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/:owner/:repo/releases/assets/:asset_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/{owner}/{repo}/releases/assets/{asset_id}']['response'] */ js.Any
   ]
   def updateReleaseAsset(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/:owner/:repo/releases/assets/:asset_id']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/{owner}/{repo}/releases/assets/{asset_id}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/:owner/:repo/releases/assets/:asset_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/{owner}/{repo}/releases/assets/{asset_id}']['response'] */ js.Any
   ]
   /**
     * Users with push access to the repository can edit a release asset.
     */
   @JSName("updateReleaseAsset")
-  var updateReleaseAsset_Original: `474`
+  var updateReleaseAsset_Original: `682`
   
   /**
     * Users with push access to the repository can edit a release.
     */
   @JSName("updateRelease")
-  var updateRelease_Original: `473`
+  var updateRelease_Original: `681`
   
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     *
     * Updating required status checks requires admin or owner permissions to the repository and branch protection to be enabled.
+    * @deprecated octokit.rest.repos.updateStatusCheckPotection() has been renamed to octokit.rest.repos.updateStatusCheckProtection() (2020-09-17)
     */
   def updateStatusCheckPotection(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/:owner/:repo/branches/:branch/protection/required_status_checks']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks']['response'] */ js.Any
   ]
   def updateStatusCheckPotection(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/:owner/:repo/branches/:branch/protection/required_status_checks']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/:owner/:repo/branches/:branch/protection/required_status_checks']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks']['response'] */ js.Any
+  ]
+  /**
+    * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
+    *
+    * Updating required status checks requires admin or owner permissions to the repository and branch protection to be enabled.
+    * @deprecated octokit.rest.repos.updateStatusCheckPotection() has been renamed to octokit.rest.repos.updateStatusCheckProtection() (2020-09-17)
+    */
+  @JSName("updateStatusCheckPotection")
+  var updateStatusCheckPotection_Original: `683`
+  
+  /**
+    * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
+    *
+    * Updating required status checks requires admin or owner permissions to the repository and branch protection to be enabled.
+    */
+  def updateStatusCheckProtection(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks']['response'] */ js.Any
+  ]
+  def updateStatusCheckProtection(
+    params: RequestParameters & (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks']['response'] */ js.Any
   ]
   /**
     * Protected branches are available in public repositories with GitHub Free and GitHub Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub Enterprise Cloud, and GitHub Enterprise Server. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     *
     * Updating required status checks requires admin or owner permissions to the repository and branch protection to be enabled.
     */
-  @JSName("updateStatusCheckPotection")
-  var updateStatusCheckPotection_Original: `475`
+  @JSName("updateStatusCheckProtection")
+  var updateStatusCheckProtection_Original: `683`
   
+  /**
+    * Updates a webhook configured in a repository. If you previously had a `secret` set, you must provide the same `secret` or set a new `secret` or the secret will be removed. If you are only updating individual webhook `config` properties, use "[Update a webhook configuration for a repository](/rest/reference/repos#update-a-webhook-configuration-for-a-repository)."
+    */
   def updateWebhook(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/:owner/:repo/hooks/:hook_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/{owner}/{repo}/hooks/{hook_id}']['response'] */ js.Any
   ]
   def updateWebhook(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/:owner/:repo/hooks/:hook_id']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/{owner}/{repo}/hooks/{hook_id}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/:owner/:repo/hooks/:hook_id']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/{owner}/{repo}/hooks/{hook_id}']['response'] */ js.Any
   ]
-  @JSName("updateWebhook")
-  var updateWebhook_Original: `476`
   
   /**
-    * **Note**: To edit a repository's topics, use the [Replace all repository topics](https://developer.github.com/v3/repos/#replace-all-repository-topics) endpoint.
+    * Updates the webhook configuration for a repository. To update more information about the webhook, including the `active` state and `events`, use "[Update a repository webhook](/rest/reference/orgs#update-a-repository-webhook)."
+    *
+    * Access tokens must have the `write:repo_hook` or `repo` scope, and GitHub Apps must have the `repository_hooks:write` permission.
+    */
+  def updateWebhookConfigForRepo(): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/{owner}/{repo}/hooks/{hook_id}/config']['response'] */ js.Any
+  ]
+  def updateWebhookConfigForRepo(
+    params: RequestParameters & (Omit[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/{owner}/{repo}/hooks/{hook_id}/config']['parameters'] */ js.Any, 
+      baseUrl | headers | mediaType
+    ])
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/{owner}/{repo}/hooks/{hook_id}/config']['response'] */ js.Any
+  ]
+  /**
+    * Updates the webhook configuration for a repository. To update more information about the webhook, including the `active` state and `events`, use "[Update a repository webhook](/rest/reference/orgs#update-a-repository-webhook)."
+    *
+    * Access tokens must have the `write:repo_hook` or `repo` scope, and GitHub Apps must have the `repository_hooks:write` permission.
+    */
+  @JSName("updateWebhookConfigForRepo")
+  var updateWebhookConfigForRepo_Original: `685`
+  
+  /**
+    * Updates a webhook configured in a repository. If you previously had a `secret` set, you must provide the same `secret` or set a new `secret` or the secret will be removed. If you are only updating individual webhook `config` properties, use "[Update a webhook configuration for a repository](/rest/reference/repos#update-a-webhook-configuration-for-a-repository)."
+    */
+  @JSName("updateWebhook")
+  var updateWebhook_Original: `684`
+  
+  /**
+    * **Note**: To edit a repository's topics, use the [Replace all repository topics](https://docs.github.com/rest/reference/repos#replace-all-repository-topics) endpoint.
     */
   @JSName("update")
-  var update_Original: `467`
+  var update_Original: `674`
   
   /**
-    * This endpoint makes use of [a Hypermedia relation](https://developer.github.com/v3/#hypermedia) to determine which URL to access. The endpoint you call to upload release assets is specific to your release. Use the `upload_url` returned in
-    * the response of the [Create a release endpoint](https://developer.github.com/v3/repos/releases/#create-a-release) to upload a release asset.
+    * This endpoint makes use of [a Hypermedia relation](https://docs.github.com/rest/overview/resources-in-the-rest-api#hypermedia) to determine which URL to access. The endpoint you call to upload release assets is specific to your release. Use the `upload_url` returned in
+    * the response of the [Create a release endpoint](https://docs.github.com/rest/reference/repos#create-a-release) to upload a release asset.
     *
     * You need to use an HTTP client which supports [SNI](http://en.wikipedia.org/wiki/Server_Name_Indication) to make calls to this endpoint.
     *
@@ -3390,24 +4426,24 @@ trait AcceptInvitation extends StObject {
     * When an upstream failure occurs, you will receive a `502 Bad Gateway` status. This may leave an empty asset with a state of `starter`. It can be safely deleted.
     *
     * **Notes:**
-    * *   GitHub renames asset filenames that have special characters, non-alphanumeric characters, and leading or trailing periods. The "[List assets for a release](https://developer.github.com/v3/repos/releases/#list-assets-for-a-release)"
-    * endpoint lists the renamed filenames. For more information and help, contact [GitHub Support](https://github.com/contact).
+    * *   GitHub renames asset filenames that have special characters, non-alphanumeric characters, and leading or trailing periods. The "[List assets for a release](https://docs.github.com/rest/reference/repos#list-assets-for-a-release)"
+    * endpoint lists the renamed filenames. For more information and help, contact [GitHub Support](https://support.github.com/contact?tags=dotcom-rest-api).
     * *   If you upload an asset with the same filename as another uploaded asset, you'll receive an error and must delete the old file before you can re-upload the new asset.
     */
   def uploadReleaseAsset(): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/releases/:release_id/assets{?name,label}']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST {origin}/repos/{owner}/{repo}/releases/{release_id}/assets{?name,label}']['response'] */ js.Any
   ]
   def uploadReleaseAsset(
     params: RequestParameters & (Omit[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/releases/:release_id/assets{?name,label}']['parameters'] */ js.Any, 
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST {origin}/repos/{owner}/{repo}/releases/{release_id}/assets{?name,label}']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/releases/:release_id/assets{?name,label}']['response'] */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST {origin}/repos/{owner}/{repo}/releases/{release_id}/assets{?name,label}']['response'] */ js.Any
   ]
   /**
-    * This endpoint makes use of [a Hypermedia relation](https://developer.github.com/v3/#hypermedia) to determine which URL to access. The endpoint you call to upload release assets is specific to your release. Use the `upload_url` returned in
-    * the response of the [Create a release endpoint](https://developer.github.com/v3/repos/releases/#create-a-release) to upload a release asset.
+    * This endpoint makes use of [a Hypermedia relation](https://docs.github.com/rest/overview/resources-in-the-rest-api#hypermedia) to determine which URL to access. The endpoint you call to upload release assets is specific to your release. Use the `upload_url` returned in
+    * the response of the [Create a release endpoint](https://docs.github.com/rest/reference/repos#create-a-release) to upload a release asset.
     *
     * You need to use an HTTP client which supports [SNI](http://en.wikipedia.org/wiki/Server_Name_Indication) to make calls to this endpoint.
     *
@@ -3421,438 +4457,546 @@ trait AcceptInvitation extends StObject {
     * When an upstream failure occurs, you will receive a `502 Bad Gateway` status. This may leave an empty asset with a state of `starter`. It can be safely deleted.
     *
     * **Notes:**
-    * *   GitHub renames asset filenames that have special characters, non-alphanumeric characters, and leading or trailing periods. The "[List assets for a release](https://developer.github.com/v3/repos/releases/#list-assets-for-a-release)"
-    * endpoint lists the renamed filenames. For more information and help, contact [GitHub Support](https://github.com/contact).
+    * *   GitHub renames asset filenames that have special characters, non-alphanumeric characters, and leading or trailing periods. The "[List assets for a release](https://docs.github.com/rest/reference/repos#list-assets-for-a-release)"
+    * endpoint lists the renamed filenames. For more information and help, contact [GitHub Support](https://support.github.com/contact?tags=dotcom-rest-api).
     * *   If you upload an asset with the same filename as another uploaded asset, you'll receive an error and must delete the old file before you can re-upload the new asset.
     */
   @JSName("uploadReleaseAsset")
-  var uploadReleaseAsset_Original: `477`
+  var uploadReleaseAsset_Original: `686`
 }
 object AcceptInvitation {
   
   inline def apply(
-    acceptInvitation: `339`,
-    addAppAccessRestrictions: `340`,
-    addCollaborator: `341`,
-    addStatusCheckContexts: `342`,
-    addTeamAccessRestrictions: `343`,
-    addUserAccessRestrictions: `344`,
-    checkCollaborator: `345`,
-    checkVulnerabilityAlerts: `346`,
-    compareCommits: `347`,
-    createCommitComment: `348`,
-    createCommitSignatureProtection: `349`,
-    createCommitStatus: `350`,
-    createDeployKey: `351`,
-    createDeployment: `352`,
-    createDeploymentStatus: `353`,
-    createDispatchEvent: `354`,
-    createForAuthenticatedUser: `355`,
-    createFork: `356`,
-    createInOrg: `357`,
-    createOrUpdateFileContents: `358`,
-    createPagesSite: `359`,
-    createRelease: `360`,
-    createUsingTemplate: `361`,
-    createWebhook: `362`,
-    declineInvitation: `363`,
-    delete: `364`,
-    deleteAccessRestrictions: `365`,
-    deleteAdminBranchProtection: `366`,
-    deleteBranchProtection: `367`,
-    deleteCommitComment: `368`,
-    deleteCommitSignatureProtection: `369`,
-    deleteDeployKey: `370`,
-    deleteDeployment: `371`,
-    deleteFile: `372`,
-    deleteInvitation: `373`,
-    deletePagesSite: `374`,
-    deletePullRequestReviewProtection: `375`,
-    deleteRelease: `376`,
-    deleteReleaseAsset: `377`,
-    deleteWebhook: `378`,
-    disableAutomatedSecurityFixes: `379`,
-    disableVulnerabilityAlerts: `380`,
-    downloadArchive: `381`,
-    enableAutomatedSecurityFixes: `382`,
-    enableVulnerabilityAlerts: `383`,
-    get: `384`,
-    getAccessRestrictions: `385`,
-    getAdminBranchProtection: `386`,
-    getAllStatusCheckContexts: `387`,
-    getAllTopics: `388`,
-    getAppsWithAccessToProtectedBranch: `389`,
-    getBranch: `390`,
-    getBranchProtection: `391`,
-    getClones: `392`,
-    getCodeFrequencyStats: `393`,
-    getCollaboratorPermissionLevel: `394`,
-    getCombinedStatusForRef: `395`,
-    getCommit: `396`,
-    getCommitActivityStats: `397`,
-    getCommitComment: `398`,
-    getCommitSignatureProtection: `399`,
-    getCommunityProfileMetrics: `400`,
-    getContent: `401`,
-    getContributorsStats: `402`,
-    getDeployKey: `403`,
-    getDeployment: `404`,
-    getDeploymentStatus: `405`,
-    getLatestPagesBuild: `406`,
-    getLatestRelease: `407`,
-    getPages: `408`,
-    getPagesBuild: `409`,
-    getParticipationStats: `410`,
-    getPullRequestReviewProtection: `411`,
-    getPunchCardStats: `412`,
-    getReadme: `413`,
-    getRelease: `414`,
-    getReleaseAsset: `415`,
-    getReleaseByTag: `416`,
-    getStatusChecksProtection: `417`,
-    getTeamsWithAccessToProtectedBranch: `418`,
-    getTopPaths: `419`,
-    getTopReferrers: `420`,
-    getUsersWithAccessToProtectedBranch: `421`,
-    getViews: `422`,
-    getWebhook: `423`,
-    listBranches: `424`,
-    listBranchesForHeadCommit: `425`,
-    listCollaborators: `426`,
-    listCommentsForCommit: `427`,
-    listCommitCommentsForRepo: `428`,
-    listCommitStatusesForRef: `429`,
-    listCommits: `430`,
-    listContributors: `431`,
-    listDeployKeys: `432`,
-    listDeploymentStatuses: `433`,
-    listDeployments: `434`,
-    listForAuthenticatedUser: `435`,
-    listForOrg: `436`,
-    listForUser: `437`,
-    listForks: `438`,
-    listInvitations: `439`,
-    listInvitationsForAuthenticatedUser: `440`,
-    listLanguages: `441`,
-    listPagesBuilds: `442`,
-    listPublic: `443`,
-    listPullRequestsAssociatedWithCommit: `444`,
-    listReleaseAssets: `445`,
-    listReleases: `446`,
-    listTags: `447`,
-    listTeams: `448`,
-    listWebhooks: `449`,
-    merge: `450`,
-    pingWebhook: `451`,
-    removeAppAccessRestrictions: `452`,
-    removeCollaborator: `453`,
-    removeStatusCheckContexts: `454`,
-    removeStatusCheckProtection: `455`,
-    removeTeamAccessRestrictions: `456`,
-    removeUserAccessRestrictions: `457`,
-    replaceAllTopics: `458`,
-    requestPagesBuild: `459`,
-    setAdminBranchProtection: `460`,
-    setAppAccessRestrictions: `461`,
-    setStatusCheckContexts: `462`,
-    setTeamAccessRestrictions: `463`,
-    setUserAccessRestrictions: `464`,
-    testPushWebhook: `465`,
-    transfer: `466`,
-    update: `467`,
-    updateBranchProtection: `468`,
-    updateCommitComment: `469`,
-    updateInformationAboutPagesSite: `470`,
-    updateInvitation: `471`,
-    updatePullRequestReviewProtection: `472`,
-    updateRelease: `473`,
-    updateReleaseAsset: `474`,
-    updateStatusCheckPotection: `475`,
-    updateWebhook: `476`,
-    uploadReleaseAsset: `477`
+    acceptInvitation: `516`,
+    acceptInvitationForAuthenticatedUser: `516`,
+    addAppAccessRestrictions: `517`,
+    addCollaborator: `518`,
+    addStatusCheckContexts: `519`,
+    addTeamAccessRestrictions: `520`,
+    addUserAccessRestrictions: `521`,
+    checkCollaborator: `522`,
+    checkVulnerabilityAlerts: `523`,
+    codeownersErrors: `524`,
+    compareCommits: `525`,
+    compareCommitsWithBasehead: `526`,
+    createAutolink: `527`,
+    createCommitComment: `528`,
+    createCommitSignatureProtection: `529`,
+    createCommitStatus: `530`,
+    createDeployKey: `531`,
+    createDeployment: `532`,
+    createDeploymentBranchPolicy: `533`,
+    createDeploymentStatus: `534`,
+    createDispatchEvent: `535`,
+    createForAuthenticatedUser: `536`,
+    createFork: `537`,
+    createInOrg: `538`,
+    createOrUpdateEnvironment: `539`,
+    createOrUpdateFileContents: `540`,
+    createPagesDeployment: `541`,
+    createPagesSite: `542`,
+    createRelease: `543`,
+    createTagProtection: `544`,
+    createUsingTemplate: `545`,
+    createWebhook: `546`,
+    declineInvitation: `547`,
+    declineInvitationForAuthenticatedUser: `547`,
+    delete: `548`,
+    deleteAccessRestrictions: `549`,
+    deleteAdminBranchProtection: `550`,
+    deleteAnEnvironment: `551`,
+    deleteAutolink: `552`,
+    deleteBranchProtection: `553`,
+    deleteCommitComment: `554`,
+    deleteCommitSignatureProtection: `555`,
+    deleteDeployKey: `556`,
+    deleteDeployment: `557`,
+    deleteDeploymentBranchPolicy: `558`,
+    deleteFile: `559`,
+    deleteInvitation: `560`,
+    deletePagesSite: `561`,
+    deletePullRequestReviewProtection: `562`,
+    deleteRelease: `563`,
+    deleteReleaseAsset: `564`,
+    deleteTagProtection: `565`,
+    deleteWebhook: `566`,
+    disableAutomatedSecurityFixes: `567`,
+    disableLfsForRepo: `568`,
+    disableVulnerabilityAlerts: `569`,
+    downloadArchive: `570`,
+    downloadTarballArchive: `571`,
+    downloadZipballArchive: `570`,
+    enableAutomatedSecurityFixes: `572`,
+    enableLfsForRepo: `573`,
+    enableVulnerabilityAlerts: `574`,
+    generateReleaseNotes: `575`,
+    get: `576`,
+    getAccessRestrictions: `577`,
+    getAdminBranchProtection: `578`,
+    getAllEnvironments: `579`,
+    getAllStatusCheckContexts: `580`,
+    getAllTopics: `581`,
+    getAppsWithAccessToProtectedBranch: `582`,
+    getAutolink: `583`,
+    getBranch: `584`,
+    getBranchProtection: `585`,
+    getClones: `586`,
+    getCodeFrequencyStats: `587`,
+    getCollaboratorPermissionLevel: `588`,
+    getCombinedStatusForRef: `589`,
+    getCommit: `590`,
+    getCommitActivityStats: `591`,
+    getCommitComment: `592`,
+    getCommitSignatureProtection: `593`,
+    getCommunityProfileMetrics: `594`,
+    getContent: `595`,
+    getContributorsStats: `596`,
+    getDeployKey: `597`,
+    getDeployment: `598`,
+    getDeploymentBranchPolicy: `599`,
+    getDeploymentStatus: `600`,
+    getEnvironment: `601`,
+    getLatestPagesBuild: `602`,
+    getLatestRelease: `603`,
+    getPages: `604`,
+    getPagesBuild: `605`,
+    getPagesHealthCheck: `606`,
+    getParticipationStats: `607`,
+    getPullRequestReviewProtection: `608`,
+    getPunchCardStats: `609`,
+    getReadme: `610`,
+    getReadmeInDirectory: `611`,
+    getRelease: `612`,
+    getReleaseAsset: `613`,
+    getReleaseByTag: `614`,
+    getStatusChecksProtection: `615`,
+    getTeamsWithAccessToProtectedBranch: `616`,
+    getTopPaths: `617`,
+    getTopReferrers: `618`,
+    getUsersWithAccessToProtectedBranch: `619`,
+    getViews: `620`,
+    getWebhook: `621`,
+    getWebhookConfigForRepo: `622`,
+    getWebhookDelivery: `623`,
+    listAutolinks: `624`,
+    listBranches: `625`,
+    listBranchesForHeadCommit: `626`,
+    listCollaborators: `627`,
+    listCommentsForCommit: `628`,
+    listCommitCommentsForRepo: `629`,
+    listCommitStatusesForRef: `630`,
+    listCommits: `631`,
+    listContributors: `632`,
+    listDeployKeys: `633`,
+    listDeploymentBranchPolicies: `634`,
+    listDeploymentStatuses: `635`,
+    listDeployments: `636`,
+    listForAuthenticatedUser: `637`,
+    listForOrg: `638`,
+    listForUser: `639`,
+    listForks: `640`,
+    listInvitations: `641`,
+    listInvitationsForAuthenticatedUser: `642`,
+    listLanguages: `643`,
+    listPagesBuilds: `644`,
+    listPublic: `645`,
+    listPullRequestsAssociatedWithCommit: `646`,
+    listReleaseAssets: `647`,
+    listReleases: `648`,
+    listTagProtection: `649`,
+    listTags: `650`,
+    listTeams: `651`,
+    listWebhookDeliveries: `652`,
+    listWebhooks: `653`,
+    merge: `654`,
+    mergeUpstream: `655`,
+    pingWebhook: `656`,
+    redeliverWebhookDelivery: `657`,
+    removeAppAccessRestrictions: `658`,
+    removeCollaborator: `659`,
+    removeStatusCheckContexts: `660`,
+    removeStatusCheckProtection: `661`,
+    removeTeamAccessRestrictions: `662`,
+    removeUserAccessRestrictions: `663`,
+    renameBranch: `664`,
+    replaceAllTopics: `665`,
+    requestPagesBuild: `666`,
+    setAdminBranchProtection: `667`,
+    setAppAccessRestrictions: `668`,
+    setStatusCheckContexts: `669`,
+    setTeamAccessRestrictions: `670`,
+    setUserAccessRestrictions: `671`,
+    testPushWebhook: `672`,
+    transfer: `673`,
+    update: `674`,
+    updateBranchProtection: `675`,
+    updateCommitComment: `676`,
+    updateDeploymentBranchPolicy: `677`,
+    updateInformationAboutPagesSite: `678`,
+    updateInvitation: `679`,
+    updatePullRequestReviewProtection: `680`,
+    updateRelease: `681`,
+    updateReleaseAsset: `682`,
+    updateStatusCheckPotection: `683`,
+    updateStatusCheckProtection: `683`,
+    updateWebhook: `684`,
+    updateWebhookConfigForRepo: `685`,
+    uploadReleaseAsset: `686`
   ): AcceptInvitation = {
-    val __obj = js.Dynamic.literal(acceptInvitation = acceptInvitation.asInstanceOf[js.Any], addAppAccessRestrictions = addAppAccessRestrictions.asInstanceOf[js.Any], addCollaborator = addCollaborator.asInstanceOf[js.Any], addStatusCheckContexts = addStatusCheckContexts.asInstanceOf[js.Any], addTeamAccessRestrictions = addTeamAccessRestrictions.asInstanceOf[js.Any], addUserAccessRestrictions = addUserAccessRestrictions.asInstanceOf[js.Any], checkCollaborator = checkCollaborator.asInstanceOf[js.Any], checkVulnerabilityAlerts = checkVulnerabilityAlerts.asInstanceOf[js.Any], compareCommits = compareCommits.asInstanceOf[js.Any], createCommitComment = createCommitComment.asInstanceOf[js.Any], createCommitSignatureProtection = createCommitSignatureProtection.asInstanceOf[js.Any], createCommitStatus = createCommitStatus.asInstanceOf[js.Any], createDeployKey = createDeployKey.asInstanceOf[js.Any], createDeployment = createDeployment.asInstanceOf[js.Any], createDeploymentStatus = createDeploymentStatus.asInstanceOf[js.Any], createDispatchEvent = createDispatchEvent.asInstanceOf[js.Any], createForAuthenticatedUser = createForAuthenticatedUser.asInstanceOf[js.Any], createFork = createFork.asInstanceOf[js.Any], createInOrg = createInOrg.asInstanceOf[js.Any], createOrUpdateFileContents = createOrUpdateFileContents.asInstanceOf[js.Any], createPagesSite = createPagesSite.asInstanceOf[js.Any], createRelease = createRelease.asInstanceOf[js.Any], createUsingTemplate = createUsingTemplate.asInstanceOf[js.Any], createWebhook = createWebhook.asInstanceOf[js.Any], declineInvitation = declineInvitation.asInstanceOf[js.Any], delete = delete.asInstanceOf[js.Any], deleteAccessRestrictions = deleteAccessRestrictions.asInstanceOf[js.Any], deleteAdminBranchProtection = deleteAdminBranchProtection.asInstanceOf[js.Any], deleteBranchProtection = deleteBranchProtection.asInstanceOf[js.Any], deleteCommitComment = deleteCommitComment.asInstanceOf[js.Any], deleteCommitSignatureProtection = deleteCommitSignatureProtection.asInstanceOf[js.Any], deleteDeployKey = deleteDeployKey.asInstanceOf[js.Any], deleteDeployment = deleteDeployment.asInstanceOf[js.Any], deleteFile = deleteFile.asInstanceOf[js.Any], deleteInvitation = deleteInvitation.asInstanceOf[js.Any], deletePagesSite = deletePagesSite.asInstanceOf[js.Any], deletePullRequestReviewProtection = deletePullRequestReviewProtection.asInstanceOf[js.Any], deleteRelease = deleteRelease.asInstanceOf[js.Any], deleteReleaseAsset = deleteReleaseAsset.asInstanceOf[js.Any], deleteWebhook = deleteWebhook.asInstanceOf[js.Any], disableAutomatedSecurityFixes = disableAutomatedSecurityFixes.asInstanceOf[js.Any], disableVulnerabilityAlerts = disableVulnerabilityAlerts.asInstanceOf[js.Any], downloadArchive = downloadArchive.asInstanceOf[js.Any], enableAutomatedSecurityFixes = enableAutomatedSecurityFixes.asInstanceOf[js.Any], enableVulnerabilityAlerts = enableVulnerabilityAlerts.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], getAccessRestrictions = getAccessRestrictions.asInstanceOf[js.Any], getAdminBranchProtection = getAdminBranchProtection.asInstanceOf[js.Any], getAllStatusCheckContexts = getAllStatusCheckContexts.asInstanceOf[js.Any], getAllTopics = getAllTopics.asInstanceOf[js.Any], getAppsWithAccessToProtectedBranch = getAppsWithAccessToProtectedBranch.asInstanceOf[js.Any], getBranch = getBranch.asInstanceOf[js.Any], getBranchProtection = getBranchProtection.asInstanceOf[js.Any], getClones = getClones.asInstanceOf[js.Any], getCodeFrequencyStats = getCodeFrequencyStats.asInstanceOf[js.Any], getCollaboratorPermissionLevel = getCollaboratorPermissionLevel.asInstanceOf[js.Any], getCombinedStatusForRef = getCombinedStatusForRef.asInstanceOf[js.Any], getCommit = getCommit.asInstanceOf[js.Any], getCommitActivityStats = getCommitActivityStats.asInstanceOf[js.Any], getCommitComment = getCommitComment.asInstanceOf[js.Any], getCommitSignatureProtection = getCommitSignatureProtection.asInstanceOf[js.Any], getCommunityProfileMetrics = getCommunityProfileMetrics.asInstanceOf[js.Any], getContent = getContent.asInstanceOf[js.Any], getContributorsStats = getContributorsStats.asInstanceOf[js.Any], getDeployKey = getDeployKey.asInstanceOf[js.Any], getDeployment = getDeployment.asInstanceOf[js.Any], getDeploymentStatus = getDeploymentStatus.asInstanceOf[js.Any], getLatestPagesBuild = getLatestPagesBuild.asInstanceOf[js.Any], getLatestRelease = getLatestRelease.asInstanceOf[js.Any], getPages = getPages.asInstanceOf[js.Any], getPagesBuild = getPagesBuild.asInstanceOf[js.Any], getParticipationStats = getParticipationStats.asInstanceOf[js.Any], getPullRequestReviewProtection = getPullRequestReviewProtection.asInstanceOf[js.Any], getPunchCardStats = getPunchCardStats.asInstanceOf[js.Any], getReadme = getReadme.asInstanceOf[js.Any], getRelease = getRelease.asInstanceOf[js.Any], getReleaseAsset = getReleaseAsset.asInstanceOf[js.Any], getReleaseByTag = getReleaseByTag.asInstanceOf[js.Any], getStatusChecksProtection = getStatusChecksProtection.asInstanceOf[js.Any], getTeamsWithAccessToProtectedBranch = getTeamsWithAccessToProtectedBranch.asInstanceOf[js.Any], getTopPaths = getTopPaths.asInstanceOf[js.Any], getTopReferrers = getTopReferrers.asInstanceOf[js.Any], getUsersWithAccessToProtectedBranch = getUsersWithAccessToProtectedBranch.asInstanceOf[js.Any], getViews = getViews.asInstanceOf[js.Any], getWebhook = getWebhook.asInstanceOf[js.Any], listBranches = listBranches.asInstanceOf[js.Any], listBranchesForHeadCommit = listBranchesForHeadCommit.asInstanceOf[js.Any], listCollaborators = listCollaborators.asInstanceOf[js.Any], listCommentsForCommit = listCommentsForCommit.asInstanceOf[js.Any], listCommitCommentsForRepo = listCommitCommentsForRepo.asInstanceOf[js.Any], listCommitStatusesForRef = listCommitStatusesForRef.asInstanceOf[js.Any], listCommits = listCommits.asInstanceOf[js.Any], listContributors = listContributors.asInstanceOf[js.Any], listDeployKeys = listDeployKeys.asInstanceOf[js.Any], listDeploymentStatuses = listDeploymentStatuses.asInstanceOf[js.Any], listDeployments = listDeployments.asInstanceOf[js.Any], listForAuthenticatedUser = listForAuthenticatedUser.asInstanceOf[js.Any], listForOrg = listForOrg.asInstanceOf[js.Any], listForUser = listForUser.asInstanceOf[js.Any], listForks = listForks.asInstanceOf[js.Any], listInvitations = listInvitations.asInstanceOf[js.Any], listInvitationsForAuthenticatedUser = listInvitationsForAuthenticatedUser.asInstanceOf[js.Any], listLanguages = listLanguages.asInstanceOf[js.Any], listPagesBuilds = listPagesBuilds.asInstanceOf[js.Any], listPublic = listPublic.asInstanceOf[js.Any], listPullRequestsAssociatedWithCommit = listPullRequestsAssociatedWithCommit.asInstanceOf[js.Any], listReleaseAssets = listReleaseAssets.asInstanceOf[js.Any], listReleases = listReleases.asInstanceOf[js.Any], listTags = listTags.asInstanceOf[js.Any], listTeams = listTeams.asInstanceOf[js.Any], listWebhooks = listWebhooks.asInstanceOf[js.Any], merge = merge.asInstanceOf[js.Any], pingWebhook = pingWebhook.asInstanceOf[js.Any], removeAppAccessRestrictions = removeAppAccessRestrictions.asInstanceOf[js.Any], removeCollaborator = removeCollaborator.asInstanceOf[js.Any], removeStatusCheckContexts = removeStatusCheckContexts.asInstanceOf[js.Any], removeStatusCheckProtection = removeStatusCheckProtection.asInstanceOf[js.Any], removeTeamAccessRestrictions = removeTeamAccessRestrictions.asInstanceOf[js.Any], removeUserAccessRestrictions = removeUserAccessRestrictions.asInstanceOf[js.Any], replaceAllTopics = replaceAllTopics.asInstanceOf[js.Any], requestPagesBuild = requestPagesBuild.asInstanceOf[js.Any], setAdminBranchProtection = setAdminBranchProtection.asInstanceOf[js.Any], setAppAccessRestrictions = setAppAccessRestrictions.asInstanceOf[js.Any], setStatusCheckContexts = setStatusCheckContexts.asInstanceOf[js.Any], setTeamAccessRestrictions = setTeamAccessRestrictions.asInstanceOf[js.Any], setUserAccessRestrictions = setUserAccessRestrictions.asInstanceOf[js.Any], testPushWebhook = testPushWebhook.asInstanceOf[js.Any], transfer = transfer.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any], updateBranchProtection = updateBranchProtection.asInstanceOf[js.Any], updateCommitComment = updateCommitComment.asInstanceOf[js.Any], updateInformationAboutPagesSite = updateInformationAboutPagesSite.asInstanceOf[js.Any], updateInvitation = updateInvitation.asInstanceOf[js.Any], updatePullRequestReviewProtection = updatePullRequestReviewProtection.asInstanceOf[js.Any], updateRelease = updateRelease.asInstanceOf[js.Any], updateReleaseAsset = updateReleaseAsset.asInstanceOf[js.Any], updateStatusCheckPotection = updateStatusCheckPotection.asInstanceOf[js.Any], updateWebhook = updateWebhook.asInstanceOf[js.Any], uploadReleaseAsset = uploadReleaseAsset.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(acceptInvitation = acceptInvitation.asInstanceOf[js.Any], acceptInvitationForAuthenticatedUser = acceptInvitationForAuthenticatedUser.asInstanceOf[js.Any], addAppAccessRestrictions = addAppAccessRestrictions.asInstanceOf[js.Any], addCollaborator = addCollaborator.asInstanceOf[js.Any], addStatusCheckContexts = addStatusCheckContexts.asInstanceOf[js.Any], addTeamAccessRestrictions = addTeamAccessRestrictions.asInstanceOf[js.Any], addUserAccessRestrictions = addUserAccessRestrictions.asInstanceOf[js.Any], checkCollaborator = checkCollaborator.asInstanceOf[js.Any], checkVulnerabilityAlerts = checkVulnerabilityAlerts.asInstanceOf[js.Any], codeownersErrors = codeownersErrors.asInstanceOf[js.Any], compareCommits = compareCommits.asInstanceOf[js.Any], compareCommitsWithBasehead = compareCommitsWithBasehead.asInstanceOf[js.Any], createAutolink = createAutolink.asInstanceOf[js.Any], createCommitComment = createCommitComment.asInstanceOf[js.Any], createCommitSignatureProtection = createCommitSignatureProtection.asInstanceOf[js.Any], createCommitStatus = createCommitStatus.asInstanceOf[js.Any], createDeployKey = createDeployKey.asInstanceOf[js.Any], createDeployment = createDeployment.asInstanceOf[js.Any], createDeploymentBranchPolicy = createDeploymentBranchPolicy.asInstanceOf[js.Any], createDeploymentStatus = createDeploymentStatus.asInstanceOf[js.Any], createDispatchEvent = createDispatchEvent.asInstanceOf[js.Any], createForAuthenticatedUser = createForAuthenticatedUser.asInstanceOf[js.Any], createFork = createFork.asInstanceOf[js.Any], createInOrg = createInOrg.asInstanceOf[js.Any], createOrUpdateEnvironment = createOrUpdateEnvironment.asInstanceOf[js.Any], createOrUpdateFileContents = createOrUpdateFileContents.asInstanceOf[js.Any], createPagesDeployment = createPagesDeployment.asInstanceOf[js.Any], createPagesSite = createPagesSite.asInstanceOf[js.Any], createRelease = createRelease.asInstanceOf[js.Any], createTagProtection = createTagProtection.asInstanceOf[js.Any], createUsingTemplate = createUsingTemplate.asInstanceOf[js.Any], createWebhook = createWebhook.asInstanceOf[js.Any], declineInvitation = declineInvitation.asInstanceOf[js.Any], declineInvitationForAuthenticatedUser = declineInvitationForAuthenticatedUser.asInstanceOf[js.Any], delete = delete.asInstanceOf[js.Any], deleteAccessRestrictions = deleteAccessRestrictions.asInstanceOf[js.Any], deleteAdminBranchProtection = deleteAdminBranchProtection.asInstanceOf[js.Any], deleteAnEnvironment = deleteAnEnvironment.asInstanceOf[js.Any], deleteAutolink = deleteAutolink.asInstanceOf[js.Any], deleteBranchProtection = deleteBranchProtection.asInstanceOf[js.Any], deleteCommitComment = deleteCommitComment.asInstanceOf[js.Any], deleteCommitSignatureProtection = deleteCommitSignatureProtection.asInstanceOf[js.Any], deleteDeployKey = deleteDeployKey.asInstanceOf[js.Any], deleteDeployment = deleteDeployment.asInstanceOf[js.Any], deleteDeploymentBranchPolicy = deleteDeploymentBranchPolicy.asInstanceOf[js.Any], deleteFile = deleteFile.asInstanceOf[js.Any], deleteInvitation = deleteInvitation.asInstanceOf[js.Any], deletePagesSite = deletePagesSite.asInstanceOf[js.Any], deletePullRequestReviewProtection = deletePullRequestReviewProtection.asInstanceOf[js.Any], deleteRelease = deleteRelease.asInstanceOf[js.Any], deleteReleaseAsset = deleteReleaseAsset.asInstanceOf[js.Any], deleteTagProtection = deleteTagProtection.asInstanceOf[js.Any], deleteWebhook = deleteWebhook.asInstanceOf[js.Any], disableAutomatedSecurityFixes = disableAutomatedSecurityFixes.asInstanceOf[js.Any], disableLfsForRepo = disableLfsForRepo.asInstanceOf[js.Any], disableVulnerabilityAlerts = disableVulnerabilityAlerts.asInstanceOf[js.Any], downloadArchive = downloadArchive.asInstanceOf[js.Any], downloadTarballArchive = downloadTarballArchive.asInstanceOf[js.Any], downloadZipballArchive = downloadZipballArchive.asInstanceOf[js.Any], enableAutomatedSecurityFixes = enableAutomatedSecurityFixes.asInstanceOf[js.Any], enableLfsForRepo = enableLfsForRepo.asInstanceOf[js.Any], enableVulnerabilityAlerts = enableVulnerabilityAlerts.asInstanceOf[js.Any], generateReleaseNotes = generateReleaseNotes.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], getAccessRestrictions = getAccessRestrictions.asInstanceOf[js.Any], getAdminBranchProtection = getAdminBranchProtection.asInstanceOf[js.Any], getAllEnvironments = getAllEnvironments.asInstanceOf[js.Any], getAllStatusCheckContexts = getAllStatusCheckContexts.asInstanceOf[js.Any], getAllTopics = getAllTopics.asInstanceOf[js.Any], getAppsWithAccessToProtectedBranch = getAppsWithAccessToProtectedBranch.asInstanceOf[js.Any], getAutolink = getAutolink.asInstanceOf[js.Any], getBranch = getBranch.asInstanceOf[js.Any], getBranchProtection = getBranchProtection.asInstanceOf[js.Any], getClones = getClones.asInstanceOf[js.Any], getCodeFrequencyStats = getCodeFrequencyStats.asInstanceOf[js.Any], getCollaboratorPermissionLevel = getCollaboratorPermissionLevel.asInstanceOf[js.Any], getCombinedStatusForRef = getCombinedStatusForRef.asInstanceOf[js.Any], getCommit = getCommit.asInstanceOf[js.Any], getCommitActivityStats = getCommitActivityStats.asInstanceOf[js.Any], getCommitComment = getCommitComment.asInstanceOf[js.Any], getCommitSignatureProtection = getCommitSignatureProtection.asInstanceOf[js.Any], getCommunityProfileMetrics = getCommunityProfileMetrics.asInstanceOf[js.Any], getContent = getContent.asInstanceOf[js.Any], getContributorsStats = getContributorsStats.asInstanceOf[js.Any], getDeployKey = getDeployKey.asInstanceOf[js.Any], getDeployment = getDeployment.asInstanceOf[js.Any], getDeploymentBranchPolicy = getDeploymentBranchPolicy.asInstanceOf[js.Any], getDeploymentStatus = getDeploymentStatus.asInstanceOf[js.Any], getEnvironment = getEnvironment.asInstanceOf[js.Any], getLatestPagesBuild = getLatestPagesBuild.asInstanceOf[js.Any], getLatestRelease = getLatestRelease.asInstanceOf[js.Any], getPages = getPages.asInstanceOf[js.Any], getPagesBuild = getPagesBuild.asInstanceOf[js.Any], getPagesHealthCheck = getPagesHealthCheck.asInstanceOf[js.Any], getParticipationStats = getParticipationStats.asInstanceOf[js.Any], getPullRequestReviewProtection = getPullRequestReviewProtection.asInstanceOf[js.Any], getPunchCardStats = getPunchCardStats.asInstanceOf[js.Any], getReadme = getReadme.asInstanceOf[js.Any], getReadmeInDirectory = getReadmeInDirectory.asInstanceOf[js.Any], getRelease = getRelease.asInstanceOf[js.Any], getReleaseAsset = getReleaseAsset.asInstanceOf[js.Any], getReleaseByTag = getReleaseByTag.asInstanceOf[js.Any], getStatusChecksProtection = getStatusChecksProtection.asInstanceOf[js.Any], getTeamsWithAccessToProtectedBranch = getTeamsWithAccessToProtectedBranch.asInstanceOf[js.Any], getTopPaths = getTopPaths.asInstanceOf[js.Any], getTopReferrers = getTopReferrers.asInstanceOf[js.Any], getUsersWithAccessToProtectedBranch = getUsersWithAccessToProtectedBranch.asInstanceOf[js.Any], getViews = getViews.asInstanceOf[js.Any], getWebhook = getWebhook.asInstanceOf[js.Any], getWebhookConfigForRepo = getWebhookConfigForRepo.asInstanceOf[js.Any], getWebhookDelivery = getWebhookDelivery.asInstanceOf[js.Any], listAutolinks = listAutolinks.asInstanceOf[js.Any], listBranches = listBranches.asInstanceOf[js.Any], listBranchesForHeadCommit = listBranchesForHeadCommit.asInstanceOf[js.Any], listCollaborators = listCollaborators.asInstanceOf[js.Any], listCommentsForCommit = listCommentsForCommit.asInstanceOf[js.Any], listCommitCommentsForRepo = listCommitCommentsForRepo.asInstanceOf[js.Any], listCommitStatusesForRef = listCommitStatusesForRef.asInstanceOf[js.Any], listCommits = listCommits.asInstanceOf[js.Any], listContributors = listContributors.asInstanceOf[js.Any], listDeployKeys = listDeployKeys.asInstanceOf[js.Any], listDeploymentBranchPolicies = listDeploymentBranchPolicies.asInstanceOf[js.Any], listDeploymentStatuses = listDeploymentStatuses.asInstanceOf[js.Any], listDeployments = listDeployments.asInstanceOf[js.Any], listForAuthenticatedUser = listForAuthenticatedUser.asInstanceOf[js.Any], listForOrg = listForOrg.asInstanceOf[js.Any], listForUser = listForUser.asInstanceOf[js.Any], listForks = listForks.asInstanceOf[js.Any], listInvitations = listInvitations.asInstanceOf[js.Any], listInvitationsForAuthenticatedUser = listInvitationsForAuthenticatedUser.asInstanceOf[js.Any], listLanguages = listLanguages.asInstanceOf[js.Any], listPagesBuilds = listPagesBuilds.asInstanceOf[js.Any], listPublic = listPublic.asInstanceOf[js.Any], listPullRequestsAssociatedWithCommit = listPullRequestsAssociatedWithCommit.asInstanceOf[js.Any], listReleaseAssets = listReleaseAssets.asInstanceOf[js.Any], listReleases = listReleases.asInstanceOf[js.Any], listTagProtection = listTagProtection.asInstanceOf[js.Any], listTags = listTags.asInstanceOf[js.Any], listTeams = listTeams.asInstanceOf[js.Any], listWebhookDeliveries = listWebhookDeliveries.asInstanceOf[js.Any], listWebhooks = listWebhooks.asInstanceOf[js.Any], merge = merge.asInstanceOf[js.Any], mergeUpstream = mergeUpstream.asInstanceOf[js.Any], pingWebhook = pingWebhook.asInstanceOf[js.Any], redeliverWebhookDelivery = redeliverWebhookDelivery.asInstanceOf[js.Any], removeAppAccessRestrictions = removeAppAccessRestrictions.asInstanceOf[js.Any], removeCollaborator = removeCollaborator.asInstanceOf[js.Any], removeStatusCheckContexts = removeStatusCheckContexts.asInstanceOf[js.Any], removeStatusCheckProtection = removeStatusCheckProtection.asInstanceOf[js.Any], removeTeamAccessRestrictions = removeTeamAccessRestrictions.asInstanceOf[js.Any], removeUserAccessRestrictions = removeUserAccessRestrictions.asInstanceOf[js.Any], renameBranch = renameBranch.asInstanceOf[js.Any], replaceAllTopics = replaceAllTopics.asInstanceOf[js.Any], requestPagesBuild = requestPagesBuild.asInstanceOf[js.Any], setAdminBranchProtection = setAdminBranchProtection.asInstanceOf[js.Any], setAppAccessRestrictions = setAppAccessRestrictions.asInstanceOf[js.Any], setStatusCheckContexts = setStatusCheckContexts.asInstanceOf[js.Any], setTeamAccessRestrictions = setTeamAccessRestrictions.asInstanceOf[js.Any], setUserAccessRestrictions = setUserAccessRestrictions.asInstanceOf[js.Any], testPushWebhook = testPushWebhook.asInstanceOf[js.Any], transfer = transfer.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any], updateBranchProtection = updateBranchProtection.asInstanceOf[js.Any], updateCommitComment = updateCommitComment.asInstanceOf[js.Any], updateDeploymentBranchPolicy = updateDeploymentBranchPolicy.asInstanceOf[js.Any], updateInformationAboutPagesSite = updateInformationAboutPagesSite.asInstanceOf[js.Any], updateInvitation = updateInvitation.asInstanceOf[js.Any], updatePullRequestReviewProtection = updatePullRequestReviewProtection.asInstanceOf[js.Any], updateRelease = updateRelease.asInstanceOf[js.Any], updateReleaseAsset = updateReleaseAsset.asInstanceOf[js.Any], updateStatusCheckPotection = updateStatusCheckPotection.asInstanceOf[js.Any], updateStatusCheckProtection = updateStatusCheckProtection.asInstanceOf[js.Any], updateWebhook = updateWebhook.asInstanceOf[js.Any], updateWebhookConfigForRepo = updateWebhookConfigForRepo.asInstanceOf[js.Any], uploadReleaseAsset = uploadReleaseAsset.asInstanceOf[js.Any])
     __obj.asInstanceOf[AcceptInvitation]
   }
   
   extension [Self <: AcceptInvitation](x: Self) {
     
-    inline def setAcceptInvitation(value: `339`): Self = StObject.set(x, "acceptInvitation", value.asInstanceOf[js.Any])
+    inline def setAcceptInvitation(value: `516`): Self = StObject.set(x, "acceptInvitation", value.asInstanceOf[js.Any])
     
-    inline def setAddAppAccessRestrictions(value: `340`): Self = StObject.set(x, "addAppAccessRestrictions", value.asInstanceOf[js.Any])
+    inline def setAcceptInvitationForAuthenticatedUser(value: `516`): Self = StObject.set(x, "acceptInvitationForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setAddCollaborator(value: `341`): Self = StObject.set(x, "addCollaborator", value.asInstanceOf[js.Any])
+    inline def setAddAppAccessRestrictions(value: `517`): Self = StObject.set(x, "addAppAccessRestrictions", value.asInstanceOf[js.Any])
     
-    inline def setAddStatusCheckContexts(value: `342`): Self = StObject.set(x, "addStatusCheckContexts", value.asInstanceOf[js.Any])
+    inline def setAddCollaborator(value: `518`): Self = StObject.set(x, "addCollaborator", value.asInstanceOf[js.Any])
     
-    inline def setAddTeamAccessRestrictions(value: `343`): Self = StObject.set(x, "addTeamAccessRestrictions", value.asInstanceOf[js.Any])
+    inline def setAddStatusCheckContexts(value: `519`): Self = StObject.set(x, "addStatusCheckContexts", value.asInstanceOf[js.Any])
     
-    inline def setAddUserAccessRestrictions(value: `344`): Self = StObject.set(x, "addUserAccessRestrictions", value.asInstanceOf[js.Any])
+    inline def setAddTeamAccessRestrictions(value: `520`): Self = StObject.set(x, "addTeamAccessRestrictions", value.asInstanceOf[js.Any])
     
-    inline def setCheckCollaborator(value: `345`): Self = StObject.set(x, "checkCollaborator", value.asInstanceOf[js.Any])
+    inline def setAddUserAccessRestrictions(value: `521`): Self = StObject.set(x, "addUserAccessRestrictions", value.asInstanceOf[js.Any])
     
-    inline def setCheckVulnerabilityAlerts(value: `346`): Self = StObject.set(x, "checkVulnerabilityAlerts", value.asInstanceOf[js.Any])
+    inline def setCheckCollaborator(value: `522`): Self = StObject.set(x, "checkCollaborator", value.asInstanceOf[js.Any])
     
-    inline def setCompareCommits(value: `347`): Self = StObject.set(x, "compareCommits", value.asInstanceOf[js.Any])
+    inline def setCheckVulnerabilityAlerts(value: `523`): Self = StObject.set(x, "checkVulnerabilityAlerts", value.asInstanceOf[js.Any])
     
-    inline def setCreateCommitComment(value: `348`): Self = StObject.set(x, "createCommitComment", value.asInstanceOf[js.Any])
+    inline def setCodeownersErrors(value: `524`): Self = StObject.set(x, "codeownersErrors", value.asInstanceOf[js.Any])
     
-    inline def setCreateCommitSignatureProtection(value: `349`): Self = StObject.set(x, "createCommitSignatureProtection", value.asInstanceOf[js.Any])
+    inline def setCompareCommits(value: `525`): Self = StObject.set(x, "compareCommits", value.asInstanceOf[js.Any])
     
-    inline def setCreateCommitStatus(value: `350`): Self = StObject.set(x, "createCommitStatus", value.asInstanceOf[js.Any])
+    inline def setCompareCommitsWithBasehead(value: `526`): Self = StObject.set(x, "compareCommitsWithBasehead", value.asInstanceOf[js.Any])
     
-    inline def setCreateDeployKey(value: `351`): Self = StObject.set(x, "createDeployKey", value.asInstanceOf[js.Any])
+    inline def setCreateAutolink(value: `527`): Self = StObject.set(x, "createAutolink", value.asInstanceOf[js.Any])
     
-    inline def setCreateDeployment(value: `352`): Self = StObject.set(x, "createDeployment", value.asInstanceOf[js.Any])
+    inline def setCreateCommitComment(value: `528`): Self = StObject.set(x, "createCommitComment", value.asInstanceOf[js.Any])
     
-    inline def setCreateDeploymentStatus(value: `353`): Self = StObject.set(x, "createDeploymentStatus", value.asInstanceOf[js.Any])
+    inline def setCreateCommitSignatureProtection(value: `529`): Self = StObject.set(x, "createCommitSignatureProtection", value.asInstanceOf[js.Any])
     
-    inline def setCreateDispatchEvent(value: `354`): Self = StObject.set(x, "createDispatchEvent", value.asInstanceOf[js.Any])
+    inline def setCreateCommitStatus(value: `530`): Self = StObject.set(x, "createCommitStatus", value.asInstanceOf[js.Any])
     
-    inline def setCreateForAuthenticatedUser(value: `355`): Self = StObject.set(x, "createForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setCreateDeployKey(value: `531`): Self = StObject.set(x, "createDeployKey", value.asInstanceOf[js.Any])
     
-    inline def setCreateFork(value: `356`): Self = StObject.set(x, "createFork", value.asInstanceOf[js.Any])
+    inline def setCreateDeployment(value: `532`): Self = StObject.set(x, "createDeployment", value.asInstanceOf[js.Any])
     
-    inline def setCreateInOrg(value: `357`): Self = StObject.set(x, "createInOrg", value.asInstanceOf[js.Any])
+    inline def setCreateDeploymentBranchPolicy(value: `533`): Self = StObject.set(x, "createDeploymentBranchPolicy", value.asInstanceOf[js.Any])
     
-    inline def setCreateOrUpdateFileContents(value: `358`): Self = StObject.set(x, "createOrUpdateFileContents", value.asInstanceOf[js.Any])
+    inline def setCreateDeploymentStatus(value: `534`): Self = StObject.set(x, "createDeploymentStatus", value.asInstanceOf[js.Any])
     
-    inline def setCreatePagesSite(value: `359`): Self = StObject.set(x, "createPagesSite", value.asInstanceOf[js.Any])
+    inline def setCreateDispatchEvent(value: `535`): Self = StObject.set(x, "createDispatchEvent", value.asInstanceOf[js.Any])
     
-    inline def setCreateRelease(value: `360`): Self = StObject.set(x, "createRelease", value.asInstanceOf[js.Any])
+    inline def setCreateForAuthenticatedUser(value: `536`): Self = StObject.set(x, "createForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setCreateUsingTemplate(value: `361`): Self = StObject.set(x, "createUsingTemplate", value.asInstanceOf[js.Any])
+    inline def setCreateFork(value: `537`): Self = StObject.set(x, "createFork", value.asInstanceOf[js.Any])
     
-    inline def setCreateWebhook(value: `362`): Self = StObject.set(x, "createWebhook", value.asInstanceOf[js.Any])
+    inline def setCreateInOrg(value: `538`): Self = StObject.set(x, "createInOrg", value.asInstanceOf[js.Any])
     
-    inline def setDeclineInvitation(value: `363`): Self = StObject.set(x, "declineInvitation", value.asInstanceOf[js.Any])
+    inline def setCreateOrUpdateEnvironment(value: `539`): Self = StObject.set(x, "createOrUpdateEnvironment", value.asInstanceOf[js.Any])
     
-    inline def setDelete(value: `364`): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setCreateOrUpdateFileContents(value: `540`): Self = StObject.set(x, "createOrUpdateFileContents", value.asInstanceOf[js.Any])
     
-    inline def setDeleteAccessRestrictions(value: `365`): Self = StObject.set(x, "deleteAccessRestrictions", value.asInstanceOf[js.Any])
+    inline def setCreatePagesDeployment(value: `541`): Self = StObject.set(x, "createPagesDeployment", value.asInstanceOf[js.Any])
     
-    inline def setDeleteAdminBranchProtection(value: `366`): Self = StObject.set(x, "deleteAdminBranchProtection", value.asInstanceOf[js.Any])
+    inline def setCreatePagesSite(value: `542`): Self = StObject.set(x, "createPagesSite", value.asInstanceOf[js.Any])
     
-    inline def setDeleteBranchProtection(value: `367`): Self = StObject.set(x, "deleteBranchProtection", value.asInstanceOf[js.Any])
+    inline def setCreateRelease(value: `543`): Self = StObject.set(x, "createRelease", value.asInstanceOf[js.Any])
     
-    inline def setDeleteCommitComment(value: `368`): Self = StObject.set(x, "deleteCommitComment", value.asInstanceOf[js.Any])
+    inline def setCreateTagProtection(value: `544`): Self = StObject.set(x, "createTagProtection", value.asInstanceOf[js.Any])
     
-    inline def setDeleteCommitSignatureProtection(value: `369`): Self = StObject.set(x, "deleteCommitSignatureProtection", value.asInstanceOf[js.Any])
+    inline def setCreateUsingTemplate(value: `545`): Self = StObject.set(x, "createUsingTemplate", value.asInstanceOf[js.Any])
     
-    inline def setDeleteDeployKey(value: `370`): Self = StObject.set(x, "deleteDeployKey", value.asInstanceOf[js.Any])
+    inline def setCreateWebhook(value: `546`): Self = StObject.set(x, "createWebhook", value.asInstanceOf[js.Any])
     
-    inline def setDeleteDeployment(value: `371`): Self = StObject.set(x, "deleteDeployment", value.asInstanceOf[js.Any])
+    inline def setDeclineInvitation(value: `547`): Self = StObject.set(x, "declineInvitation", value.asInstanceOf[js.Any])
     
-    inline def setDeleteFile(value: `372`): Self = StObject.set(x, "deleteFile", value.asInstanceOf[js.Any])
+    inline def setDeclineInvitationForAuthenticatedUser(value: `547`): Self = StObject.set(x, "declineInvitationForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setDeleteInvitation(value: `373`): Self = StObject.set(x, "deleteInvitation", value.asInstanceOf[js.Any])
+    inline def setDelete(value: `548`): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    inline def setDeletePagesSite(value: `374`): Self = StObject.set(x, "deletePagesSite", value.asInstanceOf[js.Any])
+    inline def setDeleteAccessRestrictions(value: `549`): Self = StObject.set(x, "deleteAccessRestrictions", value.asInstanceOf[js.Any])
     
-    inline def setDeletePullRequestReviewProtection(value: `375`): Self = StObject.set(x, "deletePullRequestReviewProtection", value.asInstanceOf[js.Any])
+    inline def setDeleteAdminBranchProtection(value: `550`): Self = StObject.set(x, "deleteAdminBranchProtection", value.asInstanceOf[js.Any])
     
-    inline def setDeleteRelease(value: `376`): Self = StObject.set(x, "deleteRelease", value.asInstanceOf[js.Any])
+    inline def setDeleteAnEnvironment(value: `551`): Self = StObject.set(x, "deleteAnEnvironment", value.asInstanceOf[js.Any])
     
-    inline def setDeleteReleaseAsset(value: `377`): Self = StObject.set(x, "deleteReleaseAsset", value.asInstanceOf[js.Any])
+    inline def setDeleteAutolink(value: `552`): Self = StObject.set(x, "deleteAutolink", value.asInstanceOf[js.Any])
     
-    inline def setDeleteWebhook(value: `378`): Self = StObject.set(x, "deleteWebhook", value.asInstanceOf[js.Any])
+    inline def setDeleteBranchProtection(value: `553`): Self = StObject.set(x, "deleteBranchProtection", value.asInstanceOf[js.Any])
     
-    inline def setDisableAutomatedSecurityFixes(value: `379`): Self = StObject.set(x, "disableAutomatedSecurityFixes", value.asInstanceOf[js.Any])
+    inline def setDeleteCommitComment(value: `554`): Self = StObject.set(x, "deleteCommitComment", value.asInstanceOf[js.Any])
     
-    inline def setDisableVulnerabilityAlerts(value: `380`): Self = StObject.set(x, "disableVulnerabilityAlerts", value.asInstanceOf[js.Any])
+    inline def setDeleteCommitSignatureProtection(value: `555`): Self = StObject.set(x, "deleteCommitSignatureProtection", value.asInstanceOf[js.Any])
     
-    inline def setDownloadArchive(value: `381`): Self = StObject.set(x, "downloadArchive", value.asInstanceOf[js.Any])
+    inline def setDeleteDeployKey(value: `556`): Self = StObject.set(x, "deleteDeployKey", value.asInstanceOf[js.Any])
     
-    inline def setEnableAutomatedSecurityFixes(value: `382`): Self = StObject.set(x, "enableAutomatedSecurityFixes", value.asInstanceOf[js.Any])
+    inline def setDeleteDeployment(value: `557`): Self = StObject.set(x, "deleteDeployment", value.asInstanceOf[js.Any])
     
-    inline def setEnableVulnerabilityAlerts(value: `383`): Self = StObject.set(x, "enableVulnerabilityAlerts", value.asInstanceOf[js.Any])
+    inline def setDeleteDeploymentBranchPolicy(value: `558`): Self = StObject.set(x, "deleteDeploymentBranchPolicy", value.asInstanceOf[js.Any])
     
-    inline def setGet(value: `384`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setDeleteFile(value: `559`): Self = StObject.set(x, "deleteFile", value.asInstanceOf[js.Any])
     
-    inline def setGetAccessRestrictions(value: `385`): Self = StObject.set(x, "getAccessRestrictions", value.asInstanceOf[js.Any])
+    inline def setDeleteInvitation(value: `560`): Self = StObject.set(x, "deleteInvitation", value.asInstanceOf[js.Any])
     
-    inline def setGetAdminBranchProtection(value: `386`): Self = StObject.set(x, "getAdminBranchProtection", value.asInstanceOf[js.Any])
+    inline def setDeletePagesSite(value: `561`): Self = StObject.set(x, "deletePagesSite", value.asInstanceOf[js.Any])
     
-    inline def setGetAllStatusCheckContexts(value: `387`): Self = StObject.set(x, "getAllStatusCheckContexts", value.asInstanceOf[js.Any])
+    inline def setDeletePullRequestReviewProtection(value: `562`): Self = StObject.set(x, "deletePullRequestReviewProtection", value.asInstanceOf[js.Any])
     
-    inline def setGetAllTopics(value: `388`): Self = StObject.set(x, "getAllTopics", value.asInstanceOf[js.Any])
+    inline def setDeleteRelease(value: `563`): Self = StObject.set(x, "deleteRelease", value.asInstanceOf[js.Any])
     
-    inline def setGetAppsWithAccessToProtectedBranch(value: `389`): Self = StObject.set(x, "getAppsWithAccessToProtectedBranch", value.asInstanceOf[js.Any])
+    inline def setDeleteReleaseAsset(value: `564`): Self = StObject.set(x, "deleteReleaseAsset", value.asInstanceOf[js.Any])
     
-    inline def setGetBranch(value: `390`): Self = StObject.set(x, "getBranch", value.asInstanceOf[js.Any])
+    inline def setDeleteTagProtection(value: `565`): Self = StObject.set(x, "deleteTagProtection", value.asInstanceOf[js.Any])
     
-    inline def setGetBranchProtection(value: `391`): Self = StObject.set(x, "getBranchProtection", value.asInstanceOf[js.Any])
+    inline def setDeleteWebhook(value: `566`): Self = StObject.set(x, "deleteWebhook", value.asInstanceOf[js.Any])
     
-    inline def setGetClones(value: `392`): Self = StObject.set(x, "getClones", value.asInstanceOf[js.Any])
+    inline def setDisableAutomatedSecurityFixes(value: `567`): Self = StObject.set(x, "disableAutomatedSecurityFixes", value.asInstanceOf[js.Any])
     
-    inline def setGetCodeFrequencyStats(value: `393`): Self = StObject.set(x, "getCodeFrequencyStats", value.asInstanceOf[js.Any])
+    inline def setDisableLfsForRepo(value: `568`): Self = StObject.set(x, "disableLfsForRepo", value.asInstanceOf[js.Any])
     
-    inline def setGetCollaboratorPermissionLevel(value: `394`): Self = StObject.set(x, "getCollaboratorPermissionLevel", value.asInstanceOf[js.Any])
+    inline def setDisableVulnerabilityAlerts(value: `569`): Self = StObject.set(x, "disableVulnerabilityAlerts", value.asInstanceOf[js.Any])
     
-    inline def setGetCombinedStatusForRef(value: `395`): Self = StObject.set(x, "getCombinedStatusForRef", value.asInstanceOf[js.Any])
+    inline def setDownloadArchive(value: `570`): Self = StObject.set(x, "downloadArchive", value.asInstanceOf[js.Any])
     
-    inline def setGetCommit(value: `396`): Self = StObject.set(x, "getCommit", value.asInstanceOf[js.Any])
+    inline def setDownloadTarballArchive(value: `571`): Self = StObject.set(x, "downloadTarballArchive", value.asInstanceOf[js.Any])
     
-    inline def setGetCommitActivityStats(value: `397`): Self = StObject.set(x, "getCommitActivityStats", value.asInstanceOf[js.Any])
+    inline def setDownloadZipballArchive(value: `570`): Self = StObject.set(x, "downloadZipballArchive", value.asInstanceOf[js.Any])
     
-    inline def setGetCommitComment(value: `398`): Self = StObject.set(x, "getCommitComment", value.asInstanceOf[js.Any])
+    inline def setEnableAutomatedSecurityFixes(value: `572`): Self = StObject.set(x, "enableAutomatedSecurityFixes", value.asInstanceOf[js.Any])
     
-    inline def setGetCommitSignatureProtection(value: `399`): Self = StObject.set(x, "getCommitSignatureProtection", value.asInstanceOf[js.Any])
+    inline def setEnableLfsForRepo(value: `573`): Self = StObject.set(x, "enableLfsForRepo", value.asInstanceOf[js.Any])
     
-    inline def setGetCommunityProfileMetrics(value: `400`): Self = StObject.set(x, "getCommunityProfileMetrics", value.asInstanceOf[js.Any])
+    inline def setEnableVulnerabilityAlerts(value: `574`): Self = StObject.set(x, "enableVulnerabilityAlerts", value.asInstanceOf[js.Any])
     
-    inline def setGetContent(value: `401`): Self = StObject.set(x, "getContent", value.asInstanceOf[js.Any])
+    inline def setGenerateReleaseNotes(value: `575`): Self = StObject.set(x, "generateReleaseNotes", value.asInstanceOf[js.Any])
     
-    inline def setGetContributorsStats(value: `402`): Self = StObject.set(x, "getContributorsStats", value.asInstanceOf[js.Any])
+    inline def setGet(value: `576`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setGetDeployKey(value: `403`): Self = StObject.set(x, "getDeployKey", value.asInstanceOf[js.Any])
+    inline def setGetAccessRestrictions(value: `577`): Self = StObject.set(x, "getAccessRestrictions", value.asInstanceOf[js.Any])
     
-    inline def setGetDeployment(value: `404`): Self = StObject.set(x, "getDeployment", value.asInstanceOf[js.Any])
+    inline def setGetAdminBranchProtection(value: `578`): Self = StObject.set(x, "getAdminBranchProtection", value.asInstanceOf[js.Any])
     
-    inline def setGetDeploymentStatus(value: `405`): Self = StObject.set(x, "getDeploymentStatus", value.asInstanceOf[js.Any])
+    inline def setGetAllEnvironments(value: `579`): Self = StObject.set(x, "getAllEnvironments", value.asInstanceOf[js.Any])
     
-    inline def setGetLatestPagesBuild(value: `406`): Self = StObject.set(x, "getLatestPagesBuild", value.asInstanceOf[js.Any])
+    inline def setGetAllStatusCheckContexts(value: `580`): Self = StObject.set(x, "getAllStatusCheckContexts", value.asInstanceOf[js.Any])
     
-    inline def setGetLatestRelease(value: `407`): Self = StObject.set(x, "getLatestRelease", value.asInstanceOf[js.Any])
+    inline def setGetAllTopics(value: `581`): Self = StObject.set(x, "getAllTopics", value.asInstanceOf[js.Any])
     
-    inline def setGetPages(value: `408`): Self = StObject.set(x, "getPages", value.asInstanceOf[js.Any])
+    inline def setGetAppsWithAccessToProtectedBranch(value: `582`): Self = StObject.set(x, "getAppsWithAccessToProtectedBranch", value.asInstanceOf[js.Any])
     
-    inline def setGetPagesBuild(value: `409`): Self = StObject.set(x, "getPagesBuild", value.asInstanceOf[js.Any])
+    inline def setGetAutolink(value: `583`): Self = StObject.set(x, "getAutolink", value.asInstanceOf[js.Any])
     
-    inline def setGetParticipationStats(value: `410`): Self = StObject.set(x, "getParticipationStats", value.asInstanceOf[js.Any])
+    inline def setGetBranch(value: `584`): Self = StObject.set(x, "getBranch", value.asInstanceOf[js.Any])
     
-    inline def setGetPullRequestReviewProtection(value: `411`): Self = StObject.set(x, "getPullRequestReviewProtection", value.asInstanceOf[js.Any])
+    inline def setGetBranchProtection(value: `585`): Self = StObject.set(x, "getBranchProtection", value.asInstanceOf[js.Any])
     
-    inline def setGetPunchCardStats(value: `412`): Self = StObject.set(x, "getPunchCardStats", value.asInstanceOf[js.Any])
+    inline def setGetClones(value: `586`): Self = StObject.set(x, "getClones", value.asInstanceOf[js.Any])
     
-    inline def setGetReadme(value: `413`): Self = StObject.set(x, "getReadme", value.asInstanceOf[js.Any])
+    inline def setGetCodeFrequencyStats(value: `587`): Self = StObject.set(x, "getCodeFrequencyStats", value.asInstanceOf[js.Any])
     
-    inline def setGetRelease(value: `414`): Self = StObject.set(x, "getRelease", value.asInstanceOf[js.Any])
+    inline def setGetCollaboratorPermissionLevel(value: `588`): Self = StObject.set(x, "getCollaboratorPermissionLevel", value.asInstanceOf[js.Any])
     
-    inline def setGetReleaseAsset(value: `415`): Self = StObject.set(x, "getReleaseAsset", value.asInstanceOf[js.Any])
+    inline def setGetCombinedStatusForRef(value: `589`): Self = StObject.set(x, "getCombinedStatusForRef", value.asInstanceOf[js.Any])
     
-    inline def setGetReleaseByTag(value: `416`): Self = StObject.set(x, "getReleaseByTag", value.asInstanceOf[js.Any])
+    inline def setGetCommit(value: `590`): Self = StObject.set(x, "getCommit", value.asInstanceOf[js.Any])
     
-    inline def setGetStatusChecksProtection(value: `417`): Self = StObject.set(x, "getStatusChecksProtection", value.asInstanceOf[js.Any])
+    inline def setGetCommitActivityStats(value: `591`): Self = StObject.set(x, "getCommitActivityStats", value.asInstanceOf[js.Any])
     
-    inline def setGetTeamsWithAccessToProtectedBranch(value: `418`): Self = StObject.set(x, "getTeamsWithAccessToProtectedBranch", value.asInstanceOf[js.Any])
+    inline def setGetCommitComment(value: `592`): Self = StObject.set(x, "getCommitComment", value.asInstanceOf[js.Any])
     
-    inline def setGetTopPaths(value: `419`): Self = StObject.set(x, "getTopPaths", value.asInstanceOf[js.Any])
+    inline def setGetCommitSignatureProtection(value: `593`): Self = StObject.set(x, "getCommitSignatureProtection", value.asInstanceOf[js.Any])
     
-    inline def setGetTopReferrers(value: `420`): Self = StObject.set(x, "getTopReferrers", value.asInstanceOf[js.Any])
+    inline def setGetCommunityProfileMetrics(value: `594`): Self = StObject.set(x, "getCommunityProfileMetrics", value.asInstanceOf[js.Any])
     
-    inline def setGetUsersWithAccessToProtectedBranch(value: `421`): Self = StObject.set(x, "getUsersWithAccessToProtectedBranch", value.asInstanceOf[js.Any])
+    inline def setGetContent(value: `595`): Self = StObject.set(x, "getContent", value.asInstanceOf[js.Any])
     
-    inline def setGetViews(value: `422`): Self = StObject.set(x, "getViews", value.asInstanceOf[js.Any])
+    inline def setGetContributorsStats(value: `596`): Self = StObject.set(x, "getContributorsStats", value.asInstanceOf[js.Any])
     
-    inline def setGetWebhook(value: `423`): Self = StObject.set(x, "getWebhook", value.asInstanceOf[js.Any])
+    inline def setGetDeployKey(value: `597`): Self = StObject.set(x, "getDeployKey", value.asInstanceOf[js.Any])
     
-    inline def setListBranches(value: `424`): Self = StObject.set(x, "listBranches", value.asInstanceOf[js.Any])
+    inline def setGetDeployment(value: `598`): Self = StObject.set(x, "getDeployment", value.asInstanceOf[js.Any])
     
-    inline def setListBranchesForHeadCommit(value: `425`): Self = StObject.set(x, "listBranchesForHeadCommit", value.asInstanceOf[js.Any])
+    inline def setGetDeploymentBranchPolicy(value: `599`): Self = StObject.set(x, "getDeploymentBranchPolicy", value.asInstanceOf[js.Any])
     
-    inline def setListCollaborators(value: `426`): Self = StObject.set(x, "listCollaborators", value.asInstanceOf[js.Any])
+    inline def setGetDeploymentStatus(value: `600`): Self = StObject.set(x, "getDeploymentStatus", value.asInstanceOf[js.Any])
     
-    inline def setListCommentsForCommit(value: `427`): Self = StObject.set(x, "listCommentsForCommit", value.asInstanceOf[js.Any])
+    inline def setGetEnvironment(value: `601`): Self = StObject.set(x, "getEnvironment", value.asInstanceOf[js.Any])
     
-    inline def setListCommitCommentsForRepo(value: `428`): Self = StObject.set(x, "listCommitCommentsForRepo", value.asInstanceOf[js.Any])
+    inline def setGetLatestPagesBuild(value: `602`): Self = StObject.set(x, "getLatestPagesBuild", value.asInstanceOf[js.Any])
     
-    inline def setListCommitStatusesForRef(value: `429`): Self = StObject.set(x, "listCommitStatusesForRef", value.asInstanceOf[js.Any])
+    inline def setGetLatestRelease(value: `603`): Self = StObject.set(x, "getLatestRelease", value.asInstanceOf[js.Any])
     
-    inline def setListCommits(value: `430`): Self = StObject.set(x, "listCommits", value.asInstanceOf[js.Any])
+    inline def setGetPages(value: `604`): Self = StObject.set(x, "getPages", value.asInstanceOf[js.Any])
     
-    inline def setListContributors(value: `431`): Self = StObject.set(x, "listContributors", value.asInstanceOf[js.Any])
+    inline def setGetPagesBuild(value: `605`): Self = StObject.set(x, "getPagesBuild", value.asInstanceOf[js.Any])
     
-    inline def setListDeployKeys(value: `432`): Self = StObject.set(x, "listDeployKeys", value.asInstanceOf[js.Any])
+    inline def setGetPagesHealthCheck(value: `606`): Self = StObject.set(x, "getPagesHealthCheck", value.asInstanceOf[js.Any])
     
-    inline def setListDeploymentStatuses(value: `433`): Self = StObject.set(x, "listDeploymentStatuses", value.asInstanceOf[js.Any])
+    inline def setGetParticipationStats(value: `607`): Self = StObject.set(x, "getParticipationStats", value.asInstanceOf[js.Any])
     
-    inline def setListDeployments(value: `434`): Self = StObject.set(x, "listDeployments", value.asInstanceOf[js.Any])
+    inline def setGetPullRequestReviewProtection(value: `608`): Self = StObject.set(x, "getPullRequestReviewProtection", value.asInstanceOf[js.Any])
     
-    inline def setListForAuthenticatedUser(value: `435`): Self = StObject.set(x, "listForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setGetPunchCardStats(value: `609`): Self = StObject.set(x, "getPunchCardStats", value.asInstanceOf[js.Any])
     
-    inline def setListForOrg(value: `436`): Self = StObject.set(x, "listForOrg", value.asInstanceOf[js.Any])
+    inline def setGetReadme(value: `610`): Self = StObject.set(x, "getReadme", value.asInstanceOf[js.Any])
     
-    inline def setListForUser(value: `437`): Self = StObject.set(x, "listForUser", value.asInstanceOf[js.Any])
+    inline def setGetReadmeInDirectory(value: `611`): Self = StObject.set(x, "getReadmeInDirectory", value.asInstanceOf[js.Any])
     
-    inline def setListForks(value: `438`): Self = StObject.set(x, "listForks", value.asInstanceOf[js.Any])
+    inline def setGetRelease(value: `612`): Self = StObject.set(x, "getRelease", value.asInstanceOf[js.Any])
     
-    inline def setListInvitations(value: `439`): Self = StObject.set(x, "listInvitations", value.asInstanceOf[js.Any])
+    inline def setGetReleaseAsset(value: `613`): Self = StObject.set(x, "getReleaseAsset", value.asInstanceOf[js.Any])
     
-    inline def setListInvitationsForAuthenticatedUser(value: `440`): Self = StObject.set(x, "listInvitationsForAuthenticatedUser", value.asInstanceOf[js.Any])
+    inline def setGetReleaseByTag(value: `614`): Self = StObject.set(x, "getReleaseByTag", value.asInstanceOf[js.Any])
     
-    inline def setListLanguages(value: `441`): Self = StObject.set(x, "listLanguages", value.asInstanceOf[js.Any])
+    inline def setGetStatusChecksProtection(value: `615`): Self = StObject.set(x, "getStatusChecksProtection", value.asInstanceOf[js.Any])
     
-    inline def setListPagesBuilds(value: `442`): Self = StObject.set(x, "listPagesBuilds", value.asInstanceOf[js.Any])
+    inline def setGetTeamsWithAccessToProtectedBranch(value: `616`): Self = StObject.set(x, "getTeamsWithAccessToProtectedBranch", value.asInstanceOf[js.Any])
     
-    inline def setListPublic(value: `443`): Self = StObject.set(x, "listPublic", value.asInstanceOf[js.Any])
+    inline def setGetTopPaths(value: `617`): Self = StObject.set(x, "getTopPaths", value.asInstanceOf[js.Any])
     
-    inline def setListPullRequestsAssociatedWithCommit(value: `444`): Self = StObject.set(x, "listPullRequestsAssociatedWithCommit", value.asInstanceOf[js.Any])
+    inline def setGetTopReferrers(value: `618`): Self = StObject.set(x, "getTopReferrers", value.asInstanceOf[js.Any])
     
-    inline def setListReleaseAssets(value: `445`): Self = StObject.set(x, "listReleaseAssets", value.asInstanceOf[js.Any])
+    inline def setGetUsersWithAccessToProtectedBranch(value: `619`): Self = StObject.set(x, "getUsersWithAccessToProtectedBranch", value.asInstanceOf[js.Any])
     
-    inline def setListReleases(value: `446`): Self = StObject.set(x, "listReleases", value.asInstanceOf[js.Any])
+    inline def setGetViews(value: `620`): Self = StObject.set(x, "getViews", value.asInstanceOf[js.Any])
     
-    inline def setListTags(value: `447`): Self = StObject.set(x, "listTags", value.asInstanceOf[js.Any])
+    inline def setGetWebhook(value: `621`): Self = StObject.set(x, "getWebhook", value.asInstanceOf[js.Any])
     
-    inline def setListTeams(value: `448`): Self = StObject.set(x, "listTeams", value.asInstanceOf[js.Any])
+    inline def setGetWebhookConfigForRepo(value: `622`): Self = StObject.set(x, "getWebhookConfigForRepo", value.asInstanceOf[js.Any])
     
-    inline def setListWebhooks(value: `449`): Self = StObject.set(x, "listWebhooks", value.asInstanceOf[js.Any])
+    inline def setGetWebhookDelivery(value: `623`): Self = StObject.set(x, "getWebhookDelivery", value.asInstanceOf[js.Any])
     
-    inline def setMerge(value: `450`): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
+    inline def setListAutolinks(value: `624`): Self = StObject.set(x, "listAutolinks", value.asInstanceOf[js.Any])
     
-    inline def setPingWebhook(value: `451`): Self = StObject.set(x, "pingWebhook", value.asInstanceOf[js.Any])
+    inline def setListBranches(value: `625`): Self = StObject.set(x, "listBranches", value.asInstanceOf[js.Any])
     
-    inline def setRemoveAppAccessRestrictions(value: `452`): Self = StObject.set(x, "removeAppAccessRestrictions", value.asInstanceOf[js.Any])
+    inline def setListBranchesForHeadCommit(value: `626`): Self = StObject.set(x, "listBranchesForHeadCommit", value.asInstanceOf[js.Any])
     
-    inline def setRemoveCollaborator(value: `453`): Self = StObject.set(x, "removeCollaborator", value.asInstanceOf[js.Any])
+    inline def setListCollaborators(value: `627`): Self = StObject.set(x, "listCollaborators", value.asInstanceOf[js.Any])
     
-    inline def setRemoveStatusCheckContexts(value: `454`): Self = StObject.set(x, "removeStatusCheckContexts", value.asInstanceOf[js.Any])
+    inline def setListCommentsForCommit(value: `628`): Self = StObject.set(x, "listCommentsForCommit", value.asInstanceOf[js.Any])
     
-    inline def setRemoveStatusCheckProtection(value: `455`): Self = StObject.set(x, "removeStatusCheckProtection", value.asInstanceOf[js.Any])
+    inline def setListCommitCommentsForRepo(value: `629`): Self = StObject.set(x, "listCommitCommentsForRepo", value.asInstanceOf[js.Any])
     
-    inline def setRemoveTeamAccessRestrictions(value: `456`): Self = StObject.set(x, "removeTeamAccessRestrictions", value.asInstanceOf[js.Any])
+    inline def setListCommitStatusesForRef(value: `630`): Self = StObject.set(x, "listCommitStatusesForRef", value.asInstanceOf[js.Any])
     
-    inline def setRemoveUserAccessRestrictions(value: `457`): Self = StObject.set(x, "removeUserAccessRestrictions", value.asInstanceOf[js.Any])
+    inline def setListCommits(value: `631`): Self = StObject.set(x, "listCommits", value.asInstanceOf[js.Any])
     
-    inline def setReplaceAllTopics(value: `458`): Self = StObject.set(x, "replaceAllTopics", value.asInstanceOf[js.Any])
+    inline def setListContributors(value: `632`): Self = StObject.set(x, "listContributors", value.asInstanceOf[js.Any])
     
-    inline def setRequestPagesBuild(value: `459`): Self = StObject.set(x, "requestPagesBuild", value.asInstanceOf[js.Any])
+    inline def setListDeployKeys(value: `633`): Self = StObject.set(x, "listDeployKeys", value.asInstanceOf[js.Any])
     
-    inline def setSetAdminBranchProtection(value: `460`): Self = StObject.set(x, "setAdminBranchProtection", value.asInstanceOf[js.Any])
+    inline def setListDeploymentBranchPolicies(value: `634`): Self = StObject.set(x, "listDeploymentBranchPolicies", value.asInstanceOf[js.Any])
     
-    inline def setSetAppAccessRestrictions(value: `461`): Self = StObject.set(x, "setAppAccessRestrictions", value.asInstanceOf[js.Any])
+    inline def setListDeploymentStatuses(value: `635`): Self = StObject.set(x, "listDeploymentStatuses", value.asInstanceOf[js.Any])
     
-    inline def setSetStatusCheckContexts(value: `462`): Self = StObject.set(x, "setStatusCheckContexts", value.asInstanceOf[js.Any])
+    inline def setListDeployments(value: `636`): Self = StObject.set(x, "listDeployments", value.asInstanceOf[js.Any])
     
-    inline def setSetTeamAccessRestrictions(value: `463`): Self = StObject.set(x, "setTeamAccessRestrictions", value.asInstanceOf[js.Any])
+    inline def setListForAuthenticatedUser(value: `637`): Self = StObject.set(x, "listForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setSetUserAccessRestrictions(value: `464`): Self = StObject.set(x, "setUserAccessRestrictions", value.asInstanceOf[js.Any])
+    inline def setListForOrg(value: `638`): Self = StObject.set(x, "listForOrg", value.asInstanceOf[js.Any])
     
-    inline def setTestPushWebhook(value: `465`): Self = StObject.set(x, "testPushWebhook", value.asInstanceOf[js.Any])
+    inline def setListForUser(value: `639`): Self = StObject.set(x, "listForUser", value.asInstanceOf[js.Any])
     
-    inline def setTransfer(value: `466`): Self = StObject.set(x, "transfer", value.asInstanceOf[js.Any])
+    inline def setListForks(value: `640`): Self = StObject.set(x, "listForks", value.asInstanceOf[js.Any])
     
-    inline def setUpdate(value: `467`): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setListInvitations(value: `641`): Self = StObject.set(x, "listInvitations", value.asInstanceOf[js.Any])
     
-    inline def setUpdateBranchProtection(value: `468`): Self = StObject.set(x, "updateBranchProtection", value.asInstanceOf[js.Any])
+    inline def setListInvitationsForAuthenticatedUser(value: `642`): Self = StObject.set(x, "listInvitationsForAuthenticatedUser", value.asInstanceOf[js.Any])
     
-    inline def setUpdateCommitComment(value: `469`): Self = StObject.set(x, "updateCommitComment", value.asInstanceOf[js.Any])
+    inline def setListLanguages(value: `643`): Self = StObject.set(x, "listLanguages", value.asInstanceOf[js.Any])
     
-    inline def setUpdateInformationAboutPagesSite(value: `470`): Self = StObject.set(x, "updateInformationAboutPagesSite", value.asInstanceOf[js.Any])
+    inline def setListPagesBuilds(value: `644`): Self = StObject.set(x, "listPagesBuilds", value.asInstanceOf[js.Any])
     
-    inline def setUpdateInvitation(value: `471`): Self = StObject.set(x, "updateInvitation", value.asInstanceOf[js.Any])
+    inline def setListPublic(value: `645`): Self = StObject.set(x, "listPublic", value.asInstanceOf[js.Any])
     
-    inline def setUpdatePullRequestReviewProtection(value: `472`): Self = StObject.set(x, "updatePullRequestReviewProtection", value.asInstanceOf[js.Any])
+    inline def setListPullRequestsAssociatedWithCommit(value: `646`): Self = StObject.set(x, "listPullRequestsAssociatedWithCommit", value.asInstanceOf[js.Any])
     
-    inline def setUpdateRelease(value: `473`): Self = StObject.set(x, "updateRelease", value.asInstanceOf[js.Any])
+    inline def setListReleaseAssets(value: `647`): Self = StObject.set(x, "listReleaseAssets", value.asInstanceOf[js.Any])
     
-    inline def setUpdateReleaseAsset(value: `474`): Self = StObject.set(x, "updateReleaseAsset", value.asInstanceOf[js.Any])
+    inline def setListReleases(value: `648`): Self = StObject.set(x, "listReleases", value.asInstanceOf[js.Any])
     
-    inline def setUpdateStatusCheckPotection(value: `475`): Self = StObject.set(x, "updateStatusCheckPotection", value.asInstanceOf[js.Any])
+    inline def setListTagProtection(value: `649`): Self = StObject.set(x, "listTagProtection", value.asInstanceOf[js.Any])
     
-    inline def setUpdateWebhook(value: `476`): Self = StObject.set(x, "updateWebhook", value.asInstanceOf[js.Any])
+    inline def setListTags(value: `650`): Self = StObject.set(x, "listTags", value.asInstanceOf[js.Any])
     
-    inline def setUploadReleaseAsset(value: `477`): Self = StObject.set(x, "uploadReleaseAsset", value.asInstanceOf[js.Any])
+    inline def setListTeams(value: `651`): Self = StObject.set(x, "listTeams", value.asInstanceOf[js.Any])
+    
+    inline def setListWebhookDeliveries(value: `652`): Self = StObject.set(x, "listWebhookDeliveries", value.asInstanceOf[js.Any])
+    
+    inline def setListWebhooks(value: `653`): Self = StObject.set(x, "listWebhooks", value.asInstanceOf[js.Any])
+    
+    inline def setMerge(value: `654`): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
+    
+    inline def setMergeUpstream(value: `655`): Self = StObject.set(x, "mergeUpstream", value.asInstanceOf[js.Any])
+    
+    inline def setPingWebhook(value: `656`): Self = StObject.set(x, "pingWebhook", value.asInstanceOf[js.Any])
+    
+    inline def setRedeliverWebhookDelivery(value: `657`): Self = StObject.set(x, "redeliverWebhookDelivery", value.asInstanceOf[js.Any])
+    
+    inline def setRemoveAppAccessRestrictions(value: `658`): Self = StObject.set(x, "removeAppAccessRestrictions", value.asInstanceOf[js.Any])
+    
+    inline def setRemoveCollaborator(value: `659`): Self = StObject.set(x, "removeCollaborator", value.asInstanceOf[js.Any])
+    
+    inline def setRemoveStatusCheckContexts(value: `660`): Self = StObject.set(x, "removeStatusCheckContexts", value.asInstanceOf[js.Any])
+    
+    inline def setRemoveStatusCheckProtection(value: `661`): Self = StObject.set(x, "removeStatusCheckProtection", value.asInstanceOf[js.Any])
+    
+    inline def setRemoveTeamAccessRestrictions(value: `662`): Self = StObject.set(x, "removeTeamAccessRestrictions", value.asInstanceOf[js.Any])
+    
+    inline def setRemoveUserAccessRestrictions(value: `663`): Self = StObject.set(x, "removeUserAccessRestrictions", value.asInstanceOf[js.Any])
+    
+    inline def setRenameBranch(value: `664`): Self = StObject.set(x, "renameBranch", value.asInstanceOf[js.Any])
+    
+    inline def setReplaceAllTopics(value: `665`): Self = StObject.set(x, "replaceAllTopics", value.asInstanceOf[js.Any])
+    
+    inline def setRequestPagesBuild(value: `666`): Self = StObject.set(x, "requestPagesBuild", value.asInstanceOf[js.Any])
+    
+    inline def setSetAdminBranchProtection(value: `667`): Self = StObject.set(x, "setAdminBranchProtection", value.asInstanceOf[js.Any])
+    
+    inline def setSetAppAccessRestrictions(value: `668`): Self = StObject.set(x, "setAppAccessRestrictions", value.asInstanceOf[js.Any])
+    
+    inline def setSetStatusCheckContexts(value: `669`): Self = StObject.set(x, "setStatusCheckContexts", value.asInstanceOf[js.Any])
+    
+    inline def setSetTeamAccessRestrictions(value: `670`): Self = StObject.set(x, "setTeamAccessRestrictions", value.asInstanceOf[js.Any])
+    
+    inline def setSetUserAccessRestrictions(value: `671`): Self = StObject.set(x, "setUserAccessRestrictions", value.asInstanceOf[js.Any])
+    
+    inline def setTestPushWebhook(value: `672`): Self = StObject.set(x, "testPushWebhook", value.asInstanceOf[js.Any])
+    
+    inline def setTransfer(value: `673`): Self = StObject.set(x, "transfer", value.asInstanceOf[js.Any])
+    
+    inline def setUpdate(value: `674`): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateBranchProtection(value: `675`): Self = StObject.set(x, "updateBranchProtection", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateCommitComment(value: `676`): Self = StObject.set(x, "updateCommitComment", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateDeploymentBranchPolicy(value: `677`): Self = StObject.set(x, "updateDeploymentBranchPolicy", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateInformationAboutPagesSite(value: `678`): Self = StObject.set(x, "updateInformationAboutPagesSite", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateInvitation(value: `679`): Self = StObject.set(x, "updateInvitation", value.asInstanceOf[js.Any])
+    
+    inline def setUpdatePullRequestReviewProtection(value: `680`): Self = StObject.set(x, "updatePullRequestReviewProtection", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateRelease(value: `681`): Self = StObject.set(x, "updateRelease", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateReleaseAsset(value: `682`): Self = StObject.set(x, "updateReleaseAsset", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateStatusCheckPotection(value: `683`): Self = StObject.set(x, "updateStatusCheckPotection", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateStatusCheckProtection(value: `683`): Self = StObject.set(x, "updateStatusCheckProtection", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateWebhook(value: `684`): Self = StObject.set(x, "updateWebhook", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateWebhookConfigForRepo(value: `685`): Self = StObject.set(x, "updateWebhookConfigForRepo", value.asInstanceOf[js.Any])
+    
+    inline def setUploadReleaseAsset(value: `686`): Self = StObject.set(x, "uploadReleaseAsset", value.asInstanceOf[js.Any])
   }
 }

@@ -10,13 +10,13 @@ object mod {
   
   @JSImport("jsoneditor-for-react", JSImport.Default)
   @js.native
-  class default () extends ReactJsoneditor
+  open class default () extends ReactJsoneditor
   
   trait ReactJsonEditorProps extends StObject
   
   @js.native
   trait ReactJsoneditor
-    extends Component[ReactJsonEditorProps, js.Object, js.Any] {
+    extends Component[ReactJsonEditorProps, js.Object, Any] {
     
     /* private */ var editor: js.UndefOr[typings.jsoneditor.mod.default] = js.native
     

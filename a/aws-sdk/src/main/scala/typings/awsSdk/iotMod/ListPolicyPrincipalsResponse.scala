@@ -33,6 +33,6 @@ object ListPolicyPrincipalsResponse {
     
     inline def setPrincipalsUndefined: Self = StObject.set(x, "principals", js.undefined)
     
-    inline def setPrincipalsVarargs(value: PrincipalArn*): Self = StObject.set(x, "principals", js.Array(value :_*))
+    inline def setPrincipalsVarargs(value: PrincipalArn*): Self = StObject.set(x, "principals", js.Array(value*))
   }
 }

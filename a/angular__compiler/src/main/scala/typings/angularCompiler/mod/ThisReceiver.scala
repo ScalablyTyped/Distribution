@@ -6,13 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "ThisReceiver")
 @js.native
-class ThisReceiver protected ()
-  extends typings.angularCompiler.compilerMod.ThisReceiver {
+open class ThisReceiver protected () extends ImplicitReceiver {
   def this(
-    span: typings.angularCompiler.astMod.ParseSpan,
+    span: ParseSpan,
     /**
     * Absolute location of the expression AST in a source code file.
     */
-  sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan
+  sourceSpan: AbsoluteSourceSpan
   ) = this()
 }

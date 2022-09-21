@@ -55,7 +55,7 @@ object GraphicsStats {
     
     inline def setBucketsUndefined: Self = StObject.set(x, "buckets", js.undefined)
     
-    inline def setBucketsVarargs(value: GraphicsStatsBucket*): Self = StObject.set(x, "buckets", js.Array(value :_*))
+    inline def setBucketsVarargs(value: GraphicsStatsBucket*): Self = StObject.set(x, "buckets", js.Array(value*))
     
     inline def setHighInputLatencyCount(value: String): Self = StObject.set(x, "highInputLatencyCount", value.asInstanceOf[js.Any])
     

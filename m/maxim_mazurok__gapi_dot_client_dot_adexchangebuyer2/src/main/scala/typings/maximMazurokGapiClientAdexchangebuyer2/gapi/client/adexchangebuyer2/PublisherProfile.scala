@@ -93,7 +93,7 @@ object PublisherProfile {
     
     inline def setDomainsUndefined: Self = StObject.set(x, "domains", js.undefined)
     
-    inline def setDomainsVarargs(value: String*): Self = StObject.set(x, "domains", js.Array(value :_*))
+    inline def setDomainsVarargs(value: String*): Self = StObject.set(x, "domains", js.Array(value*))
     
     inline def setGooglePlusUrl(value: String): Self = StObject.set(x, "googlePlusUrl", value.asInstanceOf[js.Any])
     
@@ -115,7 +115,7 @@ object PublisherProfile {
     
     inline def setMobileAppsUndefined: Self = StObject.set(x, "mobileApps", js.undefined)
     
-    inline def setMobileAppsVarargs(value: PublisherProfileMobileApplication*): Self = StObject.set(x, "mobileApps", js.Array(value :_*))
+    inline def setMobileAppsVarargs(value: PublisherProfileMobileApplication*): Self = StObject.set(x, "mobileApps", js.Array(value*))
     
     inline def setOverview(value: String): Self = StObject.set(x, "overview", value.asInstanceOf[js.Any])
     
@@ -145,6 +145,6 @@ object PublisherProfile {
     
     inline def setTopHeadlinesUndefined: Self = StObject.set(x, "topHeadlines", js.undefined)
     
-    inline def setTopHeadlinesVarargs(value: String*): Self = StObject.set(x, "topHeadlines", js.Array(value :_*))
+    inline def setTopHeadlinesVarargs(value: String*): Self = StObject.set(x, "topHeadlines", js.Array(value*))
   }
 }

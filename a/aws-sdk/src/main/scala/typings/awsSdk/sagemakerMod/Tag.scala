@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Tag extends StObject {
   
   /**
-    * The tag key.
+    * The tag key. Tag keys must be unique per resource.
     */
   var Key: TagKey
   

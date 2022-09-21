@@ -1,7 +1,7 @@
 package typings.iobroker.anon
 
 import typings.iobroker.mod.global.ioBroker.StateQuality
-import typings.std.Record
+import typings.iobroker.mod.global.ioBroker.StateValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,7 +36,7 @@ trait Stateidstringundefined extends StObject {
   var user: js.UndefOr[String] = js.undefined
   
   /** The value of the state. */
-  var `val`: String | Double | Boolean | js.Array[js.Any] | (Record[String, js.Any]) | Null
+  var `val`: StateValue
 }
 object Stateidstringundefined {
   
@@ -76,10 +76,8 @@ object Stateidstringundefined {
     
     inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     
-    inline def setVal(value: String | Double | Boolean | js.Array[js.Any] | (Record[String, js.Any])): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
+    inline def setVal(value: StateValue): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
     
     inline def setValNull: Self = StObject.set(x, "val", null)
-    
-    inline def setValVarargs(value: js.Any*): Self = StObject.set(x, "val", js.Array(value :_*))
   }
 }

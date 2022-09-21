@@ -2,16 +2,16 @@ package typings.grommet
 
 import typings.grommet.anon.Errors
 import typings.grommet.anon.Invalid
+import typings.grommet.anon.Touched
 import typings.grommet.grommetStrings.blur
+import typings.grommet.grommetStrings.change
 import typings.grommet.grommetStrings.onChange
 import typings.grommet.grommetStrings.onSubmit
 import typings.grommet.grommetStrings.submit
 import typings.react.mod.BaseSyntheticEvent
-import typings.react.mod.Component
-import typings.react.mod.ComponentClass
-import typings.react.mod.ComponentState
 import typings.react.mod.DetailedHTMLProps
 import typings.react.mod.FormHTMLAttributes
+import typings.react.mod.ReactElement
 import typings.react.mod.SyntheticEvent
 import typings.std.Element
 import typings.std.Event
@@ -25,33 +25,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object formMod {
   
-  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-  @JSImport("grommet/components/Form", "Form")
+  @JSImport("grommet/components/Form", JSImport.Namespace)
   @js.native
-  class Form protected ()
-    extends Component[
-          FormProps[js.Any] & (Omit[
-            DetailedHTMLProps[FormHTMLAttributes[HTMLFormElement], HTMLFormElement], 
-            onChange | onSubmit
-          ]), 
-          ComponentState, 
-          js.Any
-        ] {
-    def this(props: FormProps[js.Any] & (Omit[
-            DetailedHTMLProps[FormHTMLAttributes[HTMLFormElement], HTMLFormElement], 
-            onChange | onSubmit
-          ])) = this()
-    def this(
-      props: FormProps[js.Any] & (Omit[
-            DetailedHTMLProps[FormHTMLAttributes[HTMLFormElement], HTMLFormElement], 
-            onChange | onSubmit
-          ]),
-      context: js.Any
-    ) = this()
-  }
-  @JSImport("grommet/components/Form", "Form")
-  @js.native
-  val Form: TypedForm[js.Any] = js.native
+  val ^ : js.Any = js.native
+  
+  inline def Form[T](p: TypedFormProps[T]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Form")(p.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   trait FormExtendedEvent[R, T]
     extends StObject
@@ -103,17 +81,17 @@ object formMod {
     
     var messages: js.UndefOr[Invalid] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* value */ T, Unit]] = js.undefined
+    var onChange: js.UndefOr[js.Function2[/* value */ T, /* options */ Touched, Unit]] = js.undefined
     
-    var onReset: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event], js.Any]] = js.undefined
+    var onReset: js.UndefOr[js.Function1[/* event */ SyntheticEvent[Element, Event], Any]] = js.undefined
     
     var onSubmit: js.UndefOr[js.Function1[/* event */ FormExtendedEvent[T, Element], Unit]] = js.undefined
     
     var onValidate: js.UndefOr[js.Function1[/* validationResults */ Errors, Unit]] = js.undefined
     
-    var validate: js.UndefOr[blur | submit] = js.undefined
+    var validate: js.UndefOr[blur | submit | change] = js.undefined
     
-    var value: js.UndefOr[js.Object] = js.undefined
+    var value: js.UndefOr[T] = js.undefined
   }
   object FormProps {
     
@@ -136,11 +114,11 @@ object formMod {
       
       inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
       
-      inline def setOnChange(value: /* value */ T => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: (/* value */ T, /* options */ Touched) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      inline def setOnReset(value: /* event */ SyntheticEvent[Element, Event] => js.Any): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
+      inline def setOnReset(value: /* event */ SyntheticEvent[Element, Event] => Any): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
@@ -152,21 +130,18 @@ object formMod {
       
       inline def setOnValidateUndefined: Self = StObject.set(x, "onValidate", js.undefined)
       
-      inline def setValidate(value: blur | submit): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+      inline def setValidate(value: blur | submit | change): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
       
       inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
       
-      inline def setValue(value: js.Object): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
-  type TypedForm[T] = ComponentClass[
-    FormProps[T] & (Omit[
-      DetailedHTMLProps[FormHTMLAttributes[HTMLFormElement], HTMLFormElement], 
-      onChange | onSubmit
-    ]), 
-    ComponentState
-  ]
+  type TypedFormProps[T] = FormProps[T] & (Omit[
+    DetailedHTMLProps[FormHTMLAttributes[HTMLFormElement], HTMLFormElement], 
+    onChange | onSubmit
+  ])
 }

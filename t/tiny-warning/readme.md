@@ -10,10 +10,10 @@ A tiny warning function
 | ------------------ | :-------------: |
 | Full name          | tiny-warning |
 | Keywords           | warning, warn |
-| # releases         | 2 |
-| # dependents       | 401 |
-| # downloads        | 194043320 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2.8173093E7 |
+| # stars            | 159.0 |
 
 ## Links
 - [Homepage](https://github.com/alexreardon/tiny-warning#readme)

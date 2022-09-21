@@ -29,12 +29,12 @@ object NetworkPathComponentDetails {
     
     inline def setAddressUndefined: Self = StObject.set(x, "Address", js.undefined)
     
-    inline def setAddressVarargs(value: NonEmptyString*): Self = StObject.set(x, "Address", js.Array(value :_*))
+    inline def setAddressVarargs(value: NonEmptyString*): Self = StObject.set(x, "Address", js.Array(value*))
     
     inline def setPortRanges(value: PortRangeList): Self = StObject.set(x, "PortRanges", value.asInstanceOf[js.Any])
     
     inline def setPortRangesUndefined: Self = StObject.set(x, "PortRanges", js.undefined)
     
-    inline def setPortRangesVarargs(value: PortRange*): Self = StObject.set(x, "PortRanges", js.Array(value :_*))
+    inline def setPortRangesVarargs(value: PortRange*): Self = StObject.set(x, "PortRanges", js.Array(value*))
   }
 }

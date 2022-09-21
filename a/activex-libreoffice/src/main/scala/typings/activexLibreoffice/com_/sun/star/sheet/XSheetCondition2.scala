@@ -39,7 +39,7 @@ object XSheetCondition2 {
     getFormula2: () => String,
     getOperator: () => ConditionOperator,
     getSourcePosition: () => CellAddress,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setConditionOperator: Double => Unit,
     setFormula1: String => Unit,

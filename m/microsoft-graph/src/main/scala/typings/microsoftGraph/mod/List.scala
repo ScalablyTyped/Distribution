@@ -26,6 +26,9 @@ trait List
   // Provides additional details about the list.
   var list: js.UndefOr[NullableOption[ListInfo]] = js.undefined
   
+  // The collection of long-running operations on the list.
+  var operations: js.UndefOr[NullableOption[js.Array[RichLongRunningOperation]]] = js.undefined
+  
   // Returns identifiers useful for SharePoint REST compatibility. Read-only.
   var sharepointIds: js.UndefOr[NullableOption[SharepointIds]] = js.undefined
   
@@ -50,7 +53,7 @@ object List {
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    inline def setColumnsVarargs(value: ColumnDefinition*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: ColumnDefinition*): Self = StObject.set(x, "columns", js.Array(value*))
     
     inline def setContentTypes(value: NullableOption[js.Array[ContentType]]): Self = StObject.set(x, "contentTypes", value.asInstanceOf[js.Any])
     
@@ -58,7 +61,7 @@ object List {
     
     inline def setContentTypesUndefined: Self = StObject.set(x, "contentTypes", js.undefined)
     
-    inline def setContentTypesVarargs(value: ContentType*): Self = StObject.set(x, "contentTypes", js.Array(value :_*))
+    inline def setContentTypesVarargs(value: ContentType*): Self = StObject.set(x, "contentTypes", js.Array(value*))
     
     inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
@@ -78,13 +81,21 @@ object List {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: ListItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ListItem*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setList(value: NullableOption[ListInfo]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
     inline def setListNull: Self = StObject.set(x, "list", null)
     
     inline def setListUndefined: Self = StObject.set(x, "list", js.undefined)
+    
+    inline def setOperations(value: NullableOption[js.Array[RichLongRunningOperation]]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+    
+    inline def setOperationsNull: Self = StObject.set(x, "operations", null)
+    
+    inline def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
+    
+    inline def setOperationsVarargs(value: RichLongRunningOperation*): Self = StObject.set(x, "operations", js.Array(value*))
     
     inline def setSharepointIds(value: NullableOption[SharepointIds]): Self = StObject.set(x, "sharepointIds", value.asInstanceOf[js.Any])
     
@@ -98,7 +109,7 @@ object List {
     
     inline def setSubscriptionsUndefined: Self = StObject.set(x, "subscriptions", js.undefined)
     
-    inline def setSubscriptionsVarargs(value: Subscription*): Self = StObject.set(x, "subscriptions", js.Array(value :_*))
+    inline def setSubscriptionsVarargs(value: Subscription*): Self = StObject.set(x, "subscriptions", js.Array(value*))
     
     inline def setSystem(value: NullableOption[SystemFacet]): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
     

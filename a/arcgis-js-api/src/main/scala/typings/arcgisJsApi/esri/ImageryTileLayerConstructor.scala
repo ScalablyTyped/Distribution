@@ -17,5 +17,5 @@ trait ImageryTileLayerConstructor
 Instantiable0[ImageryTileLayer]
      with Instantiable1[/* properties */ ImageryTileLayerProperties, ImageryTileLayer] {
   
-  def fromJSON(json: js.Any): ImageryTileLayer = js.native
+  def fromJSON(json: Any): ImageryTileLayer = js.native
 }

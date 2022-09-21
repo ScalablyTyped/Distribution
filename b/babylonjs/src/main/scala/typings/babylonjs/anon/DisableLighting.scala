@@ -1,6 +1,5 @@
 package typings.babylonjs.anon
 
-import typings.babylonjs.BABYLON.Material
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,6 +22,11 @@ trait DisableLighting extends StObject {
   var teleportationBorderColor: js.UndefOr[String] = js.undefined
   
   /**
+    * Override the default material of the Landing Zone
+    */
+  var teleportationCircleMaterial: js.UndefOr[typings.babylonjs.BABYLON.Material] = js.undefined
+  
+  /**
     * Fill color of the teleportation area
     */
   var teleportationFillColor: js.UndefOr[String] = js.undefined
@@ -30,7 +34,7 @@ trait DisableLighting extends StObject {
   /**
     * Override the default material of the torus and arrow
     */
-  var torusArrowMaterial: js.UndefOr[Material] = js.undefined
+  var torusArrowMaterial: js.UndefOr[typings.babylonjs.BABYLON.Material] = js.undefined
 }
 object DisableLighting {
   
@@ -53,11 +57,15 @@ object DisableLighting {
     
     inline def setTeleportationBorderColorUndefined: Self = StObject.set(x, "teleportationBorderColor", js.undefined)
     
+    inline def setTeleportationCircleMaterial(value: typings.babylonjs.BABYLON.Material): Self = StObject.set(x, "teleportationCircleMaterial", value.asInstanceOf[js.Any])
+    
+    inline def setTeleportationCircleMaterialUndefined: Self = StObject.set(x, "teleportationCircleMaterial", js.undefined)
+    
     inline def setTeleportationFillColor(value: String): Self = StObject.set(x, "teleportationFillColor", value.asInstanceOf[js.Any])
     
     inline def setTeleportationFillColorUndefined: Self = StObject.set(x, "teleportationFillColor", js.undefined)
     
-    inline def setTorusArrowMaterial(value: Material): Self = StObject.set(x, "torusArrowMaterial", value.asInstanceOf[js.Any])
+    inline def setTorusArrowMaterial(value: typings.babylonjs.BABYLON.Material): Self = StObject.set(x, "torusArrowMaterial", value.asInstanceOf[js.Any])
     
     inline def setTorusArrowMaterialUndefined: Self = StObject.set(x, "torusArrowMaterial", js.undefined)
   }

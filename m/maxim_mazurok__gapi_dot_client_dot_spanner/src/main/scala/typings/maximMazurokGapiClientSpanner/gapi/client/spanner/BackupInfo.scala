@@ -9,11 +9,17 @@ trait BackupInfo extends StObject {
   /** Name of the backup. */
   var backup: js.UndefOr[String] = js.undefined
   
-  /** The backup contains an externally consistent copy of `source_database` at the timestamp specified by `create_time`. */
+  /** The time the CreateBackup request was received. */
   var createTime: js.UndefOr[String] = js.undefined
   
   /** Name of the database the backup was created from. */
   var sourceDatabase: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The backup contains an externally consistent copy of `source_database` at the timestamp specified by `version_time`. If the CreateBackup request did not specify `version_time`, the
+    * `version_time` of the backup is equivalent to the `create_time`.
+    */
+  var versionTime: js.UndefOr[String] = js.undefined
 }
 object BackupInfo {
   
@@ -35,5 +41,9 @@ object BackupInfo {
     inline def setSourceDatabase(value: String): Self = StObject.set(x, "sourceDatabase", value.asInstanceOf[js.Any])
     
     inline def setSourceDatabaseUndefined: Self = StObject.set(x, "sourceDatabase", js.undefined)
+    
+    inline def setVersionTime(value: String): Self = StObject.set(x, "versionTime", value.asInstanceOf[js.Any])
+    
+    inline def setVersionTimeUndefined: Self = StObject.set(x, "versionTime", js.undefined)
   }
 }

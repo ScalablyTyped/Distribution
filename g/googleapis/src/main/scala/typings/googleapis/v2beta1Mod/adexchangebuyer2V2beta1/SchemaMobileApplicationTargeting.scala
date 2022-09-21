@@ -4,14 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Mobile application targeting settings.
-  */
 trait SchemaMobileApplicationTargeting extends StObject {
   
   /**
-    * Publisher owned apps to be targeted or excluded by the publisher to
-    * display the ads in.
+    * Publisher owned apps to be targeted or excluded by the publisher to display the ads in.
     */
   var firstPartyTargeting: js.UndefOr[SchemaFirstPartyMobileApplicationTargeting] = js.undefined
 }

@@ -11,9 +11,9 @@ Simple implementation of ZarinPal nodejs api so you can quickly start using API.
 | Full name          | zarinpal-checkout |
 | Keywords           | zarinpal, nodejs, checkout |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 9868 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 980.6666666666666 |
+| # stars            | 69.0 |
 
 ## Links
 - [Homepage](https://github.com/siamakmokhtari/zarinpal-checkout)

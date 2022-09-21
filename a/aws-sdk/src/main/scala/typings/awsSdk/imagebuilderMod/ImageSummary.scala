@@ -12,6 +12,11 @@ trait ImageSummary extends StObject {
   var arn: js.UndefOr[ImageBuilderArn] = js.undefined
   
   /**
+    * Indicates the type of build that created this image. The build can be initiated in the following ways:    USER_INITIATED – A manual pipeline build request.    SCHEDULED – A pipeline build initiated by a cron expression in the Image Builder pipeline, or from EventBridge.    IMPORT – A VM import created the image to use as the base image for the recipe.  
+    */
+  var buildType: js.UndefOr[BuildType] = js.undefined
+  
+  /**
     * The date on which this image was created.
     */
   var dateCreated: js.UndefOr[DateTime] = js.undefined
@@ -22,7 +27,7 @@ trait ImageSummary extends StObject {
   var name: js.UndefOr[ResourceName] = js.undefined
   
   /**
-    * The operating system version of the instance. For example, Amazon Linux 2, Ubuntu 18, or Microsoft Windows Server 2019. 
+    * The operating system version of the instance. For example, Amazon Linux 2, Ubuntu 18, or Microsoft Windows Server 2019.
     */
   var osVersion: js.UndefOr[OsVersion] = js.undefined
   
@@ -52,6 +57,11 @@ trait ImageSummary extends StObject {
   var tags: js.UndefOr[TagMap] = js.undefined
   
   /**
+    * Specifies whether this is an AMI or container image.
+    */
+  var `type`: js.UndefOr[ImageType] = js.undefined
+  
+  /**
     * The version of the image.
     */
   var version: js.UndefOr[VersionNumber] = js.undefined
@@ -68,6 +78,10 @@ object ImageSummary {
     inline def setArn(value: ImageBuilderArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    
+    inline def setBuildType(value: BuildType): Self = StObject.set(x, "buildType", value.asInstanceOf[js.Any])
+    
+    inline def setBuildTypeUndefined: Self = StObject.set(x, "buildType", js.undefined)
     
     inline def setDateCreated(value: DateTime): Self = StObject.set(x, "dateCreated", value.asInstanceOf[js.Any])
     
@@ -100,6 +114,10 @@ object ImageSummary {
     inline def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    
+    inline def setType(value: ImageType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     inline def setVersion(value: VersionNumber): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "loglevelnext" : "5.0.6"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "loglevelnext" : "5.0.6"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

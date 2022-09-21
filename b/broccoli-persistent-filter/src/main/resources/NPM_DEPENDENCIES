@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "broccoli-persistent-filter" : "3.1.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "broccoli-persistent-filter" : "3.1.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

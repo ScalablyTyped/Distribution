@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("matter", "Query")
 @js.native
-class Query ()
+open class Query ()
   extends StObject
      with typings.phaser.MatterJS.Query
 object Query {

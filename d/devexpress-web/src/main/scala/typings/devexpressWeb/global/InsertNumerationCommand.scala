@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("InsertNumerationCommand")
 @js.native
-class InsertNumerationCommand ()
+open class InsertNumerationCommand ()
   extends StObject
      with typings.devexpressWeb.InsertNumerationCommand {
   

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react", "ExpandingCardBase")
 @js.native
-class ExpandingCardBase protected ()
+open class ExpandingCardBase protected ()
   extends typings.officeUiFabricReact.libHoverCardMod.ExpandingCardBase {
   def this(props: IExpandingCardProps) = this()
 }

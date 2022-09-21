@@ -23,6 +23,6 @@ object Revision {
     
     inline def setTable(value: js.Array[Flags]): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
-    inline def setTableVarargs(value: Flags*): Self = StObject.set(x, "table", js.Array(value :_*))
+    inline def setTableVarargs(value: Flags*): Self = StObject.set(x, "table", js.Array(value*))
   }
 }

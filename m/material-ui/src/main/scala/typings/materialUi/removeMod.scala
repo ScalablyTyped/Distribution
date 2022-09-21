@@ -10,10 +10,10 @@ object removeMod {
   
   @JSImport("material-ui/svg-icons/content/remove", JSImport.Default)
   @js.native
-  class default () extends ContentRemove
+  open class default () extends ContentRemove
   
   @JSImport("material-ui/svg-icons/content/remove", "ContentRemove")
   @js.native
-  class ContentRemove ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ContentRemove ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -7,21 +7,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait WrapperSettings extends StObject {
   
-  var options: OptionsParameter
+  var options: js.Object
   
-  var parameters: StringDictionary[js.Any]
+  var parameters: StringDictionary[Any]
 }
 object WrapperSettings {
   
-  inline def apply(options: OptionsParameter, parameters: StringDictionary[js.Any]): WrapperSettings = {
+  inline def apply(options: js.Object, parameters: StringDictionary[Any]): WrapperSettings = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[WrapperSettings]
   }
   
   extension [Self <: WrapperSettings](x: Self) {
     
-    inline def setOptions(value: OptionsParameter): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    inline def setParameters(value: StringDictionary[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: StringDictionary[Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
   }
 }

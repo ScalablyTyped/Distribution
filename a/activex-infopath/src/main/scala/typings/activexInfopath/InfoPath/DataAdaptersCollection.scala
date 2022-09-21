@@ -11,15 +11,11 @@ trait DataAdaptersCollection extends StObject {
   /* private */ @JSName("InfoPath.DataAdaptersCollection_typekey")
   var InfoPathDotDataAdaptersCollection_typekey: DataAdaptersCollection
   
-  def Item(varIndex: js.Any): js.Any
+  def Item(varIndex: Any): Any
 }
 object DataAdaptersCollection {
   
-  inline def apply(
-    Count: Double,
-    InfoPathDotDataAdaptersCollection_typekey: DataAdaptersCollection,
-    Item: js.Any => js.Any
-  ): DataAdaptersCollection = {
+  inline def apply(Count: Double, InfoPathDotDataAdaptersCollection_typekey: DataAdaptersCollection, Item: Any => Any): DataAdaptersCollection = {
     val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item))
     __obj.updateDynamic("InfoPath.DataAdaptersCollection_typekey")(InfoPathDotDataAdaptersCollection_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataAdaptersCollection]
@@ -31,6 +27,6 @@ object DataAdaptersCollection {
     
     inline def setInfoPathDotDataAdaptersCollection_typekey(value: DataAdaptersCollection): Self = StObject.set(x, "InfoPath.DataAdaptersCollection_typekey", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => js.Any): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => Any): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
   }
 }

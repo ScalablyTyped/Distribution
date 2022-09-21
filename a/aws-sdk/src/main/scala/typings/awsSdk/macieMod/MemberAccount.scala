@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MemberAccount extends StObject {
   
   /**
-    * The AWS account ID of the Amazon Macie Classic member account.
+    * (Discontinued) The Amazon Web Services account ID of the Amazon Macie Classic member account.
     */
   var accountId: js.UndefOr[AWSAccountId] = js.undefined
 }

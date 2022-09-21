@@ -1,7 +1,7 @@
 
 # Scala.js typings for striptags
 
-Typings are for version 3.1.1
+Typings are for version 3.2.0
 
 ## Library description:
 PHP strip_tags in Node.js
@@ -11,9 +11,9 @@ PHP strip_tags in Node.js
 | Full name          | striptags |
 | Keywords           | striptags, strip_tags, html, strip, tags |
 | # releases         | 4 |
-| # dependents       | 445 |
-| # downloads        | 16164716 |
-| # stars            | 26 |
+| # dependents       | 0.0 |
+| # downloads        | 1877209.6666666667 |
+| # stars            | 466.0 |
 
 ## Links
 - [Homepage](https://github.com/ericnorris/striptags)

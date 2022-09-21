@@ -1,8 +1,8 @@
 package typings.materialLineRipple
 
+import typings.materialBase.Element
 import typings.materialBase.componentMod.MDCComponent
 import typings.materialLineRipple.foundationMod.MDCLineRippleFoundation
-import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,9 +11,9 @@ object componentMod {
   
   @JSImport("@material/line-ripple/component", "MDCLineRipple")
   @js.native
-  class MDCLineRipple protected () extends MDCComponent[MDCLineRippleFoundation] {
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
-    def this(root: Element, foundation: MDCLineRippleFoundation, args: js.Any*) = this()
+  open class MDCLineRipple protected () extends MDCComponent[MDCLineRippleFoundation] {
+    def this(root: Element, foundation: Unit, args: Any*) = this()
+    def this(root: Element, foundation: MDCLineRippleFoundation, args: Any*) = this()
     
     /**
       * Activates the line ripple
@@ -38,11 +38,11 @@ object componentMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: Element): MDCLineRipple = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCLineRipple]
+    inline def attachTo(root: typings.std.Element): MDCLineRipple = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCLineRipple]
   }
   
   type MDCLineRippleFactory = js.Function2[
-    /* el */ Element, 
+    /* el */ typings.std.Element, 
     /* foundation */ js.UndefOr[MDCLineRippleFoundation], 
     MDCLineRipple
   ]

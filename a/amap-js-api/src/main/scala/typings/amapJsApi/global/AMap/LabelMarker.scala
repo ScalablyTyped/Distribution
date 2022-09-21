@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("AMap.LabelMarker")
 @js.native
-class LabelMarker[ExtraData] ()
+open class LabelMarker[ExtraData] ()
   extends StObject
      with typings.amapJsApi.AMap.LabelMarker[ExtraData] {
-  def this(options: Options[js.Any]) = this()
+  def this(options: Options[Any]) = this()
 }

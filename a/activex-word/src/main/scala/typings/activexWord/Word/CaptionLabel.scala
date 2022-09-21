@@ -24,7 +24,7 @@ trait CaptionLabel extends StObject {
   
   var NumberStyle: WdCaptionNumberStyle
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Position: WdCaptionPosition
   
@@ -45,7 +45,7 @@ object CaptionLabel {
     IncludeChapterNumber: Boolean,
     Name: String,
     NumberStyle: WdCaptionNumberStyle,
-    Parent: js.Any,
+    Parent: Any,
     Position: WdCaptionPosition,
     Separator: WdSeparatorType,
     WordDotCaptionLabel_typekey: CaptionLabel
@@ -75,7 +75,7 @@ object CaptionLabel {
     
     inline def setNumberStyle(value: WdCaptionNumberStyle): Self = StObject.set(x, "NumberStyle", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPosition(value: WdCaptionPosition): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     

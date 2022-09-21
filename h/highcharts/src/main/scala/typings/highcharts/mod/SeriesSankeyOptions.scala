@@ -23,8 +23,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * few settings, see the complete options set below. If the total number of
     * data points exceeds the series' turboThreshold, this option is not
     * available. (see online documentation for example)
+    *
+    *  When you provide the data as tuples, the keys option has to be set as
+    * well. (see online documentation for example)
     */
-  var data: js.UndefOr[js.Array[SeriesSankeyPointOptionsObject]] = js.undefined
+  var data: js.UndefOr[js.Array[(js.Array[String | Double]) | SeriesSankeyPointOptionsObject]] = js.undefined
   
   /**
     * Not available
@@ -87,11 +90,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var legendIndex: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highmaps) A map data object containing a `path` definition and
-    * optionally additional properties to join in the data as per the `joinBy`
-    * option.
+    * (Highmaps) An array of objects containing a `geometry` or `path`
+    * definition and optionally additional properties to join in the `data` as
+    * per the `joinBy` option. GeoJSON and TopoJSON structures can also be
+    * passed directly into `mapData`.
     */
-  var mapData: js.UndefOr[js.Array[SeriesMapDataOptions] | js.Any] = js.undefined
+  var mapData: js.UndefOr[GeoJSON | TopoJSON | js.Array[SeriesMapDataOptions]] = js.undefined
   
   /**
     * Not available
@@ -178,7 +182,7 @@ object SeriesSankeyOptions {
     
     inline def setBorderRadius(value: Unit): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     
-    inline def setData(value: js.Array[SeriesSankeyPointOptionsObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[(js.Array[String | Double]) | SeriesSankeyPointOptionsObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataParser(value: Unit): Self = StObject.set(x, "dataParser", value.asInstanceOf[js.Any])
     
@@ -186,7 +190,7 @@ object SeriesSankeyOptions {
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: SeriesSankeyPointOptionsObject*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: ((js.Array[String | Double]) | SeriesSankeyPointOptionsObject)*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setDepth(value: Unit): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
@@ -212,11 +216,11 @@ object SeriesSankeyOptions {
     
     inline def setLegendIndexUndefined: Self = StObject.set(x, "legendIndex", js.undefined)
     
-    inline def setMapData(value: js.Array[SeriesMapDataOptions] | js.Any): Self = StObject.set(x, "mapData", value.asInstanceOf[js.Any])
+    inline def setMapData(value: GeoJSON | TopoJSON | js.Array[SeriesMapDataOptions]): Self = StObject.set(x, "mapData", value.asInstanceOf[js.Any])
     
     inline def setMapDataUndefined: Self = StObject.set(x, "mapData", js.undefined)
     
-    inline def setMapDataVarargs(value: SeriesMapDataOptions*): Self = StObject.set(x, "mapData", js.Array(value :_*))
+    inline def setMapDataVarargs(value: SeriesMapDataOptions*): Self = StObject.set(x, "mapData", js.Array(value*))
     
     inline def setMaxPointWidth(value: Unit): Self = StObject.set(x, "maxPointWidth", value.asInstanceOf[js.Any])
     
@@ -228,7 +232,7 @@ object SeriesSankeyOptions {
     
     inline def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
     
-    inline def setNodesVarargs(value: SeriesSankeyNodesOptionsObject*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: SeriesSankeyNodesOptionsObject*): Self = StObject.set(x, "nodes", js.Array(value*))
     
     inline def setPointPadding(value: Unit): Self = StObject.set(x, "pointPadding", value.asInstanceOf[js.Any])
     

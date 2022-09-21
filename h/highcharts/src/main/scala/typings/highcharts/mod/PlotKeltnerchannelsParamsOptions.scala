@@ -14,21 +14,11 @@ trait PlotKeltnerchannelsParamsOptions extends StObject {
   var index: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highstock) The ATR multiplier.
-    */
-  var multiplierATR: js.UndefOr[Double] = js.undefined
-  
-  /**
     * (Highstock) The base period for indicator calculations. This is the
     * number of data points which are taken into account for the indicator
     * calculations.
     */
   var period: js.UndefOr[Double] = js.undefined
-  
-  /**
-    * (Highstock) The ATR period.
-    */
-  var periodATR: js.UndefOr[Double] = js.undefined
 }
 object PlotKeltnerchannelsParamsOptions {
   
@@ -43,15 +33,7 @@ object PlotKeltnerchannelsParamsOptions {
     
     inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    inline def setMultiplierATR(value: Double): Self = StObject.set(x, "multiplierATR", value.asInstanceOf[js.Any])
-    
-    inline def setMultiplierATRUndefined: Self = StObject.set(x, "multiplierATR", js.undefined)
-    
     inline def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
-    
-    inline def setPeriodATR(value: Double): Self = StObject.set(x, "periodATR", value.asInstanceOf[js.Any])
-    
-    inline def setPeriodATRUndefined: Self = StObject.set(x, "periodATR", js.undefined)
     
     inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
   }

@@ -10,10 +10,10 @@ Karma reporter that save JSON messages from log to file
 | ------------------ | :-------------: |
 | Full name          | karma-json-to-file-reporter |
 | Keywords           | karma-plugin, karma-reporter, json, karma, file |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 234794 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 64895.0 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/HarryBurns/karma-json-to-file-reporter#readme)

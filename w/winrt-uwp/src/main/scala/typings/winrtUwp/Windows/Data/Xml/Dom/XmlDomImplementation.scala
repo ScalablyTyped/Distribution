@@ -13,17 +13,17 @@ trait XmlDomImplementation extends StObject {
     * @param version Specifies the version number to test. If NULL, tests for implementation of the feature in any version. In Level 1, "1.0" is the valid version value.
     * @return True if the specified feature is implemented; otherwise false.
     */
-  def hasFeature(feature: String, version: js.Any): Boolean
+  def hasFeature(feature: String, version: Any): Boolean
 }
 object XmlDomImplementation {
   
-  inline def apply(hasFeature: (String, js.Any) => Boolean): XmlDomImplementation = {
+  inline def apply(hasFeature: (String, Any) => Boolean): XmlDomImplementation = {
     val __obj = js.Dynamic.literal(hasFeature = js.Any.fromFunction2(hasFeature))
     __obj.asInstanceOf[XmlDomImplementation]
   }
   
   extension [Self <: XmlDomImplementation](x: Self) {
     
-    inline def setHasFeature(value: (String, js.Any) => Boolean): Self = StObject.set(x, "hasFeature", js.Any.fromFunction2(value))
+    inline def setHasFeature(value: (String, Any) => Boolean): Self = StObject.set(x, "hasFeature", js.Any.fromFunction2(value))
   }
 }

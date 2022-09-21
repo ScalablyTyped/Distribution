@@ -1,7 +1,8 @@
 package typings.reactList
 
 import typings.react.mod.Component
-import typings.react.mod.Props
+import typings.react.mod.LegacyRef
+import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import typings.reactList.reactListStrings.x
 import typings.reactList.reactListStrings.y
@@ -13,7 +14,7 @@ object mod {
   
   @JSImport("react-list", JSImport.Namespace)
   @js.native
-  class ^ () extends ReactList
+  open class ^ () extends ReactList
   
   type ItemRenderer = js.Function2[/* index */ Double, /* key */ Double | String, Element]
   
@@ -25,7 +26,7 @@ object mod {
   
   @js.native
   trait ReactList
-    extends Component[ReactListProps, js.Object, js.Any] {
+    extends Component[ReactListProps, js.Object, Any] {
     
     def getVisibleRange(): js.Array[Double] = js.native
     
@@ -34,11 +35,11 @@ object mod {
     def scrollTo(index: Double): Unit = js.native
   }
   
-  trait ReactListProps
-    extends StObject
-       with Props[ReactList] {
+  trait ReactListProps extends StObject {
     
     var axis: js.UndefOr[x | y] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var initialIndex: js.UndefOr[Double] = js.undefined
     
@@ -55,6 +56,8 @@ object mod {
     var minSize: js.UndefOr[Double] = js.undefined
     
     var pageSize: js.UndefOr[Double] = js.undefined
+    
+    var ref: js.UndefOr[LegacyRef[ReactList]] = js.undefined
     
     var scrollParentGetter: js.UndefOr[ScrollParentGetter] = js.undefined
     
@@ -78,6 +81,10 @@ object mod {
       inline def setAxis(value: typings.reactList.reactListStrings.x | y): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
       inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setInitialIndex(value: Double): Self = StObject.set(x, "initialIndex", value.asInstanceOf[js.Any])
       
@@ -110,6 +117,14 @@ object mod {
       inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
       
       inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+      
+      inline def setRef(value: LegacyRef[ReactList]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      
+      inline def setRefFunction1(value: /* instance */ ReactList | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       
       inline def setScrollParentGetter(value: () => Element): Self = StObject.set(x, "scrollParentGetter", js.Any.fromFunction0(value))
       

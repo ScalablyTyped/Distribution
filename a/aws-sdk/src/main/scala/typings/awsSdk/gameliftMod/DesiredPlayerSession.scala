@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DesiredPlayerSession extends StObject {
   
   /**
-    * Developer-defined information related to a player. Amazon GameLift does not use this data, so it can be formatted as needed for use in the game.
+    * Developer-defined information related to a player. GameLift does not use this data, so it can be formatted as needed for use in the game.
     */
   var PlayerData: js.UndefOr[typings.awsSdk.gameliftMod.PlayerData] = js.undefined
   

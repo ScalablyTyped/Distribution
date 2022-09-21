@@ -14,17 +14,22 @@ trait JobExecutionSummary extends StObject {
   /**
     * The time, in seconds since the epoch, when the job execution was last updated.
     */
-  var lastUpdatedAt: js.UndefOr[DateType] = js.undefined
+  var lastUpdatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The time, in seconds since the epoch, when the job execution was queued.
     */
-  var queuedAt: js.UndefOr[DateType] = js.undefined
+  var queuedAt: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * The number that indicates how many retry attempts have been completed for this job on this device.
+    */
+  var retryAttempt: js.UndefOr[RetryAttempt] = js.undefined
   
   /**
     * The time, in seconds since the epoch, when the job execution started.
     */
-  var startedAt: js.UndefOr[DateType] = js.undefined
+  var startedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The status of the job execution.
@@ -44,15 +49,19 @@ object JobExecutionSummary {
     
     inline def setExecutionNumberUndefined: Self = StObject.set(x, "executionNumber", js.undefined)
     
-    inline def setLastUpdatedAt(value: DateType): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedAt(value: js.Date): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedAtUndefined: Self = StObject.set(x, "lastUpdatedAt", js.undefined)
     
-    inline def setQueuedAt(value: DateType): Self = StObject.set(x, "queuedAt", value.asInstanceOf[js.Any])
+    inline def setQueuedAt(value: js.Date): Self = StObject.set(x, "queuedAt", value.asInstanceOf[js.Any])
     
     inline def setQueuedAtUndefined: Self = StObject.set(x, "queuedAt", js.undefined)
     
-    inline def setStartedAt(value: DateType): Self = StObject.set(x, "startedAt", value.asInstanceOf[js.Any])
+    inline def setRetryAttempt(value: RetryAttempt): Self = StObject.set(x, "retryAttempt", value.asInstanceOf[js.Any])
+    
+    inline def setRetryAttemptUndefined: Self = StObject.set(x, "retryAttempt", js.undefined)
+    
+    inline def setStartedAt(value: js.Date): Self = StObject.set(x, "startedAt", value.asInstanceOf[js.Any])
     
     inline def setStartedAtUndefined: Self = StObject.set(x, "startedAt", js.undefined)
     

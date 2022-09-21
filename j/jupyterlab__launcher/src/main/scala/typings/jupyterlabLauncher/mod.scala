@@ -5,6 +5,7 @@ import typings.jupyterlabApputils.mod.VDomModel
 import typings.jupyterlabApputils.mod.VDomRenderer
 import typings.jupyterlabLauncher.mod.ILauncher.IItemOptions
 import typings.jupyterlabLauncher.mod.ILauncher.IOptions
+import typings.jupyterlabTranslation.tokensMod.ITranslator
 import typings.luminoAlgorithm.iterMod.IIterator
 import typings.luminoCommands.mod.CommandRegistry
 import typings.luminoCoreutils.jsonMod.ReadonlyJSONObject
@@ -62,7 +63,7 @@ object mod {
       /**
         * The category for the launcher item.
         *
-        * The default value is the an empty string.
+        * The default value is an empty string.
         */
       var category: js.UndefOr[String] = js.undefined
       
@@ -168,6 +169,11 @@ object mod {
         * The model of the launcher.
         */
       var model: LauncherModel
+      
+      /**
+        * The application language translation.
+        */
+      var translator: js.UndefOr[ITranslator] = js.undefined
     }
     object IOptions {
       
@@ -185,6 +191,10 @@ object mod {
         inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
         
         inline def setModel(value: LauncherModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+        
+        inline def setTranslator(value: ITranslator): Self = StObject.set(x, "translator", value.asInstanceOf[js.Any])
+        
+        inline def setTranslatorUndefined: Self = StObject.set(x, "translator", js.undefined)
       }
     }
     
@@ -196,19 +206,21 @@ object mod {
   
   @JSImport("@jupyterlab/launcher", "Launcher")
   @js.native
-  class Launcher protected () extends VDomRenderer[LauncherModel] {
+  open class Launcher protected () extends VDomRenderer[LauncherModel] {
     /**
       * Construct a new launcher widget.
       */
     def this(options: IOptions) = this()
     
-    /* private */ var _callback: js.Any = js.native
+    /* private */ var _callback: Any = js.native
     
-    /* private */ var _commands: js.Any = js.native
+    /* private */ var _commands: Any = js.native
     
-    /* private */ var _cwd: js.Any = js.native
+    /* private */ var _cwd: Any = js.native
     
-    /* private */ var _pending: js.Any = js.native
+    /* private */ var _pending: Any = js.native
+    
+    /* private */ var _trans: Any = js.native
     
     /**
       * The cwd of the launcher.
@@ -221,15 +233,15 @@ object mod {
       */
     def pending: Boolean = js.native
     def pending_=(value: Boolean): Unit = js.native
+    
+    /* protected */ var translator: ITranslator = js.native
   }
   
   @JSImport("@jupyterlab/launcher", "LauncherModel")
   @js.native
-  class LauncherModel ()
+  open class LauncherModel ()
     extends VDomModel
        with ILauncher {
-    
-    /* private */ var _items: js.Any = js.native
     
     /**
       * Add a command item to the launcher, and trigger re-render event for parent
@@ -263,5 +275,7 @@ object mod {
       * Return an iterator of launcher items.
       */
     def items(): IIterator[IItemOptions] = js.native
+    
+    /* protected */ var itemsList: js.Array[IItemOptions] = js.native
   }
 }

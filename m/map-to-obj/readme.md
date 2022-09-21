@@ -10,10 +10,10 @@ ES2015 Map to plain object.
 | ------------------ | :-------------: |
 | Full name          | map-to-obj |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 476 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 26.333333333333332 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/egoist/map-to-obj#readme)

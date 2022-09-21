@@ -2,8 +2,7 @@ package typings.mapboxSpritezero
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.mapboxSpritezero.anon.Id
-import typings.node.Buffer
-import typings.std.Error
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,15 +22,15 @@ object mod {
   inline def strongRound(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("strongRound")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   inline def strongRound(value: Double, precision: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("strongRound")(value.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def validateMetadata(img: ImageSize, metadata: Metadata): Null | Error = (^.asInstanceOf[js.Dynamic].applyDynamic("validateMetadata")(img.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[Null | Error]
+  inline def validateMetadata(img: ImageSize, metadata: Metadata): Null | js.Error = (^.asInstanceOf[js.Dynamic].applyDynamic("validateMetadata")(img.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[Null | js.Error]
   
   type DataLayout = StringDictionary[StructuredData]
   
-  type ExtractCallback = js.Function2[/* err */ Error | Null, /* metadata */ Metadata, Unit]
+  type ExtractCallback = js.Function2[/* err */ js.Error | Null, /* metadata */ Metadata, Unit]
   
-  type GenerateImageCallback = js.Function2[/* err */ Error | Null, /* img */ Buffer, Unit]
+  type GenerateImageCallback = js.Function2[/* err */ js.Error | Null, /* img */ Buffer, Unit]
   
-  type GenerateLayoutCallback = js.Function2[/* err */ Error | Null, /* layout */ DataLayout | ImgLayout, Unit]
+  type GenerateLayoutCallback = js.Function2[/* err */ js.Error | Null, /* layout */ DataLayout | ImgLayout, Unit]
   
   trait GenerateLayoutOptions extends StObject {
     
@@ -62,7 +61,7 @@ object mod {
       
       inline def setImgs(value: js.Array[Id]): Self = StObject.set(x, "imgs", value.asInstanceOf[js.Any])
       
-      inline def setImgsVarargs(value: Id*): Self = StObject.set(x, "imgs", js.Array(value :_*))
+      inline def setImgsVarargs(value: Id*): Self = StObject.set(x, "imgs", js.Array(value*))
       
       inline def setMaxIconSize(value: Double): Self = StObject.set(x, "maxIconSize", value.asInstanceOf[js.Any])
       
@@ -172,7 +171,7 @@ object mod {
       
       inline def setItems(value: js.Array[ImageItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      inline def setItemsVarargs(value: ImageItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: ImageItem*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }

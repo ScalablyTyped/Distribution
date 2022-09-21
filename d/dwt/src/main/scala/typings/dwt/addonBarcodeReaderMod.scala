@@ -96,53 +96,53 @@ object addonBarcodeReaderMod {
       
       inline def setAccompanyingTextRecognitionModes(value: js.Array[Double]): Self = StObject.set(x, "accompanyingTextRecognitionModes", value.asInstanceOf[js.Any])
       
-      inline def setAccompanyingTextRecognitionModesVarargs(value: Double*): Self = StObject.set(x, "accompanyingTextRecognitionModes", js.Array(value :_*))
+      inline def setAccompanyingTextRecognitionModesVarargs(value: Double*): Self = StObject.set(x, "accompanyingTextRecognitionModes", js.Array(value*))
       
       inline def setBarcodeColourModes(value: js.Array[Double]): Self = StObject.set(x, "barcodeColourModes", value.asInstanceOf[js.Any])
       
-      inline def setBarcodeColourModesVarargs(value: Double*): Self = StObject.set(x, "barcodeColourModes", js.Array(value :_*))
+      inline def setBarcodeColourModesVarargs(value: Double*): Self = StObject.set(x, "barcodeColourModes", js.Array(value*))
       
       inline def setBarcodeComplementModes(value: js.Array[Double]): Self = StObject.set(x, "barcodeComplementModes", value.asInstanceOf[js.Any])
       
-      inline def setBarcodeComplementModesVarargs(value: Double*): Self = StObject.set(x, "barcodeComplementModes", js.Array(value :_*))
+      inline def setBarcodeComplementModesVarargs(value: Double*): Self = StObject.set(x, "barcodeComplementModes", js.Array(value*))
       
       inline def setColourClusteringModes(value: js.Array[Double]): Self = StObject.set(x, "colourClusteringModes", value.asInstanceOf[js.Any])
       
-      inline def setColourClusteringModesVarargs(value: Double*): Self = StObject.set(x, "colourClusteringModes", js.Array(value :_*))
+      inline def setColourClusteringModesVarargs(value: Double*): Self = StObject.set(x, "colourClusteringModes", js.Array(value*))
       
       inline def setColourConversionModes(value: js.Array[Double]): Self = StObject.set(x, "colourConversionModes", value.asInstanceOf[js.Any])
       
-      inline def setColourConversionModesVarargs(value: Double*): Self = StObject.set(x, "colourConversionModes", js.Array(value :_*))
+      inline def setColourConversionModesVarargs(value: Double*): Self = StObject.set(x, "colourConversionModes", js.Array(value*))
       
       inline def setDeformationResistingModes(value: js.Array[Double]): Self = StObject.set(x, "deformationResistingModes", value.asInstanceOf[js.Any])
       
-      inline def setDeformationResistingModesVarargs(value: Double*): Self = StObject.set(x, "deformationResistingModes", js.Array(value :_*))
+      inline def setDeformationResistingModesVarargs(value: Double*): Self = StObject.set(x, "deformationResistingModes", js.Array(value*))
       
       inline def setDpmCodeReadingModes(value: js.Array[Double]): Self = StObject.set(x, "dpmCodeReadingModes", value.asInstanceOf[js.Any])
       
-      inline def setDpmCodeReadingModesVarargs(value: Double*): Self = StObject.set(x, "dpmCodeReadingModes", js.Array(value :_*))
+      inline def setDpmCodeReadingModesVarargs(value: Double*): Self = StObject.set(x, "dpmCodeReadingModes", js.Array(value*))
       
       inline def setGrayscaleTransformationModes(value: js.Array[Double]): Self = StObject.set(x, "grayscaleTransformationModes", value.asInstanceOf[js.Any])
       
-      inline def setGrayscaleTransformationModesVarargs(value: Double*): Self = StObject.set(x, "grayscaleTransformationModes", js.Array(value :_*))
+      inline def setGrayscaleTransformationModesVarargs(value: Double*): Self = StObject.set(x, "grayscaleTransformationModes", js.Array(value*))
       
       inline def setImagePreprocessingModes(value: js.Array[Double]): Self = StObject.set(x, "imagePreprocessingModes", value.asInstanceOf[js.Any])
       
-      inline def setImagePreprocessingModesVarargs(value: Double*): Self = StObject.set(x, "imagePreprocessingModes", js.Array(value :_*))
+      inline def setImagePreprocessingModesVarargs(value: Double*): Self = StObject.set(x, "imagePreprocessingModes", js.Array(value*))
       
       inline def setRegionPredetectionModes(value: js.Array[Double]): Self = StObject.set(x, "regionPredetectionModes", value.asInstanceOf[js.Any])
       
-      inline def setRegionPredetectionModesVarargs(value: Double*): Self = StObject.set(x, "regionPredetectionModes", js.Array(value :_*))
+      inline def setRegionPredetectionModesVarargs(value: Double*): Self = StObject.set(x, "regionPredetectionModes", js.Array(value*))
       
       inline def setTextAssistedCorrectionMode(value: Double): Self = StObject.set(x, "textAssistedCorrectionMode", value.asInstanceOf[js.Any])
       
       inline def setTextFilterModes(value: js.Array[Double]): Self = StObject.set(x, "textFilterModes", value.asInstanceOf[js.Any])
       
-      inline def setTextFilterModesVarargs(value: Double*): Self = StObject.set(x, "textFilterModes", js.Array(value :_*))
+      inline def setTextFilterModesVarargs(value: Double*): Self = StObject.set(x, "textFilterModes", js.Array(value*))
       
       inline def setTextureDetectionModes(value: js.Array[Double]): Self = StObject.set(x, "textureDetectionModes", value.asInstanceOf[js.Any])
       
-      inline def setTextureDetectionModesVarargs(value: Double*): Self = StObject.set(x, "textureDetectionModes", js.Array(value :_*))
+      inline def setTextureDetectionModesVarargs(value: Double*): Self = StObject.set(x, "textureDetectionModes", js.Array(value*))
     }
   }
   
@@ -325,7 +325,7 @@ object addonBarcodeReaderMod {
       
       inline def setAccompanyingTextBytes(value: js.Array[Double]): Self = StObject.set(x, "accompanyingTextBytes", value.asInstanceOf[js.Any])
       
-      inline def setAccompanyingTextBytesVarargs(value: Double*): Self = StObject.set(x, "accompanyingTextBytes", js.Array(value :_*))
+      inline def setAccompanyingTextBytesVarargs(value: Double*): Self = StObject.set(x, "accompanyingTextBytes", js.Array(value*))
       
       inline def setClarity(value: Double): Self = StObject.set(x, "clarity", value.asInstanceOf[js.Any])
       
@@ -421,7 +421,7 @@ object addonBarcodeReaderMod {
       
       inline def setBinarizationModes(value: js.Array[Double]): Self = StObject.set(x, "binarizationModes", value.asInstanceOf[js.Any])
       
-      inline def setBinarizationModesVarargs(value: Double*): Self = StObject.set(x, "binarizationModes", js.Array(value :_*))
+      inline def setBinarizationModesVarargs(value: Double*): Self = StObject.set(x, "binarizationModes", js.Array(value*))
       
       inline def setDeblurLevel(value: Double): Self = StObject.set(x, "deblurLevel", value.asInstanceOf[js.Any])
       
@@ -435,7 +435,7 @@ object addonBarcodeReaderMod {
       
       inline def setLocalizationModes(value: js.Array[Double]): Self = StObject.set(x, "localizationModes", value.asInstanceOf[js.Any])
       
-      inline def setLocalizationModesVarargs(value: Double*): Self = StObject.set(x, "localizationModes", js.Array(value :_*))
+      inline def setLocalizationModesVarargs(value: Double*): Self = StObject.set(x, "localizationModes", js.Array(value*))
       
       inline def setMaxAlgorithmThreadCount(value: Double): Self = StObject.set(x, "maxAlgorithmThreadCount", value.asInstanceOf[js.Any])
       
@@ -457,13 +457,13 @@ object addonBarcodeReaderMod {
       
       inline def setScaleUpModes(value: js.Array[Double]): Self = StObject.set(x, "scaleUpModes", value.asInstanceOf[js.Any])
       
-      inline def setScaleUpModesVarargs(value: Double*): Self = StObject.set(x, "scaleUpModes", js.Array(value :_*))
+      inline def setScaleUpModesVarargs(value: Double*): Self = StObject.set(x, "scaleUpModes", js.Array(value*))
       
       inline def setTerminatePhase(value: Double): Self = StObject.set(x, "terminatePhase", value.asInstanceOf[js.Any])
       
       inline def setTextResultOrderModes(value: js.Array[Double]): Self = StObject.set(x, "textResultOrderModes", value.asInstanceOf[js.Any])
       
-      inline def setTextResultOrderModesVarargs(value: Double*): Self = StObject.set(x, "textResultOrderModes", js.Array(value :_*))
+      inline def setTextResultOrderModesVarargs(value: Double*): Self = StObject.set(x, "textResultOrderModes", js.Array(value*))
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     }
@@ -504,7 +504,7 @@ object addonBarcodeReaderMod {
     /**
       * Detailed result information.
       */
-    var detailedResult: js.Any
+    var detailedResult: Any
     
     /**
       * The corresponding localization result.
@@ -525,7 +525,7 @@ object addonBarcodeReaderMod {
       barcodeFormatString_2: String,
       barcodeFormat_2: EnumBarcodeFormat2 | Double,
       barcodeText: String,
-      detailedResult: js.Any,
+      detailedResult: Any,
       localizationResult: LocalizationResult,
       results: js.Array[Result]
     ): TextResult = {
@@ -537,7 +537,7 @@ object addonBarcodeReaderMod {
       
       inline def setBarcodeBytes(value: js.Array[Double]): Self = StObject.set(x, "barcodeBytes", value.asInstanceOf[js.Any])
       
-      inline def setBarcodeBytesVarargs(value: Double*): Self = StObject.set(x, "barcodeBytes", js.Array(value :_*))
+      inline def setBarcodeBytesVarargs(value: Double*): Self = StObject.set(x, "barcodeBytes", js.Array(value*))
       
       inline def setBarcodeFormat(value: EnumBarcodeFormat | Double): Self = StObject.set(x, "barcodeFormat", value.asInstanceOf[js.Any])
       
@@ -549,20 +549,20 @@ object addonBarcodeReaderMod {
       
       inline def setBarcodeText(value: String): Self = StObject.set(x, "barcodeText", value.asInstanceOf[js.Any])
       
-      inline def setDetailedResult(value: js.Any): Self = StObject.set(x, "detailedResult", value.asInstanceOf[js.Any])
+      inline def setDetailedResult(value: Any): Self = StObject.set(x, "detailedResult", value.asInstanceOf[js.Any])
       
       inline def setLocalizationResult(value: LocalizationResult): Self = StObject.set(x, "localizationResult", value.asInstanceOf[js.Any])
       
       inline def setResults(value: js.Array[Result]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
-      inline def setResultsVarargs(value: Result*): Self = StObject.set(x, "results", js.Array(value :_*))
+      inline def setResultsVarargs(value: Result*): Self = StObject.set(x, "results", js.Array(value*))
     }
   }
   
   @js.native
   trait TextResults
     extends StObject
-       with Array[js.Any] {
+       with Array[Any] {
     
     var description: js.UndefOr[String] = js.native
     

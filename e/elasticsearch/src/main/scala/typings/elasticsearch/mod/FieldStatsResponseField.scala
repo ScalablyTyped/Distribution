@@ -16,9 +16,9 @@ trait FieldStatsResponseField extends StObject {
   
   var max_doc: Double
   
-  var max_value: js.Any
+  var max_value: Any
   
-  var min_value: js.Any
+  var min_value: Any
   
   var sum_doc_freq: Double
   
@@ -32,8 +32,8 @@ object FieldStatsResponseField {
     is_aggregatable: String,
     is_searchable: String,
     max_doc: Double,
-    max_value: js.Any,
-    min_value: js.Any,
+    max_value: Any,
+    min_value: Any,
     sum_doc_freq: Double,
     sum_total_term_freq: Double
   ): FieldStatsResponseField = {
@@ -53,9 +53,9 @@ object FieldStatsResponseField {
     
     inline def setMax_doc(value: Double): Self = StObject.set(x, "max_doc", value.asInstanceOf[js.Any])
     
-    inline def setMax_value(value: js.Any): Self = StObject.set(x, "max_value", value.asInstanceOf[js.Any])
+    inline def setMax_value(value: Any): Self = StObject.set(x, "max_value", value.asInstanceOf[js.Any])
     
-    inline def setMin_value(value: js.Any): Self = StObject.set(x, "min_value", value.asInstanceOf[js.Any])
+    inline def setMin_value(value: Any): Self = StObject.set(x, "min_value", value.asInstanceOf[js.Any])
     
     inline def setSum_doc_freq(value: Double): Self = StObject.set(x, "sum_doc_freq", value.asInstanceOf[js.Any])
     

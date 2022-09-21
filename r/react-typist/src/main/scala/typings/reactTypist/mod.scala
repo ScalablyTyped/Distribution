@@ -1,6 +1,7 @@
 package typings.reactTypist
 
 import typings.react.mod.Component
+import typings.react.mod.ReactNode
 import typings.reactTypist.mod.Typist.BackSpaceProps
 import typings.reactTypist.mod.Typist.CurrentTextProps
 import typings.reactTypist.mod.Typist.CursorProps
@@ -13,76 +14,76 @@ object mod {
   
   @JSImport("react-typist", JSImport.Default)
   @js.native
-  class default protected () extends Typist {
+  open class default protected () extends Typist {
     def this(props: TypistProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: TypistProps, context: js.Any) = this()
+    def this(props: TypistProps, context: Any) = this()
   }
   object default {
     
     @JSImport("react-typist", "default.Backspace")
     @js.native
-    class Backspace protected ()
+    open class Backspace protected ()
       extends typings.reactTypist.mod.Typist.Backspace {
       def this(props: BackSpaceProps) = this()
       /**
         * @deprecated
         * @see https://reactjs.org/docs/legacy-context.html
         */
-      def this(props: BackSpaceProps, context: js.Any) = this()
+      def this(props: BackSpaceProps, context: Any) = this()
     }
     
     @JSImport("react-typist", "default.Delay")
     @js.native
-    class Delay protected ()
+    open class Delay protected ()
       extends typings.reactTypist.mod.Typist.Delay {
       def this(props: DelayProps) = this()
       /**
         * @deprecated
         * @see https://reactjs.org/docs/legacy-context.html
         */
-      def this(props: DelayProps, context: js.Any) = this()
+      def this(props: DelayProps, context: Any) = this()
     }
   }
   
   @JSImport("react-typist", "Typist")
   @js.native
-  class Typist protected ()
-    extends Component[TypistProps, js.Object, js.Any] {
+  open class Typist protected ()
+    extends Component[TypistProps, js.Object, Any] {
     def this(props: TypistProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: TypistProps, context: js.Any) = this()
+    def this(props: TypistProps, context: Any) = this()
   }
   object Typist {
     
     @JSImport("react-typist", "Typist.Backspace")
     @js.native
-    class Backspace protected ()
-      extends Component[BackSpaceProps, js.Object, js.Any] {
+    open class Backspace protected ()
+      extends Component[BackSpaceProps, js.Object, Any] {
       def this(props: BackSpaceProps) = this()
       /**
         * @deprecated
         * @see https://reactjs.org/docs/legacy-context.html
         */
-      def this(props: BackSpaceProps, context: js.Any) = this()
+      def this(props: BackSpaceProps, context: Any) = this()
     }
     
     @JSImport("react-typist", "Typist.Delay")
     @js.native
-    class Delay protected ()
-      extends Component[DelayProps, js.Object, js.Any] {
+    open class Delay protected ()
+      extends Component[DelayProps, js.Object, Any] {
       def this(props: DelayProps) = this()
       /**
         * @deprecated
         * @see https://reactjs.org/docs/legacy-context.html
         */
-      def this(props: DelayProps, context: js.Any) = this()
+      def this(props: DelayProps, context: Any) = this()
     }
     
     trait BackSpaceProps extends StObject {
@@ -116,7 +117,7 @@ object mod {
       
       var character: String
       
-      def defDelayGenerator(mn: Double, st: Double): js.Function1[/* params */ js.Any, Double]
+      def defDelayGenerator(mn: Double, st: Double): js.Function1[/* params */ Any, Double]
       
       var line: String
       
@@ -127,7 +128,7 @@ object mod {
       inline def apply(
         charIdx: Double,
         character: String,
-        defDelayGenerator: (Double, Double) => js.Function1[/* params */ js.Any, Double],
+        defDelayGenerator: (Double, Double) => js.Function1[/* params */ Any, Double],
         line: String,
         lineIdx: Double
       ): CurrentTextProps = {
@@ -141,7 +142,7 @@ object mod {
         
         inline def setCharacter(value: String): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
         
-        inline def setDefDelayGenerator(value: (Double, Double) => js.Function1[/* params */ js.Any, Double]): Self = StObject.set(x, "defDelayGenerator", js.Any.fromFunction2(value))
+        inline def setDefDelayGenerator(value: (Double, Double) => js.Function1[/* params */ Any, Double]): Self = StObject.set(x, "defDelayGenerator", js.Any.fromFunction2(value))
         
         inline def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
         
@@ -214,6 +215,8 @@ object mod {
     
     var avgTypingDelay: js.UndefOr[Double] = js.undefined
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var className: js.UndefOr[String] = js.undefined
     
     var cursor: js.UndefOr[CursorProps] = js.undefined
@@ -244,6 +247,10 @@ object mod {
       inline def setAvgTypingDelay(value: Double): Self = StObject.set(x, "avgTypingDelay", value.asInstanceOf[js.Any])
       
       inline def setAvgTypingDelayUndefined: Self = StObject.set(x, "avgTypingDelay", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

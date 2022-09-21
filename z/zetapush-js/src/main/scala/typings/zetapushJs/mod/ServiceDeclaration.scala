@@ -10,7 +10,7 @@ trait ServiceDeclaration extends StObject {
   
   var deploymentId: js.UndefOr[String] = js.undefined
   
-  var listener: js.UndefOr[js.Any] = js.undefined
+  var listener: js.UndefOr[Any] = js.undefined
 }
 object ServiceDeclaration {
   
@@ -25,7 +25,7 @@ object ServiceDeclaration {
     
     inline def setDeploymentIdUndefined: Self = StObject.set(x, "deploymentId", js.undefined)
     
-    inline def setListener(value: js.Any): Self = StObject.set(x, "listener", value.asInstanceOf[js.Any])
+    inline def setListener(value: Any): Self = StObject.set(x, "listener", value.asInstanceOf[js.Any])
     
     inline def setListenerUndefined: Self = StObject.set(x, "listener", js.undefined)
     

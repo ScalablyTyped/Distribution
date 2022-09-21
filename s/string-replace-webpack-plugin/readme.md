@@ -11,9 +11,9 @@ Replace string tokens in the contents of a file.
 | Full name          | string-replace-webpack-plugin |
 | Keywords           | webpack, string, replace, plugin |
 | # releases         | 0 |
-| # dependents       | 78 |
-| # downloads        | 1055640 |
-| # stars            | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 200192.66666666666 |
+| # stars            | 95.0 |
 
 ## Links
 - [Homepage](http://github.com/jamesandersen/string-replace-webpack-plugin)

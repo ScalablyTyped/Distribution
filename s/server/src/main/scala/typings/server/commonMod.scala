@@ -3,28 +3,26 @@ package typings.server
 import org.scalablytyped.runtime.StringDictionary
 import typings.express.mod.Request_
 import typings.express.mod.Response_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.formidable.mod.Files
 import typings.server.anon.keyinLogLevelLogFn
 import typings.server.optionsMod.Options
 import typings.server.replyMod.Reply
-import typings.std.Error
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commonMod {
   
-  type BasicType = String | js.Array[js.Any] | js.Object | Double
+  type BasicType = String | js.Array[Any] | js.Object | Double
   
   trait Context extends StObject {
     
     var cookie: StringDictionary[String]
     
-    var data: js.Any
+    var data: Any
     
-    var error: Error
+    var error: js.Error
     
     var files: Files
     
@@ -46,9 +44,15 @@ object commonMod {
     
     var query: StringDictionary[String | js.Array[String]]
     
-    var req: Request_[ParamsDictionary, js.Any, js.Any, Query]
+    var req: Request_[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ]
     
-    var res: Response_[js.Any]
+    var res: Response_[Any, Record[String, Any]]
     
     var secure: Boolean
     
@@ -62,8 +66,8 @@ object commonMod {
     
     inline def apply(
       cookie: StringDictionary[String],
-      data: js.Any,
-      error: Error,
+      data: Any,
+      error: js.Error,
       files: Files,
       headers: StringDictionary[String],
       ip: String,
@@ -73,8 +77,14 @@ object commonMod {
       params: StringDictionary[String],
       path: String,
       query: StringDictionary[String | js.Array[String]],
-      req: Request_[ParamsDictionary, js.Any, js.Any, Query],
-      res: Response_[js.Any],
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      res: Response_[Any, Record[String, Any]],
       secure: Boolean,
       session: js.Object,
       url: String,
@@ -88,9 +98,9 @@ object commonMod {
       
       inline def setCookie(value: StringDictionary[String]): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setFiles(value: Files): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
@@ -102,7 +112,7 @@ object commonMod {
       
       inline def setIpsUndefined: Self = StObject.set(x, "ips", js.undefined)
       
-      inline def setIpsVarargs(value: String*): Self = StObject.set(x, "ips", js.Array(value :_*))
+      inline def setIpsVarargs(value: String*): Self = StObject.set(x, "ips", js.Array(value*))
       
       inline def setLog(value: keyinLogLevelLogFn): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
@@ -116,9 +126,17 @@ object commonMod {
       
       inline def setQuery(value: StringDictionary[String | js.Array[String]]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      inline def setReq(value: Request_[ParamsDictionary, js.Any, js.Any, Query]): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
+      inline def setReq(
+        value: Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ]
+      ): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
       
-      inline def setRes(value: Response_[js.Any]): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+      inline def setRes(value: Response_[Any, Record[String, Any]]): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
       
       inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
       

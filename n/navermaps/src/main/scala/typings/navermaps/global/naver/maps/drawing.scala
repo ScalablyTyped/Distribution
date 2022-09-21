@@ -36,7 +36,7 @@ object drawing {
   
   @JSGlobal("naver.maps.drawing.DrawingManager")
   @js.native
-  class DrawingManager ()
+  open class DrawingManager ()
     extends StObject
        with typings.navermaps.naver.maps.drawing.DrawingManager {
     def this(options: DrawingOptions) = this()

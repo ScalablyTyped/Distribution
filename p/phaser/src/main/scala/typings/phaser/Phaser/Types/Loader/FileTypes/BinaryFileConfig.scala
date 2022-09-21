@@ -10,7 +10,7 @@ trait BinaryFileConfig extends StObject {
   /**
     * Optional type to cast the binary file to once loaded. For example, `Uint8Array`.
     */
-  var dataType: js.UndefOr[js.Any] = js.undefined
+  var dataType: js.UndefOr[Any] = js.undefined
   
   /**
     * The default file extension to use if no url is provided.
@@ -41,7 +41,7 @@ object BinaryFileConfig {
   
   extension [Self <: BinaryFileConfig](x: Self) {
     
-    inline def setDataType(value: js.Any): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+    inline def setDataType(value: Any): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
     inline def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
     

@@ -22,5 +22,5 @@ abstract class DeviceInformationUpdate ()
   
   /** The changed properties in a update to a DeviceInformation object. */
   /* CompleteClass */
-  var properties: IMapView[String, js.Any] = js.native
+  var properties: IMapView[String, Any] = js.native
 }

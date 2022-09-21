@@ -27,7 +27,7 @@ object ListDeliveryStreamsOutput {
     
     inline def setDeliveryStreamNames(value: DeliveryStreamNameList): Self = StObject.set(x, "DeliveryStreamNames", value.asInstanceOf[js.Any])
     
-    inline def setDeliveryStreamNamesVarargs(value: DeliveryStreamName*): Self = StObject.set(x, "DeliveryStreamNames", js.Array(value :_*))
+    inline def setDeliveryStreamNamesVarargs(value: DeliveryStreamName*): Self = StObject.set(x, "DeliveryStreamNames", js.Array(value*))
     
     inline def setHasMoreDeliveryStreams(value: BooleanObject): Self = StObject.set(x, "HasMoreDeliveryStreams", value.asInstanceOf[js.Any])
   }

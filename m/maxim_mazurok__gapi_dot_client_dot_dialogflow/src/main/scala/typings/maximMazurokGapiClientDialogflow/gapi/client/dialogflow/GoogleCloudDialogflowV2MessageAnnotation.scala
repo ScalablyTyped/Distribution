@@ -29,6 +29,6 @@ object GoogleCloudDialogflowV2MessageAnnotation {
     
     inline def setPartsUndefined: Self = StObject.set(x, "parts", js.undefined)
     
-    inline def setPartsVarargs(value: GoogleCloudDialogflowV2AnnotatedMessagePart*): Self = StObject.set(x, "parts", js.Array(value :_*))
+    inline def setPartsVarargs(value: GoogleCloudDialogflowV2AnnotatedMessagePart*): Self = StObject.set(x, "parts", js.Array(value*))
   }
 }

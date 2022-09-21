@@ -1,7 +1,7 @@
 
 # Scala.js typings for esfx__internal-tag
 
-Typings are for version 1.0.0-pre.6
+Typings are for version 1.0.0-pre.19
 
 ## Library description:
 This package provides internal utilities for &#39;@esfx&#39; and is not intended for use in user-code.
@@ -10,10 +10,10 @@ This package provides internal utilities for &#39;@esfx&#39; and is not intended
 | ------------------ | :-------------: |
 | Full name          | @esfx/internal-tag |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 17 |
-| # downloads        | 198863 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 21188.0 |
+| # stars            | 142.0 |
 
 ## Links
 - [Homepage](https://github.com/esfx/esfx#readme)

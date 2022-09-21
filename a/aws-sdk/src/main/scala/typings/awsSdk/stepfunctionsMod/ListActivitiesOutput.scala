@@ -27,7 +27,7 @@ object ListActivitiesOutput {
     
     inline def setActivities(value: ActivityList): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
     
-    inline def setActivitiesVarargs(value: ActivityListItem*): Self = StObject.set(x, "activities", js.Array(value :_*))
+    inline def setActivitiesVarargs(value: ActivityListItem*): Self = StObject.set(x, "activities", js.Array(value*))
     
     inline def setNextToken(value: PageToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

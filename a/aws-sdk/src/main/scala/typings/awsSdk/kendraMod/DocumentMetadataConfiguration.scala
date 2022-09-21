@@ -12,7 +12,7 @@ trait DocumentMetadataConfiguration extends StObject {
   var Name: DocumentMetadataConfigurationName
   
   /**
-    * Provides manual tuning parameters to determine how the field affects the search results.
+    * Provides tuning parameters to determine how the field affects the search results.
     */
   var Relevance: js.UndefOr[typings.awsSdk.kendraMod.Relevance] = js.undefined
   

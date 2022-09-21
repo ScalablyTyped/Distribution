@@ -1,7 +1,7 @@
 
 # Scala.js typings for koa-generic-session
 
-Typings are for version 1.x
+Typings are for version 2.2
 
 ## Library description:
 koa generic session store by memory, redis or others
@@ -11,9 +11,9 @@ koa generic session store by memory, redis or others
 | Full name          | koa-generic-session |
 | Keywords           | koa, middleware, session |
 | # releases         | 6 |
-| # dependents       | 79 |
-| # downloads        | 993972 |
-| # stars            | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 76450.66666666667 |
+| # stars            | 408.0 |
 
 ## Links
 - [Homepage](https://github.com/koajs/generic-session#readme)

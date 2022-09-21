@@ -3,7 +3,6 @@ package typings.licenseCheckerWebpackPlugin
 import typings.licenseCheckerWebpackPlugin.mod.OutputWriter
 import typings.licenseCheckerWebpackPlugin.mod.OutputWriterArgs
 import typings.std.Record
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,6 +11,8 @@ object anon {
   
   /* Inlined std.Partial<license-checker-webpack-plugin.license-checker-webpack-plugin.Dependency> */
   trait PartialDependency extends StObject {
+    
+    var author: js.UndefOr[String] = js.undefined
     
     var licenseName: js.UndefOr[String] = js.undefined
     
@@ -31,6 +32,10 @@ object anon {
     }
     
     extension [Self <: PartialDependency](x: Self) {
+      
+      inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+      
+      inline def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
       
       inline def setLicenseName(value: String): Self = StObject.set(x, "licenseName", value.asInstanceOf[js.Any])
       
@@ -61,7 +66,7 @@ object anon {
     
     var emitError: js.UndefOr[Boolean] = js.undefined
     
-    var filter: js.UndefOr[RegExp] = js.undefined
+    var filter: js.UndefOr[js.RegExp] = js.undefined
     
     var ignore: js.UndefOr[js.Array[String]] = js.undefined
     
@@ -88,7 +93,7 @@ object anon {
       
       inline def setEmitErrorUndefined: Self = StObject.set(x, "emitError", js.undefined)
       
-      inline def setFilter(value: RegExp): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: js.RegExp): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
       inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
@@ -96,7 +101,7 @@ object anon {
       
       inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value*))
       
       inline def setOutputFilename(value: String): Self = StObject.set(x, "outputFilename", value.asInstanceOf[js.Any])
       

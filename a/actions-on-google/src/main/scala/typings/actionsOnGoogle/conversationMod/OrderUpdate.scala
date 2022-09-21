@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("actions-on-google/dist/service/actionssdk/conversation", "OrderUpdate")
 @js.native
-class OrderUpdate protected ()
+open class OrderUpdate protected ()
   extends typings.actionsOnGoogle.responseMod.OrderUpdate {
   def this(options: GoogleActionsOrdersV3OrderUpdate) = this()
   /**

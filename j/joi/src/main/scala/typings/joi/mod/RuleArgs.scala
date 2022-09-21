@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RuleArgs extends StObject {
   
-  var assert: js.UndefOr[(js.Function1[/* value */ js.Any, Boolean]) | AnySchema] = js.undefined
+  var assert: js.UndefOr[(js.Function1[/* value */ Any, Boolean]) | AnySchema[Any]] = js.undefined
   
   var message: js.UndefOr[String] = js.undefined
   
@@ -15,7 +15,7 @@ trait RuleArgs extends StObject {
   /**
     * Undocumented properties
     */
-  var normalize: js.UndefOr[js.Function1[/* value */ js.Any, js.Any]] = js.undefined
+  var normalize: js.UndefOr[js.Function1[/* value */ Any, Any]] = js.undefined
   
   var ref: js.UndefOr[Boolean] = js.undefined
 }
@@ -28,9 +28,9 @@ object RuleArgs {
   
   extension [Self <: RuleArgs](x: Self) {
     
-    inline def setAssert(value: (js.Function1[/* value */ js.Any, Boolean]) | AnySchema): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
+    inline def setAssert(value: (js.Function1[/* value */ Any, Boolean]) | AnySchema[Any]): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
     
-    inline def setAssertFunction1(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "assert", js.Any.fromFunction1(value))
+    inline def setAssertFunction1(value: /* value */ Any => Boolean): Self = StObject.set(x, "assert", js.Any.fromFunction1(value))
     
     inline def setAssertUndefined: Self = StObject.set(x, "assert", js.undefined)
     
@@ -40,7 +40,7 @@ object RuleArgs {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setNormalize(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "normalize", js.Any.fromFunction1(value))
+    inline def setNormalize(value: /* value */ Any => Any): Self = StObject.set(x, "normalize", js.Any.fromFunction1(value))
     
     inline def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PinpointDestination extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the Amazon Pinpoint project that you want to send email events to.
+    * The Amazon Resource Name (ARN) of the Amazon Pinpoint project to send email events to.
     */
   var ApplicationArn: js.UndefOr[AmazonResourceName] = js.undefined
 }

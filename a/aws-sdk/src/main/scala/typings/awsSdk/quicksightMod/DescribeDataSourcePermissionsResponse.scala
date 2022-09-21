@@ -12,7 +12,7 @@ trait DescribeDataSourcePermissionsResponse extends StObject {
   var DataSourceArn: js.UndefOr[Arn] = js.undefined
   
   /**
-    * The ID of the data source. This ID is unique per AWS Region for each AWS account.
+    * The ID of the data source. This ID is unique per Amazon Web Services Region for each Amazon Web Services account.
     */
   var DataSourceId: js.UndefOr[ResourceId] = js.undefined
   
@@ -22,7 +22,7 @@ trait DescribeDataSourcePermissionsResponse extends StObject {
   var Permissions: js.UndefOr[ResourcePermissionList] = js.undefined
   
   /**
-    * The AWS request ID for this operation.
+    * The Amazon Web Services request ID for this operation.
     */
   var RequestId: js.UndefOr[String] = js.undefined
   
@@ -52,7 +52,7 @@ object DescribeDataSourcePermissionsResponse {
     
     inline def setPermissionsUndefined: Self = StObject.set(x, "Permissions", js.undefined)
     
-    inline def setPermissionsVarargs(value: ResourcePermission*): Self = StObject.set(x, "Permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: ResourcePermission*): Self = StObject.set(x, "Permissions", js.Array(value*))
     
     inline def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
     

@@ -114,7 +114,7 @@ object ManagedAppProtection {
     
     inline def setAllowedDataStorageLocationsUndefined: Self = StObject.set(x, "allowedDataStorageLocations", js.undefined)
     
-    inline def setAllowedDataStorageLocationsVarargs(value: ManagedAppDataStorageLocation*): Self = StObject.set(x, "allowedDataStorageLocations", js.Array(value :_*))
+    inline def setAllowedDataStorageLocationsVarargs(value: ManagedAppDataStorageLocation*): Self = StObject.set(x, "allowedDataStorageLocations", js.Array(value*))
     
     inline def setAllowedInboundDataTransferSources(value: ManagedAppDataTransferLevel): Self = StObject.set(x, "allowedInboundDataTransferSources", value.asInstanceOf[js.Any])
     

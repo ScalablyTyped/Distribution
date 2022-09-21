@@ -22,12 +22,12 @@ trait UpdateUserRequest extends StObject {
   var Groups: js.UndefOr[listOfString] = js.undefined
   
   /**
-    * The password of the user. This value must be at least 12 characters long, must contain at least 4 unique characters, and must not contain commas.
+    * The password of the user. This value must be at least 12 characters long, must contain at least 4 unique characters, and must not contain commas, colons, or equal signs (,:=).
     */
   var Password: js.UndefOr[string] = js.undefined
   
   /**
-    * Required. The username of the ActiveMQ user. This value can contain only alphanumeric characters, dashes, periods, underscores, and tildes (- . _ ~). This value must be 2-100 characters long.
+    * The username of the ActiveMQ user. This value can contain only alphanumeric characters, dashes, periods, underscores, and tildes (- . _ ~). This value must be 2-100 characters long.
     */
   var Username: string
 }
@@ -50,7 +50,7 @@ object UpdateUserRequest {
     
     inline def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
     
-    inline def setGroupsVarargs(value: string*): Self = StObject.set(x, "Groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: string*): Self = StObject.set(x, "Groups", js.Array(value*))
     
     inline def setPassword(value: string): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     

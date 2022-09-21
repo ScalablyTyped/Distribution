@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ModifyDocumentPermissionRequest extends StObject {
   
   /**
-    * The AWS user accounts that should have access to the document. The account IDs can either be a group of account IDs or All.
+    * The Amazon Web Services user accounts that should have access to the document. The account IDs can either be a group of account IDs or All.
     */
   var AccountIdsToAdd: js.UndefOr[AccountIdList] = js.undefined
   
   /**
-    * The AWS user accounts that should no longer have access to the document. The AWS user account can either be a group of account IDs or All. This action has a higher priority than AccountIdsToAdd. If you specify an account ID to add and the same ID to remove, the system removes access to the document.
+    * The Amazon Web Services user accounts that should no longer have access to the document. The Amazon Web Services user account can either be a group of account IDs or All. This action has a higher priority than AccountIdsToAdd. If you specify an account ID to add and the same ID to remove, the system removes access to the document.
     */
   var AccountIdsToRemove: js.UndefOr[AccountIdList] = js.undefined
   
@@ -27,7 +27,7 @@ trait ModifyDocumentPermissionRequest extends StObject {
   var PermissionType: DocumentPermissionType
   
   /**
-    * (Optional) The version of the document to share. If it's not specified, the system choose the Default version to share.
+    * (Optional) The version of the document to share. If it isn't specified, the system choose the Default version to share.
     */
   var SharedDocumentVersion: js.UndefOr[typings.awsSdk.ssmMod.SharedDocumentVersion] = js.undefined
 }
@@ -44,13 +44,13 @@ object ModifyDocumentPermissionRequest {
     
     inline def setAccountIdsToAddUndefined: Self = StObject.set(x, "AccountIdsToAdd", js.undefined)
     
-    inline def setAccountIdsToAddVarargs(value: AccountId*): Self = StObject.set(x, "AccountIdsToAdd", js.Array(value :_*))
+    inline def setAccountIdsToAddVarargs(value: AccountId*): Self = StObject.set(x, "AccountIdsToAdd", js.Array(value*))
     
     inline def setAccountIdsToRemove(value: AccountIdList): Self = StObject.set(x, "AccountIdsToRemove", value.asInstanceOf[js.Any])
     
     inline def setAccountIdsToRemoveUndefined: Self = StObject.set(x, "AccountIdsToRemove", js.undefined)
     
-    inline def setAccountIdsToRemoveVarargs(value: AccountId*): Self = StObject.set(x, "AccountIdsToRemove", js.Array(value :_*))
+    inline def setAccountIdsToRemoveVarargs(value: AccountId*): Self = StObject.set(x, "AccountIdsToRemove", js.Array(value*))
     
     inline def setName(value: DocumentName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

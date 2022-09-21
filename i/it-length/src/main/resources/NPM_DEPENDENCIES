@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "it-length" : "1.0.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "it-length" : "1.0.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

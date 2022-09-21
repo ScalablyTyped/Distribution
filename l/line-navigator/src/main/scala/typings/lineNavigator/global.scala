@@ -12,7 +12,7 @@ object global {
     
     @JSGlobal("LineNavigator")
     @js.native
-    class ^ protected ()
+    open class ^ protected ()
       extends typings.lineNavigator.mod.^ {
       def this(file: String) = this()
       /**

@@ -17,6 +17,13 @@ trait ElevationSampler extends StObject {
   val demResolution: ElevationSamplerDemResolution = js.native
   
   /**
+    * Get elevation for a coordinate specified in the spatial reference of the sampler.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ElevationSampler.html#elevationAt)
+    */
+  def elevationAt(x: Double, y: Double): Double = js.native
+  
+  /**
     * The extent within which the sampler can be queried.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ElevationSampler.html#extent)
@@ -30,15 +37,6 @@ trait ElevationSampler extends StObject {
     */
   val noDataValue: Double = js.native
   
-  /**
-    * Registers an event handler on the instance.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ElevationSampler.html#on)
-    */
-  def on(`type`: String): js.Any = js.native
-  def on(`type`: String, handler: js.Function): js.Any = js.native
-  def on(`type`: js.Array[String]): js.Any = js.native
-  def on(`type`: js.Array[String], handler: js.Function): js.Any = js.native
   @JSName("on")
   def on_changed(name: changed, eventHandler: ElevationSamplerChangedEventHandler): IHandle = js.native
   
@@ -50,4 +48,11 @@ trait ElevationSampler extends StObject {
     */
   def queryElevation(geometry: Point): Point | Multipoint | Polyline = js.native
   def queryElevation(geometry: Polyline): Point | Multipoint | Polyline = js.native
+  
+  /**
+    * The spatial reference of the sampler.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ElevationSampler.html#spatialReference)
+    */
+  val spatialReference: SpatialReference = js.native
 }

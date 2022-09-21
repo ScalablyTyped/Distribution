@@ -21,7 +21,7 @@ trait Timing extends StObject {
   
   var Duration: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.Timing_typekey")
   var PowerPointDotTiming_typekey: Timing
@@ -58,7 +58,7 @@ object Timing {
     BounceEndIntensity: Double,
     Decelerate: Double,
     Duration: Double,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotTiming_typekey: Timing,
     RepeatCount: Double,
     RepeatDuration: Double,
@@ -93,7 +93,7 @@ object Timing {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotTiming_typekey(value: Timing): Self = StObject.set(x, "PowerPoint.Timing_typekey", value.asInstanceOf[js.Any])
     

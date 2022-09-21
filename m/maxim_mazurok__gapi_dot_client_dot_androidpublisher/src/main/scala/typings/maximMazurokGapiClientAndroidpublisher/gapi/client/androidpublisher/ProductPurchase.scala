@@ -33,7 +33,7 @@ trait ProductPurchase extends StObject {
   /** The order id associated with the purchase of the inapp product. */
   var orderId: js.UndefOr[String] = js.undefined
   
-  /** The inapp product SKU. */
+  /** The inapp product SKU. May not be present. */
   var productId: js.UndefOr[String] = js.undefined
   
   /** The purchase state of the order. Possible values are: 0. Purchased 1. Canceled 2. Pending */
@@ -42,7 +42,7 @@ trait ProductPurchase extends StObject {
   /** The time the product was purchased, in milliseconds since the epoch (Jan 1, 1970). */
   var purchaseTimeMillis: js.UndefOr[String] = js.undefined
   
-  /** The purchase token generated to identify this purchase. */
+  /** The purchase token generated to identify this purchase. May not be present. */
   var purchaseToken: js.UndefOr[String] = js.undefined
   
   /**
@@ -51,7 +51,7 @@ trait ProductPurchase extends StObject {
     */
   var purchaseType: js.UndefOr[Double] = js.undefined
   
-  /** The quantity associated with the purchase of the inapp product. */
+  /** The quantity associated with the purchase of the inapp product. If not present, the quantity is 1. */
   var quantity: js.UndefOr[Double] = js.undefined
   
   /** ISO 3166-1 alpha-2 billing region code of the user at the time the product was granted. */

@@ -13,8 +13,8 @@ object CameraSettingsActivatedEventArgs {
     kind: ActivationKind,
     previousExecutionState: ApplicationExecutionState,
     splashScreen: SplashScreen,
-    videoDeviceController: js.Any,
-    videoDeviceExtension: js.Any
+    videoDeviceController: Any,
+    videoDeviceExtension: Any
   ): CameraSettingsActivatedEventArgs = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], previousExecutionState = previousExecutionState.asInstanceOf[js.Any], splashScreen = splashScreen.asInstanceOf[js.Any], videoDeviceController = videoDeviceController.asInstanceOf[js.Any], videoDeviceExtension = videoDeviceExtension.asInstanceOf[js.Any])
     __obj.asInstanceOf[CameraSettingsActivatedEventArgs]

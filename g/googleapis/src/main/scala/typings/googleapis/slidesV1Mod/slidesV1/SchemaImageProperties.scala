@@ -4,26 +4,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The properties of the Image.
-  */
 trait SchemaImageProperties extends StObject {
   
   /**
-    * The brightness effect of the image. The value should be in the interval
-    * [-1.0, 1.0], where 0 means no effect. This property is read-only.
+    * The brightness effect of the image. The value should be in the interval [-1.0, 1.0], where 0 means no effect. This property is read-only.
     */
-  var brightness: js.UndefOr[Double] = js.undefined
+  var brightness: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * The contrast effect of the image. The value should be in the interval
-    * [-1.0, 1.0], where 0 means no effect. This property is read-only.
+    * The contrast effect of the image. The value should be in the interval [-1.0, 1.0], where 0 means no effect. This property is read-only.
     */
-  var contrast: js.UndefOr[Double] = js.undefined
+  var contrast: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * The crop properties of the image. If not set, the image is not cropped.
-    * This property is read-only.
+    * The crop properties of the image. If not set, the image is not cropped. This property is read-only.
     */
   var cropProperties: js.UndefOr[SchemaCropProperties] = js.undefined
   
@@ -38,23 +32,19 @@ trait SchemaImageProperties extends StObject {
   var outline: js.UndefOr[SchemaOutline] = js.undefined
   
   /**
-    * The recolor effect of the image. If not set, the image is not recolored.
-    * This property is read-only.
+    * The recolor effect of the image. If not set, the image is not recolored. This property is read-only.
     */
   var recolor: js.UndefOr[SchemaRecolor] = js.undefined
   
   /**
-    * The shadow of the image. If not set, the image has no shadow. This
-    * property is read-only.
+    * The shadow of the image. If not set, the image has no shadow. This property is read-only.
     */
   var shadow: js.UndefOr[SchemaShadow] = js.undefined
   
   /**
-    * The transparency effect of the image. The value should be in the interval
-    * [0.0, 1.0], where 0 means no effect and 1 means completely transparent.
-    * This property is read-only.
+    * The transparency effect of the image. The value should be in the interval [0.0, 1.0], where 0 means no effect and 1 means completely transparent. This property is read-only.
     */
-  var transparency: js.UndefOr[Double] = js.undefined
+  var transparency: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaImageProperties {
   
@@ -67,9 +57,13 @@ object SchemaImageProperties {
     
     inline def setBrightness(value: Double): Self = StObject.set(x, "brightness", value.asInstanceOf[js.Any])
     
+    inline def setBrightnessNull: Self = StObject.set(x, "brightness", null)
+    
     inline def setBrightnessUndefined: Self = StObject.set(x, "brightness", js.undefined)
     
     inline def setContrast(value: Double): Self = StObject.set(x, "contrast", value.asInstanceOf[js.Any])
+    
+    inline def setContrastNull: Self = StObject.set(x, "contrast", null)
     
     inline def setContrastUndefined: Self = StObject.set(x, "contrast", js.undefined)
     
@@ -94,6 +88,8 @@ object SchemaImageProperties {
     inline def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
     
     inline def setTransparency(value: Double): Self = StObject.set(x, "transparency", value.asInstanceOf[js.Any])
+    
+    inline def setTransparencyNull: Self = StObject.set(x, "transparency", null)
     
     inline def setTransparencyUndefined: Self = StObject.set(x, "transparency", js.undefined)
   }

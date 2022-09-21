@@ -1,7 +1,7 @@
 
 # Scala.js typings for eventemitter2
 
-Typings are for version 6.4.3
+Typings are for version 6.4.9
 
 ## Library description:
 A feature-rich Node.js event emitter implementation with namespaces, wildcards, TTL, async listeners and browser/worker support.
@@ -10,10 +10,10 @@ A feature-rich Node.js event emitter implementation with namespaces, wildcards, 
 | ------------------ | :-------------: |
 | Full name          | eventemitter2 |
 | Keywords           | event, events, emitter, eventemitter, addEventListener, addListener, pub/sub, emit, emits, on, once, publish, subscribe |
-| # releases         | 10 |
-| # dependents       | 1189 |
-| # downloads        | 195183753 |
-| # stars            | 48 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 3.8663920333333336E7 |
+| # stars            | 2490.0 |
 
 ## Links
 - [Homepage](https://github.com/hij1nx/EventEmitter2#readme)

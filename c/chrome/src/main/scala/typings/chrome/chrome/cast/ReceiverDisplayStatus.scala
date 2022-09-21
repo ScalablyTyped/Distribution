@@ -21,7 +21,7 @@ object ReceiverDisplayStatus {
     
     inline def setAppImages(value: js.Array[Image]): Self = StObject.set(x, "appImages", value.asInstanceOf[js.Any])
     
-    inline def setAppImagesVarargs(value: Image*): Self = StObject.set(x, "appImages", js.Array(value :_*))
+    inline def setAppImagesVarargs(value: Image*): Self = StObject.set(x, "appImages", js.Array(value*))
     
     inline def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
   }

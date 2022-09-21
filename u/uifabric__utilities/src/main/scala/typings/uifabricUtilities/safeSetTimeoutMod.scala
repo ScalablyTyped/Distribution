@@ -11,5 +11,5 @@ object safeSetTimeoutMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def safeSetTimeout(component: Component[js.Object, js.Object, js.Any]): js.Function2[/* cb */ js.Function, /* duration */ Double, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("safeSetTimeout")(component.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* cb */ js.Function, /* duration */ Double, Unit]]
+  inline def safeSetTimeout(component: Component[js.Object, js.Object, Any]): js.Function2[/* cb */ js.Function, /* duration */ Double, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("safeSetTimeout")(component.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* cb */ js.Function, /* duration */ Double, Unit]]
 }

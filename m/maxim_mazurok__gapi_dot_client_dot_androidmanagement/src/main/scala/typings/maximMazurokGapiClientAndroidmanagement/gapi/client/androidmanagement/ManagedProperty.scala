@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ManagedProperty extends StObject {
   
   /** The default value of the property. BUNDLE_ARRAY properties don't have a default value. */
-  var defaultValue: js.UndefOr[js.Any] = js.undefined
+  var defaultValue: js.UndefOr[Any] = js.undefined
   
   /** A longer description of the property, providing more detail of what it affects. Localized. */
   var description: js.UndefOr[String] = js.undefined
@@ -36,7 +36,7 @@ object ManagedProperty {
   
   extension [Self <: ManagedProperty](x: Self) {
     
-    inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
@@ -48,7 +48,7 @@ object ManagedProperty {
     
     inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
-    inline def setEntriesVarargs(value: ManagedPropertyEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: ManagedPropertyEntry*): Self = StObject.set(x, "entries", js.Array(value*))
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
@@ -58,7 +58,7 @@ object ManagedProperty {
     
     inline def setNestedPropertiesUndefined: Self = StObject.set(x, "nestedProperties", js.undefined)
     
-    inline def setNestedPropertiesVarargs(value: ManagedProperty*): Self = StObject.set(x, "nestedProperties", js.Array(value :_*))
+    inline def setNestedPropertiesVarargs(value: ManagedProperty*): Self = StObject.set(x, "nestedProperties", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

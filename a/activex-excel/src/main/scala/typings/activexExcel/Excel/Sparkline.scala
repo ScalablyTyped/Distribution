@@ -23,7 +23,7 @@ trait Sparkline extends StObject {
   
   def ModifySourceData(Formula: String): Unit
   
-  val Parent: js.Any
+  val Parent: Any
   
   var SourceData: String
 }
@@ -36,7 +36,7 @@ object Sparkline {
     Location: Range,
     ModifyLocation: Range => Unit,
     ModifySourceData: String => Unit,
-    Parent: js.Any,
+    Parent: Any,
     SourceData: String
   ): Sparkline = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Location = Location.asInstanceOf[js.Any], ModifyLocation = js.Any.fromFunction1(ModifyLocation), ModifySourceData = js.Any.fromFunction1(ModifySourceData), Parent = Parent.asInstanceOf[js.Any], SourceData = SourceData.asInstanceOf[js.Any])
@@ -58,7 +58,7 @@ object Sparkline {
     
     inline def setModifySourceData(value: String => Unit): Self = StObject.set(x, "ModifySourceData", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSourceData(value: String): Self = StObject.set(x, "SourceData", value.asInstanceOf[js.Any])
   }

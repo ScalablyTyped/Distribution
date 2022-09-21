@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("guacamole-client", "VisibleLayer")
 @js.native
-class VisibleLayer protected ()
+open class VisibleLayer protected ()
   extends typings.guacamoleClient.visibleLayerMod.VisibleLayer {
   /**
     * @param width The width of the Layer, in pixels. The canvas element backing this Layer will be given this width.

@@ -1,7 +1,6 @@
 package typings.braintreeWeb
 
-import typings.braintreeWeb.anon.Bin
-import typings.braintreeWeb.anon.Commercial
+import typings.braintreeWeb.anon.CountryOfIssuance
 import typings.braintreeWeb.anon.EmailRequired
 import typings.braintreeWeb.anon.GoogleMerchantId
 import typings.braintreeWeb.braintreeWebStrings.Unknown_
@@ -17,7 +16,7 @@ object googlePaymentMod {
   trait GooglePayment extends StObject {
     
     def create(options: GoogleMerchantId): Unit = js.native
-    def create(options: GoogleMerchantId, callback: callback[js.Any]): Unit = js.native
+    def create(options: GoogleMerchantId, callback: callback[Any]): Unit = js.native
     
     /**
       * Create a configuration object for use in the `loadPaymentData` method.
@@ -200,8 +199,8 @@ object googlePaymentMod {
     @JSName("create")
     def create_Promise(options: GoogleMerchantId): js.Promise[GooglePayment] = js.native
     
-    def parseResponse(response: js.Any): Unit = js.native
-    def parseResponse(response: js.Any, callback: callback[js.Any]): Unit = js.native
+    def parseResponse(response: Any): Unit = js.native
+    def parseResponse(response: Any, callback: callback[Any]): Unit = js.native
     /**
       * Parse the response from the tokenization.
       * @example with callback
@@ -231,16 +230,49 @@ object googlePaymentMod {
       * });
       */
     @JSName("parseResponse")
-    def parseResponse_Promise(response: js.Any): js.Promise[GooglePaymentTokenizePayload] = js.native
+    def parseResponse_Promise(response: Any): js.Promise[GooglePaymentTokenizePayload] = js.native
+  }
+  
+  trait GooglePaymentDetails extends StObject {
+    
+    var bin: String
+    
+    var cardType: String
+    
+    var isNetworkTokenized: Boolean
+    
+    var lastFour: String
+    
+    var lastTow: String
+  }
+  object GooglePaymentDetails {
+    
+    inline def apply(bin: String, cardType: String, isNetworkTokenized: Boolean, lastFour: String, lastTow: String): GooglePaymentDetails = {
+      val __obj = js.Dynamic.literal(bin = bin.asInstanceOf[js.Any], cardType = cardType.asInstanceOf[js.Any], isNetworkTokenized = isNetworkTokenized.asInstanceOf[js.Any], lastFour = lastFour.asInstanceOf[js.Any], lastTow = lastTow.asInstanceOf[js.Any])
+      __obj.asInstanceOf[GooglePaymentDetails]
+    }
+    
+    extension [Self <: GooglePaymentDetails](x: Self) {
+      
+      inline def setBin(value: String): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
+      
+      inline def setCardType(value: String): Self = StObject.set(x, "cardType", value.asInstanceOf[js.Any])
+      
+      inline def setIsNetworkTokenized(value: Boolean): Self = StObject.set(x, "isNetworkTokenized", value.asInstanceOf[js.Any])
+      
+      inline def setLastFour(value: String): Self = StObject.set(x, "lastFour", value.asInstanceOf[js.Any])
+      
+      inline def setLastTow(value: String): Self = StObject.set(x, "lastTow", value.asInstanceOf[js.Any])
+    }
   }
   
   trait GooglePaymentTokenizePayload extends StObject {
     
-    var binData: Commercial
+    var binData: CountryOfIssuance
     
     var description: String
     
-    var details: Bin
+    var details: GooglePaymentDetails
     
     var nonce: String
     
@@ -248,7 +280,13 @@ object googlePaymentMod {
   }
   object GooglePaymentTokenizePayload {
     
-    inline def apply(binData: Commercial, description: String, details: Bin, nonce: String, `type`: String): GooglePaymentTokenizePayload = {
+    inline def apply(
+      binData: CountryOfIssuance,
+      description: String,
+      details: GooglePaymentDetails,
+      nonce: String,
+      `type`: String
+    ): GooglePaymentTokenizePayload = {
       val __obj = js.Dynamic.literal(binData = binData.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[GooglePaymentTokenizePayload]
@@ -256,11 +294,11 @@ object googlePaymentMod {
     
     extension [Self <: GooglePaymentTokenizePayload](x: Self) {
       
-      inline def setBinData(value: Commercial): Self = StObject.set(x, "binData", value.asInstanceOf[js.Any])
+      inline def setBinData(value: CountryOfIssuance): Self = StObject.set(x, "binData", value.asInstanceOf[js.Any])
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      inline def setDetails(value: Bin): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: GooglePaymentDetails): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
       inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       

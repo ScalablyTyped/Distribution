@@ -11,9 +11,9 @@ trait ActiveXObjectNameMap extends StObject {
   
   /** Set or get the item for a given key */
   @JSName("Scripting.Dictionary")
-  def ScriptingDotDictionary(Key: js.Any): js.Any
+  def ScriptingDotDictionary(Key: Any): Any
   @JSName("Scripting.Dictionary")
-  var ScriptingDotDictionary_Original: Dictionary[js.Any, js.Any]
+  var ScriptingDotDictionary_Original: Dictionary[Any, Any]
   
   /** Call the Encoder determined by szExt, passing bstrStreamIn and optional arguments */
   @JSName("Scripting.Encoder")
@@ -27,7 +27,7 @@ trait ActiveXObjectNameMap extends StObject {
 object ActiveXObjectNameMap {
   
   inline def apply(
-    ScriptingDotDictionary: Dictionary[js.Any, js.Any],
+    ScriptingDotDictionary: Dictionary[Any, Any],
     ScriptingDotEncoder: Encoder,
     ScriptingDotFileSystemObject: FileSystemObject
   ): ActiveXObjectNameMap = {
@@ -40,7 +40,7 @@ object ActiveXObjectNameMap {
   
   extension [Self <: ActiveXObjectNameMap](x: Self) {
     
-    inline def setScriptingDotDictionary(value: Dictionary[js.Any, js.Any]): Self = StObject.set(x, "Scripting.Dictionary", value.asInstanceOf[js.Any])
+    inline def setScriptingDotDictionary(value: Dictionary[Any, Any]): Self = StObject.set(x, "Scripting.Dictionary", value.asInstanceOf[js.Any])
     
     inline def setScriptingDotEncoder(value: Encoder): Self = StObject.set(x, "Scripting.Encoder", value.asInstanceOf[js.Any])
     

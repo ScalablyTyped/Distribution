@@ -1,8 +1,6 @@
 package typings.webgme
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Date
-import typings.std.Error
 import typings.webgme.Blobs.BlobClient
 import typings.webgme.Blobs.BlobMetadata
 import typings.webgme.Blobs.ObjectBlob
@@ -136,7 +134,7 @@ object GmeClasses {
     def save(message: String): js.Promise[MetadataHash] = js.native
   }
   
-  type ArtifactCallback = js.Function2[/* err */ Error, /* result */ Artifact, Unit]
+  type ArtifactCallback = js.Function2[/* err */ js.Error, /* result */ Artifact, Unit]
   
   trait Commit extends StObject {
     
@@ -217,7 +215,7 @@ object GmeClasses {
       * @return If the set is not allowed to be modified, 
       * the function returns an error.
       */
-    def addMember(node: Node, name: Name, member: Node): js.UndefOr[Error] = js.native
+    def addMember(node: Node, name: Name, member: Node): js.UndefOr[js.Error] = js.native
     
     /**
       * Adds a mixin to the mixin set of the node.
@@ -225,7 +223,7 @@ object GmeClasses {
       * @param the path of the mixin node.
       * @return If the node is not allowed to be modified, the function returns an error.
       */
-    def addMixin(node: Node, mixinPath: Path): js.UndefOr[Error] = js.native
+    def addMixin(node: Node, mixinPath: Path): js.UndefOr[js.Error] = js.native
     
     /**
       * When our attempt to merge two patches ended in some conflict, 
@@ -272,14 +270,14 @@ object GmeClasses {
       * @param node the node in question.
       * @return If the node is not allowed to be modified, the function returns an error.
       */
-    def clearMetaRules(node: Node): js.UndefOr[Error] = js.native
+    def clearMetaRules(node: Node): js.UndefOr[js.Error] = js.native
     
     /**
       * Removes all mixins for a given node.
       * @param node the node in question.
       * @return If the node is not allowed to be modified, the function returns an error.
       */
-    def clearMixins(node: Node): js.UndefOr[Error] = js.native
+    def clearMixins(node: Node): js.UndefOr[js.Error] = js.native
     
     /**
       * Copies the given node into parent.
@@ -287,7 +285,7 @@ object GmeClasses {
       * @param parent the target parent where the copy will be placed.
       * @return The function returns the copied node or an error if the copy is not allowed.
       */
-    def copyNode(node: Node, parent: Node): Node | Error = js.native
+    def copyNode(node: Node, parent: Node): Node | js.Error = js.native
     
     /**
       * Copies the given nodes into parent.
@@ -296,7 +294,7 @@ object GmeClasses {
       * @return The function returns an array of the copied nodes or an error 
       * if any of the nodes are not allowed to be copied to the given parent.
       */
-    def copyNodes(nodes: js.Array[Node], parent: Node): js.Array[Node] | Error = js.native
+    def copyNodes(nodes: js.Array[Node], parent: Node): js.Array[Node] | js.Error = js.native
     
     /**
       * Creates a node according to the given parameters.
@@ -304,7 +302,7 @@ object GmeClasses {
       * @return The function returns the created node or null if no node was 
       * created or an error if the creation with the given parameters are not allowed.
       */
-    def createNode(parameters: NodeParameters): Node | Error = js.native
+    def createNode(parameters: NodeParameters): Node | js.Error = js.native
     
     /**
       * Creates a set for the node.
@@ -312,7 +310,7 @@ object GmeClasses {
       * @param name the name of the set.
       * @return If the node is not allowed to be modified, the function returns an error.
       */
-    def createSet(node: Node, name: Name): js.UndefOr[Error] = js.native
+    def createSet(node: Node, name: Name): js.UndefOr[js.Error] = js.native
     
     /**
       * Removes the given aspect rule of the node.
@@ -320,7 +318,7 @@ object GmeClasses {
       * @param name the name of the aspect rule.
       * @return  If the node is not allowed to be modified, the function returns an error.
       */
-    def delAspectMeta(node: Node, name: Name): js.UndefOr[Error] = js.native
+    def delAspectMeta(node: Node, name: Name): js.UndefOr[js.Error] = js.native
     
     /**
       * Removes a valid type from the given aspect of the node.
@@ -329,7 +327,7 @@ object GmeClasses {
       * @param targetPath the absolute path of the valid type of the aspect.
       * @return If the node is not allowed to be modified, the function returns an error.
       */
-    def delAspectMetaTarget(node: Node, name: Name, targetPath: Path): js.UndefOr[Error] = js.native
+    def delAspectMetaTarget(node: Node, name: Name, targetPath: Path): js.UndefOr[js.Error] = js.native
     
     /**
       * Removes the given attributes from the given node.
@@ -337,7 +335,7 @@ object GmeClasses {
       * @param name the name of the attribute.
       * @return If the node is not allowed to be modified, the function returns an error.
       */
-    def delAttribute(node: Node, name: Name): js.UndefOr[Error] = js.native
+    def delAttribute(node: Node, name: Name): js.UndefOr[js.Error] = js.native
     
     /**
       * Removes an attribute definition from the META rules of the node.
@@ -345,7 +343,7 @@ object GmeClasses {
       * @param name the name of the attribute.
       * @return If the node is not allowed to be modified, the function returns an error.
       */
-    def delAttributeMeta(node: Node, name: Name): js.UndefOr[Error] = js.native
+    def delAttributeMeta(node: Node, name: Name): js.UndefOr[js.Error] = js.native
     
     /**
       * Removes the given child rule from the node.
@@ -353,7 +351,7 @@ object GmeClasses {
       * @param childPath the absolute path of the child which rule is to be removed from the node.
       * @return If the node is not allowed to be modified, the function returns an error.
       */
-    def delChildMeta(node: Node, childPath: Path): js.UndefOr[Error] = js.native
+    def delChildMeta(node: Node, childPath: Path): js.UndefOr[js.Error] = js.native
     
     /**
       * Removes a constraint from the node.
@@ -361,7 +359,7 @@ object GmeClasses {
       * @param name the name of the constraint.
       * @return If the node is not allowed to be modified, the function returns an error.
       */
-    def delConstraint(node: Node, name: Name): js.UndefOr[Error] = js.native
+    def delConstraint(node: Node, name: Name): js.UndefOr[js.Error] = js.native
     
     /**
       * Removes a member from the set. The functions doesn't remove the node itself.
@@ -370,7 +368,7 @@ object GmeClasses {
       * @param path the path to the member to be removed.
       * @return If the node is not allowed to be modified, the function returns an error.
       */
-    def delMember(node: Node, name: Name, path: Path): js.UndefOr[Error] = js.native
+    def delMember(node: Node, name: Name, path: Path): js.UndefOr[js.Error] = js.native
     
     /**
       * Removes an attribute which represented a property of the given set membership.
@@ -380,7 +378,7 @@ object GmeClasses {
       * @param attrName the name of the attribute.
       * @return If the node is not allowed to be modified, the function returns an error.
       */
-    def delMemberAttribute(node: Node, setName: Name, memberPath: Path, attrName: Name): js.UndefOr[Error] = js.native
+    def delMemberAttribute(node: Node, setName: Name, memberPath: Path, attrName: Name): js.UndefOr[js.Error] = js.native
     
     /**
       * Removes a registry entry which represented a property of the given set membership.
@@ -390,7 +388,7 @@ object GmeClasses {
       * @param regName the name of the registry entry.
       * @return If the node is not allowed to be modified, the function returns an error.
       */
-    def delMemberRegistry(node: Node, setName: Name, memberPath: Path, regName: Name): js.UndefOr[Error] = js.native
+    def delMemberRegistry(node: Node, setName: Name, memberPath: Path, regName: Name): js.UndefOr[js.Error] = js.native
     
     /**
       * Removes a mixin from the mixin set of the node.
@@ -398,7 +396,7 @@ object GmeClasses {
       * @param mixinPath the path of the mixin node.
       * @return If the node is not allowed to be modified, the function returns an error. 
       */
-    def delMixin(node: Node, mixinPath: Path): js.UndefOr[Error] = js.native
+    def delMixin(node: Node, mixinPath: Path): js.UndefOr[js.Error] = js.native
     
     /**
       * Removes the complete META rule regarding the given pointer/set of the node.
@@ -406,7 +404,7 @@ object GmeClasses {
       * @param name the name of the pointer/set.
       * @return If the node is not allowed to be modified, the function returns an error. 
       */
-    def delPointerMeta(node: Node, name: Name): js.UndefOr[Error] = js.native
+    def delPointerMeta(node: Node, name: Name): js.UndefOr[js.Error] = js.native
     
     /**
       * Removes a possible target type from the pointer/set of the node.
@@ -415,7 +413,7 @@ object GmeClasses {
       * @param targetPath the absolute path of the possible target type.
       * @return If the node is not allowed to be modified, the function returns an error. 
       */
-    def delPointerMetaTarget(node: Node, name: Name, targetPath: String): js.UndefOr[Error] = js.native
+    def delPointerMetaTarget(node: Node, name: Name, targetPath: String): js.UndefOr[js.Error] = js.native
     
     /**
       * Removes the given registry entry from the given node.
@@ -423,7 +421,7 @@ object GmeClasses {
       * @param name the name of the registry entry.
       * @return If the node is not allowed to be modified, the function returns an error. 
       */
-    def delRegistry(node: Node, name: Name): js.UndefOr[Error] = js.native
+    def delRegistry(node: Node, name: Name): js.UndefOr[js.Error] = js.native
     
     /**
       * Removes the attribute entry for the set at the node.
@@ -432,7 +430,7 @@ object GmeClasses {
       * @param attrName the name of the attribute entry.
       * @return If the node is not allowed to be modified, the function returns an error. 
       */
-    def delSetAttribute(node: Node, setName: Name, attrName: Name): js.UndefOr[Error] = js.native
+    def delSetAttribute(node: Node, setName: Name, attrName: Name): js.UndefOr[js.Error] = js.native
     
     /**
       * Removes the registry entry for the set at the node.
@@ -441,7 +439,7 @@ object GmeClasses {
       * @param regName the name of the registry entry.
       * @return If the node is not allowed to be modified, the function returns an error. 
       */
-    def delSetRegistry(node: Node, setName: Name, regName: Name): js.UndefOr[Error] = js.native
+    def delSetRegistry(node: Node, setName: Name, regName: Name): js.UndefOr[js.Error] = js.native
     
     /**
       * Removes a node from the containment hierarchy.
@@ -449,7 +447,7 @@ object GmeClasses {
       * @param node the node in question.
       * @return If the operation is not allowed it returns an error.
       */
-    def deleteNode(node: Node): js.UndefOr[Error] = js.native
+    def deleteNode(node: Node): js.UndefOr[js.Error] = js.native
     
     /**
       * Removes the pointer from the node.
@@ -457,7 +455,7 @@ object GmeClasses {
       * @param name the name of the pointer.
       * @return If the node is not allowed to be modified, the function returns an error.
       */
-    def deletePointer(node: Node, name: Name): js.UndefOr[Error] = js.native
+    def deletePointer(node: Node, name: Name): js.UndefOr[js.Error] = js.native
     
     /**
       * Removes a set from the node.
@@ -465,7 +463,7 @@ object GmeClasses {
       * @param name the name of the set.
       * @return If the node is not allowed to be modified, the function returns an error.
       */
-    def deleteSet(node: Node, name: Name): js.UndefOr[Error] = js.native
+    def deleteSet(node: Node, name: Name): js.UndefOr[js.Error] = js.native
     
     /**
       * Generates a differential tree among the two states 
@@ -740,8 +738,8 @@ object GmeClasses {
       * direct library root of the node
       * @return the origin GUID of the node or error if the query cannot be fulfilled.
       */
-    def getLibraryGuid(node: Node): GUID | Error = js.native
-    def getLibraryGuid(node: Node, name: Name): GUID | Error = js.native
+    def getLibraryGuid(node: Node): GUID | js.Error = js.native
+    def getLibraryGuid(node: Node, name: Name): GUID | js.Error = js.native
     
     /**
       * Returns the info associated with the library.
@@ -1631,7 +1629,7 @@ object GmeClasses {
       * @param {GmeCommon.Name} newName
       * @return {Error}
       */
-    def moveAspectMetaTarget(node: Node, target: Node, oldName: Name, newName: Name): js.UndefOr[Error] = js.native
+    def moveAspectMetaTarget(node: Node, target: Node, oldName: Name, newName: Name): js.UndefOr[js.Error] = js.native
     
     /**
       * TODO
@@ -1641,14 +1639,14 @@ object GmeClasses {
       * @param {GmeCommon.Name} newSetName
       * @return {Error}
       */
-    def moveMember(node: Node, memberPath: Path, oldSetName: Name, newSetName: Name): js.UndefOr[Error] = js.native
+    def moveMember(node: Node, memberPath: Path, oldSetName: Name, newSetName: Name): js.UndefOr[js.Error] = js.native
     
     /**
       * TODO
       * @param node the node in question.
       * @return 
       */
-    def moveNode(node: Node, parent: Node): Node | Error = js.native
+    def moveNode(node: Node, parent: Node): Node | js.Error = js.native
     
     /**
       * TODO
@@ -1658,7 +1656,7 @@ object GmeClasses {
       * @param {GmeCommon.Name} newName
       * @return {Error}
       */
-    def movePointerMetaTarget(node: Node, target: Node, oldName: Name, newName: Name): js.UndefOr[Error] = js.native
+    def movePointerMetaTarget(node: Node, target: Node, oldName: Name, newName: Name): js.UndefOr[js.Error] = js.native
     
     /**
       * TODO
@@ -1681,7 +1679,7 @@ object GmeClasses {
       * @param {GmeCommon.Name} newName
       * @return {Error}
       */
-    def renameAttribute(node: Node, oldName: Name, newName: Name): js.UndefOr[Error] = js.native
+    def renameAttribute(node: Node, oldName: Name, newName: Name): js.UndefOr[js.Error] = js.native
     
     /**
       * TODO
@@ -1690,7 +1688,7 @@ object GmeClasses {
       * @param {GmeCommon.Name} newName
       * @return {Error}
       */
-    def renameAttributeMeta(node: Node, oldName: Name, newName: Name): js.UndefOr[Error] = js.native
+    def renameAttributeMeta(node: Node, oldName: Name, newName: Name): js.UndefOr[js.Error] = js.native
     
     /**
       * TODO
@@ -1706,7 +1704,7 @@ object GmeClasses {
       * @param {GmeCommon.Name} newName
       * @return {Error}
       */
-    def renamePointer(node: Node, oldName: Name, newName: Name): js.UndefOr[Error] = js.native
+    def renamePointer(node: Node, oldName: Name, newName: Name): js.UndefOr[js.Error] = js.native
     
     /**
       * TODO
@@ -1715,7 +1713,7 @@ object GmeClasses {
       * @param {GmeCommon.Name} newName
       * @return {Error}
       */
-    def renameRegistry(node: Node, oldName: Name, newName: Name): js.UndefOr[Error] = js.native
+    def renameRegistry(node: Node, oldName: Name, newName: Name): js.UndefOr[js.Error] = js.native
     
     /**
       * TODO
@@ -1724,62 +1722,62 @@ object GmeClasses {
       * @param {GmeCommon.Name} newName
       * @return {Error}
       */
-    def renameSet(node: Node, oldName: Name, newName: Name): js.UndefOr[Error] = js.native
+    def renameSet(node: Node, oldName: Name, newName: Name): js.UndefOr[js.Error] = js.native
     
     /**
       * TODO
       * @param node the node in question.
       * @return 
       */
-    def setAspectMetaTarget(node: Node, name: Name, target: Node): js.UndefOr[Error] = js.native
+    def setAspectMetaTarget(node: Node, name: Name, target: Node): js.UndefOr[js.Error] = js.native
     
     /**
       * TODO
       * @param node the node in question.
       * @return 
       */
-    def setAttribute(node: Node, name: Name, value: InAttr): js.UndefOr[Error] = js.native
+    def setAttribute(node: Node, name: Name, value: InAttr): js.UndefOr[js.Error] = js.native
     
     /**
       * TODO
       * @param node the node in question.
       * @return 
       */
-    def setAttributeMeta(node: Node, name: Name, rule: MetaRule): js.UndefOr[Error] = js.native
+    def setAttributeMeta(node: Node, name: Name, rule: MetaRule): js.UndefOr[js.Error] = js.native
     
     /**
       * TODO
       * @param node the node in question.
       * @return 
       */
-    def setBase(node: Node, base: Node): js.UndefOr[Error] = js.native
+    def setBase(node: Node, base: Node): js.UndefOr[js.Error] = js.native
     
     /**
       * TODO
       * @param node the node in question.
       * @return 
       */
-    def setChildMeta(node: Node, child: Node): js.UndefOr[Error] = js.native
-    def setChildMeta(node: Node, child: Node, min: Double): js.UndefOr[Error] = js.native
-    def setChildMeta(node: Node, child: Node, min: Double, max: Double): js.UndefOr[Error] = js.native
-    def setChildMeta(node: Node, child: Node, min: Unit, max: Double): js.UndefOr[Error] = js.native
+    def setChildMeta(node: Node, child: Node): js.UndefOr[js.Error] = js.native
+    def setChildMeta(node: Node, child: Node, min: Double): js.UndefOr[js.Error] = js.native
+    def setChildMeta(node: Node, child: Node, min: Double, max: Double): js.UndefOr[js.Error] = js.native
+    def setChildMeta(node: Node, child: Node, min: Unit, max: Double): js.UndefOr[js.Error] = js.native
     
     /**
       * TODO
       * @param node the node in question.
       * @return 
       */
-    def setChildrenMetaLimits(node: Node): js.UndefOr[Error] = js.native
-    def setChildrenMetaLimits(node: Node, min: Double): js.UndefOr[Error] = js.native
-    def setChildrenMetaLimits(node: Node, min: Double, max: Double): js.UndefOr[Error] = js.native
-    def setChildrenMetaLimits(node: Node, min: Unit, max: Double): js.UndefOr[Error] = js.native
+    def setChildrenMetaLimits(node: Node): js.UndefOr[js.Error] = js.native
+    def setChildrenMetaLimits(node: Node, min: Double): js.UndefOr[js.Error] = js.native
+    def setChildrenMetaLimits(node: Node, min: Double, max: Double): js.UndefOr[js.Error] = js.native
+    def setChildrenMetaLimits(node: Node, min: Unit, max: Double): js.UndefOr[js.Error] = js.native
     
     /**
       * TODO
       * @param node the node in question.
       * @return 
       */
-    def setConstraint(node: Node, name: Name, constraint: Constraint): js.UndefOr[Error] = js.native
+    def setConstraint(node: Node, name: Name, constraint: Constraint): js.UndefOr[js.Error] = js.native
     
     /**
       * TODO
@@ -1792,57 +1790,57 @@ object GmeClasses {
       * @param node the node in question.
       * @return 
       */
-    def setGuid(node: Node, guid: GUID, callback: ResultCallback[DataObject]): js.UndefOr[Error] = js.native
+    def setGuid(node: Node, guid: GUID, callback: ResultCallback[DataObject]): js.UndefOr[js.Error] = js.native
     
     /**
       * TODO
       * @param node the node in question.
       * @return 
       */
-    def setMemberAttribute(node: Node, setName: String, memberPath: String, SVGPathSegLinetoHorizontalAbsme: String): js.UndefOr[Error] = js.native
+    def setMemberAttribute(node: Node, setName: String, memberPath: String, SVGPathSegLinetoHorizontalAbsme: String): js.UndefOr[js.Error] = js.native
     def setMemberAttribute(
       node: Node,
       setName: String,
       memberPath: String,
       SVGPathSegLinetoHorizontalAbsme: String,
       value: InAttr
-    ): js.UndefOr[Error] = js.native
+    ): js.UndefOr[js.Error] = js.native
     
     /**
       * TODO
       * @param node the node in question.
       * @return 
       */
-    def setMemberRegistry(node: Node, setName: String, memberPath: String, regName: String): js.UndefOr[Error] = js.native
-    def setMemberRegistry(node: Node, setName: String, memberPath: String, regName: String, value: InAttr): js.UndefOr[Error] = js.native
+    def setMemberRegistry(node: Node, setName: String, memberPath: String, regName: String): js.UndefOr[js.Error] = js.native
+    def setMemberRegistry(node: Node, setName: String, memberPath: String, regName: String, value: InAttr): js.UndefOr[js.Error] = js.native
     
     /**
       * TODO
       * @param node the node in question.
       * @return 
       */
-    def setPointer(node: Node, name: Name): js.UndefOr[Error] = js.native
-    def setPointer(node: Node, name: Name, target: Node): js.UndefOr[Error] = js.native
+    def setPointer(node: Node, name: Name): js.UndefOr[js.Error] = js.native
+    def setPointer(node: Node, name: Name, target: Node): js.UndefOr[js.Error] = js.native
     
     /**
       * TODO
       * @param node the node in question.
       * @return 
       */
-    def setPointerMetaLimits(node: Node, memberPath: String): js.UndefOr[Error] = js.native
-    def setPointerMetaLimits(node: Node, memberPath: String, min: Double): js.UndefOr[Error] = js.native
-    def setPointerMetaLimits(node: Node, memberPath: String, min: Double, max: Double): js.UndefOr[Error] = js.native
-    def setPointerMetaLimits(node: Node, memberPath: String, min: Unit, max: Double): js.UndefOr[Error] = js.native
+    def setPointerMetaLimits(node: Node, memberPath: String): js.UndefOr[js.Error] = js.native
+    def setPointerMetaLimits(node: Node, memberPath: String, min: Double): js.UndefOr[js.Error] = js.native
+    def setPointerMetaLimits(node: Node, memberPath: String, min: Double, max: Double): js.UndefOr[js.Error] = js.native
+    def setPointerMetaLimits(node: Node, memberPath: String, min: Unit, max: Double): js.UndefOr[js.Error] = js.native
     
     /**
       * TODO
       * @param node the node in question.
       * @return 
       */
-    def setPointerMetaTarget(node: Node, name: Name, target: Node): js.UndefOr[Error] = js.native
-    def setPointerMetaTarget(node: Node, name: Name, target: Node, min: Double): js.UndefOr[Error] = js.native
-    def setPointerMetaTarget(node: Node, name: Name, target: Node, min: Double, max: Double): js.UndefOr[Error] = js.native
-    def setPointerMetaTarget(node: Node, name: Name, target: Node, min: Unit, max: Double): js.UndefOr[Error] = js.native
+    def setPointerMetaTarget(node: Node, name: Name, target: Node): js.UndefOr[js.Error] = js.native
+    def setPointerMetaTarget(node: Node, name: Name, target: Node, min: Double): js.UndefOr[js.Error] = js.native
+    def setPointerMetaTarget(node: Node, name: Name, target: Node, min: Double, max: Double): js.UndefOr[js.Error] = js.native
+    def setPointerMetaTarget(node: Node, name: Name, target: Node, min: Unit, max: Double): js.UndefOr[js.Error] = js.native
     
     /** 
       * TODO
@@ -1850,7 +1848,7 @@ object GmeClasses {
       * @param node the node in question.
       * @return 
       */
-    def setRegistry(node: Node, name: Name, value: InAttr): js.UndefOr[Error] = js.native
+    def setRegistry(node: Node, name: Name, value: InAttr): js.UndefOr[js.Error] = js.native
     
     /**
       * TODO
@@ -2010,7 +2008,7 @@ object GmeClasses {
       
       inline def setEnum(value: js.Array[String]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
       
-      inline def setEnumVarargs(value: String*): Self = StObject.set(x, "enum", js.Array(value :_*))
+      inline def setEnumVarargs(value: String*): Self = StObject.set(x, "enum", js.Array(value*))
       
       inline def setType(value: String | Double | Boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -2585,7 +2583,7 @@ object GmeClasses {
       * @param {function} callback - Invoked when objects have been collected.
       * @func
       */
-    def loadPaths(rootKey: MetadataHash, paths: js.Array[Path], callback: ResultCallback[js.Any]): Unit = js.native
+    def loadPaths(rootKey: MetadataHash, paths: js.Array[Path], callback: ResultCallback[Any]): Unit = js.native
     
     var logger: GmeLogger = js.native
     
@@ -2760,11 +2758,11 @@ object GmeClasses {
     /** array of hashes */
     var artifacts: js.Array[ArtifactHash] = js.native
     
-    var commits: js.Array[js.Any] = js.native
+    var commits: js.Array[Any] = js.native
     
-    var error: Error = js.native
+    var error: js.Error = js.native
     
-    var finishTime: Date = js.native
+    var finishTime: js.Date = js.native
     
     /**
       * Returns the plugin artifacts.
@@ -2807,14 +2805,14 @@ object GmeClasses {
     
     var pluginName: String = js.native
     
-    var projectId: js.Any = js.native
+    var projectId: Any = js.native
     
     /**
       * Serializes this object to a JSON representation.
       */
     def serialize(): FinishTime = js.native
     
-    def setError(error: Error): Unit = js.native
+    def setError(error: js.Error): Unit = js.native
     /**
       * Sets the error string if any error occured during execution.
       */
@@ -2848,7 +2846,7 @@ object GmeClasses {
       */
     def setSuccess(value: Boolean): Unit = js.native
     
-    var startTime: Date = js.native
+    var startTime: js.Date = js.native
     
     var success: Boolean = js.native
   }

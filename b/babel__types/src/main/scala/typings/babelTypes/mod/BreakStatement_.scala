@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   extends StObject
      with BaseNode
      with CompletionStatement
+     with Standardized
      with Statement
      with Terminatorless {
   

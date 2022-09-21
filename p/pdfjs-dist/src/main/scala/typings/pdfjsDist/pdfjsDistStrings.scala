@@ -7,14 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object pdfjsDistStrings {
   
   @js.native
-  sealed trait decode extends StObject
-  inline def decode: decode = "decode".asInstanceOf[decode]
+  sealed trait pdfjs_internal_editor_ extends StObject
+  inline def pdfjs_internal_editor_ : pdfjs_internal_editor_ = "pdfjs_internal_editor_".asInstanceOf[pdfjs_internal_editor_]
   
   @js.native
-  sealed trait display extends StObject
-  inline def display: display = "display".asInstanceOf[display]
-  
-  @js.native
-  sealed trait none extends StObject
-  inline def none: none = "none".asInstanceOf[none]
+  sealed trait pdfjs_internal_id_ extends StObject
+  inline def pdfjs_internal_id_ : pdfjs_internal_id_ = "pdfjs_internal_id_".asInstanceOf[pdfjs_internal_id_]
 }

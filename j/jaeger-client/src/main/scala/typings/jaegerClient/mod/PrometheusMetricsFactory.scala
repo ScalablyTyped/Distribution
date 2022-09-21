@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("jaeger-client", "PrometheusMetricsFactory")
 @js.native
-class PrometheusMetricsFactory protected () extends StObject {
+open class PrometheusMetricsFactory protected () extends StObject {
+  def this(client: Typeofprometheus) = this()
   def this(client: Typeofprometheus, serviceName: String) = this()
   
   def createCounter(name: String, tags: js.Object): Counter = js.native

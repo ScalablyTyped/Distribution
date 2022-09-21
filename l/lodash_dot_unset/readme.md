@@ -10,10 +10,10 @@ The lodash method `_.unset` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.unset |
 | Keywords           | lodash-modularized, unset |
-| # releases         | 0 |
-| # dependents       | 110 |
-| # downloads        | 2805347 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 358384.6666666667 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

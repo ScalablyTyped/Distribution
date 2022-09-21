@@ -34,7 +34,7 @@ object ServingRestriction {
     
     inline def setContextsUndefined: Self = StObject.set(x, "contexts", js.undefined)
     
-    inline def setContextsVarargs(value: ServingContext*): Self = StObject.set(x, "contexts", js.Array(value :_*))
+    inline def setContextsVarargs(value: ServingContext*): Self = StObject.set(x, "contexts", js.Array(value*))
     
     inline def setDisapproval(value: Disapproval): Self = StObject.set(x, "disapproval", value.asInstanceOf[js.Any])
     
@@ -42,7 +42,7 @@ object ServingRestriction {
     
     inline def setDisapprovalReasonsUndefined: Self = StObject.set(x, "disapprovalReasons", js.undefined)
     
-    inline def setDisapprovalReasonsVarargs(value: Disapproval*): Self = StObject.set(x, "disapprovalReasons", js.Array(value :_*))
+    inline def setDisapprovalReasonsVarargs(value: Disapproval*): Self = StObject.set(x, "disapprovalReasons", js.Array(value*))
     
     inline def setDisapprovalUndefined: Self = StObject.set(x, "disapproval", js.undefined)
     

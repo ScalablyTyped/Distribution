@@ -15,11 +15,11 @@ trait JoinOptions extends StObject {
   var role: js.UndefOr[Role] = js.undefined
   
   /** 房间号 */
-  var roomId: Double
+  var roomId: Double | String
 }
 object JoinOptions {
   
-  inline def apply(roomId: Double): JoinOptions = {
+  inline def apply(roomId: Double | String): JoinOptions = {
     val __obj = js.Dynamic.literal(roomId = roomId.asInstanceOf[js.Any])
     __obj.asInstanceOf[JoinOptions]
   }
@@ -34,6 +34,6 @@ object JoinOptions {
     
     inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
-    inline def setRoomId(value: Double): Self = StObject.set(x, "roomId", value.asInstanceOf[js.Any])
+    inline def setRoomId(value: Double | String): Self = StObject.set(x, "roomId", value.asInstanceOf[js.Any])
   }
 }

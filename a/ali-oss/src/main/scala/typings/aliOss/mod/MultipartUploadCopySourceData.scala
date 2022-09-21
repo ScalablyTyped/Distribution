@@ -6,15 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MultipartUploadCopySourceData extends StObject {
   
-  // data copy start byte offset, e.g: 0
+  /** data copy end byte offset, e.g: 102400 */
   var endOffset: Double
   
-  // the source object name
+  /** sourceData.  the source bucket name */
   var sourceBucketName: String
   
+  /** the source object name */
   var sourceKey: String
   
-  // sourceData.  the source bucket name
+  /** data copy start byte offset, e.g: 0 */
   var startOffset: Double
 }
 object MultipartUploadCopySourceData {

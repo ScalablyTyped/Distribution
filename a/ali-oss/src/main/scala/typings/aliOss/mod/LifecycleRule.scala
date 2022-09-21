@@ -6,18 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LifecycleRule extends StObject {
   
-  // expire after the days
+  /** expire date, e.g.: 2022-10-11T00:00:00.000Z date and days only set one. */
   var date: String
   
-  // rule status, allow values: Enabled or Disabled
+  /** expire after the days */
   var days: js.UndefOr[Double | String] = js.undefined
   
+  /** rule id, if not set, OSS will auto create it with random string. */
   var id: js.UndefOr[String] = js.undefined
   
-  // rule id, if not set, OSS will auto create it with random string.
+  /** store prefix */
   var prefix: String
   
-  // store prefix
+  /** rule status, allow values: Enabled or Disabled */
   var status: RuleStatusType
 }
 object LifecycleRule {

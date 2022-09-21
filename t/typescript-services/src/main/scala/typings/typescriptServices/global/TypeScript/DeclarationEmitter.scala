@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.DeclarationEmitter")
 @js.native
-class DeclarationEmitter protected ()
+open class DeclarationEmitter protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.DeclarationEmitter {
   def this(
@@ -18,184 +18,184 @@ class DeclarationEmitter protected ()
   ) = this()
   
   /* private */ /* CompleteClass */
-  override def canEmitDeclarations(declAST: js.Any): js.Any = js.native
+  override def canEmitDeclarations(declAST: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  var compiler: js.Any = js.native
+  var compiler: Any = js.native
   
   /* private */ /* CompleteClass */
-  var declFile: js.Any = js.native
+  var declFile: Any = js.native
   
   /* CompleteClass */
   var document: typings.typescriptServices.TypeScript.Document = js.native
   
   /* private */ /* CompleteClass */
-  override def emitAccessorDeclarationComments(funcDecl: js.Any): js.Any = js.native
+  override def emitAccessorDeclarationComments(funcDecl: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def emitArgDecl(argDecl: js.Any, id: js.Any, isOptional: js.Any, isPrivate: js.Any): js.Any = js.native
+  override def emitArgDecl(argDecl: Any, id: Any, isOptional: Any, isPrivate: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def emitBaseList(bases: js.Any, useExtendsList: js.Any): js.Any = js.native
+  override def emitBaseList(bases: Any, useExtendsList: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def emitCallSignature(funcDecl: js.Any): js.Any = js.native
+  override def emitCallSignature(funcDecl: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def emitClassElementModifiers(modifiers: js.Any): js.Any = js.native
+  override def emitClassElementModifiers(modifiers: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def emitClassMembersFromConstructorDefinition(funcDecl: js.Any): js.Any = js.native
+  override def emitClassMembersFromConstructorDefinition(funcDecl: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def emitComment(comment: js.Any): js.Any = js.native
+  override def emitComment(comment: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def emitConstructSignature(funcDecl: js.Any): js.Any = js.native
+  override def emitConstructSignature(funcDecl: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def emitDeclFlags(declarationAST: js.Any, typeString: js.Any): js.Any = js.native
+  override def emitDeclFlags(declarationAST: Any, typeString: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def emitDeclarationComments(ast: js.Any, endLine: js.Any): js.Any = js.native
+  override def emitDeclarationComments(ast: Any, endLine: Any): Any = js.native
   
   /* CompleteClass */
   override def emitDeclarations(sourceUnit: typings.typescriptServices.TypeScript.SourceUnit): Unit = js.native
   
   /* private */ /* CompleteClass */
-  override def emitDeclarationsForAST(ast: js.Any): js.Any = js.native
+  override def emitDeclarationsForAST(ast: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def emitDeclarationsForClassDeclaration(classDecl: js.Any): js.Any = js.native
+  override def emitDeclarationsForClassDeclaration(classDecl: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def emitDeclarationsForConstructorDeclaration(funcDecl: js.Any): js.Any = js.native
+  override def emitDeclarationsForConstructorDeclaration(funcDecl: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def emitDeclarationsForEnumDeclaration(moduleDecl: js.Any): js.Any = js.native
+  override def emitDeclarationsForEnumDeclaration(moduleDecl: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def emitDeclarationsForExportAssignment(ast: js.Any): js.Any = js.native
+  override def emitDeclarationsForExportAssignment(ast: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def emitDeclarationsForFunctionDeclaration(funcDecl: js.Any): js.Any = js.native
+  override def emitDeclarationsForFunctionDeclaration(funcDecl: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def emitDeclarationsForGetAccessor(funcDecl: js.Any): js.Any = js.native
+  override def emitDeclarationsForGetAccessor(funcDecl: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def emitDeclarationsForImportDeclaration(importDeclAST: js.Any): js.Any = js.native
+  override def emitDeclarationsForImportDeclaration(importDeclAST: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def emitDeclarationsForInterfaceDeclaration(interfaceDecl: js.Any): js.Any = js.native
+  override def emitDeclarationsForInterfaceDeclaration(interfaceDecl: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def emitDeclarationsForList(list: js.Any): js.Any = js.native
+  override def emitDeclarationsForList(list: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def emitDeclarationsForMemberVariableDeclaration(varDecl: js.Any): js.Any = js.native
+  override def emitDeclarationsForMemberVariableDeclaration(varDecl: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def emitDeclarationsForModuleDeclaration(moduleDecl: js.Any): js.Any = js.native
+  override def emitDeclarationsForModuleDeclaration(moduleDecl: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def emitDeclarationsForSetAccessor(funcDecl: js.Any): js.Any = js.native
+  override def emitDeclarationsForSetAccessor(funcDecl: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def emitDeclarationsForSourceUnit(sourceUnit: js.Any): js.Any = js.native
+  override def emitDeclarationsForSourceUnit(sourceUnit: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def emitDeclarationsForVariableDeclaration(variableDeclaration: js.Any): js.Any = js.native
+  override def emitDeclarationsForVariableDeclaration(variableDeclaration: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def emitDeclarationsForVariableStatement(variableStatement: js.Any): js.Any = js.native
+  override def emitDeclarationsForVariableStatement(variableStatement: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def emitHeritageClause(clause: js.Any): js.Any = js.native
+  override def emitHeritageClause(clause: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def emitHeritageClauses(clauses: js.Any): js.Any = js.native
+  override def emitHeritageClauses(clauses: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def emitIndent(): js.Any = js.native
+  override def emitIndent(): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def emitIndexMemberDeclaration(funcDecl: js.Any): js.Any = js.native
+  override def emitIndexMemberDeclaration(funcDecl: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def emitIndexSignature(funcDecl: js.Any): js.Any = js.native
+  override def emitIndexSignature(funcDecl: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def emitMemberAccessorDeclaration(funcDecl: js.Any, modifiers: js.Any, name: js.Any): js.Any = js.native
+  override def emitMemberAccessorDeclaration(funcDecl: Any, modifiers: Any, name: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def emitMemberFunctionDeclaration(funcDecl: js.Any): js.Any = js.native
+  override def emitMemberFunctionDeclaration(funcDecl: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def emitMethodSignature(funcDecl: js.Any): js.Any = js.native
+  override def emitMethodSignature(funcDecl: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  var emitOptions: js.Any = js.native
+  var emitOptions: Any = js.native
   
   /* private */ /* CompleteClass */
-  override def emitParameterList(isPrivate: js.Any, parameterList: js.Any): js.Any = js.native
+  override def emitParameterList(isPrivate: Any, parameterList: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def emitParameters(isPrivate: js.Any, parameterList: js.Any): js.Any = js.native
+  override def emitParameters(isPrivate: Any, parameterList: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def emitPropertySignature(varDecl: js.Any): js.Any = js.native
+  override def emitPropertySignature(varDecl: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def emitReferencePaths(sourceUnit: js.Any): js.Any = js.native
+  override def emitReferencePaths(sourceUnit: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def emitSeparatedList(list: js.Any): js.Any = js.native
+  override def emitSeparatedList(list: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def emitTypeNamesMember(memberName: js.Any, emitIndent: js.Any): js.Any = js.native
+  override def emitTypeNamesMember(memberName: Any, emitIndent: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def emitTypeOfVariableDeclaratorOrParameter(boundDecl: js.Any): js.Any = js.native
+  override def emitTypeOfVariableDeclaratorOrParameter(boundDecl: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def emitTypeParameters(typeParams: js.Any, funcSignature: js.Any): js.Any = js.native
+  override def emitTypeParameters(typeParams: Any, funcSignature: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def emitTypeSignature(ast: js.Any, `type`: js.Any): js.Any = js.native
+  override def emitTypeSignature(ast: Any, `type`: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def emitVariableDeclarator(varDecl: js.Any, isFirstVarInList: js.Any, isLastVarInList: js.Any): js.Any = js.native
+  override def emitVariableDeclarator(varDecl: Any, isFirstVarInList: Any, isLastVarInList: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  var emittedReferencePaths: js.Any = js.native
+  var emittedReferencePaths: Any = js.native
   
   /* private */ /* CompleteClass */
-  var emittingFileName: js.Any = js.native
+  var emittingFileName: Any = js.native
   
   /* private */ /* CompleteClass */
-  override def getDeclFlagsString(pullDecl: js.Any, typeString: js.Any): js.Any = js.native
+  override def getDeclFlagsString(pullDecl: Any, typeString: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def getIndentString(declIndent: js.Any): js.Any = js.native
+  override def getIndentString(declIndent: Any): Any = js.native
   
   /* CompleteClass */
   override def getOutputFile(): typings.typescriptServices.TypeScript.OutputFile = js.native
   
   /* private */ /* CompleteClass */
-  var indenter: js.Any = js.native
+  var indenter: Any = js.native
   
   /* private */ /* CompleteClass */
-  override def isOverloadedCallSignature(funcDecl: js.Any): js.Any = js.native
+  override def isOverloadedCallSignature(funcDecl: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def resolveScriptReference(document: js.Any, reference: js.Any): js.Any = js.native
+  override def resolveScriptReference(document: Any, reference: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  var semanticInfoChain: js.Any = js.native
+  var semanticInfoChain: Any = js.native
   
   /* private */ /* CompleteClass */
-  override def writeDeclarationComments(declComments: js.Any, endLine: js.Any): js.Any = js.native
+  override def writeDeclarationComments(declComments: Any, endLine: Any): Any = js.native
 }
 object DeclarationEmitter {
   

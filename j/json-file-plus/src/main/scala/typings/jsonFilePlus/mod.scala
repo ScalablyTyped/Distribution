@@ -1,8 +1,7 @@
 package typings.jsonFilePlus
 
 import typings.jsonFilePlus.jsonFilePlusStrings.Charactertabulation
-import typings.node.Buffer
-import typings.std.Error
+import typings.node.bufferMod.global.Buffer
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,31 +17,31 @@ object mod {
   
   @JSImport("json-file-plus", "JSONData")
   @js.native
-  class JSONData protected () extends StObject {
+  open class JSONData protected () extends StObject {
     def this(raw: String) = this()
     
-    var data: js.Any = js.native
+    var data: Any = js.native
     
     var format: Format = js.native
     
-    def get(key: PropertyKey): js.Promise[js.Any] = js.native
+    def get(key: PropertyKey): js.Promise[Any] = js.native
     
     def remove(key: PropertyKey): js.Promise[Unit] = js.native
     
-    def set(data: js.Any): Unit = js.native
+    def set(data: Any): Unit = js.native
     
     def stringify(): Buffer = js.native
   }
   
   @JSImport("json-file-plus", "JSONFile")
   @js.native
-  class JSONFile protected () extends JSONData {
+  open class JSONFile protected () extends JSONData {
     def this(filename: String, raw: String) = this()
     
     var filename: String = js.native
     
     def save(): js.Promise[Unit] = js.native
-    def save(cb: js.Function1[/* err */ Error, Unit]): js.Promise[Unit] = js.native
+    def save(cb: js.Function1[/* err */ js.Error, Unit]): js.Promise[Unit] = js.native
     
     def saveSync(): Unit = js.native
   }

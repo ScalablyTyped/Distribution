@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "LayersModel")
 @js.native
-class LayersModel protected ()
+open class LayersModel protected ()
   extends typings.tensorflowTfjs.mod.LayersModel {
   def this(args: ContainerArgs) = this()
 }

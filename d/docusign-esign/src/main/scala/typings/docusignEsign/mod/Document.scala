@@ -227,7 +227,7 @@ object Document {
     
     inline def setDocumentFieldsVarargs(
       value: (/* A name-value pair that describes an item and provides a value for the item. */ NameValue)*
-    ): Self = StObject.set(x, "documentFields", js.Array(value :_*))
+    ): Self = StObject.set(x, "documentFields", js.Array(value*))
     
     inline def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
     
@@ -267,7 +267,7 @@ object Document {
     
     inline def setMatchBoxesUndefined: Self = StObject.set(x, "matchBoxes", js.undefined)
     
-    inline def setMatchBoxesVarargs(value: MatchBox*): Self = StObject.set(x, "matchBoxes", js.Array(value :_*))
+    inline def setMatchBoxesVarargs(value: MatchBox*): Self = StObject.set(x, "matchBoxes", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -277,7 +277,7 @@ object Document {
     
     inline def setOcrRequestsUndefined: Self = StObject.set(x, "ocrRequests", js.undefined)
     
-    inline def setOcrRequestsVarargs(value: OcrRequest*): Self = StObject.set(x, "ocrRequests", js.Array(value :_*))
+    inline def setOcrRequestsVarargs(value: OcrRequest*): Self = StObject.set(x, "ocrRequests", js.Array(value*))
     
     inline def setOrder(value: String): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
@@ -291,7 +291,7 @@ object Document {
     
     inline def setPageSizesUndefined: Self = StObject.set(x, "pageSizes", js.undefined)
     
-    inline def setPageSizesVarargs(value: PageSize*): Self = StObject.set(x, "pageSizes", js.Array(value :_*))
+    inline def setPageSizesVarargs(value: PageSize*): Self = StObject.set(x, "pageSizes", js.Array(value*))
     
     inline def setPages(value: String): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("FilePrintCommand")
 @js.native
-class FilePrintCommand ()
+open class FilePrintCommand ()
   extends StObject
      with typings.devexpressWeb.FilePrintCommand {
   

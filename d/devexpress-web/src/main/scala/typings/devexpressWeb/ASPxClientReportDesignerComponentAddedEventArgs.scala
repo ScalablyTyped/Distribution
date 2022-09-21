@@ -14,24 +14,24 @@ trait ASPxClientReportDesignerComponentAddedEventArgs
   /**
     * Gets the model of a component that has been added to a report.
     */
-  var Model: js.Any
+  var Model: Any
   
   /**
     * Gets the parent of a component that has been added to a report.
     */
-  var Parent: js.Any
+  var Parent: Any
 }
 object ASPxClientReportDesignerComponentAddedEventArgs {
   
-  inline def apply(Model: js.Any, Parent: js.Any): ASPxClientReportDesignerComponentAddedEventArgs = {
+  inline def apply(Model: Any, Parent: Any): ASPxClientReportDesignerComponentAddedEventArgs = {
     val __obj = js.Dynamic.literal(Model = Model.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientReportDesignerComponentAddedEventArgs]
   }
   
   extension [Self <: ASPxClientReportDesignerComponentAddedEventArgs](x: Self) {
     
-    inline def setModel(value: js.Any): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
+    inline def setModel(value: Any): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
   }
 }

@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/// https://novadocs.panic.com/api-reference/process-message/
+/// https://docs.nova.app/api-reference/process-message/
 trait ProcessMessage[P, R, E] extends StObject {
   
   val errorCode: Double | Null

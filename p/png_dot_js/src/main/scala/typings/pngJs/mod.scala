@@ -1,11 +1,8 @@
 package typings.pngJs
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.pngJs.pngJsNumbers.`0`
 import typings.pngJs.pngJsNumbers.`1`
-import typings.std.ArrayBuffer
-import typings.std.Error
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,13 +11,13 @@ object mod {
   
   @JSImport("png.js", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with PNGReader {
     def this(bytes: String) = this()
+    def this(bytes: js.typedarray.ArrayBuffer) = this()
+    def this(bytes: js.typedarray.Uint8Array) = this()
     def this(bytes: Buffer) = this()
-    def this(bytes: ArrayBuffer) = this()
-    def this(bytes: Uint8Array) = this()
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -62,77 +59,173 @@ object mod {
     inline def `6`: typings.pngJs.pngJsNumbers.`6` = 6.asInstanceOf[typings.pngJs.pngJsNumbers.`6`]
   }
   
-  @js.native
   trait PNG extends StObject {
     
-    var alpha: Boolean = js.native
+    var alpha: Boolean
     
-    var bitDepth: BitDepth = js.native
+    var bitDepth: BitDepth
     
-    var colorType: ColorType = js.native
+    var colorType: ColorType
     
-    var colors: Double = js.native
+    var colors: Double
     
-    var compressionMethod: `0` = js.native
+    var compressionMethod: `0`
     
-    var filterMethod: `0` = js.native
+    var filterMethod: `0`
     
-    def getBitDepth(): BitDepth = js.native
+    def getBitDepth(): BitDepth
     
-    def getColorType(): ColorType = js.native
+    def getColorType(): ColorType
     
-    def getCompressionMethod(): `0` = js.native
+    def getCompressionMethod(): `0`
     
-    def getFilterMethod(): `0` = js.native
+    def getFilterMethod(): `0`
     
-    def getHeight(): Double = js.native
+    def getHeight(): Double
     
-    def getInterlaceMethod(): `0` | `1` = js.native
+    def getInterlaceMethod(): `0` | `1`
     
-    def getPalette(): js.Array[Double] = js.native
+    def getPalette(): js.Array[Double]
     
-    def getPixel(x: Double, y: Double): js.Tuple4[Double, Double, Double, Double] = js.native
+    def getPixel(x: Double, y: Double): js.Tuple4[Double, Double, Double, Double]
     
-    def getWidth(): Double = js.native
+    def getWidth(): Double
     
-    var height: Double = js.native
+    var height: Double
     
-    var interlaceMethod: `0` | `1` = js.native
+    var interlaceMethod: `0` | `1`
     
-    var palette: js.Array[Double] | Null = js.native
+    var palette: js.Array[Double] | Null
     
-    var pixelBits: Double = js.native
+    var pixelBits: Double
     
-    var pixels: Buffer | Null = js.native
+    var pixels: Buffer | Null
     
-    def setBitDepth(bitDepth: BitDepth): Unit = js.native
+    def setBitDepth(bitDepth: BitDepth): Unit
     
-    def setColorType(colorType: ColorType): Unit = js.native
+    def setColorType(colorType: ColorType): Unit
     
     @JSName("setCompressionMethod")
-    def setCompressionMethod_0(compressionMethod: `0`): Unit = js.native
+    def setCompressionMethod_0(compressionMethod: `0`): Unit
     
     @JSName("setFilterMethod")
-    def setFilterMethod_0(filterMethod: `0`): Unit = js.native
+    def setFilterMethod_0(filterMethod: `0`): Unit
     
-    def setHeight(height: Double): Unit = js.native
+    def setHeight(height: Double): Unit
     
-    @JSName("setInterlaceMethod")
-    def setInterlaceMethod_0(interlaceMethod: `0`): Unit = js.native
-    @JSName("setInterlaceMethod")
-    def setInterlaceMethod_1(interlaceMethod: `1`): Unit = js.native
+    def setInterlaceMethod(interlaceMethod: `0` | `1`): Unit
     
-    def setPalette(palette: js.Array[Double]): Unit = js.native
+    def setPalette(palette: js.Array[Double]): Unit
     
-    def setWidth(width: Double): Unit = js.native
+    def setWidth(width: Double): Unit
     
-    var width: Double = js.native
+    var width: Double
+  }
+  object PNG {
+    
+    inline def apply(
+      alpha: Boolean,
+      bitDepth: BitDepth,
+      colorType: ColorType,
+      colors: Double,
+      getBitDepth: () => BitDepth,
+      getColorType: () => ColorType,
+      getCompressionMethod: () => `0`,
+      getFilterMethod: () => `0`,
+      getHeight: () => Double,
+      getInterlaceMethod: () => `0` | `1`,
+      getPalette: () => js.Array[Double],
+      getPixel: (Double, Double) => js.Tuple4[Double, Double, Double, Double],
+      getWidth: () => Double,
+      height: Double,
+      interlaceMethod: `0` | `1`,
+      pixelBits: Double,
+      setBitDepth: BitDepth => Unit,
+      setColorType: ColorType => Unit,
+      setCompressionMethod: `0` => Unit,
+      setFilterMethod: `0` => Unit,
+      setHeight: Double => Unit,
+      setInterlaceMethod: `0` | `1` => Unit,
+      setPalette: js.Array[Double] => Unit,
+      setWidth: Double => Unit,
+      width: Double
+    ): PNG = {
+      val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any], bitDepth = bitDepth.asInstanceOf[js.Any], colorType = colorType.asInstanceOf[js.Any], colors = colors.asInstanceOf[js.Any], compressionMethod = 0, filterMethod = 0, getBitDepth = js.Any.fromFunction0(getBitDepth), getColorType = js.Any.fromFunction0(getColorType), getCompressionMethod = js.Any.fromFunction0(getCompressionMethod), getFilterMethod = js.Any.fromFunction0(getFilterMethod), getHeight = js.Any.fromFunction0(getHeight), getInterlaceMethod = js.Any.fromFunction0(getInterlaceMethod), getPalette = js.Any.fromFunction0(getPalette), getPixel = js.Any.fromFunction2(getPixel), getWidth = js.Any.fromFunction0(getWidth), height = height.asInstanceOf[js.Any], interlaceMethod = interlaceMethod.asInstanceOf[js.Any], pixelBits = pixelBits.asInstanceOf[js.Any], setBitDepth = js.Any.fromFunction1(setBitDepth), setColorType = js.Any.fromFunction1(setColorType), setCompressionMethod = js.Any.fromFunction1(setCompressionMethod), setFilterMethod = js.Any.fromFunction1(setFilterMethod), setHeight = js.Any.fromFunction1(setHeight), setInterlaceMethod = js.Any.fromFunction1(setInterlaceMethod), setPalette = js.Any.fromFunction1(setPalette), setWidth = js.Any.fromFunction1(setWidth), width = width.asInstanceOf[js.Any], palette = null, pixels = null)
+      __obj.asInstanceOf[PNG]
+    }
+    
+    extension [Self <: PNG](x: Self) {
+      
+      inline def setAlpha(value: Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+      
+      inline def setBitDepth(value: BitDepth): Self = StObject.set(x, "bitDepth", value.asInstanceOf[js.Any])
+      
+      inline def setColorType(value: ColorType): Self = StObject.set(x, "colorType", value.asInstanceOf[js.Any])
+      
+      inline def setColors(value: Double): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      
+      inline def setCompressionMethod(value: `0`): Self = StObject.set(x, "compressionMethod", value.asInstanceOf[js.Any])
+      
+      inline def setFilterMethod(value: `0`): Self = StObject.set(x, "filterMethod", value.asInstanceOf[js.Any])
+      
+      inline def setGetBitDepth(value: () => BitDepth): Self = StObject.set(x, "getBitDepth", js.Any.fromFunction0(value))
+      
+      inline def setGetColorType(value: () => ColorType): Self = StObject.set(x, "getColorType", js.Any.fromFunction0(value))
+      
+      inline def setGetCompressionMethod(value: () => `0`): Self = StObject.set(x, "getCompressionMethod", js.Any.fromFunction0(value))
+      
+      inline def setGetFilterMethod(value: () => `0`): Self = StObject.set(x, "getFilterMethod", js.Any.fromFunction0(value))
+      
+      inline def setGetHeight(value: () => Double): Self = StObject.set(x, "getHeight", js.Any.fromFunction0(value))
+      
+      inline def setGetInterlaceMethod(value: () => `0` | `1`): Self = StObject.set(x, "getInterlaceMethod", js.Any.fromFunction0(value))
+      
+      inline def setGetPalette(value: () => js.Array[Double]): Self = StObject.set(x, "getPalette", js.Any.fromFunction0(value))
+      
+      inline def setGetPixel(value: (Double, Double) => js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "getPixel", js.Any.fromFunction2(value))
+      
+      inline def setGetWidth(value: () => Double): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
+      
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      
+      inline def setInterlaceMethod(value: `0` | `1`): Self = StObject.set(x, "interlaceMethod", value.asInstanceOf[js.Any])
+      
+      inline def setPalette(value: js.Array[Double]): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
+      
+      inline def setPaletteNull: Self = StObject.set(x, "palette", null)
+      
+      inline def setPaletteVarargs(value: Double*): Self = StObject.set(x, "palette", js.Array(value*))
+      
+      inline def setPixelBits(value: Double): Self = StObject.set(x, "pixelBits", value.asInstanceOf[js.Any])
+      
+      inline def setPixels(value: Buffer): Self = StObject.set(x, "pixels", value.asInstanceOf[js.Any])
+      
+      inline def setPixelsNull: Self = StObject.set(x, "pixels", null)
+      
+      inline def setSetBitDepth(value: BitDepth => Unit): Self = StObject.set(x, "setBitDepth", js.Any.fromFunction1(value))
+      
+      inline def setSetColorType(value: ColorType => Unit): Self = StObject.set(x, "setColorType", js.Any.fromFunction1(value))
+      
+      inline def setSetCompressionMethod(value: `0` => Unit): Self = StObject.set(x, "setCompressionMethod", js.Any.fromFunction1(value))
+      
+      inline def setSetFilterMethod(value: `0` => Unit): Self = StObject.set(x, "setFilterMethod", js.Any.fromFunction1(value))
+      
+      inline def setSetHeight(value: Double => Unit): Self = StObject.set(x, "setHeight", js.Any.fromFunction1(value))
+      
+      inline def setSetInterlaceMethod(value: `0` | `1` => Unit): Self = StObject.set(x, "setInterlaceMethod", js.Any.fromFunction1(value))
+      
+      inline def setSetPalette(value: js.Array[Double] => Unit): Self = StObject.set(x, "setPalette", js.Any.fromFunction1(value))
+      
+      inline def setSetWidth(value: Double => Unit): Self = StObject.set(x, "setWidth", js.Any.fromFunction1(value))
+      
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    }
   }
   
   @js.native
   trait PNGReader extends StObject {
     
-    var bytes: Uint8Array | js.Array[Double] | Buffer = js.native
+    var bytes: js.typedarray.Uint8Array | js.Array[Double] | Buffer = js.native
     
     var dataChunks: js.Array[js.Array[Double]] = js.native
     
@@ -144,7 +237,7 @@ object mod {
     var png: PNG = js.native
   }
   
-  type ParseCallback = js.Function2[/* err */ js.UndefOr[Error], /* png */ PNG, Unit]
+  type ParseCallback = js.Function2[/* err */ js.UndefOr[js.Error], /* png */ PNG, Unit]
   
   trait ParseOptions extends StObject {
     

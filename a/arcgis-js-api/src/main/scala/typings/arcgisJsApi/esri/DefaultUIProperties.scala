@@ -28,6 +28,6 @@ object DefaultUIProperties {
     
     inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
     
-    inline def setComponentsVarargs(value: String*): Self = StObject.set(x, "components", js.Array(value :_*))
+    inline def setComponentsVarargs(value: String*): Self = StObject.set(x, "components", js.Array(value*))
   }
 }

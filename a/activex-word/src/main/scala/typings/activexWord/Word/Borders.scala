@@ -57,7 +57,7 @@ trait Borders extends StObject {
   
   var OutsideLineWidth: WdLineWidth
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Shadow: Boolean
   
@@ -96,7 +96,7 @@ object Borders {
     OutsideColorIndex: WdColorIndex,
     OutsideLineStyle: WdLineStyle,
     OutsideLineWidth: WdLineWidth,
-    Parent: js.Any,
+    Parent: Any,
     Shadow: Boolean,
     SurroundFooter: Boolean,
     SurroundHeader: Boolean,
@@ -159,7 +159,7 @@ object Borders {
     
     inline def setOutsideLineWidth(value: WdLineWidth): Self = StObject.set(x, "OutsideLineWidth", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setShadow(value: Boolean): Self = StObject.set(x, "Shadow", value.asInstanceOf[js.Any])
     

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("go", "Iterator")
 @js.native
-class Iterator[T] () extends Iterable[T] {
+open class Iterator[T] () extends Iterable[T] {
   
   /**
     * This is true if all invocations of the given predicate on items in the collection are true.
@@ -47,7 +47,7 @@ class Iterator[T] () extends Iterable[T] {
   def first(): T = js.native
   
   /**This read-only property returns the current index to the item in the collection, assuming .next has just returned true.*/
-  var key: js.Any = js.native
+  var key: Any = js.native
   
   /**
     * Call this method to advance the iterator to the next item in the collection.

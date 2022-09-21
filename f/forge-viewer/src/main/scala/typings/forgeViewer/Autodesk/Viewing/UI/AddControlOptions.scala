@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AddControlOptions
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
-  var index: js.UndefOr[js.Object] = js.undefined
+  var index: js.UndefOr[Double] = js.undefined
 }
 object AddControlOptions {
   
@@ -20,7 +20,7 @@ object AddControlOptions {
   
   extension [Self <: AddControlOptions](x: Self) {
     
-    inline def setIndex(value: js.Object): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
   }

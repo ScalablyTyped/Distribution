@@ -54,7 +54,7 @@ object EarconOptionsObject {
     
     inline def setInstruments(value: js.Array[EarconInstrument]): Self = StObject.set(x, "instruments", value.asInstanceOf[js.Any])
     
-    inline def setInstrumentsVarargs(value: EarconInstrument*): Self = StObject.set(x, "instruments", js.Array(value :_*))
+    inline def setInstrumentsVarargs(value: EarconInstrument*): Self = StObject.set(x, "instruments", js.Array(value*))
     
     inline def setOnEnd(value: js.Function): Self = StObject.set(x, "onEnd", value.asInstanceOf[js.Any])
     

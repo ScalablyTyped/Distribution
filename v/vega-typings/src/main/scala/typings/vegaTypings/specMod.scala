@@ -79,7 +79,7 @@ object specMod {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setStyleVarargs(value: String*): Self = StObject.set(x, "style", js.Array(value :_*))
+      inline def setStyleVarargs(value: String*): Self = StObject.set(x, "style", js.Array(value*))
       
       inline def setWidth(value: Double | SignalRef): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       

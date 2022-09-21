@@ -12,7 +12,7 @@ trait DescribeMaintenanceWindowsForTargetResult extends StObject {
   var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.undefined
   
   /**
-    * Information about the maintenance window targets and tasks an instance is associated with.
+    * Information about the maintenance window targets and tasks a managed node is associated with.
     */
   var WindowIdentities: js.UndefOr[MaintenanceWindowsForTargetList] = js.undefined
 }
@@ -33,6 +33,6 @@ object DescribeMaintenanceWindowsForTargetResult {
     
     inline def setWindowIdentitiesUndefined: Self = StObject.set(x, "WindowIdentities", js.undefined)
     
-    inline def setWindowIdentitiesVarargs(value: MaintenanceWindowIdentityForTarget*): Self = StObject.set(x, "WindowIdentities", js.Array(value :_*))
+    inline def setWindowIdentitiesVarargs(value: MaintenanceWindowIdentityForTarget*): Self = StObject.set(x, "WindowIdentities", js.Array(value*))
   }
 }

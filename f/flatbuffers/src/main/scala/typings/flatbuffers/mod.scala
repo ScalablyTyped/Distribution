@@ -1,9 +1,5 @@
 package typings.flatbuffers
 
-import typings.std.Float32Array
-import typings.std.Float64Array
-import typings.std.Int32Array
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +11,7 @@ object mod {
     ////////////////////////////////////////////////////////////////////////////////
     @JSImport("flatbuffers", "flatbuffers.Builder")
     @js.native
-    class Builder ()
+    open class Builder ()
       extends typings.flatbuffers.mod.global.flatbuffers.Builder {
       def this(initial_size: Double) = this()
     }
@@ -40,9 +36,9 @@ object mod {
     ////////////////////////////////////////////////////////////////////////////////
     @JSImport("flatbuffers", "flatbuffers.ByteBuffer")
     @js.native
-    class ByteBuffer protected ()
+    open class ByteBuffer protected ()
       extends typings.flatbuffers.mod.global.flatbuffers.ByteBuffer {
-      def this(bytes: Uint8Array) = this()
+      def this(bytes: js.typedarray.Uint8Array) = this()
     }
     object ByteBuffer {
       
@@ -73,7 +69,7 @@ object mod {
     ////////////////////////////////////////////////////////////////////////////////
     @JSImport("flatbuffers", "flatbuffers.Long")
     @js.native
-    class Long protected ()
+    open class Long protected ()
       extends typings.flatbuffers.mod.global.flatbuffers.Long {
       def this(low: Double, high: Double) = this()
     }
@@ -107,15 +103,15 @@ object mod {
     
     @JSImport("flatbuffers", "flatbuffers.float32")
     @js.native
-    val float32: Float32Array = js.native
+    val float32: js.typedarray.Float32Array = js.native
     
     @JSImport("flatbuffers", "flatbuffers.float64")
     @js.native
-    val float64: Float64Array = js.native
+    val float64: js.typedarray.Float64Array = js.native
     
     @JSImport("flatbuffers", "flatbuffers.int32")
     @js.native
-    val int32: Int32Array = js.native
+    val int32: js.typedarray.Int32Array = js.native
     
     @JSImport("flatbuffers", "flatbuffers.isLittleEndian")
     @js.native
@@ -129,7 +125,7 @@ object mod {
       ////////////////////////////////////////////////////////////////////////////////
       @JSGlobal("flatbuffers.Builder")
       @js.native
-      class Builder () extends StObject {
+      open class Builder () extends StObject {
         def this(initial_size: Double) = this()
         
         def addFieldFloat32(voffset: Double, value: Double, defaultValue: Double): Unit = js.native
@@ -175,7 +171,7 @@ object mod {
           * called finish(). The actual data starts at the ByteBuffer's current position,
           * not necessarily at 0.
           */
-        def asUint8Array(): Uint8Array = js.native
+        def asUint8Array(): js.typedarray.Uint8Array = js.native
         
         /**
           * Reset all the state in this FlatBufferBuilder
@@ -196,7 +192,7 @@ object mod {
           * @return The offset in the buffer where the encoded string starts
           */
         def createString(s: String): Offset = js.native
-        def createString(s: Uint8Array): Offset = js.native
+        def createString(s: js.typedarray.Uint8Array): Offset = js.native
         
         /**
           * Get the ByteBuffer representing the FlatBuffer. Only call this after you've
@@ -333,8 +329,8 @@ object mod {
       ////////////////////////////////////////////////////////////////////////////////
       @JSGlobal("flatbuffers.ByteBuffer")
       @js.native
-      class ByteBuffer protected () extends StObject {
-        def this(bytes: Uint8Array) = this()
+      open class ByteBuffer protected () extends StObject {
+        def this(bytes: js.typedarray.Uint8Array) = this()
         
         def __has_identifier(ident: String): Boolean = js.native
         
@@ -360,8 +356,8 @@ object mod {
           *
           * @param optionalEncoding Defaults to UTF16_STRING
           */
-        def __string(offset: Double): String | Uint8Array = js.native
-        def __string(offset: Double, optionalEncoding: Encoding): String | Uint8Array = js.native
+        def __string(offset: Double): String | js.typedarray.Uint8Array = js.native
+        def __string(offset: Double, optionalEncoding: Encoding): String | js.typedarray.Uint8Array = js.native
         
         /**
           * Initialize any Table-derived type to point to the union at the given offset.
@@ -378,7 +374,7 @@ object mod {
           */
         def __vector_len(offset: Double): Double = js.native
         
-        def bytes(): Uint8Array = js.native
+        def bytes(): js.typedarray.Uint8Array = js.native
         
         def capacity(): Double = js.native
         
@@ -474,10 +470,8 @@ object mod {
       ////////////////////////////////////////////////////////////////////////////////
       @JSGlobal("flatbuffers.Long")
       @js.native
-      class Long protected () extends StObject {
+      open class Long protected () extends StObject {
         def this(low: Double, high: Double) = this()
-        
-        def equals(other: js.Any): Boolean = js.native
         
         var high: Double = js.native
         
@@ -515,15 +509,15 @@ object mod {
       
       @JSGlobal("flatbuffers.float32")
       @js.native
-      val float32: Float32Array = js.native
+      val float32: js.typedarray.Float32Array = js.native
       
       @JSGlobal("flatbuffers.float64")
       @js.native
-      val float64: Float64Array = js.native
+      val float64: js.typedarray.Float64Array = js.native
       
       @JSGlobal("flatbuffers.int32")
       @js.native
-      val int32: Int32Array = js.native
+      val int32: js.typedarray.Int32Array = js.native
       
       @JSGlobal("flatbuffers.isLittleEndian")
       @js.native

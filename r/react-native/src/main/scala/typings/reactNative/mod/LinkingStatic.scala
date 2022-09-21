@@ -1,7 +1,8 @@
 package typings.reactNative.mod
 
 import typings.reactNative.anon.Key
-import typings.reactNative.anon.UrlString
+import typings.reactNative.anon.Url
+import typings.reactNative.reactNativeStrings.url_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,8 @@ trait LinkingStatic
     * Add a handler to Linking changes by listening to the `url` event type
     * and providing the handler
     */
-  def addEventListener(`type`: String, handler: js.Function1[/* event */ UrlString, Unit]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_url(`type`: url_, handler: js.Function1[/* event */ Url, Unit]): EmitterSubscription = js.native
   
   /**
     * Determine whether or not an installed app can handle a given URL.
@@ -42,12 +44,7 @@ trait LinkingStatic
     * NOTE: This method will fail if the system doesn't know how to open the specified URL. If you're passing in a non-http(s) URL, it's best to check {@code canOpenURL} first.
     * NOTE: For web URLs, the protocol ("http://", "https://") must be set accordingly!
     */
-  def openURL(url: String): js.Promise[js.Any] = js.native
-  
-  /**
-    * Remove a handler by passing the `url` event type and the handler
-    */
-  def removeEventListener(`type`: String, handler: js.Function1[/* event */ UrlString, Unit]): Unit = js.native
+  def openURL(url: String): js.Promise[Any] = js.native
   
   /**
     * Sends an Android Intent - a broad surface to express Android functions.  Useful for deep-linking to settings pages,

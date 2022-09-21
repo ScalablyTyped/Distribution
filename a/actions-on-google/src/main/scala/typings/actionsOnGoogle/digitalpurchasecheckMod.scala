@@ -16,7 +16,7 @@ object digitalpurchasecheckMod {
     * @param options The raw {@link GoogleActionsTransactionsV3DigitalPurchaseCheckSpec}
     * @public
     */
-  class DigitalPurchaseCheck () extends SoloHelper[
+  open class DigitalPurchaseCheck () extends SoloHelper[
           actionsDotintentDotDIGITAL_PURCHASE_CHECK, 
           GoogleActionsTransactionsV3DigitalPurchaseCheckSpec
         ] {

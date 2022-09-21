@@ -6,7 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SimplificationQueue extends StObject {
   
-  /* private */ var _simplificationArray: js.Any
+  /* private */ var _getSimplifier: Any
+  
+  /* private */ var _simplificationArray: Any
   
   /**
     * Adds a new simplification task
@@ -18,8 +20,6 @@ trait SimplificationQueue extends StObject {
     * Execute next task
     */
   def executeNext(): Unit
-  
-  /* private */ var getSimplifier: js.Any
   
   /**
     * Execute a simplification task
@@ -35,14 +35,14 @@ trait SimplificationQueue extends StObject {
 object SimplificationQueue {
   
   inline def apply(
-    _simplificationArray: js.Any,
+    _getSimplifier: Any,
+    _simplificationArray: Any,
     addTask: ISimplificationTask => Unit,
     executeNext: () => Unit,
-    getSimplifier: js.Any,
     runSimplification: ISimplificationTask => Unit,
     running: Boolean
   ): SimplificationQueue = {
-    val __obj = js.Dynamic.literal(_simplificationArray = _simplificationArray.asInstanceOf[js.Any], addTask = js.Any.fromFunction1(addTask), executeNext = js.Any.fromFunction0(executeNext), getSimplifier = getSimplifier.asInstanceOf[js.Any], runSimplification = js.Any.fromFunction1(runSimplification), running = running.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(_getSimplifier = _getSimplifier.asInstanceOf[js.Any], _simplificationArray = _simplificationArray.asInstanceOf[js.Any], addTask = js.Any.fromFunction1(addTask), executeNext = js.Any.fromFunction0(executeNext), runSimplification = js.Any.fromFunction1(runSimplification), running = running.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimplificationQueue]
   }
   
@@ -52,12 +52,12 @@ object SimplificationQueue {
     
     inline def setExecuteNext(value: () => Unit): Self = StObject.set(x, "executeNext", js.Any.fromFunction0(value))
     
-    inline def setGetSimplifier(value: js.Any): Self = StObject.set(x, "getSimplifier", value.asInstanceOf[js.Any])
-    
     inline def setRunSimplification(value: ISimplificationTask => Unit): Self = StObject.set(x, "runSimplification", js.Any.fromFunction1(value))
     
     inline def setRunning(value: Boolean): Self = StObject.set(x, "running", value.asInstanceOf[js.Any])
     
-    inline def set_simplificationArray(value: js.Any): Self = StObject.set(x, "_simplificationArray", value.asInstanceOf[js.Any])
+    inline def set_getSimplifier(value: Any): Self = StObject.set(x, "_getSimplifier", value.asInstanceOf[js.Any])
+    
+    inline def set_simplificationArray(value: Any): Self = StObject.set(x, "_simplificationArray", value.asInstanceOf[js.Any])
   }
 }

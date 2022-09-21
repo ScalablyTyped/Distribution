@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-forever
 
-Typings are for version 2.1.0
+Typings are for version 3.0.1
 
 ## Library description:
 Run promise-returning & async functions repeatedly until you end it
@@ -11,9 +11,9 @@ Run promise-returning & async functions repeatedly until you end it
 | Full name          | p-forever |
 | Keywords           | promise, forever, infinitely, infinite, while, whilst, repeat, repeatedly, recursive, recursion, times, number, count, loop, iterate, serial, serially, async, await, promises, bluebird |
 | # releases         | 3 |
-| # dependents       | 22 |
-| # downloads        | 118738 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 14433.333333333334 |
+| # stars            | 36.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/p-forever#readme)

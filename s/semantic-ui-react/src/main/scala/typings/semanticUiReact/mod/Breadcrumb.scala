@@ -13,10 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("semantic-ui-react", "Breadcrumb")
 @js.native
-class Breadcrumb protected ()
-  extends Component[BreadcrumbProps, ComponentState, js.Any] {
+open class Breadcrumb protected () extends Component[BreadcrumbProps, ComponentState, Any] {
   def this(props: BreadcrumbProps) = this()
-  def this(props: BreadcrumbProps, context: js.Any) = this()
+  def this(props: BreadcrumbProps, context: Any) = this()
 }
 object Breadcrumb extends Shortcut {
   
@@ -27,10 +26,9 @@ object Breadcrumb extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react", "Breadcrumb.Section")
   @js.native
-  class Section protected ()
-    extends Component[BreadcrumbSectionProps, ComponentState, js.Any] {
+  open class Section protected () extends Component[BreadcrumbSectionProps, ComponentState, Any] {
     def this(props: BreadcrumbSectionProps) = this()
-    def this(props: BreadcrumbSectionProps, context: js.Any) = this()
+    def this(props: BreadcrumbSectionProps, context: Any) = this()
   }
   
   type _To = BreadcrumbComponent

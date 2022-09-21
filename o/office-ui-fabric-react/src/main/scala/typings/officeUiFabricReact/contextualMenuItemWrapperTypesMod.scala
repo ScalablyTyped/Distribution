@@ -49,7 +49,7 @@ object contextualMenuItemWrapperTypesMod {
       * If dismissAll is true, all menus will be closed.
       */
     var dismissMenu: js.UndefOr[
-        js.Function2[/* ev */ js.UndefOr[js.Any], /* dismissAll */ js.UndefOr[Boolean], Unit]
+        js.Function2[/* ev */ js.UndefOr[Any], /* dismissAll */ js.UndefOr[Boolean], Unit]
       ] = js.undefined
     
     /**
@@ -80,6 +80,7 @@ object contextualMenuItemWrapperTypesMod {
     
     /**
       * Callback to get the subMenu ID for an IContextualMenuItem.
+      * @deprecated ID relationship between a menu button and menu isn't necessary
       */
     var getSubMenuId: js.UndefOr[js.Function1[/* item */ IContextualMenuItem, js.UndefOr[String]]] = js.undefined
     
@@ -188,7 +189,7 @@ object contextualMenuItemWrapperTypesMod {
     /**
       * This prop will get set by ContextualMenu and can be called to open this item's subMenu, if present.
       */
-    var openSubMenu: js.UndefOr[js.Function2[/* item */ js.Any, /* target */ HTMLElement, Unit]] = js.undefined
+    var openSubMenu: js.UndefOr[js.Function2[/* item */ Any, /* target */ HTMLElement, Unit]] = js.undefined
     
     /**
       * The total number of items in the contextual menu.
@@ -224,7 +225,7 @@ object contextualMenuItemWrapperTypesMod {
       
       inline def setContextualMenuItemAsUndefined: Self = StObject.set(x, "contextualMenuItemAs", js.undefined)
       
-      inline def setDismissMenu(value: (/* ev */ js.UndefOr[js.Any], /* dismissAll */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "dismissMenu", js.Any.fromFunction2(value))
+      inline def setDismissMenu(value: (/* ev */ js.UndefOr[Any], /* dismissAll */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "dismissMenu", js.Any.fromFunction2(value))
       
       inline def setDismissMenuUndefined: Self = StObject.set(x, "dismissMenu", js.undefined)
       
@@ -304,7 +305,7 @@ object contextualMenuItemWrapperTypesMod {
       
       inline def setOnTapUndefined: Self = StObject.set(x, "onTap", js.undefined)
       
-      inline def setOpenSubMenu(value: (/* item */ js.Any, /* target */ HTMLElement) => Unit): Self = StObject.set(x, "openSubMenu", js.Any.fromFunction2(value))
+      inline def setOpenSubMenu(value: (/* item */ Any, /* target */ HTMLElement) => Unit): Self = StObject.set(x, "openSubMenu", js.Any.fromFunction2(value))
       
       inline def setOpenSubMenuUndefined: Self = StObject.set(x, "openSubMenu", js.undefined)
       

@@ -2,8 +2,8 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.FC
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,12 +13,12 @@ object modalHeaderMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/modules/Modal/ModalHeader", JSImport.Default)
   @js.native
-  val default: StatelessComponent[ModalHeaderProps] = js.native
+  val default: FC[ModalHeaderProps] = js.native
   
   trait ModalHeaderProps
     extends StObject
        with StrictModalHeaderProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object ModalHeaderProps {
     
     inline def apply(): ModalHeaderProps = {
@@ -30,7 +30,7 @@ object modalHeaderMod extends Shortcut {
   trait StrictModalHeaderProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -50,7 +50,7 @@ object modalHeaderMod extends Shortcut {
     
     extension [Self <: StrictModalHeaderProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -68,8 +68,8 @@ object modalHeaderMod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[ModalHeaderProps]
+  type _To = FC[ModalHeaderProps]
   
   /* This means you don't have to write `default`, but can instead just say `modalHeaderMod.foo` */
-  override def _to: StatelessComponent[ModalHeaderProps] = default
+  override def _to: FC[ModalHeaderProps] = default
 }

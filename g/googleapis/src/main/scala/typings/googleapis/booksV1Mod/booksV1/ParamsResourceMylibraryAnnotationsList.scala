@@ -1,9 +1,5 @@
 package typings.googleapis.booksV1Mod.booksV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,11 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ParamsResourceMylibraryAnnotationsList
   extends StObject
      with StandardParameters {
-  
-  /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The content version for the requested volume.
@@ -43,8 +34,7 @@ trait ParamsResourceMylibraryAnnotationsList
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * Set to true to return deleted annotations. updatedMin must be in the
-    * request to use this. Defaults to false.
+    * Set to true to return deleted annotations. updatedMin must be in the request to use this. Defaults to false.
     */
   var showDeleted: js.UndefOr[Boolean] = js.undefined
   
@@ -54,14 +44,12 @@ trait ParamsResourceMylibraryAnnotationsList
   var source: js.UndefOr[String] = js.undefined
   
   /**
-    * RFC 3339 timestamp to restrict to items updated prior to this timestamp
-    * (exclusive).
+    * RFC 3339 timestamp to restrict to items updated prior to this timestamp (exclusive).
     */
   var updatedMax: js.UndefOr[String] = js.undefined
   
   /**
-    * RFC 3339 timestamp to restrict to items updated since this timestamp
-    * (inclusive).
+    * RFC 3339 timestamp to restrict to items updated since this timestamp (inclusive).
     */
   var updatedMin: js.UndefOr[String] = js.undefined
   
@@ -79,10 +67,6 @@ object ParamsResourceMylibraryAnnotationsList {
   
   extension [Self <: ParamsResourceMylibraryAnnotationsList](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-    
     inline def setContentVersion(value: String): Self = StObject.set(x, "contentVersion", value.asInstanceOf[js.Any])
     
     inline def setContentVersionUndefined: Self = StObject.set(x, "contentVersion", js.undefined)
@@ -95,7 +79,7 @@ object ParamsResourceMylibraryAnnotationsList {
     
     inline def setLayerIdsUndefined: Self = StObject.set(x, "layerIds", js.undefined)
     
-    inline def setLayerIdsVarargs(value: String*): Self = StObject.set(x, "layerIds", js.Array(value :_*))
+    inline def setLayerIdsVarargs(value: String*): Self = StObject.set(x, "layerIds", js.Array(value*))
     
     inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

@@ -8,5 +8,5 @@ object missingParameterValueExceptionMod {
   
   @JSImport("@aws-sdk/client-glacier-node/model/MissingParameterValueException", "MissingParameterValueException")
   @js.native
-  val MissingParameterValueException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val MissingParameterValueException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -36,6 +36,6 @@ object UpdateRuleGroupRequest {
     
     inline def setUpdates(value: RuleGroupUpdates): Self = StObject.set(x, "Updates", value.asInstanceOf[js.Any])
     
-    inline def setUpdatesVarargs(value: RuleGroupUpdate*): Self = StObject.set(x, "Updates", js.Array(value :_*))
+    inline def setUpdatesVarargs(value: RuleGroupUpdate*): Self = StObject.set(x, "Updates", js.Array(value*))
   }
 }

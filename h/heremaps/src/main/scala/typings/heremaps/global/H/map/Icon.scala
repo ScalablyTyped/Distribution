@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("H.map.Icon")
 @js.native
-class Icon protected ()
+open class Icon protected ()
   extends StObject
      with typings.heremaps.H.map.Icon {
   /**

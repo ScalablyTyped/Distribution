@@ -16,6 +16,8 @@ object anon {
     
     var isEnabled: js.UndefOr[Boolean] = js.undefined
     
+    var privateAttributeBlocklist: js.UndefOr[js.Array[String]] = js.undefined
+    
     var textSanitizer: js.UndefOr[Boolean | String] = js.undefined
   }
   object BaseHref {
@@ -38,6 +40,12 @@ object anon {
       inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
       
       inline def setIsEnabledUndefined: Self = StObject.set(x, "isEnabled", js.undefined)
+      
+      inline def setPrivateAttributeBlocklist(value: js.Array[String]): Self = StObject.set(x, "privateAttributeBlocklist", value.asInstanceOf[js.Any])
+      
+      inline def setPrivateAttributeBlocklistUndefined: Self = StObject.set(x, "privateAttributeBlocklist", js.undefined)
+      
+      inline def setPrivateAttributeBlocklistVarargs(value: String*): Self = StObject.set(x, "privateAttributeBlocklist", js.Array(value*))
       
       inline def setTextSanitizer(value: Boolean | String): Self = StObject.set(x, "textSanitizer", value.asInstanceOf[js.Any])
       

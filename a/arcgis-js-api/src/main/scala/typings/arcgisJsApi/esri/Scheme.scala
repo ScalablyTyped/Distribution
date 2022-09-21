@@ -61,7 +61,7 @@ object Scheme {
     
     inline def setLabelingInfo(value: js.Array[LabelClass]): Self = StObject.set(x, "labelingInfo", value.asInstanceOf[js.Any])
     
-    inline def setLabelingInfoVarargs(value: LabelClass*): Self = StObject.set(x, "labelingInfo", js.Array(value :_*))
+    inline def setLabelingInfoVarargs(value: LabelClass*): Self = StObject.set(x, "labelingInfo", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

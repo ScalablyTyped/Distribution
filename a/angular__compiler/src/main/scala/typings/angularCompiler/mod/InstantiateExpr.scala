@@ -6,33 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "InstantiateExpr")
 @js.native
-class InstantiateExpr protected ()
-  extends typings.angularCompiler.compilerMod.InstantiateExpr {
-  def this(
-    classExpr: typings.angularCompiler.outputAstMod.Expression,
-    args: js.Array[typings.angularCompiler.outputAstMod.Expression]
-  ) = this()
-  def this(
-    classExpr: typings.angularCompiler.outputAstMod.Expression,
-    args: js.Array[typings.angularCompiler.outputAstMod.Expression],
-    `type`: typings.angularCompiler.outputAstMod.Type
-  ) = this()
-  def this(
-    classExpr: typings.angularCompiler.outputAstMod.Expression,
-    args: js.Array[typings.angularCompiler.outputAstMod.Expression],
-    `type`: Null,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
-  def this(
-    classExpr: typings.angularCompiler.outputAstMod.Expression,
-    args: js.Array[typings.angularCompiler.outputAstMod.Expression],
-    `type`: Unit,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
-  def this(
-    classExpr: typings.angularCompiler.outputAstMod.Expression,
-    args: js.Array[typings.angularCompiler.outputAstMod.Expression],
-    `type`: typings.angularCompiler.outputAstMod.Type,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
+open class InstantiateExpr protected () extends Expression {
+  def this(classExpr: Expression, args: js.Array[Expression]) = this()
+  def this(classExpr: Expression, args: js.Array[Expression], `type`: Type) = this()
+  def this(classExpr: Expression, args: js.Array[Expression], `type`: Null, sourceSpan: ParseSourceSpan) = this()
+  def this(classExpr: Expression, args: js.Array[Expression], `type`: Unit, sourceSpan: ParseSourceSpan) = this()
+  def this(classExpr: Expression, args: js.Array[Expression], `type`: Type, sourceSpan: ParseSourceSpan) = this()
+  
+  var args: js.Array[Expression] = js.native
+  
+  var classExpr: Expression = js.native
 }

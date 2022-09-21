@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Describes a shell-style task to execute, suitable for providing as the Bots
-  * interface&#39;s `Lease.payload` field.
-  */
 trait SchemaGoogleDevtoolsRemoteworkersV1test2CommandTask extends StObject {
   
   /**

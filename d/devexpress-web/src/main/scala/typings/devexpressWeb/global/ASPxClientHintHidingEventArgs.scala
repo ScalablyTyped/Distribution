@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientHintHidingEventArgs")
 @js.native
-class ASPxClientHintHidingEventArgs protected ()
+open class ASPxClientHintHidingEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientHintHidingEventArgs {
   /**
@@ -20,13 +20,7 @@ class ASPxClientHintHidingEventArgs protected ()
     * @param titleElement An object that is the hint's title element.
     * @param cancel true, if the action that raised the event should be canceled; otherwise, false.
     */
-  def this(
-    targetElement: js.Any,
-    hintElement: js.Any,
-    contentElement: js.Any,
-    titleElement: js.Any,
-    cancel: Boolean
-  ) = this()
+  def this(targetElement: Any, hintElement: Any, contentElement: Any, titleElement: Any, cancel: Boolean) = this()
   
   /**
     * Gets or sets a value indicating whether the event should be canceled.
@@ -38,23 +32,23 @@ class ASPxClientHintHidingEventArgs protected ()
     * Gets the object that is the hint's content.
     */
   /* CompleteClass */
-  var contentElement: js.Any = js.native
+  var contentElement: Any = js.native
   
   /**
     * Gets the object that is the hint element.
     */
   /* CompleteClass */
-  var hintElement: js.Any = js.native
+  var hintElement: Any = js.native
   
   /**
     * Gets the object that is the hint's target element.
     */
   /* CompleteClass */
-  var targetElement: js.Any = js.native
+  var targetElement: Any = js.native
   
   /**
     * Gets the object that is the hint's title.
     */
   /* CompleteClass */
-  var titleElement: js.Any = js.native
+  var titleElement: Any = js.native
 }

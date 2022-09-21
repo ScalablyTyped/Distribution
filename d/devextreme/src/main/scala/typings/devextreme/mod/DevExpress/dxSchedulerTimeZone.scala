@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait dxSchedulerTimeZone extends StObject {
   
   /**
-    * [descr:dxSchedulerTimeZone.id]
+    * A time zone text string from the IANA database.
     */
   var id: String
   
   /**
-    * [descr:dxSchedulerTimeZone.offset]
+    * A GMT offset.
     */
   var offset: Double
   
   /**
-    * [descr:dxSchedulerTimeZone.title]
+    * A time zone in the following format: `(GMT ±[hh]:[mm]) [id]`.
     */
   var title: String
 }

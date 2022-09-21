@@ -188,7 +188,7 @@ object XGraphics {
     intersectClipRegion: XRegion => Unit,
     pop: () => Unit,
     push: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     selectFont: FontDescriptor => Unit,
     setClipRegion: XRegion => Unit,

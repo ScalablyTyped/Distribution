@@ -1,7 +1,7 @@
 
 # Scala.js typings for clientjs
 
-Typings are for version 0.1
+Typings are for version 0.2
 
 ## Library description:
 Device information and digital fingerprinting written in pure JavaScript.
@@ -10,10 +10,10 @@ Device information and digital fingerprinting written in pure JavaScript.
 | ------------------ | :-------------: |
 | Full name          | clientjs |
 | Keywords           | browser, fingerprint, client, info, pure, javascript |
-| # releases         | 0 |
-| # dependents       | 19 |
-| # downloads        | 286904 |
-| # stars            | 5 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 46786.0 |
+| # stars            | 1618.0 |
 
 ## Links
 - [Homepage](https://github.com/jackspirou/clientjs#readme)

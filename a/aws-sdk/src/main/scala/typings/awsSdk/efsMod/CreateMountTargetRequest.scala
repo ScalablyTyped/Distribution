@@ -22,7 +22,7 @@ trait CreateMountTargetRequest extends StObject {
   var SecurityGroups: js.UndefOr[typings.awsSdk.efsMod.SecurityGroups] = js.undefined
   
   /**
-    * The ID of the subnet to add the mount target in.
+    * The ID of the subnet to add the mount target in. For file systems that use One Zone storage classes, use the subnet that is associated with the file system's Availability Zone.
     */
   var SubnetId: typings.awsSdk.efsMod.SubnetId
 }
@@ -45,7 +45,7 @@ object CreateMountTargetRequest {
     
     inline def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
     
-    inline def setSecurityGroupsVarargs(value: SecurityGroup*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
+    inline def setSecurityGroupsVarargs(value: SecurityGroup*): Self = StObject.set(x, "SecurityGroups", js.Array(value*))
     
     inline def setSubnetId(value: SubnetId): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
   }

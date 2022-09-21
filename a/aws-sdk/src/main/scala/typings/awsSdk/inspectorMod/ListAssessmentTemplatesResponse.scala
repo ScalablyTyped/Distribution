@@ -27,7 +27,7 @@ object ListAssessmentTemplatesResponse {
     
     inline def setAssessmentTemplateArns(value: ListReturnedArnList): Self = StObject.set(x, "assessmentTemplateArns", value.asInstanceOf[js.Any])
     
-    inline def setAssessmentTemplateArnsVarargs(value: Arn*): Self = StObject.set(x, "assessmentTemplateArns", js.Array(value :_*))
+    inline def setAssessmentTemplateArnsVarargs(value: Arn*): Self = StObject.set(x, "assessmentTemplateArns", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

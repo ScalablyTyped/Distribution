@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ContainerSettings extends StObject {
   
   /**
-    * Settings for MP4 segments in CMAF
+    * These settings relate to the fragmented MP4 container for the segments in your CMAF outputs.
     */
   var CmfcSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.CmfcSettings] = js.undefined
   
@@ -27,27 +27,27 @@ trait ContainerSettings extends StObject {
   var M2tsSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.M2tsSettings] = js.undefined
   
   /**
-    * Settings for TS segments in HLS
+    * These settings relate to the MPEG-2 transport stream (MPEG2-TS) container for the MPEG2-TS segments in your HLS outputs.
     */
   var M3u8Settings: js.UndefOr[typings.awsSdk.mediaconvertMod.M3u8Settings] = js.undefined
   
   /**
-    * Settings for MOV Container.
+    * These settings relate to your QuickTime MOV output container.
     */
   var MovSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.MovSettings] = js.undefined
   
   /**
-    * Settings for MP4 container. You can create audio-only AAC outputs with this container.
+    * These settings relate to your MP4 output container. You can create audio only outputs with this container. For more information, see https://docs.aws.amazon.com/mediaconvert/latest/ug/supported-codecs-containers-audio-only.html#output-codecs-and-containers-supported-for-audio-only.
     */
   var Mp4Settings: js.UndefOr[typings.awsSdk.mediaconvertMod.Mp4Settings] = js.undefined
   
   /**
-    * Settings for MP4 segments in DASH
+    * These settings relate to the fragmented MP4 container for the segments in your DASH outputs.
     */
   var MpdSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.MpdSettings] = js.undefined
   
   /**
-    * MXF settings
+    * These settings relate to your MXF output container.
     */
   var MxfSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.MxfSettings] = js.undefined
 }

@@ -29,7 +29,7 @@ object CacheParameterGroupsMessage {
     
     inline def setCacheParameterGroupsUndefined: Self = StObject.set(x, "CacheParameterGroups", js.undefined)
     
-    inline def setCacheParameterGroupsVarargs(value: CacheParameterGroup*): Self = StObject.set(x, "CacheParameterGroups", js.Array(value :_*))
+    inline def setCacheParameterGroupsVarargs(value: CacheParameterGroup*): Self = StObject.set(x, "CacheParameterGroups", js.Array(value*))
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

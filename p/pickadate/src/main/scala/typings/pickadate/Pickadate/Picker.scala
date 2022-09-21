@@ -55,7 +55,7 @@ trait Picker[TPickerObject, TItemObject /* <: Item */, TOptions /* <: SetObject 
     * Get the properties, objects, and states that make up the current
     * state of the picker.
     */
-  def get(thing: String): js.Any = js.native
+  def get(thing: String): Any = js.native
   /**
     * Returns a formatted string for the item object specified by `thing`
     */
@@ -65,7 +65,7 @@ trait Picker[TPickerObject, TItemObject /* <: Item */, TOptions /* <: SetObject 
     * disable on the picker.
     */
   @JSName("get")
-  def get_disable(thing: disable): js.Array[js.Any] = js.native
+  def get_disable(thing: disable): js.Array[Any] = js.native
   /**
     * Returns the item object that is visually highlighted.
     */
@@ -125,7 +125,7 @@ trait Picker[TPickerObject, TItemObject /* <: Item */, TOptions /* <: SetObject 
   /**
     * Bind callbacks to get fired off when the relative picker method is called.
     */
-  def on(methodName: String, callback: js.Function1[/* data */ js.UndefOr[js.Any], Unit]): TPickerObject = js.native
+  def on(methodName: String, callback: js.Function1[/* data */ js.UndefOr[Any], Unit]): TPickerObject = js.native
   
   def open(): TPickerObject = js.native
   def open(withoutFocus: Boolean): TPickerObject = js.native
@@ -143,8 +143,8 @@ trait Picker[TPickerObject, TItemObject /* <: Item */, TOptions /* <: SetObject 
     * Set the properties, objects, and states to change the state of the picker.
     */
   def set(thing: String): TPickerObject = js.native
-  def set(thing: String, value: js.Any): TPickerObject = js.native
-  def set(thing: String, value: js.Any, options: SetOptions): TPickerObject = js.native
+  def set(thing: String, value: Any): TPickerObject = js.native
+  def set(thing: String, value: Any, options: SetOptions): TPickerObject = js.native
   def set(thing: String, value: Unit, options: SetOptions): TPickerObject = js.native
   def set(things: TOptions): TPickerObject = js.native
   def set(things: TOptions, options: SetOptions): TPickerObject = js.native
@@ -163,5 +163,5 @@ trait Picker[TPickerObject, TItemObject /* <: Item */, TOptions /* <: SetObject 
     * Trigger callbacks that have been queued up using the the on method.
     */
   def trigger(event: String): TPickerObject = js.native
-  def trigger(event: String, data: js.Any): TPickerObject = js.native
+  def trigger(event: String, data: Any): TPickerObject = js.native
 }

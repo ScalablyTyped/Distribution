@@ -19,17 +19,21 @@ object createMountMod {
   trait MountOptions extends StObject {
     
     var mount: FnCall
+    
+    var strict: Boolean
   }
   object MountOptions {
     
-    inline def apply(mount: FnCall): MountOptions = {
-      val __obj = js.Dynamic.literal(mount = mount.asInstanceOf[js.Any])
+    inline def apply(mount: FnCall, strict: Boolean): MountOptions = {
+      val __obj = js.Dynamic.literal(mount = mount.asInstanceOf[js.Any], strict = strict.asInstanceOf[js.Any])
       __obj.asInstanceOf[MountOptions]
     }
     
     extension [Self <: MountOptions](x: Self) {
       
       inline def setMount(value: FnCall): Self = StObject.set(x, "mount", value.asInstanceOf[js.Any])
+      
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     }
   }
 }

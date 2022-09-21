@@ -49,7 +49,7 @@ object XHalfFloatBitmap {
     getScaledBitmap: (RealSize2D, Boolean) => XBitmap,
     getSize: () => IntegerSize2D,
     hasAlpha: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setData: (SeqEquiv[Double], FloatingPointBitmapLayout, IntegerRectangle2D) => Unit,
     setPixel: (SeqEquiv[Double], FloatingPointBitmapLayout, IntegerPoint2D) => Unit

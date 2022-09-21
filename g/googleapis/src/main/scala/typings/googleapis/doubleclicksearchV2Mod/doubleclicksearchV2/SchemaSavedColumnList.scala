@@ -4,12 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A list of saved columns. Advertisers create saved columns to report on
-  * Floodlight activities, Google Analytics goals, or custom KPIs. To request
-  * reports with saved columns, you&#39;ll need the saved column names that are
-  * available from this list.
-  */
 trait SchemaSavedColumnList extends StObject {
   
   /**
@@ -18,10 +12,9 @@ trait SchemaSavedColumnList extends StObject {
   var items: js.UndefOr[js.Array[SchemaSavedColumn]] = js.undefined
   
   /**
-    * Identifies this as a SavedColumnList resource. Value: the fixed string
-    * doubleclicksearch#savedColumnList.
+    * Identifies this as a SavedColumnList resource. Value: the fixed string doubleclicksearch#savedColumnList.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaSavedColumnList {
   
@@ -36,9 +29,11 @@ object SchemaSavedColumnList {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: SchemaSavedColumn*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: SchemaSavedColumn*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }

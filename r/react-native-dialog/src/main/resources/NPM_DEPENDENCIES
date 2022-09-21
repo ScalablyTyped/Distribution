@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-native-dialog" : "9.2.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-native-dialog" : "9.2.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

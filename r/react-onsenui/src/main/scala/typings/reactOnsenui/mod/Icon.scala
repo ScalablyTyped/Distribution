@@ -8,12 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-onsenui", "Icon")
 @js.native
-class Icon protected ()
-  extends Component[FixedWidth, js.Any] {
+open class Icon protected () extends Component[FixedWidth, Any] {
   def this(props: HTMLAttributesidclassName & FixedWidth) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: HTMLAttributesidclassName & FixedWidth, context: js.Any) = this()
+  def this(props: HTMLAttributesidclassName & FixedWidth, context: Any) = this()
 }

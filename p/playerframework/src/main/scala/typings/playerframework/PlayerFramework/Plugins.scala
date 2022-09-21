@@ -472,7 +472,7 @@ object Plugins {
       
       inline def setPlaylist(value: js.Array[PlaylistItem]): Self = StObject.set(x, "playlist", value.asInstanceOf[js.Any])
       
-      inline def setPlaylistVarargs(value: PlaylistItem*): Self = StObject.set(x, "playlist", js.Array(value :_*))
+      inline def setPlaylistVarargs(value: PlaylistItem*): Self = StObject.set(x, "playlist", js.Array(value*))
       
       inline def setSkipBackThreshold(value: Double): Self = StObject.set(x, "skipBackThreshold", value.asInstanceOf[js.Any])
       
@@ -567,7 +567,7 @@ object Plugins {
     extends StObject
        with PluginBase {
     
-    var trackingEvents: js.Array[js.Any]
+    var trackingEvents: js.Array[Any]
   }
   object TrackingPluginBase {
     
@@ -578,7 +578,7 @@ object Plugins {
       isLoaded: Boolean,
       load: () => Unit,
       mediaPlayer: MediaPlayer,
-      trackingEvents: js.Array[js.Any],
+      trackingEvents: js.Array[Any],
       unload: () => Unit,
       update: MediaSource => Unit
     ): TrackingPluginBase = {
@@ -588,9 +588,9 @@ object Plugins {
     
     extension [Self <: TrackingPluginBase](x: Self) {
       
-      inline def setTrackingEvents(value: js.Array[js.Any]): Self = StObject.set(x, "trackingEvents", value.asInstanceOf[js.Any])
+      inline def setTrackingEvents(value: js.Array[Any]): Self = StObject.set(x, "trackingEvents", value.asInstanceOf[js.Any])
       
-      inline def setTrackingEventsVarargs(value: js.Any*): Self = StObject.set(x, "trackingEvents", js.Array(value :_*))
+      inline def setTrackingEventsVarargs(value: Any*): Self = StObject.set(x, "trackingEvents", js.Array(value*))
     }
   }
 }

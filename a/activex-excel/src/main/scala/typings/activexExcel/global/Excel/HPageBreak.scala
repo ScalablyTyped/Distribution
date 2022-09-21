@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.HPageBreak")
 @js.native
-/* private */ class HPageBreak ()
+/* private */ open class HPageBreak ()
   extends StObject
      with typings.activexExcel.Excel.HPageBreak {
   

@@ -28,6 +28,12 @@ trait NavigationAnnotationsOptions extends StObject {
   var controlPointOptions: js.UndefOr[AnnotationControlPointOptionsObject] = js.undefined
   
   /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Whether to hide the part of the
+    * annotation that is outside the plot area.
+    */
+  var crop: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * (Highcharts, Highstock, Highmaps, Gantt) Allow an annotation to be
     * draggable by a user. Possible values are `'x'`, `'xy'`, `'y'` and `''`
     * (disabled).
@@ -38,6 +44,11 @@ trait NavigationAnnotationsOptions extends StObject {
     * (Highcharts, Highstock, Highmaps, Gantt) Events available in annotations.
     */
   var events: js.UndefOr[NavigationAnnotationsEventsOptions] = js.undefined
+  
+  /**
+    * (Highstock) The Fibonacci Time Zones annotation.
+    */
+  var fibonacciTimeZones: js.UndefOr[NavigationAnnotationsFibonacciTimeZonesOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Sets an ID for an annotation.
@@ -75,6 +86,11 @@ trait NavigationAnnotationsOptions extends StObject {
   var shapes: js.UndefOr[js.Array[NavigationAnnotationsShapesOptions]] = js.undefined
   
   /**
+    * (Highstock) The TimeCycles Annotation
+    */
+  var timeCycles: js.UndefOr[NavigationAnnotationsTimeCyclesOptions] = js.undefined
+  
+  /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether the annotation is
     * visible.
     */
@@ -102,6 +118,10 @@ object NavigationAnnotationsOptions {
     
     inline def setControlPointOptionsUndefined: Self = StObject.set(x, "controlPointOptions", js.undefined)
     
+    inline def setCrop(value: Boolean): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
+    
+    inline def setCropUndefined: Self = StObject.set(x, "crop", js.undefined)
+    
     inline def setDraggable(value: AnnotationDraggableValue): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
     
     inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
@@ -109,6 +129,10 @@ object NavigationAnnotationsOptions {
     inline def setEvents(value: NavigationAnnotationsEventsOptions): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    
+    inline def setFibonacciTimeZones(value: NavigationAnnotationsFibonacciTimeZonesOptions): Self = StObject.set(x, "fibonacciTimeZones", value.asInstanceOf[js.Any])
+    
+    inline def setFibonacciTimeZonesUndefined: Self = StObject.set(x, "fibonacciTimeZones", js.undefined)
     
     inline def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -122,7 +146,7 @@ object NavigationAnnotationsOptions {
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    inline def setLabelsVarargs(value: NavigationAnnotationsLabelsOptions*): Self = StObject.set(x, "labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: NavigationAnnotationsLabelsOptions*): Self = StObject.set(x, "labels", js.Array(value*))
     
     inline def setShapeOptions(value: NavigationAnnotationsShapeOptions): Self = StObject.set(x, "shapeOptions", value.asInstanceOf[js.Any])
     
@@ -132,7 +156,11 @@ object NavigationAnnotationsOptions {
     
     inline def setShapesUndefined: Self = StObject.set(x, "shapes", js.undefined)
     
-    inline def setShapesVarargs(value: NavigationAnnotationsShapesOptions*): Self = StObject.set(x, "shapes", js.Array(value :_*))
+    inline def setShapesVarargs(value: NavigationAnnotationsShapesOptions*): Self = StObject.set(x, "shapes", js.Array(value*))
+    
+    inline def setTimeCycles(value: NavigationAnnotationsTimeCyclesOptions): Self = StObject.set(x, "timeCycles", value.asInstanceOf[js.Any])
+    
+    inline def setTimeCyclesUndefined: Self = StObject.set(x, "timeCycles", js.undefined)
     
     inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     

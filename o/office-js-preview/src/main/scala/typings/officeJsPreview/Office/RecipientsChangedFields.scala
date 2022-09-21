@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Represents `RecipientsChangedEventArgs.changedRecipientFields` object.
   *
+  * @remarks
   * [Api set: Mailbox 1.7]
   */
 trait RecipientsChangedFields extends StObject {
@@ -14,6 +15,7 @@ trait RecipientsChangedFields extends StObject {
   /**
     * Gets if recipients in the **bcc** field were changed.
     *
+    * @remarks
     * [Api set: Mailbox 1.7]
     */
   var bcc: Boolean
@@ -21,6 +23,7 @@ trait RecipientsChangedFields extends StObject {
   /**
     * Gets if recipients in the **cc** field were changed.
     *
+    * @remarks
     * [Api set: Mailbox 1.7]
     */
   var cc: Boolean
@@ -28,6 +31,7 @@ trait RecipientsChangedFields extends StObject {
   /**
     * Gets if optional attendees were changed.
     *
+    * @remarks
     * [Api set: Mailbox 1.7]
     */
   var optionalAttendees: Boolean
@@ -35,6 +39,7 @@ trait RecipientsChangedFields extends StObject {
   /**
     * Gets if required attendees were changed.
     *
+    * @remarks
     * [Api set: Mailbox 1.7]
     */
   var requiredAttendees: Boolean
@@ -42,6 +47,7 @@ trait RecipientsChangedFields extends StObject {
   /**
     * Gets if resources were changed.
     *
+    * @remarks
     * [Api set: Mailbox 1.7]
     */
   var resources: Boolean
@@ -49,6 +55,7 @@ trait RecipientsChangedFields extends StObject {
   /**
     * Gets if recipients in the **to** field were changed.
     *
+    * @remarks
     * [Api set: Mailbox 1.7]
     */
   var to: Boolean

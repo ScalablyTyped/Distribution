@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder-frp/dist/es2015", "IntervalRequestStream")
 @js.native
-class IntervalRequestStream protected ()
+open class IntervalRequestStream protected ()
   extends typings.wonderFrp.streamIntervalRequestStreamMod.IntervalRequestStream {
   def this(scheduler: typings.wonderFrp.coreSchedulerMod.Scheduler) = this()
 }

@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents a top/bottom conditional format.
   *
-  * Represents a Top/Bottom conditional format.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 trait TopBottomConditionalFormatLoadOptions extends StObject {
@@ -19,17 +19,17 @@ trait TopBottomConditionalFormatLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Returns a format object, encapsulating the conditional format's font, fill, borders, and other properties.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var format: js.UndefOr[ConditionalRangeFormatLoadOptions] = js.undefined
   
   /**
+    * The criteria of the top/bottom conditional format.
     *
-    * The criteria of the Top/Bottom conditional format.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var rule: js.UndefOr[Boolean] = js.undefined

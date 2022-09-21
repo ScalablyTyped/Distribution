@@ -1,8 +1,7 @@
 package typings.endOfStream
 
-import typings.node.NodeJS.ReadableStream
-import typings.node.NodeJS.WritableStream
-import typings.std.Error
+import typings.std.ReadableStream
+import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  type Callback = js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
+  type Callback = js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit]
   
   trait Options extends StObject {
     
@@ -51,5 +50,5 @@ object mod {
     }
   }
   
-  type Stream = ReadableStream | WritableStream
+  type Stream = ReadableStream[Any] | WritableStream[Any]
 }

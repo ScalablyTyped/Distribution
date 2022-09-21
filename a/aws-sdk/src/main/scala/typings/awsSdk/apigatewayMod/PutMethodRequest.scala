@@ -17,7 +17,7 @@ trait PutMethodRequest extends StObject {
   var authorizationScopes: js.UndefOr[ListOfString] = js.undefined
   
   /**
-    * [Required] The method's authorization type. Valid values are NONE for open access, AWS_IAM for using AWS IAM permissions, CUSTOM for using a custom authorizer, or COGNITO_USER_POOLS for using a Cognito user pool.
+    * The method's authorization type. Valid values are NONE for open access, AWS_IAM for using AWS IAM permissions, CUSTOM for using a custom authorizer, or COGNITO_USER_POOLS for using a Cognito user pool.
     */
   var authorizationType: String
   
@@ -27,7 +27,7 @@ trait PutMethodRequest extends StObject {
   var authorizerId: js.UndefOr[String] = js.undefined
   
   /**
-    * [Required] Specifies the method request's HTTP method type.
+    * Specifies the method request's HTTP method type.
     */
   var httpMethod: String
   
@@ -52,12 +52,12 @@ trait PutMethodRequest extends StObject {
   var requestValidatorId: js.UndefOr[String] = js.undefined
   
   /**
-    * [Required] The Resource identifier for the new Method resource.
+    * The Resource identifier for the new Method resource.
     */
   var resourceId: String
   
   /**
-    * [Required] The string identifier of the associated RestApi.
+    * The string identifier of the associated RestApi.
     */
   var restApiId: String
 }
@@ -78,7 +78,7 @@ object PutMethodRequest {
     
     inline def setAuthorizationScopesUndefined: Self = StObject.set(x, "authorizationScopes", js.undefined)
     
-    inline def setAuthorizationScopesVarargs(value: String*): Self = StObject.set(x, "authorizationScopes", js.Array(value :_*))
+    inline def setAuthorizationScopesVarargs(value: String*): Self = StObject.set(x, "authorizationScopes", js.Array(value*))
     
     inline def setAuthorizationType(value: String): Self = StObject.set(x, "authorizationType", value.asInstanceOf[js.Any])
     

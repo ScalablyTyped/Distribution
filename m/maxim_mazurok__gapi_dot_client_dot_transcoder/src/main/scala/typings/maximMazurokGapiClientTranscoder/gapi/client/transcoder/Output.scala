@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Output extends StObject {
   
-  /** URI for the output file(s). For example, `gs://my-bucket/outputs/`. If empty the value is populated from `Job.output_uri`. */
+  /**
+    * URI for the output file(s). For example, `gs://my-bucket/outputs/`. If empty, the value is populated from `Job.output_uri`. See [Supported input and output
+    * formats](https://cloud.google.com/transcoder/docs/concepts/supported-input-and-output-formats).
+    */
   var uri: js.UndefOr[String] = js.undefined
 }
 object Output {

@@ -1,7 +1,6 @@
 package typings.exceljs.mod
 
 import typings.exceljs.anon.PartialStyle
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -82,7 +81,7 @@ trait Cell
   /**
   	 * convenience getter to access the formula result
   	 */
-  val result: Double | String | Date = js.native
+  val result: Double | String | js.Date = js.native
   
   /**
   	 * The styles of the cell

@@ -16,7 +16,7 @@ object createBackupCommandMod {
   
   @JSImport("@aws-sdk/client-dynamodb-browser/commands/CreateBackupCommand", "CreateBackupCommand")
   @js.native
-  class CreateBackupCommand protected ()
+  open class CreateBackupCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object createBackupCommandMod {
     override val middlewareStack: MiddlewareStack[CreateBackupInput, CreateBackupOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ Any,
       configuration: DynamoDBResolvedConfiguration
     ): Handler[CreateBackupInput, CreateBackupOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: DynamoDBResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[CreateBackupInput, CreateBackupOutput] = js.native
   }
 }

@@ -33,6 +33,6 @@ object DescribeUserStackAssociationsResult {
     
     inline def setUserStackAssociationsUndefined: Self = StObject.set(x, "UserStackAssociations", js.undefined)
     
-    inline def setUserStackAssociationsVarargs(value: UserStackAssociation*): Self = StObject.set(x, "UserStackAssociations", js.Array(value :_*))
+    inline def setUserStackAssociationsVarargs(value: UserStackAssociation*): Self = StObject.set(x, "UserStackAssociations", js.Array(value*))
   }
 }

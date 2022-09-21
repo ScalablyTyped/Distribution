@@ -15,14 +15,14 @@ object pivotMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Pivot", "PivotBase")
   @js.native
-  class PivotBase protected ()
+  open class PivotBase protected ()
     extends typings.officeUiFabricReact.pivotBaseMod.PivotBase {
     def this(props: IPivotProps) = this()
   }
   
   @JSImport("office-ui-fabric-react/lib/components/Pivot", "PivotItem")
   @js.native
-  class PivotItem protected ()
+  open class PivotItem protected ()
     extends typings.officeUiFabricReact.pivotItemMod.PivotItem {
     def this(props: IPivotItemProps) = this()
   }

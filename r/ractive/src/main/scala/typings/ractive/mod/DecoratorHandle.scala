@@ -19,7 +19,7 @@ trait DecoratorHandle extends StObject {
   /**
   	 * Called when any arguments passed to the decorator update. If no update function is supplied, then the decorator will be torn down and recreated when the decorator arguments update.j
   	 */
-  var update: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+  var update: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
 }
 object DecoratorHandle {
   
@@ -36,7 +36,7 @@ object DecoratorHandle {
     
     inline def setTeardown(value: () => Unit): Self = StObject.set(x, "teardown", js.Any.fromFunction0(value))
     
-    inline def setUpdate(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+    inline def setUpdate(value: /* repeated */ Any => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     
     inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }

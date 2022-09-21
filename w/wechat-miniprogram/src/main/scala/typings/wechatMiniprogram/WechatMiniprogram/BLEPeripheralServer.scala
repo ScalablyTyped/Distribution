@@ -20,7 +20,7 @@ trait BLEPeripheralServer extends StObject {
     *
     * 最低基础库： `2.10.3` */
   def close(): Unit = js.native
-  def close(option: NdefCloseOption): Unit = js.native
+  def close(option: BLEPeripheralServerCloseOption): Unit = js.native
   
   /** [BLEPeripheralServer.offCharacteristicReadRequest(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/device/bluetooth-peripheral/BLEPeripheralServer.offCharacteristicReadRequest.html)
     *

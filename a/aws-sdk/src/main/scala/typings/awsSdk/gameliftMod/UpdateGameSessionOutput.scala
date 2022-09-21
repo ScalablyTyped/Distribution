@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateGameSessionOutput extends StObject {
   
   /**
-    * The updated game session metadata.
+    * The updated game session properties.
     */
   var GameSession: js.UndefOr[typings.awsSdk.gameliftMod.GameSession] = js.undefined
 }

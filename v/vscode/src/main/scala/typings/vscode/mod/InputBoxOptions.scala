@@ -9,6 +9,7 @@ trait InputBoxOptions extends StObject {
   
   /**
     * Set to `true` to keep the input box open when focus moves to another part of the editor or to another window.
+    * This setting is ignored on iPad and is always false.
     */
   var ignoreFocusOut: js.UndefOr[Boolean] = js.undefined
   
@@ -28,27 +29,34 @@ trait InputBoxOptions extends StObject {
   var prompt: js.UndefOr[String] = js.undefined
   
   /**
+    * An optional string that represents the title of the input box.
+    */
+  var title: js.UndefOr[String] = js.undefined
+  
+  /**
     * An optional function that will be called to validate input and to give a hint
     * to the user.
     *
     * @param value The current value of the input box.
-    * @return A human-readable string which is presented as diagnostic message.
-    * Return `undefined`, `null`, or the empty string when 'value' is valid.
+    * @return Either a human-readable string which is presented as an error message or an {@link InputBoxValidationMessage}
+    *  which can provide a specific message severity. Return `undefined`, `null`, or the empty string when 'value' is valid.
     */
   var validateInput: js.UndefOr[
     js.Function1[
       /* value */ String, 
-      js.UndefOr[String | Null | (Thenable[js.UndefOr[String | Null]])]
+      js.UndefOr[
+        String | InputBoxValidationMessage | Null | (Thenable[js.UndefOr[String | InputBoxValidationMessage | Null]])
+      ]
     ]
   ] = js.undefined
   
   /**
-    * The value to prefill in the input box.
+    * The value to pre-fill in the input box.
     */
   var value: js.UndefOr[String] = js.undefined
   
   /**
-    * Selection of the prefilled [`value`](#InputBoxOptions.value). Defined as tuple of two number where the
+    * Selection of the pre-filled {@linkcode InputBoxOptions.value value}. Defined as tuple of two number where the
     * first is the inclusive start index and the second the exclusive end index. When `undefined` the whole
     * word will be selected, when empty (start equals end) only the cursor will be set,
     * otherwise the defined range will be selected.
@@ -80,7 +88,15 @@ object InputBoxOptions {
     
     inline def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
     
-    inline def setValidateInput(value: /* value */ String => js.UndefOr[String | Null | (Thenable[js.UndefOr[String | Null]])]): Self = StObject.set(x, "validateInput", js.Any.fromFunction1(value))
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setValidateInput(
+      value: /* value */ String => js.UndefOr[
+          String | InputBoxValidationMessage | Null | (Thenable[js.UndefOr[String | InputBoxValidationMessage | Null]])
+        ]
+    ): Self = StObject.set(x, "validateInput", js.Any.fromFunction1(value))
     
     inline def setValidateInputUndefined: Self = StObject.set(x, "validateInput", js.undefined)
     

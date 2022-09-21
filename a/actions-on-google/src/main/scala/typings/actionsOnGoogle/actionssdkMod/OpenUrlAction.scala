@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("actions-on-google/dist/service/actionssdk", "OpenUrlAction")
 @js.native
-class OpenUrlAction protected ()
+open class OpenUrlAction protected ()
   extends typings.actionsOnGoogle.conversationMod.OpenUrlAction {
   /** @public */
   def this(options: OpenUrlActionOptions) = this()

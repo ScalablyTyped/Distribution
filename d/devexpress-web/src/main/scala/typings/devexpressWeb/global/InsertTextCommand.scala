@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("InsertTextCommand")
 @js.native
-class InsertTextCommand ()
+open class InsertTextCommand ()
   extends StObject
      with typings.devexpressWeb.InsertTextCommand {
   

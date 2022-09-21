@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Initializes a new instance of the ASPxClientEventArgs object.
   */
-class ASPxClientEventArgs ()
+open class ASPxClientEventArgs ()
   extends StObject
      with typings.devexpressWeb.ASPxClientEventArgs

@@ -9,7 +9,7 @@ trait ChangeLastValidDate extends StObject {
   
   def changeLastValidDate(date: String): Unit
   
-  def handleClickDate(date: typings.std.Date, `type`: String): Unit
+  def handleClickDate(date: js.Date, `type`: String): Unit
   
   def handleFocusIn(e: MouseEvent): Unit
   
@@ -19,7 +19,7 @@ object ChangeLastValidDate {
   
   inline def apply(
     changeLastValidDate: String => Unit,
-    handleClickDate: (typings.std.Date, String) => Unit,
+    handleClickDate: (js.Date, String) => Unit,
     handleFocusIn: MouseEvent => Unit,
     handleOutsideClick: MouseEvent => Unit
   ): ChangeLastValidDate = {
@@ -31,7 +31,7 @@ object ChangeLastValidDate {
     
     inline def setChangeLastValidDate(value: String => Unit): Self = StObject.set(x, "changeLastValidDate", js.Any.fromFunction1(value))
     
-    inline def setHandleClickDate(value: (typings.std.Date, String) => Unit): Self = StObject.set(x, "handleClickDate", js.Any.fromFunction2(value))
+    inline def setHandleClickDate(value: (js.Date, String) => Unit): Self = StObject.set(x, "handleClickDate", js.Any.fromFunction2(value))
     
     inline def setHandleFocusIn(value: MouseEvent => Unit): Self = StObject.set(x, "handleFocusIn", js.Any.fromFunction1(value))
     

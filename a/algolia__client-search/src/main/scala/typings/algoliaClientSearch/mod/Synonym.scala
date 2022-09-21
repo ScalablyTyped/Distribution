@@ -60,7 +60,7 @@ object Synonym {
     
     inline def setCorrectionsUndefined: Self = StObject.set(x, "corrections", js.undefined)
     
-    inline def setCorrectionsVarargs(value: String*): Self = StObject.set(x, "corrections", js.Array(value :_*))
+    inline def setCorrectionsVarargs(value: String*): Self = StObject.set(x, "corrections", js.Array(value*))
     
     inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
@@ -76,13 +76,13 @@ object Synonym {
     
     inline def setReplacementsUndefined: Self = StObject.set(x, "replacements", js.undefined)
     
-    inline def setReplacementsVarargs(value: String*): Self = StObject.set(x, "replacements", js.Array(value :_*))
+    inline def setReplacementsVarargs(value: String*): Self = StObject.set(x, "replacements", js.Array(value*))
     
     inline def setSynonyms(value: js.Array[String]): Self = StObject.set(x, "synonyms", value.asInstanceOf[js.Any])
     
     inline def setSynonymsUndefined: Self = StObject.set(x, "synonyms", js.undefined)
     
-    inline def setSynonymsVarargs(value: String*): Self = StObject.set(x, "synonyms", js.Array(value :_*))
+    inline def setSynonymsVarargs(value: String*): Self = StObject.set(x, "synonyms", js.Array(value*))
     
     inline def setType(value: SynonymType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

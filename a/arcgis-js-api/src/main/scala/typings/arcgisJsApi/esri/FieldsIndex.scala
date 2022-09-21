@@ -9,9 +9,11 @@ trait FieldsIndex extends StObject {
   /**
     * An array of date fields or field json objects.
     *
+    * @default []
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FieldsIndex.html#dateFields)
     */
-  var dateFields: js.Array[js.Any | Field]
+  var dateFields: js.Array[Any | Field]
   
   /**
     * Returns a field with the specified field name.
@@ -37,7 +39,7 @@ trait FieldsIndex extends StObject {
 object FieldsIndex {
   
   inline def apply(
-    dateFields: js.Array[js.Any | Field],
+    dateFields: js.Array[Any | Field],
     get: String => Field,
     has: String => Boolean,
     isDateField: String => Boolean
@@ -48,9 +50,9 @@ object FieldsIndex {
   
   extension [Self <: FieldsIndex](x: Self) {
     
-    inline def setDateFields(value: js.Array[js.Any | Field]): Self = StObject.set(x, "dateFields", value.asInstanceOf[js.Any])
+    inline def setDateFields(value: js.Array[Any | Field]): Self = StObject.set(x, "dateFields", value.asInstanceOf[js.Any])
     
-    inline def setDateFieldsVarargs(value: (js.Any | Field)*): Self = StObject.set(x, "dateFields", js.Array(value :_*))
+    inline def setDateFieldsVarargs(value: (Any | Field)*): Self = StObject.set(x, "dateFields", js.Array(value*))
     
     inline def setGet(value: String => Field): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     

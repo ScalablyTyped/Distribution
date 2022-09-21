@@ -1,7 +1,7 @@
 
 # Scala.js typings for koa-jwt
 
-Typings are for version 4.0.0
+Typings are for version 4.0.3
 
 ## Library description:
 Koa middleware for validating JSON Web Tokens
@@ -11,9 +11,9 @@ Koa middleware for validating JSON Web Tokens
 | Full name          | koa-jwt |
 | Keywords           | auth, authn, authentication, authz, authorization, http, jwt, json, middleware, token, oauth, permissions, koa |
 | # releases         | 3 |
-| # dependents       | 133 |
-| # downloads        | 1295233 |
-| # stars            | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 204198.33333333334 |
+| # stars            | 1295.0 |
 
 ## Links
 - [Homepage](https://github.com/koajs/jwt)

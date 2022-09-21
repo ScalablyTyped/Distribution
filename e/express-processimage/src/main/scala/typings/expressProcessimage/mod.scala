@@ -22,7 +22,7 @@ object mod {
   
   trait Options extends StObject {
     
-    var allowOperation: js.UndefOr[js.Function2[/* operationName */ String, /* repeated */ js.Any, Boolean]] = js.undefined
+    var allowOperation: js.UndefOr[js.Function2[/* operationName */ String, /* repeated */ Any, Boolean]] = js.undefined
     
     var allowedImageSourceContentTypes: js.UndefOr[js.Array[String]] = js.undefined
     
@@ -53,7 +53,7 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setAllowOperation(value: (/* operationName */ String, /* repeated */ js.Any) => Boolean): Self = StObject.set(x, "allowOperation", js.Any.fromFunction2(value))
+      inline def setAllowOperation(value: (/* operationName */ String, /* repeated */ Any) => Boolean): Self = StObject.set(x, "allowOperation", js.Any.fromFunction2(value))
       
       inline def setAllowOperationUndefined: Self = StObject.set(x, "allowOperation", js.undefined)
       
@@ -61,7 +61,7 @@ object mod {
       
       inline def setAllowedImageSourceContentTypesUndefined: Self = StObject.set(x, "allowedImageSourceContentTypes", js.undefined)
       
-      inline def setAllowedImageSourceContentTypesVarargs(value: String*): Self = StObject.set(x, "allowedImageSourceContentTypes", js.Array(value :_*))
+      inline def setAllowedImageSourceContentTypesVarargs(value: String*): Self = StObject.set(x, "allowedImageSourceContentTypes", js.Array(value*))
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       

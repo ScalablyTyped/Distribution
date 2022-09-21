@@ -22,7 +22,7 @@ trait PartialTimepickerOptions extends StObject {
   
   var i18n: js.UndefOr[
     Partial[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ js.Any
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ Any
     ]
   ] = js.undefined
   
@@ -73,7 +73,7 @@ object PartialTimepickerOptions {
     
     inline def setI18n(
       value: Partial[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ js.Any
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InternationalizationOptions */ Any
         ]
     ): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
     

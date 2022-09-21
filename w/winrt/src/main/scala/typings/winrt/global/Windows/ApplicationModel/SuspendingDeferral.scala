@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Windows.ApplicationModel.SuspendingDeferral")
 @js.native
-class SuspendingDeferral ()
+open class SuspendingDeferral ()
   extends StObject
      with typings.winrt.Windows.ApplicationModel.SuspendingDeferral {
   

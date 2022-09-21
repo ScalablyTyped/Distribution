@@ -10,10 +10,10 @@ Polymer 1.0 for TypeScript
 | ------------------ | :-------------: |
 | Full name          | polymer-ts |
 | Keywords           | polymer, typescript |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 1222 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 45.333333333333336 |
+| # stars            | 185.0 |
 
 ## Links
 - [Homepage](https://github.com/nippur72/PolymerTS)

@@ -28,7 +28,7 @@ object XDataImporter {
     acquire: () => Unit,
     cancel: () => Unit,
     importData: (XActiveDataSource, XComponent, XDataTransferEventListener) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XDataImporter = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), cancel = js.Any.fromFunction0(cancel), importData = js.Any.fromFunction3(importData), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

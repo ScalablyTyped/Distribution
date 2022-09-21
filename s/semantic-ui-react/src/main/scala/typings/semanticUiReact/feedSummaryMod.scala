@@ -3,10 +3,10 @@ package typings.semanticUiReact
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ElementType
+import typings.react.mod.FC
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.ReactNodeArray
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.feedDateMod.FeedDateProps
 import typings.semanticUiReact.feedUserMod.FeedUserProps
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
@@ -19,12 +19,12 @@ object feedSummaryMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/views/Feed/FeedSummary", JSImport.Default)
   @js.native
-  val default: StatelessComponent[FeedSummaryProps] = js.native
+  val default: FC[FeedSummaryProps] = js.native
   
   trait FeedSummaryProps
     extends StObject
        with StrictFeedSummaryProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object FeedSummaryProps {
     
     inline def apply(): FeedSummaryProps = {
@@ -36,7 +36,7 @@ object feedSummaryMod extends Shortcut {
   trait StrictFeedSummaryProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -62,7 +62,7 @@ object feedSummaryMod extends Shortcut {
     
     extension [Self <: StrictFeedSummaryProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -96,8 +96,8 @@ object feedSummaryMod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[FeedSummaryProps]
+  type _To = FC[FeedSummaryProps]
   
   /* This means you don't have to write `default`, but can instead just say `feedSummaryMod.foo` */
-  override def _to: StatelessComponent[FeedSummaryProps] = default
+  override def _to: FC[FeedSummaryProps] = default
 }

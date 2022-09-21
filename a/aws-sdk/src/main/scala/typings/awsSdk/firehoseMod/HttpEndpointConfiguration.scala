@@ -17,7 +17,7 @@ trait HttpEndpointConfiguration extends StObject {
   var Name: js.UndefOr[HttpEndpointName] = js.undefined
   
   /**
-    * The URL of the HTTP endpoint selected as the destination.
+    * The URL of the HTTP endpoint selected as the destination.  If you choose an HTTP endpoint as your destination, review and follow the instructions in the Appendix - HTTP Endpoint Delivery Request and Response Specifications. 
     */
   var Url: HttpEndpointUrl
 }

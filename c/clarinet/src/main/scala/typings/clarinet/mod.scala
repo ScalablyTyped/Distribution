@@ -1,7 +1,6 @@
 package typings.clarinet
 
 import typings.node.streamMod.Stream
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ object mod {
   
   @JSImport("clarinet", "CParser")
   @js.native
-  class CParser () extends StObject {
+  open class CParser () extends StObject {
     def this(opt: Options) = this()
     
     def close(): Unit = js.native
@@ -31,7 +30,7 @@ object mod {
     
     def onend(): Unit = js.native
     
-    def onerror(e: Error): Unit = js.native
+    def onerror(e: js.Error): Unit = js.native
     
     def onkey(key: String): Unit = js.native
     
@@ -54,7 +53,7 @@ object mod {
   
   @JSImport("clarinet", "CStream")
   @js.native
-  class CStream () extends Stream {
+  open class CStream () extends Stream {
     def this(opt: Options) = this()
     
     var _parser: CParser = js.native
@@ -62,6 +61,8 @@ object mod {
     def destroy(): Unit = js.native
     
     def end(chunk: String): Unit = js.native
+    
+    def on(ev: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
   }
   
   @JSImport("clarinet", "DEBUG")

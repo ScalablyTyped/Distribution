@@ -1,6 +1,5 @@
 package typings.jqrangeslider
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ trait JQDateRangeSliderOptions
   var defaultValues: js.UndefOr[JQRangeSliderDateRange] = js.undefined
   
   // values selected by default on construction
-  var formatter: js.UndefOr[js.Function1[/* date */ Date, String]] = js.undefined
+  var formatter: js.UndefOr[js.Function1[/* date */ js.Date, String]] = js.undefined
   
   // customize displayed label text
   var step: js.UndefOr[JQRangeSliderDateSteps] = js.undefined
@@ -37,7 +36,7 @@ object JQDateRangeSliderOptions {
     
     inline def setDefaultValuesUndefined: Self = StObject.set(x, "defaultValues", js.undefined)
     
-    inline def setFormatter(value: /* date */ Date => String): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
+    inline def setFormatter(value: /* date */ js.Date => String): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
     
     inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
     

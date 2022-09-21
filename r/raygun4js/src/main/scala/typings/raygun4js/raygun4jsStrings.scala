@@ -36,6 +36,10 @@ object raygun4jsStrings {
   inline def attach: attach = "attach".asInstanceOf[attach]
   
   @js.native
+  sealed trait boot extends StObject
+  inline def boot: boot = "boot".asInstanceOf[boot]
+  
+  @js.native
   sealed trait breadcrumbsLevel extends StObject
   inline def breadcrumbsLevel: breadcrumbsLevel = "breadcrumbsLevel".asInstanceOf[breadcrumbsLevel]
   

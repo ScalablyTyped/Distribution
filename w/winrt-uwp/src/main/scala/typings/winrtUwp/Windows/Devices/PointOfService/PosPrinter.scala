@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PosPrinter extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_statusupdated(`type`: statusupdated, listener: TypedEventHandler[PosPrinter, PosPrinterStatusUpdatedEventArgs]): Unit = js.native
   
@@ -51,7 +51,7 @@ trait PosPrinter extends StObject {
   @JSName("onstatusupdated")
   var onstatusupdated_Original: TypedEventHandler[PosPrinter, PosPrinterStatusUpdatedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_statusupdated(`type`: statusupdated, listener: TypedEventHandler[PosPrinter, PosPrinterStatusUpdatedEventArgs]): Unit = js.native
   

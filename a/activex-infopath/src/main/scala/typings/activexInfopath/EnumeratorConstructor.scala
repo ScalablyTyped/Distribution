@@ -39,6 +39,6 @@ trait EnumeratorConstructor
 Instantiable1[
       (/* col */ DataAdaptersCollection) | (/* col */ DataObjectsCollection) | (/* col */ ErrorsCollection) | (/* col */ InputParameterCollection) | (/* col */ PermissionObject) | (/* col */ SignatureLinesCollection) | (/* col */ SignaturesCollection) | (/* col */ SignedDataBlocksCollection) | (/* col */ TaskPanesCollection) | (/* col */ ViewInfosCollection) | (/* col */ WindowsCollection) | (/* col */ XDocuments) | (/* col */ XDocumentsCollection) | (/* col */ XMLNodesCollection), 
       Enumerator[
-        js.Any | DataSourceObject | Error | IXMLDOMNode | InputParameterObject | SignatureLineObject | SignatureObject | SignedDataBlockObject | TaskPaneObject | UserPermissionObject | ViewInfoObject | Window | _XDocument
+        Any | DataSourceObject | Error | IXMLDOMNode | InputParameterObject | SignatureLineObject | SignatureObject | SignedDataBlockObject | TaskPaneObject | UserPermissionObject | ViewInfoObject | Window | _XDocument
       ]
     ]

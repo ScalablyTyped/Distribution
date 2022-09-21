@@ -41,6 +41,6 @@ object RenderProps {
     
     inline def setTokens(value: js.Array[js.Array[Token]]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     
-    inline def setTokensVarargs(value: js.Array[Token]*): Self = StObject.set(x, "tokens", js.Array(value :_*))
+    inline def setTokensVarargs(value: js.Array[Token]*): Self = StObject.set(x, "tokens", js.Array(value*))
   }
 }

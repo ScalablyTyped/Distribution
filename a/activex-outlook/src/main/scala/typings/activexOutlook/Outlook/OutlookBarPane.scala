@@ -19,7 +19,7 @@ trait OutlookBarPane extends StObject {
   /* private */ @JSName("Outlook.OutlookBarPane_typekey")
   var OutlookDotOutlookBarPane_typekey: OutlookBarPane
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Session: NameSpace
   
@@ -34,7 +34,7 @@ object OutlookBarPane {
     CurrentGroup: OutlookBarGroup,
     Name: String,
     OutlookDotOutlookBarPane_typekey: OutlookBarPane,
-    Parent: js.Any,
+    Parent: Any,
     Session: NameSpace,
     Visible: Boolean
   ): OutlookBarPane = {
@@ -57,7 +57,7 @@ object OutlookBarPane {
     
     inline def setOutlookDotOutlookBarPane_typekey(value: OutlookBarPane): Self = StObject.set(x, "Outlook.OutlookBarPane_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     

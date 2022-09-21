@@ -6,29 +6,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AbstractRange extends StObject {
   
-  /**
-    * Returns true if range is collapsed, and false otherwise.
-    */
+  /** Returns true if range is collapsed, and false otherwise. */
+  /* standard dom */
   val collapsed: scala.Boolean
   
-  /**
-    * Returns range's end node.
-    */
+  /** Returns range's end node. */
+  /* standard dom */
   val endContainer: Node
   
-  /**
-    * Returns range's end offset.
-    */
+  /** Returns range's end offset. */
+  /* standard dom */
   val endOffset: Double
   
-  /**
-    * Returns range's start node.
-    */
+  /** Returns range's start node. */
+  /* standard dom */
   val startContainer: Node
   
-  /**
-    * Returns range's start offset.
-    */
+  /** Returns range's start offset. */
+  /* standard dom */
   val startOffset: Double
 }
 object AbstractRange {

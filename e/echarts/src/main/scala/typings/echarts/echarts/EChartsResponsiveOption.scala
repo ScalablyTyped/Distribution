@@ -28,6 +28,6 @@ object EChartsResponsiveOption {
     
     inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
     
-    inline def setMediaVarargs(value: EChartsMediaOption*): Self = StObject.set(x, "media", js.Array(value :_*))
+    inline def setMediaVarargs(value: EChartsMediaOption*): Self = StObject.set(x, "media", js.Array(value*))
   }
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for roarr
 
-Typings are for version 2.14
+Typings are for version 7.12.3
 
 ## Library description:
 JSON logger for Node.js and browser.
@@ -10,10 +10,10 @@ JSON logger for Node.js and browser.
 | ------------------ | :-------------: |
 | Full name          | roarr |
 | Keywords           | log, logger, json |
-| # releases         | 38 |
-| # dependents       | 50 |
-| # downloads        | 20170223 |
-| # stars            | 1 |
+| # releases         | 62 |
+| # dependents       | 0.0 |
+| # downloads        | 5654940.0 |
+| # stars            | 826.0 |
 
 ## Links
 - [Homepage](https://github.com/gajus/roarr#readme)
@@ -24,7 +24,7 @@ JSON logger for Node.js and browser.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

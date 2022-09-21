@@ -11,13 +11,13 @@ trait HTMLTitleElement
      with HTMLElement {
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(
     `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
+    callback: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
   
@@ -32,8 +32,7 @@ trait HTMLTitleElement
     options: EventListenerOptions
   ): Unit = js.native
   
-  /**
-    * Retrieves or sets the text of the object as a string.
-    */
+  /** Retrieves or sets the text of the object as a string. */
+  /* standard dom */
   var text: java.lang.String = js.native
 }

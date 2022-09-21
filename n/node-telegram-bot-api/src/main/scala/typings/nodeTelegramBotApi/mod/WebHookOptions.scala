@@ -1,6 +1,10 @@
 package typings.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.Instantiable1
 import typings.node.httpsMod.ServerOptions
+import typings.node.nodeHttpMod.IncomingMessage
+import typings.node.nodeHttpMod.ServerResponse
+import typings.node.nodeNetMod.Socket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +19,15 @@ trait WebHookOptions extends StObject {
   
   var host: js.UndefOr[String] = js.undefined
   
-  var https: js.UndefOr[ServerOptions] = js.undefined
+  var https: js.UndefOr[
+    ServerOptions[
+      Instantiable1[/* socket */ Socket, IncomingMessage], 
+      Instantiable1[
+        /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+        ServerResponse[typings.node.httpMod.IncomingMessage]
+      ]
+    ]
+  ] = js.undefined
   
   var key: js.UndefOr[String] = js.undefined
   
@@ -48,7 +60,15 @@ object WebHookOptions {
     
     inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
-    inline def setHttps(value: ServerOptions): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
+    inline def setHttps(
+      value: ServerOptions[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[typings.node.httpMod.IncomingMessage]
+          ]
+        ]
+    ): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
     
     inline def setHttpsUndefined: Self = StObject.set(x, "https", js.undefined)
     

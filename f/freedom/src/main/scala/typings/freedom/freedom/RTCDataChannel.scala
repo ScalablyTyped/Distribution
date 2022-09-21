@@ -4,7 +4,6 @@ import typings.freedom.freedomStrings.onclose
 import typings.freedom.freedomStrings.onerror
 import typings.freedom.freedomStrings.onmessage_
 import typings.freedom.freedomStrings.onopen
-import typings.std.ArrayBuffer
 import typings.std.Blob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,7 +15,7 @@ object RTCDataChannel {
     
     var binary: js.UndefOr[Blob] = js.undefined
     
-    var buffer: js.UndefOr[ArrayBuffer] = js.undefined
+    var buffer: js.UndefOr[js.typedarray.ArrayBuffer] = js.undefined
     
     // Exactly one of the below must be specified.
     var text: js.UndefOr[String] = js.undefined
@@ -34,7 +33,7 @@ object RTCDataChannel {
       
       inline def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
       
-      inline def setBuffer(value: ArrayBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
       inline def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
       
@@ -83,9 +82,9 @@ object RTCDataChannel {
     
     def send(a: String): js.Promise[Unit] = js.native
     
-    def sendBuffer(a: ArrayBuffer): js.Promise[Unit] = js.native
+    def sendBuffer(a: js.typedarray.ArrayBuffer): js.Promise[Unit] = js.native
     @JSName("sendBuffer")
-    var sendBuffer_Original: Method1[ArrayBuffer, Unit] = js.native
+    var sendBuffer_Original: Method1[js.typedarray.ArrayBuffer, Unit] = js.native
     
     @JSName("send")
     var send_Original: Method1[String, Unit] = js.native

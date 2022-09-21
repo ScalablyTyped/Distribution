@@ -16,40 +16,40 @@ trait Transaction extends StObject {
   def set(documentRef: DocumentReference, data: js.Object): Transaction = js.native
   def set(documentRef: DocumentReference, data: js.Object, options: SetOptions): Transaction = js.native
   
-  def update(docRef: DocumentReference, key1: UpdateKey, val1: js.Any): WriteBatch = js.native
-  def update(docRef: DocumentReference, key1: UpdateKey, val1: js.Any, key2: UpdateKey, val2: js.Any): WriteBatch = js.native
+  def update(docRef: DocumentReference, key1: UpdateKey, val1: Any): WriteBatch = js.native
+  def update(docRef: DocumentReference, key1: UpdateKey, val1: Any, key2: UpdateKey, val2: Any): WriteBatch = js.native
   def update(
     docRef: DocumentReference,
     key1: UpdateKey,
-    val1: js.Any,
+    val1: Any,
     key2: UpdateKey,
-    val2: js.Any,
+    val2: Any,
     key3: UpdateKey,
-    val3: js.Any
+    val3: Any
   ): WriteBatch = js.native
   def update(
     docRef: DocumentReference,
     key1: UpdateKey,
-    val1: js.Any,
+    val1: Any,
     key2: UpdateKey,
-    val2: js.Any,
+    val2: Any,
     key3: UpdateKey,
-    val3: js.Any,
+    val3: Any,
     key4: UpdateKey,
-    val4: js.Any
+    val4: Any
   ): WriteBatch = js.native
   def update(
     docRef: DocumentReference,
     key1: UpdateKey,
-    val1: js.Any,
+    val1: Any,
     key2: UpdateKey,
-    val2: js.Any,
+    val2: Any,
     key3: UpdateKey,
-    val3: js.Any,
+    val3: Any,
     key4: UpdateKey,
-    val4: js.Any,
+    val4: Any,
     key5: UpdateKey,
-    val5: js.Any
+    val5: Any
   ): WriteBatch = js.native
   // multiple overrides for update() to allow strong-typed var_args
   def update(docRef: DocumentReference, obj: js.Object): WriteBatch = js.native

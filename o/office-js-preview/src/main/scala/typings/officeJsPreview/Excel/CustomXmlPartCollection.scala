@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * A collection of custom XML parts.
   *
+  * @remarks
   * [Api set: ExcelApi 1.5]
   */
 @js.native
@@ -24,6 +24,7 @@ trait CustomXmlPartCollection
   /**
     * Adds a new custom XML part to the workbook.
     *
+    * @remarks
     * [Api set: ExcelApi 1.5]
     *
     * @param xml XML content. Must be a valid XML fragment.
@@ -37,6 +38,7 @@ trait CustomXmlPartCollection
   /**
     * Gets a new scoped collection of custom XML parts whose namespaces match the given namespace.
     *
+    * @remarks
     * [Api set: ExcelApi 1.5]
     *
     * @param namespaceUri This must be a fully qualified schema URI; for example, "http://schemas.contoso.com/review/1.0".
@@ -44,8 +46,9 @@ trait CustomXmlPartCollection
   def getByNamespace(namespaceUri: String): CustomXmlPartScopedCollection = js.native
   
   /**
-    * Gets the number of CustomXml parts in the collection.
+    * Gets the number of custom XML parts in the collection.
     *
+    * @remarks
     * [Api set: ExcelApi 1.5]
     */
   def getCount(): ClientResult[Double] = js.native
@@ -53,6 +56,7 @@ trait CustomXmlPartCollection
   /**
     * Gets a custom XML part based on its ID.
     *
+    * @remarks
     * [Api set: ExcelApi 1.5]
     *
     * @param id ID of the object to be retrieved.
@@ -61,8 +65,10 @@ trait CustomXmlPartCollection
   
   /**
     * Gets a custom XML part based on its ID.
-    If the CustomXmlPart does not exist, the return object's isNull property will be true.
+    If the `CustomXmlPart` does not exist, then this method returns an object with its `isNullObject` property set to `true`.
+    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
+    * @remarks
     * [Api set: ExcelApi 1.5]
     *
     * @param id ID of the object to be retrieved.

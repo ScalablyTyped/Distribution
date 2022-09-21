@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Printers
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.EventHandler
 import typings.winrtUwp.Windows.Foundation.TypedEventHandler
 import typings.winrtUwp.Windows.WinRTEvent
@@ -105,7 +104,7 @@ object Extensions {
   @js.native
   trait Print3DWorkflow extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_printrequested(
       `type`: printrequested,
@@ -119,7 +118,7 @@ object Extensions {
       * Gets the model of the 3D object to be printed.
       * @return The model of the 3D object to be printed.
       */
-    def getPrintModelPackage(): js.Any = js.native
+    def getPrintModelPackage(): Any = js.native
     
     /** Gets or sets a value that indicates the 3D object is ready for printing and no further user interaction is required. */
     var isPrintReady: Boolean = js.native
@@ -130,7 +129,7 @@ object Extensions {
     @JSName("onprintrequested")
     var onprintrequested_Original: TypedEventHandler[Print3DWorkflow, Print3DWorkflowPrintRequestedEventArgs] = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_printrequested(
       `type`: printrequested,
@@ -151,7 +150,7 @@ object Extensions {
       * Sets the latest model data, including any updates made by the Print3DWorkflow .
       * @param source The latest model data, including any updates made by the Print3DWorkflow .
       */
-    def setSource(source: js.Any): Unit
+    def setSource(source: Any): Unit
     
     /**
       * Indicates if the data model has been updated by the Print3DWorkflow .
@@ -166,7 +165,7 @@ object Extensions {
     
     inline def apply(
       setExtendedStatus: Print3DWorkflowDetail => Unit,
-      setSource: js.Any => Unit,
+      setSource: Any => Unit,
       setSourceChanged: Boolean => Unit,
       status: Print3DWorkflowStatus
     ): Print3DWorkflowPrintRequestedEventArgs = {
@@ -178,7 +177,7 @@ object Extensions {
       
       inline def setSetExtendedStatus(value: Print3DWorkflowDetail => Unit): Self = StObject.set(x, "setExtendedStatus", js.Any.fromFunction1(value))
       
-      inline def setSetSource(value: js.Any => Unit): Self = StObject.set(x, "setSource", js.Any.fromFunction1(value))
+      inline def setSetSource(value: Any => Unit): Self = StObject.set(x, "setSource", js.Any.fromFunction1(value))
       
       inline def setSetSourceChanged(value: Boolean => Unit): Self = StObject.set(x, "setSourceChanged", js.Any.fromFunction1(value))
       
@@ -217,7 +216,7 @@ object Extensions {
   @js.native
   trait PrintTaskConfiguration extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_saverequested(
       `type`: saverequested,
@@ -231,9 +230,9 @@ object Extensions {
     var onsaverequested_Original: TypedEventHandler[PrintTaskConfiguration, PrintTaskConfigurationSaveRequestedEventArgs] = js.native
     
     /** Gets the context for the print task extension. */
-    var printerExtensionContext: js.Any = js.native
+    var printerExtensionContext: Any = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_saverequested(
       `type`: saverequested,
@@ -248,7 +247,7 @@ object Extensions {
     def cancel(): Unit
     
     /** Gets the date-time object that provides the deadline information for the print task. */
-    var deadline: Date
+    var deadline: js.Date
     
     /**
       * Called by the device app when it has to complete some asynchronous tasks before it can save the print task configuration information.
@@ -260,15 +259,15 @@ object Extensions {
       * Called by the device app to save the print task configuration.
       * @param printerExtensionContext The object that represents the print task extension context.
       */
-    def save(printerExtensionContext: js.Any): Unit
+    def save(printerExtensionContext: Any): Unit
   }
   object PrintTaskConfigurationSaveRequest {
     
     inline def apply(
       cancel: () => Unit,
-      deadline: Date,
+      deadline: js.Date,
       getDeferral: () => PrintTaskConfigurationSaveRequestedDeferral,
-      save: js.Any => Unit
+      save: Any => Unit
     ): PrintTaskConfigurationSaveRequest = {
       val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), deadline = deadline.asInstanceOf[js.Any], getDeferral = js.Any.fromFunction0(getDeferral), save = js.Any.fromFunction1(save))
       __obj.asInstanceOf[PrintTaskConfigurationSaveRequest]
@@ -278,11 +277,11 @@ object Extensions {
       
       inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       
-      inline def setDeadline(value: Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
+      inline def setDeadline(value: js.Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
       
       inline def setGetDeferral(value: () => PrintTaskConfigurationSaveRequestedDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
       
-      inline def setSave(value: js.Any => Unit): Self = StObject.set(x, "save", js.Any.fromFunction1(value))
+      inline def setSave(value: Any => Unit): Self = StObject.set(x, "save", js.Any.fromFunction1(value))
     }
   }
   

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.ApplicationModel.Email.EmailQueryOptions")
 @js.native
 /** Instantiates a new instance of the EmailQueryOptions class. */
-class EmailQueryOptions ()
+open class EmailQueryOptions ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Email.EmailQueryOptions {
   /**

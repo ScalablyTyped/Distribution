@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-firebase", "RNFirebase.notifications.Android.Action")
 @js.native
-class Action protected () extends StObject {
+open class Action protected () extends StObject {
   def this(action: String, icon: String, title: String) = this()
   
   var action: String = js.native

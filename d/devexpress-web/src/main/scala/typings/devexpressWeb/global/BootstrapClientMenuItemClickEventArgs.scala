@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("BootstrapClientMenuItemClickEventArgs")
 @js.native
-class BootstrapClientMenuItemClickEventArgs protected ()
+open class BootstrapClientMenuItemClickEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.BootstrapClientMenuItemClickEventArgs {
   /**
@@ -22,21 +22,21 @@ class BootstrapClientMenuItemClickEventArgs protected ()
   def this(
     processOnServer: Boolean,
     item: typings.devexpressWeb.BootstrapClientMenuItem,
-    htmlElement: js.Any,
-    htmlEvent: js.Any
+    htmlElement: Any,
+    htmlEvent: Any
   ) = this()
   
   /**
     * Gets an HTML object that contains the processed Menu item.
     */
   /* CompleteClass */
-  var htmlElement: js.Any = js.native
+  var htmlElement: Any = js.native
   
   /**
     * Gets a DHTML event object that relates to the processed event.
     */
   /* CompleteClass */
-  var htmlEvent: js.Any = js.native
+  var htmlEvent: Any = js.native
   
   /**
     * Gets the menu item object related to the event.

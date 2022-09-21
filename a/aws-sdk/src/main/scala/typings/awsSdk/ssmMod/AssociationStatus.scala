@@ -14,7 +14,7 @@ trait AssociationStatus extends StObject {
   /**
     * The date when the status changed.
     */
-  var Date: DateTime
+  var Date: js.Date
   
   /**
     * The reason for the status.
@@ -28,7 +28,7 @@ trait AssociationStatus extends StObject {
 }
 object AssociationStatus {
   
-  inline def apply(Date: DateTime, Message: StatusMessage, Name: AssociationStatusName): AssociationStatus = {
+  inline def apply(Date: js.Date, Message: StatusMessage, Name: AssociationStatusName): AssociationStatus = {
     val __obj = js.Dynamic.literal(Date = Date.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociationStatus]
   }
@@ -39,7 +39,7 @@ object AssociationStatus {
     
     inline def setAdditionalInfoUndefined: Self = StObject.set(x, "AdditionalInfo", js.undefined)
     
-    inline def setDate(value: DateTime): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
+    inline def setDate(value: js.Date): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
     
     inline def setMessage(value: StatusMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     

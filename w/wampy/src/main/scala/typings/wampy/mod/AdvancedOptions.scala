@@ -31,13 +31,13 @@ object AdvancedOptions {
     
     inline def setEligibleUndefined: Self = StObject.set(x, "eligible", js.undefined)
     
-    inline def setEligibleVarargs(value: Double*): Self = StObject.set(x, "eligible", js.Array(value :_*))
+    inline def setEligibleVarargs(value: Double*): Self = StObject.set(x, "eligible", js.Array(value*))
     
     inline def setExclude(value: Double | js.Array[Double]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
     inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
-    inline def setExcludeVarargs(value: Double*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+    inline def setExcludeVarargs(value: Double*): Self = StObject.set(x, "exclude", js.Array(value*))
     
     inline def setExclude_me(value: Boolean): Self = StObject.set(x, "exclude_me", value.asInstanceOf[js.Any])
     

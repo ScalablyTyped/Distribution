@@ -4,6 +4,7 @@ import typings.firebaseFirestoreTypes.mod.DocumentChangeType
 import typings.firebaseFirestoreTypes.mod.FirestoreErrorCode
 import typings.firebaseFirestoreTypes.mod.LogLevel
 import typings.firebaseFirestoreTypes.mod.OrderByDirection
+import typings.firebaseFirestoreTypes.mod.TaskState
 import typings.firebaseFirestoreTypes.mod.WhereFilterOp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,6 +21,12 @@ object firebaseFirestoreTypesStrings {
     extends StObject
        with WhereFilterOp
   inline def EqualssignEqualssign: EqualssignEqualssign = "==".asInstanceOf[EqualssignEqualssign]
+  
+  @js.native
+  sealed trait Error
+    extends StObject
+       with TaskState
+  inline def Error: Error = "Error".asInstanceOf[Error]
   
   @js.native
   sealed trait ExclamationmarkEqualssign
@@ -50,6 +57,18 @@ object firebaseFirestoreTypesStrings {
     extends StObject
        with WhereFilterOp
   inline def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
+  
+  @js.native
+  sealed trait Running
+    extends StObject
+       with TaskState
+  inline def Running: Running = "Running".asInstanceOf[Running]
+  
+  @js.native
+  sealed trait Success
+    extends StObject
+       with TaskState
+  inline def Success: Success = "Success".asInstanceOf[Success]
   
   @js.native
   sealed trait aborted
@@ -122,10 +141,10 @@ object firebaseFirestoreTypesStrings {
   inline def desc: desc = "desc".asInstanceOf[desc]
   
   @js.native
-  sealed trait error
+  sealed trait error_
     extends StObject
        with LogLevel
-  inline def error: error = "error".asInstanceOf[error]
+  inline def error_ : error_ = "error".asInstanceOf[error_]
   
   @js.native
   sealed trait estimate extends StObject

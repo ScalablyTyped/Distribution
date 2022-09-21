@@ -6,8 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RangeMaxPoint extends StObject {
   
+  /**
+    * Specifies the width of the image that represents the maximum point in a range area series.
+    */
   var rangeMaxPoint: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the width of the image that represents the minimum point in a range area series.
+    */
   var rangeMinPoint: js.UndefOr[Double] = js.undefined
 }
 object RangeMaxPoint {

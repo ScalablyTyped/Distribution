@@ -13,6 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("paper.View")
 @js.native
-class View ()
+open class View ()
   extends StObject
      with typings.paper.paper.View

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteEmailIdentityRequest extends StObject {
   
   /**
-    * The identity (that is, the email address or domain) that you want to delete.
+    * The identity (that is, the email address or domain) to delete.
     */
   var EmailIdentity: Identity
 }

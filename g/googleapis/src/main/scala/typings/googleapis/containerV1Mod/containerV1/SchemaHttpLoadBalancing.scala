@@ -4,19 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Configuration options for the HTTP (L7) load balancing controller addon,
-  * which makes it easy to set up HTTP load balancers for services in a
-  * cluster.
-  */
 trait SchemaHttpLoadBalancing extends StObject {
   
   /**
-    * Whether the HTTP Load Balancing controller is enabled in the cluster.
-    * When enabled, it runs a small pod in the cluster that manages the load
-    * balancers.
+    * Whether the HTTP Load Balancing controller is enabled in the cluster. When enabled, it runs a small pod in the cluster that manages the load balancers.
     */
-  var disabled: js.UndefOr[Boolean] = js.undefined
+  var disabled: js.UndefOr[Boolean | Null] = js.undefined
 }
 object SchemaHttpLoadBalancing {
   
@@ -28,6 +21,8 @@ object SchemaHttpLoadBalancing {
   extension [Self <: SchemaHttpLoadBalancing](x: Self) {
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledNull: Self = StObject.set(x, "disabled", null)
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
   }

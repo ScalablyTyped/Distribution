@@ -10,10 +10,10 @@ object detailsMod {
   
   @JSImport("material-ui/svg-icons/image/details", JSImport.Default)
   @js.native
-  class default () extends ImageDetails
+  open class default () extends ImageDetails
   
   @JSImport("material-ui/svg-icons/image/details", "ImageDetails")
   @js.native
-  class ImageDetails ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageDetails ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

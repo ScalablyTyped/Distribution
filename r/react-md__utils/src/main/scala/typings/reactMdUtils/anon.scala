@@ -1,10 +1,13 @@
 package typings.reactMdUtils
 
-import typings.reactMdUtils.reactMdUtilsStrings.absolute
-import typings.reactMdUtils.reactMdUtilsStrings.fixed
+import typings.react.mod.Dispatch
+import typings.react.mod.MouseEvent
+import typings.react.mod.NativeMouseEvent
+import typings.react.mod.SetStateAction
 import typings.reactMdUtils.sizingConstantsMod.QuerySize
-import typings.reactMdUtils.typesMod.HorizontalPosition
-import typings.reactMdUtils.typesMod.VerticalPosition
+import typings.reactMdUtils.typesMod.KeyboardFocusElementLookup
+import typings.reactMdUtils.typesMod.KeyboardMovementConfig
+import typings.reactMdUtils.typesTypesMod.NonNullRef
 import typings.reactMdUtils.useWidthMediaQueryMod.WidthMediaQuerys
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -83,63 +86,20 @@ object anon {
     }
   }
   
-  /* Inlined @react-md/utils.@react-md/utils/types/positioning/types.Coords & {  position :'fixed' | 'absolute',   transformOrigin :string | undefined} */
-  trait Coordspositionfixedabsolu extends StObject {
+  trait Current[T] extends StObject {
     
-    var bottom: js.UndefOr[Double] = js.undefined
-    
-    var left: js.UndefOr[Double] = js.undefined
-    
-    var minWidth: js.UndefOr[Double] = js.undefined
-    
-    var position: fixed | absolute
-    
-    var right: js.UndefOr[Double] = js.undefined
-    
-    var top: js.UndefOr[Double] = js.undefined
-    
-    var transformOrigin: js.UndefOr[String] = js.undefined
-    
-    var width: js.UndefOr[Double] = js.undefined
+    val current: T
   }
-  object Coordspositionfixedabsolu {
+  object Current {
     
-    inline def apply(position: fixed | absolute): Coordspositionfixedabsolu = {
-      val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Coordspositionfixedabsolu]
+    inline def apply[T](current: T): Current[T] = {
+      val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Current[T]]
     }
     
-    extension [Self <: Coordspositionfixedabsolu](x: Self) {
+    extension [Self <: Current[?], T](x: Self & Current[T]) {
       
-      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
-      
-      inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
-      
-      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
-      
-      inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
-      
-      inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
-      
-      inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
-      
-      inline def setPosition(value: fixed | absolute): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
-      
-      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
-      
-      inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
-      
-      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
-      
-      inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
-      
-      inline def setTransformOrigin(value: String): Self = StObject.set(x, "transformOrigin", value.asInstanceOf[js.Any])
-      
-      inline def setTransformOriginUndefined: Self = StObject.set(x, "transformOrigin", js.undefined)
-      
-      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
-      
-      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setCurrent(value: T): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     }
   }
   
@@ -204,29 +164,135 @@ object anon {
     }
   }
   
-  /* Inlined std.Partial<@react-md/utils.@react-md/utils/types/positioning/types.PositionAnchor> */
-  trait PartialPositionAnchor extends StObject {
+  /* Inlined std.Readonly<@react-md/utils.@react-md/utils/types/keyboardMovement/activeDescendantContext.ActiveDescendantContext> */
+  trait ReadonlyActiveDescendantC extends StObject {
     
-    var x: js.UndefOr[HorizontalPosition] = js.undefined
+    val activeId: String
     
-    var y: js.UndefOr[VerticalPosition] = js.undefined
+    val setActiveId: Dispatch[SetStateAction[String]]
   }
-  object PartialPositionAnchor {
+  object ReadonlyActiveDescendantC {
     
-    inline def apply(): PartialPositionAnchor = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[PartialPositionAnchor]
+    inline def apply(activeId: String, setActiveId: SetStateAction[String] => Unit): ReadonlyActiveDescendantC = {
+      val __obj = js.Dynamic.literal(activeId = activeId.asInstanceOf[js.Any], setActiveId = js.Any.fromFunction1(setActiveId))
+      __obj.asInstanceOf[ReadonlyActiveDescendantC]
     }
     
-    extension [Self <: PartialPositionAnchor](x: Self) {
+    extension [Self <: ReadonlyActiveDescendantC](x: Self) {
       
-      inline def setX(value: HorizontalPosition): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setActiveId(value: String): Self = StObject.set(x, "activeId", value.asInstanceOf[js.Any])
       
-      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+      inline def setSetActiveId(value: SetStateAction[String] => Unit): Self = StObject.set(x, "setActiveId", js.Any.fromFunction1(value))
+    }
+  }
+  
+  /* Inlined std.Readonly<@react-md/utils.@react-md/utils/types/hover/useHoverMode.HoverModeEventHandlers> */
+  trait ReadonlyHoverModeEventHan extends StObject {
+    
+    val onClick: js.Function1[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]
+    
+    val onMouseEnter: js.Function1[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]
+    
+    val onMouseLeave: js.Function1[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]
+  }
+  object ReadonlyHoverModeEventHan {
+    
+    inline def apply(
+      onClick: /* event */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit,
+      onMouseEnter: /* event */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit,
+      onMouseLeave: /* event */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit
+    ): ReadonlyHoverModeEventHan = {
+      val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction1(onClick), onMouseEnter = js.Any.fromFunction1(onMouseEnter), onMouseLeave = js.Any.fromFunction1(onMouseLeave))
+      __obj.asInstanceOf[ReadonlyHoverModeEventHan]
+    }
+    
+    extension [Self <: ReadonlyHoverModeEventHan](x: Self) {
       
-      inline def setY(value: VerticalPosition): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setOnClick(value: /* event */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+      inline def setOnMouseEnter(value: /* event */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
+      
+      inline def setOnMouseLeave(value: /* event */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
+    }
+  }
+  
+  /* Inlined std.Readonly<@react-md/utils.@react-md/utils/types/hover/useHoverMode.HoverModeHoverEventHandlers> */
+  trait ReadonlyHoverModeHoverEve extends StObject {
+    
+    val onMouseEnter: js.Function1[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]
+    
+    val onMouseLeave: js.Function1[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]
+  }
+  object ReadonlyHoverModeHoverEve {
+    
+    inline def apply(
+      onMouseEnter: /* event */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit,
+      onMouseLeave: /* event */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit
+    ): ReadonlyHoverModeHoverEve = {
+      val __obj = js.Dynamic.literal(onMouseEnter = js.Any.fromFunction1(onMouseEnter), onMouseLeave = js.Any.fromFunction1(onMouseLeave))
+      __obj.asInstanceOf[ReadonlyHoverModeHoverEve]
+    }
+    
+    extension [Self <: ReadonlyHoverModeHoverEve](x: Self) {
+      
+      inline def setOnMouseEnter(value: /* event */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
+      
+      inline def setOnMouseLeave(value: /* event */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
+    }
+  }
+  
+  /* Inlined std.Readonly<@react-md/utils.@react-md/utils/types/keyboardMovement/types.KeyboardFocusContext> */
+  trait ReadonlyKeyboardFocusCont extends StObject {
+    
+    val attach: js.Function1[/* element */ HTMLElement, Unit]
+    
+    val config: NonNullRef[KeyboardMovementConfig]
+    
+    val detach: js.Function1[/* element */ HTMLElement, Unit]
+    
+    val horizontal: Boolean
+    
+    val includeDisabled: Boolean
+    
+    val loopable: Boolean
+    
+    val searchable: Boolean
+    
+    val watching: KeyboardFocusElementLookup
+  }
+  object ReadonlyKeyboardFocusCont {
+    
+    inline def apply(
+      attach: /* element */ HTMLElement => Unit,
+      config: NonNullRef[KeyboardMovementConfig],
+      detach: /* element */ HTMLElement => Unit,
+      horizontal: Boolean,
+      includeDisabled: Boolean,
+      loopable: Boolean,
+      searchable: Boolean,
+      watching: KeyboardFocusElementLookup
+    ): ReadonlyKeyboardFocusCont = {
+      val __obj = js.Dynamic.literal(attach = js.Any.fromFunction1(attach), config = config.asInstanceOf[js.Any], detach = js.Any.fromFunction1(detach), horizontal = horizontal.asInstanceOf[js.Any], includeDisabled = includeDisabled.asInstanceOf[js.Any], loopable = loopable.asInstanceOf[js.Any], searchable = searchable.asInstanceOf[js.Any], watching = watching.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ReadonlyKeyboardFocusCont]
+    }
+    
+    extension [Self <: ReadonlyKeyboardFocusCont](x: Self) {
+      
+      inline def setAttach(value: /* element */ HTMLElement => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction1(value))
+      
+      inline def setConfig(value: NonNullRef[KeyboardMovementConfig]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      
+      inline def setDetach(value: /* element */ HTMLElement => Unit): Self = StObject.set(x, "detach", js.Any.fromFunction1(value))
+      
+      inline def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+      
+      inline def setIncludeDisabled(value: Boolean): Self = StObject.set(x, "includeDisabled", value.asInstanceOf[js.Any])
+      
+      inline def setLoopable(value: Boolean): Self = StObject.set(x, "loopable", value.asInstanceOf[js.Any])
+      
+      inline def setSearchable(value: Boolean): Self = StObject.set(x, "searchable", value.asInstanceOf[js.Any])
+      
+      inline def setWatching(value: KeyboardFocusElementLookup): Self = StObject.set(x, "watching", value.asInstanceOf[js.Any])
     }
   }
   

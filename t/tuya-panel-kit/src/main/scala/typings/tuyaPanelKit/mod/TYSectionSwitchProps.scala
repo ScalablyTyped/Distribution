@@ -6,7 +6,6 @@ import typings.reactNative.mod.AccessibilityActionEvent
 import typings.reactNative.mod.AccessibilityActionInfo
 import typings.reactNative.mod.AccessibilityRole
 import typings.reactNative.mod.AccessibilityState
-import typings.reactNative.mod.AccessibilityTrait
 import typings.reactNative.mod.AccessibilityValue
 import typings.reactNative.mod.GestureResponderEvent
 import typings.reactNative.mod.Insets
@@ -18,19 +17,16 @@ import typings.reactNative.mod.TargetedEvent
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import typings.tuyaPanelKit.anon.ActiveSize
-import typings.tuyaPanelKit.anon.Content
+import typings.tuyaPanelKit.anon.Container
 import typings.tuyaPanelKit.anon.Margin
 import typings.tuyaPanelKit.tuyaPanelKitStrings.`no-hide-descendants`
 import typings.tuyaPanelKit.tuyaPanelKitStrings.assertive
 import typings.tuyaPanelKit.tuyaPanelKitStrings.auto
-import typings.tuyaPanelKit.tuyaPanelKitStrings.button
 import typings.tuyaPanelKit.tuyaPanelKitStrings.iconfont
 import typings.tuyaPanelKit.tuyaPanelKitStrings.image
 import typings.tuyaPanelKit.tuyaPanelKitStrings.no
 import typings.tuyaPanelKit.tuyaPanelKitStrings.none_
 import typings.tuyaPanelKit.tuyaPanelKitStrings.polite
-import typings.tuyaPanelKit.tuyaPanelKitStrings.radiobutton_checked
-import typings.tuyaPanelKit.tuyaPanelKitStrings.radiobutton_unchecked
 import typings.tuyaPanelKit.tuyaPanelKitStrings.text
 import typings.tuyaPanelKit.tuyaPanelKitStrings.yes
 import org.scalablytyped.runtime.StObject
@@ -41,13 +37,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent tuya-panel-kit.tuya-panel-kit.SwitchButtonProps */
 trait TYSectionSwitchProps extends StObject {
   
-  var Action: js.UndefOr[js.Any] = js.undefined
+  var Action: js.UndefOr[Any] = js.undefined
   
-  var Icon: js.UndefOr[js.Any] = js.undefined
+  var Icon: js.UndefOr[Any] = js.undefined
   
   var accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.undefined
-  
-  var accessibilityComponentType: js.UndefOr[none_ | button | radiobutton_checked | radiobutton_unchecked] = js.undefined
   
   var accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined
   
@@ -55,15 +49,27 @@ trait TYSectionSwitchProps extends StObject {
   
   var accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 测试标识
+    * @defaultValue "SwitchButton"
+    */
+  /**
+    * @language en-US
+    * @description Test identification
+    * @defaultValue "SwitchButton"
+    */
   var accessibilityLabel: js.UndefOr[String] = js.undefined
+  
+  var accessibilityLabelledBy: js.UndefOr[String | js.Array[String]] = js.undefined
+  
+  var accessibilityLanguage: js.UndefOr[String] = js.undefined
   
   var accessibilityLiveRegion: js.UndefOr[none_ | polite | assertive] = js.undefined
   
   var accessibilityRole: js.UndefOr[AccessibilityRole] = js.undefined
   
   var accessibilityState: js.UndefOr[AccessibilityState] = js.undefined
-  
-  var accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.undefined
   
   var accessibilityValue: js.UndefOr[AccessibilityValue] = js.undefined
   
@@ -83,10 +89,30 @@ trait TYSectionSwitchProps extends StObject {
   
   var arrowUseIcon: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 设置当 SwitchButton 的 value 为 false 时边框颜色 当 SwitchButton 的 value 为 true 时边框颜色等于 onTintColor
+    * @defaultValue "#e5e5e5"
+    */
+  /**
+    * @language en-US
+    * @description Set the color of the border when the value of the sliding button is false.
+    * @defaultValue "#e5e5e5"
+    */
   var borderColor: js.UndefOr[String] = js.undefined
   
   var children: js.UndefOr[ReactNode] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 默认选中的值
+    * @defaultValue true
+    */
+  /**
+    * @language en-US
+    * @description The value selected by default
+    * @defaultValue true
+    */
   var defaultValue: js.UndefOr[Boolean] = js.undefined
   
   var delayLongPress: js.UndefOr[Double] = js.undefined
@@ -95,6 +121,16 @@ trait TYSectionSwitchProps extends StObject {
   
   var delayPressOut: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 是否禁用
+    * @defaultValue false
+    */
+  /**
+    * @language en-US
+    * @description Whether to disable the SwitchButton.
+    * @defaultValue false
+    */
   var disabled: js.UndefOr[Boolean] = js.undefined
   
   var hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined
@@ -113,8 +149,40 @@ trait TYSectionSwitchProps extends StObject {
   
   var needUpdate: js.UndefOr[Boolean] = js.undefined
   
+  var nextFocusDown: js.UndefOr[Double] = js.undefined
+  
+  var nextFocusForward: js.UndefOr[Double] = js.undefined
+  
+  var nextFocusLeft: js.UndefOr[Double] = js.undefined
+  
+  var nextFocusRight: js.UndefOr[Double] = js.undefined
+  
+  var nextFocusUp: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * @language zh-CN
+    * @description SwitchButton 的 value 值为 true 时右侧显示的字符，超过 3 个字符则显示显示 2 个字符，其余显示…
+    * @defaultValue "OFF"
+    */
+  /**
+    * @language en-US
+    * @description When the value of SwitchButton is true, the characters displayed on the right side are displayed. If the value exceeds 3 characters, 2 characters are displayed, and the rest are displayed ...
+    * @defaultValue "OFF"
+    */
   var offText: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description SwitchButton 的 value 值为 true 时右侧显示的字符样式
+    * @types <a target="_blank" href="https://reactnative.dev/docs/text-style-props">StyleProp<TextStyle></a>
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description The character style displayed on the right when the value of SwitchButton is true
+    * @types <a target="_blank" href="https://reactnative.dev/docs/text-style-props">StyleProp<TextStyle></a>
+    * @defaultValue null
+    */
   var offTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
   var onAccessibilityAction: js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]] = js.undefined
@@ -141,34 +209,150 @@ trait TYSectionSwitchProps extends StObject {
   
   var onPressOut: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description SwitchButton 的 value 值为 false 时左侧显示的字符，超过 3 个字符则显示显示 2 个字符，其余显示…
+    * @defaultValue "ON"
+    */
+  /**
+    * @language en-US
+    * @description When the value of SwitchButton is false, the characters displayed on the left side are displayed. If the value exceeds 3 characters, 2 characters are displayed, and the rest are displayed ...
+    * @defaultValue "ON"
+    */
   var onText: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description SwitchButton 的 value 值为 false 时左侧显示的字符样式
+    * @types <a target="_blank" href="https://reactnative.dev/docs/text-style-props">StyleProp<TextStyle></a>
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description The character style displayed on the left when the value of SwitchButton is false
+    * @types <a target="_blank" href="https://reactnative.dev/docs/text-style-props">StyleProp<TextStyle></a>
+    * @defaultValue null
+    */
   var onTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 设置当 SwitchButton 的 value 为 true 时 thumb 颜色，若没有设置则为 thumbTintColor 的值
+    * @defaultValue undefined
+    */
+  /**
+    * @language en-US
+    * @description Set the color of the sliding button when the value of the SwitchButton is true. It is the value of thumbTintColor if it is not set.
+    * @defaultValue undefined
+    */
   var onThumbTintColor: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 设置当 SwitchButton的 value 为 true 时颜色
+    * @defaultValue '#44DB5E'
+    */
+  /**
+    * @language en-US
+    * @description Set the color when the value of the SwitchButton is true.
+    * @defaultValue '#44DB5E'
+    */
   var onTintColor: js.UndefOr[String | StringDictionary[String]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 改变 SwitchButton 值时执行此回调
+    * @defaultValue undefined
+    */
+  /**
+    * @language en-US
+    * @description This callback is executed when the switch combination value is changed.
+    * @defaultValue undefined
+    */
   def onValueChange(value: Boolean): Unit
   
   var pressRetentionOffset: js.UndefOr[Insets] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 设置 SwitchButton 的大小
+    * @defaultValue undefined
+    */
+  /**
+    * @language en-US
+    * @description Set the size of the development component
+    * @defaultValue undefined
+    */
   var size: js.UndefOr[ActiveSize] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 容器样式
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue undefined
+    */
+  /**
+    * @language en-US
+    * @description Specify the style of the container that wraps the SwitchButton
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue undefined
+    */
   var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var styles: js.UndefOr[Content] = js.undefined
+  var styles: js.UndefOr[Container] = js.undefined
   
   var subTitle: js.UndefOr[String] = js.undefined
   
   var testID: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 主题配置
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Theme configuration
+    * @defaultValue null
+    */
   var theme: js.UndefOr[Margin] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 指定 thumb 的样式
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Specify the style of the icon used for dragging in the switch.
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
   var thumbStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 设置当 SwitchButton 的 value 为 false 时 thumb 颜色
+    * @defaultValue "#fff"
+    */
+  /**
+    * @language en-US
+    * @description Set the color of the sliding button when the value of the SwitchButton is false.
+    * @defaultValue "#fff"
+    */
   var thumbTintColor: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 设置当 SwitchButton的 value 为 false 时背景颜色
+    * @defaultValue '#e5e5e5'
+    */
+  /**
+    * @language en-US
+    * @description Set the background color when the value of the SwitchButton is false.
+    * @defaultValue '#e5e5e5'
+    */
   var tintColor: js.UndefOr[String | StringDictionary[String]] = js.undefined
   
   var title: js.UndefOr[String] = js.undefined
@@ -179,8 +363,28 @@ trait TYSectionSwitchProps extends StObject {
   
   var useART: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 是否使用 Native Driver
+    * @defaultValue true
+    */
+  /**
+    * @language en-US
+    * @description Whether to use Native Driver.
+    * @defaultValue true
+    */
   var useNativeDriver: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 当前选中的值，设置了该属性即为受控组件
+    * @defaultValue undefined
+    */
+  /**
+    * @language en-US
+    * @description The currently selected value. After this property is set, it is a controlled component.
+    * @defaultValue undefined
+    */
   var value: js.UndefOr[Boolean] = js.undefined
 }
 object TYSectionSwitchProps {
@@ -196,11 +400,7 @@ object TYSectionSwitchProps {
     
     inline def setAccessibilityActionsUndefined: Self = StObject.set(x, "accessibilityActions", js.undefined)
     
-    inline def setAccessibilityActionsVarargs(value: AccessibilityActionInfo*): Self = StObject.set(x, "accessibilityActions", js.Array(value :_*))
-    
-    inline def setAccessibilityComponentType(value: none_ | button | radiobutton_checked | radiobutton_unchecked): Self = StObject.set(x, "accessibilityComponentType", value.asInstanceOf[js.Any])
-    
-    inline def setAccessibilityComponentTypeUndefined: Self = StObject.set(x, "accessibilityComponentType", js.undefined)
+    inline def setAccessibilityActionsVarargs(value: AccessibilityActionInfo*): Self = StObject.set(x, "accessibilityActions", js.Array(value*))
     
     inline def setAccessibilityElementsHidden(value: Boolean): Self = StObject.set(x, "accessibilityElementsHidden", value.asInstanceOf[js.Any])
     
@@ -218,6 +418,16 @@ object TYSectionSwitchProps {
     
     inline def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
     
+    inline def setAccessibilityLabelledBy(value: String | js.Array[String]): Self = StObject.set(x, "accessibilityLabelledBy", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityLabelledByUndefined: Self = StObject.set(x, "accessibilityLabelledBy", js.undefined)
+    
+    inline def setAccessibilityLabelledByVarargs(value: String*): Self = StObject.set(x, "accessibilityLabelledBy", js.Array(value*))
+    
+    inline def setAccessibilityLanguage(value: String): Self = StObject.set(x, "accessibilityLanguage", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityLanguageUndefined: Self = StObject.set(x, "accessibilityLanguage", js.undefined)
+    
     inline def setAccessibilityLiveRegion(value: none_ | polite | assertive): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityLiveRegionUndefined: Self = StObject.set(x, "accessibilityLiveRegion", js.undefined)
@@ -229,12 +439,6 @@ object TYSectionSwitchProps {
     inline def setAccessibilityState(value: AccessibilityState): Self = StObject.set(x, "accessibilityState", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityStateUndefined: Self = StObject.set(x, "accessibilityState", js.undefined)
-    
-    inline def setAccessibilityTraits(value: AccessibilityTrait | js.Array[AccessibilityTrait]): Self = StObject.set(x, "accessibilityTraits", value.asInstanceOf[js.Any])
-    
-    inline def setAccessibilityTraitsUndefined: Self = StObject.set(x, "accessibilityTraits", js.undefined)
-    
-    inline def setAccessibilityTraitsVarargs(value: AccessibilityTrait*): Self = StObject.set(x, "accessibilityTraits", js.Array(value :_*))
     
     inline def setAccessibilityValue(value: AccessibilityValue): Self = StObject.set(x, "accessibilityValue", value.asInstanceOf[js.Any])
     
@@ -248,7 +452,7 @@ object TYSectionSwitchProps {
     
     inline def setAccessibleUndefined: Self = StObject.set(x, "accessible", js.undefined)
     
-    inline def setAction(value: js.Any): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: Any): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
     inline def setActionDisabled(value: Boolean): Self = StObject.set(x, "actionDisabled", value.asInstanceOf[js.Any])
     
@@ -312,7 +516,7 @@ object TYSectionSwitchProps {
     
     inline def setHitSlopUndefined: Self = StObject.set(x, "hitSlop", js.undefined)
     
-    inline def setIcon(value: js.Any): Self = StObject.set(x, "Icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: Any): Self = StObject.set(x, "Icon", value.asInstanceOf[js.Any])
     
     inline def setIconColor(value: String): Self = StObject.set(x, "iconColor", value.asInstanceOf[js.Any])
     
@@ -339,6 +543,26 @@ object TYSectionSwitchProps {
     inline def setNeedUpdate(value: Boolean): Self = StObject.set(x, "needUpdate", value.asInstanceOf[js.Any])
     
     inline def setNeedUpdateUndefined: Self = StObject.set(x, "needUpdate", js.undefined)
+    
+    inline def setNextFocusDown(value: Double): Self = StObject.set(x, "nextFocusDown", value.asInstanceOf[js.Any])
+    
+    inline def setNextFocusDownUndefined: Self = StObject.set(x, "nextFocusDown", js.undefined)
+    
+    inline def setNextFocusForward(value: Double): Self = StObject.set(x, "nextFocusForward", value.asInstanceOf[js.Any])
+    
+    inline def setNextFocusForwardUndefined: Self = StObject.set(x, "nextFocusForward", js.undefined)
+    
+    inline def setNextFocusLeft(value: Double): Self = StObject.set(x, "nextFocusLeft", value.asInstanceOf[js.Any])
+    
+    inline def setNextFocusLeftUndefined: Self = StObject.set(x, "nextFocusLeft", js.undefined)
+    
+    inline def setNextFocusRight(value: Double): Self = StObject.set(x, "nextFocusRight", value.asInstanceOf[js.Any])
+    
+    inline def setNextFocusRightUndefined: Self = StObject.set(x, "nextFocusRight", js.undefined)
+    
+    inline def setNextFocusUp(value: Double): Self = StObject.set(x, "nextFocusUp", value.asInstanceOf[js.Any])
+    
+    inline def setNextFocusUpUndefined: Self = StObject.set(x, "nextFocusUp", js.undefined)
     
     inline def setOffText(value: String): Self = StObject.set(x, "offText", value.asInstanceOf[js.Any])
     
@@ -432,7 +656,7 @@ object TYSectionSwitchProps {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setStyles(value: Content): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: Container): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     

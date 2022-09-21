@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ReactBootstrap.ButtonToolbar")
 @js.native
-class ButtonToolbar ()
+open class ButtonToolbar ()
   extends typings.reactBootstrap.mod.ButtonToolbar

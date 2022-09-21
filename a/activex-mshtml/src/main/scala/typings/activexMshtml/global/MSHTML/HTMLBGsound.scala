@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLBGsound")
 @js.native
-/* private */ class HTMLBGsound ()
+/* private */ open class HTMLBGsound ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLBGsound

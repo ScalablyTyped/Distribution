@@ -17,5 +17,5 @@ trait WCSLayerConstructor
 Instantiable0[WCSLayer]
      with Instantiable1[/* properties */ WCSLayerProperties, WCSLayer] {
   
-  def fromJSON(json: js.Any): WCSLayer = js.native
+  def fromJSON(json: Any): WCSLayer = js.native
 }

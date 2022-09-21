@@ -62,7 +62,7 @@ object XProtocolProperties {
     acquire: () => Unit,
     commitChange: SeqEquiv[ProtocolProperty] => Unit,
     getProperties: () => SafeArray[ProtocolProperty],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     requestChange: Double => Double
   ): XProtocolProperties = {

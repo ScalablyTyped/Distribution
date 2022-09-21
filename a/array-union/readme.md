@@ -1,7 +1,7 @@
 
 # Scala.js typings for array-union
 
-Typings are for version 2.1.0
+Typings are for version 3.0.1
 
 ## Library description:
 Create an array of unique values, in order, from the input arrays
@@ -11,9 +11,9 @@ Create an array of unique values, in order, from the input arrays
 | Full name          | array-union |
 | Keywords           | array, set, uniq, unique, duplicate, remove, union, combine, merge |
 | # releases         | 3 |
-| # dependents       | 120 |
-| # downloads        | 747167059 |
-| # stars            | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1.44103233E8 |
+| # stars            | 68.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/array-union#readme)

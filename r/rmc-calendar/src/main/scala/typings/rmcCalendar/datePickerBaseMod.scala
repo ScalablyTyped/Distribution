@@ -7,7 +7,6 @@ import typings.rmcCalendar.anon.FirstDate
 import typings.rmcCalendar.dataTypesMod.Models.CellData
 import typings.rmcCalendar.dataTypesMod.Models.MonthData
 import typings.rmcCalendar.datePickerPropsMod.PropsType
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,8 +32,7 @@ object datePickerBaseMod {
   }
   
   @js.native
-  trait DatePicker
-    extends Component[PropsType, StateType, js.Any] {
+  trait DatePicker extends Component[PropsType, StateType, Any] {
     
     def canLoadNext(): Boolean = js.native
     
@@ -53,31 +51,31 @@ object datePickerBaseMod {
     def genMonthComponent(data: MonthData): ReactNode = js.native
     
     def genMonthData(): MonthData = js.native
+    def genMonthData(date: js.Date): MonthData = js.native
+    def genMonthData(date: js.Date, addMonth: Double): MonthData = js.native
     def genMonthData(date: Unit, addMonth: Double): MonthData = js.native
-    def genMonthData(date: Date): MonthData = js.native
-    def genMonthData(date: Date, addMonth: Double): MonthData = js.native
     
-    def genWeekData(firstDate: Date): js.Array[js.Array[CellData]] = js.native
+    def genWeekData(firstDate: js.Date): js.Array[js.Array[CellData]] = js.native
     
     def getDateWithoutTime(): Double = js.native
-    def getDateWithoutTime(date: Date): Double = js.native
+    def getDateWithoutTime(date: js.Date): Double = js.native
     
     def getMonthDate(): FirstDate = js.native
+    def getMonthDate(date: js.Date): FirstDate = js.native
+    def getMonthDate(date: js.Date, addMonth: Double): FirstDate = js.native
     def getMonthDate(date: Unit, addMonth: Double): FirstDate = js.native
-    def getMonthDate(date: Date): FirstDate = js.native
-    def getMonthDate(date: Date, addMonth: Double): FirstDate = js.native
     
     def inDate(date: Double, tick: Double): Boolean = js.native
     
     def onCellClick(day: CellData): Unit = js.native
     
-    def selectDateRange(startDate: Date): Unit = js.native
-    def selectDateRange(startDate: Date, endDate: Unit, clear: Boolean): Unit = js.native
-    def selectDateRange(startDate: Date, endDate: Date): Unit = js.native
-    def selectDateRange(startDate: Date, endDate: Date, clear: Boolean): Unit = js.native
+    def selectDateRange(startDate: js.Date): Unit = js.native
+    def selectDateRange(startDate: js.Date, endDate: js.Date): Unit = js.native
+    def selectDateRange(startDate: js.Date, endDate: js.Date, clear: Boolean): Unit = js.native
+    def selectDateRange(startDate: js.Date, endDate: Unit, clear: Boolean): Unit = js.native
     
     @JSName("shouldComponentUpdate")
-    def shouldComponentUpdate_MDatePicker(nextProps: PropsType, nextState: StateType, nextContext: js.Any): Boolean = js.native
+    def shouldComponentUpdate_MDatePicker(nextProps: PropsType, nextState: StateType, nextContext: Any): Boolean = js.native
     
     var visibleMonth: js.Array[MonthData] = js.native
   }
@@ -97,7 +95,7 @@ object datePickerBaseMod {
       
       inline def setMonths(value: js.Array[MonthData]): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
       
-      inline def setMonthsVarargs(value: MonthData*): Self = StObject.set(x, "months", js.Array(value :_*))
+      inline def setMonthsVarargs(value: MonthData*): Self = StObject.set(x, "months", js.Array(value*))
     }
   }
 }

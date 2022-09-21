@@ -49,7 +49,6 @@ import typings.chromeApps.chromeAppsStrings.SECURITY
 import typings.chromeApps.chromeAppsStrings.SHARE
 import typings.chromeApps.chromeAppsStrings.TOO_MANY_OPENED
 import typings.chromeApps.chromeAppsStrings.WRITE
-import typings.std.ArrayBuffer
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -737,7 +736,7 @@ object fileSystemProvider {
   val onReadFileRequested: typings.chromeApps.chrome.events.Event[
     js.Function3[
       /* options */ ReadFileRequestedEventOptions, 
-      /* successCallback */ js.Function2[/* data */ ArrayBuffer, /* hasMore */ Boolean, Unit], 
+      /* successCallback */ js.Function2[/* data */ js.typedarray.ArrayBuffer, /* hasMore */ Boolean, Unit], 
       /* errorCallback */ js.Function1[
         /* error */ ToStringLiteral[
           typings.chromeApps.anon.ABORT, 

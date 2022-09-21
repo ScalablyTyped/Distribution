@@ -10,10 +10,10 @@ Canvas and Image utilities.
 | ------------------ | :-------------: |
 | Full name          | vega-canvas |
 | Keywords           | vega, canvas, image |
-| # releases         | 8 |
-| # dependents       | 7 |
-| # downloads        | 3018910 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 1027317.6666666666 |
+| # stars            | 9844.0 |
 
 ## Links
 - [Homepage](https://github.com/vega/vega#readme)

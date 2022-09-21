@@ -24,7 +24,7 @@ trait Alarm extends StObject {
   /**
     * The timestamp when the alarm was created.
     */
-  var createdAt: js.UndefOr[IsoDate] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The number of data points that must not within the specified threshold to trigger the alarm.
@@ -127,9 +127,9 @@ object Alarm {
     
     inline def setContactProtocolsUndefined: Self = StObject.set(x, "contactProtocols", js.undefined)
     
-    inline def setContactProtocolsVarargs(value: ContactProtocol*): Self = StObject.set(x, "contactProtocols", js.Array(value :_*))
+    inline def setContactProtocolsVarargs(value: ContactProtocol*): Self = StObject.set(x, "contactProtocols", js.Array(value*))
     
-    inline def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
@@ -165,7 +165,7 @@ object Alarm {
     
     inline def setNotificationTriggersUndefined: Self = StObject.set(x, "notificationTriggers", js.undefined)
     
-    inline def setNotificationTriggersVarargs(value: AlarmState*): Self = StObject.set(x, "notificationTriggers", js.Array(value :_*))
+    inline def setNotificationTriggersVarargs(value: AlarmState*): Self = StObject.set(x, "notificationTriggers", js.Array(value*))
     
     inline def setPeriod(value: MetricPeriod): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     

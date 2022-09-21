@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.ParticlesOptimization")
 @js.native
-class ParticlesOptimization ()
+open class ParticlesOptimization ()
   extends StObject
      with typings.babylonjs.BABYLON.ParticlesOptimization {
   

@@ -1,11 +1,11 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.arcgisJsApiStrings.bevel
-import typings.arcgisJsApi.arcgisJsApiStrings.butt
+import typings.arcgisJsApi.arcgisJsApiStrings.bevel_
+import typings.arcgisJsApi.arcgisJsApiStrings.butt_
 import typings.arcgisJsApi.arcgisJsApiStrings.line
-import typings.arcgisJsApi.arcgisJsApiStrings.miter
-import typings.arcgisJsApi.arcgisJsApiStrings.round
-import typings.arcgisJsApi.arcgisJsApiStrings.square
+import typings.arcgisJsApi.arcgisJsApiStrings.miter_
+import typings.arcgisJsApi.arcgisJsApiStrings.round_
+import typings.arcgisJsApi.arcgisJsApiStrings.square_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,16 +20,27 @@ trait LineSymbol3DLayer
   /**
     * The style used to draw the endpoint of a line.
     *
+    * @default butt
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol3DLayer.html#cap)
     */
-  var cap: butt | round | square = js.native
+  var cap: butt_ | round_ | square_ = js.native
   
   /**
     * The style used to draw the intersection of two line segments within a line geometry.
     *
+    * @default miter
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol3DLayer.html#join)
     */
-  var join: miter | round | bevel = js.native
+  var join: miter_ | round_ | bevel_ = js.native
+  
+  /**
+    * Optional markers to be placed at the start and/or end of each line geometry.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol3DLayer.html#marker)
+    */
+  var marker: LineStyleMarker3D = js.native
   
   /**
     * The material used to shade the line.
@@ -39,7 +50,16 @@ trait LineSymbol3DLayer
   var material: LineSymbol3DLayerMaterial = js.native
   
   /**
+    * The pattern used to render the line stroke.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol3DLayer.html#pattern)
+    */
+  var pattern: LineStylePattern3D = js.native
+  
+  /**
     * The width of the line in points.
+    *
+    * @default "1px"
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol3DLayer.html#size)
     */

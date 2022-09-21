@@ -15,12 +15,12 @@ trait CodeStarNotifications extends Service {
   var config_CodeStarNotifications: ConfigBase & ClientConfiguration = js.native
   
   /**
-    * Creates a notification rule for a resource. The rule specifies the events you want notifications about and the targets (such as SNS topics) where you want to receive them.
+    * Creates a notification rule for a resource. The rule specifies the events you want notifications about and the targets (such as Chatbot topics or Chatbot clients configured for Slack) where you want to receive them.
     */
   def createNotificationRule(): Request[CreateNotificationRuleResult, AWSError] = js.native
   def createNotificationRule(callback: js.Function2[/* err */ AWSError, /* data */ CreateNotificationRuleResult, Unit]): Request[CreateNotificationRuleResult, AWSError] = js.native
   /**
-    * Creates a notification rule for a resource. The rule specifies the events you want notifications about and the targets (such as SNS topics) where you want to receive them.
+    * Creates a notification rule for a resource. The rule specifies the events you want notifications about and the targets (such as Chatbot topics or Chatbot clients configured for Slack) where you want to receive them.
     */
   def createNotificationRule(params: CreateNotificationRuleRequest): Request[CreateNotificationRuleResult, AWSError] = js.native
   def createNotificationRule(
@@ -85,12 +85,12 @@ trait CodeStarNotifications extends Service {
   ): Request[ListEventTypesResult, AWSError] = js.native
   
   /**
-    * Returns a list of the notification rules for an AWS account.
+    * Returns a list of the notification rules for an Amazon Web Services account.
     */
   def listNotificationRules(): Request[ListNotificationRulesResult, AWSError] = js.native
   def listNotificationRules(callback: js.Function2[/* err */ AWSError, /* data */ ListNotificationRulesResult, Unit]): Request[ListNotificationRulesResult, AWSError] = js.native
   /**
-    * Returns a list of the notification rules for an AWS account.
+    * Returns a list of the notification rules for an Amazon Web Services account.
     */
   def listNotificationRules(params: ListNotificationRulesRequest): Request[ListNotificationRulesResult, AWSError] = js.native
   def listNotificationRules(
@@ -113,12 +113,12 @@ trait CodeStarNotifications extends Service {
   ): Request[ListTagsForResourceResult, AWSError] = js.native
   
   /**
-    * Returns a list of the notification rule targets for an AWS account.
+    * Returns a list of the notification rule targets for an Amazon Web Services account.
     */
   def listTargets(): Request[ListTargetsResult, AWSError] = js.native
   def listTargets(callback: js.Function2[/* err */ AWSError, /* data */ ListTargetsResult, Unit]): Request[ListTargetsResult, AWSError] = js.native
   /**
-    * Returns a list of the notification rule targets for an AWS account.
+    * Returns a list of the notification rule targets for an Amazon Web Services account.
     */
   def listTargets(params: ListTargetsRequest): Request[ListTargetsResult, AWSError] = js.native
   def listTargets(
@@ -127,12 +127,12 @@ trait CodeStarNotifications extends Service {
   ): Request[ListTargetsResult, AWSError] = js.native
   
   /**
-    * Creates an association between a notification rule and an SNS topic so that the associated target can receive notifications when the events described in the rule are triggered.
+    * Creates an association between a notification rule and an Chatbot topic or Chatbot client so that the associated target can receive notifications when the events described in the rule are triggered.
     */
   def subscribe(): Request[SubscribeResult, AWSError] = js.native
   def subscribe(callback: js.Function2[/* err */ AWSError, /* data */ SubscribeResult, Unit]): Request[SubscribeResult, AWSError] = js.native
   /**
-    * Creates an association between a notification rule and an SNS topic so that the associated target can receive notifications when the events described in the rule are triggered.
+    * Creates an association between a notification rule and an Chatbot topic or Chatbot client so that the associated target can receive notifications when the events described in the rule are triggered.
     */
   def subscribe(params: SubscribeRequest): Request[SubscribeResult, AWSError] = js.native
   def subscribe(
@@ -155,12 +155,12 @@ trait CodeStarNotifications extends Service {
   ): Request[TagResourceResult, AWSError] = js.native
   
   /**
-    * Removes an association between a notification rule and an Amazon SNS topic so that subscribers to that topic stop receiving notifications when the events described in the rule are triggered.
+    * Removes an association between a notification rule and an Chatbot topic so that subscribers to that topic stop receiving notifications when the events described in the rule are triggered.
     */
   def unsubscribe(): Request[UnsubscribeResult, AWSError] = js.native
   def unsubscribe(callback: js.Function2[/* err */ AWSError, /* data */ UnsubscribeResult, Unit]): Request[UnsubscribeResult, AWSError] = js.native
   /**
-    * Removes an association between a notification rule and an Amazon SNS topic so that subscribers to that topic stop receiving notifications when the events described in the rule are triggered.
+    * Removes an association between a notification rule and an Chatbot topic so that subscribers to that topic stop receiving notifications when the events described in the rule are triggered.
     */
   def unsubscribe(params: UnsubscribeRequest): Request[UnsubscribeResult, AWSError] = js.native
   def unsubscribe(

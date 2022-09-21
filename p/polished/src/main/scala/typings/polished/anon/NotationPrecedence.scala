@@ -2,9 +2,8 @@ package typings.polished.anon
 
 import typings.polished.polishedNumbers.`0`
 import typings.polished.polishedNumbers.`1`
-import typings.polished.polishedNumbers.`3`
-import typings.polished.polishedStrings.`-_`
-import typings.polished.polishedStrings.prefix
+import typings.polished.polishedStrings.Rightparenthesis
+import typings.polished.polishedStrings.postfix
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,22 +12,20 @@ trait NotationPrecedence extends StObject {
   
   var argCount: `1`
   
-  var f: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify negation */ js.Any
+  var f: Unit
   
-  var notation: prefix
+  var notation: postfix
   
-  var precedence: `3`
+  var precedence: `0`
   
   var rightToLeft: `0`
   
-  var symbol: `-_`
+  var symbol: Rightparenthesis
 }
 object NotationPrecedence {
   
-  inline def apply(
-    f: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify negation */ js.Any
-  ): NotationPrecedence = {
-    val __obj = js.Dynamic.literal(argCount = 1, f = f.asInstanceOf[js.Any], notation = "prefix", precedence = 3, rightToLeft = 0, symbol = "-")
+  inline def apply(f: Unit): NotationPrecedence = {
+    val __obj = js.Dynamic.literal(argCount = 1, f = f.asInstanceOf[js.Any], notation = "postfix", precedence = 0, rightToLeft = 0, symbol = ")")
     __obj.asInstanceOf[NotationPrecedence]
   }
   
@@ -36,16 +33,14 @@ object NotationPrecedence {
     
     inline def setArgCount(value: `1`): Self = StObject.set(x, "argCount", value.asInstanceOf[js.Any])
     
-    inline def setF(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify negation */ js.Any
-    ): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
+    inline def setF(value: Unit): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
     
-    inline def setNotation(value: prefix): Self = StObject.set(x, "notation", value.asInstanceOf[js.Any])
+    inline def setNotation(value: postfix): Self = StObject.set(x, "notation", value.asInstanceOf[js.Any])
     
-    inline def setPrecedence(value: `3`): Self = StObject.set(x, "precedence", value.asInstanceOf[js.Any])
+    inline def setPrecedence(value: `0`): Self = StObject.set(x, "precedence", value.asInstanceOf[js.Any])
     
     inline def setRightToLeft(value: `0`): Self = StObject.set(x, "rightToLeft", value.asInstanceOf[js.Any])
     
-    inline def setSymbol(value: `-_`): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: Rightparenthesis): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }
 }

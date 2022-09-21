@@ -2,7 +2,7 @@ package typings.reactNavigationRouters
 
 import typings.reactNavigationRouters.anon.KeyType
 import typings.reactNavigationRouters.anon.NameParams
-import typings.reactNavigationRouters.anon.`0`
+import typings.reactNavigationRouters.anon.Status
 import typings.reactNavigationRouters.reactNavigationRoutersBooleans.`false`
 import typings.reactNavigationRouters.reactNavigationRoutersStrings.CLOSE_DRAWER
 import typings.reactNavigationRouters.reactNavigationRoutersStrings.OPEN_DRAWER
@@ -26,7 +26,7 @@ object drawerRouterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(hasOpenByDefaultRest: DrawerRouterOptions): Router[DrawerNavigationState[ParamListBase], DrawerActionType | CommonNavigationAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasOpenByDefaultRest.asInstanceOf[js.Any]).asInstanceOf[Router[DrawerNavigationState[ParamListBase], DrawerActionType | CommonNavigationAction]]
+  inline def default(hasDefaultStatusRest: DrawerRouterOptions): Router[DrawerNavigationState[ParamListBase], DrawerActionType | CommonNavigationAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasDefaultStatusRest.asInstanceOf[js.Any]).asInstanceOf[Router[DrawerNavigationState[ParamListBase], DrawerActionType | CommonNavigationAction]]
   
   object DrawerActions {
     
@@ -68,9 +68,9 @@ object drawerRouterMod {
     inline def apply[ParamList /* <: ParamListBase */](
       closeDrawer: () => Unit,
       jumpTo: (js.Tuple2[
-          js.Any, 
-          /* import warning: importer.ImportType#apply Failed type conversion: ParamList[RouteName] */ js.Any
-        ]) | js.Array[js.Any] => Unit,
+          Any, 
+          /* import warning: importer.ImportType#apply Failed type conversion: ParamList[RouteName] */ /* params */ js.Any
+        ]) | js.Array[Any] => Unit,
       openDrawer: () => Unit,
       toggleDrawer: () => Unit
     ): DrawerActionHelpers[ParamList] = {
@@ -108,13 +108,18 @@ object drawerRouterMod {
     }
   }
   
-  /* Inlined std.Omit<@react-navigation/routers.@react-navigation/routers/lib/typescript/src/TabRouter.TabNavigationState<ParamList>, 'type' | 'history'> & {  type :'drawer',   history :std.Array<{  type :'route',   key :string} | {  type :'drawer'}>} */
+  /* Inlined std.Omit<@react-navigation/routers.@react-navigation/routers/lib/typescript/src/TabRouter.TabNavigationState<ParamList>, 'type' | 'history'> & {  type :'drawer',   default :@react-navigation/routers.@react-navigation/routers/lib/typescript/src/DrawerRouter.DrawerStatus,   history :std.Array<{  type :'route',   key :string} | {  type :'drawer',   status :@react-navigation/routers.@react-navigation/routers/lib/typescript/src/DrawerRouter.DrawerStatus}>} */
   trait DrawerNavigationState[ParamList /* <: ParamListBase */] extends StObject {
+    
+    /**
+      * Default status of the drawer.
+      */
+    var default: DrawerStatus
     
     /**
       * List of previously visited route keys and drawer open status.
       */
-    var history: js.Array[KeyType | `0`]
+    var history: js.Array[KeyType | Status]
     
     var index: Double
     
@@ -134,22 +139,25 @@ object drawerRouterMod {
   object DrawerNavigationState {
     
     inline def apply[ParamList /* <: ParamListBase */](
-      history: js.Array[KeyType | `0`],
+      default: DrawerStatus,
+      history: js.Array[KeyType | Status],
       index: Double,
       key: String,
       routeNames: js.Array[Extract[/* keyof ParamList */ String, String]],
       routes: js.Array[NavigationRoute[ParamList, /* keyof ParamList */ String]]
     ): DrawerNavigationState[ParamList] = {
-      val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], routeNames = routeNames.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], stale = false)
+      val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], history = history.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], routeNames = routeNames.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], stale = false)
       __obj.updateDynamic("type")("drawer")
       __obj.asInstanceOf[DrawerNavigationState[ParamList]]
     }
     
     extension [Self <: DrawerNavigationState[?], ParamList /* <: ParamListBase */](x: Self & DrawerNavigationState[ParamList]) {
       
-      inline def setHistory(value: js.Array[KeyType | `0`]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      inline def setDefault(value: DrawerStatus): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      inline def setHistoryVarargs(value: (KeyType | `0`)*): Self = StObject.set(x, "history", js.Array(value :_*))
+      inline def setHistory(value: js.Array[KeyType | Status]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      
+      inline def setHistoryVarargs(value: (KeyType | Status)*): Self = StObject.set(x, "history", js.Array(value*))
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -157,11 +165,11 @@ object drawerRouterMod {
       
       inline def setRouteNames(value: js.Array[Extract[/* keyof ParamList */ String, String]]): Self = StObject.set(x, "routeNames", value.asInstanceOf[js.Any])
       
-      inline def setRouteNamesVarargs(value: (Extract[/* keyof ParamList */ String, String])*): Self = StObject.set(x, "routeNames", js.Array(value :_*))
+      inline def setRouteNamesVarargs(value: (Extract[/* keyof ParamList */ String, String])*): Self = StObject.set(x, "routeNames", js.Array(value*))
       
       inline def setRoutes(value: js.Array[NavigationRoute[ParamList, /* keyof ParamList */ String]]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       
-      inline def setRoutesVarargs(value: (NavigationRoute[ParamList, /* keyof ParamList */ String])*): Self = StObject.set(x, "routes", js.Array(value :_*))
+      inline def setRoutesVarargs(value: (NavigationRoute[ParamList, /* keyof ParamList */ String])*): Self = StObject.set(x, "routes", js.Array(value*))
       
       inline def setStale(value: `false`): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
       
@@ -173,7 +181,7 @@ object drawerRouterMod {
     extends StObject
        with TabRouterOptions {
     
-    var openByDefault: js.UndefOr[Boolean] = js.undefined
+    var defaultStatus: js.UndefOr[DrawerStatus] = js.undefined
   }
   object DrawerRouterOptions {
     
@@ -184,9 +192,21 @@ object drawerRouterMod {
     
     extension [Self <: DrawerRouterOptions](x: Self) {
       
-      inline def setOpenByDefault(value: Boolean): Self = StObject.set(x, "openByDefault", value.asInstanceOf[js.Any])
+      inline def setDefaultStatus(value: DrawerStatus): Self = StObject.set(x, "defaultStatus", value.asInstanceOf[js.Any])
       
-      inline def setOpenByDefaultUndefined: Self = StObject.set(x, "openByDefault", js.undefined)
+      inline def setDefaultStatusUndefined: Self = StObject.set(x, "defaultStatus", js.undefined)
     }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.reactNavigationRouters.reactNavigationRoutersStrings.open
+    - typings.reactNavigationRouters.reactNavigationRoutersStrings.closed
+  */
+  trait DrawerStatus extends StObject
+  object DrawerStatus {
+    
+    inline def closed: typings.reactNavigationRouters.reactNavigationRoutersStrings.closed = "closed".asInstanceOf[typings.reactNavigationRouters.reactNavigationRoutersStrings.closed]
+    
+    inline def open: typings.reactNavigationRouters.reactNavigationRoutersStrings.open = "open".asInstanceOf[typings.reactNavigationRouters.reactNavigationRoutersStrings.open]
   }
 }

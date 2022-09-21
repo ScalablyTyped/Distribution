@@ -2,6 +2,7 @@ package typings.simpleWebsocket
 
 import typings.node.streamMod.Duplex
 import typings.node.streamMod.DuplexOptions
+import typings.ws.mod.WebSocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ object mod {
   
   @JSImport("simple-websocket", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Socket {
+  open class ^ protected () extends Socket {
     def this(options: String) = this()
     def this(options: Options) = this()
   }
@@ -29,7 +30,7 @@ object mod {
        with DuplexOptions {
     
     /** raw websocket instance to wrap */
-    var socket: js.UndefOr[typings.ws.mod.^] = js.undefined
+    var socket: js.UndefOr[WebSocket] = js.undefined
     
     /** websocket server url */
     var url: js.UndefOr[String] = js.undefined
@@ -43,7 +44,7 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setSocket(value: typings.ws.mod.^): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
+      inline def setSocket(value: WebSocket): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
       
       inline def setSocketUndefined: Self = StObject.set(x, "socket", js.undefined)
       
@@ -56,7 +57,11 @@ object mod {
   @js.native
   trait Socket extends Duplex {
     
+    /** Destroy and cleanup this websocket connection */
+    def destroy(): Any = js.native
+    def destroy(err: js.Error): Any = js.native
+    
     /** Send text/binary data to the WebSocket server */
-    def send(chunk: js.Any): Unit = js.native
+    def send(chunk: Any): Unit = js.native
   }
 }

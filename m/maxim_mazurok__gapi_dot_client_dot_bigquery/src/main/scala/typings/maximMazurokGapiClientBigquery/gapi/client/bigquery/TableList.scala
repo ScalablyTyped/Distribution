@@ -46,7 +46,7 @@ object TableList {
     
     inline def setTablesUndefined: Self = StObject.set(x, "tables", js.undefined)
     
-    inline def setTablesVarargs(value: typings.maximMazurokGapiClientBigquery.anon.Clustering*): Self = StObject.set(x, "tables", js.Array(value :_*))
+    inline def setTablesVarargs(value: typings.maximMazurokGapiClientBigquery.anon.Clustering*): Self = StObject.set(x, "tables", js.Array(value*))
     
     inline def setTotalItems(value: Double): Self = StObject.set(x, "totalItems", value.asInstanceOf[js.Any])
     

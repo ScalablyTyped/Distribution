@@ -22,7 +22,9 @@ trait MakeRequestConfig extends StObject {
   
   var retries: js.UndefOr[Double] = js.undefined
   
-  var shouldRetryFn: js.UndefOr[js.Function1[/* response */ js.UndefOr[Response[js.Any]], Boolean]] = js.undefined
+  var retryOptions: js.UndefOr[RetryOptions] = js.undefined
+  
+  var shouldRetryFn: js.UndefOr[js.Function1[/* response */ js.UndefOr[Response[Any]], Boolean]] = js.undefined
   
   var stream: js.UndefOr[Duplexify] = js.undefined
 }
@@ -47,7 +49,11 @@ object MakeRequestConfig {
     
     inline def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
     
-    inline def setShouldRetryFn(value: /* response */ js.UndefOr[Response[js.Any]] => Boolean): Self = StObject.set(x, "shouldRetryFn", js.Any.fromFunction1(value))
+    inline def setRetryOptions(value: RetryOptions): Self = StObject.set(x, "retryOptions", value.asInstanceOf[js.Any])
+    
+    inline def setRetryOptionsUndefined: Self = StObject.set(x, "retryOptions", js.undefined)
+    
+    inline def setShouldRetryFn(value: /* response */ js.UndefOr[Response[Any]] => Boolean): Self = StObject.set(x, "shouldRetryFn", js.Any.fromFunction1(value))
     
     inline def setShouldRetryFnUndefined: Self = StObject.set(x, "shouldRetryFn", js.undefined)
     

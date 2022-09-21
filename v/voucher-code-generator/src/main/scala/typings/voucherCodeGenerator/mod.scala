@@ -13,11 +13,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def charset_alphabetic(name: alphabetic): String = ^.asInstanceOf[js.Dynamic].applyDynamic("charset")(name.asInstanceOf[js.Any]).asInstanceOf[String]
-  
-  inline def charset_alphanumeric(name: alphanumeric): String = ^.asInstanceOf[js.Dynamic].applyDynamic("charset")(name.asInstanceOf[js.Any]).asInstanceOf[String]
-  
-  inline def charset_numbers(name: numbers): String = ^.asInstanceOf[js.Dynamic].applyDynamic("charset")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def charset(name: numbers | alphabetic | alphanumeric): String = ^.asInstanceOf[js.Dynamic].applyDynamic("charset")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def generate(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")().asInstanceOf[js.Array[String]]
   inline def generate(config: generatorConfig): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(config.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]

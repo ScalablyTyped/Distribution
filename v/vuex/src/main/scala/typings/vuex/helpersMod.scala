@@ -2,9 +2,11 @@ package typings.vuex
 
 import org.scalablytyped.runtime.TopLevel
 import typings.std.Record
-import typings.vue.vueMod.Vue
+import typings.vueRuntimeCore.mod.ComponentOptionsBase
+import typings.vueRuntimeCore.mod.ComponentPublicInstance
 import typings.vuex.mod.Commit
 import typings.vuex.mod.Dispatch
+import typings.vuex.vuexBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,39 +38,50 @@ object helpersMod {
   @js.native
   trait ActionMethod extends StObject {
     
-    def apply(args: js.Any*): js.Promise[js.Any] = js.native
+    def apply(args: Any*): js.Promise[Any] = js.native
   }
   
-  type Computed = js.Function0[js.Any]
+  type Computed = js.Function0[Any]
   
-  type CustomVue = Vue & (Record[String, js.Any])
+  type CustomVue = (ComponentPublicInstance[
+    js.Object, 
+    js.Object, 
+    js.Object, 
+    js.Object, 
+    js.Object, 
+    js.Object, 
+    js.Object, 
+    js.Object, 
+    `false`, 
+    ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object]
+  ]) & (Record[String, Any])
   
-  type InlineComputed[T /* <: js.Function */] = js.Function0[js.Any]
+  type InlineComputed[T /* <: js.Function */] = js.Function0[Any]
   
-  type InlineMethod[T /* <: js.Function2[/* fn */ js.Any, /* repeated */ js.Any, js.Any] */] = js.Function1[/* args */ js.Any, js.Any]
+  type InlineMethod[T /* <: js.Function2[/* fn */ Any, /* repeated */ Any, Any] */] = js.Function1[/* args */ Any, Any]
   
   @js.native
   trait Mapper[R] extends StObject {
     
     def apply[Map /* <: Record[String, String] */](map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Map ]: R}
-      */ typings.vuex.vuexStrings.Mapper & TopLevel[js.Any] = js.native
+      */ typings.vuex.vuexStrings.Mapper & TopLevel[Any] = js.native
     def apply[Key /* <: String */](map: js.Array[Key]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in Key ]: R}
-      */ typings.vuex.vuexStrings.Mapper & TopLevel[js.Any] = js.native
+      */ typings.vuex.vuexStrings.Mapper & TopLevel[Any] = js.native
   }
   
   type MapperForAction = js.Function1[
     /* map */ Record[
       String, 
-      js.ThisFunction2[/* this */ CustomVue, /* dispatch */ Dispatch, /* repeated */ js.Any, js.Any]
+      js.ThisFunction2[/* this */ CustomVue, /* dispatch */ Dispatch, /* repeated */ Any, Any]
     ], 
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof std.Record<string, (this : vuex.vuex/types/helpers.CustomVue, dispatch : vuex.vuex.Dispatch, args : ...any): any> ]: vuex.vuex/types/helpers.InlineMethod<std.Record<string, (this : vuex.vuex/types/helpers.CustomVue, dispatch : vuex.vuex.Dispatch, args : ...any): any>[K]>}
     */ typings.vuex.vuexStrings.MapperForAction & (TopLevel[
       Record[
         String, 
-        js.ThisFunction2[/* this */ CustomVue, /* dispatch */ Dispatch, /* repeated */ js.Any, js.Any]
+        js.ThisFunction2[/* this */ CustomVue, /* dispatch */ Dispatch, /* repeated */ Any, Any]
       ]
     ])
   ]
@@ -77,14 +90,14 @@ object helpersMod {
     /* namespace */ String, 
     /* map */ Record[
       String, 
-      js.ThisFunction2[/* this */ CustomVue, /* dispatch */ Dispatch, /* repeated */ js.Any, js.Any]
+      js.ThisFunction2[/* this */ CustomVue, /* dispatch */ Dispatch, /* repeated */ Any, Any]
     ], 
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof std.Record<string, (this : vuex.vuex/types/helpers.CustomVue, dispatch : vuex.vuex.Dispatch, args : ...any): any> ]: vuex.vuex/types/helpers.InlineMethod<std.Record<string, (this : vuex.vuex/types/helpers.CustomVue, dispatch : vuex.vuex.Dispatch, args : ...any): any>[K]>}
     */ typings.vuex.vuexStrings.MapperForActionWithNamespace & (TopLevel[
       Record[
         String, 
-        js.ThisFunction2[/* this */ CustomVue, /* dispatch */ Dispatch, /* repeated */ js.Any, js.Any]
+        js.ThisFunction2[/* this */ CustomVue, /* dispatch */ Dispatch, /* repeated */ Any, Any]
       ]
     ])
   ]
@@ -92,14 +105,14 @@ object helpersMod {
   type MapperForMutation = js.Function1[
     /* map */ Record[
       String, 
-      js.ThisFunction2[/* this */ CustomVue, /* commit */ Commit, /* repeated */ js.Any, js.Any]
+      js.ThisFunction2[/* this */ CustomVue, /* commit */ Commit, /* repeated */ Any, Any]
     ], 
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof std.Record<string, (this : vuex.vuex/types/helpers.CustomVue, commit : vuex.vuex.Commit, args : ...any): any> ]: vuex.vuex/types/helpers.InlineMethod<std.Record<string, (this : vuex.vuex/types/helpers.CustomVue, commit : vuex.vuex.Commit, args : ...any): any>[K]>}
     */ typings.vuex.vuexStrings.MapperForMutation & (TopLevel[
       Record[
         String, 
-        js.ThisFunction2[/* this */ CustomVue, /* commit */ Commit, /* repeated */ js.Any, js.Any]
+        js.ThisFunction2[/* this */ CustomVue, /* commit */ Commit, /* repeated */ Any, Any]
       ]
     ])
   ]
@@ -108,14 +121,14 @@ object helpersMod {
     /* namespace */ String, 
     /* map */ Record[
       String, 
-      js.ThisFunction2[/* this */ CustomVue, /* commit */ Commit, /* repeated */ js.Any, js.Any]
+      js.ThisFunction2[/* this */ CustomVue, /* commit */ Commit, /* repeated */ Any, Any]
     ], 
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof std.Record<string, (this : vuex.vuex/types/helpers.CustomVue, commit : vuex.vuex.Commit, args : ...any): any> ]: vuex.vuex/types/helpers.InlineMethod<std.Record<string, (this : vuex.vuex/types/helpers.CustomVue, commit : vuex.vuex.Commit, args : ...any): any>[K]>}
     */ typings.vuex.vuexStrings.MapperForMutationWithNamespace & (TopLevel[
       Record[
         String, 
-        js.ThisFunction2[/* this */ CustomVue, /* commit */ Commit, /* repeated */ js.Any, js.Any]
+        js.ThisFunction2[/* this */ CustomVue, /* commit */ Commit, /* repeated */ Any, Any]
       ]
     ])
   ]
@@ -124,7 +137,7 @@ object helpersMod {
     /* map */ js.Object, 
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof {} ]: vuex.vuex/types/helpers.InlineComputed<{}[K]>}
-    */ typings.vuex.vuexStrings.MapperForState & TopLevel[js.Any]
+    */ typings.vuex.vuexStrings.MapperForState & TopLevel[Any]
   ]
   
   type MapperForStateWithNamespace = js.Function2[
@@ -132,7 +145,7 @@ object helpersMod {
     /* map */ js.Object, 
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof {} ]: vuex.vuex/types/helpers.InlineComputed<{}[K]>}
-    */ typings.vuex.vuexStrings.MapperForStateWithNamespace & TopLevel[js.Any]
+    */ typings.vuex.vuexStrings.MapperForStateWithNamespace & TopLevel[Any]
   ]
   
   @js.native
@@ -140,73 +153,73 @@ object helpersMod {
     
     def apply[Map /* <: Record[String, String] */](namespace: String, map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Map ]: R}
-      */ typings.vuex.vuexStrings.MapperWithNamespace & TopLevel[js.Any] = js.native
+      */ typings.vuex.vuexStrings.MapperWithNamespace & TopLevel[Any] = js.native
     def apply[Key /* <: String */](namespace: String, map: js.Array[Key]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in Key ]: R}
-      */ typings.vuex.vuexStrings.MapperWithNamespace & TopLevel[js.Any] = js.native
+      */ typings.vuex.vuexStrings.MapperWithNamespace & TopLevel[Any] = js.native
   }
   
   @js.native
   trait MutationMethod extends StObject {
     
-    def apply(args: js.Any*): Unit = js.native
+    def apply(args: Any*): Unit = js.native
   }
   
   trait NamespacedMappers extends StObject {
     
     def mapActions[Map /* <: Record[
         String, 
-        js.ThisFunction2[/* this */ CustomVue, /* dispatch */ Dispatch, /* repeated */ js.Any, js.Any]
+        js.ThisFunction2[/* this */ CustomVue, /* dispatch */ Dispatch, /* repeated */ Any, Any]
       ] */](map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Map ]: vuex.vuex/types/helpers.InlineMethod<Map[K]>}
       */ typings.vuex.vuexStrings.NamespacedMappers & TopLevel[Map]
     def mapActions[Key /* <: String */](map: js.Array[Key]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in Key ]: vuex.vuex/types/helpers.ActionMethod}
-      */ typings.vuex.vuexStrings.NamespacedMappers & TopLevel[js.Any]
+      */ typings.vuex.vuexStrings.NamespacedMappers & TopLevel[Any]
     @JSName("mapActions")
     def mapActions_Map_RecordStringString[Map /* <: Record[String, String] */](map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Map ]: vuex.vuex/types/helpers.ActionMethod}
-      */ typings.vuex.vuexStrings.NamespacedMappers & TopLevel[js.Any]
+      */ typings.vuex.vuexStrings.NamespacedMappers & TopLevel[Any]
     @JSName("mapActions")
     var mapActions_Original: Mapper[ActionMethod] & MapperForAction
     
     def mapGetters[Map /* <: Record[String, String] */](map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Map ]: vuex.vuex/types/helpers.Computed}
-      */ typings.vuex.vuexStrings.NamespacedMappers & TopLevel[js.Any]
+      */ typings.vuex.vuexStrings.NamespacedMappers & TopLevel[Any]
     def mapGetters[Key /* <: String */](map: js.Array[Key]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in Key ]: vuex.vuex/types/helpers.Computed}
-      */ typings.vuex.vuexStrings.NamespacedMappers & TopLevel[js.Any]
+      */ typings.vuex.vuexStrings.NamespacedMappers & TopLevel[Any]
     @JSName("mapGetters")
     var mapGetters_Original: Mapper[Computed]
     
-    def mapMutations[Map /* <: Record[
+    def mapMutations[Map /* <: Record[String, String] */](map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ K in keyof Map ]: vuex.vuex/types/helpers.MutationMethod}
+      */ typings.vuex.vuexStrings.NamespacedMappers & TopLevel[Any]
+    def mapMutations[Key /* <: String */](map: js.Array[Key]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ K in Key ]: vuex.vuex/types/helpers.MutationMethod}
+      */ typings.vuex.vuexStrings.NamespacedMappers & TopLevel[Any]
+    @JSName("mapMutations")
+    def mapMutations_Map_RecordStringThisFunction2CustomVueCommitAnyAny[Map /* <: Record[
         String, 
-        js.ThisFunction2[/* this */ CustomVue, /* commit */ Commit, /* repeated */ js.Any, js.Any]
+        js.ThisFunction2[/* this */ CustomVue, /* commit */ Commit, /* repeated */ Any, Any]
       ] */](map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Map ]: vuex.vuex/types/helpers.InlineMethod<Map[K]>}
       */ typings.vuex.vuexStrings.NamespacedMappers & TopLevel[Map]
-    def mapMutations[Key /* <: String */](map: js.Array[Key]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in Key ]: vuex.vuex/types/helpers.MutationMethod}
-      */ typings.vuex.vuexStrings.NamespacedMappers & TopLevel[js.Any]
-    @JSName("mapMutations")
-    def mapMutations_Map_RecordStringString[Map /* <: Record[String, String] */](map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ K in keyof Map ]: vuex.vuex/types/helpers.MutationMethod}
-      */ typings.vuex.vuexStrings.NamespacedMappers & TopLevel[js.Any]
     @JSName("mapMutations")
     var mapMutations_Original: Mapper[MutationMethod] & MapperForMutation
     
     def mapState[Map /* <: Record[String, String] */](map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Map ]: vuex.vuex/types/helpers.Computed}
-      */ typings.vuex.vuexStrings.NamespacedMappers & TopLevel[js.Any]
+      */ typings.vuex.vuexStrings.NamespacedMappers & TopLevel[Any]
     def mapState[Key /* <: String */](map: js.Array[Key]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in Key ]: vuex.vuex/types/helpers.Computed}
-      */ typings.vuex.vuexStrings.NamespacedMappers & TopLevel[js.Any]
+      */ typings.vuex.vuexStrings.NamespacedMappers & TopLevel[Any]
     @JSName("mapState")
     var mapState_Original: Mapper[Computed] & MapperForState
     @JSName("mapState")
     def mapState_SMap_RecordStringThisFunction2CustomVueSAnyAny[S, Map /* <: Record[
         String, 
-        js.ThisFunction2[/* this */ CustomVue, /* state */ S, /* getters */ js.Any, js.Any]
+        js.ThisFunction2[/* this */ CustomVue, /* state */ S, /* getters */ Any, Any]
       ] */](map: Map): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Map ]: vuex.vuex/types/helpers.InlineComputed<Map[K]>}
       */ typings.vuex.vuexStrings.NamespacedMappers & TopLevel[Map]

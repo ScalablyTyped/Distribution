@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -12,13 +12,13 @@ object exposureSmallMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/dist/src/general/dist/components/ExposureSmall", JSImport.Default)
   @js.native
-  val default: SFC[ExposureSmallProps] = js.native
+  val default: FC[ExposureSmallProps] = js.native
   
   trait ExposureSmallProps
     extends StObject
        with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.undefined
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object ExposureSmallProps {
     
@@ -29,14 +29,14 @@ object exposureSmallMod extends Shortcut {
     
     extension [Self <: ExposureSmallProps](x: Self) {
       
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
-  type _To = SFC[ExposureSmallProps]
+  type _To = FC[ExposureSmallProps]
   
   /* This means you don't have to write `default`, but can instead just say `exposureSmallMod.foo` */
-  override def _to: SFC[ExposureSmallProps] = default
+  override def _to: FC[ExposureSmallProps] = default
 }

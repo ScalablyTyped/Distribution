@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("three", "WireframeGeometry")
 @js.native
-class WireframeGeometry protected ()
-  extends typings.three.geometriesMod.WireframeGeometry {
-  def this(geometry: typings.three.bufferGeometryMod.BufferGeometry) = this()
-  def this(geometry: typings.three.geometryMod.Geometry) = this()
+open class WireframeGeometry[TBufferGeometry /* <: typings.three.bufferGeometryMod.BufferGeometry */] ()
+  extends typings.three.threeMod.WireframeGeometry[TBufferGeometry] {
+  def this(geometry: TBufferGeometry) = this()
 }

@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The number of filtered bids with the specified dimension values that have
-  * the specified creative.
-  */
 trait SchemaFilteredBidCreativeRow extends StObject {
   
   /**
@@ -18,7 +14,7 @@ trait SchemaFilteredBidCreativeRow extends StObject {
   /**
     * The ID of the creative.
     */
-  var creativeId: js.UndefOr[String] = js.undefined
+  var creativeId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The values of all dimensions associated with metric values in this row.
@@ -39,6 +35,8 @@ object SchemaFilteredBidCreativeRow {
     inline def setBidCountUndefined: Self = StObject.set(x, "bidCount", js.undefined)
     
     inline def setCreativeId(value: String): Self = StObject.set(x, "creativeId", value.asInstanceOf[js.Any])
+    
+    inline def setCreativeIdNull: Self = StObject.set(x, "creativeId", null)
     
     inline def setCreativeIdUndefined: Self = StObject.set(x, "creativeId", js.undefined)
     

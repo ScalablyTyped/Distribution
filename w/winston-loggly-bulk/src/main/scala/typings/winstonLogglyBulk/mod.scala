@@ -15,28 +15,28 @@ object mod {
   
   @JSImport("winston-loggly-bulk", "Loggly")
   @js.native
-  class Loggly ()
+  open class Loggly ()
     extends typings.winstonTransport.mod.^ {
     def this(options: LogglyOptions) = this()
     
-    def extend(destination: js.Any, source: js.Any): js.Any = js.native
+    def extend(destination: Any, source: Any): Any = js.native
     
-    def extractContext(obj: js.Any): js.Any = js.native
+    def extractContext(obj: Any): Any = js.native
     
-    def formatQuery(query: js.Any): js.Any = js.native
+    def formatQuery(query: Any): Any = js.native
     
-    def formatResults(results: js.Any, _options: js.Any): js.Any = js.native
+    def formatResults(results: Any, _options: Any): Any = js.native
     
     @JSName("log")
-    def log_MLoggly(meta: js.Any, callback: js.Any): js.Any = js.native
+    def log_MLoggly(meta: Any, callback: Any): Any = js.native
     
-    def loglify(obj: js.Any): js.Any = js.native
+    def loglify(obj: Any): Any = js.native
     
-    def query(options: js.Any, callback: js.Any): js.Any = js.native
+    def query(options: Any, callback: Any): Any = js.native
     
-    def sanitizeLogs(logs: js.Any): js.Any = js.native
+    def sanitizeLogs(logs: Any): Any = js.native
     
-    def stream(maybeOptions: js.Any): js.Any = js.native
+    def stream(maybeOptions: Any): Any = js.native
   }
   
   inline def flushLogsAndExit(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flushLogsAndExit")().asInstanceOf[Unit]
@@ -74,7 +74,7 @@ object mod {
     
     var json: js.UndefOr[Boolean] = js.undefined
     
-    var networkErrorOnConsole: js.UndefOr[Boolean] = js.undefined
+    var networkErrorsOnConsole: js.UndefOr[Boolean] = js.undefined
     
     var proxy: js.UndefOr[Null | String | Url] = js.undefined
     
@@ -115,9 +115,9 @@ object mod {
       
       inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
       
-      inline def setNetworkErrorOnConsole(value: Boolean): Self = StObject.set(x, "networkErrorOnConsole", value.asInstanceOf[js.Any])
+      inline def setNetworkErrorsOnConsole(value: Boolean): Self = StObject.set(x, "networkErrorsOnConsole", value.asInstanceOf[js.Any])
       
-      inline def setNetworkErrorOnConsoleUndefined: Self = StObject.set(x, "networkErrorOnConsole", js.undefined)
+      inline def setNetworkErrorsOnConsoleUndefined: Self = StObject.set(x, "networkErrorsOnConsole", js.undefined)
       
       inline def setProxy(value: String | Url): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
       
@@ -135,7 +135,7 @@ object mod {
       
       inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
       
       inline def setTimestamp(value: Boolean): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       

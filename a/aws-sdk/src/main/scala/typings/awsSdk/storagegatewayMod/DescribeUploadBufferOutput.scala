@@ -36,7 +36,7 @@ object DescribeUploadBufferOutput {
     
     inline def setDiskIdsUndefined: Self = StObject.set(x, "DiskIds", js.undefined)
     
-    inline def setDiskIdsVarargs(value: DiskId*): Self = StObject.set(x, "DiskIds", js.Array(value :_*))
+    inline def setDiskIdsVarargs(value: DiskId*): Self = StObject.set(x, "DiskIds", js.Array(value*))
     
     inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     

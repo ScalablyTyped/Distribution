@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.Diagram")
 @js.native
-/* private */ class Diagram ()
+/* private */ open class Diagram ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.Diagram {
   
   /* CompleteClass */
-  override val Application: js.Any = js.native
+  override val Application: Any = js.native
   
   /* CompleteClass */
   var AutoFormat: MsoTriState = js.native
@@ -34,7 +34,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Nodes: typings.activexPowerpoint.PowerPoint.DiagramNodes = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* private */ /* CompleteClass */
   @JSName("PowerPoint.Diagram_typekey")

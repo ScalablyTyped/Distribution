@@ -11,29 +11,36 @@ trait SVGFEMorphologyElement
      with SVGElement
      with SVGFilterPrimitiveStandardAttributes {
   
+  /* standard dom */
   val SVG_MORPHOLOGY_OPERATOR_DILATE: Double = js.native
   
+  /* standard dom */
   val SVG_MORPHOLOGY_OPERATOR_ERODE: Double = js.native
   
+  /* standard dom */
   val SVG_MORPHOLOGY_OPERATOR_UNKNOWN: Double = js.native
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(
     `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
+    callback: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
   
+  /* standard dom */
   val in1: SVGAnimatedString = js.native
   
+  /* standard dom */
   val operator: SVGAnimatedEnumeration = js.native
   
+  /* standard dom */
   val radiusX: SVGAnimatedNumber = js.native
   
+  /* standard dom */
   val radiusY: SVGAnimatedNumber = js.native
   
   /* InferMemberOverrides */

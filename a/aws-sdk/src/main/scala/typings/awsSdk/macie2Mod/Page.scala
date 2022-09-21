@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Page extends StObject {
   
   /**
-    * The line that contains the data, and the position of the data on that line.
+    *  Reserved for future use.
     */
   var lineRange: js.UndefOr[Range] = js.undefined
   
   /**
-    * The position of the data on the page, relative to the beginning of the page.
+    *  Reserved for future use.
     */
   var offsetRange: js.UndefOr[Range] = js.undefined
   
   /**
-    * The page number of the page that contains the data.
+    * The page number of the page that contains the sensitive data.
     */
   var pageNumber: js.UndefOr[long] = js.undefined
 }

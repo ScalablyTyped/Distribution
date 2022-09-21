@@ -10,10 +10,10 @@ Converts an array into a Node readable stream
 | ------------------ | :-------------: |
 | Full name          | streamify-array |
 | Keywords           | array, stream, readable |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 4549 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 16778.333333333332 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/rubensworks/streamify-array.js#readme)

@@ -10,10 +10,10 @@ React component to render svg file icons
 | ------------------ | :-------------: |
 | Full name          | react-file-icon |
 | Keywords           | react, component, svg, icons, file types |
-| # releases         | 2 |
-| # dependents       | 3 |
-| # downloads        | 710341 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 120799.66666666667 |
+| # stars            | 74.0 |
 
 ## Links
 - [Homepage](https://github.com/corygibbons/react-file-icon#readme)

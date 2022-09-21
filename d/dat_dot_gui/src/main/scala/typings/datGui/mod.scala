@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("dat.gui", "GUI")
   @js.native
-  class GUI () extends StObject {
+  open class GUI () extends StObject {
     def this(option: GUIParams) = this()
     
     var __controllers: js.Array[GUIController] = js.native
@@ -159,7 +159,7 @@ object mod {
   
   @JSImport("dat.gui", "GUIController")
   @js.native
-  class GUIController protected () extends StObject {
+  open class GUIController protected () extends StObject {
     def this(`object`: js.Object, property: String) = this()
     
     var domElement: HTMLElement = js.native
@@ -167,7 +167,7 @@ object mod {
     // FunctionController
     def fire(): GUIController = js.native
     
-    def getValue(): js.Any = js.native
+    def getValue(): Any = js.native
     
     def isModified(): Boolean = js.native
     
@@ -182,17 +182,17 @@ object mod {
     
     var `object`: js.Object = js.native
     
-    def onChange(fnc: js.Function1[/* value */ js.UndefOr[js.Any], Unit]): GUIController = js.native
+    def onChange(fnc: js.Function1[/* value */ js.UndefOr[Any], Unit]): GUIController = js.native
     
-    def onFinishChange(fnc: js.Function1[/* value */ js.UndefOr[js.Any], Unit]): GUIController = js.native
+    def onFinishChange(fnc: js.Function1[/* value */ js.UndefOr[Any], Unit]): GUIController = js.native
     
-    def options(option: js.Any): GUIController = js.native
+    def options(option: Any): GUIController = js.native
     
     var property: String = js.native
     
     def remove(): GUIController = js.native
     
-    def setValue(value: js.Any): GUIController = js.native
+    def setValue(value: Any): GUIController = js.native
     
     def step(n: Double): GUIController = js.native
     
@@ -228,7 +228,7 @@ object mod {
     /**
       * JSON object representing the saved state of this GUI.
       */
-    var load: js.UndefOr[js.Any] = js.undefined
+    var load: js.UndefOr[Any] = js.undefined
     
     /**
       * The name of this GUI.
@@ -270,7 +270,7 @@ object mod {
       
       inline def setHideableUndefined: Self = StObject.set(x, "hideable", js.undefined)
       
-      inline def setLoad(value: js.Any): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
+      inline def setLoad(value: Any): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
       
       inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
       

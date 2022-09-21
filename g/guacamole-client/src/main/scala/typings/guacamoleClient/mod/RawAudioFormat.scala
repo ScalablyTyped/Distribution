@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("guacamole-client", "RawAudioFormat")
 @js.native
-class RawAudioFormat protected ()
+open class RawAudioFormat protected ()
   extends typings.guacamoleClient.rawAudioFormatMod.RawAudioFormat {
   /**
     * @param template The object whose properties should be copied into the corresponding

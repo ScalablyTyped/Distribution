@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("THREE.PMREMGenerator")
 @js.native
-class PMREMGenerator protected ()
+open class PMREMGenerator protected ()
   extends typings.three.mod.PMREMGenerator {
   def this(renderer: typings.three.webGLRendererMod.WebGLRenderer) = this()
 }

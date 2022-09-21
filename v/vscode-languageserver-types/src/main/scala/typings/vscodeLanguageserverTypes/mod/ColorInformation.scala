@@ -12,7 +12,7 @@ trait ColorInformation extends StObject {
   var color: Color
   
   /**
-    * The range in the document where this color appers.
+    * The range in the document where this color appears.
     */
   var range: Range
 }
@@ -35,7 +35,7 @@ object ColorInformation {
   /**
     * Checks whether the given literal conforms to the [ColorInformation](#ColorInformation) interface.
     */
-  inline def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.ColorInformation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.ColorInformation */ Boolean]
+  inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.ColorInformation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.ColorInformation */ Boolean]
   
   extension [Self <: ColorInformation](x: Self) {
     

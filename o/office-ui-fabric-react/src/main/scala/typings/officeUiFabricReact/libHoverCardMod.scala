@@ -153,7 +153,7 @@ object libHoverCardMod {
   
   @JSImport("office-ui-fabric-react/lib/HoverCard", "ExpandingCardBase")
   @js.native
-  class ExpandingCardBase protected ()
+  open class ExpandingCardBase protected ()
     extends typings.officeUiFabricReact.hoverCardMod.ExpandingCardBase {
     def this(props: IExpandingCardProps) = this()
   }
@@ -188,7 +188,7 @@ object libHoverCardMod {
   
   @JSImport("office-ui-fabric-react/lib/HoverCard", "HoverCardBase")
   @js.native
-  class HoverCardBase protected ()
+  open class HoverCardBase protected ()
     extends typings.officeUiFabricReact.hoverCardMod.HoverCardBase {
     def this(props: IHoverCardProps) = this()
   }
@@ -235,7 +235,7 @@ object libHoverCardMod {
   
   @JSImport("office-ui-fabric-react/lib/HoverCard", "PlainCardBase")
   @js.native
-  class PlainCardBase protected ()
+  open class PlainCardBase protected ()
     extends typings.officeUiFabricReact.hoverCardMod.PlainCardBase {
     def this(props: IPlainCardProps) = this()
   }

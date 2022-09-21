@@ -26,7 +26,7 @@ object XLibraryContainerExport {
   inline def apply(
     acquire: () => Unit,
     exportLibrary: (String, String, XInteractionHandler) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XLibraryContainerExport = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), exportLibrary = js.Any.fromFunction3(exportLibrary), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.Anglit")
 @js.native
-class Anglit ()
+open class Anglit ()
   extends typings.ranjs.mod.dist.Anglit

@@ -1,12 +1,13 @@
 package typings.microsoftGraph.mod
 
+import typings.microsoftGraph.microsoftGraphStrings.one_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.microsoftGraph.microsoftGraphStrings.userDefined
-  - typings.microsoftGraph.microsoftGraphStrings.one
+  - typings.microsoftGraph.microsoftGraphStrings.one_
   - typings.microsoftGraph.microsoftGraphStrings.two
   - typings.microsoftGraph.microsoftGraphStrings.three
   - typings.microsoftGraph.microsoftGraphStrings.four
@@ -46,7 +47,7 @@ object MiracastChannel {
   
   inline def nine: typings.microsoftGraph.microsoftGraphStrings.nine = "nine".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.nine]
   
-  inline def one: typings.microsoftGraph.microsoftGraphStrings.one = "one".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.one]
+  inline def one: one_ = "one".asInstanceOf[one_]
   
   inline def oneHundredFiftySeven: typings.microsoftGraph.microsoftGraphStrings.oneHundredFiftySeven = "oneHundredFiftySeven".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.oneHundredFiftySeven]
   

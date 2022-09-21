@@ -10,10 +10,10 @@ Properties file reader for Node.js
 | ------------------ | :-------------: |
 | Full name          | properties-reader |
 | Keywords           | properties, ini, parser |
-| # releases         | 9 |
-| # dependents       | 136 |
-| # downloads        | 2973149 |
-| # stars            | 1 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 734449.0 |
+| # stars            | 74.0 |
 
 ## Links
 - [Homepage](https://github.com/steveukx/properties#readme)

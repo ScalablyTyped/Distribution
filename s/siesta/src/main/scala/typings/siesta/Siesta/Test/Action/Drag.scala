@@ -12,15 +12,15 @@ trait Drag
   extends StObject
      with IAction {
   
-  var by: js.UndefOr[js.Any] = js.undefined
+  var by: js.UndefOr[Any] = js.undefined
   
   var dragOnly: js.UndefOr[Boolean] = js.undefined
   
-  var source: js.UndefOr[js.Any] = js.undefined
+  var source: js.UndefOr[Any] = js.undefined
   
-  var target: js.UndefOr[js.Any] = js.undefined
+  var target: js.UndefOr[Any] = js.undefined
   
-  var to: js.UndefOr[js.Any] = js.undefined
+  var to: js.UndefOr[Any] = js.undefined
 }
 object Drag {
   
@@ -31,7 +31,7 @@ object Drag {
   
   extension [Self <: Drag](x: Self) {
     
-    inline def setBy(value: js.Any): Self = StObject.set(x, "by", value.asInstanceOf[js.Any])
+    inline def setBy(value: Any): Self = StObject.set(x, "by", value.asInstanceOf[js.Any])
     
     inline def setByUndefined: Self = StObject.set(x, "by", js.undefined)
     
@@ -39,15 +39,15 @@ object Drag {
     
     inline def setDragOnlyUndefined: Self = StObject.set(x, "dragOnly", js.undefined)
     
-    inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    inline def setTo(value: js.Any): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: Any): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
     inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
   }

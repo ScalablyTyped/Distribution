@@ -9,7 +9,7 @@ trait SpreadsheetPasteEvent
   extends StObject
      with SpreadsheetEvent {
   
-  var clipboardContent: js.UndefOr[js.Any] = js.undefined
+  var clipboardContent: js.UndefOr[Any] = js.undefined
   
   var range: js.UndefOr[Range] = js.undefined
 }
@@ -22,7 +22,7 @@ object SpreadsheetPasteEvent {
   
   extension [Self <: SpreadsheetPasteEvent](x: Self) {
     
-    inline def setClipboardContent(value: js.Any): Self = StObject.set(x, "clipboardContent", value.asInstanceOf[js.Any])
+    inline def setClipboardContent(value: Any): Self = StObject.set(x, "clipboardContent", value.asInstanceOf[js.Any])
     
     inline def setClipboardContentUndefined: Self = StObject.set(x, "clipboardContent", js.undefined)
     

@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object arrayChangeKeyCaseMod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(array: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def apply(array: js.Any, cs: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], cs.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(array: Unit, cs: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], cs.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(array: Any): Any = ^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(array: Any, cs: Any): Any = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], cs.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(array: Unit, cs: Any): Any = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], cs.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("locutus/php/array/array_change_key_case", JSImport.Namespace)
   @js.native

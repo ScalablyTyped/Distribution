@@ -10,15 +10,12 @@ convert OSM to geojson
 | ------------------ | :-------------: |
 | Full name          | osmtogeojson |
 | Keywords           | openstreetmap, geojson |
-| # releases         | 2 |
-| # dependents       | 24 |
-| # downloads        | 159353 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 14218.0 |
+| # stars            | 570.0 |
 
 ## Links
-- [Homepage](https://github.com/tyrasd/osmtogeojson#readme)
-- [Bugs](https://github.com/tyrasd/osmtogeojson/issues)
-- [Repository](https://github.com/tyrasd/osmtogeojson)
 - [Npm](https://www.npmjs.com/package/osmtogeojson)
     
 

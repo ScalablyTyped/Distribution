@@ -10,6 +10,8 @@ trait PressableAndroidRippleConfig extends StObject {
   
   var color: js.UndefOr[Null | ColorValue] = js.undefined
   
+  var foreground: js.UndefOr[Null | Boolean] = js.undefined
+  
   var radius: js.UndefOr[Null | Double] = js.undefined
 }
 object PressableAndroidRippleConfig {
@@ -32,6 +34,12 @@ object PressableAndroidRippleConfig {
     inline def setColorNull: Self = StObject.set(x, "color", null)
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setForeground(value: Boolean): Self = StObject.set(x, "foreground", value.asInstanceOf[js.Any])
+    
+    inline def setForegroundNull: Self = StObject.set(x, "foreground", null)
+    
+    inline def setForegroundUndefined: Self = StObject.set(x, "foreground", js.undefined)
     
     inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     

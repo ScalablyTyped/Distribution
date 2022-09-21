@@ -21,7 +21,7 @@ object urlTileMod {
   
   @JSImport("ol/source/UrlTile", JSImport.Default)
   @js.native
-  class default protected () extends UrlTile {
+  open class default protected () extends UrlTile {
     def this(options: Options) = this()
   }
   
@@ -80,7 +80,7 @@ object urlTileMod {
       
       inline def setAttributionsUndefined: Self = StObject.set(x, "attributions", js.undefined)
       
-      inline def setAttributionsVarargs(value: String*): Self = StObject.set(x, "attributions", js.Array(value :_*))
+      inline def setAttributionsVarargs(value: String*): Self = StObject.set(x, "attributions", js.Array(value*))
       
       inline def setCacheSize(value: Double): Self = StObject.set(x, "cacheSize", value.asInstanceOf[js.Any])
       
@@ -130,7 +130,7 @@ object urlTileMod {
       
       inline def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
       
-      inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
+      inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value*))
       
       inline def setWrapX(value: Boolean): Self = StObject.set(x, "wrapX", value.asInstanceOf[js.Any])
       
@@ -216,7 +216,7 @@ object urlTileMod {
     @JSName("un")
     def un_tileloadstart(`type`: tileloadstart, listener: js.Function1[/* evt */ TileSourceEvent, Unit]): Unit = js.native
     
-    /* protected */ var urls: js.Array[String] = js.native
+    /* protected */ var urls: js.Array[String] | Null = js.native
     
     /**
       * Marks a tile coord as being used, without triggering a load.

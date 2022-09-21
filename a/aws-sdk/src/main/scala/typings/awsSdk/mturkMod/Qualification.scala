@@ -9,7 +9,7 @@ trait Qualification extends StObject {
   /**
     *  The date and time the Qualification was granted to the Worker. If the Worker's Qualification was revoked, and then re-granted based on a new Qualification request, GrantTime is the date and time of the last call to the AcceptQualificationRequest operation.
     */
-  var GrantTime: js.UndefOr[Timestamp] = js.undefined
+  var GrantTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     *  The value (score) of the Qualification, if the Qualification has an integer value.
@@ -42,7 +42,7 @@ object Qualification {
   
   extension [Self <: Qualification](x: Self) {
     
-    inline def setGrantTime(value: Timestamp): Self = StObject.set(x, "GrantTime", value.asInstanceOf[js.Any])
+    inline def setGrantTime(value: js.Date): Self = StObject.set(x, "GrantTime", value.asInstanceOf[js.Any])
     
     inline def setGrantTimeUndefined: Self = StObject.set(x, "GrantTime", js.undefined)
     

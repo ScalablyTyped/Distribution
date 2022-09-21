@@ -14,7 +14,7 @@ trait GoogleDatastoreAdminV1beta1CommonMetadata extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDatastore.maximMazurokGapiClientDatastoreStrings.GoogleDatastoreAdminV1beta1CommonMetadata & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDatastore.maximMazurokGapiClientDatastoreStrings.GoogleDatastoreAdminV1beta1CommonMetadata & TopLevel[Any]
   ] = js.undefined
   
   /** The type of the operation. Can be used as a filter in ListOperationsRequest. */
@@ -42,7 +42,7 @@ object GoogleDatastoreAdminV1beta1CommonMetadata {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDatastore.maximMazurokGapiClientDatastoreStrings.GoogleDatastoreAdminV1beta1CommonMetadata & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDatastore.maximMazurokGapiClientDatastoreStrings.GoogleDatastoreAdminV1beta1CommonMetadata & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)

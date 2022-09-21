@@ -11,6 +11,9 @@ trait ListJobsResponse extends StObject {
   
   /** The pagination token. */
   var nextPageToken: js.UndefOr[String] = js.undefined
+  
+  /** List of regions that could not be reached. */
+  var unreachable: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ListJobsResponse {
   
@@ -25,10 +28,16 @@ object ListJobsResponse {
     
     inline def setJobsUndefined: Self = StObject.set(x, "jobs", js.undefined)
     
-    inline def setJobsVarargs(value: Job*): Self = StObject.set(x, "jobs", js.Array(value :_*))
+    inline def setJobsVarargs(value: Job*): Self = StObject.set(x, "jobs", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    
+    inline def setUnreachable(value: js.Array[String]): Self = StObject.set(x, "unreachable", value.asInstanceOf[js.Any])
+    
+    inline def setUnreachableUndefined: Self = StObject.set(x, "unreachable", js.undefined)
+    
+    inline def setUnreachableVarargs(value: String*): Self = StObject.set(x, "unreachable", js.Array(value*))
   }
 }

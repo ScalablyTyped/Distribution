@@ -11,10 +11,13 @@ trait ASPxClientPivotMenuItemClickEventArgs
   extends StObject
      with ASPxClientEventArgs {
   
+  /**
+    * Gets the field's area.
+    */
   var Area: String
   
   /**
-    * Gets the field's unique indentifier.
+    * Gets the field's unique identifier.
     */
   var FieldID: String
   

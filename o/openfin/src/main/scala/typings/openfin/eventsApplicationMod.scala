@@ -969,11 +969,11 @@ object eventsApplicationMod {
     
     var manifest: ManifestInfo
     
-    var userAppConfigArgs: js.Any
+    var userAppConfigArgs: Any
   }
   object RunRequestedEvent {
     
-    inline def apply[Topic, Type](manifest: ManifestInfo, topic: Topic, `type`: Type, userAppConfigArgs: js.Any, uuid: String): RunRequestedEvent[Topic, Type] = {
+    inline def apply[Topic, Type](manifest: ManifestInfo, topic: Topic, `type`: Type, userAppConfigArgs: Any, uuid: String): RunRequestedEvent[Topic, Type] = {
       val __obj = js.Dynamic.literal(manifest = manifest.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any], userAppConfigArgs = userAppConfigArgs.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[RunRequestedEvent[Topic, Type]]
@@ -983,7 +983,7 @@ object eventsApplicationMod {
       
       inline def setManifest(value: ManifestInfo): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
       
-      inline def setUserAppConfigArgs(value: js.Any): Self = StObject.set(x, "userAppConfigArgs", value.asInstanceOf[js.Any])
+      inline def setUserAppConfigArgs(value: Any): Self = StObject.set(x, "userAppConfigArgs", value.asInstanceOf[js.Any])
     }
   }
   
@@ -995,7 +995,7 @@ object eventsApplicationMod {
     
     var button: `0` | `1` | `2`
     
-    var monitorInfo: js.Any
+    var monitorInfo: Any
     
     var x: Double
     
@@ -1006,7 +1006,7 @@ object eventsApplicationMod {
     inline def apply[Topic, Type](
       bounds: Bounds,
       button: `0` | `1` | `2`,
-      monitorInfo: js.Any,
+      monitorInfo: Any,
       topic: Topic,
       `type`: Type,
       uuid: String,
@@ -1024,7 +1024,7 @@ object eventsApplicationMod {
       
       inline def setButton(value: `0` | `1` | `2`): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       
-      inline def setMonitorInfo(value: js.Any): Self = StObject.set(x, "monitorInfo", value.asInstanceOf[js.Any])
+      inline def setMonitorInfo(value: Any): Self = StObject.set(x, "monitorInfo", value.asInstanceOf[js.Any])
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

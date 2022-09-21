@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SmartTagAction extends StObject {
   
-  val ActiveXControl: js.Any
+  val ActiveXControl: Any
   
   val Application: typings.activexWord.Word.Application
   
@@ -24,7 +24,7 @@ trait SmartTagAction extends StObject {
   
   val Name: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   val PresentInPane: Boolean
   
@@ -40,7 +40,7 @@ trait SmartTagAction extends StObject {
 object SmartTagAction {
   
   inline def apply(
-    ActiveXControl: js.Any,
+    ActiveXControl: Any,
     Application: Application,
     CheckboxState: Boolean,
     Creator: Double,
@@ -49,7 +49,7 @@ object SmartTagAction {
     ExpandHelp: Boolean,
     ListSelection: Double,
     Name: String,
-    Parent: js.Any,
+    Parent: Any,
     PresentInPane: Boolean,
     RadioGroupSelection: Double,
     TextboxText: String,
@@ -63,7 +63,7 @@ object SmartTagAction {
   
   extension [Self <: SmartTagAction](x: Self) {
     
-    inline def setActiveXControl(value: js.Any): Self = StObject.set(x, "ActiveXControl", value.asInstanceOf[js.Any])
+    inline def setActiveXControl(value: Any): Self = StObject.set(x, "ActiveXControl", value.asInstanceOf[js.Any])
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
@@ -81,7 +81,7 @@ object SmartTagAction {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPresentInPane(value: Boolean): Self = StObject.set(x, "PresentInPane", value.asInstanceOf[js.Any])
     

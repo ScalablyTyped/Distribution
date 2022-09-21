@@ -7,26 +7,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-material-kit", "MKProgress")
 @js.native
-class MKProgress protected ()
-  extends MKComponent[MKProgressProperties, js.Any] {
+open class MKProgress protected () extends MKComponent[MKProgressProperties, Any] {
   def this(props: MKProgressProperties) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: MKProgressProperties, context: js.Any) = this()
+  def this(props: MKProgressProperties, context: Any) = this()
 }
 object MKProgress {
   
   @JSImport("react-native-material-kit", "MKProgress.Indeterminate")
   @js.native
-  class Indeterminate protected ()
-    extends Component[IndeterminateProgressProperties, js.Object, js.Any] {
+  open class Indeterminate protected ()
+    extends Component[IndeterminateProgressProperties, js.Object, Any] {
     def this(props: IndeterminateProgressProperties) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: IndeterminateProgressProperties, context: js.Any) = this()
+    def this(props: IndeterminateProgressProperties, context: Any) = this()
   }
 }

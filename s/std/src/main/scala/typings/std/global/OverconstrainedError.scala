@@ -7,16 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("OverconstrainedError")
 @js.native
-class OverconstrainedError ()
+open class OverconstrainedError protected ()
   extends StObject
      with typings.std.OverconstrainedError {
+  /* standard dom */
+  def this(constraint: java.lang.String) = this()
+  def this(constraint: java.lang.String, message: java.lang.String) = this()
   
+  /* standard dom */
   /* CompleteClass */
-  var constraint: java.lang.String = js.native
+  override val constraint: java.lang.String = js.native
   
+  /* standard es5 */
   /* CompleteClass */
   var message: java.lang.String = js.native
   
+  /* standard es5 */
   /* CompleteClass */
   var name: java.lang.String = js.native
 }

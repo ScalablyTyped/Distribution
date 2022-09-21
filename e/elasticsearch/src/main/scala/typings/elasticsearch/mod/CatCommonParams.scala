@@ -35,7 +35,7 @@ object CatCommonParams {
     
     inline def setHUndefined: Self = StObject.set(x, "h", js.undefined)
     
-    inline def setHVarargs(value: String*): Self = StObject.set(x, "h", js.Array(value :_*))
+    inline def setHVarargs(value: String*): Self = StObject.set(x, "h", js.Array(value*))
     
     inline def setHelp(value: Boolean): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
     

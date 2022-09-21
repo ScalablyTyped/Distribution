@@ -18,7 +18,7 @@ trait PartialVisitor extends StObject {
   
   var created_at: js.UndefOr[Double] = js.undefined
   
-  var custom_attributes: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var custom_attributes: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   var id: js.UndefOr[String] = js.undefined
   
@@ -59,7 +59,7 @@ object PartialVisitor {
     
     inline def setCreated_atUndefined: Self = StObject.set(x, "created_at", js.undefined)
     
-    inline def setCustom_attributes(value: StringDictionary[js.Any]): Self = StObject.set(x, "custom_attributes", value.asInstanceOf[js.Any])
+    inline def setCustom_attributes(value: StringDictionary[Any]): Self = StObject.set(x, "custom_attributes", value.asInstanceOf[js.Any])
     
     inline def setCustom_attributesUndefined: Self = StObject.set(x, "custom_attributes", js.undefined)
     
@@ -87,19 +87,19 @@ object PartialVisitor {
     
     inline def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
     
-    inline def setSegmentsVarargs(value: Segment*): Self = StObject.set(x, "segments", js.Array(value :_*))
+    inline def setSegmentsVarargs(value: Segment*): Self = StObject.set(x, "segments", js.Array(value*))
     
     inline def setSocial_profiles(value: js.Array[SocialProfile]): Self = StObject.set(x, "social_profiles", value.asInstanceOf[js.Any])
     
     inline def setSocial_profilesUndefined: Self = StObject.set(x, "social_profiles", js.undefined)
     
-    inline def setSocial_profilesVarargs(value: SocialProfile*): Self = StObject.set(x, "social_profiles", js.Array(value :_*))
+    inline def setSocial_profilesVarargs(value: SocialProfile*): Self = StObject.set(x, "social_profiles", js.Array(value*))
     
     inline def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setType(value: visitor): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

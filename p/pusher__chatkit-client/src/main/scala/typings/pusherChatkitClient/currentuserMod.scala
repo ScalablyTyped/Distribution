@@ -23,7 +23,7 @@ object currentuserMod {
     
     var addUserIds: js.UndefOr[js.Array[String]] = js.undefined
     
-    var customData: js.UndefOr[js.Any] = js.undefined
+    var customData: js.UndefOr[Any] = js.undefined
     
     var id: js.UndefOr[String] = js.undefined
     
@@ -44,9 +44,9 @@ object currentuserMod {
       
       inline def setAddUserIdsUndefined: Self = StObject.set(x, "addUserIds", js.undefined)
       
-      inline def setAddUserIdsVarargs(value: String*): Self = StObject.set(x, "addUserIds", js.Array(value :_*))
+      inline def setAddUserIdsVarargs(value: String*): Self = StObject.set(x, "addUserIds", js.Array(value*))
       
-      inline def setCustomData(value: js.Any): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+      inline def setCustomData(value: Any): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
       
       inline def setCustomDataUndefined: Self = StObject.set(x, "customData", js.undefined)
       
@@ -162,7 +162,7 @@ object currentuserMod {
       
       inline def setRooms(value: js.Array[PusherRoom]): Self = StObject.set(x, "rooms", value.asInstanceOf[js.Any])
       
-      inline def setRoomsVarargs(value: PusherRoom*): Self = StObject.set(x, "rooms", js.Array(value :_*))
+      inline def setRoomsVarargs(value: PusherRoom*): Self = StObject.set(x, "rooms", js.Array(value*))
       
       inline def setSendMultipartMessage(value: SendMultipartMessageParams => js.Promise[Double]): Self = StObject.set(x, "sendMultipartMessage", js.Any.fromFunction1(value))
       
@@ -176,7 +176,7 @@ object currentuserMod {
       
       inline def setUsers(value: js.Array[PusherUser]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
       
-      inline def setUsersVarargs(value: PusherUser*): Self = StObject.set(x, "users", js.Array(value :_*))
+      inline def setUsersVarargs(value: PusherUser*): Self = StObject.set(x, "users", js.Array(value*))
     }
   }
   
@@ -403,7 +403,7 @@ object currentuserMod {
       
       inline def setParts(value: js.Array[SendMessagePayload]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
       
-      inline def setPartsVarargs(value: SendMessagePayload*): Self = StObject.set(x, "parts", js.Array(value :_*))
+      inline def setPartsVarargs(value: SendMessagePayload*): Self = StObject.set(x, "parts", js.Array(value*))
       
       inline def setRoomId(value: String): Self = StObject.set(x, "roomId", value.asInstanceOf[js.Any])
     }
@@ -453,7 +453,7 @@ object currentuserMod {
   
   trait UpdateRoomParams extends StObject {
     
-    var customData: js.UndefOr[js.Any] = js.undefined
+    var customData: js.UndefOr[Any] = js.undefined
     
     var name: js.UndefOr[String] = js.undefined
     
@@ -470,7 +470,7 @@ object currentuserMod {
     
     extension [Self <: UpdateRoomParams](x: Self) {
       
-      inline def setCustomData(value: js.Any): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+      inline def setCustomData(value: Any): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
       
       inline def setCustomDataUndefined: Self = StObject.set(x, "customData", js.undefined)
       

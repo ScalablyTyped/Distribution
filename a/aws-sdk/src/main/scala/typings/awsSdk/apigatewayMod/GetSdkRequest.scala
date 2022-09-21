@@ -12,17 +12,17 @@ trait GetSdkRequest extends StObject {
   var parameters: js.UndefOr[MapOfStringToString] = js.undefined
   
   /**
-    * [Required] The string identifier of the associated RestApi.
+    * The string identifier of the associated RestApi.
     */
   var restApiId: String
   
   /**
-    * [Required] The language for the generated SDK. Currently java, javascript, android, objectivec (for iOS), swift (for iOS), and ruby are supported.
+    * The language for the generated SDK. Currently java, javascript, android, objectivec (for iOS), swift (for iOS), and ruby are supported.
     */
   var sdkType: String
   
   /**
-    * [Required] The name of the Stage that the SDK will use.
+    * The name of the Stage that the SDK will use.
     */
   var stageName: String
 }

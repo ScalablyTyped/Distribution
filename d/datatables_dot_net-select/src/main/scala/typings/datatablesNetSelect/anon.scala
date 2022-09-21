@@ -21,13 +21,6 @@ object anon {
     /*
       * Set the table's selection style
       */
-    @JSName("style")
-    def style_api(s: api): Api = js.native
-    @JSName("style")
-    def style_multi(s: multi): Api = js.native
-    @JSName("style")
-    def style_os(s: os): Api = js.native
-    @JSName("style")
-    def style_single(s: single): Api = js.native
+    def style(s: api | single | multi | os): Api = js.native
   }
 }

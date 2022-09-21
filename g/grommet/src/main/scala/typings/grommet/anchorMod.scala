@@ -1,8 +1,10 @@
 package typings.grommet
 
+import typings.grommet.grommetStrings.bold
 import typings.grommet.grommetStrings.color
 import typings.grommet.grommetStrings.large
 import typings.grommet.grommetStrings.medium
+import typings.grommet.grommetStrings.normal
 import typings.grommet.grommetStrings.small
 import typings.grommet.grommetStrings.xlarge
 import typings.grommet.grommetStrings.xsmall
@@ -10,6 +12,7 @@ import typings.grommet.grommetStrings.xxlarge
 import typings.grommet.utilsMod.A11yTitleType
 import typings.grommet.utilsMod.AlignSelfType
 import typings.grommet.utilsMod.ColorType
+import typings.grommet.utilsMod.GapType
 import typings.grommet.utilsMod.GridAreaType
 import typings.grommet.utilsMod.MarginType
 import typings.grommet.utilsMod.Omit
@@ -28,12 +31,19 @@ object anchorMod {
   
   @JSImport("grommet/components/Anchor", "Anchor")
   @js.native
-  val Anchor: FC[
-    AnchorProps & (Omit[
-      DetailedHTMLProps[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement], 
-      color
-    ])
-  ] = js.native
+  val Anchor: FC[AnchorExtendedProps] = js.native
+  
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped {[ P in std.Exclude<keyof react.react.DetailedHTMLProps<react.react.AnchorHTMLAttributes<std.HTMLAnchorElement>, std.HTMLAnchorElement>, 'color'> ]: react.react.DetailedHTMLProps<react.react.AnchorHTMLAttributes<std.HTMLAnchorElement>, std.HTMLAnchorElement>[P]} */ trait AnchorExtendedProps
+    extends StObject
+       with AnchorProps
+  object AnchorExtendedProps {
+    
+    inline def apply(): AnchorExtendedProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[AnchorExtendedProps]
+    }
+  }
   
   trait AnchorProps extends StObject {
     
@@ -46,6 +56,8 @@ object anchorMod {
     var color: js.UndefOr[ColorType] = js.undefined
     
     var disabled: js.UndefOr[Boolean] = js.undefined
+    
+    var gap: js.UndefOr[GapType] = js.undefined
     
     var gridArea: js.UndefOr[GridAreaType] = js.undefined
     
@@ -60,6 +72,8 @@ object anchorMod {
     var reverse: js.UndefOr[Boolean] = js.undefined
     
     var size: js.UndefOr[xsmall | small | medium | large | xlarge | xxlarge | String] = js.undefined
+    
+    var weight: js.UndefOr[normal | bold | String | Double] = js.undefined
   }
   object AnchorProps {
     
@@ -90,6 +104,10 @@ object anchorMod {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
+      inline def setGap(value: GapType): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
+      
+      inline def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
+      
       inline def setGridArea(value: GridAreaType): Self = StObject.set(x, "gridArea", value.asInstanceOf[js.Any])
       
       inline def setGridAreaUndefined: Self = StObject.set(x, "gridArea", js.undefined)
@@ -117,6 +135,17 @@ object anchorMod {
       inline def setSize(value: xsmall | small | medium | large | xlarge | xxlarge | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      
+      inline def setWeight(value: normal | bold | String | Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+      
+      inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
     }
   }
+  
+  type AnchorType = AnchorExtendedProps
+  
+  type aProps = Omit[
+    DetailedHTMLProps[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement], 
+    color
+  ]
 }

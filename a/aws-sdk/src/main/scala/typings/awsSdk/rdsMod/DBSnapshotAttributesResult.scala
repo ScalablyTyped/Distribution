@@ -29,7 +29,7 @@ object DBSnapshotAttributesResult {
     
     inline def setDBSnapshotAttributesUndefined: Self = StObject.set(x, "DBSnapshotAttributes", js.undefined)
     
-    inline def setDBSnapshotAttributesVarargs(value: DBSnapshotAttribute*): Self = StObject.set(x, "DBSnapshotAttributes", js.Array(value :_*))
+    inline def setDBSnapshotAttributesVarargs(value: DBSnapshotAttribute*): Self = StObject.set(x, "DBSnapshotAttributes", js.Array(value*))
     
     inline def setDBSnapshotIdentifier(value: String): Self = StObject.set(x, "DBSnapshotIdentifier", value.asInstanceOf[js.Any])
     

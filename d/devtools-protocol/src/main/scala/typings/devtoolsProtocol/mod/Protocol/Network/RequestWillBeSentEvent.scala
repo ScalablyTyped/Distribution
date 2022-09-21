@@ -33,6 +33,13 @@ trait RequestWillBeSentEvent extends StObject {
   var loaderId: LoaderId
   
   /**
+    * In the case that redirectResponse is populated, this flag indicates whether
+    * requestWillBeSentExtraInfo and responseReceivedExtraInfo events will be or were emitted
+    * for the request which was just redirected.
+    */
+  var redirectHasExtraInfo: Boolean
+  
+  /**
     * Redirect response data.
     */
   var redirectResponse: js.UndefOr[Response] = js.undefined
@@ -68,12 +75,13 @@ object RequestWillBeSentEvent {
     documentURL: String,
     initiator: Initiator,
     loaderId: LoaderId,
+    redirectHasExtraInfo: Boolean,
     request: Request,
     requestId: RequestId,
     timestamp: MonotonicTime,
     wallTime: TimeSinceEpoch
   ): RequestWillBeSentEvent = {
-    val __obj = js.Dynamic.literal(documentURL = documentURL.asInstanceOf[js.Any], initiator = initiator.asInstanceOf[js.Any], loaderId = loaderId.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], wallTime = wallTime.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(documentURL = documentURL.asInstanceOf[js.Any], initiator = initiator.asInstanceOf[js.Any], loaderId = loaderId.asInstanceOf[js.Any], redirectHasExtraInfo = redirectHasExtraInfo.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], wallTime = wallTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestWillBeSentEvent]
   }
   
@@ -92,6 +100,8 @@ object RequestWillBeSentEvent {
     inline def setInitiator(value: Initiator): Self = StObject.set(x, "initiator", value.asInstanceOf[js.Any])
     
     inline def setLoaderId(value: LoaderId): Self = StObject.set(x, "loaderId", value.asInstanceOf[js.Any])
+    
+    inline def setRedirectHasExtraInfo(value: Boolean): Self = StObject.set(x, "redirectHasExtraInfo", value.asInstanceOf[js.Any])
     
     inline def setRedirectResponse(value: Response): Self = StObject.set(x, "redirectResponse", value.asInstanceOf[js.Any])
     

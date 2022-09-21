@@ -10,10 +10,10 @@ object permIdentityMod {
   
   @JSImport("material-ui/svg-icons/action/perm-identity", JSImport.Default)
   @js.native
-  class default () extends ActionPermIdentity
+  open class default () extends ActionPermIdentity
   
   @JSImport("material-ui/svg-icons/action/perm-identity", "ActionPermIdentity")
   @js.native
-  class ActionPermIdentity ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionPermIdentity ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

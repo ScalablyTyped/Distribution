@@ -1,31 +1,15 @@
 package typings.angularRouter.mod
 
-import typings.angularRouter.angularRouterStrings.always
 import typings.angularRouter.angularRouterStrings.corrected
-import typings.angularRouter.angularRouterStrings.deferred
-import typings.angularRouter.angularRouterStrings.disabled
-import typings.angularRouter.angularRouterStrings.eager
-import typings.angularRouter.angularRouterStrings.emptyOnly
-import typings.angularRouter.angularRouterStrings.enabled
-import typings.angularRouter.angularRouterStrings.ignore
 import typings.angularRouter.angularRouterStrings.legacy
-import typings.angularRouter.angularRouterStrings.reload
-import typings.angularRouter.angularRouterStrings.top
-import typings.std.URIError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ExtraOptions extends StObject {
-  
-  /**
-    * When set to 'enabled', scrolls to the anchor element when the URL has a fragment.
-    * Anchor scrolling is disabled by default.
-    *
-    * Anchor scrolling does not happen on 'popstate'. Instead, we restore the position
-    * that we stored or scroll to the top.
-    */
-  var anchorScrolling: js.UndefOr[disabled | enabled] = js.undefined
+trait ExtraOptions
+  extends StObject
+     with InMemoryScrollingOptions
+     with RouterConfigOptions {
   
   /**
     * When true, log all internal navigation events to the console.
@@ -65,31 +49,14 @@ trait ExtraOptions extends StObject {
     * - `'url'` -  The malformed URL that caused the URIError
     * */
   var malformedUriErrorHandler: js.UndefOr[
-    js.Function3[/* error */ URIError, /* urlSerializer */ UrlSerializer, /* url */ String, UrlTree]
+    js.Function3[/* error */ js.URIError, /* urlSerializer */ UrlSerializer, /* url */ String, UrlTree]
   ] = js.undefined
-  
-  /**
-    * Define what the router should do if it receives a navigation request to the current URL.
-    * Default is `ignore`, which causes the router ignores the navigation.
-    * This can disable features such as a "refresh" button.
-    * Use this option to configure the behavior when navigating to the
-    * current URL. Default is 'ignore'.
-    */
-  var onSameUrlNavigation: js.UndefOr[reload | ignore] = js.undefined
-  
-  /**
-    * Defines how the router merges parameters, data, and resolved data from parent to child
-    * routes. By default ('emptyOnly'), inherits parent parameters only for
-    * path-less or component-less routes.
-    * Set to 'always' to enable unconditional inheritance of parent parameters.
-    */
-  var paramsInheritanceStrategy: js.UndefOr[emptyOnly | always] = js.undefined
   
   /**
     * Configures a preloading strategy.
     * One of `PreloadAllModules` or `NoPreloading` (the default).
     */
-  var preloadingStrategy: js.UndefOr[js.Any] = js.undefined
+  var preloadingStrategy: js.UndefOr[Any] = js.undefined
   
   /**
     * Enables a bug fix that corrects relative link resolution in components with empty paths.
@@ -108,7 +75,9 @@ trait ExtraOptions extends StObject {
     * ];
     * ```
     *
-    * From the `ContainerComponent`, this will not work:
+    * From the `ContainerComponent`, you should be able to navigate to `AComponent` using
+    * the following `routerLink`, but it will not work if `relativeLinkResolution` is set
+    * to `'legacy'`:
     *
     * `<a [routerLink]="['./a']">Link to A</a>`
     *
@@ -116,9 +85,12 @@ trait ExtraOptions extends StObject {
     *
     * `<a [routerLink]="['../a']">Link to A</a>`
     *
-    * In other words, you're required to use `../` rather than `./`.
+    * In other words, you're required to use `../` rather than `./` when the relative link
+    * resolution is set to `'legacy'`.
     *
     * The default in v11 is `corrected`.
+    *
+    * @deprecated
     */
   var relativeLinkResolution: js.UndefOr[legacy | corrected] = js.undefined
   
@@ -131,50 +103,6 @@ trait ExtraOptions extends StObject {
     * it restores scroll position.
     */
   var scrollOffset: js.UndefOr[(js.Tuple2[Double, Double]) | (js.Function0[js.Tuple2[Double, Double]])] = js.undefined
-  
-  /**
-    * Configures if the scroll position needs to be restored when navigating back.
-    *
-    * * 'disabled'- (Default) Does nothing. Scroll position is maintained on navigation.
-    * * 'top'- Sets the scroll position to x = 0, y = 0 on all navigation.
-    * * 'enabled'- Restores the previous scroll position on backward navigation, else sets the
-    * position to the anchor if one is provided, or sets the scroll position to [0, 0] (forward
-    * navigation). This option will be the default in the future.
-    *
-    * You can implement custom scroll restoration behavior by adapting the enabled behavior as
-    * in the following example.
-    *
-    * ```typescript
-    * class AppModule {
-    *   constructor(router: Router, viewportScroller: ViewportScroller) {
-    *     router.events.pipe(
-    *       filter((e: Event): e is Scroll => e instanceof Scroll)
-    *     ).subscribe(e => {
-    *       if (e.position) {
-    *         // backward navigation
-    *         viewportScroller.scrollToPosition(e.position);
-    *       } else if (e.anchor) {
-    *         // anchor navigation
-    *         viewportScroller.scrollToAnchor(e.anchor);
-    *       } else {
-    *         // forward navigation
-    *         viewportScroller.scrollToPosition([0, 0]);
-    *       }
-    *     });
-    *   }
-    * }
-    * ```
-    */
-  var scrollPositionRestoration: js.UndefOr[disabled | enabled | top] = js.undefined
-  
-  /**
-    * Defines when the router updates the browser URL. By default ('deferred'),
-    * update after successful navigation.
-    * Set to 'eager' if prefer to update the URL at the beginning of navigation.
-    * Updating the URL early allows you to handle a failure of navigation by
-    * showing an error message with the URL that failed.
-    */
-  var urlUpdateStrategy: js.UndefOr[deferred | eager] = js.undefined
   
   /**
     * When true, enable the location strategy that uses the URL fragment
@@ -191,15 +119,11 @@ object ExtraOptions {
   
   extension [Self <: ExtraOptions](x: Self) {
     
-    inline def setAnchorScrolling(value: disabled | enabled): Self = StObject.set(x, "anchorScrolling", value.asInstanceOf[js.Any])
-    
-    inline def setAnchorScrollingUndefined: Self = StObject.set(x, "anchorScrolling", js.undefined)
-    
     inline def setEnableTracing(value: Boolean): Self = StObject.set(x, "enableTracing", value.asInstanceOf[js.Any])
     
     inline def setEnableTracingUndefined: Self = StObject.set(x, "enableTracing", js.undefined)
     
-    inline def setErrorHandler(value: /* error */ js.Any => js.Any): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
+    inline def setErrorHandler(value: /* error */ Any => Any): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
     
     inline def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
     
@@ -207,19 +131,11 @@ object ExtraOptions {
     
     inline def setInitialNavigationUndefined: Self = StObject.set(x, "initialNavigation", js.undefined)
     
-    inline def setMalformedUriErrorHandler(value: (/* error */ URIError, /* urlSerializer */ UrlSerializer, /* url */ String) => UrlTree): Self = StObject.set(x, "malformedUriErrorHandler", js.Any.fromFunction3(value))
+    inline def setMalformedUriErrorHandler(value: (/* error */ js.URIError, /* urlSerializer */ UrlSerializer, /* url */ String) => UrlTree): Self = StObject.set(x, "malformedUriErrorHandler", js.Any.fromFunction3(value))
     
     inline def setMalformedUriErrorHandlerUndefined: Self = StObject.set(x, "malformedUriErrorHandler", js.undefined)
     
-    inline def setOnSameUrlNavigation(value: reload | ignore): Self = StObject.set(x, "onSameUrlNavigation", value.asInstanceOf[js.Any])
-    
-    inline def setOnSameUrlNavigationUndefined: Self = StObject.set(x, "onSameUrlNavigation", js.undefined)
-    
-    inline def setParamsInheritanceStrategy(value: emptyOnly | always): Self = StObject.set(x, "paramsInheritanceStrategy", value.asInstanceOf[js.Any])
-    
-    inline def setParamsInheritanceStrategyUndefined: Self = StObject.set(x, "paramsInheritanceStrategy", js.undefined)
-    
-    inline def setPreloadingStrategy(value: js.Any): Self = StObject.set(x, "preloadingStrategy", value.asInstanceOf[js.Any])
+    inline def setPreloadingStrategy(value: Any): Self = StObject.set(x, "preloadingStrategy", value.asInstanceOf[js.Any])
     
     inline def setPreloadingStrategyUndefined: Self = StObject.set(x, "preloadingStrategy", js.undefined)
     
@@ -232,14 +148,6 @@ object ExtraOptions {
     inline def setScrollOffsetFunction0(value: () => js.Tuple2[Double, Double]): Self = StObject.set(x, "scrollOffset", js.Any.fromFunction0(value))
     
     inline def setScrollOffsetUndefined: Self = StObject.set(x, "scrollOffset", js.undefined)
-    
-    inline def setScrollPositionRestoration(value: disabled | enabled | top): Self = StObject.set(x, "scrollPositionRestoration", value.asInstanceOf[js.Any])
-    
-    inline def setScrollPositionRestorationUndefined: Self = StObject.set(x, "scrollPositionRestoration", js.undefined)
-    
-    inline def setUrlUpdateStrategy(value: deferred | eager): Self = StObject.set(x, "urlUpdateStrategy", value.asInstanceOf[js.Any])
-    
-    inline def setUrlUpdateStrategyUndefined: Self = StObject.set(x, "urlUpdateStrategy", js.undefined)
     
     inline def setUseHash(value: Boolean): Self = StObject.set(x, "useHash", value.asInstanceOf[js.Any])
     

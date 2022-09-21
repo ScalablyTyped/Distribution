@@ -12,12 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ServiceQuotas extends Service {
   
   /**
-    * Associates the Service Quotas template with your organization so that when new accounts are created in your organization, the template submits increase requests for the specified service quotas. Use the Service Quotas template to request an increase for any adjustable quota value. After you define the Service Quotas template, use this operation to associate, or enable, the template. 
+    * Associates your quota request template with your organization. When a new account is created in your organization, the quota increase requests in the template are automatically applied to the account. You can add a quota increase request for any adjustable quota to your template.
     */
   def associateServiceQuotaTemplate(): Request[AssociateServiceQuotaTemplateResponse, AWSError] = js.native
   def associateServiceQuotaTemplate(callback: js.Function2[/* err */ AWSError, /* data */ AssociateServiceQuotaTemplateResponse, Unit]): Request[AssociateServiceQuotaTemplateResponse, AWSError] = js.native
   /**
-    * Associates the Service Quotas template with your organization so that when new accounts are created in your organization, the template submits increase requests for the specified service quotas. Use the Service Quotas template to request an increase for any adjustable quota value. After you define the Service Quotas template, use this operation to associate, or enable, the template. 
+    * Associates your quota request template with your organization. When a new account is created in your organization, the quota increase requests in the template are automatically applied to the account. You can add a quota increase request for any adjustable quota to your template.
     */
   def associateServiceQuotaTemplate(params: AssociateServiceQuotaTemplateRequest): Request[AssociateServiceQuotaTemplateResponse, AWSError] = js.native
   def associateServiceQuotaTemplate(
@@ -29,7 +29,7 @@ trait ServiceQuotas extends Service {
   var config_ServiceQuotas: ConfigBase & ClientConfiguration = js.native
   
   /**
-    * Removes a service quota increase request from the Service Quotas template. 
+    * Deletes the quota increase request for the specified quota from your quota request template.
     */
   def deleteServiceQuotaIncreaseRequestFromTemplate(): Request[DeleteServiceQuotaIncreaseRequestFromTemplateResponse, AWSError] = js.native
   def deleteServiceQuotaIncreaseRequestFromTemplate(
@@ -40,7 +40,7 @@ trait ServiceQuotas extends Service {
     ]
   ): Request[DeleteServiceQuotaIncreaseRequestFromTemplateResponse, AWSError] = js.native
   /**
-    * Removes a service quota increase request from the Service Quotas template. 
+    * Deletes the quota increase request for the specified quota from your quota request template.
     */
   def deleteServiceQuotaIncreaseRequestFromTemplate(params: DeleteServiceQuotaIncreaseRequestFromTemplateRequest): Request[DeleteServiceQuotaIncreaseRequestFromTemplateResponse, AWSError] = js.native
   def deleteServiceQuotaIncreaseRequestFromTemplate(
@@ -53,14 +53,14 @@ trait ServiceQuotas extends Service {
   ): Request[DeleteServiceQuotaIncreaseRequestFromTemplateResponse, AWSError] = js.native
   
   /**
-    * Disables the Service Quotas template. Once the template is disabled, it does not request quota increases for new accounts in your organization. Disabling the quota template does not apply the quota increase requests from the template.   Related operations    To enable the quota template, call AssociateServiceQuotaTemplate.    To delete a specific service quota from the template, use DeleteServiceQuotaIncreaseRequestFromTemplate.  
+    * Disables your quota request template. After a template is disabled, the quota increase requests in the template are not applied to new accounts in your organization. Disabling a quota request template does not apply its quota increase requests.
     */
   def disassociateServiceQuotaTemplate(): Request[DisassociateServiceQuotaTemplateResponse, AWSError] = js.native
   def disassociateServiceQuotaTemplate(
     callback: js.Function2[/* err */ AWSError, /* data */ DisassociateServiceQuotaTemplateResponse, Unit]
   ): Request[DisassociateServiceQuotaTemplateResponse, AWSError] = js.native
   /**
-    * Disables the Service Quotas template. Once the template is disabled, it does not request quota increases for new accounts in your organization. Disabling the quota template does not apply the quota increase requests from the template.   Related operations    To enable the quota template, call AssociateServiceQuotaTemplate.    To delete a specific service quota from the template, use DeleteServiceQuotaIncreaseRequestFromTemplate.  
+    * Disables your quota request template. After a template is disabled, the quota increase requests in the template are not applied to new accounts in your organization. Disabling a quota request template does not apply its quota increase requests.
     */
   def disassociateServiceQuotaTemplate(params: DisassociateServiceQuotaTemplateRequest): Request[DisassociateServiceQuotaTemplateResponse, AWSError] = js.native
   def disassociateServiceQuotaTemplate(
@@ -69,12 +69,12 @@ trait ServiceQuotas extends Service {
   ): Request[DisassociateServiceQuotaTemplateResponse, AWSError] = js.native
   
   /**
-    * Retrieves the default service quotas values. The Value returned for each quota is the AWS default value, even if the quotas have been increased.. 
+    * Retrieves the default value for the specified quota. The default value does not reflect any quota increases.
     */
   def getAWSDefaultServiceQuota(): Request[GetAWSDefaultServiceQuotaResponse, AWSError] = js.native
   def getAWSDefaultServiceQuota(callback: js.Function2[/* err */ AWSError, /* data */ GetAWSDefaultServiceQuotaResponse, Unit]): Request[GetAWSDefaultServiceQuotaResponse, AWSError] = js.native
   /**
-    * Retrieves the default service quotas values. The Value returned for each quota is the AWS default value, even if the quotas have been increased.. 
+    * Retrieves the default value for the specified quota. The default value does not reflect any quota increases.
     */
   def getAWSDefaultServiceQuota(params: GetAWSDefaultServiceQuotaRequest): Request[GetAWSDefaultServiceQuotaResponse, AWSError] = js.native
   def getAWSDefaultServiceQuota(
@@ -83,14 +83,14 @@ trait ServiceQuotas extends Service {
   ): Request[GetAWSDefaultServiceQuotaResponse, AWSError] = js.native
   
   /**
-    * Retrieves the ServiceQuotaTemplateAssociationStatus value from the service. Use this action to determine if the Service Quota template is associated, or enabled. 
+    * Retrieves the status of the association for the quota request template.
     */
   def getAssociationForServiceQuotaTemplate(): Request[GetAssociationForServiceQuotaTemplateResponse, AWSError] = js.native
   def getAssociationForServiceQuotaTemplate(
     callback: js.Function2[/* err */ AWSError, /* data */ GetAssociationForServiceQuotaTemplateResponse, Unit]
   ): Request[GetAssociationForServiceQuotaTemplateResponse, AWSError] = js.native
   /**
-    * Retrieves the ServiceQuotaTemplateAssociationStatus value from the service. Use this action to determine if the Service Quota template is associated, or enabled. 
+    * Retrieves the status of the association for the quota request template.
     */
   def getAssociationForServiceQuotaTemplate(params: GetAssociationForServiceQuotaTemplateRequest): Request[GetAssociationForServiceQuotaTemplateResponse, AWSError] = js.native
   def getAssociationForServiceQuotaTemplate(
@@ -99,14 +99,14 @@ trait ServiceQuotas extends Service {
   ): Request[GetAssociationForServiceQuotaTemplateResponse, AWSError] = js.native
   
   /**
-    * Retrieves the details for a particular increase request. 
+    * Retrieves information about the specified quota increase request.
     */
   def getRequestedServiceQuotaChange(): Request[GetRequestedServiceQuotaChangeResponse, AWSError] = js.native
   def getRequestedServiceQuotaChange(
     callback: js.Function2[/* err */ AWSError, /* data */ GetRequestedServiceQuotaChangeResponse, Unit]
   ): Request[GetRequestedServiceQuotaChangeResponse, AWSError] = js.native
   /**
-    * Retrieves the details for a particular increase request. 
+    * Retrieves information about the specified quota increase request.
     */
   def getRequestedServiceQuotaChange(params: GetRequestedServiceQuotaChangeRequest): Request[GetRequestedServiceQuotaChangeResponse, AWSError] = js.native
   def getRequestedServiceQuotaChange(
@@ -115,12 +115,12 @@ trait ServiceQuotas extends Service {
   ): Request[GetRequestedServiceQuotaChangeResponse, AWSError] = js.native
   
   /**
-    * Returns the details for the specified service quota. This operation provides a different Value than the GetAWSDefaultServiceQuota operation. This operation returns the applied value for each quota. GetAWSDefaultServiceQuota returns the default AWS value for each quota. 
+    * Retrieves the applied quota value for the specified quota. For some quotas, only the default values are available. If the applied quota value is not available for a quota, the quota is not retrieved.
     */
   def getServiceQuota(): Request[GetServiceQuotaResponse, AWSError] = js.native
   def getServiceQuota(callback: js.Function2[/* err */ AWSError, /* data */ GetServiceQuotaResponse, Unit]): Request[GetServiceQuotaResponse, AWSError] = js.native
   /**
-    * Returns the details for the specified service quota. This operation provides a different Value than the GetAWSDefaultServiceQuota operation. This operation returns the applied value for each quota. GetAWSDefaultServiceQuota returns the default AWS value for each quota. 
+    * Retrieves the applied quota value for the specified quota. For some quotas, only the default values are available. If the applied quota value is not available for a quota, the quota is not retrieved.
     */
   def getServiceQuota(params: GetServiceQuotaRequest): Request[GetServiceQuotaResponse, AWSError] = js.native
   def getServiceQuota(
@@ -129,7 +129,7 @@ trait ServiceQuotas extends Service {
   ): Request[GetServiceQuotaResponse, AWSError] = js.native
   
   /**
-    * Returns the details of the service quota increase request in your template.
+    * Retrieves information about the specified quota increase request in your quota request template.
     */
   def getServiceQuotaIncreaseRequestFromTemplate(): Request[GetServiceQuotaIncreaseRequestFromTemplateResponse, AWSError] = js.native
   def getServiceQuotaIncreaseRequestFromTemplate(
@@ -140,7 +140,7 @@ trait ServiceQuotas extends Service {
     ]
   ): Request[GetServiceQuotaIncreaseRequestFromTemplateResponse, AWSError] = js.native
   /**
-    * Returns the details of the service quota increase request in your template.
+    * Retrieves information about the specified quota increase request in your quota request template.
     */
   def getServiceQuotaIncreaseRequestFromTemplate(params: GetServiceQuotaIncreaseRequestFromTemplateRequest): Request[GetServiceQuotaIncreaseRequestFromTemplateResponse, AWSError] = js.native
   def getServiceQuotaIncreaseRequestFromTemplate(
@@ -153,12 +153,12 @@ trait ServiceQuotas extends Service {
   ): Request[GetServiceQuotaIncreaseRequestFromTemplateResponse, AWSError] = js.native
   
   /**
-    * Lists all default service quotas for the specified AWS service or all AWS services. ListAWSDefaultServiceQuotas is similar to ListServiceQuotas except for the Value object. The Value object returned by ListAWSDefaultServiceQuotas is the default value assigned by AWS. This request returns a list of all service quotas for the specified service. The listing of each you'll see the default values are the values that AWS provides for the quotas.   Always check the NextToken response parameter when calling any of the List* operations. These operations can return an unexpected list of results, even when there are more results available. When this happens, the NextToken response parameter contains a value to pass the next call to the same API to request the next part of the list. 
+    * Lists the default values for the quotas for the specified AWS service. A default value does not reflect any quota increases.
     */
   def listAWSDefaultServiceQuotas(): Request[ListAWSDefaultServiceQuotasResponse, AWSError] = js.native
   def listAWSDefaultServiceQuotas(callback: js.Function2[/* err */ AWSError, /* data */ ListAWSDefaultServiceQuotasResponse, Unit]): Request[ListAWSDefaultServiceQuotasResponse, AWSError] = js.native
   /**
-    * Lists all default service quotas for the specified AWS service or all AWS services. ListAWSDefaultServiceQuotas is similar to ListServiceQuotas except for the Value object. The Value object returned by ListAWSDefaultServiceQuotas is the default value assigned by AWS. This request returns a list of all service quotas for the specified service. The listing of each you'll see the default values are the values that AWS provides for the quotas.   Always check the NextToken response parameter when calling any of the List* operations. These operations can return an unexpected list of results, even when there are more results available. When this happens, the NextToken response parameter contains a value to pass the next call to the same API to request the next part of the list. 
+    * Lists the default values for the quotas for the specified AWS service. A default value does not reflect any quota increases.
     */
   def listAWSDefaultServiceQuotas(params: ListAWSDefaultServiceQuotasRequest): Request[ListAWSDefaultServiceQuotasResponse, AWSError] = js.native
   def listAWSDefaultServiceQuotas(
@@ -167,14 +167,14 @@ trait ServiceQuotas extends Service {
   ): Request[ListAWSDefaultServiceQuotasResponse, AWSError] = js.native
   
   /**
-    * Requests a list of the changes to quotas for a service.
+    * Retrieves the quota increase requests for the specified service.
     */
   def listRequestedServiceQuotaChangeHistory(): Request[ListRequestedServiceQuotaChangeHistoryResponse, AWSError] = js.native
   def listRequestedServiceQuotaChangeHistory(
     callback: js.Function2[/* err */ AWSError, /* data */ ListRequestedServiceQuotaChangeHistoryResponse, Unit]
   ): Request[ListRequestedServiceQuotaChangeHistoryResponse, AWSError] = js.native
   /**
-    * Requests a list of the changes to quotas for a service.
+    * Retrieves the quota increase requests for the specified service.
     */
   def listRequestedServiceQuotaChangeHistory(params: ListRequestedServiceQuotaChangeHistoryRequest): Request[ListRequestedServiceQuotaChangeHistoryResponse, AWSError] = js.native
   def listRequestedServiceQuotaChangeHistory(
@@ -183,7 +183,7 @@ trait ServiceQuotas extends Service {
   ): Request[ListRequestedServiceQuotaChangeHistoryResponse, AWSError] = js.native
   
   /**
-    * Requests a list of the changes to specific service quotas. This command provides additional granularity over the ListRequestedServiceQuotaChangeHistory command. Once a quota change request has reached CASE_CLOSED, APPROVED, or DENIED, the history has been kept for 90 days.
+    * Retrieves the quota increase requests for the specified quota.
     */
   def listRequestedServiceQuotaChangeHistoryByQuota(): Request[ListRequestedServiceQuotaChangeHistoryByQuotaResponse, AWSError] = js.native
   def listRequestedServiceQuotaChangeHistoryByQuota(
@@ -194,7 +194,7 @@ trait ServiceQuotas extends Service {
     ]
   ): Request[ListRequestedServiceQuotaChangeHistoryByQuotaResponse, AWSError] = js.native
   /**
-    * Requests a list of the changes to specific service quotas. This command provides additional granularity over the ListRequestedServiceQuotaChangeHistory command. Once a quota change request has reached CASE_CLOSED, APPROVED, or DENIED, the history has been kept for 90 days.
+    * Retrieves the quota increase requests for the specified quota.
     */
   def listRequestedServiceQuotaChangeHistoryByQuota(params: ListRequestedServiceQuotaChangeHistoryByQuotaRequest): Request[ListRequestedServiceQuotaChangeHistoryByQuotaResponse, AWSError] = js.native
   def listRequestedServiceQuotaChangeHistoryByQuota(
@@ -207,7 +207,7 @@ trait ServiceQuotas extends Service {
   ): Request[ListRequestedServiceQuotaChangeHistoryByQuotaResponse, AWSError] = js.native
   
   /**
-    * Returns a list of the quota increase requests in the template. 
+    * Lists the quota increase requests in the specified quota request template.
     */
   def listServiceQuotaIncreaseRequestsInTemplate(): Request[ListServiceQuotaIncreaseRequestsInTemplateResponse, AWSError] = js.native
   def listServiceQuotaIncreaseRequestsInTemplate(
@@ -218,7 +218,7 @@ trait ServiceQuotas extends Service {
     ]
   ): Request[ListServiceQuotaIncreaseRequestsInTemplateResponse, AWSError] = js.native
   /**
-    * Returns a list of the quota increase requests in the template. 
+    * Lists the quota increase requests in the specified quota request template.
     */
   def listServiceQuotaIncreaseRequestsInTemplate(params: ListServiceQuotaIncreaseRequestsInTemplateRequest): Request[ListServiceQuotaIncreaseRequestsInTemplateResponse, AWSError] = js.native
   def listServiceQuotaIncreaseRequestsInTemplate(
@@ -231,12 +231,12 @@ trait ServiceQuotas extends Service {
   ): Request[ListServiceQuotaIncreaseRequestsInTemplateResponse, AWSError] = js.native
   
   /**
-    * Lists all service quotas for the specified AWS service. This request returns a list of the service quotas for the specified service. you'll see the default values are the values that AWS provides for the quotas.   Always check the NextToken response parameter when calling any of the List* operations. These operations can return an unexpected list of results, even when there are more results available. When this happens, the NextToken response parameter contains a value to pass the next call to the same API to request the next part of the list. 
+    * Lists the applied quota values for the specified AWS service. For some quotas, only the default values are available. If the applied quota value is not available for a quota, the quota is not retrieved.
     */
   def listServiceQuotas(): Request[ListServiceQuotasResponse, AWSError] = js.native
   def listServiceQuotas(callback: js.Function2[/* err */ AWSError, /* data */ ListServiceQuotasResponse, Unit]): Request[ListServiceQuotasResponse, AWSError] = js.native
   /**
-    * Lists all service quotas for the specified AWS service. This request returns a list of the service quotas for the specified service. you'll see the default values are the values that AWS provides for the quotas.   Always check the NextToken response parameter when calling any of the List* operations. These operations can return an unexpected list of results, even when there are more results available. When this happens, the NextToken response parameter contains a value to pass the next call to the same API to request the next part of the list. 
+    * Lists the applied quota values for the specified AWS service. For some quotas, only the default values are available. If the applied quota value is not available for a quota, the quota is not retrieved.
     */
   def listServiceQuotas(params: ListServiceQuotasRequest): Request[ListServiceQuotasResponse, AWSError] = js.native
   def listServiceQuotas(
@@ -245,12 +245,12 @@ trait ServiceQuotas extends Service {
   ): Request[ListServiceQuotasResponse, AWSError] = js.native
   
   /**
-    * Lists the AWS services available in Service Quotas. Not all AWS services are available in Service Quotas. To list the see the list of the service quotas for a specific service, use ListServiceQuotas.
+    * Lists the names and codes for the services integrated with Service Quotas.
     */
   def listServices(): Request[ListServicesResponse, AWSError] = js.native
   def listServices(callback: js.Function2[/* err */ AWSError, /* data */ ListServicesResponse, Unit]): Request[ListServicesResponse, AWSError] = js.native
   /**
-    * Lists the AWS services available in Service Quotas. Not all AWS services are available in Service Quotas. To list the see the list of the service quotas for a specific service, use ListServiceQuotas.
+    * Lists the names and codes for the services integrated with Service Quotas.
     */
   def listServices(params: ListServicesRequest): Request[ListServicesResponse, AWSError] = js.native
   def listServices(
@@ -259,7 +259,21 @@ trait ServiceQuotas extends Service {
   ): Request[ListServicesResponse, AWSError] = js.native
   
   /**
-    * Defines and adds a quota to the service quota template. To add a quota to the template, you must provide the ServiceCode, QuotaCode, AwsRegion, and DesiredValue. Once you add a quota to the template, use ListServiceQuotaIncreaseRequestsInTemplate to see the list of quotas in the template.
+    * Returns a list of the tags assigned to the specified applied quota.
+    */
+  def listTagsForResource(): Request[ListTagsForResourceResponse, AWSError] = js.native
+  def listTagsForResource(callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]): Request[ListTagsForResourceResponse, AWSError] = js.native
+  /**
+    * Returns a list of the tags assigned to the specified applied quota.
+    */
+  def listTagsForResource(params: ListTagsForResourceRequest): Request[ListTagsForResourceResponse, AWSError] = js.native
+  def listTagsForResource(
+    params: ListTagsForResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
+  ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  
+  /**
+    * Adds a quota increase request to your quota request template.
     */
   def putServiceQuotaIncreaseRequestIntoTemplate(): Request[PutServiceQuotaIncreaseRequestIntoTemplateResponse, AWSError] = js.native
   def putServiceQuotaIncreaseRequestIntoTemplate(
@@ -270,7 +284,7 @@ trait ServiceQuotas extends Service {
     ]
   ): Request[PutServiceQuotaIncreaseRequestIntoTemplateResponse, AWSError] = js.native
   /**
-    * Defines and adds a quota to the service quota template. To add a quota to the template, you must provide the ServiceCode, QuotaCode, AwsRegion, and DesiredValue. Once you add a quota to the template, use ListServiceQuotaIncreaseRequestsInTemplate to see the list of quotas in the template.
+    * Adds a quota increase request to your quota request template.
     */
   def putServiceQuotaIncreaseRequestIntoTemplate(params: PutServiceQuotaIncreaseRequestIntoTemplateRequest): Request[PutServiceQuotaIncreaseRequestIntoTemplateResponse, AWSError] = js.native
   def putServiceQuotaIncreaseRequestIntoTemplate(
@@ -283,16 +297,44 @@ trait ServiceQuotas extends Service {
   ): Request[PutServiceQuotaIncreaseRequestIntoTemplateResponse, AWSError] = js.native
   
   /**
-    * Retrieves the details of a service quota increase request. The response to this command provides the details in the RequestedServiceQuotaChange object. 
+    * Submits a quota increase request for the specified quota.
     */
   def requestServiceQuotaIncrease(): Request[RequestServiceQuotaIncreaseResponse, AWSError] = js.native
   def requestServiceQuotaIncrease(callback: js.Function2[/* err */ AWSError, /* data */ RequestServiceQuotaIncreaseResponse, Unit]): Request[RequestServiceQuotaIncreaseResponse, AWSError] = js.native
   /**
-    * Retrieves the details of a service quota increase request. The response to this command provides the details in the RequestedServiceQuotaChange object. 
+    * Submits a quota increase request for the specified quota.
     */
   def requestServiceQuotaIncrease(params: RequestServiceQuotaIncreaseRequest): Request[RequestServiceQuotaIncreaseResponse, AWSError] = js.native
   def requestServiceQuotaIncrease(
     params: RequestServiceQuotaIncreaseRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ RequestServiceQuotaIncreaseResponse, Unit]
   ): Request[RequestServiceQuotaIncreaseResponse, AWSError] = js.native
+  
+  /**
+    * Adds tags to the specified applied quota. You can include one or more tags to add to the quota.
+    */
+  def tagResource(): Request[TagResourceResponse, AWSError] = js.native
+  def tagResource(callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]): Request[TagResourceResponse, AWSError] = js.native
+  /**
+    * Adds tags to the specified applied quota. You can include one or more tags to add to the quota.
+    */
+  def tagResource(params: TagResourceRequest): Request[TagResourceResponse, AWSError] = js.native
+  def tagResource(
+    params: TagResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]
+  ): Request[TagResourceResponse, AWSError] = js.native
+  
+  /**
+    * Removes tags from the specified applied quota. You can specify one or more tags to remove.
+    */
+  def untagResource(): Request[UntagResourceResponse, AWSError] = js.native
+  def untagResource(callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]): Request[UntagResourceResponse, AWSError] = js.native
+  /**
+    * Removes tags from the specified applied quota. You can specify one or more tags to remove.
+    */
+  def untagResource(params: UntagResourceRequest): Request[UntagResourceResponse, AWSError] = js.native
+  def untagResource(
+    params: UntagResourceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]
+  ): Request[UntagResourceResponse, AWSError] = js.native
 }

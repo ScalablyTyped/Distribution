@@ -23,7 +23,7 @@ trait ParDoInstruction extends StObject {
   var userFn: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.ParDoInstruction & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.ParDoInstruction & TopLevel[Any]
   ] = js.undefined
 }
 object ParDoInstruction {
@@ -43,7 +43,7 @@ object ParDoInstruction {
     
     inline def setMultiOutputInfosUndefined: Self = StObject.set(x, "multiOutputInfos", js.undefined)
     
-    inline def setMultiOutputInfosVarargs(value: MultiOutputInfo*): Self = StObject.set(x, "multiOutputInfos", js.Array(value :_*))
+    inline def setMultiOutputInfosVarargs(value: MultiOutputInfo*): Self = StObject.set(x, "multiOutputInfos", js.Array(value*))
     
     inline def setNumOutputs(value: Double): Self = StObject.set(x, "numOutputs", value.asInstanceOf[js.Any])
     
@@ -53,12 +53,12 @@ object ParDoInstruction {
     
     inline def setSideInputsUndefined: Self = StObject.set(x, "sideInputs", js.undefined)
     
-    inline def setSideInputsVarargs(value: SideInputInfo*): Self = StObject.set(x, "sideInputs", js.Array(value :_*))
+    inline def setSideInputsVarargs(value: SideInputInfo*): Self = StObject.set(x, "sideInputs", js.Array(value*))
     
     inline def setUserFn(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.ParDoInstruction & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.ParDoInstruction & TopLevel[Any]
     ): Self = StObject.set(x, "userFn", value.asInstanceOf[js.Any])
     
     inline def setUserFnUndefined: Self = StObject.set(x, "userFn", js.undefined)

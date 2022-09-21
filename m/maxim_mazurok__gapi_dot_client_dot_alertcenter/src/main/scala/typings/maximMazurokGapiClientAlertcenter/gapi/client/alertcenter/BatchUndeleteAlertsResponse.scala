@@ -11,7 +11,7 @@ trait BatchUndeleteAlertsResponse extends StObject {
   var failedAlertStatus: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.alertcenter.gapi.client.alertcenter.Status}
-    */ typings.maximMazurokGapiClientAlertcenter.maximMazurokGapiClientAlertcenterStrings.BatchUndeleteAlertsResponse & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientAlertcenter.maximMazurokGapiClientAlertcenterStrings.BatchUndeleteAlertsResponse & TopLevel[Any]
   ] = js.undefined
   
   /** The successful list of alert IDs. */
@@ -29,7 +29,7 @@ object BatchUndeleteAlertsResponse {
     inline def setFailedAlertStatus(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.alertcenter.gapi.client.alertcenter.Status}
-      */ typings.maximMazurokGapiClientAlertcenter.maximMazurokGapiClientAlertcenterStrings.BatchUndeleteAlertsResponse & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientAlertcenter.maximMazurokGapiClientAlertcenterStrings.BatchUndeleteAlertsResponse & TopLevel[Any]
     ): Self = StObject.set(x, "failedAlertStatus", value.asInstanceOf[js.Any])
     
     inline def setFailedAlertStatusUndefined: Self = StObject.set(x, "failedAlertStatus", js.undefined)
@@ -38,6 +38,6 @@ object BatchUndeleteAlertsResponse {
     
     inline def setSuccessAlertIdsUndefined: Self = StObject.set(x, "successAlertIds", js.undefined)
     
-    inline def setSuccessAlertIdsVarargs(value: String*): Self = StObject.set(x, "successAlertIds", js.Array(value :_*))
+    inline def setSuccessAlertIdsVarargs(value: String*): Self = StObject.set(x, "successAlertIds", js.Array(value*))
   }
 }

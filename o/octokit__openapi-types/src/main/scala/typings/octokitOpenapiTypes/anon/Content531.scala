@@ -1,0 +1,22 @@
+package typings.octokitOpenapiTypes.anon
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait Content531 extends StObject {
+  
+  var content: `531`
+}
+object Content531 {
+  
+  inline def apply(content: `531`): Content531 = {
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Content531]
+  }
+  
+  extension [Self <: Content531](x: Self) {
+    
+    inline def setContent(value: `531`): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+  }
+}

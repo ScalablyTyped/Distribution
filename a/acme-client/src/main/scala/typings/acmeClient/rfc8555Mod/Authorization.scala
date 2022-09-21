@@ -37,7 +37,7 @@ object Authorization {
     
     inline def setChallenges(value: js.Array[Challenge]): Self = StObject.set(x, "challenges", value.asInstanceOf[js.Any])
     
-    inline def setChallengesVarargs(value: Challenge*): Self = StObject.set(x, "challenges", js.Array(value :_*))
+    inline def setChallengesVarargs(value: Challenge*): Self = StObject.set(x, "challenges", js.Array(value*))
     
     inline def setExpires(value: String): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
     

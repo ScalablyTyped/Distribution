@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ScanCodeOptions
   extends StObject
-     with BaseOptions[js.Any, js.Any] {
+     with BaseOptions[Any, Any] {
   
   /**
     * 是否只能从相机扫码，不允许从相册选择图片
@@ -41,7 +41,7 @@ object ScanCodeOptions {
     
     inline def setScanTypeUndefined: Self = StObject.set(x, "scanType", js.undefined)
     
-    inline def setScanTypeVarargs(value: String*): Self = StObject.set(x, "scanType", js.Array(value :_*))
+    inline def setScanTypeVarargs(value: String*): Self = StObject.set(x, "scanType", js.Array(value*))
     
     inline def setSuccess(value: ScanCodeData => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }

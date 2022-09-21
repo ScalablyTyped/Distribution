@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TreeListOptions extends StObject {
   
+  var altRowTemplate: js.UndefOr[String | js.Function] = js.undefined
+  
   var autoBind: js.UndefOr[Boolean] = js.undefined
   
   var beforeEdit: js.UndefOr[js.Function1[/* e */ TreeListBeforeEditEvent, Unit]] = js.undefined
@@ -43,7 +45,7 @@ trait TreeListOptions extends StObject {
   
   var dataBound: js.UndefOr[js.Function1[/* e */ TreeListDataBoundEvent, Unit]] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any | TreeListDataSource] = js.undefined
+  var dataSource: js.UndefOr[Any | TreeListDataSource] = js.undefined
   
   var drag: js.UndefOr[js.Function1[/* e */ TreeListDragEvent, Unit]] = js.undefined
   
@@ -89,17 +91,21 @@ trait TreeListOptions extends StObject {
   
   var resizable: js.UndefOr[Boolean] = js.undefined
   
+  var rowTemplate: js.UndefOr[String | js.Function] = js.undefined
+  
   var save: js.UndefOr[js.Function1[/* e */ TreeListSaveEvent, Unit]] = js.undefined
   
   var saveChanges: js.UndefOr[js.Function1[/* e */ TreeListSaveChangesEvent, Unit]] = js.undefined
   
-  var scrollable: js.UndefOr[Boolean | js.Any] = js.undefined
+  var scrollable: js.UndefOr[Boolean | Any] = js.undefined
+  
+  var search: js.UndefOr[TreeListSearch] = js.undefined
   
   var selectable: js.UndefOr[Boolean | String] = js.undefined
   
   var sortable: js.UndefOr[Boolean | TreeListSortable] = js.undefined
   
-  var toolbar: js.UndefOr[js.Array[TreeListToolbarItem] | js.Any] = js.undefined
+  var toolbar: js.UndefOr[js.Array[TreeListToolbarItem] | Any] = js.undefined
 }
 object TreeListOptions {
   
@@ -109,6 +115,10 @@ object TreeListOptions {
   }
   
   extension [Self <: TreeListOptions](x: Self) {
+    
+    inline def setAltRowTemplate(value: String | js.Function): Self = StObject.set(x, "altRowTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setAltRowTemplateUndefined: Self = StObject.set(x, "altRowTemplate", js.undefined)
     
     inline def setAutoBind(value: Boolean): Self = StObject.set(x, "autoBind", value.asInstanceOf[js.Any])
     
@@ -174,7 +184,7 @@ object TreeListOptions {
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    inline def setColumnsVarargs(value: TreeListColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: TreeListColumn*): Self = StObject.set(x, "columns", js.Array(value*))
     
     inline def setDataBinding(value: /* e */ TreeListDataBindingEvent => Unit): Self = StObject.set(x, "dataBinding", js.Any.fromFunction1(value))
     
@@ -184,7 +194,7 @@ object TreeListOptions {
     
     inline def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
-    inline def setDataSource(value: js.Any | TreeListDataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any | TreeListDataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
@@ -276,6 +286,10 @@ object TreeListOptions {
     
     inline def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
     
+    inline def setRowTemplate(value: String | js.Function): Self = StObject.set(x, "rowTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setRowTemplateUndefined: Self = StObject.set(x, "rowTemplate", js.undefined)
+    
     inline def setSave(value: /* e */ TreeListSaveEvent => Unit): Self = StObject.set(x, "save", js.Any.fromFunction1(value))
     
     inline def setSaveChanges(value: /* e */ TreeListSaveChangesEvent => Unit): Self = StObject.set(x, "saveChanges", js.Any.fromFunction1(value))
@@ -284,9 +298,13 @@ object TreeListOptions {
     
     inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
     
-    inline def setScrollable(value: Boolean | js.Any): Self = StObject.set(x, "scrollable", value.asInstanceOf[js.Any])
+    inline def setScrollable(value: Boolean | Any): Self = StObject.set(x, "scrollable", value.asInstanceOf[js.Any])
     
     inline def setScrollableUndefined: Self = StObject.set(x, "scrollable", js.undefined)
+    
+    inline def setSearch(value: TreeListSearch): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    
+    inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
     
     inline def setSelectable(value: Boolean | String): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
     
@@ -296,10 +314,10 @@ object TreeListOptions {
     
     inline def setSortableUndefined: Self = StObject.set(x, "sortable", js.undefined)
     
-    inline def setToolbar(value: js.Array[TreeListToolbarItem] | js.Any): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
+    inline def setToolbar(value: js.Array[TreeListToolbarItem] | Any): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
     
     inline def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
     
-    inline def setToolbarVarargs(value: TreeListToolbarItem*): Self = StObject.set(x, "toolbar", js.Array(value :_*))
+    inline def setToolbarVarargs(value: TreeListToolbarItem*): Self = StObject.set(x, "toolbar", js.Array(value*))
   }
 }

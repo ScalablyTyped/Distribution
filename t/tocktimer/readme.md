@@ -10,10 +10,10 @@ timer object/class. kickass!
 | ------------------ | :-------------: |
 | Full name          | tocktimer |
 | Keywords           | timer, clock, repetition |
-| # releases         | 3 |
-| # dependents       | 1 |
-| # downloads        | 93475 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 7819.666666666667 |
+| # stars            | 231.0 |
 
 ## Links
 - [Homepage](https://github.com/mrchimp/tock#readme)

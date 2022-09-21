@@ -10,7 +10,7 @@ object validationSchemaToMetadataTransformerMod {
   
   @JSImport("class-validator/types/validation-schema/ValidationSchemaToMetadataTransformer", "ValidationSchemaToMetadataTransformer")
   @js.native
-  class ValidationSchemaToMetadataTransformer () extends StObject {
+  open class ValidationSchemaToMetadataTransformer () extends StObject {
     
     def transform(schema: ValidationSchema): js.Array[ValidationMetadata] = js.native
   }

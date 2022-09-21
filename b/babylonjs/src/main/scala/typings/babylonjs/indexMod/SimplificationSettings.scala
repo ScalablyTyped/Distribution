@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "SimplificationSettings")
 @js.native
-class SimplificationSettings protected ()
+open class SimplificationSettings protected ()
   extends typings.babylonjs.babylonjsIndexMod.SimplificationSettings {
   /**
     * Creates a SimplificationSettings

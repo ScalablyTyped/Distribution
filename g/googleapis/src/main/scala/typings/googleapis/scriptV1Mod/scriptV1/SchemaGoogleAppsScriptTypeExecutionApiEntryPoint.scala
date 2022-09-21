@@ -4,13 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An API executable entry point.
-  */
 trait SchemaGoogleAppsScriptTypeExecutionApiEntryPoint extends StObject {
   
   /**
-    * The entry point&#39;s configuration.
+    * The entry point's configuration.
     */
   var entryPointConfig: js.UndefOr[SchemaGoogleAppsScriptTypeExecutionApiConfig] = js.undefined
 }

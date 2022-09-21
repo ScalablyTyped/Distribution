@@ -49,7 +49,7 @@ object INodeDef {
     
     inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
-    inline def setInputVarargs(value: String*): Self = StObject.set(x, "input", js.Array(value :_*))
+    inline def setInputVarargs(value: String*): Self = StObject.set(x, "input", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

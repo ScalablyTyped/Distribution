@@ -10,10 +10,10 @@ Simple helper for sub-classing the Error object
 | ------------------ | :-------------: |
 | Full name          | create-error |
 | Keywords           | errors |
-| # releases         | 0 |
-| # dependents       | 69 |
-| # downloads        | 7271434 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1175498.0 |
+| # stars            | 104.0 |
 
 ## Links
 - [Homepage](https://github.com/tgriesser/create-error#readme)

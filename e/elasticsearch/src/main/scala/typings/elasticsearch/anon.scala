@@ -22,7 +22,7 @@ object anon {
       
       inline def setActions(value: js.Array[IndicesUpdateAliasesParamsAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      inline def setActionsVarargs(value: IndicesUpdateAliasesParamsAction*): Self = StObject.set(x, "actions", js.Array(value :_*))
+      inline def setActionsVarargs(value: IndicesUpdateAliasesParamsAction*): Self = StObject.set(x, "actions", js.Array(value*))
     }
   }
   
@@ -61,7 +61,7 @@ object anon {
       
       inline def setIndicesUndefined: Self = StObject.set(x, "indices", js.undefined)
       
-      inline def setIndicesVarargs(value: String*): Self = StObject.set(x, "indices", js.Array(value :_*))
+      inline def setIndicesVarargs(value: String*): Self = StObject.set(x, "indices", js.Array(value*))
       
       inline def setRouting(value: String): Self = StObject.set(x, "routing", value.asInstanceOf[js.Any])
       
@@ -139,11 +139,11 @@ object anon {
     
     var _version: js.UndefOr[Double] = js.undefined
     
-    var fields: js.UndefOr[js.Any] = js.undefined
+    var fields: js.UndefOr[Any] = js.undefined
     
-    var highlight: js.UndefOr[js.Any] = js.undefined
+    var highlight: js.UndefOr[Any] = js.undefined
     
-    var inner_hits: js.UndefOr[js.Any] = js.undefined
+    var inner_hits: js.UndefOr[Any] = js.undefined
     
     var matched_queries: js.UndefOr[js.Array[String]] = js.undefined
     
@@ -158,15 +158,15 @@ object anon {
     
     extension [Self <: Explanation[?], T](x: Self & Explanation[T]) {
       
-      inline def setFields(value: js.Any): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: Any): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
       inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
-      inline def setHighlight(value: js.Any): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+      inline def setHighlight(value: Any): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
       
       inline def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
       
-      inline def setInner_hits(value: js.Any): Self = StObject.set(x, "inner_hits", value.asInstanceOf[js.Any])
+      inline def setInner_hits(value: Any): Self = StObject.set(x, "inner_hits", value.asInstanceOf[js.Any])
       
       inline def setInner_hitsUndefined: Self = StObject.set(x, "inner_hits", js.undefined)
       
@@ -174,13 +174,13 @@ object anon {
       
       inline def setMatched_queriesUndefined: Self = StObject.set(x, "matched_queries", js.undefined)
       
-      inline def setMatched_queriesVarargs(value: String*): Self = StObject.set(x, "matched_queries", js.Array(value :_*))
+      inline def setMatched_queriesVarargs(value: String*): Self = StObject.set(x, "matched_queries", js.Array(value*))
       
       inline def setSort(value: js.Array[String]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
       
       inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
       
-      inline def setSortVarargs(value: String*): Self = StObject.set(x, "sort", js.Array(value :_*))
+      inline def setSortVarargs(value: String*): Self = StObject.set(x, "sort", js.Array(value*))
       
       inline def set_explanation(value: typings.elasticsearch.mod.Explanation): Self = StObject.set(x, "_explanation", value.asInstanceOf[js.Any])
       
@@ -221,7 +221,7 @@ object anon {
       
       inline def setHits(value: js.Array[Explanation[T]]): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
       
-      inline def setHitsVarargs(value: Explanation[T]*): Self = StObject.set(x, "hits", js.Array(value :_*))
+      inline def setHitsVarargs(value: Explanation[T]*): Self = StObject.set(x, "hits", js.Array(value*))
       
       inline def setMax_score(value: Double): Self = StObject.set(x, "max_score", value.asInstanceOf[js.Any])
       
@@ -279,13 +279,13 @@ object anon {
     
     var index: String | js.Array[String]
     
-    var query: js.UndefOr[js.Any] = js.undefined
+    var query: js.UndefOr[Any] = js.undefined
     
     var remote: js.UndefOr[Host] = js.undefined
     
     var size: js.UndefOr[Double] = js.undefined
     
-    var sort: js.UndefOr[js.Any] = js.undefined
+    var sort: js.UndefOr[Any] = js.undefined
     
     var `type`: js.UndefOr[String | js.Array[String]] = js.undefined
   }
@@ -300,9 +300,9 @@ object anon {
       
       inline def setIndex(value: String | js.Array[String]): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
+      inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value*))
       
-      inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
@@ -314,7 +314,7 @@ object anon {
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      inline def setSort(value: js.Any): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+      inline def setSort(value: Any): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
       
       inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
       
@@ -322,7 +322,7 @@ object anon {
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value :_*))
+      inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value*))
     }
   }
   
@@ -370,7 +370,7 @@ object anon {
       
       inline def setIndicesUndefined: Self = StObject.set(x, "indices", js.undefined)
       
-      inline def setIndicesVarargs(value: String*): Self = StObject.set(x, "indices", js.Array(value :_*))
+      inline def setIndicesVarargs(value: String*): Self = StObject.set(x, "indices", js.Array(value*))
     }
   }
   

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait requestPolymerPaymentOptions
   extends StObject
-     with BaseOptions[js.Any, js.Any] {
+     with BaseOptions[Any, Any] {
   
   // 订单信息
   /**
@@ -40,7 +40,7 @@ object requestPolymerPaymentOptions {
     
     inline def setBannedChannelsUndefined: Self = StObject.set(x, "bannedChannels", js.undefined)
     
-    inline def setBannedChannelsVarargs(value: String*): Self = StObject.set(x, "bannedChannels", js.Array(value :_*))
+    inline def setBannedChannelsVarargs(value: String*): Self = StObject.set(x, "bannedChannels", js.Array(value*))
     
     inline def setOrderInfo(value: orderInfoOptions): Self = StObject.set(x, "orderInfo", value.asInstanceOf[js.Any])
     

@@ -4,14 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A request to delete developer metadata.
-  */
 trait SchemaDeleteDeveloperMetadataRequest extends StObject {
   
   /**
-    * The data filter describing the criteria used to select which developer
-    * metadata entry to delete.
+    * The data filter describing the criteria used to select which developer metadata entry to delete.
     */
   var dataFilter: js.UndefOr[SchemaDataFilter] = js.undefined
 }

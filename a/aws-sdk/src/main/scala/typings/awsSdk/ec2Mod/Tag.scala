@@ -12,7 +12,7 @@ trait Tag extends StObject {
   var Key: js.UndefOr[String] = js.undefined
   
   /**
-    * The value of the tag. Constraints: Tag values are case-sensitive and accept a maximum of 255 Unicode characters.
+    * The value of the tag. Constraints: Tag values are case-sensitive and accept a maximum of 256 Unicode characters.
     */
   var Value: js.UndefOr[String] = js.undefined
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for assets-webpack-plugin
 
-Typings are for version 6.0
+Typings are for version 7.1
 
 ## Library description:
 Emits a json file with assets paths
@@ -10,10 +10,10 @@ Emits a json file with assets paths
 | ------------------ | :-------------: |
 | Full name          | assets-webpack-plugin |
 | Keywords           | webpack, plugin, generate, assets, hashes |
-| # releases         | 32 |
-| # dependents       | 246 |
-| # downloads        | 11638123 |
-| # stars            | 31 |
+| # releases         | 25 |
+| # dependents       | 0.0 |
+| # downloads        | 1434954.6666666667 |
+| # stars            | 956.0 |
 
 ## Links
 - [Homepage](https://github.com/ztoben/assets-webpack-plugin)

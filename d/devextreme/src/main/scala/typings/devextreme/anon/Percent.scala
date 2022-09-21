@@ -1,13 +1,12 @@
 package typings.devextreme.anon
 
-import typings.devextreme.mod.DevExpress.viz.dxFunnelItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Percent extends StObject {
   
-  var item: js.UndefOr[dxFunnelItem] = js.undefined
+  var item: js.UndefOr[typings.devextreme.mod.DevExpress.viz.dxFunnel.Item] = js.undefined
   
   var percent: js.UndefOr[Double] = js.undefined
   
@@ -26,7 +25,7 @@ object Percent {
   
   extension [Self <: Percent](x: Self) {
     
-    inline def setItem(value: dxFunnelItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: typings.devextreme.mod.DevExpress.viz.dxFunnel.Item): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     

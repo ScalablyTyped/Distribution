@@ -6,46 +6,39 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * A collection of Bigtable Tables and the resources that serve them. All
-  * tables in an instance are served from all Clusters in the instance.
+  * A collection of Bigtable Tables and the resources that serve them. All tables in an instance are served from all Clusters in the instance.
   */
 trait SchemaInstance extends StObject {
   
   /**
-    * The descriptive name for this instance as it appears in UIs. Can be
-    * changed at any time, but should be kept globally unique to avoid
-    * confusion.
+    * Output only. A server-assigned timestamp representing when this Instance was created. For instances created before this field was added (August 2021), this value is `seconds: 0, nanos: 1`.
     */
-  var displayName: js.UndefOr[String] = js.undefined
+  var createTime: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Labels are a flexible and lightweight mechanism for organizing cloud
-    * resources into groups that reflect a customer&#39;s organizational needs
-    * and deployment strategies. They can be used to filter resources and
-    * aggregate metrics.  * Label keys must be between 1 and 63 characters long
-    * and must conform to   the regular expression: `\p{Ll}\p{Lo}{0,62}`. *
-    * Label values must be between 0 and 63 characters long and must conform to
-    * the regular expression: `[\p{Ll}\p{Lo}\p{N}_-]{0,63}`. * No more than 64
-    * labels can be associated with a given resource. * Keys and values must
-    * both be under 128 bytes.
+    * Required. The descriptive name for this instance as it appears in UIs. Can be changed at any time, but should be kept globally unique to avoid confusion.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
+  var displayName: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * (`OutputOnly`) The unique name of the instance. Values are of the form
-    * `projects/&lt;project&gt;/instances/a-z+[a-z0-9]`.
+    * Required. Labels are a flexible and lightweight mechanism for organizing cloud resources into groups that reflect a customer's organizational needs and deployment strategies. They can be used to filter resources and aggregate metrics. * Label keys must be between 1 and 63 characters long and must conform to the regular expression: `\p{Ll\}\p{Lo\}{0,62\}`. * Label values must be between 0 and 63 characters long and must conform to the regular expression: `[\p{Ll\}\p{Lo\}\p{N\}_-]{0,63\}`. * No more than 64 labels can be associated with a given resource. * Keys and values must both be under 128 bytes.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var labels: js.UndefOr[StringDictionary[String] | Null] = js.undefined
   
   /**
-    * (`OutputOnly`) The current state of the instance.
+    * The unique name of the instance. Values are of the form `projects/{project\}/instances/a-z+[a-z0-9]`.
     */
-  var state: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The type of the instance. Defaults to `PRODUCTION`.
+    * Output only. The current state of the instance.
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var state: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Required. The type of the instance. Defaults to `PRODUCTION`.
+    */
+  var `type`: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaInstance {
   
@@ -56,23 +49,39 @@ object SchemaInstance {
   
   extension [Self <: SchemaInstance](x: Self) {
     
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    
+    inline def setCreateTimeNull: Self = StObject.set(x, "createTime", null)
+    
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
     inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
+    inline def setLabelsNull: Self = StObject.set(x, "labels", null)
+    
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
+    inline def setStateNull: Self = StObject.set(x, "state", null)
+    
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

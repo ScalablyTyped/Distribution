@@ -327,7 +327,7 @@ object cssPropertiesMod {
     /**
       * Defines the list of animations that apply to the element.
       */
-    var animationName: js.UndefOr[CSSWideKeyword | String | js.Array[js.Any] | js.Any] = js.undefined
+    var animationName: js.UndefOr[CSSWideKeyword | String | js.Array[Any] | Any] = js.undefined
     
     /**
       * Defines whether an animation is running or paused.
@@ -1797,11 +1797,11 @@ object cssPropertiesMod {
       
       inline def setAnimationIterationCountUndefined: Self = StObject.set(x, "animationIterationCount", js.undefined)
       
-      inline def setAnimationName(value: CSSWideKeyword | String | js.Array[js.Any] | js.Any): Self = StObject.set(x, "animationName", value.asInstanceOf[js.Any])
+      inline def setAnimationName(value: CSSWideKeyword | String | js.Array[Any] | Any): Self = StObject.set(x, "animationName", value.asInstanceOf[js.Any])
       
       inline def setAnimationNameUndefined: Self = StObject.set(x, "animationName", js.undefined)
       
-      inline def setAnimationNameVarargs(value: js.Any*): Self = StObject.set(x, "animationName", js.Array(value :_*))
+      inline def setAnimationNameVarargs(value: Any*): Self = StObject.set(x, "animationName", js.Array(value*))
       
       inline def setAnimationPlayState(value: CSSWideKeyword | running | paused): Self = StObject.set(x, "animationPlayState", value.asInstanceOf[js.Any])
       
@@ -2209,7 +2209,7 @@ object cssPropertiesMod {
       
       inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
       
-      inline def setFontFamilyVarargs(value: (FontFamily | CSSWideKeyword)*): Self = StObject.set(x, "fontFamily", js.Array(value :_*))
+      inline def setFontFamilyVarargs(value: (FontFamily | CSSWideKeyword)*): Self = StObject.set(x, "fontFamily", js.Array(value*))
       
       inline def setFontKerning(value: CSSWideKeyword | auto | normal | none): Self = StObject.set(x, "fontKerning", value.asInstanceOf[js.Any])
       
@@ -2945,7 +2945,7 @@ object cssPropertiesMod {
           js.UndefOr[
             String | Double | CSSPropertiesComplete | (js.Array[
               js.UndefOr[
-                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 258 */ js.Any
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 258 */ Any
               ]
             ]) | CSSPropertiesLossy
           ]

@@ -17,68 +17,68 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DataBarConditionalFormatData extends StObject {
   
   /**
+    * HTML color code representing the color of the Axis line, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
+    Value is "" (an empty string) if no axis is present or set.
     *
-    * HTML color code representing the color of the Axis line, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
-    "" (empty string) if no axis is present or set.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var axisColor: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Representation of how the axis is determined for an Excel data bar.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var axisFormat: js.UndefOr[ConditionalDataBarAxisFormat | Automatic | None | CellMidPoint] = js.undefined
   
   /**
-    *
     * Specifies the direction that the data bar graphic should be based on.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var barDirection: js.UndefOr[ConditionalDataBarDirection | Context | LeftToRight | RightToLeft] = js.undefined
   
   /**
-    *
     * The rule for what consistutes the lower bound (and how to calculate it, if applicable) for a data bar.
     The `ConditionalDataBarRule` object must be set as a JSON object (use `x.lowerBoundRule = {...}` instead of `x.lowerBoundRule.formula = ...`).
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var lowerBoundRule: js.UndefOr[ConditionalDataBarRule] = js.undefined
   
   /**
-    *
     * Representation of all values to the left of the axis in an Excel data bar.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var negativeFormat: js.UndefOr[ConditionalDataBarNegativeFormatData] = js.undefined
   
   /**
-    *
     * Representation of all values to the right of the axis in an Excel data bar.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var positiveFormat: js.UndefOr[ConditionalDataBarPositiveFormatData] = js.undefined
   
   /**
+    * If `true`, hides the values from the cells where the data bar is applied.
     *
-    * If true, hides the values from the cells where the data bar is applied.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var showDataBarOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * The rule for what constitutes the upper bound (and how to calculate it, if applicable) for a data bar.
     The `ConditionalDataBarRule` object must be set as a JSON object (use `x.upperBoundRule = {...}` instead of `x.upperBoundRule.formula = ...`).
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var upperBoundRule: js.UndefOr[ConditionalDataBarRule] = js.undefined

@@ -10,10 +10,10 @@ The lodash method `_.partial` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.partial |
 | Keywords           | lodash-modularized, partial |
-| # releases         | 0 |
-| # dependents       | 79 |
-| # downloads        | 7870206 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 490421.3333333333 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

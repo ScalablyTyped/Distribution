@@ -20,9 +20,9 @@ trait Conversation extends StObject {
   
   def GetAlwaysMoveToFolder(Store: Store): Folder
   
-  def GetChildren(Item: js.Any): SimpleItems
+  def GetChildren(Item: Any): SimpleItems
   
-  def GetParent(Item: js.Any): js.Any
+  def GetParent(Item: Any): Any
   
   def GetRootItems(): SimpleItems
   
@@ -35,7 +35,7 @@ trait Conversation extends StObject {
   /* private */ @JSName("Outlook.Conversation_typekey")
   var OutlookDotConversation_typekey: Conversation
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Session: NameSpace
   
@@ -59,14 +59,14 @@ object Conversation {
     GetAlwaysAssignCategories: Store => String,
     GetAlwaysDelete: Store => OlAlwaysDeleteConversation,
     GetAlwaysMoveToFolder: Store => Folder,
-    GetChildren: js.Any => SimpleItems,
-    GetParent: js.Any => js.Any,
+    GetChildren: Any => SimpleItems,
+    GetParent: Any => Any,
     GetRootItems: () => SimpleItems,
     GetTable: () => Table,
     MarkAsRead: () => Unit,
     MarkAsUnread: () => Unit,
     OutlookDotConversation_typekey: Conversation,
-    Parent: js.Any,
+    Parent: Any,
     Session: NameSpace,
     SetAlwaysAssignCategories: (String, Store) => Unit,
     SetAlwaysDelete: (OlAlwaysDeleteConversation, Store) => Unit,
@@ -95,9 +95,9 @@ object Conversation {
     
     inline def setGetAlwaysMoveToFolder(value: Store => Folder): Self = StObject.set(x, "GetAlwaysMoveToFolder", js.Any.fromFunction1(value))
     
-    inline def setGetChildren(value: js.Any => SimpleItems): Self = StObject.set(x, "GetChildren", js.Any.fromFunction1(value))
+    inline def setGetChildren(value: Any => SimpleItems): Self = StObject.set(x, "GetChildren", js.Any.fromFunction1(value))
     
-    inline def setGetParent(value: js.Any => js.Any): Self = StObject.set(x, "GetParent", js.Any.fromFunction1(value))
+    inline def setGetParent(value: Any => Any): Self = StObject.set(x, "GetParent", js.Any.fromFunction1(value))
     
     inline def setGetRootItems(value: () => SimpleItems): Self = StObject.set(x, "GetRootItems", js.Any.fromFunction0(value))
     
@@ -109,7 +109,7 @@ object Conversation {
     
     inline def setOutlookDotConversation_typekey(value: Conversation): Self = StObject.set(x, "Outlook.Conversation_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     

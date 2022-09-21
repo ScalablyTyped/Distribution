@@ -1,6 +1,5 @@
 package typings.webgl2
 
-import typings.std.WebGLObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("WebGL2RenderingContext")
   @js.native
-  class WebGL2RenderingContext ()
+  open class WebGL2RenderingContext ()
     extends StObject
        with typings.webgl2.WebGL2RenderingContext
   object WebGL2RenderingContext {
@@ -2522,35 +2521,35 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("WebGLQuery")
   @js.native
-  class WebGLQuery ()
+  open class WebGLQuery ()
     extends StObject
-       with WebGLObject
+       with typings.std.WebGLQuery
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("WebGLSampler")
   @js.native
-  class WebGLSampler ()
+  open class WebGLSampler ()
     extends StObject
-       with WebGLObject
+       with typings.std.WebGLSampler
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("WebGLSync")
   @js.native
-  class WebGLSync ()
+  open class WebGLSync ()
     extends StObject
-       with WebGLObject
+       with typings.std.WebGLSync
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("WebGLTransformFeedback")
   @js.native
-  class WebGLTransformFeedback ()
+  open class WebGLTransformFeedback ()
     extends StObject
-       with WebGLObject
+       with typings.std.WebGLTransformFeedback
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("WebGLVertexArrayObject")
   @js.native
-  class WebGLVertexArrayObject ()
+  open class WebGLVertexArrayObject ()
     extends StObject
-       with WebGLObject
+       with typings.std.WebGLVertexArrayObject
 }

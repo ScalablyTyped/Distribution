@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Next extends StObject {
   
-  def next(): js.Promise[Done | Value]
+  def next(): js.Promise[Done | Value | DoneValue]
 }
 object Next {
   
-  inline def apply(next: () => js.Promise[Done | Value]): Next = {
+  inline def apply(next: () => js.Promise[Done | Value | DoneValue]): Next = {
     val __obj = js.Dynamic.literal(next = js.Any.fromFunction0(next))
     __obj.asInstanceOf[Next]
   }
   
   extension [Self <: Next](x: Self) {
     
-    inline def setNext(value: () => js.Promise[Done | Value]): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
+    inline def setNext(value: () => js.Promise[Done | Value | DoneValue]): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
   }
 }

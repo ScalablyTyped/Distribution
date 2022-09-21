@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AwsRdsDbInstanceAssociatedRole extends StObject {
   
   /**
-    * The name of the feature associated with the IAM)role.
+    * The name of the feature associated with the IAM role.
     */
   var FeatureName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the IAM role that is associated with the DB instance.
+    * The ARN of the IAM role that is associated with the DB instance.
     */
   var RoleArn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * Describes the state of the association between the IAM role and the DB instance. The Status property returns one of the following values:    ACTIVE - The IAM role ARN is associated with the DB instance and can be used to access other AWS services on your behalf.    PENDING - The IAM role ARN is being associated with the DB instance.    INVALID - The IAM role ARN is associated with the DB instance. But the DB instance is unable to assume the IAM role in order to access other AWS services on your behalf.   
+    * Describes the state of the association between the IAM role and the DB instance. The Status property returns one of the following values:    ACTIVE - The IAM role ARN is associated with the DB instance and can be used to access other Amazon Web Services services on your behalf.    PENDING - The IAM role ARN is being associated with the DB instance.    INVALID - The IAM role ARN is associated with the DB instance. But the DB instance is unable to assume the IAM role in order to access other Amazon Web Services services on your behalf.   
     */
   var Status: js.UndefOr[NonEmptyString] = js.undefined
 }

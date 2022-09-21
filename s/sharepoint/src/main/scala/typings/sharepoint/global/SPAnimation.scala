@@ -81,7 +81,7 @@ object SPAnimation {
   
   @JSGlobal("SPAnimation.Object")
   @js.native
-  class Object protected ()
+  open class Object protected ()
     extends StObject
        with typings.sharepoint.SPAnimation.Object {
     def this(
@@ -101,22 +101,22 @@ object SPAnimation {
       delay: Double,
       element: js.Array[HTMLElement],
       finalState: typings.sharepoint.SPAnimation.State,
-      finishFunc: js.Function1[/* data */ js.Any, Unit]
+      finishFunc: js.Function1[/* data */ Any, Unit]
     ) = this()
     def this(
       animationID: ID,
       delay: Double,
       element: HTMLElement,
       finalState: typings.sharepoint.SPAnimation.State,
-      finishFunc: js.Function1[/* data */ js.Any, Unit]
+      finishFunc: js.Function1[/* data */ Any, Unit]
     ) = this()
     def this(
       animationID: ID,
       delay: Double,
       element: js.Array[HTMLElement],
       finalState: typings.sharepoint.SPAnimation.State,
-      finishFunc: js.Function1[/* data */ js.Any, Unit],
-      data: js.Any
+      finishFunc: js.Function1[/* data */ Any, Unit],
+      data: Any
     ) = this()
     def this(
       animationID: ID,
@@ -124,15 +124,15 @@ object SPAnimation {
       element: js.Array[HTMLElement],
       finalState: typings.sharepoint.SPAnimation.State,
       finishFunc: Unit,
-      data: js.Any
+      data: Any
     ) = this()
     def this(
       animationID: ID,
       delay: Double,
       element: HTMLElement,
       finalState: typings.sharepoint.SPAnimation.State,
-      finishFunc: js.Function1[/* data */ js.Any, Unit],
-      data: js.Any
+      finishFunc: js.Function1[/* data */ Any, Unit],
+      data: Any
     ) = this()
     def this(
       animationID: ID,
@@ -140,7 +140,7 @@ object SPAnimation {
       element: HTMLElement,
       finalState: typings.sharepoint.SPAnimation.State,
       finishFunc: Unit,
-      data: js.Any
+      data: Any
     ) = this()
     
     /* CompleteClass */
@@ -149,7 +149,7 @@ object SPAnimation {
   
   @JSGlobal("SPAnimation.Settings")
   @js.native
-  class Settings ()
+  open class Settings ()
     extends StObject
        with typings.sharepoint.SPAnimation.Settings
   object Settings {
@@ -170,7 +170,7 @@ object SPAnimation {
   
   @JSGlobal("SPAnimation.State")
   @js.native
-  class State ()
+  open class State ()
     extends StObject
        with typings.sharepoint.SPAnimation.State {
     

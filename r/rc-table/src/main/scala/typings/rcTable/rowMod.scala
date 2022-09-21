@@ -13,7 +13,7 @@ object rowMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(props: FooterRowProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(hasChildrenProps: FooterRowProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasChildrenProps.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait FooterRowProps extends StObject {
     

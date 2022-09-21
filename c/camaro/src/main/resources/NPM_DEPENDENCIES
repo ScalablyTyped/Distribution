@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "camaro" : "6.0.4"
+      "camaro" : "6.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "camaro" : "6.0.4"
+      "camaro" : "6.2.0"
     }
   ],
   "compile-devDependencies" : [

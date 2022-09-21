@@ -27,6 +27,6 @@ object ChartSourceRange {
     
     inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
-    inline def setSourcesVarargs(value: GridRange*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: GridRange*): Self = StObject.set(x, "sources", js.Array(value*))
   }
 }

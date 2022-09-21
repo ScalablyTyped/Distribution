@@ -15,13 +15,13 @@ object domEventHandlerMod {
   @js.native
   abstract class DomEventHandler () extends EventHandler {
     
-    /* protected */ def addEngineHandler(eventName: EEventName, handler: js.Function): js.Any = js.native
+    /* protected */ def addEngineHandler(eventName: EEventName, handler: js.Function): Any = js.native
     
-    /* protected */ def buildDomHandler(dom: HTMLElement, eventName: EEventName): js.Function1[/* event */ js.Any, js.Any] = js.native
+    /* protected */ def buildDomHandler(dom: HTMLElement, eventName: EEventName): js.Function1[/* event */ Any, Any] = js.native
     
     /* protected */ def clearHandler(): Unit = js.native
     
-    /* protected */ def createEventData(): js.Any = js.native
+    /* protected */ def createEventData(): Any = js.native
     
     /* protected */ def getDefaultDom(): HTMLElement = js.native
     
@@ -36,6 +36,6 @@ object domEventHandlerMod {
     def trigger(dom: HTMLElement, event: Event): Unit = js.native
     def trigger(event: Event): Unit = js.native
     
-    /* protected */ def triggerDomEvent(dom: HTMLElement, event: IEventData, eventName: EEventName): js.Any = js.native
+    /* protected */ def triggerDomEvent(dom: HTMLElement, event: IEventData, eventName: EEventName): Any = js.native
   }
 }

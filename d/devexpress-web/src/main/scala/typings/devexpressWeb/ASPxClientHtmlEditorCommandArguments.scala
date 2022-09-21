@@ -12,17 +12,17 @@ trait ASPxClientHtmlEditorCommandArguments extends StObject {
   /**
     * Gets the currently selected element in the ASPxHtmlEditor.
     */
-  var selectedElement: js.Any
+  var selectedElement: Any
 }
 object ASPxClientHtmlEditorCommandArguments {
   
-  inline def apply(selectedElement: js.Any): ASPxClientHtmlEditorCommandArguments = {
+  inline def apply(selectedElement: Any): ASPxClientHtmlEditorCommandArguments = {
     val __obj = js.Dynamic.literal(selectedElement = selectedElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientHtmlEditorCommandArguments]
   }
   
   extension [Self <: ASPxClientHtmlEditorCommandArguments](x: Self) {
     
-    inline def setSelectedElement(value: js.Any): Self = StObject.set(x, "selectedElement", value.asInstanceOf[js.Any])
+    inline def setSelectedElement(value: Any): Self = StObject.set(x, "selectedElement", value.asInstanceOf[js.Any])
   }
 }

@@ -24,6 +24,6 @@ object DescribeApplicationsMessage {
     
     inline def setApplicationNamesUndefined: Self = StObject.set(x, "ApplicationNames", js.undefined)
     
-    inline def setApplicationNamesVarargs(value: ApplicationName*): Self = StObject.set(x, "ApplicationNames", js.Array(value :_*))
+    inline def setApplicationNamesVarargs(value: ApplicationName*): Self = StObject.set(x, "ApplicationNames", js.Array(value*))
   }
 }

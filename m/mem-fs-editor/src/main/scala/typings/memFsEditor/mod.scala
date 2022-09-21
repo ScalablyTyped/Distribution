@@ -7,10 +7,10 @@ import typings.jsonSchema.mod.JSONSchema7Type
 import typings.memFs.mod.Store
 import typings.memFsEditor.memFsEditorBooleans.`false`
 import typings.memFsEditor.memFsEditorBooleans.`true`
-import typings.node.Buffer
-import typings.node.NodeJS.ReadableStream
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Transform
 import typings.std.Exclude
+import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,7 +50,7 @@ object mod {
   
   //#endregion
   //#region Editor#commit
-  type CommitCallback = js.Function1[/* err */ js.Any, Unit]
+  type CommitCallback = js.Function1[/* err */ Any, Unit]
   
   trait CopyOptions
     extends StObject
@@ -117,10 +117,10 @@ object mod {
     
     def exists(filepath: String): Boolean = js.native
     
-    def extendJSON(filepath: String, contents: js.Any): Unit = js.native
-    def extendJSON(filepath: String, contents: js.Any, replacer: Unit, space: WriteJsonSpace): Unit = js.native
-    def extendJSON(filepath: String, contents: js.Any, replacer: WriteJsonReplacer): Unit = js.native
-    def extendJSON(filepath: String, contents: js.Any, replacer: WriteJsonReplacer, space: WriteJsonSpace): Unit = js.native
+    def extendJSON(filepath: String, contents: Any): Unit = js.native
+    def extendJSON(filepath: String, contents: Any, replacer: Unit, space: WriteJsonSpace): Unit = js.native
+    def extendJSON(filepath: String, contents: Any, replacer: WriteJsonReplacer): Unit = js.native
+    def extendJSON(filepath: String, contents: Any, replacer: WriteJsonReplacer, space: WriteJsonSpace): Unit = js.native
     
     def move(from: FilePaths, to: String): Unit = js.native
     def move(from: FilePaths, to: String, options: WithGlobOptions): Unit = js.native
@@ -134,17 +134,17 @@ object mod {
     
     def write(filepath: String, contents: WriteContents): String = js.native
     
-    def writeJSON(filepath: String, contents: js.Any): String = js.native
-    def writeJSON(filepath: String, contents: js.Any, replacer: Unit, space: WriteJsonSpace): String = js.native
-    def writeJSON(filepath: String, contents: js.Any, replacer: WriteJsonReplacer): String = js.native
-    def writeJSON(filepath: String, contents: js.Any, replacer: WriteJsonReplacer, space: WriteJsonSpace): String = js.native
+    def writeJSON(filepath: String, contents: Any): String = js.native
+    def writeJSON(filepath: String, contents: Any, replacer: Unit, space: WriteJsonSpace): String = js.native
+    def writeJSON(filepath: String, contents: Any, replacer: WriteJsonReplacer): String = js.native
+    def writeJSON(filepath: String, contents: Any, replacer: WriteJsonReplacer, space: WriteJsonSpace): String = js.native
   }
   
   type FilePaths = String | js.Array[String]
   
   type ProcessingFunction = js.Function2[/* contents */ Buffer, /* path */ String, WriteContents]
   
-  type ReadRawContents = Exclude[Buffer | ReadableStream | Null, Null]
+  type ReadRawContents = Exclude[Buffer | ReadableStream[Any] | Null, Null]
   
   trait ReadRawOptions extends StObject {
     
@@ -221,7 +221,7 @@ object mod {
   
   //#endregion
   //#region Editor#writeJSON
-  type WriteJsonReplacer = (js.Function2[/* key */ String, /* value */ js.Any, js.Any]) | (js.Array[String | Double])
+  type WriteJsonReplacer = (js.Function2[/* key */ String, /* value */ Any, Any]) | (js.Array[String | Double])
   
   type WriteJsonSpace = Double | String
 }

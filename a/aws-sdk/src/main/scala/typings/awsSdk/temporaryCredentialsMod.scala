@@ -16,7 +16,7 @@ object temporaryCredentialsMod {
     * Creates a new temporary credentials object.
     * @param {Object} options - a map of options that are passed to the AWS.STS.assumeRole() or AWS.STS.getSessionToken() operations. If a RoleArn parameter is passed in, credentials will be based on the IAM role.
     */
-  class TemporaryCredentials () extends Credentials {
+  open class TemporaryCredentials () extends Credentials {
     /**
       * Creates a new temporary credentials object.
       * @param {Object} options - a map of options that are passed to the AWS.STS.assumeRole() or AWS.STS.getSessionToken() operations. If a RoleArn parameter is passed in, credentials will be based on the IAM role.

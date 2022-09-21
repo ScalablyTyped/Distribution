@@ -8,7 +8,6 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.number
 import typings.devtoolsProtocol.devtoolsProtocolStrings.string
 import typings.devtoolsProtocol.devtoolsProtocolStrings.symbol
 import typings.devtoolsProtocol.devtoolsProtocolStrings.undefined
-import typings.devtoolsProtocol.devtoolsProtocolStrings.wasm
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +21,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.boolean
   - typings.devtoolsProtocol.devtoolsProtocolStrings.symbol
   - typings.devtoolsProtocol.devtoolsProtocolStrings.bigint
-  - typings.devtoolsProtocol.devtoolsProtocolStrings.wasm
 */
 trait RemoteObjectType extends StObject
 object RemoteObjectType {
@@ -42,6 +40,4 @@ object RemoteObjectType {
   inline def Symbol: symbol = "symbol".asInstanceOf[symbol]
   
   inline def Undefined: undefined = "undefined".asInstanceOf[undefined]
-  
-  inline def Wasm: wasm = "wasm".asInstanceOf[wasm]
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("AppointmentPropertyNames")
 @js.native
-class AppointmentPropertyNames ()
+open class AppointmentPropertyNames ()
   extends StObject
      with typings.devexpressWeb.AppointmentPropertyNames {
   

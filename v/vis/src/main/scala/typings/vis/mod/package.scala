@@ -1,105 +1,97 @@
 package typings.vis.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.moment.mod.Moment
+import typings.moment.mod.MomentFormatSpecification
+import typings.moment.mod.MomentInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type DataGroupCollectionType = js.Array[typings.vis.mod.DataGroup] | typings.vis.mod.DataSet[typings.vis.mod.DataGroup] | typings.vis.mod.DataView[typings.vis.mod.DataGroup]
+type DataGroupCollectionType = js.Array[DataGroup] | DataSet[DataGroup] | DataView[DataGroup]
 
-type DataItemCollectionType = js.Array[typings.vis.mod.DataItem] | typings.vis.mod.DataSet[typings.vis.mod.DataItem] | typings.vis.mod.DataView[typings.vis.mod.DataItem]
+type DataItemCollectionType = js.Array[DataItem] | DataSet[DataItem] | DataView[DataItem]
 
-type DateType = typings.std.Date | scala.Double | java.lang.String
+type DateType = js.Date | Double | String
 
-type Graph2dLegendOption = scala.Boolean | typings.vis.mod.LegendOptions
+type Graph2dLegendOption = Boolean | LegendOptions
 
-type Graph2dOptionBarChart = scala.Double | typings.vis.mod.Graph2dBarChartOption
+type Graph2dOptionBarChart = Double | Graph2dBarChartOption
 
-type Graph2dOptionDataAxis = scala.Boolean | typings.vis.mod.Graph2dDataAxisOption
+type Graph2dOptionDataAxis = Boolean | Graph2dDataAxisOption
 
-type Graph2dOptionDrawPoints = scala.Boolean | typings.vis.mod.Graph2dDrawPointsOption
+type Graph2dOptionDrawPoints = Boolean | Graph2dDrawPointsOption
 
-type HeightWidthType = typings.vis.mod.IdType
+type HeightWidthType = IdType
 
-type IdType = java.lang.String | scala.Double
+type IdType = String | Double
 
-type MomentConstructor = typings.vis.mod.MomentConstructor1 | typings.vis.mod.MomentConstructor2
+type MomentConstructor = MomentConstructor1 | MomentConstructor2
 
 type MomentConstructor1 = js.Function3[
-/* inp */ js.UndefOr[typings.moment.mod.MomentInput], 
-/* format */ js.UndefOr[typings.moment.mod.MomentFormatSpecification], 
-/* strict */ js.UndefOr[scala.Boolean], 
-typings.moment.mod.Moment]
+/* inp */ js.UndefOr[MomentInput], 
+/* format */ js.UndefOr[MomentFormatSpecification], 
+/* strict */ js.UndefOr[Boolean], 
+Moment]
 
 type MomentConstructor2 = js.Function4[
-/* inp */ js.UndefOr[typings.moment.mod.MomentInput], 
-/* format */ js.UndefOr[typings.moment.mod.MomentFormatSpecification], 
-/* language */ js.UndefOr[java.lang.String], 
-/* strict */ js.UndefOr[scala.Boolean], 
-typings.moment.mod.Moment]
+/* inp */ js.UndefOr[MomentInput], 
+/* format */ js.UndefOr[MomentFormatSpecification], 
+/* language */ js.UndefOr[String], 
+/* strict */ js.UndefOr[Boolean], 
+Moment]
 
-type SubGroupStackOptions = org.scalablytyped.runtime.StringDictionary[scala.Boolean]
+type SubGroupStackOptions = StringDictionary[Boolean]
 
-type SubgroupType = typings.vis.mod.IdType
+type SubgroupType = IdType
 
-type TimelineAnimationType = scala.Boolean | typings.vis.mod.AnimationOptions
+type TimelineAnimationType = Boolean | AnimationOptions
 
-type TimelineFormatLabelsFunction = js.Function3[
-/* date */ typings.std.Date, 
-/* scale */ java.lang.String, 
-/* step */ scala.Double, 
-java.lang.String]
+type TimelineFormatLabelsFunction = js.Function3[/* date */ js.Date, /* scale */ String, /* step */ Double, String]
 
-type TimelineItemEditableType = scala.Boolean | typings.vis.mod.TimelineItemEditableOption
+type TimelineItemEditableType = Boolean | TimelineItemEditableOption
 
-type TimelineMarginItemType = scala.Double | typings.vis.mod.TimelineMarginItem
+type TimelineMarginItemType = Double | TimelineMarginItem
 
-type TimelineOptionsComparisonFunction = js.Function2[/* a */ js.Any, /* b */ js.Any, scala.Double]
+type TimelineOptionsComparisonFunction = js.Function2[/* a */ Any, /* b */ Any, Double]
 
-type TimelineOptionsConfigureFunction = js.Function2[/* option */ java.lang.String, /* path */ js.Array[java.lang.String], scala.Boolean]
+type TimelineOptionsConfigureFunction = js.Function2[/* option */ String, /* path */ js.Array[String], Boolean]
 
-type TimelineOptionsConfigureType = scala.Boolean | typings.vis.mod.TimelineOptionsConfigureFunction
+type TimelineOptionsConfigureType = Boolean | TimelineOptionsConfigureFunction
 
-type TimelineOptionsDataAttributesType = scala.Boolean | java.lang.String | js.Array[java.lang.String]
+type TimelineOptionsDataAttributesType = Boolean | String | js.Array[String]
 
-type TimelineOptionsEditableType = scala.Boolean | typings.vis.mod.TimelineEditableOption
+type TimelineOptionsEditableType = Boolean | TimelineEditableOption
 
 type TimelineOptionsGroupCallbackFunction = js.Function2[
-/* group */ typings.vis.mod.TimelineGroup, 
-/* callback */ js.Function1[/* group */ typings.vis.mod.TimelineGroup | scala.Null, scala.Unit], 
-scala.Unit]
+/* group */ TimelineGroup, 
+/* callback */ js.Function1[/* group */ TimelineGroup | Null, Unit], 
+Unit]
 
-type TimelineOptionsGroupEditableType = scala.Boolean | typings.vis.mod.TimelineGroupEditableOption
+type TimelineOptionsGroupEditableType = Boolean | TimelineGroupEditableOption
 
-type TimelineOptionsGroupOrderSwapFunction = js.Function3[
-/* fromGroup */ js.Any, 
-/* toGroup */ js.Any, 
-/* groups */ typings.vis.mod.DataSet[typings.vis.mod.DataGroup], 
-scala.Unit]
+type TimelineOptionsGroupOrderSwapFunction = js.Function3[/* fromGroup */ Any, /* toGroup */ Any, /* groups */ DataSet[DataGroup], Unit]
 
-type TimelineOptionsGroupOrderType = java.lang.String | typings.vis.mod.TimelineOptionsComparisonFunction
+type TimelineOptionsGroupOrderType = String | TimelineOptionsComparisonFunction
 
-type TimelineOptionsHiddenDatesType = typings.vis.mod.TimelineHiddenDateOption | js.Array[typings.vis.mod.TimelineHiddenDateOption]
+type TimelineOptionsHiddenDatesType = TimelineHiddenDateOption | js.Array[TimelineHiddenDateOption]
 
 type TimelineOptionsItemCallbackFunction = js.Function2[
-/* item */ typings.vis.mod.TimelineItem, 
-/* callback */ js.Function1[/* item */ typings.vis.mod.TimelineItem | scala.Null, scala.Unit], 
-scala.Unit]
+/* item */ TimelineItem, 
+/* callback */ js.Function1[/* item */ TimelineItem | Null, Unit], 
+Unit]
 
-type TimelineOptionsItemsAlwaysDraggableType = scala.Boolean | typings.vis.mod.TimelineItemsAlwaysDraggableOption
+type TimelineOptionsItemsAlwaysDraggableType = Boolean | TimelineItemsAlwaysDraggableOption
 
-type TimelineOptionsMarginType = scala.Double | typings.vis.mod.TimelineMarginOption
+type TimelineOptionsMarginType = Double | TimelineMarginOption
 
-type TimelineOptionsOrientationType = java.lang.String | typings.vis.mod.TimelineOrientationOption
+type TimelineOptionsOrientationType = String | TimelineOrientationOption
 
-type TimelineOptionsSnapFunction = js.Function3[
-/* date */ typings.std.Date, 
-/* scale */ java.lang.String, 
-/* step */ scala.Double, 
-typings.std.Date | scala.Double]
+type TimelineOptionsSnapFunction = js.Function3[/* date */ js.Date, /* scale */ String, /* step */ Double, js.Date | Double]
 
 type TimelineOptionsTemplateFunction = js.Function3[
-/* item */ js.UndefOr[js.Any], 
-/* element */ js.UndefOr[js.Any], 
-/* data */ js.UndefOr[js.Any], 
-java.lang.String]
+/* item */ js.UndefOr[Any], 
+/* element */ js.UndefOr[Any], 
+/* data */ js.UndefOr[Any], 
+String]

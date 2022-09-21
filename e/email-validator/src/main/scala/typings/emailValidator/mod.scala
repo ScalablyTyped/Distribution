@@ -14,5 +14,5 @@ object mod {
   
   inline def validateAsync(email: String, callback: AsyncCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validate_async")(email.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  type AsyncCallback = js.Function2[/* err */ js.Any, /* isValideEmail */ Boolean, js.Any]
+  type AsyncCallback = js.Function2[/* err */ Any, /* isValideEmail */ Boolean, Any]
 }

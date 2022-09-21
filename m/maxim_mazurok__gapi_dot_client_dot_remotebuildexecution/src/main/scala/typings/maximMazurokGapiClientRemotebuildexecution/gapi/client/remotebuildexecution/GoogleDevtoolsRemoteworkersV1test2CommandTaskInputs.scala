@@ -48,25 +48,25 @@ object GoogleDevtoolsRemoteworkersV1test2CommandTaskInputs {
     
     inline def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
     
-    inline def setArgumentsVarargs(value: String*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+    inline def setArgumentsVarargs(value: String*): Self = StObject.set(x, "arguments", js.Array(value*))
     
     inline def setEnvironmentVariables(value: js.Array[GoogleDevtoolsRemoteworkersV1test2CommandTaskInputsEnvironmentVariable]): Self = StObject.set(x, "environmentVariables", value.asInstanceOf[js.Any])
     
     inline def setEnvironmentVariablesUndefined: Self = StObject.set(x, "environmentVariables", js.undefined)
     
-    inline def setEnvironmentVariablesVarargs(value: GoogleDevtoolsRemoteworkersV1test2CommandTaskInputsEnvironmentVariable*): Self = StObject.set(x, "environmentVariables", js.Array(value :_*))
+    inline def setEnvironmentVariablesVarargs(value: GoogleDevtoolsRemoteworkersV1test2CommandTaskInputsEnvironmentVariable*): Self = StObject.set(x, "environmentVariables", js.Array(value*))
     
     inline def setFiles(value: js.Array[GoogleDevtoolsRemoteworkersV1test2Digest]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    inline def setFilesVarargs(value: GoogleDevtoolsRemoteworkersV1test2Digest*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: GoogleDevtoolsRemoteworkersV1test2Digest*): Self = StObject.set(x, "files", js.Array(value*))
     
     inline def setInlineBlobs(value: js.Array[GoogleDevtoolsRemoteworkersV1test2Blob]): Self = StObject.set(x, "inlineBlobs", value.asInstanceOf[js.Any])
     
     inline def setInlineBlobsUndefined: Self = StObject.set(x, "inlineBlobs", js.undefined)
     
-    inline def setInlineBlobsVarargs(value: GoogleDevtoolsRemoteworkersV1test2Blob*): Self = StObject.set(x, "inlineBlobs", js.Array(value :_*))
+    inline def setInlineBlobsVarargs(value: GoogleDevtoolsRemoteworkersV1test2Blob*): Self = StObject.set(x, "inlineBlobs", js.Array(value*))
     
     inline def setWorkingDirectory(value: String): Self = StObject.set(x, "workingDirectory", value.asInstanceOf[js.Any])
     

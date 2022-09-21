@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("couchbase", "SearchSort")
 @js.native
-class SearchSort () extends StObject {
+open class SearchSort () extends StObject {
   
   /**
     * Specifies whether to sort descending or not.
@@ -21,7 +21,7 @@ object SearchSort {
   
   @JSImport("couchbase", "SearchSort.FieldSort")
   @js.native
-  class FieldSort () extends SearchSort {
+  open class FieldSort () extends SearchSort {
     
     def missing(missing: String): this.type = js.native
     
@@ -32,18 +32,18 @@ object SearchSort {
   
   @JSImport("couchbase", "SearchSort.GeoDistanceSort")
   @js.native
-  class GeoDistanceSort () extends SearchSort {
+  open class GeoDistanceSort () extends SearchSort {
     
     def unit(unit: String): this.type = js.native
   }
   
   @JSImport("couchbase", "SearchSort.IdSort")
   @js.native
-  class IdSort () extends SearchSort
+  open class IdSort () extends SearchSort
   
   @JSImport("couchbase", "SearchSort.ScoreSort")
   @js.native
-  class ScoreSort () extends SearchSort
+  open class ScoreSort () extends SearchSort
   
   inline def field(field: String): FieldSort = ^.asInstanceOf[js.Dynamic].applyDynamic("field")(field.asInstanceOf[js.Any]).asInstanceOf[FieldSort]
   

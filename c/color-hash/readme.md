@@ -4,16 +4,16 @@
 Typings are for version 1.0
 
 ## Library description:
-Generate color based on the given string (using HSL color space and BKDRHash).
+Generate color based on the given string (using HSL color space and SHA256).
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | color-hash |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 48 |
-| # downloads        | 1554835 |
-| # stars            | 3 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 295701.3333333333 |
+| # stars            | 628.0 |
 
 ## Links
 - [Homepage](https://github.com/zenozeng/color-hash#readme)

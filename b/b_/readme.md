@@ -10,10 +10,10 @@ BEM class name generator
 | ------------------ | :-------------: |
 | Full name          | b_ |
 | Keywords           | bem, naming, className, class, generator |
-| # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 229495 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 32529.666666666668 |
+| # stars            | 103.0 |
 
 ## Links
 - [Homepage](https://github.com/azproduction/b_)

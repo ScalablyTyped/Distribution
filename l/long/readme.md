@@ -1,7 +1,7 @@
 
 # Scala.js typings for long
 
-Typings are for version 4.0.0
+Typings are for version 5.2.0
 
 ## Library description:
 A Long class for representing a 64-bit two's-complement integer value.
@@ -9,11 +9,11 @@ A Long class for representing a 64-bit two's-complement integer value.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | long |
-| Keywords           | math |
-| # releases         | 0 |
-| # dependents       | 613 |
-| # downloads        | 206532160 |
-| # stars            | 23 |
+| Keywords           | math, long, int64 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 3.8863508666666664E7 |
+| # stars            | 800.0 |
 
 ## Links
 - [Homepage](https://github.com/dcodeIO/long.js#readme)
@@ -24,7 +24,7 @@ A Long class for representing a 64-bit two's-complement integer value.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

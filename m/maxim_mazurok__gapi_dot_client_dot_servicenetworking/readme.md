@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_servicenetworking
 
-Typings are for version 1.0.20201119
+Typings are for version 1.0.20220809
 
 ## Library description:
 TypeScript typings for Service Networking API v1
@@ -10,10 +10,10 @@ TypeScript typings for Service Networking API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.servicenetworking |
 | Keywords           | - |
-| # releases         | 42 |
-| # dependents       | 1 |
-| # downloads        | 2942 |
-| # stars            | 0 |
+| # releases         | 259 |
+| # dependents       | 0.0 |
+| # downloads        | 2227.3333333333335 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

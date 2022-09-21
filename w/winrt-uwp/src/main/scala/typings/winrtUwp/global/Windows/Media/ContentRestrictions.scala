@@ -73,7 +73,7 @@ object ContentRestrictions {
   /** Contains information about a piece of content. An app creates a RatedContentDescription object, for each piece of content to be used in the GetRestrictionLevelAsync and RequestContentAccessAsync methods. */
   @JSGlobal("Windows.Media.ContentRestrictions.RatedContentDescription")
   @js.native
-  class RatedContentDescription protected ()
+  open class RatedContentDescription protected ()
     extends StObject
        with typings.winrtUwp.Windows.Media.ContentRestrictions.RatedContentDescription {
     /**
@@ -109,7 +109,7 @@ object ContentRestrictions {
   @JSGlobal("Windows.Media.ContentRestrictions.RatedContentRestrictions")
   @js.native
   /** Initializes a new instance of the RatedContentRestrictions class. */
-  class RatedContentRestrictions ()
+  open class RatedContentRestrictions ()
     extends StObject
        with typings.winrtUwp.Windows.Media.ContentRestrictions.RatedContentRestrictions {
     /**

@@ -1,7 +1,7 @@
 
 # Scala.js typings for winston-transport
 
-Typings are for version 4.4.0
+Typings are for version 4.5.0
 
 ## Library description:
 Base stream implementations for winston@3 and up.
@@ -10,10 +10,10 @@ Base stream implementations for winston@3 and up.
 | ------------------ | :-------------: |
 | Full name          | winston-transport |
 | Keywords           | winston, transport, winston3 |
-| # releases         | 2 |
-| # dependents       | 341 |
-| # downloads        | 130429380 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 2.4570829666666668E7 |
+| # stars            | 48.0 |
 
 ## Links
 - [Homepage](https://github.com/winstonjs/winston-transport#readme)

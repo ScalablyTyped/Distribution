@@ -19,7 +19,7 @@ trait ListRow extends StObject {
   
   val InvalidData: Boolean
   
-  val Parent: js.Any
+  val Parent: Any
   
   def Range(Address: String): typings.activexExcel.Excel.Range
   def Range(RowIndex: Double): typings.activexExcel.Excel.Range
@@ -36,7 +36,7 @@ object ListRow {
     ExcelDotListRow_typekey: ListRow,
     Index: Double,
     InvalidData: Boolean,
-    Parent: js.Any,
+    Parent: Any,
     Range: Range
   ): ListRow = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Delete = js.Any.fromFunction0(Delete), Index = Index.asInstanceOf[js.Any], InvalidData = InvalidData.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Range = Range.asInstanceOf[js.Any])
@@ -58,7 +58,7 @@ object ListRow {
     
     inline def setInvalidData(value: Boolean): Self = StObject.set(x, "InvalidData", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
   }

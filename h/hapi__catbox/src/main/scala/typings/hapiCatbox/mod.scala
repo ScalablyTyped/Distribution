@@ -2,7 +2,6 @@ package typings.hapiCatbox
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.hapiCatbox.hapiCatboxBooleans.`false`
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ object mod {
   
   @JSImport("@hapi/catbox", "Client")
   @js.native
-  class Client[T] protected ()
+  open class Client[T] protected ()
     extends StObject
        with ClientApi[T] {
     def this(engine: EnginePrototypeOrObject) = this()
@@ -54,12 +53,12 @@ object mod {
     
     /** validateSegmentName(segment) - returns null if the segment name is valid (see below), otherwise should return an instance of Error with an appropriate message. */
     /* CompleteClass */
-    override def validateSegmentName(segment: String): Null | Error = js.native
+    override def validateSegmentName(segment: String): Null | js.Error = js.native
   }
   
   @JSImport("@hapi/catbox", "Policy")
   @js.native
-  class Policy[T, O /* <: PolicyOptionVariants[T] */] protected () extends StObject {
+  open class Policy[T, O /* <: PolicyOptionVariants[T] */] protected () extends StObject {
     def this(options: O, cache: Client[T], segment: String) = this()
     
     /**
@@ -234,7 +233,7 @@ object mod {
     def stop(): Unit
     
     /** validateSegmentName(segment) - returns null if the segment name is valid (see below), otherwise should return an instance of Error with an appropriate message. */
-    def validateSegmentName(segment: String): Null | Error
+    def validateSegmentName(segment: String): Null | js.Error
   }
   object ClientApi {
     
@@ -245,7 +244,7 @@ object mod {
       set: (CacheKey, T, Double) => js.Promise[Unit],
       start: () => js.Promise[Unit],
       stop: () => Unit,
-      validateSegmentName: String => Null | Error
+      validateSegmentName: String => Null | js.Error
     ): ClientApi[T] = {
       val __obj = js.Dynamic.literal(drop = js.Any.fromFunction1(drop), get = js.Any.fromFunction1(get), isReady = js.Any.fromFunction0(isReady), set = js.Any.fromFunction3(set), start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop), validateSegmentName = js.Any.fromFunction1(validateSegmentName))
       __obj.asInstanceOf[ClientApi[T]]
@@ -265,7 +264,7 @@ object mod {
       
       inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
       
-      inline def setValidateSegmentName(value: String => Null | Error): Self = StObject.set(x, "validateSegmentName", js.Any.fromFunction1(value))
+      inline def setValidateSegmentName(value: String => Null | js.Error): Self = StObject.set(x, "validateSegmentName", js.Any.fromFunction1(value))
     }
   }
   
@@ -346,7 +345,7 @@ object mod {
     extends StObject
        with Instantiable1[/* settings */ ClientOptions, ClientApi[T]]
   
-  type EnginePrototypeOrObject = EnginePrototype[js.Any] | ClientApi[js.Any]
+  type EnginePrototypeOrObject = EnginePrototype[Any] | ClientApi[Any]
   
   type GenerateFunc[T] = js.Function2[/* id */ Id, /* flags */ GenerateFuncFlags, js.Promise[T]]
   
@@ -405,7 +404,7 @@ object mod {
   trait PolicyGetReportLog extends StObject {
     
     /** error - lookup error. */
-    var error: js.UndefOr[Error] = js.undefined
+    var error: js.UndefOr[js.Error] = js.undefined
     
     /** isStale - true if the item is stale. */
     var isStale: Boolean
@@ -428,7 +427,7 @@ object mod {
     
     extension [Self <: PolicyGetReportLog](x: Self) {
       
-      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       

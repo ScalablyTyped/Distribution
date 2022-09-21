@@ -2,6 +2,7 @@ package typings.newman
 
 import typings.newman.anon.Assertions
 import typings.newman.anon.Http
+import typings.newman.anon.Key
 import typings.newman.anon.Ref
 import typings.newman.newmanStrings.auto
 import typings.newman.newmanStrings.failure
@@ -13,7 +14,7 @@ import typings.postmanCollection.mod.Collection
 import typings.postmanCollection.mod.CollectionDefinition
 import typings.postmanCollection.mod.VariableScope
 import typings.postmanCollection.mod.VariableScopeDefinition
-import typings.std.Error
+import typings.toughCookie.mod.CookieJar
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,11 +25,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def run(callback: js.Function2[/* err */ Error | Null, /* summary */ NewmanRunSummary, Unit]): EventEmitter = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(callback.asInstanceOf[js.Any]).asInstanceOf[EventEmitter]
+  inline def run(callback: js.Function2[/* err */ js.Error | Null, /* summary */ NewmanRunSummary, Unit]): EventEmitter = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(callback.asInstanceOf[js.Any]).asInstanceOf[EventEmitter]
   inline def run(options: NewmanRunOptions): EventEmitter = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(options.asInstanceOf[js.Any]).asInstanceOf[EventEmitter]
   inline def run(
     options: NewmanRunOptions,
-    callback: js.Function2[/* err */ Error | Null, /* summary */ NewmanRunSummary, Unit]
+    callback: js.Function2[/* err */ js.Error | Null, /* summary */ NewmanRunSummary, Unit]
   ): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
   
   trait NewmanRun extends StObject {
@@ -50,11 +51,11 @@ object mod {
       
       inline def setExecutions(value: js.Array[NewmanRunExecution]): Self = StObject.set(x, "executions", value.asInstanceOf[js.Any])
       
-      inline def setExecutionsVarargs(value: NewmanRunExecution*): Self = StObject.set(x, "executions", js.Array(value :_*))
+      inline def setExecutionsVarargs(value: NewmanRunExecution*): Self = StObject.set(x, "executions", js.Array(value*))
       
       inline def setFailures(value: js.Array[NewmanRunFailure]): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
       
-      inline def setFailuresVarargs(value: NewmanRunFailure*): Self = StObject.set(x, "failures", js.Array(value :_*))
+      inline def setFailuresVarargs(value: NewmanRunFailure*): Self = StObject.set(x, "failures", js.Array(value*))
       
       inline def setStats(value: Assertions): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     }
@@ -77,7 +78,7 @@ object mod {
       
       inline def setAssertions(value: js.Array[NewmanRunExecutionAssertion]): Self = StObject.set(x, "assertions", value.asInstanceOf[js.Any])
       
-      inline def setAssertionsVarargs(value: NewmanRunExecutionAssertion*): Self = StObject.set(x, "assertions", js.Array(value :_*))
+      inline def setAssertionsVarargs(value: NewmanRunExecutionAssertion*): Self = StObject.set(x, "assertions", js.Array(value*))
       
       inline def setItem(value: NewmanRunExecutionItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     }
@@ -163,13 +164,13 @@ object mod {
     
     var error: NewmanRunExecutionAssertionError
     
-    var parent: js.Any
+    var parent: Any
     
     var source: js.UndefOr[NewmanRunExecutionItem] = js.undefined
   }
   object NewmanRunFailure {
     
-    inline def apply(at: String, cursor: Ref | js.Object, error: NewmanRunExecutionAssertionError, parent: js.Any): NewmanRunFailure = {
+    inline def apply(at: String, cursor: Ref | js.Object, error: NewmanRunExecutionAssertionError, parent: Any): NewmanRunFailure = {
       val __obj = js.Dynamic.literal(at = at.asInstanceOf[js.Any], cursor = cursor.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
       __obj.asInstanceOf[NewmanRunFailure]
     }
@@ -182,7 +183,7 @@ object mod {
       
       inline def setError(value: NewmanRunExecutionAssertionError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      inline def setParent(value: js.Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
       inline def setSource(value: NewmanRunExecutionItem): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
@@ -218,12 +219,20 @@ object mod {
     var color: js.UndefOr[on | off | auto] = js.undefined
     
     /**
+      * A tough-cookie cookieJar / file path for the current collection run.
+      */
+    var cookieJar: js.UndefOr[String | CookieJar] = js.undefined
+    
+    /**
       * Specify the time (in milliseconds) to wait for between subsequent
       * requests.
       *
       * Default value: 0
       */
     var delayRequest: js.UndefOr[Double] = js.undefined
+    
+    /** An override to environment variables.  See: https://github.com/postmanlabs/newman/blob/develop/lib/run/options.js */
+    var envVar: js.UndefOr[Key | js.Array[Key]] = js.undefined
     
     /** An environment JSON / file path for the current collection run. */
     var environment: js.UndefOr[VariableScope | VariableScopeDefinition | String] = js.undefined
@@ -242,6 +251,9 @@ object mod {
       * be run instead of the entire collection.
       */
     var folder: js.UndefOr[String | js.Array[String]] = js.undefined
+    
+    /** An override to global variables.  See: https://github.com/postmanlabs/newman/blob/develop/lib/run/options.js */
+    var globalVar: js.UndefOr[Key | js.Array[Key]] = js.undefined
     
     /** A globals JSON / file path for the current collection run. */
     var globals: js.UndefOr[VariableScope | VariableScopeDefinition | String] = js.undefined
@@ -277,12 +289,12 @@ object mod {
       * Path to the JSON or CSV file or URL to be used as data source when
       * running multiple iterations on a collection.
       */
-    var iterationData: js.UndefOr[js.Any] = js.undefined
+    var iterationData: js.UndefOr[Any] = js.undefined
     
     /**
       * Specify options for the reporter(s) declared in options.reporters.
       */
-    var reporter: js.UndefOr[js.Any] = js.undefined
+    var reporter: js.UndefOr[Any] = js.undefined
     
     /** Available reporters: cli, json, html and junit. */
     var reporters: js.UndefOr[String | js.Array[String]] = js.undefined
@@ -298,6 +310,14 @@ object mod {
     var sslClientCert: js.UndefOr[String] = js.undefined
     
     /**
+      * The path to the client certificate configuration list file. This option
+      * takes precedence over sslClientCert, sslClientKey and
+      * sslClientPassphrase. When there is no match in this configuration list,
+      * sslClientCert is used as fallback.
+      */
+    var sslClientCertList: js.UndefOr[String | js.Array[String]] = js.undefined
+    
+    /**
       * The path to the private client key file.
       */
     var sslClientKey: js.UndefOr[String] = js.undefined
@@ -306,6 +326,12 @@ object mod {
       * The secret client key passphrase.
       */
     var sslClientPassphrase: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The path to the file, that holds one or more trusted CA certificates in
+      * PEM format.
+      */
+    var sslExtraCaCerts: js.UndefOr[String] = js.undefined
     
     /**
       * If present, allows overriding the default exit code from the current
@@ -357,7 +383,7 @@ object mod {
       
       inline def setBailUndefined: Self = StObject.set(x, "bail", js.undefined)
       
-      inline def setBailVarargs(value: (folder | failure)*): Self = StObject.set(x, "bail", js.Array(value :_*))
+      inline def setBailVarargs(value: (folder | failure)*): Self = StObject.set(x, "bail", js.Array(value*))
       
       inline def setCollection(value: Collection | CollectionDefinition | String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
       
@@ -365,9 +391,19 @@ object mod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setCookieJar(value: String | CookieJar): Self = StObject.set(x, "cookieJar", value.asInstanceOf[js.Any])
+      
+      inline def setCookieJarUndefined: Self = StObject.set(x, "cookieJar", js.undefined)
+      
       inline def setDelayRequest(value: Double): Self = StObject.set(x, "delayRequest", value.asInstanceOf[js.Any])
       
       inline def setDelayRequestUndefined: Self = StObject.set(x, "delayRequest", js.undefined)
+      
+      inline def setEnvVar(value: Key | js.Array[Key]): Self = StObject.set(x, "envVar", value.asInstanceOf[js.Any])
+      
+      inline def setEnvVarUndefined: Self = StObject.set(x, "envVar", js.undefined)
+      
+      inline def setEnvVarVarargs(value: Key*): Self = StObject.set(x, "envVar", js.Array(value*))
       
       inline def setEnvironment(value: VariableScope | VariableScopeDefinition | String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
       
@@ -389,7 +425,13 @@ object mod {
       
       inline def setFolderUndefined: Self = StObject.set(x, "folder", js.undefined)
       
-      inline def setFolderVarargs(value: String*): Self = StObject.set(x, "folder", js.Array(value :_*))
+      inline def setFolderVarargs(value: String*): Self = StObject.set(x, "folder", js.Array(value*))
+      
+      inline def setGlobalVar(value: Key | js.Array[Key]): Self = StObject.set(x, "globalVar", value.asInstanceOf[js.Any])
+      
+      inline def setGlobalVarUndefined: Self = StObject.set(x, "globalVar", js.undefined)
+      
+      inline def setGlobalVarVarargs(value: Key*): Self = StObject.set(x, "globalVar", js.Array(value*))
       
       inline def setGlobals(value: VariableScope | VariableScopeDefinition | String): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
       
@@ -411,11 +453,11 @@ object mod {
       
       inline def setIterationCountUndefined: Self = StObject.set(x, "iterationCount", js.undefined)
       
-      inline def setIterationData(value: js.Any): Self = StObject.set(x, "iterationData", value.asInstanceOf[js.Any])
+      inline def setIterationData(value: Any): Self = StObject.set(x, "iterationData", value.asInstanceOf[js.Any])
       
       inline def setIterationDataUndefined: Self = StObject.set(x, "iterationData", js.undefined)
       
-      inline def setReporter(value: js.Any): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
+      inline def setReporter(value: Any): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
       
       inline def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
       
@@ -423,13 +465,19 @@ object mod {
       
       inline def setReportersUndefined: Self = StObject.set(x, "reporters", js.undefined)
       
-      inline def setReportersVarargs(value: String*): Self = StObject.set(x, "reporters", js.Array(value :_*))
+      inline def setReportersVarargs(value: String*): Self = StObject.set(x, "reporters", js.Array(value*))
       
       inline def setRequestAgents(value: Http): Self = StObject.set(x, "requestAgents", value.asInstanceOf[js.Any])
       
       inline def setRequestAgentsUndefined: Self = StObject.set(x, "requestAgents", js.undefined)
       
       inline def setSslClientCert(value: String): Self = StObject.set(x, "sslClientCert", value.asInstanceOf[js.Any])
+      
+      inline def setSslClientCertList(value: String | js.Array[String]): Self = StObject.set(x, "sslClientCertList", value.asInstanceOf[js.Any])
+      
+      inline def setSslClientCertListUndefined: Self = StObject.set(x, "sslClientCertList", js.undefined)
+      
+      inline def setSslClientCertListVarargs(value: String*): Self = StObject.set(x, "sslClientCertList", js.Array(value*))
       
       inline def setSslClientCertUndefined: Self = StObject.set(x, "sslClientCert", js.undefined)
       
@@ -440,6 +488,10 @@ object mod {
       inline def setSslClientPassphrase(value: String): Self = StObject.set(x, "sslClientPassphrase", value.asInstanceOf[js.Any])
       
       inline def setSslClientPassphraseUndefined: Self = StObject.set(x, "sslClientPassphrase", js.undefined)
+      
+      inline def setSslExtraCaCerts(value: String): Self = StObject.set(x, "sslExtraCaCerts", value.asInstanceOf[js.Any])
+      
+      inline def setSslExtraCaCertsUndefined: Self = StObject.set(x, "sslExtraCaCerts", js.undefined)
       
       inline def setSuppressExitCode(value: Boolean): Self = StObject.set(x, "suppressExitCode", value.asInstanceOf[js.Any])
       
@@ -496,34 +548,34 @@ object mod {
   
   trait NewmanRunSummary extends StObject {
     
-    var collection: js.Any
+    var collection: Any
     
-    var environment: js.Any
+    var environment: Any
     
-    var error: js.UndefOr[js.Any] = js.undefined
+    var error: js.UndefOr[Any] = js.undefined
     
-    var globals: js.Any
+    var globals: Any
     
     var run: NewmanRun
   }
   object NewmanRunSummary {
     
-    inline def apply(collection: js.Any, environment: js.Any, globals: js.Any, run: NewmanRun): NewmanRunSummary = {
+    inline def apply(collection: Any, environment: Any, globals: Any, run: NewmanRun): NewmanRunSummary = {
       val __obj = js.Dynamic.literal(collection = collection.asInstanceOf[js.Any], environment = environment.asInstanceOf[js.Any], globals = globals.asInstanceOf[js.Any], run = run.asInstanceOf[js.Any])
       __obj.asInstanceOf[NewmanRunSummary]
     }
     
     extension [Self <: NewmanRunSummary](x: Self) {
       
-      inline def setCollection(value: js.Any): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+      inline def setCollection(value: Any): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
       
-      inline def setEnvironment(value: js.Any): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+      inline def setEnvironment(value: Any): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
       
-      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      inline def setGlobals(value: js.Any): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
+      inline def setGlobals(value: Any): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
       
       inline def setRun(value: NewmanRun): Self = StObject.set(x, "run", value.asInstanceOf[js.Any])
     }

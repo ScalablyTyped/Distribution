@@ -11,7 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChainElement extends StObject
 object ChainElement {
   
-  inline def MemberExpression(computed: Boolean, `object`: Expression | Super, optional: Boolean, property: Expression): typings.estree.mod.MemberExpression = {
+  inline def MemberExpression(
+    computed: Boolean,
+    `object`: Expression | Super,
+    optional: Boolean,
+    property: Expression | PrivateIdentifier
+  ): typings.estree.mod.MemberExpression = {
     val __obj = js.Dynamic.literal(computed = computed.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("MemberExpression")

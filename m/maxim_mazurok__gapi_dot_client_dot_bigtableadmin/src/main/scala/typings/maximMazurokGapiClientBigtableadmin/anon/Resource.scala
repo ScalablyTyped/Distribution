@@ -41,6 +41,9 @@ trait Resource extends StObject {
   /** Request body */
   var resource: Cluster
   
+  /** Required. The subset of Cluster fields which should be replaced. */
+  var updateMask: js.UndefOr[String] = js.undefined
+  
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
   
@@ -95,6 +98,10 @@ object Resource {
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
     inline def setResource(value: Cluster): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

@@ -9,10 +9,10 @@ object global {
   
   @JSGlobal("EasyScroller")
   @js.native
-  class EasyScroller protected ()
+  open class EasyScroller protected ()
     extends StObject
        with typings.scroller.EasyScroller {
-    def this(content: js.Any, options: Options) = this()
+    def this(content: Any, options: Options) = this()
     
     /* CompleteClass */
     override def bindEvents(): Unit = js.native
@@ -26,7 +26,7 @@ object global {
   
   @JSGlobal("Scroller")
   @js.native
-  class Scroller protected ()
+  open class Scroller protected ()
     extends StObject
        with typings.scroller.Scroller {
     def this(callback: js.Function3[/* left */ Double, /* top */ Double, /* zoom */ Double, Unit]) = this()

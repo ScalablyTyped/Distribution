@@ -3,10 +3,25 @@ package typings.pica
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Shortcut
+import typings.pica.picaNumbers.`0`
+import typings.pica.picaNumbers.`1`
+import typings.pica.picaNumbers.`2`
+import typings.pica.picaNumbers.`3`
+import typings.pica.picaStrings.all
+import typings.pica.picaStrings.box
+import typings.pica.picaStrings.cib
+import typings.pica.picaStrings.hamming
+import typings.pica.picaStrings.js_
+import typings.pica.picaStrings.lanczos2
+import typings.pica.picaStrings.lanczos3
+import typings.pica.picaStrings.mks2013
+import typings.pica.picaStrings.wasm
+import typings.pica.picaStrings.ww
 import typings.std.Blob
 import typings.std.File
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
+import typings.std.ImageBitmap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +31,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("pica", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Pica {
     def this(config: PicaOptions) = this()
@@ -43,13 +58,15 @@ object mod extends Shortcut {
     def resize(from: HTMLCanvasElement, to: HTMLCanvasElement, options: PicaResizeOptions): js.Promise[HTMLCanvasElement] = js.native
     def resize(from: HTMLImageElement, to: HTMLCanvasElement): js.Promise[HTMLCanvasElement] = js.native
     def resize(from: HTMLImageElement, to: HTMLCanvasElement, options: PicaResizeOptions): js.Promise[HTMLCanvasElement] = js.native
+    def resize(from: ImageBitmap, to: HTMLCanvasElement): js.Promise[HTMLCanvasElement] = js.native
+    def resize(from: ImageBitmap, to: HTMLCanvasElement, options: PicaResizeOptions): js.Promise[HTMLCanvasElement] = js.native
     
     /**
       * Supplementary method, not recommended for direct use.
       * Resize Uint8Array with raw RGBA bitmap (don't confuse with jpeg / png / ... binaries).
       * It does not use tiles & webworkers. Left for special cases when you really need to process raw binary data (for example, if you decode jpeg files "manually").
       */
-    def resizeBuffer(options: PicaResizeBufferOptions): js.Promise[js.Array[Double]] = js.native
+    def resizeBuffer(options: PicaResizeBufferOptions): js.Promise[js.typedarray.Uint8Array] = js.native
     
     /**
       * Convenience method, similar to canvas.toBlob(), but with promise interface & polyfill for old browsers.
@@ -60,20 +77,45 @@ object mod extends Shortcut {
   
   trait PicaOptions extends StObject {
     
-    // max webworkers pool size. Default is autodetected CPU count, but not more than 4.
+    /**
+      * max webworkers pool size.
+      *
+      * Default is autodetected CPU count, but not more than 4.
+      */
     var concurrency: js.UndefOr[Double] = js.undefined
     
-    // list of features to use.
-    // Default is [ 'js', 'wasm', 'ww' ]. Can be [ 'js', 'wasm', 'cib', 'ww' ] or [ 'all' ].
-    // Note, resize via createImageBitmap() ('cib') disabled by default due problems with quality.
-    var features: js.UndefOr[js.Array[String]] = js.undefined
+    /**
+      * function which returns a new canvas, used internally by pica.
+      *
+      * Default returns a <canvas> element but this function could return an OffscreenCanvas instead (to run pica in a Service Worker).
+      */
+    var createCanvas: js.UndefOr[js.Function2[/* width */ Double, /* height */ Double, HTMLCanvasElement]] = js.undefined
     
-    // cache timeout, ms. Webworkers create is not fast.
-    // This option allow reuse webworkers effectively. Default 2000.
+    /**
+      * list of features to use.
+      *
+      * Note, `cib` is buggy in Chrome and not supports default `mks2013` filter.
+      *
+      * @default ['js', 'wasm', 'ww']
+      */
+    var features: js.UndefOr[js.Array[js_ | wasm | cib | ww | all]] = js.undefined
+    
+    /**
+      * cache timeout, ms. Webworkers create is not fast.
+      *
+      * This option allow reuse webworkers effectively.
+      *
+      * @default 2000
+      */
     var idle: js.UndefOr[Double] = js.undefined
     
-    // tile width/height.
-    // Images are processed by regions, to restrict peak memory use. Default 1024.
+    /**
+      * tile width/height.
+      *
+      * Images are processed by regions, to restrict peak memory use.
+      *
+      * @default 1024
+      */
     var tile: js.UndefOr[Double] = js.undefined
   }
   object PicaOptions {
@@ -89,11 +131,15 @@ object mod extends Shortcut {
       
       inline def setConcurrencyUndefined: Self = StObject.set(x, "concurrency", js.undefined)
       
-      inline def setFeatures(value: js.Array[String]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+      inline def setCreateCanvas(value: (/* width */ Double, /* height */ Double) => HTMLCanvasElement): Self = StObject.set(x, "createCanvas", js.Any.fromFunction2(value))
+      
+      inline def setCreateCanvasUndefined: Self = StObject.set(x, "createCanvas", js.undefined)
+      
+      inline def setFeatures(value: js.Array[js_ | wasm | cib | ww | all]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
       
       inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
       
-      inline def setFeaturesVarargs(value: String*): Self = StObject.set(x, "features", js.Array(value :_*))
+      inline def setFeaturesVarargs(value: (js_ | wasm | cib | ww | all)*): Self = StObject.set(x, "features", js.Array(value*))
       
       inline def setIdle(value: Double): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
       
@@ -107,68 +153,95 @@ object mod extends Shortcut {
   
   trait PicaResizeBufferOptions extends StObject {
     
-    // use alpha channel. Default = false.
-    var alpha: js.UndefOr[Boolean] = js.undefined
+    /**
+      * Optional. Output buffer to write data, if you don't wish pica to create new one.
+      */
+    var dest: js.UndefOr[js.typedarray.Uint8Array] = js.undefined
     
-    // Optional. Output buffer to write data, if you don't wish pica to create new one.
-    var dest: js.UndefOr[String] = js.undefined
+    /**
+      * filter name
+      *
+      * `mks2013` does both resize and sharpening, it's optimal and not recommended to change.
+      *
+      * @default 'mks2013'
+      */
+    var filter: js.UndefOr[box | hamming | lanczos2 | lanczos3 | mks2013] = js.undefined
     
-    // src image height.
+    /** src image height. */
     var height: Double
     
-    // 0..3. Default = 3 (lanczos, win=3).
-    var quality: js.UndefOr[Double] = js.undefined
+    /**
+      * deprecated use `.filter` instead.
+      *
+      * @deprecated
+      */
+    var quality: js.UndefOr[`0` | `1` | `2` | `3`] = js.undefined
     
-    // Uint8Array with source data.
-    var src: js.Array[Double]
+    /** Uint8Array with source data. */
+    var src: js.typedarray.Uint8Array
     
-    // output height, >=0, in pixels.
-    var toHeigh: Double
+    /** output height, >=0, in pixels. */
+    var toHeight: Double
     
-    // output width, >=0, in pixels.
+    /** output width, >=0, in pixels. */
     var toWidth: Double
     
-    // >=0, in percents. Default = 0 (off). Usually between 50 to 100 is good.
+    /**
+      * in percents, >=0.
+      *
+      * Usually between 100 to 200 is good.
+      * Note, `mks2013` filter already does optimal sharpening.
+      *
+      * @default 0 (off)
+      */
     var unsharpAmount: js.UndefOr[Double] = js.undefined
     
-    // 0.5..2.0. Radius of Gaussian blur.
-    // If it is less than 0.5, Unsharp Mask is off. Big values are clamped to 2.0.
+    /**
+      * 0.5..2.0.
+      *
+      * By default it's not set. Radius of Gaussian blur.
+      * If it is less than 0.5, Unsharp Mask is off. Big values are clamped to 2.0.
+      */
     var unsharpRadius: js.UndefOr[Double] = js.undefined
     
-    // 0..255. Default = 0. Threshold for applying unsharp mask.
+    /**
+      * 0..255
+      *
+      * Threshold for applying unsharp mask.
+      *
+      * @default 0
+      */
     var unsharpThreshold: js.UndefOr[Double] = js.undefined
     
-    // src image width.
+    /** src image width. */
     var width: Double
   }
   object PicaResizeBufferOptions {
     
-    inline def apply(height: Double, src: js.Array[Double], toHeigh: Double, toWidth: Double, width: Double): PicaResizeBufferOptions = {
-      val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], toHeigh = toHeigh.asInstanceOf[js.Any], toWidth = toWidth.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    inline def apply(height: Double, src: js.typedarray.Uint8Array, toHeight: Double, toWidth: Double, width: Double): PicaResizeBufferOptions = {
+      val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], toHeight = toHeight.asInstanceOf[js.Any], toWidth = toWidth.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[PicaResizeBufferOptions]
     }
     
     extension [Self <: PicaResizeBufferOptions](x: Self) {
       
-      inline def setAlpha(value: Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
-      
-      inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
-      
-      inline def setDest(value: String): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
+      inline def setDest(value: js.typedarray.Uint8Array): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
       
       inline def setDestUndefined: Self = StObject.set(x, "dest", js.undefined)
       
+      inline def setFilter(value: box | hamming | lanczos2 | lanczos3 | mks2013): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: `0` | `1` | `2` | `3`): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
       inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
       
-      inline def setSrc(value: js.Array[Double]): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: js.typedarray.Uint8Array): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      inline def setSrcVarargs(value: Double*): Self = StObject.set(x, "src", js.Array(value :_*))
-      
-      inline def setToHeigh(value: Double): Self = StObject.set(x, "toHeigh", value.asInstanceOf[js.Any])
+      inline def setToHeight(value: Double): Self = StObject.set(x, "toHeight", value.asInstanceOf[js.Any])
       
       inline def setToWidth(value: Double): Self = StObject.set(x, "toWidth", value.asInstanceOf[js.Any])
       
@@ -190,23 +263,52 @@ object mod extends Shortcut {
   
   trait PicaResizeOptions extends StObject {
     
-    // use alpha channel. Default = false.
-    var alpha: js.UndefOr[Boolean] = js.undefined
+    /**
+      * If defined, current operation will be terminated on rejection.
+      */
+    var cancelToken: js.UndefOr[js.Promise[Any]] = js.undefined
     
-    // Promise instance. If defined, current operation will be terminated on rejection.
-    var cancelToken: js.UndefOr[js.Promise[js.Any]] = js.undefined
+    /**
+      * filter name
+      *
+      * `mks2013` does both resize and sharpening, it's optimal and not recommended to change.
+      *
+      * @default 'mks2013'
+      */
+    var filter: js.UndefOr[box | hamming | lanczos2 | lanczos3 | mks2013] = js.undefined
     
-    // 0..3. Default = 3 (lanczos, win=3).
-    var quality: js.UndefOr[Double] = js.undefined
+    /**
+      * deprecated use `.filter` instead.
+      *
+      * @deprecated
+      */
+    var quality: js.UndefOr[`0` | `1` | `2` | `3`] = js.undefined
     
-    // >=0, in percents. Default = 0 (off). Usually between 50 to 100 is good.
+    /**
+      * in percents, >=0.
+      *
+      * Usually between 100 to 200 is good.
+      * Note, `mks2013` filter already does optimal sharpening.
+      *
+      * @default 0 (off)
+      */
     var unsharpAmount: js.UndefOr[Double] = js.undefined
     
-    //  0.5..2.0. By default it's not set. Radius of Gaussian blur.
-    // If it is less than 0.5, Unsharp Mask is off. Big values are clamped to 2.0.
+    /**
+      * 0.5..2.0.
+      *
+      * By default it's not set. Radius of Gaussian blur.
+      * If it is less than 0.5, Unsharp Mask is off. Big values are clamped to 2.0.
+      */
     var unsharpRadius: js.UndefOr[Double] = js.undefined
     
-    // 0..255. Default = 0. Threshold for applying unsharp mask.
+    /**
+      * 0..255
+      *
+      * Threshold for applying unsharp mask.
+      *
+      * @default 0
+      */
     var unsharpThreshold: js.UndefOr[Double] = js.undefined
   }
   object PicaResizeOptions {
@@ -218,15 +320,15 @@ object mod extends Shortcut {
     
     extension [Self <: PicaResizeOptions](x: Self) {
       
-      inline def setAlpha(value: Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
-      
-      inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
-      
-      inline def setCancelToken(value: js.Promise[js.Any]): Self = StObject.set(x, "cancelToken", value.asInstanceOf[js.Any])
+      inline def setCancelToken(value: js.Promise[Any]): Self = StObject.set(x, "cancelToken", value.asInstanceOf[js.Any])
       
       inline def setCancelTokenUndefined: Self = StObject.set(x, "cancelToken", js.undefined)
       
-      inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setFilter(value: box | hamming | lanczos2 | lanczos3 | mks2013): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      
+      inline def setQuality(value: `0` | `1` | `2` | `3`): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
       inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
       

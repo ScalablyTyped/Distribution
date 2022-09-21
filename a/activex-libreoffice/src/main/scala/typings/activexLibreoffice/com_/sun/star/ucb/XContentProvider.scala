@@ -39,7 +39,7 @@ object XContentProvider {
     acquire: () => Unit,
     compareContentIds: (XContentIdentifier, XContentIdentifier) => Double,
     queryContent: XContentIdentifier => XContent,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XContentProvider = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), compareContentIds = js.Any.fromFunction2(compareContentIds), queryContent = js.Any.fromFunction1(queryContent), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

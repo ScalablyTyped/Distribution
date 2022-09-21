@@ -4,26 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An image resource. You may provide a larger image than was requested, so
-  * long as the aspect ratio is preserved.
-  */
 trait SchemaImage extends StObject {
   
   /**
     * Image height in pixels.
     */
-  var height: js.UndefOr[Double] = js.undefined
+  var height: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * The URL of the image.
     */
-  var url: js.UndefOr[String] = js.undefined
+  var url: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Image width in pixels.
     */
-  var width: js.UndefOr[Double] = js.undefined
+  var width: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaImage {
   
@@ -36,13 +32,19 @@ object SchemaImage {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
+    inline def setHeightNull: Self = StObject.set(x, "height", null)
+    
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
+    inline def setUrlNull: Self = StObject.set(x, "url", null)
+    
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthNull: Self = StObject.set(x, "width", null)
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }

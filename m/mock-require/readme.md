@@ -10,10 +10,10 @@ Simple, intuitive mocking of Node.js modules.
 | ------------------ | :-------------: |
 | Full name          | mock-require |
 | Keywords           | require, dependency, injection, di, inject, swap, test, mock, stub |
-| # releases         | 0 |
-| # dependents       | 96 |
-| # downloads        | 7901440 |
-| # stars            | 16 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1356743.3333333333 |
+| # stars            | 457.0 |
 
 ## Links
 - [Homepage](https://github.com/boblauer/mock-require)

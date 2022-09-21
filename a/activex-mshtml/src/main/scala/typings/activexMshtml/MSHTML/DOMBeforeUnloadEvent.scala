@@ -27,7 +27,7 @@ trait DOMBeforeUnloadEvent extends StObject {
   
   def preventDefault(): Unit
   
-  var returnValue: js.Any
+  var returnValue: Any
   
   val srcElement: IHTMLElement
   
@@ -54,7 +54,7 @@ object DOMBeforeUnloadEvent {
     initEvent: (String, Boolean, Boolean) => Unit,
     isTrusted: Boolean,
     preventDefault: () => Unit,
-    returnValue: js.Any,
+    returnValue: Any,
     srcElement: IHTMLElement,
     stopImmediatePropagation: () => Unit,
     stopPropagation: () => Unit,
@@ -90,7 +90,7 @@ object DOMBeforeUnloadEvent {
     
     inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
     
-    inline def setReturnValue(value: js.Any): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Any): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
     
     inline def setSrcElement(value: IHTMLElement): Self = StObject.set(x, "srcElement", value.asInstanceOf[js.Any])
     

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Gender extends StObject {
   
-  /** The type of pronouns that should be used to address the person. The value can be custom or one of these predefined values: * `male` * `female` * `other` */
+  /** Free form text field for pronouns that should be used to address the person. Common values are: * `he`/`him` * `she`/`her` * `they`/`them` */
   var addressMeAs: js.UndefOr[String] = js.undefined
   
   /**

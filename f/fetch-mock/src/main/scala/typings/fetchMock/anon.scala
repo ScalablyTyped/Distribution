@@ -20,7 +20,7 @@ object anon {
       * Reference to the Headers constructor of a custom fetch
       * implementation.
       */
-    var Headers: js.UndefOr[Instantiable0[typings.std.Headers]] = js.undefined
+    var Headers: js.UndefOr[Instantiable0[js.UndefOr[typings.std.Headers]]] = js.undefined
     
     /**
       * Reference to the Promise constructor of a custom Promise
@@ -30,10 +30,10 @@ object anon {
         Instantiable1[
           /* executor */ js.Function2[
             /* resolve */ js.Function1[/* value */ Response | js.Thenable[Response], Unit], 
-            /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 
+            /* reject */ js.Function1[/* reason */ js.UndefOr[Any], Unit], 
             Unit
           ], 
-          js.Promise[Response]
+          js.UndefOr[js.Promise[Response]]
         ]
       ] = js.undefined
     
@@ -45,7 +45,7 @@ object anon {
         Instantiable2[
           /* input */ String | typings.std.Request, 
           /* init */ js.UndefOr[RequestInit], 
-          typings.std.Request
+          js.UndefOr[typings.std.Request]
         ]
       ] = js.undefined
     
@@ -53,7 +53,7 @@ object anon {
       * Reference to the Response constructor of a custom fetch
       * implementation.
       */
-    var Response: js.UndefOr[Instantiable0[typings.std.Response]] = js.undefined
+    var Response: js.UndefOr[Instantiable0[js.UndefOr[typings.std.Response]]] = js.undefined
     
     /**
       * - true: Unhandled calls fall through to the network
@@ -126,7 +126,7 @@ object anon {
       
       inline def setFetchUndefined: Self = StObject.set(x, "fetch", js.undefined)
       
-      inline def setHeaders(value: Instantiable0[Headers]): Self = StObject.set(x, "Headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Instantiable0[js.UndefOr[Headers]]): Self = StObject.set(x, "Headers", value.asInstanceOf[js.Any])
       
       inline def setHeadersUndefined: Self = StObject.set(x, "Headers", js.undefined)
       
@@ -142,20 +142,26 @@ object anon {
         value: Instantiable1[
               /* executor */ js.Function2[
                 /* resolve */ js.Function1[/* value */ Response | js.Thenable[Response], Unit], 
-                /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 
+                /* reject */ js.Function1[/* reason */ js.UndefOr[Any], Unit], 
                 Unit
               ], 
-              js.Promise[Response]
+              js.UndefOr[js.Promise[Response]]
             ]
       ): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
       
       inline def setPromiseUndefined: Self = StObject.set(x, "Promise", js.undefined)
       
-      inline def setRequest(value: Instantiable2[/* input */ String | Request, /* init */ js.UndefOr[RequestInit], Request]): Self = StObject.set(x, "Request", value.asInstanceOf[js.Any])
+      inline def setRequest(
+        value: Instantiable2[
+              /* input */ String | Request, 
+              /* init */ js.UndefOr[RequestInit], 
+              js.UndefOr[Request]
+            ]
+      ): Self = StObject.set(x, "Request", value.asInstanceOf[js.Any])
       
       inline def setRequestUndefined: Self = StObject.set(x, "Request", js.undefined)
       
-      inline def setResponse(value: Instantiable0[Response]): Self = StObject.set(x, "Response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: Instantiable0[js.UndefOr[Response]]): Self = StObject.set(x, "Response", value.asInstanceOf[js.Any])
       
       inline def setResponseUndefined: Self = StObject.set(x, "Response", js.undefined)
       

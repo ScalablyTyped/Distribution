@@ -6,5 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "Xliff")
 @js.native
-class Xliff ()
-  extends typings.angularCompiler.compilerMod.Xliff
+open class Xliff () extends Serializer

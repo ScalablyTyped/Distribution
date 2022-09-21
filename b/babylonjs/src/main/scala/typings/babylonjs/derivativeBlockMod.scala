@@ -10,7 +10,7 @@ object derivativeBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/Fragment/derivativeBlock", "DerivativeBlock")
   @js.native
-  class DerivativeBlock protected () extends NodeMaterialBlock {
+  open class DerivativeBlock protected () extends NodeMaterialBlock {
     /**
       * Create a new DerivativeBlock
       * @param name defines the block name

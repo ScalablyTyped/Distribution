@@ -23,6 +23,10 @@ object xhrStrings {
   inline def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
   
   @js.native
+  sealed trait PATCH extends StObject
+  inline def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
+  
+  @js.native
   sealed trait POST extends StObject
   inline def POST: POST = "POST".asInstanceOf[POST]
   

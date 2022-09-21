@@ -15,23 +15,23 @@ trait APIGateway extends Service {
   var config_APIGateway: ConfigBase & ClientConfiguration = js.native
   
   /**
-    * Create an ApiKey resource.  AWS CLI
+    * Create an ApiKey resource. 
     */
   def createApiKey(): Request[ApiKey, AWSError] = js.native
   def createApiKey(callback: js.Function2[/* err */ AWSError, /* data */ ApiKey, Unit]): Request[ApiKey, AWSError] = js.native
   /**
-    * Create an ApiKey resource.  AWS CLI
+    * Create an ApiKey resource. 
     */
   def createApiKey(params: CreateApiKeyRequest): Request[ApiKey, AWSError] = js.native
   def createApiKey(params: CreateApiKeyRequest, callback: js.Function2[/* err */ AWSError, /* data */ ApiKey, Unit]): Request[ApiKey, AWSError] = js.native
   
   /**
-    * Adds a new Authorizer resource to an existing RestApi resource. AWS CLI
+    * Adds a new Authorizer resource to an existing RestApi resource.
     */
   def createAuthorizer(): Request[Authorizer, AWSError] = js.native
   def createAuthorizer(callback: js.Function2[/* err */ AWSError, /* data */ Authorizer, Unit]): Request[Authorizer, AWSError] = js.native
   /**
-    * Adds a new Authorizer resource to an existing RestApi resource. AWS CLI
+    * Adds a new Authorizer resource to an existing RestApi resource.
     */
   def createAuthorizer(params: CreateAuthorizerRequest): Request[Authorizer, AWSError] = js.native
   def createAuthorizer(
@@ -68,12 +68,12 @@ trait APIGateway extends Service {
   ): Request[Deployment, AWSError] = js.native
   
   /**
-    * 
+    * Creates a documentation part.
     */
   def createDocumentationPart(): Request[DocumentationPart, AWSError] = js.native
   def createDocumentationPart(callback: js.Function2[/* err */ AWSError, /* data */ DocumentationPart, Unit]): Request[DocumentationPart, AWSError] = js.native
   /**
-    * 
+    * Creates a documentation part.
     */
   def createDocumentationPart(params: CreateDocumentationPartRequest): Request[DocumentationPart, AWSError] = js.native
   def createDocumentationPart(
@@ -82,12 +82,12 @@ trait APIGateway extends Service {
   ): Request[DocumentationPart, AWSError] = js.native
   
   /**
-    * 
+    * Creates a documentation version
     */
   def createDocumentationVersion(): Request[DocumentationVersion, AWSError] = js.native
   def createDocumentationVersion(callback: js.Function2[/* err */ AWSError, /* data */ DocumentationVersion, Unit]): Request[DocumentationVersion, AWSError] = js.native
   /**
-    * 
+    * Creates a documentation version
     */
   def createDocumentationVersion(params: CreateDocumentationVersionRequest): Request[DocumentationVersion, AWSError] = js.native
   def createDocumentationVersion(
@@ -121,12 +121,12 @@ trait APIGateway extends Service {
   def createModel(params: CreateModelRequest, callback: js.Function2[/* err */ AWSError, /* data */ Model, Unit]): Request[Model, AWSError] = js.native
   
   /**
-    * Creates a ReqeustValidator of a given RestApi.
+    * Creates a RequestValidator of a given RestApi.
     */
   def createRequestValidator(): Request[RequestValidator, AWSError] = js.native
   def createRequestValidator(callback: js.Function2[/* err */ AWSError, /* data */ RequestValidator, Unit]): Request[RequestValidator, AWSError] = js.native
   /**
-    * Creates a ReqeustValidator of a given RestApi.
+    * Creates a RequestValidator of a given RestApi.
     */
   def createRequestValidator(params: CreateRequestValidatorRequest): Request[RequestValidator, AWSError] = js.native
   def createRequestValidator(
@@ -224,12 +224,12 @@ trait APIGateway extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Deletes an existing Authorizer resource. AWS CLI
+    * Deletes an existing Authorizer resource.
     */
   def deleteAuthorizer(): Request[js.Object, AWSError] = js.native
   def deleteAuthorizer(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Deletes an existing Authorizer resource. AWS CLI
+    * Deletes an existing Authorizer resource.
     */
   def deleteAuthorizer(params: DeleteAuthorizerRequest): Request[js.Object, AWSError] = js.native
   def deleteAuthorizer(
@@ -280,12 +280,12 @@ trait APIGateway extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * 
+    * Deletes a documentation part
     */
   def deleteDocumentationPart(): Request[js.Object, AWSError] = js.native
   def deleteDocumentationPart(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * 
+    * Deletes a documentation part
     */
   def deleteDocumentationPart(params: DeleteDocumentationPartRequest): Request[js.Object, AWSError] = js.native
   def deleteDocumentationPart(
@@ -294,12 +294,12 @@ trait APIGateway extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * 
+    * Deletes a documentation version.
     */
   def deleteDocumentationVersion(): Request[js.Object, AWSError] = js.native
   def deleteDocumentationVersion(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * 
+    * Deletes a documentation version.
     */
   def deleteDocumentationVersion(params: DeleteDocumentationVersionRequest): Request[js.Object, AWSError] = js.native
   def deleteDocumentationVersion(
@@ -573,12 +573,12 @@ trait APIGateway extends Service {
   def getApiKeys(params: GetApiKeysRequest, callback: js.Function2[/* err */ AWSError, /* data */ ApiKeys, Unit]): Request[ApiKeys, AWSError] = js.native
   
   /**
-    * Describe an existing Authorizer resource. AWS CLI
+    * Describe an existing Authorizer resource.
     */
   def getAuthorizer(): Request[Authorizer, AWSError] = js.native
   def getAuthorizer(callback: js.Function2[/* err */ AWSError, /* data */ Authorizer, Unit]): Request[Authorizer, AWSError] = js.native
   /**
-    * Describe an existing Authorizer resource. AWS CLI
+    * Describe an existing Authorizer resource.
     */
   def getAuthorizer(params: GetAuthorizerRequest): Request[Authorizer, AWSError] = js.native
   def getAuthorizer(
@@ -587,12 +587,12 @@ trait APIGateway extends Service {
   ): Request[Authorizer, AWSError] = js.native
   
   /**
-    * Describe an existing Authorizers resource. AWS CLI
+    * Describe an existing Authorizers resource.
     */
   def getAuthorizers(): Request[Authorizers, AWSError] = js.native
   def getAuthorizers(callback: js.Function2[/* err */ AWSError, /* data */ Authorizers, Unit]): Request[Authorizers, AWSError] = js.native
   /**
-    * Describe an existing Authorizers resource. AWS CLI
+    * Describe an existing Authorizers resource.
     */
   def getAuthorizers(params: GetAuthorizersRequest): Request[Authorizers, AWSError] = js.native
   def getAuthorizers(
@@ -685,12 +685,12 @@ trait APIGateway extends Service {
   ): Request[Deployments, AWSError] = js.native
   
   /**
-    * 
+    * Gets a documentation part.
     */
   def getDocumentationPart(): Request[DocumentationPart, AWSError] = js.native
   def getDocumentationPart(callback: js.Function2[/* err */ AWSError, /* data */ DocumentationPart, Unit]): Request[DocumentationPart, AWSError] = js.native
   /**
-    * 
+    * Gets a documentation part.
     */
   def getDocumentationPart(params: GetDocumentationPartRequest): Request[DocumentationPart, AWSError] = js.native
   def getDocumentationPart(
@@ -699,12 +699,12 @@ trait APIGateway extends Service {
   ): Request[DocumentationPart, AWSError] = js.native
   
   /**
-    * 
+    * Gets documentation parts.
     */
   def getDocumentationParts(): Request[DocumentationParts, AWSError] = js.native
   def getDocumentationParts(callback: js.Function2[/* err */ AWSError, /* data */ DocumentationParts, Unit]): Request[DocumentationParts, AWSError] = js.native
   /**
-    * 
+    * Gets documentation parts.
     */
   def getDocumentationParts(params: GetDocumentationPartsRequest): Request[DocumentationParts, AWSError] = js.native
   def getDocumentationParts(
@@ -713,12 +713,12 @@ trait APIGateway extends Service {
   ): Request[DocumentationParts, AWSError] = js.native
   
   /**
-    * 
+    * Gets a documentation version.
     */
   def getDocumentationVersion(): Request[DocumentationVersion, AWSError] = js.native
   def getDocumentationVersion(callback: js.Function2[/* err */ AWSError, /* data */ DocumentationVersion, Unit]): Request[DocumentationVersion, AWSError] = js.native
   /**
-    * 
+    * Gets a documentation version.
     */
   def getDocumentationVersion(params: GetDocumentationVersionRequest): Request[DocumentationVersion, AWSError] = js.native
   def getDocumentationVersion(
@@ -727,12 +727,12 @@ trait APIGateway extends Service {
   ): Request[DocumentationVersion, AWSError] = js.native
   
   /**
-    * 
+    * Gets documentation versions.
     */
   def getDocumentationVersions(): Request[DocumentationVersions, AWSError] = js.native
   def getDocumentationVersions(callback: js.Function2[/* err */ AWSError, /* data */ DocumentationVersions, Unit]): Request[DocumentationVersions, AWSError] = js.native
   /**
-    * 
+    * Gets documentation versions.
     */
   def getDocumentationVersions(params: GetDocumentationVersionsRequest): Request[DocumentationVersions, AWSError] = js.native
   def getDocumentationVersions(
@@ -986,23 +986,23 @@ trait APIGateway extends Service {
   def getSdk(params: GetSdkRequest, callback: js.Function2[/* err */ AWSError, /* data */ SdkResponse, Unit]): Request[SdkResponse, AWSError] = js.native
   
   /**
-    * 
+    * Gets an SDK type.
     */
   def getSdkType(): Request[SdkType, AWSError] = js.native
   def getSdkType(callback: js.Function2[/* err */ AWSError, /* data */ SdkType, Unit]): Request[SdkType, AWSError] = js.native
   /**
-    * 
+    * Gets an SDK type.
     */
   def getSdkType(params: GetSdkTypeRequest): Request[SdkType, AWSError] = js.native
   def getSdkType(params: GetSdkTypeRequest, callback: js.Function2[/* err */ AWSError, /* data */ SdkType, Unit]): Request[SdkType, AWSError] = js.native
   
   /**
-    * 
+    * Gets SDK types
     */
   def getSdkTypes(): Request[SdkTypes, AWSError] = js.native
   def getSdkTypes(callback: js.Function2[/* err */ AWSError, /* data */ SdkTypes, Unit]): Request[SdkTypes, AWSError] = js.native
   /**
-    * 
+    * Gets SDK types
     */
   def getSdkTypes(params: GetSdkTypesRequest): Request[SdkTypes, AWSError] = js.native
   def getSdkTypes(params: GetSdkTypesRequest, callback: js.Function2[/* err */ AWSError, /* data */ SdkTypes, Unit]): Request[SdkTypes, AWSError] = js.native
@@ -1144,12 +1144,12 @@ trait APIGateway extends Service {
   ): Request[ApiKeyIds, AWSError] = js.native
   
   /**
-    * 
+    * Imports documentation parts
     */
   def importDocumentationParts(): Request[DocumentationPartIds, AWSError] = js.native
   def importDocumentationParts(callback: js.Function2[/* err */ AWSError, /* data */ DocumentationPartIds, Unit]): Request[DocumentationPartIds, AWSError] = js.native
   /**
-    * 
+    * Imports documentation parts
     */
   def importDocumentationParts(params: ImportDocumentationPartsRequest): Request[DocumentationPartIds, AWSError] = js.native
   def importDocumentationParts(
@@ -1258,12 +1258,12 @@ trait APIGateway extends Service {
   def tagResource(params: TagResourceRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   
   /**
-    * Simulate the execution of an Authorizer in your RestApi with headers, parameters, and an incoming request body.  Use Lambda Function as Authorizer Use Cognito User Pool as Authorizer 
+    * Simulate the execution of an Authorizer in your RestApi with headers, parameters, and an incoming request body.
     */
   def testInvokeAuthorizer(): Request[TestInvokeAuthorizerResponse, AWSError] = js.native
   def testInvokeAuthorizer(callback: js.Function2[/* err */ AWSError, /* data */ TestInvokeAuthorizerResponse, Unit]): Request[TestInvokeAuthorizerResponse, AWSError] = js.native
   /**
-    * Simulate the execution of an Authorizer in your RestApi with headers, parameters, and an incoming request body.  Use Lambda Function as Authorizer Use Cognito User Pool as Authorizer 
+    * Simulate the execution of an Authorizer in your RestApi with headers, parameters, and an incoming request body.
     */
   def testInvokeAuthorizer(params: TestInvokeAuthorizerRequest): Request[TestInvokeAuthorizerResponse, AWSError] = js.native
   def testInvokeAuthorizer(
@@ -1272,12 +1272,12 @@ trait APIGateway extends Service {
   ): Request[TestInvokeAuthorizerResponse, AWSError] = js.native
   
   /**
-    * Simulate the execution of a Method in your RestApi with headers, parameters, and an incoming request body.
+    * Simulate the invocation of a Method in your RestApi with headers, parameters, and an incoming request body.
     */
   def testInvokeMethod(): Request[TestInvokeMethodResponse, AWSError] = js.native
   def testInvokeMethod(callback: js.Function2[/* err */ AWSError, /* data */ TestInvokeMethodResponse, Unit]): Request[TestInvokeMethodResponse, AWSError] = js.native
   /**
-    * Simulate the execution of a Method in your RestApi with headers, parameters, and an incoming request body.
+    * Simulate the invocation of a Method in your RestApi with headers, parameters, and an incoming request body.
     */
   def testInvokeMethod(params: TestInvokeMethodRequest): Request[TestInvokeMethodResponse, AWSError] = js.native
   def testInvokeMethod(
@@ -1322,12 +1322,12 @@ trait APIGateway extends Service {
   def updateApiKey(params: UpdateApiKeyRequest, callback: js.Function2[/* err */ AWSError, /* data */ ApiKey, Unit]): Request[ApiKey, AWSError] = js.native
   
   /**
-    * Updates an existing Authorizer resource. AWS CLI
+    * Updates an existing Authorizer resource.
     */
   def updateAuthorizer(): Request[Authorizer, AWSError] = js.native
   def updateAuthorizer(callback: js.Function2[/* err */ AWSError, /* data */ Authorizer, Unit]): Request[Authorizer, AWSError] = js.native
   /**
-    * Updates an existing Authorizer resource. AWS CLI
+    * Updates an existing Authorizer resource.
     */
   def updateAuthorizer(params: UpdateAuthorizerRequest): Request[Authorizer, AWSError] = js.native
   def updateAuthorizer(
@@ -1378,12 +1378,12 @@ trait APIGateway extends Service {
   ): Request[Deployment, AWSError] = js.native
   
   /**
-    * 
+    * Updates a documentation part.
     */
   def updateDocumentationPart(): Request[DocumentationPart, AWSError] = js.native
   def updateDocumentationPart(callback: js.Function2[/* err */ AWSError, /* data */ DocumentationPart, Unit]): Request[DocumentationPart, AWSError] = js.native
   /**
-    * 
+    * Updates a documentation part.
     */
   def updateDocumentationPart(params: UpdateDocumentationPartRequest): Request[DocumentationPart, AWSError] = js.native
   def updateDocumentationPart(
@@ -1392,12 +1392,12 @@ trait APIGateway extends Service {
   ): Request[DocumentationPart, AWSError] = js.native
   
   /**
-    * 
+    * Updates a documentation version.
     */
   def updateDocumentationVersion(): Request[DocumentationVersion, AWSError] = js.native
   def updateDocumentationVersion(callback: js.Function2[/* err */ AWSError, /* data */ DocumentationVersion, Unit]): Request[DocumentationVersion, AWSError] = js.native
   /**
-    * 
+    * Updates a documentation version.
     */
   def updateDocumentationVersion(params: UpdateDocumentationVersionRequest): Request[DocumentationVersion, AWSError] = js.native
   def updateDocumentationVersion(

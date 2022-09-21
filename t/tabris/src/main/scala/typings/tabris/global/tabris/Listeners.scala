@@ -9,8 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("tabris.Listeners")
 @js.native
-class Listeners[EventData /* <: Target */] protected ()
+open class Listeners[EventData /* <: Target */] protected ()
   extends typings.tabris.mod.Listeners[EventData] {
+  /**
+    * Objects of the type `Listeners` provide methods to manage listeners and trigger events. They
+    * encapsulate the tabris event system in a way that is more convenient to use with TypeScript,
+    * `async`/`await` and RxJS.
+    */
   def this(target: TargetType[EventData], `type`: String) = this()
 }
 /* static members */

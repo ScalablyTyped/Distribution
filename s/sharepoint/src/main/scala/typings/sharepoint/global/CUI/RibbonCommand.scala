@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CUI.RibbonCommand")
 @js.native
-class RibbonCommand ()
+open class RibbonCommand ()
   extends StObject
      with typings.sharepoint.CUI.RibbonCommand

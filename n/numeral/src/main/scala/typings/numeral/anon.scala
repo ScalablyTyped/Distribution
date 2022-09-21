@@ -1,6 +1,5 @@
 package typings.numeral
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,22 +58,22 @@ object anon {
   
   trait Format extends StObject {
     
-    var format: RegExp
+    var format: js.RegExp
     
-    var unformat: RegExp
+    var unformat: js.RegExp
   }
   object Format {
     
-    inline def apply(format: RegExp, unformat: RegExp): Format = {
+    inline def apply(format: js.RegExp, unformat: js.RegExp): Format = {
       val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], unformat = unformat.asInstanceOf[js.Any])
       __obj.asInstanceOf[Format]
     }
     
     extension [Self <: Format](x: Self) {
       
-      inline def setFormat(value: RegExp): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: js.RegExp): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      inline def setUnformat(value: RegExp): Self = StObject.set(x, "unformat", value.asInstanceOf[js.Any])
+      inline def setUnformat(value: js.RegExp): Self = StObject.set(x, "unformat", value.asInstanceOf[js.Any])
     }
   }
   

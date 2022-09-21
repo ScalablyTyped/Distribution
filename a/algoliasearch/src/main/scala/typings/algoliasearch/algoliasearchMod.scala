@@ -3,7 +3,7 @@ package typings.algoliasearch
 import typings.algoliaClientAnalytics.mod.ABTest
 import typings.algoliaClientAnalytics.mod.GetABTestsOptions
 import typings.algoliaClientCommon.mod.ClientTransporterOptions
-import typings.algoliaClientRecommendation.mod.PersonalizationStrategy
+import typings.algoliaClientPersonalization.mod.PersonalizationStrategy
 import typings.algoliaClientSearch.mod.ApiKeyACLType
 import typings.algoliaClientSearch.mod.BatchRequest
 import typings.algoliaClientSearch.mod.BrowseOptions
@@ -13,7 +13,12 @@ import typings.algoliaClientSearch.mod.ClearSynonymsOptions
 import typings.algoliaClientSearch.mod.CopyIndexOptions
 import typings.algoliaClientSearch.mod.DeleteByFiltersOptions
 import typings.algoliaClientSearch.mod.DeleteSynonymOptions
+import typings.algoliaClientSearch.mod.DictionaryEntriesOptions
+import typings.algoliaClientSearch.mod.DictionaryEntry
+import typings.algoliaClientSearch.mod.DictionaryName
+import typings.algoliaClientSearch.mod.DictionarySettings
 import typings.algoliaClientSearch.mod.FindAnswersOptions
+import typings.algoliaClientSearch.mod.FindAnswersResponse
 import typings.algoliaClientSearch.mod.FindObjectOptions
 import typings.algoliaClientSearch.mod.FindObjectResponse
 import typings.algoliaClientSearch.mod.GetObjectOptions
@@ -43,22 +48,23 @@ import typings.algoliaClientSearch.mod.SecuredApiKeyRestrictions
 import typings.algoliaClientSearch.mod.Settings
 import typings.algoliaClientSearch.mod.Synonym
 import typings.algoliaRequesterCommon.mod.Destroyable
+import typings.algoliaTransporter.mod.Request
 import typings.algoliaTransporter.mod.RequestOptions
 import typings.algoliasearch.algoliasearchStrings.apiKey
 import typings.algoliasearch.algoliasearchStrings.appId
 import typings.algoliasearch.anon.AddApiKeyOptionsPickReque
 import typings.algoliasearch.anon.IndexName
 import typings.algoliasearch.anon.OptionalCredentialsAnalyt
-import typings.algoliasearch.anon.OptionalCredentialsRecomm
+import typings.algoliasearch.anon.OptionalCredentialsPerson
 import typings.algoliasearch.anon.ReadonlyPromiseAddABTestR
 import typings.algoliasearch.anon.ReadonlyPromiseArraySearc
 import typings.algoliasearch.anon.ReadonlyPromiseAssignUser
 import typings.algoliasearch.anon.ReadonlyPromiseAssignUserCatch
 import typings.algoliasearch.anon.ReadonlyPromiseDeleteABTe
-import typings.algoliasearch.anon.ReadonlyPromiseFindAnswer
 import typings.algoliasearch.anon.ReadonlyPromiseGetABTestR
 import typings.algoliasearch.anon.ReadonlyPromiseGetABTests
 import typings.algoliasearch.anon.ReadonlyPromiseGetApiKeyR
+import typings.algoliasearch.anon.ReadonlyPromiseGetDiction
 import typings.algoliasearch.anon.ReadonlyPromiseGetLogsRes
 import typings.algoliasearch.anon.ReadonlyPromiseGetPersona
 import typings.algoliasearch.anon.ReadonlyPromiseGetTopUser
@@ -69,6 +75,7 @@ import typings.algoliasearch.anon.ReadonlyPromiseListIndice
 import typings.algoliasearch.anon.ReadonlyPromiseListUserID
 import typings.algoliasearch.anon.ReadonlyPromiseRemoveUser
 import typings.algoliasearch.anon.ReadonlyPromiseRule
+import typings.algoliasearch.anon.ReadonlyPromiseSearchDict
 import typings.algoliasearch.anon.ReadonlyPromiseSearchForF
 import typings.algoliasearch.anon.ReadonlyPromiseSearchResp
 import typings.algoliasearch.anon.ReadonlyPromiseSearchSyno
@@ -77,6 +84,7 @@ import typings.algoliasearch.anon.ReadonlyPromiseSetPersona
 import typings.algoliasearch.anon.ReadonlyPromiseSettings
 import typings.algoliasearch.anon.ReadonlyPromiseStopABTest
 import typings.algoliasearch.anon.ReadonlyPromiseSynonym
+import typings.algoliasearch.anon.ReadonlyPromiseTaskStatus
 import typings.algoliasearch.anon.ReadonlyPromiseUserIDResp
 import typings.algoliasearch.anon.ReadonlyPromiseboolean
 import typings.algoliasearch.anon.ReadonlyPromisevoid
@@ -85,6 +93,7 @@ import typings.algoliasearch.anon.ReadonlyWaitablePromiseBa
 import typings.algoliasearch.anon.ReadonlyWaitablePromiseCh
 import typings.algoliasearch.anon.ReadonlyWaitablePromiseDe
 import typings.algoliasearch.anon.ReadonlyWaitablePromiseDeCatch
+import typings.algoliasearch.anon.ReadonlyWaitablePromiseDi
 import typings.algoliasearch.anon.ReadonlyWaitablePromiseIn
 import typings.algoliasearch.anon.ReadonlyWaitablePromiseMu
 import typings.algoliasearch.anon.ReadonlyWaitablePromisePa
@@ -170,7 +179,9 @@ object algoliasearchMod {
   
   type InitAnalyticsOptions = Partial[ClientTransporterOptions] & OptionalCredentialsAnalyt
   
-  type InitRecommendationOptions = Partial[ClientTransporterOptions] & OptionalCredentialsRecomm
+  type InitPersonalizationOptions = Partial[ClientTransporterOptions] & OptionalCredentialsPerson
+  
+  type InitRecommendationOptions = InitPersonalizationOptions
   
   type OptionalCredentials[TClientOptions /* <: Credentials */] = (Omit[
     TClientOptions, 
@@ -181,9 +192,9 @@ object algoliasearchMod {
   ])
   
   @js.native
-  trait RecommendationClient
+  trait PersonalizationClient
     extends StObject
-       with typings.algoliaClientRecommendation.mod.RecommendationClient {
+       with typings.algoliaClientPersonalization.mod.PersonalizationClient {
     
     def getPersonalizationStrategy(): ReadonlyPromiseGetPersona = js.native
     def getPersonalizationStrategy(requestOptions: RequestOptions): ReadonlyPromiseGetPersona = js.native
@@ -191,6 +202,8 @@ object algoliasearchMod {
     def setPersonalizationStrategy(personalizationStrategy: PersonalizationStrategy): ReadonlyPromiseSetPersona = js.native
     def setPersonalizationStrategy(personalizationStrategy: PersonalizationStrategy, requestOptions: RequestOptions): ReadonlyPromiseSetPersona = js.native
   }
+  
+  type RecommendationClient = PersonalizationClient
   
   @js.native
   trait SearchClient
@@ -207,6 +220,9 @@ object algoliasearchMod {
     def assignUserIDs(userIDs: js.Array[String], clusterName: String): ReadonlyPromiseAssignUserCatch = js.native
     def assignUserIDs(userIDs: js.Array[String], clusterName: String, requestOptions: RequestOptions): ReadonlyPromiseAssignUserCatch = js.native
     
+    def clearDictionaryEntries(dictionary: DictionaryName): ReadonlyWaitablePromiseDi = js.native
+    def clearDictionaryEntries(dictionary: DictionaryName, requestOptions: RequestOptions & DictionaryEntriesOptions): ReadonlyWaitablePromiseDi = js.native
+    
     def copyIndex(from: String, to: String): ReadonlyWaitablePromiseIn = js.native
     def copyIndex(from: String, to: String, requestOptions: CopyIndexOptions & RequestOptions): ReadonlyWaitablePromiseIn = js.native
     
@@ -219,13 +235,29 @@ object algoliasearchMod {
     def copySynonyms(from: String, to: String): ReadonlyWaitablePromiseIn = js.native
     def copySynonyms(from: String, to: String, requestOptions: RequestOptions): ReadonlyWaitablePromiseIn = js.native
     
+    def customRequest[TResponse](request: Request): js.Promise[TResponse] = js.native
+    def customRequest[TResponse](request: Request, requestOptions: RequestOptions): js.Promise[TResponse] = js.native
+    
     def deleteApiKey(apiKey: String): ReadonlyWaitablePromiseDe = js.native
     def deleteApiKey(apiKey: String, requestOptions: RequestOptions): ReadonlyWaitablePromiseDe = js.native
+    
+    def deleteDictionaryEntries(dictionary: DictionaryName, objectIDs: js.Array[String]): ReadonlyWaitablePromiseDi = js.native
+    def deleteDictionaryEntries(
+      dictionary: DictionaryName,
+      objectIDs: js.Array[String],
+      requestOptions: RequestOptions & DictionaryEntriesOptions
+    ): ReadonlyWaitablePromiseDi = js.native
     
     def generateSecuredApiKey(parentApiKey: String, restrictions: SecuredApiKeyRestrictions): String = js.native
     
     def getApiKey(apiKey: String): ReadonlyPromiseGetApiKeyR = js.native
     def getApiKey(apiKey: String, requestOptions: RequestOptions): ReadonlyPromiseGetApiKeyR = js.native
+    
+    def getAppTask(taskID: Double): ReadonlyPromiseTaskStatus = js.native
+    def getAppTask(taskID: Double, requestOptions: RequestOptions): ReadonlyPromiseTaskStatus = js.native
+    
+    def getDictionarySettings(): ReadonlyPromiseGetDiction = js.native
+    def getDictionarySettings(requestOptions: RequestOptions): ReadonlyPromiseGetDiction = js.native
     
     def getLogs(): ReadonlyPromiseGetLogsRes = js.native
     def getLogs(requestOptions: RequestOptions): ReadonlyPromiseGetLogsRes = js.native
@@ -246,8 +278,14 @@ object algoliasearchMod {
     
     def initIndex(indexName: String): SearchIndex = js.native
     
-    def initRecommendation(): RecommendationClient = js.native
-    def initRecommendation(options: InitRecommendationOptions): RecommendationClient = js.native
+    def initPersonalization(): PersonalizationClient = js.native
+    def initPersonalization(options: InitPersonalizationOptions): PersonalizationClient = js.native
+    
+    /**
+      * @deprecated Use `initPersonalization` instead.
+      */
+    def initRecommendation(): PersonalizationClient = js.native
+    def initRecommendation(options: InitPersonalizationOptions): PersonalizationClient = js.native
     
     def listApiKeys(): ReadonlyPromiseListApiKey = js.native
     def listApiKeys(requestOptions: RequestOptions): ReadonlyPromiseListApiKey = js.native
@@ -279,17 +317,37 @@ object algoliasearchMod {
     def removeUserID(userID: String): ReadonlyPromiseRemoveUser = js.native
     def removeUserID(userID: String, requestOptions: RequestOptions): ReadonlyPromiseRemoveUser = js.native
     
+    def replaceDictionaryEntries(dictionary: DictionaryName, entries: js.Array[DictionaryEntry]): ReadonlyWaitablePromiseDi = js.native
+    def replaceDictionaryEntries(
+      dictionary: DictionaryName,
+      entries: js.Array[DictionaryEntry],
+      requestOptions: RequestOptions & DictionaryEntriesOptions
+    ): ReadonlyWaitablePromiseDi = js.native
+    
     def restoreApiKey(apiKey: String): ReadonlyWaitablePromiseRe = js.native
     def restoreApiKey(apiKey: String, requestOptions: RequestOptions): ReadonlyWaitablePromiseRe = js.native
     
+    def saveDictionaryEntries(dictionary: DictionaryName, entries: js.Array[DictionaryEntry]): ReadonlyWaitablePromiseDi = js.native
+    def saveDictionaryEntries(
+      dictionary: DictionaryName,
+      entries: js.Array[DictionaryEntry],
+      requestOptions: RequestOptions & DictionaryEntriesOptions
+    ): ReadonlyWaitablePromiseDi = js.native
+    
     def search[TObject](queries: js.Array[MultipleQueriesQuery]): js.Promise[MultipleQueriesResponse[TObject]] = js.native
     def search[TObject](queries: js.Array[MultipleQueriesQuery], requestOptions: RequestOptions & MultipleQueriesOptions): js.Promise[MultipleQueriesResponse[TObject]] = js.native
+    
+    def searchDictionaryEntries(dictionary: DictionaryName, query: String): ReadonlyPromiseSearchDict = js.native
+    def searchDictionaryEntries(dictionary: DictionaryName, query: String, requestOptions: RequestOptions): ReadonlyPromiseSearchDict = js.native
     
     def searchForFacetValues(queries: js.Array[IndexName]): ReadonlyPromiseArraySearc = js.native
     def searchForFacetValues(queries: js.Array[IndexName], requestOptions: RequestOptions): ReadonlyPromiseArraySearc = js.native
     
     def searchUserIDs(query: String): ReadonlyPromiseSearchUser = js.native
     def searchUserIDs(query: String, requestOptions: SearchUserIDsOptions & RequestOptions): ReadonlyPromiseSearchUser = js.native
+    
+    def setDictionarySettings(settings: DictionarySettings): ReadonlyWaitablePromiseDi = js.native
+    def setDictionarySettings(settings: DictionarySettings, requestOptions: RequestOptions): ReadonlyWaitablePromiseDi = js.native
     
     def updateApiKey(apiKey: String): ReadonlyWaitablePromiseUp = js.native
     def updateApiKey(apiKey: String, requestOptions: UpdateApiKeyOptionsPickRe): ReadonlyWaitablePromiseUp = js.native
@@ -342,12 +400,12 @@ object algoliasearchMod {
     def exists(): ReadonlyPromiseboolean = js.native
     def exists(requestOptions: RequestOptions): ReadonlyPromiseboolean = js.native
     
-    def findAnswers(query: String, queryLanguages: js.Array[String]): ReadonlyPromiseFindAnswer = js.native
-    def findAnswers(
+    def findAnswers[TObject](query: String, queryLanguages: js.Array[String]): js.Promise[FindAnswersResponse[TObject]] = js.native
+    def findAnswers[TObject](
       query: String,
       queryLanguages: js.Array[String],
       requestOptions: RequestOptions & FindAnswersOptions
-    ): ReadonlyPromiseFindAnswer = js.native
+    ): js.Promise[FindAnswersResponse[TObject]] = js.native
     
     def findObject[TObject](callback: js.Function1[/* object */ TObject & ObjectWithObjectID, Boolean]): js.Promise[FindObjectResponse[TObject]] = js.native
     def findObject[TObject](
@@ -372,21 +430,21 @@ object algoliasearchMod {
     def getSynonym(objectID: String): ReadonlyPromiseSynonym = js.native
     def getSynonym(objectID: String, requestOptions: RequestOptions): ReadonlyPromiseSynonym = js.native
     
-    def partialUpdateObject(`object`: Record[String, js.Any]): ReadonlyWaitablePromisePa = js.native
+    def partialUpdateObject(`object`: Record[String, Any]): ReadonlyWaitablePromisePa = js.native
     def partialUpdateObject(
-      `object`: Record[String, js.Any],
+      `object`: Record[String, Any],
       requestOptions: RequestOptions & ChunkOptions & PartialUpdateObjectsOptions
     ): ReadonlyWaitablePromisePa = js.native
     
-    def partialUpdateObjects(objects: js.Array[Record[String, js.Any]]): ReadonlyWaitablePromiseCh = js.native
+    def partialUpdateObjects(objects: js.Array[Record[String, Any]]): ReadonlyWaitablePromiseCh = js.native
     def partialUpdateObjects(
-      objects: js.Array[Record[String, js.Any]],
+      objects: js.Array[Record[String, Any]],
       requestOptions: RequestOptions & ChunkOptions & PartialUpdateObjectsOptions
     ): ReadonlyWaitablePromiseCh = js.native
     
-    def replaceAllObjects(objects: js.Array[Record[String, js.Any]]): ReadonlyWaitablePromiseCh = js.native
+    def replaceAllObjects(objects: js.Array[Record[String, Any]]): ReadonlyWaitablePromiseCh = js.native
     def replaceAllObjects(
-      objects: js.Array[Record[String, js.Any]],
+      objects: js.Array[Record[String, Any]],
       requestOptions: ReplaceAllObjectsOptions & ChunkOptions & SaveObjectsOptions & RequestOptions
     ): ReadonlyWaitablePromiseCh = js.native
     
@@ -396,15 +454,12 @@ object algoliasearchMod {
     def replaceAllSynonyms(synonyms: js.Array[Synonym]): ReadonlyWaitablePromiseSaFinally = js.native
     def replaceAllSynonyms(synonyms: js.Array[Synonym], requestOptions: RequestOptionsPickSaveSyn): ReadonlyWaitablePromiseSaFinally = js.native
     
-    def saveObject(`object`: Record[String, js.Any]): ReadonlyWaitablePromiseSa = js.native
-    def saveObject(
-      `object`: Record[String, js.Any],
-      requestOptions: RequestOptions & ChunkOptions & SaveObjectsOptions
-    ): ReadonlyWaitablePromiseSa = js.native
+    def saveObject(`object`: Record[String, Any]): ReadonlyWaitablePromiseSa = js.native
+    def saveObject(`object`: Record[String, Any], requestOptions: RequestOptions & ChunkOptions & SaveObjectsOptions): ReadonlyWaitablePromiseSa = js.native
     
-    def saveObjects(objects: js.Array[Record[String, js.Any]]): ReadonlyWaitablePromiseCh = js.native
+    def saveObjects(objects: js.Array[Record[String, Any]]): ReadonlyWaitablePromiseCh = js.native
     def saveObjects(
-      objects: js.Array[Record[String, js.Any]],
+      objects: js.Array[Record[String, Any]],
       requestOptions: RequestOptions & ChunkOptions & SaveObjectsOptions
     ): ReadonlyWaitablePromiseCh = js.native
     

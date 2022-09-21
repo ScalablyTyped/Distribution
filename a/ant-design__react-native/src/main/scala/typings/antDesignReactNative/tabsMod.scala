@@ -11,7 +11,7 @@ object tabsMod {
   
   @JSImport("@ant-design/react-native/lib/tabs", JSImport.Default)
   @js.native
-  class default protected () extends Tabs {
+  open class default protected () extends Tabs {
     def this(props: PropsType) = this()
   }
   /* static members */

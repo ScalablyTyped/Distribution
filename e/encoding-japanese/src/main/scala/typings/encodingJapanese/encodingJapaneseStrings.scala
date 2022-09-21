@@ -101,6 +101,14 @@ object encodingJapaneseStrings {
   inline def arraybuffer: arraybuffer = "arraybuffer".asInstanceOf[arraybuffer]
   
   @js.native
+  sealed trait `html-entity` extends StObject
+  inline def `html-entity`: `html-entity` = "html-entity".asInstanceOf[`html-entity`]
+  
+  @js.native
+  sealed trait `html-entity-hex` extends StObject
+  inline def `html-entity-hex`: `html-entity-hex` = "html-entity-hex".asInstanceOf[`html-entity-hex`]
+  
+  @js.native
   sealed trait string extends StObject
   inline def string: string = "string".asInstanceOf[string]
 }

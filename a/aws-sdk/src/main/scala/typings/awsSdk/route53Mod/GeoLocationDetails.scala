@@ -27,7 +27,7 @@ trait GeoLocationDetails extends StObject {
   var CountryName: js.UndefOr[GeoLocationCountryName] = js.undefined
   
   /**
-    * The code for the subdivision. Route 53 currently supports only states in the United States.
+    * The code for the subdivision, such as a particular state within the United States. For a list of US state abbreviations, see Appendix B: Two–Letter State and Possession Abbreviations on the United States Postal Service website. For a list of all supported subdivision codes, use the ListGeoLocations API.
     */
   var SubdivisionCode: js.UndefOr[GeoLocationSubdivisionCode] = js.undefined
   

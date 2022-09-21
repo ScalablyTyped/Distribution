@@ -1,124 +1,53 @@
 package typings.aureliaTemplating.mod
 
+import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "PassThroughSlot")
 @js.native
-class PassThroughSlot () extends StObject {
-  def this(anchor: js.Any) = this()
-  def this(anchor: js.Any, name: js.Any) = this()
-  def this(anchor: Unit, name: js.Any) = this()
-  def this(anchor: js.Any, name: js.Any, destinationName: js.Any) = this()
-  def this(anchor: js.Any, name: Unit, destinationName: js.Any) = this()
-  def this(anchor: Unit, name: js.Any, destinationName: js.Any) = this()
-  def this(anchor: Unit, name: Unit, destinationName: js.Any) = this()
-  def this(anchor: js.Any, name: js.Any, destinationName: js.Any, fallbackFactory: js.Any) = this()
-  def this(anchor: js.Any, name: js.Any, destinationName: Unit, fallbackFactory: js.Any) = this()
-  def this(anchor: js.Any, name: Unit, destinationName: js.Any, fallbackFactory: js.Any) = this()
-  def this(anchor: js.Any, name: Unit, destinationName: Unit, fallbackFactory: js.Any) = this()
-  def this(anchor: Unit, name: js.Any, destinationName: js.Any, fallbackFactory: js.Any) = this()
-  def this(anchor: Unit, name: js.Any, destinationName: Unit, fallbackFactory: js.Any) = this()
-  def this(anchor: Unit, name: Unit, destinationName: js.Any, fallbackFactory: js.Any) = this()
-  def this(anchor: Unit, name: Unit, destinationName: Unit, fallbackFactory: js.Any) = this()
+open class PassThroughSlot protected () extends StObject {
+  def this(anchor: Any, name: Any, destinationName: Any, fallbackFactory: Any) = this()
+  
+  def addNode(view: View_, node: Node, projectionSource: ShadowSlot, index: Double): Unit = js.native
+  def addNode(view: View_, node: Node, projectionSource: ViewSlot, index: Double): Unit = js.native
+  
+  def attached(): Unit = js.native
+  
+  def bind(view: View_): Unit = js.native
+  
+  def created(ownerView: View_): Unit = js.native
+  
+  def detached(): Unit = js.native
   
   /**
-    * @param {View} view
-    * @param {Node} node
-    * @param {ViewSlot} projectionSource
-    * @param {number} index
-    */
-  def addNode(): js.Any = js.native
-  def addNode(view: js.Any): js.Any = js.native
-  def addNode(view: js.Any, node: js.Any): js.Any = js.native
-  def addNode(view: js.Any, node: js.Any, projectionSource: js.Any): js.Any = js.native
-  def addNode(view: js.Any, node: js.Any, projectionSource: js.Any, index: js.Any): js.Any = js.native
-  def addNode(view: js.Any, node: js.Any, projectionSource: Unit, index: js.Any): js.Any = js.native
-  def addNode(view: js.Any, node: Unit, projectionSource: js.Any): js.Any = js.native
-  def addNode(view: js.Any, node: Unit, projectionSource: js.Any, index: js.Any): js.Any = js.native
-  def addNode(view: js.Any, node: Unit, projectionSource: Unit, index: js.Any): js.Any = js.native
-  def addNode(view: Unit, node: js.Any): js.Any = js.native
-  def addNode(view: Unit, node: js.Any, projectionSource: js.Any): js.Any = js.native
-  def addNode(view: Unit, node: js.Any, projectionSource: js.Any, index: js.Any): js.Any = js.native
-  def addNode(view: Unit, node: js.Any, projectionSource: Unit, index: js.Any): js.Any = js.native
-  def addNode(view: Unit, node: Unit, projectionSource: js.Any): js.Any = js.native
-  def addNode(view: Unit, node: Unit, projectionSource: js.Any, index: js.Any): js.Any = js.native
-  def addNode(view: Unit, node: Unit, projectionSource: Unit, index: js.Any): js.Any = js.native
+  	 * Indicate whether this slot should render fallback default slot content
+  	 */
+  def needsFallbackRendering: Boolean = js.native
   
-  def attached(): js.Any = js.native
+  def passThroughTo(destinationSlot: PassThroughSlot): Unit = js.native
+  def passThroughTo(destinationSlot: ShadowSlot): Unit = js.native
   
+  def projectFrom(view: View_, projectionSource: ShadowSlot): Unit = js.native
+  def projectFrom(view: View_, projectionSource: ViewSlot): Unit = js.native
+  
+  def removeAll(projectionSource: ShadowSlot): Unit = js.native
+  def removeAll(projectionSource: ViewSlot): Unit = js.native
+  
+  def removeView(view: View_, projectionSource: ShadowSlot): Unit = js.native
+  def removeView(view: View_, projectionSource: ViewSlot): Unit = js.native
+  
+  def renderFallbackContent(view: View_, nodes: js.Array[Node], projectionSource: ShadowSlot): Unit = js.native
+  def renderFallbackContent(view: View_, nodes: js.Array[Node], projectionSource: ShadowSlot, index: Double): Unit = js.native
   /**
-    * @param {View} view
-    */
-  def bind(): js.Any = js.native
-  def bind(view: js.Any): js.Any = js.native
+  	 * @param view
+  	 * @param nodes
+  	 * @param projectionSource
+  	 * @param index
+  	 */
+  def renderFallbackContent(view: View_, nodes: js.Array[Node], projectionSource: ViewSlot): Unit = js.native
+  def renderFallbackContent(view: View_, nodes: js.Array[Node], projectionSource: ViewSlot, index: Double): Unit = js.native
   
-  /**
-    * @param {View} ownerView
-    */
-  def created(): js.Any = js.native
-  def created(ownerView: js.Any): js.Any = js.native
-  
-  def detached(): js.Any = js.native
-  
-  /**
-    * Indicate whether this slot should render fallback default slot content
-    */
-  var needsFallbackRendering: js.Any = js.native
-  
-  /**
-    * @param {PassThroughSlot | ShadowSlot} destinationSlot
-    */
-  def passThroughTo(): js.Any = js.native
-  def passThroughTo(destinationSlot: js.Any): js.Any = js.native
-  
-  /**
-    * @param {View} view
-    * @param {ViewSlot} projectionSource
-    */
-  def projectFrom(): js.Any = js.native
-  def projectFrom(view: js.Any): js.Any = js.native
-  def projectFrom(view: js.Any, projectionSource: js.Any): js.Any = js.native
-  def projectFrom(view: Unit, projectionSource: js.Any): js.Any = js.native
-  
-  /**
-    * @param {ViewSlot} projectionSource
-    */
-  def removeAll(): js.Any = js.native
-  def removeAll(projectionSource: js.Any): js.Any = js.native
-  
-  /**
-    * @param {View} view
-    * @param {ViewSlot} projectionSource
-    */
-  def removeView(): js.Any = js.native
-  def removeView(view: js.Any): js.Any = js.native
-  def removeView(view: js.Any, projectionSource: js.Any): js.Any = js.native
-  def removeView(view: Unit, projectionSource: js.Any): js.Any = js.native
-  
-  /**
-    * @param {View} view
-    * @param {Node[]} nodes
-    * @param {ViewSlot} projectionSource
-    * @param {number} index
-    */
-  def renderFallbackContent(): js.Any = js.native
-  def renderFallbackContent(view: js.Any): js.Any = js.native
-  def renderFallbackContent(view: js.Any, nodes: js.Any): js.Any = js.native
-  def renderFallbackContent(view: js.Any, nodes: js.Any, projectionSource: js.Any): js.Any = js.native
-  def renderFallbackContent(view: js.Any, nodes: js.Any, projectionSource: js.Any, index: js.Any): js.Any = js.native
-  def renderFallbackContent(view: js.Any, nodes: js.Any, projectionSource: Unit, index: js.Any): js.Any = js.native
-  def renderFallbackContent(view: js.Any, nodes: Unit, projectionSource: js.Any): js.Any = js.native
-  def renderFallbackContent(view: js.Any, nodes: Unit, projectionSource: js.Any, index: js.Any): js.Any = js.native
-  def renderFallbackContent(view: js.Any, nodes: Unit, projectionSource: Unit, index: js.Any): js.Any = js.native
-  def renderFallbackContent(view: Unit, nodes: js.Any): js.Any = js.native
-  def renderFallbackContent(view: Unit, nodes: js.Any, projectionSource: js.Any): js.Any = js.native
-  def renderFallbackContent(view: Unit, nodes: js.Any, projectionSource: js.Any, index: js.Any): js.Any = js.native
-  def renderFallbackContent(view: Unit, nodes: js.Any, projectionSource: Unit, index: js.Any): js.Any = js.native
-  def renderFallbackContent(view: Unit, nodes: Unit, projectionSource: js.Any): js.Any = js.native
-  def renderFallbackContent(view: Unit, nodes: Unit, projectionSource: js.Any, index: js.Any): js.Any = js.native
-  def renderFallbackContent(view: Unit, nodes: Unit, projectionSource: Unit, index: js.Any): js.Any = js.native
-  
-  def unbind(): js.Any = js.native
+  def unbind(): Unit = js.native
 }

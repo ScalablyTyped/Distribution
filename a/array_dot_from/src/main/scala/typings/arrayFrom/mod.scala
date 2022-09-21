@@ -1,7 +1,6 @@
 package typings.arrayFrom
 
 import typings.std.ArrayLike
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,11 +15,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   inline def apply[T](arrayLike: ArrayLike[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].apply(arrayLike.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
-  inline def apply[T](iterable: Iterable[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].apply(iterable.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def apply[T](iterable: js.Iterable[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].apply(iterable.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   inline def apply[T, U](arrayLike: ArrayLike[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U]): js.Array[U] = (^.asInstanceOf[js.Dynamic].apply(arrayLike.asInstanceOf[js.Any], mapfn.asInstanceOf[js.Any])).asInstanceOf[js.Array[U]]
-  inline def apply[T, U](arrayLike: ArrayLike[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U], thisArg: js.Any): js.Array[U] = (^.asInstanceOf[js.Dynamic].apply(arrayLike.asInstanceOf[js.Any], mapfn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Array[U]]
-  inline def apply[T, U](iterable: Iterable[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U]): js.Array[U] = (^.asInstanceOf[js.Dynamic].apply(iterable.asInstanceOf[js.Any], mapfn.asInstanceOf[js.Any])).asInstanceOf[js.Array[U]]
-  inline def apply[T, U](iterable: Iterable[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U], thisArg: js.Any): js.Array[U] = (^.asInstanceOf[js.Dynamic].apply(iterable.asInstanceOf[js.Any], mapfn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Array[U]]
+  inline def apply[T, U](arrayLike: ArrayLike[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U], thisArg: Any): js.Array[U] = (^.asInstanceOf[js.Dynamic].apply(arrayLike.asInstanceOf[js.Any], mapfn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Array[U]]
+  inline def apply[T, U](iterable: js.Iterable[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U]): js.Array[U] = (^.asInstanceOf[js.Dynamic].apply(iterable.asInstanceOf[js.Any], mapfn.asInstanceOf[js.Any])).asInstanceOf[js.Array[U]]
+  inline def apply[T, U](iterable: js.Iterable[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U], thisArg: Any): js.Array[U] = (^.asInstanceOf[js.Dynamic].apply(iterable.asInstanceOf[js.Any], mapfn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Array[U]]
   
   @JSImport("array.from", JSImport.Namespace)
   @js.native
@@ -44,7 +43,7 @@ object mod {
     * @param mapfn A mapping function to call on every element of the array.
     * @param thisArg Value of `this` used to invoke the mapfn.
     */
-  inline def implementation[T](iterable: Iterable[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("implementation")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  inline def implementation[T](iterable: js.Iterable[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("implementation")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   /**
     * Creates an array from an array-like or iterable object.
     * @param iterable An iterable object to convert to an array.
@@ -58,21 +57,21 @@ object mod {
     * @param mapfn A mapping function to call on every element of the array.
     * @param thisArg Value of `this` used to invoke the mapfn.
     */
-  inline def implementation[T, U](arrayLike: ArrayLike[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U], thisArg: js.Any): js.Array[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("implementation")(arrayLike.asInstanceOf[js.Any], mapfn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Array[U]]
+  inline def implementation[T, U](arrayLike: ArrayLike[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U], thisArg: Any): js.Array[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("implementation")(arrayLike.asInstanceOf[js.Any], mapfn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Array[U]]
   /**
     * Creates an array from an array-like or iterable object.
     * @param iterable An iterable object to convert to an array.
     * @param mapfn A mapping function to call on every element of the array.
     * @param thisArg Value of `this` used to invoke the mapfn.
     */
-  inline def implementation[T, U](iterable: Iterable[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U]): js.Array[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("implementation")(iterable.asInstanceOf[js.Any], mapfn.asInstanceOf[js.Any])).asInstanceOf[js.Array[U]]
+  inline def implementation[T, U](iterable: js.Iterable[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U]): js.Array[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("implementation")(iterable.asInstanceOf[js.Any], mapfn.asInstanceOf[js.Any])).asInstanceOf[js.Array[U]]
   /**
     * Creates an array from an array-like or iterable object.
     * @param iterable An iterable object to convert to an array.
     * @param mapfn A mapping function to call on every element of the array.
     * @param thisArg Value of `this` used to invoke the mapfn.
     */
-  inline def implementation[T, U](iterable: Iterable[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U], thisArg: js.Any): js.Array[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("implementation")(iterable.asInstanceOf[js.Any], mapfn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Array[U]]
+  inline def implementation[T, U](iterable: js.Iterable[T], mapfn: js.Function2[/* v */ T, /* k */ Double, U], thisArg: Any): js.Array[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("implementation")(iterable.asInstanceOf[js.Any], mapfn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Array[U]]
   
   inline def shim(): /* import warning: importer.ImportType#apply Failed type conversion: typeof ArrayFrom */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("shim")().asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: typeof ArrayFrom */ js.Any]
 }

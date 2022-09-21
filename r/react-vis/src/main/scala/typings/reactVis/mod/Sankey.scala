@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-vis", "Sankey")
 @js.native
-class Sankey[T] protected ()
-  extends Component[SankeyProps & T, js.Object, js.Any] {
+open class Sankey[T] protected ()
+  extends Component[SankeyProps & T, js.Object, Any] {
   def this(props: SankeyProps & T) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: SankeyProps & T, context: js.Any) = this()
+  def this(props: SankeyProps & T, context: Any) = this()
 }

@@ -1,11 +1,11 @@
 package typings.materialComponentsWeb.mod
 
+import typings.materialBase.Element
 import typings.materialTextfield.anon.PartialMDCTextFieldAdapte
 import typings.materialTextfield.anon.PartialMDCTextFieldCharac
 import typings.materialTextfield.anon.PartialMDCTextFieldFounda
 import typings.materialTextfield.anon.PartialMDCTextFieldHelper
 import typings.materialTextfield.anon.PartialMDCTextFieldIconAd
-import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +13,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object textField {
   
   /**
-    * Label should always float for these types as they show some UI even if value is empty.
+    * Label should always float for these types as they show some UI even if value
+    * is empty.
     */
   @JSImport("material-components-web", "textField.ALWAYS_FLOAT_TYPES")
   @js.native
@@ -21,13 +22,13 @@ object textField {
   
   @JSImport("material-components-web", "textField.MDCTextField")
   @js.native
-  class MDCTextField protected ()
+  open class MDCTextField protected ()
     extends typings.materialTextfield.mod.MDCTextField {
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialTextfield.materialTextfieldFoundationMod.MDCTextFieldFoundation,
-      args: js.Any*
+      args: Any*
     ) = this()
   }
   /* static members */
@@ -37,18 +38,18 @@ object textField {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: Element): typings.materialTextfield.materialTextfieldMod.MDCTextField = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTextfield.materialTextfieldMod.MDCTextField]
+    inline def attachTo(root: typings.std.Element): typings.materialTextfield.materialTextfieldMod.MDCTextField = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTextfield.materialTextfieldMod.MDCTextField]
   }
   
   @JSImport("material-components-web", "textField.MDCTextFieldCharacterCounter")
   @js.native
-  class MDCTextFieldCharacterCounter protected ()
+  open class MDCTextFieldCharacterCounter protected ()
     extends typings.materialTextfield.mod.MDCTextFieldCharacterCounter {
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialTextfield.foundationMod.MDCTextFieldCharacterCounterFoundation,
-      args: js.Any*
+      args: Any*
     ) = this()
   }
   /* static members */
@@ -58,12 +59,12 @@ object textField {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: Element): typings.materialTextfield.componentMod.MDCTextFieldCharacterCounter = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTextfield.componentMod.MDCTextFieldCharacterCounter]
+    inline def attachTo(root: typings.std.Element): typings.materialTextfield.componentMod.MDCTextFieldCharacterCounter = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTextfield.componentMod.MDCTextFieldCharacterCounter]
   }
   
   @JSImport("material-components-web", "textField.MDCTextFieldCharacterCounterFoundation")
   @js.native
-  class MDCTextFieldCharacterCounterFoundation ()
+  open class MDCTextFieldCharacterCounterFoundation ()
     extends typings.materialTextfield.mod.MDCTextFieldCharacterCounterFoundation {
     def this(adapter: PartialMDCTextFieldCharac) = this()
   }
@@ -74,7 +75,7 @@ object textField {
     * @param adapter
     * @param foundationMap Map from subcomponent names to their subfoundations.
     */
-  class MDCTextFieldFoundation ()
+  open class MDCTextFieldFoundation ()
     extends typings.materialTextfield.mod.MDCTextFieldFoundation {
     def this(adapter: PartialMDCTextFieldAdapte) = this()
     def this(adapter: Unit, foundationMap: PartialMDCTextFieldFounda) = this()
@@ -83,13 +84,13 @@ object textField {
   
   @JSImport("material-components-web", "textField.MDCTextFieldHelperText")
   @js.native
-  class MDCTextFieldHelperText protected ()
+  open class MDCTextFieldHelperText protected ()
     extends typings.materialTextfield.mod.MDCTextFieldHelperText {
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialTextfield.helperTextFoundationMod.MDCTextFieldHelperTextFoundation,
-      args: js.Any*
+      args: Any*
     ) = this()
   }
   /* static members */
@@ -99,25 +100,25 @@ object textField {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: Element): typings.materialTextfield.helperTextComponentMod.MDCTextFieldHelperText = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTextfield.helperTextComponentMod.MDCTextFieldHelperText]
+    inline def attachTo(root: typings.std.Element): typings.materialTextfield.helperTextComponentMod.MDCTextFieldHelperText = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTextfield.helperTextComponentMod.MDCTextFieldHelperText]
   }
   
   @JSImport("material-components-web", "textField.MDCTextFieldHelperTextFoundation")
   @js.native
-  class MDCTextFieldHelperTextFoundation ()
+  open class MDCTextFieldHelperTextFoundation ()
     extends typings.materialTextfield.mod.MDCTextFieldHelperTextFoundation {
     def this(adapter: PartialMDCTextFieldHelper) = this()
   }
   
   @JSImport("material-components-web", "textField.MDCTextFieldIcon")
   @js.native
-  class MDCTextFieldIcon protected ()
+  open class MDCTextFieldIcon protected ()
     extends typings.materialTextfield.mod.MDCTextFieldIcon {
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialTextfield.iconFoundationMod.MDCTextFieldIconFoundation,
-      args: js.Any*
+      args: Any*
     ) = this()
   }
   /* static members */
@@ -127,46 +128,25 @@ object textField {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: Element): typings.materialTextfield.iconComponentMod.MDCTextFieldIcon = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTextfield.iconComponentMod.MDCTextFieldIcon]
+    inline def attachTo(root: typings.std.Element): typings.materialTextfield.iconComponentMod.MDCTextFieldIcon = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTextfield.iconComponentMod.MDCTextFieldIcon]
   }
   
   @JSImport("material-components-web", "textField.MDCTextFieldIconFoundation")
   @js.native
-  class MDCTextFieldIconFoundation ()
+  open class MDCTextFieldIconFoundation ()
     extends typings.materialTextfield.mod.MDCTextFieldIconFoundation {
     def this(adapter: PartialMDCTextFieldIconAd) = this()
   }
   
   /**
-    * Whitelist based off of https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/Constraint_validation
+    * Whitelist based off of
+    * https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/Constraint_validation
     * under the "Validation-related attributes" section.
     */
   @JSImport("material-components-web", "textField.VALIDATION_ATTR_WHITELIST")
   @js.native
   val VALIDATION_ATTR_WHITELIST: js.Array[String] = js.native
   
-  /**
-    * @license
-    * Copyright 2019 Google Inc.
-    *
-    * Permission is hereby granted, free of charge, to any person obtaining a copy
-    * of this software and associated documentation files (the "Software"), to deal
-    * in the Software without restriction, including without limitation the rights
-    * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-    * copies of the Software, and to permit persons to whom the Software is
-    * furnished to do so, subject to the following conditions:
-    *
-    * The above copyright notice and this permission notice shall be included in
-    * all copies or substantial portions of the Software.
-    *
-    * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-    * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-    * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-    * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-    * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-    * THE SOFTWARE.
-    */
   object characterCountCssClasses {
     
     @JSImport("material-components-web", "textField.characterCountCssClasses")
@@ -242,6 +222,11 @@ object textField {
     def TEXTAREA: String = js.native
     inline def TEXTAREA_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEXTAREA")(x.asInstanceOf[js.Any])
     
+    @JSImport("material-components-web", "textField.cssClasses.WITH_INTERNAL_COUNTER")
+    @js.native
+    def WITH_INTERNAL_COUNTER: String = js.native
+    inline def WITH_INTERNAL_COUNTER_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WITH_INTERNAL_COUNTER")(x.asInstanceOf[js.Any])
+    
     @JSImport("material-components-web", "textField.cssClasses.WITH_LEADING_ICON")
     @js.native
     def WITH_LEADING_ICON: String = js.native
@@ -253,28 +238,6 @@ object textField {
     inline def WITH_TRAILING_ICON_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WITH_TRAILING_ICON")(x.asInstanceOf[js.Any])
   }
   
-  /**
-    * @license
-    * Copyright 2016 Google Inc.
-    *
-    * Permission is hereby granted, free of charge, to any person obtaining a copy
-    * of this software and associated documentation files (the "Software"), to deal
-    * in the Software without restriction, including without limitation the rights
-    * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-    * copies of the Software, and to permit persons to whom the Software is
-    * furnished to do so, subject to the following conditions:
-    *
-    * The above copyright notice and this permission notice shall be included in
-    * all copies or substantial portions of the Software.
-    *
-    * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-    * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-    * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-    * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-    * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-    * THE SOFTWARE.
-    */
   object helperTextCssClasses {
     
     @JSImport("material-components-web", "textField.helperTextCssClasses")
@@ -331,28 +294,6 @@ object textField {
     inline def ROOT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROOT")(x.asInstanceOf[js.Any])
   }
   
-  /**
-    * @license
-    * Copyright 2016 Google Inc.
-    *
-    * Permission is hereby granted, free of charge, to any person obtaining a copy
-    * of this software and associated documentation files (the "Software"), to deal
-    * in the Software without restriction, including without limitation the rights
-    * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-    * copies of the Software, and to permit persons to whom the Software is
-    * furnished to do so, subject to the following conditions:
-    *
-    * The above copyright notice and this permission notice shall be included in
-    * all copies or substantial portions of the Software.
-    *
-    * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-    * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-    * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-    * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-    * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-    * THE SOFTWARE.
-    */
   object iconStrings {
     
     @JSImport("material-components-web", "textField.iconStrings")
@@ -382,28 +323,6 @@ object textField {
     inline def LABEL_SCALE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LABEL_SCALE")(x.asInstanceOf[js.Any])
   }
   
-  /**
-    * @license
-    * Copyright 2016 Google Inc.
-    *
-    * Permission is hereby granted, free of charge, to any person obtaining a copy
-    * of this software and associated documentation files (the "Software"), to deal
-    * in the Software without restriction, including without limitation the rights
-    * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-    * copies of the Software, and to permit persons to whom the Software is
-    * furnished to do so, subject to the following conditions:
-    *
-    * The above copyright notice and this permission notice shall be included in
-    * all copies or substantial portions of the Software.
-    *
-    * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-    * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-    * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-    * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-    * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-    * THE SOFTWARE.
-    */
   object strings {
     
     @JSImport("material-components-web", "textField.strings")

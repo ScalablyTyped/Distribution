@@ -14,10 +14,10 @@ trait BackupSelectionsListMember extends StObject {
   /**
     * The date and time a backup plan is created, in Unix format and Coordinated Universal Time (UTC). The value of CreationDate is accurate to milliseconds. For example, the value 1516925490.087 represents Friday, January 26, 2018 12:11:30.087 AM.
     */
-  var CreationDate: js.UndefOr[timestamp] = js.undefined
+  var CreationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * A unique string that identifies the request and allows failed requests to be retried without the risk of running the operation twice.
+    * A unique string that identifies the request and allows failed requests to be retried without the risk of running the operation twice. This parameter is optional. If used, this parameter must contain 1 to 50 alphanumeric or '-_.' characters.
     */
   var CreatorRequestId: js.UndefOr[String] = js.undefined
   
@@ -49,7 +49,7 @@ object BackupSelectionsListMember {
     
     inline def setBackupPlanIdUndefined: Self = StObject.set(x, "BackupPlanId", js.undefined)
     
-    inline def setCreationDate(value: timestamp): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     

@@ -6,19 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Timeout extends StObject {
   
-  var timeout: js.UndefOr[Double] = js.undefined
+  var timeout: Double
 }
 object Timeout {
   
-  inline def apply(): Timeout = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(timeout: Double): Timeout = {
+    val __obj = js.Dynamic.literal(timeout = timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[Timeout]
   }
   
   extension [Self <: Timeout](x: Self) {
     
     inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
-    
-    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

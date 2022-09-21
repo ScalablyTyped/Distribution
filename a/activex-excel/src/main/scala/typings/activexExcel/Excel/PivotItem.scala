@@ -58,7 +58,7 @@ trait PivotItem extends StObject {
   
   var ShowDetail: Boolean
   
-  val SourceName: js.Any
+  val SourceName: Any
   
   val SourceNameStandard: String
   
@@ -92,7 +92,7 @@ object PivotItem {
     Position: Double,
     RecordCount: Double,
     ShowDetail: Boolean,
-    SourceName: js.Any,
+    SourceName: Any,
     SourceNameStandard: String,
     StandardFormula: String,
     Value: String,
@@ -144,7 +144,7 @@ object PivotItem {
     
     inline def setShowDetail(value: Boolean): Self = StObject.set(x, "ShowDetail", value.asInstanceOf[js.Any])
     
-    inline def setSourceName(value: js.Any): Self = StObject.set(x, "SourceName", value.asInstanceOf[js.Any])
+    inline def setSourceName(value: Any): Self = StObject.set(x, "SourceName", value.asInstanceOf[js.Any])
     
     inline def setSourceNameStandard(value: String): Self = StObject.set(x, "SourceNameStandard", value.asInstanceOf[js.Any])
     

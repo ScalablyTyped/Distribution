@@ -33,7 +33,7 @@ object XMeaning {
     Meaning: String,
     acquire: () => Unit,
     getMeaning: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     querySynonyms: () => SafeArray[String],
     release: () => Unit
   ): XMeaning = {

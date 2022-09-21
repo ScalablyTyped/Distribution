@@ -13,9 +13,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * This object represents the font attributes (such as font name, font size, and color) for a chart object.
   *
-  * This object represents the font attributes (font name, font size, color, etc.) for a chart object.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @js.native
@@ -24,17 +24,17 @@ trait ChartFont
      with ClientObject {
   
   /**
-    *
     * Represents the bold status of font.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var bold: Boolean = js.native
   
   /**
-    *
     * HTML color code representation of the text color (e.g., #FF0000 represents Red).
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var color: String = js.native
@@ -44,9 +44,9 @@ trait ChartFont
   var context_ChartFont: RequestContext = js.native
   
   /**
-    *
     * Represents the italic status of the font.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var italic: Boolean = js.native
@@ -63,23 +63,17 @@ trait ChartFont
   def load(propertyNames: js.Array[String]): ChartFont = js.native
   
   /**
-    *
     * Font name (e.g., "Calibri")
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var name: String = js.native
   
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ChartFont): Unit = js.native
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.ChartFont): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */
@@ -87,9 +81,9 @@ trait ChartFont
   def set(properties: ChartFontUpdateData, options: UpdateOptions): Unit = js.native
   
   /**
-    *
     * Size of the font (e.g., 11)
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var size: Double = js.native
@@ -101,9 +95,9 @@ trait ChartFont
   def toJSON(): ChartFontData = js.native
   
   /**
+    * Type of underline applied to the font. See `Excel.ChartUnderlineStyle` for details.
     *
-    * Type of underline applied to the font. See Excel.ChartUnderlineStyle for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var underline: ChartUnderlineStyle | None | Single = js.native

@@ -10,15 +10,12 @@ SMS tool that can help you properly count the length of an SMS, calculate the pa
 | ------------------ | :-------------: |
 | Full name          | smshelper |
 | Keywords           | sms, smshelper, sms-helper, smscounter, sms-counter |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 3151 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 828.3333333333334 |
+| # stars            | 5.0 |
 
 ## Links
-- [Homepage](https://github.com/jaygel179/smshelper.js#readme)
-- [Bugs](https://github.com/jaygel179/smshelper.js/issues)
-- [Repository](https://github.com/jaygel179/smshelper.js)
 - [Npm](https://www.npmjs.com/package/smshelper)
     
 

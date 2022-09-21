@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("p2", "OverlapKeeperRecordPool")
 @js.native
-class OverlapKeeperRecordPool () extends Pool {
+open class OverlapKeeperRecordPool () extends Pool {
   def this(options: PoolOptions) = this()
   
   def create(): OverlapKeeperRecord = js.native

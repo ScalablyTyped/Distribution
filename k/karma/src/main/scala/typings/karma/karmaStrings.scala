@@ -129,12 +129,6 @@ object karmaStrings {
   inline def css: css = "css".asInstanceOf[css]
   
   @js.native
-  sealed trait dart
-    extends StObject
-       with FilePatternTypes
-  inline def dart: dart = "dart".asInstanceOf[dart]
-  
-  @js.native
   sealed trait debug_ extends StObject
   inline def debug_ : debug_ = "debug".asInstanceOf[debug_]
   

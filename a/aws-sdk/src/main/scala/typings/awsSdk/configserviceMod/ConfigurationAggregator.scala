@@ -22,19 +22,19 @@ trait ConfigurationAggregator extends StObject {
   var ConfigurationAggregatorName: js.UndefOr[typings.awsSdk.configserviceMod.ConfigurationAggregatorName] = js.undefined
   
   /**
-    * AWS service that created the configuration aggregator.
+    * Amazon Web Services service that created the configuration aggregator.
     */
   var CreatedBy: js.UndefOr[StringWithCharLimit256] = js.undefined
   
   /**
     * The time stamp when the configuration aggregator was created.
     */
-  var CreationTime: js.UndefOr[Date] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The time of the last update.
     */
-  var LastUpdatedTime: js.UndefOr[Date] = js.undefined
+  var LastUpdatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Provides an organization and list of regions to be aggregated.
@@ -54,7 +54,7 @@ object ConfigurationAggregator {
     
     inline def setAccountAggregationSourcesUndefined: Self = StObject.set(x, "AccountAggregationSources", js.undefined)
     
-    inline def setAccountAggregationSourcesVarargs(value: AccountAggregationSource*): Self = StObject.set(x, "AccountAggregationSources", js.Array(value :_*))
+    inline def setAccountAggregationSourcesVarargs(value: AccountAggregationSource*): Self = StObject.set(x, "AccountAggregationSources", js.Array(value*))
     
     inline def setConfigurationAggregatorArn(value: ConfigurationAggregatorArn): Self = StObject.set(x, "ConfigurationAggregatorArn", value.asInstanceOf[js.Any])
     
@@ -68,11 +68,11 @@ object ConfigurationAggregator {
     
     inline def setCreatedByUndefined: Self = StObject.set(x, "CreatedBy", js.undefined)
     
-    inline def setCreationTime(value: Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
-    inline def setLastUpdatedTime(value: Date): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTime(value: js.Date): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedTimeUndefined: Self = StObject.set(x, "LastUpdatedTime", js.undefined)
     

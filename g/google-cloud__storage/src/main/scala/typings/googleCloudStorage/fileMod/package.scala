@@ -1,150 +1,112 @@
 package typings.googleCloudStorage.fileMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.googleCloudStorage.fileMod.^
+import typings.googleCloudStorage.serviceObjectMod.Metadata
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def STORAGE_POST_POLICY_BASE_URL: /* "https://storage.googleapis.com" */ java.lang.String = typings.googleCloudStorage.fileMod.^.asInstanceOf[js.Dynamic].selectDynamic("STORAGE_POST_POLICY_BASE_URL").asInstanceOf[/* "https://storage.googleapis.com" */ java.lang.String]
+inline def STORAGE_POST_POLICY_BASE_URL: /* "https://storage.googleapis.com" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("STORAGE_POST_POLICY_BASE_URL").asInstanceOf[/* "https://storage.googleapis.com" */ String]
 
 type CopyCallback = js.Function3[
-/* err */ typings.std.Error | scala.Null, 
-/* file */ js.UndefOr[typings.googleCloudStorage.fileMod.File | scala.Null], 
-/* apiResponse */ js.UndefOr[typings.googleCloudCommon.serviceObjectMod.Metadata], 
-scala.Unit]
+/* err */ js.Error | Null, 
+/* file */ js.UndefOr[File | Null], 
+/* apiResponse */ js.UndefOr[Metadata], 
+Unit]
 
-type CopyResponse = js.Tuple2[
-typings.googleCloudStorage.fileMod.File, 
-typings.googleCloudCommon.serviceObjectMod.Metadata]
+type CopyResponse = js.Tuple2[File, Metadata]
 
-type CreateResumableUploadCallback = js.Function2[
-/* err */ typings.std.Error | scala.Null, 
-/* uri */ js.UndefOr[java.lang.String], 
-scala.Unit]
+type CreateResumableUploadCallback = js.Function2[/* err */ js.Error | Null, /* uri */ js.UndefOr[String], Unit]
 
-type CreateResumableUploadResponse = js.Array[java.lang.String]
+type CreateResumableUploadResponse = js.Array[String]
 
-type DeleteFileCallback = js.Function2[
-/* err */ typings.std.Error | scala.Null, 
-/* apiResponse */ js.UndefOr[typings.googleCloudCommon.serviceObjectMod.Metadata], 
-scala.Unit]
+type DeleteFileCallback = js.Function2[/* err */ js.Error | Null, /* apiResponse */ js.UndefOr[Metadata], Unit]
 
-type DeleteFileResponse = js.Array[typings.googleCloudCommon.serviceObjectMod.Metadata]
+type DeleteFileResponse = js.Array[Metadata]
 
-type DownloadCallback = js.Function2[
-/* err */ typings.googleCloudStorage.fileMod.RequestError | scala.Null, 
-/* contents */ typings.node.Buffer, 
-scala.Unit]
+type DownloadCallback = js.Function2[/* err */ RequestError | Null, /* contents */ Buffer, Unit]
 
-type DownloadResponse = js.Array[typings.node.Buffer]
+type DownloadResponse = js.Array[Buffer]
 
-type FileExistsCallback = js.Function2[
-/* err */ typings.std.Error | scala.Null, 
-/* exists */ js.UndefOr[scala.Boolean], 
-scala.Unit]
+type FileExistsCallback = js.Function2[/* err */ js.Error | Null, /* exists */ js.UndefOr[Boolean], Unit]
 
-type FileExistsResponse = js.Array[scala.Boolean]
+type FileExistsResponse = js.Array[Boolean]
 
-type GenerateSignedPostPolicyV2Callback = typings.googleCloudStorage.fileMod.GetSignedPolicyCallback
+type GenerateSignedPostPolicyV2Callback = js.Function2[/* err */ js.Error | Null, /* policy */ js.UndefOr[PolicyDocument], Unit]
 
-type GenerateSignedPostPolicyV2Options = typings.googleCloudStorage.fileMod.GetSignedPolicyOptions
+type GenerateSignedPostPolicyV2Response = js.Array[PolicyDocument]
 
-type GenerateSignedPostPolicyV2Response = typings.googleCloudStorage.fileMod.GetSignedPolicyResponse
+type GenerateSignedPostPolicyV4Callback = js.Function2[/* err */ js.Error | Null, /* output */ js.UndefOr[SignedPostPolicyV4Output], Unit]
 
-type GenerateSignedPostPolicyV4Callback = js.Function2[
-/* err */ typings.std.Error | scala.Null, 
-/* output */ js.UndefOr[typings.googleCloudStorage.fileMod.SignedPostPolicyV4Output], 
-scala.Unit]
-
-type GenerateSignedPostPolicyV4Response = js.Array[typings.googleCloudStorage.fileMod.SignedPostPolicyV4Output]
+type GenerateSignedPostPolicyV4Response = js.Array[SignedPostPolicyV4Output]
 
 type GetExpirationDateCallback = js.Function3[
-/* err */ typings.std.Error | scala.Null, 
-/* expirationDate */ js.UndefOr[typings.std.Date | scala.Null], 
-/* apiResponse */ js.UndefOr[typings.googleCloudCommon.serviceObjectMod.Metadata], 
-scala.Unit]
+/* err */ js.Error | Null, 
+/* expirationDate */ js.UndefOr[js.Date | Null], 
+/* apiResponse */ js.UndefOr[Metadata], 
+Unit]
 
-type GetExpirationDateResponse = js.Array[typings.std.Date]
+type GetExpirationDateResponse = js.Array[js.Date]
 
 type GetFileCallback = js.Function3[
-/* err */ typings.std.Error | scala.Null, 
-/* file */ js.UndefOr[typings.googleCloudStorage.fileMod.File], 
-/* apiResponse */ js.UndefOr[typings.googleCloudCommon.serviceObjectMod.Metadata], 
-scala.Unit]
+/* err */ js.Error | Null, 
+/* file */ js.UndefOr[File], 
+/* apiResponse */ js.UndefOr[Metadata], 
+Unit]
 
 type GetFileMetadataCallback = js.Function3[
-/* err */ typings.std.Error | scala.Null, 
-/* metadata */ js.UndefOr[typings.googleCloudCommon.serviceObjectMod.Metadata], 
-/* apiResponse */ js.UndefOr[typings.googleCloudCommon.serviceObjectMod.Metadata], 
-scala.Unit]
+/* err */ js.Error | Null, 
+/* metadata */ js.UndefOr[Metadata], 
+/* apiResponse */ js.UndefOr[Metadata], 
+Unit]
 
-type GetFileMetadataResponse = js.Tuple2[
-typings.googleCloudCommon.serviceObjectMod.Metadata, 
-typings.googleCloudCommon.serviceObjectMod.Metadata]
+type GetFileMetadataResponse = js.Tuple2[Metadata, Metadata]
 
-type GetFileResponse = js.Tuple2[
-typings.googleCloudStorage.fileMod.File, 
-typings.googleCloudCommon.serviceObjectMod.Metadata]
+type GetFileResponse = js.Tuple2[File, Metadata]
 
-type GetSignedPolicyCallback = js.Function2[
-/* err */ typings.std.Error | scala.Null, 
-/* policy */ js.UndefOr[typings.googleCloudStorage.fileMod.PolicyDocument], 
-scala.Unit]
+type IsPublicCallback = js.Function2[/* err */ js.Error | Null, /* resp */ js.UndefOr[Boolean], Unit]
 
-type GetSignedPolicyResponse = js.Array[typings.googleCloudStorage.fileMod.PolicyDocument]
+type IsPublicResponse = js.Array[Boolean]
 
-type IsPublicCallback = js.Function2[
-/* err */ typings.std.Error | scala.Null, 
-/* resp */ js.UndefOr[scala.Boolean], 
-scala.Unit]
+type MakeFilePrivateCallback = SetFileMetadataCallback
 
-type IsPublicResponse = js.Array[scala.Boolean]
+type MakeFilePrivateResponse = js.Array[Metadata]
 
-type MakeFilePrivateCallback = typings.googleCloudStorage.fileMod.SetFileMetadataCallback
+type MakeFilePublicCallback = js.Function2[/* err */ js.UndefOr[js.Error | Null], /* apiResponse */ js.UndefOr[Metadata], Unit]
 
-type MakeFilePrivateResponse = js.Array[typings.googleCloudCommon.serviceObjectMod.Metadata]
-
-type MakeFilePublicCallback = js.Function2[
-/* err */ js.UndefOr[typings.std.Error | scala.Null], 
-/* apiResponse */ js.UndefOr[typings.googleCloudCommon.serviceObjectMod.Metadata], 
-scala.Unit]
-
-type MakeFilePublicResponse = js.Array[typings.googleCloudCommon.serviceObjectMod.Metadata]
+type MakeFilePublicResponse = js.Array[Metadata]
 
 type MoveCallback = js.Function3[
-/* err */ typings.std.Error | scala.Null, 
-/* destinationFile */ js.UndefOr[typings.googleCloudStorage.fileMod.File | scala.Null], 
-/* apiResponse */ js.UndefOr[typings.googleCloudCommon.serviceObjectMod.Metadata], 
-scala.Unit]
+/* err */ js.Error | Null, 
+/* destinationFile */ js.UndefOr[File | Null], 
+/* apiResponse */ js.UndefOr[Metadata], 
+Unit]
 
-type MoveResponse = js.Array[typings.googleCloudCommon.serviceObjectMod.Metadata]
+type MoveResponse = js.Array[Metadata]
 
-type PolicyFields = org.scalablytyped.runtime.StringDictionary[java.lang.String]
+type PolicyFields = StringDictionary[String]
 
-type RenameCallback = typings.googleCloudStorage.fileMod.MoveCallback
+type RenameCallback = MoveCallback
 
-type RenameOptions = typings.googleCloudStorage.fileMod.MoveOptions
+type RenameOptions = MoveOptions
 
-type RenameResponse = typings.googleCloudStorage.fileMod.MoveResponse
+type RenameResponse = MoveResponse
 
-type RotateEncryptionKeyCallback = typings.googleCloudStorage.fileMod.CopyCallback
+type RotateEncryptionKeyCallback = CopyCallback
 
-type RotateEncryptionKeyOptions = java.lang.String | typings.node.Buffer | typings.googleCloudStorage.fileMod.EncryptionKeyOptions
+type RotateEncryptionKeyOptions = String | Buffer | EncryptionKeyOptions
 
-type RotateEncryptionKeyResponse = typings.googleCloudStorage.fileMod.CopyResponse
+type RotateEncryptionKeyResponse = CopyResponse
 
-type SaveCallback = js.Function1[/* err */ js.UndefOr[typings.std.Error | scala.Null], scala.Unit]
+type SaveCallback = js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]
 
-type SetFileMetadataCallback = js.Function2[
-/* err */ js.UndefOr[typings.std.Error | scala.Null], 
-/* apiResponse */ js.UndefOr[typings.googleCloudCommon.serviceObjectMod.Metadata], 
-scala.Unit]
+type SetFileMetadataCallback = js.Function2[/* err */ js.UndefOr[js.Error | Null], /* apiResponse */ js.UndefOr[Metadata], Unit]
 
-type SetFileMetadataResponse = js.Array[typings.googleCloudCommon.serviceObjectMod.Metadata]
+type SetFileMetadataResponse = js.Array[Metadata]
 
-type SetStorageClassCallback = js.Function2[
-/* err */ js.UndefOr[typings.std.Error | scala.Null], 
-/* apiResponse */ js.UndefOr[typings.googleCloudCommon.serviceObjectMod.Metadata], 
-scala.Unit]
+type SetStorageClassCallback = js.Function2[/* err */ js.UndefOr[js.Error | Null], /* apiResponse */ js.UndefOr[Metadata], Unit]
 
-type SetStorageClassResponse = js.Array[typings.googleCloudCommon.serviceObjectMod.Metadata]
+type SetStorageClassResponse = js.Array[Metadata]

@@ -11,7 +11,7 @@ trait IgRadialMenu
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Returns or sets the background of the center button of the menu when the IsOpen property is false.
@@ -95,7 +95,7 @@ trait IgRadialMenu
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.undefined
+  var locale: js.UndefOr[Any] = js.undefined
   
   /**
     * Returns or sets the brush for the backing of the radial menu.
@@ -110,7 +110,7 @@ trait IgRadialMenu
   /**
     * Returns or sets the easing function applied to the animation that occurs when the IsOpen property is changed.
     */
-  var menuItemOpenCloseAnimationEasingFunction: js.UndefOr[js.Any] = js.undefined
+  var menuItemOpenCloseAnimationEasingFunction: js.UndefOr[Any] = js.undefined
   
   /**
     * Returns or sets the duration of the animation performed when the IsOpen property is changed.
@@ -120,7 +120,7 @@ trait IgRadialMenu
   /**
     * Returns or sets the easing function applied to the animation that occurs when the IsOpen property is changed.
     */
-  var menuOpenCloseAnimationEasingFunction: js.UndefOr[js.Any] = js.undefined
+  var menuOpenCloseAnimationEasingFunction: js.UndefOr[Any] = js.undefined
   
   /**
     * Returns or sets the minimum number of wedges displayed by the menu.
@@ -242,13 +242,13 @@ object IgRadialMenu {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: IgRadialMenuItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: IgRadialMenuItem*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    inline def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
     inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
@@ -260,7 +260,7 @@ object IgRadialMenu {
     
     inline def setMenuItemOpenCloseAnimationDurationUndefined: Self = StObject.set(x, "menuItemOpenCloseAnimationDuration", js.undefined)
     
-    inline def setMenuItemOpenCloseAnimationEasingFunction(value: js.Any): Self = StObject.set(x, "menuItemOpenCloseAnimationEasingFunction", value.asInstanceOf[js.Any])
+    inline def setMenuItemOpenCloseAnimationEasingFunction(value: Any): Self = StObject.set(x, "menuItemOpenCloseAnimationEasingFunction", value.asInstanceOf[js.Any])
     
     inline def setMenuItemOpenCloseAnimationEasingFunctionUndefined: Self = StObject.set(x, "menuItemOpenCloseAnimationEasingFunction", js.undefined)
     
@@ -268,7 +268,7 @@ object IgRadialMenu {
     
     inline def setMenuOpenCloseAnimationDurationUndefined: Self = StObject.set(x, "menuOpenCloseAnimationDuration", js.undefined)
     
-    inline def setMenuOpenCloseAnimationEasingFunction(value: js.Any): Self = StObject.set(x, "menuOpenCloseAnimationEasingFunction", value.asInstanceOf[js.Any])
+    inline def setMenuOpenCloseAnimationEasingFunction(value: Any): Self = StObject.set(x, "menuOpenCloseAnimationEasingFunction", value.asInstanceOf[js.Any])
     
     inline def setMenuOpenCloseAnimationEasingFunctionUndefined: Self = StObject.set(x, "menuOpenCloseAnimationEasingFunction", js.undefined)
     

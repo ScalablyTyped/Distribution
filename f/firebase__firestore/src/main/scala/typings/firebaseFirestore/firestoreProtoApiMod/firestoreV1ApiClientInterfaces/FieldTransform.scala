@@ -1,34 +1,49 @@
 package typings.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces
 
 import typings.firebaseFirestore.firestoreProtoApiMod.FieldTransformSetToServerValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FieldTransform extends js.Object {
+trait FieldTransform extends StObject {
+  
   var appendMissingElements: js.UndefOr[ArrayValue] = js.undefined
+  
   var fieldPath: js.UndefOr[String] = js.undefined
+  
   var increment: js.UndefOr[Value] = js.undefined
+  
   var removeAllFromArray: js.UndefOr[ArrayValue] = js.undefined
+  
   var setToServerValue: js.UndefOr[FieldTransformSetToServerValue] = js.undefined
 }
-
 object FieldTransform {
-  @scala.inline
-  def apply(
-    appendMissingElements: ArrayValue = null,
-    fieldPath: String = null,
-    increment: Value = null,
-    removeAllFromArray: ArrayValue = null,
-    setToServerValue: FieldTransformSetToServerValue = null
-  ): FieldTransform = {
+  
+  inline def apply(): FieldTransform = {
     val __obj = js.Dynamic.literal()
-    if (appendMissingElements != null) __obj.updateDynamic("appendMissingElements")(appendMissingElements.asInstanceOf[js.Any])
-    if (fieldPath != null) __obj.updateDynamic("fieldPath")(fieldPath.asInstanceOf[js.Any])
-    if (increment != null) __obj.updateDynamic("increment")(increment.asInstanceOf[js.Any])
-    if (removeAllFromArray != null) __obj.updateDynamic("removeAllFromArray")(removeAllFromArray.asInstanceOf[js.Any])
-    if (setToServerValue != null) __obj.updateDynamic("setToServerValue")(setToServerValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldTransform]
   }
+  
+  extension [Self <: FieldTransform](x: Self) {
+    
+    inline def setAppendMissingElements(value: ArrayValue): Self = StObject.set(x, "appendMissingElements", value.asInstanceOf[js.Any])
+    
+    inline def setAppendMissingElementsUndefined: Self = StObject.set(x, "appendMissingElements", js.undefined)
+    
+    inline def setFieldPath(value: String): Self = StObject.set(x, "fieldPath", value.asInstanceOf[js.Any])
+    
+    inline def setFieldPathUndefined: Self = StObject.set(x, "fieldPath", js.undefined)
+    
+    inline def setIncrement(value: Value): Self = StObject.set(x, "increment", value.asInstanceOf[js.Any])
+    
+    inline def setIncrementUndefined: Self = StObject.set(x, "increment", js.undefined)
+    
+    inline def setRemoveAllFromArray(value: ArrayValue): Self = StObject.set(x, "removeAllFromArray", value.asInstanceOf[js.Any])
+    
+    inline def setRemoveAllFromArrayUndefined: Self = StObject.set(x, "removeAllFromArray", js.undefined)
+    
+    inline def setSetToServerValue(value: FieldTransformSetToServerValue): Self = StObject.set(x, "setToServerValue", value.asInstanceOf[js.Any])
+    
+    inline def setSetToServerValueUndefined: Self = StObject.set(x, "setToServerValue", js.undefined)
+  }
 }
-

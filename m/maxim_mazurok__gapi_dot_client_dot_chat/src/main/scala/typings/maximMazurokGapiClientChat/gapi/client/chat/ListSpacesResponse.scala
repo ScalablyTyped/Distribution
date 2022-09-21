@@ -29,6 +29,6 @@ object ListSpacesResponse {
     
     inline def setSpacesUndefined: Self = StObject.set(x, "spaces", js.undefined)
     
-    inline def setSpacesVarargs(value: Space*): Self = StObject.set(x, "spaces", js.Array(value :_*))
+    inline def setSpacesVarargs(value: Space*): Self = StObject.set(x, "spaces", js.Array(value*))
   }
 }

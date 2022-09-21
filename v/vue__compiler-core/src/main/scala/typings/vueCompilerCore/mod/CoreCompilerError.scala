@@ -4,7 +4,8 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CoreCompilerError
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.vueCompilerCore.mod.InferCompilerError because Already inherited */ trait CoreCompilerError
   extends StObject
      with CompilerError {
   

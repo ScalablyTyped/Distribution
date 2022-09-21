@@ -1,5 +1,6 @@
 package typings.expressValidator
 
+import typings.expressValidator.anon.ArrayValidationChainrunre
 import typings.expressValidator.anon.`0`
 import typings.expressValidator.baseMod.DynamicMessageCreator
 import typings.expressValidator.baseMod.Location
@@ -9,6 +10,7 @@ import typings.expressValidator.expressValidatorStrings.blacklist
 import typings.expressValidator.expressValidatorStrings.contains
 import typings.expressValidator.expressValidatorStrings.custom
 import typings.expressValidator.expressValidatorStrings.customSanitizer
+import typings.expressValidator.expressValidatorStrings.default
 import typings.expressValidator.expressValidatorStrings.equals
 import typings.expressValidator.expressValidatorStrings.escape
 import typings.expressValidator.expressValidatorStrings.exists
@@ -19,6 +21,7 @@ import typings.expressValidator.expressValidatorStrings.isArray
 import typings.expressValidator.expressValidatorStrings.isAscii
 import typings.expressValidator.expressValidatorStrings.isBIC
 import typings.expressValidator.expressValidatorStrings.isBase32
+import typings.expressValidator.expressValidatorStrings.isBase58
 import typings.expressValidator.expressValidatorStrings.isBase64
 import typings.expressValidator.expressValidatorStrings.isBefore
 import typings.expressValidator.expressValidatorStrings.isBoolean
@@ -50,6 +53,7 @@ import typings.expressValidator.expressValidatorStrings.isISBN
 import typings.expressValidator.expressValidatorStrings.isISIN
 import typings.expressValidator.expressValidatorStrings.isISO31661Alpha2
 import typings.expressValidator.expressValidatorStrings.isISO31661Alpha3
+import typings.expressValidator.expressValidatorStrings.isISO4217
 import typings.expressValidator.expressValidatorStrings.isISO8601
 import typings.expressValidator.expressValidatorStrings.isISRC
 import typings.expressValidator.expressValidatorStrings.isISSN
@@ -60,6 +64,7 @@ import typings.expressValidator.expressValidatorStrings.isJSON
 import typings.expressValidator.expressValidatorStrings.isJWT
 import typings.expressValidator.expressValidatorStrings.isLatLong
 import typings.expressValidator.expressValidatorStrings.isLength
+import typings.expressValidator.expressValidatorStrings.isLicensePlate
 import typings.expressValidator.expressValidatorStrings.isLocale
 import typings.expressValidator.expressValidatorStrings.isLowercase
 import typings.expressValidator.expressValidatorStrings.isMACAddress
@@ -70,6 +75,7 @@ import typings.expressValidator.expressValidatorStrings.isMobilePhone
 import typings.expressValidator.expressValidatorStrings.isMongoId
 import typings.expressValidator.expressValidatorStrings.isMultibyte
 import typings.expressValidator.expressValidatorStrings.isNumeric
+import typings.expressValidator.expressValidatorStrings.isObject
 import typings.expressValidator.expressValidatorStrings.isOctal
 import typings.expressValidator.expressValidatorStrings.isPassportNumber
 import typings.expressValidator.expressValidatorStrings.isPort
@@ -79,11 +85,13 @@ import typings.expressValidator.expressValidatorStrings.isRgbColor
 import typings.expressValidator.expressValidatorStrings.isSemVer
 import typings.expressValidator.expressValidatorStrings.isSlug
 import typings.expressValidator.expressValidatorStrings.isString
+import typings.expressValidator.expressValidatorStrings.isStrongPassword
 import typings.expressValidator.expressValidatorStrings.isSurrogatePair
 import typings.expressValidator.expressValidatorStrings.isTaxID
 import typings.expressValidator.expressValidatorStrings.isURL
 import typings.expressValidator.expressValidatorStrings.isUUID
 import typings.expressValidator.expressValidatorStrings.isUppercase
+import typings.expressValidator.expressValidatorStrings.isVAT
 import typings.expressValidator.expressValidatorStrings.isVariableWidth
 import typings.expressValidator.expressValidatorStrings.isWhitelisted
 import typings.expressValidator.expressValidatorStrings.ltrim
@@ -91,6 +99,7 @@ import typings.expressValidator.expressValidatorStrings.matches
 import typings.expressValidator.expressValidatorStrings.normalizeEmail
 import typings.expressValidator.expressValidatorStrings.not
 import typings.expressValidator.expressValidatorStrings.notEmpty
+import typings.expressValidator.expressValidatorStrings.replace
 import typings.expressValidator.expressValidatorStrings.rtrim
 import typings.expressValidator.expressValidatorStrings.stripLow
 import typings.expressValidator.expressValidatorStrings.toArray
@@ -98,11 +107,12 @@ import typings.expressValidator.expressValidatorStrings.toBoolean
 import typings.expressValidator.expressValidatorStrings.toDate
 import typings.expressValidator.expressValidatorStrings.toFloat
 import typings.expressValidator.expressValidatorStrings.toInt
+import typings.expressValidator.expressValidatorStrings.toLowerCase
+import typings.expressValidator.expressValidatorStrings.toUpperCase
 import typings.expressValidator.expressValidatorStrings.trim
 import typings.expressValidator.expressValidatorStrings.unescape
 import typings.expressValidator.expressValidatorStrings.whitelist
 import typings.expressValidator.expressValidatorStrings.withMessage
-import typings.expressValidator.validationChainMod.ValidationChain
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -114,11 +124,13 @@ object schemaMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def checkSchema(schema: Schema): js.Array[ValidationChain] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkSchema")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Array[ValidationChain]]
-  inline def checkSchema(schema: Schema, defaultLocations: js.Array[Location]): js.Array[ValidationChain] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkSchema")(schema.asInstanceOf[js.Any], defaultLocations.asInstanceOf[js.Any])).asInstanceOf[js.Array[ValidationChain]]
+  inline def checkSchema(schema: Schema): ArrayValidationChainrunre = ^.asInstanceOf[js.Dynamic].applyDynamic("checkSchema")(schema.asInstanceOf[js.Any]).asInstanceOf[ArrayValidationChainrunre]
+  inline def checkSchema(schema: Schema, defaultLocations: js.Array[Location]): ArrayValidationChainrunre = (^.asInstanceOf[js.Dynamic].applyDynamic("checkSchema")(schema.asInstanceOf[js.Any], defaultLocations.asInstanceOf[js.Any])).asInstanceOf[ArrayValidationChainrunre]
   
   /* Inlined express-validator.express-validator/src/middlewares/schema.ValidatorsSchema & express-validator.express-validator/src/middlewares/schema.SanitizersSchema */
   trait InternalParamSchema extends StObject {
+    
+    var default: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.default]] = js.undefined
     
     var blacklist: js.UndefOr[
         SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.blacklist]
@@ -159,6 +171,10 @@ object schemaMod {
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isBase32]
       ] = js.undefined
     
+    var isBase58: js.UndefOr[
+        ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isBase58]
+      ] = js.undefined
+    
     var isBase64: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isBase64]
       ] = js.undefined
@@ -257,6 +273,10 @@ object schemaMod {
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISO31661Alpha3]
       ] = js.undefined
     
+    var isISO4217: js.UndefOr[
+        ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISO4217]
+      ] = js.undefined
+    
     var isISO8601: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISO8601]
       ] = js.undefined
@@ -283,6 +303,10 @@ object schemaMod {
     
     var isLength: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isLength]
+      ] = js.undefined
+    
+    var isLicensePlate: js.UndefOr[
+        ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isLicensePlate]
       ] = js.undefined
     
     var isLocale: js.UndefOr[
@@ -323,6 +347,10 @@ object schemaMod {
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isNumeric]
       ] = js.undefined
     
+    var isObject: js.UndefOr[
+        ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isObject]
+      ] = js.undefined
+    
     var isOctal: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isOctal]] = js.undefined
     
     var isPassportNumber: js.UndefOr[
@@ -353,6 +381,10 @@ object schemaMod {
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isString]
       ] = js.undefined
     
+    var isStrongPassword: js.UndefOr[
+        ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isStrongPassword]
+      ] = js.undefined
+    
     var isSurrogatePair: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isSurrogatePair]
       ] = js.undefined
@@ -366,6 +398,8 @@ object schemaMod {
     var isUppercase: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isUppercase]
       ] = js.undefined
+    
+    var isVAT: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isVAT]] = js.undefined
     
     var isVariableWidth: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isVariableWidth]
@@ -389,6 +423,8 @@ object schemaMod {
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.notEmpty]
       ] = js.undefined
     
+    var replace: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.replace]] = js.undefined
+    
     var rtrim: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.rtrim]] = js.undefined
     
     var stripLow: js.UndefOr[
@@ -406,6 +442,14 @@ object schemaMod {
     var toFloat: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toFloat]] = js.undefined
     
     var toInt: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toInt]] = js.undefined
+    
+    var toLowerCase: js.UndefOr[
+        SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toLowerCase]
+      ] = js.undefined
+    
+    var toUpperCase: js.UndefOr[
+        SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toUpperCase]
+      ] = js.undefined
     
     var trim: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.trim]] = js.undefined
     
@@ -446,6 +490,10 @@ object schemaMod {
       
       inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
       
+      inline def setDefault(value: SanitizerSchemaOptions[default]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      
       inline def setEquals_(value: ValidatorSchemaOptions[equals]): Self = StObject.set(x, "equals", value.asInstanceOf[js.Any])
       
       inline def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
@@ -485,6 +533,10 @@ object schemaMod {
       inline def setIsBase32(value: ValidatorSchemaOptions[isBase32]): Self = StObject.set(x, "isBase32", value.asInstanceOf[js.Any])
       
       inline def setIsBase32Undefined: Self = StObject.set(x, "isBase32", js.undefined)
+      
+      inline def setIsBase58(value: ValidatorSchemaOptions[isBase58]): Self = StObject.set(x, "isBase58", value.asInstanceOf[js.Any])
+      
+      inline def setIsBase58Undefined: Self = StObject.set(x, "isBase58", js.undefined)
       
       inline def setIsBase64(value: ValidatorSchemaOptions[isBase64]): Self = StObject.set(x, "isBase64", value.asInstanceOf[js.Any])
       
@@ -610,6 +662,10 @@ object schemaMod {
       
       inline def setIsISO31661Alpha3Undefined: Self = StObject.set(x, "isISO31661Alpha3", js.undefined)
       
+      inline def setIsISO4217(value: ValidatorSchemaOptions[isISO4217]): Self = StObject.set(x, "isISO4217", value.asInstanceOf[js.Any])
+      
+      inline def setIsISO4217Undefined: Self = StObject.set(x, "isISO4217", js.undefined)
+      
       inline def setIsISO8601(value: ValidatorSchemaOptions[isISO8601]): Self = StObject.set(x, "isISO8601", value.asInstanceOf[js.Any])
       
       inline def setIsISO8601Undefined: Self = StObject.set(x, "isISO8601", js.undefined)
@@ -649,6 +705,10 @@ object schemaMod {
       inline def setIsLength(value: ValidatorSchemaOptions[isLength]): Self = StObject.set(x, "isLength", value.asInstanceOf[js.Any])
       
       inline def setIsLengthUndefined: Self = StObject.set(x, "isLength", js.undefined)
+      
+      inline def setIsLicensePlate(value: ValidatorSchemaOptions[isLicensePlate]): Self = StObject.set(x, "isLicensePlate", value.asInstanceOf[js.Any])
+      
+      inline def setIsLicensePlateUndefined: Self = StObject.set(x, "isLicensePlate", js.undefined)
       
       inline def setIsLocale(value: ValidatorSchemaOptions[isLocale]): Self = StObject.set(x, "isLocale", value.asInstanceOf[js.Any])
       
@@ -690,6 +750,10 @@ object schemaMod {
       
       inline def setIsNumericUndefined: Self = StObject.set(x, "isNumeric", js.undefined)
       
+      inline def setIsObject(value: ValidatorSchemaOptions[isObject]): Self = StObject.set(x, "isObject", value.asInstanceOf[js.Any])
+      
+      inline def setIsObjectUndefined: Self = StObject.set(x, "isObject", js.undefined)
+      
       inline def setIsOctal(value: ValidatorSchemaOptions[isOctal]): Self = StObject.set(x, "isOctal", value.asInstanceOf[js.Any])
       
       inline def setIsOctalUndefined: Self = StObject.set(x, "isOctal", js.undefined)
@@ -726,6 +790,10 @@ object schemaMod {
       
       inline def setIsStringUndefined: Self = StObject.set(x, "isString", js.undefined)
       
+      inline def setIsStrongPassword(value: ValidatorSchemaOptions[isStrongPassword]): Self = StObject.set(x, "isStrongPassword", value.asInstanceOf[js.Any])
+      
+      inline def setIsStrongPasswordUndefined: Self = StObject.set(x, "isStrongPassword", js.undefined)
+      
       inline def setIsSurrogatePair(value: ValidatorSchemaOptions[isSurrogatePair]): Self = StObject.set(x, "isSurrogatePair", value.asInstanceOf[js.Any])
       
       inline def setIsSurrogatePairUndefined: Self = StObject.set(x, "isSurrogatePair", js.undefined)
@@ -745,6 +813,10 @@ object schemaMod {
       inline def setIsUppercase(value: ValidatorSchemaOptions[isUppercase]): Self = StObject.set(x, "isUppercase", value.asInstanceOf[js.Any])
       
       inline def setIsUppercaseUndefined: Self = StObject.set(x, "isUppercase", js.undefined)
+      
+      inline def setIsVAT(value: ValidatorSchemaOptions[isVAT]): Self = StObject.set(x, "isVAT", value.asInstanceOf[js.Any])
+      
+      inline def setIsVATUndefined: Self = StObject.set(x, "isVAT", js.undefined)
       
       inline def setIsVariableWidth(value: ValidatorSchemaOptions[isVariableWidth]): Self = StObject.set(x, "isVariableWidth", value.asInstanceOf[js.Any])
       
@@ -774,6 +846,10 @@ object schemaMod {
       
       inline def setNotUndefined: Self = StObject.set(x, "not", js.undefined)
       
+      inline def setReplace(value: SanitizerSchemaOptions[replace]): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
+      
+      inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
+      
       inline def setRtrim(value: SanitizerSchemaOptions[rtrim]): Self = StObject.set(x, "rtrim", value.asInstanceOf[js.Any])
       
       inline def setRtrimUndefined: Self = StObject.set(x, "rtrim", js.undefined)
@@ -802,6 +878,14 @@ object schemaMod {
       
       inline def setToIntUndefined: Self = StObject.set(x, "toInt", js.undefined)
       
+      inline def setToLowerCase(value: SanitizerSchemaOptions[toLowerCase]): Self = StObject.set(x, "toLowerCase", value.asInstanceOf[js.Any])
+      
+      inline def setToLowerCaseUndefined: Self = StObject.set(x, "toLowerCase", js.undefined)
+      
+      inline def setToUpperCase(value: SanitizerSchemaOptions[toUpperCase]): Self = StObject.set(x, "toUpperCase", value.asInstanceOf[js.Any])
+      
+      inline def setToUpperCaseUndefined: Self = StObject.set(x, "toUpperCase", js.undefined)
+      
       inline def setTrim(value: SanitizerSchemaOptions[trim]): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
       
       inline def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
@@ -823,6 +907,8 @@ object schemaMod {
   /* Inlined express-validator.express-validator/src/middlewares/schema.InternalParamSchema & {  in :express-validator.express-validator/src/base.Location | std.Array<express-validator.express-validator/src/base.Location> | undefined,   errorMessage :express-validator.express-validator/src/base.DynamicMessageCreator | any | undefined,   optional :true | {  options :std.Partial<express-validator.express-validator/src/context.Optional> | undefined} | undefined} */
   trait ParamSchema extends StObject {
     
+    var default: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.default]] = js.undefined
+    
     var blacklist: js.UndefOr[
         SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.blacklist]
       ] = js.undefined
@@ -840,7 +926,7 @@ object schemaMod {
     @JSName("equals")
     var equals_FParamSchema: js.UndefOr[ValidatorSchemaOptions[equals]] = js.undefined
     
-    var errorMessage: js.UndefOr[DynamicMessageCreator | js.Any] = js.undefined
+    var errorMessage: js.UndefOr[DynamicMessageCreator | Any] = js.undefined
     
     var escape: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.escape]] = js.undefined
     
@@ -864,6 +950,10 @@ object schemaMod {
     
     var isBase32: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isBase32]
+      ] = js.undefined
+    
+    var isBase58: js.UndefOr[
+        ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isBase58]
       ] = js.undefined
     
     var isBase64: js.UndefOr[
@@ -964,6 +1054,10 @@ object schemaMod {
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISO31661Alpha3]
       ] = js.undefined
     
+    var isISO4217: js.UndefOr[
+        ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISO4217]
+      ] = js.undefined
+    
     var isISO8601: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISO8601]
       ] = js.undefined
@@ -990,6 +1084,10 @@ object schemaMod {
     
     var isLength: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isLength]
+      ] = js.undefined
+    
+    var isLicensePlate: js.UndefOr[
+        ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isLicensePlate]
       ] = js.undefined
     
     var isLocale: js.UndefOr[
@@ -1030,6 +1128,10 @@ object schemaMod {
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isNumeric]
       ] = js.undefined
     
+    var isObject: js.UndefOr[
+        ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isObject]
+      ] = js.undefined
+    
     var isOctal: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isOctal]] = js.undefined
     
     var isPassportNumber: js.UndefOr[
@@ -1060,6 +1162,10 @@ object schemaMod {
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isString]
       ] = js.undefined
     
+    var isStrongPassword: js.UndefOr[
+        ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isStrongPassword]
+      ] = js.undefined
+    
     var isSurrogatePair: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isSurrogatePair]
       ] = js.undefined
@@ -1073,6 +1179,8 @@ object schemaMod {
     var isUppercase: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isUppercase]
       ] = js.undefined
+    
+    var isVAT: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isVAT]] = js.undefined
     
     var isVariableWidth: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isVariableWidth]
@@ -1098,6 +1206,8 @@ object schemaMod {
     
     var optional: js.UndefOr[`true` | `0`] = js.undefined
     
+    var replace: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.replace]] = js.undefined
+    
     var rtrim: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.rtrim]] = js.undefined
     
     var stripLow: js.UndefOr[
@@ -1115,6 +1225,14 @@ object schemaMod {
     var toFloat: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toFloat]] = js.undefined
     
     var toInt: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toInt]] = js.undefined
+    
+    var toLowerCase: js.UndefOr[
+        SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toLowerCase]
+      ] = js.undefined
+    
+    var toUpperCase: js.UndefOr[
+        SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toUpperCase]
+      ] = js.undefined
     
     var trim: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.trim]] = js.undefined
     
@@ -1155,13 +1273,17 @@ object schemaMod {
       
       inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
       
+      inline def setDefault(value: SanitizerSchemaOptions[default]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      
       inline def setEquals_(value: ValidatorSchemaOptions[equals]): Self = StObject.set(x, "equals", value.asInstanceOf[js.Any])
       
       inline def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
       
-      inline def setErrorMessage(value: DynamicMessageCreator | js.Any): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+      inline def setErrorMessage(value: DynamicMessageCreator | Any): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
       
-      inline def setErrorMessageFunction2(value: (/* value */ js.Any, /* meta */ Meta) => js.Any): Self = StObject.set(x, "errorMessage", js.Any.fromFunction2(value))
+      inline def setErrorMessageFunction2(value: (/* value */ Any, /* meta */ Meta) => Any): Self = StObject.set(x, "errorMessage", js.Any.fromFunction2(value))
       
       inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
       
@@ -1177,7 +1299,7 @@ object schemaMod {
       
       inline def setInUndefined: Self = StObject.set(x, "in", js.undefined)
       
-      inline def setInVarargs(value: Location*): Self = StObject.set(x, "in", js.Array(value :_*))
+      inline def setInVarargs(value: Location*): Self = StObject.set(x, "in", js.Array(value*))
       
       inline def setIsAfter(value: ValidatorSchemaOptions[isAfter]): Self = StObject.set(x, "isAfter", value.asInstanceOf[js.Any])
       
@@ -1206,6 +1328,10 @@ object schemaMod {
       inline def setIsBase32(value: ValidatorSchemaOptions[isBase32]): Self = StObject.set(x, "isBase32", value.asInstanceOf[js.Any])
       
       inline def setIsBase32Undefined: Self = StObject.set(x, "isBase32", js.undefined)
+      
+      inline def setIsBase58(value: ValidatorSchemaOptions[isBase58]): Self = StObject.set(x, "isBase58", value.asInstanceOf[js.Any])
+      
+      inline def setIsBase58Undefined: Self = StObject.set(x, "isBase58", js.undefined)
       
       inline def setIsBase64(value: ValidatorSchemaOptions[isBase64]): Self = StObject.set(x, "isBase64", value.asInstanceOf[js.Any])
       
@@ -1331,6 +1457,10 @@ object schemaMod {
       
       inline def setIsISO31661Alpha3Undefined: Self = StObject.set(x, "isISO31661Alpha3", js.undefined)
       
+      inline def setIsISO4217(value: ValidatorSchemaOptions[isISO4217]): Self = StObject.set(x, "isISO4217", value.asInstanceOf[js.Any])
+      
+      inline def setIsISO4217Undefined: Self = StObject.set(x, "isISO4217", js.undefined)
+      
       inline def setIsISO8601(value: ValidatorSchemaOptions[isISO8601]): Self = StObject.set(x, "isISO8601", value.asInstanceOf[js.Any])
       
       inline def setIsISO8601Undefined: Self = StObject.set(x, "isISO8601", js.undefined)
@@ -1370,6 +1500,10 @@ object schemaMod {
       inline def setIsLength(value: ValidatorSchemaOptions[isLength]): Self = StObject.set(x, "isLength", value.asInstanceOf[js.Any])
       
       inline def setIsLengthUndefined: Self = StObject.set(x, "isLength", js.undefined)
+      
+      inline def setIsLicensePlate(value: ValidatorSchemaOptions[isLicensePlate]): Self = StObject.set(x, "isLicensePlate", value.asInstanceOf[js.Any])
+      
+      inline def setIsLicensePlateUndefined: Self = StObject.set(x, "isLicensePlate", js.undefined)
       
       inline def setIsLocale(value: ValidatorSchemaOptions[isLocale]): Self = StObject.set(x, "isLocale", value.asInstanceOf[js.Any])
       
@@ -1411,6 +1545,10 @@ object schemaMod {
       
       inline def setIsNumericUndefined: Self = StObject.set(x, "isNumeric", js.undefined)
       
+      inline def setIsObject(value: ValidatorSchemaOptions[isObject]): Self = StObject.set(x, "isObject", value.asInstanceOf[js.Any])
+      
+      inline def setIsObjectUndefined: Self = StObject.set(x, "isObject", js.undefined)
+      
       inline def setIsOctal(value: ValidatorSchemaOptions[isOctal]): Self = StObject.set(x, "isOctal", value.asInstanceOf[js.Any])
       
       inline def setIsOctalUndefined: Self = StObject.set(x, "isOctal", js.undefined)
@@ -1447,6 +1585,10 @@ object schemaMod {
       
       inline def setIsStringUndefined: Self = StObject.set(x, "isString", js.undefined)
       
+      inline def setIsStrongPassword(value: ValidatorSchemaOptions[isStrongPassword]): Self = StObject.set(x, "isStrongPassword", value.asInstanceOf[js.Any])
+      
+      inline def setIsStrongPasswordUndefined: Self = StObject.set(x, "isStrongPassword", js.undefined)
+      
       inline def setIsSurrogatePair(value: ValidatorSchemaOptions[isSurrogatePair]): Self = StObject.set(x, "isSurrogatePair", value.asInstanceOf[js.Any])
       
       inline def setIsSurrogatePairUndefined: Self = StObject.set(x, "isSurrogatePair", js.undefined)
@@ -1466,6 +1608,10 @@ object schemaMod {
       inline def setIsUppercase(value: ValidatorSchemaOptions[isUppercase]): Self = StObject.set(x, "isUppercase", value.asInstanceOf[js.Any])
       
       inline def setIsUppercaseUndefined: Self = StObject.set(x, "isUppercase", js.undefined)
+      
+      inline def setIsVAT(value: ValidatorSchemaOptions[isVAT]): Self = StObject.set(x, "isVAT", value.asInstanceOf[js.Any])
+      
+      inline def setIsVATUndefined: Self = StObject.set(x, "isVAT", js.undefined)
       
       inline def setIsVariableWidth(value: ValidatorSchemaOptions[isVariableWidth]): Self = StObject.set(x, "isVariableWidth", value.asInstanceOf[js.Any])
       
@@ -1499,6 +1645,10 @@ object schemaMod {
       
       inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
       
+      inline def setReplace(value: SanitizerSchemaOptions[replace]): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
+      
+      inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
+      
       inline def setRtrim(value: SanitizerSchemaOptions[rtrim]): Self = StObject.set(x, "rtrim", value.asInstanceOf[js.Any])
       
       inline def setRtrimUndefined: Self = StObject.set(x, "rtrim", js.undefined)
@@ -1527,6 +1677,14 @@ object schemaMod {
       
       inline def setToIntUndefined: Self = StObject.set(x, "toInt", js.undefined)
       
+      inline def setToLowerCase(value: SanitizerSchemaOptions[toLowerCase]): Self = StObject.set(x, "toLowerCase", value.asInstanceOf[js.Any])
+      
+      inline def setToLowerCaseUndefined: Self = StObject.set(x, "toLowerCase", js.undefined)
+      
+      inline def setToUpperCase(value: SanitizerSchemaOptions[toUpperCase]): Self = StObject.set(x, "toUpperCase", value.asInstanceOf[js.Any])
+      
+      inline def setToUpperCaseUndefined: Self = StObject.set(x, "toUpperCase", js.undefined)
+      
       inline def setTrim(value: SanitizerSchemaOptions[trim]): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
       
       inline def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
@@ -1549,10 +1707,12 @@ object schemaMod {
     - typings.expressValidator.expressValidatorBooleans.`true`
     - typings.expressValidator.anon.Options[K]
   */
-  trait SanitizerSchemaOptions[K /* <: /* keyof express-validator.express-validator/src/chain/sanitizers.Sanitizers<any> */ customSanitizer | blacklist | escape | unescape | ltrim | normalizeEmail | rtrim | stripLow | toArray | toBoolean | toDate | toFloat | toInt | trim | whitelist */] extends StObject
+  trait SanitizerSchemaOptions[K /* <: /* keyof express-validator.express-validator/src/chain/sanitizers.Sanitizers<any> */ customSanitizer | default | replace | blacklist | escape | unescape | ltrim | normalizeEmail | rtrim | stripLow | toArray | toBoolean | toDate | toFloat | toInt | toLowerCase | toUpperCase | trim | whitelist */] extends StObject
   
   /* Inlined {[ K in keyof express-validator.express-validator/src/chain/sanitizers.Sanitizers<any> ]:? express-validator.express-validator/src/middlewares/schema.SanitizerSchemaOptions<K>} */
   trait SanitizersSchema extends StObject {
+    
+    var default: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.default]] = js.undefined
     
     var blacklist: js.UndefOr[
         SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.blacklist]
@@ -1569,6 +1729,8 @@ object schemaMod {
     var normalizeEmail: js.UndefOr[
         SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.normalizeEmail]
       ] = js.undefined
+    
+    var replace: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.replace]] = js.undefined
     
     var rtrim: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.rtrim]] = js.undefined
     
@@ -1587,6 +1749,14 @@ object schemaMod {
     var toFloat: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toFloat]] = js.undefined
     
     var toInt: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toInt]] = js.undefined
+    
+    var toLowerCase: js.UndefOr[
+        SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toLowerCase]
+      ] = js.undefined
+    
+    var toUpperCase: js.UndefOr[
+        SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toUpperCase]
+      ] = js.undefined
     
     var trim: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.trim]] = js.undefined
     
@@ -1615,6 +1785,10 @@ object schemaMod {
       
       inline def setCustomSanitizerUndefined: Self = StObject.set(x, "customSanitizer", js.undefined)
       
+      inline def setDefault(value: SanitizerSchemaOptions[default]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      
       inline def setEscape(value: SanitizerSchemaOptions[escape]): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
       
       inline def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
@@ -1626,6 +1800,10 @@ object schemaMod {
       inline def setNormalizeEmail(value: SanitizerSchemaOptions[normalizeEmail]): Self = StObject.set(x, "normalizeEmail", value.asInstanceOf[js.Any])
       
       inline def setNormalizeEmailUndefined: Self = StObject.set(x, "normalizeEmail", js.undefined)
+      
+      inline def setReplace(value: SanitizerSchemaOptions[replace]): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
+      
+      inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
       
       inline def setRtrim(value: SanitizerSchemaOptions[rtrim]): Self = StObject.set(x, "rtrim", value.asInstanceOf[js.Any])
       
@@ -1655,6 +1833,14 @@ object schemaMod {
       
       inline def setToIntUndefined: Self = StObject.set(x, "toInt", js.undefined)
       
+      inline def setToLowerCase(value: SanitizerSchemaOptions[toLowerCase]): Self = StObject.set(x, "toLowerCase", value.asInstanceOf[js.Any])
+      
+      inline def setToLowerCaseUndefined: Self = StObject.set(x, "toLowerCase", js.undefined)
+      
+      inline def setToUpperCase(value: SanitizerSchemaOptions[toUpperCase]): Self = StObject.set(x, "toUpperCase", value.asInstanceOf[js.Any])
+      
+      inline def setToUpperCaseUndefined: Self = StObject.set(x, "toUpperCase", js.undefined)
+      
       inline def setTrim(value: SanitizerSchemaOptions[trim]): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
       
       inline def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
@@ -1674,6 +1860,8 @@ object schemaMod {
   /* Inlined express-validator.express-validator/src/middlewares/schema.ParamSchema */
   trait ValidationParamSchema extends StObject {
     
+    var default: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.default]] = js.undefined
+    
     var blacklist: js.UndefOr[
         SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.blacklist]
       ] = js.undefined
@@ -1691,7 +1879,7 @@ object schemaMod {
     @JSName("equals")
     var equals_FValidationParamSchema: js.UndefOr[ValidatorSchemaOptions[equals]] = js.undefined
     
-    var errorMessage: js.UndefOr[DynamicMessageCreator | js.Any] = js.undefined
+    var errorMessage: js.UndefOr[DynamicMessageCreator | Any] = js.undefined
     
     var escape: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.escape]] = js.undefined
     
@@ -1715,6 +1903,10 @@ object schemaMod {
     
     var isBase32: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isBase32]
+      ] = js.undefined
+    
+    var isBase58: js.UndefOr[
+        ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isBase58]
       ] = js.undefined
     
     var isBase64: js.UndefOr[
@@ -1815,6 +2007,10 @@ object schemaMod {
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISO31661Alpha3]
       ] = js.undefined
     
+    var isISO4217: js.UndefOr[
+        ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISO4217]
+      ] = js.undefined
+    
     var isISO8601: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISO8601]
       ] = js.undefined
@@ -1841,6 +2037,10 @@ object schemaMod {
     
     var isLength: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isLength]
+      ] = js.undefined
+    
+    var isLicensePlate: js.UndefOr[
+        ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isLicensePlate]
       ] = js.undefined
     
     var isLocale: js.UndefOr[
@@ -1881,6 +2081,10 @@ object schemaMod {
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isNumeric]
       ] = js.undefined
     
+    var isObject: js.UndefOr[
+        ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isObject]
+      ] = js.undefined
+    
     var isOctal: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isOctal]] = js.undefined
     
     var isPassportNumber: js.UndefOr[
@@ -1911,6 +2115,10 @@ object schemaMod {
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isString]
       ] = js.undefined
     
+    var isStrongPassword: js.UndefOr[
+        ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isStrongPassword]
+      ] = js.undefined
+    
     var isSurrogatePair: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isSurrogatePair]
       ] = js.undefined
@@ -1924,6 +2132,8 @@ object schemaMod {
     var isUppercase: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isUppercase]
       ] = js.undefined
+    
+    var isVAT: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isVAT]] = js.undefined
     
     var isVariableWidth: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isVariableWidth]
@@ -1949,6 +2159,8 @@ object schemaMod {
     
     var optional: js.UndefOr[`true` | `0`] = js.undefined
     
+    var replace: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.replace]] = js.undefined
+    
     var rtrim: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.rtrim]] = js.undefined
     
     var stripLow: js.UndefOr[
@@ -1966,6 +2178,14 @@ object schemaMod {
     var toFloat: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toFloat]] = js.undefined
     
     var toInt: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toInt]] = js.undefined
+    
+    var toLowerCase: js.UndefOr[
+        SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toLowerCase]
+      ] = js.undefined
+    
+    var toUpperCase: js.UndefOr[
+        SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toUpperCase]
+      ] = js.undefined
     
     var trim: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.trim]] = js.undefined
     
@@ -2006,13 +2226,17 @@ object schemaMod {
       
       inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
       
+      inline def setDefault(value: SanitizerSchemaOptions[default]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      
       inline def setEquals_(value: ValidatorSchemaOptions[equals]): Self = StObject.set(x, "equals", value.asInstanceOf[js.Any])
       
       inline def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
       
-      inline def setErrorMessage(value: DynamicMessageCreator | js.Any): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+      inline def setErrorMessage(value: DynamicMessageCreator | Any): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
       
-      inline def setErrorMessageFunction2(value: (/* value */ js.Any, /* meta */ Meta) => js.Any): Self = StObject.set(x, "errorMessage", js.Any.fromFunction2(value))
+      inline def setErrorMessageFunction2(value: (/* value */ Any, /* meta */ Meta) => Any): Self = StObject.set(x, "errorMessage", js.Any.fromFunction2(value))
       
       inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
       
@@ -2028,7 +2252,7 @@ object schemaMod {
       
       inline def setInUndefined: Self = StObject.set(x, "in", js.undefined)
       
-      inline def setInVarargs(value: Location*): Self = StObject.set(x, "in", js.Array(value :_*))
+      inline def setInVarargs(value: Location*): Self = StObject.set(x, "in", js.Array(value*))
       
       inline def setIsAfter(value: ValidatorSchemaOptions[isAfter]): Self = StObject.set(x, "isAfter", value.asInstanceOf[js.Any])
       
@@ -2057,6 +2281,10 @@ object schemaMod {
       inline def setIsBase32(value: ValidatorSchemaOptions[isBase32]): Self = StObject.set(x, "isBase32", value.asInstanceOf[js.Any])
       
       inline def setIsBase32Undefined: Self = StObject.set(x, "isBase32", js.undefined)
+      
+      inline def setIsBase58(value: ValidatorSchemaOptions[isBase58]): Self = StObject.set(x, "isBase58", value.asInstanceOf[js.Any])
+      
+      inline def setIsBase58Undefined: Self = StObject.set(x, "isBase58", js.undefined)
       
       inline def setIsBase64(value: ValidatorSchemaOptions[isBase64]): Self = StObject.set(x, "isBase64", value.asInstanceOf[js.Any])
       
@@ -2182,6 +2410,10 @@ object schemaMod {
       
       inline def setIsISO31661Alpha3Undefined: Self = StObject.set(x, "isISO31661Alpha3", js.undefined)
       
+      inline def setIsISO4217(value: ValidatorSchemaOptions[isISO4217]): Self = StObject.set(x, "isISO4217", value.asInstanceOf[js.Any])
+      
+      inline def setIsISO4217Undefined: Self = StObject.set(x, "isISO4217", js.undefined)
+      
       inline def setIsISO8601(value: ValidatorSchemaOptions[isISO8601]): Self = StObject.set(x, "isISO8601", value.asInstanceOf[js.Any])
       
       inline def setIsISO8601Undefined: Self = StObject.set(x, "isISO8601", js.undefined)
@@ -2221,6 +2453,10 @@ object schemaMod {
       inline def setIsLength(value: ValidatorSchemaOptions[isLength]): Self = StObject.set(x, "isLength", value.asInstanceOf[js.Any])
       
       inline def setIsLengthUndefined: Self = StObject.set(x, "isLength", js.undefined)
+      
+      inline def setIsLicensePlate(value: ValidatorSchemaOptions[isLicensePlate]): Self = StObject.set(x, "isLicensePlate", value.asInstanceOf[js.Any])
+      
+      inline def setIsLicensePlateUndefined: Self = StObject.set(x, "isLicensePlate", js.undefined)
       
       inline def setIsLocale(value: ValidatorSchemaOptions[isLocale]): Self = StObject.set(x, "isLocale", value.asInstanceOf[js.Any])
       
@@ -2262,6 +2498,10 @@ object schemaMod {
       
       inline def setIsNumericUndefined: Self = StObject.set(x, "isNumeric", js.undefined)
       
+      inline def setIsObject(value: ValidatorSchemaOptions[isObject]): Self = StObject.set(x, "isObject", value.asInstanceOf[js.Any])
+      
+      inline def setIsObjectUndefined: Self = StObject.set(x, "isObject", js.undefined)
+      
       inline def setIsOctal(value: ValidatorSchemaOptions[isOctal]): Self = StObject.set(x, "isOctal", value.asInstanceOf[js.Any])
       
       inline def setIsOctalUndefined: Self = StObject.set(x, "isOctal", js.undefined)
@@ -2298,6 +2538,10 @@ object schemaMod {
       
       inline def setIsStringUndefined: Self = StObject.set(x, "isString", js.undefined)
       
+      inline def setIsStrongPassword(value: ValidatorSchemaOptions[isStrongPassword]): Self = StObject.set(x, "isStrongPassword", value.asInstanceOf[js.Any])
+      
+      inline def setIsStrongPasswordUndefined: Self = StObject.set(x, "isStrongPassword", js.undefined)
+      
       inline def setIsSurrogatePair(value: ValidatorSchemaOptions[isSurrogatePair]): Self = StObject.set(x, "isSurrogatePair", value.asInstanceOf[js.Any])
       
       inline def setIsSurrogatePairUndefined: Self = StObject.set(x, "isSurrogatePair", js.undefined)
@@ -2317,6 +2561,10 @@ object schemaMod {
       inline def setIsUppercase(value: ValidatorSchemaOptions[isUppercase]): Self = StObject.set(x, "isUppercase", value.asInstanceOf[js.Any])
       
       inline def setIsUppercaseUndefined: Self = StObject.set(x, "isUppercase", js.undefined)
+      
+      inline def setIsVAT(value: ValidatorSchemaOptions[isVAT]): Self = StObject.set(x, "isVAT", value.asInstanceOf[js.Any])
+      
+      inline def setIsVATUndefined: Self = StObject.set(x, "isVAT", js.undefined)
       
       inline def setIsVariableWidth(value: ValidatorSchemaOptions[isVariableWidth]): Self = StObject.set(x, "isVariableWidth", value.asInstanceOf[js.Any])
       
@@ -2350,6 +2598,10 @@ object schemaMod {
       
       inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
       
+      inline def setReplace(value: SanitizerSchemaOptions[replace]): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
+      
+      inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
+      
       inline def setRtrim(value: SanitizerSchemaOptions[rtrim]): Self = StObject.set(x, "rtrim", value.asInstanceOf[js.Any])
       
       inline def setRtrimUndefined: Self = StObject.set(x, "rtrim", js.undefined)
@@ -2378,6 +2630,14 @@ object schemaMod {
       
       inline def setToIntUndefined: Self = StObject.set(x, "toInt", js.undefined)
       
+      inline def setToLowerCase(value: SanitizerSchemaOptions[toLowerCase]): Self = StObject.set(x, "toLowerCase", value.asInstanceOf[js.Any])
+      
+      inline def setToLowerCaseUndefined: Self = StObject.set(x, "toLowerCase", js.undefined)
+      
+      inline def setToUpperCase(value: SanitizerSchemaOptions[toUpperCase]): Self = StObject.set(x, "toUpperCase", value.asInstanceOf[js.Any])
+      
+      inline def setToUpperCaseUndefined: Self = StObject.set(x, "toUpperCase", js.undefined)
+      
       inline def setTrim(value: SanitizerSchemaOptions[trim]): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
       
       inline def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
@@ -2400,9 +2660,9 @@ object schemaMod {
   
   /* Rewritten from type alias, can be one of: 
     - typings.expressValidator.expressValidatorBooleans.`true`
-    - typings.expressValidator.anon.ErrorMessage[K]
+    - typings.expressValidator.anon.Bail[K]
   */
-  trait ValidatorSchemaOptions[K /* <: /* keyof express-validator.express-validator/src/chain/validators.Validators<any> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 82 */ js.Any */] extends StObject
+  trait ValidatorSchemaOptions[K /* <: /* keyof express-validator.express-validator/src/chain/validators.Validators<any> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 88 */ Any */] extends StObject
   
   /* Inlined {[ K in keyof express-validator.express-validator/src/chain/validators.Validators<any> ]:? express-validator.express-validator/src/middlewares/schema.ValidatorSchemaOptions<K>} */
   trait ValidatorsSchema extends StObject {
@@ -2434,6 +2694,10 @@ object schemaMod {
     
     var isBase32: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isBase32]
+      ] = js.undefined
+    
+    var isBase58: js.UndefOr[
+        ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isBase58]
       ] = js.undefined
     
     var isBase64: js.UndefOr[
@@ -2534,6 +2798,10 @@ object schemaMod {
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISO31661Alpha3]
       ] = js.undefined
     
+    var isISO4217: js.UndefOr[
+        ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISO4217]
+      ] = js.undefined
+    
     var isISO8601: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISO8601]
       ] = js.undefined
@@ -2560,6 +2828,10 @@ object schemaMod {
     
     var isLength: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isLength]
+      ] = js.undefined
+    
+    var isLicensePlate: js.UndefOr[
+        ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isLicensePlate]
       ] = js.undefined
     
     var isLocale: js.UndefOr[
@@ -2600,6 +2872,10 @@ object schemaMod {
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isNumeric]
       ] = js.undefined
     
+    var isObject: js.UndefOr[
+        ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isObject]
+      ] = js.undefined
+    
     var isOctal: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isOctal]] = js.undefined
     
     var isPassportNumber: js.UndefOr[
@@ -2630,6 +2906,10 @@ object schemaMod {
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isString]
       ] = js.undefined
     
+    var isStrongPassword: js.UndefOr[
+        ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isStrongPassword]
+      ] = js.undefined
+    
     var isSurrogatePair: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isSurrogatePair]
       ] = js.undefined
@@ -2643,6 +2923,8 @@ object schemaMod {
     var isUppercase: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isUppercase]
       ] = js.undefined
+    
+    var isVAT: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isVAT]] = js.undefined
     
     var isVariableWidth: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isVariableWidth]
@@ -2717,6 +2999,10 @@ object schemaMod {
       
       inline def setIsBase32Undefined: Self = StObject.set(x, "isBase32", js.undefined)
       
+      inline def setIsBase58(value: ValidatorSchemaOptions[isBase58]): Self = StObject.set(x, "isBase58", value.asInstanceOf[js.Any])
+      
+      inline def setIsBase58Undefined: Self = StObject.set(x, "isBase58", js.undefined)
+      
       inline def setIsBase64(value: ValidatorSchemaOptions[isBase64]): Self = StObject.set(x, "isBase64", value.asInstanceOf[js.Any])
       
       inline def setIsBase64Undefined: Self = StObject.set(x, "isBase64", js.undefined)
@@ -2841,6 +3127,10 @@ object schemaMod {
       
       inline def setIsISO31661Alpha3Undefined: Self = StObject.set(x, "isISO31661Alpha3", js.undefined)
       
+      inline def setIsISO4217(value: ValidatorSchemaOptions[isISO4217]): Self = StObject.set(x, "isISO4217", value.asInstanceOf[js.Any])
+      
+      inline def setIsISO4217Undefined: Self = StObject.set(x, "isISO4217", js.undefined)
+      
       inline def setIsISO8601(value: ValidatorSchemaOptions[isISO8601]): Self = StObject.set(x, "isISO8601", value.asInstanceOf[js.Any])
       
       inline def setIsISO8601Undefined: Self = StObject.set(x, "isISO8601", js.undefined)
@@ -2880,6 +3170,10 @@ object schemaMod {
       inline def setIsLength(value: ValidatorSchemaOptions[isLength]): Self = StObject.set(x, "isLength", value.asInstanceOf[js.Any])
       
       inline def setIsLengthUndefined: Self = StObject.set(x, "isLength", js.undefined)
+      
+      inline def setIsLicensePlate(value: ValidatorSchemaOptions[isLicensePlate]): Self = StObject.set(x, "isLicensePlate", value.asInstanceOf[js.Any])
+      
+      inline def setIsLicensePlateUndefined: Self = StObject.set(x, "isLicensePlate", js.undefined)
       
       inline def setIsLocale(value: ValidatorSchemaOptions[isLocale]): Self = StObject.set(x, "isLocale", value.asInstanceOf[js.Any])
       
@@ -2921,6 +3215,10 @@ object schemaMod {
       
       inline def setIsNumericUndefined: Self = StObject.set(x, "isNumeric", js.undefined)
       
+      inline def setIsObject(value: ValidatorSchemaOptions[isObject]): Self = StObject.set(x, "isObject", value.asInstanceOf[js.Any])
+      
+      inline def setIsObjectUndefined: Self = StObject.set(x, "isObject", js.undefined)
+      
       inline def setIsOctal(value: ValidatorSchemaOptions[isOctal]): Self = StObject.set(x, "isOctal", value.asInstanceOf[js.Any])
       
       inline def setIsOctalUndefined: Self = StObject.set(x, "isOctal", js.undefined)
@@ -2957,6 +3255,10 @@ object schemaMod {
       
       inline def setIsStringUndefined: Self = StObject.set(x, "isString", js.undefined)
       
+      inline def setIsStrongPassword(value: ValidatorSchemaOptions[isStrongPassword]): Self = StObject.set(x, "isStrongPassword", value.asInstanceOf[js.Any])
+      
+      inline def setIsStrongPasswordUndefined: Self = StObject.set(x, "isStrongPassword", js.undefined)
+      
       inline def setIsSurrogatePair(value: ValidatorSchemaOptions[isSurrogatePair]): Self = StObject.set(x, "isSurrogatePair", value.asInstanceOf[js.Any])
       
       inline def setIsSurrogatePairUndefined: Self = StObject.set(x, "isSurrogatePair", js.undefined)
@@ -2976,6 +3278,10 @@ object schemaMod {
       inline def setIsUppercase(value: ValidatorSchemaOptions[isUppercase]): Self = StObject.set(x, "isUppercase", value.asInstanceOf[js.Any])
       
       inline def setIsUppercaseUndefined: Self = StObject.set(x, "isUppercase", js.undefined)
+      
+      inline def setIsVAT(value: ValidatorSchemaOptions[isVAT]): Self = StObject.set(x, "isVAT", value.asInstanceOf[js.Any])
+      
+      inline def setIsVATUndefined: Self = StObject.set(x, "isVAT", js.undefined)
       
       inline def setIsVariableWidth(value: ValidatorSchemaOptions[isVariableWidth]): Self = StObject.set(x, "isVariableWidth", value.asInstanceOf[js.Any])
       

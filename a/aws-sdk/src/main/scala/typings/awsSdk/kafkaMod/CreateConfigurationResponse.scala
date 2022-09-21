@@ -18,7 +18,7 @@ trait CreateConfigurationResponse extends StObject {
     The time when the configuration was created.
     
     */
-  var CreationTime: js.UndefOr[timestampIso8601] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * 
@@ -54,7 +54,7 @@ object CreateConfigurationResponse {
     
     inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    inline def setCreationTime(value: timestampIso8601): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     

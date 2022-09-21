@@ -10,10 +10,10 @@ Instagram graph authentication strategy for Passport.
 | ------------------ | :-------------: |
 | Full name          | passport-instagram-graph |
 | Keywords           | passport, instagram, auth, authentication, identity |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 2180 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 660.6666666666666 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/huynhsang/passport-instagram-graph#readme)

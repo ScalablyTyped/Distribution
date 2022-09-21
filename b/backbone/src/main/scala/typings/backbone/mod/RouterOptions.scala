@@ -6,17 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RouterOptions extends StObject {
   
-  var routes: js.Any
+  var routes: Result[RoutesHash]
 }
 object RouterOptions {
   
-  inline def apply(routes: js.Any): RouterOptions = {
+  inline def apply(routes: Result[RoutesHash]): RouterOptions = {
     val __obj = js.Dynamic.literal(routes = routes.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouterOptions]
   }
   
   extension [Self <: RouterOptions](x: Self) {
     
-    inline def setRoutes(value: js.Any): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+    inline def setRoutes(value: Result[RoutesHash]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+    
+    inline def setRoutesFunction0(value: () => RoutesHash): Self = StObject.set(x, "routes", js.Any.fromFunction0(value))
   }
 }

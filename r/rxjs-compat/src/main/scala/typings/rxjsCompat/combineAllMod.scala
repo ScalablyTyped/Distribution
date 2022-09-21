@@ -10,9 +10,9 @@ object combineAllMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def combineAll[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("combineAll")().asInstanceOf[js.Any]
-  inline def combineAll[R](project: js.Function1[/* repeated */ js.Any, R]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("combineAll")(project.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def combineAll[T](): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("combineAll")().asInstanceOf[Any]
+  inline def combineAll[R](project: js.Function1[/* repeated */ Any, R]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("combineAll")(project.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def combineAll_TR[T, R](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("combineAll")().asInstanceOf[js.Any]
-  inline def combineAll_TR[T, R](project: js.Function1[/* repeated */ T, R]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("combineAll")(project.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def combineAll_TR[T, R](): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("combineAll")().asInstanceOf[Any]
+  inline def combineAll_TR[T, R](project: js.Function1[/* repeated */ T, R]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("combineAll")(project.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

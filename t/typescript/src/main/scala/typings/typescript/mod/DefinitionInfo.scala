@@ -15,6 +15,8 @@ trait DefinitionInfo
   var kind: ScriptElementKind
   
   var name: java.lang.String
+  
+  var unverified: js.UndefOr[Boolean] = js.undefined
 }
 object DefinitionInfo {
   
@@ -39,5 +41,9 @@ object DefinitionInfo {
     inline def setKind(value: ScriptElementKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setUnverified(value: Boolean): Self = StObject.set(x, "unverified", value.asInstanceOf[js.Any])
+    
+    inline def setUnverifiedUndefined: Self = StObject.set(x, "unverified", js.undefined)
   }
 }

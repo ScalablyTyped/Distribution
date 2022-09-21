@@ -22,7 +22,7 @@ object XTextOutputStream2 {
     closeOutput: () => Unit,
     flush: () => Unit,
     getOutputStream: () => XOutputStream,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setEncoding: String => Unit,
     setOutputStream: XOutputStream => Unit,

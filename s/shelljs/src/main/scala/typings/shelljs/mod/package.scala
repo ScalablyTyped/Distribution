@@ -1,76 +1,74 @@
 package typings.shelljs.mod
 
+import typings.node.processMod.global.NodeJS.ProcessEnv
+import typings.shelljs.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def cat: typings.shelljs.mod.CatFunction = typings.shelljs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("cat").asInstanceOf[typings.shelljs.mod.CatFunction]
+inline def cat: CatFunction = ^.asInstanceOf[js.Dynamic].selectDynamic("cat").asInstanceOf[CatFunction]
 
-inline def cd(): typings.shelljs.mod.ShellString = typings.shelljs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("cd")().asInstanceOf[typings.shelljs.mod.ShellString]
-inline def cd(dir: java.lang.String): typings.shelljs.mod.ShellString = typings.shelljs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("cd")(dir.asInstanceOf[js.Any]).asInstanceOf[typings.shelljs.mod.ShellString]
+inline def cd(): ShellString = ^.asInstanceOf[js.Dynamic].applyDynamic("cd")().asInstanceOf[ShellString]
+inline def cd(dir: String): ShellString = ^.asInstanceOf[js.Dynamic].applyDynamic("cd")(dir.asInstanceOf[js.Any]).asInstanceOf[ShellString]
 
-inline def chmod: typings.shelljs.mod.ChmodFunction = typings.shelljs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("chmod").asInstanceOf[typings.shelljs.mod.ChmodFunction]
+inline def chmod: ChmodFunction = ^.asInstanceOf[js.Dynamic].selectDynamic("chmod").asInstanceOf[ChmodFunction]
 
-inline def config: typings.shelljs.mod.ShellConfig = typings.shelljs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("config").asInstanceOf[typings.shelljs.mod.ShellConfig]
+inline def config: ShellConfig = ^.asInstanceOf[js.Dynamic].selectDynamic("config").asInstanceOf[ShellConfig]
 
-inline def cp: typings.shelljs.mod.CopyFunction = typings.shelljs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("cp").asInstanceOf[typings.shelljs.mod.CopyFunction]
+inline def cp: CopyFunction = ^.asInstanceOf[js.Dynamic].selectDynamic("cp").asInstanceOf[CopyFunction]
 
-inline def dirs: typings.shelljs.mod.DirsFunction = typings.shelljs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("dirs").asInstanceOf[typings.shelljs.mod.DirsFunction]
+inline def dirs: DirsFunction = ^.asInstanceOf[js.Dynamic].selectDynamic("dirs").asInstanceOf[DirsFunction]
 
-inline def echo: typings.shelljs.mod.EchoFunction = typings.shelljs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("echo").asInstanceOf[typings.shelljs.mod.EchoFunction]
+inline def echo: EchoFunction = ^.asInstanceOf[js.Dynamic].selectDynamic("echo").asInstanceOf[EchoFunction]
 
-inline def env: typings.node.processMod.global.NodeJS.ProcessEnv = typings.shelljs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("env").asInstanceOf[typings.node.processMod.global.NodeJS.ProcessEnv]
+inline def env: ProcessEnv = ^.asInstanceOf[js.Dynamic].selectDynamic("env").asInstanceOf[ProcessEnv]
 
-inline def error(): typings.shelljs.mod.ShellString = typings.shelljs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("error")().asInstanceOf[typings.shelljs.mod.ShellString]
+inline def error(): ShellString = ^.asInstanceOf[js.Dynamic].applyDynamic("error")().asInstanceOf[ShellString]
 
-inline def exec: typings.shelljs.mod.ExecFunction = typings.shelljs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("exec").asInstanceOf[typings.shelljs.mod.ExecFunction]
+inline def exec: ExecFunction = ^.asInstanceOf[js.Dynamic].selectDynamic("exec").asInstanceOf[ExecFunction]
 
-inline def exit(): scala.Nothing = typings.shelljs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("exit")().asInstanceOf[scala.Nothing]
-inline def exit(code: scala.Double): scala.Nothing = typings.shelljs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("exit")(code.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
+inline def exit(): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("exit")().asInstanceOf[scala.Nothing]
+inline def exit(code: Double): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("exit")(code.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
 
-inline def find: typings.shelljs.mod.FindFunction = typings.shelljs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("find").asInstanceOf[typings.shelljs.mod.FindFunction]
+inline def find: FindFunction = ^.asInstanceOf[js.Dynamic].selectDynamic("find").asInstanceOf[FindFunction]
 
-inline def grep: typings.shelljs.mod.GrepFunction = typings.shelljs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("grep").asInstanceOf[typings.shelljs.mod.GrepFunction]
+inline def grep: GrepFunction = ^.asInstanceOf[js.Dynamic].selectDynamic("grep").asInstanceOf[GrepFunction]
 
-inline def head: typings.shelljs.mod.HeadFunction = typings.shelljs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("head").asInstanceOf[typings.shelljs.mod.HeadFunction]
+inline def head: HeadFunction = ^.asInstanceOf[js.Dynamic].selectDynamic("head").asInstanceOf[HeadFunction]
 
-inline def ln: typings.shelljs.mod.LinkFunction = typings.shelljs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ln").asInstanceOf[typings.shelljs.mod.LinkFunction]
+inline def ln: LinkFunction = ^.asInstanceOf[js.Dynamic].selectDynamic("ln").asInstanceOf[LinkFunction]
 
-inline def ls: typings.shelljs.mod.ListFunction = typings.shelljs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ls").asInstanceOf[typings.shelljs.mod.ListFunction]
+inline def ls: ListFunction = ^.asInstanceOf[js.Dynamic].selectDynamic("ls").asInstanceOf[ListFunction]
 
-inline def mkdir: typings.shelljs.mod.MkdirFunction = typings.shelljs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("mkdir").asInstanceOf[typings.shelljs.mod.MkdirFunction]
+inline def mkdir: MkdirFunction = ^.asInstanceOf[js.Dynamic].selectDynamic("mkdir").asInstanceOf[MkdirFunction]
 
-inline def mv: typings.shelljs.mod.MoveFunction = typings.shelljs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("mv").asInstanceOf[typings.shelljs.mod.MoveFunction]
+inline def mv: MoveFunction = ^.asInstanceOf[js.Dynamic].selectDynamic("mv").asInstanceOf[MoveFunction]
 
-inline def popd: typings.shelljs.mod.PopDirFunction = typings.shelljs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("popd").asInstanceOf[typings.shelljs.mod.PopDirFunction]
+inline def popd: PopDirFunction = ^.asInstanceOf[js.Dynamic].selectDynamic("popd").asInstanceOf[PopDirFunction]
 
-inline def pushd: typings.shelljs.mod.PushDirFunction = typings.shelljs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("pushd").asInstanceOf[typings.shelljs.mod.PushDirFunction]
+inline def pushd: PushDirFunction = ^.asInstanceOf[js.Dynamic].selectDynamic("pushd").asInstanceOf[PushDirFunction]
 
-inline def pwd(): typings.shelljs.mod.ShellString = typings.shelljs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("pwd")().asInstanceOf[typings.shelljs.mod.ShellString]
+inline def pwd(): ShellString = ^.asInstanceOf[js.Dynamic].applyDynamic("pwd")().asInstanceOf[ShellString]
 
-inline def rm: typings.shelljs.mod.RemoveFunction = typings.shelljs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("rm").asInstanceOf[typings.shelljs.mod.RemoveFunction]
+inline def rm: RemoveFunction = ^.asInstanceOf[js.Dynamic].selectDynamic("rm").asInstanceOf[RemoveFunction]
 
-inline def sed: typings.shelljs.mod.SedFunction = typings.shelljs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("sed").asInstanceOf[typings.shelljs.mod.SedFunction]
+inline def sed: SedFunction = ^.asInstanceOf[js.Dynamic].selectDynamic("sed").asInstanceOf[SedFunction]
 
-inline def set(options: java.lang.String): scala.Unit = typings.shelljs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("set")(options.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def set(options: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-inline def sort: typings.shelljs.mod.SortFunction = typings.shelljs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("sort").asInstanceOf[typings.shelljs.mod.SortFunction]
+inline def sort: SortFunction = ^.asInstanceOf[js.Dynamic].selectDynamic("sort").asInstanceOf[SortFunction]
 
-inline def tail: typings.shelljs.mod.TailFunction = typings.shelljs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("tail").asInstanceOf[typings.shelljs.mod.TailFunction]
+inline def tail: TailFunction = ^.asInstanceOf[js.Dynamic].selectDynamic("tail").asInstanceOf[TailFunction]
 
-inline def tempdir(): typings.shelljs.mod.ShellString = typings.shelljs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("tempdir")().asInstanceOf[typings.shelljs.mod.ShellString]
+inline def tempdir(): ShellString = ^.asInstanceOf[js.Dynamic].applyDynamic("tempdir")().asInstanceOf[ShellString]
 
-inline def test(option: typings.shelljs.mod.TestOptions, path: java.lang.String): scala.Boolean = (typings.shelljs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("test")(option.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
+inline def test(option: TestOptions, path: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("test")(option.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 
-inline def touch: typings.shelljs.mod.TouchFunction = typings.shelljs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("touch").asInstanceOf[typings.shelljs.mod.TouchFunction]
+inline def touch: TouchFunction = ^.asInstanceOf[js.Dynamic].selectDynamic("touch").asInstanceOf[TouchFunction]
 
-inline def uniq: typings.shelljs.mod.UniqFunction = typings.shelljs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("uniq").asInstanceOf[typings.shelljs.mod.UniqFunction]
+inline def uniq: UniqFunction = ^.asInstanceOf[js.Dynamic].selectDynamic("uniq").asInstanceOf[UniqFunction]
 
-inline def which(command: java.lang.String): typings.shelljs.mod.ShellString = typings.shelljs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("which")(command.asInstanceOf[js.Any]).asInstanceOf[typings.shelljs.mod.ShellString]
+inline def which(command: String): ShellString | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("which")(command.asInstanceOf[js.Any]).asInstanceOf[ShellString | Null]
 
-type ExecCallback = js.Function3[
-/* code */ scala.Double, 
-/* stdout */ java.lang.String, 
-/* stderr */ java.lang.String, 
-js.Any]
+type ExecCallback = js.Function3[/* code */ Double, /* stdout */ String, /* stderr */ String, Any]

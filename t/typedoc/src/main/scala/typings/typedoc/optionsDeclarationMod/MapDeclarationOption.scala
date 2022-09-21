@@ -10,10 +10,22 @@ trait MapDeclarationOption[T]
   extends StObject
      with DeclarationOptionBase {
   
+  /**
+    * Unlike the rest of the option types, there is no sensible generic default for mapped option types.
+    * The default value for a mapped type must be specified.
+    */
   var defaultValue: T
   
+  /**
+    * Maps a given value to the option type. The map type may be a TypeScript enum.
+    * In that case, when generating an error message for a mismatched key, the numeric
+    * keys will not be listed.
+    */
   var map: (Map[String, T]) | (Record[String | Double, T])
   
+  /**
+    * Optional override for the error reported when an invalid key is provided.
+    */
   var mapError: js.UndefOr[String] = js.undefined
   
   @JSName("type")

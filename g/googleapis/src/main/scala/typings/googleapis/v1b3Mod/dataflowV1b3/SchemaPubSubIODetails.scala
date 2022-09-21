@@ -4,20 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Metadata for a PubSub connector used by the job.
-  */
 trait SchemaPubSubIODetails extends StObject {
   
   /**
     * Subscription used in the connection.
     */
-  var subscription: js.UndefOr[String] = js.undefined
+  var subscription: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Topic accessed in the connection.
     */
-  var topic: js.UndefOr[String] = js.undefined
+  var topic: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaPubSubIODetails {
   
@@ -30,9 +27,13 @@ object SchemaPubSubIODetails {
     
     inline def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     
+    inline def setSubscriptionNull: Self = StObject.set(x, "subscription", null)
+    
     inline def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
     
     inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    
+    inline def setTopicNull: Self = StObject.set(x, "topic", null)
     
     inline def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
   }

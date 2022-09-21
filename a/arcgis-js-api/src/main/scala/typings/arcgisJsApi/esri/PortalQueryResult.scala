@@ -28,7 +28,7 @@ trait PortalQueryResult
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryResult.html#results)
     */
-  var results: js.Array[js.Any] = js.native
+  var results: js.Array[Any] = js.native
   
   /**
     * The total number of results.

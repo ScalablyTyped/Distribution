@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DateShiftConfig extends StObject {
   
   /**
-    * An AES 128/192/256 bit key. Causes the shift to be computed based on this key and the patient ID. A default key is generated for each Deidentify operation and is used wherever
-    * crypto_key is not specified.
+    * An AES 128/192/256 bit key. Causes the shift to be computed based on this key and the patient ID. A default key is generated for each de-identification operation and is used when
+    * neither `crypto_key` nor `kms_wrapped` is specified. Must not be set if `kms_wrapped` is set.
     */
   var cryptoKey: js.UndefOr[String] = js.undefined
 }

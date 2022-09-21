@@ -1,14 +1,14 @@
 package typings.jsoneditor.mod
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.std.HTMLElement
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait BaseNode extends StObject {
   
-  var dom: StringDictionary[HTMLElement]
+  var dom: Record[String, HTMLElement]
   
   var editable: js.UndefOr[FieldEditable] = js.undefined
   
@@ -18,14 +18,14 @@ trait BaseNode extends StObject {
 }
 object BaseNode {
   
-  inline def apply(dom: StringDictionary[HTMLElement], editor: JSONEditor): BaseNode = {
+  inline def apply(dom: Record[String, HTMLElement], editor: JSONEditor): BaseNode = {
     val __obj = js.Dynamic.literal(dom = dom.asInstanceOf[js.Any], editor = editor.asInstanceOf[js.Any], parent = null)
     __obj.asInstanceOf[BaseNode]
   }
   
   extension [Self <: BaseNode](x: Self) {
     
-    inline def setDom(value: StringDictionary[HTMLElement]): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
+    inline def setDom(value: Record[String, HTMLElement]): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
     
     inline def setEditable(value: FieldEditable): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
     

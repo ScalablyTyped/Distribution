@@ -9,7 +9,7 @@ trait Membership extends StObject {
   /** Output only. The time when the `Membership` was created. */
   var createTime: js.UndefOr[String] = js.undefined
   
-  /** Output only. The [resource name](https://cloud.google.com/apis/design/resource_names) of the `Membership`. Shall be of the form `groups/{group_id}/memberships/{membership_id}`. */
+  /** Output only. The [resource name](https://cloud.google.com/apis/design/resource_names) of the `Membership`. Shall be of the form `groups/{group}/memberships/{membership}`. */
   var name: js.UndefOr[String] = js.undefined
   
   /** Required. Immutable. The `EntityKey` of the member. */
@@ -52,7 +52,7 @@ object Membership {
     
     inline def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
     
-    inline def setRolesVarargs(value: MembershipRole*): Self = StObject.set(x, "roles", js.Array(value :_*))
+    inline def setRolesVarargs(value: MembershipRole*): Self = StObject.set(x, "roles", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

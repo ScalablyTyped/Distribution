@@ -10,10 +10,10 @@ object tuneMod {
   
   @JSImport("material-ui/svg-icons/image/tune", JSImport.Default)
   @js.native
-  class default () extends ImageTune
+  open class default () extends ImageTune
   
   @JSImport("material-ui/svg-icons/image/tune", "ImageTune")
   @js.native
-  class ImageTune ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageTune ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

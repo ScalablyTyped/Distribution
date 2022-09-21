@@ -16,42 +16,218 @@ trait CarouselProps
   extends StObject
      with ViewPagerAndroidProps {
   
+  /**
+    * @language zh-CN
+    * @description 是否自动播放
+    * @defaultValue false
+    */
+  /**
+    * @language en-US
+    * @description Auto play
+    * @defaultValue false
+    */
   var autoplay: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 自动播放间隔时间(ms)
+    * @defaultValue 2000
+    */
+  /**
+    * @language en-US
+    * @description Auto play interval (ms)
+    * @defaultValue 2000
+    */
   var autoplayInterval: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 当内容范围比滚动视图本身大时，是否弹性拉动一截
+    * @defaultValue true
+    */
+  /**
+    * @language en-US
+    * @description When the content range is larger than the scrolling view itself, is it elastic to pull a section
+    * @defaultValue true
+    */
   var bounces: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 轮播图切换事件
+    * @defaultValue () => {}
+    */
+  /**
+    * @language en-US
+    * @description Carousel chart switching event
+    * @defaultValue () => {}
+    */
   var carouselChange: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 当前激活的指示点样式
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue {}
+    */
+  /**
+    * @language en-US
+    * @description The currently active indicator style
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue {}
+    */
   var dotActiveStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 指示点样式
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue {}
+    */
+  /**
+    * @language en-US
+    * @description Indicator point style
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue {}
+    */
   var dotStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 指示点的样式
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Indicates the style of the point
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
   var dotWrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var dots: js.UndefOr[ElementType[js.Any] | (js.Function1[/* params */ CurrentIndex, ReactNode])] = js.undefined
+  /**
+    * @language zh-CN
+    * @description 自定义指示点
+    * @types React.ElementType | ((params: { dotStyle: <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>; dotWrapperStyle: <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>; dotActiveStyle: <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>; currentIndex: number; count: number;}) => React.ReactNode)
+    * @defaultValue <a target="_blank" href="https://github.com/tuya/tuya-panel-kit/blob/master/src/components/carousel/dot.js#L33">defaultDot</a>
+    */
+  /**
+    * @language en-US
+    * @description Custom indicator point
+    * @types React.ElementType | ((params: { dotStyle: <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>;dotWrapperStyle: <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>;dotActiveStyle: <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>; currentIndex: number; count: number;}) => React.ReactNode)
+    * @defaultValue <a target="_blank" href="https://github.com/tuya/tuya-panel-kit/blob/master/src/components/carousel/dot.js#L33">defaultDot</a>
+    */
+  var dots: js.UndefOr[ElementType[Any] | (js.Function1[/* params */ CurrentIndex, ReactNode])] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 是否有指示点
+    * @defaultValue true
+    */
+  /**
+    * @language en-US
+    * @description Is there an indication point
+    * @defaultValue true
+    */
   var hasDots: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 是否循环播放
+    * @defaultValue false
+    */
+  /**
+    * @language en-US
+    * @description Do you want to loop?
+    * @defaultValue false
+    */
   var loop: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 当滚动结束时调用
+    * @types (event: <a target="_blank" href="https://reactnative.dev/docs/0.60/scrollview#onscroll">NativeSyntheticEvent<NativeScrollEvent></a>, state: any) => void
+    * @defaultValue () => {}
+    */
+  /**
+    * @language en-US
+    * @description Called when the momentum scroll ends ( scroll which occurs as the ScrollView glides to a stop )
+    * @types (event: <a target="_blank" href="https://reactnative.dev/docs/0.60/scrollview#onscroll">NativeSyntheticEvent<NativeScrollEvent></a>, state: any) => void
+    * @defaultValue () => {}
+    */
   var onMomentumScrollEnd: js.UndefOr[
-    js.Function2[/* event */ NativeSyntheticEvent[NativeScrollEvent], /* state */ js.Any, Unit]
+    js.Function2[/* event */ NativeSyntheticEvent[NativeScrollEvent], /* state */ Any, Unit]
   ] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 用户开始拖动滚动视图时调用
+    * @types (event: <a target="_blank" href="https://reactnative.dev/docs/0.60/scrollview#onscroll">NativeSyntheticEvent<NativeScrollEvent></a>, state: any) => void
+    * @defaultValue () => {}
+    */
+  /**
+    * @language en-US
+    * @description Called when the user begins to drag the scroll view
+    * @types (event: <a target="_blank" href="https://reactnative.dev/docs/0.60/scrollview#onscroll">NativeSyntheticEvent<NativeScrollEvent></a>, state: any) => void
+    * @defaultValue () => {}
+    */
   var onScrollBeginDrag: js.UndefOr[
-    js.Function2[/* event */ NativeSyntheticEvent[NativeScrollEvent], /* state */ js.Any, Unit]
+    js.Function2[/* event */ NativeSyntheticEvent[NativeScrollEvent], /* state */ Any, Unit]
   ] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 用户停止拖动滚动视图时调用
+    * @types (event: <a target="_blank" href="https://reactnative.dev/docs/0.60/scrollview#onscroll">NativeSyntheticEvent<NativeScrollEvent></a>, state: any) => void
+    * @defaultValue () => {}
+    */
+  /**
+    * @language en-US
+    * @description Called when the user stops dragging the scroll view and it either stops or begins to glide
+    * @types (event: <a target="_blank" href="https://reactnative.dev/docs/0.60/scrollview#onscroll">NativeSyntheticEvent<NativeScrollEvent></a>, state: any) => void
+    * @defaultValue () => {}
+    */
   var onScrollEndDrag: js.UndefOr[
-    js.Function2[/* event */ NativeSyntheticEvent[NativeScrollEvent], /* state */ js.Any, Unit]
+    js.Function2[/* event */ NativeSyntheticEvent[NativeScrollEvent], /* state */ Any, Unit]
   ] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 轮播页样式
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue {}
+    */
+  /**
+    * @language en-US
+    * @description The style of the carousel page
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue {}
+    */
   var pageStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 当前激活的索引
+    * @defaultValue 0
+    */
+  /**
+    * @language en-US
+    * @description current selected index
+    * @defaultValue 0
+    */
   var selectedIndex: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 是否使用 viewPager（安卓的实现机制）
+    * @defaultValue true
+    */
+  /**
+    * @language en-US
+    * @description Whether to use viewpager (Android implementation mechanism)
+    * @defaultValue true
+    */
   var useViewPagerOnAndroid: js.UndefOr[Boolean] = js.undefined
 }
 object CarouselProps {
@@ -97,7 +273,7 @@ object CarouselProps {
     
     inline def setDotWrapperStyleUndefined: Self = StObject.set(x, "dotWrapperStyle", js.undefined)
     
-    inline def setDots(value: ElementType[js.Any] | (js.Function1[/* params */ CurrentIndex, ReactNode])): Self = StObject.set(x, "dots", value.asInstanceOf[js.Any])
+    inline def setDots(value: ElementType[Any] | (js.Function1[/* params */ CurrentIndex, ReactNode])): Self = StObject.set(x, "dots", value.asInstanceOf[js.Any])
     
     inline def setDotsFunction1(value: /* params */ CurrentIndex => ReactNode): Self = StObject.set(x, "dots", js.Any.fromFunction1(value))
     
@@ -111,15 +287,15 @@ object CarouselProps {
     
     inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
     
-    inline def setOnMomentumScrollEnd(value: (/* event */ NativeSyntheticEvent[NativeScrollEvent], /* state */ js.Any) => Unit): Self = StObject.set(x, "onMomentumScrollEnd", js.Any.fromFunction2(value))
+    inline def setOnMomentumScrollEnd(value: (/* event */ NativeSyntheticEvent[NativeScrollEvent], /* state */ Any) => Unit): Self = StObject.set(x, "onMomentumScrollEnd", js.Any.fromFunction2(value))
     
     inline def setOnMomentumScrollEndUndefined: Self = StObject.set(x, "onMomentumScrollEnd", js.undefined)
     
-    inline def setOnScrollBeginDrag(value: (/* event */ NativeSyntheticEvent[NativeScrollEvent], /* state */ js.Any) => Unit): Self = StObject.set(x, "onScrollBeginDrag", js.Any.fromFunction2(value))
+    inline def setOnScrollBeginDrag(value: (/* event */ NativeSyntheticEvent[NativeScrollEvent], /* state */ Any) => Unit): Self = StObject.set(x, "onScrollBeginDrag", js.Any.fromFunction2(value))
     
     inline def setOnScrollBeginDragUndefined: Self = StObject.set(x, "onScrollBeginDrag", js.undefined)
     
-    inline def setOnScrollEndDrag(value: (/* event */ NativeSyntheticEvent[NativeScrollEvent], /* state */ js.Any) => Unit): Self = StObject.set(x, "onScrollEndDrag", js.Any.fromFunction2(value))
+    inline def setOnScrollEndDrag(value: (/* event */ NativeSyntheticEvent[NativeScrollEvent], /* state */ Any) => Unit): Self = StObject.set(x, "onScrollEndDrag", js.Any.fromFunction2(value))
     
     inline def setOnScrollEndDragUndefined: Self = StObject.set(x, "onScrollEndDrag", js.undefined)
     

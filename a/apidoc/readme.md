@@ -1,7 +1,7 @@
 
 # Scala.js typings for apidoc
 
-Typings are for version 0.22
+Typings are for version 0.50
 
 ## Library description:
 RESTful web API Documentation Generator
@@ -10,10 +10,10 @@ RESTful web API Documentation Generator
 | ------------------ | :-------------: |
 | Full name          | apidoc |
 | Keywords           | api, apidoc, doc, documentation, rest, restful |
-| # releases         | 12 |
-| # dependents       | 65 |
-| # downloads        | 3274194 |
-| # stars            | 36 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 350791.3333333333 |
+| # stars            | 9414.0 |
 
 ## Links
 - [Homepage](https://apidocjs.com)

@@ -31,12 +31,12 @@ object JQueryTinyScrollbar {
     /**
       * Set the size of the scrollbar to auto or a fixed number. (default: 'auto')
       */
-    var size: js.UndefOr[js.Any] = js.undefined
+    var size: js.UndefOr[Any] = js.undefined
     
     /**
       * Set the size of the thumb to auto or a fixed number. (default: 'auto')
       */
-    var sizethumb: js.UndefOr[js.Any] = js.undefined
+    var sizethumb: js.UndefOr[Any] = js.undefined
     
     /**
       * How many pixels must the mouswheel scrolls at a time. (default: 40)
@@ -68,11 +68,11 @@ object JQueryTinyScrollbar {
       
       inline def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
       
-      inline def setSize(value: js.Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      inline def setSizethumb(value: js.Any): Self = StObject.set(x, "sizethumb", value.asInstanceOf[js.Any])
+      inline def setSizethumb(value: Any): Self = StObject.set(x, "sizethumb", value.asInstanceOf[js.Any])
       
       inline def setSizethumbUndefined: Self = StObject.set(x, "sizethumb", js.undefined)
       

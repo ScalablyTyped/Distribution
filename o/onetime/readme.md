@@ -1,7 +1,7 @@
 
 # Scala.js typings for onetime
 
-Typings are for version 5.1.2
+Typings are for version 6.0.0
 
 ## Library description:
 Ensure a function is only called once
@@ -10,10 +10,10 @@ Ensure a function is only called once
 | ------------------ | :-------------: |
 | Full name          | onetime |
 | Keywords           | once, function, one, onetime, func, fn, single, call, called, prevent |
-| # releases         | 6 |
-| # dependents       | 144 |
-| # downloads        | 1112534613 |
-| # stars            | 7 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1.5531321166666666E8 |
+| # stars            | 140.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/onetime#readme)

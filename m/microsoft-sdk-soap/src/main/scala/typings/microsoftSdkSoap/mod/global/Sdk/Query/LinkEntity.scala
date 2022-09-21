@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Sdk.Query.LinkEntity")
 @js.native
-class LinkEntity protected () extends StObject {
+open class LinkEntity protected () extends StObject {
   /**
     * Initializes a new instance of the Sdk.Query.LinkEntity class setting the required properties.
     * @param linkFromEntityName The logical name of the entity to link from.

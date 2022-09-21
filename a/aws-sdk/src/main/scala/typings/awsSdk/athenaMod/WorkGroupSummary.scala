@@ -9,12 +9,17 @@ trait WorkGroupSummary extends StObject {
   /**
     * The workgroup creation date and time.
     */
-  var CreationTime: js.UndefOr[Date] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The workgroup description.
     */
   var Description: js.UndefOr[WorkGroupDescriptionString] = js.undefined
+  
+  /**
+    * The engine version setting for all queries on the workgroup. Queries on the AmazonAthenaPreviewFunctionality workgroup run on the preview engine regardless of this setting.
+    */
+  var EngineVersion: js.UndefOr[typings.awsSdk.athenaMod.EngineVersion] = js.undefined
   
   /**
     * The name of the workgroup.
@@ -35,13 +40,17 @@ object WorkGroupSummary {
   
   extension [Self <: WorkGroupSummary](x: Self) {
     
-    inline def setCreationTime(value: Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
     inline def setDescription(value: WorkGroupDescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    
+    inline def setEngineVersion(value: EngineVersion): Self = StObject.set(x, "EngineVersion", value.asInstanceOf[js.Any])
+    
+    inline def setEngineVersionUndefined: Self = StObject.set(x, "EngineVersion", js.undefined)
     
     inline def setName(value: WorkGroupName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

@@ -44,13 +44,13 @@ object Termination {
     
     inline def setCallingRegionsUndefined: Self = StObject.set(x, "CallingRegions", js.undefined)
     
-    inline def setCallingRegionsVarargs(value: CallingRegion*): Self = StObject.set(x, "CallingRegions", js.Array(value :_*))
+    inline def setCallingRegionsVarargs(value: CallingRegion*): Self = StObject.set(x, "CallingRegions", js.Array(value*))
     
     inline def setCidrAllowedList(value: StringList): Self = StObject.set(x, "CidrAllowedList", value.asInstanceOf[js.Any])
     
     inline def setCidrAllowedListUndefined: Self = StObject.set(x, "CidrAllowedList", js.undefined)
     
-    inline def setCidrAllowedListVarargs(value: String*): Self = StObject.set(x, "CidrAllowedList", js.Array(value :_*))
+    inline def setCidrAllowedListVarargs(value: String*): Self = StObject.set(x, "CidrAllowedList", js.Array(value*))
     
     inline def setCpsLimit(value: CpsLimit): Self = StObject.set(x, "CpsLimit", value.asInstanceOf[js.Any])
     

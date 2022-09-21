@@ -1,11 +1,11 @@
 package typings.rcVirtualList
 
+import typings.node.timersMod.global.NodeJS.Timeout
 import typings.rcVirtualList.listMod.ListRef
 import typings.rcVirtualList.listMod.ScrollAlign
 import typings.rcVirtualList.listMod.ScrollConfig
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
-import typings.react.mod.Ref
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,7 +47,7 @@ object anon {
     
     var children: js.UndefOr[ReactNode] = js.undefined
     
-    var ref: js.UndefOr[Ref[ListRef]] = js.undefined
+    var ref: js.UndefOr[typings.react.mod.Ref[ListRef]] = js.undefined
   }
   object Children {
     
@@ -62,7 +62,7 @@ object anon {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setRef(value: Ref[ListRef]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: typings.react.mod.Ref[ListRef]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
       inline def setRefFunction1(value: /* instance */ ListRef | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
       
@@ -124,6 +124,29 @@ object anon {
     }
   }
   
+  trait Ref extends StObject {
+    
+    var ref: js.UndefOr[typings.react.mod.Ref[ListRef]] = js.undefined
+  }
+  object Ref {
+    
+    inline def apply(): Ref = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Ref]
+    }
+    
+    extension [Self <: Ref](x: Self) {
+      
+      inline def setRef(value: typings.react.mod.Ref[ListRef]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      
+      inline def setRefFunction1(value: /* instance */ ListRef | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+    }
+  }
+  
   trait Style extends StObject {
     
     var style: js.UndefOr[CSSProperties] = js.undefined
@@ -141,5 +164,24 @@ object anon {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
+  }
+  
+  @js.native
+  trait TypeofsetTimeout extends StObject {
+    
+    // util.promisify no rest args compability
+    // tslint:disable-next-line void-return
+    def apply(callback: js.Function1[/* args */ Unit, Unit]): Timeout = js.native
+    def apply(callback: js.Function1[/* args */ Unit, Unit], ms: Double): Timeout = js.native
+    def apply[TArgs /* <: js.Array[Any] */](
+      callback: js.Function1[/* args */ TArgs, Unit],
+      ms: Double,
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: TArgs
+    ): Timeout = js.native
+    def apply[TArgs /* <: js.Array[Any] */](
+      callback: js.Function1[/* args */ TArgs, Unit],
+      ms: Unit,
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: TArgs
+    ): Timeout = js.native
   }
 }

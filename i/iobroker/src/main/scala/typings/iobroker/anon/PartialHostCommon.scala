@@ -49,7 +49,7 @@ object PartialHostCommon {
     
     inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    inline def setAddressVarargs(value: String*): Self = StObject.set(x, "address", js.Array(value :_*))
+    inline def setAddressVarargs(value: String*): Self = StObject.set(x, "address", js.Array(value*))
     
     inline def setCmd(value: String): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
     

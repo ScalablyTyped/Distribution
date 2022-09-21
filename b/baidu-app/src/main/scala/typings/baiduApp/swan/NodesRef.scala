@@ -24,7 +24,7 @@ trait NodesRef extends StObject {
     * 返回值是nodesRef对应的selectorQuery。
     */
   def fields(fields: NodeRefFieldsOptions): SelectorQuery = js.native
-  def fields(fields: NodeRefFieldsOptions, callback: js.Function1[/* result */ js.Any, Unit]): SelectorQuery = js.native
+  def fields(fields: NodeRefFieldsOptions, callback: js.Function1[/* result */ Any, Unit]): SelectorQuery = js.native
   
   /**
     * 添加节点的滚动位置查询请求，以像素为单位。

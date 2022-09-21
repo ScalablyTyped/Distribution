@@ -4,9 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/router", "GuardsCheckEnd")
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.angularRouter.mod.Event2 because Already inherited */ @JSImport("@angular/router", "GuardsCheckEnd")
 @js.native
-class GuardsCheckEnd protected () extends RouterEvent {
+open class GuardsCheckEnd protected () extends RouterEvent {
   def this(
     /** @docsNotRequired */
   id: Double,
@@ -25,6 +26,8 @@ class GuardsCheckEnd protected () extends RouterEvent {
   
   /** @docsNotRequired */
   var state: RouterStateSnapshot = js.native
+  
+  val `type`: String | Double = js.native
   
   /** @docsNotRequired */
   var urlAfterRedirects: String = js.native

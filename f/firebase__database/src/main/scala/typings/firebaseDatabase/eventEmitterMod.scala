@@ -6,38 +6,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object eventEmitterMod {
   
-  @JSImport("@firebase/database/dist/src/core/util/EventEmitter", "EventEmitter")
+  @JSImport("@firebase/database/dist/node-esm/src/core/util/EventEmitter", "EventEmitter")
   @js.native
   abstract class EventEmitter protected () extends StObject {
-    /**
-      * @param {!Array.<string>} allowedEvents_
-      */
     def this(allowedEvents_ : js.Array[String]) = this()
     
-    /* private */ var allowedEvents_ : js.Any = js.native
+    /* private */ var allowedEvents_ : Any = js.native
     
     /**
       * To be overridden by derived classes in order to fire an initial event when
       * somebody subscribes for data.
       *
-      * @param {!string} eventType
-      * @return {Array.<*>} Array of parameters to trigger initial event with.
+      * @returns {Array.<*>} Array of parameters to trigger initial event with.
       */
-    def getInitialEvent(eventType: String): js.Array[js.Any] = js.native
+    def getInitialEvent(eventType: String): js.Array[Any] = js.native
     
-    /* private */ var listeners_ : js.Any = js.native
+    /* private */ var listeners_ : Any = js.native
     
-    def off(eventType: String, callback: js.Function1[/* a */ js.Any, Unit], context: js.Any): Unit = js.native
+    def off(eventType: String, callback: js.Function1[/* a */ Any, Unit], context: Any): Unit = js.native
     
-    def on(eventType: String, callback: js.Function1[/* a */ js.Any, Unit], context: js.Any): Unit = js.native
+    def on(eventType: String, callback: js.Function1[/* a */ Any, Unit], context: Any): Unit = js.native
     
     /**
       * To be called by derived classes to trigger events.
-      * @param {!string} eventType
-      * @param {...*} varArgs
       */
-    /* protected */ def trigger(eventType: String, varArgs: js.Any*): Unit = js.native
+    /* protected */ def trigger(eventType: String, varArgs: Any*): Unit = js.native
     
-    /* private */ var validateEventType_ : js.Any = js.native
+    /* private */ var validateEventType_ : Any = js.native
   }
 }

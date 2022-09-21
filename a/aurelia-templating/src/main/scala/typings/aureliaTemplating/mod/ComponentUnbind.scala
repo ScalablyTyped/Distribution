@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ComponentUnbind extends StObject {
   
   /**
-    * Implement this hook if you want to perform custom logic after the component is detached and unbound.
-    */
+  	* Implement this hook if you want to perform custom logic after the component is detached and unbound.
+  	*/
   def unbind(): Unit
 }
 object ComponentUnbind {

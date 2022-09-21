@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ShellFolderView extends StObject {
   
   /** Get Application object */
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   /** Get Current View Mode */
   var CurrentViewMode: Double = js.native
@@ -34,9 +34,9 @@ trait ShellFolderView extends StObject {
   
   /** Show items menu and return command selected */
   def PopupItemMenu(pfi: ShellFolderItem): String = js.native
-  def PopupItemMenu(pfi: ShellFolderItem, vx: js.Any): String = js.native
-  def PopupItemMenu(pfi: ShellFolderItem, vx: js.Any, vy: js.Any): String = js.native
-  def PopupItemMenu(pfi: ShellFolderItem, vx: Unit, vy: js.Any): String = js.native
+  def PopupItemMenu(pfi: ShellFolderItem, vx: Any): String = js.native
+  def PopupItemMenu(pfi: ShellFolderItem, vx: Any, vy: Any): String = js.native
+  def PopupItemMenu(pfi: ShellFolderItem, vx: Unit, vy: Any): String = js.native
   
   /** Select the item */
   def SelectItem(pvfi: ShellFolderItem, dwFlags: ShellFolderViewSelectItem): Unit = js.native

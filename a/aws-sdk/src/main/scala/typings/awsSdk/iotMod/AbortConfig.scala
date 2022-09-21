@@ -22,6 +22,6 @@ object AbortConfig {
     
     inline def setCriteriaList(value: AbortCriteriaList): Self = StObject.set(x, "criteriaList", value.asInstanceOf[js.Any])
     
-    inline def setCriteriaListVarargs(value: AbortCriteria*): Self = StObject.set(x, "criteriaList", js.Array(value :_*))
+    inline def setCriteriaListVarargs(value: AbortCriteria*): Self = StObject.set(x, "criteriaList", js.Array(value*))
   }
 }

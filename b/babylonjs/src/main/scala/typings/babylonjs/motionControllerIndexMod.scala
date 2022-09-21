@@ -1,6 +1,7 @@
 package typings.babylonjs
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.babylonjs.anon.Filename
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.webXRAbstractMotionControllerMod.IMinimalMotionControllerObject
 import typings.babylonjs.webXRAbstractMotionControllerMod.IMotionControllerLayout
@@ -25,6 +26,7 @@ object motionControllerIndexMod {
       * @param gamepadObject The gamepad object correlating to this controller
       * @param handedness handedness (left/right/none) of this controller
       * @param _doNotLoadControllerMesh set this flag to ignore the mesh loading
+      * @param _controllerCache a cache holding controller models already loaded in this session
       */
     def this(
       scene: Scene,
@@ -49,13 +51,50 @@ object motionControllerIndexMod {
       * handedness (left/right/none) of this controller
       */
     handedness: MotionControllerHandedness,
-      _doNotLoadControllerMesh: Boolean
+      /**
+      * @hidden
+      */
+    _doNotLoadControllerMesh: Boolean
+    ) = this()
+    def this(
+      scene: Scene,
+      layout: IMotionControllerLayout,
+      /**
+      * The gamepad object correlating to this controller
+      */
+    gamepadObject: IMinimalMotionControllerObject,
+      /**
+      * handedness (left/right/none) of this controller
+      */
+    handedness: MotionControllerHandedness,
+      /**
+      * @hidden
+      */
+    _doNotLoadControllerMesh: Boolean,
+      _controllerCache: js.Array[Filename]
+    ) = this()
+    def this(
+      scene: Scene,
+      layout: IMotionControllerLayout,
+      /**
+      * The gamepad object correlating to this controller
+      */
+    gamepadObject: IMinimalMotionControllerObject,
+      /**
+      * handedness (left/right/none) of this controller
+      */
+    handedness: MotionControllerHandedness,
+      /**
+      * @hidden
+      */
+    _doNotLoadControllerMesh: Unit,
+      _controllerCache: js.Array[Filename]
     ) = this()
   }
   
   @JSImport("babylonjs/XR/motionController/index", "WebXRControllerComponent")
   @js.native
-  class WebXRControllerComponent protected ()
+  open class WebXRControllerComponent protected ()
     extends typings.babylonjs.webXRControllerComponentMod.WebXRControllerComponent {
     /**
       * Creates a new component for a motion controller.
@@ -160,9 +199,26 @@ object motionControllerIndexMod {
     inline def TRIGGER_TYPE_=(x: MotionControllerComponentType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TRIGGER_TYPE")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("babylonjs/XR/motionController/index", "WebXRGenericHandController")
+  @js.native
+  open class WebXRGenericHandController protected ()
+    extends typings.babylonjs.webXRGenericHandControllerMod.WebXRGenericHandController {
+    /**
+      * Create a new hand controller object, without loading a controller model
+      * @param scene the scene to use to create this controller
+      * @param gamepadObject the corresponding gamepad object
+      * @param handedness the handedness of the controller
+      */
+    def this(
+      scene: Scene,
+      gamepadObject: IMinimalMotionControllerObject,
+      handedness: MotionControllerHandedness
+    ) = this()
+  }
+  
   @JSImport("babylonjs/XR/motionController/index", "WebXRGenericTriggerMotionController")
   @js.native
-  class WebXRGenericTriggerMotionController protected ()
+  open class WebXRGenericTriggerMotionController protected ()
     extends typings.babylonjs.webXRGenericMotionControllerMod.WebXRGenericTriggerMotionController {
     def this(
       scene: Scene,
@@ -188,7 +244,7 @@ object motionControllerIndexMod {
   
   @JSImport("babylonjs/XR/motionController/index", "WebXRHTCViveMotionController")
   @js.native
-  class WebXRHTCViveMotionController protected ()
+  open class WebXRHTCViveMotionController protected ()
     extends typings.babylonjs.webXRHTCViveMotionControllerMod.WebXRHTCViveMotionController {
     /**
       * Create a new Vive motion controller object
@@ -228,7 +284,7 @@ object motionControllerIndexMod {
   
   @JSImport("babylonjs/XR/motionController/index", "WebXRMicrosoftMixedRealityController")
   @js.native
-  class WebXRMicrosoftMixedRealityController protected ()
+  open class WebXRMicrosoftMixedRealityController protected ()
     extends typings.babylonjs.webXRMicrosoftMixedRealityControllerMod.WebXRMicrosoftMixedRealityController {
     def this(
       scene: Scene,
@@ -270,7 +326,7 @@ object motionControllerIndexMod {
   
   @JSImport("babylonjs/XR/motionController/index", "WebXRMotionControllerManager")
   @js.native
-  class WebXRMotionControllerManager ()
+  open class WebXRMotionControllerManager ()
     extends typings.babylonjs.webXRMotionControllerManagerMod.WebXRMotionControllerManager
   /* static members */
   object WebXRMotionControllerManager {
@@ -288,6 +344,11 @@ object motionControllerIndexMod {
     inline def BaseRepositoryUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BaseRepositoryUrl")(x.asInstanceOf[js.Any])
     
     /**
+      * Clear the controller's cache (usually happens at the end of a session)
+      */
+    inline def ClearControllerCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ClearControllerCache")().asInstanceOf[Unit]
+    
+    /**
       * Clear the cache used for profile loading and reload when requested again
       */
     inline def ClearProfilesCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ClearProfilesCache")().asInstanceOf[Unit]
@@ -299,9 +360,18 @@ object motionControllerIndexMod {
     inline def DefaultFallbacks(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("DefaultFallbacks")().asInstanceOf[Unit]
     
     /**
+      * Disable the controller cache and load the models each time a new WebXRProfileMotionController is loaded.
+      * Defaults to true.
+      */
+    @JSImport("babylonjs/XR/motionController/index", "WebXRMotionControllerManager.DisableControllerCache")
+    @js.native
+    def DisableControllerCache: Boolean = js.native
+    inline def DisableControllerCache_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DisableControllerCache")(x.asInstanceOf[js.Any])
+    
+    /**
       * Find a fallback profile if the profile was not found. There are a few predefined generic profiles.
       * @param profileId the profile to which a fallback needs to be found
-      * @return an array with corresponding fallback profiles
+      * @returns an array with corresponding fallback profiles
       */
     inline def FindFallbackWithProfileId(profileId: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("FindFallbackWithProfileId")(profileId.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
@@ -317,7 +387,7 @@ object motionControllerIndexMod {
       * @param xrInput the xrInput to which a new controller is initialized
       * @param scene the scene to which the model will be added
       * @param forceProfile force a certain profile for this controller
-      * @return A promise that fulfils with the motion controller class for this profile id or the generic standard class if none was found
+      * @returns A promise that fulfils with the motion controller class for this profile id or the generic standard class if none was found
       */
     inline def GetMotionControllerWithXRInput(xrInput: XRInputSource, scene: Scene): js.Promise[typings.babylonjs.webXRAbstractMotionControllerMod.WebXRAbstractMotionController] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetMotionControllerWithXRInput")(xrInput.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.webXRAbstractMotionControllerMod.WebXRAbstractMotionController]]
     inline def GetMotionControllerWithXRInput(xrInput: XRInputSource, scene: Scene, forceProfile: String): js.Promise[typings.babylonjs.webXRAbstractMotionControllerMod.WebXRAbstractMotionController] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetMotionControllerWithXRInput")(xrInput.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], forceProfile.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.webXRAbstractMotionControllerMod.WebXRAbstractMotionController]]
@@ -349,7 +419,7 @@ object motionControllerIndexMod {
     
     /**
       * Will update the list of profiles available in the repository
-      * @return a promise that resolves to a map of profiles available online
+      * @returns a promise that resolves to a map of profiles available online
       */
     inline def UpdateProfilesList(): js.Promise[StringDictionary[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("UpdateProfilesList")().asInstanceOf[js.Promise[StringDictionary[String]]]
     
@@ -363,38 +433,38 @@ object motionControllerIndexMod {
     
     @JSImport("babylonjs/XR/motionController/index", "WebXRMotionControllerManager._AvailableControllers")
     @js.native
-    def _AvailableControllers: js.Any = js.native
-    inline def _AvailableControllers_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_AvailableControllers")(x.asInstanceOf[js.Any])
+    def _AvailableControllers: Any = js.native
+    inline def _AvailableControllers_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_AvailableControllers")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/XR/motionController/index", "WebXRMotionControllerManager._Fallbacks")
     @js.native
-    def _Fallbacks: js.Any = js.native
-    inline def _Fallbacks_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Fallbacks")(x.asInstanceOf[js.Any])
+    def _Fallbacks: Any = js.native
+    inline def _Fallbacks_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Fallbacks")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/XR/motionController/index", "WebXRMotionControllerManager._LoadProfileFromRepository")
     @js.native
-    def _LoadProfileFromRepository: js.Any = js.native
-    inline def _LoadProfileFromRepository_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LoadProfileFromRepository")(x.asInstanceOf[js.Any])
+    def _LoadProfileFromRepository: Any = js.native
+    inline def _LoadProfileFromRepository_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LoadProfileFromRepository")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/XR/motionController/index", "WebXRMotionControllerManager._LoadProfilesFromAvailableControllers")
     @js.native
-    def _LoadProfilesFromAvailableControllers: js.Any = js.native
-    inline def _LoadProfilesFromAvailableControllers_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LoadProfilesFromAvailableControllers")(x.asInstanceOf[js.Any])
+    def _LoadProfilesFromAvailableControllers: Any = js.native
+    inline def _LoadProfilesFromAvailableControllers_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LoadProfilesFromAvailableControllers")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/XR/motionController/index", "WebXRMotionControllerManager._ProfileLoadingPromises")
     @js.native
-    def _ProfileLoadingPromises: js.Any = js.native
-    inline def _ProfileLoadingPromises_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ProfileLoadingPromises")(x.asInstanceOf[js.Any])
+    def _ProfileLoadingPromises: Any = js.native
+    inline def _ProfileLoadingPromises_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ProfileLoadingPromises")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/XR/motionController/index", "WebXRMotionControllerManager._ProfilesList")
     @js.native
-    def _ProfilesList: js.Any = js.native
-    inline def _ProfilesList_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ProfilesList")(x.asInstanceOf[js.Any])
+    def _ProfilesList: Any = js.native
+    inline def _ProfilesList_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ProfilesList")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/XR/motionController/index", "WebXROculusTouchMotionController")
   @js.native
-  class WebXROculusTouchMotionController protected ()
+  open class WebXROculusTouchMotionController protected ()
     extends typings.babylonjs.webXROculusTouchMotionControllerMod.WebXROculusTouchMotionController {
     def this(
       scene: Scene,
@@ -405,20 +475,20 @@ object motionControllerIndexMod {
       scene: Scene,
       gamepadObject: IMinimalMotionControllerObject,
       handedness: MotionControllerHandedness,
-      legacyMapping: Boolean
+      _legacyMapping: Boolean
     ) = this()
     def this(
       scene: Scene,
       gamepadObject: IMinimalMotionControllerObject,
       handedness: MotionControllerHandedness,
-      legacyMapping: Boolean,
+      _legacyMapping: Boolean,
       _forceLegacyControllers: Boolean
     ) = this()
     def this(
       scene: Scene,
       gamepadObject: IMinimalMotionControllerObject,
       handedness: MotionControllerHandedness,
-      legacyMapping: Unit,
+      _legacyMapping: Unit,
       _forceLegacyControllers: Boolean
     ) = this()
   }
@@ -464,8 +534,15 @@ object motionControllerIndexMod {
   
   @JSImport("babylonjs/XR/motionController/index", "WebXRProfiledMotionController")
   @js.native
-  class WebXRProfiledMotionController protected ()
+  open class WebXRProfiledMotionController protected ()
     extends typings.babylonjs.webXRProfiledMotionControllerMod.WebXRProfiledMotionController {
     def this(scene: Scene, xrInput: XRInputSource, _profile: IMotionControllerProfile, _repositoryUrl: String) = this()
+    def this(
+      scene: Scene,
+      xrInput: XRInputSource,
+      _profile: IMotionControllerProfile,
+      _repositoryUrl: String,
+      controllerCache: js.Array[Filename]
+    ) = this()
   }
 }

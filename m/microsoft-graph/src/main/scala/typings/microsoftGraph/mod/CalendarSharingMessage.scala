@@ -43,7 +43,7 @@ object CalendarSharingMessage {
     
     inline def setSharingMessageActionsUndefined: Self = StObject.set(x, "sharingMessageActions", js.undefined)
     
-    inline def setSharingMessageActionsVarargs(value: CalendarSharingMessageAction*): Self = StObject.set(x, "sharingMessageActions", js.Array(value :_*))
+    inline def setSharingMessageActionsVarargs(value: CalendarSharingMessageAction*): Self = StObject.set(x, "sharingMessageActions", js.Array(value*))
     
     inline def setSuggestedCalendarName(value: NullableOption[String]): Self = StObject.set(x, "suggestedCalendarName", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,6 @@
 package typings.libqp
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformOptions
 import org.scalablytyped.runtime.StObject
@@ -15,13 +15,13 @@ object mod {
   
   @JSImport("libqp", "Decoder")
   @js.native
-  class Decoder () extends Transform {
+  open class Decoder () extends Transform {
     def this(opts: TransformOptions) = this()
   }
   
   @JSImport("libqp", "Encoder")
   @js.native
-  class Encoder () extends Transform {
+  open class Encoder () extends Transform {
     def this(opts: EncoderOptions) = this()
   }
   

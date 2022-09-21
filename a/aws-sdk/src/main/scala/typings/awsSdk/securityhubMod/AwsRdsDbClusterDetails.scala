@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AwsRdsDbClusterDetails extends StObject {
   
   /**
-    * The status of the database activity stream.
+    * The status of the database activity stream. Valid values are as follows:    started     starting     stopped     stopping   
     */
   var ActivityStreamStatus: js.UndefOr[NonEmptyString] = js.undefined
   
@@ -42,7 +42,7 @@ trait AwsRdsDbClusterDetails extends StObject {
   var CopyTagsToSnapshot: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Whether the DB cluster is a clone of a DB cluster owned by a different AWS account.
+    * Whether the DB cluster is a clone of a DB cluster owned by a different Amazon Web Services account.
     */
   var CrossAccountClone: js.UndefOr[Boolean] = js.undefined
   
@@ -77,7 +77,7 @@ trait AwsRdsDbClusterDetails extends StObject {
   var DbClusterParameterGroup: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The identifier of the DB cluster. The identifier must be unique within each AWS Region and is immutable.
+    * The identifier of the DB cluster. The identifier must be unique within each Amazon Web Services Region and is immutable.
     */
   var DbClusterResourceId: js.UndefOr[NonEmptyString] = js.undefined
   
@@ -107,12 +107,12 @@ trait AwsRdsDbClusterDetails extends StObject {
   var Endpoint: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The name of the database engine to use for this DB cluster.
+    * The name of the database engine to use for this DB cluster. Valid values are as follows:    aurora     aurora-mysql     aurora-postgresql   
     */
   var Engine: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The database engine mode of the DB cluster.
+    * The database engine mode of the DB cluster.Valid values are as follows:    global     multimaster     parallelquery     provisioned     serverless   
     */
   var EngineMode: js.UndefOr[NonEmptyString] = js.undefined
   
@@ -137,7 +137,7 @@ trait AwsRdsDbClusterDetails extends StObject {
   var IamDatabaseAuthenticationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The ARN of the AWS KMS master key that is used to encrypt the database instances in the DB cluster.
+    * The ARN of the KMS master key that is used to encrypt the database instances in the DB cluster.
     */
   var KmsKeyId: js.UndefOr[NonEmptyString] = js.undefined
   
@@ -212,13 +212,13 @@ object AwsRdsDbClusterDetails {
     
     inline def setAssociatedRolesUndefined: Self = StObject.set(x, "AssociatedRoles", js.undefined)
     
-    inline def setAssociatedRolesVarargs(value: AwsRdsDbClusterAssociatedRole*): Self = StObject.set(x, "AssociatedRoles", js.Array(value :_*))
+    inline def setAssociatedRolesVarargs(value: AwsRdsDbClusterAssociatedRole*): Self = StObject.set(x, "AssociatedRoles", js.Array(value*))
     
     inline def setAvailabilityZones(value: StringList): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
     
     inline def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
     
-    inline def setAvailabilityZonesVarargs(value: NonEmptyString*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
+    inline def setAvailabilityZonesVarargs(value: NonEmptyString*): Self = StObject.set(x, "AvailabilityZones", js.Array(value*))
     
     inline def setBackupRetentionPeriod(value: Integer): Self = StObject.set(x, "BackupRetentionPeriod", value.asInstanceOf[js.Any])
     
@@ -240,7 +240,7 @@ object AwsRdsDbClusterDetails {
     
     inline def setCustomEndpointsUndefined: Self = StObject.set(x, "CustomEndpoints", js.undefined)
     
-    inline def setCustomEndpointsVarargs(value: NonEmptyString*): Self = StObject.set(x, "CustomEndpoints", js.Array(value :_*))
+    inline def setCustomEndpointsVarargs(value: NonEmptyString*): Self = StObject.set(x, "CustomEndpoints", js.Array(value*))
     
     inline def setDatabaseName(value: NonEmptyString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
@@ -254,13 +254,13 @@ object AwsRdsDbClusterDetails {
     
     inline def setDbClusterMembersUndefined: Self = StObject.set(x, "DbClusterMembers", js.undefined)
     
-    inline def setDbClusterMembersVarargs(value: AwsRdsDbClusterMember*): Self = StObject.set(x, "DbClusterMembers", js.Array(value :_*))
+    inline def setDbClusterMembersVarargs(value: AwsRdsDbClusterMember*): Self = StObject.set(x, "DbClusterMembers", js.Array(value*))
     
     inline def setDbClusterOptionGroupMemberships(value: AwsRdsDbClusterOptionGroupMemberships): Self = StObject.set(x, "DbClusterOptionGroupMemberships", value.asInstanceOf[js.Any])
     
     inline def setDbClusterOptionGroupMembershipsUndefined: Self = StObject.set(x, "DbClusterOptionGroupMemberships", js.undefined)
     
-    inline def setDbClusterOptionGroupMembershipsVarargs(value: AwsRdsDbClusterOptionGroupMembership*): Self = StObject.set(x, "DbClusterOptionGroupMemberships", js.Array(value :_*))
+    inline def setDbClusterOptionGroupMembershipsVarargs(value: AwsRdsDbClusterOptionGroupMembership*): Self = StObject.set(x, "DbClusterOptionGroupMemberships", js.Array(value*))
     
     inline def setDbClusterParameterGroup(value: NonEmptyString): Self = StObject.set(x, "DbClusterParameterGroup", value.asInstanceOf[js.Any])
     
@@ -282,13 +282,13 @@ object AwsRdsDbClusterDetails {
     
     inline def setDomainMembershipsUndefined: Self = StObject.set(x, "DomainMemberships", js.undefined)
     
-    inline def setDomainMembershipsVarargs(value: AwsRdsDbDomainMembership*): Self = StObject.set(x, "DomainMemberships", js.Array(value :_*))
+    inline def setDomainMembershipsVarargs(value: AwsRdsDbDomainMembership*): Self = StObject.set(x, "DomainMemberships", js.Array(value*))
     
     inline def setEnabledCloudWatchLogsExports(value: StringList): Self = StObject.set(x, "EnabledCloudWatchLogsExports", value.asInstanceOf[js.Any])
     
     inline def setEnabledCloudWatchLogsExportsUndefined: Self = StObject.set(x, "EnabledCloudWatchLogsExports", js.undefined)
     
-    inline def setEnabledCloudWatchLogsExportsVarargs(value: NonEmptyString*): Self = StObject.set(x, "EnabledCloudWatchLogsExports", js.Array(value :_*))
+    inline def setEnabledCloudWatchLogsExportsVarargs(value: NonEmptyString*): Self = StObject.set(x, "EnabledCloudWatchLogsExports", js.Array(value*))
     
     inline def setEndpoint(value: NonEmptyString): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
     
@@ -346,7 +346,7 @@ object AwsRdsDbClusterDetails {
     
     inline def setReadReplicaIdentifiersUndefined: Self = StObject.set(x, "ReadReplicaIdentifiers", js.undefined)
     
-    inline def setReadReplicaIdentifiersVarargs(value: NonEmptyString*): Self = StObject.set(x, "ReadReplicaIdentifiers", js.Array(value :_*))
+    inline def setReadReplicaIdentifiersVarargs(value: NonEmptyString*): Self = StObject.set(x, "ReadReplicaIdentifiers", js.Array(value*))
     
     inline def setReaderEndpoint(value: NonEmptyString): Self = StObject.set(x, "ReaderEndpoint", value.asInstanceOf[js.Any])
     
@@ -364,6 +364,6 @@ object AwsRdsDbClusterDetails {
     
     inline def setVpcSecurityGroupsUndefined: Self = StObject.set(x, "VpcSecurityGroups", js.undefined)
     
-    inline def setVpcSecurityGroupsVarargs(value: AwsRdsDbInstanceVpcSecurityGroup*): Self = StObject.set(x, "VpcSecurityGroups", js.Array(value :_*))
+    inline def setVpcSecurityGroupsVarargs(value: AwsRdsDbInstanceVpcSecurityGroup*): Self = StObject.set(x, "VpcSecurityGroups", js.Array(value*))
   }
 }

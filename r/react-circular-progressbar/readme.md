@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-circular-progressbar
 
-Typings are for version 2.0.3
+Typings are for version 2.1.0
 
 ## Library description:
 A circular progress indicator component
@@ -10,10 +10,10 @@ A circular progress indicator component
 | ------------------ | :-------------: |
 | Full name          | react-circular-progressbar |
 | Keywords           | progressbar, react, react-component, svg |
-| # releases         | 8 |
-| # dependents       | 40 |
-| # downloads        | 4551875 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 965740.0 |
+| # stars            | 884.0 |
 
 ## Links
 - [Homepage](https://github.com/kevinsqi/react-circular-progressbar#readme)

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("AFRAME.THREE.DirectionalLight")
 @js.native
-class DirectionalLight ()
+open class DirectionalLight ()
   extends typings.three.mod.DirectionalLight

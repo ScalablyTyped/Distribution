@@ -24,14 +24,14 @@ trait Phantom extends StObject {
   def deleteCookie(cookieName: String): Boolean = js.native
   
   def exit(): Boolean = js.native
-  def exit(returnValue: js.Any): Boolean = js.native
+  def exit(returnValue: Any): Boolean = js.native
   
   def injectJs(filename: String): Boolean = js.native
   
   var libraryPath: String = js.native
   
   // Callbacks
-  def onError(msg: String, trace: js.Array[String]): js.Any = js.native
+  def onError(msg: String, trace: js.Array[String]): Any = js.native
   
   var scriptName: String = js.native
   

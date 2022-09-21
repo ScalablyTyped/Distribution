@@ -27,7 +27,7 @@ object CreateItem {
     
     inline def setIncluded(value: js.Array[CreateItemIncluded]): Self = StObject.set(x, "included", value.asInstanceOf[js.Any])
     
-    inline def setIncludedVarargs(value: CreateItemIncluded*): Self = StObject.set(x, "included", js.Array(value :_*))
+    inline def setIncludedVarargs(value: CreateItemIncluded*): Self = StObject.set(x, "included", js.Array(value*))
     
     inline def setJsonapi(value: JsonApiVersionJsonapi): Self = StObject.set(x, "jsonapi", value.asInstanceOf[js.Any])
     

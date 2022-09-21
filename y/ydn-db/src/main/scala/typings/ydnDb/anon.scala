@@ -8,18 +8,18 @@ object anon {
   
   trait Push extends StObject {
     
-    def push(value: js.Any): Unit
+    def push(value: Any): Unit
   }
   object Push {
     
-    inline def apply(push: js.Any => Unit): Push = {
+    inline def apply(push: Any => Unit): Push = {
       val __obj = js.Dynamic.literal(push = js.Any.fromFunction1(push))
       __obj.asInstanceOf[Push]
     }
     
     extension [Self <: Push](x: Self) {
       
-      inline def setPush(value: js.Any => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+      inline def setPush(value: Any => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
     }
   }
 }

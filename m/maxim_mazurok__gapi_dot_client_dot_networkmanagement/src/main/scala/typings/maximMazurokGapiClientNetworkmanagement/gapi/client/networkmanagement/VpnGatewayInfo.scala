@@ -15,7 +15,7 @@ trait VpnGatewayInfo extends StObject {
   /** URI of a Compute Engine network where the VPN gateway is configured. */
   var networkUri: js.UndefOr[String] = js.undefined
   
-  /** Name of a GCP region where this VPN gateway is configured. */
+  /** Name of a Google Cloud region where this VPN gateway is configured. */
   var region: js.UndefOr[String] = js.undefined
   
   /** URI of a VPN gateway. */

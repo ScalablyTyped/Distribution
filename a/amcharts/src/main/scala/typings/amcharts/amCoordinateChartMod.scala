@@ -8,7 +8,7 @@ object amCoordinateChartMod {
   
   @JSImport("amcharts/AmCoordinateChart", JSImport.Default)
   @js.native
-  class default () extends AmCoordinateChart
+  open class default () extends AmCoordinateChart
   
   @js.native
   trait AmCoordinateChart
@@ -149,7 +149,7 @@ object amCoordinateChartMod {
       * Target of url.
       * @default this
       */
-    var urlTarget: js.Any = js.native
+    var urlTarget: Any = js.native
     
     /**
       * The array of value axes.
@@ -157,6 +157,6 @@ object amCoordinateChartMod {
       * adding/removing axes directly to array.
       * Chart creates one value axis automatically, so if you need only one value axis, you don't need to create it.
       */
-    var valueAxes: js.Array[js.Any] = js.native
+    var valueAxes: js.Array[Any] = js.native
   }
 }

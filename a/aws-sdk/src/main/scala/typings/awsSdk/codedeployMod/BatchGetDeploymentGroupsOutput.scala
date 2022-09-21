@@ -29,7 +29,7 @@ object BatchGetDeploymentGroupsOutput {
     
     inline def setDeploymentGroupsInfoUndefined: Self = StObject.set(x, "deploymentGroupsInfo", js.undefined)
     
-    inline def setDeploymentGroupsInfoVarargs(value: DeploymentGroupInfo*): Self = StObject.set(x, "deploymentGroupsInfo", js.Array(value :_*))
+    inline def setDeploymentGroupsInfoVarargs(value: DeploymentGroupInfo*): Self = StObject.set(x, "deploymentGroupsInfo", js.Array(value*))
     
     inline def setErrorMessage(value: ErrorMessage): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     

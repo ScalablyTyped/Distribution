@@ -18,15 +18,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait DeviceWatcher extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_added(`type`: added, listener: TypedEventHandler[DeviceWatcher, DeviceInformation]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_enumerationcompleted(`type`: enumerationcompleted, listener: TypedEventHandler[DeviceWatcher, js.Any]): Unit = js.native
+  def addEventListener_enumerationcompleted(`type`: enumerationcompleted, listener: TypedEventHandler[DeviceWatcher, Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_removed(`type`: removed, listener: TypedEventHandler[DeviceWatcher, DeviceInformationUpdate]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_stopped(`type`: stopped, listener: TypedEventHandler[DeviceWatcher, js.Any]): Unit = js.native
+  def addEventListener_stopped(`type`: stopped, listener: TypedEventHandler[DeviceWatcher, Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_updated(`type`: updated, listener: TypedEventHandler[DeviceWatcher, DeviceInformationUpdate]): Unit = js.native
   
@@ -44,10 +44,10 @@ trait DeviceWatcher extends StObject {
   var onadded_Original: TypedEventHandler[DeviceWatcher, DeviceInformation] = js.native
   
   /** Event that is raised when the enumeration of devices completes. */
-  def onenumerationcompleted(ev: js.Any & WinRTEvent[DeviceWatcher]): Unit = js.native
+  def onenumerationcompleted(ev: Any & WinRTEvent[DeviceWatcher]): Unit = js.native
   /** Event that is raised when the enumeration of devices completes. */
   @JSName("onenumerationcompleted")
-  var onenumerationcompleted_Original: TypedEventHandler[DeviceWatcher, js.Any] = js.native
+  var onenumerationcompleted_Original: TypedEventHandler[DeviceWatcher, Any] = js.native
   
   /** Event that is raised when a device is removed from the collection of enumerated devices. */
   def onremoved(ev: DeviceInformationUpdate & WinRTEvent[DeviceWatcher]): Unit = js.native
@@ -56,10 +56,10 @@ trait DeviceWatcher extends StObject {
   var onremoved_Original: TypedEventHandler[DeviceWatcher, DeviceInformationUpdate] = js.native
   
   /** Event that is raised when the enumeration operation has been stopped. */
-  def onstopped(ev: js.Any & WinRTEvent[DeviceWatcher]): Unit = js.native
+  def onstopped(ev: Any & WinRTEvent[DeviceWatcher]): Unit = js.native
   /** Event that is raised when the enumeration operation has been stopped. */
   @JSName("onstopped")
-  var onstopped_Original: TypedEventHandler[DeviceWatcher, js.Any] = js.native
+  var onstopped_Original: TypedEventHandler[DeviceWatcher, Any] = js.native
   
   /** Event that is raised when a device is updated in the collection of enumerated devices. */
   def onupdated(ev: DeviceInformationUpdate & WinRTEvent[DeviceWatcher]): Unit = js.native
@@ -67,15 +67,15 @@ trait DeviceWatcher extends StObject {
   @JSName("onupdated")
   var onupdated_Original: TypedEventHandler[DeviceWatcher, DeviceInformationUpdate] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_added(`type`: added, listener: TypedEventHandler[DeviceWatcher, DeviceInformation]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_enumerationcompleted(`type`: enumerationcompleted, listener: TypedEventHandler[DeviceWatcher, js.Any]): Unit = js.native
+  def removeEventListener_enumerationcompleted(`type`: enumerationcompleted, listener: TypedEventHandler[DeviceWatcher, Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_removed(`type`: removed, listener: TypedEventHandler[DeviceWatcher, DeviceInformationUpdate]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_stopped(`type`: stopped, listener: TypedEventHandler[DeviceWatcher, js.Any]): Unit = js.native
+  def removeEventListener_stopped(`type`: stopped, listener: TypedEventHandler[DeviceWatcher, Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_updated(`type`: updated, listener: TypedEventHandler[DeviceWatcher, DeviceInformationUpdate]): Unit = js.native
   

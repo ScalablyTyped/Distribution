@@ -111,23 +111,23 @@ object ApplePayPaymentRequest {
     
     inline def setLineItemsUndefined: Self = StObject.set(x, "lineItems", js.undefined)
     
-    inline def setLineItemsVarargs(value: ApplePayLineItem*): Self = StObject.set(x, "lineItems", js.Array(value :_*))
+    inline def setLineItemsVarargs(value: ApplePayLineItem*): Self = StObject.set(x, "lineItems", js.Array(value*))
     
     inline def setMerchantCapabilities(value: js.Array[ApplePayMerchantCapability]): Self = StObject.set(x, "merchantCapabilities", value.asInstanceOf[js.Any])
     
-    inline def setMerchantCapabilitiesVarargs(value: ApplePayMerchantCapability*): Self = StObject.set(x, "merchantCapabilities", js.Array(value :_*))
+    inline def setMerchantCapabilitiesVarargs(value: ApplePayMerchantCapability*): Self = StObject.set(x, "merchantCapabilities", js.Array(value*))
     
     inline def setRequiredBillingContactFields(value: js.Array[ApplePayContactField]): Self = StObject.set(x, "requiredBillingContactFields", value.asInstanceOf[js.Any])
     
     inline def setRequiredBillingContactFieldsUndefined: Self = StObject.set(x, "requiredBillingContactFields", js.undefined)
     
-    inline def setRequiredBillingContactFieldsVarargs(value: ApplePayContactField*): Self = StObject.set(x, "requiredBillingContactFields", js.Array(value :_*))
+    inline def setRequiredBillingContactFieldsVarargs(value: ApplePayContactField*): Self = StObject.set(x, "requiredBillingContactFields", js.Array(value*))
     
     inline def setRequiredShippingContactFields(value: js.Array[ApplePayContactField]): Self = StObject.set(x, "requiredShippingContactFields", value.asInstanceOf[js.Any])
     
     inline def setRequiredShippingContactFieldsUndefined: Self = StObject.set(x, "requiredShippingContactFields", js.undefined)
     
-    inline def setRequiredShippingContactFieldsVarargs(value: ApplePayContactField*): Self = StObject.set(x, "requiredShippingContactFields", js.Array(value :_*))
+    inline def setRequiredShippingContactFieldsVarargs(value: ApplePayContactField*): Self = StObject.set(x, "requiredShippingContactFields", js.Array(value*))
     
     inline def setShippingContact(value: ApplePayPaymentContact): Self = StObject.set(x, "shippingContact", value.asInstanceOf[js.Any])
     
@@ -137,7 +137,7 @@ object ApplePayPaymentRequest {
     
     inline def setShippingMethodsUndefined: Self = StObject.set(x, "shippingMethods", js.undefined)
     
-    inline def setShippingMethodsVarargs(value: ApplePayShippingMethod*): Self = StObject.set(x, "shippingMethods", js.Array(value :_*))
+    inline def setShippingMethodsVarargs(value: ApplePayShippingMethod*): Self = StObject.set(x, "shippingMethods", js.Array(value*))
     
     inline def setShippingType(value: ApplePayShippingType): Self = StObject.set(x, "shippingType", value.asInstanceOf[js.Any])
     
@@ -147,11 +147,11 @@ object ApplePayPaymentRequest {
     
     inline def setSupportedCountriesUndefined: Self = StObject.set(x, "supportedCountries", js.undefined)
     
-    inline def setSupportedCountriesVarargs(value: String*): Self = StObject.set(x, "supportedCountries", js.Array(value :_*))
+    inline def setSupportedCountriesVarargs(value: String*): Self = StObject.set(x, "supportedCountries", js.Array(value*))
     
     inline def setSupportedNetworks(value: js.Array[String]): Self = StObject.set(x, "supportedNetworks", value.asInstanceOf[js.Any])
     
-    inline def setSupportedNetworksVarargs(value: String*): Self = StObject.set(x, "supportedNetworks", js.Array(value :_*))
+    inline def setSupportedNetworksVarargs(value: String*): Self = StObject.set(x, "supportedNetworks", js.Array(value*))
     
     inline def setTotal(value: ApplePayLineItem): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
   }

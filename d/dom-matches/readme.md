@@ -10,10 +10,10 @@ Check if a DOM element matches a given selector
 | ------------------ | :-------------: |
 | Full name          | dom-matches |
 | Keywords           | browser, dom, element, matches, selector |
-| # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 11908103 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 665461.0 |
+| # stars            | 19.0 |
 
 ## Links
 - [Homepage](https://github.com/necolas/dom-matches#readme)

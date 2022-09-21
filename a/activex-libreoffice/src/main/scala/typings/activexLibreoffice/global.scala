@@ -8,7 +8,7 @@ object global {
   
   @JSGlobal("sequence")
   @js.native
-  class sequence[T] ()
+  open class sequence[T] ()
     extends StObject
        with typings.activexLibreoffice.sequence[T] {
     
@@ -18,7 +18,7 @@ object global {
   
   @JSGlobal("type")
   @js.native
-  class `type` ()
+  open class `type` ()
     extends StObject
        with typings.activexLibreoffice.`type` {
     

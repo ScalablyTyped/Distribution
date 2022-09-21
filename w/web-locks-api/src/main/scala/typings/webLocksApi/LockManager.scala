@@ -9,6 +9,6 @@ trait LockManager extends StObject {
   
   def query(): js.Promise[LockManagerSnapshot] = js.native
   
-  def request(name: String, callback: js.Function1[/* lock */ Lock, js.Promise[js.Any]]): js.Promise[Unit] = js.native
-  def request[T /* <: LockManagerRequestOptions */](name: String, options: T, callback: js.Function1[/* lock */ Lock | Null, js.Promise[js.Any]]): js.Promise[Unit] = js.native
+  def request(name: String, callback: js.Function1[/* lock */ Lock, js.Promise[Any]]): js.Promise[Unit] = js.native
+  def request[T /* <: LockManagerRequestOptions */](name: String, options: T, callback: js.Function1[/* lock */ Lock | Null, js.Promise[Any]]): js.Promise[Unit] = js.native
 }

@@ -33,6 +33,6 @@ object AwsElbLoadBalancerListenerDescription {
     
     inline def setPolicyNamesUndefined: Self = StObject.set(x, "PolicyNames", js.undefined)
     
-    inline def setPolicyNamesVarargs(value: NonEmptyString*): Self = StObject.set(x, "PolicyNames", js.Array(value :_*))
+    inline def setPolicyNamesVarargs(value: NonEmptyString*): Self = StObject.set(x, "PolicyNames", js.Array(value*))
   }
 }

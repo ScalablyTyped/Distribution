@@ -8,15 +8,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait tabviewConfig extends StObject {
   
-  var animate: js.UndefOr[js.Any] = js.undefined
+  var animate: js.UndefOr[Any] = js.undefined
   
   var borderless: js.UndefOr[Boolean] = js.undefined
   
-  var cells: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var cells: js.UndefOr[js.Array[Any]] = js.undefined
   
   var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[js.Any] = js.undefined
+  var css: js.UndefOr[Any] = js.undefined
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
@@ -36,17 +36,17 @@ trait tabviewConfig extends StObject {
   
   var minWidth: js.UndefOr[Double] = js.undefined
   
-  var multiview: js.UndefOr[js.Any] = js.undefined
+  var multiview: js.UndefOr[Any] = js.undefined
   
   var on: js.UndefOr[EventHash] = js.undefined
   
-  var padding: js.UndefOr[js.Any] = js.undefined
+  var padding: js.UndefOr[Any] = js.undefined
   
   var paddingX: js.UndefOr[Double] = js.undefined
   
   var paddingY: js.UndefOr[Double] = js.undefined
   
-  var tabbar: js.UndefOr[js.Any] = js.undefined
+  var tabbar: js.UndefOr[Any] = js.undefined
   
   var `type`: js.UndefOr[String] = js.undefined
   
@@ -63,7 +63,7 @@ object tabviewConfig {
   
   extension [Self <: tabviewConfig](x: Self) {
     
-    inline def setAnimate(value: js.Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
@@ -71,17 +71,17 @@ object tabviewConfig {
     
     inline def setBorderlessUndefined: Self = StObject.set(x, "borderless", js.undefined)
     
-    inline def setCells(value: js.Array[js.Any]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
+    inline def setCells(value: js.Array[Any]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
     
     inline def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
     
-    inline def setCellsVarargs(value: js.Any*): Self = StObject.set(x, "cells", js.Array(value :_*))
+    inline def setCellsVarargs(value: Any*): Self = StObject.set(x, "cells", js.Array(value*))
     
     inline def setContainer(value: String | HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setCss(value: js.Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
@@ -121,7 +121,7 @@ object tabviewConfig {
     
     inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
-    inline def setMultiview(value: js.Any): Self = StObject.set(x, "multiview", value.asInstanceOf[js.Any])
+    inline def setMultiview(value: Any): Self = StObject.set(x, "multiview", value.asInstanceOf[js.Any])
     
     inline def setMultiviewUndefined: Self = StObject.set(x, "multiview", js.undefined)
     
@@ -129,7 +129,7 @@ object tabviewConfig {
     
     inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     
-    inline def setPadding(value: js.Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
@@ -141,7 +141,7 @@ object tabviewConfig {
     
     inline def setPaddingYUndefined: Self = StObject.set(x, "paddingY", js.undefined)
     
-    inline def setTabbar(value: js.Any): Self = StObject.set(x, "tabbar", value.asInstanceOf[js.Any])
+    inline def setTabbar(value: Any): Self = StObject.set(x, "tabbar", value.asInstanceOf[js.Any])
     
     inline def setTabbarUndefined: Self = StObject.set(x, "tabbar", js.undefined)
     

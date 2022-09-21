@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeSeverityLevelsResponse extends StObject {
   
   /**
-    * The available severity levels for the support case. Available severity levels are defined by your service level agreement with AWS.
+    * The available severity levels for the support case. Available severity levels are defined by your service level agreement with Amazon Web Services.
     */
   var severityLevels: js.UndefOr[SeverityLevelsList] = js.undefined
 }
@@ -24,6 +24,6 @@ object DescribeSeverityLevelsResponse {
     
     inline def setSeverityLevelsUndefined: Self = StObject.set(x, "severityLevels", js.undefined)
     
-    inline def setSeverityLevelsVarargs(value: SeverityLevel*): Self = StObject.set(x, "severityLevels", js.Array(value :_*))
+    inline def setSeverityLevelsVarargs(value: SeverityLevel*): Self = StObject.set(x, "severityLevels", js.Array(value*))
   }
 }

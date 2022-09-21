@@ -9,7 +9,7 @@ trait ListPartsOutput extends StObject {
   /**
     * If the bucket has a lifecycle rule configured with an action to abort incomplete multipart uploads and the prefix in the lifecycle rule matches the object name in the request, then the response includes this header indicating when the initiated multipart upload will become eligible for abort operation. For more information, see Aborting Incomplete Multipart Uploads Using a Bucket Lifecycle Policy. The response will also include the x-amz-abort-rule-id header that will provide the ID of the lifecycle configuration rule that defines this action.
     */
-  var AbortDate: js.UndefOr[typings.awsSdk.s3Mod.AbortDate] = js.undefined
+  var AbortDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * This header is returned along with the x-amz-abort-date header. It identifies applicable lifecycle configuration rule that defines the action to abort incomplete multipart uploads.
@@ -17,12 +17,17 @@ trait ListPartsOutput extends StObject {
   var AbortRuleId: js.UndefOr[typings.awsSdk.s3Mod.AbortRuleId] = js.undefined
   
   /**
-    * The name of the bucket to which the multipart upload was initiated.
+    * The name of the bucket to which the multipart upload was initiated. Does not return the access point ARN or access point alias if used.
     */
   var Bucket: js.UndefOr[BucketName] = js.undefined
   
   /**
-    * Container element that identifies who initiated the multipart upload. If the initiator is an AWS account, this element provides the same information as the Owner element. If the initiator is an IAM User, this element provides the user ARN and display name.
+    * The algorithm that was used to create a checksum of the object.
+    */
+  var ChecksumAlgorithm: js.UndefOr[typings.awsSdk.s3Mod.ChecksumAlgorithm] = js.undefined
+  
+  /**
+    * Container element that identifies who initiated the multipart upload. If the initiator is an Amazon Web Services account, this element provides the same information as the Owner element. If the initiator is an IAM User, this element provides the user ARN and display name.
     */
   var Initiator: js.UndefOr[typings.awsSdk.s3Mod.Initiator] = js.undefined
   
@@ -82,7 +87,7 @@ object ListPartsOutput {
   
   extension [Self <: ListPartsOutput](x: Self) {
     
-    inline def setAbortDate(value: AbortDate): Self = StObject.set(x, "AbortDate", value.asInstanceOf[js.Any])
+    inline def setAbortDate(value: js.Date): Self = StObject.set(x, "AbortDate", value.asInstanceOf[js.Any])
     
     inline def setAbortDateUndefined: Self = StObject.set(x, "AbortDate", js.undefined)
     
@@ -93,6 +98,10 @@ object ListPartsOutput {
     inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
     inline def setBucketUndefined: Self = StObject.set(x, "Bucket", js.undefined)
+    
+    inline def setChecksumAlgorithm(value: ChecksumAlgorithm): Self = StObject.set(x, "ChecksumAlgorithm", value.asInstanceOf[js.Any])
+    
+    inline def setChecksumAlgorithmUndefined: Self = StObject.set(x, "ChecksumAlgorithm", js.undefined)
     
     inline def setInitiator(value: Initiator): Self = StObject.set(x, "Initiator", value.asInstanceOf[js.Any])
     
@@ -126,7 +135,7 @@ object ListPartsOutput {
     
     inline def setPartsUndefined: Self = StObject.set(x, "Parts", js.undefined)
     
-    inline def setPartsVarargs(value: Part*): Self = StObject.set(x, "Parts", js.Array(value :_*))
+    inline def setPartsVarargs(value: Part*): Self = StObject.set(x, "Parts", js.Array(value*))
     
     inline def setRequestCharged(value: RequestCharged): Self = StObject.set(x, "RequestCharged", value.asInstanceOf[js.Any])
     

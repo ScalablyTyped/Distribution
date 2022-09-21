@@ -4,21 +4,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A suggested change to the NamedStyles.
-  */
 trait SchemaSuggestedNamedStyles extends StObject {
   
   /**
-    * A NamedStyles that only includes the changes made in this suggestion.
-    * This can be used along with the named_styles_suggestion_state to see
-    * which fields have changed and their new values.
+    * A NamedStyles that only includes the changes made in this suggestion. This can be used along with the named_styles_suggestion_state to see which fields have changed and their new values.
     */
   var namedStyles: js.UndefOr[SchemaNamedStyles] = js.undefined
   
   /**
-    * A mask that indicates which of the fields on the base NamedStyles have
-    * been changed in this suggestion.
+    * A mask that indicates which of the fields on the base NamedStyles have been changed in this suggestion.
     */
   var namedStylesSuggestionState: js.UndefOr[SchemaNamedStylesSuggestionState] = js.undefined
 }

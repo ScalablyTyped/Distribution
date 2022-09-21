@@ -17,7 +17,7 @@ object stackMod {
     * implementation uses a linked list as a container.
     * @constructor
     */
-  class default[T] ()
+  open class default[T] ()
     extends StObject
        with Stack[T]
   
@@ -78,7 +78,7 @@ object stackMod {
       * @type collections.LinkedList
       * @private
       */
-    /* private */ var list: js.Any = js.native
+    /* private */ var list: Any = js.native
     
     /**
       * Looks at the object at the top of this stack without removing it from the

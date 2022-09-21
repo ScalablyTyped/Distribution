@@ -8,5 +8,5 @@ object deleteQueueInputMod {
   
   @JSImport("@aws-sdk/client-sqs-node/model/DeleteQueueInput", "DeleteQueueInput")
   @js.native
-  val DeleteQueueInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val DeleteQueueInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

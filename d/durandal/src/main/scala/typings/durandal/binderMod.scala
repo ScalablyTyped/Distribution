@@ -16,25 +16,25 @@ object binderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def bind(obj: js.Any, view: HTMLElement): BindingInstruction = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(obj.asInstanceOf[js.Any], view.asInstanceOf[js.Any])).asInstanceOf[BindingInstruction]
+  inline def bind(obj: Any, view: HTMLElement): BindingInstruction = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(obj.asInstanceOf[js.Any], view.asInstanceOf[js.Any])).asInstanceOf[BindingInstruction]
   
   inline def bindContext(
-    bindingContext: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingContext */ js.Any,
+    bindingContext: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingContext */ Any,
     view: HTMLElement
   ): BindingInstruction = (^.asInstanceOf[js.Dynamic].applyDynamic("bindContext")(bindingContext.asInstanceOf[js.Any], view.asInstanceOf[js.Any])).asInstanceOf[BindingInstruction]
   inline def bindContext(
-    bindingContext: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingContext */ js.Any,
+    bindingContext: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingContext */ Any,
     view: HTMLElement,
-    obj: js.Any
+    obj: Any
   ): BindingInstruction = (^.asInstanceOf[js.Dynamic].applyDynamic("bindContext")(bindingContext.asInstanceOf[js.Any], view.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[BindingInstruction]
   inline def bindContext(
-    bindingContext: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingContext */ js.Any,
+    bindingContext: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingContext */ Any,
     view: HTMLElement,
-    obj: js.Any,
+    obj: Any,
     dataAlias: String
   ): BindingInstruction = (^.asInstanceOf[js.Dynamic].applyDynamic("bindContext")(bindingContext.asInstanceOf[js.Any], view.asInstanceOf[js.Any], obj.asInstanceOf[js.Any], dataAlias.asInstanceOf[js.Any])).asInstanceOf[BindingInstruction]
   inline def bindContext(
-    bindingContext: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingContext */ js.Any,
+    bindingContext: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingContext */ Any,
     view: HTMLElement,
     obj: Unit,
     dataAlias: String
@@ -42,17 +42,17 @@ object binderMod {
   
   @JSImport("durandal/binder", "binding")
   @js.native
-  def binding: js.Function3[/* data */ js.Any, /* view */ HTMLElement, /* instruction */ BindingInstruction, Unit] = js.native
+  def binding: js.Function3[/* data */ Any, /* view */ HTMLElement, /* instruction */ BindingInstruction, Unit] = js.native
   
   @JSImport("durandal/binder", "bindingComplete")
   @js.native
-  def bindingComplete: js.Function3[/* data */ js.Any, /* view */ HTMLElement, /* instruction */ BindingInstruction, Unit] = js.native
+  def bindingComplete: js.Function3[/* data */ Any, /* view */ HTMLElement, /* instruction */ BindingInstruction, Unit] = js.native
   inline def bindingComplete_=(
-    x: js.Function3[/* data */ js.Any, /* view */ HTMLElement, /* instruction */ BindingInstruction, Unit]
+    x: js.Function3[/* data */ Any, /* view */ HTMLElement, /* instruction */ BindingInstruction, Unit]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bindingComplete")(x.asInstanceOf[js.Any])
   
   inline def binding_=(
-    x: js.Function3[/* data */ js.Any, /* view */ HTMLElement, /* instruction */ BindingInstruction, Unit]
+    x: js.Function3[/* data */ Any, /* view */ HTMLElement, /* instruction */ BindingInstruction, Unit]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("binding")(x.asInstanceOf[js.Any])
   
   inline def getBindingInstruction(view: HTMLElement): BindingInstruction = ^.asInstanceOf[js.Dynamic].applyDynamic("getBindingInstruction")(view.asInstanceOf[js.Any]).asInstanceOf[BindingInstruction]

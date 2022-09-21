@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A request message for Execution.Execute.
-  */
 trait SchemaBuildBazelRemoteExecutionV2ExecuteRequest extends StObject {
   
   /**
@@ -15,24 +12,19 @@ trait SchemaBuildBazelRemoteExecutionV2ExecuteRequest extends StObject {
   var actionDigest: js.UndefOr[SchemaBuildBazelRemoteExecutionV2Digest] = js.undefined
   
   /**
-    * An optional policy for execution of the action. The server will have a
-    * default policy if this is not provided.
+    * An optional policy for execution of the action. The server will have a default policy if this is not provided.
     */
   var executionPolicy: js.UndefOr[SchemaBuildBazelRemoteExecutionV2ExecutionPolicy] = js.undefined
   
   /**
-    * An optional policy for the results of this execution in the remote cache.
-    * The server will have a default policy if this is not provided. This may
-    * be applied to both the ActionResult and the associated blobs.
+    * An optional policy for the results of this execution in the remote cache. The server will have a default policy if this is not provided. This may be applied to both the ActionResult and the associated blobs.
     */
   var resultsCachePolicy: js.UndefOr[SchemaBuildBazelRemoteExecutionV2ResultsCachePolicy] = js.undefined
   
   /**
-    * If true, the action will be executed anew even if its result was already
-    * present in the cache. If false, the result may be served from the
-    * ActionCache.
+    * If true, the action will be executed even if its result is already present in the ActionCache. The execution is still allowed to be merged with other in-flight executions of the same action, however - semantically, the service MUST only guarantee that the results of an execution with this field set were not visible before the corresponding execution request was sent. Note that actions from execution requests setting this field set are still eligible to be entered into the action cache upon completion, and services SHOULD overwrite any existing entries that may exist. This allows skip_cache_lookup requests to be used as a mechanism for replacing action cache entries that reference outputs no longer available or that are poisoned in any way. If false, the result may be served from the action cache.
     */
-  var skipCacheLookup: js.UndefOr[Boolean] = js.undefined
+  var skipCacheLookup: js.UndefOr[Boolean | Null] = js.undefined
 }
 object SchemaBuildBazelRemoteExecutionV2ExecuteRequest {
   
@@ -56,6 +48,8 @@ object SchemaBuildBazelRemoteExecutionV2ExecuteRequest {
     inline def setResultsCachePolicyUndefined: Self = StObject.set(x, "resultsCachePolicy", js.undefined)
     
     inline def setSkipCacheLookup(value: Boolean): Self = StObject.set(x, "skipCacheLookup", value.asInstanceOf[js.Any])
+    
+    inline def setSkipCacheLookupNull: Self = StObject.set(x, "skipCacheLookup", null)
     
     inline def setSkipCacheLookupUndefined: Self = StObject.set(x, "skipCacheLookup", js.undefined)
   }

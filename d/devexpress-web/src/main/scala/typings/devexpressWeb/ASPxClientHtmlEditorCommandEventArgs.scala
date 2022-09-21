@@ -19,11 +19,11 @@ trait ASPxClientHtmlEditorCommandEventArgs
   /**
     * Gets an optional parameter that complements the processed command.
     */
-  var parameter: js.Any
+  var parameter: Any
 }
 object ASPxClientHtmlEditorCommandEventArgs {
   
-  inline def apply(commandName: String, parameter: js.Any): ASPxClientHtmlEditorCommandEventArgs = {
+  inline def apply(commandName: String, parameter: Any): ASPxClientHtmlEditorCommandEventArgs = {
     val __obj = js.Dynamic.literal(commandName = commandName.asInstanceOf[js.Any], parameter = parameter.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientHtmlEditorCommandEventArgs]
   }
@@ -32,6 +32,6 @@ object ASPxClientHtmlEditorCommandEventArgs {
     
     inline def setCommandName(value: String): Self = StObject.set(x, "commandName", value.asInstanceOf[js.Any])
     
-    inline def setParameter(value: js.Any): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
+    inline def setParameter(value: Any): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
   }
 }

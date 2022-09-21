@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateBrokerResponse extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the broker.
+    * The broker's Amazon Resource Name (ARN).
     */
   var BrokerArn: js.UndefOr[string] = js.undefined
   

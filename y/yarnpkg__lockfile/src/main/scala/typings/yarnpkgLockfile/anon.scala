@@ -11,13 +11,13 @@ object anon {
   
   trait Object extends StObject {
     
-    var `object`: js.Any
+    var `object`: Any
     
     var `type`: success | merge | conflict
   }
   object Object {
     
-    inline def apply(`object`: js.Any, `type`: success | merge | conflict): Object = {
+    inline def apply(`object`: Any, `type`: success | merge | conflict): Object = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
@@ -26,7 +26,7 @@ object anon {
     
     extension [Self <: Object](x: Self) {
       
-      inline def setObject(value: js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
       inline def setType(value: success | merge | conflict): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Page")
 @js.native
-/* private */ class Page ()
+/* private */ open class Page ()
   extends StObject
      with typings.activexExcel.Excel.Page {
   

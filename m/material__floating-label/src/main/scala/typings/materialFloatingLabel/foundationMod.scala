@@ -11,13 +11,13 @@ object foundationMod {
   
   @JSImport("@material/floating-label/foundation", JSImport.Default)
   @js.native
-  class default () extends MDCFloatingLabelFoundation {
+  open class default () extends MDCFloatingLabelFoundation {
     def this(adapter: PartialMDCFloatingLabelAd) = this()
   }
   
   @JSImport("@material/floating-label/foundation", "MDCFloatingLabelFoundation")
   @js.native
-  class MDCFloatingLabelFoundation () extends MDCFoundation[MDCFloatingLabelAdapter] {
+  open class MDCFloatingLabelFoundation () extends MDCFoundation[MDCFloatingLabelAdapter] {
     def this(adapter: PartialMDCFloatingLabelAd) = this()
     
     /**
@@ -31,6 +31,8 @@ object foundationMod {
       */
     def getWidth(): Double = js.native
     
+    /* private */ var handleShakeAnimationEnd: Any = js.native
+    
     /**
       * Styles the label as required.
       * @param isRequired If true, adds an asterisk to the label, indicating that it is required.
@@ -42,5 +44,7 @@ object foundationMod {
       * @param shouldShake If true, adds the shake CSS class; otherwise, removes shake class.
       */
     def shake(shouldShake: Boolean): Unit = js.native
+    
+    /* private */ val shakeAnimationEndHandler: Any = js.native
   }
 }

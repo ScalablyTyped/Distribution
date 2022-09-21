@@ -29,6 +29,6 @@ object Series {
     
     inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
-    inline def setSeriesVarargs(value: BannerImageUrl*): Self = StObject.set(x, "series", js.Array(value :_*))
+    inline def setSeriesVarargs(value: BannerImageUrl*): Self = StObject.set(x, "series", js.Array(value*))
   }
 }

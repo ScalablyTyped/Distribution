@@ -9,7 +9,7 @@ trait OrdersRefundOrderRequest extends StObject {
   /** The amount that is refunded. If this is not the first refund for the order, this should be the newly refunded amount. */
   var amount: js.UndefOr[MonetaryAmount] = js.undefined
   
-  /** If true, the full order will be refunded, including shipping. If this is true, amount should not be provided and will be ignored. */
+  /** If true, the full order will be refunded, including shipping. If this is true, amount shouldn't be provided and will be ignored. */
   var fullRefund: js.UndefOr[Boolean] = js.undefined
   
   /** The ID of the operation. Unique across all operations for a given order. */

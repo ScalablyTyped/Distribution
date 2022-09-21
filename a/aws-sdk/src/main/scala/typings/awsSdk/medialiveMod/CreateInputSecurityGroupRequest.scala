@@ -33,6 +33,6 @@ object CreateInputSecurityGroupRequest {
     
     inline def setWhitelistRulesUndefined: Self = StObject.set(x, "WhitelistRules", js.undefined)
     
-    inline def setWhitelistRulesVarargs(value: InputWhitelistRuleCidr*): Self = StObject.set(x, "WhitelistRules", js.Array(value :_*))
+    inline def setWhitelistRulesVarargs(value: InputWhitelistRuleCidr*): Self = StObject.set(x, "WhitelistRules", js.Array(value*))
   }
 }

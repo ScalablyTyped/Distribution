@@ -141,6 +141,8 @@ object typesMod {
     
     /**
       * The alignment to use for the tabs.
+      *
+      * @defaultValue `"left"`
       */
     var align: js.UndefOr[TabsAlignment] = js.undefined
     
@@ -149,6 +151,7 @@ object typesMod {
       * navigates to the tab with the arrow keys.
       *
       * @see https://www.w3.org/TR/wai-aria-practices/#kbd_selection_follows_focus
+      * @defaultValue `false`
       */
     var automatic: js.UndefOr[Boolean] = js.undefined
     
@@ -156,6 +159,8 @@ object typesMod {
       * The orientation for the tabs. When this is set to vertical, the keyboard
       * movement will be updated to use Up and Down arrow keys instead of Left and
       * Right.
+      *
+      * @defaultValue `"horizontal"`
       */
     var orientation: js.UndefOr[horizontal | vertical] = js.undefined
     
@@ -163,6 +168,8 @@ object typesMod {
       * Boolean if you know that the tabs will be scrollable which will add some
       * additional padding before the first tab to help users know that there's
       * additional tabs.
+      *
+      * @defaultValue `false`
       */
     var padded: js.UndefOr[Boolean] = js.undefined
   }

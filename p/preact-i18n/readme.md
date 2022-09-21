@@ -1,7 +1,7 @@
 
 # Scala.js typings for preact-i18n
 
-Typings are for version 1.2
+Typings are for version 2.3
 
 ## Library description:
 Preact internationalization, done simply.
@@ -10,10 +10,10 @@ Preact internationalization, done simply.
 | ------------------ | :-------------: |
 | Full name          | preact-i18n |
 | Keywords           | intl, internationalization, localization |
-| # releases         | 11 |
-| # dependents       | 4 |
-| # downloads        | 122926 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 16000.666666666666 |
+| # stars            | 192.0 |
 
 ## Links
 - [Homepage](https://github.com/synacor/preact-i18n)

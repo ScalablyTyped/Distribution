@@ -9,10 +9,10 @@ A gulp plugin for power-assert
 | ------------------ | :-------------: |
 | Full name          | gulp-espower |
 | Keywords           | assert, assertion, gulpplugin, power-assert, test, testing |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 12956 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1492.6666666666667 |
+| # stars            | 17.0 |
 
 ## Links
 - [Homepage](https://github.com/power-assert-js/gulp-espower)

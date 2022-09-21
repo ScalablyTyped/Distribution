@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListDatasetContentsRequest extends StObject {
   
   /**
-    * The name of the data set whose contents information you want to list.
+    * The name of the dataset whose contents information you want to list.
     */
   var datasetName: DatasetName
   
@@ -22,14 +22,14 @@ trait ListDatasetContentsRequest extends StObject {
   var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
-    * A filter to limit results to those data set contents whose creation is scheduled before the given time. See the field triggers.schedule in the CreateDataset request. (timestamp)
+    * A filter to limit results to those dataset contents whose creation is scheduled before the given time. See the field triggers.schedule in the CreateDataset request. (timestamp)
     */
-  var scheduledBefore: js.UndefOr[Timestamp] = js.undefined
+  var scheduledBefore: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * A filter to limit results to those data set contents whose creation is scheduled on or after the given time. See the field triggers.schedule in the CreateDataset request. (timestamp)
+    * A filter to limit results to those dataset contents whose creation is scheduled on or after the given time. See the field triggers.schedule in the CreateDataset request. (timestamp)
     */
-  var scheduledOnOrAfter: js.UndefOr[Timestamp] = js.undefined
+  var scheduledOnOrAfter: js.UndefOr[js.Date] = js.undefined
 }
 object ListDatasetContentsRequest {
   
@@ -50,11 +50,11 @@ object ListDatasetContentsRequest {
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    inline def setScheduledBefore(value: Timestamp): Self = StObject.set(x, "scheduledBefore", value.asInstanceOf[js.Any])
+    inline def setScheduledBefore(value: js.Date): Self = StObject.set(x, "scheduledBefore", value.asInstanceOf[js.Any])
     
     inline def setScheduledBeforeUndefined: Self = StObject.set(x, "scheduledBefore", js.undefined)
     
-    inline def setScheduledOnOrAfter(value: Timestamp): Self = StObject.set(x, "scheduledOnOrAfter", value.asInstanceOf[js.Any])
+    inline def setScheduledOnOrAfter(value: js.Date): Self = StObject.set(x, "scheduledOnOrAfter", value.asInstanceOf[js.Any])
     
     inline def setScheduledOnOrAfterUndefined: Self = StObject.set(x, "scheduledOnOrAfter", js.undefined)
   }

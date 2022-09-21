@@ -16,7 +16,7 @@ trait Match extends StObject {
     * Query parameter reporting. Parameters are reported
     * as a JSON object with one field per parameter.
     */
-  var params: js.UndefOr[Record[String, js.Any]] = js.undefined
+  var params: js.UndefOr[Record[String, Any]] = js.undefined
 }
 object Match {
   
@@ -30,7 +30,7 @@ object Match {
     
     inline def setMatch(value: Alternatives): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
-    inline def setParams(value: Record[String, js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: Record[String, Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
   }

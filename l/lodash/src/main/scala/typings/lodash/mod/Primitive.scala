@@ -13,12 +13,12 @@ trait Primitive[T]
   /**
     * @see _.after
     */
-  def after[TFunc /* <: js.Function1[/* repeated */ js.Any, js.Any] */](func: TFunc): Function[TFunc] = js.native
+  def after[TFunc /* <: js.Function1[/* repeated */ Any, Any] */](func: TFunc): Function[TFunc] = js.native
   
   /**
     * @see _.before
     */
-  def before[TFunc /* <: js.Function1[/* repeated */ js.Any, js.Any] */](func: TFunc): Function[TFunc] = js.native
+  def before[TFunc /* <: js.Function1[/* repeated */ Any, Any] */](func: TFunc): Function[TFunc] = js.native
   
   /**
     * @see _.castArray

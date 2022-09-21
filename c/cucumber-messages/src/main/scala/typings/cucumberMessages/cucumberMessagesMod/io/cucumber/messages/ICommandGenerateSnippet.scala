@@ -37,7 +37,7 @@ object ICommandGenerateSnippet {
     
     inline def setGeneratedExpressionsUndefined: Self = StObject.set(x, "generatedExpressions", js.undefined)
     
-    inline def setGeneratedExpressionsVarargs(value: IGeneratedExpression*): Self = StObject.set(x, "generatedExpressions", js.Array(value :_*))
+    inline def setGeneratedExpressionsVarargs(value: IGeneratedExpression*): Self = StObject.set(x, "generatedExpressions", js.Array(value*))
     
     inline def setPickleStepArgument(value: IPickleStepArgument): Self = StObject.set(x, "pickleStepArgument", value.asInstanceOf[js.Any])
     

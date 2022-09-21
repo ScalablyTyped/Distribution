@@ -23,6 +23,23 @@ object anon {
     extends StObject
        with Instantiable0[Renderer]
   
+  trait Next[T] extends StObject {
+    
+    def next(value: T): Unit
+  }
+  object Next {
+    
+    inline def apply[T](next: T => Unit): Next[T] = {
+      val __obj = js.Dynamic.literal(next = js.Any.fromFunction1(next))
+      __obj.asInstanceOf[Next[T]]
+    }
+    
+    extension [Self <: Next[?], T](x: Self & Next[T]) {
+      
+      inline def setNext(value: T => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
+    }
+  }
+  
   /* Inlined std.Partial<jss.jss.JssOptions> */
   trait PartialJssOptions extends StObject {
     
@@ -61,7 +78,7 @@ object anon {
       
       inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      inline def setPluginsVarargs(value: Plugin*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: Plugin*): Self = StObject.set(x, "plugins", js.Array(value*))
       
       inline def setRenderer(value: Instantiable): Self = StObject.set(x, "Renderer", value.asInstanceOf[js.Any])
       
@@ -130,6 +147,40 @@ object anon {
       inline def setSheet(value: StyleSheet[String | Double | js.Symbol]): Self = StObject.set(x, "sheet", value.asInstanceOf[js.Any])
       
       inline def setSheetUndefined: Self = StObject.set(x, "sheet", js.undefined)
+    }
+  }
+  
+  trait Theme[T] extends StObject {
+    
+    var theme: T
+  }
+  object Theme {
+    
+    inline def apply[T](theme: T): Theme[T] = {
+      val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Theme[T]]
+    }
+    
+    extension [Self <: Theme[?], T](x: Self & Theme[T]) {
+      
+      inline def setTheme(value: T): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Unsubscribe extends StObject {
+    
+    def unsubscribe(): Unit
+  }
+  object Unsubscribe {
+    
+    inline def apply(unsubscribe: () => Unit): Unsubscribe = {
+      val __obj = js.Dynamic.literal(unsubscribe = js.Any.fromFunction0(unsubscribe))
+      __obj.asInstanceOf[Unsubscribe]
+    }
+    
+    extension [Self <: Unsubscribe](x: Self) {
+      
+      inline def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
     }
   }
 }

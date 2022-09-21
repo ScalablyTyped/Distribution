@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-modals", "SlideAnimation")
 @js.native
-class SlideAnimation () extends StObject {
+open class SlideAnimation () extends StObject {
   def this(params: SlideFrom) = this()
   def this(toValue: Double) = this()
   

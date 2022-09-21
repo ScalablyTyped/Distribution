@@ -6,10 +6,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait UserObject
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.iobroker.objectsMod.global.ioBroker._ObjectIdToObjectType because Already inherited */ trait UserObject
   extends StObject
      with BaseObject
-     with AnyObject {
+     with AnyObject
+     with _InferGetObjectViewItemType[Any, Any] {
   
   @JSName("common")
   var common_UserObject: UserCommon
@@ -19,7 +21,7 @@ trait UserObject
 }
 object UserObject {
   
-  inline def apply(_id: String, common: UserCommon, native: Record[String, js.Any]): UserObject = {
+  inline def apply(_id: String, common: UserCommon, native: Record[String, Any]): UserObject = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("user")
     __obj.asInstanceOf[UserObject]

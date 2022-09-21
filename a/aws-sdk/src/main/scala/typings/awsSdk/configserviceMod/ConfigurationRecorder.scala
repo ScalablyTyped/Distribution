@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConfigurationRecorder extends StObject {
   
   /**
-    * The name of the recorder. By default, AWS Config automatically assigns the name "default" when creating the configuration recorder. You cannot change the assigned name.
+    * The name of the recorder. By default, Config automatically assigns the name "default" when creating the configuration recorder. You cannot change the assigned name.
     */
   var name: js.UndefOr[RecorderName] = js.undefined
   
   /**
-    * Specifies the types of AWS resources for which AWS Config records configuration changes.
+    * Specifies the types of Amazon Web Services resources for which Config records configuration changes.
     */
   var recordingGroup: js.UndefOr[RecordingGroup] = js.undefined
   
   /**
-    * Amazon Resource Name (ARN) of the IAM role used to describe the AWS resources associated with the account.
+    * Amazon Resource Name (ARN) of the IAM role used to describe the Amazon Web Services resources associated with the account.  While the API model does not require this field, the server will reject a request without a defined roleARN for the configuration recorder. 
     */
   var roleARN: js.UndefOr[String] = js.undefined
 }

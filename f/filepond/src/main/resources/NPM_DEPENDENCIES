@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "filepond" : "4.23.1"
+      "filepond" : "4.30.4"
     }
   ],
   "test-dependencies" : [
     {
-      "filepond" : "4.23.1"
+      "filepond" : "4.30.4"
     }
   ],
   "compile-devDependencies" : [

@@ -22,14 +22,14 @@ trait ChatMessageChangeReader extends StObject {
     * Returns a batch list of chat message change objects from the message store’s change tracker.
     * @return An asynchronous operation that returns a list of changes.
     */
-  def readBatchAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]]
+  def readBatchAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]]
 }
 object ChatMessageChangeReader {
   
   inline def apply(
     acceptChanges: () => Unit,
     acceptChangesThrough: ChatMessageChange => Unit,
-    readBatchAsync: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]]
+    readBatchAsync: () => IPromiseWithIAsyncOperation[IVectorView[Any]]
   ): ChatMessageChangeReader = {
     val __obj = js.Dynamic.literal(acceptChanges = js.Any.fromFunction0(acceptChanges), acceptChangesThrough = js.Any.fromFunction1(acceptChangesThrough), readBatchAsync = js.Any.fromFunction0(readBatchAsync))
     __obj.asInstanceOf[ChatMessageChangeReader]
@@ -41,6 +41,6 @@ object ChatMessageChangeReader {
     
     inline def setAcceptChangesThrough(value: ChatMessageChange => Unit): Self = StObject.set(x, "acceptChangesThrough", js.Any.fromFunction1(value))
     
-    inline def setReadBatchAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]]): Self = StObject.set(x, "readBatchAsync", js.Any.fromFunction0(value))
+    inline def setReadBatchAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[Any]]): Self = StObject.set(x, "readBatchAsync", js.Any.fromFunction0(value))
   }
 }

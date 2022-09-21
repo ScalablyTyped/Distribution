@@ -34,8 +34,26 @@ object cytoscapeStrings {
   inline def additive: additive = "additive".asInstanceOf[additive]
   
   @js.native
+  sealed trait anonymous extends StObject
+  inline def anonymous: anonymous = "anonymous".asInstanceOf[anonymous]
+  
+  @js.native
+  sealed trait anywhere extends StObject
+  inline def anywhere: anywhere = "anywhere".asInstanceOf[anywhere]
+  
+  @js.native
   sealed trait auto extends StObject
   inline def auto: auto = "auto".asInstanceOf[auto]
+  
+  @js.native
+  sealed trait autorotate extends StObject
+  inline def autorotate: autorotate = "autorotate".asInstanceOf[autorotate]
+  
+  @js.native
+  sealed trait background
+    extends StObject
+       with CollectionEventName
+  inline def background: background = "background".asInstanceOf[background]
   
   @js.native
   sealed trait barrel
@@ -58,6 +76,10 @@ object cytoscapeStrings {
   @js.native
   sealed trait blob extends StObject
   inline def blob: blob = "blob".asInstanceOf[blob]
+  
+  @js.native
+  sealed trait `blob-promise` extends StObject
+  inline def `blob-promise`: `blob-promise` = "blob-promise".asInstanceOf[`blob-promise`]
   
   @js.native
   sealed trait bold
@@ -84,6 +106,7 @@ object cytoscapeStrings {
   @js.native
   sealed trait box
     extends StObject
+       with CollectionEventName
        with UserInputDeviceEventNameExt
   inline def box: box = "box".asInstanceOf[box]
   
@@ -96,6 +119,7 @@ object cytoscapeStrings {
   @js.native
   sealed trait boxselect
     extends StObject
+       with CollectionEventName
        with UserInputDeviceEventNameExt
   inline def boxselect: boxselect = "boxselect".asInstanceOf[boxselect]
   
@@ -128,6 +152,12 @@ object cytoscapeStrings {
     extends StObject
        with ArrowShape
   inline def circle: circle = "circle".asInstanceOf[circle]
+  
+  @js.native
+  sealed trait `circle-triangle`
+    extends StObject
+       with ArrowShape
+  inline def `circle-triangle`: `circle-triangle` = "circle-triangle".asInstanceOf[`circle-triangle`]
   
   @js.native
   sealed trait click
@@ -243,10 +273,6 @@ object cytoscapeStrings {
   inline def diamond: diamond = "diamond".asInstanceOf[diamond]
   
   @js.native
-  sealed trait displayed extends StObject
-  inline def displayed: displayed = "displayed".asInstanceOf[displayed]
-  
-  @js.native
   sealed trait dotted
     extends StObject
        with LineStyle
@@ -259,10 +285,32 @@ object cytoscapeStrings {
   inline def double: double = "double".asInstanceOf[double]
   
   @js.native
+  sealed trait downward extends StObject
+  inline def downward: downward = "downward".asInstanceOf[downward]
+  
+  @js.native
   sealed trait drag
     extends StObject
        with CollectionEventName
   inline def drag: drag = "drag".asInstanceOf[drag]
+  
+  @js.native
+  sealed trait dragfree
+    extends StObject
+       with CollectionEventName
+  inline def dragfree: dragfree = "dragfree".asInstanceOf[dragfree]
+  
+  @js.native
+  sealed trait dragfreeon
+    extends StObject
+       with CollectionEventName
+  inline def dragfreeon: dragfreeon = "dragfreeon".asInstanceOf[dragfreeon]
+  
+  @js.native
+  sealed trait dragpan
+    extends StObject
+       with GraphEventName
+  inline def dragpan: dragpan = "dragpan".asInstanceOf[dragpan]
   
   @js.native
   sealed trait ease
@@ -421,6 +469,10 @@ object cytoscapeStrings {
   inline def edges: edges = "edges".asInstanceOf[edges]
   
   @js.native
+  sealed trait element extends StObject
+  inline def element: element = "element".asInstanceOf[element]
+  
+  @js.native
   sealed trait ellipse
     extends StObject
        with NodeShape
@@ -445,6 +497,12 @@ object cytoscapeStrings {
     extends StObject
        with CollectionEventName
   inline def free: free = "free".asInstanceOf[free]
+  
+  @js.native
+  sealed trait freeon
+    extends StObject
+       with CollectionEventName
+  inline def freeon: freeon = "freeon".asInstanceOf[freeon]
   
   @js.native
   sealed trait grab
@@ -489,6 +547,22 @@ object cytoscapeStrings {
   inline def hollow: hollow = "hollow".asInstanceOf[hollow]
   
   @js.native
+  sealed trait horizontal extends StObject
+  inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  
+  @js.native
+  sealed trait `include-padding` extends StObject
+  inline def `include-padding`: `include-padding` = "include-padding".asInstanceOf[`include-padding`]
+  
+  @js.native
+  sealed trait inner extends StObject
+  inline def inner: inner = "inner".asInstanceOf[inner]
+  
+  @js.native
+  sealed trait inside extends StObject
+  inline def inside: inside = "inside".asInstanceOf[inside]
+  
+  @js.native
   sealed trait `inside-to-node` extends StObject
   inline def `inside-to-node`: `inside-to-node` = "inside-to-node".asInstanceOf[`inside-to-node`]
   
@@ -525,6 +599,10 @@ object cytoscapeStrings {
   inline def left: left = "left".asInstanceOf[left]
   
   @js.native
+  sealed trait leftward extends StObject
+  inline def leftward: leftward = "leftward".asInstanceOf[leftward]
+  
+  @js.native
   sealed trait lighter
     extends StObject
        with _FontWeight
@@ -551,6 +629,10 @@ object cytoscapeStrings {
     extends StObject
        with TextTranformation
   inline def lowercase: lowercase = "lowercase".asInstanceOf[lowercase]
+  
+  @js.native
+  sealed trait manual extends StObject
+  inline def manual: manual = "manual".asInstanceOf[manual]
   
   @js.native
   sealed trait mousedown
@@ -581,6 +663,12 @@ object cytoscapeStrings {
     extends StObject
        with UserInputDeviceEventName
   inline def mouseup: mouseup = "mouseup".asInstanceOf[mouseup]
+  
+  @js.native
+  sealed trait move
+    extends StObject
+       with CollectionEventName
+  inline def move: move = "move".asInstanceOf[move]
   
   @js.native
   sealed trait no extends StObject
@@ -631,6 +719,10 @@ object cytoscapeStrings {
   inline def octagon: octagon = "octagon".asInstanceOf[octagon]
   
   @js.native
+  sealed trait orphan extends StObject
+  inline def orphan: orphan = "orphan".asInstanceOf[orphan]
+  
+  @js.native
   sealed trait `outside-to-line` extends StObject
   inline def `outside-to-line`: `outside-to-line` = "outside-to-line".asInstanceOf[`outside-to-line`]
   
@@ -647,6 +739,10 @@ object cytoscapeStrings {
   inline def `outside-to-node-or-label`: `outside-to-node-or-label` = "outside-to-node-or-label".asInstanceOf[`outside-to-node-or-label`]
   
   @js.native
+  sealed trait over extends StObject
+  inline def over: over = "over".asInstanceOf[over]
+  
+  @js.native
   sealed trait pan
     extends StObject
        with GraphEventName
@@ -657,6 +753,12 @@ object cytoscapeStrings {
     extends StObject
        with NodeShape
   inline def pentagon: pentagon = "pentagon".asInstanceOf[pentagon]
+  
+  @js.native
+  sealed trait pinchzoom
+    extends StObject
+       with GraphEventName
+  inline def pinchzoom: pinchzoom = "pinchzoom".asInstanceOf[pinchzoom]
   
   @js.native
   sealed trait polygon
@@ -735,6 +837,10 @@ object cytoscapeStrings {
   inline def right: right = "right".asInstanceOf[right]
   
   @js.native
+  sealed trait rightward extends StObject
+  inline def rightward: rightward = "rightward".asInstanceOf[rightward]
+  
+  @js.native
   sealed trait round extends StObject
   inline def round: round = "round".asInstanceOf[round]
   
@@ -797,6 +903,12 @@ object cytoscapeStrings {
     extends StObject
        with CollectionEventName
   inline def scratch: scratch = "scratch".asInstanceOf[scratch]
+  
+  @js.native
+  sealed trait scrollzoom
+    extends StObject
+       with GraphEventName
+  inline def scrollzoom: scrollzoom = "scrollzoom".asInstanceOf[scrollzoom]
   
   @js.native
   sealed trait segments extends StObject
@@ -891,10 +1003,22 @@ object cytoscapeStrings {
   inline def taphold: taphold = "taphold".asInstanceOf[taphold]
   
   @js.native
+  sealed trait tapselect
+    extends StObject
+       with CollectionEventName
+  inline def tapselect: tapselect = "tapselect".asInstanceOf[tapselect]
+  
+  @js.native
   sealed trait tapstart
     extends StObject
        with UserInputDeviceEventNameExt
   inline def tapstart: tapstart = "tapstart".asInstanceOf[tapstart]
+  
+  @js.native
+  sealed trait tapunselect
+    extends StObject
+       with CollectionEventName
+  inline def tapunselect: tapunselect = "tapunselect".asInstanceOf[tapunselect]
   
   @js.native
   sealed trait taxi extends StObject
@@ -976,6 +1100,14 @@ object cytoscapeStrings {
   inline def uppercase: uppercase = "uppercase".asInstanceOf[uppercase]
   
   @js.native
+  sealed trait upward extends StObject
+  inline def upward: upward = "upward".asInstanceOf[upward]
+  
+  @js.native
+  sealed trait `use-credentials` extends StObject
+  inline def `use-credentials`: `use-credentials` = "use-credentials".asInstanceOf[`use-credentials`]
+  
+  @js.native
   sealed trait vclick
     extends StObject
        with UserInputDeviceEventNameExt
@@ -987,6 +1119,16 @@ object cytoscapeStrings {
        with ArrowShape
        with NodeShape
   inline def vee: vee = "vee".asInstanceOf[vee]
+  
+  @js.native
+  sealed trait vertical extends StObject
+  inline def vertical: vertical = "vertical".asInstanceOf[vertical]
+  
+  @js.native
+  sealed trait viewport
+    extends StObject
+       with GraphEventName
+  inline def viewport: viewport = "viewport".asInstanceOf[viewport]
   
   @js.native
   sealed trait visible extends StObject
@@ -1009,6 +1151,10 @@ object cytoscapeStrings {
     extends StObject
        with UserInputDeviceEventNameExt
   inline def vmouseup: vmouseup = "vmouseup".asInstanceOf[vmouseup]
+  
+  @js.native
+  sealed trait whitespace extends StObject
+  inline def whitespace: whitespace = "whitespace".asInstanceOf[whitespace]
   
   @js.native
   sealed trait wrap extends StObject

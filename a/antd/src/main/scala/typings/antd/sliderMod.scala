@@ -2,17 +2,18 @@ package typings.antd
 
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.Shortcut
-import typings.antd.anon.Label
 import typings.antd.anon.PrefixCls
 import typings.antd.antdBooleans.`false`
 import typings.antd.antdBooleans.`true`
 import typings.antd.tooltipMod.TooltipPlacement
+import typings.rcSlider.marksMod.MarkObj
 import typings.react.mod.CSSProperties
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.RefAttributes
 import typings.std.HTMLElement
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +23,7 @@ object sliderMod extends Shortcut {
   @JSImport("antd/lib/slider", JSImport.Default)
   @js.native
   val default: ForwardRefExoticComponent[
-    (SliderSingleProps & RefAttributes[js.Any]) | (SliderRangeProps & RefAttributes[js.Any])
+    (SliderSingleProps & RefAttributes[Any]) | (SliderRangeProps & RefAttributes[Any])
   ] = js.native
   
   type HandleGeneratorFn = js.Function1[/* config */ PrefixCls, ReactElement]
@@ -56,6 +57,8 @@ object sliderMod extends Shortcut {
     }
   }
   
+  type Opens = NumberDictionary[Boolean]
+  
   trait SliderBaseProps extends StObject {
     
     var autoFocus: js.UndefOr[Boolean] = js.undefined
@@ -66,6 +69,10 @@ object sliderMod extends Shortcut {
     
     var dots: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * @deprecated `getTooltipPopupContainer` is deprecated which will be removed in next major
+      *   version. Please use `tooltip.getPopupContainer` instead.
+      */
     var getTooltipPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ HTMLElement, HTMLElement]] = js.undefined
     
     var id: js.UndefOr[String] = js.undefined
@@ -86,12 +93,30 @@ object sliderMod extends Shortcut {
     
     var style: js.UndefOr[CSSProperties] = js.undefined
     
+    /**
+      * @deprecated `tipFormatter` is deprecated which will be removed in next major version. Please
+      *   use `tooltip.formatter` instead.
+      */
     var tipFormatter: js.UndefOr[Null | (js.Function1[/* value */ js.UndefOr[Double], ReactNode])] = js.undefined
     
+    var tooltip: js.UndefOr[SliderTooltipProps] = js.undefined
+    
+    /**
+      * @deprecated `tooltipPlacement` is deprecated which will be removed in next major version.
+      *   Please use `tooltip.placement` instead.
+      */
     var tooltipPlacement: js.UndefOr[TooltipPlacement] = js.undefined
     
+    /**
+      * @deprecated `tooltipPrefixCls` is deprecated which will be removed in next major version.
+      *   Please use `tooltip.prefixCls` instead.
+      */
     var tooltipPrefixCls: js.UndefOr[String] = js.undefined
     
+    /**
+      * @deprecated `tooltipVisible` is deprecated which will be removed in next major version. Please
+      *   use `tooltip.open` instead.
+      */
     var tooltipVisible: js.UndefOr[Boolean] = js.undefined
     
     var vertical: js.UndefOr[Boolean] = js.undefined
@@ -169,6 +194,8 @@ object sliderMod extends Shortcut {
       
       inline def setTipFormatterUndefined: Self = StObject.set(x, "tipFormatter", js.undefined)
       
+      inline def setTooltip(value: SliderTooltipProps): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+      
       inline def setTooltipPlacement(value: TooltipPlacement): Self = StObject.set(x, "tooltipPlacement", value.asInstanceOf[js.Any])
       
       inline def setTooltipPlacementUndefined: Self = StObject.set(x, "tooltipPlacement", js.undefined)
@@ -176,6 +203,8 @@ object sliderMod extends Shortcut {
       inline def setTooltipPrefixCls(value: String): Self = StObject.set(x, "tooltipPrefixCls", value.asInstanceOf[js.Any])
       
       inline def setTooltipPrefixClsUndefined: Self = StObject.set(x, "tooltipPrefixCls", js.undefined)
+      
+      inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
       
       inline def setTooltipVisible(value: Boolean): Self = StObject.set(x, "tooltipVisible", value.asInstanceOf[js.Any])
       
@@ -187,7 +216,26 @@ object sliderMod extends Shortcut {
     }
   }
   
-  type SliderMarks = NumberDictionary[ReactNode | Label]
+  type SliderMarks = js.UndefOr[Record[String | Double, ReactNode | MarkObj]]
+  
+  trait SliderRange extends StObject {
+    
+    var draggableTrack: js.UndefOr[Boolean] = js.undefined
+  }
+  object SliderRange {
+    
+    inline def apply(): SliderRange = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SliderRange]
+    }
+    
+    extension [Self <: SliderRange](x: Self) {
+      
+      inline def setDraggableTrack(value: Boolean): Self = StObject.set(x, "draggableTrack", value.asInstanceOf[js.Any])
+      
+      inline def setDraggableTrackUndefined: Self = StObject.set(x, "draggableTrack", js.undefined)
+    }
+  }
   
   trait SliderRangeProps
     extends StObject
@@ -201,7 +249,7 @@ object sliderMod extends Shortcut {
     
     var onChange: js.UndefOr[js.Function1[/* value */ js.Tuple2[Double, Double], Unit]] = js.undefined
     
-    var range: `true`
+    var range: `true` | SliderRange
     
     var trackStyle: js.UndefOr[js.Array[CSSProperties]] = js.undefined
     
@@ -209,8 +257,8 @@ object sliderMod extends Shortcut {
   }
   object SliderRangeProps {
     
-    inline def apply(): SliderRangeProps = {
-      val __obj = js.Dynamic.literal(range = true)
+    inline def apply(range: `true` | SliderRange): SliderRangeProps = {
+      val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any])
       __obj.asInstanceOf[SliderRangeProps]
     }
     
@@ -224,7 +272,7 @@ object sliderMod extends Shortcut {
       
       inline def setHandleStyleUndefined: Self = StObject.set(x, "handleStyle", js.undefined)
       
-      inline def setHandleStyleVarargs(value: CSSProperties*): Self = StObject.set(x, "handleStyle", js.Array(value :_*))
+      inline def setHandleStyleVarargs(value: CSSProperties*): Self = StObject.set(x, "handleStyle", js.Array(value*))
       
       inline def setOnAfterChange(value: /* value */ js.Tuple2[Double, Double] => Unit): Self = StObject.set(x, "onAfterChange", js.Any.fromFunction1(value))
       
@@ -234,13 +282,13 @@ object sliderMod extends Shortcut {
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      inline def setRange(value: `true`): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: `true` | SliderRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
       inline def setTrackStyle(value: js.Array[CSSProperties]): Self = StObject.set(x, "trackStyle", value.asInstanceOf[js.Any])
       
       inline def setTrackStyleUndefined: Self = StObject.set(x, "trackStyle", js.undefined)
       
-      inline def setTrackStyleVarargs(value: CSSProperties*): Self = StObject.set(x, "trackStyle", js.Array(value :_*))
+      inline def setTrackStyleVarargs(value: CSSProperties*): Self = StObject.set(x, "trackStyle", js.Array(value*))
       
       inline def setValue(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
@@ -305,14 +353,57 @@ object sliderMod extends Shortcut {
     }
   }
   
-  type Visibles = NumberDictionary[Boolean]
+  trait SliderTooltipProps extends StObject {
+    
+    var formatter: js.UndefOr[Null | (js.Function1[/* value */ js.UndefOr[Double], ReactNode])] = js.undefined
+    
+    var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ HTMLElement, HTMLElement]] = js.undefined
+    
+    var open: js.UndefOr[Boolean] = js.undefined
+    
+    var placement: js.UndefOr[TooltipPlacement] = js.undefined
+    
+    var prefixCls: js.UndefOr[String] = js.undefined
+  }
+  object SliderTooltipProps {
+    
+    inline def apply(): SliderTooltipProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SliderTooltipProps]
+    }
+    
+    extension [Self <: SliderTooltipProps](x: Self) {
+      
+      inline def setFormatter(value: /* value */ js.UndefOr[Double] => ReactNode): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
+      
+      inline def setFormatterNull: Self = StObject.set(x, "formatter", null)
+      
+      inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
+      
+      inline def setGetPopupContainer(value: /* triggerNode */ HTMLElement => HTMLElement): Self = StObject.set(x, "getPopupContainer", js.Any.fromFunction1(value))
+      
+      inline def setGetPopupContainerUndefined: Self = StObject.set(x, "getPopupContainer", js.undefined)
+      
+      inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      
+      inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+      
+      inline def setPlacement(value: TooltipPlacement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      
+      inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+      
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+    }
+  }
   
   type _To = ForwardRefExoticComponent[
-    (SliderSingleProps & RefAttributes[js.Any]) | (SliderRangeProps & RefAttributes[js.Any])
+    (SliderSingleProps & RefAttributes[Any]) | (SliderRangeProps & RefAttributes[Any])
   ]
   
   /* This means you don't have to write `default`, but can instead just say `sliderMod.foo` */
   override def _to: ForwardRefExoticComponent[
-    (SliderSingleProps & RefAttributes[js.Any]) | (SliderRangeProps & RefAttributes[js.Any])
+    (SliderSingleProps & RefAttributes[Any]) | (SliderRangeProps & RefAttributes[Any])
   ] = default
 }

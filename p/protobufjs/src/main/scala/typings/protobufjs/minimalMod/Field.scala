@@ -1,7 +1,6 @@
 package typings.protobufjs.minimalMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.protobufjs.mod.Buffer
 import typings.protobufjs.mod.Constructor
 import typings.protobufjs.mod.FieldDecorator
 import typings.protobufjs.mod.IField
@@ -24,14 +23,13 @@ import typings.protobufjs.protobufjsStrings.sint64
 import typings.protobufjs.protobufjsStrings.string
 import typings.protobufjs.protobufjsStrings.uint32
 import typings.protobufjs.protobufjsStrings.uint64
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("protobufjs/minimal", "Field")
 @js.native
-class Field protected ()
+open class Field protected ()
   extends typings.protobufjs.mod.Field {
   /**
     * Constructs a new message field instance. Note that {@link MapField|map fields} have their own class.
@@ -44,34 +42,34 @@ class Field protected ()
     */
   def this(name: String, id: Double, `type`: String) = this()
   def this(name: String, id: Double, `type`: String, rule: String) = this()
-  def this(name: String, id: Double, `type`: String, rule: StringDictionary[js.Any]) = this()
+  def this(name: String, id: Double, `type`: String, rule: StringDictionary[Any]) = this()
   def this(name: String, id: Double, `type`: String, rule: String, extend: String) = this()
-  def this(name: String, id: Double, `type`: String, rule: String, extend: StringDictionary[js.Any]) = this()
-  def this(name: String, id: Double, `type`: String, rule: StringDictionary[js.Any], extend: String) = this()
+  def this(name: String, id: Double, `type`: String, rule: String, extend: StringDictionary[Any]) = this()
+  def this(name: String, id: Double, `type`: String, rule: StringDictionary[Any], extend: String) = this()
   def this(
     name: String,
     id: Double,
     `type`: String,
-    rule: StringDictionary[js.Any],
-    extend: StringDictionary[js.Any]
+    rule: StringDictionary[Any],
+    extend: StringDictionary[Any]
   ) = this()
   def this(name: String, id: Double, `type`: String, rule: Unit, extend: String) = this()
-  def this(name: String, id: Double, `type`: String, rule: Unit, extend: StringDictionary[js.Any]) = this()
+  def this(name: String, id: Double, `type`: String, rule: Unit, extend: StringDictionary[Any]) = this()
   def this(
     name: String,
     id: Double,
     `type`: String,
     rule: String,
     extend: String,
-    options: StringDictionary[js.Any]
+    options: StringDictionary[Any]
   ) = this()
   def this(
     name: String,
     id: Double,
     `type`: String,
     rule: String,
-    extend: StringDictionary[js.Any],
-    options: StringDictionary[js.Any]
+    extend: StringDictionary[Any],
+    options: StringDictionary[Any]
   ) = this()
   def this(
     name: String,
@@ -79,31 +77,31 @@ class Field protected ()
     `type`: String,
     rule: String,
     extend: Unit,
-    options: StringDictionary[js.Any]
+    options: StringDictionary[Any]
   ) = this()
   def this(
     name: String,
     id: Double,
     `type`: String,
-    rule: StringDictionary[js.Any],
+    rule: StringDictionary[Any],
     extend: String,
-    options: StringDictionary[js.Any]
+    options: StringDictionary[Any]
   ) = this()
   def this(
     name: String,
     id: Double,
     `type`: String,
-    rule: StringDictionary[js.Any],
-    extend: StringDictionary[js.Any],
-    options: StringDictionary[js.Any]
+    rule: StringDictionary[Any],
+    extend: StringDictionary[Any],
+    options: StringDictionary[Any]
   ) = this()
   def this(
     name: String,
     id: Double,
     `type`: String,
-    rule: StringDictionary[js.Any],
+    rule: StringDictionary[Any],
     extend: Unit,
-    options: StringDictionary[js.Any]
+    options: StringDictionary[Any]
   ) = this()
   def this(
     name: String,
@@ -111,24 +109,17 @@ class Field protected ()
     `type`: String,
     rule: Unit,
     extend: String,
-    options: StringDictionary[js.Any]
+    options: StringDictionary[Any]
   ) = this()
   def this(
     name: String,
     id: Double,
     `type`: String,
     rule: Unit,
-    extend: StringDictionary[js.Any],
-    options: StringDictionary[js.Any]
+    extend: StringDictionary[Any],
+    options: StringDictionary[Any]
   ) = this()
-  def this(
-    name: String,
-    id: Double,
-    `type`: String,
-    rule: Unit,
-    extend: Unit,
-    options: StringDictionary[js.Any]
-  ) = this()
+  def this(name: String, id: Double, `type`: String, rule: Unit, extend: Unit, options: StringDictionary[Any]) = this()
 }
 /* static members */
 object Field {
@@ -137,6 +128,29 @@ object Field {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def d[T /* <: Double | (js.Array[Boolean | js.typedarray.Uint8Array | Double | Long | String]) | Long | String | Boolean | js.typedarray.Uint8Array */](
+    fieldId: Double,
+    fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes
+  ): FieldDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("d")(fieldId.asInstanceOf[js.Any], fieldType.asInstanceOf[js.Any])).asInstanceOf[FieldDecorator]
+  inline def d[T /* <: Double | (js.Array[Boolean | js.typedarray.Uint8Array | Double | Long | String]) | Long | String | Boolean | js.typedarray.Uint8Array */](
+    fieldId: Double,
+    fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes,
+    fieldRule: optional | required | repeated
+  ): FieldDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("d")(fieldId.asInstanceOf[js.Any], fieldType.asInstanceOf[js.Any], fieldRule.asInstanceOf[js.Any])).asInstanceOf[FieldDecorator]
+  inline def d[T /* <: Double | (js.Array[Boolean | js.typedarray.Uint8Array | Double | Long | String]) | Long | String | Boolean | js.typedarray.Uint8Array */](
+    fieldId: Double,
+    fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes,
+    fieldRule: optional | required | repeated,
+    defaultValue: T
+  ): FieldDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("d")(fieldId.asInstanceOf[js.Any], fieldType.asInstanceOf[js.Any], fieldRule.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[FieldDecorator]
+  inline def d[T /* <: Double | (js.Array[Boolean | js.typedarray.Uint8Array | Double | Long | String]) | Long | String | Boolean | js.typedarray.Uint8Array */](
+    fieldId: Double,
+    fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes,
+    fieldRule: Unit,
+    defaultValue: T
+  ): FieldDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("d")(fieldId.asInstanceOf[js.Any], fieldType.asInstanceOf[js.Any], fieldRule.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[FieldDecorator]
+  inline def d[T /* <: typings.protobufjs.mod.Message[T] */](fieldId: Double, fieldType: String): FieldDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("d")(fieldId.asInstanceOf[js.Any], fieldType.asInstanceOf[js.Any])).asInstanceOf[FieldDecorator]
+  inline def d[T /* <: typings.protobufjs.mod.Message[T] */](fieldId: Double, fieldType: String, fieldRule: optional | required | repeated): FieldDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("d")(fieldId.asInstanceOf[js.Any], fieldType.asInstanceOf[js.Any], fieldRule.asInstanceOf[js.Any])).asInstanceOf[FieldDecorator]
   /**
     * Field decorator (TypeScript).
     * @param fieldId Field id
@@ -145,13 +159,10 @@ object Field {
     * @param [defaultValue] Default value
     * @returns Decorator function
     */
-  inline def d[T /* <: Double | (js.Array[Boolean | Buffer | Double | Long | String | Uint8Array]) | Long | String | Boolean | Uint8Array | Buffer */](
-    fieldId: Double,
-    fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes | js.Object,
-    fieldRule: js.UndefOr[optional | required | repeated],
-    defaultValue: js.UndefOr[T]
-  ): FieldDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("d")(fieldId.asInstanceOf[js.Any], fieldType.asInstanceOf[js.Any], fieldRule.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[FieldDecorator]
-  inline def d[T /* <: typings.protobufjs.mod.Message[T] */](fieldId: Double, fieldType: String): FieldDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("d")(fieldId.asInstanceOf[js.Any], fieldType.asInstanceOf[js.Any])).asInstanceOf[FieldDecorator]
+  inline def d[T /* <: Double | (js.Array[Boolean | js.typedarray.Uint8Array | Double | Long | String]) | Long | String | Boolean | js.typedarray.Uint8Array */](fieldId: Double, fieldType: js.Object): FieldDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("d")(fieldId.asInstanceOf[js.Any], fieldType.asInstanceOf[js.Any])).asInstanceOf[FieldDecorator]
+  inline def d[T /* <: Double | (js.Array[Boolean | js.typedarray.Uint8Array | Double | Long | String]) | Long | String | Boolean | js.typedarray.Uint8Array */](fieldId: Double, fieldType: js.Object, fieldRule: optional | required | repeated): FieldDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("d")(fieldId.asInstanceOf[js.Any], fieldType.asInstanceOf[js.Any], fieldRule.asInstanceOf[js.Any])).asInstanceOf[FieldDecorator]
+  inline def d[T /* <: Double | (js.Array[Boolean | js.typedarray.Uint8Array | Double | Long | String]) | Long | String | Boolean | js.typedarray.Uint8Array */](fieldId: Double, fieldType: js.Object, fieldRule: optional | required | repeated, defaultValue: T): FieldDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("d")(fieldId.asInstanceOf[js.Any], fieldType.asInstanceOf[js.Any], fieldRule.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[FieldDecorator]
+  inline def d[T /* <: Double | (js.Array[Boolean | js.typedarray.Uint8Array | Double | Long | String]) | Long | String | Boolean | js.typedarray.Uint8Array */](fieldId: Double, fieldType: js.Object, fieldRule: Unit, defaultValue: T): FieldDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("d")(fieldId.asInstanceOf[js.Any], fieldType.asInstanceOf[js.Any], fieldRule.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[FieldDecorator]
   /**
     * Field decorator (TypeScript).
     * @param fieldId Field id
@@ -160,15 +171,7 @@ object Field {
     * @returns Decorator function
     */
   inline def d[T /* <: typings.protobufjs.mod.Message[T] */](fieldId: Double, fieldType: Constructor[T]): FieldDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("d")(fieldId.asInstanceOf[js.Any], fieldType.asInstanceOf[js.Any])).asInstanceOf[FieldDecorator]
-  
-  inline def d_optional[T /* <: typings.protobufjs.mod.Message[T] */](fieldId: Double, fieldType: String, fieldRule: optional): FieldDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("d")(fieldId.asInstanceOf[js.Any], fieldType.asInstanceOf[js.Any], fieldRule.asInstanceOf[js.Any])).asInstanceOf[FieldDecorator]
-  inline def d_optional[T /* <: typings.protobufjs.mod.Message[T] */](fieldId: Double, fieldType: Constructor[T], fieldRule: optional): FieldDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("d")(fieldId.asInstanceOf[js.Any], fieldType.asInstanceOf[js.Any], fieldRule.asInstanceOf[js.Any])).asInstanceOf[FieldDecorator]
-  
-  inline def d_repeated[T /* <: typings.protobufjs.mod.Message[T] */](fieldId: Double, fieldType: String, fieldRule: repeated): FieldDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("d")(fieldId.asInstanceOf[js.Any], fieldType.asInstanceOf[js.Any], fieldRule.asInstanceOf[js.Any])).asInstanceOf[FieldDecorator]
-  inline def d_repeated[T /* <: typings.protobufjs.mod.Message[T] */](fieldId: Double, fieldType: Constructor[T], fieldRule: repeated): FieldDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("d")(fieldId.asInstanceOf[js.Any], fieldType.asInstanceOf[js.Any], fieldRule.asInstanceOf[js.Any])).asInstanceOf[FieldDecorator]
-  
-  inline def d_required[T /* <: typings.protobufjs.mod.Message[T] */](fieldId: Double, fieldType: String, fieldRule: required): FieldDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("d")(fieldId.asInstanceOf[js.Any], fieldType.asInstanceOf[js.Any], fieldRule.asInstanceOf[js.Any])).asInstanceOf[FieldDecorator]
-  inline def d_required[T /* <: typings.protobufjs.mod.Message[T] */](fieldId: Double, fieldType: Constructor[T], fieldRule: required): FieldDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("d")(fieldId.asInstanceOf[js.Any], fieldType.asInstanceOf[js.Any], fieldRule.asInstanceOf[js.Any])).asInstanceOf[FieldDecorator]
+  inline def d[T /* <: typings.protobufjs.mod.Message[T] */](fieldId: Double, fieldType: Constructor[T], fieldRule: optional | required | repeated): FieldDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("d")(fieldId.asInstanceOf[js.Any], fieldType.asInstanceOf[js.Any], fieldRule.asInstanceOf[js.Any])).asInstanceOf[FieldDecorator]
   
   /**
     * Constructs a field from a field descriptor.

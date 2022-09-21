@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-custom-scroll
 
-Typings are for version 4.2
+Typings are for version 4.3
 
 ## Library description:
 An easily designable, cross browser (!!), custom scroll with ReactJS Animations and scroll rate **exactly** like native scroll
@@ -10,10 +10,10 @@ An easily designable, cross browser (!!), custom scroll with ReactJS Animations 
 | ------------------ | :-------------: |
 | Full name          | react-custom-scroll |
 | Keywords           | react, react-custom-scroll, react-component, customscroll, custom-scroll, ui component, ui, component |
-| # releases         | 12 |
-| # dependents       | 7 |
-| # downloads        | 224694 |
-| # stars            | 4 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 32467.0 |
+| # stars            | 430.0 |
 
 ## Links
 - [Homepage](https://github.com/rommguy/react-custom-scroll#readme)

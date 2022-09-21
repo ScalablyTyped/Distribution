@@ -10,15 +10,13 @@ Framework-agnostic, micro-library for getting stack traces in all environments
 | ------------------ | :-------------: |
 | Full name          | stacktrace-js |
 | Keywords           | stacktrace, error, debugger, client, browser |
-| # releases         | 3 |
-| # dependents       | 144 |
-| # downloads        | 33682754 |
-| # stars            | 10 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 7777785.0 |
+| # stars            | 3845.0 |
 
 ## Links
 - [Homepage](https://www.stacktracejs.com)
-- [Bugs](https://github.com/stacktracejs/stacktrace.js/issues)
-- [Repository](https://github.com/stacktracejs/stacktrace.js)
 - [Npm](https://www.npmjs.com/package/stacktrace-js)
     
 

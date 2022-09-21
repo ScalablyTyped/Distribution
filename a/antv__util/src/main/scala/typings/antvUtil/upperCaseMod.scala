@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object upperCaseMod {
   
-  @JSImport("@antv/util/lib/upper-case", JSImport.Namespace)
+  @JSImport("@antv/util/lib/lodash/upper-case", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

@@ -10,10 +10,10 @@ parse the .git/config file into a useful data structure
 | ------------------ | :-------------: |
 | Full name          | gitconfiglocal |
 | Keywords           | git, config |
-| # releases         | 2 |
-| # dependents       | 64 |
-| # downloads        | 59701229 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 8406185.333333334 |
+| # stars            | 15.0 |
 
 ## Links
 - [Homepage](https://github.com/soldair/node-gitconfiglocal#readme)

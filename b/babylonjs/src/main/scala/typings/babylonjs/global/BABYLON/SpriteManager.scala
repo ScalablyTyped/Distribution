@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.SpriteManager")
 @js.native
-class SpriteManager protected ()
+open class SpriteManager protected ()
   extends StObject
      with typings.babylonjs.BABYLON.SpriteManager {
   /**
@@ -18,7 +18,7 @@ class SpriteManager protected ()
     * @param cellSize defines the size of a sprite cell
     * @param scene defines the hosting scene
     * @param epsilon defines the epsilon value to align texture (0.01 by default)
-    * @param samplingMode defines the smapling mode to use with spritesheet
+    * @param samplingMode defines the sampling mode to use with spritesheet
     * @param fromPacked set to false; do not alter
     * @param spriteJSON null otherwise a JSON object defining sprite sheet data; do not alter
     */
@@ -27,7 +27,7 @@ class SpriteManager protected ()
   name: String,
     imgUrl: String,
     capacity: Double,
-    cellSize: js.Any,
+    cellSize: Any,
     scene: typings.babylonjs.BABYLON.Scene
   ) = this()
   def this(
@@ -35,7 +35,7 @@ class SpriteManager protected ()
   name: String,
     imgUrl: String,
     capacity: Double,
-    cellSize: js.Any,
+    cellSize: Any,
     scene: typings.babylonjs.BABYLON.Scene,
     epsilon: Double
   ) = this()
@@ -44,7 +44,7 @@ class SpriteManager protected ()
   name: String,
     imgUrl: String,
     capacity: Double,
-    cellSize: js.Any,
+    cellSize: Any,
     scene: typings.babylonjs.BABYLON.Scene,
     epsilon: Double,
     samplingMode: Double
@@ -54,7 +54,7 @@ class SpriteManager protected ()
   name: String,
     imgUrl: String,
     capacity: Double,
-    cellSize: js.Any,
+    cellSize: Any,
     scene: typings.babylonjs.BABYLON.Scene,
     epsilon: Unit,
     samplingMode: Double
@@ -64,7 +64,7 @@ class SpriteManager protected ()
   name: String,
     imgUrl: String,
     capacity: Double,
-    cellSize: js.Any,
+    cellSize: Any,
     scene: typings.babylonjs.BABYLON.Scene,
     epsilon: Double,
     samplingMode: Double,
@@ -75,7 +75,7 @@ class SpriteManager protected ()
   name: String,
     imgUrl: String,
     capacity: Double,
-    cellSize: js.Any,
+    cellSize: Any,
     scene: typings.babylonjs.BABYLON.Scene,
     epsilon: Double,
     samplingMode: Unit,
@@ -86,7 +86,7 @@ class SpriteManager protected ()
   name: String,
     imgUrl: String,
     capacity: Double,
-    cellSize: js.Any,
+    cellSize: Any,
     scene: typings.babylonjs.BABYLON.Scene,
     epsilon: Unit,
     samplingMode: Double,
@@ -97,7 +97,7 @@ class SpriteManager protected ()
   name: String,
     imgUrl: String,
     capacity: Double,
-    cellSize: js.Any,
+    cellSize: Any,
     scene: typings.babylonjs.BABYLON.Scene,
     epsilon: Unit,
     samplingMode: Unit,
@@ -108,96 +108,96 @@ class SpriteManager protected ()
   name: String,
     imgUrl: String,
     capacity: Double,
-    cellSize: js.Any,
+    cellSize: Any,
     scene: typings.babylonjs.BABYLON.Scene,
     epsilon: Double,
     samplingMode: Double,
     fromPacked: Boolean,
-    spriteJSON: js.Any
+    spriteJSON: Any
   ) = this()
   def this(
     /** defines the manager's name */
   name: String,
     imgUrl: String,
     capacity: Double,
-    cellSize: js.Any,
+    cellSize: Any,
     scene: typings.babylonjs.BABYLON.Scene,
     epsilon: Double,
     samplingMode: Double,
     fromPacked: Unit,
-    spriteJSON: js.Any
+    spriteJSON: Any
   ) = this()
   def this(
     /** defines the manager's name */
   name: String,
     imgUrl: String,
     capacity: Double,
-    cellSize: js.Any,
+    cellSize: Any,
     scene: typings.babylonjs.BABYLON.Scene,
     epsilon: Double,
     samplingMode: Unit,
     fromPacked: Boolean,
-    spriteJSON: js.Any
+    spriteJSON: Any
   ) = this()
   def this(
     /** defines the manager's name */
   name: String,
     imgUrl: String,
     capacity: Double,
-    cellSize: js.Any,
+    cellSize: Any,
     scene: typings.babylonjs.BABYLON.Scene,
     epsilon: Double,
     samplingMode: Unit,
     fromPacked: Unit,
-    spriteJSON: js.Any
+    spriteJSON: Any
   ) = this()
   def this(
     /** defines the manager's name */
   name: String,
     imgUrl: String,
     capacity: Double,
-    cellSize: js.Any,
+    cellSize: Any,
     scene: typings.babylonjs.BABYLON.Scene,
     epsilon: Unit,
     samplingMode: Double,
     fromPacked: Boolean,
-    spriteJSON: js.Any
+    spriteJSON: Any
   ) = this()
   def this(
     /** defines the manager's name */
   name: String,
     imgUrl: String,
     capacity: Double,
-    cellSize: js.Any,
+    cellSize: Any,
     scene: typings.babylonjs.BABYLON.Scene,
     epsilon: Unit,
     samplingMode: Double,
     fromPacked: Unit,
-    spriteJSON: js.Any
+    spriteJSON: Any
   ) = this()
   def this(
     /** defines the manager's name */
   name: String,
     imgUrl: String,
     capacity: Double,
-    cellSize: js.Any,
+    cellSize: Any,
     scene: typings.babylonjs.BABYLON.Scene,
     epsilon: Unit,
     samplingMode: Unit,
     fromPacked: Boolean,
-    spriteJSON: js.Any
+    spriteJSON: Any
   ) = this()
   def this(
     /** defines the manager's name */
   name: String,
     imgUrl: String,
     capacity: Double,
-    cellSize: js.Any,
+    cellSize: Any,
     scene: typings.babylonjs.BABYLON.Scene,
     epsilon: Unit,
     samplingMode: Unit,
     fromPacked: Unit,
-    spriteJSON: js.Any
+    spriteJSON: Any
   ) = this()
   
   /**
@@ -215,22 +215,27 @@ object SpriteManager {
   
   /**
     * Creates a sprite manager from a snippet saved by the sprite editor
+    * @deprecated Please use ParseFromSnippetAsync instead
     * @param snippetId defines the snippet to load (can be set to _BLANK to create a default one)
     * @param scene defines the hosting scene
     * @param rootUrl defines the root URL to use to load textures and relative dependencies
     * @returns a promise that will resolve to the new sprite manager
     */
-  inline def CreateFromSnippetAsync(snippetId: String, scene: typings.babylonjs.BABYLON.Scene): js.Promise[typings.babylonjs.BABYLON.SpriteManager] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.SpriteManager]]
-  inline def CreateFromSnippetAsync(snippetId: String, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): js.Promise[typings.babylonjs.BABYLON.SpriteManager] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.SpriteManager]]
+  @JSGlobal("BABYLON.SpriteManager.CreateFromSnippetAsync")
+  @js.native
+  def CreateFromSnippetAsync: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SpriteManager.ParseFromSnippetAsync */ Any = js.native
+  inline def CreateFromSnippetAsync_=(
+    x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SpriteManager.ParseFromSnippetAsync */ Any
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreateFromSnippetAsync")(x.asInstanceOf[js.Any])
   
   /**
     * Parses a JSON object to create a new sprite manager.
     * @param parsedManager The JSON object to parse
-    * @param scene The scene to create the sprite managerin
+    * @param scene The scene to create the sprite manager
     * @param rootUrl The root url to use to load external dependencies like texture
     * @returns the new sprite manager
     */
-  inline def Parse(parsedManager: js.Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): typings.babylonjs.BABYLON.SpriteManager = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedManager.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.SpriteManager]
+  inline def Parse(parsedManager: Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): typings.babylonjs.BABYLON.SpriteManager = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedManager.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.SpriteManager]
   
   /**
     * Creates a sprite manager from a snippet saved in a remote file
@@ -242,6 +247,16 @@ object SpriteManager {
     */
   inline def ParseFromFileAsync(name: Nullable[String], url: String, scene: typings.babylonjs.BABYLON.Scene): js.Promise[typings.babylonjs.BABYLON.SpriteManager] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.SpriteManager]]
   inline def ParseFromFileAsync(name: Nullable[String], url: String, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): js.Promise[typings.babylonjs.BABYLON.SpriteManager] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.SpriteManager]]
+  
+  /**
+    * Creates a sprite manager from a snippet saved by the sprite editor
+    * @param snippetId defines the snippet to load (can be set to _BLANK to create a default one)
+    * @param scene defines the hosting scene
+    * @param rootUrl defines the root URL to use to load textures and relative dependencies
+    * @returns a promise that will resolve to the new sprite manager
+    */
+  inline def ParseFromSnippetAsync(snippetId: String, scene: typings.babylonjs.BABYLON.Scene): js.Promise[typings.babylonjs.BABYLON.SpriteManager] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.SpriteManager]]
+  inline def ParseFromSnippetAsync(snippetId: String, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): js.Promise[typings.babylonjs.BABYLON.SpriteManager] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.SpriteManager]]
   
   /** Define the Url to load snippets */
   @JSGlobal("BABYLON.SpriteManager.SnippetUrl")

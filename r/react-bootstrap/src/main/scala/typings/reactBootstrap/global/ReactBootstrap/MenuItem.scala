@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ReactBootstrap.MenuItem")
 @js.native
-class MenuItem ()
+open class MenuItem ()
   extends typings.reactBootstrap.mod.MenuItem

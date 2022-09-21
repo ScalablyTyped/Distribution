@@ -10,10 +10,10 @@ Response time for Node.js servers
 | ------------------ | :-------------: |
 | Full name          | response-time |
 | Keywords           | http, res, response time, x-response-time |
-| # releases         | 1 |
-| # dependents       | 216 |
-| # downloads        | 11079145 |
-| # stars            | 32 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1278454.0 |
+| # stars            | 441.0 |
 
 ## Links
 - [Homepage](https://github.com/expressjs/response-time)

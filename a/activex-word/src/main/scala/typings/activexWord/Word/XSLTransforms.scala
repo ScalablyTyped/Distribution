@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XSLTransforms extends StObject {
   
   /** @param boolean [InstallForAllUsers=false] */
-  def Add(Location: String, Alias: js.Any): XSLTransform = js.native
-  def Add(Location: String, Alias: js.Any, InstallForAllUsers: Boolean): XSLTransform = js.native
+  def Add(Location: String, Alias: Any): XSLTransform = js.native
+  def Add(Location: String, Alias: Any, InstallForAllUsers: Boolean): XSLTransform = js.native
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -17,9 +17,9 @@ trait XSLTransforms extends StObject {
   
   val Creator: Double = js.native
   
-  def Item(Index: js.Any): XSLTransform = js.native
+  def Item(Index: Any): XSLTransform = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   /* private */ @JSName("Word.XSLTransforms_typekey")
   var WordDotXSLTransforms_typekey: XSLTransforms = js.native

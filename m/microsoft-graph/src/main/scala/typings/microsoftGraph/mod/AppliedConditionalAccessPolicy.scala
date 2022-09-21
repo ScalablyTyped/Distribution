@@ -18,12 +18,13 @@ trait AppliedConditionalAccessPolicy extends StObject {
   // Refers to the session controls enforced by the conditional access policy (example: 'Require app enforced controls').
   var enforcedSessionControls: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
-  // Unique GUID of the conditional access policy.
+  // An identifier of the conditional access policy.
   var id: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
-    * Indicates the result of the CA policy that was triggered. Possible values are:successfailurenotApplied - Policy isn't
-    * applied because policy conditions were not met.notEnabled - This is due to the policy in disabled state.
+    * Indicates the result of the CA policy that was triggered. Possible values are: success, failure, notApplied (Policy
+    * isn't applied because policy conditions were not met),notEnabled (This is due to the policy in disabled state),
+    * unknown, unknownFutureValue.
     */
   var result: js.UndefOr[NullableOption[AppliedConditionalAccessPolicyResult]] = js.undefined
 }
@@ -48,7 +49,7 @@ object AppliedConditionalAccessPolicy {
     
     inline def setEnforcedGrantControlsUndefined: Self = StObject.set(x, "enforcedGrantControls", js.undefined)
     
-    inline def setEnforcedGrantControlsVarargs(value: String*): Self = StObject.set(x, "enforcedGrantControls", js.Array(value :_*))
+    inline def setEnforcedGrantControlsVarargs(value: String*): Self = StObject.set(x, "enforcedGrantControls", js.Array(value*))
     
     inline def setEnforcedSessionControls(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "enforcedSessionControls", value.asInstanceOf[js.Any])
     
@@ -56,7 +57,7 @@ object AppliedConditionalAccessPolicy {
     
     inline def setEnforcedSessionControlsUndefined: Self = StObject.set(x, "enforcedSessionControls", js.undefined)
     
-    inline def setEnforcedSessionControlsVarargs(value: String*): Self = StObject.set(x, "enforcedSessionControls", js.Array(value :_*))
+    inline def setEnforcedSessionControlsVarargs(value: String*): Self = StObject.set(x, "enforcedSessionControls", js.Array(value*))
     
     inline def setId(value: NullableOption[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

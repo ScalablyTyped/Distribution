@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.PrePassRendererSceneComponent")
 @js.native
-class PrePassRendererSceneComponent protected ()
+open class PrePassRendererSceneComponent protected ()
   extends StObject
      with typings.babylonjs.BABYLON.PrePassRendererSceneComponent {
   /**
@@ -16,19 +16,28 @@ class PrePassRendererSceneComponent protected ()
   def this(scene: typings.babylonjs.BABYLON.Scene) = this()
   
   /* private */ /* CompleteClass */
-  var _afterCameraDraw: js.Any = js.native
+  var _afterCameraDraw: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _afterRenderingMeshStage: js.Any = js.native
+  var _afterRenderTargetDraw: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _beforeCameraDraw: js.Any = js.native
+  var _afterRenderingMeshStage: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _beforeClearStage: js.Any = js.native
+  var _beforeCameraDraw: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _beforeRenderingMeshStage: js.Any = js.native
+  var _beforeClearStage: Any = js.native
+  
+  /* private */ /* CompleteClass */
+  var _beforeRenderTargetClearStage: Any = js.native
+  
+  /* private */ /* CompleteClass */
+  var _beforeRenderTargetDraw: Any = js.native
+  
+  /* private */ /* CompleteClass */
+  var _beforeRenderingMeshStage: Any = js.native
   
   /**
     * Disposes the component and the associated ressources.

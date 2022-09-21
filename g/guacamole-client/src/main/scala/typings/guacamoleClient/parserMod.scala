@@ -8,7 +8,7 @@ object parserMod {
   
   @JSImport("guacamole-client/lib/Parser", "Parser")
   @js.native
-  class Parser () extends StObject {
+  open class Parser () extends StObject {
     
     /**
       * Fired once for every complete Guacamole instruction received, in order.
@@ -16,7 +16,7 @@ object parserMod {
       * @param opcode The Guacamole instruction opcode.
       * @param parameters The parameters provided for the instruction, if any.
       */
-    var oninstruction: Null | (js.Function2[/* opcode */ String, /* params */ js.Array[js.Any], Unit]) = js.native
+    var oninstruction: Null | (js.Function2[/* opcode */ String, /* params */ js.Array[Any], Unit]) = js.native
     
     /**
       * Appends the given instruction data packet to the internal buffer of

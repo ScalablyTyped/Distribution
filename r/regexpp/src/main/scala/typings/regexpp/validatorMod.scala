@@ -19,7 +19,7 @@ object validatorMod {
   
   @JSImport("regexpp/validator", "RegExpValidator")
   @js.native
-  class RegExpValidator () extends StObject {
+  open class RegExpValidator () extends StObject {
     def this(options: Options) = this()
     
     def validateFlags(source: String): Unit = js.native
@@ -90,7 +90,7 @@ object validatorMod {
           ] = js.undefined
       
       var onFlags: js.UndefOr[
-            js.Function8[
+            js.Function9[
               /* start */ Double, 
               /* end */ Double, 
               /* global */ Boolean, 
@@ -99,6 +99,7 @@ object validatorMod {
               /* unicode */ Boolean, 
               /* sticky */ Boolean, 
               /* dotAll */ Boolean, 
+              /* hasIndices */ Boolean, 
               Unit
             ]
           ] = js.undefined
@@ -230,8 +231,8 @@ object validatorMod {
         inline def setOnEscapeCharacterSetUndefined: Self = StObject.set(x, "onEscapeCharacterSet", js.undefined)
         
         inline def setOnFlags(
-          value: (/* start */ Double, /* end */ Double, /* global */ Boolean, /* ignoreCase */ Boolean, /* multiline */ Boolean, /* unicode */ Boolean, /* sticky */ Boolean, /* dotAll */ Boolean) => Unit
-        ): Self = StObject.set(x, "onFlags", js.Any.fromFunction8(value))
+          value: (/* start */ Double, /* end */ Double, /* global */ Boolean, /* ignoreCase */ Boolean, /* multiline */ Boolean, /* unicode */ Boolean, /* sticky */ Boolean, /* dotAll */ Boolean, /* hasIndices */ Boolean) => Unit
+        ): Self = StObject.set(x, "onFlags", js.Any.fromFunction9(value))
         
         inline def setOnFlagsUndefined: Self = StObject.set(x, "onFlags", js.undefined)
         

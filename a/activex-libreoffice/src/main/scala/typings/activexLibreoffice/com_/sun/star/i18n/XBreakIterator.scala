@@ -249,7 +249,7 @@ object XBreakIterator {
     previousCharacters: (String, Double, Locale, Double, Double, js.Array[Double]) => Double,
     previousScript: (String, Double, Double) => Double,
     previousWord: (String, Double, Locale, Double) => Boundary,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XBreakIterator = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), beginOfCharBlock = js.Any.fromFunction4(beginOfCharBlock), beginOfScript = js.Any.fromFunction3(beginOfScript), beginOfSentence = js.Any.fromFunction3(beginOfSentence), endOfCharBlock = js.Any.fromFunction4(endOfCharBlock), endOfScript = js.Any.fromFunction3(endOfScript), endOfSentence = js.Any.fromFunction3(endOfSentence), getLineBreak = js.Any.fromFunction6(getLineBreak), getScriptType = js.Any.fromFunction2(getScriptType), getWordBoundary = js.Any.fromFunction5(getWordBoundary), getWordType = js.Any.fromFunction3(getWordType), isBeginWord = js.Any.fromFunction4(isBeginWord), isEndWord = js.Any.fromFunction4(isEndWord), nextCharBlock = js.Any.fromFunction4(nextCharBlock), nextCharacters = js.Any.fromFunction6(nextCharacters), nextScript = js.Any.fromFunction3(nextScript), nextWord = js.Any.fromFunction4(nextWord), previousCharBlock = js.Any.fromFunction4(previousCharBlock), previousCharacters = js.Any.fromFunction6(previousCharacters), previousScript = js.Any.fromFunction3(previousScript), previousWord = js.Any.fromFunction4(previousWord), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

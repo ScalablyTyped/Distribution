@@ -8,7 +8,7 @@ trait DataTable extends StObject {
   
   val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  var AutoScaleFont: js.Any
+  var AutoScaleFont: Any
   
   val Border: ChartBorder
   
@@ -26,7 +26,7 @@ trait DataTable extends StObject {
   
   var HasBorderVertical: Boolean
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.DataTable_typekey")
   var PowerPointDotDataTable_typekey: DataTable
@@ -39,7 +39,7 @@ object DataTable {
   
   inline def apply(
     Application: Application,
-    AutoScaleFont: js.Any,
+    AutoScaleFont: Any,
     Border: ChartBorder,
     Creator: Double,
     Delete: () => Unit,
@@ -48,7 +48,7 @@ object DataTable {
     HasBorderHorizontal: Boolean,
     HasBorderOutline: Boolean,
     HasBorderVertical: Boolean,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotDataTable_typekey: DataTable,
     Select: () => Unit,
     ShowLegendKey: Boolean
@@ -62,7 +62,7 @@ object DataTable {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    inline def setAutoScaleFont(value: js.Any): Self = StObject.set(x, "AutoScaleFont", value.asInstanceOf[js.Any])
+    inline def setAutoScaleFont(value: Any): Self = StObject.set(x, "AutoScaleFont", value.asInstanceOf[js.Any])
     
     inline def setBorder(value: ChartBorder): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
     
@@ -80,7 +80,7 @@ object DataTable {
     
     inline def setHasBorderVertical(value: Boolean): Self = StObject.set(x, "HasBorderVertical", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotDataTable_typekey(value: DataTable): Self = StObject.set(x, "PowerPoint.DataTable_typekey", value.asInstanceOf[js.Any])
     

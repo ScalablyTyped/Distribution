@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@esfx/internal-tag" : "1.0.0-pre.6"
+      "@esfx/internal-tag" : "1.0.0-pre.19"
     }
   ],
   "test-dependencies" : [
     {
-      "@esfx/internal-tag" : "1.0.0-pre.6"
+      "@esfx/internal-tag" : "1.0.0-pre.19"
     }
   ],
   "compile-devDependencies" : [

@@ -28,7 +28,7 @@ trait Worksheet
     * Applies a hierarchical filter.
     * The values parameter is either a single value, an array of values, or an object { levels: ["1", "2"] }.
     */
-  def applyHierarchicalFilterAsync(fieldName: String, values: js.Object, options: js.Any): js.Promise[String] = js.native
+  def applyHierarchicalFilterAsync(fieldName: String, values: js.Object, options: Any): js.Promise[String] = js.native
   
   /**
     * Applies a quantitative filter to a field or to a date.

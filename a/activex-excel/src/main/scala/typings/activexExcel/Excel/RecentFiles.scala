@@ -21,7 +21,7 @@ trait RecentFiles extends StObject {
   
   var Maximum: Double = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def _Default(Index: Double): RecentFile = js.native
 }

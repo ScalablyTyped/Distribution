@@ -13,7 +13,7 @@ trait AccountSelector extends StObject {
   /* private */ @JSName("Outlook.AccountSelector_typekey")
   var OutlookDotAccountSelector_typekey: AccountSelector
   
-  val Parent: js.Any
+  val Parent: Any
   
   val SelectedAccount: Account
   
@@ -25,7 +25,7 @@ object AccountSelector {
     Application: Application,
     Class: OlObjectClass,
     OutlookDotAccountSelector_typekey: AccountSelector,
-    Parent: js.Any,
+    Parent: Any,
     SelectedAccount: Account,
     Session: NameSpace
   ): AccountSelector = {
@@ -42,7 +42,7 @@ object AccountSelector {
     
     inline def setOutlookDotAccountSelector_typekey(value: AccountSelector): Self = StObject.set(x, "Outlook.AccountSelector_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSelectedAccount(value: Account): Self = StObject.set(x, "SelectedAccount", value.asInstanceOf[js.Any])
     

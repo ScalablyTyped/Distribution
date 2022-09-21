@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("blessed", "Widgets.TextareaElement")
 @js.native
-class TextareaElement protected () extends InputElement {
+open class TextareaElement protected () extends InputElement {
   def this(opts: TextareaOptions) = this()
   
   /**
@@ -23,7 +23,7 @@ class TextareaElement protected () extends InputElement {
     * Open text editor in $EDITOR, read the output from the resulting file. Takes a callback which
     * receives the final value.
     */
-  def editor(callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[String], Unit]): Unit = js.native
+  def editor(callback: js.Function2[/* err */ Any, /* value */ js.UndefOr[String], Unit]): Unit = js.native
   
   /**
     * The same as this.value, for now.
@@ -34,9 +34,9 @@ class TextareaElement protected () extends InputElement {
     * Grab key events and start reading text from the keyboard. Takes a callback which receives
     * the final value.
     */
-  def input(callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[String], Unit]): Unit = js.native
+  def input(callback: js.Function2[/* err */ Any, /* value */ js.UndefOr[String], Unit]): Unit = js.native
   
-  def on(event: TextareaElementEventType, callback: js.Function1[/* err */ js.Any, Unit]): this.type = js.native
+  def on(event: TextareaElementEventType, callback: js.Function1[/* err */ Any, Unit]): this.type = js.native
   
   /**
     * Original options object.
@@ -48,26 +48,26 @@ class TextareaElement protected () extends InputElement {
     * Open text editor in $EDITOR, read the output from the resulting file. Takes a callback which
     * receives the final value.
     */
-  def readEditor(callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[String], Unit]): Unit = js.native
+  def readEditor(callback: js.Function2[/* err */ Any, /* value */ js.UndefOr[String], Unit]): Unit = js.native
   
   /**
     * Grab key events and start reading text from the keyboard. Takes a callback which receives
     * the final value.
     */
   def readInput(): Unit = js.native
-  def readInput(callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[String], Unit]): Unit = js.native
+  def readInput(callback: js.Function2[/* err */ Any, /* value */ js.UndefOr[String], Unit]): Unit = js.native
   
   /**
     * Open text editor in $EDITOR, read the output from the resulting file. Takes a callback which
     * receives the final value.
     */
-  def setEditor(callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[String], Unit]): Unit = js.native
+  def setEditor(callback: js.Function2[/* err */ Any, /* value */ js.UndefOr[String], Unit]): Unit = js.native
   
   /**
     * Grab key events and start reading text from the keyboard. Takes a callback which receives
     * the final value.
     */
-  def setInput(callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[String], Unit]): Unit = js.native
+  def setInput(callback: js.Function2[/* err */ Any, /* value */ js.UndefOr[String], Unit]): Unit = js.native
   
   /**
     * Set value.

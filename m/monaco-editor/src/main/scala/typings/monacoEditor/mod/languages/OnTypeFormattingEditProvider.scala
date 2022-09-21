@@ -40,7 +40,7 @@ object OnTypeFormattingEditProvider {
     
     inline def setAutoFormatTriggerCharacters(value: js.Array[String]): Self = StObject.set(x, "autoFormatTriggerCharacters", value.asInstanceOf[js.Any])
     
-    inline def setAutoFormatTriggerCharactersVarargs(value: String*): Self = StObject.set(x, "autoFormatTriggerCharacters", js.Array(value :_*))
+    inline def setAutoFormatTriggerCharactersVarargs(value: String*): Self = StObject.set(x, "autoFormatTriggerCharacters", js.Array(value*))
     
     inline def setProvideOnTypeFormattingEdits(
       value: (ITextModel, Position, String, FormattingOptions, CancellationToken) => ProviderResult[js.Array[TextEdit]]

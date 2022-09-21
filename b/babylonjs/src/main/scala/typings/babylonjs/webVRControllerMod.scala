@@ -22,16 +22,16 @@ object webVRControllerMod {
       * Creates a new WebVRController from a gamepad
       * @param vrGamepad the gamepad that the WebVRController should be created from
       */
-    def this(vrGamepad: js.Any) = this()
+    def this(vrGamepad: Any) = this()
     
     /**
-      * Array of button availible on the controller
+      * Array of button available on the controller
       */
     /* protected */ var _buttons: js.Array[MutableGamepadButton] = js.native
     
-    /* private */ var _changes: js.Any = js.native
+    /* private */ var _changes: Any = js.native
     
-    /* private */ var _checkChanges: js.Any = js.native
+    /* private */ var _checkChanges: Any = js.native
     
     /**
       * Internal, the default controller model for the controller
@@ -43,9 +43,9 @@ object webVRControllerMod {
       */
     /* protected */ def _handleButtonChange(buttonIdx: Double, value: ExtendedGamepadButton, changes: GamepadButtonChanges): Unit = js.native
     
-    /* private */ var _onButtonStateChange: js.Any = js.native
+    /* private */ var _onButtonStateChange: Any = js.native
     
-    /* private */ var _setButtonValue: js.Any = js.native
+    /* private */ var _setButtonValue: Any = js.native
     
     /**
       * The default controller model for the controller

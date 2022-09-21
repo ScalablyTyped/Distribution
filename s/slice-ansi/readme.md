@@ -1,7 +1,7 @@
 
 # Scala.js typings for slice-ansi
 
-Typings are for version 4.0
+Typings are for version 5.0
 
 ## Library description:
 Slice a string with ANSI escape codes
@@ -10,10 +10,10 @@ Slice a string with ANSI escape codes
 | ------------------ | :-------------: |
 | Full name          | slice-ansi |
 | Keywords           | slice, string, ansi, styles, color, colour, colors, terminal, console, cli, tty, escape, formatting, rgb, 256, shell, xterm, log, logging, command-line, text |
-| # releases         | 5 |
-| # dependents       | 91 |
-| # downloads        | 682155124 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.4785523533333334E8 |
+| # stars            | 39.0 |
 
 ## Links
 - [Homepage](https://github.com/chalk/slice-ansi#readme)

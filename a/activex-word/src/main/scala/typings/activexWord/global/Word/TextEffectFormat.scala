@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.TextEffectFormat")
 @js.native
-/* private */ class TextEffectFormat ()
+/* private */ open class TextEffectFormat ()
   extends StObject
      with typings.activexWord.Word.TextEffectFormat {
   
@@ -42,7 +42,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var NormalizedHeight: MsoTriState = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var PresetShape: MsoPresetTextEffectShape = js.native

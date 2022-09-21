@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.ApplicationModel.Appointments
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -111,7 +110,7 @@ object AppointmentsProvider {
     
     /** Gets the start date and time of the appointment instance to remove. */
     /* CompleteClass */
-    var instanceStartDate: Date = js.native
+    var instanceStartDate: js.Date = js.native
     
     /** Call this method to inform the activating app that the operation was canceled by the user. */
     /* CompleteClass */
@@ -154,7 +153,7 @@ object AppointmentsProvider {
     
     /** Gets the start date and time of the appointment instance to replace. */
     /* CompleteClass */
-    var instanceStartDate: Date = js.native
+    var instanceStartDate: js.Date = js.native
     
     /** Informs the activating app that the operation was canceled by the user. */
     /* CompleteClass */

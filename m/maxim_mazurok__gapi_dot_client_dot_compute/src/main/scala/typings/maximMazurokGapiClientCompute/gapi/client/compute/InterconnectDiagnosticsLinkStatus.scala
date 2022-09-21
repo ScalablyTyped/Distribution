@@ -36,7 +36,7 @@ object InterconnectDiagnosticsLinkStatus {
     
     inline def setArpCachesUndefined: Self = StObject.set(x, "arpCaches", js.undefined)
     
-    inline def setArpCachesVarargs(value: InterconnectDiagnosticsARPEntry*): Self = StObject.set(x, "arpCaches", js.Array(value :_*))
+    inline def setArpCachesVarargs(value: InterconnectDiagnosticsARPEntry*): Self = StObject.set(x, "arpCaches", js.Array(value*))
     
     inline def setCircuitId(value: String): Self = StObject.set(x, "circuitId", value.asInstanceOf[js.Any])
     

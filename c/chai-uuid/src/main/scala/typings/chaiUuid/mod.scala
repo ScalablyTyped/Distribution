@@ -28,7 +28,7 @@ object mod extends Shortcut {
       trait Assert extends StObject {
         
         def guid(guid: String): Unit = js.native
-        def guid(guid: String, version: js.Any): Unit = js.native
+        def guid(guid: String, version: Any): Unit = js.native
         
         def uuid(uuid: String): Unit = js.native
         def uuid(uuid: String, version: UuidVersion): Unit = js.native
@@ -42,7 +42,7 @@ object mod extends Shortcut {
            with TypeComparison {
         
         def guid(): Unit = js.native
-        def guid(guid: js.Any): Unit = js.native
+        def guid(guid: Any): Unit = js.native
         
         def uuid(): Unit = js.native
         def uuid(uuid: UuidVersion): Unit = js.native

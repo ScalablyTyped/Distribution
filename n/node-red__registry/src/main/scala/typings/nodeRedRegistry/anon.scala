@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait Credentials[TCreds, TSets] extends StObject {
+  trait Credentials[TCreds /* <: js.Object */, TSets] extends StObject {
     
     var credentials: js.UndefOr[NodeCredentials[TCreds]] = js.undefined
     
@@ -16,12 +16,12 @@ object anon {
   }
   object Credentials {
     
-    inline def apply[TCreds, TSets](): Credentials[TCreds, TSets] = {
+    inline def apply[TCreds /* <: js.Object */, TSets](): Credentials[TCreds, TSets] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Credentials[TCreds, TSets]]
     }
     
-    extension [Self <: Credentials[?, ?], TCreds, TSets](x: Self & (Credentials[TCreds, TSets])) {
+    extension [Self <: Credentials[?, ?], TCreds /* <: js.Object */, TSets](x: Self & (Credentials[TCreds, TSets])) {
       
       inline def setCredentials(value: NodeCredentials[TCreds]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       

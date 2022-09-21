@@ -18,23 +18,23 @@ trait Diagram
   extends StObject
      with Widget {
   
-  def addConnection(connection: js.Any, undoable: Boolean): Unit = js.native
+  def addConnection(connection: Any, undoable: Boolean): Unit = js.native
   
-  def addShape(obj: js.Any, undoable: Boolean): Shape = js.native
+  def addShape(obj: Any, undoable: Boolean): Shape = js.native
   
   def alignShapes(direction: String): Unit = js.native
   
-  def boundingBox(items: js.Any): Rect = js.native
+  def boundingBox(items: Any): Rect = js.native
   
-  def bringIntoView(obj: js.Any, options: js.Any): Unit = js.native
+  def bringIntoView(obj: Any, options: Any): Unit = js.native
   
   def cancelEdit(): Unit = js.native
   
   def clear(): Unit = js.native
   
-  def connect(source: js.Any, target: js.Any, options: js.Any): Unit = js.native
+  def connect(source: Any, target: Any, options: Any): Unit = js.native
   
-  def connected(source: js.Any, target: js.Any): Unit = js.native
+  def connected(source: Any, target: Any): Unit = js.native
   
   var connections: js.Array[Connection] = js.native
   
@@ -42,26 +42,26 @@ trait Diagram
   
   def copy(): Unit = js.native
   
-  def createConnection(item: js.Any): Unit = js.native
+  def createConnection(item: Any): Unit = js.native
   
-  def createShape(item: js.Any): Unit = js.native
+  def createShape(item: Any): Unit = js.native
   
   def cut(): Unit = js.native
   
   var dataSource: DataSource = js.native
   
-  def documentToModel(point: js.Any): js.Any = js.native
+  def documentToModel(point: Any): Any = js.native
   
-  def documentToView(point: js.Any): js.Any = js.native
+  def documentToView(point: Any): Any = js.native
   
-  def edit(item: js.Any): Unit = js.native
+  def edit(item: Any): Unit = js.native
   
-  def exportImage(options: js.Any): JQueryPromise[js.Any] = js.native
+  def exportImage(options: Any): JQueryPromise[Any] = js.native
   
-  def exportPDF(): JQueryPromise[js.Any] = js.native
-  def exportPDF(options: PDFOptions): JQueryPromise[js.Any] = js.native
+  def exportPDF(): JQueryPromise[Any] = js.native
+  def exportPDF(options: PDFOptions): JQueryPromise[Any] = js.native
   
-  def exportSVG(options: js.Any): JQueryPromise[js.Any] = js.native
+  def exportSVG(options: Any): JQueryPromise[Any] = js.native
   
   def focus(): Unit = js.native
   
@@ -70,46 +70,46 @@ trait Diagram
   
   def getConnectionByModelUid(uid: String): Connection = js.native
   
-  def getShapeById(id: String): js.Any = js.native
+  def getShapeById(id: String): Any = js.native
   
   def getShapeByModelId(id: String): Shape = js.native
   def getShapeByModelId(id: Double): Shape = js.native
   
   def getShapeByModelUid(uid: String): Shape = js.native
   
-  def layerToModel(point: js.Any): js.Any = js.native
+  def layerToModel(point: Any): Any = js.native
   
-  def layout(options: js.Any): Unit = js.native
+  def layout(options: Any): Unit = js.native
   
   def load(json: String): Unit = js.native
   
-  def modelToDocument(point: js.Any): js.Any = js.native
+  def modelToDocument(point: Any): Any = js.native
   
-  def modelToLayer(point: js.Any): js.Any = js.native
+  def modelToLayer(point: Any): Any = js.native
   
-  def modelToView(point: js.Any): js.Any = js.native
+  def modelToView(point: Any): Any = js.native
   
   @JSName("options")
   var options_Diagram: DiagramOptions = js.native
   
-  def pan(pan: js.Any): Unit = js.native
+  def pan(pan: Any): Unit = js.native
   
   def paste(): Unit = js.native
   
   def redo(): Unit = js.native
   
-  def remove(items: js.Any, undoable: Boolean): Unit = js.native
+  def remove(items: Any, undoable: Boolean): Unit = js.native
   
   def save(): Unit = js.native
   
-  def saveAsPdf(): JQueryPromise[js.Any] = js.native
+  def saveAsPdf(): JQueryPromise[Any] = js.native
   
   def saveEdit(): Unit = js.native
   
-  def select(): js.Any = js.native
-  def select(elements: js.Any, options: js.Any): Unit = js.native
-  def select(elements: Connection, options: js.Any): Unit = js.native
-  def select(elements: Shape, options: js.Any): Unit = js.native
+  def select(): Any = js.native
+  def select(elements: Any, options: Any): Unit = js.native
+  def select(elements: Connection, options: Any): Unit = js.native
+  def select(elements: Shape, options: Any): Unit = js.native
   
   def selectAll(): Unit = js.native
   
@@ -121,13 +121,13 @@ trait Diagram
   
   var shapes: js.Array[Shape] = js.native
   
-  def toBack(items: js.Any, undoable: Boolean): Unit = js.native
+  def toBack(items: Any, undoable: Boolean): Unit = js.native
   
-  def toFront(items: js.Any, undoable: Boolean): Unit = js.native
+  def toFront(items: Any, undoable: Boolean): Unit = js.native
   
-  def transformPoint(p: js.Any): Unit = js.native
+  def transformPoint(p: Any): Unit = js.native
   
-  def transformRect(r: js.Any): Unit = js.native
+  def transformRect(r: Any): Unit = js.native
   
   def undo(): Unit = js.native
   

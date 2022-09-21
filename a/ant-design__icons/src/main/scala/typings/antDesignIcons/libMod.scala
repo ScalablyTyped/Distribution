@@ -2,11 +2,13 @@ package typings.antDesignIcons
 
 import typings.antDesignIcons.anon.PickAntdIconPropsmaxrequi
 import typings.antDesignIcons.anon.PickIconComponentPropsmax
+import typings.antDesignIcons.componentsContextMod.IconContextProps
 import typings.antDesignIcons.componentsIconFontMod.CustomIconOptions
 import typings.antDesignIcons.componentsIconFontMod.IconFontProps
 import typings.antDesignIcons.componentsTwoTonePrimaryColorMod.TwoToneColor
+import typings.react.mod.FC
 import typings.react.mod.ForwardRefExoticComponent
-import typings.react.mod.SFC
+import typings.react.mod.Provider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -1609,6 +1611,10 @@ object libMod {
   @js.native
   val HistoryOutlined: ForwardRefExoticComponent[PickAntdIconPropsmaxrequi] = js.native
   
+  @JSImport("@ant-design/icons/lib", "HolderOutlined")
+  @js.native
+  val HolderOutlined: ForwardRefExoticComponent[PickAntdIconPropsmaxrequi] = js.native
+  
   @JSImport("@ant-design/icons/lib", "HomeFilled")
   @js.native
   val HomeFilled: ForwardRefExoticComponent[PickAntdIconPropsmaxrequi] = js.native
@@ -1644,6 +1650,10 @@ object libMod {
   @JSImport("@ant-design/icons/lib", "Html5TwoTone")
   @js.native
   val Html5TwoTone: ForwardRefExoticComponent[PickAntdIconPropsmaxrequi] = js.native
+  
+  @JSImport("@ant-design/icons/lib", "IconProvider")
+  @js.native
+  val IconProvider: Provider[IconContextProps] = js.native
   
   @JSImport("@ant-design/icons/lib", "IdcardFilled")
   @js.native
@@ -3173,8 +3183,8 @@ object libMod {
   @js.native
   val ZoomOutOutlined: ForwardRefExoticComponent[PickAntdIconPropsmaxrequi] = js.native
   
-  inline def createFromIconfontCN(): SFC[IconFontProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromIconfontCN")().asInstanceOf[SFC[IconFontProps]]
-  inline def createFromIconfontCN(options: CustomIconOptions): SFC[IconFontProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromIconfontCN")(options.asInstanceOf[js.Any]).asInstanceOf[SFC[IconFontProps]]
+  inline def createFromIconfontCN[T /* <: String */](): FC[IconFontProps[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromIconfontCN")().asInstanceOf[FC[IconFontProps[T]]]
+  inline def createFromIconfontCN[T /* <: String */](options: CustomIconOptions): FC[IconFontProps[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromIconfontCN")(options.asInstanceOf[js.Any]).asInstanceOf[FC[IconFontProps[T]]]
   
   inline def getTwoToneColor(): TwoToneColor = ^.asInstanceOf[js.Dynamic].applyDynamic("getTwoToneColor")().asInstanceOf[TwoToneColor]
   

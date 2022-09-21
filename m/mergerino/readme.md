@@ -10,10 +10,10 @@ immutable state merge util
 | ------------------ | :-------------: |
 | Full name          | mergerino |
 | Keywords           | immutable, merge, state |
-| # releases         | 11 |
-| # dependents       | 2 |
-| # downloads        | 17306 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1323.0 |
+| # stars            | 64.0 |
 
 ## Links
 - [Homepage](https://github.com/fuzetsu/mergerino#readme)

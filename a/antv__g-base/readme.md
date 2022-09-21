@@ -1,7 +1,7 @@
 
 # Scala.js typings for antv__g-base
 
-Typings are for version 0.5.1
+Typings are for version 0.5.11
 
 ## Library description:
 A common util collection for antv projects
@@ -10,10 +10,10 @@ A common util collection for antv projects
 | ------------------ | :-------------: |
 | Full name          | @antv/g-base |
 | Keywords           | util, antv, g |
-| # releases         | 60 |
-| # dependents       | 17 |
-| # downloads        | 975965 |
-| # stars            | 0 |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 410828.3333333333 |
+| # stars            | 71.0 |
 
 ## Links
 - [Homepage](https://github.com/antvis/util#readme)

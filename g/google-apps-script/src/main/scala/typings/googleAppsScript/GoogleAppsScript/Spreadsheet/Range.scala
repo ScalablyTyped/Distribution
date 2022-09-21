@@ -9,6 +9,7 @@ import typings.googleAppsScript.googleAppsScriptStrings.center
 import typings.googleAppsScript.googleAppsScriptStrings.left
 import typings.googleAppsScript.googleAppsScriptStrings.middle
 import typings.googleAppsScript.googleAppsScriptStrings.normal
+import typings.googleAppsScript.googleAppsScriptStrings.right
 import typings.googleAppsScript.googleAppsScriptStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -199,9 +200,9 @@ trait Range extends StObject {
   
   def getTextStyles(): js.Array[js.Array[TextStyle]] = js.native
   
-  def getValue(): js.Any = js.native
+  def getValue(): Any = js.native
   
-  def getValues(): js.Array[js.Array[js.Any]] = js.native
+  def getValues(): js.Array[js.Array[Any]] = js.native
   
   def getVerticalAlignment(): String = js.native
   
@@ -220,8 +221,8 @@ trait Range extends StObject {
   def insertCells(shiftDimension: Dimension): Range = js.native
   
   def insertCheckboxes(): Range = js.native
-  def insertCheckboxes(checkedValue: js.Any): Range = js.native
-  def insertCheckboxes(checkedValue: js.Any, uncheckedValue: js.Any): Range = js.native
+  def insertCheckboxes(checkedValue: Any): Range = js.native
+  def insertCheckboxes(checkedValue: Any, uncheckedValue: Any): Range = js.native
   
   def isBlank(): Boolean = js.native
   
@@ -292,7 +293,7 @@ trait Range extends StObject {
   def setFontColor(): Range = js.native
   def setFontColor(color: String): Range = js.native
   
-  def setFontColors(colors: js.Array[js.Array[js.Any]]): Range = js.native
+  def setFontColors(colors: js.Array[js.Array[Any]]): Range = js.native
   
   def setFontFamilies(fontFamilies: js.Array[js.Array[String | Null]]): Range = js.native
   
@@ -327,14 +328,9 @@ trait Range extends StObject {
   def setFormulasR1C1(formulas: js.Array[js.Array[String]]): Range = js.native
   
   def setHorizontalAlignment(): Range = js.native
-  @JSName("setHorizontalAlignment")
-  def setHorizontalAlignment_center(alignment: center): Range = js.native
-  @JSName("setHorizontalAlignment")
-  def setHorizontalAlignment_left(alignment: left): Range = js.native
-  @JSName("setHorizontalAlignment")
-  def setHorizontalAlignment_normal(alignment: normal): Range = js.native
+  def setHorizontalAlignment(alignment: left | center | normal | right): Range = js.native
   
-  def setHorizontalAlignments(alignments: js.Array[js.Array[left | center | normal | Null]]): Range = js.native
+  def setHorizontalAlignments(alignments: js.Array[js.Array[left | center | normal | right | Null]]): Range = js.native
   
   def setNote(): Range = js.native
   def setNote(note: String): Range = js.native
@@ -365,17 +361,12 @@ trait Range extends StObject {
   
   def setTextStyles(styles: js.Array[js.Array[TextStyle]]): Range = js.native
   
-  def setValue(value: js.Any): Range = js.native
+  def setValue(value: Any): Range = js.native
   
-  def setValues(values: js.Array[js.Array[js.Any]]): Range = js.native
+  def setValues(values: js.Array[js.Array[Any]]): Range = js.native
   
   def setVerticalAlignment(): Range = js.native
-  @JSName("setVerticalAlignment")
-  def setVerticalAlignment_bottom(alignment: bottom): Range = js.native
-  @JSName("setVerticalAlignment")
-  def setVerticalAlignment_middle(alignment: middle): Range = js.native
-  @JSName("setVerticalAlignment")
-  def setVerticalAlignment_top(alignment: top): Range = js.native
+  def setVerticalAlignment(alignment: top | middle | bottom): Range = js.native
   
   def setVerticalAlignments(alignments: js.Array[js.Array[top | middle | bottom | Null]]): Range = js.native
   
@@ -393,7 +384,7 @@ trait Range extends StObject {
   
   def shiftRowGroupDepth(delta: Integer): Range = js.native
   
-  def sort(sortSpecObj: js.Any): Range = js.native
+  def sort(sortSpecObj: Any): Range = js.native
   
   def splitTextToColumns(): Unit = js.native
   def splitTextToColumns(delimiter: String): Unit = js.native

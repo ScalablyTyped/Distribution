@@ -22,7 +22,7 @@ object gamepadInputDeviceMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-input-gamepad-GamepadInputDevice.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with GamepadInputDevice {
     def this(properties: GamepadInputDeviceProperties) = this()

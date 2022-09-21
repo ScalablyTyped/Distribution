@@ -34,7 +34,7 @@ object XRelativeTextContentInsert {
     acquire: () => Unit,
     insertTextContentAfter: (XTextContent, XTextContent) => Unit,
     insertTextContentBefore: (XTextContent, XTextContent) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XRelativeTextContentInsert = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), insertTextContentAfter = js.Any.fromFunction2(insertTextContentAfter), insertTextContentBefore = js.Any.fromFunction2(insertTextContentBefore), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

@@ -1,6 +1,6 @@
 package typings.node.tlsMod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,7 @@ trait TLSSocketOptions
   /**
     * An optional net.Server instance.
     */
-  var server: js.UndefOr[typings.node.netMod.Server] = js.undefined
+  var server: js.UndefOr[typings.node.nodeNetMod.Server] = js.undefined
   
   /**
     * An optional Buffer instance containing a TLS session.
@@ -50,7 +50,7 @@ object TLSSocketOptions {
     
     inline def setRequestOCSPUndefined: Self = StObject.set(x, "requestOCSP", js.undefined)
     
-    inline def setServer(value: typings.node.netMod.Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    inline def setServer(value: typings.node.nodeNetMod.Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
     inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
     

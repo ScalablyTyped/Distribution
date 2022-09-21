@@ -9,7 +9,7 @@ object sequenceMod {
   
   @JSImport("mysql2/typings/mysql/lib/protocol/sequences/Sequence", JSImport.Namespace)
   @js.native
-  class ^ () extends EventEmitter
+  open class ^ () extends EventEmitter
   
   type Sequence = EventEmitter
 }

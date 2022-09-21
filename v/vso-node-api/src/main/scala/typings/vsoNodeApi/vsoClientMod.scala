@@ -11,32 +11,34 @@ object vsoClientMod {
   
   @JSImport("vso-node-api/VsoClient", "InvalidApiResourceVersionError")
   @js.native
-  class InvalidApiResourceVersionError ()
+  open class InvalidApiResourceVersionError ()
     extends StObject
        with Error {
     def this(message: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("vso-node-api/VsoClient", "VsoClient")
   @js.native
-  class VsoClient protected () extends StObject {
+  open class VsoClient protected () extends StObject {
     def this(baseUrl: String, restClient: RestClient) = this()
     
-    /* private */ var _initializationPromise: js.Any = js.native
+    /* private */ var _initializationPromise: Any = js.native
     
-    /* private */ var _locationsByAreaPromises: js.Any = js.native
+    /* private */ var _locationsByAreaPromises: Any = js.native
     
     /**
       * Sets a promise that is waited on before any requests are issued. Can be used to asynchronously
       * set the request url and auth token manager.
       */
-    def _setInitializationPromise(promise: js.Promise[js.Any]): Unit = js.native
+    def _setInitializationPromise(promise: js.Promise[Any]): Unit = js.native
     
     /* protected */ def autoNegotiateApiVersion(location: ApiResourceLocation, requestedVersion: String): String = js.native
     
@@ -44,7 +46,7 @@ object vsoClientMod {
     
     var baseUrl: String = js.native
     
-    /* private */ def beginGetAreaLocations(area: js.Any): js.Any = js.native
+    /* private */ def beginGetAreaLocations(area: Any): Any = js.native
     
     /**
       * Gets information about an API resource location (route template, supported versions, etc.)
@@ -54,18 +56,18 @@ object vsoClientMod {
       */
     def beginGetLocation(area: String, locationId: String): js.Promise[ApiResourceLocation] = js.native
     
-    /* protected */ def getRequestUrl(routeTemplate: String, area: String, resource: String, routeValues: js.Any): String = js.native
-    /* protected */ def getRequestUrl(routeTemplate: String, area: String, resource: String, routeValues: js.Any, queryParams: js.Any): String = js.native
+    /* protected */ def getRequestUrl(routeTemplate: String, area: String, resource: String, routeValues: Any): String = js.native
+    /* protected */ def getRequestUrl(routeTemplate: String, area: String, resource: String, routeValues: Any, queryParams: Any): String = js.native
     
-    /* private */ def getSerializedObject(`object`: js.Any): js.Any = js.native
+    /* private */ def getSerializedObject(`object`: Any): Any = js.native
     
     /**
       * Gets the route template for a resource based on its location ID and negotiates the api version
       */
-    def getVersioningData(apiVersion: String, area: String, locationId: String, routeValues: js.Any): js.Promise[ClientVersioningData] = js.native
-    def getVersioningData(apiVersion: String, area: String, locationId: String, routeValues: js.Any, queryParams: js.Any): js.Promise[ClientVersioningData] = js.native
+    def getVersioningData(apiVersion: String, area: String, locationId: String, routeValues: Any): js.Promise[ClientVersioningData] = js.native
+    def getVersioningData(apiVersion: String, area: String, locationId: String, routeValues: Any, queryParams: Any): js.Promise[ClientVersioningData] = js.native
     
-    /* private */ def replaceRouteValues(routeTemplate: js.Any, routeValues: js.Any): js.Any = js.native
+    /* private */ def replaceRouteValues(routeTemplate: Any, routeValues: Any): Any = js.native
     
     def resolveUrl(relativeUrl: String): String = js.native
     
@@ -80,13 +82,13 @@ object vsoClientMod {
     
     @JSImport("vso-node-api/VsoClient", "VsoClient.APIS_RELATIVE_PATH")
     @js.native
-    def APIS_RELATIVE_PATH: js.Any = js.native
-    inline def APIS_RELATIVE_PATH_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("APIS_RELATIVE_PATH")(x.asInstanceOf[js.Any])
+    def APIS_RELATIVE_PATH: Any = js.native
+    inline def APIS_RELATIVE_PATH_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("APIS_RELATIVE_PATH")(x.asInstanceOf[js.Any])
     
     @JSImport("vso-node-api/VsoClient", "VsoClient.PREVIEW_INDICATOR")
     @js.native
-    def PREVIEW_INDICATOR: js.Any = js.native
-    inline def PREVIEW_INDICATOR_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PREVIEW_INDICATOR")(x.asInstanceOf[js.Any])
+    def PREVIEW_INDICATOR: Any = js.native
+    inline def PREVIEW_INDICATOR_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PREVIEW_INDICATOR")(x.asInstanceOf[js.Any])
   }
   
   trait ClientVersioningData extends StObject {

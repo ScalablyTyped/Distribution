@@ -8,6 +8,7 @@ trait PageTransitionEventInit
   extends StObject
      with EventInit {
   
+  /* standard dom */
   var persisted: js.UndefOr[scala.Boolean] = js.undefined
 }
 object PageTransitionEventInit {

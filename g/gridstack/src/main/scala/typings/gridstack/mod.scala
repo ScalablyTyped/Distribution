@@ -1,24 +1,31 @@
 package typings.gridstack
 
-import org.scalablytyped.runtime.Instantiable5
-import typings.gridstack.anon.TypeofGridStackDD
-import typings.gridstack.anon.TypeofUtils
-import typings.gridstack.gridstackEngineMod.onChangeCB
+import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.StringDictionary
+import typings.gridstack.anon.Target
+import typings.gridstack.anon.TypeofUtilsInstantiable
+import typings.gridstack.distGridstackEngineMod.GridStackEngineOptions
+import typings.gridstack.distTypesMod.ColumnOptions
+import typings.gridstack.distTypesMod.DDDragInOpt
+import typings.gridstack.distTypesMod.GridItemHTMLElement
+import typings.gridstack.distTypesMod.GridStackElement
+import typings.gridstack.distTypesMod.GridStackEventHandlerCallback
+import typings.gridstack.distTypesMod.GridStackNode
+import typings.gridstack.distTypesMod.GridStackOptions
+import typings.gridstack.distTypesMod.GridStackPosition
+import typings.gridstack.distTypesMod.GridStackWidget
+import typings.gridstack.distTypesMod.numberOrString
+import typings.gridstack.distUtilsMod.HeightData
 import typings.gridstack.gridstackNumbers.`-1`
 import typings.gridstack.gridstackNumbers.`1`
-import typings.gridstack.typesMod.ColumnOptions
-import typings.gridstack.typesMod.GridItemHTMLElement
-import typings.gridstack.typesMod.GridStackNode
-import typings.gridstack.typesMod.GridStackOptions
-import typings.gridstack.typesMod.GridStackWidget
-import typings.gridstack.typesMod.numberOrString
-import typings.gridstack.utilsMod.HeightData
 import typings.std.AddEventListenerOptions
 import typings.std.CSSStyleSheet
-import typings.std.Event
+import typings.std.DragEvent
 import typings.std.EventListenerOptions
 import typings.std.EventListenerOrEventListenerObject
 import typings.std.HTMLElement
+import typings.std.MouseEvent
+import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,9 +36,24 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
+  @JSImport("gridstack", "DDGridStack")
+  @js.native
+  open class DDGridStack ()
+    extends typings.gridstack.ddGridstackMod.DDGridStack
+  /* static members */
+  object DDGridStack {
+    
+    @JSImport("gridstack", "DDGridStack")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /** get the global (but static to this code) DD implementation */
+    inline def get(): typings.gridstack.ddGridstackMod.DDGridStack = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[typings.gridstack.ddGridstackMod.DDGridStack]
+  }
+  
   @JSImport("gridstack", "GridStack")
   @js.native
-  class GridStack protected () extends StObject {
+  open class GridStack protected () extends StObject {
     /**
       * Construct a grid item from the given element and options
       * @param el
@@ -40,25 +62,26 @@ object mod {
     def this(el: GridHTMLElement) = this()
     def this(el: GridHTMLElement, opts: GridStackOptions) = this()
     
-    /** called to resize children nested grids when we/item resizes */
-    /* private */ var _resizeNestedGrids: js.Any = js.native
-    
     /** add or remove the window size event handler */
-    /* private */ var _updateWindowResizeEvent: js.Any = js.native
+    /* protected */ def _updateWindowResizeEvent(): GridStack = js.native
+    /* protected */ def _updateWindowResizeEvent(forceRemove: Boolean): GridStack = js.native
+    
+    /** return our expected width (or parent) for 1 column check */
+    /* protected */ def _widthOrContainer(): Double = js.native
     
     /**
       * add a new widget and returns it.
       *
       * Widget will be always placed even if result height is more than actual grid height.
-      * You need to use willItFit method before calling addWidget for additional check.
+      * You need to use `willItFit()` before calling addWidget for additional check.
       * See also `makeWidget()`.
       *
       * @example
       * let grid = GridStack.init();
-      * grid.addWidget({width: 3, content: 'hello'});
-      * grid.addWidget('<div class="grid-stack-item"><div class="grid-stack-item-content">hello</div></div>', {width: 3});
+      * grid.addWidget({w: 3, content: 'hello'});
+      * grid.addWidget('<div class="grid-stack-item"><div class="grid-stack-item-content">hello</div></div>', {w: 3});
       *
-      * @param el html element, or string definition, or GridStackWidget (which can have content string as well) to add
+      * @param el  GridStackWidget (which can have content string as well), html element, or string definition to add
       * @param options widget position/size options (optional, and ignore if first param is already option) - see GridStackWidget
       */
     def addWidget(): GridItemHTMLElement = js.native
@@ -69,27 +92,32 @@ object mod {
     def addWidget(els: GridStackWidget, options: GridStackWidget): GridItemHTMLElement = js.native
     
     /**
-      * Initializes batch updates. You will see no changes until `commit()` method is called.
+      * use before calling a bunch of `addWidget()` to prevent un-necessary relayouts in between (more efficient)
+      * and get a single event callback. You will see no changes until `batchUpdate(false)` is called.
       */
     def batchUpdate(): GridStack = js.native
+    def batchUpdate(flag: Boolean): GridStack = js.native
     
     /**
       * Update current cell height - see `GridStackOptions.cellHeight` for format.
       * This method rebuilds an internal CSS style sheet.
       * Note: You can expect performance issues if call this method too often.
       *
-      * @param val the cell height
+      * @param val the cell height. If not passed (undefined), cells content will be made square (match width minus margin),
+      * if pass 0 the CSS will be generated by the application instead.
       * @param update (Optional) if false, styles will not be updated
       *
       * @example
+      * grid.cellHeight(100); // same as 100px
+      * grid.cellHeight('70px');
       * grid.cellHeight(grid.cellWidth() * 1.2);
       */
+    def cellHeight(): GridStack = js.native
+    def cellHeight(`val`: Unit, update: Boolean): GridStack = js.native
     def cellHeight(`val`: numberOrString): GridStack = js.native
     def cellHeight(`val`: numberOrString, update: Boolean): GridStack = js.native
     
-    /**
-      * Gets current cell width.
-      */
+    /** Gets current cell width. */
     def cellWidth(): Double = js.native
     
     /**
@@ -104,26 +132,23 @@ object mod {
     def column(column: Double): GridStack = js.native
     def column(column: Double, layout: ColumnOptions): GridStack = js.native
     
-    /**
-      * Finishes batch updates. Updates DOM nodes. You must call it after batchUpdate.
-      */
     def commit(): GridStack = js.native
     
     /** re-layout grid items to reclaim any empty space */
     def compact(): GridStack = js.native
     
-    /** current drag&drop plugin being used */
-    var dd: typings.gridstack.gridstackDdMod.GridStackDD = js.native
-    
     /**
-      * Destroys a grid instance.
-      * @param removeDOM if `false` grid and items elements will not be removed from the DOM (Optional. Default `true`).
+      * Destroys a grid instance. DO NOT CALL any methods or access any vars after this as it will free up members.
+      * @param removeDOM if `false` grid and items HTML elements will not be removed from the DOM (Optional. Default `true`).
       */
     def destroy(): GridStack = js.native
     def destroy(removeDOM: Boolean): GridStack = js.native
     
     /**
-      * Disables widgets moving/resizing. This is a shortcut for:
+      * Temporarily disables widgets moving/resizing.
+      * If you want a more permanent way (which freezes up resources) use `setStatic(true)` instead.
+      * Note: no-op for static grid
+      * This is a shortcut for:
       * @example
       *  grid.enableMove(false);
       *  grid.enableResize(false);
@@ -134,7 +159,9 @@ object mod {
     var el: GridHTMLElement = js.native
     
     /**
-      * Enables widgets moving/resizing. This is a shortcut for:
+      * Re-enables widgets moving/resizing - see disable().
+      * Note: no-op for static grid.
+      * This is a shortcut for:
       * @example
       *  grid.enableMove(true);
       *  grid.enableResize(true);
@@ -142,26 +169,17 @@ object mod {
     def enable(): GridStack = js.native
     
     /**
-      * Enables/disables widget moving.
-      *
-      * @param doEnable
-      * @param includeNewWidgets will force new widgets to be draggable as per
-      * doEnable`s value by changing the disableDrag grid option (default: true).
+      * Enables/disables widget moving. No-op for static grids.
       */
     def enableMove(doEnable: Boolean): GridStack = js.native
-    def enableMove(doEnable: Boolean, includeNewWidgets: Boolean): GridStack = js.native
     
     /**
-      * Enables/disables widget resizing
-      * @param doEnable
-      * @param includeNewWidgets will force new widgets to be draggable as per
-      * doEnable`s value by changing the disableResize grid option (default: true).
+      * Enables/disables widget resizing. No-op for static grids.
       */
     def enableResize(doEnable: Boolean): GridStack = js.native
-    def enableResize(doEnable: Boolean, includeNewWidgets: Boolean): GridStack = js.native
     
     /** engine used to implement non DOM grid functionality */
-    var engine: typings.gridstack.gridstackEngineMod.GridStackEngine = js.native
+    var engine: typings.gridstack.distGridstackEngineMod.GridStackEngine = js.native
     
     /**
       * enable/disable floating widgets (default: `false`) See [example](http://gridstackjs.com/demo/float.html)
@@ -196,7 +214,7 @@ object mod {
       */
     def getFloat(): Boolean = js.native
     
-    /** returns an array of grid HTML elements (no placeholder) - used to iterate through our children */
+    /** returns an array of grid HTML elements (no placeholder) - used to iterate through our children in DOM order */
     def getGridItems(): js.Array[GridItemHTMLElement] = js.native
     
     /** returns current margin number value (undefined if 4 sides don't match) */
@@ -209,10 +227,10 @@ object mod {
       * Checks if specified area is empty.
       * @param x the position x.
       * @param y the position y.
-      * @param width the width of to check
-      * @param height the height of to check
+      * @param w the width of to check
+      * @param h the height of to check
       */
-    def isAreaEmpty(x: Double, y: Double, width: Double, height: Double): Boolean = js.native
+    def isAreaEmpty(x: Double, y: Double, w: Double, h: Double): Boolean = js.native
     
     /**
       * load the widgets from a list. This will call update() on each (matching by id) or add/remove widgets that are not there.
@@ -227,16 +245,9 @@ object mod {
     def load(layout: js.Array[GridStackWidget]): GridStack = js.native
     def load(
       layout: js.Array[GridStackWidget],
-      addAndRemove: js.Function2[/* w */ GridStackWidget, /* add */ Boolean, Unit]
+      addAndRemove: js.Function3[/* g */ this.type, /* w */ GridStackWidget, /* add */ Boolean, GridItemHTMLElement]
     ): GridStack = js.native
     def load(layout: js.Array[GridStackWidget], addAndRemove: Boolean): GridStack = js.native
-    
-    /**
-      * Locks/unlocks widget.
-      * @param el element or selector to modify.
-      * @param val if true widget will be locked.
-      */
-    def locked(els: GridStackElement, `val`: Boolean): GridStack = js.native
     
     /**
       * If you add elements to your grid by hand, you have to tell gridstack afterwards to make them widgets.
@@ -246,7 +257,7 @@ object mod {
       *
       * @example
       * let grid = GridStack.init();
-      * grid.el.appendChild('<div id="gsi-1" data-gs-width="3"></div>');
+      * grid.el.appendChild('<div id="gsi-1" gs-w="3"></div>');
       * grid.makeWidget('#gsi-1');
       */
     def makeWidget(els: GridStackElement): GridItemHTMLElement = js.native
@@ -258,50 +269,12 @@ object mod {
     def margin(value: numberOrString): GridStack = js.native
     
     /**
-      * Set the maxHeight for a widget.
-      * @param els widget or selector to modify.
-      * @param val A numeric value of the number of rows
-      */
-    def maxHeight(els: GridStackElement, `val`: Double): GridStack = js.native
-    
-    /**
-      * Set the maxWidth for a widget.
-      * @param els widget or selector to modify.
-      * @param val A numeric value of the number of columns
-      */
-    def maxWidth(els: GridStackElement, `val`: Double): GridStack = js.native
-    
-    /**
-      * Set the minHeight for a widget.
-      * @param els widget or selector to modify.
-      * @param val A numeric value of the number of rows
-      */
-    def minHeight(els: GridStackElement, `val`: Double): GridStack = js.native
-    
-    /**
-      * Set the minWidth for a widget.
-      * @param els widget or selector to modify.
-      * @param val A numeric value of the number of columns
-      */
-    def minWidth(els: GridStackElement, `val`: Double): GridStack = js.native
-    
-    /**
-      * Enables/Disables moving.
+      * Enables/Disables dragging by the user of specific grid element. If you want all items, and have it affect future items, use enableMove() instead. No-op for static grids.
+      * IF you are looking to prevent an item from moving (due to being pushed around by another during collision) use locked property instead.
       * @param els widget or selector to modify.
       * @param val if true widget will be draggable.
       */
     def movable(els: GridStackElement, `val`: Boolean): GridStack = js.native
-    
-    /**
-      * Changes widget position
-      * @param els  widget or singular selector to modify
-      * @param x new position x. If value is null or undefined it will be ignored.
-      * @param y new position y. If value is null or undefined it will be ignored.
-      */
-    def move(els: GridStackElement): GridStack = js.native
-    def move(els: GridStackElement, x: Double): GridStack = js.native
-    def move(els: GridStackElement, x: Double, y: Double): GridStack = js.native
-    def move(els: GridStackElement, x: Unit, y: Double): GridStack = js.native
     
     /**
       * unsubscribe from the 'on' event below
@@ -325,18 +298,11 @@ object mod {
       * grid.el.addEventListener('added', function(event) { log('added ', event.detail)} );
       *
       */
-    def on(
-      name: GridStackEvent,
-      callback: js.Function2[
-          /* event */ Event, 
-          /* arg2 */ js.UndefOr[GridItemHTMLElement | js.Array[GridStackNode]], 
-          Unit
-        ]
-    ): GridStack = js.native
+    def on(name: GridStackEvent, callback: GridStackEventHandlerCallback): GridStack = js.native
     
     /**
       * called when we are being resized by the window - check if the one Column Mode needs to be turned on/off
-      * and remember the prev columns we used, as well as check for auto cell height (square)
+      * and remember the prev columns we used, or get our count from parent, as well as check for auto cell height (square)
       */
     def onParentResize(): GridStack = js.native
     
@@ -362,26 +328,25 @@ object mod {
     def removeWidget(els: GridStackElement, removeDOM: Unit, triggerEvent: Boolean): GridStack = js.native
     
     /**
-      * Enables/Disables resizing.
+      * Enables/Disables user resizing of specific grid element. If you want all items, and have it affect future items, use enableResize() instead. No-op for static grids.
       * @param els  widget or selector to modify
       * @param val  if true widget will be resizable.
       */
     def resizable(els: GridStackElement, `val`: Boolean): GridStack = js.native
     
     /**
-      * Changes widget size
-      * @param els  widget or singular selector to modify
-      * @param width new dimensions width. If value is null or undefined it will be ignored.
-      * @param height  new dimensions height. If value is null or undefined it will be ignored.
+      / **
+      * saves the current layout returning a list of widgets for serialization which might include any nested grids.
+      * @param saveContent if true (default) the latest html inside .grid-stack-content will be saved to GridStackWidget.content field, else it will
+      * be removed.
+      * @param saveGridOpt if true (default false), save the grid options itself, so you can call the new GridStack.addGrid()
+      * to recreate everything from scratch. GridStackOptions.children would then contain the widget list instead.
+      * @returns list of widgets or full grid option, including .children list of widgets
       */
-    def resize(els: GridStackElement): GridStack = js.native
-    def resize(els: GridStackElement, width: Double): GridStack = js.native
-    def resize(els: GridStackElement, width: Double, height: Double): GridStack = js.native
-    def resize(els: GridStackElement, width: Unit, height: Double): GridStack = js.native
-    
-    /** saves the current layout returning a list of widgets for serialization */
-    def save(): js.Array[GridStackWidget] = js.native
-    def save(saveContent: Boolean): js.Array[GridStackWidget] = js.native
+    def save(): js.Array[GridStackWidget] | GridStackOptions = js.native
+    def save(saveContent: Boolean): js.Array[GridStackWidget] | GridStackOptions = js.native
+    def save(saveContent: Boolean, saveGridOpt: Boolean): js.Array[GridStackWidget] | GridStackOptions = js.native
+    def save(saveContent: Unit, saveGridOpt: Boolean): js.Array[GridStackWidget] | GridStackOptions = js.native
     
     /**
       * Toggle the grid animation state.  Toggles the `grid-stack-animate` class.
@@ -395,50 +360,28 @@ object mod {
       * @param val if true the grid become static.
       */
     def setStatic(`val`: Boolean): GridStack = js.native
+    def setStatic(`val`: Boolean, updateClass: Boolean): GridStack = js.native
     
     /**
-      * Updates widget position/size.
-      * @param els  widget or singular selector to modify
-      * @param x new position x. If value is null or undefined it will be ignored.
-      * @param y new position y. If value is null or undefined it will be ignored.
-      * @param width new dimensions width. If value is null or undefined it will be ignored.
-      * @param height  new dimensions height. If value is null or undefined it will be ignored.
+      * Updates widget position/size and other info. Note: if you need to call this on all nodes, use load() instead which will update what changed.
+      * @param els  widget or selector of objects to modify (note: setting the same x,y for multiple items will be indeterministic and likely unwanted)
+      * @param opt new widget options (x,y,w,h, etc..). Only those set will be updated.
       */
-    def update(els: GridStackElement): GridStack = js.native
-    def update(els: GridStackElement, x: Double): GridStack = js.native
-    def update(els: GridStackElement, x: Double, y: Double): GridStack = js.native
-    def update(els: GridStackElement, x: Double, y: Double, width: Double): GridStack = js.native
-    def update(els: GridStackElement, x: Double, y: Double, width: Double, height: Double): GridStack = js.native
-    def update(els: GridStackElement, x: Double, y: Double, width: Unit, height: Double): GridStack = js.native
-    def update(els: GridStackElement, x: Double, y: Unit, width: Double): GridStack = js.native
-    def update(els: GridStackElement, x: Double, y: Unit, width: Double, height: Double): GridStack = js.native
-    def update(els: GridStackElement, x: Double, y: Unit, width: Unit, height: Double): GridStack = js.native
-    def update(els: GridStackElement, x: Unit, y: Double): GridStack = js.native
-    def update(els: GridStackElement, x: Unit, y: Double, width: Double): GridStack = js.native
-    def update(els: GridStackElement, x: Unit, y: Double, width: Double, height: Double): GridStack = js.native
-    def update(els: GridStackElement, x: Unit, y: Double, width: Unit, height: Double): GridStack = js.native
-    def update(els: GridStackElement, x: Unit, y: Unit, width: Double): GridStack = js.native
-    def update(els: GridStackElement, x: Unit, y: Unit, width: Double, height: Double): GridStack = js.native
-    def update(els: GridStackElement, x: Unit, y: Unit, width: Unit, height: Double): GridStack = js.native
+    def update(els: GridStackElement, opt: GridStackWidget): GridStack = js.native
     
     /**
-      * Returns true if the height of the grid will be less the vertical
+      * Returns true if the height of the grid will be less than the vertical
       * constraint. Always returns true if grid doesn't have height constraint.
-      * @param x new position x. If value is null or undefined it will be ignored.
-      * @param y new position y. If value is null or undefined it will be ignored.
-      * @param width new dimensions width. If value is null or undefined it will be ignored.
-      * @param height new dimensions height. If value is null or undefined it will be ignored.
-      * @param autoPosition if true then x, y parameters will be ignored and widget
-      * will be places on the first available position
+      * @param node contains x,y,w,h,auto-position options
       *
       * @example
-      * if (grid.willItFit(newNode.x, newNode.y, newNode.width, newNode.height, newNode.autoPosition)) {
-      *   grid.addWidget(newNode);
+      * if (grid.willItFit(newWidget)) {
+      *   grid.addWidget(newWidget);
       * } else {
       *   alert('Not enough free space to place the widget');
       * }
       */
-    def willItFit(x: Double, y: Double, width: Double, height: Double, autoPosition: Boolean): Boolean = js.native
+    def willItFit(node: GridStackWidget): Boolean = js.native
   }
   /* static members */
   object GridStack {
@@ -450,35 +393,55 @@ object mod {
     /** scoping so users can call new GridStack.Engine(12) for example */
     @JSImport("gridstack", "GridStack.Engine")
     @js.native
-    def Engine: Instantiable5[
-        /* column */ js.UndefOr[Double], 
-        /* onchange */ js.UndefOr[onChangeCB], 
-        /* float */ js.UndefOr[Boolean], 
-        /* maxRow */ js.UndefOr[Double], 
-        /* nodes */ js.UndefOr[js.Array[GridStackNode]], 
-        typings.gridstack.gridstackEngineMod.GridStackEngine
+    def Engine: Instantiable1[
+        /* opts */ js.UndefOr[GridStackEngineOptions], 
+        typings.gridstack.distGridstackEngineMod.GridStackEngine
       ] = js.native
     inline def Engine_=(
-      x: Instantiable5[
-          /* column */ js.UndefOr[Double], 
-          /* onchange */ js.UndefOr[onChangeCB], 
-          /* float */ js.UndefOr[Boolean], 
-          /* maxRow */ js.UndefOr[Double], 
-          /* nodes */ js.UndefOr[js.Array[GridStackNode]], 
-          typings.gridstack.gridstackEngineMod.GridStackEngine
+      x: Instantiable1[
+          /* opts */ js.UndefOr[GridStackEngineOptions], 
+          typings.gridstack.distGridstackEngineMod.GridStackEngine
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Engine")(x.asInstanceOf[js.Any])
+    
+    @JSImport("gridstack", "GridStack.GDRev")
+    @js.native
+    def GDRev: String = js.native
+    inline def GDRev_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GDRev")(x.asInstanceOf[js.Any])
     
     /** scoping so users can call GridStack.Utils.sort() for example */
     @JSImport("gridstack", "GridStack.Utils")
     @js.native
-    def Utils: TypeofUtils = js.native
-    inline def Utils_=(x: TypeofUtils): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Utils")(x.asInstanceOf[js.Any])
+    def Utils: TypeofUtilsInstantiable = js.native
+    inline def Utils_=(x: TypeofUtilsInstantiable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Utils")(x.asInstanceOf[js.Any])
+    
+    /**
+      * call to create a grid with the given options, including loading any children from JSON structure. This will call GridStack.init(), then
+      * grid.load() on any passed children (recursively). Great alternative to calling init() if you want entire grid to come from
+      * JSON serialized data, including options.
+      * @param parent HTML element parent to the grid
+      * @param opt grids options used to initialize the grid, and list of children
+      */
+    inline def addGrid(parent: HTMLElement): GridStack = ^.asInstanceOf[js.Dynamic].applyDynamic("addGrid")(parent.asInstanceOf[js.Any]).asInstanceOf[GridStack]
+    inline def addGrid(parent: HTMLElement, opt: GridStackOptions): GridStack = (^.asInstanceOf[js.Dynamic].applyDynamic("addGrid")(parent.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[GridStack]
+    
+    @JSImport("gridstack", "GridStack.engineClass")
+    @js.native
+    def engineClass: Instantiable1[
+        /* opts */ js.UndefOr[GridStackEngineOptions], 
+        typings.gridstack.distGridstackEngineMod.GridStackEngine
+      ] = js.native
+    inline def engineClass_=(
+      x: Instantiable1[
+          /* opts */ js.UndefOr[GridStackEngineOptions], 
+          typings.gridstack.distGridstackEngineMod.GridStackEngine
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("engineClass")(x.asInstanceOf[js.Any])
     
     /**
       * initializing the HTML element, or selector string, into a grid will return the grid. Calling it again will
       * simply return the existing instance (ignore any passed options). There is also an initAll() version that support
-      * multiple grids initialization at once.
+      * multiple grids initialization at once. Or you can use addGrid() to create the entire grid from JSON.
       * @param options grid options (optional)
       * @param elOrString element or CSS selector (first one used) to convert to a grid (default to '.grid-stack' class selector)
       *
@@ -506,87 +469,42 @@ object mod {
     inline def initAll(options: Unit, selector: String): js.Array[GridStack] = (^.asInstanceOf[js.Dynamic].applyDynamic("initAll")(options.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[js.Array[GridStack]]
     inline def initAll(options: GridStackOptions): js.Array[GridStack] = ^.asInstanceOf[js.Dynamic].applyDynamic("initAll")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[GridStack]]
     inline def initAll(options: GridStackOptions, selector: String): js.Array[GridStack] = (^.asInstanceOf[js.Dynamic].applyDynamic("initAll")(options.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[js.Array[GridStack]]
-  }
-  
-  @JSImport("gridstack", "GridStackDD")
-  @js.native
-  class GridStackDD protected ()
-    extends typings.gridstack.gridstackDdMod.GridStackDD {
-    def this(grid: GridStack) = this()
-  }
-  /* static members */
-  object GridStackDD {
     
-    @JSImport("gridstack", "GridStackDD")
-    @js.native
-    val ^ : js.Any = js.native
+    /** call this method to register your engine instead of the default one.
+      * See instead `GridStackOptions.engineClass` if you only need to
+      * replace just one instance.
+      */
+    inline def registerEngine(
+      engineClass: Instantiable1[
+          /* opts */ js.UndefOr[GridStackEngineOptions], 
+          typings.gridstack.distGridstackEngineMod.GridStackEngine
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerEngine")(engineClass.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    /** get the current registered plugin to use */
-    inline def get(): TypeofGridStackDD = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[TypeofGridStackDD]
-    
-    /** call this method to register your plugin instead of the default no-op one */
-    inline def registerPlugin(pluginClass: TypeofGridStackDD): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerPlugin")(pluginClass.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    
-    @JSImport("gridstack", "GridStackDD.registeredPlugins")
-    @js.native
-    def registeredPlugins: TypeofGridStackDD = js.native
-    inline def registeredPlugins_=(x: TypeofGridStackDD): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("registeredPlugins")(x.asInstanceOf[js.Any])
-  }
-  
-  @JSImport("gridstack", "GridStackDDJQueryUI")
-  @js.native
-  class GridStackDDJQueryUI protected ()
-    extends typings.gridstack.gridstackDdJqueryuiMod.GridStackDDJQueryUI {
-    def this(grid: GridStack) = this()
+    /**
+      * call to setup dragging in from the outside (say toolbar), by specifying the class selection and options.
+      * Called during GridStack.init() as options, but can also be called directly (last param are cached) in case the toolbar
+      * is dynamically create and needs to change later.
+      * @param dragIn string selector (ex: '.sidebar .grid-stack-item')
+      * @param dragInOptions options - see DDDragInOpt. (default: {handle: '.grid-stack-item-content', appendTo: 'body'}
+      **/
+    inline def setupDragIn(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setupDragIn")().asInstanceOf[Unit]
+    inline def setupDragIn(dragIn: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setupDragIn")(dragIn.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setupDragIn(dragIn: String, dragInOptions: DDDragInOpt): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setupDragIn")(dragIn.asInstanceOf[js.Any], dragInOptions.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setupDragIn(dragIn: Unit, dragInOptions: DDDragInOpt): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setupDragIn")(dragIn.asInstanceOf[js.Any], dragInOptions.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSImport("gridstack", "GridStackEngine")
   @js.native
-  class GridStackEngine ()
-    extends typings.gridstack.gridstackEngineMod.GridStackEngine {
-    def this(column: Double) = this()
-    def this(column: Double, onchange: onChangeCB) = this()
-    def this(column: Unit, onchange: onChangeCB) = this()
-    def this(column: Double, onchange: Unit, float: Boolean) = this()
-    def this(column: Double, onchange: onChangeCB, float: Boolean) = this()
-    def this(column: Unit, onchange: Unit, float: Boolean) = this()
-    def this(column: Unit, onchange: onChangeCB, float: Boolean) = this()
-    def this(column: Double, onchange: Unit, float: Boolean, maxRow: Double) = this()
-    def this(column: Double, onchange: Unit, float: Unit, maxRow: Double) = this()
-    def this(column: Double, onchange: onChangeCB, float: Boolean, maxRow: Double) = this()
-    def this(column: Double, onchange: onChangeCB, float: Unit, maxRow: Double) = this()
-    def this(column: Unit, onchange: Unit, float: Boolean, maxRow: Double) = this()
-    def this(column: Unit, onchange: Unit, float: Unit, maxRow: Double) = this()
-    def this(column: Unit, onchange: onChangeCB, float: Boolean, maxRow: Double) = this()
-    def this(column: Unit, onchange: onChangeCB, float: Unit, maxRow: Double) = this()
-    def this(column: Double, onchange: Unit, float: Boolean, maxRow: Double, nodes: js.Array[GridStackNode]) = this()
-    def this(column: Double, onchange: Unit, float: Boolean, maxRow: Unit, nodes: js.Array[GridStackNode]) = this()
-    def this(column: Double, onchange: Unit, float: Unit, maxRow: Double, nodes: js.Array[GridStackNode]) = this()
-    def this(column: Double, onchange: Unit, float: Unit, maxRow: Unit, nodes: js.Array[GridStackNode]) = this()
-    def this(
-      column: Double,
-      onchange: onChangeCB,
-      float: Boolean,
-      maxRow: Double,
-      nodes: js.Array[GridStackNode]
-    ) = this()
-    def this(column: Double, onchange: onChangeCB, float: Boolean, maxRow: Unit, nodes: js.Array[GridStackNode]) = this()
-    def this(column: Double, onchange: onChangeCB, float: Unit, maxRow: Double, nodes: js.Array[GridStackNode]) = this()
-    def this(column: Double, onchange: onChangeCB, float: Unit, maxRow: Unit, nodes: js.Array[GridStackNode]) = this()
-    def this(column: Unit, onchange: Unit, float: Boolean, maxRow: Double, nodes: js.Array[GridStackNode]) = this()
-    def this(column: Unit, onchange: Unit, float: Boolean, maxRow: Unit, nodes: js.Array[GridStackNode]) = this()
-    def this(column: Unit, onchange: Unit, float: Unit, maxRow: Double, nodes: js.Array[GridStackNode]) = this()
-    def this(column: Unit, onchange: Unit, float: Unit, maxRow: Unit, nodes: js.Array[GridStackNode]) = this()
-    def this(column: Unit, onchange: onChangeCB, float: Boolean, maxRow: Double, nodes: js.Array[GridStackNode]) = this()
-    def this(column: Unit, onchange: onChangeCB, float: Boolean, maxRow: Unit, nodes: js.Array[GridStackNode]) = this()
-    def this(column: Unit, onchange: onChangeCB, float: Unit, maxRow: Double, nodes: js.Array[GridStackNode]) = this()
-    def this(column: Unit, onchange: onChangeCB, float: Unit, maxRow: Unit, nodes: js.Array[GridStackNode]) = this()
+  open class GridStackEngine ()
+    extends typings.gridstack.distGridstackEngineMod.GridStackEngine {
+    def this(opts: GridStackEngineOptions) = this()
   }
   
   @JSImport("gridstack", "Utils")
   @js.native
-  class Utils ()
-    extends typings.gridstack.utilsMod.Utils
+  open class Utils ()
+    extends typings.gridstack.distUtilsMod.Utils
   /* static members */
   object Utils {
     
@@ -597,15 +515,34 @@ object mod {
     /** inserts a CSS rule */
     inline def addCSSRule(sheet: CSSStyleSheet, selector: String, rules: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCSSRule")(sheet.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], rules.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    /** makes a shallow copy of the passed json struct */
-    inline def clone(target: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(target.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+    inline def addElStyles(el: HTMLElement, styles: StringDictionary[String | js.Array[String]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addElStyles")(el.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    /** return the closest parent matching the given class */
+    inline def appendTo(el: HTMLElement, parent: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendTo")(el.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def appendTo(el: HTMLElement, parent: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendTo")(el.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def appendTo(el: HTMLElement, parent: Node): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendTo")(el.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    /** single level clone, returning a new object with same top fields. This will share sub objects and arrays */
+    inline def clone[T](obj: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(obj.asInstanceOf[js.Any]).asInstanceOf[T]
+    
+    /**
+      * Recursive clone version that returns a full copy, checking for nested objects and arrays ONLY.
+      * Note: this will use as-is any key starting with double __ (and not copy inside) some lib have circular dependencies.
+      */
+    inline def cloneDeep[T](obj: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneDeep")(obj.asInstanceOf[js.Any]).asInstanceOf[T]
+    
+    /** deep clone the given HTML node, removing teh unique id field */
+    inline def cloneNode(el: HTMLElement): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneNode")(el.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+    
+    /** return the closest parent (or itself) matching the given class */
     inline def closestByClass(el: HTMLElement, name: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("closestByClass")(el.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+    
+    /** copies over b size & position (GridStackPosition), and possibly min/max as well */
+    inline def copyPos(a: GridStackWidget, b: GridStackWidget): GridStackWidget = (^.asInstanceOf[js.Dynamic].applyDynamic("copyPos")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[GridStackWidget]
+    inline def copyPos(a: GridStackWidget, b: GridStackWidget, doMinMax: Boolean): GridStackWidget = (^.asInstanceOf[js.Dynamic].applyDynamic("copyPos")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], doMinMax.asInstanceOf[js.Any])).asInstanceOf[GridStackWidget]
     
     /**
       * creates a style sheet with style id under given parent
-      * @param id will set the 'data-gs-style-id' attribute to that id
+      * @param id will set the 'gs-style-id' attribute to that id
       * @param parent to insert the stylesheet as first child,
       * if none supplied it will be appended to the document head instead.
       */
@@ -613,17 +550,38 @@ object mod {
     inline def createStylesheet(id: String, parent: HTMLElement): CSSStyleSheet = (^.asInstanceOf[js.Dynamic].applyDynamic("createStylesheet")(id.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[CSSStyleSheet]
     
     /** copies unset fields in target to use the given default sources values */
-    inline def defaults(target: js.Any, sources: js.Any*): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(target.asInstanceOf[js.Any], sources.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    inline def defaults(target: Any, sources: Any*): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(List(target.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Object]
+    
+    /** convert a potential selector into actual single element */
+    inline def getElement(els: GridStackElement): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("getElement")(els.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+    
+    /** convert a potential selector into actual list of html elements */
+    inline def getElements(els: GridStackElement): js.Array[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("getElements")(els.asInstanceOf[js.Any]).asInstanceOf[js.Array[HTMLElement]]
+    
+    inline def initEvent[T](e: DragEvent, info: Target): T = (^.asInstanceOf[js.Dynamic].applyDynamic("initEvent")(e.asInstanceOf[js.Any], info.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def initEvent[T](e: MouseEvent, info: Target): T = (^.asInstanceOf[js.Dynamic].applyDynamic("initEvent")(e.asInstanceOf[js.Any], info.asInstanceOf[js.Any])).asInstanceOf[T]
     
     /** returns true if a and b overlap */
-    inline def isIntercepted(a: GridStackWidget, b: GridStackWidget): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isIntercepted")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def isIntercepted(a: GridStackPosition, b: GridStackPosition): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isIntercepted")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    /** returns true if a and b touch edges or corners */
+    inline def isTouching(a: GridStackPosition, b: GridStackPosition): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTouching")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     inline def parseHeight(`val`: numberOrString): HeightData = ^.asInstanceOf[js.Dynamic].applyDynamic("parseHeight")(`val`.asInstanceOf[js.Any]).asInstanceOf[HeightData]
+    
+    /** removes field from the first object if same as the second objects (like diffing) and internal '_' for saving */
+    inline def removeInternalAndSame(a: Any, b: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeInternalAndSame")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def removePositioningStyles(el: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removePositioningStyles")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** removed the given stylesheet id */
     inline def removeStylesheet(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeStylesheet")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    /** given 2 objects return true if they have the same values. Checks for Object {} having same fields and values (just 1 level down) */
+    inline def same(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("same")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    /** true if a and b has same size & position */
+    inline def samePos(a: GridStackPosition, b: GridStackPosition): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("samePos")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Sorts array of nodes
@@ -632,20 +590,20 @@ object mod {
       * @param width width of the grid. If undefined the width will be calculated automatically (optional).
       **/
     inline def sort(nodes: js.Array[GridStackNode]): js.Array[GridStackNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("sort")(nodes.asInstanceOf[js.Any]).asInstanceOf[js.Array[GridStackNode]]
+    inline def sort(nodes: js.Array[GridStackNode], dir: `-1` | `1`): js.Array[GridStackNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("sort")(nodes.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[js.Array[GridStackNode]]
+    inline def sort(nodes: js.Array[GridStackNode], dir: `-1` | `1`, column: Double): js.Array[GridStackNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("sort")(nodes.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[js.Array[GridStackNode]]
     inline def sort(nodes: js.Array[GridStackNode], dir: Unit, column: Double): js.Array[GridStackNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("sort")(nodes.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[js.Array[GridStackNode]]
     
-    inline def sort_1(nodes: js.Array[GridStackNode], dir: `-1`): js.Array[GridStackNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("sort")(nodes.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[js.Array[GridStackNode]]
-    inline def sort_1(nodes: js.Array[GridStackNode], dir: `-1`, column: Double): js.Array[GridStackNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("sort")(nodes.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[js.Array[GridStackNode]]
-    inline def sort_1(nodes: js.Array[GridStackNode], dir: `1`): js.Array[GridStackNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("sort")(nodes.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[js.Array[GridStackNode]]
-    inline def sort_1(nodes: js.Array[GridStackNode], dir: `1`, column: Double): js.Array[GridStackNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("sort")(nodes.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[js.Array[GridStackNode]]
+    /** delay calling the given function for given delay, preventing new calls from happening while waiting */
+    inline def throttle(func: js.Function0[Unit], delay: Double): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(func.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
     
-    inline def toBool(v: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("toBool")(v.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def toBool(v: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("toBool")(v.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    inline def toNumber(): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("toNumber")().asInstanceOf[Double | Null]
-    inline def toNumber(value: String): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("toNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Double | Null]
+    inline def toNumber(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toNumber")().asInstanceOf[Double]
+    inline def toNumber(value: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   }
   
-  inline def obsolete(self: js.Any, f: js.Any, oldName: String, newName: String, rev: String): js.Function1[/* repeated */ js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("obsolete")(self.asInstanceOf[js.Any], f.asInstanceOf[js.Any], oldName.asInstanceOf[js.Any], newName.asInstanceOf[js.Any], rev.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, js.Any]]
+  inline def obsolete(self: Any, f: Any, oldName: String, newName: String, rev: String): js.Function1[/* repeated */ Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("obsolete")(self.asInstanceOf[js.Any], f.asInstanceOf[js.Any], oldName.asInstanceOf[js.Any], newName.asInstanceOf[js.Any], rev.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ Any, Any]]
   
   inline def obsoleteAttr(el: HTMLElement, oldName: String, newName: String, rev: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("obsoleteAttr")(el.asInstanceOf[js.Any], oldName.asInstanceOf[js.Any], newName.asInstanceOf[js.Any], rev.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -680,11 +638,11 @@ object mod {
        with HTMLElement {
     
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
     
     var gridstack: js.UndefOr[GridStack] = js.native
     
@@ -696,43 +654,22 @@ object mod {
     override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
   }
   
-  type GridStackElement = String | HTMLElement | GridItemHTMLElement
-  
   /* Rewritten from type alias, can be one of: 
     - typings.gridstack.gridstackStrings.added
     - typings.gridstack.gridstackStrings.change
     - typings.gridstack.gridstackStrings.disable
+    - typings.gridstack.gridstackStrings.drag
     - typings.gridstack.gridstackStrings.dragstart
     - typings.gridstack.gridstackStrings.dragstop
     - typings.gridstack.gridstackStrings.dropped
     - typings.gridstack.gridstackStrings.enable
     - typings.gridstack.gridstackStrings.removed
+    - typings.gridstack.gridstackStrings.resize
     - typings.gridstack.gridstackStrings.resizestart
     - typings.gridstack.gridstackStrings.resizestop
+    - java.lang.String
   */
-  trait GridStackEvent extends StObject
-  object GridStackEvent {
-    
-    inline def added: typings.gridstack.gridstackStrings.added = "added".asInstanceOf[typings.gridstack.gridstackStrings.added]
-    
-    inline def change: typings.gridstack.gridstackStrings.change = "change".asInstanceOf[typings.gridstack.gridstackStrings.change]
-    
-    inline def disable: typings.gridstack.gridstackStrings.disable = "disable".asInstanceOf[typings.gridstack.gridstackStrings.disable]
-    
-    inline def dragstart: typings.gridstack.gridstackStrings.dragstart = "dragstart".asInstanceOf[typings.gridstack.gridstackStrings.dragstart]
-    
-    inline def dragstop: typings.gridstack.gridstackStrings.dragstop = "dragstop".asInstanceOf[typings.gridstack.gridstackStrings.dragstop]
-    
-    inline def dropped: typings.gridstack.gridstackStrings.dropped = "dropped".asInstanceOf[typings.gridstack.gridstackStrings.dropped]
-    
-    inline def enable: typings.gridstack.gridstackStrings.enable = "enable".asInstanceOf[typings.gridstack.gridstackStrings.enable]
-    
-    inline def removed: typings.gridstack.gridstackStrings.removed = "removed".asInstanceOf[typings.gridstack.gridstackStrings.removed]
-    
-    inline def resizestart: typings.gridstack.gridstackStrings.resizestart = "resizestart".asInstanceOf[typings.gridstack.gridstackStrings.resizestart]
-    
-    inline def resizestop: typings.gridstack.gridstackStrings.resizestop = "resizestop".asInstanceOf[typings.gridstack.gridstackStrings.resizestop]
-  }
+  type GridStackEvent = _GridStackEvent | String
   
   trait MousePosition extends StObject {
     
@@ -754,4 +691,6 @@ object mod {
       inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     }
   }
+  
+  trait _GridStackEvent extends StObject
 }

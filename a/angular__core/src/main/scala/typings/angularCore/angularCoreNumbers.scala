@@ -2,27 +2,19 @@ package typings.angularCore
 
 import typings.angularCore.mod.IcuType
 import typings.angularCore.mod.LViewFlags
-import typings.angularCore.mod.OutputType
 import typings.angularCore.mod.PreOrderHookFlags
-import typings.angularCore.mod.RootContextFlags
+import typings.angularCore.mod.QueryFlags
+import typings.angularCore.mod.RuntimeErrorCode
 import typings.angularCore.mod.SelectorFlags
 import typings.angularCore.mod.TNodeFlags
 import typings.angularCore.mod.TNodeProviderIndexes
 import typings.angularCore.mod.TNodeType
 import typings.angularCore.mod.TViewType
-import typings.angularCore.mod.ViewState
-import typings.angularCore.mod.ɵArgumentType
 import typings.angularCore.mod.ɵAttributeMarker
-import typings.angularCore.mod.ɵBindingFlags
 import typings.angularCore.mod.ɵCurrencyIndex
-import typings.angularCore.mod.ɵDepFlags
 import typings.angularCore.mod.ɵExtraLocaleDataIndex
-import typings.angularCore.mod.ɵNodeFlags
-import typings.angularCore.mod.ɵPlayState
-import typings.angularCore.mod.ɵQueryBindingType
-import typings.angularCore.mod.ɵQueryValueType
+import typings.angularCore.mod.ɵProfilerEvent
 import typings.angularCore.mod.ɵRenderFlags
-import typings.angularCore.mod.ɵViewFlags
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,23 +28,57 @@ object angularCoreNumbers {
   inline def `-1`: `-1` = -1.asInstanceOf[`-1`]
   
   @js.native
+  sealed trait `-100`
+    extends StObject
+       with RuntimeErrorCode
+  inline def `-100`: `-100` = -100.asInstanceOf[`-100`]
+  
+  @js.native
+  sealed trait `-200`
+    extends StObject
+       with RuntimeErrorCode
+  inline def `-200`: `-200` = -200.asInstanceOf[`-200`]
+  
+  @js.native
+  sealed trait `-201`
+    extends StObject
+       with RuntimeErrorCode
+  inline def `-201`: `-201` = -201.asInstanceOf[`-201`]
+  
+  @js.native
+  sealed trait `-203`
+    extends StObject
+       with RuntimeErrorCode
+  inline def `-203`: `-203` = -203.asInstanceOf[`-203`]
+  
+  @js.native
+  sealed trait `-300`
+    extends StObject
+       with RuntimeErrorCode
+  inline def `-300`: `-300` = -300.asInstanceOf[`-300`]
+  
+  @js.native
+  sealed trait `-301`
+    extends StObject
+       with RuntimeErrorCode
+  inline def `-301`: `-301` = -301.asInstanceOf[`-301`]
+  
+  @js.native
+  sealed trait `-302`
+    extends StObject
+       with RuntimeErrorCode
+  inline def `-302`: `-302` = -302.asInstanceOf[`-302`]
+  
+  @js.native
   sealed trait `0`
     extends StObject
        with IcuType
-       with OutputType
-       with RootContextFlags
+       with QueryFlags
        with TViewType
-       with ViewState
-       with ɵArgumentType
        with ɵAttributeMarker
        with ɵCurrencyIndex
-       with ɵDepFlags
        with ɵExtraLocaleDataIndex
-       with ɵNodeFlags
-       with ɵPlayState
-       with ɵQueryBindingType
-       with ɵQueryValueType
-       with ɵViewFlags
+       with ɵProfilerEvent
   inline def `0`: `0` = 0.asInstanceOf[`0`]
   
   @js.native
@@ -60,38 +86,28 @@ object angularCoreNumbers {
     extends StObject
        with IcuType
        with LViewFlags
-       with OutputType
-       with RootContextFlags
+       with QueryFlags
        with SelectorFlags
        with TNodeFlags
        with TNodeType
        with TViewType
-       with ViewState
-       with ɵArgumentType
        with ɵAttributeMarker
-       with ɵBindingFlags
        with ɵCurrencyIndex
-       with ɵDepFlags
        with ɵExtraLocaleDataIndex
-       with ɵNodeFlags
-       with ɵPlayState
-       with ɵQueryBindingType
-       with ɵQueryValueType
+       with ɵProfilerEvent
        with ɵRenderFlags
   inline def `1`: `1` = 1.asInstanceOf[`1`]
   
   @js.native
-  sealed trait `100`
+  sealed trait `101`
     extends StObject
-       with ɵPlayState
-  inline def `100`: `100` = 100.asInstanceOf[`100`]
+       with RuntimeErrorCode
+  inline def `101`: `101` = 101.asInstanceOf[`101`]
   
   @js.native
   sealed trait `1024`
     extends StObject
        with LViewFlags
-       with ViewState
-       with ɵNodeFlags
   inline def `1024`: `1024` = 1024.asInstanceOf[`1024`]
   
   @js.native
@@ -104,14 +120,7 @@ object angularCoreNumbers {
   sealed trait `1048576`
     extends StObject
        with TNodeProviderIndexes
-       with ɵNodeFlags
   inline def `1048576`: `1048576` = 1048576.asInstanceOf[`1048576`]
-  
-  @js.native
-  sealed trait `1073741824`
-    extends StObject
-       with ɵNodeFlags
-  inline def `1073741824`: `1073741824` = 1073741824.asInstanceOf[`1073741824`]
   
   @js.native
   sealed trait `11`
@@ -123,7 +132,6 @@ object angularCoreNumbers {
   sealed trait `12`
     extends StObject
        with TNodeType
-       with ViewState
   inline def `12`: `12` = 12.asInstanceOf[`12`]
   
   @js.native
@@ -131,33 +139,7 @@ object angularCoreNumbers {
     extends StObject
        with LViewFlags
        with TNodeFlags
-       with ViewState
-       with ɵNodeFlags
   inline def `128`: `128` = 128.asInstanceOf[`128`]
-  
-  @js.native
-  sealed trait `13`
-    extends StObject
-       with ViewState
-  inline def `13`: `13` = 13.asInstanceOf[`13`]
-  
-  @js.native
-  sealed trait `131072`
-    extends StObject
-       with ɵNodeFlags
-  inline def `131072`: `131072` = 131072.asInstanceOf[`131072`]
-  
-  @js.native
-  sealed trait `134217728`
-    extends StObject
-       with ɵNodeFlags
-  inline def `134217728`: `134217728` = 134217728.asInstanceOf[`134217728`]
-  
-  @js.native
-  sealed trait `15`
-    extends StObject
-       with ɵBindingFlags
-  inline def `15`: `15` = 15.asInstanceOf[`15`]
   
   @js.native
   sealed trait `16`
@@ -166,48 +148,21 @@ object angularCoreNumbers {
        with PreOrderHookFlags
        with TNodeFlags
        with TNodeType
-       with ViewState
-       with ɵBindingFlags
-       with ɵNodeFlags
   inline def `16`: `16` = 16.asInstanceOf[`16`]
-  
-  @js.native
-  sealed trait `16384`
-    extends StObject
-       with ɵNodeFlags
-  inline def `16384`: `16384` = 16384.asInstanceOf[`16384`]
-  
-  @js.native
-  sealed trait `16777216`
-    extends StObject
-       with ɵNodeFlags
-  inline def `16777216`: `16777216` = 16777216.asInstanceOf[`16777216`]
-  
-  @js.native
-  sealed trait `1792`
-    extends StObject
-       with ViewState
-  inline def `1792`: `1792` = 1792.asInstanceOf[`1792`]
   
   @js.native
   sealed trait `2`
     extends StObject
-       with RootContextFlags
+       with QueryFlags
        with SelectorFlags
        with TNodeFlags
        with TNodeType
        with TViewType
-       with ViewState
        with ɵAttributeMarker
-       with ɵBindingFlags
        with ɵCurrencyIndex
-       with ɵDepFlags
        with ɵExtraLocaleDataIndex
-       with ɵNodeFlags
-       with ɵPlayState
-       with ɵQueryValueType
+       with ɵProfilerEvent
        with ɵRenderFlags
-       with ɵViewFlags
   inline def `2`: `2` = 2.asInstanceOf[`2`]
   
   @js.native
@@ -217,28 +172,16 @@ object angularCoreNumbers {
   inline def `20`: `20` = 20.asInstanceOf[`20`]
   
   @js.native
-  sealed trait `200`
+  sealed trait `202`
     extends StObject
-       with ɵPlayState
-  inline def `200`: `200` = 200.asInstanceOf[`200`]
+       with RuntimeErrorCode
+  inline def `202`: `202` = 202.asInstanceOf[`202`]
   
   @js.native
-  sealed trait `201326592`
+  sealed trait `204`
     extends StObject
-       with ɵNodeFlags
-  inline def `201326592`: `201326592` = 201326592.asInstanceOf[`201326592`]
-  
-  @js.native
-  sealed trait `201347067`
-    extends StObject
-       with ɵNodeFlags
-  inline def `201347067`: `201347067` = 201347067.asInstanceOf[`201347067`]
-  
-  @js.native
-  sealed trait `20224`
-    extends StObject
-       with ɵNodeFlags
-  inline def `20224`: `20224` = 20224.asInstanceOf[`20224`]
+       with RuntimeErrorCode
+  inline def `204`: `204` = 204.asInstanceOf[`204`]
   
   @js.native
   sealed trait `2047`
@@ -250,40 +193,37 @@ object angularCoreNumbers {
   sealed trait `2048`
     extends StObject
        with LViewFlags
-       with ɵNodeFlags
   inline def `2048`: `2048` = 2048.asInstanceOf[`2048`]
   
   @js.native
-  sealed trait `2097152`
+  sealed trait `205`
     extends StObject
-       with ɵNodeFlags
-  inline def `2097152`: `2097152` = 2097152.asInstanceOf[`2097152`]
+       with RuntimeErrorCode
+  inline def `205`: `205` = 205.asInstanceOf[`205`]
   
   @js.native
-  sealed trait `224`
+  sealed trait `207`
     extends StObject
-       with ɵNodeFlags
-  inline def `224`: `224` = 224.asInstanceOf[`224`]
+       with RuntimeErrorCode
+  inline def `207`: `207` = 207.asInstanceOf[`207`]
+  
+  @js.native
+  sealed trait `208`
+    extends StObject
+       with RuntimeErrorCode
+  inline def `208`: `208` = 208.asInstanceOf[`208`]
+  
+  @js.native
+  sealed trait `209`
+    extends StObject
+       with RuntimeErrorCode
+  inline def `209`: `209` = 209.asInstanceOf[`209`]
   
   @js.native
   sealed trait `256`
     extends StObject
        with LViewFlags
-       with ViewState
-       with ɵNodeFlags
   inline def `256`: `256` = 256.asInstanceOf[`256`]
-  
-  @js.native
-  sealed trait `262144`
-    extends StObject
-       with ɵNodeFlags
-  inline def `262144`: `262144` = 262144.asInstanceOf[`262144`]
-  
-  @js.native
-  sealed trait `268435456`
-    extends StObject
-       with ɵNodeFlags
-  inline def `268435456`: `268435456` = 268435456.asInstanceOf[`268435456`]
   
   @js.native
   sealed trait `3`
@@ -291,9 +231,32 @@ object angularCoreNumbers {
        with LViewFlags
        with TNodeType
        with ɵAttributeMarker
-       with ɵNodeFlags
-       with ɵQueryValueType
+       with ɵProfilerEvent
   inline def `3`: `3` = 3.asInstanceOf[`3`]
+  
+  @js.native
+  sealed trait `303`
+    extends StObject
+       with RuntimeErrorCode
+  inline def `303`: `303` = 303.asInstanceOf[`303`]
+  
+  @js.native
+  sealed trait `304`
+    extends StObject
+       with RuntimeErrorCode
+  inline def `304`: `304` = 304.asInstanceOf[`304`]
+  
+  @js.native
+  sealed trait `305`
+    extends StObject
+       with RuntimeErrorCode
+  inline def `305`: `305` = 305.asInstanceOf[`305`]
+  
+  @js.native
+  sealed trait `306`
+    extends StObject
+       with RuntimeErrorCode
+  inline def `306`: `306` = 306.asInstanceOf[`306`]
   
   @js.native
   sealed trait `32`
@@ -301,92 +264,86 @@ object angularCoreNumbers {
        with LViewFlags
        with TNodeFlags
        with TNodeType
-       with ViewState
-       with ɵBindingFlags
-       with ɵNodeFlags
   inline def `32`: `32` = 32.asInstanceOf[`32`]
-  
-  @js.native
-  sealed trait `32768`
-    extends StObject
-       with ɵNodeFlags
-  inline def `32768`: `32768` = 32768.asInstanceOf[`32768`]
-  
-  @js.native
-  sealed trait `33554432`
-    extends StObject
-       with ɵNodeFlags
-  inline def `33554432`: `33554432` = 33554432.asInstanceOf[`33554432`]
-  
-  @js.native
-  sealed trait `3840`
-    extends StObject
-       with ɵNodeFlags
-  inline def `3840`: `3840` = 3840.asInstanceOf[`3840`]
   
   @js.native
   sealed trait `4`
     extends StObject
        with LViewFlags
+       with QueryFlags
        with SelectorFlags
        with TNodeFlags
        with TNodeType
-       with ViewState
        with ɵAttributeMarker
-       with ɵBindingFlags
-       with ɵDepFlags
-       with ɵNodeFlags
-       with ɵQueryValueType
+       with ɵProfilerEvent
   inline def `4`: `4` = 4.asInstanceOf[`4`]
   
   @js.native
-  sealed trait `4096`
+  sealed trait `400`
     extends StObject
-       with ɵNodeFlags
-  inline def `4096`: `4096` = 4096.asInstanceOf[`4096`]
+       with RuntimeErrorCode
+  inline def `400`: `400` = 400.asInstanceOf[`400`]
   
   @js.native
-  sealed trait `4194304`
+  sealed trait `401`
     extends StObject
-       with ɵNodeFlags
-  inline def `4194304`: `4194304` = 4194304.asInstanceOf[`4194304`]
+       with RuntimeErrorCode
+  inline def `401`: `401` = 401.asInstanceOf[`401`]
   
   @js.native
-  sealed trait `48`
+  sealed trait `402`
     extends StObject
-       with ɵBindingFlags
-  inline def `48`: `48` = 48.asInstanceOf[`48`]
+       with RuntimeErrorCode
+  inline def `402`: `402` = 402.asInstanceOf[`402`]
+  
+  @js.native
+  sealed trait `403`
+    extends StObject
+       with RuntimeErrorCode
+  inline def `403`: `403` = 403.asInstanceOf[`403`]
+  
+  @js.native
+  sealed trait `404`
+    extends StObject
+       with RuntimeErrorCode
+  inline def `404`: `404` = 404.asInstanceOf[`404`]
+  
+  @js.native
+  sealed trait `405`
+    extends StObject
+       with RuntimeErrorCode
+  inline def `405`: `405` = 405.asInstanceOf[`405`]
+  
+  @js.native
+  sealed trait `406`
+    extends StObject
+       with RuntimeErrorCode
+  inline def `406`: `406` = 406.asInstanceOf[`406`]
+  
+  @js.native
+  sealed trait `407`
+    extends StObject
+       with RuntimeErrorCode
+  inline def `407`: `407` = 407.asInstanceOf[`407`]
   
   @js.native
   sealed trait `5`
     extends StObject
        with ɵAttributeMarker
+       with ɵProfilerEvent
   inline def `5`: `5` = 5.asInstanceOf[`5`]
   
   @js.native
   sealed trait `512`
     extends StObject
        with LViewFlags
-       with ViewState
-       with ɵNodeFlags
   inline def `512`: `512` = 512.asInstanceOf[`512`]
-  
-  @js.native
-  sealed trait `524288`
-    extends StObject
-       with ɵNodeFlags
-  inline def `524288`: `524288` = 524288.asInstanceOf[`524288`]
-  
-  @js.native
-  sealed trait `536870912`
-    extends StObject
-       with ɵNodeFlags
-  inline def `536870912`: `536870912` = 536870912.asInstanceOf[`536870912`]
   
   @js.native
   sealed trait `6`
     extends StObject
        with ɵAttributeMarker
+       with ɵProfilerEvent
   inline def `6`: `6` = 6.asInstanceOf[`6`]
   
   @js.native
@@ -395,8 +352,6 @@ object angularCoreNumbers {
        with LViewFlags
        with TNodeFlags
        with TNodeType
-       with ViewState
-       with ɵNodeFlags
   inline def `64`: `64` = 64.asInstanceOf[`64`]
   
   @js.native
@@ -409,20 +364,25 @@ object angularCoreNumbers {
   sealed trait `65536`
     extends StObject
        with PreOrderHookFlags
-       with ɵNodeFlags
   inline def `65536`: `65536` = 65536.asInstanceOf[`65536`]
   
   @js.native
-  sealed trait `67108864`
+  sealed trait `7`
     extends StObject
-       with ɵNodeFlags
-  inline def `67108864`: `67108864` = 67108864.asInstanceOf[`67108864`]
+       with ɵProfilerEvent
+  inline def `7`: `7` = 7.asInstanceOf[`7`]
   
   @js.native
-  sealed trait `768`
+  sealed trait `700`
     extends StObject
-       with ViewState
-  inline def `768`: `768` = 768.asInstanceOf[`768`]
+       with RuntimeErrorCode
+  inline def `700`: `700` = 700.asInstanceOf[`700`]
+  
+  @js.native
+  sealed trait `701`
+    extends StObject
+       with RuntimeErrorCode
+  inline def `701`: `701` = 701.asInstanceOf[`701`]
   
   @js.native
   sealed trait `8`
@@ -431,23 +391,73 @@ object angularCoreNumbers {
        with SelectorFlags
        with TNodeFlags
        with TNodeType
-       with ViewState
-       with ɵBindingFlags
-       with ɵDepFlags
-       with ɵNodeFlags
   inline def `8`: `8` = 8.asInstanceOf[`8`]
   
   @js.native
-  sealed trait `8192`
+  sealed trait `800`
     extends StObject
-       with ɵNodeFlags
-  inline def `8192`: `8192` = 8192.asInstanceOf[`8192`]
+       with RuntimeErrorCode
+  inline def `800`: `800` = 800.asInstanceOf[`800`]
   
   @js.native
-  sealed trait `8388608`
+  sealed trait `900`
     extends StObject
-       with ɵNodeFlags
-  inline def `8388608`: `8388608` = 8388608.asInstanceOf[`8388608`]
+       with RuntimeErrorCode
+  inline def `900`: `900` = 900.asInstanceOf[`900`]
+  
+  @js.native
+  sealed trait `901`
+    extends StObject
+       with RuntimeErrorCode
+  inline def `901`: `901` = 901.asInstanceOf[`901`]
+  
+  @js.native
+  sealed trait `902`
+    extends StObject
+       with RuntimeErrorCode
+  inline def `902`: `902` = 902.asInstanceOf[`902`]
+  
+  @js.native
+  sealed trait `903`
+    extends StObject
+       with RuntimeErrorCode
+  inline def `903`: `903` = 903.asInstanceOf[`903`]
+  
+  @js.native
+  sealed trait `904`
+    extends StObject
+       with RuntimeErrorCode
+  inline def `904`: `904` = 904.asInstanceOf[`904`]
+  
+  @js.native
+  sealed trait `905`
+    extends StObject
+       with RuntimeErrorCode
+  inline def `905`: `905` = 905.asInstanceOf[`905`]
+  
+  @js.native
+  sealed trait `906`
+    extends StObject
+       with RuntimeErrorCode
+  inline def `906`: `906` = 906.asInstanceOf[`906`]
+  
+  @js.native
+  sealed trait `907`
+    extends StObject
+       with RuntimeErrorCode
+  inline def `907`: `907` = 907.asInstanceOf[`907`]
+  
+  @js.native
+  sealed trait `908`
+    extends StObject
+       with RuntimeErrorCode
+  inline def `908`: `908` = 908.asInstanceOf[`908`]
+  
+  @js.native
+  sealed trait `909`
+    extends StObject
+       with RuntimeErrorCode
+  inline def `909`: `909` = 909.asInstanceOf[`909`]
   
   @js.native
   sealed trait _4294901760

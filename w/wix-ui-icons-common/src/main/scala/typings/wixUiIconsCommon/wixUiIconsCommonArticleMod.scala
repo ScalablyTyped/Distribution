@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.wixUiIconsCommon.articleMod.ArticleProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,10 +11,10 @@ object wixUiIconsCommonArticleMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/Article", JSImport.Default)
   @js.native
-  val default: SFC[ArticleProps] = js.native
+  val default: FC[ArticleProps] = js.native
   
-  type _To = SFC[ArticleProps]
+  type _To = FC[ArticleProps]
   
   /* This means you don't have to write `default`, but can instead just say `wixUiIconsCommonArticleMod.foo` */
-  override def _to: SFC[ArticleProps] = default
+  override def _to: FC[ArticleProps] = default
 }

@@ -49,20 +49,20 @@ object anon {
   
   trait Children extends StObject {
     
-    var children: js.Array[js.Any]
+    var children: js.Array[Any]
   }
   object Children {
     
-    inline def apply(children: js.Array[js.Any]): Children = {
+    inline def apply(children: js.Array[Any]): Children = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
       __obj.asInstanceOf[Children]
     }
     
     extension [Self <: Children](x: Self) {
       
-      inline def setChildren(value: js.Array[js.Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setChildrenVarargs(value: js.Any*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: Any*): Self = StObject.set(x, "children", js.Array(value*))
     }
   }
   
@@ -70,11 +70,11 @@ object anon {
     
     var cols: js.Array[Key]
     
-    var selMinute: js.Any
+    var selMinute: Any
   }
   object Cols {
     
-    inline def apply(cols: js.Array[Key], selMinute: js.Any): Cols = {
+    inline def apply(cols: js.Array[Key], selMinute: Any): Cols = {
       val __obj = js.Dynamic.literal(cols = cols.asInstanceOf[js.Any], selMinute = selMinute.asInstanceOf[js.Any])
       __obj.asInstanceOf[Cols]
     }
@@ -83,26 +83,26 @@ object anon {
       
       inline def setCols(value: js.Array[Key]): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
       
-      inline def setColsVarargs(value: Key*): Self = StObject.set(x, "cols", js.Array(value :_*))
+      inline def setColsVarargs(value: Key*): Self = StObject.set(x, "cols", js.Array(value*))
       
-      inline def setSelMinute(value: js.Any): Self = StObject.set(x, "selMinute", value.asInstanceOf[js.Any])
+      inline def setSelMinute(value: Any): Self = StObject.set(x, "selMinute", value.asInstanceOf[js.Any])
     }
   }
   
   trait Date extends StObject {
     
-    var date: js.Any
+    var date: Any
   }
   object Date {
     
-    inline def apply(date: js.Any): Date = {
+    inline def apply(date: Any): Date = {
       val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
       __obj.asInstanceOf[Date]
     }
     
     extension [Self <: Date](x: Self) {
       
-      inline def setDate(value: js.Any): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Any): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     }
   }
   
@@ -129,26 +129,26 @@ object anon {
   
   trait Value extends StObject {
     
-    var cols: js.Array[js.Any]
+    var cols: js.Array[Any]
     
-    var value: js.Array[js.Any]
+    var value: js.Array[Any]
   }
   object Value {
     
-    inline def apply(cols: js.Array[js.Any], value: js.Array[js.Any]): Value = {
+    inline def apply(cols: js.Array[Any], value: js.Array[Any]): Value = {
       val __obj = js.Dynamic.literal(cols = cols.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Value]
     }
     
     extension [Self <: Value](x: Self) {
       
-      inline def setCols(value: js.Array[js.Any]): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
+      inline def setCols(value: js.Array[Any]): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
       
-      inline def setColsVarargs(value: js.Any*): Self = StObject.set(x, "cols", js.Array(value :_*))
+      inline def setColsVarargs(value: Any*): Self = StObject.set(x, "cols", js.Array(value*))
       
-      inline def setValue(value: js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Array[Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      inline def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: Any*): Self = StObject.set(x, "value", js.Array(value*))
     }
   }
 }

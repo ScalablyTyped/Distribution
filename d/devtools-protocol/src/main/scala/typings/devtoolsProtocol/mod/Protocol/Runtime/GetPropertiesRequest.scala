@@ -18,6 +18,11 @@ trait GetPropertiesRequest extends StObject {
   var generatePreview: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * If true, returns non-indexed properties only.
+    */
+  var nonIndexedPropertiesOnly: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Identifier of the object to return properties for.
     */
   var objectId: RemoteObjectId
@@ -44,6 +49,10 @@ object GetPropertiesRequest {
     inline def setGeneratePreview(value: Boolean): Self = StObject.set(x, "generatePreview", value.asInstanceOf[js.Any])
     
     inline def setGeneratePreviewUndefined: Self = StObject.set(x, "generatePreview", js.undefined)
+    
+    inline def setNonIndexedPropertiesOnly(value: Boolean): Self = StObject.set(x, "nonIndexedPropertiesOnly", value.asInstanceOf[js.Any])
+    
+    inline def setNonIndexedPropertiesOnlyUndefined: Self = StObject.set(x, "nonIndexedPropertiesOnly", js.undefined)
     
     inline def setObjectId(value: RemoteObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     

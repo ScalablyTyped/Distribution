@@ -4,20 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Describing the ARP neighbor entries seen on this link
-  */
 trait SchemaInterconnectDiagnosticsARPEntry extends StObject {
   
   /**
     * The IP address of this ARP neighbor.
     */
-  var ipAddress: js.UndefOr[String] = js.undefined
+  var ipAddress: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The MAC address of this ARP neighbor.
     */
-  var macAddress: js.UndefOr[String] = js.undefined
+  var macAddress: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaInterconnectDiagnosticsARPEntry {
   
@@ -30,9 +27,13 @@ object SchemaInterconnectDiagnosticsARPEntry {
     
     inline def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
     
+    inline def setIpAddressNull: Self = StObject.set(x, "ipAddress", null)
+    
     inline def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
     
     inline def setMacAddress(value: String): Self = StObject.set(x, "macAddress", value.asInstanceOf[js.Any])
+    
+    inline def setMacAddressNull: Self = StObject.set(x, "macAddress", null)
     
     inline def setMacAddressUndefined: Self = StObject.set(x, "macAddress", js.undefined)
   }

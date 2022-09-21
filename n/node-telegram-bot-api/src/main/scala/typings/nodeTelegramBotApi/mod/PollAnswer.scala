@@ -23,7 +23,7 @@ object PollAnswer {
     
     inline def setOption_ids(value: js.Array[Double]): Self = StObject.set(x, "option_ids", value.asInstanceOf[js.Any])
     
-    inline def setOption_idsVarargs(value: Double*): Self = StObject.set(x, "option_ids", js.Array(value :_*))
+    inline def setOption_idsVarargs(value: Double*): Self = StObject.set(x, "option_ids", js.Array(value*))
     
     inline def setPoll_id(value: String): Self = StObject.set(x, "poll_id", value.asInstanceOf[js.Any])
     

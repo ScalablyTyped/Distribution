@@ -10,10 +10,10 @@ This script gives you the zone info key representing your device's time zone set
 | ------------------ | :-------------: |
 | Full name          | jstimezonedetect |
 | Keywords           | time, timezone, tz, date |
-| # releases         | 2 |
-| # dependents       | 60 |
-| # downloads        | 4902569 |
-| # stars            | 7 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 340727.0 |
+| # stars            | 68.0 |
 
 ## Links
 - [Homepage](https://github.com/pellepim/jstimezonedetect)

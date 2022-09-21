@@ -25,7 +25,7 @@ object SetBlackboxedRangesParameterType {
     
     inline def setPositions(value: js.Array[ScriptPosition]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
     
-    inline def setPositionsVarargs(value: ScriptPosition*): Self = StObject.set(x, "positions", js.Array(value :_*))
+    inline def setPositionsVarargs(value: ScriptPosition*): Self = StObject.set(x, "positions", js.Array(value*))
     
     inline def setScriptId(value: ScriptId): Self = StObject.set(x, "scriptId", value.asInstanceOf[js.Any])
   }

@@ -1,5 +1,6 @@
 package typings.jupyterlabJsonExtension
 
+import typings.jupyterlabTranslation.tokensMod.ITranslator
 import typings.luminoCoreutils.jsonMod.JSONObject
 import typings.luminoCoreutils.jsonMod.JSONValue
 import typings.react.mod.ChangeEvent
@@ -13,14 +14,14 @@ object componentMod {
   
   @JSImport("@jupyterlab/json-extension/lib/component", "Component")
   @js.native
-  class Component protected ()
-    extends typings.react.mod.Component[IProps, IState, js.Any] {
+  open class Component protected ()
+    extends typings.react.mod.Component[IProps, IState, Any] {
     def this(props: IProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: IProps, context: js.Any) = this()
+    def this(props: IProps, context: Any) = this()
     
     def handleChange(event: ChangeEvent[HTMLInputElement]): Unit = js.native
     
@@ -32,11 +33,16 @@ object componentMod {
     var data: NonNullable[JSONValue]
     
     var metadata: js.UndefOr[JSONObject] = js.undefined
+    
+    /**
+      * The application language translator.
+      */
+    var translator: js.UndefOr[ITranslator] = js.undefined
   }
   object IProps {
     
-    inline def apply(): IProps = {
-      val __obj = js.Dynamic.literal(data = null)
+    inline def apply(data: NonNullable[JSONValue]): IProps = {
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[IProps]
     }
     
@@ -44,11 +50,13 @@ object componentMod {
       
       inline def setData(value: NonNullable[JSONValue]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataNull: Self = StObject.set(x, "data", null)
-      
       inline def setMetadata(value: JSONObject): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
       inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      
+      inline def setTranslator(value: ITranslator): Self = StObject.set(x, "translator", value.asInstanceOf[js.Any])
+      
+      inline def setTranslatorUndefined: Self = StObject.set(x, "translator", js.undefined)
     }
   }
   

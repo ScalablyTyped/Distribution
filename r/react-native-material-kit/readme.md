@@ -10,10 +10,10 @@ Bringing Material Design to React Native
 | ------------------ | :-------------: |
 | Full name          | react-native-material-kit |
 | Keywords           | react, native, react-component, react-native, react-native-component, ios, android, material design, MaterialKit |
-| # releases         | 2 |
-| # dependents       | 2 |
-| # downloads        | 46852 |
-| # stars            | 6 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1348.6666666666667 |
+| # stars            | 4845.0 |
 
 ## Links
 - [Homepage](https://github.com/xinthink/react-native-material-kit)

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "emscripten-library-decorator" : "0.2.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "emscripten-library-decorator" : "0.2.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

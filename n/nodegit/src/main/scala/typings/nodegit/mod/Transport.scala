@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "Transport")
 @js.native
-class Transport ()
+open class Transport ()
   extends typings.nodegit.transportMod.Transport
 /* static members */
 object Transport {

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListEntries extends StObject {
   
   def Add(Name: String): ListEntry = js.native
-  def Add(Name: String, Index: js.Any): ListEntry = js.native
+  def Add(Name: String, Index: Any): ListEntry = js.native
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -18,9 +18,9 @@ trait ListEntries extends StObject {
   
   val Creator: Double = js.native
   
-  def Item(Index: js.Any): ListEntry = js.native
+  def Item(Index: Any): ListEntry = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   /* private */ @JSName("Word.ListEntries_typekey")
   var WordDotListEntries_typekey: ListEntries = js.native

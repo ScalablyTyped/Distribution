@@ -39,7 +39,7 @@ object GoogleCloudDatalabelingV1beta1PrCurve {
     
     inline def setConfidenceMetricsEntriesUndefined: Self = StObject.set(x, "confidenceMetricsEntries", js.undefined)
     
-    inline def setConfidenceMetricsEntriesVarargs(value: GoogleCloudDatalabelingV1beta1ConfidenceMetricsEntry*): Self = StObject.set(x, "confidenceMetricsEntries", js.Array(value :_*))
+    inline def setConfidenceMetricsEntriesVarargs(value: GoogleCloudDatalabelingV1beta1ConfidenceMetricsEntry*): Self = StObject.set(x, "confidenceMetricsEntries", js.Array(value*))
     
     inline def setMeanAveragePrecision(value: Double): Self = StObject.set(x, "meanAveragePrecision", value.asInstanceOf[js.Any])
     

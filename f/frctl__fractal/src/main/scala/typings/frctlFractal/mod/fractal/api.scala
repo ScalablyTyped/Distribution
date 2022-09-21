@@ -15,11 +15,10 @@ import typings.frctlFractal.mod.fractal.core.entities.EntitySource
 import typings.frctlFractal.mod.fractal.core.mixins.Collection
 import typings.frctlFractal.mod.fractal.core.mixins.ConfigurableEmitter
 import typings.frctlFractal.mod.fractal.core.mixins.Source
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.fsMod.Stats
 import typings.node.streamMod.Readable
 import typings.std.IterableIterator
-import typings.std.RegExp
 import typings.vinyl.mod.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -31,7 +30,7 @@ object api {
     
     @JSImport("@frctl/fractal", "fractal.api.assets.Asset")
     @js.native
-    class Asset () extends Entity {
+    open class Asset () extends Entity {
       
       val isAsset: `true` = js.native
       
@@ -61,8 +60,7 @@ object api {
     }
     
     @js.native
-    trait AssetSource
-      extends Source[File, js.Any] {
+    trait AssetSource extends Source[File, Any] {
       
       def assets(): js.Array[File] = js.native
       
@@ -74,10 +72,9 @@ object api {
     }
     
     @js.native
-    trait AssetSourceCollection
-      extends ConfigurableEmitter[js.Any] {
+    trait AssetSourceCollection extends ConfigurableEmitter[Any] {
       
-      def add(name: String, config: js.Any): AssetSource = js.native
+      def add(name: String, config: Any): AssetSource = js.native
       
       def find(name: String): js.UndefOr[AssetSource] = js.native
       
@@ -110,7 +107,7 @@ object api {
     
     @JSImport("@frctl/fractal", "fractal.api.components.Component")
     @js.native
-    class Component protected () extends Entity {
+    open class Component protected () extends Entity {
       def this(config: js.Object, files: FileCollection, resources: AssetCollection, parent: Entity) = this()
       
       val baseHandle: String = js.native
@@ -131,7 +128,7 @@ object api {
       
       def getPreviewContent(): js.Promise[String] = js.native
       
-      def getPreviewContext(): js.Promise[js.Any] = js.native
+      def getPreviewContext(): js.Promise[Any] = js.native
       
       def hasTag(tag: String): Boolean = js.native
       
@@ -157,13 +154,13 @@ object api {
       
       val notes: String = js.native
       
-      val referencedBy: js.Array[js.Any] = js.native
+      val referencedBy: js.Array[Any] = js.native
       
-      val references: js.Array[js.Any] = js.native
+      val references: js.Array[Any] = js.native
       
       var relViewPath: String = js.native
       
-      def render(context: js.Any, env: js.Any, opts: js.Any): js.Promise[String] = js.native
+      def render(context: Any, env: Any, opts: Any): js.Promise[String] = js.native
       
       def resources(): AssetCollection = js.native
       
@@ -208,10 +205,10 @@ object api {
       var defaultDotcollator: js.UndefOr[Collator] = js.undefined
       
       @JSName("default.context")
-      var defaultDotcontext: js.UndefOr[js.Any] = js.undefined
+      var defaultDotcontext: js.UndefOr[Any] = js.undefined
       
       @JSName("default.display")
-      var defaultDotdisplay: js.UndefOr[js.Any] = js.undefined
+      var defaultDotdisplay: js.UndefOr[Any] = js.undefined
       
       @JSName("default.prefix")
       var defaultDotprefix: js.UndefOr[String] = js.undefined
@@ -253,11 +250,11 @@ object api {
         
         inline def setDefaultDotcollatorUndefined: Self = StObject.set(x, "default.collator", js.undefined)
         
-        inline def setDefaultDotcontext(value: js.Any): Self = StObject.set(x, "default.context", value.asInstanceOf[js.Any])
+        inline def setDefaultDotcontext(value: Any): Self = StObject.set(x, "default.context", value.asInstanceOf[js.Any])
         
         inline def setDefaultDotcontextUndefined: Self = StObject.set(x, "default.context", js.undefined)
         
-        inline def setDefaultDotdisplay(value: js.Any): Self = StObject.set(x, "default.display", value.asInstanceOf[js.Any])
+        inline def setDefaultDotdisplay(value: Any): Self = StObject.set(x, "default.display", value.asInstanceOf[js.Any])
         
         inline def setDefaultDotdisplayUndefined: Self = StObject.set(x, "default.display", js.undefined)
         
@@ -307,9 +304,9 @@ object api {
       
       var collator: js.UndefOr[Collator] = js.undefined
       
-      var context: js.UndefOr[js.Any] = js.undefined
+      var context: js.UndefOr[Any] = js.undefined
       
-      var display: js.UndefOr[js.Any] = js.undefined
+      var display: js.UndefOr[Any] = js.undefined
       
       var prefix: js.UndefOr[String] = js.undefined
       
@@ -334,11 +331,11 @@ object api {
         
         inline def setCollatorUndefined: Self = StObject.set(x, "collator", js.undefined)
         
-        inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+        inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
         
         inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
         
-        inline def setDisplay(value: js.Any): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+        inline def setDisplay(value: Any): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
         
         inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
         
@@ -361,33 +358,33 @@ object api {
       
       def components(): js.Array[Component] = js.native
       
-      def find(): js.Any = js.native
+      def find(): Any = js.native
       
       def findFile(filePath: String): js.UndefOr[typings.frctlFractal.mod.fractal.api.files.File] = js.native
       
-      def getReferencesOf(target: Alias): js.Array[js.Any] = js.native
+      def getReferencesOf(target: Alias): js.Array[Any] = js.native
       
-      def render(entity: String, context: js.Any): js.Promise[String] = js.native
-      def render(entity: String, context: js.Any, env: js.Any): js.Promise[String] = js.native
-      def render(entity: String, context: js.Any, env: js.Any, opts: js.Object): js.Promise[String] = js.native
-      def render(entity: String, context: js.Any, env: Unit, opts: js.Object): js.Promise[String] = js.native
-      def render(entity: Entity, context: js.Any): js.Promise[String] = js.native
-      def render(entity: Entity, context: js.Any, env: js.Any): js.Promise[String] = js.native
-      def render(entity: Entity, context: js.Any, env: js.Any, opts: js.Object): js.Promise[String] = js.native
-      def render(entity: Entity, context: js.Any, env: Unit, opts: js.Object): js.Promise[String] = js.native
+      def render(entity: String, context: Any): js.Promise[String] = js.native
+      def render(entity: String, context: Any, env: Any): js.Promise[String] = js.native
+      def render(entity: String, context: Any, env: Any, opts: js.Object): js.Promise[String] = js.native
+      def render(entity: String, context: Any, env: Unit, opts: js.Object): js.Promise[String] = js.native
+      def render(entity: Entity, context: Any): js.Promise[String] = js.native
+      def render(entity: Entity, context: Any, env: Any): js.Promise[String] = js.native
+      def render(entity: Entity, context: Any, env: Any, opts: js.Object): js.Promise[String] = js.native
+      def render(entity: Entity, context: Any, env: Unit, opts: js.Object): js.Promise[String] = js.native
       
       def renderPreview(entity: String): js.Promise[String] = js.native
       def renderPreview(entity: String, preview: Boolean): js.Promise[String] = js.native
-      def renderPreview(entity: String, preview: Boolean, env: js.Any): js.Promise[String] = js.native
-      def renderPreview(entity: String, preview: Unit, env: js.Any): js.Promise[String] = js.native
+      def renderPreview(entity: String, preview: Boolean, env: Any): js.Promise[String] = js.native
+      def renderPreview(entity: String, preview: Unit, env: Any): js.Promise[String] = js.native
       def renderPreview(entity: Entity): js.Promise[String] = js.native
       def renderPreview(entity: Entity, preview: Boolean): js.Promise[String] = js.native
-      def renderPreview(entity: Entity, preview: Boolean, env: js.Any): js.Promise[String] = js.native
-      def renderPreview(entity: Entity, preview: Unit, env: js.Any): js.Promise[String] = js.native
+      def renderPreview(entity: Entity, preview: Boolean, env: Any): js.Promise[String] = js.native
+      def renderPreview(entity: Entity, preview: Unit, env: Any): js.Promise[String] = js.native
       
-      def renderString(str: String, context: js.Any, env: js.Any): js.Promise[String] = js.native
+      def renderString(str: String, context: Any, env: Any): js.Promise[String] = js.native
       
-      def resolve(context: js.Any): js.Any = js.native
+      def resolve(context: Any): Any = js.native
       
       def resources(): FileCollection = js.native
       
@@ -399,8 +396,8 @@ object api {
     
     @JSImport("@frctl/fractal", "fractal.api.docs.Doc")
     @js.native
-    class Doc protected () extends Entity {
-      def this(config: js.Any, content: String, parent: Entity) = this()
+    open class Doc protected () extends Entity {
+      def this(config: Any, content: String, parent: Entity) = this()
       
       def getContent(): js.Promise[String] = js.native
       
@@ -424,10 +421,10 @@ object api {
       @JSName("isVariant")
       val isVariant_Doc: Unit = js.native
       
-      def render(context: js.Any): js.Promise[String] = js.native
-      def render(context: js.Any, env: js.Any): js.Promise[String] = js.native
-      def render(context: js.Any, env: js.Any, opts: js.Any): js.Promise[String] = js.native
-      def render(context: js.Any, env: Unit, opts: js.Any): js.Promise[String] = js.native
+      def render(context: Any): js.Promise[String] = js.native
+      def render(context: Any, env: Any): js.Promise[String] = js.native
+      def render(context: Any, env: Any, opts: Any): js.Promise[String] = js.native
+      def render(context: Any, env: Unit, opts: Any): js.Promise[String] = js.native
       
       def toc(): js.Promise[String] = js.native
       def toc(maxDepth: Double): js.Promise[String] = js.native
@@ -439,7 +436,7 @@ object api {
       val ^ : js.Any = js.native
       
       /* static member */
-      inline def create(config: js.Any, content: String, parent: Entity): Doc = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], content.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Doc]
+      inline def create(config: Any, content: String, parent: Entity): Doc = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], content.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Doc]
     }
     
     @js.native
@@ -453,7 +450,7 @@ object api {
       var default: js.UndefOr[DocDefaultConfig] = js.undefined
       
       @JSName("default.context")
-      var defaultDotcontext: js.UndefOr[js.Any] = js.undefined
+      var defaultDotcontext: js.UndefOr[Any] = js.undefined
       
       @JSName("default.prefix")
       var defaultDotprefix: js.UndefOr[String] = js.undefined
@@ -507,7 +504,7 @@ object api {
         
         inline def setDefault(value: DocDefaultConfig): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
         
-        inline def setDefaultDotcontext(value: js.Any): Self = StObject.set(x, "default.context", value.asInstanceOf[js.Any])
+        inline def setDefaultDotcontext(value: Any): Self = StObject.set(x, "default.context", value.asInstanceOf[js.Any])
         
         inline def setDefaultDotcontextUndefined: Self = StObject.set(x, "default.context", js.undefined)
         
@@ -581,7 +578,7 @@ object api {
     
     trait DocDefaultConfig extends StObject {
       
-      var context: js.UndefOr[js.Any] = js.undefined
+      var context: js.UndefOr[Any] = js.undefined
       
       var prefix: js.UndefOr[String] = js.undefined
       
@@ -596,7 +593,7 @@ object api {
       
       extension [Self <: DocDefaultConfig](x: Self) {
         
-        inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+        inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
         
         inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
         
@@ -677,31 +674,26 @@ object api {
       def pages(): this.type = js.native
       
       def render(page: String): js.Promise[String] = js.native
-      def render(page: String, context: js.Any): js.Promise[String] = js.native
-      def render(page: String, context: js.Any, env: js.Any): js.Promise[String] = js.native
-      def render(page: String, context: js.Any, env: js.Any, opts: js.Object): js.Promise[String] = js.native
-      def render(page: String, context: js.Any, env: Unit, opts: js.Object): js.Promise[String] = js.native
-      def render(page: String, context: Unit, env: js.Any): js.Promise[String] = js.native
-      def render(page: String, context: Unit, env: js.Any, opts: js.Object): js.Promise[String] = js.native
+      def render(page: String, context: Any): js.Promise[String] = js.native
+      def render(page: String, context: Any, env: Any): js.Promise[String] = js.native
+      def render(page: String, context: Any, env: Any, opts: js.Object): js.Promise[String] = js.native
+      def render(page: String, context: Any, env: Unit, opts: js.Object): js.Promise[String] = js.native
+      def render(page: String, context: Unit, env: Any): js.Promise[String] = js.native
+      def render(page: String, context: Unit, env: Any, opts: js.Object): js.Promise[String] = js.native
       def render(page: String, context: Unit, env: Unit, opts: js.Object): js.Promise[String] = js.native
       def render(page: typings.frctlFractal.mod.fractal.api.files.File): js.Promise[String] = js.native
-      def render(page: typings.frctlFractal.mod.fractal.api.files.File, context: js.Any): js.Promise[String] = js.native
-      def render(page: typings.frctlFractal.mod.fractal.api.files.File, context: js.Any, env: js.Any): js.Promise[String] = js.native
-      def render(
-        page: typings.frctlFractal.mod.fractal.api.files.File,
-        context: js.Any,
-        env: js.Any,
-        opts: js.Object
-      ): js.Promise[String] = js.native
-      def render(page: typings.frctlFractal.mod.fractal.api.files.File, context: js.Any, env: Unit, opts: js.Object): js.Promise[String] = js.native
-      def render(page: typings.frctlFractal.mod.fractal.api.files.File, context: Unit, env: js.Any): js.Promise[String] = js.native
-      def render(page: typings.frctlFractal.mod.fractal.api.files.File, context: Unit, env: js.Any, opts: js.Object): js.Promise[String] = js.native
+      def render(page: typings.frctlFractal.mod.fractal.api.files.File, context: Any): js.Promise[String] = js.native
+      def render(page: typings.frctlFractal.mod.fractal.api.files.File, context: Any, env: Any): js.Promise[String] = js.native
+      def render(page: typings.frctlFractal.mod.fractal.api.files.File, context: Any, env: Any, opts: js.Object): js.Promise[String] = js.native
+      def render(page: typings.frctlFractal.mod.fractal.api.files.File, context: Any, env: Unit, opts: js.Object): js.Promise[String] = js.native
+      def render(page: typings.frctlFractal.mod.fractal.api.files.File, context: Unit, env: Any): js.Promise[String] = js.native
+      def render(page: typings.frctlFractal.mod.fractal.api.files.File, context: Unit, env: Any, opts: js.Object): js.Promise[String] = js.native
       def render(page: typings.frctlFractal.mod.fractal.api.files.File, context: Unit, env: Unit, opts: js.Object): js.Promise[String] = js.native
       
-      def renderString(str: String, context: js.Any): js.Promise[String] = js.native
-      def renderString(str: String, context: js.Any, env: js.Any): js.Promise[String] = js.native
+      def renderString(str: String, context: Any): js.Promise[String] = js.native
+      def renderString(str: String, context: Any, env: Any): js.Promise[String] = js.native
       
-      def resolve(context: js.Any): js.Any = js.native
+      def resolve(context: Any): Any = js.native
       
       def toc(page: typings.frctlFractal.mod.fractal.api.files.File): js.Promise[String] = js.native
       def toc(page: typings.frctlFractal.mod.fractal.api.files.File, maxDepth: Double): js.Promise[String] = js.native
@@ -712,8 +704,8 @@ object api {
     
     @JSImport("@frctl/fractal", "fractal.api.variants.Variant")
     @js.native
-    class Variant protected () extends Entity {
-      def this(config: js.Object, view: js.Any, resources: AssetCollection, parent: Component) = this()
+    open class Variant protected () extends Entity {
+      def this(config: js.Object, view: Any, resources: AssetCollection, parent: Component) = this()
       
       val baseHandle: String = js.native
       
@@ -733,7 +725,7 @@ object api {
       
       def getPreviewContent(): js.Promise[String] = js.native
       
-      def getPreviewContext(): js.Promise[js.Any] = js.native
+      def getPreviewContext(): js.Promise[Any] = js.native
       
       val isAsset: Unit = js.native
       
@@ -757,16 +749,16 @@ object api {
       
       val notes: String = js.native
       
-      val referencedBy: js.Array[js.Any] = js.native
+      val referencedBy: js.Array[Any] = js.native
       
-      val references: js.Array[js.Any] = js.native
+      val references: js.Array[Any] = js.native
       
       var relViewPath: String = js.native
       
-      def render(context: js.Any): js.Promise[String] = js.native
-      def render(context: js.Any, env: js.Any): js.Promise[String] = js.native
-      def render(context: js.Any, env: js.Any, opts: js.Any): js.Promise[String] = js.native
-      def render(context: js.Any, env: Unit, opts: js.Any): js.Promise[String] = js.native
+      def render(context: Any): js.Promise[String] = js.native
+      def render(context: Any, env: Any): js.Promise[String] = js.native
+      def render(context: Any, env: Any, opts: Any): js.Promise[String] = js.native
+      def render(context: Any, env: Unit, opts: Any): js.Promise[String] = js.native
       
       def resources(): AssetCollection = js.native
       
@@ -776,7 +768,7 @@ object api {
       
       def variant(): this.type = js.native
       
-      var view: js.Any = js.native
+      var view: Any = js.native
       
       var viewDir: String = js.native
       
@@ -789,7 +781,7 @@ object api {
       val ^ : js.Any = js.native
       
       /* static member */
-      inline def create(config: js.Object, view: js.Any, resources: AssetCollection, parent: Component): Variant = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], view.asInstanceOf[js.Any], resources.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Variant]
+      inline def create(config: js.Object, view: Any, resources: AssetCollection, parent: Component): Variant = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], view.asInstanceOf[js.Any], resources.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Variant]
     }
     
     @js.native
@@ -797,15 +789,15 @@ object api {
       
       def default(): Variant = js.native
       
-      def getCOllatedContext(): js.Promise[js.Any] = js.native
+      def getCOllatedContext(): js.Promise[Any] = js.native
       
       def getCollatedContent(): js.Promise[String] = js.native
       
       def getCollatedContentSync(): String = js.native
       
-      val referencedBy: js.Array[js.Any] = js.native
+      val referencedBy: js.Array[Any] = js.native
       
-      val references: js.Array[js.Any] = js.native
+      val references: js.Array[Any] = js.native
     }
   }
   
@@ -831,7 +823,7 @@ object api {
       
       def getContentSync(): String
       
-      def getContext(): js.Any
+      def getContext(): Any
       
       var githubColor: String
       
@@ -885,7 +877,7 @@ object api {
         ext: String,
         getContent: () => js.Promise[String],
         getContentSync: () => String,
-        getContext: () => js.Any,
+        getContext: () => Any,
         githubColor: String,
         handle: String,
         id: String,
@@ -929,7 +921,7 @@ object api {
         
         inline def setGetContentSync(value: () => String): Self = StObject.set(x, "getContentSync", js.Any.fromFunction0(value))
         
-        inline def setGetContext(value: () => js.Any): Self = StObject.set(x, "getContext", js.Any.fromFunction0(value))
+        inline def setGetContext(value: () => Any): Self = StObject.set(x, "getContext", js.Any.fromFunction0(value))
         
         inline def setGithubColor(value: String): Self = StObject.set(x, "githubColor", value.asInstanceOf[js.Any])
         
@@ -985,15 +977,15 @@ object api {
       def gulpify(): Readable = js.native
       
       def `match`(test: String): this.type = js.native
-      def `match`(test: js.Array[String | RegExp]): this.type = js.native
-      def `match`(test: RegExp): this.type = js.native
+      def `match`(test: js.Array[String | js.RegExp]): this.type = js.native
+      def `match`(test: js.RegExp): this.type = js.native
       
       def matchItems(items: Collection[typings.frctlFractal.mod.fractal.api.files.File], test: String): typings.frctlFractal.mod.fractal.api.files.File = js.native
       def matchItems(
         items: Collection[typings.frctlFractal.mod.fractal.api.files.File],
-        test: js.Array[String | RegExp]
+        test: js.Array[String | js.RegExp]
       ): typings.frctlFractal.mod.fractal.api.files.File = js.native
-      def matchItems(items: Collection[typings.frctlFractal.mod.fractal.api.files.File], test: RegExp): typings.frctlFractal.mod.fractal.api.files.File = js.native
+      def matchItems(items: Collection[typings.frctlFractal.mod.fractal.api.files.File], test: js.RegExp): typings.frctlFractal.mod.fractal.api.files.File = js.native
       
       def toVinylArray(): js.Array[typings.vinyl.mod.File] = js.native
       

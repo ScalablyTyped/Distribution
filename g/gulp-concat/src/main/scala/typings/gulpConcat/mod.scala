@@ -1,10 +1,8 @@
 package typings.gulpConcat
 
 import org.scalablytyped.runtime.Shortcut
-import typings.node.Buffer
-import typings.node.NodeJS.ReadWriteStream
-import typings.node.NodeJS.ReadableStream
-import typings.std.Date
+import typings.node.bufferMod.global.Buffer
+import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,20 +16,20 @@ object mod extends Shortcut {
   @js.native
   trait IConcat extends StObject {
     
-    def apply(filename: String): ReadWriteStream = js.native
-    def apply(filename: String, options: IOptions): ReadWriteStream = js.native
-    def apply(options: IVinylOptions): ReadWriteStream = js.native
+    def apply(filename: String): Any = js.native
+    def apply(filename: String, options: IOptions): Any = js.native
+    def apply(options: IVinylOptions): Any = js.native
   }
   
   trait IFsStats extends StObject {
     
-    var atime: js.UndefOr[Date] = js.undefined
+    var atime: js.UndefOr[js.Date] = js.undefined
     
     var blksize: js.UndefOr[Double] = js.undefined
     
     var blocks: js.UndefOr[Double] = js.undefined
     
-    var ctime: js.UndefOr[Date] = js.undefined
+    var ctime: js.UndefOr[js.Date] = js.undefined
     
     var dev: js.UndefOr[Double] = js.undefined
     
@@ -41,7 +39,7 @@ object mod extends Shortcut {
     
     var mode: js.UndefOr[Double] = js.undefined
     
-    var mtime: js.UndefOr[Date] = js.undefined
+    var mtime: js.UndefOr[js.Date] = js.undefined
     
     var nlink: js.UndefOr[Double] = js.undefined
     
@@ -60,7 +58,7 @@ object mod extends Shortcut {
     
     extension [Self <: IFsStats](x: Self) {
       
-      inline def setAtime(value: Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
+      inline def setAtime(value: js.Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
       
       inline def setAtimeUndefined: Self = StObject.set(x, "atime", js.undefined)
       
@@ -72,7 +70,7 @@ object mod extends Shortcut {
       
       inline def setBlocksUndefined: Self = StObject.set(x, "blocks", js.undefined)
       
-      inline def setCtime(value: Date): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
+      inline def setCtime(value: js.Date): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
       
       inline def setCtimeUndefined: Self = StObject.set(x, "ctime", js.undefined)
       
@@ -92,7 +90,7 @@ object mod extends Shortcut {
       
       inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      inline def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+      inline def setMtime(value: js.Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
       
       inline def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
       
@@ -135,7 +133,7 @@ object mod extends Shortcut {
     
     var base: js.UndefOr[String] = js.undefined
     
-    var contents: js.UndefOr[ReadableStream | Buffer] = js.undefined
+    var contents: js.UndefOr[ReadableStream[Any] | Buffer] = js.undefined
     
     var cwd: js.UndefOr[String] = js.undefined
     
@@ -156,7 +154,7 @@ object mod extends Shortcut {
       
       inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
-      inline def setContents(value: ReadableStream | Buffer): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+      inline def setContents(value: ReadableStream[Any] | Buffer): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
       inline def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
       

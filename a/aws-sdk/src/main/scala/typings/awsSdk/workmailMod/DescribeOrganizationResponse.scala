@@ -19,7 +19,7 @@ trait DescribeOrganizationResponse extends StObject {
   /**
     * The date at which the organization became usable in the WorkMail context, in UNIX epoch time format.
     */
-  var CompletedDate: js.UndefOr[Timestamp] = js.undefined
+  var CompletedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The default mail domain associated with the organization.
@@ -68,7 +68,7 @@ object DescribeOrganizationResponse {
     
     inline def setAliasUndefined: Self = StObject.set(x, "Alias", js.undefined)
     
-    inline def setCompletedDate(value: Timestamp): Self = StObject.set(x, "CompletedDate", value.asInstanceOf[js.Any])
+    inline def setCompletedDate(value: js.Date): Self = StObject.set(x, "CompletedDate", value.asInstanceOf[js.Any])
     
     inline def setCompletedDateUndefined: Self = StObject.set(x, "CompletedDate", js.undefined)
     

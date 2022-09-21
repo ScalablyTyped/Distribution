@@ -1,6 +1,5 @@
 package typings.readableStream.mod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,14 +10,14 @@ trait ReadableOptions
   
   var destroy: js.UndefOr[
     js.ThisFunction2[
-      /* this */ _Readable, 
-      /* error */ Error | Null, 
-      /* callback */ js.Function1[/* error */ Error | Null, Unit], 
+      /* this */ IReadable, 
+      /* error */ js.Error | Null, 
+      /* callback */ js.Function1[/* error */ js.Error | Null, Unit], 
       Unit
     ]
   ] = js.undefined
   
-  var read: js.UndefOr[js.ThisFunction1[/* this */ _Readable, /* size */ Double, Unit]] = js.undefined
+  var read: js.UndefOr[js.ThisFunction1[/* this */ IReadable, /* size */ Double, Unit]] = js.undefined
 }
 object ReadableOptions {
   
@@ -31,16 +30,16 @@ object ReadableOptions {
     
     inline def setDestroy(
       value: js.ThisFunction2[
-          /* this */ _Readable, 
-          /* error */ Error | Null, 
-          /* callback */ js.Function1[/* error */ Error | Null, Unit], 
+          /* this */ IReadable, 
+          /* error */ js.Error | Null, 
+          /* callback */ js.Function1[/* error */ js.Error | Null, Unit], 
           Unit
         ]
     ): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
     
     inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
     
-    inline def setRead(value: js.ThisFunction1[/* this */ _Readable, /* size */ Double, Unit]): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+    inline def setRead(value: js.ThisFunction1[/* this */ IReadable, /* size */ Double, Unit]): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
     
     inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
   }

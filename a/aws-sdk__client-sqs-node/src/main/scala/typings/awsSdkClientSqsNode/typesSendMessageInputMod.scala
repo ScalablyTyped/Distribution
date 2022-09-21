@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.awsSdkClientSqsNode.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkClientSqsNode.typesMessageAttributeValueMod.MessageAttributeValue
 import typings.awsSdkTypes.abortMod.AbortSignal
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +27,7 @@ object typesSendMessageInputMod {
       */
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ] = js.undefined
     
     /**
@@ -46,7 +45,7 @@ object typesSendMessageInputMod {
       * <p>Each message attribute consists of a <code>Name</code>, <code>Type</code>, and <code>Value</code>. For more information, see <a href="http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-message-attributes.html">Amazon SQS Message Attributes</a> in the <i>Amazon Simple Queue Service Developer Guide</i>.</p>
       */
     var MessageAttributes: js.UndefOr[
-        StringDictionary[MessageAttributeValue] | (Iterable[js.Tuple2[String, MessageAttributeValue]])
+        StringDictionary[MessageAttributeValue] | (js.Iterable[js.Tuple2[String, MessageAttributeValue]])
       ] = js.undefined
     
     /**
@@ -83,7 +82,7 @@ object typesSendMessageInputMod {
       inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
       inline def set$httpOptions(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
       inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
@@ -97,7 +96,7 @@ object typesSendMessageInputMod {
       inline def setDelaySecondsUndefined: Self = StObject.set(x, "DelaySeconds", js.undefined)
       
       inline def setMessageAttributes(
-        value: StringDictionary[MessageAttributeValue] | (Iterable[js.Tuple2[String, MessageAttributeValue]])
+        value: StringDictionary[MessageAttributeValue] | (js.Iterable[js.Tuple2[String, MessageAttributeValue]])
       ): Self = StObject.set(x, "MessageAttributes", value.asInstanceOf[js.Any])
       
       inline def setMessageAttributesUndefined: Self = StObject.set(x, "MessageAttributes", js.undefined)

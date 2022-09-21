@@ -2,8 +2,8 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.FC
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,12 +13,12 @@ object listHeaderMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/elements/List/ListHeader", JSImport.Default)
   @js.native
-  val default: StatelessComponent[ListHeaderProps] = js.native
+  val default: FC[ListHeaderProps] = js.native
   
   trait ListHeaderProps
     extends StObject
        with StrictListHeaderProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object ListHeaderProps {
     
     inline def apply(): ListHeaderProps = {
@@ -30,7 +30,7 @@ object listHeaderMod extends Shortcut {
   trait StrictListHeaderProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -50,7 +50,7 @@ object listHeaderMod extends Shortcut {
     
     extension [Self <: StrictListHeaderProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -68,8 +68,8 @@ object listHeaderMod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[ListHeaderProps]
+  type _To = FC[ListHeaderProps]
   
   /* This means you don't have to write `default`, but can instead just say `listHeaderMod.foo` */
-  override def _to: StatelessComponent[ListHeaderProps] = default
+  override def _to: FC[ListHeaderProps] = default
 }

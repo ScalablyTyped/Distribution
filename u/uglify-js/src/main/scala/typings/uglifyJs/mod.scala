@@ -2,8 +2,6 @@ package typings.uglifyJs
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.sourceMap.mod.RawSourceMap
-import typings.std.Error
-import typings.std.RegExp
 import typings.uglifyJs.uglifyJsBooleans.`false`
 import typings.uglifyJs.uglifyJsStrings.`inline`
 import typings.uglifyJs.uglifyJsStrings.all
@@ -186,6 +184,12 @@ object mod {
       * hoist function declarations
       * @default false
       */
+    /**
+      * hoist `export` statements to facilitate various `compress` and `mangle` optimizations.
+      * @default true
+      */
+    var hoist_exports: js.UndefOr[Boolean] = js.undefined
+    
     var hoist_funs: js.UndefOr[Boolean] = js.undefined
     
     /**
@@ -207,6 +211,12 @@ object mod {
       * @default true
       */
     var if_return: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * drop unreferenced import symbols when used with `unused`
+      * @default true
+      */
+    var imports: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Inline calls to function with simple/return statement
@@ -257,6 +267,13 @@ object mod {
       * @default true
       */
     var merge_vars: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * set to `true` if you wish to process input as ES module,
+      * i.e. implicit `"use strict";` alongside with `toplevel` enabled.
+      * @default false
+      */
+    var module: js.UndefOr[Boolean] = js.undefined
     
     /**
       * negate `Immediately-Called Function Expressions` where the return value is discarded,
@@ -352,6 +369,12 @@ object mod {
     var switches: js.UndefOr[Boolean] = js.undefined
     
     /**
+      * Compact template literals by embedding expressions and/or converting to string literals, e.g. `foo ${42}` → "foo 42"
+      * @default true
+      */
+    var templates: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * Prevent specific toplevel functions and variables from unused removal
       * (can be array, comma-separated, RegExp or function. Implies toplevel)
       * @default null
@@ -429,6 +452,13 @@ object mod {
       * @default true
       */
     var varify: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Support non-standard Safari/Webkit.
+      * By default UglifyJS will not try to be Safari-proof.
+      * @default false
+      */
+    var webkit: js.UndefOr[Boolean] = js.undefined
   }
   object CompressOptions {
     
@@ -495,6 +525,10 @@ object mod {
       
       inline def setGlobal_defsUndefined: Self = StObject.set(x, "global_defs", js.undefined)
       
+      inline def setHoist_exports(value: Boolean): Self = StObject.set(x, "hoist_exports", value.asInstanceOf[js.Any])
+      
+      inline def setHoist_exportsUndefined: Self = StObject.set(x, "hoist_exports", js.undefined)
+      
       inline def setHoist_funs(value: Boolean): Self = StObject.set(x, "hoist_funs", value.asInstanceOf[js.Any])
       
       inline def setHoist_funsUndefined: Self = StObject.set(x, "hoist_funs", js.undefined)
@@ -510,6 +544,10 @@ object mod {
       inline def setIf_return(value: Boolean): Self = StObject.set(x, "if_return", value.asInstanceOf[js.Any])
       
       inline def setIf_returnUndefined: Self = StObject.set(x, "if_return", js.undefined)
+      
+      inline def setImports(value: Boolean): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
+      
+      inline def setImportsUndefined: Self = StObject.set(x, "imports", js.undefined)
       
       inline def setInline(value: Boolean | InlineFunctions): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
       
@@ -539,6 +577,10 @@ object mod {
       
       inline def setMerge_varsUndefined: Self = StObject.set(x, "merge_vars", js.undefined)
       
+      inline def setModule(value: Boolean): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+      
+      inline def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
+      
       inline def setNegate_iife(value: Boolean): Self = StObject.set(x, "negate_iife", value.asInstanceOf[js.Any])
       
       inline def setNegate_iifeUndefined: Self = StObject.set(x, "negate_iife", js.undefined)
@@ -561,7 +603,7 @@ object mod {
       
       inline def setPure_funcsUndefined: Self = StObject.set(x, "pure_funcs", js.undefined)
       
-      inline def setPure_funcsVarargs(value: String*): Self = StObject.set(x, "pure_funcs", js.Array(value :_*))
+      inline def setPure_funcsVarargs(value: String*): Self = StObject.set(x, "pure_funcs", js.Array(value*))
       
       inline def setPure_getters(value: Boolean | strict): Self = StObject.set(x, "pure_getters", value.asInstanceOf[js.Any])
       
@@ -590,6 +632,10 @@ object mod {
       inline def setSwitches(value: Boolean): Self = StObject.set(x, "switches", value.asInstanceOf[js.Any])
       
       inline def setSwitchesUndefined: Self = StObject.set(x, "switches", js.undefined)
+      
+      inline def setTemplates(value: Boolean): Self = StObject.set(x, "templates", value.asInstanceOf[js.Any])
+      
+      inline def setTemplatesUndefined: Self = StObject.set(x, "templates", js.undefined)
       
       inline def setTop_retain(value: Boolean): Self = StObject.set(x, "top_retain", value.asInstanceOf[js.Any])
       
@@ -640,6 +686,10 @@ object mod {
       inline def setVarify(value: Boolean): Self = StObject.set(x, "varify", value.asInstanceOf[js.Any])
       
       inline def setVarifyUndefined: Self = StObject.set(x, "varify", js.undefined)
+      
+      inline def setWebkit(value: Boolean): Self = StObject.set(x, "webkit", value.asInstanceOf[js.Any])
+      
+      inline def setWebkitUndefined: Self = StObject.set(x, "webkit", js.undefined)
     }
   }
   
@@ -684,7 +734,7 @@ object mod {
       
       inline def setReservedUndefined: Self = StObject.set(x, "reserved", js.undefined)
       
-      inline def setReservedVarargs(value: String*): Self = StObject.set(x, "reserved", js.Array(value :_*))
+      inline def setReservedVarargs(value: String*): Self = StObject.set(x, "reserved", js.Array(value*))
       
       inline def setToplevel(value: Boolean): Self = StObject.set(x, "toplevel", value.asInstanceOf[js.Any])
       
@@ -704,7 +754,7 @@ object mod {
     var keep_quoted: js.UndefOr[Boolean] = js.undefined
     
     /** Pass a RegExp literal to only mangle property names matching the regular expression. */
-    var regex: js.UndefOr[RegExp] = js.undefined
+    var regex: js.UndefOr[js.RegExp] = js.undefined
     
     /** Do not mangle property names listed in the reserved array */
     var reserved: js.UndefOr[js.Array[String]] = js.undefined
@@ -730,7 +780,7 @@ object mod {
       
       inline def setKeep_quotedUndefined: Self = StObject.set(x, "keep_quoted", js.undefined)
       
-      inline def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+      inline def setRegex(value: js.RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
       
       inline def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
       
@@ -738,7 +788,7 @@ object mod {
       
       inline def setReservedUndefined: Self = StObject.set(x, "reserved", js.undefined)
       
-      inline def setReservedVarargs(value: String*): Self = StObject.set(x, "reserved", js.Array(value :_*))
+      inline def setReservedVarargs(value: String*): Self = StObject.set(x, "reserved", js.Array(value*))
     }
   }
   
@@ -750,6 +800,12 @@ object mod {
       * @default {}
       */
     var compress: js.UndefOr[`false` | CompressOptions] = js.undefined
+    
+    /**
+      * Parse as a single expression, e.g. JSON.
+      * @default false
+      */
+    var expression: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set to true to support IE8
@@ -770,6 +826,13 @@ object mod {
       * @default true
       */
     var mangle: js.UndefOr[Boolean | MangleOptions] = js.undefined
+    
+    /**
+      * set to `true` if you wish to process input as ES module,
+      * i.e. implicit `"use strict";` alongside with `toplevel` enabled.
+      * @default false
+      */
+    var module: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Pass an empty object {} or a previously used nameCache object
@@ -809,6 +872,13 @@ object mod {
       * @default false
       */
     var warnings: js.UndefOr[Boolean | verbose] = js.undefined
+    
+    /**
+      * Support non-standard Safari/Webkit.
+      * Equivalent to setting `webkit: true` in `minify()` for `compress`, `mangle` and `output` options.
+      * @default false
+      */
+    var webkit: js.UndefOr[Boolean] = js.undefined
   }
   object MinifyOptions {
     
@@ -823,6 +893,10 @@ object mod {
       
       inline def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
       
+      inline def setExpression(value: Boolean): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+      
+      inline def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
+      
       inline def setIe8(value: Boolean): Self = StObject.set(x, "ie8", value.asInstanceOf[js.Any])
       
       inline def setIe8Undefined: Self = StObject.set(x, "ie8", js.undefined)
@@ -834,6 +908,10 @@ object mod {
       inline def setMangle(value: Boolean | MangleOptions): Self = StObject.set(x, "mangle", value.asInstanceOf[js.Any])
       
       inline def setMangleUndefined: Self = StObject.set(x, "mangle", js.undefined)
+      
+      inline def setModule(value: Boolean): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+      
+      inline def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
       
       inline def setNameCache(value: js.Object): Self = StObject.set(x, "nameCache", value.asInstanceOf[js.Any])
       
@@ -858,6 +936,10 @@ object mod {
       inline def setWarnings(value: Boolean | verbose): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
       
       inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
+      
+      inline def setWebkit(value: Boolean): Self = StObject.set(x, "webkit", value.asInstanceOf[js.Any])
+      
+      inline def setWebkitUndefined: Self = StObject.set(x, "webkit", js.undefined)
     }
   }
   
@@ -865,7 +947,7 @@ object mod {
     
     var code: String
     
-    var error: js.UndefOr[Error] = js.undefined
+    var error: js.UndefOr[js.Error] = js.undefined
     
     var map: String
     
@@ -882,7 +964,7 @@ object mod {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
@@ -892,7 +974,7 @@ object mod {
       
       inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
       
-      inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+      inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value*))
     }
   }
   
@@ -904,7 +986,7 @@ object mod {
     
     var braces: js.UndefOr[Boolean] = js.undefined
     
-    var comments: js.UndefOr[Boolean | all | some | RegExp] = js.undefined
+    var comments: js.UndefOr[Boolean | all | some | js.RegExp] = js.undefined
     
     var indent_level: js.UndefOr[Double] = js.undefined
     
@@ -955,7 +1037,7 @@ object mod {
       
       inline def setBracesUndefined: Self = StObject.set(x, "braces", js.undefined)
       
-      inline def setComments(value: Boolean | all | some | RegExp): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+      inline def setComments(value: Boolean | all | some | js.RegExp): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       
       inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
       

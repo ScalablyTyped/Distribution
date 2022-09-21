@@ -12,13 +12,13 @@ trait IQueryable
     * @param selector String/Ext.Component An Ext.ComponentQuery selector. If no selector is specified, the first child will be returned.
     * @returns Object Ext.Component The matching child Ext.Component (or null if no match was found).
     */
-  var child: js.UndefOr[js.Function1[/* selector */ js.UndefOr[js.Any], js.Any]] = js.undefined
+  var child: js.UndefOr[js.Function1[/* selector */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Method] Retrieves the first descendant of this container which matches the passed selector
     * @param selector String/Ext.Component An Ext.ComponentQuery selector or Ext.Component. If no selector is specified, the first child will be returned.
     * @returns Object Ext.Component The matching descendant Ext.Component (or null if no match was found).
     */
-  var down: js.UndefOr[js.Function1[/* selector */ js.UndefOr[js.Any], js.Any]] = js.undefined
+  var down: js.UndefOr[js.Function1[/* selector */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Method] Retrieves all descendant components which match the passed selector
     * @param selector String Selector complying to an Ext.ComponentQuery selector. If no selector is specified all items will be returned.
@@ -31,7 +31,7 @@ trait IQueryable
     * @param scope Object The scope in which to run the function. If not specified, it will default to the active component.
     * @returns Ext.Component[] Components matched by the passed function
     */
-  var queryBy: js.UndefOr[js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Array]] = js.undefined
+  var queryBy: js.UndefOr[js.Function2[/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], Array]] = js.undefined
   
   /** [Method] Finds a component at any level under this container matching the id itemId
     * @param id String The id to find
@@ -48,17 +48,17 @@ object IQueryable {
   
   extension [Self <: IQueryable](x: Self) {
     
-    inline def setChild(value: /* selector */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "child", js.Any.fromFunction1(value))
+    inline def setChild(value: /* selector */ js.UndefOr[Any] => Any): Self = StObject.set(x, "child", js.Any.fromFunction1(value))
     
     inline def setChildUndefined: Self = StObject.set(x, "child", js.undefined)
     
-    inline def setDown(value: /* selector */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
+    inline def setDown(value: /* selector */ js.UndefOr[Any] => Any): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
     
     inline def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
     
     inline def setQuery(value: /* selector */ js.UndefOr[java.lang.String] => Array): Self = StObject.set(x, "query", js.Any.fromFunction1(value))
     
-    inline def setQueryBy(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Array): Self = StObject.set(x, "queryBy", js.Any.fromFunction2(value))
+    inline def setQueryBy(value: (/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Array): Self = StObject.set(x, "queryBy", js.Any.fromFunction2(value))
     
     inline def setQueryById(value: /* id */ js.UndefOr[java.lang.String] => IComponent): Self = StObject.set(x, "queryById", js.Any.fromFunction1(value))
     

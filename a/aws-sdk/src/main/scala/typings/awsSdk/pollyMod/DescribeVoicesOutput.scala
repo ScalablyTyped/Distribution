@@ -33,6 +33,6 @@ object DescribeVoicesOutput {
     
     inline def setVoicesUndefined: Self = StObject.set(x, "Voices", js.undefined)
     
-    inline def setVoicesVarargs(value: Voice*): Self = StObject.set(x, "Voices", js.Array(value :_*))
+    inline def setVoicesVarargs(value: Voice*): Self = StObject.set(x, "Voices", js.Array(value*))
   }
 }

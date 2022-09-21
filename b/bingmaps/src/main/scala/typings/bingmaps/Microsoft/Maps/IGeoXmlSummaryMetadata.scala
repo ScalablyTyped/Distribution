@@ -13,7 +13,7 @@ trait IGeoXmlSummaryMetadata extends StObject {
   var description: js.UndefOr[String] = js.undefined
   
   /** Any additional metadata that the XML document may have. i.e. atom:author */
-  var metadata: js.UndefOr[IDictionary[js.Any]] = js.undefined
+  var metadata: js.UndefOr[IDictionary[Any]] = js.undefined
   
   /** The title or name of the content of the XML document. */
   var title: js.UndefOr[String] = js.undefined
@@ -35,7 +35,7 @@ object IGeoXmlSummaryMetadata {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setMetadata(value: IDictionary[js.Any]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: IDictionary[Any]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     

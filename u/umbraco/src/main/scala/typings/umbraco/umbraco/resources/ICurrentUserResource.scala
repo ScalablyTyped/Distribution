@@ -25,7 +25,7 @@ trait ICurrentUserResource extends StObject {
     * @returns {Promise} resourcePromise object containing the user array.
     *
     */
-  def changePassword(changePasswordArgs: js.Any): IPromise[IResourcePromise]
+  def changePassword(changePasswordArgs: Any): IPromise[IResourcePromise]
   
   /**
     * @ngdoc method
@@ -35,19 +35,19 @@ trait ICurrentUserResource extends StObject {
     * @description
     * Gets the configuration of the user membership provider which is used to configure the change password form
     */
-  def getMembershipProviderConfig(): js.Any
+  def getMembershipProviderConfig(): Any
 }
 object ICurrentUserResource {
   
-  inline def apply(changePassword: js.Any => IPromise[IResourcePromise], getMembershipProviderConfig: () => js.Any): ICurrentUserResource = {
+  inline def apply(changePassword: Any => IPromise[IResourcePromise], getMembershipProviderConfig: () => Any): ICurrentUserResource = {
     val __obj = js.Dynamic.literal(changePassword = js.Any.fromFunction1(changePassword), getMembershipProviderConfig = js.Any.fromFunction0(getMembershipProviderConfig))
     __obj.asInstanceOf[ICurrentUserResource]
   }
   
   extension [Self <: ICurrentUserResource](x: Self) {
     
-    inline def setChangePassword(value: js.Any => IPromise[IResourcePromise]): Self = StObject.set(x, "changePassword", js.Any.fromFunction1(value))
+    inline def setChangePassword(value: Any => IPromise[IResourcePromise]): Self = StObject.set(x, "changePassword", js.Any.fromFunction1(value))
     
-    inline def setGetMembershipProviderConfig(value: () => js.Any): Self = StObject.set(x, "getMembershipProviderConfig", js.Any.fromFunction0(value))
+    inline def setGetMembershipProviderConfig(value: () => Any): Self = StObject.set(x, "getMembershipProviderConfig", js.Any.fromFunction0(value))
   }
 }

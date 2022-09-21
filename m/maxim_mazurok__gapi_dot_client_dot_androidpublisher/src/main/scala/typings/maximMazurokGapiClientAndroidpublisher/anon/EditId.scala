@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientAndroidpublisher.anon
 
+import typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublisher.ApksAddExternallyHostedRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,17 +17,11 @@ trait EditId extends StObject {
   /** Data format for response. */
   var alt: js.UndefOr[String] = js.undefined
   
-  /** The version code of the APK whose expansion file configuration is being read or modified. */
-  var apkVersionCode: Double
-  
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
   /** Identifier of the edit. */
   var editId: String
-  
-  /** The file type of the expansion file configuration which is being updated. */
-  var expansionFileType: String
   
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
@@ -46,6 +41,9 @@ trait EditId extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
+  /** Request body */
+  var resource: ApksAddExternallyHostedRequest
+  
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
   
@@ -54,8 +52,8 @@ trait EditId extends StObject {
 }
 object EditId {
   
-  inline def apply(apkVersionCode: Double, editId: String, expansionFileType: String, packageName: String): EditId = {
-    val __obj = js.Dynamic.literal(apkVersionCode = apkVersionCode.asInstanceOf[js.Any], editId = editId.asInstanceOf[js.Any], expansionFileType = expansionFileType.asInstanceOf[js.Any], packageName = packageName.asInstanceOf[js.Any])
+  inline def apply(editId: String, packageName: String, resource: ApksAddExternallyHostedRequest): EditId = {
+    val __obj = js.Dynamic.literal(editId = editId.asInstanceOf[js.Any], packageName = packageName.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditId]
   }
   
@@ -73,15 +71,11 @@ object EditId {
     
     inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
     
-    inline def setApkVersionCode(value: Double): Self = StObject.set(x, "apkVersionCode", value.asInstanceOf[js.Any])
-    
     inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
     inline def setEditId(value: String): Self = StObject.set(x, "editId", value.asInstanceOf[js.Any])
-    
-    inline def setExpansionFileType(value: String): Self = StObject.set(x, "expansionFileType", value.asInstanceOf[js.Any])
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
@@ -104,6 +98,8 @@ object EditId {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+    
+    inline def setResource(value: ApksAddExternallyHostedRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

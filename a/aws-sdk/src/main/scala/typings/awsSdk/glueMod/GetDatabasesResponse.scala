@@ -27,7 +27,7 @@ object GetDatabasesResponse {
     
     inline def setDatabaseList(value: DatabaseList): Self = StObject.set(x, "DatabaseList", value.asInstanceOf[js.Any])
     
-    inline def setDatabaseListVarargs(value: Database*): Self = StObject.set(x, "DatabaseList", js.Array(value :_*))
+    inline def setDatabaseListVarargs(value: Database*): Self = StObject.set(x, "DatabaseList", js.Array(value*))
     
     inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

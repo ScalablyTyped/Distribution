@@ -10,10 +10,10 @@ Convert json to HTML table
 | ------------------ | :-------------: |
 | Full name          | html-tableify |
 | Keywords           | html, tableify, json |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 11415 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 882.6666666666666 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/LingyuCoder/html-tableify#readme)

@@ -7,21 +7,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ReflectionProbe extends StObject {
   
-  /* private */ var _add: js.Any = js.native
+  /* private */ var _add: Any = js.native
   
-  /* private */ var _attachedMesh: js.Any = js.native
+  /* private */ var _attachedMesh: Any = js.native
   
-  /* private */ var _invertYAxis: js.Any = js.native
+  /* private */ var _currentSceneUBO: Any = js.native
   
-  /* private */ var _projectionMatrix: js.Any = js.native
+  /* private */ var _invertYAxis: Any = js.native
   
-  /* private */ var _renderTargetTexture: js.Any = js.native
+  /** @hidden */
+  var _parentContainer: Nullable[AbstractScene] = js.native
   
-  /* private */ var _scene: js.Any = js.native
+  /* private */ var _projectionMatrix: Any = js.native
   
-  /* private */ var _target: js.Any = js.native
+  /* private */ var _renderTargetTexture: Any = js.native
   
-  /* private */ var _viewMatrix: js.Any = js.native
+  /* private */ var _scene: Any = js.native
+  
+  /* private */ var _sceneUBOs: Any = js.native
+  
+  /* private */ var _target: Any = js.native
+  
+  /* private */ var _viewMatrix: Any = js.native
   
   /**
     * Attach the probe to a specific mesh (Rendering will be done from attached mesh's position)
@@ -38,7 +45,7 @@ trait ReflectionProbe extends StObject {
   def dispose(): Unit = js.native
   
   /**
-    * Get the class name of the relfection probe.
+    * Get the class name of the refection probe.
     * @returns "ReflectionProbe"
     */
   def getClassName(): String = js.native
@@ -48,6 +55,11 @@ trait ReflectionProbe extends StObject {
     * @returns a Scene
     */
   def getScene(): Scene = js.native
+  
+  /**
+    * Gets or sets an object used to store user defined information for the reflection probe.
+    */
+  var metadata: Any = js.native
   
   /** defines the name of the probe */
   var name: String = js.native
@@ -67,10 +79,10 @@ trait ReflectionProbe extends StObject {
   def samples_=(value: Double): Unit = js.native
   
   /**
-    * Serialize the reflection probe to a JSON representation we can easily use in the resepective Parse function.
+    * Serialize the reflection probe to a JSON representation we can easily use in the respective Parse function.
     * @returns The JSON representation of the texture
     */
-  def serialize(): js.Any = js.native
+  def serialize(): Any = js.native
   
   /**
     * Specifies whether or not the stencil and depth buffer are cleared between two rendering groups

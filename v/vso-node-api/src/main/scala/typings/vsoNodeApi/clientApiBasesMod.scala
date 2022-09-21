@@ -13,7 +13,7 @@ object clientApiBasesMod {
   
   @JSImport("vso-node-api/ClientApiBases", "ClientApiBase")
   @js.native
-  class ClientApiBase protected () extends StObject {
+  open class ClientApiBase protected () extends StObject {
     def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
     def this(baseUrl: String, handlers: js.Array[IRequestHandler], userAgent: String) = this()
     def this(baseUrl: String, handlers: js.Array[IRequestHandler], userAgent: String, options: IRequestOptions) = this()
@@ -27,7 +27,7 @@ object clientApiBasesMod {
     def createRequestOptions(`type`: String): typings.typedRestClient.restClientMod.IRequestOptions = js.native
     def createRequestOptions(`type`: String, apiVersion: String): typings.typedRestClient.restClientMod.IRequestOptions = js.native
     
-    def formatResponse(data: js.Any, responseTypeMetadata: js.Any, isCollection: Boolean): js.Any = js.native
+    def formatResponse(data: Any, responseTypeMetadata: Any, isCollection: Boolean): Any = js.native
     
     var http: HttpClient = js.native
     

@@ -53,7 +53,7 @@ object GetProvisionedProductOutputsInput {
     
     inline def setOutputKeysUndefined: Self = StObject.set(x, "OutputKeys", js.undefined)
     
-    inline def setOutputKeysVarargs(value: OutputKey*): Self = StObject.set(x, "OutputKeys", js.Array(value :_*))
+    inline def setOutputKeysVarargs(value: OutputKey*): Self = StObject.set(x, "OutputKeys", js.Array(value*))
     
     inline def setPageSize(value: PageSize): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
     

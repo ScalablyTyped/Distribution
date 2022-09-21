@@ -11,7 +11,7 @@ object nodeLayerWidgetMod {
   
   @JSImport("storm-react-diagrams/dist/src/widgets/layers/NodeLayerWidget", "NodeLayerWidget")
   @js.native
-  class NodeLayerWidget protected () extends BaseWidget[NodeLayerProps, NodeLayerState] {
+  open class NodeLayerWidget protected () extends BaseWidget[NodeLayerProps, NodeLayerState] {
     def this(props: NodeLayerProps) = this()
     
     @JSName("componentDidUpdate")

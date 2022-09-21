@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientSpellCheckerStopCheckingReason")
 @js.native
-class ASPxClientSpellCheckerStopCheckingReason ()
+open class ASPxClientSpellCheckerStopCheckingReason ()
   extends StObject
      with typings.devexpressWeb.ASPxClientSpellCheckerStopCheckingReason
 object ASPxClientSpellCheckerStopCheckingReason {

@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "OctreeSceneComponent")
 @js.native
-class OctreeSceneComponent protected ()
+/**
+  * Creates a new instance of the component for the given scene
+  * @param scene Defines the scene to register the component in
+  */
+open class OctreeSceneComponent ()
   extends typings.babylonjs.cullingIndexMod.OctreeSceneComponent {
-  /**
-    * Creates a new instance of the component for the given scene
-    * @param scene Defines the scene to register the component in
-    */
   def this(scene: typings.babylonjs.sceneMod.Scene) = this()
 }

@@ -42,7 +42,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("jsrsasign.KJUR.asn1.DEROctetString")
 @js.native
-class DEROctetString ()
+open class DEROctetString ()
   extends typings.jsrsasign.mod.KJUR.asn1.DEROctetString {
   def this(params: ASN1ObjectParam) = this()
   def this(params: HexParam) = this()

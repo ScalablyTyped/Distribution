@@ -15,18 +15,18 @@ trait IUtils extends StObject {
   
   def camelizeVar(text: String): String = js.native
   
-  def enumSql(dir: String): js.Any = js.native
+  def enumSql(dir: String): Any = js.native
   def enumSql(
     dir: String,
     options: Unit,
-    cb: js.Function3[/* file */ String, /* name */ String, /* path */ String, js.Any]
-  ): js.Any = js.native
-  def enumSql(dir: String, options: IgnoreErrors): js.Any = js.native
+    cb: js.Function3[/* file */ String, /* name */ String, /* path */ String, Any]
+  ): Any = js.native
+  def enumSql(dir: String, options: IgnoreErrors): Any = js.native
   def enumSql(
     dir: String,
     options: IgnoreErrors,
-    cb: js.Function3[/* file */ String, /* name */ String, /* path */ String, js.Any]
-  ): js.Any = js.native
+    cb: js.Function3[/* file */ String, /* name */ String, /* path */ String, Any]
+  ): Any = js.native
   
   def taskArgs[T](args: IArguments): ITaskArguments[T] = js.native
 }

@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Rule set for modifying a set of infoTypes to alter behavior under certain
-  * circumstances, depending on the specific details of the rules within the
-  * set.
-  */
 trait SchemaGooglePrivacyDlpV2InspectionRuleSet extends StObject {
   
   /**
@@ -34,12 +29,12 @@ object SchemaGooglePrivacyDlpV2InspectionRuleSet {
     
     inline def setInfoTypesUndefined: Self = StObject.set(x, "infoTypes", js.undefined)
     
-    inline def setInfoTypesVarargs(value: SchemaGooglePrivacyDlpV2InfoType*): Self = StObject.set(x, "infoTypes", js.Array(value :_*))
+    inline def setInfoTypesVarargs(value: SchemaGooglePrivacyDlpV2InfoType*): Self = StObject.set(x, "infoTypes", js.Array(value*))
     
     inline def setRules(value: js.Array[SchemaGooglePrivacyDlpV2InspectionRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
     inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    inline def setRulesVarargs(value: SchemaGooglePrivacyDlpV2InspectionRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: SchemaGooglePrivacyDlpV2InspectionRule*): Self = StObject.set(x, "rules", js.Array(value*))
   }
 }

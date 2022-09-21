@@ -37,13 +37,13 @@ object hexagonMod {
       
       inline def setBinWidthUndefined: Self = StObject.set(x, "binWidth", js.undefined)
       
-      inline def setBinWidthVarargs(value: Double*): Self = StObject.set(x, "binWidth", js.Array(value :_*))
+      inline def setBinWidthVarargs(value: Double*): Self = StObject.set(x, "binWidth", js.Array(value*))
       
       inline def setBins(value: js.Array[Double]): Self = StObject.set(x, "bins", value.asInstanceOf[js.Any])
       
       inline def setBinsUndefined: Self = StObject.set(x, "bins", js.undefined)
       
-      inline def setBinsVarargs(value: Double*): Self = StObject.set(x, "bins", js.Array(value :_*))
+      inline def setBinsVarargs(value: Double*): Self = StObject.set(x, "bins", js.Array(value*))
       
       inline def setFields(value: js.Tuple2[String, String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
@@ -51,7 +51,7 @@ object hexagonMod {
       
       inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      inline def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value :_*))
+      inline def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value*))
       
       inline def setSizeByCount(value: Boolean): Self = StObject.set(x, "sizeByCount", value.asInstanceOf[js.Any])
       

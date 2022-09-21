@@ -1,6 +1,7 @@
 package typings.parse.mod
 
 import typings.parse.mod.global.Parse.Attributes
+import typings.parse.mod.global.Parse.RestSchema
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("parse", "Schema")
 @js.native
-class Schema[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */] protected ()
+open class Schema[T /* <: typings.parse.mod.global.Parse.Object[Attributes] */] protected ()
   extends typings.parse.mod.global.Parse.Schema[T] {
   def this(className: String) = this()
 }
@@ -39,5 +40,5 @@ object Schema {
     * the query completes.
     */
   /* static member */
-  inline def all(): js.Promise[js.Array[typings.parse.mod.global.Parse.Schema[js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")().asInstanceOf[js.Promise[js.Array[typings.parse.mod.global.Parse.Schema[js.Any]]]]
+  inline def all(): js.Promise[js.Array[RestSchema]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")().asInstanceOf[js.Promise[js.Array[RestSchema]]]
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConfigSnapshotDeliveryProperties extends StObject {
   
   /**
-    * The frequency with which AWS Config delivers configuration snapshots.
+    * The frequency with which Config delivers configuration snapshots.
     */
   var deliveryFrequency: js.UndefOr[MaximumExecutionFrequency] = js.undefined
 }

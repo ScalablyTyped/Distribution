@@ -10,10 +10,10 @@ React addons for nuclear-js
 | ------------------ | :-------------: |
 | Full name          | nuclear-js-react-addons-chefsplate |
 | Keywords           | flux, nuclear, immutable, react, addons, functional, stateless |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 706 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 58.333333333333336 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/chefsplate/nuclear-js-react-addons)

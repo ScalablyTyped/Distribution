@@ -28,7 +28,7 @@ object tokenCacheMod {
     */
   @JSImport("authmosphere/lib/src/token-cache", "TokenCache")
   @js.native
-  class TokenCache protected () extends StObject {
+  open class TokenCache protected () extends StObject {
     /**
       * @param tokenConfig
       * @param oauthConfig
@@ -40,7 +40,7 @@ object tokenCacheMod {
       options: TokenCacheOptions
     ) = this()
     
-    /* private */ var cacheConfig: js.Any = js.native
+    /* private */ var cacheConfig: Any = js.native
     
     /**
       * Resolves with either a cached token for the given name or with a newly requested one (which is then cached).
@@ -49,7 +49,7 @@ object tokenCacheMod {
       * @param tokenName
       * @returns {Promise<Token>}
       */
-    def get(tokenName: String): js.Promise[Token[Record[String, js.Any]]] = js.native
+    def get(tokenName: String): js.Promise[Token[Record[String | Double | js.Symbol, Any]]] = js.native
     
     /**
       * Checks whether a valid token for the given name is present.
@@ -59,13 +59,13 @@ object tokenCacheMod {
       * @param tokenName
       * @returns {Promise<Token>}
       */
-    /* private */ var getCachedToken: js.Any = js.native
+    /* private */ var getCachedToken: Any = js.native
     
-    /* private */ var isTokenConfigured: js.Any = js.native
+    /* private */ var isTokenConfigured: Any = js.native
     
-    /* private */ var logger: js.Any = js.native
+    /* private */ var logger: Any = js.native
     
-    /* private */ var oauthConfig: js.Any = js.native
+    /* private */ var oauthConfig: Any = js.native
     
     /**
       * Forces the cache to delete present tokens and request new ones.
@@ -84,7 +84,7 @@ object tokenCacheMod {
       * @param tokenName
       * @returns {Promise<Token>}
       */
-    def refreshToken(tokenName: String): js.Promise[Token[Record[String, js.Any]]] = js.native
+    def refreshToken(tokenName: String): js.Promise[Token[Record[String | Double | js.Symbol, Any]]] = js.native
     
     /**
       * The resolveAccessTokenFactory function, creates a function,
@@ -95,14 +95,14 @@ object tokenCacheMod {
       */
     def resolveAccessTokenFactory(key: String): js.Function0[js.Promise[String]] = js.native
     
-    /* private */ var tokenConfig: js.Any = js.native
+    /* private */ var tokenConfig: Any = js.native
     
-    /* private */ var tokenMap: js.Any = js.native
+    /* private */ var tokenMap: Any = js.native
   }
   
   @JSImport("authmosphere/lib/src/token-cache", "defaultCacheConfig")
   @js.native
   val defaultCacheConfig: CacheConfig = js.native
   
-  type TokenMap = StringDictionary[js.UndefOr[Token[Record[String, js.Any]]]]
+  type TokenMap = StringDictionary[js.UndefOr[Token[Record[String | Double | js.Symbol, Any]]]]
 }

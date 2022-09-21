@@ -6,11 +6,11 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped new (args : ...any): react-native.react-native.NativeMethodsMixinType
+- Dropped new (args : ...any): react-native.react-native.NativeMethods
 - Dropped new (args : ...any): react-native.react-native.TimerMixin */ @JSImport("react-native", "TextInput")
 @js.native
-class TextInput ()
-  extends Component[TextInputProps, js.Object, js.Any] {
+open class TextInput ()
+  extends Component[TextInputProps, js.Object, Any] {
   
   /**
     * Removes all text from the input.

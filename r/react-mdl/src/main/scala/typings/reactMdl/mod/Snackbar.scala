@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-mdl", "Snackbar")
 @js.native
-class Snackbar protected () extends _MDLComponent[SnackbarProps] {
+open class Snackbar protected () extends _MDLComponent[SnackbarProps] {
   def this(props: SnackbarProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: SnackbarProps, context: js.Any) = this()
+  def this(props: SnackbarProps, context: Any) = this()
 }

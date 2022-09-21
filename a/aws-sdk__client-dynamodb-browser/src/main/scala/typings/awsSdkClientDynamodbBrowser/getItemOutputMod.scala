@@ -8,5 +8,5 @@ object getItemOutputMod {
   
   @JSImport("@aws-sdk/client-dynamodb-browser/model/GetItemOutput", "GetItemOutput")
   @js.native
-  val GetItemOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GetItemOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

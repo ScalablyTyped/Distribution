@@ -24,7 +24,7 @@ object sideEffectMod {
   }
   object SideEffectProps {
     
-    inline def apply(reduceComponentsToState: (js.Array[ReactElement], js.Any) => State): SideEffectProps = {
+    inline def apply(reduceComponentsToState: (js.Array[ReactElement], Any) => State): SideEffectProps = {
       val __obj = js.Dynamic.literal(reduceComponentsToState = js.Any.fromFunction2(reduceComponentsToState))
       __obj.asInstanceOf[SideEffectProps]
     }
@@ -39,7 +39,7 @@ object sideEffectMod {
       
       inline def setInAmpModeUndefined: Self = StObject.set(x, "inAmpMode", js.undefined)
       
-      inline def setReduceComponentsToState(value: (js.Array[ReactElement], js.Any) => State): Self = StObject.set(x, "reduceComponentsToState", js.Any.fromFunction2(value))
+      inline def setReduceComponentsToState(value: (js.Array[ReactElement], Any) => State): Self = StObject.set(x, "reduceComponentsToState", js.Any.fromFunction2(value))
     }
   }
   

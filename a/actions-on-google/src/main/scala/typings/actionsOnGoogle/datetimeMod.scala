@@ -12,7 +12,7 @@ object datetimeMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper/datetime", "DateTime")
   @js.native
-  class DateTime protected () extends SoloHelper[actionsDotintentDotDATETIME, GoogleActionsV2DateTimeValueSpec] {
+  open class DateTime protected () extends SoloHelper[actionsDotintentDotDATETIME, GoogleActionsV2DateTimeValueSpec] {
     /**
       * @param options DateTime options
       * @public

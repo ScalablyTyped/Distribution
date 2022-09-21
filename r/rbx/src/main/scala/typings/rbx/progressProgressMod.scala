@@ -65,7 +65,7 @@ object progressProgressMod {
   
   @JSImport("rbx/elements/progress/progress", "Progress")
   @js.native
-  val Progress: ForwardRefAsExoticComponent[ProgressProps, ElementType[js.Any]] = js.native
+  val Progress: ForwardRefAsExoticComponent[ProgressProps, ElementType[Any]] = js.native
   
   trait ProgressModifierProps extends StObject {
     

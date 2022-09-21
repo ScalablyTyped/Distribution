@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ɵNgModuleDef[T] extends StObject {
   
   /** List of components to bootstrap. */
-  var bootstrap: js.Array[Type[js.Any]] | js.Function0[js.Array[Type[js.Any]]]
+  var bootstrap: js.Array[Type[Any]] | js.Function0[js.Array[Type[Any]]]
   
   /** List of components, directives, and pipes declared by this module. */
-  var declarations: js.Array[Type[js.Any]] | js.Function0[js.Array[Type[js.Any]]]
+  var declarations: js.Array[Type[Any]] | js.Function0[js.Array[Type[Any]]]
   
   /**
     * List of modules, `ModuleWithProviders`, components, directives, or pipes exported by this
     * module.
     */
-  var exports: js.Array[Type[js.Any]] | js.Function0[js.Array[Type[js.Any]]]
+  var exports: js.Array[Type[Any]] | js.Function0[js.Array[Type[Any]]]
   
   /** Unique ID for the module with which it should be registered.  */
   var id: String | Null
   
   /** List of modules or `ModuleWithProviders` imported by this module. */
-  var imports: js.Array[Type[js.Any]] | js.Function0[js.Array[Type[js.Any]]]
+  var imports: js.Array[Type[Any]] | js.Function0[js.Array[Type[Any]]]
   
   /** The set of schemas that declare elements to be allowed in the NgModule. */
   var schemas: js.Array[SchemaMetadata] | Null
@@ -40,10 +40,10 @@ trait ɵNgModuleDef[T] extends StObject {
 object ɵNgModuleDef {
   
   inline def apply[T](
-    bootstrap: js.Array[Type[js.Any]] | js.Function0[js.Array[Type[js.Any]]],
-    declarations: js.Array[Type[js.Any]] | js.Function0[js.Array[Type[js.Any]]],
-    exports: js.Array[Type[js.Any]] | js.Function0[js.Array[Type[js.Any]]],
-    imports: js.Array[Type[js.Any]] | js.Function0[js.Array[Type[js.Any]]],
+    bootstrap: js.Array[Type[Any]] | js.Function0[js.Array[Type[Any]]],
+    declarations: js.Array[Type[Any]] | js.Function0[js.Array[Type[Any]]],
+    exports: js.Array[Type[Any]] | js.Function0[js.Array[Type[Any]]],
+    imports: js.Array[Type[Any]] | js.Function0[js.Array[Type[Any]]],
     `type`: T
   ): ɵNgModuleDef[T] = {
     val __obj = js.Dynamic.literal(bootstrap = bootstrap.asInstanceOf[js.Any], declarations = declarations.asInstanceOf[js.Any], exports = exports.asInstanceOf[js.Any], imports = imports.asInstanceOf[js.Any], id = null, schemas = null, transitiveCompileScopes = null)
@@ -53,39 +53,39 @@ object ɵNgModuleDef {
   
   extension [Self <: ɵNgModuleDef[?], T](x: Self & ɵNgModuleDef[T]) {
     
-    inline def setBootstrap(value: js.Array[Type[js.Any]] | js.Function0[js.Array[Type[js.Any]]]): Self = StObject.set(x, "bootstrap", value.asInstanceOf[js.Any])
+    inline def setBootstrap(value: js.Array[Type[Any]] | js.Function0[js.Array[Type[Any]]]): Self = StObject.set(x, "bootstrap", value.asInstanceOf[js.Any])
     
-    inline def setBootstrapFunction0(value: () => js.Array[Type[js.Any]]): Self = StObject.set(x, "bootstrap", js.Any.fromFunction0(value))
+    inline def setBootstrapFunction0(value: () => js.Array[Type[Any]]): Self = StObject.set(x, "bootstrap", js.Any.fromFunction0(value))
     
-    inline def setBootstrapVarargs(value: Type[js.Any]*): Self = StObject.set(x, "bootstrap", js.Array(value :_*))
+    inline def setBootstrapVarargs(value: Type[Any]*): Self = StObject.set(x, "bootstrap", js.Array(value*))
     
-    inline def setDeclarations(value: js.Array[Type[js.Any]] | js.Function0[js.Array[Type[js.Any]]]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
+    inline def setDeclarations(value: js.Array[Type[Any]] | js.Function0[js.Array[Type[Any]]]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
     
-    inline def setDeclarationsFunction0(value: () => js.Array[Type[js.Any]]): Self = StObject.set(x, "declarations", js.Any.fromFunction0(value))
+    inline def setDeclarationsFunction0(value: () => js.Array[Type[Any]]): Self = StObject.set(x, "declarations", js.Any.fromFunction0(value))
     
-    inline def setDeclarationsVarargs(value: Type[js.Any]*): Self = StObject.set(x, "declarations", js.Array(value :_*))
+    inline def setDeclarationsVarargs(value: Type[Any]*): Self = StObject.set(x, "declarations", js.Array(value*))
     
-    inline def setExports(value: js.Array[Type[js.Any]] | js.Function0[js.Array[Type[js.Any]]]): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
+    inline def setExports(value: js.Array[Type[Any]] | js.Function0[js.Array[Type[Any]]]): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
     
-    inline def setExportsFunction0(value: () => js.Array[Type[js.Any]]): Self = StObject.set(x, "exports", js.Any.fromFunction0(value))
+    inline def setExportsFunction0(value: () => js.Array[Type[Any]]): Self = StObject.set(x, "exports", js.Any.fromFunction0(value))
     
-    inline def setExportsVarargs(value: Type[js.Any]*): Self = StObject.set(x, "exports", js.Array(value :_*))
+    inline def setExportsVarargs(value: Type[Any]*): Self = StObject.set(x, "exports", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setIdNull: Self = StObject.set(x, "id", null)
     
-    inline def setImports(value: js.Array[Type[js.Any]] | js.Function0[js.Array[Type[js.Any]]]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
+    inline def setImports(value: js.Array[Type[Any]] | js.Function0[js.Array[Type[Any]]]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
     
-    inline def setImportsFunction0(value: () => js.Array[Type[js.Any]]): Self = StObject.set(x, "imports", js.Any.fromFunction0(value))
+    inline def setImportsFunction0(value: () => js.Array[Type[Any]]): Self = StObject.set(x, "imports", js.Any.fromFunction0(value))
     
-    inline def setImportsVarargs(value: Type[js.Any]*): Self = StObject.set(x, "imports", js.Array(value :_*))
+    inline def setImportsVarargs(value: Type[Any]*): Self = StObject.set(x, "imports", js.Array(value*))
     
     inline def setSchemas(value: js.Array[SchemaMetadata]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
     
     inline def setSchemasNull: Self = StObject.set(x, "schemas", null)
     
-    inline def setSchemasVarargs(value: SchemaMetadata*): Self = StObject.set(x, "schemas", js.Array(value :_*))
+    inline def setSchemasVarargs(value: SchemaMetadata*): Self = StObject.set(x, "schemas", js.Array(value*))
     
     inline def setTransitiveCompileScopes(value: ɵNgModuleTransitiveScopes): Self = StObject.set(x, "transitiveCompileScopes", value.asInstanceOf[js.Any])
     

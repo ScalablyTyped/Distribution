@@ -1,5 +1,6 @@
 package typings.aframe.mod.global.AFRAME.THREE
 
+import typings.three.utilsMod.ColorRepresentation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("AFRAME.THREE.Fog")
 @js.native
-class Fog protected ()
+open class Fog protected ()
   extends typings.three.mod.Fog {
-  def this(color: typings.three.colorMod.Color) = this()
+  def this(color: ColorRepresentation) = this()
 }

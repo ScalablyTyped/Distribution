@@ -9,17 +9,20 @@ trait RollbackNodePoolUpgradeRequest extends StObject {
   /** Deprecated. The name of the cluster to rollback. This field has been deprecated and replaced by the name field. */
   var clusterId: js.UndefOr[String] = js.undefined
   
-  /** The name (project, location, cluster, node pool id) of the node poll to rollback upgrade. Specified in the format `projects/∗/locations/∗/clusters/∗/nodePools/ *`. */
+  /** The name (project, location, cluster, node pool id) of the node poll to rollback upgrade. Specified in the format `projects/ *‍/locations/ *‍/clusters/ *‍/nodePools/ *`. */
   var name: js.UndefOr[String] = js.undefined
   
   /** Deprecated. The name of the node pool to rollback. This field has been deprecated and replaced by the name field. */
   var nodePoolId: js.UndefOr[String] = js.undefined
   
   /**
-    * Deprecated. The Google Developers Console [project ID or project number](https://support.google.com/cloud/answer/6158840). This field has been deprecated and replaced by the name
-    * field.
+    * Deprecated. The Google Developers Console [project ID or project number](https://cloud.google.com/resource-manager/docs/creating-managing-projects). This field has been deprecated
+    * and replaced by the name field.
     */
   var projectId: js.UndefOr[String] = js.undefined
+  
+  /** Option for rollback to ignore the PodDisruptionBudget. Default value is false. */
+  var respectPdb: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Deprecated. The name of the Google Compute Engine [zone](https://cloud.google.com/compute/docs/zones#available) in which the cluster resides. This field has been deprecated and
@@ -51,6 +54,10 @@ object RollbackNodePoolUpgradeRequest {
     inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
     inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    
+    inline def setRespectPdb(value: Boolean): Self = StObject.set(x, "respectPdb", value.asInstanceOf[js.Any])
+    
+    inline def setRespectPdbUndefined: Self = StObject.set(x, "respectPdb", js.undefined)
     
     inline def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     

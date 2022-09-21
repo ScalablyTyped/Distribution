@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PutAssetPropertyValueEntry extends StObject {
   
   /**
-    * The ID of the AWS IoT SiteWise asset. You must specify either a propertyAlias or both an aliasId and a propertyId. Accepts substitution templates.
+    * The ID of the IoT SiteWise asset. You must specify either a propertyAlias or both an aliasId and a propertyId. Accepts substitution templates.
     */
   var assetId: js.UndefOr[AssetId] = js.undefined
   
@@ -58,6 +58,6 @@ object PutAssetPropertyValueEntry {
     
     inline def setPropertyValues(value: AssetPropertyValueList): Self = StObject.set(x, "propertyValues", value.asInstanceOf[js.Any])
     
-    inline def setPropertyValuesVarargs(value: AssetPropertyValue*): Self = StObject.set(x, "propertyValues", js.Array(value :_*))
+    inline def setPropertyValuesVarargs(value: AssetPropertyValue*): Self = StObject.set(x, "propertyValues", js.Array(value*))
   }
 }

@@ -40,6 +40,6 @@ object DescribeExpressionsRequest {
     
     inline def setExpressionNamesUndefined: Self = StObject.set(x, "ExpressionNames", js.undefined)
     
-    inline def setExpressionNamesVarargs(value: StandardName*): Self = StObject.set(x, "ExpressionNames", js.Array(value :_*))
+    inline def setExpressionNamesVarargs(value: StandardName*): Self = StObject.set(x, "ExpressionNames", js.Array(value*))
   }
 }

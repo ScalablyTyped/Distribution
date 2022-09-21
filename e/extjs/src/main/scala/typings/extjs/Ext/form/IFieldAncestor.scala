@@ -10,7 +10,7 @@ trait IFieldAncestor
      with IBase {
   
   /** [Config Option] (Object) */
-  var fieldDefaults: js.UndefOr[js.Any] = js.undefined
+  var fieldDefaults: js.UndefOr[Any] = js.undefined
   
   /** [Method] Initializes the FieldAncestor s state this must be called from the initComponent method of any components importing */
   var initFieldAncestor: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -44,7 +44,7 @@ object IFieldAncestor {
   
   extension [Self <: IFieldAncestor](x: Self) {
     
-    inline def setFieldDefaults(value: js.Any): Self = StObject.set(x, "fieldDefaults", value.asInstanceOf[js.Any])
+    inline def setFieldDefaults(value: Any): Self = StObject.set(x, "fieldDefaults", value.asInstanceOf[js.Any])
     
     inline def setFieldDefaultsUndefined: Self = StObject.set(x, "fieldDefaults", js.undefined)
     

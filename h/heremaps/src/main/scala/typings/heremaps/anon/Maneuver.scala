@@ -19,6 +19,6 @@ object Maneuver {
     
     inline def setManeuver(value: js.Array[Id]): Self = StObject.set(x, "maneuver", value.asInstanceOf[js.Any])
     
-    inline def setManeuverVarargs(value: Id*): Self = StObject.set(x, "maneuver", js.Array(value :_*))
+    inline def setManeuverVarargs(value: Id*): Self = StObject.set(x, "maneuver", js.Array(value*))
   }
 }

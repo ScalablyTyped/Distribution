@@ -1,7 +1,7 @@
 
 # Scala.js typings for algolia__client-analytics
 
-Typings are for version 4.8.0
+Typings are for version 4.14.2
 
 
 
@@ -9,10 +9,10 @@ Typings are for version 4.8.0
 | ------------------ | :-------------: |
 | Full name          | @algolia/client-analytics |
 | Keywords           | - |
-| # releases         | 37 |
-| # dependents       | 5 |
-| # downloads        | 6726874 |
-| # stars            | 0 |
+| # releases         | 49 |
+| # dependents       | 0.0 |
+| # downloads        | 2979269.6666666665 |
+| # stars            | 1145.0 |
 
 ## Links
 - [Homepage](https://github.com/algolia/algoliasearch-client-javascript#readme)

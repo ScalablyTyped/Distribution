@@ -10,10 +10,10 @@ object arrowBackMod {
   
   @JSImport("material-ui/svg-icons/navigation/arrow-back", JSImport.Default)
   @js.native
-  class default () extends NavigationArrowBack
+  open class default () extends NavigationArrowBack
   
   @JSImport("material-ui/svg-icons/navigation/arrow-back", "NavigationArrowBack")
   @js.native
-  class NavigationArrowBack ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NavigationArrowBack ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -10,10 +10,10 @@ List-related schema elements and commands for ProseMirror
 | ------------------ | :-------------: |
 | Full name          | prosemirror-schema-list |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 140 |
-| # downloads        | 6535855 |
-| # stars            | 0 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 1739741.6666666667 |
+| # stars            | 21.0 |
 
 ## Links
 - [Homepage](https://github.com/prosemirror/prosemirror-schema-list#readme)

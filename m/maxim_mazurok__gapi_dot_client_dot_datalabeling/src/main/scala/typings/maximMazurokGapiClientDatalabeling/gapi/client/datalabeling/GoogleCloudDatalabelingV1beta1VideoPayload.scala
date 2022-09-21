@@ -46,7 +46,7 @@ object GoogleCloudDatalabelingV1beta1VideoPayload {
     
     inline def setVideoThumbnailsUndefined: Self = StObject.set(x, "videoThumbnails", js.undefined)
     
-    inline def setVideoThumbnailsVarargs(value: GoogleCloudDatalabelingV1beta1VideoThumbnail*): Self = StObject.set(x, "videoThumbnails", js.Array(value :_*))
+    inline def setVideoThumbnailsVarargs(value: GoogleCloudDatalabelingV1beta1VideoThumbnail*): Self = StObject.set(x, "videoThumbnails", js.Array(value*))
     
     inline def setVideoUri(value: String): Self = StObject.set(x, "videoUri", value.asInstanceOf[js.Any])
     

@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-zss-rich-text-editor", "RichTextToolbar")
 @js.native
-class RichTextToolbar protected ()
-  extends Component[PartialRichTextToolbarPro, js.Object, js.Any] {
+open class RichTextToolbar protected ()
+  extends Component[PartialRichTextToolbarPro, js.Object, Any] {
   def this(props: PartialRichTextToolbarPro) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: PartialRichTextToolbarPro, context: js.Any) = this()
+  def this(props: PartialRichTextToolbarPro, context: Any) = this()
 }

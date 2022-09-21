@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("tinder", "TinderClient")
   @js.native
-  class TinderClient () extends StObject {
+  open class TinderClient () extends StObject {
     
     /**
       * Authorize this tinder client
@@ -18,7 +18,7 @@ object mod {
       * @param {String} fbId the Facebook user id.
       * @param {Function} callback the callback to invoke when the request completes
       */
-    def authorize(fbToken: String, fbId: String, callback: Callback[js.Any]): Unit = js.native
+    def authorize(fbToken: String, fbId: String, callback: Callback[Any]): Unit = js.native
     
     /**
       * Change a web username for the current account if it's already been set
@@ -26,7 +26,7 @@ object mod {
       * @param {String} userName the username to request be created
       * @param {Function} callback the callback to invoke when the request completes
       */
-    def changeUsername(username: String, callback: Callback[js.Any]): Unit = js.native
+    def changeUsername(username: String, callback: Callback[Any]): Unit = js.native
     
     /**
       * Create a web username for the current account
@@ -34,45 +34,45 @@ object mod {
       * @param {String} userName the username to request be created
       * @param {Function} callback the callback to invoke when the request completes
       */
-    def createUsername(username: String, callback: Callback[js.Any]): Unit = js.native
+    def createUsername(username: String, callback: Callback[Any]): Unit = js.native
     
     /**
       * Delete the current account
       * @param {Function} callback the callback to invoke when the request completes
       */
-    def deleteAccount(callback: Callback[js.Any]): Unit = js.native
+    def deleteAccount(callback: Callback[Any]): Unit = js.native
     
     /**
       * Delete your current job
       * @param {Function} callback the callback to invoke when the request completes
       */
-    def deleteJob(callback: Callback[js.Any]): Unit = js.native
+    def deleteJob(callback: Callback[Any]): Unit = js.native
     
     /**
       * Delete a picture from the current account
       * @param {String} pictureId the id of the picture
       * @param {Function} callback the callback to invoke when the request completes
       */
-    def deletePicture(pictureId: String, callback: Callback[js.Any]): Unit = js.native
+    def deletePicture(pictureId: String, callback: Callback[Any]): Unit = js.native
     
     /**
       * Delete your current school
       * @param {Function} callback the callback to invoke when the request completes
       */
-    def deleteSchool(callback: Callback[js.Any]): Unit = js.native
+    def deleteSchool(callback: Callback[Any]): Unit = js.native
     
     /**
       * Deletes the existing web username for the current account
       *
       * @param {Function} callback the callback to invoke when the request completes
       */
-    def deleteUsername(username: String, callback: Callback[js.Any]): Unit = js.native
+    def deleteUsername(username: String, callback: Callback[Any]): Unit = js.native
     
     /**
       * Gets the current account info
       * @param {Function} callback the callback to invoke when the request completes
       */
-    def getAccount(callback: Callback[js.Any]): Unit = js.native
+    def getAccount(callback: Callback[Any]): Unit = js.native
     
     /**
       * Returns the xAuthToken
@@ -84,7 +84,7 @@ object mod {
       * Returns client information and globals
       * Globals are used for interacting with tinder api limits
       */
-    def getDefaults(): js.Any = js.native
+    def getDefaults(): Any = js.native
     
     /**
       * Gets the entire history for the current account (all matches, messages, blocks, etc.)
@@ -102,7 +102,7 @@ object mod {
       * Get authenticated user info
       * @param {Function} callback the callback to invoke when the request completes
       */
-    def getProfile(callback: Callback[js.Any]): Unit = js.native
+    def getProfile(callback: Callback[Any]): Unit = js.native
     
     /**
       * Gets a list of nearby users
@@ -117,7 +117,7 @@ object mod {
       * @param {String} userId the id of the user
       * @param {Function} callback the callback to invoke when the request completes
       */
-    def getShareLink(userId: String, callback: Callback[js.Any]): Unit = js.native
+    def getShareLink(userId: String, callback: Callback[Any]): Unit = js.native
     
     /**
       * Gets a list of new updates. This will be things like new messages, users who liked you, etc.
@@ -130,7 +130,7 @@ object mod {
       * @param {String} userId the id of the user
       * @param {Function} callback the callback to invoke when the request completes
       */
-    def getUser(userId: String, callback: Callback[js.Any]): Unit = js.native
+    def getUser(userId: String, callback: Callback[Any]): Unit = js.native
     
     /**
       * Returns whether this client is authorized
@@ -143,14 +143,14 @@ object mod {
       * @param {String} userId the id of the user
       * @param {Function} callback the callback to invoke when the request completes
       */
-    def like(userId: String, callback: Callback[js.Any]): Unit = js.native
+    def like(userId: String, callback: Callback[Any]): Unit = js.native
     
     /**
       * Passes (swipes left) on a user
       * @param {String} userId the id of the user
       * @param {Function} callback the callback to invoke when the request completes
       */
-    def pass(userId: String, callback: Callback[js.Any]): Unit = js.native
+    def pass(userId: String, callback: Callback[Any]): Unit = js.native
     
     /**
       * Report a user
@@ -160,13 +160,13 @@ object mod {
       * @param {String} causeText optional reason for report when causeId is 0 (other)
       * @param {Function} callback the callback to invoke when the request completes
       */
-    def report(userId: String, causeId: Number, causeText: String, callback: Callback[js.Any]): Unit = js.native
+    def report(userId: String, causeId: Number, causeText: String, callback: Callback[Any]): Unit = js.native
     
     /**
       * Reset the passport location
       * @param {Function} callback the callback to invoke when the request completes
       */
-    def resetPassport(callback: Callback[js.Any]): Unit = js.native
+    def resetPassport(callback: Callback[Any]): Unit = js.native
     
     /**
       * Sends a message to a user
@@ -174,7 +174,7 @@ object mod {
       * @param {String} message the message to send
       * @param {Function} callback the callback to invoke when the request completes
       */
-    def sendMessage(matchId: String, message: String, callback: Callback[js.Any]): Unit = js.native
+    def sendMessage(matchId: String, message: String, callback: Callback[Any]): Unit = js.native
     
     /**
       * Set auth token if you have it saved, no need to do fb login every time
@@ -186,35 +186,35 @@ object mod {
       * @param {String} userId the id of the user
       * @param {Function} callback the callback to invoke when the request completes
       */
-    def superLike(userId: String, callback: Callback[js.Any]): Unit = js.native
+    def superLike(userId: String, callback: Callback[Any]): Unit = js.native
     
     /**
       * Unmatch with a user
       * @param {String} matchID the id of the match
       * @param {Function} callback the callback to invoke when the request completes
       */
-    def unmatch(matchId: String, callback: Callback[js.Any]): Unit = js.native
+    def unmatch(matchId: String, callback: Callback[Any]): Unit = js.native
     
     /**
       * Update your bio
       * @param {String} bio is you bio (500 characters max.)
       * @param {Function} callback the callback to invoke when the request completes
       */
-    def updateBio(bio: String, callback: Callback[js.Any]): Unit = js.native
+    def updateBio(bio: String, callback: Callback[Any]): Unit = js.native
     
     /**
       * Update your gender
       * @param {Number} gender is your gender (0 = Male, 1 = Female)
       * @param {Function} callback the callback to invoke when the request completes
       */
-    def updateGender(gender: Double, callback: Callback[js.Any]): Unit = js.native
+    def updateGender(gender: Double, callback: Callback[Any]): Unit = js.native
     
     /**
       * Update your job
       * @param {String} id is the facebook id of the job
       * @param {Function} callback the callback to invoke when the request completes
       */
-    def updateJob(id: String, callback: Callback[js.Any]): Unit = js.native
+    def updateJob(id: String, callback: Callback[Any]): Unit = js.native
     
     /**
       * Update the passport location
@@ -222,7 +222,7 @@ object mod {
       * @param {Number} lat the latitutde
       * @param {Function} callback the callback to invoke when the request completes
       */
-    def updatePassport(latitude: String, longitude: String, callback: Callback[js.Any]): Unit = js.native
+    def updatePassport(latitude: String, longitude: String, callback: Callback[Any]): Unit = js.native
     
     /**
       * Updates the geographical position for the current account
@@ -230,7 +230,7 @@ object mod {
       * @param {Number} lat the latitutde
       * @param {Function} callback the callback to invoke when the request completes
       */
-    def updatePosition(longitude: Number, latitude: Number, callback: Callback[js.Any]): Unit = js.native
+    def updatePosition(longitude: Number, latitude: Number, callback: Callback[Any]): Unit = js.native
     
     /**
       * Updates the preferences for the current account
@@ -247,7 +247,7 @@ object mod {
       ageMax: Double,
       gender: Double,
       distance: Double,
-      callback: Callback[js.Any]
+      callback: Callback[Any]
     ): Unit = js.native
     
     /**
@@ -255,7 +255,7 @@ object mod {
       * @param {String} id is the facebook id of the school
       * @param {Function} callback the callback to invoke when the request completes
       */
-    def updateSchool(id: String, callback: Callback[js.Any]): Unit = js.native
+    def updateSchool(id: String, callback: Callback[Any]): Unit = js.native
     
     /**
       * Post a new picture to the current account from Facebook
@@ -272,7 +272,7 @@ object mod {
       ydistance_percent: Double,
       xoffset_percent: Double,
       yoffset_percent: Double,
-      callback: Callback[js.Any]
+      callback: Callback[Any]
     ): Unit = js.native
     
     /**
@@ -280,7 +280,7 @@ object mod {
       * @param {Buffer} file the picture that you want to upload
       * @param {Function} callback the callback to invoke when the request completes
       */
-    def uploadPicture(file: ReadStream, callback: Callback[js.Any]): Unit = js.native
+    def uploadPicture(file: ReadStream, callback: Callback[Any]): Unit = js.native
     
     /**
       * The current account's user id
@@ -288,14 +288,14 @@ object mod {
     var userId: String = js.native
   }
   
-  type Callback[T] = js.Function2[/* error */ js.Any, /* data */ T, js.Any]
+  type Callback[T] = js.Function2[/* error */ Any, /* data */ T, Any]
   
   trait TinderHistory extends StObject {
     
     var blocks: js.Array[String]
     
     // todo
-    var deleted_lists: js.Array[js.Any]
+    var deleted_lists: js.Array[Any]
     
     // todo
     var last_activity_date: String
@@ -303,22 +303,22 @@ object mod {
     // todo
     var liked_messages: js.Array[TinderLikedMessage]
     
-    var lists: js.Array[js.Any]
+    var lists: js.Array[Any]
     
     var matches: js.Array[TinderMatch]
     
-    var squads: js.Array[js.Any]
+    var squads: js.Array[Any]
   }
   object TinderHistory {
     
     inline def apply(
       blocks: js.Array[String],
-      deleted_lists: js.Array[js.Any],
+      deleted_lists: js.Array[Any],
       last_activity_date: String,
       liked_messages: js.Array[TinderLikedMessage],
-      lists: js.Array[js.Any],
+      lists: js.Array[Any],
       matches: js.Array[TinderMatch],
-      squads: js.Array[js.Any]
+      squads: js.Array[Any]
     ): TinderHistory = {
       val __obj = js.Dynamic.literal(blocks = blocks.asInstanceOf[js.Any], deleted_lists = deleted_lists.asInstanceOf[js.Any], last_activity_date = last_activity_date.asInstanceOf[js.Any], liked_messages = liked_messages.asInstanceOf[js.Any], lists = lists.asInstanceOf[js.Any], matches = matches.asInstanceOf[js.Any], squads = squads.asInstanceOf[js.Any])
       __obj.asInstanceOf[TinderHistory]
@@ -328,29 +328,29 @@ object mod {
       
       inline def setBlocks(value: js.Array[String]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
       
-      inline def setBlocksVarargs(value: String*): Self = StObject.set(x, "blocks", js.Array(value :_*))
+      inline def setBlocksVarargs(value: String*): Self = StObject.set(x, "blocks", js.Array(value*))
       
-      inline def setDeleted_lists(value: js.Array[js.Any]): Self = StObject.set(x, "deleted_lists", value.asInstanceOf[js.Any])
+      inline def setDeleted_lists(value: js.Array[Any]): Self = StObject.set(x, "deleted_lists", value.asInstanceOf[js.Any])
       
-      inline def setDeleted_listsVarargs(value: js.Any*): Self = StObject.set(x, "deleted_lists", js.Array(value :_*))
+      inline def setDeleted_listsVarargs(value: Any*): Self = StObject.set(x, "deleted_lists", js.Array(value*))
       
       inline def setLast_activity_date(value: String): Self = StObject.set(x, "last_activity_date", value.asInstanceOf[js.Any])
       
       inline def setLiked_messages(value: js.Array[TinderLikedMessage]): Self = StObject.set(x, "liked_messages", value.asInstanceOf[js.Any])
       
-      inline def setLiked_messagesVarargs(value: TinderLikedMessage*): Self = StObject.set(x, "liked_messages", js.Array(value :_*))
+      inline def setLiked_messagesVarargs(value: TinderLikedMessage*): Self = StObject.set(x, "liked_messages", js.Array(value*))
       
-      inline def setLists(value: js.Array[js.Any]): Self = StObject.set(x, "lists", value.asInstanceOf[js.Any])
+      inline def setLists(value: js.Array[Any]): Self = StObject.set(x, "lists", value.asInstanceOf[js.Any])
       
-      inline def setListsVarargs(value: js.Any*): Self = StObject.set(x, "lists", js.Array(value :_*))
+      inline def setListsVarargs(value: Any*): Self = StObject.set(x, "lists", js.Array(value*))
       
       inline def setMatches(value: js.Array[TinderMatch]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
       
-      inline def setMatchesVarargs(value: TinderMatch*): Self = StObject.set(x, "matches", js.Array(value :_*))
+      inline def setMatchesVarargs(value: TinderMatch*): Self = StObject.set(x, "matches", js.Array(value*))
       
-      inline def setSquads(value: js.Array[js.Any]): Self = StObject.set(x, "squads", value.asInstanceOf[js.Any])
+      inline def setSquads(value: js.Array[Any]): Self = StObject.set(x, "squads", value.asInstanceOf[js.Any])
       
-      inline def setSquadsVarargs(value: js.Any*): Self = StObject.set(x, "squads", js.Array(value :_*))
+      inline def setSquadsVarargs(value: Any*): Self = StObject.set(x, "squads", js.Array(value*))
     }
   }
   
@@ -474,13 +474,13 @@ object mod {
       
       inline def setMessages(value: js.Array[TinderMessage]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
-      inline def setMessagesVarargs(value: TinderMessage*): Self = StObject.set(x, "messages", js.Array(value :_*))
+      inline def setMessagesVarargs(value: TinderMessage*): Self = StObject.set(x, "messages", js.Array(value*))
       
       inline def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
       
       inline def setParticipants(value: js.Array[String]): Self = StObject.set(x, "participants", value.asInstanceOf[js.Any])
       
-      inline def setParticipantsVarargs(value: String*): Self = StObject.set(x, "participants", js.Array(value :_*))
+      inline def setParticipantsVarargs(value: String*): Self = StObject.set(x, "participants", js.Array(value*))
       
       inline def setPending(value: Boolean): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
       
@@ -548,7 +548,7 @@ object mod {
     
     var _id: String
     
-    var badges: js.Array[js.Any]
+    var badges: js.Array[Any]
     
     var bio: String
     
@@ -568,7 +568,7 @@ object mod {
     
     inline def apply(
       _id: String,
-      badges: js.Array[js.Any],
+      badges: js.Array[Any],
       bio: String,
       birth_date: String,
       gender: Double,
@@ -583,9 +583,9 @@ object mod {
     
     extension [Self <: TinderPerson](x: Self) {
       
-      inline def setBadges(value: js.Array[js.Any]): Self = StObject.set(x, "badges", value.asInstanceOf[js.Any])
+      inline def setBadges(value: js.Array[Any]): Self = StObject.set(x, "badges", value.asInstanceOf[js.Any])
       
-      inline def setBadgesVarargs(value: js.Any*): Self = StObject.set(x, "badges", js.Array(value :_*))
+      inline def setBadgesVarargs(value: Any*): Self = StObject.set(x, "badges", js.Array(value*))
       
       inline def setBio(value: String): Self = StObject.set(x, "bio", value.asInstanceOf[js.Any])
       
@@ -597,7 +597,7 @@ object mod {
       
       inline def setPhotos(value: js.Array[TinderPhoto]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
       
-      inline def setPhotosVarargs(value: TinderPhoto*): Self = StObject.set(x, "photos", js.Array(value :_*))
+      inline def setPhotosVarargs(value: TinderPhoto*): Self = StObject.set(x, "photos", js.Array(value*))
       
       inline def setPing_time(value: String): Self = StObject.set(x, "ping_time", value.asInstanceOf[js.Any])
       
@@ -660,7 +660,7 @@ object mod {
       
       inline def setProcessedFiles(value: js.Array[TinderPhotoProcessedFile]): Self = StObject.set(x, "processedFiles", value.asInstanceOf[js.Any])
       
-      inline def setProcessedFilesVarargs(value: TinderPhotoProcessedFile*): Self = StObject.set(x, "processedFiles", js.Array(value :_*))
+      inline def setProcessedFilesVarargs(value: TinderPhotoProcessedFile*): Self = StObject.set(x, "processedFiles", js.Array(value*))
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
@@ -704,7 +704,7 @@ object mod {
     // todo
     var _id: String
     
-    var badges: js.Array[js.Any]
+    var badges: js.Array[Any]
     
     // todo
     var bio: String
@@ -714,22 +714,22 @@ object mod {
     // todo
     var birth_date_info: String
     
-    var common_connections: js.Array[js.Any]
+    var common_connections: js.Array[Any]
     
     // todo
-    var common_friends: js.Array[js.Any]
+    var common_friends: js.Array[Any]
     
     // todo
-    var common_interests: js.Array[js.Any]
+    var common_interests: js.Array[Any]
     
     // todo
-    var common_likes: js.Array[js.Any]
+    var common_likes: js.Array[Any]
     
     var distance_mi: Number
     
     var gender: Double
     
-    var jobs: js.Array[js.Any]
+    var jobs: js.Array[Any]
     
     var name: String
     
@@ -738,35 +738,35 @@ object mod {
     var ping_time: String
     
     // todo
-    var schools: js.Array[js.Any]
+    var schools: js.Array[Any]
     
     // todo
     var teaser: typings.tinder.anon.String
     
     // todo
-    var uncommon_interests: js.Array[js.Any]
+    var uncommon_interests: js.Array[Any]
   }
   object TinderRecommendation {
     
     inline def apply(
       _id: String,
-      badges: js.Array[js.Any],
+      badges: js.Array[Any],
       bio: String,
       birth_date: String,
       birth_date_info: String,
-      common_connections: js.Array[js.Any],
-      common_friends: js.Array[js.Any],
-      common_interests: js.Array[js.Any],
-      common_likes: js.Array[js.Any],
+      common_connections: js.Array[Any],
+      common_friends: js.Array[Any],
+      common_interests: js.Array[Any],
+      common_likes: js.Array[Any],
       distance_mi: Number,
       gender: Double,
-      jobs: js.Array[js.Any],
+      jobs: js.Array[Any],
       name: String,
       photos: js.Array[TinderPhoto],
       ping_time: String,
-      schools: js.Array[js.Any],
+      schools: js.Array[Any],
       teaser: typings.tinder.anon.String,
-      uncommon_interests: js.Array[js.Any]
+      uncommon_interests: js.Array[Any]
     ): TinderRecommendation = {
       val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], badges = badges.asInstanceOf[js.Any], bio = bio.asInstanceOf[js.Any], birth_date = birth_date.asInstanceOf[js.Any], birth_date_info = birth_date_info.asInstanceOf[js.Any], common_connections = common_connections.asInstanceOf[js.Any], common_friends = common_friends.asInstanceOf[js.Any], common_interests = common_interests.asInstanceOf[js.Any], common_likes = common_likes.asInstanceOf[js.Any], distance_mi = distance_mi.asInstanceOf[js.Any], gender = gender.asInstanceOf[js.Any], jobs = jobs.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], photos = photos.asInstanceOf[js.Any], ping_time = ping_time.asInstanceOf[js.Any], schools = schools.asInstanceOf[js.Any], teaser = teaser.asInstanceOf[js.Any], uncommon_interests = uncommon_interests.asInstanceOf[js.Any])
       __obj.asInstanceOf[TinderRecommendation]
@@ -774,9 +774,9 @@ object mod {
     
     extension [Self <: TinderRecommendation](x: Self) {
       
-      inline def setBadges(value: js.Array[js.Any]): Self = StObject.set(x, "badges", value.asInstanceOf[js.Any])
+      inline def setBadges(value: js.Array[Any]): Self = StObject.set(x, "badges", value.asInstanceOf[js.Any])
       
-      inline def setBadgesVarargs(value: js.Any*): Self = StObject.set(x, "badges", js.Array(value :_*))
+      inline def setBadgesVarargs(value: Any*): Self = StObject.set(x, "badges", js.Array(value*))
       
       inline def setBio(value: String): Self = StObject.set(x, "bio", value.asInstanceOf[js.Any])
       
@@ -784,47 +784,47 @@ object mod {
       
       inline def setBirth_date_info(value: String): Self = StObject.set(x, "birth_date_info", value.asInstanceOf[js.Any])
       
-      inline def setCommon_connections(value: js.Array[js.Any]): Self = StObject.set(x, "common_connections", value.asInstanceOf[js.Any])
+      inline def setCommon_connections(value: js.Array[Any]): Self = StObject.set(x, "common_connections", value.asInstanceOf[js.Any])
       
-      inline def setCommon_connectionsVarargs(value: js.Any*): Self = StObject.set(x, "common_connections", js.Array(value :_*))
+      inline def setCommon_connectionsVarargs(value: Any*): Self = StObject.set(x, "common_connections", js.Array(value*))
       
-      inline def setCommon_friends(value: js.Array[js.Any]): Self = StObject.set(x, "common_friends", value.asInstanceOf[js.Any])
+      inline def setCommon_friends(value: js.Array[Any]): Self = StObject.set(x, "common_friends", value.asInstanceOf[js.Any])
       
-      inline def setCommon_friendsVarargs(value: js.Any*): Self = StObject.set(x, "common_friends", js.Array(value :_*))
+      inline def setCommon_friendsVarargs(value: Any*): Self = StObject.set(x, "common_friends", js.Array(value*))
       
-      inline def setCommon_interests(value: js.Array[js.Any]): Self = StObject.set(x, "common_interests", value.asInstanceOf[js.Any])
+      inline def setCommon_interests(value: js.Array[Any]): Self = StObject.set(x, "common_interests", value.asInstanceOf[js.Any])
       
-      inline def setCommon_interestsVarargs(value: js.Any*): Self = StObject.set(x, "common_interests", js.Array(value :_*))
+      inline def setCommon_interestsVarargs(value: Any*): Self = StObject.set(x, "common_interests", js.Array(value*))
       
-      inline def setCommon_likes(value: js.Array[js.Any]): Self = StObject.set(x, "common_likes", value.asInstanceOf[js.Any])
+      inline def setCommon_likes(value: js.Array[Any]): Self = StObject.set(x, "common_likes", value.asInstanceOf[js.Any])
       
-      inline def setCommon_likesVarargs(value: js.Any*): Self = StObject.set(x, "common_likes", js.Array(value :_*))
+      inline def setCommon_likesVarargs(value: Any*): Self = StObject.set(x, "common_likes", js.Array(value*))
       
       inline def setDistance_mi(value: Number): Self = StObject.set(x, "distance_mi", value.asInstanceOf[js.Any])
       
       inline def setGender(value: Double): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
       
-      inline def setJobs(value: js.Array[js.Any]): Self = StObject.set(x, "jobs", value.asInstanceOf[js.Any])
+      inline def setJobs(value: js.Array[Any]): Self = StObject.set(x, "jobs", value.asInstanceOf[js.Any])
       
-      inline def setJobsVarargs(value: js.Any*): Self = StObject.set(x, "jobs", js.Array(value :_*))
+      inline def setJobsVarargs(value: Any*): Self = StObject.set(x, "jobs", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setPhotos(value: js.Array[TinderPhoto]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
       
-      inline def setPhotosVarargs(value: TinderPhoto*): Self = StObject.set(x, "photos", js.Array(value :_*))
+      inline def setPhotosVarargs(value: TinderPhoto*): Self = StObject.set(x, "photos", js.Array(value*))
       
       inline def setPing_time(value: String): Self = StObject.set(x, "ping_time", value.asInstanceOf[js.Any])
       
-      inline def setSchools(value: js.Array[js.Any]): Self = StObject.set(x, "schools", value.asInstanceOf[js.Any])
+      inline def setSchools(value: js.Array[Any]): Self = StObject.set(x, "schools", value.asInstanceOf[js.Any])
       
-      inline def setSchoolsVarargs(value: js.Any*): Self = StObject.set(x, "schools", js.Array(value :_*))
+      inline def setSchoolsVarargs(value: Any*): Self = StObject.set(x, "schools", js.Array(value*))
       
       inline def setTeaser(value: typings.tinder.anon.String): Self = StObject.set(x, "teaser", value.asInstanceOf[js.Any])
       
-      inline def setUncommon_interests(value: js.Array[js.Any]): Self = StObject.set(x, "uncommon_interests", value.asInstanceOf[js.Any])
+      inline def setUncommon_interests(value: js.Array[Any]): Self = StObject.set(x, "uncommon_interests", value.asInstanceOf[js.Any])
       
-      inline def setUncommon_interestsVarargs(value: js.Any*): Self = StObject.set(x, "uncommon_interests", js.Array(value :_*))
+      inline def setUncommon_interestsVarargs(value: Any*): Self = StObject.set(x, "uncommon_interests", js.Array(value*))
       
       inline def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
     }
@@ -857,7 +857,7 @@ object mod {
       
       inline def setResults(value: js.Array[TinderRecommendation]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
-      inline def setResultsVarargs(value: TinderRecommendation*): Self = StObject.set(x, "results", js.Array(value :_*))
+      inline def setResultsVarargs(value: TinderRecommendation*): Self = StObject.set(x, "results", js.Array(value*))
       
       inline def setStatus(value: Number): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
@@ -865,33 +865,33 @@ object mod {
   
   trait TinderUpdates extends StObject {
     
-    var blocks: js.Array[js.Any]
+    var blocks: js.Array[Any]
     
-    var deleted_lists: js.Array[js.Any]
+    var deleted_lists: js.Array[Any]
     
     var last_activity_date: String
     
     var liked_messages: js.Array[TinderMessage]
     
-    var lists: js.Array[js.Any]
+    var lists: js.Array[Any]
     
-    var matches: js.Array[js.Any]
+    var matches: js.Array[Any]
     
-    var matchmaker: js.Array[js.Any]
+    var matchmaker: js.Array[Any]
     
-    var squads: js.Array[js.Any]
+    var squads: js.Array[Any]
   }
   object TinderUpdates {
     
     inline def apply(
-      blocks: js.Array[js.Any],
-      deleted_lists: js.Array[js.Any],
+      blocks: js.Array[Any],
+      deleted_lists: js.Array[Any],
       last_activity_date: String,
       liked_messages: js.Array[TinderMessage],
-      lists: js.Array[js.Any],
-      matches: js.Array[js.Any],
-      matchmaker: js.Array[js.Any],
-      squads: js.Array[js.Any]
+      lists: js.Array[Any],
+      matches: js.Array[Any],
+      matchmaker: js.Array[Any],
+      squads: js.Array[Any]
     ): TinderUpdates = {
       val __obj = js.Dynamic.literal(blocks = blocks.asInstanceOf[js.Any], deleted_lists = deleted_lists.asInstanceOf[js.Any], last_activity_date = last_activity_date.asInstanceOf[js.Any], liked_messages = liked_messages.asInstanceOf[js.Any], lists = lists.asInstanceOf[js.Any], matches = matches.asInstanceOf[js.Any], matchmaker = matchmaker.asInstanceOf[js.Any], squads = squads.asInstanceOf[js.Any])
       __obj.asInstanceOf[TinderUpdates]
@@ -899,35 +899,35 @@ object mod {
     
     extension [Self <: TinderUpdates](x: Self) {
       
-      inline def setBlocks(value: js.Array[js.Any]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
+      inline def setBlocks(value: js.Array[Any]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
       
-      inline def setBlocksVarargs(value: js.Any*): Self = StObject.set(x, "blocks", js.Array(value :_*))
+      inline def setBlocksVarargs(value: Any*): Self = StObject.set(x, "blocks", js.Array(value*))
       
-      inline def setDeleted_lists(value: js.Array[js.Any]): Self = StObject.set(x, "deleted_lists", value.asInstanceOf[js.Any])
+      inline def setDeleted_lists(value: js.Array[Any]): Self = StObject.set(x, "deleted_lists", value.asInstanceOf[js.Any])
       
-      inline def setDeleted_listsVarargs(value: js.Any*): Self = StObject.set(x, "deleted_lists", js.Array(value :_*))
+      inline def setDeleted_listsVarargs(value: Any*): Self = StObject.set(x, "deleted_lists", js.Array(value*))
       
       inline def setLast_activity_date(value: String): Self = StObject.set(x, "last_activity_date", value.asInstanceOf[js.Any])
       
       inline def setLiked_messages(value: js.Array[TinderMessage]): Self = StObject.set(x, "liked_messages", value.asInstanceOf[js.Any])
       
-      inline def setLiked_messagesVarargs(value: TinderMessage*): Self = StObject.set(x, "liked_messages", js.Array(value :_*))
+      inline def setLiked_messagesVarargs(value: TinderMessage*): Self = StObject.set(x, "liked_messages", js.Array(value*))
       
-      inline def setLists(value: js.Array[js.Any]): Self = StObject.set(x, "lists", value.asInstanceOf[js.Any])
+      inline def setLists(value: js.Array[Any]): Self = StObject.set(x, "lists", value.asInstanceOf[js.Any])
       
-      inline def setListsVarargs(value: js.Any*): Self = StObject.set(x, "lists", js.Array(value :_*))
+      inline def setListsVarargs(value: Any*): Self = StObject.set(x, "lists", js.Array(value*))
       
-      inline def setMatches(value: js.Array[js.Any]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
+      inline def setMatches(value: js.Array[Any]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
       
-      inline def setMatchesVarargs(value: js.Any*): Self = StObject.set(x, "matches", js.Array(value :_*))
+      inline def setMatchesVarargs(value: Any*): Self = StObject.set(x, "matches", js.Array(value*))
       
-      inline def setMatchmaker(value: js.Array[js.Any]): Self = StObject.set(x, "matchmaker", value.asInstanceOf[js.Any])
+      inline def setMatchmaker(value: js.Array[Any]): Self = StObject.set(x, "matchmaker", value.asInstanceOf[js.Any])
       
-      inline def setMatchmakerVarargs(value: js.Any*): Self = StObject.set(x, "matchmaker", js.Array(value :_*))
+      inline def setMatchmakerVarargs(value: Any*): Self = StObject.set(x, "matchmaker", js.Array(value*))
       
-      inline def setSquads(value: js.Array[js.Any]): Self = StObject.set(x, "squads", value.asInstanceOf[js.Any])
+      inline def setSquads(value: js.Array[Any]): Self = StObject.set(x, "squads", value.asInstanceOf[js.Any])
       
-      inline def setSquadsVarargs(value: js.Any*): Self = StObject.set(x, "squads", js.Array(value :_*))
+      inline def setSquadsVarargs(value: Any*): Self = StObject.set(x, "squads", js.Array(value*))
     }
   }
 }

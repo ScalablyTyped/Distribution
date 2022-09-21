@@ -1,409 +1,417 @@
 package typings.csstype
 
-import typings.csstype.mod.AbsoluteSize
 import typings.csstype.mod.AdvancedPseudos
-import typings.csstype.mod.AlignmentBaselineProperty
-import typings.csstype.mod.AppearanceProperty
+import typings.csstype.mod.AtRule.FontDisplay
+import typings.csstype.mod.AtRule.Inherits
+import typings.csstype.mod.AtRule.Orientation
+import typings.csstype.mod.AtRule.UserZoom
+import typings.csstype.mod.AtRule.ViewportFit
+import typings.csstype.mod.AtRule._Marks
+import typings.csstype.mod.AtRule._Size
+import typings.csstype.mod.AtRule._SpeakAs
+import typings.csstype.mod.AtRule._System
 import typings.csstype.mod.AtRules
-import typings.csstype.mod.Attachment
-import typings.csstype.mod.BackfaceVisibilityProperty
-import typings.csstype.mod.BlendMode
-import typings.csstype.mod.BorderBlockEndStyleProperty
-import typings.csstype.mod.BorderBlockStartStyleProperty
-import typings.csstype.mod.BorderBlockStyleProperty
-import typings.csstype.mod.BorderBottomStyleProperty
-import typings.csstype.mod.BorderCollapseProperty
-import typings.csstype.mod.BorderInlineEndStyleProperty
-import typings.csstype.mod.BorderInlineStartStyleProperty
-import typings.csstype.mod.BorderInlineStyleProperty
-import typings.csstype.mod.BorderLeftStyleProperty
-import typings.csstype.mod.BorderRightStyleProperty
-import typings.csstype.mod.BorderTopStyleProperty
-import typings.csstype.mod.Box
-import typings.csstype.mod.BoxAlignProperty
-import typings.csstype.mod.BoxDecorationBreakProperty
-import typings.csstype.mod.BoxDirectionProperty
-import typings.csstype.mod.BoxLinesProperty
-import typings.csstype.mod.BoxOrientProperty
-import typings.csstype.mod.BoxPackProperty
-import typings.csstype.mod.BoxSizingProperty
-import typings.csstype.mod.BreakAfterProperty
-import typings.csstype.mod.BreakBeforeProperty
-import typings.csstype.mod.BreakInsideProperty
-import typings.csstype.mod.CaptionSideProperty
-import typings.csstype.mod.ClearProperty
-import typings.csstype.mod.ClipRuleProperty
-import typings.csstype.mod.ColorAdjustProperty
-import typings.csstype.mod.ColorInterpolationProperty
-import typings.csstype.mod.ColorRenderingProperty
-import typings.csstype.mod.ColumnFillProperty
-import typings.csstype.mod.ColumnSpanProperty
-import typings.csstype.mod.CompatAuto
-import typings.csstype.mod.CompositeStyle
-import typings.csstype.mod.CompositingOperator
-import typings.csstype.mod.ContentDistribution
-import typings.csstype.mod.ContentPosition
-import typings.csstype.mod.DeprecatedSystemColor
-import typings.csstype.mod.DirectionProperty
-import typings.csstype.mod.DisplayInside
-import typings.csstype.mod.DisplayInternal
-import typings.csstype.mod.DisplayLegacy
-import typings.csstype.mod.DisplayOutside
-import typings.csstype.mod.DominantBaselineProperty
-import typings.csstype.mod.EastAsianVariantValues
-import typings.csstype.mod.EmptyCellsProperty
-import typings.csstype.mod.FillRuleProperty
-import typings.csstype.mod.FlexDirectionProperty
-import typings.csstype.mod.FlexWrapProperty
-import typings.csstype.mod.FloatProperty
-import typings.csstype.mod.FontFaceFontDisplayProperty
-import typings.csstype.mod.FontKerningProperty
-import typings.csstype.mod.FontOpticalSizingProperty
-import typings.csstype.mod.FontVariantCapsProperty
-import typings.csstype.mod.FontVariantPositionProperty
-import typings.csstype.mod.GenericFamily
-import typings.csstype.mod.GeometryBox
+import typings.csstype.mod.DataType.AbsoluteSize
+import typings.csstype.mod.DataType.Attachment
+import typings.csstype.mod.DataType.BlendMode
+import typings.csstype.mod.DataType.Box
+import typings.csstype.mod.DataType.CompatAuto
+import typings.csstype.mod.DataType.CompositeStyle
+import typings.csstype.mod.DataType.CompositingOperator
+import typings.csstype.mod.DataType.ContentDistribution
+import typings.csstype.mod.DataType.ContentPosition
+import typings.csstype.mod.DataType.DeprecatedSystemColor
+import typings.csstype.mod.DataType.DisplayInside
+import typings.csstype.mod.DataType.DisplayInternal
+import typings.csstype.mod.DataType.DisplayLegacy
+import typings.csstype.mod.DataType.DisplayOutside
+import typings.csstype.mod.DataType.EastAsianVariantValues
+import typings.csstype.mod.DataType.GenericFamily
+import typings.csstype.mod.DataType.GeometryBox
+import typings.csstype.mod.DataType.LineStyle
+import typings.csstype.mod.DataType.MaskingMode
+import typings.csstype.mod.DataType.NamedColor
+import typings.csstype.mod.DataType.PageSize
+import typings.csstype.mod.DataType.Quote
+import typings.csstype.mod.DataType.SelfPosition
+import typings.csstype.mod.DataType.SingleAnimationDirection
+import typings.csstype.mod.DataType.SingleAnimationFillMode
+import typings.csstype.mod.DataType.VisualBox
+import typings.csstype.mod.DataType._AnimateableFeature
+import typings.csstype.mod.DataType._BgPosition
+import typings.csstype.mod.DataType._BgSize
+import typings.csstype.mod.DataType._Color
+import typings.csstype.mod.DataType._ContentList
+import typings.csstype.mod.DataType._CubicBezierTimingFunction
+import typings.csstype.mod.DataType._EasingFunction
+import typings.csstype.mod.DataType._FinalBgLayer
+import typings.csstype.mod.DataType._FontStretchAbsolute
+import typings.csstype.mod.DataType._FontWeightAbsolute
+import typings.csstype.mod.DataType._LineWidth
+import typings.csstype.mod.DataType._MaskLayer
+import typings.csstype.mod.DataType._Paint
+import typings.csstype.mod.DataType._Position
+import typings.csstype.mod.DataType._RepeatStyle
+import typings.csstype.mod.DataType._SingleAnimation
+import typings.csstype.mod.DataType._SingleAnimationTimeline
+import typings.csstype.mod.DataType._SingleTransition
+import typings.csstype.mod.DataType._StepTimingFunction
+import typings.csstype.mod.DataType._TrackBreadth
 import typings.csstype.mod.Globals
 import typings.csstype.mod.HtmlAttributes
-import typings.csstype.mod.HyphensProperty
-import typings.csstype.mod.ImageRenderingProperty
-import typings.csstype.mod.ImeModeProperty
-import typings.csstype.mod.IsolationProperty
-import typings.csstype.mod.LineBreakProperty
-import typings.csstype.mod.LineStyle
-import typings.csstype.mod.ListStylePositionProperty
-import typings.csstype.mod.MaskBorderModeProperty
-import typings.csstype.mod.MaskTypeProperty
-import typings.csstype.mod.MaskingMode
-import typings.csstype.mod.MathStyleProperty
-import typings.csstype.mod.MixBlendModeProperty
-import typings.csstype.mod.MozAppearanceProperty
-import typings.csstype.mod.MozFloatEdgeProperty
-import typings.csstype.mod.MozOrientProperty
-import typings.csstype.mod.MozStackSizingProperty
-import typings.csstype.mod.MozTextBlinkProperty
-import typings.csstype.mod.MozUserFocusProperty
-import typings.csstype.mod.MozUserInputProperty
-import typings.csstype.mod.MozUserModifyProperty
-import typings.csstype.mod.MozWindowDraggingProperty
-import typings.csstype.mod.MozWindowShadowProperty
-import typings.csstype.mod.MsAcceleratorProperty
-import typings.csstype.mod.MsBlockProgressionProperty
-import typings.csstype.mod.MsContentZoomChainingProperty
-import typings.csstype.mod.MsContentZoomSnapTypeProperty
-import typings.csstype.mod.MsContentZoomingProperty
-import typings.csstype.mod.MsHighContrastAdjustProperty
-import typings.csstype.mod.MsImeAlignProperty
-import typings.csstype.mod.MsOverflowStyleProperty
-import typings.csstype.mod.MsScrollChainingProperty
-import typings.csstype.mod.MsScrollRailsProperty
-import typings.csstype.mod.MsScrollSnapTypeProperty
-import typings.csstype.mod.MsScrollTranslationProperty
-import typings.csstype.mod.MsTextAutospaceProperty
-import typings.csstype.mod.MsTouchSelectProperty
-import typings.csstype.mod.MsUserSelectProperty
-import typings.csstype.mod.MsWrapFlowProperty
-import typings.csstype.mod.MsWrapThroughProperty
-import typings.csstype.mod.NamedColor
-import typings.csstype.mod.ObjectFitProperty
-import typings.csstype.mod.OverflowAnchorProperty
-import typings.csstype.mod.OverflowBlockProperty
-import typings.csstype.mod.OverflowClipBoxProperty
-import typings.csstype.mod.OverflowInlineProperty
-import typings.csstype.mod.OverflowWrapProperty
-import typings.csstype.mod.OverflowXProperty
-import typings.csstype.mod.OverflowYProperty
-import typings.csstype.mod.OverscrollBehaviorBlockProperty
-import typings.csstype.mod.OverscrollBehaviorInlineProperty
-import typings.csstype.mod.OverscrollBehaviorXProperty
-import typings.csstype.mod.OverscrollBehaviorYProperty
-import typings.csstype.mod.PageBreakAfterProperty
-import typings.csstype.mod.PageBreakBeforeProperty
-import typings.csstype.mod.PageBreakInsideProperty
-import typings.csstype.mod.PointerEventsProperty
-import typings.csstype.mod.PositionProperty
-import typings.csstype.mod.PropertyInheritsProperty
+import typings.csstype.mod.Property.AlignmentBaseline
+import typings.csstype.mod.Property.Appearance
+import typings.csstype.mod.Property.BackfaceVisibility
+import typings.csstype.mod.Property.BorderBlockEndStyle
+import typings.csstype.mod.Property.BorderBlockStartStyle
+import typings.csstype.mod.Property.BorderBlockStyle
+import typings.csstype.mod.Property.BorderBottomStyle
+import typings.csstype.mod.Property.BorderCollapse
+import typings.csstype.mod.Property.BorderInlineEndStyle
+import typings.csstype.mod.Property.BorderInlineStartStyle
+import typings.csstype.mod.Property.BorderInlineStyle
+import typings.csstype.mod.Property.BorderLeftStyle
+import typings.csstype.mod.Property.BorderRightStyle
+import typings.csstype.mod.Property.BorderTopStyle
+import typings.csstype.mod.Property.BoxAlign
+import typings.csstype.mod.Property.BoxDecorationBreak
+import typings.csstype.mod.Property.BoxDirection
+import typings.csstype.mod.Property.BoxLines
+import typings.csstype.mod.Property.BoxOrient
+import typings.csstype.mod.Property.BoxPack
+import typings.csstype.mod.Property.BoxSizing
+import typings.csstype.mod.Property.BreakAfter
+import typings.csstype.mod.Property.BreakBefore
+import typings.csstype.mod.Property.BreakInside
+import typings.csstype.mod.Property.CaptionSide
+import typings.csstype.mod.Property.Clear
+import typings.csstype.mod.Property.ClipRule
+import typings.csstype.mod.Property.ColorInterpolation
+import typings.csstype.mod.Property.ColorRendering
+import typings.csstype.mod.Property.ColumnFill
+import typings.csstype.mod.Property.ColumnSpan
+import typings.csstype.mod.Property.ContentVisibility
+import typings.csstype.mod.Property.Direction
+import typings.csstype.mod.Property.DominantBaseline
+import typings.csstype.mod.Property.EmptyCells
+import typings.csstype.mod.Property.FillRule
+import typings.csstype.mod.Property.FlexDirection
+import typings.csstype.mod.Property.FlexWrap
+import typings.csstype.mod.Property.Float
+import typings.csstype.mod.Property.FontKerning
+import typings.csstype.mod.Property.FontOpticalSizing
+import typings.csstype.mod.Property.FontVariantCaps
+import typings.csstype.mod.Property.FontVariantPosition
+import typings.csstype.mod.Property.ForcedColorAdjust
+import typings.csstype.mod.Property.Hyphens
+import typings.csstype.mod.Property.ImageRendering
+import typings.csstype.mod.Property.ImeMode
+import typings.csstype.mod.Property.InputSecurity
+import typings.csstype.mod.Property.Isolation
+import typings.csstype.mod.Property.LineBreak
+import typings.csstype.mod.Property.ListStylePosition
+import typings.csstype.mod.Property.MaskBorderMode
+import typings.csstype.mod.Property.MaskType
+import typings.csstype.mod.Property.MathShift
+import typings.csstype.mod.Property.MathStyle
+import typings.csstype.mod.Property.MixBlendMode
+import typings.csstype.mod.Property.MozAppearance
+import typings.csstype.mod.Property.MozFloatEdge
+import typings.csstype.mod.Property.MozOrient
+import typings.csstype.mod.Property.MozStackSizing
+import typings.csstype.mod.Property.MozTextBlink
+import typings.csstype.mod.Property.MozUserFocus
+import typings.csstype.mod.Property.MozUserInput
+import typings.csstype.mod.Property.MozUserModify
+import typings.csstype.mod.Property.MozWindowDragging
+import typings.csstype.mod.Property.MozWindowShadow
+import typings.csstype.mod.Property.MsAccelerator
+import typings.csstype.mod.Property.MsBlockProgression
+import typings.csstype.mod.Property.MsContentZoomChaining
+import typings.csstype.mod.Property.MsContentZoomSnapType
+import typings.csstype.mod.Property.MsContentZooming
+import typings.csstype.mod.Property.MsHighContrastAdjust
+import typings.csstype.mod.Property.MsImeAlign
+import typings.csstype.mod.Property.MsOverflowStyle
+import typings.csstype.mod.Property.MsScrollChaining
+import typings.csstype.mod.Property.MsScrollRails
+import typings.csstype.mod.Property.MsScrollSnapType
+import typings.csstype.mod.Property.MsScrollTranslation
+import typings.csstype.mod.Property.MsTextAutospace
+import typings.csstype.mod.Property.MsTouchSelect
+import typings.csstype.mod.Property.MsUserSelect
+import typings.csstype.mod.Property.MsWrapFlow
+import typings.csstype.mod.Property.MsWrapThrough
+import typings.csstype.mod.Property.ObjectFit
+import typings.csstype.mod.Property.OverflowAnchor
+import typings.csstype.mod.Property.OverflowBlock
+import typings.csstype.mod.Property.OverflowClipBox
+import typings.csstype.mod.Property.OverflowInline
+import typings.csstype.mod.Property.OverflowWrap
+import typings.csstype.mod.Property.OverflowX
+import typings.csstype.mod.Property.OverflowY
+import typings.csstype.mod.Property.OverscrollBehaviorBlock
+import typings.csstype.mod.Property.OverscrollBehaviorInline
+import typings.csstype.mod.Property.OverscrollBehaviorX
+import typings.csstype.mod.Property.OverscrollBehaviorY
+import typings.csstype.mod.Property.PageBreakAfter
+import typings.csstype.mod.Property.PageBreakBefore
+import typings.csstype.mod.Property.PageBreakInside
+import typings.csstype.mod.Property.PointerEvents
+import typings.csstype.mod.Property.Position
+import typings.csstype.mod.Property.PrintColorAdjust
+import typings.csstype.mod.Property.Resize
+import typings.csstype.mod.Property.RubyAlign
+import typings.csstype.mod.Property.RubyMerge
+import typings.csstype.mod.Property.ScrollBehavior
+import typings.csstype.mod.Property.ScrollSnapStop
+import typings.csstype.mod.Property.ScrollSnapTypeX
+import typings.csstype.mod.Property.ScrollSnapTypeY
+import typings.csstype.mod.Property.ScrollbarWidth
+import typings.csstype.mod.Property.ShapeRendering
+import typings.csstype.mod.Property.StrokeLinecap
+import typings.csstype.mod.Property.StrokeLinejoin
+import typings.csstype.mod.Property.TableLayout
+import typings.csstype.mod.Property.TextAlign
+import typings.csstype.mod.Property.TextAlignLast
+import typings.csstype.mod.Property.TextAnchor
+import typings.csstype.mod.Property.TextDecorationSkipInk
+import typings.csstype.mod.Property.TextDecorationStyle
+import typings.csstype.mod.Property.TextJustify
+import typings.csstype.mod.Property.TextOrientation
+import typings.csstype.mod.Property.TextRendering
+import typings.csstype.mod.Property.TextTransform
+import typings.csstype.mod.Property.TransformBox
+import typings.csstype.mod.Property.TransformStyle
+import typings.csstype.mod.Property.UnicodeBidi
+import typings.csstype.mod.Property.UserSelect
+import typings.csstype.mod.Property.VectorEffect
+import typings.csstype.mod.Property.Visibility
+import typings.csstype.mod.Property.WebkitAppearance
+import typings.csstype.mod.Property.WebkitMaskRepeatX
+import typings.csstype.mod.Property.WebkitMaskRepeatY
+import typings.csstype.mod.Property.WebkitOverflowScrolling
+import typings.csstype.mod.Property.WebkitTouchCallout
+import typings.csstype.mod.Property.WebkitUserModify
+import typings.csstype.mod.Property.WhiteSpace
+import typings.csstype.mod.Property.WordBreak
+import typings.csstype.mod.Property.WordWrap
+import typings.csstype.mod.Property.WritingMode
+import typings.csstype.mod.Property._AccentColor
+import typings.csstype.mod.Property._AlignContent
+import typings.csstype.mod.Property._AlignItems
+import typings.csstype.mod.Property._AlignSelf
+import typings.csstype.mod.Property._AlignTracks
+import typings.csstype.mod.Property._AnimationIterationCount
+import typings.csstype.mod.Property._AnimationName
+import typings.csstype.mod.Property._AnimationPlayState
+import typings.csstype.mod.Property._AspectRatio
+import typings.csstype.mod.Property._Azimuth
+import typings.csstype.mod.Property._BackdropFilter
+import typings.csstype.mod.Property._BackgroundImage
+import typings.csstype.mod.Property._BackgroundPositionX
+import typings.csstype.mod.Property._BackgroundPositionY
+import typings.csstype.mod.Property._BaselineShift
+import typings.csstype.mod.Property._BlockOverflow
+import typings.csstype.mod.Property._BlockSize
+import typings.csstype.mod.Property._BorderImage
+import typings.csstype.mod.Property._BorderImageRepeat
+import typings.csstype.mod.Property._BorderImageSource
+import typings.csstype.mod.Property._BorderImageWidth
+import typings.csstype.mod.Property._Bottom
+import typings.csstype.mod.Property._BoxShadow
+import typings.csstype.mod.Property._CaretColor
+import typings.csstype.mod.Property._Clip
+import typings.csstype.mod.Property._ClipPath
+import typings.csstype.mod.Property._ColorScheme
+import typings.csstype.mod.Property._ColumnCount
+import typings.csstype.mod.Property._ColumnGap
+import typings.csstype.mod.Property._ColumnWidth
+import typings.csstype.mod.Property._Columns
+import typings.csstype.mod.Property._Contain
+import typings.csstype.mod.Property._Content
+import typings.csstype.mod.Property._CounterIncrement
+import typings.csstype.mod.Property._CounterReset
+import typings.csstype.mod.Property._CounterSet
+import typings.csstype.mod.Property._Cursor
+import typings.csstype.mod.Property._Display
+import typings.csstype.mod.Property._Filter
+import typings.csstype.mod.Property._Flex
+import typings.csstype.mod.Property._FlexBasis
+import typings.csstype.mod.Property._FlexFlow
+import typings.csstype.mod.Property._FloodColor
+import typings.csstype.mod.Property._Font
+import typings.csstype.mod.Property._FontFeatureSettings
+import typings.csstype.mod.Property._FontLanguageOverride
+import typings.csstype.mod.Property._FontSize
+import typings.csstype.mod.Property._FontSizeAdjust
+import typings.csstype.mod.Property._FontSmooth
+import typings.csstype.mod.Property._FontStyle
+import typings.csstype.mod.Property._FontSynthesis
+import typings.csstype.mod.Property._FontVariant
+import typings.csstype.mod.Property._FontVariantAlternates
+import typings.csstype.mod.Property._FontVariantEastAsian
+import typings.csstype.mod.Property._FontVariantLigatures
+import typings.csstype.mod.Property._FontVariantNumeric
+import typings.csstype.mod.Property._FontVariationSettings
+import typings.csstype.mod.Property._FontWeight
+import typings.csstype.mod.Property._Gap
+import typings.csstype.mod.Property._GlyphOrientationVertical
+import typings.csstype.mod.Property._Grid
+import typings.csstype.mod.Property._GridAutoFlow
+import typings.csstype.mod.Property._GridTemplate
+import typings.csstype.mod.Property._GridTemplateAreas
+import typings.csstype.mod.Property._GridTemplateColumns
+import typings.csstype.mod.Property._GridTemplateRows
+import typings.csstype.mod.Property._HangingPunctuation
+import typings.csstype.mod.Property._Height
+import typings.csstype.mod.Property._HyphenateCharacter
+import typings.csstype.mod.Property._ImageOrientation
+import typings.csstype.mod.Property._ImageResolution
+import typings.csstype.mod.Property._InitialLetter
+import typings.csstype.mod.Property._InlineSize
+import typings.csstype.mod.Property._Inset
+import typings.csstype.mod.Property._InsetBlock
+import typings.csstype.mod.Property._InsetBlockEnd
+import typings.csstype.mod.Property._InsetBlockStart
+import typings.csstype.mod.Property._InsetInline
+import typings.csstype.mod.Property._InsetInlineEnd
+import typings.csstype.mod.Property._InsetInlineStart
+import typings.csstype.mod.Property._JustifyContent
+import typings.csstype.mod.Property._JustifyItems
+import typings.csstype.mod.Property._JustifySelf
+import typings.csstype.mod.Property._JustifyTracks
+import typings.csstype.mod.Property._Left
+import typings.csstype.mod.Property._LetterSpacing
+import typings.csstype.mod.Property._LightingColor
+import typings.csstype.mod.Property._LineClamp
+import typings.csstype.mod.Property._LineHeight
+import typings.csstype.mod.Property._ListStyle
+import typings.csstype.mod.Property._ListStyleImage
+import typings.csstype.mod.Property._ListStyleType
+import typings.csstype.mod.Property._Margin
+import typings.csstype.mod.Property._MarginBlock
+import typings.csstype.mod.Property._MarginBlockEnd
+import typings.csstype.mod.Property._MarginBlockStart
+import typings.csstype.mod.Property._MarginBottom
+import typings.csstype.mod.Property._MarginInline
+import typings.csstype.mod.Property._MarginInlineEnd
+import typings.csstype.mod.Property._MarginInlineStart
+import typings.csstype.mod.Property._MarginLeft
+import typings.csstype.mod.Property._MarginRight
+import typings.csstype.mod.Property._MarginTop
+import typings.csstype.mod.Property._Marker
+import typings.csstype.mod.Property._MarkerEnd
+import typings.csstype.mod.Property._MarkerMid
+import typings.csstype.mod.Property._MarkerStart
+import typings.csstype.mod.Property._MaskBorder
+import typings.csstype.mod.Property._MaskBorderRepeat
+import typings.csstype.mod.Property._MaskBorderSource
+import typings.csstype.mod.Property._MaskBorderWidth
+import typings.csstype.mod.Property._MaskClip
+import typings.csstype.mod.Property._MaskImage
+import typings.csstype.mod.Property._MathDepth
+import typings.csstype.mod.Property._MaxBlockSize
+import typings.csstype.mod.Property._MaxHeight
+import typings.csstype.mod.Property._MaxInlineSize
+import typings.csstype.mod.Property._MaxLines
+import typings.csstype.mod.Property._MaxWidth
+import typings.csstype.mod.Property._MinBlockSize
+import typings.csstype.mod.Property._MinHeight
+import typings.csstype.mod.Property._MinInlineSize
+import typings.csstype.mod.Property._MinWidth
+import typings.csstype.mod.Property._MozBinding
+import typings.csstype.mod.Property._MozBorderBottomColors
+import typings.csstype.mod.Property._MozBorderLeftColors
+import typings.csstype.mod.Property._MozBorderRightColors
+import typings.csstype.mod.Property._MozBorderTopColors
+import typings.csstype.mod.Property._MozContextProperties
+import typings.csstype.mod.Property._MozImageRegion
+import typings.csstype.mod.Property._MsContentZoomSnap
+import typings.csstype.mod.Property._MsFlowFrom
+import typings.csstype.mod.Property._MsFlowInto
+import typings.csstype.mod.Property._MsGridColumns
+import typings.csstype.mod.Property._MsGridRows
+import typings.csstype.mod.Property._MsHyphenateLimitChars
+import typings.csstype.mod.Property._MsHyphenateLimitLines
+import typings.csstype.mod.Property._MsScrollLimitXMax
+import typings.csstype.mod.Property._MsScrollLimitYMax
+import typings.csstype.mod.Property._Offset
+import typings.csstype.mod.Property._OffsetAnchor
+import typings.csstype.mod.Property._OffsetPath
+import typings.csstype.mod.Property._OffsetRotate
+import typings.csstype.mod.Property._Outline
+import typings.csstype.mod.Property._OutlineColor
+import typings.csstype.mod.Property._OutlineStyle
+import typings.csstype.mod.Property._Overflow
+import typings.csstype.mod.Property._OverscrollBehavior
+import typings.csstype.mod.Property._PaintOrder
+import typings.csstype.mod.Property._Perspective
+import typings.csstype.mod.Property._PlaceContent
+import typings.csstype.mod.Property._PlaceItems
+import typings.csstype.mod.Property._PlaceSelf
+import typings.csstype.mod.Property._Quotes
+import typings.csstype.mod.Property._Right
+import typings.csstype.mod.Property._Rotate
+import typings.csstype.mod.Property._RowGap
+import typings.csstype.mod.Property._RubyPosition
+import typings.csstype.mod.Property._Scale
+import typings.csstype.mod.Property._ScrollPadding
+import typings.csstype.mod.Property._ScrollPaddingBlock
+import typings.csstype.mod.Property._ScrollPaddingBlockEnd
+import typings.csstype.mod.Property._ScrollPaddingBlockStart
+import typings.csstype.mod.Property._ScrollPaddingBottom
+import typings.csstype.mod.Property._ScrollPaddingInline
+import typings.csstype.mod.Property._ScrollPaddingInlineEnd
+import typings.csstype.mod.Property._ScrollPaddingInlineStart
+import typings.csstype.mod.Property._ScrollPaddingLeft
+import typings.csstype.mod.Property._ScrollPaddingRight
+import typings.csstype.mod.Property._ScrollPaddingTop
+import typings.csstype.mod.Property._ScrollSnapAlign
+import typings.csstype.mod.Property._ScrollSnapCoordinate
+import typings.csstype.mod.Property._ScrollSnapPointsX
+import typings.csstype.mod.Property._ScrollSnapPointsY
+import typings.csstype.mod.Property._ScrollSnapType
+import typings.csstype.mod.Property._ScrollbarColor
+import typings.csstype.mod.Property._ScrollbarGutter
+import typings.csstype.mod.Property._ShapeOutside
+import typings.csstype.mod.Property._StopColor
+import typings.csstype.mod.Property._StrokeDasharray
+import typings.csstype.mod.Property._TextCombineUpright
+import typings.csstype.mod.Property._TextDecoration
+import typings.csstype.mod.Property._TextDecorationLine
+import typings.csstype.mod.Property._TextDecorationSkip
+import typings.csstype.mod.Property._TextDecorationThickness
+import typings.csstype.mod.Property._TextEmphasis
+import typings.csstype.mod.Property._TextEmphasisStyle
+import typings.csstype.mod.Property._TextOverflow
+import typings.csstype.mod.Property._TextShadow
+import typings.csstype.mod.Property._TextSizeAdjust
+import typings.csstype.mod.Property._TextUnderlineOffset
+import typings.csstype.mod.Property._TextUnderlinePosition
+import typings.csstype.mod.Property._Top
+import typings.csstype.mod.Property._TouchAction
+import typings.csstype.mod.Property._Transform
+import typings.csstype.mod.Property._TransformOrigin
+import typings.csstype.mod.Property._TransitionProperty
+import typings.csstype.mod.Property._Translate
+import typings.csstype.mod.Property._VerticalAlign
+import typings.csstype.mod.Property._WebkitBoxReflect
+import typings.csstype.mod.Property._WebkitLineClamp
+import typings.csstype.mod.Property._WebkitMask
+import typings.csstype.mod.Property._WebkitMaskClip
+import typings.csstype.mod.Property._WebkitMaskImage
+import typings.csstype.mod.Property._WebkitMaskOrigin
+import typings.csstype.mod.Property._WebkitMaskPositionX
+import typings.csstype.mod.Property._WebkitMaskPositionY
+import typings.csstype.mod.Property._Width
+import typings.csstype.mod.Property._WillChange
+import typings.csstype.mod.Property._WordSpacing
+import typings.csstype.mod.Property._ZIndex
+import typings.csstype.mod.Property._Zoom
 import typings.csstype.mod.Pseudos
-import typings.csstype.mod.Quote
-import typings.csstype.mod.ResizeProperty
-import typings.csstype.mod.RubyAlignProperty
-import typings.csstype.mod.RubyMergeProperty
-import typings.csstype.mod.RubyPositionProperty
-import typings.csstype.mod.ScrollBehaviorProperty
-import typings.csstype.mod.ScrollSnapStopProperty
-import typings.csstype.mod.ScrollSnapTypeXProperty
-import typings.csstype.mod.ScrollSnapTypeYProperty
-import typings.csstype.mod.ScrollbarWidthProperty
-import typings.csstype.mod.SelfPosition
-import typings.csstype.mod.ShapeRenderingProperty
 import typings.csstype.mod.SimplePseudos
-import typings.csstype.mod.SingleAnimationDirection
-import typings.csstype.mod.SingleAnimationFillMode
-import typings.csstype.mod.StrokeLinecapProperty
-import typings.csstype.mod.StrokeLinejoinProperty
 import typings.csstype.mod.SvgAttributes
-import typings.csstype.mod.TableLayoutProperty
-import typings.csstype.mod.TextAlignLastProperty
-import typings.csstype.mod.TextAlignProperty
-import typings.csstype.mod.TextAnchorProperty
-import typings.csstype.mod.TextDecorationSkipInkProperty
-import typings.csstype.mod.TextDecorationStyleProperty
-import typings.csstype.mod.TextJustifyProperty
-import typings.csstype.mod.TextOrientationProperty
-import typings.csstype.mod.TextRenderingProperty
-import typings.csstype.mod.TextTransformProperty
-import typings.csstype.mod.TransformBoxProperty
-import typings.csstype.mod.TransformStyleProperty
-import typings.csstype.mod.UnicodeBidiProperty
-import typings.csstype.mod.UserSelectProperty
-import typings.csstype.mod.VectorEffectProperty
-import typings.csstype.mod.ViewportOrientationProperty
-import typings.csstype.mod.ViewportUserZoomProperty
-import typings.csstype.mod.VisibilityProperty
-import typings.csstype.mod.WebkitAppearanceProperty
-import typings.csstype.mod.WebkitMaskRepeatXProperty
-import typings.csstype.mod.WebkitMaskRepeatYProperty
-import typings.csstype.mod.WebkitOverflowScrollingProperty
-import typings.csstype.mod.WebkitTouchCalloutProperty
-import typings.csstype.mod.WebkitUserModifyProperty
-import typings.csstype.mod.WhiteSpaceProperty
-import typings.csstype.mod.WordBreakProperty
-import typings.csstype.mod.WordWrapProperty
-import typings.csstype.mod.WritingModeProperty
-import typings.csstype.mod._AlignContentProperty
-import typings.csstype.mod._AlignItemsProperty
-import typings.csstype.mod._AlignSelfProperty
-import typings.csstype.mod._AlignTracksProperty
-import typings.csstype.mod._AnimateableFeature
-import typings.csstype.mod._AnimationIterationCountProperty
-import typings.csstype.mod._AnimationNameProperty
-import typings.csstype.mod._AnimationPlayStateProperty
-import typings.csstype.mod._AspectRatioProperty
-import typings.csstype.mod._AzimuthProperty
-import typings.csstype.mod._BackdropFilterProperty
-import typings.csstype.mod._BackgroundImageProperty
-import typings.csstype.mod._BackgroundPositionXProperty
-import typings.csstype.mod._BackgroundPositionYProperty
-import typings.csstype.mod._BaselineShiftProperty
-import typings.csstype.mod._BgPosition
-import typings.csstype.mod._BgSize
-import typings.csstype.mod._BlockOverflowProperty
-import typings.csstype.mod._BlockSizeProperty
-import typings.csstype.mod._BorderImageProperty
-import typings.csstype.mod._BorderImageRepeatProperty
-import typings.csstype.mod._BorderImageSourceProperty
-import typings.csstype.mod._BorderImageWidthProperty
-import typings.csstype.mod._BottomProperty
-import typings.csstype.mod._BoxShadowProperty
-import typings.csstype.mod._CaretColorProperty
-import typings.csstype.mod._ClipPathProperty
-import typings.csstype.mod._ClipProperty
-import typings.csstype.mod._Color
-import typings.csstype.mod._ColumnCountProperty
-import typings.csstype.mod._ColumnGapProperty
-import typings.csstype.mod._ColumnWidthProperty
-import typings.csstype.mod._ColumnsProperty
-import typings.csstype.mod._ContainProperty
-import typings.csstype.mod._ContentList
-import typings.csstype.mod._ContentProperty
-import typings.csstype.mod._CounterIncrementProperty
-import typings.csstype.mod._CounterResetProperty
-import typings.csstype.mod._CounterSetProperty
-import typings.csstype.mod._CounterStyleRangeProperty
-import typings.csstype.mod._CounterStyleSpeakAsProperty
-import typings.csstype.mod._CounterStyleSystemProperty
-import typings.csstype.mod._CubicBezierTimingFunction
-import typings.csstype.mod._CursorProperty
-import typings.csstype.mod._DisplayProperty
-import typings.csstype.mod._FilterProperty
-import typings.csstype.mod._FinalBgLayer
-import typings.csstype.mod._FlexBasisProperty
-import typings.csstype.mod._FlexFlowProperty
-import typings.csstype.mod._FlexProperty
-import typings.csstype.mod._FloodColorProperty
-import typings.csstype.mod._FontFaceFontStyleProperty
-import typings.csstype.mod._FontFaceFontVariantProperty
-import typings.csstype.mod._FontFeatureSettingsProperty
-import typings.csstype.mod._FontLanguageOverrideProperty
-import typings.csstype.mod._FontProperty
-import typings.csstype.mod._FontSizeAdjustProperty
-import typings.csstype.mod._FontSizeProperty
-import typings.csstype.mod._FontSmoothProperty
-import typings.csstype.mod._FontStretchAbsolute
-import typings.csstype.mod._FontStyleProperty
-import typings.csstype.mod._FontSynthesisProperty
-import typings.csstype.mod._FontVariantAlternatesProperty
-import typings.csstype.mod._FontVariantEastAsianProperty
-import typings.csstype.mod._FontVariantLigaturesProperty
-import typings.csstype.mod._FontVariantNumericProperty
-import typings.csstype.mod._FontVariantProperty
-import typings.csstype.mod._FontVariationSettingsProperty
-import typings.csstype.mod._FontWeightAbsolute
-import typings.csstype.mod._FontWeightProperty
-import typings.csstype.mod._GapProperty
-import typings.csstype.mod._GlyphOrientationVerticalProperty
-import typings.csstype.mod._GridAutoFlowProperty
-import typings.csstype.mod._GridProperty
-import typings.csstype.mod._GridTemplateAreasProperty
-import typings.csstype.mod._GridTemplateColumnsProperty
-import typings.csstype.mod._GridTemplateProperty
-import typings.csstype.mod._GridTemplateRowsProperty
-import typings.csstype.mod._HangingPunctuationProperty
-import typings.csstype.mod._HeightProperty
-import typings.csstype.mod._ImageOrientationProperty
-import typings.csstype.mod._ImageResolutionProperty
-import typings.csstype.mod._InitialLetterProperty
-import typings.csstype.mod._InlineSizeProperty
-import typings.csstype.mod._InsetBlockEndProperty
-import typings.csstype.mod._InsetBlockProperty
-import typings.csstype.mod._InsetBlockStartProperty
-import typings.csstype.mod._InsetInlineEndProperty
-import typings.csstype.mod._InsetInlineProperty
-import typings.csstype.mod._InsetInlineStartProperty
-import typings.csstype.mod._InsetProperty
-import typings.csstype.mod._JustifyContentProperty
-import typings.csstype.mod._JustifyItemsProperty
-import typings.csstype.mod._JustifySelfProperty
-import typings.csstype.mod._JustifyTracksProperty
-import typings.csstype.mod._LeftProperty
-import typings.csstype.mod._LetterSpacingProperty
-import typings.csstype.mod._LightingColorProperty
-import typings.csstype.mod._LineClampProperty
-import typings.csstype.mod._LineHeightProperty
-import typings.csstype.mod._LineWidth
-import typings.csstype.mod._ListStyleImageProperty
-import typings.csstype.mod._ListStyleProperty
-import typings.csstype.mod._ListStyleTypeProperty
-import typings.csstype.mod._MarginBlockEndProperty
-import typings.csstype.mod._MarginBlockProperty
-import typings.csstype.mod._MarginBlockStartProperty
-import typings.csstype.mod._MarginBottomProperty
-import typings.csstype.mod._MarginInlineEndProperty
-import typings.csstype.mod._MarginInlineProperty
-import typings.csstype.mod._MarginInlineStartProperty
-import typings.csstype.mod._MarginLeftProperty
-import typings.csstype.mod._MarginProperty
-import typings.csstype.mod._MarginRightProperty
-import typings.csstype.mod._MarginTopProperty
-import typings.csstype.mod._MarkerEndProperty
-import typings.csstype.mod._MarkerMidProperty
-import typings.csstype.mod._MarkerProperty
-import typings.csstype.mod._MarkerStartProperty
-import typings.csstype.mod._MaskBorderProperty
-import typings.csstype.mod._MaskBorderRepeatProperty
-import typings.csstype.mod._MaskBorderSourceProperty
-import typings.csstype.mod._MaskBorderWidthProperty
-import typings.csstype.mod._MaskClipProperty
-import typings.csstype.mod._MaskImageProperty
-import typings.csstype.mod._MaskLayer
-import typings.csstype.mod._MaskOriginProperty
-import typings.csstype.mod._MasonryAutoFlowProperty
-import typings.csstype.mod._MaxBlockSizeProperty
-import typings.csstype.mod._MaxHeightProperty
-import typings.csstype.mod._MaxInlineSizeProperty
-import typings.csstype.mod._MaxLinesProperty
-import typings.csstype.mod._MaxWidthProperty
-import typings.csstype.mod._MinBlockSizeProperty
-import typings.csstype.mod._MinHeightProperty
-import typings.csstype.mod._MinInlineSizeProperty
-import typings.csstype.mod._MinWidthProperty
-import typings.csstype.mod._MozBindingProperty
-import typings.csstype.mod._MozBorderBottomColorsProperty
-import typings.csstype.mod._MozBorderLeftColorsProperty
-import typings.csstype.mod._MozBorderRightColorsProperty
-import typings.csstype.mod._MozBorderTopColorsProperty
-import typings.csstype.mod._MozContextPropertiesProperty
-import typings.csstype.mod._MozImageRegionProperty
-import typings.csstype.mod._MsContentZoomSnapProperty
-import typings.csstype.mod._MsFlowFromProperty
-import typings.csstype.mod._MsFlowIntoProperty
-import typings.csstype.mod._MsGridColumnsProperty
-import typings.csstype.mod._MsGridRowsProperty
-import typings.csstype.mod._MsHyphenateLimitCharsProperty
-import typings.csstype.mod._MsHyphenateLimitLinesProperty
-import typings.csstype.mod._MsScrollLimitXMaxProperty
-import typings.csstype.mod._MsScrollLimitYMaxProperty
-import typings.csstype.mod._OffsetAnchorProperty
-import typings.csstype.mod._OffsetPathProperty
-import typings.csstype.mod._OffsetProperty
-import typings.csstype.mod._OffsetRotateProperty
-import typings.csstype.mod._OutlineColorProperty
-import typings.csstype.mod._OutlineProperty
-import typings.csstype.mod._OutlineStyleProperty
-import typings.csstype.mod._OverflowProperty
-import typings.csstype.mod._OverscrollBehaviorProperty
-import typings.csstype.mod._PageSizeProperty
-import typings.csstype.mod._Paint
-import typings.csstype.mod._PaintOrderProperty
-import typings.csstype.mod._PerspectiveProperty
-import typings.csstype.mod._PlaceContentProperty
-import typings.csstype.mod._PlaceItemsProperty
-import typings.csstype.mod._PlaceSelfProperty
-import typings.csstype.mod._Position
-import typings.csstype.mod._QuotesProperty
-import typings.csstype.mod._RepeatStyle
-import typings.csstype.mod._RightProperty
-import typings.csstype.mod._RotateProperty
-import typings.csstype.mod._RowGapProperty
-import typings.csstype.mod._ScaleProperty
-import typings.csstype.mod._ScrollPaddingBlockEndProperty
-import typings.csstype.mod._ScrollPaddingBlockProperty
-import typings.csstype.mod._ScrollPaddingBlockStartProperty
-import typings.csstype.mod._ScrollPaddingBottomProperty
-import typings.csstype.mod._ScrollPaddingInlineEndProperty
-import typings.csstype.mod._ScrollPaddingInlineProperty
-import typings.csstype.mod._ScrollPaddingInlineStartProperty
-import typings.csstype.mod._ScrollPaddingLeftProperty
-import typings.csstype.mod._ScrollPaddingProperty
-import typings.csstype.mod._ScrollPaddingRightProperty
-import typings.csstype.mod._ScrollPaddingTopProperty
-import typings.csstype.mod._ScrollSnapAlignProperty
-import typings.csstype.mod._ScrollSnapCoordinateProperty
-import typings.csstype.mod._ScrollSnapPointsXProperty
-import typings.csstype.mod._ScrollSnapPointsYProperty
-import typings.csstype.mod._ScrollSnapTypeProperty
-import typings.csstype.mod._ScrollbarColorProperty
-import typings.csstype.mod._ScrollbarGutterProperty
-import typings.csstype.mod._ShapeOutsideProperty
-import typings.csstype.mod._SingleAnimation
-import typings.csstype.mod._SingleTransition
-import typings.csstype.mod._StepTimingFunction
-import typings.csstype.mod._StopColorProperty
-import typings.csstype.mod._StrokeDasharrayProperty
-import typings.csstype.mod._TextCombineUprightProperty
-import typings.csstype.mod._TextDecorationLineProperty
-import typings.csstype.mod._TextDecorationProperty
-import typings.csstype.mod._TextDecorationSkipProperty
-import typings.csstype.mod._TextDecorationThicknessProperty
-import typings.csstype.mod._TextEmphasisProperty
-import typings.csstype.mod._TextEmphasisStyleProperty
-import typings.csstype.mod._TextOverflowProperty
-import typings.csstype.mod._TextShadowProperty
-import typings.csstype.mod._TextSizeAdjustProperty
-import typings.csstype.mod._TextUnderlineOffsetProperty
-import typings.csstype.mod._TextUnderlinePositionProperty
-import typings.csstype.mod._TimingFunction
-import typings.csstype.mod._TopProperty
-import typings.csstype.mod._TouchActionProperty
-import typings.csstype.mod._TrackBreadth
-import typings.csstype.mod._TransformOriginProperty
-import typings.csstype.mod._TransformProperty
-import typings.csstype.mod._TransitionPropertyProperty
-import typings.csstype.mod._TranslateProperty
-import typings.csstype.mod._VerticalAlignProperty
-import typings.csstype.mod._WebkitBoxReflectProperty
-import typings.csstype.mod._WebkitLineClampProperty
-import typings.csstype.mod._WebkitMaskClipProperty
-import typings.csstype.mod._WebkitMaskImageProperty
-import typings.csstype.mod._WebkitMaskOriginProperty
-import typings.csstype.mod._WebkitMaskPositionXProperty
-import typings.csstype.mod._WebkitMaskPositionYProperty
-import typings.csstype.mod._WebkitMaskProperty
-import typings.csstype.mod._WidthProperty
-import typings.csstype.mod._WillChangeProperty
-import typings.csstype.mod._WordSpacingProperty
-import typings.csstype.mod._ZIndexProperty
-import typings.csstype.mod._ZoomProperty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -413,368 +421,386 @@ object csstypeStrings {
   @js.native
   sealed trait default
     extends StObject
-       with MozWindowShadowProperty
-       with WebkitTouchCalloutProperty
-       with _CursorProperty
+       with MozWindowShadow
+       with WebkitTouchCallout
+       with _Cursor
   inline def default: default = "default".asInstanceOf[default]
   
   @js.native
   sealed trait `-apple-pay-button`
     extends StObject
-       with WebkitAppearanceProperty
+       with WebkitAppearance
   inline def `-apple-pay-button`: `-apple-pay-button` = "-apple-pay-button".asInstanceOf[`-apple-pay-button`]
   
   @js.native
   sealed trait `-moz-crisp-edges`
     extends StObject
-       with ImageRenderingProperty
+       with ImageRendering
   inline def `-moz-crisp-edges`: `-moz-crisp-edges` = "-moz-crisp-edges".asInstanceOf[`-moz-crisp-edges`]
+  
+  @js.native
+  sealed trait `-moz-fit-content`
+    extends StObject
+       with _BlockSize[Any]
+       with _FlexBasis[Any]
+       with _InlineSize[Any]
+       with _MaxHeight[Any]
+       with _MaxInlineSize[Any]
+       with _MaxWidth[Any]
+       with _MinHeight[Any]
+       with _MinInlineSize[Any]
+       with _MinWidth[Any]
+       with _Width[Any]
+  inline def `-moz-fit-content`: `-moz-fit-content` = "-moz-fit-content".asInstanceOf[`-moz-fit-content`]
   
   @js.native
   sealed trait `-moz-grab`
     extends StObject
-       with _CursorProperty
+       with _Cursor
   inline def `-moz-grab`: `-moz-grab` = "-moz-grab".asInstanceOf[`-moz-grab`]
   
   @js.native
   sealed trait `-moz-hidden-unscrollable`
     extends StObject
-       with OverflowXProperty
-       with OverflowYProperty
-       with _OverflowProperty
+       with OverflowX
+       with OverflowY
+       with _Overflow
   inline def `-moz-hidden-unscrollable`: `-moz-hidden-unscrollable` = "-moz-hidden-unscrollable".asInstanceOf[`-moz-hidden-unscrollable`]
   
   @js.native
   sealed trait `-moz-initial`
     extends StObject
-       with AlignmentBaselineProperty
-       with AppearanceProperty
-       with BackfaceVisibilityProperty
-       with BorderBlockEndStyleProperty
-       with BorderBlockStartStyleProperty
-       with BorderBlockStyleProperty
-       with BorderBottomStyleProperty
-       with BorderCollapseProperty
-       with BorderInlineEndStyleProperty
-       with BorderInlineStartStyleProperty
-       with BorderInlineStyleProperty
-       with BorderLeftStyleProperty
-       with BorderRightStyleProperty
-       with BorderTopStyleProperty
-       with BoxAlignProperty
-       with BoxDecorationBreakProperty
-       with BoxDirectionProperty
-       with BoxLinesProperty
-       with BoxOrientProperty
-       with BoxPackProperty
-       with BoxSizingProperty
-       with BreakAfterProperty
-       with BreakBeforeProperty
-       with BreakInsideProperty
-       with CaptionSideProperty
-       with ClearProperty
-       with ClipRuleProperty
-       with ColorAdjustProperty
-       with ColorInterpolationProperty
-       with ColorRenderingProperty
-       with ColumnFillProperty
-       with ColumnSpanProperty
-       with DirectionProperty
-       with DominantBaselineProperty
-       with EmptyCellsProperty
-       with FillRuleProperty
-       with FlexDirectionProperty
-       with FlexWrapProperty
-       with FloatProperty
-       with FontKerningProperty
-       with FontOpticalSizingProperty
-       with FontVariantCapsProperty
-       with FontVariantPositionProperty
+       with AlignmentBaseline
+       with Appearance
+       with BackfaceVisibility
+       with BorderBlockEndStyle
+       with BorderBlockStartStyle
+       with BorderBlockStyle
+       with BorderBottomStyle
+       with BorderCollapse
+       with BorderInlineEndStyle
+       with BorderInlineStartStyle
+       with BorderInlineStyle
+       with BorderLeftStyle
+       with BorderRightStyle
+       with BorderTopStyle
+       with BoxAlign
+       with BoxDecorationBreak
+       with BoxDirection
+       with BoxLines
+       with BoxOrient
+       with BoxPack
+       with BoxSizing
+       with BreakAfter
+       with BreakBefore
+       with BreakInside
+       with CaptionSide
+       with Clear
+       with ClipRule
+       with ColorInterpolation
+       with ColorRendering
+       with ColumnFill
+       with ColumnSpan
+       with ContentVisibility
+       with Direction
+       with DominantBaseline
+       with EmptyCells
+       with FillRule
+       with FlexDirection
+       with FlexWrap
+       with Float
+       with FontKerning
+       with FontOpticalSizing
+       with FontVariantCaps
+       with FontVariantPosition
+       with ForcedColorAdjust
        with Globals
-       with HyphensProperty
-       with ImageRenderingProperty
-       with ImeModeProperty
-       with IsolationProperty
-       with LineBreakProperty
-       with ListStylePositionProperty
-       with MaskBorderModeProperty
-       with MaskTypeProperty
-       with MathStyleProperty
-       with MixBlendModeProperty
-       with MozAppearanceProperty
-       with MozFloatEdgeProperty
-       with MozOrientProperty
-       with MozStackSizingProperty
-       with MozTextBlinkProperty
-       with MozUserFocusProperty
-       with MozUserInputProperty
-       with MozUserModifyProperty
-       with MozWindowDraggingProperty
-       with MozWindowShadowProperty
-       with MsAcceleratorProperty
-       with MsBlockProgressionProperty
-       with MsContentZoomChainingProperty
-       with MsContentZoomSnapTypeProperty
-       with MsContentZoomingProperty
-       with MsHighContrastAdjustProperty
-       with MsImeAlignProperty
-       with MsOverflowStyleProperty
-       with MsScrollChainingProperty
-       with MsScrollRailsProperty
-       with MsScrollSnapTypeProperty
-       with MsScrollTranslationProperty
-       with MsTextAutospaceProperty
-       with MsTouchSelectProperty
-       with MsUserSelectProperty
-       with MsWrapFlowProperty
-       with MsWrapThroughProperty
-       with ObjectFitProperty
-       with OverflowAnchorProperty
-       with OverflowBlockProperty
-       with OverflowClipBoxProperty
-       with OverflowInlineProperty
-       with OverflowWrapProperty
-       with OverflowXProperty
-       with OverflowYProperty
-       with OverscrollBehaviorBlockProperty
-       with OverscrollBehaviorInlineProperty
-       with OverscrollBehaviorXProperty
-       with OverscrollBehaviorYProperty
-       with PageBreakAfterProperty
-       with PageBreakBeforeProperty
-       with PageBreakInsideProperty
-       with PointerEventsProperty
-       with PositionProperty
-       with ResizeProperty
-       with RubyAlignProperty
-       with RubyMergeProperty
-       with RubyPositionProperty
-       with ScrollBehaviorProperty
-       with ScrollSnapStopProperty
-       with ScrollSnapTypeXProperty
-       with ScrollSnapTypeYProperty
-       with ScrollbarWidthProperty
-       with ShapeRenderingProperty
-       with StrokeLinecapProperty
-       with StrokeLinejoinProperty
-       with TableLayoutProperty
-       with TextAlignLastProperty
-       with TextAlignProperty
-       with TextAnchorProperty
-       with TextDecorationSkipInkProperty
-       with TextDecorationStyleProperty
-       with TextJustifyProperty
-       with TextOrientationProperty
-       with TextRenderingProperty
-       with TextTransformProperty
-       with TransformBoxProperty
-       with TransformStyleProperty
-       with UnicodeBidiProperty
-       with UserSelectProperty
-       with VectorEffectProperty
-       with VisibilityProperty
-       with WebkitAppearanceProperty
-       with WebkitMaskRepeatXProperty
-       with WebkitMaskRepeatYProperty
-       with WebkitOverflowScrollingProperty
-       with WebkitTouchCalloutProperty
-       with WebkitUserModifyProperty
-       with WhiteSpaceProperty
-       with WordBreakProperty
-       with WordWrapProperty
-       with WritingModeProperty
+       with Hyphens
+       with ImageRendering
+       with ImeMode
+       with InputSecurity
+       with Isolation
+       with LineBreak
+       with ListStylePosition
+       with MaskBorderMode
+       with MaskType
+       with MathShift
+       with MathStyle
+       with MixBlendMode
+       with MozAppearance
+       with MozFloatEdge
+       with MozOrient
+       with MozStackSizing
+       with MozTextBlink
+       with MozUserFocus
+       with MozUserInput
+       with MozUserModify
+       with MozWindowDragging
+       with MozWindowShadow
+       with MsAccelerator
+       with MsBlockProgression
+       with MsContentZoomChaining
+       with MsContentZoomSnapType
+       with MsContentZooming
+       with MsHighContrastAdjust
+       with MsImeAlign
+       with MsOverflowStyle
+       with MsScrollChaining
+       with MsScrollRails
+       with MsScrollSnapType
+       with MsScrollTranslation
+       with MsTextAutospace
+       with MsTouchSelect
+       with MsUserSelect
+       with MsWrapFlow
+       with MsWrapThrough
+       with ObjectFit
+       with OverflowAnchor
+       with OverflowBlock
+       with OverflowClipBox
+       with OverflowInline
+       with OverflowWrap
+       with OverflowX
+       with OverflowY
+       with OverscrollBehaviorBlock
+       with OverscrollBehaviorInline
+       with OverscrollBehaviorX
+       with OverscrollBehaviorY
+       with PageBreakAfter
+       with PageBreakBefore
+       with PageBreakInside
+       with PointerEvents
+       with Position
+       with PrintColorAdjust
+       with Resize
+       with RubyAlign
+       with RubyMerge
+       with ScrollBehavior
+       with ScrollSnapStop
+       with ScrollSnapTypeX
+       with ScrollSnapTypeY
+       with ScrollbarWidth
+       with ShapeRendering
+       with StrokeLinecap
+       with StrokeLinejoin
+       with TableLayout
+       with TextAlign
+       with TextAlignLast
+       with TextAnchor
+       with TextDecorationSkipInk
+       with TextDecorationStyle
+       with TextJustify
+       with TextOrientation
+       with TextRendering
+       with TextTransform
+       with TransformBox
+       with TransformStyle
+       with UnicodeBidi
+       with UserSelect
+       with VectorEffect
+       with Visibility
+       with WebkitAppearance
+       with WebkitMaskRepeatX
+       with WebkitMaskRepeatY
+       with WebkitOverflowScrolling
+       with WebkitTouchCallout
+       with WebkitUserModify
+       with WhiteSpace
+       with WordBreak
+       with WordWrap
+       with WritingMode
   inline def `-moz-initial`: `-moz-initial` = "-moz-initial".asInstanceOf[`-moz-initial`]
   
   @js.native
   sealed trait `-moz-isolate`
     extends StObject
-       with UnicodeBidiProperty
+       with UnicodeBidi
   inline def `-moz-isolate`: `-moz-isolate` = "-moz-isolate".asInstanceOf[`-moz-isolate`]
   
   @js.native
   sealed trait `-moz-isolate-override`
     extends StObject
-       with UnicodeBidiProperty
+       with UnicodeBidi
   inline def `-moz-isolate-override`: `-moz-isolate-override` = "-moz-isolate-override".asInstanceOf[`-moz-isolate-override`]
   
   @js.native
   sealed trait `-moz-mac-unified-toolbar`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `-moz-mac-unified-toolbar`: `-moz-mac-unified-toolbar` = "-moz-mac-unified-toolbar".asInstanceOf[`-moz-mac-unified-toolbar`]
   
   @js.native
   sealed trait `-moz-max-content`
     extends StObject
-       with _BlockSizeProperty[js.Any]
-       with _FlexBasisProperty[js.Any]
-       with _HeightProperty[js.Any]
-       with _InlineSizeProperty[js.Any]
-       with _MaxBlockSizeProperty[js.Any]
-       with _MaxHeightProperty[js.Any]
-       with _MaxInlineSizeProperty[js.Any]
-       with _MaxWidthProperty[js.Any]
-       with _MinBlockSizeProperty[js.Any]
-       with _MinHeightProperty[js.Any]
-       with _MinInlineSizeProperty[js.Any]
-       with _MinWidthProperty[js.Any]
-       with _WidthProperty[js.Any]
+       with _BlockSize[Any]
+       with _FlexBasis[Any]
+       with _Height[Any]
+       with _InlineSize[Any]
+       with _MaxBlockSize[Any]
+       with _MaxHeight[Any]
+       with _MaxInlineSize[Any]
+       with _MaxWidth[Any]
+       with _MinBlockSize[Any]
+       with _MinHeight[Any]
+       with _MinInlineSize[Any]
+       with _MinWidth[Any]
+       with _Width[Any]
   inline def `-moz-max-content`: `-moz-max-content` = "-moz-max-content".asInstanceOf[`-moz-max-content`]
   
   @js.native
   sealed trait `-moz-min-content`
     extends StObject
-       with _BlockSizeProperty[js.Any]
-       with _FlexBasisProperty[js.Any]
-       with _HeightProperty[js.Any]
-       with _InlineSizeProperty[js.Any]
-       with _MaxBlockSizeProperty[js.Any]
-       with _MaxHeightProperty[js.Any]
-       with _MaxInlineSizeProperty[js.Any]
-       with _MaxWidthProperty[js.Any]
-       with _MinBlockSizeProperty[js.Any]
-       with _MinHeightProperty[js.Any]
-       with _MinInlineSizeProperty[js.Any]
-       with _MinWidthProperty[js.Any]
-       with _WidthProperty[js.Any]
+       with _BlockSize[Any]
+       with _FlexBasis[Any]
+       with _Height[Any]
+       with _InlineSize[Any]
+       with _MaxBlockSize[Any]
+       with _MaxHeight[Any]
+       with _MaxInlineSize[Any]
+       with _MaxWidth[Any]
+       with _MinBlockSize[Any]
+       with _MinHeight[Any]
+       with _MinInlineSize[Any]
+       with _MinWidth[Any]
+       with _Width[Any]
   inline def `-moz-min-content`: `-moz-min-content` = "-moz-min-content".asInstanceOf[`-moz-min-content`]
   
   @js.native
   sealed trait `-moz-none`
     extends StObject
-       with UserSelectProperty
+       with UserSelect
   inline def `-moz-none`: `-moz-none` = "-moz-none".asInstanceOf[`-moz-none`]
   
   @js.native
   sealed trait `-moz-plaintext`
     extends StObject
-       with UnicodeBidiProperty
+       with UnicodeBidi
   inline def `-moz-plaintext`: `-moz-plaintext` = "-moz-plaintext".asInstanceOf[`-moz-plaintext`]
   
   @js.native
   sealed trait `-moz-pre-wrap`
     extends StObject
-       with WhiteSpaceProperty
+       with WhiteSpace
   inline def `-moz-pre-wrap`: `-moz-pre-wrap` = "-moz-pre-wrap".asInstanceOf[`-moz-pre-wrap`]
   
   @js.native
   sealed trait `-moz-win-borderless-glass`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `-moz-win-borderless-glass`: `-moz-win-borderless-glass` = "-moz-win-borderless-glass".asInstanceOf[`-moz-win-borderless-glass`]
   
   @js.native
   sealed trait `-moz-win-browsertabbar-toolbox`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `-moz-win-browsertabbar-toolbox`: `-moz-win-browsertabbar-toolbox` = "-moz-win-browsertabbar-toolbox".asInstanceOf[`-moz-win-browsertabbar-toolbox`]
   
   @js.native
   sealed trait `-moz-win-communications-toolbox`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `-moz-win-communications-toolbox`: `-moz-win-communications-toolbox` = "-moz-win-communications-toolbox".asInstanceOf[`-moz-win-communications-toolbox`]
   
   @js.native
   sealed trait `-moz-win-communicationstext`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `-moz-win-communicationstext`: `-moz-win-communicationstext` = "-moz-win-communicationstext".asInstanceOf[`-moz-win-communicationstext`]
   
   @js.native
   sealed trait `-moz-win-exclude-glass`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `-moz-win-exclude-glass`: `-moz-win-exclude-glass` = "-moz-win-exclude-glass".asInstanceOf[`-moz-win-exclude-glass`]
   
   @js.native
   sealed trait `-moz-win-glass`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `-moz-win-glass`: `-moz-win-glass` = "-moz-win-glass".asInstanceOf[`-moz-win-glass`]
   
   @js.native
   sealed trait `-moz-win-media-toolbox`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `-moz-win-media-toolbox`: `-moz-win-media-toolbox` = "-moz-win-media-toolbox".asInstanceOf[`-moz-win-media-toolbox`]
   
   @js.native
   sealed trait `-moz-win-mediatext`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `-moz-win-mediatext`: `-moz-win-mediatext` = "-moz-win-mediatext".asInstanceOf[`-moz-win-mediatext`]
   
   @js.native
   sealed trait `-moz-window-button-box`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `-moz-window-button-box`: `-moz-window-button-box` = "-moz-window-button-box".asInstanceOf[`-moz-window-button-box`]
   
   @js.native
   sealed trait `-moz-window-button-box-maximized`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `-moz-window-button-box-maximized`: `-moz-window-button-box-maximized` = "-moz-window-button-box-maximized".asInstanceOf[`-moz-window-button-box-maximized`]
   
   @js.native
   sealed trait `-moz-window-button-close`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `-moz-window-button-close`: `-moz-window-button-close` = "-moz-window-button-close".asInstanceOf[`-moz-window-button-close`]
   
   @js.native
   sealed trait `-moz-window-button-maximize`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `-moz-window-button-maximize`: `-moz-window-button-maximize` = "-moz-window-button-maximize".asInstanceOf[`-moz-window-button-maximize`]
   
   @js.native
   sealed trait `-moz-window-button-minimize`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `-moz-window-button-minimize`: `-moz-window-button-minimize` = "-moz-window-button-minimize".asInstanceOf[`-moz-window-button-minimize`]
   
   @js.native
   sealed trait `-moz-window-button-restore`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `-moz-window-button-restore`: `-moz-window-button-restore` = "-moz-window-button-restore".asInstanceOf[`-moz-window-button-restore`]
   
   @js.native
   sealed trait `-moz-window-frame-bottom`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `-moz-window-frame-bottom`: `-moz-window-frame-bottom` = "-moz-window-frame-bottom".asInstanceOf[`-moz-window-frame-bottom`]
   
   @js.native
   sealed trait `-moz-window-frame-left`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `-moz-window-frame-left`: `-moz-window-frame-left` = "-moz-window-frame-left".asInstanceOf[`-moz-window-frame-left`]
   
   @js.native
   sealed trait `-moz-window-frame-right`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `-moz-window-frame-right`: `-moz-window-frame-right` = "-moz-window-frame-right".asInstanceOf[`-moz-window-frame-right`]
   
   @js.native
   sealed trait `-moz-window-titlebar`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `-moz-window-titlebar`: `-moz-window-titlebar` = "-moz-window-titlebar".asInstanceOf[`-moz-window-titlebar`]
   
   @js.native
   sealed trait `-moz-window-titlebar-maximized`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `-moz-window-titlebar-maximized`: `-moz-window-titlebar-maximized` = "-moz-window-titlebar-maximized".asInstanceOf[`-moz-window-titlebar-maximized`]
   
   @js.native
   sealed trait `-ms-autohiding-scrollbar`
     extends StObject
-       with MsOverflowStyleProperty
+       with MsOverflowStyle
   inline def `-ms-autohiding-scrollbar`: `-ms-autohiding-scrollbar` = "-ms-autohiding-scrollbar".asInstanceOf[`-ms-autohiding-scrollbar`]
   
   @js.native
@@ -804,32 +830,49 @@ object csstypeStrings {
   @js.native
   sealed trait `-ms-manipulation`
     extends StObject
-       with _TouchActionProperty
+       with _TouchAction
   inline def `-ms-manipulation`: `-ms-manipulation` = "-ms-manipulation".asInstanceOf[`-ms-manipulation`]
   
   @js.native
   sealed trait `-ms-none`
     extends StObject
-       with _TouchActionProperty
+       with _TouchAction
   inline def `-ms-none`: `-ms-none` = "-ms-none".asInstanceOf[`-ms-none`]
   
   @js.native
   sealed trait `-ms-pinch-zoom`
     extends StObject
-       with _TouchActionProperty
+       with _TouchAction
   inline def `-ms-pinch-zoom`: `-ms-pinch-zoom` = "-ms-pinch-zoom".asInstanceOf[`-ms-pinch-zoom`]
-  
-  @js.native
-  sealed trait `-ms-zoom`
-    extends StObject
-       with ViewportUserZoomProperty
-  inline def `-ms-zoom`: `-ms-zoom` = "-ms-zoom".asInstanceOf[`-ms-zoom`]
   
   @js.native
   sealed trait `-webkit-auto`
     extends StObject
-       with _FlexBasisProperty[js.Any]
+       with _FlexBasis[Any]
   inline def `-webkit-auto`: `-webkit-auto` = "-webkit-auto".asInstanceOf[`-webkit-auto`]
+  
+  @js.native
+  sealed trait `-webkit-fill-available`
+    extends StObject
+       with _BlockSize[Any]
+       with _InlineSize[Any]
+       with _MaxBlockSize[Any]
+       with _MaxInlineSize[Any]
+       with _MinBlockSize[Any]
+       with _MinInlineSize[Any]
+       with _MinWidth[Any]
+  inline def `-webkit-fill-available`: `-webkit-fill-available` = "-webkit-fill-available".asInstanceOf[`-webkit-fill-available`]
+  
+  @js.native
+  sealed trait `-webkit-fit-content`
+    extends StObject
+       with _Height[Any]
+       with _MaxHeight[Any]
+       with _MaxWidth[Any]
+       with _MinHeight[Any]
+       with _MinWidth[Any]
+       with _Width[Any]
+  inline def `-webkit-fit-content`: `-webkit-fit-content` = "-webkit-fit-content".asInstanceOf[`-webkit-fit-content`]
   
   @js.native
   sealed trait `-webkit-flex`
@@ -840,7 +883,7 @@ object csstypeStrings {
   @js.native
   sealed trait `-webkit-grab`
     extends StObject
-       with _CursorProperty
+       with _Cursor
   inline def `-webkit-grab`: `-webkit-grab` = "-webkit-grab".asInstanceOf[`-webkit-grab`]
   
   @js.native
@@ -852,38 +895,50 @@ object csstypeStrings {
   @js.native
   sealed trait `-webkit-isolate`
     extends StObject
-       with UnicodeBidiProperty
+       with UnicodeBidi
   inline def `-webkit-isolate`: `-webkit-isolate` = "-webkit-isolate".asInstanceOf[`-webkit-isolate`]
+  
+  @js.native
+  sealed trait `-webkit-isolate-override`
+    extends StObject
+       with UnicodeBidi
+  inline def `-webkit-isolate-override`: `-webkit-isolate-override` = "-webkit-isolate-override".asInstanceOf[`-webkit-isolate-override`]
   
   @js.native
   sealed trait `-webkit-max-content`
     extends StObject
-       with _MaxHeightProperty[js.Any]
-       with _MaxWidthProperty[js.Any]
-       with _MinHeightProperty[js.Any]
-       with _MinWidthProperty[js.Any]
-       with _WidthProperty[js.Any]
+       with _MaxHeight[Any]
+       with _MaxWidth[Any]
+       with _MinHeight[Any]
+       with _MinWidth[Any]
+       with _Width[Any]
   inline def `-webkit-max-content`: `-webkit-max-content` = "-webkit-max-content".asInstanceOf[`-webkit-max-content`]
   
   @js.native
   sealed trait `-webkit-min-content`
     extends StObject
-       with _MaxHeightProperty[js.Any]
-       with _MaxWidthProperty[js.Any]
-       with _MinHeightProperty[js.Any]
-       with _MinWidthProperty[js.Any]
+       with _MaxHeight[Any]
+       with _MaxWidth[Any]
+       with _MinHeight[Any]
+       with _MinWidth[Any]
   inline def `-webkit-min-content`: `-webkit-min-content` = "-webkit-min-content".asInstanceOf[`-webkit-min-content`]
   
   @js.native
   sealed trait `-webkit-optimize-contrast`
     extends StObject
-       with ImageRenderingProperty
+       with ImageRendering
   inline def `-webkit-optimize-contrast`: `-webkit-optimize-contrast` = "-webkit-optimize-contrast".asInstanceOf[`-webkit-optimize-contrast`]
+  
+  @js.native
+  sealed trait `-webkit-plaintext`
+    extends StObject
+       with UnicodeBidi
+  inline def `-webkit-plaintext`: `-webkit-plaintext` = "-webkit-plaintext".asInstanceOf[`-webkit-plaintext`]
   
   @js.native
   sealed trait `-webkit-sticky`
     extends StObject
-       with PositionProperty
+       with Position
   inline def `-webkit-sticky`: `-webkit-sticky` = "-webkit-sticky".asInstanceOf[`-webkit-sticky`]
   
   @js.native
@@ -929,6 +984,12 @@ object csstypeStrings {
   inline def `@keyframes`: `@keyframes` = "@keyframes".asInstanceOf[`@keyframes`]
   
   @js.native
+  sealed trait `@layer`
+    extends StObject
+       with AtRules
+  inline def `@layer`: `@layer` = "@layer".asInstanceOf[`@layer`]
+  
+  @js.native
   sealed trait `@media`
     extends StObject
        with AtRules
@@ -953,6 +1014,12 @@ object csstypeStrings {
   inline def `@property`: `@property` = "@property".asInstanceOf[`@property`]
   
   @js.native
+  sealed trait `@scroll-timeline`
+    extends StObject
+       with AtRules
+  inline def `@scroll-timeline`: `@scroll-timeline` = "@scroll-timeline".asInstanceOf[`@scroll-timeline`]
+  
+  @js.native
   sealed trait `@supports`
     extends StObject
        with AtRules
@@ -963,6 +1030,24 @@ object csstypeStrings {
     extends StObject
        with AtRules
   inline def `@viewport`: `@viewport` = "@viewport".asInstanceOf[`@viewport`]
+  
+  @js.native
+  sealed trait A3
+    extends StObject
+       with PageSize
+  inline def A3: A3 = "A3".asInstanceOf[A3]
+  
+  @js.native
+  sealed trait A4
+    extends StObject
+       with PageSize
+  inline def A4: A4 = "A4".asInstanceOf[A4]
+  
+  @js.native
+  sealed trait A5
+    extends StObject
+       with PageSize
+  inline def A5: A5 = "A5".asInstanceOf[A5]
   
   @js.native
   sealed trait ActiveBorder
@@ -981,6 +1066,18 @@ object csstypeStrings {
     extends StObject
        with DeprecatedSystemColor
   inline def AppWorkspace: AppWorkspace = "AppWorkspace".asInstanceOf[AppWorkspace]
+  
+  @js.native
+  sealed trait B4
+    extends StObject
+       with PageSize
+  inline def B4: B4 = "B4".asInstanceOf[B4]
+  
+  @js.native
+  sealed trait B5
+    extends StObject
+       with PageSize
+  inline def B5: B5 = "B5".asInstanceOf[B5]
   
   @js.native
   sealed trait Background
@@ -1080,6 +1177,20 @@ object csstypeStrings {
        with Pseudos
        with SimplePseudos
   inline def `Colon-moz-read-write`: `Colon-moz-read-write` = ":-moz-read-write".asInstanceOf[`Colon-moz-read-write`]
+  
+  @js.native
+  sealed trait `Colon-moz-ui-invalid`
+    extends StObject
+       with Pseudos
+       with SimplePseudos
+  inline def `Colon-moz-ui-invalid`: `Colon-moz-ui-invalid` = ":-moz-ui-invalid".asInstanceOf[`Colon-moz-ui-invalid`]
+  
+  @js.native
+  sealed trait `Colon-moz-ui-valid`
+    extends StObject
+       with Pseudos
+       with SimplePseudos
+  inline def `Colon-moz-ui-valid`: `Colon-moz-ui-valid` = ":-moz-ui-valid".asInstanceOf[`Colon-moz-ui-valid`]
   
   @js.native
   sealed trait `Colon-ms-fullscreen`
@@ -1185,6 +1296,13 @@ object csstypeStrings {
        with Pseudos
        with SimplePseudos
   inline def `ColonColon-ms-clear`: `ColonColon-ms-clear` = "::-ms-clear".asInstanceOf[`ColonColon-ms-clear`]
+  
+  @js.native
+  sealed trait `ColonColon-ms-expand`
+    extends StObject
+       with Pseudos
+       with SimplePseudos
+  inline def `ColonColon-ms-expand`: `ColonColon-ms-expand` = "::-ms-expand".asInstanceOf[`ColonColon-ms-expand`]
   
   @js.native
   sealed trait `ColonColon-ms-fill`
@@ -1413,6 +1531,13 @@ object csstypeStrings {
   inline def `ColonColonspelling-error`: `ColonColonspelling-error` = "::spelling-error".asInstanceOf[`ColonColonspelling-error`]
   
   @js.native
+  sealed trait `ColonColontarget-text`
+    extends StObject
+       with Pseudos
+       with SimplePseudos
+  inline def `ColonColontarget-text`: `ColonColontarget-text` = "::target-text".asInstanceOf[`ColonColontarget-text`]
+  
+  @js.native
   sealed trait Colonactive
     extends StObject
        with Pseudos
@@ -1453,6 +1578,13 @@ object csstypeStrings {
        with Pseudos
        with SimplePseudos
   inline def Colonchecked: Colonchecked = ":checked".asInstanceOf[Colonchecked]
+  
+  @js.native
+  sealed trait Coloncurrent
+    extends StObject
+       with Pseudos
+       with SimplePseudos
+  inline def Coloncurrent: Coloncurrent = ":current".asInstanceOf[Coloncurrent]
   
   @js.native
   sealed trait Colondefault
@@ -1560,6 +1692,13 @@ object csstypeStrings {
   inline def Colonfullscreen: Colonfullscreen = ":fullscreen".asInstanceOf[Colonfullscreen]
   
   @js.native
+  sealed trait Colonfuture
+    extends StObject
+       with Pseudos
+       with SimplePseudos
+  inline def Colonfuture: Colonfuture = ":future".asInstanceOf[Colonfuture]
+  
+  @js.native
   sealed trait Colonhas
     extends StObject
        with AdvancedPseudos
@@ -1651,6 +1790,13 @@ object csstypeStrings {
   inline def Colonlink: Colonlink = ":link".asInstanceOf[Colonlink]
   
   @js.native
+  sealed trait `Colonlocal-link`
+    extends StObject
+       with Pseudos
+       with SimplePseudos
+  inline def `Colonlocal-link`: `Colonlocal-link` = ":local-link".asInstanceOf[`Colonlocal-link`]
+  
+  @js.native
   sealed trait ColonmatchesLeftparenthesisRightparenthesis
     extends StObject
        with AdvancedPseudos
@@ -1672,11 +1818,25 @@ object csstypeStrings {
   inline def `Colonnth-child`: `Colonnth-child` = ":nth-child".asInstanceOf[`Colonnth-child`]
   
   @js.native
+  sealed trait `Colonnth-col`
+    extends StObject
+       with Pseudos
+       with SimplePseudos
+  inline def `Colonnth-col`: `Colonnth-col` = ":nth-col".asInstanceOf[`Colonnth-col`]
+  
+  @js.native
   sealed trait `Colonnth-last-child`
     extends StObject
        with AdvancedPseudos
        with Pseudos
   inline def `Colonnth-last-child`: `Colonnth-last-child` = ":nth-last-child".asInstanceOf[`Colonnth-last-child`]
+  
+  @js.native
+  sealed trait `Colonnth-last-col`
+    extends StObject
+       with Pseudos
+       with SimplePseudos
+  inline def `Colonnth-last-col`: `Colonnth-last-col` = ":nth-last-col".asInstanceOf[`Colonnth-last-col`]
   
   @js.native
   sealed trait `Colonnth-last-of-type`
@@ -1721,11 +1881,39 @@ object csstypeStrings {
   inline def `Colonout-of-range`: `Colonout-of-range` = ":out-of-range".asInstanceOf[`Colonout-of-range`]
   
   @js.native
+  sealed trait Colonpast
+    extends StObject
+       with Pseudos
+       with SimplePseudos
+  inline def Colonpast: Colonpast = ":past".asInstanceOf[Colonpast]
+  
+  @js.native
+  sealed trait Colonpaused
+    extends StObject
+       with Pseudos
+       with SimplePseudos
+  inline def Colonpaused: Colonpaused = ":paused".asInstanceOf[Colonpaused]
+  
+  @js.native
+  sealed trait `Colonpicture-in-picture`
+    extends StObject
+       with Pseudos
+       with SimplePseudos
+  inline def `Colonpicture-in-picture`: `Colonpicture-in-picture` = ":picture-in-picture".asInstanceOf[`Colonpicture-in-picture`]
+  
+  @js.native
   sealed trait `Colonplaceholder-shown`
     extends StObject
        with Pseudos
        with SimplePseudos
   inline def `Colonplaceholder-shown`: `Colonplaceholder-shown` = ":placeholder-shown".asInstanceOf[`Colonplaceholder-shown`]
+  
+  @js.native
+  sealed trait Colonplaying
+    extends StObject
+       with Pseudos
+       with SimplePseudos
+  inline def Colonplaying: Colonplaying = ":playing".asInstanceOf[Colonplaying]
   
   @js.native
   sealed trait `Colonread-only`
@@ -1777,6 +1965,27 @@ object csstypeStrings {
   inline def Colontarget: Colontarget = ":target".asInstanceOf[Colontarget]
   
   @js.native
+  sealed trait `Colontarget-within`
+    extends StObject
+       with Pseudos
+       with SimplePseudos
+  inline def `Colontarget-within`: `Colontarget-within` = ":target-within".asInstanceOf[`Colontarget-within`]
+  
+  @js.native
+  sealed trait `Colonuser-invalid`
+    extends StObject
+       with Pseudos
+       with SimplePseudos
+  inline def `Colonuser-invalid`: `Colonuser-invalid` = ":user-invalid".asInstanceOf[`Colonuser-invalid`]
+  
+  @js.native
+  sealed trait `Colonuser-valid`
+    extends StObject
+       with Pseudos
+       with SimplePseudos
+  inline def `Colonuser-valid`: `Colonuser-valid` = ":user-valid".asInstanceOf[`Colonuser-valid`]
+  
+  @js.native
   sealed trait Colonvalid
     extends StObject
        with Pseudos
@@ -1796,6 +2005,10 @@ object csstypeStrings {
        with AdvancedPseudos
        with Pseudos
   inline def Colonwhere: Colonwhere = ":where".asInstanceOf[Colonwhere]
+  
+  @js.native
+  sealed trait Fallback extends StObject
+  inline def Fallback: Fallback = "Fallback".asInstanceOf[Fallback]
   
   @js.native
   sealed trait GrayText
@@ -1844,6 +2057,18 @@ object csstypeStrings {
     extends StObject
        with DeprecatedSystemColor
   inline def InfoText: InfoText = "InfoText".asInstanceOf[InfoText]
+  
+  @js.native
+  sealed trait `JIS-B4`
+    extends StObject
+       with PageSize
+  inline def `JIS-B4`: `JIS-B4` = "JIS-B4".asInstanceOf[`JIS-B4`]
+  
+  @js.native
+  sealed trait `JIS-B5`
+    extends StObject
+       with PageSize
+  inline def `JIS-B5`: `JIS-B5` = "JIS-B5".asInstanceOf[`JIS-B5`]
   
   @js.native
   sealed trait Menu
@@ -1910,12 +2135,6 @@ object csstypeStrings {
     extends StObject
        with DeprecatedSystemColor
   inline def WindowText: WindowText = "WindowText".asInstanceOf[WindowText]
-  
-  @js.native
-  sealed trait `[-webkit-dropzone]`
-    extends StObject
-       with HtmlAttributes
-  inline def `[-webkit-dropzone]`: `[-webkit-dropzone]` = "[-webkit-dropzone]".asInstanceOf[`[-webkit-dropzone]`]
   
   @js.native
   sealed trait `[abbr]`
@@ -2152,12 +2371,6 @@ object csstypeStrings {
   inline def `[bottommargin]`: `[bottommargin]` = "[bottommargin]".asInstanceOf[`[bottommargin]`]
   
   @js.native
-  sealed trait `[buffered]`
-    extends StObject
-       with HtmlAttributes
-  inline def `[buffered]`: `[buffered]` = "[buffered]".asInstanceOf[`[buffered]`]
-  
-  @js.native
   sealed trait `[by]`
     extends StObject
        with SvgAttributes
@@ -2174,6 +2387,12 @@ object csstypeStrings {
     extends StObject
        with SvgAttributes
   inline def `[cap-height]`: `[cap-height]` = "[cap-height]".asInstanceOf[`[cap-height]`]
+  
+  @js.native
+  sealed trait `[capture]`
+    extends StObject
+       with HtmlAttributes
+  inline def `[capture]`: `[capture]` = "[capture]".asInstanceOf[`[capture]`]
   
   @js.native
   sealed trait `[cellpadding]`
@@ -2295,12 +2514,6 @@ object csstypeStrings {
     extends StObject
        with SvgAttributes
   inline def `[color-profile]`: `[color-profile]` = "[color-profile]".asInstanceOf[`[color-profile]`]
-  
-  @js.native
-  sealed trait `[color-rendering]`
-    extends StObject
-       with SvgAttributes
-  inline def `[color-rendering]`: `[color-rendering]` = "[color-rendering]".asInstanceOf[`[color-rendering]`]
   
   @js.native
   sealed trait `[color]`
@@ -2479,6 +2692,12 @@ object csstypeStrings {
   inline def `[direction]`: `[direction]` = "[direction]".asInstanceOf[`[direction]`]
   
   @js.native
+  sealed trait `[dirname]`
+    extends StObject
+       with HtmlAttributes
+  inline def `[dirname]`: `[dirname]` = "[dirname]".asInstanceOf[`[dirname]`]
+  
+  @js.native
   sealed trait `[disabled]`
     extends StObject
        with HtmlAttributes
@@ -2520,12 +2739,6 @@ object csstypeStrings {
     extends StObject
        with HtmlAttributes
   inline def `[draggable]`: `[draggable]` = "[draggable]".asInstanceOf[`[draggable]`]
-  
-  @js.native
-  sealed trait `[dropzone]`
-    extends StObject
-       with HtmlAttributes
-  inline def `[dropzone]`: `[dropzone]` = "[dropzone]".asInstanceOf[`[dropzone]`]
   
   @js.native
   sealed trait `[dur]`
@@ -2582,16 +2795,16 @@ object csstypeStrings {
   inline def `[exportparts]`: `[exportparts]` = "[exportparts]".asInstanceOf[`[exportparts]`]
   
   @js.native
-  sealed trait `[externalResourcesRequired]`
-    extends StObject
-       with SvgAttributes
-  inline def `[externalResourcesRequired]`: `[externalResourcesRequired]` = "[externalResourcesRequired]".asInstanceOf[`[externalResourcesRequired]`]
-  
-  @js.native
   sealed trait `[face]`
     extends StObject
        with HtmlAttributes
   inline def `[face]`: `[face]` = "[face]".asInstanceOf[`[face]`]
+  
+  @js.native
+  sealed trait `[fetchpriority]`
+    extends StObject
+       with HtmlAttributes
+  inline def `[fetchpriority]`: `[fetchpriority]` = "[fetchpriority]".asInstanceOf[`[fetchpriority]`]
   
   @js.native
   sealed trait `[fill-opacity]`
@@ -2834,18 +3047,6 @@ object csstypeStrings {
   inline def `[hanging]`: `[hanging]` = "[hanging]".asInstanceOf[`[hanging]`]
   
   @js.native
-  sealed trait `[hatchContentUnits]`
-    extends StObject
-       with SvgAttributes
-  inline def `[hatchContentUnits]`: `[hatchContentUnits]` = "[hatchContentUnits]".asInstanceOf[`[hatchContentUnits]`]
-  
-  @js.native
-  sealed trait `[hatchUnits]`
-    extends StObject
-       with SvgAttributes
-  inline def `[hatchUnits]`: `[hatchUnits]` = "[hatchUnits]".asInstanceOf[`[hatchUnits]`]
-  
-  @js.native
   sealed trait `[headers]`
     extends StObject
        with HtmlAttributes
@@ -2940,6 +3141,18 @@ object csstypeStrings {
   inline def `[image-rendering]`: `[image-rendering]` = "[image-rendering]".asInstanceOf[`[image-rendering]`]
   
   @js.native
+  sealed trait `[imagesizes]`
+    extends StObject
+       with HtmlAttributes
+  inline def `[imagesizes]`: `[imagesizes]` = "[imagesizes]".asInstanceOf[`[imagesizes]`]
+  
+  @js.native
+  sealed trait `[imagesrcset]`
+    extends StObject
+       with HtmlAttributes
+  inline def `[imagesrcset]`: `[imagesrcset]` = "[imagesrcset]".asInstanceOf[`[imagesrcset]`]
+  
+  @js.native
   sealed trait `[in2]`
     extends StObject
        with SvgAttributes
@@ -2952,6 +3165,12 @@ object csstypeStrings {
   inline def `[in]`: `[in]` = "[in]".asInstanceOf[`[in]`]
   
   @js.native
+  sealed trait `[inert]`
+    extends StObject
+       with HtmlAttributes
+  inline def `[inert]`: `[inert]` = "[inert]".asInstanceOf[`[inert]`]
+  
+  @js.native
   sealed trait `[inputmode]`
     extends StObject
        with HtmlAttributes
@@ -2962,12 +3181,6 @@ object csstypeStrings {
     extends StObject
        with HtmlAttributes
   inline def `[integrity]`: `[integrity]` = "[integrity]".asInstanceOf[`[integrity]`]
-  
-  @js.native
-  sealed trait `[intrinsicsize]`
-    extends StObject
-       with HtmlAttributes
-  inline def `[intrinsicsize]`: `[intrinsicsize]` = "[intrinsicsize]".asInstanceOf[`[intrinsicsize]`]
   
   @js.native
   sealed trait `[is]`
@@ -3109,12 +3322,6 @@ object csstypeStrings {
   inline def `[letter-spacing]`: `[letter-spacing]` = "[letter-spacing]".asInstanceOf[`[letter-spacing]`]
   
   @js.native
-  sealed trait `[lighterForError]`
-    extends StObject
-       with SvgAttributes
-  inline def `[lighterForError]`: `[lighterForError]` = "[lighterForError]".asInstanceOf[`[lighterForError]`]
-  
-  @js.native
   sealed trait `[lighting-color]`
     extends StObject
        with SvgAttributes
@@ -3133,16 +3340,16 @@ object csstypeStrings {
   inline def `[link]`: `[link]` = "[link]".asInstanceOf[`[link]`]
   
   @js.native
+  sealed trait `[list]`
+    extends StObject
+       with HtmlAttributes
+  inline def `[list]`: `[list]` = "[list]".asInstanceOf[`[list]`]
+  
+  @js.native
   sealed trait `[loading]`
     extends StObject
        with HtmlAttributes
   inline def `[loading]`: `[loading]` = "[loading]".asInstanceOf[`[loading]`]
-  
-  @js.native
-  sealed trait `[local]`
-    extends StObject
-       with SvgAttributes
-  inline def `[local]`: `[local]` = "[local]".asInstanceOf[`[local]`]
   
   @js.native
   sealed trait `[longdesc]`
@@ -3269,7 +3476,6 @@ object csstypeStrings {
   sealed trait `[method]`
     extends StObject
        with HtmlAttributes
-       with SvgAttributes
   inline def `[method]`: `[method]` = "[method]".asInstanceOf[`[method]`]
   
   @js.native
@@ -3309,12 +3515,6 @@ object csstypeStrings {
   inline def `[mozallowfullscreen]`: `[mozallowfullscreen]` = "[mozallowfullscreen]".asInstanceOf[`[mozallowfullscreen]`]
   
   @js.native
-  sealed trait `[mozcurrentsampleoffset]`
-    extends StObject
-       with HtmlAttributes
-  inline def `[mozcurrentsampleoffset]`: `[mozcurrentsampleoffset]` = "[mozcurrentsampleoffset]".asInstanceOf[`[mozcurrentsampleoffset]`]
-  
-  @js.native
   sealed trait `[msallowfullscreen]`
     extends StObject
        with HtmlAttributes
@@ -3350,6 +3550,12 @@ object csstypeStrings {
     extends StObject
        with HtmlAttributes
   inline def `[nomodule]`: `[nomodule]` = "[nomodule]".asInstanceOf[`[nomodule]`]
+  
+  @js.native
+  sealed trait `[nonce]`
+    extends StObject
+       with HtmlAttributes
+  inline def `[nonce]`: `[nonce]` = "[nonce]".asInstanceOf[`[nonce]`]
   
   @js.native
   sealed trait `[noresize]`
@@ -3394,112 +3600,10 @@ object csstypeStrings {
   inline def `[offset]`: `[offset]` = "[offset]".asInstanceOf[`[offset]`]
   
   @js.native
-  sealed trait `[onafterprint]`
-    extends StObject
-       with HtmlAttributes
-  inline def `[onafterprint]`: `[onafterprint]` = "[onafterprint]".asInstanceOf[`[onafterprint]`]
-  
-  @js.native
-  sealed trait `[onbeforeprint]`
-    extends StObject
-       with HtmlAttributes
-  inline def `[onbeforeprint]`: `[onbeforeprint]` = "[onbeforeprint]".asInstanceOf[`[onbeforeprint]`]
-  
-  @js.native
-  sealed trait `[onbeforeunload]`
-    extends StObject
-       with HtmlAttributes
-  inline def `[onbeforeunload]`: `[onbeforeunload]` = "[onbeforeunload]".asInstanceOf[`[onbeforeunload]`]
-  
-  @js.native
-  sealed trait `[onblur]`
-    extends StObject
-       with HtmlAttributes
-  inline def `[onblur]`: `[onblur]` = "[onblur]".asInstanceOf[`[onblur]`]
-  
-  @js.native
   sealed trait `[onerror]`
     extends StObject
        with HtmlAttributes
   inline def `[onerror]`: `[onerror]` = "[onerror]".asInstanceOf[`[onerror]`]
-  
-  @js.native
-  sealed trait `[onfocus]`
-    extends StObject
-       with HtmlAttributes
-  inline def `[onfocus]`: `[onfocus]` = "[onfocus]".asInstanceOf[`[onfocus]`]
-  
-  @js.native
-  sealed trait `[onhashchange]`
-    extends StObject
-       with HtmlAttributes
-  inline def `[onhashchange]`: `[onhashchange]` = "[onhashchange]".asInstanceOf[`[onhashchange]`]
-  
-  @js.native
-  sealed trait `[onlanguagechange]`
-    extends StObject
-       with HtmlAttributes
-  inline def `[onlanguagechange]`: `[onlanguagechange]` = "[onlanguagechange]".asInstanceOf[`[onlanguagechange]`]
-  
-  @js.native
-  sealed trait `[onload]`
-    extends StObject
-       with HtmlAttributes
-  inline def `[onload]`: `[onload]` = "[onload]".asInstanceOf[`[onload]`]
-  
-  @js.native
-  sealed trait `[onmessage]`
-    extends StObject
-       with HtmlAttributes
-  inline def `[onmessage]`: `[onmessage]` = "[onmessage]".asInstanceOf[`[onmessage]`]
-  
-  @js.native
-  sealed trait `[onoffline]`
-    extends StObject
-       with HtmlAttributes
-  inline def `[onoffline]`: `[onoffline]` = "[onoffline]".asInstanceOf[`[onoffline]`]
-  
-  @js.native
-  sealed trait `[ononline]`
-    extends StObject
-       with HtmlAttributes
-  inline def `[ononline]`: `[ononline]` = "[ononline]".asInstanceOf[`[ononline]`]
-  
-  @js.native
-  sealed trait `[onpopstate]`
-    extends StObject
-       with HtmlAttributes
-  inline def `[onpopstate]`: `[onpopstate]` = "[onpopstate]".asInstanceOf[`[onpopstate]`]
-  
-  @js.native
-  sealed trait `[onredo]`
-    extends StObject
-       with HtmlAttributes
-  inline def `[onredo]`: `[onredo]` = "[onredo]".asInstanceOf[`[onredo]`]
-  
-  @js.native
-  sealed trait `[onresize]`
-    extends StObject
-       with HtmlAttributes
-  inline def `[onresize]`: `[onresize]` = "[onresize]".asInstanceOf[`[onresize]`]
-  
-  @js.native
-  sealed trait `[onstorage]`
-    extends StObject
-       with HtmlAttributes
-  inline def `[onstorage]`: `[onstorage]` = "[onstorage]".asInstanceOf[`[onstorage]`]
-  
-  @js.native
-  sealed trait `[onundo]`
-    extends StObject
-       with HtmlAttributes
-  inline def `[onundo]`: `[onundo]` = "[onundo]".asInstanceOf[`[onundo]`]
-  
-  @js.native
-  sealed trait `[onunload]`
-    extends StObject
-       with HtmlAttributes
-  inline def `[onunload]`: `[onunload]` = "[onunload]".asInstanceOf[`[onunload]`]
   
   @js.native
   sealed trait `[opacity]`
@@ -3610,6 +3714,12 @@ object csstypeStrings {
   inline def `[patternUnits]`: `[patternUnits]` = "[patternUnits]".asInstanceOf[`[patternUnits]`]
   
   @js.native
+  sealed trait `[pattern]`
+    extends StObject
+       with HtmlAttributes
+  inline def `[pattern]`: `[pattern]` = "[pattern]".asInstanceOf[`[pattern]`]
+  
+  @js.native
   sealed trait `[ping]`
     extends StObject
        with HtmlAttributes
@@ -3617,22 +3727,10 @@ object csstypeStrings {
   inline def `[ping]`: `[ping]` = "[ping]".asInstanceOf[`[ping]`]
   
   @js.native
-  sealed trait `[pitch]`
-    extends StObject
-       with SvgAttributes
-  inline def `[pitch]`: `[pitch]` = "[pitch]".asInstanceOf[`[pitch]`]
-  
-  @js.native
   sealed trait `[placeholder]`
     extends StObject
        with HtmlAttributes
   inline def `[placeholder]`: `[placeholder]` = "[placeholder]".asInstanceOf[`[placeholder]`]
-  
-  @js.native
-  sealed trait `[played]`
-    extends StObject
-       with HtmlAttributes
-  inline def `[played]`: `[played]` = "[played]".asInstanceOf[`[played]`]
   
   @js.native
   sealed trait `[pointer-events]`
@@ -3707,12 +3805,6 @@ object csstypeStrings {
   inline def `[profile]`: `[profile]` = "[profile]".asInstanceOf[`[profile]`]
   
   @js.native
-  sealed trait `[prompt]`
-    extends StObject
-       with HtmlAttributes
-  inline def `[prompt]`: `[prompt]` = "[prompt]".asInstanceOf[`[prompt]`]
-  
-  @js.native
   sealed trait `[r]`
     extends StObject
        with SvgAttributes
@@ -3749,17 +3841,11 @@ object csstypeStrings {
   inline def `[refY]`: `[refY]` = "[refY]".asInstanceOf[`[refY]`]
   
   @js.native
-  sealed trait `[referrerPolicy]`
+  sealed trait `[referrerpolicy]`
     extends StObject
        with HtmlAttributes
        with SvgAttributes
-  inline def `[referrerPolicy]`: `[referrerPolicy]` = "[referrerPolicy]".asInstanceOf[`[referrerPolicy]`]
-  
-  @js.native
-  sealed trait `[referrerpolicy]_`
-    extends StObject
-       with HtmlAttributes
-  inline def `[referrerpolicy]_`: `[referrerpolicy]_` = "[referrerpolicy]".asInstanceOf[`[referrerpolicy]_`]
+  inline def `[referrerpolicy]`: `[referrerpolicy]` = "[referrerpolicy]".asInstanceOf[`[referrerpolicy]`]
   
   @js.native
   sealed trait `[rel]`
@@ -3767,12 +3853,6 @@ object csstypeStrings {
        with HtmlAttributes
        with SvgAttributes
   inline def `[rel]`: `[rel]` = "[rel]".asInstanceOf[`[rel]`]
-  
-  @js.native
-  sealed trait `[rendering-intent]`
-    extends StObject
-       with SvgAttributes
-  inline def `[rendering-intent]`: `[rendering-intent]` = "[rendering-intent]".asInstanceOf[`[rendering-intent]`]
   
   @js.native
   sealed trait `[repeatCount]`
@@ -3883,6 +3963,12 @@ object csstypeStrings {
   inline def `[sandbox-allow-presentation]`: `[sandbox-allow-presentation]` = "[sandbox-allow-presentation]".asInstanceOf[`[sandbox-allow-presentation]`]
   
   @js.native
+  sealed trait `[sandbox-allow-same-origin]`
+    extends StObject
+       with HtmlAttributes
+  inline def `[sandbox-allow-same-origin]`: `[sandbox-allow-same-origin]` = "[sandbox-allow-same-origin]".asInstanceOf[`[sandbox-allow-same-origin]`]
+  
+  @js.native
   sealed trait `[sandbox-allow-storage-access-by-user-activation]`
     extends StObject
        with HtmlAttributes
@@ -3913,12 +3999,6 @@ object csstypeStrings {
   inline def `[scope]`: `[scope]` = "[scope]".asInstanceOf[`[scope]`]
   
   @js.native
-  sealed trait `[scoped]`
-    extends StObject
-       with HtmlAttributes
-  inline def `[scoped]`: `[scoped]` = "[scoped]".asInstanceOf[`[scoped]`]
-  
-  @js.native
   sealed trait `[scrollamount]`
     extends StObject
        with HtmlAttributes
@@ -3947,6 +4027,12 @@ object csstypeStrings {
     extends StObject
        with HtmlAttributes
   inline def `[selected]`: `[selected]` = "[selected]".asInstanceOf[`[selected]`]
+  
+  @js.native
+  sealed trait `[shadowroot]`
+    extends StObject
+       with HtmlAttributes
+  inline def `[shadowroot]`: `[shadowroot]` = "[shadowroot]".asInstanceOf[`[shadowroot]`]
   
   @js.native
   sealed trait `[shape-rendering]`
@@ -4097,6 +4183,12 @@ object csstypeStrings {
     extends StObject
        with SvgAttributes
   inline def `[stemv]`: `[stemv]` = "[stemv]".asInstanceOf[`[stemv]`]
+  
+  @js.native
+  sealed trait `[step]`
+    extends StObject
+       with HtmlAttributes
+  inline def `[step]`: `[step]` = "[step]".asInstanceOf[`[step]`]
   
   @js.native
   sealed trait `[stitchTiles]`
@@ -4320,12 +4412,6 @@ object csstypeStrings {
   inline def `[type]`: `[type]` = "[type]".asInstanceOf[`[type]`]
   
   @js.native
-  sealed trait `[typemustmatch]`
-    extends StObject
-       with HtmlAttributes
-  inline def `[typemustmatch]`: `[typemustmatch]` = "[typemustmatch]".asInstanceOf[`[typemustmatch]`]
-  
-  @js.native
   sealed trait `[u1]`
     extends StObject
        with SvgAttributes
@@ -4483,12 +4569,6 @@ object csstypeStrings {
   inline def `[vlink]`: `[vlink]` = "[vlink]".asInstanceOf[`[vlink]`]
   
   @js.native
-  sealed trait `[volume]`
-    extends StObject
-       with HtmlAttributes
-  inline def `[volume]`: `[volume]` = "[volume]".asInstanceOf[`[volume]`]
-  
-  @js.native
   sealed trait `[vspace]`
     extends StObject
        with HtmlAttributes
@@ -4542,6 +4622,12 @@ object csstypeStrings {
     extends StObject
        with SvgAttributes
   inline def `[x-height]`: `[x-height]` = "[x-height]".asInstanceOf[`[x-height]`]
+  
+  @js.native
+  sealed trait `[x-moz-errormessage]`
+    extends StObject
+       with HtmlAttributes
+  inline def `[x-moz-errormessage]`: `[x-moz-errormessage]` = "[x-moz-errormessage]".asInstanceOf[`[x-moz-errormessage]`]
   
   @js.native
   sealed trait `[x1]`
@@ -4612,19 +4698,19 @@ object csstypeStrings {
   @js.native
   sealed trait above
     extends StObject
-       with _WebkitBoxReflectProperty[js.Any]
+       with _WebkitBoxReflect[Any]
   inline def above: above = "above".asInstanceOf[above]
   
   @js.native
   sealed trait absolute
     extends StObject
-       with PositionProperty
+       with Position
   inline def absolute: absolute = "absolute".asInstanceOf[absolute]
   
   @js.native
   sealed trait active
     extends StObject
-       with ImeModeProperty
+       with ImeMode
   inline def active: active = "active".asInstanceOf[active]
   
   @js.native
@@ -4636,25 +4722,25 @@ object csstypeStrings {
   @js.native
   sealed trait additive
     extends StObject
-       with _CounterStyleSystemProperty
+       with _System
   inline def additive: additive = "additive".asInstanceOf[additive]
   
   @js.native
   sealed trait after
     extends StObject
-       with MsImeAlignProperty
+       with MsImeAlign
   inline def after: after = "after".asInstanceOf[after]
   
   @js.native
   sealed trait `after-edge`
     extends StObject
-       with AlignmentBaselineProperty
+       with AlignmentBaseline
   inline def `after-edge`: `after-edge` = "after-edge".asInstanceOf[`after-edge`]
   
   @js.native
   sealed trait alias
     extends StObject
-       with _CursorProperty
+       with _Cursor
   inline def alias: alias = "alias".asInstanceOf[alias]
   
   @js.native
@@ -4666,66 +4752,67 @@ object csstypeStrings {
   @js.native
   sealed trait all
     extends StObject
-       with BreakAfterProperty
-       with BreakBeforeProperty
-       with ColumnSpanProperty
-       with PointerEventsProperty
-       with TextDecorationSkipInkProperty
-       with UserSelectProperty
-       with _SingleTransition
-       with _TextCombineUprightProperty
-       with _TransitionPropertyProperty
+       with BreakAfter
+       with BreakBefore
+       with ColumnSpan
+       with PointerEvents
+       with TextDecorationSkipInk
+       with UserSelect
+       with _SingleTransition[Any]
+       with _TextCombineUpright
+       with _TransitionProperty
   inline def all: all = "all".asInstanceOf[all]
   
   @js.native
   sealed trait `all-petite-caps`
     extends StObject
-       with FontVariantCapsProperty
-       with _FontFaceFontVariantProperty
-       with _FontVariantProperty
+       with FontVariantCaps
+       with _FontVariant
+       with typings.csstype.mod.AtRule._FontVariant
   inline def `all-petite-caps`: `all-petite-caps` = "all-petite-caps".asInstanceOf[`all-petite-caps`]
   
   @js.native
   sealed trait `all-scroll`
     extends StObject
-       with _CursorProperty
+       with _Cursor
   inline def `all-scroll`: `all-scroll` = "all-scroll".asInstanceOf[`all-scroll`]
   
   @js.native
   sealed trait `all-small-caps`
     extends StObject
-       with FontVariantCapsProperty
-       with _FontFaceFontVariantProperty
-       with _FontVariantProperty
+       with FontVariantCaps
+       with _FontVariant
+       with typings.csstype.mod.AtRule._FontVariant
   inline def `all-small-caps`: `all-small-caps` = "all-small-caps".asInstanceOf[`all-small-caps`]
   
   @js.native
   sealed trait `allow-end`
     extends StObject
-       with _HangingPunctuationProperty
+       with _HangingPunctuation
   inline def `allow-end`: `allow-end` = "allow-end".asInstanceOf[`allow-end`]
   
   @js.native
   sealed trait alpha
     extends StObject
-       with MaskBorderModeProperty
-       with MaskTypeProperty
+       with MaskBorderMode
+       with MaskType
        with MaskingMode
-       with _MaskBorderProperty
+       with _MaskBorder
   inline def alpha: alpha = "alpha".asInstanceOf[alpha]
   
   @js.native
   sealed trait alphabetic
     extends StObject
-       with AlignmentBaselineProperty
-       with DominantBaselineProperty
-       with _CounterStyleSystemProperty
+       with AlignmentBaseline
+       with DominantBaseline
+       with _System
   inline def alphabetic: alphabetic = "alphabetic".asInstanceOf[alphabetic]
   
   @js.native
   sealed trait alternate
     extends StObject
        with SingleAnimationDirection
+       with _RubyPosition
   inline def alternate: alternate = "alternate".asInstanceOf[alternate]
   
   @js.native
@@ -4737,13 +4824,12 @@ object csstypeStrings {
   @js.native
   sealed trait always
     extends StObject
-       with BreakAfterProperty
-       with BreakBeforeProperty
-       with PageBreakAfterProperty
-       with PageBreakBeforeProperty
-       with ScrollSnapStopProperty
-       with _FontSmoothProperty[js.Any]
-       with _ScrollbarGutterProperty
+       with BreakAfter
+       with BreakBefore
+       with PageBreakAfter
+       with PageBreakBefore
+       with ScrollSnapStop
+       with _FontSmooth[Any]
   inline def always: always = "always".asInstanceOf[always]
   
   @js.native
@@ -4755,8 +4841,8 @@ object csstypeStrings {
   @js.native
   sealed trait anywhere
     extends StObject
-       with LineBreakProperty
-       with OverflowWrapProperty
+       with LineBreak
+       with OverflowWrap
   inline def anywhere: anywhere = "anywhere".asInstanceOf[anywhere]
   
   @js.native
@@ -4774,172 +4860,184 @@ object csstypeStrings {
   @js.native
   sealed trait auto
     extends StObject
-       with AlignmentBaselineProperty
-       with AppearanceProperty
-       with BreakAfterProperty
-       with BreakBeforeProperty
-       with BreakInsideProperty
-       with ColorInterpolationProperty
-       with ColorRenderingProperty
-       with ColumnFillProperty
-       with DominantBaselineProperty
-       with FontFaceFontDisplayProperty
-       with FontKerningProperty
-       with FontOpticalSizingProperty
-       with HyphensProperty
-       with ImageRenderingProperty
-       with ImeModeProperty
-       with IsolationProperty
-       with LineBreakProperty
-       with MozUserInputProperty
-       with MsHighContrastAdjustProperty
-       with MsImeAlignProperty
-       with MsOverflowStyleProperty
-       with MsWrapFlowProperty
-       with OverflowAnchorProperty
-       with OverflowBlockProperty
-       with OverflowInlineProperty
-       with OverflowXProperty
-       with OverflowYProperty
-       with OverscrollBehaviorBlockProperty
-       with OverscrollBehaviorInlineProperty
-       with OverscrollBehaviorXProperty
-       with OverscrollBehaviorYProperty
-       with PageBreakAfterProperty
-       with PageBreakBeforeProperty
-       with PageBreakInsideProperty
-       with PointerEventsProperty
-       with RubyMergeProperty
-       with ScrollBehaviorProperty
-       with ScrollbarWidthProperty
-       with ShapeRenderingProperty
-       with TableLayoutProperty
-       with TextAlignLastProperty
-       with TextDecorationSkipInkProperty
-       with TextJustifyProperty
-       with TextRenderingProperty
-       with UserSelectProperty
-       with ViewportOrientationProperty
-       with WebkitOverflowScrollingProperty
-       with _AlignSelfProperty
-       with _AspectRatioProperty
-       with _BgSize[js.Any]
-       with _BlockSizeProperty[js.Any]
-       with _BorderImageWidthProperty[js.Any]
-       with _BottomProperty[js.Any]
-       with _CaretColorProperty
-       with _ClipProperty
-       with _ColumnCountProperty
-       with _ColumnWidthProperty[js.Any]
-       with _ColumnsProperty[js.Any]
-       with _CounterStyleRangeProperty
-       with _CounterStyleSpeakAsProperty
-       with _CursorProperty
-       with _FlexBasisProperty[js.Any]
-       with _FlexProperty[js.Any]
-       with _FontSmoothProperty[js.Any]
-       with _GlyphOrientationVerticalProperty
-       with _HeightProperty[js.Any]
-       with _InlineSizeProperty[js.Any]
-       with _InsetBlockEndProperty[js.Any]
-       with _InsetBlockProperty[js.Any]
-       with _InsetBlockStartProperty[js.Any]
-       with _InsetInlineEndProperty[js.Any]
-       with _InsetInlineProperty[js.Any]
-       with _InsetInlineStartProperty[js.Any]
-       with _InsetProperty[js.Any]
-       with _JustifySelfProperty
-       with _LeftProperty[js.Any]
-       with _MarginBlockEndProperty[js.Any]
-       with _MarginBlockProperty[js.Any]
-       with _MarginBlockStartProperty[js.Any]
-       with _MarginBottomProperty[js.Any]
-       with _MarginInlineEndProperty[js.Any]
-       with _MarginInlineProperty[js.Any]
-       with _MarginInlineStartProperty[js.Any]
-       with _MarginLeftProperty[js.Any]
-       with _MarginProperty[js.Any]
-       with _MarginRightProperty[js.Any]
-       with _MarginTopProperty[js.Any]
-       with _MaskBorderWidthProperty[js.Any]
-       with _MinBlockSizeProperty[js.Any]
-       with _MinHeightProperty[js.Any]
-       with _MinInlineSizeProperty[js.Any]
-       with _MinWidthProperty[js.Any]
-       with _MozImageRegionProperty
-       with _MsHyphenateLimitCharsProperty
-       with _MsScrollLimitXMaxProperty[js.Any]
-       with _MsScrollLimitYMaxProperty[js.Any]
-       with _OffsetAnchorProperty[js.Any]
-       with _OffsetProperty[js.Any]
-       with _OffsetRotateProperty
-       with _OutlineProperty[js.Any]
-       with _OutlineStyleProperty
-       with _OverflowProperty
-       with _OverscrollBehaviorProperty
-       with _PageSizeProperty[js.Any]
-       with _PlaceSelfProperty
-       with _QuotesProperty
-       with _RightProperty[js.Any]
-       with _ScrollPaddingBlockEndProperty[js.Any]
-       with _ScrollPaddingBlockProperty[js.Any]
-       with _ScrollPaddingBlockStartProperty[js.Any]
-       with _ScrollPaddingBottomProperty[js.Any]
-       with _ScrollPaddingInlineEndProperty[js.Any]
-       with _ScrollPaddingInlineProperty[js.Any]
-       with _ScrollPaddingInlineStartProperty[js.Any]
-       with _ScrollPaddingLeftProperty[js.Any]
-       with _ScrollPaddingProperty[js.Any]
-       with _ScrollPaddingRightProperty[js.Any]
-       with _ScrollPaddingTopProperty[js.Any]
-       with _ScrollbarColorProperty
-       with _ScrollbarGutterProperty
-       with _TextDecorationProperty[js.Any]
-       with _TextDecorationThicknessProperty[js.Any]
-       with _TextSizeAdjustProperty
-       with _TextUnderlineOffsetProperty[js.Any]
-       with _TextUnderlinePositionProperty
-       with _TopProperty[js.Any]
-       with _TouchActionProperty
-       with _TrackBreadth[js.Any]
-       with _WidthProperty[js.Any]
-       with _WillChangeProperty
-       with _ZIndexProperty
+       with AlignmentBaseline
+       with Appearance
+       with BreakAfter
+       with BreakBefore
+       with BreakInside
+       with ColorInterpolation
+       with ColorRendering
+       with ColumnFill
+       with ContentVisibility
+       with DominantBaseline
+       with FontDisplay
+       with FontKerning
+       with FontOpticalSizing
+       with ForcedColorAdjust
+       with Hyphens
+       with ImageRendering
+       with ImeMode
+       with InputSecurity
+       with Isolation
+       with LineBreak
+       with MozUserInput
+       with MsHighContrastAdjust
+       with MsImeAlign
+       with MsOverflowStyle
+       with MsWrapFlow
+       with Orientation
+       with OverflowAnchor
+       with OverflowBlock
+       with OverflowInline
+       with OverflowX
+       with OverflowY
+       with OverscrollBehaviorBlock
+       with OverscrollBehaviorInline
+       with OverscrollBehaviorX
+       with OverscrollBehaviorY
+       with PageBreakAfter
+       with PageBreakBefore
+       with PageBreakInside
+       with PointerEvents
+       with RubyMerge
+       with ScrollBehavior
+       with ScrollbarWidth
+       with ShapeRendering
+       with TableLayout
+       with TextAlignLast
+       with TextDecorationSkipInk
+       with TextJustify
+       with TextRendering
+       with UserSelect
+       with ViewportFit
+       with WebkitOverflowScrolling
+       with _AccentColor
+       with _AlignSelf
+       with _AspectRatio
+       with _BgSize[Any]
+       with _BlockSize[Any]
+       with _BorderImageWidth[Any]
+       with _Bottom[Any]
+       with _CaretColor
+       with _Clip
+       with _ColumnCount
+       with _ColumnWidth[Any]
+       with _Columns[Any]
+       with _Cursor
+       with _Flex[Any]
+       with _FlexBasis[Any]
+       with _FontSmooth[Any]
+       with _GlyphOrientationVertical
+       with _Height[Any]
+       with _HyphenateCharacter
+       with _InlineSize[Any]
+       with _Inset[Any]
+       with _InsetBlock[Any]
+       with _InsetBlockEnd[Any]
+       with _InsetBlockStart[Any]
+       with _InsetInline[Any]
+       with _InsetInlineEnd[Any]
+       with _InsetInlineStart[Any]
+       with _JustifySelf
+       with _Left[Any]
+       with _Margin[Any]
+       with _MarginBlock[Any]
+       with _MarginBlockEnd[Any]
+       with _MarginBlockStart[Any]
+       with _MarginBottom[Any]
+       with _MarginInline[Any]
+       with _MarginInlineEnd[Any]
+       with _MarginInlineStart[Any]
+       with _MarginLeft[Any]
+       with _MarginRight[Any]
+       with _MarginTop[Any]
+       with _MaskBorderWidth[Any]
+       with _MinBlockSize[Any]
+       with _MinHeight[Any]
+       with _MinInlineSize[Any]
+       with _MinWidth[Any]
+       with _MozImageRegion
+       with _MsHyphenateLimitChars
+       with _MsScrollLimitXMax[Any]
+       with _MsScrollLimitYMax[Any]
+       with _Offset[Any]
+       with _OffsetAnchor[Any]
+       with _OffsetRotate
+       with _Outline[Any]
+       with _OutlineStyle
+       with _Overflow
+       with _OverscrollBehavior
+       with _PlaceSelf
+       with _Quotes
+       with _Right[Any]
+       with _ScrollPadding[Any]
+       with _ScrollPaddingBlock[Any]
+       with _ScrollPaddingBlockEnd[Any]
+       with _ScrollPaddingBlockStart[Any]
+       with _ScrollPaddingBottom[Any]
+       with _ScrollPaddingInline[Any]
+       with _ScrollPaddingInlineEnd[Any]
+       with _ScrollPaddingInlineStart[Any]
+       with _ScrollPaddingLeft[Any]
+       with _ScrollPaddingRight[Any]
+       with _ScrollPaddingTop[Any]
+       with _ScrollbarColor
+       with _ScrollbarGutter
+       with _SingleAnimationTimeline
+       with _Size[Any]
+       with _SpeakAs
+       with _TextDecoration[Any]
+       with _TextDecorationThickness[Any]
+       with _TextSizeAdjust
+       with _TextUnderlineOffset[Any]
+       with _TextUnderlinePosition
+       with _Top[Any]
+       with _TouchAction
+       with _TrackBreadth[Any]
+       with _Width[Any]
+       with _WillChange
+       with _ZIndex
   inline def auto: auto = "auto".asInstanceOf[auto]
+  
+  @js.native
+  sealed trait `auto-add`
+    extends StObject
+       with _MathDepth
+  inline def `auto-add`: `auto-add` = "auto-add".asInstanceOf[`auto-add`]
   
   @js.native
   sealed trait avoid
     extends StObject
-       with BreakAfterProperty
-       with BreakBeforeProperty
-       with BreakInsideProperty
-       with PageBreakAfterProperty
-       with PageBreakBeforeProperty
-       with PageBreakInsideProperty
+       with BreakAfter
+       with BreakBefore
+       with BreakInside
+       with PageBreakAfter
+       with PageBreakBefore
+       with PageBreakInside
   inline def avoid: avoid = "avoid".asInstanceOf[avoid]
   
   @js.native
   sealed trait `avoid-column`
     extends StObject
-       with BreakAfterProperty
-       with BreakBeforeProperty
-       with BreakInsideProperty
+       with BreakAfter
+       with BreakBefore
+       with BreakInside
   inline def `avoid-column`: `avoid-column` = "avoid-column".asInstanceOf[`avoid-column`]
   
   @js.native
   sealed trait `avoid-page`
     extends StObject
-       with BreakAfterProperty
-       with BreakBeforeProperty
-       with BreakInsideProperty
+       with BreakAfter
+       with BreakBefore
+       with BreakInside
   inline def `avoid-page`: `avoid-page` = "avoid-page".asInstanceOf[`avoid-page`]
   
   @js.native
   sealed trait `avoid-region`
     extends StObject
-       with BreakAfterProperty
-       with BreakBeforeProperty
-       with BreakInsideProperty
+       with BreakAfter
+       with BreakBefore
+       with BreakInside
   inline def `avoid-region`: `avoid-region` = "avoid-region".asInstanceOf[`avoid-region`]
   
   @js.native
@@ -4957,37 +5055,43 @@ object csstypeStrings {
   @js.native
   sealed trait balance
     extends StObject
-       with ColumnFillProperty
+       with ColumnFill
   inline def balance: balance = "balance".asInstanceOf[balance]
+  
+  @js.native
+  sealed trait `balance-all`
+    extends StObject
+       with ColumnFill
+  inline def `balance-all`: `balance-all` = "balance-all".asInstanceOf[`balance-all`]
   
   @js.native
   sealed trait baseline
     extends StObject
-       with AlignmentBaselineProperty
-       with BoxAlignProperty
-       with _AlignContentProperty
-       with _AlignItemsProperty
-       with _AlignSelfProperty
-       with _AlignTracksProperty
-       with _BaselineShiftProperty[js.Any]
-       with _JustifyItemsProperty
-       with _JustifySelfProperty
-       with _PlaceContentProperty
-       with _PlaceItemsProperty
-       with _PlaceSelfProperty
-       with _VerticalAlignProperty[js.Any]
+       with AlignmentBaseline
+       with BoxAlign
+       with _AlignContent
+       with _AlignItems
+       with _AlignSelf
+       with _AlignTracks
+       with _BaselineShift[Any]
+       with _JustifyItems
+       with _JustifySelf
+       with _PlaceContent
+       with _PlaceItems
+       with _PlaceSelf
+       with _VerticalAlign[Any]
   inline def baseline: baseline = "baseline".asInstanceOf[baseline]
   
   @js.native
   sealed trait `before-edge`
     extends StObject
-       with AlignmentBaselineProperty
+       with AlignmentBaseline
   inline def `before-edge`: `before-edge` = "before-edge".asInstanceOf[`before-edge`]
   
   @js.native
   sealed trait behind
     extends StObject
-       with _AzimuthProperty
+       with _Azimuth
   inline def behind: behind = "behind".asInstanceOf[behind]
   
   @js.native
@@ -4999,19 +5103,19 @@ object csstypeStrings {
   @js.native
   sealed trait below
     extends StObject
-       with _WebkitBoxReflectProperty[js.Any]
+       with _WebkitBoxReflect[Any]
   inline def below: below = "below".asInstanceOf[below]
   
   @js.native
   sealed trait bevel
     extends StObject
-       with StrokeLinejoinProperty
+       with StrokeLinejoin
   inline def bevel: bevel = "bevel".asInstanceOf[bevel]
   
   @js.native
   sealed trait `bidi-override`
     extends StObject
-       with UnicodeBidiProperty
+       with UnicodeBidi
   inline def `bidi-override`: `bidi-override` = "bidi-override".asInstanceOf[`bidi-override`]
   
   @js.native
@@ -5035,37 +5139,37 @@ object csstypeStrings {
   @js.native
   sealed trait blink
     extends StObject
-       with MozTextBlinkProperty
-       with _TextDecorationLineProperty
-       with _TextDecorationProperty[js.Any]
+       with MozTextBlink
+       with _TextDecoration[Any]
+       with _TextDecorationLine
   inline def blink: blink = "blink".asInstanceOf[blink]
   
   @js.native
   sealed trait block
     extends StObject
        with DisplayOutside
-       with FontFaceFontDisplayProperty
-       with MozOrientProperty
-       with ResizeProperty
-       with _ScrollSnapTypeProperty
+       with FontDisplay
+       with MozOrient
+       with Resize
+       with _ScrollSnapType
   inline def block: block = "block".asInstanceOf[block]
   
   @js.native
   sealed trait `block-axis`
     extends StObject
-       with BoxOrientProperty
+       with BoxOrient
   inline def `block-axis`: `block-axis` = "block-axis".asInstanceOf[`block-axis`]
   
   @js.native
   sealed trait `block-end`
     extends StObject
-       with CaptionSideProperty
+       with CaptionSide
   inline def `block-end`: `block-end` = "block-end".asInstanceOf[`block-end`]
   
   @js.native
   sealed trait `block-start`
     extends StObject
-       with CaptionSideProperty
+       with CaptionSide
   inline def `block-start`: `block-start` = "block-start".asInstanceOf[`block-start`]
   
   @js.native
@@ -5089,73 +5193,74 @@ object csstypeStrings {
   @js.native
   sealed trait bolder
     extends StObject
-       with _FontWeightProperty
+       with _FontWeight
   inline def bolder: bolder = "bolder".asInstanceOf[bolder]
   
   @js.native
   sealed trait border
     extends StObject
-       with _WebkitMaskClipProperty
-       with _WebkitMaskOriginProperty
-       with _WebkitMaskProperty[js.Any]
+       with _WebkitMask[Any]
+       with _WebkitMaskClip
+       with _WebkitMaskOrigin
   inline def border: border = "border".asInstanceOf[border]
   
   @js.native
   sealed trait `border-box`
     extends StObject
        with Box
-       with BoxSizingProperty
+       with BoxSizing
        with GeometryBox
-       with MozFloatEdgeProperty
-       with TransformBoxProperty
+       with MozFloatEdge
+       with TransformBox
+       with VisualBox
   inline def `border-box`: `border-box` = "border-box".asInstanceOf[`border-box`]
   
   @js.native
   sealed trait both
     extends StObject
-       with ClearProperty
-       with MsWrapFlowProperty
-       with ResizeProperty
+       with Clear
+       with MsWrapFlow
+       with Resize
        with SingleAnimationFillMode
-       with _ScrollSnapTypeProperty
+       with _ScrollSnapType
   inline def both: both = "both".asInstanceOf[both]
   
   @js.native
   sealed trait bottom
     extends StObject
-       with CaptionSideProperty
-       with _BackgroundPositionYProperty[js.Any]
-       with _BgPosition[js.Any]
-       with _Position[js.Any]
-       with _TransformOriginProperty[js.Any]
-       with _VerticalAlignProperty[js.Any]
-       with _WebkitMaskPositionYProperty[js.Any]
+       with CaptionSide
+       with _BackgroundPositionY[Any]
+       with _BgPosition[Any]
+       with _Position[Any]
+       with _TransformOrigin[Any]
+       with _VerticalAlign[Any]
+       with _WebkitMaskPositionY[Any]
   inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
   sealed trait `box-decoration`
     extends StObject
-       with _TextDecorationSkipProperty
+       with _TextDecorationSkip
   inline def `box-decoration`: `box-decoration` = "box-decoration".asInstanceOf[`box-decoration`]
   
   @js.native
   sealed trait `break-all`
     extends StObject
-       with WordBreakProperty
+       with WordBreak
   inline def `break-all`: `break-all` = "break-all".asInstanceOf[`break-all`]
   
   @js.native
   sealed trait `break-spaces`
     extends StObject
-       with WhiteSpaceProperty
+       with WhiteSpace
   inline def `break-spaces`: `break-spaces` = "break-spaces".asInstanceOf[`break-spaces`]
   
   @js.native
   sealed trait `break-word`
     extends StObject
-       with OverflowWrapProperty
-       with WordBreakProperty
-       with WordWrapProperty
+       with OverflowWrap
+       with WordBreak
+       with WordWrap
   inline def `break-word`: `break-word` = "break-word".asInstanceOf[`break-word`]
   
   @js.native
@@ -5167,13 +5272,13 @@ object csstypeStrings {
   @js.native
   sealed trait bt
     extends StObject
-       with MsBlockProgressionProperty
+       with MsBlockProgression
   inline def bt: bt = "bt".asInstanceOf[bt]
   
   @js.native
   sealed trait bullets
     extends StObject
-       with _CounterStyleSpeakAsProperty
+       with _SpeakAs
   inline def bullets: bullets = "bullets".asInstanceOf[bullets]
   
   @js.native
@@ -5185,53 +5290,53 @@ object csstypeStrings {
   @js.native
   sealed trait butt
     extends StObject
-       with StrokeLinecapProperty
+       with StrokeLinecap
   inline def butt: butt = "butt".asInstanceOf[butt]
   
   @js.native
   sealed trait button
     extends StObject
-       with AppearanceProperty
+       with Appearance
        with CompatAuto
-       with MozAppearanceProperty
-       with WebkitAppearanceProperty
+       with MozAppearance
+       with WebkitAppearance
   inline def button: button = "button".asInstanceOf[button]
   
   @js.native
   sealed trait `button-arrow-down`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `button-arrow-down`: `button-arrow-down` = "button-arrow-down".asInstanceOf[`button-arrow-down`]
   
   @js.native
   sealed trait `button-arrow-next`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `button-arrow-next`: `button-arrow-next` = "button-arrow-next".asInstanceOf[`button-arrow-next`]
   
   @js.native
   sealed trait `button-arrow-previous`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `button-arrow-previous`: `button-arrow-previous` = "button-arrow-previous".asInstanceOf[`button-arrow-previous`]
   
   @js.native
   sealed trait `button-arrow-up`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `button-arrow-up`: `button-arrow-up` = "button-arrow-up".asInstanceOf[`button-arrow-up`]
   
   @js.native
   sealed trait `button-bevel`
     extends StObject
-       with MozAppearanceProperty
-       with WebkitAppearanceProperty
+       with MozAppearance
+       with WebkitAppearance
   inline def `button-bevel`: `button-bevel` = "button-bevel".asInstanceOf[`button-bevel`]
   
   @js.native
   sealed trait `button-focus`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `button-focus`: `button-focus` = "button-focus".asInstanceOf[`button-focus`]
   
   @js.native
@@ -5243,73 +5348,73 @@ object csstypeStrings {
   @js.native
   sealed trait capitalize
     extends StObject
-       with TextTransformProperty
+       with TextTransform
   inline def capitalize: capitalize = "capitalize".asInstanceOf[capitalize]
   
   @js.native
   sealed trait caption
     extends StObject
-       with _FontProperty
+       with _Font
   inline def caption: caption = "caption".asInstanceOf[caption]
   
   @js.native
   sealed trait caret
     extends StObject
-       with MozAppearanceProperty
-       with WebkitAppearanceProperty
+       with MozAppearance
+       with WebkitAppearance
   inline def caret: caret = "caret".asInstanceOf[caret]
   
   @js.native
   sealed trait cell
     extends StObject
-       with _CursorProperty
+       with _Cursor
   inline def cell: cell = "cell".asInstanceOf[cell]
   
   @js.native
   sealed trait center
     extends StObject
-       with BoxAlignProperty
-       with BoxPackProperty
+       with BoxAlign
+       with BoxPack
        with ContentPosition
-       with RubyAlignProperty
+       with RubyAlign
        with SelfPosition
-       with TextAlignLastProperty
-       with TextAlignProperty
-       with _AzimuthProperty
-       with _BackgroundPositionXProperty[js.Any]
-       with _BackgroundPositionYProperty[js.Any]
-       with _BgPosition[js.Any]
-       with _Position[js.Any]
-       with _ScrollSnapAlignProperty
-       with _TransformOriginProperty[js.Any]
-       with _WebkitMaskPositionXProperty[js.Any]
-       with _WebkitMaskPositionYProperty[js.Any]
+       with TextAlign
+       with TextAlignLast
+       with _Azimuth
+       with _BackgroundPositionX[Any]
+       with _BackgroundPositionY[Any]
+       with _BgPosition[Any]
+       with _Position[Any]
+       with _ScrollSnapAlign
+       with _TransformOrigin[Any]
+       with _WebkitMaskPositionX[Any]
+       with _WebkitMaskPositionY[Any]
   inline def center: center = "center".asInstanceOf[center]
   
   @js.native
   sealed trait `center-left`
     extends StObject
-       with _AzimuthProperty
+       with _Azimuth
   inline def `center-left`: `center-left` = "center-left".asInstanceOf[`center-left`]
   
   @js.native
   sealed trait `center-right`
     extends StObject
-       with _AzimuthProperty
+       with _Azimuth
   inline def `center-right`: `center-right` = "center-right".asInstanceOf[`center-right`]
   
   @js.native
   sealed trait central
     extends StObject
-       with AlignmentBaselineProperty
-       with DominantBaselineProperty
+       with AlignmentBaseline
+       with DominantBaseline
   inline def central: central = "central".asInstanceOf[central]
   
   @js.native
   sealed trait chained
     extends StObject
-       with MsContentZoomChainingProperty
-       with MsScrollChainingProperty
+       with MsContentZoomChaining
+       with MsScrollChaining
   inline def chained: chained = "chained".asInstanceOf[chained]
   
   @js.native
@@ -5321,28 +5426,28 @@ object csstypeStrings {
   @js.native
   sealed trait checkbox
     extends StObject
-       with AppearanceProperty
+       with Appearance
        with CompatAuto
-       with MozAppearanceProperty
-       with WebkitAppearanceProperty
+       with MozAppearance
+       with WebkitAppearance
   inline def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
   
   @js.native
   sealed trait `checkbox-container`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `checkbox-container`: `checkbox-container` = "checkbox-container".asInstanceOf[`checkbox-container`]
   
   @js.native
   sealed trait `checkbox-label`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `checkbox-label`: `checkbox-label` = "checkbox-label".asInstanceOf[`checkbox-label`]
   
   @js.native
   sealed trait checkmenuitem
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def checkmenuitem: checkmenuitem = "checkmenuitem".asInstanceOf[checkmenuitem]
   
   @js.native
@@ -5360,33 +5465,33 @@ object csstypeStrings {
   @js.native
   sealed trait circle
     extends StObject
-       with _TextEmphasisProperty
-       with _TextEmphasisStyleProperty
+       with _TextEmphasis
+       with _TextEmphasisStyle
   inline def circle: circle = "circle".asInstanceOf[circle]
   
   @js.native
   sealed trait clear
     extends StObject
        with CompositeStyle
-       with MsWrapFlowProperty
+       with MsWrapFlow
   inline def clear: clear = "clear".asInstanceOf[clear]
   
   @js.native
   sealed trait clip
     extends StObject
-       with OverflowBlockProperty
-       with OverflowInlineProperty
-       with OverflowXProperty
-       with OverflowYProperty
-       with _BlockOverflowProperty
-       with _OverflowProperty
-       with _TextOverflowProperty
+       with OverflowBlock
+       with OverflowInline
+       with OverflowX
+       with OverflowY
+       with _BlockOverflow
+       with _Overflow
+       with _TextOverflow
   inline def clip: clip = "clip".asInstanceOf[clip]
   
   @js.native
   sealed trait clone
     extends StObject
-       with BoxDecorationBreakProperty
+       with BoxDecorationBreak
   
   @js.native
   sealed trait `close-quote`
@@ -5397,67 +5502,68 @@ object csstypeStrings {
   @js.native
   sealed trait `col-resize`
     extends StObject
-       with _CursorProperty
+       with _Cursor
   inline def `col-resize`: `col-resize` = "col-resize".asInstanceOf[`col-resize`]
   
   @js.native
   sealed trait collapse
     extends StObject
-       with BorderCollapseProperty
-       with RubyMergeProperty
-       with VisibilityProperty
+       with BorderCollapse
+       with RubyMerge
+       with Visibility
   inline def collapse: collapse = "collapse".asInstanceOf[collapse]
   
   @js.native
   sealed trait color
     extends StObject
        with BlendMode
-       with MixBlendModeProperty
+       with MixBlendMode
   inline def color: color = "color".asInstanceOf[color]
   
   @js.native
   sealed trait `color-burn`
     extends StObject
        with BlendMode
-       with MixBlendModeProperty
+       with MixBlendMode
   inline def `color-burn`: `color-burn` = "color-burn".asInstanceOf[`color-burn`]
   
   @js.native
   sealed trait `color-dodge`
     extends StObject
        with BlendMode
-       with MixBlendModeProperty
+       with MixBlendMode
   inline def `color-dodge`: `color-dodge` = "color-dodge".asInstanceOf[`color-dodge`]
   
   @js.native
   sealed trait column
     extends StObject
-       with BreakAfterProperty
-       with BreakBeforeProperty
-       with FlexDirectionProperty
-       with _FlexFlowProperty
-       with _GridAutoFlowProperty
+       with BreakAfter
+       with BreakBefore
+       with FlexDirection
+       with _FlexFlow
+       with _GridAutoFlow
   inline def column: column = "column".asInstanceOf[column]
   
   @js.native
   sealed trait `column-reverse`
     extends StObject
-       with FlexDirectionProperty
-       with _FlexFlowProperty
+       with FlexDirection
+       with _FlexFlow
   inline def `column-reverse`: `column-reverse` = "column-reverse".asInstanceOf[`column-reverse`]
   
   @js.native
   sealed trait `common-ligatures`
     extends StObject
-       with _FontFaceFontVariantProperty
-       with _FontVariantLigaturesProperty
-       with _FontVariantProperty
+       with _FontVariant
+       with typings.csstype.mod.AtRule._FontVariant
+       with _FontVariantLigatures
   inline def `common-ligatures`: `common-ligatures` = "common-ligatures".asInstanceOf[`common-ligatures`]
   
   @js.native
   sealed trait compact
     extends StObject
-       with MathStyleProperty
+       with MathShift
+       with MathStyle
   inline def compact: compact = "compact".asInstanceOf[compact]
   
   @js.native
@@ -5469,36 +5575,38 @@ object csstypeStrings {
   @js.native
   sealed trait contain
     extends StObject
-       with ObjectFitProperty
-       with OverscrollBehaviorBlockProperty
-       with OverscrollBehaviorInlineProperty
-       with OverscrollBehaviorXProperty
-       with OverscrollBehaviorYProperty
-       with UserSelectProperty
-       with _BgSize[js.Any]
-       with _OverscrollBehaviorProperty
+       with ObjectFit
+       with OverscrollBehaviorBlock
+       with OverscrollBehaviorInline
+       with OverscrollBehaviorX
+       with OverscrollBehaviorY
+       with UserSelect
+       with ViewportFit
+       with _BgSize[Any]
+       with _OverscrollBehavior
   inline def contain: contain = "contain".asInstanceOf[contain]
   
   @js.native
   sealed trait content
     extends StObject
-       with _ContainProperty
-       with _FlexBasisProperty[js.Any]
-       with _FlexProperty[js.Any]
-       with _WebkitMaskClipProperty
-       with _WebkitMaskOriginProperty
-       with _WebkitMaskProperty[js.Any]
+       with _Contain
+       with _Flex[Any]
+       with _FlexBasis[Any]
+       with _WebkitMask[Any]
+       with _WebkitMaskClip
+       with _WebkitMaskOrigin
   inline def content: content = "content".asInstanceOf[content]
   
   @js.native
   sealed trait `content-box`
     extends StObject
        with Box
-       with BoxSizingProperty
+       with BoxSizing
        with GeometryBox
-       with MozFloatEdgeProperty
-       with OverflowClipBoxProperty
-       with TransformBoxProperty
+       with MozFloatEdge
+       with OverflowClipBox
+       with TransformBox
+       with VisualBox
   inline def `content-box`: `content-box` = "content-box".asInstanceOf[`content-box`]
   
   @js.native
@@ -5506,7 +5614,7 @@ object csstypeStrings {
     extends StObject
        with _AnimateableFeature
        with _ContentList
-       with _DisplayProperty
+       with _Display
   inline def contents: contents = "contents".asInstanceOf[contents]
   
   @js.native
@@ -5518,7 +5626,7 @@ object csstypeStrings {
   @js.native
   sealed trait `context-menu`
     extends StObject
-       with _CursorProperty
+       with _Cursor
   inline def `context-menu`: `context-menu` = "context-menu".asInstanceOf[`context-menu`]
   
   @js.native
@@ -5530,16 +5638,16 @@ object csstypeStrings {
   @js.native
   sealed trait contextual
     extends StObject
-       with _FontFaceFontVariantProperty
-       with _FontVariantLigaturesProperty
-       with _FontVariantProperty
+       with _FontVariant
+       with typings.csstype.mod.AtRule._FontVariant
+       with _FontVariantLigatures
   inline def contextual: contextual = "contextual".asInstanceOf[contextual]
   
   @js.native
   sealed trait copy
     extends StObject
        with CompositeStyle
-       with _CursorProperty
+       with _Cursor
   inline def copy: copy = "copy".asInstanceOf[copy]
   
   @js.native
@@ -5563,8 +5671,9 @@ object csstypeStrings {
   @js.native
   sealed trait cover
     extends StObject
-       with ObjectFitProperty
-       with _BgSize[js.Any]
+       with ObjectFit
+       with ViewportFit
+       with _BgSize[Any]
   inline def cover: cover = "cover".asInstanceOf[cover]
   
   @js.native
@@ -5576,27 +5685,39 @@ object csstypeStrings {
   @js.native
   sealed trait `crisp-edges`
     extends StObject
-       with ImageRenderingProperty
+       with ImageRendering
   inline def `crisp-edges`: `crisp-edges` = "crisp-edges".asInstanceOf[`crisp-edges`]
   
   @js.native
   sealed trait crispEdges
     extends StObject
-       with ShapeRenderingProperty
+       with ShapeRendering
   inline def crispEdges: crispEdges = "crispEdges".asInstanceOf[crispEdges]
+  
+  @js.native
+  sealed trait crop
+    extends StObject
+       with _Marks
+  inline def crop: crop = "crop".asInstanceOf[crop]
+  
+  @js.native
+  sealed trait cross
+    extends StObject
+       with _Marks
+  inline def cross: cross = "cross".asInstanceOf[cross]
   
   @js.native
   sealed trait crosshair
     extends StObject
-       with _CursorProperty
+       with _Cursor
   inline def crosshair: crosshair = "crosshair".asInstanceOf[crosshair]
   
   @js.native
   sealed trait currentColor
     extends StObject
-       with _FloodColorProperty
-       with _LightingColorProperty
-       with _StopColorProperty
+       with _FloodColor
+       with _LightingColor
+       with _StopColor
   inline def currentColor: currentColor = "currentColor".asInstanceOf[currentColor]
   
   @js.native
@@ -5620,13 +5741,13 @@ object csstypeStrings {
   @js.native
   sealed trait cyclic
     extends StObject
-       with _CounterStyleSystemProperty
+       with _System
   inline def cyclic: cyclic = "cyclic".asInstanceOf[cyclic]
   
   @js.native
   sealed trait dark
     extends StObject
-       with _ScrollbarColorProperty
+       with _ColorScheme
   inline def dark: dark = "dark".asInstanceOf[dark]
   
   @js.native
@@ -5645,7 +5766,7 @@ object csstypeStrings {
   sealed trait darken
     extends StObject
        with BlendMode
-       with MixBlendModeProperty
+       with MixBlendMode
   inline def darken: darken = "darken".asInstanceOf[darken]
   
   @js.native
@@ -5753,19 +5874,19 @@ object csstypeStrings {
   @js.native
   sealed trait dashed
     extends StObject
-       with BorderBlockEndStyleProperty
-       with BorderBlockStartStyleProperty
-       with BorderBlockStyleProperty
-       with BorderBottomStyleProperty
-       with BorderInlineEndStyleProperty
-       with BorderInlineStartStyleProperty
-       with BorderInlineStyleProperty
-       with BorderLeftStyleProperty
-       with BorderRightStyleProperty
-       with BorderTopStyleProperty
+       with BorderBlockEndStyle
+       with BorderBlockStartStyle
+       with BorderBlockStyle
+       with BorderBottomStyle
+       with BorderInlineEndStyle
+       with BorderInlineStartStyle
+       with BorderInlineStyle
+       with BorderLeftStyle
+       with BorderRightStyle
+       with BorderTopStyle
        with LineStyle
-       with TextDecorationStyleProperty
-       with _TextDecorationProperty[js.Any]
+       with TextDecorationStyle
+       with _TextDecoration[Any]
   inline def dashed: dashed = "dashed".asInstanceOf[dashed]
   
   @js.native
@@ -5783,19 +5904,13 @@ object csstypeStrings {
   @js.native
   sealed trait `default-button`
     extends StObject
-       with WebkitAppearanceProperty
+       with WebkitAppearance
   inline def `default-button`: `default-button` = "default-button".asInstanceOf[`default-button`]
-  
-  @js.native
-  sealed trait `definite-first`
-    extends StObject
-       with _MasonryAutoFlowProperty
-  inline def `definite-first`: `definite-first` = "definite-first".asInstanceOf[`definite-first`]
   
   @js.native
   sealed trait dense
     extends StObject
-       with _GridAutoFlowProperty
+       with _GridAutoFlow
   inline def dense: dense = "dense".asInstanceOf[dense]
   
   @js.native
@@ -5825,23 +5940,17 @@ object csstypeStrings {
   @js.native
   sealed trait `diagonal-fractions`
     extends StObject
-       with _FontFaceFontVariantProperty
-       with _FontVariantNumericProperty
-       with _FontVariantProperty
+       with _FontVariant
+       with typings.csstype.mod.AtRule._FontVariant
+       with _FontVariantNumeric
   inline def `diagonal-fractions`: `diagonal-fractions` = "diagonal-fractions".asInstanceOf[`diagonal-fractions`]
   
   @js.native
   sealed trait difference
     extends StObject
        with BlendMode
-       with MixBlendModeProperty
+       with MixBlendMode
   inline def difference: difference = "difference".asInstanceOf[difference]
-  
-  @js.native
-  sealed trait digits
-    extends StObject
-       with _TextCombineUprightProperty
-  inline def digits: digits = "digits".asInstanceOf[digits]
   
   @js.native
   sealed trait dimgray
@@ -5858,16 +5967,16 @@ object csstypeStrings {
   @js.native
   sealed trait disabled
     extends StObject
-       with ImeModeProperty
-       with MozUserInputProperty
+       with ImeMode
+       with MozUserInput
   inline def disabled: disabled = "disabled".asInstanceOf[disabled]
   
   @js.native
   sealed trait `discretionary-ligatures`
     extends StObject
-       with _FontFaceFontVariantProperty
-       with _FontVariantLigaturesProperty
-       with _FontVariantProperty
+       with _FontVariant
+       with typings.csstype.mod.AtRule._FontVariant
+       with _FontVariantLigatures
   inline def `discretionary-ligatures`: `discretionary-ligatures` = "discretionary-ligatures".asInstanceOf[`discretionary-ligatures`]
   
   @js.native
@@ -5879,69 +5988,69 @@ object csstypeStrings {
   @js.native
   sealed trait dot
     extends StObject
-       with _TextEmphasisProperty
-       with _TextEmphasisStyleProperty
+       with _TextEmphasis
+       with _TextEmphasisStyle
   inline def dot: dot = "dot".asInstanceOf[dot]
   
   @js.native
   sealed trait dotted
     extends StObject
-       with BorderBlockEndStyleProperty
-       with BorderBlockStartStyleProperty
-       with BorderBlockStyleProperty
-       with BorderBottomStyleProperty
-       with BorderInlineEndStyleProperty
-       with BorderInlineStartStyleProperty
-       with BorderInlineStyleProperty
-       with BorderLeftStyleProperty
-       with BorderRightStyleProperty
-       with BorderTopStyleProperty
+       with BorderBlockEndStyle
+       with BorderBlockStartStyle
+       with BorderBlockStyle
+       with BorderBottomStyle
+       with BorderInlineEndStyle
+       with BorderInlineStartStyle
+       with BorderInlineStyle
+       with BorderLeftStyle
+       with BorderRightStyle
+       with BorderTopStyle
        with LineStyle
-       with TextDecorationStyleProperty
-       with _TextDecorationProperty[js.Any]
+       with TextDecorationStyle
+       with _TextDecoration[Any]
   inline def dotted: dotted = "dotted".asInstanceOf[dotted]
   
   @js.native
   sealed trait double
     extends StObject
-       with BorderBlockEndStyleProperty
-       with BorderBlockStartStyleProperty
-       with BorderBlockStyleProperty
-       with BorderBottomStyleProperty
-       with BorderInlineEndStyleProperty
-       with BorderInlineStartStyleProperty
-       with BorderInlineStyleProperty
-       with BorderLeftStyleProperty
-       with BorderRightStyleProperty
-       with BorderTopStyleProperty
+       with BorderBlockEndStyle
+       with BorderBlockStartStyle
+       with BorderBlockStyle
+       with BorderBottomStyle
+       with BorderInlineEndStyle
+       with BorderInlineStartStyle
+       with BorderInlineStyle
+       with BorderLeftStyle
+       with BorderRightStyle
+       with BorderTopStyle
        with LineStyle
-       with TextDecorationStyleProperty
-       with _TextDecorationProperty[js.Any]
+       with TextDecorationStyle
+       with _TextDecoration[Any]
   inline def double: double = "double".asInstanceOf[double]
   
   @js.native
   sealed trait `double-circle`
     extends StObject
-       with _TextEmphasisProperty
-       with _TextEmphasisStyleProperty
+       with _TextEmphasis
+       with _TextEmphasisStyle
   inline def `double-circle`: `double-circle` = "double-circle".asInstanceOf[`double-circle`]
   
   @js.native
   sealed trait drag
     extends StObject
-       with MozWindowDraggingProperty
+       with MozWindowDragging
   inline def drag: drag = "drag".asInstanceOf[drag]
   
   @js.native
   sealed trait dualbutton
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def dualbutton: dualbutton = "dualbutton".asInstanceOf[dualbutton]
   
   @js.native
   sealed trait `e-resize`
     extends StObject
-       with _CursorProperty
+       with _Cursor
   inline def `e-resize`: `e-resize` = "e-resize".asInstanceOf[`e-resize`]
   
   @js.native
@@ -5971,72 +6080,72 @@ object csstypeStrings {
   @js.native
   sealed trait economy
     extends StObject
-       with ColorAdjustProperty
+       with PrintColorAdjust
   inline def economy: economy = "economy".asInstanceOf[economy]
   
   @js.native
   sealed trait edges
     extends StObject
-       with _TextDecorationSkipProperty
+       with _TextDecorationSkip
   inline def edges: edges = "edges".asInstanceOf[edges]
   
   @js.native
   sealed trait element
     extends StObject
-       with MsUserSelectProperty
-       with UserSelectProperty
+       with MsUserSelect
+       with UserSelect
   inline def element: element = "element".asInstanceOf[element]
   
   @js.native
   sealed trait ellipsis
     extends StObject
-       with _BlockOverflowProperty
-       with _TextOverflowProperty
+       with _BlockOverflow
+       with _TextOverflow
   inline def ellipsis: ellipsis = "ellipsis".asInstanceOf[ellipsis]
   
   @js.native
   sealed trait embed
     extends StObject
-       with UnicodeBidiProperty
+       with UnicodeBidi
   inline def embed: embed = "embed".asInstanceOf[embed]
   
   @js.native
   sealed trait enabled
     extends StObject
-       with MozUserInputProperty
+       with MozUserInput
   inline def enabled: enabled = "enabled".asInstanceOf[enabled]
   
   @js.native
   sealed trait end
     extends StObject
-       with BoxAlignProperty
-       with BoxPackProperty
+       with BoxAlign
+       with BoxPack
        with ContentPosition
-       with MsWrapFlowProperty
+       with MsWrapFlow
        with SelfPosition
-       with TextAlignLastProperty
-       with TextAlignProperty
-       with TextAnchorProperty
-       with _ScrollSnapAlignProperty
+       with TextAlign
+       with TextAlignLast
+       with TextAnchor
+       with _ScrollSnapAlign
   inline def end: end = "end".asInstanceOf[end]
   
   @js.native
   sealed trait evenodd
     extends StObject
-       with ClipRuleProperty
-       with FillRuleProperty
+       with ClipRule
+       with FillRule
   inline def evenodd: evenodd = "evenodd".asInstanceOf[evenodd]
   
   @js.native
   sealed trait `ew-resize`
     extends StObject
-       with _CursorProperty
+       with _Cursor
   inline def `ew-resize`: `ew-resize` = "ew-resize".asInstanceOf[`ew-resize`]
   
   @js.native
   sealed trait exact
     extends StObject
-       with ColorAdjustProperty
+       with PrintColorAdjust
   inline def exact: exact = "exact".asInstanceOf[exact]
   
   @js.native
@@ -6049,7 +6158,7 @@ object csstypeStrings {
   sealed trait exclusion
     extends StObject
        with BlendMode
-       with MixBlendModeProperty
+       with MixBlendMode
   inline def exclusion: exclusion = "exclusion".asInstanceOf[exclusion]
   
   @js.native
@@ -6071,16 +6180,16 @@ object csstypeStrings {
   inline def `extra-expanded`: `extra-expanded` = "extra-expanded".asInstanceOf[`extra-expanded`]
   
   @js.native
-  sealed trait fallback
+  sealed trait fallback_
     extends StObject
-       with FontFaceFontDisplayProperty
-  inline def fallback: fallback = "fallback".asInstanceOf[fallback]
+       with FontDisplay
+  inline def fallback_ : fallback_ = "fallback".asInstanceOf[fallback_]
   
   @js.native
   sealed trait `false`
     extends StObject
-       with MsAcceleratorProperty
-       with PropertyInheritsProperty
+       with Inherits
+       with MsAccelerator
   inline def `false`: `false` = "false".asInstanceOf[`false`]
   
   @js.native
@@ -6092,42 +6201,42 @@ object csstypeStrings {
   @js.native
   sealed trait `far-left`
     extends StObject
-       with _AzimuthProperty
+       with _Azimuth
   inline def `far-left`: `far-left` = "far-left".asInstanceOf[`far-left`]
   
   @js.native
   sealed trait `far-right`
     extends StObject
-       with _AzimuthProperty
+       with _Azimuth
   inline def `far-right`: `far-right` = "far-right".asInstanceOf[`far-right`]
   
   @js.native
   sealed trait fill
     extends StObject
-       with ObjectFitProperty
-       with PointerEventsProperty
-       with _MozContextPropertiesProperty
-       with _PaintOrderProperty
+       with ObjectFit
+       with PointerEvents
+       with _MozContextProperties
+       with _PaintOrder
   inline def fill: fill = "fill".asInstanceOf[fill]
   
   @js.native
   sealed trait `fill-box`
     extends StObject
        with GeometryBox
-       with TransformBoxProperty
+       with TransformBox
   inline def `fill-box`: `fill-box` = "fill-box".asInstanceOf[`fill-box`]
   
   @js.native
   sealed trait `fill-opacity`
     extends StObject
-       with _MozContextPropertiesProperty
+       with _MozContextProperties
   inline def `fill-opacity`: `fill-opacity` = "fill-opacity".asInstanceOf[`fill-opacity`]
   
   @js.native
   sealed trait filled
     extends StObject
-       with _TextEmphasisProperty
-       with _TextEmphasisStyleProperty
+       with _TextEmphasis
+       with _TextEmphasisStyle
   inline def filled: filled = "filled".asInstanceOf[filled]
   
   @js.native
@@ -6139,23 +6248,42 @@ object csstypeStrings {
   @js.native
   sealed trait first
     extends StObject
-       with _HangingPunctuationProperty
+       with _HangingPunctuation
   inline def first: first = "first".asInstanceOf[first]
+  
+  @js.native
+  sealed trait `fit-content`
+    extends StObject
+       with _BlockSize[Any]
+       with _Flex[Any]
+       with _FlexBasis[Any]
+       with _Height[Any]
+       with _InlineSize[Any]
+       with _MaxBlockSize[Any]
+       with _MaxHeight[Any]
+       with _MaxInlineSize[Any]
+       with _MaxWidth[Any]
+       with _MinBlockSize[Any]
+       with _MinHeight[Any]
+       with _MinInlineSize[Any]
+       with _MinWidth[Any]
+       with _Width[Any]
+  inline def `fit-content`: `fit-content` = "fit-content".asInstanceOf[`fit-content`]
   
   @js.native
   sealed trait fixed
     extends StObject
        with Attachment
-       with PositionProperty
-       with TableLayoutProperty
-       with ViewportUserZoomProperty
-       with _CounterStyleSystemProperty
+       with Position
+       with TableLayout
+       with UserZoom
+       with _System
   inline def fixed: fixed = "fixed".asInstanceOf[fixed]
   
   @js.native
   sealed trait flat
     extends StObject
-       with TransformStyleProperty
+       with TransformStyle
   inline def flat: flat = "flat".asInstanceOf[flat]
   
   @js.native
@@ -6181,7 +6309,7 @@ object csstypeStrings {
   @js.native
   sealed trait flip
     extends StObject
-       with _ImageOrientationProperty
+       with _ImageOrientation
   inline def flip: flip = "flip".asInstanceOf[flip]
   
   @js.native
@@ -6205,7 +6333,7 @@ object csstypeStrings {
   @js.native
   sealed trait `force-end`
     extends StObject
-       with _HangingPunctuationProperty
+       with _HangingPunctuation
   inline def `force-end`: `force-end` = "force-end".asInstanceOf[`force-end`]
   
   @js.native
@@ -6223,16 +6351,17 @@ object csstypeStrings {
   @js.native
   sealed trait `from-font`
     extends StObject
-       with _TextDecorationProperty[js.Any]
-       with _TextDecorationThicknessProperty[js.Any]
-       with _TextUnderlinePositionProperty
+       with _FontSizeAdjust
+       with _TextDecoration[Any]
+       with _TextDecorationThickness[Any]
+       with _TextUnderlinePosition
   inline def `from-font`: `from-font` = "from-font".asInstanceOf[`from-font`]
   
   @js.native
   sealed trait `from-image`
     extends StObject
-       with _ImageOrientationProperty
-       with _ImageResolutionProperty
+       with _ImageOrientation
+       with _ImageResolution
   inline def `from-image`: `from-image` = "from-image".asInstanceOf[`from-image`]
   
   @js.native
@@ -6244,16 +6373,16 @@ object csstypeStrings {
   @js.native
   sealed trait `full-size-kana`
     extends StObject
-       with TextTransformProperty
+       with TextTransform
   inline def `full-size-kana`: `full-size-kana` = "full-size-kana".asInstanceOf[`full-size-kana`]
   
   @js.native
   sealed trait `full-width`
     extends StObject
-       with TextTransformProperty
-       with _FontFaceFontVariantProperty
-       with _FontVariantEastAsianProperty
-       with _FontVariantProperty
+       with TextTransform
+       with _FontVariant
+       with typings.csstype.mod.AtRule._FontVariant
+       with _FontVariantEastAsian
   inline def `full-width`: `full-width` = "full-width".asInstanceOf[`full-width`]
   
   @js.native
@@ -6265,8 +6394,8 @@ object csstypeStrings {
   @js.native
   sealed trait geometricPrecision
     extends StObject
-       with ShapeRenderingProperty
-       with TextRenderingProperty
+       with ShapeRendering
+       with TextRendering
   inline def geometricPrecision: geometricPrecision = "geometricPrecision".asInstanceOf[geometricPrecision]
   
   @js.native
@@ -6290,20 +6419,20 @@ object csstypeStrings {
   @js.native
   sealed trait grab
     extends StObject
-       with _CursorProperty
+       with _Cursor
   inline def grab: grab = "grab".asInstanceOf[grab]
   
   @js.native
   sealed trait grabbing
     extends StObject
-       with _CursorProperty
+       with _Cursor
   inline def grabbing: grabbing = "grabbing".asInstanceOf[grabbing]
   
   @js.native
   sealed trait `grammar-error`
     extends StObject
-       with _TextDecorationLineProperty
-       with _TextDecorationProperty[js.Any]
+       with _TextDecoration[Any]
+       with _TextDecorationLine
   inline def `grammar-error`: `grammar-error` = "grammar-error".asInstanceOf[`grammar-error`]
   
   @js.native
@@ -6339,94 +6468,95 @@ object csstypeStrings {
   @js.native
   sealed trait grippers
     extends StObject
-       with MsTouchSelectProperty
+       with MsTouchSelect
   inline def grippers: grippers = "grippers".asInstanceOf[grippers]
   
   @js.native
   sealed trait groove
     extends StObject
-       with BorderBlockEndStyleProperty
-       with BorderBlockStartStyleProperty
-       with BorderBlockStyleProperty
-       with BorderBottomStyleProperty
-       with BorderInlineEndStyleProperty
-       with BorderInlineStartStyleProperty
-       with BorderInlineStyleProperty
-       with BorderLeftStyleProperty
-       with BorderRightStyleProperty
-       with BorderTopStyleProperty
+       with BorderBlockEndStyle
+       with BorderBlockStartStyle
+       with BorderBlockStyle
+       with BorderBottomStyle
+       with BorderInlineEndStyle
+       with BorderInlineStartStyle
+       with BorderInlineStyle
+       with BorderLeftStyle
+       with BorderRightStyle
+       with BorderTopStyle
        with LineStyle
   inline def groove: groove = "groove".asInstanceOf[groove]
   
   @js.native
   sealed trait groupbox
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def groupbox: groupbox = "groupbox".asInstanceOf[groupbox]
   
   @js.native
   sealed trait hanging
     extends StObject
-       with AlignmentBaselineProperty
-       with DominantBaselineProperty
+       with AlignmentBaseline
+       with DominantBaseline
   inline def hanging: hanging = "hanging".asInstanceOf[hanging]
   
   @js.native
   sealed trait `hard-light`
     extends StObject
        with BlendMode
-       with MixBlendModeProperty
+       with MixBlendMode
   inline def `hard-light`: `hard-light` = "hard-light".asInstanceOf[`hard-light`]
   
   @js.native
   sealed trait help
     extends StObject
-       with _CursorProperty
+       with _Cursor
   inline def help: help = "help".asInstanceOf[help]
   
   @js.native
   sealed trait hidden
     extends StObject
-       with BackfaceVisibilityProperty
-       with BorderBlockEndStyleProperty
-       with BorderBlockStartStyleProperty
-       with BorderBlockStyleProperty
-       with BorderBottomStyleProperty
-       with BorderInlineEndStyleProperty
-       with BorderInlineStartStyleProperty
-       with BorderInlineStyleProperty
-       with BorderLeftStyleProperty
-       with BorderRightStyleProperty
-       with BorderTopStyleProperty
+       with BackfaceVisibility
+       with BorderBlockEndStyle
+       with BorderBlockStartStyle
+       with BorderBlockStyle
+       with BorderBottomStyle
+       with BorderInlineEndStyle
+       with BorderInlineStartStyle
+       with BorderInlineStyle
+       with BorderLeftStyle
+       with BorderRightStyle
+       with BorderTopStyle
+       with ContentVisibility
        with LineStyle
-       with OverflowBlockProperty
-       with OverflowInlineProperty
-       with OverflowXProperty
-       with OverflowYProperty
-       with VisibilityProperty
-       with _OverflowProperty
+       with OverflowBlock
+       with OverflowInline
+       with OverflowX
+       with OverflowY
+       with Visibility
+       with _Overflow
   inline def hidden: hidden = "hidden".asInstanceOf[hidden]
   
   @js.native
   sealed trait hide
     extends StObject
-       with EmptyCellsProperty
+       with EmptyCells
   inline def hide: hide = "hide".asInstanceOf[hide]
   
   @js.native
   sealed trait `historical-forms`
     extends StObject
-       with _FontFaceFontVariantProperty
-       with _FontVariantAlternatesProperty
-       with _FontVariantProperty
+       with _FontVariant
+       with typings.csstype.mod.AtRule._FontVariant
+       with _FontVariantAlternates
   inline def `historical-forms`: `historical-forms` = "historical-forms".asInstanceOf[`historical-forms`]
   
   @js.native
   sealed trait `historical-ligatures`
     extends StObject
-       with _FontFaceFontVariantProperty
-       with _FontVariantLigaturesProperty
-       with _FontVariantProperty
+       with _FontVariant
+       with typings.csstype.mod.AtRule._FontVariant
+       with _FontVariantLigatures
   inline def `historical-ligatures`: `historical-ligatures` = "historical-ligatures".asInstanceOf[`historical-ligatures`]
   
   @js.native
@@ -6438,15 +6568,15 @@ object csstypeStrings {
   @js.native
   sealed trait horizontal
     extends StObject
-       with BoxOrientProperty
-       with MozOrientProperty
-       with ResizeProperty
+       with BoxOrient
+       with MozOrient
+       with Resize
   inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
   sealed trait `horizontal-tb`
     extends StObject
-       with WritingModeProperty
+       with WritingMode
   inline def `horizontal-tb`: `horizontal-tb` = "horizontal-tb".asInstanceOf[`horizontal-tb`]
   
   @js.native
@@ -6459,57 +6589,57 @@ object csstypeStrings {
   sealed trait hue
     extends StObject
        with BlendMode
-       with MixBlendModeProperty
+       with MixBlendMode
   inline def hue: hue = "hue".asInstanceOf[hue]
   
   @js.native
   sealed trait icon
     extends StObject
-       with _FontProperty
+       with _Font
   inline def icon: icon = "icon".asInstanceOf[icon]
   
   @js.native
   sealed trait `ideograph-alpha`
     extends StObject
-       with MsTextAutospaceProperty
+       with MsTextAutospace
   inline def `ideograph-alpha`: `ideograph-alpha` = "ideograph-alpha".asInstanceOf[`ideograph-alpha`]
   
   @js.native
   sealed trait `ideograph-numeric`
     extends StObject
-       with MsTextAutospaceProperty
+       with MsTextAutospace
   inline def `ideograph-numeric`: `ideograph-numeric` = "ideograph-numeric".asInstanceOf[`ideograph-numeric`]
   
   @js.native
   sealed trait `ideograph-parenthesis`
     extends StObject
-       with MsTextAutospaceProperty
+       with MsTextAutospace
   inline def `ideograph-parenthesis`: `ideograph-parenthesis` = "ideograph-parenthesis".asInstanceOf[`ideograph-parenthesis`]
   
   @js.native
   sealed trait `ideograph-space`
     extends StObject
-       with MsTextAutospaceProperty
+       with MsTextAutospace
   inline def `ideograph-space`: `ideograph-space` = "ideograph-space".asInstanceOf[`ideograph-space`]
   
   @js.native
   sealed trait ideographic
     extends StObject
-       with AlignmentBaselineProperty
-       with DominantBaselineProperty
+       with AlignmentBaseline
+       with DominantBaseline
   inline def ideographic: ideographic = "ideographic".asInstanceOf[ideographic]
   
   @js.native
   sealed trait ignore
     extends StObject
-       with MozStackSizingProperty
-       with MozUserFocusProperty
+       with MozStackSizing
+       with MozUserFocus
   inline def ignore: ignore = "ignore".asInstanceOf[ignore]
   
   @js.native
   sealed trait inactive
     extends StObject
-       with ImeModeProperty
+       with ImeMode
   inline def inactive: inactive = "inactive".asInstanceOf[inactive]
   
   @js.native
@@ -6527,306 +6657,311 @@ object csstypeStrings {
   @js.native
   sealed trait infinite
     extends StObject
-       with _AnimationIterationCountProperty
-       with _CounterStyleRangeProperty
-       with _SingleAnimation
+       with _AnimationIterationCount
+       with _SingleAnimation[Any]
   inline def infinite: infinite = "infinite".asInstanceOf[infinite]
   
   @js.native
   sealed trait inherit
     extends StObject
-       with AlignmentBaselineProperty
-       with AppearanceProperty
-       with BackfaceVisibilityProperty
-       with BorderBlockEndStyleProperty
-       with BorderBlockStartStyleProperty
-       with BorderBlockStyleProperty
-       with BorderBottomStyleProperty
-       with BorderCollapseProperty
-       with BorderInlineEndStyleProperty
-       with BorderInlineStartStyleProperty
-       with BorderInlineStyleProperty
-       with BorderLeftStyleProperty
-       with BorderRightStyleProperty
-       with BorderTopStyleProperty
-       with BoxAlignProperty
-       with BoxDecorationBreakProperty
-       with BoxDirectionProperty
-       with BoxLinesProperty
-       with BoxOrientProperty
-       with BoxPackProperty
-       with BoxSizingProperty
-       with BreakAfterProperty
-       with BreakBeforeProperty
-       with BreakInsideProperty
-       with CaptionSideProperty
-       with ClearProperty
-       with ClipRuleProperty
-       with ColorAdjustProperty
-       with ColorInterpolationProperty
-       with ColorRenderingProperty
-       with ColumnFillProperty
-       with ColumnSpanProperty
-       with DirectionProperty
-       with DominantBaselineProperty
-       with EmptyCellsProperty
-       with FillRuleProperty
-       with FlexDirectionProperty
-       with FlexWrapProperty
-       with FloatProperty
-       with FontKerningProperty
-       with FontOpticalSizingProperty
-       with FontVariantCapsProperty
-       with FontVariantPositionProperty
+       with AlignmentBaseline
+       with Appearance
+       with BackfaceVisibility
+       with BorderBlockEndStyle
+       with BorderBlockStartStyle
+       with BorderBlockStyle
+       with BorderBottomStyle
+       with BorderCollapse
+       with BorderInlineEndStyle
+       with BorderInlineStartStyle
+       with BorderInlineStyle
+       with BorderLeftStyle
+       with BorderRightStyle
+       with BorderTopStyle
+       with BoxAlign
+       with BoxDecorationBreak
+       with BoxDirection
+       with BoxLines
+       with BoxOrient
+       with BoxPack
+       with BoxSizing
+       with BreakAfter
+       with BreakBefore
+       with BreakInside
+       with CaptionSide
+       with Clear
+       with ClipRule
+       with ColorInterpolation
+       with ColorRendering
+       with ColumnFill
+       with ColumnSpan
+       with ContentVisibility
+       with Direction
+       with DominantBaseline
+       with EmptyCells
+       with FillRule
+       with FlexDirection
+       with FlexWrap
+       with Float
+       with FontKerning
+       with FontOpticalSizing
+       with FontVariantCaps
+       with FontVariantPosition
+       with ForcedColorAdjust
        with Globals
-       with HyphensProperty
-       with ImageRenderingProperty
-       with ImeModeProperty
-       with IsolationProperty
-       with LineBreakProperty
-       with ListStylePositionProperty
-       with MaskBorderModeProperty
-       with MaskTypeProperty
-       with MathStyleProperty
-       with MixBlendModeProperty
-       with MozAppearanceProperty
-       with MozFloatEdgeProperty
-       with MozOrientProperty
-       with MozStackSizingProperty
-       with MozTextBlinkProperty
-       with MozUserFocusProperty
-       with MozUserInputProperty
-       with MozUserModifyProperty
-       with MozWindowDraggingProperty
-       with MozWindowShadowProperty
-       with MsAcceleratorProperty
-       with MsBlockProgressionProperty
-       with MsContentZoomChainingProperty
-       with MsContentZoomSnapTypeProperty
-       with MsContentZoomingProperty
-       with MsHighContrastAdjustProperty
-       with MsImeAlignProperty
-       with MsOverflowStyleProperty
-       with MsScrollChainingProperty
-       with MsScrollRailsProperty
-       with MsScrollSnapTypeProperty
-       with MsScrollTranslationProperty
-       with MsTextAutospaceProperty
-       with MsTouchSelectProperty
-       with MsUserSelectProperty
-       with MsWrapFlowProperty
-       with MsWrapThroughProperty
-       with ObjectFitProperty
-       with OverflowAnchorProperty
-       with OverflowBlockProperty
-       with OverflowClipBoxProperty
-       with OverflowInlineProperty
-       with OverflowWrapProperty
-       with OverflowXProperty
-       with OverflowYProperty
-       with OverscrollBehaviorBlockProperty
-       with OverscrollBehaviorInlineProperty
-       with OverscrollBehaviorXProperty
-       with OverscrollBehaviorYProperty
-       with PageBreakAfterProperty
-       with PageBreakBeforeProperty
-       with PageBreakInsideProperty
-       with PointerEventsProperty
-       with PositionProperty
-       with ResizeProperty
-       with RubyAlignProperty
-       with RubyMergeProperty
-       with RubyPositionProperty
-       with ScrollBehaviorProperty
-       with ScrollSnapStopProperty
-       with ScrollSnapTypeXProperty
-       with ScrollSnapTypeYProperty
-       with ScrollbarWidthProperty
-       with ShapeRenderingProperty
-       with StrokeLinecapProperty
-       with StrokeLinejoinProperty
-       with TableLayoutProperty
-       with TextAlignLastProperty
-       with TextAlignProperty
-       with TextAnchorProperty
-       with TextDecorationSkipInkProperty
-       with TextDecorationStyleProperty
-       with TextJustifyProperty
-       with TextOrientationProperty
-       with TextRenderingProperty
-       with TextTransformProperty
-       with TransformBoxProperty
-       with TransformStyleProperty
-       with UnicodeBidiProperty
-       with UserSelectProperty
-       with VectorEffectProperty
-       with VisibilityProperty
-       with WebkitAppearanceProperty
-       with WebkitMaskRepeatXProperty
-       with WebkitMaskRepeatYProperty
-       with WebkitOverflowScrollingProperty
-       with WebkitTouchCalloutProperty
-       with WebkitUserModifyProperty
-       with WhiteSpaceProperty
-       with WordBreakProperty
-       with WordWrapProperty
-       with WritingModeProperty
+       with Hyphens
+       with ImageRendering
+       with ImeMode
+       with InputSecurity
+       with Isolation
+       with LineBreak
+       with ListStylePosition
+       with MaskBorderMode
+       with MaskType
+       with MathShift
+       with MathStyle
+       with MixBlendMode
+       with MozAppearance
+       with MozFloatEdge
+       with MozOrient
+       with MozStackSizing
+       with MozTextBlink
+       with MozUserFocus
+       with MozUserInput
+       with MozUserModify
+       with MozWindowDragging
+       with MozWindowShadow
+       with MsAccelerator
+       with MsBlockProgression
+       with MsContentZoomChaining
+       with MsContentZoomSnapType
+       with MsContentZooming
+       with MsHighContrastAdjust
+       with MsImeAlign
+       with MsOverflowStyle
+       with MsScrollChaining
+       with MsScrollRails
+       with MsScrollSnapType
+       with MsScrollTranslation
+       with MsTextAutospace
+       with MsTouchSelect
+       with MsUserSelect
+       with MsWrapFlow
+       with MsWrapThrough
+       with ObjectFit
+       with OverflowAnchor
+       with OverflowBlock
+       with OverflowClipBox
+       with OverflowInline
+       with OverflowWrap
+       with OverflowX
+       with OverflowY
+       with OverscrollBehaviorBlock
+       with OverscrollBehaviorInline
+       with OverscrollBehaviorX
+       with OverscrollBehaviorY
+       with PageBreakAfter
+       with PageBreakBefore
+       with PageBreakInside
+       with PointerEvents
+       with Position
+       with PrintColorAdjust
+       with Resize
+       with RubyAlign
+       with RubyMerge
+       with ScrollBehavior
+       with ScrollSnapStop
+       with ScrollSnapTypeX
+       with ScrollSnapTypeY
+       with ScrollbarWidth
+       with ShapeRendering
+       with StrokeLinecap
+       with StrokeLinejoin
+       with TableLayout
+       with TextAlign
+       with TextAlignLast
+       with TextAnchor
+       with TextDecorationSkipInk
+       with TextDecorationStyle
+       with TextJustify
+       with TextOrientation
+       with TextRendering
+       with TextTransform
+       with TransformBox
+       with TransformStyle
+       with UnicodeBidi
+       with UserSelect
+       with VectorEffect
+       with Visibility
+       with WebkitAppearance
+       with WebkitMaskRepeatX
+       with WebkitMaskRepeatY
+       with WebkitOverflowScrolling
+       with WebkitTouchCallout
+       with WebkitUserModify
+       with WhiteSpace
+       with WordBreak
+       with WordWrap
+       with WritingMode
   inline def inherit: inherit = "inherit".asInstanceOf[inherit]
   
   @js.native
   sealed trait initial
     extends StObject
-       with AlignmentBaselineProperty
-       with AppearanceProperty
-       with BackfaceVisibilityProperty
-       with BorderBlockEndStyleProperty
-       with BorderBlockStartStyleProperty
-       with BorderBlockStyleProperty
-       with BorderBottomStyleProperty
-       with BorderCollapseProperty
-       with BorderInlineEndStyleProperty
-       with BorderInlineStartStyleProperty
-       with BorderInlineStyleProperty
-       with BorderLeftStyleProperty
-       with BorderRightStyleProperty
-       with BorderTopStyleProperty
-       with BoxAlignProperty
-       with BoxDecorationBreakProperty
-       with BoxDirectionProperty
-       with BoxLinesProperty
-       with BoxOrientProperty
-       with BoxPackProperty
-       with BoxSizingProperty
-       with BreakAfterProperty
-       with BreakBeforeProperty
-       with BreakInsideProperty
-       with CaptionSideProperty
-       with ClearProperty
-       with ClipRuleProperty
-       with ColorAdjustProperty
-       with ColorInterpolationProperty
-       with ColorRenderingProperty
-       with ColumnFillProperty
-       with ColumnSpanProperty
-       with DirectionProperty
-       with DominantBaselineProperty
-       with EmptyCellsProperty
-       with FillRuleProperty
-       with FlexDirectionProperty
-       with FlexWrapProperty
-       with FloatProperty
-       with FontKerningProperty
-       with FontOpticalSizingProperty
-       with FontVariantCapsProperty
-       with FontVariantPositionProperty
+       with AlignmentBaseline
+       with Appearance
+       with BackfaceVisibility
+       with BorderBlockEndStyle
+       with BorderBlockStartStyle
+       with BorderBlockStyle
+       with BorderBottomStyle
+       with BorderCollapse
+       with BorderInlineEndStyle
+       with BorderInlineStartStyle
+       with BorderInlineStyle
+       with BorderLeftStyle
+       with BorderRightStyle
+       with BorderTopStyle
+       with BoxAlign
+       with BoxDecorationBreak
+       with BoxDirection
+       with BoxLines
+       with BoxOrient
+       with BoxPack
+       with BoxSizing
+       with BreakAfter
+       with BreakBefore
+       with BreakInside
+       with CaptionSide
+       with Clear
+       with ClipRule
+       with ColorInterpolation
+       with ColorRendering
+       with ColumnFill
+       with ColumnSpan
+       with ContentVisibility
+       with Direction
+       with DominantBaseline
+       with EmptyCells
+       with FillRule
+       with FlexDirection
+       with FlexWrap
+       with Float
+       with FontKerning
+       with FontOpticalSizing
+       with FontVariantCaps
+       with FontVariantPosition
+       with ForcedColorAdjust
        with Globals
-       with HyphensProperty
-       with ImageRenderingProperty
-       with ImeModeProperty
-       with IsolationProperty
-       with LineBreakProperty
-       with ListStylePositionProperty
-       with MaskBorderModeProperty
-       with MaskTypeProperty
-       with MathStyleProperty
-       with MixBlendModeProperty
-       with MozAppearanceProperty
-       with MozFloatEdgeProperty
-       with MozOrientProperty
-       with MozStackSizingProperty
-       with MozTextBlinkProperty
-       with MozUserFocusProperty
-       with MozUserInputProperty
-       with MozUserModifyProperty
-       with MozWindowDraggingProperty
-       with MozWindowShadowProperty
-       with MsAcceleratorProperty
-       with MsBlockProgressionProperty
-       with MsContentZoomChainingProperty
-       with MsContentZoomSnapTypeProperty
-       with MsContentZoomingProperty
-       with MsHighContrastAdjustProperty
-       with MsImeAlignProperty
-       with MsOverflowStyleProperty
-       with MsScrollChainingProperty
-       with MsScrollRailsProperty
-       with MsScrollSnapTypeProperty
-       with MsScrollTranslationProperty
-       with MsTextAutospaceProperty
-       with MsTouchSelectProperty
-       with MsUserSelectProperty
-       with MsWrapFlowProperty
-       with MsWrapThroughProperty
-       with ObjectFitProperty
-       with OverflowAnchorProperty
-       with OverflowBlockProperty
-       with OverflowClipBoxProperty
-       with OverflowInlineProperty
-       with OverflowWrapProperty
-       with OverflowXProperty
-       with OverflowYProperty
-       with OverscrollBehaviorBlockProperty
-       with OverscrollBehaviorInlineProperty
-       with OverscrollBehaviorXProperty
-       with OverscrollBehaviorYProperty
-       with PageBreakAfterProperty
-       with PageBreakBeforeProperty
-       with PageBreakInsideProperty
-       with PointerEventsProperty
-       with PositionProperty
-       with ResizeProperty
-       with RubyAlignProperty
-       with RubyMergeProperty
-       with RubyPositionProperty
-       with ScrollBehaviorProperty
-       with ScrollSnapStopProperty
-       with ScrollSnapTypeXProperty
-       with ScrollSnapTypeYProperty
-       with ScrollbarWidthProperty
-       with ShapeRenderingProperty
-       with StrokeLinecapProperty
-       with StrokeLinejoinProperty
-       with TableLayoutProperty
-       with TextAlignLastProperty
-       with TextAlignProperty
-       with TextAnchorProperty
-       with TextDecorationSkipInkProperty
-       with TextDecorationStyleProperty
-       with TextJustifyProperty
-       with TextOrientationProperty
-       with TextRenderingProperty
-       with TextTransformProperty
-       with TransformBoxProperty
-       with TransformStyleProperty
-       with UnicodeBidiProperty
-       with UserSelectProperty
-       with VectorEffectProperty
-       with VisibilityProperty
-       with WebkitAppearanceProperty
-       with WebkitMaskRepeatXProperty
-       with WebkitMaskRepeatYProperty
-       with WebkitOverflowScrollingProperty
-       with WebkitTouchCalloutProperty
-       with WebkitUserModifyProperty
-       with WhiteSpaceProperty
-       with WordBreakProperty
-       with WordWrapProperty
-       with WritingModeProperty
+       with Hyphens
+       with ImageRendering
+       with ImeMode
+       with InputSecurity
+       with Isolation
+       with LineBreak
+       with ListStylePosition
+       with MaskBorderMode
+       with MaskType
+       with MathShift
+       with MathStyle
+       with MixBlendMode
+       with MozAppearance
+       with MozFloatEdge
+       with MozOrient
+       with MozStackSizing
+       with MozTextBlink
+       with MozUserFocus
+       with MozUserInput
+       with MozUserModify
+       with MozWindowDragging
+       with MozWindowShadow
+       with MsAccelerator
+       with MsBlockProgression
+       with MsContentZoomChaining
+       with MsContentZoomSnapType
+       with MsContentZooming
+       with MsHighContrastAdjust
+       with MsImeAlign
+       with MsOverflowStyle
+       with MsScrollChaining
+       with MsScrollRails
+       with MsScrollSnapType
+       with MsScrollTranslation
+       with MsTextAutospace
+       with MsTouchSelect
+       with MsUserSelect
+       with MsWrapFlow
+       with MsWrapThrough
+       with ObjectFit
+       with OverflowAnchor
+       with OverflowBlock
+       with OverflowClipBox
+       with OverflowInline
+       with OverflowWrap
+       with OverflowX
+       with OverflowY
+       with OverscrollBehaviorBlock
+       with OverscrollBehaviorInline
+       with OverscrollBehaviorX
+       with OverscrollBehaviorY
+       with PageBreakAfter
+       with PageBreakBefore
+       with PageBreakInside
+       with PointerEvents
+       with Position
+       with PrintColorAdjust
+       with Resize
+       with RubyAlign
+       with RubyMerge
+       with ScrollBehavior
+       with ScrollSnapStop
+       with ScrollSnapTypeX
+       with ScrollSnapTypeY
+       with ScrollbarWidth
+       with ShapeRendering
+       with StrokeLinecap
+       with StrokeLinejoin
+       with TableLayout
+       with TextAlign
+       with TextAlignLast
+       with TextAnchor
+       with TextDecorationSkipInk
+       with TextDecorationStyle
+       with TextJustify
+       with TextOrientation
+       with TextRendering
+       with TextTransform
+       with TransformBox
+       with TransformStyle
+       with UnicodeBidi
+       with UserSelect
+       with VectorEffect
+       with Visibility
+       with WebkitAppearance
+       with WebkitMaskRepeatX
+       with WebkitMaskRepeatY
+       with WebkitOverflowScrolling
+       with WebkitTouchCallout
+       with WebkitUserModify
+       with WhiteSpace
+       with WordBreak
+       with WordWrap
+       with WritingMode
   inline def initial: initial = "initial".asInstanceOf[initial]
   
   @js.native
   sealed trait `inline`
     extends StObject
        with DisplayOutside
-       with MozOrientProperty
-       with ResizeProperty
-       with _ScrollSnapTypeProperty
+       with MozOrient
+       with Resize
+       with _ScrollSnapType
   inline def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   
   @js.native
   sealed trait `inline-axis`
     extends StObject
-       with BoxOrientProperty
+       with BoxOrient
   inline def `inline-axis`: `inline-axis` = "inline-axis".asInstanceOf[`inline-axis`]
   
   @js.native
@@ -6838,9 +6973,9 @@ object csstypeStrings {
   @js.native
   sealed trait `inline-end`
     extends StObject
-       with CaptionSideProperty
-       with ClearProperty
-       with FloatProperty
+       with CaptionSide
+       with Clear
+       with Float
   inline def `inline-end`: `inline-end` = "inline-end".asInstanceOf[`inline-end`]
   
   @js.native
@@ -6862,11 +6997,17 @@ object csstypeStrings {
   inline def `inline-list-item`: `inline-list-item` = "inline-list-item".asInstanceOf[`inline-list-item`]
   
   @js.native
+  sealed trait `inline-size`
+    extends StObject
+       with _Contain
+  inline def `inline-size`: `inline-size` = "inline-size".asInstanceOf[`inline-size`]
+  
+  @js.native
   sealed trait `inline-start`
     extends StObject
-       with CaptionSideProperty
-       with ClearProperty
-       with FloatProperty
+       with CaptionSide
+       with Clear
+       with Float
   inline def `inline-start`: `inline-start` = "inline-start".asInstanceOf[`inline-start`]
   
   @js.native
@@ -6878,42 +7019,43 @@ object csstypeStrings {
   @js.native
   sealed trait `inner-spin-button`
     extends StObject
-       with WebkitAppearanceProperty
+       with WebkitAppearance
   inline def `inner-spin-button`: `inner-spin-button` = "inner-spin-button".asInstanceOf[`inner-spin-button`]
   
   @js.native
   sealed trait inset
     extends StObject
-       with BorderBlockEndStyleProperty
-       with BorderBlockStartStyleProperty
-       with BorderBlockStyleProperty
-       with BorderBottomStyleProperty
-       with BorderInlineEndStyleProperty
-       with BorderInlineStartStyleProperty
-       with BorderInlineStyleProperty
-       with BorderLeftStyleProperty
-       with BorderRightStyleProperty
-       with BorderTopStyleProperty
+       with BorderBlockEndStyle
+       with BorderBlockStartStyle
+       with BorderBlockStyle
+       with BorderBottomStyle
+       with BorderInlineEndStyle
+       with BorderInlineStartStyle
+       with BorderInlineStyle
+       with BorderLeftStyle
+       with BorderRightStyle
+       with BorderTopStyle
        with LineStyle
   inline def inset: inset = "inset".asInstanceOf[inset]
   
   @js.native
   sealed trait inside
     extends StObject
-       with ListStylePositionProperty
-       with _ListStyleProperty
+       with ListStylePosition
+       with _ListStyle
   inline def inside: inside = "inside".asInstanceOf[inside]
   
   @js.native
   sealed trait `inter-character`
     extends StObject
-       with TextJustifyProperty
+       with TextJustify
+       with _RubyPosition
   inline def `inter-character`: `inter-character` = "inter-character".asInstanceOf[`inter-character`]
   
   @js.native
   sealed trait `inter-word`
     extends StObject
-       with TextJustifyProperty
+       with TextJustify
   inline def `inter-word`: `inter-word` = "inter-word".asInstanceOf[`inter-word`]
   
   @js.native
@@ -6925,36 +7067,38 @@ object csstypeStrings {
   @js.native
   sealed trait intrinsic
     extends StObject
-       with _MaxWidthProperty[js.Any]
-       with _MinWidthProperty[js.Any]
-       with _WidthProperty[js.Any]
+       with _MaxHeight[Any]
+       with _MaxWidth[Any]
+       with _MinHeight[Any]
+       with _MinWidth[Any]
+       with _Width[Any]
   inline def intrinsic: intrinsic = "intrinsic".asInstanceOf[intrinsic]
   
   @js.native
   sealed trait invert
     extends StObject
-       with _OutlineColorProperty
-       with _OutlineProperty[js.Any]
+       with _Outline[Any]
+       with _OutlineColor
   inline def invert: invert = "invert".asInstanceOf[invert]
   
   @js.native
   sealed trait isolate
     extends StObject
-       with IsolationProperty
-       with UnicodeBidiProperty
+       with Isolation
+       with UnicodeBidi
   inline def isolate: isolate = "isolate".asInstanceOf[isolate]
   
   @js.native
   sealed trait `isolate-override`
     extends StObject
-       with UnicodeBidiProperty
+       with UnicodeBidi
   inline def `isolate-override`: `isolate-override` = "isolate-override".asInstanceOf[`isolate-override`]
   
   @js.native
   sealed trait italic
     extends StObject
-       with _FontFaceFontStyleProperty
-       with _FontStyleProperty
+       with _FontStyle
+       with typings.csstype.mod.AtRule._FontStyle
   inline def italic: italic = "italic".asInstanceOf[italic]
   
   @js.native
@@ -6990,15 +7134,15 @@ object csstypeStrings {
   @js.native
   sealed trait justify
     extends StObject
-       with BoxPackProperty
-       with TextAlignLastProperty
-       with TextAlignProperty
+       with BoxPack
+       with TextAlign
+       with TextAlignLast
   inline def justify: justify = "justify".asInstanceOf[justify]
   
   @js.native
   sealed trait `keep-all`
     extends StObject
-       with WordBreakProperty
+       with WordBreak
   inline def `keep-all`: `keep-all` = "keep-all".asInstanceOf[`keep-all`]
   
   @js.native
@@ -7010,8 +7154,8 @@ object csstypeStrings {
   @js.native
   sealed trait landscape
     extends StObject
-       with ViewportOrientationProperty
-       with _PageSizeProperty[js.Any]
+       with Orientation
+       with _Size[Any]
   inline def landscape: landscape = "landscape".asInstanceOf[landscape]
   
   @js.native
@@ -7023,13 +7167,13 @@ object csstypeStrings {
   @js.native
   sealed trait larger
     extends StObject
-       with _FontSizeProperty[js.Any]
+       with _FontSize[Any]
   inline def larger: larger = "larger".asInstanceOf[larger]
   
   @js.native
   sealed trait last
     extends StObject
-       with _HangingPunctuationProperty
+       with _HangingPunctuation
   inline def last: last = "last".asInstanceOf[last]
   
   @js.native
@@ -7053,57 +7197,69 @@ object csstypeStrings {
   @js.native
   sealed trait layout
     extends StObject
-       with _ContainProperty
+       with _Contain
   inline def layout: layout = "layout".asInstanceOf[layout]
   
   @js.native
   sealed trait `leading-spaces`
     extends StObject
-       with _TextDecorationSkipProperty
+       with _TextDecorationSkip
   inline def `leading-spaces`: `leading-spaces` = "leading-spaces".asInstanceOf[`leading-spaces`]
+  
+  @js.native
+  sealed trait ledger
+    extends StObject
+       with PageSize
+  inline def ledger: ledger = "ledger".asInstanceOf[ledger]
   
   @js.native
   sealed trait left
     extends StObject
-       with BreakAfterProperty
-       with BreakBeforeProperty
-       with ClearProperty
-       with FloatProperty
-       with PageBreakAfterProperty
-       with PageBreakBeforeProperty
-       with TextAlignLastProperty
-       with TextAlignProperty
-       with _AzimuthProperty
-       with _BackgroundPositionXProperty[js.Any]
-       with _BgPosition[js.Any]
-       with _JustifyContentProperty
-       with _JustifyItemsProperty
-       with _JustifySelfProperty
-       with _JustifyTracksProperty
-       with _Position[js.Any]
-       with _TextUnderlinePositionProperty
-       with _TransformOriginProperty[js.Any]
-       with _WebkitBoxReflectProperty[js.Any]
-       with _WebkitMaskPositionXProperty[js.Any]
+       with BreakAfter
+       with BreakBefore
+       with Clear
+       with Float
+       with PageBreakAfter
+       with PageBreakBefore
+       with TextAlign
+       with TextAlignLast
+       with _Azimuth
+       with _BackgroundPositionX[Any]
+       with _BgPosition[Any]
+       with _JustifyContent
+       with _JustifyItems
+       with _JustifySelf
+       with _JustifyTracks
+       with _Position[Any]
+       with _TextUnderlinePosition
+       with _TransformOrigin[Any]
+       with _WebkitBoxReflect[Any]
+       with _WebkitMaskPositionX[Any]
   inline def left: left = "left".asInstanceOf[left]
   
   @js.native
   sealed trait `left-side`
     extends StObject
-       with _AzimuthProperty
+       with _Azimuth
   inline def `left-side`: `left-side` = "left-side".asInstanceOf[`left-side`]
   
   @js.native
   sealed trait leftwards
     extends StObject
-       with _AzimuthProperty
+       with _Azimuth
   inline def leftwards: leftwards = "leftwards".asInstanceOf[leftwards]
   
   @js.native
   sealed trait legacy
     extends StObject
-       with _JustifyItemsProperty
+       with _JustifyItems
   inline def legacy: legacy = "legacy".asInstanceOf[legacy]
+  
+  @js.native
+  sealed trait legal
+    extends StObject
+       with PageSize
+  inline def legal: legal = "legal".asInstanceOf[legal]
   
   @js.native
   sealed trait lemonchiffon
@@ -7112,9 +7268,15 @@ object csstypeStrings {
   inline def lemonchiffon: lemonchiffon = "lemonchiffon".asInstanceOf[lemonchiffon]
   
   @js.native
+  sealed trait letter
+    extends StObject
+       with PageSize
+  inline def letter: letter = "letter".asInstanceOf[letter]
+  
+  @js.native
   sealed trait light
     extends StObject
-       with _ScrollbarColorProperty
+       with _ColorScheme
   inline def light: light = "light".asInstanceOf[light]
   
   @js.native
@@ -7139,13 +7301,13 @@ object csstypeStrings {
   sealed trait lighten
     extends StObject
        with BlendMode
-       with MixBlendModeProperty
+       with MixBlendMode
   inline def lighten: lighten = "lighten".asInstanceOf[lighten]
   
   @js.native
   sealed trait lighter
     extends StObject
-       with _FontWeightProperty
+       with _FontWeight
   inline def lighter: lighter = "lighter".asInstanceOf[lighter]
   
   @js.native
@@ -7235,20 +7397,20 @@ object csstypeStrings {
   @js.native
   sealed trait `line-through`
     extends StObject
-       with _TextDecorationLineProperty
-       with _TextDecorationProperty[js.Any]
+       with _TextDecoration[Any]
+       with _TextDecorationLine
   inline def `line-through`: `line-through` = "line-through".asInstanceOf[`line-through`]
   
   @js.native
   sealed trait linear
     extends StObject
-       with _TimingFunction
+       with _EasingFunction
   inline def linear: linear = "linear".asInstanceOf[linear]
   
   @js.native
   sealed trait linearRGB
     extends StObject
-       with ColorInterpolationProperty
+       with ColorInterpolation
   inline def linearRGB: linearRGB = "linearRGB".asInstanceOf[linearRGB]
   
   @js.native
@@ -7260,31 +7422,31 @@ object csstypeStrings {
   @js.native
   sealed trait `lining-nums`
     extends StObject
-       with _FontFaceFontVariantProperty
-       with _FontVariantNumericProperty
-       with _FontVariantProperty
+       with _FontVariant
+       with typings.csstype.mod.AtRule._FontVariant
+       with _FontVariantNumeric
   inline def `lining-nums`: `lining-nums` = "lining-nums".asInstanceOf[`lining-nums`]
   
   @js.native
   sealed trait `list-item`
     extends StObject
-       with _DisplayProperty
+       with _Display
   inline def `list-item`: `list-item` = "list-item".asInstanceOf[`list-item`]
   
   @js.native
   sealed trait listbox
     extends StObject
-       with AppearanceProperty
+       with Appearance
        with CompatAuto
-       with MozAppearanceProperty
-       with WebkitAppearanceProperty
+       with MozAppearance
+       with WebkitAppearance
   inline def listbox: listbox = "listbox".asInstanceOf[listbox]
   
   @js.native
   sealed trait listitem
     extends StObject
-       with MozAppearanceProperty
-       with WebkitAppearanceProperty
+       with MozAppearance
+       with WebkitAppearance
   inline def listitem: listitem = "listitem".asInstanceOf[listitem]
   
   @js.native
@@ -7296,41 +7458,41 @@ object csstypeStrings {
   @js.native
   sealed trait loose
     extends StObject
-       with LineBreakProperty
+       with LineBreak
   inline def loose: loose = "loose".asInstanceOf[loose]
   
   @js.native
   sealed trait lowercase
     extends StObject
-       with TextTransformProperty
+       with TextTransform
   inline def lowercase: lowercase = "lowercase".asInstanceOf[lowercase]
   
   @js.native
   sealed trait lr
     extends StObject
-       with MsBlockProgressionProperty
+       with MsBlockProgression
   inline def lr: lr = "lr".asInstanceOf[lr]
   
   @js.native
   sealed trait ltr
     extends StObject
-       with DirectionProperty
+       with Direction
   inline def ltr: ltr = "ltr".asInstanceOf[ltr]
   
   @js.native
   sealed trait luminance
     extends StObject
-       with MaskBorderModeProperty
-       with MaskTypeProperty
+       with MaskBorderMode
+       with MaskType
        with MaskingMode
-       with _MaskBorderProperty
+       with _MaskBorder
   inline def luminance: luminance = "luminance".asInstanceOf[luminance]
   
   @js.native
   sealed trait luminosity
     extends StObject
        with BlendMode
-       with MixBlendModeProperty
+       with MixBlendMode
   inline def luminosity: luminosity = "luminosity".asInstanceOf[luminosity]
   
   @js.native
@@ -7342,38 +7504,37 @@ object csstypeStrings {
   @js.native
   sealed trait mandatory
     extends StObject
-       with MsContentZoomSnapTypeProperty
-       with MsScrollSnapTypeProperty
-       with ScrollSnapTypeXProperty
-       with ScrollSnapTypeYProperty
-       with _MsContentZoomSnapProperty
+       with MsContentZoomSnapType
+       with MsScrollSnapType
+       with ScrollSnapTypeX
+       with ScrollSnapTypeY
+       with _MsContentZoomSnap
   inline def mandatory: mandatory = "mandatory".asInstanceOf[mandatory]
   
   @js.native
   sealed trait manipulation
     extends StObject
-       with _TouchActionProperty
+       with _TouchAction
   inline def manipulation: manipulation = "manipulation".asInstanceOf[manipulation]
   
   @js.native
   sealed trait manual
     extends StObject
-       with HyphensProperty
+       with Hyphens
   inline def manual: manual = "manual".asInstanceOf[manual]
   
   @js.native
   sealed trait `margin-box`
     extends StObject
        with GeometryBox
-       with MozFloatEdgeProperty
-       with _MaskOriginProperty
-       with _ShapeOutsideProperty
+       with MozFloatEdge
+       with _ShapeOutside
   inline def `margin-box`: `margin-box` = "margin-box".asInstanceOf[`margin-box`]
   
   @js.native
   sealed trait markers
     extends StObject
-       with _PaintOrderProperty
+       with _PaintOrder
   inline def markers: markers = "markers".asInstanceOf[markers]
   
   @js.native
@@ -7385,7 +7546,7 @@ object csstypeStrings {
   @js.native
   sealed trait `match-parent`
     extends StObject
-       with TextAlignProperty
+       with TextAlign
   inline def `match-parent`: `match-parent` = "match-parent".asInstanceOf[`match-parent`]
   
   @js.native
@@ -7397,149 +7558,149 @@ object csstypeStrings {
   @js.native
   sealed trait mathematical
     extends StObject
-       with AlignmentBaselineProperty
-       with DominantBaselineProperty
+       with AlignmentBaseline
+       with DominantBaseline
   inline def mathematical: mathematical = "mathematical".asInstanceOf[mathematical]
   
   @js.native
   sealed trait `max-content`
     extends StObject
-       with _BlockSizeProperty[js.Any]
-       with _FlexBasisProperty[js.Any]
-       with _FlexProperty[js.Any]
-       with _HeightProperty[js.Any]
-       with _InlineSizeProperty[js.Any]
-       with _MaxBlockSizeProperty[js.Any]
-       with _MaxHeightProperty[js.Any]
-       with _MaxInlineSizeProperty[js.Any]
-       with _MaxWidthProperty[js.Any]
-       with _MinBlockSizeProperty[js.Any]
-       with _MinHeightProperty[js.Any]
-       with _MinInlineSizeProperty[js.Any]
-       with _MinWidthProperty[js.Any]
-       with _TrackBreadth[js.Any]
-       with _WidthProperty[js.Any]
+       with _BlockSize[Any]
+       with _Flex[Any]
+       with _FlexBasis[Any]
+       with _Height[Any]
+       with _InlineSize[Any]
+       with _MaxBlockSize[Any]
+       with _MaxHeight[Any]
+       with _MaxInlineSize[Any]
+       with _MaxWidth[Any]
+       with _MinBlockSize[Any]
+       with _MinHeight[Any]
+       with _MinInlineSize[Any]
+       with _MinWidth[Any]
+       with _TrackBreadth[Any]
+       with _Width[Any]
   inline def `max-content`: `max-content` = "max-content".asInstanceOf[`max-content`]
   
   @js.native
   sealed trait maximum
     extends StObject
-       with MsWrapFlowProperty
+       with MsWrapFlow
   inline def maximum: maximum = "maximum".asInstanceOf[maximum]
   
   @js.native
   sealed trait `media-controls-background`
     extends StObject
-       with WebkitAppearanceProperty
+       with WebkitAppearance
   inline def `media-controls-background`: `media-controls-background` = "media-controls-background".asInstanceOf[`media-controls-background`]
   
   @js.native
   sealed trait `media-controls-fullscreen-background`
     extends StObject
-       with WebkitAppearanceProperty
+       with WebkitAppearance
   inline def `media-controls-fullscreen-background`: `media-controls-fullscreen-background` = "media-controls-fullscreen-background".asInstanceOf[`media-controls-fullscreen-background`]
   
   @js.native
   sealed trait `media-current-time-display`
     extends StObject
-       with WebkitAppearanceProperty
+       with WebkitAppearance
   inline def `media-current-time-display`: `media-current-time-display` = "media-current-time-display".asInstanceOf[`media-current-time-display`]
   
   @js.native
   sealed trait `media-enter-fullscreen-button`
     extends StObject
-       with WebkitAppearanceProperty
+       with WebkitAppearance
   inline def `media-enter-fullscreen-button`: `media-enter-fullscreen-button` = "media-enter-fullscreen-button".asInstanceOf[`media-enter-fullscreen-button`]
   
   @js.native
   sealed trait `media-exit-fullscreen-button`
     extends StObject
-       with WebkitAppearanceProperty
+       with WebkitAppearance
   inline def `media-exit-fullscreen-button`: `media-exit-fullscreen-button` = "media-exit-fullscreen-button".asInstanceOf[`media-exit-fullscreen-button`]
   
   @js.native
   sealed trait `media-fullscreen-button`
     extends StObject
-       with WebkitAppearanceProperty
+       with WebkitAppearance
   inline def `media-fullscreen-button`: `media-fullscreen-button` = "media-fullscreen-button".asInstanceOf[`media-fullscreen-button`]
   
   @js.native
   sealed trait `media-mute-button`
     extends StObject
-       with WebkitAppearanceProperty
+       with WebkitAppearance
   inline def `media-mute-button`: `media-mute-button` = "media-mute-button".asInstanceOf[`media-mute-button`]
   
   @js.native
   sealed trait `media-overlay-play-button`
     extends StObject
-       with WebkitAppearanceProperty
+       with WebkitAppearance
   inline def `media-overlay-play-button`: `media-overlay-play-button` = "media-overlay-play-button".asInstanceOf[`media-overlay-play-button`]
   
   @js.native
   sealed trait `media-play-button`
     extends StObject
-       with WebkitAppearanceProperty
+       with WebkitAppearance
   inline def `media-play-button`: `media-play-button` = "media-play-button".asInstanceOf[`media-play-button`]
   
   @js.native
   sealed trait `media-seek-back-button`
     extends StObject
-       with WebkitAppearanceProperty
+       with WebkitAppearance
   inline def `media-seek-back-button`: `media-seek-back-button` = "media-seek-back-button".asInstanceOf[`media-seek-back-button`]
   
   @js.native
   sealed trait `media-seek-forward-button`
     extends StObject
-       with WebkitAppearanceProperty
+       with WebkitAppearance
   inline def `media-seek-forward-button`: `media-seek-forward-button` = "media-seek-forward-button".asInstanceOf[`media-seek-forward-button`]
   
   @js.native
   sealed trait `media-slider`
     extends StObject
-       with WebkitAppearanceProperty
+       with WebkitAppearance
   inline def `media-slider`: `media-slider` = "media-slider".asInstanceOf[`media-slider`]
   
   @js.native
   sealed trait `media-sliderthumb`
     extends StObject
-       with WebkitAppearanceProperty
+       with WebkitAppearance
   inline def `media-sliderthumb`: `media-sliderthumb` = "media-sliderthumb".asInstanceOf[`media-sliderthumb`]
   
   @js.native
   sealed trait `media-time-remaining-display`
     extends StObject
-       with WebkitAppearanceProperty
+       with WebkitAppearance
   inline def `media-time-remaining-display`: `media-time-remaining-display` = "media-time-remaining-display".asInstanceOf[`media-time-remaining-display`]
   
   @js.native
   sealed trait `media-toggle-closed-captions-button`
     extends StObject
-       with WebkitAppearanceProperty
+       with WebkitAppearance
   inline def `media-toggle-closed-captions-button`: `media-toggle-closed-captions-button` = "media-toggle-closed-captions-button".asInstanceOf[`media-toggle-closed-captions-button`]
   
   @js.native
   sealed trait `media-volume-slider`
     extends StObject
-       with WebkitAppearanceProperty
+       with WebkitAppearance
   inline def `media-volume-slider`: `media-volume-slider` = "media-volume-slider".asInstanceOf[`media-volume-slider`]
   
   @js.native
   sealed trait `media-volume-slider-container`
     extends StObject
-       with WebkitAppearanceProperty
+       with WebkitAppearance
   inline def `media-volume-slider-container`: `media-volume-slider-container` = "media-volume-slider-container".asInstanceOf[`media-volume-slider-container`]
   
   @js.native
   sealed trait `media-volume-sliderthumb`
     extends StObject
-       with WebkitAppearanceProperty
+       with WebkitAppearance
   inline def `media-volume-sliderthumb`: `media-volume-sliderthumb` = "media-volume-sliderthumb".asInstanceOf[`media-volume-sliderthumb`]
   
   @js.native
   sealed trait medium
     extends StObject
        with AbsoluteSize
-       with _LineWidth[js.Any]
+       with _LineWidth[Any]
   inline def medium: medium = "medium".asInstanceOf[medium]
   
   @js.native
@@ -7599,128 +7760,128 @@ object csstypeStrings {
   @js.native
   sealed trait menu_
     extends StObject
-       with MozWindowShadowProperty
-       with _FontProperty
+       with MozWindowShadow
+       with _Font
   inline def menu_ : menu_ = "menu".asInstanceOf[menu_]
   
   @js.native
   sealed trait menuarrow
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def menuarrow: menuarrow = "menuarrow".asInstanceOf[menuarrow]
   
   @js.native
   sealed trait menubar
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def menubar: menubar = "menubar".asInstanceOf[menubar]
   
   @js.native
   sealed trait menucheckbox
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def menucheckbox: menucheckbox = "menucheckbox".asInstanceOf[menucheckbox]
   
   @js.native
   sealed trait menuimage
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def menuimage: menuimage = "menuimage".asInstanceOf[menuimage]
   
   @js.native
   sealed trait menuitem
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def menuitem: menuitem = "menuitem".asInstanceOf[menuitem]
   
   @js.native
   sealed trait menuitemtext
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def menuitemtext: menuitemtext = "menuitemtext".asInstanceOf[menuitemtext]
   
   @js.native
   sealed trait menulist
     extends StObject
-       with AppearanceProperty
+       with Appearance
        with CompatAuto
-       with MozAppearanceProperty
-       with WebkitAppearanceProperty
+       with MozAppearance
+       with WebkitAppearance
   inline def menulist: menulist = "menulist".asInstanceOf[menulist]
   
   @js.native
   sealed trait `menulist-button`
     extends StObject
-       with AppearanceProperty
-       with MozAppearanceProperty
-       with WebkitAppearanceProperty
+       with Appearance
+       with MozAppearance
+       with WebkitAppearance
   inline def `menulist-button`: `menulist-button` = "menulist-button".asInstanceOf[`menulist-button`]
   
   @js.native
   sealed trait `menulist-text`
     extends StObject
-       with MozAppearanceProperty
-       with WebkitAppearanceProperty
+       with MozAppearance
+       with WebkitAppearance
   inline def `menulist-text`: `menulist-text` = "menulist-text".asInstanceOf[`menulist-text`]
   
   @js.native
   sealed trait `menulist-textfield`
     extends StObject
-       with MozAppearanceProperty
-       with WebkitAppearanceProperty
+       with MozAppearance
+       with WebkitAppearance
   inline def `menulist-textfield`: `menulist-textfield` = "menulist-textfield".asInstanceOf[`menulist-textfield`]
   
   @js.native
   sealed trait menupopup
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def menupopup: menupopup = "menupopup".asInstanceOf[menupopup]
   
   @js.native
   sealed trait menuradio
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def menuradio: menuradio = "menuradio".asInstanceOf[menuradio]
   
   @js.native
   sealed trait menuseparator
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def menuseparator: menuseparator = "menuseparator".asInstanceOf[menuseparator]
   
   @js.native
   sealed trait `message-box`
     extends StObject
-       with _FontProperty
+       with _Font
   inline def `message-box`: `message-box` = "message-box".asInstanceOf[`message-box`]
   
   @js.native
   sealed trait meter
     extends StObject
-       with AppearanceProperty
+       with Appearance
        with CompatAuto
-       with WebkitAppearanceProperty
+       with WebkitAppearance
   inline def meter: meter = "meter".asInstanceOf[meter]
   
   @js.native
   sealed trait meterbar
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def meterbar: meterbar = "meterbar".asInstanceOf[meterbar]
   
   @js.native
   sealed trait meterchunk
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def meterchunk: meterchunk = "meterchunk".asInstanceOf[meterchunk]
   
   @js.native
   sealed trait middle
     extends StObject
-       with AlignmentBaselineProperty
-       with DominantBaselineProperty
-       with TextAnchorProperty
-       with _VerticalAlignProperty[js.Any]
+       with AlignmentBaseline
+       with DominantBaseline
+       with TextAnchor
+       with _VerticalAlign[Any]
   inline def middle: middle = "middle".asInstanceOf[middle]
   
   @js.native
@@ -7732,28 +7893,28 @@ object csstypeStrings {
   @js.native
   sealed trait `min-content`
     extends StObject
-       with _BlockSizeProperty[js.Any]
-       with _FlexBasisProperty[js.Any]
-       with _FlexProperty[js.Any]
-       with _HeightProperty[js.Any]
-       with _InlineSizeProperty[js.Any]
-       with _MaxBlockSizeProperty[js.Any]
-       with _MaxHeightProperty[js.Any]
-       with _MaxInlineSizeProperty[js.Any]
-       with _MaxWidthProperty[js.Any]
-       with _MinBlockSizeProperty[js.Any]
-       with _MinHeightProperty[js.Any]
-       with _MinInlineSizeProperty[js.Any]
-       with _MinWidthProperty[js.Any]
-       with _TrackBreadth[js.Any]
-       with _WidthProperty[js.Any]
+       with _BlockSize[Any]
+       with _Flex[Any]
+       with _FlexBasis[Any]
+       with _Height[Any]
+       with _InlineSize[Any]
+       with _MaxBlockSize[Any]
+       with _MaxHeight[Any]
+       with _MaxInlineSize[Any]
+       with _MaxWidth[Any]
+       with _MinBlockSize[Any]
+       with _MinHeight[Any]
+       with _MinInlineSize[Any]
+       with _MinWidth[Any]
+       with _TrackBreadth[Any]
+       with _Width[Any]
   inline def `min-content`: `min-content` = "min-content".asInstanceOf[`min-content`]
   
   @js.native
   sealed trait `min-intrinsic`
     extends StObject
-       with _MinWidthProperty[js.Any]
-       with _WidthProperty[js.Any]
+       with _MinWidth[Any]
+       with _Width[Any]
   inline def `min-intrinsic`: `min-intrinsic` = "min-intrinsic".asInstanceOf[`min-intrinsic`]
   
   @js.native
@@ -7771,13 +7932,13 @@ object csstypeStrings {
   @js.native
   sealed trait miter
     extends StObject
-       with StrokeLinejoinProperty
+       with StrokeLinejoin
   inline def miter: miter = "miter".asInstanceOf[miter]
   
   @js.native
   sealed trait mixed
     extends StObject
-       with TextOrientationProperty
+       with TextOrientation
   inline def mixed: mixed = "mixed".asInstanceOf[mixed]
   
   @js.native
@@ -7795,26 +7956,26 @@ object csstypeStrings {
   @js.native
   sealed trait move
     extends StObject
-       with _CursorProperty
+       with _Cursor
   inline def move: move = "move".asInstanceOf[move]
   
   @js.native
   sealed trait multiple
     extends StObject
-       with BoxLinesProperty
+       with BoxLines
   inline def multiple: multiple = "multiple".asInstanceOf[multiple]
   
   @js.native
   sealed trait multiply
     extends StObject
        with BlendMode
-       with MixBlendModeProperty
+       with MixBlendMode
   inline def multiply: multiply = "multiply".asInstanceOf[multiply]
   
   @js.native
   sealed trait `n-resize`
     extends StObject
-       with _CursorProperty
+       with _Cursor
   inline def `n-resize`: `n-resize` = "n-resize".asInstanceOf[`n-resize`]
   
   @js.native
@@ -7832,38 +7993,32 @@ object csstypeStrings {
   @js.native
   sealed trait `ne-resize`
     extends StObject
-       with _CursorProperty
+       with _Cursor
   inline def `ne-resize`: `ne-resize` = "ne-resize".asInstanceOf[`ne-resize`]
   
   @js.native
   sealed trait `nesw-resize`
     extends StObject
-       with _CursorProperty
+       with _Cursor
   inline def `nesw-resize`: `nesw-resize` = "nesw-resize".asInstanceOf[`nesw-resize`]
   
   @js.native
   sealed trait never
     extends StObject
-       with _FontSmoothProperty[js.Any]
+       with _FontSmooth[Any]
   inline def never: never = "never".asInstanceOf[never]
-  
-  @js.native
-  sealed trait next
-    extends StObject
-       with _MasonryAutoFlowProperty
-  inline def next: next = "next".asInstanceOf[next]
   
   @js.native
   sealed trait `no-change`
     extends StObject
-       with DominantBaselineProperty
+       with DominantBaseline
   inline def `no-change`: `no-change` = "no-change".asInstanceOf[`no-change`]
   
   @js.native
   sealed trait `no-clip`
     extends StObject
-       with _MaskClipProperty
-       with _MaskLayer[js.Any]
+       with _MaskClip
+       with _MaskLayer[Any]
   inline def `no-clip`: `no-clip` = "no-clip".asInstanceOf[`no-clip`]
   
   @js.native
@@ -7875,51 +8030,51 @@ object csstypeStrings {
   @js.native
   sealed trait `no-common-ligatures`
     extends StObject
-       with _FontFaceFontVariantProperty
-       with _FontVariantLigaturesProperty
-       with _FontVariantProperty
+       with _FontVariant
+       with typings.csstype.mod.AtRule._FontVariant
+       with _FontVariantLigatures
   inline def `no-common-ligatures`: `no-common-ligatures` = "no-common-ligatures".asInstanceOf[`no-common-ligatures`]
   
   @js.native
   sealed trait `no-contextual`
     extends StObject
-       with _FontFaceFontVariantProperty
-       with _FontVariantLigaturesProperty
-       with _FontVariantProperty
+       with _FontVariant
+       with typings.csstype.mod.AtRule._FontVariant
+       with _FontVariantLigatures
   inline def `no-contextual`: `no-contextual` = "no-contextual".asInstanceOf[`no-contextual`]
   
   @js.native
   sealed trait `no-discretionary-ligatures`
     extends StObject
-       with _FontFaceFontVariantProperty
-       with _FontVariantLigaturesProperty
-       with _FontVariantProperty
+       with _FontVariant
+       with typings.csstype.mod.AtRule._FontVariant
+       with _FontVariantLigatures
   inline def `no-discretionary-ligatures`: `no-discretionary-ligatures` = "no-discretionary-ligatures".asInstanceOf[`no-discretionary-ligatures`]
   
   @js.native
   sealed trait `no-drag`
     extends StObject
-       with MozWindowDraggingProperty
+       with MozWindowDragging
   inline def `no-drag`: `no-drag` = "no-drag".asInstanceOf[`no-drag`]
   
   @js.native
   sealed trait `no-drop`
     extends StObject
-       with _CursorProperty
+       with _Cursor
   inline def `no-drop`: `no-drop` = "no-drop".asInstanceOf[`no-drop`]
   
   @js.native
   sealed trait `no-historical-ligatures`
     extends StObject
-       with _FontFaceFontVariantProperty
-       with _FontVariantLigaturesProperty
-       with _FontVariantProperty
+       with _FontVariant
+       with typings.csstype.mod.AtRule._FontVariant
+       with _FontVariantLigatures
   inline def `no-historical-ligatures`: `no-historical-ligatures` = "no-historical-ligatures".asInstanceOf[`no-historical-ligatures`]
   
   @js.native
   sealed trait `no-limit`
     extends StObject
-       with _MsHyphenateLimitLinesProperty
+       with _MsHyphenateLimitLines
   inline def `no-limit`: `no-limit` = "no-limit".asInstanceOf[`no-limit`]
   
   @js.native
@@ -7931,284 +8086,290 @@ object csstypeStrings {
   @js.native
   sealed trait `no-repeat`
     extends StObject
-       with WebkitMaskRepeatXProperty
-       with WebkitMaskRepeatYProperty
+       with WebkitMaskRepeatX
+       with WebkitMaskRepeatY
        with _RepeatStyle
   inline def `no-repeat`: `no-repeat` = "no-repeat".asInstanceOf[`no-repeat`]
   
   @js.native
   sealed trait `non-scaling-stroke`
     extends StObject
-       with VectorEffectProperty
+       with VectorEffect
   inline def `non-scaling-stroke`: `non-scaling-stroke` = "non-scaling-stroke".asInstanceOf[`non-scaling-stroke`]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.csstype.mod._AnimationProperty because Already inherited
-  - typings.csstype.mod._SingleAnimation because Already inherited */ @js.native
+  - typings.csstype.mod.Property._Animation because Already inherited
+  - typings.csstype.mod.DataType._SingleAnimation because Already inherited */ @js.native
   sealed trait none
     extends StObject
-       with AppearanceProperty
-       with BorderBlockEndStyleProperty
-       with BorderBlockStartStyleProperty
-       with BorderBlockStyleProperty
-       with BorderBottomStyleProperty
-       with BorderInlineEndStyleProperty
-       with BorderInlineStartStyleProperty
-       with BorderInlineStyleProperty
-       with BorderLeftStyleProperty
-       with BorderRightStyleProperty
-       with BorderTopStyleProperty
-       with ClearProperty
-       with ColumnSpanProperty
-       with FloatProperty
-       with FontKerningProperty
-       with FontOpticalSizingProperty
-       with HyphensProperty
+       with Appearance
+       with BorderBlockEndStyle
+       with BorderBlockStartStyle
+       with BorderBlockStyle
+       with BorderBottomStyle
+       with BorderInlineEndStyle
+       with BorderInlineStartStyle
+       with BorderInlineStyle
+       with BorderLeftStyle
+       with BorderRightStyle
+       with BorderTopStyle
+       with Clear
+       with ColumnSpan
+       with Float
+       with FontKerning
+       with FontOpticalSizing
+       with ForcedColorAdjust
+       with Hyphens
+       with InputSecurity
        with LineStyle
-       with MozAppearanceProperty
-       with MozTextBlinkProperty
-       with MozUserFocusProperty
-       with MozUserInputProperty
-       with MozWindowShadowProperty
-       with MsContentZoomChainingProperty
-       with MsContentZoomSnapTypeProperty
-       with MsContentZoomingProperty
-       with MsHighContrastAdjustProperty
-       with MsOverflowStyleProperty
-       with MsScrollChainingProperty
-       with MsScrollRailsProperty
-       with MsScrollSnapTypeProperty
-       with MsScrollTranslationProperty
-       with MsTextAutospaceProperty
-       with MsTouchSelectProperty
-       with MsUserSelectProperty
-       with MsWrapThroughProperty
-       with ObjectFitProperty
-       with OverflowAnchorProperty
-       with OverscrollBehaviorBlockProperty
-       with OverscrollBehaviorInlineProperty
-       with OverscrollBehaviorXProperty
-       with OverscrollBehaviorYProperty
-       with PointerEventsProperty
-       with ResizeProperty
-       with ScrollSnapTypeXProperty
-       with ScrollSnapTypeYProperty
-       with ScrollbarWidthProperty
+       with MozAppearance
+       with MozTextBlink
+       with MozUserFocus
+       with MozUserInput
+       with MozWindowShadow
+       with MsContentZoomChaining
+       with MsContentZoomSnapType
+       with MsContentZooming
+       with MsHighContrastAdjust
+       with MsOverflowStyle
+       with MsScrollChaining
+       with MsScrollRails
+       with MsScrollSnapType
+       with MsScrollTranslation
+       with MsTextAutospace
+       with MsTouchSelect
+       with MsUserSelect
+       with MsWrapThrough
+       with ObjectFit
+       with OverflowAnchor
+       with OverscrollBehaviorBlock
+       with OverscrollBehaviorInline
+       with OverscrollBehaviorX
+       with OverscrollBehaviorY
+       with PointerEvents
+       with Resize
+       with ScrollSnapTypeX
+       with ScrollSnapTypeY
+       with ScrollbarWidth
        with SingleAnimationFillMode
-       with TextDecorationSkipInkProperty
-       with TextJustifyProperty
-       with TextTransformProperty
-       with UserSelectProperty
-       with VectorEffectProperty
-       with WebkitAppearanceProperty
-       with WebkitTouchCalloutProperty
-       with _AnimationNameProperty
-       with _BackdropFilterProperty
-       with _BackgroundImageProperty
-       with _BorderImageProperty
-       with _BorderImageSourceProperty
-       with _BoxShadowProperty
-       with _ClipPathProperty
-       with _ContainProperty
-       with _ContentProperty
-       with _CounterIncrementProperty
-       with _CounterResetProperty
-       with _CounterSetProperty
-       with _CursorProperty
-       with _DisplayProperty
-       with _FilterProperty
-       with _FinalBgLayer[js.Any]
-       with _FlexProperty[js.Any]
-       with _FontFaceFontVariantProperty
-       with _FontSizeAdjustProperty
-       with _FontSynthesisProperty
-       with _FontVariantLigaturesProperty
-       with _FontVariantProperty
-       with _GridProperty
-       with _GridTemplateAreasProperty
-       with _GridTemplateColumnsProperty[js.Any]
-       with _GridTemplateProperty
-       with _GridTemplateRowsProperty[js.Any]
-       with _HangingPunctuationProperty
-       with _LineClampProperty
-       with _ListStyleImageProperty
-       with _ListStyleProperty
-       with _ListStyleTypeProperty
-       with _MarkerEndProperty
-       with _MarkerMidProperty
-       with _MarkerProperty
-       with _MarkerStartProperty
-       with _MaskBorderProperty
-       with _MaskBorderSourceProperty
-       with _MaskImageProperty
-       with _MaskLayer[js.Any]
-       with _MaxBlockSizeProperty[js.Any]
-       with _MaxHeightProperty[js.Any]
-       with _MaxInlineSizeProperty[js.Any]
-       with _MaxLinesProperty
-       with _MaxWidthProperty[js.Any]
-       with _MozBindingProperty
-       with _MozBorderBottomColorsProperty
-       with _MozBorderLeftColorsProperty
-       with _MozBorderRightColorsProperty
-       with _MozBorderTopColorsProperty
-       with _MozContextPropertiesProperty
-       with _MsContentZoomSnapProperty
-       with _MsFlowFromProperty
-       with _MsFlowIntoProperty
-       with _MsGridColumnsProperty[js.Any]
-       with _MsGridRowsProperty[js.Any]
-       with _OffsetPathProperty
-       with _OffsetProperty[js.Any]
-       with _OverscrollBehaviorProperty
+       with TextDecorationSkipInk
+       with TextJustify
+       with TextTransform
+       with UserSelect
+       with VectorEffect
+       with WebkitAppearance
+       with WebkitTouchCallout
+       with _AnimationName
+       with _BackdropFilter
+       with _BackgroundImage
+       with _BorderImage
+       with _BorderImageSource
+       with _BoxShadow
+       with _ClipPath
+       with _Contain
+       with _Content
+       with _CounterIncrement
+       with _CounterReset
+       with _CounterSet
+       with _Cursor
+       with _Display
+       with _Filter
+       with _FinalBgLayer[Any]
+       with _Flex[Any]
+       with _FontSizeAdjust
+       with _FontSynthesis
+       with _FontVariant
+       with typings.csstype.mod.AtRule._FontVariant
+       with _FontVariantLigatures
+       with _Grid
+       with _GridTemplate
+       with _GridTemplateAreas
+       with _GridTemplateColumns[Any]
+       with _GridTemplateRows[Any]
+       with _HangingPunctuation
+       with _LineClamp
+       with _ListStyle
+       with _ListStyleImage
+       with _ListStyleType
+       with _Marker
+       with _MarkerEnd
+       with _MarkerMid
+       with _MarkerStart
+       with _Marks
+       with _MaskBorder
+       with _MaskBorderSource
+       with _MaskImage
+       with _MaskLayer[Any]
+       with _MaxBlockSize[Any]
+       with _MaxHeight[Any]
+       with _MaxInlineSize[Any]
+       with _MaxLines
+       with _MaxWidth[Any]
+       with _MozBinding
+       with _MozBorderBottomColors
+       with _MozBorderLeftColors
+       with _MozBorderRightColors
+       with _MozBorderTopColors
+       with _MozContextProperties
+       with _MsContentZoomSnap
+       with _MsFlowFrom
+       with _MsFlowInto
+       with _MsGridColumns[Any]
+       with _MsGridRows[Any]
+       with _Offset[Any]
+       with _OffsetPath
+       with _OverscrollBehavior
        with _Paint
-       with _PerspectiveProperty[js.Any]
-       with _QuotesProperty
-       with _RotateProperty
-       with _ScaleProperty
-       with _ScrollSnapAlignProperty
-       with _ScrollSnapCoordinateProperty[js.Any]
-       with _ScrollSnapPointsXProperty
-       with _ScrollSnapPointsYProperty
-       with _ScrollSnapTypeProperty
-       with _ShapeOutsideProperty
-       with _SingleTransition
-       with _StrokeDasharrayProperty[js.Any]
-       with _TextCombineUprightProperty
-       with _TextDecorationLineProperty
-       with _TextDecorationProperty[js.Any]
-       with _TextDecorationSkipProperty
-       with _TextEmphasisProperty
-       with _TextEmphasisStyleProperty
-       with _TextShadowProperty
-       with _TextSizeAdjustProperty
-       with _TouchActionProperty
-       with _TransformProperty
-       with _TransitionPropertyProperty
-       with _TranslateProperty[js.Any]
-       with _WebkitLineClampProperty
-       with _WebkitMaskImageProperty
-       with _WebkitMaskProperty[js.Any]
+       with _Perspective[Any]
+       with _Quotes
+       with _Rotate
+       with _Scale
+       with _ScrollSnapAlign
+       with _ScrollSnapCoordinate[Any]
+       with _ScrollSnapPointsX
+       with _ScrollSnapPointsY
+       with _ScrollSnapType
+       with _ShapeOutside
+       with _SingleAnimationTimeline
+       with _SingleTransition[Any]
+       with _StrokeDasharray[Any]
+       with _TextCombineUpright
+       with _TextDecoration[Any]
+       with _TextDecorationLine
+       with _TextDecorationSkip
+       with _TextEmphasis
+       with _TextEmphasisStyle
+       with _TextShadow
+       with _TextSizeAdjust
+       with _TouchAction
+       with _Transform
+       with _TransitionProperty
+       with _Translate[Any]
+       with _WebkitLineClamp
+       with _WebkitMask[Any]
+       with _WebkitMaskImage
   inline def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait nonzero
     extends StObject
-       with ClipRuleProperty
-       with FillRuleProperty
+       with ClipRule
+       with FillRule
   inline def nonzero: nonzero = "nonzero".asInstanceOf[nonzero]
   
   @js.native
   sealed trait normal
     extends StObject
        with BlendMode
-       with BoxDirectionProperty
-       with FontKerningProperty
-       with FontVariantCapsProperty
-       with FontVariantPositionProperty
-       with ImeModeProperty
-       with LineBreakProperty
-       with MathStyleProperty
-       with MixBlendModeProperty
-       with MozUserFocusProperty
-       with OverflowWrapProperty
-       with ScrollSnapStopProperty
+       with BoxDirection
+       with FontKerning
+       with FontVariantCaps
+       with FontVariantPosition
+       with ImeMode
+       with LineBreak
+       with MathShift
+       with MathStyle
+       with MixBlendMode
+       with MozUserFocus
+       with OverflowWrap
+       with ScrollSnapStop
        with SingleAnimationDirection
-       with UnicodeBidiProperty
-       with WhiteSpaceProperty
-       with WordBreakProperty
-       with WordWrapProperty
-       with _AlignContentProperty
-       with _AlignItemsProperty
-       with _AlignSelfProperty
-       with _AlignTracksProperty
-       with _ColumnGapProperty[js.Any]
-       with _ContentProperty
-       with _FontFaceFontStyleProperty
-       with _FontFaceFontVariantProperty
-       with _FontFeatureSettingsProperty
-       with _FontLanguageOverrideProperty
+       with UnicodeBidi
+       with WhiteSpace
+       with WordBreak
+       with WordWrap
+       with _AlignContent
+       with _AlignItems
+       with _AlignSelf
+       with _AlignTracks
+       with _ColorScheme
+       with _ColumnGap[Any]
+       with _Content
+       with _FontFeatureSettings
+       with _FontLanguageOverride
        with _FontStretchAbsolute
-       with _FontStyleProperty
-       with _FontVariantAlternatesProperty
-       with _FontVariantEastAsianProperty
-       with _FontVariantLigaturesProperty
-       with _FontVariantNumericProperty
-       with _FontVariantProperty
-       with _FontVariationSettingsProperty
+       with _FontStyle
+       with typings.csstype.mod.AtRule._FontStyle
+       with _FontVariant
+       with typings.csstype.mod.AtRule._FontVariant
+       with _FontVariantAlternates
+       with _FontVariantEastAsian
+       with _FontVariantLigatures
+       with _FontVariantNumeric
+       with _FontVariationSettings
        with _FontWeightAbsolute
-       with _GapProperty[js.Any]
-       with _InitialLetterProperty
-       with _JustifyContentProperty
-       with _JustifyItemsProperty
-       with _JustifySelfProperty
-       with _JustifyTracksProperty
-       with _LetterSpacingProperty[js.Any]
-       with _LineHeightProperty[js.Any]
-       with _PaintOrderProperty
-       with _PlaceContentProperty
-       with _PlaceItemsProperty
-       with _PlaceSelfProperty
-       with _RowGapProperty[js.Any]
-       with _WordSpacingProperty[js.Any]
-       with _ZoomProperty
+       with _Gap[Any]
+       with _InitialLetter
+       with _JustifyContent
+       with _JustifyItems
+       with _JustifySelf
+       with _JustifyTracks
+       with _LetterSpacing[Any]
+       with _LineHeight[Any]
+       with _PaintOrder
+       with _PlaceContent
+       with _PlaceItems
+       with _PlaceSelf
+       with _RowGap[Any]
+       with _WordSpacing[Any]
+       with _Zoom
   inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
   sealed trait `not-allowed`
     extends StObject
-       with _CursorProperty
+       with _Cursor
   inline def `not-allowed`: `not-allowed` = "not-allowed".asInstanceOf[`not-allowed`]
   
   @js.native
   sealed trait nowrap
     extends StObject
-       with FlexWrapProperty
-       with WhiteSpaceProperty
-       with _FlexFlowProperty
+       with FlexWrap
+       with WhiteSpace
+       with _FlexFlow
   inline def nowrap: nowrap = "nowrap".asInstanceOf[nowrap]
   
   @js.native
   sealed trait `ns-resize`
     extends StObject
-       with _CursorProperty
+       with _Cursor
   inline def `ns-resize`: `ns-resize` = "ns-resize".asInstanceOf[`ns-resize`]
   
   @js.native
   sealed trait numbers
     extends StObject
-       with _CounterStyleSpeakAsProperty
+       with _SpeakAs
   inline def numbers: numbers = "numbers".asInstanceOf[numbers]
   
   @js.native
   sealed trait numeric
     extends StObject
-       with _CounterStyleSystemProperty
+       with _System
   inline def numeric: numeric = "numeric".asInstanceOf[numeric]
   
   @js.native
   sealed trait `nw-resize`
     extends StObject
-       with _CursorProperty
+       with _Cursor
   inline def `nw-resize`: `nw-resize` = "nw-resize".asInstanceOf[`nw-resize`]
   
   @js.native
   sealed trait `nwse-resize`
     extends StObject
-       with _CursorProperty
+       with _Cursor
   inline def `nwse-resize`: `nwse-resize` = "nwse-resize".asInstanceOf[`nwse-resize`]
   
   @js.native
   sealed trait objects
     extends StObject
-       with _TextDecorationSkipProperty
+       with _TextDecorationSkip
   inline def objects: objects = "objects".asInstanceOf[objects]
   
   @js.native
   sealed trait oblique
     extends StObject
-       with _FontFaceFontStyleProperty
-       with _FontStyleProperty
+       with _FontStyle
+       with typings.csstype.mod.AtRule._FontStyle
   inline def oblique: oblique = "oblique".asInstanceOf[oblique]
   
   @js.native
@@ -8220,9 +8381,9 @@ object csstypeStrings {
   @js.native
   sealed trait `oldstyle-nums`
     extends StObject
-       with _FontFaceFontVariantProperty
-       with _FontVariantNumericProperty
-       with _FontVariantProperty
+       with _FontVariant
+       with typings.csstype.mod.AtRule._FontVariant
+       with _FontVariantNumeric
   inline def `oldstyle-nums`: `oldstyle-nums` = "oldstyle-nums".asInstanceOf[`oldstyle-nums`]
   
   @js.native
@@ -8240,8 +8401,8 @@ object csstypeStrings {
   @js.native
   sealed trait open
     extends StObject
-       with _TextEmphasisProperty
-       with _TextEmphasisStyleProperty
+       with _TextEmphasis
+       with _TextEmphasisStyle
   inline def open: open = "open".asInstanceOf[open]
   
   @js.native
@@ -8253,27 +8414,27 @@ object csstypeStrings {
   @js.native
   sealed trait optimizeLegibility
     extends StObject
-       with TextRenderingProperty
+       with TextRendering
   inline def optimizeLegibility: optimizeLegibility = "optimizeLegibility".asInstanceOf[optimizeLegibility]
   
   @js.native
   sealed trait optimizeQuality
     extends StObject
-       with ColorRenderingProperty
+       with ColorRendering
   inline def optimizeQuality: optimizeQuality = "optimizeQuality".asInstanceOf[optimizeQuality]
   
   @js.native
   sealed trait optimizeSpeed
     extends StObject
-       with ColorRenderingProperty
-       with ShapeRenderingProperty
-       with TextRenderingProperty
+       with ColorRendering
+       with ShapeRendering
+       with TextRendering
   inline def optimizeSpeed: optimizeSpeed = "optimizeSpeed".asInstanceOf[optimizeSpeed]
   
   @js.native
   sealed trait optional
     extends StObject
-       with FontFaceFontDisplayProperty
+       with FontDisplay
   inline def optional: optional = "optional".asInstanceOf[optional]
   
   @js.native
@@ -8295,74 +8456,62 @@ object csstypeStrings {
   inline def orchid: orchid = "orchid".asInstanceOf[orchid]
   
   @js.native
-  sealed trait ordered
-    extends StObject
-       with _MasonryAutoFlowProperty
-  inline def ordered: ordered = "ordered".asInstanceOf[ordered]
-  
-  @js.native
   sealed trait ordinal
     extends StObject
-       with _FontFaceFontVariantProperty
-       with _FontVariantNumericProperty
-       with _FontVariantProperty
+       with _FontVariant
+       with typings.csstype.mod.AtRule._FontVariant
+       with _FontVariantNumeric
   inline def ordinal: ordinal = "ordinal".asInstanceOf[ordinal]
   
   @js.native
   sealed trait outset
     extends StObject
-       with BorderBlockEndStyleProperty
-       with BorderBlockStartStyleProperty
-       with BorderBlockStyleProperty
-       with BorderBottomStyleProperty
-       with BorderInlineEndStyleProperty
-       with BorderInlineStartStyleProperty
-       with BorderInlineStyleProperty
-       with BorderLeftStyleProperty
-       with BorderRightStyleProperty
-       with BorderTopStyleProperty
+       with BorderBlockEndStyle
+       with BorderBlockStartStyle
+       with BorderBlockStyle
+       with BorderBottomStyle
+       with BorderInlineEndStyle
+       with BorderInlineStartStyle
+       with BorderInlineStyle
+       with BorderLeftStyle
+       with BorderRightStyle
+       with BorderTopStyle
        with LineStyle
   inline def outset: outset = "outset".asInstanceOf[outset]
   
   @js.native
   sealed trait outside
     extends StObject
-       with ListStylePositionProperty
-       with _ListStyleProperty
+       with ListStylePosition
+       with _ListStyle
   inline def outside: outside = "outside".asInstanceOf[outside]
   
   @js.native
   sealed trait over
     extends StObject
-       with RubyPositionProperty
+       with _RubyPosition
   inline def over: over = "over".asInstanceOf[over]
   
   @js.native
   sealed trait overlay
     extends StObject
        with BlendMode
-       with MixBlendModeProperty
+       with MixBlendMode
   inline def overlay: overlay = "overlay".asInstanceOf[overlay]
   
   @js.native
   sealed trait overline
     extends StObject
-       with _TextDecorationLineProperty
-       with _TextDecorationProperty[js.Any]
+       with _TextDecoration[Any]
+       with _TextDecorationLine
   inline def overline: overline = "overline".asInstanceOf[overline]
-  
-  @js.native
-  sealed trait pack
-    extends StObject
-       with _MasonryAutoFlowProperty
-  inline def pack: pack = "pack".asInstanceOf[pack]
   
   @js.native
   sealed trait padding
     extends StObject
-       with _WebkitMaskClipProperty
-       with _WebkitMaskOriginProperty
-       with _WebkitMaskProperty[js.Any]
+       with _WebkitMask[Any]
+       with _WebkitMaskClip
+       with _WebkitMaskOrigin
   inline def padding: padding = "padding".asInstanceOf[padding]
   
   @js.native
@@ -8370,27 +8519,28 @@ object csstypeStrings {
     extends StObject
        with Box
        with GeometryBox
-       with MozFloatEdgeProperty
-       with OverflowClipBoxProperty
+       with MozFloatEdge
+       with OverflowClipBox
+       with VisualBox
   inline def `padding-box`: `padding-box` = "padding-box".asInstanceOf[`padding-box`]
   
   @js.native
   sealed trait page
     extends StObject
-       with BreakAfterProperty
-       with BreakBeforeProperty
+       with BreakAfter
+       with BreakBefore
   inline def page: page = "page".asInstanceOf[page]
   
   @js.native
   sealed trait paint
     extends StObject
-       with _ContainProperty
+       with _Contain
   inline def paint: paint = "paint".asInstanceOf[paint]
   
   @js.native
   sealed trait painted
     extends StObject
-       with PointerEventsProperty
+       with PointerEvents
   inline def painted: painted = "painted".asInstanceOf[painted]
   
   @js.native
@@ -8420,37 +8570,37 @@ object csstypeStrings {
   @js.native
   sealed trait `pan-down`
     extends StObject
-       with _TouchActionProperty
+       with _TouchAction
   inline def `pan-down`: `pan-down` = "pan-down".asInstanceOf[`pan-down`]
   
   @js.native
   sealed trait `pan-left`
     extends StObject
-       with _TouchActionProperty
+       with _TouchAction
   inline def `pan-left`: `pan-left` = "pan-left".asInstanceOf[`pan-left`]
   
   @js.native
   sealed trait `pan-right`
     extends StObject
-       with _TouchActionProperty
+       with _TouchAction
   inline def `pan-right`: `pan-right` = "pan-right".asInstanceOf[`pan-right`]
   
   @js.native
   sealed trait `pan-up`
     extends StObject
-       with _TouchActionProperty
+       with _TouchAction
   inline def `pan-up`: `pan-up` = "pan-up".asInstanceOf[`pan-up`]
   
   @js.native
   sealed trait `pan-x`
     extends StObject
-       with _TouchActionProperty
+       with _TouchAction
   inline def `pan-x`: `pan-x` = "pan-x".asInstanceOf[`pan-x`]
   
   @js.native
   sealed trait `pan-y`
     extends StObject
-       with _TouchActionProperty
+       with _TouchAction
   inline def `pan-y`: `pan-y` = "pan-y".asInstanceOf[`pan-y`]
   
   @js.native
@@ -8462,8 +8612,8 @@ object csstypeStrings {
   @js.native
   sealed trait paused
     extends StObject
-       with _AnimationPlayStateProperty
-       with _SingleAnimation
+       with _AnimationPlayState
+       with _SingleAnimation[Any]
   inline def paused: paused = "paused".asInstanceOf[paused]
   
   @js.native
@@ -8481,15 +8631,15 @@ object csstypeStrings {
   @js.native
   sealed trait `petite-caps`
     extends StObject
-       with FontVariantCapsProperty
-       with _FontFaceFontVariantProperty
-       with _FontVariantProperty
+       with FontVariantCaps
+       with _FontVariant
+       with typings.csstype.mod.AtRule._FontVariant
   inline def `petite-caps`: `petite-caps` = "petite-caps".asInstanceOf[`petite-caps`]
   
   @js.native
   sealed trait `pinch-zoom`
     extends StObject
-       with _TouchActionProperty
+       with _TouchAction
   inline def `pinch-zoom`: `pinch-zoom` = "pinch-zoom".asInstanceOf[`pinch-zoom`]
   
   @js.native
@@ -8501,13 +8651,13 @@ object csstypeStrings {
   @js.native
   sealed trait pixelated
     extends StObject
-       with ImageRenderingProperty
+       with ImageRendering
   inline def pixelated: pixelated = "pixelated".asInstanceOf[pixelated]
   
   @js.native
   sealed trait plaintext
     extends StObject
-       with UnicodeBidiProperty
+       with UnicodeBidi
   inline def plaintext: plaintext = "plaintext".asInstanceOf[plaintext]
   
   @js.native
@@ -8517,16 +8667,22 @@ object csstypeStrings {
   inline def plum: plum = "plum".asInstanceOf[plum]
   
   @js.native
+  sealed trait `plus-lighter`
+    extends StObject
+       with MixBlendMode
+  inline def `plus-lighter`: `plus-lighter` = "plus-lighter".asInstanceOf[`plus-lighter`]
+  
+  @js.native
   sealed trait pointer
     extends StObject
-       with _CursorProperty
+       with _Cursor
   inline def pointer: pointer = "pointer".asInstanceOf[pointer]
   
   @js.native
   sealed trait portrait
     extends StObject
-       with ViewportOrientationProperty
-       with _PageSizeProperty[js.Any]
+       with Orientation
+       with _Size[Any]
   inline def portrait: portrait = "portrait".asInstanceOf[portrait]
   
   @js.native
@@ -8538,95 +8694,95 @@ object csstypeStrings {
   @js.native
   sealed trait pre
     extends StObject
-       with WhiteSpaceProperty
+       with WhiteSpace
   inline def pre: pre = "pre".asInstanceOf[pre]
   
   @js.native
   sealed trait `pre-line`
     extends StObject
-       with WhiteSpaceProperty
+       with WhiteSpace
   inline def `pre-line`: `pre-line` = "pre-line".asInstanceOf[`pre-line`]
   
   @js.native
   sealed trait `pre-wrap`
     extends StObject
-       with WhiteSpaceProperty
+       with WhiteSpace
   inline def `pre-wrap`: `pre-wrap` = "pre-wrap".asInstanceOf[`pre-wrap`]
   
   @js.native
   sealed trait `preserve-3d`
     extends StObject
-       with TransformStyleProperty
+       with TransformStyle
   inline def `preserve-3d`: `preserve-3d` = "preserve-3d".asInstanceOf[`preserve-3d`]
   
   @js.native
   sealed trait progress
     extends StObject
-       with _CursorProperty
+       with _Cursor
   inline def progress: progress = "progress".asInstanceOf[progress]
   
   @js.native
   sealed trait `progress-bar`
     extends StObject
-       with AppearanceProperty
+       with Appearance
        with CompatAuto
-       with WebkitAppearanceProperty
+       with WebkitAppearance
   inline def `progress-bar`: `progress-bar` = "progress-bar".asInstanceOf[`progress-bar`]
   
   @js.native
   sealed trait `progress-bar-value`
     extends StObject
-       with WebkitAppearanceProperty
+       with WebkitAppearance
   inline def `progress-bar-value`: `progress-bar-value` = "progress-bar-value".asInstanceOf[`progress-bar-value`]
   
   @js.native
   sealed trait progressbar
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def progressbar: progressbar = "progressbar".asInstanceOf[progressbar]
   
   @js.native
   sealed trait `progressbar-vertical`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `progressbar-vertical`: `progressbar-vertical` = "progressbar-vertical".asInstanceOf[`progressbar-vertical`]
   
   @js.native
   sealed trait progresschunk
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def progresschunk: progresschunk = "progresschunk".asInstanceOf[progresschunk]
   
   @js.native
   sealed trait `progresschunk-vertical`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `progresschunk-vertical`: `progresschunk-vertical` = "progresschunk-vertical".asInstanceOf[`progresschunk-vertical`]
   
   @js.native
   sealed trait `proportional-nums`
     extends StObject
-       with _FontFaceFontVariantProperty
-       with _FontVariantNumericProperty
-       with _FontVariantProperty
+       with _FontVariant
+       with typings.csstype.mod.AtRule._FontVariant
+       with _FontVariantNumeric
   inline def `proportional-nums`: `proportional-nums` = "proportional-nums".asInstanceOf[`proportional-nums`]
   
   @js.native
   sealed trait `proportional-width`
     extends StObject
-       with _FontFaceFontVariantProperty
-       with _FontVariantEastAsianProperty
-       with _FontVariantProperty
+       with _FontVariant
+       with typings.csstype.mod.AtRule._FontVariant
+       with _FontVariantEastAsian
   inline def `proportional-width`: `proportional-width` = "proportional-width".asInstanceOf[`proportional-width`]
   
   @js.native
   sealed trait proximity
     extends StObject
-       with MsContentZoomSnapTypeProperty
-       with MsScrollSnapTypeProperty
-       with ScrollSnapTypeXProperty
-       with ScrollSnapTypeYProperty
-       with _MsContentZoomSnapProperty
+       with MsContentZoomSnapType
+       with MsScrollSnapType
+       with ScrollSnapTypeX
+       with ScrollSnapTypeY
+       with _MsContentZoomSnap
   inline def proximity: proximity = "proximity".asInstanceOf[proximity]
   
   @js.native
@@ -8638,74 +8794,74 @@ object csstypeStrings {
   @js.native
   sealed trait `push-button`
     extends StObject
-       with AppearanceProperty
+       with Appearance
        with CompatAuto
-       with WebkitAppearanceProperty
+       with WebkitAppearance
   inline def `push-button`: `push-button` = "push-button".asInstanceOf[`push-button`]
   
   @js.native
   sealed trait radio
     extends StObject
-       with AppearanceProperty
+       with Appearance
        with CompatAuto
-       with MozAppearanceProperty
-       with WebkitAppearanceProperty
+       with MozAppearance
+       with WebkitAppearance
   inline def radio: radio = "radio".asInstanceOf[radio]
   
   @js.native
   sealed trait `radio-container`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `radio-container`: `radio-container` = "radio-container".asInstanceOf[`radio-container`]
   
   @js.native
   sealed trait `radio-label`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `radio-label`: `radio-label` = "radio-label".asInstanceOf[`radio-label`]
   
   @js.native
   sealed trait radiomenuitem
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def radiomenuitem: radiomenuitem = "radiomenuitem".asInstanceOf[radiomenuitem]
   
   @js.native
   sealed trait railed
     extends StObject
-       with MsScrollRailsProperty
+       with MsScrollRails
   inline def railed: railed = "railed".asInstanceOf[railed]
   
   @js.native
   sealed trait range
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def range: range = "range".asInstanceOf[range]
   
   @js.native
   sealed trait `range-thumb`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `range-thumb`: `range-thumb` = "range-thumb".asInstanceOf[`range-thumb`]
   
   @js.native
   sealed trait `read-only`
     extends StObject
-       with MozUserModifyProperty
-       with WebkitUserModifyProperty
+       with MozUserModify
+       with WebkitUserModify
   inline def `read-only`: `read-only` = "read-only".asInstanceOf[`read-only`]
   
   @js.native
   sealed trait `read-write`
     extends StObject
-       with MozUserModifyProperty
-       with WebkitUserModifyProperty
+       with MozUserModify
+       with WebkitUserModify
   inline def `read-write`: `read-write` = "read-write".asInstanceOf[`read-write`]
   
   @js.native
   sealed trait `read-write-plaintext-only`
     extends StObject
-       with WebkitUserModifyProperty
+       with WebkitUserModify
   inline def `read-write-plaintext-only`: `read-write-plaintext-only` = "read-write-plaintext-only".asInstanceOf[`read-write-plaintext-only`]
   
   @js.native
@@ -8717,10 +8873,10 @@ object csstypeStrings {
   @js.native
   sealed trait recto
     extends StObject
-       with BreakAfterProperty
-       with BreakBeforeProperty
-       with PageBreakAfterProperty
-       with PageBreakBeforeProperty
+       with BreakAfter
+       with BreakBefore
+       with PageBreakAfter
+       with PageBreakBefore
   inline def recto: recto = "recto".asInstanceOf[recto]
   
   @js.native
@@ -8732,25 +8888,25 @@ object csstypeStrings {
   @js.native
   sealed trait region
     extends StObject
-       with BreakAfterProperty
-       with BreakBeforeProperty
+       with BreakAfter
+       with BreakBefore
   inline def region: region = "region".asInstanceOf[region]
   
   @js.native
   sealed trait relative
     extends StObject
-       with PositionProperty
+       with Position
   inline def relative: relative = "relative".asInstanceOf[relative]
   
   @js.native
   sealed trait repeat
     extends StObject
-       with WebkitMaskRepeatXProperty
-       with WebkitMaskRepeatYProperty
-       with _BorderImageProperty
-       with _BorderImageRepeatProperty
-       with _MaskBorderProperty
-       with _MaskBorderRepeatProperty
+       with WebkitMaskRepeatX
+       with WebkitMaskRepeatY
+       with _BorderImage
+       with _BorderImageRepeat
+       with _MaskBorder
+       with _MaskBorderRepeat
        with _RepeatStyle
   inline def repeat: repeat = "repeat".asInstanceOf[repeat]
   
@@ -8769,233 +8925,380 @@ object csstypeStrings {
   @js.native
   sealed trait reset
     extends StObject
-       with _ZoomProperty
+       with _Zoom
   inline def reset: reset = "reset".asInstanceOf[reset]
   
   @js.native
   sealed trait `reset-size`
     extends StObject
-       with DominantBaselineProperty
+       with DominantBaseline
   inline def `reset-size`: `reset-size` = "reset-size".asInstanceOf[`reset-size`]
   
   @js.native
   sealed trait resizer
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def resizer: resizer = "resizer".asInstanceOf[resizer]
   
   @js.native
   sealed trait resizerpanel
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def resizerpanel: resizerpanel = "resizerpanel".asInstanceOf[resizerpanel]
   
   @js.native
   sealed trait reverse
     extends StObject
-       with BoxDirectionProperty
+       with BoxDirection
        with SingleAnimationDirection
-       with _OffsetRotateProperty
+       with _OffsetRotate
   inline def reverse: reverse = "reverse".asInstanceOf[reverse]
   
   @js.native
   sealed trait revert
     extends StObject
-       with AlignmentBaselineProperty
-       with AppearanceProperty
-       with BackfaceVisibilityProperty
-       with BorderBlockEndStyleProperty
-       with BorderBlockStartStyleProperty
-       with BorderBlockStyleProperty
-       with BorderBottomStyleProperty
-       with BorderCollapseProperty
-       with BorderInlineEndStyleProperty
-       with BorderInlineStartStyleProperty
-       with BorderInlineStyleProperty
-       with BorderLeftStyleProperty
-       with BorderRightStyleProperty
-       with BorderTopStyleProperty
-       with BoxAlignProperty
-       with BoxDecorationBreakProperty
-       with BoxDirectionProperty
-       with BoxLinesProperty
-       with BoxOrientProperty
-       with BoxPackProperty
-       with BoxSizingProperty
-       with BreakAfterProperty
-       with BreakBeforeProperty
-       with BreakInsideProperty
-       with CaptionSideProperty
-       with ClearProperty
-       with ClipRuleProperty
-       with ColorAdjustProperty
-       with ColorInterpolationProperty
-       with ColorRenderingProperty
-       with ColumnFillProperty
-       with ColumnSpanProperty
-       with DirectionProperty
-       with DominantBaselineProperty
-       with EmptyCellsProperty
-       with FillRuleProperty
-       with FlexDirectionProperty
-       with FlexWrapProperty
-       with FloatProperty
-       with FontKerningProperty
-       with FontOpticalSizingProperty
-       with FontVariantCapsProperty
-       with FontVariantPositionProperty
+       with AlignmentBaseline
+       with Appearance
+       with BackfaceVisibility
+       with BorderBlockEndStyle
+       with BorderBlockStartStyle
+       with BorderBlockStyle
+       with BorderBottomStyle
+       with BorderCollapse
+       with BorderInlineEndStyle
+       with BorderInlineStartStyle
+       with BorderInlineStyle
+       with BorderLeftStyle
+       with BorderRightStyle
+       with BorderTopStyle
+       with BoxAlign
+       with BoxDecorationBreak
+       with BoxDirection
+       with BoxLines
+       with BoxOrient
+       with BoxPack
+       with BoxSizing
+       with BreakAfter
+       with BreakBefore
+       with BreakInside
+       with CaptionSide
+       with Clear
+       with ClipRule
+       with ColorInterpolation
+       with ColorRendering
+       with ColumnFill
+       with ColumnSpan
+       with ContentVisibility
+       with Direction
+       with DominantBaseline
+       with EmptyCells
+       with FillRule
+       with FlexDirection
+       with FlexWrap
+       with Float
+       with FontKerning
+       with FontOpticalSizing
+       with FontVariantCaps
+       with FontVariantPosition
+       with ForcedColorAdjust
        with Globals
-       with HyphensProperty
-       with ImageRenderingProperty
-       with ImeModeProperty
-       with IsolationProperty
-       with LineBreakProperty
-       with ListStylePositionProperty
-       with MaskBorderModeProperty
-       with MaskTypeProperty
-       with MathStyleProperty
-       with MixBlendModeProperty
-       with MozAppearanceProperty
-       with MozFloatEdgeProperty
-       with MozOrientProperty
-       with MozStackSizingProperty
-       with MozTextBlinkProperty
-       with MozUserFocusProperty
-       with MozUserInputProperty
-       with MozUserModifyProperty
-       with MozWindowDraggingProperty
-       with MozWindowShadowProperty
-       with MsAcceleratorProperty
-       with MsBlockProgressionProperty
-       with MsContentZoomChainingProperty
-       with MsContentZoomSnapTypeProperty
-       with MsContentZoomingProperty
-       with MsHighContrastAdjustProperty
-       with MsImeAlignProperty
-       with MsOverflowStyleProperty
-       with MsScrollChainingProperty
-       with MsScrollRailsProperty
-       with MsScrollSnapTypeProperty
-       with MsScrollTranslationProperty
-       with MsTextAutospaceProperty
-       with MsTouchSelectProperty
-       with MsUserSelectProperty
-       with MsWrapFlowProperty
-       with MsWrapThroughProperty
-       with ObjectFitProperty
-       with OverflowAnchorProperty
-       with OverflowBlockProperty
-       with OverflowClipBoxProperty
-       with OverflowInlineProperty
-       with OverflowWrapProperty
-       with OverflowXProperty
-       with OverflowYProperty
-       with OverscrollBehaviorBlockProperty
-       with OverscrollBehaviorInlineProperty
-       with OverscrollBehaviorXProperty
-       with OverscrollBehaviorYProperty
-       with PageBreakAfterProperty
-       with PageBreakBeforeProperty
-       with PageBreakInsideProperty
-       with PointerEventsProperty
-       with PositionProperty
-       with ResizeProperty
-       with RubyAlignProperty
-       with RubyMergeProperty
-       with RubyPositionProperty
-       with ScrollBehaviorProperty
-       with ScrollSnapStopProperty
-       with ScrollSnapTypeXProperty
-       with ScrollSnapTypeYProperty
-       with ScrollbarWidthProperty
-       with ShapeRenderingProperty
-       with StrokeLinecapProperty
-       with StrokeLinejoinProperty
-       with TableLayoutProperty
-       with TextAlignLastProperty
-       with TextAlignProperty
-       with TextAnchorProperty
-       with TextDecorationSkipInkProperty
-       with TextDecorationStyleProperty
-       with TextJustifyProperty
-       with TextOrientationProperty
-       with TextRenderingProperty
-       with TextTransformProperty
-       with TransformBoxProperty
-       with TransformStyleProperty
-       with UnicodeBidiProperty
-       with UserSelectProperty
-       with VectorEffectProperty
-       with VisibilityProperty
-       with WebkitAppearanceProperty
-       with WebkitMaskRepeatXProperty
-       with WebkitMaskRepeatYProperty
-       with WebkitOverflowScrollingProperty
-       with WebkitTouchCalloutProperty
-       with WebkitUserModifyProperty
-       with WhiteSpaceProperty
-       with WordBreakProperty
-       with WordWrapProperty
-       with WritingModeProperty
+       with Hyphens
+       with ImageRendering
+       with ImeMode
+       with InputSecurity
+       with Isolation
+       with LineBreak
+       with ListStylePosition
+       with MaskBorderMode
+       with MaskType
+       with MathShift
+       with MathStyle
+       with MixBlendMode
+       with MozAppearance
+       with MozFloatEdge
+       with MozOrient
+       with MozStackSizing
+       with MozTextBlink
+       with MozUserFocus
+       with MozUserInput
+       with MozUserModify
+       with MozWindowDragging
+       with MozWindowShadow
+       with MsAccelerator
+       with MsBlockProgression
+       with MsContentZoomChaining
+       with MsContentZoomSnapType
+       with MsContentZooming
+       with MsHighContrastAdjust
+       with MsImeAlign
+       with MsOverflowStyle
+       with MsScrollChaining
+       with MsScrollRails
+       with MsScrollSnapType
+       with MsScrollTranslation
+       with MsTextAutospace
+       with MsTouchSelect
+       with MsUserSelect
+       with MsWrapFlow
+       with MsWrapThrough
+       with ObjectFit
+       with OverflowAnchor
+       with OverflowBlock
+       with OverflowClipBox
+       with OverflowInline
+       with OverflowWrap
+       with OverflowX
+       with OverflowY
+       with OverscrollBehaviorBlock
+       with OverscrollBehaviorInline
+       with OverscrollBehaviorX
+       with OverscrollBehaviorY
+       with PageBreakAfter
+       with PageBreakBefore
+       with PageBreakInside
+       with PointerEvents
+       with Position
+       with PrintColorAdjust
+       with Resize
+       with RubyAlign
+       with RubyMerge
+       with ScrollBehavior
+       with ScrollSnapStop
+       with ScrollSnapTypeX
+       with ScrollSnapTypeY
+       with ScrollbarWidth
+       with ShapeRendering
+       with StrokeLinecap
+       with StrokeLinejoin
+       with TableLayout
+       with TextAlign
+       with TextAlignLast
+       with TextAnchor
+       with TextDecorationSkipInk
+       with TextDecorationStyle
+       with TextJustify
+       with TextOrientation
+       with TextRendering
+       with TextTransform
+       with TransformBox
+       with TransformStyle
+       with UnicodeBidi
+       with UserSelect
+       with VectorEffect
+       with Visibility
+       with WebkitAppearance
+       with WebkitMaskRepeatX
+       with WebkitMaskRepeatY
+       with WebkitOverflowScrolling
+       with WebkitTouchCallout
+       with WebkitUserModify
+       with WhiteSpace
+       with WordBreak
+       with WordWrap
+       with WritingMode
   inline def revert: revert = "revert".asInstanceOf[revert]
+  
+  @js.native
+  sealed trait `revert-layer`
+    extends StObject
+       with AlignmentBaseline
+       with Appearance
+       with BackfaceVisibility
+       with BorderBlockEndStyle
+       with BorderBlockStartStyle
+       with BorderBlockStyle
+       with BorderBottomStyle
+       with BorderCollapse
+       with BorderInlineEndStyle
+       with BorderInlineStartStyle
+       with BorderInlineStyle
+       with BorderLeftStyle
+       with BorderRightStyle
+       with BorderTopStyle
+       with BoxAlign
+       with BoxDecorationBreak
+       with BoxDirection
+       with BoxLines
+       with BoxOrient
+       with BoxPack
+       with BoxSizing
+       with BreakAfter
+       with BreakBefore
+       with BreakInside
+       with CaptionSide
+       with Clear
+       with ClipRule
+       with ColorInterpolation
+       with ColorRendering
+       with ColumnFill
+       with ColumnSpan
+       with ContentVisibility
+       with Direction
+       with DominantBaseline
+       with EmptyCells
+       with FillRule
+       with FlexDirection
+       with FlexWrap
+       with Float
+       with FontKerning
+       with FontOpticalSizing
+       with FontVariantCaps
+       with FontVariantPosition
+       with ForcedColorAdjust
+       with Globals
+       with Hyphens
+       with ImageRendering
+       with ImeMode
+       with InputSecurity
+       with Isolation
+       with LineBreak
+       with ListStylePosition
+       with MaskBorderMode
+       with MaskType
+       with MathShift
+       with MathStyle
+       with MixBlendMode
+       with MozAppearance
+       with MozFloatEdge
+       with MozOrient
+       with MozStackSizing
+       with MozTextBlink
+       with MozUserFocus
+       with MozUserInput
+       with MozUserModify
+       with MozWindowDragging
+       with MozWindowShadow
+       with MsAccelerator
+       with MsBlockProgression
+       with MsContentZoomChaining
+       with MsContentZoomSnapType
+       with MsContentZooming
+       with MsHighContrastAdjust
+       with MsImeAlign
+       with MsOverflowStyle
+       with MsScrollChaining
+       with MsScrollRails
+       with MsScrollSnapType
+       with MsScrollTranslation
+       with MsTextAutospace
+       with MsTouchSelect
+       with MsUserSelect
+       with MsWrapFlow
+       with MsWrapThrough
+       with ObjectFit
+       with OverflowAnchor
+       with OverflowBlock
+       with OverflowClipBox
+       with OverflowInline
+       with OverflowWrap
+       with OverflowX
+       with OverflowY
+       with OverscrollBehaviorBlock
+       with OverscrollBehaviorInline
+       with OverscrollBehaviorX
+       with OverscrollBehaviorY
+       with PageBreakAfter
+       with PageBreakBefore
+       with PageBreakInside
+       with PointerEvents
+       with Position
+       with PrintColorAdjust
+       with Resize
+       with RubyAlign
+       with RubyMerge
+       with ScrollBehavior
+       with ScrollSnapStop
+       with ScrollSnapTypeX
+       with ScrollSnapTypeY
+       with ScrollbarWidth
+       with ShapeRendering
+       with StrokeLinecap
+       with StrokeLinejoin
+       with TableLayout
+       with TextAlign
+       with TextAlignLast
+       with TextAnchor
+       with TextDecorationSkipInk
+       with TextDecorationStyle
+       with TextJustify
+       with TextOrientation
+       with TextRendering
+       with TextTransform
+       with TransformBox
+       with TransformStyle
+       with UnicodeBidi
+       with UserSelect
+       with VectorEffect
+       with Visibility
+       with WebkitAppearance
+       with WebkitMaskRepeatX
+       with WebkitMaskRepeatY
+       with WebkitOverflowScrolling
+       with WebkitTouchCallout
+       with WebkitUserModify
+       with WhiteSpace
+       with WordBreak
+       with WordWrap
+       with WritingMode
+  inline def `revert-layer`: `revert-layer` = "revert-layer".asInstanceOf[`revert-layer`]
   
   @js.native
   sealed trait ridge
     extends StObject
-       with BorderBlockEndStyleProperty
-       with BorderBlockStartStyleProperty
-       with BorderBlockStyleProperty
-       with BorderBottomStyleProperty
-       with BorderInlineEndStyleProperty
-       with BorderInlineStartStyleProperty
-       with BorderInlineStyleProperty
-       with BorderLeftStyleProperty
-       with BorderRightStyleProperty
-       with BorderTopStyleProperty
+       with BorderBlockEndStyle
+       with BorderBlockStartStyle
+       with BorderBlockStyle
+       with BorderBottomStyle
+       with BorderInlineEndStyle
+       with BorderInlineStartStyle
+       with BorderInlineStyle
+       with BorderLeftStyle
+       with BorderRightStyle
+       with BorderTopStyle
        with LineStyle
   inline def ridge: ridge = "ridge".asInstanceOf[ridge]
   
   @js.native
   sealed trait right
     extends StObject
-       with BreakAfterProperty
-       with BreakBeforeProperty
-       with ClearProperty
-       with FloatProperty
-       with PageBreakAfterProperty
-       with PageBreakBeforeProperty
-       with TextAlignLastProperty
-       with TextAlignProperty
-       with _AzimuthProperty
-       with _BackgroundPositionXProperty[js.Any]
-       with _BgPosition[js.Any]
-       with _JustifyContentProperty
-       with _JustifyItemsProperty
-       with _JustifySelfProperty
-       with _JustifyTracksProperty
-       with _Position[js.Any]
-       with _TextUnderlinePositionProperty
-       with _TransformOriginProperty[js.Any]
-       with _WebkitBoxReflectProperty[js.Any]
-       with _WebkitMaskPositionXProperty[js.Any]
+       with BreakAfter
+       with BreakBefore
+       with Clear
+       with Float
+       with PageBreakAfter
+       with PageBreakBefore
+       with TextAlign
+       with TextAlignLast
+       with _Azimuth
+       with _BackgroundPositionX[Any]
+       with _BgPosition[Any]
+       with _JustifyContent
+       with _JustifyItems
+       with _JustifySelf
+       with _JustifyTracks
+       with _Position[Any]
+       with _TextUnderlinePosition
+       with _TransformOrigin[Any]
+       with _WebkitBoxReflect[Any]
+       with _WebkitMaskPositionX[Any]
   inline def right: right = "right".asInstanceOf[right]
   
   @js.native
   sealed trait `right-side`
     extends StObject
-       with _AzimuthProperty
+       with _Azimuth
   inline def `right-side`: `right-side` = "right-side".asInstanceOf[`right-side`]
   
   @js.native
   sealed trait rightwards
     extends StObject
-       with _AzimuthProperty
+       with _Azimuth
   inline def rightwards: rightwards = "rightwards".asInstanceOf[rightwards]
   
   @js.native
   sealed trait rl
     extends StObject
-       with MsBlockProgressionProperty
+       with MsBlockProgression
   inline def rl: rl = "rl".asInstanceOf[rl]
   
   @js.native
@@ -9007,36 +9310,36 @@ object csstypeStrings {
   @js.native
   sealed trait round
     extends StObject
-       with StrokeLinecapProperty
-       with StrokeLinejoinProperty
-       with WebkitMaskRepeatXProperty
-       with WebkitMaskRepeatYProperty
-       with _BorderImageProperty
-       with _BorderImageRepeatProperty
-       with _MaskBorderProperty
-       with _MaskBorderRepeatProperty
+       with StrokeLinecap
+       with StrokeLinejoin
+       with WebkitMaskRepeatX
+       with WebkitMaskRepeatY
+       with _BorderImage
+       with _BorderImageRepeat
+       with _MaskBorder
+       with _MaskBorderRepeat
        with _RepeatStyle
   inline def round: round = "round".asInstanceOf[round]
   
   @js.native
   sealed trait row
     extends StObject
-       with FlexDirectionProperty
-       with _FlexFlowProperty
-       with _GridAutoFlowProperty
+       with FlexDirection
+       with _FlexFlow
+       with _GridAutoFlow
   inline def row: row = "row".asInstanceOf[row]
   
   @js.native
   sealed trait `row-resize`
     extends StObject
-       with _CursorProperty
+       with _Cursor
   inline def `row-resize`: `row-resize` = "row-resize".asInstanceOf[`row-resize`]
   
   @js.native
   sealed trait `row-reverse`
     extends StObject
-       with FlexDirectionProperty
-       with _FlexFlowProperty
+       with FlexDirection
+       with _FlexFlow
   inline def `row-reverse`: `row-reverse` = "row-reverse".asInstanceOf[`row-reverse`]
   
   @js.native
@@ -9048,16 +9351,16 @@ object csstypeStrings {
   @js.native
   sealed trait rtl
     extends StObject
-       with DirectionProperty
+       with Direction
   inline def rtl: rtl = "rtl".asInstanceOf[rtl]
   
   @js.native
   sealed trait ruby
     extends StObject
        with DisplayInside
-       with _FontFaceFontVariantProperty
-       with _FontVariantEastAsianProperty
-       with _FontVariantProperty
+       with _FontVariant
+       with typings.csstype.mod.AtRule._FontVariant
+       with _FontVariantEastAsian
   inline def ruby: ruby = "ruby".asInstanceOf[ruby]
   
   @js.native
@@ -9093,20 +9396,20 @@ object csstypeStrings {
   @js.native
   sealed trait running
     extends StObject
-       with _AnimationPlayStateProperty
-       with _SingleAnimation
+       with _AnimationPlayState
+       with _SingleAnimation[Any]
   inline def running: running = "running".asInstanceOf[running]
   
   @js.native
   sealed trait `s-resize`
     extends StObject
-       with _CursorProperty
+       with _Cursor
   inline def `s-resize`: `s-resize` = "s-resize".asInstanceOf[`s-resize`]
   
   @js.native
   sealed trait sRGB
     extends StObject
-       with ColorInterpolationProperty
+       with ColorInterpolation
   inline def sRGB: sRGB = "sRGB".asInstanceOf[sRGB]
   
   @js.native
@@ -9137,73 +9440,73 @@ object csstypeStrings {
   sealed trait saturation
     extends StObject
        with BlendMode
-       with MixBlendModeProperty
+       with MixBlendMode
   inline def saturation: saturation = "saturation".asInstanceOf[saturation]
   
   @js.native
   sealed trait `scale-down`
     extends StObject
-       with ObjectFitProperty
+       with ObjectFit
   inline def `scale-down`: `scale-down` = "scale-down".asInstanceOf[`scale-down`]
   
   @js.native
   sealed trait `scale-horizontal`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `scale-horizontal`: `scale-horizontal` = "scale-horizontal".asInstanceOf[`scale-horizontal`]
   
   @js.native
   sealed trait `scale-vertical`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `scale-vertical`: `scale-vertical` = "scale-vertical".asInstanceOf[`scale-vertical`]
   
   @js.native
   sealed trait `scalethumb-horizontal`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `scalethumb-horizontal`: `scalethumb-horizontal` = "scalethumb-horizontal".asInstanceOf[`scalethumb-horizontal`]
   
   @js.native
   sealed trait `scalethumb-vertical`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `scalethumb-vertical`: `scalethumb-vertical` = "scalethumb-vertical".asInstanceOf[`scalethumb-vertical`]
   
   @js.native
   sealed trait scalethumbend
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def scalethumbend: scalethumbend = "scalethumbend".asInstanceOf[scalethumbend]
   
   @js.native
   sealed trait scalethumbstart
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def scalethumbstart: scalethumbstart = "scalethumbstart".asInstanceOf[scalethumbstart]
   
   @js.native
   sealed trait scalethumbtick
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def scalethumbtick: scalethumbtick = "scalethumbtick".asInstanceOf[scalethumbtick]
   
   @js.native
   sealed trait screen
     extends StObject
        with BlendMode
-       with MixBlendModeProperty
+       with MixBlendMode
   inline def screen: screen = "screen".asInstanceOf[screen]
   
   @js.native
   sealed trait scroll
     extends StObject
        with Attachment
-       with OverflowBlockProperty
-       with OverflowInlineProperty
-       with OverflowXProperty
-       with OverflowYProperty
-       with _OverflowProperty
+       with OverflowBlock
+       with OverflowInline
+       with OverflowX
+       with OverflowY
+       with _Overflow
   inline def scroll: scroll = "scroll".asInstanceOf[scroll]
   
   @js.native
@@ -9215,61 +9518,61 @@ object csstypeStrings {
   @js.native
   sealed trait scrollbar_
     extends StObject
-       with MsOverflowStyleProperty
+       with MsOverflowStyle
   inline def scrollbar_ : scrollbar_ = "scrollbar".asInstanceOf[scrollbar_]
   
   @js.native
   sealed trait `scrollbarbutton-down`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `scrollbarbutton-down`: `scrollbarbutton-down` = "scrollbarbutton-down".asInstanceOf[`scrollbarbutton-down`]
   
   @js.native
   sealed trait `scrollbarbutton-left`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `scrollbarbutton-left`: `scrollbarbutton-left` = "scrollbarbutton-left".asInstanceOf[`scrollbarbutton-left`]
   
   @js.native
   sealed trait `scrollbarbutton-right`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `scrollbarbutton-right`: `scrollbarbutton-right` = "scrollbarbutton-right".asInstanceOf[`scrollbarbutton-right`]
   
   @js.native
   sealed trait `scrollbarbutton-up`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `scrollbarbutton-up`: `scrollbarbutton-up` = "scrollbarbutton-up".asInstanceOf[`scrollbarbutton-up`]
   
   @js.native
   sealed trait `scrollbarthumb-horizontal`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `scrollbarthumb-horizontal`: `scrollbarthumb-horizontal` = "scrollbarthumb-horizontal".asInstanceOf[`scrollbarthumb-horizontal`]
   
   @js.native
   sealed trait `scrollbarthumb-vertical`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `scrollbarthumb-vertical`: `scrollbarthumb-vertical` = "scrollbarthumb-vertical".asInstanceOf[`scrollbarthumb-vertical`]
   
   @js.native
   sealed trait `scrollbartrack-horizontal`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `scrollbartrack-horizontal`: `scrollbartrack-horizontal` = "scrollbartrack-horizontal".asInstanceOf[`scrollbartrack-horizontal`]
   
   @js.native
   sealed trait `scrollbartrack-vertical`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `scrollbartrack-vertical`: `scrollbartrack-vertical` = "scrollbartrack-vertical".asInstanceOf[`scrollbartrack-vertical`]
   
   @js.native
   sealed trait `se-resize`
     extends StObject
-       with _CursorProperty
+       with _Cursor
   inline def `se-resize`: `se-resize` = "se-resize".asInstanceOf[`se-resize`]
   
   @js.native
@@ -9281,34 +9584,34 @@ object csstypeStrings {
   @js.native
   sealed trait searchfield
     extends StObject
-       with AppearanceProperty
+       with Appearance
        with CompatAuto
-       with MozAppearanceProperty
-       with WebkitAppearanceProperty
+       with MozAppearance
+       with WebkitAppearance
   inline def searchfield: searchfield = "searchfield".asInstanceOf[searchfield]
   
   @js.native
   sealed trait `searchfield-cancel-button`
     extends StObject
-       with WebkitAppearanceProperty
+       with WebkitAppearance
   inline def `searchfield-cancel-button`: `searchfield-cancel-button` = "searchfield-cancel-button".asInstanceOf[`searchfield-cancel-button`]
   
   @js.native
   sealed trait `searchfield-decoration`
     extends StObject
-       with WebkitAppearanceProperty
+       with WebkitAppearance
   inline def `searchfield-decoration`: `searchfield-decoration` = "searchfield-decoration".asInstanceOf[`searchfield-decoration`]
   
   @js.native
   sealed trait `searchfield-results-button`
     extends StObject
-       with WebkitAppearanceProperty
+       with WebkitAppearance
   inline def `searchfield-results-button`: `searchfield-results-button` = "searchfield-results-button".asInstanceOf[`searchfield-results-button`]
   
   @js.native
   sealed trait `searchfield-results-decoration`
     extends StObject
-       with WebkitAppearanceProperty
+       with WebkitAppearance
   inline def `searchfield-results-decoration`: `searchfield-results-decoration` = "searchfield-results-decoration".asInstanceOf[`searchfield-results-decoration`]
   
   @js.native
@@ -9320,31 +9623,31 @@ object csstypeStrings {
   @js.native
   sealed trait `select-after`
     extends StObject
-       with MozUserFocusProperty
+       with MozUserFocus
   inline def `select-after`: `select-after` = "select-after".asInstanceOf[`select-after`]
   
   @js.native
   sealed trait `select-all`
     extends StObject
-       with MozUserFocusProperty
+       with MozUserFocus
   inline def `select-all`: `select-all` = "select-all".asInstanceOf[`select-all`]
   
   @js.native
   sealed trait `select-before`
     extends StObject
-       with MozUserFocusProperty
+       with MozUserFocus
   inline def `select-before`: `select-before` = "select-before".asInstanceOf[`select-before`]
   
   @js.native
   sealed trait `select-menu`
     extends StObject
-       with MozUserFocusProperty
+       with MozUserFocus
   inline def `select-menu`: `select-menu` = "select-menu".asInstanceOf[`select-menu`]
   
   @js.native
   sealed trait `select-same`
     extends StObject
-       with MozUserFocusProperty
+       with MozUserFocus
   inline def `select-same`: `select-same` = "select-same".asInstanceOf[`select-same`]
   
   @js.native
@@ -9374,14 +9677,14 @@ object csstypeStrings {
   @js.native
   sealed trait separate
     extends StObject
-       with BorderCollapseProperty
-       with RubyMergeProperty
+       with BorderCollapse
+       with RubyMerge
   inline def separate: separate = "separate".asInstanceOf[separate]
   
   @js.native
   sealed trait separator
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def separator: separator = "separator".asInstanceOf[separator]
   
   @js.native
@@ -9393,39 +9696,39 @@ object csstypeStrings {
   @js.native
   sealed trait sesame
     extends StObject
-       with _TextEmphasisProperty
-       with _TextEmphasisStyleProperty
+       with _TextEmphasis
+       with _TextEmphasisStyle
   inline def sesame: sesame = "sesame".asInstanceOf[sesame]
   
   @js.native
   sealed trait sheet
     extends StObject
-       with MozAppearanceProperty
-       with MozWindowShadowProperty
+       with MozAppearance
+       with MozWindowShadow
   inline def sheet: sheet = "sheet".asInstanceOf[sheet]
   
   @js.native
   sealed trait show
     extends StObject
-       with EmptyCellsProperty
+       with EmptyCells
   inline def show: show = "show".asInstanceOf[show]
   
   @js.native
   sealed trait sideways
     extends StObject
-       with TextOrientationProperty
+       with TextOrientation
   inline def sideways: sideways = "sideways".asInstanceOf[sideways]
   
   @js.native
   sealed trait `sideways-lr`
     extends StObject
-       with WritingModeProperty
+       with WritingMode
   inline def `sideways-lr`: `sideways-lr` = "sideways-lr".asInstanceOf[`sideways-lr`]
   
   @js.native
   sealed trait `sideways-rl`
     extends StObject
-       with WritingModeProperty
+       with WritingMode
   inline def `sideways-rl`: `sideways-rl` = "sideways-rl".asInstanceOf[`sideways-rl`]
   
   @js.native
@@ -9449,13 +9752,13 @@ object csstypeStrings {
   @js.native
   sealed trait single
     extends StObject
-       with BoxLinesProperty
+       with BoxLines
   inline def single: single = "single".asInstanceOf[single]
   
   @js.native
   sealed trait size
     extends StObject
-       with _ContainProperty
+       with _Contain
   inline def size: size = "size".asInstanceOf[size]
   
   @js.native
@@ -9467,9 +9770,9 @@ object csstypeStrings {
   @js.native
   sealed trait `slashed-zero`
     extends StObject
-       with _FontFaceFontVariantProperty
-       with _FontVariantNumericProperty
-       with _FontVariantProperty
+       with _FontVariant
+       with typings.csstype.mod.AtRule._FontVariant
+       with _FontVariantNumeric
   inline def `slashed-zero`: `slashed-zero` = "slashed-zero".asInstanceOf[`slashed-zero`]
   
   @js.native
@@ -9493,33 +9796,33 @@ object csstypeStrings {
   @js.native
   sealed trait slice
     extends StObject
-       with BoxDecorationBreakProperty
+       with BoxDecorationBreak
   inline def slice: slice = "slice".asInstanceOf[slice]
   
   @js.native
   sealed trait `slider-horizontal`
     extends StObject
-       with AppearanceProperty
+       with Appearance
        with CompatAuto
-       with WebkitAppearanceProperty
+       with WebkitAppearance
   inline def `slider-horizontal`: `slider-horizontal` = "slider-horizontal".asInstanceOf[`slider-horizontal`]
   
   @js.native
   sealed trait `slider-vertical`
     extends StObject
-       with WebkitAppearanceProperty
+       with WebkitAppearance
   inline def `slider-vertical`: `slider-vertical` = "slider-vertical".asInstanceOf[`slider-vertical`]
   
   @js.native
   sealed trait `sliderthumb-horizontal`
     extends StObject
-       with WebkitAppearanceProperty
+       with WebkitAppearance
   inline def `sliderthumb-horizontal`: `sliderthumb-horizontal` = "sliderthumb-horizontal".asInstanceOf[`sliderthumb-horizontal`]
   
   @js.native
   sealed trait `sliderthumb-vertical`
     extends StObject
-       with WebkitAppearanceProperty
+       with WebkitAppearance
   inline def `sliderthumb-vertical`: `sliderthumb-vertical` = "sliderthumb-vertical".asInstanceOf[`sliderthumb-vertical`]
   
   @js.native
@@ -9531,27 +9834,28 @@ object csstypeStrings {
   @js.native
   sealed trait `small-caps`
     extends StObject
-       with FontVariantCapsProperty
-       with _FontFaceFontVariantProperty
-       with _FontVariantProperty
+       with FontVariantCaps
+       with _FontSynthesis
+       with _FontVariant
+       with typings.csstype.mod.AtRule._FontVariant
   inline def `small-caps`: `small-caps` = "small-caps".asInstanceOf[`small-caps`]
   
   @js.native
   sealed trait `small-caption`
     extends StObject
-       with _FontProperty
+       with _Font
   inline def `small-caption`: `small-caption` = "small-caption".asInstanceOf[`small-caption`]
   
   @js.native
   sealed trait smaller
     extends StObject
-       with _FontSizeProperty[js.Any]
+       with _FontSize[Any]
   inline def smaller: smaller = "smaller".asInstanceOf[smaller]
   
   @js.native
   sealed trait smooth
     extends StObject
-       with ScrollBehaviorProperty
+       with ScrollBehavior
   inline def smooth: smooth = "smooth".asInstanceOf[smooth]
   
   @js.native
@@ -9564,25 +9868,25 @@ object csstypeStrings {
   sealed trait `soft-light`
     extends StObject
        with BlendMode
-       with MixBlendModeProperty
+       with MixBlendMode
   inline def `soft-light`: `soft-light` = "soft-light".asInstanceOf[`soft-light`]
   
   @js.native
   sealed trait solid
     extends StObject
-       with BorderBlockEndStyleProperty
-       with BorderBlockStartStyleProperty
-       with BorderBlockStyleProperty
-       with BorderBottomStyleProperty
-       with BorderInlineEndStyleProperty
-       with BorderInlineStartStyleProperty
-       with BorderInlineStyleProperty
-       with BorderLeftStyleProperty
-       with BorderRightStyleProperty
-       with BorderTopStyleProperty
+       with BorderBlockEndStyle
+       with BorderBlockStartStyle
+       with BorderBlockStyle
+       with BorderBottomStyle
+       with BorderInlineEndStyle
+       with BorderInlineStartStyle
+       with BorderInlineStyle
+       with BorderLeftStyle
+       with BorderRightStyle
+       with BorderTopStyle
        with LineStyle
-       with TextDecorationStyleProperty
-       with _TextDecorationProperty[js.Any]
+       with TextDecorationStyle
+       with _TextDecoration[Any]
   inline def solid: solid = "solid".asInstanceOf[solid]
   
   @js.native
@@ -9612,12 +9916,12 @@ object csstypeStrings {
   @js.native
   sealed trait space
     extends StObject
-       with WebkitMaskRepeatXProperty
-       with WebkitMaskRepeatYProperty
-       with _BorderImageProperty
-       with _BorderImageRepeatProperty
-       with _MaskBorderProperty
-       with _MaskBorderRepeatProperty
+       with WebkitMaskRepeatX
+       with WebkitMaskRepeatY
+       with _BorderImage
+       with _BorderImageRepeat
+       with _MaskBorder
+       with _MaskBorderRepeat
        with _RepeatStyle
   inline def space: space = "space".asInstanceOf[space]
   
@@ -9625,14 +9929,14 @@ object csstypeStrings {
   sealed trait `space-around`
     extends StObject
        with ContentDistribution
-       with RubyAlignProperty
+       with RubyAlign
   inline def `space-around`: `space-around` = "space-around".asInstanceOf[`space-around`]
   
   @js.native
   sealed trait `space-between`
     extends StObject
        with ContentDistribution
-       with RubyAlignProperty
+       with RubyAlign
   inline def `space-between`: `space-between` = "space-between".asInstanceOf[`space-between`]
   
   @js.native
@@ -9644,50 +9948,50 @@ object csstypeStrings {
   @js.native
   sealed trait spaces
     extends StObject
-       with _TextDecorationSkipProperty
+       with _TextDecorationSkip
   inline def spaces: spaces = "spaces".asInstanceOf[spaces]
   
   @js.native
   sealed trait `spell-out`
     extends StObject
-       with _CounterStyleSpeakAsProperty
+       with _SpeakAs
   inline def `spell-out`: `spell-out` = "spell-out".asInstanceOf[`spell-out`]
   
   @js.native
   sealed trait `spelling-error`
     extends StObject
-       with _TextDecorationLineProperty
-       with _TextDecorationProperty[js.Any]
+       with _TextDecoration[Any]
+       with _TextDecorationLine
   inline def `spelling-error`: `spelling-error` = "spelling-error".asInstanceOf[`spelling-error`]
   
   @js.native
   sealed trait spinner
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def spinner: spinner = "spinner".asInstanceOf[spinner]
   
   @js.native
   sealed trait `spinner-downbutton`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `spinner-downbutton`: `spinner-downbutton` = "spinner-downbutton".asInstanceOf[`spinner-downbutton`]
   
   @js.native
   sealed trait `spinner-textfield`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `spinner-textfield`: `spinner-textfield` = "spinner-textfield".asInstanceOf[`spinner-textfield`]
   
   @js.native
   sealed trait `spinner-upbutton`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `spinner-upbutton`: `spinner-upbutton` = "spinner-upbutton".asInstanceOf[`spinner-upbutton`]
   
   @js.native
   sealed trait splitter
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def splitter: splitter = "splitter".asInstanceOf[splitter]
   
   @js.native
@@ -9699,68 +10003,68 @@ object csstypeStrings {
   @js.native
   sealed trait square
     extends StObject
-       with StrokeLinecapProperty
+       with StrokeLinecap
   inline def square: square = "square".asInstanceOf[square]
   
   @js.native
   sealed trait `square-button`
     extends StObject
-       with AppearanceProperty
+       with Appearance
        with CompatAuto
-       with WebkitAppearanceProperty
+       with WebkitAppearance
   inline def `square-button`: `square-button` = "square-button".asInstanceOf[`square-button`]
   
   @js.native
   sealed trait stable
     extends StObject
-       with _ScrollbarGutterProperty
+       with _ScrollbarGutter
   inline def stable: stable = "stable".asInstanceOf[stable]
   
   @js.native
   sealed trait `stacked-fractions`
     extends StObject
-       with _FontFaceFontVariantProperty
-       with _FontVariantNumericProperty
-       with _FontVariantProperty
+       with _FontVariant
+       with typings.csstype.mod.AtRule._FontVariant
+       with _FontVariantNumeric
   inline def `stacked-fractions`: `stacked-fractions` = "stacked-fractions".asInstanceOf[`stacked-fractions`]
   
   @js.native
   sealed trait start
     extends StObject
-       with BoxAlignProperty
-       with BoxPackProperty
+       with BoxAlign
+       with BoxPack
        with ContentPosition
-       with MsWrapFlowProperty
-       with RubyAlignProperty
+       with MsWrapFlow
+       with RubyAlign
        with SelfPosition
-       with TextAlignLastProperty
-       with TextAlignProperty
-       with TextAnchorProperty
-       with _ScrollSnapAlignProperty
+       with TextAlign
+       with TextAlignLast
+       with TextAnchor
+       with _ScrollSnapAlign
   inline def start: start = "start".asInstanceOf[start]
   
   @js.native
   sealed trait static
     extends StObject
-       with PositionProperty
+       with Position
   inline def static: static = "static".asInstanceOf[static]
   
   @js.native
   sealed trait `status-bar`
     extends StObject
-       with _FontProperty
+       with _Font
   inline def `status-bar`: `status-bar` = "status-bar".asInstanceOf[`status-bar`]
   
   @js.native
   sealed trait statusbar
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def statusbar: statusbar = "statusbar".asInstanceOf[statusbar]
   
   @js.native
   sealed trait statusbarpanel
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def statusbarpanel: statusbarpanel = "statusbarpanel".asInstanceOf[statusbarpanel]
   
   @js.native
@@ -9784,80 +10088,80 @@ object csstypeStrings {
   @js.native
   sealed trait sticky
     extends StObject
-       with PositionProperty
+       with Position
   inline def sticky: sticky = "sticky".asInstanceOf[sticky]
   
   @js.native
   sealed trait stretch
     extends StObject
-       with BoxAlignProperty
+       with BoxAlign
        with ContentDistribution
-       with _AlignItemsProperty
-       with _AlignSelfProperty
-       with _BorderImageProperty
-       with _BorderImageRepeatProperty
-       with _JustifyItemsProperty
-       with _JustifySelfProperty
-       with _MaskBorderProperty
-       with _MaskBorderRepeatProperty
-       with _PlaceItemsProperty
-       with _PlaceSelfProperty
+       with _AlignItems
+       with _AlignSelf
+       with _BorderImage
+       with _BorderImageRepeat
+       with _JustifyItems
+       with _JustifySelf
+       with _MaskBorder
+       with _MaskBorderRepeat
+       with _PlaceItems
+       with _PlaceSelf
   inline def stretch: stretch = "stretch".asInstanceOf[stretch]
   
   @js.native
   sealed trait `stretch-to-fit`
     extends StObject
-       with MozStackSizingProperty
+       with MozStackSizing
   inline def `stretch-to-fit`: `stretch-to-fit` = "stretch-to-fit".asInstanceOf[`stretch-to-fit`]
   
   @js.native
   sealed trait strict
     extends StObject
-       with LineBreakProperty
-       with _ContainProperty
+       with LineBreak
+       with _Contain
   inline def strict: strict = "strict".asInstanceOf[strict]
   
   @js.native
   sealed trait stroke
     extends StObject
-       with PointerEventsProperty
-       with _MozContextPropertiesProperty
-       with _PaintOrderProperty
+       with PointerEvents
+       with _MozContextProperties
+       with _PaintOrder
   inline def stroke: stroke = "stroke".asInstanceOf[stroke]
   
   @js.native
   sealed trait `stroke-box`
     extends StObject
        with GeometryBox
-       with TransformBoxProperty
+       with TransformBox
   inline def `stroke-box`: `stroke-box` = "stroke-box".asInstanceOf[`stroke-box`]
   
   @js.native
   sealed trait `stroke-opacity`
     extends StObject
-       with _MozContextPropertiesProperty
+       with _MozContextProperties
   inline def `stroke-opacity`: `stroke-opacity` = "stroke-opacity".asInstanceOf[`stroke-opacity`]
   
   @js.native
   sealed trait style
     extends StObject
-       with _ContainProperty
-       with _FontSynthesisProperty
+       with _Contain
+       with _FontSynthesis
   inline def style: style = "style".asInstanceOf[style]
   
   @js.native
   sealed trait sub
     extends StObject
-       with FontVariantPositionProperty
-       with _BaselineShiftProperty[js.Any]
-       with _VerticalAlignProperty[js.Any]
+       with FontVariantPosition
+       with _BaselineShift[Any]
+       with _VerticalAlign[Any]
   inline def sub: sub = "sub".asInstanceOf[sub]
   
   @js.native
   sealed trait subgrid
     extends StObject
-       with _GridTemplateColumnsProperty[js.Any]
-       with _GridTemplateRowsProperty[js.Any]
+       with _GridTemplateColumns[Any]
+       with _GridTemplateRows[Any]
   inline def subgrid: subgrid = "subgrid".asInstanceOf[subgrid]
   
   @js.native
@@ -9869,45 +10173,45 @@ object csstypeStrings {
   @js.native
   sealed trait `super`
     extends StObject
-       with FontVariantPositionProperty
-       with _BaselineShiftProperty[js.Any]
-       with _VerticalAlignProperty[js.Any]
+       with FontVariantPosition
+       with _BaselineShift[Any]
+       with _VerticalAlign[Any]
   inline def `super`: `super` = "super".asInstanceOf[`super`]
   
   @js.native
   sealed trait `sw-resize`
     extends StObject
-       with _CursorProperty
+       with _Cursor
   inline def `sw-resize`: `sw-resize` = "sw-resize".asInstanceOf[`sw-resize`]
   
   @js.native
   sealed trait swap
     extends StObject
-       with FontFaceFontDisplayProperty
+       with FontDisplay
   inline def swap: swap = "swap".asInstanceOf[swap]
   
   @js.native
   sealed trait symbolic
     extends StObject
-       with _CounterStyleSystemProperty
+       with _System
   inline def symbolic: symbolic = "symbolic".asInstanceOf[symbolic]
   
   @js.native
   sealed trait tab
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def tab: tab = "tab".asInstanceOf[tab]
   
   @js.native
   sealed trait `tab-scroll-arrow-back`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `tab-scroll-arrow-back`: `tab-scroll-arrow-back` = "tab-scroll-arrow-back".asInstanceOf[`tab-scroll-arrow-back`]
   
   @js.native
   sealed trait `tab-scroll-arrow-forward`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `tab-scroll-arrow-forward`: `tab-scroll-arrow-forward` = "tab-scroll-arrow-forward".asInstanceOf[`tab-scroll-arrow-forward`]
   
   @js.native
@@ -9967,21 +10271,21 @@ object csstypeStrings {
   @js.native
   sealed trait tabpanel
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def tabpanel: tabpanel = "tabpanel".asInstanceOf[tabpanel]
   
   @js.native
   sealed trait tabpanels
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def tabpanels: tabpanels = "tabpanels".asInstanceOf[tabpanels]
   
   @js.native
   sealed trait `tabular-nums`
     extends StObject
-       with _FontFaceFontVariantProperty
-       with _FontVariantNumericProperty
-       with _FontVariantProperty
+       with _FontVariant
+       with typings.csstype.mod.AtRule._FontVariant
+       with _FontVariantNumeric
   inline def `tabular-nums`: `tabular-nums` = "tabular-nums".asInstanceOf[`tabular-nums`]
   
   @js.native
@@ -9993,7 +10297,7 @@ object csstypeStrings {
   @js.native
   sealed trait tb
     extends StObject
-       with MsBlockProgressionProperty
+       with MsBlockProgression
   inline def tb: tb = "tb".asInstanceOf[tb]
   
   @js.native
@@ -10005,72 +10309,72 @@ object csstypeStrings {
   @js.native
   sealed trait text
     extends StObject
-       with MsUserSelectProperty
-       with UserSelectProperty
-       with _CursorProperty
-       with _WebkitMaskClipProperty
-       with _WebkitMaskProperty[js.Any]
+       with MsUserSelect
+       with UserSelect
+       with _Cursor
+       with _WebkitMask[Any]
+       with _WebkitMaskClip
   inline def text: text = "text".asInstanceOf[text]
   
   @js.native
   sealed trait `text-after-edge`
     extends StObject
-       with AlignmentBaselineProperty
-       with DominantBaselineProperty
+       with AlignmentBaseline
+       with DominantBaseline
   inline def `text-after-edge`: `text-after-edge` = "text-after-edge".asInstanceOf[`text-after-edge`]
   
   @js.native
   sealed trait `text-before-edge`
     extends StObject
-       with AlignmentBaselineProperty
-       with DominantBaselineProperty
+       with AlignmentBaseline
+       with DominantBaseline
   inline def `text-before-edge`: `text-before-edge` = "text-before-edge".asInstanceOf[`text-before-edge`]
   
   @js.native
   sealed trait `text-bottom`
     extends StObject
-       with _VerticalAlignProperty[js.Any]
+       with _VerticalAlign[Any]
   inline def `text-bottom`: `text-bottom` = "text-bottom".asInstanceOf[`text-bottom`]
   
   @js.native
   sealed trait `text-top`
     extends StObject
-       with _VerticalAlignProperty[js.Any]
+       with _VerticalAlign[Any]
   inline def `text-top`: `text-top` = "text-top".asInstanceOf[`text-top`]
   
   @js.native
   sealed trait textarea
     extends StObject
-       with AppearanceProperty
+       with Appearance
        with CompatAuto
-       with WebkitAppearanceProperty
+       with WebkitAppearance
   inline def textarea: textarea = "textarea".asInstanceOf[textarea]
   
   @js.native
   sealed trait textfield
     extends StObject
-       with AppearanceProperty
-       with MozAppearanceProperty
-       with WebkitAppearanceProperty
+       with Appearance
+       with MozAppearance
+       with WebkitAppearance
   inline def textfield: textfield = "textfield".asInstanceOf[textfield]
   
   @js.native
   sealed trait `textfield-multiline`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `textfield-multiline`: `textfield-multiline` = "textfield-multiline".asInstanceOf[`textfield-multiline`]
   
   @js.native
   sealed trait thick
     extends StObject
-       with _LineWidth[js.Any]
+       with _LineWidth[Any]
   inline def thick: thick = "thick".asInstanceOf[thick]
   
   @js.native
   sealed trait thin
     extends StObject
-       with ScrollbarWidthProperty
-       with _LineWidth[js.Any]
+       with ScrollbarWidth
+       with _LineWidth[Any]
   inline def thin: thin = "thin".asInstanceOf[thin]
   
   @js.native
@@ -10082,9 +10386,9 @@ object csstypeStrings {
   @js.native
   sealed trait `titling-caps`
     extends StObject
-       with FontVariantCapsProperty
-       with _FontFaceFontVariantProperty
-       with _FontVariantProperty
+       with FontVariantCaps
+       with _FontVariant
+       with typings.csstype.mod.AtRule._FontVariant
   inline def `titling-caps`: `titling-caps` = "titling-caps".asInstanceOf[`titling-caps`]
   
   @js.native
@@ -10096,56 +10400,56 @@ object csstypeStrings {
   @js.native
   sealed trait toolbar
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def toolbar: toolbar = "toolbar".asInstanceOf[toolbar]
   
   @js.native
   sealed trait toolbarbutton
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def toolbarbutton: toolbarbutton = "toolbarbutton".asInstanceOf[toolbarbutton]
   
   @js.native
   sealed trait `toolbarbutton-dropdown`
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def `toolbarbutton-dropdown`: `toolbarbutton-dropdown` = "toolbarbutton-dropdown".asInstanceOf[`toolbarbutton-dropdown`]
   
   @js.native
   sealed trait toolbargripper
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def toolbargripper: toolbargripper = "toolbargripper".asInstanceOf[toolbargripper]
   
   @js.native
   sealed trait toolbox
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def toolbox: toolbox = "toolbox".asInstanceOf[toolbox]
   
   @js.native
   sealed trait tooltip
     extends StObject
-       with MozAppearanceProperty
-       with MozWindowShadowProperty
+       with MozAppearance
+       with MozWindowShadow
   inline def tooltip: tooltip = "tooltip".asInstanceOf[tooltip]
   
   @js.native
   sealed trait top
     extends StObject
-       with CaptionSideProperty
-       with _BackgroundPositionYProperty[js.Any]
-       with _BgPosition[js.Any]
-       with _Position[js.Any]
-       with _TransformOriginProperty[js.Any]
-       with _VerticalAlignProperty[js.Any]
-       with _WebkitMaskPositionYProperty[js.Any]
+       with CaptionSide
+       with _BackgroundPositionY[Any]
+       with _BgPosition[Any]
+       with _Position[Any]
+       with _TransformOrigin[Any]
+       with _VerticalAlign[Any]
+       with _WebkitMaskPositionY[Any]
   inline def top: top = "top".asInstanceOf[top]
   
   @js.native
   sealed trait touch
     extends StObject
-       with WebkitOverflowScrollingProperty
+       with WebkitOverflowScrolling
   inline def touch: touch = "touch".asInstanceOf[touch]
   
   @js.native
@@ -10157,7 +10461,7 @@ object csstypeStrings {
   @js.native
   sealed trait `trailing-spaces`
     extends StObject
-       with _TextDecorationSkipProperty
+       with _TextDecorationSkip
   inline def `trailing-spaces`: `trailing-spaces` = "trailing-spaces".asInstanceOf[`trailing-spaces`]
   
   @js.native
@@ -10169,63 +10473,63 @@ object csstypeStrings {
   @js.native
   sealed trait treeheader
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def treeheader: treeheader = "treeheader".asInstanceOf[treeheader]
   
   @js.native
   sealed trait treeheadercell
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def treeheadercell: treeheadercell = "treeheadercell".asInstanceOf[treeheadercell]
   
   @js.native
   sealed trait treeheadersortarrow
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def treeheadersortarrow: treeheadersortarrow = "treeheadersortarrow".asInstanceOf[treeheadersortarrow]
   
   @js.native
   sealed trait treeitem
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def treeitem: treeitem = "treeitem".asInstanceOf[treeitem]
   
   @js.native
   sealed trait treeline
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def treeline: treeline = "treeline".asInstanceOf[treeline]
   
   @js.native
   sealed trait treetwisty
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def treetwisty: treetwisty = "treetwisty".asInstanceOf[treetwisty]
   
   @js.native
   sealed trait treetwistyopen
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def treetwistyopen: treetwistyopen = "treetwistyopen".asInstanceOf[treetwistyopen]
   
   @js.native
   sealed trait treeview
     extends StObject
-       with MozAppearanceProperty
+       with MozAppearance
   inline def treeview: treeview = "treeview".asInstanceOf[treeview]
   
   @js.native
   sealed trait triangle
     extends StObject
-       with _TextEmphasisProperty
-       with _TextEmphasisStyleProperty
+       with _TextEmphasis
+       with _TextEmphasisStyle
   inline def triangle: triangle = "triangle".asInstanceOf[triangle]
   
   @js.native
   sealed trait `true`
     extends StObject
-       with MsAcceleratorProperty
-       with PropertyInheritsProperty
+       with Inherits
+       with MsAccelerator
   inline def `true`: `true` = "true".asInstanceOf[`true`]
   
   @js.native
@@ -10249,230 +10553,233 @@ object csstypeStrings {
   @js.native
   sealed trait under
     extends StObject
-       with RubyPositionProperty
-       with _TextUnderlinePositionProperty
+       with _RubyPosition
+       with _TextUnderlinePosition
   inline def under: under = "under".asInstanceOf[under]
   
   @js.native
   sealed trait underline
     extends StObject
-       with _TextDecorationLineProperty
-       with _TextDecorationProperty[js.Any]
+       with _TextDecoration[Any]
+       with _TextDecorationLine
   inline def underline: underline = "underline".asInstanceOf[underline]
   
   @js.native
   sealed trait unicase
     extends StObject
-       with FontVariantCapsProperty
-       with _FontFaceFontVariantProperty
-       with _FontVariantProperty
+       with FontVariantCaps
+       with _FontVariant
+       with typings.csstype.mod.AtRule._FontVariant
   inline def unicase: unicase = "unicase".asInstanceOf[unicase]
   
   @js.native
   sealed trait unset
     extends StObject
-       with AlignmentBaselineProperty
-       with AppearanceProperty
-       with BackfaceVisibilityProperty
-       with BorderBlockEndStyleProperty
-       with BorderBlockStartStyleProperty
-       with BorderBlockStyleProperty
-       with BorderBottomStyleProperty
-       with BorderCollapseProperty
-       with BorderInlineEndStyleProperty
-       with BorderInlineStartStyleProperty
-       with BorderInlineStyleProperty
-       with BorderLeftStyleProperty
-       with BorderRightStyleProperty
-       with BorderTopStyleProperty
-       with BoxAlignProperty
-       with BoxDecorationBreakProperty
-       with BoxDirectionProperty
-       with BoxLinesProperty
-       with BoxOrientProperty
-       with BoxPackProperty
-       with BoxSizingProperty
-       with BreakAfterProperty
-       with BreakBeforeProperty
-       with BreakInsideProperty
-       with CaptionSideProperty
-       with ClearProperty
-       with ClipRuleProperty
-       with ColorAdjustProperty
-       with ColorInterpolationProperty
-       with ColorRenderingProperty
-       with ColumnFillProperty
-       with ColumnSpanProperty
-       with DirectionProperty
-       with DominantBaselineProperty
-       with EmptyCellsProperty
-       with FillRuleProperty
-       with FlexDirectionProperty
-       with FlexWrapProperty
-       with FloatProperty
-       with FontKerningProperty
-       with FontOpticalSizingProperty
-       with FontVariantCapsProperty
-       with FontVariantPositionProperty
+       with AlignmentBaseline
+       with Appearance
+       with BackfaceVisibility
+       with BorderBlockEndStyle
+       with BorderBlockStartStyle
+       with BorderBlockStyle
+       with BorderBottomStyle
+       with BorderCollapse
+       with BorderInlineEndStyle
+       with BorderInlineStartStyle
+       with BorderInlineStyle
+       with BorderLeftStyle
+       with BorderRightStyle
+       with BorderTopStyle
+       with BoxAlign
+       with BoxDecorationBreak
+       with BoxDirection
+       with BoxLines
+       with BoxOrient
+       with BoxPack
+       with BoxSizing
+       with BreakAfter
+       with BreakBefore
+       with BreakInside
+       with CaptionSide
+       with Clear
+       with ClipRule
+       with ColorInterpolation
+       with ColorRendering
+       with ColumnFill
+       with ColumnSpan
+       with ContentVisibility
+       with Direction
+       with DominantBaseline
+       with EmptyCells
+       with FillRule
+       with FlexDirection
+       with FlexWrap
+       with Float
+       with FontKerning
+       with FontOpticalSizing
+       with FontVariantCaps
+       with FontVariantPosition
+       with ForcedColorAdjust
        with Globals
-       with HyphensProperty
-       with ImageRenderingProperty
-       with ImeModeProperty
-       with IsolationProperty
-       with LineBreakProperty
-       with ListStylePositionProperty
-       with MaskBorderModeProperty
-       with MaskTypeProperty
-       with MathStyleProperty
-       with MixBlendModeProperty
-       with MozAppearanceProperty
-       with MozFloatEdgeProperty
-       with MozOrientProperty
-       with MozStackSizingProperty
-       with MozTextBlinkProperty
-       with MozUserFocusProperty
-       with MozUserInputProperty
-       with MozUserModifyProperty
-       with MozWindowDraggingProperty
-       with MozWindowShadowProperty
-       with MsAcceleratorProperty
-       with MsBlockProgressionProperty
-       with MsContentZoomChainingProperty
-       with MsContentZoomSnapTypeProperty
-       with MsContentZoomingProperty
-       with MsHighContrastAdjustProperty
-       with MsImeAlignProperty
-       with MsOverflowStyleProperty
-       with MsScrollChainingProperty
-       with MsScrollRailsProperty
-       with MsScrollSnapTypeProperty
-       with MsScrollTranslationProperty
-       with MsTextAutospaceProperty
-       with MsTouchSelectProperty
-       with MsUserSelectProperty
-       with MsWrapFlowProperty
-       with MsWrapThroughProperty
-       with ObjectFitProperty
-       with OverflowAnchorProperty
-       with OverflowBlockProperty
-       with OverflowClipBoxProperty
-       with OverflowInlineProperty
-       with OverflowWrapProperty
-       with OverflowXProperty
-       with OverflowYProperty
-       with OverscrollBehaviorBlockProperty
-       with OverscrollBehaviorInlineProperty
-       with OverscrollBehaviorXProperty
-       with OverscrollBehaviorYProperty
-       with PageBreakAfterProperty
-       with PageBreakBeforeProperty
-       with PageBreakInsideProperty
-       with PointerEventsProperty
-       with PositionProperty
-       with ResizeProperty
-       with RubyAlignProperty
-       with RubyMergeProperty
-       with RubyPositionProperty
-       with ScrollBehaviorProperty
-       with ScrollSnapStopProperty
-       with ScrollSnapTypeXProperty
-       with ScrollSnapTypeYProperty
-       with ScrollbarWidthProperty
-       with ShapeRenderingProperty
-       with StrokeLinecapProperty
-       with StrokeLinejoinProperty
-       with TableLayoutProperty
-       with TextAlignLastProperty
-       with TextAlignProperty
-       with TextAnchorProperty
-       with TextDecorationSkipInkProperty
-       with TextDecorationStyleProperty
-       with TextJustifyProperty
-       with TextOrientationProperty
-       with TextRenderingProperty
-       with TextTransformProperty
-       with TransformBoxProperty
-       with TransformStyleProperty
-       with UnicodeBidiProperty
-       with UserSelectProperty
-       with VectorEffectProperty
-       with VisibilityProperty
-       with WebkitAppearanceProperty
-       with WebkitMaskRepeatXProperty
-       with WebkitMaskRepeatYProperty
-       with WebkitOverflowScrollingProperty
-       with WebkitTouchCalloutProperty
-       with WebkitUserModifyProperty
-       with WhiteSpaceProperty
-       with WordBreakProperty
-       with WordWrapProperty
-       with WritingModeProperty
+       with Hyphens
+       with ImageRendering
+       with ImeMode
+       with InputSecurity
+       with Isolation
+       with LineBreak
+       with ListStylePosition
+       with MaskBorderMode
+       with MaskType
+       with MathShift
+       with MathStyle
+       with MixBlendMode
+       with MozAppearance
+       with MozFloatEdge
+       with MozOrient
+       with MozStackSizing
+       with MozTextBlink
+       with MozUserFocus
+       with MozUserInput
+       with MozUserModify
+       with MozWindowDragging
+       with MozWindowShadow
+       with MsAccelerator
+       with MsBlockProgression
+       with MsContentZoomChaining
+       with MsContentZoomSnapType
+       with MsContentZooming
+       with MsHighContrastAdjust
+       with MsImeAlign
+       with MsOverflowStyle
+       with MsScrollChaining
+       with MsScrollRails
+       with MsScrollSnapType
+       with MsScrollTranslation
+       with MsTextAutospace
+       with MsTouchSelect
+       with MsUserSelect
+       with MsWrapFlow
+       with MsWrapThrough
+       with ObjectFit
+       with OverflowAnchor
+       with OverflowBlock
+       with OverflowClipBox
+       with OverflowInline
+       with OverflowWrap
+       with OverflowX
+       with OverflowY
+       with OverscrollBehaviorBlock
+       with OverscrollBehaviorInline
+       with OverscrollBehaviorX
+       with OverscrollBehaviorY
+       with PageBreakAfter
+       with PageBreakBefore
+       with PageBreakInside
+       with PointerEvents
+       with Position
+       with PrintColorAdjust
+       with Resize
+       with RubyAlign
+       with RubyMerge
+       with ScrollBehavior
+       with ScrollSnapStop
+       with ScrollSnapTypeX
+       with ScrollSnapTypeY
+       with ScrollbarWidth
+       with ShapeRendering
+       with StrokeLinecap
+       with StrokeLinejoin
+       with TableLayout
+       with TextAlign
+       with TextAlignLast
+       with TextAnchor
+       with TextDecorationSkipInk
+       with TextDecorationStyle
+       with TextJustify
+       with TextOrientation
+       with TextRendering
+       with TextTransform
+       with TransformBox
+       with TransformStyle
+       with UnicodeBidi
+       with UserSelect
+       with VectorEffect
+       with Visibility
+       with WebkitAppearance
+       with WebkitMaskRepeatX
+       with WebkitMaskRepeatY
+       with WebkitOverflowScrolling
+       with WebkitTouchCallout
+       with WebkitUserModify
+       with WhiteSpace
+       with WordBreak
+       with WordWrap
+       with WritingMode
   inline def unset: unset = "unset".asInstanceOf[unset]
   
   @js.native
   sealed trait uppercase
     extends StObject
-       with TextTransformProperty
+       with TextTransform
   inline def uppercase: uppercase = "uppercase".asInstanceOf[uppercase]
   
   @js.native
   sealed trait upright
     extends StObject
-       with TextOrientationProperty
+       with TextOrientation
   inline def upright: upright = "upright".asInstanceOf[upright]
   
   @js.native
   sealed trait `use-script`
     extends StObject
-       with DominantBaselineProperty
+       with DominantBaseline
   inline def `use-script`: `use-script` = "use-script".asInstanceOf[`use-script`]
   
   @js.native
   sealed trait verso
     extends StObject
-       with BreakAfterProperty
-       with BreakBeforeProperty
-       with PageBreakAfterProperty
-       with PageBreakBeforeProperty
+       with BreakAfter
+       with BreakBefore
+       with PageBreakAfter
+       with PageBreakBefore
   inline def verso: verso = "verso".asInstanceOf[verso]
   
   @js.native
   sealed trait vertical
     extends StObject
-       with BoxOrientProperty
-       with MozOrientProperty
-       with ResizeProperty
+       with BoxOrient
+       with MozOrient
+       with Resize
   inline def vertical: vertical = "vertical".asInstanceOf[vertical]
   
   @js.native
   sealed trait `vertical-lr`
     extends StObject
-       with WritingModeProperty
+       with WritingMode
   inline def `vertical-lr`: `vertical-lr` = "vertical-lr".asInstanceOf[`vertical-lr`]
   
   @js.native
   sealed trait `vertical-rl`
     extends StObject
-       with WritingModeProperty
+       with WritingMode
   inline def `vertical-rl`: `vertical-rl` = "vertical-rl".asInstanceOf[`vertical-rl`]
   
   @js.native
   sealed trait `vertical-text`
     extends StObject
-       with _CursorProperty
+       with _Cursor
   inline def `vertical-text`: `vertical-text` = "vertical-text".asInstanceOf[`vertical-text`]
   
   @js.native
   sealed trait `vertical-to-horizontal`
     extends StObject
-       with MsScrollTranslationProperty
+       with MsScrollTranslation
   inline def `vertical-to-horizontal`: `vertical-to-horizontal` = "vertical-to-horizontal".asInstanceOf[`vertical-to-horizontal`]
   
   @js.native
   sealed trait `view-box`
     extends StObject
        with GeometryBox
-       with TransformBoxProperty
+       with TransformBox
   inline def `view-box`: `view-box` = "view-box".asInstanceOf[`view-box`]
   
   @js.native
@@ -10484,56 +10791,57 @@ object csstypeStrings {
   @js.native
   sealed trait visible
     extends StObject
-       with BackfaceVisibilityProperty
-       with OverflowBlockProperty
-       with OverflowInlineProperty
-       with OverflowXProperty
-       with OverflowYProperty
-       with PointerEventsProperty
-       with VisibilityProperty
-       with _OverflowProperty
+       with BackfaceVisibility
+       with ContentVisibility
+       with OverflowBlock
+       with OverflowInline
+       with OverflowX
+       with OverflowY
+       with PointerEvents
+       with Visibility
+       with _Overflow
   inline def visible: visible = "visible".asInstanceOf[visible]
   
   @js.native
   sealed trait visibleFill
     extends StObject
-       with PointerEventsProperty
+       with PointerEvents
   inline def visibleFill: visibleFill = "visibleFill".asInstanceOf[visibleFill]
   
   @js.native
   sealed trait visiblePainted
     extends StObject
-       with PointerEventsProperty
+       with PointerEvents
   inline def visiblePainted: visiblePainted = "visiblePainted".asInstanceOf[visiblePainted]
   
   @js.native
   sealed trait visibleStroke
     extends StObject
-       with PointerEventsProperty
+       with PointerEvents
   inline def visibleStroke: visibleStroke = "visibleStroke".asInstanceOf[visibleStroke]
   
   @js.native
   sealed trait `w-resize`
     extends StObject
-       with _CursorProperty
+       with _Cursor
   inline def `w-resize`: `w-resize` = "w-resize".asInstanceOf[`w-resize`]
   
   @js.native
   sealed trait wait
     extends StObject
-       with _CursorProperty
+       with _Cursor
   
   @js.native
   sealed trait wavy
     extends StObject
-       with TextDecorationStyleProperty
-       with _TextDecorationProperty[js.Any]
+       with TextDecorationStyle
+       with _TextDecoration[Any]
   inline def wavy: wavy = "wavy".asInstanceOf[wavy]
   
   @js.native
   sealed trait weight
     extends StObject
-       with _FontSynthesisProperty
+       with _FontSynthesis
   inline def weight: weight = "weight".asInstanceOf[weight]
   
   @js.native
@@ -10557,40 +10865,40 @@ object csstypeStrings {
   @js.native
   sealed trait words
     extends StObject
-       with _CounterStyleSpeakAsProperty
+       with _SpeakAs
   inline def words: words = "words".asInstanceOf[words]
   
   @js.native
   sealed trait wrap
     extends StObject
-       with FlexWrapProperty
-       with MsWrapThroughProperty
-       with _FlexFlowProperty
+       with FlexWrap
+       with MsWrapThrough
+       with _FlexFlow
   inline def wrap: wrap = "wrap".asInstanceOf[wrap]
   
   @js.native
   sealed trait `wrap-reverse`
     extends StObject
-       with FlexWrapProperty
-       with _FlexFlowProperty
+       with FlexWrap
+       with _FlexFlow
   inline def `wrap-reverse`: `wrap-reverse` = "wrap-reverse".asInstanceOf[`wrap-reverse`]
   
   @js.native
   sealed trait `write-only`
     extends StObject
-       with MozUserModifyProperty
+       with MozUserModify
   inline def `write-only`: `write-only` = "write-only".asInstanceOf[`write-only`]
   
   @js.native
   sealed trait x
     extends StObject
-       with _ScrollSnapTypeProperty
+       with _ScrollSnapType
   inline def x: x = "x".asInstanceOf[x]
   
   @js.native
   sealed trait `x-end`
     extends StObject
-       with _BackgroundPositionXProperty[js.Any]
+       with _BackgroundPositionX[Any]
   inline def `x-end`: `x-end` = "x-end".asInstanceOf[`x-end`]
   
   @js.native
@@ -10608,7 +10916,7 @@ object csstypeStrings {
   @js.native
   sealed trait `x-start`
     extends StObject
-       with _BackgroundPositionXProperty[js.Any]
+       with _BackgroundPositionX[Any]
   inline def `x-start`: `x-start` = "x-start".asInstanceOf[`x-start`]
   
   @js.native
@@ -10638,19 +10946,19 @@ object csstypeStrings {
   @js.native
   sealed trait y
     extends StObject
-       with _ScrollSnapTypeProperty
+       with _ScrollSnapType
   inline def y: y = "y".asInstanceOf[y]
   
   @js.native
   sealed trait `y-end`
     extends StObject
-       with _BackgroundPositionYProperty[js.Any]
+       with _BackgroundPositionY[Any]
   inline def `y-end`: `y-end` = "y-end".asInstanceOf[`y-end`]
   
   @js.native
   sealed trait `y-start`
     extends StObject
-       with _BackgroundPositionYProperty[js.Any]
+       with _BackgroundPositionY[Any]
   inline def `y-start`: `y-start` = "y-start".asInstanceOf[`y-start`]
   
   @js.native
@@ -10668,19 +10976,19 @@ object csstypeStrings {
   @js.native
   sealed trait zoom
     extends StObject
-       with MsContentZoomingProperty
-       with ViewportUserZoomProperty
+       with MsContentZooming
+       with UserZoom
   inline def zoom: zoom = "zoom".asInstanceOf[zoom]
   
   @js.native
   sealed trait `zoom-in`
     extends StObject
-       with _CursorProperty
+       with _Cursor
   inline def `zoom-in`: `zoom-in` = "zoom-in".asInstanceOf[`zoom-in`]
   
   @js.native
   sealed trait `zoom-out`
     extends StObject
-       with _CursorProperty
+       with _Cursor
   inline def `zoom-out`: `zoom-out` = "zoom-out".asInstanceOf[`zoom-out`]
 }

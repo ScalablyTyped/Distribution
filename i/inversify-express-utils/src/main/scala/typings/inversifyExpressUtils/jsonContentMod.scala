@@ -7,14 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object jsonContentMod {
   
-  @JSImport("inversify-express-utils/dts/content/jsonContent", "JsonContent")
+  @JSImport("inversify-express-utils/lib/content/jsonContent", "JsonContent")
   @js.native
-  class JsonContent protected () extends HttpContent {
-    def this(content: js.Any) = this()
-    def this(content: js.Any, mediaType: String) = this()
+  open class JsonContent protected () extends HttpContent {
+    def this(content: Any) = this()
     
-    /* private */ var content: js.Any = js.native
-    
-    /* private */ var mediaType: js.Any = js.native
+    /* private */ var content: Any = js.native
   }
 }

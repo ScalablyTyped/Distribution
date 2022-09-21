@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Initializes a new instance of the ASPxClientSpreadsheetSynchronizationEventArgs class.
   */
-class ASPxClientSpreadsheetSynchronizationEventArgs ()
+open class ASPxClientSpreadsheetSynchronizationEventArgs ()
   extends StObject
      with typings.devexpressWeb.ASPxClientEventArgs

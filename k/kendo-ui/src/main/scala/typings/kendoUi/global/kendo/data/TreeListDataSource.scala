@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.data.TreeListDataSource")
 @js.native
-class TreeListDataSource ()
+open class TreeListDataSource ()
   extends StObject
      with typings.kendoUi.kendo.data.TreeListDataSource

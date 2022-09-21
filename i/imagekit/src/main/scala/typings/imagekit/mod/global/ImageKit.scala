@@ -19,7 +19,7 @@ import typings.imagekit.mod.global.ImageKit.PurgeCacheStatusResponse
 import typings.imagekit.mod.global.ImageKit.UploadOptions
 import typings.imagekit.mod.global.ImageKit.UploadResponse
 import typings.imagekit.mod.global.ImageKit.UrlOptions
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -27,7 +27,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ImageKit")
 @js.native
-class ImageKit protected () extends StObject {
+open class ImageKit protected () extends StObject {
   def this(options: PrivateKey) = this()
   
   /**
@@ -64,7 +64,7 @@ class ImageKit protected () extends StObject {
     * @param fileId The unique fileId of the uploaded file. fileId is returned in list files API and upload API
     * @param callback
     */
-  def deleteFile(fileId: String, callback: Callback[Unit, Error]): Unit = js.native
+  def deleteFile(fileId: String, callback: Callback[Unit, js.Error]): Unit = js.native
   
   /**
     * Authentication parameter generation
@@ -95,7 +95,7 @@ class ImageKit protected () extends StObject {
     * @param fileId
     * @param callback
     */
-  def getFileDetails(fileId: String, callback: Callback[FileDetailsResponse, Error]): Unit = js.native
+  def getFileDetails(fileId: String, callback: Callback[FileDetailsResponse, js.Error]): Unit = js.native
   
   /**
     * Get image exif, pHash and other metadata for uploaded files in ImageKit.io media library using this API.
@@ -113,7 +113,7 @@ class ImageKit protected () extends StObject {
     * @param fileId The unique fileId of the uploaded file. fileId is returned in list files API and upload API.
     * @param callback
     */
-  def getFileMetadata(fileId: String, callback: Callback[FileMetadataResponse, Error]): Unit = js.native
+  def getFileMetadata(fileId: String, callback: Callback[FileMetadataResponse, js.Error]): Unit = js.native
   
   /**
     * Get the status of submitted purge request.
@@ -131,7 +131,7 @@ class ImageKit protected () extends StObject {
     * @param cacheRequestId The requestId returned in response of purge cache API.
     * @param callback
     */
-  def getPurgeCacheStatus(cacheRequestId: String, callback: Callback[PurgeCacheStatusResponse, Error]): Unit = js.native
+  def getPurgeCacheStatus(cacheRequestId: String, callback: Callback[PurgeCacheStatusResponse, js.Error]): Unit = js.native
   
   /**
     * This API can list all the uploaded files in your ImageKit.io media library.
@@ -151,7 +151,7 @@ class ImageKit protected () extends StObject {
     * @param listFilesOptions
     * @param callback
     */
-  def listFiles(listFilesOptions: ListFileOptions, callback: Callback[ListFileResponse, Error]): Unit = js.native
+  def listFiles(listFilesOptions: ListFileOptions, callback: Callback[ListFileResponse, js.Error]): Unit = js.native
   
   /**
     * Perceptual Hash (pHash)
@@ -180,7 +180,7 @@ class ImageKit protected () extends StObject {
     * @param fullUrl The exact URL of the file to be purged. For example - https://ik.imageki.io/your_imagekit_id/rest-of-the-file-path.jpg
     * @param callback
     */
-  def purgeCache(fullUrl: String, callback: Callback[PurgeCacheResponse, Error]): Unit = js.native
+  def purgeCache(fullUrl: String, callback: Callback[PurgeCacheResponse, js.Error]): Unit = js.native
   
   /**
     * Update file details such as tags and customCoordinates attribute using update file detail API.
@@ -203,7 +203,7 @@ class ImageKit protected () extends StObject {
   def updateFileDetails(
     fileId: String,
     optionsFileDetails: FileDetailsOptions,
-    callback: Callback[FileDetailsResponse, Error]
+    callback: Callback[FileDetailsResponse, js.Error]
   ): Unit = js.native
   
   /**
@@ -228,7 +228,7 @@ class ImageKit protected () extends StObject {
     * @param uploadOptions
     * @param callback
     */
-  def upload(uploadOptions: UploadOptions, callback: Callback[UploadResponse, Error]): Unit = js.native
+  def upload(uploadOptions: UploadOptions, callback: Callback[UploadResponse, js.Error]): Unit = js.native
   
   /**
     * You can add multiple origins in the same ImageKit.io account.
@@ -264,7 +264,7 @@ object ImageKit {
       
       inline def setMissingFileIds(value: js.Array[String]): Self = StObject.set(x, "missingFileIds", value.asInstanceOf[js.Any])
       
-      inline def setMissingFileIdsVarargs(value: String*): Self = StObject.set(x, "missingFileIds", js.Array(value :_*))
+      inline def setMissingFileIdsVarargs(value: String*): Self = StObject.set(x, "missingFileIds", js.Array(value*))
     }
   }
   
@@ -291,11 +291,11 @@ object ImageKit {
       
       inline def setSuccessfullyDeletedFileIds(value: js.Array[String]): Self = StObject.set(x, "successfullyDeletedFileIds", value.asInstanceOf[js.Any])
       
-      inline def setSuccessfullyDeletedFileIdsVarargs(value: String*): Self = StObject.set(x, "successfullyDeletedFileIds", js.Array(value :_*))
+      inline def setSuccessfullyDeletedFileIdsVarargs(value: String*): Self = StObject.set(x, "successfullyDeletedFileIds", js.Array(value*))
     }
   }
   
-  type Callback[T, E /* <: Error */] = js.Function2[/* error */ js.UndefOr[E], /* response */ js.UndefOr[T], Unit]
+  type Callback[T, E /* <: js.Error */] = js.Function2[/* error */ js.UndefOr[E], /* response */ js.UndefOr[T], Unit]
   
   /**
     * Options when updating file details such as tags and customCoordinates attribute using update file detail API.
@@ -332,7 +332,7 @@ object ImageKit {
       
       inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     }
   }
   
@@ -434,7 +434,7 @@ object ImageKit {
       
       inline def setTagsNull: Self = StObject.set(x, "tags", null)
       
-      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
       
       inline def setThumbnail(value: String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
       
@@ -774,7 +774,7 @@ object ImageKit {
       
       inline def setTagsNull: Self = StObject.set(x, "tags", null)
       
-      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
       
       inline def setThumbnail(value: String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
       
@@ -1468,7 +1468,7 @@ object ImageKit {
       
       inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
       
       inline def setThumbnailUrl(value: String): Self = StObject.set(x, "thumbnailUrl", value.asInstanceOf[js.Any])
       
@@ -1572,7 +1572,7 @@ object ImageKit {
       
       inline def setTransformationUndefined: Self = StObject.set(x, "transformation", js.undefined)
       
-      inline def setTransformationVarargs(value: Transformation*): Self = StObject.set(x, "transformation", js.Array(value :_*))
+      inline def setTransformationVarargs(value: Transformation*): Self = StObject.set(x, "transformation", js.Array(value*))
       
       inline def setUrlEndpoint(value: String): Self = StObject.set(x, "urlEndpoint", value.asInstanceOf[js.Any])
       

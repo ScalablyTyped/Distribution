@@ -13,31 +13,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.Ruler2")
 @js.native
-/* private */ class Ruler2 ()
+/* private */ open class Ruler2 ()
   extends StObject
      with typings.activexOffice.Office.Ruler2 {
   
   /* CompleteClass */
-  override val Application: js.Any = js.native
+  override val Application: Any = js.native
   
   /* CompleteClass */
   override val Creator: Double = js.native
   
   /* CompleteClass */
-  @JSName("Levels")
-  override def Levels_1(Index: `1`): typings.activexOffice.Office.RulerLevel2 = js.native
-  /* CompleteClass */
-  @JSName("Levels")
-  override def Levels_2(Index: `2`): typings.activexOffice.Office.RulerLevel2 = js.native
-  /* CompleteClass */
-  @JSName("Levels")
-  override def Levels_3(Index: `3`): typings.activexOffice.Office.RulerLevel2 = js.native
-  /* CompleteClass */
-  @JSName("Levels")
-  override def Levels_4(Index: `4`): typings.activexOffice.Office.RulerLevel2 = js.native
-  /* CompleteClass */
-  @JSName("Levels")
-  override def Levels_5(Index: `5`): typings.activexOffice.Office.RulerLevel2 = js.native
+  override def Levels(Index: `1` | `2` | `3` | `4` | `5`): typings.activexOffice.Office.RulerLevel2 = js.native
   /* CompleteClass */
   @JSName("Levels")
   override val Levels_Original: RulerLevels2 = js.native
@@ -47,7 +34,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OfficeDotRuler2_typekey: typings.activexOffice.Office.Ruler2 = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override def TabStops(Index: Double): typings.activexOffice.Office.TabStop2 = js.native

@@ -1,6 +1,5 @@
 package typings.tizenAccessory
 
-import typings.std.Error
 import typings.tizenAccessory.anon.Onconnect
 import typings.tizenAccessory.anon.Onerror
 import typings.tizenAccessory.tizenAccessoryStrings.consumer
@@ -21,7 +20,7 @@ trait SAAgent extends StObject {
   def authenticatePeerAgent(
     peerAgent: SAPeerAgent,
     success: js.Function2[/* peerAgent */ SAPeerAgent, /* authToken */ SAAuthenticationToken, Unit],
-    error: js.Function1[/* e */ Error, Unit]
+    error: js.Function1[/* e */ js.Error, Unit]
   ): Unit = js.native
   
   val channelIds: js.Array[Double] = js.native

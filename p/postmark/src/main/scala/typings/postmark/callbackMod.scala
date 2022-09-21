@@ -1,6 +1,6 @@
 package typings.postmark
 
-import typings.postmark.errorsMod.PostmarkError
+import typings.postmark.errorsErrorsMod.PostmarkError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

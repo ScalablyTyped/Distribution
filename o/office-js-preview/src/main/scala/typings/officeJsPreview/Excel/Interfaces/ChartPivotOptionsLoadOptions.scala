@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Encapsulates the options for the pivot chart.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 trait ChartPivotOptionsLoadOptions extends StObject {
@@ -19,33 +19,33 @@ trait ChartPivotOptionsLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies whether to display the axis field buttons on a PivotChart. The `showAxisFieldButtons` property corresponds to the "Show Axis Field Buttons" command on the "Field Buttons" drop-down list of the "Analyze" tab, which is available when a PivotChart is selected.
     *
-    * Specifies whether to display the axis field buttons on a PivotChart. The ShowAxisFieldButtons property corresponds to the "Show Axis Field Buttons" command on the "Field Buttons" drop-down list of the "Analyze" tab, which is available when a PivotChart is selected.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var showAxisFieldButtons: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies whether to display the legend field buttons on a PivotChart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var showLegendFieldButtons: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies whether to display the report filter field buttons on a PivotChart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var showReportFilterFieldButtons: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies whether to display the show value field buttons on a PivotChart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var showValueFieldButtons: js.UndefOr[Boolean] = js.undefined

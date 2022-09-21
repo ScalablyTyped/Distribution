@@ -10,10 +10,10 @@ object labelMod {
   
   @JSImport("material-ui/svg-icons/action/label", JSImport.Default)
   @js.native
-  class default () extends ActionLabel
+  open class default () extends ActionLabel
   
   @JSImport("material-ui/svg-icons/action/label", "ActionLabel")
   @js.native
-  class ActionLabel ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionLabel ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

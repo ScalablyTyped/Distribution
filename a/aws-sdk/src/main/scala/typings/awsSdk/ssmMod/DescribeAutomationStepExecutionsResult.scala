@@ -33,6 +33,6 @@ object DescribeAutomationStepExecutionsResult {
     
     inline def setStepExecutionsUndefined: Self = StObject.set(x, "StepExecutions", js.undefined)
     
-    inline def setStepExecutionsVarargs(value: StepExecution*): Self = StObject.set(x, "StepExecutions", js.Array(value :_*))
+    inline def setStepExecutionsVarargs(value: StepExecution*): Self = StObject.set(x, "StepExecutions", js.Array(value*))
   }
 }

@@ -10,5 +10,5 @@ trait ProgressBar extends StObject {
   def hideProgress(): Unit = js.native
   
   def showProgress(): Unit = js.native
-  def showProgress(config: js.Any): Unit = js.native
+  def showProgress(config: Any): Unit = js.native
 }

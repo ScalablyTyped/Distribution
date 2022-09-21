@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ChangeTableBorderRepositoryItemCommand")
 @js.native
-class ChangeTableBorderRepositoryItemCommand ()
+open class ChangeTableBorderRepositoryItemCommand ()
   extends StObject
      with typings.devexpressWeb.ChangeTableBorderRepositoryItemCommand {
   

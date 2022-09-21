@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents the protection of a worksheet object.
   *
-  * Represents the protection of a sheet object.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.2]
   */
 @JSGlobal("Excel.WorksheetProtection")
 @js.native
-class WorksheetProtection ()
+open class WorksheetProtection ()
   extends StObject
      with typings.officeJsPreview.Excel.WorksheetProtection {
   

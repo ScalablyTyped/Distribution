@@ -29,6 +29,6 @@ object PlacementsGenerateTagsResponse {
     
     inline def setPlacementTagsUndefined: Self = StObject.set(x, "placementTags", js.undefined)
     
-    inline def setPlacementTagsVarargs(value: PlacementTag*): Self = StObject.set(x, "placementTags", js.Array(value :_*))
+    inline def setPlacementTagsVarargs(value: PlacementTag*): Self = StObject.set(x, "placementTags", js.Array(value*))
   }
 }

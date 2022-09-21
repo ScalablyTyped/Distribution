@@ -10,13 +10,13 @@ trait CoreServicesShim
   extends StObject
      with ShimBase {
   
-  def dumpMemory(dummy: js.Any): String
+  def dumpMemory(dummy: Any): String
   
-  /* private */ def forwardJSONCall(actionDescription: js.Any, action: js.Any): js.Any
+  /* private */ def forwardJSONCall(actionDescription: Any, action: Any): Any
   
   def getDefaultCompilationSettings(): String
   
-  def getMemoryInfo(dummy: js.Any): String
+  def getMemoryInfo(dummy: Any): String
   
   def getPreProcessedFileInfo(fileName: String, sourceText: IScriptSnapshot): String
   
@@ -29,12 +29,12 @@ trait CoreServicesShim
 object CoreServicesShim {
   
   inline def apply(
-    dispose: js.Any => Unit,
-    dumpMemory: js.Any => String,
-    factory: js.Any,
-    forwardJSONCall: (js.Any, js.Any) => js.Any,
+    dispose: Any => Unit,
+    dumpMemory: Any => String,
+    factory: Any,
+    forwardJSONCall: (Any, Any) => Any,
     getDefaultCompilationSettings: () => String,
-    getMemoryInfo: js.Any => String,
+    getMemoryInfo: Any => String,
     getPreProcessedFileInfo: (String, IScriptSnapshot) => String,
     host: ICoreServicesHost,
     logger: ILogger,
@@ -46,13 +46,13 @@ object CoreServicesShim {
   
   extension [Self <: CoreServicesShim](x: Self) {
     
-    inline def setDumpMemory(value: js.Any => String): Self = StObject.set(x, "dumpMemory", js.Any.fromFunction1(value))
+    inline def setDumpMemory(value: Any => String): Self = StObject.set(x, "dumpMemory", js.Any.fromFunction1(value))
     
-    inline def setForwardJSONCall(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "forwardJSONCall", js.Any.fromFunction2(value))
+    inline def setForwardJSONCall(value: (Any, Any) => Any): Self = StObject.set(x, "forwardJSONCall", js.Any.fromFunction2(value))
     
     inline def setGetDefaultCompilationSettings(value: () => String): Self = StObject.set(x, "getDefaultCompilationSettings", js.Any.fromFunction0(value))
     
-    inline def setGetMemoryInfo(value: js.Any => String): Self = StObject.set(x, "getMemoryInfo", js.Any.fromFunction1(value))
+    inline def setGetMemoryInfo(value: Any => String): Self = StObject.set(x, "getMemoryInfo", js.Any.fromFunction1(value))
     
     inline def setGetPreProcessedFileInfo(value: (String, IScriptSnapshot) => String): Self = StObject.set(x, "getPreProcessedFileInfo", js.Any.fromFunction2(value))
     

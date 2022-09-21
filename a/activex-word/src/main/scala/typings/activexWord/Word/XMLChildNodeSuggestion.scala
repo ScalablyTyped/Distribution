@@ -14,11 +14,11 @@ trait XMLChildNodeSuggestion extends StObject {
   val Creator: Double = js.native
   
   def Insert(): XMLNode = js.native
-  def Insert(Range: js.Any): XMLNode = js.native
+  def Insert(Range: Any): XMLNode = js.native
   
   val NamespaceURI: String = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   /* private */ @JSName("Word.XMLChildNodeSuggestion_typekey")
   var WordDotXMLChildNodeSuggestion_typekey: XMLChildNodeSuggestion = js.native

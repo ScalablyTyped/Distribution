@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "http-status-codes" : "2.1.4"
+      "http-status-codes" : "2.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "http-status-codes" : "2.1.4"
+      "http-status-codes" : "2.2.0"
     }
   ],
   "compile-devDependencies" : [

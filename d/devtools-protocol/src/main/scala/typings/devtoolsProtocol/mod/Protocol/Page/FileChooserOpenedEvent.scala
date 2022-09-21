@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FileChooserOpenedEvent extends StObject {
   
   /**
-    * Input node id.
+    * Input node id. Only present for file choosers opened via an <input type="file"> element.
     */
-  var backendNodeId: BackendNodeId
+  var backendNodeId: js.UndefOr[BackendNodeId] = js.undefined
   
   /**
     * Id of the frame containing input node.
@@ -26,14 +26,16 @@ trait FileChooserOpenedEvent extends StObject {
 }
 object FileChooserOpenedEvent {
   
-  inline def apply(backendNodeId: BackendNodeId, frameId: FrameId, mode: selectSingle | selectMultiple): FileChooserOpenedEvent = {
-    val __obj = js.Dynamic.literal(backendNodeId = backendNodeId.asInstanceOf[js.Any], frameId = frameId.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any])
+  inline def apply(frameId: FrameId, mode: selectSingle | selectMultiple): FileChooserOpenedEvent = {
+    val __obj = js.Dynamic.literal(frameId = frameId.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileChooserOpenedEvent]
   }
   
   extension [Self <: FileChooserOpenedEvent](x: Self) {
     
     inline def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
+    
+    inline def setBackendNodeIdUndefined: Self = StObject.set(x, "backendNodeId", js.undefined)
     
     inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     

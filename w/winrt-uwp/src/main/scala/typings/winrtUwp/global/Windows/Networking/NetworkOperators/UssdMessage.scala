@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents a USSD message that is used for sending messages to and receiving messages from the network. */
 @JSGlobal("Windows.Networking.NetworkOperators.UssdMessage")
 @js.native
-class UssdMessage protected ()
+open class UssdMessage protected ()
   extends StObject
      with typings.winrtUwp.Windows.Networking.NetworkOperators.UssdMessage {
   /**

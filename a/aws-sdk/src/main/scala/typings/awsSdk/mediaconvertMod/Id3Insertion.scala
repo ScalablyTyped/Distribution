@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Id3Insertion extends StObject {
   
   /**
-    * Use ID3 tag (Id3) to provide a tag value in base64-encode format.
+    * Use ID3 tag (Id3) to provide a fully formed ID3 tag in base64-encode format.
     */
   var Id3: js.UndefOr[stringPatternAZaZ0902] = js.undefined
   

@@ -1,7 +1,7 @@
 
 # Scala.js typings for command-line-args
 
-Typings are for version 5.0
+Typings are for version 5.2
 
 ## Library description:
 A mature, feature-complete library to parse command-line options.
@@ -10,15 +10,12 @@ A mature, feature-complete library to parse command-line options.
 | ------------------ | :-------------: |
 | Full name          | command-line-args |
 | Keywords           | argv, parse, argument, args, option, options, parser, parsing, cli, command, line |
-| # releases         | 3 |
-| # dependents       | 1677 |
-| # downloads        | 24744118 |
-| # stars            | 49 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 5228456.666666667 |
+| # stars            | 610.0 |
 
 ## Links
-- [Homepage](https://github.com/75lb/command-line-args#readme)
-- [Bugs](https://github.com/75lb/command-line-args/issues)
-- [Repository](https://github.com/75lb/command-line-args)
 - [Npm](https://www.npmjs.com/package/command-line-args)
     
 

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.applicationCache")
 @js.native
-/* private */ class applicationCache ()
+/* private */ open class applicationCache ()
   extends StObject
      with typings.activexMshtml.MSHTML.applicationCache {
   
@@ -18,28 +18,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def abort(): Unit = js.native
   
   /* CompleteClass */
-  var oncached: js.Any = js.native
+  var oncached: Any = js.native
   
   /* CompleteClass */
-  var onchecking: js.Any = js.native
+  var onchecking: Any = js.native
   
   /* CompleteClass */
-  var ondownloading: js.Any = js.native
+  var ondownloading: Any = js.native
   
   /* CompleteClass */
-  var onerror: js.Any = js.native
+  var onerror: Any = js.native
   
   /* CompleteClass */
-  var onnoupdate: js.Any = js.native
+  var onnoupdate: Any = js.native
   
   /* CompleteClass */
-  var onobsolete: js.Any = js.native
+  var onobsolete: Any = js.native
   
   /* CompleteClass */
-  var onprogress: js.Any = js.native
+  var onprogress: Any = js.native
   
   /* CompleteClass */
-  var onupdateready: js.Any = js.native
+  var onupdateready: Any = js.native
   
   /* CompleteClass */
   override val status: Double = js.native

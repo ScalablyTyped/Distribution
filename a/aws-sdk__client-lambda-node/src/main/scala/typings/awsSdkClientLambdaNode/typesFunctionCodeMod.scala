@@ -1,8 +1,5 @@
 package typings.awsSdkClientLambdaNode
 
-import typings.std.ArrayBuffer
-import typings.std.ArrayBufferView
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +26,7 @@ object typesFunctionCodeMod {
     /**
       * <p>The base64-encoded contents of your zip file containing your deployment package. AWS SDK and AWS CLI clients handle the encoding for you.</p>
       */
-    var ZipFile: js.UndefOr[ArrayBuffer | ArrayBufferView | String] = js.undefined
+    var ZipFile: js.UndefOr[js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | String] = js.undefined
   }
   object FunctionCode {
     
@@ -52,7 +49,7 @@ object typesFunctionCodeMod {
       
       inline def setS3ObjectVersionUndefined: Self = StObject.set(x, "S3ObjectVersion", js.undefined)
       
-      inline def setZipFile(value: ArrayBuffer | ArrayBufferView | String): Self = StObject.set(x, "ZipFile", value.asInstanceOf[js.Any])
+      inline def setZipFile(value: js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | String): Self = StObject.set(x, "ZipFile", value.asInstanceOf[js.Any])
       
       inline def setZipFileUndefined: Self = StObject.set(x, "ZipFile", js.undefined)
     }
@@ -66,7 +63,7 @@ object typesFunctionCodeMod {
       * <p>The base64-encoded contents of your zip file containing your deployment package. AWS SDK and AWS CLI clients handle the encoding for you.</p>
       */
     @JSName("ZipFile")
-    var ZipFile_UnmarshalledFunctionCode: js.UndefOr[Uint8Array] = js.undefined
+    var ZipFile_UnmarshalledFunctionCode: js.UndefOr[js.typedarray.Uint8Array] = js.undefined
   }
   object UnmarshalledFunctionCode {
     
@@ -77,7 +74,7 @@ object typesFunctionCodeMod {
     
     extension [Self <: UnmarshalledFunctionCode](x: Self) {
       
-      inline def setZipFile(value: Uint8Array): Self = StObject.set(x, "ZipFile", value.asInstanceOf[js.Any])
+      inline def setZipFile(value: js.typedarray.Uint8Array): Self = StObject.set(x, "ZipFile", value.asInstanceOf[js.Any])
       
       inline def setZipFileUndefined: Self = StObject.set(x, "ZipFile", js.undefined)
     }

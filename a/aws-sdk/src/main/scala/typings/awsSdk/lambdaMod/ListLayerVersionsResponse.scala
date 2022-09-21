@@ -29,7 +29,7 @@ object ListLayerVersionsResponse {
     
     inline def setLayerVersionsUndefined: Self = StObject.set(x, "LayerVersions", js.undefined)
     
-    inline def setLayerVersionsVarargs(value: LayerVersionsListItem*): Self = StObject.set(x, "LayerVersions", js.Array(value :_*))
+    inline def setLayerVersionsVarargs(value: LayerVersionsListItem*): Self = StObject.set(x, "LayerVersions", js.Array(value*))
     
     inline def setNextMarker(value: String): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     

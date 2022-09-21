@@ -13,8 +13,8 @@ object panelMod {
   
   @JSImport("react-bootstrap/lib/Panel", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[PanelProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[PanelProps, js.Object, Any]
   @JSImport("react-bootstrap/lib/Panel", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
@@ -22,7 +22,7 @@ object panelMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/Panel", "Body")
   @js.native
-  class Body ()
+  open class Body ()
     extends typings.reactBootstrap.panelBodyMod.^
   /* static member */
   @JSImport("react-bootstrap/lib/Panel", "Body")
@@ -33,7 +33,7 @@ object panelMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/Panel", "Collapse")
   @js.native
-  class Collapse ()
+  open class Collapse ()
     extends typings.reactBootstrap.panelCollapseMod.^
   /* static member */
   @JSImport("react-bootstrap/lib/Panel", "Collapse")
@@ -44,7 +44,7 @@ object panelMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/Panel", "Footer")
   @js.native
-  class Footer ()
+  open class Footer ()
     extends typings.reactBootstrap.panelFooterMod.^
   /* static member */
   @JSImport("react-bootstrap/lib/Panel", "Footer")
@@ -55,7 +55,7 @@ object panelMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/Panel", "Heading")
   @js.native
-  class Heading ()
+  open class Heading ()
     extends typings.reactBootstrap.panelHeadingMod.^
   /* static member */
   @JSImport("react-bootstrap/lib/Panel", "Heading")
@@ -66,7 +66,7 @@ object panelMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/Panel", "Title")
   @js.native
-  class Title ()
+  open class Title ()
     extends typings.reactBootstrap.panelTitleMod.^
   /* static member */
   @JSImport("react-bootstrap/lib/Panel", "Title")
@@ -77,7 +77,7 @@ object panelMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/Panel", "Toggle")
   @js.native
-  class Toggle ()
+  open class Toggle ()
     extends typings.reactBootstrap.panelToggleMod.^
   /* static member */
   @JSImport("react-bootstrap/lib/Panel", "Toggle")
@@ -85,20 +85,20 @@ object panelMod {
   def Toggle: Instantiable0[typings.reactBootstrap.panelToggleMod.^] = js.native
   inline def Toggle_=(x: Instantiable0[typings.reactBootstrap.panelToggleMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Toggle")(x.asInstanceOf[js.Any])
   
-  @js.native
-  trait Panel
-    extends Component[PanelProps, js.Object, js.Any]
+  type Panel = Component[PanelProps, js.Object, Any]
   
   trait PanelProps
     extends StObject
        with TransitionCallbacks
        with HTMLProps[Panel] {
     
+    var bsClass: js.UndefOr[String] = js.undefined
+    
     var bsStyle: js.UndefOr[String] = js.undefined
     
     var defaultExpanded: js.UndefOr[Boolean] = js.undefined
     
-    var eventKey: js.UndefOr[js.Any] = js.undefined
+    var eventKey: js.UndefOr[Any] = js.undefined
     
     var expanded: js.UndefOr[Boolean] = js.undefined
     
@@ -116,6 +116,10 @@ object panelMod {
     
     extension [Self <: PanelProps](x: Self) {
       
+      inline def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
+      
+      inline def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
+      
       inline def setBsStyle(value: String): Self = StObject.set(x, "bsStyle", value.asInstanceOf[js.Any])
       
       inline def setBsStyleUndefined: Self = StObject.set(x, "bsStyle", js.undefined)
@@ -124,7 +128,7 @@ object panelMod {
       
       inline def setDefaultExpandedUndefined: Self = StObject.set(x, "defaultExpanded", js.undefined)
       
-      inline def setEventKey(value: js.Any): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
+      inline def setEventKey(value: Any): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
       
       inline def setEventKeyUndefined: Self = StObject.set(x, "eventKey", js.undefined)
       

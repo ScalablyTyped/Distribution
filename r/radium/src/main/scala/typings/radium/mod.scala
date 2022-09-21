@@ -21,7 +21,7 @@ object mod {
   
   object default {
     
-    inline def apply(config: RadiumConfig): js.Function1[/* component */ js.UndefOr[js.Any], js.Any] = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ js.UndefOr[js.Any], js.Any]]
+    inline def apply(config: RadiumConfig): js.Function1[/* component */ js.UndefOr[Any], Any] = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ js.UndefOr[Any], Any]]
     // @Radium decorator
     inline def apply[TElement /* <: js.Function */](component: TElement): TElement = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[TElement]
     
@@ -31,27 +31,21 @@ object mod {
     
     @JSImport("radium", "default.Style")
     @js.native
-    class Style ()
-      extends Component[StyleProps, js.Object, js.Any]
+    open class Style ()
+      extends Component[StyleProps, js.Object, Any]
     
     @JSImport("radium", "default.StyleRoot")
     @js.native
-    class StyleRoot ()
-      extends Component[StyleRootProps, js.Object, js.Any]
+    open class StyleRoot ()
+      extends Component[StyleRootProps, js.Object, Any]
     
     @JSImport("radium", "default.TestMode")
     @js.native
     def TestMode: RadiumTestMode = js.native
     inline def TestMode_=(x: RadiumTestMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TestMode")(x.asInstanceOf[js.Any])
     
-    inline def getState_active(state: js.Any, elementKey: String, value: Colonactive): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("getState")(state.asInstanceOf[js.Any], elementKey.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    inline def getState_active(state: js.Any, elementKey: Unit, value: Colonactive): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("getState")(state.asInstanceOf[js.Any], elementKey.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    
-    inline def getState_focus(state: js.Any, elementKey: String, value: Colonfocus): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("getState")(state.asInstanceOf[js.Any], elementKey.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    inline def getState_focus(state: js.Any, elementKey: Unit, value: Colonfocus): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("getState")(state.asInstanceOf[js.Any], elementKey.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    
-    inline def getState_hover(state: js.Any, elementKey: String, value: Colonhover): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("getState")(state.asInstanceOf[js.Any], elementKey.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    inline def getState_hover(state: js.Any, elementKey: Unit, value: Colonhover): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("getState")(state.asInstanceOf[js.Any], elementKey.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def getState(state: Any, elementKey: String, value: Colonactive | Colonfocus | Colonhover): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("getState")(state.asInstanceOf[js.Any], elementKey.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def getState(state: Any, elementKey: Unit, value: Colonactive | Colonfocus | Colonhover): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("getState")(state.asInstanceOf[js.Any], elementKey.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     inline def keyframes(keyframes: StyleRules): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("keyframes")(keyframes.asInstanceOf[js.Any]).asInstanceOf[js.Object]
     inline def keyframes(keyframes: StyleRules, name: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("keyframes")(keyframes.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Object]
@@ -70,7 +64,7 @@ object mod {
       /**
         * List of plugins
         */
-      var plugins: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var plugins: js.UndefOr[js.Array[Any]] = js.undefined
       
       /**
         * Set the user agent passed to inline-style-prefixer to perform prefixing on style objects.
@@ -91,11 +85,11 @@ object mod {
         
         inline def setMatchMediaUndefined: Self = StObject.set(x, "matchMedia", js.undefined)
         
-        inline def setPlugins(value: js.Array[js.Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+        inline def setPlugins(value: js.Array[Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
         
         inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
         
-        inline def setPluginsVarargs(value: js.Any*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+        inline def setPluginsVarargs(value: Any*): Self = StObject.set(x, "plugins", js.Array(value*))
         
         inline def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
         
@@ -141,7 +135,7 @@ object mod {
       }
     }
     
-    type Style = Component[StyleProps, js.Object, js.Any]
+    type Style = Component[StyleProps, js.Object, Any]
     
     trait StyleProps extends StObject {
       
@@ -175,9 +169,7 @@ object mod {
       }
     }
     
-    @js.native
-    trait StyleRoot
-      extends Component[StyleRootProps, js.Object, js.Any]
+    type StyleRoot = Component[StyleRootProps, js.Object, Any]
     
     trait StyleRootProps
       extends StObject

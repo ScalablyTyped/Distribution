@@ -24,11 +24,11 @@ trait AppointmentClickEventArgs
   /**
     * Gets the HTML element that the event was triggered on.
     */
-  var htmlElement: js.Any
+  var htmlElement: Any
 }
 object AppointmentClickEventArgs {
   
-  inline def apply(appointmentId: String, handled: Boolean, htmlElement: js.Any): AppointmentClickEventArgs = {
+  inline def apply(appointmentId: String, handled: Boolean, htmlElement: Any): AppointmentClickEventArgs = {
     val __obj = js.Dynamic.literal(appointmentId = appointmentId.asInstanceOf[js.Any], handled = handled.asInstanceOf[js.Any], htmlElement = htmlElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppointmentClickEventArgs]
   }
@@ -39,6 +39,6 @@ object AppointmentClickEventArgs {
     
     inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
     
-    inline def setHtmlElement(value: js.Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
+    inline def setHtmlElement(value: Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
   }
 }

@@ -1,9 +1,9 @@
 package typings.maximMazurokGapiClientSpeech.gapi.client.speech
 
 import typings.gapiClient.gapi.client.Request
-import typings.maximMazurokGapiClientSpeech.anon.Fields
-import typings.maximMazurokGapiClientSpeech.anon.Key
-import typings.maximMazurokGapiClientSpeech.anon.Oauthtoken
+import typings.maximMazurokGapiClientSpeech.anon.QuotaUser
+import typings.maximMazurokGapiClientSpeech.anon.Resource
+import typings.maximMazurokGapiClientSpeech.anon.UploadType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,10 +16,10 @@ trait SpeechResource extends StObject {
     * contains a `LongRunningRecognizeResponse` message. For more information on asynchronous speech recognition, see the
     * [how-to](https://cloud.google.com/speech-to-text/docs/async-recognize).
     */
-  def longrunningrecognize(request: Fields): Request[Operation] = js.native
-  def longrunningrecognize(request: Key, body: LongRunningRecognizeRequest): Request[Operation] = js.native
+  def longrunningrecognize(request: QuotaUser): Request[Operation] = js.native
+  def longrunningrecognize(request: UploadType, body: LongRunningRecognizeRequest): Request[Operation] = js.native
   
-  def recognize(request: Key, body: RecognizeRequest): Request[RecognizeResponse] = js.native
   /** Performs synchronous speech recognition: receive results after all audio has been sent and processed. */
-  def recognize(request: Oauthtoken): Request[RecognizeResponse] = js.native
+  def recognize(request: Resource): Request[RecognizeResponse] = js.native
+  def recognize(request: UploadType, body: RecognizeRequest): Request[RecognizeResponse] = js.native
 }

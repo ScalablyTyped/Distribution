@@ -11,9 +11,9 @@ invariant
 | Full name          | invariant |
 | Keywords           | test, invariant |
 | # releases         | 1 |
-| # dependents       | 3039 |
-| # downloads        | 541599680 |
-| # stars            | 24 |
+| # dependents       | 0.0 |
+| # downloads        | 5.2408471666666664E7 |
+| # stars            | 1126.0 |
 
 ## Links
 - [Homepage](https://github.com/zertosh/invariant#readme)

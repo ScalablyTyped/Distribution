@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.FileSaveBinaryInformation")
 @js.native
-class FileSaveBinaryInformation ()
+open class FileSaveBinaryInformation ()
   extends StObject
      with typings.sharepoint.SP.FileSaveBinaryInformation {
   
   /* CompleteClass */
-  override def customFromJson(obj: js.Any): Boolean = js.native
+  override def customFromJson(obj: Any): Boolean = js.native
   
   /* CompleteClass */
   override def customWriteToXml(
@@ -20,7 +20,7 @@ class FileSaveBinaryInformation ()
   ): Boolean = js.native
   
   /* CompleteClass */
-  override def fromJson(obj: js.Any): Unit = js.native
+  override def fromJson(obj: Any): Unit = js.native
   
   /* CompleteClass */
   override def get_checkRequiredFields(): Boolean = js.native
@@ -32,7 +32,7 @@ class FileSaveBinaryInformation ()
   override def get_eTag(): String = js.native
   
   /* CompleteClass */
-  override def get_fieldValues(): js.Any = js.native
+  override def get_fieldValues(): Any = js.native
   
   /* CompleteClass */
   override def get_typeId(): String = js.native
@@ -47,7 +47,7 @@ class FileSaveBinaryInformation ()
   override def set_eTag(value: String): Unit = js.native
   
   /* CompleteClass */
-  override def set_fieldValues(value: js.Any): Unit = js.native
+  override def set_fieldValues(value: Any): Unit = js.native
   
   /* CompleteClass */
   override def writeToXml(

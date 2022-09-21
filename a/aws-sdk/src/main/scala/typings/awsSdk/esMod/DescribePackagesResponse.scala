@@ -30,6 +30,6 @@ object DescribePackagesResponse {
     
     inline def setPackageDetailsListUndefined: Self = StObject.set(x, "PackageDetailsList", js.undefined)
     
-    inline def setPackageDetailsListVarargs(value: PackageDetails*): Self = StObject.set(x, "PackageDetailsList", js.Array(value :_*))
+    inline def setPackageDetailsListVarargs(value: PackageDetails*): Self = StObject.set(x, "PackageDetailsList", js.Array(value*))
   }
 }

@@ -12,119 +12,119 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ShapeUpdateData extends StObject {
   
   /**
+    * Specifies the alternative description text for a `Shape` object.
     *
-    * Specifies the alternative description text for a Shape object.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var altTextDescription: js.UndefOr[String] = js.undefined
   
   /**
+    * Specifies the alternative title text for a `Shape` object.
     *
-    * Specifies the alternative title text for a Shape object.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var altTextTitle: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Returns the fill formatting of this shape.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var fill: js.UndefOr[ShapeFillUpdateData] = js.undefined
   
   /**
+    * Specifies the geometric shape type of this geometric shape. See `Excel.GeometricShapeType` for details. Returns `null` if the shape type is not "GeometricShape".
     *
-    * Specifies the geometric shape type of this geometric shape. See Excel.GeometricShapeType for details. Returns null if the shape type is not "GeometricShape".
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var geometricShapeType: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179 */ Any
   ] = js.undefined
   
   /**
-    *
     * Specifies the height, in points, of the shape.
-    Throws an invalid argument exception when set with a negative value or zero as input.
+    Throws an `InvalidArgument` exception when set with a negative value or zero as an input.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var height: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * The distance, in points, from the left side of the shape to the left side of the worksheet.
-    Throws an invalid argument exception when set with a negative value as input.
+    Throws an `InvalidArgument` exception when set with a negative value as an input.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var left: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Returns the line formatting of this shape.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var lineFormat: js.UndefOr[ShapeLineFormatUpdateData] = js.undefined
   
   /**
-    *
     * Specifies if the aspect ratio of this shape is locked.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var lockAspectRatio: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies the name of the shape.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Represents how the object is attached to the cells below it.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var placement: js.UndefOr[Placement | TwoCell | OneCell | Absolute] = js.undefined
   
   /**
-    *
     * Specifies the rotation, in degrees, of the shape.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var rotation: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * The distance, in points, from the top edge of the shape to the top edge of the worksheet.
-    Throws an invalid argument exception when set with a negative value as input.
+    Throws an `InvalidArgument` exception when set with a negative value as an input.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var top: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Specifies if the shape is visible.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies the width, in points, of the shape.
-    Throws an invalid argument exception when set with a negative value or zero as input.
+    Throws an `InvalidArgument` exception when set with a negative value or zero as an input.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var width: js.UndefOr[Double] = js.undefined
@@ -150,7 +150,7 @@ object ShapeUpdateData {
     
     inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
-    inline def setGeometricShapeType(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179 */ js.Any): Self = StObject.set(x, "geometricShapeType", value.asInstanceOf[js.Any])
+    inline def setGeometricShapeType(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179 */ Any): Self = StObject.set(x, "geometricShapeType", value.asInstanceOf[js.Any])
     
     inline def setGeometricShapeTypeUndefined: Self = StObject.set(x, "geometricShapeType", js.undefined)
     

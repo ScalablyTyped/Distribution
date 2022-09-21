@@ -1,6 +1,5 @@
 package typings.reachRouter.mod
 
-import typings.history.mod.LocationState
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +11,7 @@ trait RouterProps extends StObject {
   
   var component: js.UndefOr[ComponentType[js.Object] | String] = js.undefined
   
-  var location: js.UndefOr[WindowLocation[LocationState]] = js.undefined
+  var location: js.UndefOr[WindowLocation[Any]] = js.undefined
   
   var primary: js.UndefOr[Boolean] = js.undefined
 }
@@ -33,7 +32,7 @@ object RouterProps {
     
     inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
-    inline def setLocation(value: WindowLocation[LocationState]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: WindowLocation[Any]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     

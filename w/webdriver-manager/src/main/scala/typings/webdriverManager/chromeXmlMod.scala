@@ -13,12 +13,12 @@ object chromeXmlMod {
   
   @JSImport("webdriver-manager/built/lib/binaries/chrome_xml", "ChromeXml")
   @js.native
-  class ChromeXml () extends XmlConfigSource {
+  open class ChromeXml () extends XmlConfigSource {
     
     /**
       * Gets the latest item from the XML.
       */
-    /* private */ def getLatestChromeDriverVersion(): js.Any = js.native
+    /* private */ def getLatestChromeDriverVersion(): Any = js.native
     
     /**
       * Helper method, gets the ostype and gets the name used by the XML
@@ -28,7 +28,7 @@ object chromeXmlMod {
     /**
       * Gets a specific item from the XML.
       */
-    /* private */ def getSpecificChromeDriverVersion(inputVersion: js.Any): js.Any = js.native
+    /* private */ def getSpecificChromeDriverVersion(inputVersion: Any): Any = js.native
     
     var maxVersion: String = js.native
   }

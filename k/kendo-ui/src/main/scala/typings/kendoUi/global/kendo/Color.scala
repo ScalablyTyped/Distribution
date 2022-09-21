@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.Color")
 @js.native
-class Color ()
+open class Color ()
   extends StObject
      with typings.kendoUi.kendo.Color

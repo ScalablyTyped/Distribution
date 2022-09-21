@@ -27,11 +27,11 @@ object MultiStratumBackend {
     getOwnUpdateHandler: String => XUpdateHandler,
     getOwnerEntity: () => String,
     getUpdateHandler: (String, String) => XUpdateHandler,
-    initialize: SeqEquiv[js.Any] => Unit,
+    initialize: SeqEquiv[Any] => Unit,
     isEqualEntity: (String, String) => Boolean,
     listLayers: (String, String) => SafeArray[XLayer],
     listOwnLayers: String => SafeArray[XLayer],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     supportsEntity: String => Boolean
   ): MultiStratumBackend = {

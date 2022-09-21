@@ -1,7 +1,7 @@
 
 # Scala.js typings for find-unused-sass-variables
 
-Typings are for version 2.0
+Typings are for version 4.0
 
 ## Library description:
 A small tool to find unused Sass variables
@@ -10,10 +10,10 @@ A small tool to find unused Sass variables
 | ------------------ | :-------------: |
 | Full name          | find-unused-sass-variables |
 | Keywords           | sass, unused, variables, scss |
-| # releases         | 15 |
-| # dependents       | 0 |
-| # downloads        | 79326 |
-| # stars            | 0 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 245484.66666666666 |
+| # stars            | 44.0 |
 
 ## Links
 - [Homepage](https://github.com/XhmikosR/find-unused-sass-variables#readme)

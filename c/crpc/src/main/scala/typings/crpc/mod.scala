@@ -15,8 +15,8 @@ object mod {
   
   type Client = js.Function3[
     /* path */ String, 
-    /* body */ js.Any, 
+    /* body */ Any, 
     /* options */ js.UndefOr[js.Object | Null], 
-    js.Promise[js.Any]
+    js.Promise[Any]
   ]
 }

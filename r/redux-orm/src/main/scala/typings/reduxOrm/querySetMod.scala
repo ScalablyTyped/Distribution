@@ -6,12 +6,9 @@ import typings.reduxOrm.modelMod.AnyModel
 import typings.reduxOrm.modelMod.IdType
 import typings.reduxOrm.modelMod.ModelClass
 import typings.reduxOrm.modelMod.Ref
-import typings.reduxOrm.modelMod.Serializable
 import typings.reduxOrm.modelMod.SessionBoundModel
 import typings.reduxOrm.modelMod.UpdateProps
 import typings.reduxOrm.querySetMod.QuerySet.QueryBuilder
-import typings.std.Partial
-import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +17,7 @@ object querySetMod {
   
   @JSImport("redux-orm/QuerySet", JSImport.Default)
   @js.native
-  class default[M /* <: AnyModel */, InstanceProps /* <: js.Object */] protected () extends QuerySet[M, InstanceProps] {
+  open class default[M /* <: AnyModel */, InstanceProps /* <: js.Object */] protected () extends QuerySet[M, InstanceProps] {
     /**
       * Creates a `QuerySet`. The constructor is mainly for internal use;
       * Access QuerySet instances from {@link Model}.
@@ -67,7 +64,7 @@ object querySetMod {
   
   @JSImport("redux-orm/QuerySet", "QuerySet")
   @js.native
-  class QuerySet[M /* <: AnyModel */, InstanceProps /* <: js.Object */] protected ()
+  open class QuerySet[M /* <: AnyModel */, InstanceProps /* <: js.Object */] protected ()
     extends StObject
        with QueryBuilder[M, InstanceProps] {
     /**
@@ -141,21 +138,23 @@ object querySetMod {
       * {@see QuerySet.exclude}
       * {@see QuerySet.filter}
       */
-    type LookupPredicate[M /* <: typings.reduxOrm.modelMod.default[Instantiable0[AnyModel], js.Any] */] = js.Function1[/* row */ Ref[M], Boolean]
+    type LookupPredicate[M /* <: typings.reduxOrm.modelMod.default[Instantiable0[AnyModel], Any] */] = js.Function1[/* row */ Ref[M], Boolean]
     
     /**
       * Lookup clause as an object specifying props to match with plain object Model representation stored in the database.
       * {@see QuerySet.exclude}
       * {@see QuerySet.filter}
       */
-    type LookupProps[M /* <: typings.reduxOrm.modelMod.default[Instantiable0[AnyModel], js.Any] */] = Partial[Ref[M]] & (Record[String, Serializable])
+    /* import warning: RemoveDifficultInheritance.summarizeChanges 
+    - Dropped {[ P in keyof redux-orm.redux-orm/Model.Ref<M> ]:? redux-orm.redux-orm/Model.Ref<M>[P]}
+    - Dropped {[ P in string ]: redux-orm.redux-orm/Model.Serializable} */ trait LookupProps[M /* <: typings.reduxOrm.modelMod.default[Instantiable0[AnyModel], Any] */] extends StObject
     
     /**
       * A union of lookup clauses.
       * {@see QuerySet.exclude}
       * {@see QuerySet.filter}
       */
-    type LookupSpec[M /* <: typings.reduxOrm.modelMod.default[Instantiable0[AnyModel], js.Any] */] = LookupProps[M] | LookupPredicate[M]
+    type LookupSpec[M /* <: typings.reduxOrm.modelMod.default[Instantiable0[AnyModel], Any] */] = Any | LookupPredicate[M]
     
     /**
       * Interface for building queries in fluent style
@@ -269,7 +268,7 @@ object querySetMod {
       *
       * {@see QuerySet.orderBy}
       */
-    type SortIteratee[M /* <: typings.reduxOrm.modelMod.default[Instantiable0[AnyModel], js.Any] */] = (/* keyof redux-orm.redux-orm/Model.Ref<M> */ String) | (js.Function1[/* row */ Ref[M], js.Any])
+    type SortIteratee[M /* <: typings.reduxOrm.modelMod.default[Instantiable0[AnyModel], Any] */] = (/* keyof redux-orm.redux-orm/Model.Ref<M> */ String) | (js.Function1[/* row */ Ref[M], Any])
     
     /**
       * Optional ordering direction.

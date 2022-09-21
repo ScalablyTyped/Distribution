@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.Grid")
 @js.native
-class Grid protected ()
+open class Grid protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.Grid {
   def this(element: Element) = this()

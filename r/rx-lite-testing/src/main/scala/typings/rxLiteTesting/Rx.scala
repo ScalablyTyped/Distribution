@@ -22,7 +22,7 @@ object Rx {
   }
   object MockObserver {
     
-    inline def apply[T](checked: () => Observer[js.Any], messages: js.Array[Recorded]): MockObserver[T] = {
+    inline def apply[T](checked: () => Observer[Any], messages: js.Array[Recorded]): MockObserver[T] = {
       val __obj = js.Dynamic.literal(checked = js.Any.fromFunction0(checked), messages = messages.asInstanceOf[js.Any])
       __obj.asInstanceOf[MockObserver[T]]
     }
@@ -31,7 +31,7 @@ object Rx {
       
       inline def setMessages(value: js.Array[Recorded]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
-      inline def setMessagesVarargs(value: Recorded*): Self = StObject.set(x, "messages", js.Array(value :_*))
+      inline def setMessagesVarargs(value: Recorded*): Self = StObject.set(x, "messages", js.Array(value*))
     }
   }
   
@@ -47,11 +47,11 @@ object Rx {
     
     var time: Double
     
-    var value: js.Any
+    var value: Any
   }
   object Recorded {
     
-    inline def apply(equals_ : Recorded => Boolean, time: Double, value: js.Any): Recorded = {
+    inline def apply(equals_ : Recorded => Boolean, time: Double, value: Any): Recorded = {
       val __obj = js.Dynamic.literal(time = time.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
       __obj.asInstanceOf[Recorded]
@@ -63,7 +63,7 @@ object Rx {
       
       inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -107,36 +107,36 @@ object Rx {
       add: (Double, Double) => Double,
       advanceBy: Double => Unit,
       advanceTo: Double => Unit,
-      createColdObservable: /* repeated */ Recorded => Observable[js.Any],
-      createHotObservable: /* repeated */ Recorded => Observable[js.Any],
-      createObserver: () => MockObserver[js.Any],
+      createColdObservable: /* repeated */ Recorded => Observable[Any],
+      createHotObservable: /* repeated */ Recorded => Observable[Any],
+      createObserver: () => MockObserver[Any],
       getNext: () => ScheduledItem[Double],
       isEnabled: Boolean,
-      isScheduler: js.Any => Boolean,
+      isScheduler: Any => Boolean,
       now: () => Double,
       schedule: js.Function0[Unit] => IDisposable,
       scheduleAbsolute: (Double, js.Function0[Unit]) => IDisposable,
-      scheduleAbsoluteWithState: (js.Any, Double, js.Function2[/* scheduler */ IScheduler, js.Any, IDisposable]) => IDisposable,
+      scheduleAbsoluteWithState: (Any, Double, js.Function2[/* scheduler */ IScheduler, Any, IDisposable]) => IDisposable,
       schedulePeriodic: (Double, js.Function0[Unit]) => IDisposable,
-      schedulePeriodicWithState: (js.Any, Double, js.Function1[js.Any, js.Any]) => IDisposable,
+      schedulePeriodicWithState: (Any, Double, js.Function1[Any, Any]) => IDisposable,
       scheduleRecursive: js.Function1[/* action */ js.Function0[Unit], Unit] => IDisposable,
       scheduleRecursiveWithAbsolute: (Double, js.Function1[/* action */ js.Function1[/* dueTime */ Double, Unit], Unit]) => IDisposable,
-      scheduleRecursiveWithAbsoluteAndState: (js.Any, Double, js.Function2[js.Any, /* action */ js.Function2[js.Any, /* dueTime */ Double, Unit], Unit]) => IDisposable,
+      scheduleRecursiveWithAbsoluteAndState: (Any, Double, js.Function2[Any, /* action */ js.Function2[Any, /* dueTime */ Double, Unit], Unit]) => IDisposable,
       scheduleRecursiveWithRelative: (Double, js.Function1[/* action */ js.Function1[/* dueTime */ Double, Unit], Unit]) => IDisposable,
-      scheduleRecursiveWithRelativeAndState: (js.Any, Double, js.Function2[js.Any, /* action */ js.Function2[js.Any, /* dueTime */ Double, Unit], Unit]) => IDisposable,
-      scheduleRecursiveWithState: (js.Any, js.Function2[js.Any, /* action */ js.Function1[js.Any, Unit], Unit]) => IDisposable,
+      scheduleRecursiveWithRelativeAndState: (Any, Double, js.Function2[Any, /* action */ js.Function2[Any, /* dueTime */ Double, Unit], Unit]) => IDisposable,
+      scheduleRecursiveWithState: (Any, js.Function2[Any, /* action */ js.Function1[Any, Unit], Unit]) => IDisposable,
       scheduleRelative: (Double, js.Function0[Unit]) => IDisposable,
-      scheduleRelativeWithState: (js.Any, Double, js.Function2[/* scheduler */ IScheduler, js.Any, IDisposable]) => IDisposable,
+      scheduleRelativeWithState: (Any, Double, js.Function2[/* scheduler */ IScheduler, Any, IDisposable]) => IDisposable,
       scheduleWithAbsolute: (Double, js.Function0[Unit]) => IDisposable,
-      scheduleWithAbsoluteAndState: (js.Any, Double, js.Function2[TestScheduler, js.Any, IDisposable]) => IDisposable,
+      scheduleWithAbsoluteAndState: (Any, Double, js.Function2[TestScheduler, Any, IDisposable]) => IDisposable,
       scheduleWithRelative: (Double, js.Function0[Unit]) => IDisposable,
-      scheduleWithRelativeAndState: (js.Any, Double, js.Function2[TestScheduler, js.Any, IDisposable]) => IDisposable,
-      scheduleWithState: (js.Any, js.Function2[TestScheduler, js.Any, IDisposable]) => IDisposable,
+      scheduleWithRelativeAndState: (Any, Double, js.Function2[TestScheduler, Any, IDisposable]) => IDisposable,
+      scheduleWithState: (Any, js.Function2[TestScheduler, Any, IDisposable]) => IDisposable,
       sleep: Double => Unit,
       start: () => IDisposable,
-      startWithCreate: js.Function0[Observable[js.Any]] => MockObserver[js.Any],
-      startWithDispose: (js.Function0[Observable[js.Any]], Double) => MockObserver[js.Any],
-      startWithTiming: (js.Function0[Observable[js.Any]], Double, Double, Double) => MockObserver[js.Any],
+      startWithCreate: js.Function0[Observable[Any]] => MockObserver[Any],
+      startWithDispose: (js.Function0[Observable[Any]], Double) => MockObserver[Any],
+      startWithTiming: (js.Function0[Observable[Any]], Double, Double, Double) => MockObserver[Any],
       stop: () => Unit,
       toDateTimeOffset: Double => Double,
       toRelative: Double => Double
@@ -147,17 +147,17 @@ object Rx {
     
     extension [Self <: TestScheduler](x: Self) {
       
-      inline def setCreateColdObservable(value: /* repeated */ Recorded => Observable[js.Any]): Self = StObject.set(x, "createColdObservable", js.Any.fromFunction1(value))
+      inline def setCreateColdObservable(value: /* repeated */ Recorded => Observable[Any]): Self = StObject.set(x, "createColdObservable", js.Any.fromFunction1(value))
       
-      inline def setCreateHotObservable(value: /* repeated */ Recorded => Observable[js.Any]): Self = StObject.set(x, "createHotObservable", js.Any.fromFunction1(value))
+      inline def setCreateHotObservable(value: /* repeated */ Recorded => Observable[Any]): Self = StObject.set(x, "createHotObservable", js.Any.fromFunction1(value))
       
-      inline def setCreateObserver(value: () => MockObserver[js.Any]): Self = StObject.set(x, "createObserver", js.Any.fromFunction0(value))
+      inline def setCreateObserver(value: () => MockObserver[Any]): Self = StObject.set(x, "createObserver", js.Any.fromFunction0(value))
       
-      inline def setStartWithCreate(value: js.Function0[Observable[js.Any]] => MockObserver[js.Any]): Self = StObject.set(x, "startWithCreate", js.Any.fromFunction1(value))
+      inline def setStartWithCreate(value: js.Function0[Observable[Any]] => MockObserver[Any]): Self = StObject.set(x, "startWithCreate", js.Any.fromFunction1(value))
       
-      inline def setStartWithDispose(value: (js.Function0[Observable[js.Any]], Double) => MockObserver[js.Any]): Self = StObject.set(x, "startWithDispose", js.Any.fromFunction2(value))
+      inline def setStartWithDispose(value: (js.Function0[Observable[Any]], Double) => MockObserver[Any]): Self = StObject.set(x, "startWithDispose", js.Any.fromFunction2(value))
       
-      inline def setStartWithTiming(value: (js.Function0[Observable[js.Any]], Double, Double, Double) => MockObserver[js.Any]): Self = StObject.set(x, "startWithTiming", js.Any.fromFunction4(value))
+      inline def setStartWithTiming(value: (js.Function0[Observable[Any]], Double, Double, Double) => MockObserver[Any]): Self = StObject.set(x, "startWithTiming", js.Any.fromFunction4(value))
     }
   }
 }

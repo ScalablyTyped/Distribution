@@ -14,7 +14,7 @@ trait JourneyDateRangeKpiResponse extends StObject {
   /**
     * The last date and time of the date range that was used to filter the query results, in extended ISO 8601 format. The date range is inclusive.
     */
-  var EndTime: timestampIso8601
+  var EndTime: js.Date
   
   /**
     * The unique identifier for the journey that the metric applies to.
@@ -39,17 +39,17 @@ trait JourneyDateRangeKpiResponse extends StObject {
   /**
     * The first date and time of the date range that was used to filter the query results, in extended ISO 8601 format. The date range is inclusive.
     */
-  var StartTime: timestampIso8601
+  var StartTime: js.Date
 }
 object JourneyDateRangeKpiResponse {
   
   inline def apply(
     ApplicationId: string,
-    EndTime: timestampIso8601,
+    EndTime: js.Date,
     JourneyId: string,
     KpiName: string,
     KpiResult: BaseKpiResult,
-    StartTime: timestampIso8601
+    StartTime: js.Date
   ): JourneyDateRangeKpiResponse = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], EndTime = EndTime.asInstanceOf[js.Any], JourneyId = JourneyId.asInstanceOf[js.Any], KpiName = KpiName.asInstanceOf[js.Any], KpiResult = KpiResult.asInstanceOf[js.Any], StartTime = StartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[JourneyDateRangeKpiResponse]
@@ -59,7 +59,7 @@ object JourneyDateRangeKpiResponse {
     
     inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
-    inline def setEndTime(value: timestampIso8601): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setJourneyId(value: string): Self = StObject.set(x, "JourneyId", value.asInstanceOf[js.Any])
     
@@ -71,6 +71,6 @@ object JourneyDateRangeKpiResponse {
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    inline def setStartTime(value: timestampIso8601): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
   }
 }

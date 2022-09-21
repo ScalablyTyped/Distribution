@@ -14,7 +14,7 @@ trait SetStorageOptions extends StObject {
   /**
     * 需要存储的内容，只支持原生类型、及能够通过 JSON.stringify 序列化的对象
     */
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
   /**
     * 接口调用失败的回调函数
@@ -44,7 +44,7 @@ object SetStorageOptions {
     
     inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     

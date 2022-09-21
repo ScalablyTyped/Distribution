@@ -10,10 +10,10 @@ Openwall PHPass class port to Node - Wordpress class used to hash passwords.
 | ------------------ | :-------------: |
 | Full name          | node-phpass |
 | Keywords           | phpass, wordpress, password, hash |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 9852 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1507.6666666666667 |
+| # stars            | 22.0 |
 
 ## Links
 - [Homepage](https://github.com/glauberportella/password-hash)

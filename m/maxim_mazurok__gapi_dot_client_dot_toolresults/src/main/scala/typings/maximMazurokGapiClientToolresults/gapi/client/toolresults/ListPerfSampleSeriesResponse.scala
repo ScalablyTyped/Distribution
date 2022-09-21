@@ -22,6 +22,6 @@ object ListPerfSampleSeriesResponse {
     
     inline def setPerfSampleSeriesUndefined: Self = StObject.set(x, "perfSampleSeries", js.undefined)
     
-    inline def setPerfSampleSeriesVarargs(value: PerfSampleSeries*): Self = StObject.set(x, "perfSampleSeries", js.Array(value :_*))
+    inline def setPerfSampleSeriesVarargs(value: PerfSampleSeries*): Self = StObject.set(x, "perfSampleSeries", js.Array(value*))
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Windows.Networking.HostName")
 @js.native
-class HostName protected ()
+open class HostName protected ()
   extends StObject
      with typings.winrt.Windows.Networking.HostName {
   def this(hostName: String) = this()

@@ -9,10 +9,10 @@ trait SasPortalValidateInstallerRequest extends StObject {
   /** Required. JSON Web Token signed using a CPI private key. Payload must include a "secret" claim whose value is the secret. */
   var encodedSecret: js.UndefOr[String] = js.undefined
   
-  /** Required. Unique installer id (cpiId) from the Certified Professional Installers database. */
+  /** Required. Unique installer id (CPI ID) from the Certified Professional Installers database. */
   var installerId: js.UndefOr[String] = js.undefined
   
-  /** Required. Secret returned by the GenerateSecret method. */
+  /** Required. Secret returned by the GenerateSecret. */
   var secret: js.UndefOr[String] = js.undefined
 }
 object SasPortalValidateInstallerRequest {

@@ -55,7 +55,7 @@ object XAnimationListener {
     beginEvent: XAnimationNode => Unit,
     disposing: EventObject => Unit,
     endEvent: XAnimationNode => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     repeat: (XAnimationNode, Double) => Unit
   ): XAnimationListener = {

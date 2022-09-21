@@ -3,7 +3,6 @@ package typings.cassandraDriver
 import typings.cassandraDriver.anon.Params
 import typings.cassandraDriver.mod.Client
 import typings.node.streamMod.Readable
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,8 +17,8 @@ object concurrentMod {
     
     inline def executeConcurrent(client: Client, queries: js.Array[Params]): js.Promise[ResultSetGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeConcurrent")(client.asInstanceOf[js.Any], queries.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResultSetGroup]]
     inline def executeConcurrent(client: Client, queries: js.Array[Params], options: Options): js.Promise[ResultSetGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeConcurrent")(client.asInstanceOf[js.Any], queries.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResultSetGroup]]
-    inline def executeConcurrent(client: Client, query: String, parameters: js.Array[js.Array[js.Any]]): js.Promise[ResultSetGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeConcurrent")(client.asInstanceOf[js.Any], query.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResultSetGroup]]
-    inline def executeConcurrent(client: Client, query: String, parameters: js.Array[js.Array[js.Any]], options: Options): js.Promise[ResultSetGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeConcurrent")(client.asInstanceOf[js.Any], query.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResultSetGroup]]
+    inline def executeConcurrent(client: Client, query: String, parameters: js.Array[js.Array[Any]]): js.Promise[ResultSetGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeConcurrent")(client.asInstanceOf[js.Any], query.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResultSetGroup]]
+    inline def executeConcurrent(client: Client, query: String, parameters: js.Array[js.Array[Any]], options: Options): js.Promise[ResultSetGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeConcurrent")(client.asInstanceOf[js.Any], query.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResultSetGroup]]
     inline def executeConcurrent(client: Client, query: String, parameters: Readable): js.Promise[ResultSetGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeConcurrent")(client.asInstanceOf[js.Any], query.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResultSetGroup]]
     inline def executeConcurrent(client: Client, query: String, parameters: Readable, options: Options): js.Promise[ResultSetGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeConcurrent")(client.asInstanceOf[js.Any], query.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResultSetGroup]]
     
@@ -68,28 +67,28 @@ object concurrentMod {
     
     trait ResultSetGroup extends StObject {
       
-      var errors: js.Array[Error]
+      var errors: js.Array[js.Error]
       
-      var resultItems: js.Array[js.Any]
+      var resultItems: js.Array[Any]
       
       var totalExecuted: Double
     }
     object ResultSetGroup {
       
-      inline def apply(errors: js.Array[Error], resultItems: js.Array[js.Any], totalExecuted: Double): ResultSetGroup = {
+      inline def apply(errors: js.Array[js.Error], resultItems: js.Array[Any], totalExecuted: Double): ResultSetGroup = {
         val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], resultItems = resultItems.asInstanceOf[js.Any], totalExecuted = totalExecuted.asInstanceOf[js.Any])
         __obj.asInstanceOf[ResultSetGroup]
       }
       
       extension [Self <: ResultSetGroup](x: Self) {
         
-        inline def setErrors(value: js.Array[Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+        inline def setErrors(value: js.Array[js.Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
         
-        inline def setErrorsVarargs(value: Error*): Self = StObject.set(x, "errors", js.Array(value :_*))
+        inline def setErrorsVarargs(value: js.Error*): Self = StObject.set(x, "errors", js.Array(value*))
         
-        inline def setResultItems(value: js.Array[js.Any]): Self = StObject.set(x, "resultItems", value.asInstanceOf[js.Any])
+        inline def setResultItems(value: js.Array[Any]): Self = StObject.set(x, "resultItems", value.asInstanceOf[js.Any])
         
-        inline def setResultItemsVarargs(value: js.Any*): Self = StObject.set(x, "resultItems", js.Array(value :_*))
+        inline def setResultItemsVarargs(value: Any*): Self = StObject.set(x, "resultItems", js.Array(value*))
         
         inline def setTotalExecuted(value: Double): Self = StObject.set(x, "totalExecuted", value.asInstanceOf[js.Any])
       }

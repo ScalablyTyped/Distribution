@@ -4,38 +4,75 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait _empty
-  extends StObject
-     with Infix {
+trait _empty extends StObject {
   
   @JSName("*")
-  var Asterisk: RegSymbol = js.native
+  var Asterisk: Infix
   
   @JSName(",")
-  var Comma: InfixRegSymbol = js.native
-  
-  @JSName("!")
-  var Exclamationmark: Postfix = js.native
+  var Comma: InfixRegSymbol
   
   @JSName("(")
-  var Leftparenthesis: PrefixRegSymbol = js.native
+  var Leftparenthesis: PrefixRegSymbol
   
   @JSName("+")
-  var Plussign: Prefix = js.native
+  var Plussign: Prefix
   
   @JSName(")")
-  var Rightparenthesis: PostfixRegSymbol = js.native
+  var Rightparenthesis: Postfix
   
   @JSName("/")
-  var Slash: Symbol = js.native
+  var Slash: RegSymbol
   
   @JSName("-")
-  var _dash: InfixPrefix = js.native
+  var _dash: InfixPrefix
   
-  var max: FuncRegSymbol = js.native
+  var max: FuncRegSymbol
   
-  var min: Func = js.native
+  var min: Func
+}
+object _empty {
   
-  var sqrt: RegSymbolSymbol = js.native
+  inline def apply(
+    Asterisk: Infix,
+    Comma: InfixRegSymbol,
+    Leftparenthesis: PrefixRegSymbol,
+    Plussign: Prefix,
+    Rightparenthesis: Postfix,
+    Slash: RegSymbol,
+    _dash: InfixPrefix,
+    max: FuncRegSymbol,
+    min: Func
+  ): _empty = {
+    val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
+    __obj.updateDynamic("*")(Asterisk.asInstanceOf[js.Any])
+    __obj.updateDynamic(",")(Comma.asInstanceOf[js.Any])
+    __obj.updateDynamic("(")(Leftparenthesis.asInstanceOf[js.Any])
+    __obj.updateDynamic("+")(Plussign.asInstanceOf[js.Any])
+    __obj.updateDynamic(")")(Rightparenthesis.asInstanceOf[js.Any])
+    __obj.updateDynamic("/")(Slash.asInstanceOf[js.Any])
+    __obj.updateDynamic("-")(_dash.asInstanceOf[js.Any])
+    __obj.asInstanceOf[_empty]
+  }
+  
+  extension [Self <: _empty](x: Self) {
+    
+    inline def setAsterisk(value: Infix): Self = StObject.set(x, "*", value.asInstanceOf[js.Any])
+    
+    inline def setComma(value: InfixRegSymbol): Self = StObject.set(x, ",", value.asInstanceOf[js.Any])
+    
+    inline def setLeftparenthesis(value: PrefixRegSymbol): Self = StObject.set(x, "(", value.asInstanceOf[js.Any])
+    
+    inline def setMax(value: FuncRegSymbol): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    
+    inline def setMin(value: Func): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    
+    inline def setPlussign(value: Prefix): Self = StObject.set(x, "+", value.asInstanceOf[js.Any])
+    
+    inline def setRightparenthesis(value: Postfix): Self = StObject.set(x, ")", value.asInstanceOf[js.Any])
+    
+    inline def setSlash(value: RegSymbol): Self = StObject.set(x, "/", value.asInstanceOf[js.Any])
+    
+    inline def set_dash(value: InfixPrefix): Self = StObject.set(x, "-", value.asInstanceOf[js.Any])
+  }
 }

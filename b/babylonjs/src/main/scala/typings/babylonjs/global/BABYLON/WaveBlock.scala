@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.WaveBlock")
 @js.native
-class WaveBlock protected ()
+open class WaveBlock protected ()
   extends StObject
      with typings.babylonjs.BABYLON.WaveBlock {
   /**

@@ -2,7 +2,6 @@ package typings.sidewayFormula
 
 import typings.sidewayFormula.mod.Options.Reference
 import typings.std.Record
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ object mod {
   
   @JSImport("@sideway/formula", "Parser")
   @js.native
-  class Parser[T /* <: String | Double */] protected () extends StObject {
+  open class Parser[T /* <: String | Double */] protected () extends StObject {
     /**
       * Create a new formula parser.
       * 
@@ -29,7 +28,7 @@ object mod {
       * @returns the string or number outcome of the resolved formula.
       */
     def evaluate(): T = js.native
-    def evaluate(context: js.Any): T = js.native
+    def evaluate(context: Any): T = js.native
   }
   
   trait Options extends StObject {
@@ -37,7 +36,7 @@ object mod {
     /**
       * A hash of key - value pairs used to convert constants to values.
       */
-    val constants: js.UndefOr[Record[String, js.Any]] = js.undefined
+    val constants: js.UndefOr[Record[String, Any]] = js.undefined
     
     /**
       * A hash of key-value pairs used to resolve formula functions.
@@ -52,7 +51,7 @@ object mod {
     /**
       * A regular expression used to validate token variables.
       */
-    val tokenRx: js.UndefOr[RegExp] = js.undefined
+    val tokenRx: js.UndefOr[js.RegExp] = js.undefined
   }
   object Options {
     
@@ -63,7 +62,7 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setConstants(value: Record[String, js.Any]): Self = StObject.set(x, "constants", value.asInstanceOf[js.Any])
+      inline def setConstants(value: Record[String, Any]): Self = StObject.set(x, "constants", value.asInstanceOf[js.Any])
       
       inline def setConstantsUndefined: Self = StObject.set(x, "constants", js.undefined)
       
@@ -71,15 +70,15 @@ object mod {
       
       inline def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
       
-      inline def setReference(value: /* name */ String => js.Function1[/* context */ js.Any, js.Any]): Self = StObject.set(x, "reference", js.Any.fromFunction1(value))
+      inline def setReference(value: /* name */ String => js.Function1[/* context */ Any, Any]): Self = StObject.set(x, "reference", js.Any.fromFunction1(value))
       
       inline def setReferenceUndefined: Self = StObject.set(x, "reference", js.undefined)
       
-      inline def setTokenRx(value: RegExp): Self = StObject.set(x, "tokenRx", value.asInstanceOf[js.Any])
+      inline def setTokenRx(value: js.RegExp): Self = StObject.set(x, "tokenRx", value.asInstanceOf[js.Any])
       
       inline def setTokenRxUndefined: Self = StObject.set(x, "tokenRx", js.undefined)
     }
     
-    type Reference = js.Function1[/* name */ String, js.Function1[/* context */ js.Any, js.Any]]
+    type Reference = js.Function1[/* name */ String, js.Function1[/* context */ Any, Any]]
   }
 }

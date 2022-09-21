@@ -18,7 +18,7 @@ object namespaceMod {
   
   @JSImport("ionic/lib/namespace", "CommandMap")
   @js.native
-  class CommandMap () extends BaseCommandMap[ICommand, INamespace, CommandMetadata, CommandMetadataInput, CommandMetadataOption]
+  open class CommandMap () extends BaseCommandMap[ICommand, INamespace, CommandMetadata, CommandMetadataInput, CommandMetadataOption]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.ionicCliFramework.definitionsMod.INamespace because Already inherited
@@ -38,5 +38,5 @@ object namespaceMod {
   
   @JSImport("ionic/lib/namespace", "NamespaceMap")
   @js.native
-  class NamespaceMap () extends BaseNamespaceMap[ICommand, INamespace, CommandMetadata, CommandMetadataInput, CommandMetadataOption]
+  open class NamespaceMap () extends BaseNamespaceMap[ICommand, INamespace, CommandMetadata, CommandMetadataInput, CommandMetadataOption]
 }

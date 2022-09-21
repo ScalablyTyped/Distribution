@@ -37,6 +37,8 @@ trait Element extends StObject {
   var srcRest: js.UndefOr[String] = js.undefined
   
   var tooltip: js.UndefOr[String] = js.undefined
+  
+  var userData: js.UndefOr[String] = js.undefined
 }
 object Element {
   
@@ -106,5 +108,9 @@ object Element {
     inline def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    
+    inline def setUserData(value: String): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
+    
+    inline def setUserDataUndefined: Self = StObject.set(x, "userData", js.undefined)
   }
 }

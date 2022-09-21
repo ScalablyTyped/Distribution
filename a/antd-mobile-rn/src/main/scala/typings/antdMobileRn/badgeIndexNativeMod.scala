@@ -14,7 +14,7 @@ object badgeIndexNativeMod {
   
   @JSImport("antd-mobile-rn/lib/badge/index.native", JSImport.Default)
   @js.native
-  class default () extends Badge
+  open class default () extends Badge
   /* static members */
   object default {
     
@@ -29,8 +29,7 @@ object badgeIndexNativeMod {
   }
   
   @js.native
-  trait Badge
-    extends Component[BadgeNativeProps, js.Any, js.Any]
+  trait Badge extends Component[BadgeNativeProps, Any, Any]
   
   trait BadgeNativeProps
     extends StObject

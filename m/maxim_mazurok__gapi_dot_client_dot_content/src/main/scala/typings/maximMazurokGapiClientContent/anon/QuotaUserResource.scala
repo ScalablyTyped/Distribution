@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientContent.anon
 
-import typings.maximMazurokGapiClientContent.gapi.client.content.OrderreturnsCreateOrderReturnRequest
+import typings.maximMazurokGapiClientContent.gapi.client.content.Collection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,7 @@ trait QuotaUserResource extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** The ID of the account that manages the order. This cannot be a multi-client account. */
+  /** Required. The ID of the account that contains the collection. This account cannot be a multi-client account. */
   var merchantId: String
   
   /** OAuth 2.0 token for the current user. */
@@ -39,7 +39,7 @@ trait QuotaUserResource extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: OrderreturnsCreateOrderReturnRequest
+  var resource: Collection
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -49,7 +49,7 @@ trait QuotaUserResource extends StObject {
 }
 object QuotaUserResource {
   
-  inline def apply(merchantId: String, resource: OrderreturnsCreateOrderReturnRequest): QuotaUserResource = {
+  inline def apply(merchantId: String, resource: Collection): QuotaUserResource = {
     val __obj = js.Dynamic.literal(merchantId = merchantId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuotaUserResource]
   }
@@ -94,7 +94,7 @@ object QuotaUserResource {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: OrderreturnsCreateOrderReturnRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: Collection): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

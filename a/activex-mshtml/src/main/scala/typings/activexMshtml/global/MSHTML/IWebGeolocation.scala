@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IWebGeolocation")
 @js.native
-/* private */ class IWebGeolocation ()
+/* private */ open class IWebGeolocation ()
   extends StObject
      with typings.activexMshtml.MSHTML.IWebGeolocation

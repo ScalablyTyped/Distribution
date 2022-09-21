@@ -1,5 +1,6 @@
 package typings.foundationSites.FoundationSites
 
+import typings.foundationSites.JQuery
 import typings.foundationSites.anon.Instantiable
 import typings.foundationSites.anon.InstantiableAccordion
 import typings.foundationSites.anon.InstantiableAccordionMenu
@@ -11,8 +12,13 @@ import typings.foundationSites.anon.InstantiableInterchange
 import typings.foundationSites.anon.InstantiableMagellan
 import typings.foundationSites.anon.InstantiableOffCanvas
 import typings.foundationSites.anon.InstantiableOrbit
+import typings.foundationSites.anon.InstantiablePositionable
+import typings.foundationSites.anon.InstantiableResponsiveAccordionTabs
+import typings.foundationSites.anon.InstantiableResponsiveMenu
+import typings.foundationSites.anon.InstantiableResponsiveToggle
 import typings.foundationSites.anon.InstantiableReveal
 import typings.foundationSites.anon.InstantiableSlider
+import typings.foundationSites.anon.InstantiableSmoothScroll
 import typings.foundationSites.anon.InstantiableSticky
 import typings.foundationSites.anon.InstantiableTabs
 import typings.foundationSites.anon.InstantiableToggler
@@ -63,9 +69,21 @@ trait FoundationSitesStatic extends StObject {
   
   var Orbit: InstantiableOrbit = js.native
   
+  var Positionable: InstantiablePositionable = js.native
+  
+  def RegExpEscape(str: String): String = js.native
+  
+  var ResponsiveAccordionTabs: InstantiableResponsiveAccordionTabs = js.native
+  
+  var ResponsiveMenu: InstantiableResponsiveMenu = js.native
+  
+  var ResponsiveToggle: InstantiableResponsiveToggle = js.native
+  
   var Reveal: InstantiableReveal = js.native
   
   var Slider: InstantiableSlider = js.native
+  
+  var SmoothScroll: InstantiableSmoothScroll = js.native
   
   var Sticky: InstantiableSticky = js.native
   
@@ -83,9 +101,11 @@ trait FoundationSitesStatic extends StObject {
   
   def getFnName(fn: String): String = js.native
   
+  def onLoad(elem: Any, handler: Any): String = js.native
+  
   def plugin(plugin: js.Object, name: String): Unit = js.native
   
-  def reInit(plugins: js.Array[js.Any]): Unit = js.native
+  def reInit(plugins: js.Array[Any]): Unit = js.native
   
   def reflow(elem: js.Object): Unit = js.native
   def reflow(elem: js.Object, plugins: String): Unit = js.native
@@ -95,7 +115,7 @@ trait FoundationSitesStatic extends StObject {
   
   def rtl(): Boolean = js.native
   
-  def transitionend(): String = js.native
+  def transitionend(element: JQuery): Any = js.native
   
   def unregisterPlugin(plugin: js.Object): Unit = js.native
   

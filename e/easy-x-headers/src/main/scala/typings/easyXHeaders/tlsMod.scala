@@ -6,7 +6,6 @@ import typings.easyXHeaders.anon.Name
 import typings.easyXHeaders.cryptoMod.Credentials
 import typings.easyXHeaders.netMod.Socket
 import typings.easyXHeaders.streamMod.Duplex
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,13 +60,13 @@ object tlsMod {
     
     var address: Address = js.native
     
-    var authorizationError: Error = js.native
+    var authorizationError: js.Error = js.native
     
     var authorized: Boolean = js.native
     
     var getCipher: Name = js.native
     
-    def getPeerCertificate(): js.Any = js.native
+    def getPeerCertificate(): Any = js.native
     
     var remoteAddress: String = js.native
     
@@ -76,22 +75,22 @@ object tlsMod {
   
   trait ConnectionOptions extends StObject {
     
-    var NPNProtocols: js.UndefOr[js.Any] = js.undefined
+    var NPNProtocols: js.UndefOr[Any] = js.undefined
     
     //string | Buffer
-    var ca: js.UndefOr[js.Any] = js.undefined
+    var ca: js.UndefOr[Any] = js.undefined
     
-    var cert: js.UndefOr[js.Any] = js.undefined
+    var cert: js.UndefOr[Any] = js.undefined
     
     var host: js.UndefOr[String] = js.undefined
     
     //string | Buffer
-    var key: js.UndefOr[js.Any] = js.undefined
+    var key: js.UndefOr[Any] = js.undefined
     
     //string | Buffer
     var passphrase: js.UndefOr[String] = js.undefined
     
-    var pfx: js.UndefOr[js.Any] = js.undefined
+    var pfx: js.UndefOr[Any] = js.undefined
     
     var port: js.UndefOr[Double] = js.undefined
     
@@ -112,11 +111,11 @@ object tlsMod {
     
     extension [Self <: ConnectionOptions](x: Self) {
       
-      inline def setCa(value: js.Any): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
+      inline def setCa(value: Any): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
       
       inline def setCaUndefined: Self = StObject.set(x, "ca", js.undefined)
       
-      inline def setCert(value: js.Any): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
+      inline def setCert(value: Any): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
       inline def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
       
@@ -124,11 +123,11 @@ object tlsMod {
       
       inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      inline def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
       inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      inline def setNPNProtocols(value: js.Any): Self = StObject.set(x, "NPNProtocols", value.asInstanceOf[js.Any])
+      inline def setNPNProtocols(value: Any): Self = StObject.set(x, "NPNProtocols", value.asInstanceOf[js.Any])
       
       inline def setNPNProtocolsUndefined: Self = StObject.set(x, "NPNProtocols", js.undefined)
       
@@ -136,7 +135,7 @@ object tlsMod {
       
       inline def setPassphraseUndefined: Self = StObject.set(x, "passphrase", js.undefined)
       
-      inline def setPfx(value: js.Any): Self = StObject.set(x, "pfx", value.asInstanceOf[js.Any])
+      inline def setPfx(value: Any): Self = StObject.set(x, "pfx", value.asInstanceOf[js.Any])
       
       inline def setPfxUndefined: Self = StObject.set(x, "pfx", js.undefined)
       
@@ -160,43 +159,43 @@ object tlsMod {
   
   trait SecureContext extends StObject {
     
-    var context: js.Any
+    var context: Any
   }
   object SecureContext {
     
-    inline def apply(context: js.Any): SecureContext = {
+    inline def apply(context: Any): SecureContext = {
       val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any])
       __obj.asInstanceOf[SecureContext]
     }
     
     extension [Self <: SecureContext](x: Self) {
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     }
   }
   
   trait SecureContextOptions extends StObject {
     
     // string | buffer
-    var ca: js.UndefOr[js.Any] = js.undefined
+    var ca: js.UndefOr[Any] = js.undefined
     
-    var cert: js.UndefOr[js.Any] = js.undefined
+    var cert: js.UndefOr[Any] = js.undefined
     
     // string | string[]
     var ciphers: js.UndefOr[String] = js.undefined
     
     // string | buffer
-    var crl: js.UndefOr[js.Any] = js.undefined
+    var crl: js.UndefOr[Any] = js.undefined
     
     var honorCipherOrder: js.UndefOr[Boolean] = js.undefined
     
     //string | buffer
-    var key: js.UndefOr[js.Any] = js.undefined
+    var key: js.UndefOr[Any] = js.undefined
     
     //string | buffer
     var passphrase: js.UndefOr[String] = js.undefined
     
-    var pfx: js.UndefOr[js.Any] = js.undefined
+    var pfx: js.UndefOr[Any] = js.undefined
   }
   object SecureContextOptions {
     
@@ -207,11 +206,11 @@ object tlsMod {
     
     extension [Self <: SecureContextOptions](x: Self) {
       
-      inline def setCa(value: js.Any): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
+      inline def setCa(value: Any): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
       
       inline def setCaUndefined: Self = StObject.set(x, "ca", js.undefined)
       
-      inline def setCert(value: js.Any): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
+      inline def setCert(value: Any): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
       inline def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
       
@@ -219,7 +218,7 @@ object tlsMod {
       
       inline def setCiphersUndefined: Self = StObject.set(x, "ciphers", js.undefined)
       
-      inline def setCrl(value: js.Any): Self = StObject.set(x, "crl", value.asInstanceOf[js.Any])
+      inline def setCrl(value: Any): Self = StObject.set(x, "crl", value.asInstanceOf[js.Any])
       
       inline def setCrlUndefined: Self = StObject.set(x, "crl", js.undefined)
       
@@ -227,7 +226,7 @@ object tlsMod {
       
       inline def setHonorCipherOrderUndefined: Self = StObject.set(x, "honorCipherOrder", js.undefined)
       
-      inline def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
       inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
@@ -235,7 +234,7 @@ object tlsMod {
       
       inline def setPassphraseUndefined: Self = StObject.set(x, "passphrase", js.undefined)
       
-      inline def setPfx(value: js.Any): Self = StObject.set(x, "pfx", value.asInstanceOf[js.Any])
+      inline def setPfx(value: Any): Self = StObject.set(x, "pfx", value.asInstanceOf[js.Any])
       
       inline def setPfxUndefined: Self = StObject.set(x, "pfx", js.undefined)
     }
@@ -243,22 +242,22 @@ object tlsMod {
   
   trait SecurePair extends StObject {
     
-    var cleartext: js.Any
+    var cleartext: Any
     
-    var encrypted: js.Any
+    var encrypted: Any
   }
   object SecurePair {
     
-    inline def apply(cleartext: js.Any, encrypted: js.Any): SecurePair = {
+    inline def apply(cleartext: Any, encrypted: Any): SecurePair = {
       val __obj = js.Dynamic.literal(cleartext = cleartext.asInstanceOf[js.Any], encrypted = encrypted.asInstanceOf[js.Any])
       __obj.asInstanceOf[SecurePair]
     }
     
     extension [Self <: SecurePair](x: Self) {
       
-      inline def setCleartext(value: js.Any): Self = StObject.set(x, "cleartext", value.asInstanceOf[js.Any])
+      inline def setCleartext(value: Any): Self = StObject.set(x, "cleartext", value.asInstanceOf[js.Any])
       
-      inline def setEncrypted(value: js.Any): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
+      inline def setEncrypted(value: Any): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
     }
   }
   
@@ -274,30 +273,30 @@ object tlsMod {
   
   trait TlsOptions extends StObject {
     
-    var NPNProtocols: js.UndefOr[js.Any] = js.undefined
+    var NPNProtocols: js.UndefOr[Any] = js.undefined
     
     //array or Buffer;
-    var SNICallback: js.UndefOr[js.Function1[/* servername */ String, js.Any]] = js.undefined
+    var SNICallback: js.UndefOr[js.Function1[/* servername */ String, Any]] = js.undefined
     
-    var ca: js.UndefOr[js.Any] = js.undefined
+    var ca: js.UndefOr[Any] = js.undefined
     
-    var cert: js.UndefOr[js.Any] = js.undefined
+    var cert: js.UndefOr[Any] = js.undefined
     
     //string or string array
     var ciphers: js.UndefOr[String] = js.undefined
     
     //string or buffer
-    var crl: js.UndefOr[js.Any] = js.undefined
+    var crl: js.UndefOr[Any] = js.undefined
     
-    var honorCipherOrder: js.UndefOr[js.Any] = js.undefined
+    var honorCipherOrder: js.UndefOr[Any] = js.undefined
     
     //string or buffer
-    var key: js.UndefOr[js.Any] = js.undefined
+    var key: js.UndefOr[Any] = js.undefined
     
     //string or buffer
     var passphrase: js.UndefOr[String] = js.undefined
     
-    var pfx: js.UndefOr[js.Any] = js.undefined
+    var pfx: js.UndefOr[Any] = js.undefined
     
     var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
     
@@ -312,11 +311,11 @@ object tlsMod {
     
     extension [Self <: TlsOptions](x: Self) {
       
-      inline def setCa(value: js.Any): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
+      inline def setCa(value: Any): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
       
       inline def setCaUndefined: Self = StObject.set(x, "ca", js.undefined)
       
-      inline def setCert(value: js.Any): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
+      inline def setCert(value: Any): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
       inline def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
       
@@ -324,19 +323,19 @@ object tlsMod {
       
       inline def setCiphersUndefined: Self = StObject.set(x, "ciphers", js.undefined)
       
-      inline def setCrl(value: js.Any): Self = StObject.set(x, "crl", value.asInstanceOf[js.Any])
+      inline def setCrl(value: Any): Self = StObject.set(x, "crl", value.asInstanceOf[js.Any])
       
       inline def setCrlUndefined: Self = StObject.set(x, "crl", js.undefined)
       
-      inline def setHonorCipherOrder(value: js.Any): Self = StObject.set(x, "honorCipherOrder", value.asInstanceOf[js.Any])
+      inline def setHonorCipherOrder(value: Any): Self = StObject.set(x, "honorCipherOrder", value.asInstanceOf[js.Any])
       
       inline def setHonorCipherOrderUndefined: Self = StObject.set(x, "honorCipherOrder", js.undefined)
       
-      inline def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
       inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      inline def setNPNProtocols(value: js.Any): Self = StObject.set(x, "NPNProtocols", value.asInstanceOf[js.Any])
+      inline def setNPNProtocols(value: Any): Self = StObject.set(x, "NPNProtocols", value.asInstanceOf[js.Any])
       
       inline def setNPNProtocolsUndefined: Self = StObject.set(x, "NPNProtocols", js.undefined)
       
@@ -344,7 +343,7 @@ object tlsMod {
       
       inline def setPassphraseUndefined: Self = StObject.set(x, "passphrase", js.undefined)
       
-      inline def setPfx(value: js.Any): Self = StObject.set(x, "pfx", value.asInstanceOf[js.Any])
+      inline def setPfx(value: Any): Self = StObject.set(x, "pfx", value.asInstanceOf[js.Any])
       
       inline def setPfxUndefined: Self = StObject.set(x, "pfx", js.undefined)
       
@@ -356,7 +355,7 @@ object tlsMod {
       
       inline def setRequestCertUndefined: Self = StObject.set(x, "requestCert", js.undefined)
       
-      inline def setSNICallback(value: /* servername */ String => js.Any): Self = StObject.set(x, "SNICallback", js.Any.fromFunction1(value))
+      inline def setSNICallback(value: /* servername */ String => Any): Self = StObject.set(x, "SNICallback", js.Any.fromFunction1(value))
       
       inline def setSNICallbackUndefined: Self = StObject.set(x, "SNICallback", js.undefined)
     }

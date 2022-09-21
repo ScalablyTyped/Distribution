@@ -33,6 +33,6 @@ object ListPresetsResponse {
     
     inline def setPresetsUndefined: Self = StObject.set(x, "Presets", js.undefined)
     
-    inline def setPresetsVarargs(value: Preset*): Self = StObject.set(x, "Presets", js.Array(value :_*))
+    inline def setPresetsVarargs(value: Preset*): Self = StObject.set(x, "Presets", js.Array(value*))
   }
 }

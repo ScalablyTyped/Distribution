@@ -25,7 +25,7 @@ object GetSpreadsheetByDataFilterRequest {
     
     inline def setDataFiltersUndefined: Self = StObject.set(x, "dataFilters", js.undefined)
     
-    inline def setDataFiltersVarargs(value: DataFilter*): Self = StObject.set(x, "dataFilters", js.Array(value :_*))
+    inline def setDataFiltersVarargs(value: DataFilter*): Self = StObject.set(x, "dataFilters", js.Array(value*))
     
     inline def setIncludeGridData(value: Boolean): Self = StObject.set(x, "includeGridData", value.asInstanceOf[js.Any])
     

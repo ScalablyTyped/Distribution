@@ -1,52 +1,19 @@
 package typings.imageType
 
-import typings.node.Buffer
-import typings.std.Uint8Array
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  /**
-  	Detect the image type of a `Buffer`/`Uint8Array`.
-  	@param input - Input to examine to determine the file type. It only needs the first `.minimumBytes` bytes.
-  	@example
-  	```
-  	import readChunk = require('read-chunk');
-  	import imageType = require('image-type');
-  	const buffer = readChunk.sync('unicorn.png', 0, 12);
-  	imageType(buffer);
-  	//=> {ext: 'png', mime: 'image/png'}
-  	// Or from a remote location:
-  	import * as http from 'http';
-  	const url = 'https://assets-cdn.github.com/images/spinners/octocat-spinner-32.gif';
-  	http.get(url, response => {
-  		response.on('readable', () => {
-  			const chunk = response.read(imageType.minimumBytes);
-  			response.destroy();
-  			console.log(imageType(chunk));
-  			//=> {ext: 'gif', mime: 'image/gif'}
-  		});
-  	});
-  	```
-  	*/
-  inline def apply(input: Buffer): ImageTypeResult | Null = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[ImageTypeResult | Null]
-  inline def apply(input: Uint8Array): ImageTypeResult | Null = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[ImageTypeResult | Null]
-  
   @JSImport("image-type", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  // TODO: Remove this for the next major release
-  @JSImport("image-type", "default")
-  @js.native
-  def default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof imageType */ js.Any = js.native
-  inline def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof imageType */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default(input: js.typedarray.Uint8Array): js.Promise[js.UndefOr[ImageTypeResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[ImageTypeResult]]]
+  inline def default(input: Buffer): js.Promise[js.UndefOr[ImageTypeResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[ImageTypeResult]]]
   
-  /**
-  	The minimum amount of bytes needed to detect a file type. Currently, it's 4100 bytes, but it can change, so don't hard-code it.
-  	*/
   @JSImport("image-type", "minimumBytes")
   @js.native
   val minimumBytes: Double = js.native
@@ -71,8 +38,8 @@ object mod {
     - typings.imageType.imageTypeStrings.cur
     - typings.imageType.imageTypeStrings.dcm
   */
-  trait ImageType extends StObject
-  object ImageType {
+  trait ImageFileExtension extends StObject
+  object ImageFileExtension {
     
     inline def bmp: typings.imageType.imageTypeStrings.bmp = "bmp".asInstanceOf[typings.imageType.imageTypeStrings.bmp]
     
@@ -114,25 +81,25 @@ object mod {
   trait ImageTypeResult extends StObject {
     
     /**
-    		One of the supported [file types](https://github.com/sindresorhus/image-type#supported-file-types).
-    		*/
-    var ext: ImageType
+    	One of the supported [file types](https://github.com/sindresorhus/image-type#supported-file-types).
+    	*/
+    var ext: ImageFileExtension
     
     /**
-    		The detected [MIME type](https://en.wikipedia.org/wiki/Internet_media_type).
-    		*/
+    	The detected [MIME type](https://en.wikipedia.org/wiki/Internet_media_type).
+    	*/
     var mime: String
   }
   object ImageTypeResult {
     
-    inline def apply(ext: ImageType, mime: String): ImageTypeResult = {
+    inline def apply(ext: ImageFileExtension, mime: String): ImageTypeResult = {
       val __obj = js.Dynamic.literal(ext = ext.asInstanceOf[js.Any], mime = mime.asInstanceOf[js.Any])
       __obj.asInstanceOf[ImageTypeResult]
     }
     
     extension [Self <: ImageTypeResult](x: Self) {
       
-      inline def setExt(value: ImageType): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
+      inline def setExt(value: ImageFileExtension): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
       
       inline def setMime(value: String): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
     }

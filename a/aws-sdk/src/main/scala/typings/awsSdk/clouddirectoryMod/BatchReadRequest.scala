@@ -38,6 +38,6 @@ object BatchReadRequest {
     
     inline def setOperations(value: BatchReadOperationList): Self = StObject.set(x, "Operations", value.asInstanceOf[js.Any])
     
-    inline def setOperationsVarargs(value: BatchReadOperation*): Self = StObject.set(x, "Operations", js.Array(value :_*))
+    inline def setOperationsVarargs(value: BatchReadOperation*): Self = StObject.set(x, "Operations", js.Array(value*))
   }
 }

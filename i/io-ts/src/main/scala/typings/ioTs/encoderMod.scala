@@ -30,19 +30,19 @@ object encoderMod {
   
   inline def array[O, A](item: Encoder[O, A]): Encoder[js.Array[O], js.Array[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("array")(item.asInstanceOf[js.Any]).asInstanceOf[Encoder[js.Array[O], js.Array[A]]]
   
-  inline def compose[E, A](ea: Encoder[E, A]): js.Function1[/* ab */ Encoder[A, js.Any], Encoder[E, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(ea.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ab */ Encoder[A, js.Any], Encoder[E, js.Any]]]
+  inline def compose[E, A](ea: Encoder[E, A]): js.Function1[/* ab */ Encoder[A, Any], Encoder[E, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(ea.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ab */ Encoder[A, Any], Encoder[E, Any]]]
   
-  inline def contramap[A, B](f: js.Function1[/* b */ B, A]): js.Function1[/* fa */ Encoder[js.Any, A], Encoder[js.Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("contramap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Encoder[js.Any, A], Encoder[js.Any, B]]]
+  inline def contramap[A, B](f: js.Function1[/* b */ B, A]): js.Function1[/* fa */ Encoder[Any, A], Encoder[Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("contramap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Encoder[Any, A], Encoder[Any, B]]]
   
   inline def id[A](): Encoder[A, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("id")().asInstanceOf[Encoder[A, A]]
   
-  inline def intersect[P, B](right: Encoder[P, B]): js.Function1[/* left */ Encoder[js.Any, js.Any], Encoder[js.Any & P, js.Any & B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("intersect")(right.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* left */ Encoder[js.Any, js.Any], Encoder[js.Any & P, js.Any & B]]]
+  inline def intersect[P, B](right: Encoder[P, B]): js.Function1[/* left */ Encoder[Any, Any], Encoder[Any & P, Any & B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("intersect")(right.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* left */ Encoder[Any, Any], Encoder[Any & P, Any & B]]]
   
   inline def `lazy`[O, A](f: js.Function0[Encoder[O, A]]): Encoder[O, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("lazy")(f.asInstanceOf[js.Any]).asInstanceOf[Encoder[O, A]]
   
   inline def nullable[O, A](or: Encoder[O, A]): Encoder[Null | O, Null | A] = ^.asInstanceOf[js.Dynamic].applyDynamic("nullable")(or.asInstanceOf[js.Any]).asInstanceOf[Encoder[Null | O, Null | A]]
   
-  inline def partial[P /* <: Record[String, Encoder[js.Any, js.Any]] */](properties: P): Encoder[
+  inline def partial[P /* <: Record[String, Encoder[Any, Any]] */](properties: P): Encoder[
     Partial[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof P ]: io-ts.io-ts/lib/Encoder.OutputOf<P[K]>}
@@ -66,10 +66,28 @@ object encoderMod {
     ]
   ]]
   
+  inline def readonly[O, A](decoder: Encoder[O, A]): Encoder[O, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("readonly")(decoder.asInstanceOf[js.Any]).asInstanceOf[Encoder[O, A]]
+  
   inline def record[O, A](codomain: Encoder[O, A]): Encoder[Record[String, O], Record[String, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("record")(codomain.asInstanceOf[js.Any]).asInstanceOf[Encoder[Record[String, O], Record[String, A]]]
   
+  inline def struct[P /* <: Record[String, Encoder[Any, Any]] */](properties: P): Encoder[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof P ]: io-ts.io-ts/lib/Encoder.OutputOf<P[K]>}
+    */ typings.ioTs.ioTsStrings.struct & TopLevel[P], 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof P ]: io-ts.io-ts/lib/Encoder.TypeOf<P[K]>}
+    */ typings.ioTs.ioTsStrings.struct & TopLevel[P]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("struct")(properties.asInstanceOf[js.Any]).asInstanceOf[Encoder[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof P ]: io-ts.io-ts/lib/Encoder.OutputOf<P[K]>}
+    */ typings.ioTs.ioTsStrings.struct & TopLevel[P], 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof P ]: io-ts.io-ts/lib/Encoder.TypeOf<P[K]>}
+    */ typings.ioTs.ioTsStrings.struct & TopLevel[P]
+  ]]
+  
   inline def sum[T /* <: String */](tag: T): js.Function1[
-    /* members */ Record[String, Encoder[js.Any, js.Any]], 
+    /* members */ Record[String, Encoder[Any, Any]], 
     Encoder[
       OutputOf[
         /* import warning: importer.ImportType#apply Failed type conversion: std.Record<string, io-ts.io-ts/lib/Encoder.Encoder<any, any>>[keyof std.Record<string, io-ts.io-ts/lib/Encoder.Encoder<any, any>>] */ js.Any
@@ -79,7 +97,7 @@ object encoderMod {
       ]
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("sum")(tag.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* members */ Record[String, Encoder[js.Any, js.Any]], 
+    /* members */ Record[String, Encoder[Any, Any]], 
     Encoder[
       OutputOf[
         /* import warning: importer.ImportType#apply Failed type conversion: std.Record<string, io-ts.io-ts/lib/Encoder.Encoder<any, any>>[keyof std.Record<string, io-ts.io-ts/lib/Encoder.Encoder<any, any>>] */ js.Any
@@ -90,7 +108,7 @@ object encoderMod {
     ]
   ]]
   
-  inline def tuple[C /* <: js.Array[Encoder[js.Any, js.Any]] */](
+  inline def tuple[C /* <: js.Array[Encoder[Any, Any]] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param components because its type C is not an array type */ components: C
   ): Encoder[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -108,20 +126,20 @@ object encoderMod {
     */ typings.ioTs.ioTsStrings.tuple & TopLevel[C]
   ]]
   
-  inline def `type`[P /* <: Record[String, Encoder[js.Any, js.Any]] */](properties: P): Encoder[
+  inline def `type`[P /* <: Record[String, Encoder[Any, Any]] */](properties: P): Encoder[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof P ]: io-ts.io-ts/lib/Encoder.OutputOf<P[K]>}
-    */ typings.ioTs.ioTsStrings.`type` & TopLevel[P], 
+    */ typings.ioTs.ioTsStrings.apply & TopLevel[P], 
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof P ]: io-ts.io-ts/lib/Encoder.TypeOf<P[K]>}
-    */ typings.ioTs.ioTsStrings.`type` & TopLevel[P]
+    */ typings.ioTs.ioTsStrings.apply & TopLevel[P]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(properties.asInstanceOf[js.Any]).asInstanceOf[Encoder[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof P ]: io-ts.io-ts/lib/Encoder.OutputOf<P[K]>}
-    */ typings.ioTs.ioTsStrings.`type` & TopLevel[P], 
+    */ typings.ioTs.ioTsStrings.apply & TopLevel[P], 
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof P ]: io-ts.io-ts/lib/Encoder.TypeOf<P[K]>}
-    */ typings.ioTs.ioTsStrings.`type` & TopLevel[P]
+    */ typings.ioTs.ioTsStrings.apply & TopLevel[P]
   ]]
   
   trait Encoder[O, A] extends StObject {
@@ -141,9 +159,9 @@ object encoderMod {
     }
   }
   
-  type OutputOf[E] = js.Any
+  type OutputOf[E] = Any
   
-  type TypeOf[E] = js.Any
+  type TypeOf[E] = Any
   
   object fpTsLibHKTAugmentingMod {
     

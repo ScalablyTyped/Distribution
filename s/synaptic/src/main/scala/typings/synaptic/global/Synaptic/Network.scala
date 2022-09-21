@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Networks are basically an array of layers. They have an input layer, a number of hidden layers, and an output layer.
   */
-class Network ()
+open class Network ()
   extends typings.synaptic.mod.Network {
   def this(options: Options) = this()
 }
@@ -24,7 +24,7 @@ object Network {
   /**
     * Rebuild a network that has been stored in a json using the method toJSON().
     */
-  inline def fromJSON(exported: js.Any): typings.synaptic.mod.Network = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(exported.asInstanceOf[js.Any]).asInstanceOf[typings.synaptic.mod.Network]
+  inline def fromJSON(exported: Any): typings.synaptic.mod.Network = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(exported.asInstanceOf[js.Any]).asInstanceOf[typings.synaptic.mod.Network]
   
   /**
     * Creates a static String to store the source code of the functions that are identical for all the workers (train, _trainSet, test).

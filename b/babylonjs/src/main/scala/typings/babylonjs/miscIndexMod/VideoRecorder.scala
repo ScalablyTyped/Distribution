@@ -1,15 +1,14 @@
 package typings.babylonjs.miscIndexMod
 
+import typings.babylonjs.anon.PartialVideoRecorderOptio
 import typings.babylonjs.engineMod.Engine
-import typings.babylonjs.typesMod.Nullable
-import typings.babylonjs.videoRecorderMod.VideoRecorderOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs/Misc/index", "VideoRecorder")
 @js.native
-class VideoRecorder protected ()
+open class VideoRecorder protected ()
   extends typings.babylonjs.videoRecorderMod.VideoRecorder {
   /**
     * Create a new VideoCapture object which can help converting what you see in Babylon to a video file.
@@ -17,7 +16,7 @@ class VideoRecorder protected ()
     * @param options Defines options that can be used to customize the capture.
     */
   def this(engine: Engine) = this()
-  def this(engine: Engine, options: Nullable[VideoRecorderOptions]) = this()
+  def this(engine: Engine, options: PartialVideoRecorderOptio) = this()
 }
 /* static members */
 object VideoRecorder {
@@ -33,7 +32,7 @@ object VideoRecorder {
     */
   inline def IsSupported(engine: Engine): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsSupported")(engine.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("babylonjs/Misc/index", "VideoRecorder._defaultOptions")
+  @JSImport("babylonjs/Misc/index", "VideoRecorder._DefaultOptions")
   @js.native
-  val _defaultOptions: js.Any = js.native
+  val _DefaultOptions: Any = js.native
 }

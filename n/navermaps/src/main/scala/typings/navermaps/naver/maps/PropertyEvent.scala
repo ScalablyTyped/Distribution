@@ -10,13 +10,13 @@ trait PropertyEvent extends StObject {
   
   var name: String
   
-  var newValue: js.Any
+  var newValue: Any
   
-  var oldValue: js.Any
+  var oldValue: Any
 }
 object PropertyEvent {
   
-  inline def apply(feature: Feature, name: String, newValue: js.Any, oldValue: js.Any): PropertyEvent = {
+  inline def apply(feature: Feature, name: String, newValue: Any, oldValue: Any): PropertyEvent = {
     val __obj = js.Dynamic.literal(feature = feature.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertyEvent]
   }
@@ -27,8 +27,8 @@ object PropertyEvent {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setNewValue(value: js.Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+    inline def setNewValue(value: Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
-    inline def setOldValue(value: js.Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+    inline def setOldValue(value: Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
   }
 }

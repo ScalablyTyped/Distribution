@@ -22,7 +22,7 @@ trait ListTrafficPoliciesResponse extends StObject {
   var TrafficPolicyIdMarker: TrafficPolicyId
   
   /**
-    * A list that contains one TrafficPolicySummary element for each traffic policy that was created by the current AWS account.
+    * A list that contains one TrafficPolicySummary element for each traffic policy that was created by the current Amazon Web Services account.
     */
   var TrafficPolicySummaries: typings.awsSdk.route53Mod.TrafficPolicySummaries
 }
@@ -48,6 +48,6 @@ object ListTrafficPoliciesResponse {
     
     inline def setTrafficPolicySummaries(value: TrafficPolicySummaries): Self = StObject.set(x, "TrafficPolicySummaries", value.asInstanceOf[js.Any])
     
-    inline def setTrafficPolicySummariesVarargs(value: TrafficPolicySummary*): Self = StObject.set(x, "TrafficPolicySummaries", js.Array(value :_*))
+    inline def setTrafficPolicySummariesVarargs(value: TrafficPolicySummary*): Self = StObject.set(x, "TrafficPolicySummaries", js.Array(value*))
   }
 }

@@ -22,7 +22,7 @@ object mod {
     
     @JSImport("dagre", "graphlib.Graph")
     @js.native
-    class Graph[T] () extends StObject {
+    open class Graph[T] () extends StObject {
       def this(opt: Compound) = this()
       
       def children(parentName: String): js.UndefOr[String] = js.native
@@ -34,6 +34,8 @@ object mod {
       def edgeCount(): Double = js.native
       
       def edges(): js.Array[Edge] = js.native
+      
+      def filterNodes(callback: js.Function1[/* nodeId */ String, Boolean]): Graph[T] = js.native
       
       def graph(): GraphLabel = js.native
       
@@ -67,6 +69,7 @@ object mod {
       def predecessors(name: String): js.UndefOr[js.Array[Node[T]]] = js.native
       
       def removeEdge(outNodeName: String, inNodeName: String): Graph[T] = js.native
+      def removeEdge(outNodeName: String, inNodeName: String, name: String): Graph[T] = js.native
       
       def removeNode(name: String): Graph[T] = js.native
       
@@ -80,7 +83,7 @@ object mod {
       
       def setEdge(params: Edge): Graph[T] = js.native
       def setEdge(params: Edge, value: String): Graph[T] = js.native
-      def setEdge(params: Edge, value: StringDictionary[js.Any]): Graph[T] = js.native
+      def setEdge(params: Edge, value: StringDictionary[Any]): Graph[T] = js.native
       def setEdge(sourceId: String, targetId: String): Graph[T] = js.native
       def setEdge(sourceId: String, targetId: String, value: String): Graph[T] = js.native
       def setEdge(sourceId: String, targetId: String, value: String, name: String): Graph[T] = js.native
@@ -110,22 +113,22 @@ object mod {
       
       inline def components(graph: Graph[js.Object]): js.Array[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("components")(graph.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[String]]]
       
-      inline def dijkstra(graph: Graph[js.Object], source: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dijkstra")(graph.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-      inline def dijkstra(graph: Graph[js.Object], source: String, weightFn: Unit, edgeFn: EdgeFn): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dijkstra")(graph.asInstanceOf[js.Any], source.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any], edgeFn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-      inline def dijkstra(graph: Graph[js.Object], source: String, weightFn: WeightFn): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dijkstra")(graph.asInstanceOf[js.Any], source.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-      inline def dijkstra(graph: Graph[js.Object], source: String, weightFn: WeightFn, edgeFn: EdgeFn): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dijkstra")(graph.asInstanceOf[js.Any], source.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any], edgeFn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      inline def dijkstra(graph: Graph[js.Object], source: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dijkstra")(graph.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Any]
+      inline def dijkstra(graph: Graph[js.Object], source: String, weightFn: Unit, edgeFn: EdgeFn): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dijkstra")(graph.asInstanceOf[js.Any], source.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any], edgeFn.asInstanceOf[js.Any])).asInstanceOf[Any]
+      inline def dijkstra(graph: Graph[js.Object], source: String, weightFn: WeightFn): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dijkstra")(graph.asInstanceOf[js.Any], source.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any])).asInstanceOf[Any]
+      inline def dijkstra(graph: Graph[js.Object], source: String, weightFn: WeightFn, edgeFn: EdgeFn): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dijkstra")(graph.asInstanceOf[js.Any], source.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any], edgeFn.asInstanceOf[js.Any])).asInstanceOf[Any]
       
-      inline def dijkstraAll(graph: Graph[js.Object]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("dijkstraAll")(graph.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-      inline def dijkstraAll(graph: Graph[js.Object], weightFn: Unit, edgeFn: EdgeFn): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dijkstraAll")(graph.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any], edgeFn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-      inline def dijkstraAll(graph: Graph[js.Object], weightFn: WeightFn): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dijkstraAll")(graph.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-      inline def dijkstraAll(graph: Graph[js.Object], weightFn: WeightFn, edgeFn: EdgeFn): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dijkstraAll")(graph.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any], edgeFn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      inline def dijkstraAll(graph: Graph[js.Object]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("dijkstraAll")(graph.asInstanceOf[js.Any]).asInstanceOf[Any]
+      inline def dijkstraAll(graph: Graph[js.Object], weightFn: Unit, edgeFn: EdgeFn): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dijkstraAll")(graph.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any], edgeFn.asInstanceOf[js.Any])).asInstanceOf[Any]
+      inline def dijkstraAll(graph: Graph[js.Object], weightFn: WeightFn): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dijkstraAll")(graph.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any])).asInstanceOf[Any]
+      inline def dijkstraAll(graph: Graph[js.Object], weightFn: WeightFn, edgeFn: EdgeFn): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("dijkstraAll")(graph.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any], edgeFn.asInstanceOf[js.Any])).asInstanceOf[Any]
       
       inline def findCycles(graph: Graph[js.Object]): js.Array[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findCycles")(graph.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[String]]]
       
-      inline def floydWarchall(graph: Graph[js.Object]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("floydWarchall")(graph.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-      inline def floydWarchall(graph: Graph[js.Object], weightFn: Unit, edgeFn: EdgeFn): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("floydWarchall")(graph.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any], edgeFn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-      inline def floydWarchall(graph: Graph[js.Object], weightFn: WeightFn): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("floydWarchall")(graph.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-      inline def floydWarchall(graph: Graph[js.Object], weightFn: WeightFn, edgeFn: EdgeFn): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("floydWarchall")(graph.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any], edgeFn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      inline def floydWarchall(graph: Graph[js.Object]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("floydWarchall")(graph.asInstanceOf[js.Any]).asInstanceOf[Any]
+      inline def floydWarchall(graph: Graph[js.Object], weightFn: Unit, edgeFn: EdgeFn): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("floydWarchall")(graph.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any], edgeFn.asInstanceOf[js.Any])).asInstanceOf[Any]
+      inline def floydWarchall(graph: Graph[js.Object], weightFn: WeightFn): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("floydWarchall")(graph.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any])).asInstanceOf[Any]
+      inline def floydWarchall(graph: Graph[js.Object], weightFn: WeightFn, edgeFn: EdgeFn): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("floydWarchall")(graph.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any], edgeFn.asInstanceOf[js.Any])).asInstanceOf[Any]
       
       inline def isAcyclic(graph: Graph[js.Object]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAcyclic")(graph.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
@@ -149,9 +152,9 @@ object mod {
       @js.native
       val ^ : js.Any = js.native
       
-      inline def read(graph: js.Any): Graph[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(graph.asInstanceOf[js.Any]).asInstanceOf[Graph[js.Object]]
+      inline def read(graph: Any): Graph[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(graph.asInstanceOf[js.Any]).asInstanceOf[Graph[js.Object]]
       
-      inline def write(graph: Graph[js.Object]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(graph.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def write(graph: Graph[js.Object]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(graph.asInstanceOf[js.Any]).asInstanceOf[Any]
     }
   }
   
@@ -238,7 +241,7 @@ object mod {
   
   trait GraphEdge
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var points: js.Array[X]
   }
@@ -253,7 +256,7 @@ object mod {
       
       inline def setPoints(value: js.Array[X]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
       
-      inline def setPointsVarargs(value: X*): Self = StObject.set(x, "points", js.Array(value :_*))
+      inline def setPointsVarargs(value: X*): Self = StObject.set(x, "points", js.Array(value*))
     }
   }
   
@@ -342,7 +345,7 @@ object mod {
     }
   }
   
-  type Label = StringDictionary[js.Any]
+  type Label = StringDictionary[Any]
   
   type Node[T] = T & Class
   

@@ -10,15 +10,12 @@ Simple, easy to use component for pagination. Compatible with bootstrap paginato
 | ------------------ | :-------------: |
 | Full name          | react-js-pagination |
 | Keywords           | react, reactjs, pagination, paginator, bootstrap, reload, webpack, babel, react-transform, react-component |
-| # releases         | 2 |
-| # dependents       | 37 |
-| # downloads        | 1843721 |
-| # stars            | 6 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 427539.0 |
+| # stars            | 331.0 |
 
 ## Links
-- [Homepage](https://github.com/vayser/react-js-pagination)
-- [Bugs](https://github.com/vayser/react-js-pagination/issues)
-- [Repository](https://github.com/vayser/react-js-pagination)
 - [Npm](https://www.npmjs.com/package/react-js-pagination)
     
 

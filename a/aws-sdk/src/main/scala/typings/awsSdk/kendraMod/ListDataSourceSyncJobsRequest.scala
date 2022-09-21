@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListDataSourceSyncJobsRequest extends StObject {
   
   /**
-    * The identifier of the data source.
+    * The identifier of the data source connector.
     */
   var Id: DataSourceId
   
   /**
-    * The identifier of the index that contains the data source.
+    * The identifier of the index used with the data source connector.
     */
   var IndexId: typings.awsSdk.kendraMod.IndexId
   
@@ -22,17 +22,17 @@ trait ListDataSourceSyncJobsRequest extends StObject {
   var MaxResults: js.UndefOr[MaxResultsIntegerForListDataSourceSyncJobsRequest] = js.undefined
   
   /**
-    * If the result of the previous request to GetDataSourceSyncJobHistory was truncated, include the NextToken to fetch the next set of jobs.
+    * If the previous response was incomplete (because there is more data to retrieve), Amazon Kendra returns a pagination token in the response. You can use this pagination token to retrieve the next set of jobs.
     */
   var NextToken: js.UndefOr[typings.awsSdk.kendraMod.NextToken] = js.undefined
   
   /**
-    * When specified, the synchronization jobs returned in the list are limited to jobs between the specified dates. 
+    * When specified, the synchronization jobs returned in the list are limited to jobs between the specified dates.
     */
   var StartTimeFilter: js.UndefOr[TimeRange] = js.undefined
   
   /**
-    * When specified, only returns synchronization jobs with the Status field equal to the specified status.
+    * Only returns synchronization jobs with the Status field equal to the specified status.
     */
   var StatusFilter: js.UndefOr[DataSourceSyncJobStatus] = js.undefined
 }

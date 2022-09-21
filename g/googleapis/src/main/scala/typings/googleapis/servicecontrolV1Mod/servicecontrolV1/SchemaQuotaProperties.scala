@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Represents the properties needed for quota operations.
-  */
 trait SchemaQuotaProperties extends StObject {
   
   /**
     * Quota mode for this operation.
     */
-  var quotaMode: js.UndefOr[String] = js.undefined
+  var quotaMode: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaQuotaProperties {
   
@@ -24,6 +21,8 @@ object SchemaQuotaProperties {
   extension [Self <: SchemaQuotaProperties](x: Self) {
     
     inline def setQuotaMode(value: String): Self = StObject.set(x, "quotaMode", value.asInstanceOf[js.Any])
+    
+    inline def setQuotaModeNull: Self = StObject.set(x, "quotaMode", null)
     
     inline def setQuotaModeUndefined: Self = StObject.set(x, "quotaMode", js.undefined)
   }

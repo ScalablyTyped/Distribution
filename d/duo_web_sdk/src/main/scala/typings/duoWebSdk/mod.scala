@@ -18,7 +18,7 @@ object mod {
   
   inline def init(options: InitOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def isDuoMessage(event: MessageEvent[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("_isDuoMessage")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isDuoMessage(event: MessageEvent[Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("_isDuoMessage")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def onReady(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_onReady")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   

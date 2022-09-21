@@ -1,9 +1,7 @@
 package typings.telebot
 
-import typings.node.Buffer
-import typings.node.NodeJS.ReadableStream
-import typings.std.Error
-import typings.std.RegExp
+import typings.node.bufferMod.global.Buffer
+import typings.std.ReadableStream
 import typings.telebot.anon.CacheTime
 import typings.telebot.anon.Caption
 import typings.telebot.anon.Cert
@@ -21,6 +19,7 @@ import typings.telebot.anon.Limit
 import typings.telebot.anon.MessageId
 import typings.telebot.anon.Notification
 import typings.telebot.anon.NotificationReplyMarkup
+import typings.telebot.anon.ParseMode
 import typings.telebot.anon.ReplyMarkup
 import typings.telebot.anon.ReplyToMessage
 import typings.telebot.anon.`0`
@@ -33,7 +32,7 @@ object mod {
   
   @JSImport("telebot", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with typings.telebot.mod.telebot {
     def this(config: String) = this()
@@ -45,83 +44,83 @@ object mod {
   
   @JSImport("telebot", "AnswerList")
   @js.native
-  class AnswerList protected () extends StObject {
+  open class AnswerList protected () extends StObject {
     def this(id: String) = this()
-    def this(id: String, opt: js.Any) = this()
+    def this(id: String, opt: Any) = this()
     
-    def add(`type`: String): js.Any = js.native
-    def add(`type`: String, set: js.Any): js.Any = js.native
+    def add(`type`: String): Any = js.native
+    def add(`type`: String, set: Any): Any = js.native
     
-    def addArticle(): js.Any = js.native
-    def addArticle(set: js.Any): js.Any = js.native
+    def addArticle(): Any = js.native
+    def addArticle(set: Any): Any = js.native
     
-    def addDocument(): js.Any = js.native
-    def addDocument(set: js.Any): js.Any = js.native
+    def addDocument(): Any = js.native
+    def addDocument(set: Any): Any = js.native
     
-    def addGame(): js.Any = js.native
-    def addGame(set: js.Any): js.Any = js.native
+    def addGame(): Any = js.native
+    def addGame(set: Any): Any = js.native
     
-    def addGif(): js.Any = js.native
-    def addGif(set: js.Any): js.Any = js.native
+    def addGif(): Any = js.native
+    def addGif(set: Any): Any = js.native
     
-    def addLocation(): js.Any = js.native
-    def addLocation(set: js.Any): js.Any = js.native
+    def addLocation(): Any = js.native
+    def addLocation(set: Any): Any = js.native
     
-    def addPhoto(): js.Any = js.native
-    def addPhoto(set: js.Any): js.Any = js.native
+    def addPhoto(): Any = js.native
+    def addPhoto(set: Any): Any = js.native
     
-    def addSticker(): js.Any = js.native
-    def addSticker(set: js.Any): js.Any = js.native
+    def addSticker(): Any = js.native
+    def addSticker(set: Any): Any = js.native
     
-    def addVenue(): js.Any = js.native
-    def addVenue(set: js.Any): js.Any = js.native
+    def addVenue(): Any = js.native
+    def addVenue(set: Any): Any = js.native
     
-    def addVideo(): js.Any = js.native
-    def addVideo(set: js.Any): js.Any = js.native
+    def addVideo(): Any = js.native
+    def addVideo(set: Any): Any = js.native
     
-    def addVideoGif(): js.Any = js.native
-    def addVideoGif(set: js.Any): js.Any = js.native
+    def addVideoGif(): Any = js.native
+    def addVideoGif(set: Any): Any = js.native
     
-    def addVoice(): js.Any = js.native
-    def addVoice(set: js.Any): js.Any = js.native
+    def addVoice(): Any = js.native
+    def addVoice(set: Any): Any = js.native
     
-    def cachedAudio(): js.Any = js.native
-    def cachedAudio(set: js.Any): js.Any = js.native
+    def cachedAudio(): Any = js.native
+    def cachedAudio(set: Any): Any = js.native
     
-    def cachedDocument(): js.Any = js.native
-    def cachedDocument(set: js.Any): js.Any = js.native
+    def cachedDocument(): Any = js.native
+    def cachedDocument(set: Any): Any = js.native
     
-    def cachedGif(): js.Any = js.native
-    def cachedGif(set: js.Any): js.Any = js.native
+    def cachedGif(): Any = js.native
+    def cachedGif(set: Any): Any = js.native
     
     // Cached methods
-    def cachedPhoto(): js.Any = js.native
-    def cachedPhoto(set: js.Any): js.Any = js.native
+    def cachedPhoto(): Any = js.native
+    def cachedPhoto(set: Any): Any = js.native
     
-    def cachedSticker(): js.Any = js.native
-    def cachedSticker(set: js.Any): js.Any = js.native
+    def cachedSticker(): Any = js.native
+    def cachedSticker(set: Any): Any = js.native
     
-    def cachedVideo(): js.Any = js.native
-    def cachedVideo(set: js.Any): js.Any = js.native
+    def cachedVideo(): Any = js.native
+    def cachedVideo(set: Any): Any = js.native
     
-    def cachedVideoGif(): js.Any = js.native
-    def cachedVideoGif(set: js.Any): js.Any = js.native
+    def cachedVideoGif(): Any = js.native
+    def cachedVideoGif(set: Any): Any = js.native
     
-    def cachedVoice(): js.Any = js.native
-    def cachedVoice(set: js.Any): js.Any = js.native
+    def cachedVoice(): Any = js.native
+    def cachedVoice(set: Any): Any = js.native
     
     def results(): String = js.native
   }
   
   /* static member */
-  inline def addMethods(methods: (genericCb | js.Any)*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addMethods")(methods.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def addMethods(methods: (genericCb | Any)*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addMethods")(methods.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Any]
   
   trait config extends StObject {
     
     var allowedUpdates: js.UndefOr[js.Array[String]] = js.undefined
     
     // Optional. Plugin folder location relative to telebot package.
-    var pluginConfig: js.UndefOr[js.Any] = js.undefined
+    var pluginConfig: js.UndefOr[Any] = js.undefined
     
     // Optional. Use build-in plugins from pluginFolder.
     var pluginFolder: js.UndefOr[String] = js.undefined
@@ -149,9 +148,9 @@ object mod {
       
       inline def setAllowedUpdatesUndefined: Self = StObject.set(x, "allowedUpdates", js.undefined)
       
-      inline def setAllowedUpdatesVarargs(value: String*): Self = StObject.set(x, "allowedUpdates", js.Array(value :_*))
+      inline def setAllowedUpdatesVarargs(value: String*): Self = StObject.set(x, "allowedUpdates", js.Array(value*))
       
-      inline def setPluginConfig(value: js.Any): Self = StObject.set(x, "pluginConfig", value.asInstanceOf[js.Any])
+      inline def setPluginConfig(value: Any): Self = StObject.set(x, "pluginConfig", value.asInstanceOf[js.Any])
       
       inline def setPluginConfigUndefined: Self = StObject.set(x, "pluginConfig", js.undefined)
       
@@ -169,7 +168,7 @@ object mod {
       
       inline def setUsePluginsUndefined: Self = StObject.set(x, "usePlugins", js.undefined)
       
-      inline def setUsePluginsVarargs(value: String*): Self = StObject.set(x, "usePlugins", js.Array(value :_*))
+      inline def setUsePluginsVarargs(value: String*): Self = StObject.set(x, "usePlugins", js.Array(value*))
       
       inline def setWebhook(value: Cert): Self = StObject.set(x, "webhook", value.asInstanceOf[js.Any])
       
@@ -180,341 +179,343 @@ object mod {
   @js.native
   trait genericCb extends StObject {
     
-    def apply(args: js.Any*): js.Any = js.native
+    def apply(args: Any*): Any = js.native
   }
   
   trait module extends StObject {
     
-    var defaultConfig: js.Any
+    var defaultConfig: Any
     
     var id: String
     
-    def plugin(args: js.Any*): Unit
+    def plugin(args: Any*): Unit
   }
   object module {
     
-    inline def apply(defaultConfig: js.Any, id: String, plugin: /* repeated */ js.Any => Unit): module = {
+    inline def apply(defaultConfig: Any, id: String, plugin: /* repeated */ Any => Unit): module = {
       val __obj = js.Dynamic.literal(defaultConfig = defaultConfig.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], plugin = js.Any.fromFunction1(plugin))
       __obj.asInstanceOf[module]
     }
     
     extension [Self <: module](x: Self) {
       
-      inline def setDefaultConfig(value: js.Any): Self = StObject.set(x, "defaultConfig", value.asInstanceOf[js.Any])
+      inline def setDefaultConfig(value: Any): Self = StObject.set(x, "defaultConfig", value.asInstanceOf[js.Any])
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      inline def setPlugin(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "plugin", js.Any.fromFunction1(value))
+      inline def setPlugin(value: /* repeated */ Any => Unit): Self = StObject.set(x, "plugin", js.Any.fromFunction1(value))
     }
   }
   
   @js.native
   trait telebot extends StObject {
     
-    def answerCallbackQuery(callback_query_id: String): Boolean = js.native
-    def answerCallbackQuery(callback_query_id: String, opt: CacheTime): Boolean = js.native
+    def answerCallbackQuery(callback_query_id: String): js.Promise[Boolean] = js.native
+    def answerCallbackQuery(callback_query_id: String, opt: CacheTime): js.Promise[Boolean] = js.native
     
     def answerList(id: String): AnswerList = js.native
-    def answerList(id: String, opt: js.Any): AnswerList = js.native
+    def answerList(id: String, opt: Any): AnswerList = js.native
     
-    def answerPreCheckoutQuery(pre_checkout_query_id: String, ok: Boolean): Boolean = js.native
-    def answerPreCheckoutQuery(pre_checkout_query_id: String, ok: Boolean, opt: `1`): Boolean = js.native
+    def answerPreCheckoutQuery(pre_checkout_query_id: String, ok: Boolean): js.Promise[Boolean] = js.native
+    def answerPreCheckoutQuery(pre_checkout_query_id: String, ok: Boolean, opt: `1`): js.Promise[Boolean] = js.native
     
-    def answerQuery(param: js.Any*): Boolean = js.native
+    def answerQuery(param: Any*): js.Promise[Boolean] = js.native
     
-    def answerShippingQuery(shipping_query_id: String, ok: Boolean): Boolean = js.native
-    def answerShippingQuery(shipping_query_id: String, ok: Boolean, opt: ErrorMessage): Boolean = js.native
+    def answerShippingQuery(shipping_query_id: String, ok: Boolean): js.Promise[Boolean] = js.native
+    def answerShippingQuery(shipping_query_id: String, ok: Boolean, opt: ErrorMessage): js.Promise[Boolean] = js.native
     
-    def button(`type`: String): js.Any = js.native
-    def button(`type`: String, text: String): js.Any = js.native
+    def button(`type`: String): Any = js.native
+    def button(`type`: String, text: String): Any = js.native
     
     def cleanEvent(`type`: String): Boolean = js.native
     
-    def connect(args: js.Any*): Unit = js.native
+    def connect(args: Any*): Unit = js.native
     
-    def deleteMessage(chat_id: String, from_message_id: Double): Boolean = js.native
-    def deleteMessage(chat_id: Double, from_message_id: Double): Boolean = js.native
+    def deleteMessage(chat_id: String, from_message_id: Double): js.Promise[Boolean] = js.native
+    def deleteMessage(chat_id: Double, from_message_id: Double): js.Promise[Boolean] = js.native
     
-    def deleteWebhook(): Boolean = js.native
+    def deleteWebhook(): js.Promise[Boolean] = js.native
     
     def destroyEvent(`type`: String): Boolean = js.native
     
-    def editMessageCaption(config: InlineMsgId, caption: String): js.Any | Boolean = js.native
-    def editMessageCaption(config: MessageId, caption: String): js.Any | Boolean = js.native
+    def editMessageCaption(config: InlineMsgId, caption: String): js.Promise[Any | Boolean] = js.native
+    def editMessageCaption(config: MessageId, caption: String): js.Promise[Any | Boolean] = js.native
     
-    def editMessageReplyMarkup(config: InlineMsgId, replyMarkup: js.Any): js.Any | Boolean = js.native
-    def editMessageReplyMarkup(config: MessageId, replyMarkup: js.Any): js.Any | Boolean = js.native
+    def editMessageReplyMarkup(config: InlineMsgId, replyMarkup: Any): js.Promise[Any | Boolean] = js.native
+    def editMessageReplyMarkup(config: MessageId, replyMarkup: Any): js.Promise[Any | Boolean] = js.native
     
-    def editMessageText(config: InlineMsgId, text: String): js.Any | Boolean = js.native
-    def editMessageText(config: MessageId, text: String): js.Any | Boolean = js.native
+    def editMessageText(config: InlineMsgId, text: String): js.Promise[Any | Boolean] = js.native
+    def editMessageText(config: InlineMsgId, text: String, opt: ParseMode): js.Promise[Any | Boolean] = js.native
+    def editMessageText(config: MessageId, text: String): js.Promise[Any | Boolean] = js.native
+    def editMessageText(config: MessageId, text: String, opt: ParseMode): js.Promise[Any | Boolean] = js.native
     
-    def event(types: String, data: js.Any): js.Promise[js.Any] = js.native
-    def event(types: String, data: js.Any, self: js.Any): js.Promise[js.Any] = js.native
-    def event(types: js.Array[String], data: js.Any): js.Promise[js.Any] = js.native
-    def event(types: js.Array[String], data: js.Any, self: js.Any): js.Promise[js.Any] = js.native
+    def event(types: String, data: Any): js.Promise[Any] = js.native
+    def event(types: String, data: Any, self: Any): js.Promise[Any] = js.native
+    def event(types: js.Array[String], data: Any): js.Promise[Any] = js.native
+    def event(types: js.Array[String], data: Any, self: Any): js.Promise[Any] = js.native
     
-    def forwardMessage(chat_id: String, from_chat_id: String, message_id: Double): js.Any = js.native
-    def forwardMessage(chat_id: String, from_chat_id: String, message_id: Double, opt: `0`): js.Any = js.native
-    def forwardMessage(chat_id: String, from_chat_id: Double, message_id: Double): js.Any = js.native
-    def forwardMessage(chat_id: String, from_chat_id: Double, message_id: Double, opt: `0`): js.Any = js.native
-    def forwardMessage(chat_id: Double, from_chat_id: String, message_id: Double): js.Any = js.native
-    def forwardMessage(chat_id: Double, from_chat_id: String, message_id: Double, opt: `0`): js.Any = js.native
-    def forwardMessage(chat_id: Double, from_chat_id: Double, message_id: Double): js.Any = js.native
-    def forwardMessage(chat_id: Double, from_chat_id: Double, message_id: Double, opt: `0`): js.Any = js.native
+    def forwardMessage(chat_id: String, from_chat_id: String, message_id: Double): js.Promise[Any] = js.native
+    def forwardMessage(chat_id: String, from_chat_id: String, message_id: Double, opt: `0`): js.Promise[Any] = js.native
+    def forwardMessage(chat_id: String, from_chat_id: Double, message_id: Double): js.Promise[Any] = js.native
+    def forwardMessage(chat_id: String, from_chat_id: Double, message_id: Double, opt: `0`): js.Promise[Any] = js.native
+    def forwardMessage(chat_id: Double, from_chat_id: String, message_id: Double): js.Promise[Any] = js.native
+    def forwardMessage(chat_id: Double, from_chat_id: String, message_id: Double, opt: `0`): js.Promise[Any] = js.native
+    def forwardMessage(chat_id: Double, from_chat_id: Double, message_id: Double): js.Promise[Any] = js.native
+    def forwardMessage(chat_id: Double, from_chat_id: Double, message_id: Double, opt: `0`): js.Promise[Any] = js.native
     
-    def getChat(chat_id: String): js.Any = js.native
-    def getChat(chat_id: Double): js.Any = js.native
+    def getChat(chat_id: String): js.Promise[Any] = js.native
+    def getChat(chat_id: Double): js.Promise[Any] = js.native
     
-    def getChatAdministrators(chat_id: String): js.Array[js.Any] | js.Any = js.native
-    def getChatAdministrators(chat_id: Double): js.Array[js.Any] | js.Any = js.native
+    def getChatAdministrators(chat_id: String): js.Promise[js.Array[Any] | Any] = js.native
+    def getChatAdministrators(chat_id: Double): js.Promise[js.Array[Any] | Any] = js.native
     
-    def getChatMember(chat_id: String, user_id: Double): js.Any = js.native
-    def getChatMember(chat_id: Double, user_id: Double): js.Any = js.native
+    def getChatMember(chat_id: String, user_id: Double): js.Promise[Any] = js.native
+    def getChatMember(chat_id: Double, user_id: Double): js.Promise[Any] = js.native
     
-    def getChatMembersCount(chat_id: String): Double = js.native
-    def getChatMembersCount(chat_id: Double): Double = js.native
+    def getChatMembersCount(chat_id: String): js.Promise[Double] = js.native
+    def getChatMembersCount(chat_id: Double): js.Promise[Double] = js.native
     
-    def getFile(file_id: String): js.Any = js.native
+    def getFile(file_id: String): js.Promise[Any] = js.native
     
-    def getGameHighScores(user_id: Double): js.Array[js.Any] = js.native
-    def getGameHighScores(user_id: Double, opt: InlineMessageId): js.Array[js.Any] = js.native
+    def getGameHighScores(user_id: Double): js.Promise[js.Array[Any]] = js.native
+    def getGameHighScores(user_id: Double, opt: InlineMessageId): js.Promise[js.Array[Any]] = js.native
     
     // Telegram API
-    def getMe(): js.Any = js.native
+    def getMe(): js.Promise[Any] = js.native
     
     def getUpdates(offset: Double, limit: Double, timeout: Double, allowed_updates: String): Unit = js.native
     def getUpdates(offset: Double, limit: Double, timeout: Double, allowed_updates: js.Array[String]): Unit = js.native
     
-    def getUserProfilePhotos(user_id: Double): js.Any = js.native
-    def getUserProfilePhotos(user_id: Double, opt: Limit): js.Any = js.native
+    def getUserProfilePhotos(user_id: Double): js.Promise[Any] = js.native
+    def getUserProfilePhotos(user_id: Double, opt: Limit): js.Promise[Any] = js.native
     
-    def getWebhookInfo(): js.Any = js.native
+    def getWebhookInfo(): js.Promise[Any] = js.native
     
-    def inlineButton(text: String): js.Any = js.native
-    def inlineButton(text: String, opt: js.Any): js.Any = js.native
+    def inlineButton(text: String): Any = js.native
+    def inlineButton(text: String, opt: Any): Any = js.native
     
-    def inlineKeyboard(inlineButtons: js.Array[js.Array[js.Any]]): js.Any = js.native
+    def inlineKeyboard(inlineButtons: js.Array[js.Array[Any]]): Any = js.native
     
-    def inlineQueryKeyboard(config: js.Array[js.Array[js.Any]]): js.Any = js.native
+    def inlineQueryKeyboard(config: js.Array[js.Array[Any]]): Any = js.native
     
     // methods.js
-    def keyboard(buttons: js.Array[js.Array[js.Any]]): js.Any = js.native
-    def keyboard(buttons: js.Array[js.Array[js.Any]], opt: js.Any): js.Any = js.native
+    def keyboard(buttons: js.Array[js.Array[Any]]): Any = js.native
+    def keyboard(buttons: js.Array[js.Array[Any]], opt: Any): Any = js.native
     
-    def kickChatMember(chat_id: String, user_id: Double): Boolean = js.native
-    def kickChatMember(chat_id: Double, user_id: Double): Boolean = js.native
+    def kickChatMember(chat_id: String, user_id: Double): js.Promise[Boolean] = js.native
+    def kickChatMember(chat_id: Double, user_id: Double): js.Promise[Boolean] = js.native
     
-    def leaveChat(chat_id: String): Boolean = js.native
-    def leaveChat(chat_id: Double): Boolean = js.native
+    def leaveChat(chat_id: String): js.Promise[Boolean] = js.native
+    def leaveChat(chat_id: Double): js.Promise[Boolean] = js.native
     
-    def mod(names: String, fn: genericCb): js.Any = js.native
-    def mod(names: js.Array[String], fn: genericCb): js.Any = js.native
+    def mod(names: String, fn: genericCb): Any = js.native
+    def mod(names: js.Array[String], fn: genericCb): Any = js.native
     
-    def modRun(name: String, data: js.Any): js.Any = js.native
+    def modRun(name: String, data: Any): Any = js.native
     
     def on(types: String, fn: genericCb): Boolean = js.native
-    def on(types: String, fn: genericCb, opt: js.Any): Boolean = js.native
+    def on(types: String, fn: genericCb, opt: Any): Boolean = js.native
     def on(types: js.Array[String], fn: genericCb): Boolean = js.native
-    def on(types: js.Array[String], fn: genericCb, opt: js.Any): Boolean = js.native
-    def on(types: RegExp, fn: genericCb): Boolean = js.native
-    def on(types: RegExp, fn: genericCb, opt: js.Any): Boolean = js.native
+    def on(types: js.Array[String], fn: genericCb, opt: Any): Boolean = js.native
+    def on(types: js.RegExp, fn: genericCb): Boolean = js.native
+    def on(types: js.RegExp, fn: genericCb, opt: Any): Boolean = js.native
     
     def plug(module: module): Unit = js.native
     
-    def properties(form: js.Any, opt: js.Any): js.Any = js.native
+    def properties(form: Any, opt: Any): Any = js.native
     
-    def receiveUpdates(updateList: js.Array[js.Any]): js.Promise[js.Any] = js.native
+    def receiveUpdates(updateList: js.Array[Any]): js.Promise[Any] = js.native
     
     def removeEvent(`type`: String, fn: genericCb): Boolean = js.native
     
     def removeMod(name: String, fn: genericCb): Boolean = js.native
     
-    def request(url: String, form: js.Any, data: js.Any): js.Promise[js.Any] = js.native
+    def request(url: String, form: Any, data: Any): js.Promise[Any] = js.native
     
-    def sendAction(chat_id: String, action: String): Boolean = js.native
-    def sendAction(chat_id: Double, action: String): Boolean = js.native
+    def sendAction(chat_id: String, action: String): js.Promise[Boolean] = js.native
+    def sendAction(chat_id: Double, action: String): js.Promise[Boolean] = js.native
     
-    def sendAudio(chat_id: String, file: String): js.Any = js.native
-    def sendAudio(chat_id: String, file: String, opt: Duration): js.Any = js.native
-    def sendAudio(chat_id: String, file: js.Any): js.Any = js.native
-    def sendAudio(chat_id: String, file: js.Any, opt: Duration): js.Any = js.native
-    def sendAudio(chat_id: String, file: Buffer): js.Any = js.native
-    def sendAudio(chat_id: String, file: Buffer, opt: Duration): js.Any = js.native
-    def sendAudio(chat_id: String, file: ReadableStream): js.Any = js.native
-    def sendAudio(chat_id: String, file: ReadableStream, opt: Duration): js.Any = js.native
-    def sendAudio(chat_id: Double, file: String): js.Any = js.native
-    def sendAudio(chat_id: Double, file: String, opt: Duration): js.Any = js.native
-    def sendAudio(chat_id: Double, file: js.Any): js.Any = js.native
-    def sendAudio(chat_id: Double, file: js.Any, opt: Duration): js.Any = js.native
-    def sendAudio(chat_id: Double, file: Buffer): js.Any = js.native
-    def sendAudio(chat_id: Double, file: Buffer, opt: Duration): js.Any = js.native
-    def sendAudio(chat_id: Double, file: ReadableStream): js.Any = js.native
-    def sendAudio(chat_id: Double, file: ReadableStream, opt: Duration): js.Any = js.native
+    def sendAudio(chat_id: String, file: String): js.Promise[Any] = js.native
+    def sendAudio(chat_id: String, file: String, opt: Duration): js.Promise[Any] = js.native
+    def sendAudio(chat_id: String, file: Any): js.Promise[Any] = js.native
+    def sendAudio(chat_id: String, file: Any, opt: Duration): js.Promise[Any] = js.native
+    def sendAudio(chat_id: String, file: Buffer): js.Promise[Any] = js.native
+    def sendAudio(chat_id: String, file: Buffer, opt: Duration): js.Promise[Any] = js.native
+    def sendAudio(chat_id: String, file: ReadableStream[Any]): js.Promise[Any] = js.native
+    def sendAudio(chat_id: String, file: ReadableStream[Any], opt: Duration): js.Promise[Any] = js.native
+    def sendAudio(chat_id: Double, file: String): js.Promise[Any] = js.native
+    def sendAudio(chat_id: Double, file: String, opt: Duration): js.Promise[Any] = js.native
+    def sendAudio(chat_id: Double, file: Any): js.Promise[Any] = js.native
+    def sendAudio(chat_id: Double, file: Any, opt: Duration): js.Promise[Any] = js.native
+    def sendAudio(chat_id: Double, file: Buffer): js.Promise[Any] = js.native
+    def sendAudio(chat_id: Double, file: Buffer, opt: Duration): js.Promise[Any] = js.native
+    def sendAudio(chat_id: Double, file: ReadableStream[Any]): js.Promise[Any] = js.native
+    def sendAudio(chat_id: Double, file: ReadableStream[Any], opt: Duration): js.Promise[Any] = js.native
     
-    def sendContact(chat_id: String, number: String, firstName: String): js.Any = js.native
-    def sendContact(chat_id: String, number: String, firstName: String, lastName: String): js.Any = js.native
-    def sendContact(chat_id: String, number: String, firstName: String, lastName: String, opt: NotificationReplyMarkup): js.Any = js.native
-    def sendContact(chat_id: String, number: String, firstName: String, lastName: Unit, opt: NotificationReplyMarkup): js.Any = js.native
-    def sendContact(chat_id: Double, number: String, firstName: String): js.Any = js.native
-    def sendContact(chat_id: Double, number: String, firstName: String, lastName: String): js.Any = js.native
-    def sendContact(chat_id: Double, number: String, firstName: String, lastName: String, opt: NotificationReplyMarkup): js.Any = js.native
-    def sendContact(chat_id: Double, number: String, firstName: String, lastName: Unit, opt: NotificationReplyMarkup): js.Any = js.native
+    def sendContact(chat_id: String, number: String, firstName: String): js.Promise[Any] = js.native
+    def sendContact(chat_id: String, number: String, firstName: String, lastName: String): js.Promise[Any] = js.native
+    def sendContact(chat_id: String, number: String, firstName: String, lastName: String, opt: NotificationReplyMarkup): js.Promise[Any] = js.native
+    def sendContact(chat_id: String, number: String, firstName: String, lastName: Unit, opt: NotificationReplyMarkup): js.Promise[Any] = js.native
+    def sendContact(chat_id: Double, number: String, firstName: String): js.Promise[Any] = js.native
+    def sendContact(chat_id: Double, number: String, firstName: String, lastName: String): js.Promise[Any] = js.native
+    def sendContact(chat_id: Double, number: String, firstName: String, lastName: String, opt: NotificationReplyMarkup): js.Promise[Any] = js.native
+    def sendContact(chat_id: Double, number: String, firstName: String, lastName: Unit, opt: NotificationReplyMarkup): js.Promise[Any] = js.native
     
-    def sendDocument(chat_id: String, file: String): js.Any = js.native
-    def sendDocument(chat_id: String, file: String, opt: Caption): js.Any = js.native
-    def sendDocument(chat_id: String, file: js.Any): js.Any = js.native
-    def sendDocument(chat_id: String, file: js.Any, opt: Caption): js.Any = js.native
-    def sendDocument(chat_id: String, file: Buffer): js.Any = js.native
-    def sendDocument(chat_id: String, file: Buffer, opt: Caption): js.Any = js.native
-    def sendDocument(chat_id: String, file: ReadableStream): js.Any = js.native
-    def sendDocument(chat_id: String, file: ReadableStream, opt: Caption): js.Any = js.native
-    def sendDocument(chat_id: Double, file: String): js.Any = js.native
-    def sendDocument(chat_id: Double, file: String, opt: Caption): js.Any = js.native
-    def sendDocument(chat_id: Double, file: js.Any): js.Any = js.native
-    def sendDocument(chat_id: Double, file: js.Any, opt: Caption): js.Any = js.native
-    def sendDocument(chat_id: Double, file: Buffer): js.Any = js.native
-    def sendDocument(chat_id: Double, file: Buffer, opt: Caption): js.Any = js.native
-    def sendDocument(chat_id: Double, file: ReadableStream): js.Any = js.native
-    def sendDocument(chat_id: Double, file: ReadableStream, opt: Caption): js.Any = js.native
+    def sendDocument(chat_id: String, file: String): js.Promise[Any] = js.native
+    def sendDocument(chat_id: String, file: String, opt: Caption): js.Promise[Any] = js.native
+    def sendDocument(chat_id: String, file: Any): js.Promise[Any] = js.native
+    def sendDocument(chat_id: String, file: Any, opt: Caption): js.Promise[Any] = js.native
+    def sendDocument(chat_id: String, file: Buffer): js.Promise[Any] = js.native
+    def sendDocument(chat_id: String, file: Buffer, opt: Caption): js.Promise[Any] = js.native
+    def sendDocument(chat_id: String, file: ReadableStream[Any]): js.Promise[Any] = js.native
+    def sendDocument(chat_id: String, file: ReadableStream[Any], opt: Caption): js.Promise[Any] = js.native
+    def sendDocument(chat_id: Double, file: String): js.Promise[Any] = js.native
+    def sendDocument(chat_id: Double, file: String, opt: Caption): js.Promise[Any] = js.native
+    def sendDocument(chat_id: Double, file: Any): js.Promise[Any] = js.native
+    def sendDocument(chat_id: Double, file: Any, opt: Caption): js.Promise[Any] = js.native
+    def sendDocument(chat_id: Double, file: Buffer): js.Promise[Any] = js.native
+    def sendDocument(chat_id: Double, file: Buffer, opt: Caption): js.Promise[Any] = js.native
+    def sendDocument(chat_id: Double, file: ReadableStream[Any]): js.Promise[Any] = js.native
+    def sendDocument(chat_id: Double, file: ReadableStream[Any], opt: Caption): js.Promise[Any] = js.native
     
-    def sendGame(chat_id: String, game_short_name: String): js.Any = js.native
-    def sendGame(chat_id: String, game_short_name: String, opt: NotificationReplyMarkup): js.Any = js.native
-    def sendGame(chat_id: Double, game_short_name: String): js.Any = js.native
-    def sendGame(chat_id: Double, game_short_name: String, opt: NotificationReplyMarkup): js.Any = js.native
+    def sendGame(chat_id: String, game_short_name: String): js.Promise[Any] = js.native
+    def sendGame(chat_id: String, game_short_name: String, opt: NotificationReplyMarkup): js.Promise[Any] = js.native
+    def sendGame(chat_id: Double, game_short_name: String): js.Promise[Any] = js.native
+    def sendGame(chat_id: Double, game_short_name: String, opt: NotificationReplyMarkup): js.Promise[Any] = js.native
     
-    def sendInvoice(chat_id: String, invoiceDetails: Currency): js.Any = js.native
-    def sendInvoice(chat_id: Double, invoiceDetails: Currency): js.Any = js.native
+    def sendInvoice(chat_id: String, invoiceDetails: Currency): js.Promise[Any] = js.native
+    def sendInvoice(chat_id: Double, invoiceDetails: Currency): js.Promise[Any] = js.native
     
-    def sendLocation(chat_id: String, coords: js.Tuple2[Double, Double]): js.Any = js.native
-    def sendLocation(chat_id: String, coords: js.Tuple2[Double, Double], opt: NotificationReplyMarkup): js.Any = js.native
-    def sendLocation(chat_id: Double, coords: js.Tuple2[Double, Double]): js.Any = js.native
-    def sendLocation(chat_id: Double, coords: js.Tuple2[Double, Double], opt: NotificationReplyMarkup): js.Any = js.native
+    def sendLocation(chat_id: String, coords: js.Tuple2[Double, Double]): js.Promise[Any] = js.native
+    def sendLocation(chat_id: String, coords: js.Tuple2[Double, Double], opt: NotificationReplyMarkup): js.Promise[Any] = js.native
+    def sendLocation(chat_id: Double, coords: js.Tuple2[Double, Double]): js.Promise[Any] = js.native
+    def sendLocation(chat_id: Double, coords: js.Tuple2[Double, Double], opt: NotificationReplyMarkup): js.Promise[Any] = js.native
     
-    def sendMessage(chat_id: String, text: String): js.Any = js.native
-    def sendMessage(chat_id: String, text: String, opt: Notification): js.Any = js.native
-    def sendMessage(chat_id: Double, text: String): js.Any = js.native
-    def sendMessage(chat_id: Double, text: String, opt: Notification): js.Any = js.native
+    def sendMessage(chat_id: String, text: String): js.Promise[Any] = js.native
+    def sendMessage(chat_id: String, text: String, opt: Notification): js.Promise[Any] = js.native
+    def sendMessage(chat_id: Double, text: String): js.Promise[Any] = js.native
+    def sendMessage(chat_id: Double, text: String, opt: Notification): js.Promise[Any] = js.native
     
-    def sendPhoto(chat_id: String, file: String): js.Any = js.native
-    def sendPhoto(chat_id: String, file: String, opt: Caption): js.Any = js.native
-    def sendPhoto(chat_id: String, file: js.Any): js.Any = js.native
-    def sendPhoto(chat_id: String, file: js.Any, opt: Caption): js.Any = js.native
-    def sendPhoto(chat_id: String, file: Buffer): js.Any = js.native
-    def sendPhoto(chat_id: String, file: Buffer, opt: Caption): js.Any = js.native
-    def sendPhoto(chat_id: String, file: ReadableStream): js.Any = js.native
-    def sendPhoto(chat_id: String, file: ReadableStream, opt: Caption): js.Any = js.native
-    def sendPhoto(chat_id: Double, file: String): js.Any = js.native
-    def sendPhoto(chat_id: Double, file: String, opt: Caption): js.Any = js.native
-    def sendPhoto(chat_id: Double, file: js.Any): js.Any = js.native
-    def sendPhoto(chat_id: Double, file: js.Any, opt: Caption): js.Any = js.native
-    def sendPhoto(chat_id: Double, file: Buffer): js.Any = js.native
-    def sendPhoto(chat_id: Double, file: Buffer, opt: Caption): js.Any = js.native
-    def sendPhoto(chat_id: Double, file: ReadableStream): js.Any = js.native
-    def sendPhoto(chat_id: Double, file: ReadableStream, opt: Caption): js.Any = js.native
+    def sendPhoto(chat_id: String, file: String): js.Promise[Any] = js.native
+    def sendPhoto(chat_id: String, file: String, opt: Caption): js.Promise[Any] = js.native
+    def sendPhoto(chat_id: String, file: Any): js.Promise[Any] = js.native
+    def sendPhoto(chat_id: String, file: Any, opt: Caption): js.Promise[Any] = js.native
+    def sendPhoto(chat_id: String, file: Buffer): js.Promise[Any] = js.native
+    def sendPhoto(chat_id: String, file: Buffer, opt: Caption): js.Promise[Any] = js.native
+    def sendPhoto(chat_id: String, file: ReadableStream[Any]): js.Promise[Any] = js.native
+    def sendPhoto(chat_id: String, file: ReadableStream[Any], opt: Caption): js.Promise[Any] = js.native
+    def sendPhoto(chat_id: Double, file: String): js.Promise[Any] = js.native
+    def sendPhoto(chat_id: Double, file: String, opt: Caption): js.Promise[Any] = js.native
+    def sendPhoto(chat_id: Double, file: Any): js.Promise[Any] = js.native
+    def sendPhoto(chat_id: Double, file: Any, opt: Caption): js.Promise[Any] = js.native
+    def sendPhoto(chat_id: Double, file: Buffer): js.Promise[Any] = js.native
+    def sendPhoto(chat_id: Double, file: Buffer, opt: Caption): js.Promise[Any] = js.native
+    def sendPhoto(chat_id: Double, file: ReadableStream[Any]): js.Promise[Any] = js.native
+    def sendPhoto(chat_id: Double, file: ReadableStream[Any], opt: Caption): js.Promise[Any] = js.native
     
-    def sendSticker(chat_id: String, file: String): js.Any = js.native
-    def sendSticker(chat_id: String, file: String, opt: FileName): js.Any = js.native
-    def sendSticker(chat_id: String, file: js.Any): js.Any = js.native
-    def sendSticker(chat_id: String, file: js.Any, opt: FileName): js.Any = js.native
-    def sendSticker(chat_id: String, file: Buffer): js.Any = js.native
-    def sendSticker(chat_id: String, file: Buffer, opt: FileName): js.Any = js.native
-    def sendSticker(chat_id: String, file: ReadableStream): js.Any = js.native
-    def sendSticker(chat_id: String, file: ReadableStream, opt: FileName): js.Any = js.native
-    def sendSticker(chat_id: Double, file: String): js.Any = js.native
-    def sendSticker(chat_id: Double, file: String, opt: FileName): js.Any = js.native
-    def sendSticker(chat_id: Double, file: js.Any): js.Any = js.native
-    def sendSticker(chat_id: Double, file: js.Any, opt: FileName): js.Any = js.native
-    def sendSticker(chat_id: Double, file: Buffer): js.Any = js.native
-    def sendSticker(chat_id: Double, file: Buffer, opt: FileName): js.Any = js.native
-    def sendSticker(chat_id: Double, file: ReadableStream): js.Any = js.native
-    def sendSticker(chat_id: Double, file: ReadableStream, opt: FileName): js.Any = js.native
+    def sendSticker(chat_id: String, file: String): js.Promise[Any] = js.native
+    def sendSticker(chat_id: String, file: String, opt: FileName): js.Promise[Any] = js.native
+    def sendSticker(chat_id: String, file: Any): js.Promise[Any] = js.native
+    def sendSticker(chat_id: String, file: Any, opt: FileName): js.Promise[Any] = js.native
+    def sendSticker(chat_id: String, file: Buffer): js.Promise[Any] = js.native
+    def sendSticker(chat_id: String, file: Buffer, opt: FileName): js.Promise[Any] = js.native
+    def sendSticker(chat_id: String, file: ReadableStream[Any]): js.Promise[Any] = js.native
+    def sendSticker(chat_id: String, file: ReadableStream[Any], opt: FileName): js.Promise[Any] = js.native
+    def sendSticker(chat_id: Double, file: String): js.Promise[Any] = js.native
+    def sendSticker(chat_id: Double, file: String, opt: FileName): js.Promise[Any] = js.native
+    def sendSticker(chat_id: Double, file: Any): js.Promise[Any] = js.native
+    def sendSticker(chat_id: Double, file: Any, opt: FileName): js.Promise[Any] = js.native
+    def sendSticker(chat_id: Double, file: Buffer): js.Promise[Any] = js.native
+    def sendSticker(chat_id: Double, file: Buffer, opt: FileName): js.Promise[Any] = js.native
+    def sendSticker(chat_id: Double, file: ReadableStream[Any]): js.Promise[Any] = js.native
+    def sendSticker(chat_id: Double, file: ReadableStream[Any], opt: FileName): js.Promise[Any] = js.native
     
-    def sendVenue(chat_id: String, coords: js.Tuple2[Double, Double], title: String, address: String): js.Any = js.native
+    def sendVenue(chat_id: String, coords: js.Tuple2[Double, Double], title: String, address: String): js.Promise[Any] = js.native
     def sendVenue(
       chat_id: String,
       coords: js.Tuple2[Double, Double],
       title: String,
       address: String,
       opt: FoursquareId
-    ): js.Any = js.native
-    def sendVenue(chat_id: Double, coords: js.Tuple2[Double, Double], title: String, address: String): js.Any = js.native
+    ): js.Promise[Any] = js.native
+    def sendVenue(chat_id: Double, coords: js.Tuple2[Double, Double], title: String, address: String): js.Promise[Any] = js.native
     def sendVenue(
       chat_id: Double,
       coords: js.Tuple2[Double, Double],
       title: String,
       address: String,
       opt: FoursquareId
-    ): js.Any = js.native
+    ): js.Promise[Any] = js.native
     
-    def sendVideo(chat_id: String, file: String): js.Any = js.native
-    def sendVideo(chat_id: String, file: String, opt: Height): js.Any = js.native
-    def sendVideo(chat_id: String, file: js.Any): js.Any = js.native
-    def sendVideo(chat_id: String, file: js.Any, opt: Height): js.Any = js.native
-    def sendVideo(chat_id: String, file: Buffer): js.Any = js.native
-    def sendVideo(chat_id: String, file: Buffer, opt: Height): js.Any = js.native
-    def sendVideo(chat_id: String, file: ReadableStream): js.Any = js.native
-    def sendVideo(chat_id: String, file: ReadableStream, opt: Height): js.Any = js.native
-    def sendVideo(chat_id: Double, file: String): js.Any = js.native
-    def sendVideo(chat_id: Double, file: String, opt: Height): js.Any = js.native
-    def sendVideo(chat_id: Double, file: js.Any): js.Any = js.native
-    def sendVideo(chat_id: Double, file: js.Any, opt: Height): js.Any = js.native
-    def sendVideo(chat_id: Double, file: Buffer): js.Any = js.native
-    def sendVideo(chat_id: Double, file: Buffer, opt: Height): js.Any = js.native
-    def sendVideo(chat_id: Double, file: ReadableStream): js.Any = js.native
-    def sendVideo(chat_id: Double, file: ReadableStream, opt: Height): js.Any = js.native
+    def sendVideo(chat_id: String, file: String): js.Promise[Any] = js.native
+    def sendVideo(chat_id: String, file: String, opt: Height): js.Promise[Any] = js.native
+    def sendVideo(chat_id: String, file: Any): js.Promise[Any] = js.native
+    def sendVideo(chat_id: String, file: Any, opt: Height): js.Promise[Any] = js.native
+    def sendVideo(chat_id: String, file: Buffer): js.Promise[Any] = js.native
+    def sendVideo(chat_id: String, file: Buffer, opt: Height): js.Promise[Any] = js.native
+    def sendVideo(chat_id: String, file: ReadableStream[Any]): js.Promise[Any] = js.native
+    def sendVideo(chat_id: String, file: ReadableStream[Any], opt: Height): js.Promise[Any] = js.native
+    def sendVideo(chat_id: Double, file: String): js.Promise[Any] = js.native
+    def sendVideo(chat_id: Double, file: String, opt: Height): js.Promise[Any] = js.native
+    def sendVideo(chat_id: Double, file: Any): js.Promise[Any] = js.native
+    def sendVideo(chat_id: Double, file: Any, opt: Height): js.Promise[Any] = js.native
+    def sendVideo(chat_id: Double, file: Buffer): js.Promise[Any] = js.native
+    def sendVideo(chat_id: Double, file: Buffer, opt: Height): js.Promise[Any] = js.native
+    def sendVideo(chat_id: Double, file: ReadableStream[Any]): js.Promise[Any] = js.native
+    def sendVideo(chat_id: Double, file: ReadableStream[Any], opt: Height): js.Promise[Any] = js.native
     
-    def sendVideoNote(chat_id: String, file: String): js.Any = js.native
-    def sendVideoNote(chat_id: String, file: String, opt: ReplyMarkup): js.Any = js.native
-    def sendVideoNote(chat_id: String, file: js.Any): js.Any = js.native
-    def sendVideoNote(chat_id: String, file: js.Any, opt: ReplyMarkup): js.Any = js.native
-    def sendVideoNote(chat_id: String, file: Buffer): js.Any = js.native
-    def sendVideoNote(chat_id: String, file: Buffer, opt: ReplyMarkup): js.Any = js.native
-    def sendVideoNote(chat_id: String, file: ReadableStream): js.Any = js.native
-    def sendVideoNote(chat_id: String, file: ReadableStream, opt: ReplyMarkup): js.Any = js.native
-    def sendVideoNote(chat_id: Double, file: String): js.Any = js.native
-    def sendVideoNote(chat_id: Double, file: String, opt: ReplyMarkup): js.Any = js.native
-    def sendVideoNote(chat_id: Double, file: js.Any): js.Any = js.native
-    def sendVideoNote(chat_id: Double, file: js.Any, opt: ReplyMarkup): js.Any = js.native
-    def sendVideoNote(chat_id: Double, file: Buffer): js.Any = js.native
-    def sendVideoNote(chat_id: Double, file: Buffer, opt: ReplyMarkup): js.Any = js.native
-    def sendVideoNote(chat_id: Double, file: ReadableStream): js.Any = js.native
-    def sendVideoNote(chat_id: Double, file: ReadableStream, opt: ReplyMarkup): js.Any = js.native
+    def sendVideoNote(chat_id: String, file: String): js.Promise[Any] = js.native
+    def sendVideoNote(chat_id: String, file: String, opt: ReplyMarkup): js.Promise[Any] = js.native
+    def sendVideoNote(chat_id: String, file: Any): js.Promise[Any] = js.native
+    def sendVideoNote(chat_id: String, file: Any, opt: ReplyMarkup): js.Promise[Any] = js.native
+    def sendVideoNote(chat_id: String, file: Buffer): js.Promise[Any] = js.native
+    def sendVideoNote(chat_id: String, file: Buffer, opt: ReplyMarkup): js.Promise[Any] = js.native
+    def sendVideoNote(chat_id: String, file: ReadableStream[Any]): js.Promise[Any] = js.native
+    def sendVideoNote(chat_id: String, file: ReadableStream[Any], opt: ReplyMarkup): js.Promise[Any] = js.native
+    def sendVideoNote(chat_id: Double, file: String): js.Promise[Any] = js.native
+    def sendVideoNote(chat_id: Double, file: String, opt: ReplyMarkup): js.Promise[Any] = js.native
+    def sendVideoNote(chat_id: Double, file: Any): js.Promise[Any] = js.native
+    def sendVideoNote(chat_id: Double, file: Any, opt: ReplyMarkup): js.Promise[Any] = js.native
+    def sendVideoNote(chat_id: Double, file: Buffer): js.Promise[Any] = js.native
+    def sendVideoNote(chat_id: Double, file: Buffer, opt: ReplyMarkup): js.Promise[Any] = js.native
+    def sendVideoNote(chat_id: Double, file: ReadableStream[Any]): js.Promise[Any] = js.native
+    def sendVideoNote(chat_id: Double, file: ReadableStream[Any], opt: ReplyMarkup): js.Promise[Any] = js.native
     
-    def sendVoice(chat_id: String, file: String): js.Any = js.native
-    def sendVoice(chat_id: String, file: String, opt: ReplyToMessage): js.Any = js.native
-    def sendVoice(chat_id: String, file: js.Any): js.Any = js.native
-    def sendVoice(chat_id: String, file: js.Any, opt: ReplyToMessage): js.Any = js.native
-    def sendVoice(chat_id: String, file: Buffer): js.Any = js.native
-    def sendVoice(chat_id: String, file: Buffer, opt: ReplyToMessage): js.Any = js.native
-    def sendVoice(chat_id: String, file: ReadableStream): js.Any = js.native
-    def sendVoice(chat_id: String, file: ReadableStream, opt: ReplyToMessage): js.Any = js.native
-    def sendVoice(chat_id: Double, file: String): js.Any = js.native
-    def sendVoice(chat_id: Double, file: String, opt: ReplyToMessage): js.Any = js.native
-    def sendVoice(chat_id: Double, file: js.Any): js.Any = js.native
-    def sendVoice(chat_id: Double, file: js.Any, opt: ReplyToMessage): js.Any = js.native
-    def sendVoice(chat_id: Double, file: Buffer): js.Any = js.native
-    def sendVoice(chat_id: Double, file: Buffer, opt: ReplyToMessage): js.Any = js.native
-    def sendVoice(chat_id: Double, file: ReadableStream): js.Any = js.native
-    def sendVoice(chat_id: Double, file: ReadableStream, opt: ReplyToMessage): js.Any = js.native
+    def sendVoice(chat_id: String, file: String): js.Promise[Any] = js.native
+    def sendVoice(chat_id: String, file: String, opt: ReplyToMessage): js.Promise[Any] = js.native
+    def sendVoice(chat_id: String, file: Any): js.Promise[Any] = js.native
+    def sendVoice(chat_id: String, file: Any, opt: ReplyToMessage): js.Promise[Any] = js.native
+    def sendVoice(chat_id: String, file: Buffer): js.Promise[Any] = js.native
+    def sendVoice(chat_id: String, file: Buffer, opt: ReplyToMessage): js.Promise[Any] = js.native
+    def sendVoice(chat_id: String, file: ReadableStream[Any]): js.Promise[Any] = js.native
+    def sendVoice(chat_id: String, file: ReadableStream[Any], opt: ReplyToMessage): js.Promise[Any] = js.native
+    def sendVoice(chat_id: Double, file: String): js.Promise[Any] = js.native
+    def sendVoice(chat_id: Double, file: String, opt: ReplyToMessage): js.Promise[Any] = js.native
+    def sendVoice(chat_id: Double, file: Any): js.Promise[Any] = js.native
+    def sendVoice(chat_id: Double, file: Any, opt: ReplyToMessage): js.Promise[Any] = js.native
+    def sendVoice(chat_id: Double, file: Buffer): js.Promise[Any] = js.native
+    def sendVoice(chat_id: Double, file: Buffer, opt: ReplyToMessage): js.Promise[Any] = js.native
+    def sendVoice(chat_id: Double, file: ReadableStream[Any]): js.Promise[Any] = js.native
+    def sendVoice(chat_id: Double, file: ReadableStream[Any], opt: ReplyToMessage): js.Promise[Any] = js.native
     
-    def setGameScore(user_id: Double, score: Double): Boolean | Error | js.Any = js.native
-    def setGameScore(user_id: Double, score: Double, opt: ChatId): Boolean | Error | js.Any = js.native
+    def setGameScore(user_id: Double, score: Double): js.Promise[Boolean | js.Error | Any] = js.native
+    def setGameScore(user_id: Double, score: Double, opt: ChatId): js.Promise[Boolean | js.Error | Any] = js.native
     
-    def setWebhook(url: String): Boolean = js.native
-    def setWebhook(url: String, certificate: js.Any): Boolean = js.native
-    def setWebhook(url: String, certificate: js.Any, allowed_updates: js.Array[String]): Boolean = js.native
-    def setWebhook(url: String, certificate: js.Any, allowed_updates: js.Array[String], max_connections: Double): Boolean = js.native
-    def setWebhook(url: String, certificate: js.Any, allowed_updates: Unit, max_connections: Double): Boolean = js.native
-    def setWebhook(url: String, certificate: Unit, allowed_updates: js.Array[String]): Boolean = js.native
-    def setWebhook(url: String, certificate: Unit, allowed_updates: js.Array[String], max_connections: Double): Boolean = js.native
-    def setWebhook(url: String, certificate: Unit, allowed_updates: Unit, max_connections: Double): Boolean = js.native
+    def setWebhook(url: String): js.Promise[Boolean] = js.native
+    def setWebhook(url: String, certificate: Any): js.Promise[Boolean] = js.native
+    def setWebhook(url: String, certificate: Any, allowed_updates: js.Array[String]): js.Promise[Boolean] = js.native
+    def setWebhook(url: String, certificate: Any, allowed_updates: js.Array[String], max_connections: Double): js.Promise[Boolean] = js.native
+    def setWebhook(url: String, certificate: Any, allowed_updates: Unit, max_connections: Double): js.Promise[Boolean] = js.native
+    def setWebhook(url: String, certificate: Unit, allowed_updates: js.Array[String]): js.Promise[Boolean] = js.native
+    def setWebhook(url: String, certificate: Unit, allowed_updates: js.Array[String], max_connections: Double): js.Promise[Boolean] = js.native
+    def setWebhook(url: String, certificate: Unit, allowed_updates: Unit, max_connections: Double): js.Promise[Boolean] = js.native
     
-    def start(args: js.Any*): Unit = js.native
+    def start(args: Any*): Unit = js.native
     
     def stop(message: String): Unit = js.native
     
-    def unbanChatMember(chat_id: String, user_id: Double): Boolean = js.native
-    def unbanChatMember(chat_id: Double, user_id: Double): Boolean = js.native
+    def unbanChatMember(chat_id: String, user_id: Double): js.Promise[Boolean] = js.native
+    def unbanChatMember(chat_id: Double, user_id: Double): js.Promise[Boolean] = js.native
     
     def use(module: module): Unit = js.native
   }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@nodelib/fs.stat" : "2.0.3"
+      "@nodelib/fs.stat" : "2.0.5"
     }
   ],
   "test-dependencies" : [
     {
-      "@nodelib/fs.stat" : "2.0.3"
+      "@nodelib/fs.stat" : "2.0.5"
     }
   ],
   "compile-devDependencies" : [

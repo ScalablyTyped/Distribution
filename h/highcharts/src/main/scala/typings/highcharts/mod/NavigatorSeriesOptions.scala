@@ -52,10 +52,11 @@ trait NavigatorSeriesOptions extends StObject {
   var marker: js.UndefOr[NavigatorSeriesMarkerOptions] = js.undefined
   
   /**
-    * (Highstock) Since Highstock v8, default value is the same as default
-    * `pointRange` defined for a specific type (e.g. `null` for column type).
+    * (Highstock) Since Highcharts Stock v8, default value is the same as
+    * default `pointRange` defined for a specific type (e.g. `null` for column
+    * type).
     *
-    * In Highstock version < 8, defaults to 0.
+    * In Highcharts Stock version < 8, defaults to 0.
     */
   var pointRange: js.UndefOr[Double | Null] = js.undefined
   
@@ -100,11 +101,11 @@ object NavigatorSeriesOptions {
     
     inline def setDataLabelsUndefined: Self = StObject.set(x, "dataLabels", js.undefined)
     
-    inline def setDataLabelsVarargs(value: NavigatorSeriesDataLabelsOptions*): Self = StObject.set(x, "dataLabels", js.Array(value :_*))
+    inline def setDataLabelsVarargs(value: NavigatorSeriesDataLabelsOptions*): Self = StObject.set(x, "dataLabels", js.Array(value*))
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: (Double | (js.Array[Double | String | Null]) | js.Object | Null)*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: (Double | (js.Array[Double | String | Null]) | js.Object | Null)*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setFillOpacity(value: Double): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
     

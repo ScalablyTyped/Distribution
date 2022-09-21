@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("db-migrate-base", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Base {
     def this(intern: InternalOptions) = this()
@@ -19,13 +19,13 @@ object mod {
     
     def addColumn(tableName: String, columnName: String, columnSpec: ColumnSpec, callback: CallbackFunction): Unit = js.native
     
-    def addColumnAsync(tableName: String, columnName: String, columnSpec: ColumnSpec): typings.bluebird.mod.^[js.Any] = js.native
+    def addColumnAsync(tableName: String, columnName: String, columnSpec: ColumnSpec): typings.bluebird.mod.^[Any] = js.native
     
     def addForeignKey(
       tableName: String,
       referencedTableName: String,
       keyName: String,
-      fieldMapping: js.Any,
+      fieldMapping: Any,
       rules: ForeignKeyRules,
       callback: CallbackFunction
     ): Unit = js.native
@@ -34,9 +34,9 @@ object mod {
       tableName: String,
       referencedTableName: String,
       keyName: String,
-      fieldMapping: js.Any,
+      fieldMapping: Any,
       rules: ForeignKeyRules
-    ): typings.bluebird.mod.^[js.Any] = js.native
+    ): typings.bluebird.mod.^[Any] = js.native
     
     def addIndex(tableName: String, indexName: String, columns: String): Unit = js.native
     def addIndex(tableName: String, indexName: String, columns: String, uniqueOrCb: Boolean): Unit = js.native
@@ -87,90 +87,90 @@ object mod {
       callback: CallbackFunction
     ): Unit = js.native
     
-    def addIndexAsync(tableName: String, indexName: String, columns: String): typings.bluebird.mod.^[js.Any] = js.native
-    def addIndexAsync(tableName: String, indexName: String, columns: String, unique: Boolean): typings.bluebird.mod.^[js.Any] = js.native
-    def addIndexAsync(tableName: String, indexName: String, columns: js.Array[String]): typings.bluebird.mod.^[js.Any] = js.native
-    def addIndexAsync(tableName: String, indexName: String, columns: js.Array[String], unique: Boolean): typings.bluebird.mod.^[js.Any] = js.native
+    def addIndexAsync(tableName: String, indexName: String, columns: String): typings.bluebird.mod.^[Any] = js.native
+    def addIndexAsync(tableName: String, indexName: String, columns: String, unique: Boolean): typings.bluebird.mod.^[Any] = js.native
+    def addIndexAsync(tableName: String, indexName: String, columns: js.Array[String]): typings.bluebird.mod.^[Any] = js.native
+    def addIndexAsync(tableName: String, indexName: String, columns: js.Array[String], unique: Boolean): typings.bluebird.mod.^[Any] = js.native
     
     def addMigrationRecord(name: String, callback: CallbackFunction): Unit = js.native
     
-    def addMigrationRecordAsync(name: String): typings.bluebird.mod.^[js.Any] = js.native
+    def addMigrationRecordAsync(name: String): typings.bluebird.mod.^[Any] = js.native
     
     def addSeedRecord(name: String, callback: CallbackFunction): Unit = js.native
     
-    def addSeedRecordAsync(name: String): typings.bluebird.mod.^[js.Any] = js.native
+    def addSeedRecordAsync(name: String): typings.bluebird.mod.^[Any] = js.native
     
     def all(sql: String): Unit = js.native
-    def all(sql: String, paramsOrCb: js.Array[js.Any]): Unit = js.native
-    def all(sql: String, paramsOrCb: js.Array[js.Any], callback: CallbackFunction): Unit = js.native
+    def all(sql: String, paramsOrCb: js.Array[Any]): Unit = js.native
+    def all(sql: String, paramsOrCb: js.Array[Any], callback: CallbackFunction): Unit = js.native
     def all(sql: String, paramsOrCb: Unit, callback: CallbackFunction): Unit = js.native
     def all(sql: String, paramsOrCb: CallbackFunction): Unit = js.native
     def all(sql: String, paramsOrCb: CallbackFunction, callback: CallbackFunction): Unit = js.native
     
-    def allAsync(sql: String): typings.bluebird.mod.^[js.Any] = js.native
-    def allAsync(sql: String, params: js.Array[js.Any]): typings.bluebird.mod.^[js.Any] = js.native
+    def allAsync(sql: String): typings.bluebird.mod.^[Any] = js.native
+    def allAsync(sql: String, params: js.Array[Any]): typings.bluebird.mod.^[Any] = js.native
     
     def allLoadedMigrations(callback: CallbackFunction): Unit = js.native
     
-    def allLoadedMigrationsAsync(): typings.bluebird.mod.^[js.Any] = js.native
+    def allLoadedMigrationsAsync(): typings.bluebird.mod.^[Any] = js.native
     
     def allLoadedSeeds(callback: CallbackFunction): Unit = js.native
     
-    def allLoadedSeedsAsync(): typings.bluebird.mod.^[js.Any] = js.native
+    def allLoadedSeedsAsync(): typings.bluebird.mod.^[Any] = js.native
     
     def bindForeignKey(tableName: String, columnName: String, fkOptions: ForeignKeySpec): js.Function1[/* callback */ CallbackFunction, Unit] = js.native
     
     // TODO Make ids match the type of ids in buildWhereClause(ids);
-    def buildWhereClause(ids: js.Any): String = js.native
+    def buildWhereClause(ids: Any): String = js.native
     
     def changeColumn(tableName: String, columnName: String, columnSpec: ColumnSpec, callback: CallbackFunction): Unit = js.native
     
-    def changeColumnAsync(tableName: String, columnName: String, columnSpec: ColumnSpec): typings.bluebird.mod.^[js.Any] = js.native
+    def changeColumnAsync(tableName: String, columnName: String, columnSpec: ColumnSpec): typings.bluebird.mod.^[Any] = js.native
     
-    def checkDBMS(dbms: js.Any, callback: CallbackFunction): Unit = js.native
+    def checkDBMS(dbms: Any, callback: CallbackFunction): Unit = js.native
     
-    def checkDBMSAsync(dbms: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+    def checkDBMSAsync(dbms: Any): typings.bluebird.mod.^[Any] = js.native
     
     def close(): Unit = js.native
     def close(callback: CallbackFunction): Unit = js.native
     
     // Promisified methods
-    def closeAsync(): typings.bluebird.mod.^[js.Any] = js.native
+    def closeAsync(): typings.bluebird.mod.^[Any] = js.native
     
     def createColumnDef(name: String, spec: ColumnSpec): ColumnDef = js.native
-    def createColumnDef(name: String, spec: ColumnSpec, options: js.Any): ColumnDef = js.native
+    def createColumnDef(name: String, spec: ColumnSpec, options: Any): ColumnDef = js.native
     
-    def createDatabase(options: js.Any*): Unit = js.native
+    def createDatabase(options: Any*): Unit = js.native
     
-    def createDatabaseAsync(options: js.Any*): typings.bluebird.mod.^[js.Any] = js.native
+    def createDatabaseAsync(options: Any*): typings.bluebird.mod.^[Any] = js.native
     
     // TODO Figure out a type for `options`!
     //createColumnConstraint(spec: Base.ColumnSpec, options?: any, ...implementationDefinedOptions: any[]): string;
     def createMigrationsTable(callback: CallbackFunction): Unit = js.native
     
-    def createMigrationsTableAsync(): typings.bluebird.mod.^[js.Any] = js.native
+    def createMigrationsTableAsync(): typings.bluebird.mod.^[Any] = js.native
     
     def createSeedsTable(callback: CallbackFunction): Unit = js.native
     
-    def createSeedsTableAsync(): typings.bluebird.mod.^[js.Any] = js.native
+    def createSeedsTableAsync(): typings.bluebird.mod.^[Any] = js.native
     
-    def createTable(tableName: String, options: js.Any, callback: CallbackFunction): Unit = js.native
+    def createTable(tableName: String, options: Any, callback: CallbackFunction): Unit = js.native
     def createTable(tableName: String, options: CreateTableOptions, callback: CallbackFunction): Unit = js.native
     
-    def createTableAsync(tableName: String, options: js.Any): typings.bluebird.mod.^[js.Any] = js.native
-    def createTableAsync(tableName: String, options: CreateTableOptions): typings.bluebird.mod.^[js.Any] = js.native
+    def createTableAsync(tableName: String, options: Any): typings.bluebird.mod.^[Any] = js.native
+    def createTableAsync(tableName: String, options: CreateTableOptions): typings.bluebird.mod.^[Any] = js.native
     
     def deleteMigration(migrationName: String, callback: CallbackFunction): Unit = js.native
     
-    def deleteMigrationAsync(migrationName: String): typings.bluebird.mod.^[js.Any] = js.native
+    def deleteMigrationAsync(migrationName: String): typings.bluebird.mod.^[Any] = js.native
     
     def deleteSeed(seedName: String, callback: CallbackFunction): Unit = js.native
     
-    def deleteSeedAsync(seedName: String): typings.bluebird.mod.^[js.Any] = js.native
+    def deleteSeedAsync(seedName: String): typings.bluebird.mod.^[Any] = js.native
     
-    def dropDatabase(options: js.Any*): Unit = js.native
+    def dropDatabase(options: Any*): Unit = js.native
     
-    def dropDatabaseAsync(options: js.Any*): typings.bluebird.mod.^[js.Any] = js.native
+    def dropDatabaseAsync(options: Any*): typings.bluebird.mod.^[Any] = js.native
     
     def dropTable(tableName: String): Unit = js.native
     def dropTable(tableName: String, optionsOrCb: Unit, callback: CallbackFunction): Unit = js.native
@@ -179,12 +179,12 @@ object mod {
     def dropTable(tableName: String, optionsOrCb: DropTableOptions): Unit = js.native
     def dropTable(tableName: String, optionsOrCb: DropTableOptions, callback: CallbackFunction): Unit = js.native
     
-    def dropTableAsync(tableName: String): typings.bluebird.mod.^[js.Any] = js.native
-    def dropTableAsync(tableName: String, options: DropTableOptions): typings.bluebird.mod.^[js.Any] = js.native
+    def dropTableAsync(tableName: String): typings.bluebird.mod.^[Any] = js.native
+    def dropTableAsync(tableName: String, options: DropTableOptions): typings.bluebird.mod.^[Any] = js.native
     
     def endMigration(callback: CallbackFunction): Unit = js.native
     
-    def endMigrationAsync(callback: CallbackFunction): typings.bluebird.mod.^[js.Any] = js.native
+    def endMigrationAsync(callback: CallbackFunction): typings.bluebird.mod.^[Any] = js.native
     
     def escape(str: String): String = js.native
     
@@ -192,59 +192,39 @@ object mod {
     
     def escapeString(str: String): String = js.native
     
-    def insert(tableName: String, columnNameOrValueArray: js.Any): Unit = js.native
-    def insert(tableName: String, columnNameOrValueArray: js.Any, valueArrayOrCb: js.Any): Unit = js.native
+    def insert(tableName: String, columnNameOrValueArray: Any): Unit = js.native
+    def insert(tableName: String, columnNameOrValueArray: Any, valueArrayOrCb: Any): Unit = js.native
+    def insert(tableName: String, columnNameOrValueArray: Any, valueArrayOrCb: Any, callback: CallbackFunction): Unit = js.native
+    def insert(tableName: String, columnNameOrValueArray: Any, valueArrayOrCb: Unit, callback: CallbackFunction): Unit = js.native
+    def insert(tableName: String, columnNameOrValueArray: Any, valueArrayOrCb: CallbackFunction): Unit = js.native
     def insert(
       tableName: String,
-      columnNameOrValueArray: js.Any,
-      valueArrayOrCb: js.Any,
-      callback: CallbackFunction
-    ): Unit = js.native
-    def insert(
-      tableName: String,
-      columnNameOrValueArray: js.Any,
-      valueArrayOrCb: Unit,
-      callback: CallbackFunction
-    ): Unit = js.native
-    def insert(tableName: String, columnNameOrValueArray: js.Any, valueArrayOrCb: CallbackFunction): Unit = js.native
-    def insert(
-      tableName: String,
-      columnNameOrValueArray: js.Any,
+      columnNameOrValueArray: Any,
       valueArrayOrCb: CallbackFunction,
       callback: CallbackFunction
     ): Unit = js.native
     
-    def insertAsync(tableName: String, columnNameOrValueArray: js.Any): typings.bluebird.mod.^[js.Any] = js.native
-    def insertAsync(tableName: String, columnNameOrValueArray: js.Any, valueArrayOrCb: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+    def insertAsync(tableName: String, columnNameOrValueArray: Any): typings.bluebird.mod.^[Any] = js.native
+    def insertAsync(tableName: String, columnNameOrValueArray: Any, valueArrayOrCb: Any): typings.bluebird.mod.^[Any] = js.native
+    def insertAsync(tableName: String, columnNameOrValueArray: Any, valueArrayOrCb: Any, callback: CallbackFunction): typings.bluebird.mod.^[Any] = js.native
+    def insertAsync(tableName: String, columnNameOrValueArray: Any, valueArrayOrCb: Unit, callback: CallbackFunction): typings.bluebird.mod.^[Any] = js.native
+    def insertAsync(tableName: String, columnNameOrValueArray: Any, valueArrayOrCb: CallbackFunction): typings.bluebird.mod.^[Any] = js.native
     def insertAsync(
       tableName: String,
-      columnNameOrValueArray: js.Any,
-      valueArrayOrCb: js.Any,
-      callback: CallbackFunction
-    ): typings.bluebird.mod.^[js.Any] = js.native
-    def insertAsync(
-      tableName: String,
-      columnNameOrValueArray: js.Any,
-      valueArrayOrCb: Unit,
-      callback: CallbackFunction
-    ): typings.bluebird.mod.^[js.Any] = js.native
-    def insertAsync(tableName: String, columnNameOrValueArray: js.Any, valueArrayOrCb: CallbackFunction): typings.bluebird.mod.^[js.Any] = js.native
-    def insertAsync(
-      tableName: String,
-      columnNameOrValueArray: js.Any,
+      columnNameOrValueArray: Any,
       valueArrayOrCb: CallbackFunction,
       callback: CallbackFunction
-    ): typings.bluebird.mod.^[js.Any] = js.native
+    ): typings.bluebird.mod.^[Any] = js.native
     
     def lookup(tableName: String, column: String): Unit = js.native
-    def lookup(tableName: String, column: String, id: js.Any): Unit = js.native
-    def lookup(tableName: String, column: String, id: js.Any, callback: CallbackFunction): Unit = js.native
+    def lookup(tableName: String, column: String, id: Any): Unit = js.native
+    def lookup(tableName: String, column: String, id: Any, callback: CallbackFunction): Unit = js.native
     def lookup(tableName: String, column: String, id: Unit, callback: CallbackFunction): Unit = js.native
     
-    def lookupAsync(tableName: String, column: String): typings.bluebird.mod.^[js.Any] = js.native
-    def lookupAsync(tableName: String, column: String, id: js.Any): typings.bluebird.mod.^[js.Any] = js.native
-    def lookupAsync(tableName: String, column: String, id: js.Any, callback: CallbackFunction): typings.bluebird.mod.^[js.Any] = js.native
-    def lookupAsync(tableName: String, column: String, id: Unit, callback: CallbackFunction): typings.bluebird.mod.^[js.Any] = js.native
+    def lookupAsync(tableName: String, column: String): typings.bluebird.mod.^[Any] = js.native
+    def lookupAsync(tableName: String, column: String, id: Any): typings.bluebird.mod.^[Any] = js.native
+    def lookupAsync(tableName: String, column: String, id: Any, callback: CallbackFunction): typings.bluebird.mod.^[Any] = js.native
+    def lookupAsync(tableName: String, column: String, id: Unit, callback: CallbackFunction): typings.bluebird.mod.^[Any] = js.native
     
     def mapDataType(str: String): String = js.native
     
@@ -257,15 +237,15 @@ object mod {
     
     def recurseCallbackArray(foreignKeys: js.Array[String], callback: CallbackFunction): Unit = js.native
     
-    def recurseCallbackArrayAsync(foreignKeys: js.Array[String]): typings.bluebird.mod.^[js.Any] = js.native
+    def recurseCallbackArrayAsync(foreignKeys: js.Array[String]): typings.bluebird.mod.^[Any] = js.native
     
-    def remove(table: String, ids: js.Any, callback: CallbackFunction): Unit = js.native
+    def remove(table: String, ids: Any, callback: CallbackFunction): Unit = js.native
     
-    def removeAsync(table: String, ids: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+    def removeAsync(table: String, ids: Any): typings.bluebird.mod.^[Any] = js.native
     
     def removeColumn(tableName: String, columnName: String, callback: CallbackFunction): Unit = js.native
     
-    def removeColumnAsync(tableName: String, columnName: String): typings.bluebird.mod.^[js.Any] = js.native
+    def removeColumnAsync(tableName: String, columnName: String): typings.bluebird.mod.^[Any] = js.native
     
     def removeForeignKey(tableName: String, keyName: String): Unit = js.native
     def removeForeignKey(tableName: String, keyName: String, optionsOrCb: Unit, callback: CallbackFunction): Unit = js.native
@@ -279,8 +259,8 @@ object mod {
       callback: CallbackFunction
     ): Unit = js.native
     
-    def removeForeignKeyAsync(tableName: String, keyName: String): typings.bluebird.mod.^[js.Any] = js.native
-    def removeForeignKeyAsync(tableName: String, keyName: String, options: RemoveForeignKeyOptions): typings.bluebird.mod.^[js.Any] = js.native
+    def removeForeignKeyAsync(tableName: String, keyName: String): typings.bluebird.mod.^[Any] = js.native
+    def removeForeignKeyAsync(tableName: String, keyName: String, options: RemoveForeignKeyOptions): typings.bluebird.mod.^[Any] = js.native
     
     def removeIndex(tableNameOrIndexName: String): Unit = js.native
     def removeIndex(tableNameOrIndexName: String, indexNameOrCb: String): Unit = js.native
@@ -289,174 +269,154 @@ object mod {
     def removeIndex(tableNameOrIndexName: String, indexNameOrCb: CallbackFunction): Unit = js.native
     def removeIndex(tableNameOrIndexName: String, indexNameOrCb: CallbackFunction, callback: CallbackFunction): Unit = js.native
     
-    def removeIndexAsync(tableNameOrIndexName: String): typings.bluebird.mod.^[js.Any] = js.native
-    def removeIndexAsync(tableNameOrIndexName: String, indexName: String): typings.bluebird.mod.^[js.Any] = js.native
+    def removeIndexAsync(tableNameOrIndexName: String): typings.bluebird.mod.^[Any] = js.native
+    def removeIndexAsync(tableNameOrIndexName: String, indexName: String): typings.bluebird.mod.^[Any] = js.native
     
     def renameColumn(tableName: String, oldColumnName: String, newColumnName: String, callback: CallbackFunction): Unit = js.native
     
-    def renameColumnAsync(tableName: String, oldColumnName: String, newColumnName: String): typings.bluebird.mod.^[js.Any] = js.native
+    def renameColumnAsync(tableName: String, oldColumnName: String, newColumnName: String): typings.bluebird.mod.^[Any] = js.native
     
     def renameTable(tableName: String, newTableName: String, callback: CallbackFunction): Unit = js.native
     
-    def renameTableAsync(tableName: String, newTableName: String): typings.bluebird.mod.^[js.Any] = js.native
+    def renameTableAsync(tableName: String, newTableName: String): typings.bluebird.mod.^[Any] = js.native
     
     def runSql(): Unit = js.native
     def runSql(sql: String): Unit = js.native
-    def runSql(sql: String, paramsOrCb: js.Array[js.Any]): Unit = js.native
-    def runSql(sql: String, paramsOrCb: js.Array[js.Any], callback: CallbackFunction): Unit = js.native
+    def runSql(sql: String, paramsOrCb: js.Array[Any]): Unit = js.native
+    def runSql(sql: String, paramsOrCb: js.Array[Any], callback: CallbackFunction): Unit = js.native
     def runSql(sql: String, paramsOrCb: Unit, callback: CallbackFunction): Unit = js.native
     def runSql(sql: String, paramsOrCb: CallbackFunction): Unit = js.native
     def runSql(sql: String, paramsOrCb: CallbackFunction, callback: CallbackFunction): Unit = js.native
-    def runSql(sql: Unit, paramsOrCb: js.Array[js.Any]): Unit = js.native
-    def runSql(sql: Unit, paramsOrCb: js.Array[js.Any], callback: CallbackFunction): Unit = js.native
+    def runSql(sql: Unit, paramsOrCb: js.Array[Any]): Unit = js.native
+    def runSql(sql: Unit, paramsOrCb: js.Array[Any], callback: CallbackFunction): Unit = js.native
     def runSql(sql: Unit, paramsOrCb: Unit, callback: CallbackFunction): Unit = js.native
     def runSql(sql: Unit, paramsOrCb: CallbackFunction): Unit = js.native
     def runSql(sql: Unit, paramsOrCb: CallbackFunction, callback: CallbackFunction): Unit = js.native
     
-    def runSqlAsync(): typings.bluebird.mod.^[js.Any] = js.native
-    def runSqlAsync(sql: String): typings.bluebird.mod.^[js.Any] = js.native
-    def runSqlAsync(sql: String, params: js.Array[js.Any]): typings.bluebird.mod.^[js.Any] = js.native
-    def runSqlAsync(sql: Unit, params: js.Array[js.Any]): typings.bluebird.mod.^[js.Any] = js.native
+    def runSqlAsync(): typings.bluebird.mod.^[Any] = js.native
+    def runSqlAsync(sql: String): typings.bluebird.mod.^[Any] = js.native
+    def runSqlAsync(sql: String, params: js.Array[Any]): typings.bluebird.mod.^[Any] = js.native
+    def runSqlAsync(sql: Unit, params: js.Array[Any]): typings.bluebird.mod.^[Any] = js.native
     
     def startMigration(callback: CallbackFunction): Unit = js.native
     
-    def startMigrationAsync(): typings.bluebird.mod.^[js.Any] = js.native
+    def startMigrationAsync(): typings.bluebird.mod.^[Any] = js.native
     
-    def switchDatabase(options: js.Any*): Unit = js.native
+    def switchDatabase(options: Any*): Unit = js.native
     
-    def switchDatabaseAsync(options: js.Any*): typings.bluebird.mod.^[js.Any] = js.native
+    def switchDatabaseAsync(options: Any*): typings.bluebird.mod.^[Any] = js.native
     
     def truncate(tableName: String, callback: CallbackFunction): Unit = js.native
     
-    def truncateAsync(tableName: String): typings.bluebird.mod.^[js.Any] = js.native
+    def truncateAsync(tableName: String): typings.bluebird.mod.^[Any] = js.native
     
-    def update(tableName: String, columnNameOrValueArray: js.Any): Unit = js.native
-    def update(tableName: String, columnNameOrValueArray: js.Any, valueArrayOrIds: js.Any): Unit = js.native
-    def update(tableName: String, columnNameOrValueArray: js.Any, valueArrayOrIds: js.Any, idsOrCb: js.Any): Unit = js.native
+    def update(tableName: String, columnNameOrValueArray: Any): Unit = js.native
+    def update(tableName: String, columnNameOrValueArray: Any, valueArrayOrIds: Any): Unit = js.native
+    def update(tableName: String, columnNameOrValueArray: Any, valueArrayOrIds: Any, idsOrCb: Any): Unit = js.native
     def update(
       tableName: String,
-      columnNameOrValueArray: js.Any,
-      valueArrayOrIds: js.Any,
-      idsOrCb: js.Any,
+      columnNameOrValueArray: Any,
+      valueArrayOrIds: Any,
+      idsOrCb: Any,
       callback: CallbackFunction
     ): Unit = js.native
     def update(
       tableName: String,
-      columnNameOrValueArray: js.Any,
-      valueArrayOrIds: js.Any,
+      columnNameOrValueArray: Any,
+      valueArrayOrIds: Any,
       idsOrCb: Unit,
       callback: CallbackFunction
     ): Unit = js.native
+    def update(tableName: String, columnNameOrValueArray: Any, valueArrayOrIds: Any, idsOrCb: CallbackFunction): Unit = js.native
     def update(
       tableName: String,
-      columnNameOrValueArray: js.Any,
-      valueArrayOrIds: js.Any,
-      idsOrCb: CallbackFunction
-    ): Unit = js.native
-    def update(
-      tableName: String,
-      columnNameOrValueArray: js.Any,
-      valueArrayOrIds: js.Any,
+      columnNameOrValueArray: Any,
+      valueArrayOrIds: Any,
       idsOrCb: CallbackFunction,
       callback: CallbackFunction
     ): Unit = js.native
-    def update(tableName: String, columnNameOrValueArray: js.Any, valueArrayOrIds: Unit, idsOrCb: js.Any): Unit = js.native
+    def update(tableName: String, columnNameOrValueArray: Any, valueArrayOrIds: Unit, idsOrCb: Any): Unit = js.native
     def update(
       tableName: String,
-      columnNameOrValueArray: js.Any,
+      columnNameOrValueArray: Any,
       valueArrayOrIds: Unit,
-      idsOrCb: js.Any,
+      idsOrCb: Any,
       callback: CallbackFunction
     ): Unit = js.native
     def update(
       tableName: String,
-      columnNameOrValueArray: js.Any,
+      columnNameOrValueArray: Any,
       valueArrayOrIds: Unit,
       idsOrCb: Unit,
       callback: CallbackFunction
     ): Unit = js.native
+    def update(tableName: String, columnNameOrValueArray: Any, valueArrayOrIds: Unit, idsOrCb: CallbackFunction): Unit = js.native
     def update(
       tableName: String,
-      columnNameOrValueArray: js.Any,
-      valueArrayOrIds: Unit,
-      idsOrCb: CallbackFunction
-    ): Unit = js.native
-    def update(
-      tableName: String,
-      columnNameOrValueArray: js.Any,
+      columnNameOrValueArray: Any,
       valueArrayOrIds: Unit,
       idsOrCb: CallbackFunction,
       callback: CallbackFunction
     ): Unit = js.native
     
-    def updateAsync(tableName: String, columnNameOrValueArray: js.Any): typings.bluebird.mod.^[js.Any] = js.native
-    def updateAsync(tableName: String, columnNameOrValueArray: js.Any, valueArrayOrIds: js.Any): typings.bluebird.mod.^[js.Any] = js.native
-    def updateAsync(tableName: String, columnNameOrValueArray: js.Any, valueArrayOrIds: js.Any, idsOrCb: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+    def updateAsync(tableName: String, columnNameOrValueArray: Any): typings.bluebird.mod.^[Any] = js.native
+    def updateAsync(tableName: String, columnNameOrValueArray: Any, valueArrayOrIds: Any): typings.bluebird.mod.^[Any] = js.native
+    def updateAsync(tableName: String, columnNameOrValueArray: Any, valueArrayOrIds: Any, idsOrCb: Any): typings.bluebird.mod.^[Any] = js.native
     def updateAsync(
       tableName: String,
-      columnNameOrValueArray: js.Any,
-      valueArrayOrIds: js.Any,
-      idsOrCb: js.Any,
+      columnNameOrValueArray: Any,
+      valueArrayOrIds: Any,
+      idsOrCb: Any,
       callback: CallbackFunction
-    ): typings.bluebird.mod.^[js.Any] = js.native
+    ): typings.bluebird.mod.^[Any] = js.native
     def updateAsync(
       tableName: String,
-      columnNameOrValueArray: js.Any,
-      valueArrayOrIds: js.Any,
+      columnNameOrValueArray: Any,
+      valueArrayOrIds: Any,
       idsOrCb: Unit,
       callback: CallbackFunction
-    ): typings.bluebird.mod.^[js.Any] = js.native
+    ): typings.bluebird.mod.^[Any] = js.native
+    def updateAsync(tableName: String, columnNameOrValueArray: Any, valueArrayOrIds: Any, idsOrCb: CallbackFunction): typings.bluebird.mod.^[Any] = js.native
     def updateAsync(
       tableName: String,
-      columnNameOrValueArray: js.Any,
-      valueArrayOrIds: js.Any,
-      idsOrCb: CallbackFunction
-    ): typings.bluebird.mod.^[js.Any] = js.native
-    def updateAsync(
-      tableName: String,
-      columnNameOrValueArray: js.Any,
-      valueArrayOrIds: js.Any,
+      columnNameOrValueArray: Any,
+      valueArrayOrIds: Any,
       idsOrCb: CallbackFunction,
       callback: CallbackFunction
-    ): typings.bluebird.mod.^[js.Any] = js.native
-    def updateAsync(tableName: String, columnNameOrValueArray: js.Any, valueArrayOrIds: Unit, idsOrCb: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+    ): typings.bluebird.mod.^[Any] = js.native
+    def updateAsync(tableName: String, columnNameOrValueArray: Any, valueArrayOrIds: Unit, idsOrCb: Any): typings.bluebird.mod.^[Any] = js.native
     def updateAsync(
       tableName: String,
-      columnNameOrValueArray: js.Any,
+      columnNameOrValueArray: Any,
       valueArrayOrIds: Unit,
-      idsOrCb: js.Any,
+      idsOrCb: Any,
       callback: CallbackFunction
-    ): typings.bluebird.mod.^[js.Any] = js.native
+    ): typings.bluebird.mod.^[Any] = js.native
     def updateAsync(
       tableName: String,
-      columnNameOrValueArray: js.Any,
+      columnNameOrValueArray: Any,
       valueArrayOrIds: Unit,
       idsOrCb: Unit,
       callback: CallbackFunction
-    ): typings.bluebird.mod.^[js.Any] = js.native
+    ): typings.bluebird.mod.^[Any] = js.native
+    def updateAsync(tableName: String, columnNameOrValueArray: Any, valueArrayOrIds: Unit, idsOrCb: CallbackFunction): typings.bluebird.mod.^[Any] = js.native
     def updateAsync(
       tableName: String,
-      columnNameOrValueArray: js.Any,
-      valueArrayOrIds: Unit,
-      idsOrCb: CallbackFunction
-    ): typings.bluebird.mod.^[js.Any] = js.native
-    def updateAsync(
-      tableName: String,
-      columnNameOrValueArray: js.Any,
+      columnNameOrValueArray: Any,
       valueArrayOrIds: Unit,
       idsOrCb: CallbackFunction,
       callback: CallbackFunction
-    ): typings.bluebird.mod.^[js.Any] = js.native
+    ): typings.bluebird.mod.^[Any] = js.native
   }
   
-  type CallbackFunction = js.Function2[/* err */ js.Any, /* response */ js.Any, Unit]
+  type CallbackFunction = js.Function2[/* err */ Any, /* response */ Any, Unit]
   
   trait ColumnDef extends StObject {
     
     // TODO Figure this out!
     var constraints: String
     
-    var foreignKey: js.UndefOr[js.Any] = js.undefined
+    var foreignKey: js.UndefOr[Any] = js.undefined
   }
   object ColumnDef {
     
@@ -469,7 +429,7 @@ object mod {
       
       inline def setConstraints(value: String): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
       
-      inline def setForeignKey(value: js.Any): Self = StObject.set(x, "foreignKey", value.asInstanceOf[js.Any])
+      inline def setForeignKey(value: Any): Self = StObject.set(x, "foreignKey", value.asInstanceOf[js.Any])
       
       inline def setForeignKeyUndefined: Self = StObject.set(x, "foreignKey", js.undefined)
     }
@@ -479,7 +439,7 @@ object mod {
     
     var autoIncrement: js.UndefOr[Boolean] = js.undefined
     
-    var defaultValue: js.UndefOr[js.Any] = js.undefined
+    var defaultValue: js.UndefOr[Any] = js.undefined
     
     var foreignKey: js.UndefOr[ForeignKeySpec] = js.undefined
     
@@ -509,7 +469,7 @@ object mod {
       
       inline def setAutoIncrementUndefined: Self = StObject.set(x, "autoIncrement", js.undefined)
       
-      inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
@@ -560,7 +520,7 @@ object mod {
       
       inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      inline def setColumnsVarargs(value: ColumnSpec*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: ColumnSpec*): Self = StObject.set(x, "columns", js.Array(value*))
       
       inline def setIfNotExists(value: Boolean): Self = StObject.set(x, "ifNotExists", value.asInstanceOf[js.Any])
       
@@ -610,7 +570,7 @@ object mod {
   
   trait ForeignKeySpec extends StObject {
     
-    var mapping: String | js.Any
+    var mapping: String | Any
     
     var name: String
     
@@ -620,14 +580,14 @@ object mod {
   }
   object ForeignKeySpec {
     
-    inline def apply(mapping: String | js.Any, name: String, table: String): ForeignKeySpec = {
+    inline def apply(mapping: String | Any, name: String, table: String): ForeignKeySpec = {
       val __obj = js.Dynamic.literal(mapping = mapping.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any])
       __obj.asInstanceOf[ForeignKeySpec]
     }
     
     extension [Self <: ForeignKeySpec](x: Self) {
       
-      inline def setMapping(value: String | js.Any): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
+      inline def setMapping(value: String | Any): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -641,13 +601,13 @@ object mod {
   
   trait InternalModule extends StObject {
     
-    var log: js.Any
+    var log: Any
     
-    var `type`: js.Any
+    var `type`: Any
   }
   object InternalModule {
     
-    inline def apply(log: js.Any, `type`: js.Any): InternalModule = {
+    inline def apply(log: Any, `type`: Any): InternalModule = {
       val __obj = js.Dynamic.literal(log = log.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[InternalModule]
@@ -655,9 +615,9 @@ object mod {
     
     extension [Self <: InternalModule](x: Self) {
       
-      inline def setLog(value: js.Any): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: Any): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
-      inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

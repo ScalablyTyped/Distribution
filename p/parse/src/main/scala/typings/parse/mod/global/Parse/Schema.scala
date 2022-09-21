@@ -6,7 +6,6 @@ import typings.parse.mod.global.Parse.Schema.CLP
 import typings.parse.mod.global.Parse.Schema.FieldOptions
 import typings.parse.mod.global.Parse.Schema.Index
 import typings.parse.mod.global.Parse.Schema.TYPE
-import typings.std.Date
 import typings.std.Extract
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -29,22 +28,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Parse.Schema")
 @js.native
-class Schema[T /* <: Object[Attributes] */] protected () extends StObject {
+open class Schema[T /* <: Object[Attributes] */] protected () extends StObject {
   def this(className: String) = this()
   
-  def addArray(key: AttrType[T, js.Array[js.Any]]): this.type = js.native
-  def addArray(key: AttrType[T, js.Array[js.Any]], options: FieldOptions[js.Array[js.Any]]): this.type = js.native
+  def addArray(key: AttrType[T, js.Array[Any]]): this.type = js.native
+  def addArray(key: AttrType[T, js.Array[Any]], options: FieldOptions[js.Array[Any]]): this.type = js.native
   
   def addBoolean(key: AttrType[T, Boolean]): this.type = js.native
   def addBoolean(key: AttrType[T, Boolean], options: FieldOptions[Boolean]): this.type = js.native
   
-  def addDate(key: AttrType[T, Date]): this.type = js.native
-  def addDate(key: AttrType[T, Date], options: FieldOptions[Date]): this.type = js.native
+  def addDate(key: AttrType[T, js.Date]): this.type = js.native
+  def addDate(key: AttrType[T, js.Date], options: FieldOptions[js.Date]): this.type = js.native
   
   def addField[T /* <: TYPE */](name: String): this.type = js.native
   def addField[T /* <: TYPE */](name: String, `type`: T): this.type = js.native
-  def addField[T /* <: TYPE */](name: String, `type`: T, options: FieldOptions[js.Any]): this.type = js.native
-  def addField[T /* <: TYPE */](name: String, `type`: Unit, options: FieldOptions[js.Any]): this.type = js.native
+  def addField[T /* <: TYPE */](name: String, `type`: T, options: FieldOptions[Any]): this.type = js.native
+  def addField[T /* <: TYPE */](name: String, `type`: Unit, options: FieldOptions[Any]): this.type = js.native
   
   def addFile(key: AttrType[T, File]): this.type = js.native
   def addFile(key: AttrType[T, File], options: FieldOptions[File]): this.type = js.native
@@ -107,7 +106,7 @@ class Schema[T /* <: Object[Attributes] */] protected () extends StObject {
     * @returns A promise that is resolved with the result when the query completes.
     */
   // @TODO Fix Promise<any>
-  def delete(): js.Promise[js.Any] = js.native
+  def delete(): js.Promise[Any] = js.native
   
   /**
     * Deleting a Field to Update on a Schema
@@ -126,18 +125,18 @@ class Schema[T /* <: Object[Attributes] */] protected () extends StObject {
   /**
     * Get the Schema from Parse
     */
-  def get(): js.Promise[Schema[js.Any]] = js.native
+  def get(): js.Promise[RestSchema] = js.native
   
   /**
     * Removes all objects from a Schema (class) in  EXERCISE CAUTION, running this will delete all objects for this schema and cannot be reversed
     */
   // TODO Fix Promise<any>
-  def purge(): js.Promise[js.Any] = js.native
+  def purge(): js.Promise[Any] = js.native
   
   /**
     * Create a new Schema on Parse
     */
-  def save(): js.Promise[Schema[js.Any]] = js.native
+  def save(): js.Promise[Schema[Any]] = js.native
   
   /**
     * Sets Class Level Permissions when creating / updating a Schema.
@@ -148,7 +147,7 @@ class Schema[T /* <: Object[Attributes] */] protected () extends StObject {
   /**
     * Update a Schema on Parse
     */
-  def update(): js.Promise[Schema[js.Any]] = js.native
+  def update(): js.Promise[Schema[Any]] = js.native
 }
 object Schema {
   
@@ -163,7 +162,7 @@ object Schema {
     * the query completes.
     */
   /* static member */
-  inline def all(): js.Promise[js.Array[Schema[js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")().asInstanceOf[js.Promise[js.Array[Schema[js.Any]]]]
+  inline def all(): js.Promise[js.Array[RestSchema]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")().asInstanceOf[js.Promise[js.Array[RestSchema]]]
   
   type AttrType[T /* <: Object[Attributes] */, V] = Extract[
     /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T['attributes'] ]: T['attributes'][K] extends V? K : never}[keyof T['attributes']] */ js.Any, 
@@ -183,6 +182,11 @@ object Schema {
     var find: js.UndefOr[CLPField] = js.undefined
     
     var get: js.UndefOr[CLPField] = js.undefined
+    
+    var protectedFields: js.UndefOr[
+        /** '*', user id, or role: followed by a list of fields. */
+    StringDictionary[js.Array[String]]
+      ] = js.undefined
     
     /** Array of fields that point to a `_User` object's ID or a `Role` object's name */
     var readUserFields: js.UndefOr[js.Array[String]] = js.undefined
@@ -225,11 +229,18 @@ object Schema {
       
       inline def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
       
+      inline def setProtectedFields(
+        value: /** '*', user id, or role: followed by a list of fields. */
+      StringDictionary[js.Array[String]]
+      ): Self = StObject.set(x, "protectedFields", value.asInstanceOf[js.Any])
+      
+      inline def setProtectedFieldsUndefined: Self = StObject.set(x, "protectedFields", js.undefined)
+      
       inline def setReadUserFields(value: js.Array[String]): Self = StObject.set(x, "readUserFields", value.asInstanceOf[js.Any])
       
       inline def setReadUserFieldsUndefined: Self = StObject.set(x, "readUserFields", js.undefined)
       
-      inline def setReadUserFieldsVarargs(value: String*): Self = StObject.set(x, "readUserFields", js.Array(value :_*))
+      inline def setReadUserFieldsVarargs(value: String*): Self = StObject.set(x, "readUserFields", js.Array(value*))
       
       inline def setUpdate(value: CLPField): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
       
@@ -239,7 +250,7 @@ object Schema {
       
       inline def setWriteUserFieldsUndefined: Self = StObject.set(x, "writeUserFields", js.undefined)
       
-      inline def setWriteUserFieldsVarargs(value: String*): Self = StObject.set(x, "writeUserFields", js.Array(value :_*))
+      inline def setWriteUserFieldsVarargs(value: String*): Self = StObject.set(x, "writeUserFields", js.Array(value*))
     }
   }
   
@@ -280,7 +291,7 @@ object Schema {
     }
   }
   
-  trait FieldOptions[T /* <: String | Double | Boolean | Date | File | GeoPoint | Polygon | js.Array[js.Any] | js.Object | Pointer | (Relation[Object[Attributes], Object[Attributes]]) */] extends StObject {
+  trait FieldOptions[T /* <: String | Double | Boolean | js.Date | File | GeoPoint | Polygon | js.Array[Any] | js.Object | Pointer | (Relation[Object[Attributes], Object[Attributes]]) */] extends StObject {
     
     var defaultValue: js.UndefOr[T] = js.undefined
     
@@ -288,12 +299,12 @@ object Schema {
   }
   object FieldOptions {
     
-    inline def apply[T /* <: String | Double | Boolean | Date | File | GeoPoint | Polygon | js.Array[js.Any] | js.Object | Pointer | (Relation[Object[Attributes], Object[Attributes]]) */](): FieldOptions[T] = {
+    inline def apply[T /* <: String | Double | Boolean | js.Date | File | GeoPoint | Polygon | js.Array[Any] | js.Object | Pointer | (Relation[Object[Attributes], Object[Attributes]]) */](): FieldOptions[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FieldOptions[T]]
     }
     
-    extension [Self <: FieldOptions[?], T /* <: String | Double | Boolean | Date | File | GeoPoint | Polygon | js.Array[js.Any] | js.Object | Pointer | (Relation[Object[Attributes], Object[Attributes]]) */](x: Self & FieldOptions[T]) {
+    extension [Self <: FieldOptions[?], T /* <: String | Double | Boolean | js.Date | File | GeoPoint | Polygon | js.Array[Any] | js.Object | Pointer | (Relation[Object[Attributes], Object[Attributes]]) */](x: Self & FieldOptions[T]) {
       
       inline def setDefaultValue(value: T): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
@@ -309,20 +320,20 @@ object Schema {
     - java.lang.String
     - scala.Double
     - scala.Boolean
-    - typings.std.Date
+    - js.Date
     - typings.parse.mod.global.Parse.File
     - typings.parse.mod.global.Parse.GeoPoint
     - typings.parse.mod.global.Parse.Polygon
-    - js.Array[js.Any]
+    - js.Array[scala.Any]
     - js.Object
     - typings.parse.mod.global.Parse.Pointer
     - typings.parse.mod.global.Parse.Relation[
   typings.parse.mod.global.Parse.Object[typings.parse.mod.global.Parse.Attributes], 
   typings.parse.mod.global.Parse.Object[typings.parse.mod.global.Parse.Attributes]]
   */
-  type FieldType = _FieldType | js.Array[js.Any] | (Relation[Object[Attributes], Object[Attributes]]) | String | Double | Boolean | Date | js.Object
+  type FieldType = _FieldType | js.Array[Any] | (Relation[Object[Attributes], Object[Attributes]]) | String | Double | Boolean | js.Date | js.Object
   
-  type Index = StringDictionary[TYPE]
+  type Index = StringDictionary[Double | String]
   
   /* Rewritten from type alias, can be one of: 
     - typings.parse.parseStrings.String

@@ -10,10 +10,10 @@ object settingsRemoteMod {
   
   @JSImport("material-ui/svg-icons/action/settings-remote", JSImport.Default)
   @js.native
-  class default () extends ActionSettingsRemote
+  open class default () extends ActionSettingsRemote
   
   @JSImport("material-ui/svg-icons/action/settings-remote", "ActionSettingsRemote")
   @js.native
-  class ActionSettingsRemote ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionSettingsRemote ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -1,13 +1,12 @@
 package typings.vegaLite
 
-import typings.std.Record
 import typings.vegaLite.dataflowMod.DataFlowNode
 import typings.vegaLite.dataflowMod.OutputNode
-import typings.vegaLite.logicalMod.LogicalComposition
 import typings.vegaLite.modelMod.Model
 import typings.vegaLite.selectionMod.SelectionComponent
-import typings.vegaLite.srcSelectionMod.SelectionDef
-import typings.vegaLite.srcSelectionMod.SelectionExtent
+import typings.vegaLite.srcPredicateMod.ParameterPredicate
+import typings.vegaLite.srcSelectionMod.ParameterExtent
+import typings.vegaLite.srcSelectionMod.SelectionParameter
 import typings.vegaLite.srcSelectionMod.SelectionType
 import typings.vegaLite.unitMod.UnitModel
 import typings.vegaLite.utilMod.Dict
@@ -23,12 +22,12 @@ object selectionParseMod {
   
   inline def materializeSelections(model: UnitModel, main: OutputNode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("materializeSelections")(model.asInstanceOf[js.Any], main.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def parseSelectionBinExtent(selCmpt: SelectionComponent[SelectionType], extent: SelectionExtent): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSelectionBinExtent")(selCmpt.asInstanceOf[js.Any], extent.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def parseSelectionExtent(model: Model, name: String, extent: ParameterExtent): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSelectionExtent")(model.asInstanceOf[js.Any], name.asInstanceOf[js.Any], extent.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def parseSelectionPredicate(model: Model, selections: LogicalComposition[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSelectionPredicate")(model.asInstanceOf[js.Any], selections.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def parseSelectionPredicate(model: Model, selections: LogicalComposition[String], dfnode: Unit, datum: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSelectionPredicate")(model.asInstanceOf[js.Any], selections.asInstanceOf[js.Any], dfnode.asInstanceOf[js.Any], datum.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def parseSelectionPredicate(model: Model, selections: LogicalComposition[String], dfnode: DataFlowNode): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSelectionPredicate")(model.asInstanceOf[js.Any], selections.asInstanceOf[js.Any], dfnode.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def parseSelectionPredicate(model: Model, selections: LogicalComposition[String], dfnode: DataFlowNode, datum: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSelectionPredicate")(model.asInstanceOf[js.Any], selections.asInstanceOf[js.Any], dfnode.asInstanceOf[js.Any], datum.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def parseSelectionPredicate(model: Model, pred: ParameterPredicate): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSelectionPredicate")(model.asInstanceOf[js.Any], pred.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def parseSelectionPredicate(model: Model, pred: ParameterPredicate, dfnode: Unit, datum: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSelectionPredicate")(model.asInstanceOf[js.Any], pred.asInstanceOf[js.Any], dfnode.asInstanceOf[js.Any], datum.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def parseSelectionPredicate(model: Model, pred: ParameterPredicate, dfnode: DataFlowNode): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSelectionPredicate")(model.asInstanceOf[js.Any], pred.asInstanceOf[js.Any], dfnode.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def parseSelectionPredicate(model: Model, pred: ParameterPredicate, dfnode: DataFlowNode, datum: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSelectionPredicate")(model.asInstanceOf[js.Any], pred.asInstanceOf[js.Any], dfnode.asInstanceOf[js.Any], datum.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def parseUnitSelection(model: UnitModel, selDefs: Dict[SelectionDef]): Record[String, SelectionComponent[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseUnitSelection")(model.asInstanceOf[js.Any], selDefs.asInstanceOf[js.Any])).asInstanceOf[Record[String, SelectionComponent[js.Any]]]
+  inline def parseUnitSelection(model: UnitModel, selDefs: js.Array[SelectionParameter[SelectionType]]): Dict[SelectionComponent[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseUnitSelection")(model.asInstanceOf[js.Any], selDefs.asInstanceOf[js.Any])).asInstanceOf[Dict[SelectionComponent[Any]]]
 }

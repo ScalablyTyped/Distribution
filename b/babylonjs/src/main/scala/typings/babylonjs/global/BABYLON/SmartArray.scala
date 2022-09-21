@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.SmartArray")
 @js.native
-class SmartArray[T] protected ()
+open class SmartArray[T] protected ()
   extends StObject
      with typings.babylonjs.BABYLON.SmartArray[T] {
   /**
@@ -23,7 +23,7 @@ class SmartArray[T] protected ()
     * @param array defines the data to concatenate with.
     */
   /* CompleteClass */
-  override def concat(array: js.Any): Unit = js.native
+  override def concat(array: Any): Unit = js.native
   
   /**
     * Returns whether an element is part of the active data.
@@ -95,6 +95,6 @@ object SmartArray {
   
   @JSGlobal("BABYLON.SmartArray._GlobalId")
   @js.native
-  def _GlobalId: js.Any = js.native
-  inline def _GlobalId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GlobalId")(x.asInstanceOf[js.Any])
+  def _GlobalId: Any = js.native
+  inline def _GlobalId_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GlobalId")(x.asInstanceOf[js.Any])
 }

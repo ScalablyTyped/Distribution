@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.wixUiIconsCommon.textAlignCenterSmallMod.TextAlignCenterSmallProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,10 +11,10 @@ object wixUiIconsCommonTextAlignCenterSmallMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/TextAlignCenterSmall", JSImport.Default)
   @js.native
-  val default: SFC[TextAlignCenterSmallProps] = js.native
+  val default: FC[TextAlignCenterSmallProps] = js.native
   
-  type _To = SFC[TextAlignCenterSmallProps]
+  type _To = FC[TextAlignCenterSmallProps]
   
   /* This means you don't have to write `default`, but can instead just say `wixUiIconsCommonTextAlignCenterSmallMod.foo` */
-  override def _to: SFC[TextAlignCenterSmallProps] = default
+  override def _to: FC[TextAlignCenterSmallProps] = default
 }

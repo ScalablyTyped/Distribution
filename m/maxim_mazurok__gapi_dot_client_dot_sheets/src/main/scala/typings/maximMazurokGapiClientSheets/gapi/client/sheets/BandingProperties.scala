@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BandingProperties extends StObject {
   
-  /** The first color that is alternating. (Required) */
+  /** The first color that is alternating. (Required) Deprecated: Use first_band_color_style. */
   var firstBandColor: js.UndefOr[Color] = js.undefined
   
   /** The first color that is alternating. (Required) If first_band_color is also set, this field takes precedence. */
@@ -14,7 +14,7 @@ trait BandingProperties extends StObject {
   
   /**
     * The color of the last row or column. If this field is not set, the last row or column is filled with either first_band_color or second_band_color, depending on the color of the
-    * previous row or column.
+    * previous row or column. Deprecated: Use footer_color_style.
     */
   var footerColor: js.UndefOr[Color] = js.undefined
   
@@ -26,7 +26,8 @@ trait BandingProperties extends StObject {
   
   /**
     * The color of the first row or column. If this field is set, the first row or column is filled with this color and the colors alternate between first_band_color and second_band_color
-    * starting from the second row or column. Otherwise, the first row or column is filled with first_band_color and the colors proceed to alternate as they normally would.
+    * starting from the second row or column. Otherwise, the first row or column is filled with first_band_color and the colors proceed to alternate as they normally would. Deprecated:
+    * Use header_color_style.
     */
   var headerColor: js.UndefOr[Color] = js.undefined
   
@@ -37,7 +38,7 @@ trait BandingProperties extends StObject {
     */
   var headerColorStyle: js.UndefOr[ColorStyle] = js.undefined
   
-  /** The second color that is alternating. (Required) */
+  /** The second color that is alternating. (Required) Deprecated: Use second_band_color_style. */
   var secondBandColor: js.UndefOr[Color] = js.undefined
   
   /** The second color that is alternating. (Required) If second_band_color is also set, this field takes precedence. */

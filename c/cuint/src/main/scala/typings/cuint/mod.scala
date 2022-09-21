@@ -12,7 +12,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("cuint", "UINT32")
   @js.native
-  class UINT32 protected ()
+  open class UINT32 protected ()
     extends StObject
        with Uint {
     // called as a constructor:
@@ -29,7 +29,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("cuint", "UINT64")
   @js.native
-  class UINT64 protected ()
+  open class UINT64 protected ()
     extends StObject
        with Uint {
     // called as a constructor:

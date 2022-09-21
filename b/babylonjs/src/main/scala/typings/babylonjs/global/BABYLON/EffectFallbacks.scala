@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.EffectFallbacks")
 @js.native
-class EffectFallbacks ()
+open class EffectFallbacks ()
   extends StObject
      with typings.babylonjs.BABYLON.EffectFallbacks {
   
   /**
-    * Checks to see if more fallbacks are still availible.
+    * Checks to see if more fallbacks are still available.
     */
   /* CompleteClass */
   var hasMoreFallbacks: Boolean = js.native

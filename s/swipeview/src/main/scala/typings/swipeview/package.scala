@@ -5,4 +5,4 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type SwipeViewEvent = js.Function1[/* fn */ js.Function, scala.Unit]
+type SwipeViewEvent = js.Function1[/* fn */ js.Function, Unit]

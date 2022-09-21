@@ -27,73 +27,73 @@ object angularScenario {
   @js.native
   trait Element extends StObject {
     
-    def attr(key: js.Any): Future = js.native
-    def attr(key: js.Any, value: js.Any): Unit = js.native
+    def attr(key: Any): Future = js.native
+    def attr(key: Any, value: Any): Unit = js.native
     
-    def click(): js.Any = js.native
+    def click(): Any = js.native
     
     def count(): Future = js.native
     
-    def css(key: js.Any): Future = js.native
-    def css(key: js.Any, value: js.Any): Unit = js.native
+    def css(key: Any): Future = js.native
+    def css(key: Any, value: Any): Unit = js.native
     
-    def dblclick(): js.Any = js.native
+    def dblclick(): Any = js.native
     
     def height(): Future = js.native
-    def height(value: js.Any): Unit = js.native
+    def height(value: Any): Unit = js.native
     
     def html(): Future = js.native
-    def html(value: js.Any): Unit = js.native
+    def html(value: Any): Unit = js.native
     
     def innerHeight(): Future = js.native
-    def innerHeight(value: js.Any): Unit = js.native
+    def innerHeight(value: Any): Unit = js.native
     
     def innerWidth(): Future = js.native
-    def innerWidth(value: js.Any): Unit = js.native
+    def innerWidth(value: Any): Unit = js.native
     
-    def mousedown(): js.Any = js.native
+    def mousedown(): Any = js.native
     
-    def mouseover(): js.Any = js.native
+    def mouseover(): Any = js.native
     
-    def mouseup(): js.Any = js.native
+    def mouseup(): Any = js.native
     
     def offset(): Future = js.native
-    def offset(value: js.Any): Unit = js.native
+    def offset(value: Any): Unit = js.native
     
     def outerHeight(): Future = js.native
-    def outerHeight(value: js.Any): Unit = js.native
+    def outerHeight(value: Any): Unit = js.native
     
     def outerWidth(): Future = js.native
-    def outerWidth(value: js.Any): Unit = js.native
+    def outerWidth(value: Any): Unit = js.native
     
     def position(): Future = js.native
-    def position(value: js.Any): Unit = js.native
+    def position(value: Any): Unit = js.native
     
-    def prop(key: js.Any): Future = js.native
-    def prop(key: js.Any, value: js.Any): Unit = js.native
+    def prop(key: Any): Future = js.native
+    def prop(key: Any, value: Any): Unit = js.native
     
     def query(
       callback: js.Function2[
           /* selectedDOMElements */ JQuery, 
-          /* callbackWhenDone */ js.Function2[/* objNull */ js.Any, /* futureValue */ js.Any, js.Any], 
-          js.Any
+          /* callbackWhenDone */ js.Function2[/* objNull */ Any, /* futureValue */ Any, Any], 
+          Any
         ]
-    ): js.Any = js.native
+    ): Any = js.native
     
     def scrollLeft(): Future = js.native
-    def scrollLeft(value: js.Any): Unit = js.native
+    def scrollLeft(value: Any): Unit = js.native
     
     def scrollTop(): Future = js.native
-    def scrollTop(value: js.Any): Unit = js.native
+    def scrollTop(value: Any): Unit = js.native
     
     def text(): Future = js.native
-    def text(value: js.Any): Unit = js.native
+    def text(value: Any): Unit = js.native
     
     def `val`(): Future = js.native
-    def `val`(value: js.Any): Unit = js.native
+    def `val`(value: Any): Unit = js.native
     
     def width(): Future = js.native
-    def width(value: js.Any): Unit = js.native
+    def width(value: Any): Unit = js.native
   }
   
   trait Expect
@@ -106,16 +106,16 @@ object angularScenario {
     
     inline def apply(
       not: () => CustomMatchers,
-      toBe: js.Any => Unit,
+      toBe: Any => Unit,
       toBeDefined: () => Unit,
       toBeFalsy: () => Unit,
-      toBeGreaterThan: js.Any => Unit,
-      toBeLessThan: js.Any => Unit,
+      toBeGreaterThan: Any => Unit,
+      toBeLessThan: Any => Unit,
       toBeNull: () => Unit,
       toBeTruthy: () => Unit,
-      toContain: js.Any => Unit,
-      toEqual: js.Any => Unit,
-      toMatch: js.Any => Unit
+      toContain: Any => Unit,
+      toEqual: Any => Unit,
+      toMatch: Any => Unit
     ): Expect = {
       val __obj = js.Dynamic.literal(not = js.Any.fromFunction0(not), toBe = js.Any.fromFunction1(toBe), toBeDefined = js.Any.fromFunction0(toBeDefined), toBeFalsy = js.Any.fromFunction0(toBeFalsy), toBeGreaterThan = js.Any.fromFunction1(toBeGreaterThan), toBeLessThan = js.Any.fromFunction1(toBeLessThan), toBeNull = js.Any.fromFunction0(toBeNull), toBeTruthy = js.Any.fromFunction0(toBeTruthy), toContain = js.Any.fromFunction1(toContain), toEqual = js.Any.fromFunction1(toEqual), toMatch = js.Any.fromFunction1(toMatch))
       __obj.asInstanceOf[Expect]
@@ -131,17 +131,17 @@ object angularScenario {
   
   trait Input extends StObject {
     
-    def check(): js.Any
+    def check(): Any
     
-    def enter(value: js.Any): js.Any
+    def enter(value: Any): Any
     
-    def select(radioButtonValue: js.Any): js.Any
+    def select(radioButtonValue: Any): Any
     
     def `val`(): Future
   }
   object Input {
     
-    inline def apply(check: () => js.Any, enter: js.Any => js.Any, select: js.Any => js.Any, `val`: () => Future): Input = {
+    inline def apply(check: () => Any, enter: Any => Any, select: Any => Any, `val`: () => Future): Input = {
       val __obj = js.Dynamic.literal(check = js.Any.fromFunction0(check), enter = js.Any.fromFunction1(enter), select = js.Any.fromFunction1(select))
       __obj.updateDynamic("val")(js.Any.fromFunction0(`val`))
       __obj.asInstanceOf[Input]
@@ -149,11 +149,11 @@ object angularScenario {
     
     extension [Self <: Input](x: Self) {
       
-      inline def setCheck(value: () => js.Any): Self = StObject.set(x, "check", js.Any.fromFunction0(value))
+      inline def setCheck(value: () => Any): Self = StObject.set(x, "check", js.Any.fromFunction0(value))
       
-      inline def setEnter(value: js.Any => js.Any): Self = StObject.set(x, "enter", js.Any.fromFunction1(value))
+      inline def setEnter(value: Any => Any): Self = StObject.set(x, "enter", js.Any.fromFunction1(value))
       
-      inline def setSelect(value: js.Any => js.Any): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+      inline def setSelect(value: Any => Any): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
       
       inline def setVal(value: () => Future): Self = StObject.set(x, "val", js.Any.fromFunction0(value))
     }
@@ -161,39 +161,39 @@ object angularScenario {
   
   trait Matchers extends StObject {
     
-    def toBe(value: js.Any): Unit
+    def toBe(value: Any): Unit
     
     def toBeDefined(): Unit
     
     def toBeFalsy(): Unit
     
-    def toBeGreaterThan(value: js.Any): Unit
+    def toBeGreaterThan(value: Any): Unit
     
-    def toBeLessThan(value: js.Any): Unit
+    def toBeLessThan(value: Any): Unit
     
     def toBeNull(): Unit
     
     def toBeTruthy(): Unit
     
-    def toContain(value: js.Any): Unit
+    def toContain(value: Any): Unit
     
-    def toEqual(value: js.Any): Unit
+    def toEqual(value: Any): Unit
     
-    def toMatch(regularExpression: js.Any): Unit
+    def toMatch(regularExpression: Any): Unit
   }
   object Matchers {
     
     inline def apply(
-      toBe: js.Any => Unit,
+      toBe: Any => Unit,
       toBeDefined: () => Unit,
       toBeFalsy: () => Unit,
-      toBeGreaterThan: js.Any => Unit,
-      toBeLessThan: js.Any => Unit,
+      toBeGreaterThan: Any => Unit,
+      toBeLessThan: Any => Unit,
       toBeNull: () => Unit,
       toBeTruthy: () => Unit,
-      toContain: js.Any => Unit,
-      toEqual: js.Any => Unit,
-      toMatch: js.Any => Unit
+      toContain: Any => Unit,
+      toEqual: Any => Unit,
+      toMatch: Any => Unit
     ): Matchers = {
       val __obj = js.Dynamic.literal(toBe = js.Any.fromFunction1(toBe), toBeDefined = js.Any.fromFunction0(toBeDefined), toBeFalsy = js.Any.fromFunction0(toBeFalsy), toBeGreaterThan = js.Any.fromFunction1(toBeGreaterThan), toBeLessThan = js.Any.fromFunction1(toBeLessThan), toBeNull = js.Any.fromFunction0(toBeNull), toBeTruthy = js.Any.fromFunction0(toBeTruthy), toContain = js.Any.fromFunction1(toContain), toEqual = js.Any.fromFunction1(toEqual), toMatch = js.Any.fromFunction1(toMatch))
       __obj.asInstanceOf[Matchers]
@@ -201,29 +201,29 @@ object angularScenario {
     
     extension [Self <: Matchers](x: Self) {
       
-      inline def setToBe(value: js.Any => Unit): Self = StObject.set(x, "toBe", js.Any.fromFunction1(value))
+      inline def setToBe(value: Any => Unit): Self = StObject.set(x, "toBe", js.Any.fromFunction1(value))
       
       inline def setToBeDefined(value: () => Unit): Self = StObject.set(x, "toBeDefined", js.Any.fromFunction0(value))
       
       inline def setToBeFalsy(value: () => Unit): Self = StObject.set(x, "toBeFalsy", js.Any.fromFunction0(value))
       
-      inline def setToBeGreaterThan(value: js.Any => Unit): Self = StObject.set(x, "toBeGreaterThan", js.Any.fromFunction1(value))
+      inline def setToBeGreaterThan(value: Any => Unit): Self = StObject.set(x, "toBeGreaterThan", js.Any.fromFunction1(value))
       
-      inline def setToBeLessThan(value: js.Any => Unit): Self = StObject.set(x, "toBeLessThan", js.Any.fromFunction1(value))
+      inline def setToBeLessThan(value: Any => Unit): Self = StObject.set(x, "toBeLessThan", js.Any.fromFunction1(value))
       
       inline def setToBeNull(value: () => Unit): Self = StObject.set(x, "toBeNull", js.Any.fromFunction0(value))
       
       inline def setToBeTruthy(value: () => Unit): Self = StObject.set(x, "toBeTruthy", js.Any.fromFunction0(value))
       
-      inline def setToContain(value: js.Any => Unit): Self = StObject.set(x, "toContain", js.Any.fromFunction1(value))
+      inline def setToContain(value: Any => Unit): Self = StObject.set(x, "toContain", js.Any.fromFunction1(value))
       
-      inline def setToEqual(value: js.Any => Unit): Self = StObject.set(x, "toEqual", js.Any.fromFunction1(value))
+      inline def setToEqual(value: Any => Unit): Self = StObject.set(x, "toEqual", js.Any.fromFunction1(value))
       
-      inline def setToMatch(value: js.Any => Unit): Self = StObject.set(x, "toMatch", js.Any.fromFunction1(value))
+      inline def setToMatch(value: Any => Unit): Self = StObject.set(x, "toMatch", js.Any.fromFunction1(value))
     }
   }
   
-  type PauseFunction = js.Function0[js.Any]
+  type PauseFunction = js.Function0[Any]
   
   trait Repeater extends StObject {
     
@@ -250,18 +250,18 @@ object angularScenario {
     }
   }
   
-  type RunFunction = js.Function1[/* functionToRun */ js.Any, js.Any]
+  type RunFunction = js.Function1[/* functionToRun */ Any, Any]
   
-  type RunFunctionWithDescription = js.Function2[/* description */ String, /* functionToRun */ js.Any, js.Any]
+  type RunFunctionWithDescription = js.Function2[/* description */ String, /* functionToRun */ Any, Any]
   
   @js.native
   trait Select extends StObject {
     
-    def option(listOfValues: js.Any*): js.Any = js.native
-    def option(value: js.Any): js.Any = js.native
+    def option(listOfValues: Any*): Any = js.native
+    def option(value: Any): Any = js.native
   }
   
-  type SleepFunction = js.Function1[/* seconds */ Double, js.Any]
+  type SleepFunction = js.Function1[/* seconds */ Double, Any]
   
   type UsingFunction = js.Function2[/* selector */ String, /* selectorDescription */ js.UndefOr[String], Unit]
   

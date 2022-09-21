@@ -8,6 +8,8 @@ trait JobPayload extends StObject {
   
   var input: JobPayloadInput
   
+  var misc: js.UndefOr[JobPayloadMisc] = js.undefined
+  
   var output: JobPayloadOutput
 }
 object JobPayload {
@@ -20,6 +22,10 @@ object JobPayload {
   extension [Self <: JobPayload](x: Self) {
     
     inline def setInput(value: JobPayloadInput): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    
+    inline def setMisc(value: JobPayloadMisc): Self = StObject.set(x, "misc", value.asInstanceOf[js.Any])
+    
+    inline def setMiscUndefined: Self = StObject.set(x, "misc", js.undefined)
     
     inline def setOutput(value: JobPayloadOutput): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
   }

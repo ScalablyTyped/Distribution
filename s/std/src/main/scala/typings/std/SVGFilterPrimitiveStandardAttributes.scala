@@ -6,14 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SVGFilterPrimitiveStandardAttributes extends StObject {
   
+  /* standard dom */
   val height: SVGAnimatedLength
   
+  /* standard dom */
   val result: SVGAnimatedString
   
+  /* standard dom */
   val width: SVGAnimatedLength
   
+  /* standard dom */
   val x: SVGAnimatedLength
   
+  /* standard dom */
   val y: SVGAnimatedLength
 }
 object SVGFilterPrimitiveStandardAttributes {

@@ -1,6 +1,5 @@
 package typings.coreJs
 
-import typings.std.PropertyDescriptor
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object definePropertyMod {
   
   /* was `typeof core.Object.defineProperty` */
-  inline def apply(o: js.Any, propertyKey: PropertyKey, attributes: PropertyDescriptor): js.Any = (^.asInstanceOf[js.Dynamic].apply(o.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(o: Any, propertyKey: PropertyKey, attributes: js.PropertyDescriptor): Any = (^.asInstanceOf[js.Dynamic].apply(o.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("core-js/fn/object/define-property", JSImport.Namespace)
   @js.native

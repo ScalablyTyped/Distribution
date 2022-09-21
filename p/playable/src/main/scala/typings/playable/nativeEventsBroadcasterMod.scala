@@ -10,40 +10,40 @@ object nativeEventsBroadcasterMod {
   
   @JSImport("playable/dist/src/modules/playback-engine/output/native/native-events-broadcaster", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with NativeEventsBroadcaster {
     def this(eventEmitter: IEventEmitter, output: HTMLVideoElement) = this()
     
     /* private */ /* CompleteClass */
-    var _bindCallbacks: js.Any = js.native
+    var _bindCallbacks: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _bindEvents: js.Any = js.native
+    var _bindEvents: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _checkVolumeChanges: js.Any = js.native
+    var _checkVolumeChanges: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _currentMute: js.Any = js.native
+    var _currentMute: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _currentVolume: js.Any = js.native
+    var _currentVolume: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _eventEmitter: js.Any = js.native
+    var _eventEmitter: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _processEventFromVideo: js.Any = js.native
+    var _processEventFromVideo: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _shouldCheckVolume: js.Any = js.native
+    var _shouldCheckVolume: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _unbindEvents: js.Any = js.native
+    var _unbindEvents: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _video: js.Any = js.native
+    var _video: Any = js.native
     
     /* CompleteClass */
     override def checkVolumeChangeAfterLoadStart(): Unit = js.native
@@ -58,25 +58,25 @@ object nativeEventsBroadcasterMod {
   
   trait NativeEventsBroadcaster extends StObject {
     
-    /* private */ var _bindCallbacks: js.Any
+    /* private */ var _bindCallbacks: Any
     
-    /* private */ var _bindEvents: js.Any
+    /* private */ var _bindEvents: Any
     
-    /* private */ var _checkVolumeChanges: js.Any
+    /* private */ var _checkVolumeChanges: Any
     
-    /* private */ var _currentMute: js.Any
+    /* private */ var _currentMute: Any
     
-    /* private */ var _currentVolume: js.Any
+    /* private */ var _currentVolume: Any
     
-    /* private */ var _eventEmitter: js.Any
+    /* private */ var _eventEmitter: Any
     
-    /* private */ var _processEventFromVideo: js.Any
+    /* private */ var _processEventFromVideo: Any
     
-    /* private */ var _shouldCheckVolume: js.Any
+    /* private */ var _shouldCheckVolume: Any
     
-    /* private */ var _unbindEvents: js.Any
+    /* private */ var _unbindEvents: Any
     
-    /* private */ var _video: js.Any
+    /* private */ var _video: Any
     
     def checkVolumeChangeAfterLoadStart(): Unit
     
@@ -85,16 +85,16 @@ object nativeEventsBroadcasterMod {
   object NativeEventsBroadcaster {
     
     inline def apply(
-      _bindCallbacks: js.Any,
-      _bindEvents: js.Any,
-      _checkVolumeChanges: js.Any,
-      _currentMute: js.Any,
-      _currentVolume: js.Any,
-      _eventEmitter: js.Any,
-      _processEventFromVideo: js.Any,
-      _shouldCheckVolume: js.Any,
-      _unbindEvents: js.Any,
-      _video: js.Any,
+      _bindCallbacks: Any,
+      _bindEvents: Any,
+      _checkVolumeChanges: Any,
+      _currentMute: Any,
+      _currentVolume: Any,
+      _eventEmitter: Any,
+      _processEventFromVideo: Any,
+      _shouldCheckVolume: Any,
+      _unbindEvents: Any,
+      _video: Any,
       checkVolumeChangeAfterLoadStart: () => Unit,
       destroy: () => Unit
     ): NativeEventsBroadcaster = {
@@ -108,25 +108,25 @@ object nativeEventsBroadcasterMod {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      inline def set_bindCallbacks(value: js.Any): Self = StObject.set(x, "_bindCallbacks", value.asInstanceOf[js.Any])
+      inline def set_bindCallbacks(value: Any): Self = StObject.set(x, "_bindCallbacks", value.asInstanceOf[js.Any])
       
-      inline def set_bindEvents(value: js.Any): Self = StObject.set(x, "_bindEvents", value.asInstanceOf[js.Any])
+      inline def set_bindEvents(value: Any): Self = StObject.set(x, "_bindEvents", value.asInstanceOf[js.Any])
       
-      inline def set_checkVolumeChanges(value: js.Any): Self = StObject.set(x, "_checkVolumeChanges", value.asInstanceOf[js.Any])
+      inline def set_checkVolumeChanges(value: Any): Self = StObject.set(x, "_checkVolumeChanges", value.asInstanceOf[js.Any])
       
-      inline def set_currentMute(value: js.Any): Self = StObject.set(x, "_currentMute", value.asInstanceOf[js.Any])
+      inline def set_currentMute(value: Any): Self = StObject.set(x, "_currentMute", value.asInstanceOf[js.Any])
       
-      inline def set_currentVolume(value: js.Any): Self = StObject.set(x, "_currentVolume", value.asInstanceOf[js.Any])
+      inline def set_currentVolume(value: Any): Self = StObject.set(x, "_currentVolume", value.asInstanceOf[js.Any])
       
-      inline def set_eventEmitter(value: js.Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
+      inline def set_eventEmitter(value: Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
       
-      inline def set_processEventFromVideo(value: js.Any): Self = StObject.set(x, "_processEventFromVideo", value.asInstanceOf[js.Any])
+      inline def set_processEventFromVideo(value: Any): Self = StObject.set(x, "_processEventFromVideo", value.asInstanceOf[js.Any])
       
-      inline def set_shouldCheckVolume(value: js.Any): Self = StObject.set(x, "_shouldCheckVolume", value.asInstanceOf[js.Any])
+      inline def set_shouldCheckVolume(value: Any): Self = StObject.set(x, "_shouldCheckVolume", value.asInstanceOf[js.Any])
       
-      inline def set_unbindEvents(value: js.Any): Self = StObject.set(x, "_unbindEvents", value.asInstanceOf[js.Any])
+      inline def set_unbindEvents(value: Any): Self = StObject.set(x, "_unbindEvents", value.asInstanceOf[js.Any])
       
-      inline def set_video(value: js.Any): Self = StObject.set(x, "_video", value.asInstanceOf[js.Any])
+      inline def set_video(value: Any): Self = StObject.set(x, "_video", value.asInstanceOf[js.Any])
     }
   }
 }

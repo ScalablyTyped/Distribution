@@ -6,20 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ObjectCallback extends StObject {
   
-  // The host header value for initiating callback requests.
+  /** The value of the request body when a callback is initiated, for example, key=$(key)&etag=$(etag)&my_var=$(x:my_var). */
   var body: String
   
-  // The value of the request body when a callback is initiated, for example, key=$(key)&etag=$(etag)&my_var=$(x:my_var).
+  /** The Content-Type of the callback requests initiatiated, It supports application/x-www-form-urlencoded and application/json, and the former is the default value. */
   var contentType: js.UndefOr[String] = js.undefined
   
-  // The Content-Type of the callback requests initiatiated, It supports application/x-www-form-urlencoded and application/json, and the former is the default value.
   var customValue: js.UndefOr[js.Object] = js.undefined
   
+  /** extra headers, detail see RFC 2616 */
   var headers: js.UndefOr[js.Object] = js.undefined
   
-  // After a file is uploaded successfully, the OSS sends a callback request to this URL.
+  /** The host header value for initiating callback requests. */
   var host: js.UndefOr[String] = js.undefined
   
+  /** After a file is uploaded successfully, the OSS sends a callback request to this URL. */
   var url: String
 }
 object ObjectCallback {

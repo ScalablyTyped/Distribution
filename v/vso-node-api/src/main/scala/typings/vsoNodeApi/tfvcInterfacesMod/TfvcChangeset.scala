@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.tfvcInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -53,7 +52,7 @@ trait TfvcChangeset
 object TfvcChangeset {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     accountId: String,
     author: IdentityRef,
     changes: js.Array[TfvcChange],
@@ -63,7 +62,7 @@ object TfvcChangeset {
     collectionId: String,
     comment: String,
     commentTruncated: Boolean,
-    createdDate: Date,
+    createdDate: js.Date,
     hasMoreChanges: Boolean,
     policyOverride: TfvcPolicyOverrideInfo,
     teamProjectIds: js.Array[String],
@@ -80,11 +79,11 @@ object TfvcChangeset {
     
     inline def setChanges(value: js.Array[TfvcChange]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
-    inline def setChangesVarargs(value: TfvcChange*): Self = StObject.set(x, "changes", js.Array(value :_*))
+    inline def setChangesVarargs(value: TfvcChange*): Self = StObject.set(x, "changes", js.Array(value*))
     
     inline def setCheckinNotes(value: js.Array[CheckinNote]): Self = StObject.set(x, "checkinNotes", value.asInstanceOf[js.Any])
     
-    inline def setCheckinNotesVarargs(value: CheckinNote*): Self = StObject.set(x, "checkinNotes", js.Array(value :_*))
+    inline def setCheckinNotesVarargs(value: CheckinNote*): Self = StObject.set(x, "checkinNotes", js.Array(value*))
     
     inline def setCollectionId(value: String): Self = StObject.set(x, "collectionId", value.asInstanceOf[js.Any])
     
@@ -94,10 +93,10 @@ object TfvcChangeset {
     
     inline def setTeamProjectIds(value: js.Array[String]): Self = StObject.set(x, "teamProjectIds", value.asInstanceOf[js.Any])
     
-    inline def setTeamProjectIdsVarargs(value: String*): Self = StObject.set(x, "teamProjectIds", js.Array(value :_*))
+    inline def setTeamProjectIdsVarargs(value: String*): Self = StObject.set(x, "teamProjectIds", js.Array(value*))
     
     inline def setWorkItems(value: js.Array[AssociatedWorkItem]): Self = StObject.set(x, "workItems", value.asInstanceOf[js.Any])
     
-    inline def setWorkItemsVarargs(value: AssociatedWorkItem*): Self = StObject.set(x, "workItems", js.Array(value :_*))
+    inline def setWorkItemsVarargs(value: AssociatedWorkItem*): Self = StObject.set(x, "workItems", js.Array(value*))
   }
 }

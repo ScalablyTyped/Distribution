@@ -15,9 +15,9 @@ trait DayComponentProps extends StObject {
   
   var marking: `false` | js.Array[Marking]
   
-  def onLongPress(date: DateObject): js.Any
+  def onLongPress(date: DateObject): Any
   
-  def onPress(date: DateObject): js.Any
+  def onPress(date: DateObject): Any
   
   var state: _empty | selected | disabled | today
   
@@ -28,8 +28,8 @@ object DayComponentProps {
   inline def apply(
     date: DateObject,
     marking: `false` | js.Array[Marking],
-    onLongPress: DateObject => js.Any,
-    onPress: DateObject => js.Any,
+    onLongPress: DateObject => Any,
+    onPress: DateObject => Any,
     state: _empty | selected | disabled | today,
     theme: CalendarTheme
   ): DayComponentProps = {
@@ -43,11 +43,11 @@ object DayComponentProps {
     
     inline def setMarking(value: `false` | js.Array[Marking]): Self = StObject.set(x, "marking", value.asInstanceOf[js.Any])
     
-    inline def setMarkingVarargs(value: Marking*): Self = StObject.set(x, "marking", js.Array(value :_*))
+    inline def setMarkingVarargs(value: Marking*): Self = StObject.set(x, "marking", js.Array(value*))
     
-    inline def setOnLongPress(value: DateObject => js.Any): Self = StObject.set(x, "onLongPress", js.Any.fromFunction1(value))
+    inline def setOnLongPress(value: DateObject => Any): Self = StObject.set(x, "onLongPress", js.Any.fromFunction1(value))
     
-    inline def setOnPress(value: DateObject => js.Any): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
+    inline def setOnPress(value: DateObject => Any): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
     
     inline def setState(value: _empty | selected | disabled | today): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

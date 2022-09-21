@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Comment extends StObject {
   
+  /** If true, mark the comment as a part of a thread */
+  var T: js.UndefOr[Boolean] = js.undefined
+  
   /** Author of the comment block */
   var a: js.UndefOr[String] = js.undefined
   
@@ -26,5 +29,7 @@ object Comment {
     inline def setAUndefined: Self = StObject.set(x, "a", js.undefined)
     
     inline def setT(value: String): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
+    
+    inline def setTUndefined: Self = StObject.set(x, "T", js.undefined)
   }
 }

@@ -10,10 +10,10 @@ LESS.js middleware for connect.
 | ------------------ | :-------------: |
 | Full name          | less-middleware |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 247 |
-| # downloads        | 562050 |
-| # stars            | 15 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 90945.33333333333 |
+| # stars            | 271.0 |
 
 ## Links
 - [Homepage](https://github.com/emberfeather/less.js-middleware#readme)

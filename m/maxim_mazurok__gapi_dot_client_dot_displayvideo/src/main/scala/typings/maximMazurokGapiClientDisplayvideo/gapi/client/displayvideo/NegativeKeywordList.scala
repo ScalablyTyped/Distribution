@@ -17,6 +17,9 @@ trait NegativeKeywordList extends StObject {
   
   /** Output only. The unique ID of the negative keyword list. Assigned by the system. */
   var negativeKeywordListId: js.UndefOr[String] = js.undefined
+  
+  /** Output only. Number of line items that are directly targeting this negative keyword list. */
+  var targetedLineItemCount: js.UndefOr[String] = js.undefined
 }
 object NegativeKeywordList {
   
@@ -42,5 +45,9 @@ object NegativeKeywordList {
     inline def setNegativeKeywordListId(value: String): Self = StObject.set(x, "negativeKeywordListId", value.asInstanceOf[js.Any])
     
     inline def setNegativeKeywordListIdUndefined: Self = StObject.set(x, "negativeKeywordListId", js.undefined)
+    
+    inline def setTargetedLineItemCount(value: String): Self = StObject.set(x, "targetedLineItemCount", value.asInstanceOf[js.Any])
+    
+    inline def setTargetedLineItemCountUndefined: Self = StObject.set(x, "targetedLineItemCount", js.undefined)
   }
 }

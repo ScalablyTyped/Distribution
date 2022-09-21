@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.awsSdkClientCognitoIdentityBrowser.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkClientCognitoIdentityBrowser.typesCognitoIdentityProviderMod.CognitoIdentityProvider
 import typings.awsSdkTypes.abortMod.AbortSignal
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +27,7 @@ object typesCreateIdentityPoolInputMod {
       */
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ] = js.undefined
     
     /**
@@ -45,7 +44,7 @@ object typesCreateIdentityPoolInputMod {
     /**
       * <p>An array of Amazon Cognito Identity user pools and their client IDs.</p>
       */
-    var CognitoIdentityProviders: js.UndefOr[js.Array[CognitoIdentityProvider] | Iterable[CognitoIdentityProvider]] = js.undefined
+    var CognitoIdentityProviders: js.UndefOr[js.Array[CognitoIdentityProvider] | js.Iterable[CognitoIdentityProvider]] = js.undefined
     
     /**
       * <p>The "domain" by which Cognito will refer to your users. This name acts as a placeholder that allows your backend and the Cognito service to communicate about the developer provider. For the <code>DeveloperProviderName</code>, you can use letters as well as period (<code>.</code>), underscore (<code>_</code>), and dash (<code>-</code>).</p> <p>Once you have set a developer provider name, you cannot change it. Please take care in setting this parameter.</p>
@@ -60,17 +59,17 @@ object typesCreateIdentityPoolInputMod {
     /**
       * <p>A list of OpendID Connect provider ARNs.</p>
       */
-    var OpenIdConnectProviderARNs: js.UndefOr[js.Array[String] | Iterable[String]] = js.undefined
+    var OpenIdConnectProviderARNs: js.UndefOr[js.Array[String] | js.Iterable[String]] = js.undefined
     
     /**
       * <p>An array of Amazon Resource Names (ARNs) of the SAML provider for your identity pool.</p>
       */
-    var SamlProviderARNs: js.UndefOr[js.Array[String] | Iterable[String]] = js.undefined
+    var SamlProviderARNs: js.UndefOr[js.Array[String] | js.Iterable[String]] = js.undefined
     
     /**
       * <p>Optional key:value pairs mapping provider names to provider app IDs.</p>
       */
-    var SupportedLoginProviders: js.UndefOr[StringDictionary[String] | (Iterable[js.Tuple2[String, String]])] = js.undefined
+    var SupportedLoginProviders: js.UndefOr[StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])] = js.undefined
   }
   object CreateIdentityPoolInput {
     
@@ -86,7 +85,7 @@ object typesCreateIdentityPoolInputMod {
       inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
       inline def set$httpOptions(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
       inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
@@ -97,11 +96,11 @@ object typesCreateIdentityPoolInputMod {
       
       inline def setAllowUnauthenticatedIdentities(value: Boolean): Self = StObject.set(x, "AllowUnauthenticatedIdentities", value.asInstanceOf[js.Any])
       
-      inline def setCognitoIdentityProviders(value: js.Array[CognitoIdentityProvider] | Iterable[CognitoIdentityProvider]): Self = StObject.set(x, "CognitoIdentityProviders", value.asInstanceOf[js.Any])
+      inline def setCognitoIdentityProviders(value: js.Array[CognitoIdentityProvider] | js.Iterable[CognitoIdentityProvider]): Self = StObject.set(x, "CognitoIdentityProviders", value.asInstanceOf[js.Any])
       
       inline def setCognitoIdentityProvidersUndefined: Self = StObject.set(x, "CognitoIdentityProviders", js.undefined)
       
-      inline def setCognitoIdentityProvidersVarargs(value: CognitoIdentityProvider*): Self = StObject.set(x, "CognitoIdentityProviders", js.Array(value :_*))
+      inline def setCognitoIdentityProvidersVarargs(value: CognitoIdentityProvider*): Self = StObject.set(x, "CognitoIdentityProviders", js.Array(value*))
       
       inline def setDeveloperProviderName(value: String): Self = StObject.set(x, "DeveloperProviderName", value.asInstanceOf[js.Any])
       
@@ -109,19 +108,19 @@ object typesCreateIdentityPoolInputMod {
       
       inline def setIdentityPoolName(value: String): Self = StObject.set(x, "IdentityPoolName", value.asInstanceOf[js.Any])
       
-      inline def setOpenIdConnectProviderARNs(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "OpenIdConnectProviderARNs", value.asInstanceOf[js.Any])
+      inline def setOpenIdConnectProviderARNs(value: js.Array[String] | js.Iterable[String]): Self = StObject.set(x, "OpenIdConnectProviderARNs", value.asInstanceOf[js.Any])
       
       inline def setOpenIdConnectProviderARNsUndefined: Self = StObject.set(x, "OpenIdConnectProviderARNs", js.undefined)
       
-      inline def setOpenIdConnectProviderARNsVarargs(value: String*): Self = StObject.set(x, "OpenIdConnectProviderARNs", js.Array(value :_*))
+      inline def setOpenIdConnectProviderARNsVarargs(value: String*): Self = StObject.set(x, "OpenIdConnectProviderARNs", js.Array(value*))
       
-      inline def setSamlProviderARNs(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "SamlProviderARNs", value.asInstanceOf[js.Any])
+      inline def setSamlProviderARNs(value: js.Array[String] | js.Iterable[String]): Self = StObject.set(x, "SamlProviderARNs", value.asInstanceOf[js.Any])
       
       inline def setSamlProviderARNsUndefined: Self = StObject.set(x, "SamlProviderARNs", js.undefined)
       
-      inline def setSamlProviderARNsVarargs(value: String*): Self = StObject.set(x, "SamlProviderARNs", js.Array(value :_*))
+      inline def setSamlProviderARNsVarargs(value: String*): Self = StObject.set(x, "SamlProviderARNs", js.Array(value*))
       
-      inline def setSupportedLoginProviders(value: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "SupportedLoginProviders", value.asInstanceOf[js.Any])
+      inline def setSupportedLoginProviders(value: StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "SupportedLoginProviders", value.asInstanceOf[js.Any])
       
       inline def setSupportedLoginProvidersUndefined: Self = StObject.set(x, "SupportedLoginProviders", js.undefined)
     }

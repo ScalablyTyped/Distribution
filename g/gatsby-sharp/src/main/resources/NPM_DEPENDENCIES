@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "gatsby-sharp" : "0.17.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "gatsby-sharp" : "0.17.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -46,7 +46,7 @@ object MemberSharedItems {
     
     inline def setEnvelopesUndefined: Self = StObject.set(x, "envelopes", js.undefined)
     
-    inline def setEnvelopesVarargs(value: (/* Information about the shared item. */ SharedItem)*): Self = StObject.set(x, "envelopes", js.Array(value :_*))
+    inline def setEnvelopesVarargs(value: (/* Information about the shared item. */ SharedItem)*): Self = StObject.set(x, "envelopes", js.Array(value*))
     
     inline def setErrorDetails(
       value: /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
@@ -58,13 +58,13 @@ object MemberSharedItems {
     
     inline def setFoldersUndefined: Self = StObject.set(x, "folders", js.undefined)
     
-    inline def setFoldersVarargs(value: FolderSharedItem*): Self = StObject.set(x, "folders", js.Array(value :_*))
+    inline def setFoldersVarargs(value: FolderSharedItem*): Self = StObject.set(x, "folders", js.Array(value*))
     
     inline def setTemplates(value: js.Array[/* Information about shared templates. */ TemplateSharedItem]): Self = StObject.set(x, "templates", value.asInstanceOf[js.Any])
     
     inline def setTemplatesUndefined: Self = StObject.set(x, "templates", js.undefined)
     
-    inline def setTemplatesVarargs(value: (/* Information about shared templates. */ TemplateSharedItem)*): Self = StObject.set(x, "templates", js.Array(value :_*))
+    inline def setTemplatesVarargs(value: (/* Information about shared templates. */ TemplateSharedItem)*): Self = StObject.set(x, "templates", js.Array(value*))
     
     inline def setUser(value: UserInfo): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     

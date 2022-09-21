@@ -6,22 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Bottom extends StObject {
   
-  var bottom: Double
+  var bottom: js.UndefOr[Double] = js.undefined
   
-  var far: Double
+  var far: js.UndefOr[Double] = js.undefined
   
-  var left: Double
+  var left: js.UndefOr[Double] = js.undefined
   
-  var near: Double
+  var near: js.UndefOr[Double] = js.undefined
   
-  var right: Double
+  var right: js.UndefOr[Double] = js.undefined
   
-  var top: Double
+  var top: js.UndefOr[Double] = js.undefined
 }
 object Bottom {
   
-  inline def apply(bottom: Double, far: Double, left: Double, near: Double, right: Double, top: Double): Bottom = {
-    val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], far = far.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], near = near.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
+  inline def apply(): Bottom = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Bottom]
   }
   
@@ -29,14 +29,26 @@ object Bottom {
     
     inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
+    inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+    
     inline def setFar(value: Double): Self = StObject.set(x, "far", value.asInstanceOf[js.Any])
+    
+    inline def setFarUndefined: Self = StObject.set(x, "far", js.undefined)
     
     inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    
     inline def setNear(value: Double): Self = StObject.set(x, "near", value.asInstanceOf[js.Any])
+    
+    inline def setNearUndefined: Self = StObject.set(x, "near", js.undefined)
     
     inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
+    inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+    
     inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
   }
 }

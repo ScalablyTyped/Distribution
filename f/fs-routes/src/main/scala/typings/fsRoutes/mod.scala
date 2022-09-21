@@ -1,6 +1,5 @@
 package typings.fsRoutes
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -39,7 +38,7 @@ object mod {
     
     var glob: js.UndefOr[String] = js.undefined
     
-    var indexFileRegExp: js.UndefOr[RegExp] = js.undefined
+    var indexFileRegExp: js.UndefOr[js.RegExp] = js.undefined
   }
   object FsRoutesOptions {
     
@@ -54,7 +53,7 @@ object mod {
       
       inline def setGlobUndefined: Self = StObject.set(x, "glob", js.undefined)
       
-      inline def setIndexFileRegExp(value: RegExp): Self = StObject.set(x, "indexFileRegExp", value.asInstanceOf[js.Any])
+      inline def setIndexFileRegExp(value: js.RegExp): Self = StObject.set(x, "indexFileRegExp", value.asInstanceOf[js.Any])
       
       inline def setIndexFileRegExpUndefined: Self = StObject.set(x, "indexFileRegExp", js.undefined)
     }

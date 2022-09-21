@@ -46,7 +46,6 @@ import typings.rbx.rbxStrings.warning
 import typings.rbx.rbxStrings.white
 import typings.react.mod.ComponentType
 import typings.react.mod.PureComponent
-import typings.react.mod.ReactType
 import typings.react.mod.Ref
 import typings.std.Document
 import typings.std.HTMLElement
@@ -71,18 +70,17 @@ object navbarContainerMod {
   
   @JSImport("rbx/components/navbar/navbar-container", "NavbarContainer")
   @js.native
-  class NavbarContainer protected ()
-    extends PureComponent[NavbarContainerProps, NavbarContainerState, js.Any] {
+  open class NavbarContainer protected () extends PureComponent[NavbarContainerProps, NavbarContainerState, Any] {
     def this(props: NavbarContainerProps) = this()
     
-    /* private */ var active: js.Any = js.native
+    /* private */ var active: Any = js.native
     
     @JSName("componentWillUnmount")
     def componentWillUnmount_MNavbarContainer(): Unit = js.native
     
-    /* private */ val document: js.Any = js.native
+    /* private */ val document: Any = js.native
     
-    /* private */ var manageHtmlAttributes: js.Any = js.native
+    /* private */ var manageHtmlAttributes: Any = js.native
   }
   /* static members */
   object NavbarContainer {
@@ -106,7 +104,9 @@ object navbarContainerMod {
     
     var active: js.UndefOr[Boolean] = js.undefined
     
-    var as: js.UndefOr[ReactType[js.Any]] = js.undefined
+    var as: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.ReactType */ Any
+      ] = js.undefined
     
     var color: js.UndefOr[
         primary | success | info | warning | danger | light | dark | white | black | link
@@ -135,7 +135,9 @@ object navbarContainerMod {
       
       inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      inline def setAs(value: ReactType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.ReactType */ Any
+      ): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -174,7 +176,9 @@ object navbarContainerMod {
     
     var active: js.UndefOr[Boolean] = js.undefined
     
-    var as: js.UndefOr[ReactType[js.Any]] = js.undefined
+    var as: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.ReactType */ Any
+      ] = js.undefined
     
     var backgroundColor: js.UndefOr[
         primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
@@ -277,7 +281,9 @@ object navbarContainerMod {
       
       inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      inline def setAs(value: ReactType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.ReactType */ Any
+      ): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       

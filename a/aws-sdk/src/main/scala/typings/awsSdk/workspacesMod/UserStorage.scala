@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UserStorage extends StObject {
   
   /**
-    * The size of the user storage.
+    * The size of the user volume.
     */
   var Capacity: js.UndefOr[NonEmptyString] = js.undefined
 }

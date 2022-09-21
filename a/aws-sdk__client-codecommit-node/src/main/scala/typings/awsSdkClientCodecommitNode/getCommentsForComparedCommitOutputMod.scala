@@ -8,5 +8,5 @@ object getCommentsForComparedCommitOutputMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/GetCommentsForComparedCommitOutput", "GetCommentsForComparedCommitOutput")
   @js.native
-  val GetCommentsForComparedCommitOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GetCommentsForComparedCommitOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

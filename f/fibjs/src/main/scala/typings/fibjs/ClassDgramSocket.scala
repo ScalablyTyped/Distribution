@@ -17,7 +17,7 @@ trait ClassDgramSocket
     * 
     * 
     */
-  def address(): js.Any = js.native
+  def address(): Any = js.native
   
   /**
     * 

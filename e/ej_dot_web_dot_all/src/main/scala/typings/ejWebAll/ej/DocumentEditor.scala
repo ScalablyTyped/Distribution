@@ -142,7 +142,7 @@ object DocumentEditor {
     
     /** Returns the document editor model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -161,7 +161,7 @@ object DocumentEditor {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -179,11 +179,11 @@ object DocumentEditor {
     
     /** Returns the link type and navigation link.
       */
-    var hyperlink: js.UndefOr[js.Any] = js.undefined
+    var hyperlink: js.UndefOr[Any] = js.undefined
     
     /** Returns the document editor model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -202,11 +202,11 @@ object DocumentEditor {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setHyperlink(value: js.Any): Self = StObject.set(x, "hyperlink", value.asInstanceOf[js.Any])
+      inline def setHyperlink(value: Any): Self = StObject.set(x, "hyperlink", value.asInstanceOf[js.Any])
       
       inline def setHyperlinkUndefined: Self = StObject.set(x, "hyperlink", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -224,7 +224,7 @@ object DocumentEditor {
     
     /** Returns the document editor model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -243,7 +243,7 @@ object DocumentEditor {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -261,7 +261,7 @@ object DocumentEditor {
     
     /** Returns the document editor model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -280,7 +280,7 @@ object DocumentEditor {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       

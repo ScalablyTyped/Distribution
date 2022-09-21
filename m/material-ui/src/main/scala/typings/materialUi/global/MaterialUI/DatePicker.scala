@@ -8,11 +8,11 @@ object DatePicker {
   
   @JSGlobal("__MaterialUI.DatePicker.DatePicker")
   @js.native
-  class DatePicker ()
+  open class DatePicker ()
     extends typings.materialUi.MaterialUI.DatePicker.DatePicker
   
   @JSGlobal("__MaterialUI.DatePicker.DatePickerDialog")
   @js.native
-  class DatePickerDialog ()
+  open class DatePickerDialog ()
     extends typings.materialUi.MaterialUI.DatePicker.DatePickerDialog
 }

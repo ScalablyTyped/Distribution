@@ -73,7 +73,11 @@ trait UpdateIntegrationRequest extends StObject {
   
   /**
     * For WebSocket APIs, a key-value map specifying request parameters that are passed from the method request to the backend. The key is an integration request parameter name and the associated value is a method request parameter value or static value that must be enclosed within single quotes and pre-encoded as required by the backend. The method request parameter value must match the pattern of method.request.{location}.{name}
-    , where  {location}  is querystring, path, or header; and {name} must be a valid and unique method request parameter name. For HTTP APIs, request parameters are a key-value map specifying parameters that are passed to AWS_PROXY integrations with a specified integrationSubtype. You can provide static values, or map request data, stage variables, or context variables that are evaluated at runtime. To learn more, see Working with AWS service integrations for HTTP APIs.
+    , where 
+    {location}
+    is querystring, path, or header; and 
+    {name}
+    must be a valid and unique method request parameter name. For HTTP API integrations with a specified integrationSubtype, request parameters are a key-value map specifying parameters that are passed to AWS_PROXY integrations. You can provide static values, or map request data, stage variables, or context variables that are evaluated at runtime. To learn more, see Working with AWS service integrations for HTTP APIs. For HTTP API integrations, without a specified integrationSubtype request parameters are a key-value map specifying how to transform HTTP requests before sending them to the backend. The key should follow the pattern &lt;action&gt;:&lt;header|querystring|path&gt;.&lt;location&gt; where action can be append, overwrite or remove. For values, you can provide static values, or map request data, stage variables, or context variables that are evaluated at runtime. To learn more, see Transforming API requests and responses.
     */
   var RequestParameters: js.UndefOr[IntegrationParameters] = js.undefined
   
@@ -81,6 +85,11 @@ trait UpdateIntegrationRequest extends StObject {
     * Represents a map of Velocity templates that are applied on the request payload based on the value of the Content-Type header sent by the client. The content type value is the key in this map, and the template (as a String) is the value. Supported only for WebSocket APIs.
     */
   var RequestTemplates: js.UndefOr[TemplateMap] = js.undefined
+  
+  /**
+    * Supported only for HTTP APIs. You use response parameters to transform the HTTP response from a backend integration before returning the response to clients. Specify a key-value map from a selection key to response parameters. The selection key must be a valid HTTP status code within the range of 200-599. Response parameters are a key-value map. The key must match pattern &lt;action&gt;:&lt;header&gt;.&lt;location&gt; or overwrite.statuscode. The action can be append, overwrite or remove. The value can be a static value, or map to response data, stage variables, or context variables that are evaluated at runtime. To learn more, see Transforming API requests and responses.
+    */
+  var ResponseParameters: js.UndefOr[typings.awsSdk.apigatewayv2Mod.ResponseParameters] = js.undefined
   
   /**
     * The template selection expression for the integration.
@@ -161,6 +170,10 @@ object UpdateIntegrationRequest {
     inline def setRequestTemplates(value: TemplateMap): Self = StObject.set(x, "RequestTemplates", value.asInstanceOf[js.Any])
     
     inline def setRequestTemplatesUndefined: Self = StObject.set(x, "RequestTemplates", js.undefined)
+    
+    inline def setResponseParameters(value: ResponseParameters): Self = StObject.set(x, "ResponseParameters", value.asInstanceOf[js.Any])
+    
+    inline def setResponseParametersUndefined: Self = StObject.set(x, "ResponseParameters", js.undefined)
     
     inline def setTemplateSelectionExpression(value: SelectionExpression): Self = StObject.set(x, "TemplateSelectionExpression", value.asInstanceOf[js.Any])
     

@@ -59,7 +59,7 @@ object WorkbookRangeFormat {
     
     inline def setBordersUndefined: Self = StObject.set(x, "borders", js.undefined)
     
-    inline def setBordersVarargs(value: WorkbookRangeBorder*): Self = StObject.set(x, "borders", js.Array(value :_*))
+    inline def setBordersVarargs(value: WorkbookRangeBorder*): Self = StObject.set(x, "borders", js.Array(value*))
     
     inline def setColumnWidth(value: NullableOption[Double]): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
     

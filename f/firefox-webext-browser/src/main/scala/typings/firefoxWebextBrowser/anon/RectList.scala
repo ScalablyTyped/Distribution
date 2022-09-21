@@ -21,10 +21,10 @@ object RectList {
     
     inline def setRectList(value: js.Array[Bottom]): Self = StObject.set(x, "rectList", value.asInstanceOf[js.Any])
     
-    inline def setRectListVarargs(value: Bottom*): Self = StObject.set(x, "rectList", js.Array(value :_*))
+    inline def setRectListVarargs(value: Bottom*): Self = StObject.set(x, "rectList", js.Array(value*))
     
     inline def setTextList(value: js.Array[String]): Self = StObject.set(x, "textList", value.asInstanceOf[js.Any])
     
-    inline def setTextListVarargs(value: String*): Self = StObject.set(x, "textList", js.Array(value :_*))
+    inline def setTextListVarargs(value: String*): Self = StObject.set(x, "textList", js.Array(value*))
   }
 }

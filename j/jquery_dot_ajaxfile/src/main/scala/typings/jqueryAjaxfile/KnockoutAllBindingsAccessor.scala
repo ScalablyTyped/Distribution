@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait KnockoutAllBindingsAccessor extends StObject {
   
-  def apply(): js.Any = js.native
+  def apply(): Any = js.native
   
-  def get(name: String): js.Any = js.native
+  def get(name: String): Any = js.native
   
   def has(name: String): Boolean = js.native
 }

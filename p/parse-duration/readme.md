@@ -1,7 +1,7 @@
 
 # Scala.js typings for parse-duration
 
-Typings are for version 0.4.4
+Typings are for version 1.0.2
 
 ## Library description:
 convert a human readable duration string to a duration format
@@ -10,10 +10,10 @@ convert a human readable duration string to a duration format
 | ------------------ | :-------------: |
 | Full name          | parse-duration |
 | Keywords           | parse, duration, time |
-| # releases         | 14 |
-| # dependents       | 121 |
-| # downloads        | 3693484 |
-| # stars            | 7 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 1482669.6666666667 |
+| # stars            | 193.0 |
 
 ## Links
 - [Homepage](https://github.com/jkroso/parse-duration#readme)

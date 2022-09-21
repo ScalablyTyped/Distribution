@@ -1,27 +1,37 @@
 package typings.node
 
 import typings.node.bufferMod.TranscodeEncoding
+import typings.node.bufferMod.global.BufferEncoding
+import typings.node.childProcessMod.IOType
 import typings.node.childProcessMod.SerializationType
 import typings.node.childProcessMod.StdioNull
-import typings.node.childProcessMod._StdioOptions
+import typings.node.childProcessMod.StdioPipeNamed
+import typings.node.cryptoMod.BinaryToTextEncoding
+import typings.node.cryptoMod.CharacterEncoding
 import typings.node.cryptoMod.CipherCCMTypes
 import typings.node.cryptoMod.CipherGCMTypes
+import typings.node.cryptoMod.CipherMode
+import typings.node.cryptoMod.CipherOCBTypes
 import typings.node.cryptoMod.DSAEncoding
 import typings.node.cryptoMod.ECDHKeyFormat
-import typings.node.cryptoMod.HexBase64BinaryEncoding
-import typings.node.cryptoMod.HexBase64Latin1Encoding
+import typings.node.cryptoMod.Encoding
 import typings.node.cryptoMod.KeyFormat
 import typings.node.cryptoMod.KeyObjectType
 import typings.node.cryptoMod.KeyType
-import typings.node.cryptoMod.Utf8AsciiBinaryEncoding
-import typings.node.cryptoMod.Utf8AsciiLatin1Encoding
+import typings.node.cryptoMod.LegacyCharacterEncoding
+import typings.node.cryptoMod.webcrypto.KeyUsage
 import typings.node.dgramMod.SocketType
 import typings.node.fsMod.BufferEncodingOption
+import typings.node.fsMod.WatchEventType
 import typings.node.fsMod.symlink.Type
+import typings.node.netMod.IPVersion
+import typings.node.netMod.SocketReadyState
 import typings.node.perfHooksMod.EntryType
+import typings.node.processMod.global.NodeJS.Architecture
 import typings.node.processMod.global.NodeJS.MultipleResolveType
 import typings.node.processMod.global.NodeJS.Platform
 import typings.node.processMod.global.NodeJS.Signals
+import typings.node.processMod.global.NodeJS.UncaughtExceptionOrigin
 import typings.node.tlsMod.SecureVersion
 import typings.node.utilMod.Style
 import typings.node.vmMod.MeasureMemoryMode
@@ -48,12 +58,24 @@ object nodeStrings {
   inline def BE: BE = "BE".asInstanceOf[BE]
   
   @js.native
+  sealed trait Backslash extends StObject
+  inline def Backslash: Backslash = "\\".asInstanceOf[Backslash]
+  
+  @js.native
   sealed trait Buffer extends StObject
   inline def Buffer: Buffer = "Buffer".asInstanceOf[Buffer]
   
   @js.native
+  sealed trait CAA extends StObject
+  inline def CAA: CAA = "CAA".asInstanceOf[CAA]
+  
+  @js.native
   sealed trait CNAME extends StObject
   inline def CNAME: CNAME = "CNAME".asInstanceOf[CNAME]
+  
+  @js.native
+  sealed trait Colon extends StObject
+  inline def Colon: Colon = ":".asInstanceOf[Colon]
   
   @js.native
   sealed trait ConsoleDotclearMessages extends StObject
@@ -70,6 +92,10 @@ object nodeStrings {
   @js.native
   sealed trait ConsoleDotmessageAdded extends StObject
   inline def ConsoleDotmessageAdded: ConsoleDotmessageAdded = "Console.messageAdded".asInstanceOf[ConsoleDotmessageAdded]
+  
+  @js.native
+  sealed trait CryptoKey extends StObject
+  inline def CryptoKey: CryptoKey = "CryptoKey".asInstanceOf[CryptoKey]
   
   @js.native
   sealed trait DebuggerDotbreakpointResolved extends StObject
@@ -366,6 +392,10 @@ object nodeStrings {
   @js.native
   sealed trait PTR extends StObject
   inline def PTR: PTR = "PTR".asInstanceOf[PTR]
+  
+  @js.native
+  sealed trait ParsedValues extends StObject
+  inline def ParsedValues: ParsedValues = "ParsedValues".asInstanceOf[ParsedValues]
   
   @js.native
   sealed trait ProfilerDotconsoleProfileFinished extends StObject
@@ -746,6 +776,14 @@ object nodeStrings {
   inline def SchemaDotgetDomains: SchemaDotgetDomains = "Schema.getDomains".asInstanceOf[SchemaDotgetDomains]
   
   @js.native
+  sealed trait Semicolon extends StObject
+  inline def Semicolon: Semicolon = ";".asInstanceOf[Semicolon]
+  
+  @js.native
+  sealed trait Slash extends StObject
+  inline def Slash: Slash = "/".asInstanceOf[Slash]
+  
+  @js.native
   sealed trait TLSv1
     extends StObject
        with SecureVersion
@@ -792,6 +830,10 @@ object nodeStrings {
   inline def advanced: advanced = "advanced".asInstanceOf[advanced]
   
   @js.native
+  sealed trait aes extends StObject
+  inline def aes: aes = "aes".asInstanceOf[aes]
+  
+  @js.native
   sealed trait `aes-128-ccm`
     extends StObject
        with CipherCCMTypes
@@ -802,6 +844,12 @@ object nodeStrings {
     extends StObject
        with CipherGCMTypes
   inline def `aes-128-gcm`: `aes-128-gcm` = "aes-128-gcm".asInstanceOf[`aes-128-gcm`]
+  
+  @js.native
+  sealed trait `aes-128-ocb`
+    extends StObject
+       with CipherOCBTypes
+  inline def `aes-128-ocb`: `aes-128-ocb` = "aes-128-ocb".asInstanceOf[`aes-128-ocb`]
   
   @js.native
   sealed trait `aes-192-ccm`
@@ -816,6 +864,12 @@ object nodeStrings {
   inline def `aes-192-gcm`: `aes-192-gcm` = "aes-192-gcm".asInstanceOf[`aes-192-gcm`]
   
   @js.native
+  sealed trait `aes-192-ocb`
+    extends StObject
+       with CipherOCBTypes
+  inline def `aes-192-ocb`: `aes-192-ocb` = "aes-192-ocb".asInstanceOf[`aes-192-ocb`]
+  
+  @js.native
   sealed trait `aes-256-ccm`
     extends StObject
        with CipherCCMTypes
@@ -826,6 +880,12 @@ object nodeStrings {
     extends StObject
        with CipherGCMTypes
   inline def `aes-256-gcm`: `aes-256-gcm` = "aes-256-gcm".asInstanceOf[`aes-256-gcm`]
+  
+  @js.native
+  sealed trait `aes-256-ocb`
+    extends StObject
+       with CipherOCBTypes
+  inline def `aes-256-ocb`: `aes-256-ocb` = "aes-256-ocb".asInstanceOf[`aes-256-ocb`]
   
   @js.native
   sealed trait afterEvaluate extends StObject
@@ -842,18 +902,34 @@ object nodeStrings {
   inline def altsvc: altsvc = "altsvc".asInstanceOf[altsvc]
   
   @js.native
+  sealed trait always extends StObject
+  inline def always: always = "always".asInstanceOf[always]
+  
+  @js.native
   sealed trait android
     extends StObject
        with Platform
   inline def android: android = "android".asInstanceOf[android]
   
   @js.native
+  sealed trait arm
+    extends StObject
+       with Architecture
+  inline def arm: arm = "arm".asInstanceOf[arm]
+  
+  @js.native
+  sealed trait arm64
+    extends StObject
+       with Architecture
+  inline def arm64: arm64 = "arm64".asInstanceOf[arm64]
+  
+  @js.native
   sealed trait ascii
     extends StObject
        with BufferEncoding
+       with Encoding
+       with LegacyCharacterEncoding
        with TranscodeEncoding
-       with Utf8AsciiBinaryEncoding
-       with Utf8AsciiLatin1Encoding
   inline def ascii: ascii = "ascii".asInstanceOf[ascii]
   
   @js.native
@@ -863,10 +939,18 @@ object nodeStrings {
   @js.native
   sealed trait base64
     extends StObject
+       with BinaryToTextEncoding
        with BufferEncoding
-       with HexBase64BinaryEncoding
-       with HexBase64Latin1Encoding
+       with Encoding
   inline def base64: base64 = "base64".asInstanceOf[base64]
+  
+  @js.native
+  sealed trait base64url
+    extends StObject
+       with BinaryToTextEncoding
+       with BufferEncoding
+       with Encoding
+  inline def base64url: base64url = "base64url".asInstanceOf[base64url]
   
   @js.native
   sealed trait beforeExit extends StObject
@@ -881,10 +965,11 @@ object nodeStrings {
   @js.native
   sealed trait binary
     extends StObject
+       with BinaryToTextEncoding
        with BufferEncoding
-       with HexBase64BinaryEncoding
+       with Encoding
+       with LegacyCharacterEncoding
        with TranscodeEncoding
-       with Utf8AsciiBinaryEncoding
   inline def binary: binary = "binary".asInstanceOf[binary]
   
   @js.native
@@ -900,13 +985,37 @@ object nodeStrings {
   inline def buffer_ : buffer_ = "buffer".asInstanceOf[buffer_]
   
   @js.native
+  sealed trait bytes extends StObject
+  inline def bytes: bytes = "bytes".asInstanceOf[bytes]
+  
+  @js.native
+  sealed trait cbc
+    extends StObject
+       with CipherMode
+  inline def cbc: cbc = "cbc".asInstanceOf[cbc]
+  
+  @js.native
+  sealed trait ccm
+    extends StObject
+       with CipherMode
+  inline def ccm: ccm = "ccm".asInstanceOf[ccm]
+  
+  @js.native
+  sealed trait cfb
+    extends StObject
+       with CipherMode
+  inline def cfb: cfb = "cfb".asInstanceOf[cfb]
+  
+  @js.native
   sealed trait `chacha20-poly1305`
     extends StObject
        with CipherCCMTypes
   inline def `chacha20-poly1305`: `chacha20-poly1305` = "chacha20-poly1305".asInstanceOf[`chacha20-poly1305`]
   
   @js.native
-  sealed trait change extends StObject
+  sealed trait change
+    extends StObject
+       with WatchEventType
   inline def change: change = "change".asInstanceOf[change]
   
   @js.native
@@ -914,8 +1023,22 @@ object nodeStrings {
   inline def checkContinue: checkContinue = "checkContinue".asInstanceOf[checkContinue]
   
   @js.native
+  sealed trait checkExpectation extends StObject
+  inline def checkExpectation: checkExpectation = "checkExpectation".asInstanceOf[checkExpectation]
+  
+  @js.native
+  sealed trait clientError extends StObject
+  inline def clientError: clientError = "clientError".asInstanceOf[clientError]
+  
+  @js.native
   sealed trait close extends StObject
   inline def close: close = "close".asInstanceOf[close]
+  
+  @js.native
+  sealed trait closed
+    extends StObject
+       with SocketReadyState
+  inline def closed: closed = "closed".asInstanceOf[closed]
   
   @js.native
   sealed trait compressed
@@ -934,6 +1057,12 @@ object nodeStrings {
   @js.native
   sealed trait continue extends StObject
   inline def continue: continue = "continue".asInstanceOf[continue]
+  
+  @js.native
+  sealed trait ctr
+    extends StObject
+       with CipherMode
+  inline def ctr: ctr = "ctr".asInstanceOf[ctr]
   
   @js.native
   sealed trait cygwin
@@ -958,6 +1087,12 @@ object nodeStrings {
   inline def date: date = "date".asInstanceOf[date]
   
   @js.native
+  sealed trait decrypt
+    extends StObject
+       with KeyUsage
+  inline def decrypt: decrypt = "decrypt".asInstanceOf[decrypt]
+  
+  @js.native
   sealed trait deepEqual extends StObject
   inline def deepEqual: deepEqual = "deepEqual".asInstanceOf[deepEqual]
   
@@ -971,6 +1106,18 @@ object nodeStrings {
        with DSAEncoding
        with KeyFormat
   inline def der: der = "der".asInstanceOf[der]
+  
+  @js.native
+  sealed trait deriveBits
+    extends StObject
+       with KeyUsage
+  inline def deriveBits: deriveBits = "deriveBits".asInstanceOf[deriveBits]
+  
+  @js.native
+  sealed trait deriveKey
+    extends StObject
+       with KeyUsage
+  inline def deriveKey: deriveKey = "deriveKey".asInstanceOf[deriveKey]
   
   @js.native
   sealed trait detailed
@@ -1005,6 +1152,12 @@ object nodeStrings {
   inline def ec: ec = "ec".asInstanceOf[ec]
   
   @js.native
+  sealed trait ecb
+    extends StObject
+       with CipherMode
+  inline def ecb: ecb = "ecb".asInstanceOf[ecb]
+  
+  @js.native
   sealed trait ed25519
     extends StObject
        with KeyType
@@ -1015,6 +1168,12 @@ object nodeStrings {
     extends StObject
        with KeyType
   inline def ed448: ed448 = "ed448".asInstanceOf[ed448]
+  
+  @js.native
+  sealed trait encrypt
+    extends StObject
+       with KeyUsage
+  inline def encrypt: encrypt = "encrypt".asInstanceOf[encrypt]
   
   @js.native
   sealed trait end extends StObject
@@ -1073,6 +1232,12 @@ object nodeStrings {
   inline def gc: gc = "gc".asInstanceOf[gc]
   
   @js.native
+  sealed trait gcm
+    extends StObject
+       with CipherMode
+  inline def gcm: gcm = "gcm".asInstanceOf[gcm]
+  
+  @js.native
   sealed trait get extends StObject
   inline def get: get = "get".asInstanceOf[get]
   
@@ -1081,16 +1246,30 @@ object nodeStrings {
   inline def goaway: goaway = "goaway".asInstanceOf[goaway]
   
   @js.native
+  sealed trait haiku
+    extends StObject
+       with Platform
+  inline def haiku: haiku = "haiku".asInstanceOf[haiku]
+  
+  @js.native
   sealed trait headers extends StObject
   inline def headers: headers = "headers".asInstanceOf[headers]
   
   @js.native
   sealed trait hex
     extends StObject
+       with BinaryToTextEncoding
        with BufferEncoding
-       with HexBase64BinaryEncoding
-       with HexBase64Latin1Encoding
+       with Encoding
   inline def hex: hex = "hex".asInstanceOf[hex]
+  
+  @js.native
+  sealed trait history extends StObject
+  inline def history: history = "history".asInstanceOf[history]
+  
+  @js.native
+  sealed trait hmac extends StObject
+  inline def hmac: hmac = "hmac".asInstanceOf[hmac]
   
   @js.native
   sealed trait http
@@ -1119,6 +1298,12 @@ object nodeStrings {
   inline def hybrid: hybrid = "hybrid".asInstanceOf[hybrid]
   
   @js.native
+  sealed trait ia32
+    extends StObject
+       with Architecture
+  inline def ia32: ia32 = "ia32".asInstanceOf[ia32]
+  
+  @js.native
   sealed trait `ieee-p1363`
     extends StObject
        with DSAEncoding
@@ -1131,8 +1316,8 @@ object nodeStrings {
   @js.native
   sealed trait ignore
     extends StObject
+       with IOType
        with StdioNull
-       with _StdioOptions
   inline def ignore: ignore = "ignore".asInstanceOf[ignore]
   
   @js.native
@@ -1142,8 +1327,8 @@ object nodeStrings {
   @js.native
   sealed trait inherit
     extends StObject
+       with IOType
        with StdioNull
-       with _StdioOptions
   inline def inherit: inherit = "inherit".asInstanceOf[inherit]
   
   @js.native
@@ -1153,6 +1338,22 @@ object nodeStrings {
   @js.native
   sealed trait ipc extends StObject
   inline def ipc: ipc = "ipc".asInstanceOf[ipc]
+  
+  @js.native
+  sealed trait ipv4_
+    extends StObject
+       with IPVersion
+  inline def ipv4_ : ipv4_ = "ipv4".asInstanceOf[ipv4_]
+  
+  @js.native
+  sealed trait ipv4first extends StObject
+  inline def ipv4first: ipv4first = "ipv4first".asInstanceOf[ipv4first]
+  
+  @js.native
+  sealed trait ipv6_
+    extends StObject
+       with IPVersion
+  inline def ipv6_ : ipv6_ = "ipv6".asInstanceOf[ipv6_]
   
   @js.native
   sealed trait json
@@ -1167,6 +1368,12 @@ object nodeStrings {
   inline def junction: junction = "junction".asInstanceOf[junction]
   
   @js.native
+  sealed trait jwk
+    extends StObject
+       with typings.node.cryptoMod.webcrypto.KeyFormat
+  inline def jwk: jwk = "jwk".asInstanceOf[jwk]
+  
+  @js.native
   sealed trait keylog extends StObject
   inline def keylog: keylog = "keylog".asInstanceOf[keylog]
   
@@ -1174,9 +1381,9 @@ object nodeStrings {
   sealed trait latin1
     extends StObject
        with BufferEncoding
-       with HexBase64Latin1Encoding
+       with CharacterEncoding
+       with Encoding
        with TranscodeEncoding
-       with Utf8AsciiLatin1Encoding
   inline def latin1: latin1 = "latin1".asInstanceOf[latin1]
   
   @js.native
@@ -1226,6 +1433,18 @@ object nodeStrings {
   inline def messageerror: messageerror = "messageerror".asInstanceOf[messageerror]
   
   @js.native
+  sealed trait mips
+    extends StObject
+       with Architecture
+  inline def mips: mips = "mips".asInstanceOf[mips]
+  
+  @js.native
+  sealed trait mipsel
+    extends StObject
+       with Architecture
+  inline def mipsel: mipsel = "mipsel".asInstanceOf[mipsel]
+  
+  @js.native
   sealed trait module
     extends StObject
        with Style
@@ -1242,8 +1461,8 @@ object nodeStrings {
   inline def netbsd: netbsd = "netbsd".asInstanceOf[netbsd]
   
   @js.native
-  sealed trait newListener extends StObject
-  inline def newListener: newListener = "newListener".asInstanceOf[newListener]
+  sealed trait never extends StObject
+  inline def never: never = "never".asInstanceOf[never]
   
   @js.native
   sealed trait newSession extends StObject
@@ -1276,6 +1495,18 @@ object nodeStrings {
   inline def number: number = "number".asInstanceOf[number]
   
   @js.native
+  sealed trait ocb
+    extends StObject
+       with CipherMode
+  inline def ocb: ocb = "ocb".asInstanceOf[ocb]
+  
+  @js.native
+  sealed trait ofb
+    extends StObject
+       with CipherMode
+  inline def ofb: ofb = "ofb".asInstanceOf[ofb]
+  
+  @js.native
   sealed trait ok extends StObject
   inline def ok: ok = "ok".asInstanceOf[ok]
   
@@ -1284,7 +1515,9 @@ object nodeStrings {
   inline def online: online = "online".asInstanceOf[online]
   
   @js.native
-  sealed trait open extends StObject
+  sealed trait open
+    extends StObject
+       with SocketReadyState
   inline def open: open = "open".asInstanceOf[open]
   
   @js.native
@@ -1294,8 +1527,29 @@ object nodeStrings {
   inline def openbsd: openbsd = "openbsd".asInstanceOf[openbsd]
   
   @js.native
+  sealed trait opening
+    extends StObject
+       with SocketReadyState
+  inline def opening: opening = "opening".asInstanceOf[opening]
+  
+  @js.native
+  sealed trait option extends StObject
+  inline def option: option = "option".asInstanceOf[option]
+  
+  @js.native
+  sealed trait `option-terminator` extends StObject
+  inline def `option-terminator`: `option-terminator` = "option-terminator".asInstanceOf[`option-terminator`]
+  
+  @js.native
   sealed trait origin extends StObject
   inline def origin: origin = "origin".asInstanceOf[origin]
+  
+  @js.native
+  sealed trait overlapped
+    extends StObject
+       with IOType
+       with StdioPipeNamed
+  inline def overlapped: overlapped = "overlapped".asInstanceOf[overlapped]
   
   @js.native
   sealed trait pause extends StObject
@@ -1314,7 +1568,8 @@ object nodeStrings {
   @js.native
   sealed trait pipe
     extends StObject
-       with _StdioOptions
+       with IOType
+       with StdioPipeNamed
   inline def pipe: pipe = "pipe".asInstanceOf[pipe]
   
   @js.native
@@ -1322,24 +1577,56 @@ object nodeStrings {
   inline def pkcs1: pkcs1 = "pkcs1".asInstanceOf[pkcs1]
   
   @js.native
-  sealed trait pkcs8 extends StObject
+  sealed trait pkcs8
+    extends StObject
+       with typings.node.cryptoMod.webcrypto.KeyFormat
   inline def pkcs8: pkcs8 = "pkcs8".asInstanceOf[pkcs8]
+  
+  @js.native
+  sealed trait positional extends StObject
+  inline def positional: positional = "positional".asInstanceOf[positional]
+  
+  @js.native
+  sealed trait ppc
+    extends StObject
+       with Architecture
+  inline def ppc: ppc = "ppc".asInstanceOf[ppc]
+  
+  @js.native
+  sealed trait ppc64
+    extends StObject
+       with Architecture
+  inline def ppc64: ppc64 = "ppc64".asInstanceOf[ppc64]
   
   @js.native
   sealed trait `private`
     extends StObject
        with KeyObjectType
+       with typings.node.cryptoMod.webcrypto.KeyType
   inline def `private`: `private` = "private".asInstanceOf[`private`]
   
   @js.native
   sealed trait public
     extends StObject
        with KeyObjectType
+       with typings.node.cryptoMod.webcrypto.KeyType
   inline def public: public = "public".asInstanceOf[public]
   
   @js.native
   sealed trait push extends StObject
   inline def push: push = "push".asInstanceOf[push]
+  
+  @js.native
+  sealed trait raw
+    extends StObject
+       with typings.node.cryptoMod.webcrypto.KeyFormat
+  inline def raw: raw = "raw".asInstanceOf[raw]
+  
+  @js.native
+  sealed trait readOnly
+    extends StObject
+       with SocketReadyState
+  inline def readOnly: readOnly = "readOnly".asInstanceOf[readOnly]
   
   @js.native
   sealed trait readable extends StObject
@@ -1370,8 +1657,10 @@ object nodeStrings {
   inline def remoteSettings: remoteSettings = "remoteSettings".asInstanceOf[remoteSettings]
   
   @js.native
-  sealed trait removeListener extends StObject
-  inline def removeListener: removeListener = "removeListener".asInstanceOf[removeListener]
+  sealed trait rename
+    extends StObject
+       with WatchEventType
+  inline def rename: rename = "rename".asInstanceOf[rename]
   
   @js.native
   sealed trait request extends StObject
@@ -1410,6 +1699,24 @@ object nodeStrings {
   inline def rsa: rsa = "rsa".asInstanceOf[rsa]
   
   @js.native
+  sealed trait `rsa-pss`
+    extends StObject
+       with KeyType
+  inline def `rsa-pss`: `rsa-pss` = "rsa-pss".asInstanceOf[`rsa-pss`]
+  
+  @js.native
+  sealed trait s390
+    extends StObject
+       with Architecture
+  inline def s390: s390 = "s390".asInstanceOf[s390]
+  
+  @js.native
+  sealed trait s390x
+    extends StObject
+       with Architecture
+  inline def s390x: s390x = "s390x".asInstanceOf[s390x]
+  
+  @js.native
   sealed trait sec1 extends StObject
   inline def sec1: sec1 = "sec1".asInstanceOf[sec1]
   
@@ -1417,6 +1724,7 @@ object nodeStrings {
   sealed trait secret
     extends StObject
        with KeyObjectType
+       with typings.node.cryptoMod.webcrypto.KeyType
   inline def secret: secret = "secret".asInstanceOf[secret]
   
   @js.native
@@ -1444,8 +1752,18 @@ object nodeStrings {
   inline def setup: setup = "setup".asInstanceOf[setup]
   
   @js.native
+  sealed trait sign
+    extends StObject
+       with KeyUsage
+  inline def sign: sign = "sign".asInstanceOf[sign]
+  
+  @js.native
   sealed trait socket extends StObject
   inline def socket: socket = "socket".asInstanceOf[socket]
+  
+  @js.native
+  sealed trait spawn extends StObject
+  inline def spawn: spawn = "spawn".asInstanceOf[spawn]
   
   @js.native
   sealed trait special
@@ -1454,11 +1772,15 @@ object nodeStrings {
   inline def special: special = "special".asInstanceOf[special]
   
   @js.native
-  sealed trait spki extends StObject
+  sealed trait spki
+    extends StObject
+       with typings.node.cryptoMod.webcrypto.KeyFormat
   inline def spki: spki = "spki".asInstanceOf[spki]
   
   @js.native
-  sealed trait stream extends StObject
+  sealed trait stream
+    extends StObject
+       with CipherMode
   inline def stream: stream = "stream".asInstanceOf[stream]
   
   @js.native
@@ -1513,12 +1835,16 @@ object nodeStrings {
   sealed trait `ucs-2`
     extends StObject
        with BufferEncoding
+       with Encoding
+       with LegacyCharacterEncoding
   inline def `ucs-2`: `ucs-2` = "ucs-2".asInstanceOf[`ucs-2`]
   
   @js.native
   sealed trait ucs2
     extends StObject
        with BufferEncoding
+       with Encoding
+       with LegacyCharacterEncoding
        with TranscodeEncoding
   inline def ucs2: ucs2 = "ucs2".asInstanceOf[ucs2]
   
@@ -1535,7 +1861,9 @@ object nodeStrings {
   inline def udp6: udp6 = "udp6".asInstanceOf[udp6]
   
   @js.native
-  sealed trait uncaughtException extends StObject
+  sealed trait uncaughtException
+    extends StObject
+       with UncaughtExceptionOrigin
   inline def uncaughtException: uncaughtException = "uncaughtException".asInstanceOf[uncaughtException]
   
   @js.native
@@ -1555,7 +1883,9 @@ object nodeStrings {
   inline def undefined: undefined = "undefined".asInstanceOf[undefined]
   
   @js.native
-  sealed trait unhandledRejection extends StObject
+  sealed trait unhandledRejection
+    extends StObject
+       with UncaughtExceptionOrigin
   inline def unhandledRejection: unhandledRejection = "unhandledRejection".asInstanceOf[unhandledRejection]
   
   @js.native
@@ -1567,6 +1897,12 @@ object nodeStrings {
   inline def unpipe: unpipe = "unpipe".asInstanceOf[unpipe]
   
   @js.native
+  sealed trait unwrapKey
+    extends StObject
+       with KeyUsage
+  inline def unwrapKey: unwrapKey = "unwrapKey".asInstanceOf[unwrapKey]
+  
+  @js.native
   sealed trait upgrade extends StObject
   inline def upgrade: upgrade = "upgrade".asInstanceOf[upgrade]
   
@@ -1574,12 +1910,16 @@ object nodeStrings {
   sealed trait `utf-8`
     extends StObject
        with BufferEncoding
+       with CharacterEncoding
+       with Encoding
   inline def `utf-8`: `utf-8` = "utf-8".asInstanceOf[`utf-8`]
   
   @js.native
   sealed trait utf16le
     extends StObject
        with BufferEncoding
+       with CharacterEncoding
+       with Encoding
        with TranscodeEncoding
   inline def utf16le: utf16le = "utf16le".asInstanceOf[utf16le]
   
@@ -1587,10 +1927,20 @@ object nodeStrings {
   sealed trait utf8
     extends StObject
        with BufferEncoding
+       with CharacterEncoding
+       with Encoding
        with TranscodeEncoding
-       with Utf8AsciiBinaryEncoding
-       with Utf8AsciiLatin1Encoding
   inline def utf8: utf8 = "utf8".asInstanceOf[utf8]
+  
+  @js.native
+  sealed trait verbatim extends StObject
+  inline def verbatim: verbatim = "verbatim".asInstanceOf[verbatim]
+  
+  @js.native
+  sealed trait verify
+    extends StObject
+       with KeyUsage
+  inline def verify: verify = "verify".asInstanceOf[verify]
   
   @js.native
   sealed trait wantTrailers extends StObject
@@ -1607,6 +1957,28 @@ object nodeStrings {
   inline def win32: win32 = "win32".asInstanceOf[win32]
   
   @js.native
+  sealed trait worker extends StObject
+  inline def worker: worker = "worker".asInstanceOf[worker]
+  
+  @js.native
+  sealed trait wrap
+    extends StObject
+       with CipherMode
+  inline def wrap: wrap = "wrap".asInstanceOf[wrap]
+  
+  @js.native
+  sealed trait wrapKey
+    extends StObject
+       with KeyUsage
+  inline def wrapKey: wrapKey = "wrapKey".asInstanceOf[wrapKey]
+  
+  @js.native
+  sealed trait writeOnly
+    extends StObject
+       with SocketReadyState
+  inline def writeOnly: writeOnly = "writeOnly".asInstanceOf[writeOnly]
+  
+  @js.native
   sealed trait x25519
     extends StObject
        with KeyType
@@ -1617,4 +1989,16 @@ object nodeStrings {
     extends StObject
        with KeyType
   inline def x448: x448 = "x448".asInstanceOf[x448]
+  
+  @js.native
+  sealed trait x64
+    extends StObject
+       with Architecture
+  inline def x64: x64 = "x64".asInstanceOf[x64]
+  
+  @js.native
+  sealed trait xts
+    extends StObject
+       with CipherMode
+  inline def xts: xts = "xts".asInstanceOf[xts]
 }

@@ -1,26 +1,25 @@
 package typings.reactAlert
 
-import typings.reactAlert.mod.AlertManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  trait Alert extends StObject {
+  trait Margin extends StObject {
     
-    var alert: AlertManager
+    var margin: String
   }
-  object Alert {
+  object Margin {
     
-    inline def apply(alert: AlertManager): Alert = {
-      val __obj = js.Dynamic.literal(alert = alert.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Alert]
+    inline def apply(margin: String): Margin = {
+      val __obj = js.Dynamic.literal(margin = margin.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Margin]
     }
     
-    extension [Self <: Alert](x: Self) {
+    extension [Self <: Margin](x: Self) {
       
-      inline def setAlert(value: AlertManager): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
+      inline def setMargin(value: String): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     }
   }
 }

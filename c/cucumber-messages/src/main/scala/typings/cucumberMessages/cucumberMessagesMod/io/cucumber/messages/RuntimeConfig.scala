@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new RuntimeConfig.
   * @param [properties] Properties to set
   */
-class RuntimeConfig ()
+open class RuntimeConfig ()
   extends StObject
      with IRuntimeConfig {
   def this(properties: IRuntimeConfig) = this()
@@ -35,13 +34,13 @@ class RuntimeConfig ()
   
   /** RuntimeConfig maxParallel. */
   @JSName("maxParallel")
-  var maxParallel_RuntimeConfig: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) = js.native
+  var maxParallel_RuntimeConfig: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any) = js.native
   
   /**
     * Converts this RuntimeConfig to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 object RuntimeConfig {
   
@@ -58,6 +57,8 @@ object RuntimeConfig {
   inline def create(): RuntimeConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[RuntimeConfig]
   inline def create(properties: IRuntimeConfig): RuntimeConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[RuntimeConfig]
   
+  inline def decode(reader: js.typedarray.Uint8Array): RuntimeConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RuntimeConfig]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): RuntimeConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RuntimeConfig]
   /**
     * Decodes a RuntimeConfig message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -69,9 +70,8 @@ object RuntimeConfig {
   /* static member */
   inline def decode(reader: Reader): RuntimeConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RuntimeConfig]
   inline def decode(reader: Reader, length: Double): RuntimeConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RuntimeConfig]
-  inline def decode(reader: Uint8Array): RuntimeConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RuntimeConfig]
-  inline def decode(reader: Uint8Array, length: Double): RuntimeConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RuntimeConfig]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): RuntimeConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RuntimeConfig]
   /**
     * Decodes a RuntimeConfig message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -81,7 +81,6 @@ object RuntimeConfig {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): RuntimeConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RuntimeConfig]
-  inline def decodeDelimited(reader: Uint8Array): RuntimeConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RuntimeConfig]
   
   /**
     * Encodes the specified RuntimeConfig message. Does not implicitly {@link io.cucumber.messages.RuntimeConfig.verify|verify} messages.
@@ -109,7 +108,7 @@ object RuntimeConfig {
     * @returns RuntimeConfig
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): RuntimeConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[RuntimeConfig]
+  inline def fromObject(`object`: StringDictionary[Any]): RuntimeConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[RuntimeConfig]
   
   /**
     * Creates a plain object from a RuntimeConfig message. Also converts values to other types if specified.
@@ -118,8 +117,8 @@ object RuntimeConfig {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: RuntimeConfig): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: RuntimeConfig, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: RuntimeConfig): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: RuntimeConfig, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a RuntimeConfig message.
@@ -127,5 +126,5 @@ object RuntimeConfig {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

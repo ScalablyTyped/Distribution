@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SearchRequest extends StObject {
   
+  /** Context attributes for the request which will be used to adjust ranking of search results. The maximum number of elements is 10. */
+  var contextAttributes: js.UndefOr[js.Array[ContextAttribute]] = js.undefined
+  
   /** The sources to use for querying. If not specified, all data sources from the current search application are used. */
   var dataSourceRestrictions: js.UndefOr[js.Array[DataSourceRestriction]] = js.undefined
   
@@ -17,7 +20,7 @@ trait SearchRequest extends StObject {
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
-  /** The raw query string. See supported search operators in the [Cloud search Cheat Sheet](https://support.google.com/a/users/answer/9299929) */
+  /** The raw query string. See supported search operators in the [Narrow your search with operators](https://support.google.com/cloudsearch/answer/6172299) */
   var query: js.UndefOr[String] = js.undefined
   
   /** Options to interpret the user query. */
@@ -41,17 +44,23 @@ object SearchRequest {
   
   extension [Self <: SearchRequest](x: Self) {
     
+    inline def setContextAttributes(value: js.Array[ContextAttribute]): Self = StObject.set(x, "contextAttributes", value.asInstanceOf[js.Any])
+    
+    inline def setContextAttributesUndefined: Self = StObject.set(x, "contextAttributes", js.undefined)
+    
+    inline def setContextAttributesVarargs(value: ContextAttribute*): Self = StObject.set(x, "contextAttributes", js.Array(value*))
+    
     inline def setDataSourceRestrictions(value: js.Array[DataSourceRestriction]): Self = StObject.set(x, "dataSourceRestrictions", value.asInstanceOf[js.Any])
     
     inline def setDataSourceRestrictionsUndefined: Self = StObject.set(x, "dataSourceRestrictions", js.undefined)
     
-    inline def setDataSourceRestrictionsVarargs(value: DataSourceRestriction*): Self = StObject.set(x, "dataSourceRestrictions", js.Array(value :_*))
+    inline def setDataSourceRestrictionsVarargs(value: DataSourceRestriction*): Self = StObject.set(x, "dataSourceRestrictions", js.Array(value*))
     
     inline def setFacetOptions(value: js.Array[FacetOptions]): Self = StObject.set(x, "facetOptions", value.asInstanceOf[js.Any])
     
     inline def setFacetOptionsUndefined: Self = StObject.set(x, "facetOptions", js.undefined)
     
-    inline def setFacetOptionsVarargs(value: FacetOptions*): Self = StObject.set(x, "facetOptions", js.Array(value :_*))
+    inline def setFacetOptionsVarargs(value: FacetOptions*): Self = StObject.set(x, "facetOptions", js.Array(value*))
     
     inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     

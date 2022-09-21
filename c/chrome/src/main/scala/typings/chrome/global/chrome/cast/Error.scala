@@ -6,14 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("chrome.cast.Error")
 @js.native
-class Error protected ()
+open class Error protected ()
   extends StObject
      with typings.chrome.chrome.cast.Error {
   /**
-    * @param {!chrome.cast.ErrorCode} code
-    * @param {string=} opt_description
-    * @param {Object=} opt_details
-    * @constructor
+    * @param code
+    * @param opt_description
+    * @param opt_details
     * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.Error
     */
   def this(code: typings.chrome.chrome.cast.ErrorCode) = this()

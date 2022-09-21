@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("forest-express-sequelize", "RecordCreator")
 @js.native
-class RecordCreator protected () extends AbstractRecordTool {
+open class RecordCreator protected () extends AbstractRecordTool {
   def this(model: js.Object) = this()
   
   def create(record: js.Object): js.Promise[js.Object] = js.native

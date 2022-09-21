@@ -7,13 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("AuthenticatorAttestationResponse")
 @js.native
-class AuthenticatorAttestationResponse ()
+/* standard dom */
+open class AuthenticatorAttestationResponse ()
   extends StObject
      with typings.std.AuthenticatorAttestationResponse {
   
+  /* standard dom */
   /* CompleteClass */
-  override val attestationObject: typings.std.ArrayBuffer = js.native
+  override val attestationObject: js.typedarray.ArrayBuffer = js.native
   
+  /* standard dom */
   /* CompleteClass */
-  override val clientDataJSON: typings.std.ArrayBuffer = js.native
+  override val clientDataJSON: js.typedarray.ArrayBuffer = js.native
 }

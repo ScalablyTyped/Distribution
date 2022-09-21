@@ -11,8 +11,16 @@ object filesizeStrings {
   inline def array: array = "array".asInstanceOf[array]
   
   @js.native
+  sealed trait ceil extends StObject
+  inline def ceil: ceil = "ceil".asInstanceOf[ceil]
+  
+  @js.native
   sealed trait exponent extends StObject
   inline def exponent: exponent = "exponent".asInstanceOf[exponent]
+  
+  @js.native
+  sealed trait floor extends StObject
+  inline def floor: floor = "floor".asInstanceOf[floor]
   
   @js.native
   sealed trait iec extends StObject
@@ -25,6 +33,10 @@ object filesizeStrings {
   @js.native
   sealed trait `object` extends StObject
   inline def `object`: `object` = "object".asInstanceOf[`object`]
+  
+  @js.native
+  sealed trait round extends StObject
+  inline def round: round = "round".asInstanceOf[round]
   
   @js.native
   sealed trait string extends StObject

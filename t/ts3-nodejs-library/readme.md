@@ -1,7 +1,7 @@
 
 # Scala.js typings for ts3-nodejs-library
 
-Typings are for version 3.2.0
+Typings are for version 3.4.1
 
 ## Library description:
 TeamSpeak Server Query API
@@ -10,10 +10,10 @@ TeamSpeak Server Query API
 | ------------------ | :-------------: |
 | Full name          | ts3-nodejs-library |
 | Keywords           | teamspeak, teamspeak3, ts, ts3, query, serverquery |
-| # releases         | 38 |
-| # dependents       | 1 |
-| # downloads        | 15084 |
-| # stars            | 0 |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 772.6666666666666 |
+| # stars            | 131.0 |
 
 ## Links
 - [Homepage](https://github.com/Multivit4min/TS3-NodeJS-Library)

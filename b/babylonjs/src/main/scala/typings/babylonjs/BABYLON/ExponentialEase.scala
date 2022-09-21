@@ -14,7 +14,7 @@ trait ExponentialEase
 object ExponentialEase {
   
   inline def apply(
-    _easingMode: js.Any,
+    _easingMode: Any,
     ease: Double => Double,
     easeInCore: Double => Double,
     exponent: Double,

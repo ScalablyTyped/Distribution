@@ -4,14 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response for getting breakpoint information.
-  */
 trait SchemaGetBreakpointResponse extends StObject {
   
   /**
-    * Complete breakpoint state. The fields `id` and `location` are guaranteed
-    * to be set.
+    * Complete breakpoint state. The fields `id` and `location` are guaranteed to be set.
     */
   var breakpoint: js.UndefOr[SchemaBreakpoint] = js.undefined
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientDashboardItemDataDimension")
 @js.native
-class ASPxClientDashboardItemDataDimension ()
+open class ASPxClientDashboardItemDataDimension ()
   extends StObject
      with typings.devexpressWeb.ASPxClientDashboardItemDataDimension {
   
@@ -30,7 +30,7 @@ class ASPxClientDashboardItemDataDimension ()
     * @param value A value to be formatted.
     */
   /* CompleteClass */
-  override def Format(value: js.Any): String = js.native
+  override def Format(value: Any): String = js.native
   
   /**
     * Gets the dimension identifier.

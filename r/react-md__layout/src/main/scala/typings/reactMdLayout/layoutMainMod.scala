@@ -5,8 +5,8 @@ import typings.react.mod.HTMLAttributes
 import typings.react.mod.RefAttributes
 import typings.reactMdLayout.reactMdLayoutStrings.div
 import typings.reactMdLayout.reactMdLayoutStrings.main
+import typings.reactMdTransition.typesMod.CSSTransitionClassNames
 import typings.reactMdTransition.typesMod.TransitionTimeout
-import typings.reactTransitionGroup.csstransitionMod.CSSTransitionClassNames
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -38,9 +38,27 @@ object layoutMainMod {
     var component: js.UndefOr[div | main] = js.undefined
     
     /**
-      * Boolean if the main element should be ofset by the `AppBar`'s height
+      * Boolean if the main element should be offset by the `AppBar`'s height
       */
     var headerOffset: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Boolean of there is a mini nav visible within the layout. This makes sure
+      * that the content if offset by the current nav's width when needed.
+      *
+      * @remarks \@since 2.7.0
+      */
+    var mini: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Boolean if the mini layout is currently hidden to help determine if
+      * specific mini styles should be applied when the {@link LayoutContext.fixedAppBar}
+      * config is `false`.
+      *
+      * @internal
+      * @remarks \@since 2.8.3
+      */
+    var miniHidden: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the main element should be offset by the current navigation
@@ -75,6 +93,14 @@ object layoutMainMod {
       inline def setHeaderOffset(value: Boolean): Self = StObject.set(x, "headerOffset", value.asInstanceOf[js.Any])
       
       inline def setHeaderOffsetUndefined: Self = StObject.set(x, "headerOffset", js.undefined)
+      
+      inline def setMini(value: Boolean): Self = StObject.set(x, "mini", value.asInstanceOf[js.Any])
+      
+      inline def setMiniHidden(value: Boolean): Self = StObject.set(x, "miniHidden", value.asInstanceOf[js.Any])
+      
+      inline def setMiniHiddenUndefined: Self = StObject.set(x, "miniHidden", js.undefined)
+      
+      inline def setMiniUndefined: Self = StObject.set(x, "mini", js.undefined)
       
       inline def setNavOffset(value: Boolean): Self = StObject.set(x, "navOffset", value.asInstanceOf[js.Any])
       

@@ -87,7 +87,7 @@ object stateInterfaceMod {
       
       inline def setStatesUndefined: Self = StObject.set(x, "states", js.undefined)
       
-      inline def setStatesVarargs(value: StateDeclaration*): Self = StObject.set(x, "states", js.Array(value :_*))
+      inline def setStatesVarargs(value: StateDeclaration*): Self = StObject.set(x, "states", js.Array(value*))
     }
   }
   
@@ -142,7 +142,7 @@ object stateInterfaceMod {
       * Care should be taken if you are using `hasOwnProperty` on the `data` object.
       * Properties from parent objects will return false for `hasOwnProperty`.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /**
       * Marks all the state's parameters as `dynamic`.
@@ -380,7 +380,7 @@ object stateInterfaceMod {
       * }
       * ```
       */
-    var params: js.UndefOr[StringDictionary[ParamDeclaration | js.Any]] = js.undefined
+    var params: js.UndefOr[StringDictionary[ParamDeclaration | Any]] = js.undefined
     
     /**
       * The parent state
@@ -710,7 +710,7 @@ object stateInterfaceMod {
       
       inline def setAbstractUndefined: Self = StObject.set(x, "abstract", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -742,7 +742,7 @@ object stateInterfaceMod {
       
       inline def setOnRetainUndefined: Self = StObject.set(x, "onRetain", js.undefined)
       
-      inline def setParams(value: StringDictionary[ParamDeclaration | js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: StringDictionary[ParamDeclaration | Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
@@ -770,7 +770,7 @@ object stateInterfaceMod {
       
       inline def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
       
-      inline def setResolveVarargs(value: ResolveTypes*): Self = StObject.set(x, "resolve", js.Array(value :_*))
+      inline def setResolveVarargs(value: ResolveTypes*): Self = StObject.set(x, "resolve", js.Array(value*))
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       

@@ -1,6 +1,5 @@
 package typings.heremaps.H.service
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +23,7 @@ trait RoutingService
   def calculateRoute(
     calculateRouteParams: ServiceParameters,
     onResult: js.Function1[/* result */ ServiceResult, Unit],
-    onError: js.Function1[/* error */ Error, Unit]
+    onError: js.Function1[/* error */ js.Error, Unit]
   ): Unit = js.native
 }
 object RoutingService {

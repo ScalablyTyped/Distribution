@@ -6,23 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ApplicationInfo extends StObject {
   
-  /**
-    * Optional but at least one of uris, emails or instruction must be specified. Use this field to specify email address(es) to which resumes or applications can be sent. The maximum
-    * number of allowed characters for each entry is 255.
-    */
+  /** Use this field to specify email address(es) to which resumes or applications can be sent. The maximum number of allowed characters for each entry is 255. */
   var emails: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * Optional but at least one of uris, emails or instruction must be specified. Use this field to provide instructions, such as "Mail your application to ...", that a candidate can
-    * follow to apply for the job. This field accepts and sanitizes HTML input, and also accepts bold, italic, ordered list, and unordered list markup tags. The maximum number of allowed
-    * characters is 3,000.
+    * Use this field to provide instructions, such as "Mail your application to ...", that a candidate can follow to apply for the job. This field accepts and sanitizes HTML input, and
+    * also accepts bold, italic, ordered list, and unordered list markup tags. The maximum number of allowed characters is 3,000.
     */
   var instruction: js.UndefOr[String] = js.undefined
   
-  /**
-    * Optional but at least one of uris, emails or instruction must be specified. Use this URI field to direct an applicant to a website, for example to link to an online application
-    * form. The maximum number of allowed characters for each entry is 2,000.
-    */
+  /** Use this URI field to direct an applicant to a website, for example to link to an online application form. The maximum number of allowed characters for each entry is 2,000. */
   var uris: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ApplicationInfo {
@@ -38,7 +31,7 @@ object ApplicationInfo {
     
     inline def setEmailsUndefined: Self = StObject.set(x, "emails", js.undefined)
     
-    inline def setEmailsVarargs(value: String*): Self = StObject.set(x, "emails", js.Array(value :_*))
+    inline def setEmailsVarargs(value: String*): Self = StObject.set(x, "emails", js.Array(value*))
     
     inline def setInstruction(value: String): Self = StObject.set(x, "instruction", value.asInstanceOf[js.Any])
     
@@ -48,6 +41,6 @@ object ApplicationInfo {
     
     inline def setUrisUndefined: Self = StObject.set(x, "uris", js.undefined)
     
-    inline def setUrisVarargs(value: String*): Self = StObject.set(x, "uris", js.Array(value :_*))
+    inline def setUrisVarargs(value: String*): Self = StObject.set(x, "uris", js.Array(value*))
   }
 }

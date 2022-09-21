@@ -24,6 +24,6 @@ object SchemaGetPeopleResponse {
     
     inline def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
     
-    inline def setResponsesVarargs(value: SchemaPersonResponse*): Self = StObject.set(x, "responses", js.Array(value :_*))
+    inline def setResponsesVarargs(value: SchemaPersonResponse*): Self = StObject.set(x, "responses", js.Array(value*))
   }
 }

@@ -14,12 +14,12 @@ trait PublicKey extends StObject {
   /**
     * The ending time of validity of the public key.
     */
-  var ValidityEndTime: js.UndefOr[Date] = js.undefined
+  var ValidityEndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The starting time of validity of the public key.
     */
-  var ValidityStartTime: js.UndefOr[Date] = js.undefined
+  var ValidityStartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The DER encoded public key value in PKCS#1 format.
@@ -39,11 +39,11 @@ object PublicKey {
     
     inline def setFingerprintUndefined: Self = StObject.set(x, "Fingerprint", js.undefined)
     
-    inline def setValidityEndTime(value: Date): Self = StObject.set(x, "ValidityEndTime", value.asInstanceOf[js.Any])
+    inline def setValidityEndTime(value: js.Date): Self = StObject.set(x, "ValidityEndTime", value.asInstanceOf[js.Any])
     
     inline def setValidityEndTimeUndefined: Self = StObject.set(x, "ValidityEndTime", js.undefined)
     
-    inline def setValidityStartTime(value: Date): Self = StObject.set(x, "ValidityStartTime", value.asInstanceOf[js.Any])
+    inline def setValidityStartTime(value: js.Date): Self = StObject.set(x, "ValidityStartTime", value.asInstanceOf[js.Any])
     
     inline def setValidityStartTimeUndefined: Self = StObject.set(x, "ValidityStartTime", js.undefined)
     

@@ -22,9 +22,10 @@ object WebGL2ShaderProcessor {
   inline def apply(
     attributeProcessor: String => String,
     postProcessor: (String, js.Array[String], Boolean) => String,
+    shaderLanguage: ShaderLanguage,
     varyingProcessor: (String, Boolean) => String
   ): WebGL2ShaderProcessor = {
-    val __obj = js.Dynamic.literal(attributeProcessor = js.Any.fromFunction1(attributeProcessor), postProcessor = js.Any.fromFunction3(postProcessor), varyingProcessor = js.Any.fromFunction2(varyingProcessor))
+    val __obj = js.Dynamic.literal(attributeProcessor = js.Any.fromFunction1(attributeProcessor), postProcessor = js.Any.fromFunction3(postProcessor), shaderLanguage = shaderLanguage.asInstanceOf[js.Any], varyingProcessor = js.Any.fromFunction2(varyingProcessor))
     __obj.asInstanceOf[WebGL2ShaderProcessor]
   }
   

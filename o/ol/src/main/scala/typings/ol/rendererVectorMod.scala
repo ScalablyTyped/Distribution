@@ -19,14 +19,23 @@ object rendererVectorMod {
   
   inline def getTolerance(resolution: Double, pixelRatio: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getTolerance")(resolution.asInstanceOf[js.Any], pixelRatio.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def renderFeature[T](
+  inline def renderFeature(
     replayGroup: default,
     feature: FeatureLike,
     style: typings.ol.styleStyleMod.default,
     squaredTolerance: Double,
     listener: js.Function1[/* p0 */ typings.ol.eventMod.default, Unit]
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFeature")(replayGroup.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], style.asInstanceOf[js.Any], squaredTolerance.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def renderFeature[T](
+  inline def renderFeature(
+    replayGroup: default,
+    feature: FeatureLike,
+    style: typings.ol.styleStyleMod.default,
+    squaredTolerance: Double,
+    listener: js.Function1[/* p0 */ typings.ol.eventMod.default, Unit],
+    opt_transform: Unit,
+    opt_declutterBuilderGroup: default
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFeature")(replayGroup.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], style.asInstanceOf[js.Any], squaredTolerance.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], opt_transform.asInstanceOf[js.Any], opt_declutterBuilderGroup.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def renderFeature(
     replayGroup: default,
     feature: FeatureLike,
     style: typings.ol.styleStyleMod.default,
@@ -34,4 +43,20 @@ object rendererVectorMod {
     listener: js.Function1[/* p0 */ typings.ol.eventMod.default, Unit],
     opt_transform: TransformFunction
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFeature")(replayGroup.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], style.asInstanceOf[js.Any], squaredTolerance.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], opt_transform.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def renderFeature(
+    replayGroup: default,
+    feature: FeatureLike,
+    style: typings.ol.styleStyleMod.default,
+    squaredTolerance: Double,
+    listener: js.Function1[/* p0 */ typings.ol.eventMod.default, Unit],
+    opt_transform: TransformFunction,
+    opt_declutterBuilderGroup: default
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFeature")(replayGroup.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], style.asInstanceOf[js.Any], squaredTolerance.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], opt_transform.asInstanceOf[js.Any], opt_declutterBuilderGroup.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  type FeatureCallback[T] = js.Function3[
+    /* p0 */ FeatureLike, 
+    /* p1 */ typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default], 
+    /* p2 */ typings.ol.simpleGeometryMod.default, 
+    T
+  ]
 }

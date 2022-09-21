@@ -10,10 +10,10 @@ A basic cache for React applications
 | ------------------ | :-------------: |
 | Full name          | react-cache |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 6 |
-| # downloads        | 136085 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 13634.666666666666 |
+| # stars            | 190410.0 |
 
 ## Links
 - [Homepage](https://github.com/facebook/react#readme)

@@ -8,5 +8,5 @@ object subnetIdsMod {
   
   @JSImport("@aws-sdk/client-lambda-node/model/_SubnetIds", "_SubnetIds")
   @js.native
-  val SubnetIds: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val SubnetIds: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

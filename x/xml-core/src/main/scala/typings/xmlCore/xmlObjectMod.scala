@@ -16,7 +16,7 @@ object xmlObjectMod {
   
   @JSImport("xml-core/dist/types/xml_object", "XmlObject")
   @js.native
-  class XmlObject ()
+  open class XmlObject ()
     extends StObject
        with IXmlSerializable {
     def this(properties: js.Object) = this()
@@ -156,13 +156,13 @@ object xmlObjectMod {
     
     @JSImport("xml-core/dist/types/xml_object", "XmlObject.attributes")
     @js.native
-    def attributes: AssocArray[XmlAttributeType[js.Any]] = js.native
-    inline def attributes_=(x: AssocArray[XmlAttributeType[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("attributes")(x.asInstanceOf[js.Any])
+    def attributes: AssocArray[XmlAttributeType[Any]] = js.native
+    inline def attributes_=(x: AssocArray[XmlAttributeType[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("attributes")(x.asInstanceOf[js.Any])
     
     @JSImport("xml-core/dist/types/xml_object", "XmlObject.elements")
     @js.native
-    def elements: AssocArray[XmlChildElementType[js.Any]] = js.native
-    inline def elements_=(x: AssocArray[XmlChildElementType[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("elements")(x.asInstanceOf[js.Any])
+    def elements: AssocArray[XmlChildElementType[Any]] = js.native
+    inline def elements_=(x: AssocArray[XmlChildElementType[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("elements")(x.asInstanceOf[js.Any])
     
     @JSImport("xml-core/dist/types/xml_object", "XmlObject.localName")
     @js.native

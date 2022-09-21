@@ -47,7 +47,7 @@ object ServoGeneralOption {
     
     inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
-    inline def setRangeVarargs(value: Double*): Self = StObject.set(x, "range", js.Array(value :_*))
+    inline def setRangeVarargs(value: Double*): Self = StObject.set(x, "range", js.Array(value*))
     
     inline def setStartAt(value: Double): Self = StObject.set(x, "startAt", value.asInstanceOf[js.Any])
     

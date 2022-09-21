@@ -14,6 +14,12 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def applyToLink(link: HTMLAnchorElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("applyToLink")(link.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def applyToLink(link: HTMLAnchorElement, currentUrl: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("applyToLink")(link.asInstanceOf[js.Any], currentUrl.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  /**
+  	Shortens a GitHub URL in a DOM anchor.
+  	@param anchor An HTMLAnchorElement
+  	@param url The GitHub URL to shorten.
+  	@example https://github.com/nodejs/node/tree/v0.12/doc becomes nodejs/node@<code>v0.12</code>
+  	*/
+  inline def applyToLink(anchor: HTMLAnchorElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("applyToLink")(anchor.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def applyToLink(anchor: HTMLAnchorElement, url: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyToLink")(anchor.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

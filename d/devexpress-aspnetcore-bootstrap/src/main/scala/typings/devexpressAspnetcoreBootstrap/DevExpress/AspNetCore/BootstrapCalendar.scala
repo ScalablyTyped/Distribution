@@ -9,7 +9,6 @@ import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapString
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.keyUp
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.selectionChanged
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.visibleMonthChanged
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,21 +20,21 @@ trait BootstrapCalendar
   
   def clearSelection(): Unit = js.native
   
-  def deselectDate(date: Date): Unit = js.native
+  def deselectDate(date: js.Date): Unit = js.native
   
-  def deselectRange(start: Date, end: Date): Unit = js.native
+  def deselectRange(start: js.Date, end: js.Date): Unit = js.native
   
-  def getMaxDate(): Date = js.native
+  def getMaxDate(): js.Date = js.native
   
-  def getMinDate(): Date = js.native
+  def getMinDate(): js.Date = js.native
   
-  def getSelectedDate(): Date = js.native
+  def getSelectedDate(): js.Date = js.native
   
-  def getSelectedDates(): js.Array[Date] = js.native
+  def getSelectedDates(): js.Array[js.Date] = js.native
   
-  def getVisibleDate(): Date = js.native
+  def getVisibleDate(): js.Date = js.native
   
-  def isDateSelected(date: Date): Boolean = js.native
+  def isDateSelected(date: js.Date): Boolean = js.native
   
   @JSName("off")
   def off_beginCallback(eventName: beginCallback): this.type = js.native
@@ -205,15 +204,15 @@ trait BootstrapCalendar
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[ProcessingModeEventArgs], Unit]
   ): this.type = js.native
   
-  def selectDate(date: Date): Unit = js.native
+  def selectDate(date: js.Date): Unit = js.native
   
-  def selectRange(start: Date, end: Date): Unit = js.native
+  def selectRange(start: js.Date, end: js.Date): Unit = js.native
   
-  def setMaxDate(date: Date): Unit = js.native
+  def setMaxDate(date: js.Date): Unit = js.native
   
-  def setMinDate(date: Date): Unit = js.native
+  def setMinDate(date: js.Date): Unit = js.native
   
-  def setSelectedDate(date: Date): Unit = js.native
+  def setSelectedDate(date: js.Date): Unit = js.native
   
-  def setVisibleDate(date: Date): Unit = js.native
+  def setVisibleDate(date: js.Date): Unit = js.native
 }

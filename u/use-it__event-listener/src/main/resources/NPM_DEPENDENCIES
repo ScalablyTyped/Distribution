@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@use-it/event-listener" : "0.1.6"
+      "@use-it/event-listener" : "0.1.7"
     }
   ],
   "test-dependencies" : [
     {
-      "@use-it/event-listener" : "0.1.6"
+      "@use-it/event-listener" : "0.1.7"
     }
   ],
   "compile-devDependencies" : [

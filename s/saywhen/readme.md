@@ -11,9 +11,9 @@ Better spy fake calls for Jasmine
 | Full name          | saywhen |
 | Keywords           | jasmine, spy, fake, mock |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 5172 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 643.6666666666666 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/pushtechnology/saywhen)

@@ -4,33 +4,19 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/drive/v2", "drive_v2.Resource$Revisions")
 @js.native
-class ResourceRevisions protected () extends StObject {
+open class ResourceRevisions protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native
   
-  /**
-    * drive.revisions.delete
-    * @desc Permanently deletes a file version. You can only delete revisions
-    * for files with binary content, like images or videos. Revisions for other
-    * files, like Google Docs or Sheets, and the last remaining file version
-    * can't be deleted.
-    * @alias drive.revisions.delete
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.fileId The ID of the file.
-    * @param {string} params.revisionId The ID of the revision.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
@@ -38,8 +24,8 @@ class ResourceRevisions protected () extends StObject {
   def delete(params: ParamsResourceRevisionsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
     params: ParamsResourceRevisionsDelete,
-    options: BodyResponseCallback[Unit],
-    callback: BodyResponseCallback[Unit]
+    options: BodyResponseCallback[Readable | Unit],
+    callback: BodyResponseCallback[Readable | Unit]
   ): Unit = js.native
   def delete(params: ParamsResourceRevisionsDelete, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(
@@ -47,20 +33,64 @@ class ResourceRevisions protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
-  
   /**
-    * drive.revisions.get
-    * @desc Gets a specific revision.
-    * @alias drive.revisions.get
-    * @memberOf! ()
+    * Permanently deletes a file version. You can only delete revisions for files with binary content, like images or videos. Revisions for other files, like Google Docs or Sheets, and the last remaining file version can't be deleted.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/drive.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.fileId The ID of the file.
-    * @param {string} params.revisionId The ID of the revision.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const drive = google.drive('v2');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/drive',
+    *       'https://www.googleapis.com/auth/drive.appdata',
+    *       'https://www.googleapis.com/auth/drive.file',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await drive.revisions.delete({
+    *     // The ID of the file.
+    *     fileId: 'placeholder-value',
+    *     // The ID of the revision.
+    *     revisionId: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def delete(params: ParamsResourceRevisionsDelete, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def delete(
+    params: ParamsResourceRevisionsDelete,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def get(): GaxiosPromise[SchemaRevision] = js.native
   def get(callback: BodyResponseCallback[SchemaRevision]): Unit = js.native
   def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRevision] = js.native
@@ -68,8 +98,8 @@ class ResourceRevisions protected () extends StObject {
   def get(params: ParamsResourceRevisionsGet, callback: BodyResponseCallback[SchemaRevision]): Unit = js.native
   def get(
     params: ParamsResourceRevisionsGet,
-    options: BodyResponseCallback[SchemaRevision],
-    callback: BodyResponseCallback[SchemaRevision]
+    options: BodyResponseCallback[Readable | SchemaRevision],
+    callback: BodyResponseCallback[Readable | SchemaRevision]
   ): Unit = js.native
   def get(params: ParamsResourceRevisionsGet, options: MethodOptions): GaxiosPromise[SchemaRevision] = js.native
   def get(
@@ -77,21 +107,90 @@ class ResourceRevisions protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRevision]
   ): Unit = js.native
-  
   /**
-    * drive.revisions.list
-    * @desc Lists a file's revisions.
-    * @alias drive.revisions.list
-    * @memberOf! ()
+    * Gets a specific revision.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/drive.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.fileId The ID of the file.
-    * @param {integer=} params.maxResults Maximum number of revisions to return.
-    * @param {string=} params.pageToken Page token for revisions. To get the next page of results, set this parameter to the value of "nextPageToken" from the previous response.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const drive = google.drive('v2');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/drive',
+    *       'https://www.googleapis.com/auth/drive.appdata',
+    *       'https://www.googleapis.com/auth/drive.file',
+    *       'https://www.googleapis.com/auth/drive.metadata',
+    *       'https://www.googleapis.com/auth/drive.metadata.readonly',
+    *       'https://www.googleapis.com/auth/drive.photos.readonly',
+    *       'https://www.googleapis.com/auth/drive.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await drive.revisions.get({
+    *     // The ID of the file.
+    *     fileId: 'placeholder-value',
+    *     // The ID of the revision.
+    *     revisionId: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "downloadUrl": "my_downloadUrl",
+    *   //   "etag": "my_etag",
+    *   //   "exportLinks": {},
+    *   //   "fileSize": "my_fileSize",
+    *   //   "id": "my_id",
+    *   //   "kind": "my_kind",
+    *   //   "lastModifyingUser": {},
+    *   //   "lastModifyingUserName": "my_lastModifyingUserName",
+    *   //   "md5Checksum": "my_md5Checksum",
+    *   //   "mimeType": "my_mimeType",
+    *   //   "modifiedDate": "my_modifiedDate",
+    *   //   "originalFilename": "my_originalFilename",
+    *   //   "pinned": false,
+    *   //   "publishAuto": false,
+    *   //   "published": false,
+    *   //   "publishedLink": "my_publishedLink",
+    *   //   "publishedOutsideDomain": false,
+    *   //   "selfLink": "my_selfLink"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def get(params: ParamsResourceRevisionsGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def get(
+    params: ParamsResourceRevisionsGet,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def list(): GaxiosPromise[SchemaRevisionList] = js.native
   def list(callback: BodyResponseCallback[SchemaRevisionList]): Unit = js.native
   def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRevisionList] = js.native
@@ -99,8 +198,8 @@ class ResourceRevisions protected () extends StObject {
   def list(params: ParamsResourceRevisionsList, callback: BodyResponseCallback[SchemaRevisionList]): Unit = js.native
   def list(
     params: ParamsResourceRevisionsList,
-    options: BodyResponseCallback[SchemaRevisionList],
-    callback: BodyResponseCallback[SchemaRevisionList]
+    options: BodyResponseCallback[Readable | SchemaRevisionList],
+    callback: BodyResponseCallback[Readable | SchemaRevisionList]
   ): Unit = js.native
   def list(params: ParamsResourceRevisionsList, options: MethodOptions): GaxiosPromise[SchemaRevisionList] = js.native
   def list(
@@ -108,21 +207,79 @@ class ResourceRevisions protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRevisionList]
   ): Unit = js.native
-  
   /**
-    * drive.revisions.patch
-    * @desc Updates a revision. This method supports patch semantics.
-    * @alias drive.revisions.patch
-    * @memberOf! ()
+    * Lists a file's revisions.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/drive.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.fileId The ID for the file.
-    * @param {string} params.revisionId The ID for the revision.
-    * @param {().Revision} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const drive = google.drive('v2');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/drive',
+    *       'https://www.googleapis.com/auth/drive.appdata',
+    *       'https://www.googleapis.com/auth/drive.file',
+    *       'https://www.googleapis.com/auth/drive.metadata',
+    *       'https://www.googleapis.com/auth/drive.metadata.readonly',
+    *       'https://www.googleapis.com/auth/drive.photos.readonly',
+    *       'https://www.googleapis.com/auth/drive.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await drive.revisions.list({
+    *     // The ID of the file.
+    *     fileId: 'placeholder-value',
+    *     // Maximum number of revisions to return.
+    *     maxResults: 'placeholder-value',
+    *     // Page token for revisions. To get the next page of results, set this parameter to the value of "nextPageToken" from the previous response.
+    *     pageToken: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "etag": "my_etag",
+    *   //   "items": [],
+    *   //   "kind": "my_kind",
+    *   //   "nextPageToken": "my_nextPageToken",
+    *   //   "selfLink": "my_selfLink"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def list(params: ParamsResourceRevisionsList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def list(
+    params: ParamsResourceRevisionsList,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def patch(): GaxiosPromise[SchemaRevision] = js.native
   def patch(callback: BodyResponseCallback[SchemaRevision]): Unit = js.native
   def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRevision] = js.native
@@ -130,8 +287,8 @@ class ResourceRevisions protected () extends StObject {
   def patch(params: ParamsResourceRevisionsPatch, callback: BodyResponseCallback[SchemaRevision]): Unit = js.native
   def patch(
     params: ParamsResourceRevisionsPatch,
-    options: BodyResponseCallback[SchemaRevision],
-    callback: BodyResponseCallback[SchemaRevision]
+    options: BodyResponseCallback[Readable | SchemaRevision],
+    callback: BodyResponseCallback[Readable | SchemaRevision]
   ): Unit = js.native
   def patch(params: ParamsResourceRevisionsPatch, options: MethodOptions): GaxiosPromise[SchemaRevision] = js.native
   def patch(
@@ -139,21 +296,111 @@ class ResourceRevisions protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRevision]
   ): Unit = js.native
-  
   /**
-    * drive.revisions.update
-    * @desc Updates a revision.
-    * @alias drive.revisions.update
-    * @memberOf! ()
+    * Updates a revision.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/drive.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.fileId The ID for the file.
-    * @param {string} params.revisionId The ID for the revision.
-    * @param {().Revision} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const drive = google.drive('v2');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/drive',
+    *       'https://www.googleapis.com/auth/drive.appdata',
+    *       'https://www.googleapis.com/auth/drive.file',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await drive.revisions.patch({
+    *     // The ID for the file.
+    *     fileId: 'placeholder-value',
+    *     // The ID for the revision.
+    *     revisionId: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "downloadUrl": "my_downloadUrl",
+    *       //   "etag": "my_etag",
+    *       //   "exportLinks": {},
+    *       //   "fileSize": "my_fileSize",
+    *       //   "id": "my_id",
+    *       //   "kind": "my_kind",
+    *       //   "lastModifyingUser": {},
+    *       //   "lastModifyingUserName": "my_lastModifyingUserName",
+    *       //   "md5Checksum": "my_md5Checksum",
+    *       //   "mimeType": "my_mimeType",
+    *       //   "modifiedDate": "my_modifiedDate",
+    *       //   "originalFilename": "my_originalFilename",
+    *       //   "pinned": false,
+    *       //   "publishAuto": false,
+    *       //   "published": false,
+    *       //   "publishedLink": "my_publishedLink",
+    *       //   "publishedOutsideDomain": false,
+    *       //   "selfLink": "my_selfLink"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "downloadUrl": "my_downloadUrl",
+    *   //   "etag": "my_etag",
+    *   //   "exportLinks": {},
+    *   //   "fileSize": "my_fileSize",
+    *   //   "id": "my_id",
+    *   //   "kind": "my_kind",
+    *   //   "lastModifyingUser": {},
+    *   //   "lastModifyingUserName": "my_lastModifyingUserName",
+    *   //   "md5Checksum": "my_md5Checksum",
+    *   //   "mimeType": "my_mimeType",
+    *   //   "modifiedDate": "my_modifiedDate",
+    *   //   "originalFilename": "my_originalFilename",
+    *   //   "pinned": false,
+    *   //   "publishAuto": false,
+    *   //   "published": false,
+    *   //   "publishedLink": "my_publishedLink",
+    *   //   "publishedOutsideDomain": false,
+    *   //   "selfLink": "my_selfLink"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def patch(params: ParamsResourceRevisionsPatch, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def patch(
+    params: ParamsResourceRevisionsPatch,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def update(): GaxiosPromise[SchemaRevision] = js.native
   def update(callback: BodyResponseCallback[SchemaRevision]): Unit = js.native
   def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRevision] = js.native
@@ -161,13 +408,117 @@ class ResourceRevisions protected () extends StObject {
   def update(params: ParamsResourceRevisionsUpdate, callback: BodyResponseCallback[SchemaRevision]): Unit = js.native
   def update(
     params: ParamsResourceRevisionsUpdate,
-    options: BodyResponseCallback[SchemaRevision],
-    callback: BodyResponseCallback[SchemaRevision]
+    options: BodyResponseCallback[Readable | SchemaRevision],
+    callback: BodyResponseCallback[Readable | SchemaRevision]
   ): Unit = js.native
   def update(params: ParamsResourceRevisionsUpdate, options: MethodOptions): GaxiosPromise[SchemaRevision] = js.native
   def update(
     params: ParamsResourceRevisionsUpdate,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaRevision]
+  ): Unit = js.native
+  /**
+    * Updates a revision.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/drive.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const drive = google.drive('v2');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/drive',
+    *       'https://www.googleapis.com/auth/drive.appdata',
+    *       'https://www.googleapis.com/auth/drive.file',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await drive.revisions.update({
+    *     // The ID for the file.
+    *     fileId: 'placeholder-value',
+    *     // The ID for the revision.
+    *     revisionId: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "downloadUrl": "my_downloadUrl",
+    *       //   "etag": "my_etag",
+    *       //   "exportLinks": {},
+    *       //   "fileSize": "my_fileSize",
+    *       //   "id": "my_id",
+    *       //   "kind": "my_kind",
+    *       //   "lastModifyingUser": {},
+    *       //   "lastModifyingUserName": "my_lastModifyingUserName",
+    *       //   "md5Checksum": "my_md5Checksum",
+    *       //   "mimeType": "my_mimeType",
+    *       //   "modifiedDate": "my_modifiedDate",
+    *       //   "originalFilename": "my_originalFilename",
+    *       //   "pinned": false,
+    *       //   "publishAuto": false,
+    *       //   "published": false,
+    *       //   "publishedLink": "my_publishedLink",
+    *       //   "publishedOutsideDomain": false,
+    *       //   "selfLink": "my_selfLink"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "downloadUrl": "my_downloadUrl",
+    *   //   "etag": "my_etag",
+    *   //   "exportLinks": {},
+    *   //   "fileSize": "my_fileSize",
+    *   //   "id": "my_id",
+    *   //   "kind": "my_kind",
+    *   //   "lastModifyingUser": {},
+    *   //   "lastModifyingUserName": "my_lastModifyingUserName",
+    *   //   "md5Checksum": "my_md5Checksum",
+    *   //   "mimeType": "my_mimeType",
+    *   //   "modifiedDate": "my_modifiedDate",
+    *   //   "originalFilename": "my_originalFilename",
+    *   //   "pinned": false,
+    *   //   "publishAuto": false,
+    *   //   "published": false,
+    *   //   "publishedLink": "my_publishedLink",
+    *   //   "publishedOutsideDomain": false,
+    *   //   "selfLink": "my_selfLink"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def update(params: ParamsResourceRevisionsUpdate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def update(
+    params: ParamsResourceRevisionsUpdate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
 }

@@ -16,7 +16,7 @@ object cardHeaderMod {
   
   @JSImport("@ant-design/react-native/lib/card/CardHeader", JSImport.Default)
   @js.native
-  class default () extends CardHeader
+  open class default () extends CardHeader
   /* static members */
   object default {
     
@@ -31,8 +31,7 @@ object cardHeaderMod {
   }
   
   @js.native
-  trait CardHeader
-    extends Component[CardHeaderProps, js.Any, js.Any]
+  trait CardHeader extends Component[CardHeaderProps, Any, Any]
   
   trait CardHeaderProps
     extends StObject

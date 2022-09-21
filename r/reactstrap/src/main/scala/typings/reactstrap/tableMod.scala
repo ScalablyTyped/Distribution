@@ -5,7 +5,7 @@ import typings.react.mod.Component
 import typings.react.mod.ElementType
 import typings.react.mod.Ref
 import typings.react.mod.TableHTMLAttributes
-import typings.reactstrap.mod.CSSModule
+import typings.reactstrap.utilsMod.CSSModule
 import typings.std.HTMLTableElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,17 +13,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object tableMod {
   
-  @JSImport("reactstrap/lib/Table", JSImport.Default)
+  @JSImport("reactstrap/types/lib/Table", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[TableProps, js.Object, js.Any]
+  open class default ()
+    extends Component[TableProps, js.Object, Any]
   
-  type Table = Component[TableProps, js.Object, js.Any]
+  type Table = Component[TableProps, js.Object, Any]
   
   trait TableProps
     extends StObject
        with TableHTMLAttributes[HTMLTableElement]
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var bordered: js.UndefOr[Boolean] = js.undefined
     
@@ -41,13 +41,13 @@ object tableMod {
     
     var responsive: js.UndefOr[Boolean | String] = js.undefined
     
-    var responsiveTag: js.UndefOr[ElementType[js.Any]] = js.undefined
+    var responsiveTag: js.UndefOr[ElementType[Any]] = js.undefined
     
     var size: js.UndefOr[String] = js.undefined
     
     var striped: js.UndefOr[Boolean] = js.undefined
     
-    var tag: js.UndefOr[ElementType[js.Any]] = js.undefined
+    var tag: js.UndefOr[ElementType[Any]] = js.undefined
   }
   object TableProps {
     
@@ -92,7 +92,7 @@ object tableMod {
       
       inline def setResponsive(value: Boolean | String): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
       
-      inline def setResponsiveTag(value: ElementType[js.Any]): Self = StObject.set(x, "responsiveTag", value.asInstanceOf[js.Any])
+      inline def setResponsiveTag(value: ElementType[Any]): Self = StObject.set(x, "responsiveTag", value.asInstanceOf[js.Any])
       
       inline def setResponsiveTagUndefined: Self = StObject.set(x, "responsiveTag", js.undefined)
       
@@ -106,7 +106,7 @@ object tableMod {
       
       inline def setStripedUndefined: Self = StObject.set(x, "striped", js.undefined)
       
-      inline def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: ElementType[Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
       inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     }

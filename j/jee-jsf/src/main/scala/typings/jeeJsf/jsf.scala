@@ -40,7 +40,7 @@ object jsf {
         * client behavior event name from the request parameter
         */
       @JSName("javax.faces.behavior.event")
-      var javaxDotfacesDotbehaviorDotevent: js.UndefOr[js.Any] = js.undefined
+      var javaxDotfacesDotbehaviorDotevent: js.UndefOr[Any] = js.undefined
       
       /**
         * function to callback for error
@@ -57,7 +57,7 @@ object jsf {
       /**
         * object containing parameters to include in the request
         */
-      var params: js.UndefOr[js.Any] = js.undefined
+      var params: js.UndefOr[Any] = js.undefined
       
       /**
         * space seperated list of client identifiers
@@ -77,7 +77,7 @@ object jsf {
         
         inline def setExecuteUndefined: Self = StObject.set(x, "execute", js.undefined)
         
-        inline def setJavaxDotfacesDotbehaviorDotevent(value: js.Any): Self = StObject.set(x, "javax.faces.behavior.event", value.asInstanceOf[js.Any])
+        inline def setJavaxDotfacesDotbehaviorDotevent(value: Any): Self = StObject.set(x, "javax.faces.behavior.event", value.asInstanceOf[js.Any])
         
         inline def setJavaxDotfacesDotbehaviorDoteventUndefined: Self = StObject.set(x, "javax.faces.behavior.event", js.undefined)
         
@@ -89,7 +89,7 @@ object jsf {
         
         inline def setOneventUndefined: Self = StObject.set(x, "onevent", js.undefined)
         
-        inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+        inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
         
         inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
         

@@ -41,6 +41,6 @@ object SelectionChangedEventArgs {
     
     inline def setShapeNames(value: js.Array[String]): Self = StObject.set(x, "shapeNames", value.asInstanceOf[js.Any])
     
-    inline def setShapeNamesVarargs(value: String*): Self = StObject.set(x, "shapeNames", js.Array(value :_*))
+    inline def setShapeNamesVarargs(value: String*): Self = StObject.set(x, "shapeNames", js.Array(value*))
   }
 }

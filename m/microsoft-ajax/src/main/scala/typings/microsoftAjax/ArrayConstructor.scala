@@ -58,7 +58,7 @@ trait ArrayConstructor extends StObject {
   def forEach[T](
     array: js.Array[T],
     method: js.Function3[/* element */ T, /* index */ Double, /* array */ js.Array[T], Unit],
-    instance: js.Any
+    instance: Any
   ): Unit = js.native
   
   /**

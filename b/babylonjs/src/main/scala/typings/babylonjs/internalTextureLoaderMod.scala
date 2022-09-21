@@ -2,7 +2,6 @@ package typings.babylonjs
 
 import typings.babylonjs.internalTextureMod.InternalTexture
 import typings.babylonjs.typesMod.Nullable
-import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,23 +21,23 @@ object internalTextureLoaderMod {
     def canLoad(`extension`: String, mimeType: String): Boolean = js.native
     
     def loadCubeData(
-      data: js.Array[ArrayBufferView],
+      data: js.Array[js.typedarray.ArrayBufferView],
       texture: InternalTexture,
       createPolynomials: Boolean,
-      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
+      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[Any], Unit]],
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ]
     ): Unit = js.native
     def loadCubeData(
-      data: js.Array[ArrayBufferView],
+      data: js.Array[js.typedarray.ArrayBufferView],
       texture: InternalTexture,
       createPolynomials: Boolean,
-      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
+      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[Any], Unit]],
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ],
-      options: js.Any
+      options: Any
     ): Unit = js.native
     /**
       * Uploads the cube texture data to the WebGL texture. It has already been bound.
@@ -50,23 +49,23 @@ object internalTextureLoaderMod {
       * @param options options to be passed to the loader
       */
     def loadCubeData(
-      data: ArrayBufferView,
+      data: js.typedarray.ArrayBufferView,
       texture: InternalTexture,
       createPolynomials: Boolean,
-      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
+      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[Any], Unit]],
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ]
     ): Unit = js.native
     def loadCubeData(
-      data: ArrayBufferView,
+      data: js.typedarray.ArrayBufferView,
       texture: InternalTexture,
       createPolynomials: Boolean,
-      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[js.Any], Unit]],
+      onLoad: Nullable[js.Function1[/* data */ js.UndefOr[Any], Unit]],
       onError: Nullable[
-          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ],
-      options: js.Any
+      options: Any
     ): Unit = js.native
     
     /**
@@ -77,7 +76,7 @@ object internalTextureLoaderMod {
       * @param options options to be passed to the loader
       */
     def loadData(
-      data: ArrayBufferView,
+      data: js.typedarray.ArrayBufferView,
       texture: InternalTexture,
       callback: js.Function6[
           /* width */ Double, 
@@ -90,7 +89,7 @@ object internalTextureLoaderMod {
         ]
     ): Unit = js.native
     def loadData(
-      data: ArrayBufferView,
+      data: js.typedarray.ArrayBufferView,
       texture: InternalTexture,
       callback: js.Function6[
           /* width */ Double, 
@@ -101,11 +100,11 @@ object internalTextureLoaderMod {
           /* loadFailed */ js.UndefOr[Boolean], 
           Unit
         ],
-      options: js.Any
+      options: Any
     ): Unit = js.native
     
     /**
-      * Defines wether the loader supports cascade loading the different faces.
+      * Defines whether the loader supports cascade loading the different faces.
       */
     var supportCascades: Boolean = js.native
   }

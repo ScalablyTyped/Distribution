@@ -10,10 +10,10 @@ Clean a semver-compatible version.
 | ------------------ | :-------------: |
 | Full name          | clean-semver |
 | Keywords           | semver, clean, version |
-| # releases         | 6 |
-| # dependents       | 5 |
-| # downloads        | 25694 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 8298.333333333334 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/Richienb/clean-semver#readme)

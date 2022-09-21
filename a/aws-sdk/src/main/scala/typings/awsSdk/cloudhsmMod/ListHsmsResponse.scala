@@ -29,7 +29,7 @@ object ListHsmsResponse {
     
     inline def setHsmListUndefined: Self = StObject.set(x, "HsmList", js.undefined)
     
-    inline def setHsmListVarargs(value: HsmArn*): Self = StObject.set(x, "HsmList", js.Array(value :_*))
+    inline def setHsmListVarargs(value: HsmArn*): Self = StObject.set(x, "HsmList", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

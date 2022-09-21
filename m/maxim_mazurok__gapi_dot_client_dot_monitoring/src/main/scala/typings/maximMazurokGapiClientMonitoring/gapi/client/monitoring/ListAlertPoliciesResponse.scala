@@ -31,7 +31,7 @@ object ListAlertPoliciesResponse {
     
     inline def setAlertPoliciesUndefined: Self = StObject.set(x, "alertPolicies", js.undefined)
     
-    inline def setAlertPoliciesVarargs(value: AlertPolicy*): Self = StObject.set(x, "alertPolicies", js.Array(value :_*))
+    inline def setAlertPoliciesVarargs(value: AlertPolicy*): Self = StObject.set(x, "alertPolicies", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

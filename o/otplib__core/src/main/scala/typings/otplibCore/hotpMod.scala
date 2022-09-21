@@ -27,7 +27,7 @@ object hotpMod {
     *
     * @param defaultOptions used to override or add existing defaultOptions.
     */
-  class HOTP[T /* <: HOTPOptions_[String] */] () extends OTP[T] {
+  open class HOTP[T /* <: HOTPOptions_[String] */] () extends OTP[T] {
     def this(defaultOptions: Partial[T]) = this()
     
     /**
@@ -52,7 +52,7 @@ object hotpMod {
     def verify(opts: Counter): Boolean = js.native
   }
   
-  inline def hotpCheck[T /* <: HOTPOptions_[js.Any] */](token: String, secret: SecretKey, counter: Double, options: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hotpCheck")(token.asInstanceOf[js.Any], secret.asInstanceOf[js.Any], counter.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def hotpCheck[T /* <: HOTPOptions_[Any] */](token: String, secret: SecretKey, counter: Double, options: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hotpCheck")(token.asInstanceOf[js.Any], secret.asInstanceOf[js.Any], counter.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def hotpCounter(counter: Double): HexString = ^.asInstanceOf[js.Dynamic].applyDynamic("hotpCounter")(counter.asInstanceOf[js.Any]).asInstanceOf[HexString]
   
@@ -60,17 +60,17 @@ object hotpMod {
   @js.native
   val hotpCreateHmacKey: CreateHmacKey[HexString] = js.native
   
-  inline def hotpDefaultOptions[T /* <: HOTPOptions_[js.Any] */](): Partial[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("hotpDefaultOptions")().asInstanceOf[Partial[T]]
+  inline def hotpDefaultOptions[T /* <: HOTPOptions_[Any] */](): Partial[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("hotpDefaultOptions")().asInstanceOf[Partial[T]]
   
   inline def hotpDigestToToken(hexDigest: HexString, digits: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hotpDigestToToken")(hexDigest.asInstanceOf[js.Any], digits.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def hotpKeyuri[T /* <: HOTPOptions_[js.Any] */](accountName: String, issuer: String, secret: SecretKey, counter: Double, options: T): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hotpKeyuri")(accountName.asInstanceOf[js.Any], issuer.asInstanceOf[js.Any], secret.asInstanceOf[js.Any], counter.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def hotpKeyuri[T /* <: HOTPOptions_[Any] */](accountName: String, issuer: String, secret: SecretKey, counter: Double, options: T): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hotpKeyuri")(accountName.asInstanceOf[js.Any], issuer.asInstanceOf[js.Any], secret.asInstanceOf[js.Any], counter.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def hotpOptions[T /* <: HOTPOptions_[js.Any] */](opt: Partial[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("hotpOptions")(opt.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def hotpOptions[T /* <: HOTPOptions_[Any] */](opt: Partial[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("hotpOptions")(opt.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  inline def hotpOptionsValidator[T /* <: HOTPOptions_[js.Any] */](options: Partial[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hotpOptionsValidator")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def hotpOptionsValidator[T /* <: HOTPOptions_[Any] */](options: Partial[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hotpOptionsValidator")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def hotpToken[T /* <: HOTPOptions_[js.Any] */](secret: SecretKey, counter: Double, options: T): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hotpToken")(secret.asInstanceOf[js.Any], counter.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def hotpToken[T /* <: HOTPOptions_[Any] */](secret: SecretKey, counter: Double, options: T): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hotpToken")(secret.asInstanceOf[js.Any], counter.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait HOTPOptions_[T]
     extends StObject

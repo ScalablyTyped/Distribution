@@ -2,7 +2,7 @@ package typings.maximMazurokGapiClientArea120tables.gapi.client.area120tables
 
 import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientArea120tables.anon.Name
-import typings.maximMazurokGapiClientArea120tables.anon.PageToken
+import typings.maximMazurokGapiClientArea120tables.anon.PageSize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,5 +16,5 @@ trait WorkspacesResource extends StObject {
   
   /** Lists workspaces for the user. */
   def list(): Request[ListWorkspacesResponse] = js.native
-  def list(request: PageToken): Request[ListWorkspacesResponse] = js.native
+  def list(request: PageSize): Request[ListWorkspacesResponse] = js.native
 }

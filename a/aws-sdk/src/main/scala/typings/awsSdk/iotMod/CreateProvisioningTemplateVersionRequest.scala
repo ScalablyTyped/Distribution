@@ -12,12 +12,12 @@ trait CreateProvisioningTemplateVersionRequest extends StObject {
   var setAsDefault: js.UndefOr[SetAsDefault] = js.undefined
   
   /**
-    * The JSON formatted contents of the fleet provisioning template.
+    * The JSON formatted contents of the provisioning template.
     */
   var templateBody: TemplateBody
   
   /**
-    * The name of the fleet provisioning template.
+    * The name of the provisioning template.
     */
   var templateName: TemplateName
 }

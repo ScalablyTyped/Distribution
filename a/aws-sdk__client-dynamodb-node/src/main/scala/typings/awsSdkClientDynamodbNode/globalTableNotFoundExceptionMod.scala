@@ -8,5 +8,5 @@ object globalTableNotFoundExceptionMod {
   
   @JSImport("@aws-sdk/client-dynamodb-node/model/GlobalTableNotFoundException", "GlobalTableNotFoundException")
   @js.native
-  val GlobalTableNotFoundException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GlobalTableNotFoundException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

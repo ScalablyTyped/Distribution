@@ -9,7 +9,7 @@ object attributionMod {
   
   @JSImport("ol/control/Attribution", JSImport.Default)
   @js.native
-  class default () extends Attribution {
+  open class default () extends Attribution {
     def this(opt_options: Options) = this()
   }
   
@@ -45,11 +45,15 @@ object attributionMod {
     
     var className: js.UndefOr[String] = js.undefined
     
+    var collapseClassName: js.UndefOr[String] = js.undefined
+    
     var collapseLabel: js.UndefOr[String | HTMLElement] = js.undefined
     
     var collapsed: js.UndefOr[Boolean] = js.undefined
     
     var collapsible: js.UndefOr[Boolean] = js.undefined
+    
+    var expandClassName: js.UndefOr[String] = js.undefined
     
     var label: js.UndefOr[String | HTMLElement] = js.undefined
     
@@ -72,6 +76,10 @@ object attributionMod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
+      inline def setCollapseClassName(value: String): Self = StObject.set(x, "collapseClassName", value.asInstanceOf[js.Any])
+      
+      inline def setCollapseClassNameUndefined: Self = StObject.set(x, "collapseClassName", js.undefined)
+      
       inline def setCollapseLabel(value: String | HTMLElement): Self = StObject.set(x, "collapseLabel", value.asInstanceOf[js.Any])
       
       inline def setCollapseLabelUndefined: Self = StObject.set(x, "collapseLabel", js.undefined)
@@ -83,6 +91,10 @@ object attributionMod {
       inline def setCollapsible(value: Boolean): Self = StObject.set(x, "collapsible", value.asInstanceOf[js.Any])
       
       inline def setCollapsibleUndefined: Self = StObject.set(x, "collapsible", js.undefined)
+      
+      inline def setExpandClassName(value: String): Self = StObject.set(x, "expandClassName", value.asInstanceOf[js.Any])
+      
+      inline def setExpandClassNameUndefined: Self = StObject.set(x, "expandClassName", js.undefined)
       
       inline def setLabel(value: String | HTMLElement): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       

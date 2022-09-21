@@ -8,14 +8,19 @@ object anon {
   
   trait TypeofXMLHttpRequest extends StObject {
     
+    /* standard dom */
     val DONE: Double
     
+    /* standard dom */
     val HEADERS_RECEIVED: Double
     
+    /* standard dom */
     val LOADING: Double
     
+    /* standard dom */
     val OPENED: Double
     
+    /* standard dom */
     val UNSENT: Double
   }
   object TypeofXMLHttpRequest {

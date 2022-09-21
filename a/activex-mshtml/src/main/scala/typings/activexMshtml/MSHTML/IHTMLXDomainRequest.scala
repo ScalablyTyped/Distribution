@@ -14,20 +14,20 @@ trait IHTMLXDomainRequest extends StObject {
   
   val contentType: String = js.native
   
-  var onerror: js.Any = js.native
+  var onerror: Any = js.native
   
-  var onload: js.Any = js.native
+  var onload: Any = js.native
   
-  var onprogress: js.Any = js.native
+  var onprogress: Any = js.native
   
-  var ontimeout: js.Any = js.native
+  var ontimeout: Any = js.native
   
   def open(bstrMethod: String, bstrURL: String): Unit = js.native
   
   val responseText: String = js.native
   
   def send(): Unit = js.native
-  def send(varBody: js.Any): Unit = js.native
+  def send(varBody: Any): Unit = js.native
   
   var timeout: Double = js.native
 }

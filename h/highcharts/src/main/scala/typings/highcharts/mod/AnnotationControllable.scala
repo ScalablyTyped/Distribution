@@ -31,6 +31,6 @@ object AnnotationControllable {
     
     inline def setPoints(value: js.Array[Point]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    inline def setPointsVarargs(value: Point*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: Point*): Self = StObject.set(x, "points", js.Array(value*))
   }
 }

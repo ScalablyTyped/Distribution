@@ -8,7 +8,7 @@ object squareMod {
   
   @JSImport("progressbar.js/square", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends typings.progressbarJs.shapeMod.^
   
   type Square = typings.progressbarJs.shapeMod.^

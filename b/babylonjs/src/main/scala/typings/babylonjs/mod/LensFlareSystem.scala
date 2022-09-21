@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "LensFlareSystem")
 @js.native
-class LensFlareSystem protected ()
+open class LensFlareSystem protected ()
   extends typings.babylonjs.legacyMod.LensFlareSystem {
   /**
     * Instantiates a lens flare system.
@@ -22,7 +22,7 @@ class LensFlareSystem protected ()
     * Define the name of the lens flare system
     */
   name: String,
-    emitter: js.Any,
+    emitter: Any,
     scene: typings.babylonjs.sceneMod.Scene
   ) = this()
 }
@@ -34,14 +34,17 @@ object LensFlareSystem {
   val ^ : js.Any = js.native
   
   /**
-    * Parse a lens flare system from a JSON repressentation
+    * Parse a lens flare system from a JSON representation
     * @param parsedLensFlareSystem Define the JSON to parse
     * @param scene Define the scene the parsed system should be instantiated in
     * @param rootUrl Define the rootUrl of the load sequence to easily find a load relative dependencies such as textures
     * @returns the parsed system
     */
-  inline def Parse(parsedLensFlareSystem: js.Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.lensFlareSystemMod.LensFlareSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedLensFlareSystem.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.lensFlareSystemMod.LensFlareSystem]
+  inline def Parse(parsedLensFlareSystem: Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.lensFlareSystemMod.LensFlareSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedLensFlareSystem.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.lensFlareSystemMod.LensFlareSystem]
   
-  /** @hidden */
+  /**
+    * @param _
+    * @hidden
+    */
   inline def _SceneComponentInitialization(scene: typings.babylonjs.sceneMod.Scene): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_SceneComponentInitialization")(scene.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

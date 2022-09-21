@@ -42,19 +42,27 @@ trait NavigationAnnotationsShapesOptions extends StObject {
     * exists in the series - it is referenced by the point's id - or a new
     * point with defined x, y properties and optionally axes.
     */
-  var point: js.UndefOr[String | AnnotationMockPointOptionsObject] = js.undefined
+  var point: js.UndefOr[String | AnnotationMockPointFunction | AnnotationMockPointOptionsObject] = js.undefined
   
   /**
-    * (Highcharts, Highstock, Highmaps, Gantt) An array of points for the
-    * shape. This option is available for shapes which can use multiple points
-    * such as path. A point can be either a point object or a point's id.
+    * (Highcharts, Highstock, Highmaps, Gantt) An array of points for the shape
+    * or a callback function that returns that shape point.
+    *
+    * This option is available for shapes which can use multiple points such as
+    * path. A point can be either a point object or a point's id.
     */
-  var points: js.UndefOr[js.Array[String | AnnotationMockPointOptionsObject]] = js.undefined
+  var points: js.UndefOr[js.Array[AnnotationShapePointOptions]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The radius of the shape.
     */
   var r: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) The radius of the shape in y
+    * direction. Used for the ellipse.
+    */
+  var ry: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Defines additional snapping area
@@ -80,8 +88,8 @@ trait NavigationAnnotationsShapesOptions extends StObject {
   var strokeWidth: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highcharts, Highstock, Highmaps, Gantt) The type of the shape, e.g.
-    * circle or rectangle.
+    * (Highcharts, Highstock, Highmaps, Gantt) The type of the shape. Avaliable
+    * options are circle, rect and ellipse.
     */
   var `type`: js.UndefOr[String] = js.undefined
   
@@ -89,6 +97,18 @@ trait NavigationAnnotationsShapesOptions extends StObject {
     * (Highcharts, Highstock, Highmaps, Gantt) The width of the shape.
     */
   var width: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) The xAxis index to which the
+    * points should be attached. Used for the ellipse.
+    */
+  var xAxis: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) The yAxis index to which the
+    * points should be attached. Used for the ellipse.
+    */
+  var yAxis: js.UndefOr[Double] = js.undefined
 }
 object NavigationAnnotationsShapesOptions {
   
@@ -119,19 +139,25 @@ object NavigationAnnotationsShapesOptions {
     
     inline def setMarkerStartUndefined: Self = StObject.set(x, "markerStart", js.undefined)
     
-    inline def setPoint(value: String | AnnotationMockPointOptionsObject): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+    inline def setPoint(value: String | AnnotationMockPointFunction | AnnotationMockPointOptionsObject): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+    
+    inline def setPointFunction1(value: /* annotation */ Annotation => AnnotationMockPointOptionsObject): Self = StObject.set(x, "point", js.Any.fromFunction1(value))
     
     inline def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
     
-    inline def setPoints(value: js.Array[String | AnnotationMockPointOptionsObject]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: js.Array[AnnotationShapePointOptions]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
     inline def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
     
-    inline def setPointsVarargs(value: (String | AnnotationMockPointOptionsObject)*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: AnnotationShapePointOptions*): Self = StObject.set(x, "points", js.Array(value*))
     
     inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     
     inline def setRUndefined: Self = StObject.set(x, "r", js.undefined)
+    
+    inline def setRy(value: Double): Self = StObject.set(x, "ry", value.asInstanceOf[js.Any])
+    
+    inline def setRyUndefined: Self = StObject.set(x, "ry", js.undefined)
     
     inline def setSnap(value: Double): Self = StObject.set(x, "snap", value.asInstanceOf[js.Any])
     
@@ -156,5 +182,13 @@ object NavigationAnnotationsShapesOptions {
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    
+    inline def setXAxis(value: Double): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
+    
+    inline def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
+    
+    inline def setYAxis(value: Double): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
+    
+    inline def setYAxisUndefined: Self = StObject.set(x, "yAxis", js.undefined)
   }
 }

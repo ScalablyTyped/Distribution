@@ -27,7 +27,7 @@ object XSheetAnnotationAnchor {
     Annotation: XSheetAnnotation,
     acquire: () => Unit,
     getAnnotation: () => XSheetAnnotation,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XSheetAnnotationAnchor = {
     val __obj = js.Dynamic.literal(Annotation = Annotation.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getAnnotation = js.Any.fromFunction0(getAnnotation), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

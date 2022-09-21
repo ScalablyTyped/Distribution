@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientVerticalGridRowExpandingEventArgs")
 @js.native
-class ASPxClientVerticalGridRowExpandingEventArgs protected ()
+open class ASPxClientVerticalGridRowExpandingEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientVerticalGridRowExpandingEventArgs {
   /**

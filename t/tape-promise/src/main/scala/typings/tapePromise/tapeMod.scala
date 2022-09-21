@@ -13,7 +13,7 @@ object tapeMod extends Shortcut {
   @js.native
   val ^ : ReturnType[
     js.Function1[
-      /* tapeTest */ js.Any, 
+      /* tapeTest */ Any, 
       AsyncTapeFunction & (/* import warning: importer.ImportType#apply Failed type conversion: typeof tape */ js.Any)
     ]
   ] = js.native
@@ -34,7 +34,7 @@ object tapeMod extends Shortcut {
   
   type _To = ReturnType[
     js.Function1[
-      /* tapeTest */ js.Any, 
+      /* tapeTest */ Any, 
       AsyncTapeFunction & (/* import warning: importer.ImportType#apply Failed type conversion: typeof tape */ js.Any)
     ]
   ]
@@ -42,7 +42,7 @@ object tapeMod extends Shortcut {
   /* This means you don't have to write `^`, but can instead just say `tapeMod.foo` */
   override def _to: ReturnType[
     js.Function1[
-      /* tapeTest */ js.Any, 
+      /* tapeTest */ Any, 
       AsyncTapeFunction & (/* import warning: importer.ImportType#apply Failed type conversion: typeof tape */ js.Any)
     ]
   ] = ^

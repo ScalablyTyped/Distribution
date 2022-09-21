@@ -10,15 +10,12 @@ Run-time Autoprefixer for JavaScript style objects
 | ------------------ | :-------------: |
 | Full name          | inline-style-prefixer |
 | Keywords           | react, react styling, prefixer, inline styles, autoprefixer, vendor prefix, userAgent |
-| # releases         | 6 |
-| # dependents       | 355 |
-| # downloads        | 50135289 |
-| # stars            | 5 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 7404519.0 |
+| # stars            | 384.0 |
 
 ## Links
-- [Homepage](https://github.com/rofrischmann/inline-style-prefixer#readme)
-- [Bugs](https://github.com/rofrischmann/inline-style-prefixer/issues)
-- [Repository](https://github.com/rofrischmann/inline-style-prefixer)
 - [Npm](https://www.npmjs.com/package/inline-style-prefixer)
     
 

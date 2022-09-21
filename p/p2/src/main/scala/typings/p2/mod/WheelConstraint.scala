@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("p2", "WheelConstraint")
 @js.native
-class WheelConstraint protected () extends Constraint {
+open class WheelConstraint protected () extends Constraint {
   def this(vehicle: TopDownVehicle) = this()
   def this(vehicle: TopDownVehicle, options: WheelConstraintOptions) = this()
   

@@ -3,7 +3,6 @@ package typings.sendmail
 import typings.sendmail.anon.Content
 import typings.sendmail.anon.Debug
 import typings.sendmail.anon.KeySelector
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  type CallbackFn = js.Function2[/* err */ Error, /* domain */ String, Unit]
+  type CallbackFn = js.Function2[/* err */ js.Error, /* domain */ String, Unit]
   
   trait MailInput extends StObject {
     
@@ -40,11 +39,17 @@ object mod {
     
     var id: js.UndefOr[String] = js.undefined
     
+    var inReplyTo: js.UndefOr[String] = js.undefined
+    
     var replyTo: js.UndefOr[String] = js.undefined
     
     var returnTo: js.UndefOr[String] = js.undefined
     
+    var sender: js.UndefOr[String] = js.undefined
+    
     var subject: String
+    
+    var text: js.UndefOr[String] = js.undefined
     
     var to: String
     
@@ -63,7 +68,7 @@ object mod {
       
       inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
       
-      inline def setAttachmentsVarargs(value: Content*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+      inline def setAttachmentsVarargs(value: Content*): Self = StObject.set(x, "attachments", js.Array(value*))
       
       inline def setBcc(value: String): Self = StObject.set(x, "bcc", value.asInstanceOf[js.Any])
       
@@ -99,6 +104,10 @@ object mod {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
+      inline def setInReplyTo(value: String): Self = StObject.set(x, "inReplyTo", value.asInstanceOf[js.Any])
+      
+      inline def setInReplyToUndefined: Self = StObject.set(x, "inReplyTo", js.undefined)
+      
       inline def setReplyTo(value: String): Self = StObject.set(x, "replyTo", value.asInstanceOf[js.Any])
       
       inline def setReplyToUndefined: Self = StObject.set(x, "replyTo", js.undefined)
@@ -107,7 +116,15 @@ object mod {
       
       inline def setReturnToUndefined: Self = StObject.set(x, "returnTo", js.undefined)
       
+      inline def setSender(value: String): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+      
+      inline def setSenderUndefined: Self = StObject.set(x, "sender", js.undefined)
+      
       inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+      
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
       inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       

@@ -21,17 +21,17 @@ trait BackendSetupException
     *
     * May be a numeric error code, a message `string` or `VOID` , if the original exception is not represented as a {@link com.sun.star.uno.Exception} .
     */
-  var BackendException: js.Any
+  var BackendException: Any
 }
 object BackendSetupException {
   
-  inline def apply(BackendException: js.Any, Context: XInterface, Message: String): BackendSetupException = {
+  inline def apply(BackendException: Any, Context: XInterface, Message: String): BackendSetupException = {
     val __obj = js.Dynamic.literal(BackendException = BackendException.asInstanceOf[js.Any], Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackendSetupException]
   }
   
   extension [Self <: BackendSetupException](x: Self) {
     
-    inline def setBackendException(value: js.Any): Self = StObject.set(x, "BackendException", value.asInstanceOf[js.Any])
+    inline def setBackendException(value: Any): Self = StObject.set(x, "BackendException", value.asInstanceOf[js.Any])
   }
 }

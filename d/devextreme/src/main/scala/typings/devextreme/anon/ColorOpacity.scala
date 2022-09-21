@@ -6,12 +6,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ColorOpacity extends StObject {
   
+  /**
+    * Specifies the color of the scale&apos;s minor ticks.
+    */
   var color: js.UndefOr[String] = js.undefined
   
+  /**
+    * Specifies the opacity of the scale&apos;s minor ticks.
+    */
   var opacity: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Indicates whether scale minor ticks are visible or not.
+    */
   var visible: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Specifies the width of the scale&apos;s minor ticks.
+    */
   var width: js.UndefOr[Double] = js.undefined
 }
 object ColorOpacity {

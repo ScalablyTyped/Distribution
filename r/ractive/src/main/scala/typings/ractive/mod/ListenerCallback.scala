@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ListenerCallback[T /* <: Ractive[T] */] extends StObject {
   
-  def apply(ctx: ContextHelper, args: js.Any*): Boolean | Unit | js.Promise[js.Any] = js.native
+  def apply(ctx: ListenerContextHelper, args: Any*): Boolean | Unit | js.Promise[Any] = js.native
 }

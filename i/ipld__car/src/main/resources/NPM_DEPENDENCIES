@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@ipld/car" : "4.1.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@ipld/car" : "4.1.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

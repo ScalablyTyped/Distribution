@@ -233,7 +233,7 @@ object HumanInterfaceDevice {
     var data: IBuffer = js.native
     
     /* CompleteClass */
-    var getBooleanControl: js.Any = js.native
+    var getBooleanControl: Any = js.native
     
     /* unmapped type */
     /**
@@ -247,7 +247,7 @@ object HumanInterfaceDevice {
     ): typings.winrtUwp.Windows.Devices.HumanInterfaceDevice.HidBooleanControl = js.native
     
     /* CompleteClass */
-    var getNumericControl: js.Any = js.native
+    var getNumericControl: Any = js.native
     
     /* unmapped type */
     /**
@@ -401,7 +401,7 @@ object HumanInterfaceDevice {
     var data: IBuffer = js.native
     
     /* CompleteClass */
-    var getBooleanControl: js.Any = js.native
+    var getBooleanControl: Any = js.native
     
     /* unmapped type */
     /**
@@ -415,7 +415,7 @@ object HumanInterfaceDevice {
     ): typings.winrtUwp.Windows.Devices.HumanInterfaceDevice.HidBooleanControl = js.native
     
     /* CompleteClass */
-    var getNumericControl: js.Any = js.native
+    var getNumericControl: Any = js.native
     
     /* unmapped type */
     /**

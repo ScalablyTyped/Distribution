@@ -14,7 +14,7 @@ trait AllLookAtTypes extends StObject {
   
   var energy: Resource[RESOURCE_ENERGY]
   
-  var exit: js.Any
+  var exit: Any
   
   // TODO what type is this?
   var flag: Flag
@@ -44,7 +44,7 @@ object AllLookAtTypes {
     creep: Creep,
     deposit: Deposit,
     energy: Resource[RESOURCE_ENERGY],
-    exit: js.Any,
+    exit: Any,
     flag: Flag,
     mineral: Mineral[MineralConstant],
     nuke: Nuke,
@@ -70,7 +70,7 @@ object AllLookAtTypes {
     
     inline def setEnergy(value: Resource[RESOURCE_ENERGY]): Self = StObject.set(x, "energy", value.asInstanceOf[js.Any])
     
-    inline def setExit(value: js.Any): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
+    inline def setExit(value: Any): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
     
     inline def setFlag(value: Flag): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
     

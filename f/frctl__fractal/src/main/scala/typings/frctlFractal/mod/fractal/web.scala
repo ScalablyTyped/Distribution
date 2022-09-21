@@ -1,11 +1,15 @@
 package typings.frctlFractal.mod.fractal
 
+import org.scalablytyped.runtime.Instantiable1
 import typings.frctlFractal.anon.ErrorCount
 import typings.frctlFractal.anon.Sync
 import typings.frctlFractal.mod.WebTheme
 import typings.frctlFractal.mod.fractal.core.mixins.ConfigurableEmitter
 import typings.node.eventsMod.EventEmitter
 import typings.node.eventsMod.EventEmitterOptions
+import typings.node.httpMod.IncomingMessage
+import typings.node.httpMod.ServerResponse
+import typings.node.nodeNetMod.Socket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +18,7 @@ object web {
   
   @JSImport("@frctl/fractal", "fractal.web.Builder")
   @js.native
-  class Builder () extends EventEmitter {
+  open class Builder () extends EventEmitter {
     def this(options: EventEmitterOptions) = this()
     
     /**
@@ -31,7 +35,7 @@ object web {
   
   @JSImport("@frctl/fractal", "fractal.web.Server")
   @js.native
-  class Server () extends EventEmitter {
+  open class Server () extends EventEmitter {
     def this(options: EventEmitterOptions) = this()
     
     val isSynced: Boolean = js.native
@@ -40,8 +44,24 @@ object web {
     
     val ports: typings.frctlFractal.anon.Server = js.native
     
-    def start(): js.Promise[typings.node.httpMod.Server] = js.native
-    def start(sync: Boolean): js.Promise[typings.node.httpMod.Server] = js.native
+    def start(): js.Promise[
+        typings.node.httpMod.Server[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[IncomingMessage]
+          ]
+        ]
+      ] = js.native
+    def start(sync: Boolean): js.Promise[
+        typings.node.httpMod.Server[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[IncomingMessage]
+          ]
+        ]
+      ] = js.native
     
     def stop(): Unit = js.native
     
@@ -49,12 +69,12 @@ object web {
     
     val urls: Sync = js.native
     
-    def use(mount: String, middleware: js.Any): Unit = js.native
+    def use(mount: String, middleware: Any): Unit = js.native
   }
   
   @JSImport("@frctl/fractal", "fractal.web.Web")
   @js.native
-  class Web () extends ConfigurableEmitter[WebConfig] {
+  open class Web () extends ConfigurableEmitter[WebConfig] {
     def this(options: EventEmitterOptions) = this()
     
     def builder(): Builder = js.native
@@ -239,7 +259,7 @@ object web {
       
       inline def setServerDotsyncOptionsDotbrowserUndefined: Self = StObject.set(x, "server.syncOptions.browser", js.undefined)
       
-      inline def setServerDotsyncOptionsDotbrowserVarargs(value: String*): Self = StObject.set(x, "server.syncOptions.browser", js.Array(value :_*))
+      inline def setServerDotsyncOptionsDotbrowserVarargs(value: String*): Self = StObject.set(x, "server.syncOptions.browser", js.Array(value*))
       
       inline def setServerDotsyncOptionsDotnotify(value: Boolean): Self = StObject.set(x, "server.syncOptions.notify", value.asInstanceOf[js.Any])
       
@@ -342,7 +362,7 @@ object web {
       
       inline def setBrowserUndefined: Self = StObject.set(x, "browser", js.undefined)
       
-      inline def setBrowserVarargs(value: String*): Self = StObject.set(x, "browser", js.Array(value :_*))
+      inline def setBrowserVarargs(value: String*): Self = StObject.set(x, "browser", js.Array(value*))
       
       inline def setNotify_(value: Boolean): Self = StObject.set(x, "notify", value.asInstanceOf[js.Any])
       

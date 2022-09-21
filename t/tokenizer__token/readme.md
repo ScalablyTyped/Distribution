@@ -1,7 +1,7 @@
 
 # Scala.js typings for tokenizer__token
 
-Typings are for version 0.1.1
+Typings are for version 0.3.0
 
 ## Library description:
 TypeScript definition for strtok3 token
@@ -10,10 +10,10 @@ TypeScript definition for strtok3 token
 | ------------------ | :-------------: |
 | Full name          | @tokenizer/token |
 | Keywords           | token, interface, tokenizer, TypeScript |
-| # releases         | 4 |
-| # dependents       | 2 |
-| # downloads        | 7887904 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 7402571.333333333 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/Borewit/tokenizer-token#readme)

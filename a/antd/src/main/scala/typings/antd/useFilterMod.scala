@@ -1,8 +1,11 @@
 package typings.antd
 
+import typings.antd.tableInterfaceMod.ColumnFilterItem
 import typings.antd.tableInterfaceMod.ColumnGroupType
 import typings.antd.tableInterfaceMod.ColumnType
 import typings.antd.tableInterfaceMod.ColumnsType
+import typings.antd.tableInterfaceMod.FilterKey
+import typings.antd.tableInterfaceMod.FilterValue
 import typings.antd.tableInterfaceMod.GetPopupContainer
 import typings.antd.tableInterfaceMod.Key
 import typings.antd.tableInterfaceMod.TableLocale
@@ -24,12 +27,15 @@ object useFilterMod {
   ): js.Tuple3[
     TransformColumns[RecordType], 
     js.Array[FilterState[RecordType]], 
-    js.Function0[Record[String, js.Array[Key] | Null]]
+    js.Function0[Record[String, FilterValue | Null]]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasPrefixClsDropdownPrefixClsMergedColumnsOnFilterChangeGetPopupContainerTableLocale.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[
     TransformColumns[RecordType], 
     js.Array[FilterState[RecordType]], 
-    js.Function0[Record[String, js.Array[Key] | Null]]
+    js.Function0[Record[String, FilterValue | Null]]
   ]]
+  
+  inline def flattenKeys(): FilterValue = ^.asInstanceOf[js.Dynamic].applyDynamic("flattenKeys")().asInstanceOf[FilterValue]
+  inline def flattenKeys(filters: js.Array[ColumnFilterItem]): FilterValue = ^.asInstanceOf[js.Dynamic].applyDynamic("flattenKeys")(filters.asInstanceOf[js.Any]).asInstanceOf[FilterValue]
   
   inline def getFilterData[RecordType](data: js.Array[RecordType], filterStates: js.Array[FilterState[RecordType]]): js.Array[RecordType] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFilterData")(data.asInstanceOf[js.Any], filterStates.asInstanceOf[js.Any])).asInstanceOf[js.Array[RecordType]]
   
@@ -43,7 +49,7 @@ object useFilterMod {
     
     var mergedColumns: ColumnsType[RecordType]
     
-    def onFilterChange(filters: Record[String, js.Array[Key] | Null], filterStates: js.Array[FilterState[RecordType]]): Unit
+    def onFilterChange(filters: Record[String, FilterValue | Null], filterStates: js.Array[FilterState[RecordType]]): Unit
     
     var prefixCls: String
   }
@@ -53,7 +59,7 @@ object useFilterMod {
       dropdownPrefixCls: String,
       locale: TableLocale,
       mergedColumns: ColumnsType[RecordType],
-      onFilterChange: (Record[String, js.Array[Key] | Null], js.Array[FilterState[RecordType]]) => Unit,
+      onFilterChange: (Record[String, FilterValue | Null], js.Array[FilterState[RecordType]]) => Unit,
       prefixCls: String
     ): FilterConfig[RecordType] = {
       val __obj = js.Dynamic.literal(dropdownPrefixCls = dropdownPrefixCls.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], mergedColumns = mergedColumns.asInstanceOf[js.Any], onFilterChange = js.Any.fromFunction2(onFilterChange), prefixCls = prefixCls.asInstanceOf[js.Any])
@@ -72,9 +78,9 @@ object useFilterMod {
       
       inline def setMergedColumns(value: ColumnsType[RecordType]): Self = StObject.set(x, "mergedColumns", value.asInstanceOf[js.Any])
       
-      inline def setMergedColumnsVarargs(value: (ColumnGroupType[RecordType] | ColumnType[RecordType])*): Self = StObject.set(x, "mergedColumns", js.Array(value :_*))
+      inline def setMergedColumnsVarargs(value: (ColumnGroupType[RecordType] | ColumnType[RecordType])*): Self = StObject.set(x, "mergedColumns", js.Array(value*))
       
-      inline def setOnFilterChange(value: (Record[String, js.Array[Key] | Null], js.Array[FilterState[RecordType]]) => Unit): Self = StObject.set(x, "onFilterChange", js.Any.fromFunction2(value))
+      inline def setOnFilterChange(value: (Record[String, FilterValue | Null], js.Array[FilterState[RecordType]]) => Unit): Self = StObject.set(x, "onFilterChange", js.Any.fromFunction2(value))
       
       inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
     }
@@ -84,7 +90,7 @@ object useFilterMod {
     
     var column: ColumnType[RecordType]
     
-    var filteredKeys: js.UndefOr[js.Array[Key] | Null] = js.undefined
+    var filteredKeys: js.UndefOr[FilterKey] = js.undefined
     
     var forceFiltered: js.UndefOr[Boolean] = js.undefined
     
@@ -101,13 +107,13 @@ object useFilterMod {
       
       inline def setColumn(value: ColumnType[RecordType]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      inline def setFilteredKeys(value: js.Array[Key]): Self = StObject.set(x, "filteredKeys", value.asInstanceOf[js.Any])
+      inline def setFilteredKeys(value: FilterKey): Self = StObject.set(x, "filteredKeys", value.asInstanceOf[js.Any])
       
       inline def setFilteredKeysNull: Self = StObject.set(x, "filteredKeys", null)
       
       inline def setFilteredKeysUndefined: Self = StObject.set(x, "filteredKeys", js.undefined)
       
-      inline def setFilteredKeysVarargs(value: Key*): Self = StObject.set(x, "filteredKeys", js.Array(value :_*))
+      inline def setFilteredKeysVarargs(value: Key*): Self = StObject.set(x, "filteredKeys", js.Array(value*))
       
       inline def setForceFiltered(value: Boolean): Self = StObject.set(x, "forceFiltered", value.asInstanceOf[js.Any])
       

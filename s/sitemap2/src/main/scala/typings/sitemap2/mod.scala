@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Shortcut
 import typings.sitemap2.anon.Contentloc
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("sitemap2", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Sitemap {
     def this(conf: SitemapConfig) = this()
@@ -81,7 +80,7 @@ object mod extends Shortcut {
       
       inline def setChildrensUndefined: Self = StObject.set(x, "childrens", js.undefined)
       
-      inline def setChildrensVarargs(value: Sitemap*): Self = StObject.set(x, "childrens", js.Array(value :_*))
+      inline def setChildrensVarargs(value: Sitemap*): Self = StObject.set(x, "childrens", js.Array(value*))
       
       inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
@@ -99,7 +98,7 @@ object mod extends Shortcut {
       
       inline def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
       
-      inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
+      inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value*))
       
       inline def setXslUrl(value: String): Self = StObject.set(x, "xslUrl", value.asInstanceOf[js.Any])
       
@@ -132,7 +131,7 @@ object mod extends Shortcut {
     
     var chengefreq: js.UndefOr[String] = js.undefined
     
-    var lastmod: js.UndefOr[Date] = js.undefined
+    var lastmod: js.UndefOr[js.Date] = js.undefined
     
     var lastmodInISO: js.UndefOr[Boolean] = js.undefined
     
@@ -157,7 +156,7 @@ object mod extends Shortcut {
       
       inline def setChengefreqUndefined: Self = StObject.set(x, "chengefreq", js.undefined)
       
-      inline def setLastmod(value: Date): Self = StObject.set(x, "lastmod", value.asInstanceOf[js.Any])
+      inline def setLastmod(value: js.Date): Self = StObject.set(x, "lastmod", value.asInstanceOf[js.Any])
       
       inline def setLastmodInISO(value: Boolean): Self = StObject.set(x, "lastmodInISO", value.asInstanceOf[js.Any])
       

@@ -11,207 +11,225 @@ import typings.rdflib.tfTypesMod.NamedNode
 import typings.rdflib.tfTypesMod.QuadSubject
 import typings.rdflib.typesMod.ContentType
 import typings.std.AbortSignal
-import typings.std.Headers
+import typings.std.HeadersInit
 import typings.std.ReferrerPolicy
 import typings.std.RequestCache
 import typings.std.RequestInfo
 import typings.std.RequestInit
 import typings.std.RequestMode
 import typings.std.RequestRedirect
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  req :rdflib.rdflib/lib/tf-types.BlankNode,   original :rdflib.rdflib/lib/tf-types.Quad_Subject} & rdflib.rdflib/lib/fetcher.Options */
-@js.native
-trait reqBlankNodeoriginalQuadS extends js.Object {
-  var actualProxyURI: js.UndefOr[String] = js.native
-  var baseURI: js.UndefOr[String] = js.native
-  var body: js.UndefOr[String] = js.native
-  var cache: js.UndefOr[RequestCache] = js.native
-  var clearPreviousData: js.UndefOr[Boolean] = js.native
-  var contentType: js.UndefOr[String] = js.native
-  var credentials: js.UndefOr[include | omit] = js.native
-  var data: js.UndefOr[String] = js.native
-  var fetch: js.UndefOr[Fetch] = js.native
-  var force: js.UndefOr[Boolean] = js.native
-  var forceContentType: js.UndefOr[ContentType] = js.native
-  var handlers: js.UndefOr[js.Array[Handler]] = js.native
-  var headers: js.UndefOr[Headers] = js.native
-  var integrity: js.UndefOr[String] = js.native
-  var keepalive: js.UndefOr[Boolean] = js.native
-  var method: js.UndefOr[HTTPMethods] = js.native
-  var mode: js.UndefOr[RequestMode] = js.native
-  var noMeta: js.UndefOr[Boolean] = js.native
-  var noRDFa: js.UndefOr[Boolean] = js.native
-  var original: QuadSubject with js.UndefOr[NamedNode] = js.native
-  var proxyUsed: js.UndefOr[Boolean] = js.native
-  var redirect: js.UndefOr[RequestRedirect] = js.native
-  var referrer: js.UndefOr[String] = js.native
-  var referrerPolicy: js.UndefOr[ReferrerPolicy] = js.native
-  var referringTerm: js.UndefOr[NamedNode] = js.native
-  var req: BlankNode with js.UndefOr[BlankNode] = js.native
-  var requestedURI: js.UndefOr[String] = js.native
-  var resource: js.UndefOr[QuadSubject] = js.native
-  var retriedWithNoCredentials: js.UndefOr[Boolean] = js.native
-  var signal: js.UndefOr[AbortSignal | Null] = js.native
-  var timeout: js.UndefOr[Double] = js.native
-  var window: js.UndefOr[js.Any] = js.native
-  var withCredentials: js.UndefOr[Boolean] = js.native
+trait reqBlankNodeoriginalQuadS extends StObject {
+  
+  var actualProxyURI: js.UndefOr[String] = js.undefined
+  
+  var baseURI: js.UndefOr[String] = js.undefined
+  
+  var body: js.UndefOr[String] = js.undefined
+  
+  var cache: js.UndefOr[RequestCache] = js.undefined
+  
+  var clearPreviousData: js.UndefOr[scala.Boolean] = js.undefined
+  
+  var contentType: js.UndefOr[String] = js.undefined
+  
+  var credentials: js.UndefOr[include | omit] = js.undefined
+  
+  var data: js.UndefOr[String] = js.undefined
+  
+  var fetch: js.UndefOr[Fetch] = js.undefined
+  
+  var force: js.UndefOr[scala.Boolean] = js.undefined
+  
+  var forceContentType: js.UndefOr[ContentType] = js.undefined
+  
+  var handlers: js.UndefOr[js.Array[Handler]] = js.undefined
+  
+  var headers: js.UndefOr[HeadersInit] = js.undefined
+  
+  var integrity: js.UndefOr[String] = js.undefined
+  
+  var keepalive: js.UndefOr[scala.Boolean] = js.undefined
+  
+  var method: js.UndefOr[HTTPMethods] = js.undefined
+  
+  var mode: js.UndefOr[RequestMode] = js.undefined
+  
+  var noMeta: js.UndefOr[scala.Boolean] = js.undefined
+  
+  var noRDFa: js.UndefOr[scala.Boolean] = js.undefined
+  
+  var original: QuadSubject & js.UndefOr[NamedNode]
+  
+  var proxyUsed: js.UndefOr[scala.Boolean] = js.undefined
+  
+  var redirect: js.UndefOr[RequestRedirect] = js.undefined
+  
+  var referrer: js.UndefOr[String] = js.undefined
+  
+  var referrerPolicy: js.UndefOr[ReferrerPolicy] = js.undefined
+  
+  var referringTerm: js.UndefOr[NamedNode] = js.undefined
+  
+  var req: BlankNode & js.UndefOr[BlankNode]
+  
+  var requestedURI: js.UndefOr[String] = js.undefined
+  
+  var resource: js.UndefOr[QuadSubject] = js.undefined
+  
+  var retriedWithNoCredentials: js.UndefOr[scala.Boolean] = js.undefined
+  
+  var signal: js.UndefOr[AbortSignal | Null] = js.undefined
+  
+  var timeout: js.UndefOr[Double] = js.undefined
+  
+  var window: js.UndefOr[Null] = js.undefined
+  
+  var withCredentials: js.UndefOr[scala.Boolean] = js.undefined
 }
-
 object reqBlankNodeoriginalQuadS {
-  @scala.inline
-  def apply(original: QuadSubject with js.UndefOr[NamedNode], req: BlankNode with js.UndefOr[BlankNode]): reqBlankNodeoriginalQuadS = {
+  
+  inline def apply(original: QuadSubject & js.UndefOr[NamedNode], req: BlankNode & js.UndefOr[BlankNode]): reqBlankNodeoriginalQuadS = {
     val __obj = js.Dynamic.literal(original = original.asInstanceOf[js.Any], req = req.asInstanceOf[js.Any])
     __obj.asInstanceOf[reqBlankNodeoriginalQuadS]
   }
-  @scala.inline
-  implicit class reqBlankNodeoriginalQuadSOps[Self <: reqBlankNodeoriginalQuadS] (val x: Self) extends AnyVal {
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
-    }
-    @scala.inline
-    def setOriginal(value: QuadSubject with js.UndefOr[NamedNode]): Self = this.set("original", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setReq(value: BlankNode with js.UndefOr[BlankNode]): Self = this.set("req", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setActualProxyURI(value: String): Self = this.set("actualProxyURI", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteActualProxyURI: Self = this.set("actualProxyURI", js.undefined)
-    @scala.inline
-    def setBaseURI(value: String): Self = this.set("baseURI", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteBaseURI: Self = this.set("baseURI", js.undefined)
-    @scala.inline
-    def setBody(value: String): Self = this.set("body", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteBody: Self = this.set("body", js.undefined)
-    @scala.inline
-    def setCache(value: RequestCache): Self = this.set("cache", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteCache: Self = this.set("cache", js.undefined)
-    @scala.inline
-    def setClearPreviousData(value: Boolean): Self = this.set("clearPreviousData", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteClearPreviousData: Self = this.set("clearPreviousData", js.undefined)
-    @scala.inline
-    def setContentType(value: String): Self = this.set("contentType", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteContentType: Self = this.set("contentType", js.undefined)
-    @scala.inline
-    def setCredentials(value: include | omit): Self = this.set("credentials", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteCredentials: Self = this.set("credentials", js.undefined)
-    @scala.inline
-    def setData(value: String): Self = this.set("data", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteData: Self = this.set("data", js.undefined)
-    @scala.inline
-    def setFetch(
-      value: (/* input */ RequestInfo, /* init */ js.UndefOr[RequestInit]) => js.Promise[ExtendedResponse]
-    ): Self = this.set("fetch", js.Any.fromFunction2(value))
-    @scala.inline
-    def deleteFetch: Self = this.set("fetch", js.undefined)
-    @scala.inline
-    def setForce(value: Boolean): Self = this.set("force", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteForce: Self = this.set("force", js.undefined)
-    @scala.inline
-    def setForceContentType(value: ContentType): Self = this.set("forceContentType", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteForceContentType: Self = this.set("forceContentType", js.undefined)
-    @scala.inline
-    def setHandlersVarargs(value: Handler*): Self = this.set("handlers", js.Array(value :_*))
-    @scala.inline
-    def setHandlers(value: js.Array[Handler]): Self = this.set("handlers", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteHandlers: Self = this.set("handlers", js.undefined)
-    @scala.inline
-    def setHeaders(value: Headers): Self = this.set("headers", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteHeaders: Self = this.set("headers", js.undefined)
-    @scala.inline
-    def setIntegrity(value: String): Self = this.set("integrity", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteIntegrity: Self = this.set("integrity", js.undefined)
-    @scala.inline
-    def setKeepalive(value: Boolean): Self = this.set("keepalive", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteKeepalive: Self = this.set("keepalive", js.undefined)
-    @scala.inline
-    def setMethod(value: HTTPMethods): Self = this.set("method", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteMethod: Self = this.set("method", js.undefined)
-    @scala.inline
-    def setMode(value: RequestMode): Self = this.set("mode", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteMode: Self = this.set("mode", js.undefined)
-    @scala.inline
-    def setNoMeta(value: Boolean): Self = this.set("noMeta", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteNoMeta: Self = this.set("noMeta", js.undefined)
-    @scala.inline
-    def setNoRDFa(value: Boolean): Self = this.set("noRDFa", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteNoRDFa: Self = this.set("noRDFa", js.undefined)
-    @scala.inline
-    def setProxyUsed(value: Boolean): Self = this.set("proxyUsed", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteProxyUsed: Self = this.set("proxyUsed", js.undefined)
-    @scala.inline
-    def setRedirect(value: RequestRedirect): Self = this.set("redirect", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteRedirect: Self = this.set("redirect", js.undefined)
-    @scala.inline
-    def setReferrer(value: String): Self = this.set("referrer", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteReferrer: Self = this.set("referrer", js.undefined)
-    @scala.inline
-    def setReferrerPolicy(value: ReferrerPolicy): Self = this.set("referrerPolicy", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteReferrerPolicy: Self = this.set("referrerPolicy", js.undefined)
-    @scala.inline
-    def setReferringTerm(value: NamedNode): Self = this.set("referringTerm", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteReferringTerm: Self = this.set("referringTerm", js.undefined)
-    @scala.inline
-    def setRequestedURI(value: String): Self = this.set("requestedURI", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteRequestedURI: Self = this.set("requestedURI", js.undefined)
-    @scala.inline
-    def setResource(value: QuadSubject): Self = this.set("resource", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteResource: Self = this.set("resource", js.undefined)
-    @scala.inline
-    def setRetriedWithNoCredentials(value: Boolean): Self = this.set("retriedWithNoCredentials", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteRetriedWithNoCredentials: Self = this.set("retriedWithNoCredentials", js.undefined)
-    @scala.inline
-    def setSignal(value: AbortSignal): Self = this.set("signal", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteSignal: Self = this.set("signal", js.undefined)
-    @scala.inline
-    def setSignalNull: Self = this.set("signal", null)
-    @scala.inline
-    def setTimeout(value: Double): Self = this.set("timeout", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteTimeout: Self = this.set("timeout", js.undefined)
-    @scala.inline
-    def setWindow(value: js.Any): Self = this.set("window", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteWindow: Self = this.set("window", js.undefined)
-    @scala.inline
-    def setWithCredentials(value: Boolean): Self = this.set("withCredentials", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteWithCredentials: Self = this.set("withCredentials", js.undefined)
-  }
   
+  extension [Self <: reqBlankNodeoriginalQuadS](x: Self) {
+    
+    inline def setActualProxyURI(value: String): Self = StObject.set(x, "actualProxyURI", value.asInstanceOf[js.Any])
+    
+    inline def setActualProxyURIUndefined: Self = StObject.set(x, "actualProxyURI", js.undefined)
+    
+    inline def setBaseURI(value: String): Self = StObject.set(x, "baseURI", value.asInstanceOf[js.Any])
+    
+    inline def setBaseURIUndefined: Self = StObject.set(x, "baseURI", js.undefined)
+    
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    
+    inline def setCache(value: RequestCache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    
+    inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+    
+    inline def setClearPreviousData(value: scala.Boolean): Self = StObject.set(x, "clearPreviousData", value.asInstanceOf[js.Any])
+    
+    inline def setClearPreviousDataUndefined: Self = StObject.set(x, "clearPreviousData", js.undefined)
+    
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    
+    inline def setCredentials(value: include | omit): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+    
+    inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
+    
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setFetch(
+      value: (/* input */ RequestInfo, /* init */ js.UndefOr[RequestInit]) => js.Promise[ExtendedResponse]
+    ): Self = StObject.set(x, "fetch", js.Any.fromFunction2(value))
+    
+    inline def setFetchUndefined: Self = StObject.set(x, "fetch", js.undefined)
+    
+    inline def setForce(value: scala.Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    
+    inline def setForceContentType(value: ContentType): Self = StObject.set(x, "forceContentType", value.asInstanceOf[js.Any])
+    
+    inline def setForceContentTypeUndefined: Self = StObject.set(x, "forceContentType", js.undefined)
+    
+    inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+    
+    inline def setHandlers(value: js.Array[Handler]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
+    
+    inline def setHandlersUndefined: Self = StObject.set(x, "handlers", js.undefined)
+    
+    inline def setHandlersVarargs(value: Handler*): Self = StObject.set(x, "handlers", js.Array(value*))
+    
+    inline def setHeaders(value: HeadersInit): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    
+    inline def setHeadersVarargs(value: (js.Tuple2[String, String])*): Self = StObject.set(x, "headers", js.Array(value*))
+    
+    inline def setIntegrity(value: String): Self = StObject.set(x, "integrity", value.asInstanceOf[js.Any])
+    
+    inline def setIntegrityUndefined: Self = StObject.set(x, "integrity", js.undefined)
+    
+    inline def setKeepalive(value: scala.Boolean): Self = StObject.set(x, "keepalive", value.asInstanceOf[js.Any])
+    
+    inline def setKeepaliveUndefined: Self = StObject.set(x, "keepalive", js.undefined)
+    
+    inline def setMethod(value: HTTPMethods): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    
+    inline def setMode(value: RequestMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    
+    inline def setNoMeta(value: scala.Boolean): Self = StObject.set(x, "noMeta", value.asInstanceOf[js.Any])
+    
+    inline def setNoMetaUndefined: Self = StObject.set(x, "noMeta", js.undefined)
+    
+    inline def setNoRDFa(value: scala.Boolean): Self = StObject.set(x, "noRDFa", value.asInstanceOf[js.Any])
+    
+    inline def setNoRDFaUndefined: Self = StObject.set(x, "noRDFa", js.undefined)
+    
+    inline def setOriginal(value: QuadSubject & js.UndefOr[NamedNode]): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
+    
+    inline def setProxyUsed(value: scala.Boolean): Self = StObject.set(x, "proxyUsed", value.asInstanceOf[js.Any])
+    
+    inline def setProxyUsedUndefined: Self = StObject.set(x, "proxyUsed", js.undefined)
+    
+    inline def setRedirect(value: RequestRedirect): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
+    
+    inline def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
+    
+    inline def setReferrer(value: String): Self = StObject.set(x, "referrer", value.asInstanceOf[js.Any])
+    
+    inline def setReferrerPolicy(value: ReferrerPolicy): Self = StObject.set(x, "referrerPolicy", value.asInstanceOf[js.Any])
+    
+    inline def setReferrerPolicyUndefined: Self = StObject.set(x, "referrerPolicy", js.undefined)
+    
+    inline def setReferrerUndefined: Self = StObject.set(x, "referrer", js.undefined)
+    
+    inline def setReferringTerm(value: NamedNode): Self = StObject.set(x, "referringTerm", value.asInstanceOf[js.Any])
+    
+    inline def setReferringTermUndefined: Self = StObject.set(x, "referringTerm", js.undefined)
+    
+    inline def setReq(value: BlankNode & js.UndefOr[BlankNode]): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
+    
+    inline def setRequestedURI(value: String): Self = StObject.set(x, "requestedURI", value.asInstanceOf[js.Any])
+    
+    inline def setRequestedURIUndefined: Self = StObject.set(x, "requestedURI", js.undefined)
+    
+    inline def setResource(value: QuadSubject): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    
+    inline def setRetriedWithNoCredentials(value: scala.Boolean): Self = StObject.set(x, "retriedWithNoCredentials", value.asInstanceOf[js.Any])
+    
+    inline def setRetriedWithNoCredentialsUndefined: Self = StObject.set(x, "retriedWithNoCredentials", js.undefined)
+    
+    inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    
+    inline def setSignalNull: Self = StObject.set(x, "signal", null)
+    
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    
+    inline def setWithCredentials(value: scala.Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
+    
+    inline def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
+  }
 }
-

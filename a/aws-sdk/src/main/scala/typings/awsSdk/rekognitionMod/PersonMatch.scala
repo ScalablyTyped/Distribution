@@ -34,7 +34,7 @@ object PersonMatch {
     
     inline def setFaceMatchesUndefined: Self = StObject.set(x, "FaceMatches", js.undefined)
     
-    inline def setFaceMatchesVarargs(value: FaceMatch*): Self = StObject.set(x, "FaceMatches", js.Array(value :_*))
+    inline def setFaceMatchesVarargs(value: FaceMatch*): Self = StObject.set(x, "FaceMatches", js.Array(value*))
     
     inline def setPerson(value: PersonDetail): Self = StObject.set(x, "Person", value.asInstanceOf[js.Any])
     

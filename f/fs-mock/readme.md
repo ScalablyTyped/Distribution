@@ -10,10 +10,10 @@ Typings are for version 1.1.3
 | ------------------ | :-------------: |
 | Full name          | fs-mock |
 | Keywords           | fs, file system, posix, linux, windows, testing, mock |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 5890 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 477.0 |
+| # stars            | 7.0 |
 
 ## Links
 - [Homepage](https://github.com/Carrooi/Node-FsMock)

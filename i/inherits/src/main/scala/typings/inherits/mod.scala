@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(constructor: js.Any, superConstructor: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(constructor.asInstanceOf[js.Any], superConstructor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(constructor: Any, superConstructor: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(constructor.asInstanceOf[js.Any], superConstructor.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("inherits", JSImport.Namespace)
   @js.native

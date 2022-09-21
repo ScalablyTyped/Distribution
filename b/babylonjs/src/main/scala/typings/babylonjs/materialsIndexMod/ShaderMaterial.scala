@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Materials/index", "ShaderMaterial")
 @js.native
-class ShaderMaterial protected ()
+open class ShaderMaterial protected ()
   extends typings.babylonjs.shaderMaterialMod.ShaderMaterial {
   /**
     * Instantiate a new shader material.
@@ -24,9 +24,18 @@ class ShaderMaterial protected ()
     *  * object: { vertexSource: "vertex shader code string", fragmentSource: "fragment shader code string" } using with strings containing the shaders code
     *  * string: "./COMMON_NAME", used with external files COMMON_NAME.vertex.fx and COMMON_NAME.fragment.fx in index.html folder.
     * @param options Define the options used to create the shader
+    * @param storeEffectOnSubMeshes true to store effect on submeshes, false to store the effect directly in the material class.
     */
-  def this(name: String, scene: Scene, shaderPath: js.Any) = this()
-  def this(name: String, scene: Scene, shaderPath: js.Any, options: PartialIShaderMaterialOpt) = this()
+  def this(name: String, scene: Scene, shaderPath: Any) = this()
+  def this(name: String, scene: Scene, shaderPath: Any, options: PartialIShaderMaterialOpt) = this()
+  def this(name: String, scene: Scene, shaderPath: Any, options: Unit, storeEffectOnSubMeshes: Boolean) = this()
+  def this(
+    name: String,
+    scene: Scene,
+    shaderPath: Any,
+    options: PartialIShaderMaterialOpt,
+    storeEffectOnSubMeshes: Boolean
+  ) = this()
 }
 /* static members */
 object ShaderMaterial {
@@ -37,22 +46,27 @@ object ShaderMaterial {
   
   /**
     * Creates a ShaderMaterial from a snippet saved by the Inspector
+    * @deprecated Please use ParseFromSnippetAsync instead
     * @param snippetId defines the snippet to load
     * @param scene defines the hosting scene
     * @param rootUrl defines the root URL to use to load textures and relative dependencies
     * @returns a promise that will resolve to the new ShaderMaterial
     */
-  inline def CreateFromSnippetAsync(snippetId: String, scene: Scene): js.Promise[typings.babylonjs.shaderMaterialMod.ShaderMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.shaderMaterialMod.ShaderMaterial]]
-  inline def CreateFromSnippetAsync(snippetId: String, scene: Scene, rootUrl: String): js.Promise[typings.babylonjs.shaderMaterialMod.ShaderMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.shaderMaterialMod.ShaderMaterial]]
+  @JSImport("babylonjs/Materials/index", "ShaderMaterial.CreateFromSnippetAsync")
+  @js.native
+  def CreateFromSnippetAsync: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ShaderMaterial.ParseFromSnippetAsync */ Any = js.native
+  inline def CreateFromSnippetAsync_=(
+    x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ShaderMaterial.ParseFromSnippetAsync */ Any
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreateFromSnippetAsync")(x.asInstanceOf[js.Any])
   
   /**
     * Creates a shader material from parsed shader material data
-    * @param source defines the JSON represnetation of the material
+    * @param source defines the JSON representation of the material
     * @param scene defines the hosting scene
     * @param rootUrl defines the root URL to use to load textures and relative dependencies
     * @returns a new material
     */
-  inline def Parse(source: js.Any, scene: Scene, rootUrl: String): typings.babylonjs.shaderMaterialMod.ShaderMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.shaderMaterialMod.ShaderMaterial]
+  inline def Parse(source: Any, scene: Scene, rootUrl: String): typings.babylonjs.shaderMaterialMod.ShaderMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.shaderMaterialMod.ShaderMaterial]
   
   /**
     * Creates a new ShaderMaterial from a snippet saved in a remote file
@@ -64,6 +78,16 @@ object ShaderMaterial {
     */
   inline def ParseFromFileAsync(name: Nullable[String], url: String, scene: Scene): js.Promise[typings.babylonjs.shaderMaterialMod.ShaderMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.shaderMaterialMod.ShaderMaterial]]
   inline def ParseFromFileAsync(name: Nullable[String], url: String, scene: Scene, rootUrl: String): js.Promise[typings.babylonjs.shaderMaterialMod.ShaderMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.shaderMaterialMod.ShaderMaterial]]
+  
+  /**
+    * Creates a ShaderMaterial from a snippet saved by the Inspector
+    * @param snippetId defines the snippet to load
+    * @param scene defines the hosting scene
+    * @param rootUrl defines the root URL to use to load textures and relative dependencies
+    * @returns a promise that will resolve to the new ShaderMaterial
+    */
+  inline def ParseFromSnippetAsync(snippetId: String, scene: Scene): js.Promise[typings.babylonjs.shaderMaterialMod.ShaderMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.shaderMaterialMod.ShaderMaterial]]
+  inline def ParseFromSnippetAsync(snippetId: String, scene: Scene, rootUrl: String): js.Promise[typings.babylonjs.shaderMaterialMod.ShaderMaterial] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.shaderMaterialMod.ShaderMaterial]]
   
   /** Define the Url to load snippets */
   @JSImport("babylonjs/Materials/index", "ShaderMaterial.SnippetUrl")

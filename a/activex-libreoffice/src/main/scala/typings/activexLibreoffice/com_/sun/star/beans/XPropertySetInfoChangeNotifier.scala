@@ -34,7 +34,7 @@ object XPropertySetInfoChangeNotifier {
   inline def apply(
     acquire: () => Unit,
     addPropertySetInfoChangeListener: XPropertySetInfoChangeListener => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removePropertySetInfoChangeListener: XPropertySetInfoChangeListener => Unit
   ): XPropertySetInfoChangeNotifier = {

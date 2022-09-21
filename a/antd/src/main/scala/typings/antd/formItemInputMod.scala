@@ -18,27 +18,25 @@ object formItemInputMod extends Shortcut {
   
   trait FormItemInputMiscProps extends StObject {
     
-    /**
-      * @private Internal usage, do not use in any of your production.
-      */
+    /** @private Internal Usage, do not use in any of your production. */
     var _internalItemRender: js.UndefOr[Mark] = js.undefined
     
     var children: ReactNode
     
     var errors: js.Array[ReactNode]
     
-    var hasFeedback: js.UndefOr[Boolean] = js.undefined
+    var marginBottom: js.UndefOr[Double | Null] = js.undefined
     
-    def onDomErrorVisibleChange(visible: Boolean): Unit
+    var onErrorVisibleChanged: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
     
     var prefixCls: String
     
-    var validateStatus: js.UndefOr[ValidateStatus] = js.undefined
+    var warnings: js.Array[ReactNode]
   }
   object FormItemInputMiscProps {
     
-    inline def apply(errors: js.Array[ReactNode], onDomErrorVisibleChange: Boolean => Unit, prefixCls: String): FormItemInputMiscProps = {
-      val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], onDomErrorVisibleChange = js.Any.fromFunction1(onDomErrorVisibleChange), prefixCls = prefixCls.asInstanceOf[js.Any])
+    inline def apply(errors: js.Array[ReactNode], prefixCls: String, warnings: js.Array[ReactNode]): FormItemInputMiscProps = {
+      val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any], warnings = warnings.asInstanceOf[js.Any])
       __obj.asInstanceOf[FormItemInputMiscProps]
     }
     
@@ -50,19 +48,23 @@ object formItemInputMod extends Shortcut {
       
       inline def setErrors(value: js.Array[ReactNode]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      inline def setErrorsVarargs(value: ReactNode*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: ReactNode*): Self = StObject.set(x, "errors", js.Array(value*))
       
-      inline def setHasFeedback(value: Boolean): Self = StObject.set(x, "hasFeedback", value.asInstanceOf[js.Any])
+      inline def setMarginBottom(value: Double): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
       
-      inline def setHasFeedbackUndefined: Self = StObject.set(x, "hasFeedback", js.undefined)
+      inline def setMarginBottomNull: Self = StObject.set(x, "marginBottom", null)
       
-      inline def setOnDomErrorVisibleChange(value: Boolean => Unit): Self = StObject.set(x, "onDomErrorVisibleChange", js.Any.fromFunction1(value))
+      inline def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
+      
+      inline def setOnErrorVisibleChanged(value: /* visible */ Boolean => Unit): Self = StObject.set(x, "onErrorVisibleChanged", js.Any.fromFunction1(value))
+      
+      inline def setOnErrorVisibleChangedUndefined: Self = StObject.set(x, "onErrorVisibleChanged", js.undefined)
       
       inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      inline def setValidateStatus(value: ValidateStatus): Self = StObject.set(x, "validateStatus", value.asInstanceOf[js.Any])
+      inline def setWarnings(value: js.Array[ReactNode]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
       
-      inline def setValidateStatusUndefined: Self = StObject.set(x, "validateStatus", js.undefined)
+      inline def setWarningsVarargs(value: ReactNode*): Self = StObject.set(x, "warnings", js.Array(value*))
       
       inline def set_internalItemRender(value: Mark): Self = StObject.set(x, "_internalItemRender", value.asInstanceOf[js.Any])
       
@@ -73,6 +75,8 @@ object formItemInputMod extends Shortcut {
   trait FormItemInputProps extends StObject {
     
     var extra: js.UndefOr[ReactNode] = js.undefined
+    
+    var fieldId: js.UndefOr[String] = js.undefined
     
     var help: js.UndefOr[ReactNode] = js.undefined
     
@@ -92,6 +96,10 @@ object formItemInputMod extends Shortcut {
       inline def setExtra(value: ReactNode): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
       
       inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
+      
+      inline def setFieldId(value: String): Self = StObject.set(x, "fieldId", value.asInstanceOf[js.Any])
+      
+      inline def setFieldIdUndefined: Self = StObject.set(x, "fieldId", js.undefined)
       
       inline def setHelp(value: ReactNode): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
       

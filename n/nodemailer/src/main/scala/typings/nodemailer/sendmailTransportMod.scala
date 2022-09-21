@@ -1,12 +1,12 @@
 package typings.nodemailer
 
+import typings.nodemailer.mailerMod.Address
 import typings.nodemailer.mimeNodeMod.Envelope
 import typings.nodemailer.mod.Transport
 import typings.nodemailer.mod.TransportOptions
 import typings.nodemailer.nodemailerBooleans.`false`
 import typings.nodemailer.nodemailerBooleans.`true`
 import typings.nodemailer.sharedMod.Logger
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ object sendmailTransportMod {
   
   @JSImport("nodemailer/lib/sendmail-transport", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with SendmailTransport {
     def this(options: Options) = this()
@@ -28,7 +28,7 @@ object sendmailTransportMod {
     
     /* CompleteClass */
     @JSName("mailer")
-    var mailer_SendmailTransport: typings.nodemailer.mailerMod.^ = js.native
+    var mailer_SendmailTransport: typings.nodemailer.mailerMod.^[SentMessageInfo] = js.native
     
     /* CompleteClass */
     var name: String = js.native
@@ -41,13 +41,13 @@ object sendmailTransportMod {
     
     /* CompleteClass */
     override def send(
-      mail: typings.nodemailer.mailMessageMod.^,
-      callback: js.Function2[/* err */ Error | Null, /* info */ typings.nodemailer.mod.SentMessageInfo, Unit]
+      mail: typings.nodemailer.mailMessageMod.^[SentMessageInfo],
+      callback: js.Function2[/* err */ js.Error | Null, SentMessageInfo, Unit]
     ): Unit = js.native
     
     /* CompleteClass */
     var verify: (js.UndefOr[
-        js.Function1[/* callback */ js.Function2[/* err */ Error | Null, `true`, Unit], Unit]
+        js.Function1[/* callback */ js.Function2[/* err */ js.Error | Null, `true`, Unit], Unit]
       ]) & js.UndefOr[js.Function0[js.Promise[`true`]]] = js.native
     
     /* CompleteClass */
@@ -88,7 +88,7 @@ object sendmailTransportMod {
       
       inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setNewline(value: String): Self = StObject.set(x, "newline", value.asInstanceOf[js.Any])
       
@@ -104,14 +104,14 @@ object sendmailTransportMod {
   
   trait SendmailTransport
     extends StObject
-       with Transport {
+       with Transport[SentMessageInfo] {
     
     var args: js.Array[String] | `false`
     
     var logger: Logger
     
     @JSName("mailer")
-    var mailer_SendmailTransport: typings.nodemailer.mailerMod.^
+    var mailer_SendmailTransport: typings.nodemailer.mailerMod.^[SentMessageInfo]
     
     var options: Options
     
@@ -124,13 +124,13 @@ object sendmailTransportMod {
     inline def apply(
       args: js.Array[String] | `false`,
       logger: Logger,
-      mailer: typings.nodemailer.mailerMod.^,
+      mailer: typings.nodemailer.mailerMod.^[SentMessageInfo],
       name: String,
       options: Options,
       path: String,
-      send: (typings.nodemailer.mailMessageMod.^, js.Function2[/* err */ Error | Null, /* info */ typings.nodemailer.mod.SentMessageInfo, Unit]) => Unit,
+      send: (typings.nodemailer.mailMessageMod.^[SentMessageInfo], js.Function2[/* err */ js.Error | Null, SentMessageInfo, Unit]) => Unit,
       verify: (js.UndefOr[
-          js.Function1[/* callback */ js.Function2[/* err */ Error | Null, `true`, Unit], Unit]
+          js.Function1[/* callback */ js.Function2[/* err */ js.Error | Null, `true`, Unit], Unit]
         ]) & js.UndefOr[js.Function0[js.Promise[`true`]]],
       version: String,
       winbreak: Boolean
@@ -143,11 +143,11 @@ object sendmailTransportMod {
       
       inline def setArgs(value: js.Array[String] | `false`): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
-      inline def setMailer(value: typings.nodemailer.mailerMod.^): Self = StObject.set(x, "mailer", value.asInstanceOf[js.Any])
+      inline def setMailer(value: typings.nodemailer.mailerMod.^[SentMessageInfo]): Self = StObject.set(x, "mailer", value.asInstanceOf[js.Any])
       
       inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -159,24 +159,49 @@ object sendmailTransportMod {
   
   trait SentMessageInfo extends StObject {
     
+    var accepted: js.Array[String | Address]
+    
     var envelope: Envelope
     
     var messageId: String
+    
+    var pending: js.Array[String | Address]
+    
+    var rejected: js.Array[String | Address]
     
     var response: String
   }
   object SentMessageInfo {
     
-    inline def apply(envelope: Envelope, messageId: String, response: String): SentMessageInfo = {
-      val __obj = js.Dynamic.literal(envelope = envelope.asInstanceOf[js.Any], messageId = messageId.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
+    inline def apply(
+      accepted: js.Array[String | Address],
+      envelope: Envelope,
+      messageId: String,
+      pending: js.Array[String | Address],
+      rejected: js.Array[String | Address],
+      response: String
+    ): SentMessageInfo = {
+      val __obj = js.Dynamic.literal(accepted = accepted.asInstanceOf[js.Any], envelope = envelope.asInstanceOf[js.Any], messageId = messageId.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any], rejected = rejected.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
       __obj.asInstanceOf[SentMessageInfo]
     }
     
     extension [Self <: SentMessageInfo](x: Self) {
       
+      inline def setAccepted(value: js.Array[String | Address]): Self = StObject.set(x, "accepted", value.asInstanceOf[js.Any])
+      
+      inline def setAcceptedVarargs(value: (String | Address)*): Self = StObject.set(x, "accepted", js.Array(value*))
+      
       inline def setEnvelope(value: Envelope): Self = StObject.set(x, "envelope", value.asInstanceOf[js.Any])
       
       inline def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
+      
+      inline def setPending(value: js.Array[String | Address]): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+      
+      inline def setPendingVarargs(value: (String | Address)*): Self = StObject.set(x, "pending", js.Array(value*))
+      
+      inline def setRejected(value: js.Array[String | Address]): Self = StObject.set(x, "rejected", value.asInstanceOf[js.Any])
+      
+      inline def setRejectedVarargs(value: (String | Address)*): Self = StObject.set(x, "rejected", js.Array(value*))
       
       inline def setResponse(value: String): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }

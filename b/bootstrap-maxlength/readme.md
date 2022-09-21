@@ -10,15 +10,12 @@ A visual feedback indicator for the MaxLength attribute
 | ------------------ | :-------------: |
 | Full name          | bootstrap-maxlength |
 | Keywords           | form, maxlength, html5, input, feedback, jquery-plugin, jquery, bootstrap, bs |
-| # releases         | 3 |
-| # dependents       | 5 |
-| # downloads        | 374965 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 39564.666666666664 |
+| # stars            | 763.0 |
 
 ## Links
-- [Homepage](https://github.com/mimo84/bootstrap-maxlength)
-- [Bugs](https://github.com/mimo84/bootstrap-maxlength/issues)
-- [Repository](https://github.com/mimo84/bootstrap-maxlength)
 - [Npm](https://www.npmjs.com/package/bootstrap-maxlength)
     
 

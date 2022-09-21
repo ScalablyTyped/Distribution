@@ -6,12 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/router", "RouteConfigLoadEnd")
 @js.native
-class RouteConfigLoadEnd protected ()
+open class RouteConfigLoadEnd protected ()
   extends StObject
-     with Event {
+     with Event2 {
   def this(/** @docsNotRequired */
   route: Route) = this()
   
   /** @docsNotRequired */
   var route: Route = js.native
+  
+  val `type`: String | Double = js.native
 }

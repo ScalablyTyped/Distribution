@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_adsense
 
-Typings are for version 1.4.20201002
+Typings are for version 2.0.20220811
 
 ## Library description:
 TypeScript typings for AdSense Management API v2
@@ -10,10 +10,10 @@ TypeScript typings for AdSense Management API v2
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.adsense |
 | Keywords           | - |
-| # releases         | 39 |
-| # dependents       | 1 |
-| # downloads        | 4600 |
-| # stars            | 0 |
+| # releases         | 216 |
+| # dependents       | 0.0 |
+| # downloads        | 2114.6666666666665 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

@@ -22,6 +22,6 @@ object TerminateWorkspacesRequest {
     
     inline def setTerminateWorkspaceRequests(value: TerminateWorkspaceRequests): Self = StObject.set(x, "TerminateWorkspaceRequests", value.asInstanceOf[js.Any])
     
-    inline def setTerminateWorkspaceRequestsVarargs(value: TerminateRequest*): Self = StObject.set(x, "TerminateWorkspaceRequests", js.Array(value :_*))
+    inline def setTerminateWorkspaceRequestsVarargs(value: TerminateRequest*): Self = StObject.set(x, "TerminateWorkspaceRequests", js.Array(value*))
   }
 }

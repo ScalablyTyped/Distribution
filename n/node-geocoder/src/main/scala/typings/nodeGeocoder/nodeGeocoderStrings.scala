@@ -52,6 +52,12 @@ object nodeGeocoderStrings {
   inline def locationiq: locationiq = "locationiq".asInstanceOf[locationiq]
   
   @js.native
+  sealed trait mapbox
+    extends StObject
+       with Providers
+  inline def mapbox: mapbox = "mapbox".asInstanceOf[mapbox]
+  
+  @js.native
   sealed trait mapquest
     extends StObject
        with Providers

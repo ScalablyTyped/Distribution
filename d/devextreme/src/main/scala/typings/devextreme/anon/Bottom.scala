@@ -6,12 +6,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Bottom extends StObject {
   
+  /**
+    * 
+    */
   var bottom: js.UndefOr[Double] = js.undefined
   
+  /**
+    * 
+    */
   var left: js.UndefOr[Double] = js.undefined
   
+  /**
+    * 
+    */
   var right: js.UndefOr[Double] = js.undefined
   
+  /**
+    * 
+    */
   var top: js.UndefOr[Double] = js.undefined
 }
 object Bottom {

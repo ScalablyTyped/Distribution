@@ -22,6 +22,6 @@ object VastCompanionTrackingEvents {
     
     inline def setCreativeView(value: js.Array[String]): Self = StObject.set(x, "creativeView", value.asInstanceOf[js.Any])
     
-    inline def setCreativeViewVarargs(value: String*): Self = StObject.set(x, "creativeView", js.Array(value :_*))
+    inline def setCreativeViewVarargs(value: String*): Self = StObject.set(x, "creativeView", js.Array(value*))
   }
 }

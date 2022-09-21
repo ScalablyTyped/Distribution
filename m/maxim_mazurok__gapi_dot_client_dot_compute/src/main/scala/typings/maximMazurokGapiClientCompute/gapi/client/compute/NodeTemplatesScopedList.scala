@@ -26,7 +26,7 @@ object NodeTemplatesScopedList {
     
     inline def setNodeTemplatesUndefined: Self = StObject.set(x, "nodeTemplates", js.undefined)
     
-    inline def setNodeTemplatesVarargs(value: NodeTemplate*): Self = StObject.set(x, "nodeTemplates", js.Array(value :_*))
+    inline def setNodeTemplatesVarargs(value: NodeTemplate*): Self = StObject.set(x, "nodeTemplates", js.Array(value*))
     
     inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     

@@ -71,6 +71,38 @@ trait KinesisVideo extends Service {
   ): Request[DeleteStreamOutput, AWSError] = js.native
   
   /**
+    * Gets the ImageGenerationConfiguration for a given Kinesis video stream.
+    */
+  def describeImageGenerationConfiguration(): Request[DescribeImageGenerationConfigurationOutput, AWSError] = js.native
+  def describeImageGenerationConfiguration(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeImageGenerationConfigurationOutput, Unit]
+  ): Request[DescribeImageGenerationConfigurationOutput, AWSError] = js.native
+  /**
+    * Gets the ImageGenerationConfiguration for a given Kinesis video stream.
+    */
+  def describeImageGenerationConfiguration(params: DescribeImageGenerationConfigurationInput): Request[DescribeImageGenerationConfigurationOutput, AWSError] = js.native
+  def describeImageGenerationConfiguration(
+    params: DescribeImageGenerationConfigurationInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeImageGenerationConfigurationOutput, Unit]
+  ): Request[DescribeImageGenerationConfigurationOutput, AWSError] = js.native
+  
+  /**
+    * Gets the NotificationConfiguration for a given Kinesis video stream.
+    */
+  def describeNotificationConfiguration(): Request[DescribeNotificationConfigurationOutput, AWSError] = js.native
+  def describeNotificationConfiguration(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeNotificationConfigurationOutput, Unit]
+  ): Request[DescribeNotificationConfigurationOutput, AWSError] = js.native
+  /**
+    * Gets the NotificationConfiguration for a given Kinesis video stream.
+    */
+  def describeNotificationConfiguration(params: DescribeNotificationConfigurationInput): Request[DescribeNotificationConfigurationOutput, AWSError] = js.native
+  def describeNotificationConfiguration(
+    params: DescribeNotificationConfigurationInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeNotificationConfigurationOutput, Unit]
+  ): Request[DescribeNotificationConfigurationOutput, AWSError] = js.native
+  
+  /**
     * Returns the most current information about the signaling channel. You must specify either the name or the Amazon Resource Name (ARN) of the channel that you want to describe.
     */
   def describeSignalingChannel(): Request[DescribeSignalingChannelOutput, AWSError] = js.native
@@ -183,12 +215,12 @@ trait KinesisVideo extends Service {
   ): Request[ListTagsForStreamOutput, AWSError] = js.native
   
   /**
-    * Adds one or more tags to a signaling channel. A tag is a key-value pair (the value is optional) that you can define and assign to AWS resources. If you specify a tag that already exists, the tag value is replaced with the value that you specify in the request. For more information, see Using Cost Allocation Tags in the AWS Billing and Cost Management User Guide.
+    * Adds one or more tags to a signaling channel. A tag is a key-value pair (the value is optional) that you can define and assign to Amazon Web Services resources. If you specify a tag that already exists, the tag value is replaced with the value that you specify in the request. For more information, see Using Cost Allocation Tags in the Billing and Cost Management and Cost Management User Guide.
     */
   def tagResource(): Request[TagResourceOutput, AWSError] = js.native
   def tagResource(callback: js.Function2[/* err */ AWSError, /* data */ TagResourceOutput, Unit]): Request[TagResourceOutput, AWSError] = js.native
   /**
-    * Adds one or more tags to a signaling channel. A tag is a key-value pair (the value is optional) that you can define and assign to AWS resources. If you specify a tag that already exists, the tag value is replaced with the value that you specify in the request. For more information, see Using Cost Allocation Tags in the AWS Billing and Cost Management User Guide.
+    * Adds one or more tags to a signaling channel. A tag is a key-value pair (the value is optional) that you can define and assign to Amazon Web Services resources. If you specify a tag that already exists, the tag value is replaced with the value that you specify in the request. For more information, see Using Cost Allocation Tags in the Billing and Cost Management and Cost Management User Guide.
     */
   def tagResource(params: TagResourceInput): Request[TagResourceOutput, AWSError] = js.native
   def tagResource(
@@ -197,12 +229,12 @@ trait KinesisVideo extends Service {
   ): Request[TagResourceOutput, AWSError] = js.native
   
   /**
-    * Adds one or more tags to a stream. A tag is a key-value pair (the value is optional) that you can define and assign to AWS resources. If you specify a tag that already exists, the tag value is replaced with the value that you specify in the request. For more information, see Using Cost Allocation Tags in the AWS Billing and Cost Management User Guide.  You must provide either the StreamName or the StreamARN. This operation requires permission for the KinesisVideo:TagStream action. Kinesis video streams support up to 50 tags.
+    * Adds one or more tags to a stream. A tag is a key-value pair (the value is optional) that you can define and assign to Amazon Web Services resources. If you specify a tag that already exists, the tag value is replaced with the value that you specify in the request. For more information, see Using Cost Allocation Tags in the Billing and Cost Management and Cost Management User Guide.  You must provide either the StreamName or the StreamARN. This operation requires permission for the KinesisVideo:TagStream action. A Kinesis video stream can support up to 50 tags.
     */
   def tagStream(): Request[TagStreamOutput, AWSError] = js.native
   def tagStream(callback: js.Function2[/* err */ AWSError, /* data */ TagStreamOutput, Unit]): Request[TagStreamOutput, AWSError] = js.native
   /**
-    * Adds one or more tags to a stream. A tag is a key-value pair (the value is optional) that you can define and assign to AWS resources. If you specify a tag that already exists, the tag value is replaced with the value that you specify in the request. For more information, see Using Cost Allocation Tags in the AWS Billing and Cost Management User Guide.  You must provide either the StreamName or the StreamARN. This operation requires permission for the KinesisVideo:TagStream action. Kinesis video streams support up to 50 tags.
+    * Adds one or more tags to a stream. A tag is a key-value pair (the value is optional) that you can define and assign to Amazon Web Services resources. If you specify a tag that already exists, the tag value is replaced with the value that you specify in the request. For more information, see Using Cost Allocation Tags in the Billing and Cost Management and Cost Management User Guide.  You must provide either the StreamName or the StreamARN. This operation requires permission for the KinesisVideo:TagStream action. A Kinesis video stream can support up to 50 tags.
     */
   def tagStream(params: TagStreamInput): Request[TagStreamOutput, AWSError] = js.native
   def tagStream(
@@ -251,6 +283,36 @@ trait KinesisVideo extends Service {
     params: UpdateDataRetentionInput,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateDataRetentionOutput, Unit]
   ): Request[UpdateDataRetentionOutput, AWSError] = js.native
+  
+  /**
+    * Updates the StreamInfo and ImageProcessingConfiguration fields.
+    */
+  def updateImageGenerationConfiguration(): Request[UpdateImageGenerationConfigurationOutput, AWSError] = js.native
+  def updateImageGenerationConfiguration(
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateImageGenerationConfigurationOutput, Unit]
+  ): Request[UpdateImageGenerationConfigurationOutput, AWSError] = js.native
+  /**
+    * Updates the StreamInfo and ImageProcessingConfiguration fields.
+    */
+  def updateImageGenerationConfiguration(params: UpdateImageGenerationConfigurationInput): Request[UpdateImageGenerationConfigurationOutput, AWSError] = js.native
+  def updateImageGenerationConfiguration(
+    params: UpdateImageGenerationConfigurationInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateImageGenerationConfigurationOutput, Unit]
+  ): Request[UpdateImageGenerationConfigurationOutput, AWSError] = js.native
+  
+  /**
+    * Updates the notification information for a stream.
+    */
+  def updateNotificationConfiguration(): Request[UpdateNotificationConfigurationOutput, AWSError] = js.native
+  def updateNotificationConfiguration(callback: js.Function2[/* err */ AWSError, /* data */ UpdateNotificationConfigurationOutput, Unit]): Request[UpdateNotificationConfigurationOutput, AWSError] = js.native
+  /**
+    * Updates the notification information for a stream.
+    */
+  def updateNotificationConfiguration(params: UpdateNotificationConfigurationInput): Request[UpdateNotificationConfigurationOutput, AWSError] = js.native
+  def updateNotificationConfiguration(
+    params: UpdateNotificationConfigurationInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateNotificationConfigurationOutput, Unit]
+  ): Request[UpdateNotificationConfigurationOutput, AWSError] = js.native
   
   /**
     * Updates the existing signaling channel. This is an asynchronous operation and takes time to complete.  If the MessageTtlSeconds value is updated (either increased or reduced), it only applies to new messages sent via this channel after it's been updated. Existing messages are still expired as per the previous MessageTtlSeconds value.

@@ -26,7 +26,7 @@ trait UploadType extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** The matter ID of the parent matter for which the saved query is to be created. */
+  /** The ID of the matter to create the saved query in. */
   var matterId: String
   
   /** OAuth 2.0 token for the current user. */

@@ -17,10 +17,10 @@ object mod {
   
   @JSImport("rmc-drawer", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[PartialDrawerProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[PartialDrawerProps, js.Object, Any]
   
-  type Drawer = Component[PartialDrawerProps, js.Object, js.Any]
+  type Drawer = Component[PartialDrawerProps, js.Object, Any]
   
   trait DrawerProps extends StObject {
     
@@ -71,7 +71,7 @@ object mod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

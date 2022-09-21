@@ -8,5 +8,5 @@ object replicationRuleFilterMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/_ReplicationRuleFilter", "_ReplicationRuleFilter")
   @js.native
-  val ReplicationRuleFilter: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ReplicationRuleFilter: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

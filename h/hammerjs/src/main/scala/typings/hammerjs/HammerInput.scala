@@ -1,5 +1,9 @@
 package typings.hammerjs
 
+import typings.hammerjs.hammerjsNumbers.`1`
+import typings.hammerjs.hammerjsNumbers.`2`
+import typings.hammerjs.hammerjsNumbers.`4`
+import typings.hammerjs.hammerjsNumbers.`8`
 import typings.std.HTMLElement
 import typings.std.MouseEvent
 import typings.std.PointerEvent
@@ -17,7 +21,7 @@ trait HammerInput extends StObject {
   var center: HammerPoint
   
   /** Array with all new/moved/lost pointers. */
-  var changedPointers: js.Array[js.Any]
+  var changedPointers: js.Array[Any]
   
   /** Total time in ms since the first input. */
   var deltaTime: Double
@@ -37,7 +41,7 @@ trait HammerInput extends StObject {
   var distance: Double
   
   /** Event type, matches the INPUT constants. */
-  var eventType: Double
+  var eventType: `1` | `2` | `4` | `8`
   
   def handler(): Unit
   
@@ -49,14 +53,23 @@ trait HammerInput extends StObject {
   /** true when the first input. */
   var isFirst: Boolean
   
+  /** Maximum number of pointers detected in the gesture */
+  var maxPointers: Double
+  
   /** Direction moved from it's starting point. Matches the DIRECTION constants. */
   var offsetDirection: Double
+  
+  var overallVelocity: Double
+  
+  var overallVelocityX: Double
+  
+  var overallVelocityY: Double
   
   /** Primary pointer type, could be touch, mouse, pen or kinect. */
   var pointerType: String
   
   /** Array with all pointers, including the ended pointers (touchend, mouseup). */
-  var pointers: js.Array[js.Any]
+  var pointers: js.Array[Any]
   
   /** Reference to the srcEvent.preventDefault() method. Only for experts! */
   var preventDefault: js.Function
@@ -72,6 +85,9 @@ trait HammerInput extends StObject {
   
   /** Target that received the event. */
   var target: HTMLElement
+  
+  /** Timestamp of a gesture */
+  var timeStamp: Double
   
   /** Name of the event. Like panstart. */
   var `type`: String
@@ -90,32 +106,37 @@ object HammerInput {
   inline def apply(
     angle: Double,
     center: HammerPoint,
-    changedPointers: js.Array[js.Any],
+    changedPointers: js.Array[Any],
     deltaTime: Double,
     deltaX: Double,
     deltaY: Double,
     destroy: () => Unit,
     direction: Double,
     distance: Double,
-    eventType: Double,
+    eventType: `1` | `2` | `4` | `8`,
     handler: () => Unit,
     init: () => Unit,
     isFinal: Boolean,
     isFirst: Boolean,
+    maxPointers: Double,
     offsetDirection: Double,
+    overallVelocity: Double,
+    overallVelocityX: Double,
+    overallVelocityY: Double,
     pointerType: String,
-    pointers: js.Array[js.Any],
+    pointers: js.Array[Any],
     preventDefault: js.Function,
     rotation: Double,
     scale: Double,
     srcEvent: TouchEvent | MouseEvent | PointerEvent,
     target: HTMLElement,
+    timeStamp: Double,
     `type`: String,
     velocity: Double,
     velocityX: Double,
     velocityY: Double
   ): HammerInput = {
-    val __obj = js.Dynamic.literal(angle = angle.asInstanceOf[js.Any], center = center.asInstanceOf[js.Any], changedPointers = changedPointers.asInstanceOf[js.Any], deltaTime = deltaTime.asInstanceOf[js.Any], deltaX = deltaX.asInstanceOf[js.Any], deltaY = deltaY.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), direction = direction.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], eventType = eventType.asInstanceOf[js.Any], handler = js.Any.fromFunction0(handler), init = js.Any.fromFunction0(init), isFinal = isFinal.asInstanceOf[js.Any], isFirst = isFirst.asInstanceOf[js.Any], offsetDirection = offsetDirection.asInstanceOf[js.Any], pointerType = pointerType.asInstanceOf[js.Any], pointers = pointers.asInstanceOf[js.Any], preventDefault = preventDefault.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], srcEvent = srcEvent.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], velocity = velocity.asInstanceOf[js.Any], velocityX = velocityX.asInstanceOf[js.Any], velocityY = velocityY.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(angle = angle.asInstanceOf[js.Any], center = center.asInstanceOf[js.Any], changedPointers = changedPointers.asInstanceOf[js.Any], deltaTime = deltaTime.asInstanceOf[js.Any], deltaX = deltaX.asInstanceOf[js.Any], deltaY = deltaY.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), direction = direction.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], eventType = eventType.asInstanceOf[js.Any], handler = js.Any.fromFunction0(handler), init = js.Any.fromFunction0(init), isFinal = isFinal.asInstanceOf[js.Any], isFirst = isFirst.asInstanceOf[js.Any], maxPointers = maxPointers.asInstanceOf[js.Any], offsetDirection = offsetDirection.asInstanceOf[js.Any], overallVelocity = overallVelocity.asInstanceOf[js.Any], overallVelocityX = overallVelocityX.asInstanceOf[js.Any], overallVelocityY = overallVelocityY.asInstanceOf[js.Any], pointerType = pointerType.asInstanceOf[js.Any], pointers = pointers.asInstanceOf[js.Any], preventDefault = preventDefault.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], srcEvent = srcEvent.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], velocity = velocity.asInstanceOf[js.Any], velocityX = velocityX.asInstanceOf[js.Any], velocityY = velocityY.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[HammerInput]
   }
@@ -126,9 +147,9 @@ object HammerInput {
     
     inline def setCenter(value: HammerPoint): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
-    inline def setChangedPointers(value: js.Array[js.Any]): Self = StObject.set(x, "changedPointers", value.asInstanceOf[js.Any])
+    inline def setChangedPointers(value: js.Array[Any]): Self = StObject.set(x, "changedPointers", value.asInstanceOf[js.Any])
     
-    inline def setChangedPointersVarargs(value: js.Any*): Self = StObject.set(x, "changedPointers", js.Array(value :_*))
+    inline def setChangedPointersVarargs(value: Any*): Self = StObject.set(x, "changedPointers", js.Array(value*))
     
     inline def setDeltaTime(value: Double): Self = StObject.set(x, "deltaTime", value.asInstanceOf[js.Any])
     
@@ -142,7 +163,7 @@ object HammerInput {
     
     inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    inline def setEventType(value: Double): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
+    inline def setEventType(value: `1` | `2` | `4` | `8`): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
     inline def setHandler(value: () => Unit): Self = StObject.set(x, "handler", js.Any.fromFunction0(value))
     
@@ -152,13 +173,21 @@ object HammerInput {
     
     inline def setIsFirst(value: Boolean): Self = StObject.set(x, "isFirst", value.asInstanceOf[js.Any])
     
+    inline def setMaxPointers(value: Double): Self = StObject.set(x, "maxPointers", value.asInstanceOf[js.Any])
+    
     inline def setOffsetDirection(value: Double): Self = StObject.set(x, "offsetDirection", value.asInstanceOf[js.Any])
+    
+    inline def setOverallVelocity(value: Double): Self = StObject.set(x, "overallVelocity", value.asInstanceOf[js.Any])
+    
+    inline def setOverallVelocityX(value: Double): Self = StObject.set(x, "overallVelocityX", value.asInstanceOf[js.Any])
+    
+    inline def setOverallVelocityY(value: Double): Self = StObject.set(x, "overallVelocityY", value.asInstanceOf[js.Any])
     
     inline def setPointerType(value: String): Self = StObject.set(x, "pointerType", value.asInstanceOf[js.Any])
     
-    inline def setPointers(value: js.Array[js.Any]): Self = StObject.set(x, "pointers", value.asInstanceOf[js.Any])
+    inline def setPointers(value: js.Array[Any]): Self = StObject.set(x, "pointers", value.asInstanceOf[js.Any])
     
-    inline def setPointersVarargs(value: js.Any*): Self = StObject.set(x, "pointers", js.Array(value :_*))
+    inline def setPointersVarargs(value: Any*): Self = StObject.set(x, "pointers", js.Array(value*))
     
     inline def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     
@@ -169,6 +198,8 @@ object HammerInput {
     inline def setSrcEvent(value: TouchEvent | MouseEvent | PointerEvent): Self = StObject.set(x, "srcEvent", value.asInstanceOf[js.Any])
     
     inline def setTarget(value: HTMLElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    
+    inline def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

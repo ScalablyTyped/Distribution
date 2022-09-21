@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-navigation", "FlatList")
 @js.native
-class FlatList[ItemT] protected ()
+open class FlatList[ItemT] protected ()
   extends typings.reactNative.mod.FlatList[ItemT] {
   def this(props: FlatListProps[ItemT]) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: FlatListProps[ItemT], context: js.Any) = this()
+  def this(props: FlatListProps[ItemT], context: Any) = this()
 }

@@ -5,6 +5,7 @@ import typings.react.mod.AnchorHTMLAttributes
 import typings.react.mod.ElementType
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
+import typings.reactMdLink.anon.PickLinkWithComponentProp
 import typings.reactMdLink.reactMdLinkStrings._blank
 import typings.reactMdLink.reactMdLinkStrings._parent
 import typings.reactMdLink.reactMdLinkStrings._self
@@ -19,11 +20,7 @@ object linkMod {
   @JSImport("@react-md/link/types/Link", "Link")
   @js.native
   val Link: ForwardRefExoticComponent[
-    (LinkProps & (RefAttributes[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 178 */ js.Any
-    ])) | (LinkWithComponentProps & (RefAttributes[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 178 */ js.Any
-    ]))
+    (LinkProps & (RefAttributes[HTMLAnchorElement | ElementType[Any]])) | PickLinkWithComponentProp
   ] = js.native
   
   trait LinkProps
@@ -33,11 +30,11 @@ object linkMod {
     /**
       * An optional component to render as. This should really only be used if you
       * are using a router library like
-      * [react-router](https://github.com/ReactTraining/react-router) or
-      * [@reach/router](https://github.com/reach/router). This will call
+      * {@link https://github.com/ReactTraining/react-router|react-router} or
+      * {@link https://github.com/reach/router|@reach/router}. This will call
       * `createElement` with this value and provide all props and class name.
       */
-    var component: js.UndefOr[ElementType[js.Any]] = js.undefined
+    var component: js.UndefOr[ElementType[Any]] = js.undefined
     
     /**
       * Boolean if the Link should be positioned with a flexbox and align the items
@@ -47,12 +44,12 @@ object linkMod {
     var flexCentered: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * Boolean if the link should automatically be updated to apply `rel=noopener
-      * noreferrer` when the `target` prop is set to `"_blank"`. This is
-      * recommended to have enabled by default, but can be disabled by setting this
-      * prop to `false` or specificying a `rel` prop yourself. You can read more
-      * about the reason for this
-      * [here](https://mathiasbynens.github.io/rel-noopener/).
+      * Boolean if the link should automatically be updated to apply
+      * `rel=noopener noreferrer` when the `target` prop is set to `"_blank"`. This
+      * is recommended to have enabled by default, but can be disabled by setting
+      * this prop to `false` or specifying a `rel` prop yourself. You can read
+      * more about the reason for this
+      * {@link https://mathiasbynens.github.io/rel-noopener/|here}.
       */
     var preventMaliciousTarget: js.UndefOr[Boolean] = js.undefined
     
@@ -74,7 +71,7 @@ object linkMod {
     
     extension [Self <: LinkProps](x: Self) {
       
-      inline def setComponent(value: ElementType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: ElementType[Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
@@ -100,21 +97,21 @@ object linkMod {
     * `component` prop is provided, all valid props from that component should
     * also be allowed.
     */
-  /* key */ StringDictionary[js.Any] {
+  /* key */ StringDictionary[Any] {
     
     @JSName("component")
-    var component_LinkWithComponentProps: ElementType[js.Any]
+    var component_LinkWithComponentProps: ElementType[Any]
   }
   object LinkWithComponentProps {
     
-    inline def apply(component: ElementType[js.Any]): LinkWithComponentProps = {
+    inline def apply(component: ElementType[Any]): LinkWithComponentProps = {
       val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
       __obj.asInstanceOf[LinkWithComponentProps]
     }
     
     extension [Self <: LinkWithComponentProps](x: Self) {
       
-      inline def setComponent(value: ElementType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: ElementType[Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     }
   }
 }

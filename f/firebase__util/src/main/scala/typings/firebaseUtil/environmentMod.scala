@@ -6,11 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object environmentMod {
   
-  @JSImport("@firebase/util/dist/src/environment", JSImport.Namespace)
+  @JSImport("@firebase/util/dist/node-esm/src/environment", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
   inline def areCookiesEnabled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("areCookiesEnabled")().asInstanceOf[Boolean]
+  
+  inline def getGlobal(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getGlobal")().asInstanceOf[Any]
   
   inline def getUA(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUA")().asInstanceOf[String]
   

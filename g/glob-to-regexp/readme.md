@@ -10,15 +10,12 @@ Convert globs to regular expressions
 | ------------------ | :-------------: |
 | Full name          | glob-to-regexp |
 | Keywords           | regexp, glob, regexps, regular expressions, regular expression, wildcard |
-| # releases         | 2 |
-| # dependents       | 152 |
-| # downloads        | 297825065 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6.869526166666667E7 |
+| # stars            | 130.0 |
 
 ## Links
-- [Homepage](https://github.com/fitzgen/glob-to-regexp#readme)
-- [Bugs](https://github.com/fitzgen/glob-to-regexp/issues)
-- [Repository](https://github.com/fitzgen/glob-to-regexp)
 - [Npm](https://www.npmjs.com/package/glob-to-regexp)
     
 

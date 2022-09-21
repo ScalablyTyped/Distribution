@@ -39,10 +39,10 @@ object ModifyReservedInstancesRequest {
     
     inline def setReservedInstancesIds(value: ReservedInstancesIdStringList): Self = StObject.set(x, "ReservedInstancesIds", value.asInstanceOf[js.Any])
     
-    inline def setReservedInstancesIdsVarargs(value: ReservationId*): Self = StObject.set(x, "ReservedInstancesIds", js.Array(value :_*))
+    inline def setReservedInstancesIdsVarargs(value: ReservationId*): Self = StObject.set(x, "ReservedInstancesIds", js.Array(value*))
     
     inline def setTargetConfigurations(value: ReservedInstancesConfigurationList): Self = StObject.set(x, "TargetConfigurations", value.asInstanceOf[js.Any])
     
-    inline def setTargetConfigurationsVarargs(value: ReservedInstancesConfiguration*): Self = StObject.set(x, "TargetConfigurations", js.Array(value :_*))
+    inline def setTargetConfigurationsVarargs(value: ReservedInstancesConfiguration*): Self = StObject.set(x, "TargetConfigurations", js.Array(value*))
   }
 }

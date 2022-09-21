@@ -10,7 +10,7 @@ object ntlmMod {
   
   @JSImport("vso-node-api/handlers/ntlm", "NtlmCredentialHandler")
   @js.native
-  class NtlmCredentialHandler protected ()
+  open class NtlmCredentialHandler protected ()
     extends StObject
        with IRequestHandler {
     def this(username: String, password: String) = this()
@@ -24,31 +24,24 @@ object ntlmMod {
     var domain: String = js.native
     
     /* CompleteClass */
-    override def handleAuthentication(httpClient: js.Any, protocol: js.Any, options: js.Any, objs: js.Any, finalCallback: js.Any): Unit = js.native
+    override def handleAuthentication(httpClient: Any, protocol: Any, options: Any, objs: Any, finalCallback: Any): Unit = js.native
     
     var password: String = js.native
     
     /* CompleteClass */
-    override def prepareRequest(options: js.Any): Unit = js.native
+    override def prepareRequest(options: Any): Unit = js.native
     
-    /* private */ def sendType1Message(
-      httpClient: js.Any,
-      protocol: js.Any,
-      options: js.Any,
-      objs: js.Any,
-      keepaliveAgent: js.Any,
-      callback: js.Any
-    ): js.Any = js.native
+    /* private */ def sendType1Message(httpClient: Any, protocol: Any, options: Any, objs: Any, keepaliveAgent: Any, callback: Any): Any = js.native
     
     /* private */ def sendType3Message(
-      httpClient: js.Any,
-      protocol: js.Any,
-      options: js.Any,
-      objs: js.Any,
-      keepaliveAgent: js.Any,
-      res: js.Any,
-      callback: js.Any
-    ): js.Any = js.native
+      httpClient: Any,
+      protocol: Any,
+      options: Any,
+      objs: Any,
+      keepaliveAgent: Any,
+      res: Any,
+      callback: Any
+    ): Any = js.native
     
     var username: String = js.native
     

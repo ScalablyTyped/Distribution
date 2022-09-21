@@ -10,15 +10,12 @@ A simple in-memory filesystem. Holds data in a javascript object.
 | ------------------ | :-------------: |
 | Full name          | memory-fs |
 | Keywords           | fs, memory |
-| # releases         | 2 |
-| # dependents       | 673 |
-| # downloads        | 843410976 |
-| # stars            | 19 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9.778429E7 |
+| # stars            | 866.0 |
 
 ## Links
-- [Homepage](https://github.com/webpack/memory-fs)
-- [Bugs](https://github.com/webpack/memory-fs/issues)
-- [Repository](https://github.com/webpack/memory-fs)
 - [Npm](https://www.npmjs.com/package/memory-fs)
     
 

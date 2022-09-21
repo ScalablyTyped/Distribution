@@ -24,7 +24,7 @@ trait HemisphericLight
     * Sets the HemisphericLight direction towards the passed target (Vector3).
     * Returns the updated direction.
     * @param target The target the direction should point to
-    * @return The computed direction
+    * @returns The computed direction
     */
   def setDirectionToTarget(target: Vector3): Vector3 = js.native
 }

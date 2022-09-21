@@ -4,20 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A collection of messages representing a conversation.
-  */
 trait SchemaThread extends StObject {
   
   /**
     * The ID of the last history record that modified this thread.
     */
-  var historyId: js.UndefOr[String] = js.undefined
+  var historyId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The unique ID of the thread.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The list of messages in the thread.
@@ -27,7 +24,7 @@ trait SchemaThread extends StObject {
   /**
     * A short part of the message text.
     */
-  var snippet: js.UndefOr[String] = js.undefined
+  var snippet: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaThread {
   
@@ -40,9 +37,13 @@ object SchemaThread {
     
     inline def setHistoryId(value: String): Self = StObject.set(x, "historyId", value.asInstanceOf[js.Any])
     
+    inline def setHistoryIdNull: Self = StObject.set(x, "historyId", null)
+    
     inline def setHistoryIdUndefined: Self = StObject.set(x, "historyId", js.undefined)
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdNull: Self = StObject.set(x, "id", null)
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
@@ -50,9 +51,11 @@ object SchemaThread {
     
     inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
-    inline def setMessagesVarargs(value: SchemaMessage*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: SchemaMessage*): Self = StObject.set(x, "messages", js.Array(value*))
     
     inline def setSnippet(value: String): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
+    
+    inline def setSnippetNull: Self = StObject.set(x, "snippet", null)
     
     inline def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
   }

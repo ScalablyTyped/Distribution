@@ -15,18 +15,18 @@ object subscribeUserAgentClientMod {
   - typings.sipJs.outgoingRequestMod.OutgoingRequest because Already inherited
   - typings.sipJs.subscribeMod.OutgoingSubscribeRequest because var conflicts: delegate, message. Inlined waitNotifyStop */ @JSImport("sip.js/lib/core/user-agents/subscribe-user-agent-client", "SubscribeUserAgentClient")
   @js.native
-  class SubscribeUserAgentClient protected () extends UserAgentClient {
+  open class SubscribeUserAgentClient protected () extends UserAgentClient {
     def this(core: UserAgentCore, message: OutgoingRequestMessage) = this()
     def this(core: UserAgentCore, message: OutgoingRequestMessage, delegate: OutgoingSubscribeRequestDelegate) = this()
     
     /** Timer N Id. */
-    /* private */ var N: js.Any = js.native
+    /* private */ var N: Any = js.native
     
     @JSName("delegate")
     var delegate_SubscribeUserAgentClient: js.UndefOr[OutgoingSubscribeRequestDelegate] = js.native
     
     /** Dialog created upon receiving the first NOTIFY. */
-    /* private */ var dialog: js.Any = js.native
+    /* private */ var dialog: Any = js.native
     
     /**
       * Handle out of dialog NOTIFY associated with SUBSCRIBE request.
@@ -36,19 +36,19 @@ object subscribeUserAgentClientMod {
     def onNotify(uas: NotifyUserAgentServer): Unit = js.native
     
     /** Identifier of this user agent client. */
-    /* private */ var subscriberId: js.Any = js.native
+    /* private */ var subscriberId: Any = js.native
     
     /** Subscription event being targeted. */
-    /* private */ var subscriptionEvent: js.Any = js.native
+    /* private */ var subscriptionEvent: Any = js.native
     
     /** When the subscription expires. Starts as requested expires and updated on 200 and NOTIFY. */
-    /* private */ var subscriptionExpires: js.Any = js.native
+    /* private */ var subscriptionExpires: Any = js.native
     
     /** The requested expires for the subscription. */
-    /* private */ var subscriptionExpiresRequested: js.Any = js.native
+    /* private */ var subscriptionExpiresRequested: Any = js.native
     
     /** Subscription state. */
-    /* private */ var subscriptionState: js.Any = js.native
+    /* private */ var subscriptionState: Any = js.native
     
     /**
       * To ensure that subscribers do not wait indefinitely for a
@@ -59,7 +59,7 @@ object subscribeUserAgentClientMod {
       * subscription attempt.
       * https://tools.ietf.org/html/rfc6665#section-4.1.2.4
       */
-    /* private */ var timerN: js.Any = js.native
+    /* private */ var timerN: Any = js.native
     
     def waitNotifyStart(): Unit = js.native
     

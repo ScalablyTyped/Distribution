@@ -43,7 +43,7 @@ object mod {
   trait nsApi extends StObject {
     
     /** Prijzen - tariffs */
-    def prijzen(params: js.Object, callback: js.Function2[/* err */ js.Any, /* data */ js.Object, Unit]): Unit = js.native
+    def prijzen(params: js.Object, callback: js.Function2[/* err */ Any, /* data */ js.Object, Unit]): Unit = js.native
     
     /**
       * Reisadvies - travel advise

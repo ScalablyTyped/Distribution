@@ -2,15 +2,20 @@ package typings.googleapis
 
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Shortcut
+import typings.googleAuthLibrary.authclientMod.AuthClient
+import typings.googleAuthLibrary.awsclientMod.AwsClientOptions
+import typings.googleAuthLibrary.googleauthMod.GoogleAuthOptions
+import typings.googleAuthLibrary.googleauthMod.JSONClient
+import typings.googleAuthLibrary.identitypoolclientMod.IdentityPoolClientOptions
 import typings.googleAuthLibrary.jwtclientMod.JWTOptions
 import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleapis.dataprocV1Mod.dataprocV1.Dataproc
 import typings.googleapis.dataprocV1Mod.dataprocV1.Options
 import typings.googleapis.googleapisStrings.v1
 import typings.googleapis.googleapisStrings.v1beta2
+import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.GlobalOptions
 import typings.googleapisCommon.apiMod.GoogleConfigurable
-import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,6 +26,13 @@ object dataprocMod {
   @js.native
   val ^ : js.Any = js.native
   
+  @JSImport("googleapis/build/src/apis/dataproc", "AuthPlus")
+  @js.native
+  open class AuthPlus ()
+    extends typings.googleapisCommon.mod.AuthPlus {
+    def this(opts: GoogleAuthOptions[JSONClient]) = this()
+  }
+  
   object VERSIONS {
     
     @JSImport("googleapis/build/src/apis/dataproc", "VERSIONS")
@@ -30,7 +42,7 @@ object dataprocMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("googleapis/build/src/apis/dataproc", "VERSIONS.v1")
     @js.native
-    class v1 protected () extends Dataproc {
+    open class v1 protected () extends Dataproc {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
     }
@@ -44,7 +56,7 @@ object dataprocMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("googleapis/build/src/apis/dataproc", "VERSIONS.v1beta2")
     @js.native
-    class v1beta2 protected ()
+    open class v1beta2 protected ()
       extends typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2.Dataproc {
       def this(options: GlobalOptions) = this()
       def this(options: GlobalOptions, google: GoogleConfigurable) = this()
@@ -69,7 +81,25 @@ object dataprocMod {
     
     @JSImport("googleapis/build/src/apis/dataproc", "auth")
     @js.native
-    val ^ : AuthPlus = js.native
+    val ^ : typings.googleapisCommon.mod.AuthPlus = js.native
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/dataproc", "auth.AwsClient")
+    @js.native
+    open class AwsClient protected ()
+      extends typings.googleAuthLibrary.mod.AwsClient {
+      /**
+        * Instantiates an AwsClient instance using the provided JSON
+        * object loaded from an external account credentials file.
+        * An error is thrown if the credential is not a valid AWS credential.
+        * @param options The external account options object typically loaded
+        *   from the external account JSON credential file.
+        * @param additionalOptions Optional additional behavior customization
+        *   options. These currently customize expiration threshold time and
+        *   whether to retry on 401/403 API request errors.
+        */
+      def this(options: AwsClientOptions) = this()
+    }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("googleapis/build/src/apis/dataproc", "auth.Compute")
@@ -80,7 +110,7 @@ object dataprocMod {
       * Retrieve access token from the metadata server.
       * See: https://developers.google.com/compute/docs/authentication
       */
-    class Compute ()
+    open class Compute ()
       extends typings.googleAuthLibrary.mod.Compute
     
     /**
@@ -89,7 +119,7 @@ object dataprocMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("googleapis/build/src/apis/dataproc", "auth.DefaultTransporter")
     @js.native
-    class DefaultTransporter ()
+    open class DefaultTransporter ()
       extends typings.googleAuthLibrary.transportersMod.DefaultTransporter
     /* static members */
     object DefaultTransporter {
@@ -98,13 +128,45 @@ object dataprocMod {
       @js.native
       val ^ : js.Any = js.native
       
-      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[Any]
+    }
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/dataproc", "auth.ExternalAccountClient")
+    @js.native
+    open class ExternalAccountClient ()
+      extends typings.googleAuthLibrary.mod.ExternalAccountClient
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/dataproc", "auth.GoogleAuth")
+    @js.native
+    open class GoogleAuth[T /* <: AuthClient */] ()
+      extends typings.googleAuthLibrary.mod.GoogleAuth[T]
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("googleapis/build/src/apis/dataproc", "auth.IdentityPoolClient")
+    @js.native
+    open class IdentityPoolClient protected ()
+      extends typings.googleAuthLibrary.mod.IdentityPoolClient {
+      /**
+        * Instantiate an IdentityPoolClient instance using the provided JSON
+        * object loaded from an external account credentials file.
+        * An error is thrown if the credential is not a valid file-sourced or
+        * url-sourced credential or a workforce pool user project is provided
+        * with a non workforce audience.
+        * @param options The external account options object typically loaded
+        *   from the external account JSON credential file.
+        * @param additionalOptions Optional additional behavior customization
+        *   options. These currently customize expiration threshold time and
+        *   whether to retry on 401/403 API request errors.
+        */
+      def this(options: IdentityPoolClientOptions) = this()
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("googleapis/build/src/apis/dataproc", "auth.JWT")
     @js.native
-    class JWT protected ()
+    open class JWT protected ()
       extends typings.googleAuthLibrary.mod.JWT {
       /**
         * JWT service account credentials.
@@ -134,16 +196,185 @@ object dataprocMod {
       * @param opts optional options for overriding the given parameters.
       * @constructor
       */
-    class OAuth2 () extends OAuth2Client
+    open class OAuth2 () extends OAuth2Client
     
-    type _To = AuthPlus
+    type _To = typings.googleapisCommon.mod.AuthPlus
     
     /* This means you don't have to write `^`, but can instead just say `auth.foo` */
-    override def _to: AuthPlus = ^
+    override def _to: typings.googleapisCommon.mod.AuthPlus = ^
   }
   
   inline def dataproc(options: Options): Dataproc = ^.asInstanceOf[js.Dynamic].applyDynamic("dataproc")(options.asInstanceOf[js.Any]).asInstanceOf[Dataproc]
   inline def dataproc(options: typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2.Options): typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2.Dataproc = ^.asInstanceOf[js.Dynamic].applyDynamic("dataproc")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2.Dataproc]
+  
+  object dataprocV1 {
+    
+    @JSImport("googleapis/build/src/apis/dataproc", "dataproc_v1.Dataproc")
+    @js.native
+    open class Dataproc protected ()
+      extends typings.googleapis.dataprocV1Mod.dataprocV1.Dataproc {
+      def this(options: GlobalOptions) = this()
+      def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/dataproc", "dataproc_v1.Resource$Projects")
+    @js.native
+    open class ResourceProjects protected ()
+      extends typings.googleapis.dataprocV1Mod.dataprocV1.ResourceProjects {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/dataproc", "dataproc_v1.Resource$Projects$Locations")
+    @js.native
+    open class ResourceProjectsLocations protected ()
+      extends typings.googleapis.dataprocV1Mod.dataprocV1.ResourceProjectsLocations {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/dataproc", "dataproc_v1.Resource$Projects$Locations$Autoscalingpolicies")
+    @js.native
+    open class ResourceProjectsLocationsAutoscalingpolicies protected ()
+      extends typings.googleapis.dataprocV1Mod.dataprocV1.ResourceProjectsLocationsAutoscalingpolicies {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/dataproc", "dataproc_v1.Resource$Projects$Locations$Batches")
+    @js.native
+    open class ResourceProjectsLocationsBatches protected ()
+      extends typings.googleapis.dataprocV1Mod.dataprocV1.ResourceProjectsLocationsBatches {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/dataproc", "dataproc_v1.Resource$Projects$Locations$Workflowtemplates")
+    @js.native
+    open class ResourceProjectsLocationsWorkflowtemplates protected ()
+      extends typings.googleapis.dataprocV1Mod.dataprocV1.ResourceProjectsLocationsWorkflowtemplates {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/dataproc", "dataproc_v1.Resource$Projects$Regions")
+    @js.native
+    open class ResourceProjectsRegions protected ()
+      extends typings.googleapis.dataprocV1Mod.dataprocV1.ResourceProjectsRegions {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/dataproc", "dataproc_v1.Resource$Projects$Regions$Autoscalingpolicies")
+    @js.native
+    open class ResourceProjectsRegionsAutoscalingpolicies protected ()
+      extends typings.googleapis.dataprocV1Mod.dataprocV1.ResourceProjectsRegionsAutoscalingpolicies {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/dataproc", "dataproc_v1.Resource$Projects$Regions$Clusters")
+    @js.native
+    open class ResourceProjectsRegionsClusters protected ()
+      extends typings.googleapis.dataprocV1Mod.dataprocV1.ResourceProjectsRegionsClusters {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/dataproc", "dataproc_v1.Resource$Projects$Regions$Jobs")
+    @js.native
+    open class ResourceProjectsRegionsJobs protected ()
+      extends typings.googleapis.dataprocV1Mod.dataprocV1.ResourceProjectsRegionsJobs {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/dataproc", "dataproc_v1.Resource$Projects$Regions$Operations")
+    @js.native
+    open class ResourceProjectsRegionsOperations protected ()
+      extends typings.googleapis.dataprocV1Mod.dataprocV1.ResourceProjectsRegionsOperations {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/dataproc", "dataproc_v1.Resource$Projects$Regions$Workflowtemplates")
+    @js.native
+    open class ResourceProjectsRegionsWorkflowtemplates protected ()
+      extends typings.googleapis.dataprocV1Mod.dataprocV1.ResourceProjectsRegionsWorkflowtemplates {
+      def this(context: APIRequestContext) = this()
+    }
+  }
+  
+  object dataprocV1beta2 {
+    
+    @JSImport("googleapis/build/src/apis/dataproc", "dataproc_v1beta2.Dataproc")
+    @js.native
+    open class Dataproc protected ()
+      extends typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2.Dataproc {
+      def this(options: GlobalOptions) = this()
+      def this(options: GlobalOptions, google: GoogleConfigurable) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/dataproc", "dataproc_v1beta2.Resource$Projects")
+    @js.native
+    open class ResourceProjects protected ()
+      extends typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2.ResourceProjects {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/dataproc", "dataproc_v1beta2.Resource$Projects$Locations")
+    @js.native
+    open class ResourceProjectsLocations protected ()
+      extends typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2.ResourceProjectsLocations {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/dataproc", "dataproc_v1beta2.Resource$Projects$Locations$Autoscalingpolicies")
+    @js.native
+    open class ResourceProjectsLocationsAutoscalingpolicies protected ()
+      extends typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2.ResourceProjectsLocationsAutoscalingpolicies {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/dataproc", "dataproc_v1beta2.Resource$Projects$Locations$Workflowtemplates")
+    @js.native
+    open class ResourceProjectsLocationsWorkflowtemplates protected ()
+      extends typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2.ResourceProjectsLocationsWorkflowtemplates {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/dataproc", "dataproc_v1beta2.Resource$Projects$Regions")
+    @js.native
+    open class ResourceProjectsRegions protected ()
+      extends typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2.ResourceProjectsRegions {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/dataproc", "dataproc_v1beta2.Resource$Projects$Regions$Autoscalingpolicies")
+    @js.native
+    open class ResourceProjectsRegionsAutoscalingpolicies protected ()
+      extends typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2.ResourceProjectsRegionsAutoscalingpolicies {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/dataproc", "dataproc_v1beta2.Resource$Projects$Regions$Clusters")
+    @js.native
+    open class ResourceProjectsRegionsClusters protected ()
+      extends typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2.ResourceProjectsRegionsClusters {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/dataproc", "dataproc_v1beta2.Resource$Projects$Regions$Jobs")
+    @js.native
+    open class ResourceProjectsRegionsJobs protected ()
+      extends typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2.ResourceProjectsRegionsJobs {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/dataproc", "dataproc_v1beta2.Resource$Projects$Regions$Operations")
+    @js.native
+    open class ResourceProjectsRegionsOperations protected ()
+      extends typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2.ResourceProjectsRegionsOperations {
+      def this(context: APIRequestContext) = this()
+    }
+    
+    @JSImport("googleapis/build/src/apis/dataproc", "dataproc_v1beta2.Resource$Projects$Regions$Workflowtemplates")
+    @js.native
+    open class ResourceProjectsRegionsWorkflowtemplates protected ()
+      extends typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2.ResourceProjectsRegionsWorkflowtemplates {
+      def this(context: APIRequestContext) = this()
+    }
+  }
   
   inline def dataproc_v1(version: v1): Dataproc = ^.asInstanceOf[js.Dynamic].applyDynamic("dataproc")(version.asInstanceOf[js.Any]).asInstanceOf[Dataproc]
   

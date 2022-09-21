@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("spine.RotateTimeline")
 @js.native
-class RotateTimeline protected ()
+open class RotateTimeline protected ()
   extends StObject
      with typings.phaser.spine.RotateTimeline {
   def this(frameCount: Double) = this()
@@ -28,7 +28,7 @@ class RotateTimeline protected ()
   var boneIndex: Double = js.native
   
   /* private */ /* CompleteClass */
-  var curves: js.Any = js.native
+  var curves: Any = js.native
   
   /* CompleteClass */
   var frames: ArrayLike[Double] = js.native

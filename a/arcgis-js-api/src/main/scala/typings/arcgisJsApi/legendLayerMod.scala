@@ -10,14 +10,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object legendLayerMod extends Shortcut {
   
-  @JSImport("esri/tasks/support/LegendLayer", JSImport.Namespace)
+  @JSImport("esri/rest/support/LegendLayer", JSImport.Namespace)
   @js.native
   val ^ : js.Object & LegendLayerConstructor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-  @JSImport("esri/tasks/support/LegendLayer", JSImport.Namespace)
+  @JSImport("esri/rest/support/LegendLayer", JSImport.Namespace)
   @js.native
-  class Class ()
+  /**
+    * Define layer properties for the legend layers associated with a [PrintTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-LegendLayer.html)
+    */
+  open class Class ()
     extends StObject
        with LegendLayer {
     def this(properties: LegendLayerProperties) = this()

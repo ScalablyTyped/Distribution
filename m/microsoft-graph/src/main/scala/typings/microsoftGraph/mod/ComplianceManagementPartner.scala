@@ -50,7 +50,7 @@ object ComplianceManagementPartner {
     
     inline def setAndroidEnrollmentAssignmentsUndefined: Self = StObject.set(x, "androidEnrollmentAssignments", js.undefined)
     
-    inline def setAndroidEnrollmentAssignmentsVarargs(value: ComplianceManagementPartnerAssignment*): Self = StObject.set(x, "androidEnrollmentAssignments", js.Array(value :_*))
+    inline def setAndroidEnrollmentAssignmentsVarargs(value: ComplianceManagementPartnerAssignment*): Self = StObject.set(x, "androidEnrollmentAssignments", js.Array(value*))
     
     inline def setAndroidOnboarded(value: Boolean): Self = StObject.set(x, "androidOnboarded", value.asInstanceOf[js.Any])
     
@@ -68,7 +68,7 @@ object ComplianceManagementPartner {
     
     inline def setIosEnrollmentAssignmentsUndefined: Self = StObject.set(x, "iosEnrollmentAssignments", js.undefined)
     
-    inline def setIosEnrollmentAssignmentsVarargs(value: ComplianceManagementPartnerAssignment*): Self = StObject.set(x, "iosEnrollmentAssignments", js.Array(value :_*))
+    inline def setIosEnrollmentAssignmentsVarargs(value: ComplianceManagementPartnerAssignment*): Self = StObject.set(x, "iosEnrollmentAssignments", js.Array(value*))
     
     inline def setIosOnboarded(value: Boolean): Self = StObject.set(x, "iosOnboarded", value.asInstanceOf[js.Any])
     
@@ -84,7 +84,7 @@ object ComplianceManagementPartner {
     
     inline def setMacOsEnrollmentAssignmentsUndefined: Self = StObject.set(x, "macOsEnrollmentAssignments", js.undefined)
     
-    inline def setMacOsEnrollmentAssignmentsVarargs(value: ComplianceManagementPartnerAssignment*): Self = StObject.set(x, "macOsEnrollmentAssignments", js.Array(value :_*))
+    inline def setMacOsEnrollmentAssignmentsVarargs(value: ComplianceManagementPartnerAssignment*): Self = StObject.set(x, "macOsEnrollmentAssignments", js.Array(value*))
     
     inline def setMacOsOnboarded(value: Boolean): Self = StObject.set(x, "macOsOnboarded", value.asInstanceOf[js.Any])
     

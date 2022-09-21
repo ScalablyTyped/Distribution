@@ -11,9 +11,9 @@ Opens stuff, like webpages and files and executables, cross-platform
 | Full name          | opener |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 544 |
-| # downloads        | 236449899 |
-| # stars            | 30 |
+| # dependents       | 0.0 |
+| # downloads        | 3.0071103E7 |
+| # stars            | 278.0 |
 
 ## Links
 - [Homepage](https://github.com/domenic/opener#readme)

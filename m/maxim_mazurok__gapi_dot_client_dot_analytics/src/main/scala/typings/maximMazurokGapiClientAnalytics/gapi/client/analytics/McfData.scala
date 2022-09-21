@@ -63,7 +63,7 @@ trait McfData extends StObject {
   var totalsForAllResults: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientAnalytics.maximMazurokGapiClientAnalyticsStrings.McfData & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientAnalytics.maximMazurokGapiClientAnalyticsStrings.McfData & TopLevel[Any]
   ] = js.undefined
 }
 object McfData {
@@ -79,7 +79,7 @@ object McfData {
     
     inline def setColumnHeadersUndefined: Self = StObject.set(x, "columnHeaders", js.undefined)
     
-    inline def setColumnHeadersVarargs(value: ColumnType*): Self = StObject.set(x, "columnHeaders", js.Array(value :_*))
+    inline def setColumnHeadersVarargs(value: ColumnType*): Self = StObject.set(x, "columnHeaders", js.Array(value*))
     
     inline def setContainsSampledData(value: Boolean): Self = StObject.set(x, "containsSampledData", value.asInstanceOf[js.Any])
     
@@ -117,7 +117,7 @@ object McfData {
     
     inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    inline def setRowsVarargs(value: js.Array[ConversionPathValue]*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: js.Array[ConversionPathValue]*): Self = StObject.set(x, "rows", js.Array(value*))
     
     inline def setSampleSize(value: String): Self = StObject.set(x, "sampleSize", value.asInstanceOf[js.Any])
     
@@ -138,7 +138,7 @@ object McfData {
     inline def setTotalsForAllResults(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientAnalytics.maximMazurokGapiClientAnalyticsStrings.McfData & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientAnalytics.maximMazurokGapiClientAnalyticsStrings.McfData & TopLevel[Any]
     ): Self = StObject.set(x, "totalsForAllResults", value.asInstanceOf[js.Any])
     
     inline def setTotalsForAllResultsUndefined: Self = StObject.set(x, "totalsForAllResults", js.undefined)

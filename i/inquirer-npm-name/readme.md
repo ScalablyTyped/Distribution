@@ -10,10 +10,10 @@ Helper function using inquirer to validate a value provided in a prompt does not
 | ------------------ | :-------------: |
 | Full name          | inquirer-npm-name |
 | Keywords           | inquirer, npm, name, yeoman, package |
-| # releases         | 0 |
-| # dependents       | 141 |
-| # downloads        | 59487 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 5112.0 |
+| # stars            | 13.0 |
 
 ## Links
 - [Homepage](https://github.com/SBoudrias/inquirer-npm-name#readme)

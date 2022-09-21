@@ -1,12 +1,13 @@
 package typings.pgPromise.pgSubsetMod
 
+import typings.pgPromise.pgSubsetMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def defaults: typings.pgPromise.pgSubsetMod.IDefaults = typings.pgPromise.pgSubsetMod.^.asInstanceOf[js.Dynamic].selectDynamic("defaults").asInstanceOf[typings.pgPromise.pgSubsetMod.IDefaults]
+inline def defaults: IDefaults = ^.asInstanceOf[js.Dynamic].selectDynamic("defaults").asInstanceOf[IDefaults]
 
-inline def types: typings.pgPromise.pgSubsetMod.ITypes = typings.pgPromise.pgSubsetMod.^.asInstanceOf[js.Dynamic].selectDynamic("types").asInstanceOf[typings.pgPromise.pgSubsetMod.ITypes]
+inline def types: ITypes = ^.asInstanceOf[js.Dynamic].selectDynamic("types").asInstanceOf[ITypes]
 
-type DynamicPassword = java.lang.String | (js.Function0[js.Promise[java.lang.String] | java.lang.String])
+type DynamicPassword = String | (js.Function0[js.Promise[String] | String])

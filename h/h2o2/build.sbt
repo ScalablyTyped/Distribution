@@ -1,21 +1,21 @@
 organization := "org.scalablytyped"
 name := "h2o2"
-version := "8.1-dt-20201002Z-bb941d"
-scalaVersion := "3.0.1"
+version := "8.1-dt-20211202Z-62ec1d"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "boom" % "7.3-dt-20200923Z-de0c0e",
-  "org.scalablytyped" %%% "catbox" % "10.0-dt-20200515Z-34ada1",
-  "org.scalablytyped" %%% "hapi" % "18.0-dt-20201028Z-a454ef",
-  "org.scalablytyped" %%% "iron" % "5.0-dt-20200515Z-7b1fa4",
-  "org.scalablytyped" %%% "joi" % "17.3.0-94e9ff",
-  "org.scalablytyped" %%% "mime-db" % "1.43-dt-20200424Z-6f2a45",
-  "org.scalablytyped" %%% "mimos" % "3.0-dt-20201002Z-cc5c40",
-  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-11c649",
-  "org.scalablytyped" %%% "podium" % "1.0-dt-20201002Z-0745dc",
-  "org.scalablytyped" %%% "shot" % "4.0-dt-20200515Z-6989a7",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
+  "org.scalablytyped" %%% "boom" % "7.3-dt-20220913Z-c2eddd",
+  "org.scalablytyped" %%% "catbox" % "10.0-dt-20211202Z-d1c6af",
+  "org.scalablytyped" %%% "hapi" % "18.0-dt-20220819Z-71fade",
+  "org.scalablytyped" %%% "iron" % "5.0-dt-20211202Z-3612b1",
+  "org.scalablytyped" %%% "joi" % "17.6.0-f7916a",
+  "org.scalablytyped" %%% "mime-db" % "1.43-dt-20211202Z-f3260c",
+  "org.scalablytyped" %%% "mimos" % "3.0-dt-20211202Z-9aa32e",
+  "org.scalablytyped" %%% "node" % "18.7-dt-20220913Z-77cc8d",
+  "org.scalablytyped" %%% "podium" % "1.0-dt-20211202Z-156f9b",
+  "org.scalablytyped" %%% "shot" % "4.0-dt-20211202Z-bf1677",
+  "org.scalablytyped" %%% "std" % "4.8-958c79")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

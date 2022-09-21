@@ -12,15 +12,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Tabs {
   
-  @js.native
-  trait Tab
-    extends Component[TabProps, js.Object, js.Any]
+  type Tab = Component[TabProps, js.Object, Any]
   
   trait TabProps
     extends StObject
        with SharedEnhancedButtonProps[Tab] {
     
     var buttonStyle: js.UndefOr[CSSProperties] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -32,7 +32,7 @@ object Tabs {
     
     var onActive: js.UndefOr[js.Function1[/* tab */ Tab, Unit]] = js.undefined
     
-    var value: js.UndefOr[js.Any] = js.undefined
+    var value: js.UndefOr[Any] = js.undefined
   }
   object TabProps {
     
@@ -46,6 +46,10 @@ object Tabs {
       inline def setButtonStyle(value: CSSProperties): Self = StObject.set(x, "buttonStyle", value.asInstanceOf[js.Any])
       
       inline def setButtonStyleUndefined: Self = StObject.set(x, "buttonStyle", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -67,15 +71,17 @@ object Tabs {
       
       inline def setOnActiveUndefined: Self = StObject.set(x, "onActive", js.undefined)
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
-  type Tabs = Component[TabsProps, js.Object, js.Any]
+  type Tabs = Component[TabsProps, js.Object, Any]
   
   trait TabsProps extends StObject {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -87,19 +93,17 @@ object Tabs {
     
     var inkBarStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var onChange: js.UndefOr[
-        js.Function3[/* value */ js.Any, /* e */ FormEvent[js.Object], /* tab */ Tab, Unit]
-      ] = js.undefined
+    var onChange: js.UndefOr[js.Function3[/* value */ Any, /* e */ FormEvent[js.Object], /* tab */ Tab, Unit]] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
     
     var tabItemContainerStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var tabTemplate: js.UndefOr[ComponentClass[js.Any, ComponentState]] = js.undefined
+    var tabTemplate: js.UndefOr[ComponentClass[Any, ComponentState]] = js.undefined
     
     var tabTemplateStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var value: js.UndefOr[js.Any] = js.undefined
+    var value: js.UndefOr[Any] = js.undefined
   }
   object TabsProps {
     
@@ -109,6 +113,10 @@ object Tabs {
     }
     
     extension [Self <: TabsProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -130,7 +138,7 @@ object Tabs {
       
       inline def setInkBarStyleUndefined: Self = StObject.set(x, "inkBarStyle", js.undefined)
       
-      inline def setOnChange(value: (/* value */ js.Any, /* e */ FormEvent[js.Object], /* tab */ Tab) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction3(value))
+      inline def setOnChange(value: (/* value */ Any, /* e */ FormEvent[js.Object], /* tab */ Tab) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction3(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -142,7 +150,7 @@ object Tabs {
       
       inline def setTabItemContainerStyleUndefined: Self = StObject.set(x, "tabItemContainerStyle", js.undefined)
       
-      inline def setTabTemplate(value: ComponentClass[js.Any, ComponentState]): Self = StObject.set(x, "tabTemplate", value.asInstanceOf[js.Any])
+      inline def setTabTemplate(value: ComponentClass[Any, ComponentState]): Self = StObject.set(x, "tabTemplate", value.asInstanceOf[js.Any])
       
       inline def setTabTemplateStyle(value: CSSProperties): Self = StObject.set(x, "tabTemplateStyle", value.asInstanceOf[js.Any])
       
@@ -150,7 +158,7 @@ object Tabs {
       
       inline def setTabTemplateUndefined: Self = StObject.set(x, "tabTemplate", js.undefined)
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }

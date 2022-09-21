@@ -21,7 +21,7 @@ object clustering {
     */
   @JSGlobal("H.clustering.DataPoint")
   @js.native
-  class DataPoint protected ()
+  open class DataPoint protected ()
     extends StObject
        with typings.heremaps.H.clustering.DataPoint {
     /**
@@ -33,8 +33,8 @@ object clustering {
       */
     def this(lat: Latitude, lng: Longitude) = this()
     def this(lat: Latitude, lng: Longitude, opt_weight: Double) = this()
-    def this(lat: Latitude, lng: Longitude, opt_weight: Double, opt_data: js.Any) = this()
-    def this(lat: Latitude, lng: Longitude, opt_weight: Unit, opt_data: js.Any) = this()
+    def this(lat: Latitude, lng: Longitude, opt_weight: Double, opt_data: Any) = this()
+    def this(lat: Latitude, lng: Longitude, opt_weight: Unit, opt_data: Any) = this()
     
     /* CompleteClass */
     @JSName("alt")
@@ -45,7 +45,7 @@ object clustering {
     var ctx_DataPoint: AltitudeContext = js.native
     
     /* CompleteClass */
-    var data: js.Any = js.native
+    var data: Any = js.native
     
     /* CompleteClass */
     var lat: Latitude = js.native
@@ -65,7 +65,7 @@ object clustering {
     */
   @JSGlobal("H.clustering.Provider")
   @js.native
-  class Provider protected ()
+  open class Provider protected ()
     extends StObject
        with typings.heremaps.H.clustering.Provider {
     /**

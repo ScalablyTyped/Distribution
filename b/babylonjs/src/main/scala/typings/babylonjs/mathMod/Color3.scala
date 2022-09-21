@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param g defines the green component (between 0 and 1, default is 0)
   * @param b defines the blue component (between 0 and 1, default is 0)
   */
-class Color3 ()
+open class Color3 ()
   extends typings.babylonjs.mathColorMod.Color3 {
   def this(/**
     * Defines the red component (between 0 and 1, default is 0)
@@ -143,6 +143,15 @@ object Color3 {
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromArrayToRef")(array.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
+    * Converts Hue, saturation and value to a new Color3 (RGB)
+    * @param hue defines the hue (value between 0 and 360)
+    * @param saturation defines the saturation (value between 0 and 1)
+    * @param value defines the value (value between 0 and 1)
+    * @returns a new Color3 object
+    */
+  inline def FromHSV(hue: Double, saturation: Double, value: Double): typings.babylonjs.mathColorMod.Color3 = (^.asInstanceOf[js.Dynamic].applyDynamic("FromHSV")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathColorMod.Color3]
+  
+  /**
     * Creates a new Color3 from the string containing valid hexadecimal values
     * @param hex defines a string containing valid hexadecimal values
     * @returns a new Color3 object
@@ -171,13 +180,65 @@ object Color3 {
   inline def Green(): typings.babylonjs.mathColorMod.Color3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Green")().asInstanceOf[typings.babylonjs.mathColorMod.Color3]
   
   /**
-    * Convert Hue, saturation and value to a Color3 (RGB)
+    * Converts Hue, saturation and value to a Color3 (RGB)
     * @param hue defines the hue
     * @param saturation defines the saturation
     * @param value defines the value
     * @param result defines the Color3 where to store the RGB values
     */
   inline def HSVtoRGBToRef(hue: Double, saturation: Double, value: Double, result: typings.babylonjs.mathColorMod.Color3): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("HSVtoRGBToRef")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], value.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  /**
+    * Returns a new Color3 located for "amount" (float) on the Hermite interpolation spline defined by the vectors "value1", "tangent1", "value2", "tangent2"
+    * @param value1 defines the first control point
+    * @param tangent1 defines the first tangent Color3
+    * @param value2 defines the second control point
+    * @param tangent2 defines the second tangent Color3
+    * @param amount defines the amount on the interpolation spline (between 0 and 1)
+    * @returns the new Color3
+    */
+  inline def Hermite(
+    value1: DeepImmutable[typings.babylonjs.mathColorMod.Color3],
+    tangent1: DeepImmutable[typings.babylonjs.mathColorMod.Color3],
+    value2: DeepImmutable[typings.babylonjs.mathColorMod.Color3],
+    tangent2: DeepImmutable[typings.babylonjs.mathColorMod.Color3],
+    amount: Double
+  ): typings.babylonjs.mathColorMod.Color3 = (^.asInstanceOf[js.Dynamic].applyDynamic("Hermite")(value1.asInstanceOf[js.Any], tangent1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], tangent2.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathColorMod.Color3]
+  
+  /**
+    * Returns a new Color3 which is the 1st derivative of the Hermite spline defined by the colors "value1", "value2", "tangent1", "tangent2".
+    * @param value1 defines the first control point
+    * @param tangent1 defines the first tangent
+    * @param value2 defines the second control point
+    * @param tangent2 defines the second tangent
+    * @param time define where the derivative must be done
+    * @returns 1st derivative
+    */
+  inline def Hermite1stDerivative(
+    value1: DeepImmutable[typings.babylonjs.mathColorMod.Color3],
+    tangent1: DeepImmutable[typings.babylonjs.mathColorMod.Color3],
+    value2: DeepImmutable[typings.babylonjs.mathColorMod.Color3],
+    tangent2: DeepImmutable[typings.babylonjs.mathColorMod.Color3],
+    time: Double
+  ): typings.babylonjs.mathColorMod.Color3 = (^.asInstanceOf[js.Dynamic].applyDynamic("Hermite1stDerivative")(value1.asInstanceOf[js.Any], tangent1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], tangent2.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.mathColorMod.Color3]
+  
+  /**
+    * Returns a new Color3 which is the 1st derivative of the Hermite spline defined by the colors "value1", "value2", "tangent1", "tangent2".
+    * @param value1 defines the first control point
+    * @param tangent1 defines the first tangent
+    * @param value2 defines the second control point
+    * @param tangent2 defines the second tangent
+    * @param time define where the derivative must be done
+    * @param result define where to store the derivative
+    */
+  inline def Hermite1stDerivativeToRef(
+    value1: DeepImmutable[typings.babylonjs.mathColorMod.Color3],
+    tangent1: DeepImmutable[typings.babylonjs.mathColorMod.Color3],
+    value2: DeepImmutable[typings.babylonjs.mathColorMod.Color3],
+    tangent2: DeepImmutable[typings.babylonjs.mathColorMod.Color3],
+    time: Double,
+    result: typings.babylonjs.mathColorMod.Color3
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Hermite1stDerivativeToRef")(value1.asInstanceOf[js.Any], tangent1.asInstanceOf[js.Any], value2.asInstanceOf[js.Any], tangent2.asInstanceOf[js.Any], time.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Creates a new Color3 with values linearly interpolated of "amount" between the start Color3 and the end Color3
@@ -250,6 +311,6 @@ object Color3 {
   
   @JSImport("babylonjs/Maths/math", "Color3._BlackReadOnly")
   @js.native
-  def _BlackReadOnly: js.Any = js.native
-  inline def _BlackReadOnly_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BlackReadOnly")(x.asInstanceOf[js.Any])
+  def _BlackReadOnly: Any = js.native
+  inline def _BlackReadOnly_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BlackReadOnly")(x.asInstanceOf[js.Any])
 }

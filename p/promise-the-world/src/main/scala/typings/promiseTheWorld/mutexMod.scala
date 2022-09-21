@@ -14,7 +14,7 @@ object mutexMod {
   
   @JSImport("promise-the-world/mutex", "Mutex")
   @js.native
-  class Mutex () extends StObject {
+  open class Mutex () extends StObject {
     
     def lock(): js.Promise[Unit] = js.native
     

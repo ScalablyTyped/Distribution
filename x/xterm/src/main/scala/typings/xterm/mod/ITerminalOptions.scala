@@ -6,7 +6,6 @@ import typings.xterm.xtermStrings.block
 import typings.xterm.xtermStrings.ctrl
 import typings.xterm.xtermStrings.none
 import typings.xterm.xtermStrings.shift
-import typings.xterm.xtermStrings.sound
 import typings.xterm.xtermStrings.underline
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -30,19 +29,10 @@ trait ITerminalOptions extends StObject {
   var allowTransparency: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * A data uri of the sound to use for the bell when `bellStyle = 'sound'`.
+    * If enabled, alt + click will move the prompt cursor to position
+    * underneath the mouse. The default is true.
     */
-  var bellSound: js.UndefOr[String] = js.undefined
-  
-  /**
-    * The type of the bell notification the terminal will use.
-    */
-  var bellStyle: js.UndefOr[none | sound] = js.undefined
-  
-  /**
-    * The number of columns in the terminal.
-    */
-  var cols: js.UndefOr[Double] = js.undefined
+  var altClickMovesCursor: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When enabled the cursor will be set to the beginning of the next line
@@ -70,6 +60,14 @@ trait ITerminalOptions extends StObject {
   var cursorWidth: js.UndefOr[Double] = js.undefined
   
   /**
+    * Whether to draw custom glyphs for block element and box drawing characters instead of using
+    * the font. This should typically result in better rendering with continuous lines, even when
+    * line height and letter spacing is used. Note that this doesn't work with the DOM renderer
+    * which renders all characters using the font. The default is true.
+    */
+  var customGlyphs: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Whether input should be disabled.
     */
   var disableStdin: js.UndefOr[Boolean] = js.undefined
@@ -82,7 +80,7 @@ trait ITerminalOptions extends StObject {
   /**
     * The modifier key hold to multiply scroll speed.
     */
-  var fastScrollModifier: js.UndefOr[alt | ctrl | shift] = js.undefined
+  var fastScrollModifier: js.UndefOr[none | alt | ctrl | shift] = js.undefined
   
   /**
     * The scroll speed multiplier used for fast scrolling.
@@ -120,11 +118,12 @@ trait ITerminalOptions extends StObject {
   var lineHeight: js.UndefOr[Double] = js.undefined
   
   /**
-    * The duration in milliseconds before link tooltip events fire when
-    * hovering on a link.
-    * @deprecated This will be removed when the link matcher API is removed.
+    * The handler for OSC 8 hyperlinks. Links will use the `confirm` browser
+    * API if no link handler is set. Consider the security of users when using
+    * this, there should be some tooltip or prompt when hovering or activating
+    * the link.
     */
-  var linkTooltipHoverDuration: js.UndefOr[Double] = js.undefined
+  var linkHandler: js.UndefOr[ILinkHandler | Null] = js.undefined
   
   /**
     * What log level to use, this will log for all levels below and including
@@ -165,25 +164,16 @@ trait ITerminalOptions extends StObject {
   var minimumContrastRatio: js.UndefOr[Double] = js.undefined
   
   /**
-    * The type of renderer to use, this allows using the fallback DOM renderer
-    * when canvas is too slow for the environment. The following features do
-    * not work when the DOM renderer is used:
-    *
-    * - Letter spacing
-    * - Cursor blink
+    * The width, in pixels, of the canvas for the overview ruler. The overview
+    * ruler will be hidden when not set.
     */
-  var rendererType: js.UndefOr[RendererType] = js.undefined
+  var overviewRulerWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether to select the word under the cursor on right click, this is
     * standard behavior in a lot of macOS applications.
     */
   var rightClickSelectsWord: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * The number of rows in the terminal.
-    */
-  var rows: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether screen reader support is enabled. When on this will expose
@@ -203,6 +193,12 @@ trait ITerminalOptions extends StObject {
     * viewport.
     */
   var scrollback: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * The duration to smoothly scroll between the origin and the target in
+    * milliseconds. Set to 0 to disable smooth scrolling and scroll instantly.
+    */
+  var smoothScrollDuration: js.UndefOr[Double] = js.undefined
   
   /**
     * The size of tab stops in the terminal.
@@ -229,6 +225,10 @@ trait ITerminalOptions extends StObject {
     * - Reflow is disabled.
     * - Lines are assumed to be wrapped if the last character of the line is
     *   not whitespace.
+    *
+    * When using conpty on Windows 11 version >= 21376, it is recommended to
+    * disable this because native text wrapping sequences are output correctly
+    * thanks to https://github.com/microsoft/terminal/issues/405
     */
   var windowsMode: js.UndefOr[Boolean] = js.undefined
   
@@ -255,17 +255,9 @@ object ITerminalOptions {
     
     inline def setAllowTransparencyUndefined: Self = StObject.set(x, "allowTransparency", js.undefined)
     
-    inline def setBellSound(value: String): Self = StObject.set(x, "bellSound", value.asInstanceOf[js.Any])
+    inline def setAltClickMovesCursor(value: Boolean): Self = StObject.set(x, "altClickMovesCursor", value.asInstanceOf[js.Any])
     
-    inline def setBellSoundUndefined: Self = StObject.set(x, "bellSound", js.undefined)
-    
-    inline def setBellStyle(value: none | sound): Self = StObject.set(x, "bellStyle", value.asInstanceOf[js.Any])
-    
-    inline def setBellStyleUndefined: Self = StObject.set(x, "bellStyle", js.undefined)
-    
-    inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
-    
-    inline def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
+    inline def setAltClickMovesCursorUndefined: Self = StObject.set(x, "altClickMovesCursor", js.undefined)
     
     inline def setConvertEol(value: Boolean): Self = StObject.set(x, "convertEol", value.asInstanceOf[js.Any])
     
@@ -283,6 +275,10 @@ object ITerminalOptions {
     
     inline def setCursorWidthUndefined: Self = StObject.set(x, "cursorWidth", js.undefined)
     
+    inline def setCustomGlyphs(value: Boolean): Self = StObject.set(x, "customGlyphs", value.asInstanceOf[js.Any])
+    
+    inline def setCustomGlyphsUndefined: Self = StObject.set(x, "customGlyphs", js.undefined)
+    
     inline def setDisableStdin(value: Boolean): Self = StObject.set(x, "disableStdin", value.asInstanceOf[js.Any])
     
     inline def setDisableStdinUndefined: Self = StObject.set(x, "disableStdin", js.undefined)
@@ -291,7 +287,7 @@ object ITerminalOptions {
     
     inline def setDrawBoldTextInBrightColorsUndefined: Self = StObject.set(x, "drawBoldTextInBrightColors", js.undefined)
     
-    inline def setFastScrollModifier(value: alt | ctrl | shift): Self = StObject.set(x, "fastScrollModifier", value.asInstanceOf[js.Any])
+    inline def setFastScrollModifier(value: none | alt | ctrl | shift): Self = StObject.set(x, "fastScrollModifier", value.asInstanceOf[js.Any])
     
     inline def setFastScrollModifierUndefined: Self = StObject.set(x, "fastScrollModifier", js.undefined)
     
@@ -323,9 +319,11 @@ object ITerminalOptions {
     
     inline def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
     
-    inline def setLinkTooltipHoverDuration(value: Double): Self = StObject.set(x, "linkTooltipHoverDuration", value.asInstanceOf[js.Any])
+    inline def setLinkHandler(value: ILinkHandler): Self = StObject.set(x, "linkHandler", value.asInstanceOf[js.Any])
     
-    inline def setLinkTooltipHoverDurationUndefined: Self = StObject.set(x, "linkTooltipHoverDuration", js.undefined)
+    inline def setLinkHandlerNull: Self = StObject.set(x, "linkHandler", null)
+    
+    inline def setLinkHandlerUndefined: Self = StObject.set(x, "linkHandler", js.undefined)
     
     inline def setLogLevel(value: LogLevel): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
     
@@ -343,17 +341,13 @@ object ITerminalOptions {
     
     inline def setMinimumContrastRatioUndefined: Self = StObject.set(x, "minimumContrastRatio", js.undefined)
     
-    inline def setRendererType(value: RendererType): Self = StObject.set(x, "rendererType", value.asInstanceOf[js.Any])
+    inline def setOverviewRulerWidth(value: Double): Self = StObject.set(x, "overviewRulerWidth", value.asInstanceOf[js.Any])
     
-    inline def setRendererTypeUndefined: Self = StObject.set(x, "rendererType", js.undefined)
+    inline def setOverviewRulerWidthUndefined: Self = StObject.set(x, "overviewRulerWidth", js.undefined)
     
     inline def setRightClickSelectsWord(value: Boolean): Self = StObject.set(x, "rightClickSelectsWord", value.asInstanceOf[js.Any])
     
     inline def setRightClickSelectsWordUndefined: Self = StObject.set(x, "rightClickSelectsWord", js.undefined)
-    
-    inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
-    
-    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
     inline def setScreenReaderMode(value: Boolean): Self = StObject.set(x, "screenReaderMode", value.asInstanceOf[js.Any])
     
@@ -366,6 +360,10 @@ object ITerminalOptions {
     inline def setScrollback(value: Double): Self = StObject.set(x, "scrollback", value.asInstanceOf[js.Any])
     
     inline def setScrollbackUndefined: Self = StObject.set(x, "scrollback", js.undefined)
+    
+    inline def setSmoothScrollDuration(value: Double): Self = StObject.set(x, "smoothScrollDuration", value.asInstanceOf[js.Any])
+    
+    inline def setSmoothScrollDurationUndefined: Self = StObject.set(x, "smoothScrollDuration", js.undefined)
     
     inline def setTabStopWidth(value: Double): Self = StObject.set(x, "tabStopWidth", value.asInstanceOf[js.Any])
     

@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param pushpins The array of pushpins that are used to generate the data bins.
   * @param options The options used for calculating and rendering the data bins.
   */
-class DataBinningLayer ()
+open class DataBinningLayer ()
   extends StObject
      with typings.bingmaps.Microsoft.Maps.DataBinningLayer {
   def this(pushpins: js.Array[typings.bingmaps.Microsoft.Maps.Pushpin]) = this()

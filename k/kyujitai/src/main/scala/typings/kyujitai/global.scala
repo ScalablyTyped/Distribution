@@ -15,7 +15,7 @@ object global {
       */
     @JSGlobal("Kyujitai")
     @js.native
-    class ^ ()
+    open class ^ ()
       extends typings.kyujitai.mod.^ {
       def this(callback: InitializeCallback) = this()
       def this(options: Options) = this()

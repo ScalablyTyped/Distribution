@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.DiscreteUniform")
 @js.native
-class DiscreteUniform ()
+open class DiscreteUniform ()
   extends typings.ranjs.mod.dist.DiscreteUniform {
   def this(xmin: Double) = this()
   def this(xmin: Double, xmax: Double) = this()

@@ -35,7 +35,7 @@ object Comment {
     
     inline def setMentionedUsersUndefined: Self = StObject.set(x, "mentionedUsers", js.undefined)
     
-    inline def setMentionedUsersVarargs(value: User*): Self = StObject.set(x, "mentionedUsers", js.Array(value :_*))
+    inline def setMentionedUsersVarargs(value: User*): Self = StObject.set(x, "mentionedUsers", js.Array(value*))
     
     inline def setPost(value: Post): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
     

@@ -1,19 +1,19 @@
 
 # Scala.js typings for markdown-escapes
 
-Typings are for version 1.0
+Typings are for version 2.0.1
 
 ## Library description:
-List of escapable characters in markdown
+Legacy list of escapable characters in markdown
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | markdown-escapes |
 | Keywords           | markdown, escape, pedantic, gfm, commonmark |
 | # releases         | 3 |
-| # dependents       | 10 |
-| # downloads        | 140814749 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1.7809053333333332E7 |
+| # stars            | 8.0 |
 
 ## Links
 - [Homepage](https://github.com/wooorm/markdown-escapes#readme)
@@ -24,7 +24,7 @@ List of escapable characters in markdown
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

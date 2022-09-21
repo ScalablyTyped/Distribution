@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("DOMPoint")
 @js.native
-class DOMPoint ()
+/* standard dom */
+open class DOMPoint ()
   extends StObject
      with typings.std.DOMPoint {
   def this(x: Double) = this()
@@ -33,6 +34,7 @@ object DOMPoint {
   @js.native
   val ^ : js.Any = js.native
   
+  /* standard dom */
   inline def fromPoint(): typings.std.DOMPoint = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPoint")().asInstanceOf[typings.std.DOMPoint]
   inline def fromPoint(other: DOMPointInit): typings.std.DOMPoint = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPoint")(other.asInstanceOf[js.Any]).asInstanceOf[typings.std.DOMPoint]
 }

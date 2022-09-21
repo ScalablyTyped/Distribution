@@ -10,7 +10,7 @@ object Joints {
   
   @JSGlobal("Box2D.Dynamics.Joints.b2DistanceJoint")
   @js.native
-  class b2DistanceJoint ()
+  open class b2DistanceJoint ()
     extends StObject
        with typings.box2d.Box2D.Dynamics.Joints.b2DistanceJoint {
     
@@ -98,7 +98,7 @@ object Joints {
       * @return User data.  Cast to your data type.
       **/
     /* CompleteClass */
-    override def GetUserData(): js.Any = js.native
+    override def GetUserData(): Any = js.native
     
     /**
       * Short-cut function to determine if either body is inactive.
@@ -133,7 +133,7 @@ object Joints {
       * @param data Your custom data.
       **/
     /* CompleteClass */
-    override def SetUserData(data: js.Any): Unit = js.native
+    override def SetUserData(data: Any): Unit = js.native
   }
   
   @JSGlobal("Box2D.Dynamics.Joints.b2DistanceJointDef")
@@ -141,7 +141,7 @@ object Joints {
   /**
     * Constructor.
     **/
-  class b2DistanceJointDef ()
+  open class b2DistanceJointDef ()
     extends StObject
        with typings.box2d.Box2D.Dynamics.Joints.b2DistanceJointDef {
     
@@ -218,12 +218,12 @@ object Joints {
       * Use this to attach application specific data to your joints.
       **/
     /* CompleteClass */
-    var userData: js.Any = js.native
+    var userData: Any = js.native
   }
   
   @JSGlobal("Box2D.Dynamics.Joints.b2FrictionJoint")
   @js.native
-  class b2FrictionJoint ()
+  open class b2FrictionJoint ()
     extends StObject
        with typings.box2d.Box2D.Dynamics.Joints.b2FrictionJoint {
     
@@ -304,7 +304,7 @@ object Joints {
       * @return User data.  Cast to your data type.
       **/
     /* CompleteClass */
-    override def GetUserData(): js.Any = js.native
+    override def GetUserData(): Any = js.native
     
     /**
       * Short-cut function to determine if either body is inactive.
@@ -332,7 +332,7 @@ object Joints {
       * @param data Your custom data.
       **/
     /* CompleteClass */
-    override def SetUserData(data: js.Any): Unit = js.native
+    override def SetUserData(data: Any): Unit = js.native
     
     /**
       * Angular mass.
@@ -352,7 +352,7 @@ object Joints {
   /**
     * Constructor.
     **/
-  class b2FrictionJointDef ()
+  open class b2FrictionJointDef ()
     extends StObject
        with typings.box2d.Box2D.Dynamics.Joints.b2FrictionJointDef {
     
@@ -417,12 +417,12 @@ object Joints {
       * Use this to attach application specific data to your joints.
       **/
     /* CompleteClass */
-    var userData: js.Any = js.native
+    var userData: Any = js.native
   }
   
   @JSGlobal("Box2D.Dynamics.Joints.b2GearJoint")
   @js.native
-  class b2GearJoint ()
+  open class b2GearJoint ()
     extends StObject
        with typings.box2d.Box2D.Dynamics.Joints.b2GearJoint {
     
@@ -496,7 +496,7 @@ object Joints {
       * @return User data.  Cast to your data type.
       **/
     /* CompleteClass */
-    override def GetUserData(): js.Any = js.native
+    override def GetUserData(): Any = js.native
     
     /**
       * Short-cut function to determine if either body is inactive.
@@ -517,7 +517,7 @@ object Joints {
       * @param data Your custom data.
       **/
     /* CompleteClass */
-    override def SetUserData(data: js.Any): Unit = js.native
+    override def SetUserData(data: Any): Unit = js.native
   }
   
   @JSGlobal("Box2D.Dynamics.Joints.b2GearJointDef")
@@ -525,7 +525,7 @@ object Joints {
   /**
     * Constructor.
     **/
-  class b2GearJointDef ()
+  open class b2GearJointDef ()
     extends StObject
        with typings.box2d.Box2D.Dynamics.Joints.b2GearJointDef {
     
@@ -575,12 +575,12 @@ object Joints {
       * Use this to attach application specific data to your joints.
       **/
     /* CompleteClass */
-    var userData: js.Any = js.native
+    var userData: Any = js.native
   }
   
   @JSGlobal("Box2D.Dynamics.Joints.b2Joint")
   @js.native
-  class b2Joint ()
+  open class b2Joint ()
     extends StObject
        with typings.box2d.Box2D.Dynamics.Joints.b2Joint {
     
@@ -647,7 +647,7 @@ object Joints {
       * @return User data.  Cast to your data type.
       **/
     /* CompleteClass */
-    override def GetUserData(): js.Any = js.native
+    override def GetUserData(): Any = js.native
     
     /**
       * Short-cut function to determine if either body is inactive.
@@ -661,7 +661,7 @@ object Joints {
       * @param data Your custom data.
       **/
     /* CompleteClass */
-    override def SetUserData(data: js.Any): Unit = js.native
+    override def SetUserData(data: Any): Unit = js.native
   }
   
   @JSGlobal("Box2D.Dynamics.Joints.b2JointDef")
@@ -669,7 +669,7 @@ object Joints {
   /**
     * Constructor.
     **/
-  class b2JointDef ()
+  open class b2JointDef ()
     extends StObject
        with typings.box2d.Box2D.Dynamics.Joints.b2JointDef {
     
@@ -701,12 +701,12 @@ object Joints {
       * Use this to attach application specific data to your joints.
       **/
     /* CompleteClass */
-    var userData: js.Any = js.native
+    var userData: Any = js.native
   }
   
   @JSGlobal("Box2D.Dynamics.Joints.b2JointEdge")
   @js.native
-  class b2JointEdge ()
+  open class b2JointEdge ()
     extends StObject
        with typings.box2d.Box2D.Dynamics.Joints.b2JointEdge {
     
@@ -737,7 +737,7 @@ object Joints {
   
   @JSGlobal("Box2D.Dynamics.Joints.b2LineJoint")
   @js.native
-  class b2LineJoint ()
+  open class b2LineJoint ()
     extends StObject
        with typings.box2d.Box2D.Dynamics.Joints.b2LineJoint {
     
@@ -867,7 +867,7 @@ object Joints {
       * @return User data.  Cast to your data type.
       **/
     /* CompleteClass */
-    override def GetUserData(): js.Any = js.native
+    override def GetUserData(): Any = js.native
     
     /**
       * Short-cut function to determine if either body is inactive.
@@ -917,7 +917,7 @@ object Joints {
       * @param data Your custom data.
       **/
     /* CompleteClass */
-    override def SetUserData(data: js.Any): Unit = js.native
+    override def SetUserData(data: Any): Unit = js.native
   }
   
   @JSGlobal("Box2D.Dynamics.Joints.b2LineJointDef")
@@ -925,7 +925,7 @@ object Joints {
   /**
     * Constructor.
     **/
-  class b2LineJointDef ()
+  open class b2LineJointDef ()
     extends StObject
        with typings.box2d.Box2D.Dynamics.Joints.b2LineJointDef {
     
@@ -1026,12 +1026,12 @@ object Joints {
       * Use this to attach application specific data to your joints.
       **/
     /* CompleteClass */
-    var userData: js.Any = js.native
+    var userData: Any = js.native
   }
   
   @JSGlobal("Box2D.Dynamics.Joints.b2MouseJoint")
   @js.native
-  class b2MouseJoint ()
+  open class b2MouseJoint ()
     extends StObject
        with typings.box2d.Box2D.Dynamics.Joints.b2MouseJoint {
     
@@ -1126,7 +1126,7 @@ object Joints {
       * @return User data.  Cast to your data type.
       **/
     /* CompleteClass */
-    override def GetUserData(): js.Any = js.native
+    override def GetUserData(): Any = js.native
     
     /**
       * Short-cut function to determine if either body is inactive.
@@ -1168,7 +1168,7 @@ object Joints {
       * @param data Your custom data.
       **/
     /* CompleteClass */
-    override def SetUserData(data: js.Any): Unit = js.native
+    override def SetUserData(data: Any): Unit = js.native
   }
   
   @JSGlobal("Box2D.Dynamics.Joints.b2MouseJointDef")
@@ -1176,7 +1176,7 @@ object Joints {
   /**
     * Constructor.
     **/
-  class b2MouseJointDef ()
+  open class b2MouseJointDef ()
     extends StObject
        with typings.box2d.Box2D.Dynamics.Joints.b2MouseJointDef {
     
@@ -1226,12 +1226,12 @@ object Joints {
       * Use this to attach application specific data to your joints.
       **/
     /* CompleteClass */
-    var userData: js.Any = js.native
+    var userData: Any = js.native
   }
   
   @JSGlobal("Box2D.Dynamics.Joints.b2PrismaticJoint")
   @js.native
-  class b2PrismaticJoint ()
+  open class b2PrismaticJoint ()
     extends StObject
        with typings.box2d.Box2D.Dynamics.Joints.b2PrismaticJoint {
     
@@ -1354,7 +1354,7 @@ object Joints {
       * @return User data.  Cast to your data type.
       **/
     /* CompleteClass */
-    override def GetUserData(): js.Any = js.native
+    override def GetUserData(): Any = js.native
     
     /**
       * Short-cut function to determine if either body is inactive.
@@ -1404,7 +1404,7 @@ object Joints {
       * @param data Your custom data.
       **/
     /* CompleteClass */
-    override def SetUserData(data: js.Any): Unit = js.native
+    override def SetUserData(data: Any): Unit = js.native
   }
   
   @JSGlobal("Box2D.Dynamics.Joints.b2PrismaticJointDef")
@@ -1412,7 +1412,7 @@ object Joints {
   /**
     * Constructor.
     **/
-  class b2PrismaticJointDef ()
+  open class b2PrismaticJointDef ()
     extends StObject
        with typings.box2d.Box2D.Dynamics.Joints.b2PrismaticJointDef {
     
@@ -1519,12 +1519,12 @@ object Joints {
       * Use this to attach application specific data to your joints.
       **/
     /* CompleteClass */
-    var userData: js.Any = js.native
+    var userData: Any = js.native
   }
   
   @JSGlobal("Box2D.Dynamics.Joints.b2PulleyJoint")
   @js.native
-  class b2PulleyJoint ()
+  open class b2PulleyJoint ()
     extends StObject
        with typings.box2d.Box2D.Dynamics.Joints.b2PulleyJoint {
     
@@ -1621,7 +1621,7 @@ object Joints {
       * @return User data.  Cast to your data type.
       **/
     /* CompleteClass */
-    override def GetUserData(): js.Any = js.native
+    override def GetUserData(): Any = js.native
     
     /**
       * Short-cut function to determine if either body is inactive.
@@ -1635,7 +1635,7 @@ object Joints {
       * @param data Your custom data.
       **/
     /* CompleteClass */
-    override def SetUserData(data: js.Any): Unit = js.native
+    override def SetUserData(data: Any): Unit = js.native
   }
   
   @JSGlobal("Box2D.Dynamics.Joints.b2PulleyJointDef")
@@ -1643,7 +1643,7 @@ object Joints {
   /**
     * Constructor.
     **/
-  class b2PulleyJointDef ()
+  open class b2PulleyJointDef ()
     extends StObject
        with typings.box2d.Box2D.Dynamics.Joints.b2PulleyJointDef {
     
@@ -1748,12 +1748,12 @@ object Joints {
       * Use this to attach application specific data to your joints.
       **/
     /* CompleteClass */
-    var userData: js.Any = js.native
+    var userData: Any = js.native
   }
   
   @JSGlobal("Box2D.Dynamics.Joints.b2RevoluteJoint")
   @js.native
-  class b2RevoluteJoint ()
+  open class b2RevoluteJoint ()
     extends StObject
        with typings.box2d.Box2D.Dynamics.Joints.b2RevoluteJoint {
     
@@ -1876,7 +1876,7 @@ object Joints {
       * @return User data.  Cast to your data type.
       **/
     /* CompleteClass */
-    override def GetUserData(): js.Any = js.native
+    override def GetUserData(): Any = js.native
     
     /**
       * Short-cut function to determine if either body is inactive.
@@ -1926,7 +1926,7 @@ object Joints {
       * @param data Your custom data.
       **/
     /* CompleteClass */
-    override def SetUserData(data: js.Any): Unit = js.native
+    override def SetUserData(data: Any): Unit = js.native
   }
   
   @JSGlobal("Box2D.Dynamics.Joints.b2RevoluteJointDef")
@@ -1934,7 +1934,7 @@ object Joints {
   /**
     * Constructor.
     **/
-  class b2RevoluteJointDef ()
+  open class b2RevoluteJointDef ()
     extends StObject
        with typings.box2d.Box2D.Dynamics.Joints.b2RevoluteJointDef {
     
@@ -2029,12 +2029,12 @@ object Joints {
       * Use this to attach application specific data to your joints.
       **/
     /* CompleteClass */
-    var userData: js.Any = js.native
+    var userData: Any = js.native
   }
   
   @JSGlobal("Box2D.Dynamics.Joints.b2WeldJoint")
   @js.native
-  class b2WeldJoint ()
+  open class b2WeldJoint ()
     extends StObject
        with typings.box2d.Box2D.Dynamics.Joints.b2WeldJoint {
     
@@ -2101,7 +2101,7 @@ object Joints {
       * @return User data.  Cast to your data type.
       **/
     /* CompleteClass */
-    override def GetUserData(): js.Any = js.native
+    override def GetUserData(): Any = js.native
     
     /**
       * Short-cut function to determine if either body is inactive.
@@ -2115,7 +2115,7 @@ object Joints {
       * @param data Your custom data.
       **/
     /* CompleteClass */
-    override def SetUserData(data: js.Any): Unit = js.native
+    override def SetUserData(data: Any): Unit = js.native
   }
   
   @JSGlobal("Box2D.Dynamics.Joints.b2WeldJointDef")
@@ -2123,7 +2123,7 @@ object Joints {
   /**
     * Constructor.
     **/
-  class b2WeldJointDef ()
+  open class b2WeldJointDef ()
     extends StObject
        with typings.box2d.Box2D.Dynamics.Joints.b2WeldJointDef {
     
@@ -2182,6 +2182,6 @@ object Joints {
       * Use this to attach application specific data to your joints.
       **/
     /* CompleteClass */
-    var userData: js.Any = js.native
+    var userData: Any = js.native
   }
 }

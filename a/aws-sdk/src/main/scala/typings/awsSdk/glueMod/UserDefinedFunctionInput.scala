@@ -60,6 +60,6 @@ object UserDefinedFunctionInput {
     
     inline def setResourceUrisUndefined: Self = StObject.set(x, "ResourceUris", js.undefined)
     
-    inline def setResourceUrisVarargs(value: ResourceUri*): Self = StObject.set(x, "ResourceUris", js.Array(value :_*))
+    inline def setResourceUrisVarargs(value: ResourceUri*): Self = StObject.set(x, "ResourceUris", js.Array(value*))
   }
 }

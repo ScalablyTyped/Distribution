@@ -22,6 +22,6 @@ object TriangleStrip {
     
     inline def setVertexIndicesUndefined: Self = StObject.set(x, "vertexIndices", js.undefined)
     
-    inline def setVertexIndicesVarargs(value: Double*): Self = StObject.set(x, "vertexIndices", js.Array(value :_*))
+    inline def setVertexIndicesVarargs(value: Double*): Self = StObject.set(x, "vertexIndices", js.Array(value*))
   }
 }

@@ -1,6 +1,8 @@
 package typings.vscodeLanguageserverProtocol.protocolMod
 
+import typings.vscodeLanguageserverProtocol.messagesMod.MessageDirection
 import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType
+import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.codeLensSlashresolve
 import typings.vscodeLanguageserverTypes.mod.CodeLens
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,7 +10,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object CodeLensResolveRequest {
   
-  @JSImport("vscode-languageserver-protocol/lib/protocol", "CodeLensResolveRequest.type")
+  @JSImport("vscode-languageserver-protocol/lib/common/protocol", "CodeLensResolveRequest.messageDirection")
+  @js.native
+  val messageDirection: MessageDirection = js.native
+  
+  @JSImport("vscode-languageserver-protocol/lib/common/protocol", "CodeLensResolveRequest.method")
+  @js.native
+  val method: codeLensSlashresolve = js.native
+  
+  @JSImport("vscode-languageserver-protocol/lib/common/protocol", "CodeLensResolveRequest.type")
   @js.native
   val `type`: ProtocolRequestType[CodeLens, CodeLens, scala.Nothing, Unit, Unit] = js.native
 }

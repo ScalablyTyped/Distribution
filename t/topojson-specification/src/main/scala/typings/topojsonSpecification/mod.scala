@@ -37,7 +37,7 @@ object mod {
       
       inline def setGeometries(value: js.Array[GeometryObject[P]]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
       
-      inline def setGeometriesVarargs(value: GeometryObject[P]*): Self = StObject.set(x, "geometries", js.Array(value :_*))
+      inline def setGeometriesVarargs(value: GeometryObject[P]*): Self = StObject.set(x, "geometries", js.Array(value*))
       
       inline def setType(value: typings.topojsonSpecification.topojsonSpecificationStrings.GeometryCollection): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -162,7 +162,7 @@ object mod {
       
       inline def setArcs(value: ArcIndexes): Self = StObject.set(x, "arcs", value.asInstanceOf[js.Any])
       
-      inline def setArcsVarargs(value: Double*): Self = StObject.set(x, "arcs", js.Array(value :_*))
+      inline def setArcsVarargs(value: Double*): Self = StObject.set(x, "arcs", js.Array(value*))
       
       inline def setType(value: typings.topojsonSpecification.topojsonSpecificationStrings.LineString): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -190,7 +190,7 @@ object mod {
       
       inline def setArcs(value: js.Array[ArcIndexes]): Self = StObject.set(x, "arcs", value.asInstanceOf[js.Any])
       
-      inline def setArcsVarargs(value: ArcIndexes*): Self = StObject.set(x, "arcs", js.Array(value :_*))
+      inline def setArcsVarargs(value: ArcIndexes*): Self = StObject.set(x, "arcs", js.Array(value*))
       
       inline def setType(value: typings.topojsonSpecification.topojsonSpecificationStrings.MultiLineString): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -218,7 +218,7 @@ object mod {
       
       inline def setCoordinates(value: js.Array[Positions]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
       
-      inline def setCoordinatesVarargs(value: Positions*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
+      inline def setCoordinatesVarargs(value: Positions*): Self = StObject.set(x, "coordinates", js.Array(value*))
       
       inline def setType(value: typings.topojsonSpecification.topojsonSpecificationStrings.MultiPoint): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -246,7 +246,7 @@ object mod {
       
       inline def setArcs(value: js.Array[js.Array[ArcIndexes]]): Self = StObject.set(x, "arcs", value.asInstanceOf[js.Any])
       
-      inline def setArcsVarargs(value: js.Array[ArcIndexes]*): Self = StObject.set(x, "arcs", js.Array(value :_*))
+      inline def setArcsVarargs(value: js.Array[ArcIndexes]*): Self = StObject.set(x, "arcs", js.Array(value*))
       
       inline def setType(value: typings.topojsonSpecification.topojsonSpecificationStrings.MultiPolygon): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -255,7 +255,7 @@ object mod {
   trait NullObject
     extends StObject
        with GeometryObjectA[js.Object]
-       with GeometryObject[js.Any] {
+       with GeometryObject[Any] {
     
     @JSName("type")
     var type_NullObject: Null
@@ -302,7 +302,7 @@ object mod {
       
       inline def setCoordinates(value: Positions): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
       
-      inline def setCoordinatesVarargs(value: Double*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
+      inline def setCoordinatesVarargs(value: Double*): Self = StObject.set(x, "coordinates", js.Array(value*))
       
       inline def setType(value: typings.topojsonSpecification.topojsonSpecificationStrings.Point): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -330,7 +330,7 @@ object mod {
       
       inline def setArcs(value: js.Array[ArcIndexes]): Self = StObject.set(x, "arcs", value.asInstanceOf[js.Any])
       
-      inline def setArcsVarargs(value: ArcIndexes*): Self = StObject.set(x, "arcs", js.Array(value :_*))
+      inline def setArcsVarargs(value: ArcIndexes*): Self = StObject.set(x, "arcs", js.Array(value*))
       
       inline def setType(value: typings.topojsonSpecification.topojsonSpecificationStrings.Polygon): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -391,7 +391,7 @@ object mod {
       
       inline def setArcs(value: js.Array[Arc]): Self = StObject.set(x, "arcs", value.asInstanceOf[js.Any])
       
-      inline def setArcsVarargs(value: Arc*): Self = StObject.set(x, "arcs", js.Array(value :_*))
+      inline def setArcsVarargs(value: Arc*): Self = StObject.set(x, "arcs", js.Array(value*))
       
       inline def setObjects(value: T): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
       

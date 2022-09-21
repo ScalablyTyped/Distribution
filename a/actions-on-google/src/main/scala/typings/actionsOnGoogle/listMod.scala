@@ -15,7 +15,7 @@ object listMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper/option/list", "List")
   @js.native
-  class List protected () extends Helper[actionsDotintentDotOPTION, GoogleActionsV2OptionValueSpec] {
+  open class List protected () extends Helper[actionsDotintentDotOPTION, GoogleActionsV2OptionValueSpec] {
     /**
       * @param options List options
       * @public
@@ -44,7 +44,7 @@ object listMod {
       
       inline def setItems(value: (OptionItems[OptionItem | String]) | js.Array[GoogleActionsV2UiElementsListSelectListItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      inline def setItemsVarargs(value: GoogleActionsV2UiElementsListSelectListItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: GoogleActionsV2UiElementsListSelectListItem*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       

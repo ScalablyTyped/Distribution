@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Fields extends StObject {
   
   def Add(Range: Range): Field = js.native
-  def Add(Range: Range, Type: js.Any): Field = js.native
-  def Add(Range: Range, Type: js.Any, Text: js.Any): Field = js.native
-  def Add(Range: Range, Type: js.Any, Text: js.Any, PreserveFormatting: js.Any): Field = js.native
-  def Add(Range: Range, Type: js.Any, Text: Unit, PreserveFormatting: js.Any): Field = js.native
-  def Add(Range: Range, Type: Unit, Text: js.Any): Field = js.native
-  def Add(Range: Range, Type: Unit, Text: js.Any, PreserveFormatting: js.Any): Field = js.native
-  def Add(Range: Range, Type: Unit, Text: Unit, PreserveFormatting: js.Any): Field = js.native
+  def Add(Range: Range, Type: Any): Field = js.native
+  def Add(Range: Range, Type: Any, Text: Any): Field = js.native
+  def Add(Range: Range, Type: Any, Text: Any, PreserveFormatting: Any): Field = js.native
+  def Add(Range: Range, Type: Any, Text: Unit, PreserveFormatting: Any): Field = js.native
+  def Add(Range: Range, Type: Unit, Text: Any): Field = js.native
+  def Add(Range: Range, Type: Unit, Text: Any, PreserveFormatting: Any): Field = js.native
+  def Add(Range: Range, Type: Unit, Text: Unit, PreserveFormatting: Any): Field = js.native
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -26,7 +26,7 @@ trait Fields extends StObject {
   
   var Locked: Double = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def ToggleShowCodes(): Unit = js.native
   

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientReportToolbar")
 @js.native
-class ASPxClientReportToolbar ()
+open class ASPxClientReportToolbar ()
   extends StObject
      with typings.devexpressWeb.ASPxClientReportToolbar {
   
@@ -44,13 +44,13 @@ class ASPxClientReportToolbar ()
     * Returns an HTML element that is the root of the control's hierarchy.
     */
   /* CompleteClass */
-  override def GetMainElement(): js.Any = js.native
+  override def GetMainElement(): Any = js.native
   
   /**
     * Returns a client instance of the control that is the parent for a specified control.
     */
   /* CompleteClass */
-  override def GetParentControl(): js.Any = js.native
+  override def GetParentControl(): Any = js.native
   
   /**
     * Returns a value specifying whether a control is displayed.
@@ -128,5 +128,5 @@ object ASPxClientReportToolbar {
     * @param obj The client object to be type cast. Represents an instance of a DevExpress web control's client object.
     */
   /* static member */
-  inline def Cast(obj: js.Any): typings.devexpressWeb.ASPxClientReportToolbar = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ASPxClientReportToolbar]
+  inline def Cast(obj: Any): typings.devexpressWeb.ASPxClientReportToolbar = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ASPxClientReportToolbar]
 }

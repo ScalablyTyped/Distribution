@@ -132,7 +132,7 @@ object documentCardActivityTypesMod {
       
       inline def setPeople(value: js.Array[IDocumentCardActivityPerson]): Self = StObject.set(x, "people", value.asInstanceOf[js.Any])
       
-      inline def setPeopleVarargs(value: IDocumentCardActivityPerson*): Self = StObject.set(x, "people", js.Array(value :_*))
+      inline def setPeopleVarargs(value: IDocumentCardActivityPerson*): Self = StObject.set(x, "people", js.Array(value*))
       
       inline def setStyles(value: IStyleFunctionOrObject[IDocumentCardActivityStyleProps, IDocumentCardActivityStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       

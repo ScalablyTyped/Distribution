@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.NLerpBlock")
 @js.native
-class NLerpBlock protected ()
+open class NLerpBlock protected ()
   extends StObject
      with typings.babylonjs.BABYLON.NLerpBlock {
   /**

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BufferFileInput extends StObject {
   
-  var data: js.Any
+  var data: Any
   
   var mimeType: js.UndefOr[String] = js.undefined
   
@@ -14,14 +14,14 @@ trait BufferFileInput extends StObject {
 }
 object BufferFileInput {
   
-  inline def apply(data: js.Any, name: String): BufferFileInput = {
+  inline def apply(data: Any, name: String): BufferFileInput = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[BufferFileInput]
   }
   
   extension [Self <: BufferFileInput](x: Self) {
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     

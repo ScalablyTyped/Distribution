@@ -10,7 +10,7 @@ object testAssertionsMod {
   
   @JSImport("qunit-dom/dist/helpers/test-assertions", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with TestAssertions
   

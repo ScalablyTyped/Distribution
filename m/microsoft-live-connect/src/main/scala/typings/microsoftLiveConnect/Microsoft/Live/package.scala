@@ -1,5 +1,6 @@
 package typings.microsoftLiveConnect.Microsoft.Live
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,4 +12,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * that lists all consented scopes as a name/value pair. Each scope to which
   * the user consented is present as a key.
   */
-type IPermissions = org.scalablytyped.runtime.StringDictionary[scala.Double]
+type IPermissions = StringDictionary[Double]

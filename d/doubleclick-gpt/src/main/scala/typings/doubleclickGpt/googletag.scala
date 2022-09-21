@@ -1,7 +1,6 @@
 package typings.doubleclickGpt
 
 import typings.doubleclickGpt.anon.ChangeCorrelator
-import typings.doubleclickGpt.anon.RestrictDataProcessing
 import typings.doubleclickGpt.doubleclickGptNumbers.`0`
 import typings.doubleclickGpt.doubleclickGptNumbers.`1`
 import typings.doubleclickGpt.doubleclickGptStrings.slotRenderEnded
@@ -158,6 +157,51 @@ object googletag {
     def updateTargetingFromMap(map: js.Object): PassbackSlot = js.native
   }
   
+  trait PrivacySettingsConfig extends StObject {
+    
+    var childDirectedTreatment: js.UndefOr[Boolean | Null] = js.undefined
+    
+    var limitedAds: js.UndefOr[Boolean | Null] = js.undefined
+    
+    var restrictDataProcessing: js.UndefOr[Boolean | Null] = js.undefined
+    
+    var underAgeOfConsent: js.UndefOr[Boolean | Null] = js.undefined
+  }
+  object PrivacySettingsConfig {
+    
+    inline def apply(): PrivacySettingsConfig = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PrivacySettingsConfig]
+    }
+    
+    extension [Self <: PrivacySettingsConfig](x: Self) {
+      
+      inline def setChildDirectedTreatment(value: Boolean): Self = StObject.set(x, "childDirectedTreatment", value.asInstanceOf[js.Any])
+      
+      inline def setChildDirectedTreatmentNull: Self = StObject.set(x, "childDirectedTreatment", null)
+      
+      inline def setChildDirectedTreatmentUndefined: Self = StObject.set(x, "childDirectedTreatment", js.undefined)
+      
+      inline def setLimitedAds(value: Boolean): Self = StObject.set(x, "limitedAds", value.asInstanceOf[js.Any])
+      
+      inline def setLimitedAdsNull: Self = StObject.set(x, "limitedAds", null)
+      
+      inline def setLimitedAdsUndefined: Self = StObject.set(x, "limitedAds", js.undefined)
+      
+      inline def setRestrictDataProcessing(value: Boolean): Self = StObject.set(x, "restrictDataProcessing", value.asInstanceOf[js.Any])
+      
+      inline def setRestrictDataProcessingNull: Self = StObject.set(x, "restrictDataProcessing", null)
+      
+      inline def setRestrictDataProcessingUndefined: Self = StObject.set(x, "restrictDataProcessing", js.undefined)
+      
+      inline def setUnderAgeOfConsent(value: Boolean): Self = StObject.set(x, "underAgeOfConsent", value.asInstanceOf[js.Any])
+      
+      inline def setUnderAgeOfConsentNull: Self = StObject.set(x, "underAgeOfConsent", null)
+      
+      inline def setUnderAgeOfConsentUndefined: Self = StObject.set(x, "underAgeOfConsent", js.undefined)
+    }
+  }
+  
   @js.native
   trait PubAdsService
     extends StObject
@@ -232,14 +276,11 @@ object googletag {
     def setLocation(latitudeOrAddress: Double, opt_longitude: Double, opt_radius: Double): PubAdsService = js.native
     def setLocation(latitudeOrAddress: Double, opt_longitude: Unit, opt_radius: Double): PubAdsService = js.native
     
-    def setPrivacySettings(settings: RestrictDataProcessing): Slot = js.native
+    def setPrivacySettings(settings: PrivacySettingsConfig): Slot = js.native
     
     def setPublisherProvidedId(ppid: String): PubAdsService = js.native
     
-    @JSName("setRequestNonPersonalizedAds")
-    def setRequestNonPersonalizedAds_0(nonPersonalizedAds: `0`): PubAdsService = js.native
-    @JSName("setRequestNonPersonalizedAds")
-    def setRequestNonPersonalizedAds_1(nonPersonalizedAds: `1`): PubAdsService = js.native
+    def setRequestNonPersonalizedAds(nonPersonalizedAds: `0` | `1`): PubAdsService = js.native
     
     def setSafeFrameConfig(config: SafeFrameConfig): PubAdsService = js.native
     
@@ -351,6 +392,19 @@ object googletag {
     ): Service = js.native
     
     def getSlots(): js.Array[Slot] = js.native
+    
+    def removeEventListener(eventType: String, listener: js.Function1[/* event */ Event, Unit]): Service = js.native
+    @JSName("removeEventListener")
+    def removeEventListener_slotRenderEnded(eventType: slotRenderEnded, listener: js.Function1[/* event */ SlotRenderEndedEvent, Unit]): Service = js.native
+    @JSName("removeEventListener")
+    def removeEventListener_slotRequested(eventType: slotRequested, listener: js.Function1[/* event */ SlotRequestedEvent, Unit]): Service = js.native
+    @JSName("removeEventListener")
+    def removeEventListener_slotResponseReceived(eventType: slotResponseReceived, listener: js.Function1[/* event */ SlotResponseReceived, Unit]): Service = js.native
+    @JSName("removeEventListener")
+    def removeEventListener_slotVisibilityChanged(
+      eventType: slotVisibilityChanged,
+      listener: js.Function1[/* event */ SlotVisibilityChangedEvent, Unit]
+    ): Service = js.native
   }
   
   type SingleSize = SingleSizeArray | NamedSize
@@ -425,6 +479,8 @@ object googletag {
     
     def setTargeting(key: String, value: String): Slot = js.native
     def setTargeting(key: String, value: js.Array[String]): Slot = js.native
+    
+    def updateTargetingFromMap(map: js.Object): Slot = js.native
   }
   
   object events {
@@ -505,7 +561,7 @@ object googletag {
         
         inline def setSize(value: js.Array[Double] | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
         
-        inline def setSizeVarargs(value: Double*): Self = StObject.set(x, "size", js.Array(value :_*))
+        inline def setSizeVarargs(value: Double*): Self = StObject.set(x, "size", js.Array(value*))
         
         inline def setSourceAgnosticCreativeId(value: Double): Self = StObject.set(x, "sourceAgnosticCreativeId", value.asInstanceOf[js.Any])
         

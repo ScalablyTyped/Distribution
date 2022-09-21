@@ -61,6 +61,8 @@ trait Element extends StObject {
   
   def asBody(): Body
   
+  def asDate(): Date
+  
   def asEquation(): Equation
   
   def asEquationFunction(): EquationFunction
@@ -89,6 +91,10 @@ trait Element extends StObject {
   
   def asParagraph(): Paragraph
   
+  def asPerson(): Person
+  
+  def asRichLink(): RichLink
+  
   def asTable(): Table
   
   def asTableCell(): TableCell
@@ -101,7 +107,7 @@ trait Element extends StObject {
   
   def copy(): Element
   
-  def getAttributes(): js.Any
+  def getAttributes(): Any
   
   def getNextSibling(): Element
   
@@ -117,12 +123,13 @@ trait Element extends StObject {
   
   def removeFromParent(): Element
   
-  def setAttributes(attributes: js.Any): Element
+  def setAttributes(attributes: Any): Element
 }
 object Element {
   
   inline def apply(
     asBody: () => Body,
+    asDate: () => Date,
     asEquation: () => Equation,
     asEquationFunction: () => EquationFunction,
     asEquationFunctionArgumentSeparator: () => EquationFunctionArgumentSeparator,
@@ -137,13 +144,15 @@ object Element {
     asListItem: () => ListItem,
     asPageBreak: () => PageBreak,
     asParagraph: () => Paragraph,
+    asPerson: () => Person,
+    asRichLink: () => RichLink,
     asTable: () => Table,
     asTableCell: () => TableCell,
     asTableOfContents: () => TableOfContents,
     asTableRow: () => TableRow,
     asText: () => Text,
     copy: () => Element,
-    getAttributes: () => js.Any,
+    getAttributes: () => Any,
     getNextSibling: () => Element,
     getParent: () => ContainerElement,
     getPreviousSibling: () => Element,
@@ -151,15 +160,17 @@ object Element {
     isAtDocumentEnd: () => Boolean,
     merge: () => Element,
     removeFromParent: () => Element,
-    setAttributes: js.Any => Element
+    setAttributes: Any => Element
   ): Element = {
-    val __obj = js.Dynamic.literal(asBody = js.Any.fromFunction0(asBody), asEquation = js.Any.fromFunction0(asEquation), asEquationFunction = js.Any.fromFunction0(asEquationFunction), asEquationFunctionArgumentSeparator = js.Any.fromFunction0(asEquationFunctionArgumentSeparator), asEquationSymbol = js.Any.fromFunction0(asEquationSymbol), asFooterSection = js.Any.fromFunction0(asFooterSection), asFootnote = js.Any.fromFunction0(asFootnote), asFootnoteSection = js.Any.fromFunction0(asFootnoteSection), asHeaderSection = js.Any.fromFunction0(asHeaderSection), asHorizontalRule = js.Any.fromFunction0(asHorizontalRule), asInlineDrawing = js.Any.fromFunction0(asInlineDrawing), asInlineImage = js.Any.fromFunction0(asInlineImage), asListItem = js.Any.fromFunction0(asListItem), asPageBreak = js.Any.fromFunction0(asPageBreak), asParagraph = js.Any.fromFunction0(asParagraph), asTable = js.Any.fromFunction0(asTable), asTableCell = js.Any.fromFunction0(asTableCell), asTableOfContents = js.Any.fromFunction0(asTableOfContents), asTableRow = js.Any.fromFunction0(asTableRow), asText = js.Any.fromFunction0(asText), copy = js.Any.fromFunction0(copy), getAttributes = js.Any.fromFunction0(getAttributes), getNextSibling = js.Any.fromFunction0(getNextSibling), getParent = js.Any.fromFunction0(getParent), getPreviousSibling = js.Any.fromFunction0(getPreviousSibling), getType = js.Any.fromFunction0(getType), isAtDocumentEnd = js.Any.fromFunction0(isAtDocumentEnd), merge = js.Any.fromFunction0(merge), removeFromParent = js.Any.fromFunction0(removeFromParent), setAttributes = js.Any.fromFunction1(setAttributes))
+    val __obj = js.Dynamic.literal(asBody = js.Any.fromFunction0(asBody), asDate = js.Any.fromFunction0(asDate), asEquation = js.Any.fromFunction0(asEquation), asEquationFunction = js.Any.fromFunction0(asEquationFunction), asEquationFunctionArgumentSeparator = js.Any.fromFunction0(asEquationFunctionArgumentSeparator), asEquationSymbol = js.Any.fromFunction0(asEquationSymbol), asFooterSection = js.Any.fromFunction0(asFooterSection), asFootnote = js.Any.fromFunction0(asFootnote), asFootnoteSection = js.Any.fromFunction0(asFootnoteSection), asHeaderSection = js.Any.fromFunction0(asHeaderSection), asHorizontalRule = js.Any.fromFunction0(asHorizontalRule), asInlineDrawing = js.Any.fromFunction0(asInlineDrawing), asInlineImage = js.Any.fromFunction0(asInlineImage), asListItem = js.Any.fromFunction0(asListItem), asPageBreak = js.Any.fromFunction0(asPageBreak), asParagraph = js.Any.fromFunction0(asParagraph), asPerson = js.Any.fromFunction0(asPerson), asRichLink = js.Any.fromFunction0(asRichLink), asTable = js.Any.fromFunction0(asTable), asTableCell = js.Any.fromFunction0(asTableCell), asTableOfContents = js.Any.fromFunction0(asTableOfContents), asTableRow = js.Any.fromFunction0(asTableRow), asText = js.Any.fromFunction0(asText), copy = js.Any.fromFunction0(copy), getAttributes = js.Any.fromFunction0(getAttributes), getNextSibling = js.Any.fromFunction0(getNextSibling), getParent = js.Any.fromFunction0(getParent), getPreviousSibling = js.Any.fromFunction0(getPreviousSibling), getType = js.Any.fromFunction0(getType), isAtDocumentEnd = js.Any.fromFunction0(isAtDocumentEnd), merge = js.Any.fromFunction0(merge), removeFromParent = js.Any.fromFunction0(removeFromParent), setAttributes = js.Any.fromFunction1(setAttributes))
     __obj.asInstanceOf[Element]
   }
   
   extension [Self <: Element](x: Self) {
     
     inline def setAsBody(value: () => Body): Self = StObject.set(x, "asBody", js.Any.fromFunction0(value))
+    
+    inline def setAsDate(value: () => Date): Self = StObject.set(x, "asDate", js.Any.fromFunction0(value))
     
     inline def setAsEquation(value: () => Equation): Self = StObject.set(x, "asEquation", js.Any.fromFunction0(value))
     
@@ -189,6 +200,10 @@ object Element {
     
     inline def setAsParagraph(value: () => Paragraph): Self = StObject.set(x, "asParagraph", js.Any.fromFunction0(value))
     
+    inline def setAsPerson(value: () => Person): Self = StObject.set(x, "asPerson", js.Any.fromFunction0(value))
+    
+    inline def setAsRichLink(value: () => RichLink): Self = StObject.set(x, "asRichLink", js.Any.fromFunction0(value))
+    
     inline def setAsTable(value: () => Table): Self = StObject.set(x, "asTable", js.Any.fromFunction0(value))
     
     inline def setAsTableCell(value: () => TableCell): Self = StObject.set(x, "asTableCell", js.Any.fromFunction0(value))
@@ -201,7 +216,7 @@ object Element {
     
     inline def setCopy(value: () => Element): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
     
-    inline def setGetAttributes(value: () => js.Any): Self = StObject.set(x, "getAttributes", js.Any.fromFunction0(value))
+    inline def setGetAttributes(value: () => Any): Self = StObject.set(x, "getAttributes", js.Any.fromFunction0(value))
     
     inline def setGetNextSibling(value: () => Element): Self = StObject.set(x, "getNextSibling", js.Any.fromFunction0(value))
     
@@ -217,6 +232,6 @@ object Element {
     
     inline def setRemoveFromParent(value: () => Element): Self = StObject.set(x, "removeFromParent", js.Any.fromFunction0(value))
     
-    inline def setSetAttributes(value: js.Any => Element): Self = StObject.set(x, "setAttributes", js.Any.fromFunction1(value))
+    inline def setSetAttributes(value: Any => Element): Self = StObject.set(x, "setAttributes", js.Any.fromFunction1(value))
   }
 }

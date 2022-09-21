@@ -1,5 +1,10 @@
 package typings.awsSdk.mediaconvertMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.COMPLETE_MAIN
+import typings.awsSdk.awsSdkStrings.ONE_YEAR
+import typings.awsSdk.awsSdkStrings.QVBR
+import typings.awsSdk.awsSdkStrings.VBR
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.awsSdk.awsSdkStrings.NORMAL
   - java.lang.String
 */
-type AacAudioDescriptionBroadcasterMix = typings.awsSdk.mediaconvertMod._AacAudioDescriptionBroadcasterMix | java.lang.String
+type AacAudioDescriptionBroadcasterMix = _AacAudioDescriptionBroadcasterMix | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.LC
@@ -18,7 +23,7 @@ type AacAudioDescriptionBroadcasterMix = typings.awsSdk.mediaconvertMod._AacAudi
   - typings.awsSdk.awsSdkStrings.HEV2
   - java.lang.String
 */
-type AacCodecProfile = typings.awsSdk.mediaconvertMod._AacCodecProfile | java.lang.String
+type AacCodecProfile = _AacCodecProfile | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AD_RECEIVER_MIX
@@ -28,28 +33,28 @@ type AacCodecProfile = typings.awsSdk.mediaconvertMod._AacCodecProfile | java.la
   - typings.awsSdk.awsSdkStrings.CODING_MODE_5_1
   - java.lang.String
 */
-type AacCodingMode = typings.awsSdk.mediaconvertMod._AacCodingMode | java.lang.String
+type AacCodingMode = _AacCodingMode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CBR
   - typings.awsSdk.awsSdkStrings.VBR
   - java.lang.String
 */
-type AacRateControlMode = typings.awsSdk.mediaconvertMod._AacRateControlMode | java.lang.String
+type AacRateControlMode = _AacRateControlMode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.LATM_LOAS
   - typings.awsSdk.awsSdkStrings.NONE
   - java.lang.String
 */
-type AacRawFormat = typings.awsSdk.mediaconvertMod._AacRawFormat | java.lang.String
+type AacRawFormat = _AacRawFormat | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.MPEG2
   - typings.awsSdk.awsSdkStrings.MPEG4
   - java.lang.String
 */
-type AacSpecification = typings.awsSdk.mediaconvertMod._AacSpecification | java.lang.String
+type AacSpecification = _AacSpecification | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.LOW
@@ -58,7 +63,7 @@ type AacSpecification = typings.awsSdk.mediaconvertMod._AacSpecification | java.
   - typings.awsSdk.awsSdkStrings.HIGH
   - java.lang.String
 */
-type AacVbrQuality = typings.awsSdk.mediaconvertMod._AacVbrQuality | java.lang.String
+type AacVbrQuality = _AacVbrQuality | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.COMPLETE_MAIN
@@ -71,7 +76,7 @@ type AacVbrQuality = typings.awsSdk.mediaconvertMod._AacVbrQuality | java.lang.S
   - typings.awsSdk.awsSdkStrings.VOICE_OVER
   - java.lang.String
 */
-type Ac3BitstreamMode = typings.awsSdk.mediaconvertMod._Ac3BitstreamMode | java.lang.String
+type Ac3BitstreamMode = _Ac3BitstreamMode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CODING_MODE_1_0
@@ -80,28 +85,50 @@ type Ac3BitstreamMode = typings.awsSdk.mediaconvertMod._Ac3BitstreamMode | java.
   - typings.awsSdk.awsSdkStrings.CODING_MODE_3_2_LFE
   - java.lang.String
 */
-type Ac3CodingMode = typings.awsSdk.mediaconvertMod._Ac3CodingMode | java.lang.String
+type Ac3CodingMode = _Ac3CodingMode | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.FILM_STANDARD
+  - typings.awsSdk.awsSdkStrings.FILM_LIGHT
+  - typings.awsSdk.awsSdkStrings.MUSIC_STANDARD
+  - typings.awsSdk.awsSdkStrings.MUSIC_LIGHT
+  - typings.awsSdk.awsSdkStrings.SPEECH
+  - typings.awsSdk.awsSdkStrings.NONE
+  - java.lang.String
+*/
+type Ac3DynamicRangeCompressionLine = _Ac3DynamicRangeCompressionLine | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FILM_STANDARD
   - typings.awsSdk.awsSdkStrings.NONE
   - java.lang.String
 */
-type Ac3DynamicRangeCompressionProfile = typings.awsSdk.mediaconvertMod._Ac3DynamicRangeCompressionProfile | java.lang.String
+type Ac3DynamicRangeCompressionProfile = _Ac3DynamicRangeCompressionProfile | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.FILM_STANDARD
+  - typings.awsSdk.awsSdkStrings.FILM_LIGHT
+  - typings.awsSdk.awsSdkStrings.MUSIC_STANDARD
+  - typings.awsSdk.awsSdkStrings.MUSIC_LIGHT
+  - typings.awsSdk.awsSdkStrings.SPEECH
+  - typings.awsSdk.awsSdkStrings.NONE
+  - java.lang.String
+*/
+type Ac3DynamicRangeCompressionRf = _Ac3DynamicRangeCompressionRf | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLED
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type Ac3LfeFilter = typings.awsSdk.mediaconvertMod._Ac3LfeFilter | java.lang.String
+type Ac3LfeFilter = _Ac3LfeFilter | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FOLLOW_INPUT
   - typings.awsSdk.awsSdkStrings.USE_CONFIGURED
   - java.lang.String
 */
-type Ac3MetadataControl = typings.awsSdk.mediaconvertMod._Ac3MetadataControl | java.lang.String
+type Ac3MetadataControl = _Ac3MetadataControl | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DISABLED
@@ -109,7 +136,7 @@ type Ac3MetadataControl = typings.awsSdk.mediaconvertMod._Ac3MetadataControl | j
   - typings.awsSdk.awsSdkStrings.PREFERRED
   - java.lang.String
 */
-type AccelerationMode = typings.awsSdk.mediaconvertMod._AccelerationMode | java.lang.String
+type AccelerationMode = _AccelerationMode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NOT_APPLICABLE
@@ -118,7 +145,7 @@ type AccelerationMode = typings.awsSdk.mediaconvertMod._AccelerationMode | java.
   - typings.awsSdk.awsSdkStrings.NOT_ACCELERATED
   - java.lang.String
 */
-type AccelerationStatus = typings.awsSdk.mediaconvertMod._AccelerationStatus | java.lang.String
+type AccelerationStatus = _AccelerationStatus | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
@@ -126,35 +153,35 @@ type AccelerationStatus = typings.awsSdk.mediaconvertMod._AccelerationStatus | j
   - typings.awsSdk.awsSdkStrings.FIXED
   - java.lang.String
 */
-type AfdSignaling = typings.awsSdk.mediaconvertMod._AfdSignaling | java.lang.String
+type AfdSignaling = _AfdSignaling | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DISCARD
   - typings.awsSdk.awsSdkStrings.REMAP_TO_LUMA
   - java.lang.String
 */
-type AlphaBehavior = typings.awsSdk.mediaconvertMod._AlphaBehavior | java.lang.String
+type AlphaBehavior = _AlphaBehavior | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.UPCONVERT
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type AncillaryConvert608To708 = typings.awsSdk.mediaconvertMod._AncillaryConvert608To708 | java.lang.String
+type AncillaryConvert608To708 = _AncillaryConvert608To708 | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.END_OF_INPUT
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type AncillaryTerminateCaptions = typings.awsSdk.mediaconvertMod._AncillaryTerminateCaptions | java.lang.String
+type AncillaryTerminateCaptions = _AncillaryTerminateCaptions | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DISABLED
   - typings.awsSdk.awsSdkStrings.ENABLED
   - java.lang.String
 */
-type AntiAlias = typings.awsSdk.mediaconvertMod._AntiAlias | java.lang.String
+type AntiAlias = _AntiAlias | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.L
@@ -174,7 +201,7 @@ type AntiAlias = typings.awsSdk.mediaconvertMod._AntiAlias | java.lang.String
   - typings.awsSdk.awsSdkStrings.VHR
   - java.lang.String
 */
-type AudioChannelTag = typings.awsSdk.mediaconvertMod._AudioChannelTag | java.lang.String
+type AudioChannelTag = _AudioChannelTag | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AAC
@@ -190,21 +217,30 @@ type AudioChannelTag = typings.awsSdk.mediaconvertMod._AudioChannelTag | java.la
   - typings.awsSdk.awsSdkStrings.PASSTHROUGH
   - java.lang.String
 */
-type AudioCodec = typings.awsSdk.mediaconvertMod._AudioCodec | java.lang.String
+type AudioCodec = _AudioCodec | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DEFAULT
   - typings.awsSdk.awsSdkStrings.NOT_DEFAULT
   - java.lang.String
 */
-type AudioDefaultSelection = typings.awsSdk.mediaconvertMod._AudioDefaultSelection | java.lang.String
+type AudioDefaultSelection = _AudioDefaultSelection | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - typings.awsSdk.awsSdkStrings.AUTO
+  - typings.awsSdk.awsSdkStrings.TRACK
+  - typings.awsSdk.awsSdkStrings.FRAME
+  - java.lang.String
+*/
+type AudioDurationCorrection = _AudioDurationCorrection | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FOLLOW_INPUT
   - typings.awsSdk.awsSdkStrings.USE_CONFIGURED
   - java.lang.String
 */
-type AudioLanguageCodeControl = typings.awsSdk.mediaconvertMod._AudioLanguageCodeControl | java.lang.String
+type AudioLanguageCodeControl = _AudioLanguageCodeControl | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ITU_BS_1770_1
@@ -213,43 +249,44 @@ type AudioLanguageCodeControl = typings.awsSdk.mediaconvertMod._AudioLanguageCod
   - typings.awsSdk.awsSdkStrings.ITU_BS_1770_4
   - java.lang.String
 */
-type AudioNormalizationAlgorithm = typings.awsSdk.mediaconvertMod._AudioNormalizationAlgorithm | java.lang.String
+type AudioNormalizationAlgorithm = _AudioNormalizationAlgorithm | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CORRECT_AUDIO
   - typings.awsSdk.awsSdkStrings.MEASURE_ONLY
   - java.lang.String
 */
-type AudioNormalizationAlgorithmControl = typings.awsSdk.mediaconvertMod._AudioNormalizationAlgorithmControl | java.lang.String
+type AudioNormalizationAlgorithmControl = _AudioNormalizationAlgorithmControl | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.LOG
   - typings.awsSdk.awsSdkStrings.DONT_LOG
   - java.lang.String
 */
-type AudioNormalizationLoudnessLogging = typings.awsSdk.mediaconvertMod._AudioNormalizationLoudnessLogging | java.lang.String
+type AudioNormalizationLoudnessLogging = _AudioNormalizationLoudnessLogging | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.TRUE_PEAK
   - typings.awsSdk.awsSdkStrings.NONE
   - java.lang.String
 */
-type AudioNormalizationPeakCalculation = typings.awsSdk.mediaconvertMod._AudioNormalizationPeakCalculation | java.lang.String
+type AudioNormalizationPeakCalculation = _AudioNormalizationPeakCalculation | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PID
   - typings.awsSdk.awsSdkStrings.TRACK
   - typings.awsSdk.awsSdkStrings.LANGUAGE_CODE
+  - typings.awsSdk.awsSdkStrings.HLS_RENDITION_GROUP
   - java.lang.String
 */
-type AudioSelectorType = typings.awsSdk.mediaconvertMod._AudioSelectorType | java.lang.String
+type AudioSelectorType = _AudioSelectorType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FOLLOW_INPUT
   - typings.awsSdk.awsSdkStrings.USE_CONFIGURED
   - java.lang.String
 */
-type AudioTypeControl = typings.awsSdk.mediaconvertMod._AudioTypeControl | java.lang.String
+type AudioTypeControl = _AudioTypeControl | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.OFF
@@ -260,14 +297,21 @@ type AudioTypeControl = typings.awsSdk.mediaconvertMod._AudioTypeControl | java.
   - typings.awsSdk.awsSdkStrings.MAX
   - java.lang.String
 */
-type Av1AdaptiveQuantization = typings.awsSdk.mediaconvertMod._Av1AdaptiveQuantization | java.lang.String
+type Av1AdaptiveQuantization = _Av1AdaptiveQuantization | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.BIT_8
+  - typings.awsSdk.awsSdkStrings.BIT_10
+  - java.lang.String
+*/
+type Av1BitDepth = _Av1BitDepth | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INITIALIZE_FROM_SOURCE
   - typings.awsSdk.awsSdkStrings.SPECIFIED
   - java.lang.String
 */
-type Av1FramerateControl = typings.awsSdk.mediaconvertMod._Av1FramerateControl | java.lang.String
+type Av1FramerateControl = _Av1FramerateControl | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DUPLICATE_DROP
@@ -275,31 +319,32 @@ type Av1FramerateControl = typings.awsSdk.mediaconvertMod._Av1FramerateControl |
   - typings.awsSdk.awsSdkStrings.FRAMEFORMER
   - java.lang.String
 */
-type Av1FramerateConversionAlgorithm = typings.awsSdk.mediaconvertMod._Av1FramerateConversionAlgorithm | java.lang.String
+type Av1FramerateConversionAlgorithm = _Av1FramerateConversionAlgorithm | String
 
-type Av1RateControlMode = typings.awsSdk.awsSdkStrings.QVBR | java.lang.String
+type Av1RateControlMode = QVBR | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DISABLED
   - typings.awsSdk.awsSdkStrings.ENABLED
   - java.lang.String
 */
-type Av1SpatialAdaptiveQuantization = typings.awsSdk.mediaconvertMod._Av1SpatialAdaptiveQuantization | java.lang.String
+type Av1SpatialAdaptiveQuantization = _Av1SpatialAdaptiveQuantization | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CLASS_50
   - typings.awsSdk.awsSdkStrings.CLASS_100
   - typings.awsSdk.awsSdkStrings.CLASS_200
+  - typings.awsSdk.awsSdkStrings.CLASS_4K_2K
   - java.lang.String
 */
-type AvcIntraClass = typings.awsSdk.mediaconvertMod._AvcIntraClass | java.lang.String
+type AvcIntraClass = _AvcIntraClass | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INITIALIZE_FROM_SOURCE
   - typings.awsSdk.awsSdkStrings.SPECIFIED
   - java.lang.String
 */
-type AvcIntraFramerateControl = typings.awsSdk.mediaconvertMod._AvcIntraFramerateControl | java.lang.String
+type AvcIntraFramerateControl = _AvcIntraFramerateControl | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DUPLICATE_DROP
@@ -307,7 +352,7 @@ type AvcIntraFramerateControl = typings.awsSdk.mediaconvertMod._AvcIntraFramerat
   - typings.awsSdk.awsSdkStrings.FRAMEFORMER
   - java.lang.String
 */
-type AvcIntraFramerateConversionAlgorithm = typings.awsSdk.mediaconvertMod._AvcIntraFramerateConversionAlgorithm | java.lang.String
+type AvcIntraFramerateConversionAlgorithm = _AvcIntraFramerateConversionAlgorithm | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PROGRESSIVE
@@ -317,21 +362,35 @@ type AvcIntraFramerateConversionAlgorithm = typings.awsSdk.mediaconvertMod._AvcI
   - typings.awsSdk.awsSdkStrings.FOLLOW_BOTTOM_FIELD
   - java.lang.String
 */
-type AvcIntraInterlaceMode = typings.awsSdk.mediaconvertMod._AvcIntraInterlaceMode | java.lang.String
+type AvcIntraInterlaceMode = _AvcIntraInterlaceMode | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.INTERLACED
+  - typings.awsSdk.awsSdkStrings.INTERLACED_OPTIMIZE
+  - java.lang.String
+*/
+type AvcIntraScanTypeConversionMode = _AvcIntraScanTypeConversionMode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DISABLED
   - typings.awsSdk.awsSdkStrings.ENABLED
   - java.lang.String
 */
-type AvcIntraSlowPal = typings.awsSdk.mediaconvertMod._AvcIntraSlowPal | java.lang.String
+type AvcIntraSlowPal = _AvcIntraSlowPal | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
   - typings.awsSdk.awsSdkStrings.HARD
   - java.lang.String
 */
-type AvcIntraTelecine = typings.awsSdk.mediaconvertMod._AvcIntraTelecine | java.lang.String
+type AvcIntraTelecine = _AvcIntraTelecine | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SINGLE_PASS
+  - typings.awsSdk.awsSdkStrings.MULTI_PASS
+  - java.lang.String
+*/
+type AvcIntraUhdQualityTuningLevel = _AvcIntraUhdQualityTuningLevel | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.QUEUE
@@ -340,22 +399,48 @@ type AvcIntraTelecine = typings.awsSdk.mediaconvertMod._AvcIntraTelecine | java.
   - typings.awsSdk.awsSdkStrings.JOB
   - java.lang.String
 */
-type BillingTagsSource = typings.awsSdk.mediaconvertMod._BillingTagsSource | java.lang.String
+type BillingTagsSource = _BillingTagsSource | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - java.lang.String
+*/
+type BurnInSubtitleStylePassthrough = _BurnInSubtitleStylePassthrough | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CENTERED
   - typings.awsSdk.awsSdkStrings.LEFT
+  - typings.awsSdk.awsSdkStrings.AUTO
   - java.lang.String
 */
-type BurninSubtitleAlignment = typings.awsSdk.mediaconvertMod._BurninSubtitleAlignment | java.lang.String
+type BurninSubtitleAlignment = _BurninSubtitleAlignment | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.WHITE_TEXT_ONLY
+  - typings.awsSdk.awsSdkStrings.ALL_TEXT
+  - java.lang.String
+*/
+type BurninSubtitleApplyFontColor = _BurninSubtitleApplyFontColor | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
   - typings.awsSdk.awsSdkStrings.BLACK
   - typings.awsSdk.awsSdkStrings.WHITE
+  - typings.awsSdk.awsSdkStrings.AUTO
   - java.lang.String
 */
-type BurninSubtitleBackgroundColor = typings.awsSdk.mediaconvertMod._BurninSubtitleBackgroundColor | java.lang.String
+type BurninSubtitleBackgroundColor = _BurninSubtitleBackgroundColor | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.BEST_MATCH
+  - typings.awsSdk.awsSdkStrings.MONOSPACED_SANSSERIF
+  - typings.awsSdk.awsSdkStrings.MONOSPACED_SERIF
+  - typings.awsSdk.awsSdkStrings.PROPORTIONAL_SANSSERIF
+  - typings.awsSdk.awsSdkStrings.PROPORTIONAL_SERIF
+  - java.lang.String
+*/
+type BurninSubtitleFallbackFont = _BurninSubtitleFallbackFont | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.WHITE
@@ -364,9 +449,11 @@ type BurninSubtitleBackgroundColor = typings.awsSdk.mediaconvertMod._BurninSubti
   - typings.awsSdk.awsSdkStrings.RED
   - typings.awsSdk.awsSdkStrings.GREEN
   - typings.awsSdk.awsSdkStrings.BLUE
+  - typings.awsSdk.awsSdkStrings.HEX
+  - typings.awsSdk.awsSdkStrings.AUTO
   - java.lang.String
 */
-type BurninSubtitleFontColor = typings.awsSdk.mediaconvertMod._BurninSubtitleFontColor | java.lang.String
+type BurninSubtitleFontColor = _BurninSubtitleFontColor | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.BLACK
@@ -375,24 +462,27 @@ type BurninSubtitleFontColor = typings.awsSdk.mediaconvertMod._BurninSubtitleFon
   - typings.awsSdk.awsSdkStrings.RED
   - typings.awsSdk.awsSdkStrings.GREEN
   - typings.awsSdk.awsSdkStrings.BLUE
+  - typings.awsSdk.awsSdkStrings.AUTO
   - java.lang.String
 */
-type BurninSubtitleOutlineColor = typings.awsSdk.mediaconvertMod._BurninSubtitleOutlineColor | java.lang.String
+type BurninSubtitleOutlineColor = _BurninSubtitleOutlineColor | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
   - typings.awsSdk.awsSdkStrings.BLACK
   - typings.awsSdk.awsSdkStrings.WHITE
+  - typings.awsSdk.awsSdkStrings.AUTO
   - java.lang.String
 */
-type BurninSubtitleShadowColor = typings.awsSdk.mediaconvertMod._BurninSubtitleShadowColor | java.lang.String
+type BurninSubtitleShadowColor = _BurninSubtitleShadowColor | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FIXED_GRID
   - typings.awsSdk.awsSdkStrings.PROPORTIONAL
+  - typings.awsSdk.awsSdkStrings.AUTO
   - java.lang.String
 */
-type BurninSubtitleTeletextSpacing = typings.awsSdk.mediaconvertMod._BurninSubtitleTeletextSpacing | java.lang.String
+type BurninSubtitleTeletextSpacing = _BurninSubtitleTeletextSpacing | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.BURN_IN
@@ -409,7 +499,7 @@ type BurninSubtitleTeletextSpacing = typings.awsSdk.mediaconvertMod._BurninSubti
   - typings.awsSdk.awsSdkStrings.WEBVTT
   - java.lang.String
 */
-type CaptionDestinationType = typings.awsSdk.mediaconvertMod._CaptionDestinationType | java.lang.String
+type CaptionDestinationType = _CaptionDestinationType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ANCILLARY
@@ -421,124 +511,206 @@ type CaptionDestinationType = typings.awsSdk.mediaconvertMod._CaptionDestination
   - typings.awsSdk.awsSdkStrings.STL
   - typings.awsSdk.awsSdkStrings.SRT
   - typings.awsSdk.awsSdkStrings.SMI
+  - typings.awsSdk.awsSdkStrings.SMPTE_TT
   - typings.awsSdk.awsSdkStrings.TELETEXT
   - typings.awsSdk.awsSdkStrings.NULL_SOURCE
   - typings.awsSdk.awsSdkStrings.IMSC
+  - typings.awsSdk.awsSdkStrings.WEBVTT
   - java.lang.String
 */
-type CaptionSourceType = typings.awsSdk.mediaconvertMod._CaptionSourceType | java.lang.String
+type CaptionSourceType = _CaptionSourceType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DISABLED
   - typings.awsSdk.awsSdkStrings.ENABLED
   - java.lang.String
 */
-type CmafClientCache = typings.awsSdk.mediaconvertMod._CmafClientCache | java.lang.String
+type CmafClientCache = _CmafClientCache | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.RFC_6381
   - typings.awsSdk.awsSdkStrings.RFC_4281
   - java.lang.String
 */
-type CmafCodecSpecification = typings.awsSdk.mediaconvertMod._CmafCodecSpecification | java.lang.String
+type CmafCodecSpecification = _CmafCodecSpecification | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SAMPLE_AES
   - typings.awsSdk.awsSdkStrings.AES_CTR
   - java.lang.String
 */
-type CmafEncryptionType = typings.awsSdk.mediaconvertMod._CmafEncryptionType | java.lang.String
+type CmafEncryptionType = _CmafEncryptionType | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.NONE
+  - typings.awsSdk.awsSdkStrings.THUMBNAIL
+  - typings.awsSdk.awsSdkStrings.THUMBNAIL_AND_FULLFRAME
+  - typings.awsSdk.awsSdkStrings.ADVANCED
+  - java.lang.String
+*/
+type CmafImageBasedTrickPlay = _CmafImageBasedTrickPlay | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INCLUDE
   - typings.awsSdk.awsSdkStrings.EXCLUDE
   - java.lang.String
 */
-type CmafInitializationVectorInManifest = typings.awsSdk.mediaconvertMod._CmafInitializationVectorInManifest | java.lang.String
+type CmafInitializationVectorInManifest = _CmafInitializationVectorInManifest | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.FOLLOW_IFRAME
+  - typings.awsSdk.awsSdkStrings.FOLLOW_CUSTOM
+  - java.lang.String
+*/
+type CmafIntervalCadence = _CmafIntervalCadence | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SPEKE
   - typings.awsSdk.awsSdkStrings.STATIC_KEY
   - java.lang.String
 */
-type CmafKeyProviderType = typings.awsSdk.mediaconvertMod._CmafKeyProviderType | java.lang.String
+type CmafKeyProviderType = _CmafKeyProviderType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.GZIP
   - typings.awsSdk.awsSdkStrings.NONE
   - java.lang.String
 */
-type CmafManifestCompression = typings.awsSdk.mediaconvertMod._CmafManifestCompression | java.lang.String
+type CmafManifestCompression = _CmafManifestCompression | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FLOATING_POINT
   - typings.awsSdk.awsSdkStrings.INTEGER
   - java.lang.String
 */
-type CmafManifestDurationFormat = typings.awsSdk.mediaconvertMod._CmafManifestDurationFormat | java.lang.String
+type CmafManifestDurationFormat = _CmafManifestDurationFormat | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.MAIN_PROFILE
   - typings.awsSdk.awsSdkStrings.ON_DEMAND_PROFILE
   - java.lang.String
 */
-type CmafMpdProfile = typings.awsSdk.mediaconvertMod._CmafMpdProfile | java.lang.String
+type CmafMpdProfile = _CmafMpdProfile | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ZERO_BASED
+  - typings.awsSdk.awsSdkStrings.MATCH_INITIAL_PTS
+  - java.lang.String
+*/
+type CmafPtsOffsetHandlingForBFrames = _CmafPtsOffsetHandlingForBFrames | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SINGLE_FILE
   - typings.awsSdk.awsSdkStrings.SEGMENTED_FILES
   - java.lang.String
 */
-type CmafSegmentControl = typings.awsSdk.mediaconvertMod._CmafSegmentControl | java.lang.String
+type CmafSegmentControl = _CmafSegmentControl | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.EXACT
+  - typings.awsSdk.awsSdkStrings.GOP_MULTIPLE
+  - java.lang.String
+*/
+type CmafSegmentLengthControl = _CmafSegmentLengthControl | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INCLUDE
   - typings.awsSdk.awsSdkStrings.EXCLUDE
   - java.lang.String
 */
-type CmafStreamInfResolution = typings.awsSdk.mediaconvertMod._CmafStreamInfResolution | java.lang.String
+type CmafStreamInfResolution = _CmafStreamInfResolution | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.LEGACY
+  - typings.awsSdk.awsSdkStrings.SPEC_COMPLIANT
+  - java.lang.String
+*/
+type CmafTargetDurationCompatibilityMode = _CmafTargetDurationCompatibilityMode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DISABLED
   - typings.awsSdk.awsSdkStrings.ENABLED
   - java.lang.String
 */
-type CmafWriteDASHManifest = typings.awsSdk.mediaconvertMod._CmafWriteDASHManifest | java.lang.String
+type CmafWriteDASHManifest = _CmafWriteDASHManifest | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DISABLED
   - typings.awsSdk.awsSdkStrings.ENABLED
   - java.lang.String
 */
-type CmafWriteHLSManifest = typings.awsSdk.mediaconvertMod._CmafWriteHLSManifest | java.lang.String
+type CmafWriteHLSManifest = _CmafWriteHLSManifest | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLED
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type CmafWriteSegmentTimelineInRepresentation = typings.awsSdk.mediaconvertMod._CmafWriteSegmentTimelineInRepresentation | java.lang.String
+type CmafWriteSegmentTimelineInRepresentation = _CmafWriteSegmentTimelineInRepresentation | String
 
 /* Rewritten from type alias, can be one of: 
-  - typings.awsSdk.awsSdkStrings.INSERT
-  - typings.awsSdk.awsSdkStrings.NONE
+  - typings.awsSdk.awsSdkStrings.DEFAULT_CODEC_DURATION
+  - typings.awsSdk.awsSdkStrings.MATCH_VIDEO_DURATION
   - java.lang.String
 */
-type CmfcScte35Esam = typings.awsSdk.mediaconvertMod._CmfcScte35Esam | java.lang.String
+type CmfcAudioDuration = _CmfcAudioDuration | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ALTERNATE_AUDIO_AUTO_SELECT_DEFAULT
+  - typings.awsSdk.awsSdkStrings.ALTERNATE_AUDIO_AUTO_SELECT
+  - typings.awsSdk.awsSdkStrings.ALTERNATE_AUDIO_NOT_AUTO_SELECT
+  - java.lang.String
+*/
+type CmfcAudioTrackType = _CmfcAudioTrackType | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DONT_FLAG
+  - typings.awsSdk.awsSdkStrings.FLAG
+  - java.lang.String
+*/
+type CmfcDescriptiveVideoServiceFlag = _CmfcDescriptiveVideoServiceFlag | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.INCLUDE
+  - typings.awsSdk.awsSdkStrings.EXCLUDE
+  - java.lang.String
+*/
+type CmfcIFrameOnlyManifest = _CmfcIFrameOnlyManifest | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PASSTHROUGH
   - typings.awsSdk.awsSdkStrings.NONE
   - java.lang.String
 */
-type CmfcScte35Source = typings.awsSdk.mediaconvertMod._CmfcScte35Source | java.lang.String
+type CmfcKlvMetadata = _CmfcKlvMetadata | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.INSERT
+  - typings.awsSdk.awsSdkStrings.NONE
+  - java.lang.String
+*/
+type CmfcScte35Esam = _CmfcScte35Esam | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PASSTHROUGH
+  - typings.awsSdk.awsSdkStrings.NONE
+  - java.lang.String
+*/
+type CmfcScte35Source = _CmfcScte35Source | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PASSTHROUGH
+  - typings.awsSdk.awsSdkStrings.NONE
+  - java.lang.String
+*/
+type CmfcTimedMetadata = _CmfcTimedMetadata | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.IGNORE
   - typings.awsSdk.awsSdkStrings.INSERT
   - java.lang.String
 */
-type ColorMetadata = typings.awsSdk.mediaconvertMod._ColorMetadata | java.lang.String
+type ColorMetadata = _ColorMetadata | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FOLLOW
@@ -548,7 +720,7 @@ type ColorMetadata = typings.awsSdk.mediaconvertMod._ColorMetadata | java.lang.S
   - typings.awsSdk.awsSdkStrings.HLG_2020
   - java.lang.String
 */
-type ColorSpace = typings.awsSdk.mediaconvertMod._ColorSpace | java.lang.String
+type ColorSpace = _ColorSpace | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
@@ -558,16 +730,16 @@ type ColorSpace = typings.awsSdk.mediaconvertMod._ColorSpace | java.lang.String
   - typings.awsSdk.awsSdkStrings.FORCE_HLG_2020
   - java.lang.String
 */
-type ColorSpaceConversion = typings.awsSdk.mediaconvertMod._ColorSpaceConversion | java.lang.String
+type ColorSpaceConversion = _ColorSpaceConversion | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FORCE
   - typings.awsSdk.awsSdkStrings.FALLBACK
   - java.lang.String
 */
-type ColorSpaceUsage = typings.awsSdk.mediaconvertMod._ColorSpaceUsage | java.lang.String
+type ColorSpaceUsage = _ColorSpaceUsage | String
 
-type Commitment = typings.awsSdk.awsSdkStrings.ONE_YEAR | java.lang.String
+type Commitment = ONE_YEAR | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.F4V
@@ -583,42 +755,86 @@ type Commitment = typings.awsSdk.awsSdkStrings.ONE_YEAR | java.lang.String
   - typings.awsSdk.awsSdkStrings.RAW
   - java.lang.String
 */
-type ContainerType = typings.awsSdk.mediaconvertMod._ContainerType | java.lang.String
+type ContainerType = _ContainerType | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PASSTHROUGH
+  - typings.awsSdk.awsSdkStrings.STRIP
+  - java.lang.String
+*/
+type CopyProtectionAction = _CopyProtectionAction | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.MPEG_CHANNEL_CONFIGURATION
+  - typings.awsSdk.awsSdkStrings.DOLBY_CHANNEL_CONFIGURATION
+  - java.lang.String
+*/
+type DashIsoGroupAudioChannelConfigSchemeIdUri = _DashIsoGroupAudioChannelConfigSchemeIdUri | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.HBBTV_1_5
   - typings.awsSdk.awsSdkStrings.NONE
   - java.lang.String
 */
-type DashIsoHbbtvCompliance = typings.awsSdk.mediaconvertMod._DashIsoHbbtvCompliance | java.lang.String
+type DashIsoHbbtvCompliance = _DashIsoHbbtvCompliance | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.NONE
+  - typings.awsSdk.awsSdkStrings.THUMBNAIL
+  - typings.awsSdk.awsSdkStrings.THUMBNAIL_AND_FULLFRAME
+  - typings.awsSdk.awsSdkStrings.ADVANCED
+  - java.lang.String
+*/
+type DashIsoImageBasedTrickPlay = _DashIsoImageBasedTrickPlay | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.FOLLOW_IFRAME
+  - typings.awsSdk.awsSdkStrings.FOLLOW_CUSTOM
+  - java.lang.String
+*/
+type DashIsoIntervalCadence = _DashIsoIntervalCadence | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.MAIN_PROFILE
   - typings.awsSdk.awsSdkStrings.ON_DEMAND_PROFILE
   - java.lang.String
 */
-type DashIsoMpdProfile = typings.awsSdk.mediaconvertMod._DashIsoMpdProfile | java.lang.String
+type DashIsoMpdProfile = _DashIsoMpdProfile | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CENC_V1
   - typings.awsSdk.awsSdkStrings.UNENCRYPTED_SEI
   - java.lang.String
 */
-type DashIsoPlaybackDeviceCompatibility = typings.awsSdk.mediaconvertMod._DashIsoPlaybackDeviceCompatibility | java.lang.String
+type DashIsoPlaybackDeviceCompatibility = _DashIsoPlaybackDeviceCompatibility | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ZERO_BASED
+  - typings.awsSdk.awsSdkStrings.MATCH_INITIAL_PTS
+  - java.lang.String
+*/
+type DashIsoPtsOffsetHandlingForBFrames = _DashIsoPtsOffsetHandlingForBFrames | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SINGLE_FILE
   - typings.awsSdk.awsSdkStrings.SEGMENTED_FILES
   - java.lang.String
 */
-type DashIsoSegmentControl = typings.awsSdk.mediaconvertMod._DashIsoSegmentControl | java.lang.String
+type DashIsoSegmentControl = _DashIsoSegmentControl | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.EXACT
+  - typings.awsSdk.awsSdkStrings.GOP_MULTIPLE
+  - java.lang.String
+*/
+type DashIsoSegmentLengthControl = _DashIsoSegmentLengthControl | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLED
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type DashIsoWriteSegmentTimelineInRepresentation = typings.awsSdk.mediaconvertMod._DashIsoWriteSegmentTimelineInRepresentation | java.lang.String
+type DashIsoWriteSegmentTimelineInRepresentation = _DashIsoWriteSegmentTimelineInRepresentation | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AES_CTR
@@ -626,7 +842,7 @@ type DashIsoWriteSegmentTimelineInRepresentation = typings.awsSdk.mediaconvertMo
   - typings.awsSdk.awsSdkStrings.AES_GCM
   - java.lang.String
 */
-type DecryptionMode = typings.awsSdk.mediaconvertMod._DecryptionMode | java.lang.String
+type DecryptionMode = _DecryptionMode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INTERPOLATE
@@ -635,14 +851,14 @@ type DecryptionMode = typings.awsSdk.mediaconvertMod._DecryptionMode | java.lang
   - typings.awsSdk.awsSdkStrings.BLEND_TICKER
   - java.lang.String
 */
-type DeinterlaceAlgorithm = typings.awsSdk.mediaconvertMod._DeinterlaceAlgorithm | java.lang.String
+type DeinterlaceAlgorithm = _DeinterlaceAlgorithm | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FORCE_ALL_FRAMES
   - typings.awsSdk.awsSdkStrings.NORMAL
   - java.lang.String
 */
-type DeinterlacerControl = typings.awsSdk.mediaconvertMod._DeinterlacerControl | java.lang.String
+type DeinterlacerControl = _DeinterlacerControl | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DEINTERLACE
@@ -650,14 +866,14 @@ type DeinterlacerControl = typings.awsSdk.mediaconvertMod._DeinterlacerControl |
   - typings.awsSdk.awsSdkStrings.ADAPTIVE
   - java.lang.String
 */
-type DeinterlacerMode = typings.awsSdk.mediaconvertMod._DeinterlacerMode | java.lang.String
+type DeinterlacerMode = _DeinterlacerMode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DEFAULT
   - typings.awsSdk.awsSdkStrings.GET_ONLY
   - java.lang.String
 */
-type DescribeEndpointsMode = typings.awsSdk.mediaconvertMod._DescribeEndpointsMode | java.lang.String
+type DescribeEndpointsMode = _DescribeEndpointsMode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PASSTHROUGH
@@ -665,31 +881,62 @@ type DescribeEndpointsMode = typings.awsSdk.mediaconvertMod._DescribeEndpointsMo
   - typings.awsSdk.awsSdkStrings.SPECIFY
   - java.lang.String
 */
-type DolbyVisionLevel6Mode = typings.awsSdk.mediaconvertMod._DolbyVisionLevel6Mode | java.lang.String
+type DolbyVisionLevel6Mode = _DolbyVisionLevel6Mode | String
 
-type DolbyVisionProfile = typings.awsSdk.awsSdkStrings.PROFILE_5 | java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.HDR10_NOMAP
+  - typings.awsSdk.awsSdkStrings.HDR10_1000
+  - java.lang.String
+*/
+type DolbyVisionMapping = _DolbyVisionMapping | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PROFILE_5
+  - typings.awsSdk.awsSdkStrings.PROFILE_8_1
+  - java.lang.String
+*/
+type DolbyVisionProfile = _DolbyVisionProfile | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DISABLED
   - typings.awsSdk.awsSdkStrings.ENABLED
   - java.lang.String
 */
-type DropFrameTimecode = typings.awsSdk.mediaconvertMod._DropFrameTimecode | java.lang.String
+type DropFrameTimecode = _DropFrameTimecode | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.BEST_MATCH
+  - typings.awsSdk.awsSdkStrings.MONOSPACED_SANSSERIF
+  - typings.awsSdk.awsSdkStrings.MONOSPACED_SERIF
+  - typings.awsSdk.awsSdkStrings.PROPORTIONAL_SANSSERIF
+  - typings.awsSdk.awsSdkStrings.PROPORTIONAL_SERIF
+  - java.lang.String
+*/
+type DvbSubSubtitleFallbackFont = _DvbSubSubtitleFallbackFont | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CENTERED
   - typings.awsSdk.awsSdkStrings.LEFT
+  - typings.awsSdk.awsSdkStrings.AUTO
   - java.lang.String
 */
-type DvbSubtitleAlignment = typings.awsSdk.mediaconvertMod._DvbSubtitleAlignment | java.lang.String
+type DvbSubtitleAlignment = _DvbSubtitleAlignment | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.WHITE_TEXT_ONLY
+  - typings.awsSdk.awsSdkStrings.ALL_TEXT
+  - java.lang.String
+*/
+type DvbSubtitleApplyFontColor = _DvbSubtitleApplyFontColor | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
   - typings.awsSdk.awsSdkStrings.BLACK
   - typings.awsSdk.awsSdkStrings.WHITE
+  - typings.awsSdk.awsSdkStrings.AUTO
   - java.lang.String
 */
-type DvbSubtitleBackgroundColor = typings.awsSdk.mediaconvertMod._DvbSubtitleBackgroundColor | java.lang.String
+type DvbSubtitleBackgroundColor = _DvbSubtitleBackgroundColor | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.WHITE
@@ -698,9 +945,11 @@ type DvbSubtitleBackgroundColor = typings.awsSdk.mediaconvertMod._DvbSubtitleBac
   - typings.awsSdk.awsSdkStrings.RED
   - typings.awsSdk.awsSdkStrings.GREEN
   - typings.awsSdk.awsSdkStrings.BLUE
+  - typings.awsSdk.awsSdkStrings.HEX
+  - typings.awsSdk.awsSdkStrings.AUTO
   - java.lang.String
 */
-type DvbSubtitleFontColor = typings.awsSdk.mediaconvertMod._DvbSubtitleFontColor | java.lang.String
+type DvbSubtitleFontColor = _DvbSubtitleFontColor | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.BLACK
@@ -709,42 +958,74 @@ type DvbSubtitleFontColor = typings.awsSdk.mediaconvertMod._DvbSubtitleFontColor
   - typings.awsSdk.awsSdkStrings.RED
   - typings.awsSdk.awsSdkStrings.GREEN
   - typings.awsSdk.awsSdkStrings.BLUE
+  - typings.awsSdk.awsSdkStrings.AUTO
   - java.lang.String
 */
-type DvbSubtitleOutlineColor = typings.awsSdk.mediaconvertMod._DvbSubtitleOutlineColor | java.lang.String
+type DvbSubtitleOutlineColor = _DvbSubtitleOutlineColor | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
   - typings.awsSdk.awsSdkStrings.BLACK
   - typings.awsSdk.awsSdkStrings.WHITE
+  - typings.awsSdk.awsSdkStrings.AUTO
   - java.lang.String
 */
-type DvbSubtitleShadowColor = typings.awsSdk.mediaconvertMod._DvbSubtitleShadowColor | java.lang.String
+type DvbSubtitleShadowColor = _DvbSubtitleShadowColor | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - java.lang.String
+*/
+type DvbSubtitleStylePassthrough = _DvbSubtitleStylePassthrough | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FIXED_GRID
   - typings.awsSdk.awsSdkStrings.PROPORTIONAL
+  - typings.awsSdk.awsSdkStrings.AUTO
   - java.lang.String
 */
-type DvbSubtitleTeletextSpacing = typings.awsSdk.mediaconvertMod._DvbSubtitleTeletextSpacing | java.lang.String
+type DvbSubtitleTeletextSpacing = _DvbSubtitleTeletextSpacing | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.HEARING_IMPAIRED
   - typings.awsSdk.awsSdkStrings.STANDARD
   - java.lang.String
 */
-type DvbSubtitlingType = typings.awsSdk.mediaconvertMod._DvbSubtitlingType | java.lang.String
+type DvbSubtitlingType = _DvbSubtitlingType | String
 
-type Eac3AtmosBitstreamMode = typings.awsSdk.awsSdkStrings.COMPLETE_MAIN | java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.NONE
+  - typings.awsSdk.awsSdkStrings.SPECIFIED
+  - typings.awsSdk.awsSdkStrings.NO_DISPLAY_WINDOW
+  - java.lang.String
+*/
+type DvbddsHandling = _DvbddsHandling | String
 
-type Eac3AtmosCodingMode = typings.awsSdk.awsSdkStrings.CODING_MODE_9_1_6 | java.lang.String
+type Eac3AtmosBitstreamMode = COMPLETE_MAIN | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CODING_MODE_AUTO
+  - typings.awsSdk.awsSdkStrings.CODING_MODE_5_1_4
+  - typings.awsSdk.awsSdkStrings.CODING_MODE_7_1_4
+  - typings.awsSdk.awsSdkStrings.CODING_MODE_9_1_6
+  - java.lang.String
+*/
+type Eac3AtmosCodingMode = _Eac3AtmosCodingMode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLED
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type Eac3AtmosDialogueIntelligence = typings.awsSdk.mediaconvertMod._Eac3AtmosDialogueIntelligence | java.lang.String
+type Eac3AtmosDialogueIntelligence = _Eac3AtmosDialogueIntelligence | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SPECIFIED
+  - typings.awsSdk.awsSdkStrings.INITIALIZE_FROM_SOURCE
+  - java.lang.String
+*/
+type Eac3AtmosDownmixControl = _Eac3AtmosDownmixControl | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
@@ -755,7 +1036,7 @@ type Eac3AtmosDialogueIntelligence = typings.awsSdk.mediaconvertMod._Eac3AtmosDi
   - typings.awsSdk.awsSdkStrings.SPEECH
   - java.lang.String
 */
-type Eac3AtmosDynamicRangeCompressionLine = typings.awsSdk.mediaconvertMod._Eac3AtmosDynamicRangeCompressionLine | java.lang.String
+type Eac3AtmosDynamicRangeCompressionLine = _Eac3AtmosDynamicRangeCompressionLine | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
@@ -766,7 +1047,14 @@ type Eac3AtmosDynamicRangeCompressionLine = typings.awsSdk.mediaconvertMod._Eac3
   - typings.awsSdk.awsSdkStrings.SPEECH
   - java.lang.String
 */
-type Eac3AtmosDynamicRangeCompressionRf = typings.awsSdk.mediaconvertMod._Eac3AtmosDynamicRangeCompressionRf | java.lang.String
+type Eac3AtmosDynamicRangeCompressionRf = _Eac3AtmosDynamicRangeCompressionRf | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SPECIFIED
+  - typings.awsSdk.awsSdkStrings.INITIALIZE_FROM_SOURCE
+  - java.lang.String
+*/
+type Eac3AtmosDynamicRangeControl = _Eac3AtmosDynamicRangeControl | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.LEQ_A
@@ -776,7 +1064,7 @@ type Eac3AtmosDynamicRangeCompressionRf = typings.awsSdk.mediaconvertMod._Eac3At
   - typings.awsSdk.awsSdkStrings.ITU_BS_1770_4
   - java.lang.String
 */
-type Eac3AtmosMeteringMode = typings.awsSdk.mediaconvertMod._Eac3AtmosMeteringMode | java.lang.String
+type Eac3AtmosMeteringMode = _Eac3AtmosMeteringMode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NOT_INDICATED
@@ -785,7 +1073,7 @@ type Eac3AtmosMeteringMode = typings.awsSdk.mediaconvertMod._Eac3AtmosMeteringMo
   - typings.awsSdk.awsSdkStrings.DPL2
   - java.lang.String
 */
-type Eac3AtmosStereoDownmix = typings.awsSdk.mediaconvertMod._Eac3AtmosStereoDownmix | java.lang.String
+type Eac3AtmosStereoDownmix = _Eac3AtmosStereoDownmix | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NOT_INDICATED
@@ -793,14 +1081,14 @@ type Eac3AtmosStereoDownmix = typings.awsSdk.mediaconvertMod._Eac3AtmosStereoDow
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type Eac3AtmosSurroundExMode = typings.awsSdk.mediaconvertMod._Eac3AtmosSurroundExMode | java.lang.String
+type Eac3AtmosSurroundExMode = _Eac3AtmosSurroundExMode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ATTENUATE_3_DB
   - typings.awsSdk.awsSdkStrings.NONE
   - java.lang.String
 */
-type Eac3AttenuationControl = typings.awsSdk.mediaconvertMod._Eac3AttenuationControl | java.lang.String
+type Eac3AttenuationControl = _Eac3AttenuationControl | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.COMPLETE_MAIN
@@ -810,7 +1098,7 @@ type Eac3AttenuationControl = typings.awsSdk.mediaconvertMod._Eac3AttenuationCon
   - typings.awsSdk.awsSdkStrings.VISUALLY_IMPAIRED
   - java.lang.String
 */
-type Eac3BitstreamMode = typings.awsSdk.mediaconvertMod._Eac3BitstreamMode | java.lang.String
+type Eac3BitstreamMode = _Eac3BitstreamMode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CODING_MODE_1_0
@@ -818,14 +1106,14 @@ type Eac3BitstreamMode = typings.awsSdk.mediaconvertMod._Eac3BitstreamMode | jav
   - typings.awsSdk.awsSdkStrings.CODING_MODE_3_2
   - java.lang.String
 */
-type Eac3CodingMode = typings.awsSdk.mediaconvertMod._Eac3CodingMode | java.lang.String
+type Eac3CodingMode = _Eac3CodingMode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLED
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type Eac3DcFilter = typings.awsSdk.mediaconvertMod._Eac3DcFilter | java.lang.String
+type Eac3DcFilter = _Eac3DcFilter | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
@@ -836,7 +1124,7 @@ type Eac3DcFilter = typings.awsSdk.mediaconvertMod._Eac3DcFilter | java.lang.Str
   - typings.awsSdk.awsSdkStrings.SPEECH
   - java.lang.String
 */
-type Eac3DynamicRangeCompressionLine = typings.awsSdk.mediaconvertMod._Eac3DynamicRangeCompressionLine | java.lang.String
+type Eac3DynamicRangeCompressionLine = _Eac3DynamicRangeCompressionLine | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
@@ -847,42 +1135,42 @@ type Eac3DynamicRangeCompressionLine = typings.awsSdk.mediaconvertMod._Eac3Dynam
   - typings.awsSdk.awsSdkStrings.SPEECH
   - java.lang.String
 */
-type Eac3DynamicRangeCompressionRf = typings.awsSdk.mediaconvertMod._Eac3DynamicRangeCompressionRf | java.lang.String
+type Eac3DynamicRangeCompressionRf = _Eac3DynamicRangeCompressionRf | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.LFE
   - typings.awsSdk.awsSdkStrings.NO_LFE
   - java.lang.String
 */
-type Eac3LfeControl = typings.awsSdk.mediaconvertMod._Eac3LfeControl | java.lang.String
+type Eac3LfeControl = _Eac3LfeControl | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLED
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type Eac3LfeFilter = typings.awsSdk.mediaconvertMod._Eac3LfeFilter | java.lang.String
+type Eac3LfeFilter = _Eac3LfeFilter | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FOLLOW_INPUT
   - typings.awsSdk.awsSdkStrings.USE_CONFIGURED
   - java.lang.String
 */
-type Eac3MetadataControl = typings.awsSdk.mediaconvertMod._Eac3MetadataControl | java.lang.String
+type Eac3MetadataControl = _Eac3MetadataControl | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.WHEN_POSSIBLE
   - typings.awsSdk.awsSdkStrings.NO_PASSTHROUGH
   - java.lang.String
 */
-type Eac3PassthroughControl = typings.awsSdk.mediaconvertMod._Eac3PassthroughControl | java.lang.String
+type Eac3PassthroughControl = _Eac3PassthroughControl | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SHIFT_90_DEGREES
   - typings.awsSdk.awsSdkStrings.NO_SHIFT
   - java.lang.String
 */
-type Eac3PhaseControl = typings.awsSdk.mediaconvertMod._Eac3PhaseControl | java.lang.String
+type Eac3PhaseControl = _Eac3PhaseControl | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NOT_INDICATED
@@ -891,7 +1179,7 @@ type Eac3PhaseControl = typings.awsSdk.mediaconvertMod._Eac3PhaseControl | java.
   - typings.awsSdk.awsSdkStrings.DPL2
   - java.lang.String
 */
-type Eac3StereoDownmix = typings.awsSdk.mediaconvertMod._Eac3StereoDownmix | java.lang.String
+type Eac3StereoDownmix = _Eac3StereoDownmix | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NOT_INDICATED
@@ -899,7 +1187,7 @@ type Eac3StereoDownmix = typings.awsSdk.mediaconvertMod._Eac3StereoDownmix | jav
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type Eac3SurroundExMode = typings.awsSdk.mediaconvertMod._Eac3SurroundExMode | java.lang.String
+type Eac3SurroundExMode = _Eac3SurroundExMode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NOT_INDICATED
@@ -907,35 +1195,49 @@ type Eac3SurroundExMode = typings.awsSdk.mediaconvertMod._Eac3SurroundExMode | j
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type Eac3SurroundMode = typings.awsSdk.mediaconvertMod._Eac3SurroundMode | java.lang.String
+type Eac3SurroundMode = _Eac3SurroundMode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.UPCONVERT
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type EmbeddedConvert608To708 = typings.awsSdk.mediaconvertMod._EmbeddedConvert608To708 | java.lang.String
+type EmbeddedConvert608To708 = _EmbeddedConvert608To708 | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.END_OF_INPUT
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type EmbeddedTerminateCaptions = typings.awsSdk.mediaconvertMod._EmbeddedTerminateCaptions | java.lang.String
+type EmbeddedTerminateCaptions = _EmbeddedTerminateCaptions | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.NONE
+  - typings.awsSdk.awsSdkStrings.USE_MDPM
+  - java.lang.String
+*/
+type EmbeddedTimecodeOverride = _EmbeddedTimecodeOverride | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PROGRESSIVE_DOWNLOAD
   - typings.awsSdk.awsSdkStrings.NORMAL
   - java.lang.String
 */
-type F4vMoovPlacement = typings.awsSdk.mediaconvertMod._F4vMoovPlacement | java.lang.String
+type F4vMoovPlacement = _F4vMoovPlacement | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.UPCONVERT
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type FileSourceConvert608To708 = typings.awsSdk.mediaconvertMod._FileSourceConvert608To708 | java.lang.String
+type FileSourceConvert608To708 = _FileSourceConvert608To708 | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SECONDS
+  - typings.awsSdk.awsSdkStrings.MILLISECONDS
+  - java.lang.String
+*/
+type FileSourceTimeDeltaUnits = _FileSourceTimeDeltaUnits | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AUTOMATIC
@@ -943,7 +1245,7 @@ type FileSourceConvert608To708 = typings.awsSdk.mediaconvertMod._FileSourceConve
   - typings.awsSdk.awsSdkStrings.HANT
   - java.lang.String
 */
-type FontScript = typings.awsSdk.mediaconvertMod._FontScript | java.lang.String
+type FontScript = _FontScript | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.OFF
@@ -955,7 +1257,7 @@ type FontScript = typings.awsSdk.mediaconvertMod._FontScript | java.lang.String
   - typings.awsSdk.awsSdkStrings.MAX
   - java.lang.String
 */
-type H264AdaptiveQuantization = typings.awsSdk.mediaconvertMod._H264AdaptiveQuantization | java.lang.String
+type H264AdaptiveQuantization = _H264AdaptiveQuantization | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AUTO
@@ -977,7 +1279,7 @@ type H264AdaptiveQuantization = typings.awsSdk.mediaconvertMod._H264AdaptiveQuan
   - typings.awsSdk.awsSdkStrings.LEVEL_5_2
   - java.lang.String
 */
-type H264CodecLevel = typings.awsSdk.mediaconvertMod._H264CodecLevel | java.lang.String
+type H264CodecLevel = _H264CodecLevel | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.BASELINE
@@ -988,42 +1290,43 @@ type H264CodecLevel = typings.awsSdk.mediaconvertMod._H264CodecLevel | java.lang
   - typings.awsSdk.awsSdkStrings.MAIN
   - java.lang.String
 */
-type H264CodecProfile = typings.awsSdk.mediaconvertMod._H264CodecProfile | java.lang.String
+type H264CodecProfile = _H264CodecProfile | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ADAPTIVE
   - typings.awsSdk.awsSdkStrings.STATIC
   - java.lang.String
 */
-type H264DynamicSubGop = typings.awsSdk.mediaconvertMod._H264DynamicSubGop | java.lang.String
+type H264DynamicSubGop = _H264DynamicSubGop | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CABAC
   - typings.awsSdk.awsSdkStrings.CAVLC
   - java.lang.String
 */
-type H264EntropyEncoding = typings.awsSdk.mediaconvertMod._H264EntropyEncoding | java.lang.String
+type H264EntropyEncoding = _H264EntropyEncoding | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PAFF
   - typings.awsSdk.awsSdkStrings.FORCE_FIELD
+  - typings.awsSdk.awsSdkStrings.MBAFF
   - java.lang.String
 */
-type H264FieldEncoding = typings.awsSdk.mediaconvertMod._H264FieldEncoding | java.lang.String
+type H264FieldEncoding = _H264FieldEncoding | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DISABLED
   - typings.awsSdk.awsSdkStrings.ENABLED
   - java.lang.String
 */
-type H264FlickerAdaptiveQuantization = typings.awsSdk.mediaconvertMod._H264FlickerAdaptiveQuantization | java.lang.String
+type H264FlickerAdaptiveQuantization = _H264FlickerAdaptiveQuantization | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INITIALIZE_FROM_SOURCE
   - typings.awsSdk.awsSdkStrings.SPECIFIED
   - java.lang.String
 */
-type H264FramerateControl = typings.awsSdk.mediaconvertMod._H264FramerateControl | java.lang.String
+type H264FramerateControl = _H264FramerateControl | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DUPLICATE_DROP
@@ -1031,21 +1334,22 @@ type H264FramerateControl = typings.awsSdk.mediaconvertMod._H264FramerateControl
   - typings.awsSdk.awsSdkStrings.FRAMEFORMER
   - java.lang.String
 */
-type H264FramerateConversionAlgorithm = typings.awsSdk.mediaconvertMod._H264FramerateConversionAlgorithm | java.lang.String
+type H264FramerateConversionAlgorithm = _H264FramerateConversionAlgorithm | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DISABLED
   - typings.awsSdk.awsSdkStrings.ENABLED
   - java.lang.String
 */
-type H264GopBReference = typings.awsSdk.mediaconvertMod._H264GopBReference | java.lang.String
+type H264GopBReference = _H264GopBReference | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FRAMES
   - typings.awsSdk.awsSdkStrings.SECONDS
+  - typings.awsSdk.awsSdkStrings.AUTO
   - java.lang.String
 */
-type H264GopSizeUnits = typings.awsSdk.mediaconvertMod._H264GopSizeUnits | java.lang.String
+type H264GopSizeUnits = _H264GopSizeUnits | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PROGRESSIVE
@@ -1055,14 +1359,14 @@ type H264GopSizeUnits = typings.awsSdk.mediaconvertMod._H264GopSizeUnits | java.
   - typings.awsSdk.awsSdkStrings.FOLLOW_BOTTOM_FIELD
   - java.lang.String
 */
-type H264InterlaceMode = typings.awsSdk.mediaconvertMod._H264InterlaceMode | java.lang.String
+type H264InterlaceMode = _H264InterlaceMode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INITIALIZE_FROM_SOURCE
   - typings.awsSdk.awsSdkStrings.SPECIFIED
   - java.lang.String
 */
-type H264ParControl = typings.awsSdk.mediaconvertMod._H264ParControl | java.lang.String
+type H264ParControl = _H264ParControl | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SINGLE_PASS
@@ -1070,7 +1374,7 @@ type H264ParControl = typings.awsSdk.mediaconvertMod._H264ParControl | java.lang
   - typings.awsSdk.awsSdkStrings.MULTI_PASS_HQ
   - java.lang.String
 */
-type H264QualityTuningLevel = typings.awsSdk.mediaconvertMod._H264QualityTuningLevel | java.lang.String
+type H264QualityTuningLevel = _H264QualityTuningLevel | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.VBR
@@ -1078,14 +1382,21 @@ type H264QualityTuningLevel = typings.awsSdk.mediaconvertMod._H264QualityTuningL
   - typings.awsSdk.awsSdkStrings.QVBR
   - java.lang.String
 */
-type H264RateControlMode = typings.awsSdk.mediaconvertMod._H264RateControlMode | java.lang.String
+type H264RateControlMode = _H264RateControlMode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DISABLED
   - typings.awsSdk.awsSdkStrings.ENABLED
   - java.lang.String
 */
-type H264RepeatPps = typings.awsSdk.mediaconvertMod._H264RepeatPps | java.lang.String
+type H264RepeatPps = _H264RepeatPps | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.INTERLACED
+  - typings.awsSdk.awsSdkStrings.INTERLACED_OPTIMIZE
+  - java.lang.String
+*/
+type H264ScanTypeConversionMode = _H264ScanTypeConversionMode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DISABLED
@@ -1093,28 +1404,28 @@ type H264RepeatPps = typings.awsSdk.mediaconvertMod._H264RepeatPps | java.lang.S
   - typings.awsSdk.awsSdkStrings.TRANSITION_DETECTION
   - java.lang.String
 */
-type H264SceneChangeDetect = typings.awsSdk.mediaconvertMod._H264SceneChangeDetect | java.lang.String
+type H264SceneChangeDetect = _H264SceneChangeDetect | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DISABLED
   - typings.awsSdk.awsSdkStrings.ENABLED
   - java.lang.String
 */
-type H264SlowPal = typings.awsSdk.mediaconvertMod._H264SlowPal | java.lang.String
+type H264SlowPal = _H264SlowPal | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DISABLED
   - typings.awsSdk.awsSdkStrings.ENABLED
   - java.lang.String
 */
-type H264SpatialAdaptiveQuantization = typings.awsSdk.mediaconvertMod._H264SpatialAdaptiveQuantization | java.lang.String
+type H264SpatialAdaptiveQuantization = _H264SpatialAdaptiveQuantization | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DEFAULT
   - typings.awsSdk.awsSdkStrings.RP2027
   - java.lang.String
 */
-type H264Syntax = typings.awsSdk.mediaconvertMod._H264Syntax | java.lang.String
+type H264Syntax = _H264Syntax | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
@@ -1122,21 +1433,21 @@ type H264Syntax = typings.awsSdk.mediaconvertMod._H264Syntax | java.lang.String
   - typings.awsSdk.awsSdkStrings.HARD
   - java.lang.String
 */
-type H264Telecine = typings.awsSdk.mediaconvertMod._H264Telecine | java.lang.String
+type H264Telecine = _H264Telecine | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DISABLED
   - typings.awsSdk.awsSdkStrings.ENABLED
   - java.lang.String
 */
-type H264TemporalAdaptiveQuantization = typings.awsSdk.mediaconvertMod._H264TemporalAdaptiveQuantization | java.lang.String
+type H264TemporalAdaptiveQuantization = _H264TemporalAdaptiveQuantization | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DISABLED
   - typings.awsSdk.awsSdkStrings.ENABLED
   - java.lang.String
 */
-type H264UnregisteredSeiTimecode = typings.awsSdk.mediaconvertMod._H264UnregisteredSeiTimecode | java.lang.String
+type H264UnregisteredSeiTimecode = _H264UnregisteredSeiTimecode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.OFF
@@ -1145,16 +1456,17 @@ type H264UnregisteredSeiTimecode = typings.awsSdk.mediaconvertMod._H264Unregiste
   - typings.awsSdk.awsSdkStrings.HIGH
   - typings.awsSdk.awsSdkStrings.HIGHER
   - typings.awsSdk.awsSdkStrings.MAX
+  - typings.awsSdk.awsSdkStrings.AUTO
   - java.lang.String
 */
-type H265AdaptiveQuantization = typings.awsSdk.mediaconvertMod._H265AdaptiveQuantization | java.lang.String
+type H265AdaptiveQuantization = _H265AdaptiveQuantization | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DISABLED
   - typings.awsSdk.awsSdkStrings.ENABLED
   - java.lang.String
 */
-type H265AlternateTransferFunctionSei = typings.awsSdk.mediaconvertMod._H265AlternateTransferFunctionSei | java.lang.String
+type H265AlternateTransferFunctionSei = _H265AlternateTransferFunctionSei | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AUTO
@@ -1173,7 +1485,7 @@ type H265AlternateTransferFunctionSei = typings.awsSdk.mediaconvertMod._H265Alte
   - typings.awsSdk.awsSdkStrings.LEVEL_6_2
   - java.lang.String
 */
-type H265CodecLevel = typings.awsSdk.mediaconvertMod._H265CodecLevel | java.lang.String
+type H265CodecLevel = _H265CodecLevel | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.MAIN_MAIN
@@ -1186,28 +1498,28 @@ type H265CodecLevel = typings.awsSdk.mediaconvertMod._H265CodecLevel | java.lang
   - typings.awsSdk.awsSdkStrings.MAIN_422_10BIT_HIGH
   - java.lang.String
 */
-type H265CodecProfile = typings.awsSdk.mediaconvertMod._H265CodecProfile | java.lang.String
+type H265CodecProfile = _H265CodecProfile | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ADAPTIVE
   - typings.awsSdk.awsSdkStrings.STATIC
   - java.lang.String
 */
-type H265DynamicSubGop = typings.awsSdk.mediaconvertMod._H265DynamicSubGop | java.lang.String
+type H265DynamicSubGop = _H265DynamicSubGop | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DISABLED
   - typings.awsSdk.awsSdkStrings.ENABLED
   - java.lang.String
 */
-type H265FlickerAdaptiveQuantization = typings.awsSdk.mediaconvertMod._H265FlickerAdaptiveQuantization | java.lang.String
+type H265FlickerAdaptiveQuantization = _H265FlickerAdaptiveQuantization | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INITIALIZE_FROM_SOURCE
   - typings.awsSdk.awsSdkStrings.SPECIFIED
   - java.lang.String
 */
-type H265FramerateControl = typings.awsSdk.mediaconvertMod._H265FramerateControl | java.lang.String
+type H265FramerateControl = _H265FramerateControl | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DUPLICATE_DROP
@@ -1215,21 +1527,22 @@ type H265FramerateControl = typings.awsSdk.mediaconvertMod._H265FramerateControl
   - typings.awsSdk.awsSdkStrings.FRAMEFORMER
   - java.lang.String
 */
-type H265FramerateConversionAlgorithm = typings.awsSdk.mediaconvertMod._H265FramerateConversionAlgorithm | java.lang.String
+type H265FramerateConversionAlgorithm = _H265FramerateConversionAlgorithm | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DISABLED
   - typings.awsSdk.awsSdkStrings.ENABLED
   - java.lang.String
 */
-type H265GopBReference = typings.awsSdk.mediaconvertMod._H265GopBReference | java.lang.String
+type H265GopBReference = _H265GopBReference | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FRAMES
   - typings.awsSdk.awsSdkStrings.SECONDS
+  - typings.awsSdk.awsSdkStrings.AUTO
   - java.lang.String
 */
-type H265GopSizeUnits = typings.awsSdk.mediaconvertMod._H265GopSizeUnits | java.lang.String
+type H265GopSizeUnits = _H265GopSizeUnits | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PROGRESSIVE
@@ -1239,14 +1552,14 @@ type H265GopSizeUnits = typings.awsSdk.mediaconvertMod._H265GopSizeUnits | java.
   - typings.awsSdk.awsSdkStrings.FOLLOW_BOTTOM_FIELD
   - java.lang.String
 */
-type H265InterlaceMode = typings.awsSdk.mediaconvertMod._H265InterlaceMode | java.lang.String
+type H265InterlaceMode = _H265InterlaceMode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INITIALIZE_FROM_SOURCE
   - typings.awsSdk.awsSdkStrings.SPECIFIED
   - java.lang.String
 */
-type H265ParControl = typings.awsSdk.mediaconvertMod._H265ParControl | java.lang.String
+type H265ParControl = _H265ParControl | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SINGLE_PASS
@@ -1254,7 +1567,7 @@ type H265ParControl = typings.awsSdk.mediaconvertMod._H265ParControl | java.lang
   - typings.awsSdk.awsSdkStrings.MULTI_PASS_HQ
   - java.lang.String
 */
-type H265QualityTuningLevel = typings.awsSdk.mediaconvertMod._H265QualityTuningLevel | java.lang.String
+type H265QualityTuningLevel = _H265QualityTuningLevel | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.VBR
@@ -1262,7 +1575,7 @@ type H265QualityTuningLevel = typings.awsSdk.mediaconvertMod._H265QualityTuningL
   - typings.awsSdk.awsSdkStrings.QVBR
   - java.lang.String
 */
-type H265RateControlMode = typings.awsSdk.mediaconvertMod._H265RateControlMode | java.lang.String
+type H265RateControlMode = _H265RateControlMode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DEFAULT
@@ -1270,7 +1583,14 @@ type H265RateControlMode = typings.awsSdk.mediaconvertMod._H265RateControlMode |
   - typings.awsSdk.awsSdkStrings.OFF
   - java.lang.String
 */
-type H265SampleAdaptiveOffsetFilterMode = typings.awsSdk.mediaconvertMod._H265SampleAdaptiveOffsetFilterMode | java.lang.String
+type H265SampleAdaptiveOffsetFilterMode = _H265SampleAdaptiveOffsetFilterMode | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.INTERLACED
+  - typings.awsSdk.awsSdkStrings.INTERLACED_OPTIMIZE
+  - java.lang.String
+*/
+type H265ScanTypeConversionMode = _H265ScanTypeConversionMode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DISABLED
@@ -1278,21 +1598,21 @@ type H265SampleAdaptiveOffsetFilterMode = typings.awsSdk.mediaconvertMod._H265Sa
   - typings.awsSdk.awsSdkStrings.TRANSITION_DETECTION
   - java.lang.String
 */
-type H265SceneChangeDetect = typings.awsSdk.mediaconvertMod._H265SceneChangeDetect | java.lang.String
+type H265SceneChangeDetect = _H265SceneChangeDetect | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DISABLED
   - typings.awsSdk.awsSdkStrings.ENABLED
   - java.lang.String
 */
-type H265SlowPal = typings.awsSdk.mediaconvertMod._H265SlowPal | java.lang.String
+type H265SlowPal = _H265SlowPal | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DISABLED
   - typings.awsSdk.awsSdkStrings.ENABLED
   - java.lang.String
 */
-type H265SpatialAdaptiveQuantization = typings.awsSdk.mediaconvertMod._H265SpatialAdaptiveQuantization | java.lang.String
+type H265SpatialAdaptiveQuantization = _H265SpatialAdaptiveQuantization | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
@@ -1300,63 +1620,63 @@ type H265SpatialAdaptiveQuantization = typings.awsSdk.mediaconvertMod._H265Spati
   - typings.awsSdk.awsSdkStrings.HARD
   - java.lang.String
 */
-type H265Telecine = typings.awsSdk.mediaconvertMod._H265Telecine | java.lang.String
+type H265Telecine = _H265Telecine | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DISABLED
   - typings.awsSdk.awsSdkStrings.ENABLED
   - java.lang.String
 */
-type H265TemporalAdaptiveQuantization = typings.awsSdk.mediaconvertMod._H265TemporalAdaptiveQuantization | java.lang.String
+type H265TemporalAdaptiveQuantization = _H265TemporalAdaptiveQuantization | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DISABLED
   - typings.awsSdk.awsSdkStrings.ENABLED
   - java.lang.String
 */
-type H265TemporalIds = typings.awsSdk.mediaconvertMod._H265TemporalIds | java.lang.String
+type H265TemporalIds = _H265TemporalIds | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DISABLED
   - typings.awsSdk.awsSdkStrings.ENABLED
   - java.lang.String
 */
-type H265Tiles = typings.awsSdk.mediaconvertMod._H265Tiles | java.lang.String
+type H265Tiles = _H265Tiles | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DISABLED
   - typings.awsSdk.awsSdkStrings.ENABLED
   - java.lang.String
 */
-type H265UnregisteredSeiTimecode = typings.awsSdk.mediaconvertMod._H265UnregisteredSeiTimecode | java.lang.String
+type H265UnregisteredSeiTimecode = _H265UnregisteredSeiTimecode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.HVC1
   - typings.awsSdk.awsSdkStrings.HEV1
   - java.lang.String
 */
-type H265WriteMp4PackagingType = typings.awsSdk.mediaconvertMod._H265WriteMp4PackagingType | java.lang.String
+type H265WriteMp4PackagingType = _H265WriteMp4PackagingType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ELEMENTAL
   - typings.awsSdk.awsSdkStrings.ELEMENTAL_SCTE35
   - java.lang.String
 */
-type HlsAdMarkers = typings.awsSdk.mediaconvertMod._HlsAdMarkers | java.lang.String
+type HlsAdMarkers = _HlsAdMarkers | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AUTOMATIC
   - typings.awsSdk.awsSdkStrings.M2TS
   - java.lang.String
 */
-type HlsAudioOnlyContainer = typings.awsSdk.mediaconvertMod._HlsAudioOnlyContainer | java.lang.String
+type HlsAudioOnlyContainer = _HlsAudioOnlyContainer | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INCLUDE
   - typings.awsSdk.awsSdkStrings.EXCLUDE
   - java.lang.String
 */
-type HlsAudioOnlyHeader = typings.awsSdk.mediaconvertMod._HlsAudioOnlyHeader | java.lang.String
+type HlsAudioOnlyHeader = _HlsAudioOnlyHeader | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ALTERNATE_AUDIO_AUTO_SELECT_DEFAULT
@@ -1365,7 +1685,7 @@ type HlsAudioOnlyHeader = typings.awsSdk.mediaconvertMod._HlsAudioOnlyHeader | j
   - typings.awsSdk.awsSdkStrings.AUDIO_ONLY_VARIANT_STREAM
   - java.lang.String
 */
-type HlsAudioTrackType = typings.awsSdk.mediaconvertMod._HlsAudioTrackType | java.lang.String
+type HlsAudioTrackType = _HlsAudioTrackType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INSERT
@@ -1373,105 +1693,149 @@ type HlsAudioTrackType = typings.awsSdk.mediaconvertMod._HlsAudioTrackType | jav
   - typings.awsSdk.awsSdkStrings.NONE
   - java.lang.String
 */
-type HlsCaptionLanguageSetting = typings.awsSdk.mediaconvertMod._HlsCaptionLanguageSetting | java.lang.String
+type HlsCaptionLanguageSetting = _HlsCaptionLanguageSetting | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.LARGE_SEGMENTS
+  - typings.awsSdk.awsSdkStrings.MATCH_VIDEO
+  - java.lang.String
+*/
+type HlsCaptionSegmentLengthControl = _HlsCaptionSegmentLengthControl | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DISABLED
   - typings.awsSdk.awsSdkStrings.ENABLED
   - java.lang.String
 */
-type HlsClientCache = typings.awsSdk.mediaconvertMod._HlsClientCache | java.lang.String
+type HlsClientCache = _HlsClientCache | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.RFC_6381
   - typings.awsSdk.awsSdkStrings.RFC_4281
   - java.lang.String
 */
-type HlsCodecSpecification = typings.awsSdk.mediaconvertMod._HlsCodecSpecification | java.lang.String
+type HlsCodecSpecification = _HlsCodecSpecification | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DONT_FLAG
+  - typings.awsSdk.awsSdkStrings.FLAG
+  - java.lang.String
+*/
+type HlsDescriptiveVideoServiceFlag = _HlsDescriptiveVideoServiceFlag | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SINGLE_DIRECTORY
   - typings.awsSdk.awsSdkStrings.SUBDIRECTORY_PER_STREAM
   - java.lang.String
 */
-type HlsDirectoryStructure = typings.awsSdk.mediaconvertMod._HlsDirectoryStructure | java.lang.String
+type HlsDirectoryStructure = _HlsDirectoryStructure | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AES128
   - typings.awsSdk.awsSdkStrings.SAMPLE_AES
   - java.lang.String
 */
-type HlsEncryptionType = typings.awsSdk.mediaconvertMod._HlsEncryptionType | java.lang.String
+type HlsEncryptionType = _HlsEncryptionType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INCLUDE
   - typings.awsSdk.awsSdkStrings.EXCLUDE
   - java.lang.String
 */
-type HlsIFrameOnlyManifest = typings.awsSdk.mediaconvertMod._HlsIFrameOnlyManifest | java.lang.String
+type HlsIFrameOnlyManifest = _HlsIFrameOnlyManifest | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.NONE
+  - typings.awsSdk.awsSdkStrings.THUMBNAIL
+  - typings.awsSdk.awsSdkStrings.THUMBNAIL_AND_FULLFRAME
+  - typings.awsSdk.awsSdkStrings.ADVANCED
+  - java.lang.String
+*/
+type HlsImageBasedTrickPlay = _HlsImageBasedTrickPlay | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INCLUDE
   - typings.awsSdk.awsSdkStrings.EXCLUDE
   - java.lang.String
 */
-type HlsInitializationVectorInManifest = typings.awsSdk.mediaconvertMod._HlsInitializationVectorInManifest | java.lang.String
+type HlsInitializationVectorInManifest = _HlsInitializationVectorInManifest | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.FOLLOW_IFRAME
+  - typings.awsSdk.awsSdkStrings.FOLLOW_CUSTOM
+  - java.lang.String
+*/
+type HlsIntervalCadence = _HlsIntervalCadence | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SPEKE
   - typings.awsSdk.awsSdkStrings.STATIC_KEY
   - java.lang.String
 */
-type HlsKeyProviderType = typings.awsSdk.mediaconvertMod._HlsKeyProviderType | java.lang.String
+type HlsKeyProviderType = _HlsKeyProviderType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.GZIP
   - typings.awsSdk.awsSdkStrings.NONE
   - java.lang.String
 */
-type HlsManifestCompression = typings.awsSdk.mediaconvertMod._HlsManifestCompression | java.lang.String
+type HlsManifestCompression = _HlsManifestCompression | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FLOATING_POINT
   - typings.awsSdk.awsSdkStrings.INTEGER
   - java.lang.String
 */
-type HlsManifestDurationFormat = typings.awsSdk.mediaconvertMod._HlsManifestDurationFormat | java.lang.String
+type HlsManifestDurationFormat = _HlsManifestDurationFormat | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLED
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type HlsOfflineEncrypted = typings.awsSdk.mediaconvertMod._HlsOfflineEncrypted | java.lang.String
+type HlsOfflineEncrypted = _HlsOfflineEncrypted | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.MANIFESTS_AND_SEGMENTS
   - typings.awsSdk.awsSdkStrings.SEGMENTS_ONLY
   - java.lang.String
 */
-type HlsOutputSelection = typings.awsSdk.mediaconvertMod._HlsOutputSelection | java.lang.String
+type HlsOutputSelection = _HlsOutputSelection | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INCLUDE
   - typings.awsSdk.awsSdkStrings.EXCLUDE
   - java.lang.String
 */
-type HlsProgramDateTime = typings.awsSdk.mediaconvertMod._HlsProgramDateTime | java.lang.String
+type HlsProgramDateTime = _HlsProgramDateTime | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SINGLE_FILE
   - typings.awsSdk.awsSdkStrings.SEGMENTED_FILES
   - java.lang.String
 */
-type HlsSegmentControl = typings.awsSdk.mediaconvertMod._HlsSegmentControl | java.lang.String
+type HlsSegmentControl = _HlsSegmentControl | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.EXACT
+  - typings.awsSdk.awsSdkStrings.GOP_MULTIPLE
+  - java.lang.String
+*/
+type HlsSegmentLengthControl = _HlsSegmentLengthControl | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INCLUDE
   - typings.awsSdk.awsSdkStrings.EXCLUDE
   - java.lang.String
 */
-type HlsStreamInfResolution = typings.awsSdk.mediaconvertMod._HlsStreamInfResolution | java.lang.String
+type HlsStreamInfResolution = _HlsStreamInfResolution | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.LEGACY
+  - typings.awsSdk.awsSdkStrings.SPEC_COMPLIANT
+  - java.lang.String
+*/
+type HlsTargetDurationCompatibilityMode = _HlsTargetDurationCompatibilityMode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
@@ -1479,28 +1843,35 @@ type HlsStreamInfResolution = typings.awsSdk.mediaconvertMod._HlsStreamInfResolu
   - typings.awsSdk.awsSdkStrings.TDRL
   - java.lang.String
 */
-type HlsTimedMetadataId3Frame = typings.awsSdk.mediaconvertMod._HlsTimedMetadataId3Frame | java.lang.String
+type HlsTimedMetadataId3Frame = _HlsTimedMetadataId3Frame | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - java.lang.String
+*/
+type ImscAccessibilitySubs = _ImscAccessibilitySubs | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLED
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type ImscStylePassthrough = typings.awsSdk.mediaconvertMod._ImscStylePassthrough | java.lang.String
+type ImscStylePassthrough = _ImscStylePassthrough | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLED
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type InputDeblockFilter = typings.awsSdk.mediaconvertMod._InputDeblockFilter | java.lang.String
+type InputDeblockFilter = _InputDeblockFilter | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLED
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type InputDenoiseFilter = typings.awsSdk.mediaconvertMod._InputDenoiseFilter | java.lang.String
+type InputDenoiseFilter = _InputDenoiseFilter | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AUTO
@@ -1508,14 +1879,21 @@ type InputDenoiseFilter = typings.awsSdk.mediaconvertMod._InputDenoiseFilter | j
   - typings.awsSdk.awsSdkStrings.FORCE
   - java.lang.String
 */
-type InputFilterEnable = typings.awsSdk.mediaconvertMod._InputFilterEnable | java.lang.String
+type InputFilterEnable = _InputFilterEnable | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ALLOWED
+  - typings.awsSdk.awsSdkStrings.DISALLOWED
+  - java.lang.String
+*/
+type InputPolicy = _InputPolicy | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.IGNORE_PSI
   - typings.awsSdk.awsSdkStrings.USE_PSI
   - java.lang.String
 */
-type InputPsiControl = typings.awsSdk.mediaconvertMod._InputPsiControl | java.lang.String
+type InputPsiControl = _InputPsiControl | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DEGREE_0
@@ -1525,14 +1903,22 @@ type InputPsiControl = typings.awsSdk.mediaconvertMod._InputPsiControl | java.la
   - typings.awsSdk.awsSdkStrings.AUTO
   - java.lang.String
 */
-type InputRotate = typings.awsSdk.mediaconvertMod._InputRotate | java.lang.String
+type InputRotate = _InputRotate | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.FOLLOW
+  - typings.awsSdk.awsSdkStrings.FULL_RANGE
+  - typings.awsSdk.awsSdkStrings.LIMITED_RANGE
+  - java.lang.String
+*/
+type InputSampleRange = _InputSampleRange | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AUTO
   - typings.awsSdk.awsSdkStrings.PSF
   - java.lang.String
 */
-type InputScanType = typings.awsSdk.mediaconvertMod._InputScanType | java.lang.String
+type InputScanType = _InputScanType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.EMBEDDED
@@ -1540,7 +1926,7 @@ type InputScanType = typings.awsSdk.mediaconvertMod._InputScanType | java.lang.S
   - typings.awsSdk.awsSdkStrings.SPECIFIEDSTART
   - java.lang.String
 */
-type InputTimecodeSource = typings.awsSdk.mediaconvertMod._InputTimecodeSource | java.lang.String
+type InputTimecodeSource = _InputTimecodeSource | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PROBING
@@ -1548,7 +1934,7 @@ type InputTimecodeSource = typings.awsSdk.mediaconvertMod._InputTimecodeSource |
   - typings.awsSdk.awsSdkStrings.UPLOADING
   - java.lang.String
 */
-type JobPhase = typings.awsSdk.mediaconvertMod._JobPhase | java.lang.String
+type JobPhase = _JobPhase | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SUBMITTED
@@ -1558,7 +1944,7 @@ type JobPhase = typings.awsSdk.mediaconvertMod._JobPhase | java.lang.String
   - typings.awsSdk.awsSdkStrings.ERROR
   - java.lang.String
 */
-type JobStatus = typings.awsSdk.mediaconvertMod._JobStatus | java.lang.String
+type JobStatus = _JobStatus | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NAME
@@ -1566,7 +1952,7 @@ type JobStatus = typings.awsSdk.mediaconvertMod._JobStatus | java.lang.String
   - typings.awsSdk.awsSdkStrings.SYSTEM
   - java.lang.String
 */
-type JobTemplateListBy = typings.awsSdk.mediaconvertMod._JobTemplateListBy | java.lang.String
+type JobTemplateListBy = _JobTemplateListBy | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENG
@@ -1760,79 +2146,101 @@ type JobTemplateListBy = typings.awsSdk.mediaconvertMod._JobTemplateListBy | jav
   - typings.awsSdk.awsSdkStrings.ORJ
   - typings.awsSdk.awsSdkStrings.QPC
   - typings.awsSdk.awsSdkStrings.TNG
+  - typings.awsSdk.awsSdkStrings.SRP
   - java.lang.String
 */
-type LanguageCode = typings.awsSdk.mediaconvertMod._LanguageCode | java.lang.String
+type LanguageCode = _LanguageCode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DVB
   - typings.awsSdk.awsSdkStrings.ATSC
   - java.lang.String
 */
-type M2tsAudioBufferModel = typings.awsSdk.mediaconvertMod._M2tsAudioBufferModel | java.lang.String
+type M2tsAudioBufferModel = _M2tsAudioBufferModel | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DEFAULT_CODEC_DURATION
+  - typings.awsSdk.awsSdkStrings.MATCH_VIDEO_DURATION
+  - java.lang.String
+*/
+type M2tsAudioDuration = _M2tsAudioDuration | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.MULTIPLEX
   - typings.awsSdk.awsSdkStrings.NONE
   - java.lang.String
 */
-type M2tsBufferModel = typings.awsSdk.mediaconvertMod._M2tsBufferModel | java.lang.String
+type M2tsBufferModel = _M2tsBufferModel | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.AUTO
+  - typings.awsSdk.awsSdkStrings.ALIGN_TO_VIDEO
+  - java.lang.String
+*/
+type M2tsDataPtsControl = _M2tsDataPtsControl | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.VIDEO_AND_FIXED_INTERVALS
   - typings.awsSdk.awsSdkStrings.VIDEO_INTERVAL
   - java.lang.String
 */
-type M2tsEbpAudioInterval = typings.awsSdk.mediaconvertMod._M2tsEbpAudioInterval | java.lang.String
+type M2tsEbpAudioInterval = _M2tsEbpAudioInterval | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.VIDEO_AND_AUDIO_PIDS
   - typings.awsSdk.awsSdkStrings.VIDEO_PID
   - java.lang.String
 */
-type M2tsEbpPlacement = typings.awsSdk.mediaconvertMod._M2tsEbpPlacement | java.lang.String
+type M2tsEbpPlacement = _M2tsEbpPlacement | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INCLUDE
   - typings.awsSdk.awsSdkStrings.EXCLUDE
   - java.lang.String
 */
-type M2tsEsRateInPes = typings.awsSdk.mediaconvertMod._M2tsEsRateInPes | java.lang.String
+type M2tsEsRateInPes = _M2tsEsRateInPes | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FORCE
   - typings.awsSdk.awsSdkStrings.DEFAULT
   - java.lang.String
 */
-type M2tsForceTsVideoEbpOrder = typings.awsSdk.mediaconvertMod._M2tsForceTsVideoEbpOrder | java.lang.String
-
-/* Rewritten from type alias, can be one of: 
-  - typings.awsSdk.awsSdkStrings.INSERT
-  - typings.awsSdk.awsSdkStrings.NONE
-  - java.lang.String
-*/
-type M2tsNielsenId3 = typings.awsSdk.mediaconvertMod._M2tsNielsenId3 | java.lang.String
-
-/* Rewritten from type alias, can be one of: 
-  - typings.awsSdk.awsSdkStrings.PCR_EVERY_PES_PACKET
-  - typings.awsSdk.awsSdkStrings.CONFIGURED_PCR_PERIOD
-  - java.lang.String
-*/
-type M2tsPcrControl = typings.awsSdk.mediaconvertMod._M2tsPcrControl | java.lang.String
-
-/* Rewritten from type alias, can be one of: 
-  - typings.awsSdk.awsSdkStrings.VBR
-  - typings.awsSdk.awsSdkStrings.CBR
-  - java.lang.String
-*/
-type M2tsRateMode = typings.awsSdk.mediaconvertMod._M2tsRateMode | java.lang.String
+type M2tsForceTsVideoEbpOrder = _M2tsForceTsVideoEbpOrder | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PASSTHROUGH
   - typings.awsSdk.awsSdkStrings.NONE
   - java.lang.String
 */
-type M2tsScte35Source = typings.awsSdk.mediaconvertMod._M2tsScte35Source | java.lang.String
+type M2tsKlvMetadata = _M2tsKlvMetadata | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.INSERT
+  - typings.awsSdk.awsSdkStrings.NONE
+  - java.lang.String
+*/
+type M2tsNielsenId3 = _M2tsNielsenId3 | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PCR_EVERY_PES_PACKET
+  - typings.awsSdk.awsSdkStrings.CONFIGURED_PCR_PERIOD
+  - java.lang.String
+*/
+type M2tsPcrControl = _M2tsPcrControl | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.VBR
+  - typings.awsSdk.awsSdkStrings.CBR
+  - java.lang.String
+*/
+type M2tsRateMode = _M2tsRateMode | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PASSTHROUGH
+  - typings.awsSdk.awsSdkStrings.NONE
+  - java.lang.String
+*/
+type M2tsScte35Source = _M2tsScte35Source | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
@@ -1843,133 +2251,175 @@ type M2tsScte35Source = typings.awsSdk.mediaconvertMod._M2tsScte35Source | java.
   - typings.awsSdk.awsSdkStrings.EBP_LEGACY
   - java.lang.String
 */
-type M2tsSegmentationMarkers = typings.awsSdk.mediaconvertMod._M2tsSegmentationMarkers | java.lang.String
+type M2tsSegmentationMarkers = _M2tsSegmentationMarkers | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.MAINTAIN_CADENCE
   - typings.awsSdk.awsSdkStrings.RESET_CADENCE
   - java.lang.String
 */
-type M2tsSegmentationStyle = typings.awsSdk.mediaconvertMod._M2tsSegmentationStyle | java.lang.String
+type M2tsSegmentationStyle = _M2tsSegmentationStyle | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DEFAULT_CODEC_DURATION
+  - typings.awsSdk.awsSdkStrings.MATCH_VIDEO_DURATION
+  - java.lang.String
+*/
+type M3u8AudioDuration = _M3u8AudioDuration | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.AUTO
+  - typings.awsSdk.awsSdkStrings.ALIGN_TO_VIDEO
+  - java.lang.String
+*/
+type M3u8DataPtsControl = _M3u8DataPtsControl | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INSERT
   - typings.awsSdk.awsSdkStrings.NONE
   - java.lang.String
 */
-type M3u8NielsenId3 = typings.awsSdk.mediaconvertMod._M3u8NielsenId3 | java.lang.String
+type M3u8NielsenId3 = _M3u8NielsenId3 | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PCR_EVERY_PES_PACKET
   - typings.awsSdk.awsSdkStrings.CONFIGURED_PCR_PERIOD
   - java.lang.String
 */
-type M3u8PcrControl = typings.awsSdk.mediaconvertMod._M3u8PcrControl | java.lang.String
+type M3u8PcrControl = _M3u8PcrControl | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PASSTHROUGH
   - typings.awsSdk.awsSdkStrings.NONE
   - java.lang.String
 */
-type M3u8Scte35Source = typings.awsSdk.mediaconvertMod._M3u8Scte35Source | java.lang.String
+type M3u8Scte35Source = _M3u8Scte35Source | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.MOV
   - typings.awsSdk.awsSdkStrings.PNG
   - java.lang.String
 */
-type MotionImageInsertionMode = typings.awsSdk.mediaconvertMod._MotionImageInsertionMode | java.lang.String
+type MotionImageInsertionMode = _MotionImageInsertionMode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ONCE
   - typings.awsSdk.awsSdkStrings.REPEAT
   - java.lang.String
 */
-type MotionImagePlayback = typings.awsSdk.mediaconvertMod._MotionImagePlayback | java.lang.String
+type MotionImagePlayback = _MotionImagePlayback | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INCLUDE
   - typings.awsSdk.awsSdkStrings.EXCLUDE
   - java.lang.String
 */
-type MovClapAtom = typings.awsSdk.mediaconvertMod._MovClapAtom | java.lang.String
+type MovClapAtom = _MovClapAtom | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INCLUDE
   - typings.awsSdk.awsSdkStrings.EXCLUDE
   - java.lang.String
 */
-type MovCslgAtom = typings.awsSdk.mediaconvertMod._MovCslgAtom | java.lang.String
+type MovCslgAtom = _MovCslgAtom | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.XDCAM
   - typings.awsSdk.awsSdkStrings.MPEG
   - java.lang.String
 */
-type MovMpeg2FourCCControl = typings.awsSdk.mediaconvertMod._MovMpeg2FourCCControl | java.lang.String
+type MovMpeg2FourCCControl = _MovMpeg2FourCCControl | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.OMNEON
   - typings.awsSdk.awsSdkStrings.NONE
   - java.lang.String
 */
-type MovPaddingControl = typings.awsSdk.mediaconvertMod._MovPaddingControl | java.lang.String
+type MovPaddingControl = _MovPaddingControl | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SELF_CONTAINED
   - typings.awsSdk.awsSdkStrings.EXTERNAL
   - java.lang.String
 */
-type MovReference = typings.awsSdk.mediaconvertMod._MovReference | java.lang.String
+type MovReference = _MovReference | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CBR
   - typings.awsSdk.awsSdkStrings.VBR
   - java.lang.String
 */
-type Mp3RateControlMode = typings.awsSdk.mediaconvertMod._Mp3RateControlMode | java.lang.String
+type Mp3RateControlMode = _Mp3RateControlMode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INCLUDE
   - typings.awsSdk.awsSdkStrings.EXCLUDE
   - java.lang.String
 */
-type Mp4CslgAtom = typings.awsSdk.mediaconvertMod._Mp4CslgAtom | java.lang.String
+type Mp4CslgAtom = _Mp4CslgAtom | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INCLUDE
   - typings.awsSdk.awsSdkStrings.EXCLUDE
   - java.lang.String
 */
-type Mp4FreeSpaceBox = typings.awsSdk.mediaconvertMod._Mp4FreeSpaceBox | java.lang.String
+type Mp4FreeSpaceBox = _Mp4FreeSpaceBox | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PROGRESSIVE_DOWNLOAD
   - typings.awsSdk.awsSdkStrings.NORMAL
   - java.lang.String
 */
-type Mp4MoovPlacement = typings.awsSdk.mediaconvertMod._Mp4MoovPlacement | java.lang.String
+type Mp4MoovPlacement = _Mp4MoovPlacement | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.INCLUDE
+  - typings.awsSdk.awsSdkStrings.EXCLUDE
+  - java.lang.String
+*/
+type MpdAccessibilityCaptionHints = _MpdAccessibilityCaptionHints | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DEFAULT_CODEC_DURATION
+  - typings.awsSdk.awsSdkStrings.MATCH_VIDEO_DURATION
+  - java.lang.String
+*/
+type MpdAudioDuration = _MpdAudioDuration | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.RAW
   - typings.awsSdk.awsSdkStrings.FRAGMENTED_MP4
   - java.lang.String
 */
-type MpdCaptionContainerType = typings.awsSdk.mediaconvertMod._MpdCaptionContainerType | java.lang.String
+type MpdCaptionContainerType = _MpdCaptionContainerType | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.NONE
+  - typings.awsSdk.awsSdkStrings.PASSTHROUGH
+  - java.lang.String
+*/
+type MpdKlvMetadata = _MpdKlvMetadata | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INSERT
   - typings.awsSdk.awsSdkStrings.NONE
   - java.lang.String
 */
-type MpdScte35Esam = typings.awsSdk.mediaconvertMod._MpdScte35Esam | java.lang.String
+type MpdScte35Esam = _MpdScte35Esam | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PASSTHROUGH
   - typings.awsSdk.awsSdkStrings.NONE
   - java.lang.String
 */
-type MpdScte35Source = typings.awsSdk.mediaconvertMod._MpdScte35Source | java.lang.String
+type MpdScte35Source = _MpdScte35Source | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PASSTHROUGH
+  - typings.awsSdk.awsSdkStrings.NONE
+  - java.lang.String
+*/
+type MpdTimedMetadata = _MpdTimedMetadata | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.OFF
@@ -1978,7 +2428,7 @@ type MpdScte35Source = typings.awsSdk.mediaconvertMod._MpdScte35Source | java.la
   - typings.awsSdk.awsSdkStrings.HIGH
   - java.lang.String
 */
-type Mpeg2AdaptiveQuantization = typings.awsSdk.mediaconvertMod._Mpeg2AdaptiveQuantization | java.lang.String
+type Mpeg2AdaptiveQuantization = _Mpeg2AdaptiveQuantization | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AUTO
@@ -1988,28 +2438,28 @@ type Mpeg2AdaptiveQuantization = typings.awsSdk.mediaconvertMod._Mpeg2AdaptiveQu
   - typings.awsSdk.awsSdkStrings.HIGH
   - java.lang.String
 */
-type Mpeg2CodecLevel = typings.awsSdk.mediaconvertMod._Mpeg2CodecLevel | java.lang.String
+type Mpeg2CodecLevel = _Mpeg2CodecLevel | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.MAIN
   - typings.awsSdk.awsSdkStrings.PROFILE_422
   - java.lang.String
 */
-type Mpeg2CodecProfile = typings.awsSdk.mediaconvertMod._Mpeg2CodecProfile | java.lang.String
+type Mpeg2CodecProfile = _Mpeg2CodecProfile | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ADAPTIVE
   - typings.awsSdk.awsSdkStrings.STATIC
   - java.lang.String
 */
-type Mpeg2DynamicSubGop = typings.awsSdk.mediaconvertMod._Mpeg2DynamicSubGop | java.lang.String
+type Mpeg2DynamicSubGop = _Mpeg2DynamicSubGop | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INITIALIZE_FROM_SOURCE
   - typings.awsSdk.awsSdkStrings.SPECIFIED
   - java.lang.String
 */
-type Mpeg2FramerateControl = typings.awsSdk.mediaconvertMod._Mpeg2FramerateControl | java.lang.String
+type Mpeg2FramerateControl = _Mpeg2FramerateControl | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DUPLICATE_DROP
@@ -2017,14 +2467,14 @@ type Mpeg2FramerateControl = typings.awsSdk.mediaconvertMod._Mpeg2FramerateContr
   - typings.awsSdk.awsSdkStrings.FRAMEFORMER
   - java.lang.String
 */
-type Mpeg2FramerateConversionAlgorithm = typings.awsSdk.mediaconvertMod._Mpeg2FramerateConversionAlgorithm | java.lang.String
+type Mpeg2FramerateConversionAlgorithm = _Mpeg2FramerateConversionAlgorithm | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FRAMES
   - typings.awsSdk.awsSdkStrings.SECONDS
   - java.lang.String
 */
-type Mpeg2GopSizeUnits = typings.awsSdk.mediaconvertMod._Mpeg2GopSizeUnits | java.lang.String
+type Mpeg2GopSizeUnits = _Mpeg2GopSizeUnits | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PROGRESSIVE
@@ -2034,7 +2484,7 @@ type Mpeg2GopSizeUnits = typings.awsSdk.mediaconvertMod._Mpeg2GopSizeUnits | jav
   - typings.awsSdk.awsSdkStrings.FOLLOW_BOTTOM_FIELD
   - java.lang.String
 */
-type Mpeg2InterlaceMode = typings.awsSdk.mediaconvertMod._Mpeg2InterlaceMode | java.lang.String
+type Mpeg2InterlaceMode = _Mpeg2InterlaceMode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AUTO
@@ -2044,56 +2494,63 @@ type Mpeg2InterlaceMode = typings.awsSdk.mediaconvertMod._Mpeg2InterlaceMode | j
   - typings.awsSdk.awsSdkStrings.INTRA_DC_PRECISION_11
   - java.lang.String
 */
-type Mpeg2IntraDcPrecision = typings.awsSdk.mediaconvertMod._Mpeg2IntraDcPrecision | java.lang.String
+type Mpeg2IntraDcPrecision = _Mpeg2IntraDcPrecision | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INITIALIZE_FROM_SOURCE
   - typings.awsSdk.awsSdkStrings.SPECIFIED
   - java.lang.String
 */
-type Mpeg2ParControl = typings.awsSdk.mediaconvertMod._Mpeg2ParControl | java.lang.String
+type Mpeg2ParControl = _Mpeg2ParControl | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SINGLE_PASS
   - typings.awsSdk.awsSdkStrings.MULTI_PASS
   - java.lang.String
 */
-type Mpeg2QualityTuningLevel = typings.awsSdk.mediaconvertMod._Mpeg2QualityTuningLevel | java.lang.String
+type Mpeg2QualityTuningLevel = _Mpeg2QualityTuningLevel | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.VBR
   - typings.awsSdk.awsSdkStrings.CBR
   - java.lang.String
 */
-type Mpeg2RateControlMode = typings.awsSdk.mediaconvertMod._Mpeg2RateControlMode | java.lang.String
+type Mpeg2RateControlMode = _Mpeg2RateControlMode | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.INTERLACED
+  - typings.awsSdk.awsSdkStrings.INTERLACED_OPTIMIZE
+  - java.lang.String
+*/
+type Mpeg2ScanTypeConversionMode = _Mpeg2ScanTypeConversionMode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DISABLED
   - typings.awsSdk.awsSdkStrings.ENABLED
   - java.lang.String
 */
-type Mpeg2SceneChangeDetect = typings.awsSdk.mediaconvertMod._Mpeg2SceneChangeDetect | java.lang.String
+type Mpeg2SceneChangeDetect = _Mpeg2SceneChangeDetect | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DISABLED
   - typings.awsSdk.awsSdkStrings.ENABLED
   - java.lang.String
 */
-type Mpeg2SlowPal = typings.awsSdk.mediaconvertMod._Mpeg2SlowPal | java.lang.String
+type Mpeg2SlowPal = _Mpeg2SlowPal | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DISABLED
   - typings.awsSdk.awsSdkStrings.ENABLED
   - java.lang.String
 */
-type Mpeg2SpatialAdaptiveQuantization = typings.awsSdk.mediaconvertMod._Mpeg2SpatialAdaptiveQuantization | java.lang.String
+type Mpeg2SpatialAdaptiveQuantization = _Mpeg2SpatialAdaptiveQuantization | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DEFAULT
   - typings.awsSdk.awsSdkStrings.D_10
   - java.lang.String
 */
-type Mpeg2Syntax = typings.awsSdk.mediaconvertMod._Mpeg2Syntax | java.lang.String
+type Mpeg2Syntax = _Mpeg2Syntax | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
@@ -2101,43 +2558,58 @@ type Mpeg2Syntax = typings.awsSdk.mediaconvertMod._Mpeg2Syntax | java.lang.Strin
   - typings.awsSdk.awsSdkStrings.HARD
   - java.lang.String
 */
-type Mpeg2Telecine = typings.awsSdk.mediaconvertMod._Mpeg2Telecine | java.lang.String
+type Mpeg2Telecine = _Mpeg2Telecine | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DISABLED
   - typings.awsSdk.awsSdkStrings.ENABLED
   - java.lang.String
 */
-type Mpeg2TemporalAdaptiveQuantization = typings.awsSdk.mediaconvertMod._Mpeg2TemporalAdaptiveQuantization | java.lang.String
+type Mpeg2TemporalAdaptiveQuantization = _Mpeg2TemporalAdaptiveQuantization | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.COMBINE_DUPLICATE_STREAMS
   - typings.awsSdk.awsSdkStrings.NONE
   - java.lang.String
 */
-type MsSmoothAudioDeduplication = typings.awsSdk.mediaconvertMod._MsSmoothAudioDeduplication | java.lang.String
+type MsSmoothAudioDeduplication = _MsSmoothAudioDeduplication | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.EXACT
+  - typings.awsSdk.awsSdkStrings.GOP_MULTIPLE
+  - java.lang.String
+*/
+type MsSmoothFragmentLengthControl = _MsSmoothFragmentLengthControl | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.UTF8
   - typings.awsSdk.awsSdkStrings.UTF16
   - java.lang.String
 */
-type MsSmoothManifestEncoding = typings.awsSdk.mediaconvertMod._MsSmoothManifestEncoding | java.lang.String
+type MsSmoothManifestEncoding = _MsSmoothManifestEncoding | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NO_COPY
   - typings.awsSdk.awsSdkStrings.COPY_FROM_VIDEO
   - java.lang.String
 */
-type MxfAfdSignaling = typings.awsSdk.mediaconvertMod._MxfAfdSignaling | java.lang.String
+type MxfAfdSignaling = _MxfAfdSignaling | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.D_10
   - typings.awsSdk.awsSdkStrings.XDCAM
   - typings.awsSdk.awsSdkStrings.OP1A
+  - typings.awsSdk.awsSdkStrings.XAVC
   - java.lang.String
 */
-type MxfProfile = typings.awsSdk.mediaconvertMod._MxfProfile | java.lang.String
+type MxfProfile = _MxfProfile | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ALLOW_ANY_DURATION
+  - typings.awsSdk.awsSdkStrings.DROP_FRAMES_FOR_COMPLIANCE
+  - java.lang.String
+*/
+type MxfXavcDurationMode = _MxfXavcDurationMode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NAES2_AND_NW
@@ -2145,21 +2617,21 @@ type MxfProfile = typings.awsSdk.mediaconvertMod._MxfProfile | java.lang.String
   - typings.awsSdk.awsSdkStrings.NAES2_AND_NW_AND_CBET
   - java.lang.String
 */
-type NielsenActiveWatermarkProcessType = typings.awsSdk.mediaconvertMod._NielsenActiveWatermarkProcessType | java.lang.String
+type NielsenActiveWatermarkProcessType = _NielsenActiveWatermarkProcessType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CLEAN
   - typings.awsSdk.awsSdkStrings.WATERMARKED
   - java.lang.String
 */
-type NielsenSourceWatermarkStatusType = typings.awsSdk.mediaconvertMod._NielsenSourceWatermarkStatusType | java.lang.String
+type NielsenSourceWatermarkStatusType = _NielsenSourceWatermarkStatusType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.RESERVE_UNIQUE_TICS_PER_TRACK
   - typings.awsSdk.awsSdkStrings.SAME_TICS_PER_TRACK
   - java.lang.String
 */
-type NielsenUniqueTicPerAudioTrackType = typings.awsSdk.mediaconvertMod._NielsenUniqueTicPerAudioTrackType | java.lang.String
+type NielsenUniqueTicPerAudioTrackType = _NielsenUniqueTicPerAudioTrackType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DISABLED
@@ -2167,7 +2639,15 @@ type NielsenUniqueTicPerAudioTrackType = typings.awsSdk.mediaconvertMod._Nielsen
   - typings.awsSdk.awsSdkStrings.AUTO
   - java.lang.String
 */
-type NoiseFilterPostTemporalSharpening = typings.awsSdk.mediaconvertMod._NoiseFilterPostTemporalSharpening | java.lang.String
+type NoiseFilterPostTemporalSharpening = _NoiseFilterPostTemporalSharpening | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.LOW
+  - typings.awsSdk.awsSdkStrings.MEDIUM
+  - typings.awsSdk.awsSdkStrings.HIGH
+  - java.lang.String
+*/
+type NoiseFilterPostTemporalSharpeningStrength = _NoiseFilterPostTemporalSharpeningStrength | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.BILATERAL
@@ -2180,14 +2660,14 @@ type NoiseFilterPostTemporalSharpening = typings.awsSdk.mediaconvertMod._NoiseFi
   - typings.awsSdk.awsSdkStrings.TEMPORAL
   - java.lang.String
 */
-type NoiseReducerFilter = typings.awsSdk.mediaconvertMod._NoiseReducerFilter | java.lang.String
+type NoiseReducerFilter = _NoiseReducerFilter | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ASCENDING
   - typings.awsSdk.awsSdkStrings.DESCENDING
   - java.lang.String
 */
-type Order = typings.awsSdk.mediaconvertMod._Order | java.lang.String
+type Order = _Order | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.HLS_GROUP_SETTINGS
@@ -2197,7 +2677,7 @@ type Order = typings.awsSdk.mediaconvertMod._Order | java.lang.String
   - typings.awsSdk.awsSdkStrings.CMAF_GROUP_SETTINGS
   - java.lang.String
 */
-type OutputGroupType = typings.awsSdk.mediaconvertMod._OutputGroupType | java.lang.String
+type OutputGroupType = _OutputGroupType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SDT_FOLLOW
@@ -2206,7 +2686,14 @@ type OutputGroupType = typings.awsSdk.mediaconvertMod._OutputGroupType | java.la
   - typings.awsSdk.awsSdkStrings.SDT_NONE
   - java.lang.String
 */
-type OutputSdt = typings.awsSdk.mediaconvertMod._OutputSdt | java.lang.String
+type OutputSdt = _OutputSdt | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - typings.awsSdk.awsSdkStrings.BLACK
+  - java.lang.String
+*/
+type PadVideo = _PadVideo | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NAME
@@ -2214,30 +2701,39 @@ type OutputSdt = typings.awsSdk.mediaconvertMod._OutputSdt | java.lang.String
   - typings.awsSdk.awsSdkStrings.SYSTEM
   - java.lang.String
 */
-type PresetListBy = typings.awsSdk.mediaconvertMod._PresetListBy | java.lang.String
+type PresetListBy = _PresetListBy | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ON_DEMAND
   - typings.awsSdk.awsSdkStrings.RESERVED
   - java.lang.String
 */
-type PricingPlan = typings.awsSdk.mediaconvertMod._PricingPlan | java.lang.String
+type PricingPlan = _PricingPlan | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PRESERVE_444_SAMPLING
+  - typings.awsSdk.awsSdkStrings.SUBSAMPLE_TO_422
+  - java.lang.String
+*/
+type ProresChromaSampling = _ProresChromaSampling | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.APPLE_PRORES_422
   - typings.awsSdk.awsSdkStrings.APPLE_PRORES_422_HQ
   - typings.awsSdk.awsSdkStrings.APPLE_PRORES_422_LT
   - typings.awsSdk.awsSdkStrings.APPLE_PRORES_422_PROXY
+  - typings.awsSdk.awsSdkStrings.APPLE_PRORES_4444
+  - typings.awsSdk.awsSdkStrings.APPLE_PRORES_4444_XQ
   - java.lang.String
 */
-type ProresCodecProfile = typings.awsSdk.mediaconvertMod._ProresCodecProfile | java.lang.String
+type ProresCodecProfile = _ProresCodecProfile | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INITIALIZE_FROM_SOURCE
   - typings.awsSdk.awsSdkStrings.SPECIFIED
   - java.lang.String
 */
-type ProresFramerateControl = typings.awsSdk.mediaconvertMod._ProresFramerateControl | java.lang.String
+type ProresFramerateControl = _ProresFramerateControl | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DUPLICATE_DROP
@@ -2245,7 +2741,7 @@ type ProresFramerateControl = typings.awsSdk.mediaconvertMod._ProresFramerateCon
   - typings.awsSdk.awsSdkStrings.FRAMEFORMER
   - java.lang.String
 */
-type ProresFramerateConversionAlgorithm = typings.awsSdk.mediaconvertMod._ProresFramerateConversionAlgorithm | java.lang.String
+type ProresFramerateConversionAlgorithm = _ProresFramerateConversionAlgorithm | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PROGRESSIVE
@@ -2255,56 +2751,70 @@ type ProresFramerateConversionAlgorithm = typings.awsSdk.mediaconvertMod._Prores
   - typings.awsSdk.awsSdkStrings.FOLLOW_BOTTOM_FIELD
   - java.lang.String
 */
-type ProresInterlaceMode = typings.awsSdk.mediaconvertMod._ProresInterlaceMode | java.lang.String
+type ProresInterlaceMode = _ProresInterlaceMode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INITIALIZE_FROM_SOURCE
   - typings.awsSdk.awsSdkStrings.SPECIFIED
   - java.lang.String
 */
-type ProresParControl = typings.awsSdk.mediaconvertMod._ProresParControl | java.lang.String
+type ProresParControl = _ProresParControl | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.INTERLACED
+  - typings.awsSdk.awsSdkStrings.INTERLACED_OPTIMIZE
+  - java.lang.String
+*/
+type ProresScanTypeConversionMode = _ProresScanTypeConversionMode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DISABLED
   - typings.awsSdk.awsSdkStrings.ENABLED
   - java.lang.String
 */
-type ProresSlowPal = typings.awsSdk.mediaconvertMod._ProresSlowPal | java.lang.String
+type ProresSlowPal = _ProresSlowPal | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
   - typings.awsSdk.awsSdkStrings.HARD
   - java.lang.String
 */
-type ProresTelecine = typings.awsSdk.mediaconvertMod._ProresTelecine | java.lang.String
+type ProresTelecine = _ProresTelecine | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NAME
   - typings.awsSdk.awsSdkStrings.CREATION_DATE
   - java.lang.String
 */
-type QueueListBy = typings.awsSdk.mediaconvertMod._QueueListBy | java.lang.String
+type QueueListBy = _QueueListBy | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ACTIVE
   - typings.awsSdk.awsSdkStrings.PAUSED
   - java.lang.String
 */
-type QueueStatus = typings.awsSdk.mediaconvertMod._QueueStatus | java.lang.String
+type QueueStatus = _QueueStatus | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AUTO_RENEW
   - typings.awsSdk.awsSdkStrings.EXPIRE
   - java.lang.String
 */
-type RenewalType = typings.awsSdk.mediaconvertMod._RenewalType | java.lang.String
+type RenewalType = _RenewalType | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - java.lang.String
+*/
+type RequiredFlag = _RequiredFlag | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ACTIVE
   - typings.awsSdk.awsSdkStrings.EXPIRED
   - java.lang.String
 */
-type ReservationPlanStatus = typings.awsSdk.mediaconvertMod._ReservationPlanStatus | java.lang.String
+type ReservationPlanStatus = _ReservationPlanStatus | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
@@ -2312,7 +2822,16 @@ type ReservationPlanStatus = typings.awsSdk.mediaconvertMod._ReservationPlanStat
   - typings.awsSdk.awsSdkStrings.PASSTHROUGH
   - java.lang.String
 */
-type RespondToAfd = typings.awsSdk.mediaconvertMod._RespondToAfd | java.lang.String
+type RespondToAfd = _RespondToAfd | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.MIN_TOP_RENDITION_SIZE
+  - typings.awsSdk.awsSdkStrings.MIN_BOTTOM_RENDITION_SIZE
+  - typings.awsSdk.awsSdkStrings.FORCE_INCLUDE_RENDITIONS
+  - typings.awsSdk.awsSdkStrings.ALLOWED_RENDITIONS
+  - java.lang.String
+*/
+type RuleType = _RuleType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PUBLIC_READ
@@ -2321,21 +2840,28 @@ type RespondToAfd = typings.awsSdk.mediaconvertMod._RespondToAfd | java.lang.Str
   - typings.awsSdk.awsSdkStrings.BUCKET_OWNER_FULL_CONTROL
   - java.lang.String
 */
-type S3ObjectCannedAcl = typings.awsSdk.mediaconvertMod._S3ObjectCannedAcl | java.lang.String
+type S3ObjectCannedAcl = _S3ObjectCannedAcl | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SERVER_SIDE_ENCRYPTION_S3
   - typings.awsSdk.awsSdkStrings.SERVER_SIDE_ENCRYPTION_KMS
   - java.lang.String
 */
-type S3ServerSideEncryptionType = typings.awsSdk.mediaconvertMod._S3ServerSideEncryptionType | java.lang.String
+type S3ServerSideEncryptionType = _S3ServerSideEncryptionType | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.LIMITED_RANGE_SQUEEZE
+  - typings.awsSdk.awsSdkStrings.NONE
+  - java.lang.String
+*/
+type SampleRangeConversion = _SampleRangeConversion | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DEFAULT
   - typings.awsSdk.awsSdkStrings.STRETCH_TO_OUTPUT
   - java.lang.String
 */
-type ScalingBehavior = typings.awsSdk.mediaconvertMod._ScalingBehavior | java.lang.String
+type ScalingBehavior = _ScalingBehavior | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FRAMERATE_23_97
@@ -2345,14 +2871,21 @@ type ScalingBehavior = typings.awsSdk.mediaconvertMod._ScalingBehavior | java.la
   - typings.awsSdk.awsSdkStrings.FRAMERATE_29_97_NON_DROPFRAME
   - java.lang.String
 */
-type SccDestinationFramerate = typings.awsSdk.mediaconvertMod._SccDestinationFramerate | java.lang.String
+type SccDestinationFramerate = _SccDestinationFramerate | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DISABLED
   - typings.awsSdk.awsSdkStrings.ENABLED
   - java.lang.String
 */
-type SimulateReservedQueue = typings.awsSdk.mediaconvertMod._SimulateReservedQueue | java.lang.String
+type SimulateReservedQueue = _SimulateReservedQueue | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - java.lang.String
+*/
+type SrtStylePassthrough = _SrtStylePassthrough | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SECONDS_10
@@ -2372,7 +2905,7 @@ type SimulateReservedQueue = typings.awsSdk.mediaconvertMod._SimulateReservedQue
   - typings.awsSdk.awsSdkStrings.SECONDS_600
   - java.lang.String
 */
-type StatusUpdateInterval = typings.awsSdk.mediaconvertMod._StatusUpdateInterval | java.lang.String
+type StatusUpdateInterval = _StatusUpdateInterval | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PAGE_TYPE_INITIAL
@@ -2382,7 +2915,7 @@ type StatusUpdateInterval = typings.awsSdk.mediaconvertMod._StatusUpdateInterval
   - typings.awsSdk.awsSdkStrings.PAGE_TYPE_HEARING_IMPAIRED_SUBTITLE
   - java.lang.String
 */
-type TeletextPageType = typings.awsSdk.mediaconvertMod._TeletextPageType | java.lang.String
+type TeletextPageType = _TeletextPageType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.TOP_CENTER
@@ -2396,7 +2929,7 @@ type TeletextPageType = typings.awsSdk.mediaconvertMod._TeletextPageType | java.
   - typings.awsSdk.awsSdkStrings.BOTTOM_RIGHT
   - java.lang.String
 */
-type TimecodeBurninPosition = typings.awsSdk.mediaconvertMod._TimecodeBurninPosition | java.lang.String
+type TimecodeBurninPosition = _TimecodeBurninPosition | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.EMBEDDED
@@ -2404,28 +2937,28 @@ type TimecodeBurninPosition = typings.awsSdk.mediaconvertMod._TimecodeBurninPosi
   - typings.awsSdk.awsSdkStrings.SPECIFIEDSTART
   - java.lang.String
 */
-type TimecodeSource = typings.awsSdk.mediaconvertMod._TimecodeSource | java.lang.String
+type TimecodeSource = _TimecodeSource | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PASSTHROUGH
   - typings.awsSdk.awsSdkStrings.NONE
   - java.lang.String
 */
-type TimedMetadata = typings.awsSdk.mediaconvertMod._TimedMetadata | java.lang.String
+type TimedMetadata = _TimedMetadata | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLED
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
 */
-type TtmlStylePassthrough = typings.awsSdk.mediaconvertMod._TtmlStylePassthrough | java.lang.String
+type TtmlStylePassthrough = _TtmlStylePassthrough | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SYSTEM
   - typings.awsSdk.awsSdkStrings.CUSTOM
   - java.lang.String
 */
-type Type = typings.awsSdk.mediaconvertMod._Type | java.lang.String
+type Type = _Type | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CLASS_145_8BIT
@@ -2433,14 +2966,14 @@ type Type = typings.awsSdk.mediaconvertMod._Type | java.lang.String
   - typings.awsSdk.awsSdkStrings.CLASS_220_10BIT
   - java.lang.String
 */
-type Vc3Class = typings.awsSdk.mediaconvertMod._Vc3Class | java.lang.String
+type Vc3Class = _Vc3Class | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INITIALIZE_FROM_SOURCE
   - typings.awsSdk.awsSdkStrings.SPECIFIED
   - java.lang.String
 */
-type Vc3FramerateControl = typings.awsSdk.mediaconvertMod._Vc3FramerateControl | java.lang.String
+type Vc3FramerateControl = _Vc3FramerateControl | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DUPLICATE_DROP
@@ -2448,28 +2981,42 @@ type Vc3FramerateControl = typings.awsSdk.mediaconvertMod._Vc3FramerateControl |
   - typings.awsSdk.awsSdkStrings.FRAMEFORMER
   - java.lang.String
 */
-type Vc3FramerateConversionAlgorithm = typings.awsSdk.mediaconvertMod._Vc3FramerateConversionAlgorithm | java.lang.String
+type Vc3FramerateConversionAlgorithm = _Vc3FramerateConversionAlgorithm | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INTERLACED
   - typings.awsSdk.awsSdkStrings.PROGRESSIVE
   - java.lang.String
 */
-type Vc3InterlaceMode = typings.awsSdk.mediaconvertMod._Vc3InterlaceMode | java.lang.String
+type Vc3InterlaceMode = _Vc3InterlaceMode | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.INTERLACED
+  - typings.awsSdk.awsSdkStrings.INTERLACED_OPTIMIZE
+  - java.lang.String
+*/
+type Vc3ScanTypeConversionMode = _Vc3ScanTypeConversionMode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DISABLED
   - typings.awsSdk.awsSdkStrings.ENABLED
   - java.lang.String
 */
-type Vc3SlowPal = typings.awsSdk.mediaconvertMod._Vc3SlowPal | java.lang.String
+type Vc3SlowPal = _Vc3SlowPal | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NONE
   - typings.awsSdk.awsSdkStrings.HARD
   - java.lang.String
 */
-type Vc3Telecine = typings.awsSdk.mediaconvertMod._Vc3Telecine | java.lang.String
+type Vc3Telecine = _Vc3Telecine | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PASSTHROUGH
+  - typings.awsSdk.awsSdkStrings.STRIP
+  - java.lang.String
+*/
+type VchipAction = _VchipAction | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AV1
@@ -2482,23 +3029,24 @@ type Vc3Telecine = typings.awsSdk.mediaconvertMod._Vc3Telecine | java.lang.Strin
   - typings.awsSdk.awsSdkStrings.VC3
   - typings.awsSdk.awsSdkStrings.VP8
   - typings.awsSdk.awsSdkStrings.VP9
+  - typings.awsSdk.awsSdkStrings.XAVC
   - java.lang.String
 */
-type VideoCodec = typings.awsSdk.mediaconvertMod._VideoCodec | java.lang.String
+type VideoCodec = _VideoCodec | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DISABLED
   - typings.awsSdk.awsSdkStrings.PIC_TIMING_SEI
   - java.lang.String
 */
-type VideoTimecodeInsertion = typings.awsSdk.mediaconvertMod._VideoTimecodeInsertion | java.lang.String
+type VideoTimecodeInsertion = _VideoTimecodeInsertion | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INITIALIZE_FROM_SOURCE
   - typings.awsSdk.awsSdkStrings.SPECIFIED
   - java.lang.String
 */
-type Vp8FramerateControl = typings.awsSdk.mediaconvertMod._Vp8FramerateControl | java.lang.String
+type Vp8FramerateControl = _Vp8FramerateControl | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DUPLICATE_DROP
@@ -2506,30 +3054,30 @@ type Vp8FramerateControl = typings.awsSdk.mediaconvertMod._Vp8FramerateControl |
   - typings.awsSdk.awsSdkStrings.FRAMEFORMER
   - java.lang.String
 */
-type Vp8FramerateConversionAlgorithm = typings.awsSdk.mediaconvertMod._Vp8FramerateConversionAlgorithm | java.lang.String
+type Vp8FramerateConversionAlgorithm = _Vp8FramerateConversionAlgorithm | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INITIALIZE_FROM_SOURCE
   - typings.awsSdk.awsSdkStrings.SPECIFIED
   - java.lang.String
 */
-type Vp8ParControl = typings.awsSdk.mediaconvertMod._Vp8ParControl | java.lang.String
+type Vp8ParControl = _Vp8ParControl | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.MULTI_PASS
   - typings.awsSdk.awsSdkStrings.MULTI_PASS_HQ
   - java.lang.String
 */
-type Vp8QualityTuningLevel = typings.awsSdk.mediaconvertMod._Vp8QualityTuningLevel | java.lang.String
+type Vp8QualityTuningLevel = _Vp8QualityTuningLevel | String
 
-type Vp8RateControlMode = typings.awsSdk.awsSdkStrings.VBR | java.lang.String
+type Vp8RateControlMode = VBR | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INITIALIZE_FROM_SOURCE
   - typings.awsSdk.awsSdkStrings.SPECIFIED
   - java.lang.String
 */
-type Vp9FramerateControl = typings.awsSdk.mediaconvertMod._Vp9FramerateControl | java.lang.String
+type Vp9FramerateControl = _Vp9FramerateControl | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DUPLICATE_DROP
@@ -2537,23 +3085,23 @@ type Vp9FramerateControl = typings.awsSdk.mediaconvertMod._Vp9FramerateControl |
   - typings.awsSdk.awsSdkStrings.FRAMEFORMER
   - java.lang.String
 */
-type Vp9FramerateConversionAlgorithm = typings.awsSdk.mediaconvertMod._Vp9FramerateConversionAlgorithm | java.lang.String
+type Vp9FramerateConversionAlgorithm = _Vp9FramerateConversionAlgorithm | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INITIALIZE_FROM_SOURCE
   - typings.awsSdk.awsSdkStrings.SPECIFIED
   - java.lang.String
 */
-type Vp9ParControl = typings.awsSdk.mediaconvertMod._Vp9ParControl | java.lang.String
+type Vp9ParControl = _Vp9ParControl | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.MULTI_PASS
   - typings.awsSdk.awsSdkStrings.MULTI_PASS_HQ
   - java.lang.String
 */
-type Vp9QualityTuningLevel = typings.awsSdk.mediaconvertMod._Vp9QualityTuningLevel | java.lang.String
+type Vp9QualityTuningLevel = _Vp9QualityTuningLevel | String
 
-type Vp9RateControlMode = typings.awsSdk.awsSdkStrings.VBR | java.lang.String
+type Vp9RateControlMode = VBR | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.LIGHTEST
@@ -2563,367 +3111,577 @@ type Vp9RateControlMode = typings.awsSdk.awsSdkStrings.VBR | java.lang.String
   - typings.awsSdk.awsSdkStrings.STRONGEST
   - java.lang.String
 */
-type WatermarkingStrength = typings.awsSdk.mediaconvertMod._WatermarkingStrength | java.lang.String
+type WatermarkingStrength = _WatermarkingStrength | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.RIFF
   - typings.awsSdk.awsSdkStrings.RF64
   - java.lang.String
 */
-type WavFormat = typings.awsSdk.mediaconvertMod._WavFormat | java.lang.String
+type WavFormat = _WavFormat | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - java.lang.String
+*/
+type WebvttAccessibilitySubs = _WebvttAccessibilitySubs | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - typings.awsSdk.awsSdkStrings.STRICT
+  - java.lang.String
+*/
+type WebvttStylePassthrough = _WebvttStylePassthrough | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CLASS_100
+  - typings.awsSdk.awsSdkStrings.CLASS_300
+  - typings.awsSdk.awsSdkStrings.CLASS_480
+  - java.lang.String
+*/
+type Xavc4kIntraCbgProfileClass = _Xavc4kIntraCbgProfileClass | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CLASS_100
+  - typings.awsSdk.awsSdkStrings.CLASS_300
+  - typings.awsSdk.awsSdkStrings.CLASS_480
+  - java.lang.String
+*/
+type Xavc4kIntraVbrProfileClass = _Xavc4kIntraVbrProfileClass | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.BITRATE_CLASS_100
+  - typings.awsSdk.awsSdkStrings.BITRATE_CLASS_140
+  - typings.awsSdk.awsSdkStrings.BITRATE_CLASS_200
+  - java.lang.String
+*/
+type Xavc4kProfileBitrateClass = _Xavc4kProfileBitrateClass | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.HIGH
+  - typings.awsSdk.awsSdkStrings.HIGH_422
+  - java.lang.String
+*/
+type Xavc4kProfileCodecProfile = _Xavc4kProfileCodecProfile | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SINGLE_PASS
+  - typings.awsSdk.awsSdkStrings.SINGLE_PASS_HQ
+  - typings.awsSdk.awsSdkStrings.MULTI_PASS_HQ
+  - java.lang.String
+*/
+type Xavc4kProfileQualityTuningLevel = _Xavc4kProfileQualityTuningLevel | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.OFF
+  - typings.awsSdk.awsSdkStrings.AUTO
+  - typings.awsSdk.awsSdkStrings.LOW
+  - typings.awsSdk.awsSdkStrings.MEDIUM
+  - typings.awsSdk.awsSdkStrings.HIGH
+  - typings.awsSdk.awsSdkStrings.HIGHER
+  - typings.awsSdk.awsSdkStrings.MAX
+  - java.lang.String
+*/
+type XavcAdaptiveQuantization = _XavcAdaptiveQuantization | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.AUTO
+  - typings.awsSdk.awsSdkStrings.CABAC
+  - typings.awsSdk.awsSdkStrings.CAVLC
+  - java.lang.String
+*/
+type XavcEntropyEncoding = _XavcEntropyEncoding | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - java.lang.String
+*/
+type XavcFlickerAdaptiveQuantization = _XavcFlickerAdaptiveQuantization | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.INITIALIZE_FROM_SOURCE
+  - typings.awsSdk.awsSdkStrings.SPECIFIED
+  - java.lang.String
+*/
+type XavcFramerateControl = _XavcFramerateControl | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DUPLICATE_DROP
+  - typings.awsSdk.awsSdkStrings.INTERPOLATE
+  - typings.awsSdk.awsSdkStrings.FRAMEFORMER
+  - java.lang.String
+*/
+type XavcFramerateConversionAlgorithm = _XavcFramerateConversionAlgorithm | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - java.lang.String
+*/
+type XavcGopBReference = _XavcGopBReference | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CLASS_50
+  - typings.awsSdk.awsSdkStrings.CLASS_100
+  - typings.awsSdk.awsSdkStrings.CLASS_200
+  - java.lang.String
+*/
+type XavcHdIntraCbgProfileClass = _XavcHdIntraCbgProfileClass | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.BITRATE_CLASS_25
+  - typings.awsSdk.awsSdkStrings.BITRATE_CLASS_35
+  - typings.awsSdk.awsSdkStrings.BITRATE_CLASS_50
+  - java.lang.String
+*/
+type XavcHdProfileBitrateClass = _XavcHdProfileBitrateClass | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SINGLE_PASS
+  - typings.awsSdk.awsSdkStrings.SINGLE_PASS_HQ
+  - typings.awsSdk.awsSdkStrings.MULTI_PASS_HQ
+  - java.lang.String
+*/
+type XavcHdProfileQualityTuningLevel = _XavcHdProfileQualityTuningLevel | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.NONE
+  - typings.awsSdk.awsSdkStrings.HARD
+  - java.lang.String
+*/
+type XavcHdProfileTelecine = _XavcHdProfileTelecine | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PROGRESSIVE
+  - typings.awsSdk.awsSdkStrings.TOP_FIELD
+  - typings.awsSdk.awsSdkStrings.BOTTOM_FIELD
+  - typings.awsSdk.awsSdkStrings.FOLLOW_TOP_FIELD
+  - typings.awsSdk.awsSdkStrings.FOLLOW_BOTTOM_FIELD
+  - java.lang.String
+*/
+type XavcInterlaceMode = _XavcInterlaceMode | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.XAVC_HD_INTRA_CBG
+  - typings.awsSdk.awsSdkStrings.XAVC_4K_INTRA_CBG
+  - typings.awsSdk.awsSdkStrings.XAVC_4K_INTRA_VBR
+  - typings.awsSdk.awsSdkStrings.XAVC_HD
+  - typings.awsSdk.awsSdkStrings.XAVC_4K
+  - java.lang.String
+*/
+type XavcProfile = _XavcProfile | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - java.lang.String
+*/
+type XavcSlowPal = _XavcSlowPal | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - java.lang.String
+*/
+type XavcSpatialAdaptiveQuantization = _XavcSpatialAdaptiveQuantization | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - java.lang.String
+*/
+type XavcTemporalAdaptiveQuantization = _XavcTemporalAdaptiveQuantization | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2017-08-29`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.mediaconvertMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String
 
-type doubleMin0 = scala.Double
+type doubleMin0 = Double
 
-type doubleMin0Max1 = scala.Double
+type doubleMin0Max1 = Double
 
-type doubleMin0Max2147483647 = scala.Double
+type doubleMin0Max2147483647 = Double
 
-type doubleMinNegative59Max0 = scala.Double
+type doubleMinNegative59Max0 = Double
 
-type doubleMinNegative60Max3 = scala.Double
+type doubleMinNegative60Max3 = Double
 
-type doubleMinNegative60MaxNegative1 = scala.Double
+type doubleMinNegative60Max6 = Double
 
-type doubleMinNegative6Max3 = scala.Double
+type doubleMinNegative60MaxNegative1 = Double
 
-type integer = scala.Double
+type doubleMinNegative6Max3 = Double
 
-type integerMin0Max0 = scala.Double
+type integer = Double
 
-type integerMin0Max1 = scala.Double
+type integerMin0Max0 = Double
 
-type integerMin0Max10 = scala.Double
+type integerMin0Max1 = Double
 
-type integerMin0Max100 = scala.Double
+type integerMin0Max10 = Double
 
-type integerMin0Max1000 = scala.Double
+type integerMin0Max100 = Double
 
-type integerMin0Max10000 = scala.Double
+type integerMin0Max1000 = Double
 
-type integerMin0Max1152000000 = scala.Double
+type integerMin0Max10000 = Double
 
-type integerMin0Max128 = scala.Double
+type integerMin0Max1152000000 = Double
 
-type integerMin0Max1466400000 = scala.Double
+type integerMin0Max128 = Double
 
-type integerMin0Max15 = scala.Double
+type integerMin0Max1466400000 = Double
 
-type integerMin0Max16 = scala.Double
+type integerMin0Max15 = Double
 
-type integerMin0Max2147483647 = scala.Double
+type integerMin0Max16 = Double
 
-type integerMin0Max255 = scala.Double
+type integerMin0Max2147483647 = Double
 
-type integerMin0Max3 = scala.Double
+type integerMin0Max255 = Double
 
-type integerMin0Max30 = scala.Double
+type integerMin0Max3 = Double
 
-type integerMin0Max30000 = scala.Double
+type integerMin0Max30 = Double
 
-type integerMin0Max3600 = scala.Double
+type integerMin0Max30000 = Double
 
-type integerMin0Max4 = scala.Double
+type integerMin0Max3600 = Double
 
-type integerMin0Max4194303 = scala.Double
+type integerMin0Max4 = Double
 
-type integerMin0Max47185920 = scala.Double
+type integerMin0Max4000 = Double
 
-type integerMin0Max500 = scala.Double
+type integerMin0Max4194303 = Double
 
-type integerMin0Max50000 = scala.Double
+type integerMin0Max47185920 = Double
 
-type integerMin0Max65534 = scala.Double
+type integerMin0Max500 = Double
 
-type integerMin0Max65535 = scala.Double
+type integerMin0Max50000 = Double
 
-type integerMin0Max7 = scala.Double
+type integerMin0Max65534 = Double
 
-type integerMin0Max8 = scala.Double
+type integerMin0Max65535 = Double
 
-type integerMin0Max9 = scala.Double
+type integerMin0Max7 = Double
 
-type integerMin0Max96 = scala.Double
+type integerMin0Max8 = Double
 
-type integerMin0Max99 = scala.Double
+type integerMin0Max9 = Double
 
-type integerMin100000Max100000000 = scala.Double
+type integerMin0Max96 = Double
 
-type integerMin1000Max1152000000 = scala.Double
+type integerMin0Max99 = Double
 
-type integerMin1000Max1466400000 = scala.Double
+type integerMin100000Max100000000 = Double
 
-type integerMin1000Max288000000 = scala.Double
+type integerMin1000Max1152000000 = Double
 
-type integerMin1000Max30000 = scala.Double
+type integerMin1000Max1466400000 = Double
 
-type integerMin1000Max300000000 = scala.Double
+type integerMin1000Max288000000 = Double
 
-type integerMin1000Max480000000 = scala.Double
+type integerMin1000Max30000 = Double
 
-type integerMin10Max48 = scala.Double
+type integerMin1000Max300000000 = Double
 
-type integerMin16000Max320000 = scala.Double
+type integerMin1000Max480000000 = Double
 
-type integerMin16000Max48000 = scala.Double
+type integerMin10Max48 = Double
 
-type integerMin16Max24 = scala.Double
+type integerMin16000Max320000 = Double
 
-type integerMin1Max1 = scala.Double
+type integerMin16000Max48000 = Double
 
-type integerMin1Max10 = scala.Double
+type integerMin16Max24 = Double
 
-type integerMin1Max100 = scala.Double
+type integerMin1Max1 = Double
 
-type integerMin1Max10000000 = scala.Double
+type integerMin1Max10 = Double
 
-type integerMin1Max1001 = scala.Double
+type integerMin1Max100 = Double
 
-type integerMin1Max17895697 = scala.Double
+type integerMin1Max10000000 = Double
 
-type integerMin1Max2 = scala.Double
+type integerMin1Max1001 = Double
 
-type integerMin1Max20 = scala.Double
+type integerMin1Max17895697 = Double
 
-type integerMin1Max2147483640 = scala.Double
+type integerMin1Max2 = Double
 
-type integerMin1Max2147483647 = scala.Double
+type integerMin1Max20 = Double
 
-type integerMin1Max31 = scala.Double
+type integerMin1Max2048 = Double
 
-type integerMin1Max32 = scala.Double
+type integerMin1Max2147483640 = Double
 
-type integerMin1Max4 = scala.Double
+type integerMin1Max2147483647 = Double
 
-type integerMin1Max6 = scala.Double
+type integerMin1Max31 = Double
 
-type integerMin1Max60000 = scala.Double
+type integerMin1Max32 = Double
 
-type integerMin1Max64 = scala.Double
+type integerMin1Max4 = Double
 
-type integerMin22050Max48000 = scala.Double
+type integerMin1Max4096 = Double
 
-type integerMin24Max60000 = scala.Double
+type integerMin1Max512 = Double
 
-type integerMin25Max10000 = scala.Double
+type integerMin1Max6 = Double
 
-type integerMin25Max2000 = scala.Double
+type integerMin1Max60000 = Double
 
-type integerMin2Max2147483647 = scala.Double
+type integerMin1Max64 = Double
 
-type integerMin32000Max192000 = scala.Double
+type integerMin22050Max48000 = Double
 
-type integerMin32000Max384000 = scala.Double
+type integerMin24Max60000 = Double
 
-type integerMin32000Max48000 = scala.Double
+type integerMin25Max10000 = Double
 
-type integerMin32Max8182 = scala.Double
+type integerMin25Max2000 = Double
 
-type integerMin32Max8192 = scala.Double
+type integerMin2Max2147483647 = Double
 
-type integerMin384000Max768000 = scala.Double
+type integerMin2Max4096 = Double
 
-type integerMin3Max15 = scala.Double
+type integerMin32000Max192000 = Double
 
-type integerMin48000Max48000 = scala.Double
+type integerMin32000Max384000 = Double
 
-type integerMin6000Max1024000 = scala.Double
+type integerMin32000Max48000 = Double
 
-type integerMin64000Max640000 = scala.Double
+type integerMin32Max8182 = Double
 
-type integerMin7Max15 = scala.Double
+type integerMin32Max8192 = Double
 
-type integerMin8000Max192000 = scala.Double
+type integerMin384000Max1024000 = Double
 
-type integerMin8000Max96000 = scala.Double
+type integerMin3Max15 = Double
 
-type integerMin96Max600 = scala.Double
+type integerMin48000Max48000 = Double
 
-type integerMinNegative1000Max1000 = scala.Double
+type integerMin4Max12 = Double
 
-type integerMinNegative180Max180 = scala.Double
+type integerMin50Max86400000 = Double
 
-type integerMinNegative1Max10 = scala.Double
+type integerMin6000Max1024000 = Double
 
-type integerMinNegative1Max3 = scala.Double
+type integerMin64000Max640000 = Double
 
-type integerMinNegative2147483648Max2147483647 = scala.Double
+type integerMin8000Max192000 = Double
 
-type integerMinNegative2Max3 = scala.Double
+type integerMin8000Max96000 = Double
 
-type integerMinNegative50Max50 = scala.Double
+type integerMin8Max12 = Double
 
-type integerMinNegative5Max5 = scala.Double
+type integerMin8Max4096 = Double
 
-type integerMinNegative60Max6 = scala.Double
+type integerMin96Max600 = Double
 
-type integerMinNegative70Max0 = scala.Double
+type integerMinNegative1000Max1000 = Double
 
-type listOfAudioDescription = js.Array[typings.awsSdk.mediaconvertMod.AudioDescription]
+type integerMinNegative180Max180 = Double
 
-type listOfCaptionDescription = js.Array[typings.awsSdk.mediaconvertMod.CaptionDescription]
+type integerMinNegative1Max10 = Double
 
-type listOfCaptionDescriptionPreset = js.Array[typings.awsSdk.mediaconvertMod.CaptionDescriptionPreset]
+type integerMinNegative1Max3 = Double
 
-type listOfCmafAdditionalManifest = js.Array[typings.awsSdk.mediaconvertMod.CmafAdditionalManifest]
+type integerMinNegative2147483648Max2147483647 = Double
 
-type listOfDashAdditionalManifest = js.Array[typings.awsSdk.mediaconvertMod.DashAdditionalManifest]
+type integerMinNegative2Max3 = Double
 
-type listOfEndpoint = js.Array[typings.awsSdk.mediaconvertMod.Endpoint]
+type integerMinNegative50Max50 = Double
 
-type listOfHlsAdMarkers = js.Array[typings.awsSdk.mediaconvertMod.HlsAdMarkers]
+type integerMinNegative5Max5 = Double
 
-type listOfHlsAdditionalManifest = js.Array[typings.awsSdk.mediaconvertMod.HlsAdditionalManifest]
+type integerMinNegative60Max6 = Double
 
-type listOfHlsCaptionLanguageMapping = js.Array[typings.awsSdk.mediaconvertMod.HlsCaptionLanguageMapping]
+type integerMinNegative70Max0 = Double
 
-type listOfHopDestination = js.Array[typings.awsSdk.mediaconvertMod.HopDestination]
+type listOfAllowedRenditionSize = js.Array[AllowedRenditionSize]
 
-type listOfId3Insertion = js.Array[typings.awsSdk.mediaconvertMod.Id3Insertion]
+type listOfAudioDescription = js.Array[AudioDescription]
 
-type listOfInput = js.Array[typings.awsSdk.mediaconvertMod.Input]
+type listOfAutomatedAbrRule = js.Array[AutomatedAbrRule]
 
-type listOfInputClipping = js.Array[typings.awsSdk.mediaconvertMod.InputClipping]
+type listOfCaptionDescription = js.Array[CaptionDescription]
 
-type listOfInputTemplate = js.Array[typings.awsSdk.mediaconvertMod.InputTemplate]
+type listOfCaptionDescriptionPreset = js.Array[CaptionDescriptionPreset]
 
-type listOfInsertableImage = js.Array[typings.awsSdk.mediaconvertMod.InsertableImage]
+type listOfCmafAdditionalManifest = js.Array[CmafAdditionalManifest]
 
-type listOfIntegerMin1Max2147483647 = js.Array[typings.awsSdk.mediaconvertMod.integerMin1Max2147483647]
+type listOfDashAdditionalManifest = js.Array[DashAdditionalManifest]
 
-type listOfIntegerMin32Max8182 = js.Array[typings.awsSdk.mediaconvertMod.integerMin32Max8182]
+type listOfDoubleMinNegative60Max6 = js.Array[doubleMinNegative60Max6]
 
-type listOfIntegerMinNegative60Max6 = js.Array[typings.awsSdk.mediaconvertMod.integerMinNegative60Max6]
+type listOfEndpoint = js.Array[Endpoint]
 
-type listOfJob = js.Array[typings.awsSdk.mediaconvertMod.Job]
+type listOfForceIncludeRenditionSize = js.Array[ForceIncludeRenditionSize]
 
-type listOfJobTemplate = js.Array[typings.awsSdk.mediaconvertMod.JobTemplate]
+type listOfHlsAdMarkers = js.Array[HlsAdMarkers]
 
-type listOfMsSmoothAdditionalManifest = js.Array[typings.awsSdk.mediaconvertMod.MsSmoothAdditionalManifest]
+type listOfHlsAdditionalManifest = js.Array[HlsAdditionalManifest]
 
-type listOfOutput = js.Array[typings.awsSdk.mediaconvertMod.Output]
+type listOfHlsCaptionLanguageMapping = js.Array[HlsCaptionLanguageMapping]
 
-type listOfOutputChannelMapping = js.Array[typings.awsSdk.mediaconvertMod.OutputChannelMapping]
+type listOfHopDestination = js.Array[HopDestination]
 
-type listOfOutputDetail = js.Array[typings.awsSdk.mediaconvertMod.OutputDetail]
+type listOfId3Insertion = js.Array[Id3Insertion]
 
-type listOfOutputGroup = js.Array[typings.awsSdk.mediaconvertMod.OutputGroup]
+type listOfInput = js.Array[Input]
 
-type listOfOutputGroupDetail = js.Array[typings.awsSdk.mediaconvertMod.OutputGroupDetail]
+type listOfInputClipping = js.Array[InputClipping]
 
-type listOfPreset = js.Array[typings.awsSdk.mediaconvertMod.Preset]
+type listOfInputTemplate = js.Array[InputTemplate]
 
-type listOfQueue = js.Array[typings.awsSdk.mediaconvertMod.Queue]
+type listOfInsertableImage = js.Array[InsertableImage]
 
-type listOfQueueTransition = js.Array[typings.awsSdk.mediaconvertMod.QueueTransition]
+type listOfIntegerMin1Max2147483647 = js.Array[integerMin1Max2147483647]
 
-type listOfString = js.Array[typings.awsSdk.mediaconvertMod.string]
+type listOfIntegerMin32Max8182 = js.Array[integerMin32Max8182]
 
-type listOfStringMin1 = js.Array[typings.awsSdk.mediaconvertMod.stringMin1]
+type listOfIntegerMinNegative60Max6 = js.Array[integerMinNegative60Max6]
 
-type listOfStringMin36Max36Pattern09aFAF809aFAF409aFAF409aFAF409aFAF12 = js.Array[
-typings.awsSdk.mediaconvertMod.stringMin36Max36Pattern09aFAF809aFAF409aFAF409aFAF409aFAF12]
+type listOfJob = js.Array[Job]
 
-type listOfStringPattern09aFAF809aFAF409aFAF409aFAF409aFAF12 = js.Array[typings.awsSdk.mediaconvertMod.stringPattern09aFAF809aFAF409aFAF409aFAF409aFAF12]
+type listOfJobTemplate = js.Array[JobTemplate]
 
-type listOfStringPatternS3ASSETMAPXml = js.Array[typings.awsSdk.mediaconvertMod.stringPatternS3ASSETMAPXml]
+type listOfMsSmoothAdditionalManifest = js.Array[MsSmoothAdditionalManifest]
 
-type listOfTeletextPageType = js.Array[typings.awsSdk.mediaconvertMod.TeletextPageType]
+type listOfOutput = js.Array[Output]
 
-type mapOfAudioSelector = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.mediaconvertMod.AudioSelector]
+type listOfOutputChannelMapping = js.Array[OutputChannelMapping]
 
-type mapOfAudioSelectorGroup = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.mediaconvertMod.AudioSelectorGroup]
+type listOfOutputDetail = js.Array[OutputDetail]
 
-type mapOfCaptionSelector = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.mediaconvertMod.CaptionSelector]
+type listOfOutputGroup = js.Array[OutputGroup]
 
-type mapOfString = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.mediaconvertMod.string]
+type listOfOutputGroupDetail = js.Array[OutputGroupDetail]
 
-type string = java.lang.String
+type listOfPreset = js.Array[Preset]
 
-type stringMin0 = java.lang.String
+type listOfQueue = js.Array[Queue]
 
-type stringMin1 = java.lang.String
+type listOfQueueTransition = js.Array[QueueTransition]
 
-type stringMin11Max11Pattern01D20305D205D = java.lang.String
+type listOfString = js.Array[string]
 
-type stringMin14Max1285PatternS3Mov09PngHttpsMov09Png = java.lang.String
+type listOfStringMin1 = js.Array[stringMin1]
 
-type stringMin14PatternS3BmpBMPPngPNGHttpsBmpBMPPngPNG = java.lang.String
+type listOfStringMin36Max36Pattern09aFAF809aFAF409aFAF409aFAF409aFAF12 = js.Array[stringMin36Max36Pattern09aFAF809aFAF409aFAF409aFAF409aFAF12]
 
-type stringMin14PatternS3BmpBMPPngPNGTgaTGAHttpsBmpBMPPngPNGTgaTGA = java.lang.String
+type listOfStringPattern09aFAF809aFAF409aFAF409aFAF409aFAF12 = js.Array[stringPattern09aFAF809aFAF409aFAF409aFAF409aFAF12]
 
-type stringMin14PatternS3SccSCCTtmlTTMLDfxpDFXPStlSTLSrtSRTXmlXMLSmiSMIHttpsSccSCCTtmlTTMLDfxpDFXPStlSTLSrtSRTXmlXMLSmiSMI = java.lang.String
+type listOfStringPatternS3ASSETMAPXml = js.Array[stringPatternS3ASSETMAPXml]
 
-type stringMin16Max24PatternAZaZ0922AZaZ0916 = java.lang.String
+type listOfTeletextPageType = js.Array[TeletextPageType]
 
-type stringMin1Max100000 = java.lang.String
+type mapOfAudioSelector = StringDictionary[AudioSelector]
 
-type stringMin1Max20 = java.lang.String
+type mapOfAudioSelectorGroup = StringDictionary[AudioSelectorGroup]
 
-type stringMin1Max256 = java.lang.String
+type mapOfCaptionSelector = StringDictionary[CaptionSelector]
 
-type stringMin1Max50 = java.lang.String
+type mapOfString = StringDictionary[string]
 
-type stringMin24Max512PatternAZaZ0902 = java.lang.String
+type string = String
 
-type stringMin32Max32Pattern09aFAF32 = java.lang.String
+type stringMin0 = String
 
-type stringMin36Max36Pattern09aFAF809aFAF409aFAF409aFAF409aFAF12 = java.lang.String
+type stringMin1 = String
 
-type stringMin3Max3Pattern1809aFAF09aEAE = java.lang.String
+type stringMin11Max11Pattern01D20305D205D = String
 
-type stringMin3Max3PatternAZaZ3 = java.lang.String
+type stringMin14PatternS3BmpBMPPngPNGHttpsBmpBMPPngPNG = String
 
-type stringMin9Max19PatternAZ26EastWestCentralNorthSouthEastWest1912 = java.lang.String
+type stringMin14PatternS3BmpBMPPngPNGTgaTGAHttpsBmpBMPPngPNGTgaTGA = String
 
-type stringPattern = java.lang.String
+type stringMin14PatternS3Mov09PngHttpsMov09Png = String
 
-type stringPattern010920405090509092 = java.lang.String
+type stringMin14PatternS3SccSCCTtmlTTMLDfxpDFXPStlSTLSrtSRTXmlXMLSmiSMIVttVTTWebvttWEBVTTHttpsSccSCCTtmlTTMLDfxpDFXPStlSTLSrtSRTXmlXMLSmiSMIVttVTTWebvttWEBVTT = String
 
-type stringPattern01D20305D205D = java.lang.String
+type stringMin14PatternS3XmlXMLHttpsXmlXML = String
 
-type stringPattern0940191020191209301 = java.lang.String
+type stringMin16Max24PatternAZaZ0922AZaZ0916 = String
 
-type stringPattern09aFAF809aFAF409aFAF409aFAF409aFAF12 = java.lang.String
+type stringMin1Max100000 = String
 
-type stringPattern0xAFaF0908190908 = java.lang.String
+type stringMin1Max20 = String
 
-type stringPatternAZaZ0902 = java.lang.String
+type stringMin1Max256 = String
 
-type stringPatternAZaZ0932 = java.lang.String
+type stringMin1Max50 = String
 
-type stringPatternAZaZ23AZaZ = java.lang.String
+type stringMin1Max50PatternAZAZ09 = String
 
-type stringPatternArnAwsUsGovAcm = java.lang.String
+type stringMin1Max512PatternAZAZ09 = String
 
-type stringPatternArnAwsUsGovCnKmsAZ26EastWestCentralNorthSouthEastWest1912D12KeyAFAF098AFAF094AFAF094AFAF094AFAF0912 = java.lang.String
+type stringMin24Max512PatternAZaZ0902 = String
 
-type stringPatternDD = java.lang.String
+type stringMin32Max32Pattern09aFAF32 = String
 
-type stringPatternHttps = java.lang.String
+type stringMin36Max36Pattern09aFAF809aFAF409aFAF409aFAF409aFAF12 = String
 
-type stringPatternIdentityAZaZ26AZaZ09163 = java.lang.String
+type stringMin3Max3Pattern1809aFAF09aEAE = String
 
-type stringPatternS3 = java.lang.String
+type stringMin3Max3PatternAZaZ3 = String
 
-type stringPatternS3ASSETMAPXml = java.lang.String
+type stringMin6Max8Pattern09aFAF609aFAF2 = String
 
-type stringPatternS3MM2PPMM2VVMMPPEEGGMMPP3AAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMKKAAMMOOVVMMTTSSMM2TTWWMMVVAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVVGGXXFFMM1VV3GG2VVMMFFMM3UU8WWEEBBMMLLCCHHGGXXFFMMPPEEGG2MMXXFFMMPPEEGG2MMXXFFHHDDWWAAVVYY4MMXXMMLLHttpsMM2VVMMPPEEGGMMPP3AAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMKKAAMMOOVVMMTTSSMM2TTWWMMVVAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVVGGXXFFMM1VV3GG2VVMMFFMM3UU8WWEE = java.lang.String
+type stringMin9Max19PatternAZ26EastWestCentralNorthSouthEastWest1912 = String
 
-type stringPatternS3MM2PPWWEEBBMMMM2VVMMPPEEGGMMPP3AAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMKKAAMMOOVVMMTTSSMM2TTWWMMVVAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVVGGXXFFMM1VV3GG2VVMMFFMM3UU8LLCCHHGGXXFFMMPPEEGG2MMXXFFMMPPEEGG2MMXXFFHHDDWWAAVVYY4MMAAAACCAAIIFFFFMMPP2AACC3EECC3DDTTSSEEHttpsMM2VVMMPPEEGGMMPP3AAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMKKAAMMOOVVMMTTSSMM2TTWWMMVVAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVV = java.lang.String
+type stringPattern = String
 
-type stringPatternSNManifestConfirmConditionNotificationNS = java.lang.String
+type stringPattern010920405090509092 = String
 
-type stringPatternSNSignalProcessingNotificationNS = java.lang.String
+type stringPattern01D20305D205D = String
 
-type stringPatternW = java.lang.String
+type stringPattern0940191020191209301 = String
 
-type stringPatternWS = java.lang.String
+type stringPattern09aFAF809aFAF409aFAF409aFAF409aFAF12 = String
 
-type timestampUnix = typings.std.Date
+type stringPattern0xAFaF0908190908 = String
+
+type stringPatternAZaZ0902 = String
+
+type stringPatternAZaZ0932 = String
+
+type stringPatternAZaZ23AZaZ = String
+
+type stringPatternArnAwsUsGovAcm = String
+
+type stringPatternArnAwsUsGovCnKmsAZ26EastWestCentralNorthSouthEastWest1912D12KeyAFAF098AFAF094AFAF094AFAF094AFAF0912MrkAFAF0932 = String
+
+type stringPatternDD = String
+
+type stringPatternHttps = String
+
+type stringPatternHttpsKantarmediaCom = String
+
+type stringPatternIdentityAZaZ26AZaZ09163 = String
+
+type stringPatternS3 = String
+
+type stringPatternS3ASSETMAPXml = String
+
+type stringPatternS3MM2PPMM2VVMMPPEEGGMMPP3AAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMKKAAMMOOVVMMTTSSMM2TTWWMMVVaAAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVVGGXXFFMM1VV3GG2VVMMFFMM3UU8WWEEBBMMLLCCHHGGXXFFMMPPEEGG2MMXXFFMMPPEEGG2MMXXFFHHDDWWAAVVYY4MMXXMMLLOOGGGGaAAATTMMOOSSHttpsMM2VVMMPPEEGGMMPP3AAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMKKAAMMOOVVMMTTSSMM2TTWWMMVVaAAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVVGGXXFFMM1 = String
+
+type stringPatternS3MM2PPWWEEBBMMMM2VVMMPPEEGGMMPP3AAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMKKAAMMOOVVMMTTSSMM2TTWWMMVVaAAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVVGGXXFFMM1VV3GG2VVMMFFMM3UU8LLCCHHGGXXFFMMPPEEGG2MMXXFFMMPPEEGG2MMXXFFHHDDWWAAVVYY4MMAAAACCAAIIFFFFMMPP2AACC3EECC3DDTTSSEEAATTMMOOSSOOGGGGaAHttpsMM2VVMMPPEEGGMMPP3AAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMKKAAMMOOVVMMTTSSMM2TTWWMMVVaAAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDII = String
+
+type stringPatternSNManifestConfirmConditionNotificationNS = String
+
+type stringPatternSNSignalProcessingNotificationNS = String
+
+type stringPatternW = String
+
+type stringPatternWS = String
+
+type timestampUnix = js.Date

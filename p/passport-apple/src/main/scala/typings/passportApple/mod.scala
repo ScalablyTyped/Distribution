@@ -2,8 +2,6 @@ package typings.passportApple
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.express.mod.Request_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.node.httpMod.OutgoingHttpHeaders
 import typings.passportApple.passportAppleBooleans.`false`
 import typings.passportApple.passportAppleBooleans.`true`
@@ -11,7 +9,7 @@ import typings.passportApple.passportAppleStrings.`name email`
 import typings.passportApple.passportAppleStrings.apple
 import typings.passportApple.passportAppleStrings.form_post
 import typings.passportOauth2.mod.StateStore
-import typings.std.Error
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +18,7 @@ object mod {
   
   @JSImport("passport-apple", JSImport.Namespace)
   @js.native
-  class ^ protected () extends AppleStrategy {
+  open class ^ protected () extends AppleStrategy {
     def this(options: AuthenticateOptionsWithRequest, verify: VerifyFunctionWithRequest) = this()
     def this(options: AuthenticateOptions, verify: VerifyFunction) = this()
   }
@@ -108,7 +106,7 @@ object mod {
     
     var privateKeyString: js.UndefOr[String] = js.undefined
     
-    var proxy: js.UndefOr[js.Any] = js.undefined
+    var proxy: js.UndefOr[Any] = js.undefined
     
     var scope: js.UndefOr[String | js.Array[String]] = js.undefined
     
@@ -116,9 +114,9 @@ object mod {
     
     var sessionKey: js.UndefOr[String] = js.undefined
     
-    var skipUserProfile: js.UndefOr[js.Any] = js.undefined
+    var skipUserProfile: js.UndefOr[Any] = js.undefined
     
-    var state: js.UndefOr[js.Any] = js.undefined
+    var state: js.UndefOr[Any] = js.undefined
     
     var store: js.UndefOr[StateStore] = js.undefined
     
@@ -167,7 +165,7 @@ object mod {
       
       inline def setPrivateKeyStringUndefined: Self = StObject.set(x, "privateKeyString", js.undefined)
       
-      inline def setProxy(value: js.Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+      inline def setProxy(value: Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
       
       inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
       
@@ -179,17 +177,17 @@ object mod {
       
       inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value*))
       
       inline def setSessionKey(value: String): Self = StObject.set(x, "sessionKey", value.asInstanceOf[js.Any])
       
       inline def setSessionKeyUndefined: Self = StObject.set(x, "sessionKey", js.undefined)
       
-      inline def setSkipUserProfile(value: js.Any): Self = StObject.set(x, "skipUserProfile", value.asInstanceOf[js.Any])
+      inline def setSkipUserProfile(value: Any): Self = StObject.set(x, "skipUserProfile", value.asInstanceOf[js.Any])
       
       inline def setSkipUserProfileUndefined: Self = StObject.set(x, "skipUserProfile", js.undefined)
       
-      inline def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
       inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
@@ -226,7 +224,7 @@ object mod {
   
   trait DecodedIdToken
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var sub: String
   }
@@ -243,10 +241,10 @@ object mod {
     }
   }
   
-  type Profile = StringDictionary[js.Any]
+  type Profile = StringDictionary[Any]
   
   type VerifyCallback = js.Function3[
-    /* err */ js.UndefOr[Error | Null], 
+    /* err */ js.UndefOr[js.Error | Null], 
     /* user */ js.UndefOr[js.Object], 
     /* info */ js.UndefOr[js.Object], 
     Unit
@@ -262,7 +260,13 @@ object mod {
   ]
   
   type VerifyFunctionWithRequest = js.Function6[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
     /* accessToken */ String, 
     /* refreshToken */ String, 
     /* decodedIdToken */ DecodedIdToken, 

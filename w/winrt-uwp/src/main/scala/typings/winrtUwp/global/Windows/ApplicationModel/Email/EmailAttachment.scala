@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.ApplicationModel.Email.EmailAttachment")
 @js.native
 /** Initializes a new instance of the EmailAttachment class. */
-class EmailAttachment ()
+open class EmailAttachment ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Email.EmailAttachment {
   /**

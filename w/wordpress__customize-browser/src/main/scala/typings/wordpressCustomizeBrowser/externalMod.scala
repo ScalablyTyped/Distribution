@@ -9,46 +9,46 @@ object externalMod {
   
   @JSImport("@wordpress/customize-browser/external", "ImageModel")
   @js.native
-  class ImageModel protected () extends StObject {
+  open class ImageModel protected () extends StObject {
     def this(_underscore: Choice) = this()
   }
   
   trait Attachment extends StObject {
     
-    def get(_underscore: String): js.Any
+    def get(_underscore: String): Any
   }
   object Attachment {
     
-    inline def apply(get: String => js.Any): Attachment = {
+    inline def apply(get: String => Any): Attachment = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
       __obj.asInstanceOf[Attachment]
     }
     
     extension [Self <: Attachment](x: Self) {
       
-      inline def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     }
   }
   
   trait Cropper extends StObject {
     
-    def get(_underscore: String): js.Any
+    def get(_underscore: String): Any
     
     // TODO
-    def set(_1: String, _2: js.Any): Unit
+    def set(_1: String, _2: Any): Unit
   }
   object Cropper {
     
-    inline def apply(get: String => js.Any, set: (String, js.Any) => Unit): Cropper = {
+    inline def apply(get: String => Any, set: (String, Any) => Unit): Cropper = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), set = js.Any.fromFunction2(set))
       __obj.asInstanceOf[Cropper]
     }
     
     extension [Self <: Cropper](x: Self) {
       
-      inline def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      inline def setSet(value: (String, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (String, Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     }
   }
   

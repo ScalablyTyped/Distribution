@@ -1,47 +1,49 @@
 package typings.reactSelect
 
-import typings.react.mod.ComponentType
-import typings.reactSelect.componentsMod.SelectComponents
-import typings.reactSelect.componentsMod.SelectComponentsConfig
-import typings.reactSelect.inputMod.AnimatedInputProps
-import typings.reactSelect.multiValueMod.AnimatedMultiValueProps
-import typings.reactSelect.placeholderMod.AnimatedPlaceholderProps
-import typings.reactSelect.singleValueMod.AnimatedSingleValueProps
-import typings.reactSelect.typesMod.OptionTypeBase
-import typings.reactSelect.valueContainerMod.AnimatedValueContainerProps
+import typings.emotionReact.emotionReactMod.jsx.JSX.Element
+import typings.reactSelect.anon.PartialClearIndicatorOpti
+import typings.reactSelect.componentsInputMod.InputProps
+import typings.reactSelect.componentsMultiValueMod.MultiValueProps
+import typings.reactSelect.componentsPlaceholderMod.PlaceholderProps
+import typings.reactSelect.componentsSingleValueMod.SingleValueProps
+import typings.reactSelect.containersMod.ValueContainerProps
+import typings.reactSelect.typesMod.GroupBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object animatedMod {
   
-  @JSImport("react-select/animated", JSImport.Namespace)
+  @JSImport("react-select/dist/declarations/src/animated", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[OptionType /* <: OptionTypeBase */](): SelectComponents[OptionType] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[SelectComponents[OptionType]]
-  inline def default[OptionType /* <: OptionTypeBase */](externalComponents: SelectComponentsConfig[OptionType]): SelectComponents[OptionType] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(externalComponents.asInstanceOf[js.Any]).asInstanceOf[SelectComponents[OptionType]]
+  inline def default(): PartialClearIndicatorOpti = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[PartialClearIndicatorOpti]
+  inline def default(externalComponents: PartialClearIndicatorOpti): PartialClearIndicatorOpti = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(externalComponents.asInstanceOf[js.Any]).asInstanceOf[PartialClearIndicatorOpti]
   
-  @JSImport("react-select/animated", "Input")
+  @JSImport("react-select/dist/declarations/src/animated", "Input")
   @js.native
-  val Input: ComponentType[AnimatedInputProps] = js.native
+  val Input: js.UndefOr[js.Function1[/* props */ InputProps[Any, Boolean, GroupBase[Any]], Element]] = js.native
   
-  @JSImport("react-select/animated", "MultiValue")
+  @JSImport("react-select/dist/declarations/src/animated", "MultiValue")
   @js.native
-  val MultiValue: ComponentType[AnimatedMultiValueProps[js.Any]] = js.native
+  val MultiValue: js.UndefOr[js.Function1[/* props */ MultiValueProps[Any, Boolean, GroupBase[Any]], Element]] = js.native
   
-  @JSImport("react-select/animated", "Placeholder")
+  @JSImport("react-select/dist/declarations/src/animated", "Placeholder")
   @js.native
-  val Placeholder: ComponentType[AnimatedPlaceholderProps[js.Any]] = js.native
+  val Placeholder: js.UndefOr[
+    js.Function1[/* props */ PlaceholderProps[Any, Boolean, GroupBase[Any]], Element]
+  ] = js.native
   
-  @JSImport("react-select/animated", "SingleValue")
+  @JSImport("react-select/dist/declarations/src/animated", "SingleValue")
   @js.native
-  val SingleValue: ComponentType[AnimatedSingleValueProps[js.Any]] = js.native
+  val SingleValue: js.UndefOr[
+    js.Function1[/* props */ SingleValueProps[Any, Boolean, GroupBase[Any]], Element]
+  ] = js.native
   
-  @JSImport("react-select/animated", "ValueContainer")
+  @JSImport("react-select/dist/declarations/src/animated", "ValueContainer")
   @js.native
-  val ValueContainer: ComponentType[AnimatedValueContainerProps[js.Any]] = js.native
-  
-  inline def makeAnimated[OptionType /* <: OptionTypeBase */](): SelectComponents[OptionType] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeAnimated")().asInstanceOf[SelectComponents[OptionType]]
-  inline def makeAnimated[OptionType /* <: OptionTypeBase */](externalComponents: SelectComponentsConfig[OptionType]): SelectComponents[OptionType] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeAnimated")(externalComponents.asInstanceOf[js.Any]).asInstanceOf[SelectComponents[OptionType]]
+  val ValueContainer: js.UndefOr[
+    js.Function1[/* props */ ValueContainerProps[Any, Boolean, GroupBase[Any]], Element]
+  ] = js.native
 }

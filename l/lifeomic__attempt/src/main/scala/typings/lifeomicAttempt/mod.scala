@@ -104,7 +104,9 @@ object mod {
       
       inline def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
       
-      inline def setHandleError(value: (/* err */ js.Any, /* context */ AttemptContext, /* options */ AttemptOptions[T]) => Unit): Self = StObject.set(x, "handleError", js.Any.fromFunction3(value))
+      inline def setHandleError(
+        value: (/* err */ Any, /* context */ AttemptContext, /* options */ AttemptOptions[T]) => js.Promise[Unit] | Unit
+      ): Self = StObject.set(x, "handleError", js.Any.fromFunction3(value))
       
       inline def setHandleErrorNull: Self = StObject.set(x, "handleError", null)
       
@@ -130,7 +132,12 @@ object mod {
   
   type CalculateDelay[T] = js.Function2[/* context */ AttemptContext, /* options */ AttemptOptions[T], Double]
   
-  type HandleError[T] = js.Function3[/* err */ js.Any, /* context */ AttemptContext, /* options */ AttemptOptions[T], Unit]
+  type HandleError[T] = js.Function3[
+    /* err */ Any, 
+    /* context */ AttemptContext, 
+    /* options */ AttemptOptions[T], 
+    js.Promise[Unit] | Unit
+  ]
   
   type HandleTimeout[T] = js.Function2[/* context */ AttemptContext, /* options */ AttemptOptions[T], js.Promise[T]]
   
@@ -190,7 +197,9 @@ object mod {
       
       inline def setFactorUndefined: Self = StObject.set(x, "factor", js.undefined)
       
-      inline def setHandleError(value: (/* err */ js.Any, /* context */ AttemptContext, /* options */ AttemptOptions[T]) => Unit): Self = StObject.set(x, "handleError", js.Any.fromFunction3(value))
+      inline def setHandleError(
+        value: (/* err */ Any, /* context */ AttemptContext, /* options */ AttemptOptions[T]) => js.Promise[Unit] | Unit
+      ): Self = StObject.set(x, "handleError", js.Any.fromFunction3(value))
       
       inline def setHandleErrorNull: Self = StObject.set(x, "handleError", null)
       

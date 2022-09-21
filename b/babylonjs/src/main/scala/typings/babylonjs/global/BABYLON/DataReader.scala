@@ -1,14 +1,13 @@
 package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.IDataBuffer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.DataReader")
 @js.native
-class DataReader protected ()
+open class DataReader protected ()
   extends StObject
      with typings.babylonjs.BABYLON.DataReader {
   /**
@@ -18,10 +17,10 @@ class DataReader protected ()
   def this(buffer: IDataBuffer) = this()
   
   /* private */ /* CompleteClass */
-  var _dataByteOffset: js.Any = js.native
+  var _dataByteOffset: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _dataView: js.Any = js.native
+  var _dataView: Any = js.native
   
   /**
     * The data buffer associated with this data reader.
@@ -64,7 +63,7 @@ class DataReader protected ()
     * @returns The byte array read
     */
   /* CompleteClass */
-  override def readUint8Array(byteLength: Double): Uint8Array = js.native
+  override def readUint8Array(byteLength: Double): js.typedarray.Uint8Array = js.native
   
   /**
     * Skips the given byte length the currently loaded data range.

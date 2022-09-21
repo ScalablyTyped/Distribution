@@ -14,7 +14,7 @@ trait TerminationHealth extends StObject {
   /**
     * The timestamp, in ISO 8601 format.
     */
-  var Timestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
+  var Timestamp: js.UndefOr[js.Date] = js.undefined
 }
 object TerminationHealth {
   
@@ -29,7 +29,7 @@ object TerminationHealth {
     
     inline def setSourceUndefined: Self = StObject.set(x, "Source", js.undefined)
     
-    inline def setTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
     inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
   }

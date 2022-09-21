@@ -40,7 +40,7 @@ trait AutoCorrect extends StObject {
   
   val OtherCorrectionsExceptions: typings.activexWord.Word.OtherCorrectionsExceptions
   
-  val Parent: js.Any
+  val Parent: Any
   
   var ReplaceText: Boolean
   
@@ -73,7 +73,7 @@ object AutoCorrect {
     HangulAndAlphabetExceptions: HangulAndAlphabetExceptions,
     OtherCorrectionsAutoAdd: Boolean,
     OtherCorrectionsExceptions: OtherCorrectionsExceptions,
-    Parent: js.Any,
+    Parent: Any,
     ReplaceText: Boolean,
     ReplaceTextFromSpellingChecker: Boolean,
     TwoInitialCapsAutoAdd: Boolean,
@@ -121,7 +121,7 @@ object AutoCorrect {
     
     inline def setOtherCorrectionsExceptions(value: OtherCorrectionsExceptions): Self = StObject.set(x, "OtherCorrectionsExceptions", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setReplaceText(value: Boolean): Self = StObject.set(x, "ReplaceText", value.asInstanceOf[js.Any])
     

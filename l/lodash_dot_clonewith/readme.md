@@ -10,10 +10,10 @@ The lodash method `_.cloneWith` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.clonewith |
 | Keywords           | lodash-modularized, clonewith |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 36714 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1366.6666666666667 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

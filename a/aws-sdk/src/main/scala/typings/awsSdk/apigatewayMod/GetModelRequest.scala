@@ -12,12 +12,12 @@ trait GetModelRequest extends StObject {
   var flatten: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * [Required] The name of the model as an identifier.
+    * The name of the model as an identifier.
     */
   var modelName: String
   
   /**
-    * [Required] The RestApi identifier under which the Model exists.
+    * The RestApi identifier under which the Model exists.
     */
   var restApiId: String
 }

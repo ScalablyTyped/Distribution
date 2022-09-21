@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("naver.maps.Feature")
 @js.native
-class Feature protected ()
+open class Feature protected ()
   extends StObject
      with typings.navermaps.naver.maps.Feature {
-  def this(rawFeature: js.Any) = this()
+  def this(rawFeature: Any) = this()
 }

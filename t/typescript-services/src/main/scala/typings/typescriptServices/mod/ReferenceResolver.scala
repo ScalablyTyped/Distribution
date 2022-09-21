@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "ReferenceResolver")
 @js.native
-class ReferenceResolver protected ()
+open class ReferenceResolver protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.ReferenceResolver {
   def this(
@@ -17,43 +17,43 @@ class ReferenceResolver protected ()
   ) = this()
   
   /* private */ /* CompleteClass */
-  override def getNormalizedFilePath(path: js.Any, parentFilePath: js.Any): js.Any = js.native
+  override def getNormalizedFilePath(path: Any, parentFilePath: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def getUniqueFileId(filePath: js.Any): js.Any = js.native
+  override def getUniqueFileId(filePath: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  var host: js.Any = js.native
+  var host: Any = js.native
   
   /* private */ /* CompleteClass */
-  var inputFileNames: js.Any = js.native
+  var inputFileNames: Any = js.native
   
   /* private */ /* CompleteClass */
-  override def isSameFile(filePath1: js.Any, filePath2: js.Any): js.Any = js.native
+  override def isSameFile(filePath1: Any, filePath2: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def isVisited(filePath: js.Any): js.Any = js.native
+  override def isVisited(filePath: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def recordVisitedFile(filePath: js.Any): js.Any = js.native
+  override def recordVisitedFile(filePath: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def resolveFile(normalizedPath: js.Any, resolutionResult: js.Any): js.Any = js.native
+  override def resolveFile(normalizedPath: Any, resolutionResult: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def resolveImportedFile(path: js.Any, referenceLocation: js.Any, resolutionResult: js.Any): js.Any = js.native
+  override def resolveImportedFile(path: Any, referenceLocation: Any, resolutionResult: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def resolveIncludedFile(path: js.Any, referenceLocation: js.Any, resolutionResult: js.Any): js.Any = js.native
+  override def resolveIncludedFile(path: Any, referenceLocation: Any, resolutionResult: Any): Any = js.native
   
   /* CompleteClass */
   override def resolveInputFiles(): typings.typescriptServices.TypeScript.ReferenceResolutionResult = js.native
   
   /* private */ /* CompleteClass */
-  var useCaseSensitiveFileResolution: js.Any = js.native
+  var useCaseSensitiveFileResolution: Any = js.native
   
   /* private */ /* CompleteClass */
-  var visited: js.Any = js.native
+  var visited: Any = js.native
 }
 object ReferenceResolver {
   

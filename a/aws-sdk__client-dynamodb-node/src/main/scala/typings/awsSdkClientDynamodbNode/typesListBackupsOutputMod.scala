@@ -44,7 +44,7 @@ object typesListBackupsOutputMod {
       
       inline def setBackupSummariesUndefined: Self = StObject.set(x, "BackupSummaries", js.undefined)
       
-      inline def setBackupSummariesVarargs(value: UnmarshalledBackupSummary*): Self = StObject.set(x, "BackupSummaries", js.Array(value :_*))
+      inline def setBackupSummariesVarargs(value: UnmarshalledBackupSummary*): Self = StObject.set(x, "BackupSummaries", js.Array(value*))
       
       inline def setLastEvaluatedBackupArn(value: String): Self = StObject.set(x, "LastEvaluatedBackupArn", value.asInstanceOf[js.Any])
       

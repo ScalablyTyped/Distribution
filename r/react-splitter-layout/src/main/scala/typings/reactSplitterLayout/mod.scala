@@ -9,17 +9,17 @@ object mod {
   
   @JSImport("react-splitter-layout", JSImport.Default)
   @js.native
-  class default ()
-    extends PureComponent[SplitterLayoutProps, js.Object, js.Any]
+  open class default ()
+    extends PureComponent[SplitterLayoutProps, js.Object, Any]
   
-  type SplitterLayout = PureComponent[SplitterLayoutProps, js.Object, js.Any]
+  type SplitterLayout = PureComponent[SplitterLayoutProps, js.Object, Any]
   
   trait SplitterLayoutProps extends StObject {
     
     /**
       * Placeholder of the panel(s) inside the splitter
       */
-    var children: js.UndefOr[js.Any] = js.undefined
+    var children: js.UndefOr[Any] = js.undefined
     
     /**
       * Custom CSS class name applied to the layout div.
@@ -113,7 +113,7 @@ object mod {
     
     extension [Self <: SplitterLayoutProps](x: Self) {
       
-      inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       

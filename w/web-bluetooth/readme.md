@@ -10,9 +10,9 @@ Library for interacting with Bluetooth 4.0 devices through the browser.
 | Full name          | web-bluetooth |
 | Keywords           | abstraction, API, ble, bluetooth, browser, client, developer, developer tool, experimental, framework, internet of things, library, web-bluetooth |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 1206 |
-| # stars            | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 236.33333333333334 |
+| # stars            | 210.0 |
 
 ## Links
 - [Homepage](https://github.com/sabertooth-io/web-bluetooth#readme)

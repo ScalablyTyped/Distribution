@@ -10,10 +10,10 @@ JSX assertions for Chai using Algolia's react-element-to-jsx-string
 | ------------------ | :-------------: |
 | Full name          | jsx-chai |
 | Keywords           | chai, testing, assertions, jsx, react |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 9724 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4262.666666666667 |
+| # stars            | 35.0 |
 
 ## Links
 - [Homepage](https://github.com/bkonkle/jsx-chai#readme)

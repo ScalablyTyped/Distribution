@@ -15,13 +15,13 @@ object createHigherOrderComponentMod {
   // tslint:disable:no-unnecessary-generics
   // prettier-ignore
   inline def default[EP](
-    mapComponentToEnhancedComponent: js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]],
+    mapComponentToEnhancedComponent: js.Function1[/* component */ ComponentType[Any], ComponentType[Any]],
     modifierName: String
   ): js.Function1[
-    /* component */ ComponentType[js.Any], 
-    ComponentType[Omit[js.Any, /* keyof EP */ String]]
+    /* component */ ComponentType[Any], 
+    ComponentType[Omit[Any, /* keyof EP */ String]]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(mapComponentToEnhancedComponent.asInstanceOf[js.Any], modifierName.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-    /* component */ ComponentType[js.Any], 
-    ComponentType[Omit[js.Any, /* keyof EP */ String]]
+    /* component */ ComponentType[Any], 
+    ComponentType[Omit[Any, /* keyof EP */ String]]
   ]]
 }

@@ -8,7 +8,7 @@ object global {
   
   @JSGlobal("FirebaseTokenGenerator")
   @js.native
-  class FirebaseTokenGenerator protected ()
+  open class FirebaseTokenGenerator protected ()
     extends StObject
        with typings.firebaseTokenGenerator.FirebaseTokenGenerator {
     /**

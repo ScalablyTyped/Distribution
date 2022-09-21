@@ -26,7 +26,7 @@ object TargetHttpProxiesScopedList {
     
     inline def setTargetHttpProxiesUndefined: Self = StObject.set(x, "targetHttpProxies", js.undefined)
     
-    inline def setTargetHttpProxiesVarargs(value: TargetHttpProxy*): Self = StObject.set(x, "targetHttpProxies", js.Array(value :_*))
+    inline def setTargetHttpProxiesVarargs(value: TargetHttpProxy*): Self = StObject.set(x, "targetHttpProxies", js.Array(value*))
     
     inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     

@@ -1,5 +1,6 @@
 package typings.activexLibreoffice.com_.sun.star.chart2.data
 
+import typings.activexLibreoffice.com_.sun.star.view.XSelectionChangeListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,21 +43,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * **values-max **: the maximum value of a series of values. In a stock-chart this would be the highest course that occurred during trading.
   */
-type DataSequenceRole = java.lang.String
+type DataSequenceRole = String
 
 /** describes a service that allows reading two-dimensional data in the form of a sequence of DataSequences. */
-type DataSink = typings.activexLibreoffice.com_.sun.star.chart2.data.XDataSink
+type DataSink = XDataSink
 
 /** describes a service that allows reading two-dimensional data in the form of a sequence of DataSequences. */
-type DataSource = typings.activexLibreoffice.com_.sun.star.chart2.data.XDataSource
+type DataSource = XDataSource
 
 /** describes a container for a sequence pair of value-sequences, one for a label and one for the associated data. */
-type LabeledDataSequence = typings.activexLibreoffice.com_.sun.star.chart2.data.XLabeledDataSequence2
+type LabeledDataSequence = XLabeledDataSequence2
 
 /**
   * A selection change listener that is attached to a {@link XRangeHighlighter} in order to get notified about selection changes that affect range
   * highlighting.
   */
-type RangeHighlightListener = typings.activexLibreoffice.com_.sun.star.view.XSelectionChangeListener
+type RangeHighlightListener = XSelectionChangeListener
 
-type RangeHighlighter = typings.activexLibreoffice.com_.sun.star.chart2.data.XRangeHighlighter
+type RangeHighlighter = XRangeHighlighter

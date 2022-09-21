@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JQueryStatic extends StObject {
   
   def Widget(methodName: String): JQuery
-  def Widget(optionLiteral: String, optionName: String): js.Any
-  def Widget(optionLiteral: String, optionName: String, optionValue: js.Any): JQuery
-  def Widget(optionLiteral: String, options: WidgetOptions): js.Any
+  def Widget(optionLiteral: String, optionName: String): Any
+  def Widget(optionLiteral: String, optionName: String, optionValue: Any): JQuery
+  def Widget(optionLiteral: String, options: WidgetOptions): Any
   def Widget(options: AccordionOptions): JQuery
   def Widget(options: WidgetOptions): JQuery
   def Widget[T](name: String, base: js.Function, prototype: T & (ThisType[T & WidgetCommonProperties])): JQuery
@@ -25,9 +25,9 @@ trait JQueryStatic extends StObject {
   var Widget_Original: Widget
   
   def datepicker(methodName: String): JQuery
-  def datepicker(optionLiteral: String, optionName: String): js.Any
-  def datepicker(optionLiteral: String, optionName: String, optionValue: js.Any): JQuery
-  def datepicker(optionLiteral: String, options: WidgetOptions): js.Any
+  def datepicker(optionLiteral: String, optionName: String): Any
+  def datepicker(optionLiteral: String, optionName: String, optionValue: Any): JQuery
+  def datepicker(optionLiteral: String, options: WidgetOptions): Any
   def datepicker(options: AccordionOptions): JQuery
   def datepicker(options: WidgetOptions): JQuery
   def datepicker[T](name: String, base: js.Function, prototype: T & (ThisType[T & WidgetCommonProperties])): JQuery
@@ -38,9 +38,9 @@ trait JQueryStatic extends StObject {
   var ui: UI
   
   def widget(methodName: String): JQuery
-  def widget(optionLiteral: String, optionName: String): js.Any
-  def widget(optionLiteral: String, optionName: String, optionValue: js.Any): JQuery
-  def widget(optionLiteral: String, options: WidgetOptions): js.Any
+  def widget(optionLiteral: String, optionName: String): Any
+  def widget(optionLiteral: String, optionName: String, optionValue: Any): JQuery
+  def widget(optionLiteral: String, options: WidgetOptions): Any
   def widget(options: AccordionOptions): JQuery
   def widget(options: WidgetOptions): JQuery
   def widget[T](name: String, base: js.Function, prototype: T & (ThisType[T & WidgetCommonProperties])): JQuery

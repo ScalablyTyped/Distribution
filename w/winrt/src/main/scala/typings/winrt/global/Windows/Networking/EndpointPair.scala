@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Windows.Networking.EndpointPair")
 @js.native
-class EndpointPair protected ()
+open class EndpointPair protected ()
   extends StObject
      with typings.winrt.Windows.Networking.EndpointPair {
   def this(

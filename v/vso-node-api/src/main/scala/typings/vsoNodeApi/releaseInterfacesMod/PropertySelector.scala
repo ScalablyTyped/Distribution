@@ -21,7 +21,7 @@ object PropertySelector {
     
     inline def setProperties(value: js.Array[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    inline def setPropertiesVarargs(value: String*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: String*): Self = StObject.set(x, "properties", js.Array(value*))
     
     inline def setSelectorType(value: PropertySelectorType): Self = StObject.set(x, "selectorType", value.asInstanceOf[js.Any])
   }

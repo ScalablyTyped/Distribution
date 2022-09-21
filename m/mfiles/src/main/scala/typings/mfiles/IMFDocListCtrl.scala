@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IMFDocListCtrl extends StObject {
   
-  def AttachToListingWindow(shellListing: js.Any): Unit
+  def AttachToListingWindow(shellListing: Any): Unit
 }
 object IMFDocListCtrl {
   
-  inline def apply(AttachToListingWindow: js.Any => Unit): IMFDocListCtrl = {
+  inline def apply(AttachToListingWindow: Any => Unit): IMFDocListCtrl = {
     val __obj = js.Dynamic.literal(AttachToListingWindow = js.Any.fromFunction1(AttachToListingWindow))
     __obj.asInstanceOf[IMFDocListCtrl]
   }
   
   extension [Self <: IMFDocListCtrl](x: Self) {
     
-    inline def setAttachToListingWindow(value: js.Any => Unit): Self = StObject.set(x, "AttachToListingWindow", js.Any.fromFunction1(value))
+    inline def setAttachToListingWindow(value: Any => Unit): Self = StObject.set(x, "AttachToListingWindow", js.Any.fromFunction1(value))
   }
 }

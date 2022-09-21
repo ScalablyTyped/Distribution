@@ -35,7 +35,7 @@ object IntSet {
     
     inline def setArray(value: js.Array[Double]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     
-    inline def setArrayVarargs(value: Double*): Self = StObject.set(x, "array", js.Array(value :_*))
+    inline def setArrayVarargs(value: Double*): Self = StObject.set(x, "array", js.Array(value*))
     
     inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     

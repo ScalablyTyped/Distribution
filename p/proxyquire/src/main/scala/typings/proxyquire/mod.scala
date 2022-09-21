@@ -14,13 +14,13 @@ object mod extends Shortcut {
   @js.native
   trait Proxyquire extends StObject {
     
-    def apply(request: String, stubs: js.Any): js.Any = js.native
+    def apply(request: String, stubs: Any): Any = js.native
     
     def callThru(): Proxyquire = js.native
     
-    def load(request: String, stubs: js.Any): js.Any = js.native
+    def load(request: String, stubs: Any): Any = js.native
     @JSName("load")
-    def load_T_T[T](request: String, stubs: js.Any): T = js.native
+    def load_T_T[T](request: String, stubs: Any): T = js.native
     
     def noCallThru(): Proxyquire = js.native
     

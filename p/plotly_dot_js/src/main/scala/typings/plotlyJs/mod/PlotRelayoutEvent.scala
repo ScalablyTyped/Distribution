@@ -9,6 +9,7 @@ import typings.plotlyJs.anon.PartialLayoutAxisAnchor
 import typings.plotlyJs.anon.PartialLegend
 import typings.plotlyJs.anon.PartialMapbox
 import typings.plotlyJs.anon.PartialMargin
+import typings.plotlyJs.anon.PartialModeBar
 import typings.plotlyJs.anon.PartialPolarLayout
 import typings.plotlyJs.anon.PartialScene
 import typings.plotlyJs.anon.PartialShape
@@ -22,10 +23,13 @@ import typings.plotlyJs.plotlyJsStrings.`y unified`
 import typings.plotlyJs.plotlyJsStrings.any
 import typings.plotlyJs.plotlyJsStrings.closest
 import typings.plotlyJs.plotlyJsStrings.d
+import typings.plotlyJs.plotlyJsStrings.event
+import typings.plotlyJs.plotlyJsStrings.eventPlussignselect
 import typings.plotlyJs.plotlyJsStrings.fraction
 import typings.plotlyJs.plotlyJsStrings.group
 import typings.plotlyJs.plotlyJsStrings.h
 import typings.plotlyJs.plotlyJsStrings.lasso
+import typings.plotlyJs.plotlyJsStrings.none
 import typings.plotlyJs.plotlyJsStrings.orbit
 import typings.plotlyJs.plotlyJsStrings.overlay
 import typings.plotlyJs.plotlyJsStrings.pan
@@ -59,11 +63,19 @@ trait PlotRelayoutEvent extends StObject {
   
   var barnorm: js.UndefOr[_empty | fraction | percent] = js.undefined
   
+  var boxmode: js.UndefOr[group | overlay] = js.undefined
+  
   var calendar: js.UndefOr[Calendar] = js.undefined
+  
+  var clickmode: js.UndefOr[event | select | eventPlussignselect | none] = js.undefined
   
   var colorway: js.UndefOr[js.Array[String]] = js.undefined
   
+  var datarevision: js.UndefOr[Double | String] = js.undefined
+  
   var dragmode: js.UndefOr[zoom | pan | select | lasso | orbit | turntable | `false`] = js.undefined
+  
+  var editrevision: js.UndefOr[Double | String] = js.undefined
   
   var font: js.UndefOr[PartialFont] = js.undefined
   
@@ -90,6 +102,8 @@ trait PlotRelayoutEvent extends StObject {
   var mapbox: js.UndefOr[PartialMapbox] = js.undefined
   
   var margin: js.UndefOr[PartialMargin] = js.undefined
+  
+  var modebar: js.UndefOr[PartialModeBar] = js.undefined
   
   var orientation: js.UndefOr[Double] = js.undefined
   
@@ -121,6 +135,8 @@ trait PlotRelayoutEvent extends StObject {
   
   var selectdirection: js.UndefOr[h | v | d | any] = js.undefined
   
+  var selectionrevision: js.UndefOr[Double | String] = js.undefined
+  
   var separators: js.UndefOr[String] = js.undefined
   
   var shapes: js.UndefOr[js.Array[PartialShape]] = js.undefined
@@ -140,6 +156,8 @@ trait PlotRelayoutEvent extends StObject {
   var titlefont: js.UndefOr[PartialFont] = js.undefined
   
   var transition: js.UndefOr[Transition] = js.undefined
+  
+  var uirevision: js.UndefOr[Double | String] = js.undefined
   
   var updatemenus: js.UndefOr[js.Object] = js.undefined
   
@@ -234,7 +252,7 @@ object PlotRelayoutEvent {
     
     inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
     
-    inline def setAnnotationsVarargs(value: PartialAnnotationsAlign*): Self = StObject.set(x, "annotations", js.Array(value :_*))
+    inline def setAnnotationsVarargs(value: PartialAnnotationsAlign*): Self = StObject.set(x, "annotations", js.Array(value*))
     
     inline def setAutosize(value: Boolean): Self = StObject.set(x, "autosize", value.asInstanceOf[js.Any])
     
@@ -256,19 +274,35 @@ object PlotRelayoutEvent {
     
     inline def setBarnormUndefined: Self = StObject.set(x, "barnorm", js.undefined)
     
+    inline def setBoxmode(value: group | overlay): Self = StObject.set(x, "boxmode", value.asInstanceOf[js.Any])
+    
+    inline def setBoxmodeUndefined: Self = StObject.set(x, "boxmode", js.undefined)
+    
     inline def setCalendar(value: Calendar): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
     
     inline def setCalendarUndefined: Self = StObject.set(x, "calendar", js.undefined)
+    
+    inline def setClickmode(value: event | select | eventPlussignselect | none): Self = StObject.set(x, "clickmode", value.asInstanceOf[js.Any])
+    
+    inline def setClickmodeUndefined: Self = StObject.set(x, "clickmode", js.undefined)
     
     inline def setColorway(value: js.Array[String]): Self = StObject.set(x, "colorway", value.asInstanceOf[js.Any])
     
     inline def setColorwayUndefined: Self = StObject.set(x, "colorway", js.undefined)
     
-    inline def setColorwayVarargs(value: String*): Self = StObject.set(x, "colorway", js.Array(value :_*))
+    inline def setColorwayVarargs(value: String*): Self = StObject.set(x, "colorway", js.Array(value*))
+    
+    inline def setDatarevision(value: Double | String): Self = StObject.set(x, "datarevision", value.asInstanceOf[js.Any])
+    
+    inline def setDatarevisionUndefined: Self = StObject.set(x, "datarevision", js.undefined)
     
     inline def setDragmode(value: zoom | pan | select | lasso | orbit | turntable | `false`): Self = StObject.set(x, "dragmode", value.asInstanceOf[js.Any])
     
     inline def setDragmodeUndefined: Self = StObject.set(x, "dragmode", js.undefined)
+    
+    inline def setEditrevision(value: Double | String): Self = StObject.set(x, "editrevision", value.asInstanceOf[js.Any])
+    
+    inline def setEditrevisionUndefined: Self = StObject.set(x, "editrevision", js.undefined)
     
     inline def setFont(value: PartialFont): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
@@ -290,7 +324,7 @@ object PlotRelayoutEvent {
     
     inline def setHiddenlabelsUndefined: Self = StObject.set(x, "hiddenlabels", js.undefined)
     
-    inline def setHiddenlabelsVarargs(value: String*): Self = StObject.set(x, "hiddenlabels", js.Array(value :_*))
+    inline def setHiddenlabelsVarargs(value: String*): Self = StObject.set(x, "hiddenlabels", js.Array(value*))
     
     inline def setHidesources(value: Boolean): Self = StObject.set(x, "hidesources", value.asInstanceOf[js.Any])
     
@@ -312,7 +346,7 @@ object PlotRelayoutEvent {
     
     inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
     
-    inline def setImagesVarargs(value: PartialImage*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: PartialImage*): Self = StObject.set(x, "images", js.Array(value*))
     
     inline def setLegend(value: PartialLegend): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
@@ -326,6 +360,10 @@ object PlotRelayoutEvent {
     
     inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
+    inline def setModebar(value: PartialModeBar): Self = StObject.set(x, "modebar", value.asInstanceOf[js.Any])
+    
+    inline def setModebarUndefined: Self = StObject.set(x, "modebar", js.undefined)
+    
     inline def setOrientation(value: Double): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
     inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
@@ -334,13 +372,13 @@ object PlotRelayoutEvent {
     
     inline def setPaper_bgcolorUndefined: Self = StObject.set(x, "paper_bgcolor", js.undefined)
     
-    inline def setPaper_bgcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "paper_bgcolor", js.Array(value :_*))
+    inline def setPaper_bgcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "paper_bgcolor", js.Array(value*))
     
     inline def setPlot_bgcolor(value: Color): Self = StObject.set(x, "plot_bgcolor", value.asInstanceOf[js.Any])
     
     inline def setPlot_bgcolorUndefined: Self = StObject.set(x, "plot_bgcolor", js.undefined)
     
-    inline def setPlot_bgcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "plot_bgcolor", js.Array(value :_*))
+    inline def setPlot_bgcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "plot_bgcolor", js.Array(value*))
     
     inline def setPolar(value: PartialPolarLayout): Self = StObject.set(x, "polar", value.asInstanceOf[js.Any])
     
@@ -390,6 +428,10 @@ object PlotRelayoutEvent {
     
     inline def setSelectdirectionUndefined: Self = StObject.set(x, "selectdirection", js.undefined)
     
+    inline def setSelectionrevision(value: Double | String): Self = StObject.set(x, "selectionrevision", value.asInstanceOf[js.Any])
+    
+    inline def setSelectionrevisionUndefined: Self = StObject.set(x, "selectionrevision", js.undefined)
+    
     inline def setSeparators(value: String): Self = StObject.set(x, "separators", value.asInstanceOf[js.Any])
     
     inline def setSeparatorsUndefined: Self = StObject.set(x, "separators", js.undefined)
@@ -398,7 +440,7 @@ object PlotRelayoutEvent {
     
     inline def setShapesUndefined: Self = StObject.set(x, "shapes", js.undefined)
     
-    inline def setShapesVarargs(value: PartialShape*): Self = StObject.set(x, "shapes", js.Array(value :_*))
+    inline def setShapesVarargs(value: PartialShape*): Self = StObject.set(x, "shapes", js.Array(value*))
     
     inline def setShowlegend(value: Boolean): Self = StObject.set(x, "showlegend", value.asInstanceOf[js.Any])
     
@@ -408,7 +450,7 @@ object PlotRelayoutEvent {
     
     inline def setSlidersUndefined: Self = StObject.set(x, "sliders", js.undefined)
     
-    inline def setSlidersVarargs(value: PartialSlider*): Self = StObject.set(x, "sliders", js.Array(value :_*))
+    inline def setSlidersVarargs(value: PartialSlider*): Self = StObject.set(x, "sliders", js.Array(value*))
     
     inline def setSubplot(value: String): Self = StObject.set(x, "subplot", value.asInstanceOf[js.Any])
     
@@ -433,6 +475,10 @@ object PlotRelayoutEvent {
     inline def setTransition(value: Transition): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
     
     inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
+    
+    inline def setUirevision(value: Double | String): Self = StObject.set(x, "uirevision", value.asInstanceOf[js.Any])
+    
+    inline def setUirevisionUndefined: Self = StObject.set(x, "uirevision", js.undefined)
     
     inline def setUpdatemenus(value: js.Object): Self = StObject.set(x, "updatemenus", value.asInstanceOf[js.Any])
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SharedWorkspaceTask extends StObject {
   
-  val Application: js.Any
+  val Application: Any
   
   var AssignedTo: String
   
@@ -30,7 +30,7 @@ trait SharedWorkspaceTask extends StObject {
   /* private */ @JSName("Office.SharedWorkspaceTask_typekey")
   var OfficeDotSharedWorkspaceTask_typekey: SharedWorkspaceTask
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Priority: MsoSharedWorkspaceTaskPriority
   
@@ -43,7 +43,7 @@ trait SharedWorkspaceTask extends StObject {
 object SharedWorkspaceTask {
   
   inline def apply(
-    Application: js.Any,
+    Application: Any,
     AssignedTo: String,
     CreatedBy: String,
     CreatedDate: VarDate,
@@ -54,7 +54,7 @@ object SharedWorkspaceTask {
     ModifiedBy: String,
     ModifiedDate: VarDate,
     OfficeDotSharedWorkspaceTask_typekey: SharedWorkspaceTask,
-    Parent: js.Any,
+    Parent: Any,
     Priority: MsoSharedWorkspaceTaskPriority,
     Save: () => Unit,
     Status: MsoSharedWorkspaceTaskStatus,
@@ -67,7 +67,7 @@ object SharedWorkspaceTask {
   
   extension [Self <: SharedWorkspaceTask](x: Self) {
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setAssignedTo(value: String): Self = StObject.set(x, "AssignedTo", value.asInstanceOf[js.Any])
     
@@ -89,7 +89,7 @@ object SharedWorkspaceTask {
     
     inline def setOfficeDotSharedWorkspaceTask_typekey(value: SharedWorkspaceTask): Self = StObject.set(x, "Office.SharedWorkspaceTask_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPriority(value: MsoSharedWorkspaceTaskPriority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     

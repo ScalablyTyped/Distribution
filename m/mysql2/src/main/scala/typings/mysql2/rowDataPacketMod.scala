@@ -11,8 +11,8 @@ object rowDataPacketMod {
   
   trait RowDataPacket
     extends StObject
-       with /* column */ NumberDictionary[js.Any]
-       with /* column */ StringDictionary[js.Any] {
+       with /* column */ NumberDictionary[Any]
+       with /* column */ StringDictionary[Any] {
     
     var constructor: `3`
   }

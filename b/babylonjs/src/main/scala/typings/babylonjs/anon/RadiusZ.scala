@@ -24,6 +24,8 @@ trait RadiusZ extends StObject {
   var sideOrientation: js.UndefOr[Double] = js.undefined
   
   var subdivisions: js.UndefOr[Double] = js.undefined
+  
+  var updatable: js.UndefOr[Boolean] = js.undefined
 }
 object RadiusZ {
   
@@ -69,5 +71,9 @@ object RadiusZ {
     inline def setSubdivisions(value: Double): Self = StObject.set(x, "subdivisions", value.asInstanceOf[js.Any])
     
     inline def setSubdivisionsUndefined: Self = StObject.set(x, "subdivisions", js.undefined)
+    
+    inline def setUpdatable(value: Boolean): Self = StObject.set(x, "updatable", value.asInstanceOf[js.Any])
+    
+    inline def setUpdatableUndefined: Self = StObject.set(x, "updatable", js.undefined)
   }
 }

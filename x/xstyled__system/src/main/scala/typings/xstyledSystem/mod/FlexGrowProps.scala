@@ -1,16 +1,13 @@
 package typings.xstyledSystem.mod
 
+import typings.csstype.mod.Property.FlexGrow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait FlexGrowProps extends StObject {
   
-  val flexGrow: js.UndefOr[
-    ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexGrow */ js.Any
-    ]
-  ] = js.undefined
+  val flexGrow: js.UndefOr[ResponsiveValue[FlexGrow]] = js.undefined
 }
 object FlexGrowProps {
   
@@ -21,16 +18,10 @@ object FlexGrowProps {
   
   extension [Self <: FlexGrowProps](x: Self) {
     
-    inline def setFlexGrow(
-      value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexGrow */ js.Any
-        ]
-    ): Self = StObject.set(x, "flexGrow", value.asInstanceOf[js.Any])
+    inline def setFlexGrow(value: ResponsiveValue[FlexGrow]): Self = StObject.set(x, "flexGrow", value.asInstanceOf[js.Any])
     
     inline def setFlexGrowUndefined: Self = StObject.set(x, "flexGrow", js.undefined)
     
-    inline def setFlexGrowVarargs(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexGrow */ js.Any)*
-    ): Self = StObject.set(x, "flexGrow", js.Array(value :_*))
+    inline def setFlexGrowVarargs(value: FlexGrow*): Self = StObject.set(x, "flexGrow", js.Array(value*))
   }
 }

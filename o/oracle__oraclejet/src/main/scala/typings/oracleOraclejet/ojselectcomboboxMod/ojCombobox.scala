@@ -16,14 +16,14 @@ trait ojCombobox[V, SP /* <: ojComboboxSettableProperties[V, SV, RV] */, SV, RV]
      with editableValue[V, SP, SV, RV] {
   
   @JSName("onOjAnimateEnd")
-  var onOjAnimateEnd_ojCombobox: (js.Function1[/* event */ ojAnimateEnd, js.Any]) | Null = js.native
+  var onOjAnimateEnd_ojCombobox: (js.Function1[/* event */ ojAnimateEnd, Any]) | Null = js.native
   
   @JSName("onOjAnimateStart")
-  var onOjAnimateStart_ojCombobox: (js.Function1[/* event */ ojAnimateStart, js.Any]) | Null = js.native
+  var onOjAnimateStart_ojCombobox: (js.Function1[/* event */ ojAnimateStart, Any]) | Null = js.native
   
   def setProperties(properties: ojComboboxSettablePropertiesLenient[V, SV, RV]): Unit = js.native
   
-  def validate(): js.Promise[js.Any] = js.native
+  def validate(): js.Promise[Any] = js.native
 }
 object ojCombobox {
   
@@ -60,7 +60,7 @@ object ojCombobox {
       
       inline def setChildrenVarargs(
         value: (typings.oracleOraclejet.ojselectcomboboxMod.ojCombobox.Option | typings.oracleOraclejet.ojselectcomboboxMod.ojCombobox.Optgroup)*
-      ): Self = StObject.set(x, "children", js.Array(value :_*))
+      ): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -77,11 +77,11 @@ object ojCombobox {
     
     var label: js.UndefOr[String] = js.undefined
     
-    var value: js.Any
+    var value: Any
   }
   object Option {
     
-    inline def apply(value: js.Any): typings.oracleOraclejet.ojselectcomboboxMod.ojCombobox.Option = {
+    inline def apply(value: Any): typings.oracleOraclejet.ojselectcomboboxMod.ojCombobox.Option = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.oracleOraclejet.ojselectcomboboxMod.ojCombobox.Option]
     }
@@ -96,7 +96,7 @@ object ojCombobox {
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

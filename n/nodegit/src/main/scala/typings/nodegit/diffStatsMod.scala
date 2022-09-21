@@ -10,7 +10,7 @@ object diffStatsMod {
   
   @JSImport("nodegit/diff-stats", "DiffStats")
   @js.native
-  class DiffStats () extends StObject {
+  open class DiffStats () extends StObject {
     
     /**
       * @returns - total number of deletions in the diff

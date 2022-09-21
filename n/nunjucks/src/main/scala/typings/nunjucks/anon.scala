@@ -1,5 +1,8 @@
 package typings.nunjucks
 
+import org.scalablytyped.runtime.Instantiable0
+import typings.nunjucks.mod.ILoader
+import typings.nunjucks.mod.Loader
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -116,5 +119,38 @@ object anon {
       
       inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     }
+  }
+  
+  trait NoCache extends StObject {
+    
+    var noCache: Boolean
+    
+    var path: String
+    
+    var src: String
+  }
+  object NoCache {
+    
+    inline def apply(noCache: Boolean, path: String, src: String): NoCache = {
+      val __obj = js.Dynamic.literal(noCache = noCache.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
+      __obj.asInstanceOf[NoCache]
+    }
+    
+    extension [Self <: NoCache](x: Self) {
+      
+      inline def setNoCache(value: Boolean): Self = StObject.set(x, "noCache", value.asInstanceOf[js.Any])
+      
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  @js.native
+  trait TypeofLoader
+    extends StObject
+       with Instantiable0[Loader] {
+    
+    def extend[LoaderClass /* <: /* import warning: importer.ImportType#apply Failed type conversion: typeof Loader */ js.Any */](toExtend: ILoader): LoaderClass = js.native
   }
 }

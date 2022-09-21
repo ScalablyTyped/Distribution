@@ -13,7 +13,7 @@ object csvDatasetMod {
   
   @JSImport("@tensorflow/tfjs-data/dist/datasets/csv_dataset", "CSVDataset")
   @js.native
-  class CSVDataset protected () extends Dataset[TensorContainer] {
+  open class CSVDataset protected () extends Dataset[TensorContainer] {
     /**
       * Create a `CSVDataset`.
       *
@@ -51,7 +51,7 @@ object csvDatasetMod {
     
     var base: TextLineDataset = js.native
     
-    /* private */ var columnConfigs: js.Any = js.native
+    /* private */ var columnConfigs: Any = js.native
     
     /**
       * Returns column names of the csv dataset. If `configuredColumnsOnly` is
@@ -65,28 +65,28 @@ object csvDatasetMod {
       */
     def columnNames(): js.Promise[js.Array[String]] = js.native
     
-    /* private */ var columnNamesValidated: js.Any = js.native
+    /* private */ var columnNamesValidated: Any = js.native
     
-    /* private */ var configuredColumnsOnly: js.Any = js.native
+    /* private */ var configuredColumnsOnly: Any = js.native
     
-    /* private */ var delimWhitespace: js.Any = js.native
+    /* private */ var delimWhitespace: Any = js.native
     
-    /* private */ var delimiter: js.Any = js.native
+    /* private */ var delimiter: Any = js.native
     
-    /* private */ var fullColumnNames: js.Any = js.native
+    /* private */ var fullColumnNames: Any = js.native
     
-    /* private */ var getBoolean: js.Any = js.native
+    /* private */ var getBoolean: Any = js.native
     
-    /* private */ var hasHeader: js.Any = js.native
+    /* private */ var hasHeader: Any = js.native
     
     /* protected */ val input: DataSource = js.native
     
     def makeDataElement(line: String): TensorContainer = js.native
     
-    /* private */ var maybeReadHeaderLine: js.Any = js.native
+    /* private */ var maybeReadHeaderLine: Any = js.native
     
-    /* private */ var parseRow: js.Any = js.native
+    /* private */ var parseRow: Any = js.native
     
-    /* private */ var setColumnNames: js.Any = js.native
+    /* private */ var setColumnNames: Any = js.native
   }
 }

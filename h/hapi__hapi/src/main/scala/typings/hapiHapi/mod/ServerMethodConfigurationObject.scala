@@ -9,7 +9,7 @@ trait ServerMethodConfigurationObject extends StObject {
   /**
     * the method function.
     */
-  def method(args: js.Any*): js.Any
+  def method(args: Any*): Any
   /**
     * the method function.
     */

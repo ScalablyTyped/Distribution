@@ -35,14 +35,14 @@ trait XDispatchHelper
     TargetFrameName: String,
     SearchFlags: Double,
     Arguments: SeqEquiv[PropertyValue]
-  ): js.Any
+  ): Any
 }
 object XDispatchHelper {
   
   inline def apply(
     acquire: () => Unit,
-    executeDispatch: (XDispatchProvider, String, String, Double, SeqEquiv[PropertyValue]) => js.Any,
-    queryInterface: `type` => js.Any,
+    executeDispatch: (XDispatchProvider, String, String, Double, SeqEquiv[PropertyValue]) => Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XDispatchHelper = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), executeDispatch = js.Any.fromFunction5(executeDispatch), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -51,6 +51,6 @@ object XDispatchHelper {
   
   extension [Self <: XDispatchHelper](x: Self) {
     
-    inline def setExecuteDispatch(value: (XDispatchProvider, String, String, Double, SeqEquiv[PropertyValue]) => js.Any): Self = StObject.set(x, "executeDispatch", js.Any.fromFunction5(value))
+    inline def setExecuteDispatch(value: (XDispatchProvider, String, String, Double, SeqEquiv[PropertyValue]) => Any): Self = StObject.set(x, "executeDispatch", js.Any.fromFunction5(value))
   }
 }

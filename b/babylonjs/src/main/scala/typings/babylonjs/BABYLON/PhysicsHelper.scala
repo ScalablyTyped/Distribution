@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PhysicsHelper extends StObject {
   
-  /* private */ var _physicsEngine: js.Any = js.native
+  /* private */ var _physicsEngine: Any = js.native
   
-  /* private */ var _scene: js.Any = js.native
+  /* private */ var _scene: Any = js.native
   
   /**
     * Applies a radial explosion force

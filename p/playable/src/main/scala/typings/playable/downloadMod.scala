@@ -13,43 +13,43 @@ object downloadMod {
   
   @JSImport("playable/dist/src/modules/ui/controls/download/download", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with DownloadButton {
     def this(hasEventEmitterTextMapTooltipServiceTheme: TextMap) = this()
     
     /* private */ /* CompleteClass */
-    var _bindCallbacks: js.Any = js.native
+    var _bindCallbacks: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _callback: js.Any = js.native
+    var _callback: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _destroyInterceptor: js.Any = js.native
+    var _destroyInterceptor: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _eventEmitter: js.Any = js.native
+    var _eventEmitter: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _initInterceptor: js.Any = js.native
+    var _initInterceptor: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _initUI: js.Any = js.native
+    var _initUI: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _interceptor: js.Any = js.native
+    var _interceptor: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _textMap: js.Any = js.native
+    var _textMap: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _theme: js.Any = js.native
+    var _theme: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _tooltipService: js.Any = js.native
+    var _tooltipService: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _triggerCallback: js.Any = js.native
+    var _triggerCallback: Any = js.native
     
     /* CompleteClass */
     override def destroy(): Unit = js.native
@@ -81,7 +81,7 @@ object downloadMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("playable/dist/src/modules/ui/controls/download/download", "default.View")
     @js.native
-    class View protected ()
+    open class View protected ()
       extends typings.playable.downloadViewMod.default {
       def this(config: IDownloadViewConfig) = this()
     }
@@ -109,27 +109,27 @@ object downloadMod {
     extends StObject
        with IDownloadButton {
     
-    /* private */ var _bindCallbacks: js.Any
+    /* private */ var _bindCallbacks: Any
     
-    /* private */ var _callback: js.Any
+    /* private */ var _callback: Any
     
-    /* private */ var _destroyInterceptor: js.Any
+    /* private */ var _destroyInterceptor: Any
     
-    /* private */ var _eventEmitter: js.Any
+    /* private */ var _eventEmitter: Any
     
-    /* private */ var _initInterceptor: js.Any
+    /* private */ var _initInterceptor: Any
     
-    /* private */ var _initUI: js.Any
+    /* private */ var _initUI: Any
     
-    /* private */ var _interceptor: js.Any
+    /* private */ var _interceptor: Any
     
-    /* private */ var _textMap: js.Any
+    /* private */ var _textMap: Any
     
-    /* private */ var _theme: js.Any
+    /* private */ var _theme: Any
     
-    /* private */ var _tooltipService: js.Any
+    /* private */ var _tooltipService: Any
     
-    /* private */ var _triggerCallback: js.Any
+    /* private */ var _triggerCallback: Any
     
     var isHidden: Boolean
     
@@ -138,17 +138,17 @@ object downloadMod {
   object DownloadButton {
     
     inline def apply(
-      _bindCallbacks: js.Any,
-      _callback: js.Any,
-      _destroyInterceptor: js.Any,
-      _eventEmitter: js.Any,
-      _initInterceptor: js.Any,
-      _initUI: js.Any,
-      _interceptor: js.Any,
-      _textMap: js.Any,
-      _theme: js.Any,
-      _tooltipService: js.Any,
-      _triggerCallback: js.Any,
+      _bindCallbacks: Any,
+      _callback: Any,
+      _destroyInterceptor: Any,
+      _eventEmitter: Any,
+      _initInterceptor: Any,
+      _initUI: Any,
+      _interceptor: Any,
+      _textMap: Any,
+      _theme: Any,
+      _tooltipService: Any,
+      _triggerCallback: Any,
       destroy: () => Unit,
       getElement: () => HTMLElement,
       hide: () => Unit,
@@ -167,27 +167,27 @@ object downloadMod {
       
       inline def setView(value: typings.playable.downloadViewMod.default): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
       
-      inline def set_bindCallbacks(value: js.Any): Self = StObject.set(x, "_bindCallbacks", value.asInstanceOf[js.Any])
+      inline def set_bindCallbacks(value: Any): Self = StObject.set(x, "_bindCallbacks", value.asInstanceOf[js.Any])
       
-      inline def set_callback(value: js.Any): Self = StObject.set(x, "_callback", value.asInstanceOf[js.Any])
+      inline def set_callback(value: Any): Self = StObject.set(x, "_callback", value.asInstanceOf[js.Any])
       
-      inline def set_destroyInterceptor(value: js.Any): Self = StObject.set(x, "_destroyInterceptor", value.asInstanceOf[js.Any])
+      inline def set_destroyInterceptor(value: Any): Self = StObject.set(x, "_destroyInterceptor", value.asInstanceOf[js.Any])
       
-      inline def set_eventEmitter(value: js.Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
+      inline def set_eventEmitter(value: Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
       
-      inline def set_initInterceptor(value: js.Any): Self = StObject.set(x, "_initInterceptor", value.asInstanceOf[js.Any])
+      inline def set_initInterceptor(value: Any): Self = StObject.set(x, "_initInterceptor", value.asInstanceOf[js.Any])
       
-      inline def set_initUI(value: js.Any): Self = StObject.set(x, "_initUI", value.asInstanceOf[js.Any])
+      inline def set_initUI(value: Any): Self = StObject.set(x, "_initUI", value.asInstanceOf[js.Any])
       
-      inline def set_interceptor(value: js.Any): Self = StObject.set(x, "_interceptor", value.asInstanceOf[js.Any])
+      inline def set_interceptor(value: Any): Self = StObject.set(x, "_interceptor", value.asInstanceOf[js.Any])
       
-      inline def set_textMap(value: js.Any): Self = StObject.set(x, "_textMap", value.asInstanceOf[js.Any])
+      inline def set_textMap(value: Any): Self = StObject.set(x, "_textMap", value.asInstanceOf[js.Any])
       
-      inline def set_theme(value: js.Any): Self = StObject.set(x, "_theme", value.asInstanceOf[js.Any])
+      inline def set_theme(value: Any): Self = StObject.set(x, "_theme", value.asInstanceOf[js.Any])
       
-      inline def set_tooltipService(value: js.Any): Self = StObject.set(x, "_tooltipService", value.asInstanceOf[js.Any])
+      inline def set_tooltipService(value: Any): Self = StObject.set(x, "_tooltipService", value.asInstanceOf[js.Any])
       
-      inline def set_triggerCallback(value: js.Any): Self = StObject.set(x, "_triggerCallback", value.asInstanceOf[js.Any])
+      inline def set_triggerCallback(value: Any): Self = StObject.set(x, "_triggerCallback", value.asInstanceOf[js.Any])
     }
   }
 }

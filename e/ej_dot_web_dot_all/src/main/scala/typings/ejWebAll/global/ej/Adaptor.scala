@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.Adaptor")
 @js.native
-class Adaptor protected ()
+open class Adaptor protected ()
   extends StObject
      with typings.ejWebAll.ej.Adaptor {
-  def this(ds: js.Any) = this()
+  def this(ds: Any) = this()
 }

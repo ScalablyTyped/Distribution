@@ -17,11 +17,11 @@ trait ASPxClientReportParameterInfo extends StObject {
   /**
     * Provides access to a parameter value on the client.
     */
-  var Value: js.Any
+  var Value: Any
 }
 object ASPxClientReportParameterInfo {
   
-  inline def apply(Path: String, Value: js.Any): ASPxClientReportParameterInfo = {
+  inline def apply(Path: String, Value: Any): ASPxClientReportParameterInfo = {
     val __obj = js.Dynamic.literal(Path = Path.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientReportParameterInfo]
   }
@@ -30,6 +30,6 @@ object ASPxClientReportParameterInfo {
     
     inline def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

@@ -10,10 +10,10 @@ Parity's native market reporting protocol
 | ------------------ | :-------------: |
 | Full name          | parity-pmr |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 457 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 54.666666666666664 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/paritytrading/node-parity-pmr#readme)

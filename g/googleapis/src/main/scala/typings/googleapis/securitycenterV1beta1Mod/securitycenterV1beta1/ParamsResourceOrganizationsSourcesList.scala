@@ -1,9 +1,5 @@
 package typings.googleapis.securitycenterV1beta1Mod.securitycenterV1beta1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,26 +9,17 @@ trait ParamsResourceOrganizationsSourcesList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * The maximum number of results to return in a single response. Default is
-    * 10, minimum is 1, maximum is 1000.
+    * The maximum number of results to return in a single response. Default is 10, minimum is 1, maximum is 1000.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * The value returned by the last `ListSourcesResponse`; indicates that this
-    * is a continuation of a prior `ListSources` call, and that the system
-    * should return the next page of data.
+    * The value returned by the last `ListSourcesResponse`; indicates that this is a continuation of a prior `ListSources` call, and that the system should return the next page of data.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * Resource name of the parent of sources to list. Its format should be
-    * "organizations/[organization_id]".
+    * Required. Resource name of the parent of sources to list. Its format should be "organizations/[organization_id]".
     */
   var parent: js.UndefOr[String] = js.undefined
 }
@@ -44,10 +31,6 @@ object ParamsResourceOrganizationsSourcesList {
   }
   
   extension [Self <: ParamsResourceOrganizationsSourcesList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     

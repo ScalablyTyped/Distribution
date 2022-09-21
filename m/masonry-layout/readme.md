@@ -11,14 +11,12 @@ Cascading grid layout library
 | Full name          | masonry-layout |
 | Keywords           | DOM, browser, grid, layout, outlayer |
 | # releases         | 1 |
-| # dependents       | 127 |
-| # downloads        | 4833326 |
-| # stars            | 16 |
+| # dependents       | 0.0 |
+| # downloads        | 684712.0 |
+| # stars            | 15704.0 |
 
 ## Links
 - [Homepage](https://masonry.desandro.com)
-- [Bugs](https://github.com/desandro/masonry/issues)
-- [Repository](https://github.com/desandro/masonry)
 - [Npm](https://www.npmjs.com/package/masonry-layout)
     
 

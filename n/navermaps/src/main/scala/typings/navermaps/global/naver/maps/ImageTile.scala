@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("naver.maps.ImageTile")
 @js.native
-class ImageTile protected ()
+open class ImageTile protected ()
   extends StObject
      with typings.navermaps.naver.maps.ImageTile {
   def this(imageTileOptions: ImageTileOptions) = this()

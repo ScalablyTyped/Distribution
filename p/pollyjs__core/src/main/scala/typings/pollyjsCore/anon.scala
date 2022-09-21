@@ -39,7 +39,7 @@ object anon {
   
   trait Body extends StObject {
     
-    var body: js.UndefOr[Boolean | (MatchBy[js.Any, js.Any])] = js.undefined
+    var body: js.UndefOr[Boolean | (MatchBy[Any, Any])] = js.undefined
     
     var headers: js.UndefOr[Boolean | Exclude | (MatchBy[Headers, Headers])] = js.undefined
     
@@ -58,9 +58,9 @@ object anon {
     
     extension [Self <: Body](x: Self) {
       
-      inline def setBody(value: Boolean | (MatchBy[js.Any, js.Any])): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: Boolean | (MatchBy[Any, Any])): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      inline def setBodyFunction2(value: (js.Any, /* req */ Request) => js.Any): Self = StObject.set(x, "body", js.Any.fromFunction2(value))
+      inline def setBodyFunction2(value: (Any, /* req */ Request) => Any): Self = StObject.set(x, "body", js.Any.fromFunction2(value))
       
       inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
@@ -90,7 +90,7 @@ object anon {
   
   trait Context extends StObject {
     
-    var context: js.UndefOr[js.Any] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
   }
   object Context {
     
@@ -101,7 +101,7 @@ object anon {
     
     extension [Self <: Context](x: Self) {
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     }
@@ -109,7 +109,7 @@ object anon {
   
   trait Dictkey
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var fetch: js.UndefOr[Context] = js.undefined
     
@@ -142,7 +142,7 @@ object anon {
   
   trait DisableSortingHarEntries
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var disableSortingHarEntries: js.UndefOr[Boolean] = js.undefined
     
@@ -200,7 +200,7 @@ object anon {
       
       inline def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
-      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value*))
     }
   }
   
@@ -218,7 +218,7 @@ object anon {
     
     var protocol: js.UndefOr[Boolean | (MatchBy[String, String])] = js.undefined
     
-    var query: js.UndefOr[Boolean | (MatchBy[StringDictionary[js.Any], StringDictionary[js.Any]])] = js.undefined
+    var query: js.UndefOr[Boolean | (MatchBy[StringDictionary[Any], StringDictionary[Any]])] = js.undefined
     
     var username: js.UndefOr[Boolean | (MatchBy[String, String])] = js.undefined
   }
@@ -267,9 +267,9 @@ object anon {
       
       inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
       
-      inline def setQuery(value: Boolean | (MatchBy[StringDictionary[js.Any], StringDictionary[js.Any]])): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Boolean | (MatchBy[StringDictionary[Any], StringDictionary[Any]])): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      inline def setQueryFunction2(value: (StringDictionary[js.Any], /* req */ Request) => StringDictionary[js.Any]): Self = StObject.set(x, "query", js.Any.fromFunction2(value))
+      inline def setQueryFunction2(value: (StringDictionary[Any], /* req */ Request) => StringDictionary[Any]): Self = StObject.set(x, "query", js.Any.fromFunction2(value))
       
       inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
@@ -283,7 +283,7 @@ object anon {
   
   trait Key extends StObject {
     
-    var context: js.UndefOr[js.Any] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
     
     var key: js.UndefOr[String] = js.undefined
   }
@@ -296,7 +296,7 @@ object anon {
     
     extension [Self <: Key](x: Self) {
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
@@ -308,7 +308,7 @@ object anon {
   
   trait Page extends StObject {
     
-    var page: js.UndefOr[js.Any] = js.undefined
+    var page: js.UndefOr[Any] = js.undefined
     
     var requestResourceTypes: js.UndefOr[js.Array[String]] = js.undefined
   }
@@ -321,7 +321,7 @@ object anon {
     
     extension [Self <: Page](x: Self) {
       
-      inline def setPage(value: js.Any): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      inline def setPage(value: Any): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
       inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
       
@@ -329,7 +329,7 @@ object anon {
       
       inline def setRequestResourceTypesUndefined: Self = StObject.set(x, "requestResourceTypes", js.undefined)
       
-      inline def setRequestResourceTypesVarargs(value: String*): Self = StObject.set(x, "requestResourceTypes", js.Array(value :_*))
+      inline def setRequestResourceTypesVarargs(value: String*): Self = StObject.set(x, "requestResourceTypes", js.Array(value*))
     }
   }
   

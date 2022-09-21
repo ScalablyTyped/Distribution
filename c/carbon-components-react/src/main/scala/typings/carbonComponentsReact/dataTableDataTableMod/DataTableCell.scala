@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DataTableCell[V, H /* <: DataTableHeader[String] */] extends StObject {
   
-  var errors: js.UndefOr[js.Array[js.Any] | Null] = js.undefined
+  var errors: js.UndefOr[js.Array[Any] | Null] = js.undefined
   
   var id: String
   
@@ -30,13 +30,13 @@ object DataTableCell {
   
   extension [Self <: DataTableCell[?, ?], V, H /* <: DataTableHeader[String] */](x: Self & (DataTableCell[V, H])) {
     
-    inline def setErrors(value: js.Array[js.Any]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: js.Array[Any]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
     inline def setErrorsNull: Self = StObject.set(x, "errors", null)
     
     inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    inline def setErrorsVarargs(value: js.Any*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: Any*): Self = StObject.set(x, "errors", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

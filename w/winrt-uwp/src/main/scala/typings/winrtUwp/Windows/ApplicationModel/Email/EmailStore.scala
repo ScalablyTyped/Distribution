@@ -30,7 +30,7 @@ trait EmailStore extends StObject {
     * Gets all mailboxes within the current scope.
     * @return A collection of mailboxes.
     */
-  def findMailboxesAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+  def findMailboxesAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
   
   /**
     * Gets an email conversation from the provided identifier.

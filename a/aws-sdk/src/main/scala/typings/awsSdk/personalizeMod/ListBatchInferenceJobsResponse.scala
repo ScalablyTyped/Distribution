@@ -12,7 +12,7 @@ trait ListBatchInferenceJobsResponse extends StObject {
   var batchInferenceJobs: js.UndefOr[BatchInferenceJobs] = js.undefined
   
   /**
-    * The token to use to retreive the next page of results. The value is null when there are no more results to return.
+    * The token to use to retrieve the next page of results. The value is null when there are no more results to return.
     */
   var nextToken: js.UndefOr[NextToken] = js.undefined
 }
@@ -29,7 +29,7 @@ object ListBatchInferenceJobsResponse {
     
     inline def setBatchInferenceJobsUndefined: Self = StObject.set(x, "batchInferenceJobs", js.undefined)
     
-    inline def setBatchInferenceJobsVarargs(value: BatchInferenceJobSummary*): Self = StObject.set(x, "batchInferenceJobs", js.Array(value :_*))
+    inline def setBatchInferenceJobsVarargs(value: BatchInferenceJobSummary*): Self = StObject.set(x, "batchInferenceJobs", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

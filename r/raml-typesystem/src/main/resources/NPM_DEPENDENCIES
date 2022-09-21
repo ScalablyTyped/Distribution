@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "raml-typesystem" : "0.0.96"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "raml-typesystem" : "0.0.96"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DeviceTypeAssignedTargetingOptionDetails extends StObject {
   
-  /** Output only. The display name of the device type. */
+  /** The display name of the device type. Output only in v1. Required in v2. */
   var deviceType: js.UndefOr[String] = js.undefined
   
   /** Required. ID of the device type. */

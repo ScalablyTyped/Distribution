@@ -14,7 +14,11 @@ trait RecordTABLE2defaultRangePAmpm extends StObject {
   
   var day: RangePatterns
   
+  var dayPeriod: RangePatterns
+  
   var era: RangePatterns
+  
+  var fractionalSecondDigits: RangePatterns
   
   var hour: RangePatterns
   
@@ -31,15 +35,17 @@ object RecordTABLE2defaultRangePAmpm {
   inline def apply(
     ampm: RangePatterns,
     day: RangePatterns,
+    dayPeriod: RangePatterns,
     default: RangePatterns,
     era: RangePatterns,
+    fractionalSecondDigits: RangePatterns,
     hour: RangePatterns,
     minute: RangePatterns,
     month: RangePatterns,
     second: RangePatterns,
     year: RangePatterns
   ): RecordTABLE2defaultRangePAmpm = {
-    val __obj = js.Dynamic.literal(ampm = ampm.asInstanceOf[js.Any], day = day.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], era = era.asInstanceOf[js.Any], hour = hour.asInstanceOf[js.Any], minute = minute.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any], second = second.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(ampm = ampm.asInstanceOf[js.Any], day = day.asInstanceOf[js.Any], dayPeriod = dayPeriod.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], era = era.asInstanceOf[js.Any], fractionalSecondDigits = fractionalSecondDigits.asInstanceOf[js.Any], hour = hour.asInstanceOf[js.Any], minute = minute.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any], second = second.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecordTABLE2defaultRangePAmpm]
   }
   
@@ -49,9 +55,13 @@ object RecordTABLE2defaultRangePAmpm {
     
     inline def setDay(value: RangePatterns): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     
+    inline def setDayPeriod(value: RangePatterns): Self = StObject.set(x, "dayPeriod", value.asInstanceOf[js.Any])
+    
     inline def setDefault(value: RangePatterns): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     inline def setEra(value: RangePatterns): Self = StObject.set(x, "era", value.asInstanceOf[js.Any])
+    
+    inline def setFractionalSecondDigits(value: RangePatterns): Self = StObject.set(x, "fractionalSecondDigits", value.asInstanceOf[js.Any])
     
     inline def setHour(value: RangePatterns): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
     

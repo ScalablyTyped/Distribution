@@ -7,35 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FileSystemWatcher extends StObject {
   
   /**
-    * The  glob pattern to watch. Glob patterns can have the following syntax:
-    * - `*` to match one or more characters in a path segment
-    * - `?` to match on one character in a path segment
-    * - `**` to match any number of path segments, including none
-    * - `{}` to group conditions (e.g. `**​/ *.{ts,js}` matches all TypeScript and JavaScript files)
-    * - `[]` to declare a range of characters to match in a path segment (e.g., `example.[0-9]` to match on `example.0`, `example.1`, …)
-    * - `[!...]` to negate a range of characters to match in a path segment (e.g., `example.[!0-9]` to match on `example.a`, `example.b`, but not `example.0`)
+    * The glob pattern to watch. See {@link GlobPattern glob pattern} for more detail.
+    *
+    * @since 3.17.0 support for relative patterns.
     */
-  var globPattern: String
+  var globPattern: GlobPattern
   
   /**
     * The kind of events of interest. If omitted it defaults
     * to WatchKind.Create | WatchKind.Change | WatchKind.Delete
     * which is 7.
     */
-  var kind: js.UndefOr[Double] = js.undefined
+  var kind: js.UndefOr[WatchKind] = js.undefined
 }
 object FileSystemWatcher {
   
-  inline def apply(globPattern: String): FileSystemWatcher = {
+  inline def apply(globPattern: GlobPattern): FileSystemWatcher = {
     val __obj = js.Dynamic.literal(globPattern = globPattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileSystemWatcher]
   }
   
   extension [Self <: FileSystemWatcher](x: Self) {
     
-    inline def setGlobPattern(value: String): Self = StObject.set(x, "globPattern", value.asInstanceOf[js.Any])
+    inline def setGlobPattern(value: GlobPattern): Self = StObject.set(x, "globPattern", value.asInstanceOf[js.Any])
     
-    inline def setKind(value: Double): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: WatchKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }

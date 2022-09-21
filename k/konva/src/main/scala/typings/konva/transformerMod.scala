@@ -10,15 +10,16 @@ import typings.konva.rectMod.Rect
 import typings.konva.typesMod.GetSet
 import typings.konva.typesMod.IRect
 import typings.konva.typesMod.Vector2d
+import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transformerMod {
   
-  @JSImport("konva/types/shapes/Transformer", "Transformer")
+  @JSImport("konva/lib/shapes/Transformer", "Transformer")
   @js.native
-  class Transformer () extends Group {
+  open class Transformer () extends Group {
     def this(config: TransformerConfig) = this()
     
     def __getNodeRect(): RotationWidth = js.native
@@ -30,9 +31,9 @@ object transformerMod {
     
     var _anchorDragOffset: Vector2d = js.native
     
-    def _batchChangeChild(selector: String, attrs: js.Any): Unit = js.native
+    def _batchChangeChild(selector: String, attrs: Any): Unit = js.native
     
-    def _createAnchor(name: js.Any): Unit = js.native
+    def _createAnchor(name: Any): Unit = js.native
     
     def _createBack(): Unit = js.native
     
@@ -40,15 +41,18 @@ object transformerMod {
     
     var _cursorChange: Boolean = js.native
     
-    def _fitNodesInto(newAttrs: js.Any, evt: js.Any): Unit = js.native
+    def _fitNodesInto(newAttrs: Any): Unit = js.native
+    def _fitNodesInto(newAttrs: Any, evt: Any): Unit = js.native
     
-    def _getNodeRect(): js.Any = js.native
+    def _getEventNamespace(): String = js.native
     
-    def _handleMouseDown(e: js.Any): Unit = js.native
+    def _getNodeRect(): Any = js.native
     
-    def _handleMouseMove(e: js.Any): Unit = js.native
+    def _handleMouseDown(e: Any): Unit = js.native
     
-    def _handleMouseUp(e: js.Any): Unit = js.native
+    def _handleMouseMove(e: Any): Unit = js.native
+    
+    def _handleMouseUp(e: Any): Unit = js.native
     
     var _movingAnchorName: String = js.native
     
@@ -57,7 +61,7 @@ object transformerMod {
     def _proxyDrag(node: Node[NodeConfig]): Unit = js.native
     
     def _removeEvents(): Unit = js.native
-    def _removeEvents(e: js.Any): Unit = js.native
+    def _removeEvents(e: Any): Unit = js.native
     
     def _resetTransformCache(): Unit = js.native
     
@@ -67,6 +71,14 @@ object transformerMod {
     def anchorCornerRadius(v: Double): this.type = js.native
     @JSName("anchorCornerRadius")
     var anchorCornerRadius_Original: GetSet[Double, this.type] = js.native
+    
+    def anchorDragBoundFunc(): js.Function3[/* oldPos */ Vector2d, /* newPos */ Vector2d, /* e */ MouseEvent, Vector2d] = js.native
+    def anchorDragBoundFunc(v: js.Function3[/* oldPos */ Vector2d, /* newPos */ Vector2d, /* e */ MouseEvent, Vector2d]): this.type = js.native
+    @JSName("anchorDragBoundFunc")
+    var anchorDragBoundFunc_Original: GetSet[
+        js.Function3[/* oldPos */ Vector2d, /* newPos */ Vector2d, /* e */ MouseEvent, Vector2d], 
+        this.type
+      ] = js.native
     
     def anchorFill(): String = js.native
     def anchorFill(v: String): this.type = js.native
@@ -89,7 +101,7 @@ object transformerMod {
     @JSName("anchorStroke")
     var anchorStroke_Original: GetSet[String, this.type] = js.native
     
-    def attachTo(node: js.Any): this.type = js.native
+    def attachTo(node: Any): this.type = js.native
     
     def borderDash(): js.Array[Double] = js.native
     def borderDash(v: js.Array[Double]): this.type = js.native
@@ -131,21 +143,26 @@ object transformerMod {
     @JSName("enabledAnchors")
     var enabledAnchors_Original: GetSet[js.Array[String], this.type] = js.native
     
+    def flipEnabled(): Boolean = js.native
+    def flipEnabled(v: Boolean): this.type = js.native
+    @JSName("flipEnabled")
+    var flipEnabled_Original: GetSet[Boolean, this.type] = js.native
+    
     def forceUpdate(): Unit = js.native
     
     def getActiveAnchor(): String = js.native
     
-    def getHeight(): js.Any = js.native
+    def getHeight(): Any = js.native
     
     def getNode(): Node[NodeConfig] = js.native
     
     def getNodes(): js.Array[Node[NodeConfig]] = js.native
     
-    def getWidth(): js.Any = js.native
+    def getWidth(): Any = js.native
     
-    def getX(): js.Any = js.native
+    def getX(): Any = js.native
     
-    def getY(): js.Any = js.native
+    def getY(): Any = js.native
     
     def ignoreStroke(): Boolean = js.native
     def ignoreStroke(v: Boolean): this.type = js.native
@@ -194,7 +211,7 @@ object transformerMod {
     @JSName("rotationSnaps")
     var rotationSnaps_Original: GetSet[js.Array[Double], this.type] = js.native
     
-    def setNode(node: js.Any): this.type = js.native
+    def setNode(node: Any): this.type = js.native
     
     def setNodes(): this.type = js.native
     def setNodes(nodes: js.Array[Node[NodeConfig]]): this.type = js.native
@@ -209,6 +226,11 @@ object transformerMod {
     def stopTransform(): Unit = js.native
     
     def update(): Unit = js.native
+    
+    def useSingleNodeRotation(): Boolean = js.native
+    def useSingleNodeRotation(v: Boolean): this.type = js.native
+    @JSName("useSingleNodeRotation")
+    var useSingleNodeRotation_Original: GetSet[Boolean, this.type] = js.native
   }
   
   trait Box
@@ -234,6 +256,8 @@ object transformerMod {
     extends StObject
        with ContainerConfig {
     
+    var anchorCornerRadius: js.UndefOr[Double] = js.undefined
+    
     var anchorFill: js.UndefOr[String] = js.undefined
     
     var anchorSize: js.UndefOr[Double] = js.undefined
@@ -256,6 +280,8 @@ object transformerMod {
     
     var enabledAnchors: js.UndefOr[js.Array[String]] = js.undefined
     
+    var flipEnabled: js.UndefOr[Boolean] = js.undefined
+    
     var ignoreStroke: js.UndefOr[Boolean] = js.undefined
     
     var keepRatio: js.UndefOr[Boolean] = js.undefined
@@ -271,6 +297,10 @@ object transformerMod {
     var rotationSnapTolerance: js.UndefOr[Double] = js.undefined
     
     var rotationSnaps: js.UndefOr[js.Array[Double]] = js.undefined
+    
+    var shouldOverdrawWholeArea: js.UndefOr[Boolean] = js.undefined
+    
+    var useSingleNodeRotation: js.UndefOr[Boolean] = js.undefined
   }
   object TransformerConfig {
     
@@ -280,6 +310,10 @@ object transformerMod {
     }
     
     extension [Self <: TransformerConfig](x: Self) {
+      
+      inline def setAnchorCornerRadius(value: Double): Self = StObject.set(x, "anchorCornerRadius", value.asInstanceOf[js.Any])
+      
+      inline def setAnchorCornerRadiusUndefined: Self = StObject.set(x, "anchorCornerRadius", js.undefined)
       
       inline def setAnchorFill(value: String): Self = StObject.set(x, "anchorFill", value.asInstanceOf[js.Any])
       
@@ -301,7 +335,7 @@ object transformerMod {
       
       inline def setBorderDashUndefined: Self = StObject.set(x, "borderDash", js.undefined)
       
-      inline def setBorderDashVarargs(value: Double*): Self = StObject.set(x, "borderDash", js.Array(value :_*))
+      inline def setBorderDashVarargs(value: Double*): Self = StObject.set(x, "borderDash", js.Array(value*))
       
       inline def setBorderEnabled(value: Boolean): Self = StObject.set(x, "borderEnabled", value.asInstanceOf[js.Any])
       
@@ -327,7 +361,11 @@ object transformerMod {
       
       inline def setEnabledAnchorsUndefined: Self = StObject.set(x, "enabledAnchors", js.undefined)
       
-      inline def setEnabledAnchorsVarargs(value: String*): Self = StObject.set(x, "enabledAnchors", js.Array(value :_*))
+      inline def setEnabledAnchorsVarargs(value: String*): Self = StObject.set(x, "enabledAnchors", js.Array(value*))
+      
+      inline def setFlipEnabled(value: Boolean): Self = StObject.set(x, "flipEnabled", value.asInstanceOf[js.Any])
+      
+      inline def setFlipEnabledUndefined: Self = StObject.set(x, "flipEnabled", js.undefined)
       
       inline def setIgnoreStroke(value: Boolean): Self = StObject.set(x, "ignoreStroke", value.asInstanceOf[js.Any])
       
@@ -361,7 +399,15 @@ object transformerMod {
       
       inline def setRotationSnapsUndefined: Self = StObject.set(x, "rotationSnaps", js.undefined)
       
-      inline def setRotationSnapsVarargs(value: Double*): Self = StObject.set(x, "rotationSnaps", js.Array(value :_*))
+      inline def setRotationSnapsVarargs(value: Double*): Self = StObject.set(x, "rotationSnaps", js.Array(value*))
+      
+      inline def setShouldOverdrawWholeArea(value: Boolean): Self = StObject.set(x, "shouldOverdrawWholeArea", value.asInstanceOf[js.Any])
+      
+      inline def setShouldOverdrawWholeAreaUndefined: Self = StObject.set(x, "shouldOverdrawWholeArea", js.undefined)
+      
+      inline def setUseSingleNodeRotation(value: Boolean): Self = StObject.set(x, "useSingleNodeRotation", value.asInstanceOf[js.Any])
+      
+      inline def setUseSingleNodeRotationUndefined: Self = StObject.set(x, "useSingleNodeRotation", js.undefined)
     }
   }
 }

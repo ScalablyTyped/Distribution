@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("guacamole-client", "AudioRecorder")
 @js.native
-class AudioRecorder ()
+open class AudioRecorder ()
   extends typings.guacamoleClient.audioRecorderMod.AudioRecorder
 /* static members */
 object AudioRecorder {

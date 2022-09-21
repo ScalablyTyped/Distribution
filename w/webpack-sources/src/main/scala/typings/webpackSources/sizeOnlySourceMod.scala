@@ -8,7 +8,7 @@ object sizeOnlySourceMod {
   
   @JSImport("webpack-sources/lib/SizeOnlySource", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends typings.webpackSources.sourceMod.^ {
     def this(size: Double) = this()
   }

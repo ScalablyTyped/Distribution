@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("writable-consumable-stream", JSImport.Namespace)
   @js.native
-  class ^[T] () extends WritableConsumableStream[T]
+  open class ^[T] () extends WritableConsumableStream[T]
   
   @js.native
   trait WritableConsumableStream[T]

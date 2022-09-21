@@ -12,7 +12,7 @@ trait ListStackSetOperationResultsOutput extends StObject {
   var NextToken: js.UndefOr[typings.awsSdk.cloudformationMod.NextToken] = js.undefined
   
   /**
-    * A list of StackSetOperationResultSummary structures that contain information about the specified operation results, for accounts and Regions that are included in the operation.
+    * A list of StackSetOperationResultSummary structures that contain information about the specified operation results, for accounts and Amazon Web Services Regions that are included in the operation.
     */
   var Summaries: js.UndefOr[StackSetOperationResultSummaries] = js.undefined
 }
@@ -33,6 +33,6 @@ object ListStackSetOperationResultsOutput {
     
     inline def setSummariesUndefined: Self = StObject.set(x, "Summaries", js.undefined)
     
-    inline def setSummariesVarargs(value: StackSetOperationResultSummary*): Self = StObject.set(x, "Summaries", js.Array(value :_*))
+    inline def setSummariesVarargs(value: StackSetOperationResultSummary*): Self = StObject.set(x, "Summaries", js.Array(value*))
   }
 }

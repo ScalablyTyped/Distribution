@@ -12,10 +12,10 @@ object dialogMod {
   
   @JSImport("fundamental-react/lib/Dialog/Dialog", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[DialogProps, js.Object, js.Any]
+  open class default ()
+    extends Component[DialogProps, js.Object, Any]
   
-  type Dialog = Component[DialogProps, js.Object, js.Any]
+  type Dialog = Component[DialogProps, js.Object, Any]
   
   trait DialogProps
     extends StObject
@@ -25,29 +25,29 @@ object dialogMod {
     
     var backdropClassName: js.UndefOr[String] = js.undefined
     
-    var bodyProps: js.UndefOr[js.Any] = js.undefined
+    var bodyProps: js.UndefOr[Any] = js.undefined
     
-    var contentProps: js.UndefOr[js.Any] = js.undefined
+    var contentProps: js.UndefOr[Any] = js.undefined
     
     var disableStyles: js.UndefOr[Boolean] = js.undefined
     
-    var footerProps: js.UndefOr[js.Any] = js.undefined
+    var footerProps: js.UndefOr[Any] = js.undefined
     
     var header: js.UndefOr[String] = js.undefined
     
-    var headerProps: js.UndefOr[js.Any] = js.undefined
+    var headerProps: js.UndefOr[Any] = js.undefined
     
-    var headingLevel: js.UndefOr[js.Any] = js.undefined
+    var headingLevel: js.UndefOr[Any] = js.undefined
     
-    var onClose: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+    var onClose: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
     
     var show: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[js.Any] = js.undefined
+    var size: js.UndefOr[Any] = js.undefined
     
     var subheader: js.UndefOr[String] = js.undefined
     
-    var titleProps: js.UndefOr[js.Any] = js.undefined
+    var titleProps: js.UndefOr[Any] = js.undefined
     
     @JSName("title")
     var title_DialogProps: String
@@ -63,17 +63,17 @@ object dialogMod {
       
       inline def setActions(value: js.Array[ReactNode]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      inline def setActionsVarargs(value: ReactNode*): Self = StObject.set(x, "actions", js.Array(value :_*))
+      inline def setActionsVarargs(value: ReactNode*): Self = StObject.set(x, "actions", js.Array(value*))
       
       inline def setBackdropClassName(value: String): Self = StObject.set(x, "backdropClassName", value.asInstanceOf[js.Any])
       
       inline def setBackdropClassNameUndefined: Self = StObject.set(x, "backdropClassName", js.undefined)
       
-      inline def setBodyProps(value: js.Any): Self = StObject.set(x, "bodyProps", value.asInstanceOf[js.Any])
+      inline def setBodyProps(value: Any): Self = StObject.set(x, "bodyProps", value.asInstanceOf[js.Any])
       
       inline def setBodyPropsUndefined: Self = StObject.set(x, "bodyProps", js.undefined)
       
-      inline def setContentProps(value: js.Any): Self = StObject.set(x, "contentProps", value.asInstanceOf[js.Any])
+      inline def setContentProps(value: Any): Self = StObject.set(x, "contentProps", value.asInstanceOf[js.Any])
       
       inline def setContentPropsUndefined: Self = StObject.set(x, "contentProps", js.undefined)
       
@@ -81,23 +81,23 @@ object dialogMod {
       
       inline def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
       
-      inline def setFooterProps(value: js.Any): Self = StObject.set(x, "footerProps", value.asInstanceOf[js.Any])
+      inline def setFooterProps(value: Any): Self = StObject.set(x, "footerProps", value.asInstanceOf[js.Any])
       
       inline def setFooterPropsUndefined: Self = StObject.set(x, "footerProps", js.undefined)
       
       inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      inline def setHeaderProps(value: js.Any): Self = StObject.set(x, "headerProps", value.asInstanceOf[js.Any])
+      inline def setHeaderProps(value: Any): Self = StObject.set(x, "headerProps", value.asInstanceOf[js.Any])
       
       inline def setHeaderPropsUndefined: Self = StObject.set(x, "headerProps", js.undefined)
       
       inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      inline def setHeadingLevel(value: js.Any): Self = StObject.set(x, "headingLevel", value.asInstanceOf[js.Any])
+      inline def setHeadingLevel(value: Any): Self = StObject.set(x, "headingLevel", value.asInstanceOf[js.Any])
       
       inline def setHeadingLevelUndefined: Self = StObject.set(x, "headingLevel", js.undefined)
       
-      inline def setOnClose(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+      inline def setOnClose(value: /* repeated */ Any => Any): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
       
       inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
@@ -105,7 +105,7 @@ object dialogMod {
       
       inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
       
-      inline def setSize(value: js.Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
@@ -115,7 +115,7 @@ object dialogMod {
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      inline def setTitleProps(value: js.Any): Self = StObject.set(x, "titleProps", value.asInstanceOf[js.Any])
+      inline def setTitleProps(value: Any): Self = StObject.set(x, "titleProps", value.asInstanceOf[js.Any])
       
       inline def setTitlePropsUndefined: Self = StObject.set(x, "titleProps", js.undefined)
     }

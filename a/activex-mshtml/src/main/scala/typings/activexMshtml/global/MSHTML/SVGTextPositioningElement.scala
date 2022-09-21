@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.SVGTextPositioningElement")
 @js.native
-/* private */ class SVGTextPositioningElement ()
+/* private */ open class SVGTextPositioningElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.SVGTextPositioningElement {
   

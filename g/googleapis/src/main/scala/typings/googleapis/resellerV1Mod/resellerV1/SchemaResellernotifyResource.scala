@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * JSON template for resellernotify response.
-  */
 trait SchemaResellernotifyResource extends StObject {
   
   /**
     * Topic name of the PubSub
     */
-  var topicName: js.UndefOr[String] = js.undefined
+  var topicName: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaResellernotifyResource {
   
@@ -24,6 +21,8 @@ object SchemaResellernotifyResource {
   extension [Self <: SchemaResellernotifyResource](x: Self) {
     
     inline def setTopicName(value: String): Self = StObject.set(x, "topicName", value.asInstanceOf[js.Any])
+    
+    inline def setTopicNameNull: Self = StObject.set(x, "topicName", null)
     
     inline def setTopicNameUndefined: Self = StObject.set(x, "topicName", js.undefined)
   }

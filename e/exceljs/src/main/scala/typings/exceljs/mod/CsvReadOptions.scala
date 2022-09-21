@@ -9,7 +9,7 @@ trait CsvReadOptions extends StObject {
   
   var dateFormats: js.Array[String]
   
-  def map(value: js.Any, index: Double): js.Any
+  def map(value: Any, index: Double): Any
   
   var parserOptions: PartialFastCsvParserOptio
   
@@ -19,7 +19,7 @@ object CsvReadOptions {
   
   inline def apply(
     dateFormats: js.Array[String],
-    map: (js.Any, Double) => js.Any,
+    map: (Any, Double) => Any,
     parserOptions: PartialFastCsvParserOptio,
     sheetName: String
   ): CsvReadOptions = {
@@ -31,9 +31,9 @@ object CsvReadOptions {
     
     inline def setDateFormats(value: js.Array[String]): Self = StObject.set(x, "dateFormats", value.asInstanceOf[js.Any])
     
-    inline def setDateFormatsVarargs(value: String*): Self = StObject.set(x, "dateFormats", js.Array(value :_*))
+    inline def setDateFormatsVarargs(value: String*): Self = StObject.set(x, "dateFormats", js.Array(value*))
     
-    inline def setMap(value: (js.Any, Double) => js.Any): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
+    inline def setMap(value: (Any, Double) => Any): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
     
     inline def setParserOptions(value: PartialFastCsvParserOptio): Self = StObject.set(x, "parserOptions", value.asInstanceOf[js.Any])
     

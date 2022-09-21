@@ -113,741 +113,1333 @@ trait AUDIOLANGUAGECODEAFR extends StObject {
   
   /**
     * Afrikaans voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_AFR: AFR
   
   /**
     * Akan voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_AKA: AKA
   
   /**
     * Amharic voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_AMH: AMH
   
   /**
     * Arab voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_ARA: ARA
   
   /**
     * India-Assamese voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_ASM: ASM
   
   /**
     * India-Bengali voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_BEN: BEN
   
   /**
     * Bulgarian voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_BUL: BUL
   
   /**
     * catala voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_CAT: CAT
   
   /**
     * Chinese voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_CHI: CHI
   
   /**
     * Chinese (Mandarin) voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_CMN: CMN
   
   /**
     * Czech voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_CZE: CZE
   
   /**
     * Ghana-Dagbani voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_DAG: DAG
   
   /**
     * Danish voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_DAN: DAN
   
   /**
     * Dutch voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_DUT: DUT
   
   /**
     * English voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_ENG: ENG
   
   /**
     * Estonia voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_EST: EST
   
   /**
     * basque voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_EUS: EUS
   
   /**
     * Ewe voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_EWE: EWE
   
   /**
     * Finnish voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_FIN: FIN
   
   /**
     * French voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_FRE: FRE
   
   /**
     * Gaa voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_GAA: GAA
   
   /**
     * German voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_GER: GER
   
   /**
     * Gaelic voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_GLA: GLA
   
   /**
     * Galician voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_GLG: GLG
   
   /**
     * Netherlands private code
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_GOS: GOS
   
   /**
     * Greek voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_GRE: GRE
   
   /**
     * India-Gujarati voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_GUJ: GUJ
   
   /**
     * Hausa voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_HAU: HAU
   
   /**
     * Hebrew voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_HEB: HEB
   
   /**
     * Hindi voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_HIN: HIN
   
   /**
     * Croatian voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_HRV: HRV
   
   /**
     * Hungarian voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_HUN: HUN
   
   /**
     * Igbo voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_IGB: IGB
   
   /**
     * Indonesia voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_IND: IND
   
   /**
     * Irish voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_IRI: IRI
   
   /**
     * Italian voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_ITA: ITA
   
   /**
     * Japanes voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_JPN: JPN
   
   /**
     * India-Kannada voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_KAN: KAN
   
   /**
     * India-Kokani voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_KOK: KOK
   
   /**
     * Korean voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_KOR: KOR
   
   /**
     * Latvian voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_LAV: LAV
   
   /**
     * Lithuanian voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_LIT: LIT
   
   /**
     * India-Malayalam voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_MAL: MAL
   
   /**
     * Maori voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_MAO: MAO
   
   /**
-    * Marathi voice mode
+    *
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_MAR: MAR
   
   /**
     * India-Marathi voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_MSA: MSA
   
   /**
     * Ndebele voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_NBL: NBL
   
   /**
     * Norwegian voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_NOR: NOR
   
   /**
     * Sotho, Northern voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_NSO: NSO
   
   /**
     * Nzema voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_NZI: NZI
   
   /**
     * India-Oriya voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_ORI: ORI
   
   /**
     * India-Punjabi voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_PAN: PAN
   
   /**
     * Persisian voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_PER: PER
   
   /**
     * Polish voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_POL: POL
   
   /**
     * Portuguese voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_POR: POR
   
   /**
     * Singapore preffered audio.
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_QAA: QAA
   
   /**
     * Singapore secondary audio.
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_QAB: QAB
   
   /**
     * Singapore third audio
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_QAC: QAC
   
   /**
     * Rumanian voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_ROM: ROM
   
   /**
     * Russian voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_RUS: RUS
   
   /**
     * Slovakia voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_SLK: SLK
   
   /**
     * Sotho, Southern voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_SOT: SOT
   
   /**
     * Spanish voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_SPA: SPA
   
   /**
     * Serbian voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_SRP: SRP
   
   /**
     * Swati voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_SSW: SSW
   
   /**
     * Swahili voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_SWA: SWA
   
   /**
     * Swedish voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_SWE: SWE
   
   /**
     * tamil voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_TAM: TAM
   
   /**
     * India-Telugu voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_TEL: TEL
   
   /**
     * Thai voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_THA: THA
   
   /**
     * Thai voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_TSN: TSN
   
   /**
     * Tsonga voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_TSO: TSO
   
   /**
     * Turkish voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_TUR: TUR
   
   /**
     * Twi voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_TWI: TWI
   
   /**
     * Ukraine voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_UKR: UKR
   
   /**
     * valencia voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_VAL: VAL
   
   /**
     * Venda voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_VEN: VEN
   
   /**
     * Vietnamese voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_VIE: VIE
   
   /**
     * Welsh voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_WEL: WEL
   
   /**
     * Xhosa voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_XHO: XHO
   
   /**
     * Ghana-Kasem voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_XSM: XSM
   
   /**
     * Yoruba voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_YOR: YOR
   
   /**
     * Chinese (Cantonese) voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_YUE: YUE
   
   /**
     * Malaysia-Chinense voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_ZHO: ZHO
   
   /**
     * Zulu voice mode
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var AUDIO_LANGUAGE_CODE_ZUL: ZUL
   
   /**
     * Black
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_COLOR_BLACK: `2`
   
   /**
     * Blue
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_COLOR_BLUE: `5`
   
   /**
     * Cyan
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_COLOR_CYAN: `8`
   
   /**
     * Default
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_COLOR_DEFAULT: `0`
   
   /**
     * Green
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_COLOR_GREEN: `4`
   
   /**
     * Magenta
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_COLOR_MAGENTA: `7`
   
   /**
     * Red
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_COLOR_RED: `3`
   
   /**
     * White
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_COLOR_WHITE: `1`
   
   /**
     * Yellow
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_COLOR_YELLOW: `6`
   
   /**
     * Depressed
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_EDGE_DEPRESSED: `2`
   
   /**
     * Drop shadow
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_EDGE_DROP_SHADOWED: `4`
   
   /**
     * No edge
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_EDGE_NONE: `0`
   
   /**
     * Raised
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_EDGE_RAISED: `1`
   
   /**
     * Uniform
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_EDGE_UNIFORM: `3`
   
   /**
     * Default
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_FONT_DEFAULT: `0`
   
   /**
     * Style 0
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_FONT_STYLE0: `1`
   
   /**
     * Style 1
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_FONT_STYLE1: `2`
   
   /**
     * Style 2
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_FONT_STYLE2: `3`
   
   /**
     * Style 3
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_FONT_STYLE3: `4`
   
   /**
     * Style 4
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_FONT_STYLE4: `5`
   
   /**
     * Style 5
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_FONT_STYLE5: `6`
   
   /**
     * Style 6
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_FONT_STYLE6: `7`
   
   /**
     * English (KOR Localset)
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_MODE_CC1: `7`
   
   /**
     * Korean (KOR Localset)
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_MODE_CC2: `8`
   
   /**
     * US Localset only
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_MODE_CC3: `9`
   
   /**
     * US Localset only
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_MODE_CC4: `10`
   
   /**
     * Default Mode
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_MODE_DEFAULT: `0`
   
   /**
     * Service 1
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_MODE_SERVICE1: `1`
   
   /**
     * Service 2
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_MODE_SERVICE2: `2`
   
   /**
     * Service 3
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_MODE_SERVICE3: `3`
   
   /**
     * Service 4
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_MODE_SERVICE4: `4`
   
   /**
     * Service 5
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_MODE_SERVICE5: `5`
   
   /**
     * Service 6
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_MODE_SERVICE6: `6`
   
   /**
     * Text 1
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_MODE_TEXT1: `11`
   
   /**
     * Text 2
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_MODE_TEXT2: `12`
   
   /**
     * Text 3
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_MODE_TEXT3: `13`
   
   /**
     * Text 4
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_MODE_TEXT4: `14`
   
   /**
     * Caption Off
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_OFF: `0`
   
   /**
     * Caption On
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_ON: `1`
   
   /**
     * Default
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_OPACITY_DEFAULT: `4`
   
   /**
     * Flashing
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_OPACITY_FLASH: `1`
   
   /**
     * Highly translucent
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_OPACITY_HIGHLY_TRANSLUCENT: `5`
   
   /**
     * Slightly translucent
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_OPACITY_SLIGHTLY_TRANSLUCENT: `6`
   
   /**
     * Solid
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_OPACITY_SOLID: `0`
   
   /**
     * Translucent
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_OPACITY_TRANSLUCENT: `2`
   
   /**
     * Transparent
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_OPACITY_TRANSPARENT: `3`
   
   /**
     * Default
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_SIZE_DEFAULT: `0`
   
   /**
     * Extra large
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_SIZE_EXTRA_LARGE: `4`
   
   /**
     * Large
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_SIZE_LARGE: `3`
   
   /**
     * Small
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_SIZE_SMALL: `1`
   
   /**
     * Standard
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_SIZE_STANDARD: `2`
   
   /**
     * caption style
+    *
+    * @version 3.4
+    *
+    * @since 2.3
     */
   var CAPTION_STYLE_BOLD: `1`
   
   /**
     * caption style
+    *
+    * @version 3.4
+    *
+    * @since 2.3
     */
   var CAPTION_STYLE_DEFAULT: `0`
   
   /**
     * caption style
+    *
+    * @version 3.4
+    *
+    * @since 2.3
     */
   var CAPTION_STYLE_ITALIC: `2`
   
   /**
     * MenuValue Off
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var OFF: `0`
   
   /**
     * MenuValue On
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var ON: `1`
   
   /**
     * Subtitles for the hearing-immpeared
+    *
+    * @version 1.2
+    *
+    * @since 2.3
     */
   var SUBTITLE_HEARING_IMMPEARED: `1`
   
   /**
     * Normal subtitles
+    *
+    * @version 1.2
+    *
+    * @since 2.3
     */
   var SUBTITLE_NORMAL: `0`
   
   /**
     * voice guide speed
+    *
+    * @version 3.3
+    *
+    * @since 2.3
     */
   var VOICEGUIDE_SPEED_FAST: FAST
   
   /**
     * voice guide speed
+    *
+    * @version 3.3
+    *
+    * @since 2.3
     */
   var VOICEGUIDE_SPEED_NORMAL: NORMAL
   
   /**
     * voice guide speed
+    *
+    * @version 3.3
+    *
+    * @since 2.3
     */
   var VOICEGUIDE_SPEED_SLOW: SLOW
   
   /**
     * voice guide speed
+    *
+    * @version 3.3
+    *
+    * @since 2.3
     */
   var VOICEGUIDE_SPEED_VERY_FAST: VERY_FAST
   
   /**
     * voice guide speed
+    *
+    * @version 3.3
+    *
+    * @since 2.3
     */
   var VOICEGUIDE_SPEED_VERY_SLOW: VERY_SLOW
 }

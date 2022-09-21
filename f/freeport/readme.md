@@ -10,15 +10,12 @@ Find a free port.
 | ------------------ | :-------------: |
 | Full name          | freeport |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 87 |
-| # downloads        | 1695443 |
-| # stars            | 7 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 64526.333333333336 |
+| # stars            | 48.0 |
 
 ## Links
-- [Homepage](https://github.com/daaku/nodejs-freeport)
-- [Bugs](https://github.com/daaku/nodejs-freeport/issues)
-- [Repository](https://github.com/daaku/nodejs-freeport)
 - [Npm](https://www.npmjs.com/package/freeport)
     
 

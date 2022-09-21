@@ -1,8 +1,6 @@
 package typings.markdownItHighlightjs
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.highlightJs.HLJSApi
-import typings.highlightJs.Language
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +27,16 @@ object anon {
     /**
       * Register other languages which are not included in the standard pack.
       */
-    var register: js.UndefOr[StringDictionary[js.Function1[/* hljs */ js.UndefOr[HLJSApi], Language]]] = js.undefined
+    var register: js.UndefOr[
+        StringDictionary[
+          js.Function1[
+            /* hljs */ js.UndefOr[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HLJSApi */ Any
+            ], 
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Language */ Any
+          ]
+        ]
+      ] = js.undefined
   }
   object Auto {
     
@@ -52,7 +59,16 @@ object anon {
       
       inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
       
-      inline def setRegister(value: StringDictionary[js.Function1[/* hljs */ js.UndefOr[HLJSApi], Language]]): Self = StObject.set(x, "register", value.asInstanceOf[js.Any])
+      inline def setRegister(
+        value: StringDictionary[
+              js.Function1[
+                /* hljs */ js.UndefOr[
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HLJSApi */ Any
+                ], 
+                /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Language */ Any
+              ]
+            ]
+      ): Self = StObject.set(x, "register", value.asInstanceOf[js.Any])
       
       inline def setRegisterUndefined: Self = StObject.set(x, "register", js.undefined)
     }

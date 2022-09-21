@@ -1,6 +1,8 @@
 package typings.breeze.breeze
 
 import typings.breeze.anon.Entities
+import typings.breeze.anon.MergeAdds
+import typings.breeze.anon.UnwrapChangedValues
 import typings.breeze.breeze.core.ErrorCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -75,12 +77,12 @@ trait EntityManager extends StObject {
   
   def executeQueryLocally(query: EntityQuery): js.Array[Entity] = js.native
   
-  def exportEntities(): js.Any = js.native
-  def exportEntities(entities: js.Array[Entity]): js.Any = js.native
+  def exportEntities(): Any = js.native
+  def exportEntities(entities: js.Array[Entity]): Any = js.native
   def exportEntities(entities: js.Array[Entity], includeMetadata: Boolean): String = js.native
-  def exportEntities(entities: js.Array[Entity], options: ExportEntitiesOptions): js.Any = js.native
+  def exportEntities(entities: js.Array[Entity], options: ExportEntitiesOptions): Any = js.native
   def exportEntities(entities: Unit, includeMetadata: Boolean): String = js.native
-  def exportEntities(entities: Unit, options: ExportEntitiesOptions): js.Any = js.native
+  def exportEntities(entities: Unit, options: ExportEntitiesOptions): Any = js.native
   @JSName("exportEntities")
   def exportEntities_String(): String = js.native
   @JSName("exportEntities")
@@ -88,17 +90,17 @@ trait EntityManager extends StObject {
   
   def fetchEntityByKey(entityKey: EntityKey): js.Promise[EntityByKeyResult] = js.native
   // string | Object
-  def fetchEntityByKey(typeName: String, keyValue: js.Any): js.Promise[EntityByKeyResult] = js.native
-  def fetchEntityByKey(typeName: String, keyValue: js.Any, checkLocalCacheFirst: Boolean): js.Promise[EntityByKeyResult] = js.native
-  def fetchEntityByKey(typeName: String, keyValues: js.Array[js.Any]): js.Promise[EntityByKeyResult] = js.native
-  def fetchEntityByKey(typeName: String, keyValues: js.Array[js.Any], checkLocalCacheFirst: Boolean): js.Promise[EntityByKeyResult] = js.native
+  def fetchEntityByKey(typeName: String, keyValue: Any): js.Promise[EntityByKeyResult] = js.native
+  def fetchEntityByKey(typeName: String, keyValue: Any, checkLocalCacheFirst: Boolean): js.Promise[EntityByKeyResult] = js.native
+  def fetchEntityByKey(typeName: String, keyValues: js.Array[Any]): js.Promise[EntityByKeyResult] = js.native
+  def fetchEntityByKey(typeName: String, keyValues: js.Array[Any], checkLocalCacheFirst: Boolean): js.Promise[EntityByKeyResult] = js.native
   
-  def fetchMetadata(): js.Promise[js.Any] = js.native
-  def fetchMetadata(callback: js.Function1[/* schema */ js.Any, Unit]): js.Promise[js.Any] = js.native
-  def fetchMetadata(callback: js.Function1[/* schema */ js.Any, Unit], errorCallback: ErrorCallback): js.Promise[js.Any] = js.native
-  def fetchMetadata(callback: Unit, errorCallback: ErrorCallback): js.Promise[js.Any] = js.native
+  def fetchMetadata(): js.Promise[Any] = js.native
+  def fetchMetadata(callback: js.Function1[/* schema */ Any, Unit]): js.Promise[Any] = js.native
+  def fetchMetadata(callback: js.Function1[/* schema */ Any, Unit], errorCallback: ErrorCallback): js.Promise[Any] = js.native
+  def fetchMetadata(callback: Unit, errorCallback: ErrorCallback): js.Promise[Any] = js.native
   
-  def generateTempKeyValue(entity: Entity): js.Any = js.native
+  def generateTempKeyValue(entity: Entity): Any = js.native
   
   def getChanges(): js.Array[Entity] = js.native
   def getChanges(entityTypeName: String): js.Array[Entity] = js.native
@@ -119,8 +121,8 @@ trait EntityManager extends StObject {
   def getEntities(entityType: EntityType, entityState: EntityStateSymbol): js.Array[Entity] = js.native
   
   def getEntityByKey(entityKey: EntityKey): Entity = js.native
-  def getEntityByKey(typeName: String, keyValue: js.Any): Entity = js.native
-  def getEntityByKey(typeName: String, keyValues: js.Array[js.Any]): Entity = js.native
+  def getEntityByKey(typeName: String, keyValue: Any): Entity = js.native
+  def getEntityByKey(typeName: String, keyValues: js.Array[Any]): Entity = js.native
   
   def hasChanges(): Boolean = js.native
   def hasChanges(entityTypeName: String): Boolean = js.native
@@ -129,10 +131,12 @@ trait EntityManager extends StObject {
   
   var hasChangesChanged: HasChangesChangedEvent = js.native
   
+  var helper: UnwrapChangedValues = js.native
+  
   def importEntities(exportedData: js.Object): Entities = js.native
-  def importEntities(exportedData: js.Object, config: typings.breeze.anon.MergeStrategy): Entities = js.native
+  def importEntities(exportedData: js.Object, config: MergeAdds): Entities = js.native
   def importEntities(exportedString: String): Entities = js.native
-  def importEntities(exportedString: String, config: typings.breeze.anon.MergeStrategy): Entities = js.native
+  def importEntities(exportedString: String, config: MergeAdds): Entities = js.native
   
   var keyGeneratorCtor: js.Function = js.native
   

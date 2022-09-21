@@ -47,7 +47,7 @@ trait ILocationService extends StObject {
   /**
     * Return search part (as object) of current url
     */
-  def search(): js.Any = js.native
+  def search(): Any = js.native
   /**
     * Change search part when called with parameter and return $location.
     *
@@ -66,10 +66,10 @@ trait ILocationService extends StObject {
     *
     * If the argument is a hash object containing an array of values, these values will be encoded as duplicate search parameters in the url.
     */
-  def search(search: js.Any): ILocationService = js.native
+  def search(search: Any): ILocationService = js.native
   
-  def state(): js.Any = js.native
-  def state(state: js.Any): ILocationService = js.native
+  def state(): Any = js.native
+  def state(state: Any): ILocationService = js.native
   
   def url(): String = js.native
   def url(url: String): ILocationService = js.native

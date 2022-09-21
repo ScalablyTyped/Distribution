@@ -14,12 +14,12 @@ trait SchemaAddOrderDealsRequest extends StObject {
   /**
     * The last known proposal revision number.
     */
-  var proposalRevisionNumber: js.UndefOr[String] = js.undefined
+  var proposalRevisionNumber: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Indicates an optional action to take on the proposal
     */
-  var updateAction: js.UndefOr[String] = js.undefined
+  var updateAction: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaAddOrderDealsRequest {
   
@@ -34,13 +34,17 @@ object SchemaAddOrderDealsRequest {
     
     inline def setDealsUndefined: Self = StObject.set(x, "deals", js.undefined)
     
-    inline def setDealsVarargs(value: SchemaMarketplaceDeal*): Self = StObject.set(x, "deals", js.Array(value :_*))
+    inline def setDealsVarargs(value: SchemaMarketplaceDeal*): Self = StObject.set(x, "deals", js.Array(value*))
     
     inline def setProposalRevisionNumber(value: String): Self = StObject.set(x, "proposalRevisionNumber", value.asInstanceOf[js.Any])
+    
+    inline def setProposalRevisionNumberNull: Self = StObject.set(x, "proposalRevisionNumber", null)
     
     inline def setProposalRevisionNumberUndefined: Self = StObject.set(x, "proposalRevisionNumber", js.undefined)
     
     inline def setUpdateAction(value: String): Self = StObject.set(x, "updateAction", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateActionNull: Self = StObject.set(x, "updateAction", null)
     
     inline def setUpdateActionUndefined: Self = StObject.set(x, "updateAction", js.undefined)
   }

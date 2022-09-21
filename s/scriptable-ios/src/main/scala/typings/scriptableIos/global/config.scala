@@ -1,5 +1,9 @@
 package typings.scriptableIos.global
 
+import typings.scriptableIos.scriptableIosStrings.extraLarge
+import typings.scriptableIos.scriptableIosStrings.large
+import typings.scriptableIos.scriptableIosStrings.medium
+import typings.scriptableIos.scriptableIosStrings.small
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -71,11 +75,11 @@ object config {
   /**
     * The size of the widget the script is running in.
     *
-    * Possible values are: `small`, `medium`, `large` and `null`. The value is `null` when the script is not running in a widget.
+    * Possible values are: `small`, `medium`, `large`, `extraLarge` and `null`. The value is `null` when the script is not running in a widget.
     * @see https://docs.scriptable.app/config/#widgetfamily
     */
   @JSGlobal("config.widgetFamily")
   @js.native
-  def widgetFamily: String = js.native
-  inline def widgetFamily_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("widgetFamily")(x.asInstanceOf[js.Any])
+  def widgetFamily: small | medium | large | extraLarge | Null = js.native
+  inline def widgetFamily_=(x: small | medium | large | extraLarge | Null): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("widgetFamily")(x.asInstanceOf[js.Any])
 }

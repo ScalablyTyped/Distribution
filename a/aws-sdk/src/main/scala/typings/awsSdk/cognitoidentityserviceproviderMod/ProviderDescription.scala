@@ -9,20 +9,20 @@ trait ProviderDescription extends StObject {
   /**
     * The date the provider was added to the user pool.
     */
-  var CreationDate: js.UndefOr[DateType] = js.undefined
+  var CreationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The date the provider was last modified.
     */
-  var LastModifiedDate: js.UndefOr[DateType] = js.undefined
+  var LastModifiedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The identity provider name.
+    * The IdP name.
     */
   var ProviderName: js.UndefOr[ProviderNameType] = js.undefined
   
   /**
-    * The identity provider type.
+    * The IdP type.
     */
   var ProviderType: js.UndefOr[IdentityProviderTypeType] = js.undefined
 }
@@ -35,11 +35,11 @@ object ProviderDescription {
   
   extension [Self <: ProviderDescription](x: Self) {
     
-    inline def setCreationDate(value: DateType): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
-    inline def setLastModifiedDate(value: DateType): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: js.Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
     

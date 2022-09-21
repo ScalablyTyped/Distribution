@@ -132,12 +132,12 @@ object easing {
        with IAbstract {
     
     /** [Config Option] (Object) */
-    var bounce: js.UndefOr[js.Any] = js.undefined
+    var bounce: js.UndefOr[Any] = js.undefined
     
     /** [Method] Returns the value of bounce
       * @returns Object
       */
-    var getBounce: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getBounce: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of maxMomentumValue
       * @returns Number
@@ -157,7 +157,7 @@ object easing {
     /** [Method] Returns the value of momentum
       * @returns Object
       */
-    var getMomentum: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getMomentum: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of startVelocity
       * @returns Number
@@ -168,12 +168,12 @@ object easing {
     var minVelocity: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Object) */
-    var momentum: js.UndefOr[js.Any] = js.undefined
+    var momentum: js.UndefOr[Any] = js.undefined
     
     /** [Method] Sets the value of bounce
       * @param bounce Object The new value.
       */
-    var setBounce: js.UndefOr[js.Function1[/* bounce */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setBounce: js.UndefOr[js.Function1[/* bounce */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of maxMomentumValue
       * @param maxMomentumValue Number The new value.
@@ -193,7 +193,7 @@ object easing {
     /** [Method] Sets the value of momentum
       * @param momentum Object The new value.
       */
-    var setMomentum: js.UndefOr[js.Function1[/* momentum */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setMomentum: js.UndefOr[js.Function1[/* momentum */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of startVelocity
       * @param startVelocity Number The new value.
@@ -212,11 +212,11 @@ object easing {
     
     extension [Self <: IBoundMomentum](x: Self) {
       
-      inline def setBounce(value: js.Any): Self = StObject.set(x, "bounce", value.asInstanceOf[js.Any])
+      inline def setBounce(value: Any): Self = StObject.set(x, "bounce", value.asInstanceOf[js.Any])
       
       inline def setBounceUndefined: Self = StObject.set(x, "bounce", js.undefined)
       
-      inline def setGetBounce(value: () => js.Any): Self = StObject.set(x, "getBounce", js.Any.fromFunction0(value))
+      inline def setGetBounce(value: () => Any): Self = StObject.set(x, "getBounce", js.Any.fromFunction0(value))
       
       inline def setGetBounceUndefined: Self = StObject.set(x, "getBounce", js.undefined)
       
@@ -232,7 +232,7 @@ object easing {
       
       inline def setGetMinVelocityUndefined: Self = StObject.set(x, "getMinVelocity", js.undefined)
       
-      inline def setGetMomentum(value: () => js.Any): Self = StObject.set(x, "getMomentum", js.Any.fromFunction0(value))
+      inline def setGetMomentum(value: () => Any): Self = StObject.set(x, "getMomentum", js.Any.fromFunction0(value))
       
       inline def setGetMomentumUndefined: Self = StObject.set(x, "getMomentum", js.undefined)
       
@@ -244,11 +244,11 @@ object easing {
       
       inline def setMinVelocityUndefined: Self = StObject.set(x, "minVelocity", js.undefined)
       
-      inline def setMomentum(value: js.Any): Self = StObject.set(x, "momentum", value.asInstanceOf[js.Any])
+      inline def setMomentum(value: Any): Self = StObject.set(x, "momentum", value.asInstanceOf[js.Any])
       
       inline def setMomentumUndefined: Self = StObject.set(x, "momentum", js.undefined)
       
-      inline def setSetBounce(value: /* bounce */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setBounce", js.Any.fromFunction1(value))
+      inline def setSetBounce(value: /* bounce */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setBounce", js.Any.fromFunction1(value))
       
       inline def setSetBounceUndefined: Self = StObject.set(x, "setBounce", js.undefined)
       
@@ -264,7 +264,7 @@ object easing {
       
       inline def setSetMinVelocityUndefined: Self = StObject.set(x, "setMinVelocity", js.undefined)
       
-      inline def setSetMomentum(value: /* momentum */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setMomentum", js.Any.fromFunction1(value))
+      inline def setSetMomentum(value: /* momentum */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setMomentum", js.Any.fromFunction1(value))
       
       inline def setSetMomentumUndefined: Self = StObject.set(x, "setMomentum", js.undefined)
       

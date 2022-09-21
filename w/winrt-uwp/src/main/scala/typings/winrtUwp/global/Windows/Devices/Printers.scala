@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.Devices
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Devices.Printers.Extensions.Print3DWorkflowDetail
 import typings.winrtUwp.Windows.Devices.Printers.Extensions.Print3DWorkflowStatus
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
@@ -66,7 +65,7 @@ object Printers {
         * @param source The latest model data, including any updates made by the Print3DWorkflow .
         */
       /* CompleteClass */
-      override def setSource(source: js.Any): Unit = js.native
+      override def setSource(source: Any): Unit = js.native
       
       /**
         * Indicates if the data model has been updated by the Print3DWorkflow .
@@ -119,7 +118,7 @@ object Printers {
         * @return Pointer to the context.
         */
       /* static member */
-      inline def fromDeviceId(deviceId: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDeviceId")(deviceId.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def fromDeviceId(deviceId: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDeviceId")(deviceId.asInstanceOf[js.Any]).asInstanceOf[Any]
     }
     
     /** Contains properties that allow a client to access and/or manipulate print event data and print device name information. */
@@ -158,7 +157,7 @@ object Printers {
       
       /** Gets the date-time object that provides the deadline information for the print task. */
       /* CompleteClass */
-      var deadline: Date = js.native
+      var deadline: js.Date = js.native
       
       /**
         * Called by the device app when it has to complete some asynchronous tasks before it can save the print task configuration information.
@@ -172,7 +171,7 @@ object Printers {
         * @param printerExtensionContext The object that represents the print task extension context.
         */
       /* CompleteClass */
-      override def save(printerExtensionContext: js.Any): Unit = js.native
+      override def save(printerExtensionContext: Any): Unit = js.native
     }
     
     /** Called by the device app to provide an update of the status of the deferral. */

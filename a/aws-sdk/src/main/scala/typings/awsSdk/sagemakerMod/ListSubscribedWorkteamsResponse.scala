@@ -31,6 +31,6 @@ object ListSubscribedWorkteamsResponse {
     
     inline def setSubscribedWorkteams(value: SubscribedWorkteams): Self = StObject.set(x, "SubscribedWorkteams", value.asInstanceOf[js.Any])
     
-    inline def setSubscribedWorkteamsVarargs(value: SubscribedWorkteam*): Self = StObject.set(x, "SubscribedWorkteams", js.Array(value :_*))
+    inline def setSubscribedWorkteamsVarargs(value: SubscribedWorkteam*): Self = StObject.set(x, "SubscribedWorkteams", js.Array(value*))
   }
 }

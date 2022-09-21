@@ -33,7 +33,7 @@ object XModuleManager {
   inline def apply(
     acquire: () => Unit,
     identify: XInterface => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XModuleManager = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), identify = js.Any.fromFunction1(identify), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

@@ -1,5 +1,7 @@
 package typings.treat
 
+import typings.treat.themeMod.ThemeOrAny
+import typings.treat.typesMod.ClassRef
 import typings.treat.typesMod.Style
 import typings.treat.typesMod.ThemeRef
 import typings.treat.typesMod.TreatTheme
@@ -9,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object processSelectorsMod {
   
-  @JSImport("treat/lib/types/processSelectors", JSImport.Namespace)
+  @JSImport("treat/dist/declarations/src/processSelectors", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def addLocalClassRef(classRef: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("addLocalClassRef")(classRef.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def addLocalClassRef(classRef: ClassRef): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("addLocalClassRef")(classRef.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  inline def combinedThemeSelector(selector: String, themes: js.Array[TreatTheme[js.Any]]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("combinedThemeSelector")(selector.asInstanceOf[js.Any], themes.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def combinedThemeSelector(selector: String, themes: js.Array[TreatTheme[ThemeOrAny]]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("combinedThemeSelector")(selector.asInstanceOf[js.Any], themes.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def interpolateSelector(selector: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateSelector")(selector.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def interpolateSelector(selector: String, themeRef: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateSelector")(selector.asInstanceOf[js.Any], themeRef.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -30,22 +32,11 @@ object processSelectorsMod {
     
     var themeRef: js.UndefOr[ThemeRef] = js.undefined
     
-    var themes: js.Array[
-        TreatTheme[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemeOrAny */ js.Any
-        ]
-      ]
+    var themes: js.Array[TreatTheme[ThemeOrAny]]
   }
   object ProcessSelectorsParams {
     
-    inline def apply(
-      style: Style,
-      themes: js.Array[
-          TreatTheme[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemeOrAny */ js.Any
-          ]
-        ]
-    ): ProcessSelectorsParams = {
+    inline def apply(style: Style, themes: js.Array[TreatTheme[ThemeOrAny]]): ProcessSelectorsParams = {
       val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any], themes = themes.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProcessSelectorsParams]
     }
@@ -58,19 +49,9 @@ object processSelectorsMod {
       
       inline def setThemeRefUndefined: Self = StObject.set(x, "themeRef", js.undefined)
       
-      inline def setThemes(
-        value: js.Array[
-              TreatTheme[
-                /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemeOrAny */ js.Any
-              ]
-            ]
-      ): Self = StObject.set(x, "themes", value.asInstanceOf[js.Any])
+      inline def setThemes(value: js.Array[TreatTheme[ThemeOrAny]]): Self = StObject.set(x, "themes", value.asInstanceOf[js.Any])
       
-      inline def setThemesVarargs(
-        value: (TreatTheme[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemeOrAny */ js.Any
-            ])*
-      ): Self = StObject.set(x, "themes", js.Array(value :_*))
+      inline def setThemesVarargs(value: TreatTheme[ThemeOrAny]*): Self = StObject.set(x, "themes", js.Array(value*))
     }
   }
 }

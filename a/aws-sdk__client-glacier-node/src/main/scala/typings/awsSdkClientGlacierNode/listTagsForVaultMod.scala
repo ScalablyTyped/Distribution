@@ -8,5 +8,5 @@ object listTagsForVaultMod {
   
   @JSImport("@aws-sdk/client-glacier-node/model/ListTagsForVault", "ListTagsForVault")
   @js.native
-  val ListTagsForVault: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val ListTagsForVault: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

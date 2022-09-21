@@ -14,12 +14,12 @@ object anon {
   trait Describe extends StObject {
     
     def describe(expectation: String): Suite_
-    def describe(expectation: String, callback: js.ThisFunction1[/* this */ Context, /* repeated */ js.Any, js.Any]): Suite_
+    def describe(expectation: String, callback: js.ThisFunction1[/* this */ Context, /* repeated */ Any, Any]): Suite_
     @JSName("describe")
     var describe_Original: ForEachDescribeDefinition
     
     def it(expectation: String): Test_
-    def it(expectation: String, callback: js.ThisFunction1[/* this */ Context, /* repeated */ js.Any, js.Any]): Test_
+    def it(expectation: String, callback: js.ThisFunction1[/* this */ Context, /* repeated */ Any, Any]): Test_
     @JSName("it")
     var it_Original: ForEachTestFunction
   }

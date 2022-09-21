@@ -1,10 +1,10 @@
 package typings.reactPlacesAutocomplete
 
-import typings.googlemaps.google.maps.GeocoderComponentRestrictions
-import typings.googlemaps.google.maps.LatLng
-import typings.googlemaps.google.maps.LatLngBounds
-import typings.googlemaps.google.maps.LatLngBoundsLiteral
-import typings.googlemaps.google.maps.LatLngLiteral
+import typings.googleMaps.google.maps.LatLng
+import typings.googleMaps.google.maps.LatLngBounds
+import typings.googleMaps.google.maps.LatLngBoundsLiteral
+import typings.googleMaps.google.maps.LatLngLiteral
+import typings.googleMaps.google.maps.places.ComponentRestrictions
 import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.KeyboardEvent
@@ -56,7 +56,7 @@ object anon {
     inline def apply(
       `aria-expanded`: Boolean,
       disabled: Boolean,
-      onBlur: FocusEvent[Element] => Unit,
+      onBlur: FocusEvent[Element, Element] => Unit,
       onChange: Target => Unit,
       onKeyDown: KeyboardEvent[Element] => Unit
     ): Ariaactivedescendant = {
@@ -81,7 +81,7 @@ object anon {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      inline def setOnBlur(value: FocusEvent[Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[Element, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
       inline def setOnChange(value: Target => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
@@ -101,7 +101,7 @@ object anon {
     
     var bounds: js.UndefOr[LatLngBounds | LatLngBoundsLiteral] = js.undefined
     
-    var componentRestrictions: js.UndefOr[GeocoderComponentRestrictions] = js.undefined
+    var componentRestrictions: js.UndefOr[ComponentRestrictions] = js.undefined
     
     var location: js.UndefOr[LatLng | LatLngLiteral] = js.undefined
     
@@ -109,7 +109,7 @@ object anon {
     
     var radius: js.UndefOr[Double | String] = js.undefined
     
-    var sessionToken: js.UndefOr[js.Any] = js.undefined
+    var sessionToken: js.UndefOr[Any] = js.undefined
     
     var types: js.UndefOr[js.Array[String]] = js.undefined
   }
@@ -126,7 +126,7 @@ object anon {
       
       inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
       
-      inline def setComponentRestrictions(value: GeocoderComponentRestrictions): Self = StObject.set(x, "componentRestrictions", value.asInstanceOf[js.Any])
+      inline def setComponentRestrictions(value: ComponentRestrictions): Self = StObject.set(x, "componentRestrictions", value.asInstanceOf[js.Any])
       
       inline def setComponentRestrictionsUndefined: Self = StObject.set(x, "componentRestrictions", js.undefined)
       
@@ -142,7 +142,7 @@ object anon {
       
       inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
       
-      inline def setSessionToken(value: js.Any): Self = StObject.set(x, "sessionToken", value.asInstanceOf[js.Any])
+      inline def setSessionToken(value: Any): Self = StObject.set(x, "sessionToken", value.asInstanceOf[js.Any])
       
       inline def setSessionTokenUndefined: Self = StObject.set(x, "sessionToken", js.undefined)
       
@@ -150,7 +150,7 @@ object anon {
       
       inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
       
-      inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
+      inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value*))
     }
   }
   
@@ -272,7 +272,7 @@ object anon {
       
       inline def setSuggestions(value: js.Array[Suggestion]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
       
-      inline def setSuggestionsVarargs(value: Suggestion*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
+      inline def setSuggestionsVarargs(value: Suggestion*): Self = StObject.set(x, "suggestions", js.Array(value*))
     }
   }
   

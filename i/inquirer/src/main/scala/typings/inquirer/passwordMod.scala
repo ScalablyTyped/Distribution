@@ -2,8 +2,8 @@ package typings.inquirer
 
 import typings.inquirer.mod.Answers
 import typings.inquirer.mod.PasswordQuestionOptions
-import typings.inquirer.mod.prompts.FailedPromptStateData
-import typings.inquirer.mod.prompts.SuccessfulPromptStateData
+import typings.inquirer.mod.inquirer.prompts.FailedPromptStateData
+import typings.inquirer.mod.inquirer.prompts.SuccessfulPromptStateData
 import typings.node.readlineMod.Interface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,11 +17,11 @@ object passwordMod {
     * @template TQuestion
     * The options for the question.
     */
-  @JSImport("inquirer/lib/prompts/password", JSImport.Namespace)
+  @JSImport("inquirer/lib/prompts/password", JSImport.Default)
   @js.native
-  class ^[TQuestion /* <: Question */] protected () extends PasswordPrompt[TQuestion] {
+  open class default[TQuestion /* <: Question */] protected () extends PasswordPrompt[TQuestion] {
     /**
-      * Initializes a new instance of the `PasswordPrompt<T>` class.
+      * Initializes a new instance of the {@link PasswordPrompt `PasswordPrompt<TQuestion>`} class.
       *
       * @param question
       * The question to prompt the user to answer.
@@ -43,20 +43,20 @@ object passwordMod {
     */
   @js.native
   trait PasswordPrompt[TQuestion /* <: Question */]
-    extends typings.inquirer.baseMod.^[TQuestion] {
+    extends typings.inquirer.baseMod.default[TQuestion] {
     
     /**
       * The answer to this prompt.
       */
-    /* protected */ var answer: js.Any = js.native
+    /* protected */ var answer: Any = js.native
     
     /**
       * Resolves the value of the prompt.
       */
-    /* protected */ def done(value: js.Any): Unit = js.native
+    /* protected */ def done(value: Any): Unit = js.native
     
     /**
-      * Filters the specified `input`.
+      * Filters the specified {@link input `input`}.
       *
       * @param input
       * The input to filter.
@@ -72,7 +72,7 @@ object passwordMod {
       * @param eventArgs
       * An object which contains event-data.
       */
-    /* protected */ def onEnd(eventArgs: SuccessfulPromptStateData[js.Any]): Unit = js.native
+    /* protected */ def onEnd(eventArgs: SuccessfulPromptStateData[Any]): Unit = js.native
     
     /**
       * Handles the `error`-event of the prompt.
@@ -85,7 +85,7 @@ object passwordMod {
     /**
       * Handles the `keypress`-event of the prompt.
       */
-    /* protected */ def onKeyPress(): Unit = js.native
+    /* protected */ def onKeypress(): Unit = js.native
     
     /**
       * Renders the prompt.
@@ -98,7 +98,7 @@ object passwordMod {
   }
   
   /**
-    * The question for the `PasswordPrompt<T>`.
+    * The question for the {@link PasswordPrompt `PasswordPrompt<TQuestion>`}.
     */
   type Question = PasswordQuestionOptions[Answers]
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder-frp/dist/commonjs", "DeferStream")
 @js.native
-class DeferStream protected ()
+open class DeferStream protected ()
   extends typings.wonderFrp.deferStreamMod.DeferStream {
   def this(buildStreamFunc: js.Function) = this()
 }

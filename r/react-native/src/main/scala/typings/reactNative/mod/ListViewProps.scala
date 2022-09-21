@@ -93,14 +93,14 @@ trait ListViewProps
     * is exactly what was put into the data source, but it's also possible to
     * provide custom extractors.
     */
-  def renderRow(rowData: js.Any, sectionID: String, rowID: String): ReactElement = js.native
-  def renderRow(rowData: js.Any, sectionID: String, rowID: String, highlightRow: Boolean): ReactElement = js.native
-  def renderRow(rowData: js.Any, sectionID: String, rowID: Double): ReactElement = js.native
-  def renderRow(rowData: js.Any, sectionID: String, rowID: Double, highlightRow: Boolean): ReactElement = js.native
-  def renderRow(rowData: js.Any, sectionID: Double, rowID: String): ReactElement = js.native
-  def renderRow(rowData: js.Any, sectionID: Double, rowID: String, highlightRow: Boolean): ReactElement = js.native
-  def renderRow(rowData: js.Any, sectionID: Double, rowID: Double): ReactElement = js.native
-  def renderRow(rowData: js.Any, sectionID: Double, rowID: Double, highlightRow: Boolean): ReactElement = js.native
+  def renderRow(rowData: Any, sectionID: String, rowID: String): ReactElement = js.native
+  def renderRow(rowData: Any, sectionID: String, rowID: String, highlightRow: Boolean): ReactElement = js.native
+  def renderRow(rowData: Any, sectionID: String, rowID: Double): ReactElement = js.native
+  def renderRow(rowData: Any, sectionID: String, rowID: Double, highlightRow: Boolean): ReactElement = js.native
+  def renderRow(rowData: Any, sectionID: Double, rowID: String): ReactElement = js.native
+  def renderRow(rowData: Any, sectionID: Double, rowID: String, highlightRow: Boolean): ReactElement = js.native
+  def renderRow(rowData: Any, sectionID: Double, rowID: Double): ReactElement = js.native
+  def renderRow(rowData: Any, sectionID: Double, rowID: Double, highlightRow: Boolean): ReactElement = js.native
   
   /**
     * A function that returns the scrollable component in which the list rows are rendered.
@@ -118,7 +118,7 @@ trait ListViewProps
     * header.
     */
   var renderSectionHeader: js.UndefOr[
-    js.Function2[/* sectionData */ js.Any, /* sectionId */ String | Double, ReactElement]
+    js.Function2[/* sectionData */ Any, /* sectionId */ String | Double, ReactElement]
   ] = js.native
   
   /**

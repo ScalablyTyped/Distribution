@@ -37,7 +37,7 @@ object PutLogEventsRequest {
     
     inline def setLogEvents(value: InputLogEvents): Self = StObject.set(x, "logEvents", value.asInstanceOf[js.Any])
     
-    inline def setLogEventsVarargs(value: InputLogEvent*): Self = StObject.set(x, "logEvents", js.Array(value :_*))
+    inline def setLogEventsVarargs(value: InputLogEvent*): Self = StObject.set(x, "logEvents", js.Array(value*))
     
     inline def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
     

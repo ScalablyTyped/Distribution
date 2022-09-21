@@ -58,7 +58,7 @@ object XSubToolbarController {
     functionSelected: String => Unit,
     getSubToolbarName: () => String,
     opensSubToolbar: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     updateImage: () => Unit
   ): XSubToolbarController = {

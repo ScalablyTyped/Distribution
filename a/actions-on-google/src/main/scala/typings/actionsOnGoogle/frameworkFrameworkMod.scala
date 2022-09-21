@@ -9,8 +9,7 @@ import typings.actionsOnGoogle.lambdaMod.LambdaMetadata
 import typings.actionsOnGoogle.lambdaMod.Lambda_
 import typings.express.mod.Request_
 import typings.express.mod.Response_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -84,28 +83,28 @@ object frameworkFrameworkMod {
   trait Framework[THandler] extends StObject {
     
     /** @public */
-    def check(args: js.Any*): Boolean
+    def check(args: Any*): Boolean
     
     /** @public */
     def handle(base: StandardHandler): THandler
   }
   object Framework {
     
-    inline def apply[THandler](check: /* repeated */ js.Any => Boolean, handle: StandardHandler => THandler): Framework[THandler] = {
+    inline def apply[THandler](check: /* repeated */ Any => Boolean, handle: StandardHandler => THandler): Framework[THandler] = {
       val __obj = js.Dynamic.literal(check = js.Any.fromFunction1(check), handle = js.Any.fromFunction1(handle))
       __obj.asInstanceOf[Framework[THandler]]
     }
     
     extension [Self <: Framework[?], THandler](x: Self & Framework[THandler]) {
       
-      inline def setCheck(value: /* repeated */ js.Any => Boolean): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
+      inline def setCheck(value: /* repeated */ Any => Boolean): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
       
       inline def setHandle(value: StandardHandler => THandler): Self = StObject.set(x, "handle", js.Any.fromFunction1(value))
     }
   }
   
   type FrameworkMetadata = /** @public */
-  StringDictionary[js.Any]
+  StringDictionary[Any]
   
   type Frameworks = /** @public */
   StringDictionary[Framework[js.Function]]
@@ -125,7 +124,7 @@ object frameworkFrameworkMod {
        with ExpressHandler {
     
     /** @public */
-    def apply(args: js.Any*): js.Any = js.native
+    def apply(args: Any*): Any = js.native
     
     /* InferMemberOverrides */
     override def apply(
@@ -135,8 +134,14 @@ object frameworkFrameworkMod {
     ): js.Promise[StandardResponse] = js.native
     /* InferMemberOverrides */
     override def apply(
-      arg1: /* request */ Request_[ParamsDictionary, js.Any, js.Any, Query],
-      arg2: /* response */ Response_[js.Any]
+      arg1: /* request */ Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      arg2: /* response */ Response_[Any, Record[String, Any]]
     ): Unit = js.native
   }
   

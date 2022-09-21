@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("BABYLON.NativeDataBuffer")
 @js.native
-class NativeDataBuffer ()
+open class NativeDataBuffer ()
   extends StObject
      with typings.babylonjs.BABYLON.NativeDataBuffer

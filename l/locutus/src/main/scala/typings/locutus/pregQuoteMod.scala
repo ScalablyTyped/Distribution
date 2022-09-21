@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object pregQuoteMod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(str: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def apply(str: js.Any, delimiter: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(str: Unit, delimiter: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(str: Any): Any = ^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(str: Any, delimiter: Any): Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(str: Unit, delimiter: Any): Any = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("locutus/php/pcre/preg_quote", JSImport.Namespace)
   @js.native

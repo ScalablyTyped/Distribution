@@ -93,7 +93,7 @@ object XNumberFormats {
     addNewConverted: (String, Locale, Locale) => Double,
     generateFormat: (Double, Locale, Boolean, Boolean, Double, Double) => String,
     getByKey: Double => XPropertySet,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     queryKey: (String, Locale, Boolean) => Double,
     queryKeys: (Double, Locale, Boolean) => SafeArray[Double],
     release: () => Unit,

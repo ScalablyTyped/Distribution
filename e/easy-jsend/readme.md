@@ -9,10 +9,10 @@ Adds jSend response functions to express.response prototype
 | ------------------ | :-------------: |
 | Full name          | easy-jsend |
 | Keywords           | express, jsend |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 852 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 54.333333333333336 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/DeadAlready/easy-jsend)

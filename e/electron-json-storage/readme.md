@@ -1,7 +1,7 @@
 
 # Scala.js typings for electron-json-storage
 
-Typings are for version 4.0
+Typings are for version 4.5
 
 ## Library description:
 Easily write and read user settings in Electron apps
@@ -10,15 +10,12 @@ Easily write and read user settings in Electron apps
 | ------------------ | :-------------: |
 | Full name          | electron-json-storage |
 | Keywords           | electron, json, storage, user, app, data |
-| # releases         | 4 |
-| # dependents       | 41 |
-| # downloads        | 712770 |
-| # stars            | 17 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 102281.66666666667 |
+| # stars            | 1347.0 |
 
 ## Links
-- [Homepage](https://github.com/electron-userland/electron-json-storage)
-- [Bugs](https://github.com/electron-userland/electron-json-storage/issues)
-- [Repository](https://github.com/electron-userland/electron-json-storage)
 - [Npm](https://www.npmjs.com/package/electron-json-storage)
     
 

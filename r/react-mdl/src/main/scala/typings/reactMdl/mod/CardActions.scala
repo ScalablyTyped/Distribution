@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-mdl", "CardActions")
 @js.native
-class CardActions protected () extends _MDLComponent[CardActionProps] {
+open class CardActions protected () extends _MDLComponent[CardActionProps] {
   def this(props: CardActionProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: CardActionProps, context: js.Any) = this()
+  def this(props: CardActionProps, context: Any) = this()
 }

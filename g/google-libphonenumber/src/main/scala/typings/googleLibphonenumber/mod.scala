@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("google-libphonenumber", "AsYouTypeFormatter")
   @js.native
-  class AsYouTypeFormatter protected ()
+  open class AsYouTypeFormatter protected ()
     extends StObject
        with typings.googleLibphonenumber.libphonenumber.AsYouTypeFormatter {
     def this(region: String) = this()
@@ -23,7 +23,7 @@ object mod {
   
   @JSImport("google-libphonenumber", "PhoneNumber")
   @js.native
-  class PhoneNumber ()
+  open class PhoneNumber ()
     extends StObject
        with typings.googleLibphonenumber.libphonenumber.PhoneNumber {
     
@@ -242,7 +242,7 @@ object mod {
   
   @JSImport("google-libphonenumber", "PhoneNumberUtil")
   @js.native
-  class PhoneNumberUtil ()
+  open class PhoneNumberUtil ()
     extends StObject
        with typings.googleLibphonenumber.libphonenumber.PhoneNumberUtil
   /* static members */
@@ -281,7 +281,11 @@ object mod {
       
       /* 1 */ val INVALID_COUNTRY_CODE: typings.googleLibphonenumber.libphonenumber.PhoneNumberUtil.ValidationResult.INVALID_COUNTRY_CODE & Double = js.native
       
+      /* 5 */ val INVALID_LENGTH: typings.googleLibphonenumber.libphonenumber.PhoneNumberUtil.ValidationResult.INVALID_LENGTH & Double = js.native
+      
       /* 0 */ val IS_POSSIBLE: typings.googleLibphonenumber.libphonenumber.PhoneNumberUtil.ValidationResult.IS_POSSIBLE & Double = js.native
+      
+      /* 4 */ val IS_POSSIBLE_LOCAL_ONLY: typings.googleLibphonenumber.libphonenumber.PhoneNumberUtil.ValidationResult.IS_POSSIBLE_LOCAL_ONLY & Double = js.native
       
       /* 3 */ val TOO_LONG: typings.googleLibphonenumber.libphonenumber.PhoneNumberUtil.ValidationResult.TOO_LONG & Double = js.native
       
@@ -293,10 +297,10 @@ object mod {
   
   @JSImport("google-libphonenumber", "StringBuffer")
   @js.native
-  class StringBuffer protected ()
+  open class StringBuffer protected ()
     extends StObject
        with typings.googleLibphonenumber.libphonenumber.StringBuffer {
-    def this(opt_a1: js.Any, var_args: js.Any*) = this()
-    def this(opt_a1: Unit, var_args: js.Any*) = this()
+    def this(opt_a1: Any, var_args: Any*) = this()
+    def this(opt_a1: Unit, var_args: Any*) = this()
   }
 }

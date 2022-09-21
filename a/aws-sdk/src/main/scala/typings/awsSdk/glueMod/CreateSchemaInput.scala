@@ -12,7 +12,7 @@ trait CreateSchemaInput extends StObject {
   var Compatibility: js.UndefOr[typings.awsSdk.glueMod.Compatibility] = js.undefined
   
   /**
-    * The data format of the schema definition. Currently only AVRO is supported.
+    * The data format of the schema definition. Currently AVRO, JSON and PROTOBUF are supported.
     */
   var DataFormat: typings.awsSdk.glueMod.DataFormat
   
@@ -37,7 +37,7 @@ trait CreateSchemaInput extends StObject {
   var SchemaName: SchemaRegistryNameString
   
   /**
-    * AWS tags that contain a key value pair and may be searched by console, command line, or API. If specified, follows the AWS tags-on-create pattern.
+    * Amazon Web Services tags that contain a key value pair and may be searched by console, command line, or API. If specified, follows the Amazon Web Services tags-on-create pattern.
     */
   var Tags: js.UndefOr[TagsMap] = js.undefined
 }

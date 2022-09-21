@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.Media.Core.MediaBinder")
 @js.native
 /** Initializes a new instance of the MediaBinder class. */
-class MediaBinder ()
+open class MediaBinder ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Core.MediaBinder

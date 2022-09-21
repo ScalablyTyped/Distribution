@@ -17,7 +17,7 @@ object reactBuildMod {
   
   @JSImport("ionic/lib/project/react/build", "ReactBuildCLI")
   @js.native
-  class ReactBuildCLI protected () extends BuildCLI[ReactBuildOptions] {
+  open class ReactBuildCLI protected () extends BuildCLI[ReactBuildOptions] {
     def this(e: BuildRunnerDeps) = this()
     
     val prefix: /* "react-scripts" */ String = js.native
@@ -28,7 +28,7 @@ object reactBuildMod {
   
   @JSImport("ionic/lib/project/react/build", "ReactBuildRunner")
   @js.native
-  class ReactBuildRunner protected () extends BuildRunner[ReactBuildOptions] {
+  open class ReactBuildRunner protected () extends BuildRunner[ReactBuildOptions] {
     def this(e: ReactBuildRunnerDeps) = this()
     
     /* protected */ @JSName("e")

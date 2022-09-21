@@ -1,19 +1,57 @@
 package typings.hlsJs.mod
 
-import typings.std.ArrayBuffer
+import typings.hlsJs.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LoaderCallbacks extends StObject {
+trait LoaderCallbacks[T /* <: LoaderContext */] extends StObject {
   
-  def onError(error: LoaderError, context: LoaderContext): Unit = js.native
+  var onAbort: js.UndefOr[LoaderOnAbort[T]] = js.undefined
   
-  def onProgress(stats: LoaderStats, context: LoaderContext, data: String): Unit = js.native
-  def onProgress(stats: LoaderStats, context: LoaderContext, data: ArrayBuffer): Unit = js.native
+  def onError(error: Code, context: T, networkDetails: Any): Unit
+  @JSName("onError")
+  var onError_Original: LoaderOnError[T]
   
-  def onSuccess(response: LoaderResponse, stats: LoaderStats, context: LoaderContext): Unit = js.native
+  var onProgress: js.UndefOr[LoaderOnProgress[T]] = js.undefined
   
-  def onTimeout(stats: LoaderStats, context: LoaderContext): Unit = js.native
+  def onSuccess(response: LoaderResponse, stats: LoaderStats, context: T, networkDetails: Any): Unit
+  @JSName("onSuccess")
+  var onSuccess_Original: LoaderOnSuccess[T]
+  
+  def onTimeout(stats: LoaderStats, context: T, networkDetails: Any): Unit
+  @JSName("onTimeout")
+  var onTimeout_Original: LoaderOnTimeout[T]
+}
+object LoaderCallbacks {
+  
+  inline def apply[T /* <: LoaderContext */](
+    onError: (/* error */ Code, T, /* networkDetails */ Any) => Unit,
+    onSuccess: (/* response */ LoaderResponse, /* stats */ LoaderStats, T, /* networkDetails */ Any) => Unit,
+    onTimeout: (/* stats */ LoaderStats, T, /* networkDetails */ Any) => Unit
+  ): LoaderCallbacks[T] = {
+    val __obj = js.Dynamic.literal(onError = js.Any.fromFunction3(onError), onSuccess = js.Any.fromFunction4(onSuccess), onTimeout = js.Any.fromFunction3(onTimeout))
+    __obj.asInstanceOf[LoaderCallbacks[T]]
+  }
+  
+  extension [Self <: LoaderCallbacks[?], T /* <: LoaderContext */](x: Self & LoaderCallbacks[T]) {
+    
+    inline def setOnAbort(value: (/* stats */ LoaderStats, T, /* networkDetails */ Any) => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction3(value))
+    
+    inline def setOnAbortUndefined: Self = StObject.set(x, "onAbort", js.undefined)
+    
+    inline def setOnError(value: (/* error */ Code, T, /* networkDetails */ Any) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction3(value))
+    
+    inline def setOnProgress(
+      value: (/* stats */ LoaderStats, T, /* data */ String | js.typedarray.ArrayBuffer, /* networkDetails */ Any) => Unit
+    ): Self = StObject.set(x, "onProgress", js.Any.fromFunction4(value))
+    
+    inline def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
+    
+    inline def setOnSuccess(
+      value: (/* response */ LoaderResponse, /* stats */ LoaderStats, T, /* networkDetails */ Any) => Unit
+    ): Self = StObject.set(x, "onSuccess", js.Any.fromFunction4(value))
+    
+    inline def setOnTimeout(value: (/* stats */ LoaderStats, T, /* networkDetails */ Any) => Unit): Self = StObject.set(x, "onTimeout", js.Any.fromFunction3(value))
+  }
 }

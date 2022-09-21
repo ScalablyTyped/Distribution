@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("MatterJS.Runner")
 @js.native
-class Runner ()
+open class Runner ()
   extends StObject
      with typings.phaser.MatterJS.Runner {
   

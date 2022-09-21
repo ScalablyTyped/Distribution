@@ -15,6 +15,10 @@ object monacoEditorNumbers {
   inline def `1`: `1` = 1.asInstanceOf[`1`]
   
   @js.native
+  sealed trait `1.1` extends StObject
+  inline def `1.1`: `1.1` = 1.1.asInstanceOf[`1.1`]
+  
+  @js.native
   sealed trait `2` extends StObject
   inline def `2`: `2` = 2.asInstanceOf[`2`]
   

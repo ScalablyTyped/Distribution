@@ -2,7 +2,6 @@ package typings.arcgisJsApi.esri
 
 import typings.std.Object
 import typings.std.PropertyKey
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,28 +36,28 @@ trait RequestInterceptor
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#RequestInterceptor)
     */
-  var headers: js.UndefOr[js.Any] = js.undefined
+  var headers: js.UndefOr[Any] = js.undefined
   
   /**
     * Sets or adds query parameters into `requestOptions.query`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#RequestInterceptor)
     */
-  var query: js.UndefOr[js.Any] = js.undefined
+  var query: js.UndefOr[Any] = js.undefined
   
   /**
     * Hardcodes the [response](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestResponse).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#RequestInterceptor)
     */
-  var responseData: js.UndefOr[js.Any] = js.undefined
+  var responseData: js.UndefOr[Any] = js.undefined
   
   /**
     * Specifies the URL(s) to apply to the interceptors.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#RequestInterceptor)
     */
-  var urls: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.undefined
+  var urls: js.UndefOr[String | js.RegExp | (js.Array[String | js.RegExp])] = js.undefined
 }
 object RequestInterceptor {
   
@@ -73,34 +72,34 @@ object RequestInterceptor {
   
   extension [Self <: RequestInterceptor](x: Self) {
     
-    inline def setAfter(value: /* response */ RequestResponse => Unit): Self = StObject.set(x, "after", js.Any.fromFunction1(value))
+    inline def setAfter(value: /* response */ RequestResponse => scala.Unit): Self = StObject.set(x, "after", js.Any.fromFunction1(value))
     
     inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
     
-    inline def setBefore(value: /* params */ js.Any => js.Any): Self = StObject.set(x, "before", js.Any.fromFunction1(value))
+    inline def setBefore(value: /* params */ Any => Any): Self = StObject.set(x, "before", js.Any.fromFunction1(value))
     
     inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
     
-    inline def setError(value: /* error */ Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    inline def setError(value: /* error */ Error => scala.Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    inline def setResponseData(value: js.Any): Self = StObject.set(x, "responseData", value.asInstanceOf[js.Any])
+    inline def setResponseData(value: Any): Self = StObject.set(x, "responseData", value.asInstanceOf[js.Any])
     
     inline def setResponseDataUndefined: Self = StObject.set(x, "responseData", js.undefined)
     
-    inline def setUrls(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
+    inline def setUrls(value: String | js.RegExp | (js.Array[String | js.RegExp])): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
     
     inline def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
     
-    inline def setUrlsVarargs(value: (String | RegExp)*): Self = StObject.set(x, "urls", js.Array(value :_*))
+    inline def setUrlsVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "urls", js.Array(value*))
   }
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.Global")
 @js.native
-/* private */ class Global ()
+/* private */ open class Global ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.Global {
   
@@ -42,7 +42,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val CommandBars_Original: CommandBars = js.native
   
   /* CompleteClass */
-  override val Dialogs: js.Any = js.native
+  override val Dialogs: Any = js.native
   
   /* CompleteClass */
   override val FileConverters: typings.activexPowerpoint.PowerPoint.FileConverters = js.native

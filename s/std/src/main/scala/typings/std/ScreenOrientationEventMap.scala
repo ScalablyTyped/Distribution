@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ScreenOrientationEventMap extends StObject {
   
+  /* standard dom */
   var change: Event
 }
 object ScreenOrientationEventMap {

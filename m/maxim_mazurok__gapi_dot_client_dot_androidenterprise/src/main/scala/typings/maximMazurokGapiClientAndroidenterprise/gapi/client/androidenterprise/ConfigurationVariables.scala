@@ -29,6 +29,6 @@ object ConfigurationVariables {
     
     inline def setVariableSetUndefined: Self = StObject.set(x, "variableSet", js.undefined)
     
-    inline def setVariableSetVarargs(value: VariableSet*): Self = StObject.set(x, "variableSet", js.Array(value :_*))
+    inline def setVariableSetVarargs(value: VariableSet*): Self = StObject.set(x, "variableSet", js.Array(value*))
   }
 }

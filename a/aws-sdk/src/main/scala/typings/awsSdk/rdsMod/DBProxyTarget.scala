@@ -22,6 +22,11 @@ trait DBProxyTarget extends StObject {
   var RdsResourceId: js.UndefOr[String] = js.undefined
   
   /**
+    * A value that indicates whether the target of the proxy can be used for read/write or read-only operations.
+    */
+  var Role: js.UndefOr[TargetRole] = js.undefined
+  
+  /**
     * The Amazon Resource Name (ARN) for the RDS DB instance or Aurora DB cluster.
     */
   var TargetArn: js.UndefOr[String] = js.undefined
@@ -61,6 +66,10 @@ object DBProxyTarget {
     inline def setRdsResourceId(value: String): Self = StObject.set(x, "RdsResourceId", value.asInstanceOf[js.Any])
     
     inline def setRdsResourceIdUndefined: Self = StObject.set(x, "RdsResourceId", js.undefined)
+    
+    inline def setRole(value: TargetRole): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
+    
+    inline def setRoleUndefined: Self = StObject.set(x, "Role", js.undefined)
     
     inline def setTargetArn(value: String): Self = StObject.set(x, "TargetArn", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,7 @@ object receiverBinaryMod {
     *
     * @param {string} version the Cloud Event specification version to use. Default "1.0"
     */
-  class ^ ()
+  open class ^ ()
     extends StObject
        with BinaryHTTPReceiver {
     def this(version: String) = this()

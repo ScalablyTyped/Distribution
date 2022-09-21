@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ASPxClientWebDocumentViewerBrickNavigation")
 @js.native
-class ASPxClientWebDocumentViewerBrickNavigation ()
+open class ASPxClientWebDocumentViewerBrickNavigation ()
   extends StObject
      with typings.devexpressWeb.ASPxClientWebDocumentViewerBrickNavigation {
   

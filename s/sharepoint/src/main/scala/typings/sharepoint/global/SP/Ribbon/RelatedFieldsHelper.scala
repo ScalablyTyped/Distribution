@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.Ribbon.RelatedFieldsHelper")
 @js.native
-class RelatedFieldsHelper ()
+open class RelatedFieldsHelper ()
   extends StObject
      with IRelatedFieldsInfoRequestor

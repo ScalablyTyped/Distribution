@@ -14,7 +14,7 @@ trait SchemaDeveloperComment extends StObject {
   /**
     * The content of the comment, i.e. reply body.
     */
-  var text: js.UndefOr[String] = js.undefined
+  var text: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaDeveloperComment {
   
@@ -30,6 +30,8 @@ object SchemaDeveloperComment {
     inline def setLastModifiedUndefined: Self = StObject.set(x, "lastModified", js.undefined)
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextNull: Self = StObject.set(x, "text", null)
     
     inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }

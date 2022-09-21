@@ -10,10 +10,10 @@ Port mapping via UPnP APIs
 | ------------------ | :-------------: |
 | Full name          | nat-upnp |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 29 |
-| # downloads        | 27483 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 883.3333333333334 |
+| # stars            | 139.0 |
 
 ## Links
 - [Homepage](https://github.com/indutny/node-nat-upnp)

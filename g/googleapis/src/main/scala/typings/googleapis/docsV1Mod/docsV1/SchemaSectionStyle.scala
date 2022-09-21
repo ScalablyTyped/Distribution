@@ -4,28 +4,97 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The styling that applies to a section.
-  */
 trait SchemaSectionStyle extends StObject {
   
   /**
-    * The section&#39;s columns properties.  If empty, the section contains one
-    * column with the default properties in the Docs editor.
+    * The section's columns properties. If empty, the section contains one column with the default properties in the Docs editor. A section can be updated to have no more than three columns. When updating this property, setting a concrete value is required. Unsetting this property will result in a 400 bad request error.
     */
   var columnProperties: js.UndefOr[js.Array[SchemaSectionColumnProperties]] = js.undefined
   
   /**
-    * The style of column separators.  This style can be set even when there is
-    * one column in the section.
+    * The style of column separators. This style can be set even when there is one column in the section. When updating this property, setting a concrete value is required. Unsetting this property results in a 400 bad request error.
     */
-  var columnSeparatorStyle: js.UndefOr[String] = js.undefined
+  var columnSeparatorStyle: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The content direction of this section. If unset, the value defaults to
-    * LEFT_TO_RIGHT.
+    * The content direction of this section. If unset, the value defaults to LEFT_TO_RIGHT. When updating this property, setting a concrete value is required. Unsetting this property results in a 400 bad request error.
     */
-  var contentDirection: js.UndefOr[String] = js.undefined
+  var contentDirection: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * The ID of the default footer. If unset, the value inherits from the previous SectionBreak's SectionStyle. If the value is unset in the first SectionBreak, it inherits from DocumentStyle's default_footer_id. This property is read-only.
+    */
+  var defaultFooterId: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * The ID of the default header. If unset, the value inherits from the previous SectionBreak's SectionStyle. If the value is unset in the first SectionBreak, it inherits from DocumentStyle's default_header_id. This property is read-only.
+    */
+  var defaultHeaderId: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * The ID of the footer used only for even pages. If the value of DocumentStyle's use_even_page_header_footer is true, this value is used for the footers on even pages in the section. If it is false, the footers on even pages uses the default_footer_id. If unset, the value inherits from the previous SectionBreak's SectionStyle. If the value is unset in the first SectionBreak, it inherits from DocumentStyle's even_page_footer_id. This property is read-only.
+    */
+  var evenPageFooterId: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * The ID of the header used only for even pages. If the value of DocumentStyle's use_even_page_header_footer is true, this value is used for the headers on even pages in the section. If it is false, the headers on even pages uses the default_header_id. If unset, the value inherits from the previous SectionBreak's SectionStyle. If the value is unset in the first SectionBreak, it inherits from DocumentStyle's even_page_header_id. This property is read-only.
+    */
+  var evenPageHeaderId: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * The ID of the footer used only for the first page of the section. If use_first_page_header_footer is true, this value is used for the footer on the first page of the section. If it is false, the footer on the first page of the section uses the default_footer_id. If unset, the value inherits from the previous SectionBreak's SectionStyle. If the value is unset in the first SectionBreak, it inherits from DocumentStyle's first_page_footer_id. This property is read-only.
+    */
+  var firstPageFooterId: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * The ID of the header used only for the first page of the section. If use_first_page_header_footer is true, this value is used for the header on the first page of the section. If it is false, the header on the first page of the section uses the default_header_id. If unset, the value inherits from the previous SectionBreak's SectionStyle. If the value is unset in the first SectionBreak, it inherits from DocumentStyle's first_page_header_id. This property is read-only.
+    */
+  var firstPageHeaderId: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * The bottom page margin of the section. If unset, uses margin_bottom from DocumentStyle. When updating this property, setting a concrete value is required. Unsetting this property results in a 400 bad request error.
+    */
+  var marginBottom: js.UndefOr[SchemaDimension] = js.undefined
+  
+  /**
+    * The footer margin of the section. If unset, uses margin_footer from DocumentStyle. If updated, use_custom_header_footer_margins is set to true on DocumentStyle. The value of use_custom_header_footer_margins on DocumentStyle indicates if a footer margin is being respected for this section When updating this property, setting a concrete value is required. Unsetting this property results in a 400 bad request error.
+    */
+  var marginFooter: js.UndefOr[SchemaDimension] = js.undefined
+  
+  /**
+    * The header margin of the section. If unset, uses margin_header from DocumentStyle. If updated, use_custom_header_footer_margins is set to true on DocumentStyle. The value of use_custom_header_footer_margins on DocumentStyle indicates if a header margin is being respected for this section. When updating this property, setting a concrete value is required. Unsetting this property results in a 400 bad request error.
+    */
+  var marginHeader: js.UndefOr[SchemaDimension] = js.undefined
+  
+  /**
+    * The left page margin of the section. If unset, uses margin_left from DocumentStyle. Updating left margin causes columns in this section to resize. Since the margin affects column width, it is applied before column properties. When updating this property, setting a concrete value is required. Unsetting this property results in a 400 bad request error.
+    */
+  var marginLeft: js.UndefOr[SchemaDimension] = js.undefined
+  
+  /**
+    * The right page margin of the section. If unset, uses margin_right from DocumentStyle. Updating right margin causes columns in this section to resize. Since the margin affects column width, it is applied before column properties. When updating this property, setting a concrete value is required. Unsetting this property results in a 400 bad request error.
+    */
+  var marginRight: js.UndefOr[SchemaDimension] = js.undefined
+  
+  /**
+    * The top page margin of the section. If unset, uses margin_top from DocumentStyle. When updating this property, setting a concrete value is required. Unsetting this property results in a 400 bad request error.
+    */
+  var marginTop: js.UndefOr[SchemaDimension] = js.undefined
+  
+  /**
+    * The page number from which to start counting the number of pages for this section. If unset, page numbering continues from the previous section. If the value is unset in the first SectionBreak, refer to DocumentStyle's page_number_start. When updating this property, setting a concrete value is required. Unsetting this property results in a 400 bad request error.
+    */
+  var pageNumberStart: js.UndefOr[Double | Null] = js.undefined
+  
+  /**
+    * Output only. The type of section.
+    */
+  var sectionType: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Indicates whether to use the first page header / footer IDs for the first page of the section. If unset, it inherits from DocumentStyle's use_first_page_header_footer for the first section. If the value is unset for subsequent sectors, it should be interpreted as false. When updating this property, setting a concrete value is required. Unsetting this property results in a 400 bad request error.
+    */
+  var useFirstPageHeaderFooter: js.UndefOr[Boolean | Null] = js.undefined
 }
 object SchemaSectionStyle {
   
@@ -40,14 +109,96 @@ object SchemaSectionStyle {
     
     inline def setColumnPropertiesUndefined: Self = StObject.set(x, "columnProperties", js.undefined)
     
-    inline def setColumnPropertiesVarargs(value: SchemaSectionColumnProperties*): Self = StObject.set(x, "columnProperties", js.Array(value :_*))
+    inline def setColumnPropertiesVarargs(value: SchemaSectionColumnProperties*): Self = StObject.set(x, "columnProperties", js.Array(value*))
     
     inline def setColumnSeparatorStyle(value: String): Self = StObject.set(x, "columnSeparatorStyle", value.asInstanceOf[js.Any])
+    
+    inline def setColumnSeparatorStyleNull: Self = StObject.set(x, "columnSeparatorStyle", null)
     
     inline def setColumnSeparatorStyleUndefined: Self = StObject.set(x, "columnSeparatorStyle", js.undefined)
     
     inline def setContentDirection(value: String): Self = StObject.set(x, "contentDirection", value.asInstanceOf[js.Any])
     
+    inline def setContentDirectionNull: Self = StObject.set(x, "contentDirection", null)
+    
     inline def setContentDirectionUndefined: Self = StObject.set(x, "contentDirection", js.undefined)
+    
+    inline def setDefaultFooterId(value: String): Self = StObject.set(x, "defaultFooterId", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultFooterIdNull: Self = StObject.set(x, "defaultFooterId", null)
+    
+    inline def setDefaultFooterIdUndefined: Self = StObject.set(x, "defaultFooterId", js.undefined)
+    
+    inline def setDefaultHeaderId(value: String): Self = StObject.set(x, "defaultHeaderId", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultHeaderIdNull: Self = StObject.set(x, "defaultHeaderId", null)
+    
+    inline def setDefaultHeaderIdUndefined: Self = StObject.set(x, "defaultHeaderId", js.undefined)
+    
+    inline def setEvenPageFooterId(value: String): Self = StObject.set(x, "evenPageFooterId", value.asInstanceOf[js.Any])
+    
+    inline def setEvenPageFooterIdNull: Self = StObject.set(x, "evenPageFooterId", null)
+    
+    inline def setEvenPageFooterIdUndefined: Self = StObject.set(x, "evenPageFooterId", js.undefined)
+    
+    inline def setEvenPageHeaderId(value: String): Self = StObject.set(x, "evenPageHeaderId", value.asInstanceOf[js.Any])
+    
+    inline def setEvenPageHeaderIdNull: Self = StObject.set(x, "evenPageHeaderId", null)
+    
+    inline def setEvenPageHeaderIdUndefined: Self = StObject.set(x, "evenPageHeaderId", js.undefined)
+    
+    inline def setFirstPageFooterId(value: String): Self = StObject.set(x, "firstPageFooterId", value.asInstanceOf[js.Any])
+    
+    inline def setFirstPageFooterIdNull: Self = StObject.set(x, "firstPageFooterId", null)
+    
+    inline def setFirstPageFooterIdUndefined: Self = StObject.set(x, "firstPageFooterId", js.undefined)
+    
+    inline def setFirstPageHeaderId(value: String): Self = StObject.set(x, "firstPageHeaderId", value.asInstanceOf[js.Any])
+    
+    inline def setFirstPageHeaderIdNull: Self = StObject.set(x, "firstPageHeaderId", null)
+    
+    inline def setFirstPageHeaderIdUndefined: Self = StObject.set(x, "firstPageHeaderId", js.undefined)
+    
+    inline def setMarginBottom(value: SchemaDimension): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
+    
+    inline def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
+    
+    inline def setMarginFooter(value: SchemaDimension): Self = StObject.set(x, "marginFooter", value.asInstanceOf[js.Any])
+    
+    inline def setMarginFooterUndefined: Self = StObject.set(x, "marginFooter", js.undefined)
+    
+    inline def setMarginHeader(value: SchemaDimension): Self = StObject.set(x, "marginHeader", value.asInstanceOf[js.Any])
+    
+    inline def setMarginHeaderUndefined: Self = StObject.set(x, "marginHeader", js.undefined)
+    
+    inline def setMarginLeft(value: SchemaDimension): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+    
+    inline def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
+    
+    inline def setMarginRight(value: SchemaDimension): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
+    
+    inline def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
+    
+    inline def setMarginTop(value: SchemaDimension): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+    
+    inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
+    
+    inline def setPageNumberStart(value: Double): Self = StObject.set(x, "pageNumberStart", value.asInstanceOf[js.Any])
+    
+    inline def setPageNumberStartNull: Self = StObject.set(x, "pageNumberStart", null)
+    
+    inline def setPageNumberStartUndefined: Self = StObject.set(x, "pageNumberStart", js.undefined)
+    
+    inline def setSectionType(value: String): Self = StObject.set(x, "sectionType", value.asInstanceOf[js.Any])
+    
+    inline def setSectionTypeNull: Self = StObject.set(x, "sectionType", null)
+    
+    inline def setSectionTypeUndefined: Self = StObject.set(x, "sectionType", js.undefined)
+    
+    inline def setUseFirstPageHeaderFooter(value: Boolean): Self = StObject.set(x, "useFirstPageHeaderFooter", value.asInstanceOf[js.Any])
+    
+    inline def setUseFirstPageHeaderFooterNull: Self = StObject.set(x, "useFirstPageHeaderFooter", null)
+    
+    inline def setUseFirstPageHeaderFooterUndefined: Self = StObject.set(x, "useFirstPageHeaderFooter", js.undefined)
   }
 }

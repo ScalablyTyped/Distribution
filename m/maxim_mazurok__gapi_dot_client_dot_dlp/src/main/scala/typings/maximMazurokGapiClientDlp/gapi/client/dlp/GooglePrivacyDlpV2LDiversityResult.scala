@@ -22,6 +22,6 @@ object GooglePrivacyDlpV2LDiversityResult {
     
     inline def setSensitiveValueFrequencyHistogramBucketsUndefined: Self = StObject.set(x, "sensitiveValueFrequencyHistogramBuckets", js.undefined)
     
-    inline def setSensitiveValueFrequencyHistogramBucketsVarargs(value: GooglePrivacyDlpV2LDiversityHistogramBucket*): Self = StObject.set(x, "sensitiveValueFrequencyHistogramBuckets", js.Array(value :_*))
+    inline def setSensitiveValueFrequencyHistogramBucketsVarargs(value: GooglePrivacyDlpV2LDiversityHistogramBucket*): Self = StObject.set(x, "sensitiveValueFrequencyHistogramBuckets", js.Array(value*))
   }
 }

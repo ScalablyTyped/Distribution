@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "PhysicsHelper")
 @js.native
-class PhysicsHelper protected ()
+open class PhysicsHelper protected ()
   extends typings.babylonjs.legacyMod.PhysicsHelper {
   /**
     * Initializes the Physics helper

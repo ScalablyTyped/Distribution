@@ -1,9 +1,11 @@
 package typings.requestStats
 
+import org.scalablytyped.runtime.Instantiable1
 import typings.node.eventsMod.EventEmitter
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.Server
 import typings.node.httpMod.ServerResponse
+import typings.node.nodeNetMod.Socket
 import typings.requestStats.anon.Bytes
 import typings.requestStats.anon.BytesDelta
 import typings.requestStats.anon.Headers
@@ -24,8 +26,8 @@ object mod {
     * @param res An instance of a HTTP response.
     * @param statsCallback A callback which will be called with a stats object when the HTTP request completes.
     */
-  inline def apply(req: IncomingMessage, res: ServerResponse): StatsEmitter = (^.asInstanceOf[js.Dynamic].apply(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any])).asInstanceOf[StatsEmitter]
-  inline def apply(req: IncomingMessage, res: ServerResponse, statsCallback: StatsCallback): StatsEmitter = (^.asInstanceOf[js.Dynamic].apply(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], statsCallback.asInstanceOf[js.Any])).asInstanceOf[StatsEmitter]
+  inline def apply(req: IncomingMessage, res: ServerResponse[IncomingMessage]): StatsEmitter = (^.asInstanceOf[js.Dynamic].apply(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any])).asInstanceOf[StatsEmitter]
+  inline def apply(req: IncomingMessage, res: ServerResponse[IncomingMessage], statsCallback: StatsCallback): StatsEmitter = (^.asInstanceOf[js.Dynamic].apply(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], statsCallback.asInstanceOf[js.Any])).asInstanceOf[StatsEmitter]
   /**
     * Attach request-stats to a HTTP server.
     * If no callback is provided, you can later attach a listener on the "complete" event.
@@ -33,10 +35,44 @@ object mod {
     * @param server Initialize request-stats with an instance a HTTP server.
     * @param statsCallback A callback which will be called for each completed HTTP request with a stats object.
     */
-  inline def apply(server: Server): StatsEmitter = ^.asInstanceOf[js.Dynamic].apply(server.asInstanceOf[js.Any]).asInstanceOf[StatsEmitter]
-  inline def apply(server: Server, statsCallback: StatsCallback): StatsEmitter = (^.asInstanceOf[js.Dynamic].apply(server.asInstanceOf[js.Any], statsCallback.asInstanceOf[js.Any])).asInstanceOf[StatsEmitter]
-  inline def apply(server: typings.node.httpsMod.Server): StatsEmitter = ^.asInstanceOf[js.Dynamic].apply(server.asInstanceOf[js.Any]).asInstanceOf[StatsEmitter]
-  inline def apply(server: typings.node.httpsMod.Server, statsCallback: StatsCallback): StatsEmitter = (^.asInstanceOf[js.Dynamic].apply(server.asInstanceOf[js.Any], statsCallback.asInstanceOf[js.Any])).asInstanceOf[StatsEmitter]
+  inline def apply(
+    server: Server[
+      Instantiable1[/* socket */ Socket, IncomingMessage], 
+      Instantiable1[
+        /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+        ServerResponse[IncomingMessage]
+      ]
+    ]
+  ): StatsEmitter = ^.asInstanceOf[js.Dynamic].apply(server.asInstanceOf[js.Any]).asInstanceOf[StatsEmitter]
+  inline def apply(
+    server: Server[
+      Instantiable1[/* socket */ Socket, IncomingMessage], 
+      Instantiable1[
+        /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+        ServerResponse[IncomingMessage]
+      ]
+    ],
+    statsCallback: StatsCallback
+  ): StatsEmitter = (^.asInstanceOf[js.Dynamic].apply(server.asInstanceOf[js.Any], statsCallback.asInstanceOf[js.Any])).asInstanceOf[StatsEmitter]
+  inline def apply(
+    server: typings.node.httpsMod.Server[
+      Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+      Instantiable1[
+        /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+        typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+      ]
+    ]
+  ): StatsEmitter = ^.asInstanceOf[js.Dynamic].apply(server.asInstanceOf[js.Any]).asInstanceOf[StatsEmitter]
+  inline def apply(
+    server: typings.node.httpsMod.Server[
+      Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+      Instantiable1[
+        /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+        typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+      ]
+    ],
+    statsCallback: StatsCallback
+  ): StatsEmitter = (^.asInstanceOf[js.Dynamic].apply(server.asInstanceOf[js.Any], statsCallback.asInstanceOf[js.Any])).asInstanceOf[StatsEmitter]
   
   @JSImport("request-stats", JSImport.Namespace)
   @js.native
@@ -156,10 +192,7 @@ object mod {
     @JSName("emit")
     def emit_request(event: request, req: Request): Boolean = js.native
     
-    @JSName("listenerCount")
-    def listenerCount_complete(`type`: complete): Double = js.native
-    @JSName("listenerCount")
-    def listenerCount_request(`type`: request): Double = js.native
+    def listenerCount(`type`: complete | request): Double = js.native
     
     @JSName("listeners")
     def listeners_complete(event: complete): js.Array[StatsCallback] = js.native
@@ -196,10 +229,7 @@ object mod {
     @JSName("rawListeners")
     def rawListeners_request(event: request): js.Array[js.Function1[/* req */ Request, Unit]] = js.native
     
-    @JSName("removeAllListeners")
-    def removeAllListeners_complete(event: complete): this.type = js.native
-    @JSName("removeAllListeners")
-    def removeAllListeners_request(event: request): this.type = js.native
+    def removeAllListeners(event: complete | request): this.type = js.native
     
     @JSName("removeListener")
     def removeListener_complete(event: complete, listener: StatsCallback): this.type = js.native

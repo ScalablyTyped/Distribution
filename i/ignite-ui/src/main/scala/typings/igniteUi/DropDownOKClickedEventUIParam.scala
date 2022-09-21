@@ -14,12 +14,12 @@ trait DropDownOKClickedEventUIParam extends StObject {
   /**
     * Gets data for summary methods. Format of event data is {type: "min", active: false};
     */
-  var eventData: js.UndefOr[js.Any] = js.undefined
+  var eventData: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets the igGridSummaries widget object.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
 }
 object DropDownOKClickedEventUIParam {
   
@@ -34,11 +34,11 @@ object DropDownOKClickedEventUIParam {
     
     inline def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
     
-    inline def setEventData(value: js.Any): Self = StObject.set(x, "eventData", value.asInstanceOf[js.Any])
+    inline def setEventData(value: Any): Self = StObject.set(x, "eventData", value.asInstanceOf[js.Any])
     
     inline def setEventDataUndefined: Self = StObject.set(x, "eventData", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }

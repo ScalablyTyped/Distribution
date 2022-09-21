@@ -6,14 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TextStream extends StObject {
   
-  /** The codec for this text stream. The default is `"webvtt"`. Supported text codecs: - 'srt' - 'ttml' - 'cea608' - 'cea708' - 'webvtt' */
+  /** The codec for this text stream. The default is `webvtt`. Supported text codecs: - `srt` - `ttml` - `cea608` - `cea708` - `webvtt` */
   var codec: js.UndefOr[String] = js.undefined
   
-  /** Required. The BCP-47 language code, such as `"en-US"` or `"sr-Latn"`. For more information, see https://www.unicode.org/reports/tr35/#Unicode_locale_identifier. */
-  var languageCode: js.UndefOr[String] = js.undefined
-  
   /** The mapping for the `Job.edit_list` atoms with text `EditAtom.inputs`. */
-  var mapping: js.UndefOr[js.Array[TextAtom]] = js.undefined
+  var mapping: js.UndefOr[js.Array[TextMapping]] = js.undefined
 }
 object TextStream {
   
@@ -28,14 +25,10 @@ object TextStream {
     
     inline def setCodecUndefined: Self = StObject.set(x, "codec", js.undefined)
     
-    inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
-    
-    inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
-    
-    inline def setMapping(value: js.Array[TextAtom]): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
+    inline def setMapping(value: js.Array[TextMapping]): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
     
     inline def setMappingUndefined: Self = StObject.set(x, "mapping", js.undefined)
     
-    inline def setMappingVarargs(value: TextAtom*): Self = StObject.set(x, "mapping", js.Array(value :_*))
+    inline def setMappingVarargs(value: TextMapping*): Self = StObject.set(x, "mapping", js.Array(value*))
   }
 }

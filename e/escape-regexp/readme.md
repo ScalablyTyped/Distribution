@@ -10,10 +10,10 @@ Escape regular expression special characters
 | ------------------ | :-------------: |
 | Full name          | escape-regexp |
 | Keywords           | escape, regexp, utility |
-| # releases         | 0 |
-| # dependents       | 105 |
-| # downloads        | 30573876 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1908460.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/escape-regexp)

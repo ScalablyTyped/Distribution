@@ -32,6 +32,6 @@ object ListTasksResponse {
     
     inline def setTasksUndefined: Self = StObject.set(x, "tasks", js.undefined)
     
-    inline def setTasksVarargs(value: Task*): Self = StObject.set(x, "tasks", js.Array(value :_*))
+    inline def setTasksVarargs(value: Task*): Self = StObject.set(x, "tasks", js.Array(value*))
   }
 }

@@ -7,40 +7,52 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("TreeWalker")
 @js.native
-class TreeWalker ()
+/* standard dom */
+open class TreeWalker ()
   extends StObject
      with typings.std.TreeWalker {
   
+  /* standard dom */
   /* CompleteClass */
   var currentNode: typings.std.Node = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override val filter: typings.std.NodeFilter | Null = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override def firstChild(): typings.std.Node | Null = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override def lastChild(): typings.std.Node | Null = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override def nextNode(): typings.std.Node | Null = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override def nextSibling(): typings.std.Node | Null = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override def parentNode(): typings.std.Node | Null = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override def previousNode(): typings.std.Node | Null = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override def previousSibling(): typings.std.Node | Null = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override val root: typings.std.Node = js.native
   
+  /* standard dom */
   /* CompleteClass */
   override val whatToShow: Double = js.native
 }

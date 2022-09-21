@@ -29,7 +29,7 @@ object pluploadFilters {
     
     inline def setMime_typesUndefined: Self = StObject.set(x, "mime_types", js.undefined)
     
-    inline def setMime_typesVarargs(value: pluploadFiltersMimeTypes*): Self = StObject.set(x, "mime_types", js.Array(value :_*))
+    inline def setMime_typesVarargs(value: pluploadFiltersMimeTypes*): Self = StObject.set(x, "mime_types", js.Array(value*))
     
     inline def setPrevent_duplicates(value: Boolean): Self = StObject.set(x, "prevent_duplicates", value.asInstanceOf[js.Any])
     

@@ -6,9 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `28` extends StObject {
   
-  var dark: js.UndefOr[js.Array[String]] = js.undefined
-  
-  var light: js.UndefOr[js.Array[String]] = js.undefined
+  var duration: js.UndefOr[Double] = js.undefined
 }
 object `28` {
   
@@ -19,16 +17,8 @@ object `28` {
   
   extension [Self <: `28`](x: Self) {
     
-    inline def setDark(value: js.Array[String]): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    inline def setDarkUndefined: Self = StObject.set(x, "dark", js.undefined)
-    
-    inline def setDarkVarargs(value: String*): Self = StObject.set(x, "dark", js.Array(value :_*))
-    
-    inline def setLight(value: js.Array[String]): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
-    
-    inline def setLightUndefined: Self = StObject.set(x, "light", js.undefined)
-    
-    inline def setLightVarargs(value: String*): Self = StObject.set(x, "light", js.Array(value :_*))
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
   }
 }

@@ -9,7 +9,7 @@ object contextMod {
   
   @JSImport("yadda/lib/Context", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Context {
     def this(properties: Properties) = this()
@@ -42,5 +42,5 @@ object contextMod {
     }
   }
   
-  type Properties = StringDictionary[js.Any]
+  type Properties = StringDictionary[Any]
 }

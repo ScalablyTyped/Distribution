@@ -16,7 +16,7 @@ object sshListMod {
   - typings.ionic.definitionsMod.ICommand because Already inherited
   - typings.ionic.definitionsMod.CommandPreRun because var conflicts: env, namespace, project. Inlined preRun */ @JSImport("ionic/commands/ssh/list", "SSHListCommand")
   @js.native
-  class SSHListCommand protected () extends SSHBaseCommand {
+  open class SSHListCommand protected () extends SSHBaseCommand {
     def this(namespace: INamespace) = this()
     
     def preRun(): js.Promise[Unit] = js.native

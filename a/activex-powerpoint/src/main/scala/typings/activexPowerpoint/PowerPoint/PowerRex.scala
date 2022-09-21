@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PowerRex extends StObject {
   
-  def OnAsfEncoderEvent(erorCode: js.Any, bstrErrorDesc: js.Any): Unit
+  def OnAsfEncoderEvent(erorCode: Any, bstrErrorDesc: Any): Unit
   
   /* private */ @JSName("PowerPoint.PowerRex_typekey")
   var PowerPointDotPowerRex_typekey: PowerRex
 }
 object PowerRex {
   
-  inline def apply(OnAsfEncoderEvent: (js.Any, js.Any) => Unit, PowerPointDotPowerRex_typekey: PowerRex): PowerRex = {
+  inline def apply(OnAsfEncoderEvent: (Any, Any) => Unit, PowerPointDotPowerRex_typekey: PowerRex): PowerRex = {
     val __obj = js.Dynamic.literal(OnAsfEncoderEvent = js.Any.fromFunction2(OnAsfEncoderEvent))
     __obj.updateDynamic("PowerPoint.PowerRex_typekey")(PowerPointDotPowerRex_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[PowerRex]
@@ -21,7 +21,7 @@ object PowerRex {
   
   extension [Self <: PowerRex](x: Self) {
     
-    inline def setOnAsfEncoderEvent(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "OnAsfEncoderEvent", js.Any.fromFunction2(value))
+    inline def setOnAsfEncoderEvent(value: (Any, Any) => Unit): Self = StObject.set(x, "OnAsfEncoderEvent", js.Any.fromFunction2(value))
     
     inline def setPowerPointDotPowerRex_typekey(value: PowerRex): Self = StObject.set(x, "PowerPoint.PowerRex_typekey", value.asInstanceOf[js.Any])
   }

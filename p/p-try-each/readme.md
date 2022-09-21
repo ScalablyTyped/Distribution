@@ -10,10 +10,10 @@ Runs promise-returning functions in series but stops whenever any of the functio
 | ------------------ | :-------------: |
 | Full name          | p-try-each |
 | Keywords           | sequential, promises, promise, series, async, await, array, tasks |
-| # releases         | 4 |
-| # dependents       | 1 |
-| # downloads        | 132290 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 25431.666666666668 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/PedroMiguelSS/p-try-each#readme)

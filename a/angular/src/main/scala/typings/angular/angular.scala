@@ -31,13 +31,13 @@ object angular {
   trait CanDeactivate extends StObject {
     
     @JSName("$routerCanDeactivate")
-    def $routerCanDeactivate(): Boolean | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPromise<boolean> */ js.Any) = js.native
+    def $routerCanDeactivate(): Boolean | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPromise<boolean> */ Any) = js.native
     @JSName("$routerCanDeactivate")
-    def $routerCanDeactivate(next: Unit, prev: ComponentInstruction): Boolean | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPromise<boolean> */ js.Any) = js.native
+    def $routerCanDeactivate(next: Unit, prev: ComponentInstruction): Boolean | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPromise<boolean> */ Any) = js.native
     @JSName("$routerCanDeactivate")
-    def $routerCanDeactivate(next: ComponentInstruction): Boolean | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPromise<boolean> */ js.Any) = js.native
+    def $routerCanDeactivate(next: ComponentInstruction): Boolean | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPromise<boolean> */ Any) = js.native
     @JSName("$routerCanDeactivate")
-    def $routerCanDeactivate(next: ComponentInstruction, prev: ComponentInstruction): Boolean | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPromise<boolean> */ js.Any) = js.native
+    def $routerCanDeactivate(next: ComponentInstruction, prev: ComponentInstruction): Boolean | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPromise<boolean> */ Any) = js.native
   }
   
   /**
@@ -64,13 +64,13 @@ object angular {
   trait CanReuse extends StObject {
     
     @JSName("$routerCanReuse")
-    def $routerCanReuse(): Boolean | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPromise<boolean> */ js.Any) = js.native
+    def $routerCanReuse(): Boolean | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPromise<boolean> */ Any) = js.native
     @JSName("$routerCanReuse")
-    def $routerCanReuse(next: Unit, prev: ComponentInstruction): Boolean | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPromise<boolean> */ js.Any) = js.native
+    def $routerCanReuse(next: Unit, prev: ComponentInstruction): Boolean | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPromise<boolean> */ Any) = js.native
     @JSName("$routerCanReuse")
-    def $routerCanReuse(next: ComponentInstruction): Boolean | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPromise<boolean> */ js.Any) = js.native
+    def $routerCanReuse(next: ComponentInstruction): Boolean | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPromise<boolean> */ Any) = js.native
     @JSName("$routerCanReuse")
-    def $routerCanReuse(next: ComponentInstruction, prev: ComponentInstruction): Boolean | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPromise<boolean> */ js.Any) = js.native
+    def $routerCanReuse(next: ComponentInstruction, prev: ComponentInstruction): Boolean | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPromise<boolean> */ Any) = js.native
   }
   
   /**
@@ -124,11 +124,11 @@ object angular {
     */
   trait ComponentInstruction extends StObject {
     
-    var componentType: js.Any
+    var componentType: Any
     
     var data: RouteData
     
-    var params: StringDictionary[js.Any]
+    var params: StringDictionary[Any]
     
     var reuse: Boolean
     
@@ -145,9 +145,9 @@ object angular {
   object ComponentInstruction {
     
     inline def apply(
-      componentType: js.Any,
+      componentType: Any,
       data: RouteData,
-      params: StringDictionary[js.Any],
+      params: StringDictionary[Any],
       reuse: Boolean,
       routeData: RouteData,
       specificity: Double,
@@ -161,11 +161,11 @@ object angular {
     
     extension [Self <: ComponentInstruction](x: Self) {
       
-      inline def setComponentType(value: js.Any): Self = StObject.set(x, "componentType", value.asInstanceOf[js.Any])
+      inline def setComponentType(value: Any): Self = StObject.set(x, "componentType", value.asInstanceOf[js.Any])
       
       inline def setData(value: RouteData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: StringDictionary[Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setReuse(value: Boolean): Self = StObject.set(x, "reuse", value.asInstanceOf[js.Any])
       
@@ -177,7 +177,7 @@ object angular {
       
       inline def setUrlParams(value: js.Array[String]): Self = StObject.set(x, "urlParams", value.asInstanceOf[js.Any])
       
-      inline def setUrlParamsVarargs(value: String*): Self = StObject.set(x, "urlParams", js.Array(value :_*))
+      inline def setUrlParamsVarargs(value: String*): Self = StObject.set(x, "urlParams", js.Array(value*))
       
       inline def setUrlPath(value: String): Self = StObject.set(x, "urlPath", value.asInstanceOf[js.Any])
     }
@@ -190,8 +190,8 @@ object angular {
     @JSName("$canActivate")
     var $canActivate: js.UndefOr[
         js.Function1[
-          /* repeated */ js.Any, 
-          Boolean | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IPromise<boolean> */ js.Any)
+          /* repeated */ Any, 
+          Boolean | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IPromise<boolean> */ Any)
         ]
       ] = js.undefined
     
@@ -208,7 +208,7 @@ object angular {
     extension [Self <: IComponentOptions](x: Self) {
       
       inline def set$canActivate(
-        value: /* repeated */ js.Any => Boolean | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IPromise<boolean> */ js.Any)
+        value: /* repeated */ Any => Boolean | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IPromise<boolean> */ Any)
       ): Self = StObject.set(x, "$canActivate", js.Any.fromFunction1(value))
       
       inline def set$canActivateUndefined: Self = StObject.set(x, "$canActivate", js.undefined)
@@ -217,7 +217,7 @@ object angular {
       
       inline def set$routeConfigUndefined: Self = StObject.set(x, "$routeConfig", js.undefined)
       
-      inline def set$routeConfigVarargs(value: RouteDefinition*): Self = StObject.set(x, "$routeConfig", js.Array(value :_*))
+      inline def set$routeConfigVarargs(value: RouteDefinition*): Self = StObject.set(x, "$routeConfig", js.Array(value*))
     }
   }
   
@@ -263,7 +263,7 @@ object angular {
       */
     def replaceChild(child: Instruction): Instruction
     
-    def resolveComponent(): js.Any
+    def resolveComponent(): Any
     
     def specificity(): Double
     
@@ -295,7 +295,7 @@ object angular {
       child: Instruction,
       component: ComponentInstruction,
       replaceChild: Instruction => Instruction,
-      resolveComponent: () => js.Any,
+      resolveComponent: () => Any,
       specificity: () => Double,
       toLinkUrl: () => String,
       toRootUrl: () => String,
@@ -318,7 +318,7 @@ object angular {
       
       inline def setReplaceChild(value: Instruction => Instruction): Self = StObject.set(x, "replaceChild", js.Any.fromFunction1(value))
       
-      inline def setResolveComponent(value: () => js.Any): Self = StObject.set(x, "resolveComponent", js.Any.fromFunction0(value))
+      inline def setResolveComponent(value: () => Any): Self = StObject.set(x, "resolveComponent", js.Any.fromFunction0(value))
       
       inline def setSpecificity(value: () => Double): Self = StObject.set(x, "specificity", js.Any.fromFunction0(value))
       
@@ -358,13 +358,13 @@ object angular {
   trait OnActivate extends StObject {
     
     @JSName("$routerOnActivate")
-    def $routerOnActivate(): js.Any = js.native
+    def $routerOnActivate(): Any = js.native
     @JSName("$routerOnActivate")
-    def $routerOnActivate(next: Unit, prev: ComponentInstruction): js.Any = js.native
+    def $routerOnActivate(next: Unit, prev: ComponentInstruction): Any = js.native
     @JSName("$routerOnActivate")
-    def $routerOnActivate(next: ComponentInstruction): js.Any = js.native
+    def $routerOnActivate(next: ComponentInstruction): Any = js.native
     @JSName("$routerOnActivate")
-    def $routerOnActivate(next: ComponentInstruction, prev: ComponentInstruction): js.Any = js.native
+    def $routerOnActivate(next: ComponentInstruction, prev: ComponentInstruction): Any = js.native
   }
   
   /**
@@ -386,13 +386,13 @@ object angular {
   trait OnDeactivate extends StObject {
     
     @JSName("$routerOnDeactivate")
-    def $routerOnDeactivate(): js.Any = js.native
+    def $routerOnDeactivate(): Any = js.native
     @JSName("$routerOnDeactivate")
-    def $routerOnDeactivate(next: Unit, prev: ComponentInstruction): js.Any = js.native
+    def $routerOnDeactivate(next: Unit, prev: ComponentInstruction): Any = js.native
     @JSName("$routerOnDeactivate")
-    def $routerOnDeactivate(next: ComponentInstruction): js.Any = js.native
+    def $routerOnDeactivate(next: ComponentInstruction): Any = js.native
     @JSName("$routerOnDeactivate")
-    def $routerOnDeactivate(next: ComponentInstruction, prev: ComponentInstruction): js.Any = js.native
+    def $routerOnDeactivate(next: ComponentInstruction, prev: ComponentInstruction): Any = js.native
   }
   
   /**
@@ -414,13 +414,13 @@ object angular {
   trait OnReuse extends StObject {
     
     @JSName("$routerOnReuse")
-    def $routerOnReuse(): js.Any = js.native
+    def $routerOnReuse(): Any = js.native
     @JSName("$routerOnReuse")
-    def $routerOnReuse(next: Unit, prev: ComponentInstruction): js.Any = js.native
+    def $routerOnReuse(next: Unit, prev: ComponentInstruction): Any = js.native
     @JSName("$routerOnReuse")
-    def $routerOnReuse(next: ComponentInstruction): js.Any = js.native
+    def $routerOnReuse(next: ComponentInstruction): Any = js.native
     @JSName("$routerOnReuse")
-    def $routerOnReuse(next: ComponentInstruction, prev: ComponentInstruction): js.Any = js.native
+    def $routerOnReuse(next: ComponentInstruction, prev: ComponentInstruction): Any = js.native
   }
   
   /**
@@ -429,22 +429,22 @@ object angular {
     */
   trait RouteData extends StObject {
     
-    var data: StringDictionary[js.Any]
+    var data: StringDictionary[Any]
     
-    def get(key: String): js.Any
+    def get(key: String): Any
   }
   object RouteData {
     
-    inline def apply(data: StringDictionary[js.Any], get: String => js.Any): RouteData = {
+    inline def apply(data: StringDictionary[Any], get: String => Any): RouteData = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], get = js.Any.fromFunction1(get))
       __obj.asInstanceOf[RouteData]
     }
     
     extension [Self <: RouteData](x: Self) {
       
-      inline def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: StringDictionary[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     }
   }
   
@@ -467,7 +467,7 @@ object angular {
     
     var component: js.UndefOr[Type | ComponentDefinition | String] = js.undefined
     
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     var loader: js.UndefOr[Function] = js.undefined
     
@@ -475,7 +475,7 @@ object angular {
     
     var path: js.UndefOr[String] = js.undefined
     
-    var redirectTo: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var redirectTo: js.UndefOr[js.Array[Any]] = js.undefined
     
     var useAsDefault: js.UndefOr[Boolean] = js.undefined
   }
@@ -500,7 +500,7 @@ object angular {
       
       inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -516,11 +516,11 @@ object angular {
       
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      inline def setRedirectTo(value: js.Array[js.Any]): Self = StObject.set(x, "redirectTo", value.asInstanceOf[js.Any])
+      inline def setRedirectTo(value: js.Array[Any]): Self = StObject.set(x, "redirectTo", value.asInstanceOf[js.Any])
       
       inline def setRedirectToUndefined: Self = StObject.set(x, "redirectTo", js.undefined)
       
-      inline def setRedirectToVarargs(value: js.Any*): Self = StObject.set(x, "redirectTo", js.Array(value :_*))
+      inline def setRedirectToVarargs(value: Any*): Self = StObject.set(x, "redirectTo", js.Array(value*))
       
       inline def setUseAsDefault(value: Boolean): Self = StObject.set(x, "useAsDefault", value.asInstanceOf[js.Any])
       
@@ -534,12 +534,12 @@ object angular {
     /**
       * Given a component and a configuration object, add the route to this registry
       */
-    def config(parentComponent: js.Any, config: RouteDefinition): Unit = js.native
+    def config(parentComponent: Any, config: RouteDefinition): Unit = js.native
     
     /**
       * Reads the annotations of a component and configures the registry based on them
       */
-    def configFromComponent(component: js.Any): Unit = js.native
+    def configFromComponent(component: Any): Unit = js.native
     
     /**
       * Given a normalized list with component names and params like: `['user', {id: 3 }]`
@@ -548,18 +548,18 @@ object angular {
       * If the optional param `_aux` is `true`, then we generate starting at an auxiliary
       * route boundary.
       */
-    def generate(linkParams: js.Array[js.Any], ancestorInstructions: js.Array[Instruction]): Instruction = js.native
-    def generate(linkParams: js.Array[js.Any], ancestorInstructions: js.Array[Instruction], _aux: Boolean): Instruction = js.native
+    def generate(linkParams: js.Array[Any], ancestorInstructions: js.Array[Instruction]): Instruction = js.native
+    def generate(linkParams: js.Array[Any], ancestorInstructions: js.Array[Instruction], _aux: Boolean): Instruction = js.native
     
-    def generateDefault(componentCursor: js.Any): Instruction = js.native
+    def generateDefault(componentCursor: Any): Instruction = js.native
     
-    def hasRoute(name: String, parentComponent: js.Any): Boolean = js.native
+    def hasRoute(name: String, parentComponent: Any): Boolean = js.native
     
     /**
       * Given a URL and a parent component, return the most specific instruction for navigating
       * the application into the state specified by the url
       */
-    def recognize(url: String, ancestorInstructions: js.Array[Instruction]): js.Any = js.native
+    def recognize(url: String, ancestorInstructions: js.Array[Instruction]): Any = js.native
   }
   
   /**
@@ -586,19 +586,19 @@ object angular {
       * Constructs a child router. You probably don't need to use this unless you're writing a reusable
       * component.
       */
-    def auxRouter(hostComponent: js.Any): Router = js.native
+    def auxRouter(hostComponent: Any): Router = js.native
     
     /**
       * Constructs a child router. You probably don't need to use this unless you're writing a reusable
       * component.
       */
-    def childRouter(hostComponent: js.Any): Router = js.native
+    def childRouter(hostComponent: Any): Router = js.native
     
     /**
       * Updates this router and all descendant routers according to the given instruction
       */
-    def commit(instruction: Instruction): js.Any = js.native
-    def commit(instruction: Instruction, _skipLocationChange: Boolean): js.Any = js.native
+    def commit(instruction: Instruction): Any = js.native
+    def commit(instruction: Instruction, _skipLocationChange: Boolean): Any = js.native
     
     /**
       * Dynamically update the routing configuration and trigger a navigation.
@@ -612,21 +612,21 @@ object angular {
       * ]);
       * ```
       */
-    def config(definitions: js.Array[RouteDefinition]): js.Any = js.native
+    def config(definitions: js.Array[RouteDefinition]): Any = js.native
     
     var currentInstruction: Instruction = js.native
     
     /**
       * Removes the contents of this router's outlet and all descendant outlets
       */
-    def deactivate(instruction: Instruction): js.Any = js.native
+    def deactivate(instruction: Instruction): Any = js.native
     
     /**
       * Generate an `Instruction` based on the provided Route Link DSL.
       */
-    def generate(linkParams: js.Array[js.Any]): Instruction = js.native
+    def generate(linkParams: js.Array[Any]): Instruction = js.native
     
-    var hostComponent: js.Any = js.native
+    var hostComponent: Any = js.native
     
     /**
       * Given an instruction, returns `true` if the instruction is currently active,
@@ -648,14 +648,14 @@ object angular {
       * ```
       * See the {@link RouterLink} directive for more.
       */
-    def navigate(linkParams: js.Array[js.Any]): js.Any = js.native
+    def navigate(linkParams: js.Array[Any]): Any = js.native
     
     /**
       * Navigate via the provided instruction. Returns a promise that resolves when navigation is
       * complete.
       */
-    def navigateByInstruction(instruction: Instruction): js.Any = js.native
-    def navigateByInstruction(instruction: Instruction, _skipLocationChange: Boolean): js.Any = js.native
+    def navigateByInstruction(instruction: Instruction): Any = js.native
+    def navigateByInstruction(instruction: Instruction, _skipLocationChange: Boolean): Any = js.native
     
     /**
       * Navigate to a URL. Returns a promise that resolves when navigation is complete.
@@ -664,8 +664,8 @@ object angular {
       * If the given URL begins with a `/`, router will navigate absolutely.
       * If the given URL does not begin with `/`, the router will navigate relative to this component.
       */
-    def navigateByUrl(url: String): js.Any = js.native
-    def navigateByUrl(url: String, _skipLocationChange: Boolean): js.Any = js.native
+    def navigateByUrl(url: String): Any = js.native
+    def navigateByUrl(url: String, _skipLocationChange: Boolean): Any = js.native
     
     var navigating: Boolean = js.native
     
@@ -674,21 +674,21 @@ object angular {
     /**
       * Given a URL, returns an instruction representing the component graph
       */
-    def recognize(url: String): js.Any = js.native
+    def recognize(url: String): Any = js.native
     
     /**
       * Register an outlet to notified of auxiliary route changes.
       *
       * You probably don't need to use this unless you're writing a reusable component.
       */
-    def registerAuxOutlet(outlet: RouterOutlet): js.Any = js.native
+    def registerAuxOutlet(outlet: RouterOutlet): Any = js.native
     
     /**
       * Register an outlet to be notified of primary route changes.
       *
       * You probably don't need to use this unless you're writing a reusable component.
       */
-    def registerPrimaryOutlet(outlet: RouterOutlet): js.Any = js.native
+    def registerPrimaryOutlet(outlet: RouterOutlet): Any = js.native
     
     var registry: RouteRegistry = js.native
     
@@ -696,12 +696,12 @@ object angular {
       * Navigates to either the last URL successfully navigated to, or the last URL requested if the
       * router has yet to successfully navigate.
       */
-    def renavigate(): js.Any = js.native
+    def renavigate(): Any = js.native
     
     /**
       * Subscribe to URL updates from the router
       */
-    def subscribe(onNext: js.Function1[/* value */ js.Any, Unit]): js.Object = js.native
+    def subscribe(onNext: js.Function1[/* value */ Any, Unit]): js.Object = js.native
   }
   
   /**
@@ -719,13 +719,13 @@ object angular {
       * Called by the Router to instantiate a new component during the commit phase of a navigation.
       * This method in turn is responsible for calling the `routerOnActivate` hook of its child.
       */
-    def activate(nextInstruction: ComponentInstruction): js.Any
+    def activate(nextInstruction: ComponentInstruction): Any
     
     /**
       * Called by the {@link Router} when an outlet disposes of a component's contents.
       * This method in turn is responsible for calling the `routerOnDeactivate` hook of its child.
       */
-    def deactivate(nextInstruction: ComponentInstruction): js.Any
+    def deactivate(nextInstruction: ComponentInstruction): Any
     
     var name: String
     
@@ -734,7 +734,7 @@ object angular {
       * reuses a component between different routes.
       * This method in turn is responsible for calling the `routerOnReuse` hook of its child.
       */
-    def reuse(nextInstruction: ComponentInstruction): js.Any
+    def reuse(nextInstruction: ComponentInstruction): Any
     
     /**
       * Called by the {@link Router} during recognition phase of a navigation.
@@ -744,7 +744,7 @@ object angular {
       * This method delegates to the child component's `routerCanDeactivate` hook if it exists,
       * and otherwise resolves to true.
       */
-    def routerCanDeactivate(nextInstruction: ComponentInstruction): js.Any
+    def routerCanDeactivate(nextInstruction: ComponentInstruction): Any
     
     /**
       * Called by the {@link Router} during recognition phase of a navigation.
@@ -756,17 +756,17 @@ object angular {
       * Otherwise, this method delegates to the child component's `routerCanReuse` hook if it exists,
       * or resolves to true if the hook is not present.
       */
-    def routerCanReuse(nextInstruction: ComponentInstruction): js.Any
+    def routerCanReuse(nextInstruction: ComponentInstruction): Any
   }
   object RouterOutlet {
     
     inline def apply(
-      activate: ComponentInstruction => js.Any,
-      deactivate: ComponentInstruction => js.Any,
+      activate: ComponentInstruction => Any,
+      deactivate: ComponentInstruction => Any,
       name: String,
-      reuse: ComponentInstruction => js.Any,
-      routerCanDeactivate: ComponentInstruction => js.Any,
-      routerCanReuse: ComponentInstruction => js.Any
+      reuse: ComponentInstruction => Any,
+      routerCanDeactivate: ComponentInstruction => Any,
+      routerCanReuse: ComponentInstruction => Any
     ): RouterOutlet = {
       val __obj = js.Dynamic.literal(activate = js.Any.fromFunction1(activate), deactivate = js.Any.fromFunction1(deactivate), name = name.asInstanceOf[js.Any], reuse = js.Any.fromFunction1(reuse), routerCanDeactivate = js.Any.fromFunction1(routerCanDeactivate), routerCanReuse = js.Any.fromFunction1(routerCanReuse))
       __obj.asInstanceOf[RouterOutlet]
@@ -774,17 +774,17 @@ object angular {
     
     extension [Self <: RouterOutlet](x: Self) {
       
-      inline def setActivate(value: ComponentInstruction => js.Any): Self = StObject.set(x, "activate", js.Any.fromFunction1(value))
+      inline def setActivate(value: ComponentInstruction => Any): Self = StObject.set(x, "activate", js.Any.fromFunction1(value))
       
-      inline def setDeactivate(value: ComponentInstruction => js.Any): Self = StObject.set(x, "deactivate", js.Any.fromFunction1(value))
+      inline def setDeactivate(value: ComponentInstruction => Any): Self = StObject.set(x, "deactivate", js.Any.fromFunction1(value))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setReuse(value: ComponentInstruction => js.Any): Self = StObject.set(x, "reuse", js.Any.fromFunction1(value))
+      inline def setReuse(value: ComponentInstruction => Any): Self = StObject.set(x, "reuse", js.Any.fromFunction1(value))
       
-      inline def setRouterCanDeactivate(value: ComponentInstruction => js.Any): Self = StObject.set(x, "routerCanDeactivate", js.Any.fromFunction1(value))
+      inline def setRouterCanDeactivate(value: ComponentInstruction => Any): Self = StObject.set(x, "routerCanDeactivate", js.Any.fromFunction1(value))
       
-      inline def setRouterCanReuse(value: ComponentInstruction => js.Any): Self = StObject.set(x, "routerCanReuse", js.Any.fromFunction1(value))
+      inline def setRouterCanReuse(value: ComponentInstruction => Any): Self = StObject.set(x, "routerCanReuse", js.Any.fromFunction1(value))
     }
   }
   

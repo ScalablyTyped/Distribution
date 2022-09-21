@@ -46,7 +46,7 @@ trait hooks extends StObject {
       js.Function4[
         /* plot */ plot, 
         /* series */ dataSeries, 
-        /* data */ js.Array[js.Any], 
+        /* data */ js.Array[Any], 
         /* datapoints */ datapoints, 
         Unit
       ]
@@ -70,7 +70,7 @@ object hooks {
     
     inline def setBindEventsUndefined: Self = StObject.set(x, "bindEvents", js.undefined)
     
-    inline def setBindEventsVarargs(value: (js.Function2[/* plot */ plot, /* eventHolder */ JQuery[HTMLElement], Unit])*): Self = StObject.set(x, "bindEvents", js.Array(value :_*))
+    inline def setBindEventsVarargs(value: (js.Function2[/* plot */ plot, /* eventHolder */ JQuery[HTMLElement], Unit])*): Self = StObject.set(x, "bindEvents", js.Array(value*))
     
     inline def setDraw(value: js.Array[js.Function2[/* plot */ plot, /* context */ CanvasRenderingContext2D, Unit]]): Self = StObject.set(x, "draw", value.asInstanceOf[js.Any])
     
@@ -78,13 +78,13 @@ object hooks {
     
     inline def setDrawBackgroundUndefined: Self = StObject.set(x, "drawBackground", js.undefined)
     
-    inline def setDrawBackgroundVarargs(value: (js.Function2[/* plot */ plot, /* context */ CanvasRenderingContext2D, Unit])*): Self = StObject.set(x, "drawBackground", js.Array(value :_*))
+    inline def setDrawBackgroundVarargs(value: (js.Function2[/* plot */ plot, /* context */ CanvasRenderingContext2D, Unit])*): Self = StObject.set(x, "drawBackground", js.Array(value*))
     
     inline def setDrawOverlay(value: js.Array[js.Function2[/* plot */ plot, /* context */ CanvasRenderingContext2D, Unit]]): Self = StObject.set(x, "drawOverlay", value.asInstanceOf[js.Any])
     
     inline def setDrawOverlayUndefined: Self = StObject.set(x, "drawOverlay", js.undefined)
     
-    inline def setDrawOverlayVarargs(value: (js.Function2[/* plot */ plot, /* context */ CanvasRenderingContext2D, Unit])*): Self = StObject.set(x, "drawOverlay", js.Array(value :_*))
+    inline def setDrawOverlayVarargs(value: (js.Function2[/* plot */ plot, /* context */ CanvasRenderingContext2D, Unit])*): Self = StObject.set(x, "drawOverlay", js.Array(value*))
     
     inline def setDrawSeries(
       value: js.Array[
@@ -96,11 +96,11 @@ object hooks {
     
     inline def setDrawSeriesVarargs(
       value: (js.Function3[/* plot */ plot, /* context */ CanvasRenderingContext2D, /* series */ dataSeries, Unit])*
-    ): Self = StObject.set(x, "drawSeries", js.Array(value :_*))
+    ): Self = StObject.set(x, "drawSeries", js.Array(value*))
     
     inline def setDrawUndefined: Self = StObject.set(x, "draw", js.undefined)
     
-    inline def setDrawVarargs(value: (js.Function2[/* plot */ plot, /* context */ CanvasRenderingContext2D, Unit])*): Self = StObject.set(x, "draw", js.Array(value :_*))
+    inline def setDrawVarargs(value: (js.Function2[/* plot */ plot, /* context */ CanvasRenderingContext2D, Unit])*): Self = StObject.set(x, "draw", js.Array(value*))
     
     inline def setProcessDatapoints(
       value: js.Array[
@@ -112,26 +112,26 @@ object hooks {
     
     inline def setProcessDatapointsVarargs(
       value: (js.Function3[/* plot */ plot, /* series */ dataSeries, /* datapoints */ datapoints, Unit])*
-    ): Self = StObject.set(x, "processDatapoints", js.Array(value :_*))
+    ): Self = StObject.set(x, "processDatapoints", js.Array(value*))
     
     inline def setProcessOffset(value: js.Array[js.Function2[/* plot */ plot, /* offset */ canvasPoint, Unit]]): Self = StObject.set(x, "processOffset", value.asInstanceOf[js.Any])
     
     inline def setProcessOffsetUndefined: Self = StObject.set(x, "processOffset", js.undefined)
     
-    inline def setProcessOffsetVarargs(value: (js.Function2[/* plot */ plot, /* offset */ canvasPoint, Unit])*): Self = StObject.set(x, "processOffset", js.Array(value :_*))
+    inline def setProcessOffsetVarargs(value: (js.Function2[/* plot */ plot, /* offset */ canvasPoint, Unit])*): Self = StObject.set(x, "processOffset", js.Array(value*))
     
     inline def setProcessOptions(value: js.Array[js.Function2[/* plot */ plot, /* options */ plotOptions, Unit]]): Self = StObject.set(x, "processOptions", value.asInstanceOf[js.Any])
     
     inline def setProcessOptionsUndefined: Self = StObject.set(x, "processOptions", js.undefined)
     
-    inline def setProcessOptionsVarargs(value: (js.Function2[/* plot */ plot, /* options */ plotOptions, Unit])*): Self = StObject.set(x, "processOptions", js.Array(value :_*))
+    inline def setProcessOptionsVarargs(value: (js.Function2[/* plot */ plot, /* options */ plotOptions, Unit])*): Self = StObject.set(x, "processOptions", js.Array(value*))
     
     inline def setProcessRawData(
       value: js.Array[
           js.Function4[
             /* plot */ plot, 
             /* series */ dataSeries, 
-            /* data */ js.Array[js.Any], 
+            /* data */ js.Array[Any], 
             /* datapoints */ datapoints, 
             Unit
           ]
@@ -144,16 +144,16 @@ object hooks {
       value: (js.Function4[
           /* plot */ plot, 
           /* series */ dataSeries, 
-          /* data */ js.Array[js.Any], 
+          /* data */ js.Array[Any], 
           /* datapoints */ datapoints, 
           Unit
         ])*
-    ): Self = StObject.set(x, "processRawData", js.Array(value :_*))
+    ): Self = StObject.set(x, "processRawData", js.Array(value*))
     
     inline def setShutdown(value: js.Array[js.Function2[/* plot */ plot, /* eventHolder */ JQuery[HTMLElement], Unit]]): Self = StObject.set(x, "shutdown", value.asInstanceOf[js.Any])
     
     inline def setShutdownUndefined: Self = StObject.set(x, "shutdown", js.undefined)
     
-    inline def setShutdownVarargs(value: (js.Function2[/* plot */ plot, /* eventHolder */ JQuery[HTMLElement], Unit])*): Self = StObject.set(x, "shutdown", js.Array(value :_*))
+    inline def setShutdownVarargs(value: (js.Function2[/* plot */ plot, /* eventHolder */ JQuery[HTMLElement], Unit])*): Self = StObject.set(x, "shutdown", js.Array(value*))
   }
 }

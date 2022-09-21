@@ -1,7 +1,7 @@
 package typings.bunyanSeq
 
+import typings.bunyan.mod.LogLevel
 import typings.bunyan.mod.Stream
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +12,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createStream(config: Configuration): Stream = ^.asInstanceOf[js.Dynamic].applyDynamic("createStream")(config.asInstanceOf[js.Any]).asInstanceOf[Stream]
+  inline def createStream(): Stream = ^.asInstanceOf[js.Dynamic].applyDynamic("createStream")().asInstanceOf[Stream]
+  inline def createStream(options: SeqStreamOptions): Stream = ^.asInstanceOf[js.Dynamic].applyDynamic("createStream")(options.asInstanceOf[js.Any]).asInstanceOf[Stream]
   
-  trait Configuration extends StObject {
+  trait SeqStreamOptions extends StObject {
     
     var apiKey: js.UndefOr[String] = js.undefined
     
@@ -22,26 +23,26 @@ object mod {
     
     var eventSizeLimit: js.UndefOr[Double] = js.undefined
     
-    var level: js.UndefOr[String] = js.undefined
+    var level: js.UndefOr[LogLevel] = js.undefined
     
     var maxBatchingTime: js.UndefOr[Double] = js.undefined
     
     var name: js.UndefOr[String] = js.undefined
     
-    var onError: js.UndefOr[js.Function1[/* e */ Error, Unit]] = js.undefined
+    var onError: js.UndefOr[js.Function1[/* e */ js.Error, Unit]] = js.undefined
     
     var reemitErrorEvents: js.UndefOr[Boolean] = js.undefined
     
     var serverUrl: js.UndefOr[String] = js.undefined
   }
-  object Configuration {
+  object SeqStreamOptions {
     
-    inline def apply(): Configuration = {
+    inline def apply(): SeqStreamOptions = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Configuration]
+      __obj.asInstanceOf[SeqStreamOptions]
     }
     
-    extension [Self <: Configuration](x: Self) {
+    extension [Self <: SeqStreamOptions](x: Self) {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,7 @@ object mod {
       
       inline def setEventSizeLimitUndefined: Self = StObject.set(x, "eventSizeLimit", js.undefined)
       
-      inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: LogLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
       inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
@@ -67,7 +68,7 @@ object mod {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setOnError(value: /* e */ Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* e */ js.Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       

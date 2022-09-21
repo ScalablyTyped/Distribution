@@ -59,7 +59,7 @@ object MouseManager {
     element: HTMLElement,
     pageX: Double,
     pageY: Double,
-    registerCallback: (String, String, js.Function, js.Any) => Unit,
+    registerCallback: (String, String, js.Function, Any) => Unit,
     removeCallback: String => Unit,
     threshold: Double,
     x: Double,

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "hex-rgb" : "4.2.0"
+      "hex-rgb" : "5.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "hex-rgb" : "4.2.0"
+      "hex-rgb" : "5.0.0"
     }
   ],
   "compile-devDependencies" : [

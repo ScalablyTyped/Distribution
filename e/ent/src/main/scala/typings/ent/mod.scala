@@ -30,7 +30,7 @@ object mod {
     /**
       * If opts.special is set to an Object, the key names will be forced to be encoded (defaults to forcing: <>'"&)
       */
-    var special: js.UndefOr[js.Any] = js.undefined
+    var special: js.UndefOr[Any] = js.undefined
   }
   object EntOpts {
     
@@ -49,7 +49,7 @@ object mod {
       
       inline def setNumericUndefined: Self = StObject.set(x, "numeric", js.undefined)
       
-      inline def setSpecial(value: js.Any): Self = StObject.set(x, "special", value.asInstanceOf[js.Any])
+      inline def setSpecial(value: Any): Self = StObject.set(x, "special", value.asInstanceOf[js.Any])
       
       inline def setSpecialUndefined: Self = StObject.set(x, "special", js.undefined)
     }

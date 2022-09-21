@@ -21,10 +21,10 @@ object E {
   
   inline def apply[W, M](
     _E: W,
-    ap: (WriterT[M, W, js.Function1[js.Any, js.Any]], WriterT[M, W, js.Any]) => WriterT[M, W, js.Any],
-    chain: (WriterT[M, W, js.Any], js.Function1[js.Any, WriterT[M, W, js.Any]]) => WriterT[M, W, js.Any],
-    map: (WriterT[M, W, js.Any], js.Function1[js.Any, js.Any]) => WriterT[M, W, js.Any],
-    of: js.Any => WriterT[M, W, js.Any]
+    ap: (WriterT[M, W, js.Function1[Any, Any]], WriterT[M, W, Any]) => WriterT[M, W, Any],
+    chain: (WriterT[M, W, Any], js.Function1[Any, WriterT[M, W, Any]]) => WriterT[M, W, Any],
+    map: (WriterT[M, W, Any], js.Function1[Any, Any]) => WriterT[M, W, Any],
+    of: Any => WriterT[M, W, Any]
   ): E[W, M] = {
     val __obj = js.Dynamic.literal(_E = _E.asInstanceOf[js.Any], ap = js.Any.fromFunction2(ap), chain = js.Any.fromFunction2(chain), map = js.Any.fromFunction2(map), of = js.Any.fromFunction1(of))
     __obj.asInstanceOf[E[W, M]]
@@ -32,17 +32,13 @@ object E {
   
   extension [Self <: E[?, ?], W, M](x: Self & (E[W, M])) {
     
-    inline def setAp(
-      value: (WriterT[M, W, js.Function1[js.Any, js.Any]], WriterT[M, W, js.Any]) => WriterT[M, W, js.Any]
-    ): Self = StObject.set(x, "ap", js.Any.fromFunction2(value))
+    inline def setAp(value: (WriterT[M, W, js.Function1[Any, Any]], WriterT[M, W, Any]) => WriterT[M, W, Any]): Self = StObject.set(x, "ap", js.Any.fromFunction2(value))
     
-    inline def setChain(
-      value: (WriterT[M, W, js.Any], js.Function1[js.Any, WriterT[M, W, js.Any]]) => WriterT[M, W, js.Any]
-    ): Self = StObject.set(x, "chain", js.Any.fromFunction2(value))
+    inline def setChain(value: (WriterT[M, W, Any], js.Function1[Any, WriterT[M, W, Any]]) => WriterT[M, W, Any]): Self = StObject.set(x, "chain", js.Any.fromFunction2(value))
     
-    inline def setMap(value: (WriterT[M, W, js.Any], js.Function1[js.Any, js.Any]) => WriterT[M, W, js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
+    inline def setMap(value: (WriterT[M, W, Any], js.Function1[Any, Any]) => WriterT[M, W, Any]): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
     
-    inline def setOf(value: js.Any => WriterT[M, W, js.Any]): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
+    inline def setOf(value: Any => WriterT[M, W, Any]): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
     
     inline def set_E(value: W): Self = StObject.set(x, "_E", value.asInstanceOf[js.Any])
   }

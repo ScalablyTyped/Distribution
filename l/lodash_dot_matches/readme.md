@@ -10,10 +10,10 @@ The lodash method `_.matches` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.matches |
 | Keywords           | lodash-modularized, matches |
-| # releases         | 0 |
-| # dependents       | 20 |
-| # downloads        | 527968 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 47825.666666666664 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

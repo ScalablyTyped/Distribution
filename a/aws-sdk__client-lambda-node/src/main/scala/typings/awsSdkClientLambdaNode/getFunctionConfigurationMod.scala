@@ -8,5 +8,5 @@ object getFunctionConfigurationMod {
   
   @JSImport("@aws-sdk/client-lambda-node/model/GetFunctionConfiguration", "GetFunctionConfiguration")
   @js.native
-  val GetFunctionConfiguration: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val GetFunctionConfiguration: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

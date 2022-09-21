@@ -15,8 +15,8 @@ trait Hasher extends StObject {
     */
   var blockSize: Double = js.native
   
-  def finalize(messaegUpdate: String): WordArray = js.native
-  def finalize(messaegUpdate: WordArray): WordArray = js.native
+  def finalize(messageUpdate: String): WordArray = js.native
+  def finalize(messageUpdate: WordArray): WordArray = js.native
   
   /**
     * Resets this hasher to its initial state.

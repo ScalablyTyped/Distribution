@@ -19,7 +19,7 @@ trait LiveChatMessageListResponse extends StObject {
   
   var nextPageToken: js.UndefOr[String] = js.undefined
   
-  /** The date and time when the underlying stream went offline. The value is specified in ISO 8601 format. */
+  /** The date and time when the underlying stream went offline. */
   var offlineAt: js.UndefOr[String] = js.undefined
   
   /** General pagination information. */
@@ -28,7 +28,7 @@ trait LiveChatMessageListResponse extends StObject {
   /** The amount of time the client should wait before polling again. */
   var pollingIntervalMillis: js.UndefOr[Double] = js.undefined
   
-  var tokenPagination: js.UndefOr[js.Any] = js.undefined
+  var tokenPagination: js.UndefOr[Any] = js.undefined
   
   /** The visitorId identifies the visitor. */
   var visitorId: js.UndefOr[String] = js.undefined
@@ -54,7 +54,7 @@ object LiveChatMessageListResponse {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: LiveChatMessage*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: LiveChatMessage*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
@@ -76,7 +76,7 @@ object LiveChatMessageListResponse {
     
     inline def setPollingIntervalMillisUndefined: Self = StObject.set(x, "pollingIntervalMillis", js.undefined)
     
-    inline def setTokenPagination(value: js.Any): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
+    inline def setTokenPagination(value: Any): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
     
     inline def setTokenPaginationUndefined: Self = StObject.set(x, "tokenPagination", js.undefined)
     

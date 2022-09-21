@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("prom-client", "Gauge")
 @js.native
-class Gauge[T /* <: String */] protected ()
+open class Gauge[T /* <: String */] protected ()
   extends StObject
      with Metric_[T] {
   /**
@@ -45,11 +45,22 @@ class Gauge[T /* <: String */] protected ()
   
   /**
   	 * Return the child for given labels
+  	 * @param labels Object with label keys and values
+  	 * @return Configured counter with given labels
+  	 */
+  def labels(labels: LabelValues[T]): Internal[T] = js.native
+  /**
+  	 * Return the child for given labels
   	 * @param values Label values
   	 * @return Configured gauge with given labels
   	 */
   def labels(values: String*): Internal[T] = js.native
   
+  /**
+  	 * Remove metrics for the given label values
+  	 * @param labels Object with label keys and values
+  	 */
+  def remove(labels: LabelValues[T]): Unit = js.native
   /**
   	 * Remove metrics for the given label values
   	 * @param values Label values
@@ -81,12 +92,14 @@ class Gauge[T /* <: String */] protected ()
   def setToCurrentTime(labels: LabelValues[T]): Unit = js.native
   
   /**
-  	 * Start a timer where the gauges value will be the duration in seconds
+  	 * Start a timer. Calling the returned function will set the gauge's value
+  	 * to the observed duration in seconds.
   	 * @param labels Object with label keys and values
-  	 * @return Function to invoke when timer should be stopped
+  	 * @return Function to invoke when timer should be stopped. The value it
+  	 * returns is the timed duration.
   	 */
-  def startTimer(): js.Function1[/* labels */ js.UndefOr[LabelValues[T]], Unit] = js.native
-  def startTimer(labels: LabelValues[T]): js.Function1[/* labels */ js.UndefOr[LabelValues[T]], Unit] = js.native
+  def startTimer(): js.Function1[/* labels */ js.UndefOr[LabelValues[T]], Double] = js.native
+  def startTimer(labels: LabelValues[T]): js.Function1[/* labels */ js.UndefOr[LabelValues[T]], Double] = js.native
 }
 object Gauge {
   
@@ -119,9 +132,11 @@ object Gauge {
     def setToCurrentTime(): Unit = js.native
     
     /**
-    		 * Start a timer where the gauges value will be the duration in seconds
-    		 * @return Function to invoke when timer should be stopped
+    		 * Start a timer. Calling the returned function will set the gauge's value
+    		 * to the observed duration in seconds.
+    		 * @return Function to invoke when timer should be stopped. The value it
+    		 * returns is the timed duration.
     		 */
-    def startTimer(): js.Function1[/* labels */ js.UndefOr[LabelValues[T]], Unit] = js.native
+    def startTimer(): js.Function1[/* labels */ js.UndefOr[LabelValues[T]], Double] = js.native
   }
 }

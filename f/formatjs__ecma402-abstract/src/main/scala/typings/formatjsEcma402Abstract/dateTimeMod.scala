@@ -8,32 +8,21 @@ import typings.formatjsEcma402Abstract.anon.Medium
 import typings.formatjsEcma402Abstract.anon.Narrow
 import typings.formatjsEcma402Abstract.anon.RecordTABLE2defaultRangeP
 import typings.formatjsEcma402Abstract.anon.Short
+import typings.formatjsEcma402Abstract.formatjsEcma402AbstractNumbers.`0`
+import typings.formatjsEcma402Abstract.formatjsEcma402AbstractNumbers.`1`
+import typings.formatjsEcma402Abstract.formatjsEcma402AbstractNumbers.`2`
+import typings.formatjsEcma402Abstract.formatjsEcma402AbstractNumbers.`3`
 import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.`2-digit`
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.buddhist
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.chinese
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.coptic
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.ethiopia
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.ethiopic
 import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.full
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.gregory
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.h11
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.h12
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.h23
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.h24
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.hebrew
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.indian
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.islamic
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.iso8601
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.japanese
 import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.long
+import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.longGeneric
+import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.longOffset
 import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.medium
 import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.narrow
 import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.numeric
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.persian
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.roc
 import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.short
-import typings.std.Date
-import typings.std.Intl.DateTimeFormatPartTypes
+import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.shortGeneric
+import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.shortOffset
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -42,19 +31,57 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object dateTimeMod {
   
   @js.native
-  trait DateTimeFormat
-    extends StObject
-       with typings.std.Intl.DateTimeFormat {
+  sealed trait RangePatternType extends StObject
+  @JSImport("@formatjs/ecma402-abstract/lib/types/date-time", "RangePatternType")
+  @js.native
+  object RangePatternType extends StObject {
     
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[RangePatternType & String] = js.native
+    
+    @js.native
+    sealed trait endRange
+      extends StObject
+         with RangePatternType
+    /* "endRange" */ val endRange: typings.formatjsEcma402Abstract.dateTimeMod.RangePatternType.endRange & String = js.native
+    
+    @js.native
+    sealed trait shared
+      extends StObject
+         with RangePatternType
+    /* "shared" */ val shared: typings.formatjsEcma402Abstract.dateTimeMod.RangePatternType.shared & String = js.native
+    
+    @js.native
+    sealed trait startRange
+      extends StObject
+         with RangePatternType
+    /* "startRange" */ val startRange: typings.formatjsEcma402Abstract.dateTimeMod.RangePatternType.startRange & String = js.native
+  }
+  
+  /* Inlined parent std.Omit<std.Intl.DateTimeFormat, 'resolvedOptions' | 'formatRange' | 'formatRangeToParts' | 'formatToParts'> */
+  @js.native
+  trait DateTimeFormat extends StObject {
+    
+    def format(): String = js.native
+    
+    def formatRange(startDate: js.Date, endDate: js.Date): String = js.native
+    def formatRange(startDate: js.Date, endDate: Double): String = js.native
+    def formatRange(startDate: Double, endDate: js.Date): String = js.native
     def formatRange(startDate: Double, endDate: Double): String = js.native
-    def formatRange(startDate: Double, endDate: Date): String = js.native
-    def formatRange(startDate: Date, endDate: Double): String = js.native
-    def formatRange(startDate: Date, endDate: Date): String = js.native
     
+    def formatRangeToParts(startDate: js.Date, endDate: js.Date): js.Array[IntlDateTimeFormatPart] = js.native
+    def formatRangeToParts(startDate: js.Date, endDate: Double): js.Array[IntlDateTimeFormatPart] = js.native
+    def formatRangeToParts(startDate: Double, endDate: js.Date): js.Array[IntlDateTimeFormatPart] = js.native
     def formatRangeToParts(startDate: Double, endDate: Double): js.Array[IntlDateTimeFormatPart] = js.native
-    def formatRangeToParts(startDate: Double, endDate: Date): js.Array[IntlDateTimeFormatPart] = js.native
-    def formatRangeToParts(startDate: Date, endDate: Double): js.Array[IntlDateTimeFormatPart] = js.native
-    def formatRangeToParts(startDate: Date, endDate: Date): js.Array[IntlDateTimeFormatPart] = js.native
+    
+    def formatToParts(): js.Array[IntlDateTimeFormatPart] = js.native
+    def formatToParts(date: js.Date): js.Array[IntlDateTimeFormatPart] = js.native
+    def formatToParts(date: Double): js.Array[IntlDateTimeFormatPart] = js.native
+    
+    @JSName("format")
+    var format_Original: js.Function0[String] = js.native
+    
+    def resolvedOptions(): ResolvedDateTimeFormatOptions = js.native
   }
   
   trait DateTimeFormatLocaleInternalData extends StObject {
@@ -127,7 +154,7 @@ object dateTimeMod {
       
       inline def setCa(value: js.Array[String]): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
       
-      inline def setCaVarargs(value: String*): Self = StObject.set(x, "ca", js.Array(value :_*))
+      inline def setCaVarargs(value: String*): Self = StObject.set(x, "ca", js.Array(value*))
       
       inline def setDateFormat(value: Full): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
       
@@ -141,7 +168,7 @@ object dateTimeMod {
       
       inline def setHc(value: js.Array[String]): Self = StObject.set(x, "hc", value.asInstanceOf[js.Any])
       
-      inline def setHcVarargs(value: String*): Self = StObject.set(x, "hc", js.Array(value :_*))
+      inline def setHcVarargs(value: String*): Self = StObject.set(x, "hc", js.Array(value*))
       
       inline def setHourCycle(value: String): Self = StObject.set(x, "hourCycle", value.asInstanceOf[js.Any])
       
@@ -151,7 +178,7 @@ object dateTimeMod {
       
       inline def setNu(value: js.Array[String]): Self = StObject.set(x, "nu", value.asInstanceOf[js.Any])
       
-      inline def setNuVarargs(value: String*): Self = StObject.set(x, "nu", js.Array(value :_*))
+      inline def setNuVarargs(value: String*): Self = StObject.set(x, "nu", js.Array(value*))
       
       inline def setPm(value: String): Self = StObject.set(x, "pm", value.asInstanceOf[js.Any])
       
@@ -160,61 +187,6 @@ object dateTimeMod {
       inline def setTimeZoneName(value: TimeZoneNameData): Self = StObject.set(x, "timeZoneName", value.asInstanceOf[js.Any])
       
       inline def setWeekday(value: Narrow): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait DateTimeFormatOptions
-    extends StObject
-       with typings.std.Intl.DateTimeFormatOptions {
-    
-    var calendar: js.UndefOr[
-        buddhist | chinese | coptic | ethiopia | ethiopic | gregory | hebrew | indian | islamic | iso8601 | japanese | persian | roc
-      ] = js.undefined
-    
-    var dateStyle: js.UndefOr[full | long | medium | short] = js.undefined
-    
-    var fractionalSecondDigits: js.UndefOr[Double] = js.undefined
-    
-    var hourCycle: js.UndefOr[h11 | h12 | h23 | h24] = js.undefined
-    
-    var numberingSystem: js.UndefOr[String] = js.undefined
-    
-    var timeStyle: js.UndefOr[full | long | medium | short] = js.undefined
-  }
-  object DateTimeFormatOptions {
-    
-    inline def apply(): DateTimeFormatOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[DateTimeFormatOptions]
-    }
-    
-    extension [Self <: DateTimeFormatOptions](x: Self) {
-      
-      inline def setCalendar(
-        value: buddhist | chinese | coptic | ethiopia | ethiopic | gregory | hebrew | indian | islamic | iso8601 | japanese | persian | roc
-      ): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
-      
-      inline def setCalendarUndefined: Self = StObject.set(x, "calendar", js.undefined)
-      
-      inline def setDateStyle(value: full | long | medium | short): Self = StObject.set(x, "dateStyle", value.asInstanceOf[js.Any])
-      
-      inline def setDateStyleUndefined: Self = StObject.set(x, "dateStyle", js.undefined)
-      
-      inline def setFractionalSecondDigits(value: Double): Self = StObject.set(x, "fractionalSecondDigits", value.asInstanceOf[js.Any])
-      
-      inline def setFractionalSecondDigitsUndefined: Self = StObject.set(x, "fractionalSecondDigits", js.undefined)
-      
-      inline def setHourCycle(value: h11 | h12 | h23 | h24): Self = StObject.set(x, "hourCycle", value.asInstanceOf[js.Any])
-      
-      inline def setHourCycleUndefined: Self = StObject.set(x, "hourCycle", js.undefined)
-      
-      inline def setNumberingSystem(value: String): Self = StObject.set(x, "numberingSystem", value.asInstanceOf[js.Any])
-      
-      inline def setNumberingSystemUndefined: Self = StObject.set(x, "numberingSystem", js.undefined)
-      
-      inline def setTimeStyle(value: full | long | medium | short): Self = StObject.set(x, "timeStyle", value.asInstanceOf[js.Any])
-      
-      inline def setTimeStyleUndefined: Self = StObject.set(x, "timeStyle", js.undefined)
     }
   }
   
@@ -239,20 +211,22 @@ object dateTimeMod {
     }
   }
   
-  /* Inlined std.Pick<@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/date-time.DateTimeFormatOptions, 'weekday' | 'era' | 'year' | 'month' | 'day' | 'hour' | 'minute' | 'second' | 'timeZoneName'> & {  hour12 :boolean | undefined,   pattern :string,   pattern12 :string,   skeleton :string,   rawPattern :string,   rangePatterns :std.Record<@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/date-time.TABLE_2 | 'default', @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/date-time.RangePatterns>,   rangePatterns12 :std.Record<@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/date-time.TABLE_2 | 'default', @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/date-time.RangePatterns>} */
+  /* Inlined std.Pick<std.Intl.DateTimeFormatOptions, 'weekday' | 'era' | 'year' | 'month' | 'day' | 'hour' | 'minute' | 'second' | 'timeZoneName'> & {  fractionalSecondDigits :0 | 1 | 2 | undefined,   hour12 :boolean | undefined,   pattern :string,   pattern12 :string,   skeleton :string,   rawPattern :string,   rangePatterns :std.Record<@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/date-time.TABLE_2 | 'default', @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/date-time.RangePatterns>,   rangePatterns12 :std.Record<@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/date-time.TABLE_2 | 'default', @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/date-time.RangePatterns>} */
   trait Formats extends StObject {
     
-    var day: js.UndefOr[String] = js.undefined
+    var day: js.UndefOr[numeric | `2-digit`] = js.undefined
     
-    var era: js.UndefOr[String] = js.undefined
+    var era: js.UndefOr[long | short | narrow] = js.undefined
     
-    var hour: js.UndefOr[String] = js.undefined
+    var fractionalSecondDigits: js.UndefOr[`0` | `1` | `2`] = js.undefined
+    
+    var hour: js.UndefOr[numeric | `2-digit`] = js.undefined
     
     var hour12: js.UndefOr[Boolean] = js.undefined
     
-    var minute: js.UndefOr[String] = js.undefined
+    var minute: js.UndefOr[numeric | `2-digit`] = js.undefined
     
-    var month: js.UndefOr[String] = js.undefined
+    var month: js.UndefOr[numeric | `2-digit` | long | short | narrow] = js.undefined
     
     var pattern: String
     
@@ -264,15 +238,15 @@ object dateTimeMod {
     
     var rawPattern: String
     
-    var second: js.UndefOr[String] = js.undefined
+    var second: js.UndefOr[numeric | `2-digit`] = js.undefined
     
     var skeleton: String
     
-    var timeZoneName: js.UndefOr[String] = js.undefined
+    var timeZoneName: js.UndefOr[short | long | shortOffset | longOffset | shortGeneric | longGeneric] = js.undefined
     
-    var weekday: js.UndefOr[String] = js.undefined
+    var weekday: js.UndefOr[long | short | narrow] = js.undefined
     
-    var year: js.UndefOr[String] = js.undefined
+    var year: js.UndefOr[numeric | `2-digit`] = js.undefined
   }
   object Formats {
     
@@ -290,15 +264,19 @@ object dateTimeMod {
     
     extension [Self <: Formats](x: Self) {
       
-      inline def setDay(value: String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+      inline def setDay(value: numeric | `2-digit`): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       
       inline def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
       
-      inline def setEra(value: String): Self = StObject.set(x, "era", value.asInstanceOf[js.Any])
+      inline def setEra(value: long | short | narrow): Self = StObject.set(x, "era", value.asInstanceOf[js.Any])
       
       inline def setEraUndefined: Self = StObject.set(x, "era", js.undefined)
       
-      inline def setHour(value: String): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
+      inline def setFractionalSecondDigits(value: `0` | `1` | `2`): Self = StObject.set(x, "fractionalSecondDigits", value.asInstanceOf[js.Any])
+      
+      inline def setFractionalSecondDigitsUndefined: Self = StObject.set(x, "fractionalSecondDigits", js.undefined)
+      
+      inline def setHour(value: numeric | `2-digit`): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
       
       inline def setHour12(value: Boolean): Self = StObject.set(x, "hour12", value.asInstanceOf[js.Any])
       
@@ -306,11 +284,11 @@ object dateTimeMod {
       
       inline def setHourUndefined: Self = StObject.set(x, "hour", js.undefined)
       
-      inline def setMinute(value: String): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
+      inline def setMinute(value: numeric | `2-digit`): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
       
       inline def setMinuteUndefined: Self = StObject.set(x, "minute", js.undefined)
       
-      inline def setMonth(value: String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+      inline def setMonth(value: numeric | `2-digit` | long | short | narrow): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
       
       inline def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
       
@@ -324,21 +302,21 @@ object dateTimeMod {
       
       inline def setRawPattern(value: String): Self = StObject.set(x, "rawPattern", value.asInstanceOf[js.Any])
       
-      inline def setSecond(value: String): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
+      inline def setSecond(value: numeric | `2-digit`): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
       
       inline def setSecondUndefined: Self = StObject.set(x, "second", js.undefined)
       
       inline def setSkeleton(value: String): Self = StObject.set(x, "skeleton", value.asInstanceOf[js.Any])
       
-      inline def setTimeZoneName(value: String): Self = StObject.set(x, "timeZoneName", value.asInstanceOf[js.Any])
+      inline def setTimeZoneName(value: short | long | shortOffset | longOffset | shortGeneric | longGeneric): Self = StObject.set(x, "timeZoneName", value.asInstanceOf[js.Any])
       
       inline def setTimeZoneNameUndefined: Self = StObject.set(x, "timeZoneName", js.undefined)
       
-      inline def setWeekday(value: String): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
+      inline def setWeekday(value: long | short | narrow): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
       
       inline def setWeekdayUndefined: Self = StObject.set(x, "weekday", js.undefined)
       
-      inline def setYear(value: String): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+      inline def setYear(value: numeric | `2-digit`): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
       
       inline def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
     }
@@ -358,9 +336,13 @@ object dateTimeMod {
     
     var day: `2-digit` | numeric
     
+    var dayPeriod: narrow | short | long
+    
     var era: narrow | short | long
     
     var format: Formats
+    
+    var fractionalSecondDigits: js.UndefOr[`1` | `2` | `3`] = js.undefined
     
     var hour: `2-digit` | numeric
     
@@ -395,6 +377,7 @@ object dateTimeMod {
     inline def apply(
       dataLocale: String,
       day: `2-digit` | numeric,
+      dayPeriod: narrow | short | long,
       era: narrow | short | long,
       format: Formats,
       hour: `2-digit` | numeric,
@@ -411,7 +394,7 @@ object dateTimeMod {
       weekday: narrow | short | long,
       year: `2-digit` | numeric
     ): IntlDateTimeFormatInternal = {
-      val __obj = js.Dynamic.literal(dataLocale = dataLocale.asInstanceOf[js.Any], day = day.asInstanceOf[js.Any], era = era.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], hour = hour.asInstanceOf[js.Any], hourCycle = hourCycle.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], minute = minute.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any], numberingSystem = numberingSystem.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], rangePatterns = rangePatterns.asInstanceOf[js.Any], second = second.asInstanceOf[js.Any], timeZone = timeZone.asInstanceOf[js.Any], timeZoneName = timeZoneName.asInstanceOf[js.Any], weekday = weekday.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(dataLocale = dataLocale.asInstanceOf[js.Any], day = day.asInstanceOf[js.Any], dayPeriod = dayPeriod.asInstanceOf[js.Any], era = era.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], hour = hour.asInstanceOf[js.Any], hourCycle = hourCycle.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], minute = minute.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any], numberingSystem = numberingSystem.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], rangePatterns = rangePatterns.asInstanceOf[js.Any], second = second.asInstanceOf[js.Any], timeZone = timeZone.asInstanceOf[js.Any], timeZoneName = timeZoneName.asInstanceOf[js.Any], weekday = weekday.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any])
       __obj.asInstanceOf[IntlDateTimeFormatInternal]
     }
     
@@ -433,9 +416,15 @@ object dateTimeMod {
       
       inline def setDay(value: `2-digit` | numeric): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       
+      inline def setDayPeriod(value: narrow | short | long): Self = StObject.set(x, "dayPeriod", value.asInstanceOf[js.Any])
+      
       inline def setEra(value: narrow | short | long): Self = StObject.set(x, "era", value.asInstanceOf[js.Any])
       
       inline def setFormat(value: Formats): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      
+      inline def setFractionalSecondDigits(value: `1` | `2` | `3`): Self = StObject.set(x, "fractionalSecondDigits", value.asInstanceOf[js.Any])
+      
+      inline def setFractionalSecondDigitsUndefined: Self = StObject.set(x, "fractionalSecondDigits", js.undefined)
       
       inline def setHour(value: `2-digit` | numeric): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
       
@@ -500,13 +489,61 @@ object dateTimeMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.std.Intl.DateTimeFormatPartTypes
     - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.ampm
     - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.relatedYear
     - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.yearName
     - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.unknown
+    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.fractionalSecondDigits
+    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.day
+    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.dayPeriod
+    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.era
+    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.hour
+    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.literal
+    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.minute
+    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.month
+    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.second
+    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.timeZoneName
+    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.weekday
+    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.year
+    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.fractionalSecond
   */
-  type IntlDateTimeFormatPartType = _IntlDateTimeFormatPartType | DateTimeFormatPartTypes
+  trait IntlDateTimeFormatPartType extends StObject
+  object IntlDateTimeFormatPartType {
+    
+    inline def ampm: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.ampm = "ampm".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.ampm]
+    
+    inline def day: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.day = "day".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.day]
+    
+    inline def dayPeriod: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.dayPeriod = "dayPeriod".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.dayPeriod]
+    
+    inline def era: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.era = "era".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.era]
+    
+    inline def fractionalSecond: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.fractionalSecond = "fractionalSecond".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.fractionalSecond]
+    
+    inline def fractionalSecondDigits: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.fractionalSecondDigits = "fractionalSecondDigits".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.fractionalSecondDigits]
+    
+    inline def hour: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.hour = "hour".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.hour]
+    
+    inline def literal: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.literal = "literal".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.literal]
+    
+    inline def minute: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.minute = "minute".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.minute]
+    
+    inline def month: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.month = "month".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.month]
+    
+    inline def relatedYear: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.relatedYear = "relatedYear".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.relatedYear]
+    
+    inline def second: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.second = "second".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.second]
+    
+    inline def timeZoneName: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.timeZoneName = "timeZoneName".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.timeZoneName]
+    
+    inline def unknown: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.unknown = "unknown".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.unknown]
+    
+    inline def weekday: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.weekday = "weekday".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.weekday]
+    
+    inline def year: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.year = "year".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.year]
+    
+    inline def yearName: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.yearName = "yearName".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.yearName]
+  }
   
   trait RangePatternPart[T /* <: RangePatternType */] extends StObject {
     
@@ -529,45 +566,30 @@ object dateTimeMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.startRange
-    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.shared
-    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.endRange
-  */
-  trait RangePatternType extends StObject
-  object RangePatternType {
-    
-    inline def endRange: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.endRange = "endRange".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.endRange]
-    
-    inline def shared: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.shared = "shared".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.shared]
-    
-    inline def startRange: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.startRange = "startRange".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.startRange]
-  }
-  
-  /* Inlined std.Pick<@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/date-time.DateTimeFormatOptions, 'weekday' | 'era' | 'year' | 'month' | 'day' | 'hour' | 'minute' | 'second' | 'timeZoneName'> & {  hour12 :boolean | undefined,   patternParts :std.Array<@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/date-time.RangePatternPart<@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/date-time.RangePatternType>>} */
+  /* Inlined std.Pick<std.Intl.DateTimeFormatOptions, 'weekday' | 'era' | 'year' | 'month' | 'day' | 'hour' | 'minute' | 'second' | 'timeZoneName'> & {  hour12 :boolean | undefined,   patternParts :std.Array<@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/date-time.RangePatternPart<@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/date-time.RangePatternType>>} */
   trait RangePatterns extends StObject {
     
-    var day: js.UndefOr[String] = js.undefined
+    var day: js.UndefOr[numeric | `2-digit`] = js.undefined
     
-    var era: js.UndefOr[String] = js.undefined
+    var era: js.UndefOr[long | short | narrow] = js.undefined
     
-    var hour: js.UndefOr[String] = js.undefined
+    var hour: js.UndefOr[numeric | `2-digit`] = js.undefined
     
     var hour12: js.UndefOr[Boolean] = js.undefined
     
-    var minute: js.UndefOr[String] = js.undefined
+    var minute: js.UndefOr[numeric | `2-digit`] = js.undefined
     
-    var month: js.UndefOr[String] = js.undefined
+    var month: js.UndefOr[numeric | `2-digit` | long | short | narrow] = js.undefined
     
     var patternParts: js.Array[RangePatternPart[RangePatternType]]
     
-    var second: js.UndefOr[String] = js.undefined
+    var second: js.UndefOr[numeric | `2-digit`] = js.undefined
     
-    var timeZoneName: js.UndefOr[String] = js.undefined
+    var timeZoneName: js.UndefOr[short | long | shortOffset | longOffset | shortGeneric | longGeneric] = js.undefined
     
-    var weekday: js.UndefOr[String] = js.undefined
+    var weekday: js.UndefOr[long | short | narrow] = js.undefined
     
-    var year: js.UndefOr[String] = js.undefined
+    var year: js.UndefOr[numeric | `2-digit`] = js.undefined
   }
   object RangePatterns {
     
@@ -578,15 +600,15 @@ object dateTimeMod {
     
     extension [Self <: RangePatterns](x: Self) {
       
-      inline def setDay(value: String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+      inline def setDay(value: numeric | `2-digit`): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       
       inline def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
       
-      inline def setEra(value: String): Self = StObject.set(x, "era", value.asInstanceOf[js.Any])
+      inline def setEra(value: long | short | narrow): Self = StObject.set(x, "era", value.asInstanceOf[js.Any])
       
       inline def setEraUndefined: Self = StObject.set(x, "era", js.undefined)
       
-      inline def setHour(value: String): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
+      inline def setHour(value: numeric | `2-digit`): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
       
       inline def setHour12(value: Boolean): Self = StObject.set(x, "hour12", value.asInstanceOf[js.Any])
       
@@ -594,31 +616,31 @@ object dateTimeMod {
       
       inline def setHourUndefined: Self = StObject.set(x, "hour", js.undefined)
       
-      inline def setMinute(value: String): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
+      inline def setMinute(value: numeric | `2-digit`): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
       
       inline def setMinuteUndefined: Self = StObject.set(x, "minute", js.undefined)
       
-      inline def setMonth(value: String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+      inline def setMonth(value: numeric | `2-digit` | long | short | narrow): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
       
       inline def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
       
       inline def setPatternParts(value: js.Array[RangePatternPart[RangePatternType]]): Self = StObject.set(x, "patternParts", value.asInstanceOf[js.Any])
       
-      inline def setPatternPartsVarargs(value: RangePatternPart[RangePatternType]*): Self = StObject.set(x, "patternParts", js.Array(value :_*))
+      inline def setPatternPartsVarargs(value: RangePatternPart[RangePatternType]*): Self = StObject.set(x, "patternParts", js.Array(value*))
       
-      inline def setSecond(value: String): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
+      inline def setSecond(value: numeric | `2-digit`): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
       
       inline def setSecondUndefined: Self = StObject.set(x, "second", js.undefined)
       
-      inline def setTimeZoneName(value: String): Self = StObject.set(x, "timeZoneName", value.asInstanceOf[js.Any])
+      inline def setTimeZoneName(value: short | long | shortOffset | longOffset | shortGeneric | longGeneric): Self = StObject.set(x, "timeZoneName", value.asInstanceOf[js.Any])
       
       inline def setTimeZoneNameUndefined: Self = StObject.set(x, "timeZoneName", js.undefined)
       
-      inline def setWeekday(value: String): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
+      inline def setWeekday(value: long | short | narrow): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
       
       inline def setWeekdayUndefined: Self = StObject.set(x, "weekday", js.undefined)
       
-      inline def setYear(value: String): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+      inline def setYear(value: numeric | `2-digit`): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
       
       inline def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
     }
@@ -626,32 +648,12 @@ object dateTimeMod {
   
   trait ResolvedDateTimeFormatOptions
     extends StObject
-       with typings.std.Intl.ResolvedDateTimeFormatOptions {
-    
-    var dateStyle: js.UndefOr[full | long | medium | short] = js.undefined
-    
-    var hourCycle: String
-    
-    var timeStyle: js.UndefOr[full | long | medium | short] = js.undefined
-  }
+       with typings.std.Intl.ResolvedDateTimeFormatOptions
   object ResolvedDateTimeFormatOptions {
     
-    inline def apply(calendar: String, hourCycle: String, locale: String, numberingSystem: String, timeZone: String): ResolvedDateTimeFormatOptions = {
-      val __obj = js.Dynamic.literal(calendar = calendar.asInstanceOf[js.Any], hourCycle = hourCycle.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], numberingSystem = numberingSystem.asInstanceOf[js.Any], timeZone = timeZone.asInstanceOf[js.Any])
+    inline def apply(calendar: String, locale: String, numberingSystem: String, timeZone: String): ResolvedDateTimeFormatOptions = {
+      val __obj = js.Dynamic.literal(calendar = calendar.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], numberingSystem = numberingSystem.asInstanceOf[js.Any], timeZone = timeZone.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResolvedDateTimeFormatOptions]
-    }
-    
-    extension [Self <: ResolvedDateTimeFormatOptions](x: Self) {
-      
-      inline def setDateStyle(value: full | long | medium | short): Self = StObject.set(x, "dateStyle", value.asInstanceOf[js.Any])
-      
-      inline def setDateStyleUndefined: Self = StObject.set(x, "dateStyle", js.undefined)
-      
-      inline def setHourCycle(value: String): Self = StObject.set(x, "hourCycle", value.asInstanceOf[js.Any])
-      
-      inline def setTimeStyle(value: full | long | medium | short): Self = StObject.set(x, "timeStyle", value.asInstanceOf[js.Any])
-      
-      inline def setTimeStyleUndefined: Self = StObject.set(x, "timeStyle", js.undefined)
     }
   }
   
@@ -660,10 +662,12 @@ object dateTimeMod {
     - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.year
     - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.month
     - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.day
+    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.dayPeriod
     - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.ampm
     - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.hour
     - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.minute
     - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.second
+    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.fractionalSecondDigits
   */
   trait TABLE_2 extends StObject
   object TABLE_2 {
@@ -672,7 +676,11 @@ object dateTimeMod {
     
     inline def day: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.day = "day".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.day]
     
+    inline def dayPeriod: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.dayPeriod = "dayPeriod".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.dayPeriod]
+    
     inline def era: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.era = "era".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.era]
+    
+    inline def fractionalSecondDigits: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.fractionalSecondDigits = "fractionalSecondDigits".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.fractionalSecondDigits]
     
     inline def hour: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.hour = "hour".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.hour]
     
@@ -694,6 +702,7 @@ object dateTimeMod {
     - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.hour
     - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.minute
     - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.second
+    - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.fractionalSecondDigits
     - typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.timeZoneName
   */
   trait TABLE_6 extends StObject
@@ -702,6 +711,8 @@ object dateTimeMod {
     inline def day: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.day = "day".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.day]
     
     inline def era: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.era = "era".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.era]
+    
+    inline def fractionalSecondDigits: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.fractionalSecondDigits = "fractionalSecondDigits".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.fractionalSecondDigits]
     
     inline def hour: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.hour = "hour".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.hour]
     
@@ -721,6 +732,4 @@ object dateTimeMod {
   type TimeZoneNameData = Record[String, Long]
   
   type UnpackedZoneData = js.Tuple4[Double, String, Double, Boolean]
-  
-  trait _IntlDateTimeFormatPartType extends StObject
 }

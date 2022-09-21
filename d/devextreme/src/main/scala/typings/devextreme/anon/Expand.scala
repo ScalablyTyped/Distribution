@@ -23,12 +23,12 @@ object Expand {
     
     inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
     
-    inline def setExpandVarargs(value: String*): Self = StObject.set(x, "expand", js.Array(value :_*))
+    inline def setExpandVarargs(value: String*): Self = StObject.set(x, "expand", js.Array(value*))
     
     inline def setSelect(value: String | js.Array[String]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     
     inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     
-    inline def setSelectVarargs(value: String*): Self = StObject.set(x, "select", js.Array(value :_*))
+    inline def setSelectVarargs(value: String*): Self = StObject.set(x, "select", js.Array(value*))
   }
 }

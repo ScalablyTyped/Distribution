@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [data] An Array with items.
   * @param [options] DataSet options.
   */
-class DataSet[T /* <: DataItem | DataGroup | Node | Edge */] () extends StObject {
+open class DataSet[T /* <: DataItem | DataGroup | Node | Edge */] () extends StObject {
   def this(data: js.Array[T]) = this()
   /**
     * Creates an instance of DataSet.
@@ -52,7 +52,7 @@ class DataSet[T /* <: DataItem | DataGroup | Node | Edge */] () extends StObject
     * @param field The search term.
     * @returns Returns an unordered array containing all distinct values.
     */
-  def distinct(field: String): js.Array[js.Any] = js.native
+  def distinct(field: String): js.Array[Any] = js.native
   
   /**
     * Flush queued changes.
@@ -153,7 +153,7 @@ class DataSet[T /* <: DataItem | DataGroup | Node | Edge */] () extends StObject
     */
   def off(
     event: String,
-    callback: js.Function3[/* event */ String, /* properties */ js.Any, /* senderId */ IdType, Unit]
+    callback: js.Function3[/* event */ String, /* properties */ Any, /* senderId */ IdType, Unit]
   ): Unit = js.native
   
   /**
@@ -165,7 +165,7 @@ class DataSet[T /* <: DataItem | DataGroup | Node | Edge */] () extends StObject
     */
   def on(
     event: String,
-    callback: js.Function3[/* event */ String, /* properties */ js.Any, /* senderId */ IdType, Unit]
+    callback: js.Function3[/* event */ String, /* properties */ Any, /* senderId */ IdType, Unit]
   ): Unit = js.native
   
   def remove(id: js.Array[IdType]): js.Array[IdType] = js.native

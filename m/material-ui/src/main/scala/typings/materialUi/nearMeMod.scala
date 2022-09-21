@@ -10,10 +10,10 @@ object nearMeMod {
   
   @JSImport("material-ui/svg-icons/maps/near-me", JSImport.Default)
   @js.native
-  class default () extends MapsNearMe
+  open class default () extends MapsNearMe
   
   @JSImport("material-ui/svg-icons/maps/near-me", "MapsNearMe")
   @js.native
-  class MapsNearMe ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class MapsNearMe ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

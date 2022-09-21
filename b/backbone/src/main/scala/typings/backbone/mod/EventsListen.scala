@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait EventsListen[BaseT] extends StObject {
   
-  def apply[T /* <: BaseT */](`object`: js.Any, eventMap: EventMap): T = js.native
-  def apply[T /* <: BaseT */](`object`: js.Any, events: String, callback: EventHandler): T = js.native
+  def apply[T /* <: BaseT */](`object`: Any, eventMap: EventMap): T = js.native
+  def apply[T /* <: BaseT */](`object`: Any, events: String, callback: EventHandler): T = js.native
 }

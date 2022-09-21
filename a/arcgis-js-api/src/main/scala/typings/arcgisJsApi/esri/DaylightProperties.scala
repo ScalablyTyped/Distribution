@@ -13,12 +13,32 @@ trait DaylightProperties
   /**
     * Controls whether the widget displays a date or a season picker.
     *
+    * @default "date"
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight.html#dateOrSeason)
     */
   var dateOrSeason: js.UndefOr[season | date] = js.undefined
   
   /**
+    * Indicates the heading level to use for the widget title.
+    *
+    * @default 3
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight.html#headingLevel)
+    */
+  var headingLevel: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * The widget's default CSS icon class.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight.html#iconClass)
+    */
+  var iconClass: js.UndefOr[String] = js.undefined
+  
+  /**
     * Controls the speed of the daytime and date animation.
+    *
+    * @default 1.0
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight.html#playSpeedMultiplier)
     */
@@ -26,6 +46,8 @@ trait DaylightProperties
   
   /**
     * Sets steps, or intervals, on the time slider to restrict the times of the day that can be selected when dragging the thumb.
+    *
+    * @default 5
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight.html#timeSliderSteps)
     */
@@ -65,6 +87,14 @@ object DaylightProperties {
     
     inline def setDateOrSeasonUndefined: Self = StObject.set(x, "dateOrSeason", js.undefined)
     
+    inline def setHeadingLevel(value: Double): Self = StObject.set(x, "headingLevel", value.asInstanceOf[js.Any])
+    
+    inline def setHeadingLevelUndefined: Self = StObject.set(x, "headingLevel", js.undefined)
+    
+    inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+    
+    inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
+    
     inline def setPlaySpeedMultiplier(value: Double): Self = StObject.set(x, "playSpeedMultiplier", value.asInstanceOf[js.Any])
     
     inline def setPlaySpeedMultiplierUndefined: Self = StObject.set(x, "playSpeedMultiplier", js.undefined)
@@ -73,7 +103,7 @@ object DaylightProperties {
     
     inline def setTimeSliderStepsUndefined: Self = StObject.set(x, "timeSliderSteps", js.undefined)
     
-    inline def setTimeSliderStepsVarargs(value: Double*): Self = StObject.set(x, "timeSliderSteps", js.Array(value :_*))
+    inline def setTimeSliderStepsVarargs(value: Double*): Self = StObject.set(x, "timeSliderSteps", js.Array(value*))
     
     inline def setView(value: SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     

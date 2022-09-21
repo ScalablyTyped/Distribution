@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.RecycleBinItem")
 @js.native
-class RecycleBinItem ()
+open class RecycleBinItem ()
   extends StObject
      with typings.sharepoint.SP.RecycleBinItem

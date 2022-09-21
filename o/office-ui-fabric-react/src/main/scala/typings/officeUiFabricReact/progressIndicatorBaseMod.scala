@@ -11,16 +11,15 @@ object progressIndicatorBaseMod {
   
   @JSImport("office-ui-fabric-react/lib/components/ProgressIndicator/ProgressIndicator.base", "ProgressIndicatorBase")
   @js.native
-  class ProgressIndicatorBase protected ()
-    extends Component[IProgressIndicatorProps, js.Object, js.Any] {
+  open class ProgressIndicatorBase protected ()
+    extends Component[IProgressIndicatorProps, js.Object, Any] {
     def this(props: IProgressIndicatorProps) = this()
-    /**
-      * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
-      */
-    def this(props: IProgressIndicatorProps, context: js.Any) = this()
     
-    /* private */ var _onRenderProgress: js.Any = js.native
+    /* private */ var _descriptionId: Any = js.native
+    
+    /* private */ var _labelId: Any = js.native
+    
+    /* private */ var _onRenderProgress: Any = js.native
   }
   /* static members */
   object ProgressIndicatorBase {

@@ -22,7 +22,7 @@ object SpatialDataService {
   
   @JSGlobal("Microsoft.Maps.SpatialDataService.Filter")
   @js.native
-  class Filter protected ()
+  open class Filter protected ()
     extends StObject
        with typings.bingmaps.Microsoft.Maps.SpatialDataService.Filter {
     /**
@@ -32,15 +32,15 @@ object SpatialDataService {
       * @param operator The operator to use when comparing the specified property to value to the provided value.
       * @param value A value to compare against.
       */
-    def this(propertyName: String, operator: String, value: js.Any) = this()
-    def this(propertyName: String, operator: FilterCompareOperator, value: js.Any) = this()
+    def this(propertyName: String, operator: String, value: Any) = this()
+    def this(propertyName: String, operator: FilterCompareOperator, value: Any) = this()
     
     /**
       * Executes the filter logic against a JSON object and returns a boolean indicating if the object meets the requirements of the Filter.
       * @returns A boolean indicating if the specified object meets the requirements of the Filter.
       */
     /* CompleteClass */
-    override def execute(`object`: js.Any): Boolean = js.native
+    override def execute(`object`: Any): Boolean = js.native
   }
   
   @JSGlobal("Microsoft.Maps.SpatialDataService.FilterCompareOperator")
@@ -78,7 +78,7 @@ object SpatialDataService {
   
   @JSGlobal("Microsoft.Maps.SpatialDataService.FilterGroup")
   @js.native
-  class FilterGroup protected ()
+  open class FilterGroup protected ()
     extends StObject
        with typings.bingmaps.Microsoft.Maps.SpatialDataService.FilterGroup {
     /**
@@ -96,7 +96,7 @@ object SpatialDataService {
       * @returns A boolean indicating if the specified object meets the requirements of the Filter.
       */
     /* CompleteClass */
-    override def execute(`object`: js.Any): Boolean = js.native
+    override def execute(`object`: Any): Boolean = js.native
   }
   
   @JSGlobal("Microsoft.Maps.SpatialDataService.FilterLogicalOperator")

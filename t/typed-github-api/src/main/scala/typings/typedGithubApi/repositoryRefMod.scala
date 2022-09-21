@@ -11,7 +11,7 @@ object repositoryRefMod {
   
   @JSImport("typed-github-api/dist/repository-ref", "RepositoryRefClass")
   @js.native
-  class RepositoryRefClass protected ()
+  open class RepositoryRefClass protected ()
     extends GitHubRef
        with RepositoryRef {
     def this(owner: OwnerRefClass, name: String) = this()

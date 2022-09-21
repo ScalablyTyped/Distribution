@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLAnchorElement")
 @js.native
-/* private */ class HTMLAnchorElement ()
+/* private */ open class HTMLAnchorElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLAnchorElement

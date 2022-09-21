@@ -11,11 +11,13 @@ trait ServeAfterHookInput
   
   val name: serveColonafter
   
-  val serve: (AngularServeOptions | IonicAngularServeOptions | Ionic1ServeOptions) & ServeDetails
+  val serve: (AngularServeOptions & ServeDetails) | (IonicAngularServeOptions & ServeDetails) | (Ionic1ServeOptions & ServeDetails)
 }
 object ServeAfterHookInput {
   
-  inline def apply(serve: (AngularServeOptions | IonicAngularServeOptions | Ionic1ServeOptions) & ServeDetails): ServeAfterHookInput = {
+  inline def apply(
+    serve: (AngularServeOptions & ServeDetails) | (IonicAngularServeOptions & ServeDetails) | (Ionic1ServeOptions & ServeDetails)
+  ): ServeAfterHookInput = {
     val __obj = js.Dynamic.literal(name = "serve:after", serve = serve.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServeAfterHookInput]
   }
@@ -24,6 +26,8 @@ object ServeAfterHookInput {
     
     inline def setName(value: serveColonafter): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setServe(value: (AngularServeOptions | IonicAngularServeOptions | Ionic1ServeOptions) & ServeDetails): Self = StObject.set(x, "serve", value.asInstanceOf[js.Any])
+    inline def setServe(
+      value: (AngularServeOptions & ServeDetails) | (IonicAngularServeOptions & ServeDetails) | (Ionic1ServeOptions & ServeDetails)
+    ): Self = StObject.set(x, "serve", value.asInstanceOf[js.Any])
   }
 }

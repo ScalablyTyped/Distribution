@@ -37,7 +37,7 @@ object XDriverManager2 {
     getElementType: () => `type`,
     getLoginTimeout: () => Double,
     hasElements: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setLoginTimeout: Double => Unit
   ): XDriverManager2 = {

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Partial<std.Pick<std.Readonly<{  key :string,   index :number,   routeNames :std.Array<string>,   history :std.Array<unknown> | undefined,   routes :std.Array<std.Readonly<{  key :string,   name :string}> & std.Readonly<{  params :object | undefined}> & {  state :std.Readonly<any> | tuya-panel-kit.tuya-panel-kit/@react-navigation/core.PartialState<std.Readonly<any>> | undefined}>,   type :string,   stale :false}>, 'key' | 'index' | 'routeNames' | 'history' | 'type'>> & std.Readonly<{  stale :true | undefined,   routes :std.Array<tuya-panel-kit.tuya-panel-kit/@react-navigation/core.PartialRoute<tuya-panel-kit.tuya-panel-kit/@react-navigation/core.Route<string, object | undefined>>>}> & {  state :std.Partial<std.Pick<std.Readonly<{  key :string,   index :number,   routeNames :std.Array<string>,   history :std.Array<unknown> | undefined,   routes :std.Array<std.Readonly<{  key :string,   name :string}> & std.Readonly<{  params :object | undefined}> & {  state :std.Readonly<any> | tuya-panel-kit.tuya-panel-kit/@react-navigation/core.PartialState<std.Readonly<any>> | undefined}>,   type :string,   stale :false}>, 'key' | 'index' | 'routeNames' | 'history' | 'type'>> & std.Readonly<{  stale :true | undefined,   routes :std.Array<tuya-panel-kit.tuya-panel-kit/@react-navigation/core.PartialRoute<tuya-panel-kit.tuya-panel-kit/@react-navigation/core.Route<string, object | undefined>>>}> & any | undefined} */
 trait PartialPickReadonlykeystrHistory extends StObject {
   
-  var history: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var history: js.UndefOr[js.Array[Any]] = js.undefined
   
   var index: js.UndefOr[Double] = js.undefined
   
@@ -23,7 +23,7 @@ trait PartialPickReadonlykeystrHistory extends StObject {
   
   val stale: js.UndefOr[`true`] = js.undefined
   
-  var state: js.UndefOr[PartialPickReadonlykeystr & Readonlystaletrueundefine & js.Any] = js.undefined
+  var state: js.UndefOr[PartialPickReadonlykeystr & Readonlystaletrueundefine & Any] = js.undefined
   
   var `type`: js.UndefOr[String] = js.undefined
 }
@@ -40,11 +40,11 @@ object PartialPickReadonlykeystrHistory {
   
   extension [Self <: PartialPickReadonlykeystrHistory](x: Self) {
     
-    inline def setHistory(value: js.Array[js.Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+    inline def setHistory(value: js.Array[Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
     inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
     
-    inline def setHistoryVarargs(value: js.Any*): Self = StObject.set(x, "history", js.Array(value :_*))
+    inline def setHistoryVarargs(value: Any*): Self = StObject.set(x, "history", js.Array(value*))
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
@@ -58,7 +58,7 @@ object PartialPickReadonlykeystrHistory {
     
     inline def setRouteNamesUndefined: Self = StObject.set(x, "routeNames", js.undefined)
     
-    inline def setRouteNamesVarargs(value: String*): Self = StObject.set(x, "routeNames", js.Array(value :_*))
+    inline def setRouteNamesVarargs(value: String*): Self = StObject.set(x, "routeNames", js.Array(value*))
     
     inline def setRoutes(
       value: js.Array[
@@ -66,13 +66,13 @@ object PartialPickReadonlykeystrHistory {
         ]
     ): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     
-    inline def setRoutesVarargs(value: (PartialRoute[typings.tuyaPanelKit.routersTypesMod.Route[String, js.UndefOr[js.Object]]])*): Self = StObject.set(x, "routes", js.Array(value :_*))
+    inline def setRoutesVarargs(value: (PartialRoute[typings.tuyaPanelKit.routersTypesMod.Route[String, js.UndefOr[js.Object]]])*): Self = StObject.set(x, "routes", js.Array(value*))
     
     inline def setStale(value: `true`): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
     
     inline def setStaleUndefined: Self = StObject.set(x, "stale", js.undefined)
     
-    inline def setState(value: PartialPickReadonlykeystr & Readonlystaletrueundefine & js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: PartialPickReadonlykeystr & Readonlystaletrueundefine & Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     

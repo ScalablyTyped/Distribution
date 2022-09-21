@@ -19,6 +19,10 @@ object maximMazurokGapiClientFileStrings {
   inline def GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings: GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings = "GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings".asInstanceOf[GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings]
   
   @js.native
+  sealed trait GoogleCloudSaasacceleratorManagementProvidersV1PerSliSloEligibility extends StObject
+  inline def GoogleCloudSaasacceleratorManagementProvidersV1PerSliSloEligibility: GoogleCloudSaasacceleratorManagementProvidersV1PerSliSloEligibility = "GoogleCloudSaasacceleratorManagementProvidersV1PerSliSloEligibility".asInstanceOf[GoogleCloudSaasacceleratorManagementProvidersV1PerSliSloEligibility]
+  
+  @js.native
   sealed trait Instance extends StObject
   inline def Instance: Instance = "Instance".asInstanceOf[Instance]
   
@@ -33,6 +37,10 @@ object maximMazurokGapiClientFileStrings {
   @js.native
   sealed trait Operation extends StObject
   inline def Operation: Operation = "Operation".asInstanceOf[Operation]
+  
+  @js.native
+  sealed trait Snapshot extends StObject
+  inline def Snapshot: Snapshot = "Snapshot".asInstanceOf[Snapshot]
   
   @js.native
   sealed trait Status extends StObject

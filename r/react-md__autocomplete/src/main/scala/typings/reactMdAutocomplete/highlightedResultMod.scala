@@ -9,61 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object highlightedResultMod {
   
-  object HighlightedResult {
-    
-    inline def apply(hasPropIdStyleClassNameEnabledValueChildrenRepeatableIndex: HighlightedResultProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasPropIdStyleClassNameEnabledValueChildrenRepeatableIndex.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
-    
-    @JSImport("@react-md/autocomplete/types/HighlightedResult", "HighlightedResult")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    object propTypes {
-      
-      @JSImport("@react-md/autocomplete/types/HighlightedResult", "HighlightedResult.propTypes")
-      @js.native
-      val ^ : js.Any = js.native
-      
-      @JSImport("@react-md/autocomplete/types/HighlightedResult", "HighlightedResult.propTypes.children")
-      @js.native
-      def children: js.Any = js.native
-      inline def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/autocomplete/types/HighlightedResult", "HighlightedResult.propTypes.className")
-      @js.native
-      def className: js.Any = js.native
-      inline def className_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/autocomplete/types/HighlightedResult", "HighlightedResult.propTypes.enabled")
-      @js.native
-      def enabled: js.Any = js.native
-      inline def enabled_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enabled")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/autocomplete/types/HighlightedResult", "HighlightedResult.propTypes.id")
-      @js.native
-      def id: js.Any = js.native
-      inline def id_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/autocomplete/types/HighlightedResult", "HighlightedResult.propTypes.index")
-      @js.native
-      def index: js.Any = js.native
-      inline def index_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("index")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/autocomplete/types/HighlightedResult", "HighlightedResult.propTypes.repeatable")
-      @js.native
-      def repeatable: js.Any = js.native
-      inline def repeatable_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("repeatable")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/autocomplete/types/HighlightedResult", "HighlightedResult.propTypes.style")
-      @js.native
-      def style: js.Any = js.native
-      inline def style_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("style")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@react-md/autocomplete/types/HighlightedResult", "HighlightedResult.propTypes.value")
-      @js.native
-      def value: js.Any = js.native
-      inline def value_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("value")(x.asInstanceOf[js.Any])
-    }
-  }
+  @JSImport("@react-md/autocomplete/types/HighlightedResult", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def HighlightedResult(hasPropIdStyleClassNameEnabledValueChildrenRepeatableIndex: HighlightedResultProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("HighlightedResult")(hasPropIdStyleClassNameEnabledValueChildrenRepeatableIndex.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   trait HighlightedResultProps extends StObject {
     

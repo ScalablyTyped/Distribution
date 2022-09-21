@@ -27,7 +27,7 @@ object anon {
       
       inline def setNodes(value: js.Array[Identifier_ | ThisExpression_]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
-      inline def setNodesVarargs(value: (Identifier_ | ThisExpression_)*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+      inline def setNodesVarargs(value: (Identifier_ | ThisExpression_)*): Self = StObject.set(x, "nodes", js.Array(value*))
     }
   }
 }

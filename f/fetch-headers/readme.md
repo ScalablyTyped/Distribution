@@ -4,16 +4,16 @@
 Typings are for version 2.0
 
 ## Library description:
-fetch Headers polyfill
+fetch Headers
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | fetch-headers |
-| Keywords           | w3c, header, headers, fetch |
-| # releases         | 0 |
-| # dependents       | 10 |
-| # downloads        | 599838 |
-| # stars            | 2 |
+| Keywords           | Headers, fetch, spec, whatwg |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 54207.666666666664 |
+| # stars            | 14.0 |
 
 ## Links
 - [Homepage](https://github.com/jimmywarting/fetch-headers#readme)

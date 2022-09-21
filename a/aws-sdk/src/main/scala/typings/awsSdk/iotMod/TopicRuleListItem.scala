@@ -9,7 +9,7 @@ trait TopicRuleListItem extends StObject {
   /**
     * The date and time the rule was created.
     */
-  var createdAt: js.UndefOr[CreatedAtDate] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The rule ARN.
@@ -40,7 +40,7 @@ object TopicRuleListItem {
   
   extension [Self <: TopicRuleListItem](x: Self) {
     
-    inline def setCreatedAt(value: CreatedAtDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     

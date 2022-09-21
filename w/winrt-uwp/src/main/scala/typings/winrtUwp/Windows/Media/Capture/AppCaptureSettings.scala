@@ -62,7 +62,7 @@ trait AppCaptureSettings extends StObject {
   /** Gets a value indicating whether the device is memory-constrained. */
   var isMemoryConstrained: Boolean
   
-  var isMicrophoneCaptureEnabled: js.Any
+  var isMicrophoneCaptureEnabled: Any
   
   /* unmapped type */
   /** Gets or sets the maximum recording length. */
@@ -98,7 +98,7 @@ object AppCaptureSettings {
     isHistoricalCaptureOnBatteryAllowed: Boolean,
     isHistoricalCaptureOnWirelessDisplayAllowed: Boolean,
     isMemoryConstrained: Boolean,
-    isMicrophoneCaptureEnabled: js.Any,
+    isMicrophoneCaptureEnabled: Any,
     maximumRecordLength: Double,
     screenshotDestinationFolder: StorageFolder,
     videoEncodingBitrateMode: AppCaptureVideoEncodingBitrateMode,
@@ -146,7 +146,7 @@ object AppCaptureSettings {
     
     inline def setIsMemoryConstrained(value: Boolean): Self = StObject.set(x, "isMemoryConstrained", value.asInstanceOf[js.Any])
     
-    inline def setIsMicrophoneCaptureEnabled(value: js.Any): Self = StObject.set(x, "isMicrophoneCaptureEnabled", value.asInstanceOf[js.Any])
+    inline def setIsMicrophoneCaptureEnabled(value: Any): Self = StObject.set(x, "isMicrophoneCaptureEnabled", value.asInstanceOf[js.Any])
     
     inline def setMaximumRecordLength(value: Double): Self = StObject.set(x, "maximumRecordLength", value.asInstanceOf[js.Any])
     

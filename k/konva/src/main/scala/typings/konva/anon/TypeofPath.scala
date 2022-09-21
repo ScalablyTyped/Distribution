@@ -14,42 +14,22 @@ trait TypeofPath
      with Instantiable0[Path]
      with Instantiable1[/* config */ PathConfig, Path] {
   
-  def calcLength(x: js.Any, y: js.Any, cmd: js.Any, points: js.Any): js.Any = js.native
+  def calcLength(x: Any, y: Any, cmd: Any, points: Any): Any = js.native
   
-  def convertEndpointToCenterParameterization(
-    x1: js.Any,
-    y1: js.Any,
-    x2: js.Any,
-    y2: js.Any,
-    fa: js.Any,
-    fs: js.Any,
-    rx: js.Any,
-    ry: js.Any,
-    psiDeg: js.Any
-  ): js.Array[js.Any] = js.native
+  def convertEndpointToCenterParameterization(x1: Any, y1: Any, x2: Any, y2: Any, fa: Any, fs: Any, rx: Any, ry: Any, psiDeg: Any): js.Array[Any] = js.native
   
-  def getLineLength(x1: js.Any, y1: js.Any, x2: js.Any, y2: js.Any): Double = js.native
+  def getLineLength(x1: Any, y1: Any, x2: Any, y2: Any): Double = js.native
   
-  def getPointOnCubicBezier(
-    pct: js.Any,
-    P1x: js.Any,
-    P1y: js.Any,
-    P2x: js.Any,
-    P2y: js.Any,
-    P3x: js.Any,
-    P3y: js.Any,
-    P4x: js.Any,
-    P4y: js.Any
-  ): X = js.native
+  def getPointOnCubicBezier(pct: Any, P1x: Any, P1y: Any, P2x: Any, P2y: Any, P3x: Any, P3y: Any, P4x: Any, P4y: Any): X = js.native
   
-  def getPointOnEllipticalArc(cx: js.Any, cy: js.Any, rx: js.Any, ry: js.Any, theta: js.Any, psi: js.Any): XY = js.native
+  def getPointOnEllipticalArc(cx: Any, cy: Any, rx: Any, ry: Any, theta: Any, psi: Any): XY = js.native
   
-  def getPointOnLine(dist: js.Any, P1x: js.Any, P1y: js.Any, P2x: js.Any, P2y: js.Any): js.Any = js.native
-  def getPointOnLine(dist: js.Any, P1x: js.Any, P1y: js.Any, P2x: js.Any, P2y: js.Any, fromX: js.Any): js.Any = js.native
-  def getPointOnLine(dist: js.Any, P1x: js.Any, P1y: js.Any, P2x: js.Any, P2y: js.Any, fromX: js.Any, fromY: js.Any): js.Any = js.native
-  def getPointOnLine(dist: js.Any, P1x: js.Any, P1y: js.Any, P2x: js.Any, P2y: js.Any, fromX: Unit, fromY: js.Any): js.Any = js.native
+  def getPointOnLine(dist: Any, P1x: Any, P1y: Any, P2x: Any, P2y: Any): Any = js.native
+  def getPointOnLine(dist: Any, P1x: Any, P1y: Any, P2x: Any, P2y: Any, fromX: Any): Any = js.native
+  def getPointOnLine(dist: Any, P1x: Any, P1y: Any, P2x: Any, P2y: Any, fromX: Any, fromY: Any): Any = js.native
+  def getPointOnLine(dist: Any, P1x: Any, P1y: Any, P2x: Any, P2y: Any, fromX: Unit, fromY: Any): Any = js.native
   
-  def getPointOnQuadraticBezier(pct: js.Any, P1x: js.Any, P1y: js.Any, P2x: js.Any, P2y: js.Any, P3x: js.Any, P3y: js.Any): X = js.native
+  def getPointOnQuadraticBezier(pct: Any, P1x: Any, P1y: Any, P2x: Any, P2y: Any, P3x: Any, P3y: Any): X = js.native
   
-  def parsePathData(data: js.Any): js.Array[js.Any] = js.native
+  def parsePathData(data: Any): js.Array[Any] = js.native
 }

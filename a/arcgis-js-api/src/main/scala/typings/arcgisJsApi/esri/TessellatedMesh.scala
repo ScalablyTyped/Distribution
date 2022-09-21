@@ -41,10 +41,10 @@ object TessellatedMesh {
     
     inline def setIndices(value: js.Array[Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     
-    inline def setIndicesVarargs(value: Double*): Self = StObject.set(x, "indices", js.Array(value :_*))
+    inline def setIndicesVarargs(value: Double*): Self = StObject.set(x, "indices", js.Array(value*))
     
     inline def setVertices(value: js.Array[MeshVertex]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
     
-    inline def setVerticesVarargs(value: MeshVertex*): Self = StObject.set(x, "vertices", js.Array(value :_*))
+    inline def setVerticesVarargs(value: MeshVertex*): Self = StObject.set(x, "vertices", js.Array(value*))
   }
 }

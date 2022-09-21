@@ -3,8 +3,8 @@ package typings.reactWorldFlags
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
 import typings.react.mod.HTMLProps
-import typings.std.Element
-import typings.std.HTMLElement
+import typings.react.mod.ReactNode
+import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +20,7 @@ object mod extends Shortcut {
   
   trait FlagProps
     extends StObject
-       with HTMLProps[HTMLElement] {
+       with HTMLProps[HTMLImageElement] {
     
     /**
       * code is the two letter, three letter or three digit country code.
@@ -30,7 +30,7 @@ object mod extends Shortcut {
     /**
       * You can also pass an optional fallback which renders if the given code doesn't correspond to a flag
       */
-    var fallback: js.UndefOr[Element | Null] = js.undefined
+    var fallback: js.UndefOr[ReactNode | Null] = js.undefined
   }
   object FlagProps {
     
@@ -45,7 +45,7 @@ object mod extends Shortcut {
       
       inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
       
-      inline def setFallback(value: Element): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+      inline def setFallback(value: ReactNode): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
       inline def setFallbackNull: Self = StObject.set(x, "fallback", null)
       

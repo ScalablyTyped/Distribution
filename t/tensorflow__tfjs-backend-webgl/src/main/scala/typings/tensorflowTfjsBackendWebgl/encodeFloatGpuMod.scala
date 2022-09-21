@@ -10,7 +10,7 @@ object encodeFloatGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/encode_float_gpu", "EncodeFloatProgram")
   @js.native
-  class EncodeFloatProgram protected ()
+  open class EncodeFloatProgram protected ()
     extends StObject
        with GPGPUProgram {
     def this(outputShape: js.Array[Double]) = this()

@@ -18,12 +18,12 @@ trait ITextOptions
   /**
     * For functionalities on keyDown + ctrl || cmd
     */
-  var ctrlKeysMapDown: js.UndefOr[js.Any] = js.undefined
+  var ctrlKeysMapDown: js.UndefOr[Any] = js.undefined
   
   /**
     * For functionalities on keyUp + ctrl || cmd
     */
-  var ctrlKeysMapUp: js.UndefOr[js.Any] = js.undefined
+  var ctrlKeysMapUp: js.UndefOr[Any] = js.undefined
   
   /**
     * Color of default cursor (when not overwritten by character style)
@@ -89,7 +89,7 @@ trait ITextOptions
     * this.keysMap = fabric.util.object.clone(this.keysMap);
     * The function must be in fabric.Itext.prototype.myFunction And will receive event as args[0]
     */
-  var keysMap: js.UndefOr[js.Any] = js.undefined
+  var keysMap: js.UndefOr[Any] = js.undefined
   
   var path: js.UndefOr[String] = js.undefined
   
@@ -132,11 +132,11 @@ object ITextOptions {
     
     inline def setCachingUndefined: Self = StObject.set(x, "caching", js.undefined)
     
-    inline def setCtrlKeysMapDown(value: js.Any): Self = StObject.set(x, "ctrlKeysMapDown", value.asInstanceOf[js.Any])
+    inline def setCtrlKeysMapDown(value: Any): Self = StObject.set(x, "ctrlKeysMapDown", value.asInstanceOf[js.Any])
     
     inline def setCtrlKeysMapDownUndefined: Self = StObject.set(x, "ctrlKeysMapDown", js.undefined)
     
-    inline def setCtrlKeysMapUp(value: js.Any): Self = StObject.set(x, "ctrlKeysMapUp", value.asInstanceOf[js.Any])
+    inline def setCtrlKeysMapUp(value: Any): Self = StObject.set(x, "ctrlKeysMapUp", value.asInstanceOf[js.Any])
     
     inline def setCtrlKeysMapUpUndefined: Self = StObject.set(x, "ctrlKeysMapUp", js.undefined)
     
@@ -176,7 +176,7 @@ object ITextOptions {
     
     inline def setIsEditingUndefined: Self = StObject.set(x, "isEditing", js.undefined)
     
-    inline def setKeysMap(value: js.Any): Self = StObject.set(x, "keysMap", value.asInstanceOf[js.Any])
+    inline def setKeysMap(value: Any): Self = StObject.set(x, "keysMap", value.asInstanceOf[js.Any])
     
     inline def setKeysMapUndefined: Self = StObject.set(x, "keysMap", js.undefined)
     

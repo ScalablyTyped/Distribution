@@ -25,9 +25,9 @@ trait IXmlNode
   
   var lastChild: IXmlNode
   
-  var localName: js.Any
+  var localName: Any
   
-  var namespaceUri: js.Any
+  var namespaceUri: Any
   
   var nextSibling: IXmlNode
   
@@ -35,7 +35,7 @@ trait IXmlNode
   
   var nodeType: NodeType
   
-  var nodeValue: js.Any
+  var nodeValue: Any
   
   def normalize(): Unit
   
@@ -43,7 +43,7 @@ trait IXmlNode
   
   var parentNode: IXmlNode
   
-  var prefix: js.Any
+  var prefix: Any
   
   var previousSibling: IXmlNode
   
@@ -64,23 +64,23 @@ object IXmlNode {
     innerText: String,
     insertBefore: (IXmlNode, IXmlNode) => IXmlNode,
     lastChild: IXmlNode,
-    localName: js.Any,
-    namespaceUri: js.Any,
+    localName: Any,
+    namespaceUri: Any,
     nextSibling: IXmlNode,
     nodeName: String,
     nodeType: NodeType,
-    nodeValue: js.Any,
+    nodeValue: Any,
     normalize: () => Unit,
     ownerDocument: XmlDocument,
     parentNode: IXmlNode,
-    prefix: js.Any,
+    prefix: Any,
     previousSibling: IXmlNode,
     removeChild: IXmlNode => IXmlNode,
     replaceChild: (IXmlNode, IXmlNode) => IXmlNode,
     selectNodes: String => XmlNodeList,
-    selectNodesNS: (String, js.Any) => XmlNodeList,
+    selectNodesNS: (String, Any) => XmlNodeList,
     selectSingleNode: String => IXmlNode,
-    selectSingleNodeNS: (String, js.Any) => IXmlNode
+    selectSingleNodeNS: (String, Any) => IXmlNode
   ): IXmlNode = {
     val __obj = js.Dynamic.literal(appendChild = js.Any.fromFunction1(appendChild), attributes = attributes.asInstanceOf[js.Any], childNodes = childNodes.asInstanceOf[js.Any], cloneNode = js.Any.fromFunction1(cloneNode), firstChild = firstChild.asInstanceOf[js.Any], getXml = js.Any.fromFunction0(getXml), hasChildNodes = js.Any.fromFunction0(hasChildNodes), innerText = innerText.asInstanceOf[js.Any], insertBefore = js.Any.fromFunction2(insertBefore), lastChild = lastChild.asInstanceOf[js.Any], localName = localName.asInstanceOf[js.Any], namespaceUri = namespaceUri.asInstanceOf[js.Any], nextSibling = nextSibling.asInstanceOf[js.Any], nodeName = nodeName.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], nodeValue = nodeValue.asInstanceOf[js.Any], normalize = js.Any.fromFunction0(normalize), ownerDocument = ownerDocument.asInstanceOf[js.Any], parentNode = parentNode.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], previousSibling = previousSibling.asInstanceOf[js.Any], removeChild = js.Any.fromFunction1(removeChild), replaceChild = js.Any.fromFunction2(replaceChild), selectNodes = js.Any.fromFunction1(selectNodes), selectNodesNS = js.Any.fromFunction2(selectNodesNS), selectSingleNode = js.Any.fromFunction1(selectSingleNode), selectSingleNodeNS = js.Any.fromFunction2(selectSingleNodeNS))
     __obj.asInstanceOf[IXmlNode]
@@ -104,9 +104,9 @@ object IXmlNode {
     
     inline def setLastChild(value: IXmlNode): Self = StObject.set(x, "lastChild", value.asInstanceOf[js.Any])
     
-    inline def setLocalName(value: js.Any): Self = StObject.set(x, "localName", value.asInstanceOf[js.Any])
+    inline def setLocalName(value: Any): Self = StObject.set(x, "localName", value.asInstanceOf[js.Any])
     
-    inline def setNamespaceUri(value: js.Any): Self = StObject.set(x, "namespaceUri", value.asInstanceOf[js.Any])
+    inline def setNamespaceUri(value: Any): Self = StObject.set(x, "namespaceUri", value.asInstanceOf[js.Any])
     
     inline def setNextSibling(value: IXmlNode): Self = StObject.set(x, "nextSibling", value.asInstanceOf[js.Any])
     
@@ -114,7 +114,7 @@ object IXmlNode {
     
     inline def setNodeType(value: NodeType): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
     
-    inline def setNodeValue(value: js.Any): Self = StObject.set(x, "nodeValue", value.asInstanceOf[js.Any])
+    inline def setNodeValue(value: Any): Self = StObject.set(x, "nodeValue", value.asInstanceOf[js.Any])
     
     inline def setNormalize(value: () => Unit): Self = StObject.set(x, "normalize", js.Any.fromFunction0(value))
     
@@ -122,7 +122,7 @@ object IXmlNode {
     
     inline def setParentNode(value: IXmlNode): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
     
-    inline def setPrefix(value: js.Any): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: Any): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
     inline def setPreviousSibling(value: IXmlNode): Self = StObject.set(x, "previousSibling", value.asInstanceOf[js.Any])
     

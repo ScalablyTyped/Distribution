@@ -22,6 +22,6 @@ object GooglePrivacyDlpV2InfoTypeTransformations {
     
     inline def setTransformationsUndefined: Self = StObject.set(x, "transformations", js.undefined)
     
-    inline def setTransformationsVarargs(value: GooglePrivacyDlpV2InfoTypeTransformation*): Self = StObject.set(x, "transformations", js.Array(value :_*))
+    inline def setTransformationsVarargs(value: GooglePrivacyDlpV2InfoTypeTransformation*): Self = StObject.set(x, "transformations", js.Array(value*))
   }
 }

@@ -12,11 +12,11 @@ trait GraphQLEnumValueDefinition extends StObject {
   
   var name: String
   
-  var value: js.Any
+  var value: Any
 }
 object GraphQLEnumValueDefinition {
   
-  inline def apply(deprecationReason: String, description: String, name: String, value: js.Any): GraphQLEnumValueDefinition = {
+  inline def apply(deprecationReason: String, description: String, name: String, value: Any): GraphQLEnumValueDefinition = {
     val __obj = js.Dynamic.literal(deprecationReason = deprecationReason.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphQLEnumValueDefinition]
   }
@@ -29,6 +29,6 @@ object GraphQLEnumValueDefinition {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

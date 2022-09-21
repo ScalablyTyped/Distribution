@@ -12,7 +12,7 @@ object redemptionMod {
   
   @JSImport("@keep-network/tbtc.js/src/Redemption", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Redemption {
     def this(deposit: DepositBaseClass) = this()

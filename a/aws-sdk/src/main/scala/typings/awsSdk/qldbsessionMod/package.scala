@@ -1,33 +1,40 @@
 package typings.awsSdk.qldbsessionMod
 
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type CommitDigest = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.qldbsessionMod.Blob | java.lang.String
+type CommitDigest = Buffer | js.typedarray.Uint8Array | Blob | String
 
-type IonBinary = typings.node.Buffer | typings.std.Uint8Array | typings.awsSdk.qldbsessionMod.Blob | java.lang.String
+type IonBinary = Buffer | js.typedarray.Uint8Array | Blob | String
 
-type IonText = java.lang.String
+type IonText = String
 
-type LedgerName = java.lang.String
+type LedgerName = String
 
-type PageToken = java.lang.String
+type PageToken = String
 
-type SessionToken = java.lang.String
+type ProcessingTimeMilliseconds = Double
 
-type Statement = java.lang.String
+type ReadIOs = Double
 
-type StatementParameters = js.Array[typings.awsSdk.qldbsessionMod.ValueHolder]
+type SessionToken = String
 
-type TransactionId = java.lang.String
+type Statement = String
 
-type ValueHolders = js.Array[typings.awsSdk.qldbsessionMod.ValueHolder]
+type StatementParameters = js.Array[ValueHolder]
+
+type TransactionId = String
+
+type ValueHolders = js.Array[ValueHolder]
+
+type WriteIOs = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2019-07-11`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.qldbsessionMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

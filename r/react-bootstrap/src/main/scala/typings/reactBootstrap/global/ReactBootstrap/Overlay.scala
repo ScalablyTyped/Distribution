@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ReactBootstrap.Overlay")
 @js.native
-class Overlay ()
+open class Overlay ()
   extends typings.reactBootstrap.mod.Overlay

@@ -4,16 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Information about the products similar to a single product in a query
-  * image.
-  */
 trait SchemaGoogleCloudVisionV1p2beta1ProductSearchResultsGroupedResult extends StObject {
   
   /**
     * The bounding polygon around the product detected in the query image.
     */
   var boundingPoly: js.UndefOr[SchemaGoogleCloudVisionV1p2beta1BoundingPoly] = js.undefined
+  
+  /**
+    * List of generic predictions for the object in the bounding box.
+    */
+  var objectAnnotations: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p2beta1ProductSearchResultsObjectAnnotation]] = js.undefined
   
   /**
     * List of results, one for each product match.
@@ -33,10 +34,16 @@ object SchemaGoogleCloudVisionV1p2beta1ProductSearchResultsGroupedResult {
     
     inline def setBoundingPolyUndefined: Self = StObject.set(x, "boundingPoly", js.undefined)
     
+    inline def setObjectAnnotations(value: js.Array[SchemaGoogleCloudVisionV1p2beta1ProductSearchResultsObjectAnnotation]): Self = StObject.set(x, "objectAnnotations", value.asInstanceOf[js.Any])
+    
+    inline def setObjectAnnotationsUndefined: Self = StObject.set(x, "objectAnnotations", js.undefined)
+    
+    inline def setObjectAnnotationsVarargs(value: SchemaGoogleCloudVisionV1p2beta1ProductSearchResultsObjectAnnotation*): Self = StObject.set(x, "objectAnnotations", js.Array(value*))
+    
     inline def setResults(value: js.Array[SchemaGoogleCloudVisionV1p2beta1ProductSearchResultsResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    inline def setResultsVarargs(value: SchemaGoogleCloudVisionV1p2beta1ProductSearchResultsResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: SchemaGoogleCloudVisionV1p2beta1ProductSearchResultsResult*): Self = StObject.set(x, "results", js.Array(value*))
   }
 }

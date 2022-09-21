@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The card for presenting a list of options to select from.
-  */
 trait SchemaGoogleCloudDialogflowV2beta1IntentMessageListSelect extends StObject {
   
   /**
@@ -15,9 +12,14 @@ trait SchemaGoogleCloudDialogflowV2beta1IntentMessageListSelect extends StObject
   var items: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2beta1IntentMessageListSelectItem]] = js.undefined
   
   /**
+    * Optional. Subtitle of the list.
+    */
+  var subtitle: js.UndefOr[String | Null] = js.undefined
+  
+  /**
     * Optional. The overall title of the list.
     */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2beta1IntentMessageListSelect {
   
@@ -32,9 +34,17 @@ object SchemaGoogleCloudDialogflowV2beta1IntentMessageListSelect {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: SchemaGoogleCloudDialogflowV2beta1IntentMessageListSelectItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: SchemaGoogleCloudDialogflowV2beta1IntentMessageListSelectItem*): Self = StObject.set(x, "items", js.Array(value*))
+    
+    inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+    
+    inline def setSubtitleNull: Self = StObject.set(x, "subtitle", null)
+    
+    inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleNull: Self = StObject.set(x, "title", null)
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }

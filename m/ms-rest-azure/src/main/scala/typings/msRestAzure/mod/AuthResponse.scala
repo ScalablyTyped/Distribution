@@ -26,6 +26,6 @@ object AuthResponse {
     
     inline def setSubscriptions(value: js.Array[LinkedSubscription]): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
     
-    inline def setSubscriptionsVarargs(value: LinkedSubscription*): Self = StObject.set(x, "subscriptions", js.Array(value :_*))
+    inline def setSubscriptionsVarargs(value: LinkedSubscription*): Self = StObject.set(x, "subscriptions", js.Array(value*))
   }
 }

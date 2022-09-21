@@ -11,16 +11,16 @@ object copyCellsMenuItemMod {
   
   @JSImport("@blueprintjs/table/lib/esm/interactions/menus/copyCellsMenuItem", "CopyCellsMenuItem")
   @js.native
-  class CopyCellsMenuItem protected ()
-    extends PureComponent[ICopyCellsMenuItemProps, js.Object, js.Any] {
+  open class CopyCellsMenuItem protected ()
+    extends PureComponent[ICopyCellsMenuItemProps, js.Object, Any] {
     def this(props: ICopyCellsMenuItemProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ICopyCellsMenuItemProps, context: js.Any) = this()
+    def this(props: ICopyCellsMenuItemProps, context: Any) = this()
     
-    /* private */ var handleClick: js.Any = js.native
+    /* private */ var handleClick: Any = js.native
   }
   
   trait ICopyCellsMenuItemProps
@@ -37,7 +37,7 @@ object copyCellsMenuItemMod {
       * match the value displayed in the `<Cell>` component. The value will be
       * invisibly added as `textContent` into the DOM before copying.
       */
-    def getCellData(row: Double, col: Double): js.Any
+    def getCellData(row: Double, col: Double): Any
     
     /**
       * If you want to do something after the copy or if you want to notify the
@@ -52,7 +52,7 @@ object copyCellsMenuItemMod {
   }
   object ICopyCellsMenuItemProps {
     
-    inline def apply(context: IMenuContext, getCellData: (Double, Double) => js.Any): ICopyCellsMenuItemProps = {
+    inline def apply(context: IMenuContext, getCellData: (Double, Double) => Any): ICopyCellsMenuItemProps = {
       val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], getCellData = js.Any.fromFunction2(getCellData))
       __obj.asInstanceOf[ICopyCellsMenuItemProps]
     }
@@ -61,7 +61,7 @@ object copyCellsMenuItemMod {
       
       inline def setContext(value: IMenuContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      inline def setGetCellData(value: (Double, Double) => js.Any): Self = StObject.set(x, "getCellData", js.Any.fromFunction2(value))
+      inline def setGetCellData(value: (Double, Double) => Any): Self = StObject.set(x, "getCellData", js.Any.fromFunction2(value))
       
       inline def setOnCopy(value: /* success */ Boolean => Unit): Self = StObject.set(x, "onCopy", js.Any.fromFunction1(value))
       

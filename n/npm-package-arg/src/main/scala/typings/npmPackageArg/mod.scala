@@ -24,7 +24,7 @@ object mod {
   
   @JSImport("npm-package-arg", "Result")
   @js.native
-  class Result () extends StObject {
+  open class Result () extends StObject {
     
     /** A version of name escaped to match the npm scoped packages specification. Mostly used when making requests against a registry. When name is null, escapedName will also be null. */
     var escapedName: String | Null = js.native

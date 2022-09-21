@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("google-images", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with GoogleImages {
     def this(engineId: String, apiKey: String) = this()

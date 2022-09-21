@@ -1,0 +1,7 @@
+package typings.googleapis.realtimebiddingV1Mod.realtimebiddingV1
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait SchemaOpenUserListRequest extends StObject

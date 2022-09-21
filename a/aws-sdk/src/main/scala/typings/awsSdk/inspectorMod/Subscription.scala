@@ -32,7 +32,7 @@ object Subscription {
     
     inline def setEventSubscriptions(value: EventSubscriptionList): Self = StObject.set(x, "eventSubscriptions", value.asInstanceOf[js.Any])
     
-    inline def setEventSubscriptionsVarargs(value: EventSubscription*): Self = StObject.set(x, "eventSubscriptions", js.Array(value :_*))
+    inline def setEventSubscriptionsVarargs(value: EventSubscription*): Self = StObject.set(x, "eventSubscriptions", js.Array(value*))
     
     inline def setResourceArn(value: Arn): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
     

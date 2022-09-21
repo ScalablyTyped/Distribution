@@ -2,21 +2,20 @@ package typings.protobufjs.mod
 
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("protobufjs", "Type")
 @js.native
-class Type protected () extends NamespaceBase {
+open class Type protected () extends NamespaceBase {
   /**
     * Constructs a new reflected message type instance.
     * @param name Message name
     * @param [options] Declared options
     */
   def this(name: String) = this()
-  def this(name: String, options: StringDictionary[js.Any]) = this()
+  def this(name: String, options: StringDictionary[Any]) = this()
   
   /**
     * Creates a new message of this type using the specified properties.
@@ -24,7 +23,7 @@ class Type protected () extends NamespaceBase {
     * @returns Message instance
     */
   def create(): Message[js.Object] = js.native
-  def create(properties: StringDictionary[js.Any]): Message[js.Object] = js.native
+  def create(properties: StringDictionary[Any]): Message[js.Object] = js.native
   
   /**
     * The registered constructor, if any registered, otherwise a generic constructor.
@@ -32,6 +31,8 @@ class Type protected () extends NamespaceBase {
     */
   var ctor: Constructor[js.Object] = js.native
   
+  def decode(reader: js.typedarray.Uint8Array): Message[js.Object] = js.native
+  def decode(reader: js.typedarray.Uint8Array, length: Double): Message[js.Object] = js.native
   /**
     * Decodes a message of this type.
     * @param reader Reader or buffer to decode from
@@ -42,9 +43,8 @@ class Type protected () extends NamespaceBase {
     */
   def decode(reader: Reader): Message[js.Object] = js.native
   def decode(reader: Reader, length: Double): Message[js.Object] = js.native
-  def decode(reader: Uint8Array): Message[js.Object] = js.native
-  def decode(reader: Uint8Array, length: Double): Message[js.Object] = js.native
   
+  def decodeDelimited(reader: js.typedarray.Uint8Array): Message[js.Object] = js.native
   /**
     * Decodes a message of this type preceeded by its byte length as a varint.
     * @param reader Reader or buffer to decode from
@@ -53,10 +53,9 @@ class Type protected () extends NamespaceBase {
     * @throws {util.ProtocolError} If required fields are missing
     */
   def decodeDelimited(reader: Reader): Message[js.Object] = js.native
-  def decodeDelimited(reader: Uint8Array): Message[js.Object] = js.native
   
-  def encode(message: StringDictionary[js.Any]): Writer = js.native
-  def encode(message: StringDictionary[js.Any], writer: Writer): Writer = js.native
+  def encode(message: StringDictionary[Any]): Writer = js.native
+  def encode(message: StringDictionary[Any], writer: Writer): Writer = js.native
   /**
     * Encodes a message of this type. Does not implicitly {@link Type#verify|verify} messages.
     * @param message Message instance or plain object
@@ -66,8 +65,8 @@ class Type protected () extends NamespaceBase {
   def encode(message: Message[js.Object]): Writer = js.native
   def encode(message: Message[js.Object], writer: Writer): Writer = js.native
   
-  def encodeDelimited(message: StringDictionary[js.Any]): Writer = js.native
-  def encodeDelimited(message: StringDictionary[js.Any], writer: Writer): Writer = js.native
+  def encodeDelimited(message: StringDictionary[Any]): Writer = js.native
+  def encodeDelimited(message: StringDictionary[Any], writer: Writer): Writer = js.native
   /**
     * Encodes a message of this type preceeded by its byte length as a varint. Does not implicitly {@link Type#verify|verify} messages.
     * @param message Message instance or plain object
@@ -94,7 +93,7 @@ class Type protected () extends NamespaceBase {
     * @param object Plain object to convert
     * @returns Message instance
     */
-  def fromObject(`object`: StringDictionary[js.Any]): Message[js.Object] = js.native
+  def fromObject(`object`: StringDictionary[Any]): Message[js.Object] = js.native
   
   /**
     * Tests if the specified id is reserved.
@@ -131,15 +130,15 @@ class Type protected () extends NamespaceBase {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  def toObject(message: Message[js.Object]): StringDictionary[js.Any] = js.native
-  def toObject(message: Message[js.Object], options: IConversionOptions): StringDictionary[js.Any] = js.native
+  def toObject(message: Message[js.Object]): StringDictionary[Any] = js.native
+  def toObject(message: Message[js.Object], options: IConversionOptions): StringDictionary[Any] = js.native
   
   /**
     * Verifies that field values are valid and that required fields are present.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  def verify(message: StringDictionary[js.Any]): Null | String = js.native
+  def verify(message: StringDictionary[Any]): Null | String = js.native
 }
 /* static members */
 object Type {

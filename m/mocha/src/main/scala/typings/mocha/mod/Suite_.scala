@@ -34,7 +34,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mocha", "Suite")
 @js.native
-class Suite_ protected ()
+open class Suite_ protected ()
   extends StObject
      with Suite {
   def this(title: String) = this()

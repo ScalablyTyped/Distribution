@@ -1,7 +1,6 @@
 package typings.tsconfigPaths
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
 import typings.tsconfigPaths.filesystemMod.FileExistsAsync_
 import typings.tsconfigPaths.filesystemMod.ReadJsonAsync
 import typings.tsconfigPaths.mappingEntryMod.MappingEntry
@@ -16,11 +15,15 @@ object matchPathAsyncMod {
   val ^ : js.Any = js.native
   
   inline def createMatchPathAsync(absoluteBaseUrl: String, paths: StringDictionary[js.Array[String]]): MatchPathAsync = (^.asInstanceOf[js.Dynamic].applyDynamic("createMatchPathAsync")(absoluteBaseUrl.asInstanceOf[js.Any], paths.asInstanceOf[js.Any])).asInstanceOf[MatchPathAsync]
-  inline def createMatchPathAsync(absoluteBaseUrl: String, paths: StringDictionary[js.Array[String]], mainFields: js.Array[String]): MatchPathAsync = (^.asInstanceOf[js.Dynamic].applyDynamic("createMatchPathAsync")(absoluteBaseUrl.asInstanceOf[js.Any], paths.asInstanceOf[js.Any], mainFields.asInstanceOf[js.Any])).asInstanceOf[MatchPathAsync]
   inline def createMatchPathAsync(
     absoluteBaseUrl: String,
     paths: StringDictionary[js.Array[String]],
-    mainFields: js.Array[String],
+    mainFields: js.Array[String | js.Array[String]]
+  ): MatchPathAsync = (^.asInstanceOf[js.Dynamic].applyDynamic("createMatchPathAsync")(absoluteBaseUrl.asInstanceOf[js.Any], paths.asInstanceOf[js.Any], mainFields.asInstanceOf[js.Any])).asInstanceOf[MatchPathAsync]
+  inline def createMatchPathAsync(
+    absoluteBaseUrl: String,
+    paths: StringDictionary[js.Array[String]],
+    mainFields: js.Array[String | js.Array[String]],
     addMatchAll: Boolean
   ): MatchPathAsync = (^.asInstanceOf[js.Dynamic].applyDynamic("createMatchPathAsync")(absoluteBaseUrl.asInstanceOf[js.Any], paths.asInstanceOf[js.Any], mainFields.asInstanceOf[js.Any], addMatchAll.asInstanceOf[js.Any])).asInstanceOf[MatchPathAsync]
   inline def createMatchPathAsync(
@@ -45,7 +48,7 @@ object matchPathAsyncMod {
     fileExists: Unit,
     extensions: js.Array[String],
     callback: MatchPathAsyncCallback,
-    mainFields: js.Array[String]
+    mainFields: js.Array[String | js.Array[String]]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("matchFromAbsolutePathsAsync")(absolutePathMappings.asInstanceOf[js.Any], requestedModule.asInstanceOf[js.Any], readJson.asInstanceOf[js.Any], fileExists.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], mainFields.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def matchFromAbsolutePathsAsync(
     absolutePathMappings: js.Array[MappingEntry],
@@ -62,7 +65,7 @@ object matchPathAsyncMod {
     fileExists: Unit,
     extensions: Unit,
     callback: MatchPathAsyncCallback,
-    mainFields: js.Array[String]
+    mainFields: js.Array[String | js.Array[String]]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("matchFromAbsolutePathsAsync")(absolutePathMappings.asInstanceOf[js.Any], requestedModule.asInstanceOf[js.Any], readJson.asInstanceOf[js.Any], fileExists.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], mainFields.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def matchFromAbsolutePathsAsync(
     absolutePathMappings: js.Array[MappingEntry],
@@ -79,7 +82,7 @@ object matchPathAsyncMod {
     fileExists: FileExistsAsync_,
     extensions: js.Array[String],
     callback: MatchPathAsyncCallback,
-    mainFields: js.Array[String]
+    mainFields: js.Array[String | js.Array[String]]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("matchFromAbsolutePathsAsync")(absolutePathMappings.asInstanceOf[js.Any], requestedModule.asInstanceOf[js.Any], readJson.asInstanceOf[js.Any], fileExists.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], mainFields.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def matchFromAbsolutePathsAsync(
     absolutePathMappings: js.Array[MappingEntry],
@@ -96,7 +99,7 @@ object matchPathAsyncMod {
     fileExists: FileExistsAsync_,
     extensions: Unit,
     callback: MatchPathAsyncCallback,
-    mainFields: js.Array[String]
+    mainFields: js.Array[String | js.Array[String]]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("matchFromAbsolutePathsAsync")(absolutePathMappings.asInstanceOf[js.Any], requestedModule.asInstanceOf[js.Any], readJson.asInstanceOf[js.Any], fileExists.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], mainFields.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def matchFromAbsolutePathsAsync(
     absolutePathMappings: js.Array[MappingEntry],
@@ -113,7 +116,7 @@ object matchPathAsyncMod {
     fileExists: Unit,
     extensions: js.Array[String],
     callback: MatchPathAsyncCallback,
-    mainFields: js.Array[String]
+    mainFields: js.Array[String | js.Array[String]]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("matchFromAbsolutePathsAsync")(absolutePathMappings.asInstanceOf[js.Any], requestedModule.asInstanceOf[js.Any], readJson.asInstanceOf[js.Any], fileExists.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], mainFields.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def matchFromAbsolutePathsAsync(
     absolutePathMappings: js.Array[MappingEntry],
@@ -130,7 +133,7 @@ object matchPathAsyncMod {
     fileExists: Unit,
     extensions: Unit,
     callback: MatchPathAsyncCallback,
-    mainFields: js.Array[String]
+    mainFields: js.Array[String | js.Array[String]]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("matchFromAbsolutePathsAsync")(absolutePathMappings.asInstanceOf[js.Any], requestedModule.asInstanceOf[js.Any], readJson.asInstanceOf[js.Any], fileExists.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], mainFields.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def matchFromAbsolutePathsAsync(
     absolutePathMappings: js.Array[MappingEntry],
@@ -147,7 +150,7 @@ object matchPathAsyncMod {
     fileExists: FileExistsAsync_,
     extensions: js.Array[String],
     callback: MatchPathAsyncCallback,
-    mainFields: js.Array[String]
+    mainFields: js.Array[String | js.Array[String]]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("matchFromAbsolutePathsAsync")(absolutePathMappings.asInstanceOf[js.Any], requestedModule.asInstanceOf[js.Any], readJson.asInstanceOf[js.Any], fileExists.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], mainFields.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def matchFromAbsolutePathsAsync(
     absolutePathMappings: js.Array[MappingEntry],
@@ -164,7 +167,7 @@ object matchPathAsyncMod {
     fileExists: FileExistsAsync_,
     extensions: Unit,
     callback: MatchPathAsyncCallback,
-    mainFields: js.Array[String]
+    mainFields: js.Array[String | js.Array[String]]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("matchFromAbsolutePathsAsync")(absolutePathMappings.asInstanceOf[js.Any], requestedModule.asInstanceOf[js.Any], readJson.asInstanceOf[js.Any], fileExists.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], mainFields.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type MatchPathAsync = js.Function5[
@@ -176,5 +179,5 @@ object matchPathAsyncMod {
     Unit
   ]
   
-  type MatchPathAsyncCallback = js.Function2[/* err */ js.UndefOr[Error], /* path */ js.UndefOr[String], Unit]
+  type MatchPathAsyncCallback = js.Function2[/* err */ js.UndefOr[js.Error], /* path */ js.UndefOr[String], Unit]
 }

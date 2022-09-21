@@ -59,7 +59,7 @@ object WFSWriteGetFeatureOptions {
     
     inline def setFeatureTypes(value: js.Array[String]): Self = StObject.set(x, "featureTypes", value.asInstanceOf[js.Any])
     
-    inline def setFeatureTypesVarargs(value: String*): Self = StObject.set(x, "featureTypes", js.Array(value :_*))
+    inline def setFeatureTypesVarargs(value: String*): Self = StObject.set(x, "featureTypes", js.Array(value*))
     
     inline def setFilter(value: Filter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
@@ -85,7 +85,7 @@ object WFSWriteGetFeatureOptions {
     
     inline def setPropertyNamesUndefined: Self = StObject.set(x, "propertyNames", js.undefined)
     
-    inline def setPropertyNamesVarargs(value: String*): Self = StObject.set(x, "propertyNames", js.Array(value :_*))
+    inline def setPropertyNamesVarargs(value: String*): Self = StObject.set(x, "propertyNames", js.Array(value*))
     
     inline def setResultType(value: String): Self = StObject.set(x, "resultType", value.asInstanceOf[js.Any])
     

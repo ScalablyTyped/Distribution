@@ -9,7 +9,7 @@ object ioactionMod {
   
   @JSImport("sodiumjs/dist/typings/sodium/IOAction", "IOAction")
   @js.native
-  class IOAction () extends StObject
+  open class IOAction () extends StObject
   /* static members */
   object IOAction {
     

@@ -9,7 +9,7 @@ object siteIconControlMod {
   
   @JSImport("@wordpress/customize-browser/SiteIconControl", "SiteIconControl")
   @js.native
-  class SiteIconControl protected () extends CroppedImageControl {
+  open class SiteIconControl protected () extends CroppedImageControl {
     def this(applicator: js.Object, argsArray: js.Object) = this()
     def this(applicator: js.Object, argsArray: js.Object, options: js.Object) = this()
   }

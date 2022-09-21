@@ -29,6 +29,6 @@ object MetrosListResponse {
     
     inline def setMetrosUndefined: Self = StObject.set(x, "metros", js.undefined)
     
-    inline def setMetrosVarargs(value: Metro*): Self = StObject.set(x, "metros", js.Array(value :_*))
+    inline def setMetrosVarargs(value: Metro*): Self = StObject.set(x, "metros", js.Array(value*))
   }
 }

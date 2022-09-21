@@ -18,6 +18,8 @@ object orderedListOrderedListMod extends Shortcut {
     extends StObject
        with OlHTMLAttributes[HTMLOListElement] {
     
+    var isExpressive: js.UndefOr[Boolean] = js.undefined
+    
     var native: js.UndefOr[Boolean] = js.undefined
     
     var nested: js.UndefOr[Boolean] = js.undefined
@@ -30,6 +32,10 @@ object orderedListOrderedListMod extends Shortcut {
     }
     
     extension [Self <: OrderedListProps](x: Self) {
+      
+      inline def setIsExpressive(value: Boolean): Self = StObject.set(x, "isExpressive", value.asInstanceOf[js.Any])
+      
+      inline def setIsExpressiveUndefined: Self = StObject.set(x, "isExpressive", js.undefined)
       
       inline def setNative(value: Boolean): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
       

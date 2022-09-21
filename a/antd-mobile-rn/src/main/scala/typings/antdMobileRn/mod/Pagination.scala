@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("antd-mobile-rn", "Pagination")
 @js.native
-class Pagination protected () extends default {
+open class Pagination protected () extends default {
   def this(props: PaginationNativeProps) = this()
 }
 /* static members */

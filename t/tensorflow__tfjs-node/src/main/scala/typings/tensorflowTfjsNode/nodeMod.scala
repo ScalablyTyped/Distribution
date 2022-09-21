@@ -1,6 +1,5 @@
 package typings.tensorflowTfjsNode
 
-import typings.std.Uint8Array
 import typings.tensorflowTfjsCore.distTensorMod.Tensor3D
 import typings.tensorflowTfjsCore.distTensorMod.Tensor4D
 import typings.tensorflowTfjsCore.modelTypesMod.MetaGraph
@@ -27,37 +26,39 @@ object nodeMod {
     
     @JSImport("@tensorflow/tfjs-node/dist/node", "node.decodeBmp")
     @js.native
-    def decodeBmp: js.Function2[/* contents */ Uint8Array, /* channels */ js.UndefOr[Double], Tensor3D] = js.native
-    inline def decodeBmp(contents: Uint8Array): Tensor3D = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeBmp")(contents.asInstanceOf[js.Any]).asInstanceOf[Tensor3D]
-    inline def decodeBmp(contents: Uint8Array, channels: Double): Tensor3D = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeBmp")(contents.asInstanceOf[js.Any], channels.asInstanceOf[js.Any])).asInstanceOf[Tensor3D]
-    inline def decodeBmp_=(x: js.Function2[/* contents */ Uint8Array, /* channels */ js.UndefOr[Double], Tensor3D]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decodeBmp")(x.asInstanceOf[js.Any])
+    def decodeBmp: js.Function2[/* contents */ js.typedarray.Uint8Array, /* channels */ js.UndefOr[Double], Tensor3D] = js.native
+    inline def decodeBmp(contents: js.typedarray.Uint8Array): Tensor3D = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeBmp")(contents.asInstanceOf[js.Any]).asInstanceOf[Tensor3D]
+    inline def decodeBmp(contents: js.typedarray.Uint8Array, channels: Double): Tensor3D = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeBmp")(contents.asInstanceOf[js.Any], channels.asInstanceOf[js.Any])).asInstanceOf[Tensor3D]
+    inline def decodeBmp_=(
+      x: js.Function2[/* contents */ js.typedarray.Uint8Array, /* channels */ js.UndefOr[Double], Tensor3D]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decodeBmp")(x.asInstanceOf[js.Any])
     
     @JSImport("@tensorflow/tfjs-node/dist/node", "node.decodeGif")
     @js.native
-    def decodeGif: js.Function1[/* contents */ Uint8Array, Tensor4D] = js.native
-    inline def decodeGif(contents: Uint8Array): Tensor4D = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeGif")(contents.asInstanceOf[js.Any]).asInstanceOf[Tensor4D]
-    inline def decodeGif_=(x: js.Function1[/* contents */ Uint8Array, Tensor4D]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decodeGif")(x.asInstanceOf[js.Any])
+    def decodeGif: js.Function1[/* contents */ js.typedarray.Uint8Array, Tensor4D] = js.native
+    inline def decodeGif(contents: js.typedarray.Uint8Array): Tensor4D = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeGif")(contents.asInstanceOf[js.Any]).asInstanceOf[Tensor4D]
+    inline def decodeGif_=(x: js.Function1[/* contents */ js.typedarray.Uint8Array, Tensor4D]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decodeGif")(x.asInstanceOf[js.Any])
     
     @JSImport("@tensorflow/tfjs-node/dist/node", "node.decodeImage")
     @js.native
     def decodeImage: js.Function4[
-        /* content */ Uint8Array, 
+        /* content */ js.typedarray.Uint8Array, 
         /* channels */ js.UndefOr[Double], 
         /* dtype */ js.UndefOr[String], 
         /* expandAnimations */ js.UndefOr[Boolean], 
         Tensor3D | Tensor4D
       ] = js.native
-    inline def decodeImage(content: Uint8Array): Tensor3D | Tensor4D = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeImage")(content.asInstanceOf[js.Any]).asInstanceOf[Tensor3D | Tensor4D]
-    inline def decodeImage(content: Uint8Array, channels: Double): Tensor3D | Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeImage")(content.asInstanceOf[js.Any], channels.asInstanceOf[js.Any])).asInstanceOf[Tensor3D | Tensor4D]
-    inline def decodeImage(content: Uint8Array, channels: Double, dtype: String): Tensor3D | Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeImage")(content.asInstanceOf[js.Any], channels.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor3D | Tensor4D]
-    inline def decodeImage(content: Uint8Array, channels: Double, dtype: String, expandAnimations: Boolean): Tensor3D | Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeImage")(content.asInstanceOf[js.Any], channels.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], expandAnimations.asInstanceOf[js.Any])).asInstanceOf[Tensor3D | Tensor4D]
-    inline def decodeImage(content: Uint8Array, channels: Double, dtype: Unit, expandAnimations: Boolean): Tensor3D | Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeImage")(content.asInstanceOf[js.Any], channels.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], expandAnimations.asInstanceOf[js.Any])).asInstanceOf[Tensor3D | Tensor4D]
-    inline def decodeImage(content: Uint8Array, channels: Unit, dtype: String): Tensor3D | Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeImage")(content.asInstanceOf[js.Any], channels.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor3D | Tensor4D]
-    inline def decodeImage(content: Uint8Array, channels: Unit, dtype: String, expandAnimations: Boolean): Tensor3D | Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeImage")(content.asInstanceOf[js.Any], channels.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], expandAnimations.asInstanceOf[js.Any])).asInstanceOf[Tensor3D | Tensor4D]
-    inline def decodeImage(content: Uint8Array, channels: Unit, dtype: Unit, expandAnimations: Boolean): Tensor3D | Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeImage")(content.asInstanceOf[js.Any], channels.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], expandAnimations.asInstanceOf[js.Any])).asInstanceOf[Tensor3D | Tensor4D]
+    inline def decodeImage(content: js.typedarray.Uint8Array): Tensor3D | Tensor4D = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeImage")(content.asInstanceOf[js.Any]).asInstanceOf[Tensor3D | Tensor4D]
+    inline def decodeImage(content: js.typedarray.Uint8Array, channels: Double): Tensor3D | Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeImage")(content.asInstanceOf[js.Any], channels.asInstanceOf[js.Any])).asInstanceOf[Tensor3D | Tensor4D]
+    inline def decodeImage(content: js.typedarray.Uint8Array, channels: Double, dtype: String): Tensor3D | Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeImage")(content.asInstanceOf[js.Any], channels.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor3D | Tensor4D]
+    inline def decodeImage(content: js.typedarray.Uint8Array, channels: Double, dtype: String, expandAnimations: Boolean): Tensor3D | Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeImage")(content.asInstanceOf[js.Any], channels.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], expandAnimations.asInstanceOf[js.Any])).asInstanceOf[Tensor3D | Tensor4D]
+    inline def decodeImage(content: js.typedarray.Uint8Array, channels: Double, dtype: Unit, expandAnimations: Boolean): Tensor3D | Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeImage")(content.asInstanceOf[js.Any], channels.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], expandAnimations.asInstanceOf[js.Any])).asInstanceOf[Tensor3D | Tensor4D]
+    inline def decodeImage(content: js.typedarray.Uint8Array, channels: Unit, dtype: String): Tensor3D | Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeImage")(content.asInstanceOf[js.Any], channels.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor3D | Tensor4D]
+    inline def decodeImage(content: js.typedarray.Uint8Array, channels: Unit, dtype: String, expandAnimations: Boolean): Tensor3D | Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeImage")(content.asInstanceOf[js.Any], channels.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], expandAnimations.asInstanceOf[js.Any])).asInstanceOf[Tensor3D | Tensor4D]
+    inline def decodeImage(content: js.typedarray.Uint8Array, channels: Unit, dtype: Unit, expandAnimations: Boolean): Tensor3D | Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeImage")(content.asInstanceOf[js.Any], channels.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], expandAnimations.asInstanceOf[js.Any])).asInstanceOf[Tensor3D | Tensor4D]
     inline def decodeImage_=(
       x: js.Function4[
-          /* content */ Uint8Array, 
+          /* content */ js.typedarray.Uint8Array, 
           /* channels */ js.UndefOr[Double], 
           /* dtype */ js.UndefOr[String], 
           /* expandAnimations */ js.UndefOr[Boolean], 
@@ -68,7 +69,7 @@ object nodeMod {
     @JSImport("@tensorflow/tfjs-node/dist/node", "node.decodeJpeg")
     @js.native
     def decodeJpeg: js.Function7[
-        /* contents */ Uint8Array, 
+        /* contents */ js.typedarray.Uint8Array, 
         /* channels */ js.UndefOr[Double], 
         /* ratio */ js.UndefOr[Double], 
         /* fancyUpscaling */ js.UndefOr[Boolean], 
@@ -78,7 +79,7 @@ object nodeMod {
         Tensor3D
       ] = js.native
     inline def decodeJpeg(
-      contents: Uint8Array,
+      contents: js.typedarray.Uint8Array,
       channels: js.UndefOr[Double],
       ratio: js.UndefOr[Double],
       fancyUpscaling: js.UndefOr[Boolean],
@@ -88,7 +89,7 @@ object nodeMod {
     ): Tensor3D = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeJpeg")(contents.asInstanceOf[js.Any], channels.asInstanceOf[js.Any], ratio.asInstanceOf[js.Any], fancyUpscaling.asInstanceOf[js.Any], tryRecoverTruncated.asInstanceOf[js.Any], acceptableFraction.asInstanceOf[js.Any], dctMethod.asInstanceOf[js.Any])).asInstanceOf[Tensor3D]
     inline def decodeJpeg_=(
       x: js.Function7[
-          /* contents */ Uint8Array, 
+          /* contents */ js.typedarray.Uint8Array, 
           /* channels */ js.UndefOr[Double], 
           /* ratio */ js.UndefOr[Double], 
           /* fancyUpscaling */ js.UndefOr[Boolean], 
@@ -102,18 +103,18 @@ object nodeMod {
     @JSImport("@tensorflow/tfjs-node/dist/node", "node.decodePng")
     @js.native
     def decodePng: js.Function3[
-        /* contents */ Uint8Array, 
+        /* contents */ js.typedarray.Uint8Array, 
         /* channels */ js.UndefOr[Double], 
         /* dtype */ js.UndefOr[String], 
         Tensor3D
       ] = js.native
-    inline def decodePng(contents: Uint8Array): Tensor3D = ^.asInstanceOf[js.Dynamic].applyDynamic("decodePng")(contents.asInstanceOf[js.Any]).asInstanceOf[Tensor3D]
-    inline def decodePng(contents: Uint8Array, channels: Double): Tensor3D = (^.asInstanceOf[js.Dynamic].applyDynamic("decodePng")(contents.asInstanceOf[js.Any], channels.asInstanceOf[js.Any])).asInstanceOf[Tensor3D]
-    inline def decodePng(contents: Uint8Array, channels: Double, dtype: String): Tensor3D = (^.asInstanceOf[js.Dynamic].applyDynamic("decodePng")(contents.asInstanceOf[js.Any], channels.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor3D]
-    inline def decodePng(contents: Uint8Array, channels: Unit, dtype: String): Tensor3D = (^.asInstanceOf[js.Dynamic].applyDynamic("decodePng")(contents.asInstanceOf[js.Any], channels.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor3D]
+    inline def decodePng(contents: js.typedarray.Uint8Array): Tensor3D = ^.asInstanceOf[js.Dynamic].applyDynamic("decodePng")(contents.asInstanceOf[js.Any]).asInstanceOf[Tensor3D]
+    inline def decodePng(contents: js.typedarray.Uint8Array, channels: Double): Tensor3D = (^.asInstanceOf[js.Dynamic].applyDynamic("decodePng")(contents.asInstanceOf[js.Any], channels.asInstanceOf[js.Any])).asInstanceOf[Tensor3D]
+    inline def decodePng(contents: js.typedarray.Uint8Array, channels: Double, dtype: String): Tensor3D = (^.asInstanceOf[js.Dynamic].applyDynamic("decodePng")(contents.asInstanceOf[js.Any], channels.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor3D]
+    inline def decodePng(contents: js.typedarray.Uint8Array, channels: Unit, dtype: String): Tensor3D = (^.asInstanceOf[js.Dynamic].applyDynamic("decodePng")(contents.asInstanceOf[js.Any], channels.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor3D]
     inline def decodePng_=(
       x: js.Function3[
-          /* contents */ Uint8Array, 
+          /* contents */ js.typedarray.Uint8Array, 
           /* channels */ js.UndefOr[Double], 
           /* dtype */ js.UndefOr[String], 
           Tensor3D
@@ -133,7 +134,7 @@ object nodeMod {
         /* xDensity */ js.UndefOr[Double], 
         /* yDensity */ js.UndefOr[Double], 
         /* xmpMetadata */ js.UndefOr[String], 
-        js.Promise[Uint8Array]
+        js.Promise[js.typedarray.Uint8Array]
       ] = js.native
     inline def encodeJpeg(
       image: Tensor3D,
@@ -146,7 +147,7 @@ object nodeMod {
       xDensity: js.UndefOr[Double],
       yDensity: js.UndefOr[Double],
       xmpMetadata: js.UndefOr[String]
-    ): js.Promise[Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeJpeg")(image.asInstanceOf[js.Any], format.asInstanceOf[js.Any], quality.asInstanceOf[js.Any], progressive.asInstanceOf[js.Any], optimizeSize.asInstanceOf[js.Any], chromaDownsampling.asInstanceOf[js.Any], densityUnit.asInstanceOf[js.Any], xDensity.asInstanceOf[js.Any], yDensity.asInstanceOf[js.Any], xmpMetadata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Uint8Array]]
+    ): js.Promise[js.typedarray.Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeJpeg")(image.asInstanceOf[js.Any], format.asInstanceOf[js.Any], quality.asInstanceOf[js.Any], progressive.asInstanceOf[js.Any], optimizeSize.asInstanceOf[js.Any], chromaDownsampling.asInstanceOf[js.Any], densityUnit.asInstanceOf[js.Any], xDensity.asInstanceOf[js.Any], yDensity.asInstanceOf[js.Any], xmpMetadata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.typedarray.Uint8Array]]
     inline def encodeJpeg_=(
       x: js.Function10[
           /* image */ Tensor3D, 
@@ -159,17 +160,25 @@ object nodeMod {
           /* xDensity */ js.UndefOr[Double], 
           /* yDensity */ js.UndefOr[Double], 
           /* xmpMetadata */ js.UndefOr[String], 
-          js.Promise[Uint8Array]
+          js.Promise[js.typedarray.Uint8Array]
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("encodeJpeg")(x.asInstanceOf[js.Any])
     
     @JSImport("@tensorflow/tfjs-node/dist/node", "node.encodePng")
     @js.native
-    def encodePng: js.Function2[/* image */ Tensor3D, /* compression */ js.UndefOr[Double], js.Promise[Uint8Array]] = js.native
-    inline def encodePng(image: Tensor3D): js.Promise[Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("encodePng")(image.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Uint8Array]]
-    inline def encodePng(image: Tensor3D, compression: Double): js.Promise[Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("encodePng")(image.asInstanceOf[js.Any], compression.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Uint8Array]]
+    def encodePng: js.Function2[
+        /* image */ Tensor3D, 
+        /* compression */ js.UndefOr[Double], 
+        js.Promise[js.typedarray.Uint8Array]
+      ] = js.native
+    inline def encodePng(image: Tensor3D): js.Promise[js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("encodePng")(image.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.typedarray.Uint8Array]]
+    inline def encodePng(image: Tensor3D, compression: Double): js.Promise[js.typedarray.Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("encodePng")(image.asInstanceOf[js.Any], compression.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.typedarray.Uint8Array]]
     inline def encodePng_=(
-      x: js.Function2[/* image */ Tensor3D, /* compression */ js.UndefOr[Double], js.Promise[Uint8Array]]
+      x: js.Function2[
+          /* image */ Tensor3D, 
+          /* compression */ js.UndefOr[Double], 
+          js.Promise[js.typedarray.Uint8Array]
+        ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("encodePng")(x.asInstanceOf[js.Any])
     
     @JSImport("@tensorflow/tfjs-node/dist/node", "node.getMetaGraphsFromSavedModel")

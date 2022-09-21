@@ -21,7 +21,7 @@ trait SinonFakeXMLHttpRequest extends StObject {
   /**
     * All response headers as an object.
     */
-  def getAllResponseHeaders(): js.Any
+  def getAllResponseHeaders(): Any
   
   /**
     * The value of the given response header, if the request has been responded to (see respond).
@@ -49,12 +49,12 @@ trait SinonFakeXMLHttpRequest extends StObject {
   /**
     * An object of all request headers, i.e.:
     */
-  var requestHeaders: js.Any
+  var requestHeaders: Any
   
   /**
     * Calls the above three methods.
     */
-  def respond(status: Double, headers: js.Any, body: String): Unit
+  def respond(status: Double, headers: Any, body: String): Unit
   
   /**
     * When using respond, this property is populated with a parsed document if response headers indicate as much (see the spec)
@@ -72,7 +72,7 @@ trait SinonFakeXMLHttpRequest extends StObject {
     * Sets response headers (e.g. { "Content-Type": "text/html", ... }, updates the readyState property and fires onreadystatechange.
     * @param headers
     */
-  def setResponseHeaders(headers: js.Any): Unit
+  def setResponseHeaders(headers: Any): Unit
   
   /**
     * The request’s status code.
@@ -106,17 +106,17 @@ object SinonFakeXMLHttpRequest {
     async: Boolean,
     autoRespond: Double => Unit,
     error: () => Unit,
-    getAllResponseHeaders: () => js.Any,
+    getAllResponseHeaders: () => Any,
     getResponseHeader: String => String,
     method: String,
     onerror: () => Unit,
     password: String,
     requestBody: String,
-    requestHeaders: js.Any,
-    respond: (Double, js.Any, String) => Unit,
+    requestHeaders: Any,
+    respond: (Double, Any, String) => Unit,
     responseXML: Document,
     setResponseBody: String => Unit,
-    setResponseHeaders: js.Any => Unit,
+    setResponseHeaders: Any => Unit,
     status: Double,
     statusText: String,
     upload: SinonFakeUploadProgress,
@@ -136,7 +136,7 @@ object SinonFakeXMLHttpRequest {
     
     inline def setError(value: () => Unit): Self = StObject.set(x, "error", js.Any.fromFunction0(value))
     
-    inline def setGetAllResponseHeaders(value: () => js.Any): Self = StObject.set(x, "getAllResponseHeaders", js.Any.fromFunction0(value))
+    inline def setGetAllResponseHeaders(value: () => Any): Self = StObject.set(x, "getAllResponseHeaders", js.Any.fromFunction0(value))
     
     inline def setGetResponseHeader(value: String => String): Self = StObject.set(x, "getResponseHeader", js.Any.fromFunction1(value))
     
@@ -148,15 +148,15 @@ object SinonFakeXMLHttpRequest {
     
     inline def setRequestBody(value: String): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    inline def setRequestHeaders(value: js.Any): Self = StObject.set(x, "requestHeaders", value.asInstanceOf[js.Any])
+    inline def setRequestHeaders(value: Any): Self = StObject.set(x, "requestHeaders", value.asInstanceOf[js.Any])
     
-    inline def setRespond(value: (Double, js.Any, String) => Unit): Self = StObject.set(x, "respond", js.Any.fromFunction3(value))
+    inline def setRespond(value: (Double, Any, String) => Unit): Self = StObject.set(x, "respond", js.Any.fromFunction3(value))
     
     inline def setResponseXML(value: Document): Self = StObject.set(x, "responseXML", value.asInstanceOf[js.Any])
     
     inline def setSetResponseBody(value: String => Unit): Self = StObject.set(x, "setResponseBody", js.Any.fromFunction1(value))
     
-    inline def setSetResponseHeaders(value: js.Any => Unit): Self = StObject.set(x, "setResponseHeaders", js.Any.fromFunction1(value))
+    inline def setSetResponseHeaders(value: Any => Unit): Self = StObject.set(x, "setResponseHeaders", js.Any.fromFunction1(value))
     
     inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,7 @@ object global {
       * Create a new ColorTracker.
       * @param colors Optional color(s) to track.
       */
-    class ColorTracker ()
+    open class ColorTracker ()
       extends StObject
          with typings.tracking.tracking.ColorTracker {
       def this(colors: String) = this()
@@ -60,7 +60,7 @@ object global {
       */
     @JSGlobal("tracking.EventEmitter")
     @js.native
-    class EventEmitter ()
+    open class EventEmitter ()
       extends StObject
          with typings.tracking.tracking.EventEmitter
     
@@ -73,7 +73,7 @@ object global {
       * Create a new Object Tracker.
       * @param classifiers Optional object classifiers to track.
       */
-    class ObjectTracker ()
+    open class ObjectTracker ()
       extends StObject
          with typings.tracking.tracking.ObjectTracker {
       def this(classifiers: String) = this()
@@ -96,7 +96,7 @@ object global {
       */
     @JSGlobal("tracking.TrackerTask")
     @js.native
-    class TrackerTask protected ()
+    open class TrackerTask protected ()
       extends StObject
          with typings.tracking.tracking.TrackerTask {
       /**

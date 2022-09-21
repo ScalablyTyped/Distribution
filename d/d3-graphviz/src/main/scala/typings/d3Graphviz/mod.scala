@@ -16,20 +16,20 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def graphviz(selector: String): Graphviz_[BaseType, js.Any, BaseType, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("graphviz")(selector.asInstanceOf[js.Any]).asInstanceOf[Graphviz_[BaseType, js.Any, BaseType, js.Any]]
-  inline def graphviz(selector: String, options: Boolean): Graphviz_[BaseType, js.Any, BaseType, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("graphviz")(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Graphviz_[BaseType, js.Any, BaseType, js.Any]]
-  inline def graphviz(selector: String, options: GraphvizOptions): Graphviz_[BaseType, js.Any, BaseType, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("graphviz")(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Graphviz_[BaseType, js.Any, BaseType, js.Any]]
-  inline def graphviz(selector: BaseType): Graphviz_[BaseType, js.Any, BaseType, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("graphviz")(selector.asInstanceOf[js.Any]).asInstanceOf[Graphviz_[BaseType, js.Any, BaseType, js.Any]]
-  inline def graphviz(selector: BaseType, options: Boolean): Graphviz_[BaseType, js.Any, BaseType, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("graphviz")(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Graphviz_[BaseType, js.Any, BaseType, js.Any]]
-  inline def graphviz(selector: BaseType, options: GraphvizOptions): Graphviz_[BaseType, js.Any, BaseType, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("graphviz")(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Graphviz_[BaseType, js.Any, BaseType, js.Any]]
+  inline def graphviz(selector: String): Graphviz_[BaseType, Any, BaseType, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("graphviz")(selector.asInstanceOf[js.Any]).asInstanceOf[Graphviz_[BaseType, Any, BaseType, Any]]
+  inline def graphviz(selector: String, options: Boolean): Graphviz_[BaseType, Any, BaseType, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("graphviz")(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Graphviz_[BaseType, Any, BaseType, Any]]
+  inline def graphviz(selector: String, options: GraphvizOptions): Graphviz_[BaseType, Any, BaseType, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("graphviz")(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Graphviz_[BaseType, Any, BaseType, Any]]
+  inline def graphviz(selector: BaseType): Graphviz_[BaseType, Any, BaseType, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("graphviz")(selector.asInstanceOf[js.Any]).asInstanceOf[Graphviz_[BaseType, Any, BaseType, Any]]
+  inline def graphviz(selector: BaseType, options: Boolean): Graphviz_[BaseType, Any, BaseType, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("graphviz")(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Graphviz_[BaseType, Any, BaseType, Any]]
+  inline def graphviz(selector: BaseType, options: GraphvizOptions): Graphviz_[BaseType, Any, BaseType, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("graphviz")(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Graphviz_[BaseType, Any, BaseType, Any]]
   
   trait DotAttributes extends StObject {
     
-    var URL: js.UndefOr[js.Any] = js.undefined
+    var URL: js.UndefOr[Any] = js.undefined
     
-    var style: js.UndefOr[js.Any] = js.undefined
+    var style: js.UndefOr[Any] = js.undefined
     
-    var tooltip: js.UndefOr[js.Any] = js.undefined
+    var tooltip: js.UndefOr[Any] = js.undefined
   }
   object DotAttributes {
     
@@ -40,15 +40,15 @@ object mod {
     
     extension [Self <: DotAttributes](x: Self) {
       
-      inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setTooltip(value: js.Any): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+      inline def setTooltip(value: Any): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
       
       inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
       
-      inline def setURL(value: js.Any): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
+      inline def setURL(value: Any): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
       
       inline def setURLUndefined: Self = StObject.set(x, "URL", js.undefined)
     }
@@ -296,9 +296,9 @@ object mod {
       * @param options object containing the options used when drawing the node, currently unused
       */
     def drawNode(x: Double, y: Double, nodeId: String): this.type = js.native
-    def drawNode(x: Double, y: Double, nodeId: String, attributes: Unit, options: js.Any): this.type = js.native
+    def drawNode(x: Double, y: Double, nodeId: String, attributes: Unit, options: Any): this.type = js.native
     def drawNode(x: Double, y: Double, nodeId: String, attributes: DotAttributes): this.type = js.native
-    def drawNode(x: Double, y: Double, nodeId: String, attributes: DotAttributes, options: js.Any): this.type = js.native
+    def drawNode(x: Double, y: Double, nodeId: String, attributes: DotAttributes, options: Any): this.type = js.native
     
     /**
       * Returns a {@link Selection} containing the edge currently being drawn. The selection is empty
@@ -403,7 +403,7 @@ object mod {
       * @param options object containing the options used when drawing the node, currently unused
       */
     def moveDrawnNode(x: Double, y: Double): this.type = js.native
-    def moveDrawnNode(x: Double, y: Double, options: js.Any): this.type = js.native
+    def moveDrawnNode(x: Double, y: Double, options: Any): this.type = js.native
     
     // Control Flow
     /**
@@ -420,7 +420,7 @@ object mod {
       * @param callback the call back function triggered by an error
       */
     def onerror(): this.type = js.native
-    def onerror(callback: js.Function1[/* errorMessage */ js.Any, Unit]): this.type = js.native
+    def onerror(callback: js.Function1[/* errorMessage */ Any, Unit]): this.type = js.native
     
     // Options
     /**
@@ -551,9 +551,9 @@ object mod {
       * @param options object containing the options used when drawing the node, currently unused
       */
     def updateDrawnNode(x: Double, y: Double, nodeId: String): this.type = js.native
-    def updateDrawnNode(x: Double, y: Double, nodeId: String, attributes: Unit, options: js.Any): this.type = js.native
+    def updateDrawnNode(x: Double, y: Double, nodeId: String, attributes: Unit, options: Any): this.type = js.native
     def updateDrawnNode(x: Double, y: Double, nodeId: String, attributes: DotAttributes): this.type = js.native
-    def updateDrawnNode(x: Double, y: Double, nodeId: String, attributes: DotAttributes, options: js.Any): this.type = js.native
+    def updateDrawnNode(x: Double, y: Double, nodeId: String, attributes: DotAttributes, options: Any): this.type = js.native
     
     // Controlling SVG and Graph Size
     /**

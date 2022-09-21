@@ -10,7 +10,7 @@ trait HtmlTableDataSourceSettings
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Type of the data source.

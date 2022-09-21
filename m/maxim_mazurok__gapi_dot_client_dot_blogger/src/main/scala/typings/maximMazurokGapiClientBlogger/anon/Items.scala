@@ -29,7 +29,7 @@ object Items {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: Post*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Post*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     

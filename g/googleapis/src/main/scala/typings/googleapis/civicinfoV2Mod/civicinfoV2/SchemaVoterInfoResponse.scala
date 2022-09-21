@@ -4,28 +4,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The result of a voter info lookup query.
-  */
 trait SchemaVoterInfoResponse extends StObject {
   
   /**
-    * Contests that will appear on the voter&#39;s ballot.
+    * Contests that will appear on the voter's ballot.
     */
   var contests: js.UndefOr[js.Array[SchemaContest]] = js.undefined
   
   /**
-    * Locations where a voter is eligible to drop off a completed ballot. The
-    * voter must have received and completed a ballot prior to arriving at the
-    * location. The location may not have ballots available on the premises.
-    * These locations could be open on or before election day as indicated in
-    * the pollingHours field.
+    * Locations where a voter is eligible to drop off a completed ballot. The voter must have received and completed a ballot prior to arriving at the location. The location may not have ballots available on the premises. These locations could be open on or before election day as indicated in the pollingHours field.
     */
   var dropOffLocations: js.UndefOr[js.Array[SchemaPollingLocation]] = js.undefined
   
   /**
-    * Locations where the voter is eligible to vote early, prior to election
-    * day.
+    * Locations where the voter is eligible to vote early, prior to election day.
     */
   var earlyVoteSites: js.UndefOr[js.Array[SchemaPollingLocation]] = js.undefined
   
@@ -35,16 +27,14 @@ trait SchemaVoterInfoResponse extends StObject {
   var election: js.UndefOr[SchemaElection] = js.undefined
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;civicinfo#voterInfoResponse&quot;.
+    * Identifies what kind of resource this is. Value: the fixed string "civicinfo#voterInfoResponse".
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Specifies whether voters in the precinct vote only by mailing their
-    * ballots (with the possible option of dropping off their ballots as well).
+    * Specifies whether voters in the precinct vote only by mailing their ballots (with the possible option of dropping off their ballots as well).
     */
-  var mailOnly: js.UndefOr[Boolean] = js.undefined
+  var mailOnly: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * The normalized version of the requested address
@@ -52,16 +42,7 @@ trait SchemaVoterInfoResponse extends StObject {
   var normalizedInput: js.UndefOr[SchemaSimpleAddressType] = js.undefined
   
   /**
-    * When there are multiple elections for a voter address, the otherElections
-    * field is populated in the API response and there are two
-    * possibilities: 1. If the earliest election is not the intended election,
-    * specify the election ID of the desired election in a second API request
-    * using the electionId field. 2. If these elections occur on the same day,
-    * the API doesn?t return any polling location, contest, or election
-    * official information to ensure that an additional query is made. For
-    * user-facing applications, we recommend displaying these elections to the
-    * user to disambiguate. A second API request using the electionId field
-    * should be made for the election that is relevant to the user.
+    * When there are multiple elections for a voter address, the otherElections field is populated in the API response and there are two possibilities: 1. If the earliest election is not the intended election, specify the election ID of the desired election in a second API request using the electionId field. 2. If these elections occur on the same day, the API doesn?t return any polling location, contest, or election official information to ensure that an additional query is made. For user-facing applications, we recommend displaying these elections to the user to disambiguate. A second API request using the electionId field should be made for the election that is relevant to the user.
     */
   var otherElections: js.UndefOr[js.Array[SchemaElection]] = js.undefined
   
@@ -70,13 +51,15 @@ trait SchemaVoterInfoResponse extends StObject {
     */
   var pollingLocations: js.UndefOr[js.Array[SchemaPollingLocation]] = js.undefined
   
-  var precinctId: js.UndefOr[String] = js.undefined
-  
-  var segments: js.UndefOr[js.Array[SchemaStreetSegment]] = js.undefined
+  var precinctId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Local Election Information for the state that the voter votes in. For the
-    * US, there will only be one element in this array.
+    * The precincts that match this voter's address. Will only be returned for project IDs which have been whitelisted as "partner projects".
+    */
+  var precincts: js.UndefOr[js.Array[SchemaPrecinct]] = js.undefined
+  
+  /**
+    * Local Election Information for the state that the voter votes in. For the US, there will only be one element in this array.
     */
   var state: js.UndefOr[js.Array[SchemaAdministrationRegion]] = js.undefined
 }
@@ -93,19 +76,19 @@ object SchemaVoterInfoResponse {
     
     inline def setContestsUndefined: Self = StObject.set(x, "contests", js.undefined)
     
-    inline def setContestsVarargs(value: SchemaContest*): Self = StObject.set(x, "contests", js.Array(value :_*))
+    inline def setContestsVarargs(value: SchemaContest*): Self = StObject.set(x, "contests", js.Array(value*))
     
     inline def setDropOffLocations(value: js.Array[SchemaPollingLocation]): Self = StObject.set(x, "dropOffLocations", value.asInstanceOf[js.Any])
     
     inline def setDropOffLocationsUndefined: Self = StObject.set(x, "dropOffLocations", js.undefined)
     
-    inline def setDropOffLocationsVarargs(value: SchemaPollingLocation*): Self = StObject.set(x, "dropOffLocations", js.Array(value :_*))
+    inline def setDropOffLocationsVarargs(value: SchemaPollingLocation*): Self = StObject.set(x, "dropOffLocations", js.Array(value*))
     
     inline def setEarlyVoteSites(value: js.Array[SchemaPollingLocation]): Self = StObject.set(x, "earlyVoteSites", value.asInstanceOf[js.Any])
     
     inline def setEarlyVoteSitesUndefined: Self = StObject.set(x, "earlyVoteSites", js.undefined)
     
-    inline def setEarlyVoteSitesVarargs(value: SchemaPollingLocation*): Self = StObject.set(x, "earlyVoteSites", js.Array(value :_*))
+    inline def setEarlyVoteSitesVarargs(value: SchemaPollingLocation*): Self = StObject.set(x, "earlyVoteSites", js.Array(value*))
     
     inline def setElection(value: SchemaElection): Self = StObject.set(x, "election", value.asInstanceOf[js.Any])
     
@@ -113,9 +96,13 @@ object SchemaVoterInfoResponse {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
+    
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setMailOnly(value: Boolean): Self = StObject.set(x, "mailOnly", value.asInstanceOf[js.Any])
+    
+    inline def setMailOnlyNull: Self = StObject.set(x, "mailOnly", null)
     
     inline def setMailOnlyUndefined: Self = StObject.set(x, "mailOnly", js.undefined)
     
@@ -127,28 +114,30 @@ object SchemaVoterInfoResponse {
     
     inline def setOtherElectionsUndefined: Self = StObject.set(x, "otherElections", js.undefined)
     
-    inline def setOtherElectionsVarargs(value: SchemaElection*): Self = StObject.set(x, "otherElections", js.Array(value :_*))
+    inline def setOtherElectionsVarargs(value: SchemaElection*): Self = StObject.set(x, "otherElections", js.Array(value*))
     
     inline def setPollingLocations(value: js.Array[SchemaPollingLocation]): Self = StObject.set(x, "pollingLocations", value.asInstanceOf[js.Any])
     
     inline def setPollingLocationsUndefined: Self = StObject.set(x, "pollingLocations", js.undefined)
     
-    inline def setPollingLocationsVarargs(value: SchemaPollingLocation*): Self = StObject.set(x, "pollingLocations", js.Array(value :_*))
+    inline def setPollingLocationsVarargs(value: SchemaPollingLocation*): Self = StObject.set(x, "pollingLocations", js.Array(value*))
     
     inline def setPrecinctId(value: String): Self = StObject.set(x, "precinctId", value.asInstanceOf[js.Any])
     
+    inline def setPrecinctIdNull: Self = StObject.set(x, "precinctId", null)
+    
     inline def setPrecinctIdUndefined: Self = StObject.set(x, "precinctId", js.undefined)
     
-    inline def setSegments(value: js.Array[SchemaStreetSegment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
+    inline def setPrecincts(value: js.Array[SchemaPrecinct]): Self = StObject.set(x, "precincts", value.asInstanceOf[js.Any])
     
-    inline def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
+    inline def setPrecinctsUndefined: Self = StObject.set(x, "precincts", js.undefined)
     
-    inline def setSegmentsVarargs(value: SchemaStreetSegment*): Self = StObject.set(x, "segments", js.Array(value :_*))
+    inline def setPrecinctsVarargs(value: SchemaPrecinct*): Self = StObject.set(x, "precincts", js.Array(value*))
     
     inline def setState(value: js.Array[SchemaAdministrationRegion]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    inline def setStateVarargs(value: SchemaAdministrationRegion*): Self = StObject.set(x, "state", js.Array(value :_*))
+    inline def setStateVarargs(value: SchemaAdministrationRegion*): Self = StObject.set(x, "state", js.Array(value*))
   }
 }

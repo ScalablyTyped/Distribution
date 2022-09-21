@@ -1,6 +1,5 @@
 package typings.uirouterCore
 
-import typings.std.RegExp
 import typings.uirouterCore.paramsInterfaceMod.ParamTypeDefinition
 import typings.uirouterCore.uirouterCoreStrings.auto
 import org.scalablytyped.runtime.StObject
@@ -11,7 +10,7 @@ object paramTypeMod {
   
   @JSImport("@uirouter/core/lib/params/paramType", "ParamType")
   @js.native
-  class ParamType protected ()
+  open class ParamType protected ()
     extends StObject
        with ParamTypeDefinition {
     /**
@@ -32,13 +31,13 @@ object paramTypeMod {
       * - url: "/path?queryParam=1&queryParam=2 will create $stateParams.queryParam: [1, 2]
       */
     @JSName("$asArray")
-    def $asArray(mode: Boolean, isSearch: Boolean): js.Any = js.native
+    def $asArray(mode: Boolean, isSearch: Boolean): Any = js.native
     @JSName("$asArray")
-    def $asArray_auto(mode: auto, isSearch: Boolean): js.Any = js.native
+    def $asArray_auto(mode: auto, isSearch: Boolean): Any = js.native
     
     /** Given an encoded string, or a decoded object, returns a decoded object */
     @JSName("$normalize")
-    def $normalize(`val`: js.Any): js.Any = js.native
+    def $normalize(`val`: Any): Any = js.native
     
     @JSName("$subPattern")
     def $subPattern(): String = js.native
@@ -56,7 +55,7 @@ object paramTypeMod {
     
     /** @inheritdoc */
     @JSName("pattern")
-    var pattern_ParamType: RegExp = js.native
+    var pattern_ParamType: js.RegExp = js.native
     
     /** @inheritdoc */
     @JSName("raw")

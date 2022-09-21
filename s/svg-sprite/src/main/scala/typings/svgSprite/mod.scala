@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.eventsMod.global.NodeJS.EventEmitter
-import typings.std.Error
 import typings.svgSprite.anon.Attributes
 import typings.svgSprite.anon.Box
 import typings.svgSprite.anon.Generator
@@ -20,7 +19,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("svg-sprite", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with SVGSpriter {
     /**
@@ -33,7 +32,7 @@ object mod extends Shortcut {
   @js.native
   val ^ : js.Object & SVGSpriterConstructor = js.native
   
-  type CompileCallback = js.Function3[/* error */ Error, /* result */ js.Any, /* data */ js.Any, js.Any]
+  type CompileCallback = js.Function3[/* error */ js.Error, /* result */ Any, /* data */ Any, Any]
   
   trait Config extends StObject {
     
@@ -66,7 +65,7 @@ object mod extends Shortcut {
     /**
       * Custom templating variables
       */
-    var variables: js.UndefOr[js.Any] = js.undefined
+    var variables: js.UndefOr[Any] = js.undefined
   }
   object Config {
     
@@ -97,7 +96,7 @@ object mod extends Shortcut {
       
       inline def setSvgUndefined: Self = StObject.set(x, "svg", js.undefined)
       
-      inline def setVariables(value: js.Any): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+      inline def setVariables(value: Any): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
       
       inline def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
     }
@@ -155,7 +154,7 @@ object mod extends Shortcut {
     * Custom callback transformation
     */
   type CustomCallbackTransform = StringDictionary[
-    js.Function3[/* shape */ js.Any, /* sprite */ SVGSpriter, /* callback */ js.Function, js.Any]
+    js.Function3[/* shape */ Any, /* sprite */ SVGSpriter, /* callback */ js.Function, Any]
   ]
   
   /**
@@ -189,7 +188,7 @@ object mod extends Shortcut {
     }
   }
   
-  type GetShapesCallback = js.Function2[/* error */ Error, /* result */ js.Array[File], js.Any]
+  type GetShapesCallback = js.Function2[/* error */ js.Error, /* result */ js.Array[File], Any]
   
   trait Mode
     extends StObject
@@ -498,7 +497,7 @@ object mod extends Shortcut {
       
       inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       
-      inline def setTransformVarargs(value: (String | CustomConfigurationTransform | CustomCallbackTransform)*): Self = StObject.set(x, "transform", js.Array(value :_*))
+      inline def setTransformVarargs(value: (String | CustomConfigurationTransform | CustomCallbackTransform)*): Self = StObject.set(x, "transform", js.Array(value*))
     }
   }
   
@@ -542,7 +541,7 @@ object mod extends Shortcut {
       * Shorthand for applying custom attributes to the outermost <svg> element.
       * Please be aware that certain attributes (e.g. viewBox) will be calculated dynamically and override custom rootAttributes in any case.
       */
-    var rootAttributes: js.UndefOr[js.Any] = js.undefined
+    var rootAttributes: js.UndefOr[Any] = js.undefined
     
     /**
       * Callback (or list of callbacks) that will be applied to the resulting SVG sprites as global [post-processing transformation](#svg-sprite-customization).
@@ -587,7 +586,7 @@ object mod extends Shortcut {
       
       inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
       
-      inline def setRootAttributes(value: js.Any): Self = StObject.set(x, "rootAttributes", value.asInstanceOf[js.Any])
+      inline def setRootAttributes(value: Any): Self = StObject.set(x, "rootAttributes", value.asInstanceOf[js.Any])
       
       inline def setRootAttributesUndefined: Self = StObject.set(x, "rootAttributes", js.undefined)
       
@@ -597,7 +596,7 @@ object mod extends Shortcut {
       
       inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       
-      inline def setTransformVarargs(value: SvgTransformer*): Self = StObject.set(x, "transform", js.Array(value :_*))
+      inline def setTransformVarargs(value: SvgTransformer*): Self = StObject.set(x, "transform", js.Array(value*))
       
       inline def setXmlDeclaration(value: Boolean | String): Self = StObject.set(x, "xmlDeclaration", value.asInstanceOf[js.Any])
       

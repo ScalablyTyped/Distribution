@@ -11,14 +11,14 @@ trait FlashTimeline extends StObject {
   def addMotionGuide(): Double = js.native
   
   /**  Adds a new layer to the document and makes it the current layer. */
-  def addNewLayer(): js.Any = js.native
-  def addNewLayer(name: String): js.Any = js.native
-  def addNewLayer(name: String, layerType: String): js.Any = js.native
-  def addNewLayer(name: String, layerType: String, bAddAbove: Boolean): js.Any = js.native
-  def addNewLayer(name: String, layerType: Unit, bAddAbove: Boolean): js.Any = js.native
-  def addNewLayer(name: Unit, layerType: String): js.Any = js.native
-  def addNewLayer(name: Unit, layerType: String, bAddAbove: Boolean): js.Any = js.native
-  def addNewLayer(name: Unit, layerType: Unit, bAddAbove: Boolean): js.Any = js.native
+  def addNewLayer(): Any = js.native
+  def addNewLayer(name: String): Any = js.native
+  def addNewLayer(name: String, layerType: String): Any = js.native
+  def addNewLayer(name: String, layerType: String, bAddAbove: Boolean): Any = js.native
+  def addNewLayer(name: String, layerType: Unit, bAddAbove: Boolean): Any = js.native
+  def addNewLayer(name: Unit, layerType: String): Any = js.native
+  def addNewLayer(name: Unit, layerType: String, bAddAbove: Boolean): Any = js.native
+  def addNewLayer(name: Unit, layerType: Unit, bAddAbove: Boolean): Any = js.native
   
   /** Deletes all the contents from a frame or range of frames on the current layer. */
   def clearFrames(): Unit = js.native
@@ -114,16 +114,16 @@ trait FlashTimeline extends StObject {
   var frameCount: Double = js.native
   
   /** Retrieves the specified property's value for the selected frames. */
-  def getFrameProperty(property: String): js.Any = js.native
-  def getFrameProperty(property: String, startframeIndex: Double): js.Any = js.native
-  def getFrameProperty(property: String, startframeIndex: Double, endFrameIndex: Double): js.Any = js.native
-  def getFrameProperty(property: String, startframeIndex: Unit, endFrameIndex: Double): js.Any = js.native
+  def getFrameProperty(property: String): Any = js.native
+  def getFrameProperty(property: String, startframeIndex: Double): Any = js.native
+  def getFrameProperty(property: String, startframeIndex: Double, endFrameIndex: Double): Any = js.native
+  def getFrameProperty(property: String, startframeIndex: Unit, endFrameIndex: Double): Any = js.native
   
   /** Returns an XML string that represents the current positions of the horizontal and vertical guide lines for a timeline(View > Guides > Show Guides). */
   def getGuidelines(): String = js.native
   
   /** Retrieves the specified property's value for the selected layers. */
-  def getLayerProperty(property: String): js.Any = js.native
+  def getLayerProperty(property: String): Any = js.native
   
   /** Retrieves the currently selected frames in an array. */
   def getSelectedFrames(): js.Array[FlashFrame] = js.native
@@ -195,17 +195,17 @@ trait FlashTimeline extends StObject {
   def selectAllFrames(): Unit = js.native
   
   /** Sets the property of the Frame object for the selected frames. */
-  def setFrameProperty(property: String, value: js.Any): Unit = js.native
-  def setFrameProperty(property: String, value: js.Any, startFrameIndex: Double): Unit = js.native
-  def setFrameProperty(property: String, value: js.Any, startFrameIndex: Double, endFrameIndex: Double): Unit = js.native
-  def setFrameProperty(property: String, value: js.Any, startFrameIndex: Unit, endFrameIndex: Double): Unit = js.native
+  def setFrameProperty(property: String, value: Any): Unit = js.native
+  def setFrameProperty(property: String, value: Any, startFrameIndex: Double): Unit = js.native
+  def setFrameProperty(property: String, value: Any, startFrameIndex: Double, endFrameIndex: Double): Unit = js.native
+  def setFrameProperty(property: String, value: Any, startFrameIndex: Unit, endFrameIndex: Double): Unit = js.native
   
   /** Replaces the guide lines for the timeline with the information specified. */
   def setGuidelines(xmlString: String): Boolean = js.native
   
   /** Sets the specified property on all the selected layers to a specified value. */
-  def setLayerProperty(property: String, value: js.Any): Unit = js.native
-  def setLayerProperty(property: String, value: js.Any, layersToChange: String): Unit = js.native
+  def setLayerProperty(property: String, value: Any): Unit = js.native
+  def setLayerProperty(property: String, value: Any, layersToChange: String): Unit = js.native
   
   def setSelectedFrames(selectionList: js.Array[Double]): Unit = js.native
   def setSelectedFrames(selectionList: js.Array[Double], bReplaceCurrentSelection: Boolean): Unit = js.native

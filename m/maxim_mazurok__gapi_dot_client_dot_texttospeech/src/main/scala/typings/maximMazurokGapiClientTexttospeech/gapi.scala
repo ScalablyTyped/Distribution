@@ -66,7 +66,7 @@ object gapi {
           
           inline def setEffectsProfileIdUndefined: Self = StObject.set(x, "effectsProfileId", js.undefined)
           
-          inline def setEffectsProfileIdVarargs(value: String*): Self = StObject.set(x, "effectsProfileId", js.Array(value :_*))
+          inline def setEffectsProfileIdVarargs(value: String*): Self = StObject.set(x, "effectsProfileId", js.Array(value*))
           
           inline def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
           
@@ -83,6 +83,33 @@ object gapi {
           inline def setVolumeGainDb(value: Double): Self = StObject.set(x, "volumeGainDb", value.asInstanceOf[js.Any])
           
           inline def setVolumeGainDbUndefined: Self = StObject.set(x, "volumeGainDb", js.undefined)
+        }
+      }
+      
+      trait CustomVoiceParams extends StObject {
+        
+        /** Required. The name of the AutoML model that synthesizes the custom voice. */
+        var model: js.UndefOr[String] = js.undefined
+        
+        /** Optional. The usage of the synthesized audio to be reported. */
+        var reportedUsage: js.UndefOr[String] = js.undefined
+      }
+      object CustomVoiceParams {
+        
+        inline def apply(): CustomVoiceParams = {
+          val __obj = js.Dynamic.literal()
+          __obj.asInstanceOf[CustomVoiceParams]
+        }
+        
+        extension [Self <: CustomVoiceParams](x: Self) {
+          
+          inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+          
+          inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+          
+          inline def setReportedUsage(value: String): Self = StObject.set(x, "reportedUsage", value.asInstanceOf[js.Any])
+          
+          inline def setReportedUsageUndefined: Self = StObject.set(x, "reportedUsage", js.undefined)
         }
       }
       
@@ -104,7 +131,7 @@ object gapi {
           
           inline def setVoicesUndefined: Self = StObject.set(x, "voices", js.undefined)
           
-          inline def setVoicesVarargs(value: Voice*): Self = StObject.set(x, "voices", js.Array(value :_*))
+          inline def setVoicesVarargs(value: Voice*): Self = StObject.set(x, "voices", js.Array(value*))
         }
       }
       
@@ -230,7 +257,7 @@ object gapi {
           
           inline def setLanguageCodesUndefined: Self = StObject.set(x, "languageCodes", js.undefined)
           
-          inline def setLanguageCodesVarargs(value: String*): Self = StObject.set(x, "languageCodes", js.Array(value :_*))
+          inline def setLanguageCodesVarargs(value: String*): Self = StObject.set(x, "languageCodes", js.Array(value*))
           
           inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
           
@@ -247,6 +274,9 @@ object gapi {
       }
       
       trait VoiceSelectionParams extends StObject {
+        
+        /** The configuration for a custom voice. If [CustomVoiceParams.model] is set, the service will choose the custom voice matching the specified configuration. */
+        var customVoice: js.UndefOr[CustomVoiceParams] = js.undefined
         
         /**
           * Required. The language (and potentially also the region) of the voice expressed as a [BCP-47](https://www.rfc-editor.org/rfc/bcp/bcp47.txt) language tag, e.g. "en-US". This should
@@ -274,6 +304,10 @@ object gapi {
         }
         
         extension [Self <: VoiceSelectionParams](x: Self) {
+          
+          inline def setCustomVoice(value: CustomVoiceParams): Self = StObject.set(x, "customVoice", value.asInstanceOf[js.Any])
+          
+          inline def setCustomVoiceUndefined: Self = StObject.set(x, "customVoice", js.undefined)
           
           inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
           

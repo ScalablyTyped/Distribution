@@ -1,29 +1,30 @@
 package typings.twoJs.mod
 
+import typings.std.Float32ArrayConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
 /* static member */
-inline def Array: typings.std.Float32ArrayConstructor | (/* import warning: importer.ImportType#apply Failed type conversion: typeof Float32Array */ js.Any) = typings.twoJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Array").asInstanceOf[typings.std.Float32ArrayConstructor | (/* import warning: importer.ImportType#apply Failed type conversion: typeof Float32Array */ js.Any)]
+inline def Array: Float32ArrayConstructor | (/* import warning: importer.ImportType#apply Failed type conversion: typeof Float32Array */ js.Any) = ^.asInstanceOf[js.Dynamic].selectDynamic("Array").asInstanceOf[Float32ArrayConstructor | (/* import warning: importer.ImportType#apply Failed type conversion: typeof Float32Array */ js.Any)]
 inline def Array_=(
-  x: typings.std.Float32ArrayConstructor | (/* import warning: importer.ImportType#apply Failed type conversion: typeof Float32Array */ js.Any)
-): scala.Unit = typings.twoJs.mod.^.asInstanceOf[js.Dynamic].updateDynamic("Array")(x.asInstanceOf[js.Any])
+  x: Float32ArrayConstructor | (/* import warning: importer.ImportType#apply Failed type conversion: typeof Float32Array */ js.Any)
+): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Array")(x.asInstanceOf[js.Any])
 
-inline def Instances: js.Array[typings.twoJs.mod.Two] = typings.twoJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Instances").asInstanceOf[js.Array[typings.twoJs.mod.Two]]
+inline def Instances: js.Array[Two] = ^.asInstanceOf[js.Dynamic].selectDynamic("Instances").asInstanceOf[js.Array[Two]]
 
-inline def Properties: js.Array[js.Any] = typings.twoJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Properties").asInstanceOf[js.Array[js.Any]]
+inline def Properties: js.Array[Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("Properties").asInstanceOf[js.Array[Any]]
 
-inline def Resolution: scala.Double = typings.twoJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("Resolution").asInstanceOf[scala.Double]
+inline def Resolution: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("Resolution").asInstanceOf[Double]
 
-inline def noConflict(): typings.twoJs.mod.Two = typings.twoJs.mod.^.asInstanceOf[js.Dynamic].applyDynamic("noConflict")().asInstanceOf[typings.twoJs.mod.Two]
+inline def noConflict(): Two = ^.asInstanceOf[js.Dynamic].applyDynamic("noConflict")().asInstanceOf[Two]
 
 /* Rewritten from type alias, can be one of: 
   - java.lang.String
   - typings.twoJs.mod.LinearGradient
   - typings.twoJs.mod.RadialGradient
 */
-type Color = typings.twoJs.mod._Color | java.lang.String
+type Color = _Color | String
 
-type _Object = typings.twoJs.mod.Object
+type _Object = Object

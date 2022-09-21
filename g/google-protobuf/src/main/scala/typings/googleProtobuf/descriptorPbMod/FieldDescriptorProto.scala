@@ -8,14 +8,13 @@ import typings.googleProtobuf.mod.BinaryWriter
 import typings.googleProtobuf.mod.ExtensionFieldBinaryInfo
 import typings.googleProtobuf.mod.ExtensionFieldInfo
 import typings.googleProtobuf.mod.Message
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-protobuf/google/protobuf/descriptor_pb", "FieldDescriptorProto")
 @js.native
-class FieldDescriptorProto () extends Message {
+open class FieldDescriptorProto () extends Message {
   
   def clearDefaultValue(): FieldDescriptorProto = js.native
   
@@ -32,6 +31,8 @@ class FieldDescriptorProto () extends Message {
   def clearOneofIndex(): FieldDescriptorProto = js.native
   
   def clearOptions(): FieldDescriptorProto = js.native
+  
+  def clearProto3Optional(): FieldDescriptorProto = js.native
   
   def clearType(): FieldDescriptorProto = js.native
   
@@ -53,6 +54,8 @@ class FieldDescriptorProto () extends Message {
   
   def getOptions(): js.UndefOr[FieldOptions] = js.native
   
+  def getProto3Optional(): js.UndefOr[Boolean] = js.native
+  
   def getType(): js.UndefOr[Type] = js.native
   
   def getTypeName(): js.UndefOr[String] = js.native
@@ -72,6 +75,8 @@ class FieldDescriptorProto () extends Message {
   def hasOneofIndex(): Boolean = js.native
   
   def hasOptions(): Boolean = js.native
+  
+  def hasProto3Optional(): Boolean = js.native
   
   def hasType(): Boolean = js.native
   
@@ -93,6 +98,8 @@ class FieldDescriptorProto () extends Message {
   
   def setOptions(): FieldDescriptorProto = js.native
   def setOptions(value: FieldOptions): FieldDescriptorProto = js.native
+  
+  def setProto3Optional(value: Boolean): FieldDescriptorProto = js.native
   
   def setType(value: Type): FieldDescriptorProto = js.native
   
@@ -251,7 +258,7 @@ object FieldDescriptorProto {
     /* 4 */ val TYPE_UINT64: typings.googleProtobuf.descriptorPbMod.FieldDescriptorProto.Type.TYPE_UINT64 & Double = js.native
   }
   
-  inline def deserializeBinary(bytes: Uint8Array): FieldDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[FieldDescriptorProto]
+  inline def deserializeBinary(bytes: js.typedarray.Uint8Array): FieldDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[FieldDescriptorProto]
   
   inline def deserializeBinaryFromReader(message: FieldDescriptorProto, reader: BinaryReader): FieldDescriptorProto = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[FieldDescriptorProto]
   
@@ -287,6 +294,8 @@ object FieldDescriptorProto {
     var oneofIndex: js.UndefOr[Double] = js.undefined
     
     var options: js.UndefOr[typings.googleProtobuf.descriptorPbMod.FieldOptions.AsObject] = js.undefined
+    
+    var proto3Optional: js.UndefOr[Boolean] = js.undefined
     
     var `type`: js.UndefOr[Type] = js.undefined
     
@@ -332,6 +341,10 @@ object FieldDescriptorProto {
       inline def setOptions(value: typings.googleProtobuf.descriptorPbMod.FieldOptions.AsObject): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      
+      inline def setProto3Optional(value: Boolean): Self = StObject.set(x, "proto3Optional", value.asInstanceOf[js.Any])
+      
+      inline def setProto3OptionalUndefined: Self = StObject.set(x, "proto3Optional", js.undefined)
       
       inline def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

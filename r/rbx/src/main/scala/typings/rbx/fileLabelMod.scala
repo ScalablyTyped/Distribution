@@ -54,7 +54,7 @@ object fileLabelMod {
   
   @JSImport("rbx/elements/form/file-label", "FileLabel")
   @js.native
-  val FileLabel: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val FileLabel: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
   
   /* Inlined rbx.rbx/base/helpers.HelpersProps */
   trait FileLabelProps extends StObject {

@@ -32,7 +32,7 @@ trait Clear extends StObject {
   
   def onFocus(): Unit
   
-  var styles: StringDictionary[RegisteredStyle[js.Any]]
+  var styles: StringDictionary[RegisteredStyle[Any]]
   
   var textAlign: String
   
@@ -53,7 +53,7 @@ object Clear {
     onErrorClick: () => Unit,
     onExtraClick: () => Unit,
     onFocus: () => Unit,
-    styles: StringDictionary[RegisteredStyle[js.Any]],
+    styles: StringDictionary[RegisteredStyle[Any]],
     textAlign: String,
     `type`: String
   ): Clear = {
@@ -88,7 +88,7 @@ object Clear {
     
     inline def setOnFocus(value: () => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction0(value))
     
-    inline def setStyles(value: StringDictionary[RegisteredStyle[js.Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: StringDictionary[RegisteredStyle[Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     inline def setTextAlign(value: String): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
     

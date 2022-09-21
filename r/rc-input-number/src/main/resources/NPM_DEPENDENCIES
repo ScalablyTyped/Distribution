@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rc-input-number" : "6.1.1"
+      "rc-input-number" : "7.3.9"
     }
   ],
   "test-dependencies" : [
     {
-      "rc-input-number" : "6.1.1"
+      "rc-input-number" : "7.3.9"
     }
   ],
   "compile-devDependencies" : [

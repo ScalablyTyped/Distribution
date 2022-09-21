@@ -4,9 +4,8 @@ import typings.idyllCompiler.mod.AST
 import typings.idyllCompiler.mod.Node
 import typings.idyllCompiler.mod.Options
 import typings.idyllDocument.anon.Children
+import typings.react.mod.ElementType
 import typings.react.mod.PureComponent
-import typings.react.mod.ReactType
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,10 +14,9 @@ object mod {
   
   @JSImport("idyll-document", JSImport.Default)
   @js.native
-  class default ()
-    extends PureComponent[IdyllDocumentProps, js.Any, js.Any]
+  open class default () extends PureComponent[IdyllDocumentProps, Any, Any]
   
-  type IdyllDocument = PureComponent[IdyllDocumentProps, js.Any, js.Any]
+  type IdyllDocument = PureComponent[IdyllDocumentProps, Any, Any]
   
   trait IdyllDocumentProps extends StObject {
     
@@ -37,9 +35,9 @@ object mod {
     /**
       * Components to be rendered with
       */
-    var components: js.Any
+    var components: Any
     
-    var context: js.UndefOr[js.Function1[/* context */ js.Any, Unit]] = js.undefined
+    var context: js.UndefOr[js.Function1[/* context */ Any, Unit]] = js.undefined
     
     /**
       * Initial data set
@@ -49,9 +47,9 @@ object mod {
     /**
       * The React component rendered when an error occurs
       */
-    var errorComponent: js.UndefOr[ReactType[Children]] = js.undefined
+    var errorComponent: js.UndefOr[ElementType[Children]] = js.undefined
     
-    var initialState: js.UndefOr[js.Any] = js.undefined
+    var initialState: js.UndefOr[Any] = js.undefined
     
     /**
       * The layout for idyll document
@@ -67,7 +65,7 @@ object mod {
     /**
       * Callback function if error happens during compilation
       */
-    var onError: js.UndefOr[js.Function1[/* err */ Error, Unit]] = js.undefined
+    var onError: js.UndefOr[js.Function1[/* err */ js.Error, Unit]] = js.undefined
     
     /**
       * The theme for idyll document
@@ -77,7 +75,7 @@ object mod {
   }
   object IdyllDocumentProps {
     
-    inline def apply(components: js.Any): IdyllDocumentProps = {
+    inline def apply(components: Any): IdyllDocumentProps = {
       val __obj = js.Dynamic.literal(components = components.asInstanceOf[js.Any])
       __obj.asInstanceOf[IdyllDocumentProps]
     }
@@ -88,15 +86,15 @@ object mod {
       
       inline def setAstUndefined: Self = StObject.set(x, "ast", js.undefined)
       
-      inline def setAstVarargs(value: Node*): Self = StObject.set(x, "ast", js.Array(value :_*))
+      inline def setAstVarargs(value: Node*): Self = StObject.set(x, "ast", js.Array(value*))
       
       inline def setCompilerOptions(value: Options): Self = StObject.set(x, "compilerOptions", value.asInstanceOf[js.Any])
       
       inline def setCompilerOptionsUndefined: Self = StObject.set(x, "compilerOptions", js.undefined)
       
-      inline def setComponents(value: js.Any): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+      inline def setComponents(value: Any): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
-      inline def setContext(value: /* context */ js.Any => Unit): Self = StObject.set(x, "context", js.Any.fromFunction1(value))
+      inline def setContext(value: /* context */ Any => Unit): Self = StObject.set(x, "context", js.Any.fromFunction1(value))
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
@@ -104,11 +102,11 @@ object mod {
       
       inline def setDatasetsUndefined: Self = StObject.set(x, "datasets", js.undefined)
       
-      inline def setErrorComponent(value: ReactType[Children]): Self = StObject.set(x, "errorComponent", value.asInstanceOf[js.Any])
+      inline def setErrorComponent(value: ElementType[Children]): Self = StObject.set(x, "errorComponent", value.asInstanceOf[js.Any])
       
       inline def setErrorComponentUndefined: Self = StObject.set(x, "errorComponent", js.undefined)
       
-      inline def setInitialState(value: js.Any): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
+      inline def setInitialState(value: Any): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
       
       inline def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
       
@@ -120,7 +118,7 @@ object mod {
       
       inline def setMarkupUndefined: Self = StObject.set(x, "markup", js.undefined)
       
-      inline def setOnError(value: /* err */ Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* err */ js.Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       

@@ -10,15 +10,12 @@ Node's first framework for building immersive CLI apps.
 | ------------------ | :-------------: |
 | Full name          | vorpal |
 | Keywords           | api, cli, repl, shell, immersive, framework, app, application, command, commander, automated, prompt, inquirer |
-| # releases         | 1 |
-| # dependents       | 455 |
-| # downloads        | 2865218 |
-| # stars            | 50 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 331820.3333333333 |
+| # stars            | 5538.0 |
 
 ## Links
-- [Homepage](https://github.com/dthree/vorpal#readme)
-- [Bugs](https://github.com/dthree/vorpal/issues)
-- [Repository](https://github.com/dthree/vorpal)
 - [Npm](https://www.npmjs.com/package/vorpal)
     
 

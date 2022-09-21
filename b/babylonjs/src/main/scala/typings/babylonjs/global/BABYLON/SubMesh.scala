@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.SubMesh")
 @js.native
-class SubMesh protected ()
+open class SubMesh protected ()
   extends StObject
      with typings.babylonjs.BABYLON.SubMesh {
   /**
@@ -145,7 +145,7 @@ class SubMesh protected ()
   
   /**
     * Checks if a cullable object (mesh...) is in the camera frustum
-    * Unlike isInFrustum this cheks the full bounding box
+    * Unlike isInFrustum this checks the full bounding box
     * @param frustumPlanes Camera near/planes
     * @returns true if the object is in frustum otherwise false
     */
@@ -224,6 +224,7 @@ object SubMesh {
     * @param indexCount the number of indices to copy then from the startIndex
     * @param mesh the main mesh to create the submesh from
     * @param renderingMesh the optional rendering mesh
+    * @param createBoundingBox defines if bounding box should be created for this submesh
     * @returns a new submesh
     */
   inline def CreateFromIndices(
@@ -237,6 +238,22 @@ object SubMesh {
     startIndex: Double,
     indexCount: Double,
     mesh: typings.babylonjs.BABYLON.AbstractMesh,
+    renderingMesh: Unit,
+    createBoundingBox: Boolean
+  ): typings.babylonjs.BABYLON.SubMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromIndices")(materialIndex.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], indexCount.asInstanceOf[js.Any], mesh.asInstanceOf[js.Any], renderingMesh.asInstanceOf[js.Any], createBoundingBox.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.SubMesh]
+  inline def CreateFromIndices(
+    materialIndex: Double,
+    startIndex: Double,
+    indexCount: Double,
+    mesh: typings.babylonjs.BABYLON.AbstractMesh,
     renderingMesh: typings.babylonjs.BABYLON.Mesh
   ): typings.babylonjs.BABYLON.SubMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromIndices")(materialIndex.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], indexCount.asInstanceOf[js.Any], mesh.asInstanceOf[js.Any], renderingMesh.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.SubMesh]
+  inline def CreateFromIndices(
+    materialIndex: Double,
+    startIndex: Double,
+    indexCount: Double,
+    mesh: typings.babylonjs.BABYLON.AbstractMesh,
+    renderingMesh: typings.babylonjs.BABYLON.Mesh,
+    createBoundingBox: Boolean
+  ): typings.babylonjs.BABYLON.SubMesh = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromIndices")(materialIndex.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], indexCount.asInstanceOf[js.Any], mesh.asInstanceOf[js.Any], renderingMesh.asInstanceOf[js.Any], createBoundingBox.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.SubMesh]
 }

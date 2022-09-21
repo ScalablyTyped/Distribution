@@ -22,7 +22,7 @@ object mod extends Shortcut {
     * Creates a new podium emitter
     * @param events  if present, the value is passed to podium.registerEvent().
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with Podium {
     def this(events: js.Array[Events]) = this()
@@ -56,7 +56,7 @@ object mod extends Shortcut {
       
       inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     }
   }
   
@@ -112,7 +112,7 @@ object mod extends Shortcut {
       
       inline def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
       
-      inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
+      inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value*))
       
       inline def setClone_(value: Boolean): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
       
@@ -126,10 +126,10 @@ object mod extends Shortcut {
       
       inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      inline def setFilterVarargs(value: String*): Self = StObject.set(x, "filter", js.Array(value :_*))
+      inline def setFilterVarargs(value: String*): Self = StObject.set(x, "filter", js.Array(value*))
       
       inline def setListener(
-        value: (/* data */ js.Any, /* tags */ js.UndefOr[Tags], /* callback */ js.UndefOr[js.Function0[Unit]]) => Unit
+        value: (/* data */ Any, /* tags */ js.UndefOr[Tags], /* callback */ js.UndefOr[js.Function0[Unit]]) => Unit
       ): Self = StObject.set(x, "listener", js.Any.fromFunction3(value))
       
       inline def setListenerUndefined: Self = StObject.set(x, "listener", js.undefined)
@@ -182,7 +182,7 @@ object mod extends Shortcut {
       
       inline def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
       
-      inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
+      inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value*))
       
       inline def setClone_(value: Boolean): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
       
@@ -212,7 +212,7 @@ object mod extends Shortcut {
   type Events = _Events | String
   
   type Listener = js.Function3[
-    /* data */ js.Any, 
+    /* data */ Any, 
     /* tags */ js.UndefOr[Tags], 
     /* callback */ js.UndefOr[js.Function0[Unit]], 
     Unit
@@ -247,10 +247,10 @@ object mod extends Shortcut {
       * @param callback  an optional callback method invoked when all subscribers have been notified using the signature function()
       * @see {@link https://github.com/hapijs/podium/blob/master/API.md#podiumemitcriteria-data-callback}
       */
-    def emit(criteria: String, data: js.Any): Unit = js.native
-    def emit(criteria: String, data: js.Any, callback: js.Function0[Unit]): Unit = js.native
-    def emit(criteria: Channel, data: js.Any): Unit = js.native
-    def emit(criteria: Channel, data: js.Any, callback: js.Function0[Unit]): Unit = js.native
+    def emit(criteria: String, data: Any): Unit = js.native
+    def emit(criteria: String, data: Any, callback: js.Function0[Unit]): Unit = js.native
+    def emit(criteria: Channel, data: Any): Unit = js.native
+    def emit(criteria: Channel, data: Any, callback: js.Function0[Unit]): Unit = js.native
     
     /**
       * podium.hasListeners(name)

@@ -7,24 +7,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Google+ API
-  *
-  * Builds on top of the Google+ platform.
-  *
-  * @example
-  * const {google} = require('googleapis');
-  * const plus = google.plus('v1');
-  *
-  * @namespace plus
-  * @type {Function}
-  * @version v1
-  * @variation v1
-  * @param {object=} options Options for Plus
-  */
 @JSImport("googleapis/build/src/apis/plus/v1", "plus_v1.Plus")
 @js.native
-class Plus protected () extends StObject {
+open class Plus protected () extends StObject {
   def this(options: GlobalOptions) = this()
   def this(options: GlobalOptions, google: GoogleConfigurable) = this()
   

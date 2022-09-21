@@ -10,5 +10,5 @@ object createIconSetFromFontelloMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(config: js.Any, expoFontName: js.Any, expoAssetId: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any], expoFontName.asInstanceOf[js.Any], expoAssetId.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def default(config: Any, expoFontName: Any, expoAssetId: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any], expoFontName.asInstanceOf[js.Any], expoAssetId.asInstanceOf[js.Any])).asInstanceOf[Any]
 }

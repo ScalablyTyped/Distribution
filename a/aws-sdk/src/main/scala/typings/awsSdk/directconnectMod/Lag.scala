@@ -12,14 +12,19 @@ trait Lag extends StObject {
   var allowsHostedConnections: js.UndefOr[BooleanFlag] = js.undefined
   
   /**
-    * The AWS Direct Connect endpoint that hosts the LAG.
+    * The Direct Connect endpoint that hosts the LAG.
     */
   var awsDevice: js.UndefOr[AwsDevice] = js.undefined
   
   /**
-    * The AWS Direct Connect endpoint that hosts the LAG.
+    * The Direct Connect endpoint that hosts the LAG.
     */
   var awsDeviceV2: js.UndefOr[AwsDeviceV2] = js.undefined
+  
+  /**
+    * The Direct Connect endpoint that terminates the logical connection. This device might be different than the device that terminates the physical connection.
+    */
+  var awsLogicalDeviceId: js.UndefOr[AwsLogicalDeviceId] = js.undefined
   
   /**
     * The connections bundled by the LAG.
@@ -30,6 +35,11 @@ trait Lag extends StObject {
     * The individual bandwidth of the physical connections bundled by the LAG. The possible values are 1Gbps and 10Gbps. 
     */
   var connectionsBandwidth: js.UndefOr[Bandwidth] = js.undefined
+  
+  /**
+    * The LAG MAC Security (MACsec) encryption mode. The valid values are no_encrypt, should_encrypt, and must_encrypt.
+    */
+  var encryptionMode: js.UndefOr[EncryptionMode] = js.undefined
   
   /**
     * Indicates whether the LAG supports a secondary BGP peer in the same address family (IPv4/IPv6).
@@ -62,6 +72,16 @@ trait Lag extends StObject {
   var location: js.UndefOr[LocationCode] = js.undefined
   
   /**
+    * Indicates whether the LAG supports MAC Security (MACsec).
+    */
+  var macSecCapable: js.UndefOr[MacSecCapable] = js.undefined
+  
+  /**
+    * The MAC Security (MACsec) security keys associated with the LAG.
+    */
+  var macSecKeys: js.UndefOr[MacSecKeyList] = js.undefined
+  
+  /**
     * The minimum number of physical dedicated connections that must be operational for the LAG itself to be operational.
     */
   var minimumLinks: js.UndefOr[Count] = js.undefined
@@ -72,7 +92,7 @@ trait Lag extends StObject {
   var numberOfConnections: js.UndefOr[Count] = js.undefined
   
   /**
-    * The ID of the AWS account that owns the LAG.
+    * The ID of the Amazon Web Services account that owns the LAG.
     */
   var ownerAccount: js.UndefOr[OwnerAccount] = js.undefined
   
@@ -82,7 +102,7 @@ trait Lag extends StObject {
   var providerName: js.UndefOr[ProviderName] = js.undefined
   
   /**
-    * The AWS Region where the connection is located.
+    * The Amazon Web Services Region where the connection is located.
     */
   var region: js.UndefOr[Region] = js.undefined
   
@@ -112,6 +132,10 @@ object Lag {
     
     inline def setAwsDeviceV2Undefined: Self = StObject.set(x, "awsDeviceV2", js.undefined)
     
+    inline def setAwsLogicalDeviceId(value: AwsLogicalDeviceId): Self = StObject.set(x, "awsLogicalDeviceId", value.asInstanceOf[js.Any])
+    
+    inline def setAwsLogicalDeviceIdUndefined: Self = StObject.set(x, "awsLogicalDeviceId", js.undefined)
+    
     inline def setConnections(value: ConnectionList): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
     
     inline def setConnectionsBandwidth(value: Bandwidth): Self = StObject.set(x, "connectionsBandwidth", value.asInstanceOf[js.Any])
@@ -120,7 +144,11 @@ object Lag {
     
     inline def setConnectionsUndefined: Self = StObject.set(x, "connections", js.undefined)
     
-    inline def setConnectionsVarargs(value: Connection*): Self = StObject.set(x, "connections", js.Array(value :_*))
+    inline def setConnectionsVarargs(value: Connection*): Self = StObject.set(x, "connections", js.Array(value*))
+    
+    inline def setEncryptionMode(value: EncryptionMode): Self = StObject.set(x, "encryptionMode", value.asInstanceOf[js.Any])
+    
+    inline def setEncryptionModeUndefined: Self = StObject.set(x, "encryptionMode", js.undefined)
     
     inline def setHasLogicalRedundancy(value: HasLogicalRedundancy): Self = StObject.set(x, "hasLogicalRedundancy", value.asInstanceOf[js.Any])
     
@@ -146,6 +174,16 @@ object Lag {
     
     inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
+    inline def setMacSecCapable(value: MacSecCapable): Self = StObject.set(x, "macSecCapable", value.asInstanceOf[js.Any])
+    
+    inline def setMacSecCapableUndefined: Self = StObject.set(x, "macSecCapable", js.undefined)
+    
+    inline def setMacSecKeys(value: MacSecKeyList): Self = StObject.set(x, "macSecKeys", value.asInstanceOf[js.Any])
+    
+    inline def setMacSecKeysUndefined: Self = StObject.set(x, "macSecKeys", js.undefined)
+    
+    inline def setMacSecKeysVarargs(value: MacSecKey*): Self = StObject.set(x, "macSecKeys", js.Array(value*))
+    
     inline def setMinimumLinks(value: Count): Self = StObject.set(x, "minimumLinks", value.asInstanceOf[js.Any])
     
     inline def setMinimumLinksUndefined: Self = StObject.set(x, "minimumLinks", js.undefined)
@@ -170,6 +208,6 @@ object Lag {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

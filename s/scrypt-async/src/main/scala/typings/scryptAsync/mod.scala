@@ -14,8 +14,8 @@ object mod extends Shortcut {
   @js.native
   trait CallbackFunc extends StObject {
     
-    def apply(key: String): js.Any = js.native
-    def apply(key: js.Array[Double]): js.Any = js.native
+    def apply(key: String): Any = js.native
+    def apply(key: js.Array[Double]): Any = js.native
   }
   
   trait Options extends StObject {

@@ -58,11 +58,11 @@ trait TypeofdisplaySource extends StObject {
   
   val getAvailableSinks: js.Function
   
-  val onSessionErrorOccured: Event[js.Any]
+  val onSessionErrorOccured: Event[Any]
   
-  val onSessionTerminated: Event[js.Any]
+  val onSessionTerminated: Event[Any]
   
-  val onSinksUpdated: Event[js.Any]
+  val onSinksUpdated: Event[Any]
   
   val requestAuthentication: js.Function
   
@@ -77,9 +77,9 @@ object TypeofdisplaySource {
     ErrorType: CAPABILITIESNEGOTIATIONERROR,
     SinkState: CONNECTED,
     getAvailableSinks: js.Function,
-    onSessionErrorOccured: Event[js.Any],
-    onSessionTerminated: Event[js.Any],
-    onSinksUpdated: Event[js.Any],
+    onSessionErrorOccured: Event[Any],
+    onSessionTerminated: Event[Any],
+    onSinksUpdated: Event[Any],
     requestAuthentication: js.Function,
     startSession: js.Function,
     terminateSession: js.Function
@@ -96,11 +96,11 @@ object TypeofdisplaySource {
     
     inline def setGetAvailableSinks(value: js.Function): Self = StObject.set(x, "getAvailableSinks", value.asInstanceOf[js.Any])
     
-    inline def setOnSessionErrorOccured(value: Event[js.Any]): Self = StObject.set(x, "onSessionErrorOccured", value.asInstanceOf[js.Any])
+    inline def setOnSessionErrorOccured(value: Event[Any]): Self = StObject.set(x, "onSessionErrorOccured", value.asInstanceOf[js.Any])
     
-    inline def setOnSessionTerminated(value: Event[js.Any]): Self = StObject.set(x, "onSessionTerminated", value.asInstanceOf[js.Any])
+    inline def setOnSessionTerminated(value: Event[Any]): Self = StObject.set(x, "onSessionTerminated", value.asInstanceOf[js.Any])
     
-    inline def setOnSinksUpdated(value: Event[js.Any]): Self = StObject.set(x, "onSinksUpdated", value.asInstanceOf[js.Any])
+    inline def setOnSinksUpdated(value: Event[Any]): Self = StObject.set(x, "onSinksUpdated", value.asInstanceOf[js.Any])
     
     inline def setRequestAuthentication(value: js.Function): Self = StObject.set(x, "requestAuthentication", value.asInstanceOf[js.Any])
     

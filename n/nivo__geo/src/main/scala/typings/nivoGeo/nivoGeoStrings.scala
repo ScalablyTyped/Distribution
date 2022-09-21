@@ -1,65 +1,73 @@
 package typings.nivoGeo
 
 import typings.nivoGeo.mod.GeoProjectionType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nivoGeoStrings {
-  @js.native
-  sealed trait azimuthalEqualArea extends GeoProjectionType
   
   @js.native
-  sealed trait azimuthalEquidistant extends GeoProjectionType
+  sealed trait azimuthalEqualArea
+    extends StObject
+       with GeoProjectionType
+  inline def azimuthalEqualArea: azimuthalEqualArea = "azimuthalEqualArea".asInstanceOf[azimuthalEqualArea]
   
   @js.native
-  sealed trait equalEarth extends GeoProjectionType
+  sealed trait azimuthalEquidistant
+    extends StObject
+       with GeoProjectionType
+  inline def azimuthalEquidistant: azimuthalEquidistant = "azimuthalEquidistant".asInstanceOf[azimuthalEquidistant]
   
   @js.native
-  sealed trait equirectangular extends GeoProjectionType
+  sealed trait equalEarth
+    extends StObject
+       with GeoProjectionType
+  inline def equalEarth: equalEarth = "equalEarth".asInstanceOf[equalEarth]
   
   @js.native
-  sealed trait gnomonic extends GeoProjectionType
+  sealed trait equirectangular
+    extends StObject
+       with GeoProjectionType
+  inline def equirectangular: equirectangular = "equirectangular".asInstanceOf[equirectangular]
   
   @js.native
-  sealed trait mercator extends GeoProjectionType
+  sealed trait gnomonic
+    extends StObject
+       with GeoProjectionType
+  inline def gnomonic: gnomonic = "gnomonic".asInstanceOf[gnomonic]
   
   @js.native
-  sealed trait naturalEarth1 extends GeoProjectionType
+  sealed trait mercator
+    extends StObject
+       with GeoProjectionType
+  inline def mercator: mercator = "mercator".asInstanceOf[mercator]
   
   @js.native
-  sealed trait orthographic extends GeoProjectionType
+  sealed trait naturalEarth1
+    extends StObject
+       with GeoProjectionType
+  inline def naturalEarth1: naturalEarth1 = "naturalEarth1".asInstanceOf[naturalEarth1]
   
   @js.native
-  sealed trait stereographic extends GeoProjectionType
+  sealed trait orthographic
+    extends StObject
+       with GeoProjectionType
+  inline def orthographic: orthographic = "orthographic".asInstanceOf[orthographic]
   
   @js.native
-  sealed trait `string VerticallineNobreakspacenumber` extends js.Object
+  sealed trait stereographic
+    extends StObject
+       with GeoProjectionType
+  inline def stereographic: stereographic = "stereographic".asInstanceOf[stereographic]
   
   @js.native
-  sealed trait transverseMercator extends GeoProjectionType
+  sealed trait `string VerticallineNobreakspacenumber` extends StObject
+  inline def `string VerticallineNobreakspacenumber`: `string VerticallineNobreakspacenumber` = ("string |\u00A0number").asInstanceOf[`string VerticallineNobreakspacenumber`]
   
-  @scala.inline
-  def azimuthalEqualArea: azimuthalEqualArea = "azimuthalEqualArea".asInstanceOf[azimuthalEqualArea]
-  @scala.inline
-  def azimuthalEquidistant: azimuthalEquidistant = "azimuthalEquidistant".asInstanceOf[azimuthalEquidistant]
-  @scala.inline
-  def equalEarth: equalEarth = "equalEarth".asInstanceOf[equalEarth]
-  @scala.inline
-  def equirectangular: equirectangular = "equirectangular".asInstanceOf[equirectangular]
-  @scala.inline
-  def gnomonic: gnomonic = "gnomonic".asInstanceOf[gnomonic]
-  @scala.inline
-  def mercator: mercator = "mercator".asInstanceOf[mercator]
-  @scala.inline
-  def naturalEarth1: naturalEarth1 = "naturalEarth1".asInstanceOf[naturalEarth1]
-  @scala.inline
-  def orthographic: orthographic = "orthographic".asInstanceOf[orthographic]
-  @scala.inline
-  def stereographic: stereographic = "stereographic".asInstanceOf[stereographic]
-  @scala.inline
-  def `string VerticallineNobreakspacenumber`: `string VerticallineNobreakspacenumber` = ("string |\u00A0number").asInstanceOf[`string VerticallineNobreakspacenumber`]
-  @scala.inline
-  def transverseMercator: transverseMercator = "transverseMercator".asInstanceOf[transverseMercator]
+  @js.native
+  sealed trait transverseMercator
+    extends StObject
+       with GeoProjectionType
+  inline def transverseMercator: transverseMercator = "transverseMercator".asInstanceOf[transverseMercator]
 }
-

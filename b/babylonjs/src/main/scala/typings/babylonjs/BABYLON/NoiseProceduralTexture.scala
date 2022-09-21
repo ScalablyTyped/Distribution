@@ -9,7 +9,7 @@ trait NoiseProceduralTexture
   extends StObject
      with ProceduralTexture {
   
-  /* private */ var _updateShaderUniforms: js.Any = js.native
+  /* private */ var _updateShaderUniforms: Any = js.native
   
   /** Gets or sets animation speed factor (default is 1) */
   var animationSpeedFactor: Double = js.native

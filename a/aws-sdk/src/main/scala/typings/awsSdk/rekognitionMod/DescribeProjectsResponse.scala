@@ -33,6 +33,6 @@ object DescribeProjectsResponse {
     
     inline def setProjectDescriptionsUndefined: Self = StObject.set(x, "ProjectDescriptions", js.undefined)
     
-    inline def setProjectDescriptionsVarargs(value: ProjectDescription*): Self = StObject.set(x, "ProjectDescriptions", js.Array(value :_*))
+    inline def setProjectDescriptionsVarargs(value: ProjectDescription*): Self = StObject.set(x, "ProjectDescriptions", js.Array(value*))
   }
 }

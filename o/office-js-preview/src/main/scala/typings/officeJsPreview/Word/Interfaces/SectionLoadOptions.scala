@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a section in a Word document.
   *
+  * @remarks
   * [Api set: WordApi 1.1]
   */
 trait SectionLoadOptions extends StObject {
@@ -19,9 +19,9 @@ trait SectionLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets the body object of the section. This does not include the header/footer and other section metadata.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   var body: js.UndefOr[BodyLoadOptions] = js.undefined

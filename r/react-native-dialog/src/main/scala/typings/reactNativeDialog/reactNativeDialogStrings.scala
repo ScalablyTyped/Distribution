@@ -23,8 +23,32 @@ object reactNativeDialogStrings {
   inline def `box-only`: `box-only` = "box-only".asInstanceOf[`box-only`]
   
   @js.native
-  sealed trait button extends StObject
-  inline def button: button = "button".asInstanceOf[button]
+  sealed trait fade extends StObject
+  inline def fade: fade = "fade".asInstanceOf[fade]
+  
+  @js.native
+  sealed trait formSheet extends StObject
+  inline def formSheet: formSheet = "formSheet".asInstanceOf[formSheet]
+  
+  @js.native
+  sealed trait fullScreen extends StObject
+  inline def fullScreen: fullScreen = "fullScreen".asInstanceOf[fullScreen]
+  
+  @js.native
+  sealed trait in extends StObject
+  inline def in: in = "in".asInstanceOf[in]
+  
+  @js.native
+  sealed trait landscape extends StObject
+  inline def landscape: landscape = "landscape".asInstanceOf[landscape]
+  
+  @js.native
+  sealed trait `landscape-left` extends StObject
+  inline def `landscape-left`: `landscape-left` = "landscape-left".asInstanceOf[`landscape-left`]
+  
+  @js.native
+  sealed trait `landscape-right` extends StObject
+  inline def `landscape-right`: `landscape-right` = "landscape-right".asInstanceOf[`landscape-right`]
   
   @js.native
   sealed trait no extends StObject
@@ -39,16 +63,32 @@ object reactNativeDialogStrings {
   inline def none: none = "none".asInstanceOf[none]
   
   @js.native
+  sealed trait out extends StObject
+  inline def out: out = "out".asInstanceOf[out]
+  
+  @js.native
+  sealed trait overFullScreen extends StObject
+  inline def overFullScreen: overFullScreen = "overFullScreen".asInstanceOf[overFullScreen]
+  
+  @js.native
+  sealed trait pageSheet extends StObject
+  inline def pageSheet: pageSheet = "pageSheet".asInstanceOf[pageSheet]
+  
+  @js.native
   sealed trait polite extends StObject
   inline def polite: polite = "polite".asInstanceOf[polite]
   
   @js.native
-  sealed trait radiobutton_checked extends StObject
-  inline def radiobutton_checked: radiobutton_checked = "radiobutton_checked".asInstanceOf[radiobutton_checked]
+  sealed trait portrait extends StObject
+  inline def portrait: portrait = "portrait".asInstanceOf[portrait]
   
   @js.native
-  sealed trait radiobutton_unchecked extends StObject
-  inline def radiobutton_unchecked: radiobutton_unchecked = "radiobutton_unchecked".asInstanceOf[radiobutton_unchecked]
+  sealed trait `portrait-upside-down` extends StObject
+  inline def `portrait-upside-down`: `portrait-upside-down` = "portrait-upside-down".asInstanceOf[`portrait-upside-down`]
+  
+  @js.native
+  sealed trait slide extends StObject
+  inline def slide: slide = "slide".asInstanceOf[slide]
   
   @js.native
   sealed trait yes extends StObject

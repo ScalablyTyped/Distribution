@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "Services.DefinitionInfo")
 @js.native
-class DefinitionInfo protected ()
+open class DefinitionInfo protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.Services.DefinitionInfo {
   def this(

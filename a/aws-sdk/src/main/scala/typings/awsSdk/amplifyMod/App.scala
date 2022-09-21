@@ -27,7 +27,7 @@ trait App extends StObject {
   var autoBranchCreationPatterns: js.UndefOr[AutoBranchCreationPatterns] = js.undefined
   
   /**
-    *  The basic authorization credentials for branches for the Amplify app. 
+    *  The basic authorization credentials for branches for the Amplify app. You must base64-encode the authorization credentials and provide them in the format user:password.
     */
   var basicAuthCredentials: js.UndefOr[BasicAuthCredentials] = js.undefined
   
@@ -39,7 +39,7 @@ trait App extends StObject {
   /**
     *  Creates a date and time for the Amplify app. 
     */
-  var createTime: CreateTime
+  var createTime: js.Date
   
   /**
     * Describes the custom HTTP headers for the Amplify app.
@@ -107,9 +107,14 @@ trait App extends StObject {
   var productionBranch: js.UndefOr[ProductionBranch] = js.undefined
   
   /**
-    *  The repository for the Amplify app. 
+    *  The Git repository for the Amplify app. 
     */
   var repository: Repository
+  
+  /**
+    *  This is for internal use.  The Amplify service uses this parameter to specify the authentication protocol to use to access the Git repository for an Amplify app. Amplify specifies TOKEN for a GitHub repository, SIGV4 for an Amazon Web Services CodeCommit repository, and SSH for GitLab and Bitbucket repositories.
+    */
+  var repositoryCloneMethod: js.UndefOr[RepositoryCloneMethod] = js.undefined
   
   /**
     *  The tag for the Amplify app. 
@@ -119,14 +124,14 @@ trait App extends StObject {
   /**
     *  Updates the date and time for the Amplify app. 
     */
-  var updateTime: UpdateTime
+  var updateTime: js.Date
 }
 object App {
   
   inline def apply(
     appArn: AppArn,
     appId: AppId,
-    createTime: CreateTime,
+    createTime: js.Date,
     defaultDomain: DefaultDomain,
     description: Description,
     enableBasicAuth: EnableBasicAuth,
@@ -135,7 +140,7 @@ object App {
     name: Name,
     platform: Platform,
     repository: Repository,
-    updateTime: UpdateTime
+    updateTime: js.Date
   ): App = {
     val __obj = js.Dynamic.literal(appArn = appArn.asInstanceOf[js.Any], appId = appId.asInstanceOf[js.Any], createTime = createTime.asInstanceOf[js.Any], defaultDomain = defaultDomain.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], enableBasicAuth = enableBasicAuth.asInstanceOf[js.Any], enableBranchAutoBuild = enableBranchAutoBuild.asInstanceOf[js.Any], environmentVariables = environmentVariables.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], repository = repository.asInstanceOf[js.Any], updateTime = updateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[App]
@@ -155,7 +160,7 @@ object App {
     
     inline def setAutoBranchCreationPatternsUndefined: Self = StObject.set(x, "autoBranchCreationPatterns", js.undefined)
     
-    inline def setAutoBranchCreationPatternsVarargs(value: AutoBranchCreationPattern*): Self = StObject.set(x, "autoBranchCreationPatterns", js.Array(value :_*))
+    inline def setAutoBranchCreationPatternsVarargs(value: AutoBranchCreationPattern*): Self = StObject.set(x, "autoBranchCreationPatterns", js.Array(value*))
     
     inline def setBasicAuthCredentials(value: BasicAuthCredentials): Self = StObject.set(x, "basicAuthCredentials", value.asInstanceOf[js.Any])
     
@@ -165,7 +170,7 @@ object App {
     
     inline def setBuildSpecUndefined: Self = StObject.set(x, "buildSpec", js.undefined)
     
-    inline def setCreateTime(value: CreateTime): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: js.Date): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     inline def setCustomHeaders(value: CustomHeaders): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
     
@@ -175,7 +180,7 @@ object App {
     
     inline def setCustomRulesUndefined: Self = StObject.set(x, "customRules", js.undefined)
     
-    inline def setCustomRulesVarargs(value: CustomRule*): Self = StObject.set(x, "customRules", js.Array(value :_*))
+    inline def setCustomRulesVarargs(value: CustomRule*): Self = StObject.set(x, "customRules", js.Array(value*))
     
     inline def setDefaultDomain(value: DefaultDomain): Self = StObject.set(x, "defaultDomain", value.asInstanceOf[js.Any])
     
@@ -209,10 +214,14 @@ object App {
     
     inline def setRepository(value: Repository): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
+    inline def setRepositoryCloneMethod(value: RepositoryCloneMethod): Self = StObject.set(x, "repositoryCloneMethod", value.asInstanceOf[js.Any])
+    
+    inline def setRepositoryCloneMethodUndefined: Self = StObject.set(x, "repositoryCloneMethod", js.undefined)
+    
     inline def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setUpdateTime(value: UpdateTime): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: js.Date): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
   }
 }

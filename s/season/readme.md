@@ -10,10 +10,10 @@ CSON utilities
 | ------------------ | :-------------: |
 | Full name          | season |
 | Keywords           | cson, json, CoffeeScript |
-| # releases         | 1 |
-| # dependents       | 58 |
-| # downloads        | 1035073 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 59261.333333333336 |
+| # stars            | 84.0 |
 
 ## Links
 - [Homepage](http://atom.github.io/season)

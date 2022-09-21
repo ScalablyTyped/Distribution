@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "SearchTeamMembersFilter")
 @js.native
-class SearchTeamMembersFilter () extends StObject {
+open class SearchTeamMembersFilter () extends StObject {
   
   /**
     * When present, filter by team members assigned to the specified locations. When empty, include team members assigned to any location.

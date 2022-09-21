@@ -84,13 +84,13 @@ object mod extends Shortcut {
     
     def clearVertexProperty(vertex: String): Boolean = js.native
     
-    def fromObject(graph: js.Any): JsGraphResponse = js.native
+    def fromObject(graph: Any): JsGraphResponse = js.native
     
     def getEdeges(): js.Array[Edge] = js.native
     
     def getEdgeCount(): Double = js.native
     
-    def getEdgeProperty(edge: Edge): js.Any = js.native
+    def getEdgeProperty(edge: Edge): Any = js.native
     
     def getGraphDescription(): String = js.native
     
@@ -100,7 +100,7 @@ object mod extends Shortcut {
     
     def getRootVertices(): js.Array[String] = js.native
     
-    def getVertexProperty(vertex: String): js.Any = js.native
+    def getVertexProperty(vertex: String): Any = js.native
     
     def getVertices(): js.Array[String] = js.native
     
@@ -169,11 +169,11 @@ object mod extends Shortcut {
     
     var e: Edge
     
-    var p: js.Any
+    var p: Any
   }
   object EdgeRequest {
     
-    inline def apply(e: Edge, p: js.Any): EdgeRequest = {
+    inline def apply(e: Edge, p: Any): EdgeRequest = {
       val __obj = js.Dynamic.literal(e = e.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any])
       __obj.asInstanceOf[EdgeRequest]
     }
@@ -182,15 +182,15 @@ object mod extends Shortcut {
       
       inline def setE(value: Edge): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
       
-      inline def setP(value: js.Any): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+      inline def setP(value: Any): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     }
   }
   
   trait JsGraphResponse extends StObject {
     
-    var error: js.UndefOr[js.Any] = js.undefined
+    var error: js.UndefOr[Any] = js.undefined
     
-    var result: js.UndefOr[js.Any] = js.undefined
+    var result: js.UndefOr[Any] = js.undefined
   }
   object JsGraphResponse {
     
@@ -201,11 +201,11 @@ object mod extends Shortcut {
     
     extension [Self <: JsGraphResponse](x: Self) {
       
-      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
       inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     }
@@ -213,26 +213,26 @@ object mod extends Shortcut {
   
   trait TraversalContext extends StObject {
     
-    var colorMap: js.Any
+    var colorMap: Any
     
     var searchStatus: String
     
-    var undiscoveredMap: js.Any
+    var undiscoveredMap: Any
   }
   object TraversalContext {
     
-    inline def apply(colorMap: js.Any, searchStatus: String, undiscoveredMap: js.Any): TraversalContext = {
+    inline def apply(colorMap: Any, searchStatus: String, undiscoveredMap: Any): TraversalContext = {
       val __obj = js.Dynamic.literal(colorMap = colorMap.asInstanceOf[js.Any], searchStatus = searchStatus.asInstanceOf[js.Any], undiscoveredMap = undiscoveredMap.asInstanceOf[js.Any])
       __obj.asInstanceOf[TraversalContext]
     }
     
     extension [Self <: TraversalContext](x: Self) {
       
-      inline def setColorMap(value: js.Any): Self = StObject.set(x, "colorMap", value.asInstanceOf[js.Any])
+      inline def setColorMap(value: Any): Self = StObject.set(x, "colorMap", value.asInstanceOf[js.Any])
       
       inline def setSearchStatus(value: String): Self = StObject.set(x, "searchStatus", value.asInstanceOf[js.Any])
       
-      inline def setUndiscoveredMap(value: js.Any): Self = StObject.set(x, "undiscoveredMap", value.asInstanceOf[js.Any])
+      inline def setUndiscoveredMap(value: Any): Self = StObject.set(x, "undiscoveredMap", value.asInstanceOf[js.Any])
     }
   }
   
@@ -266,7 +266,7 @@ object mod extends Shortcut {
       
       inline def setStartVector(value: String | js.Array[String]): Self = StObject.set(x, "startVector", value.asInstanceOf[js.Any])
       
-      inline def setStartVectorVarargs(value: String*): Self = StObject.set(x, "startVector", js.Array(value :_*))
+      inline def setStartVectorVarargs(value: String*): Self = StObject.set(x, "startVector", js.Array(value*))
       
       inline def setTraverseContext(value: TraversalContext): Self = StObject.set(x, "traverseContext", value.asInstanceOf[js.Any])
     }
@@ -301,7 +301,7 @@ object mod extends Shortcut {
   
   trait TraversalResult extends StObject {
     
-    var error: js.UndefOr[js.Any] = js.undefined
+    var error: js.UndefOr[Any] = js.undefined
     
     var result: js.UndefOr[TraversalContext] = js.undefined
   }
@@ -314,7 +314,7 @@ object mod extends Shortcut {
     
     extension [Self <: TraversalResult](x: Self) {
       
-      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
@@ -326,20 +326,20 @@ object mod extends Shortcut {
   
   trait VertexRequest extends StObject {
     
-    var p: js.Any
+    var p: Any
     
     var u: String
   }
   object VertexRequest {
     
-    inline def apply(p: js.Any, u: String): VertexRequest = {
+    inline def apply(p: Any, u: String): VertexRequest = {
       val __obj = js.Dynamic.literal(p = p.asInstanceOf[js.Any], u = u.asInstanceOf[js.Any])
       __obj.asInstanceOf[VertexRequest]
     }
     
     extension [Self <: VertexRequest](x: Self) {
       
-      inline def setP(value: js.Any): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+      inline def setP(value: Any): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
       
       inline def setU(value: String): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
     }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_tagmanager
 
-Typings are for version 2.0.20201118
+Typings are for version 2.0.20220810
 
 ## Library description:
 TypeScript typings for Tag Manager API v2
@@ -10,10 +10,10 @@ TypeScript typings for Tag Manager API v2
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.tagmanager |
 | Keywords           | - |
-| # releases         | 19 |
-| # dependents       | 1 |
-| # downloads        | 3840 |
-| # stars            | 0 |
+| # releases         | 157 |
+| # dependents       | 0.0 |
+| # downloads        | 3053.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

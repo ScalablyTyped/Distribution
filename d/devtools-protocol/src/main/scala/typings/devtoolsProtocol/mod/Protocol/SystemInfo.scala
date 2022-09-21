@@ -1,5 +1,6 @@
 package typings.devtoolsProtocol.mod.Protocol
 
+import typings.devtoolsProtocol.devtoolsProtocolStrings.unknown_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -91,7 +92,7 @@ object SystemInfo {
     /**
       * An optional dictionary of additional GPU related attributes.
       */
-    var auxAttributes: js.UndefOr[js.Any] = js.undefined
+    var auxAttributes: js.UndefOr[Any] = js.undefined
     
     /**
       * The graphics devices on the system. Element 0 is the primary GPU.
@@ -106,7 +107,7 @@ object SystemInfo {
     /**
       * An optional dictionary of graphics features and their status.
       */
-    var featureStatus: js.UndefOr[js.Any] = js.undefined
+    var featureStatus: js.UndefOr[Any] = js.undefined
     
     /**
       * Supported accelerated image decoding capabilities.
@@ -138,33 +139,33 @@ object SystemInfo {
     
     extension [Self <: GPUInfo](x: Self) {
       
-      inline def setAuxAttributes(value: js.Any): Self = StObject.set(x, "auxAttributes", value.asInstanceOf[js.Any])
+      inline def setAuxAttributes(value: Any): Self = StObject.set(x, "auxAttributes", value.asInstanceOf[js.Any])
       
       inline def setAuxAttributesUndefined: Self = StObject.set(x, "auxAttributes", js.undefined)
       
       inline def setDevices(value: js.Array[GPUDevice]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
       
-      inline def setDevicesVarargs(value: GPUDevice*): Self = StObject.set(x, "devices", js.Array(value :_*))
+      inline def setDevicesVarargs(value: GPUDevice*): Self = StObject.set(x, "devices", js.Array(value*))
       
       inline def setDriverBugWorkarounds(value: js.Array[String]): Self = StObject.set(x, "driverBugWorkarounds", value.asInstanceOf[js.Any])
       
-      inline def setDriverBugWorkaroundsVarargs(value: String*): Self = StObject.set(x, "driverBugWorkarounds", js.Array(value :_*))
+      inline def setDriverBugWorkaroundsVarargs(value: String*): Self = StObject.set(x, "driverBugWorkarounds", js.Array(value*))
       
-      inline def setFeatureStatus(value: js.Any): Self = StObject.set(x, "featureStatus", value.asInstanceOf[js.Any])
+      inline def setFeatureStatus(value: Any): Self = StObject.set(x, "featureStatus", value.asInstanceOf[js.Any])
       
       inline def setFeatureStatusUndefined: Self = StObject.set(x, "featureStatus", js.undefined)
       
       inline def setImageDecoding(value: js.Array[ImageDecodeAcceleratorCapability]): Self = StObject.set(x, "imageDecoding", value.asInstanceOf[js.Any])
       
-      inline def setImageDecodingVarargs(value: ImageDecodeAcceleratorCapability*): Self = StObject.set(x, "imageDecoding", js.Array(value :_*))
+      inline def setImageDecodingVarargs(value: ImageDecodeAcceleratorCapability*): Self = StObject.set(x, "imageDecoding", js.Array(value*))
       
       inline def setVideoDecoding(value: js.Array[VideoDecodeAcceleratorCapability]): Self = StObject.set(x, "videoDecoding", value.asInstanceOf[js.Any])
       
-      inline def setVideoDecodingVarargs(value: VideoDecodeAcceleratorCapability*): Self = StObject.set(x, "videoDecoding", js.Array(value :_*))
+      inline def setVideoDecodingVarargs(value: VideoDecodeAcceleratorCapability*): Self = StObject.set(x, "videoDecoding", js.Array(value*))
       
       inline def setVideoEncoding(value: js.Array[VideoEncodeAcceleratorCapability]): Self = StObject.set(x, "videoEncoding", value.asInstanceOf[js.Any])
       
-      inline def setVideoEncodingVarargs(value: VideoEncodeAcceleratorCapability*): Self = StObject.set(x, "videoEncoding", js.Array(value :_*))
+      inline def setVideoEncodingVarargs(value: VideoEncodeAcceleratorCapability*): Self = StObject.set(x, "videoEncoding", js.Array(value*))
     }
   }
   
@@ -230,7 +231,7 @@ object SystemInfo {
       
       inline def setProcessInfo(value: js.Array[ProcessInfo]): Self = StObject.set(x, "processInfo", value.asInstanceOf[js.Any])
       
-      inline def setProcessInfoVarargs(value: ProcessInfo*): Self = StObject.set(x, "processInfo", js.Array(value :_*))
+      inline def setProcessInfoVarargs(value: ProcessInfo*): Self = StObject.set(x, "processInfo", js.Array(value*))
     }
   }
   
@@ -278,21 +279,21 @@ object SystemInfo {
       
       inline def setSubsamplings(value: js.Array[SubsamplingFormat]): Self = StObject.set(x, "subsamplings", value.asInstanceOf[js.Any])
       
-      inline def setSubsamplingsVarargs(value: SubsamplingFormat*): Self = StObject.set(x, "subsamplings", js.Array(value :_*))
+      inline def setSubsamplingsVarargs(value: SubsamplingFormat*): Self = StObject.set(x, "subsamplings", js.Array(value*))
     }
   }
   
   /* Rewritten from type alias, can be one of: 
     - typings.devtoolsProtocol.devtoolsProtocolStrings.jpeg
     - typings.devtoolsProtocol.devtoolsProtocolStrings.webp
-    - typings.devtoolsProtocol.devtoolsProtocolStrings.unknown
+    - typings.devtoolsProtocol.devtoolsProtocolStrings.unknown_
   */
   trait ImageType extends StObject
   object ImageType {
     
     inline def jpeg: typings.devtoolsProtocol.devtoolsProtocolStrings.jpeg = "jpeg".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.jpeg]
     
-    inline def unknown: typings.devtoolsProtocol.devtoolsProtocolStrings.unknown = "unknown".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.unknown]
+    inline def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
     
     inline def webp: typings.devtoolsProtocol.devtoolsProtocolStrings.webp = "webp".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.webp]
   }

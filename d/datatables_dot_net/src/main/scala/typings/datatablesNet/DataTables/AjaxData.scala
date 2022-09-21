@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AjaxData extends StObject {
   
-  var data: js.Any
+  var data: Any
   
   var draw: js.UndefOr[Double] = js.undefined
   
@@ -18,14 +18,14 @@ trait AjaxData extends StObject {
 }
 object AjaxData {
   
-  inline def apply(data: js.Any): AjaxData = {
+  inline def apply(data: Any): AjaxData = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[AjaxData]
   }
   
   extension [Self <: AjaxData](x: Self) {
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDraw(value: Double): Self = StObject.set(x, "draw", value.asInstanceOf[js.Any])
     

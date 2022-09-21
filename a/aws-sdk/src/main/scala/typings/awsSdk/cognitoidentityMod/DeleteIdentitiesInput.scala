@@ -22,6 +22,6 @@ object DeleteIdentitiesInput {
     
     inline def setIdentityIdsToDelete(value: IdentityIdList): Self = StObject.set(x, "IdentityIdsToDelete", value.asInstanceOf[js.Any])
     
-    inline def setIdentityIdsToDeleteVarargs(value: IdentityId*): Self = StObject.set(x, "IdentityIdsToDelete", js.Array(value :_*))
+    inline def setIdentityIdsToDeleteVarargs(value: IdentityId*): Self = StObject.set(x, "IdentityIdsToDelete", js.Array(value*))
   }
 }

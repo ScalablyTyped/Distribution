@@ -16,7 +16,7 @@ trait TextureRegion extends StObject {
   
   var originalWidth: Double
   
-  var renderObject: js.Any
+  var renderObject: Any
   
   var rotate: Boolean
   
@@ -38,7 +38,7 @@ object TextureRegion {
     offsetY: Double,
     originalHeight: Double,
     originalWidth: Double,
-    renderObject: js.Any,
+    renderObject: Any,
     rotate: Boolean,
     u: Double,
     u2: Double,
@@ -62,7 +62,7 @@ object TextureRegion {
     
     inline def setOriginalWidth(value: Double): Self = StObject.set(x, "originalWidth", value.asInstanceOf[js.Any])
     
-    inline def setRenderObject(value: js.Any): Self = StObject.set(x, "renderObject", value.asInstanceOf[js.Any])
+    inline def setRenderObject(value: Any): Self = StObject.set(x, "renderObject", value.asInstanceOf[js.Any])
     
     inline def setRotate(value: Boolean): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     

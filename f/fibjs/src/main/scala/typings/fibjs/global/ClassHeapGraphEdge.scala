@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Class_HeapGraphEdge")
 @js.native
-class ClassHeapGraphEdge ()
+open class ClassHeapGraphEdge ()
   extends StObject
      with typings.fibjs.ClassHeapGraphEdge

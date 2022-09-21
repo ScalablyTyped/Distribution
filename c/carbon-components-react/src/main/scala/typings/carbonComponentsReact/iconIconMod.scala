@@ -30,7 +30,7 @@ object iconIconMod {
   
   @JSImport("carbon-components-react/lib/components/Icon/Icon", "icons")
   @js.native
-  val icons: js.Any = js.native
+  val icons: Any = js.native
   
   inline def isPrefixed(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPrefixed")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
@@ -42,7 +42,7 @@ object iconIconMod {
     
     var height: js.UndefOr[String] = js.undefined
     
-    var svgData: js.Any
+    var svgData: Any
     
     var viewBox: String
     
@@ -50,7 +50,7 @@ object iconIconMod {
   }
   object IconData {
     
-    inline def apply(svgData: js.Any, viewBox: String): IconData = {
+    inline def apply(svgData: Any, viewBox: String): IconData = {
       val __obj = js.Dynamic.literal(svgData = svgData.asInstanceOf[js.Any], viewBox = viewBox.asInstanceOf[js.Any])
       __obj.asInstanceOf[IconData]
     }
@@ -61,7 +61,7 @@ object iconIconMod {
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      inline def setSvgData(value: js.Any): Self = StObject.set(x, "svgData", value.asInstanceOf[js.Any])
+      inline def setSvgData(value: Any): Self = StObject.set(x, "svgData", value.asInstanceOf[js.Any])
       
       inline def setViewBox(value: String): Self = StObject.set(x, "viewBox", value.asInstanceOf[js.Any])
       

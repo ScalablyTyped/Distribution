@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Far extends StObject {
   
-  var aspectRatio: Double
+  var aspectRatio: js.UndefOr[Double] = js.undefined
   
   var far: js.UndefOr[Double] = js.undefined
   
-  var fov: Double
+  var fov: js.UndefOr[Double] = js.undefined
   
   var near: js.UndefOr[Double] = js.undefined
   
@@ -20,8 +20,8 @@ trait Far extends StObject {
 }
 object Far {
   
-  inline def apply(aspectRatio: Double, fov: Double): Far = {
-    val __obj = js.Dynamic.literal(aspectRatio = aspectRatio.asInstanceOf[js.Any], fov = fov.asInstanceOf[js.Any])
+  inline def apply(): Far = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Far]
   }
   
@@ -29,11 +29,15 @@ object Far {
     
     inline def setAspectRatio(value: Double): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
     
+    inline def setAspectRatioUndefined: Self = StObject.set(x, "aspectRatio", js.undefined)
+    
     inline def setFar(value: Double): Self = StObject.set(x, "far", value.asInstanceOf[js.Any])
     
     inline def setFarUndefined: Self = StObject.set(x, "far", js.undefined)
     
     inline def setFov(value: Double): Self = StObject.set(x, "fov", value.asInstanceOf[js.Any])
+    
+    inline def setFovUndefined: Self = StObject.set(x, "fov", js.undefined)
     
     inline def setNear(value: Double): Self = StObject.set(x, "near", value.asInstanceOf[js.Any])
     

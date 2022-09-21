@@ -8,13 +8,13 @@ trait GlyphOptions extends StObject {
   
   var advanceWidth: js.UndefOr[Double] = js.undefined
   
-  var font: js.UndefOr[Font] = js.undefined
-  
   var index: js.UndefOr[Double] = js.undefined
+  
+  var leftSideBearing: js.UndefOr[Double] = js.undefined
   
   var name: js.UndefOr[String] = js.undefined
   
-  var path: js.UndefOr[Path] = js.undefined
+  var path: js.UndefOr[Path | js.Function0[Path]] = js.undefined
   
   var unicode: js.UndefOr[Double] = js.undefined
   
@@ -41,19 +41,21 @@ object GlyphOptions {
     
     inline def setAdvanceWidthUndefined: Self = StObject.set(x, "advanceWidth", js.undefined)
     
-    inline def setFont(value: Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
-    
-    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
-    
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    
+    inline def setLeftSideBearing(value: Double): Self = StObject.set(x, "leftSideBearing", value.asInstanceOf[js.Any])
+    
+    inline def setLeftSideBearingUndefined: Self = StObject.set(x, "leftSideBearing", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setPath(value: Path): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: Path | js.Function0[Path]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setPathFunction0(value: () => Path): Self = StObject.set(x, "path", js.Any.fromFunction0(value))
     
     inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
@@ -65,7 +67,7 @@ object GlyphOptions {
     
     inline def setUnicodesUndefined: Self = StObject.set(x, "unicodes", js.undefined)
     
-    inline def setUnicodesVarargs(value: Double*): Self = StObject.set(x, "unicodes", js.Array(value :_*))
+    inline def setUnicodesVarargs(value: Double*): Self = StObject.set(x, "unicodes", js.Array(value*))
     
     inline def setXMax(value: Double): Self = StObject.set(x, "xMax", value.asInstanceOf[js.Any])
     

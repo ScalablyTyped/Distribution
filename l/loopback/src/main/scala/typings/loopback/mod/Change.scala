@@ -1,7 +1,6 @@
 package typings.loopback.mod
 
 import typings.loopback.anon.HashAlgorithm
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,8 +24,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("loopback", "Change")
 @js.native
-class Change protected () extends PersistedModel {
-  def this(data: js.Any) = this()
+open class Change protected () extends PersistedModel {
+  def this(data: Any) = this()
   
   var checkpoint: Double = js.native
   
@@ -43,7 +42,7 @@ class Change protected () extends PersistedModel {
     * @param {Error} err
     * @param {string} rev The current revisio
     */
-  def currentRevision(callback: js.Function2[/* err */ Error, /* rev */ String, Unit]): Unit = js.native
+  def currentRevision(callback: js.Function2[/* err */ js.Error, /* rev */ String, Unit]): Unit = js.native
   
   /**
     * Compare two changes.
@@ -80,7 +79,7 @@ class Change protected () extends PersistedModel {
     * @param {Error} err
     * @param {Change} chang
     */
-  def rectify(callback: js.Function2[/* err */ Error, /* change */ this.type, Unit]): Unit = js.native
+  def rectify(callback: js.Function2[/* err */ js.Error, /* change */ this.type, Unit]): Unit = js.native
   
   /** The current model revision. */
   var rev: String = js.native
@@ -161,7 +160,7 @@ object Change {
   inline def findOrCreateChange(
     modelName: String,
     modelId: String,
-    callback: js.Function2[/* err */ Error, /* change */ Change, Unit]
+    callback: js.Function2[/* err */ js.Error, /* change */ Change, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findOrCreateChange")(modelName.asInstanceOf[js.Any], modelId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
@@ -204,8 +203,8 @@ object Change {
   /* static member */
   inline def rectifyModelChanges(
     modelName: String,
-    modelIds: js.Array[js.Any],
-    callback: js.Function2[/* err */ Error, /* changes */ js.Array[js.Any], Unit]
+    modelIds: js.Array[Any],
+    callback: js.Function2[/* err */ js.Error, /* changes */ js.Array[Any], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rectifyModelChanges")(modelName.asInstanceOf[js.Any], modelIds.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
@@ -213,5 +212,5 @@ object Change {
     * @param  {any} inst The data to get the revision string for
     */
   /* static member */
-  inline def revisionForInst(inst: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("revisionForInst")(inst.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def revisionForInst(inst: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("revisionForInst")(inst.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

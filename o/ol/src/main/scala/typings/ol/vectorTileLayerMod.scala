@@ -10,7 +10,7 @@ object vectorTileLayerMod {
   
   @JSImport("ol/renderer/canvas/VectorTileLayer", JSImport.Default)
   @js.native
-  class default protected () extends CanvasVectorTileLayerRenderer {
+  open class default protected () extends CanvasVectorTileLayerRenderer {
     def this(layer: typings.ol.vectorTileMod.default) = this()
   }
   
@@ -27,17 +27,36 @@ object vectorTileLayerMod {
       queue: Boolean
     ): js.UndefOr[Boolean] = js.native
     
+    /**
+      * Render declutter items for this layer
+      */
+    def renderDeclutter(frameState: FrameState): Unit = js.native
+    
     def renderFeature(
       feature: FeatureLike,
       squaredTolerance: Double,
       styles: js.Array[typings.ol.styleStyleMod.default],
-      executorGroup: typings.ol.builderGroupMod.default
+      builderGroup: typings.ol.builderGroupMod.default
+    ): Boolean = js.native
+    def renderFeature(
+      feature: FeatureLike,
+      squaredTolerance: Double,
+      styles: js.Array[typings.ol.styleStyleMod.default],
+      builderGroup: typings.ol.builderGroupMod.default,
+      opt_declutterBuilderGroup: typings.ol.builderGroupMod.default
     ): Boolean = js.native
     def renderFeature(
       feature: FeatureLike,
       squaredTolerance: Double,
       styles: typings.ol.styleStyleMod.default,
-      executorGroup: typings.ol.builderGroupMod.default
+      builderGroup: typings.ol.builderGroupMod.default
+    ): Boolean = js.native
+    def renderFeature(
+      feature: FeatureLike,
+      squaredTolerance: Double,
+      styles: typings.ol.styleStyleMod.default,
+      builderGroup: typings.ol.builderGroupMod.default,
+      opt_declutterBuilderGroup: typings.ol.builderGroupMod.default
     ): Boolean = js.native
     
     def renderQueuedTileImages_(hifi: Boolean, frameState: FrameState): Unit = js.native

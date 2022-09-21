@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BootstrapClientFloatingActionButtonContextChangingEventArgs")
 @js.native
-class BootstrapClientFloatingActionButtonContextChangingEventArgs protected ()
+open class BootstrapClientFloatingActionButtonContextChangingEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.BootstrapClientFloatingActionButtonContextChangingEventArgs {
   def this(action: typings.devexpressWeb.BootstrapClientFABAction) = this()

@@ -10,10 +10,10 @@ jQuery plugin to make page scroll looks smooth by animating it.
 | ------------------ | :-------------: |
 | Full name          | jquery-animate-scroll |
 | Keywords           | jquery-plugin, scroll, animation |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 2933 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 121.0 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/risan/jquery-animate-scroll)

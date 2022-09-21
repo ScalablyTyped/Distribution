@@ -48,7 +48,7 @@ object DetectedApp {
     
     inline def setManagedDevicesUndefined: Self = StObject.set(x, "managedDevices", js.undefined)
     
-    inline def setManagedDevicesVarargs(value: ManagedDevice*): Self = StObject.set(x, "managedDevices", js.Array(value :_*))
+    inline def setManagedDevicesVarargs(value: ManagedDevice*): Self = StObject.set(x, "managedDevices", js.Array(value*))
     
     inline def setSizeInByte(value: Double): Self = StObject.set(x, "sizeInByte", value.asInstanceOf[js.Any])
     

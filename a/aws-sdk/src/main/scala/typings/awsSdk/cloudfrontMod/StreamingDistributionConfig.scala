@@ -42,7 +42,7 @@ trait StreamingDistributionConfig extends StObject {
   var S3Origin: typings.awsSdk.cloudfrontMod.S3Origin
   
   /**
-    * A complex type that specifies any AWS accounts that you want to permit to create signed URLs for private content. If you want the distribution to use signed URLs, include this element; if you want the distribution to use public URLs, remove this element. For more information, see Serving Private Content through CloudFront in the Amazon CloudFront Developer Guide. 
+    * A complex type that specifies any Amazon Web Services accounts that you want to permit to create signed URLs for private content. If you want the distribution to use signed URLs, include this element; if you want the distribution to use public URLs, remove this element. For more information, see Serving Private Content through CloudFront in the Amazon CloudFront Developer Guide. 
     */
   var TrustedSigners: typings.awsSdk.cloudfrontMod.TrustedSigners
 }

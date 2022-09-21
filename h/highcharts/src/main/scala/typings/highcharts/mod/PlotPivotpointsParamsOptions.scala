@@ -13,6 +13,8 @@ trait PlotPivotpointsParamsOptions extends StObject {
     */
   var algorithm: js.UndefOr[String] = js.undefined
   
+  var index: js.UndefOr[String] = js.undefined
+  
   /**
     * (Highstock) The base period for indicator calculations. This is the
     * number of data points which are taken into account for the indicator
@@ -32,6 +34,10 @@ object PlotPivotpointsParamsOptions {
     inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
     inline def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
+    
+    inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     inline def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     

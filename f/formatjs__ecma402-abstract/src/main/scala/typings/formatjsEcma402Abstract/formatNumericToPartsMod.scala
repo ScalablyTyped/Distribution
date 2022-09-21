@@ -1,6 +1,6 @@
 package typings.formatjsEcma402Abstract
 
-import typings.formatjsEcma402Abstract.anon.`1`
+import typings.formatjsEcma402Abstract.anon.`0`
 import typings.formatjsEcma402Abstract.numberMod.NumberFormatPart
 import typings.std.Intl.NumberFormat
 import org.scalablytyped.runtime.StObject
@@ -13,5 +13,5 @@ object formatNumericToPartsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def FormatNumericToParts(nf: NumberFormat, x: Double, implDetails: `1`): js.Array[NumberFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("FormatNumericToParts")(nf.asInstanceOf[js.Any], x.asInstanceOf[js.Any], implDetails.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFormatPart]]
+  inline def FormatNumericToParts(nf: NumberFormat, x: Double, implDetails: `0`): js.Array[NumberFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("FormatNumericToParts")(nf.asInstanceOf[js.Any], x.asInstanceOf[js.Any], implDetails.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFormatPart]]
 }

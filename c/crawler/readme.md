@@ -10,10 +10,10 @@ Crawler is a web spider written with Nodejs. It gives you the full power of jQue
 | ------------------ | :-------------: |
 | Full name          | crawler |
 | Keywords           | dom, javascript, crawling, spider, scraper, scraping, jquery, crawler, nodejs |
-| # releases         | 4 |
-| # dependents       | 84 |
-| # downloads        | 490235 |
-| # stars            | 79 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 39269.0 |
+| # stars            | 6208.0 |
 
 ## Links
 - [Homepage](https://github.com/bda-research/node-crawler)

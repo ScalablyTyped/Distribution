@@ -12,10 +12,15 @@ trait S3EncryptionSettings extends StObject {
   var EncryptionType: js.UndefOr[S3ServerSideEncryptionType] = js.undefined
   
   /**
+    * Optionally, specify the encryption context that you want to use alongside your KMS key. AWS KMS uses this encryption context as additional authenticated data (AAD) to support authenticated encryption. This value must be a base64-encoded UTF-8 string holding JSON which represents a string-string map. To use this setting, you must also set Server-side encryption (S3ServerSideEncryptionType) to AWS KMS (SERVER_SIDE_ENCRYPTION_KMS). For more information about encryption context, see: https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#encrypt_context.
+    */
+  var KmsEncryptionContext: js.UndefOr[stringPatternAZaZ0902] = js.undefined
+  
+  /**
     * Optionally, specify the customer master key (CMK) that you want to use to encrypt the data key that AWS uses to encrypt your output content. Enter the Amazon Resource Name (ARN) of the CMK. To use this setting, you must also set Server-side encryption (S3ServerSideEncryptionType) to AWS KMS (SERVER_SIDE_ENCRYPTION_KMS). If you set Server-side encryption to AWS KMS but don't specify a CMK here, AWS uses the AWS managed CMK associated with Amazon S3.
     */
   var KmsKeyArn: js.UndefOr[
-    stringPatternArnAwsUsGovCnKmsAZ26EastWestCentralNorthSouthEastWest1912D12KeyAFAF098AFAF094AFAF094AFAF094AFAF0912
+    stringPatternArnAwsUsGovCnKmsAZ26EastWestCentralNorthSouthEastWest1912D12KeyAFAF098AFAF094AFAF094AFAF094AFAF0912MrkAFAF0932
   ] = js.undefined
 }
 object S3EncryptionSettings {
@@ -31,8 +36,12 @@ object S3EncryptionSettings {
     
     inline def setEncryptionTypeUndefined: Self = StObject.set(x, "EncryptionType", js.undefined)
     
+    inline def setKmsEncryptionContext(value: stringPatternAZaZ0902): Self = StObject.set(x, "KmsEncryptionContext", value.asInstanceOf[js.Any])
+    
+    inline def setKmsEncryptionContextUndefined: Self = StObject.set(x, "KmsEncryptionContext", js.undefined)
+    
     inline def setKmsKeyArn(
-      value: stringPatternArnAwsUsGovCnKmsAZ26EastWestCentralNorthSouthEastWest1912D12KeyAFAF098AFAF094AFAF094AFAF094AFAF0912
+      value: stringPatternArnAwsUsGovCnKmsAZ26EastWestCentralNorthSouthEastWest1912D12KeyAFAF098AFAF094AFAF094AFAF094AFAF0912MrkAFAF0932
     ): Self = StObject.set(x, "KmsKeyArn", value.asInstanceOf[js.Any])
     
     inline def setKmsKeyArnUndefined: Self = StObject.set(x, "KmsKeyArn", js.undefined)

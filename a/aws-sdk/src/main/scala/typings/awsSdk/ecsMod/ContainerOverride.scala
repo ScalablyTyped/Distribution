@@ -59,7 +59,7 @@ object ContainerOverride {
     
     inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
     
-    inline def setCommandVarargs(value: String*): Self = StObject.set(x, "command", js.Array(value :_*))
+    inline def setCommandVarargs(value: String*): Self = StObject.set(x, "command", js.Array(value*))
     
     inline def setCpu(value: BoxedInteger): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
     
@@ -71,11 +71,11 @@ object ContainerOverride {
     
     inline def setEnvironmentFilesUndefined: Self = StObject.set(x, "environmentFiles", js.undefined)
     
-    inline def setEnvironmentFilesVarargs(value: EnvironmentFile*): Self = StObject.set(x, "environmentFiles", js.Array(value :_*))
+    inline def setEnvironmentFilesVarargs(value: EnvironmentFile*): Self = StObject.set(x, "environmentFiles", js.Array(value*))
     
     inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
-    inline def setEnvironmentVarargs(value: KeyValuePair*): Self = StObject.set(x, "environment", js.Array(value :_*))
+    inline def setEnvironmentVarargs(value: KeyValuePair*): Self = StObject.set(x, "environment", js.Array(value*))
     
     inline def setMemory(value: BoxedInteger): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
     
@@ -93,6 +93,6 @@ object ContainerOverride {
     
     inline def setResourceRequirementsUndefined: Self = StObject.set(x, "resourceRequirements", js.undefined)
     
-    inline def setResourceRequirementsVarargs(value: ResourceRequirement*): Self = StObject.set(x, "resourceRequirements", js.Array(value :_*))
+    inline def setResourceRequirementsVarargs(value: ResourceRequirement*): Self = StObject.set(x, "resourceRequirements", js.Array(value*))
   }
 }

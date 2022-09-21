@@ -1,26 +1,16 @@
 package typings.nodeMailjet.mod.SMS
 
+import typings.nodeMailjet.mod.ConfigOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait Client extends StObject {
   
-  def get(action: String): GetResource
+  def get(action: String): GetResource = js.native
+  def get(action: String, options: ConfigOptions): GetResource = js.native
   
-  def post(action: String): PostResource
-}
-object Client {
-  
-  inline def apply(get: String => GetResource, post: String => PostResource): Client = {
-    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), post = js.Any.fromFunction1(post))
-    __obj.asInstanceOf[Client]
-  }
-  
-  extension [Self <: Client](x: Self) {
-    
-    inline def setGet(value: String => GetResource): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
-    
-    inline def setPost(value: String => PostResource): Self = StObject.set(x, "post", js.Any.fromFunction1(value))
-  }
+  def post(action: String): PostResource = js.native
+  def post(action: String, options: ConfigOptions): PostResource = js.native
 }

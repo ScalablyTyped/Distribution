@@ -8,5 +8,5 @@ object putEventsMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/PutEvents", "PutEvents")
   @js.native
-  val PutEvents: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val PutEvents: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

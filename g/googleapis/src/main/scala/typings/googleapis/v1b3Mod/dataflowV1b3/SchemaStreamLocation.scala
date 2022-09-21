@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Describes a stream of data, either as input to be processed or as output of
-  * a streaming Dataflow job.
-  */
 trait SchemaStreamLocation extends StObject {
   
   /**
@@ -26,8 +22,7 @@ trait SchemaStreamLocation extends StObject {
   var sideInputLocation: js.UndefOr[SchemaStreamingSideInputLocation] = js.undefined
   
   /**
-    * The stream is part of another computation within the current streaming
-    * Dataflow job.
+    * The stream is part of another computation within the current streaming Dataflow job.
     */
   var streamingStageLocation: js.UndefOr[SchemaStreamingStageLocation] = js.undefined
 }

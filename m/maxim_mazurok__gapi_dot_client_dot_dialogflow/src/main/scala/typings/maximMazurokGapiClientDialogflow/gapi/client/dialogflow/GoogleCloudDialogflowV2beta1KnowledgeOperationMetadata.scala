@@ -6,6 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GoogleCloudDialogflowV2beta1KnowledgeOperationMetadata extends StObject {
   
+  /** Metadata for the Export Data Operation such as the destination of export. */
+  var exportOperationMetadata: js.UndefOr[GoogleCloudDialogflowV2beta1ExportOperationMetadata] = js.undefined
+  
+  /** The name of the knowledge base interacted with during the operation. */
+  var knowledgeBase: js.UndefOr[String] = js.undefined
+  
   /** Required. Output only. The current state of this operation. */
   var state: js.UndefOr[String] = js.undefined
 }
@@ -17,6 +23,14 @@ object GoogleCloudDialogflowV2beta1KnowledgeOperationMetadata {
   }
   
   extension [Self <: GoogleCloudDialogflowV2beta1KnowledgeOperationMetadata](x: Self) {
+    
+    inline def setExportOperationMetadata(value: GoogleCloudDialogflowV2beta1ExportOperationMetadata): Self = StObject.set(x, "exportOperationMetadata", value.asInstanceOf[js.Any])
+    
+    inline def setExportOperationMetadataUndefined: Self = StObject.set(x, "exportOperationMetadata", js.undefined)
+    
+    inline def setKnowledgeBase(value: String): Self = StObject.set(x, "knowledgeBase", value.asInstanceOf[js.Any])
+    
+    inline def setKnowledgeBaseUndefined: Self = StObject.set(x, "knowledgeBase", js.undefined)
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

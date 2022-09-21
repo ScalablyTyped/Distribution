@@ -21,6 +21,6 @@ object NearestRoadsResponse {
     
     inline def setSnappedPoints(value: js.Array[Location]): Self = StObject.set(x, "snappedPoints", value.asInstanceOf[js.Any])
     
-    inline def setSnappedPointsVarargs(value: Location*): Self = StObject.set(x, "snappedPoints", js.Array(value :_*))
+    inline def setSnappedPointsVarargs(value: Location*): Self = StObject.set(x, "snappedPoints", js.Array(value*))
   }
 }

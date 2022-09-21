@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("THREE.WebGLColorBuffer")
 @js.native
-class WebGLColorBuffer ()
+open class WebGLColorBuffer ()
   extends typings.three.mod.WebGLColorBuffer

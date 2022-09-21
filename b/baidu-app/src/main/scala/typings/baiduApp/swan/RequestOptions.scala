@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RequestOptions
   extends StObject
-     with BaseOptions[DataResponse, js.Any] {
+     with BaseOptions[DataResponse, Any] {
   
   /** 请求的参数 */
   var data: js.UndefOr[String | js.Object] = js.undefined

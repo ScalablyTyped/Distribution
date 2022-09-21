@@ -24,5 +24,5 @@ Instantiable0[Basemap]
     */
   def fromId(id: String): Basemap = js.native
   
-  def fromJSON(json: js.Any): Basemap = js.native
+  def fromJSON(json: Any): Basemap = js.native
 }

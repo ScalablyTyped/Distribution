@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.Color3Gradient")
 @js.native
-class Color3Gradient protected ()
+open class Color3Gradient protected ()
   extends StObject
      with typings.babylonjs.BABYLON.Color3Gradient {
   /**

@@ -81,7 +81,7 @@ trait IContentResource extends StObject {
     * @returns {Promise} resourcePromise object.
     *
     */
-  def copy(args: js.Any*): IPromise[IResourcePromise] = js.native
+  def copy(args: Any*): IPromise[IResourcePromise] = js.native
   
   /**
     * @ngdoc method
@@ -281,7 +281,7 @@ trait IContentResource extends StObject {
     * @returns {Promise} resourcePromise object.
     *
     */
-  def move(args: js.Any*): IPromise[IResourcePromise] = js.native
+  def move(args: Any*): IPromise[IResourcePromise] = js.native
   
   /**
     * @ngdoc method
@@ -311,7 +311,7 @@ trait IContentResource extends StObject {
     * @returns {Promise} resourcePromise object containing the saved content item.
     *
     */
-  def publish(content: IContentResource, isNew: Boolean, files: js.Array[js.Any]): IPromise[IResourcePromise] = js.native
+  def publish(content: IContentResource, isNew: Boolean, files: js.Array[Any]): IPromise[IResourcePromise] = js.native
   
   /**
     * @ngdoc method
@@ -363,7 +363,7 @@ trait IContentResource extends StObject {
     * @returns {Promise} resourcePromise object containing the saved content item.
     *
     */
-  def save(content: IContentResource, isNew: Boolean, files: js.Array[js.Any]): IPromise[IResourcePromise] = js.native
+  def save(content: IContentResource, isNew: Boolean, files: js.Array[Any]): IPromise[IResourcePromise] = js.native
   
   /**
     * @ngdoc method
@@ -391,7 +391,7 @@ trait IContentResource extends StObject {
     * @returns {Promise} resourcePromise object containing the saved content item.
     *
     */
-  def sendToPublish(content: IContentResource, isNew: Boolean, files: js.Array[js.Any]): IPromise[IResourcePromise] = js.native
+  def sendToPublish(content: IContentResource, isNew: Boolean, files: js.Array[Any]): IPromise[IResourcePromise] = js.native
   
   /**
     * @ngdoc method
@@ -415,7 +415,7 @@ trait IContentResource extends StObject {
     * @returns {Promise} resourcePromise object.
     *
     */
-  def sort(args: js.Any*): IPromise[IResourcePromise] = js.native
+  def sort(args: Any*): IPromise[IResourcePromise] = js.native
   
   /**
     * @ngdoc method

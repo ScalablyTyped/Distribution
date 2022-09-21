@@ -34,7 +34,7 @@ object DescribeActionTargetsRequest {
     
     inline def setActionTargetArnsUndefined: Self = StObject.set(x, "ActionTargetArns", js.undefined)
     
-    inline def setActionTargetArnsVarargs(value: NonEmptyString*): Self = StObject.set(x, "ActionTargetArns", js.Array(value :_*))
+    inline def setActionTargetArnsVarargs(value: NonEmptyString*): Self = StObject.set(x, "ActionTargetArns", js.Array(value*))
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

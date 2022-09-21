@@ -10,10 +10,10 @@ business rules engine
 | ------------------ | :-------------: |
 | Full name          | business-rules-engine |
 | Keywords           | business rules, validation, form |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 1563 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 104.66666666666667 |
+| # stars            | 92.0 |
 
 ## Links
 - [Homepage](https://github.com/rsamec/business-rules-engine)

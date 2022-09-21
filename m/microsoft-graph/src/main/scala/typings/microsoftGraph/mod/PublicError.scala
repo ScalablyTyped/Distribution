@@ -6,14 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PublicError extends StObject {
   
+  // Represents the error code.
   var code: js.UndefOr[NullableOption[String]] = js.undefined
   
+  // Details of the error.
   var details: js.UndefOr[NullableOption[js.Array[PublicErrorDetail]]] = js.undefined
   
+  // Details of the inner error.
   var innerError: js.UndefOr[NullableOption[PublicInnerError]] = js.undefined
   
+  // A non-localized message for the developer.
   var message: js.UndefOr[NullableOption[String]] = js.undefined
   
+  // The target of the error.
   var target: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object PublicError {
@@ -37,7 +42,7 @@ object PublicError {
     
     inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
-    inline def setDetailsVarargs(value: PublicErrorDetail*): Self = StObject.set(x, "details", js.Array(value :_*))
+    inline def setDetailsVarargs(value: PublicErrorDetail*): Self = StObject.set(x, "details", js.Array(value*))
     
     inline def setInnerError(value: NullableOption[PublicInnerError]): Self = StObject.set(x, "innerError", value.asInstanceOf[js.Any])
     

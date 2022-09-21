@@ -11,10 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("react-navigation", "SafeAreaView")
 @js.native
-class SafeAreaView protected ()
-  extends Component[SafeAreaViewProps, ComponentState, js.Any] {
+open class SafeAreaView protected () extends Component[SafeAreaViewProps, ComponentState, Any] {
   def this(props: SafeAreaViewProps) = this()
-  def this(props: SafeAreaViewProps, context: js.Any) = this()
+  def this(props: SafeAreaViewProps, context: Any) = this()
 }
 object SafeAreaView {
   

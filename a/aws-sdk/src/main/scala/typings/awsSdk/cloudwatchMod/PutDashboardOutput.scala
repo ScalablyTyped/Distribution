@@ -24,6 +24,6 @@ object PutDashboardOutput {
     
     inline def setDashboardValidationMessagesUndefined: Self = StObject.set(x, "DashboardValidationMessages", js.undefined)
     
-    inline def setDashboardValidationMessagesVarargs(value: DashboardValidationMessage*): Self = StObject.set(x, "DashboardValidationMessages", js.Array(value :_*))
+    inline def setDashboardValidationMessagesVarargs(value: DashboardValidationMessage*): Self = StObject.set(x, "DashboardValidationMessages", js.Array(value*))
   }
 }

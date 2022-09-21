@@ -1,7 +1,7 @@
 
 # Scala.js typings for refractor
 
-Typings are for version 3.0
+Typings are for version 4.8.0
 
 ## Library description:
 Lightweight, robust, elegant virtual syntax highlighting using Prism
@@ -10,10 +10,10 @@ Lightweight, robust, elegant virtual syntax highlighting using Prism
 | ------------------ | :-------------: |
 | Full name          | refractor |
 | Keywords           | syntax, code, ast, virtual, dom, highlight, highlighting, prism |
-| # releases         | 9 |
-| # dependents       | 78 |
-| # downloads        | 116158768 |
-| # stars            | 0 |
+| # releases         | 17 |
+| # dependents       | 0.0 |
+| # downloads        | 1.8658025666666668E7 |
+| # stars            | 485.0 |
 
 ## Links
 - [Homepage](https://github.com/wooorm/refractor#readme)
@@ -24,7 +24,7 @@ Lightweight, robust, elegant virtual syntax highlighting using Prism
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

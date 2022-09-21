@@ -11,8 +11,8 @@ object eventBridgeStoreMod {
   
   @JSImport("matrix-appservice-bridge/lib/components/event-bridge-store", "EventBridgeStore")
   @js.native
-  class EventBridgeStore protected () extends BridgeStore {
-    def this(db: ^[js.Any]) = this()
+  open class EventBridgeStore protected () extends BridgeStore {
+    def this(db: ^[Any]) = this()
     
     /**
       * Get an existing event based on the provided matrix IDs.
@@ -54,6 +54,6 @@ object eventBridgeStoreMod {
       * Insert an event, clobbering based on the ID of the StoredEvent.
       * @param event
       */
-    def upsertEvent(event: StoredEvent): js.Promise[Double] = js.native
+    def upsertEvent(event: StoredEvent): js.Promise[Unit] = js.native
   }
 }

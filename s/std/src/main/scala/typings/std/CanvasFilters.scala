@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CanvasFilters extends StObject {
   
+  /* standard dom */
   var filter: java.lang.String
 }
 object CanvasFilters {

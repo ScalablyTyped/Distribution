@@ -10,14 +10,11 @@ Polyfill for the Encoding Living Standard's API.
 | Full name          | text-encoding |
 | Keywords           | encoding, decoding, living standard |
 | # releases         | 0 |
-| # dependents       | 388 |
-| # downloads        | 25892340 |
-| # stars            | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 2921829.6666666665 |
+| # stars            | 670.0 |
 
 ## Links
-- [Homepage](https://github.com/inexorabletash/text-encoding)
-- [Bugs](https://github.com/inexorabletash/text-encoding/issues)
-- [Repository](https://github.com/inexorabletash/text-encoding)
 - [Npm](https://www.npmjs.com/package/text-encoding)
     
 

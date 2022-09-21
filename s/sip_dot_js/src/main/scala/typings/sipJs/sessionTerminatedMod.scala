@@ -9,5 +9,5 @@ object sessionTerminatedMod {
   
   @JSImport("sip.js/lib/api/exceptions/session-terminated", "SessionTerminatedError")
   @js.native
-  class SessionTerminatedError () extends Exception
+  open class SessionTerminatedError () extends Exception
 }

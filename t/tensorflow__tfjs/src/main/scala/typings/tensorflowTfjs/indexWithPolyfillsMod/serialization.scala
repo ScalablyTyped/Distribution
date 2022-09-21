@@ -37,7 +37,7 @@ object serialization {
   
   @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "serialization.SerializationMap")
   @js.native
-  /* private */ class SerializationMap ()
+  /* private */ open class SerializationMap ()
     extends typings.tensorflowTfjs.mod.serialization.SerializationMap
   /* static members */
   object SerializationMap {
@@ -53,8 +53,8 @@ object serialization {
     
     @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "serialization.SerializationMap.instance")
     @js.native
-    def instance: js.Any = js.native
-    inline def instance_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("instance")(x.asInstanceOf[js.Any])
+    def instance: Any = js.native
+    inline def instance_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("instance")(x.asInstanceOf[js.Any])
     
     /**
       * Registers the class as serializable.

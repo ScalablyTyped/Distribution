@@ -9,7 +9,7 @@ trait SessionContextAttributes extends StObject {
   /**
     * The date and time, in UTC and ISO 8601 format, when the credentials were issued.
     */
-  var creationDate: js.UndefOr[timestampIso8601] = js.undefined
+  var creationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Specifies whether the credentials were authenticated with a multi-factor authentication (MFA) device.
@@ -25,7 +25,7 @@ object SessionContextAttributes {
   
   extension [Self <: SessionContextAttributes](x: Self) {
     
-    inline def setCreationDate(value: timestampIso8601): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     

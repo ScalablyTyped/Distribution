@@ -10,4 +10,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.tuyaPanelKit.themeMod.LinearGradientBackground
   - typings.tuyaPanelKit.themeMod.RadialGradientBackground
 */
-type BackgroundProps = typings.tuyaPanelKit.themeMod._BackgroundProps | java.lang.String
+type BackgroundProps = _BackgroundProps | String

@@ -23,10 +23,10 @@ object Qk {
     
     inline def setQk(value: js.Array[ISourceKeyRecord]): Self = StObject.set(x, "qk", value.asInstanceOf[js.Any])
     
-    inline def setQkVarargs(value: ISourceKeyRecord*): Self = StObject.set(x, "qk", js.Array(value :_*))
+    inline def setQkVarargs(value: ISourceKeyRecord*): Self = StObject.set(x, "qk", js.Array(value*))
     
     inline def setQtr(value: js.Array[ITableRecord]): Self = StObject.set(x, "qtr", value.asInstanceOf[js.Any])
     
-    inline def setQtrVarargs(value: ITableRecord*): Self = StObject.set(x, "qtr", js.Array(value :_*))
+    inline def setQtrVarargs(value: ITableRecord*): Self = StObject.set(x, "qtr", js.Array(value*))
   }
 }

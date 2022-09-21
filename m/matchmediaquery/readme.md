@@ -10,10 +10,10 @@ Media queries for your client and server
 | ------------------ | :-------------: |
 | Full name          | matchmediaquery |
 | Keywords           | media, query, matchmedia, isomorphic, mq, responsive |
-| # releases         | 2 |
-| # dependents       | 5 |
-| # downloads        | 11509719 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2079096.0 |
+| # stars            | 13.0 |
 
 ## Links
 - [Homepage](https://github.com/ncochard/matchmediaquery#readme)

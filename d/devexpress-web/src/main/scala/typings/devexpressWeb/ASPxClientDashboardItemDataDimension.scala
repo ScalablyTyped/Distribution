@@ -23,7 +23,7 @@ trait ASPxClientDashboardItemDataDimension extends StObject {
     * Formats the specified value using format settings of the current dimension. A String that represents the formatted value.
     * @param value A value to be formatted.
     */
-  def Format(value: js.Any): String
+  def Format(value: Any): String
   
   /**
     * Gets the dimension identifier.
@@ -45,7 +45,7 @@ object ASPxClientDashboardItemDataDimension {
   inline def apply(
     DataMember: String,
     DateTimeGroupInterval: String,
-    Format: js.Any => String,
+    Format: Any => String,
     Id: String,
     Name: String,
     TextGroupInterval: String
@@ -60,7 +60,7 @@ object ASPxClientDashboardItemDataDimension {
     
     inline def setDateTimeGroupInterval(value: String): Self = StObject.set(x, "DateTimeGroupInterval", value.asInstanceOf[js.Any])
     
-    inline def setFormat(value: js.Any => String): Self = StObject.set(x, "Format", js.Any.fromFunction1(value))
+    inline def setFormat(value: Any => String): Self = StObject.set(x, "Format", js.Any.fromFunction1(value))
     
     inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

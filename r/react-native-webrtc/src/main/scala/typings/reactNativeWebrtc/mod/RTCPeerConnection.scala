@@ -1,6 +1,5 @@
 package typings.reactNativeWebrtc.mod
 
-import typings.std.Error
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-webrtc", "RTCPeerConnection")
 @js.native
-class RTCPeerConnection protected () extends StObject {
+open class RTCPeerConnection protected () extends StObject {
   def this(configuration: RTCPeerConnectionConfiguration) = this()
   
-  /* private */ var _dataChannelIds: js.Any = js.native
+  /* private */ var _dataChannelIds: Any = js.native
   
   /* private */ def _getTrack(streamReactTag: String, trackId: String): MediaStreamTrack = js.native
   
@@ -23,7 +22,7 @@ class RTCPeerConnection protected () extends StObject {
   
   /* private */ var _remoteStreams: js.Array[MediaStream] = js.native
   
-  /* private */ var _subscriptions: js.Array[js.Any] = js.native
+  /* private */ var _subscriptions: js.Array[Any] = js.native
   
   /* private */ def _unregisterEvents(): Unit = js.native
   
@@ -39,7 +38,7 @@ class RTCPeerConnection protected () extends StObject {
   def createAnswer(options: RTCAnswerOptions): js.Promise[RTCSessionDescriptionType] = js.native
   
   def createDataChannel(label: String): Unit = js.native
-  def createDataChannel(label: String, dataChannelDict: js.Any): Unit = js.native
+  def createDataChannel(label: String, dataChannelDict: Any): Unit = js.native
   
   def createOffer(): js.Promise[RTCSessionDescriptionType] = js.native
   def createOffer(options: RTCOfferOptions): js.Promise[RTCSessionDescriptionType] = js.native
@@ -48,8 +47,8 @@ class RTCPeerConnection protected () extends StObject {
   
   def getRemoteStreams(): js.Array[MediaStream] = js.native
   
-  def getStats(): js.Promise[js.Any] = js.native
-  def getStats(selector: MediaStreamTrack): js.Promise[js.Any] = js.native
+  def getStats(): js.Promise[Any] = js.native
+  def getStats(selector: MediaStreamTrack): js.Promise[Any] = js.native
   
   var localDescription: RTCSessionDescriptionType = js.native
   
@@ -59,7 +58,7 @@ class RTCPeerConnection protected () extends StObject {
   
   def onicecandidate(event: EventOnCandidate): js.UndefOr[Unit] = js.native
   
-  def onicecandidateerror(error: Error): js.UndefOr[Unit] = js.native
+  def onicecandidateerror(error: js.Error): js.UndefOr[Unit] = js.native
   
   def oniceconnectionstatechange(event: EventOnConnectionStateChange): js.UndefOr[Unit] = js.native
   

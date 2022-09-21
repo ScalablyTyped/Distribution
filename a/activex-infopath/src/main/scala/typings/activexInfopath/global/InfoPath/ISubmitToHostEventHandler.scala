@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.ISubmitToHostEventHandler")
 @js.native
-/* private */ class ISubmitToHostEventHandler ()
+/* private */ open class ISubmitToHostEventHandler ()
   extends StObject
      with typings.activexInfopath.InfoPath.ISubmitToHostEventHandler {
   
@@ -15,5 +15,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var InfoPathDotISubmitToHostEventHandler_typekey: typings.activexInfopath.InfoPath.ISubmitToHostEventHandler = js.native
   
   /* CompleteClass */
-  override def SubmitToHostEventHandler(punkSender: js.Any, bstrAdapterName: String, pbstrErrorMessage: String): Double = js.native
+  override def SubmitToHostEventHandler(punkSender: Any, bstrAdapterName: String, pbstrErrorMessage: String): Double = js.native
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "MeshExploder")
 @js.native
-class MeshExploder protected ()
+open class MeshExploder protected ()
   extends typings.babylonjs.miscIndexMod.MeshExploder {
   /**
     * Explodes meshes from a center mesh.

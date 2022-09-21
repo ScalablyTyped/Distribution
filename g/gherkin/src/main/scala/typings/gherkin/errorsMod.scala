@@ -11,19 +11,21 @@ object errorsMod {
   
   @JSImport("gherkin/dist/src/Errors", "AstBuilderException")
   @js.native
-  class AstBuilderException ()
+  open class AstBuilderException ()
     extends StObject
        with GherkinException {
     
     /* CompleteClass */
-    var errors: js.Array[Error] = js.native
+    var errors: js.Array[js.Error] = js.native
     
     /* CompleteClass */
     var location: ILocation = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
@@ -39,19 +41,21 @@ object errorsMod {
   
   @JSImport("gherkin/dist/src/Errors", "CompositeParserException")
   @js.native
-  class CompositeParserException ()
+  open class CompositeParserException ()
     extends StObject
        with GherkinException {
     
     /* CompleteClass */
-    var errors: js.Array[Error] = js.native
+    var errors: js.Array[js.Error] = js.native
     
     /* CompleteClass */
     var location: ILocation = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
@@ -62,24 +66,26 @@ object errorsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def create(errors: js.Array[Error]): CompositeParserException = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(errors.asInstanceOf[js.Any]).asInstanceOf[CompositeParserException]
+    inline def create(errors: js.Array[js.Error]): CompositeParserException = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(errors.asInstanceOf[js.Any]).asInstanceOf[CompositeParserException]
   }
   
   @JSImport("gherkin/dist/src/Errors", "NoSuchLanguageException")
   @js.native
-  class NoSuchLanguageException ()
+  open class NoSuchLanguageException ()
     extends StObject
        with GherkinException {
     
     /* CompleteClass */
-    var errors: js.Array[Error] = js.native
+    var errors: js.Array[js.Error] = js.native
     
     /* CompleteClass */
     var location: ILocation = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
@@ -95,38 +101,42 @@ object errorsMod {
   
   @JSImport("gherkin/dist/src/Errors", "ParserException")
   @js.native
-  class ParserException ()
+  open class ParserException ()
     extends StObject
        with GherkinException {
     
     /* CompleteClass */
-    var errors: js.Array[Error] = js.native
+    var errors: js.Array[js.Error] = js.native
     
     /* CompleteClass */
     var location: ILocation = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("gherkin/dist/src/Errors", "UnexpectedEOFException")
   @js.native
-  class UnexpectedEOFException ()
+  open class UnexpectedEOFException ()
     extends StObject
        with GherkinException {
     
     /* CompleteClass */
-    var errors: js.Array[Error] = js.native
+    var errors: js.Array[js.Error] = js.native
     
     /* CompleteClass */
     var location: ILocation = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
@@ -142,19 +152,21 @@ object errorsMod {
   
   @JSImport("gherkin/dist/src/Errors", "UnexpectedTokenException")
   @js.native
-  class UnexpectedTokenException ()
+  open class UnexpectedTokenException ()
     extends StObject
        with GherkinException {
     
     /* CompleteClass */
-    var errors: js.Array[Error] = js.native
+    var errors: js.Array[js.Error] = js.native
     
     /* CompleteClass */
     var location: ILocation = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
@@ -172,22 +184,22 @@ object errorsMod {
     extends StObject
        with Error {
     
-    var errors: js.Array[Error]
+    var errors: js.Array[js.Error]
     
     var location: ILocation
   }
   object GherkinException {
     
-    inline def apply(errors: js.Array[Error], location: ILocation, message: String, name: String): GherkinException = {
+    inline def apply(errors: js.Array[js.Error], location: ILocation, message: String, name: String): GherkinException = {
       val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GherkinException]
     }
     
     extension [Self <: GherkinException](x: Self) {
       
-      inline def setErrors(value: js.Array[Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[js.Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      inline def setErrorsVarargs(value: Error*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: js.Error*): Self = StObject.set(x, "errors", js.Array(value*))
       
       inline def setLocation(value: ILocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     }

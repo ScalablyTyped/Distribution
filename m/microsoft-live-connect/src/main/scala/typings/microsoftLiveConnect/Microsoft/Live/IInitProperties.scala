@@ -55,7 +55,7 @@ trait IInitProperties extends StObject {
     * For a single scope, use this format: scope: "wl.signin". For multiple
     * scopes, use this format: scope: ["wl.signin", "wl.basic"].
     */
-  var scope: js.UndefOr[js.Any] = js.undefined
+  var scope: js.UndefOr[Any] = js.undefined
   
   /**
     * Web apps: optional.
@@ -100,7 +100,7 @@ object IInitProperties {
     
     inline def setResponse_typeUndefined: Self = StObject.set(x, "response_type", js.undefined)
     
-    inline def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     

@@ -11,9 +11,9 @@ object settingsMod {
     
     val application: Password
     
-    val attributesEncoder: js.UndefOr[js.Function1[/* obj */ js.Any, String]] = js.undefined
+    val attributesEncoder: js.UndefOr[js.Function1[/* obj */ Any, String]] = js.undefined
     
-    val attributesParser: js.UndefOr[js.Function1[/* json */ String, js.Any]] = js.undefined
+    val attributesParser: js.UndefOr[js.Function1[/* json */ String, Any]] = js.undefined
     
     val baseUrl: String
     
@@ -34,11 +34,11 @@ object settingsMod {
       
       inline def setApplication(value: Password): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
       
-      inline def setAttributesEncoder(value: /* obj */ js.Any => String): Self = StObject.set(x, "attributesEncoder", js.Any.fromFunction1(value))
+      inline def setAttributesEncoder(value: /* obj */ Any => String): Self = StObject.set(x, "attributesEncoder", js.Any.fromFunction1(value))
       
       inline def setAttributesEncoderUndefined: Self = StObject.set(x, "attributesEncoder", js.undefined)
       
-      inline def setAttributesParser(value: /* json */ String => js.Any): Self = StObject.set(x, "attributesParser", js.Any.fromFunction1(value))
+      inline def setAttributesParser(value: /* json */ String => Any): Self = StObject.set(x, "attributesParser", js.Any.fromFunction1(value))
       
       inline def setAttributesParserUndefined: Self = StObject.set(x, "attributesParser", js.undefined)
       

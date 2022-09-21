@@ -78,7 +78,7 @@ object AudioStreams {
     
     inline def setAudioStreams(value: js.Array[BitrateBps]): Self = StObject.set(x, "audioStreams", value.asInstanceOf[js.Any])
     
-    inline def setAudioStreamsVarargs(value: BitrateBps*): Self = StObject.set(x, "audioStreams", js.Array(value :_*))
+    inline def setAudioStreamsVarargs(value: BitrateBps*): Self = StObject.set(x, "audioStreams", js.Array(value*))
     
     inline def setBitrateBps(value: Double): Self = StObject.set(x, "bitrateBps", value.asInstanceOf[js.Any])
     
@@ -98,6 +98,6 @@ object AudioStreams {
     
     inline def setVideoStreams(value: js.Array[AspectRatio]): Self = StObject.set(x, "videoStreams", value.asInstanceOf[js.Any])
     
-    inline def setVideoStreamsVarargs(value: AspectRatio*): Self = StObject.set(x, "videoStreams", js.Array(value :_*))
+    inline def setVideoStreamsVarargs(value: AspectRatio*): Self = StObject.set(x, "videoStreams", js.Array(value*))
   }
 }

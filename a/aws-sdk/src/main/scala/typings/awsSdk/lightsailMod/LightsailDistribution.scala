@@ -44,7 +44,7 @@ trait LightsailDistribution extends StObject {
   /**
     * The timestamp when the distribution was created.
     */
-  var createdAt: js.UndefOr[IsoDate] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * An object that describes the default cache behavior of the distribution.
@@ -57,12 +57,17 @@ trait LightsailDistribution extends StObject {
   var domainName: js.UndefOr[String] = js.undefined
   
   /**
+    * The IP address type of the distribution. The possible values are ipv4 for IPv4 only, and dualstack for IPv4 and IPv6.
+    */
+  var ipAddressType: js.UndefOr[IpAddressType] = js.undefined
+  
+  /**
     * Indicates whether the distribution is enabled.
     */
   var isEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * An object that describes the location of the distribution, such as the AWS Region and Availability Zone.  Lightsail distributions are global resources that can reference an origin in any AWS Region, and distribute its content globally. However, all distributions are located in the us-east-1 Region. 
+    * An object that describes the location of the distribution, such as the Amazon Web Services Region and Availability Zone.  Lightsail distributions are global resources that can reference an origin in any Amazon Web Services Region, and distribute its content globally. However, all distributions are located in the us-east-1 Region. 
     */
   var location: js.UndefOr[ResourceLocation] = js.undefined
   
@@ -72,7 +77,7 @@ trait LightsailDistribution extends StObject {
   var name: js.UndefOr[ResourceName] = js.undefined
   
   /**
-    * An object that describes the origin resource of the distribution, such as a Lightsail instance or load balancer. The distribution pulls, caches, and serves content from the origin.
+    * An object that describes the origin resource of the distribution, such as a Lightsail instance, bucket, or load balancer. The distribution pulls, caches, and serves content from the origin.
     */
   var origin: js.UndefOr[Origin] = js.undefined
   
@@ -97,7 +102,7 @@ trait LightsailDistribution extends StObject {
   var supportCode: js.UndefOr[String] = js.undefined
   
   /**
-    * The tag keys and optional values for the resource. For more information about tags in Lightsail, see the Lightsail Dev Guide.
+    * The tag keys and optional values for the resource. For more information about tags in Lightsail, see the Amazon Lightsail Developer Guide.
     */
   var tags: js.UndefOr[TagList] = js.undefined
 }
@@ -118,7 +123,7 @@ object LightsailDistribution {
     
     inline def setAlternativeDomainNamesUndefined: Self = StObject.set(x, "alternativeDomainNames", js.undefined)
     
-    inline def setAlternativeDomainNamesVarargs(value: String*): Self = StObject.set(x, "alternativeDomainNames", js.Array(value :_*))
+    inline def setAlternativeDomainNamesVarargs(value: String*): Self = StObject.set(x, "alternativeDomainNames", js.Array(value*))
     
     inline def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
@@ -136,13 +141,13 @@ object LightsailDistribution {
     
     inline def setCacheBehaviorsUndefined: Self = StObject.set(x, "cacheBehaviors", js.undefined)
     
-    inline def setCacheBehaviorsVarargs(value: CacheBehaviorPerPath*): Self = StObject.set(x, "cacheBehaviors", js.Array(value :_*))
+    inline def setCacheBehaviorsVarargs(value: CacheBehaviorPerPath*): Self = StObject.set(x, "cacheBehaviors", js.Array(value*))
     
     inline def setCertificateName(value: ResourceName): Self = StObject.set(x, "certificateName", value.asInstanceOf[js.Any])
     
     inline def setCertificateNameUndefined: Self = StObject.set(x, "certificateName", js.undefined)
     
-    inline def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
@@ -153,6 +158,10 @@ object LightsailDistribution {
     inline def setDomainName(value: String): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
     
     inline def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
+    
+    inline def setIpAddressType(value: IpAddressType): Self = StObject.set(x, "ipAddressType", value.asInstanceOf[js.Any])
+    
+    inline def setIpAddressTypeUndefined: Self = StObject.set(x, "ipAddressType", js.undefined)
     
     inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
@@ -190,6 +199,6 @@ object LightsailDistribution {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

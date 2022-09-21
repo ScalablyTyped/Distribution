@@ -22,7 +22,7 @@ trait ClientOperationId extends StObject {
   /** For mutating operation requests only. An optional identifier specified by the client. Must be unique for operation resources in the Operations collection. */
   var clientOperationId: js.UndefOr[String] = js.undefined
   
-  /** An optional comma-separated list of digest types to compute and display for key signing keys. If omitted, the recommended digest type will be computed and displayed. */
+  /** An optional comma-separated list of digest types to compute and display for key signing keys. If omitted, the recommended digest type is computed and displayed. */
   var digestType: js.UndefOr[String] = js.undefined
   
   /** The identifier of the requested DnsKey. */

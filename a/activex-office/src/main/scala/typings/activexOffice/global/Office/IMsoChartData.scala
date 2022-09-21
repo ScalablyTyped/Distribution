@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.IMsoChartData")
 @js.native
-/* private */ class IMsoChartData ()
+/* private */ open class IMsoChartData ()
   extends StObject
      with typings.activexOffice.Office.IMsoChartData {
   
@@ -27,5 +27,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OfficeDotIMsoChartData_typekey: typings.activexOffice.Office.IMsoChartData = js.native
   
   /* CompleteClass */
-  override val Workbook: js.Any = js.native
+  override val Workbook: Any = js.native
 }

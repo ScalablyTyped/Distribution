@@ -1,83 +1,79 @@
 package typings.uiGrid.mod
 
+import typings.angular.JQueryMouseEventObject
+import typings.angular.mod.IScope
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
 type ICellClassGetter[TEntity] = js.Function5[
-/* grid */ js.UndefOr[typings.uiGrid.mod.IGridInstanceOf[TEntity]], 
-/* gridRow */ js.UndefOr[typings.uiGrid.mod.IGridRowOf[TEntity]], 
-/* gridCol */ js.UndefOr[typings.uiGrid.mod.IGridColumnOf[TEntity]], 
-/* rowRenderIndex */ js.UndefOr[scala.Double], 
-/* colRenderIndex */ js.UndefOr[scala.Double], 
-java.lang.String]
+/* grid */ js.UndefOr[IGridInstanceOf[TEntity]], 
+/* gridRow */ js.UndefOr[IGridRowOf[TEntity]], 
+/* gridCol */ js.UndefOr[IGridColumnOf[TEntity]], 
+/* rowRenderIndex */ js.UndefOr[Double], 
+/* colRenderIndex */ js.UndefOr[Double], 
+String]
 
-type ICellTooltipGetter[TEntity] = js.Function2[
-/* gridRow */ typings.uiGrid.mod.IGridRowOf[TEntity], 
-/* gridCol */ typings.uiGrid.mod.IGridColumnOf[TEntity], 
-java.lang.String]
+type ICellTooltipGetter[TEntity] = js.Function2[/* gridRow */ IGridRowOf[TEntity], /* gridCol */ IGridColumnOf[TEntity], String]
 
 type IColumnBuilder[TEntity] = js.Function3[
-/* colDef */ typings.uiGrid.mod.IColumnDefOf[TEntity], 
-/* col */ typings.uiGrid.mod.IGridColumnOf[TEntity], 
-/* gridOptions */ typings.uiGrid.mod.IGridOptionsOf[TEntity], 
-scala.Unit]
+/* colDef */ IColumnDefOf[TEntity], 
+/* col */ IGridColumnOf[TEntity], 
+/* gridOptions */ IGridOptionsOf[TEntity], 
+Unit]
 
-type IColumnDef = typings.uiGrid.mod.IColumnDefOf[js.Any]
+type IColumnDef = IColumnDefOf[Any]
 
 type IColumnProcessor[TEntity] = js.Function2[
-/* renderedColumnsToProcess */ js.Array[typings.uiGrid.mod.IGridColumnOf[TEntity]], 
-/* rows */ js.Array[typings.uiGrid.mod.IGridRowOf[TEntity]], 
-js.Array[typings.uiGrid.mod.IGridColumnOf[TEntity]]]
+/* renderedColumnsToProcess */ js.Array[IGridColumnOf[TEntity]], 
+/* rows */ js.Array[IGridRowOf[TEntity]], 
+js.Array[IGridColumnOf[TEntity]]]
 
-type IGridApi = typings.uiGrid.mod.IGridApiOf[js.Any]
+type IGridApi = IGridApiOf[Any]
 
-type IGridColumn = typings.uiGrid.mod.IGridColumnOf[js.Any]
+type IGridColumn = IGridColumnOf[Any]
 
-type IGridInstance = typings.uiGrid.mod.IGridInstanceOf[js.Any]
+type IGridInstance = IGridInstanceOf[Any]
 
-type IGridOptions = typings.uiGrid.mod.IGridOptionsOf[js.Any]
+type IGridOptions = IGridOptionsOf[Any]
 
-type IGridRow = typings.uiGrid.mod.IGridRowOf[js.Any]
+type IGridRow = IGridRowOf[Any]
 
 type IHeaderFooterCellClassGetter[TEntity] = js.Function5[
-/* grid */ typings.uiGrid.mod.IGridInstanceOf[TEntity], 
-/* gridRow */ typings.uiGrid.mod.IGridRowOf[TEntity], 
-/* gridCol */ typings.uiGrid.mod.IGridColumnOf[TEntity], 
-/* rowRenderIndex */ scala.Double, 
-/* colRenderIndex */ scala.Double, 
-java.lang.String]
+/* grid */ IGridInstanceOf[TEntity], 
+/* gridRow */ IGridRowOf[TEntity], 
+/* gridCol */ IGridColumnOf[TEntity], 
+/* rowRenderIndex */ Double, 
+/* colRenderIndex */ Double, 
+String]
 
-type IHeaderTooltipGetter[TEntity] = js.Function1[/* gridCol */ typings.uiGrid.mod.IGridColumnOf[TEntity], java.lang.String]
+type IHeaderTooltipGetter[TEntity] = js.Function1[/* gridCol */ IGridColumnOf[TEntity], String]
 
-type IRowBuilder[TEntity] = js.Function2[
-/* row */ typings.uiGrid.mod.IGridRowOf[TEntity], 
-/* gridOptions */ typings.uiGrid.mod.IGridOptionsOf[TEntity], 
-scala.Unit]
+type IRowBuilder[TEntity] = js.Function2[/* row */ IGridRowOf[TEntity], /* gridOptions */ IGridOptionsOf[TEntity], Unit]
 
 type IRowProcessor[TEntity] = js.Function2[
-/* renderedRowsToProcess */ js.Array[typings.uiGrid.mod.IGridRowOf[TEntity]], 
-/* columns */ js.Array[typings.uiGrid.mod.IGridColumnOf[TEntity]], 
-js.Array[typings.uiGrid.mod.IGridRowOf[TEntity]]]
+/* renderedRowsToProcess */ js.Array[IGridRowOf[TEntity]], 
+/* columns */ js.Array[IGridColumnOf[TEntity]], 
+js.Array[IGridRowOf[TEntity]]]
 
-type IStyleComputation = js.Function1[/* $scope */ typings.angular.mod.IScope, java.lang.String]
+type IStyleComputation = js.Function1[/* $scope */ IScope, String]
 
-type canvasHeightChangedHandler = js.Function2[/* oldHeight */ scala.Double, /* newHeight */ scala.Double, scala.Unit]
+type canvasHeightChangedHandler = js.Function2[/* oldHeight */ Double, /* newHeight */ Double, Unit]
 
-type columnVisibilityChangedHandler[TEntity] = js.Function1[/* column */ typings.uiGrid.mod.IGridColumnOf[TEntity], scala.Unit]
+type columnVisibilityChangedHandler[TEntity] = js.Function1[/* column */ IGridColumnOf[TEntity], Unit]
 
-type filterChangedHandler[TEntity] = js.Function1[/* gridApi */ typings.uiGrid.mod.IGridApiOf[TEntity], scala.Unit]
+type filterChangedHandler[TEntity] = js.Function1[/* gridApi */ IGridApiOf[TEntity], Unit]
 
-type rowsRenderedHandler[TEntity] = js.Function1[/* gridApi */ typings.uiGrid.mod.IGridApiOf[TEntity], scala.Unit]
+type rowsRenderedHandler[TEntity] = js.Function1[/* gridApi */ IGridApiOf[TEntity], Unit]
 
-type rowsVisibleChangedHandler[TEntity] = js.Function1[/* gridApi */ typings.uiGrid.mod.IGridApiOf[TEntity], scala.Unit]
+type rowsVisibleChangedHandler[TEntity] = js.Function1[/* gridApi */ IGridApiOf[TEntity], Unit]
 
-type scrollBeginHandler = js.Function1[/* scrollEvent */ typings.angular.JQueryMouseEventObject, scala.Unit]
+type scrollBeginHandler = js.Function1[/* scrollEvent */ JQueryMouseEventObject, Unit]
 
-type scrollEndHandler = js.Function1[/* scrollEvent */ typings.angular.JQueryMouseEventObject, scala.Unit]
+type scrollEndHandler = js.Function1[/* scrollEvent */ JQueryMouseEventObject, Unit]
 
 type sortChangedHandler[TEntity] = js.Function2[
-/* grid */ typings.uiGrid.mod.IGridInstanceOf[TEntity], 
-/* columns */ js.Array[typings.uiGrid.mod.IGridColumnOf[TEntity]], 
-scala.Unit]
+/* grid */ IGridInstanceOf[TEntity], 
+/* columns */ js.Array[IGridColumnOf[TEntity]], 
+Unit]

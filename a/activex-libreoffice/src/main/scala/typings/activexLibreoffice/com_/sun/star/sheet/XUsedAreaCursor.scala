@@ -35,7 +35,7 @@ object XUsedAreaCursor {
     acquire: () => Unit,
     gotoEndOfUsedArea: Boolean => Unit,
     gotoStartOfUsedArea: Boolean => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XUsedAreaCursor = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), gotoEndOfUsedArea = js.Any.fromFunction1(gotoEndOfUsedArea), gotoStartOfUsedArea = js.Any.fromFunction1(gotoStartOfUsedArea), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

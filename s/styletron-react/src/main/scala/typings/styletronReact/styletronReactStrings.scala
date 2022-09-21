@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object styletronReactStrings {
   
   @js.native
+  sealed trait $style extends StObject
+  inline def $style: $style = "$style".asInstanceOf[$style]
+  
+  @js.native
   sealed trait a extends StObject
   inline def a: a = "a".asInstanceOf[a]
   
@@ -97,6 +101,10 @@ object styletronReactStrings {
   @js.native
   sealed trait cite extends StObject
   inline def cite: cite = "cite".asInstanceOf[cite]
+  
+  @js.native
+  sealed trait className extends StObject
+  inline def className: className = "className".asInstanceOf[className]
   
   @js.native
   sealed trait clipPath extends StObject

@@ -19,7 +19,7 @@ trait MeterUsageRequest extends StObject {
   /**
     * Timestamp, in UTC, for which the usage is being reported. Your application can meter usage for up to one hour in the past. Make sure the timestamp value is not before the start of the software usage.
     */
-  var Timestamp: typings.awsSdk.marketplacemeteringMod.Timestamp
+  var Timestamp: js.Date
   
   /**
     * The set of UsageAllocations to submit. The sum of all UsageAllocation quantities must equal the UsageQuantity of the MeterUsage request, and each UsageAllocation must have a unique set of tags (include no tags).
@@ -38,7 +38,7 @@ trait MeterUsageRequest extends StObject {
 }
 object MeterUsageRequest {
   
-  inline def apply(ProductCode: ProductCode, Timestamp: Timestamp, UsageDimension: UsageDimension): MeterUsageRequest = {
+  inline def apply(ProductCode: ProductCode, Timestamp: js.Date, UsageDimension: UsageDimension): MeterUsageRequest = {
     val __obj = js.Dynamic.literal(ProductCode = ProductCode.asInstanceOf[js.Any], Timestamp = Timestamp.asInstanceOf[js.Any], UsageDimension = UsageDimension.asInstanceOf[js.Any])
     __obj.asInstanceOf[MeterUsageRequest]
   }
@@ -51,13 +51,13 @@ object MeterUsageRequest {
     
     inline def setProductCode(value: ProductCode): Self = StObject.set(x, "ProductCode", value.asInstanceOf[js.Any])
     
-    inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
     inline def setUsageAllocations(value: UsageAllocations): Self = StObject.set(x, "UsageAllocations", value.asInstanceOf[js.Any])
     
     inline def setUsageAllocationsUndefined: Self = StObject.set(x, "UsageAllocations", js.undefined)
     
-    inline def setUsageAllocationsVarargs(value: UsageAllocation*): Self = StObject.set(x, "UsageAllocations", js.Array(value :_*))
+    inline def setUsageAllocationsVarargs(value: UsageAllocation*): Self = StObject.set(x, "UsageAllocations", js.Array(value*))
     
     inline def setUsageDimension(value: UsageDimension): Self = StObject.set(x, "UsageDimension", value.asInstanceOf[js.Any])
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BatchMeterUsageResult extends StObject {
   
   /**
-    * Contains all UsageRecords processed by BatchMeterUsage. These records were either honored by AWS Marketplace Metering Service or were invalid.
+    * Contains all UsageRecords processed by BatchMeterUsage. These records were either honored by AWS Marketplace Metering Service or were invalid. Invalid records should be fixed before being resubmitted.
     */
   var Results: js.UndefOr[UsageRecordResultList] = js.undefined
   
@@ -29,12 +29,12 @@ object BatchMeterUsageResult {
     
     inline def setResultsUndefined: Self = StObject.set(x, "Results", js.undefined)
     
-    inline def setResultsVarargs(value: UsageRecordResult*): Self = StObject.set(x, "Results", js.Array(value :_*))
+    inline def setResultsVarargs(value: UsageRecordResult*): Self = StObject.set(x, "Results", js.Array(value*))
     
     inline def setUnprocessedRecords(value: UsageRecordList): Self = StObject.set(x, "UnprocessedRecords", value.asInstanceOf[js.Any])
     
     inline def setUnprocessedRecordsUndefined: Self = StObject.set(x, "UnprocessedRecords", js.undefined)
     
-    inline def setUnprocessedRecordsVarargs(value: UsageRecord*): Self = StObject.set(x, "UnprocessedRecords", js.Array(value :_*))
+    inline def setUnprocessedRecordsVarargs(value: UsageRecord*): Self = StObject.set(x, "UnprocessedRecords", js.Array(value*))
   }
 }

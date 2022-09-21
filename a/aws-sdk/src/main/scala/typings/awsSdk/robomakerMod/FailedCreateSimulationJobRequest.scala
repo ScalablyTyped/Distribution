@@ -9,7 +9,7 @@ trait FailedCreateSimulationJobRequest extends StObject {
   /**
     * The time, in milliseconds since the epoch, when the simulation job batch failed.
     */
-  var failedAt: js.UndefOr[FailedAt] = js.undefined
+  var failedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The failure code.
@@ -35,7 +35,7 @@ object FailedCreateSimulationJobRequest {
   
   extension [Self <: FailedCreateSimulationJobRequest](x: Self) {
     
-    inline def setFailedAt(value: FailedAt): Self = StObject.set(x, "failedAt", value.asInstanceOf[js.Any])
+    inline def setFailedAt(value: js.Date): Self = StObject.set(x, "failedAt", value.asInstanceOf[js.Any])
     
     inline def setFailedAtUndefined: Self = StObject.set(x, "failedAt", js.undefined)
     

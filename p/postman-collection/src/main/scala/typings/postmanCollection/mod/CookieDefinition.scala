@@ -1,7 +1,6 @@
 package typings.postmanCollection.mod
 
 import typings.postmanCollection.anon.Key
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ trait CookieDefinition extends StObject {
   
   var domain: String
   
-  var expires: js.UndefOr[String | Date | Double] = js.undefined
+  var expires: js.UndefOr[String | js.Date | Double] = js.undefined
   
   var extensions: js.UndefOr[js.Array[Key]] = js.undefined
   
@@ -41,7 +40,7 @@ object CookieDefinition {
     
     inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    inline def setExpires(value: String | Date | Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+    inline def setExpires(value: String | js.Date | Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
     
     inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
     
@@ -49,7 +48,7 @@ object CookieDefinition {
     
     inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
-    inline def setExtensionsVarargs(value: Key*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+    inline def setExtensionsVarargs(value: Key*): Self = StObject.set(x, "extensions", js.Array(value*))
     
     inline def setHostOnly(value: Boolean): Self = StObject.set(x, "hostOnly", value.asInstanceOf[js.Any])
     

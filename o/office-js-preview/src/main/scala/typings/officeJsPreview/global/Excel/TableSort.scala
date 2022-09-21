@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Manages sorting operations on `Table` objects.
   *
-  * Manages sorting operations on Table objects.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.2]
   */
 @JSGlobal("Excel.TableSort")
 @js.native
-class TableSort ()
+open class TableSort ()
   extends StObject
      with typings.officeJsPreview.Excel.TableSort {
   

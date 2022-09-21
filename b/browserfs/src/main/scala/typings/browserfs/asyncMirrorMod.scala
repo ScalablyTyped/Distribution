@@ -8,8 +8,7 @@ import typings.browserfs.fileSystemMod.BFSOneArgCallback
 import typings.browserfs.fileSystemMod.FileSystem
 import typings.browserfs.fileSystemMod.FileSystemOptions
 import typings.browserfs.fileSystemMod.SynchronousFileSystem
-import typings.node.Buffer
-import typings.std.Date
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ object asyncMirrorMod {
   
   @JSImport("browserfs/dist/node/backend/AsyncMirror", JSImport.Default)
   @js.native
-  class default protected () extends AsyncMirror {
+  open class default protected () extends AsyncMirror {
     /**
       * **Deprecated; use AsyncMirror.Create() method instead.**
       *
@@ -59,24 +58,24 @@ object asyncMirrorMod {
     extends SynchronousFileSystem
        with FileSystem {
     
-    /* private */ var _async: js.Any = js.native
+    /* private */ var _async: Any = js.native
     
-    /* private */ var _initializeCallbacks: js.Any = js.native
+    /* private */ var _initializeCallbacks: Any = js.native
     
-    /* private */ var _isInitialized: js.Any = js.native
+    /* private */ var _isInitialized: Any = js.native
     
     /**
       * Queue of pending asynchronous operations.
       */
-    /* private */ var _queue: js.Any = js.native
+    /* private */ var _queue: Any = js.native
     
-    /* private */ var _queueRunning: js.Any = js.native
+    /* private */ var _queueRunning: Any = js.native
     
-    /* private */ var _sync: js.Any = js.native
+    /* private */ var _sync: Any = js.native
     
-    def _syncSync(fd: typings.browserfs.preloadFileMod.default[js.Any]): Unit = js.native
+    def _syncSync(fd: typings.browserfs.preloadFileMod.default[Any]): Unit = js.native
     
-    /* private */ def checkInitialized(): js.Any = js.native
+    /* private */ def checkInitialized(): Any = js.native
     
     /* InferMemberOverrides */
     override def chmod(p: String, isLchmod: Boolean, mode: Double, cb: BFSOneArgCallback): Unit = js.native
@@ -91,9 +90,9 @@ object asyncMirrorMod {
     override def chownSync(p: String, isLchown: Boolean, uid: Double, gid: Double): Unit = js.native
     
     /* InferMemberOverrides */
-    override def diskSpace(p: String, cb: js.Function2[/* total */ Double, /* free */ Double, js.Any]): Unit = js.native
+    override def diskSpace(p: String, cb: js.Function2[/* total */ Double, /* free */ Double, Any]): Unit = js.native
     
-    /* private */ def enqueueOp(op: js.Any): js.Any = js.native
+    /* private */ def enqueueOp(op: Any): Any = js.native
     
     /* InferMemberOverrides */
     override def exists(p: String, cb: js.Function1[/* exists */ Boolean, Unit]): Unit = js.native
@@ -131,9 +130,9 @@ object asyncMirrorMod {
     override def readFile(fname: String, encoding: Null, flag: FileFlag, cb: BFSCallback[String | Buffer]): Unit = js.native
     
     /* InferMemberOverrides */
-    override def readFileSync(fname: String, encoding: String, flag: FileFlag): js.Any = js.native
+    override def readFileSync(fname: String, encoding: String, flag: FileFlag): Any = js.native
     /* InferMemberOverrides */
-    override def readFileSync(fname: String, encoding: Null, flag: FileFlag): js.Any = js.native
+    override def readFileSync(fname: String, encoding: Null, flag: FileFlag): Any = js.native
     
     /* InferMemberOverrides */
     override def readdir(p: String, cb: BFSCallback[js.Array[String]]): Unit = js.native
@@ -200,15 +199,15 @@ object asyncMirrorMod {
     override def unlinkSync(p: String): Unit = js.native
     
     /* InferMemberOverrides */
-    override def utimes(p: String, atime: Date, mtime: Date, cb: BFSOneArgCallback): Unit = js.native
+    override def utimes(p: String, atime: js.Date, mtime: js.Date, cb: BFSOneArgCallback): Unit = js.native
     
     /* InferMemberOverrides */
-    override def utimesSync(p: String, atime: Date, mtime: Date): Unit = js.native
+    override def utimesSync(p: String, atime: js.Date, mtime: js.Date): Unit = js.native
     
     /* InferMemberOverrides */
-    override def writeFile(fname: String, data: js.Any, encoding: String, flag: FileFlag, mode: Double, cb: BFSOneArgCallback): Unit = js.native
+    override def writeFile(fname: String, data: Any, encoding: String, flag: FileFlag, mode: Double, cb: BFSOneArgCallback): Unit = js.native
     /* InferMemberOverrides */
-    override def writeFile(fname: String, data: js.Any, encoding: Null, flag: FileFlag, mode: Double, cb: BFSOneArgCallback): Unit = js.native
+    override def writeFile(fname: String, data: Any, encoding: Null, flag: FileFlag, mode: Double, cb: BFSOneArgCallback): Unit = js.native
   }
   
   trait AsyncMirrorOptions extends StObject {

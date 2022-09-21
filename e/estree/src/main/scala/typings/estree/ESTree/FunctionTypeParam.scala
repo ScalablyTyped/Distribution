@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FunctionTypeParam extends StObject {
   
-  var name: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Identifier */ js.Any
+  var name: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Identifier */ Any
   
   var optional: Boolean
   
@@ -15,7 +15,7 @@ trait FunctionTypeParam extends StObject {
 object FunctionTypeParam {
   
   inline def apply(
-    name: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Identifier */ js.Any,
+    name: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Identifier */ Any,
     optional: Boolean,
     typeAnnotation: FlowTypeAnnotation
   ): FunctionTypeParam = {
@@ -26,7 +26,7 @@ object FunctionTypeParam {
   extension [Self <: FunctionTypeParam](x: Self) {
     
     inline def setName(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Identifier */ js.Any
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Identifier */ Any
     ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])

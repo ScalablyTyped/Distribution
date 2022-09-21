@@ -14,10 +14,10 @@ object fileTokenizerMod {
   
   @JSImport("strtok3/lib/FileTokenizer", "FileTokenizer")
   @js.native
-  class FileTokenizer protected () extends AbstractTokenizer {
+  open class FileTokenizer protected () extends AbstractTokenizer {
     def this(fd: Double, fileInfo: IFileInfo) = this()
     
-    /* private */ var fd: js.Any = js.native
+    /* private */ var fd: Any = js.native
   }
   
   inline def fromFile(sourceFilePath: String): js.Promise[FileTokenizer] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFile")(sourceFilePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[FileTokenizer]]

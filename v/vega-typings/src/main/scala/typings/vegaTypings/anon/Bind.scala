@@ -49,7 +49,7 @@ object Bind {
     
     inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
-    inline def setSelectorVarargs(value: String*): Self = StObject.set(x, "selector", js.Array(value :_*))
+    inline def setSelectorVarargs(value: String*): Self = StObject.set(x, "selector", js.Array(value*))
     
     inline def setTimer(value: Boolean): Self = StObject.set(x, "timer", value.asInstanceOf[js.Any])
     
@@ -59,12 +59,12 @@ object Bind {
     
     inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
     
-    inline def setViewVarargs(value: String*): Self = StObject.set(x, "view", js.Array(value :_*))
+    inline def setViewVarargs(value: String*): Self = StObject.set(x, "view", js.Array(value*))
     
     inline def setWindow(value: Boolean | js.Array[String]): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
     
     inline def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
     
-    inline def setWindowVarargs(value: String*): Self = StObject.set(x, "window", js.Array(value :_*))
+    inline def setWindowVarargs(value: String*): Self = StObject.set(x, "window", js.Array(value*))
   }
 }

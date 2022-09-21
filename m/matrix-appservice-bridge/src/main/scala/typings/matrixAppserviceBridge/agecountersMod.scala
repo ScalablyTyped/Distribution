@@ -16,7 +16,7 @@ object agecountersMod {
     * X is the unit of time. A unit can be one of 'h, d, w' for hours, days and weeks.
     * 7d would be 7 days. If not given, the periods are 1h, 1d and 7d.
     */
-  class AgeCounters () extends StObject {
+  open class AgeCounters () extends StObject {
     def this(counterPeriods: js.Array[String]) = this()
     
     /**
@@ -27,9 +27,9 @@ object agecountersMod {
       */
     def bump(age: Double): Unit = js.native
     
-    /* private */ var counterPeriods: js.Any = js.native
+    /* private */ var counterPeriods: Any = js.native
     
-    /* private */ var counters: js.Any = js.native
+    /* private */ var counters: Any = js.native
     
     /**
       * Fetch the counts in the age buckets and set them as labeled observations in

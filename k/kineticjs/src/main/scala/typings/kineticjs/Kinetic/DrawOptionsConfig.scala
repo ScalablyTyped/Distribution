@@ -10,7 +10,7 @@ trait DrawOptionsConfig extends StObject {
   
   var lineJoin: js.UndefOr[String] = js.undefined
   
-  var shadow: js.UndefOr[js.Any] = js.undefined
+  var shadow: js.UndefOr[Any] = js.undefined
   
   var stroke: js.UndefOr[String] = js.undefined
   
@@ -33,7 +33,7 @@ object DrawOptionsConfig {
     
     inline def setLineJoinUndefined: Self = StObject.set(x, "lineJoin", js.undefined)
     
-    inline def setShadow(value: js.Any): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
+    inline def setShadow(value: Any): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
     
     inline def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
     

@@ -21,61 +21,61 @@ object scrollbarMod {
     *
     * @param options - The options for initializing the scroll bar.
     */
-  class ScrollBar () extends Widget {
+  open class ScrollBar () extends Widget {
     def this(options: IOptions) = this()
     
     /**
       * Handle the `'keydown'` event for the scroll bar.
       */
-    /* private */ var _evtKeyDown: js.Any = js.native
+    /* private */ var _evtKeyDown: Any = js.native
     
     /**
       * Handle the `'mousedown'` event for the scroll bar.
       */
-    /* private */ var _evtMouseDown: js.Any = js.native
+    /* private */ var _evtMouseDown: Any = js.native
     
     /**
       * Handle the `'mousemove'` event for the scroll bar.
       */
-    /* private */ var _evtMouseMove: js.Any = js.native
+    /* private */ var _evtMouseMove: Any = js.native
     
     /**
       * Handle the `'mouseup'` event for the scroll bar.
       */
-    /* private */ var _evtMouseUp: js.Any = js.native
+    /* private */ var _evtMouseUp: Any = js.native
     
-    /* private */ var _maximum: js.Any = js.native
+    /* private */ var _maximum: Any = js.native
     
     /**
       * Move the thumb to the specified position.
       */
-    /* private */ var _moveThumb: js.Any = js.native
+    /* private */ var _moveThumb: Any = js.native
     
     /**
       * A timeout callback for repeating the mouse press.
       */
-    /* private */ var _onRepeat: js.Any = js.native
+    /* private */ var _onRepeat: Any = js.native
     
-    /* private */ var _orientation: js.Any = js.native
+    /* private */ var _orientation: Any = js.native
     
-    /* private */ var _page: js.Any = js.native
+    /* private */ var _page: Any = js.native
     
-    /* private */ var _pageRequested: js.Any = js.native
+    /* private */ var _pageRequested: Any = js.native
     
-    /* private */ var _pressData: js.Any = js.native
+    /* private */ var _pressData: Any = js.native
     
     /**
       * Release the mouse and restore the node states.
       */
-    /* private */ var _releaseMouse: js.Any = js.native
+    /* private */ var _releaseMouse: Any = js.native
     
-    /* private */ var _repeatTimer: js.Any = js.native
+    /* private */ var _repeatTimer: Any = js.native
     
-    /* private */ var _stepRequested: js.Any = js.native
+    /* private */ var _stepRequested: Any = js.native
     
-    /* private */ var _thumbMoved: js.Any = js.native
+    /* private */ var _thumbMoved: Any = js.native
     
-    /* private */ var _value: js.Any = js.native
+    /* private */ var _value: Any = js.native
     
     /**
       * The scroll bar decrement button node.

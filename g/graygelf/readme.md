@@ -10,10 +10,10 @@ A complete GELF client, server, and proxy for Graylog2
 | ------------------ | :-------------: |
 | Full name          | graygelf |
 | Keywords           | logging, graylog2, gelf, client, server, proxy |
-| # releases         | 2 |
-| # dependents       | 3 |
-| # downloads        | 319000 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3548.6666666666665 |
+| # stars            | 52.0 |
 
 ## Links
 - [Homepage](https://github.com/wavded/graygelf#readme)

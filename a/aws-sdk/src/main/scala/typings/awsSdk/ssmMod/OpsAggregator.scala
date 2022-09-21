@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OpsAggregator extends StObject {
   
   /**
-    * Either a Range or Count aggregator for limiting an OpsItem summary.
+    * Either a Range or Count aggregator for limiting an OpsData summary.
     */
   var AggregatorType: js.UndefOr[OpsAggregatorType] = js.undefined
   
   /**
-    * A nested aggregator for viewing counts of OpsItems.
+    * A nested aggregator for viewing counts of OpsData.
     */
   var Aggregators: js.UndefOr[OpsAggregatorList] = js.undefined
   
   /**
-    * The name of an OpsItem attribute on which to limit the count of OpsItems.
+    * The name of an OpsData attribute on which to limit the count of OpsData.
     */
   var AttributeName: js.UndefOr[OpsDataAttributeName] = js.undefined
   
@@ -27,7 +27,7 @@ trait OpsAggregator extends StObject {
   var Filters: js.UndefOr[OpsFilterList] = js.undefined
   
   /**
-    * The data type name to use for viewing counts of OpsItems.
+    * The data type name to use for viewing counts of OpsData.
     */
   var TypeName: js.UndefOr[OpsDataTypeName] = js.undefined
   
@@ -53,7 +53,7 @@ object OpsAggregator {
     
     inline def setAggregatorsUndefined: Self = StObject.set(x, "Aggregators", js.undefined)
     
-    inline def setAggregatorsVarargs(value: OpsAggregator*): Self = StObject.set(x, "Aggregators", js.Array(value :_*))
+    inline def setAggregatorsVarargs(value: OpsAggregator*): Self = StObject.set(x, "Aggregators", js.Array(value*))
     
     inline def setAttributeName(value: OpsDataAttributeName): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     
@@ -63,7 +63,7 @@ object OpsAggregator {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: OpsFilter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: OpsFilter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setTypeName(value: OpsDataTypeName): Self = StObject.set(x, "TypeName", value.asInstanceOf[js.Any])
     

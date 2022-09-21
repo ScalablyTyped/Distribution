@@ -11,7 +11,7 @@ object basePathMod {
   
   @JSImport("openapi-framework/dist/src/BasePath", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with BasePath {
     def this(server: ServerObject) = this()

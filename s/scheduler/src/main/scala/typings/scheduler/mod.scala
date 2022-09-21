@@ -56,7 +56,7 @@ object mod {
   
   trait CallbackNode extends StObject {
     
-    def callback(): (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias scheduler.scheduler.FrameCallbackType */ js.Object) | Unit
+    def callback(): FrameCallbackType | Unit
     @JSName("callback")
     var callback_Original: FrameCallbackType
     
@@ -70,20 +70,14 @@ object mod {
   }
   object CallbackNode {
     
-    inline def apply(
-      callback: () => (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias scheduler.scheduler.FrameCallbackType */ js.Object) | Unit,
-      expirationTime: Double,
-      priorityLevel: Double
-    ): CallbackNode = {
-      val __obj = js.Dynamic.literal(callback = js.Any.fromFunction0(callback), expirationTime = expirationTime.asInstanceOf[js.Any], priorityLevel = priorityLevel.asInstanceOf[js.Any], next = null, prev = null)
+    inline def apply(callback: FrameCallbackType, expirationTime: Double, priorityLevel: Double): CallbackNode = {
+      val __obj = js.Dynamic.literal(callback = callback.asInstanceOf[js.Any], expirationTime = expirationTime.asInstanceOf[js.Any], priorityLevel = priorityLevel.asInstanceOf[js.Any], next = null, prev = null)
       __obj.asInstanceOf[CallbackNode]
     }
     
     extension [Self <: CallbackNode](x: Self) {
       
-      inline def setCallback(
-        value: () => (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias scheduler.scheduler.FrameCallbackType */ js.Object) | Unit
-      ): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
+      inline def setCallback(value: FrameCallbackType): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
       inline def setExpirationTime(value: Double): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
       
@@ -99,7 +93,9 @@ object mod {
     }
   }
   
-  type FrameCallbackType = js.Function0[
-    (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias scheduler.scheduler.FrameCallbackType */ js.Object) | Unit
-  ]
+  @js.native
+  trait FrameCallbackType extends StObject {
+    
+    def apply(): FrameCallbackType | Unit = js.native
+  }
 }

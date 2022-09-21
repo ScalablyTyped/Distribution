@@ -1,7 +1,7 @@
 
 # Scala.js typings for roads
 
-Typings are for version 6.3.1
+Typings are for version 7.4.1
 
 ## Library description:
 An isomophic http framework
@@ -10,13 +10,13 @@ An isomophic http framework
 | ------------------ | :-------------: |
 | Full name          | roads |
 | Keywords           | http, framework, isomorphic |
-| # releases         | 31 |
-| # dependents       | 4 |
-| # downloads        | 6060 |
-| # stars            | 1 |
+| # releases         | 20 |
+| # dependents       | 0.0 |
+| # downloads        | 461.0 |
+| # stars            | 15.0 |
 
 ## Links
-- [Homepage](https://github.com/Dashron/roads)
+- [Homepage](https://roadsjs.com)
 - [Bugs](http://github.com/Dashron/roads/issues)
 - [Repository](https://github.com/Dashron/roads)
 - [Npm](https://www.npmjs.com/package/roads)

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StringValueDefWithCondition[F /* <: Field */, T /* <: Type */] extends StObject {
   
   /**
-    * A field definition or one or more value definition(s) with a selection predicate.
+    * A field definition or one or more value definition(s) with a parameter predicate.
     */
   var condition: js.UndefOr[
     (Conditional[
@@ -38,7 +38,7 @@ object StringValueDefWithCondition {
     
     inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
-    inline def setConditionVarargs(value: (Conditional[ValueDef[String | Null | ExprRef | SignalRef]])*): Self = StObject.set(x, "condition", js.Array(value :_*))
+    inline def setConditionVarargs(value: (Conditional[ValueDef[String | Null | ExprRef | SignalRef]])*): Self = StObject.set(x, "condition", js.Array(value*))
     
     inline def setValue(value: String | ExprRef | SignalRef): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

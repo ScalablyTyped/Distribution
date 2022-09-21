@@ -14,7 +14,7 @@ object remoteCredentialsMod {
     * Represents credentials received.
     * @param {object} options - Override the default (1s) timeout period.
     */
-  class RemoteCredentials () extends Credentials {
+  open class RemoteCredentials () extends Credentials {
     def this(options: RemoteCredentialsOptions) = this()
   }
   

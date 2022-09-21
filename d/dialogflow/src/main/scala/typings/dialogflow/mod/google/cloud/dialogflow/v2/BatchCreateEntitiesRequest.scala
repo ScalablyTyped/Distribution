@@ -5,7 +5,6 @@ import typings.dialogflow.mod.google.cloud.dialogflow.v2.EntityType.IEntity
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new BatchCreateEntitiesRequest.
   * @param [properties] Properties to set
   */
-class BatchCreateEntitiesRequest ()
+open class BatchCreateEntitiesRequest ()
   extends StObject
      with IBatchCreateEntitiesRequest {
   def this(properties: IBatchCreateEntitiesRequest) = this()
@@ -38,7 +37,7 @@ class BatchCreateEntitiesRequest ()
     * Converts this BatchCreateEntitiesRequest to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 object BatchCreateEntitiesRequest {
   
@@ -55,6 +54,8 @@ object BatchCreateEntitiesRequest {
   inline def create(): BatchCreateEntitiesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[BatchCreateEntitiesRequest]
   inline def create(properties: IBatchCreateEntitiesRequest): BatchCreateEntitiesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[BatchCreateEntitiesRequest]
   
+  inline def decode(reader: js.typedarray.Uint8Array): BatchCreateEntitiesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BatchCreateEntitiesRequest]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): BatchCreateEntitiesRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BatchCreateEntitiesRequest]
   /**
     * Decodes a BatchCreateEntitiesRequest message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -66,9 +67,8 @@ object BatchCreateEntitiesRequest {
   /* static member */
   inline def decode(reader: Reader): BatchCreateEntitiesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BatchCreateEntitiesRequest]
   inline def decode(reader: Reader, length: Double): BatchCreateEntitiesRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BatchCreateEntitiesRequest]
-  inline def decode(reader: Uint8Array): BatchCreateEntitiesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BatchCreateEntitiesRequest]
-  inline def decode(reader: Uint8Array, length: Double): BatchCreateEntitiesRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BatchCreateEntitiesRequest]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): BatchCreateEntitiesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BatchCreateEntitiesRequest]
   /**
     * Decodes a BatchCreateEntitiesRequest message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -78,7 +78,6 @@ object BatchCreateEntitiesRequest {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): BatchCreateEntitiesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BatchCreateEntitiesRequest]
-  inline def decodeDelimited(reader: Uint8Array): BatchCreateEntitiesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BatchCreateEntitiesRequest]
   
   /**
     * Encodes the specified BatchCreateEntitiesRequest message. Does not implicitly {@link google.cloud.dialogflow.v2.BatchCreateEntitiesRequest.verify|verify} messages.
@@ -106,7 +105,7 @@ object BatchCreateEntitiesRequest {
     * @returns BatchCreateEntitiesRequest
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): BatchCreateEntitiesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[BatchCreateEntitiesRequest]
+  inline def fromObject(`object`: StringDictionary[Any]): BatchCreateEntitiesRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[BatchCreateEntitiesRequest]
   
   /**
     * Creates a plain object from a BatchCreateEntitiesRequest message. Also converts values to other types if specified.
@@ -115,8 +114,8 @@ object BatchCreateEntitiesRequest {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: BatchCreateEntitiesRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: BatchCreateEntitiesRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: BatchCreateEntitiesRequest): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: BatchCreateEntitiesRequest, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a BatchCreateEntitiesRequest message.
@@ -124,5 +123,5 @@ object BatchCreateEntitiesRequest {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

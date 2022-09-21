@@ -17,7 +17,7 @@ trait GetStatisticsRequest extends StObject {
   var indexName: js.UndefOr[IndexName] = js.undefined
   
   /**
-    * The query used to search. You can specify "*" for the query string to get the count of all indexed things in your AWS account.
+    * The query used to search. You can specify "*" for the query string to get the count of all indexed things in your Amazon Web Services account.
     */
   var queryString: QueryString
   

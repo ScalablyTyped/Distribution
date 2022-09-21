@@ -48,7 +48,7 @@ object global {
       
       @JSGlobal("cast.framework.ActiveInputStateEventData")
       @js.native
-      class ActiveInputStateEventData protected ()
+      open class ActiveInputStateEventData protected ()
         extends StObject
            with typings.chromecastCafSender.cast.framework.ActiveInputStateEventData {
         def this(activeInputState: ActiveInputState) = this()
@@ -62,7 +62,7 @@ object global {
       
       @JSGlobal("cast.framework.ApplicationMetadata")
       @js.native
-      class ApplicationMetadata protected ()
+      open class ApplicationMetadata protected ()
         extends StObject
            with typings.chromecastCafSender.cast.framework.ApplicationMetadata {
         def this(sessionObj: Session) = this()
@@ -82,7 +82,7 @@ object global {
       
       @JSGlobal("cast.framework.ApplicationMetadataEventData")
       @js.native
-      class ApplicationMetadataEventData protected ()
+      open class ApplicationMetadataEventData protected ()
         extends StObject
            with typings.chromecastCafSender.cast.framework.ApplicationMetadataEventData {
         def this(metadata: typings.chromecastCafSender.cast.framework.ApplicationMetadata) = this()
@@ -96,7 +96,7 @@ object global {
       
       @JSGlobal("cast.framework.ApplicationStatusEventData")
       @js.native
-      class ApplicationStatusEventData protected ()
+      open class ApplicationStatusEventData protected ()
         extends StObject
            with typings.chromecastCafSender.cast.framework.ApplicationStatusEventData {
         def this(status: String) = this()
@@ -110,7 +110,7 @@ object global {
       
       @JSGlobal("cast.framework.CastContext")
       @js.native
-      class CastContext ()
+      open class CastContext ()
         extends StObject
            with typings.chromecastCafSender.cast.framework.CastContext
       object CastContext {
@@ -137,7 +137,7 @@ object global {
       
       @JSGlobal("cast.framework.CastSession")
       @js.native
-      class CastSession protected ()
+      open class CastSession protected ()
         extends StObject
            with typings.chromecastCafSender.cast.framework.CastSession {
         def this(sessionObj: Session, state: SessionState) = this()
@@ -161,7 +161,7 @@ object global {
       
       @JSGlobal("cast.framework.CastStateEventData")
       @js.native
-      class CastStateEventData protected ()
+      open class CastStateEventData protected ()
         extends StObject
            with typings.chromecastCafSender.cast.framework.CastStateEventData {
         def this(castState: CastState) = this()
@@ -204,7 +204,7 @@ object global {
       
       @JSGlobal("cast.framework.MediaSessionEventData")
       @js.native
-      class MediaSessionEventData protected ()
+      open class MediaSessionEventData protected ()
         extends StObject
            with typings.chromecastCafSender.cast.framework.MediaSessionEventData {
         def this(mediaSession: Media) = this()
@@ -218,7 +218,7 @@ object global {
       
       @JSGlobal("cast.framework.RemotePlayer")
       @js.native
-      class RemotePlayer ()
+      open class RemotePlayer ()
         extends StObject
            with typings.chromecastCafSender.cast.framework.RemotePlayer {
         
@@ -279,7 +279,7 @@ object global {
       
       @JSGlobal("cast.framework.RemotePlayerChangedEvent")
       @js.native
-      class RemotePlayerChangedEvent[T] protected ()
+      open class RemotePlayerChangedEvent[T] protected ()
         extends StObject
            with typings.chromecastCafSender.cast.framework.RemotePlayerChangedEvent[T] {
         def this(`type`: RemotePlayerEventType, field: String, value: T) = this()
@@ -296,7 +296,7 @@ object global {
       
       @JSGlobal("cast.framework.RemotePlayerController")
       @js.native
-      class RemotePlayerController protected ()
+      open class RemotePlayerController protected ()
         extends StObject
            with typings.chromecastCafSender.cast.framework.RemotePlayerController {
         def this(player: typings.chromecastCafSender.cast.framework.RemotePlayer) = this()
@@ -305,7 +305,7 @@ object global {
         override def addEventListener(
           `type`: RemotePlayerEventType,
           handler: js.Function1[
-                  /* event */ typings.chromecastCafSender.cast.framework.RemotePlayerChangedEvent[js.Any], 
+                  /* event */ typings.chromecastCafSender.cast.framework.RemotePlayerChangedEvent[Any], 
                   Unit
                 ]
         ): Unit = js.native
@@ -329,7 +329,7 @@ object global {
         override def removeEventListener(
           `type`: RemotePlayerEventType,
           handler: js.Function1[
-                  /* event */ typings.chromecastCafSender.cast.framework.RemotePlayerChangedEvent[js.Any], 
+                  /* event */ typings.chromecastCafSender.cast.framework.RemotePlayerChangedEvent[Any], 
                   Unit
                 ]
         ): Unit = js.native
@@ -432,7 +432,7 @@ object global {
       
       @JSGlobal("cast.framework.SessionStateEventData")
       @js.native
-      class SessionStateEventData protected ()
+      open class SessionStateEventData protected ()
         extends StObject
            with typings.chromecastCafSender.cast.framework.SessionStateEventData {
         def this(
@@ -460,7 +460,7 @@ object global {
       
       @JSGlobal("cast.framework.VolumeEventData")
       @js.native
-      class VolumeEventData protected ()
+      open class VolumeEventData protected ()
         extends StObject
            with typings.chromecastCafSender.cast.framework.VolumeEventData {
         def this(volume: Double, isMute: Boolean) = this()

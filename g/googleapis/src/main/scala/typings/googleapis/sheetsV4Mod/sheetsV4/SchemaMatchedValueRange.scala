@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A value range that was matched by one or more data filers.
-  */
 trait SchemaMatchedValueRange extends StObject {
   
   /**
@@ -32,7 +29,7 @@ object SchemaMatchedValueRange {
     
     inline def setDataFiltersUndefined: Self = StObject.set(x, "dataFilters", js.undefined)
     
-    inline def setDataFiltersVarargs(value: SchemaDataFilter*): Self = StObject.set(x, "dataFilters", js.Array(value :_*))
+    inline def setDataFiltersVarargs(value: SchemaDataFilter*): Self = StObject.set(x, "dataFilters", js.Array(value*))
     
     inline def setValueRange(value: SchemaValueRange): Self = StObject.set(x, "valueRange", value.asInstanceOf[js.Any])
     

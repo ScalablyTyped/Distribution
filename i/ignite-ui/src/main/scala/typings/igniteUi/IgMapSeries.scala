@@ -10,7 +10,7 @@ trait IgMapSeries
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Gets or sets the x-radius of the ellipse that is used to round the corners of the column.
@@ -41,12 +41,12 @@ trait IgMapSeries
   /**
     * The ColorScale used to resolve the color values of points in the series.
     */
-  var colorScale: js.UndefOr[js.Any] = js.undefined
+  var colorScale: js.UndefOr[Any] = js.undefined
   
   /**
     * Can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself
     */
-  var dataSource: js.UndefOr[js.Any] = js.undefined
+  var dataSource: js.UndefOr[Any] = js.undefined
   
   /**
     * Explicitly set data source type (such as "json"). Please refer to the documentation of $.ig.DataSource and its type property.
@@ -69,7 +69,7 @@ trait IgMapSeries
     * the series object itself.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  var discreteLegendItemTemplate: js.UndefOr[js.Any] = js.undefined
+  var discreteLegendItemTemplate: js.UndefOr[Any] = js.undefined
   
   /**
     * The name of the property on data source items which contains a numeric value to convert to a Brush using the FillScale.
@@ -79,7 +79,7 @@ trait IgMapSeries
   /**
     * The ValueBrushScale to use when determining Brushes for each Shape, based on the values found in FillMemberPath.
     */
-  var fillScale: js.UndefOr[js.Any] = js.undefined
+  var fillScale: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the value that maps to the maximum heat color.
@@ -136,7 +136,7 @@ trait IgMapSeries
     * isHitTestRender: [if true, indicates that this is a special render pass for hit testing, in which case the brushes from the data should be used]
     * }
     */
-  var legendItemBadgeTemplate: js.UndefOr[js.Any] = js.undefined
+  var legendItemBadgeTemplate: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the LegendItemTemplate property.
@@ -144,7 +144,7 @@ trait IgMapSeries
     * the series object itself.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  var legendItemTemplate: js.UndefOr[js.Any] = js.undefined
+  var legendItemTemplate: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the short moving average period for the current AbsoluteVolumeOscillatorIndicator object.
@@ -206,7 +206,7 @@ trait IgMapSeries
     * isHitTestRender: [if true, indicates that this is a special render pass for hit testing, in which case the brushes from the data should be used]
     * }
     */
-  var markerTemplate: js.UndefOr[js.Any] = js.undefined
+  var markerTemplate: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the marker type for the current series object.If the MarkerTemplate property is set, the setting of the MarkerType property will be ignored.
@@ -281,7 +281,7 @@ trait IgMapSeries
   /**
     * Gets or sets the radius size scale for the bubbles.
     */
-  var radiusScale: js.UndefOr[js.Any] = js.undefined
+  var radiusScale: js.UndefOr[Any] = js.undefined
   
   /**
     * Set to true in order to have an existing series removed from the map, by name
@@ -318,12 +318,12 @@ trait IgMapSeries
   /**
     * The default style to apply to all Shapes in the series.
     */
-  var shapeStyle: js.UndefOr[js.Any] = js.undefined
+  var shapeStyle: js.UndefOr[Any] = js.undefined
   
   /**
     * The StyleSelector which is used to select a style for each Shape.
     */
-  var shapeStyleSelector: js.UndefOr[js.Any] = js.undefined
+  var shapeStyleSelector: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the short moving average period for the current AbsoluteVolumeOscillatorIndicator object.
@@ -428,7 +428,7 @@ trait IgMapSeries
     * The source of triangulation data.
     * This property is optional.  If it is left as null, the triangulation will be created based on the items in the data source.  Triangulation is a demanding operation, so the runtime performance will be better when specifying a TriangulationSource, especially when a large number of data items are present.
     */
-  var trianglesSource: js.UndefOr[js.Any] = js.undefined
+  var trianglesSource: js.UndefOr[Any] = js.undefined
   
   /**
     * The triangulated file source URI or an instance of $.ig.TriangulationDataSource.
@@ -482,7 +482,7 @@ trait IgMapSeries
   /**
     * Gets or sets the ContourValueResolver used to determine the numeric values of contours.
     */
-  var valueResolver: js.UndefOr[js.Any] = js.undefined
+  var valueResolver: js.UndefOr[Any] = js.undefined
   
   /**
     * The minimum scale at which this series becomes visible.
@@ -524,11 +524,11 @@ object IgMapSeries {
     
     inline def setColorMemberPathUndefined: Self = StObject.set(x, "colorMemberPath", js.undefined)
     
-    inline def setColorScale(value: js.Any): Self = StObject.set(x, "colorScale", value.asInstanceOf[js.Any])
+    inline def setColorScale(value: Any): Self = StObject.set(x, "colorScale", value.asInstanceOf[js.Any])
     
     inline def setColorScaleUndefined: Self = StObject.set(x, "colorScale", js.undefined)
     
-    inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceType(value: String): Self = StObject.set(x, "dataSourceType", value.asInstanceOf[js.Any])
     
@@ -544,7 +544,7 @@ object IgMapSeries {
     
     inline def setDatabaseSourceUndefined: Self = StObject.set(x, "databaseSource", js.undefined)
     
-    inline def setDiscreteLegendItemTemplate(value: js.Any): Self = StObject.set(x, "discreteLegendItemTemplate", value.asInstanceOf[js.Any])
+    inline def setDiscreteLegendItemTemplate(value: Any): Self = StObject.set(x, "discreteLegendItemTemplate", value.asInstanceOf[js.Any])
     
     inline def setDiscreteLegendItemTemplateUndefined: Self = StObject.set(x, "discreteLegendItemTemplate", js.undefined)
     
@@ -552,7 +552,7 @@ object IgMapSeries {
     
     inline def setFillMemberPathUndefined: Self = StObject.set(x, "fillMemberPath", js.undefined)
     
-    inline def setFillScale(value: js.Any): Self = StObject.set(x, "fillScale", value.asInstanceOf[js.Any])
+    inline def setFillScale(value: Any): Self = StObject.set(x, "fillScale", value.asInstanceOf[js.Any])
     
     inline def setFillScaleUndefined: Self = StObject.set(x, "fillScale", js.undefined)
     
@@ -580,11 +580,11 @@ object IgMapSeries {
     
     inline def setLatitudeMemberPathUndefined: Self = StObject.set(x, "latitudeMemberPath", js.undefined)
     
-    inline def setLegendItemBadgeTemplate(value: js.Any): Self = StObject.set(x, "legendItemBadgeTemplate", value.asInstanceOf[js.Any])
+    inline def setLegendItemBadgeTemplate(value: Any): Self = StObject.set(x, "legendItemBadgeTemplate", value.asInstanceOf[js.Any])
     
     inline def setLegendItemBadgeTemplateUndefined: Self = StObject.set(x, "legendItemBadgeTemplate", js.undefined)
     
-    inline def setLegendItemTemplate(value: js.Any): Self = StObject.set(x, "legendItemTemplate", value.asInstanceOf[js.Any])
+    inline def setLegendItemTemplate(value: Any): Self = StObject.set(x, "legendItemTemplate", value.asInstanceOf[js.Any])
     
     inline def setLegendItemTemplateUndefined: Self = StObject.set(x, "legendItemTemplate", js.undefined)
     
@@ -612,7 +612,7 @@ object IgMapSeries {
     
     inline def setMarkerOutlineUndefined: Self = StObject.set(x, "markerOutline", js.undefined)
     
-    inline def setMarkerTemplate(value: js.Any): Self = StObject.set(x, "markerTemplate", value.asInstanceOf[js.Any])
+    inline def setMarkerTemplate(value: Any): Self = StObject.set(x, "markerTemplate", value.asInstanceOf[js.Any])
     
     inline def setMarkerTemplateUndefined: Self = StObject.set(x, "markerTemplate", js.undefined)
     
@@ -656,7 +656,7 @@ object IgMapSeries {
     
     inline def setRadiusMemberPathUndefined: Self = StObject.set(x, "radiusMemberPath", js.undefined)
     
-    inline def setRadiusScale(value: js.Any): Self = StObject.set(x, "radiusScale", value.asInstanceOf[js.Any])
+    inline def setRadiusScale(value: Any): Self = StObject.set(x, "radiusScale", value.asInstanceOf[js.Any])
     
     inline def setRadiusScaleUndefined: Self = StObject.set(x, "radiusScale", js.undefined)
     
@@ -684,9 +684,9 @@ object IgMapSeries {
     
     inline def setShapeMemberPathUndefined: Self = StObject.set(x, "shapeMemberPath", js.undefined)
     
-    inline def setShapeStyle(value: js.Any): Self = StObject.set(x, "shapeStyle", value.asInstanceOf[js.Any])
+    inline def setShapeStyle(value: Any): Self = StObject.set(x, "shapeStyle", value.asInstanceOf[js.Any])
     
-    inline def setShapeStyleSelector(value: js.Any): Self = StObject.set(x, "shapeStyleSelector", value.asInstanceOf[js.Any])
+    inline def setShapeStyleSelector(value: Any): Self = StObject.set(x, "shapeStyleSelector", value.asInstanceOf[js.Any])
     
     inline def setShapeStyleSelectorUndefined: Self = StObject.set(x, "shapeStyleSelector", js.undefined)
     
@@ -752,7 +752,7 @@ object IgMapSeries {
     
     inline def setTriangleVertexMemberPath3Undefined: Self = StObject.set(x, "triangleVertexMemberPath3", js.undefined)
     
-    inline def setTrianglesSource(value: js.Any): Self = StObject.set(x, "trianglesSource", value.asInstanceOf[js.Any])
+    inline def setTrianglesSource(value: Any): Self = StObject.set(x, "trianglesSource", value.asInstanceOf[js.Any])
     
     inline def setTrianglesSourceUndefined: Self = StObject.set(x, "trianglesSource", js.undefined)
     
@@ -784,7 +784,7 @@ object IgMapSeries {
     
     inline def setValueMemberPathUndefined: Self = StObject.set(x, "valueMemberPath", js.undefined)
     
-    inline def setValueResolver(value: js.Any): Self = StObject.set(x, "valueResolver", value.asInstanceOf[js.Any])
+    inline def setValueResolver(value: Any): Self = StObject.set(x, "valueResolver", value.asInstanceOf[js.Any])
     
     inline def setValueResolverUndefined: Self = StObject.set(x, "valueResolver", js.undefined)
     

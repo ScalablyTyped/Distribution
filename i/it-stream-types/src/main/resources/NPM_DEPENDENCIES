@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "it-stream-types" : "1.0.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "it-stream-types" : "1.0.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

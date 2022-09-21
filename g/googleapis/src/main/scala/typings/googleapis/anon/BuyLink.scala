@@ -51,7 +51,7 @@ object BuyLink {
     
     inline def setOffersUndefined: Self = StObject.set(x, "offers", js.undefined)
     
-    inline def setOffersVarargs(value: FinskyOfferType*): Self = StObject.set(x, "offers", js.Array(value :_*))
+    inline def setOffersVarargs(value: FinskyOfferType*): Self = StObject.set(x, "offers", js.Array(value*))
     
     inline def setOnSaleDate(value: String): Self = StObject.set(x, "onSaleDate", value.asInstanceOf[js.Any])
     

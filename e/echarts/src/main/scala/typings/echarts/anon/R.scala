@@ -30,7 +30,7 @@ trait R extends StObject {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_rect.shape.r
     */
-  var r: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var r: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * The width of the shape of the element.
@@ -71,11 +71,11 @@ object R {
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    inline def setR(value: js.Array[js.Any]): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+    inline def setR(value: js.Array[Any]): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     
     inline def setRUndefined: Self = StObject.set(x, "r", js.undefined)
     
-    inline def setRVarargs(value: js.Any*): Self = StObject.set(x, "r", js.Array(value :_*))
+    inline def setRVarargs(value: Any*): Self = StObject.set(x, "r", js.Array(value*))
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

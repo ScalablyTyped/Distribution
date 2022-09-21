@@ -25,6 +25,8 @@ object utilsMod {
   
   inline def checkInitialOverlap(values: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkInitialOverlap")(values.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
+  inline def checkValuesAgainstBoundaries(value: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("checkValuesAgainstBoundaries")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
   inline def getClosestThumbIndex(thumbs: js.Array[Element], clientX: Double, clientY: Double, direction: Direction): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getClosestThumbIndex")(thumbs.asInstanceOf[js.Any], clientX.asInstanceOf[js.Any], clientY.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def getMargin(element: Element): Bottom = ^.asInstanceOf[js.Dynamic].applyDynamic("getMargin")(element.asInstanceOf[js.Any]).asInstanceOf[Bottom]
@@ -55,7 +57,7 @@ object utilsMod {
   
   inline def replaceAt(values: js.Array[Double], index: Double, value: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceAt")(values.asInstanceOf[js.Any], index.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  inline def schd(fn: js.Function): js.Function1[/* repeated */ js.Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("schd")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, Unit]]
+  inline def schd(fn: js.Function): js.Function1[/* repeated */ Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("schd")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ Any, Unit]]
   
   inline def translate(element: Element, x: Double, y: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(element.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
   

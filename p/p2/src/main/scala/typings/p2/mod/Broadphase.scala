@@ -1,13 +1,15 @@
 package typings.p2.mod
 
+import typings.p2.p2Numbers.`1`
+import typings.p2.p2Numbers.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("p2", "Broadphase")
 @js.native
-class Broadphase protected () extends StObject {
-  def this(`type`: Double) = this()
+open class Broadphase protected () extends StObject {
+  def this(`type`: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Broadphase.NAIVE */ Any) = this()
   
   def aabbCheck(bodyA: Body, bodyB: Body): Boolean = js.native
   
@@ -24,7 +26,7 @@ class Broadphase protected () extends StObject {
   
   def boundingVolumeCheck(bodyA: Body, bodyB: Body): Boolean = js.native
   
-  var boundingVolumeType: Double = js.native
+  var boundingVolumeType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Broadphase.AABB */ Any = js.native
   
   def canCollide(bodyA: Body, bodyB: Body): Boolean = js.native
   
@@ -34,7 +36,7 @@ class Broadphase protected () extends StObject {
   
   def setWorld(world: World): Unit = js.native
   
-  var `type`: Double = js.native
+  var `type`: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Broadphase.NAIVE */ Any = js.native
   
   var world: World = js.native
 }
@@ -47,23 +49,23 @@ object Broadphase {
   
   @JSImport("p2", "Broadphase.AABB")
   @js.native
-  def AABB: Double = js.native
-  inline def AABB_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AABB")(x.asInstanceOf[js.Any])
+  def AABB: `1` = js.native
+  inline def AABB_=(x: `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AABB")(x.asInstanceOf[js.Any])
   
   @JSImport("p2", "Broadphase.BOUNDING_CIRCLE")
   @js.native
-  def BOUNDING_CIRCLE: Double = js.native
-  inline def BOUNDING_CIRCLE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BOUNDING_CIRCLE")(x.asInstanceOf[js.Any])
+  def BOUNDING_CIRCLE: `2` = js.native
+  inline def BOUNDING_CIRCLE_=(x: `2`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BOUNDING_CIRCLE")(x.asInstanceOf[js.Any])
   
   @JSImport("p2", "Broadphase.NAIVE")
   @js.native
-  def NAIVE: Double = js.native
-  inline def NAIVE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAIVE")(x.asInstanceOf[js.Any])
+  def NAIVE: `1` = js.native
+  inline def NAIVE_=(x: `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAIVE")(x.asInstanceOf[js.Any])
   
   @JSImport("p2", "Broadphase.SAP")
   @js.native
-  def SAP: Double = js.native
-  inline def SAP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SAP")(x.asInstanceOf[js.Any])
+  def SAP: `2` = js.native
+  inline def SAP_=(x: `2`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SAP")(x.asInstanceOf[js.Any])
   
   inline def aabbCheck(bodyA: Body, bodyB: Body): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("aabbCheck")(bodyA.asInstanceOf[js.Any], bodyB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   

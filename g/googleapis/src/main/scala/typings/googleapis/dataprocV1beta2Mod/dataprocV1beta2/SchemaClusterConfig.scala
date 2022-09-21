@@ -4,27 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The cluster config.
-  */
 trait SchemaClusterConfig extends StObject {
   
   /**
-    * Optional. Autoscaling config for the policy associated with the cluster.
-    * Cluster does not autoscale if this field is unset.
+    * Optional. Autoscaling config for the policy associated with the cluster. Cluster does not autoscale if this field is unset.
     */
   var autoscalingConfig: js.UndefOr[SchemaAutoscalingConfig] = js.undefined
   
   /**
-    * Optional. A Google Cloud Storage bucket used to stage job dependencies,
-    * config files, and job driver console output. If you do not specify a
-    * staging bucket, Cloud Dataproc will determine a Cloud Storage location
-    * (US, ASIA, or EU) for your cluster&#39;s staging bucket according to the
-    * Google Compute Engine zone where your cluster is deployed, and then
-    * create and manage this project-level, per-location bucket (see Cloud
-    * Dataproc staging bucket).
+    * Optional. A Cloud Storage bucket used to stage job dependencies, config files, and job driver console output. If you do not specify a staging bucket, Cloud Dataproc will determine a Cloud Storage location (US, ASIA, or EU) for your cluster's staging bucket according to the Compute Engine zone where your cluster is deployed, and then create and manage this project-level, per-location bucket (see Dataproc staging bucket (https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/staging-bucket)). This field requires a Cloud Storage bucket name, not a URI to a Cloud Storage bucket.
     */
-  var configBucket: js.UndefOr[String] = js.undefined
+  var configBucket: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Optional. Encryption settings for the cluster.
@@ -37,20 +27,17 @@ trait SchemaClusterConfig extends StObject {
   var endpointConfig: js.UndefOr[SchemaEndpointConfig] = js.undefined
   
   /**
-    * Optional. The shared Compute Engine config settings for all instances in
-    * a cluster.
+    * Optional. The shared Compute Engine config settings for all instances in a cluster.
     */
   var gceClusterConfig: js.UndefOr[SchemaGceClusterConfig] = js.undefined
   
   /**
-    * Optional. Commands to execute on each node after config is completed. By
-    * default, executables are run on master and all worker nodes. You can test
-    * a node&#39;s &lt;code&gt;role&lt;/code&gt; metadata to run an executable
-    * on a master or worker node, as shown below using curl (you can also use
-    * wget): ROLE=$(curl -H Metadata-Flavor:Google
-    * http://metadata/computeMetadata/v1beta2/instance/attributes/dataproc-role)
-    * if [[ &quot;${ROLE}&quot; == &#39;Master&#39; ]]; then   ... master
-    * specific actions ... else   ... worker specific actions ... fi
+    * Optional. The Kubernetes Engine config for Dataproc clusters deployed to Kubernetes. Setting this is considered mutually exclusive with Compute Engine-based options such as gce_cluster_config, master_config, worker_config, secondary_worker_config, and autoscaling_config.
+    */
+  var gkeClusterConfig: js.UndefOr[SchemaGkeClusterConfig] = js.undefined
+  
+  /**
+    * Optional. Commands to execute on each node after config is completed. By default, executables are run on master and all worker nodes. You can test a node's role metadata to run an executable on a master or worker node, as shown below using curl (you can also use wget): ROLE=$(curl -H Metadata-Flavor:Google http://metadata/computeMetadata/v1beta2/instance/attributes/dataproc-role) if [[ "${ROLE\}" == 'Master' ]]; then ... master specific actions ... else ... worker specific actions ... fi
     */
   var initializationActions: js.UndefOr[js.Array[SchemaNodeInitializationAction]] = js.undefined
   
@@ -60,14 +47,17 @@ trait SchemaClusterConfig extends StObject {
   var lifecycleConfig: js.UndefOr[SchemaLifecycleConfig] = js.undefined
   
   /**
-    * Optional. The Compute Engine config settings for the master instance in a
-    * cluster.
+    * Optional. The Compute Engine config settings for the master instance in a cluster.
     */
   var masterConfig: js.UndefOr[SchemaInstanceGroupConfig] = js.undefined
   
   /**
-    * Optional. The Compute Engine config settings for additional worker
-    * instances in a cluster.
+    * Optional. Metastore configuration.
+    */
+  var metastoreConfig: js.UndefOr[SchemaMetastoreConfig] = js.undefined
+  
+  /**
+    * Optional. The Compute Engine config settings for additional worker instances in a cluster.
     */
   var secondaryWorkerConfig: js.UndefOr[SchemaInstanceGroupConfig] = js.undefined
   
@@ -82,8 +72,12 @@ trait SchemaClusterConfig extends StObject {
   var softwareConfig: js.UndefOr[SchemaSoftwareConfig] = js.undefined
   
   /**
-    * Optional. The Compute Engine config settings for worker instances in a
-    * cluster.
+    * Optional. A Cloud Storage bucket used to store ephemeral cluster and jobs data, such as Spark and MapReduce history files. If you do not specify a temp bucket, Dataproc will determine a Cloud Storage location (US, ASIA, or EU) for your cluster's temp bucket according to the Compute Engine zone where your cluster is deployed, and then create and manage this project-level, per-location bucket. The default bucket has a TTL of 90 days, but you can use any TTL (or none) if you specify a bucket. This field requires a Cloud Storage bucket name, not a URI to a Cloud Storage bucket.
+    */
+  var tempBucket: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Optional. The Compute Engine config settings for worker instances in a cluster.
     */
   var workerConfig: js.UndefOr[SchemaInstanceGroupConfig] = js.undefined
 }
@@ -102,6 +96,8 @@ object SchemaClusterConfig {
     
     inline def setConfigBucket(value: String): Self = StObject.set(x, "configBucket", value.asInstanceOf[js.Any])
     
+    inline def setConfigBucketNull: Self = StObject.set(x, "configBucket", null)
+    
     inline def setConfigBucketUndefined: Self = StObject.set(x, "configBucket", js.undefined)
     
     inline def setEncryptionConfig(value: SchemaEncryptionConfig): Self = StObject.set(x, "encryptionConfig", value.asInstanceOf[js.Any])
@@ -116,11 +112,15 @@ object SchemaClusterConfig {
     
     inline def setGceClusterConfigUndefined: Self = StObject.set(x, "gceClusterConfig", js.undefined)
     
+    inline def setGkeClusterConfig(value: SchemaGkeClusterConfig): Self = StObject.set(x, "gkeClusterConfig", value.asInstanceOf[js.Any])
+    
+    inline def setGkeClusterConfigUndefined: Self = StObject.set(x, "gkeClusterConfig", js.undefined)
+    
     inline def setInitializationActions(value: js.Array[SchemaNodeInitializationAction]): Self = StObject.set(x, "initializationActions", value.asInstanceOf[js.Any])
     
     inline def setInitializationActionsUndefined: Self = StObject.set(x, "initializationActions", js.undefined)
     
-    inline def setInitializationActionsVarargs(value: SchemaNodeInitializationAction*): Self = StObject.set(x, "initializationActions", js.Array(value :_*))
+    inline def setInitializationActionsVarargs(value: SchemaNodeInitializationAction*): Self = StObject.set(x, "initializationActions", js.Array(value*))
     
     inline def setLifecycleConfig(value: SchemaLifecycleConfig): Self = StObject.set(x, "lifecycleConfig", value.asInstanceOf[js.Any])
     
@@ -129,6 +129,10 @@ object SchemaClusterConfig {
     inline def setMasterConfig(value: SchemaInstanceGroupConfig): Self = StObject.set(x, "masterConfig", value.asInstanceOf[js.Any])
     
     inline def setMasterConfigUndefined: Self = StObject.set(x, "masterConfig", js.undefined)
+    
+    inline def setMetastoreConfig(value: SchemaMetastoreConfig): Self = StObject.set(x, "metastoreConfig", value.asInstanceOf[js.Any])
+    
+    inline def setMetastoreConfigUndefined: Self = StObject.set(x, "metastoreConfig", js.undefined)
     
     inline def setSecondaryWorkerConfig(value: SchemaInstanceGroupConfig): Self = StObject.set(x, "secondaryWorkerConfig", value.asInstanceOf[js.Any])
     
@@ -141,6 +145,12 @@ object SchemaClusterConfig {
     inline def setSoftwareConfig(value: SchemaSoftwareConfig): Self = StObject.set(x, "softwareConfig", value.asInstanceOf[js.Any])
     
     inline def setSoftwareConfigUndefined: Self = StObject.set(x, "softwareConfig", js.undefined)
+    
+    inline def setTempBucket(value: String): Self = StObject.set(x, "tempBucket", value.asInstanceOf[js.Any])
+    
+    inline def setTempBucketNull: Self = StObject.set(x, "tempBucket", null)
+    
+    inline def setTempBucketUndefined: Self = StObject.set(x, "tempBucket", js.undefined)
     
     inline def setWorkerConfig(value: SchemaInstanceGroupConfig): Self = StObject.set(x, "workerConfig", value.asInstanceOf[js.Any])
     

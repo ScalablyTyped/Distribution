@@ -415,6 +415,13 @@ object BootstrapFileInput {
     var browseLabel: js.UndefOr[String] = js.undefined
     
     /**
+      * Whether to enable file browse/select on clicking of the preview zone.
+      * @default false
+      * @see {@link https://plugins.krajee.com/file-input/plugin-options#browseOnZoneClick}
+      */
+    var browseOnZoneClick: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * the CSS class for the each of the button labels for browse, remove, upload, and cancel.
       * Defaults to hidden-xs, which automatically hides the button labels for small screen devices and renders as smaller iconic buttons to fit to the screen.
       */
@@ -587,7 +594,14 @@ object BootstrapFileInput {
       * text files: Include CSS class file-preview-text
       * other files: Include CSS class file-preview-other
       */
-    var initialPreview: js.UndefOr[String | js.Array[js.Any]] = js.undefined
+    var initialPreview: js.UndefOr[String | js.Array[Any]] = js.undefined
+    
+    /**
+      * whether the initial preview content set is to be parsed as data instead of raw markup.
+      * @default false
+      * for backward compatibility (prior to v4.3.2).
+      */
+    var initialPreviewAsData: js.UndefOr[Boolean] = js.undefined
     
     /**
       * the configuration for setting up important properties for each initialPreview item (that is setup as part of initialPreview).
@@ -661,6 +675,24 @@ object BootstrapFileInput {
       * Note that if you set resizeImage property to true, then the entire image will be resized within this width (depending on resizePreference).
       */
     var maxImageWidth: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * whether to merge the ajax callback functions set in ajaxSettings with the default plugin callbacks for beforeSend, success, error, complete.
+      * @default false
+      * In addition to boolean false, the following string values can be set:
+      * 'before': when set to 'before', the ajax callbacks set in ajaxSettings will be merged before the default plugin callback.
+      * 'after': when set to 'after', the ajax callbacks set in ajaxSettings will be merged after the default plugin callback.
+      */
+    var mergeAjaxCallbacks: js.UndefOr[Boolean | String] = js.undefined
+    
+    /**
+      * whether to merge the ajax callback functions set in ajaxDeleteSettings with the default plugin callbacks for beforeSend, success, error, complete.
+      * @default false
+      * In addition to boolean false, the following string values can be set:
+      * 'before': when set to 'before', the ajax callbacks set in ajaxDeleteSettings will be merged before the default plugin callback.
+      * 'after': when set to 'after', the ajax callbacks set in ajaxDeleteSettings will be merged after the default plugin callback.
+      */
+    var mergeAjaxDeleteCallbacks: js.UndefOr[Boolean | String] = js.undefined
     
     /**
       * the minimum number of files allowed for each multiple upload.
@@ -923,6 +955,12 @@ object BootstrapFileInput {
     var overwriteInitial: js.UndefOr[Boolean] = js.undefined
     
     /**
+      * Callback to pre process upload which will return a converted or encrypted file content.
+      * See {@link https://plugins.krajee.com/file-input/plugin-options#preProcessUpload}
+      */
+    var preProcessUpload: js.UndefOr[js.Function2[/* fileId */ String, /* file */ File, File]] = js.undefined
+    
+    /**
       * Any additional CSS class to append to the preview container.
       */
     var previewClass: js.UndefOr[String] = js.undefined
@@ -1077,6 +1115,12 @@ object BootstrapFileInput {
       * @default true
       */
     var showAjaxErrorDetails: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Whether to display the file browse button. Defaults to true
+      * @default true
+      */
+    var showBrowse: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to display the file upload cancel button.
@@ -1241,25 +1285,25 @@ object BootstrapFileInput {
       
       inline def setAllowedFileExtensionsUndefined: Self = StObject.set(x, "allowedFileExtensions", js.undefined)
       
-      inline def setAllowedFileExtensionsVarargs(value: String*): Self = StObject.set(x, "allowedFileExtensions", js.Array(value :_*))
+      inline def setAllowedFileExtensionsVarargs(value: String*): Self = StObject.set(x, "allowedFileExtensions", js.Array(value*))
       
       inline def setAllowedFileTypes(value: js.Array[image | html | text | video | audio | flash | `object`]): Self = StObject.set(x, "allowedFileTypes", value.asInstanceOf[js.Any])
       
       inline def setAllowedFileTypesUndefined: Self = StObject.set(x, "allowedFileTypes", js.undefined)
       
-      inline def setAllowedFileTypesVarargs(value: (image | html | text | video | audio | flash | `object`)*): Self = StObject.set(x, "allowedFileTypes", js.Array(value :_*))
+      inline def setAllowedFileTypesVarargs(value: (image | html | text | video | audio | flash | `object`)*): Self = StObject.set(x, "allowedFileTypes", js.Array(value*))
       
       inline def setAllowedPreviewMimeTypes(value: js.Array[String]): Self = StObject.set(x, "allowedPreviewMimeTypes", value.asInstanceOf[js.Any])
       
       inline def setAllowedPreviewMimeTypesUndefined: Self = StObject.set(x, "allowedPreviewMimeTypes", js.undefined)
       
-      inline def setAllowedPreviewMimeTypesVarargs(value: String*): Self = StObject.set(x, "allowedPreviewMimeTypes", js.Array(value :_*))
+      inline def setAllowedPreviewMimeTypesVarargs(value: String*): Self = StObject.set(x, "allowedPreviewMimeTypes", js.Array(value*))
       
       inline def setAllowedPreviewTypes(value: js.Array[image | html | text | video | audio | flash | `object`]): Self = StObject.set(x, "allowedPreviewTypes", value.asInstanceOf[js.Any])
       
       inline def setAllowedPreviewTypesUndefined: Self = StObject.set(x, "allowedPreviewTypes", js.undefined)
       
-      inline def setAllowedPreviewTypesVarargs(value: (image | html | text | video | audio | flash | `object`)*): Self = StObject.set(x, "allowedPreviewTypes", js.Array(value :_*))
+      inline def setAllowedPreviewTypesVarargs(value: (image | html | text | video | audio | flash | `object`)*): Self = StObject.set(x, "allowedPreviewTypes", js.Array(value*))
       
       inline def setAutoReplace(value: Boolean): Self = StObject.set(x, "autoReplace", value.asInstanceOf[js.Any])
       
@@ -1276,6 +1320,10 @@ object BootstrapFileInput {
       inline def setBrowseLabel(value: String): Self = StObject.set(x, "browseLabel", value.asInstanceOf[js.Any])
       
       inline def setBrowseLabelUndefined: Self = StObject.set(x, "browseLabel", js.undefined)
+      
+      inline def setBrowseOnZoneClick(value: Boolean): Self = StObject.set(x, "browseOnZoneClick", value.asInstanceOf[js.Any])
+      
+      inline def setBrowseOnZoneClickUndefined: Self = StObject.set(x, "browseOnZoneClick", js.undefined)
       
       inline def setButtonLabelClass(value: String): Self = StObject.set(x, "buttonLabelClass", value.asInstanceOf[js.Any])
       
@@ -1373,13 +1421,17 @@ object BootstrapFileInput {
       
       inline def setInitialCaptionUndefined: Self = StObject.set(x, "initialCaption", js.undefined)
       
-      inline def setInitialPreview(value: String | js.Array[js.Any]): Self = StObject.set(x, "initialPreview", value.asInstanceOf[js.Any])
+      inline def setInitialPreview(value: String | js.Array[Any]): Self = StObject.set(x, "initialPreview", value.asInstanceOf[js.Any])
+      
+      inline def setInitialPreviewAsData(value: Boolean): Self = StObject.set(x, "initialPreviewAsData", value.asInstanceOf[js.Any])
+      
+      inline def setInitialPreviewAsDataUndefined: Self = StObject.set(x, "initialPreviewAsData", js.undefined)
       
       inline def setInitialPreviewConfig(value: js.Array[PreviewConfig]): Self = StObject.set(x, "initialPreviewConfig", value.asInstanceOf[js.Any])
       
       inline def setInitialPreviewConfigUndefined: Self = StObject.set(x, "initialPreviewConfig", js.undefined)
       
-      inline def setInitialPreviewConfigVarargs(value: PreviewConfig*): Self = StObject.set(x, "initialPreviewConfig", js.Array(value :_*))
+      inline def setInitialPreviewConfigVarargs(value: PreviewConfig*): Self = StObject.set(x, "initialPreviewConfig", js.Array(value*))
       
       inline def setInitialPreviewCount(value: Double): Self = StObject.set(x, "initialPreviewCount", value.asInstanceOf[js.Any])
       
@@ -1399,7 +1451,7 @@ object BootstrapFileInput {
       
       inline def setInitialPreviewUndefined: Self = StObject.set(x, "initialPreview", js.undefined)
       
-      inline def setInitialPreviewVarargs(value: js.Any*): Self = StObject.set(x, "initialPreview", js.Array(value :_*))
+      inline def setInitialPreviewVarargs(value: Any*): Self = StObject.set(x, "initialPreview", js.Array(value*))
       
       inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
@@ -1428,6 +1480,14 @@ object BootstrapFileInput {
       inline def setMaxImageWidth(value: Double): Self = StObject.set(x, "maxImageWidth", value.asInstanceOf[js.Any])
       
       inline def setMaxImageWidthUndefined: Self = StObject.set(x, "maxImageWidth", js.undefined)
+      
+      inline def setMergeAjaxCallbacks(value: Boolean | String): Self = StObject.set(x, "mergeAjaxCallbacks", value.asInstanceOf[js.Any])
+      
+      inline def setMergeAjaxCallbacksUndefined: Self = StObject.set(x, "mergeAjaxCallbacks", js.undefined)
+      
+      inline def setMergeAjaxDeleteCallbacks(value: Boolean | String): Self = StObject.set(x, "mergeAjaxDeleteCallbacks", value.asInstanceOf[js.Any])
+      
+      inline def setMergeAjaxDeleteCallbacksUndefined: Self = StObject.set(x, "mergeAjaxDeleteCallbacks", js.undefined)
       
       inline def setMinFileCount(value: Double): Self = StObject.set(x, "minFileCount", value.asInstanceOf[js.Any])
       
@@ -1553,6 +1613,10 @@ object BootstrapFileInput {
       
       inline def setOverwriteInitialUndefined: Self = StObject.set(x, "overwriteInitial", js.undefined)
       
+      inline def setPreProcessUpload(value: (/* fileId */ String, /* file */ File) => File): Self = StObject.set(x, "preProcessUpload", js.Any.fromFunction2(value))
+      
+      inline def setPreProcessUploadUndefined: Self = StObject.set(x, "preProcessUpload", js.undefined)
+      
       inline def setPreviewClass(value: String): Self = StObject.set(x, "previewClass", value.asInstanceOf[js.Any])
       
       inline def setPreviewClassUndefined: Self = StObject.set(x, "previewClass", js.undefined)
@@ -1648,6 +1712,10 @@ object BootstrapFileInput {
       inline def setShowAjaxErrorDetails(value: Boolean): Self = StObject.set(x, "showAjaxErrorDetails", value.asInstanceOf[js.Any])
       
       inline def setShowAjaxErrorDetailsUndefined: Self = StObject.set(x, "showAjaxErrorDetails", js.undefined)
+      
+      inline def setShowBrowse(value: Boolean): Self = StObject.set(x, "showBrowse", value.asInstanceOf[js.Any])
+      
+      inline def setShowBrowseUndefined: Self = StObject.set(x, "showBrowse", js.undefined)
       
       inline def setShowCancel(value: Boolean): Self = StObject.set(x, "showCancel", value.asInstanceOf[js.Any])
       
@@ -2085,15 +2153,15 @@ object BootstrapFileInput {
       
       inline def setConfig(value: js.Array[PreviewConfig]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      inline def setConfigVarargs(value: PreviewConfig*): Self = StObject.set(x, "config", js.Array(value :_*))
+      inline def setConfigVarargs(value: PreviewConfig*): Self = StObject.set(x, "config", js.Array(value*))
       
       inline def setContent(value: js.Array[String]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      inline def setContentVarargs(value: String*): Self = StObject.set(x, "content", js.Array(value :_*))
+      inline def setContentVarargs(value: String*): Self = StObject.set(x, "content", js.Array(value*))
       
       inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     }
   }
   

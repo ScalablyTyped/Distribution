@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents a timed metadata track. The track contains a list of IMediaCue objects and raises events at the beginning and end of the time window of each cue. */
 @JSGlobal("Windows.Media.Core.TimedMetadataTrack")
 @js.native
-class TimedMetadataTrack protected ()
+open class TimedMetadataTrack protected ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Core.TimedMetadataTrack {
   /**

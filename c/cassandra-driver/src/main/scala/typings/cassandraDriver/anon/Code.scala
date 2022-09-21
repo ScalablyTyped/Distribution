@@ -9,11 +9,11 @@ trait Code extends StObject {
   
   var code: dataTypes
   
-  var info: js.Any
+  var info: Any
 }
 object Code {
   
-  inline def apply(code: dataTypes, info: js.Any): Code = {
+  inline def apply(code: dataTypes, info: Any): Code = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any])
     __obj.asInstanceOf[Code]
   }
@@ -22,6 +22,6 @@ object Code {
     
     inline def setCode(value: dataTypes): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    inline def setInfo(value: js.Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
   }
 }

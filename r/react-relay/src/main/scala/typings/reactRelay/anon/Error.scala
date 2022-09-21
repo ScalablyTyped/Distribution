@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Error[TOperation /* <: OperationType */] extends StObject {
   
-  var error: typings.std.Error | Null
+  var error: js.Error | Null
   
   var props: (/* import warning: importer.ImportType#apply Failed type conversion: TOperation['response'] */ js.Any) | Null
   
@@ -22,7 +22,7 @@ object Error {
   
   extension [Self <: Error[?], TOperation /* <: OperationType */](x: Self & Error[TOperation]) {
     
-    inline def setError(value: typings.std.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     inline def setErrorNull: Self = StObject.set(x, "error", null)
     

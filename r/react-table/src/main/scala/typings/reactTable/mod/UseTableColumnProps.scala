@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait UseTableColumnProps[D /* <: js.Object */] extends StObject {
   
-  var columns: js.Array[ColumnInstance[D]] = js.native
+  var columns: js.UndefOr[js.Array[ColumnInstance[D]]] = js.native
   
   var depth: Double = js.native
   
@@ -21,31 +21,22 @@ trait UseTableColumnProps[D /* <: js.Object */] extends StObject {
   def getHeaderProps(propGetter: HeaderPropGetter[D]): TableHeaderProps = js.native
   
   // not documented
-  def getToggleHiddenProps(): js.Any = js.native
-  def getToggleHiddenProps(userProps: js.Any): js.Any = js.native
+  def getToggleHiddenProps(): Any = js.native
+  def getToggleHiddenProps(userProps: Any): Any = js.native
   
   var id: IdType[D] = js.native
   
-  // not documented
-  var index: Double = js.native
-  
   var isVisible: Boolean = js.native
   
-  var parent: ColumnInstance[D] = js.native
+  var parent: js.UndefOr[ColumnInstance[D]] = js.native
   
   // not documented
   var placeholderOf: js.UndefOr[ColumnInstance[js.Object]] = js.native
   
+  def render(`type`: Header | Footer): ReactNode = js.native
+  def render(`type`: Header | Footer, props: js.Object): ReactNode = js.native
   def render(`type`: String): ReactNode = js.native
   def render(`type`: String, props: js.Object): ReactNode = js.native
-  @JSName("render")
-  def render_Footer(`type`: Footer): ReactNode = js.native
-  @JSName("render")
-  def render_Footer(`type`: Footer, props: js.Object): ReactNode = js.native
-  @JSName("render")
-  def render_Header(`type`: Header): ReactNode = js.native
-  @JSName("render")
-  def render_Header(`type`: Header, props: js.Object): ReactNode = js.native
   
   def toggleHidden(): Unit = js.native
   def toggleHidden(value: Boolean): Unit = js.native

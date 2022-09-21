@@ -62,6 +62,9 @@ trait Finding extends StObject {
   
   /** Output only. An addon containing information reported for an XSS, if any. */
   var xss: js.UndefOr[Xss] = js.undefined
+  
+  /** Output only. An addon containing information reported for an XXE, if any. */
+  var xxe: js.UndefOr[Xxe] = js.undefined
 }
 object Finding {
   
@@ -139,5 +142,9 @@ object Finding {
     inline def setXss(value: Xss): Self = StObject.set(x, "xss", value.asInstanceOf[js.Any])
     
     inline def setXssUndefined: Self = StObject.set(x, "xss", js.undefined)
+    
+    inline def setXxe(value: Xxe): Self = StObject.set(x, "xxe", value.asInstanceOf[js.Any])
+    
+    inline def setXxeUndefined: Self = StObject.set(x, "xxe", js.undefined)
   }
 }

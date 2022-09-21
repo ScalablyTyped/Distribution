@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@ant-design/react-native", "List")
 @js.native
-class List () extends default
+open class List () extends default
 /* static members */
 object List {
   

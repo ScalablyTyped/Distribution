@@ -25,7 +25,7 @@ trait ValidatedResponse[T] extends StObject {
   
   var message: String
   
-  var params: Record[String, js.Any]
+  var params: Record[String, Any]
   
   var paymentMethod: PaymentMethod
   
@@ -51,7 +51,7 @@ object ValidatedResponse {
     errors: ValidationErrorsCollection,
     merchantAccount: MerchantAccount,
     message: String,
-    params: Record[String, js.Any],
+    params: Record[String, Any],
     paymentMethod: PaymentMethod,
     paymentMethodNonce: PaymentMethodNonce,
     settlementBatchSumary: SettlementBatchSummary,
@@ -83,7 +83,7 @@ object ValidatedResponse {
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    inline def setParams(value: Record[String, js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: Record[String, Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setPaymentMethod(value: PaymentMethod): Self = StObject.set(x, "paymentMethod", value.asInstanceOf[js.Any])
     

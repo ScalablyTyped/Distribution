@@ -2,7 +2,6 @@ package typings.lolex
 
 import org.scalablytyped.runtime.Shortcut
 import typings.lolex.anon.Now
-import typings.std.Date
 import typings.std.DateConstructor
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
@@ -16,11 +15,11 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def createClock[TClock /* <: Clock */](): TClock = ^.asInstanceOf[js.Dynamic].applyDynamic("createClock")().asInstanceOf[TClock]
+  inline def createClock[TClock /* <: Clock */](now: js.Date): TClock = ^.asInstanceOf[js.Dynamic].applyDynamic("createClock")(now.asInstanceOf[js.Any]).asInstanceOf[TClock]
+  inline def createClock[TClock /* <: Clock */](now: js.Date, loopLimit: Double): TClock = (^.asInstanceOf[js.Dynamic].applyDynamic("createClock")(now.asInstanceOf[js.Any], loopLimit.asInstanceOf[js.Any])).asInstanceOf[TClock]
   inline def createClock[TClock /* <: Clock */](now: Double): TClock = ^.asInstanceOf[js.Dynamic].applyDynamic("createClock")(now.asInstanceOf[js.Any]).asInstanceOf[TClock]
   inline def createClock[TClock /* <: Clock */](now: Double, loopLimit: Double): TClock = (^.asInstanceOf[js.Dynamic].applyDynamic("createClock")(now.asInstanceOf[js.Any], loopLimit.asInstanceOf[js.Any])).asInstanceOf[TClock]
   inline def createClock[TClock /* <: Clock */](now: Unit, loopLimit: Double): TClock = (^.asInstanceOf[js.Dynamic].applyDynamic("createClock")(now.asInstanceOf[js.Any], loopLimit.asInstanceOf[js.Any])).asInstanceOf[TClock]
-  inline def createClock[TClock /* <: Clock */](now: Date): TClock = ^.asInstanceOf[js.Dynamic].applyDynamic("createClock")(now.asInstanceOf[js.Any]).asInstanceOf[TClock]
-  inline def createClock[TClock /* <: Clock */](now: Date, loopLimit: Double): TClock = (^.asInstanceOf[js.Dynamic].applyDynamic("createClock")(now.asInstanceOf[js.Any], loopLimit.asInstanceOf[js.Any])).asInstanceOf[TClock]
   
   inline def install[TClock /* <: Clock */](): InstalledClock[TClock] = ^.asInstanceOf[js.Dynamic].applyDynamic("install")().asInstanceOf[InstalledClock[TClock]]
   inline def install[TClock /* <: Clock */](opts: LolexInstallOpts): InstalledClock[TClock] = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(opts.asInstanceOf[js.Any]).asInstanceOf[InstalledClock[TClock]]
@@ -37,13 +36,17 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("lolex", "timers.Date")
     @js.native
-    class Date ()
+    /* standard es5 */
+    open class Date ()
       extends StObject
          with typings.std.Date {
       def this(value: String) = this()
+      def this(value: js.Date) = this()
+      /* standard es2015.core */
       def this(value: Double) = this()
-      def this(value: typings.std.Date) = this()
+      /* standard scripthost */
       def this(vd: VarDate) = this()
+      /* standard es5 */
       def this(year: Double, month: Double) = this()
       def this(year: Double, month: Double, date: Double) = this()
       def this(year: Double, month: Double, date: Double, hours: Double) = this()
@@ -197,6 +200,7 @@ object mod {
   
   trait GlobalTimers[TTimerId /* <: TimerId */] extends StObject {
     
+    /* standard es5 */
     /**
       * Implements the Date object but using this clock to provide the correct time.
       */
@@ -245,7 +249,7 @@ object mod {
       * @param args   Any extra arguments to pass to the callback.
       * @returns Time identifier for cancellation.
       */
-    def setInterval(callback: js.Function0[Unit], timeout: Double, args: js.Any*): TTimerId
+    def setInterval(callback: js.Function0[Unit], timeout: Double, args: Any*): TTimerId
     
     /**
       * Schedules a callback to be fired once timeout milliseconds have ticked by.
@@ -255,7 +259,7 @@ object mod {
       * @param args   Any extra arguments to pass to the callback.
       * @returns Time identifier for cancellation.
       */
-    def setTimeout(callback: js.Function0[Unit], timeout: Double, args: js.Any*): TTimerId
+    def setTimeout(callback: js.Function0[Unit], timeout: Double, args: Any*): TTimerId
   }
   object GlobalTimers {
     
@@ -265,8 +269,8 @@ object mod {
       clearInterval: TTimerId => Unit,
       clearTimeout: TimerId => Unit,
       setImmediate: js.Function0[Unit] => TTimerId,
-      setInterval: (js.Function0[Unit], Double, /* repeated */ js.Any) => TTimerId,
-      setTimeout: (js.Function0[Unit], Double, /* repeated */ js.Any) => TTimerId
+      setInterval: (js.Function0[Unit], Double, /* repeated */ Any) => TTimerId,
+      setTimeout: (js.Function0[Unit], Double, /* repeated */ Any) => TTimerId
     ): GlobalTimers[TTimerId] = {
       val __obj = js.Dynamic.literal(Date = Date.asInstanceOf[js.Any], clearImmediate = js.Any.fromFunction1(clearImmediate), clearInterval = js.Any.fromFunction1(clearInterval), clearTimeout = js.Any.fromFunction1(clearTimeout), setImmediate = js.Any.fromFunction1(setImmediate), setInterval = js.Any.fromFunction3(setInterval), setTimeout = js.Any.fromFunction3(setTimeout))
       __obj.asInstanceOf[GlobalTimers[TTimerId]]
@@ -284,9 +288,9 @@ object mod {
       
       inline def setSetImmediate(value: js.Function0[Unit] => TTimerId): Self = StObject.set(x, "setImmediate", js.Any.fromFunction1(value))
       
-      inline def setSetInterval(value: (js.Function0[Unit], Double, /* repeated */ js.Any) => TTimerId): Self = StObject.set(x, "setInterval", js.Any.fromFunction3(value))
+      inline def setSetInterval(value: (js.Function0[Unit], Double, /* repeated */ Any) => TTimerId): Self = StObject.set(x, "setInterval", js.Any.fromFunction3(value))
       
-      inline def setSetTimeout(value: (js.Function0[Unit], Double, /* repeated */ js.Any) => TTimerId): Self = StObject.set(x, "setTimeout", js.Any.fromFunction3(value))
+      inline def setSetTimeout(value: (js.Function0[Unit], Double, /* repeated */ Any) => TTimerId): Self = StObject.set(x, "setTimeout", js.Any.fromFunction3(value))
     }
   }
   
@@ -321,7 +325,7 @@ object mod {
       
       inline def setMethods(value: js.Array[FakeMethod]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
-      inline def setMethodsVarargs(value: FakeMethod*): Self = StObject.set(x, "methods", js.Array(value :_*))
+      inline def setMethodsVarargs(value: FakeMethod*): Self = StObject.set(x, "methods", js.Array(value*))
       
       inline def setUninstall(value: () => Unit): Self = StObject.set(x, "uninstall", js.Any.fromFunction0(value))
     }
@@ -440,8 +444,8 @@ object mod {
       * @remarks This affects the current time but it does not in itself cause timers to fire.
       */
     def setSystemTime(): Unit = js.native
+    def setSystemTime(now: js.Date): Unit = js.native
     def setSystemTime(now: Double): Unit = js.native
-    def setSystemTime(now: Date): Unit = js.native
     
     def tick(time: String): Unit = js.native
     /**
@@ -478,7 +482,7 @@ object mod {
     /**
       * Installs lolex with the specified unix epoch (default: 0)
       */
-    var now: js.UndefOr[Double | Date] = js.undefined
+    var now: js.UndefOr[Double | js.Date] = js.undefined
     
     /**
       * Tells lolex to increment mocked time automatically based on the real system time shift (e.g. the mocked time will be incremented by
@@ -489,7 +493,7 @@ object mod {
     /**
       * Installs lolex onto the specified target context (default: global)
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /**
       * An array with explicit function names to hijack. When not set, lolex will automatically fake all methods except nextTick
@@ -514,7 +518,7 @@ object mod {
       
       inline def setLoopLimitUndefined: Self = StObject.set(x, "loopLimit", js.undefined)
       
-      inline def setNow(value: Double | Date): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
+      inline def setNow(value: Double | js.Date): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
       
       inline def setNowUndefined: Self = StObject.set(x, "now", js.undefined)
       
@@ -522,7 +526,7 @@ object mod {
       
       inline def setShouldAdvanceTimeUndefined: Self = StObject.set(x, "shouldAdvanceTime", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -530,7 +534,7 @@ object mod {
       
       inline def setToFakeUndefined: Self = StObject.set(x, "toFake", js.undefined)
       
-      inline def setToFakeVarargs(value: FakeMethod*): Self = StObject.set(x, "toFake", js.Array(value :_*))
+      inline def setToFakeVarargs(value: FakeMethod*): Self = StObject.set(x, "toFake", js.Array(value*))
     }
   }
   
@@ -538,11 +542,11 @@ object mod {
   trait LolexWithContext extends StObject {
     
     def createClock[TClock /* <: Clock */](): TClock = js.native
+    def createClock[TClock /* <: Clock */](now: js.Date): TClock = js.native
+    def createClock[TClock /* <: Clock */](now: js.Date, loopLimit: Double): TClock = js.native
     def createClock[TClock /* <: Clock */](now: Double): TClock = js.native
     def createClock[TClock /* <: Clock */](now: Double, loopLimit: Double): TClock = js.native
     def createClock[TClock /* <: Clock */](now: Unit, loopLimit: Double): TClock = js.native
-    def createClock[TClock /* <: Clock */](now: Date): TClock = js.native
-    def createClock[TClock /* <: Clock */](now: Date, loopLimit: Double): TClock = js.native
     
     def install[TClock /* <: Clock */](): InstalledClock[TClock] = js.native
     def install[TClock /* <: Clock */](opts: LolexInstallOpts): InstalledClock[TClock] = js.native

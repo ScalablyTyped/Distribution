@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The rule that specifies conditions when findings of infoTypes specified in
-  * `InspectionRuleSet` are removed from results.
-  */
 trait SchemaGooglePrivacyDlpV2ExclusionRule extends StObject {
   
   /**
@@ -23,7 +19,7 @@ trait SchemaGooglePrivacyDlpV2ExclusionRule extends StObject {
   /**
     * How the rule is applied, see MatchingType documentation for details.
     */
-  var matchingType: js.UndefOr[String] = js.undefined
+  var matchingType: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Regular expression which defines the rule.
@@ -48,6 +44,8 @@ object SchemaGooglePrivacyDlpV2ExclusionRule {
     inline def setExcludeInfoTypesUndefined: Self = StObject.set(x, "excludeInfoTypes", js.undefined)
     
     inline def setMatchingType(value: String): Self = StObject.set(x, "matchingType", value.asInstanceOf[js.Any])
+    
+    inline def setMatchingTypeNull: Self = StObject.set(x, "matchingType", null)
     
     inline def setMatchingTypeUndefined: Self = StObject.set(x, "matchingType", js.undefined)
     

@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.Predicate")
 @js.native
-class Predicate ()
+open class Predicate ()
   extends StObject
      with typings.ejWebAll.ej.Predicate {
-  def this(field: String, operator: typings.ejWebAll.ej.FilterOperators, value: js.Any, ignoreCase: Boolean) = this()
+  def this(field: String, operator: typings.ejWebAll.ej.FilterOperators, value: Any, ignoreCase: Boolean) = this()
   def this(
     field: String,
     operator: typings.ejWebAll.ej.FilterOperators,
-    value: js.Any,
+    value: Any,
     ignoreCase: Boolean,
     ignoreAccent: Boolean
   ) = this()

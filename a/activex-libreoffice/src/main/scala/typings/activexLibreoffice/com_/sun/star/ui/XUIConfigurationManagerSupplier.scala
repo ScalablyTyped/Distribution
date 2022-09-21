@@ -32,7 +32,7 @@ object XUIConfigurationManagerSupplier {
     UIConfigurationManager: XUIConfigurationManager,
     acquire: () => Unit,
     getUIConfigurationManager: () => XUIConfigurationManager,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XUIConfigurationManagerSupplier = {
     val __obj = js.Dynamic.literal(UIConfigurationManager = UIConfigurationManager.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getUIConfigurationManager = js.Any.fromFunction0(getUIConfigurationManager), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

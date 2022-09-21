@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("phaser", "GameObjects.TextStyle")
 @js.native
-class TextStyle protected ()
+open class TextStyle protected ()
   extends StObject
      with typings.phaser.Phaser.GameObjects.TextStyle {
   /**

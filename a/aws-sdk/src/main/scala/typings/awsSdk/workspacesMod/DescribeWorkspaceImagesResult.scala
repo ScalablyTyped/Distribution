@@ -12,7 +12,7 @@ trait DescribeWorkspaceImagesResult extends StObject {
   var Images: js.UndefOr[WorkspaceImageList] = js.undefined
   
   /**
-    * The token to use to retrieve the next set of results, or null if no more results are available.
+    * The token to use to retrieve the next page of results. This value is null when there are no more results to return. 
     */
   var NextToken: js.UndefOr[PaginationToken] = js.undefined
 }
@@ -29,7 +29,7 @@ object DescribeWorkspaceImagesResult {
     
     inline def setImagesUndefined: Self = StObject.set(x, "Images", js.undefined)
     
-    inline def setImagesVarargs(value: WorkspaceImage*): Self = StObject.set(x, "Images", js.Array(value :_*))
+    inline def setImagesVarargs(value: WorkspaceImage*): Self = StObject.set(x, "Images", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object usePreviousMod {
   
-  @JSImport("@ant-design/pro-utils/lib/hooks/usePrevious", JSImport.Namespace)
+  @JSImport("@ant-design/pro-utils/es/hooks/usePrevious", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[T](state: T): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(state.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
+  inline def usePrevious[T](state: T): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("usePrevious")(state.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
 }

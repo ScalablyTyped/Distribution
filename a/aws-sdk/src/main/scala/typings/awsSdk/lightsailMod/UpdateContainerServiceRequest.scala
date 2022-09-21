@@ -17,6 +17,11 @@ trait UpdateContainerServiceRequest extends StObject {
   var power: js.UndefOr[ContainerServicePowerName] = js.undefined
   
   /**
+    * An object to describe the configuration for the container service to access private container image repositories, such as Amazon Elastic Container Registry (Amazon ECR) private repositories. For more information, see Configuring access to an Amazon ECR private repository for an Amazon Lightsail container service in the Amazon Lightsail Developer Guide.
+    */
+  var privateRegistryAccess: js.UndefOr[PrivateRegistryAccessRequest] = js.undefined
+  
+  /**
     * The public domain names to use with the container service, such as example.com and www.example.com. You can specify up to four public domain names for a container service. The domain names that you specify are used when you create a deployment with a container configured as the public endpoint of your container service. If you don't specify public domain names, then you can use the default domain of the container service.  You must create and validate an SSL/TLS certificate before you can use public domain names with your container service. Use the CreateCertificate action to create a certificate for the public domain names you want to use with your container service.  You can specify public domain names using a string to array map as shown in the example later on this page.
     */
   var publicDomainNames: js.UndefOr[ContainerServicePublicDomains] = js.undefined
@@ -47,6 +52,10 @@ object UpdateContainerServiceRequest {
     inline def setPower(value: ContainerServicePowerName): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
     
     inline def setPowerUndefined: Self = StObject.set(x, "power", js.undefined)
+    
+    inline def setPrivateRegistryAccess(value: PrivateRegistryAccessRequest): Self = StObject.set(x, "privateRegistryAccess", value.asInstanceOf[js.Any])
+    
+    inline def setPrivateRegistryAccessUndefined: Self = StObject.set(x, "privateRegistryAccess", js.undefined)
     
     inline def setPublicDomainNames(value: ContainerServicePublicDomains): Self = StObject.set(x, "publicDomainNames", value.asInstanceOf[js.Any])
     

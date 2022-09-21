@@ -1,7 +1,7 @@
 
 # Scala.js typings for google-protobuf
 
-Typings are for version 3.7
+Typings are for version 3.15
 
 ## Library description:
 Protocol Buffers for JavaScript
@@ -10,15 +10,15 @@ Protocol Buffers for JavaScript
 | ------------------ | :-------------: |
 | Full name          | google-protobuf |
 | Keywords           | - |
-| # releases         | 36 |
-| # dependents       | 658 |
-| # downloads        | 18415770 |
-| # stars            | 7 |
+| # releases         | 44 |
+| # dependents       | 0.0 |
+| # downloads        | 4109137.6666666665 |
+| # stars            | 22.0 |
 
 ## Links
-- [Homepage](https://github.com/protocolbuffers/protobuf#readme)
-- [Bugs](https://github.com/protocolbuffers/protobuf/issues)
-- [Repository](https://github.com/protocolbuffers/protobuf)
+- [Homepage](https://github.com/protocolbuffers/protobuf-javascript#readme)
+- [Bugs](https://github.com/protocolbuffers/protobuf-javascript/issues)
+- [Repository](https://github.com/protocolbuffers/protobuf-javascript)
 - [Npm](https://www.npmjs.com/package/google-protobuf)
     
 

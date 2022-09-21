@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "dag-jose" : "2.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "dag-jose" : "2.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

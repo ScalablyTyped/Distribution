@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateConditionalForwarderRequest extends StObject {
   
   /**
-    * The directory ID of the AWS directory for which you are creating the conditional forwarder.
+    * The directory ID of the Amazon Web Services directory for which you are creating the conditional forwarder.
     */
   var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId
   
@@ -34,7 +34,7 @@ object CreateConditionalForwarderRequest {
     
     inline def setDnsIpAddrs(value: DnsIpAddrs): Self = StObject.set(x, "DnsIpAddrs", value.asInstanceOf[js.Any])
     
-    inline def setDnsIpAddrsVarargs(value: IpAddr*): Self = StObject.set(x, "DnsIpAddrs", js.Array(value :_*))
+    inline def setDnsIpAddrsVarargs(value: IpAddr*): Self = StObject.set(x, "DnsIpAddrs", js.Array(value*))
     
     inline def setRemoteDomainName(value: RemoteDomainName): Self = StObject.set(x, "RemoteDomainName", value.asInstanceOf[js.Any])
   }

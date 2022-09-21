@@ -1,7 +1,6 @@
 package typings.ytPlayer
 
 import typings.node.eventsMod.EventEmitter
-import typings.std.Error
 import typings.std.HTMLElement
 import typings.ytPlayer.ytPlayerBooleans.`false`
 import typings.ytPlayer.ytPlayerStrings.error
@@ -22,7 +21,7 @@ object mod {
     */
   @JSImport("yt-player", JSImport.Namespace)
   @js.native
-  class ^ protected () extends YouTubePlayer {
+  open class ^ protected () extends YouTubePlayer {
     def this(element: String) = this()
     /**
       * Create a new YouTube player. The player will take the place of the HTML
@@ -130,7 +129,7 @@ object mod {
       * include videos that fail to play, for whatever reason.
       */
     @JSName("on")
-    def on_error(event: error, callback: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def on_error(event: error, callback: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     /**
       * This event fires whenever the video playback quality changes. Possible
       * values are: 'small', 'medium', 'large', 'hd720', 'hd1080', 'highres'.

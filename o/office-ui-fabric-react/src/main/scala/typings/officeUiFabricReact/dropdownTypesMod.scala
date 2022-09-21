@@ -6,6 +6,7 @@ import typings.officeUiFabricReact.checkboxTypesMod.ICheckboxStyles
 import typings.officeUiFabricReact.keytipTypesMod.IKeytipProps
 import typings.officeUiFabricReact.labelTypesMod.ILabelStyleProps
 import typings.officeUiFabricReact.labelTypesMod.ILabelStyles
+import typings.officeUiFabricReact.officeUiFabricReactStrings.auto
 import typings.officeUiFabricReact.panelTypesMod.IPanelStyleProps
 import typings.officeUiFabricReact.panelTypesMod.IPanelStyles
 import typings.officeUiFabricReact.positioningTypesMod.RectangleEdge
@@ -111,9 +112,10 @@ object dropdownTypesMod {
     
     /**
       * Custom width for dropdown. If value is 0, width of the input field is used.
+      * If value is 'auto', width of the input field is used by default, and it can grow wider to fit the content.
       * @defaultvalue 0
       */
-    var dropdownWidth: js.UndefOr[Double] = js.undefined
+    var dropdownWidth: js.UndefOr[Double | auto] = js.undefined
     
     /**
       * Deprecated at v0.52.0, use `disabled` instead.
@@ -233,9 +235,9 @@ object dropdownTypesMod {
       
       inline def setDefaultSelectedKeysUndefined: Self = StObject.set(x, "defaultSelectedKeys", js.undefined)
       
-      inline def setDefaultSelectedKeysVarargs(value: (Double | String)*): Self = StObject.set(x, "defaultSelectedKeys", js.Array(value :_*))
+      inline def setDefaultSelectedKeysVarargs(value: (Double | String)*): Self = StObject.set(x, "defaultSelectedKeys", js.Array(value*))
       
-      inline def setDropdownWidth(value: Double): Self = StObject.set(x, "dropdownWidth", value.asInstanceOf[js.Any])
+      inline def setDropdownWidth(value: Double | auto): Self = StObject.set(x, "dropdownWidth", value.asInstanceOf[js.Any])
       
       inline def setDropdownWidthUndefined: Self = StObject.set(x, "dropdownWidth", js.undefined)
       
@@ -291,7 +293,7 @@ object dropdownTypesMod {
       
       inline def setOptions(value: js.Array[IDropdownOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      inline def setOptionsVarargs(value: IDropdownOption*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: IDropdownOption*): Self = StObject.set(x, "options", js.Array(value*))
       
       inline def setPlaceHolder(value: String): Self = StObject.set(x, "placeHolder", value.asInstanceOf[js.Any])
       
@@ -307,7 +309,7 @@ object dropdownTypesMod {
       
       inline def setSelectedKeysUndefined: Self = StObject.set(x, "selectedKeys", js.undefined)
       
-      inline def setSelectedKeysVarargs(value: (Double | String)*): Self = StObject.set(x, "selectedKeys", js.Array(value :_*))
+      inline def setSelectedKeysVarargs(value: (Double | String)*): Self = StObject.set(x, "selectedKeys", js.Array(value*))
       
       inline def setStyles(value: IStyleFunctionOrObject[IDropdownStyleProps, IDropdownStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       

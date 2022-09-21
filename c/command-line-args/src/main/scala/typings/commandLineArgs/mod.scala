@@ -16,7 +16,7 @@ object mod {
   
   trait CommandLineOptions
     extends StObject
-       with /* propName */ StringDictionary[js.Any] {
+       with /* propName */ StringDictionary[Any] {
     
     /**
       * Command-line arguments not parsed by `commandLineArgs`.
@@ -36,7 +36,7 @@ object mod {
       
       inline def set_unknownUndefined: Self = StObject.set(x, "_unknown", js.undefined)
       
-      inline def set_unknownVarargs(value: String*): Self = StObject.set(x, "_unknown", js.Array(value :_*))
+      inline def set_unknownVarargs(value: String*): Self = StObject.set(x, "_unknown", js.Array(value*))
     }
   }
   
@@ -56,7 +56,7 @@ object mod {
     /**
       * An initial value for the option.
       */
-    var defaultValue: js.UndefOr[js.Any] = js.undefined
+    var defaultValue: js.UndefOr[Any] = js.undefined
     
     /**
       * One or more group names the option belongs to.
@@ -82,7 +82,7 @@ object mod {
       * A setter function (you receive the output from this) enabling you to be specific about the type and value received. Typical values
       * are `String` (the default), `Number` and `Boolean` but you can use a custom function. If no option value was set you will receive `null`.
       */
-    var `type`: js.UndefOr[js.Function1[/* input */ String, js.Any]] = js.undefined
+    var `type`: js.UndefOr[js.Function1[/* input */ String, Any]] = js.undefined
   }
   object OptionDefinition {
     
@@ -101,7 +101,7 @@ object mod {
       
       inline def setDefaultOptionUndefined: Self = StObject.set(x, "defaultOption", js.undefined)
       
-      inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
@@ -109,7 +109,7 @@ object mod {
       
       inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
       
-      inline def setGroupVarargs(value: String*): Self = StObject.set(x, "group", js.Array(value :_*))
+      inline def setGroupVarargs(value: String*): Self = StObject.set(x, "group", js.Array(value*))
       
       inline def setLazyMultiple(value: Boolean): Self = StObject.set(x, "lazyMultiple", value.asInstanceOf[js.Any])
       
@@ -121,7 +121,7 @@ object mod {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setType(value: /* input */ String => js.Any): Self = StObject.set(x, "type", js.Any.fromFunction1(value))
+      inline def setType(value: /* input */ String => Any): Self = StObject.set(x, "type", js.Any.fromFunction1(value))
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
@@ -138,6 +138,12 @@ object mod {
       * If `true`, options with hypenated names (e.g. `move-to`) will be returned in camel-case (e.g. `moveTo`).
       */
     var camelCase: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * If `true`, the case of each option name or alias parsed is insignificant. For example, `--Verbose` and
+      * `--verbose` would be parsed identically, as would the aliases `-V` and `-v`. Defaults to false.
+      */
+    var caseInsensitive: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `true`, `commandLineArgs` will not throw on unknown options or values, instead returning them in the `_unknown` property of the output.
@@ -163,11 +169,15 @@ object mod {
       
       inline def setArgvUndefined: Self = StObject.set(x, "argv", js.undefined)
       
-      inline def setArgvVarargs(value: String*): Self = StObject.set(x, "argv", js.Array(value :_*))
+      inline def setArgvVarargs(value: String*): Self = StObject.set(x, "argv", js.Array(value*))
       
       inline def setCamelCase(value: Boolean): Self = StObject.set(x, "camelCase", value.asInstanceOf[js.Any])
       
       inline def setCamelCaseUndefined: Self = StObject.set(x, "camelCase", js.undefined)
+      
+      inline def setCaseInsensitive(value: Boolean): Self = StObject.set(x, "caseInsensitive", value.asInstanceOf[js.Any])
+      
+      inline def setCaseInsensitiveUndefined: Self = StObject.set(x, "caseInsensitive", js.undefined)
       
       inline def setPartial(value: Boolean): Self = StObject.set(x, "partial", value.asInstanceOf[js.Any])
       

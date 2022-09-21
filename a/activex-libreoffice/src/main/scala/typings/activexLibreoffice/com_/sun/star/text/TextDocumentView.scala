@@ -58,7 +58,7 @@ object TextDocumentView {
     LineCount: Double,
     PageCount: Double,
     PropertySetInfo: XPropertySetInfo,
-    Selection: js.Any,
+    Selection: Any,
     ViewCursor: XTextViewCursor,
     ViewSettings: XPropertySet,
     acquire: () => Unit,
@@ -67,17 +67,17 @@ object TextDocumentView {
     addVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
     getControl: XControlModel => XControl,
     getPropertySetInfo: () => XPropertySetInfo,
-    getPropertyValue: String => js.Any,
-    getSelection: () => js.Any,
+    getPropertyValue: String => Any,
+    getSelection: () => Any,
     getViewCursor: () => XTextViewCursor,
     getViewSettings: () => XPropertySet,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removePropertyChangeListener: (String, XPropertyChangeListener) => Unit,
     removeSelectionChangeListener: XSelectionChangeListener => Unit,
     removeVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
-    select: js.Any => Boolean,
-    setPropertyValue: (String, js.Any) => Unit
+    select: Any => Boolean,
+    setPropertyValue: (String, Any) => Unit
   ): TextDocumentView = {
     val __obj = js.Dynamic.literal(IsConstantSpellcheck = IsConstantSpellcheck.asInstanceOf[js.Any], IsHideSpellMarks = IsHideSpellMarks.asInstanceOf[js.Any], LineCount = LineCount.asInstanceOf[js.Any], PageCount = PageCount.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], Selection = Selection.asInstanceOf[js.Any], ViewCursor = ViewCursor.asInstanceOf[js.Any], ViewSettings = ViewSettings.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addSelectionChangeListener = js.Any.fromFunction1(addSelectionChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), getControl = js.Any.fromFunction1(getControl), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getSelection = js.Any.fromFunction0(getSelection), getViewCursor = js.Any.fromFunction0(getViewCursor), getViewSettings = js.Any.fromFunction0(getViewSettings), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeSelectionChangeListener = js.Any.fromFunction1(removeSelectionChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), select = js.Any.fromFunction1(select), setPropertyValue = js.Any.fromFunction2(setPropertyValue))
     __obj.asInstanceOf[TextDocumentView]

@@ -1,15 +1,12 @@
 package typings.baseui.anon
 
-import typings.baseui.baseuiStrings.backdrop
-import typings.baseui.baseuiStrings.closeButton
-import typings.baseui.baseuiStrings.escape_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CloseSource extends StObject {
   
-  var closeSource: js.UndefOr[closeButton | backdrop | escape_] = js.undefined
+  var closeSource: js.UndefOr[typings.baseui.drawerTypesMod.CloseSource] = js.undefined
 }
 object CloseSource {
   
@@ -20,7 +17,7 @@ object CloseSource {
   
   extension [Self <: CloseSource](x: Self) {
     
-    inline def setCloseSource(value: closeButton | backdrop | escape_): Self = StObject.set(x, "closeSource", value.asInstanceOf[js.Any])
+    inline def setCloseSource(value: typings.baseui.drawerTypesMod.CloseSource): Self = StObject.set(x, "closeSource", value.asInstanceOf[js.Any])
     
     inline def setCloseSourceUndefined: Self = StObject.set(x, "closeSource", js.undefined)
   }

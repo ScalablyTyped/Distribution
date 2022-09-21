@@ -1,6 +1,8 @@
 package typings.maximMazurokGapiClientStreetviewpublish
 
 import typings.maximMazurokGapiClientStreetviewpublish.gapi.client.streetviewpublish.PhotoResource
+import typings.maximMazurokGapiClientStreetviewpublish.gapi.client.streetviewpublish.PhotoSequenceResource
+import typings.maximMazurokGapiClientStreetviewpublish.gapi.client.streetviewpublish.PhotoSequencesResource
 import typings.maximMazurokGapiClientStreetviewpublish.gapi.client.streetviewpublish.PhotosResource
 import typings.maximMazurokGapiClientStreetviewpublish.maximMazurokGapiClientStreetviewpublishStrings.streetviewpublish
 import typings.maximMazurokGapiClientStreetviewpublish.maximMazurokGapiClientStreetviewpublishStrings.v1
@@ -20,13 +22,21 @@ object global {
       
       /** Load Street View Publish API v1 */
       inline def load(name: streetviewpublish, version: v1): js.Thenable[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Unit]]
-      inline def load(name: streetviewpublish, version: v1, callback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def load(name: streetviewpublish, version: v1, callback: js.Function0[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       object streetviewpublish {
         
         @JSGlobal("gapi.client.streetviewpublish.photo")
         @js.native
         val photo: PhotoResource = js.native
+        
+        @JSGlobal("gapi.client.streetviewpublish.photoSequence")
+        @js.native
+        val photoSequence: PhotoSequenceResource = js.native
+        
+        @JSGlobal("gapi.client.streetviewpublish.photoSequences")
+        @js.native
+        val photoSequences: PhotoSequencesResource = js.native
         
         @JSGlobal("gapi.client.streetviewpublish.photos")
         @js.native

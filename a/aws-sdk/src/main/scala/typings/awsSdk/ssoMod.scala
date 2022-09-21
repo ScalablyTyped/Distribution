@@ -16,7 +16,7 @@ object ssoMod {
   /**
     * Constructs a service object. This object has one method for each API operation.
     */
-  class ^ () extends SSO {
+  open class ^ () extends SSO {
     def this(options: ClientConfiguration) = this()
   }
   
@@ -106,7 +106,7 @@ object ssoMod {
   trait GetRoleCredentialsRequest extends StObject {
     
     /**
-      * The token issued by the CreateToken API call. For more information, see CreateToken in the AWS SSO OIDC API Reference Guide.
+      * The token issued by the CreateToken API call. For more information, see CreateToken in the IAM Identity Center OIDC API Reference Guide.
       */
     var accessToken: AccessTokenType
     
@@ -162,7 +162,7 @@ object ssoMod {
   trait ListAccountRolesRequest extends StObject {
     
     /**
-      * The token issued by the CreateToken API call. For more information, see CreateToken in the AWS SSO OIDC API Reference Guide.
+      * The token issued by the CreateToken API call. For more information, see CreateToken in the IAM Identity Center OIDC API Reference Guide.
       */
     var accessToken: AccessTokenType
     
@@ -233,14 +233,14 @@ object ssoMod {
       
       inline def setRoleListUndefined: Self = StObject.set(x, "roleList", js.undefined)
       
-      inline def setRoleListVarargs(value: RoleInfo*): Self = StObject.set(x, "roleList", js.Array(value :_*))
+      inline def setRoleListVarargs(value: RoleInfo*): Self = StObject.set(x, "roleList", js.Array(value*))
     }
   }
   
   trait ListAccountsRequest extends StObject {
     
     /**
-      * The token issued by the CreateToken API call. For more information, see CreateToken in the AWS SSO OIDC API Reference Guide.
+      * The token issued by the CreateToken API call. For more information, see CreateToken in the IAM Identity Center OIDC API Reference Guide.
       */
     var accessToken: AccessTokenType
     
@@ -300,7 +300,7 @@ object ssoMod {
       
       inline def setAccountListUndefined: Self = StObject.set(x, "accountList", js.undefined)
       
-      inline def setAccountListVarargs(value: AccountInfo*): Self = StObject.set(x, "accountList", js.Array(value :_*))
+      inline def setAccountListVarargs(value: AccountInfo*): Self = StObject.set(x, "accountList", js.Array(value*))
       
       inline def setNextToken(value: NextTokenType): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
       
@@ -311,7 +311,7 @@ object ssoMod {
   trait LogoutRequest extends StObject {
     
     /**
-      * The token issued by the CreateToken API call. For more information, see CreateToken in the AWS SSO OIDC API Reference Guide.
+      * The token issued by the CreateToken API call. For more information, see CreateToken in the IAM Identity Center OIDC API Reference Guide.
       */
     var accessToken: AccessTokenType
   }
@@ -451,12 +451,12 @@ object ssoMod {
     ): Request[ListAccountRolesResponse, AWSError] = js.native
     
     /**
-      * Lists all AWS accounts assigned to the user. These AWS accounts are assigned by the administrator of the account. For more information, see Assign User Access in the AWS SSO User Guide. This operation returns a paginated response.
+      * Lists all AWS accounts assigned to the user. These AWS accounts are assigned by the administrator of the account. For more information, see Assign User Access in the IAM Identity Center User Guide. This operation returns a paginated response.
       */
     def listAccounts(): Request[ListAccountsResponse, AWSError] = js.native
     def listAccounts(callback: js.Function2[/* err */ AWSError, /* data */ ListAccountsResponse, Unit]): Request[ListAccountsResponse, AWSError] = js.native
     /**
-      * Lists all AWS accounts assigned to the user. These AWS accounts are assigned by the administrator of the account. For more information, see Assign User Access in the AWS SSO User Guide. This operation returns a paginated response.
+      * Lists all AWS accounts assigned to the user. These AWS accounts are assigned by the administrator of the account. For more information, see Assign User Access in the IAM Identity Center User Guide. This operation returns a paginated response.
       */
     def listAccounts(params: ListAccountsRequest): Request[ListAccountsResponse, AWSError] = js.native
     def listAccounts(
@@ -465,12 +465,12 @@ object ssoMod {
     ): Request[ListAccountsResponse, AWSError] = js.native
     
     /**
-      * Removes the client- and server-side session that is associated with the user.
+      * Removes the locally stored SSO tokens from the client-side cache and sends an API call to the IAM Identity Center service to invalidate the corresponding server-side IAM Identity Center sign in session.  If a user uses IAM Identity Center to access the AWS CLI, the user’s IAM Identity Center sign in session is used to obtain an IAM session, as specified in the corresponding IAM Identity Center permission set. More specifically, IAM Identity Center assumes an IAM role in the target account on behalf of the user, and the corresponding temporary AWS credentials are returned to the client. After user logout, any existing IAM role sessions that were created by using IAM Identity Center permission sets continue based on the duration configured in the permission set. For more information, see User authentications in the IAM Identity Center User Guide. 
       */
     def logout(): Request[js.Object, AWSError] = js.native
     def logout(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
     /**
-      * Removes the client- and server-side session that is associated with the user.
+      * Removes the locally stored SSO tokens from the client-side cache and sends an API call to the IAM Identity Center service to invalidate the corresponding server-side IAM Identity Center sign in session.  If a user uses IAM Identity Center to access the AWS CLI, the user’s IAM Identity Center sign in session is used to obtain an IAM session, as specified in the corresponding IAM Identity Center permission set. More specifically, IAM Identity Center assumes an IAM role in the target account on behalf of the user, and the corresponding temporary AWS credentials are returned to the client. After user logout, any existing IAM role sessions that were created by using IAM Identity Center permission sets continue based on the duration configured in the permission set. For more information, see User authentications in the IAM Identity Center User Guide. 
       */
     def logout(params: LogoutRequest): Request[js.Object, AWSError] = js.native
     def logout(params: LogoutRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native

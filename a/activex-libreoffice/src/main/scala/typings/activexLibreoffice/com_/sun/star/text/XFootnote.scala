@@ -40,7 +40,7 @@ object XFootnote {
     dispose: () => Unit,
     getAnchor: () => XTextRange,
     getLabel: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit,
     setLabel: String => Unit

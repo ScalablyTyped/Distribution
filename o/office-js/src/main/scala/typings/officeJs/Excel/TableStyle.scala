@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents a table style, which defines the style elements by region of the table.
   *
-  * Represents a TableStyle, which defines the style elements by region of the Table.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.10]
   */
 @js.native
@@ -26,17 +26,19 @@ trait TableStyle
   var context_TableStyle: RequestContext = js.native
   
   /**
-    * Deletes the TableStyle.
+    * Deletes the table style.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   def delete(): Unit = js.native
   
   /**
-    * Creates a duplicate of this TableStyle with copies of all the style elements.
+    * Creates a duplicate of this table style with copies of all the style elements.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
-    * @returns The new TableStyle object that has been duplicated from this TableStyle.
+    * @returns The new `TableStyle` object that has been duplicated from this table style.
     */
   def duplicate(): TableStyle = js.native
   
@@ -52,29 +54,23 @@ trait TableStyle
   def load(propertyNames: js.Array[String]): TableStyle = js.native
   
   /**
+    * Specifies the name of the table style.
     *
-    * Gets the name of the TableStyle.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var name: String = js.native
   
   /**
+    * Specifies if this `TableStyle` object is read-only.
     *
-    * Specifies if this TableStyle object is read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   val readOnly: Boolean = js.native
   
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.TableStyle): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */

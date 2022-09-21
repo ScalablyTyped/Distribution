@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("gdal", "FieldDefn")
 @js.native
-class FieldDefn protected () extends StObject {
+open class FieldDefn protected () extends StObject {
   def this(name: String, `type`: String) = this()
   
   var ignored: Boolean = js.native

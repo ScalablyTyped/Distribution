@@ -9,21 +9,22 @@ trait TimeRanges extends StObject {
   
   /**
     * Returns the time for the end of the range with the given index.
-    * 
+    *
     * Throws an "IndexSizeError" DOMException if the index is out of range.
     */
+  /* standard dom */
   def end(index: Double): Double
   
-  /**
-    * Returns the number of ranges in the object.
-    */
+  /** Returns the number of ranges in the object. */
+  /* standard dom */
   val length: Double
   
   /**
     * Returns the time for the start of the range with the given index.
-    * 
+    *
     * Throws an "IndexSizeError" DOMException if the index is out of range.
     */
+  /* standard dom */
   def start(index: Double): Double
 }
 object TimeRanges {

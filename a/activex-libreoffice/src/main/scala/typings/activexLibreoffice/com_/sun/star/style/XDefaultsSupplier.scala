@@ -27,7 +27,7 @@ object XDefaultsSupplier {
     Defaults: XPropertySet,
     acquire: () => Unit,
     getDefaults: () => XPropertySet,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XDefaultsSupplier = {
     val __obj = js.Dynamic.literal(Defaults = Defaults.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getDefaults = js.Any.fromFunction0(getDefaults), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

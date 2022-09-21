@@ -28,7 +28,7 @@ trait Alt extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Required. The parent resource where this web data stream will be created. Format: properties/123 */
+  /** Required. Example format: properties/1234 */
   var parent: String
   
   /** Returns response with indentations and line breaks. */

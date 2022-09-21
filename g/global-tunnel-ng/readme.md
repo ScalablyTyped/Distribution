@@ -10,10 +10,10 @@ Global HTTP & HTTPS tunneling
 | ------------------ | :-------------: |
 | Full name          | global-tunnel-ng |
 | Keywords           | http, https, tunnel, global |
-| # releases         | 0 |
-| # dependents       | 34 |
-| # downloads        | 14051837 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2950380.6666666665 |
+| # stars            | 103.0 |
 
 ## Links
 - [Homepage](https://github.com/np-maintain/global-tunnel#readme)

@@ -6,6 +6,8 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* eslint-disable @typescript-eslint/naming-convention */
+/* eslint-disable no-var */
 // Type definitions for WebVR API
 // Project: https://w3c.github.io/webvr/
 // Definitions by: six a <https://github.com/lostfictions>
@@ -18,7 +20,7 @@ trait VRDisplay
   /**
     * Passing the value returned by `requestAnimationFrame` to
     * `cancelAnimationFrame` will unregister the callback.
-    * @param handle Define the hanle of the request to cancel
+    * @param handle Define the handle of the request to cancel
     */
   def cancelAnimationFrame(handle: Double): Unit = js.native
   
@@ -109,7 +111,7 @@ trait VRDisplay
     * identically to how window.requestAnimationFrame acts. Content should
     * make no assumptions of frame rate or vsync behavior as the HMD runs
     * asynchronously from other displays and at differing refresh rates.
-    * @param callback Define the eaction to run next frame
+    * @param callback Define the action to run next frame
     * @returns the request handle it
     */
   def requestAnimationFrame(callback: FrameRequestCallback): Double = js.native

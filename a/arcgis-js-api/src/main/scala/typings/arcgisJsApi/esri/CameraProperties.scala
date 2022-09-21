@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CameraProperties extends StObject {
   
   /**
-    * The field of view of the camera in degrees.
+    * The diagonal field of view (fov) angle for the camera.
+    *
+    * @default 55
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Camera.html#fov)
     */
@@ -15,6 +17,8 @@ trait CameraProperties extends StObject {
   
   /**
     * The compass heading of the camera in degrees.
+    *
+    * @default 0
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Camera.html#heading)
     */
@@ -29,6 +33,8 @@ trait CameraProperties extends StObject {
   
   /**
     * The tilt of the camera in degrees with respect to the surface as projected down from the camera position.
+    *
+    * @default 0
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Camera.html#tilt)
     */

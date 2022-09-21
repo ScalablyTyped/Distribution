@@ -10,10 +10,10 @@ object paletteMod {
   
   @JSImport("material-ui/svg-icons/image/palette", JSImport.Default)
   @js.native
-  class default () extends ImagePalette
+  open class default () extends ImagePalette
   
   @JSImport("material-ui/svg-icons/image/palette", "ImagePalette")
   @js.native
-  class ImagePalette ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImagePalette ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

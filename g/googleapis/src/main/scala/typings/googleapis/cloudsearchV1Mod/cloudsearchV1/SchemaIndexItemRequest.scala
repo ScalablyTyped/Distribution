@@ -7,10 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaIndexItemRequest extends StObject {
   
   /**
-    * Name of connector making this call. &lt;br /&gt;Format:
-    * datasources/{source_id}/connectors/{ID}
+    * The name of connector making this call. Format: datasources/{source_id\}/connectors/{ID\}
     */
-  var connectorName: js.UndefOr[String] = js.undefined
+  var connectorName: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Common debug options.
@@ -20,14 +19,14 @@ trait SchemaIndexItemRequest extends StObject {
   var indexItemOptions: js.UndefOr[SchemaIndexItemOptions] = js.undefined
   
   /**
-    * Name of the item.  Format: datasources/{source_id}/items/{item_id}
+    * The name of the item. Format: datasources/{source_id\}/items/{item_id\}
     */
   var item: js.UndefOr[SchemaItem] = js.undefined
   
   /**
     * Required. The RequestMode for this request.
     */
-  var mode: js.UndefOr[String] = js.undefined
+  var mode: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaIndexItemRequest {
   
@@ -39,6 +38,8 @@ object SchemaIndexItemRequest {
   extension [Self <: SchemaIndexItemRequest](x: Self) {
     
     inline def setConnectorName(value: String): Self = StObject.set(x, "connectorName", value.asInstanceOf[js.Any])
+    
+    inline def setConnectorNameNull: Self = StObject.set(x, "connectorName", null)
     
     inline def setConnectorNameUndefined: Self = StObject.set(x, "connectorName", js.undefined)
     
@@ -55,6 +56,8 @@ object SchemaIndexItemRequest {
     inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
     inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeNull: Self = StObject.set(x, "mode", null)
     
     inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }

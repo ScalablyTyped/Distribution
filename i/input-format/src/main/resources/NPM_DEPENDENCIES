@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "input-format" : "0.3.8"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "input-format" : "0.3.8"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

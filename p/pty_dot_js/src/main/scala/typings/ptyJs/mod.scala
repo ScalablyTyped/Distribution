@@ -1,12 +1,12 @@
 package typings.ptyJs
 
-import typings.node.NodeJS.WritableStream
 import typings.node.netMod.Socket
 import typings.ptyJs.anon.Cols
 import typings.ptyJs.anon.End
 import typings.ptyJs.anon.Fd
 import typings.ptyJs.anon.Master
 import typings.ptyJs.anon.Pid
+import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,7 +23,7 @@ object mod {
     * Creates a new pseudo-terminal, spawns a child process, and associates it with the slave
     * end of the pseudo-terminal.
     */
-  class Terminal () extends StObject {
+  open class Terminal () extends StObject {
     def this(file: String) = this()
     def this(file: String, args: js.Array[String]) = this()
     def this(file: Unit, args: js.Array[String]) = this()
@@ -44,9 +44,9 @@ object mod {
       */
     def destroy(): Unit = js.native
     
-    def emit(event: String, args: js.Any*): Boolean = js.native
+    def emit(event: String, args: Any*): Boolean = js.native
     
-    def end(data: js.Any): Unit = js.native
+    def end(data: Any): Unit = js.native
     
     def eventNames(): js.Array[String] = js.native
     
@@ -81,8 +81,8 @@ object mod {
     var pid: Double = js.native
     
     // NodeJS Stream interface
-    def pipe[T /* <: WritableStream */](destination: T): T = js.native
-    def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
+    def pipe[T /* <: WritableStream[Any] */](destination: T): T = js.native
+    def pipe[T /* <: WritableStream[Any] */](destination: T, options: End): T = js.native
     
     /** Read-only name of the process associated with the slave end of the pseudo-terminal. */
     var process: String = js.native
@@ -119,7 +119,7 @@ object mod {
     var stdout: Terminal = js.native
     
     // NodeJS Socket-like interface (wrappers for this.socket)
-    def write(data: js.Any): Boolean = js.native
+    def write(data: Any): Boolean = js.native
   }
   
   inline def createTerminal(): Terminal = ^.asInstanceOf[js.Dynamic].applyDynamic("createTerminal")().asInstanceOf[Terminal]
@@ -146,11 +146,11 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def fork(file: String, args: js.Array[String], env: js.Any, cwd: String, cols: Double, rows: Double): Fd = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], env.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any], cols.asInstanceOf[js.Any], rows.asInstanceOf[js.Any])).asInstanceOf[Fd]
+    inline def fork(file: String, args: js.Array[String], env: Any, cwd: String, cols: Double, rows: Double): Fd = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], env.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any], cols.asInstanceOf[js.Any], rows.asInstanceOf[js.Any])).asInstanceOf[Fd]
     inline def fork(
       file: String,
       args: js.Array[String],
-      env: js.Any,
+      env: Any,
       cwd: String,
       cols: Double,
       rows: Double,
@@ -159,7 +159,7 @@ object mod {
     inline def fork(
       file: String,
       args: js.Array[String],
-      env: js.Any,
+      env: Any,
       cwd: String,
       cols: Double,
       rows: Double,
@@ -169,7 +169,7 @@ object mod {
     inline def fork(
       file: String,
       args: js.Array[String],
-      env: js.Any,
+      env: Any,
       cwd: String,
       cols: Double,
       rows: Double,
@@ -208,7 +208,7 @@ object mod {
     
     var cwd: js.UndefOr[String] = js.undefined
     
-    var env: js.UndefOr[js.Any] = js.undefined
+    var env: js.UndefOr[Any] = js.undefined
     
     var gid: js.UndefOr[Double] = js.undefined
     
@@ -235,7 +235,7 @@ object mod {
       
       inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      inline def setEnv(value: js.Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
       inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
       

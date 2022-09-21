@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("openlayers", "source.TileDebug")
 @js.native
-class TileDebug protected () extends Tile {
+open class TileDebug protected () extends Tile {
   /**
     * @classdesc
     * A pseudo tile source, which does not fetch tiles from a server, but renders

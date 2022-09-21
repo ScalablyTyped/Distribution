@@ -94,7 +94,7 @@ object DeviceCompliancePolicySettingState {
     
     inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
-    inline def setSourcesVarargs(value: SettingSource*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: SettingSource*): Self = StObject.set(x, "sources", js.Array(value*))
     
     inline def setState(value: ComplianceStatus): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

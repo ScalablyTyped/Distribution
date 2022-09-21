@@ -10,5 +10,5 @@ trait TextViewFactory
   extends Factory[
       TextViewConstructor, 
       InstanceType[TextViewConstructor], 
-      js.Function1[/* repeated */ js.Any, InstanceType[TextViewConstructor]]
+      js.Function1[/* repeated */ Any, Widget[Any]]
     ]

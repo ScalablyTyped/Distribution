@@ -7,11 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SeriesLineDataDragDropOptions extends StObject {
   
   /**
-    * (Highcharts, Highstock, Gantt) Options for the drag handles.
-    */
-  var dragHandle: js.UndefOr[DragDropHandleOptionsObject] = js.undefined
-  
-  /**
     * (Highcharts, Highstock, Gantt) Set the maximum X value the points can be
     * moved to.
     */
@@ -79,7 +74,7 @@ trait SeriesLineDataDragDropOptions extends StObject {
     * box has one state by default, the `default` state.
     */
   var guideBox: js.UndefOr[
-    SeriesAreaDataDragDropGuideBoxOptions | SeriesArearangeDataDragDropGuideBoxOptions | SeriesAreasplineDataDragDropGuideBoxOptions | SeriesAreasplinerangeDataDragDropGuideBoxOptions | SeriesBarDataDragDropGuideBoxOptions | SeriesBoxplotDataDragDropGuideBoxOptions | SeriesBubbleDataDragDropGuideBoxOptions | SeriesBulletDataDragDropGuideBoxOptions | SeriesCandlestickDataDragDropGuideBoxOptions | SeriesColumnDataDragDropGuideBoxOptions | SeriesColumnpyramidDataDragDropGuideBoxOptions | SeriesColumnrangeDataDragDropGuideBoxOptions | SeriesCylinderDataDragDropGuideBoxOptions | SeriesDumbbellDataDragDropGuideBoxOptions | SeriesErrorbarDataDragDropGuideBoxOptions | SeriesFlagsDataDragDropGuideBoxOptions | SeriesFunnelDataDragDropGuideBoxOptions | SeriesGanttDataDragDropGuideBoxOptions | SeriesGaugeDataDragDropGuideBoxOptions | SeriesHeatmapDataDragDropGuideBoxOptions | SeriesItemDataDragDropGuideBoxOptions | SeriesLineDataDragDropGuideBoxOptions | SeriesLollipopDataDragDropGuideBoxOptions | SeriesNetworkgraphDataDragDropGuideBoxOptions | SeriesOhlcDataDragDropGuideBoxOptions | SeriesPackedbubbleDataDragDropGuideBoxOptions | SeriesParetoDataDragDropGuideBoxOptions | SeriesPieDataDragDropGuideBoxOptions | SeriesPolygonDataDragDropGuideBoxOptions | SeriesPyramidDataDragDropGuideBoxOptions | SeriesScatter3dDataDragDropGuideBoxOptions | SeriesScatterDataDragDropGuideBoxOptions | SeriesSolidgaugeDataDragDropGuideBoxOptions | SeriesSplineDataDragDropGuideBoxOptions | SeriesStreamgraphDataDragDropGuideBoxOptions | SeriesSunburstDataDragDropGuideBoxOptions | SeriesTilemapDataDragDropGuideBoxOptions | SeriesTimelineDataDragDropGuideBoxOptions | SeriesTreemapDataDragDropGuideBoxOptions | SeriesVariablepieDataDragDropGuideBoxOptions | SeriesVariwideDataDragDropGuideBoxOptions | SeriesVectorDataDragDropGuideBoxOptions | SeriesVennDataDragDropGuideBoxOptions | SeriesWaterfallDataDragDropGuideBoxOptions | SeriesWindbarbDataDragDropGuideBoxOptions | SeriesWordcloudDataDragDropGuideBoxOptions | SeriesXrangeDataDragDropGuideBoxOptions | Dictionary[DragDropGuideBoxOptionsObject]
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 52 */ Any
   ] = js.undefined
   
   /**
@@ -96,10 +91,6 @@ object SeriesLineDataDragDropOptions {
   }
   
   extension [Self <: SeriesLineDataDragDropOptions](x: Self) {
-    
-    inline def setDragHandle(value: DragDropHandleOptionsObject): Self = StObject.set(x, "dragHandle", value.asInstanceOf[js.Any])
-    
-    inline def setDragHandleUndefined: Self = StObject.set(x, "dragHandle", js.undefined)
     
     inline def setDragMaxX(value: Double): Self = StObject.set(x, "dragMaxX", value.asInstanceOf[js.Any])
     
@@ -141,9 +132,7 @@ object SeriesLineDataDragDropOptions {
     
     inline def setGroupByUndefined: Self = StObject.set(x, "groupBy", js.undefined)
     
-    inline def setGuideBox(
-      value: SeriesAreaDataDragDropGuideBoxOptions | SeriesArearangeDataDragDropGuideBoxOptions | SeriesAreasplineDataDragDropGuideBoxOptions | SeriesAreasplinerangeDataDragDropGuideBoxOptions | SeriesBarDataDragDropGuideBoxOptions | SeriesBoxplotDataDragDropGuideBoxOptions | SeriesBubbleDataDragDropGuideBoxOptions | SeriesBulletDataDragDropGuideBoxOptions | SeriesCandlestickDataDragDropGuideBoxOptions | SeriesColumnDataDragDropGuideBoxOptions | SeriesColumnpyramidDataDragDropGuideBoxOptions | SeriesColumnrangeDataDragDropGuideBoxOptions | SeriesCylinderDataDragDropGuideBoxOptions | SeriesDumbbellDataDragDropGuideBoxOptions | SeriesErrorbarDataDragDropGuideBoxOptions | SeriesFlagsDataDragDropGuideBoxOptions | SeriesFunnelDataDragDropGuideBoxOptions | SeriesGanttDataDragDropGuideBoxOptions | SeriesGaugeDataDragDropGuideBoxOptions | SeriesHeatmapDataDragDropGuideBoxOptions | SeriesItemDataDragDropGuideBoxOptions | SeriesLineDataDragDropGuideBoxOptions | SeriesLollipopDataDragDropGuideBoxOptions | SeriesNetworkgraphDataDragDropGuideBoxOptions | SeriesOhlcDataDragDropGuideBoxOptions | SeriesPackedbubbleDataDragDropGuideBoxOptions | SeriesParetoDataDragDropGuideBoxOptions | SeriesPieDataDragDropGuideBoxOptions | SeriesPolygonDataDragDropGuideBoxOptions | SeriesPyramidDataDragDropGuideBoxOptions | SeriesScatter3dDataDragDropGuideBoxOptions | SeriesScatterDataDragDropGuideBoxOptions | SeriesSolidgaugeDataDragDropGuideBoxOptions | SeriesSplineDataDragDropGuideBoxOptions | SeriesStreamgraphDataDragDropGuideBoxOptions | SeriesSunburstDataDragDropGuideBoxOptions | SeriesTilemapDataDragDropGuideBoxOptions | SeriesTimelineDataDragDropGuideBoxOptions | SeriesTreemapDataDragDropGuideBoxOptions | SeriesVariablepieDataDragDropGuideBoxOptions | SeriesVariwideDataDragDropGuideBoxOptions | SeriesVectorDataDragDropGuideBoxOptions | SeriesVennDataDragDropGuideBoxOptions | SeriesWaterfallDataDragDropGuideBoxOptions | SeriesWindbarbDataDragDropGuideBoxOptions | SeriesWordcloudDataDragDropGuideBoxOptions | SeriesXrangeDataDragDropGuideBoxOptions | Dictionary[DragDropGuideBoxOptionsObject]
-    ): Self = StObject.set(x, "guideBox", value.asInstanceOf[js.Any])
+    inline def setGuideBox(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 52 */ Any): Self = StObject.set(x, "guideBox", value.asInstanceOf[js.Any])
     
     inline def setGuideBoxUndefined: Self = StObject.set(x, "guideBox", js.undefined)
     

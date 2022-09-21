@@ -10,10 +10,10 @@ A simple CSS Grid template parser
 | ------------------ | :-------------: |
 | Full name          | grid-template-parser |
 | Keywords           | grid, grid-layout, template, parser |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 82617 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7395.0 |
+| # stars            | 17.0 |
 
 ## Links
 - [Homepage](https://github.com/anthonydugois/grid-template-parser#readme)

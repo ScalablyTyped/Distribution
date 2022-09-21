@@ -23,7 +23,7 @@ object ReturnTypeGetCurrentTimeResponse {
     
     inline def setParamsType(value: js.Array[GetCurrentTimeRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    inline def setParamsTypeVarargs(value: GetCurrentTimeRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: GetCurrentTimeRequest*): Self = StObject.set(x, "paramsType", js.Array(value*))
     
     inline def setReturnType(value: GetCurrentTimeResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }

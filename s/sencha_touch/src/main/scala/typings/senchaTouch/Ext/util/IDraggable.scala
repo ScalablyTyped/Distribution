@@ -39,7 +39,7 @@ trait IDraggable
   /** [Method] Returns the value of disabled
     * @returns Object
     */
-  var getDisabled: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getDisabled: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of draggingCls
     * @returns String
@@ -49,20 +49,20 @@ trait IDraggable
   /** [Method] Returns the value of element
     * @returns Object
     */
-  var getElement: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getElement: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of initialOffset
     * @returns Object/Number
     */
-  var getInitialOffset: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getInitialOffset: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of translatable
     * @returns Object
     */
-  var getTranslatable: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getTranslatable: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Config Option] (Object/Number) */
-  var initialOffset: js.UndefOr[js.Any] = js.undefined
+  var initialOffset: js.UndefOr[Any] = js.undefined
   
   /** [Method] Relays selected events from the specified Observable as if the events were fired by this
     * @param object Object The Observable whose events this object is to relay.
@@ -72,8 +72,8 @@ trait IDraggable
   @JSName("relayEvents")
   var relayEvents_IDraggable: js.UndefOr[
     js.Function2[
-      /* object */ js.UndefOr[js.Any], 
-      /* events */ js.UndefOr[js.Any], 
+      /* object */ js.UndefOr[Any], 
+      /* events */ js.UndefOr[Any], 
       typings.senchaTouch.Ext.mixin.IObservable
     ]
   ] = js.undefined
@@ -96,7 +96,7 @@ trait IDraggable
   /** [Method] Sets the value of disabled
     * @param disabled Object The new value.
     */
-  var setDisabled: js.UndefOr[js.Function1[/* disabled */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setDisabled: js.UndefOr[js.Function1[/* disabled */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of draggingCls
     * @param draggingCls String The new value.
@@ -106,17 +106,17 @@ trait IDraggable
   /** [Method] Sets the value of element
     * @param element Object The new value.
     */
-  var setElement: js.UndefOr[js.Function1[/* element */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setElement: js.UndefOr[js.Function1[/* element */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of initialOffset
     * @param initialOffset Object/Number The new value.
     */
-  var setInitialOffset: js.UndefOr[js.Function1[/* initialOffset */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setInitialOffset: js.UndefOr[js.Function1[/* initialOffset */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of translatable
     * @param translatable Object The new value.
     */
-  var setTranslatable: js.UndefOr[js.Function1[/* translatable */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setTranslatable: js.UndefOr[js.Function1[/* translatable */ js.UndefOr[Any], Unit]] = js.undefined
 }
 object IDraggable {
   
@@ -151,7 +151,7 @@ object IDraggable {
     
     inline def setGetDirectionUndefined: Self = StObject.set(x, "getDirection", js.undefined)
     
-    inline def setGetDisabled(value: () => js.Any): Self = StObject.set(x, "getDisabled", js.Any.fromFunction0(value))
+    inline def setGetDisabled(value: () => Any): Self = StObject.set(x, "getDisabled", js.Any.fromFunction0(value))
     
     inline def setGetDisabledUndefined: Self = StObject.set(x, "getDisabled", js.undefined)
     
@@ -159,24 +159,24 @@ object IDraggable {
     
     inline def setGetDraggingClsUndefined: Self = StObject.set(x, "getDraggingCls", js.undefined)
     
-    inline def setGetElement(value: () => js.Any): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+    inline def setGetElement(value: () => Any): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
     
     inline def setGetElementUndefined: Self = StObject.set(x, "getElement", js.undefined)
     
-    inline def setGetInitialOffset(value: () => js.Any): Self = StObject.set(x, "getInitialOffset", js.Any.fromFunction0(value))
+    inline def setGetInitialOffset(value: () => Any): Self = StObject.set(x, "getInitialOffset", js.Any.fromFunction0(value))
     
     inline def setGetInitialOffsetUndefined: Self = StObject.set(x, "getInitialOffset", js.undefined)
     
-    inline def setGetTranslatable(value: () => js.Any): Self = StObject.set(x, "getTranslatable", js.Any.fromFunction0(value))
+    inline def setGetTranslatable(value: () => Any): Self = StObject.set(x, "getTranslatable", js.Any.fromFunction0(value))
     
     inline def setGetTranslatableUndefined: Self = StObject.set(x, "getTranslatable", js.undefined)
     
-    inline def setInitialOffset(value: js.Any): Self = StObject.set(x, "initialOffset", value.asInstanceOf[js.Any])
+    inline def setInitialOffset(value: Any): Self = StObject.set(x, "initialOffset", value.asInstanceOf[js.Any])
     
     inline def setInitialOffsetUndefined: Self = StObject.set(x, "initialOffset", js.undefined)
     
     inline def setRelayEvents(
-      value: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => typings.senchaTouch.Ext.mixin.IObservable
+      value: (/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any]) => typings.senchaTouch.Ext.mixin.IObservable
     ): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
     
     inline def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
@@ -193,7 +193,7 @@ object IDraggable {
     
     inline def setSetDirectionUndefined: Self = StObject.set(x, "setDirection", js.undefined)
     
-    inline def setSetDisabled(value: /* disabled */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDisabled", js.Any.fromFunction1(value))
+    inline def setSetDisabled(value: /* disabled */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setDisabled", js.Any.fromFunction1(value))
     
     inline def setSetDisabledUndefined: Self = StObject.set(x, "setDisabled", js.undefined)
     
@@ -201,15 +201,15 @@ object IDraggable {
     
     inline def setSetDraggingClsUndefined: Self = StObject.set(x, "setDraggingCls", js.undefined)
     
-    inline def setSetElement(value: /* element */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setElement", js.Any.fromFunction1(value))
+    inline def setSetElement(value: /* element */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setElement", js.Any.fromFunction1(value))
     
     inline def setSetElementUndefined: Self = StObject.set(x, "setElement", js.undefined)
     
-    inline def setSetInitialOffset(value: /* initialOffset */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setInitialOffset", js.Any.fromFunction1(value))
+    inline def setSetInitialOffset(value: /* initialOffset */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setInitialOffset", js.Any.fromFunction1(value))
     
     inline def setSetInitialOffsetUndefined: Self = StObject.set(x, "setInitialOffset", js.undefined)
     
-    inline def setSetTranslatable(value: /* translatable */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setTranslatable", js.Any.fromFunction1(value))
+    inline def setSetTranslatable(value: /* translatable */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setTranslatable", js.Any.fromFunction1(value))
     
     inline def setSetTranslatableUndefined: Self = StObject.set(x, "setTranslatable", js.undefined)
   }

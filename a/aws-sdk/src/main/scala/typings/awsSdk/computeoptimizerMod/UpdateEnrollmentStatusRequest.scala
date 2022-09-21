@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateEnrollmentStatusRequest extends StObject {
   
   /**
-    * Indicates whether to enroll member accounts of the organization if the your account is the master account of an organization.
+    * Indicates whether to enroll member accounts of the organization if the account is the management account of an organization.
     */
   var includeMemberAccounts: js.UndefOr[IncludeMemberAccounts] = js.undefined
   
   /**
-    * The new enrollment status of the account. Accepted options are Active or Inactive. You will get an error if Pending or Failed are specified.
+    * The new enrollment status of the account. The following status options are available:    Active - Opts in your account to the Compute Optimizer service. Compute Optimizer begins analyzing the configuration and utilization metrics of your Amazon Web Services resources after you opt in. For more information, see Metrics analyzed by Compute Optimizer in the Compute Optimizer User Guide.    Inactive - Opts out your account from the Compute Optimizer service. Your account's recommendations and related metrics data will be deleted from Compute Optimizer after you opt out.    The Pending and Failed options cannot be used to update the enrollment status of an account. They are returned in the response of a request to update the enrollment status of an account. 
     */
   var status: Status
 }

@@ -18,7 +18,7 @@ object explorerBaseMod {
   
   @JSImport("cosmiconfig/dist/ExplorerBase", "ExplorerBase")
   @js.native
-  class ExplorerBase[T /* <: ExplorerOptions | ExplorerOptionsSync */] protected () extends StObject {
+  open class ExplorerBase[T /* <: ExplorerOptions | ExplorerOptionsSync */] protected () extends StObject {
     def this(options: T) = this()
     
     def clearCaches(): Unit = js.native
@@ -33,7 +33,7 @@ object explorerBaseMod {
     
     /* protected */ val loadCache: js.UndefOr[Cache] = js.native
     
-    /* private */ var loadPackageProp: js.Any = js.native
+    /* private */ var loadPackageProp: Any = js.native
     
     /* protected */ def loadedContentToCosmiconfigResult(filepath: String, loadedContent: LoadedFileContent): CosmiconfigResult = js.native
     
@@ -43,7 +43,7 @@ object explorerBaseMod {
     
     /* protected */ def shouldSearchStopWithResult(result: CosmiconfigResult): Boolean = js.native
     
-    /* private */ var validateConfig: js.Any = js.native
+    /* private */ var validateConfig: Any = js.native
     
     /* protected */ def validateFilePath(filepath: String): Unit = js.native
   }

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.QueryTable")
 @js.native
-/* private */ class QueryTable ()
+/* private */ open class QueryTable ()
   extends StObject
      with typings.activexExcel.Excel.QueryTable

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Instance extends StObject {
   
   /**
-    * The list of EBS volumes that are attached to this instance.
+    * The list of Amazon EBS volumes that are attached to this instance.
     */
   var EbsVolumes: js.UndefOr[EbsVolumeList] = js.undefined
   
@@ -79,7 +79,7 @@ object Instance {
     
     inline def setEbsVolumesUndefined: Self = StObject.set(x, "EbsVolumes", js.undefined)
     
-    inline def setEbsVolumesVarargs(value: EbsVolume*): Self = StObject.set(x, "EbsVolumes", js.Array(value :_*))
+    inline def setEbsVolumesVarargs(value: EbsVolume*): Self = StObject.set(x, "EbsVolumes", js.Array(value*))
     
     inline def setEc2InstanceId(value: InstanceId): Self = StObject.set(x, "Ec2InstanceId", value.asInstanceOf[js.Any])
     

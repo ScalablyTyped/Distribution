@@ -29,7 +29,7 @@ object DescribeCapacityReservationsResult {
     
     inline def setCapacityReservationsUndefined: Self = StObject.set(x, "CapacityReservations", js.undefined)
     
-    inline def setCapacityReservationsVarargs(value: CapacityReservation*): Self = StObject.set(x, "CapacityReservations", js.Array(value :_*))
+    inline def setCapacityReservationsVarargs(value: CapacityReservation*): Self = StObject.set(x, "CapacityReservations", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

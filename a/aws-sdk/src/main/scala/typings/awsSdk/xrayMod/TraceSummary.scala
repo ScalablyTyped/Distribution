@@ -74,7 +74,7 @@ trait TraceSummary extends StObject {
   /**
     * The matched time stamp of a defined event.
     */
-  var MatchedEventTime: js.UndefOr[Timestamp] = js.undefined
+  var MatchedEventTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A list of resource ARNs for any resource corresponding to the trace segments.
@@ -123,7 +123,7 @@ object TraceSummary {
     
     inline def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
     
-    inline def setAvailabilityZonesVarargs(value: AvailabilityZoneDetail*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
+    inline def setAvailabilityZonesVarargs(value: AvailabilityZoneDetail*): Self = StObject.set(x, "AvailabilityZones", js.Array(value*))
     
     inline def setDuration(value: NullableDouble): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     
@@ -137,13 +137,13 @@ object TraceSummary {
     
     inline def setErrorRootCausesUndefined: Self = StObject.set(x, "ErrorRootCauses", js.undefined)
     
-    inline def setErrorRootCausesVarargs(value: ErrorRootCause*): Self = StObject.set(x, "ErrorRootCauses", js.Array(value :_*))
+    inline def setErrorRootCausesVarargs(value: ErrorRootCause*): Self = StObject.set(x, "ErrorRootCauses", js.Array(value*))
     
     inline def setFaultRootCauses(value: FaultRootCauses): Self = StObject.set(x, "FaultRootCauses", value.asInstanceOf[js.Any])
     
     inline def setFaultRootCausesUndefined: Self = StObject.set(x, "FaultRootCauses", js.undefined)
     
-    inline def setFaultRootCausesVarargs(value: FaultRootCause*): Self = StObject.set(x, "FaultRootCauses", js.Array(value :_*))
+    inline def setFaultRootCausesVarargs(value: FaultRootCause*): Self = StObject.set(x, "FaultRootCauses", js.Array(value*))
     
     inline def setHasError(value: NullableBoolean): Self = StObject.set(x, "HasError", value.asInstanceOf[js.Any])
     
@@ -169,13 +169,13 @@ object TraceSummary {
     
     inline def setInstanceIdsUndefined: Self = StObject.set(x, "InstanceIds", js.undefined)
     
-    inline def setInstanceIdsVarargs(value: InstanceIdDetail*): Self = StObject.set(x, "InstanceIds", js.Array(value :_*))
+    inline def setInstanceIdsVarargs(value: InstanceIdDetail*): Self = StObject.set(x, "InstanceIds", js.Array(value*))
     
     inline def setIsPartial(value: NullableBoolean): Self = StObject.set(x, "IsPartial", value.asInstanceOf[js.Any])
     
     inline def setIsPartialUndefined: Self = StObject.set(x, "IsPartial", js.undefined)
     
-    inline def setMatchedEventTime(value: Timestamp): Self = StObject.set(x, "MatchedEventTime", value.asInstanceOf[js.Any])
+    inline def setMatchedEventTime(value: js.Date): Self = StObject.set(x, "MatchedEventTime", value.asInstanceOf[js.Any])
     
     inline def setMatchedEventTimeUndefined: Self = StObject.set(x, "MatchedEventTime", js.undefined)
     
@@ -183,7 +183,7 @@ object TraceSummary {
     
     inline def setResourceARNsUndefined: Self = StObject.set(x, "ResourceARNs", js.undefined)
     
-    inline def setResourceARNsVarargs(value: ResourceARNDetail*): Self = StObject.set(x, "ResourceARNs", js.Array(value :_*))
+    inline def setResourceARNsVarargs(value: ResourceARNDetail*): Self = StObject.set(x, "ResourceARNs", js.Array(value*))
     
     inline def setResponseTime(value: NullableDouble): Self = StObject.set(x, "ResponseTime", value.asInstanceOf[js.Any])
     
@@ -191,7 +191,7 @@ object TraceSummary {
     
     inline def setResponseTimeRootCausesUndefined: Self = StObject.set(x, "ResponseTimeRootCauses", js.undefined)
     
-    inline def setResponseTimeRootCausesVarargs(value: ResponseTimeRootCause*): Self = StObject.set(x, "ResponseTimeRootCauses", js.Array(value :_*))
+    inline def setResponseTimeRootCausesVarargs(value: ResponseTimeRootCause*): Self = StObject.set(x, "ResponseTimeRootCauses", js.Array(value*))
     
     inline def setResponseTimeUndefined: Self = StObject.set(x, "ResponseTime", js.undefined)
     
@@ -203,12 +203,12 @@ object TraceSummary {
     
     inline def setServiceIdsUndefined: Self = StObject.set(x, "ServiceIds", js.undefined)
     
-    inline def setServiceIdsVarargs(value: ServiceId*): Self = StObject.set(x, "ServiceIds", js.Array(value :_*))
+    inline def setServiceIdsVarargs(value: ServiceId*): Self = StObject.set(x, "ServiceIds", js.Array(value*))
     
     inline def setUsers(value: TraceUsers): Self = StObject.set(x, "Users", value.asInstanceOf[js.Any])
     
     inline def setUsersUndefined: Self = StObject.set(x, "Users", js.undefined)
     
-    inline def setUsersVarargs(value: TraceUser*): Self = StObject.set(x, "Users", js.Array(value :_*))
+    inline def setUsersVarargs(value: TraceUser*): Self = StObject.set(x, "Users", js.Array(value*))
   }
 }

@@ -1,7 +1,6 @@
 package typings.cesium.anon
 
 import typings.cesium.mod.Cartesian3
-import typings.cesium.mod.VertexFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +23,7 @@ trait InnerRadii extends StObject {
   
   var stackPartitions: js.UndefOr[Double] = js.undefined
   
-  var vertexFormat: js.UndefOr[VertexFormat] = js.undefined
+  var vertexFormat: js.UndefOr[typings.cesium.mod.VertexFormat] = js.undefined
 }
 object InnerRadii {
   
@@ -67,7 +66,7 @@ object InnerRadii {
     
     inline def setStackPartitionsUndefined: Self = StObject.set(x, "stackPartitions", js.undefined)
     
-    inline def setVertexFormat(value: VertexFormat): Self = StObject.set(x, "vertexFormat", value.asInstanceOf[js.Any])
+    inline def setVertexFormat(value: typings.cesium.mod.VertexFormat): Self = StObject.set(x, "vertexFormat", value.asInstanceOf[js.Any])
     
     inline def setVertexFormatUndefined: Self = StObject.set(x, "vertexFormat", js.undefined)
   }

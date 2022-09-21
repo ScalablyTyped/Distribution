@@ -16,7 +16,7 @@ object deleteQueueCommandMod {
   
   @JSImport("@aws-sdk/client-sqs-node/commands/DeleteQueueCommand", "DeleteQueueCommand")
   @js.native
-  class DeleteQueueCommand protected ()
+  open class DeleteQueueCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object deleteQueueCommandMod {
     override val middlewareStack: MiddlewareStack[DeleteQueueInput, DeleteQueueOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: SQSResolvedConfiguration
     ): Handler[DeleteQueueInput, DeleteQueueOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: SQSResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[DeleteQueueInput, DeleteQueueOutput] = js.native
   }
 }

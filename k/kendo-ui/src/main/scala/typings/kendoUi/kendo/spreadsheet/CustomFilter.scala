@@ -10,7 +10,7 @@ trait CustomFilter
   extends StObject
      with Observable {
   
-  def init(options: js.Any): Unit = js.native
+  def init(options: Any): Unit = js.native
   
   var options: CustomFilterOptions = js.native
 }

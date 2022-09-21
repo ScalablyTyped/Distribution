@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.mobile.Application")
 @js.native
-class Application ()
+open class Application ()
   extends StObject
      with typings.kendoUi.kendo.mobile.Application {
-  def this(element: js.Any) = this()
-  def this(element: js.Any, options: ApplicationOptions) = this()
+  def this(element: Any) = this()
+  def this(element: Any, options: ApplicationOptions) = this()
   def this(element: Unit, options: ApplicationOptions) = this()
 }

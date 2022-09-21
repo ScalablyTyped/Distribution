@@ -41,7 +41,7 @@ object XBinaryStreamResolver {
     acquire: () => Unit,
     createOutputStream: () => XOutputStream,
     getInputStream: String => XInputStream,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     resolveOutputStream: XOutputStream => String
   ): XBinaryStreamResolver = {

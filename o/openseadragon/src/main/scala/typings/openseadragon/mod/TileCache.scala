@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("openseadragon", "TileCache")
 @js.native
-class TileCache protected () extends StObject {
+open class TileCache protected () extends StObject {
   def this(options: MaxImageCacheCount) = this()
   
   def cacheTile(options: Cutoff): Unit = js.native

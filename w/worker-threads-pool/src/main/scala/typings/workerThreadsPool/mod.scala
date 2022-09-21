@@ -2,7 +2,6 @@ package typings.workerThreadsPool
 
 import typings.node.workerThreadsMod.Worker
 import typings.node.workerThreadsMod.WorkerOptions
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ object mod {
   
   @JSImport("worker-threads-pool", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Pool {
     def this(options: Options) = this()
@@ -59,11 +58,11 @@ object mod {
       * @param options argument passed directly to `new Worker(filename, options)`
       * @param callback will be called once the worker is created
       */
-    def acquire(filename: String, callback: js.Function2[/* error */ Error | Null, /* worker */ Worker, Unit]): Unit = js.native
+    def acquire(filename: String, callback: js.Function2[/* error */ js.Error | Null, /* worker */ Worker, Unit]): Unit = js.native
     def acquire(
       filename: String,
       options: WorkerOptions,
-      callback: js.Function2[/* error */ Error | Null, /* worker */ Worker, Unit]
+      callback: js.Function2[/* error */ js.Error | Null, /* worker */ Worker, Unit]
     ): Unit = js.native
     
     /**

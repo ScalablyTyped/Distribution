@@ -1,7 +1,6 @@
 package typings.dialogflow.mod.google.cloud.dialogflow.v2beta1
 
 import typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Document.KnowledgeType
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +27,7 @@ trait IDocument extends StObject {
   var name: js.UndefOr[String | Null] = js.undefined
   
   /** Document rawContent */
-  var rawContent: js.UndefOr[Uint8Array | String | Null] = js.undefined
+  var rawContent: js.UndefOr[js.typedarray.Uint8Array | String | Null] = js.undefined
 }
 object IDocument {
   
@@ -63,7 +62,7 @@ object IDocument {
     
     inline def setKnowledgeTypesUndefined: Self = StObject.set(x, "knowledgeTypes", js.undefined)
     
-    inline def setKnowledgeTypesVarargs(value: KnowledgeType*): Self = StObject.set(x, "knowledgeTypes", js.Array(value :_*))
+    inline def setKnowledgeTypesVarargs(value: KnowledgeType*): Self = StObject.set(x, "knowledgeTypes", js.Array(value*))
     
     inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
@@ -77,7 +76,7 @@ object IDocument {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setRawContent(value: Uint8Array | String): Self = StObject.set(x, "rawContent", value.asInstanceOf[js.Any])
+    inline def setRawContent(value: js.typedarray.Uint8Array | String): Self = StObject.set(x, "rawContent", value.asInstanceOf[js.Any])
     
     inline def setRawContentNull: Self = StObject.set(x, "rawContent", null)
     

@@ -243,7 +243,7 @@ object mediaGalleries {
       
       inline def setAttachedImages(value: js.Array[Blob]): Self = StObject.set(x, "attachedImages", value.asInstanceOf[js.Any])
       
-      inline def setAttachedImagesVarargs(value: Blob*): Self = StObject.set(x, "attachedImages", js.Array(value :_*))
+      inline def setAttachedImagesVarargs(value: Blob*): Self = StObject.set(x, "attachedImages", js.Array(value*))
       
       inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
@@ -277,7 +277,7 @@ object mediaGalleries {
       
       inline def setRawTags(value: js.Array[RawTag]): Self = StObject.set(x, "rawTags", value.asInstanceOf[js.Any])
       
-      inline def setRawTagsVarargs(value: RawTag*): Self = StObject.set(x, "rawTags", js.Array(value :_*))
+      inline def setRawTagsVarargs(value: RawTag*): Self = StObject.set(x, "rawTags", js.Array(value*))
       
       inline def setRotation(value: integer): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
       

@@ -7,9 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents a collection of all the data connections that are part of the workbook or worksheet.
   *
-  * Represents a collection of all the Data Connections that are part of the workbook or worksheet.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 trait DataConnectionCollection
@@ -21,8 +21,10 @@ trait DataConnectionCollection
   var context_DataConnectionCollection: RequestContext
   
   /**
-    * Refreshes all the Data Connections in the collection.
+    * Refreshes data connections in the collection, such as from a PivotTable to a Power BI dataset, or a Data Model to a table or range in the same workbook.
+    Data connections unsupported by this method are: Power Query connections, data connections outside the original workbook (except Power BI connections), and connections to data protected by a firewall.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   def refreshAll(): Unit

@@ -10,10 +10,10 @@ object mod {
   
   @JSImport("react-wow", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ReactWOWProps, js.Object, js.Any]
+  open class default ()
+    extends Component[ReactWOWProps, js.Object, Any]
   
-  type ReactWOW = Component[ReactWOWProps, js.Object, js.Any]
+  type ReactWOW = Component[ReactWOWProps, js.Object, Any]
   
   trait ReactWOWProps extends StObject {
     
@@ -27,7 +27,7 @@ object mod {
       * Animation name.
       * @see https://daneden.github.io/animate.css/
       */
-    var animation: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 76 */ js.Any
+    var animation: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 76 */ Any
     
     /**
       * The callback is fired every time an animation is stoped.
@@ -87,7 +87,7 @@ object mod {
   object ReactWOWProps {
     
     inline def apply(
-      animation: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 76 */ js.Any,
+      animation: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 76 */ Any,
       children: Element
     ): ReactWOWProps = {
       val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any])
@@ -100,7 +100,7 @@ object mod {
       
       inline def setAnimateClassUndefined: Self = StObject.set(x, "animateClass", js.undefined)
       
-      inline def setAnimation(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 76 */ js.Any): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      inline def setAnimation(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 76 */ Any): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
       inline def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
       
@@ -128,7 +128,7 @@ object mod {
       
       inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      inline def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value :_*))
+      inline def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value*))
       
       inline def setOverflow(value: Boolean): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
       

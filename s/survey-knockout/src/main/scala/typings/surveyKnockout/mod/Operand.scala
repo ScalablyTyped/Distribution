@@ -6,12 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "Operand")
 @js.native
-abstract class Operand () extends StObject {
+open class Operand () extends StObject {
   
-  def addToAsyncList(list: js.Array[FunctionOperand]): Unit = js.native
+  def addToAsyncList(list: Any): Unit = js.native
   
-  def evaluate(): js.Any = js.native
-  def evaluate(processValue: ProcessValue): js.Any = js.native
+  /* protected */ def areOperatorsEquals(op1: Operand, op2: Operand): Boolean = js.native
+  
+  def evaluate(): Any = js.native
+  def evaluate(processValue: ProcessValue): Any = js.native
   
   def getType(): String = js.native
   
@@ -19,7 +21,11 @@ abstract class Operand () extends StObject {
   
   def hasFunction(): Boolean = js.native
   
-  def setVariables(variables: js.Array[String]): js.Any = js.native
+  /* protected */ def isContentEqual(op: Operand): Boolean = js.native
+  
+  def isEqual(op: Operand): Boolean = js.native
+  
+  def setVariables(variables: Any): Any = js.native
   
   def toString(func: js.Function1[/* op */ this.type, String]): String = js.native
 }

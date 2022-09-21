@@ -49,7 +49,7 @@ trait PlusMapsSearchPoiResult extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  var poiList: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var poiList: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * POI检索总结果数
@@ -82,11 +82,11 @@ object PlusMapsSearchPoiResult {
     
     inline def setPageNumberUndefined: Self = StObject.set(x, "pageNumber", js.undefined)
     
-    inline def setPoiList(value: js.Array[js.Any]): Self = StObject.set(x, "poiList", value.asInstanceOf[js.Any])
+    inline def setPoiList(value: js.Array[Any]): Self = StObject.set(x, "poiList", value.asInstanceOf[js.Any])
     
     inline def setPoiListUndefined: Self = StObject.set(x, "poiList", js.undefined)
     
-    inline def setPoiListVarargs(value: js.Any*): Self = StObject.set(x, "poiList", js.Array(value :_*))
+    inline def setPoiListVarargs(value: Any*): Self = StObject.set(x, "poiList", js.Array(value*))
     
     inline def setTotalNumber(value: Double): Self = StObject.set(x, "totalNumber", value.asInstanceOf[js.Any])
     

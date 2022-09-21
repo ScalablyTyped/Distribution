@@ -14,7 +14,7 @@ object webXRPlaneDetectorMod {
   
   @JSImport("babylonjs/XR/features/WebXRPlaneDetector", "WebXRPlaneDetector")
   @js.native
-  class WebXRPlaneDetector protected () extends WebXRAbstractFeature {
+  open class WebXRPlaneDetector protected () extends WebXRAbstractFeature {
     /**
       * construct a new Plane Detector
       * @param _xrSessionManager an instance of xr Session manager
@@ -23,23 +23,23 @@ object webXRPlaneDetectorMod {
     def this(_xrSessionManager: WebXRSessionManager) = this()
     def this(_xrSessionManager: WebXRSessionManager, _options: IWebXRPlaneDetectorOptions) = this()
     
-    /* private */ var _detectedPlanes: js.Any = js.native
+    /* private */ var _detectedPlanes: Any = js.native
     
-    /* private */ var _enabled: js.Any = js.native
-    
-    /* private */ var _init: js.Any = js.native
-    
-    /* private */ var _lastFrameDetected: js.Any = js.native
-    
-    /* private */ var _options: js.Any = js.native
-    
-    /* private */ var _updatePlaneWithXRPlane: js.Any = js.native
+    /* private */ var _enabled: Any = js.native
     
     /**
       * avoiding using Array.find for global support.
       * @param xrPlane the plane to find in the array
       */
-    /* private */ var findIndexInPlaneArray: js.Any = js.native
+    /* private */ var _findIndexInPlaneArray: Any = js.native
+    
+    /* private */ var _init: Any = js.native
+    
+    /* private */ var _lastFrameDetected: Any = js.native
+    
+    /* private */ var _options: Any = js.native
+    
+    /* private */ var _updatePlaneWithXRPlane: Any = js.native
     
     /**
       * Observers registered here will be executed when a new plane was added to the session
@@ -113,7 +113,7 @@ object webXRPlaneDetectorMod {
       
       inline def setPolygonDefinition(value: js.Array[Vector3]): Self = StObject.set(x, "polygonDefinition", value.asInstanceOf[js.Any])
       
-      inline def setPolygonDefinitionVarargs(value: Vector3*): Self = StObject.set(x, "polygonDefinition", js.Array(value :_*))
+      inline def setPolygonDefinitionVarargs(value: Vector3*): Self = StObject.set(x, "polygonDefinition", js.Array(value*))
       
       inline def setTransformationMatrix(value: Matrix): Self = StObject.set(x, "transformationMatrix", value.asInstanceOf[js.Any])
       
@@ -128,6 +128,11 @@ object webXRPlaneDetectorMod {
       * If not defined, planes will be removed from the array when the feature is detached or the session ended.
       */
     var doNotRemovePlanesOnSessionEnded: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Preferred detector configuration, not all preferred options will be supported by all platforms.
+      */
+    var preferredDetectorOptions: js.UndefOr[XRGeometryDetectorOptions] = js.undefined
     
     /**
       * The node to use to transform the local results to world coordinates
@@ -146,6 +151,10 @@ object webXRPlaneDetectorMod {
       inline def setDoNotRemovePlanesOnSessionEnded(value: Boolean): Self = StObject.set(x, "doNotRemovePlanesOnSessionEnded", value.asInstanceOf[js.Any])
       
       inline def setDoNotRemovePlanesOnSessionEndedUndefined: Self = StObject.set(x, "doNotRemovePlanesOnSessionEnded", js.undefined)
+      
+      inline def setPreferredDetectorOptions(value: XRGeometryDetectorOptions): Self = StObject.set(x, "preferredDetectorOptions", value.asInstanceOf[js.Any])
+      
+      inline def setPreferredDetectorOptionsUndefined: Self = StObject.set(x, "preferredDetectorOptions", js.undefined)
       
       inline def setWorldParentNode(value: TransformNode): Self = StObject.set(x, "worldParentNode", value.asInstanceOf[js.Any])
       

@@ -83,7 +83,7 @@ object GoogleActionsV2AppResponse {
     
     inline def setExpectedInputsUndefined: Self = StObject.set(x, "expectedInputs", js.undefined)
     
-    inline def setExpectedInputsVarargs(value: GoogleActionsV2ExpectedInput*): Self = StObject.set(x, "expectedInputs", js.Array(value :_*))
+    inline def setExpectedInputsVarargs(value: GoogleActionsV2ExpectedInput*): Self = StObject.set(x, "expectedInputs", js.Array(value*))
     
     inline def setFinalResponse(value: GoogleActionsV2FinalResponse): Self = StObject.set(x, "finalResponse", value.asInstanceOf[js.Any])
     

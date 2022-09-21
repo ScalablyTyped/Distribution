@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Partial<iobroker.iobroker/objects.<global>.ioBroker.StateCommon> */
 trait PartialStateCommon extends StObject {
   
-  var alias: js.UndefOr[Read] = js.undefined
+  var alias: js.UndefOr[Write] = js.undefined
   
-  var custom: js.UndefOr[Record[String, js.Any]] = js.undefined
+  var custom: js.UndefOr[Record[String, Any]] = js.undefined
   
-  var `def`: js.UndefOr[js.Any] = js.undefined
+  var `def`: js.UndefOr[Any] = js.undefined
   
   var defAck: js.UndefOr[Boolean] = js.undefined
   
@@ -25,7 +25,7 @@ trait PartialStateCommon extends StObject {
   
   var expert: js.UndefOr[`true`] = js.undefined
   
-  var history: js.UndefOr[js.Any] = js.undefined
+  var history: js.UndefOr[Any] = js.undefined
   
   var icon: js.UndefOr[String] = js.undefined
   
@@ -41,7 +41,7 @@ trait PartialStateCommon extends StObject {
   
   var smartName: js.UndefOr[String | langinLanguagesstringsmar] = js.undefined
   
-  var states: js.UndefOr[(Record[String, String]) | String] = js.undefined
+  var states: js.UndefOr[(Record[String, String]) | js.Array[String] | String] = js.undefined
   
   var step: js.UndefOr[Double] = js.undefined
   
@@ -62,15 +62,15 @@ object PartialStateCommon {
   
   extension [Self <: PartialStateCommon](x: Self) {
     
-    inline def setAlias(value: Read): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+    inline def setAlias(value: Write): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
     inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
     
-    inline def setCustom(value: Record[String, js.Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: Record[String, Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
-    inline def setDef(value: js.Any): Self = StObject.set(x, "def", value.asInstanceOf[js.Any])
+    inline def setDef(value: Any): Self = StObject.set(x, "def", value.asInstanceOf[js.Any])
     
     inline def setDefAck(value: Boolean): Self = StObject.set(x, "defAck", value.asInstanceOf[js.Any])
     
@@ -90,7 +90,7 @@ object PartialStateCommon {
     
     inline def setExpertUndefined: Self = StObject.set(x, "expert", js.undefined)
     
-    inline def setHistory(value: js.Any): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+    inline def setHistory(value: Any): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
     inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
     
@@ -122,9 +122,11 @@ object PartialStateCommon {
     
     inline def setSmartNameUndefined: Self = StObject.set(x, "smartName", js.undefined)
     
-    inline def setStates(value: (Record[String, String]) | String): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
+    inline def setStates(value: (Record[String, String]) | js.Array[String] | String): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     
     inline def setStatesUndefined: Self = StObject.set(x, "states", js.undefined)
+    
+    inline def setStatesVarargs(value: String*): Self = StObject.set(x, "states", js.Array(value*))
     
     inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     

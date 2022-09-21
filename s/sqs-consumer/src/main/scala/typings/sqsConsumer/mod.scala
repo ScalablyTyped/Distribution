@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("sqs-consumer", "Consumer")
   @js.native
-  class Consumer protected ()
+  open class Consumer protected ()
     extends typings.sqsConsumer.consumerMod.Consumer {
     def this(options: ConsumerOptions) = this()
   }

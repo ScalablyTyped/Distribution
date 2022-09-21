@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("monaco-editor", "Position")
 @js.native
-class Position protected () extends StObject {
+open class Position protected () extends StObject {
   def this(lineNumber: Double, column: Double) = this()
   
   /**
@@ -93,7 +93,7 @@ object Position {
   /**
     * Test if `obj` is an `IPosition`.
     */
-  inline def isIPosition(obj: js.Any): /* is monaco-editor.monaco-editor.IPosition */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPosition")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is monaco-editor.monaco-editor.IPosition */ Boolean]
+  inline def isIPosition(obj: Any): /* is monaco-editor.monaco-editor.IPosition */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPosition")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is monaco-editor.monaco-editor.IPosition */ Boolean]
   
   /**
     * Create a `Position` from an `IPosition`.

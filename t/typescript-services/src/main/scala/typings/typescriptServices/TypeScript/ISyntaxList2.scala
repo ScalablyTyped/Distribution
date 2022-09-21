@@ -8,7 +8,7 @@ trait ISyntaxList2
   extends StObject
      with AST {
   
-  /* private */ var _fileName: js.Any
+  /* private */ var _fileName: Any
   
   def any(func: js.Function1[/* v */ AST, Boolean]): Boolean
   
@@ -20,18 +20,18 @@ trait ISyntaxList2
   
   def lastOrDefault(func: js.Function2[/* v */ AST, /* index */ Double, Boolean]): AST
   
-  /* private */ var members: js.Any
+  /* private */ var members: Any
   
   def structuralEquals(ast: ISyntaxList2, includingPosition: Boolean): Boolean
 }
 object ISyntaxList2 {
   
   inline def apply(
-    _astID: js.Any,
+    _astID: Any,
     _end: Double,
-    _fileName: js.Any,
-    _postComments: js.Any,
-    _preComments: js.Any,
+    _fileName: Any,
+    _postComments: Any,
+    _preComments: Any,
     _start: Double,
     _trailingTriviaWidth: Double,
     any: js.Function1[/* v */ AST, Boolean] => Boolean,
@@ -43,7 +43,7 @@ object ISyntaxList2 {
     isExpression: () => Boolean,
     kind: () => SyntaxKind,
     lastOrDefault: js.Function2[/* v */ AST, /* index */ Double, Boolean] => AST,
-    members: js.Any,
+    members: Any,
     parent: AST,
     postComments: () => js.Array[Comment],
     preComments: () => js.Array[Comment],
@@ -71,10 +71,10 @@ object ISyntaxList2 {
     
     inline def setLastOrDefault(value: js.Function2[/* v */ AST, /* index */ Double, Boolean] => AST): Self = StObject.set(x, "lastOrDefault", js.Any.fromFunction1(value))
     
-    inline def setMembers(value: js.Any): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+    inline def setMembers(value: Any): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
     inline def setStructuralEquals(value: (ISyntaxList2, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
     
-    inline def set_fileName(value: js.Any): Self = StObject.set(x, "_fileName", value.asInstanceOf[js.Any])
+    inline def set_fileName(value: Any): Self = StObject.set(x, "_fileName", value.asInstanceOf[js.Any])
   }
 }

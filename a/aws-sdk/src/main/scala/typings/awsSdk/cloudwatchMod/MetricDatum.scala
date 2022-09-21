@@ -34,7 +34,7 @@ trait MetricDatum extends StObject {
   /**
     * The time the metric data was received, expressed as the number of milliseconds since Jan 1, 1970 00:00:00 UTC.
     */
-  var Timestamp: js.UndefOr[typings.awsSdk.cloudwatchMod.Timestamp] = js.undefined
+  var Timestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * When you are using a Put operation, this defines what unit you want to use when storing the metric. In a Get operation, this displays the unit that is used for the metric.
@@ -64,13 +64,13 @@ object MetricDatum {
     
     inline def setCountsUndefined: Self = StObject.set(x, "Counts", js.undefined)
     
-    inline def setCountsVarargs(value: DatapointValue*): Self = StObject.set(x, "Counts", js.Array(value :_*))
+    inline def setCountsVarargs(value: DatapointValue*): Self = StObject.set(x, "Counts", js.Array(value*))
     
     inline def setDimensions(value: Dimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
     
     inline def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
     
-    inline def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "Dimensions", js.Array(value :_*))
+    inline def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "Dimensions", js.Array(value*))
     
     inline def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
     
@@ -82,7 +82,7 @@ object MetricDatum {
     
     inline def setStorageResolutionUndefined: Self = StObject.set(x, "StorageResolution", js.undefined)
     
-    inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
     inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
     
@@ -98,6 +98,6 @@ object MetricDatum {
     
     inline def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
-    inline def setValuesVarargs(value: DatapointValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: DatapointValue*): Self = StObject.set(x, "Values", js.Array(value*))
   }
 }

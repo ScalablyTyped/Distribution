@@ -28,7 +28,7 @@ object RequestInfo {
     
     inline def setAppDeveloperEmailUndefined: Self = StObject.set(x, "appDeveloperEmail", js.undefined)
     
-    inline def setAppDeveloperEmailVarargs(value: String*): Self = StObject.set(x, "appDeveloperEmail", js.Array(value :_*))
+    inline def setAppDeveloperEmailVarargs(value: String*): Self = StObject.set(x, "appDeveloperEmail", js.Array(value*))
     
     inline def setAppKey(value: String): Self = StObject.set(x, "appKey", value.asInstanceOf[js.Any])
     

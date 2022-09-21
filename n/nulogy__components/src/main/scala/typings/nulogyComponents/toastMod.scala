@@ -8,5 +8,5 @@ object toastMod {
   
   @JSImport("@nulogy/components/src/Toast", "Toast")
   @js.native
-  val Toast: js.Any = js.native
+  val Toast: Any = js.native
 }

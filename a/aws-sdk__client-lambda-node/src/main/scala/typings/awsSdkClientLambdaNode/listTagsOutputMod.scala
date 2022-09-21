@@ -8,5 +8,5 @@ object listTagsOutputMod {
   
   @JSImport("@aws-sdk/client-lambda-node/model/ListTagsOutput", "ListTagsOutput")
   @js.native
-  val ListTagsOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ListTagsOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

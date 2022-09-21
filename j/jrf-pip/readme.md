@@ -10,10 +10,10 @@ parallel iteration processing
 | ------------------ | :-------------: |
 | Full name          | jrf-pip |
 | Keywords           | jrf-pip, parallel, iteration, processing, jrf |
-| # releases         | 3 |
-| # dependents       | 1 |
-| # downloads        | 203 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 15.0 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/jirufik/jrf-pip#readme)

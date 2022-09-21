@@ -1,6 +1,5 @@
 package typings.typedGithubApi
 
-import typings.std.Date
 import typings.typedGithubApi.labelMod.Label
 import typings.typedGithubApi.milestoneMod.Milestone
 import typings.typedGithubApi.repositoryMod.Repository
@@ -21,7 +20,7 @@ object issueMod {
     
     var body: String
     
-    var closed_at: Date | Null
+    var closed_at: js.Date | Null
     
     var closed_by: UserSummary | Null
     
@@ -29,7 +28,7 @@ object issueMod {
     
     var comments_url: String
     
-    var created_at: Date
+    var created_at: js.Date
     
     var events_url: String
     
@@ -57,7 +56,7 @@ object issueMod {
     
     var title: String
     
-    var updated_at: Date
+    var updated_at: js.Date
     
     var url: String
     
@@ -70,7 +69,7 @@ object issueMod {
       body: String,
       comments: Double,
       comments_url: String,
-      created_at: Date,
+      created_at: js.Date,
       events_url: String,
       html_url: String,
       id: Double,
@@ -81,7 +80,7 @@ object issueMod {
       repository_url: String,
       state: open | closed,
       title: String,
-      updated_at: Date,
+      updated_at: js.Date,
       url: String,
       user: UserSummary
     ): Issue = {
@@ -97,11 +96,11 @@ object issueMod {
       
       inline def setAssignees(value: js.Array[UserSummary]): Self = StObject.set(x, "assignees", value.asInstanceOf[js.Any])
       
-      inline def setAssigneesVarargs(value: UserSummary*): Self = StObject.set(x, "assignees", js.Array(value :_*))
+      inline def setAssigneesVarargs(value: UserSummary*): Self = StObject.set(x, "assignees", js.Array(value*))
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      inline def setClosed_at(value: Date): Self = StObject.set(x, "closed_at", value.asInstanceOf[js.Any])
+      inline def setClosed_at(value: js.Date): Self = StObject.set(x, "closed_at", value.asInstanceOf[js.Any])
       
       inline def setClosed_atNull: Self = StObject.set(x, "closed_at", null)
       
@@ -113,7 +112,7 @@ object issueMod {
       
       inline def setComments_url(value: String): Self = StObject.set(x, "comments_url", value.asInstanceOf[js.Any])
       
-      inline def setCreated_at(value: Date): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+      inline def setCreated_at(value: js.Date): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
       
       inline def setEvents_url(value: String): Self = StObject.set(x, "events_url", value.asInstanceOf[js.Any])
       
@@ -123,7 +122,7 @@ object issueMod {
       
       inline def setLabels(value: js.Array[Label]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
       
-      inline def setLabelsVarargs(value: Label*): Self = StObject.set(x, "labels", js.Array(value :_*))
+      inline def setLabelsVarargs(value: Label*): Self = StObject.set(x, "labels", js.Array(value*))
       
       inline def setLabels_url(value: String): Self = StObject.set(x, "labels_url", value.asInstanceOf[js.Any])
       
@@ -149,7 +148,7 @@ object issueMod {
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      inline def setUpdated_at(value: Date): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
+      inline def setUpdated_at(value: js.Date): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
@@ -161,13 +160,13 @@ object issueMod {
     
     var body: String
     
-    var created_at: Date
+    var created_at: js.Date
     
     var html_url: String
     
     var id: Double
     
-    var updated_at: Date
+    var updated_at: js.Date
     
     var url: String
     
@@ -177,10 +176,10 @@ object issueMod {
     
     inline def apply(
       body: String,
-      created_at: Date,
+      created_at: js.Date,
       html_url: String,
       id: Double,
-      updated_at: Date,
+      updated_at: js.Date,
       url: String,
       user: UserSummary
     ): IssueComment = {
@@ -192,13 +191,13 @@ object issueMod {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      inline def setCreated_at(value: Date): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+      inline def setCreated_at(value: js.Date): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
       
       inline def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      inline def setUpdated_at(value: Date): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
+      inline def setUpdated_at(value: js.Date): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       

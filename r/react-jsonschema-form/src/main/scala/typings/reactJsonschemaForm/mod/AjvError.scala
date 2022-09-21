@@ -10,7 +10,7 @@ trait AjvError extends StObject {
   
   var name: String
   
-  var params: js.Any
+  var params: Any
   
   var property: String
   
@@ -18,7 +18,7 @@ trait AjvError extends StObject {
 }
 object AjvError {
   
-  inline def apply(message: String, name: String, params: js.Any, property: String, stack: String): AjvError = {
+  inline def apply(message: String, name: String, params: Any, property: String, stack: String): AjvError = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[AjvError]
   }
@@ -29,7 +29,7 @@ object AjvError {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     

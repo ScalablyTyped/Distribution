@@ -1,7 +1,7 @@
 
 # Scala.js typings for popperjs__core
 
-Typings are for version 2.5.4
+Typings are for version 2.11.6
 
 ## Library description:
 Tooltip and Popover Positioning Engine
@@ -10,10 +10,10 @@ Tooltip and Popover Positioning Engine
 | ------------------ | :-------------: |
 | Full name          | @popperjs/core |
 | Keywords           | tooltip, popover, dropdown, popup, popper, positioning engine |
-| # releases         | 57 |
-| # dependents       | 599 |
-| # downloads        | 45823101 |
-| # stars            | 0 |
+| # releases         | 29 |
+| # dependents       | 0.0 |
+| # downloads        | 3.2817357333333332E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/popperjs/popper-core#readme)

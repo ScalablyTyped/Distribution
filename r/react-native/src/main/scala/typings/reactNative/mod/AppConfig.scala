@@ -24,11 +24,11 @@ object AppConfig {
     
     inline def setAppKey(value: String): Self = StObject.set(x, "appKey", value.asInstanceOf[js.Any])
     
-    inline def setComponent(value: () => ComponentType[js.Any]): Self = StObject.set(x, "component", js.Any.fromFunction0(value))
+    inline def setComponent(value: () => ComponentType[Any]): Self = StObject.set(x, "component", js.Any.fromFunction0(value))
     
     inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
-    inline def setRun(value: /* appParameters */ js.Any => Unit): Self = StObject.set(x, "run", js.Any.fromFunction1(value))
+    inline def setRun(value: /* appParameters */ Any => Unit): Self = StObject.set(x, "run", js.Any.fromFunction1(value))
     
     inline def setRunUndefined: Self = StObject.set(x, "run", js.undefined)
   }

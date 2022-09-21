@@ -11,6 +11,8 @@ import typings.tuyaPanelKit.anon.Height
 import typings.tuyaPanelKit.tuyaPanelKitStrings.auto
 import typings.tuyaPanelKit.tuyaPanelKitStrings.iconfont
 import typings.tuyaPanelKit.tuyaPanelKitStrings.image
+import typings.tuyaPanelKit.tuyaPanelKitStrings.normal
+import typings.tuyaPanelKit.tuyaPanelKitStrings.parcel
 import typings.tuyaPanelKit.tuyaPanelKitStrings.spring
 import typings.tuyaPanelKit.tuyaPanelKitStrings.text
 import typings.tuyaPanelKit.tuyaPanelKitStrings.timing
@@ -21,12 +23,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent std.Omit<tuya-panel-kit.tuya-panel-kit.SliderProps, 'theme'> */
 trait TYSectionSliderProps extends StObject {
   
-  var Action: js.UndefOr[js.Any] = js.undefined
+  /**
+    * @language zh-CN
+    * @description 右侧 Action 具体值，当类型为 string时，默认使用 TYText
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Specific value of action on the right. When the type is string, TYText is used by default
+    * @defaultValue null
+    */
+  var Action: js.UndefOr[Any] = js.undefined
   
-  var Icon: js.UndefOr[js.Any] = js.undefined
+  /**
+    * @language zh-CN
+    * @description 左侧 Icon 具体值，当类型为 string时，默认使用 IconFont
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Icon specific value on the left. When the type is string, Iconfont is used by default
+    * @defaultValue null
+    */
+  var Icon: js.UndefOr[Any] = js.undefined
   
   var accessibilityLabel: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 右侧 Action 类型
+    * @defaultValue 'auto'
+    */
+  /**
+    * @language en-US
+    * @description Right action type
+    * @defaultValue 'auto'
+    */
   var actionType: js.UndefOr[auto | image | iconfont | text] = js.undefined
   
   var animateTransitions: js.UndefOr[Boolean] = js.undefined
@@ -37,6 +69,18 @@ trait TYSectionSliderProps extends StObject {
   
   var canTouchTrack: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 内容样式
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Content Style
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
   var contentStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   var debugTouchArea: js.UndefOr[Boolean] = js.undefined
@@ -45,17 +89,61 @@ trait TYSectionSliderProps extends StObject {
   
   var horizontal: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 图标颜色
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description The Color of icon
+    * @defaultValue null
+    */
   var iconColor: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 图标尺寸
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description The size of icon
+    * @defaultValue null
+    */
   var iconSize: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 左侧 Icon 类型
+    * @defaultValue 'auto'
+    */
+  /**
+    * @language en-US
+    * @description Icon type on the left
+    * @defaultValue 'auto'
+    */
   var iconType: js.UndefOr[auto | image | iconfont | text] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 图片的 tintColor 是否跟随iconColor，默认为 true
+    * @defaultValue true
+    */
+  /**
+    * @language en-US
+    * @description Whether the image's tintcolor follows icolor or not, the default is true
+    * @defaultValue true
+    */
   var imageFollowIconColor: js.UndefOr[Boolean] = js.undefined
+  
+  var maxNounStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   var maximumTrackTintColor: js.UndefOr[String] = js.undefined
   
   var maximumValue: js.UndefOr[Double] = js.undefined
+  
+  var minNounStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   var minimumTrackTintColor: js.UndefOr[String] = js.undefined
   
@@ -81,16 +169,62 @@ trait TYSectionSliderProps extends StObject {
   
   var reverseValue: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 滑块样式
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Style of slider
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
   var sliderStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   var stepValue: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 容器样式
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Container style
+    * @types <a target='_blank' href='https://reactnative.dev/docs/view-style-props'>StyleProp<ViewStyle></a>
+    * @defaultValue null
+    */
   var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   var styles: js.UndefOr[DebugThumbTouchArea] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 文字样式
+    * @types <a target="_blank" href="https://reactnative.dev/docs/text-style-props">StyleProp<TextStyle></a>
+    * @defaultValue null
+    */
+  /**
+    * @language en-US
+    * @description Style of text
+    * @types <a target="_blank" href="https://reactnative.dev/docs/text-style-props">StyleProp<TextStyle></a>
+    * @defaultValue null
+    */
   var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 主题配置
+    * @defaultValue {}
+    */
+  /**
+    * @language en-US
+    * @description Theme configuration
+    * @defaultValue {}
+    */
   var theme: CellRadius
   
   var thumbStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
@@ -101,7 +235,21 @@ trait TYSectionSliderProps extends StObject {
   
   var trackStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
+  var `type`: js.UndefOr[normal | parcel] = js.undefined
+  
+  /**
+    * @language zh-CN
+    * @description 是否使用 ART 实现版本
+    * @defaultValue false
+    */
+  /**
+    * @language en-US
+    * @description Is art used to implement the version
+    * @defaultValue false
+    */
   var useART: js.UndefOr[Boolean] = js.undefined
+  
+  var useNoun: js.UndefOr[Boolean] = js.undefined
   
   var value: js.UndefOr[Double] = js.undefined
 }
@@ -118,7 +266,7 @@ object TYSectionSliderProps {
     
     inline def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
     
-    inline def setAction(value: js.Any): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: Any): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
     inline def setActionType(value: auto | image | iconfont | text): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
     
@@ -160,7 +308,7 @@ object TYSectionSliderProps {
     
     inline def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
     
-    inline def setIcon(value: js.Any): Self = StObject.set(x, "Icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: Any): Self = StObject.set(x, "Icon", value.asInstanceOf[js.Any])
     
     inline def setIconColor(value: String): Self = StObject.set(x, "iconColor", value.asInstanceOf[js.Any])
     
@@ -180,6 +328,12 @@ object TYSectionSliderProps {
     
     inline def setImageFollowIconColorUndefined: Self = StObject.set(x, "imageFollowIconColor", js.undefined)
     
+    inline def setMaxNounStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "maxNounStyle", value.asInstanceOf[js.Any])
+    
+    inline def setMaxNounStyleNull: Self = StObject.set(x, "maxNounStyle", null)
+    
+    inline def setMaxNounStyleUndefined: Self = StObject.set(x, "maxNounStyle", js.undefined)
+    
     inline def setMaximumTrackTintColor(value: String): Self = StObject.set(x, "maximumTrackTintColor", value.asInstanceOf[js.Any])
     
     inline def setMaximumTrackTintColorUndefined: Self = StObject.set(x, "maximumTrackTintColor", js.undefined)
@@ -187,6 +341,12 @@ object TYSectionSliderProps {
     inline def setMaximumValue(value: Double): Self = StObject.set(x, "maximumValue", value.asInstanceOf[js.Any])
     
     inline def setMaximumValueUndefined: Self = StObject.set(x, "maximumValue", js.undefined)
+    
+    inline def setMinNounStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "minNounStyle", value.asInstanceOf[js.Any])
+    
+    inline def setMinNounStyleNull: Self = StObject.set(x, "minNounStyle", null)
+    
+    inline def setMinNounStyleUndefined: Self = StObject.set(x, "minNounStyle", js.undefined)
     
     inline def setMinimumTrackTintColor(value: String): Self = StObject.set(x, "minimumTrackTintColor", value.asInstanceOf[js.Any])
     
@@ -284,9 +444,17 @@ object TYSectionSliderProps {
     
     inline def setTrackStyleUndefined: Self = StObject.set(x, "trackStyle", js.undefined)
     
+    inline def setType(value: normal | parcel): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
     inline def setUseART(value: Boolean): Self = StObject.set(x, "useART", value.asInstanceOf[js.Any])
     
     inline def setUseARTUndefined: Self = StObject.set(x, "useART", js.undefined)
+    
+    inline def setUseNoun(value: Boolean): Self = StObject.set(x, "useNoun", value.asInstanceOf[js.Any])
+    
+    inline def setUseNounUndefined: Self = StObject.set(x, "useNoun", js.undefined)
     
     inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

@@ -24,6 +24,6 @@ object ExitStandbyAnswer {
     
     inline def setActivitiesUndefined: Self = StObject.set(x, "Activities", js.undefined)
     
-    inline def setActivitiesVarargs(value: Activity*): Self = StObject.set(x, "Activities", js.Array(value :_*))
+    inline def setActivitiesVarargs(value: Activity*): Self = StObject.set(x, "Activities", js.Array(value*))
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Root extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the root. For more information about ARNs in Organizations, see ARN Formats Supported by Organizations in the AWS Organizations User Guide.
+    * The Amazon Resource Name (ARN) of the root. For more information about ARNs in Organizations, see ARN Formats Supported by Organizations in the Amazon Web Services Service Authorization Reference.
     */
   var Arn: js.UndefOr[RootArn] = js.undefined
   
@@ -51,6 +51,6 @@ object Root {
     
     inline def setPolicyTypesUndefined: Self = StObject.set(x, "PolicyTypes", js.undefined)
     
-    inline def setPolicyTypesVarargs(value: PolicyTypeSummary*): Self = StObject.set(x, "PolicyTypes", js.Array(value :_*))
+    inline def setPolicyTypesVarargs(value: PolicyTypeSummary*): Self = StObject.set(x, "PolicyTypes", js.Array(value*))
   }
 }

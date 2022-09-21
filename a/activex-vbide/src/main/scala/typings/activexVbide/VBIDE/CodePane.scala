@@ -10,7 +10,7 @@ trait CodePane extends StObject {
   
   val CodePaneView: vbextCodePaneview
   
-  def Collection(index: js.Any): CodePane
+  def Collection(index: Any): CodePane
   @JSName("Collection")
   val Collection_Original: CodePanes
   

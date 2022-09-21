@@ -15,8 +15,7 @@ object positioningContainerPositioningContainerMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Coachmark/PositioningContainer/PositioningContainer", "PositioningContainer")
   @js.native
-  class PositioningContainer protected ()
-    extends Component[IPositioningContainerProps, IPositioningContainerState, js.Any] {
+  open class PositioningContainer protected () extends Component[IPositioningContainerProps, IPositioningContainerState, Any] {
     def this(props: IPositioningContainerProps) = this()
     
     @JSName("UNSAFE_componentWillMount")
@@ -25,75 +24,75 @@ object positioningContainerPositioningContainerMod {
     @JSName("UNSAFE_componentWillUpdate")
     def UNSAFE_componentWillUpdate_MPositioningContainer(newProps: IPositioningContainerProps): Unit = js.native
     
-    /* private */ var _arePositionsEqual: js.Any = js.native
+    /* private */ var _arePositionsEqual: Any = js.native
     
-    /* private */ var _async: js.Any = js.native
+    /* private */ var _async: Any = js.native
     
-    /* private */ var _comparePositions: js.Any = js.native
+    /* private */ var _comparePositions: Any = js.native
     
-    /* private */ var _contentHost: js.Any = js.native
+    /* private */ var _contentHost: Any = js.native
     
-    /* private */ var _didSetInitialFocus: js.Any = js.native
+    /* private */ var _didSetInitialFocus: Any = js.native
     
     /* protected */ def _dismissOnLostFocus(ev: Event): Unit = js.native
     
     /* protected */ def _dismissOnScroll(ev: Event): Unit = js.native
     
-    /* private */ var _events: js.Any = js.native
+    /* private */ var _events: Any = js.native
     
-    /* private */ var _getBounds: js.Any = js.native
+    /* private */ var _getBounds: Any = js.native
     
     /**
       * Return the maximum height the container can grow to
       * without going out of the specified bounds
       */
-    /* private */ var _getMaxHeight: js.Any = js.native
+    /* private */ var _getMaxHeight: Any = js.native
     
-    /* private */ var _getTarget: js.Any = js.native
+    /* private */ var _getTarget: Any = js.native
     
     /**
       * The maximum height the PositioningContainer can grow to
       * without going being the window or target bounds
       */
-    /* private */ var _maxHeight: js.Any = js.native
+    /* private */ var _maxHeight: Any = js.native
     
     /* protected */ def _onComponentDidMount(): Unit = js.native
     
-    /* private */ var _positionAttempts: js.Any = js.native
+    /* private */ var _positionAttempts: Any = js.native
     
     /**
       * The primary positioned div.
       */
-    /* private */ var _positionedHost: js.Any = js.native
+    /* private */ var _positionedHost: Any = js.native
     
     /**
       * The bounds used when determing if and where the
       * PositioningContainer should be placed.
       */
-    /* private */ var _positioningBounds: js.Any = js.native
+    /* private */ var _positioningBounds: Any = js.native
     
     /**
       * Animates the height if finalHeight was given.
       */
-    /* private */ var _setHeightOffsetEveryFrame: js.Any = js.native
+    /* private */ var _setHeightOffsetEveryFrame: Any = js.native
     
-    /* private */ var _setHeightOffsetTimer: js.Any = js.native
+    /* private */ var _setHeightOffsetTimer: Any = js.native
     
     /* protected */ def _setInitialFocus(): Unit = js.native
     
-    /* private */ var _setTargetWindowAndElement: js.Any = js.native
+    /* private */ var _setTargetWindowAndElement: Any = js.native
     
-    /* private */ var _target: js.Any = js.native
+    /* private */ var _target: Any = js.native
     
     /**
       * Stores an instance of Window, used to check
       * for server side rendering and if focus was lost.
       */
-    /* private */ var _targetWindow: js.Any = js.native
+    /* private */ var _targetWindow: Any = js.native
     
-    /* private */ var _updateAsyncPosition: js.Any = js.native
+    /* private */ var _updateAsyncPosition: Any = js.native
     
-    /* private */ var _updatePosition: js.Any = js.native
+    /* private */ var _updatePosition: Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MPositioningContainer(): Unit = js.native

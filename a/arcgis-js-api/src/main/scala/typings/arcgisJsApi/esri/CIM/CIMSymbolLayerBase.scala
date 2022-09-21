@@ -56,7 +56,7 @@ object CIMSymbolLayerBase {
     
     inline def setEffectsUndefined: Self = StObject.set(x, "effects", js.undefined)
     
-    inline def setEffectsVarargs(value: CIMGeometricEffectType*): Self = StObject.set(x, "effects", js.Array(value :_*))
+    inline def setEffectsVarargs(value: CIMGeometricEffectType*): Self = StObject.set(x, "effects", js.Array(value*))
     
     inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     

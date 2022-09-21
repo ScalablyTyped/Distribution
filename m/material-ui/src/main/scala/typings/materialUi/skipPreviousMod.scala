@@ -10,10 +10,10 @@ object skipPreviousMod {
   
   @JSImport("material-ui/svg-icons/av/skip-previous", JSImport.Default)
   @js.native
-  class default () extends AvSkipPrevious
+  open class default () extends AvSkipPrevious
   
   @JSImport("material-ui/svg-icons/av/skip-previous", "AvSkipPrevious")
   @js.native
-  class AvSkipPrevious ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvSkipPrevious ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

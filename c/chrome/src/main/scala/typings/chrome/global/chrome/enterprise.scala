@@ -2,7 +2,6 @@ package typings.chrome.global.chrome
 
 import typings.chrome.chrome.enterprise.networkingAttributes.NetworkDetails
 import typings.chrome.chrome.enterprise.platformKeys.Token
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,6 +27,8 @@ object enterprise {
     inline def getDeviceAnnotatedLocation(callback: js.Function1[/* annotatedLocation */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceAnnotatedLocation")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     inline def getDeviceAssetId(callback: js.Function1[/* assetId */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceAssetId")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    inline def getDeviceHostname(callback: js.Function1[/* hostname */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceHostname")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     inline def getDeviceSerialNumber(callback: js.Function1[/* serialNumber */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSerialNumber")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
@@ -67,27 +68,33 @@ object enterprise {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def challengeMachineKey(challenge: ArrayBuffer, callback: js.Function1[/* response */ ArrayBuffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("challengeMachineKey")(challenge.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def challengeMachineKey(
-      challenge: ArrayBuffer,
+      challenge: js.typedarray.ArrayBuffer,
+      callback: js.Function1[/* response */ js.typedarray.ArrayBuffer, Unit]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("challengeMachineKey")(challenge.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def challengeMachineKey(
+      challenge: js.typedarray.ArrayBuffer,
       registerKey: Boolean,
-      callback: js.Function1[/* response */ ArrayBuffer, Unit]
+      callback: js.Function1[/* response */ js.typedarray.ArrayBuffer, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("challengeMachineKey")(challenge.asInstanceOf[js.Any], registerKey.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def challengeUserKey(
-      challenge: ArrayBuffer,
+      challenge: js.typedarray.ArrayBuffer,
       registerKey: Boolean,
-      callback: js.Function1[/* response */ ArrayBuffer, Unit]
+      callback: js.Function1[/* response */ js.typedarray.ArrayBuffer, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("challengeUserKey")(challenge.asInstanceOf[js.Any], registerKey.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def getCertificates(tokenId: String, callback: js.Function1[/* certificates */ js.Array[ArrayBuffer], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getCertificates")(tokenId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def getCertificates(
+      tokenId: String,
+      callback: js.Function1[/* certificates */ js.Array[js.typedarray.ArrayBuffer], Unit]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getCertificates")(tokenId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def getTokens(callback: js.Function1[/* tokens */ js.Array[Token], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getTokens")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def importCertificate(tokenId: String, certificate: ArrayBuffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("importCertificate")(tokenId.asInstanceOf[js.Any], certificate.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def importCertificate(tokenId: String, certificate: ArrayBuffer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("importCertificate")(tokenId.asInstanceOf[js.Any], certificate.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def importCertificate(tokenId: String, certificate: js.typedarray.ArrayBuffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("importCertificate")(tokenId.asInstanceOf[js.Any], certificate.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def importCertificate(tokenId: String, certificate: js.typedarray.ArrayBuffer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("importCertificate")(tokenId.asInstanceOf[js.Any], certificate.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def removeCertificate(tokenId: String, certificate: ArrayBuffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeCertificate")(tokenId.asInstanceOf[js.Any], certificate.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def removeCertificate(tokenId: String, certificate: ArrayBuffer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeCertificate")(tokenId.asInstanceOf[js.Any], certificate.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeCertificate(tokenId: String, certificate: js.typedarray.ArrayBuffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeCertificate")(tokenId.asInstanceOf[js.Any], certificate.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeCertificate(tokenId: String, certificate: js.typedarray.ArrayBuffer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeCertificate")(tokenId.asInstanceOf[js.Any], certificate.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

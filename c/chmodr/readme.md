@@ -11,9 +11,9 @@ like `chmod -R`
 | Full name          | chmodr |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 45 |
-| # downloads        | 4254374 |
-| # stars            | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 225958.0 |
+| # stars            | 28.0 |
 
 ## Links
 - [Homepage](https://github.com/isaacs/chmodr#readme)

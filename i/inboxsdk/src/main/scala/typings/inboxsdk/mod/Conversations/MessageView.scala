@@ -49,12 +49,9 @@ trait MessageView extends StObject {
   
   def isLoaded(): Boolean = js.native
   
+  def on(name: destroy | load, cb: js.Function0[Unit]): Unit = js.native
   @JSName("on")
   def on_contactHover(name: contactHover, cb: js.Function1[/* event */ ContactHoverEvent, Unit]): Unit = js.native
-  @JSName("on")
-  def on_destroy(name: destroy, cb: js.Function0[Unit]): Unit = js.native
-  @JSName("on")
-  def on_load(name: load, cb: js.Function0[Unit]): Unit = js.native
   @JSName("on")
   def on_viewStateChange(name: viewStateChange, cb: js.Function1[/* event */ typings.inboxsdk.anon.MessageView, Unit]): Unit = js.native
 }

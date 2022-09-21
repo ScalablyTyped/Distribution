@@ -11,7 +11,7 @@ trait IgDoughnutChart
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Gets or sets whether the slices can be exploded.
@@ -58,7 +58,7 @@ trait IgDoughnutChart
   /**
     * Gets or sets the style used when a slice is selected.
     */
-  var selectedStyle: js.UndefOr[js.Any] = js.undefined
+  var selectedStyle: js.UndefOr[Any] = js.undefined
   
   /**
     * An array of series objects.
@@ -164,7 +164,7 @@ object IgDoughnutChart {
     
     inline def setPixelScalingRatioUndefined: Self = StObject.set(x, "pixelScalingRatio", js.undefined)
     
-    inline def setSelectedStyle(value: js.Any): Self = StObject.set(x, "selectedStyle", value.asInstanceOf[js.Any])
+    inline def setSelectedStyle(value: Any): Self = StObject.set(x, "selectedStyle", value.asInstanceOf[js.Any])
     
     inline def setSelectedStyleUndefined: Self = StObject.set(x, "selectedStyle", js.undefined)
     
@@ -172,7 +172,7 @@ object IgDoughnutChart {
     
     inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
-    inline def setSeriesVarargs(value: IgDoughnutChartSeries*): Self = StObject.set(x, "series", js.Array(value :_*))
+    inline def setSeriesVarargs(value: IgDoughnutChartSeries*): Self = StObject.set(x, "series", js.Array(value*))
     
     inline def setSliceClick(value: (/* event */ Event, /* ui */ SliceClickEventUIParam) => Unit): Self = StObject.set(x, "sliceClick", js.Any.fromFunction2(value))
     

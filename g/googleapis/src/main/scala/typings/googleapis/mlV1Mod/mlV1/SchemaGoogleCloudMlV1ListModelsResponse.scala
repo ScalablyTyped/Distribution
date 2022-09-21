@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response message for the ListModels method.
-  */
 trait SchemaGoogleCloudMlV1ListModelsResponse extends StObject {
   
   /**
@@ -15,10 +12,9 @@ trait SchemaGoogleCloudMlV1ListModelsResponse extends StObject {
   var models: js.UndefOr[js.Array[SchemaGoogleCloudMlV1Model]] = js.undefined
   
   /**
-    * Optional. Pass this token as the `page_token` field of the request for a
-    * subsequent call.
+    * Optional. Pass this token as the `page_token` field of the request for a subsequent call.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGoogleCloudMlV1ListModelsResponse {
   
@@ -33,9 +29,11 @@ object SchemaGoogleCloudMlV1ListModelsResponse {
     
     inline def setModelsUndefined: Self = StObject.set(x, "models", js.undefined)
     
-    inline def setModelsVarargs(value: SchemaGoogleCloudMlV1Model*): Self = StObject.set(x, "models", js.Array(value :_*))
+    inline def setModelsVarargs(value: SchemaGoogleCloudMlV1Model*): Self = StObject.set(x, "models", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

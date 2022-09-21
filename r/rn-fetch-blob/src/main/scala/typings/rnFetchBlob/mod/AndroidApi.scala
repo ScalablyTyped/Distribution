@@ -12,17 +12,17 @@ trait AndroidApi extends StObject {
     * @param path Path of the file to be opened.
     * @param mime Basically system will open an app according to this MIME type.
     */
-  def actionViewIntent(path: String, mime: String): js.Promise[js.Any]
+  def actionViewIntent(path: String, mime: String): js.Promise[Any]
 }
 object AndroidApi {
   
-  inline def apply(actionViewIntent: (String, String) => js.Promise[js.Any]): AndroidApi = {
+  inline def apply(actionViewIntent: (String, String) => js.Promise[Any]): AndroidApi = {
     val __obj = js.Dynamic.literal(actionViewIntent = js.Any.fromFunction2(actionViewIntent))
     __obj.asInstanceOf[AndroidApi]
   }
   
   extension [Self <: AndroidApi](x: Self) {
     
-    inline def setActionViewIntent(value: (String, String) => js.Promise[js.Any]): Self = StObject.set(x, "actionViewIntent", js.Any.fromFunction2(value))
+    inline def setActionViewIntent(value: (String, String) => js.Promise[Any]): Self = StObject.set(x, "actionViewIntent", js.Any.fromFunction2(value))
   }
 }

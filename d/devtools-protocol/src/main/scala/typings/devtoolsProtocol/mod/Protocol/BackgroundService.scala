@@ -64,7 +64,7 @@ object BackgroundService {
       
       inline def setEventMetadata(value: js.Array[EventMetadata]): Self = StObject.set(x, "eventMetadata", value.asInstanceOf[js.Any])
       
-      inline def setEventMetadataVarargs(value: EventMetadata*): Self = StObject.set(x, "eventMetadata", js.Array(value :_*))
+      inline def setEventMetadataVarargs(value: EventMetadata*): Self = StObject.set(x, "eventMetadata", js.Array(value*))
       
       inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
       

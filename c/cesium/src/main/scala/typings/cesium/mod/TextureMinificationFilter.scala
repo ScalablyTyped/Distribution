@@ -11,41 +11,77 @@ sealed trait TextureMinificationFilter extends StObject
 object TextureMinificationFilter extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TextureMinificationFilter & Double] = js.native
+  def apply(value: scala.Nothing): js.UndefOr[TextureMinificationFilter & scala.Nothing] = js.native
   
+  /**
+    * Samples the texture through bi-linear interpolation of the four nearest pixels. This produces smoother results than <code>NEAREST</code> filtering.
+    */
   @js.native
   sealed trait LINEAR
     extends StObject
        with TextureMinificationFilter
-  /* 0 */ val LINEAR: typings.cesium.mod.TextureMinificationFilter.LINEAR & Double = js.native
+  /* WebGLConstants.LINEAR */ val LINEAR: typings.cesium.mod.TextureMinificationFilter.LINEAR & scala.Nothing = js.native
   
+  /**
+    * Read texture values with linear sampling from two adjacent mip levels and linearly interpolate the results.
+    * <p>
+    * This option provides a good balance of visual quality and speed when sampling from a mipmapped texture.
+    * </p>
+    * <p>
+    * Requires that the texture has a mipmap. The mip level is chosen by the view angle and screen-space size of the texture.
+    * </p>
+    */
   @js.native
   sealed trait LINEAR_MIPMAP_LINEAR
     extends StObject
        with TextureMinificationFilter
-  /* 1 */ val LINEAR_MIPMAP_LINEAR: typings.cesium.mod.TextureMinificationFilter.LINEAR_MIPMAP_LINEAR & Double = js.native
+  /* WebGLConstants.LINEAR_MIPMAP_LINEAR */ val LINEAR_MIPMAP_LINEAR: typings.cesium.mod.TextureMinificationFilter.LINEAR_MIPMAP_LINEAR & scala.Nothing = js.native
   
+  /**
+    * Selects the nearest mip level and applies linear sampling within that level.
+    * <p>
+    * Requires that the texture has a mipmap. The mip level is chosen by the view angle and screen-space size of the texture.
+    * </p>
+    */
   @js.native
   sealed trait LINEAR_MIPMAP_NEAREST
     extends StObject
        with TextureMinificationFilter
-  /* 2 */ val LINEAR_MIPMAP_NEAREST: typings.cesium.mod.TextureMinificationFilter.LINEAR_MIPMAP_NEAREST & Double = js.native
+  /* WebGLConstants.LINEAR_MIPMAP_NEAREST */ val LINEAR_MIPMAP_NEAREST: typings.cesium.mod.TextureMinificationFilter.LINEAR_MIPMAP_NEAREST & scala.Nothing = js.native
   
+  /**
+    * Samples the texture by returning the closest pixel.
+    */
   @js.native
   sealed trait NEAREST
     extends StObject
        with TextureMinificationFilter
-  /* 3 */ val NEAREST: typings.cesium.mod.TextureMinificationFilter.NEAREST & Double = js.native
+  /* WebGLConstants.NEAREST */ val NEAREST: typings.cesium.mod.TextureMinificationFilter.NEAREST & scala.Nothing = js.native
   
+  /**
+    * Read texture values with nearest sampling from two adjacent mip levels and linearly interpolate the results.
+    * <p>
+    * This option provides a good balance of visual quality and speed when sampling from a mipmapped texture.
+    * </p>
+    * <p>
+    * Requires that the texture has a mipmap. The mip level is chosen by the view angle and screen-space size of the texture.
+    * </p>
+    */
   @js.native
   sealed trait NEAREST_MIPMAP_LINEAR
     extends StObject
        with TextureMinificationFilter
-  /* 4 */ val NEAREST_MIPMAP_LINEAR: typings.cesium.mod.TextureMinificationFilter.NEAREST_MIPMAP_LINEAR & Double = js.native
+  /* WebGLConstants.NEAREST_MIPMAP_LINEAR */ val NEAREST_MIPMAP_LINEAR: typings.cesium.mod.TextureMinificationFilter.NEAREST_MIPMAP_LINEAR & scala.Nothing = js.native
   
+  /**
+    * Selects the nearest mip level and applies nearest sampling within that level.
+    * <p>
+    * Requires that the texture has a mipmap. The mip level is chosen by the view angle and screen-space size of the texture.
+    * </p>
+    */
   @js.native
   sealed trait NEAREST_MIPMAP_NEAREST
     extends StObject
        with TextureMinificationFilter
-  /* 5 */ val NEAREST_MIPMAP_NEAREST: typings.cesium.mod.TextureMinificationFilter.NEAREST_MIPMAP_NEAREST & Double = js.native
+  /* WebGLConstants.NEAREST_MIPMAP_NEAREST */ val NEAREST_MIPMAP_NEAREST: typings.cesium.mod.TextureMinificationFilter.NEAREST_MIPMAP_NEAREST & scala.Nothing = js.native
 }

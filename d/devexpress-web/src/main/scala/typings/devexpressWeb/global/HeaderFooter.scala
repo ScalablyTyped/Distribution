@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("HeaderFooter")
 @js.native
-class HeaderFooter ()
+open class HeaderFooter ()
   extends StObject
      with typings.devexpressWeb.HeaderFooter {
   

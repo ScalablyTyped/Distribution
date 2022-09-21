@@ -10,15 +10,12 @@ Computes the sample standard deviation over an array of values.
 | ------------------ | :-------------: |
 | Full name          | compute-stdev |
 | Keywords           | compute.io, compute, computation, statistics, stats, standard deviation, stdev, variance |
-| # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 108213 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3277.3333333333335 |
+| # stars            | 10.0 |
 
 ## Links
-- [Homepage](https://github.com/compute-io/stdev)
-- [Bugs](https://github.com/compute-io/stdev/issues)
-- [Repository](https://github.com/compute-io/stdev)
 - [Npm](https://www.npmjs.com/package/compute-stdev)
     
 

@@ -10,10 +10,10 @@ Jspreadsheet is a lightweight, vanilla javascript plugin to create amazing web-b
 | ------------------ | :-------------: |
 | Full name          | jexcel |
 | Keywords           | spreadsheet, tables, table, excel, grid, grid-editor, data-table, data-grid, data-spreadsheet |
-| # releases         | 39 |
-| # dependents       | 9 |
-| # downloads        | 151707 |
-| # stars            | 0 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 10961.0 |
+| # stars            | 6059.0 |
 
 ## Links
 - [Homepage](https://github.com/jspreadsheet/ce)

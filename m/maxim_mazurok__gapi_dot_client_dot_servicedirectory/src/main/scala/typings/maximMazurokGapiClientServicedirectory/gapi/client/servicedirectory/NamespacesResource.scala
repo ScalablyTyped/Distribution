@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait NamespacesResource extends StObject {
   
-  /** Creates a namespace, and returns the new Namespace. */
+  /** Creates a namespace, and returns the new namespace. */
   def create(request: NamespaceId): Request[Namespace] = js.native
   def create(request: UploadType, body: Namespace): Request[Namespace] = js.native
   

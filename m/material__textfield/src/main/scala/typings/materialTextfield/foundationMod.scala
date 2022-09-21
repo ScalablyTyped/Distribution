@@ -11,13 +11,13 @@ object foundationMod {
   
   @JSImport("@material/textfield/character-counter/foundation", JSImport.Default)
   @js.native
-  class default () extends MDCTextFieldCharacterCounterFoundation {
+  open class default () extends MDCTextFieldCharacterCounterFoundation {
     def this(adapter: PartialMDCTextFieldCharac) = this()
   }
   
   @JSImport("@material/textfield/character-counter/foundation", "MDCTextFieldCharacterCounterFoundation")
   @js.native
-  class MDCTextFieldCharacterCounterFoundation () extends MDCFoundation[MDCTextFieldCharacterCounterAdapter] {
+  open class MDCTextFieldCharacterCounterFoundation () extends MDCFoundation[MDCTextFieldCharacterCounterAdapter] {
     def this(adapter: PartialMDCTextFieldCharac) = this()
     
     def setCounterValue(currentLength: Double, maxLength: Double): Unit = js.native

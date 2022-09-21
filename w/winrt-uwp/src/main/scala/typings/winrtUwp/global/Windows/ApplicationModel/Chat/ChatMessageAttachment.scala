@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents an attachment to a chat message. */
 @JSGlobal("Windows.ApplicationModel.Chat.ChatMessageAttachment")
 @js.native
-class ChatMessageAttachment protected ()
+open class ChatMessageAttachment protected ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Chat.ChatMessageAttachment {
   /**

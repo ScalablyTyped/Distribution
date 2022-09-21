@@ -2,7 +2,6 @@ package typings.plottable
 
 import typings.d3Time.mod.CountableTimeInterval
 import typings.plottable.quantitativeScaleMod.QuantitativeScale
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,9 +15,10 @@ object timeScaleMod {
     *
     * @constructor
     */
-  class Time () extends QuantitativeScale[Date] {
+  open class Time ()
+    extends QuantitativeScale[js.Date] {
     
-    /* private */ var _d3Scale: js.Any = js.native
+    /* private */ var _d3Scale: Any = js.native
     
     /**
       * Returns an array of ticks values separated by the specified interval.
@@ -27,10 +27,10 @@ object timeScaleMod {
       * @param {number?} [step] The number of multiples of the interval between consecutive ticks.
       * @return {Date[]}
       */
-    def tickInterval(interval: String): js.Array[Date] = js.native
-    def tickInterval(interval: String, step: Double): js.Array[Date] = js.native
-    def tickInterval(interval: String, step: Double, useUTC: Boolean): js.Array[Date] = js.native
-    def tickInterval(interval: String, step: Unit, useUTC: Boolean): js.Array[Date] = js.native
+    def tickInterval(interval: String): js.Array[js.Date] = js.native
+    def tickInterval(interval: String, step: Double): js.Array[js.Date] = js.native
+    def tickInterval(interval: String, step: Double, useUTC: Boolean): js.Array[js.Date] = js.native
+    def tickInterval(interval: String, step: Unit, useUTC: Boolean): js.Array[js.Date] = js.native
   }
   /* static members */
   object Time {

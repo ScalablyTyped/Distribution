@@ -1,7 +1,6 @@
 package typings.uinput
 
 import typings.node.fsMod.WriteStream
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -2708,21 +2707,21 @@ object mod {
   @js.native
   val SW_VIDEOOUT_INSERT: Double = js.native
   
-  inline def create(stream: WriteStream, options: CreateOptions, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def create(stream: WriteStream, options: CreateOptions, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def emitCombo(stream: WriteStream, codes: js.Array[Double], callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("emit_combo")(stream.asInstanceOf[js.Any], codes.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def emitCombo(stream: WriteStream, codes: js.Array[Double], callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("emit_combo")(stream.asInstanceOf[js.Any], codes.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def keyEvent(stream: WriteStream, code: Double, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("key_event")(stream.asInstanceOf[js.Any], code.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def keyEvent(stream: WriteStream, code: Double, callback: js.Function1[/* err */ js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("key_event")(stream.asInstanceOf[js.Any], code.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def sendEvent(
     stream: WriteStream,
     typeParam: Double,
     code: Double,
     value: Double,
-    callback: js.Function1[/* err */ Error, Unit]
+    callback: js.Function1[/* err */ js.Error, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send_event")(stream.asInstanceOf[js.Any], typeParam.asInstanceOf[js.Any], code.asInstanceOf[js.Any], value.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def setup(options: SetupOptions, callback: js.Function2[/* err */ Error, /* stream */ WriteStream, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setup")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setup(options: SetupOptions, callback: js.Function2[/* err */ js.Error, /* stream */ WriteStream, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setup")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait CreateID extends StObject {
     
@@ -2757,25 +2756,25 @@ object mod {
       
       inline def setAbsflatUndefined: Self = StObject.set(x, "absflat", js.undefined)
       
-      inline def setAbsflatVarargs(value: Double*): Self = StObject.set(x, "absflat", js.Array(value :_*))
+      inline def setAbsflatVarargs(value: Double*): Self = StObject.set(x, "absflat", js.Array(value*))
       
       inline def setAbsfuzz(value: js.Array[Double]): Self = StObject.set(x, "absfuzz", value.asInstanceOf[js.Any])
       
       inline def setAbsfuzzUndefined: Self = StObject.set(x, "absfuzz", js.undefined)
       
-      inline def setAbsfuzzVarargs(value: Double*): Self = StObject.set(x, "absfuzz", js.Array(value :_*))
+      inline def setAbsfuzzVarargs(value: Double*): Self = StObject.set(x, "absfuzz", js.Array(value*))
       
       inline def setAbsmax(value: js.Array[Double]): Self = StObject.set(x, "absmax", value.asInstanceOf[js.Any])
       
       inline def setAbsmaxUndefined: Self = StObject.set(x, "absmax", js.undefined)
       
-      inline def setAbsmaxVarargs(value: Double*): Self = StObject.set(x, "absmax", js.Array(value :_*))
+      inline def setAbsmaxVarargs(value: Double*): Self = StObject.set(x, "absmax", js.Array(value*))
       
       inline def setAbsmin(value: js.Array[Double]): Self = StObject.set(x, "absmin", value.asInstanceOf[js.Any])
       
       inline def setAbsminUndefined: Self = StObject.set(x, "absmin", js.undefined)
       
-      inline def setAbsminVarargs(value: Double*): Self = StObject.set(x, "absmin", js.Array(value :_*))
+      inline def setAbsminVarargs(value: Double*): Self = StObject.set(x, "absmin", js.Array(value*))
       
       inline def setBustype(value: Double): Self = StObject.set(x, "bustype", value.asInstanceOf[js.Any])
       
@@ -2814,20 +2813,20 @@ object mod {
   
   trait SetupOptions extends StObject {
     
-    var EV_KEY: js.Array[js.Any]
+    var EV_KEY: js.Array[Any]
   }
   object SetupOptions {
     
-    inline def apply(EV_KEY: js.Array[js.Any]): SetupOptions = {
+    inline def apply(EV_KEY: js.Array[Any]): SetupOptions = {
       val __obj = js.Dynamic.literal(EV_KEY = EV_KEY.asInstanceOf[js.Any])
       __obj.asInstanceOf[SetupOptions]
     }
     
     extension [Self <: SetupOptions](x: Self) {
       
-      inline def setEV_KEY(value: js.Array[js.Any]): Self = StObject.set(x, "EV_KEY", value.asInstanceOf[js.Any])
+      inline def setEV_KEY(value: js.Array[Any]): Self = StObject.set(x, "EV_KEY", value.asInstanceOf[js.Any])
       
-      inline def setEV_KEYVarargs(value: js.Any*): Self = StObject.set(x, "EV_KEY", js.Array(value :_*))
+      inline def setEV_KEYVarargs(value: Any*): Self = StObject.set(x, "EV_KEY", js.Array(value*))
     }
   }
 }

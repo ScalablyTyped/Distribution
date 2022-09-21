@@ -13,9 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ApplicationData extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_datachanged(`type`: datachanged, listener: TypedEventHandler[ApplicationData, js.Any]): Unit = js.native
+  def addEventListener_datachanged(`type`: datachanged, listener: TypedEventHandler[ApplicationData, Any]): Unit = js.native
   
   /**
     * Removes all application data from the local, roaming, and temporary app data stores.
@@ -53,14 +53,14 @@ trait ApplicationData extends StObject {
   var localSettings: ApplicationDataContainer = js.native
   
   /** Occurs when roaming application data is synchronized. */
-  def ondatachanged(ev: js.Any & WinRTEvent[ApplicationData]): Unit = js.native
+  def ondatachanged(ev: Any & WinRTEvent[ApplicationData]): Unit = js.native
   /** Occurs when roaming application data is synchronized. */
   @JSName("ondatachanged")
-  var ondatachanged_Original: TypedEventHandler[ApplicationData, js.Any] = js.native
+  var ondatachanged_Original: TypedEventHandler[ApplicationData, Any] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_datachanged(`type`: datachanged, listener: TypedEventHandler[ApplicationData, js.Any]): Unit = js.native
+  def removeEventListener_datachanged(`type`: datachanged, listener: TypedEventHandler[ApplicationData, Any]): Unit = js.native
   
   /** Gets the root folder in the roaming app data store. */
   var roamingFolder: StorageFolder = js.native

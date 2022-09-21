@@ -32,7 +32,7 @@ trait HeatmapRendererResult
   var defaultValuesUsed: Boolean
   
   /**
-    * The renderer object configured to best match the given basemap and the spread of the data.
+    * The renderer object configured to best match the view's background and the spread of the data.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-heatmap.html#HeatmapRendererResult)
     */
@@ -46,7 +46,7 @@ trait HeatmapRendererResult
   var scheme: HeatmapScheme
   
   /**
-    * Basic statistics returned from a query to the service for data from the given field name.
+    * Basic statistics required for generating a renderer with optimal values for the given layer and view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-heatmap.html#HeatmapRendererResult)
     */

@@ -13,7 +13,7 @@ object mod {
     *
     * @param limit The maximum amount of editables to remember
     */
-  class UndoManager ()
+  open class UndoManager ()
     extends typings.typedUndo.undoManagerMod.UndoManager {
     def this(limit: Double) = this()
   }

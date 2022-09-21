@@ -1,36 +1,51 @@
 package typings.tinycon
 
+import org.scalablytyped.runtime.Shortcut
 import typings.tinycon.tinyconStrings.force
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod {
+object mod extends Shortcut {
   
   @JSImport("tinycon", JSImport.Namespace)
   @js.native
-  val ^ : js.Any = js.native
-  
-  inline def setBubble(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBubble")().asInstanceOf[Unit]
-  inline def setBubble(count: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBubble")(count.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def setBubble(count: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBubble")(count.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  
-  inline def setOptions(options: TinyconOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  val ^ : TinyconStatic = js.native
   
   trait TinyconOptions extends StObject {
     
+    /**
+      * @default true
+      */
     var abbreviate: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * @default '#F03D25'
+      */
     var background: js.UndefOr[String] = js.undefined
     
+    /**
+      * @default '#ffffff'
+      */
     var color: js.UndefOr[String] = js.undefined
+    
+    /**
+      * @default true
+      */
+    var crossOrigin: js.UndefOr[Boolean] = js.undefined
     
     var fallback: js.UndefOr[Boolean | force] = js.undefined
     
     var font: js.UndefOr[String] = js.undefined
     
+    /**
+      * @default 8
+      */
     var height: js.UndefOr[Double] = js.undefined
     
+    /**
+      * @default 7
+      */
     var width: js.UndefOr[Double] = js.undefined
   }
   object TinyconOptions {
@@ -54,6 +69,10 @@ object mod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setCrossOrigin(value: Boolean): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      
+      inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
+      
       inline def setFallback(value: Boolean | force): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
       inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
@@ -71,4 +90,26 @@ object mod {
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
+  
+  @js.native
+  trait TinyconStatic extends StObject {
+    
+    def reset(): Unit = js.native
+    
+    def setBubble(): TinyconStatic = js.native
+    def setBubble(label: String): TinyconStatic = js.native
+    def setBubble(label: String, color: String): TinyconStatic = js.native
+    def setBubble(label: Double): TinyconStatic = js.native
+    def setBubble(label: Double, color: String): TinyconStatic = js.native
+    def setBubble(label: Null, color: String): TinyconStatic = js.native
+    
+    def setImage(url: String): TinyconStatic = js.native
+    
+    def setOptions(custom: TinyconOptions): TinyconStatic = js.native
+  }
+  
+  type _To = TinyconStatic
+  
+  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
+  override def _to: TinyconStatic = ^
 }

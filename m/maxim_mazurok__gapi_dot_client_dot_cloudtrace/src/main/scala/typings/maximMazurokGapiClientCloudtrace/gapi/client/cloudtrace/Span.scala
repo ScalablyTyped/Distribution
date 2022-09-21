@@ -13,9 +13,9 @@ trait Span extends StObject {
   var childSpanCount: js.UndefOr[Double] = js.undefined
   
   /**
-    * Required. A description of the span's operation (up to 128 bytes). Trace displays the description in the Google Cloud Platform Console. For example, the display name can be a
-    * qualified method name or a file name and a line number where the operation is called. A best practice is to use the same display name within an application and at the same call
-    * point. This makes it easier to correlate spans in different traces.
+    * Required. A description of the span's operation (up to 128 bytes). Cloud Trace displays the description in the Cloud console. For example, the display name can be a qualified method
+    * name or a file name and a line number where the operation is called. A best practice is to use the same display name within an application and at the same call point. This makes it
+    * easier to correlate spans in different traces.
     */
   var displayName: js.UndefOr[TruncatableString] = js.undefined
   
@@ -29,13 +29,13 @@ trait Span extends StObject {
   var links: js.UndefOr[Links] = js.undefined
   
   /**
-    * Required. The resource name of the span in the following format: projects/[PROJECT_ID]/traces/[TRACE_ID]/spans/SPAN_ID is a unique identifier for a trace within a project; it is a
-    * 32-character hexadecimal encoding of a 16-byte array. [SPAN_ID] is a unique identifier for a span within a trace; it is a 16-character hexadecimal encoding of an 8-byte array. It
-    * should not be zero.
+    * Required. The resource name of the span in the following format: * `projects/[PROJECT_ID]/traces/[TRACE_ID]/spans/[SPAN_ID]` `[TRACE_ID]` is a unique identifier for a trace within a
+    * project; it is a 32-character hexadecimal encoding of a 16-byte array. It should not be zero. `[SPAN_ID]` is a unique identifier for a span within a trace; it is a 16-character
+    * hexadecimal encoding of an 8-byte array. It should not be zero. .
     */
   var name: js.UndefOr[String] = js.undefined
   
-  /** The [SPAN_ID] of this span's parent span. If this is a root span, then this field must be empty. */
+  /** The `[SPAN_ID]` of this span's parent span. If this is a root span, then this field must be empty. */
   var parentSpanId: js.UndefOr[String] = js.undefined
   
   /**
@@ -44,7 +44,7 @@ trait Span extends StObject {
     */
   var sameProcessAsParentSpan: js.UndefOr[Boolean] = js.undefined
   
-  /** Required. The [SPAN_ID] portion of the span's resource name. */
+  /** Required. The `[SPAN_ID]` portion of the span's resource name. */
   var spanId: js.UndefOr[String] = js.undefined
   
   /**

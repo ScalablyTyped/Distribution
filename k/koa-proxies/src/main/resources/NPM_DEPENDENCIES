@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "koa-proxies" : "0.12.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "koa-proxies" : "0.12.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

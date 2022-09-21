@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "Index")
 @js.native
-class Index ()
+open class Index ()
   extends typings.nodegit.indexMod.Index
 /* static members */
 object Index {

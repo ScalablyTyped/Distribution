@@ -24,6 +24,6 @@ object GetBucketCorsOutput {
     
     inline def setCORSRulesUndefined: Self = StObject.set(x, "CORSRules", js.undefined)
     
-    inline def setCORSRulesVarargs(value: CORSRule*): Self = StObject.set(x, "CORSRules", js.Array(value :_*))
+    inline def setCORSRulesVarargs(value: CORSRule*): Self = StObject.set(x, "CORSRules", js.Array(value*))
   }
 }

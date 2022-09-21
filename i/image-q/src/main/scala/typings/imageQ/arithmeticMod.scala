@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object arithmeticMod {
   
-  @JSImport("image-q/dist/utils/arithmetic", JSImport.Namespace)
+  @JSImport("image-q/dist/types/src/utils/arithmetic", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

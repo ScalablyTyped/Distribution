@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object protocolDocumentLinkMod {
   
-  @JSImport("vscode-languageclient/lib/protocolDocumentLink", JSImport.Default)
+  @JSImport("vscode-languageclient/lib/common/protocolDocumentLink", JSImport.Default)
   @js.native
-  class default protected () extends ProtocolDocumentLink {
+  open class default protected () extends ProtocolDocumentLink {
     def this(range: Range) = this()
     def this(range: Range, target: Uri) = this()
   }
@@ -19,6 +19,6 @@ object protocolDocumentLinkMod {
   @js.native
   trait ProtocolDocumentLink extends DocumentLink {
     
-    var data: js.Any = js.native
+    var data: Any = js.native
   }
 }

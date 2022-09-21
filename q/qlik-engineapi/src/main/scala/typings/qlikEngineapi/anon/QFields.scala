@@ -22,7 +22,7 @@ object QFields {
     
     inline def setQFields(value: js.Array[IDataField]): Self = StObject.set(x, "qFields", value.asInstanceOf[js.Any])
     
-    inline def setQFieldsVarargs(value: IDataField*): Self = StObject.set(x, "qFields", js.Array(value :_*))
+    inline def setQFieldsVarargs(value: IDataField*): Self = StObject.set(x, "qFields", js.Array(value*))
     
     inline def setQFormatSpec(value: String): Self = StObject.set(x, "qFormatSpec", value.asInstanceOf[js.Any])
   }

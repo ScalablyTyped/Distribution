@@ -21,10 +21,9 @@ import typings.amqp.amqpStrings.open
 import typings.amqp.amqpStrings.topic
 import typings.amqp.anon.ApplicationName
 import typings.amqp.anon.CaFile
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.node.netMod.Socket
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,7 +50,7 @@ object mod {
     
     def publish(
       routingKey: String,
-      body: js.Any,
+      body: Any,
       options: js.Object,
       callback: js.Function2[/* err */ js.UndefOr[Boolean], /* msg */ js.UndefOr[String], Unit]
     ): Unit = js.native
@@ -82,16 +81,7 @@ object mod {
       */
     def destroy(ifUnused: Boolean): Unit = js.native
     
-    @JSName("on")
-    def on_ack(event: ack, callback: Callback[Unit]): this.type = js.native
-    @JSName("on")
-    def on_error(event: error, callback: Callback[Unit]): this.type = js.native
-    @JSName("on")
-    def on_exchangeBindOk(event: exchangeBindOk, callback: Callback[Unit]): this.type = js.native
-    @JSName("on")
-    def on_exchangeUnbindOk(event: exchangeUnbindOk, callback: Callback[Unit]): this.type = js.native
-    @JSName("on")
-    def on_open(event: open, callback: Callback[Unit]): this.type = js.native
+    def on(event: open | ack | error | exchangeBindOk | exchangeUnbindOk, callback: Callback[Unit]): this.type = js.native
     
     def publish(
       routingKey: String,
@@ -165,7 +155,7 @@ object mod {
       acknowledge: Boolean => Unit,
       consumerTag: String,
       contentType: String,
-      deliveryTag: Uint8Array,
+      deliveryTag: js.typedarray.Uint8Array,
       exchange: String,
       queue: String,
       redelivered: Boolean,
@@ -332,7 +322,7 @@ object mod {
     
     var contentType: String
     
-    var deliveryTag: Uint8Array
+    var deliveryTag: js.typedarray.Uint8Array
     
     var exchange: String
     
@@ -347,7 +337,7 @@ object mod {
     inline def apply(
       consumerTag: String,
       contentType: String,
-      deliveryTag: Uint8Array,
+      deliveryTag: js.typedarray.Uint8Array,
       exchange: String,
       queue: String,
       redelivered: Boolean,
@@ -363,7 +353,7 @@ object mod {
       
       inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
-      inline def setDeliveryTag(value: Uint8Array): Self = StObject.set(x, "deliveryTag", value.asInstanceOf[js.Any])
+      inline def setDeliveryTag(value: js.typedarray.Uint8Array): Self = StObject.set(x, "deliveryTag", value.asInstanceOf[js.Any])
       
       inline def setExchange(value: String): Self = StObject.set(x, "exchange", value.asInstanceOf[js.Any])
       
@@ -415,7 +405,7 @@ object mod {
     /**
       * a map of additional arguments to pass in when creating an exchange
       */
-    var arguments: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var arguments: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     /**
       * Default: true
@@ -472,7 +462,7 @@ object mod {
     
     extension [Self <: ExchangeOptions](x: Self) {
       
-      inline def setArguments(value: StringDictionary[js.Any]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+      inline def setArguments(value: StringDictionary[Any]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
       inline def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
       
@@ -544,7 +534,7 @@ object mod {
       *
       * Arbitrary application-specific message headers
       */
-    var headers: js.UndefOr[js.Any] = js.undefined
+    var headers: js.UndefOr[Any] = js.undefined
     
     /**
       * Default: false
@@ -638,7 +628,7 @@ object mod {
       
       inline def setExpirationUndefined: Self = StObject.set(x, "expiration", js.undefined)
       
-      inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
@@ -680,9 +670,9 @@ object mod {
     
     var channel: Double
     
-    var consumerTagListeners: StringDictionary[js.Any]
+    var consumerTagListeners: StringDictionary[Any]
     
-    var consumerTagOptions: StringDictionary[js.Any]
+    var consumerTagOptions: StringDictionary[Any]
     
     var name: String
     
@@ -694,8 +684,8 @@ object mod {
     
     inline def apply(
       channel: Double,
-      consumerTagListeners: StringDictionary[js.Any],
-      consumerTagOptions: StringDictionary[js.Any],
+      consumerTagListeners: StringDictionary[Any],
+      consumerTagOptions: StringDictionary[Any],
       name: String,
       options: QueueOptions,
       state: String
@@ -708,9 +698,9 @@ object mod {
       
       inline def setChannel(value: Double): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
-      inline def setConsumerTagListeners(value: StringDictionary[js.Any]): Self = StObject.set(x, "consumerTagListeners", value.asInstanceOf[js.Any])
+      inline def setConsumerTagListeners(value: StringDictionary[Any]): Self = StObject.set(x, "consumerTagListeners", value.asInstanceOf[js.Any])
       
-      inline def setConsumerTagOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "consumerTagOptions", value.asInstanceOf[js.Any])
+      inline def setConsumerTagOptions(value: StringDictionary[Any]): Self = StObject.set(x, "consumerTagOptions", value.asInstanceOf[js.Any])
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -725,7 +715,7 @@ object mod {
     /**
       * a map of additional arguments to pass in when creating a queue
       */
-    var arguments: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var arguments: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     /**
       * Default: true
@@ -791,7 +781,7 @@ object mod {
     
     extension [Self <: QueueOptions](x: Self) {
       
-      inline def setArguments(value: StringDictionary[js.Any]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+      inline def setArguments(value: StringDictionary[Any]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
       inline def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
       
@@ -822,8 +812,8 @@ object mod {
   }
   
   type SubscribeCallback = js.Function4[
-    /* message */ js.Any, 
-    /* headers */ StringDictionary[js.Any], 
+    /* message */ Any, 
+    /* headers */ StringDictionary[Any], 
     /* deliveryInfo */ DeliveryInfo, 
     /* ack */ Ack, 
     Unit

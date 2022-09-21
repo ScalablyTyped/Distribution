@@ -10,7 +10,7 @@ trait PropertyDefinition extends StObject {
   
   var datePropertyOptions: js.UndefOr[DatePropertyOptions] = js.undefined
   
-  /** Options that determine how the property is displayed in the Cloud Search results page if it is specified to be displayed in the object's display options . */
+  /** The options that determine how the property is displayed in the Cloud Search results page if it's specified to be displayed in the object's display options. */
   var displayOptions: js.UndefOr[PropertyDisplayOptions] = js.undefined
   
   var doublePropertyOptions: js.UndefOr[DoublePropertyOptions] = js.undefined
@@ -23,7 +23,7 @@ trait PropertyDefinition extends StObject {
   
   /**
     * Indicates that the property can be used for generating facets. Cannot be true for properties whose type is object. IsReturnable must be true to set this option. Only supported for
-    * Boolean, Enum, and Text properties.
+    * boolean, enum, and text properties.
     */
   var isFacetable: js.UndefOr[Boolean] = js.undefined
   
@@ -41,8 +41,8 @@ trait PropertyDefinition extends StObject {
   var isReturnable: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates that the property can be used for sorting. Cannot be true for properties that are repeatable. Cannot be true for properties whose type is object or user identifier.
-    * IsReturnable must be true to set this option. Only supported for Boolean, Date, Double, Integer, and Timestamp properties.
+    * Indicates that the property can be used for sorting. Cannot be true for properties that are repeatable. Cannot be true for properties whose type is object. IsReturnable must be true
+    * to set this option. Only supported for boolean, date, double, integer, and timestamp properties.
     */
   var isSortable: js.UndefOr[Boolean] = js.undefined
   

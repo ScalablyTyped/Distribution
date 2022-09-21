@@ -14,7 +14,7 @@ trait DataSourceParameterMapDataFilter extends StObject {
   
   var operator: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[Any] = js.undefined
 }
 object DataSourceParameterMapDataFilter {
   
@@ -33,7 +33,7 @@ object DataSourceParameterMapDataFilter {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    inline def setFiltersVarargs(value: DataSourceParameterMapDataFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: DataSourceParameterMapDataFilter*): Self = StObject.set(x, "filters", js.Array(value*))
     
     inline def setLogic(value: String): Self = StObject.set(x, "logic", value.asInstanceOf[js.Any])
     
@@ -43,7 +43,7 @@ object DataSourceParameterMapDataFilter {
     
     inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

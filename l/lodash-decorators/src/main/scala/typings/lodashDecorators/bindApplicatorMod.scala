@@ -9,5 +9,5 @@ object bindApplicatorMod {
   
   @JSImport("lodash-decorators/applicators/BindApplicator", "BindApplicator")
   @js.native
-  class BindApplicator () extends Applicator
+  open class BindApplicator () extends Applicator
 }

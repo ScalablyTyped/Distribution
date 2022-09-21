@@ -1,187 +1,269 @@
 package typings.refractor
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.refractor.anon.TypeofPrism
-import typings.refractor.coreMod.AST.Properties
-import typings.refractor.coreMod.AST.Unist.Parent
+import typings.hast.mod.Properties
+import typings.prismjs.mod.Languages_
+import typings.refractor.anon.Aliases
 import typings.refractor.refractorStrings.element
+import typings.refractor.refractorStrings.root
+import typings.std.Record
+import typings.unist.mod.Data
+import typings.unist.mod.Node
+import typings.unist.mod.NodeData
+import typings.unist.mod.Position
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object coreMod {
   
-  @JSImport("refractor/core", JSImport.Namespace)
+  @JSImport("refractor/lib/core", "refractor")
   @js.native
-  val ^ : js.Any = js.native
+  val refractor: Refractor_ = js.native
   
-  inline def highlight(value: String, name: String): js.Array[RefractorNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("highlight")(value.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Array[RefractorNode]]
+  type Element = typings.hast.mod.Element
   
-  inline def listLanguages(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("listLanguages")().asInstanceOf[js.Array[String]]
-  
-  inline def register(syntax: RefractorSyntax): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(syntax.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  
-  inline def registered(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("registered")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  
-  object AST {
+  trait Env extends StObject {
     
-    trait Element
-      extends StObject
-         with Parent
-         with RefractorNode {
-      
-      var properties: Properties
-      
-      var tagName: String
-      
-      @JSName("type")
-      var type_Element: element
-    }
-    object Element {
-      
-      inline def apply(children: js.Array[RefractorNode], properties: Properties, tagName: String): Element = {
-        val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any])
-        __obj.updateDynamic("type")("element")
-        __obj.asInstanceOf[Element]
-      }
-      
-      extension [Self <: Element](x: Self) {
-        
-        inline def setProperties(value: Properties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
-        
-        inline def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
-        
-        inline def setType(value: element): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-      }
-    }
+    var attributes: Record[String, String]
     
-    trait Properties
-      extends StObject
-         with /* key */ StringDictionary[js.Any] {
-      
-      var className: js.UndefOr[js.Array[String]] = js.undefined
-    }
-    object Properties {
-      
-      inline def apply(): Properties = {
-        val __obj = js.Dynamic.literal()
-        __obj.asInstanceOf[Properties]
-      }
-      
-      extension [Self <: Properties](x: Self) {
-        
-        inline def setClassName(value: js.Array[String]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
-        
-        inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
-        
-        inline def setClassNameVarargs(value: String*): Self = StObject.set(x, "className", js.Array(value :_*))
-      }
-    }
+    var classes: js.Array[String]
     
-    trait Text
-      extends StObject
-         with typings.refractor.coreMod.AST.Unist.Text
-         with RefractorNode
-    object Text {
-      
-      inline def apply(`type`: String, value: String): Text = {
-        val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-        __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-        __obj.asInstanceOf[Text]
-      }
-    }
+    var content: Text | RefractorElement | (js.Array[Text | RefractorElement])
     
-    object Unist {
-      
-      trait Node extends StObject {
-        
-        var `type`: String
-      }
-      object Node {
-        
-        inline def apply(`type`: String): Node = {
-          val __obj = js.Dynamic.literal()
-          __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-          __obj.asInstanceOf[Node]
-        }
-        
-        extension [Self <: Node](x: Self) {
-          
-          inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-        }
-      }
-      
-      trait Parent
-        extends StObject
-           with Node {
-        
-        var children: js.Array[RefractorNode]
-      }
-      object Parent {
-        
-        inline def apply(children: js.Array[RefractorNode], `type`: String): Parent = {
-          val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-          __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-          __obj.asInstanceOf[Parent]
-        }
-        
-        extension [Self <: Parent](x: Self) {
-          
-          inline def setChildren(value: js.Array[RefractorNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-          
-          inline def setChildrenVarargs(value: RefractorNode*): Self = StObject.set(x, "children", js.Array(value :_*))
-        }
-      }
-      
-      trait Text
-        extends StObject
-           with Node {
-        
-        var value: String
-      }
-      object Text {
-        
-        inline def apply(`type`: String, value: String): typings.refractor.coreMod.AST.Unist.Text = {
-          val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-          __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-          __obj.asInstanceOf[typings.refractor.coreMod.AST.Unist.Text]
-        }
-        
-        extension [Self <: typings.refractor.coreMod.AST.Unist.Text](x: Self) {
-          
-          inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-        }
-      }
-    }
+    var language: String
+    
+    var tag: String
+    
+    var `type`: String
   }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.refractor.coreMod.AST.Element
-    - typings.refractor.coreMod.AST.Text
-  */
-  trait RefractorNode extends StObject
-  object RefractorNode {
+  object Env {
     
-    inline def Element(children: js.Array[RefractorNode], properties: Properties, tagName: String): typings.refractor.coreMod.AST.Element = {
-      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("element")
-      __obj.asInstanceOf[typings.refractor.coreMod.AST.Element]
-    }
-    
-    inline def Text(`type`: String, value: String): typings.refractor.coreMod.AST.Text = {
-      val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    inline def apply(
+      attributes: Record[String, String],
+      classes: js.Array[String],
+      content: Text | RefractorElement | (js.Array[Text | RefractorElement]),
+      language: String,
+      tag: String,
+      `type`: String
+    ): Env = {
+      val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], classes = classes.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.refractor.coreMod.AST.Text]
+      __obj.asInstanceOf[Env]
+    }
+    
+    extension [Self <: Env](x: Self) {
+      
+      inline def setAttributes(value: Record[String, String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      
+      inline def setClasses(value: js.Array[String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+      
+      inline def setClassesVarargs(value: String*): Self = StObject.set(x, "classes", js.Array(value*))
+      
+      inline def setContent(value: Text | RefractorElement | (js.Array[Text | RefractorElement])): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
+      inline def setContentVarargs(value: (Text | RefractorElement)*): Self = StObject.set(x, "content", js.Array(value*))
+      
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      
+      inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait RefractorSyntax extends StObject {
+  type Grammar = typings.prismjs.mod.Grammar
+  
+  type Languages = Languages_
+  
+  /* Inlined std.Omit<refractor.refractor/lib/core.Element, 'children'> & {  children :std.Array<refractor.refractor/lib/core.RefractorElement | refractor.refractor/lib/core.Text>} */
+  trait RefractorElement extends StObject {
     
-    def apply(prism: TypeofPrism): Unit = js.native
+    var children: js.Array[RefractorElement | Text]
     
-    var aliases: js.Array[String] = js.native
+    var content: js.UndefOr[typings.hast.mod.Root] = js.undefined
     
-    var displayName: String = js.native
+    var data: js.UndefOr[NodeData[Node[Data]]] = js.undefined
+    
+    var position: js.UndefOr[Position] = js.undefined
+    
+    var properties: js.UndefOr[Properties] = js.undefined
+    
+    var tagName: String
+    
+    var `type`: element
+  }
+  object RefractorElement {
+    
+    inline def apply(children: js.Array[RefractorElement | Text], tagName: String): RefractorElement = {
+      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("element")
+      __obj.asInstanceOf[RefractorElement]
+    }
+    
+    extension [Self <: RefractorElement](x: Self) {
+      
+      inline def setChildren(value: js.Array[RefractorElement | Text]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenVarargs(value: (RefractorElement | Text)*): Self = StObject.set(x, "children", js.Array(value*))
+      
+      inline def setContent(value: typings.hast.mod.Root): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      
+      inline def setData(value: NodeData[Node[Data]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      
+      inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      
+      inline def setProperties(value: Properties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      
+      inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+      
+      inline def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+      
+      inline def setType(value: element): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Inlined std.Omit<refractor.refractor/lib/core.Root, 'children'> & {  children :std.Array<refractor.refractor/lib/core.RefractorElement | refractor.refractor/lib/core.Text>} */
+  trait RefractorRoot extends StObject {
+    
+    var children: js.Array[RefractorElement | Text]
+    
+    var data: js.UndefOr[NodeData[Node[Data]]] = js.undefined
+    
+    var position: js.UndefOr[Position] = js.undefined
+    
+    var `type`: root
+  }
+  object RefractorRoot {
+    
+    inline def apply(children: js.Array[RefractorElement | Text]): RefractorRoot = {
+      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("root")
+      __obj.asInstanceOf[RefractorRoot]
+    }
+    
+    extension [Self <: RefractorRoot](x: Self) {
+      
+      inline def setChildren(value: js.Array[RefractorElement | Text]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenVarargs(value: (RefractorElement | Text)*): Self = StObject.set(x, "children", js.Array(value*))
+      
+      inline def setData(value: NodeData[Node[Data]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      
+      inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      
+      inline def setType(value: root): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Refractor_ extends StObject {
+    
+    def alias(language: String): Unit
+    def alias(language: String, alias: String): Unit
+    def alias(language: String, alias: js.Array[String]): Unit
+    def alias(language: Record[String, String | js.Array[String]]): Unit
+    def alias(language: Record[String, String | js.Array[String]], alias: String): Unit
+    def alias(language: Record[String, String | js.Array[String]], alias: js.Array[String]): Unit
+    @JSName("alias")
+    var alias_Original: js.Function2[
+        /* language */ (Record[String, String | js.Array[String]]) | String, 
+        /* alias */ js.UndefOr[String | js.Array[String]], 
+        Unit
+      ]
+    
+    def highlight(value: String, language: String): RefractorRoot
+    def highlight(value: String, language: Grammar): RefractorRoot
+    @JSName("highlight")
+    var highlight_Original: js.Function2[/* value */ String, /* language */ String | Grammar, RefractorRoot]
+    
+    var languages: Languages
+    
+    def listLanguages(): js.Array[String]
+    @JSName("listLanguages")
+    var listLanguages_Original: js.Function0[js.Array[String]]
+    
+    def register(syntax: Syntax): Unit
+    @JSName("register")
+    var register_Original: js.Function1[/* syntax */ Syntax, Unit]
+    
+    def registered(aliasOrLanguage: String): Boolean
+    @JSName("registered")
+    var registered_Original: js.Function1[/* aliasOrLanguage */ String, Boolean]
+  }
+  object Refractor_ {
+    
+    inline def apply(
+      alias: (/* language */ (Record[String, String | js.Array[String]]) | String, /* alias */ js.UndefOr[String | js.Array[String]]) => Unit,
+      highlight: (/* value */ String, /* language */ String | Grammar) => RefractorRoot,
+      languages: Languages,
+      listLanguages: () => js.Array[String],
+      register: /* syntax */ Syntax => Unit,
+      registered: /* aliasOrLanguage */ String => Boolean
+    ): Refractor_ = {
+      val __obj = js.Dynamic.literal(alias = js.Any.fromFunction2(alias), highlight = js.Any.fromFunction2(highlight), languages = languages.asInstanceOf[js.Any], listLanguages = js.Any.fromFunction0(listLanguages), register = js.Any.fromFunction1(register), registered = js.Any.fromFunction1(registered))
+      __obj.asInstanceOf[Refractor_]
+    }
+    
+    extension [Self <: Refractor_](x: Self) {
+      
+      inline def setAlias(
+        value: (/* language */ (Record[String, String | js.Array[String]]) | String, /* alias */ js.UndefOr[String | js.Array[String]]) => Unit
+      ): Self = StObject.set(x, "alias", js.Any.fromFunction2(value))
+      
+      inline def setHighlight(value: (/* value */ String, /* language */ String | Grammar) => RefractorRoot): Self = StObject.set(x, "highlight", js.Any.fromFunction2(value))
+      
+      inline def setLanguages(value: Languages): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
+      
+      inline def setListLanguages(value: () => js.Array[String]): Self = StObject.set(x, "listLanguages", js.Any.fromFunction0(value))
+      
+      inline def setRegister(value: /* syntax */ Syntax => Unit): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
+      
+      inline def setRegistered(value: /* aliasOrLanguage */ String => Boolean): Self = StObject.set(x, "registered", js.Any.fromFunction1(value))
+    }
+  }
+  
+  type Root = typings.hast.mod.Root
+  
+  type Syntax = (js.Function1[/* prism */ Any, Unit]) & Aliases
+  
+  type Text = typings.hast.mod.Text
+  
+  trait Token extends StObject {
+    
+    var alias: String
+    
+    var content: String
+    
+    var length: Double
+    
+    var `type`: String
+  }
+  object Token {
+    
+    inline def apply(alias: String, content: String, length: Double, `type`: String): Token = {
+      val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Token]
+    }
+    
+    extension [Self <: Token](x: Self) {
+      
+      inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+      
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
   }
 }

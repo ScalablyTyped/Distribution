@@ -10,7 +10,7 @@ object buttonMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/response/card/button", "Button")
   @js.native
-  class Button protected ()
+  open class Button protected ()
     extends StObject
        with GoogleActionsV2UiElementsButton {
     /**

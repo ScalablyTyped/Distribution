@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Box2D.Dynamics.b2FilterData")
 @js.native
-class b2FilterData ()
+open class b2FilterData ()
   extends StObject
      with typings.box2d.Box2D.Dynamics.b2FilterData {
   

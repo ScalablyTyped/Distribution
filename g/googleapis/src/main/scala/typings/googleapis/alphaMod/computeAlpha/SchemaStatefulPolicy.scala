@@ -6,8 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SchemaStatefulPolicy extends StObject {
   
-  var preservedResources: js.UndefOr[SchemaStatefulPolicyPreservedResources] = js.undefined
-  
   var preservedState: js.UndefOr[SchemaStatefulPolicyPreservedState] = js.undefined
 }
 object SchemaStatefulPolicy {
@@ -18,10 +16,6 @@ object SchemaStatefulPolicy {
   }
   
   extension [Self <: SchemaStatefulPolicy](x: Self) {
-    
-    inline def setPreservedResources(value: SchemaStatefulPolicyPreservedResources): Self = StObject.set(x, "preservedResources", value.asInstanceOf[js.Any])
-    
-    inline def setPreservedResourcesUndefined: Self = StObject.set(x, "preservedResources", js.undefined)
     
     inline def setPreservedState(value: SchemaStatefulPolicyPreservedState): Self = StObject.set(x, "preservedState", value.asInstanceOf[js.Any])
     

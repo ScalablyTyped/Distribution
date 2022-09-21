@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.Services.NavigateToItem")
 @js.native
-class NavigateToItem ()
+open class NavigateToItem ()
   extends StObject
      with typings.typescriptServices.TypeScript.Services.NavigateToItem {
   

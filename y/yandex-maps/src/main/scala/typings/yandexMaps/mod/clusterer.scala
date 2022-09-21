@@ -8,7 +8,7 @@ object clusterer {
   
   @JSImport("yandex-maps", "clusterer.Balloon")
   @js.native
-  class Balloon protected ()
+  open class Balloon protected ()
     extends StObject
        with IBalloonManager[Clusterer_] {
     def this(clusterer: Clusterer_) = this()
@@ -19,7 +19,7 @@ object clusterer {
   
   @JSImport("yandex-maps", "clusterer.Hint")
   @js.native
-  class Hint protected ()
+  open class Hint protected ()
     extends StObject
        with IPopupManager[Clusterer_] {
     def this(clusterer: Clusterer_) = this()

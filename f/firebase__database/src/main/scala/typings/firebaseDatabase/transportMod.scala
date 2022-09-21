@@ -4,6 +4,8 @@ import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable4
 import org.scalablytyped.runtime.Instantiable5
+import org.scalablytyped.runtime.Instantiable6
+import org.scalablytyped.runtime.Instantiable7
 import typings.firebaseDatabase.repoInfoMod.RepoInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,15 +13,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object transportMod {
   
-  @JSImport("@firebase/database/dist/src/realtime/Transport", "Transport")
+  @JSImport("@firebase/database/dist/node-esm/src/realtime/Transport", "Transport")
   @js.native
   abstract class Transport protected () extends StObject {
     /**
-      *
-      * @param {string} connId An identifier for this connection, used for logging
-      * @param {RepoInfo} repoInfo The info for the endpoint to send data to.
-      * @param {string=} transportSessionId Optional transportSessionId if this is connecting to an existing transport session
-      * @param {string=} lastSessionId Optional lastSessionId if there was a previous connection
+      * @param connId - An identifier for this connection, used for logging
+      * @param repoInfo - The info for the endpoint to send data to.
+      * @param transportSessionId - Optional transportSessionId if this is connecting to an existing transport session
+      * @param lastSessionId - Optional lastSessionId if there was a previous connection
       * @interface
       */
     def this(connId: String, repoInfo: RepoInfo) = this()
@@ -29,13 +30,11 @@ object transportMod {
     
     /**
       * Bytes received since connection started.
-      * @type {number}
       */
     var bytesReceived: Double = js.native
     
     /**
       * Bytes sent since connection started.
-      * @type {number}
       */
     var bytesSent: Double = js.native
     
@@ -43,15 +42,14 @@ object transportMod {
     
     /**
       * An identifier for this connection, used for logging
-      * @type {string}
       */
     var connId: String = js.native
     
     def markConnectionHealthy(): Unit = js.native
     
     /**
-      * @param {function(Object)} onMessage Callback when messages arrive
-      * @param {function()} onDisconnect Callback with connection lost.
+      * @param onMessage - Callback when messages arrive
+      * @param onDisconnect - Callback with connection lost.
       */
     def open(
       onMessage: js.Function1[/* a */ js.Object, Unit],
@@ -59,7 +57,7 @@ object transportMod {
     ): Unit = js.native
     
     /**
-      * @param {!Object} data The JSON data to transmit
+      * @param data - The JSON data to transmit
       */
     def send(data: js.Object): Unit = js.native
     
@@ -75,13 +73,32 @@ object transportMod {
           /* connId */ String, 
           /* repoInfo */ RepoInfo, 
           (/* applicationId */ String) | (/* applicationId */ Unit), 
-          /* transportSessionId */ String, 
+          /* appCheckToken */ String, 
           Transport
         ]
        with Instantiable5[
           /* connId */ String, 
           /* repoInfo */ RepoInfo, 
           (/* applicationId */ String) | (/* applicationId */ Unit), 
+          (/* appCheckToken */ String) | (/* appCheckToken */ Unit), 
+          /* authToken */ String, 
+          Transport
+        ]
+       with Instantiable6[
+          /* connId */ String, 
+          /* repoInfo */ RepoInfo, 
+          (/* applicationId */ String) | (/* applicationId */ Unit), 
+          (/* appCheckToken */ String) | (/* appCheckToken */ Unit), 
+          (/* authToken */ String) | (/* authToken */ Unit), 
+          /* transportSessionId */ String, 
+          Transport
+        ]
+       with Instantiable7[
+          /* connId */ String, 
+          /* repoInfo */ RepoInfo, 
+          (/* applicationId */ String) | (/* applicationId */ Unit), 
+          (/* appCheckToken */ String) | (/* appCheckToken */ Unit), 
+          (/* authToken */ String) | (/* authToken */ Unit), 
           (/* transportSessionId */ String) | (/* transportSessionId */ Unit), 
           /* lastSessionId */ String, 
           Transport

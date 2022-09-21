@@ -10,10 +10,10 @@ object slowMotionVideoMod {
   
   @JSImport("material-ui/svg-icons/av/slow-motion-video", JSImport.Default)
   @js.native
-  class default () extends AvSlowMotionVideo
+  open class default () extends AvSlowMotionVideo
   
   @JSImport("material-ui/svg-icons/av/slow-motion-video", "AvSlowMotionVideo")
   @js.native
-  class AvSlowMotionVideo ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvSlowMotionVideo ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

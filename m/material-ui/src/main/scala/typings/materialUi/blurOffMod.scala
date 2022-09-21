@@ -10,10 +10,10 @@ object blurOffMod {
   
   @JSImport("material-ui/svg-icons/image/blur-off", JSImport.Default)
   @js.native
-  class default () extends ImageBlurOff
+  open class default () extends ImageBlurOff
   
   @JSImport("material-ui/svg-icons/image/blur-off", "ImageBlurOff")
   @js.native
-  class ImageBlurOff ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageBlurOff ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

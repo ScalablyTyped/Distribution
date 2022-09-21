@@ -11,7 +11,7 @@ trait DocumentFormattingParams
      with WorkDoneProgressParams {
   
   /**
-    * The format options
+    * The format options.
     */
   var options: FormattingOptions
   

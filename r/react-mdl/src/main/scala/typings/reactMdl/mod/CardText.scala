@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-mdl", "CardText")
 @js.native
-class CardText protected () extends MDLBasicComponent {
+open class CardText protected () extends MDLBasicComponent {
   def this(props: MDLOtherProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: MDLOtherProps, context: js.Any) = this()
+  def this(props: MDLOtherProps, context: Any) = this()
 }

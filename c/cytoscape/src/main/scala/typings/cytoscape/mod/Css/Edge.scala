@@ -9,20 +9,29 @@ import typings.cytoscape.cytoscapeStrings.`outside-to-node-or-label`
 import typings.cytoscape.cytoscapeStrings.`outside-to-node`
 import typings.cytoscape.cytoscapeStrings.`radial-gradient`
 import typings.cytoscape.cytoscapeStrings.`unbundled-bezier`
+import typings.cytoscape.cytoscapeStrings.anywhere
+import typings.cytoscape.cytoscapeStrings.auto
+import typings.cytoscape.cytoscapeStrings.autorotate
 import typings.cytoscape.cytoscapeStrings.bezier
 import typings.cytoscape.cytoscapeStrings.bottom
 import typings.cytoscape.cytoscapeStrings.butt
 import typings.cytoscape.cytoscapeStrings.center
-import typings.cytoscape.cytoscapeStrings.displayed
+import typings.cytoscape.cytoscapeStrings.downward
+import typings.cytoscape.cytoscapeStrings.element
 import typings.cytoscape.cytoscapeStrings.ellipsis
 import typings.cytoscape.cytoscapeStrings.haystack
 import typings.cytoscape.cytoscapeStrings.hidden
+import typings.cytoscape.cytoscapeStrings.horizontal
 import typings.cytoscape.cytoscapeStrings.intersection
 import typings.cytoscape.cytoscapeStrings.left
+import typings.cytoscape.cytoscapeStrings.leftward
+import typings.cytoscape.cytoscapeStrings.manual
 import typings.cytoscape.cytoscapeStrings.no
 import typings.cytoscape.cytoscapeStrings.none
+import typings.cytoscape.cytoscapeStrings.orphan
 import typings.cytoscape.cytoscapeStrings.rectangle
 import typings.cytoscape.cytoscapeStrings.right
+import typings.cytoscape.cytoscapeStrings.rightward
 import typings.cytoscape.cytoscapeStrings.round
 import typings.cytoscape.cytoscapeStrings.roundrectangle
 import typings.cytoscape.cytoscapeStrings.segments
@@ -31,7 +40,10 @@ import typings.cytoscape.cytoscapeStrings.square
 import typings.cytoscape.cytoscapeStrings.straight
 import typings.cytoscape.cytoscapeStrings.taxi
 import typings.cytoscape.cytoscapeStrings.top
+import typings.cytoscape.cytoscapeStrings.upward
+import typings.cytoscape.cytoscapeStrings.vertical
 import typings.cytoscape.cytoscapeStrings.visible
+import typings.cytoscape.cytoscapeStrings.whitespace
 import typings.cytoscape.cytoscapeStrings.wrap
 import typings.cytoscape.cytoscapeStrings.yes
 import typings.cytoscape.mod.EdgeSingular
@@ -44,9 +56,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent std.Partial<cytoscape.cytoscape.Css.Gradient> */
 /* Inlined parent std.Partial<cytoscape.cytoscape.Css.Overlay> */
 /* Inlined parent std.Partial<cytoscape.cytoscape.Css.BezierEdges> */
+/* Inlined parent std.Partial<cytoscape.cytoscape.Css.LoopEdges> */
 /* Inlined parent std.Partial<cytoscape.cytoscape.Css.UnbundledBezierEdges> */
 /* Inlined parent std.Partial<cytoscape.cytoscape.Css.HaystackEdges> */
 /* Inlined parent std.Partial<cytoscape.cytoscape.Css.SegmentsEdges> */
+/* Inlined parent std.Partial<cytoscape.cytoscape.Css.TaxiEdges> */
 /* Inlined parent std.Partial<cytoscape.cytoscape.Css.Visibility<cytoscape.cytoscape.EdgeSingular>> */
 /* Inlined parent std.Partial<cytoscape.cytoscape.Css.Labels<cytoscape.cytoscape.EdgeSingular>> */
 /* Inlined parent std.Partial<cytoscape.cytoscape.Css.Events<cytoscape.cytoscape.EdgeSingular>> */
@@ -61,13 +75,13 @@ trait Edge extends StObject {
   
   var `control-point-distance`: js.UndefOr[PropertyValueEdge[Double]] = js.undefined
   
-  var `control-point-distances`: js.UndefOr[PropertyValueEdge[String]] = js.undefined
+  var `control-point-distances`: js.UndefOr[PropertyValueEdge[Double | js.Array[Double] | String]] = js.undefined
   
   var `control-point-step-size`: js.UndefOr[PropertyValueEdge[Double]] = js.undefined
   
   var `control-point-weight`: js.UndefOr[PropertyValueEdge[Double]] = js.undefined
   
-  var `control-point-weights`: js.UndefOr[PropertyValueEdge[String]] = js.undefined
+  var `control-point-weights`: js.UndefOr[PropertyValueEdge[Double | js.Array[Double] | String]] = js.undefined
   
   /**
     * The curving method used to separate two or more edges between two nodes;
@@ -84,7 +98,7 @@ trait Edge extends StObject {
     PropertyValueEdge[haystack | straight | bezier | `unbundled-bezier` | segments | taxi]
   ] = js.undefined
   
-  var display: js.UndefOr[PropertyValue[EdgeSingular, none | displayed]] = js.undefined
+  var display: js.UndefOr[PropertyValue[EdgeSingular, none | element]] = js.undefined
   
   var `edge-distances`: js.UndefOr[PropertyValueEdge[intersection | `node-position`]] = js.undefined
   
@@ -131,10 +145,25 @@ trait Edge extends StObject {
   
   var `line-gradient-stop-positions`: js.UndefOr[js.Array[PropertyValueEdge[Double]]] = js.undefined
   
+  var `line-height`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.undefined
+  
+  /**
+    * The opacity of the edge’s line and arrow. Useful if you wish to have a separate opacity for the edge
+    * label versus the edge line. Note that the opacity value of the edge element affects the effective
+    * opacity of its line and label subcomponents.
+    *
+    * Value between `0` and `1` inclusive.
+    */
+  var `line-opacity`: js.UndefOr[PropertyValueEdge[Double]] = js.undefined
+  
   /**
     * The style of the edge’s line.
     */
   var `line-style`: js.UndefOr[PropertyValueEdge[LineStyle]] = js.undefined
+  
+  var `loop-direction`: js.UndefOr[PropertyValueEdge[String]] = js.undefined
+  
+  var `loop-sweep`: js.UndefOr[PropertyValueEdge[String]] = js.undefined
   
   /** The colour of the edge’s "mid-source" arrow. */
   var `mid-source-arrow-color`: js.UndefOr[PropertyValueEdge[Colour]] = js.undefined
@@ -164,9 +193,9 @@ trait Edge extends StObject {
   
   var `overlay-padding`: js.UndefOr[PropertyValueEdge[Double | String]] = js.undefined
   
-  var `segment-distances`: js.UndefOr[PropertyValueEdge[String]] = js.undefined
+  var `segment-distances`: js.UndefOr[PropertyValueEdge[Double | js.Array[Double] | String]] = js.undefined
   
-  var `segment-weights`: js.UndefOr[PropertyValueEdge[String]] = js.undefined
+  var `segment-weights`: js.UndefOr[PropertyValueEdge[Double | js.Array[Double] | String]] = js.undefined
   
   /** The colour of the edge’s source arrow. */
   var `source-arrow-color`: js.UndefOr[PropertyValueEdge[Colour]] = js.undefined
@@ -197,7 +226,7 @@ trait Edge extends StObject {
   
   var `source-text-offset`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.undefined
   
-  var `source-text-rotation`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.undefined
+  var `source-text-rotation`: js.UndefOr[PropertyValue[EdgeSingular, Double | autorotate | none]] = js.undefined
   
   /** The colour of the edge’s target arrow. */
   var `target-arrow-color`: js.UndefOr[PropertyValueEdge[Colour]] = js.undefined
@@ -228,7 +257,15 @@ trait Edge extends StObject {
   
   var `target-text-offset`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.undefined
   
-  var `target-text-rotation`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.undefined
+  var `target-text-rotation`: js.UndefOr[PropertyValue[EdgeSingular, Double | autorotate | none]] = js.undefined
+  
+  var `taxi-direction`: js.UndefOr[
+    PropertyValueEdge[auto | vertical | downward | upward | horizontal | rightward | leftward]
+  ] = js.undefined
+  
+  var `taxi-turn`: js.UndefOr[PropertyValueEdge[Double | js.Array[Double] | String]] = js.undefined
+  
+  var `taxi-turn-min-distance`: js.UndefOr[PropertyValueEdge[Double | String]] = js.undefined
   
   var `text-background-color`: js.UndefOr[PropertyValue[EdgeSingular, Colour]] = js.undefined
   
@@ -250,6 +287,8 @@ trait Edge extends StObject {
   
   var `text-halign`: js.UndefOr[PropertyValue[EdgeSingular, left | center | right]] = js.undefined
   
+  var `text-justification`: js.UndefOr[PropertyValue[EdgeSingular, auto | left | center | right]] = js.undefined
+  
   var `text-margin-x`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.undefined
   
   var `text-margin-y`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.undefined
@@ -264,17 +303,9 @@ trait Edge extends StObject {
   
   var `text-outline-width`: js.UndefOr[PropertyValue[EdgeSingular, Double | String]] = js.undefined
   
-  var `text-rotation`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.undefined
+  var `text-overflow-wrap`: js.UndefOr[PropertyValue[EdgeSingular, whitespace | anywhere]] = js.undefined
   
-  var `text-shadow-blur`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.undefined
-  
-  var `text-shadow-color`: js.UndefOr[PropertyValue[EdgeSingular, Colour]] = js.undefined
-  
-  var `text-shadow-offset-x`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.undefined
-  
-  var `text-shadow-offset-y`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.undefined
-  
-  var `text-shadow-opacity`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.undefined
+  var `text-rotation`: js.UndefOr[PropertyValue[EdgeSingular, Double | autorotate | none]] = js.undefined
   
   var `text-transform`: js.UndefOr[PropertyValue[EdgeSingular, TextTranformation]] = js.undefined
   
@@ -297,7 +328,11 @@ trait Edge extends StObject {
     */
   var width: js.UndefOr[PropertyValueEdge[Double | String]] = js.undefined
   
+  var `z-compound-depth`: js.UndefOr[PropertyValue[EdgeSingular, auto | top | bottom | orphan]] = js.undefined
+  
   var `z-index`: js.UndefOr[PropertyValue[EdgeSingular, Double]] = js.undefined
+  
+  var `z-index-compare`: js.UndefOr[PropertyValue[EdgeSingular, auto | manual]] = js.undefined
 }
 object Edge {
   
@@ -326,11 +361,13 @@ object Edge {
     
     inline def `setControl-point-distanceUndefined`: Self = StObject.set(x, "control-point-distance", js.undefined)
     
-    inline def `setControl-point-distances`(value: PropertyValueEdge[String]): Self = StObject.set(x, "control-point-distances", value.asInstanceOf[js.Any])
+    inline def `setControl-point-distances`(value: PropertyValueEdge[Double | js.Array[Double] | String]): Self = StObject.set(x, "control-point-distances", value.asInstanceOf[js.Any])
     
-    inline def `setControl-point-distancesFunction1`(value: EdgeSingular => String): Self = StObject.set(x, "control-point-distances", js.Any.fromFunction1(value))
+    inline def `setControl-point-distancesFunction1`(value: EdgeSingular => Double | js.Array[Double] | String): Self = StObject.set(x, "control-point-distances", js.Any.fromFunction1(value))
     
     inline def `setControl-point-distancesUndefined`: Self = StObject.set(x, "control-point-distances", js.undefined)
+    
+    inline def `setControl-point-distancesVarargs`(value: Double*): Self = StObject.set(x, "control-point-distances", js.Array(value*))
     
     inline def `setControl-point-step-size`(value: PropertyValueEdge[Double]): Self = StObject.set(x, "control-point-step-size", value.asInstanceOf[js.Any])
     
@@ -344,11 +381,13 @@ object Edge {
     
     inline def `setControl-point-weightUndefined`: Self = StObject.set(x, "control-point-weight", js.undefined)
     
-    inline def `setControl-point-weights`(value: PropertyValueEdge[String]): Self = StObject.set(x, "control-point-weights", value.asInstanceOf[js.Any])
+    inline def `setControl-point-weights`(value: PropertyValueEdge[Double | js.Array[Double] | String]): Self = StObject.set(x, "control-point-weights", value.asInstanceOf[js.Any])
     
-    inline def `setControl-point-weightsFunction1`(value: EdgeSingular => String): Self = StObject.set(x, "control-point-weights", js.Any.fromFunction1(value))
+    inline def `setControl-point-weightsFunction1`(value: EdgeSingular => Double | js.Array[Double] | String): Self = StObject.set(x, "control-point-weights", js.Any.fromFunction1(value))
     
     inline def `setControl-point-weightsUndefined`: Self = StObject.set(x, "control-point-weights", js.undefined)
+    
+    inline def `setControl-point-weightsVarargs`(value: Double*): Self = StObject.set(x, "control-point-weights", js.Array(value*))
     
     inline def `setCurve-style`(value: PropertyValueEdge[haystack | straight | bezier | `unbundled-bezier` | segments | taxi]): Self = StObject.set(x, "curve-style", value.asInstanceOf[js.Any])
     
@@ -356,9 +395,9 @@ object Edge {
     
     inline def `setCurve-styleUndefined`: Self = StObject.set(x, "curve-style", js.undefined)
     
-    inline def setDisplay(value: PropertyValue[EdgeSingular, none | displayed]): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    inline def setDisplay(value: PropertyValue[EdgeSingular, none | element]): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
-    inline def setDisplayFunction1(value: EdgeSingular => none | displayed): Self = StObject.set(x, "display", js.Any.fromFunction1(value))
+    inline def setDisplayFunction1(value: EdgeSingular => none | element): Self = StObject.set(x, "display", js.Any.fromFunction1(value))
     
     inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
@@ -432,7 +471,7 @@ object Edge {
     
     inline def `setLine-dash-patternUndefined`: Self = StObject.set(x, "line-dash-pattern", js.undefined)
     
-    inline def `setLine-dash-patternVarargs`(value: PropertyValueEdge[Double]*): Self = StObject.set(x, "line-dash-pattern", js.Array(value :_*))
+    inline def `setLine-dash-patternVarargs`(value: PropertyValueEdge[Double]*): Self = StObject.set(x, "line-dash-pattern", js.Array(value*))
     
     inline def `setLine-fill`(value: PropertyValueEdge[solid | `linear-gradient` | `radial-gradient`]): Self = StObject.set(x, "line-fill", value.asInstanceOf[js.Any])
     
@@ -444,19 +483,43 @@ object Edge {
     
     inline def `setLine-gradient-stop-colorsUndefined`: Self = StObject.set(x, "line-gradient-stop-colors", js.undefined)
     
-    inline def `setLine-gradient-stop-colorsVarargs`(value: PropertyValueEdge[Colour]*): Self = StObject.set(x, "line-gradient-stop-colors", js.Array(value :_*))
+    inline def `setLine-gradient-stop-colorsVarargs`(value: PropertyValueEdge[Colour]*): Self = StObject.set(x, "line-gradient-stop-colors", js.Array(value*))
     
     inline def `setLine-gradient-stop-positions`(value: js.Array[PropertyValueEdge[Double]]): Self = StObject.set(x, "line-gradient-stop-positions", value.asInstanceOf[js.Any])
     
     inline def `setLine-gradient-stop-positionsUndefined`: Self = StObject.set(x, "line-gradient-stop-positions", js.undefined)
     
-    inline def `setLine-gradient-stop-positionsVarargs`(value: PropertyValueEdge[Double]*): Self = StObject.set(x, "line-gradient-stop-positions", js.Array(value :_*))
+    inline def `setLine-gradient-stop-positionsVarargs`(value: PropertyValueEdge[Double]*): Self = StObject.set(x, "line-gradient-stop-positions", js.Array(value*))
+    
+    inline def `setLine-height`(value: PropertyValue[EdgeSingular, Double]): Self = StObject.set(x, "line-height", value.asInstanceOf[js.Any])
+    
+    inline def `setLine-heightFunction1`(value: EdgeSingular => Double): Self = StObject.set(x, "line-height", js.Any.fromFunction1(value))
+    
+    inline def `setLine-heightUndefined`: Self = StObject.set(x, "line-height", js.undefined)
+    
+    inline def `setLine-opacity`(value: PropertyValueEdge[Double]): Self = StObject.set(x, "line-opacity", value.asInstanceOf[js.Any])
+    
+    inline def `setLine-opacityFunction1`(value: EdgeSingular => Double): Self = StObject.set(x, "line-opacity", js.Any.fromFunction1(value))
+    
+    inline def `setLine-opacityUndefined`: Self = StObject.set(x, "line-opacity", js.undefined)
     
     inline def `setLine-style`(value: PropertyValueEdge[LineStyle]): Self = StObject.set(x, "line-style", value.asInstanceOf[js.Any])
     
     inline def `setLine-styleFunction1`(value: EdgeSingular => LineStyle): Self = StObject.set(x, "line-style", js.Any.fromFunction1(value))
     
     inline def `setLine-styleUndefined`: Self = StObject.set(x, "line-style", js.undefined)
+    
+    inline def `setLoop-direction`(value: PropertyValueEdge[String]): Self = StObject.set(x, "loop-direction", value.asInstanceOf[js.Any])
+    
+    inline def `setLoop-directionFunction1`(value: EdgeSingular => String): Self = StObject.set(x, "loop-direction", js.Any.fromFunction1(value))
+    
+    inline def `setLoop-directionUndefined`: Self = StObject.set(x, "loop-direction", js.undefined)
+    
+    inline def `setLoop-sweep`(value: PropertyValueEdge[String]): Self = StObject.set(x, "loop-sweep", value.asInstanceOf[js.Any])
+    
+    inline def `setLoop-sweepFunction1`(value: EdgeSingular => String): Self = StObject.set(x, "loop-sweep", js.Any.fromFunction1(value))
+    
+    inline def `setLoop-sweepUndefined`: Self = StObject.set(x, "loop-sweep", js.undefined)
     
     inline def `setMid-source-arrow-color`(value: PropertyValueEdge[Colour]): Self = StObject.set(x, "mid-source-arrow-color", value.asInstanceOf[js.Any])
     
@@ -524,17 +587,21 @@ object Edge {
     
     inline def `setOverlay-paddingUndefined`: Self = StObject.set(x, "overlay-padding", js.undefined)
     
-    inline def `setSegment-distances`(value: PropertyValueEdge[String]): Self = StObject.set(x, "segment-distances", value.asInstanceOf[js.Any])
+    inline def `setSegment-distances`(value: PropertyValueEdge[Double | js.Array[Double] | String]): Self = StObject.set(x, "segment-distances", value.asInstanceOf[js.Any])
     
-    inline def `setSegment-distancesFunction1`(value: EdgeSingular => String): Self = StObject.set(x, "segment-distances", js.Any.fromFunction1(value))
+    inline def `setSegment-distancesFunction1`(value: EdgeSingular => Double | js.Array[Double] | String): Self = StObject.set(x, "segment-distances", js.Any.fromFunction1(value))
     
     inline def `setSegment-distancesUndefined`: Self = StObject.set(x, "segment-distances", js.undefined)
     
-    inline def `setSegment-weights`(value: PropertyValueEdge[String]): Self = StObject.set(x, "segment-weights", value.asInstanceOf[js.Any])
+    inline def `setSegment-distancesVarargs`(value: Double*): Self = StObject.set(x, "segment-distances", js.Array(value*))
     
-    inline def `setSegment-weightsFunction1`(value: EdgeSingular => String): Self = StObject.set(x, "segment-weights", js.Any.fromFunction1(value))
+    inline def `setSegment-weights`(value: PropertyValueEdge[Double | js.Array[Double] | String]): Self = StObject.set(x, "segment-weights", value.asInstanceOf[js.Any])
+    
+    inline def `setSegment-weightsFunction1`(value: EdgeSingular => Double | js.Array[Double] | String): Self = StObject.set(x, "segment-weights", js.Any.fromFunction1(value))
     
     inline def `setSegment-weightsUndefined`: Self = StObject.set(x, "segment-weights", js.undefined)
+    
+    inline def `setSegment-weightsVarargs`(value: Double*): Self = StObject.set(x, "segment-weights", js.Array(value*))
     
     inline def `setSource-arrow-color`(value: PropertyValueEdge[Colour]): Self = StObject.set(x, "source-arrow-color", value.asInstanceOf[js.Any])
     
@@ -597,9 +664,9 @@ object Edge {
     
     inline def `setSource-text-offsetUndefined`: Self = StObject.set(x, "source-text-offset", js.undefined)
     
-    inline def `setSource-text-rotation`(value: PropertyValue[EdgeSingular, Double]): Self = StObject.set(x, "source-text-rotation", value.asInstanceOf[js.Any])
+    inline def `setSource-text-rotation`(value: PropertyValue[EdgeSingular, Double | autorotate | none]): Self = StObject.set(x, "source-text-rotation", value.asInstanceOf[js.Any])
     
-    inline def `setSource-text-rotationFunction1`(value: EdgeSingular => Double): Self = StObject.set(x, "source-text-rotation", js.Any.fromFunction1(value))
+    inline def `setSource-text-rotationFunction1`(value: EdgeSingular => Double | autorotate | none): Self = StObject.set(x, "source-text-rotation", js.Any.fromFunction1(value))
     
     inline def `setSource-text-rotationUndefined`: Self = StObject.set(x, "source-text-rotation", js.undefined)
     
@@ -664,11 +731,31 @@ object Edge {
     
     inline def `setTarget-text-offsetUndefined`: Self = StObject.set(x, "target-text-offset", js.undefined)
     
-    inline def `setTarget-text-rotation`(value: PropertyValue[EdgeSingular, Double]): Self = StObject.set(x, "target-text-rotation", value.asInstanceOf[js.Any])
+    inline def `setTarget-text-rotation`(value: PropertyValue[EdgeSingular, Double | autorotate | none]): Self = StObject.set(x, "target-text-rotation", value.asInstanceOf[js.Any])
     
-    inline def `setTarget-text-rotationFunction1`(value: EdgeSingular => Double): Self = StObject.set(x, "target-text-rotation", js.Any.fromFunction1(value))
+    inline def `setTarget-text-rotationFunction1`(value: EdgeSingular => Double | autorotate | none): Self = StObject.set(x, "target-text-rotation", js.Any.fromFunction1(value))
     
     inline def `setTarget-text-rotationUndefined`: Self = StObject.set(x, "target-text-rotation", js.undefined)
+    
+    inline def `setTaxi-direction`(value: PropertyValueEdge[auto | vertical | downward | upward | horizontal | rightward | leftward]): Self = StObject.set(x, "taxi-direction", value.asInstanceOf[js.Any])
+    
+    inline def `setTaxi-directionFunction1`(value: EdgeSingular => auto | vertical | downward | upward | horizontal | rightward | leftward): Self = StObject.set(x, "taxi-direction", js.Any.fromFunction1(value))
+    
+    inline def `setTaxi-directionUndefined`: Self = StObject.set(x, "taxi-direction", js.undefined)
+    
+    inline def `setTaxi-turn`(value: PropertyValueEdge[Double | js.Array[Double] | String]): Self = StObject.set(x, "taxi-turn", value.asInstanceOf[js.Any])
+    
+    inline def `setTaxi-turn-min-distance`(value: PropertyValueEdge[Double | String]): Self = StObject.set(x, "taxi-turn-min-distance", value.asInstanceOf[js.Any])
+    
+    inline def `setTaxi-turn-min-distanceFunction1`(value: EdgeSingular => Double | String): Self = StObject.set(x, "taxi-turn-min-distance", js.Any.fromFunction1(value))
+    
+    inline def `setTaxi-turn-min-distanceUndefined`: Self = StObject.set(x, "taxi-turn-min-distance", js.undefined)
+    
+    inline def `setTaxi-turnFunction1`(value: EdgeSingular => Double | js.Array[Double] | String): Self = StObject.set(x, "taxi-turn", js.Any.fromFunction1(value))
+    
+    inline def `setTaxi-turnUndefined`: Self = StObject.set(x, "taxi-turn", js.undefined)
+    
+    inline def `setTaxi-turnVarargs`(value: Double*): Self = StObject.set(x, "taxi-turn", js.Array(value*))
     
     inline def `setText-background-color`(value: PropertyValue[EdgeSingular, Colour]): Self = StObject.set(x, "text-background-color", value.asInstanceOf[js.Any])
     
@@ -730,6 +817,12 @@ object Edge {
     
     inline def `setText-halignUndefined`: Self = StObject.set(x, "text-halign", js.undefined)
     
+    inline def `setText-justification`(value: PropertyValue[EdgeSingular, auto | left | center | right]): Self = StObject.set(x, "text-justification", value.asInstanceOf[js.Any])
+    
+    inline def `setText-justificationFunction1`(value: EdgeSingular => auto | left | center | right): Self = StObject.set(x, "text-justification", js.Any.fromFunction1(value))
+    
+    inline def `setText-justificationUndefined`: Self = StObject.set(x, "text-justification", js.undefined)
+    
     inline def `setText-margin-x`(value: PropertyValue[EdgeSingular, Double]): Self = StObject.set(x, "text-margin-x", value.asInstanceOf[js.Any])
     
     inline def `setText-margin-xFunction1`(value: EdgeSingular => Double): Self = StObject.set(x, "text-margin-x", js.Any.fromFunction1(value))
@@ -772,41 +865,17 @@ object Edge {
     
     inline def `setText-outline-widthUndefined`: Self = StObject.set(x, "text-outline-width", js.undefined)
     
-    inline def `setText-rotation`(value: PropertyValue[EdgeSingular, Double]): Self = StObject.set(x, "text-rotation", value.asInstanceOf[js.Any])
+    inline def `setText-overflow-wrap`(value: PropertyValue[EdgeSingular, whitespace | anywhere]): Self = StObject.set(x, "text-overflow-wrap", value.asInstanceOf[js.Any])
     
-    inline def `setText-rotationFunction1`(value: EdgeSingular => Double): Self = StObject.set(x, "text-rotation", js.Any.fromFunction1(value))
+    inline def `setText-overflow-wrapFunction1`(value: EdgeSingular => whitespace | anywhere): Self = StObject.set(x, "text-overflow-wrap", js.Any.fromFunction1(value))
+    
+    inline def `setText-overflow-wrapUndefined`: Self = StObject.set(x, "text-overflow-wrap", js.undefined)
+    
+    inline def `setText-rotation`(value: PropertyValue[EdgeSingular, Double | autorotate | none]): Self = StObject.set(x, "text-rotation", value.asInstanceOf[js.Any])
+    
+    inline def `setText-rotationFunction1`(value: EdgeSingular => Double | autorotate | none): Self = StObject.set(x, "text-rotation", js.Any.fromFunction1(value))
     
     inline def `setText-rotationUndefined`: Self = StObject.set(x, "text-rotation", js.undefined)
-    
-    inline def `setText-shadow-blur`(value: PropertyValue[EdgeSingular, Double]): Self = StObject.set(x, "text-shadow-blur", value.asInstanceOf[js.Any])
-    
-    inline def `setText-shadow-blurFunction1`(value: EdgeSingular => Double): Self = StObject.set(x, "text-shadow-blur", js.Any.fromFunction1(value))
-    
-    inline def `setText-shadow-blurUndefined`: Self = StObject.set(x, "text-shadow-blur", js.undefined)
-    
-    inline def `setText-shadow-color`(value: PropertyValue[EdgeSingular, Colour]): Self = StObject.set(x, "text-shadow-color", value.asInstanceOf[js.Any])
-    
-    inline def `setText-shadow-colorFunction1`(value: EdgeSingular => Colour): Self = StObject.set(x, "text-shadow-color", js.Any.fromFunction1(value))
-    
-    inline def `setText-shadow-colorUndefined`: Self = StObject.set(x, "text-shadow-color", js.undefined)
-    
-    inline def `setText-shadow-offset-x`(value: PropertyValue[EdgeSingular, Double]): Self = StObject.set(x, "text-shadow-offset-x", value.asInstanceOf[js.Any])
-    
-    inline def `setText-shadow-offset-xFunction1`(value: EdgeSingular => Double): Self = StObject.set(x, "text-shadow-offset-x", js.Any.fromFunction1(value))
-    
-    inline def `setText-shadow-offset-xUndefined`: Self = StObject.set(x, "text-shadow-offset-x", js.undefined)
-    
-    inline def `setText-shadow-offset-y`(value: PropertyValue[EdgeSingular, Double]): Self = StObject.set(x, "text-shadow-offset-y", value.asInstanceOf[js.Any])
-    
-    inline def `setText-shadow-offset-yFunction1`(value: EdgeSingular => Double): Self = StObject.set(x, "text-shadow-offset-y", js.Any.fromFunction1(value))
-    
-    inline def `setText-shadow-offset-yUndefined`: Self = StObject.set(x, "text-shadow-offset-y", js.undefined)
-    
-    inline def `setText-shadow-opacity`(value: PropertyValue[EdgeSingular, Double]): Self = StObject.set(x, "text-shadow-opacity", value.asInstanceOf[js.Any])
-    
-    inline def `setText-shadow-opacityFunction1`(value: EdgeSingular => Double): Self = StObject.set(x, "text-shadow-opacity", js.Any.fromFunction1(value))
-    
-    inline def `setText-shadow-opacityUndefined`: Self = StObject.set(x, "text-shadow-opacity", js.undefined)
     
     inline def `setText-transform`(value: PropertyValue[EdgeSingular, TextTranformation]): Self = StObject.set(x, "text-transform", value.asInstanceOf[js.Any])
     
@@ -854,7 +923,19 @@ object Edge {
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
+    inline def `setZ-compound-depth`(value: PropertyValue[EdgeSingular, auto | top | bottom | orphan]): Self = StObject.set(x, "z-compound-depth", value.asInstanceOf[js.Any])
+    
+    inline def `setZ-compound-depthFunction1`(value: EdgeSingular => auto | top | bottom | orphan): Self = StObject.set(x, "z-compound-depth", js.Any.fromFunction1(value))
+    
+    inline def `setZ-compound-depthUndefined`: Self = StObject.set(x, "z-compound-depth", js.undefined)
+    
     inline def `setZ-index`(value: PropertyValue[EdgeSingular, Double]): Self = StObject.set(x, "z-index", value.asInstanceOf[js.Any])
+    
+    inline def `setZ-index-compare`(value: PropertyValue[EdgeSingular, auto | manual]): Self = StObject.set(x, "z-index-compare", value.asInstanceOf[js.Any])
+    
+    inline def `setZ-index-compareFunction1`(value: EdgeSingular => auto | manual): Self = StObject.set(x, "z-index-compare", js.Any.fromFunction1(value))
+    
+    inline def `setZ-index-compareUndefined`: Self = StObject.set(x, "z-index-compare", js.undefined)
     
     inline def `setZ-indexFunction1`(value: EdgeSingular => Double): Self = StObject.set(x, "z-index", js.Any.fromFunction1(value))
     

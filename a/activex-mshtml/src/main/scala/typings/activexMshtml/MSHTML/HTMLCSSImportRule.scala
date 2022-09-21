@@ -13,7 +13,7 @@ trait HTMLCSSImportRule extends StObject {
   
   val href: String
   
-  var media: js.Any
+  var media: Any
   
   val parentRule: IHTMLCSSRule
   
@@ -29,7 +29,7 @@ object HTMLCSSImportRule {
     MSHTMLDotHTMLCSSImportRule_typekey: HTMLCSSImportRule,
     cssText: String,
     href: String,
-    media: js.Any,
+    media: Any,
     parentRule: IHTMLCSSRule,
     parentStyleSheet: IHTMLStyleSheet,
     styleSheet: IHTMLStyleSheet,
@@ -49,7 +49,7 @@ object HTMLCSSImportRule {
     
     inline def setMSHTMLDotHTMLCSSImportRule_typekey(value: HTMLCSSImportRule): Self = StObject.set(x, "MSHTML.HTMLCSSImportRule_typekey", value.asInstanceOf[js.Any])
     
-    inline def setMedia(value: js.Any): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    inline def setMedia(value: Any): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
     inline def setParentRule(value: IHTMLCSSRule): Self = StObject.set(x, "parentRule", value.asInstanceOf[js.Any])
     

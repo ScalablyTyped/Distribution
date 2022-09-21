@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("phaser", "FacebookInstantGamesLeaderboard")
 @js.native
-class FacebookInstantGamesLeaderboard protected ()
+open class FacebookInstantGamesLeaderboard protected ()
   extends StObject
      with typings.phaser.Phaser.FacebookInstantGamesLeaderboard {
   /**
@@ -20,5 +20,5 @@ class FacebookInstantGamesLeaderboard protected ()
     * @param plugin A reference to the Facebook Instant Games Plugin.
     * @param data An Instant Game leaderboard instance.
     */
-  def this(plugin: typings.phaser.Phaser.FacebookInstantGamesPlugin, data: js.Any) = this()
+  def this(plugin: typings.phaser.Phaser.FacebookInstantGamesPlugin, data: Any) = this()
 }

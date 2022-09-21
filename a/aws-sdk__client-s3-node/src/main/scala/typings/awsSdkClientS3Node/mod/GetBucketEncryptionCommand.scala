@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-s3-node", "GetBucketEncryptionCommand")
 @js.native
-class GetBucketEncryptionCommand protected ()
+open class GetBucketEncryptionCommand protected ()
   extends typings.awsSdkClientS3Node.getBucketEncryptionCommandMod.GetBucketEncryptionCommand {
   def this(input: GetBucketEncryptionInput) = this()
 }

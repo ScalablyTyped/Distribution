@@ -11,7 +11,7 @@ object mod {
   
   @JSImport("react-transition-group", "CSSTransition")
   @js.native
-  class CSSTransition[Ref /* <: js.UndefOr[HTMLElement] */] () extends default[Ref]
+  open class CSSTransition[Ref /* <: js.UndefOr[HTMLElement] */] () extends default[Ref]
   
   /**
     * A transition component inspired by the [vue transition modes](https://vuejs.org/v2/guide/transitions.html#Transition-Modes).
@@ -40,7 +40,7 @@ object mod {
     */
   @JSImport("react-transition-group", "SwitchTransition")
   @js.native
-  class SwitchTransition ()
+  open class SwitchTransition ()
     extends typings.reactTransitionGroup.switchTransitionMod.default
   
   /**
@@ -86,7 +86,7 @@ object mod {
     */
   @JSImport("react-transition-group", "Transition")
   @js.native
-  class Transition[RefElement /* <: js.UndefOr[HTMLElement] */] ()
+  open class Transition[RefElement /* <: js.UndefOr[HTMLElement] */] ()
     extends typings.reactTransitionGroup.transitionMod.default[RefElement]
   
   /**
@@ -148,7 +148,7 @@ object mod {
     */
   @JSImport("react-transition-group", "TransitionGroup")
   @js.native
-  class TransitionGroup ()
+  open class TransitionGroup ()
     extends typings.reactTransitionGroup.transitionGroupMod.default
   
   @JSImport("react-transition-group", "config")

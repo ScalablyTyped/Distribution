@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_androidmanagement
 
-Typings are for version 1.0.20201112
+Typings are for version 1.0.20220801
 
 ## Library description:
 TypeScript typings for Android Management API v1
@@ -10,10 +10,10 @@ TypeScript typings for Android Management API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.androidmanagement |
 | Keywords           | - |
-| # releases         | 12 |
-| # dependents       | 1 |
-| # downloads        | 1111 |
-| # stars            | 0 |
+| # releases         | 73 |
+| # dependents       | 0.0 |
+| # downloads        | 899.6666666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

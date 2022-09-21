@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Result of the categorical stats computation.
-  */
 trait SchemaGooglePrivacyDlpV2CategoricalStatsResult extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaGooglePrivacyDlpV2CategoricalStatsResult {
     
     inline def setValueFrequencyHistogramBucketsUndefined: Self = StObject.set(x, "valueFrequencyHistogramBuckets", js.undefined)
     
-    inline def setValueFrequencyHistogramBucketsVarargs(value: SchemaGooglePrivacyDlpV2CategoricalStatsHistogramBucket*): Self = StObject.set(x, "valueFrequencyHistogramBuckets", js.Array(value :_*))
+    inline def setValueFrequencyHistogramBucketsVarargs(value: SchemaGooglePrivacyDlpV2CategoricalStatsHistogramBucket*): Self = StObject.set(x, "valueFrequencyHistogramBuckets", js.Array(value*))
   }
 }

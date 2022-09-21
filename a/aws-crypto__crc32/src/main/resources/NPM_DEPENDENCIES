@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@aws-crypto/crc32" : "1.0.0"
+      "@aws-crypto/crc32" : "2.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@aws-crypto/crc32" : "1.0.0"
+      "@aws-crypto/crc32" : "2.0.2"
     }
   ],
   "compile-devDependencies" : [

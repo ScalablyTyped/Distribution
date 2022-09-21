@@ -25,7 +25,7 @@ object IResultExt {
     fields: js.Array[IColumn],
     rowAsArray: Boolean,
     rowCount: Double,
-    rows: js.Array[js.Any]
+    rows: js.Array[Any]
   ): IResultExt = {
     val __obj = js.Dynamic.literal(_parsers = _parsers.asInstanceOf[js.Any], _types = _types.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], rowAsArray = rowAsArray.asInstanceOf[js.Any], rowCount = rowCount.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[IResultExt]

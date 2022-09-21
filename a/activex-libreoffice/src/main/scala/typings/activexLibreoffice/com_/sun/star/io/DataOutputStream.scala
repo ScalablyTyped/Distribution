@@ -23,7 +23,7 @@ object DataOutputStream {
     closeOutput: () => Unit,
     flush: () => Unit,
     getOutputStream: () => XOutputStream,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setOutputStream: XOutputStream => Unit,
     writeBoolean: Boolean => Unit,

@@ -8,14 +8,13 @@ import typings.googleProtobuf.mod.ExtensionFieldInfo
 import typings.googleProtobuf.mod.Message
 import typings.libraCore.accountStateBlobPbMod.AccountStateWithProof
 import typings.libraCore.eventsPbMod.EventWithProof
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/get_with_proof_pb", "GetEventsByEventAccessPathResponse")
 @js.native
-class GetEventsByEventAccessPathResponse () extends Message {
+open class GetEventsByEventAccessPathResponse () extends Message {
   
   def addEventsWithProof(): EventWithProof = js.native
   def addEventsWithProof(value: Unit, index: Double): EventWithProof = js.native
@@ -44,7 +43,7 @@ object GetEventsByEventAccessPathResponse {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def deserializeBinary(bytes: Uint8Array): GetEventsByEventAccessPathResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[GetEventsByEventAccessPathResponse]
+  inline def deserializeBinary(bytes: js.typedarray.Uint8Array): GetEventsByEventAccessPathResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[GetEventsByEventAccessPathResponse]
   
   inline def deserializeBinaryFromReader(message: GetEventsByEventAccessPathResponse, reader: BinaryReader): GetEventsByEventAccessPathResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[GetEventsByEventAccessPathResponse]
   
@@ -80,7 +79,7 @@ object GetEventsByEventAccessPathResponse {
       
       inline def setEventsWithProofList(value: js.Array[typings.libraCore.eventsPbMod.EventWithProof.AsObject]): Self = StObject.set(x, "eventsWithProofList", value.asInstanceOf[js.Any])
       
-      inline def setEventsWithProofListVarargs(value: typings.libraCore.eventsPbMod.EventWithProof.AsObject*): Self = StObject.set(x, "eventsWithProofList", js.Array(value :_*))
+      inline def setEventsWithProofListVarargs(value: typings.libraCore.eventsPbMod.EventWithProof.AsObject*): Self = StObject.set(x, "eventsWithProofList", js.Array(value*))
       
       inline def setProofOfLatestEvent(value: typings.libraCore.accountStateBlobPbMod.AccountStateWithProof.AsObject): Self = StObject.set(x, "proofOfLatestEvent", value.asInstanceOf[js.Any])
       

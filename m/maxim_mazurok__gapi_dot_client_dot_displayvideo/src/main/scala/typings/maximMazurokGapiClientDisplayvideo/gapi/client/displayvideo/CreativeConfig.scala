@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CreativeConfig extends StObject {
   
-  /** The type of creative that can be assigned to the inventory source. */
+  /** The type of creative that can be assigned to the inventory source. Only the following types are supported: * `CREATIVE_TYPE_STANDARD` * `CREATIVE_TYPE_VIDEO` */
   var creativeType: js.UndefOr[String] = js.undefined
   
   /** The configuration for display creatives. Applicable when creative_type is `CREATIVE_TYPE_STANDARD`. */

@@ -14,12 +14,74 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Validation extends StObject {
   
   def Add(): Unit = js.native
+  def Add(Type: `1` | `4` | `2` | `6` | `5`): Unit = js.native
+  def Add(Type: `1` | `4` | `2` | `6` | `5`, AlertStyle: Unit, Operator: `1` | `2`): Unit = js.native
+  def Add(Type: `1` | `4` | `2` | `6` | `5`, AlertStyle: Unit, Operator: `1` | `2`, Formula1: String): Unit = js.native
   def Add(
     Type: `1` | `4` | `2` | `6` | `5`,
-    AlertStyle: js.UndefOr[XlDVAlertStyle],
-    Operator: js.UndefOr[`1` | `2`],
-    Formula1: js.UndefOr[String],
-    Formula2: js.UndefOr[String]
+    AlertStyle: Unit,
+    Operator: `1` | `2`,
+    Formula1: String,
+    Formula2: String
+  ): Unit = js.native
+  def Add(
+    Type: `1` | `4` | `2` | `6` | `5`,
+    AlertStyle: Unit,
+    Operator: `1` | `2`,
+    Formula1: Unit,
+    Formula2: String
+  ): Unit = js.native
+  def Add(Type: `1` | `4` | `2` | `6` | `5`, AlertStyle: Unit, Operator: Unit, Formula1: String): Unit = js.native
+  def Add(
+    Type: `1` | `4` | `2` | `6` | `5`,
+    AlertStyle: Unit,
+    Operator: Unit,
+    Formula1: String,
+    Formula2: String
+  ): Unit = js.native
+  def Add(
+    Type: `1` | `4` | `2` | `6` | `5`,
+    AlertStyle: Unit,
+    Operator: Unit,
+    Formula1: Unit,
+    Formula2: String
+  ): Unit = js.native
+  def Add(Type: `1` | `4` | `2` | `6` | `5`, AlertStyle: XlDVAlertStyle): Unit = js.native
+  def Add(Type: `1` | `4` | `2` | `6` | `5`, AlertStyle: XlDVAlertStyle, Operator: `1` | `2`): Unit = js.native
+  def Add(
+    Type: `1` | `4` | `2` | `6` | `5`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: `1` | `2`,
+    Formula1: String
+  ): Unit = js.native
+  def Add(
+    Type: `1` | `4` | `2` | `6` | `5`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: `1` | `2`,
+    Formula1: String,
+    Formula2: String
+  ): Unit = js.native
+  def Add(
+    Type: `1` | `4` | `2` | `6` | `5`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: `1` | `2`,
+    Formula1: Unit,
+    Formula2: String
+  ): Unit = js.native
+  def Add(Type: `1` | `4` | `2` | `6` | `5`, AlertStyle: XlDVAlertStyle, Operator: Unit, Formula1: String): Unit = js.native
+  def Add(
+    Type: `1` | `4` | `2` | `6` | `5`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: Unit,
+    Formula1: String,
+    Formula2: String
+  ): Unit = js.native
+  def Add(
+    Type: `1` | `4` | `2` | `6` | `5`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: Unit,
+    Formula1: Unit,
+    Formula2: String
   ): Unit = js.native
   def Add(Type: Unit, AlertStyle: Unit, Operator: Unit, Formula1: String): Unit = js.native
   def Add(Type: Unit, AlertStyle: Unit, Operator: XlFormatConditionOperator): Unit = js.native
@@ -69,12 +131,74 @@ trait Validation extends StObject {
   var InputTitle: String = js.native
   
   def Modify(): Unit = js.native
+  def Modify(Type: `1` | `4` | `2` | `6` | `5`): Unit = js.native
+  def Modify(Type: `1` | `4` | `2` | `6` | `5`, AlertStyle: Unit, Operator: `1` | `2`): Unit = js.native
+  def Modify(Type: `1` | `4` | `2` | `6` | `5`, AlertStyle: Unit, Operator: `1` | `2`, Formula1: String): Unit = js.native
   def Modify(
     Type: `1` | `4` | `2` | `6` | `5`,
-    AlertStyle: js.UndefOr[XlDVAlertStyle],
-    Operator: js.UndefOr[`1` | `2`],
-    Formula1: js.UndefOr[String],
-    Formula2: js.UndefOr[String]
+    AlertStyle: Unit,
+    Operator: `1` | `2`,
+    Formula1: String,
+    Formula2: String
+  ): Unit = js.native
+  def Modify(
+    Type: `1` | `4` | `2` | `6` | `5`,
+    AlertStyle: Unit,
+    Operator: `1` | `2`,
+    Formula1: Unit,
+    Formula2: String
+  ): Unit = js.native
+  def Modify(Type: `1` | `4` | `2` | `6` | `5`, AlertStyle: Unit, Operator: Unit, Formula1: String): Unit = js.native
+  def Modify(
+    Type: `1` | `4` | `2` | `6` | `5`,
+    AlertStyle: Unit,
+    Operator: Unit,
+    Formula1: String,
+    Formula2: String
+  ): Unit = js.native
+  def Modify(
+    Type: `1` | `4` | `2` | `6` | `5`,
+    AlertStyle: Unit,
+    Operator: Unit,
+    Formula1: Unit,
+    Formula2: String
+  ): Unit = js.native
+  def Modify(Type: `1` | `4` | `2` | `6` | `5`, AlertStyle: XlDVAlertStyle): Unit = js.native
+  def Modify(Type: `1` | `4` | `2` | `6` | `5`, AlertStyle: XlDVAlertStyle, Operator: `1` | `2`): Unit = js.native
+  def Modify(
+    Type: `1` | `4` | `2` | `6` | `5`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: `1` | `2`,
+    Formula1: String
+  ): Unit = js.native
+  def Modify(
+    Type: `1` | `4` | `2` | `6` | `5`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: `1` | `2`,
+    Formula1: String,
+    Formula2: String
+  ): Unit = js.native
+  def Modify(
+    Type: `1` | `4` | `2` | `6` | `5`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: `1` | `2`,
+    Formula1: Unit,
+    Formula2: String
+  ): Unit = js.native
+  def Modify(Type: `1` | `4` | `2` | `6` | `5`, AlertStyle: XlDVAlertStyle, Operator: Unit, Formula1: String): Unit = js.native
+  def Modify(
+    Type: `1` | `4` | `2` | `6` | `5`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: Unit,
+    Formula1: String,
+    Formula2: String
+  ): Unit = js.native
+  def Modify(
+    Type: `1` | `4` | `2` | `6` | `5`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: Unit,
+    Formula1: Unit,
+    Formula2: String
   ): Unit = js.native
   def Modify(Type: Unit, AlertStyle: Unit, Operator: Unit, Formula1: String): Unit = js.native
   def Modify(Type: Unit, AlertStyle: Unit, Operator: XlFormatConditionOperator): Unit = js.native
@@ -96,7 +220,7 @@ trait Validation extends StObject {
   
   val Operator: Double = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   var ShowError: Boolean = js.native
   

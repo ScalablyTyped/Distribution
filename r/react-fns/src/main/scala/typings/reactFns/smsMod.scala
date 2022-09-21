@@ -1,7 +1,6 @@
 package typings.reactFns
 
 import typings.react.mod.HTMLAttributes
-import typings.react.mod.SFC
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +10,7 @@ object smsMod {
   
   @JSImport("react-fns/dist/Sms", "Sms")
   @js.native
-  val Sms: SFC[SmsProps] = js.native
+  val Sms: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.SFC<SmsProps> */ Any = js.native
   
   trait SmsProps
     extends StObject

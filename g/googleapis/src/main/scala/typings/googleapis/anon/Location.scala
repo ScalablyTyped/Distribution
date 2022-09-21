@@ -8,6 +8,8 @@ trait Location extends StObject {
   
   var code: js.UndefOr[String] = js.undefined
   
+  var errorDetails: js.UndefOr[js.Array[Help]] = js.undefined
+  
   var location: js.UndefOr[String] = js.undefined
   
   var message: js.UndefOr[String] = js.undefined
@@ -24,6 +26,12 @@ object Location {
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    
+    inline def setErrorDetails(value: js.Array[Help]): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
+    
+    inline def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
+    
+    inline def setErrorDetailsVarargs(value: Help*): Self = StObject.set(x, "errorDetails", js.Array(value*))
     
     inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

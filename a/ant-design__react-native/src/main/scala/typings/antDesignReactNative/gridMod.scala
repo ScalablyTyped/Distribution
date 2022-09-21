@@ -16,7 +16,7 @@ object gridMod {
   
   @JSImport("@ant-design/react-native/lib/grid", JSImport.Default)
   @js.native
-  class default () extends Grid
+  open class default () extends Grid
   /* static members */
   object default {
     
@@ -31,8 +31,7 @@ object gridMod {
   }
   
   @js.native
-  trait Grid
-    extends Component[GridProps, js.Any, js.Any] {
+  trait Grid extends Component[GridProps, Any, Any] {
     
     def getFlexItemStyle(columnNum: Double): BorderRightWidth = js.native
   }

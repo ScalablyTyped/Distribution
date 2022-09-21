@@ -25,7 +25,7 @@ object ListFhirStoresResponse {
     
     inline def setFhirStoresUndefined: Self = StObject.set(x, "fhirStores", js.undefined)
     
-    inline def setFhirStoresVarargs(value: FhirStore*): Self = StObject.set(x, "fhirStores", js.Array(value :_*))
+    inline def setFhirStoresVarargs(value: FhirStore*): Self = StObject.set(x, "fhirStores", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

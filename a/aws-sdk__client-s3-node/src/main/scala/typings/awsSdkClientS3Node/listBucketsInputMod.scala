@@ -8,5 +8,5 @@ object listBucketsInputMod {
   
   @JSImport("@aws-sdk/client-s3-node/model/ListBucketsInput", "ListBucketsInput")
   @js.native
-  val ListBucketsInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ListBucketsInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

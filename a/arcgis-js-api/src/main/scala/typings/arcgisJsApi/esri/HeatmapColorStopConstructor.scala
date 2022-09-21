@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait HeatmapColorStopConstructor
   extends StObject
-     with Instantiable0[HeatmapColorStop]
+     with /**
+  * This class is used to define an array of objects describing the [HeatmapRenderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html)'s color ramp and associated density value ratios.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-HeatmapColorStop.html)
+  */
+Instantiable0[HeatmapColorStop]
      with Instantiable1[/* properties */ HeatmapColorStopProperties, HeatmapColorStop]

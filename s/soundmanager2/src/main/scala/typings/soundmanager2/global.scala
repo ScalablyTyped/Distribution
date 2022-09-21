@@ -17,7 +17,7 @@ object global {
     
     @JSGlobal("soundmanager.SMSound")
     @js.native
-    class SMSound ()
+    open class SMSound ()
       extends StObject
          with typings.soundmanager2.soundmanager.SMSound
   }

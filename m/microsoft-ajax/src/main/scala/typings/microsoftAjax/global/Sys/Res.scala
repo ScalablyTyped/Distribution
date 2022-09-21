@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Sys.Res")
 @js.native
-class Res ()
+open class Res ()
   extends StObject
      with typings.microsoftAjax.Sys.Res
 object Res {

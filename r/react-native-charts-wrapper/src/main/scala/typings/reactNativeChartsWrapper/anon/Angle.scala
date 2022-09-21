@@ -41,7 +41,7 @@ object Angle {
     
     inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    inline def setColorsVarargs(value: typings.reactNativeChartsWrapper.mod.Color*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: typings.reactNativeChartsWrapper.mod.Color*): Self = StObject.set(x, "colors", js.Array(value*))
     
     inline def setOrientation(value: TOP_BOTTOM | TR_BL | RIGHT_LEFT | BR_TL | BOTTOM_TOP | BL_TR | LEFT_RIGHT | TL_BR): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
@@ -51,6 +51,6 @@ object Angle {
     
     inline def setPositionsUndefined: Self = StObject.set(x, "positions", js.undefined)
     
-    inline def setPositionsVarargs(value: Double*): Self = StObject.set(x, "positions", js.Array(value :_*))
+    inline def setPositionsVarargs(value: Double*): Self = StObject.set(x, "positions", js.Array(value*))
   }
 }

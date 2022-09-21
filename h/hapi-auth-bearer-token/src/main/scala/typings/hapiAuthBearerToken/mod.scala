@@ -31,7 +31,7 @@ object mod extends Shortcut {
     
     var tokenType: js.UndefOr[String] = js.undefined
     
-    var unauthorized: js.UndefOr[js.Function2[/* message */ String | Null, /* scheme */ String, js.Any]] = js.undefined
+    var unauthorized: js.UndefOr[js.Function2[/* message */ String | Null, /* scheme */ String, Any]] = js.undefined
     
     def validate(request: Request, token: String, h: ResponseToolkit): js.Promise[ValidateReturn] | ValidateReturn
     @JSName("validate")
@@ -72,7 +72,7 @@ object mod extends Shortcut {
       
       inline def setTokenTypeUndefined: Self = StObject.set(x, "tokenType", js.undefined)
       
-      inline def setUnauthorized(value: (/* message */ String | Null, /* scheme */ String) => js.Any): Self = StObject.set(x, "unauthorized", js.Any.fromFunction2(value))
+      inline def setUnauthorized(value: (/* message */ String | Null, /* scheme */ String) => Any): Self = StObject.set(x, "unauthorized", js.Any.fromFunction2(value))
       
       inline def setUnauthorizedUndefined: Self = StObject.set(x, "unauthorized", js.undefined)
       

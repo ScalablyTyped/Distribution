@@ -19,5 +19,5 @@ object isSemVerMod {
   inline def IsSemVer_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsSemVer")().asInstanceOf[PropertyDecorator]
   inline def IsSemVer_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsSemVer")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  inline def isSemVer(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSemVer")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isSemVer(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSemVer")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

@@ -29,6 +29,6 @@ object ListServiceRolloutsResponse {
     
     inline def setRolloutsUndefined: Self = StObject.set(x, "rollouts", js.undefined)
     
-    inline def setRolloutsVarargs(value: Rollout*): Self = StObject.set(x, "rollouts", js.Array(value :_*))
+    inline def setRolloutsVarargs(value: Rollout*): Self = StObject.set(x, "rollouts", js.Array(value*))
   }
 }

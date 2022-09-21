@@ -219,7 +219,7 @@ object Brand {
     
     inline def setBrandLanguagesUndefined: Self = StObject.set(x, "brandLanguages", js.undefined)
     
-    inline def setBrandLanguagesVarargs(value: String*): Self = StObject.set(x, "brandLanguages", js.Array(value :_*))
+    inline def setBrandLanguagesVarargs(value: String*): Self = StObject.set(x, "brandLanguages", js.Array(value*))
     
     inline def setBrandName(value: String): Self = StObject.set(x, "brandName", value.asInstanceOf[js.Any])
     
@@ -235,7 +235,7 @@ object Brand {
     
     inline def setColorsVarargs(
       value: (/* A name-value pair that describes an item and provides a value for the item. */ NameValue)*
-    ): Self = StObject.set(x, "colors", js.Array(value :_*))
+    ): Self = StObject.set(x, "colors", js.Array(value*))
     
     inline def setDefaultBrandLanguage(value: String): Self = StObject.set(x, "defaultBrandLanguage", value.asInstanceOf[js.Any])
     
@@ -245,7 +245,7 @@ object Brand {
     
     inline def setEmailContentUndefined: Self = StObject.set(x, "emailContent", js.undefined)
     
-    inline def setEmailContentVarargs(value: (/* Deprecated. */ BrandEmailContent)*): Self = StObject.set(x, "emailContent", js.Array(value :_*))
+    inline def setEmailContentVarargs(value: (/* Deprecated. */ BrandEmailContent)*): Self = StObject.set(x, "emailContent", js.Array(value*))
     
     inline def setErrorDetails(
       value: /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
@@ -275,13 +275,13 @@ object Brand {
     
     inline def setLandingPagesVarargs(
       value: (/* A name-value pair that describes an item and provides a value for the item. */ NameValue)*
-    ): Self = StObject.set(x, "landingPages", js.Array(value :_*))
+    ): Self = StObject.set(x, "landingPages", js.Array(value*))
     
     inline def setLinks(value: js.Array[/* Information about a link that a brand uses. */ BrandLink]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
     inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
     
-    inline def setLinksVarargs(value: (/* Information about a link that a brand uses. */ BrandLink)*): Self = StObject.set(x, "links", js.Array(value :_*))
+    inline def setLinksVarargs(value: (/* Information about a link that a brand uses. */ BrandLink)*): Self = StObject.set(x, "links", js.Array(value*))
     
     inline def setLogos(value: /* Information about the logos associated with the brand. */ BrandLogos): Self = StObject.set(x, "logos", value.asInstanceOf[js.Any])
     

@@ -152,7 +152,7 @@ object MatterCollisionData {
     
     inline def setSupports(value: js.Array[Vector]): Self = StObject.set(x, "supports", value.asInstanceOf[js.Any])
     
-    inline def setSupportsVarargs(value: Vector*): Self = StObject.set(x, "supports", js.Array(value :_*))
+    inline def setSupportsVarargs(value: Vector*): Self = StObject.set(x, "supports", js.Array(value*))
     
     inline def setTangent(value: Vector): Self = StObject.set(x, "tangent", value.asInstanceOf[js.Any])
   }

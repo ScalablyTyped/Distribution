@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "VerticeCommonShaderLib")
 @js.native
-class VerticeCommonShaderLib ()
+open class VerticeCommonShaderLib ()
   extends typings.wonderJs.verticeCommonShaderLibMod.VerticeCommonShaderLib
 /* static members */
 object VerticeCommonShaderLib {

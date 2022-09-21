@@ -17,7 +17,7 @@ trait ListSharedProjectsInput extends StObject {
   var nextToken: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    *  The criterion to be used to list build projects shared with the current AWS account or user. Valid values include:     ARN: List based on the ARN.     MODIFIED_TIME: List based on when information about the shared project was last changed.   
+    *  The criterion to be used to list build projects shared with the current Amazon Web Services account or user. Valid values include:     ARN: List based on the ARN.     MODIFIED_TIME: List based on when information about the shared project was last changed.   
     */
   var sortBy: js.UndefOr[SharedResourceSortByType] = js.undefined
   

@@ -10,9 +10,9 @@ Browser Harness ===============
 | Full name          | browser-harness |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 1291 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 98.66666666666667 |
+| # stars            | 64.0 |
 
 ## Links
 - [Homepage](https://github.com/scriby/browser-harness)

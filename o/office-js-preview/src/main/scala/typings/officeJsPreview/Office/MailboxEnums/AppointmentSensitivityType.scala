@@ -9,11 +9,10 @@ sealed trait AppointmentSensitivityType extends StObject
 /**
   * Specifies the sensitivity type of an appointment.
   *
-  * [Api set: Mailbox Preview]
+  * @remarks 
+  * [Api set: Mailbox preview]
   *
-  * @remarks
-  *
-  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+  * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   *
   * @beta
   */
@@ -24,7 +23,8 @@ object AppointmentSensitivityType extends StObject {
   /**
     * Treat the item as confidential.
     *
-    * [Api set: Mailbox Preview]
+    * @remarks
+    * [Api set: Mailbox preview]
     */
   @js.native
   sealed trait Confidential
@@ -34,7 +34,8 @@ object AppointmentSensitivityType extends StObject {
   /**
     * The item needs no special treatment.
     *
-    * [Api set: Mailbox Preview]
+    * @remarks
+    * [Api set: Mailbox preview]
     */
   @js.native
   sealed trait Normal
@@ -44,7 +45,8 @@ object AppointmentSensitivityType extends StObject {
   /**
     * Treat the item as personal.
     *
-    * [Api set: Mailbox Preview]
+    * @remarks
+    * [Api set: Mailbox preview]
     */
   @js.native
   sealed trait Personal
@@ -54,7 +56,8 @@ object AppointmentSensitivityType extends StObject {
   /**
     * Treat the item as private.
     *
-    * [Api set: Mailbox Preview]
+    * @remarks
+    * [Api set: Mailbox preview]
     */
   @js.native
   sealed trait Private

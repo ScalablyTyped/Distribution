@@ -4,28 +4,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Alternative hypotheses (a.k.a. n-best list).
-  */
 trait SchemaGoogleCloudVideointelligenceV1p3beta1SpeechRecognitionAlternative extends StObject {
   
   /**
-    * The confidence estimate between 0.0 and 1.0. A higher number indicates an
-    * estimated greater likelihood that the recognized words are correct. This
-    * field is typically provided only for the top hypothesis, and only for
-    * `is_final=true` results. Clients should not rely on the `confidence`
-    * field as it is not guaranteed to be accurate or consistent. The default
-    * of 0.0 is a sentinel value indicating `confidence` was not set.
+    * Output only. The confidence estimate between 0.0 and 1.0. A higher number indicates an estimated greater likelihood that the recognized words are correct. This field is set only for the top alternative. This field is not guaranteed to be accurate and users should not rely on it to be always provided. The default of 0.0 is a sentinel value indicating `confidence` was not set.
     */
-  var confidence: js.UndefOr[Double] = js.undefined
+  var confidence: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * Transcript text representing the words that the user spoke.
     */
-  var transcript: js.UndefOr[String] = js.undefined
+  var transcript: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * A list of word-specific information for each recognized word.
+    * Output only. A list of word-specific information for each recognized word. Note: When `enable_speaker_diarization` is set to true, you will see all the words from the beginning of the audio.
     */
   var words: js.UndefOr[js.Array[SchemaGoogleCloudVideointelligenceV1p3beta1WordInfo]] = js.undefined
 }
@@ -40,9 +32,13 @@ object SchemaGoogleCloudVideointelligenceV1p3beta1SpeechRecognitionAlternative {
     
     inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
+    inline def setConfidenceNull: Self = StObject.set(x, "confidence", null)
+    
     inline def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
     
     inline def setTranscript(value: String): Self = StObject.set(x, "transcript", value.asInstanceOf[js.Any])
+    
+    inline def setTranscriptNull: Self = StObject.set(x, "transcript", null)
     
     inline def setTranscriptUndefined: Self = StObject.set(x, "transcript", js.undefined)
     
@@ -50,6 +46,6 @@ object SchemaGoogleCloudVideointelligenceV1p3beta1SpeechRecognitionAlternative {
     
     inline def setWordsUndefined: Self = StObject.set(x, "words", js.undefined)
     
-    inline def setWordsVarargs(value: SchemaGoogleCloudVideointelligenceV1p3beta1WordInfo*): Self = StObject.set(x, "words", js.Array(value :_*))
+    inline def setWordsVarargs(value: SchemaGoogleCloudVideointelligenceV1p3beta1WordInfo*): Self = StObject.set(x, "words", js.Array(value*))
   }
 }

@@ -12,7 +12,7 @@ object global {
     
     @JSGlobal("AMap.Heatmap")
     @js.native
-    class Heatmap protected ()
+    open class Heatmap protected ()
       extends StObject
          with typings.amapJsApiHeatmap.AMap.Heatmap {
       /**

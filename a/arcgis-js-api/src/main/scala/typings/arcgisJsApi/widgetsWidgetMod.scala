@@ -22,7 +22,7 @@ object widgetsWidgetMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Widget.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with Widget_ {
     def this(properties: WidgetProperties) = this()

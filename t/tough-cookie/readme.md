@@ -10,10 +10,10 @@ RFC6265 Cookies and Cookie Jar for node.js
 | ------------------ | :-------------: |
 | Full name          | tough-cookie |
 | Keywords           | HTTP, cookie, cookies, set-cookie, cookiejar, jar, RFC6265, RFC2965 |
-| # releases         | 3 |
-| # dependents       | 886 |
-| # downloads        | 1406542529 |
-| # stars            | 28 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1.6868172166666666E8 |
+| # stars            | 769.0 |
 
 ## Links
 - [Homepage](https://github.com/salesforce/tough-cookie)

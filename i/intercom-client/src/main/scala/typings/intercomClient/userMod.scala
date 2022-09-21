@@ -53,7 +53,7 @@ object userMod {
     
     val created_at: Double
     
-    var custom_attributes: StringDictionary[js.Any]
+    var custom_attributes: StringDictionary[Any]
     
     var email: String | Null
     
@@ -89,7 +89,7 @@ object userMod {
       anonymous: Boolean,
       avatar: Avatar,
       created_at: Double,
-      custom_attributes: StringDictionary[js.Any],
+      custom_attributes: StringDictionary[Any],
       id: String,
       session_count: Double,
       `type`: user | contact,
@@ -113,7 +113,7 @@ object userMod {
       
       inline def setCreated_at(value: Double): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
       
-      inline def setCustom_attributes(value: StringDictionary[js.Any]): Self = StObject.set(x, "custom_attributes", value.asInstanceOf[js.Any])
+      inline def setCustom_attributes(value: StringDictionary[Any]): Self = StObject.set(x, "custom_attributes", value.asInstanceOf[js.Any])
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -176,7 +176,7 @@ object userMod {
       avatar: Avatar,
       companies: js.Array[PartialCompanyremoveboole],
       created_at: Double,
-      custom_attributes: StringDictionary[js.Any],
+      custom_attributes: StringDictionary[Any],
       id: String,
       session_count: Double,
       `type`: user | contact,
@@ -192,7 +192,7 @@ object userMod {
       
       inline def setCompanies(value: js.Array[PartialCompanyremoveboole]): Self = StObject.set(x, "companies", value.asInstanceOf[js.Any])
       
-      inline def setCompaniesVarargs(value: PartialCompanyremoveboole*): Self = StObject.set(x, "companies", js.Array(value :_*))
+      inline def setCompaniesVarargs(value: PartialCompanyremoveboole*): Self = StObject.set(x, "companies", js.Array(value*))
     }
   }
   
@@ -224,7 +224,7 @@ object userMod {
       
       inline def setUsers(value: js.Array[User]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
       
-      inline def setUsersVarargs(value: User*): Self = StObject.set(x, "users", js.Array(value :_*))
+      inline def setUsersVarargs(value: User*): Self = StObject.set(x, "users", js.Array(value*))
     }
   }
   
@@ -390,7 +390,7 @@ object userMod {
       avatar: Avatar,
       companies: Companies,
       created_at: Double,
-      custom_attributes: StringDictionary[js.Any],
+      custom_attributes: StringDictionary[Any],
       id: String,
       location_data: LocationData | js.Object,
       segments: Segments,

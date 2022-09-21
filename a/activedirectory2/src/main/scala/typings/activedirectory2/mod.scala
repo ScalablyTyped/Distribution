@@ -18,7 +18,7 @@ object mod {
   
   @JSImport("activedirectory2", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with ActiveDirectory {
     def this(props: ADProperties) = this()
@@ -291,11 +291,11 @@ object mod {
       
       inline def setGroup(value: js.Array[GroupAttributes]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
-      inline def setGroupVarargs(value: GroupAttributes*): Self = StObject.set(x, "group", js.Array(value :_*))
+      inline def setGroupVarargs(value: GroupAttributes*): Self = StObject.set(x, "group", js.Array(value*))
       
       inline def setUser(value: js.Array[UserAttributes]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
-      inline def setUserVarargs(value: UserAttributes*): Self = StObject.set(x, "user", js.Array(value :_*))
+      inline def setUserVarargs(value: UserAttributes*): Self = StObject.set(x, "user", js.Array(value*))
     }
   }
   
@@ -318,15 +318,15 @@ object mod {
       
       inline def setGroups(value: js.Array[js.Object]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
       
-      inline def setGroupsVarargs(value: js.Object*): Self = StObject.set(x, "groups", js.Array(value :_*))
+      inline def setGroupsVarargs(value: js.Object*): Self = StObject.set(x, "groups", js.Array(value*))
       
       inline def setOther(value: js.Array[js.Object]): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
       
-      inline def setOtherVarargs(value: js.Object*): Self = StObject.set(x, "other", js.Array(value :_*))
+      inline def setOtherVarargs(value: js.Object*): Self = StObject.set(x, "other", js.Array(value*))
       
       inline def setUsers(value: js.Array[js.Object]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
       
-      inline def setUsersVarargs(value: js.Object*): Self = StObject.set(x, "users", js.Array(value :_*))
+      inline def setUsersVarargs(value: js.Object*): Self = StObject.set(x, "users", js.Array(value*))
     }
   }
   
@@ -354,7 +354,7 @@ object mod {
     
     var idleTimeout: js.UndefOr[Double] = js.undefined
     
-    var log: js.UndefOr[js.Any] = js.undefined
+    var log: js.UndefOr[Any] = js.undefined
     
     var socketPath: js.UndefOr[String] = js.undefined
     
@@ -383,7 +383,7 @@ object mod {
       
       inline def setIdleTimeoutUndefined: Self = StObject.set(x, "idleTimeout", js.undefined)
       
-      inline def setLog(value: js.Any): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: Any): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
       inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
       
@@ -475,7 +475,7 @@ object mod {
       
       inline def setIncludeMembership(value: js.Array[MembershipType]): Self = StObject.set(x, "includeMembership", value.asInstanceOf[js.Any])
       
-      inline def setIncludeMembershipVarargs(value: MembershipType*): Self = StObject.set(x, "includeMembership", js.Array(value :_*))
+      inline def setIncludeMembershipVarargs(value: MembershipType*): Self = StObject.set(x, "includeMembership", js.Array(value*))
       
       inline def setScope(value: base | one | sub): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       

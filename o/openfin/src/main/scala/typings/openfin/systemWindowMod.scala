@@ -84,7 +84,7 @@ object systemWindowMod {
       
       inline def setChildWindows(value: js.Array[WindowDetail]): Self = StObject.set(x, "childWindows", value.asInstanceOf[js.Any])
       
-      inline def setChildWindowsVarargs(value: WindowDetail*): Self = StObject.set(x, "childWindows", js.Array(value :_*))
+      inline def setChildWindowsVarargs(value: WindowDetail*): Self = StObject.set(x, "childWindows", js.Array(value*))
       
       inline def setMainWindow(value: WindowDetail): Self = StObject.set(x, "mainWindow", value.asInstanceOf[js.Any])
       

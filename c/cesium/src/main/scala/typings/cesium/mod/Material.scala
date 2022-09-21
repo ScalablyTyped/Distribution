@@ -7,152 +7,265 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("cesium", "Material")
 @js.native
-class Material () extends StObject {
+open class Material () extends StObject {
   def this(options: Fabric) = this()
   
+  /**
+    * Destroys the WebGL resources held by this object.  Destroying an object allows for deterministic
+    * release of WebGL resources, instead of relying on the garbage collector to destroy this object.
+    * <br /><br />
+    * Once an object is destroyed, it should not be used; calling any function other than
+    * <code>isDestroyed</code> will result in a {@link DeveloperError} exception.  Therefore,
+    * assign the return value (<code>undefined</code>) to the object as done in the example.
+    * @example
+    * material = material && material.destroy();
+    */
   def destroy(): Unit = js.native
   
+  /**
+    * Returns true if this object was destroyed; otherwise, false.
+    * <br /><br />
+    * If this object was destroyed, it should not be used; calling any function other than
+    * <code>isDestroyed</code> will result in a {@link DeveloperError} exception.
+    * @returns True if this object was destroyed; otherwise, false.
+    */
   def isDestroyed(): Boolean = js.native
   
+  /**
+    * Gets whether or not this material is translucent.
+    * @returns <code>true</code> if this material is translucent, <code>false</code> otherwise.
+    */
   def isTranslucent(): Boolean = js.native
   
-  var materials: js.Any = js.native
+  /**
+    * Maps sub-material names to Material objects.
+    */
+  var materials: Any = js.native
   
+  /**
+    * The glsl shader source for this material.
+    */
   var shaderSource: String = js.native
   
-  var translucent: Boolean | (js.Function1[/* material */ this.type, Boolean]) = js.native
+  /**
+    * When <code>true</code> or a function that returns <code>true</code>,
+    * the geometry is expected to appear translucent.
+    */
+  var translucent: Boolean | (js.Function1[/* repeated */ Any, Any]) = js.native
   
+  /**
+    * The material type. Can be an existing type or a new type. If no type is specified in fabric, type is a GUID.
+    */
   var `type`: String = js.native
   
-  var uniforms: js.Any = js.native
+  /**
+    * Maps uniform names to their values.
+    */
+  var uniforms: Any = js.native
 }
+/* static members */
 object Material {
   
   @JSImport("cesium", "Material")
   @js.native
   val ^ : js.Any = js.native
   
-  /* static member */
+  /**
+    * Gets the name of the alpha map material.
+    */
   @JSImport("cesium", "Material.AlphaMapType")
   @js.native
-  def AlphaMapType: String = js.native
-  inline def AlphaMapType_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AlphaMapType")(x.asInstanceOf[js.Any])
+  val AlphaMapType: String = js.native
   
-  /* static member */
+  /**
+    * Gets the name of the aspect ramp material.
+    */
+  @JSImport("cesium", "Material.AspectRampMaterialType")
+  @js.native
+  val AspectRampMaterialType: String = js.native
+  
+  /**
+    * Gets the name of the bump map material.
+    */
   @JSImport("cesium", "Material.BumpMapType")
   @js.native
-  def BumpMapType: String = js.native
-  inline def BumpMapType_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BumpMapType")(x.asInstanceOf[js.Any])
+  val BumpMapType: String = js.native
   
-  /* static member */
+  /**
+    * Gets the name of the checkerboard material.
+    */
   @JSImport("cesium", "Material.CheckerboardType")
   @js.native
-  def CheckerboardType: String = js.native
-  inline def CheckerboardType_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CheckerboardType")(x.asInstanceOf[js.Any])
+  val CheckerboardType: String = js.native
   
-  /* static member */
+  /**
+    * Gets the name of the color material.
+    */
   @JSImport("cesium", "Material.ColorType")
   @js.native
-  def ColorType: String = js.native
-  inline def ColorType_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ColorType")(x.asInstanceOf[js.Any])
+  val ColorType: String = js.native
   
-  /* static member */
+  /**
+    * Gets or sets the default cube map texture uniform value.
+    */
   @JSImport("cesium", "Material.DefaultCubeMapId")
   @js.native
   def DefaultCubeMapId: String = js.native
   inline def DefaultCubeMapId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultCubeMapId")(x.asInstanceOf[js.Any])
   
-  /* static member */
+  /**
+    * Gets or sets the default texture uniform value.
+    */
   @JSImport("cesium", "Material.DefaultImageId")
   @js.native
   def DefaultImageId: String = js.native
   inline def DefaultImageId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultImageId")(x.asInstanceOf[js.Any])
   
-  /* static member */
+  /**
+    * Gets the name of the diffuce map material.
+    */
   @JSImport("cesium", "Material.DiffuseMapType")
   @js.native
-  def DiffuseMapType: String = js.native
-  inline def DiffuseMapType_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DiffuseMapType")(x.asInstanceOf[js.Any])
+  val DiffuseMapType: String = js.native
   
-  /* static member */
+  /**
+    * Gets the name of the dot material.
+    */
   @JSImport("cesium", "Material.DotType")
   @js.native
-  def DotType: String = js.native
-  inline def DotType_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DotType")(x.asInstanceOf[js.Any])
+  val DotType: String = js.native
   
-  /* static member */
+  /**
+    * Gets the name of the elevation band material.
+    */
+  @JSImport("cesium", "Material.ElevationBandType")
+  @js.native
+  val ElevationBandType: String = js.native
+  
+  /**
+    * Gets the name of the elevation contour material.
+    */
+  @JSImport("cesium", "Material.ElevationContourType")
+  @js.native
+  val ElevationContourType: String = js.native
+  
+  /**
+    * Gets the name of the elevation contour material.
+    */
+  @JSImport("cesium", "Material.ElevationRampType")
+  @js.native
+  val ElevationRampType: String = js.native
+  
+  /**
+    * Gets the name of the emmision map material.
+    */
   @JSImport("cesium", "Material.EmissionMapType")
   @js.native
-  def EmissionMapType: String = js.native
-  inline def EmissionMapType_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EmissionMapType")(x.asInstanceOf[js.Any])
+  val EmissionMapType: String = js.native
   
-  /* static member */
+  /**
+    * Gets the name of the fade material.
+    */
   @JSImport("cesium", "Material.FadeType")
   @js.native
-  def FadeType: String = js.native
-  inline def FadeType_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FadeType")(x.asInstanceOf[js.Any])
+  val FadeType: String = js.native
   
-  /* static member */
+  /**
+    * Gets the name of the grid material.
+    */
   @JSImport("cesium", "Material.GridType")
   @js.native
-  def GridType: String = js.native
-  inline def GridType_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GridType")(x.asInstanceOf[js.Any])
+  val GridType: String = js.native
   
-  /* static member */
+  /**
+    * Gets the name of the image material.
+    */
   @JSImport("cesium", "Material.ImageType")
   @js.native
-  def ImageType: String = js.native
-  inline def ImageType_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ImageType")(x.asInstanceOf[js.Any])
+  val ImageType: String = js.native
   
-  /* static member */
+  /**
+    * Gets the name of the normal map material.
+    */
   @JSImport("cesium", "Material.NormalMapType")
   @js.native
-  def NormalMapType: String = js.native
-  inline def NormalMapType_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NormalMapType")(x.asInstanceOf[js.Any])
+  val NormalMapType: String = js.native
   
-  /* static member */
+  /**
+    * Gets the name of the polyline arrow material.
+    */
   @JSImport("cesium", "Material.PolylineArrowType")
   @js.native
-  def PolylineArrowType: String = js.native
-  inline def PolylineArrowType_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PolylineArrowType")(x.asInstanceOf[js.Any])
+  val PolylineArrowType: String = js.native
   
-  /* static member */
+  /**
+    * Gets the name of the polyline glow material.
+    */
+  @JSImport("cesium", "Material.PolylineDashType")
+  @js.native
+  val PolylineDashType: String = js.native
+  
+  /**
+    * Gets the name of the polyline glow material.
+    */
   @JSImport("cesium", "Material.PolylineGlowType")
   @js.native
-  def PolylineGlowType: String = js.native
-  inline def PolylineGlowType_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PolylineGlowType")(x.asInstanceOf[js.Any])
+  val PolylineGlowType: String = js.native
   
-  /* static member */
+  /**
+    * Gets the name of the polyline outline material.
+    */
   @JSImport("cesium", "Material.PolylineOutlineType")
   @js.native
-  def PolylineOutlineType: String = js.native
-  inline def PolylineOutlineType_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PolylineOutlineType")(x.asInstanceOf[js.Any])
+  val PolylineOutlineType: String = js.native
   
-  /* static member */
+  /**
+    * Gets the name of the rim lighting material.
+    */
   @JSImport("cesium", "Material.RimLightingType")
   @js.native
-  def RimLightingType: String = js.native
-  inline def RimLightingType_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RimLightingType")(x.asInstanceOf[js.Any])
+  val RimLightingType: String = js.native
   
-  /* static member */
+  /**
+    * Gets the name of the slope ramp material.
+    */
+  @JSImport("cesium", "Material.SlopeRampMaterialType")
+  @js.native
+  val SlopeRampMaterialType: String = js.native
+  
+  /**
+    * Gets the name of the specular map material.
+    */
   @JSImport("cesium", "Material.SpecularMapType")
   @js.native
-  def SpecularMapType: String = js.native
-  inline def SpecularMapType_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SpecularMapType")(x.asInstanceOf[js.Any])
+  val SpecularMapType: String = js.native
   
-  /* static member */
+  /**
+    * Gets the name of the stripe material.
+    */
   @JSImport("cesium", "Material.StripeType")
   @js.native
-  def StripeType: String = js.native
-  inline def StripeType_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("StripeType")(x.asInstanceOf[js.Any])
+  val StripeType: String = js.native
   
-  /* static member */
+  /**
+    * Gets the name of the water material.
+    */
   @JSImport("cesium", "Material.WaterType")
   @js.native
-  def WaterType: String = js.native
-  inline def WaterType_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WaterType")(x.asInstanceOf[js.Any])
+  val WaterType: String = js.native
   
-  /* static member */
+  /**
+    * Creates a new material using an existing material type.
+    * <br /><br />
+    * Shorthand for: new Material({fabric : {type : type}});
+    * @example
+    * const material = Cesium.Material.fromType('Color', {
+    *     color : new Cesium.Color(1.0, 0.0, 0.0, 1.0)
+    * });
+    * @param type - The base material type.
+    * @param [uniforms] - Overrides for the default uniforms.
+    * @returns New material object.
+    */
   inline def fromType(`type`: String): Material = ^.asInstanceOf[js.Dynamic].applyDynamic("fromType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Material]
-  inline def fromType(`type`: String, uniforms: js.Any): Material = (^.asInstanceOf[js.Dynamic].applyDynamic("fromType")(`type`.asInstanceOf[js.Any], uniforms.asInstanceOf[js.Any])).asInstanceOf[Material]
+  inline def fromType(`type`: String, uniforms: Any): Material = (^.asInstanceOf[js.Dynamic].applyDynamic("fromType")(`type`.asInstanceOf[js.Any], uniforms.asInstanceOf[js.Any])).asInstanceOf[Material]
 }

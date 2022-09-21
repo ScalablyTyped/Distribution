@@ -1,7 +1,9 @@
 package typings.chessJs
 
+import typings.chessJs.mod.PieceColor
 import typings.chessJs.mod.PieceType
 import typings.chessJs.mod.Square
+import typings.chessJs.mod.SquareColor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -59,6 +61,7 @@ object chessJsStrings {
   @js.native
   sealed trait b
     extends StObject
+       with PieceColor
        with PieceType
   inline def b: b = "b".asInstanceOf[b]
   
@@ -211,7 +214,9 @@ object chessJsStrings {
   inline def d8: d8 = "d8".asInstanceOf[d8]
   
   @js.native
-  sealed trait dark extends StObject
+  sealed trait dark
+    extends StObject
+       with SquareColor
   inline def dark: dark = "dark".asInstanceOf[dark]
   
   @js.native
@@ -417,7 +422,9 @@ object chessJsStrings {
   inline def k: k = "k".asInstanceOf[k]
   
   @js.native
-  sealed trait light extends StObject
+  sealed trait light
+    extends StObject
+       with SquareColor
   inline def light: light = "light".asInstanceOf[light]
   
   @js.native
@@ -445,6 +452,8 @@ object chessJsStrings {
   inline def r: r = "r".asInstanceOf[r]
   
   @js.native
-  sealed trait w extends StObject
+  sealed trait w
+    extends StObject
+       with PieceColor
   inline def w: w = "w".asInstanceOf[w]
 }

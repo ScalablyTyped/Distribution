@@ -17,9 +17,34 @@ trait GetObjectOutput extends StObject {
   var Body: js.UndefOr[typings.awsSdk.s3Mod.Body] = js.undefined
   
   /**
+    * Indicates whether the object uses an S3 Bucket Key for server-side encryption with Amazon Web Services KMS (SSE-KMS).
+    */
+  var BucketKeyEnabled: js.UndefOr[typings.awsSdk.s3Mod.BucketKeyEnabled] = js.undefined
+  
+  /**
     * Specifies caching behavior along the request/reply chain.
     */
   var CacheControl: js.UndefOr[typings.awsSdk.s3Mod.CacheControl] = js.undefined
+  
+  /**
+    * The base64-encoded, 32-bit CRC32 checksum of the object. This will only be present if it was uploaded with the object. With multipart uploads, this may not be a checksum value of the object. For more information about how checksums are calculated with multipart uploads, see  Checking object integrity in the Amazon S3 User Guide.
+    */
+  var ChecksumCRC32: js.UndefOr[typings.awsSdk.s3Mod.ChecksumCRC32] = js.undefined
+  
+  /**
+    * The base64-encoded, 32-bit CRC32C checksum of the object. This will only be present if it was uploaded with the object. With multipart uploads, this may not be a checksum value of the object. For more information about how checksums are calculated with multipart uploads, see  Checking object integrity in the Amazon S3 User Guide.
+    */
+  var ChecksumCRC32C: js.UndefOr[typings.awsSdk.s3Mod.ChecksumCRC32C] = js.undefined
+  
+  /**
+    * The base64-encoded, 160-bit SHA-1 digest of the object. This will only be present if it was uploaded with the object. With multipart uploads, this may not be a checksum value of the object. For more information about how checksums are calculated with multipart uploads, see  Checking object integrity in the Amazon S3 User Guide.
+    */
+  var ChecksumSHA1: js.UndefOr[typings.awsSdk.s3Mod.ChecksumSHA1] = js.undefined
+  
+  /**
+    * The base64-encoded, 256-bit SHA-256 digest of the object. This will only be present if it was uploaded with the object. With multipart uploads, this may not be a checksum value of the object. For more information about how checksums are calculated with multipart uploads, see  Checking object integrity in the Amazon S3 User Guide.
+    */
+  var ChecksumSHA256: js.UndefOr[typings.awsSdk.s3Mod.ChecksumSHA256] = js.undefined
   
   /**
     * Specifies presentational information for the object.
@@ -57,24 +82,24 @@ trait GetObjectOutput extends StObject {
   var DeleteMarker: js.UndefOr[typings.awsSdk.s3Mod.DeleteMarker] = js.undefined
   
   /**
-    * An ETag is an opaque identifier assigned by a web server to a specific version of a resource found at a URL.
+    * An entity tag (ETag) is an opaque identifier assigned by a web server to a specific version of a resource found at a URL.
     */
   var ETag: js.UndefOr[typings.awsSdk.s3Mod.ETag] = js.undefined
   
   /**
-    * If the object expiration is configured (see PUT Bucket lifecycle), the response includes this header. It includes the expiry-date and rule-id key-value pairs providing object expiration information. The value of the rule-id is URL encoded.
+    * If the object expiration is configured (see PUT Bucket lifecycle), the response includes this header. It includes the expiry-date and rule-id key-value pairs providing object expiration information. The value of the rule-id is URL-encoded.
     */
   var Expiration: js.UndefOr[typings.awsSdk.s3Mod.Expiration] = js.undefined
   
   /**
     * The date and time at which the object is no longer cacheable.
     */
-  var Expires: js.UndefOr[typings.awsSdk.s3Mod.Expires] = js.undefined
+  var Expires: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * Last modified date of the object
+    * Creation date of the object.
     */
-  var LastModified: js.UndefOr[typings.awsSdk.s3Mod.LastModified] = js.undefined
+  var LastModified: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A map of metadata to store with the object in S3.
@@ -99,10 +124,10 @@ trait GetObjectOutput extends StObject {
   /**
     * The date and time when this object's Object Lock will expire.
     */
-  var ObjectLockRetainUntilDate: js.UndefOr[typings.awsSdk.s3Mod.ObjectLockRetainUntilDate] = js.undefined
+  var ObjectLockRetainUntilDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The count of parts this object has.
+    * The count of parts this object has. This value is only returned if you specify partNumber in your request and the object was uploaded as a multipart upload.
     */
   var PartsCount: js.UndefOr[typings.awsSdk.s3Mod.PartsCount] = js.undefined
   
@@ -114,7 +139,7 @@ trait GetObjectOutput extends StObject {
   var RequestCharged: js.UndefOr[typings.awsSdk.s3Mod.RequestCharged] = js.undefined
   
   /**
-    * Provides information about object restoration operation and expiration time of the restored object copy.
+    * Provides information about object restoration action and expiration time of the restored object copy.
     */
   var Restore: js.UndefOr[typings.awsSdk.s3Mod.Restore] = js.undefined
   
@@ -129,7 +154,7 @@ trait GetObjectOutput extends StObject {
   var SSECustomerKeyMD5: js.UndefOr[typings.awsSdk.s3Mod.SSECustomerKeyMD5] = js.undefined
   
   /**
-    * If present, specifies the ID of the AWS Key Management Service (AWS KMS) symmetric customer managed customer master key (CMK) that was used for the object.
+    * If present, specifies the ID of the Amazon Web Services Key Management Service (Amazon Web Services KMS) symmetric customer managed key that was used for the object.
     */
   var SSEKMSKeyId: js.UndefOr[typings.awsSdk.s3Mod.SSEKMSKeyId] = js.undefined
   
@@ -175,9 +200,29 @@ object GetObjectOutput {
     
     inline def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
     
+    inline def setBucketKeyEnabled(value: BucketKeyEnabled): Self = StObject.set(x, "BucketKeyEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setBucketKeyEnabledUndefined: Self = StObject.set(x, "BucketKeyEnabled", js.undefined)
+    
     inline def setCacheControl(value: CacheControl): Self = StObject.set(x, "CacheControl", value.asInstanceOf[js.Any])
     
     inline def setCacheControlUndefined: Self = StObject.set(x, "CacheControl", js.undefined)
+    
+    inline def setChecksumCRC32(value: ChecksumCRC32): Self = StObject.set(x, "ChecksumCRC32", value.asInstanceOf[js.Any])
+    
+    inline def setChecksumCRC32C(value: ChecksumCRC32C): Self = StObject.set(x, "ChecksumCRC32C", value.asInstanceOf[js.Any])
+    
+    inline def setChecksumCRC32CUndefined: Self = StObject.set(x, "ChecksumCRC32C", js.undefined)
+    
+    inline def setChecksumCRC32Undefined: Self = StObject.set(x, "ChecksumCRC32", js.undefined)
+    
+    inline def setChecksumSHA1(value: ChecksumSHA1): Self = StObject.set(x, "ChecksumSHA1", value.asInstanceOf[js.Any])
+    
+    inline def setChecksumSHA1Undefined: Self = StObject.set(x, "ChecksumSHA1", js.undefined)
+    
+    inline def setChecksumSHA256(value: ChecksumSHA256): Self = StObject.set(x, "ChecksumSHA256", value.asInstanceOf[js.Any])
+    
+    inline def setChecksumSHA256Undefined: Self = StObject.set(x, "ChecksumSHA256", js.undefined)
     
     inline def setContentDisposition(value: ContentDisposition): Self = StObject.set(x, "ContentDisposition", value.asInstanceOf[js.Any])
     
@@ -215,11 +260,11 @@ object GetObjectOutput {
     
     inline def setExpirationUndefined: Self = StObject.set(x, "Expiration", js.undefined)
     
-    inline def setExpires(value: Expires): Self = StObject.set(x, "Expires", value.asInstanceOf[js.Any])
+    inline def setExpires(value: js.Date): Self = StObject.set(x, "Expires", value.asInstanceOf[js.Any])
     
     inline def setExpiresUndefined: Self = StObject.set(x, "Expires", js.undefined)
     
-    inline def setLastModified(value: LastModified): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
+    inline def setLastModified(value: js.Date): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
     
@@ -239,7 +284,7 @@ object GetObjectOutput {
     
     inline def setObjectLockModeUndefined: Self = StObject.set(x, "ObjectLockMode", js.undefined)
     
-    inline def setObjectLockRetainUntilDate(value: ObjectLockRetainUntilDate): Self = StObject.set(x, "ObjectLockRetainUntilDate", value.asInstanceOf[js.Any])
+    inline def setObjectLockRetainUntilDate(value: js.Date): Self = StObject.set(x, "ObjectLockRetainUntilDate", value.asInstanceOf[js.Any])
     
     inline def setObjectLockRetainUntilDateUndefined: Self = StObject.set(x, "ObjectLockRetainUntilDate", js.undefined)
     

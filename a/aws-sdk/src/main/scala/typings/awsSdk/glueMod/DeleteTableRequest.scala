@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteTableRequest extends StObject {
   
   /**
-    * The ID of the Data Catalog where the table resides. If none is provided, the AWS account ID is used by default.
+    * The ID of the Data Catalog where the table resides. If none is provided, the Amazon Web Services account ID is used by default.
     */
   var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   
@@ -20,6 +20,11 @@ trait DeleteTableRequest extends StObject {
     * The name of the table to be deleted. For Hive compatibility, this name is entirely lowercase.
     */
   var Name: NameString
+  
+  /**
+    * The transaction ID at which to delete the table contents.
+    */
+  var TransactionId: js.UndefOr[TransactionIdString] = js.undefined
 }
 object DeleteTableRequest {
   
@@ -37,5 +42,9 @@ object DeleteTableRequest {
     inline def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
     inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    
+    inline def setTransactionId(value: TransactionIdString): Self = StObject.set(x, "TransactionId", value.asInstanceOf[js.Any])
+    
+    inline def setTransactionIdUndefined: Self = StObject.set(x, "TransactionId", js.undefined)
   }
 }

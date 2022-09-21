@@ -10,10 +10,10 @@ Mock http requests made using fetch (or isomorphic-fetch)
 | ------------------ | :-------------: |
 | Full name          | fetch-mock |
 | Keywords           | fetch, http, mock, testing, spy, xhr, ajax |
-| # releases         | 68 |
-| # dependents       | 85 |
-| # downloads        | 21503995 |
-| # stars            | 13 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 2450298.3333333335 |
+| # stars            | 1177.0 |
 
 ## Links
 - [Homepage](http://www.wheresrhys.co.uk/fetch-mock)

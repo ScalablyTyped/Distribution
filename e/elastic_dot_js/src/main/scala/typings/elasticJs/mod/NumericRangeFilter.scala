@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elastic.js", "NumericRangeFilter")
 @js.native
-class NumericRangeFilter protected ()
+open class NumericRangeFilter protected ()
   extends StObject
      with Filter {
   /*
@@ -44,13 +44,13 @@ class NumericRangeFilter protected ()
     Greater than value.  Same as setting from to the value, and
     include_lower to false,
     */
-  def gt(`val`: js.Any): NumericRangeFilter = js.native
+  def gt(`val`: Any): NumericRangeFilter = js.native
   
   /*
     Greater than or equal to value.  Same as setting from to the value,
     and include_lower to true.
     */
-  def gte(`val`: js.Any): NumericRangeFilter = js.native
+  def gte(`val`: Any): NumericRangeFilter = js.native
   
   /*
     Should the first from (if set) be inclusive or not.
@@ -67,13 +67,13 @@ class NumericRangeFilter protected ()
     Less than value.  Same as setting to to the value, and include_upper
     to false.
     */
-  def lt(`val`: js.Any): NumericRangeFilter = js.native
+  def lt(`val`: Any): NumericRangeFilter = js.native
   
   /*
     Less than or equal to value.  Same as setting to to the value,
     and include_upper to true.
     */
-  def lte(`val`: js.Any): NumericRangeFilter = js.native
+  def lte(`val`: Any): NumericRangeFilter = js.native
   
   /*
     Sets the filter name.

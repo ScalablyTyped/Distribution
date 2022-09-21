@@ -9,7 +9,7 @@ object crosshairLineMod {
   
   @JSImport("@antv/component/lib/crosshair/line", JSImport.Default)
   @js.native
-  class default () extends LineCrosshair
+  open class default () extends LineCrosshair
   
   @js.native
   trait LineCrosshair

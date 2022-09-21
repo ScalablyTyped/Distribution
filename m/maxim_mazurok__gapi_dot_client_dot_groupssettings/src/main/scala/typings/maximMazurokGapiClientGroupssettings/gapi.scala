@@ -72,6 +72,12 @@ object gapi {
         var defaultMessageDenyNotificationText: js.UndefOr[String] = js.undefined
         
         /**
+          * Default sender for members who can post messages as the group. Possible values are: - `DEFAULT_SELF`: By default messages will be sent from the user - `GROUP`: By default messages
+          * will be sent from the group
+          */
+        var default_sender: js.UndefOr[String] = js.undefined
+        
+        /**
           * Description of the group. This property value may be an empty string if no group description has been entered. If entered, the maximum group description is no more than 300
           * characters.
           */
@@ -257,6 +263,7 @@ object gapi {
           * - ALL_MANAGERS_CAN_CONTACT
           * - ALL_MEMBERS_CAN_CONTACT
           * - ANYONE_CAN_CONTACT
+          * - ALL_OWNERS_CAN_CONTACT
           */
         var whoCanContactOwner: js.UndefOr[String] = js.undefined
         
@@ -559,6 +566,10 @@ object gapi {
           inline def setDefaultMessageDenyNotificationText(value: String): Self = StObject.set(x, "defaultMessageDenyNotificationText", value.asInstanceOf[js.Any])
           
           inline def setDefaultMessageDenyNotificationTextUndefined: Self = StObject.set(x, "defaultMessageDenyNotificationText", js.undefined)
+          
+          inline def setDefault_sender(value: String): Self = StObject.set(x, "default_sender", value.asInstanceOf[js.Any])
+          
+          inline def setDefault_senderUndefined: Self = StObject.set(x, "default_sender", js.undefined)
           
           inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
           

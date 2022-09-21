@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.Conflict")
 @js.native
-/* private */ class Conflict ()
+/* private */ open class Conflict ()
   extends StObject
      with typings.activexOutlook.Outlook.Conflict {
   
@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Class: OlObjectClass = js.native
   
   /* CompleteClass */
-  override val Item: js.Any = js.native
+  override val Item: Any = js.native
   
   /* CompleteClass */
   override val Name: String = js.native
@@ -28,7 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OutlookDotConflict_typekey: typings.activexOutlook.Outlook.Conflict = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val Session: typings.activexOutlook.Outlook.NameSpace = js.native

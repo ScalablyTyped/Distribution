@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CertificateAuthority extends StObject {
   
   // Required. The base64 encoded string representing the public certificate.
-  var certificate: js.UndefOr[Double] = js.undefined
+  var certificate: js.UndefOr[String] = js.undefined
   
   // The URL of the certificate revocation list.
   var certificateRevocationListUrl: js.UndefOr[NullableOption[String]] = js.undefined
@@ -39,7 +39,7 @@ object CertificateAuthority {
   
   extension [Self <: CertificateAuthority](x: Self) {
     
-    inline def setCertificate(value: Double): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
+    inline def setCertificate(value: String): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     
     inline def setCertificateRevocationListUrl(value: NullableOption[String]): Self = StObject.set(x, "certificateRevocationListUrl", value.asInstanceOf[js.Any])
     

@@ -10,13 +10,13 @@ trait DataSourceSettingsSummaries
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * A list of column settings that specifies custom summaries options per column basis
     *
     */
-  var columnSettings: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var columnSettings: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Key for retrieving data from the summaries response - used only when summaries are remote
@@ -60,11 +60,11 @@ object DataSourceSettingsSummaries {
   
   extension [Self <: DataSourceSettingsSummaries](x: Self) {
     
-    inline def setColumnSettings(value: js.Array[js.Any]): Self = StObject.set(x, "columnSettings", value.asInstanceOf[js.Any])
+    inline def setColumnSettings(value: js.Array[Any]): Self = StObject.set(x, "columnSettings", value.asInstanceOf[js.Any])
     
     inline def setColumnSettingsUndefined: Self = StObject.set(x, "columnSettings", js.undefined)
     
-    inline def setColumnSettingsVarargs(value: js.Any*): Self = StObject.set(x, "columnSettings", js.Array(value :_*))
+    inline def setColumnSettingsVarargs(value: Any*): Self = StObject.set(x, "columnSettings", js.Array(value*))
     
     inline def setSummariesResponseKey(value: String): Self = StObject.set(x, "summariesResponseKey", value.asInstanceOf[js.Any])
     

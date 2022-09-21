@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait QuickDiffProvider extends StObject {
   
   /**
-    * Provide a [uri](#Uri) to the original resource of any given resource uri.
+    * Provide a {@link Uri} to the original resource of any given resource uri.
     *
     * @param uri The uri of the resource open in a text editor.
     * @param token A cancellation token.

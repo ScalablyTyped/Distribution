@@ -14,7 +14,7 @@ object tooltipServiceMod {
   
   @JSImport("playable/dist/src/modules/ui/core/tooltip/tooltip-service", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with TooltipService {
     def this(hasEventEmitter: EventEmitterIEventEmitter) = this()
@@ -64,15 +64,15 @@ object tooltipServiceMod {
     extends StObject
        with ITooltipService {
     
-    /* private */ var _bindEvents: js.Any = js.native
+    /* private */ var _bindEvents: Any = js.native
     
-    /* private */ var _eventEmitter: js.Any = js.native
+    /* private */ var _eventEmitter: Any = js.native
     
-    /* private */ var _tooltip: js.Any = js.native
+    /* private */ var _tooltip: Any = js.native
     
-    /* private */ var _tooltipContainer: js.Any = js.native
+    /* private */ var _tooltipContainer: Any = js.native
     
-    /* private */ var _unbindEvents: js.Any = js.native
+    /* private */ var _unbindEvents: Any = js.native
     
     def clearElement(): Unit = js.native
     

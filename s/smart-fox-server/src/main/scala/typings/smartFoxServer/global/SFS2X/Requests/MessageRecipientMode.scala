@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SFS2X.Requests.MessageRecipientMode")
 @js.native
-class MessageRecipientMode protected ()
+open class MessageRecipientMode protected ()
   extends StObject
      with typings.smartFoxServer.SFS2X.Requests.MessageRecipientMode {
   /**
@@ -14,7 +14,7 @@ class MessageRecipientMode protected ()
     * @param {number} mode   One of the costants contained in this class, describing the recipient mode.
     * @param {any}    target The moderator/administrator message recipient/s, according to the selected recipient mode.
     */
-  def this(mode: Double, target: js.Any) = this()
+  def this(mode: Double, target: Any) = this()
   
   /** @type {number} Returns the selected recipient mode. */
   /* CompleteClass */
@@ -22,7 +22,7 @@ class MessageRecipientMode protected ()
   
   /** @type {any} Returns the moderator/administrator message target, according to the selected recipient mode. */
   /* CompleteClass */
-  var target: js.Any = js.native
+  var target: Any = js.native
 }
 /* static members */
 object MessageRecipientMode {

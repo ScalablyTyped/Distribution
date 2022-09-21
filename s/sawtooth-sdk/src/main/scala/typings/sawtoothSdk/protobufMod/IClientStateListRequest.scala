@@ -45,7 +45,7 @@ object IClientStateListRequest {
     
     inline def setSortingUndefined: Self = StObject.set(x, "sorting", js.undefined)
     
-    inline def setSortingVarargs(value: IClientSortControls*): Self = StObject.set(x, "sorting", js.Array(value :_*))
+    inline def setSortingVarargs(value: IClientSortControls*): Self = StObject.set(x, "sorting", js.Array(value*))
     
     inline def setStateRoot(value: String): Self = StObject.set(x, "stateRoot", value.asInstanceOf[js.Any])
     

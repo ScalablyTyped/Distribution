@@ -10,10 +10,10 @@ Dynamic time warping for Javascript
 | ------------------ | :-------------: |
 | Full name          | dynamic-time-warping |
 | Keywords           | dynamic, time, warping |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 3938 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1473.3333333333333 |
+| # stars            | 42.0 |
 
 ## Links
 - [Homepage](https://github.com/GordonLesti/dynamic-time-warping#readme)

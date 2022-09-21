@@ -9,16 +9,16 @@ object usersRemoteMod {
   
   @JSImport("matrix-appservice-bridge/lib/models/users/remote", "RemoteUser")
   @js.native
-  class RemoteUser protected () extends StObject {
+  open class RemoteUser protected () extends StObject {
     /**
       * @param identifier The unique ID for this user.
       * @param data The serialized key-value data object to assign to this user.
       * @throws If identifier is not supplied.
       */
     def this(id: String) = this()
-    def this(id: String, data: Record[String, js.Any]) = this()
+    def this(id: String, data: Record[String, Any]) = this()
     
-    val data: Record[String, js.Any] = js.native
+    val data: Record[String, Any] = js.native
     
     /**
       * Get the data value for the given key.
@@ -39,7 +39,7 @@ object usersRemoteMod {
       * Serialize all the data about this room, excluding the room ID.
       * @return The serialised data
       */
-    def serialize(): Record[String, js.Any] = js.native
+    def serialize(): Record[String, Any] = js.native
     
     /**
       * Set an arbitrary bridge-specific data value for this room.
@@ -47,6 +47,6 @@ object usersRemoteMod {
       * @param val The data value. This value should be serializable via
       * <code>JSON.stringify(data)</code>.
       */
-    def set(key: String, `val`: js.Any): Unit = js.native
+    def set(key: String, `val`: Any): Unit = js.native
   }
 }

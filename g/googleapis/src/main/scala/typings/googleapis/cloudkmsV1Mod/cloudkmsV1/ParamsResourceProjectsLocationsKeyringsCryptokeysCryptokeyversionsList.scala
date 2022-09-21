@@ -1,9 +1,5 @@
 package typings.googleapis.cloudkmsV1Mod.cloudkmsV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,28 +9,27 @@ trait ParamsResourceProjectsLocationsKeyringsCryptokeysCryptokeyversionsList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
+    * Optional. Only include resources that match the filter in the response. For more information, see [Sorting and filtering list results](https://cloud.google.com/kms/docs/sorting-and-filtering).
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
+  var filter: js.UndefOr[String] = js.undefined
   
   /**
-    * Optional limit on the number of CryptoKeyVersions to include in the
-    * response. Further CryptoKeyVersions can subsequently be obtained by
-    * including the ListCryptoKeyVersionsResponse.next_page_token in a
-    * subsequent request. If unspecified, the server will pick an appropriate
-    * default.
+    * Optional. Specify how the results should be sorted. If not specified, the results will be sorted in the default order. For more information, see [Sorting and filtering list results](https://cloud.google.com/kms/docs/sorting-and-filtering).
+    */
+  var orderBy: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Optional. Optional limit on the number of CryptoKeyVersions to include in the response. Further CryptoKeyVersions can subsequently be obtained by including the ListCryptoKeyVersionsResponse.next_page_token in a subsequent request. If unspecified, the server will pick an appropriate default.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * Optional pagination token, returned earlier via
-    * ListCryptoKeyVersionsResponse.next_page_token.
+    * Optional. Optional pagination token, returned earlier via ListCryptoKeyVersionsResponse.next_page_token.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * Required. The resource name of the CryptoKey to list, in the format
-    * `projects/x/locations/x/keyRings/x/cryptoKeys/x`.
+    * Required. The resource name of the CryptoKey to list, in the format `projects/x/locations/x/keyRings/x/cryptoKeys/x`.
     */
   var parent: js.UndefOr[String] = js.undefined
   
@@ -52,9 +47,13 @@ object ParamsResourceProjectsLocationsKeyringsCryptokeysCryptokeyversionsList {
   
   extension [Self <: ParamsResourceProjectsLocationsKeyringsCryptokeysCryptokeyversionsList](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    
+    inline def setOrderBy(value: String): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
+    
+    inline def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
     
     inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     

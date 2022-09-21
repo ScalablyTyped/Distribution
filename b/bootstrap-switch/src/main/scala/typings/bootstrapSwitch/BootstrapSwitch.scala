@@ -41,9 +41,9 @@ object BootstrapSwitch {
     
     var onColor: js.UndefOr[String] = js.undefined
     
-    var onInit: js.UndefOr[js.Any] = js.undefined
+    var onInit: js.UndefOr[Any] = js.undefined
     
-    var onSwitchChange: js.UndefOr[js.Any] = js.undefined
+    var onSwitchChange: js.UndefOr[Any] = js.undefined
     
     var onText: js.UndefOr[String] = js.undefined
     
@@ -110,11 +110,11 @@ object BootstrapSwitch {
       
       inline def setOnColorUndefined: Self = StObject.set(x, "onColor", js.undefined)
       
-      inline def setOnInit(value: js.Any): Self = StObject.set(x, "onInit", value.asInstanceOf[js.Any])
+      inline def setOnInit(value: Any): Self = StObject.set(x, "onInit", value.asInstanceOf[js.Any])
       
       inline def setOnInitUndefined: Self = StObject.set(x, "onInit", js.undefined)
       
-      inline def setOnSwitchChange(value: js.Any): Self = StObject.set(x, "onSwitchChange", value.asInstanceOf[js.Any])
+      inline def setOnSwitchChange(value: Any): Self = StObject.set(x, "onSwitchChange", value.asInstanceOf[js.Any])
       
       inline def setOnSwitchChangeUndefined: Self = StObject.set(x, "onSwitchChange", js.undefined)
       
@@ -183,8 +183,8 @@ object BootstrapSwitch {
     def size(size: String): JQuery = js.native
     
     def state(): Boolean = js.native
-    def state(value: js.Any): JQuery = js.native
-    def state(value: js.Any, skip: Boolean): JQuery = js.native
+    def state(value: Any): JQuery = js.native
+    def state(value: Any, skip: Boolean): JQuery = js.native
     
     def toggleAnimate(): JQuery = js.native
     

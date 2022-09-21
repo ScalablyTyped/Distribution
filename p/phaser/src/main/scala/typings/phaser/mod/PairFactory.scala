@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("matter", "PairFactory")
 @js.native
-class PairFactory ()
+open class PairFactory ()
   extends StObject
      with typings.phaser.MatterJS.PairFactory {
   

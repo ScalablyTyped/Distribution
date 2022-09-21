@@ -9,7 +9,7 @@ object commonMod {
   
   @JSImport("webgme/common", "Pointer")
   @js.native
-  class Pointer ()
+  open class Pointer ()
     extends StObject
        with typings.webgme.GmeCommon.Pointer {
     

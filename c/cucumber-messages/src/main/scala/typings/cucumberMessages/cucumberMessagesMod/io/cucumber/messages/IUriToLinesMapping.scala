@@ -13,7 +13,7 @@ trait IUriToLinesMapping extends StObject {
   /** UriToLinesMapping lines */
   var lines: js.UndefOr[
     (js.Array[
-      Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
+      Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any)
     ]) | Null
   ] = js.undefined
 }
@@ -34,7 +34,7 @@ object IUriToLinesMapping {
     
     inline def setLines(
       value: js.Array[
-          Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
+          Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any)
         ]
     ): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
@@ -43,7 +43,7 @@ object IUriToLinesMapping {
     inline def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
     
     inline def setLinesVarargs(
-      value: (Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any))*
-    ): Self = StObject.set(x, "lines", js.Array(value :_*))
+      value: (Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any))*
+    ): Self = StObject.set(x, "lines", js.Array(value*))
   }
 }

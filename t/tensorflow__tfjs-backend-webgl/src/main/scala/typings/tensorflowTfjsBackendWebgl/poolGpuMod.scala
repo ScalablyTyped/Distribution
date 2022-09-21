@@ -13,37 +13,21 @@ object poolGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/pool_gpu", "Pool2DProgram")
   @js.native
-  class Pool2DProgram protected ()
+  open class Pool2DProgram protected ()
     extends StObject
        with GPGPUProgram {
-    def this(convInfo: Conv2DInfo, poolType: avg, computePositions: Boolean) = this()
-    def this(convInfo: Conv2DInfo, poolType: max, computePositions: Boolean) = this()
-    def this(convInfo: Conv2DInfo, poolType: avg, computePositions: Boolean, flattenPositions: Boolean) = this()
-    def this(convInfo: Conv2DInfo, poolType: max, computePositions: Boolean, flattenPositions: Boolean) = this()
+    def this(convInfo: Conv2DInfo, poolType: max | avg, computePositions: Boolean) = this()
+    def this(convInfo: Conv2DInfo, poolType: max | avg, computePositions: Boolean, flattenPositions: Boolean) = this()
     def this(
       convInfo: Conv2DInfo,
-      poolType: avg,
+      poolType: max | avg,
       computePositions: Boolean,
       flattenPositions: Boolean,
       includeBatchInIndex: Boolean
     ) = this()
     def this(
       convInfo: Conv2DInfo,
-      poolType: avg,
-      computePositions: Boolean,
-      flattenPositions: Unit,
-      includeBatchInIndex: Boolean
-    ) = this()
-    def this(
-      convInfo: Conv2DInfo,
-      poolType: max,
-      computePositions: Boolean,
-      flattenPositions: Boolean,
-      includeBatchInIndex: Boolean
-    ) = this()
-    def this(
-      convInfo: Conv2DInfo,
-      poolType: max,
+      poolType: max | avg,
       computePositions: Boolean,
       flattenPositions: Unit,
       includeBatchInIndex: Boolean
@@ -61,37 +45,21 @@ object poolGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/pool_gpu", "Pool3DProgram")
   @js.native
-  class Pool3DProgram protected ()
+  open class Pool3DProgram protected ()
     extends StObject
        with GPGPUProgram {
-    def this(convInfo: Conv3DInfo, poolType: avg, computePositions: Boolean) = this()
-    def this(convInfo: Conv3DInfo, poolType: max, computePositions: Boolean) = this()
-    def this(convInfo: Conv3DInfo, poolType: avg, computePositions: Boolean, flattenPositions: Boolean) = this()
-    def this(convInfo: Conv3DInfo, poolType: max, computePositions: Boolean, flattenPositions: Boolean) = this()
+    def this(convInfo: Conv3DInfo, poolType: max | avg, computePositions: Boolean) = this()
+    def this(convInfo: Conv3DInfo, poolType: max | avg, computePositions: Boolean, flattenPositions: Boolean) = this()
     def this(
       convInfo: Conv3DInfo,
-      poolType: avg,
+      poolType: max | avg,
       computePositions: Boolean,
       flattenPositions: Boolean,
       includeBatchInIndex: Boolean
     ) = this()
     def this(
       convInfo: Conv3DInfo,
-      poolType: avg,
-      computePositions: Boolean,
-      flattenPositions: Unit,
-      includeBatchInIndex: Boolean
-    ) = this()
-    def this(
-      convInfo: Conv3DInfo,
-      poolType: max,
-      computePositions: Boolean,
-      flattenPositions: Boolean,
-      includeBatchInIndex: Boolean
-    ) = this()
-    def this(
-      convInfo: Conv3DInfo,
-      poolType: max,
+      poolType: max | avg,
       computePositions: Boolean,
       flattenPositions: Unit,
       includeBatchInIndex: Boolean

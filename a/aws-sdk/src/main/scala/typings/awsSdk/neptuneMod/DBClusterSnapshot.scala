@@ -19,7 +19,7 @@ trait DBClusterSnapshot extends StObject {
   /**
     * Specifies the time when the DB cluster was created, in Universal Coordinated Time (UTC).
     */
-  var ClusterCreateTime: js.UndefOr[TStamp] = js.undefined
+  var ClusterCreateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Specifies the DB cluster identifier of the DB cluster that this DB cluster snapshot was created from.
@@ -47,12 +47,12 @@ trait DBClusterSnapshot extends StObject {
   var EngineVersion: js.UndefOr[String] = js.undefined
   
   /**
-    * True if mapping of AWS Identity and Access Management (IAM) accounts to database accounts is enabled, and otherwise false.
+    * True if mapping of Amazon Identity and Access Management (IAM) accounts to database accounts is enabled, and otherwise false.
     */
   var IAMDatabaseAuthenticationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * If StorageEncrypted is true, the AWS KMS key identifier for the encrypted DB cluster snapshot.
+    * If StorageEncrypted is true, the Amazon KMS key identifier for the encrypted DB cluster snapshot.
     */
   var KmsKeyId: js.UndefOr[String] = js.undefined
   
@@ -62,7 +62,7 @@ trait DBClusterSnapshot extends StObject {
   var LicenseModel: js.UndefOr[String] = js.undefined
   
   /**
-    * Provides the master username for the DB cluster snapshot.
+    * Not supported by Neptune.
     */
   var MasterUsername: js.UndefOr[String] = js.undefined
   
@@ -79,7 +79,7 @@ trait DBClusterSnapshot extends StObject {
   /**
     * Provides the time when the snapshot was taken, in Universal Coordinated Time (UTC).
     */
-  var SnapshotCreateTime: js.UndefOr[TStamp] = js.undefined
+  var SnapshotCreateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Provides the type of the DB cluster snapshot.
@@ -123,9 +123,9 @@ object DBClusterSnapshot {
     
     inline def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
     
-    inline def setAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
+    inline def setAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "AvailabilityZones", js.Array(value*))
     
-    inline def setClusterCreateTime(value: TStamp): Self = StObject.set(x, "ClusterCreateTime", value.asInstanceOf[js.Any])
+    inline def setClusterCreateTime(value: js.Date): Self = StObject.set(x, "ClusterCreateTime", value.asInstanceOf[js.Any])
     
     inline def setClusterCreateTimeUndefined: Self = StObject.set(x, "ClusterCreateTime", js.undefined)
     
@@ -173,7 +173,7 @@ object DBClusterSnapshot {
     
     inline def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
     
-    inline def setSnapshotCreateTime(value: TStamp): Self = StObject.set(x, "SnapshotCreateTime", value.asInstanceOf[js.Any])
+    inline def setSnapshotCreateTime(value: js.Date): Self = StObject.set(x, "SnapshotCreateTime", value.asInstanceOf[js.Any])
     
     inline def setSnapshotCreateTimeUndefined: Self = StObject.set(x, "SnapshotCreateTime", js.undefined)
     

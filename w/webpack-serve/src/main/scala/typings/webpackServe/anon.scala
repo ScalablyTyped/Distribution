@@ -10,22 +10,39 @@ object anon {
   
   trait Compiler extends StObject {
     
-    var compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any
+    var compiler: typings.webpack.mod.Compiler
   }
   object Compiler {
     
-    inline def apply(
-      compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any
-    ): Compiler = {
+    inline def apply(compiler: typings.webpack.mod.Compiler): Compiler = {
       val __obj = js.Dynamic.literal(compiler = compiler.asInstanceOf[js.Any])
       __obj.asInstanceOf[Compiler]
     }
     
     extension [Self <: Compiler](x: Self) {
       
-      inline def setCompiler(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any
-      ): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
+      inline def setCompiler(value: typings.webpack.mod.Compiler): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait CompilerStats extends StObject {
+    
+    var compiler: typings.webpack.mod.Compiler
+    
+    var stats: Any
+  }
+  object CompilerStats {
+    
+    inline def apply(compiler: typings.webpack.mod.Compiler, stats: Any): CompilerStats = {
+      val __obj = js.Dynamic.literal(compiler = compiler.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CompilerStats]
+    }
+    
+    extension [Self <: CompilerStats](x: Self) {
+      
+      inline def setCompiler(value: typings.webpack.mod.Compiler): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
+      
+      inline def setStats(value: Any): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     }
   }
   
@@ -52,27 +69,22 @@ object anon {
   
   trait Stats extends StObject {
     
-    var compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any
+    var compiler: typings.webpack.mod.Compiler
     
-    var stats: js.Any
+    var stats: typings.webpack.mod.Stats
   }
   object Stats {
     
-    inline def apply(
-      compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any,
-      stats: js.Any
-    ): Stats = {
+    inline def apply(compiler: typings.webpack.mod.Compiler, stats: typings.webpack.mod.Stats): Stats = {
       val __obj = js.Dynamic.literal(compiler = compiler.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any])
       __obj.asInstanceOf[Stats]
     }
     
     extension [Self <: Stats](x: Self) {
       
-      inline def setCompiler(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any
-      ): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
+      inline def setCompiler(value: typings.webpack.mod.Compiler): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
       
-      inline def setStats(value: js.Any): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+      inline def setStats(value: typings.webpack.mod.Stats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The response when updating a range of values by a data filter in a
-  * spreadsheet.
-  */
 trait SchemaUpdateValuesByDataFilterResponse extends StObject {
   
   /**
@@ -18,29 +14,27 @@ trait SchemaUpdateValuesByDataFilterResponse extends StObject {
   /**
     * The number of cells updated.
     */
-  var updatedCells: js.UndefOr[Double] = js.undefined
+  var updatedCells: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * The number of columns where at least one cell in the column was updated.
     */
-  var updatedColumns: js.UndefOr[Double] = js.undefined
+  var updatedColumns: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * The values of the cells in the range matched by the dataFilter after all
-    * updates were applied. This is only included if the request&#39;s
-    * `includeValuesInResponse` field was `true`.
+    * The values of the cells in the range matched by the dataFilter after all updates were applied. This is only included if the request's `includeValuesInResponse` field was `true`.
     */
   var updatedData: js.UndefOr[SchemaValueRange] = js.undefined
   
   /**
-    * The range (in A1 notation) that updates were applied to.
+    * The range (in [A1 notation](/sheets/api/guides/concepts#cell)) that updates were applied to.
     */
-  var updatedRange: js.UndefOr[String] = js.undefined
+  var updatedRange: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The number of rows where at least one cell in the row was updated.
     */
-  var updatedRows: js.UndefOr[Double] = js.undefined
+  var updatedRows: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaUpdateValuesByDataFilterResponse {
   
@@ -57,9 +51,13 @@ object SchemaUpdateValuesByDataFilterResponse {
     
     inline def setUpdatedCells(value: Double): Self = StObject.set(x, "updatedCells", value.asInstanceOf[js.Any])
     
+    inline def setUpdatedCellsNull: Self = StObject.set(x, "updatedCells", null)
+    
     inline def setUpdatedCellsUndefined: Self = StObject.set(x, "updatedCells", js.undefined)
     
     inline def setUpdatedColumns(value: Double): Self = StObject.set(x, "updatedColumns", value.asInstanceOf[js.Any])
+    
+    inline def setUpdatedColumnsNull: Self = StObject.set(x, "updatedColumns", null)
     
     inline def setUpdatedColumnsUndefined: Self = StObject.set(x, "updatedColumns", js.undefined)
     
@@ -69,9 +67,13 @@ object SchemaUpdateValuesByDataFilterResponse {
     
     inline def setUpdatedRange(value: String): Self = StObject.set(x, "updatedRange", value.asInstanceOf[js.Any])
     
+    inline def setUpdatedRangeNull: Self = StObject.set(x, "updatedRange", null)
+    
     inline def setUpdatedRangeUndefined: Self = StObject.set(x, "updatedRange", js.undefined)
     
     inline def setUpdatedRows(value: Double): Self = StObject.set(x, "updatedRows", value.asInstanceOf[js.Any])
+    
+    inline def setUpdatedRowsNull: Self = StObject.set(x, "updatedRows", null)
     
     inline def setUpdatedRowsUndefined: Self = StObject.set(x, "updatedRows", js.undefined)
   }

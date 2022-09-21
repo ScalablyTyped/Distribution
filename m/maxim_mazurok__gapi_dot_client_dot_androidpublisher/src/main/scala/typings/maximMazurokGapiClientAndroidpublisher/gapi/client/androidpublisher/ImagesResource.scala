@@ -1,7 +1,7 @@
 package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublisher
 
 import typings.gapiClient.gapi.client.Request
-import typings.maximMazurokGapiClientAndroidpublisher.anon.Fields
+import typings.maximMazurokGapiClientAndroidpublisher.anon.ImageId
 import typings.maximMazurokGapiClientAndroidpublisher.anon.ImageType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +12,7 @@ trait ImagesResource extends StObject {
   
   /** Deletes the image (specified by id) from the edit. */
   def delete(): Request[Unit] = js.native
-  def delete(request: Fields): Request[Unit] = js.native
+  def delete(request: ImageId): Request[Unit] = js.native
   
   /** Deletes all images for the specified language and image type. Returns an empty response if no images are found. */
   def deleteall(): Request[ImagesDeleteAllResponse] = js.native

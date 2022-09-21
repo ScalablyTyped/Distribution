@@ -1,13 +1,13 @@
 package typings.wdioProtocols
 
-import typings.wdioProtocols.WDIOProtocols.CommandEndpoint
+import typings.wdioProtocols.typesMod.CommandEndpoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  /* Inlined std.Record<@wdio/protocols.WDIOProtocols.CommandMethod, @wdio/protocols.WDIOProtocols.CommandEndpoint> */
+  /* Inlined std.Record<@wdio/protocols.@wdio/protocols/build/types.CommandMethod, @wdio/protocols.@wdio/protocols/build/types.CommandEndpoint> */
   trait RecordCommandMethodComman extends StObject {
     
     var DELETE: CommandEndpoint
@@ -33,7 +33,7 @@ object anon {
     }
   }
   
-  /* Inlined std.Record<@wdio/protocols.WDIOProtocols.Environments, string> */
+  /* Inlined std.Record<@wdio/protocols.@wdio/protocols/build/types.Environments, string> */
   trait RecordEnvironmentsstring extends StObject {
     
     var UIAutomation: String

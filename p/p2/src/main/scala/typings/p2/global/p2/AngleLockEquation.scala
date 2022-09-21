@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("p2.AngleLockEquation")
 @js.native
-class AngleLockEquation protected ()
+open class AngleLockEquation protected ()
   extends typings.p2.mod.AngleLockEquation {
   def this(bodyA: typings.p2.mod.Body, bodyB: typings.p2.mod.Body) = this()
   def this(bodyA: typings.p2.mod.Body, bodyB: typings.p2.mod.Body, options: AngleLockEquationOptions) = this()

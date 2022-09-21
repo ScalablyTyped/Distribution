@@ -12,7 +12,7 @@ trait CreateRequestValidatorRequest extends StObject {
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * [Required] The string identifier of the associated RestApi.
+    * The string identifier of the associated RestApi.
     */
   var restApiId: String
   

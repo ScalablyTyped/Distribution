@@ -23,8 +23,8 @@ trait Recordset extends StObject {
   var ActiveConnection: String | Connection | Null = js.native
   
   def AddNew(): Unit = js.native
-  def AddNew(Field: String, Value: js.Any): Unit = js.native
-  def AddNew(Fields: SafeArray[String | Double], Values: SafeArray[js.Any]): Unit = js.native
+  def AddNew(Field: String, Value: Any): Unit = js.native
+  def AddNew(Fields: SafeArray[String | Double], Values: SafeArray[Any]): Unit = js.native
   
   val BOF: Boolean = js.native
   
@@ -46,7 +46,7 @@ trait Recordset extends StObject {
   
   def Close(): Unit = js.native
   
-  def Collect(Index: js.Any): js.Any = js.native
+  def Collect(Index: Any): Any = js.native
   
   def CompareBookmarks(Bookmark1: Bookmark, Bookmark2: Bookmark): CompareEnum = js.native
   
@@ -56,7 +56,7 @@ trait Recordset extends StObject {
   
   var DataMember: String = js.native
   
-  var DataSource: js.Any = js.native
+  var DataSource: Any = js.native
   
   /** @param AffectRecords [AffectRecords=1] */
   def Delete(): Unit = js.native
@@ -93,30 +93,30 @@ trait Recordset extends StObject {
   def Find(Criteria: String, SkipRecords: Unit, SearchDirection: SearchDirectionEnum, Start: Bookmark): Unit = js.native
   
   /** @param Rows [Rows=-1] */
-  def GetRows(): SafeArray[js.Any] = js.native
-  def GetRows(Rows: Double): SafeArray[js.Any] = js.native
-  def GetRows(Rows: Double, Start: String): SafeArray[js.Any] = js.native
-  def GetRows(Rows: Double, Start: String, Fields: String): SafeArray[js.Any] = js.native
-  def GetRows(Rows: Double, Start: String, Fields: SafeArray[String | Double]): SafeArray[js.Any] = js.native
-  def GetRows(Rows: Double, Start: Unit, Fields: String): SafeArray[js.Any] = js.native
-  def GetRows(Rows: Double, Start: Unit, Fields: SafeArray[String | Double]): SafeArray[js.Any] = js.native
-  def GetRows(Rows: Double, Start: Bookmark): SafeArray[js.Any] = js.native
-  def GetRows(Rows: Double, Start: BookmarkEnum): SafeArray[js.Any] = js.native
-  def GetRows(Rows: Double, Start: BookmarkEnum, Fields: String): SafeArray[js.Any] = js.native
-  def GetRows(Rows: Double, Start: BookmarkEnum, Fields: SafeArray[String | Double]): SafeArray[js.Any] = js.native
-  def GetRows(Rows: Double, Start: Bookmark, Fields: String): SafeArray[js.Any] = js.native
-  def GetRows(Rows: Double, Start: Bookmark, Fields: SafeArray[String | Double]): SafeArray[js.Any] = js.native
-  def GetRows(Rows: Unit, Start: String): SafeArray[js.Any] = js.native
-  def GetRows(Rows: Unit, Start: String, Fields: String): SafeArray[js.Any] = js.native
-  def GetRows(Rows: Unit, Start: String, Fields: SafeArray[String | Double]): SafeArray[js.Any] = js.native
-  def GetRows(Rows: Unit, Start: Unit, Fields: String): SafeArray[js.Any] = js.native
-  def GetRows(Rows: Unit, Start: Unit, Fields: SafeArray[String | Double]): SafeArray[js.Any] = js.native
-  def GetRows(Rows: Unit, Start: Bookmark): SafeArray[js.Any] = js.native
-  def GetRows(Rows: Unit, Start: BookmarkEnum): SafeArray[js.Any] = js.native
-  def GetRows(Rows: Unit, Start: BookmarkEnum, Fields: String): SafeArray[js.Any] = js.native
-  def GetRows(Rows: Unit, Start: BookmarkEnum, Fields: SafeArray[String | Double]): SafeArray[js.Any] = js.native
-  def GetRows(Rows: Unit, Start: Bookmark, Fields: String): SafeArray[js.Any] = js.native
-  def GetRows(Rows: Unit, Start: Bookmark, Fields: SafeArray[String | Double]): SafeArray[js.Any] = js.native
+  def GetRows(): SafeArray[Any] = js.native
+  def GetRows(Rows: Double): SafeArray[Any] = js.native
+  def GetRows(Rows: Double, Start: String): SafeArray[Any] = js.native
+  def GetRows(Rows: Double, Start: String, Fields: String): SafeArray[Any] = js.native
+  def GetRows(Rows: Double, Start: String, Fields: SafeArray[String | Double]): SafeArray[Any] = js.native
+  def GetRows(Rows: Double, Start: Unit, Fields: String): SafeArray[Any] = js.native
+  def GetRows(Rows: Double, Start: Unit, Fields: SafeArray[String | Double]): SafeArray[Any] = js.native
+  def GetRows(Rows: Double, Start: Bookmark): SafeArray[Any] = js.native
+  def GetRows(Rows: Double, Start: BookmarkEnum): SafeArray[Any] = js.native
+  def GetRows(Rows: Double, Start: BookmarkEnum, Fields: String): SafeArray[Any] = js.native
+  def GetRows(Rows: Double, Start: BookmarkEnum, Fields: SafeArray[String | Double]): SafeArray[Any] = js.native
+  def GetRows(Rows: Double, Start: Bookmark, Fields: String): SafeArray[Any] = js.native
+  def GetRows(Rows: Double, Start: Bookmark, Fields: SafeArray[String | Double]): SafeArray[Any] = js.native
+  def GetRows(Rows: Unit, Start: String): SafeArray[Any] = js.native
+  def GetRows(Rows: Unit, Start: String, Fields: String): SafeArray[Any] = js.native
+  def GetRows(Rows: Unit, Start: String, Fields: SafeArray[String | Double]): SafeArray[Any] = js.native
+  def GetRows(Rows: Unit, Start: Unit, Fields: String): SafeArray[Any] = js.native
+  def GetRows(Rows: Unit, Start: Unit, Fields: SafeArray[String | Double]): SafeArray[Any] = js.native
+  def GetRows(Rows: Unit, Start: Bookmark): SafeArray[Any] = js.native
+  def GetRows(Rows: Unit, Start: BookmarkEnum): SafeArray[Any] = js.native
+  def GetRows(Rows: Unit, Start: BookmarkEnum, Fields: String): SafeArray[Any] = js.native
+  def GetRows(Rows: Unit, Start: BookmarkEnum, Fields: SafeArray[String | Double]): SafeArray[Any] = js.native
+  def GetRows(Rows: Unit, Start: Bookmark, Fields: String): SafeArray[Any] = js.native
+  def GetRows(Rows: Unit, Start: Bookmark, Fields: SafeArray[String | Double]): SafeArray[Any] = js.native
   
   /**
     * @param StringFormat [StringFormat=2]
@@ -466,8 +466,8 @@ trait Recordset extends StObject {
     *
     * For a multi-column index, pass in a SafeArray containing the multiple values to seek in the columns of the index.
     */
-  def Seek(KeyValues: js.Any): Unit = js.native
-  def Seek(KeyValues: js.Any, SeekOption: SeekEnum): Unit = js.native
+  def Seek(KeyValues: Any): Unit = js.native
+  def Seek(KeyValues: Any, SeekOption: SeekEnum): Unit = js.native
   
   var Sort: String = js.native
   
@@ -482,8 +482,8 @@ trait Recordset extends StObject {
   def Supports(CursorOptions: CursorOptionEnum): Boolean = js.native
   
   def Update(): Unit = js.native
-  def Update(Field: String, Value: js.Any): Unit = js.native
-  def Update(Fields: SafeArray[String | Double], Values: SafeArray[js.Any]): Unit = js.native
+  def Update(Field: String, Value: Any): Unit = js.native
+  def Update(Fields: SafeArray[String | Double], Values: SafeArray[Any]): Unit = js.native
   
   /** @param AffectRecords [AffectRecords=3] */
   def UpdateBatch(): Unit = js.native

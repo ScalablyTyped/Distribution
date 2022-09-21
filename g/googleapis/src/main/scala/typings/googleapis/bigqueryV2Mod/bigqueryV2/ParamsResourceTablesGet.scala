@@ -1,9 +1,5 @@
 package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,11 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ParamsResourceTablesGet
   extends StObject
      with StandardParameters {
-  
-  /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Dataset ID of the requested table
@@ -28,8 +19,7 @@ trait ParamsResourceTablesGet
   var projectId: js.UndefOr[String] = js.undefined
   
   /**
-    * List of fields to return (comma-separated). If unspecified, all fields
-    * are returned
+    * List of fields to return (comma-separated). If unspecified, all fields are returned
     */
   var selectedFields: js.UndefOr[String] = js.undefined
   
@@ -37,6 +27,11 @@ trait ParamsResourceTablesGet
     * Table ID of the requested table
     */
   var tableId: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Specifies the view that determines which table information is returned. By default, basic table information and storage statistics (STORAGE_STATS) are returned.
+    */
+  var view: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceTablesGet {
   
@@ -46,10 +41,6 @@ object ParamsResourceTablesGet {
   }
   
   extension [Self <: ParamsResourceTablesGet](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setDatasetId(value: String): Self = StObject.set(x, "datasetId", value.asInstanceOf[js.Any])
     
@@ -66,5 +57,9 @@ object ParamsResourceTablesGet {
     inline def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
     
     inline def setTableIdUndefined: Self = StObject.set(x, "tableId", js.undefined)
+    
+    inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

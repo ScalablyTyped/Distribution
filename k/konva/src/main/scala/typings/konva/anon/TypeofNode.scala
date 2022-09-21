@@ -2,7 +2,6 @@ package typings.konva.anon
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.konva.nodeMod.Node
 import typings.konva.nodeMod.NodeConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,15 +10,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TypeofNode
   extends StObject
-     with Instantiable0[Node[NodeConfig]]
+     with Instantiable0[typings.konva.nodeMod.Node[NodeConfig]]
      with Instantiable1[
-      /* import warning: RewrittenClass.unapply cls was tparam Config */ /* config */ js.Any, 
-      Node[NodeConfig]
+      /* import warning: RewrittenClass.unapply cls was tparam Config */ /* config */ Any, 
+      typings.konva.nodeMod.Node[NodeConfig]
     ] {
   
-  def _createNode(obj: js.Any): js.Any = js.native
-  def _createNode(obj: js.Any, container: js.Any): js.Any = js.native
+  def _createNode(obj: Any): Any = js.native
+  def _createNode(obj: Any, container: Any): Any = js.native
   
-  def create(data: js.Any): js.Any = js.native
-  def create(data: js.Any, container: js.Any): js.Any = js.native
+  def create(data: Any): Any = js.native
+  def create(data: Any, container: Any): Any = js.native
 }

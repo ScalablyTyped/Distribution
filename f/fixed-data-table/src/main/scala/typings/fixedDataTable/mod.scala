@@ -2,8 +2,9 @@ package typings.fixedDataTable
 
 import typings.react.mod.Component
 import typings.react.mod.HTMLAttributes
-import typings.react.mod.Props
+import typings.react.mod.LegacyRef
 import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
@@ -18,50 +19,50 @@ object mod {
   
   @JSImport("fixed-data-table", "Cell")
   @js.native
-  class Cell protected ()
-    extends Component[CellProps, js.Object, js.Any] {
+  open class Cell protected ()
+    extends Component[CellProps, js.Object, Any] {
     def this(props: CellProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: CellProps, context: js.Any) = this()
+    def this(props: CellProps, context: Any) = this()
   }
   
   @JSImport("fixed-data-table", "Column")
   @js.native
-  class Column protected ()
-    extends Component[ColumnProps, js.Object, js.Any] {
+  open class Column protected ()
+    extends Component[ColumnProps, js.Object, Any] {
     def this(props: ColumnProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ColumnProps, context: js.Any) = this()
+    def this(props: ColumnProps, context: Any) = this()
   }
   
   @JSImport("fixed-data-table", "ColumnGroup")
   @js.native
-  class ColumnGroup protected ()
-    extends Component[ColumnGroupProps, js.Object, js.Any] {
+  open class ColumnGroup protected ()
+    extends Component[ColumnGroupProps, js.Object, Any] {
     def this(props: ColumnGroupProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ColumnGroupProps, context: js.Any) = this()
+    def this(props: ColumnGroupProps, context: Any) = this()
   }
   
   @JSImport("fixed-data-table", "Table")
   @js.native
-  class Table protected ()
-    extends Component[TableProps, js.Object, js.Any] {
+  open class Table protected ()
+    extends Component[TableProps, js.Object, Any] {
     def this(props: TableProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: TableProps, context: js.Any) = this()
+    def this(props: TableProps, context: Any) = this()
   }
   
   @JSImport("fixed-data-table", "version")
@@ -122,15 +123,15 @@ object mod {
     }
   }
   
-  trait ColumnGroupProps
-    extends StObject
-       with Props[ColumnGroup] {
+  trait ColumnGroupProps extends StObject {
     
     /**
       * The horizontal alignment of the table cell content.
       * 'left', 'center', 'right'
       */
     var align: js.UndefOr[String] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * Controls if the column group is fixed when scrolling in the X
@@ -161,6 +162,8 @@ object mod {
       * object as the first argument.
       */
     var header: String | ReactElement | (js.Function1[/* props */ CellProps, String | ReactElement])
+    
+    var ref: js.UndefOr[LegacyRef[ColumnGroup]] = js.undefined
   }
   object ColumnGroupProps {
     
@@ -175,6 +178,10 @@ object mod {
       
       inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setFixed(value: Boolean): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
       
       inline def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
@@ -182,15 +189,21 @@ object mod {
       inline def setHeader(value: String | ReactElement | (js.Function1[/* props */ CellProps, String | ReactElement])): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
       inline def setHeaderFunction1(value: /* props */ CellProps => String | ReactElement): Self = StObject.set(x, "header", js.Any.fromFunction1(value))
+      
+      inline def setRef(value: LegacyRef[ColumnGroup]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      
+      inline def setRefFunction1(value: /* instance */ ColumnGroup | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     }
   }
   
   /**
     * Component that defines the attributes of table column.
     */
-  trait ColumnProps
-    extends StObject
-       with Props[Column] {
+  trait ColumnProps extends StObject {
     
     /**
       * The horizontal alignment of the table cell content.
@@ -239,6 +252,8 @@ object mod {
     var cell: js.UndefOr[
         String | ReactElement | (js.Function1[/* props */ CellProps, String | ReactElement])
       ] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * This is used to uniquely identify the column, and is not
@@ -337,6 +352,8 @@ object mod {
       */
     var minWidth: js.UndefOr[Double] = js.undefined
     
+    var ref: js.UndefOr[LegacyRef[Column]] = js.undefined
+    
     /**
       * The pixel width of the column.
       */
@@ -364,6 +381,10 @@ object mod {
       inline def setCellFunction1(value: /* props */ CellProps => String | ReactElement): Self = StObject.set(x, "cell", js.Any.fromFunction1(value))
       
       inline def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setColumnKey(value: String | Double): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
       
@@ -401,13 +422,21 @@ object mod {
       
       inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
       
+      inline def setRef(value: LegacyRef[Column]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      
+      inline def setRefFunction1(value: /* instance */ Column | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+      
       inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
-  trait TableProps
-    extends StObject
-       with Props[Table] {
+  trait TableProps extends StObject {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * Pixel height of the footer.
@@ -545,6 +574,8 @@ object mod {
       */
     var ownerHeight: js.UndefOr[Double] = js.undefined
     
+    var ref: js.UndefOr[LegacyRef[Table]] = js.undefined
+    
     /**
       * To get any additional CSS classes that should be added to
       *  a row, rowClassNameGetter(index) is called.
@@ -607,6 +638,10 @@ object mod {
     }
     
     extension [Self <: TableProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setFooterHeight(value: Double): Self = StObject.set(x, "footerHeight", value.asInstanceOf[js.Any])
       
@@ -679,6 +714,14 @@ object mod {
       inline def setOwnerHeight(value: Double): Self = StObject.set(x, "ownerHeight", value.asInstanceOf[js.Any])
       
       inline def setOwnerHeightUndefined: Self = StObject.set(x, "ownerHeight", js.undefined)
+      
+      inline def setRef(value: LegacyRef[Table]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      
+      inline def setRefFunction1(value: /* instance */ Table | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       
       inline def setRowClassNameGetter(value: /* index */ Double => String): Self = StObject.set(x, "rowClassNameGetter", js.Any.fromFunction1(value))
       

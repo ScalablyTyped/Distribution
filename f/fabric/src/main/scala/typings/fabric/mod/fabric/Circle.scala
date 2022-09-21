@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("fabric", "fabric.Circle")
 @js.native
-class Circle ()
+open class Circle ()
   extends typings.fabric.fabricImplMod.Circle {
   def this(options: ICircleOptions) = this()
 }
@@ -38,5 +38,5 @@ object Circle {
     * Returns Circle instance from an object representation
     * @param object Object to create an instance from
     */
-  inline def fromObject(`object`: js.Any): typings.fabric.fabricImplMod.Circle = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.fabric.fabricImplMod.Circle]
+  inline def fromObject(`object`: Any): typings.fabric.fabricImplMod.Circle = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.fabric.fabricImplMod.Circle]
 }

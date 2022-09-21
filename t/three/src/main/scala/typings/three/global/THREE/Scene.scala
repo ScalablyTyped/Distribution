@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("THREE.Scene")
 @js.native
-class Scene ()
+open class Scene ()
   extends typings.three.mod.Scene

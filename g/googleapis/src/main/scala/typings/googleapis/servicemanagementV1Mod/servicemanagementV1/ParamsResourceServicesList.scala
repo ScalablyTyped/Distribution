@@ -1,9 +1,5 @@
 package typings.googleapis.servicemanagementV1Mod.servicemanagementV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,26 +9,17 @@ trait ParamsResourceServicesList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Include services consumed by the specified consumer.  The Google Service
-    * Management implementation accepts the following forms: -
-    * project:<project_id>
+    * Include services consumed by the specified consumer. The Google Service Management implementation accepts the following forms: - project:
     */
   var consumerId: js.UndefOr[String] = js.undefined
   
   /**
-    * The max number of items to include in the response list. Page size is 50
-    * if not specified. Maximum value is 100.
+    * The max number of items to include in the response list. Page size is 50 if not specified. Maximum value is 500.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * Token identifying which result to start with; returned by a previous list
-    * call.
+    * Token identifying which result to start with; returned by a previous list call.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
@@ -49,10 +36,6 @@ object ParamsResourceServicesList {
   }
   
   extension [Self <: ParamsResourceServicesList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setConsumerId(value: String): Self = StObject.set(x, "consumerId", value.asInstanceOf[js.Any])
     

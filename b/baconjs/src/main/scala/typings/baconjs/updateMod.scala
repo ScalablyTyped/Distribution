@@ -12,9 +12,9 @@ object updateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def update[Out](initial: Out, patterns: UpdatePattern[Out]*): Property[Out] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(initial.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any])).asInstanceOf[Property[Out]]
+  inline def update[Out](initial: Out, patterns: UpdatePattern[Out]*): Property[Out] = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(List(initial.asInstanceOf[js.Any]).`++`(patterns.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Property[Out]]
   
-  type UpdatePattern[O] = (UpdatePattern1[js.Any, O]) | (UpdatePattern2[js.Any, js.Any, O]) | (UpdatePattern3[js.Any, js.Any, js.Any, O]) | (UpdatePattern4[js.Any, js.Any, js.Any, js.Any, O]) | (UpdatePattern5[js.Any, js.Any, js.Any, js.Any, js.Any, O]) | (UpdatePattern6[js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, O])
+  type UpdatePattern[O] = (UpdatePattern1[Any, O]) | (UpdatePattern2[Any, Any, O]) | (UpdatePattern3[Any, Any, Any, O]) | (UpdatePattern4[Any, Any, Any, Any, O]) | (UpdatePattern5[Any, Any, Any, Any, Any, O]) | (UpdatePattern6[Any, Any, Any, Any, Any, Any, O])
   
   type UpdatePattern1[I1, O] = js.Tuple2[default[I1], O | (js.Function2[/* acc */ O, /* a */ I1, O])]
   

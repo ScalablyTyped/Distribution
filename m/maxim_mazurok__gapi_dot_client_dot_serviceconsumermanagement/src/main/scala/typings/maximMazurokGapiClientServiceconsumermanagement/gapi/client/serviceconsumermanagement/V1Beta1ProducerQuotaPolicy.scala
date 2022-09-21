@@ -21,7 +21,7 @@ trait V1Beta1ProducerQuotaPolicy extends StObject {
   var dimensions: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientServiceconsumermanagement.maximMazurokGapiClientServiceconsumermanagementStrings.V1Beta1ProducerQuotaPolicy & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientServiceconsumermanagement.maximMazurokGapiClientServiceconsumermanagementStrings.V1Beta1ProducerQuotaPolicy & TopLevel[Any]
   ] = js.undefined
   
   /** The name of the metric to which this policy applies. An example name would be: `compute.googleapis.com/cpus` */
@@ -58,7 +58,7 @@ object V1Beta1ProducerQuotaPolicy {
     inline def setDimensions(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientServiceconsumermanagement.maximMazurokGapiClientServiceconsumermanagementStrings.V1Beta1ProducerQuotaPolicy & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientServiceconsumermanagement.maximMazurokGapiClientServiceconsumermanagementStrings.V1Beta1ProducerQuotaPolicy & TopLevel[Any]
     ): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
     inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)

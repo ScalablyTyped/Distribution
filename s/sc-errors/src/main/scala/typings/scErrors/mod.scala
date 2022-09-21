@@ -1,6 +1,5 @@
 package typings.scErrors
 
-import typings.std.Date
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,74 +13,84 @@ object mod {
   
   @JSImport("sc-errors", "AuthTokenError")
   @js.native
-  class AuthTokenError protected ()
+  open class AuthTokenError protected ()
     extends StObject
        with Error {
     def this(message: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("sc-errors", "AuthTokenExpiredError")
   @js.native
-  class AuthTokenExpiredError protected ()
+  open class AuthTokenExpiredError protected ()
     extends StObject
        with Error {
-    def this(message: String, expiry: Date) = this()
+    def this(message: String, expiry: js.Date) = this()
     
-    var expiry: Date = js.native
+    var expiry: js.Date = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("sc-errors", "AuthTokenInvalidError")
   @js.native
-  class AuthTokenInvalidError protected ()
+  open class AuthTokenInvalidError protected ()
     extends StObject
        with Error {
     def this(message: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("sc-errors", "AuthTokenNotBeforeError")
   @js.native
-  class AuthTokenNotBeforeError protected ()
+  open class AuthTokenNotBeforeError protected ()
     extends StObject
        with Error {
-    def this(message: String, date: Date) = this()
+    def this(message: String, date: js.Date) = this()
     
-    var date: Date = js.native
+    var date: js.Date = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("sc-errors", "BadConnectionError")
   @js.native
-  class BadConnectionError protected ()
+  open class BadConnectionError protected ()
     extends StObject
        with Error {
     def this(message: String, `type`: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     
@@ -90,91 +99,103 @@ object mod {
   
   @JSImport("sc-errors", "BrokerError")
   @js.native
-  class BrokerError protected ()
+  open class BrokerError protected ()
     extends StObject
        with Error {
     def this(message: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("sc-errors", "HTTPServerError")
   @js.native
-  class HTTPServerError protected ()
+  open class HTTPServerError protected ()
     extends StObject
        with Error {
     def this(message: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("sc-errors", "InvalidActionError")
   @js.native
-  class InvalidActionError protected ()
+  open class InvalidActionError protected ()
     extends StObject
        with Error {
     def this(message: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("sc-errors", "InvalidArgumentsError")
   @js.native
-  class InvalidArgumentsError protected ()
+  open class InvalidArgumentsError protected ()
     extends StObject
        with Error {
     def this(message: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("sc-errors", "InvalidMessageError")
   @js.native
-  class InvalidMessageError protected ()
+  open class InvalidMessageError protected ()
     extends StObject
        with Error {
     def this(message: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("sc-errors", "InvalidOptionsError")
   @js.native
-  class InvalidOptionsError protected ()
+  open class InvalidOptionsError protected ()
     extends StObject
        with Error {
     def this(message: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("sc-errors", "ProcessExitError")
   @js.native
-  class ProcessExitError protected ()
+  open class ProcessExitError protected ()
     extends StObject
        with Error {
     def this(message: String) = this()
@@ -182,51 +203,59 @@ object mod {
     
     var code: js.UndefOr[Double] = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("sc-errors", "ResourceLimitError")
   @js.native
-  class ResourceLimitError protected ()
+  open class ResourceLimitError protected ()
     extends StObject
        with Error {
     def this(message: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("sc-errors", "ServerProtocolError")
   @js.native
-  class ServerProtocolError protected ()
+  open class ServerProtocolError protected ()
     extends StObject
        with Error {
     def this(message: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("sc-errors", "SilentMiddlewareBlockedError")
   @js.native
-  class SilentMiddlewareBlockedError protected ()
+  open class SilentMiddlewareBlockedError protected ()
     extends StObject
        with Error {
     def this(message: String, `type`: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     
@@ -235,54 +264,60 @@ object mod {
   
   @JSImport("sc-errors", "SocketProtocolError")
   @js.native
-  class SocketProtocolError protected ()
+  open class SocketProtocolError protected ()
     extends StObject
        with Error {
     def this(message: String, code: Double) = this()
     
     var code: Double = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("sc-errors", "TimeoutError")
   @js.native
-  class TimeoutError protected ()
+  open class TimeoutError protected ()
     extends StObject
        with Error {
     def this(message: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("sc-errors", "UnknownError")
   @js.native
-  class UnknownError protected ()
+  open class UnknownError protected ()
     extends StObject
        with Error {
     def this(message: String) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
-  inline def decycle(`object`: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("decycle")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def decycle(`object`: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("decycle")(`object`.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def dehydrateError(error: js.Any): DehydratedError = ^.asInstanceOf[js.Dynamic].applyDynamic("dehydrateError")(error.asInstanceOf[js.Any]).asInstanceOf[DehydratedError]
-  inline def dehydrateError(error: js.Any, includeStackTrace: Boolean): DehydratedError = (^.asInstanceOf[js.Dynamic].applyDynamic("dehydrateError")(error.asInstanceOf[js.Any], includeStackTrace.asInstanceOf[js.Any])).asInstanceOf[DehydratedError]
+  inline def dehydrateError(error: Any): DehydratedError = ^.asInstanceOf[js.Dynamic].applyDynamic("dehydrateError")(error.asInstanceOf[js.Any]).asInstanceOf[DehydratedError]
+  inline def dehydrateError(error: Any, includeStackTrace: Boolean): DehydratedError = (^.asInstanceOf[js.Dynamic].applyDynamic("dehydrateError")(error.asInstanceOf[js.Any], includeStackTrace.asInstanceOf[js.Any])).asInstanceOf[DehydratedError]
   
-  inline def hydrateError(error: DehydratedError): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("hydrateError")(error.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def hydrateError(error: DehydratedError): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("hydrateError")(error.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @JSImport("sc-errors", "socketProtocolErrorStatuses")
   @js.native
@@ -292,7 +327,7 @@ object mod {
   @js.native
   val socketProtocolIgnoreStatuses: SocketProtocolIgnoreStatuses_ = js.native
   
-  type DehydratedError = js.Any
+  type DehydratedError = Any
   
   trait SocketProtocolErrorStatuses_ extends StObject {
     

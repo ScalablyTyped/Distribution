@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.ShapeDataSource")
 @js.native
-class ShapeDataSource protected ()
+open class ShapeDataSource protected ()
   extends StObject
      with typings.igniteUi.Infragistics.ShapeDataSource {
   def this(settings: ShapeDataSourceSettings) = this()

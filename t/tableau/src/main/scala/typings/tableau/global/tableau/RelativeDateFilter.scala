@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("tableau.RelativeDateFilter")
 @js.native
-class RelativeDateFilter ()
+open class RelativeDateFilter ()
   extends StObject
      with typings.tableau.tableau.RelativeDateFilter {
   

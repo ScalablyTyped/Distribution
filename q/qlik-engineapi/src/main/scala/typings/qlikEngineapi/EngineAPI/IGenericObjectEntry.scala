@@ -39,7 +39,7 @@ object IGenericObjectEntry {
     
     inline def setQChildren(value: js.Array[IGenericObjectEntry]): Self = StObject.set(x, "qChildren", value.asInstanceOf[js.Any])
     
-    inline def setQChildrenVarargs(value: IGenericObjectEntry*): Self = StObject.set(x, "qChildren", js.Array(value :_*))
+    inline def setQChildrenVarargs(value: IGenericObjectEntry*): Self = StObject.set(x, "qChildren", js.Array(value*))
     
     inline def setQEmbeddedSnapshotRef(value: IGenericBookmarkEntry): Self = StObject.set(x, "qEmbeddedSnapshotRef", value.asInstanceOf[js.Any])
     

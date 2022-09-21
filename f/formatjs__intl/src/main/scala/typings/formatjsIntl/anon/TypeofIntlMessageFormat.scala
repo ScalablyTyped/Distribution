@@ -1,7 +1,6 @@
 package typings.formatjsIntl.anon
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.intlMessageformat.anon.Date
 import typings.intlMessageformat.mod.IntlMessageFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,7 +15,10 @@ trait TypeofIntlMessageFormat
   
   def defaultLocale: String = js.native
   
-  var formats: Date = js.native
+  var formats: typings.intlMessageformat.srcFormattersMod.Formats = js.native
   
-  /* private */ var memoizedDefaultLocale: js.Any = js.native
+  /* private */ var memoizedDefaultLocale: Any = js.native
+  
+  def resolveLocale(locales: String): js.UndefOr[typings.std.Intl.Locale] = js.native
+  def resolveLocale(locales: js.Array[String]): js.UndefOr[typings.std.Intl.Locale] = js.native
 }

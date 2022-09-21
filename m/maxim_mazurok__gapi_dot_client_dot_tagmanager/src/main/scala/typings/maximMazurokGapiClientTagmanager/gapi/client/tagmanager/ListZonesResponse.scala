@@ -29,6 +29,6 @@ object ListZonesResponse {
     
     inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
     
-    inline def setZoneVarargs(value: Zone*): Self = StObject.set(x, "zone", js.Array(value :_*))
+    inline def setZoneVarargs(value: Zone*): Self = StObject.set(x, "zone", js.Array(value*))
   }
 }

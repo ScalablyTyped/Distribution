@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ClearFormattingCommand")
 @js.native
-class ClearFormattingCommand ()
+open class ClearFormattingCommand ()
   extends StObject
      with typings.devexpressWeb.ClearFormattingCommand {
   

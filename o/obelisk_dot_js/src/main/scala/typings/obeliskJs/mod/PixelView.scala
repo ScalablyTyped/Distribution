@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("obelisk.js", "PixelView")
 @js.native
-class PixelView protected () extends StObject {
+open class PixelView protected () extends StObject {
   def this(canvas: HTMLCanvasElement) = this()
   def this(canvas: HTMLCanvasElement, point: Point) = this()
   

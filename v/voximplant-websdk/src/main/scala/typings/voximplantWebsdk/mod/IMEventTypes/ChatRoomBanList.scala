@@ -34,7 +34,7 @@ object ChatRoomBanList {
     
     inline def setParticipants(value: js.Array[ChatRoomParticipant]): Self = StObject.set(x, "participants", value.asInstanceOf[js.Any])
     
-    inline def setParticipantsVarargs(value: ChatRoomParticipant*): Self = StObject.set(x, "participants", js.Array(value :_*))
+    inline def setParticipantsVarargs(value: ChatRoomParticipant*): Self = StObject.set(x, "participants", js.Array(value*))
     
     inline def setRoom(value: String): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
   }

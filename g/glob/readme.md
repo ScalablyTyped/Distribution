@@ -1,7 +1,7 @@
 
 # Scala.js typings for glob
 
-Typings are for version 7.1
+Typings are for version 8.0
 
 ## Library description:
 a little globber
@@ -10,10 +10,10 @@ a little globber
 | ------------------ | :-------------: |
 | Full name          | glob |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 16852 |
-| # downloads        | 1755927086 |
-| # stars            | 353 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 2.755787506666667E8 |
+| # stars            | 7574.0 |
 
 ## Links
 - [Homepage](https://github.com/isaacs/node-glob#readme)

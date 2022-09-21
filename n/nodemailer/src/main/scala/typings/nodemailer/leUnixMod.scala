@@ -9,7 +9,7 @@ object leUnixMod {
   
   @JSImport("nodemailer/lib/sendmail-transport/le-unix", JSImport.Namespace)
   @js.native
-  class ^ () extends Transform
+  open class ^ () extends Transform
   
   type LeUnix = Transform
 }

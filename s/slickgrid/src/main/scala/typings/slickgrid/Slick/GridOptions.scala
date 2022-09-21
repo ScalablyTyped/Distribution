@@ -56,7 +56,7 @@ trait GridOptions[T /* <: SlickData */] extends StObject {
   /**
     *
     **/
-  var dataItemColumnValueExtractor: js.UndefOr[js.Function2[/* item */ js.Any, /* columnDef */ js.Any, js.Any]] = js.undefined
+  var dataItemColumnValueExtractor: js.UndefOr[js.Function2[/* item */ Any, /* columnDef */ Any, Any]] = js.undefined
   
   /**
     *
@@ -73,7 +73,7 @@ trait GridOptions[T /* <: SlickData */] extends StObject {
   /**
     * Not listed as a default under options in slick.grid.js
     **/
-  var editCommandHandler: js.UndefOr[js.Any] = js.undefined
+  var editCommandHandler: js.UndefOr[Any] = js.undefined
   
   /**
     *
@@ -115,7 +115,7 @@ trait GridOptions[T /* <: SlickData */] extends StObject {
   /**
     * *WARNING*: Not contained in SlickGrid 2.1, may be deprecated
     **/
-  var enableCellRangeSelection: js.UndefOr[js.Any] = js.undefined
+  var enableCellRangeSelection: js.UndefOr[Any] = js.undefined
   
   /**
     *
@@ -125,7 +125,7 @@ trait GridOptions[T /* <: SlickData */] extends StObject {
   /**
     * *WARNING*: Not contained in SlickGrid 2.1, may be deprecated
     **/
-  var enableRowReordering: js.UndefOr[js.Any] = js.undefined
+  var enableRowReordering: js.UndefOr[Any] = js.undefined
   
   /**
     *
@@ -295,7 +295,7 @@ object GridOptions {
     
     inline def setCreatePreHeaderPanelUndefined: Self = StObject.set(x, "createPreHeaderPanel", js.undefined)
     
-    inline def setDataItemColumnValueExtractor(value: (/* item */ js.Any, /* columnDef */ js.Any) => js.Any): Self = StObject.set(x, "dataItemColumnValueExtractor", js.Any.fromFunction2(value))
+    inline def setDataItemColumnValueExtractor(value: (/* item */ Any, /* columnDef */ Any) => Any): Self = StObject.set(x, "dataItemColumnValueExtractor", js.Any.fromFunction2(value))
     
     inline def setDataItemColumnValueExtractorUndefined: Self = StObject.set(x, "dataItemColumnValueExtractor", js.undefined)
     
@@ -304,7 +304,7 @@ object GridOptions {
     inline def setDefaultColumnWidthUndefined: Self = StObject.set(x, "defaultColumnWidth", js.undefined)
     
     inline def setDefaultFormatter(
-      value: (/* row */ Double, /* cell */ Double, /* value */ js.Any, /* columnDef */ Column[T], /* dataContext */ SlickData) => String
+      value: (/* row */ Double, /* cell */ Double, /* value */ Any, /* columnDef */ Column[T], /* dataContext */ SlickData) => String
     ): Self = StObject.set(x, "defaultFormatter", js.Any.fromFunction5(value))
     
     inline def setDefaultFormatterUndefined: Self = StObject.set(x, "defaultFormatter", js.undefined)
@@ -313,7 +313,7 @@ object GridOptions {
     
     inline def setDoPagingUndefined: Self = StObject.set(x, "doPaging", js.undefined)
     
-    inline def setEditCommandHandler(value: js.Any): Self = StObject.set(x, "editCommandHandler", value.asInstanceOf[js.Any])
+    inline def setEditCommandHandler(value: Any): Self = StObject.set(x, "editCommandHandler", value.asInstanceOf[js.Any])
     
     inline def setEditCommandHandlerUndefined: Self = StObject.set(x, "editCommandHandler", js.undefined)
     
@@ -353,7 +353,7 @@ object GridOptions {
     
     inline def setEnableCellNavigationUndefined: Self = StObject.set(x, "enableCellNavigation", js.undefined)
     
-    inline def setEnableCellRangeSelection(value: js.Any): Self = StObject.set(x, "enableCellRangeSelection", value.asInstanceOf[js.Any])
+    inline def setEnableCellRangeSelection(value: Any): Self = StObject.set(x, "enableCellRangeSelection", value.asInstanceOf[js.Any])
     
     inline def setEnableCellRangeSelectionUndefined: Self = StObject.set(x, "enableCellRangeSelection", js.undefined)
     
@@ -361,7 +361,7 @@ object GridOptions {
     
     inline def setEnableColumnReorderUndefined: Self = StObject.set(x, "enableColumnReorder", js.undefined)
     
-    inline def setEnableRowReordering(value: js.Any): Self = StObject.set(x, "enableRowReordering", value.asInstanceOf[js.Any])
+    inline def setEnableRowReordering(value: Any): Self = StObject.set(x, "enableRowReordering", value.asInstanceOf[js.Any])
     
     inline def setEnableRowReorderingUndefined: Self = StObject.set(x, "enableRowReordering", js.undefined)
     

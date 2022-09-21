@@ -24,7 +24,7 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("http-proxy-agent", "HttpProxyAgent")
   @js.native
-  class HttpProxyAgentCls protected () extends default {
+  open class HttpProxyAgentCls protected () extends default {
     def this(_opts: String) = this()
     def this(_opts: HttpProxyAgentOptions) = this()
   }

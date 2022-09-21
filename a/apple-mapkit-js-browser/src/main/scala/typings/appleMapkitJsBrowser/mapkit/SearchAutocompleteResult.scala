@@ -32,6 +32,6 @@ object SearchAutocompleteResult {
     
     inline def setDisplayLines(value: js.Array[String]): Self = StObject.set(x, "displayLines", value.asInstanceOf[js.Any])
     
-    inline def setDisplayLinesVarargs(value: String*): Self = StObject.set(x, "displayLines", js.Array(value :_*))
+    inline def setDisplayLinesVarargs(value: String*): Self = StObject.set(x, "displayLines", js.Array(value*))
   }
 }

@@ -10,15 +10,12 @@ a middleware for koa to cache response with redis.
 | ------------------ | :-------------: |
 | Full name          | koa-redis-cache |
 | Keywords           | middleware, response, redis, cache, koa |
-| # releases         | 2 |
-| # dependents       | 3 |
-| # downloads        | 47876 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1712.0 |
+| # stars            | 54.0 |
 
 ## Links
-- [Homepage](https://github.com/coderhaoxin/koa-redis-cache#readme)
-- [Bugs](https://github.com/coderhaoxin/koa-redis-cache/issues)
-- [Repository](https://github.com/coderhaoxin/koa-redis-cache)
 - [Npm](https://www.npmjs.com/package/koa-redis-cache)
     
 

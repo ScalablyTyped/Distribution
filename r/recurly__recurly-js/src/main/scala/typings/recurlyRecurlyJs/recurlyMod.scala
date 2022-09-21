@@ -9,6 +9,8 @@ import typings.recurlyRecurlyJs.applePayMod.ApplePay
 import typings.recurlyRecurlyJs.applePayMod.ApplePayConfig
 import typings.recurlyRecurlyJs.applePayMod.ApplePayInstance
 import typings.recurlyRecurlyJs.bankAccountMod.BankAccount
+import typings.recurlyRecurlyJs.bankRedirectMod.BankRedirect
+import typings.recurlyRecurlyJs.bankRedirectMod.BankRedirectInstance
 import typings.recurlyRecurlyJs.configureMod.Configure
 import typings.recurlyRecurlyJs.configureMod.RecurlyOptions
 import typings.recurlyRecurlyJs.elementsMod.Elements
@@ -51,6 +53,20 @@ object recurlyMod {
       */
     @JSName("ApplePay")
     var ApplePay_Original: ApplePay = js.native
+    
+    /**
+      * Use Recurly.js to process Adyen Redirect Payments.
+      *
+      * @see {@link https://developers.recurly.com/reference/recurly-js/index.html#adyen-token|BankRedirect}
+      */
+    def BankRedirect(): BankRedirectInstance = js.native
+    /**
+      * Use Recurly.js to process Adyen Redirect Payments.
+      *
+      * @see {@link https://developers.recurly.com/reference/recurly-js/index.html#adyen-token|BankRedirect}
+      */
+    @JSName("BankRedirect")
+    var BankRedirect_Original: BankRedirect = js.native
     
     /**
       * Elements allow sensitive customer payment information to be securely accepted via iframes.

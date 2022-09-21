@@ -1,7 +1,7 @@
 
 # Scala.js typings for use-latest
 
-Typings are for version 1.2.0
+Typings are for version 1.2.1
 
 ## Library description:
 A React helper hook for storing latest value in ref object (updated in useEffect's callback).
@@ -11,9 +11,9 @@ A React helper hook for storing latest value in ref object (updated in useEffect
 | Full name          | use-latest |
 | Keywords           | - |
 | # releases         | 4 |
-| # dependents       | 7 |
-| # downloads        | 4840663 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1.4462623333333334E7 |
+| # stars            | 18.0 |
 
 ## Links
 - [Homepage](https://github.com/Andarist/use-latest#readme)

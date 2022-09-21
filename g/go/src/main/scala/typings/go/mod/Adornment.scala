@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * @param {EnumValue=} type if not supplied, the default Panel type is Panel.Position.
   */
-class Adornment () extends Part {
+open class Adornment () extends Part {
   def this(`type`: EnumValue) = this()
   
   /**Gets or sets the GraphObject that is adorned.*/

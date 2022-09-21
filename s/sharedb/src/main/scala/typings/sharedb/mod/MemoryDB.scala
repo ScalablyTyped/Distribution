@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("sharedb", "MemoryDB")
 @js.native
-class MemoryDB () extends DB
+open class MemoryDB () extends DB

@@ -14,7 +14,7 @@ object writerMod {
   
   @JSImport("tsmonad/lib/src/writer", "Writer")
   @js.native
-  class Writer_[S, T] protected ()
+  open class Writer_[S, T] protected ()
     extends StObject
        with Monad[T]
        with Eq[Writer_[S, T]] {
@@ -37,12 +37,12 @@ object writerMod {
     /* CompleteClass */
     override def of[U](t: U): Monad[U] = js.native
     
-    /* private */ var story: js.Any = js.native
+    /* private */ var story: Any = js.native
     
     /* CompleteClass */
     override def unit[U](t: U): Monad[U] = js.native
     
-    /* private */ var value: js.Any = js.native
+    /* private */ var value: Any = js.native
   }
   /* static members */
   object Writer_ {

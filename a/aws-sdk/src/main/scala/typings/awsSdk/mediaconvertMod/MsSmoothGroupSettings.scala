@@ -32,9 +32,14 @@ trait MsSmoothGroupSettings extends StObject {
   var Encryption: js.UndefOr[MsSmoothEncryptionSettings] = js.undefined
   
   /**
-    * Use Fragment length (FragmentLength) to specify the mp4 fragment sizes in seconds. Fragment length must be compatible with GOP size and frame rate.
+    * Specify how you want MediaConvert to determine the fragment length. Choose Exact (EXACT) to have the encoder use the exact length that you specify with the setting Fragment length (FragmentLength). This might result in extra I-frames. Choose Multiple of GOP (GOP_MULTIPLE) to have the encoder round up the segment lengths to match the next GOP boundary.
     */
   var FragmentLength: js.UndefOr[integerMin1Max2147483647] = js.undefined
+  
+  /**
+    * Specify how you want MediaConvert to determine the fragment length. Choose Exact (EXACT) to have the encoder use the exact length that you specify with the setting Fragment length (FragmentLength). This might result in extra I-frames. Choose Multiple of GOP (GOP_MULTIPLE) to have the encoder round up the segment lengths to match the next GOP boundary.
+    */
+  var FragmentLengthControl: js.UndefOr[MsSmoothFragmentLengthControl] = js.undefined
   
   /**
     * Use Manifest encoding (MsSmoothManifestEncoding) to specify the encoding format for the server and client manifest. Valid options are utf8 and utf16.
@@ -54,7 +59,7 @@ object MsSmoothGroupSettings {
     
     inline def setAdditionalManifestsUndefined: Self = StObject.set(x, "AdditionalManifests", js.undefined)
     
-    inline def setAdditionalManifestsVarargs(value: MsSmoothAdditionalManifest*): Self = StObject.set(x, "AdditionalManifests", js.Array(value :_*))
+    inline def setAdditionalManifestsVarargs(value: MsSmoothAdditionalManifest*): Self = StObject.set(x, "AdditionalManifests", js.Array(value*))
     
     inline def setAudioDeduplication(value: MsSmoothAudioDeduplication): Self = StObject.set(x, "AudioDeduplication", value.asInstanceOf[js.Any])
     
@@ -73,6 +78,10 @@ object MsSmoothGroupSettings {
     inline def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
     
     inline def setFragmentLength(value: integerMin1Max2147483647): Self = StObject.set(x, "FragmentLength", value.asInstanceOf[js.Any])
+    
+    inline def setFragmentLengthControl(value: MsSmoothFragmentLengthControl): Self = StObject.set(x, "FragmentLengthControl", value.asInstanceOf[js.Any])
+    
+    inline def setFragmentLengthControlUndefined: Self = StObject.set(x, "FragmentLengthControl", js.undefined)
     
     inline def setFragmentLengthUndefined: Self = StObject.set(x, "FragmentLength", js.undefined)
     

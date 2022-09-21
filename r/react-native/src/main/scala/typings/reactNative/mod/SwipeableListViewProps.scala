@@ -24,18 +24,18 @@ trait SwipeableListViewProps extends StObject {
   var maxSwipeDistance: Double = js.native
   
   // Callback method to render the view that will be unveiled on swipe
-  def renderQuickActions(rowData: js.Any, sectionID: String, rowID: String): ReactElement = js.native
-  def renderQuickActions(rowData: js.Any, sectionID: String, rowID: Double): ReactElement = js.native
-  def renderQuickActions(rowData: js.Any, sectionID: Double, rowID: String): ReactElement = js.native
-  def renderQuickActions(rowData: js.Any, sectionID: Double, rowID: Double): ReactElement = js.native
+  def renderQuickActions(rowData: Any, sectionID: String, rowID: String): ReactElement = js.native
+  def renderQuickActions(rowData: Any, sectionID: String, rowID: Double): ReactElement = js.native
+  def renderQuickActions(rowData: Any, sectionID: Double, rowID: String): ReactElement = js.native
+  def renderQuickActions(rowData: Any, sectionID: Double, rowID: Double): ReactElement = js.native
   
   // Callback method to render the swipeable view
-  def renderRow(rowData: js.Any, sectionID: String, rowID: String): ReactElement = js.native
-  def renderRow(rowData: js.Any, sectionID: String, rowID: String, highlightRow: Boolean): ReactElement = js.native
-  def renderRow(rowData: js.Any, sectionID: String, rowID: Double): ReactElement = js.native
-  def renderRow(rowData: js.Any, sectionID: String, rowID: Double, highlightRow: Boolean): ReactElement = js.native
-  def renderRow(rowData: js.Any, sectionID: Double, rowID: String): ReactElement = js.native
-  def renderRow(rowData: js.Any, sectionID: Double, rowID: String, highlightRow: Boolean): ReactElement = js.native
-  def renderRow(rowData: js.Any, sectionID: Double, rowID: Double): ReactElement = js.native
-  def renderRow(rowData: js.Any, sectionID: Double, rowID: Double, highlightRow: Boolean): ReactElement = js.native
+  def renderRow(rowData: Any, sectionID: String, rowID: String): ReactElement = js.native
+  def renderRow(rowData: Any, sectionID: String, rowID: String, highlightRow: Boolean): ReactElement = js.native
+  def renderRow(rowData: Any, sectionID: String, rowID: Double): ReactElement = js.native
+  def renderRow(rowData: Any, sectionID: String, rowID: Double, highlightRow: Boolean): ReactElement = js.native
+  def renderRow(rowData: Any, sectionID: Double, rowID: String): ReactElement = js.native
+  def renderRow(rowData: Any, sectionID: Double, rowID: String, highlightRow: Boolean): ReactElement = js.native
+  def renderRow(rowData: Any, sectionID: Double, rowID: Double): ReactElement = js.native
+  def renderRow(rowData: Any, sectionID: Double, rowID: Double, highlightRow: Boolean): ReactElement = js.native
 }

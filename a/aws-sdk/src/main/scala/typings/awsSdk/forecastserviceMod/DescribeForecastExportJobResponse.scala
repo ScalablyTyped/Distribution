@@ -9,7 +9,7 @@ trait DescribeForecastExportJobResponse extends StObject {
   /**
     * When the forecast export job was created.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The path to the Amazon Simple Storage Service (Amazon S3) bucket where the forecast is exported.
@@ -32,9 +32,14 @@ trait DescribeForecastExportJobResponse extends StObject {
   var ForecastExportJobName: js.UndefOr[Name] = js.undefined
   
   /**
-    * When the last successful export job finished.
+    * The format of the exported data, CSV or PARQUET.
     */
-  var LastModificationTime: js.UndefOr[Timestamp] = js.undefined
+  var Format: js.UndefOr[typings.awsSdk.forecastserviceMod.Format] = js.undefined
+  
+  /**
+    * The last time the resource was modified. The timestamp depends on the status of the job:    CREATE_PENDING - The CreationTime.    CREATE_IN_PROGRESS - The current timestamp.    CREATE_STOPPING - The current timestamp.    CREATE_STOPPED - When the job stopped.    ACTIVE or CREATE_FAILED - When the job finished or failed.  
+    */
+  var LastModificationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * If an error occurred, an informational message about the error.
@@ -42,7 +47,7 @@ trait DescribeForecastExportJobResponse extends StObject {
   var Message: js.UndefOr[typings.awsSdk.forecastserviceMod.Message] = js.undefined
   
   /**
-    * The status of the forecast export job. States include:    ACTIVE     CREATE_PENDING, CREATE_IN_PROGRESS, CREATE_FAILED     DELETE_PENDING, DELETE_IN_PROGRESS, DELETE_FAILED     The Status of the forecast export job must be ACTIVE before you can access the forecast in your S3 bucket. 
+    * The status of the forecast export job. States include:    ACTIVE     CREATE_PENDING, CREATE_IN_PROGRESS, CREATE_FAILED     CREATE_STOPPING, CREATE_STOPPED     DELETE_PENDING, DELETE_IN_PROGRESS, DELETE_FAILED     The Status of the forecast export job must be ACTIVE before you can access the forecast in your S3 bucket. 
     */
   var Status: js.UndefOr[typings.awsSdk.forecastserviceMod.Status] = js.undefined
 }
@@ -55,7 +60,7 @@ object DescribeForecastExportJobResponse {
   
   extension [Self <: DescribeForecastExportJobResponse](x: Self) {
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
@@ -75,7 +80,11 @@ object DescribeForecastExportJobResponse {
     
     inline def setForecastExportJobNameUndefined: Self = StObject.set(x, "ForecastExportJobName", js.undefined)
     
-    inline def setLastModificationTime(value: Timestamp): Self = StObject.set(x, "LastModificationTime", value.asInstanceOf[js.Any])
+    inline def setFormat(value: Format): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
+    
+    inline def setLastModificationTime(value: js.Date): Self = StObject.set(x, "LastModificationTime", value.asInstanceOf[js.Any])
     
     inline def setLastModificationTimeUndefined: Self = StObject.set(x, "LastModificationTime", js.undefined)
     

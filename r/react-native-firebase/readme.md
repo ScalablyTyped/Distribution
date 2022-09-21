@@ -10,10 +10,10 @@ A well tested, feature rich Firebase implementation for React Native, supporting
 | ------------------ | :-------------: |
 | Full name          | react-native-firebase |
 | Keywords           | react, admob, auth, config, digits, fabric, functions, phone-auth, sms, firestore, cloud-firestore, datastore, remote-config, transactions, react-native, react-native-firebase, firebase, fcm, apn, gcm, analytics, messaging, database, android, ios, crash, firestack, performance, firestore, dynamic-links, crashlytics |
-| # releases         | 24 |
-| # dependents       | 22 |
-| # downloads        | 2682231 |
-| # stars            | 12 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 49992.666666666664 |
+| # stars            | 10088.0 |
 
 ## Links
 - [Homepage](https://github.com/invertase/react-native-firebase#readme)

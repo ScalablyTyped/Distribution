@@ -38,12 +38,6 @@ object RoleMapping {
     __obj.asInstanceOf[RoleMapping]
   }
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "RoleMapping")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  inline def filterSensitiveLog(obj: RoleMapping): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
   extension [Self <: RoleMapping](x: Self) {
     
     inline def setAmbiguousRoleResolution(value: AmbiguousRoleResolutionType | String): Self = StObject.set(x, "AmbiguousRoleResolution", value.asInstanceOf[js.Any])

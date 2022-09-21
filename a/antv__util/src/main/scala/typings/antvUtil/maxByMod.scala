@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object maxByMod {
   
-  @JSImport("@antv/util/lib/max-by", JSImport.Namespace)
+  @JSImport("@antv/util/lib/lodash/max-by", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

@@ -10,10 +10,10 @@ The lodash method `_.camelCase` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.camelcase |
 | Keywords           | lodash-modularized, camelcase |
-| # releases         | 0 |
-| # dependents       | 661 |
-| # downloads        | 201396012 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3.1502071E7 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

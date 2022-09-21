@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The result of sentiment analysis as configured by
-  * `sentiment_analysis_request_config`.
-  */
 trait SchemaGoogleCloudDialogflowV2beta1SentimentAnalysisResult extends StObject {
   
   /**

@@ -4,20 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * ! Information about a vulnerability with an HTML.
-  */
 trait SchemaForm extends StObject {
   
   /**
-    * ! The URI where to send the form when it&#39;s submitted.
+    * ! The URI where to send the form when it's submitted.
     */
-  var actionUri: js.UndefOr[String] = js.undefined
+  var actionUri: js.UndefOr[String | Null] = js.undefined
   
   /**
     * ! The names of form fields related to the vulnerability.
     */
-  var fields: js.UndefOr[js.Array[String]] = js.undefined
+  var fields: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaForm {
   
@@ -30,12 +27,16 @@ object SchemaForm {
     
     inline def setActionUri(value: String): Self = StObject.set(x, "actionUri", value.asInstanceOf[js.Any])
     
+    inline def setActionUriNull: Self = StObject.set(x, "actionUri", null)
+    
     inline def setActionUriUndefined: Self = StObject.set(x, "actionUri", js.undefined)
     
     inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
+    inline def setFieldsNull: Self = StObject.set(x, "fields", null)
+    
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value*))
   }
 }

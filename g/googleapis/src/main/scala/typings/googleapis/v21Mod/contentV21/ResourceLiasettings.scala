@@ -4,30 +4,19 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/content/v2.1", "content_v2_1.Resource$Liasettings")
 @js.native
-class ResourceLiasettings protected () extends StObject {
+open class ResourceLiasettings protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native
   
-  /**
-    * content.liasettings.custombatch
-    * @desc Retrieves and/or updates the LIA settings of multiple accounts in a
-    * single request.
-    * @alias content.liasettings.custombatch
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {().LiasettingsCustomBatchRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def custombatch(): GaxiosPromise[SchemaLiasettingsCustomBatchResponse] = js.native
   def custombatch(callback: BodyResponseCallback[SchemaLiasettingsCustomBatchResponse]): Unit = js.native
   def custombatch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLiasettingsCustomBatchResponse] = js.native
@@ -38,8 +27,8 @@ class ResourceLiasettings protected () extends StObject {
   ): Unit = js.native
   def custombatch(
     params: ParamsResourceLiasettingsCustombatch,
-    options: BodyResponseCallback[SchemaLiasettingsCustomBatchResponse],
-    callback: BodyResponseCallback[SchemaLiasettingsCustomBatchResponse]
+    options: BodyResponseCallback[Readable | SchemaLiasettingsCustomBatchResponse],
+    callback: BodyResponseCallback[Readable | SchemaLiasettingsCustomBatchResponse]
   ): Unit = js.native
   def custombatch(params: ParamsResourceLiasettingsCustombatch, options: MethodOptions): GaxiosPromise[SchemaLiasettingsCustomBatchResponse] = js.native
   def custombatch(
@@ -47,20 +36,69 @@ class ResourceLiasettings protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLiasettingsCustomBatchResponse]
   ): Unit = js.native
-  
   /**
-    * content.liasettings.get
-    * @desc Retrieves the LIA settings of the account.
-    * @alias content.liasettings.get
-    * @memberOf! ()
+    * Retrieves and/or updates the LIA settings of multiple accounts in a single request.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/content.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.accountId The ID of the account for which to get or update LIA settings.
-    * @param {string} params.merchantId The ID of the managing account. If this parameter is not the same as accountId, then this account must be a multi-client account and accountId must be the ID of a sub-account of this account.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const content = google.content('v2.1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/content'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await content.liasettings.custombatch({
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "entries": []
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "entries": [],
+    *   //   "kind": "my_kind"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def custombatch(params: ParamsResourceLiasettingsCustombatch, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def custombatch(
+    params: ParamsResourceLiasettingsCustombatch,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def get(): GaxiosPromise[SchemaLiaSettings] = js.native
   def get(callback: BodyResponseCallback[SchemaLiaSettings]): Unit = js.native
   def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLiaSettings] = js.native
@@ -68,8 +106,8 @@ class ResourceLiasettings protected () extends StObject {
   def get(params: ParamsResourceLiasettingsGet, callback: BodyResponseCallback[SchemaLiaSettings]): Unit = js.native
   def get(
     params: ParamsResourceLiasettingsGet,
-    options: BodyResponseCallback[SchemaLiaSettings],
-    callback: BodyResponseCallback[SchemaLiaSettings]
+    options: BodyResponseCallback[Readable | SchemaLiaSettings],
+    callback: BodyResponseCallback[Readable | SchemaLiaSettings]
   ): Unit = js.native
   def get(params: ParamsResourceLiasettingsGet, options: MethodOptions): GaxiosPromise[SchemaLiaSettings] = js.native
   def get(
@@ -77,20 +115,67 @@ class ResourceLiasettings protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLiaSettings]
   ): Unit = js.native
-  
   /**
-    * content.liasettings.getaccessiblegmbaccounts
-    * @desc Retrieves the list of accessible Google My Business accounts.
-    * @alias content.liasettings.getaccessiblegmbaccounts
-    * @memberOf! ()
+    * Retrieves the LIA settings of the account.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/content.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.accountId The ID of the account for which to retrieve accessible Google My Business accounts.
-    * @param {string} params.merchantId The ID of the managing account. If this parameter is not the same as accountId, then this account must be a multi-client account and accountId must be the ID of a sub-account of this account.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const content = google.content('v2.1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/content'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await content.liasettings.get({
+    *     // The ID of the account for which to get or update LIA settings.
+    *     accountId: 'placeholder-value',
+    *     // The ID of the managing account. If this parameter is not the same as accountId, then this account must be a multi-client account and `accountId` must be the ID of a sub-account of this account.
+    *     merchantId: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "accountId": "my_accountId",
+    *   //   "countrySettings": [],
+    *   //   "kind": "my_kind"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def get(params: ParamsResourceLiasettingsGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def get(
+    params: ParamsResourceLiasettingsGet,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def getaccessiblegmbaccounts(): GaxiosPromise[SchemaLiasettingsGetAccessibleGmbAccountsResponse] = js.native
   def getaccessiblegmbaccounts(callback: BodyResponseCallback[SchemaLiasettingsGetAccessibleGmbAccountsResponse]): Unit = js.native
   def getaccessiblegmbaccounts(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLiasettingsGetAccessibleGmbAccountsResponse] = js.native
@@ -101,8 +186,8 @@ class ResourceLiasettings protected () extends StObject {
   ): Unit = js.native
   def getaccessiblegmbaccounts(
     params: ParamsResourceLiasettingsGetaccessiblegmbaccounts,
-    options: BodyResponseCallback[SchemaLiasettingsGetAccessibleGmbAccountsResponse],
-    callback: BodyResponseCallback[SchemaLiasettingsGetAccessibleGmbAccountsResponse]
+    options: BodyResponseCallback[Readable | SchemaLiasettingsGetAccessibleGmbAccountsResponse],
+    callback: BodyResponseCallback[Readable | SchemaLiasettingsGetAccessibleGmbAccountsResponse]
   ): Unit = js.native
   def getaccessiblegmbaccounts(params: ParamsResourceLiasettingsGetaccessiblegmbaccounts, options: MethodOptions): GaxiosPromise[SchemaLiasettingsGetAccessibleGmbAccountsResponse] = js.native
   def getaccessiblegmbaccounts(
@@ -110,22 +195,67 @@ class ResourceLiasettings protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLiasettingsGetAccessibleGmbAccountsResponse]
   ): Unit = js.native
-  
   /**
-    * content.liasettings.list
-    * @desc Lists the LIA settings of the sub-accounts in your Merchant Center
-    * account.
-    * @alias content.liasettings.list
-    * @memberOf! ()
+    * Retrieves the list of accessible Business Profiles.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/content.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {integer=} params.maxResults The maximum number of LIA settings to return in the response, used for paging.
-    * @param {string} params.merchantId The ID of the managing account. This must be a multi-client account.
-    * @param {string=} params.pageToken The token returned by the previous request.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const content = google.content('v2.1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/content'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await content.liasettings.getaccessiblegmbaccounts({
+    *     // The ID of the account for which to retrieve accessible Business Profiles.
+    *     accountId: 'placeholder-value',
+    *     // The ID of the managing account. If this parameter is not the same as accountId, then this account must be a multi-client account and `accountId` must be the ID of a sub-account of this account.
+    *     merchantId: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "accountId": "my_accountId",
+    *   //   "gmbAccounts": [],
+    *   //   "kind": "my_kind"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def getaccessiblegmbaccounts(params: ParamsResourceLiasettingsGetaccessiblegmbaccounts, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def getaccessiblegmbaccounts(
+    params: ParamsResourceLiasettingsGetaccessiblegmbaccounts,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def list(): GaxiosPromise[SchemaLiasettingsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaLiasettingsListResponse]): Unit = js.native
   def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLiasettingsListResponse] = js.native
@@ -136,8 +266,8 @@ class ResourceLiasettings protected () extends StObject {
   ): Unit = js.native
   def list(
     params: ParamsResourceLiasettingsList,
-    options: BodyResponseCallback[SchemaLiasettingsListResponse],
-    callback: BodyResponseCallback[SchemaLiasettingsListResponse]
+    options: BodyResponseCallback[Readable | SchemaLiasettingsListResponse],
+    callback: BodyResponseCallback[Readable | SchemaLiasettingsListResponse]
   ): Unit = js.native
   def list(params: ParamsResourceLiasettingsList, options: MethodOptions): GaxiosPromise[SchemaLiasettingsListResponse] = js.native
   def list(
@@ -145,19 +275,69 @@ class ResourceLiasettings protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLiasettingsListResponse]
   ): Unit = js.native
-  
   /**
-    * content.liasettings.listposdataproviders
-    * @desc Retrieves the list of POS data providers that have active settings
-    * for the all eiligible countries.
-    * @alias content.liasettings.listposdataproviders
-    * @memberOf! ()
+    * Lists the LIA settings of the sub-accounts in your Merchant Center account.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/content.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object=} params Parameters for request
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const content = google.content('v2.1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/content'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await content.liasettings.list({
+    *     // The maximum number of LIA settings to return in the response, used for paging.
+    *     maxResults: 'placeholder-value',
+    *     // The ID of the managing account. This must be a multi-client account.
+    *     merchantId: 'placeholder-value',
+    *     // The token returned by the previous request.
+    *     pageToken: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "kind": "my_kind",
+    *   //   "nextPageToken": "my_nextPageToken",
+    *   //   "resources": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def list(params: ParamsResourceLiasettingsList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def list(
+    params: ParamsResourceLiasettingsList,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def listposdataproviders(): GaxiosPromise[SchemaLiasettingsListPosDataProvidersResponse] = js.native
   def listposdataproviders(callback: BodyResponseCallback[SchemaLiasettingsListPosDataProvidersResponse]): Unit = js.native
   def listposdataproviders(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLiasettingsListPosDataProvidersResponse] = js.native
@@ -168,8 +348,8 @@ class ResourceLiasettings protected () extends StObject {
   ): Unit = js.native
   def listposdataproviders(
     params: ParamsResourceLiasettingsListposdataproviders,
-    options: BodyResponseCallback[SchemaLiasettingsListPosDataProvidersResponse],
-    callback: BodyResponseCallback[SchemaLiasettingsListPosDataProvidersResponse]
+    options: BodyResponseCallback[Readable | SchemaLiasettingsListPosDataProvidersResponse],
+    callback: BodyResponseCallback[Readable | SchemaLiasettingsListPosDataProvidersResponse]
   ): Unit = js.native
   def listposdataproviders(params: ParamsResourceLiasettingsListposdataproviders, options: MethodOptions): GaxiosPromise[SchemaLiasettingsListPosDataProvidersResponse] = js.native
   def listposdataproviders(
@@ -177,21 +357,61 @@ class ResourceLiasettings protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLiasettingsListPosDataProvidersResponse]
   ): Unit = js.native
-  
   /**
-    * content.liasettings.requestgmbaccess
-    * @desc Requests access to a specified Google My Business account.
-    * @alias content.liasettings.requestgmbaccess
-    * @memberOf! ()
+    * Retrieves the list of POS data providers that have active settings for the all eiligible countries.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/content.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.accountId The ID of the account for which GMB access is requested.
-    * @param {string} params.gmbEmail The email of the Google My Business account.
-    * @param {string} params.merchantId The ID of the managing account. If this parameter is not the same as accountId, then this account must be a multi-client account and accountId must be the ID of a sub-account of this account.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const content = google.content('v2.1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/content'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await content.liasettings.listposdataproviders({});
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "kind": "my_kind",
+    *   //   "posDataProviders": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def listposdataproviders(params: ParamsResourceLiasettingsListposdataproviders, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def listposdataproviders(
+    params: ParamsResourceLiasettingsListposdataproviders,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def requestgmbaccess(): GaxiosPromise[SchemaLiasettingsRequestGmbAccessResponse] = js.native
   def requestgmbaccess(callback: BodyResponseCallback[SchemaLiasettingsRequestGmbAccessResponse]): Unit = js.native
   def requestgmbaccess(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLiasettingsRequestGmbAccessResponse] = js.native
@@ -202,8 +422,8 @@ class ResourceLiasettings protected () extends StObject {
   ): Unit = js.native
   def requestgmbaccess(
     params: ParamsResourceLiasettingsRequestgmbaccess,
-    options: BodyResponseCallback[SchemaLiasettingsRequestGmbAccessResponse],
-    callback: BodyResponseCallback[SchemaLiasettingsRequestGmbAccessResponse]
+    options: BodyResponseCallback[Readable | SchemaLiasettingsRequestGmbAccessResponse],
+    callback: BodyResponseCallback[Readable | SchemaLiasettingsRequestGmbAccessResponse]
   ): Unit = js.native
   def requestgmbaccess(params: ParamsResourceLiasettingsRequestgmbaccess, options: MethodOptions): GaxiosPromise[SchemaLiasettingsRequestGmbAccessResponse] = js.native
   def requestgmbaccess(
@@ -211,21 +431,67 @@ class ResourceLiasettings protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLiasettingsRequestGmbAccessResponse]
   ): Unit = js.native
-  
   /**
-    * content.liasettings.requestinventoryverification
-    * @desc Requests inventory validation for the specified country.
-    * @alias content.liasettings.requestinventoryverification
-    * @memberOf! ()
+    * Requests access to a specified Business Profile.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/content.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.accountId The ID of the account that manages the order. This cannot be a multi-client account.
-    * @param {string} params.country The country for which inventory validation is requested.
-    * @param {string} params.merchantId The ID of the managing account. If this parameter is not the same as accountId, then this account must be a multi-client account and accountId must be the ID of a sub-account of this account.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const content = google.content('v2.1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/content'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await content.liasettings.requestgmbaccess({
+    *     // The ID of the account for which Business Profile access is requested.
+    *     accountId: 'placeholder-value',
+    *     // The email of the Business Profile.
+    *     gmbEmail: 'placeholder-value',
+    *     // The ID of the managing account. If this parameter is not the same as accountId, then this account must be a multi-client account and `accountId` must be the ID of a sub-account of this account.
+    *     merchantId: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "kind": "my_kind"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def requestgmbaccess(params: ParamsResourceLiasettingsRequestgmbaccess, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def requestgmbaccess(
+    params: ParamsResourceLiasettingsRequestgmbaccess,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def requestinventoryverification(): GaxiosPromise[SchemaLiasettingsRequestInventoryVerificationResponse] = js.native
   def requestinventoryverification(callback: BodyResponseCallback[SchemaLiasettingsRequestInventoryVerificationResponse]): Unit = js.native
   def requestinventoryverification(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLiasettingsRequestInventoryVerificationResponse] = js.native
@@ -236,8 +502,8 @@ class ResourceLiasettings protected () extends StObject {
   ): Unit = js.native
   def requestinventoryverification(
     params: ParamsResourceLiasettingsRequestinventoryverification,
-    options: BodyResponseCallback[SchemaLiasettingsRequestInventoryVerificationResponse],
-    callback: BodyResponseCallback[SchemaLiasettingsRequestInventoryVerificationResponse]
+    options: BodyResponseCallback[Readable | SchemaLiasettingsRequestInventoryVerificationResponse],
+    callback: BodyResponseCallback[Readable | SchemaLiasettingsRequestInventoryVerificationResponse]
   ): Unit = js.native
   def requestinventoryverification(params: ParamsResourceLiasettingsRequestinventoryverification, options: MethodOptions): GaxiosPromise[SchemaLiasettingsRequestInventoryVerificationResponse] = js.native
   def requestinventoryverification(
@@ -245,24 +511,67 @@ class ResourceLiasettings protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLiasettingsRequestInventoryVerificationResponse]
   ): Unit = js.native
-  
   /**
-    * content.liasettings.setinventoryverificationcontact
-    * @desc Sets the inventory verification contract for the specified country.
-    * @alias content.liasettings.setinventoryverificationcontact
-    * @memberOf! ()
+    * Requests inventory validation for the specified country.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/content.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.accountId The ID of the account that manages the order. This cannot be a multi-client account.
-    * @param {string} params.contactEmail The email of the inventory verification contact.
-    * @param {string} params.contactName The name of the inventory verification contact.
-    * @param {string} params.country The country for which inventory verification is requested.
-    * @param {string} params.language The language for which inventory verification is requested.
-    * @param {string} params.merchantId The ID of the managing account. If this parameter is not the same as accountId, then this account must be a multi-client account and accountId must be the ID of a sub-account of this account.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const content = google.content('v2.1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/content'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await content.liasettings.requestinventoryverification({
+    *     // The ID of the account that manages the order. This cannot be a multi-client account.
+    *     accountId: 'placeholder-value',
+    *     // The country for which inventory validation is requested.
+    *     country: 'placeholder-value',
+    *     // The ID of the managing account. If this parameter is not the same as accountId, then this account must be a multi-client account and `accountId` must be the ID of a sub-account of this account.
+    *     merchantId: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "kind": "my_kind"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def requestinventoryverification(params: ParamsResourceLiasettingsRequestinventoryverification, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def requestinventoryverification(
+    params: ParamsResourceLiasettingsRequestinventoryverification,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def setinventoryverificationcontact(): GaxiosPromise[SchemaLiasettingsSetInventoryVerificationContactResponse] = js.native
   def setinventoryverificationcontact(callback: BodyResponseCallback[SchemaLiasettingsSetInventoryVerificationContactResponse]): Unit = js.native
   def setinventoryverificationcontact(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLiasettingsSetInventoryVerificationContactResponse] = js.native
@@ -273,8 +582,8 @@ class ResourceLiasettings protected () extends StObject {
   ): Unit = js.native
   def setinventoryverificationcontact(
     params: ParamsResourceLiasettingsSetinventoryverificationcontact,
-    options: BodyResponseCallback[SchemaLiasettingsSetInventoryVerificationContactResponse],
-    callback: BodyResponseCallback[SchemaLiasettingsSetInventoryVerificationContactResponse]
+    options: BodyResponseCallback[Readable | SchemaLiasettingsSetInventoryVerificationContactResponse],
+    callback: BodyResponseCallback[Readable | SchemaLiasettingsSetInventoryVerificationContactResponse]
   ): Unit = js.native
   def setinventoryverificationcontact(params: ParamsResourceLiasettingsSetinventoryverificationcontact, options: MethodOptions): GaxiosPromise[SchemaLiasettingsSetInventoryVerificationContactResponse] = js.native
   def setinventoryverificationcontact(
@@ -282,23 +591,73 @@ class ResourceLiasettings protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLiasettingsSetInventoryVerificationContactResponse]
   ): Unit = js.native
-  
   /**
-    * content.liasettings.setposdataprovider
-    * @desc Sets the POS data provider for the specified country.
-    * @alias content.liasettings.setposdataprovider
-    * @memberOf! ()
+    * Sets the inventory verification contract for the specified country.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/content.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.accountId The ID of the account for which to retrieve accessible Google My Business accounts.
-    * @param {string} params.country The country for which the POS data provider is selected.
-    * @param {string} params.merchantId The ID of the managing account. If this parameter is not the same as accountId, then this account must be a multi-client account and accountId must be the ID of a sub-account of this account.
-    * @param {string=} params.posDataProviderId The ID of POS data provider.
-    * @param {string=} params.posExternalAccountId The account ID by which this merchant is known to the POS data provider.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const content = google.content('v2.1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/content'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await content.liasettings.setinventoryverificationcontact({
+    *     // The ID of the account that manages the order. This cannot be a multi-client account.
+    *     accountId: 'placeholder-value',
+    *     // The email of the inventory verification contact.
+    *     contactEmail: 'placeholder-value',
+    *     // The name of the inventory verification contact.
+    *     contactName: 'placeholder-value',
+    *     // The country for which inventory verification is requested.
+    *     country: 'placeholder-value',
+    *     // The language for which inventory verification is requested.
+    *     language: 'placeholder-value',
+    *     // The ID of the managing account. If this parameter is not the same as accountId, then this account must be a multi-client account and `accountId` must be the ID of a sub-account of this account.
+    *     merchantId: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "kind": "my_kind"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def setinventoryverificationcontact(params: ParamsResourceLiasettingsSetinventoryverificationcontact, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def setinventoryverificationcontact(
+    params: ParamsResourceLiasettingsSetinventoryverificationcontact,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def setposdataprovider(): GaxiosPromise[SchemaLiasettingsSetPosDataProviderResponse] = js.native
   def setposdataprovider(callback: BodyResponseCallback[SchemaLiasettingsSetPosDataProviderResponse]): Unit = js.native
   def setposdataprovider(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLiasettingsSetPosDataProviderResponse] = js.native
@@ -309,8 +668,8 @@ class ResourceLiasettings protected () extends StObject {
   ): Unit = js.native
   def setposdataprovider(
     params: ParamsResourceLiasettingsSetposdataprovider,
-    options: BodyResponseCallback[SchemaLiasettingsSetPosDataProviderResponse],
-    callback: BodyResponseCallback[SchemaLiasettingsSetPosDataProviderResponse]
+    options: BodyResponseCallback[Readable | SchemaLiasettingsSetPosDataProviderResponse],
+    callback: BodyResponseCallback[Readable | SchemaLiasettingsSetPosDataProviderResponse]
   ): Unit = js.native
   def setposdataprovider(params: ParamsResourceLiasettingsSetposdataprovider, options: MethodOptions): GaxiosPromise[SchemaLiasettingsSetPosDataProviderResponse] = js.native
   def setposdataprovider(
@@ -318,21 +677,71 @@ class ResourceLiasettings protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLiasettingsSetPosDataProviderResponse]
   ): Unit = js.native
-  
   /**
-    * content.liasettings.update
-    * @desc Updates the LIA settings of the account.
-    * @alias content.liasettings.update
-    * @memberOf! ()
+    * Sets the POS data provider for the specified country.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/content.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.accountId The ID of the account for which to get or update LIA settings.
-    * @param {string} params.merchantId The ID of the managing account. If this parameter is not the same as accountId, then this account must be a multi-client account and accountId must be the ID of a sub-account of this account.
-    * @param {().LiaSettings} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const content = google.content('v2.1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/content'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await content.liasettings.setposdataprovider({
+    *     // The ID of the account for which to retrieve accessible Business Profiles.
+    *     accountId: 'placeholder-value',
+    *     // The country for which the POS data provider is selected.
+    *     country: 'placeholder-value',
+    *     // The ID of the managing account. If this parameter is not the same as accountId, then this account must be a multi-client account and `accountId` must be the ID of a sub-account of this account.
+    *     merchantId: 'placeholder-value',
+    *     // The ID of POS data provider.
+    *     posDataProviderId: 'placeholder-value',
+    *     // The account ID by which this merchant is known to the POS data provider.
+    *     posExternalAccountId: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "kind": "my_kind"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def setposdataprovider(params: ParamsResourceLiasettingsSetposdataprovider, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def setposdataprovider(
+    params: ParamsResourceLiasettingsSetposdataprovider,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def update(): GaxiosPromise[SchemaLiaSettings] = js.native
   def update(callback: BodyResponseCallback[SchemaLiaSettings]): Unit = js.native
   def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLiaSettings] = js.native
@@ -340,13 +749,83 @@ class ResourceLiasettings protected () extends StObject {
   def update(params: ParamsResourceLiasettingsUpdate, callback: BodyResponseCallback[SchemaLiaSettings]): Unit = js.native
   def update(
     params: ParamsResourceLiasettingsUpdate,
-    options: BodyResponseCallback[SchemaLiaSettings],
-    callback: BodyResponseCallback[SchemaLiaSettings]
+    options: BodyResponseCallback[Readable | SchemaLiaSettings],
+    callback: BodyResponseCallback[Readable | SchemaLiaSettings]
   ): Unit = js.native
   def update(params: ParamsResourceLiasettingsUpdate, options: MethodOptions): GaxiosPromise[SchemaLiaSettings] = js.native
   def update(
     params: ParamsResourceLiasettingsUpdate,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaLiaSettings]
+  ): Unit = js.native
+  /**
+    * Updates the LIA settings of the account. Any fields that are not provided are deleted from the resource.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/content.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const content = google.content('v2.1');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/content'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await content.liasettings.update({
+    *     // The ID of the account for which to get or update LIA settings.
+    *     accountId: 'placeholder-value',
+    *     // The ID of the managing account. If this parameter is not the same as accountId, then this account must be a multi-client account and `accountId` must be the ID of a sub-account of this account.
+    *     merchantId: 'placeholder-value',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "accountId": "my_accountId",
+    *       //   "countrySettings": [],
+    *       //   "kind": "my_kind"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "accountId": "my_accountId",
+    *   //   "countrySettings": [],
+    *   //   "kind": "my_kind"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def update(params: ParamsResourceLiasettingsUpdate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def update(
+    params: ParamsResourceLiasettingsUpdate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
 }

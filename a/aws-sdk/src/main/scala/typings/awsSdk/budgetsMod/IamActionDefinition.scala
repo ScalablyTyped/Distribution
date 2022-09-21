@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IamActionDefinition extends StObject {
   
   /**
-    *  A list of groups to be attached. There must be at least one group. 
+    * A list of groups to be attached. There must be at least one group. 
     */
   var Groups: js.UndefOr[typings.awsSdk.budgetsMod.Groups] = js.undefined
   
   /**
-    *  The Amazon Resource Name (ARN) of the policy to be attached. 
+    * The Amazon Resource Name (ARN) of the policy to be attached. 
     */
   var PolicyArn: typings.awsSdk.budgetsMod.PolicyArn
   
   /**
-    *  A list of roles to be attached. There must be at least one role. 
+    * A list of roles to be attached. There must be at least one role. 
     */
   var Roles: js.UndefOr[typings.awsSdk.budgetsMod.Roles] = js.undefined
   
   /**
-    *  A list of users to be attached. There must be at least one user. 
+    * A list of users to be attached. There must be at least one user. 
     */
   var Users: js.UndefOr[typings.awsSdk.budgetsMod.Users] = js.undefined
 }
@@ -39,7 +39,7 @@ object IamActionDefinition {
     
     inline def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
     
-    inline def setGroupsVarargs(value: Group*): Self = StObject.set(x, "Groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: Group*): Self = StObject.set(x, "Groups", js.Array(value*))
     
     inline def setPolicyArn(value: PolicyArn): Self = StObject.set(x, "PolicyArn", value.asInstanceOf[js.Any])
     
@@ -47,12 +47,12 @@ object IamActionDefinition {
     
     inline def setRolesUndefined: Self = StObject.set(x, "Roles", js.undefined)
     
-    inline def setRolesVarargs(value: Role*): Self = StObject.set(x, "Roles", js.Array(value :_*))
+    inline def setRolesVarargs(value: Role*): Self = StObject.set(x, "Roles", js.Array(value*))
     
     inline def setUsers(value: Users): Self = StObject.set(x, "Users", value.asInstanceOf[js.Any])
     
     inline def setUsersUndefined: Self = StObject.set(x, "Users", js.undefined)
     
-    inline def setUsersVarargs(value: User*): Self = StObject.set(x, "Users", js.Array(value :_*))
+    inline def setUsersVarargs(value: User*): Self = StObject.set(x, "Users", js.Array(value*))
   }
 }

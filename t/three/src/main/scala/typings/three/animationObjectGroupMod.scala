@@ -10,18 +10,18 @@ object animationObjectGroupMod {
   
   @JSImport("three/src/animation/AnimationObjectGroup", "AnimationObjectGroup")
   @js.native
-  class AnimationObjectGroup protected () extends StObject {
-    def this(args: js.Any*) = this()
+  open class AnimationObjectGroup protected () extends StObject {
+    def this(args: Any*) = this()
     
-    def add(args: js.Any*): Unit = js.native
+    def add(args: Any*): Unit = js.native
     
     val isAnimationObjectGroup: `true` = js.native
     
-    def remove(args: js.Any*): Unit = js.native
+    def remove(args: Any*): Unit = js.native
     
     var stats: BindingsPerObject = js.native
     
-    def uncache(args: js.Any*): Unit = js.native
+    def uncache(args: Any*): Unit = js.native
     
     var uuid: String = js.native
   }

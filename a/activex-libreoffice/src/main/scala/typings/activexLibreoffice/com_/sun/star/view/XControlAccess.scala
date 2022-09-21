@@ -24,7 +24,7 @@ object XControlAccess {
   inline def apply(
     acquire: () => Unit,
     getControl: XControlModel => XControl,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XControlAccess = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getControl = js.Any.fromFunction1(getControl), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

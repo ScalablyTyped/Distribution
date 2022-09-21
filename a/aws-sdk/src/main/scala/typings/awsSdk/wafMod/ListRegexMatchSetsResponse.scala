@@ -33,6 +33,6 @@ object ListRegexMatchSetsResponse {
     
     inline def setRegexMatchSetsUndefined: Self = StObject.set(x, "RegexMatchSets", js.undefined)
     
-    inline def setRegexMatchSetsVarargs(value: RegexMatchSetSummary*): Self = StObject.set(x, "RegexMatchSets", js.Array(value :_*))
+    inline def setRegexMatchSetsVarargs(value: RegexMatchSetSummary*): Self = StObject.set(x, "RegexMatchSets", js.Array(value*))
   }
 }

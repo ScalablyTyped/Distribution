@@ -4,8 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babylonjs.BABYLON.IMaterialDetailMapDefines because var conflicts: _areTexturesDirty. Inlined DETAIL, DETAILDIRECTUV, DETAIL_NORMALBLENDMETHOD */ @js.native
+@js.native
 trait StandardMaterialDefines
   extends StObject
      with MaterialDefines
@@ -22,6 +21,8 @@ trait StandardMaterialDefines
   var AMBIENT: Boolean = js.native
   
   var AMBIENTDIRECTUV: Double = js.native
+  
+  var BAKED_VERTEX_ANIMATION_TEXTURE: Boolean = js.native
   
   var BONES_VELOCITY_ENABLED: Boolean = js.native
   
@@ -47,12 +48,6 @@ trait StandardMaterialDefines
   
   var DEPTHPREPASS: Boolean = js.native
   
-  var DETAIL: Boolean = js.native
-  
-  var DETAILDIRECTUV: Double = js.native
-  
-  var DETAIL_NORMALBLENDMETHOD: Double = js.native
-  
   var DIFFUSE: Boolean = js.native
   
   var DIFFUSEDIRECTUV: Double = js.native
@@ -74,6 +69,8 @@ trait StandardMaterialDefines
   var GLOSSINESS: Boolean = js.native
   
   var INSTANCES: Boolean = js.native
+  
+  var INSTANCESCOLOR: Boolean = js.native
   
   var INVERTCUBICMAP: Boolean = js.native
   
@@ -101,11 +98,21 @@ trait StandardMaterialDefines
   
   var MAINUV2: Boolean = js.native
   
+  var MAINUV3: Boolean = js.native
+  
+  var MAINUV4: Boolean = js.native
+  
+  var MAINUV5: Boolean = js.native
+  
+  var MAINUV6: Boolean = js.native
+  
   var MORPHTARGETS: Boolean = js.native
   
   var MORPHTARGETS_NORMAL: Boolean = js.native
   
   var MORPHTARGETS_TANGENT: Boolean = js.native
+  
+  var MORPHTARGETS_TEXTURE: Boolean = js.native
   
   var MORPHTARGETS_UV: Boolean = js.native
   
@@ -129,6 +136,10 @@ trait StandardMaterialDefines
   
   var OPACITYRGB: Boolean = js.native
   
+  var ORDER_INDEPENDENT_TRANSPARENCY: Boolean = js.native
+  
+  var ORDER_INDEPENDENT_TRANSPARENCY_16BITS: Boolean = js.native
+  
   var PARALLAX: Boolean = js.native
   
   var PARALLAXOCCLUSION: Boolean = js.native
@@ -139,17 +150,21 @@ trait StandardMaterialDefines
   
   var PREPASS: Boolean = js.native
   
-  var PREPASS_ALBEDO: Boolean = js.native
+  var PREPASS_ALBEDO_SQRT: Boolean = js.native
   
-  var PREPASS_ALBEDO_INDEX: Double = js.native
+  var PREPASS_ALBEDO_SQRT_INDEX: Double = js.native
   
-  var PREPASS_DEPTHNORMAL: Boolean = js.native
+  var PREPASS_DEPTH: Boolean = js.native
   
-  var PREPASS_DEPTHNORMAL_INDEX: Double = js.native
+  var PREPASS_DEPTH_INDEX: Double = js.native
   
   var PREPASS_IRRADIANCE: Boolean = js.native
   
   var PREPASS_IRRADIANCE_INDEX: Double = js.native
+  
+  var PREPASS_NORMAL: Boolean = js.native
+  
+  var PREPASS_NORMAL_INDEX: Double = js.native
   
   var PREPASS_POSITION: Boolean = js.native
   
@@ -180,6 +195,8 @@ trait StandardMaterialDefines
   var REFLECTIONMAP_EXPLICIT: Boolean = js.native
   
   var REFLECTIONMAP_MIRROREDEQUIRECTANGULAR_FIXED: Boolean = js.native
+  
+  var REFLECTIONMAP_OPPOSITEZ: Boolean = js.native
   
   var REFLECTIONMAP_PLANAR: Boolean = js.native
   
@@ -217,6 +234,8 @@ trait StandardMaterialDefines
   
   var SPECULARTERM: Boolean = js.native
   
+  var TANGENT: Boolean = js.native
+  
   var THIN_INSTANCES: Boolean = js.native
   
   var TWOSIDEDLIGHTING: Boolean = js.native
@@ -225,9 +244,19 @@ trait StandardMaterialDefines
   
   var USE_LOCAL_REFLECTIONMAP_CUBIC: Boolean = js.native
   
+  var USE_LOCAL_REFRACTIONMAP_CUBIC: Boolean = js.native
+  
   var UV1: Boolean = js.native
   
   var UV2: Boolean = js.native
+  
+  var UV3: Boolean = js.native
+  
+  var UV4: Boolean = js.native
+  
+  var UV5: Boolean = js.native
+  
+  var UV6: Boolean = js.native
   
   var VERTEXALPHA: Boolean = js.native
   

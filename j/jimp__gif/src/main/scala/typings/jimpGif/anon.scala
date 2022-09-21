@@ -3,7 +3,7 @@ package typings.jimpGif
 import typings.jimpCore.etcMod.Bitmap
 import typings.jimpCore.etcMod.DecoderFn
 import typings.jimpGif.jimpGifStrings.imageSlashgif
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +27,7 @@ object anon {
       
       inline def setImageSlashgif(value: js.Array[String]): Self = StObject.set(x, "image/gif", value.asInstanceOf[js.Any])
       
-      inline def setImageSlashgifVarargs(value: String*): Self = StObject.set(x, "image/gif", js.Array(value :_*))
+      inline def setImageSlashgifVarargs(value: String*): Self = StObject.set(x, "image/gif", js.Array(value*))
     }
   }
   

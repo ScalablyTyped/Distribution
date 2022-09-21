@@ -1,9 +1,5 @@
 package typings.googleapis.cloudschedulerV1beta1Mod.cloudschedulerV1beta1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,13 +9,12 @@ trait ParamsResourceProjectsLocationsJobsDelete
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
+    * This field is used to manage the legacy App Engine Cron jobs using the Cloud Scheduler API. If the field is set to true, the job in the __cron queue with the corresponding name will be deleted instead.
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
+  var legacyAppEngineCron: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Required.  The job name. For example:
-    * `projects/PROJECT_ID/locations/LOCATION_ID/jobs/JOB_ID`.
+    * Required. The job name. For example: `projects/PROJECT_ID/locations/LOCATION_ID/jobs/JOB_ID`.
     */
   var name: js.UndefOr[String] = js.undefined
 }
@@ -32,9 +27,9 @@ object ParamsResourceProjectsLocationsJobsDelete {
   
   extension [Self <: ParamsResourceProjectsLocationsJobsDelete](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setLegacyAppEngineCron(value: Boolean): Self = StObject.set(x, "legacyAppEngineCron", value.asInstanceOf[js.Any])
     
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setLegacyAppEngineCronUndefined: Self = StObject.set(x, "legacyAppEngineCron", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

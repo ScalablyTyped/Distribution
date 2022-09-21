@@ -1,7 +1,7 @@
 
 # Scala.js typings for hot-shots
 
-Typings are for version 8.2.0
+Typings are for version 9.2.0
 
 ## Library description:
 Node.js client for StatsD, DogStatsD, and Telegraf
@@ -10,10 +10,10 @@ Node.js client for StatsD, DogStatsD, and Telegraf
 | ------------------ | :-------------: |
 | Full name          | hot-shots |
 | Keywords           | statsd, dogstatsd, datadog, metrics, telegraf |
-| # releases         | 33 |
-| # dependents       | 72 |
-| # downloads        | 13000375 |
-| # stars            | 6 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 4730683.666666667 |
+| # stars            | 420.0 |
 
 ## Links
 - [Homepage](https://github.com/brightcove/hot-shots#readme)

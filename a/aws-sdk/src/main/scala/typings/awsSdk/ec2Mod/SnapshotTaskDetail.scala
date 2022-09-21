@@ -27,7 +27,7 @@ trait SnapshotTaskDetail extends StObject {
   var Format: js.UndefOr[String] = js.undefined
   
   /**
-    * The identifier for the AWS Key Management Service (AWS KMS) customer master key (CMK) that was used to create the encrypted snapshot.
+    * The identifier for the KMS key that was used to create the encrypted snapshot.
     */
   var KmsKeyId: js.UndefOr[String] = js.undefined
   

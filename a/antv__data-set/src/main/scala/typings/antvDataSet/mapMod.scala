@@ -8,9 +8,7 @@ object mapMod {
   
   trait Options extends StObject {
     
-    var callback: js.UndefOr[
-        js.Function3[/* item */ js.Any, /* index */ Double, /* arr */ js.Array[js.Any], js.Any]
-      ] = js.undefined
+    var callback: js.UndefOr[js.Function3[/* item */ Any, /* index */ Double, /* arr */ js.Array[Any], Any]] = js.undefined
   }
   object Options {
     
@@ -21,7 +19,7 @@ object mapMod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setCallback(value: (/* item */ js.Any, /* index */ Double, /* arr */ js.Array[js.Any]) => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction3(value))
+      inline def setCallback(value: (/* item */ Any, /* index */ Double, /* arr */ js.Array[Any]) => Any): Self = StObject.set(x, "callback", js.Any.fromFunction3(value))
       
       inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     }

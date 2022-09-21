@@ -20,7 +20,7 @@ object Filters {
   @JSGlobal("Windows.Web.Http.Filters.HttpBaseProtocolFilter")
   @js.native
   /** Initializes a new instance of the HttpBaseProtocolFilter class. */
-  class HttpBaseProtocolFilter ()
+  open class HttpBaseProtocolFilter ()
     extends StObject
        with typings.winrtUwp.Windows.Web.Http.Filters.HttpBaseProtocolFilter {
     

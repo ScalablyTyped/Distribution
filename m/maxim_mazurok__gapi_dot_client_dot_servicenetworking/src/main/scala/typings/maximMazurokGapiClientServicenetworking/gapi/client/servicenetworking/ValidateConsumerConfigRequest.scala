@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ValidateConsumerConfigRequest extends StObject {
   
+  /** Optional. The IAM permission check determines whether the consumer project has 'servicenetworking.services.use' permission or not. */
+  var checkServiceNetworkingUsePermission: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Required. The network that the consumer is using to connect with services. Must be in the form of projects/{project}/global/networks/{network} {project} is a project number, as in
     * '12345' {network} is network name.
@@ -33,6 +36,10 @@ object ValidateConsumerConfigRequest {
   }
   
   extension [Self <: ValidateConsumerConfigRequest](x: Self) {
+    
+    inline def setCheckServiceNetworkingUsePermission(value: Boolean): Self = StObject.set(x, "checkServiceNetworkingUsePermission", value.asInstanceOf[js.Any])
+    
+    inline def setCheckServiceNetworkingUsePermissionUndefined: Self = StObject.set(x, "checkServiceNetworkingUsePermission", js.undefined)
     
     inline def setConsumerNetwork(value: String): Self = StObject.set(x, "consumerNetwork", value.asInstanceOf[js.Any])
     

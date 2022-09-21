@@ -3,11 +3,10 @@ package typings.connectAzuretables
 import typings.connectAzuretables.connectAzuretablesStrings.SET
 import typings.connectAzuretables.connectAzuretablesStrings.TOUCH
 import typings.express.mod.RequestHandler
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.expressSession.mod.SessionData
 import typings.expressSession.mod.SessionOptions
 import typings.expressSession.mod.Store
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,13 @@ object mod {
   inline def apply(
     session: js.Function1[
       /* options */ js.UndefOr[SessionOptions], 
-      RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
+      RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ]
     ]
   ): AzureTableStoreFactory = ^.asInstanceOf[js.Dynamic].apply(session.asInstanceOf[js.Any]).asInstanceOf[AzureTableStoreFactory]
   
@@ -32,14 +37,13 @@ object mod {
     
     def startBackgroundCleanUp(): Unit = js.native
     
-    @JSName("update")
-    def update_SET(method: SET, sid: String, session: SessionData): Unit = js.native
-    @JSName("update")
-    def update_SET(method: SET, sid: String, session: SessionData, callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
-    @JSName("update")
-    def update_TOUCH(method: TOUCH, sid: String, session: SessionData): Unit = js.native
-    @JSName("update")
-    def update_TOUCH(method: TOUCH, sid: String, session: SessionData, callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+    def update(method: SET | TOUCH, sid: String, session: SessionData): Unit = js.native
+    def update(
+      method: SET | TOUCH,
+      sid: String,
+      session: SessionData,
+      callback: js.Function1[/* err */ Any, Unit]
+    ): Unit = js.native
   }
   
   trait AzureTableStoreFactory extends StObject {

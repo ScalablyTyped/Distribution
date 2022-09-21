@@ -14,7 +14,7 @@ object diagramWidgetMod {
   
   @JSImport("storm-react-diagrams/dist/src/widgets/DiagramWidget", "DiagramWidget")
   @js.native
-  class DiagramWidget protected () extends BaseWidget[DiagramProps, DiagramState] {
+  open class DiagramWidget protected () extends BaseWidget[DiagramProps, DiagramState] {
     def this(props: DiagramProps) = this()
     
     @JSName("componentDidMount")
@@ -39,15 +39,15 @@ object diagramWidgetMod {
     /**
       * Gets a model and element under the mouse cursor
       */
-    def getMouseElement(event: js.Any): typings.stormReactDiagrams.anon.Element = js.native
+    def getMouseElement(event: Any): typings.stormReactDiagrams.anon.Element = js.native
     
-    def onKeyUp(event: js.Any): Unit = js.native
+    def onKeyUp(event: Any): Unit = js.native
     
     def onKeyUpPointer(ev: KeyboardEvent): Unit = js.native
     
-    def onMouseMove(event: js.Any): Unit = js.native
+    def onMouseMove(event: Any): Unit = js.native
     
-    def onMouseUp(event: js.Any): Unit = js.native
+    def onMouseUp(event: Any): Unit = js.native
     
     def startFiringAction(action: BaseAction): Unit = js.native
     
@@ -130,7 +130,7 @@ object diagramWidgetMod {
       
       inline def setDeleteKeysUndefined: Self = StObject.set(x, "deleteKeys", js.undefined)
       
-      inline def setDeleteKeysVarargs(value: Double*): Self = StObject.set(x, "deleteKeys", js.Array(value :_*))
+      inline def setDeleteKeysVarargs(value: Double*): Self = StObject.set(x, "deleteKeys", js.Array(value*))
       
       inline def setDiagramEngine(value: DiagramEngine): Self = StObject.set(x, "diagramEngine", value.asInstanceOf[js.Any])
       
@@ -152,24 +152,24 @@ object diagramWidgetMod {
     
     var action: BaseAction | Null
     
-    var diagramEngineListener: js.Any
+    var diagramEngineListener: Any
     
-    var document: js.Any
+    var document: Any
     
     var renderedNodes: Boolean
     
     var wasMoved: Boolean
     
-    var windowListener: js.Any
+    var windowListener: Any
   }
   object DiagramState {
     
     inline def apply(
-      diagramEngineListener: js.Any,
-      document: js.Any,
+      diagramEngineListener: Any,
+      document: Any,
       renderedNodes: Boolean,
       wasMoved: Boolean,
-      windowListener: js.Any
+      windowListener: Any
     ): DiagramState = {
       val __obj = js.Dynamic.literal(diagramEngineListener = diagramEngineListener.asInstanceOf[js.Any], document = document.asInstanceOf[js.Any], renderedNodes = renderedNodes.asInstanceOf[js.Any], wasMoved = wasMoved.asInstanceOf[js.Any], windowListener = windowListener.asInstanceOf[js.Any], action = null)
       __obj.asInstanceOf[DiagramState]
@@ -181,15 +181,15 @@ object diagramWidgetMod {
       
       inline def setActionNull: Self = StObject.set(x, "action", null)
       
-      inline def setDiagramEngineListener(value: js.Any): Self = StObject.set(x, "diagramEngineListener", value.asInstanceOf[js.Any])
+      inline def setDiagramEngineListener(value: Any): Self = StObject.set(x, "diagramEngineListener", value.asInstanceOf[js.Any])
       
-      inline def setDocument(value: js.Any): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+      inline def setDocument(value: Any): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
       
       inline def setRenderedNodes(value: Boolean): Self = StObject.set(x, "renderedNodes", value.asInstanceOf[js.Any])
       
       inline def setWasMoved(value: Boolean): Self = StObject.set(x, "wasMoved", value.asInstanceOf[js.Any])
       
-      inline def setWindowListener(value: js.Any): Self = StObject.set(x, "windowListener", value.asInstanceOf[js.Any])
+      inline def setWindowListener(value: Any): Self = StObject.set(x, "windowListener", value.asInstanceOf[js.Any])
     }
   }
 }

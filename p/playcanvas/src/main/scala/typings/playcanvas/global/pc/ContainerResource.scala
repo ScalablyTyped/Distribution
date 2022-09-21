@@ -4,35 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** @typedef {import('../framework/entity.js').Entity} Entity */
+/** @typedef {import('../scene/mesh-instance').MeshInstance} MeshInstance */
+/** @typedef {import('../framework/app-base.js').AppBase} AppBase */
+/** @typedef {import('./handler.js').ResourceHandler} ResourceHandler */
+/** @typedef {import('./handler.js').ResourceHandlerCallback} ResourceHandlerCallback */
 /**
-  * Container for a list of animations, textures, materials and a model.
-  * @property animations - Array of assets of animations in the GLB container.
-  * @property textures - Array of assets of textures in the GLB container.
-  * @property materials - Array of assets of materials in the GLB container.
-  * @param data - The loaded GLB data.
+  * @interface
+  * @name ContainerResource
+  * @description Container for a list of animations, textures, materials, renders and a model.
   */
 @JSGlobal("pc.ContainerResource")
 @js.native
-class ContainerResource protected ()
-  extends StObject
-     with typings.playcanvas.pc.ContainerResource {
-  def this(data: js.Any) = this()
-  
-  /**
-    * Array of assets of animations in the GLB container.
-    */
-  /* CompleteClass */
-  var animations: js.Array[typings.playcanvas.pc.Asset] = js.native
-  
-  /**
-    * Array of assets of materials in the GLB container.
-    */
-  /* CompleteClass */
-  var materials: js.Array[typings.playcanvas.pc.Asset] = js.native
-  
-  /**
-    * Array of assets of textures in the GLB container.
-    */
-  /* CompleteClass */
-  var textures: js.Array[typings.playcanvas.pc.Asset] = js.native
-}
+open class ContainerResource ()
+  extends typings.playcanvas.mod.ContainerResource

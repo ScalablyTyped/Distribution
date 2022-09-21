@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("selenium-webdriver", "Alert")
 @js.native
-class Alert protected () extends StObject {
+open class Alert protected () extends StObject {
   /**
     * @param {!WebDriver} driver The driver controlling the browser this alert
     *     is attached to.

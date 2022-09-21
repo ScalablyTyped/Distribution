@@ -152,7 +152,7 @@ object pinpointMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/Pinpoint", "Pinpoint")
   @js.native
-  class Pinpoint protected () extends PinpointClient {
+  open class Pinpoint protected () extends PinpointClient {
     def this(configuration: PinpointConfiguration) = this()
     
     /**
@@ -170,7 +170,7 @@ object pinpointMod {
     def createApp(args: CreateAppInput): js.Promise[CreateAppOutput] = js.native
     def createApp(
       args: CreateAppInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[CreateAppOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[CreateAppOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -188,7 +188,7 @@ object pinpointMod {
     def createCampaign(args: CreateCampaignInput): js.Promise[CreateCampaignOutput] = js.native
     def createCampaign(
       args: CreateCampaignInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[CreateCampaignOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[CreateCampaignOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -206,7 +206,7 @@ object pinpointMod {
     def createExportJob(args: CreateExportJobInput): js.Promise[CreateExportJobOutput] = js.native
     def createExportJob(
       args: CreateExportJobInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[CreateExportJobOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[CreateExportJobOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -224,7 +224,7 @@ object pinpointMod {
     def createImportJob(args: CreateImportJobInput): js.Promise[CreateImportJobOutput] = js.native
     def createImportJob(
       args: CreateImportJobInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[CreateImportJobOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[CreateImportJobOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -242,7 +242,7 @@ object pinpointMod {
     def createSegment(args: CreateSegmentInput): js.Promise[CreateSegmentOutput] = js.native
     def createSegment(
       args: CreateSegmentInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[CreateSegmentOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[CreateSegmentOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -260,7 +260,7 @@ object pinpointMod {
     def deleteAdmChannel(args: DeleteAdmChannelInput): js.Promise[DeleteAdmChannelOutput] = js.native
     def deleteAdmChannel(
       args: DeleteAdmChannelInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteAdmChannelOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteAdmChannelOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -278,7 +278,7 @@ object pinpointMod {
     def deleteApnsChannel(args: DeleteApnsChannelInput): js.Promise[DeleteApnsChannelOutput] = js.native
     def deleteApnsChannel(
       args: DeleteApnsChannelInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteApnsChannelOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteApnsChannelOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -296,7 +296,7 @@ object pinpointMod {
     def deleteApnsSandboxChannel(args: DeleteApnsSandboxChannelInput): js.Promise[DeleteApnsSandboxChannelOutput] = js.native
     def deleteApnsSandboxChannel(
       args: DeleteApnsSandboxChannelInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteApnsSandboxChannelOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteApnsSandboxChannelOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -314,7 +314,7 @@ object pinpointMod {
     def deleteApnsVoipChannel(args: DeleteApnsVoipChannelInput): js.Promise[DeleteApnsVoipChannelOutput] = js.native
     def deleteApnsVoipChannel(
       args: DeleteApnsVoipChannelInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteApnsVoipChannelOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteApnsVoipChannelOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -332,7 +332,7 @@ object pinpointMod {
     def deleteApnsVoipSandboxChannel(args: DeleteApnsVoipSandboxChannelInput): js.Promise[DeleteApnsVoipSandboxChannelOutput] = js.native
     def deleteApnsVoipSandboxChannel(
       args: DeleteApnsVoipSandboxChannelInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteApnsVoipSandboxChannelOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteApnsVoipSandboxChannelOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -350,7 +350,7 @@ object pinpointMod {
     def deleteApp(args: DeleteAppInput): js.Promise[DeleteAppOutput] = js.native
     def deleteApp(
       args: DeleteAppInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteAppOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteAppOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -368,7 +368,7 @@ object pinpointMod {
     def deleteBaiduChannel(args: DeleteBaiduChannelInput): js.Promise[DeleteBaiduChannelOutput] = js.native
     def deleteBaiduChannel(
       args: DeleteBaiduChannelInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteBaiduChannelOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteBaiduChannelOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -386,7 +386,7 @@ object pinpointMod {
     def deleteCampaign(args: DeleteCampaignInput): js.Promise[DeleteCampaignOutput] = js.native
     def deleteCampaign(
       args: DeleteCampaignInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteCampaignOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteCampaignOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -404,7 +404,7 @@ object pinpointMod {
     def deleteEmailChannel(args: DeleteEmailChannelInput): js.Promise[DeleteEmailChannelOutput] = js.native
     def deleteEmailChannel(
       args: DeleteEmailChannelInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteEmailChannelOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteEmailChannelOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -422,7 +422,7 @@ object pinpointMod {
     def deleteEndpoint(args: DeleteEndpointInput): js.Promise[DeleteEndpointOutput] = js.native
     def deleteEndpoint(
       args: DeleteEndpointInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteEndpointOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteEndpointOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -440,7 +440,7 @@ object pinpointMod {
     def deleteEventStream(args: DeleteEventStreamInput): js.Promise[DeleteEventStreamOutput] = js.native
     def deleteEventStream(
       args: DeleteEventStreamInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteEventStreamOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteEventStreamOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -458,7 +458,7 @@ object pinpointMod {
     def deleteGcmChannel(args: DeleteGcmChannelInput): js.Promise[DeleteGcmChannelOutput] = js.native
     def deleteGcmChannel(
       args: DeleteGcmChannelInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteGcmChannelOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteGcmChannelOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -476,7 +476,7 @@ object pinpointMod {
     def deleteSegment(args: DeleteSegmentInput): js.Promise[DeleteSegmentOutput] = js.native
     def deleteSegment(
       args: DeleteSegmentInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteSegmentOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteSegmentOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -494,7 +494,7 @@ object pinpointMod {
     def deleteSmsChannel(args: DeleteSmsChannelInput): js.Promise[DeleteSmsChannelOutput] = js.native
     def deleteSmsChannel(
       args: DeleteSmsChannelInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteSmsChannelOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteSmsChannelOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -512,7 +512,7 @@ object pinpointMod {
     def deleteUserEndpoints(args: DeleteUserEndpointsInput): js.Promise[DeleteUserEndpointsOutput] = js.native
     def deleteUserEndpoints(
       args: DeleteUserEndpointsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteUserEndpointsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteUserEndpointsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -530,7 +530,7 @@ object pinpointMod {
     def getAdmChannel(args: GetAdmChannelInput): js.Promise[GetAdmChannelOutput] = js.native
     def getAdmChannel(
       args: GetAdmChannelInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetAdmChannelOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetAdmChannelOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -548,7 +548,7 @@ object pinpointMod {
     def getApnsChannel(args: GetApnsChannelInput): js.Promise[GetApnsChannelOutput] = js.native
     def getApnsChannel(
       args: GetApnsChannelInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetApnsChannelOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetApnsChannelOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -566,7 +566,7 @@ object pinpointMod {
     def getApnsSandboxChannel(args: GetApnsSandboxChannelInput): js.Promise[GetApnsSandboxChannelOutput] = js.native
     def getApnsSandboxChannel(
       args: GetApnsSandboxChannelInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetApnsSandboxChannelOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetApnsSandboxChannelOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -584,7 +584,7 @@ object pinpointMod {
     def getApnsVoipChannel(args: GetApnsVoipChannelInput): js.Promise[GetApnsVoipChannelOutput] = js.native
     def getApnsVoipChannel(
       args: GetApnsVoipChannelInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetApnsVoipChannelOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetApnsVoipChannelOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -602,7 +602,7 @@ object pinpointMod {
     def getApnsVoipSandboxChannel(args: GetApnsVoipSandboxChannelInput): js.Promise[GetApnsVoipSandboxChannelOutput] = js.native
     def getApnsVoipSandboxChannel(
       args: GetApnsVoipSandboxChannelInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetApnsVoipSandboxChannelOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetApnsVoipSandboxChannelOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -618,7 +618,7 @@ object pinpointMod {
       *   - {Error} An error originating from the SDK or customizations rather than the service
       */
     def getApp(args: GetAppInput): js.Promise[GetAppOutput] = js.native
-    def getApp(args: GetAppInput, cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetAppOutput], Unit]): Unit = js.native
+    def getApp(args: GetAppInput, cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetAppOutput], Unit]): Unit = js.native
     
     /**
       * Used to request the settings for an app.
@@ -635,7 +635,7 @@ object pinpointMod {
     def getApplicationSettings(args: GetApplicationSettingsInput): js.Promise[GetApplicationSettingsOutput] = js.native
     def getApplicationSettings(
       args: GetApplicationSettingsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetApplicationSettingsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetApplicationSettingsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -651,7 +651,7 @@ object pinpointMod {
       *   - {Error} An error originating from the SDK or customizations rather than the service
       */
     def getApps(args: GetAppsInput): js.Promise[GetAppsOutput] = js.native
-    def getApps(args: GetAppsInput, cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetAppsOutput], Unit]): Unit = js.native
+    def getApps(args: GetAppsInput, cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetAppsOutput], Unit]): Unit = js.native
     
     /**
       * Get a BAIDU GCM channel
@@ -668,7 +668,7 @@ object pinpointMod {
     def getBaiduChannel(args: GetBaiduChannelInput): js.Promise[GetBaiduChannelOutput] = js.native
     def getBaiduChannel(
       args: GetBaiduChannelInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetBaiduChannelOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetBaiduChannelOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -686,7 +686,7 @@ object pinpointMod {
     def getCampaign(args: GetCampaignInput): js.Promise[GetCampaignOutput] = js.native
     def getCampaign(
       args: GetCampaignInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetCampaignOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetCampaignOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -704,7 +704,7 @@ object pinpointMod {
     def getCampaignActivities(args: GetCampaignActivitiesInput): js.Promise[GetCampaignActivitiesOutput] = js.native
     def getCampaignActivities(
       args: GetCampaignActivitiesInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetCampaignActivitiesOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetCampaignActivitiesOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -722,7 +722,7 @@ object pinpointMod {
     def getCampaignVersion(args: GetCampaignVersionInput): js.Promise[GetCampaignVersionOutput] = js.native
     def getCampaignVersion(
       args: GetCampaignVersionInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetCampaignVersionOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetCampaignVersionOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -740,7 +740,7 @@ object pinpointMod {
     def getCampaignVersions(args: GetCampaignVersionsInput): js.Promise[GetCampaignVersionsOutput] = js.native
     def getCampaignVersions(
       args: GetCampaignVersionsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetCampaignVersionsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetCampaignVersionsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -758,7 +758,7 @@ object pinpointMod {
     def getCampaigns(args: GetCampaignsInput): js.Promise[GetCampaignsOutput] = js.native
     def getCampaigns(
       args: GetCampaignsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetCampaignsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetCampaignsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -776,7 +776,7 @@ object pinpointMod {
     def getChannels(args: GetChannelsInput): js.Promise[GetChannelsOutput] = js.native
     def getChannels(
       args: GetChannelsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetChannelsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetChannelsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -794,7 +794,7 @@ object pinpointMod {
     def getEmailChannel(args: GetEmailChannelInput): js.Promise[GetEmailChannelOutput] = js.native
     def getEmailChannel(
       args: GetEmailChannelInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetEmailChannelOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetEmailChannelOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -812,7 +812,7 @@ object pinpointMod {
     def getEndpoint(args: GetEndpointInput): js.Promise[GetEndpointOutput] = js.native
     def getEndpoint(
       args: GetEndpointInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetEndpointOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetEndpointOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -830,7 +830,7 @@ object pinpointMod {
     def getEventStream(args: GetEventStreamInput): js.Promise[GetEventStreamOutput] = js.native
     def getEventStream(
       args: GetEventStreamInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetEventStreamOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetEventStreamOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -848,7 +848,7 @@ object pinpointMod {
     def getExportJob(args: GetExportJobInput): js.Promise[GetExportJobOutput] = js.native
     def getExportJob(
       args: GetExportJobInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetExportJobOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetExportJobOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -866,7 +866,7 @@ object pinpointMod {
     def getExportJobs(args: GetExportJobsInput): js.Promise[GetExportJobsOutput] = js.native
     def getExportJobs(
       args: GetExportJobsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetExportJobsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetExportJobsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -884,7 +884,7 @@ object pinpointMod {
     def getGcmChannel(args: GetGcmChannelInput): js.Promise[GetGcmChannelOutput] = js.native
     def getGcmChannel(
       args: GetGcmChannelInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetGcmChannelOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetGcmChannelOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -902,7 +902,7 @@ object pinpointMod {
     def getImportJob(args: GetImportJobInput): js.Promise[GetImportJobOutput] = js.native
     def getImportJob(
       args: GetImportJobInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetImportJobOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetImportJobOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -920,7 +920,7 @@ object pinpointMod {
     def getImportJobs(args: GetImportJobsInput): js.Promise[GetImportJobsOutput] = js.native
     def getImportJobs(
       args: GetImportJobsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetImportJobsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetImportJobsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -938,7 +938,7 @@ object pinpointMod {
     def getSegment(args: GetSegmentInput): js.Promise[GetSegmentOutput] = js.native
     def getSegment(
       args: GetSegmentInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetSegmentOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetSegmentOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -956,7 +956,7 @@ object pinpointMod {
     def getSegmentExportJobs(args: GetSegmentExportJobsInput): js.Promise[GetSegmentExportJobsOutput] = js.native
     def getSegmentExportJobs(
       args: GetSegmentExportJobsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetSegmentExportJobsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetSegmentExportJobsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -974,7 +974,7 @@ object pinpointMod {
     def getSegmentImportJobs(args: GetSegmentImportJobsInput): js.Promise[GetSegmentImportJobsOutput] = js.native
     def getSegmentImportJobs(
       args: GetSegmentImportJobsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetSegmentImportJobsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetSegmentImportJobsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -992,7 +992,7 @@ object pinpointMod {
     def getSegmentVersion(args: GetSegmentVersionInput): js.Promise[GetSegmentVersionOutput] = js.native
     def getSegmentVersion(
       args: GetSegmentVersionInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetSegmentVersionOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetSegmentVersionOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -1010,7 +1010,7 @@ object pinpointMod {
     def getSegmentVersions(args: GetSegmentVersionsInput): js.Promise[GetSegmentVersionsOutput] = js.native
     def getSegmentVersions(
       args: GetSegmentVersionsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetSegmentVersionsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetSegmentVersionsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -1028,7 +1028,7 @@ object pinpointMod {
     def getSegments(args: GetSegmentsInput): js.Promise[GetSegmentsOutput] = js.native
     def getSegments(
       args: GetSegmentsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetSegmentsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetSegmentsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -1046,7 +1046,7 @@ object pinpointMod {
     def getSmsChannel(args: GetSmsChannelInput): js.Promise[GetSmsChannelOutput] = js.native
     def getSmsChannel(
       args: GetSmsChannelInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetSmsChannelOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetSmsChannelOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -1064,7 +1064,7 @@ object pinpointMod {
     def getUserEndpoints(args: GetUserEndpointsInput): js.Promise[GetUserEndpointsOutput] = js.native
     def getUserEndpoints(
       args: GetUserEndpointsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetUserEndpointsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetUserEndpointsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -1082,7 +1082,7 @@ object pinpointMod {
     def phoneNumberValidate(args: PhoneNumberValidateInput): js.Promise[PhoneNumberValidateOutput] = js.native
     def phoneNumberValidate(
       args: PhoneNumberValidateInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PhoneNumberValidateOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[PhoneNumberValidateOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -1100,7 +1100,7 @@ object pinpointMod {
     def putEventStream(args: PutEventStreamInput): js.Promise[PutEventStreamOutput] = js.native
     def putEventStream(
       args: PutEventStreamInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutEventStreamOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[PutEventStreamOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -1118,7 +1118,7 @@ object pinpointMod {
     def putEvents(args: PutEventsInput): js.Promise[PutEventsOutput] = js.native
     def putEvents(
       args: PutEventsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutEventsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[PutEventsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -1136,7 +1136,7 @@ object pinpointMod {
     def removeAttributes(args: RemoveAttributesInput): js.Promise[RemoveAttributesOutput] = js.native
     def removeAttributes(
       args: RemoveAttributesInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[RemoveAttributesOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[RemoveAttributesOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -1154,7 +1154,7 @@ object pinpointMod {
     def sendMessages(args: SendMessagesInput): js.Promise[SendMessagesOutput] = js.native
     def sendMessages(
       args: SendMessagesInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[SendMessagesOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[SendMessagesOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -1172,7 +1172,7 @@ object pinpointMod {
     def sendUsersMessages(args: SendUsersMessagesInput): js.Promise[SendUsersMessagesOutput] = js.native
     def sendUsersMessages(
       args: SendUsersMessagesInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[SendUsersMessagesOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[SendUsersMessagesOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -1190,7 +1190,7 @@ object pinpointMod {
     def updateAdmChannel(args: UpdateAdmChannelInput): js.Promise[UpdateAdmChannelOutput] = js.native
     def updateAdmChannel(
       args: UpdateAdmChannelInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UpdateAdmChannelOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[UpdateAdmChannelOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -1208,7 +1208,7 @@ object pinpointMod {
     def updateApnsChannel(args: UpdateApnsChannelInput): js.Promise[UpdateApnsChannelOutput] = js.native
     def updateApnsChannel(
       args: UpdateApnsChannelInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UpdateApnsChannelOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[UpdateApnsChannelOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -1226,7 +1226,7 @@ object pinpointMod {
     def updateApnsSandboxChannel(args: UpdateApnsSandboxChannelInput): js.Promise[UpdateApnsSandboxChannelOutput] = js.native
     def updateApnsSandboxChannel(
       args: UpdateApnsSandboxChannelInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UpdateApnsSandboxChannelOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[UpdateApnsSandboxChannelOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -1244,7 +1244,7 @@ object pinpointMod {
     def updateApnsVoipChannel(args: UpdateApnsVoipChannelInput): js.Promise[UpdateApnsVoipChannelOutput] = js.native
     def updateApnsVoipChannel(
       args: UpdateApnsVoipChannelInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UpdateApnsVoipChannelOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[UpdateApnsVoipChannelOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -1262,7 +1262,7 @@ object pinpointMod {
     def updateApnsVoipSandboxChannel(args: UpdateApnsVoipSandboxChannelInput): js.Promise[UpdateApnsVoipSandboxChannelOutput] = js.native
     def updateApnsVoipSandboxChannel(
       args: UpdateApnsVoipSandboxChannelInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UpdateApnsVoipSandboxChannelOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[UpdateApnsVoipSandboxChannelOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -1280,7 +1280,7 @@ object pinpointMod {
     def updateApplicationSettings(args: UpdateApplicationSettingsInput): js.Promise[UpdateApplicationSettingsOutput] = js.native
     def updateApplicationSettings(
       args: UpdateApplicationSettingsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UpdateApplicationSettingsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[UpdateApplicationSettingsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -1298,7 +1298,7 @@ object pinpointMod {
     def updateBaiduChannel(args: UpdateBaiduChannelInput): js.Promise[UpdateBaiduChannelOutput] = js.native
     def updateBaiduChannel(
       args: UpdateBaiduChannelInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UpdateBaiduChannelOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[UpdateBaiduChannelOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -1316,7 +1316,7 @@ object pinpointMod {
     def updateCampaign(args: UpdateCampaignInput): js.Promise[UpdateCampaignOutput] = js.native
     def updateCampaign(
       args: UpdateCampaignInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UpdateCampaignOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[UpdateCampaignOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -1334,7 +1334,7 @@ object pinpointMod {
     def updateEmailChannel(args: UpdateEmailChannelInput): js.Promise[UpdateEmailChannelOutput] = js.native
     def updateEmailChannel(
       args: UpdateEmailChannelInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UpdateEmailChannelOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[UpdateEmailChannelOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -1352,7 +1352,7 @@ object pinpointMod {
     def updateEndpoint(args: UpdateEndpointInput): js.Promise[UpdateEndpointOutput] = js.native
     def updateEndpoint(
       args: UpdateEndpointInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UpdateEndpointOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[UpdateEndpointOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -1370,7 +1370,7 @@ object pinpointMod {
     def updateEndpointsBatch(args: UpdateEndpointsBatchInput): js.Promise[UpdateEndpointsBatchOutput] = js.native
     def updateEndpointsBatch(
       args: UpdateEndpointsBatchInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UpdateEndpointsBatchOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[UpdateEndpointsBatchOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -1388,7 +1388,7 @@ object pinpointMod {
     def updateGcmChannel(args: UpdateGcmChannelInput): js.Promise[UpdateGcmChannelOutput] = js.native
     def updateGcmChannel(
       args: UpdateGcmChannelInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UpdateGcmChannelOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[UpdateGcmChannelOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -1406,7 +1406,7 @@ object pinpointMod {
     def updateSegment(args: UpdateSegmentInput): js.Promise[UpdateSegmentOutput] = js.native
     def updateSegment(
       args: UpdateSegmentInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UpdateSegmentOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[UpdateSegmentOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -1424,7 +1424,7 @@ object pinpointMod {
     def updateSmsChannel(args: UpdateSmsChannelInput): js.Promise[UpdateSmsChannelOutput] = js.native
     def updateSmsChannel(
       args: UpdateSmsChannelInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UpdateSmsChannelOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[UpdateSmsChannelOutput], Unit]
     ): Unit = js.native
   }
 }

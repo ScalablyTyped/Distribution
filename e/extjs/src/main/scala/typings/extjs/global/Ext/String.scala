@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Ext.String")
 @js.native
-class String ()
+open class String ()
   extends StObject
      with typings.extjs.Ext.String
 /* static members */
@@ -20,7 +20,7 @@ object String {
     * @param entities Object The set of character entities to add to the current definitions.
     */
   inline def addCharacterEntities(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addCharacterEntities")().asInstanceOf[Unit]
-  inline def addCharacterEntities(entities: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addCharacterEntities")(entities.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addCharacterEntities(entities: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addCharacterEntities")(entities.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Capitalize the given string
     * @param string String
@@ -84,7 +84,7 @@ object String {
     * @param values Mixed... The values to replace tokens {0}, {1}, etc in order.
     * @returns String The formatted string.
     */
-  inline def format(string: java.lang.String, values: js.Any*): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(string.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+  inline def format(string: java.lang.String, values: Any*): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(List(string.asInstanceOf[js.Any]).`++`(values.asInstanceOf[Seq[js.Any]])*).asInstanceOf[java.lang.String]
   
   /** [Method] Convert certain characters  amp lt  and from their HTML character equivalents
     * @param value String The string to decode.
@@ -151,7 +151,7 @@ object String {
     * @param words String/Array
     */
   inline def splitWords(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("splitWords")().asInstanceOf[Unit]
-  inline def splitWords(words: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("splitWords")(words.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def splitWords(words: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("splitWords")(words.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Checks if a string starts with a substring
     * @param s String The original string

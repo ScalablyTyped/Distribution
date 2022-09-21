@@ -29,6 +29,12 @@ object SymbolDisplayPartKind extends StObject {
   
   /* 6 */ val lineBreak: typings.typescript.mod.SymbolDisplayPartKind.lineBreak & Double = js.native
   
+  /* 22 */ val link: typings.typescript.mod.SymbolDisplayPartKind.link & Double = js.native
+  
+  /* 23 */ val linkName: typings.typescript.mod.SymbolDisplayPartKind.linkName & Double = js.native
+  
+  /* 24 */ val linkText: typings.typescript.mod.SymbolDisplayPartKind.linkText & Double = js.native
+  
   /* 9 */ val localName: typings.typescript.mod.SymbolDisplayPartKind.localName & Double = js.native
   
   /* 10 */ val methodName: typings.typescript.mod.SymbolDisplayPartKind.methodName & Double = js.native

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EstimateTemplateCostOutput extends StObject {
   
   /**
-    * An AWS Simple Monthly Calculator URL with a query string that describes the resources required to run the template.
+    * An Amazon Web Services Simple Monthly Calculator URL with a query string that describes the resources required to run the template.
     */
   var Url: js.UndefOr[typings.awsSdk.cloudformationMod.Url] = js.undefined
 }

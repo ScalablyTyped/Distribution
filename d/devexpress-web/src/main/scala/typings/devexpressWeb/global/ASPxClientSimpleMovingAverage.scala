@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientSimpleMovingAverage")
 @js.native
-class ASPxClientSimpleMovingAverage ()
+open class ASPxClientSimpleMovingAverage ()
   extends StObject
      with typings.devexpressWeb.ASPxClientMovingAverage {
   

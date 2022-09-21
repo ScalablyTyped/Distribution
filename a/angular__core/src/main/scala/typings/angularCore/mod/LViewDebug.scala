@@ -14,19 +14,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `LViewDebug` for easier debugging and test writing. It is the intent of `LViewDebug` to be used
   * in tests.
   */
-trait LViewDebug extends StObject {
+trait LViewDebug[T] extends StObject {
   
   /**
     * Child `LView`s
     */
-  val childViews: js.Array[LViewDebug | LContainerDebug]
+  val childViews: js.Array[LViewDebug[Any] | LContainerDebug]
   
   /**
     * The context used for evaluation of the `LView`
     *
     * (Usually the component)
     */
-  val context: js.Object | Null
+  val context: T
   
   /**
     * Sub range of `LView` containing decls (DOM elements).
@@ -60,7 +60,7 @@ trait LViewDebug extends StObject {
   /**
     * Next sibling to the `LView`.
     */
-  val next: LViewDebug | LContainerDebug | Null
+  val next: LViewDebug[Any] | LContainerDebug | Null
   
   /**
     * Hierarchical tree of nodes.
@@ -70,7 +70,7 @@ trait LViewDebug extends StObject {
   /**
     * Parent view (or container)
     */
-  val parent: LViewDebug | LContainerDebug | Null
+  val parent: LViewDebug[Any] | LContainerDebug | Null
   
   /**
     * Associated TView
@@ -90,8 +90,9 @@ trait LViewDebug extends StObject {
 }
 object LViewDebug {
   
-  inline def apply(
-    childViews: js.Array[LViewDebug | LContainerDebug],
+  inline def apply[T](
+    childViews: js.Array[LViewDebug[Any] | LContainerDebug],
+    context: T,
     decls: LViewDebugRange,
     expando: LViewDebugRange,
     flags: Attached,
@@ -100,20 +101,18 @@ object LViewDebug {
     tView: TView,
     template: String,
     vars: LViewDebugRange
-  ): LViewDebug = {
-    val __obj = js.Dynamic.literal(childViews = childViews.asInstanceOf[js.Any], decls = decls.asInstanceOf[js.Any], expando = expando.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], tView = tView.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], vars = vars.asInstanceOf[js.Any], context = null, hostHTML = null, next = null, parent = null)
-    __obj.asInstanceOf[LViewDebug]
+  ): LViewDebug[T] = {
+    val __obj = js.Dynamic.literal(childViews = childViews.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], decls = decls.asInstanceOf[js.Any], expando = expando.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], tView = tView.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], vars = vars.asInstanceOf[js.Any], hostHTML = null, next = null, parent = null)
+    __obj.asInstanceOf[LViewDebug[T]]
   }
   
-  extension [Self <: LViewDebug](x: Self) {
+  extension [Self <: LViewDebug[?], T](x: Self & LViewDebug[T]) {
     
-    inline def setChildViews(value: js.Array[LViewDebug | LContainerDebug]): Self = StObject.set(x, "childViews", value.asInstanceOf[js.Any])
+    inline def setChildViews(value: js.Array[LViewDebug[Any] | LContainerDebug]): Self = StObject.set(x, "childViews", value.asInstanceOf[js.Any])
     
-    inline def setChildViewsVarargs(value: (LViewDebug | LContainerDebug)*): Self = StObject.set(x, "childViews", js.Array(value :_*))
+    inline def setChildViewsVarargs(value: (LViewDebug[Any] | LContainerDebug)*): Self = StObject.set(x, "childViews", js.Array(value*))
     
-    inline def setContext(value: js.Object): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
-    
-    inline def setContextNull: Self = StObject.set(x, "context", null)
+    inline def setContext(value: T): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     inline def setDecls(value: LViewDebugRange): Self = StObject.set(x, "decls", value.asInstanceOf[js.Any])
     
@@ -127,15 +126,15 @@ object LViewDebug {
     
     inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
-    inline def setNext(value: LViewDebug | LContainerDebug): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: LViewDebug[Any] | LContainerDebug): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
     inline def setNextNull: Self = StObject.set(x, "next", null)
     
     inline def setNodes(value: js.Array[DebugNode2]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    inline def setNodesVarargs(value: DebugNode2*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: DebugNode2*): Self = StObject.set(x, "nodes", js.Array(value*))
     
-    inline def setParent(value: LViewDebug | LContainerDebug): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: LViewDebug[Any] | LContainerDebug): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     inline def setParentNull: Self = StObject.set(x, "parent", null)
     

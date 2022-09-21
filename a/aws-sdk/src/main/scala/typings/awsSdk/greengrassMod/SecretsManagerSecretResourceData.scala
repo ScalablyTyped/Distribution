@@ -33,6 +33,6 @@ object SecretsManagerSecretResourceData {
     
     inline def setAdditionalStagingLabelsToDownloadUndefined: Self = StObject.set(x, "AdditionalStagingLabelsToDownload", js.undefined)
     
-    inline def setAdditionalStagingLabelsToDownloadVarargs(value: string*): Self = StObject.set(x, "AdditionalStagingLabelsToDownload", js.Array(value :_*))
+    inline def setAdditionalStagingLabelsToDownloadVarargs(value: string*): Self = StObject.set(x, "AdditionalStagingLabelsToDownload", js.Array(value*))
   }
 }

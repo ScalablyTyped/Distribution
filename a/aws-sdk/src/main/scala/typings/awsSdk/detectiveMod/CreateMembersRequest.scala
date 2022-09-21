@@ -7,12 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateMembersRequest extends StObject {
   
   /**
-    * The list of AWS accounts to invite to become member accounts in the behavior graph. For each invited account, the account list contains the account identifier and the AWS account root user email address.
+    * The list of Amazon Web Services accounts to invite or to enable. You can invite or enable up to 50 accounts at a time. For each invited account, the account list contains the account identifier and the Amazon Web Services account root user email address. For organization accounts in the organization behavior graph, the email address is not required.
     */
   var Accounts: AccountList
   
   /**
-    * The ARN of the behavior graph to invite the member accounts to contribute their data to.
+    * if set to true, then the invited accounts do not receive email notifications. By default, this is set to false, and the invited accounts receive email notifications. Organization accounts in the organization behavior graph do not receive email notifications.
+    */
+  var DisableEmailNotification: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * The ARN of the behavior graph.
     */
   var GraphArn: typings.awsSdk.detectiveMod.GraphArn
   
@@ -32,7 +37,11 @@ object CreateMembersRequest {
     
     inline def setAccounts(value: AccountList): Self = StObject.set(x, "Accounts", value.asInstanceOf[js.Any])
     
-    inline def setAccountsVarargs(value: Account*): Self = StObject.set(x, "Accounts", js.Array(value :_*))
+    inline def setAccountsVarargs(value: Account*): Self = StObject.set(x, "Accounts", js.Array(value*))
+    
+    inline def setDisableEmailNotification(value: Boolean): Self = StObject.set(x, "DisableEmailNotification", value.asInstanceOf[js.Any])
+    
+    inline def setDisableEmailNotificationUndefined: Self = StObject.set(x, "DisableEmailNotification", js.undefined)
     
     inline def setGraphArn(value: GraphArn): Self = StObject.set(x, "GraphArn", value.asInstanceOf[js.Any])
     

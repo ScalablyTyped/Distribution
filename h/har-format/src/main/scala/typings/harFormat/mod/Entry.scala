@@ -1,10 +1,18 @@
 package typings.harFormat.mod
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Entry extends StObject {
+trait Entry
+  extends StObject
+     with /**
+  * _non-standard_
+  *
+  * See "Custom Fields" under http://www.softwareishard.com/blog/har-12-spec
+  */
+/* customField */ StringDictionary[js.UndefOr[Any | Null]] {
   
   /** _non-standard_  */
   var _all_end: js.UndefOr[Double | String | Null] = js.undefined
@@ -32,6 +40,9 @@ trait Entry extends StObject {
   
   /** _non-standard_  */
   var _certificate_bytes: js.UndefOr[Double | String | Null] = js.undefined
+  
+  /** _non-standard_  */
+  var _chunks: js.UndefOr[js.Array[Chunk] | Null] = js.undefined
   
   /** _non-standard_  */
   var _client_port: js.UndefOr[Double | String | Null] = js.undefined
@@ -130,6 +141,9 @@ trait Entry extends StObject {
   var _ip_addr: js.UndefOr[String | Null] = js.undefined
   
   /** _non-standard_  */
+  var _isLCP: js.UndefOr[Boolean | Null] = js.undefined
+  
+  /** _non-standard_  */
   var _is_secure: js.UndefOr[Double | String | Null] = js.undefined
   
   /** _non-standard_  */
@@ -167,6 +181,9 @@ trait Entry extends StObject {
   
   /** _non-standard_  */
   var _protocol: js.UndefOr[Double | String | Null] = js.undefined
+  
+  /** _non-standard_  */
+  var _renderBlocking: js.UndefOr[String | Null] = js.undefined
   
   /** _non-standard_  */
   var _request_id: js.UndefOr[Double | String | Null] = js.undefined
@@ -393,6 +410,14 @@ object Entry {
     
     inline def set_certificate_bytesUndefined: Self = StObject.set(x, "_certificate_bytes", js.undefined)
     
+    inline def set_chunks(value: js.Array[Chunk]): Self = StObject.set(x, "_chunks", value.asInstanceOf[js.Any])
+    
+    inline def set_chunksNull: Self = StObject.set(x, "_chunks", null)
+    
+    inline def set_chunksUndefined: Self = StObject.set(x, "_chunks", js.undefined)
+    
+    inline def set_chunksVarargs(value: Chunk*): Self = StObject.set(x, "_chunks", js.Array(value*))
+    
     inline def set_client_port(value: Double | String): Self = StObject.set(x, "_client_port", value.asInstanceOf[js.Any])
     
     inline def set_client_portNull: Self = StObject.set(x, "_client_port", null)
@@ -585,6 +610,12 @@ object Entry {
     
     inline def set_ip_addrUndefined: Self = StObject.set(x, "_ip_addr", js.undefined)
     
+    inline def set_isLCP(value: Boolean): Self = StObject.set(x, "_isLCP", value.asInstanceOf[js.Any])
+    
+    inline def set_isLCPNull: Self = StObject.set(x, "_isLCP", null)
+    
+    inline def set_isLCPUndefined: Self = StObject.set(x, "_isLCP", js.undefined)
+    
     inline def set_is_secure(value: Double | String): Self = StObject.set(x, "_is_secure", value.asInstanceOf[js.Any])
     
     inline def set_is_secureNull: Self = StObject.set(x, "_is_secure", null)
@@ -662,6 +693,12 @@ object Entry {
     inline def set_protocolNull: Self = StObject.set(x, "_protocol", null)
     
     inline def set_protocolUndefined: Self = StObject.set(x, "_protocol", js.undefined)
+    
+    inline def set_renderBlocking(value: String): Self = StObject.set(x, "_renderBlocking", value.asInstanceOf[js.Any])
+    
+    inline def set_renderBlockingNull: Self = StObject.set(x, "_renderBlocking", null)
+    
+    inline def set_renderBlockingUndefined: Self = StObject.set(x, "_renderBlocking", js.undefined)
     
     inline def set_request_id(value: Double | String): Self = StObject.set(x, "_request_id", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,6 @@
 package typings.diagnosticChannelPublishers
 
 import typings.diagnosticChannel.patchRequireMod.IModulePatcher
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,13 +27,13 @@ object winstonPubMod {
     
     var levelKind: String
     
-    var message: String | Error
+    var message: String | js.Error
     
-    var meta: js.Any
+    var meta: Any
   }
   object IWinstonData {
     
-    inline def apply(level: String, levelKind: String, message: String | Error, meta: js.Any): IWinstonData = {
+    inline def apply(level: String, levelKind: String, message: String | js.Error, meta: Any): IWinstonData = {
       val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], levelKind = levelKind.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any])
       __obj.asInstanceOf[IWinstonData]
     }
@@ -45,9 +44,9 @@ object winstonPubMod {
       
       inline def setLevelKind(value: String): Self = StObject.set(x, "levelKind", value.asInstanceOf[js.Any])
       
-      inline def setMessage(value: String | Error): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String | js.Error): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      inline def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     }
   }
 }

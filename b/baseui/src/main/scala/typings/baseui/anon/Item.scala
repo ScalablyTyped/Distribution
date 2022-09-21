@@ -11,11 +11,11 @@ trait Item extends StObject {
   
   var event: js.UndefOr[(SyntheticEvent[HTMLElement, typings.std.Event]) | KeyboardEvent] = js.undefined
   
-  var item: js.Any
+  var item: typings.baseui.menuTypesMod.Item
 }
 object Item {
   
-  inline def apply(item: js.Any): Item = {
+  inline def apply(item: typings.baseui.menuTypesMod.Item): Item = {
     val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any])
     __obj.asInstanceOf[Item]
   }
@@ -26,6 +26,6 @@ object Item {
     
     inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
-    inline def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: typings.baseui.menuTypesMod.Item): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
   }
 }

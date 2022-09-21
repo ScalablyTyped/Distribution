@@ -1,6 +1,7 @@
 package typings.ethersprojectAbstractSigner
 
 import typings.ethersprojectAbstractProvider.mod.BlockTag
+import typings.ethersprojectAbstractProvider.mod.FeeData
 import typings.ethersprojectAbstractProvider.mod.Provider
 import typings.ethersprojectAbstractProvider.mod.TransactionRequest
 import typings.ethersprojectAbstractProvider.mod.TransactionResponse
@@ -41,6 +42,8 @@ object mod {
     
     def getChainId(): js.Promise[Double] = js.native
     
+    def getFeeData(): js.Promise[FeeData] = js.native
+    
     def getGasPrice(): js.Promise[BigNumber] = js.native
     
     def getTransactionCount(): js.Promise[Double] = js.native
@@ -66,24 +69,24 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def isSigner(value: js.Any): /* is @ethersproject/abstract-signer.@ethersproject/abstract-signer.Signer */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSigner")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abstract-signer.@ethersproject/abstract-signer.Signer */ Boolean]
+    inline def isSigner(value: Any): /* is @ethersproject/abstract-signer.@ethersproject/abstract-signer.Signer */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSigner")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abstract-signer.@ethersproject/abstract-signer.Signer */ Boolean]
   }
   
   @JSImport("@ethersproject/abstract-signer", "VoidSigner")
   @js.native
-  class VoidSigner protected ()
+  open class VoidSigner protected ()
     extends Signer
        with TypedDataSigner {
     def this(address: String) = this()
     def this(address: String, provider: Provider) = this()
     
-    def _fail(message: String, operation: String): js.Promise[js.Any] = js.native
+    def _fail(message: String, operation: String): js.Promise[Any] = js.native
     
     /* CompleteClass */
     override def _signTypedData(
       domain: TypedDataDomain,
       types: Record[String, js.Array[TypedDataField]],
-      value: Record[String, js.Any]
+      value: Record[String, Any]
     ): js.Promise[String] = js.native
     
     val address: String = js.native
@@ -180,13 +183,13 @@ object mod {
     def _signTypedData(
       domain: TypedDataDomain,
       types: Record[String, js.Array[TypedDataField]],
-      value: Record[String, js.Any]
+      value: Record[String, Any]
     ): js.Promise[String]
   }
   object TypedDataSigner {
     
     inline def apply(
-      _signTypedData: (TypedDataDomain, Record[String, js.Array[TypedDataField]], Record[String, js.Any]) => js.Promise[String]
+      _signTypedData: (TypedDataDomain, Record[String, js.Array[TypedDataField]], Record[String, Any]) => js.Promise[String]
     ): TypedDataSigner = {
       val __obj = js.Dynamic.literal(_signTypedData = js.Any.fromFunction3(_signTypedData))
       __obj.asInstanceOf[TypedDataSigner]
@@ -195,7 +198,7 @@ object mod {
     extension [Self <: TypedDataSigner](x: Self) {
       
       inline def set_signTypedData(
-        value: (TypedDataDomain, Record[String, js.Array[TypedDataField]], Record[String, js.Any]) => js.Promise[String]
+        value: (TypedDataDomain, Record[String, js.Array[TypedDataField]], Record[String, Any]) => js.Promise[String]
       ): Self = StObject.set(x, "_signTypedData", js.Any.fromFunction3(value))
     }
   }

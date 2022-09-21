@@ -10,10 +10,10 @@ truncates (with ellipsis) overflowing text elements and adds a tooltip https://a
 | ------------------ | :-------------: |
 | Full name          | react-ellipsis-with-tooltip |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 6 |
-| # downloads        | 320782 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9573.333333333334 |
+| # stars            | 21.0 |
 
 ## Links
 - [Homepage](https://github.com/amirfefer/react-ellipsis-with-tooltip#readme)

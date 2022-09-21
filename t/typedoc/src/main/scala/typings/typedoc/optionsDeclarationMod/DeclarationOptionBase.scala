@@ -6,14 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DeclarationOptionBase extends StObject {
   
+  /**
+    * The help text to be displayed to the user when --help is passed.
+    */
   var help: String
   
+  /**
+    * The option name.
+    */
   var name: String
   
-  var scope: js.UndefOr[ParameterScope] = js.undefined
-  
-  var short: js.UndefOr[String] = js.undefined
-  
+  /**
+    * The parameter type, used to convert user configuration values into the expected type.
+    * If not set, the type will be a string.
+    */
   var `type`: js.UndefOr[ParameterType] = js.undefined
 }
 object DeclarationOptionBase {
@@ -28,14 +34,6 @@ object DeclarationOptionBase {
     inline def setHelp(value: String): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-    
-    inline def setScope(value: ParameterScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
-    
-    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
-    
-    inline def setShort(value: String): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
-    
-    inline def setShortUndefined: Self = StObject.set(x, "short", js.undefined)
     
     inline def setType(value: ParameterType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

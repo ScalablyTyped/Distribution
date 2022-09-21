@@ -23,7 +23,7 @@ trait ObjectChain[T]
   /**
     * @see _.assign
     */
-  def assign(otherArgs: js.Any*): ObjectChain[js.Any] = js.native
+  def assign(otherArgs: Any*): ObjectChain[Any] = js.native
   /**
     * @see _.assign
     */
@@ -48,7 +48,7 @@ trait ObjectChain[T]
   /**
     * @see _.assignIn
     */
-  def assignIn(otherArgs: js.Any*): ObjectChain[js.Any] = js.native
+  def assignIn(otherArgs: Any*): ObjectChain[Any] = js.native
   /**
     * @see _.assignIn
     */
@@ -73,7 +73,7 @@ trait ObjectChain[T]
   /**
     * @see _.assignInWith
     */
-  def assignInWith(otherArgs: js.Any*): ObjectChain[js.Any] = js.native
+  def assignInWith(otherArgs: Any*): ObjectChain[Any] = js.native
   /**
     * @see _.assignInWith
     */
@@ -104,7 +104,7 @@ trait ObjectChain[T]
   /**
     * @see _.assignWith
     */
-  def assignWith(otherArgs: js.Any*): ObjectChain[js.Any] = js.native
+  def assignWith(otherArgs: Any*): ObjectChain[Any] = js.native
   /**
     * @see _.assignWith
     */
@@ -168,7 +168,7 @@ trait ObjectChain[T]
   /**
     * @see _.defaults
     */
-  def defaults(sources: js.Any*): ObjectChain[js.Any] = js.native
+  def defaults(sources: Any*): ObjectChain[Any] = js.native
   /**
     * @see _.defaults
     */
@@ -189,30 +189,30 @@ trait ObjectChain[T]
   /**
     * @see _.defaultsDeep
     */
-  def defaultsDeep(sources: js.Any*): ObjectChain[js.Any] = js.native
+  def defaultsDeep(sources: Any*): ObjectChain[Any] = js.native
   
   /**
     * @see _.each
     */
   def each(): ObjectChain[T] = js.native
-  def each(iteratee: ObjectIterator[T, js.Any]): ObjectChain[T] = js.native
+  def each(iteratee: ObjectIterator[T, Any]): ObjectChain[T] = js.native
   
   /**
     * @see _.eachRight
     */
   def eachRight(): ObjectChain[T] = js.native
-  def eachRight(iteratee: ObjectIterator[T, js.Any]): ObjectChain[T] = js.native
+  def eachRight(iteratee: ObjectIterator[T, Any]): ObjectChain[T] = js.native
   /**
     * @see _.eachRight
     */
   @JSName("eachRight")
-  var eachRight_Original: js.Function1[/* iteratee */ js.UndefOr[ObjectIterator[T, js.Any]], ObjectChain[T]] = js.native
+  var eachRight_Original: js.Function1[/* iteratee */ js.UndefOr[ObjectIterator[T, Any]], ObjectChain[T]] = js.native
   
   /**
     * @see _.each
     */
   @JSName("each")
-  var each_Original: js.Function1[/* iteratee */ js.UndefOr[ObjectIterator[T, js.Any]], ObjectChain[T]] = js.native
+  var each_Original: js.Function1[/* iteratee */ js.UndefOr[ObjectIterator[T, Any]], ObjectChain[T]] = js.native
   
   /**
     * @see _.every
@@ -227,7 +227,7 @@ trait ObjectChain[T]
   /**
     * @see _.extend
     */
-  def extend(otherArgs: js.Any*): ObjectChain[js.Any] = js.native
+  def extend(otherArgs: Any*): ObjectChain[Any] = js.native
   /**
     * @see _.extend
     */
@@ -252,7 +252,7 @@ trait ObjectChain[T]
   /**
     * @see _.extendWith
     */
-  def extendWith(otherArgs: js.Any*): ObjectChain[js.Any] = js.native
+  def extendWith(otherArgs: Any*): ObjectChain[Any] = js.native
   /**
     * @see _.extendWith
     */
@@ -358,7 +358,7 @@ trait ObjectChain[T]
   /**
     * @see _.flatMap
     */
-  def flatMap(iteratee: js.Tuple2[PropertyName, js.Any]): CollectionChain[Boolean] = js.native
+  def flatMap(iteratee: js.Tuple2[PropertyName, Any]): CollectionChain[Boolean] = js.native
   /**
     * @see _.flatMap
     */
@@ -375,7 +375,7 @@ trait ObjectChain[T]
   /**
     * @see _.flatMapDeep
     */
-  def flatMapDeep(iteratee: js.Tuple2[PropertyName, js.Any]): CollectionChain[Boolean] = js.native
+  def flatMapDeep(iteratee: js.Tuple2[PropertyName, Any]): CollectionChain[Boolean] = js.native
   /**
     * @see _.flatMapDeep
     */
@@ -396,8 +396,8 @@ trait ObjectChain[T]
   /**
     * @see _.flatMapDepth
     */
-  def flatMapDepth(iteratee: js.Tuple2[PropertyName, js.Any]): CollectionChain[Boolean] = js.native
-  def flatMapDepth(iteratee: js.Tuple2[PropertyName, js.Any], depth: Double): CollectionChain[Boolean] = js.native
+  def flatMapDepth(iteratee: js.Tuple2[PropertyName, Any]): CollectionChain[Boolean] = js.native
+  def flatMapDepth(iteratee: js.Tuple2[PropertyName, Any], depth: Double): CollectionChain[Boolean] = js.native
   /**
     * @see _.flatMapDepth
     */
@@ -410,19 +410,19 @@ trait ObjectChain[T]
     * @see _.forEach
     */
   def forEach(): ObjectChain[T] = js.native
-  def forEach(iteratee: ObjectIterator[T, js.Any]): ObjectChain[T] = js.native
+  def forEach(iteratee: ObjectIterator[T, Any]): ObjectChain[T] = js.native
   
   /**
     * @see _.forEachRight
     */
   def forEachRight(): ObjectChain[T] = js.native
-  def forEachRight(iteratee: ObjectIterator[T, js.Any]): ObjectChain[T] = js.native
+  def forEachRight(iteratee: ObjectIterator[T, Any]): ObjectChain[T] = js.native
   
   /**
     * @see _.get
     */
-  def get(path: PropertyPath): LoDashExplicitWrapper[js.Any] = js.native
-  def get(path: PropertyPath, defaultValue: js.Any): LoDashExplicitWrapper[js.Any] = js.native
+  def get(path: PropertyPath): LoDashExplicitWrapper[Any] = js.native
+  def get(path: PropertyPath, defaultValue: Any): LoDashExplicitWrapper[Any] = js.native
   /**
     * @see _.get
     */
@@ -440,15 +440,6 @@ trait ObjectChain[T]
       /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] */ js.Any, 
       Unit
     ])
-  ] = js.native
-  /**
-    * @see _.get
-    */
-  def get[TKey /* <: /* keyof T */ java.lang.String */, TDefault](path: TKey, defaultValue: TDefault): ExpChain[
-    (Exclude[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] */ js.Any, 
-      Unit
-    ]) | TDefault
   ] = js.native
   def get[TKey /* <: /* keyof T */ java.lang.String */, TDefault](path: js.Array[TKey], defaultValue: TDefault): ExpChain[
     (Exclude[
@@ -525,6 +516,16 @@ trait ObjectChain[T]
   def get[TKey1 /* <: /* keyof T */ java.lang.String */, TKey2 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[TKey1] */ js.Any */, TKey3 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[TKey1][TKey2] */ js.Any */, TKey4 /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof T[TKey1][TKey2][TKey3] */ js.Any */, TDefault](path: js.Tuple4[TKey1, TKey2, TKey3, TKey4], defaultValue: TDefault): ExpChain[
     (Exclude[
       /* import warning: importer.ImportType#apply Failed type conversion: T[TKey1][TKey2][TKey3][TKey4] */ js.Any, 
+      Unit
+    ]) | TDefault
+  ] = js.native
+  /**
+    * @see _.get
+    */
+  @JSName("get")
+  def get_TKey_StringTDefault_ExpChain[TKey /* <: /* keyof T */ java.lang.String */, TDefault](path: TKey, defaultValue: TDefault): ExpChain[
+    (Exclude[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[TKey] */ js.Any, 
       Unit
     ]) | TDefault
   ] = js.native
@@ -611,11 +612,11 @@ trait ObjectChain[T]
   /**
     * @see _.map
     */
-  def map(iteratee: js.Tuple2[PropertyName, js.Any]): CollectionChain[Boolean] = js.native
+  def map(iteratee: js.Tuple2[PropertyName, Any]): CollectionChain[Boolean] = js.native
   /**
     * @see _.map
     */
-  def map(iteratee: PropertyName): CollectionChain[js.Any] = js.native
+  def map(iteratee: PropertyName): CollectionChain[Any] = js.native
   /**
     * @see _.map
     */
@@ -645,7 +646,7 @@ trait ObjectChain[T]
   def mapValues(iteratee: java.lang.String): ObjectChain[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: any}
-    */ typings.lodash.lodashStrings.ObjectChain & TopLevel[js.Any]
+    */ typings.lodash.lodashStrings.ObjectChain & TopLevel[Any]
   ] = js.native
   /**
     * @see _.mapValues
@@ -653,7 +654,7 @@ trait ObjectChain[T]
   def mapValues(iteratee: js.Object): ObjectChain[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: boolean}
-    */ typings.lodash.lodashStrings.ObjectChain & TopLevel[js.Any]
+    */ typings.lodash.lodashStrings.ObjectChain & TopLevel[Any]
   ] = js.native
   /**
     * @see _.mapValues
@@ -666,7 +667,7 @@ trait ObjectChain[T]
   ): ObjectChain[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: TResult}
-    */ typings.lodash.lodashStrings.ObjectChain & TopLevel[js.Any]
+    */ typings.lodash.lodashStrings.ObjectChain & TopLevel[Any]
   ] = js.native
   /**
     * @see _.mapValues
@@ -688,7 +689,7 @@ trait ObjectChain[T]
   /**
     * @see _.merge
     */
-  def merge(otherArgs: js.Any*): ObjectChain[js.Any] = js.native
+  def merge(otherArgs: Any*): ObjectChain[Any] = js.native
   /**
     * @see _.merge
     */
@@ -709,7 +710,7 @@ trait ObjectChain[T]
   /**
     * @see _.mergeWith
     */
-  def mergeWith(otherArgs: js.Any*): ObjectChain[js.Any] = js.native
+  def mergeWith(otherArgs: Any*): ObjectChain[Any] = js.native
   /**
     * @see _.mergeWith
     */
@@ -790,17 +791,29 @@ trait ObjectChain[T]
   /**
     * @see _.pick
     */
-  def pick(props: PropertyPath*): ObjectChain[PartialObject[T]] = js.native
+  def pick(props: Many[PropertyPath]*): ObjectChain[PartialObject[T]] = js.native
   
   /**
     * @see _.pickBy
     */
-  def pickBy(): ObjectChain[PartialObject[T]] = js.native
+  def pickBy(): ObjectChain[
+    PartialObject[T] | (NumericDictionary[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]) | (Dictionary[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ])
+  ] = js.native
   def pickBy(
     predicate: ValueKeyIteratee[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
     ]
-  ): ObjectChain[PartialObject[T]] = js.native
+  ): ObjectChain[
+    PartialObject[T] | (NumericDictionary[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ]) | (Dictionary[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
+    ])
+  ] = js.native
   /**
     * @see _.pickBy
     */
@@ -928,19 +941,21 @@ trait ObjectChain[T]
   /**
     * @see _.transform
     */
-  def transform(): ExpChain[T | Dictionary[js.Any]] = js.native
+  def transform(): ExpChain[T | Dictionary[Any]] = js.native
   /**
     * @see _.transform
     */
   def transform[TResult](
     iteratee: MemoVoidDictionaryIterator[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 
+      java.lang.String, 
       TResult
     ]
   ): ExpChain[TResult] = js.native
   def transform[TResult](
     iteratee: MemoVoidDictionaryIterator[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any, 
+      java.lang.String, 
       TResult
     ],
     accumulator: TResult
@@ -949,21 +964,21 @@ trait ObjectChain[T]
   /**
     * @see _.updateWith
     */
-  def updateWith(path: PropertyPath, updater: js.Function1[/* oldValue */ js.Any, js.Any]): this.type = js.native
+  def updateWith(path: PropertyPath, updater: js.Function1[/* oldValue */ Any, Any]): this.type = js.native
   def updateWith(
     path: PropertyPath,
-    updater: js.Function1[/* oldValue */ js.Any, js.Any],
+    updater: js.Function1[/* oldValue */ Any, Any],
     customizer: SetWithCustomizer[T]
   ): this.type = js.native
   /**
     * @see _.updateWith
     */
   @JSName("updateWith")
-  def updateWith_TResult_ObjectChain[TResult](path: PropertyPath, updater: js.Function1[/* oldValue */ js.Any, js.Any]): ObjectChain[TResult] = js.native
+  def updateWith_TResult_ObjectChain[TResult](path: PropertyPath, updater: js.Function1[/* oldValue */ Any, Any]): ObjectChain[TResult] = js.native
   @JSName("updateWith")
   def updateWith_TResult_ObjectChain[TResult](
     path: PropertyPath,
-    updater: js.Function1[/* oldValue */ js.Any, js.Any],
+    updater: js.Function1[/* oldValue */ Any, Any],
     customizer: SetWithCustomizer[T]
   ): ObjectChain[TResult] = js.native
   

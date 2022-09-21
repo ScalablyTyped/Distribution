@@ -7,13 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaClustering extends StObject {
   
   /**
-    * [Repeated] One or more fields on which data should be clustered. Only
-    * top-level, non-repeated, simple-type fields are supported. When you
-    * cluster a table using multiple columns, the order of columns you specify
-    * is important. The order of the specified columns determines the sort
-    * order of the data.
+    * [Repeated] One or more fields on which data should be clustered. Only top-level, non-repeated, simple-type fields are supported. When you cluster a table using multiple columns, the order of columns you specify is important. The order of the specified columns determines the sort order of the data.
     */
-  var fields: js.UndefOr[js.Array[String]] = js.undefined
+  var fields: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaClustering {
   
@@ -26,8 +22,10 @@ object SchemaClustering {
     
     inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
+    inline def setFieldsNull: Self = StObject.set(x, "fields", null)
+    
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value*))
   }
 }

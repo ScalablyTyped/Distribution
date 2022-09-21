@@ -45,7 +45,7 @@ trait BitmapEncoder extends StObject {
     * @param encodingOptions The specified encoding options. A collection of key-value pairs containing one or more codec-specific encoding options and the desired values.
     * @return An object that manages the asynchronous operation of committing the current frame data and appending a new empty frame to be edited.
     */
-  def goToNextFrameAsync(encodingOptions: IIterable[IKeyValuePair[js.Any, js.Any]]): IPromiseWithIAsyncAction = js.native
+  def goToNextFrameAsync(encodingOptions: IIterable[IKeyValuePair[Any, Any]]): IPromiseWithIAsyncAction = js.native
   
   /** Indicates whether or not a new thumbnail is automatically generated. */
   var isThumbnailGenerated: Boolean = js.native

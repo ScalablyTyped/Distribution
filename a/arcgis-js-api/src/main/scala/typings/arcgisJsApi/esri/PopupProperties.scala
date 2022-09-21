@@ -1,5 +1,9 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.anon.ActionButtonPropertiestyp
+import typings.arcgisJsApi.anon.ActionTogglePropertiestyp
+import typings.arcgisJsApi.anon.MapViewPropertiestype2d
+import typings.arcgisJsApi.anon.SceneViewPropertiestype3d
 import typings.arcgisJsApi.arcgisJsApiStrings.`bottom-center`
 import typings.arcgisJsApi.arcgisJsApiStrings.`bottom-left`
 import typings.arcgisJsApi.arcgisJsApiStrings.`bottom-right`
@@ -21,10 +25,12 @@ trait PopupProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#actions)
     */
-  var actions: js.UndefOr[CollectionProperties[ActionButtonProperties | ActionToggleProperties]] = js.undefined
+  var actions: js.UndefOr[CollectionProperties[ActionButtonPropertiestyp | ActionTogglePropertiestyp]] = js.undefined
   
   /**
     * Position of the popup in relation to the selected feature.
+    *
+    * @default auto
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#alignment)
     */
@@ -35,12 +41,16 @@ trait PopupProperties
   /**
     * This closes the popup when the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html) camera or [Viewpoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-Viewpoint.html) changes.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#autoCloseEnabled)
     */
   var autoCloseEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This property indicates to the `Popup` that it needs to allow or disallow the click event propagation.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#autoOpenEnabled)
     */
@@ -49,12 +59,16 @@ trait PopupProperties
   /**
     * Indicates whether to enable collapse functionality for the popup.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#collapseEnabled)
     */
   var collapseEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether the popup displays its content.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#collapsed)
     */
@@ -70,12 +84,16 @@ trait PopupProperties
   /**
     * Enables automatic creation of a popup template for layers that have popups enabled but no popupTemplate defined.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#defaultPopupTemplateEnabled)
     */
   var defaultPopupTemplateEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether the placement of the popup is docked to the side of the view.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#dockEnabled)
     */
@@ -89,13 +107,6 @@ trait PopupProperties
   var dockOptions: js.UndefOr[PopupDockOptions] = js.undefined
   
   /**
-    * Shows pagination for the popup if available.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#featureNavigationEnabled)
-    */
-  var featureNavigationEnabled: js.UndefOr[Boolean] = js.undefined
-  
-  /**
     * An array of features associated with the popup.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#features)
@@ -103,7 +114,18 @@ trait PopupProperties
   var features: js.UndefOr[js.Array[GraphicProperties]] = js.undefined
   
   /**
+    * Indicates the heading level to use for the [title](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#title) of the popup.
+    *
+    * @default 2
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#headingLevel)
+    */
+  var headingLevel: js.UndefOr[Double] = js.undefined
+  
+  /**
     * Highlight the selected popup feature using the [highlightOptions](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#highlightOptions) set on the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or the [highlightOptions](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#highlightOptions) set on the [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#highlightEnabled)
     */
@@ -119,16 +141,18 @@ trait PopupProperties
   /**
     * Defines the maximum icons displayed at one time in the action area.
     *
+    * @default 3
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#maxInlineActions)
     */
-  var maxInlineActions: js.UndefOr[Double | js.Any] = js.undefined
+  var maxInlineActions: js.UndefOr[Double | Any] = js.undefined
   
   /**
     * An array of pending Promises that have not yet been fulfilled.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#promises)
     */
-  var promises: js.UndefOr[js.Array[js.Promise[js.Any]]] = js.undefined
+  var promises: js.UndefOr[js.Array[js.Promise[Any]]] = js.undefined
   
   /**
     * Index of the feature that is [selected](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#selectedFeature).
@@ -156,7 +180,7 @@ trait PopupProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
+  var view: js.UndefOr[MapViewPropertiestype2d | SceneViewPropertiestype3d] = js.undefined
   
   /**
     * This is a class that contains all the logic (properties and methods) that controls this widget's behavior.
@@ -164,13 +188,6 @@ trait PopupProperties
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#viewModel)
     */
   var viewModel: js.UndefOr[PopupViewModelProperties] = js.undefined
-  
-  /**
-    * Indicates whether the popup is visible.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#visible)
-    */
-  var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The visible elements that are displayed within the widget.
@@ -188,11 +205,11 @@ object PopupProperties {
   
   extension [Self <: PopupProperties](x: Self) {
     
-    inline def setActions(value: CollectionProperties[ActionButtonProperties | ActionToggleProperties]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: CollectionProperties[ActionButtonPropertiestyp | ActionTogglePropertiestyp]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    inline def setActionsVarargs(value: (ActionButtonProperties | ActionToggleProperties)*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: (ActionButtonPropertiestyp | ActionTogglePropertiestyp)*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setAlignment(
       value: auto | `top-center` | `top-right` | `bottom-left` | `bottom-center` | `bottom-right` | js.Function
@@ -232,15 +249,15 @@ object PopupProperties {
     
     inline def setDockOptionsUndefined: Self = StObject.set(x, "dockOptions", js.undefined)
     
-    inline def setFeatureNavigationEnabled(value: Boolean): Self = StObject.set(x, "featureNavigationEnabled", value.asInstanceOf[js.Any])
-    
-    inline def setFeatureNavigationEnabledUndefined: Self = StObject.set(x, "featureNavigationEnabled", js.undefined)
-    
     inline def setFeatures(value: js.Array[GraphicProperties]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
     inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
-    inline def setFeaturesVarargs(value: GraphicProperties*): Self = StObject.set(x, "features", js.Array(value :_*))
+    inline def setFeaturesVarargs(value: GraphicProperties*): Self = StObject.set(x, "features", js.Array(value*))
+    
+    inline def setHeadingLevel(value: Double): Self = StObject.set(x, "headingLevel", value.asInstanceOf[js.Any])
+    
+    inline def setHeadingLevelUndefined: Self = StObject.set(x, "headingLevel", js.undefined)
     
     inline def setHighlightEnabled(value: Boolean): Self = StObject.set(x, "highlightEnabled", value.asInstanceOf[js.Any])
     
@@ -250,15 +267,15 @@ object PopupProperties {
     
     inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    inline def setMaxInlineActions(value: Double | js.Any): Self = StObject.set(x, "maxInlineActions", value.asInstanceOf[js.Any])
+    inline def setMaxInlineActions(value: Double | Any): Self = StObject.set(x, "maxInlineActions", value.asInstanceOf[js.Any])
     
     inline def setMaxInlineActionsUndefined: Self = StObject.set(x, "maxInlineActions", js.undefined)
     
-    inline def setPromises(value: js.Array[js.Promise[js.Any]]): Self = StObject.set(x, "promises", value.asInstanceOf[js.Any])
+    inline def setPromises(value: js.Array[js.Promise[Any]]): Self = StObject.set(x, "promises", value.asInstanceOf[js.Any])
     
     inline def setPromisesUndefined: Self = StObject.set(x, "promises", js.undefined)
     
-    inline def setPromisesVarargs(value: js.Promise[js.Any]*): Self = StObject.set(x, "promises", js.Array(value :_*))
+    inline def setPromisesVarargs(value: js.Promise[Any]*): Self = StObject.set(x, "promises", js.Array(value*))
     
     inline def setSelectedFeatureIndex(value: Double): Self = StObject.set(x, "selectedFeatureIndex", value.asInstanceOf[js.Any])
     
@@ -272,7 +289,7 @@ object PopupProperties {
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    inline def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewPropertiestype2d | SceneViewPropertiestype3d): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     inline def setViewModel(value: PopupViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
@@ -280,12 +297,8 @@ object PopupProperties {
     
     inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
     
-    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
-    
     inline def setVisibleElements(value: PopupVisibleElements): Self = StObject.set(x, "visibleElements", value.asInstanceOf[js.Any])
     
     inline def setVisibleElementsUndefined: Self = StObject.set(x, "visibleElements", js.undefined)
-    
-    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

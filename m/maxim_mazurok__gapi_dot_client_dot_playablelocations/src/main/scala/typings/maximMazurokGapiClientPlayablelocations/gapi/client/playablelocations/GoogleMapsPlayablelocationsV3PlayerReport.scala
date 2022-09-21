@@ -46,6 +46,6 @@ object GoogleMapsPlayablelocationsV3PlayerReport {
     
     inline def setReasonsUndefined: Self = StObject.set(x, "reasons", js.undefined)
     
-    inline def setReasonsVarargs(value: String*): Self = StObject.set(x, "reasons", js.Array(value :_*))
+    inline def setReasonsVarargs(value: String*): Self = StObject.set(x, "reasons", js.Array(value*))
   }
 }

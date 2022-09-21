@@ -10,15 +10,15 @@ Embed a representation of an URL on third party sites
 | ------------------ | :-------------: |
 | Full name          | metascraper-iframe |
 | Keywords           | embed, iframe, metascraper, oembed |
-| # releases         | 90 |
-| # dependents       | 1 |
-| # downloads        | 16893 |
-| # stars            | 0 |
+| # releases         | 95 |
+| # dependents       | 0.0 |
+| # downloads        | 2119.3333333333335 |
+| # stars            | 1802.0 |
 
 ## Links
-- [Homepage](https://nicedoc.io/microlinkhq/metascraper/packages/metascraper-iframe)
+- [Homepage](https://github.com/microlinkhq/metascraper/tree/master#readme)
 - [Bugs](https://github.com/microlinkhq/metascraper/issues)
-- [Repository](https://github.com/microlinkhq/metascraper)
+- [Repository](https://github.com/microlinkhq/metascraper/tree/master)
 - [Npm](https://www.npmjs.com/package/metascraper-iframe)
     
 

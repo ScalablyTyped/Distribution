@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "GradientHelper")
 @js.native
-class GradientHelper ()
+open class GradientHelper ()
   extends typings.babylonjs.indexMod.GradientHelper
 /* static members */
 object GradientHelper {

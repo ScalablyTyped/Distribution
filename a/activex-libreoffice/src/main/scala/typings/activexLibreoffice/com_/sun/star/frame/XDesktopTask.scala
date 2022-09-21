@@ -36,7 +36,7 @@ object XDesktopTask {
     close: () => Boolean,
     dispose: () => Unit,
     initialize: XWindow => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit
   ): XDesktopTask = {

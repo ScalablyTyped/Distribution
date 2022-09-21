@@ -10,10 +10,10 @@ The lodash method `_.upperFirst` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.upperfirst |
 | Keywords           | lodash-modularized, upperfirst |
-| # releases         | 0 |
-| # dependents       | 159 |
-| # downloads        | 23269724 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3174837.3333333335 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

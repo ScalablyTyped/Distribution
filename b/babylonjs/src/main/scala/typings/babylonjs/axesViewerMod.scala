@@ -12,7 +12,7 @@ object axesViewerMod {
   
   @JSImport("babylonjs/Debug/axesViewer", "AxesViewer")
   @js.native
-  class AxesViewer protected () extends StObject {
+  open class AxesViewer protected () extends StObject {
     /**
       * Creates a new AxesViewer
       * @param scene defines the hosting scene
@@ -21,191 +21,27 @@ object axesViewerMod {
       * @param xAxis defines the node hierarchy used to render the x-axis
       * @param yAxis defines the node hierarchy used to render the y-axis
       * @param zAxis defines the node hierarchy used to render the z-axis
+      * @param lineThickness The line thickness to use when creating the arrow. defaults to 1.
       */
-    def this(scene: Scene) = this()
-    def this(scene: Scene, scaleLines: Double) = this()
-    def this(scene: Scene, scaleLines: Double, renderingGroupId: Nullable[Double]) = this()
-    def this(scene: Scene, scaleLines: Unit, renderingGroupId: Nullable[Double]) = this()
-    def this(scene: Scene, scaleLines: Double, renderingGroupId: Unit, xAxis: TransformNode) = this()
-    def this(scene: Scene, scaleLines: Double, renderingGroupId: Nullable[Double], xAxis: TransformNode) = this()
-    def this(scene: Scene, scaleLines: Unit, renderingGroupId: Unit, xAxis: TransformNode) = this()
-    def this(scene: Scene, scaleLines: Unit, renderingGroupId: Nullable[Double], xAxis: TransformNode) = this()
-    def this(scene: Scene, scaleLines: Double, renderingGroupId: Unit, xAxis: Unit, yAxis: TransformNode) = this()
     def this(
-      scene: Scene,
-      scaleLines: Double,
-      renderingGroupId: Unit,
-      xAxis: TransformNode,
-      yAxis: TransformNode
-    ) = this()
-    def this(
-      scene: Scene,
-      scaleLines: Double,
-      renderingGroupId: Nullable[Double],
-      xAxis: Unit,
-      yAxis: TransformNode
-    ) = this()
-    def this(
-      scene: Scene,
-      scaleLines: Double,
-      renderingGroupId: Nullable[Double],
-      xAxis: TransformNode,
-      yAxis: TransformNode
-    ) = this()
-    def this(scene: Scene, scaleLines: Unit, renderingGroupId: Unit, xAxis: Unit, yAxis: TransformNode) = this()
-    def this(scene: Scene, scaleLines: Unit, renderingGroupId: Unit, xAxis: TransformNode, yAxis: TransformNode) = this()
-    def this(
-      scene: Scene,
-      scaleLines: Unit,
-      renderingGroupId: Nullable[Double],
-      xAxis: Unit,
-      yAxis: TransformNode
-    ) = this()
-    def this(
-      scene: Scene,
-      scaleLines: Unit,
-      renderingGroupId: Nullable[Double],
-      xAxis: TransformNode,
-      yAxis: TransformNode
-    ) = this()
-    def this(
-      scene: Scene,
-      scaleLines: Double,
-      renderingGroupId: Unit,
-      xAxis: Unit,
-      yAxis: Unit,
-      zAxis: TransformNode
-    ) = this()
-    def this(
-      scene: Scene,
-      scaleLines: Double,
-      renderingGroupId: Unit,
-      xAxis: Unit,
-      yAxis: TransformNode,
-      zAxis: TransformNode
-    ) = this()
-    def this(
-      scene: Scene,
-      scaleLines: Double,
-      renderingGroupId: Unit,
-      xAxis: TransformNode,
-      yAxis: Unit,
-      zAxis: TransformNode
-    ) = this()
-    def this(
-      scene: Scene,
-      scaleLines: Double,
-      renderingGroupId: Unit,
-      xAxis: TransformNode,
-      yAxis: TransformNode,
-      zAxis: TransformNode
-    ) = this()
-    def this(
-      scene: Scene,
-      scaleLines: Double,
-      renderingGroupId: Nullable[Double],
-      xAxis: Unit,
-      yAxis: Unit,
-      zAxis: TransformNode
-    ) = this()
-    def this(
-      scene: Scene,
-      scaleLines: Double,
-      renderingGroupId: Nullable[Double],
-      xAxis: Unit,
-      yAxis: TransformNode,
-      zAxis: TransformNode
-    ) = this()
-    def this(
-      scene: Scene,
-      scaleLines: Double,
-      renderingGroupId: Nullable[Double],
-      xAxis: TransformNode,
-      yAxis: Unit,
-      zAxis: TransformNode
-    ) = this()
-    def this(
-      scene: Scene,
-      scaleLines: Double,
-      renderingGroupId: Nullable[Double],
-      xAxis: TransformNode,
-      yAxis: TransformNode,
-      zAxis: TransformNode
-    ) = this()
-    def this(
-      scene: Scene,
-      scaleLines: Unit,
-      renderingGroupId: Unit,
-      xAxis: Unit,
-      yAxis: Unit,
-      zAxis: TransformNode
-    ) = this()
-    def this(
-      scene: Scene,
-      scaleLines: Unit,
-      renderingGroupId: Unit,
-      xAxis: Unit,
-      yAxis: TransformNode,
-      zAxis: TransformNode
-    ) = this()
-    def this(
-      scene: Scene,
-      scaleLines: Unit,
-      renderingGroupId: Unit,
-      xAxis: TransformNode,
-      yAxis: Unit,
-      zAxis: TransformNode
-    ) = this()
-    def this(
-      scene: Scene,
-      scaleLines: Unit,
-      renderingGroupId: Unit,
-      xAxis: TransformNode,
-      yAxis: TransformNode,
-      zAxis: TransformNode
-    ) = this()
-    def this(
-      scene: Scene,
-      scaleLines: Unit,
-      renderingGroupId: Nullable[Double],
-      xAxis: Unit,
-      yAxis: Unit,
-      zAxis: TransformNode
-    ) = this()
-    def this(
-      scene: Scene,
-      scaleLines: Unit,
-      renderingGroupId: Nullable[Double],
-      xAxis: Unit,
-      yAxis: TransformNode,
-      zAxis: TransformNode
-    ) = this()
-    def this(
-      scene: Scene,
-      scaleLines: Unit,
-      renderingGroupId: Nullable[Double],
-      xAxis: TransformNode,
-      yAxis: Unit,
-      zAxis: TransformNode
-    ) = this()
-    def this(
-      scene: Scene,
-      scaleLines: Unit,
-      renderingGroupId: Nullable[Double],
-      xAxis: TransformNode,
-      yAxis: TransformNode,
-      zAxis: TransformNode
+      scene: js.UndefOr[Scene],
+      scaleLines: js.UndefOr[Double],
+      renderingGroupId: js.UndefOr[Nullable[Double]],
+      xAxis: js.UndefOr[TransformNode],
+      yAxis: js.UndefOr[TransformNode],
+      zAxis: js.UndefOr[TransformNode],
+      lineThickness: js.UndefOr[Double]
     ) = this()
     
-    /* private */ var _instanced: js.Any = js.native
+    /* private */ var _instanced: Any = js.native
     
-    /* private */ var _scaleLinesFactor: js.Any = js.native
+    /* private */ var _scaleLinesFactor: Any = js.native
     
-    /* private */ var _xAxis: js.Any = js.native
+    /* private */ var _xAxis: Any = js.native
     
-    /* private */ var _yAxis: js.Any = js.native
+    /* private */ var _yAxis: Any = js.native
     
-    /* private */ var _zAxis: js.Any = js.native
+    /* private */ var _zAxis: Any = js.native
     
     /**
       * Creates an instance of this axes viewer.
@@ -253,7 +89,7 @@ object axesViewerMod {
     
     @JSImport("babylonjs/Debug/axesViewer", "AxesViewer._SetRenderingGroupId")
     @js.native
-    def _SetRenderingGroupId: js.Any = js.native
-    inline def _SetRenderingGroupId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SetRenderingGroupId")(x.asInstanceOf[js.Any])
+    def _SetRenderingGroupId: Any = js.native
+    inline def _SetRenderingGroupId_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SetRenderingGroupId")(x.asInstanceOf[js.Any])
   }
 }

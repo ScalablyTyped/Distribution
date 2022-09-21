@@ -1,6 +1,7 @@
 package typings.unidriverJsdomReact
 
 import typings.std.Element
+import typings.unidriverCore.mod.DriverContext
 import typings.unidriverCore.mod.UniDriver
 import typings.unidriverCore.mod.UniDriverList
 import org.scalablytyped.runtime.StObject
@@ -14,8 +15,10 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def jsdomReactUniDriver(containerOrFn: ElementOrElementFinder): UniDriver[Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("jsdomReactUniDriver")(containerOrFn.asInstanceOf[js.Any]).asInstanceOf[UniDriver[Element]]
+  inline def jsdomReactUniDriver(containerOrFn: ElementOrElementFinder, context: DriverContext): UniDriver[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsdomReactUniDriver")(containerOrFn.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[UniDriver[Element]]
   
   inline def jsdomReactUniDriverList(containerOrFn: ElementsOrElementsFinder): UniDriverList[Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("jsdomReactUniDriverList")(containerOrFn.asInstanceOf[js.Any]).asInstanceOf[UniDriverList[Element]]
+  inline def jsdomReactUniDriverList(containerOrFn: ElementsOrElementsFinder, context: DriverContext): UniDriverList[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsdomReactUniDriverList")(containerOrFn.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[UniDriverList[Element]]
   
   type ElementOrElementFinder = (js.Function0[Element | js.Promise[Element]]) | Element
   

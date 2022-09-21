@@ -23,7 +23,7 @@ object hookRegistryMod {
   
   @JSImport("@uirouter/core/lib/transition/hookRegistry", "RegisteredHook")
   @js.native
-  class RegisteredHook protected () extends StObject {
+  open class RegisteredHook protected () extends StObject {
     def this(
       tranSvc: TransitionService,
       eventType: TransitionEventType,
@@ -56,7 +56,7 @@ object hookRegistryMod {
       *   retained: true,
       * }
       */
-    /* private */ var _getDefaultMatchCriteria: js.Any = js.native
+    /* private */ var _getDefaultMatchCriteria: Any = js.native
     
     /**
       * Gets matching nodes as [[IMatchingNodes]]
@@ -73,7 +73,7 @@ object hookRegistryMod {
       * };
       * ```
       */
-    /* private */ var _getMatchingNodes: js.Any = js.native
+    /* private */ var _getMatchingNodes: Any = js.native
     
     /**
       * Gets the matching [[PathNode]]s
@@ -90,9 +90,9 @@ object hookRegistryMod {
       * with `entering: (state) => true` which only matches when a state is actually
       * being entered.
       */
-    /* private */ var _matchingNodes: js.Any = js.native
+    /* private */ var _matchingNodes: Any = js.native
     
-    var bind: js.Any = js.native
+    var bind: Any = js.native
     
     var callback: HookFn = js.native
     
@@ -121,17 +121,7 @@ object hookRegistryMod {
     var tranSvc: TransitionService = js.native
   }
   
-  inline def makeEvent(registry: IHookRegistry, transitionService: TransitionService, eventType: TransitionEventType): js.Function3[
-    /* matchObject */ js.Any, 
-    /* callback */ js.Any, 
-    /* options */ js.UndefOr[js.Object], 
-    js.Any
-  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeEvent")(registry.asInstanceOf[js.Any], transitionService.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
-    /* matchObject */ js.Any, 
-    /* callback */ js.Any, 
-    /* options */ js.UndefOr[js.Object], 
-    js.Any
-  ]]
+  inline def makeEvent(registry: IHookRegistry, transitionService: TransitionService, eventType: TransitionEventType): js.Function3[/* matchObject */ Any, /* callback */ Any, /* options */ js.UndefOr[js.Object], Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeEvent")(registry.asInstanceOf[js.Any], transitionService.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* matchObject */ Any, /* callback */ Any, /* options */ js.UndefOr[js.Object], Any]]
   
   inline def matchState(state: StateObject, criterion: HookMatchCriterion, transition: Transition): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchState")(state.asInstanceOf[js.Any], criterion.asInstanceOf[js.Any], transition.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

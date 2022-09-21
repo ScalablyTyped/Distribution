@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.JsonObjectResult")
 @js.native
-class JsonObjectResult ()
+open class JsonObjectResult ()
   extends StObject
      with typings.sharepoint.SP.JsonObjectResult {
   
   /* CompleteClass */
-  override def get_value(): js.Any = js.native
+  override def get_value(): Any = js.native
 }

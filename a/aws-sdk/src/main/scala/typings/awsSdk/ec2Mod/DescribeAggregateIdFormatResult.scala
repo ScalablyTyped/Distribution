@@ -29,7 +29,7 @@ object DescribeAggregateIdFormatResult {
     
     inline def setStatusesUndefined: Self = StObject.set(x, "Statuses", js.undefined)
     
-    inline def setStatusesVarargs(value: IdFormat*): Self = StObject.set(x, "Statuses", js.Array(value :_*))
+    inline def setStatusesVarargs(value: IdFormat*): Self = StObject.set(x, "Statuses", js.Array(value*))
     
     inline def setUseLongIdsAggregated(value: Boolean): Self = StObject.set(x, "UseLongIdsAggregated", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mocha", "Runnable")
 @js.native
-class Runnable protected ()
+open class Runnable protected ()
   extends StObject
      with typings.mocha.Mocha.Runnable {
   def this(title: String) = this()

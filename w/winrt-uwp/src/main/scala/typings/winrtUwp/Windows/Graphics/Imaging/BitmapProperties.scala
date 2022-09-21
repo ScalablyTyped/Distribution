@@ -23,13 +23,13 @@ trait BitmapProperties extends StObject {
     * @param propertiesToSet A collection of key-value pairs representing the bitmap properties to be set. Each key is a string containing the Windows property or metadata query, and the corresponding value is a BitmapTypedValue with the data and the correct PropertyType .
     * @return Object that manages the setting of the bitmap properties asynchronously.
     */
-  def setPropertiesAsync(propertiesToSet: IIterable[IKeyValuePair[js.Any, js.Any]]): IPromiseWithIAsyncAction
+  def setPropertiesAsync(propertiesToSet: IIterable[IKeyValuePair[Any, Any]]): IPromiseWithIAsyncAction
 }
 object BitmapProperties {
   
   inline def apply(
     getPropertiesAsync: IIterable[String] => IPromiseWithIAsyncOperation[BitmapPropertySet],
-    setPropertiesAsync: IIterable[IKeyValuePair[js.Any, js.Any]] => IPromiseWithIAsyncAction
+    setPropertiesAsync: IIterable[IKeyValuePair[Any, Any]] => IPromiseWithIAsyncAction
   ): BitmapProperties = {
     val __obj = js.Dynamic.literal(getPropertiesAsync = js.Any.fromFunction1(getPropertiesAsync), setPropertiesAsync = js.Any.fromFunction1(setPropertiesAsync))
     __obj.asInstanceOf[BitmapProperties]
@@ -39,6 +39,6 @@ object BitmapProperties {
     
     inline def setGetPropertiesAsync(value: IIterable[String] => IPromiseWithIAsyncOperation[BitmapPropertySet]): Self = StObject.set(x, "getPropertiesAsync", js.Any.fromFunction1(value))
     
-    inline def setSetPropertiesAsync(value: IIterable[IKeyValuePair[js.Any, js.Any]] => IPromiseWithIAsyncAction): Self = StObject.set(x, "setPropertiesAsync", js.Any.fromFunction1(value))
+    inline def setSetPropertiesAsync(value: IIterable[IKeyValuePair[Any, Any]] => IPromiseWithIAsyncAction): Self = StObject.set(x, "setPropertiesAsync", js.Any.fromFunction1(value))
   }
 }

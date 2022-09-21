@@ -24,27 +24,27 @@ trait Hub extends StObject {
     * dst, so that if value is itself an object, its content is copied into the corresponding object in dst.
     * That is, objects within src are merged into the corresponding objects in dst (they don’t replace them).
     */
-  def Insert(dst: js.Any, src: js.Any): js.Any
+  def Insert(dst: Any, src: Any): Any
   
   /*Calls the loaded preprocessors on the entire document, or on the given DOM element (or elements, if it is an
     * array of elements). The element is either the DOM id of the element, a reference to the DOM element itself, or
     * an array of id’s or references. The callback is called when the processing is complete.
     */
-  def PreProcess(element: js.Any, callBack: js.Any): js.Any
+  def PreProcess(element: Any, callBack: Any): Any
   
   /*Scans either the entire document or a given DOM element (or array of elements) for MathJax <script> tags and
     * processes the math those tags contain. The element is either the DOM id of the element to scan, a reference to
     * the DOM element itself, or an array of id’s or references. The callback is called when the processing is
     * complete.
     */
-  def Process(element: js.Any, callBack: js.Any): js.Any
+  def Process(element: Any, callBack: Any): Any
   
   /*Pushes the given callbacks onto the main MathJax command queue. This synchronizes the commands with MathJax so
     * that they will be performed in the proper order even when some run asynchronously. See Using Queues for more
     * details about how to use queues, and the MathJax queue in particular. You may supply as many callback
     * specifications in one call to the Queue() method as you wish.
     */
-  def Queue(callBack: js.Any): js.Any
+  def Queue(callBack: Any): Any
   
   var Register: js.UndefOr[typings.mathjax.MathJax.Register] = js.undefined
   
@@ -55,14 +55,14 @@ trait Hub extends StObject {
     * scan, a reference to the DOM element itself, or an array of id’s or references. The callback is called when
     * the processing is complete.
     */
-  def Reprocess(element: js.Any, callBack: js.Any): js.Any
+  def Reprocess(element: Any, callBack: Any): Any
   
   /*Removes any typeset mathematics from the document or DOM element (or elements if it is an array of elements),
     * and then renders the mathematics again, re-typesetting everything from the current internal version (without
     * calling the input jax again). The element is either the DOM id of the element to scan, a reference to the DOM
     * element itself, or an array of id’s or references. The callback is called when the processing is complete.
     */
-  def Rerender(element: js.Any, callBack: js.Any): js.Any
+  def Rerender(element: Any, callBack: Any): Any
   
   /*Calls the preprocessors on the given element (or elements if it is an array of elements), and then typesets
     * any math elements within the element. If no element is provided, the whole document is processed. The element
@@ -70,14 +70,14 @@ trait Hub extends StObject {
     * The callback is called when the process is complete. See the Modifying Math section for details of how to use
     * this method properly.
     */
-  def Typeset(element: js.Any, callBack: js.Any): js.Any
+  def Typeset(element: Any, callBack: Any): Any
   
   /*Scans either the entire document or a given DOM element (or elements if it is an array of elements) for
     * mathematics that has changed since the last time it was processed, or is new, and typesets the mathematics
     * they contain. The element is either the DOM id of the element to scan, a reference to the DOM element itself,
     * or an array of id’s or references. The callback is called when the processing is complete.
     */
-  def Update(element: js.Any, callBack: js.Any): js.Any
+  def Update(element: Any, callBack: Any): Any
   
   /*This holds the configuration parameters for MathJax. Set these values using MathJax.Hub.Config() described
     * below. The options and their default values are given in the Core Options reference page.
@@ -90,45 +90,45 @@ trait Hub extends StObject {
     * this routine can be overriden during MathJax configuration in order to perform some other action.
     * MathJax.Hub.lastError holds the error value of the last error on the page.
     */
-  def formatError(script: js.Any, error: js.Any): Unit
+  def formatError(script: Any, error: Any): Unit
   
   /*Returns a list of all the element jax in the document or a specific DOM element. The element is either the DOM
     * id of the element, or a reference to the DOM element itself.
     */
-  def getAllJax(element: js.Any): js.Array[js.Any]
+  def getAllJax(element: Any): js.Array[Any]
   
   /*Returns a list of all the element jax associated with input <script> tags with the given MIME-type within the
     * given DOM element or the whole document. The element is either the DOM id of the element to search, or a
     * reference to the DOM element itself.
     */
-  def getJaxByInputType(`type`: String, element: js.Any): Unit
+  def getJaxByInputType(`type`: String, element: Any): Unit
   
   /*Returns a list of all the element jax of a given MIME-type in the document or a specific DOM element. The
     * element is either the DOM id of the element to search, or a reference to the DOM element itself.
     */
-  def getJaxByType(`type`: String, element: js.Any): Unit
+  def getJaxByType(`type`: String, element: Any): Unit
   
   /*Returns the element jax associated with a given DOM element. If the element does not have an associated
     * element jax, null is returned. The element is either the DOM id of the element, or a reference to the DOM
     * element itself.
     */
-  def getJaxFor(element: js.Any): js.Any
+  def getJaxFor(element: Any): Any
   
   /*An object storing the MIME types associated with the various registered input jax (these are the types of the
     * <script> tags that store the math to be processed by each input jax).
     */
-  var inputJax: js.UndefOr[js.Any] = js.undefined
+  var inputJax: js.UndefOr[Any] = js.undefined
   
   /*Returns 0 if the element is not a <script> that can be processed by MathJax or the result of an output jax,
     * returns -1 if the element is an unprocessed <script> tag that could be handled by MathJax, and returns 1 if
     * the element is a processed <script> tag or an element that is the result of an output jax.
     */
-  def isJax(element: js.Any): Double
+  def isJax(element: Any): Double
   
   /*An object storing the output jax associate with the various element jax MIME types for the registered output
     * jax.
     */
-  var outputJax: js.UndefOr[js.Any] = js.undefined
+  var outputJax: js.UndefOr[Any] = js.undefined
   
   /*The pause (in milliseconds) between input and output phases of MathJax’s processing. Set this to 0 to avoid
     * jitter when updating output frequently (e.g., in a live preview environment).
@@ -147,7 +147,7 @@ trait Hub extends StObject {
   var processUpdateTime: js.UndefOr[Double] = js.undefined
   
   /*MathJax’s main processing queue. Use MathJax.Hub.Queue() to push callbacks onto this queue.*/
-  var queue: js.UndefOr[js.Any] = js.undefined
+  var queue: js.UndefOr[Any] = js.undefined
   
   /*Sets the output jax for the given element jax type (or jax/mml if none is specified) to be the one given by
     * renderer, which must be the name of a renderer, such as NativeMML or HTML-CSS. Note that this does not cause
@@ -164,20 +164,20 @@ object Hub {
   inline def apply(
     Config: Config => Unit,
     Configured: () => Unit,
-    Insert: (js.Any, js.Any) => js.Any,
-    PreProcess: (js.Any, js.Any) => js.Any,
-    Process: (js.Any, js.Any) => js.Any,
-    Queue: js.Any => js.Any,
-    Reprocess: (js.Any, js.Any) => js.Any,
-    Rerender: (js.Any, js.Any) => js.Any,
-    Typeset: (js.Any, js.Any) => js.Any,
-    Update: (js.Any, js.Any) => js.Any,
-    formatError: (js.Any, js.Any) => Unit,
-    getAllJax: js.Any => js.Array[js.Any],
-    getJaxByInputType: (String, js.Any) => Unit,
-    getJaxByType: (String, js.Any) => Unit,
-    getJaxFor: js.Any => js.Any,
-    isJax: js.Any => Double,
+    Insert: (Any, Any) => Any,
+    PreProcess: (Any, Any) => Any,
+    Process: (Any, Any) => Any,
+    Queue: Any => Any,
+    Reprocess: (Any, Any) => Any,
+    Rerender: (Any, Any) => Any,
+    Typeset: (Any, Any) => Any,
+    Update: (Any, Any) => Any,
+    formatError: (Any, Any) => Unit,
+    getAllJax: Any => js.Array[Any],
+    getJaxByInputType: (String, Any) => Unit,
+    getJaxByType: (String, Any) => Unit,
+    getJaxFor: Any => Any,
+    isJax: Any => Double,
     setRenderer: (String, String) => Unit
   ): Hub = {
     val __obj = js.Dynamic.literal(Config = js.Any.fromFunction1(Config), Configured = js.Any.fromFunction0(Configured), Insert = js.Any.fromFunction2(Insert), PreProcess = js.Any.fromFunction2(PreProcess), Process = js.Any.fromFunction2(Process), Queue = js.Any.fromFunction1(Queue), Reprocess = js.Any.fromFunction2(Reprocess), Rerender = js.Any.fromFunction2(Rerender), Typeset = js.Any.fromFunction2(Typeset), Update = js.Any.fromFunction2(Update), formatError = js.Any.fromFunction2(formatError), getAllJax = js.Any.fromFunction1(getAllJax), getJaxByInputType = js.Any.fromFunction2(getJaxByInputType), getJaxByType = js.Any.fromFunction2(getJaxByType), getJaxFor = js.Any.fromFunction1(getJaxFor), isJax = js.Any.fromFunction1(isJax), setRenderer = js.Any.fromFunction2(setRenderer))
@@ -196,31 +196,31 @@ object Hub {
     
     inline def setConfigured(value: () => Unit): Self = StObject.set(x, "Configured", js.Any.fromFunction0(value))
     
-    inline def setFormatError(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "formatError", js.Any.fromFunction2(value))
+    inline def setFormatError(value: (Any, Any) => Unit): Self = StObject.set(x, "formatError", js.Any.fromFunction2(value))
     
-    inline def setGetAllJax(value: js.Any => js.Array[js.Any]): Self = StObject.set(x, "getAllJax", js.Any.fromFunction1(value))
+    inline def setGetAllJax(value: Any => js.Array[Any]): Self = StObject.set(x, "getAllJax", js.Any.fromFunction1(value))
     
-    inline def setGetJaxByInputType(value: (String, js.Any) => Unit): Self = StObject.set(x, "getJaxByInputType", js.Any.fromFunction2(value))
+    inline def setGetJaxByInputType(value: (String, Any) => Unit): Self = StObject.set(x, "getJaxByInputType", js.Any.fromFunction2(value))
     
-    inline def setGetJaxByType(value: (String, js.Any) => Unit): Self = StObject.set(x, "getJaxByType", js.Any.fromFunction2(value))
+    inline def setGetJaxByType(value: (String, Any) => Unit): Self = StObject.set(x, "getJaxByType", js.Any.fromFunction2(value))
     
-    inline def setGetJaxFor(value: js.Any => js.Any): Self = StObject.set(x, "getJaxFor", js.Any.fromFunction1(value))
+    inline def setGetJaxFor(value: Any => Any): Self = StObject.set(x, "getJaxFor", js.Any.fromFunction1(value))
     
-    inline def setInputJax(value: js.Any): Self = StObject.set(x, "inputJax", value.asInstanceOf[js.Any])
+    inline def setInputJax(value: Any): Self = StObject.set(x, "inputJax", value.asInstanceOf[js.Any])
     
     inline def setInputJaxUndefined: Self = StObject.set(x, "inputJax", js.undefined)
     
-    inline def setInsert(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "Insert", js.Any.fromFunction2(value))
+    inline def setInsert(value: (Any, Any) => Any): Self = StObject.set(x, "Insert", js.Any.fromFunction2(value))
     
-    inline def setIsJax(value: js.Any => Double): Self = StObject.set(x, "isJax", js.Any.fromFunction1(value))
+    inline def setIsJax(value: Any => Double): Self = StObject.set(x, "isJax", js.Any.fromFunction1(value))
     
-    inline def setOutputJax(value: js.Any): Self = StObject.set(x, "outputJax", value.asInstanceOf[js.Any])
+    inline def setOutputJax(value: Any): Self = StObject.set(x, "outputJax", value.asInstanceOf[js.Any])
     
     inline def setOutputJaxUndefined: Self = StObject.set(x, "outputJax", js.undefined)
     
-    inline def setPreProcess(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "PreProcess", js.Any.fromFunction2(value))
+    inline def setPreProcess(value: (Any, Any) => Any): Self = StObject.set(x, "PreProcess", js.Any.fromFunction2(value))
     
-    inline def setProcess(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "Process", js.Any.fromFunction2(value))
+    inline def setProcess(value: (Any, Any) => Any): Self = StObject.set(x, "Process", js.Any.fromFunction2(value))
     
     inline def setProcessSectionDelay(value: Double): Self = StObject.set(x, "processSectionDelay", value.asInstanceOf[js.Any])
     
@@ -234,7 +234,7 @@ object Hub {
     
     inline def setProcessUpdateTimeUndefined: Self = StObject.set(x, "processUpdateTime", js.undefined)
     
-    inline def setQueue(value: js.Any => js.Any): Self = StObject.set(x, "Queue", js.Any.fromFunction1(value))
+    inline def setQueue(value: Any => Any): Self = StObject.set(x, "Queue", js.Any.fromFunction1(value))
     
     inline def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
     
@@ -242,9 +242,9 @@ object Hub {
     
     inline def setRegisterUndefined: Self = StObject.set(x, "Register", js.undefined)
     
-    inline def setReprocess(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "Reprocess", js.Any.fromFunction2(value))
+    inline def setReprocess(value: (Any, Any) => Any): Self = StObject.set(x, "Reprocess", js.Any.fromFunction2(value))
     
-    inline def setRerender(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "Rerender", js.Any.fromFunction2(value))
+    inline def setRerender(value: (Any, Any) => Any): Self = StObject.set(x, "Rerender", js.Any.fromFunction2(value))
     
     inline def setSetRenderer(value: (String, String) => Unit): Self = StObject.set(x, "setRenderer", js.Any.fromFunction2(value))
     
@@ -252,8 +252,8 @@ object Hub {
     
     inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
-    inline def setTypeset(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "Typeset", js.Any.fromFunction2(value))
+    inline def setTypeset(value: (Any, Any) => Any): Self = StObject.set(x, "Typeset", js.Any.fromFunction2(value))
     
-    inline def setUpdate(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "Update", js.Any.fromFunction2(value))
+    inline def setUpdate(value: (Any, Any) => Any): Self = StObject.set(x, "Update", js.Any.fromFunction2(value))
   }
 }

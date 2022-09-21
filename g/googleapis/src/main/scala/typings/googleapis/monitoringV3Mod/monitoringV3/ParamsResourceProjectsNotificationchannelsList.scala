@@ -1,9 +1,5 @@
 package typings.googleapis.monitoringV3Mod.monitoringV3
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,44 +9,27 @@ trait ParamsResourceProjectsNotificationchannelsList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * If provided, this field specifies the criteria that must be met by
-    * notification channels to be included in the response.For more details,
-    * see sorting and filtering.
+    * If provided, this field specifies the criteria that must be met by notification channels to be included in the response.For more details, see sorting and filtering (https://cloud.google.com/monitoring/api/v3/sorting-and-filtering).
     */
   var filter: js.UndefOr[String] = js.undefined
   
   /**
-    * The project on which to execute the request. The format is
-    * projects/[PROJECT_ID]. That is, this names the container in which to look
-    * for the notification channels; it does not name a specific channel. To
-    * query a specific channel by REST resource name, use the
-    * GetNotificationChannel operation.
+    * Required. The project (https://cloud.google.com/monitoring/api/v3#project_name) on which to execute the request. The format is: projects/[PROJECT_ID_OR_NUMBER] This names the container in which to look for the notification channels; it does not name a specific channel. To query a specific channel by REST resource name, use the GetNotificationChannel operation.
     */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * A comma-separated list of fields by which to sort the result. Supports
-    * the same set of fields as in filter. Entries can be prefixed with a minus
-    * sign to sort in descending rather than ascending order.For more details,
-    * see sorting and filtering.
+    * A comma-separated list of fields by which to sort the result. Supports the same set of fields as in filter. Entries can be prefixed with a minus sign to sort in descending rather than ascending order.For more details, see sorting and filtering (https://cloud.google.com/monitoring/api/v3/sorting-and-filtering).
     */
   var orderBy: js.UndefOr[String] = js.undefined
   
   /**
-    * The maximum number of results to return in a single response. If not set
-    * to a positive number, a reasonable value will be chosen by the service.
+    * The maximum number of results to return in a single response. If not set to a positive number, a reasonable value will be chosen by the service.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * If non-empty, page_token must contain a value returned as the
-    * next_page_token in a previous response to request the next set of
-    * results.
+    * If non-empty, page_token must contain a value returned as the next_page_token in a previous response to request the next set of results.
     */
   var pageToken: js.UndefOr[String] = js.undefined
 }
@@ -62,10 +41,6 @@ object ParamsResourceProjectsNotificationchannelsList {
   }
   
   extension [Self <: ParamsResourceProjectsNotificationchannelsList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

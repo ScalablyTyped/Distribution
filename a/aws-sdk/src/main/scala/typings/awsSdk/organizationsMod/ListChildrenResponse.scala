@@ -29,7 +29,7 @@ object ListChildrenResponse {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "Children", js.undefined)
     
-    inline def setChildrenVarargs(value: Child*): Self = StObject.set(x, "Children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: Child*): Self = StObject.set(x, "Children", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

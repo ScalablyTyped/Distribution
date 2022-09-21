@@ -10,12 +10,12 @@ object propTypesBooleans {
   @js.native
   sealed trait `false`
     extends StObject
-       with IsOptional[js.Any]
+       with IsOptional[Any]
   inline def `false`: `false` = false.asInstanceOf[`false`]
   
   @js.native
   sealed trait `true`
     extends StObject
-       with IsOptional[js.Any]
+       with IsOptional[Any]
   inline def `true`: `true` = true.asInstanceOf[`true`]
 }

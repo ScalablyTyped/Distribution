@@ -39,6 +39,6 @@ object ObservableArrayEvent {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: Model*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Model*): Self = StObject.set(x, "items", js.Array(value*))
   }
 }

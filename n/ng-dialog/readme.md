@@ -10,10 +10,10 @@ Modal dialogs and popups provider for Angular.js applications
 | ------------------ | :-------------: |
 | Full name          | ng-dialog |
 | Keywords           | angular.js, modals, popups, dialog, ng, provider, factory, directive |
-| # releases         | 0 |
-| # dependents       | 17 |
-| # downloads        | 1021146 |
-| # stars            | 7 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 59476.0 |
+| # stars            | 3179.0 |
 
 ## Links
 - [Homepage](https://github.com/likeastore/ngDialog)

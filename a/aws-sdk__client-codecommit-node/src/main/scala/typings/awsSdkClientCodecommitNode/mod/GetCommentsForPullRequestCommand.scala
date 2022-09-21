@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-codecommit-node", "GetCommentsForPullRequestCommand")
 @js.native
-class GetCommentsForPullRequestCommand protected ()
+open class GetCommentsForPullRequestCommand protected ()
   extends typings.awsSdkClientCodecommitNode.getCommentsForPullRequestCommandMod.GetCommentsForPullRequestCommand {
   def this(input: GetCommentsForPullRequestInput) = this()
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-codecommit-node", "GetFolderCommand")
 @js.native
-class GetFolderCommand protected ()
+open class GetFolderCommand protected ()
   extends typings.awsSdkClientCodecommitNode.getFolderCommandMod.GetFolderCommand {
   def this(input: GetFolderInput) = this()
 }

@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.JsGrid.PropertyType")
 @js.native
-class PropertyType ()
+open class PropertyType ()
   extends StObject
      with typings.sharepoint.SP.JsGrid.PropertyType
 object PropertyType {
@@ -25,7 +25,7 @@ object PropertyType {
   
   @JSGlobal("SP.JsGrid.PropertyType.CheckBoxBoolean")
   @js.native
-  class CheckBoxBoolean ()
+  open class CheckBoxBoolean ()
     extends StObject
        with typings.sharepoint.SP.JsGrid.PropertyType.CheckBoxBoolean {
     
@@ -33,17 +33,17 @@ object PropertyType {
     override def BeginValidateNormalizeConvert(
       recordKey: Double,
       fieldKey: java.lang.String,
-      newValue: js.Any,
+      newValue: Any,
       bIsLocalized: Boolean,
       fnCallback: js.Function1[/* args */ DataValue, Unit],
-      fnError: js.Any
+      fnError: Any
     ): Unit = js.native
     
     /* CompleteClass */
-    override def DataToLocalized(dataValue: js.Any): java.lang.String = js.native
+    override def DataToLocalized(dataValue: Any): java.lang.String = js.native
     
     /* CompleteClass */
-    override def GetBool(dataValue: js.Any): Boolean = js.native
+    override def GetBool(dataValue: Any): Boolean = js.native
     
     /* CompleteClass */
     var ID: java.lang.String = js.native
@@ -51,7 +51,7 @@ object PropertyType {
   
   @JSGlobal("SP.JsGrid.PropertyType.DropDownBoolean")
   @js.native
-  class DropDownBoolean ()
+  open class DropDownBoolean ()
     extends StObject
        with typings.sharepoint.SP.JsGrid.PropertyType.DropDownBoolean {
     
@@ -59,17 +59,17 @@ object PropertyType {
     override def BeginValidateNormalizeConvert(
       recordKey: Double,
       fieldKey: java.lang.String,
-      newValue: js.Any,
+      newValue: Any,
       bIsLocalized: Boolean,
       fnCallback: js.Function1[/* args */ DataValue, Unit],
-      fnError: js.Any
+      fnError: Any
     ): Unit = js.native
     
     /* CompleteClass */
-    override def DataToLocalized(dataValue: js.Any): java.lang.String = js.native
+    override def DataToLocalized(dataValue: Any): java.lang.String = js.native
     
     /* CompleteClass */
-    override def GetBool(dataValue: js.Any): Boolean = js.native
+    override def GetBool(dataValue: Any): Boolean = js.native
     
     /* CompleteClass */
     var ID: java.lang.String = js.native
@@ -77,7 +77,7 @@ object PropertyType {
   
   @JSGlobal("SP.JsGrid.PropertyType.HyperLink")
   @js.native
-  class HyperLink ()
+  open class HyperLink ()
     extends StObject
        with typings.sharepoint.SP.JsGrid.PropertyType.HyperLink {
     
@@ -85,21 +85,21 @@ object PropertyType {
     override def BeginValidateNormalizeConvert(
       recordKey: Double,
       fieldKey: java.lang.String,
-      newValue: js.Any,
+      newValue: Any,
       bIsLocalized: Boolean,
       fnCallback: js.Function1[/* args */ DataValue, Unit],
-      fnError: js.Any
+      fnError: Any
     ): Unit = js.native
     
     /* CompleteClass */
-    override def DataToLocalized(dataValue: js.Any): java.lang.String = js.native
+    override def DataToLocalized(dataValue: Any): java.lang.String = js.native
     
     /* CompleteClass */
-    override def GetAddress(dataValue: js.Any): java.lang.String = js.native
+    override def GetAddress(dataValue: Any): java.lang.String = js.native
     
     /** Returns string like this: '"http:// site.com, Site title"' */
     /* CompleteClass */
-    override def GetCopyValue(record: IRecord, dataValue: js.Any, locValue: java.lang.String): java.lang.String = js.native
+    override def GetCopyValue(record: IRecord, dataValue: Any, locValue: java.lang.String): java.lang.String = js.native
     
     /* CompleteClass */
     var ID: java.lang.String = js.native
@@ -110,49 +110,49 @@ object PropertyType {
   
   @JSGlobal("SP.JsGrid.PropertyType.LookupTable")
   @js.native
-  class LookupTable protected ()
+  open class LookupTable protected ()
     extends StObject
        with typings.sharepoint.SP.JsGrid.PropertyType.LookupTable {
-    def this(items: js.Array[js.Any], id: java.lang.String, bLimitToList: Boolean) = this()
+    def this(items: js.Array[Any], id: java.lang.String, bLimitToList: Boolean) = this()
     
     /* CompleteClass */
     override def BeginValidateNormalizeConvert(
       recordKey: Double,
       fieldKey: java.lang.String,
-      newValue: js.Any,
+      newValue: Any,
       bIsLocalized: Boolean,
       fnCallback: js.Function1[/* args */ DataValue, Unit],
-      fnError: js.Any
+      fnError: Any
     ): Unit = js.native
     
     /* CompleteClass */
-    override def DataToLocalized(dataValue: js.Any): java.lang.String = js.native
+    override def DataToLocalized(dataValue: Any): java.lang.String = js.native
     
     /* CompleteClass */
-    override def GetImageSource(record: IRecord, dataValue: js.Any): java.lang.String = js.native
+    override def GetImageSource(record: IRecord, dataValue: Any): java.lang.String = js.native
     
     /* CompleteClass */
     override def GetIsLimitedToList(): Boolean = js.native
     
     /* CompleteClass */
-    override def GetItems(fnCallback: js.Any): Unit = js.native
+    override def GetItems(fnCallback: Any): Unit = js.native
     
     /* CompleteClass */
     override def GetSerializableLookupPropType(): BLimitToList = js.native
     
     /* CompleteClass */
-    override def GetStyleId(dataValue: js.Any): java.lang.String = js.native
+    override def GetStyleId(dataValue: Any): java.lang.String = js.native
     
     /* CompleteClass */
     var ID: java.lang.String = js.native
     
     /* CompleteClass */
-    override def LocalizedToData(localized: java.lang.String): js.Any = js.native
+    override def LocalizedToData(localized: java.lang.String): Any = js.native
   }
   
   @JSGlobal("SP.JsGrid.PropertyType.MultiValuePropType")
   @js.native
-  class MultiValuePropType ()
+  open class MultiValuePropType ()
     extends StObject
        with typings.sharepoint.SP.JsGrid.PropertyType.MultiValuePropType {
     
@@ -160,10 +160,10 @@ object PropertyType {
     override def BeginValidateNormalizeConvert(
       recordKey: Double,
       fieldKey: java.lang.String,
-      newValue: js.Any,
+      newValue: Any,
       bIsLocalized: Boolean,
       fnCallback: js.Function1[/* args */ DataValue, Unit],
-      fnError: js.Any
+      fnError: Any
     ): Unit = js.native
     
     /* CompleteClass */
@@ -210,14 +210,14 @@ object PropertyType {
   /* static member */
   inline def RegisterNewLookupPropType(
     id: java.lang.String,
-    items: js.Array[js.Any],
+    items: js.Array[Any],
     displayCtrlName: java.lang.String,
     bLimitToList: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RegisterNewLookupPropType")(id.asInstanceOf[js.Any], items.asInstanceOf[js.Any], displayCtrlName.asInstanceOf[js.Any], bLimitToList.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSGlobal("SP.JsGrid.PropertyType.String")
   @js.native
-  class String ()
+  open class String ()
     extends StObject
        with typings.sharepoint.SP.JsGrid.PropertyType.String {
     
@@ -225,10 +225,10 @@ object PropertyType {
     override def BeginValidateNormalizeConvert(
       recordKey: Double,
       fieldKey: java.lang.String,
-      newValue: js.Any,
+      newValue: Any,
       bIsLocalized: Boolean,
       fnCallback: js.Function1[/* args */ DataValue, Unit],
-      fnError: js.Any
+      fnError: Any
     ): Unit = js.native
     
     /* CompleteClass */
@@ -237,7 +237,7 @@ object PropertyType {
   
   @JSGlobal("SP.JsGrid.PropertyType.Utils")
   @js.native
-  class Utils ()
+  open class Utils ()
     extends StObject
        with typings.sharepoint.SP.JsGrid.PropertyType.Utils
   object Utils {
@@ -247,7 +247,7 @@ object PropertyType {
     val ^ : js.Any = js.native
     
     /* static member */
-    inline def RegisterDisplayControl(name: java.lang.String, singleton: js.Any, requiredFunctionNames: js.Array[java.lang.String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RegisterDisplayControl")(name.asInstanceOf[js.Any], singleton.asInstanceOf[js.Any], requiredFunctionNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def RegisterDisplayControl(name: java.lang.String, singleton: Any, requiredFunctionNames: js.Array[java.lang.String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RegisterDisplayControl")(name.asInstanceOf[js.Any], singleton.asInstanceOf[js.Any], requiredFunctionNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
     inline def RegisterEditControl(
@@ -263,7 +263,7 @@ object PropertyType {
     /* static member */
     inline def RegisterWidgetControl(
       name: java.lang.String,
-      factory: js.Function1[/* ddContext */ js.Any, IPropertyType],
+      factory: js.Function1[/* ddContext */ Any, IPropertyType],
       requiredFunctionNames: js.Array[java.lang.String]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RegisterWidgetControl")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any], requiredFunctionNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
     

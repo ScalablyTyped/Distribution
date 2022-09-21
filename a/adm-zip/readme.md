@@ -1,7 +1,7 @@
 
 # Scala.js typings for adm-zip
 
-Typings are for version 0.4
+Typings are for version 0.5
 
 ## Library description:
 Javascript implementation of zip for nodejs with support for electron original-fs. Allows user to create or extract zip files both in memory or to/from disk
@@ -10,10 +10,10 @@ Javascript implementation of zip for nodejs with support for electron original-f
 | ------------------ | :-------------: |
 | Full name          | adm-zip |
 | Keywords           | zip, methods, archive, unzip |
-| # releases         | 5 |
-| # dependents       | 1240 |
-| # downloads        | 120435571 |
-| # stars            | 48 |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 1.3716092E7 |
+| # stars            | 1636.0 |
 
 ## Links
 - [Homepage](https://github.com/cthackers/adm-zip)

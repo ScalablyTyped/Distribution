@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents transfer coding information used in the Transfer-Encoding HTTP header on an HTTP request. */
 @JSGlobal("Windows.Web.Http.Headers.HttpTransferCodingHeaderValue")
 @js.native
-class HttpTransferCodingHeaderValue protected ()
+open class HttpTransferCodingHeaderValue protected ()
   extends StObject
      with typings.winrtUwp.Windows.Web.Http.Headers.HttpTransferCodingHeaderValue {
   /**

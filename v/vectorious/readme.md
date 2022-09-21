@@ -1,7 +1,7 @@
 
 # Scala.js typings for vectorious
 
-Typings are for version 4.3.2
+Typings are for version 6.1.4
 
 ## Library description:
 A high performance linear algebra library.
@@ -10,10 +10,10 @@ A high performance linear algebra library.
 | ------------------ | :-------------: |
 | Full name          | vectorious |
 | Keywords           | matrix, vector, linear, algebra |
-| # releases         | 24 |
-| # dependents       | 5 |
-| # downloads        | 43659 |
-| # stars            | 5 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 537.0 |
+| # stars            | 631.0 |
 
 ## Links
 - [Homepage](https://github.com/mateogianolio/vectorious)
@@ -24,7 +24,7 @@ A high performance linear algebra library.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

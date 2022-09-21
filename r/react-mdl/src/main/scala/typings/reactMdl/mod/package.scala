@@ -1,12 +1,14 @@
 package typings.reactMdl.mod
 
+import typings.react.mod.ClassAttributes
+import typings.react.mod.HTMLProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type MDLClassProps = typings.react.mod.ClassAttributes[js.Any]
+type MDLClassProps = ClassAttributes[Any]
 
-type MDLOtherProps = typings.react.mod.HTMLProps[js.Any]
+type MDLOtherProps = HTMLProps[Any]
 
-type NavigationProps = typings.reactMdl.mod.MDLOtherProps
+type NavigationProps = MDLOtherProps

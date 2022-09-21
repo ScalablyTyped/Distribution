@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SendBulkEmailResponse extends StObject {
   
+  /**
+    * One object per intended recipient. Check each response object and retry any messages with a failure status.
+    */
   var BulkEmailEntryResults: BulkEmailEntryResultList
 }
 object SendBulkEmailResponse {
@@ -19,6 +22,6 @@ object SendBulkEmailResponse {
     
     inline def setBulkEmailEntryResults(value: BulkEmailEntryResultList): Self = StObject.set(x, "BulkEmailEntryResults", value.asInstanceOf[js.Any])
     
-    inline def setBulkEmailEntryResultsVarargs(value: BulkEmailEntryResult*): Self = StObject.set(x, "BulkEmailEntryResults", js.Array(value :_*))
+    inline def setBulkEmailEntryResultsVarargs(value: BulkEmailEntryResult*): Self = StObject.set(x, "BulkEmailEntryResults", js.Array(value*))
   }
 }

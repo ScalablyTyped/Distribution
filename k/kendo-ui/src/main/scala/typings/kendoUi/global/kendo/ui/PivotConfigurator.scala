@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.PivotConfigurator")
 @js.native
-class PivotConfigurator protected ()
+open class PivotConfigurator protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.PivotConfigurator {
   def this(element: Element) = this()

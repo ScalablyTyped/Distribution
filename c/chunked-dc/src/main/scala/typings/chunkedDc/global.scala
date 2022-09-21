@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.chunkedDc.chunkedDc.Chunker
 import typings.chunkedDc.chunkedDc.Standalone
 import typings.chunkedDc.chunkedDc.Unchunker
-import typings.chunkedDc.jasmine.Any
 import typings.chunkedDc.jasmine.ArrayContaining
 import typings.chunkedDc.jasmine.Clock
 import typings.chunkedDc.jasmine.CustomEqualityTester
@@ -15,8 +14,6 @@ import typings.chunkedDc.jasmine.HtmlSpecFilter
 import typings.chunkedDc.jasmine.Matchers
 import typings.chunkedDc.jasmine.ObjectContaining
 import typings.chunkedDc.jasmine.Spy
-import typings.std.RegExp
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,16 +50,16 @@ object global {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("chunkedDc.Chunker")
     @js.native
-    class ChunkerCls protected ()
+    open class ChunkerCls protected ()
       extends StObject
          with Chunker {
-      def this(id: Double, message: Uint8Array, chunkSize: Double) = this()
+      def this(id: Double, message: js.typedarray.Uint8Array, chunkSize: Double) = this()
     }
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("chunkedDc.Unchunker")
     @js.native
-    class UnchunkerCls ()
+    open class UnchunkerCls ()
       extends StObject
          with Unchunker
     
@@ -74,11 +71,11 @@ object global {
   
   inline def describe(description: String, specDefinitions: js.Function0[Unit]): Unit = (js.Dynamic.global.applyDynamic("describe")(description.asInstanceOf[js.Any], specDefinitions.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def expect(actual: js.Any): Matchers = js.Dynamic.global.applyDynamic("expect")(actual.asInstanceOf[js.Any]).asInstanceOf[Matchers]
+  inline def expect(actual: Any): Matchers = js.Dynamic.global.applyDynamic("expect")(actual.asInstanceOf[js.Any]).asInstanceOf[Matchers]
   inline def expect(spy: js.Function): Matchers = js.Dynamic.global.applyDynamic("expect")(spy.asInstanceOf[js.Any]).asInstanceOf[Matchers]
   
   inline def fail(): Unit = js.Dynamic.global.applyDynamic("fail")().asInstanceOf[Unit]
-  inline def fail(e: js.Any): Unit = js.Dynamic.global.applyDynamic("fail")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def fail(e: Any): Unit = js.Dynamic.global.applyDynamic("fail")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def fdescribe(description: String, specDefinitions: js.Function0[Unit]): Unit = (js.Dynamic.global.applyDynamic("fdescribe")(description.asInstanceOf[js.Any], specDefinitions.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -121,11 +118,11 @@ object global {
     
     inline def addMatchers(matchers: CustomMatcherFactories): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addMatchers")(matchers.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def any(aclass: js.Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("any")(aclass.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def any(aclass: Any): typings.chunkedDc.jasmine.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("any")(aclass.asInstanceOf[js.Any]).asInstanceOf[typings.chunkedDc.jasmine.Any]
     
-    inline def anything(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("anything")().asInstanceOf[Any]
+    inline def anything(): typings.chunkedDc.jasmine.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("anything")().asInstanceOf[typings.chunkedDc.jasmine.Any]
     
-    inline def arrayContaining(sample: js.Array[js.Any]): ArrayContaining = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayContaining")(sample.asInstanceOf[js.Any]).asInstanceOf[ArrayContaining]
+    inline def arrayContaining(sample: js.Array[Any]): ArrayContaining = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayContaining")(sample.asInstanceOf[js.Any]).asInstanceOf[ArrayContaining]
     
     @JSGlobal("jasmine.clock")
     @js.native
@@ -135,18 +132,18 @@ object global {
     inline def createSpy(name: String): Spy = ^.asInstanceOf[js.Dynamic].applyDynamic("createSpy")(name.asInstanceOf[js.Any]).asInstanceOf[Spy]
     inline def createSpy(name: String, originalFn: js.Function): Spy = (^.asInstanceOf[js.Dynamic].applyDynamic("createSpy")(name.asInstanceOf[js.Any], originalFn.asInstanceOf[js.Any])).asInstanceOf[Spy]
     
-    inline def createSpyObj(baseName: String, methodNames: js.Array[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createSpyObj")(baseName.asInstanceOf[js.Any], methodNames.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def createSpyObj(baseName: String, methodNames: js.Array[Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createSpyObj")(baseName.asInstanceOf[js.Any], methodNames.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def createSpyObj_T_T[T](baseName: String, methodNames: js.Array[js.Any]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("createSpyObj")(baseName.asInstanceOf[js.Any], methodNames.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def createSpyObj_T_T[T](baseName: String, methodNames: js.Array[Any]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("createSpyObj")(baseName.asInstanceOf[js.Any], methodNames.asInstanceOf[js.Any])).asInstanceOf[T]
     
     inline def getEnv(): Env = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnv")().asInstanceOf[Env]
     
-    inline def objectContaining(sample: js.Any): ObjectContaining = ^.asInstanceOf[js.Dynamic].applyDynamic("objectContaining")(sample.asInstanceOf[js.Any]).asInstanceOf[ObjectContaining]
+    inline def objectContaining(sample: Any): ObjectContaining = ^.asInstanceOf[js.Dynamic].applyDynamic("objectContaining")(sample.asInstanceOf[js.Any]).asInstanceOf[ObjectContaining]
     
-    inline def pp(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pp")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def pp(value: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pp")(value.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    inline def stringMatching(str: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stringMatching")(str.asInstanceOf[js.Any]).asInstanceOf[Any]
-    inline def stringMatching(str: RegExp): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stringMatching")(str.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def stringMatching(str: String): typings.chunkedDc.jasmine.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stringMatching")(str.asInstanceOf[js.Any]).asInstanceOf[typings.chunkedDc.jasmine.Any]
+    inline def stringMatching(str: js.RegExp): typings.chunkedDc.jasmine.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stringMatching")(str.asInstanceOf[js.Any]).asInstanceOf[typings.chunkedDc.jasmine.Any]
   }
   
   /** If you call the function pending anywhere in the spec body, no matter the expectations, the spec will be marked pending. */
@@ -155,7 +152,7 @@ object global {
   
   inline def runs(asyncMethod: js.Function): Unit = js.Dynamic.global.applyDynamic("runs")(asyncMethod.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def spyOn(`object`: js.Any, method: String): Spy = (js.Dynamic.global.applyDynamic("spyOn")(`object`.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Spy]
+  inline def spyOn(`object`: Any, method: String): Spy = (js.Dynamic.global.applyDynamic("spyOn")(`object`.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Spy]
   
   inline def waits(): Unit = js.Dynamic.global.applyDynamic("waits")().asInstanceOf[Unit]
   inline def waits(timeout: Double): Unit = js.Dynamic.global.applyDynamic("waits")(timeout.asInstanceOf[js.Any]).asInstanceOf[Unit]

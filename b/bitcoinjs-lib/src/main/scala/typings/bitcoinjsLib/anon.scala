@@ -1,6 +1,6 @@
 package typings.bitcoinjsLib
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,6 +29,52 @@ object anon {
       inline def setFinalScriptWitness(value: Buffer): Self = StObject.set(x, "finalScriptWitness", value.asInstanceOf[js.Any])
       
       inline def setFinalScriptWitnessUndefined: Self = StObject.set(x, "finalScriptWitness", js.undefined)
+    }
+  }
+  
+  trait Number extends StObject {
+    
+    var number: Double
+    
+    var opcode: Double
+    
+    var size: Double
+  }
+  object Number {
+    
+    inline def apply(number: Double, opcode: Double, size: Double): Number = {
+      val __obj = js.Dynamic.literal(number = number.asInstanceOf[js.Any], opcode = opcode.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Number]
+    }
+    
+    extension [Self <: Number](x: Self) {
+      
+      inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      
+      inline def setOpcode(value: Double): Self = StObject.set(x, "opcode", value.asInstanceOf[js.Any])
+      
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait R extends StObject {
+    
+    var r: Buffer
+    
+    var s: Buffer
+  }
+  object R {
+    
+    inline def apply(r: Buffer, s: Buffer): R = {
+      val __obj = js.Dynamic.literal(r = r.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any])
+      __obj.asInstanceOf[R]
+    }
+    
+    extension [Self <: R](x: Self) {
+      
+      inline def setR(value: Buffer): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+      
+      inline def setS(value: Buffer): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -4,30 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Describes an autoscaling policy for Dataproc cluster autoscaler.
-  */
 trait SchemaAutoscalingPolicy extends StObject {
   
   var basicAlgorithm: js.UndefOr[SchemaBasicAutoscalingAlgorithm] = js.undefined
   
   /**
-    * Required. The policy id.The id must contain only letters (a-z, A-Z),
-    * numbers (0-9), underscores (_), and hyphens (-). Cannot begin or end with
-    * underscore or hyphen. Must consist of between 3 and 50 characters.
+    * Required. The policy id.The id must contain only letters (a-z, A-Z), numbers (0-9), underscores (_), and hyphens (-). Cannot begin or end with underscore or hyphen. Must consist of between 3 and 50 characters.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Output only. The &quot;resource name&quot; of the policy, as described in
-    * https://cloud.google.com/apis/design/resource_names of the form
-    * projects/{project_id}/regions/{region}/autoscalingPolicies/{policy_id}.
+    * Output only. The "resource name" of the autoscaling policy, as described in https://cloud.google.com/apis/design/resource_names. For projects.regions.autoscalingPolicies, the resource name of the policy has the following format: projects/{project_id\}/regions/{region\}/autoscalingPolicies/{policy_id\} For projects.locations.autoscalingPolicies, the resource name of the policy has the following format: projects/{project_id\}/locations/{location\}/autoscalingPolicies/{policy_id\}
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Optional. Describes how the autoscaler will operate for secondary
-    * workers.
+    * Optional. Describes how the autoscaler will operate for secondary workers.
     */
   var secondaryWorkerConfig: js.UndefOr[SchemaInstanceGroupAutoscalingPolicyConfig] = js.undefined
   
@@ -51,9 +43,13 @@ object SchemaAutoscalingPolicy {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
+    inline def setIdNull: Self = StObject.set(x, "id", null)
+    
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     

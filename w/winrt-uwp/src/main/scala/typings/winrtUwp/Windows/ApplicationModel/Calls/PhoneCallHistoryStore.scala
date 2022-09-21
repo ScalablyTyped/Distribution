@@ -14,21 +14,21 @@ trait PhoneCallHistoryStore extends StObject {
     * Deletes entries in the store.
     * @param callHistoryEntries The entries to delete.
     */
-  def deleteEntriesAsync(callHistoryEntries: IIterable[PhoneCallHistoryEntry]): js.Any = js.native
+  def deleteEntriesAsync(callHistoryEntries: IIterable[PhoneCallHistoryEntry]): Any = js.native
   
   /* unmapped return type */
   /**
     * Delete an entry from the store.
     * @param callHistoryEntry The entry to delete.
     */
-  def deleteEntryAsync(callHistoryEntry: PhoneCallHistoryEntry): js.Any = js.native
+  def deleteEntryAsync(callHistoryEntry: PhoneCallHistoryEntry): Any = js.native
   
   /* unmapped return type */
   /**
     * Gets an entry from the store based on the entry id.
     * @param callHistoryEntryId The PhoneCallHistoryEntryt.Id of the relevant entry.
     */
-  def getEntryAsync(callHistoryEntryId: String): js.Any = js.native
+  def getEntryAsync(callHistoryEntryId: String): Any = js.native
   
   /**
     * Retrieves a default phone call history entry that reads all entries.
@@ -59,33 +59,33 @@ trait PhoneCallHistoryStore extends StObject {
   /**
     * Update all the entries to indicate they have all been seen by the user.
     */
-  def markAllAsSeenAsync(): js.Any = js.native
+  def markAllAsSeenAsync(): Any = js.native
   
   /* unmapped return type */
   /**
     * Updates entries to indicate they have been seen by the user.
     * @param callHistoryEntries The entries to mark as seen. This updates the PhoneCallHistoryEntry.IsSeen property.
     */
-  def markEntriesAsSeenAsync(callHistoryEntries: IIterable[PhoneCallHistoryEntry]): js.Any = js.native
+  def markEntriesAsSeenAsync(callHistoryEntries: IIterable[PhoneCallHistoryEntry]): Any = js.native
   
   /* unmapped return type */
   /**
     * Updates an entry to indicate it has been seen.
     * @param callHistoryEntry The entry to update.
     */
-  def markEntryAsSeenAsync(callHistoryEntry: PhoneCallHistoryEntry): js.Any = js.native
+  def markEntryAsSeenAsync(callHistoryEntry: PhoneCallHistoryEntry): Any = js.native
   
   /* unmapped return type */
   /**
     * Marks all entries from the specified sources as seen.
     * @param sourceIds The list of source identifiers to mark as seen. Only entries that match PhoneCallHistoryEntry.SourceId will be updated.
     */
-  def markSourcesAsSeenAsync(sourceIds: IIterable[String]): js.Any = js.native
+  def markSourcesAsSeenAsync(sourceIds: IIterable[String]): Any = js.native
   
   /* unmapped return type */
   /**
     * Saves an entry to the store.
     * @param callHistoryEntry The entry to save.
     */
-  def saveEntryAsync(callHistoryEntry: PhoneCallHistoryEntry): js.Any = js.native
+  def saveEntryAsync(callHistoryEntry: PhoneCallHistoryEntry): Any = js.native
 }

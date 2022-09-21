@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "MatrixDropdownCell")
 @js.native
-class MatrixDropdownCell protected () extends StObject {
+open class MatrixDropdownCell protected () extends StObject {
   def this(column: MatrixDropdownColumn, row: MatrixDropdownRowModelBase, data: IMatrixDropdownData) = this()
   
   var column: MatrixDropdownColumn = js.native
@@ -17,11 +17,14 @@ class MatrixDropdownCell protected () extends StObject {
   
   def locStrsChanged(): Unit = js.native
   
-  val question: Question = js.native
+  def question: Question = js.native
+  
+  var questionValue: Question = js.native
   
   var row: MatrixDropdownRowModelBase = js.native
   
-  def runCondition(values: HashTable[js.Any], properties: HashTable[js.Any]): Unit = js.native
+  def runCondition(values: Any, properties: Any): Unit = js.native
   
-  var value: js.Any = js.native
+  def value: Any = js.native
+  def value_=(`val`: Any): Unit = js.native
 }

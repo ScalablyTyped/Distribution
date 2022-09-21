@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Sdk.SetStateRequest")
 @js.native
-class SetStateRequest protected () extends OrganizationRequest {
+open class SetStateRequest protected () extends OrganizationRequest {
   def this(entityMoniker: EntityReference, state: scala.Double, status: scala.Double) = this()
   
   /**

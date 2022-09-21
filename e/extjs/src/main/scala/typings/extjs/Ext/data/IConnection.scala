@@ -12,7 +12,7 @@ trait IConnection
   /** [Method] Aborts an active request
     * @param request Object Defaults to the last request
     */
-  var abort: js.UndefOr[js.Function1[/* request */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var abort: js.UndefOr[js.Function1[/* request */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Aborts all active requests */
   var abortAll: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -27,7 +27,7 @@ trait IConnection
   var cors: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Object) */
-  var defaultHeaders: js.UndefOr[js.Any] = js.undefined
+  var defaultHeaders: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Boolean) */
   var disableCaching: js.UndefOr[Boolean] = js.undefined
@@ -36,13 +36,13 @@ trait IConnection
   var disableCachingParam: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Object) */
-  var extraParams: js.UndefOr[js.Any] = js.undefined
+  var extraParams: js.UndefOr[Any] = js.undefined
   
   /** [Method] Determines whether this object has a request outstanding
     * @param request Object Defaults to the last transaction
     * @returns Boolean True if there is an outstanding request.
     */
-  var isLoading: js.UndefOr[js.Function1[/* request */ js.UndefOr[js.Any], Boolean]] = js.undefined
+  var isLoading: js.UndefOr[js.Function1[/* request */ js.UndefOr[Any], Boolean]] = js.undefined
   
   /** [Config Option] (String) */
   var method: js.UndefOr[String] = js.undefined
@@ -51,22 +51,20 @@ trait IConnection
     * @param status Number The status code
     * @returns Object An object containing success/status state
     */
-  var parseStatus: js.UndefOr[js.Function1[/* status */ js.UndefOr[Double], js.Any]] = js.undefined
+  var parseStatus: js.UndefOr[js.Function1[/* status */ js.UndefOr[Double], Any]] = js.undefined
   
   /** [Method] Sends an HTTP request to a remote server
     * @param options Object An object which may contain the following properties: (The options object may also contain any other property which might be needed to perform postprocessing in a callback because it is passed to callback functions.)
     * @returns Object The request object. This may be used to cancel the request.
     */
-  var request: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], js.Any]] = js.undefined
+  var request: js.UndefOr[js.Function1[/* options */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Method] Sets various options such as the url params for the request
     * @param options Object The initial options
     * @param scope Object The scope to execute in
     * @returns Object The params for the request
     */
-  var setOptions: js.UndefOr[
-    js.Function2[/* options */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], js.Any]
-  ] = js.undefined
+  var setOptions: js.UndefOr[js.Function2[/* options */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Config Option] (Number) */
   var timeout: js.UndefOr[Double] = js.undefined
@@ -79,10 +77,10 @@ trait IConnection
     */
   var upload: js.UndefOr[
     js.Function4[
-      /* form */ js.UndefOr[js.Any], 
+      /* form */ js.UndefOr[Any], 
       /* url */ js.UndefOr[String], 
       /* params */ js.UndefOr[String], 
-      /* options */ js.UndefOr[js.Any], 
+      /* options */ js.UndefOr[Any], 
       Unit
     ]
   ] = js.undefined
@@ -99,7 +97,7 @@ object IConnection {
   
   extension [Self <: IConnection](x: Self) {
     
-    inline def setAbort(value: /* request */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction1(value))
+    inline def setAbort(value: /* request */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction1(value))
     
     inline def setAbortAll(value: () => Unit): Self = StObject.set(x, "abortAll", js.Any.fromFunction0(value))
     
@@ -119,7 +117,7 @@ object IConnection {
     
     inline def setCorsUndefined: Self = StObject.set(x, "cors", js.undefined)
     
-    inline def setDefaultHeaders(value: js.Any): Self = StObject.set(x, "defaultHeaders", value.asInstanceOf[js.Any])
+    inline def setDefaultHeaders(value: Any): Self = StObject.set(x, "defaultHeaders", value.asInstanceOf[js.Any])
     
     inline def setDefaultHeadersUndefined: Self = StObject.set(x, "defaultHeaders", js.undefined)
     
@@ -131,11 +129,11 @@ object IConnection {
     
     inline def setDisableCachingUndefined: Self = StObject.set(x, "disableCaching", js.undefined)
     
-    inline def setExtraParams(value: js.Any): Self = StObject.set(x, "extraParams", value.asInstanceOf[js.Any])
+    inline def setExtraParams(value: Any): Self = StObject.set(x, "extraParams", value.asInstanceOf[js.Any])
     
     inline def setExtraParamsUndefined: Self = StObject.set(x, "extraParams", js.undefined)
     
-    inline def setIsLoading(value: /* request */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "isLoading", js.Any.fromFunction1(value))
+    inline def setIsLoading(value: /* request */ js.UndefOr[Any] => Boolean): Self = StObject.set(x, "isLoading", js.Any.fromFunction1(value))
     
     inline def setIsLoadingUndefined: Self = StObject.set(x, "isLoading", js.undefined)
     
@@ -143,15 +141,15 @@ object IConnection {
     
     inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    inline def setParseStatus(value: /* status */ js.UndefOr[Double] => js.Any): Self = StObject.set(x, "parseStatus", js.Any.fromFunction1(value))
+    inline def setParseStatus(value: /* status */ js.UndefOr[Double] => Any): Self = StObject.set(x, "parseStatus", js.Any.fromFunction1(value))
     
     inline def setParseStatusUndefined: Self = StObject.set(x, "parseStatus", js.undefined)
     
-    inline def setRequest(value: /* options */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
+    inline def setRequest(value: /* options */ js.UndefOr[Any] => Any): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
     
     inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
-    inline def setSetOptions(value: (/* options */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "setOptions", js.Any.fromFunction2(value))
+    inline def setSetOptions(value: (/* options */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Any): Self = StObject.set(x, "setOptions", js.Any.fromFunction2(value))
     
     inline def setSetOptionsUndefined: Self = StObject.set(x, "setOptions", js.undefined)
     
@@ -160,7 +158,7 @@ object IConnection {
     inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     inline def setUpload(
-      value: (/* form */ js.UndefOr[js.Any], /* url */ js.UndefOr[String], /* params */ js.UndefOr[String], /* options */ js.UndefOr[js.Any]) => Unit
+      value: (/* form */ js.UndefOr[Any], /* url */ js.UndefOr[String], /* params */ js.UndefOr[String], /* options */ js.UndefOr[Any]) => Unit
     ): Self = StObject.set(x, "upload", js.Any.fromFunction4(value))
     
     inline def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)

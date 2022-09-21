@@ -26,9 +26,9 @@ object styledStyledMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[Component /* <: ElementType[js.Any] */](Component: Component): ComponentCreator[Component] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(Component.asInstanceOf[js.Any]).asInstanceOf[ComponentCreator[Component]]
+  inline def default[Component /* <: ElementType[Any] */](Component: Component): ComponentCreator[Component] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(Component.asInstanceOf[js.Any]).asInstanceOf[ComponentCreator[Component]]
   
-  type ComponentCreator[Component /* <: ElementType[js.Any] */] = js.Function2[
+  type ComponentCreator[Component /* <: ElementType[Any] */] = js.Function2[
     /* styles */ CreateCSSProperties[ComponentPropsWithoutRef[Component]] | (js.Function1[
       /* props */ ThemeTheme[DefaultTheme] & ComponentPropsWithoutRef[Component], 
       CreateCSSProperties[ComponentPropsWithoutRef[Component]]

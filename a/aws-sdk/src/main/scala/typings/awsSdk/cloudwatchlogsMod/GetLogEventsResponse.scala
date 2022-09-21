@@ -34,7 +34,7 @@ object GetLogEventsResponse {
     
     inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    inline def setEventsVarargs(value: OutputLogEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: OutputLogEvent*): Self = StObject.set(x, "events", js.Array(value*))
     
     inline def setNextBackwardToken(value: NextToken): Self = StObject.set(x, "nextBackwardToken", value.asInstanceOf[js.Any])
     

@@ -12,7 +12,7 @@ trait CreateGatewayResponse extends StObject {
   var gatewayArn: ARN
   
   /**
-    * The ID of the gateway device. You can use this ID when you call other AWS IoT SiteWise APIs.
+    * The ID of the gateway device. You can use this ID when you call other IoT SiteWise APIs.
     */
   var gatewayId: ID
 }

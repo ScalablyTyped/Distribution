@@ -15,6 +15,14 @@ object baseuiNumbers {
   inline def `1`: `1` = 1.asInstanceOf[`1`]
   
   @js.native
+  sealed trait `12` extends StObject
+  inline def `12`: `12` = 12.asInstanceOf[`12`]
+  
+  @js.native
+  sealed trait `16` extends StObject
+  inline def `16`: `16` = 16.asInstanceOf[`16`]
+  
+  @js.native
   sealed trait `2` extends StObject
   inline def `2`: `2` = 2.asInstanceOf[`2`]
   
@@ -23,8 +31,16 @@ object baseuiNumbers {
   inline def `20`: `20` = 20.asInstanceOf[`20`]
   
   @js.native
+  sealed trait `24` extends StObject
+  inline def `24`: `24` = 24.asInstanceOf[`24`]
+  
+  @js.native
   sealed trait `3` extends StObject
   inline def `3`: `3` = 3.asInstanceOf[`3`]
+  
+  @js.native
+  sealed trait `36` extends StObject
+  inline def `36`: `36` = 36.asInstanceOf[`36`]
   
   @js.native
   sealed trait `4` extends StObject
@@ -39,6 +55,6 @@ object baseuiNumbers {
   inline def `6`: `6` = 6.asInstanceOf[`6`]
   
   @js.native
-  sealed trait `8` extends StObject
-  inline def `8`: `8` = 8.asInstanceOf[`8`]
+  sealed trait `900` extends StObject
+  inline def `900`: `900` = 900.asInstanceOf[`900`]
 }

@@ -26,7 +26,7 @@ object ObjectPattern {
     
     inline def setProperties(value: js.Array[AssignmentProperty | RestElement]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    inline def setPropertiesVarargs(value: (AssignmentProperty | RestElement)*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: (AssignmentProperty | RestElement)*): Self = StObject.set(x, "properties", js.Array(value*))
     
     inline def setType(value: typings.estree.estreeStrings.ObjectPattern): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_bigtableadmin
 
-Typings are for version 2.0.20201007
+Typings are for version 2.0.20220725
 
 ## Library description:
 TypeScript typings for Cloud Bigtable Admin API v2
@@ -10,10 +10,10 @@ TypeScript typings for Cloud Bigtable Admin API v2
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.bigtableadmin |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 1 |
-| # downloads        | 866 |
-| # stars            | 0 |
+| # releases         | 55 |
+| # dependents       | 0.0 |
+| # downloads        | 859.3333333333334 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

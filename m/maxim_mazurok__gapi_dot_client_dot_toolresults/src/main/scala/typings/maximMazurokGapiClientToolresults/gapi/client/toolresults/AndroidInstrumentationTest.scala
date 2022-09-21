@@ -42,7 +42,7 @@ object AndroidInstrumentationTest {
     
     inline def setTestTargetsUndefined: Self = StObject.set(x, "testTargets", js.undefined)
     
-    inline def setTestTargetsVarargs(value: String*): Self = StObject.set(x, "testTargets", js.Array(value :_*))
+    inline def setTestTargetsVarargs(value: String*): Self = StObject.set(x, "testTargets", js.Array(value*))
     
     inline def setUseOrchestrator(value: Boolean): Self = StObject.set(x, "useOrchestrator", value.asInstanceOf[js.Any])
     

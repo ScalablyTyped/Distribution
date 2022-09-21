@@ -25,6 +25,6 @@ object RemoveTargetedAppsRequest {
     
     inline def setAppIdsUndefined: Self = StObject.set(x, "appIds", js.undefined)
     
-    inline def setAppIdsVarargs(value: String*): Self = StObject.set(x, "appIds", js.Array(value :_*))
+    inline def setAppIdsVarargs(value: String*): Self = StObject.set(x, "appIds", js.Array(value*))
   }
 }

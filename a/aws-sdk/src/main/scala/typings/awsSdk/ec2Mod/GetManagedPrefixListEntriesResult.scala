@@ -29,7 +29,7 @@ object GetManagedPrefixListEntriesResult {
     
     inline def setEntriesUndefined: Self = StObject.set(x, "Entries", js.undefined)
     
-    inline def setEntriesVarargs(value: PrefixListEntry*): Self = StObject.set(x, "Entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: PrefixListEntry*): Self = StObject.set(x, "Entries", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteNamespaceRequest extends StObject {
   
   /**
-    * The ID for the AWS account that you want to delete the QuickSight namespace from.
+    * The ID for the Amazon Web Services account that you want to delete the Amazon QuickSight namespace from.
     */
   var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   

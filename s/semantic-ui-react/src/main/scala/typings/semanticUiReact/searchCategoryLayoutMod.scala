@@ -2,8 +2,8 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.FC
 import typings.react.mod.ReactElement
-import typings.react.mod.StatelessComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,12 +12,12 @@ object searchCategoryLayoutMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/modules/Search/SearchCategoryLayout", JSImport.Default)
   @js.native
-  val default: StatelessComponent[SearchCategoryLayoutProps] = js.native
+  val default: FC[SearchCategoryLayoutProps] = js.native
   
   trait SearchCategoryLayoutProps
     extends StObject
        with StrictSearchCategoryLayoutProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object SearchCategoryLayoutProps {
     
     inline def apply(categoryContent: ReactElement, resultsContent: ReactElement): SearchCategoryLayoutProps = {
@@ -49,8 +49,8 @@ object searchCategoryLayoutMod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[SearchCategoryLayoutProps]
+  type _To = FC[SearchCategoryLayoutProps]
   
   /* This means you don't have to write `default`, but can instead just say `searchCategoryLayoutMod.foo` */
-  override def _to: StatelessComponent[SearchCategoryLayoutProps] = default
+  override def _to: FC[SearchCategoryLayoutProps] = default
 }

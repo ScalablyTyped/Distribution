@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "Services.CompletionInfo")
 @js.native
-class CompletionInfo ()
+open class CompletionInfo ()
   extends StObject
      with typings.typescriptServices.TypeScript.Services.CompletionInfo {
   

@@ -102,7 +102,7 @@ object XLinguServiceManager {
     getHyphenator: () => XHyphenator,
     getSpellChecker: () => XSpellChecker,
     getThesaurus: () => XThesaurus,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeLinguServiceManagerListener: XEventListener => Boolean,
     setConfiguredServices: (String, Locale, SeqEquiv[String]) => Unit

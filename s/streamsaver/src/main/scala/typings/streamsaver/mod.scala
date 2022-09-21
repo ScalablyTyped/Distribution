@@ -17,7 +17,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("streamsaver", "TransformStream")
   @js.native
-  class TransformStream[I, O] protected ()
+  open class TransformStream[I, O] protected ()
     extends StObject
        with typings.std.TransformStream[I, O] {
     def this(
@@ -26,9 +26,11 @@ object mod {
       readableStrategy: QueuingStrategy[O]
     ) = this()
     
+    /* standard dom */
     /* CompleteClass */
     override val readable: ReadableStream[O] = js.native
     
+    /* standard dom */
     /* CompleteClass */
     override val writable: typings.std.WritableStream[I] = js.native
   }
@@ -36,7 +38,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("streamsaver", "WritableStream")
   @js.native
-  class WritableStream[W] ()
+  open class WritableStream[W] ()
     extends StObject
        with typings.std.WritableStream[W] {
     def this(underlyingSink: UnderlyingSink[W]) = this()
@@ -44,8 +46,8 @@ object mod {
     def this(underlyingSink: UnderlyingSink[W], strategy: QueuingStrategy[W]) = this()
   }
   
-  inline def createWriteStream(filename: String): typings.std.WritableStream[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createWriteStream")(filename.asInstanceOf[js.Any]).asInstanceOf[typings.std.WritableStream[js.Any]]
-  inline def createWriteStream(filename: String, options: CreateWriteStreamOptions[js.Any, js.Any]): typings.std.WritableStream[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("createWriteStream")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.std.WritableStream[js.Any]]
+  inline def createWriteStream(filename: String): typings.std.WritableStream[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createWriteStream")(filename.asInstanceOf[js.Any]).asInstanceOf[typings.std.WritableStream[Any]]
+  inline def createWriteStream(filename: String, options: CreateWriteStreamOptions[Any, Any]): typings.std.WritableStream[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("createWriteStream")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.std.WritableStream[Any]]
   
   @JSImport("streamsaver", "mitm")
   @js.native

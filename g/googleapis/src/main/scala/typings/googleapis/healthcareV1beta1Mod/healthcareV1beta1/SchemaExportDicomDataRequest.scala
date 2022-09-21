@@ -4,25 +4,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Exports data from the specified DICOM store. If a given resource (e.g., a
-  * DICOM object with the same SOPInstance UID) already exists in the output,
-  * it is overwritten with the version in the source dataset. Exported DICOM
-  * data will persist when the DICOM store from which it was exported is
-  * deleted.
-  */
 trait SchemaExportDicomDataRequest extends StObject {
   
   /**
-    * The BigQuery output destination.  For now, only exporting to a dataset in
-    * the current project is supported  The BigQuery location requires two IAM
-    * roles: `roles/bigquery.dataEditor` and `roles/bigquery.jobUser`.
+    * The BigQuery output destination. You can only export to a BigQuery dataset that's in the same project as the DICOM store you're exporting from. The Cloud Healthcare Service Agent requires two IAM roles on the BigQuery location: `roles/bigquery.dataEditor` and `roles/bigquery.jobUser`.
     */
   var bigqueryDestination: js.UndefOr[SchemaGoogleCloudHealthcareV1beta1DicomBigQueryDestination] = js.undefined
   
   /**
-    * The Cloud Storage output destination.  The Cloud Storage location
-    * requires the `roles/storage.objectAdmin` Cloud IAM role.
+    * Specifies the filter configuration.
+    */
+  var filterConfig: js.UndefOr[SchemaDicomFilterConfig] = js.undefined
+  
+  /**
+    * The Cloud Storage output destination. The Cloud Healthcare Service Agent requires the `roles/storage.objectAdmin` Cloud IAM roles on the Cloud Storage location.
     */
   var gcsDestination: js.UndefOr[SchemaGoogleCloudHealthcareV1beta1DicomGcsDestination] = js.undefined
 }
@@ -38,6 +33,10 @@ object SchemaExportDicomDataRequest {
     inline def setBigqueryDestination(value: SchemaGoogleCloudHealthcareV1beta1DicomBigQueryDestination): Self = StObject.set(x, "bigqueryDestination", value.asInstanceOf[js.Any])
     
     inline def setBigqueryDestinationUndefined: Self = StObject.set(x, "bigqueryDestination", js.undefined)
+    
+    inline def setFilterConfig(value: SchemaDicomFilterConfig): Self = StObject.set(x, "filterConfig", value.asInstanceOf[js.Any])
+    
+    inline def setFilterConfigUndefined: Self = StObject.set(x, "filterConfig", js.undefined)
     
     inline def setGcsDestination(value: SchemaGoogleCloudHealthcareV1beta1DicomGcsDestination): Self = StObject.set(x, "gcsDestination", value.asInstanceOf[js.Any])
     

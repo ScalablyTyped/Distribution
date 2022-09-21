@@ -8,7 +8,7 @@ trait ImageEditorImageLoadedEvent
   extends StObject
      with ImageEditorEvent {
   
-  var image: js.UndefOr[js.Any] = js.undefined
+  var image: js.UndefOr[Any] = js.undefined
 }
 object ImageEditorImageLoadedEvent {
   
@@ -19,7 +19,7 @@ object ImageEditorImageLoadedEvent {
   
   extension [Self <: ImageEditorImageLoadedEvent](x: Self) {
     
-    inline def setImage(value: js.Any): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: Any): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
   }

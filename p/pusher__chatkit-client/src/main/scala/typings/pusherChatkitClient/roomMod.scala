@@ -47,7 +47,7 @@ object roomMod {
     
     var createdByUserId: String
     
-    var customData: js.UndefOr[js.Any] = js.undefined
+    var customData: js.UndefOr[Any] = js.undefined
     
     var id: String
     
@@ -86,7 +86,7 @@ object roomMod {
       
       inline def setCreatedByUserId(value: String): Self = StObject.set(x, "createdByUserId", value.asInstanceOf[js.Any])
       
-      inline def setCustomData(value: js.Any): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+      inline def setCustomData(value: Any): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
       
       inline def setCustomDataUndefined: Self = StObject.set(x, "customData", js.undefined)
       
@@ -104,7 +104,7 @@ object roomMod {
       
       inline def setUsers(value: js.Array[PusherUser]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
       
-      inline def setUsersVarargs(value: PusherUser*): Self = StObject.set(x, "users", js.Array(value :_*))
+      inline def setUsersVarargs(value: PusherUser*): Self = StObject.set(x, "users", js.Array(value*))
     }
   }
 }

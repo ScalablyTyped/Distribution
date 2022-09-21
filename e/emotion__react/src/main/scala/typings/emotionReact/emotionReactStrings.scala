@@ -211,6 +211,10 @@ object emotionReactStrings {
   inline def colgroup: colgroup = "colgroup".asInstanceOf[colgroup]
   
   @js.native
+  sealed trait columns extends StObject
+  inline def columns: columns = "columns".asInstanceOf[columns]
+  
+  @js.native
   sealed trait copy extends StObject
   inline def copy: copy = "copy".asInstanceOf[copy]
   
@@ -301,6 +305,10 @@ object emotionReactStrings {
   @js.native
   sealed trait enter extends StObject
   inline def enter: enter = "enter".asInstanceOf[enter]
+  
+  @js.native
+  sealed trait environment extends StObject
+  inline def environment: environment = "environment".asInstanceOf[environment]
   
   @js.native
   sealed trait evenodd extends StObject
@@ -453,6 +461,10 @@ object emotionReactStrings {
   @js.native
   sealed trait grid extends StObject
   inline def grid: grid = "grid".asInstanceOf[grid]
+  
+  @js.native
+  sealed trait groups extends StObject
+  inline def groups: groups = "groups".asInstanceOf[groups]
   
   @js.native
   sealed trait h1 extends StObject
@@ -835,6 +847,10 @@ object emotionReactStrings {
   inline def round: round = "round".asInstanceOf[round]
   
   @js.native
+  sealed trait rows extends StObject
+  inline def rows: rows = "rows".asInstanceOf[rows]
+  
+  @js.native
   sealed trait rp extends StObject
   inline def rp: rp = "rp".asInstanceOf[rp]
   
@@ -1069,6 +1085,10 @@ object emotionReactStrings {
   @js.native
   sealed trait `use-credentials` extends StObject
   inline def `use-credentials`: `use-credentials` = "use-credentials".asInstanceOf[`use-credentials`]
+  
+  @js.native
+  sealed trait user extends StObject
+  inline def user: user = "user".asInstanceOf[user]
   
   @js.native
   sealed trait `var` extends StObject

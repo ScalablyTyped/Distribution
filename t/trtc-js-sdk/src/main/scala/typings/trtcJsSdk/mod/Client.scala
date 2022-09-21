@@ -1,12 +1,13 @@
 package typings.trtcJsSdk.mod
 
 import typings.trtcJsSdk.anon.Audio
-import typings.trtcJsSdk.anon.CurState
+import typings.trtcJsSdk.anon.PrevState
 import typings.trtcJsSdk.trtcJsSdkStrings.Asterisk
 import typings.trtcJsSdk.trtcJsSdkStrings.`client-banned`
 import typings.trtcJsSdk.trtcJsSdkStrings.`connection-state-changed`
 import typings.trtcJsSdk.trtcJsSdkStrings.`mute-audio`
 import typings.trtcJsSdk.trtcJsSdkStrings.`mute-video`
+import typings.trtcJsSdk.trtcJsSdkStrings.`network-quality`
 import typings.trtcJsSdk.trtcJsSdkStrings.`peer-join`
 import typings.trtcJsSdk.trtcJsSdkStrings.`peer-leave`
 import typings.trtcJsSdk.trtcJsSdkStrings.`stream-added`
@@ -58,13 +59,15 @@ trait Client extends StObject {
   @JSName("off")
   def off_clientbanned(event: `client-banned`, handler: Callback[RtcError]): Unit = js.native
   @JSName("off")
-  def off_connectionstatechanged(event: `connection-state-changed`, handler: Callback[CurState]): Unit = js.native
+  def off_connectionstatechanged(event: `connection-state-changed`, handler: Callback[PrevState]): Unit = js.native
   @JSName("off")
   def off_error(event: error, handler: Callback[RtcError]): Unit = js.native
   @JSName("off")
   def off_muteaudio(event: `mute-audio`, handler: Callback[RemoteUserInfo]): Unit = js.native
   @JSName("off")
   def off_mutevideo(event: `mute-video`, handler: Callback[RemoteUserInfo]): Unit = js.native
+  @JSName("off")
+  def off_networkquality(event: `network-quality`, handler: Callback[NetworkQuality]): Unit = js.native
   @JSName("off")
   def off_peerjoin(event: `peer-join`, handler: Callback[RemoteUserInfo]): Unit = js.native
   @JSName("off")
@@ -86,13 +89,15 @@ trait Client extends StObject {
   @JSName("on")
   def on_clientbanned(event: `client-banned`, handler: Callback[RtcError]): Unit = js.native
   @JSName("on")
-  def on_connectionstatechanged(event: `connection-state-changed`, handler: Callback[CurState]): Unit = js.native
+  def on_connectionstatechanged(event: `connection-state-changed`, handler: Callback[PrevState]): Unit = js.native
   @JSName("on")
   def on_error(event: error, handler: Callback[RtcError]): Unit = js.native
   @JSName("on")
   def on_muteaudio(event: `mute-audio`, handler: Callback[RemoteUserInfo]): Unit = js.native
   @JSName("on")
   def on_mutevideo(event: `mute-video`, handler: Callback[RemoteUserInfo]): Unit = js.native
+  @JSName("on")
+  def on_networkquality(event: `network-quality`, handler: Callback[NetworkQuality]): Unit = js.native
   @JSName("on")
   def on_peerjoin(event: `peer-join`, handler: Callback[RemoteUserInfo]): Unit = js.native
   @JSName("on")
@@ -120,12 +125,6 @@ trait Client extends StObject {
   def publish(stream: LocalStream): js.Promise[Unit] = js.native
   
   /**
-    * 设置是否默认接收远端流。该方法可在 join() 调用前使用，若在进房后调用，会接收不到后续进房的远端用户音视频流。
-    * @param muted 是否默认不接收远端流: true true 默认不接收任何远端流。false 默认接收所有远端流。（默认）
-    */
-  def setDefaultMuteRemoteStreams(muted: Boolean): Unit = js.native
-  
-  /**
     * 设置代理服务器。该方法适用于企业自己部署代理服务器，如 ngnix+coturn 方案。
     *
     * **注意** 该方法需要在 join() 之前调用。
@@ -139,10 +138,17 @@ trait Client extends StObject {
     */
   def setTurnServer(config: TurnServerConfig): Unit = js.native
   
+  /** 开始混流转码 */
+  def startMixTranscode(config: MixTranscodeConfig): js.Promise[Unit] = js.native
+  
+  /** 停止混流转码 */
+  def stopMixTranscode(): js.Promise[Unit] = js.native
+  
   /**
     * 订阅远端流
     * @param stream 远端流，通过监听 'stream-added' 事件获得。
     *
+    * @param options
     * @example
     * ```javascript
     * // 监听远端流订阅成功事件
@@ -162,8 +168,8 @@ trait Client extends StObject {
     * });
     * ```
     */
-  def subscribe(stream: RemoteStream): Unit = js.native
-  def subscribe(stream: RemoteStream, options: Audio): Unit = js.native
+  def subscribe(stream: RemoteStream): js.Promise[Unit] = js.native
+  def subscribe(stream: RemoteStream, options: Audio): js.Promise[Unit] = js.native
   
   /** 切换用户角色 */
   def switchRole(role: Role): js.Promise[Unit] = js.native
@@ -175,5 +181,5 @@ trait Client extends StObject {
     * 取消订阅远端流
     * @param stream 远端流，通过监听 'stream-added' 事件获得。
     */
-  def unsubscribe(stream: RemoteStream): Unit = js.native
+  def unsubscribe(stream: RemoteStream): js.Promise[Unit] = js.native
 }

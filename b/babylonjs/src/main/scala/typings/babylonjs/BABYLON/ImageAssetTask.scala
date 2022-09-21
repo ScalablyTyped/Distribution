@@ -20,8 +20,8 @@ trait ImageAssetTask
     */
   def onError(task: ImageAssetTask): Unit = js.native
   def onError(task: ImageAssetTask, message: String): Unit = js.native
-  def onError(task: ImageAssetTask, message: String, exception: js.Any): Unit = js.native
-  def onError(task: ImageAssetTask, message: Unit, exception: js.Any): Unit = js.native
+  def onError(task: ImageAssetTask, message: String, exception: Any): Unit = js.native
+  def onError(task: ImageAssetTask, message: Unit, exception: Any): Unit = js.native
   
   /**
     * Callback called when the task is successful

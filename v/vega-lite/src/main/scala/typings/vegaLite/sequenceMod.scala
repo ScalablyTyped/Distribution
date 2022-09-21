@@ -11,11 +11,11 @@ object sequenceMod {
   
   @JSImport("vega-lite/build/src/compile/data/sequence", "SequenceNode")
   @js.native
-  class SequenceNode protected () extends DataFlowNode {
+  open class SequenceNode protected () extends DataFlowNode {
     def this(parent: DataFlowNode, params: SequenceParams) = this()
     
     def assemble(): SequenceTransform = js.native
     
-    /* private */ var params: js.Any = js.native
+    /* private */ var params: Any = js.native
   }
 }

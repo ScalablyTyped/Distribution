@@ -30,7 +30,7 @@ trait PivotTreeMap
   /** Returns the JSON records formed to render the control.
     * @returns {any[]}
     */
-  def getJSONRecords(): js.Array[js.Any] = js.native
+  def getJSONRecords(): js.Array[Any] = js.native
   
   /** Returns the OlapReport string maintained along with the axis elements information.
     * @returns {string}
@@ -70,11 +70,11 @@ object PivotTreeMap {
     
     /** returns the custom object bound with PivotTreeMap control.
       */
-    var customObject: js.UndefOr[js.Any] = js.undefined
+    var customObject: js.UndefOr[Any] = js.undefined
     
     /** returns the HTML element of PivotTreeMap control.
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
   }
   object AfterServiceInvokeEventArgs {
     
@@ -89,11 +89,11 @@ object PivotTreeMap {
       
       inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      inline def setCustomObject(value: js.Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
+      inline def setCustomObject(value: Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
       
       inline def setCustomObjectUndefined: Self = StObject.set(x, "customObject", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     }
@@ -107,11 +107,11 @@ object PivotTreeMap {
     
     /** returns the custom object bound with PivotTreeMap control.
       */
-    var customObject: js.UndefOr[js.Any] = js.undefined
+    var customObject: js.UndefOr[Any] = js.undefined
     
     /** returns the HTML element of PivotTreeMap control.
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
   }
   object BeforeServiceInvokeEventArgs {
     
@@ -126,11 +126,11 @@ object PivotTreeMap {
       
       inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      inline def setCustomObject(value: js.Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
+      inline def setCustomObject(value: Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
       
       inline def setCustomObjectUndefined: Self = StObject.set(x, "customObject", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     }
@@ -156,7 +156,7 @@ object PivotTreeMap {
     /** Provides the raw data source for the PivotTreeMap.
       * @Default {null}
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Lists out the items which supports filtering of values without displaying the members in UI in PivotTreeMap.
       * @Default {[]}
@@ -200,13 +200,13 @@ object PivotTreeMap {
       
       inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      inline def setColumnsVarargs(value: DataSourceColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: DataSourceColumn*): Self = StObject.set(x, "columns", js.Array(value*))
       
       inline def setCube(value: String): Self = StObject.set(x, "cube", value.asInstanceOf[js.Any])
       
       inline def setCubeUndefined: Self = StObject.set(x, "cube", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -214,7 +214,7 @@ object PivotTreeMap {
       
       inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      inline def setFiltersVarargs(value: DataSourceFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: DataSourceFilter*): Self = StObject.set(x, "filters", js.Array(value*))
       
       inline def setProviderName(value: String): Self = StObject.set(x, "providerName", value.asInstanceOf[js.Any])
       
@@ -224,7 +224,7 @@ object PivotTreeMap {
       
       inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
       
-      inline def setRowsVarargs(value: DataSourceRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
+      inline def setRowsVarargs(value: DataSourceRow*): Self = StObject.set(x, "rows", js.Array(value*))
       
       inline def setSourceInfo(value: String): Self = StObject.set(x, "sourceInfo", value.asInstanceOf[js.Any])
       
@@ -234,7 +234,7 @@ object PivotTreeMap {
       
       inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
       
-      inline def setValuesVarargs(value: DataSourceValue*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: DataSourceValue*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
   
@@ -282,7 +282,7 @@ object PivotTreeMap {
     /** Contains the collection of items to be excluded among the field members.
       * @Default {[]}
       */
-    var values: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var values: js.UndefOr[js.Array[Any]] = js.undefined
   }
   object DataSourceColumnsFilterItems {
     
@@ -293,11 +293,11 @@ object PivotTreeMap {
     
     extension [Self <: DataSourceColumnsFilterItems](x: Self) {
       
-      inline def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
       
-      inline def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Any*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
   
@@ -336,7 +336,7 @@ object PivotTreeMap {
     /** Contains the collection of items to be excluded among the field members.
       * @Default {[]}
       */
-    var values: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var values: js.UndefOr[js.Array[Any]] = js.undefined
   }
   object DataSourceFiltersFilterItems {
     
@@ -347,11 +347,11 @@ object PivotTreeMap {
     
     extension [Self <: DataSourceFiltersFilterItems](x: Self) {
       
-      inline def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
       
-      inline def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Any*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
   
@@ -399,7 +399,7 @@ object PivotTreeMap {
     /** Contains the collection of items to be excluded among the field members.
       * @Default {[]}
       */
-    var values: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var values: js.UndefOr[js.Array[Any]] = js.undefined
   }
   object DataSourceRowsFilterItems {
     
@@ -410,11 +410,11 @@ object PivotTreeMap {
     
     extension [Self <: DataSourceRowsFilterItems](x: Self) {
       
-      inline def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
       
-      inline def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Any*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
   
@@ -447,7 +447,7 @@ object PivotTreeMap {
       
       inline def setMeasuresUndefined: Self = StObject.set(x, "measures", js.undefined)
       
-      inline def setMeasuresVarargs(value: DataSourceValuesMeasure*): Self = StObject.set(x, "measures", js.Array(value :_*))
+      inline def setMeasuresVarargs(value: DataSourceValuesMeasure*): Self = StObject.set(x, "measures", js.Array(value*))
     }
   }
   
@@ -476,7 +476,7 @@ object PivotTreeMap {
     
     /** return the HTML element of PivotTreeMap control.
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
   }
   object DrillSuccessEventArgs {
     
@@ -487,7 +487,7 @@ object PivotTreeMap {
     
     extension [Self <: DrillSuccessEventArgs](x: Self) {
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     }
@@ -501,11 +501,11 @@ object PivotTreeMap {
     
     /** returns the custom object bound with PivotTreeMap control.
       */
-    var customObject: js.UndefOr[js.Any] = js.undefined
+    var customObject: js.UndefOr[Any] = js.undefined
     
     /** returns the HTML element of PivotTreeMap control.
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
   }
   object LoadEventArgs {
     
@@ -520,11 +520,11 @@ object PivotTreeMap {
       
       inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      inline def setCustomObject(value: js.Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
+      inline def setCustomObject(value: Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
       
       inline def setCustomObjectUndefined: Self = StObject.set(x, "customObject", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     }
@@ -548,7 +548,7 @@ object PivotTreeMap {
     /** Object utilized to pass additional information between client-end and service-end.
       * @Default {{}}
       */
-    var customObject: js.UndefOr[js.Any] = js.undefined
+    var customObject: js.UndefOr[Any] = js.undefined
     
     /** Initializes the data source for the PivotTreeMap widget, when it functions completely on client-side.
       * @Default {{}}
@@ -626,7 +626,7 @@ object PivotTreeMap {
       
       inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
       
-      inline def setCustomObject(value: js.Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
+      inline def setCustomObject(value: Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
       
       inline def setCustomObjectUndefined: Self = StObject.set(x, "customObject", js.undefined)
       
@@ -688,11 +688,11 @@ object PivotTreeMap {
     
     /** returns the custom object bound with PivotTreeMap control.
       */
-    var customObject: js.UndefOr[js.Any] = js.undefined
+    var customObject: js.UndefOr[Any] = js.undefined
     
     /** returns the HTML element of PivotTreeMap control.
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
   }
   object RenderCompleteEventArgs {
     
@@ -707,11 +707,11 @@ object PivotTreeMap {
       
       inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      inline def setCustomObject(value: js.Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
+      inline def setCustomObject(value: Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
       
       inline def setCustomObjectUndefined: Self = StObject.set(x, "customObject", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     }
@@ -725,11 +725,11 @@ object PivotTreeMap {
     
     /** returns the custom object bound with PivotTreeMap control.
       */
-    var customObject: js.UndefOr[js.Any] = js.undefined
+    var customObject: js.UndefOr[Any] = js.undefined
     
     /** returns the HTML element of PivotTreeMap control.
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** returns the error stack trace of the original exception.
       */
@@ -748,11 +748,11 @@ object PivotTreeMap {
       
       inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      inline def setCustomObject(value: js.Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
+      inline def setCustomObject(value: Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
       
       inline def setCustomObjectUndefined: Self = StObject.set(x, "customObject", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
@@ -770,11 +770,11 @@ object PivotTreeMap {
     
     /** returns the custom object bound with PivotTreeMap control.
       */
-    var customObject: js.UndefOr[js.Any] = js.undefined
+    var customObject: js.UndefOr[Any] = js.undefined
     
     /** returns the HTML element of PivotTreeMap control.
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
   }
   object RenderSuccessEventArgs {
     
@@ -789,11 +789,11 @@ object PivotTreeMap {
       
       inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      inline def setCustomObject(value: js.Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
+      inline def setCustomObject(value: Any): Self = StObject.set(x, "customObject", value.asInstanceOf[js.Any])
       
       inline def setCustomObjectUndefined: Self = StObject.set(x, "customObject", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     }

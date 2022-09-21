@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-plaid-link
 
-Typings are for version 1.3
+Typings are for version 3.3.2
 
 ## Library description:
 A React component for Plaid Link
@@ -10,10 +10,10 @@ A React component for Plaid Link
 | ------------------ | :-------------: |
 | Full name          | react-plaid-link |
 | Keywords           | react, react-component, plaid |
-| # releases         | 23 |
-| # dependents       | 3 |
-| # downloads        | 1732115 |
-| # stars            | 0 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 602363.0 |
+| # stars            | 206.0 |
 
 ## Links
 - [Homepage](https://github.com/plaid/react-plaid-link)
@@ -24,7 +24,7 @@ A React component for Plaid Link
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

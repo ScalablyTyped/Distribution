@@ -4,12 +4,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** @deprecated */
 trait External extends StObject {
   
   /** @deprecated */
+  /* standard dom */
   def AddSearchProvider(): Unit
   
   /** @deprecated */
+  /* standard dom */
   def IsSearchProviderInstalled(): Unit
 }
 object External {

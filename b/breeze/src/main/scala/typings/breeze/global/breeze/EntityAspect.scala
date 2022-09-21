@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("breeze.EntityAspect")
 @js.native
-class EntityAspect ()
+open class EntityAspect ()
   extends StObject
      with typings.breeze.breeze.EntityAspect

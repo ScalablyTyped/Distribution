@@ -37,11 +37,11 @@ object TestPlanHubData {
     
     inline def setTestPoints(value: js.Array[TestPoint]): Self = StObject.set(x, "testPoints", value.asInstanceOf[js.Any])
     
-    inline def setTestPointsVarargs(value: TestPoint*): Self = StObject.set(x, "testPoints", js.Array(value :_*))
+    inline def setTestPointsVarargs(value: TestPoint*): Self = StObject.set(x, "testPoints", js.Array(value*))
     
     inline def setTestSuites(value: js.Array[TestSuite]): Self = StObject.set(x, "testSuites", value.asInstanceOf[js.Any])
     
-    inline def setTestSuitesVarargs(value: TestSuite*): Self = StObject.set(x, "testSuites", js.Array(value :_*))
+    inline def setTestSuitesVarargs(value: TestSuite*): Self = StObject.set(x, "testSuites", js.Array(value*))
     
     inline def setTotalTestPoints(value: Double): Self = StObject.set(x, "totalTestPoints", value.asInstanceOf[js.Any])
   }

@@ -6,10 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GooglePrivacyDlpV2Result extends StObject {
   
-  /**
-    * Statistics related to the processing of hybrid inspect. Early access feature is in a pre-release state and might change or have limited support. For more information, see
-    * https://cloud.google.com/products#product-launch-stages.
-    */
+  /** Statistics related to the processing of hybrid inspect. */
   var hybridStats: js.UndefOr[GooglePrivacyDlpV2HybridInspectStatistics] = js.undefined
   
   /** Statistics of how many instances of each info type were found during inspect job. */
@@ -38,7 +35,7 @@ object GooglePrivacyDlpV2Result {
     
     inline def setInfoTypeStatsUndefined: Self = StObject.set(x, "infoTypeStats", js.undefined)
     
-    inline def setInfoTypeStatsVarargs(value: GooglePrivacyDlpV2InfoTypeStats*): Self = StObject.set(x, "infoTypeStats", js.Array(value :_*))
+    inline def setInfoTypeStatsVarargs(value: GooglePrivacyDlpV2InfoTypeStats*): Self = StObject.set(x, "infoTypeStats", js.Array(value*))
     
     inline def setProcessedBytes(value: String): Self = StObject.set(x, "processedBytes", value.asInstanceOf[js.Any])
     

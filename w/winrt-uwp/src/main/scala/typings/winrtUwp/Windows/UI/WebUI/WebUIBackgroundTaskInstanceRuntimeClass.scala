@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait WebUIBackgroundTaskInstanceRuntimeClass extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_canceled(`type`: canceled, listener: BackgroundTaskCanceledEventHandler): Unit = js.native
   
@@ -38,7 +38,7 @@ trait WebUIBackgroundTaskInstanceRuntimeClass extends StObject {
   /** Gets or sets progress status for a background task instance. */
   var progress: Double = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_canceled(`type`: canceled, listener: BackgroundTaskCanceledEventHandler): Unit = js.native
   
@@ -52,5 +52,5 @@ trait WebUIBackgroundTaskInstanceRuntimeClass extends StObject {
   var task: BackgroundTaskRegistration = js.native
   
   /** Gets additional information associated with a background task instance. */
-  var triggerDetails: js.Any = js.native
+  var triggerDetails: Any = js.native
 }

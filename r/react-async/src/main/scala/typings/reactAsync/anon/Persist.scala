@@ -6,25 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Persist extends StObject {
   
-  var children: js.Any
+  var children: Any
   
-  var persist: js.Any
+  var persist: Any
   
-  var state: js.Any
+  var state: Any
 }
 object Persist {
   
-  inline def apply(children: js.Any, persist: js.Any, state: js.Any): Persist = {
+  inline def apply(children: Any, persist: Any, state: Any): Persist = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], persist = persist.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[Persist]
   }
   
   extension [Self <: Persist](x: Self) {
     
-    inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setPersist(value: js.Any): Self = StObject.set(x, "persist", value.asInstanceOf[js.Any])
+    inline def setPersist(value: Any): Self = StObject.set(x, "persist", value.asInstanceOf[js.Any])
     
-    inline def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

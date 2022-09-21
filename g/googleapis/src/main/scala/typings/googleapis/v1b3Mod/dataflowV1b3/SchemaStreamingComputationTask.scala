@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A task which describes what action should be performed for the specified
-  * streaming computation ranges.
-  */
 trait SchemaStreamingComputationTask extends StObject {
   
   /**
@@ -23,7 +19,7 @@ trait SchemaStreamingComputationTask extends StObject {
   /**
     * A type of streaming computation task.
     */
-  var taskType: js.UndefOr[String] = js.undefined
+  var taskType: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaStreamingComputationTask {
   
@@ -38,15 +34,17 @@ object SchemaStreamingComputationTask {
     
     inline def setComputationRangesUndefined: Self = StObject.set(x, "computationRanges", js.undefined)
     
-    inline def setComputationRangesVarargs(value: SchemaStreamingComputationRanges*): Self = StObject.set(x, "computationRanges", js.Array(value :_*))
+    inline def setComputationRangesVarargs(value: SchemaStreamingComputationRanges*): Self = StObject.set(x, "computationRanges", js.Array(value*))
     
     inline def setDataDisks(value: js.Array[SchemaMountedDataDisk]): Self = StObject.set(x, "dataDisks", value.asInstanceOf[js.Any])
     
     inline def setDataDisksUndefined: Self = StObject.set(x, "dataDisks", js.undefined)
     
-    inline def setDataDisksVarargs(value: SchemaMountedDataDisk*): Self = StObject.set(x, "dataDisks", js.Array(value :_*))
+    inline def setDataDisksVarargs(value: SchemaMountedDataDisk*): Self = StObject.set(x, "dataDisks", js.Array(value*))
     
     inline def setTaskType(value: String): Self = StObject.set(x, "taskType", value.asInstanceOf[js.Any])
+    
+    inline def setTaskTypeNull: Self = StObject.set(x, "taskType", null)
     
     inline def setTaskTypeUndefined: Self = StObject.set(x, "taskType", js.undefined)
   }

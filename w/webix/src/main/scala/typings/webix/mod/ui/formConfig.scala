@@ -9,21 +9,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait formConfig extends StObject {
   
-  var animate: js.UndefOr[js.Any] = js.undefined
+  var animate: js.UndefOr[Any] = js.undefined
   
   var autoheight: js.UndefOr[Boolean] = js.undefined
   
   var borderless: js.UndefOr[Boolean] = js.undefined
   
-  var cols: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var cols: js.UndefOr[js.Array[Any]] = js.undefined
   
   var complexData: js.UndefOr[Boolean] = js.undefined
   
   var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[js.Any] = js.undefined
+  var css: js.UndefOr[Any] = js.undefined
   
-  var data: js.UndefOr[String | js.Array[js.Any]] = js.undefined
+  var data: js.UndefOr[String | js.Array[Any]] = js.undefined
   
   var dataFeed: js.UndefOr[String | WebixCallback] = js.undefined
   
@@ -31,9 +31,9 @@ trait formConfig extends StObject {
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var elements: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var elements: js.UndefOr[js.Array[Any]] = js.undefined
   
-  var elementsConfig: js.UndefOr[js.Any] = js.undefined
+  var elementsConfig: js.UndefOr[Any] = js.undefined
   
   var gravity: js.UndefOr[Double] = js.undefined
   
@@ -57,7 +57,7 @@ trait formConfig extends StObject {
   
   var on: js.UndefOr[EventHash] = js.undefined
   
-  var padding: js.UndefOr[js.Any] = js.undefined
+  var padding: js.UndefOr[Any] = js.undefined
   
   var paddingX: js.UndefOr[Double] = js.undefined
   
@@ -65,9 +65,9 @@ trait formConfig extends StObject {
   
   var responsive: js.UndefOr[String] = js.undefined
   
-  var rows: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var rows: js.UndefOr[js.Array[Any]] = js.undefined
   
-  var rules: js.UndefOr[js.Any] = js.undefined
+  var rules: js.UndefOr[Any] = js.undefined
   
   var scroll: js.UndefOr[Boolean | String] = js.undefined
   
@@ -75,7 +75,7 @@ trait formConfig extends StObject {
   
   var `type`: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[js.Any] = js.undefined
+  var url: js.UndefOr[Any] = js.undefined
   
   var view: js.UndefOr[String] = js.undefined
   
@@ -92,7 +92,7 @@ object formConfig {
   
   extension [Self <: formConfig](x: Self) {
     
-    inline def setAnimate(value: js.Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
@@ -104,11 +104,11 @@ object formConfig {
     
     inline def setBorderlessUndefined: Self = StObject.set(x, "borderless", js.undefined)
     
-    inline def setCols(value: js.Array[js.Any]): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
+    inline def setCols(value: js.Array[Any]): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
     
     inline def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
     
-    inline def setColsVarargs(value: js.Any*): Self = StObject.set(x, "cols", js.Array(value :_*))
+    inline def setColsVarargs(value: Any*): Self = StObject.set(x, "cols", js.Array(value*))
     
     inline def setComplexData(value: Boolean): Self = StObject.set(x, "complexData", value.asInstanceOf[js.Any])
     
@@ -118,11 +118,11 @@ object formConfig {
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    inline def setCss(value: js.Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
-    inline def setData(value: String | js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataFeed(value: String | WebixCallback): Self = StObject.set(x, "dataFeed", value.asInstanceOf[js.Any])
     
@@ -130,7 +130,7 @@ object formConfig {
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setDatatype(value: String): Self = StObject.set(x, "datatype", value.asInstanceOf[js.Any])
     
@@ -140,15 +140,15 @@ object formConfig {
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    inline def setElements(value: js.Array[js.Any]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+    inline def setElements(value: js.Array[Any]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
-    inline def setElementsConfig(value: js.Any): Self = StObject.set(x, "elementsConfig", value.asInstanceOf[js.Any])
+    inline def setElementsConfig(value: Any): Self = StObject.set(x, "elementsConfig", value.asInstanceOf[js.Any])
     
     inline def setElementsConfigUndefined: Self = StObject.set(x, "elementsConfig", js.undefined)
     
     inline def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
     
-    inline def setElementsVarargs(value: js.Any*): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: Any*): Self = StObject.set(x, "elements", js.Array(value*))
     
     inline def setGravity(value: Double): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
     
@@ -194,7 +194,7 @@ object formConfig {
     
     inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     
-    inline def setPadding(value: js.Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
@@ -210,13 +210,13 @@ object formConfig {
     
     inline def setResponsiveUndefined: Self = StObject.set(x, "responsive", js.undefined)
     
-    inline def setRows(value: js.Array[js.Any]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: js.Array[Any]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    inline def setRowsVarargs(value: js.Any*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: Any*): Self = StObject.set(x, "rows", js.Array(value*))
     
-    inline def setRules(value: js.Any): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: Any): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
     inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
@@ -232,7 +232,7 @@ object formConfig {
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    inline def setUrl(value: js.Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     

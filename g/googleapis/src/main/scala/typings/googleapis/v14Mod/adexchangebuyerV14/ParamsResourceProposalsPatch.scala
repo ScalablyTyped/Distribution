@@ -1,9 +1,5 @@
 package typings.googleapis.v14Mod.adexchangebuyerV14
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,11 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ParamsResourceProposalsPatch
   extends StObject
      with StandardParameters {
-  
-  /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The proposal id to update.
@@ -28,16 +19,12 @@ trait ParamsResourceProposalsPatch
   var requestBody: js.UndefOr[SchemaProposal] = js.undefined
   
   /**
-    * The last known revision number to update. If the head revision in the
-    * marketplace database has since changed, an error will be thrown. The
-    * caller should then fetch the latest proposal at head revision and retry
-    * the update at that revision.
+    * The last known revision number to update. If the head revision in the marketplace database has since changed, an error will be thrown. The caller should then fetch the latest proposal at head revision and retry the update at that revision.
     */
   var revisionNumber: js.UndefOr[String] = js.undefined
   
   /**
-    * The proposed action to take on the proposal. This field is required and
-    * it must be set when updating a proposal.
+    * The proposed action to take on the proposal. This field is required and it must be set when updating a proposal.
     */
   var updateAction: js.UndefOr[String] = js.undefined
 }
@@ -49,10 +36,6 @@ object ParamsResourceProposalsPatch {
   }
   
   extension [Self <: ParamsResourceProposalsPatch](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setProposalId(value: String): Self = StObject.set(x, "proposalId", value.asInstanceOf[js.Any])
     

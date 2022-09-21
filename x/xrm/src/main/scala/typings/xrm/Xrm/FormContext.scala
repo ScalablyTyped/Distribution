@@ -24,26 +24,26 @@ trait FormContext extends StObject {
     * Gets all attributes.
     * @returns An array of attributes.
     */
-  def getAttribute(): js.Array[Attribute] = js.native
+  def getAttribute(): js.Array[Attribute[Any]] = js.native
   /**
     * Gets an attribute matching attributeName.
     * @param attributeName Name of the attribute.
     * @returns The attribute.
     */
-  def getAttribute(attributeName: String): Attribute = js.native
+  def getAttribute(attributeName: String): Attribute[Any] = js.native
   /**
     * Gets an attribute.
     * @param delegateFunction A matching delegate function
     * @returns An array of attribute.
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
     */
-  def getAttribute(delegateFunction: MatchingDelegate[Attribute]): js.Array[Attribute] = js.native
+  def getAttribute(delegateFunction: MatchingDelegate[Attribute[Any]]): js.Array[Attribute[Any]] = js.native
   /**
     * Gets an attribute by index.
     * @param index The attribute index.
     * @returns The attribute.
     */
-  def getAttribute(index: Double): Attribute = js.native
+  def getAttribute(index: Double): Attribute[Any] = js.native
   /**
     * Gets an attribute matching attributeName.
     * @param T An Attribute type.
@@ -51,7 +51,7 @@ trait FormContext extends StObject {
     * @returns The attribute.
     */
   @JSName("getAttribute")
-  def getAttribute_T_Attribute_T[T /* <: Attribute */](attributeName: String): T = js.native
+  def getAttribute_T_AttributeAny_T[T /* <: Attribute[Any] */](attributeName: String): T = js.native
   
   /**
     * Gets all controls.

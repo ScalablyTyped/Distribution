@@ -13,7 +13,7 @@ object mediaTagReaderMod {
   
   @JSImport("jsmediatags/build2/MediaTagReader", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with MediaTagReader {
     def this(mediaFileReader: typings.jsmediatags.mediaFileReaderMod.default) = this()

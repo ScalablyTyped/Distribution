@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("google-spreadsheet", "GoogleSpreadsheet")
 @js.native
-class GoogleSpreadsheet protected ()
+/**
+  * @description
+  * create a new Spreadsheet doc
+  *
+  * @param sheetId document ID from the URL of the Spreadsheet
+  */
+open class GoogleSpreadsheet ()
   extends StObject
      with SpreadsheetBasicProperties {
-  /**
-    * @description
-    * create a new Spreadsheet doc
-    *
-    * @param sheetId document ID from the URL of the Spreadsheet
-    */
   def this(sheetId: String) = this()
   
   /**
@@ -64,6 +64,16 @@ class GoogleSpreadsheet protected ()
   
   /**
     * @description
+    * create a new google spreadsheet document
+    *
+    * You must initialize the GoogleSpreadsheet without an id in order to call this method
+    *
+    * @param properties basic Spreadsheet document properties to set
+    */
+  def createNewSpreadsheetDocument(properties: SpreadsheetBasicProperties): js.Promise[Unit] = js.native
+  
+  /**
+    * @description
     * default format for all cells in all worksheets of the document
     */
   @JSName("defaultFormat")
@@ -85,6 +95,15 @@ class GoogleSpreadsheet protected ()
     * @param sheetId ID of the worksheet to delete
     */
   def deleteSheet(sheetId: String): js.Promise[Unit] = js.native
+  
+  /**
+    * @description
+    * duplicate this sheet within this document
+    *
+    * @param properties all worksheet properties to set
+    */
+  def duplicate(): js.Promise[GoogleSpreadsheetWorksheet] = js.native
+  def duplicate(properties: DuplicateWorksheetBasicProperties): js.Promise[GoogleSpreadsheetWorksheet] = js.native
   
   /**
     * @description
@@ -201,6 +220,14 @@ class GoogleSpreadsheet protected ()
   
   /**
     * @description
+    * Use Google's OAuth2Client to authenticate on behalf of a user
+    *
+    * @param oAuth2Client Configured OAuth2Client
+    */
+  def useOAuth2Client(oAuth2Client: OAuth2Client): Unit = js.native
+  
+  /**
+    * @description
     * Set an access token to use for externally managed auth
     * - this method assumes you are creating and managing/refreshing the token yourself
     */
@@ -217,6 +244,9 @@ class GoogleSpreadsheet protected ()
     * @param credentials object of Google Service Account credentials
     * - import by requiring the JSON file Google supplies
     *
+    * @param impersonateAs an email of any user in the G Suite domain
+    * - only works if service account has domain-wide delegation enabled
+    *
     * @example
     * const credentials = require("./credentials.json");
     * const { GoogleSpreadsheet } = require("google-spreadsheet");
@@ -230,4 +260,5 @@ class GoogleSpreadsheet protected ()
     * // doc is ready to be used
     */
   def useServiceAccountAuth(credentials: ServiceAccountCredentials): js.Promise[Unit] = js.native
+  def useServiceAccountAuth(credentials: ServiceAccountCredentials, impersonateAs: String): js.Promise[Unit] = js.native
 }

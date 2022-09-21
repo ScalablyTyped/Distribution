@@ -219,7 +219,7 @@ object JobTemplateAttributes {
     
     inline def `setDestination-urisUndefined`: Self = StObject.set(x, "destination-uris", js.undefined)
     
-    inline def `setDestination-urisVarargs`(value: DestinationUris*): Self = StObject.set(x, "destination-uris", js.Array(value :_*))
+    inline def `setDestination-urisVarargs`(value: DestinationUris*): Self = StObject.set(x, "destination-uris", js.Array(value*))
     
     inline def setFinishings(value: js.Array[Finishings]): Self = StObject.set(x, "finishings", value.asInstanceOf[js.Any])
     
@@ -227,11 +227,11 @@ object JobTemplateAttributes {
     
     inline def `setFinishings-colUndefined`: Self = StObject.set(x, "finishings-col", js.undefined)
     
-    inline def `setFinishings-colVarargs`(value: FinishingsInterface*): Self = StObject.set(x, "finishings-col", js.Array(value :_*))
+    inline def `setFinishings-colVarargs`(value: FinishingsInterface*): Self = StObject.set(x, "finishings-col", js.Array(value*))
     
     inline def setFinishingsUndefined: Self = StObject.set(x, "finishings", js.undefined)
     
-    inline def setFinishingsVarargs(value: Finishings*): Self = StObject.set(x, "finishings", js.Array(value :_*))
+    inline def setFinishingsVarargs(value: Finishings*): Self = StObject.set(x, "finishings", js.Array(value*))
     
     inline def `setFont-name-requested`(value: String): Self = StObject.set(x, "font-name-requested", value.asInstanceOf[js.Any])
     
@@ -245,7 +245,7 @@ object JobTemplateAttributes {
     
     inline def `setForce-front-sideUndefined`: Self = StObject.set(x, "force-front-side", js.undefined)
     
-    inline def `setForce-front-sideVarargs`(value: Double*): Self = StObject.set(x, "force-front-side", js.Array(value :_*))
+    inline def `setForce-front-sideVarargs`(value: Double*): Self = StObject.set(x, "force-front-side", js.Array(value*))
     
     inline def `setImposition-template`(value: ImpositionTemplate): Self = StObject.set(x, "imposition-template", value.asInstanceOf[js.Any])
     
@@ -255,7 +255,7 @@ object JobTemplateAttributes {
     
     inline def `setInsert-sheetUndefined`: Self = StObject.set(x, "insert-sheet", js.undefined)
     
-    inline def `setInsert-sheetVarargs`(value: InsertSheet*): Self = StObject.set(x, "insert-sheet", js.Array(value :_*))
+    inline def `setInsert-sheetVarargs`(value: InsertSheet*): Self = StObject.set(x, "insert-sheet", js.Array(value*))
     
     inline def `setJob-account-id`(value: String): Self = StObject.set(x, "job-account-id", value.asInstanceOf[js.Any])
     
@@ -313,7 +313,7 @@ object JobTemplateAttributes {
     
     inline def `setJob-finishingsUndefined`: Self = StObject.set(x, "job-finishings", js.undefined)
     
-    inline def `setJob-finishingsVarargs`(value: Finishings*): Self = StObject.set(x, "job-finishings", js.Array(value :_*))
+    inline def `setJob-finishingsVarargs`(value: Finishings*): Self = StObject.set(x, "job-finishings", js.Array(value*))
     
     inline def `setJob-hold-until`(value: JobHoldUntil): Self = StObject.set(x, "job-hold-until", value.asInstanceOf[js.Any])
     
@@ -375,7 +375,7 @@ object JobTemplateAttributes {
     
     inline def `setMaterials-colUndefined`: Self = StObject.set(x, "materials-col", js.undefined)
     
-    inline def `setMaterials-colVarargs`(value: Materials*): Self = StObject.set(x, "materials-col", js.Array(value :_*))
+    inline def `setMaterials-colVarargs`(value: Materials*): Self = StObject.set(x, "materials-col", js.Array(value*))
     
     inline def setMedia(value: Media): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
@@ -421,7 +421,7 @@ object JobTemplateAttributes {
     
     inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     
-    inline def setOverridesVarargs(value: Overrides*): Self = StObject.set(x, "overrides", js.Array(value :_*))
+    inline def setOverridesVarargs(value: Overrides*): Self = StObject.set(x, "overrides", js.Array(value*))
     
     inline def `setPage-delivery`(value: PageDelivery): Self = StObject.set(x, "page-delivery", value.asInstanceOf[js.Any])
     
@@ -439,7 +439,7 @@ object JobTemplateAttributes {
     
     inline def `setPages-per-subsetUndefined`: Self = StObject.set(x, "pages-per-subset", js.undefined)
     
-    inline def `setPages-per-subsetVarargs`(value: Double*): Self = StObject.set(x, "pages-per-subset", js.Array(value :_*))
+    inline def `setPages-per-subsetVarargs`(value: Double*): Self = StObject.set(x, "pages-per-subset", js.Array(value*))
     
     inline def `setPclm-source-resolution`(value: Resolution): Self = StObject.set(x, "pclm-source-resolution", value.asInstanceOf[js.Any])
     
@@ -477,7 +477,7 @@ object JobTemplateAttributes {
     
     inline def `setPrint-objectsUndefined`: Self = StObject.set(x, "print-objects", js.undefined)
     
-    inline def `setPrint-objectsVarargs`(value: PrintObjects*): Self = StObject.set(x, "print-objects", js.Array(value :_*))
+    inline def `setPrint-objectsVarargs`(value: PrintObjects*): Self = StObject.set(x, "print-objects", js.Array(value*))
     
     inline def `setPrint-quality`(value: PrintQuality): Self = StObject.set(x, "print-quality", value.asInstanceOf[js.Any])
     

@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait ContentType extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.10]
   */
 @JSGlobal("Excel.ContentType")
@@ -15,7 +16,8 @@ object ContentType extends StObject {
   
   /**
     * Comment content containing mentions.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.10]
     */
   @js.native
   sealed trait mention
@@ -23,8 +25,9 @@ object ContentType extends StObject {
        with ContentType
   
   /**
-    * Indicates plain format type of the comment content.
-    *
+    * Indicates a plain format type for the comment content.
+    * @remarks
+    * [Api set: ExcelApi 1.10]
     */
   @js.native
   sealed trait plain

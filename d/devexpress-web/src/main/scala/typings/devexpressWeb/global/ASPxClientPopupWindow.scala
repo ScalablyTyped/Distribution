@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientPopupWindow")
 @js.native
-class ASPxClientPopupWindow ()
+open class ASPxClientPopupWindow ()
   extends StObject
      with typings.devexpressWeb.ASPxClientPopupWindow {
   

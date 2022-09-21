@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "inferno-create-class" : "8.0.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "inferno-create-class" : "8.0.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

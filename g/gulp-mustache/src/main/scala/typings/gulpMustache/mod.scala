@@ -17,7 +17,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  type Hash = StringDictionary[js.Any]
+  type Hash = StringDictionary[Any]
   
   trait Options extends StObject {
     
@@ -42,7 +42,7 @@ object mod {
       
       inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     }
   }
   

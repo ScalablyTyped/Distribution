@@ -84,7 +84,7 @@ object XClob {
     length: () => Double,
     position: (String, Double) => Double,
     positionOfClob: (XClob, Double) => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XClob = {
     val __obj = js.Dynamic.literal(CharacterStream = CharacterStream.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getCharacterStream = js.Any.fromFunction0(getCharacterStream), getSubString = js.Any.fromFunction2(getSubString), length = js.Any.fromFunction0(length), position = js.Any.fromFunction2(position), positionOfClob = js.Any.fromFunction2(positionOfClob), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

@@ -6,17 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("js-joda", "ChronoField")
 @js.native
-/* private */ class ChronoField () extends StObject {
+/* private */ open class ChronoField () extends StObject {
   
   def baseUnit(): Double = js.native
   
   def checkValidIntValue(value: Double): Double = js.native
   
-  def checkValidValue(value: Double): js.Any = js.native
+  def checkValidValue(value: Double): Any = js.native
   
   def displayName(): String = js.native
-  
-  def equals(other: js.Any): Boolean = js.native
   
   def getFrom(temporal: TemporalAccessor): Double = js.native
   

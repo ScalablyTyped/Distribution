@@ -17,7 +17,7 @@ trait StructureNuker
      with OwnedStructure[STRUCTURE_NUKER]
      with AnyOwnedStructure
      with AnyStoreStructure
-     with ConcreteStructure[js.Any] {
+     with ConcreteStructure[Any] {
   
   /**
     * The amount of game ticks the link has to wait until the next transfer is possible.

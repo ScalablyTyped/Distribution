@@ -27,6 +27,11 @@ trait CelebrityDetail extends StObject {
   var Id: js.UndefOr[RekognitionUniqueId] = js.undefined
   
   /**
+    * Retrieves the known gender for the celebrity.
+    */
+  var KnownGender: js.UndefOr[typings.awsSdk.rekognitionMod.KnownGender] = js.undefined
+  
+  /**
     * The name of the celebrity.
     */
   var Name: js.UndefOr[String] = js.undefined
@@ -61,6 +66,10 @@ object CelebrityDetail {
     
     inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
+    inline def setKnownGender(value: KnownGender): Self = StObject.set(x, "KnownGender", value.asInstanceOf[js.Any])
+    
+    inline def setKnownGenderUndefined: Self = StObject.set(x, "KnownGender", js.undefined)
+    
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
@@ -69,6 +78,6 @@ object CelebrityDetail {
     
     inline def setUrlsUndefined: Self = StObject.set(x, "Urls", js.undefined)
     
-    inline def setUrlsVarargs(value: Url*): Self = StObject.set(x, "Urls", js.Array(value :_*))
+    inline def setUrlsVarargs(value: Url*): Self = StObject.set(x, "Urls", js.Array(value*))
   }
 }

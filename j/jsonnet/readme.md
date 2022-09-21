@@ -9,10 +9,10 @@ jsonnet wrapper for Node.js
 | ------------------ | :-------------: |
 | Full name          | jsonnet |
 | Keywords           | jsonnet, json |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 6917 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 472.0 |
+| # stars            | 76.0 |
 
 ## Links
 - [Homepage](https://github.com/yosuke-furukawa/node-jsonnet)

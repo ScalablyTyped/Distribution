@@ -13,10 +13,10 @@ object restorablepoolMod {
   
   @JSImport("@jupyterlab/statedb/lib/restorablepool", "RestorablePool")
   @js.native
-  class RestorablePool[T /* <: IObservableDisposable */] protected ()
+  open class RestorablePool[T /* <: IObservableDisposable */] protected ()
     extends StObject
        with IObjectPool[T]
-       with IRestorable[T, js.Any] {
+       with IRestorable[T, Any] {
     /**
       * Create a new restorable pool.
       *
@@ -24,28 +24,28 @@ object restorablepoolMod {
       */
     def this(options: IOptions) = this()
     
-    /* private */ var _added: js.Any = js.native
+    /* private */ var _added: Any = js.native
     
-    /* private */ var _current: js.Any = js.native
+    /* private */ var _current: Any = js.native
     
-    /* private */ var _currentChanged: js.Any = js.native
+    /* private */ var _currentChanged: Any = js.native
     
-    /* private */ var _hasRestored: js.Any = js.native
+    /* private */ var _hasRestored: Any = js.native
     
-    /* private */ var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: Any = js.native
     
-    /* private */ var _objects: js.Any = js.native
+    /* private */ var _objects: Any = js.native
     
     /**
       * Clean up after disposed objects.
       */
-    /* private */ var _onInstanceDisposed: js.Any = js.native
+    /* private */ var _onInstanceDisposed: Any = js.native
     
-    /* private */ var _restore: js.Any = js.native
+    /* private */ var _restore: Any = js.native
     
-    /* private */ var _restored: js.Any = js.native
+    /* private */ var _restored: Any = js.native
     
-    /* private */ var _updated: js.Any = js.native
+    /* private */ var _updated: Any = js.native
     
     /**
       * Add a new object to the pool.
@@ -196,13 +196,13 @@ object restorablepoolMod {
       *
       */
     /* CompleteClass */
-    override def restore(options: typings.jupyterlabStatedb.interfacesMod.IRestorable.IOptions[T]): js.Promise[js.Any] = js.native
+    override def restore(options: typings.jupyterlabStatedb.interfacesMod.IRestorable.IOptions[T]): js.Promise[Any] = js.native
     
     /**
       * A promise that settles when the collection has been restored.
       */
     /* CompleteClass */
-    override val restored: js.Promise[js.Any] = js.native
+    override val restored: js.Promise[Any] = js.native
     /**
       * A promise resolved when the restorable pool has been restored.
       */

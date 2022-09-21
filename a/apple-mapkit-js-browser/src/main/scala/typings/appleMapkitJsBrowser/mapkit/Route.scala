@@ -72,13 +72,13 @@ object Route {
     
     inline def setPath(value: js.Array[Coordinate]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setPathVarargs(value: Coordinate*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: Coordinate*): Self = StObject.set(x, "path", js.Array(value*))
     
     inline def setPolyline(value: PolylineOverlay): Self = StObject.set(x, "polyline", value.asInstanceOf[js.Any])
     
     inline def setSteps(value: js.Array[RouteStep]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
-    inline def setStepsVarargs(value: RouteStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: RouteStep*): Self = StObject.set(x, "steps", js.Array(value*))
     
     inline def setTransportType(value: Transport): Self = StObject.set(x, "transportType", value.asInstanceOf[js.Any])
   }

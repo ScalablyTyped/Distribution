@@ -7,11 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait ActionType extends StObject
 /**
-  * Specifies the type of action in a notification message.
+  * Specifies the type of custom action in a notification message.
   *
-  * [Api set: Mailbox Preview]
-  *
-  * @beta
+  * @remarks
+  * [Api set: Mailbox 1.10]
   */
 @JSGlobal("Office.MailboxEnums.ActionType")
 @js.native

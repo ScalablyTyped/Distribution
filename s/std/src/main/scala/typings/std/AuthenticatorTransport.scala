@@ -1,7 +1,6 @@
 package typings.std
 
 import typings.std.stdStrings.nfc_
-import typings.std.stdStrings.usb_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.std.stdStrings.ble
   - typings.std.stdStrings.internal
   - typings.std.stdStrings.nfc_
-  - typings.std.stdStrings.usb_
+  - typings.std.stdStrings.usb
 */
 trait AuthenticatorTransport extends StObject
 object AuthenticatorTransport {
@@ -21,5 +20,5 @@ object AuthenticatorTransport {
   
   inline def nfc: nfc_ = "nfc".asInstanceOf[nfc_]
   
-  inline def usb: usb_ = "usb".asInstanceOf[usb_]
+  inline def usb: typings.std.stdStrings.usb = "usb".asInstanceOf[typings.std.stdStrings.usb]
 }

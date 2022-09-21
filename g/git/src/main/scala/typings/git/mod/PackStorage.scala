@@ -6,26 +6,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("git", "PackStorage")
 @js.native
-class PackStorage protected () extends StObject {
-  def this(file: js.Any) = this()
+open class PackStorage protected () extends StObject {
+  def this(file: Any) = this()
   
-  var cache: js.Any = js.native
+  var cache: Any = js.native
   
   def close(): Unit = js.native
   
-  def find(sha1: js.Any): RawObject = js.native
+  def find(sha1: Any): RawObject = js.native
   
-  var name: js.Any = js.native
+  var name: Any = js.native
   
-  var offsets: js.Any = js.native
+  var offsets: Any = js.native
   
-  def parse_object(pack: js.Any, offset: js.Any): RawObject = js.native
+  def parse_object(pack: Any, offset: Any): RawObject = js.native
   
-  var size: js.Any = js.native
+  var size: Any = js.native
   
-  def unpack_deltified(packfile: js.Any, `type`: js.Any, offset: js.Any, objOffset: js.Any, size: js.Any, options: js.Any): js.Any = js.native
+  def unpack_deltified(packfile: Any, `type`: Any, offset: Any, objOffset: Any, size: Any, options: Any): Any = js.native
   
-  def unpack_object(pack: js.Any, packfile: js.Any, offset: js.Any, options: js.Any): js.Array[js.Any] = js.native
+  def unpack_object(pack: Any, packfile: Any, offset: Any, options: Any): js.Array[Any] = js.native
   
-  var version: js.Any = js.native
+  var version: Any = js.native
 }

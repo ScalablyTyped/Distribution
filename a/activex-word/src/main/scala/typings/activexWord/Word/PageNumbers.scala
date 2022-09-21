@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PageNumbers extends StObject {
   
   def Add(): PageNumber = js.native
-  def Add(PageNumberAlignment: js.Any): PageNumber = js.native
-  def Add(PageNumberAlignment: js.Any, FirstPage: js.Any): PageNumber = js.native
-  def Add(PageNumberAlignment: Unit, FirstPage: js.Any): PageNumber = js.native
+  def Add(PageNumberAlignment: Any): PageNumber = js.native
+  def Add(PageNumberAlignment: Any, FirstPage: Any): PageNumber = js.native
+  def Add(PageNumberAlignment: Unit, FirstPage: Any): PageNumber = js.native
   
   val Application: typings.activexWord.Word.Application = js.native
   
@@ -30,7 +30,7 @@ trait PageNumbers extends StObject {
   
   var NumberStyle: WdPageNumberStyle = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   var RestartNumberingAtSection: Boolean = js.native
   

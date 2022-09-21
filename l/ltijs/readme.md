@@ -10,10 +10,10 @@ Easily turn your web application into a LTI 1.3 Learning Tool.
 | ------------------ | :-------------: |
 | Full name          | ltijs |
 | Keywords           | lti, lms, lti 1.3, imslti, 1.3, advantage |
-| # releases         | 142 |
-| # dependents       | 0 |
-| # downloads        | 26964 |
-| # stars            | 0 |
+| # releases         | 78 |
+| # dependents       | 0.0 |
+| # downloads        | 9333.666666666666 |
+| # stars            | 194.0 |
 
 ## Links
 - [Homepage](https://cvmcosta.github.io/ltijs)

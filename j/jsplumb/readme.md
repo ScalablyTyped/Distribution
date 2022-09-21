@@ -1,7 +1,7 @@
 
 # Scala.js typings for jsplumb
 
-Typings are for version 2.15.0
+Typings are for version 2.15.6
 
 ## Library description:
 Visual connectivity for webapps
@@ -10,10 +10,10 @@ Visual connectivity for webapps
 | ------------------ | :-------------: |
 | Full name          | jsplumb |
 | Keywords           | javascript, svg, visual, connectivity |
-| # releases         | 44 |
-| # dependents       | 67 |
-| # downloads        | 827329 |
-| # stars            | 2 |
+| # releases         | 17 |
+| # dependents       | 0.0 |
+| # downloads        | 105306.0 |
+| # stars            | 7008.0 |
 
 ## Links
 - [Homepage](https://github.com/jsplumb/jsplumb#readme)

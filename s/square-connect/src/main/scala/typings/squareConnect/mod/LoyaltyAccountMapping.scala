@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "LoyaltyAccountMapping")
 @js.native
-class LoyaltyAccountMapping () extends StObject {
+open class LoyaltyAccountMapping () extends StObject {
   
   /**
     * The timestamp when the mapping was created, in RFC 3339 format.

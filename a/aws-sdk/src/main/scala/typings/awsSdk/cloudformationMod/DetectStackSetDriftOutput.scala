@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DetectStackSetDriftOutput extends StObject {
   
   /**
-    * The ID of the drift detection stack set operation.  you can use this operation id with  DescribeStackSetOperation  to monitor the progress of the drift detection operation. 
+    * The ID of the drift detection stack set operation. You can use this operation ID with  DescribeStackSetOperation  to monitor the progress of the drift detection operation.
     */
   var OperationId: js.UndefOr[ClientRequestToken] = js.undefined
 }

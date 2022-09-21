@@ -17,7 +17,7 @@ trait CustomerData extends StObject {
   
   def Item(Id: String): CustomXMLPart
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.CustomerData_typekey")
   var PowerPointDotCustomerData_typekey: CustomerData
@@ -30,7 +30,7 @@ object CustomerData {
     Count: Double,
     Delete: String => Unit,
     Item: String => CustomXMLPart,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotCustomerData_typekey: CustomerData
   ): CustomerData = {
     val __obj = js.Dynamic.literal(Add = js.Any.fromFunction0(Add), Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Delete = js.Any.fromFunction1(Delete), Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
@@ -50,7 +50,7 @@ object CustomerData {
     
     inline def setItem(value: String => CustomXMLPart): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotCustomerData_typekey(value: CustomerData): Self = StObject.set(x, "PowerPoint.CustomerData_typekey", value.asInstanceOf[js.Any])
   }

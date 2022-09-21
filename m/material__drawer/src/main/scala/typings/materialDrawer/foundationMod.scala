@@ -13,14 +13,18 @@ object foundationMod {
   
   @JSImport("@material/drawer/dismissible/foundation", JSImport.Default)
   @js.native
-  class default () extends MDCDismissibleDrawerFoundation {
+  open class default () extends MDCDismissibleDrawerFoundation {
     def this(adapter: PartialMDCDrawerAdapter) = this()
   }
   
   @JSImport("@material/drawer/dismissible/foundation", "MDCDismissibleDrawerFoundation")
   @js.native
-  class MDCDismissibleDrawerFoundation () extends MDCFoundation[MDCDrawerAdapter] {
+  open class MDCDismissibleDrawerFoundation () extends MDCFoundation[MDCDrawerAdapter] {
     def this(adapter: PartialMDCDrawerAdapter) = this()
+    
+    /* private */ var animationFrame: Any = js.native
+    
+    /* private */ var animationTimer: Any = js.native
     
     /**
       * Closes the drawer from the open state.
@@ -30,7 +34,7 @@ object foundationMod {
     /**
       * Extension point for when drawer finishes close animation.
       */
-    /* protected */ def closed_(): Unit = js.native
+    /* protected */ def closed(): Unit = js.native
     
     /**
       * Keydown handler to close drawer when key is escape.
@@ -47,6 +51,8 @@ object foundationMod {
       * @return true if drawer is animating closed.
       */
     def isClosing(): Boolean = js.native
+    
+    /* private */ var isElement: Any = js.native
     
     /**
       * Returns true if the drawer is in the open position.
@@ -68,6 +74,11 @@ object foundationMod {
     /**
       * Extension point for when drawer finishes open animation.
       */
-    /* protected */ def opened_(): Unit = js.native
+    /* protected */ def opened(): Unit = js.native
+    
+    /**
+      * Runs the given logic on the next animation frame, using setTimeout to factor in Firefox reflow behavior.
+      */
+    /* private */ var runNextAnimationFrame: Any = js.native
   }
 }

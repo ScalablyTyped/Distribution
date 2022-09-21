@@ -1,6 +1,5 @@
 package typings.winrt.Windows.Devices.Sms
 
-import typings.std.Date
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,7 +21,7 @@ trait ISmsTextMessage
   
   var partReferenceId: Double
   
-  var timestamp: Date
+  var timestamp: js.Date
   
   var to: String
   
@@ -39,7 +38,7 @@ object ISmsTextMessage {
     partCount: Double,
     partNumber: Double,
     partReferenceId: Double,
-    timestamp: Date,
+    timestamp: js.Date,
     to: String,
     toBinaryMessages: SmsDataFormat => IVectorView[ISmsBinaryMessage]
   ): ISmsTextMessage = {
@@ -61,7 +60,7 @@ object ISmsTextMessage {
     
     inline def setPartReferenceId(value: Double): Self = StObject.set(x, "partReferenceId", value.asInstanceOf[js.Any])
     
-    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
     inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     

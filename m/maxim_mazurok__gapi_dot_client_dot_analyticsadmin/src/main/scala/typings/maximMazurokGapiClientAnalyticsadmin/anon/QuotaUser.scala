@@ -41,7 +41,10 @@ trait QuotaUser extends StObject {
   /** Request body */
   var resource: GoogleAnalyticsAdminV1alphaAccount
   
-  /** The list of fields to be updated. Omitted fields will not be updated. */
+  /**
+    * Required. The list of fields to be updated. Field names must be in snake case (e.g., "field_to_update"). Omitted fields will not be updated. To replace the entire entity, use
+    * one path with the string "*" to match all fields.
+    */
   var updateMask: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */

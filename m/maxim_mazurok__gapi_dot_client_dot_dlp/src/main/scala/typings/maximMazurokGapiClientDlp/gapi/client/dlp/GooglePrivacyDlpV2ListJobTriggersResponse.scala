@@ -25,7 +25,7 @@ object GooglePrivacyDlpV2ListJobTriggersResponse {
     
     inline def setJobTriggersUndefined: Self = StObject.set(x, "jobTriggers", js.undefined)
     
-    inline def setJobTriggersVarargs(value: GooglePrivacyDlpV2JobTrigger*): Self = StObject.set(x, "jobTriggers", js.Array(value :_*))
+    inline def setJobTriggersVarargs(value: GooglePrivacyDlpV2JobTrigger*): Self = StObject.set(x, "jobTriggers", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

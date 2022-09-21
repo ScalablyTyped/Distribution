@@ -1,7 +1,6 @@
 package typings.fabric.mod.fabric
 
 import typings.fabric.anon.ColorStops
-import typings.fabric.fabricImplMod.IGradientOptions
 import typings.std.SVGGradientElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("fabric", "fabric.Gradient")
 @js.native
-class Gradient protected ()
+open class Gradient protected ()
   extends typings.fabric.fabricImplMod.Gradient {
   /**
     * Constructor
@@ -36,16 +35,6 @@ object Gradient {
   @JSImport("fabric", "fabric.Gradient")
   @js.native
   val ^ : js.Any = js.native
-  
-  /**
-    * Returns {@link fabric.Gradient} instance from its object representation
-    * @static
-    * @memberOf fabric.Gradient
-    * @param {Object} obj
-    * @param {Object} [options] Options object
-    */
-  inline def forObject(obj: js.Any): typings.fabric.fabricImplMod.Gradient = ^.asInstanceOf[js.Dynamic].applyDynamic("forObject")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.fabric.fabricImplMod.Gradient]
-  inline def forObject(obj: js.Any, options: IGradientOptions): typings.fabric.fabricImplMod.Gradient = (^.asInstanceOf[js.Dynamic].applyDynamic("forObject")(obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Gradient]
   
   /**
     * Returns {@link fabric.Gradient} instance from an SVG element

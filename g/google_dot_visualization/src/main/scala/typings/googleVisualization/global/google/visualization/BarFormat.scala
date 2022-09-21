@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("google.visualization.BarFormat")
 @js.native
-class BarFormat ()
+open class BarFormat ()
   extends StObject
      with typings.googleVisualization.google.visualization.DefaultFormatter {
   def this(options: BarFormatOptions) = this()

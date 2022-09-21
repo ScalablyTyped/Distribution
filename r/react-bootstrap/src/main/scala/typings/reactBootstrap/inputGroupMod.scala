@@ -12,8 +12,8 @@ object inputGroupMod {
   
   @JSImport("react-bootstrap/lib/InputGroup", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[InputGroupProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[InputGroupProps, js.Object, Any]
   @JSImport("react-bootstrap/lib/InputGroup", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
@@ -21,7 +21,7 @@ object inputGroupMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/InputGroup", "Addon")
   @js.native
-  class Addon ()
+  open class Addon ()
     extends typings.reactBootstrap.inputGroupAddonMod.^
   /* static member */
   @JSImport("react-bootstrap/lib/InputGroup", "Addon")
@@ -32,7 +32,7 @@ object inputGroupMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/InputGroup", "Button")
   @js.native
-  class Button ()
+  open class Button ()
     extends typings.reactBootstrap.inputGroupButtonMod.^
   /* static member */
   @JSImport("react-bootstrap/lib/InputGroup", "Button")
@@ -40,9 +40,7 @@ object inputGroupMod {
   def Button: Instantiable0[typings.reactBootstrap.inputGroupButtonMod.^] = js.native
   inline def Button_=(x: Instantiable0[typings.reactBootstrap.inputGroupButtonMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Button")(x.asInstanceOf[js.Any])
   
-  @js.native
-  trait InputGroup
-    extends Component[InputGroupProps, js.Object, js.Any]
+  type InputGroup = Component[InputGroupProps, js.Object, Any]
   
   trait InputGroupProps
     extends StObject

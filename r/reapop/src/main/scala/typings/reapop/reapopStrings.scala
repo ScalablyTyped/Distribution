@@ -9,6 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object reapopStrings {
   
   @js.native
+  sealed trait addEndListener extends StObject
+  inline def addEndListener: addEndListener = "addEndListener".asInstanceOf[addEndListener]
+  
+  @js.native
   sealed trait `bottom-center`
     extends StObject
        with Position

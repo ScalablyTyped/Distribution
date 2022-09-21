@@ -1,6 +1,8 @@
 package typings.multimap
 
 import typings.multimap.anon.Iterator
+import typings.multimap.anon.Next
+import typings.std.ReadonlySet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,14 +11,15 @@ object mod {
   
   @JSImport("multimap", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^[K, V] ()
     extends StObject
-       with Multimap {
-    def this(iterable: js.Any) = this()
+       with Multimap[K, V] {
+    def this(iterable: js.Array[js.Tuple2[K, V]]) = this()
+    def this(iterable: ReadonlySet[js.Tuple2[K, V]]) = this()
   }
   
   @js.native
-  trait Multimap extends StObject {
+  trait Multimap[K, V] extends StObject {
     
     def clear(): Unit = js.native
     
@@ -30,42 +33,42 @@ object mod {
       * @param val
       * @return true if any thing changed
       */
-    def delete(key: js.Any): Boolean = js.native
-    def delete(key: js.Any, `val`: js.Any): Boolean = js.native
+    def delete(key: K): Boolean = js.native
+    def delete(key: K, `val`: V): Boolean = js.native
     
     /**
       * @param iter
       */
-    def forEach(iter: js.Any): Unit = js.native
+    def forEach(iter: js.Function3[/* value */ V, /* key */ K, /* map */ Multimap[K, V], Unit]): Unit = js.native
     
     /**
       * @param iter
       */
-    def forEachEntry(iter: js.Any): Unit = js.native
+    def forEachEntry(iter: js.Function3[/* value */ js.Array[V], /* key */ K, /* map */ Multimap[K, V], Unit]): Unit = js.native
     
     /**
       * @param key
       */
-    def get(key: js.Any): js.Any = js.native
+    def get(key: K): js.Array[V] = js.native
     
     /**
       * @param key
       * @param val
       * @return whether the map contains 'key' or 'key=>val' pair
       */
-    def has(key: js.Any): Boolean = js.native
-    def has(key: js.Any, `val`: js.Any): Boolean = js.native
+    def has(key: K): Boolean = js.native
+    def has(key: K, `val`: V): Boolean = js.native
     
     /**
       * @return all the keys in the map
       */
-    def keys(): Iterator = js.native
+    def keys(): Iterator[K] = js.native
     
     /**
       * @param key
       * @param val
       */
-    def set(key: js.Any, `val`: js.Any, args: js.Any*): Unit = js.native
+    def set(key: K, `val`: V, args: V*): this.type = js.native
     
     /**
       * Number of values
@@ -75,6 +78,6 @@ object mod {
     /**
       * @return all the values in the map
       */
-    def values(): Iterator = js.native
+    def values(): Next[V] = js.native
   }
 }

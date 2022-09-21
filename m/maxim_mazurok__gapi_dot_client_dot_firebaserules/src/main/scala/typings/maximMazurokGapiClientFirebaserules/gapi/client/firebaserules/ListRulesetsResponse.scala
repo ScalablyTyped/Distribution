@@ -29,6 +29,6 @@ object ListRulesetsResponse {
     
     inline def setRulesetsUndefined: Self = StObject.set(x, "rulesets", js.undefined)
     
-    inline def setRulesetsVarargs(value: Ruleset*): Self = StObject.set(x, "rulesets", js.Array(value :_*))
+    inline def setRulesetsVarargs(value: Ruleset*): Self = StObject.set(x, "rulesets", js.Array(value*))
   }
 }

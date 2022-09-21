@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.Level")
 @js.native
-class Level ()
+open class Level ()
   extends StObject
      with typings.igniteUi.Infragistics.Level {
   

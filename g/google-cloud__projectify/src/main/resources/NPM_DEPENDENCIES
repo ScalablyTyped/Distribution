@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@google-cloud/projectify" : "2.0.1"
+      "@google-cloud/projectify" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@google-cloud/projectify" : "2.0.1"
+      "@google-cloud/projectify" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

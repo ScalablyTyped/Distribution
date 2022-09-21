@@ -9,5 +9,5 @@ object partialedApplicatorMod {
   
   @JSImport("lodash-decorators/applicators/PartialedApplicator", "PartialedApplicator")
   @js.native
-  class PartialedApplicator () extends Applicator
+  open class PartialedApplicator () extends Applicator
 }

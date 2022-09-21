@@ -9,7 +9,7 @@ trait SchemaTargetSslProxiesSetBackendServiceRequest extends StObject {
   /**
     * The URL of the new BackendService resource for the targetSslProxy.
     */
-  var service: js.UndefOr[String] = js.undefined
+  var service: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaTargetSslProxiesSetBackendServiceRequest {
   
@@ -21,6 +21,8 @@ object SchemaTargetSslProxiesSetBackendServiceRequest {
   extension [Self <: SchemaTargetSslProxiesSetBackendServiceRequest](x: Self) {
     
     inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    
+    inline def setServiceNull: Self = StObject.set(x, "service", null)
     
     inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
   }

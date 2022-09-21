@@ -433,7 +433,7 @@ object XEnhancedCustomShapeDefaulter {
   inline def apply(
     acquire: () => Unit,
     createCustomShapeDefaults: String => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XEnhancedCustomShapeDefaulter = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), createCustomShapeDefaults = js.Any.fromFunction1(createCustomShapeDefaults), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

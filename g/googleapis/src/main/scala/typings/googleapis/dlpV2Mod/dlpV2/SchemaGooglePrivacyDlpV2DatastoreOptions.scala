@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Options defining a data set within Google Cloud Datastore.
-  */
 trait SchemaGooglePrivacyDlpV2DatastoreOptions extends StObject {
   
   /**
@@ -15,8 +12,7 @@ trait SchemaGooglePrivacyDlpV2DatastoreOptions extends StObject {
   var kind: js.UndefOr[SchemaGooglePrivacyDlpV2KindExpression] = js.undefined
   
   /**
-    * A partition ID identifies a grouping of entities. The grouping is always
-    * by project and namespace, however the namespace ID may be empty.
+    * A partition ID identifies a grouping of entities. The grouping is always by project and namespace, however the namespace ID may be empty.
     */
   var partitionId: js.UndefOr[SchemaGooglePrivacyDlpV2PartitionId] = js.undefined
 }

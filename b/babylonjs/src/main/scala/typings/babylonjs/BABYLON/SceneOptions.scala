@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SceneOptions extends StObject {
   
   /**
-    * Defines that each mesh of the scene should keep up-to-date a map of referencing cloned meshes for fast diposing
+    * Defines that each mesh of the scene should keep up-to-date a map of referencing cloned meshes for fast disposing
     * It will improve performance when the number of mesh becomes important, but might consume a bit more memory
     */
   var useClonedMeshMap: js.UndefOr[Boolean] = js.undefined
@@ -19,7 +19,7 @@ trait SceneOptions extends StObject {
   var useGeometryUniqueIdsMap: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Defines that each material of the scene should keep up-to-date a map of referencing meshes for fast diposing
+    * Defines that each material of the scene should keep up-to-date a map of referencing meshes for fast disposing
     * It will improve performance when the number of mesh becomes important, but might consume a bit more memory
     */
   var useMaterialMeshMap: js.UndefOr[Boolean] = js.undefined

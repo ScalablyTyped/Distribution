@@ -12,7 +12,7 @@ trait Component extends StObject {
   
   var Name: String
   
-  def Parent(index: js.Any): Component
+  def Parent(index: Any): Component
   @JSName("Parent")
   val Parent_Original: Components
   

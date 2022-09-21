@@ -8,7 +8,7 @@ trait MsoDebugOptions extends StObject {
   
   def AddIgnoredAssertTag(bstrTagToIgnore: String): Unit
   
-  val Application: js.Any
+  val Application: Any
   
   val Creator: Double
   
@@ -25,13 +25,13 @@ trait MsoDebugOptions extends StObject {
   
   def RemoveIgnoredAssertTag(bstrTagToIgnore: String): Unit
   
-  val UnitTestManager: js.Any
+  val UnitTestManager: Any
 }
 object MsoDebugOptions {
   
   inline def apply(
     AddIgnoredAssertTag: String => Unit,
-    Application: js.Any,
+    Application: Any,
     Creator: Double,
     FeatureReports: Double,
     OfficeDotMsoDebugOptions_typekey: MsoDebugOptions,
@@ -39,7 +39,7 @@ object MsoDebugOptions {
     OutputToFile: Boolean,
     OutputToMessageBox: Boolean,
     RemoveIgnoredAssertTag: String => Unit,
-    UnitTestManager: js.Any
+    UnitTestManager: Any
   ): MsoDebugOptions = {
     val __obj = js.Dynamic.literal(AddIgnoredAssertTag = js.Any.fromFunction1(AddIgnoredAssertTag), Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], FeatureReports = FeatureReports.asInstanceOf[js.Any], OutputToDebugger = OutputToDebugger.asInstanceOf[js.Any], OutputToFile = OutputToFile.asInstanceOf[js.Any], OutputToMessageBox = OutputToMessageBox.asInstanceOf[js.Any], RemoveIgnoredAssertTag = js.Any.fromFunction1(RemoveIgnoredAssertTag), UnitTestManager = UnitTestManager.asInstanceOf[js.Any])
     __obj.updateDynamic("Office.MsoDebugOptions_typekey")(OfficeDotMsoDebugOptions_typekey.asInstanceOf[js.Any])
@@ -50,7 +50,7 @@ object MsoDebugOptions {
     
     inline def setAddIgnoredAssertTag(value: String => Unit): Self = StObject.set(x, "AddIgnoredAssertTag", js.Any.fromFunction1(value))
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
@@ -66,6 +66,6 @@ object MsoDebugOptions {
     
     inline def setRemoveIgnoredAssertTag(value: String => Unit): Self = StObject.set(x, "RemoveIgnoredAssertTag", js.Any.fromFunction1(value))
     
-    inline def setUnitTestManager(value: js.Any): Self = StObject.set(x, "UnitTestManager", value.asInstanceOf[js.Any])
+    inline def setUnitTestManager(value: Any): Self = StObject.set(x, "UnitTestManager", value.asInstanceOf[js.Any])
   }
 }

@@ -33,6 +33,6 @@ object DescribePatchPropertiesResult {
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "Properties", js.undefined)
     
-    inline def setPropertiesVarargs(value: PatchPropertyEntry*): Self = StObject.set(x, "Properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: PatchPropertyEntry*): Self = StObject.set(x, "Properties", js.Array(value*))
   }
 }

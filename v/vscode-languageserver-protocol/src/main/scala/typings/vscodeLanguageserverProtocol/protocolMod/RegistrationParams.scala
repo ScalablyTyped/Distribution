@@ -19,6 +19,6 @@ object RegistrationParams {
     
     inline def setRegistrations(value: js.Array[Registration]): Self = StObject.set(x, "registrations", value.asInstanceOf[js.Any])
     
-    inline def setRegistrationsVarargs(value: Registration*): Self = StObject.set(x, "registrations", js.Array(value :_*))
+    inline def setRegistrationsVarargs(value: Registration*): Self = StObject.set(x, "registrations", js.Array(value*))
   }
 }

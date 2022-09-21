@@ -34,7 +34,7 @@ object JQueryValidation {
     }
   }
   
-  type RulesDictionary = StringDictionary[js.Any]
+  type RulesDictionary = StringDictionary[Any]
   
   type ShouldValidatePredicate = Boolean | ValidatePredicate
   
@@ -383,7 +383,7 @@ object JQueryValidation {
     def element(element: String): Boolean = js.native
     def element(element: JQuery): Boolean = js.native
     
-    def elementValue(element: Element): js.Any = js.native
+    def elementValue(element: Element): Any = js.native
     
     var errorList: js.Array[ErrorListItem] = js.native
     
@@ -417,7 +417,7 @@ object JQueryValidation {
       *
       * @param errors One or more key/value pairs of input names and messages.
       */
-    def showErrors(errors: js.Any): Unit = js.native
+    def showErrors(errors: Any): Unit = js.native
     
     def size(): Double = js.native
     
@@ -452,17 +452,17 @@ object JQueryValidation {
       */
     def addMethod(
       name: String,
-      method: js.Function3[/* value */ js.Any, /* element */ HTMLElement, /* params */ js.Any, Boolean]
+      method: js.Function3[/* value */ Any, /* element */ HTMLElement, /* params */ Any, Boolean]
     ): Unit = js.native
     def addMethod(
       name: String,
-      method: js.Function3[/* value */ js.Any, /* element */ HTMLElement, /* params */ js.Any, Boolean],
+      method: js.Function3[/* value */ Any, /* element */ HTMLElement, /* params */ Any, Boolean],
       message: String
     ): Unit = js.native
     def addMethod(
       name: String,
-      method: js.Function3[/* value */ js.Any, /* element */ HTMLElement, /* params */ js.Any, Boolean],
-      message: js.Function2[/* params */ js.Any, /* element */ HTMLElement, String]
+      method: js.Function3[/* value */ Any, /* element */ HTMLElement, /* params */ Any, Boolean],
+      message: js.Function2[/* params */ Any, /* element */ HTMLElement, String]
     ): Unit = js.native
     
     /**
@@ -470,8 +470,8 @@ object JQueryValidation {
       *
       * @param template The string to format.
       */
-    def format(template: String): js.Function1[/* repeated */ js.Any, String] = js.native
-    def format(template: String, args: js.Any*): String = js.native
+    def format(template: String): js.Function1[/* repeated */ Any, String] = js.native
+    def format(template: String, args: Any*): String = js.native
     
     var messages: StringDictionary[String] = js.native
     

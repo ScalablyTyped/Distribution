@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("aurelia-binding", "ExpressionCloner")
 @js.native
-class ExpressionCloner ()
+open class ExpressionCloner ()
   extends StObject
      with ExpressionVisitor

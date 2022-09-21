@@ -24,6 +24,6 @@ object SchemaDetectionsListResponse {
     
     inline def setDetectionsUndefined: Self = StObject.set(x, "detections", js.undefined)
     
-    inline def setDetectionsVarargs(value: SchemaDetectionsResource*): Self = StObject.set(x, "detections", js.Array(value :_*))
+    inline def setDetectionsVarargs(value: SchemaDetectionsResource*): Self = StObject.set(x, "detections", js.Array(value*))
   }
 }

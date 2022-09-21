@@ -7,66 +7,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object workerbApiStrings {
   
   @js.native
-  sealed trait by_id
-    extends StObject
-       with clickQueryMethods
-       with getAttributeQueryMethods
-       with typeQueryMethods
-  inline def by_id: by_id = "by_id".asInstanceOf[by_id]
+  sealed trait `by_$LeftcurlybracketQueryMethods Verticalline ApostrophelabelApostrophe Verticalline ApostropheplaceholderApostropheRightcurlybracket` extends StObject
+  inline def `by_$LeftcurlybracketQueryMethods Verticalline ApostrophelabelApostrophe Verticalline ApostropheplaceholderApostropheRightcurlybracket`: `by_$LeftcurlybracketQueryMethods Verticalline ApostrophelabelApostrophe Verticalline ApostropheplaceholderApostropheRightcurlybracket` = ("by_${QueryMethods | 'label' | 'placeholder'}").asInstanceOf[`by_$LeftcurlybracketQueryMethods Verticalline ApostrophelabelApostrophe Verticalline ApostropheplaceholderApostropheRightcurlybracket`]
   
   @js.native
-  sealed trait by_label
-    extends StObject
-       with typeQueryMethods
-  inline def by_label: by_label = "by_label".asInstanceOf[by_label]
+  sealed trait `by_$LeftcurlybracketQueryMethods Verticalline Apostrophequery_selector_allApostropheRightcurlybracket` extends StObject
+  inline def `by_$LeftcurlybracketQueryMethods Verticalline Apostrophequery_selector_allApostropheRightcurlybracket`: `by_$LeftcurlybracketQueryMethods Verticalline Apostrophequery_selector_allApostropheRightcurlybracket` = ("by_${QueryMethods | 'query_selector_all'}").asInstanceOf[`by_$LeftcurlybracketQueryMethods Verticalline Apostrophequery_selector_allApostropheRightcurlybracket`]
   
   @js.native
-  sealed trait by_placeholder
-    extends StObject
-       with typeQueryMethods
-  inline def by_placeholder: by_placeholder = "by_placeholder".asInstanceOf[by_placeholder]
-  
-  @js.native
-  sealed trait by_query_selector
-    extends StObject
-       with clickQueryMethods
-       with getAttributeQueryMethods
-       with typeQueryMethods
-  inline def by_query_selector: by_query_selector = "by_query_selector".asInstanceOf[by_query_selector]
-  
-  @js.native
-  sealed trait by_query_selector_all
-    extends StObject
-       with getAttributeQueryMethods
-  inline def by_query_selector_all: by_query_selector_all = "by_query_selector_all".asInstanceOf[by_query_selector_all]
-  
-  @js.native
-  sealed trait by_regex
-    extends StObject
-       with clickQueryMethods
-       with getAttributeQueryMethods
-       with typeQueryMethods
-  inline def by_regex: by_regex = "by_regex".asInstanceOf[by_regex]
-  
-  @js.native
-  sealed trait by_text
-    extends StObject
-       with clickQueryMethods
-       with getAttributeQueryMethods
-       with typeQueryMethods
-  inline def by_text: by_text = "by_text".asInstanceOf[by_text]
-  
-  @js.native
-  sealed trait by_xpath
-    extends StObject
-       with clickQueryMethods
-       with getAttributeQueryMethods
-       with typeQueryMethods
-  inline def by_xpath: by_xpath = "by_xpath".asInstanceOf[by_xpath]
+  sealed trait by_$LeftcurlybracketQueryMethodsRightcurlybracket extends StObject
+  inline def by_$LeftcurlybracketQueryMethodsRightcurlybracket: by_$LeftcurlybracketQueryMethodsRightcurlybracket = "by_${QueryMethods}".asInstanceOf[by_$LeftcurlybracketQueryMethodsRightcurlybracket]
   
   @js.native
   sealed trait error extends StObject
   inline def error: error = "error".asInstanceOf[error]
+  
+  @js.native
+  sealed trait id
+    extends StObject
+       with QueryMethods
+  inline def id: id = "id".asInstanceOf[id]
   
   @js.native
   sealed trait keydown extends StObject
@@ -113,6 +73,30 @@ object workerbApiStrings {
   inline def on: on = "on".asInstanceOf[on]
   
   @js.native
+  sealed trait query_selector
+    extends StObject
+       with QueryMethods
+  inline def query_selector: query_selector = "query_selector".asInstanceOf[query_selector]
+  
+  @js.native
+  sealed trait regex
+    extends StObject
+       with QueryMethods
+  inline def regex: regex = "regex".asInstanceOf[regex]
+  
+  @js.native
   sealed trait success extends StObject
   inline def success: success = "success".asInstanceOf[success]
+  
+  @js.native
+  sealed trait text
+    extends StObject
+       with QueryMethods
+  inline def text: text = "text".asInstanceOf[text]
+  
+  @js.native
+  sealed trait xpath
+    extends StObject
+       with QueryMethods
+  inline def xpath: xpath = "xpath".asInstanceOf[xpath]
 }

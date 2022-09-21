@@ -11,5 +11,5 @@ object iconMod {
   
   @JSImport("rbx/elements/icon", "Icon")
   @js.native
-  val Icon: ForwardRefAsExoticComponent[IconProps, ElementType[js.Any]] = js.native
+  val Icon: ForwardRefAsExoticComponent[IconProps, ElementType[Any]] = js.native
 }

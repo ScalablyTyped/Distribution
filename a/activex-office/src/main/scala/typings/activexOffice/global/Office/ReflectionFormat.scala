@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.ReflectionFormat")
 @js.native
-/* private */ class ReflectionFormat ()
+/* private */ open class ReflectionFormat ()
   extends StObject
      with typings.activexOffice.Office.ReflectionFormat {
   
   /* CompleteClass */
-  override val Application: js.Any = js.native
+  override val Application: Any = js.native
   
   /* CompleteClass */
   var Blur: Double = js.native

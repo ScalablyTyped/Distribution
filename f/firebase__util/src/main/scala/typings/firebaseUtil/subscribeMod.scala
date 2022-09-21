@@ -1,13 +1,12 @@
 package typings.firebaseUtil
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object subscribeMod {
   
-  @JSImport("@firebase/util/dist/src/subscribe", JSImport.Namespace)
+  @JSImport("@firebase/util/dist/node-esm/src/subscribe", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -19,7 +18,7 @@ object subscribeMod {
   
   type CompleteFn = js.Function0[Unit]
   
-  type ErrorFn = js.Function1[/* error */ Error, Unit]
+  type ErrorFn = js.Function1[/* error */ js.Error, Unit]
   
   type Executor[T] = js.Function1[/* observer */ Observer[T], Unit]
   
@@ -58,7 +57,7 @@ object subscribeMod {
     @JSName("complete")
     var complete_Original: CompleteFn
     
-    def error(error: Error): Unit
+    def error(error: js.Error): Unit
     @JSName("error")
     var error_Original: ErrorFn
     
@@ -68,7 +67,7 @@ object subscribeMod {
   }
   object Observer {
     
-    inline def apply[T](complete: () => Unit, error: /* error */ Error => Unit, next: T => Unit): Observer[T] = {
+    inline def apply[T](complete: () => Unit, error: /* error */ js.Error => Unit, next: T => Unit): Observer[T] = {
       val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete), error = js.Any.fromFunction1(error), next = js.Any.fromFunction1(next))
       __obj.asInstanceOf[Observer[T]]
     }
@@ -77,13 +76,13 @@ object subscribeMod {
       
       inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
       
-      inline def setError(value: /* error */ Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* error */ js.Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
       inline def setNext(value: T => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
     }
   }
   
-  /* Inlined std.Partial<@firebase/util.@firebase/util/dist/src/subscribe.Observer<T>> */
+  /* Inlined std.Partial<@firebase/util.@firebase/util/dist/node-esm/src/subscribe.Observer<T>> */
   trait PartialObserver[T] extends StObject {
     
     var complete: js.UndefOr[CompleteFn] = js.undefined
@@ -105,7 +104,7 @@ object subscribeMod {
       
       inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
       
-      inline def setError(value: /* error */ Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* error */ js.Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       

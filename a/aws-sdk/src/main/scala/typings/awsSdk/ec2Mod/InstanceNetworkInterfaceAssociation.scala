@@ -12,6 +12,11 @@ trait InstanceNetworkInterfaceAssociation extends StObject {
   var CarrierIp: js.UndefOr[String] = js.undefined
   
   /**
+    * The customer-owned IP address associated with the network interface.
+    */
+  var CustomerOwnedIp: js.UndefOr[String] = js.undefined
+  
+  /**
     * The ID of the owner of the Elastic IP address.
     */
   var IpOwnerId: js.UndefOr[String] = js.undefined
@@ -38,6 +43,10 @@ object InstanceNetworkInterfaceAssociation {
     inline def setCarrierIp(value: String): Self = StObject.set(x, "CarrierIp", value.asInstanceOf[js.Any])
     
     inline def setCarrierIpUndefined: Self = StObject.set(x, "CarrierIp", js.undefined)
+    
+    inline def setCustomerOwnedIp(value: String): Self = StObject.set(x, "CustomerOwnedIp", value.asInstanceOf[js.Any])
+    
+    inline def setCustomerOwnedIpUndefined: Self = StObject.set(x, "CustomerOwnedIp", js.undefined)
     
     inline def setIpOwnerId(value: String): Self = StObject.set(x, "IpOwnerId", value.asInstanceOf[js.Any])
     

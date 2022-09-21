@@ -17,7 +17,7 @@ object mgrsMod {
   
   @JSImport("geodesy/mgrs", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Mgrs {
     def this(zone: Double, band: String, e100k: String, n100k: String, easting: Double, northing: Double) = this()
@@ -44,7 +44,7 @@ object mgrsMod {
   // tslint:disable-next-line no-unnecessary-class
   @JSImport("geodesy/mgrs", "Dms")
   @js.native
-  class Dms ()
+  open class Dms ()
     extends typings.geodesy.utmMod.Dms
   object Dms {
     
@@ -99,11 +99,11 @@ object mgrsMod {
   
   @JSImport("geodesy/mgrs", "LatLon")
   @js.native
-  class LatLon () extends LatlonUtmMgrs
+  open class LatLon () extends LatlonUtmMgrs
   
   @JSImport("geodesy/mgrs", "Utm")
   @js.native
-  class Utm () extends UtmMgrs
+  open class Utm () extends UtmMgrs
   
   @js.native
   trait LatlonUtmMgrs
@@ -124,16 +124,7 @@ object mgrsMod {
     
     var northing: Double = js.native
     
-    @JSName("toString")
-    def toString_10(digits: `10`): String = js.native
-    @JSName("toString")
-    def toString_2(digits: `2`): String = js.native
-    @JSName("toString")
-    def toString_4(digits: `4`): String = js.native
-    @JSName("toString")
-    def toString_6(digits: `6`): String = js.native
-    @JSName("toString")
-    def toString_8(digits: `8`): String = js.native
+    def toString(digits: `2` | `4` | `6` | `8` | `10`): String = js.native
     
     def toUtm(): UtmMgrs = js.native
     

@@ -1,7 +1,6 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antd.antdStrings.default
 import typings.antd.antdStrings.error
 import typings.antd.antdStrings.finish
 import typings.antd.antdStrings.horizontal
@@ -10,10 +9,9 @@ import typings.antd.antdStrings.process
 import typings.antd.antdStrings.small
 import typings.antd.antdStrings.vertical
 import typings.antd.antdStrings.wait
+import typings.rcSteps.anon.Index
+import typings.rcSteps.stepsMod.ProgressDotRender
 import typings.react.mod.CSSProperties
-import typings.react.mod.ClassicComponent
-import typings.react.mod.ClassicComponentClass
-import typings.react.mod.ComponentState
 import typings.react.mod.FunctionComponent
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
@@ -24,27 +22,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object libStepsMod {
+object libStepsMod extends Shortcut {
   
-  object default extends Shortcut {
-    
-    @JSImport("antd/lib/steps", JSImport.Default)
-    @js.native
-    val ^ : StepsType = js.native
-    
-    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-    @JSImport("antd/lib/steps", "default.Step")
-    @js.native
-    class Step protected () extends ClassicComponent[StepProps, ComponentState] {
-      def this(props: StepProps) = this()
-      def this(props: StepProps, context: js.Any) = this()
-    }
-    
-    type _To = StepsType
-    
-    /* This means you don't have to write `^`, but can instead just say `default.foo` */
-    override def _to: StepsType = ^
-  }
+  @JSImport("antd/lib/steps", JSImport.Default)
+  @js.native
+  val default: StepsType = js.native
   
   trait StepProps extends StObject {
     
@@ -115,6 +97,8 @@ object libStepsMod {
   
   trait StepsProps extends StObject {
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var className: js.UndefOr[String] = js.undefined
     
     var current: js.UndefOr[Double] = js.undefined
@@ -133,15 +117,17 @@ object libStepsMod {
     
     var prefixCls: js.UndefOr[String] = js.undefined
     
-    var progressDot: js.UndefOr[Boolean | js.Function] = js.undefined
+    var progressDot: js.UndefOr[Boolean | ProgressDotRender] = js.undefined
     
-    var size: js.UndefOr[default | small] = js.undefined
+    var responsive: js.UndefOr[Boolean] = js.undefined
+    
+    var size: js.UndefOr[typings.antd.antdStrings.default | small] = js.undefined
     
     var status: js.UndefOr[wait | process | finish | error] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var `type`: js.UndefOr[default | navigation] = js.undefined
+    var `type`: js.UndefOr[typings.antd.antdStrings.default | navigation] = js.undefined
   }
   object StepsProps {
     
@@ -151,6 +137,10 @@ object libStepsMod {
     }
     
     extension [Self <: StepsProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -188,11 +178,17 @@ object libStepsMod {
       
       inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      inline def setProgressDot(value: Boolean | js.Function): Self = StObject.set(x, "progressDot", value.asInstanceOf[js.Any])
+      inline def setProgressDot(value: Boolean | ProgressDotRender): Self = StObject.set(x, "progressDot", value.asInstanceOf[js.Any])
+      
+      inline def setProgressDotFunction2(value: (/* iconDot */ Any, /* info */ Index) => ReactNode): Self = StObject.set(x, "progressDot", js.Any.fromFunction2(value))
       
       inline def setProgressDotUndefined: Self = StObject.set(x, "progressDot", js.undefined)
       
-      inline def setSize(value: default | small): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setResponsive(value: Boolean): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
+      
+      inline def setResponsiveUndefined: Self = StObject.set(x, "responsive", js.undefined)
+      
+      inline def setSize(value: typings.antd.antdStrings.default | small): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
@@ -204,7 +200,7 @@ object libStepsMod {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setType(value: default | navigation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: typings.antd.antdStrings.default | navigation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
@@ -215,6 +211,11 @@ object libStepsMod {
     extends StObject
        with FunctionComponent[StepsProps] {
     
-    var Step: ClassicComponentClass[StepProps] = js.native
+    var Step: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof RcSteps.Step */ Any = js.native
   }
+  
+  type _To = StepsType
+  
+  /* This means you don't have to write `default`, but can instead just say `libStepsMod.foo` */
+  override def _to: StepsType = default
 }

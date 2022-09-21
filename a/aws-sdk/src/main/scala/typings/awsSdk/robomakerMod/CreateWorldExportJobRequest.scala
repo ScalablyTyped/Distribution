@@ -51,6 +51,6 @@ object CreateWorldExportJobRequest {
     
     inline def setWorlds(value: Arns): Self = StObject.set(x, "worlds", value.asInstanceOf[js.Any])
     
-    inline def setWorldsVarargs(value: Arn*): Self = StObject.set(x, "worlds", js.Array(value :_*))
+    inline def setWorldsVarargs(value: Arn*): Self = StObject.set(x, "worlds", js.Array(value*))
   }
 }

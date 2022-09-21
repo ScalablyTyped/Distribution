@@ -10,7 +10,7 @@ trait Closed extends StObject {
     * 栅格线是否封闭
     * @type {true}
     */
-  var alternateColor: js.Any
+  var alternateColor: Any
   
   var animate: Boolean
   
@@ -22,7 +22,7 @@ trait Closed extends StObject {
     * 中心点
     * @type {object}
     */
-  var center: js.Any
+  var center: Any
   
   /**
     * 栅格线是否封闭
@@ -30,13 +30,13 @@ trait Closed extends StObject {
     */
   var closed: Boolean
   
-  var container: js.Any
+  var container: Any
   
   var defaultCfg: LineType
   
-  var events: js.Any
+  var events: Any
   
-  var group: js.Any
+  var group: Any
   
   var id: String
   
@@ -46,7 +46,7 @@ trait Closed extends StObject {
   
   var isUpdating: Boolean
   
-  var items: js.Array[js.Any]
+  var items: js.Array[Any]
   
   var locationType: String
   
@@ -65,21 +65,21 @@ trait Closed extends StObject {
 object Closed {
   
   inline def apply(
-    alternateColor: js.Any,
+    alternateColor: Any,
     animate: Boolean,
     animateOption: Appear,
     capture: Boolean,
-    center: js.Any,
+    center: Any,
     closed: Boolean,
-    container: js.Any,
+    container: Any,
     defaultCfg: LineType,
-    events: js.Any,
-    group: js.Any,
+    events: Any,
+    group: Any,
     id: String,
     isInit: Boolean,
     isRegister: Boolean,
     isUpdating: Boolean,
-    items: js.Array[js.Any],
+    items: js.Array[Any],
     locationType: String,
     name: String,
     offsetX: Double,
@@ -95,7 +95,7 @@ object Closed {
   
   extension [Self <: Closed](x: Self) {
     
-    inline def setAlternateColor(value: js.Any): Self = StObject.set(x, "alternateColor", value.asInstanceOf[js.Any])
+    inline def setAlternateColor(value: Any): Self = StObject.set(x, "alternateColor", value.asInstanceOf[js.Any])
     
     inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
@@ -103,17 +103,17 @@ object Closed {
     
     inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
-    inline def setCenter(value: js.Any): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: Any): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     inline def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
     
-    inline def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     inline def setDefaultCfg(value: LineType): Self = StObject.set(x, "defaultCfg", value.asInstanceOf[js.Any])
     
-    inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    inline def setGroup(value: js.Any): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: Any): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -123,9 +123,9 @@ object Closed {
     
     inline def setIsUpdating(value: Boolean): Self = StObject.set(x, "isUpdating", value.asInstanceOf[js.Any])
     
-    inline def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Any*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setLocationType(value: String): Self = StObject.set(x, "locationType", value.asInstanceOf[js.Any])
     

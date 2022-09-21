@@ -52,7 +52,7 @@ object DescribeUserResponse {
     
     inline def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
     
-    inline def setGroupsVarargs(value: string*): Self = StObject.set(x, "Groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: string*): Self = StObject.set(x, "Groups", js.Array(value*))
     
     inline def setPending(value: UserPendingChanges): Self = StObject.set(x, "Pending", value.asInstanceOf[js.Any])
     

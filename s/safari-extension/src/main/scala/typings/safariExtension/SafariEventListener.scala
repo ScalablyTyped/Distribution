@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SafariEventListener
   extends js.Function {
   
-  def apply(event: SafariEvent): js.Any = js.native
+  def apply(event: SafariEvent): Any = js.native
 }

@@ -12,24 +12,24 @@ trait UpdateNodeInput extends StObject {
   var LogPublishingConfiguration: js.UndefOr[NodeLogPublishingConfiguration] = js.undefined
   
   /**
-    * The unique ID of the member that owns the node.
+    * The unique identifier of the member that owns the node. Applies only to Hyperledger Fabric.
     */
-  var MemberId: ResourceIdString
+  var MemberId: js.UndefOr[ResourceIdString] = js.undefined
   
   /**
-    * The unique ID of the Managed Blockchain network to which the node belongs.
+    * The unique identifier of the network that the node is on.
     */
   var NetworkId: ResourceIdString
   
   /**
-    * The unique ID of the node.
+    * The unique identifier of the node.
     */
   var NodeId: ResourceIdString
 }
 object UpdateNodeInput {
   
-  inline def apply(MemberId: ResourceIdString, NetworkId: ResourceIdString, NodeId: ResourceIdString): UpdateNodeInput = {
-    val __obj = js.Dynamic.literal(MemberId = MemberId.asInstanceOf[js.Any], NetworkId = NetworkId.asInstanceOf[js.Any], NodeId = NodeId.asInstanceOf[js.Any])
+  inline def apply(NetworkId: ResourceIdString, NodeId: ResourceIdString): UpdateNodeInput = {
+    val __obj = js.Dynamic.literal(NetworkId = NetworkId.asInstanceOf[js.Any], NodeId = NodeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateNodeInput]
   }
   
@@ -40,6 +40,8 @@ object UpdateNodeInput {
     inline def setLogPublishingConfigurationUndefined: Self = StObject.set(x, "LogPublishingConfiguration", js.undefined)
     
     inline def setMemberId(value: ResourceIdString): Self = StObject.set(x, "MemberId", value.asInstanceOf[js.Any])
+    
+    inline def setMemberIdUndefined: Self = StObject.set(x, "MemberId", js.undefined)
     
     inline def setNetworkId(value: ResourceIdString): Self = StObject.set(x, "NetworkId", value.asInstanceOf[js.Any])
     

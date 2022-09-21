@@ -27,7 +27,7 @@ object PartialCommentMargins {
     
     inline def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
     
-    inline def setInsetVarargs(value: Number*): Self = StObject.set(x, "inset", js.Array(value :_*))
+    inline def setInsetVarargs(value: Number*): Self = StObject.set(x, "inset", js.Array(value*))
     
     inline def setInsetmode(value: auto | custom): Self = StObject.set(x, "insetmode", value.asInstanceOf[js.Any])
     

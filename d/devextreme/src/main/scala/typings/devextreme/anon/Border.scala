@@ -6,9 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Border extends StObject {
   
+  /**
+    * An object defining the border properties for a selected point.
+    */
   var border: js.UndefOr[ColorVisible] = js.undefined
   
-  var hatching: js.UndefOr[Step] = js.undefined
+  /**
+    * Sets a color for a point when it is selected.
+    */
+  var color: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Specifies the diameter of a selected point in the series that represents data points as symbols (not as bars for instance).
+    */
+  var size: js.UndefOr[Double] = js.undefined
 }
 object Border {
   
@@ -23,8 +34,12 @@ object Border {
     
     inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
-    inline def setHatching(value: Step): Self = StObject.set(x, "hatching", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    inline def setHatchingUndefined: Self = StObject.set(x, "hatching", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

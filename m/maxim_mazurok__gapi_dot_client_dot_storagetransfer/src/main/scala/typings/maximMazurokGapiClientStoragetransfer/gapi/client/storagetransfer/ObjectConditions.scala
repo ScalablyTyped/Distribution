@@ -6,22 +6,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ObjectConditions extends StObject {
   
-  /** `exclude_prefixes` must follow the requirements described for include_prefixes. The max size of `exclude_prefixes` is 1000. */
+  /**
+    * If you specify `exclude_prefixes`, Storage Transfer Service uses the items in the `exclude_prefixes` array to determine which objects to exclude from a transfer. Objects must not
+    * start with one of the matching `exclude_prefixes` for inclusion in a transfer. The following are requirements of `exclude_prefixes`: * Each exclude-prefix can contain any sequence
+    * of Unicode characters, to a max length of 1024 bytes when UTF8-encoded, and must not contain Carriage Return or Line Feed characters. Wildcard matching and regular expression
+    * matching are not supported. * Each exclude-prefix must omit the leading slash. For example, to exclude the object `s3://my-aws-bucket/logs/y=2015/requests.gz`, specify the
+    * exclude-prefix as `logs/y=2015/requests.gz`. * None of the exclude-prefix values can be empty, if specified. * Each exclude-prefix must exclude a distinct portion of the object
+    * namespace. No exclude-prefix may be a prefix of another exclude-prefix. * If include_prefixes is specified, then each exclude-prefix must start with the value of a path explicitly
+    * included by `include_prefixes`. The max size of `exclude_prefixes` is 1000. For more information, see [Filtering objects from
+    * transfers](/storage-transfer/docs/filtering-objects-from-transfers).
+    */
   var excludePrefixes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * If `include_prefixes` is specified, objects that satisfy the object conditions must have names that start with one of the `include_prefixes` and that do not start with any of the
-    * exclude_prefixes. If `include_prefixes` is not specified, all objects except those that have names starting with one of the `exclude_prefixes` must satisfy the object conditions.
-    * Requirements: * Each include-prefix and exclude-prefix can contain any sequence of Unicode characters, to a max length of 1024 bytes when UTF8-encoded, and must not contain Carriage
-    * Return or Line Feed characters. Wildcard matching and regular expression matching are not supported. * Each include-prefix and exclude-prefix must omit the leading slash. For
-    * example, to include the `requests.gz` object in a transfer from `s3://my-aws-bucket/logs/y=2015/requests.gz`, specify the include prefix as `logs/y=2015/requests.gz`. * None of the
-    * include-prefix or the exclude-prefix values can be empty, if specified. * Each include-prefix must include a distinct portion of the object namespace. No include-prefix may be a
-    * prefix of another include-prefix. * Each exclude-prefix must exclude a distinct portion of the object namespace. No exclude-prefix may be a prefix of another exclude-prefix. * If
-    * `include_prefixes` is specified, then each exclude-prefix must start with the value of a path explicitly included by `include_prefixes`. The max size of `include_prefixes` is 1000.
+    * If you specify `include_prefixes`, Storage Transfer Service uses the items in the `include_prefixes` array to determine which objects to include in a transfer. Objects must start
+    * with one of the matching `include_prefixes` for inclusion in the transfer. If exclude_prefixes is specified, objects must not start with any of the `exclude_prefixes` specified for
+    * inclusion in the transfer. The following are requirements of `include_prefixes`: * Each include-prefix can contain any sequence of Unicode characters, to a max length of 1024 bytes
+    * when UTF8-encoded, and must not contain Carriage Return or Line Feed characters. Wildcard matching and regular expression matching are not supported. * Each include-prefix must omit
+    * the leading slash. For example, to include the object `s3://my-aws-bucket/logs/y=2015/requests.gz`, specify the include-prefix as `logs/y=2015/requests.gz`. * None of the
+    * include-prefix values can be empty, if specified. * Each include-prefix must include a distinct portion of the object namespace. No include-prefix may be a prefix of another
+    * include-prefix. The max size of `include_prefixes` is 1000. For more information, see [Filtering objects from transfers](/storage-transfer/docs/filtering-objects-from-transfers).
     */
   var includePrefixes: js.UndefOr[js.Array[String]] = js.undefined
   
-  /** If specified, only objects with a "last modification time" before this timestamp and objects that don't have a "last modification time" will be transferred. */
+  /** If specified, only objects with a "last modification time" before this timestamp and objects that don't have a "last modification time" are transferred. */
   var lastModifiedBefore: js.UndefOr[String] = js.undefined
   
   /**
@@ -32,14 +40,16 @@ trait ObjectConditions extends StObject {
   var lastModifiedSince: js.UndefOr[String] = js.undefined
   
   /**
-    * If specified, only objects with a "last modification time" on or after `NOW` - `max_time_elapsed_since_last_modification` and objects that don't have a "last modification time" are
-    * transferred. For each TransferOperation started by this TransferJob, `NOW` refers to the start_time of the `TransferOperation`.
+    * Ensures that objects are not transferred if a specific maximum time has elapsed since the "last modification time". When a TransferOperation begins, objects with a "last
+    * modification time" are transferred only if the elapsed time between the start_time of the `TransferOperation`and the "last modification time" of the object is less than the value of
+    * max_time_elapsed_since_last_modification`. Objects that do not have a "last modification time" are also transferred.
     */
   var maxTimeElapsedSinceLastModification: js.UndefOr[String] = js.undefined
   
   /**
-    * If specified, only objects with a "last modification time" before `NOW` - `min_time_elapsed_since_last_modification` and objects that don't have a "last modification time" are
-    * transferred. For each TransferOperation started by this TransferJob, `NOW` refers to the start_time of the `TransferOperation`.
+    * Ensures that objects are not transferred until a specific minimum time has elapsed after the "last modification time". When a TransferOperation begins, objects with a "last
+    * modification time" are transferred only if the elapsed time between the start_time of the `TransferOperation` and the "last modification time" of the object is equal to or greater
+    * than the value of min_time_elapsed_since_last_modification`. Objects that do not have a "last modification time" are also transferred.
     */
   var minTimeElapsedSinceLastModification: js.UndefOr[String] = js.undefined
 }
@@ -56,13 +66,13 @@ object ObjectConditions {
     
     inline def setExcludePrefixesUndefined: Self = StObject.set(x, "excludePrefixes", js.undefined)
     
-    inline def setExcludePrefixesVarargs(value: String*): Self = StObject.set(x, "excludePrefixes", js.Array(value :_*))
+    inline def setExcludePrefixesVarargs(value: String*): Self = StObject.set(x, "excludePrefixes", js.Array(value*))
     
     inline def setIncludePrefixes(value: js.Array[String]): Self = StObject.set(x, "includePrefixes", value.asInstanceOf[js.Any])
     
     inline def setIncludePrefixesUndefined: Self = StObject.set(x, "includePrefixes", js.undefined)
     
-    inline def setIncludePrefixesVarargs(value: String*): Self = StObject.set(x, "includePrefixes", js.Array(value :_*))
+    inline def setIncludePrefixesVarargs(value: String*): Self = StObject.set(x, "includePrefixes", js.Array(value*))
     
     inline def setLastModifiedBefore(value: String): Self = StObject.set(x, "lastModifiedBefore", value.asInstanceOf[js.Any])
     

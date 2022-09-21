@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents content encoding information used in the Content-Encoding HTTP header on HTTP content in a request or a response. */
 @JSGlobal("Windows.Web.Http.Headers.HttpContentCodingHeaderValue")
 @js.native
-class HttpContentCodingHeaderValue protected ()
+open class HttpContentCodingHeaderValue protected ()
   extends StObject
      with typings.winrtUwp.Windows.Web.Http.Headers.HttpContentCodingHeaderValue {
   /**

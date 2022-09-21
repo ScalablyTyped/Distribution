@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CUI.JsonXmlElement")
 @js.native
-class JsonXmlElement protected ()
+open class JsonXmlElement protected ()
   extends StObject
      with typings.sharepoint.CUI.JsonXmlElement {
   def this(name: String, attrs: js.Array[String]) = this()

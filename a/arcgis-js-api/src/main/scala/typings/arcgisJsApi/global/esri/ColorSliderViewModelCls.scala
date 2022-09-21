@@ -8,7 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSGlobal("__esri.ColorSliderViewModel")
 @js.native
-class ColorSliderViewModelCls ()
+/**
+  * Provides the logic for the [ColorSlider](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSlider.html) widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ColorSlider-ColorSliderViewModel.html)
+  */
+open class ColorSliderViewModelCls ()
   extends StObject
      with typings.arcgisJsApi.esri.ColorSliderViewModel {
   def this(properties: ColorSliderViewModelProperties) = this()

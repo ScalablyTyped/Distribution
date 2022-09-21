@@ -1,10 +1,13 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.arcgisJsApiStrings.`square-centimeters`
+import typings.arcgisJsApi.arcgisJsApiStrings.`square-decimeters`
 import typings.arcgisJsApi.arcgisJsApiStrings.`square-feet`
 import typings.arcgisJsApi.arcgisJsApiStrings.`square-inches`
 import typings.arcgisJsApi.arcgisJsApiStrings.`square-kilometers`
 import typings.arcgisJsApi.arcgisJsApiStrings.`square-meters`
 import typings.arcgisJsApi.arcgisJsApiStrings.`square-miles`
+import typings.arcgisJsApi.arcgisJsApiStrings.`square-millimeters`
 import typings.arcgisJsApi.arcgisJsApiStrings.`square-us-feet`
 import typings.arcgisJsApi.arcgisJsApiStrings.`square-yards`
 import typings.arcgisJsApi.arcgisJsApiStrings.acres
@@ -19,12 +22,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AreaMeasurement3DViewModelProperties extends StObject {
   
   /**
+    * The area measurement analysis object being created or modified by the view model.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D-AreaMeasurement3DViewModel.html#analysis)
+    */
+  var analysis: js.UndefOr[AreaMeasurementAnalysisProperties] = js.undefined
+  
+  /**
     * Unit system (imperial, metric) or specific unit used for displaying the area values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D-AreaMeasurement3DViewModel.html#unit)
     */
   var unit: js.UndefOr[
-    metric | imperial | `square-inches` | `square-feet` | `square-us-feet` | `square-yards` | `square-miles` | `square-meters` | `square-kilometers` | acres | ares | hectares
+    imperial | metric | `square-millimeters` | `square-centimeters` | `square-decimeters` | `square-meters` | `square-kilometers` | `square-inches` | `square-feet` | `square-yards` | `square-miles` | `square-us-feet` | acres | ares | hectares
   ] = js.undefined
   
   /**
@@ -34,7 +44,7 @@ trait AreaMeasurement3DViewModelProperties extends StObject {
     */
   var unitOptions: js.UndefOr[
     js.Array[
-      metric | imperial | `square-inches` | `square-feet` | `square-us-feet` | `square-yards` | `square-miles` | `square-meters` | `square-kilometers` | acres | ares | hectares
+      imperial | metric | `square-millimeters` | `square-centimeters` | `square-decimeters` | `square-meters` | `square-kilometers` | `square-inches` | `square-feet` | `square-yards` | `square-miles` | `square-us-feet` | acres | ares | hectares
     ]
   ] = js.undefined
   
@@ -54,21 +64,25 @@ object AreaMeasurement3DViewModelProperties {
   
   extension [Self <: AreaMeasurement3DViewModelProperties](x: Self) {
     
+    inline def setAnalysis(value: AreaMeasurementAnalysisProperties): Self = StObject.set(x, "analysis", value.asInstanceOf[js.Any])
+    
+    inline def setAnalysisUndefined: Self = StObject.set(x, "analysis", js.undefined)
+    
     inline def setUnit(
-      value: metric | imperial | `square-inches` | `square-feet` | `square-us-feet` | `square-yards` | `square-miles` | `square-meters` | `square-kilometers` | acres | ares | hectares
+      value: imperial | metric | `square-millimeters` | `square-centimeters` | `square-decimeters` | `square-meters` | `square-kilometers` | `square-inches` | `square-feet` | `square-yards` | `square-miles` | `square-us-feet` | acres | ares | hectares
     ): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
     inline def setUnitOptions(
       value: js.Array[
-          metric | imperial | `square-inches` | `square-feet` | `square-us-feet` | `square-yards` | `square-miles` | `square-meters` | `square-kilometers` | acres | ares | hectares
+          imperial | metric | `square-millimeters` | `square-centimeters` | `square-decimeters` | `square-meters` | `square-kilometers` | `square-inches` | `square-feet` | `square-yards` | `square-miles` | `square-us-feet` | acres | ares | hectares
         ]
     ): Self = StObject.set(x, "unitOptions", value.asInstanceOf[js.Any])
     
     inline def setUnitOptionsUndefined: Self = StObject.set(x, "unitOptions", js.undefined)
     
     inline def setUnitOptionsVarargs(
-      value: (metric | imperial | `square-inches` | `square-feet` | `square-us-feet` | `square-yards` | `square-miles` | `square-meters` | `square-kilometers` | acres | ares | hectares)*
-    ): Self = StObject.set(x, "unitOptions", js.Array(value :_*))
+      value: (imperial | metric | `square-millimeters` | `square-centimeters` | `square-decimeters` | `square-meters` | `square-kilometers` | `square-inches` | `square-feet` | `square-yards` | `square-miles` | `square-us-feet` | acres | ares | hectares)*
+    ): Self = StObject.set(x, "unitOptions", js.Array(value*))
     
     inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     

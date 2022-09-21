@@ -14,7 +14,7 @@ object libShimmeredDetailsListMod {
   
   @JSImport("office-ui-fabric-react/lib/ShimmeredDetailsList", "ShimmeredDetailsListBase")
   @js.native
-  class ShimmeredDetailsListBase protected ()
+  open class ShimmeredDetailsListBase protected ()
     extends typings.officeUiFabricReact.shimmeredDetailsListBaseMod.ShimmeredDetailsListBase {
     def this(props: IShimmeredDetailsListProps) = this()
   }

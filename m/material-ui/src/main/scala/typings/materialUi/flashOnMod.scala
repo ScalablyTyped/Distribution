@@ -10,10 +10,10 @@ object flashOnMod {
   
   @JSImport("material-ui/svg-icons/image/flash-on", JSImport.Default)
   @js.native
-  class default () extends ImageFlashOn
+  open class default () extends ImageFlashOn
   
   @JSImport("material-ui/svg-icons/image/flash-on", "ImageFlashOn")
   @js.native
-  class ImageFlashOn ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageFlashOn ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

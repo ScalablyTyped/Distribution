@@ -28,7 +28,7 @@ object widgetMod {
     def format(
       table: TElement,
       config: TablesorterConfigurationStore[TElement],
-      widgetOptions: StringDictionary[js.Any],
+      widgetOptions: StringDictionary[Any],
       initializing: Boolean
     ): Unit
     
@@ -56,13 +56,13 @@ object widgetMod {
       table: TElement,
       thisWidget: this.type,
       config: TablesorterConfigurationStore[TElement],
-      widgetOptions: StringDictionary[js.Any]
+      widgetOptions: StringDictionary[Any]
     ): Unit
     
     /**
       * The default options of the widget.
       */
-    var options: StringDictionary[js.Any]
+    var options: StringDictionary[Any]
     
     /**
       * The priority of the widget.
@@ -87,19 +87,19 @@ object widgetMod {
     def remove(
       table: TElement,
       config: TablesorterConfigurationStore[TElement],
-      widgetOptions: StringDictionary[js.Any],
+      widgetOptions: StringDictionary[Any],
       refreshing: Boolean
     ): Unit
   }
   object Widget {
     
     inline def apply[TElement](
-      format: (TElement, TablesorterConfigurationStore[TElement], StringDictionary[js.Any], Boolean) => Unit,
+      format: (TElement, TablesorterConfigurationStore[TElement], StringDictionary[Any], Boolean) => Unit,
       id: String,
-      init: (TElement, Widget[TElement], TablesorterConfigurationStore[TElement], StringDictionary[js.Any]) => Unit,
-      options: StringDictionary[js.Any],
+      init: (TElement, Widget[TElement], TablesorterConfigurationStore[TElement], StringDictionary[Any]) => Unit,
+      options: StringDictionary[Any],
       priority: Double,
-      remove: (TElement, TablesorterConfigurationStore[TElement], StringDictionary[js.Any], Boolean) => Unit
+      remove: (TElement, TablesorterConfigurationStore[TElement], StringDictionary[Any], Boolean) => Unit
     ): Widget[TElement] = {
       val __obj = js.Dynamic.literal(format = js.Any.fromFunction4(format), id = id.asInstanceOf[js.Any], init = js.Any.fromFunction4(init), options = options.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], remove = js.Any.fromFunction4(remove))
       __obj.asInstanceOf[Widget[TElement]]
@@ -107,23 +107,19 @@ object widgetMod {
     
     extension [Self <: Widget[?], TElement](x: Self & Widget[TElement]) {
       
-      inline def setFormat(
-        value: (TElement, TablesorterConfigurationStore[TElement], StringDictionary[js.Any], Boolean) => Unit
-      ): Self = StObject.set(x, "format", js.Any.fromFunction4(value))
+      inline def setFormat(value: (TElement, TablesorterConfigurationStore[TElement], StringDictionary[Any], Boolean) => Unit): Self = StObject.set(x, "format", js.Any.fromFunction4(value))
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       inline def setInit(
-        value: (TElement, Widget[TElement], TablesorterConfigurationStore[TElement], StringDictionary[js.Any]) => Unit
+        value: (TElement, Widget[TElement], TablesorterConfigurationStore[TElement], StringDictionary[Any]) => Unit
       ): Self = StObject.set(x, "init", js.Any.fromFunction4(value))
       
-      inline def setOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: StringDictionary[Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      inline def setRemove(
-        value: (TElement, TablesorterConfigurationStore[TElement], StringDictionary[js.Any], Boolean) => Unit
-      ): Self = StObject.set(x, "remove", js.Any.fromFunction4(value))
+      inline def setRemove(value: (TElement, TablesorterConfigurationStore[TElement], StringDictionary[Any], Boolean) => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction4(value))
     }
   }
 }

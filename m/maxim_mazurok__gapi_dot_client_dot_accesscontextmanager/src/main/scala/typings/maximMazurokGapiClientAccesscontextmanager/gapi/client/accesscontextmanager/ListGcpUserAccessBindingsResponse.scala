@@ -25,7 +25,7 @@ object ListGcpUserAccessBindingsResponse {
     
     inline def setGcpUserAccessBindingsUndefined: Self = StObject.set(x, "gcpUserAccessBindings", js.undefined)
     
-    inline def setGcpUserAccessBindingsVarargs(value: GcpUserAccessBinding*): Self = StObject.set(x, "gcpUserAccessBindings", js.Array(value :_*))
+    inline def setGcpUserAccessBindingsVarargs(value: GcpUserAccessBinding*): Self = StObject.set(x, "gcpUserAccessBindings", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

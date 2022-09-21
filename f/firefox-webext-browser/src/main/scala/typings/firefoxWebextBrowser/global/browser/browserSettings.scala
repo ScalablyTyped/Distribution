@@ -31,13 +31,44 @@ object browserSettings {
   val closeTabsByDoubleClick: Setting = js.native
   
   /**
+    * Use the `browserSettings.colorManagement` API to query and set items related to color management.
+    *
+    * Permissions: `browserSettings`
+    *
+    * Not allowed in: Content scripts, Devtools pages
+    */
+  object colorManagement {
+    
+    /* browserSettings.colorManagement properties */
+    /**
+      * This setting controls the mode used for color management and must be a string from `browserSettings.ColorManagementMode`
+      */
+    @JSGlobal("browser.browserSettings.colorManagement.mode")
+    @js.native
+    val mode: Setting = js.native
+    
+    /** This boolean setting controls whether or not native sRGB color management is used. */
+    @JSGlobal("browser.browserSettings.colorManagement.useNativeSRGB")
+    @js.native
+    val useNativeSRGB: Setting = js.native
+    
+    /** This boolean setting controls whether or not the WebRender compositor is used. */
+    @JSGlobal("browser.browserSettings.colorManagement.useWebRenderCompositor")
+    @js.native
+    val useWebRenderCompositor: Setting = js.native
+  }
+  
+  /**
     * Controls after which mouse event context menus popup. This setting's value is of type ContextMenuMouseEvent, which has possible values of `mouseup` and `mousedown`.
     */
   @JSGlobal("browser.browserSettings.contextMenuShowEvent")
   @js.native
   val contextMenuShowEvent: Setting = js.native
   
-  /** This boolean setting controls whether the FTP protocol is enabled. */
+  /**
+    * Returns whether the FTP protocol is enabled. Read-only.
+    * @deprecated FTP support was removed from Firefox in bug 1574475
+    */
   @JSGlobal("browser.browserSettings.ftpProtocolEnabled")
   @js.native
   val ftpProtocolEnabled: Setting = js.native

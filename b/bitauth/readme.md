@@ -11,9 +11,9 @@ Passwordless authentication using Bitcoin cryptography
 | Full name          | bitauth |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 20 |
-| # downloads        | 21744 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1012.6666666666666 |
+| # stars            | 478.0 |
 
 ## Links
 - [Homepage](https://github.com/bitpay/bitauth#readme)

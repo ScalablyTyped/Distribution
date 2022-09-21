@@ -30,7 +30,7 @@ trait XInternalDataProvider
   
   def deleteSequence(nAtIndex: Double): Unit
   
-  def getDataByRangeRepresentation(aRange: String): SafeArray[js.Any]
+  def getDataByRangeRepresentation(aRange: String): SafeArray[Any]
   
   def hasDataByRangeRepresentation(aRange: String): Boolean
   
@@ -52,7 +52,7 @@ trait XInternalDataProvider
     */
   def registerDataSequenceForChanges(xSeq: XDataSequence): Unit
   
-  def setDataByRangeRepresentation(aRange: String, aNewData: SeqEquiv[js.Any]): Unit
+  def setDataByRangeRepresentation(aRange: String, aNewData: SeqEquiv[Any]): Unit
   
   def swapDataPointWithNextOneForAllSequences(nAtIndex: Double): Unit
 }
@@ -71,16 +71,16 @@ object XInternalDataProvider {
     deleteDataPointForAllSequences: Double => Unit,
     deleteSequence: Double => Unit,
     detectArguments: XDataSource => SafeArray[PropertyValue],
-    getDataByRangeRepresentation: String => SafeArray[js.Any],
+    getDataByRangeRepresentation: String => SafeArray[Any],
     getRangeSelection: () => XRangeSelection,
     hasDataByRangeRepresentation: String => Boolean,
     insertComplexCategoryLevel: Double => Unit,
     insertDataPointForAllSequences: Double => Unit,
     insertSequence: Double => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     registerDataSequenceForChanges: XDataSequence => Unit,
     release: () => Unit,
-    setDataByRangeRepresentation: (String, SeqEquiv[js.Any]) => Unit,
+    setDataByRangeRepresentation: (String, SeqEquiv[Any]) => Unit,
     swapDataPointWithNextOneForAllSequences: Double => Unit
   ): XInternalDataProvider = {
     val __obj = js.Dynamic.literal(RangeSelection = RangeSelection.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), appendSequence = js.Any.fromFunction0(appendSequence), createDataSequenceByRangeRepresentation = js.Any.fromFunction1(createDataSequenceByRangeRepresentation), createDataSequenceByRangeRepresentationPossible = js.Any.fromFunction1(createDataSequenceByRangeRepresentationPossible), createDataSequenceByValueArray = js.Any.fromFunction2(createDataSequenceByValueArray), createDataSource = js.Any.fromFunction1(createDataSource), createDataSourcePossible = js.Any.fromFunction1(createDataSourcePossible), deleteComplexCategoryLevel = js.Any.fromFunction1(deleteComplexCategoryLevel), deleteDataPointForAllSequences = js.Any.fromFunction1(deleteDataPointForAllSequences), deleteSequence = js.Any.fromFunction1(deleteSequence), detectArguments = js.Any.fromFunction1(detectArguments), getDataByRangeRepresentation = js.Any.fromFunction1(getDataByRangeRepresentation), getRangeSelection = js.Any.fromFunction0(getRangeSelection), hasDataByRangeRepresentation = js.Any.fromFunction1(hasDataByRangeRepresentation), insertComplexCategoryLevel = js.Any.fromFunction1(insertComplexCategoryLevel), insertDataPointForAllSequences = js.Any.fromFunction1(insertDataPointForAllSequences), insertSequence = js.Any.fromFunction1(insertSequence), queryInterface = js.Any.fromFunction1(queryInterface), registerDataSequenceForChanges = js.Any.fromFunction1(registerDataSequenceForChanges), release = js.Any.fromFunction0(release), setDataByRangeRepresentation = js.Any.fromFunction2(setDataByRangeRepresentation), swapDataPointWithNextOneForAllSequences = js.Any.fromFunction1(swapDataPointWithNextOneForAllSequences))
@@ -97,7 +97,7 @@ object XInternalDataProvider {
     
     inline def setDeleteSequence(value: Double => Unit): Self = StObject.set(x, "deleteSequence", js.Any.fromFunction1(value))
     
-    inline def setGetDataByRangeRepresentation(value: String => SafeArray[js.Any]): Self = StObject.set(x, "getDataByRangeRepresentation", js.Any.fromFunction1(value))
+    inline def setGetDataByRangeRepresentation(value: String => SafeArray[Any]): Self = StObject.set(x, "getDataByRangeRepresentation", js.Any.fromFunction1(value))
     
     inline def setHasDataByRangeRepresentation(value: String => Boolean): Self = StObject.set(x, "hasDataByRangeRepresentation", js.Any.fromFunction1(value))
     
@@ -109,7 +109,7 @@ object XInternalDataProvider {
     
     inline def setRegisterDataSequenceForChanges(value: XDataSequence => Unit): Self = StObject.set(x, "registerDataSequenceForChanges", js.Any.fromFunction1(value))
     
-    inline def setSetDataByRangeRepresentation(value: (String, SeqEquiv[js.Any]) => Unit): Self = StObject.set(x, "setDataByRangeRepresentation", js.Any.fromFunction2(value))
+    inline def setSetDataByRangeRepresentation(value: (String, SeqEquiv[Any]) => Unit): Self = StObject.set(x, "setDataByRangeRepresentation", js.Any.fromFunction2(value))
     
     inline def setSwapDataPointWithNextOneForAllSequences(value: Double => Unit): Self = StObject.set(x, "swapDataPointWithNextOneForAllSequences", js.Any.fromFunction1(value))
   }

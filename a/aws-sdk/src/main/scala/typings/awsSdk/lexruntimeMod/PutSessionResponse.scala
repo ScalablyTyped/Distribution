@@ -27,12 +27,17 @@ trait PutSessionResponse extends StObject {
   var dialogState: js.UndefOr[DialogState] = js.undefined
   
   /**
+    * The next message that should be presented to the user. The encodedMessage field is base-64 encoded. You must decode the field before you can use the value.
+    */
+  var encodedMessage: js.UndefOr[SensitiveString] = js.undefined
+  
+  /**
     * The name of the current intent.
     */
   var intentName: js.UndefOr[IntentName] = js.undefined
   
   /**
-    * The next message that should be presented to the user.
+    * The next message that should be presented to the user. You can only use this field in the de-DE, en-AU, en-GB, en-US, es-419, es-ES, es-US, fr-CA, fr-FR, and it-IT locales. In all other locales, the message field is null. You should use the encodedMessage field instead.
     */
   var message: js.UndefOr[Text] = js.undefined
   
@@ -85,6 +90,10 @@ object PutSessionResponse {
     inline def setDialogState(value: DialogState): Self = StObject.set(x, "dialogState", value.asInstanceOf[js.Any])
     
     inline def setDialogStateUndefined: Self = StObject.set(x, "dialogState", js.undefined)
+    
+    inline def setEncodedMessage(value: SensitiveString): Self = StObject.set(x, "encodedMessage", value.asInstanceOf[js.Any])
+    
+    inline def setEncodedMessageUndefined: Self = StObject.set(x, "encodedMessage", js.undefined)
     
     inline def setIntentName(value: IntentName): Self = StObject.set(x, "intentName", value.asInstanceOf[js.Any])
     

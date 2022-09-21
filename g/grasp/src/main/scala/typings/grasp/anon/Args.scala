@@ -1,7 +1,8 @@
 package typings.grasp.anon
 
 import typings.cliColor.mod.Color
-import typings.node.anon.ReadStreamfd0
+import typings.node.anon.`6`
+import typings.node.processMod.global.NodeJS.ReadStream
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Args extends StObject {
   
-  var args: js.Array[String] | (Record[String, js.Any]) | String
+  var args: js.Array[String] | (Record[String, Any]) | String
   
   var callback: js.UndefOr[js.Function1[/* result */ String, Unit]] = js.undefined
   
@@ -30,22 +31,22 @@ trait Args extends StObject {
   
   var input: js.UndefOr[String] = js.undefined
   
-  var stdin: js.UndefOr[ReadStreamfd0] = js.undefined
+  var stdin: js.UndefOr[ReadStream & `6`] = js.undefined
   
   var textFormat: js.UndefOr[Color] = js.undefined
 }
 object Args {
   
-  inline def apply(args: js.Array[String] | (Record[String, js.Any]) | String): Args = {
+  inline def apply(args: js.Array[String] | (Record[String, Any]) | String): Args = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any])
     __obj.asInstanceOf[Args]
   }
   
   extension [Self <: Args](x: Self) {
     
-    inline def setArgs(value: js.Array[String] | (Record[String, js.Any]) | String): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Array[String] | (Record[String, Any]) | String): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
     
     inline def setCallback(value: /* result */ String => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     
@@ -71,7 +72,7 @@ object Args {
     
     inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
-    inline def setStdin(value: ReadStreamfd0): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
+    inline def setStdin(value: ReadStream & `6`): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
     
     inline def setStdinUndefined: Self = StObject.set(x, "stdin", js.undefined)
     

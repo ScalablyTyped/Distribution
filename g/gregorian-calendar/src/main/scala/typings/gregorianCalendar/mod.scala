@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("gregorian-calendar", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with GregorianCalendar {
     def this(locale: js.Object) = this()

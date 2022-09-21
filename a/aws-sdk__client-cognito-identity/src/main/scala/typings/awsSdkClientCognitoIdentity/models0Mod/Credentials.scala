@@ -1,6 +1,5 @@
 package typings.awsSdkClientCognitoIdentity.models0Mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ trait Credentials extends StObject {
   /**
     * <p>The date at which these credentials will expire.</p>
     */
-  var Expiration: js.UndefOr[Date] = js.undefined
+  var Expiration: js.UndefOr[js.Date] = js.undefined
   
   /**
     * <p>The Secret Access Key portion of the credentials</p>
@@ -34,19 +33,13 @@ object Credentials {
     __obj.asInstanceOf[Credentials]
   }
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "Credentials")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  inline def filterSensitiveLog(obj: Credentials): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
   extension [Self <: Credentials](x: Self) {
     
     inline def setAccessKeyId(value: String): Self = StObject.set(x, "AccessKeyId", value.asInstanceOf[js.Any])
     
     inline def setAccessKeyIdUndefined: Self = StObject.set(x, "AccessKeyId", js.undefined)
     
-    inline def setExpiration(value: Date): Self = StObject.set(x, "Expiration", value.asInstanceOf[js.Any])
+    inline def setExpiration(value: js.Date): Self = StObject.set(x, "Expiration", value.asInstanceOf[js.Any])
     
     inline def setExpirationUndefined: Self = StObject.set(x, "Expiration", js.undefined)
     

@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Event extends StObject {
   
-  /** Whether anyone can invite themselves to the event (currently works for Google+ events only). Optional. The default is False. */
+  /** Whether anyone can invite themselves to the event (deprecated). Optional. The default is False. */
   var anyoneCanAddSelf: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * File attachments for the event. Currently only Google Drive attachments are supported.
+    * File attachments for the event.
     * In order to modify attachments the supportsAttachments request parameter should be set to true.
     * There can be at most 25 attachments per event,
     */
@@ -60,6 +60,14 @@ trait Event extends StObject {
   /** ETag of the resource. */
   var etag: js.UndefOr[String] = js.undefined
   
+  /**
+    * Specific type of the event. Read-only. Possible values are:
+    * - "default" - A regular event or not further specified.
+    * - "outOfOffice" - An out-of-office event.
+    * - "focusTime" - A focus-time event.
+    */
+  var eventType: js.UndefOr[String] = js.undefined
+  
   /** Extended properties of the event. */
   var extendedProperties: js.UndefOr[Private] = js.undefined
   
@@ -75,7 +83,7 @@ trait Event extends StObject {
   /** Whether attendees other than the organizer can see who the event's attendees are. Optional. The default is True. */
   var guestsCanSeeOtherGuests: js.UndefOr[Boolean] = js.undefined
   
-  /** An absolute link to the Google+ hangout associated with this event. Read-only. */
+  /** An absolute link to the Google Hangout associated with this event. Read-only. */
   var hangoutLink: js.UndefOr[String] = js.undefined
   
   /** An absolute link to this event in the Google Calendar Web UI. Read-only. */
@@ -83,8 +91,9 @@ trait Event extends StObject {
   
   /**
     * Event unique identifier as defined in RFC5545. It is used to uniquely identify events accross calendaring systems and must be supplied when importing events via the import method.
-    * Note that the icalUID and the id are not identical and only one of them should be supplied at event creation time. One difference in their semantics is that in recurring events, all
-    * occurrences of one event have different ids while they all share the same icalUIDs.
+    * Note that the iCalUID and the id are not identical and only one of them should be supplied at event creation time. One difference in their semantics is that in recurring events, all
+    * occurrences of one event have different ids while they all share the same iCalUIDs. To retrieve an event using its iCalUID, call the events.list method using the iCalUID parameter.
+    * To retrieve an event using its id, call the events.get method.
     */
   var iCalUID: js.UndefOr[String] = js.undefined
   
@@ -210,7 +219,7 @@ object Event {
     
     inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
     
-    inline def setAttachmentsVarargs(value: EventAttachment*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+    inline def setAttachmentsVarargs(value: EventAttachment*): Self = StObject.set(x, "attachments", js.Array(value*))
     
     inline def setAttendees(value: js.Array[EventAttendee]): Self = StObject.set(x, "attendees", value.asInstanceOf[js.Any])
     
@@ -220,7 +229,7 @@ object Event {
     
     inline def setAttendeesUndefined: Self = StObject.set(x, "attendees", js.undefined)
     
-    inline def setAttendeesVarargs(value: EventAttendee*): Self = StObject.set(x, "attendees", js.Array(value :_*))
+    inline def setAttendeesVarargs(value: EventAttendee*): Self = StObject.set(x, "attendees", js.Array(value*))
     
     inline def setColorId(value: String): Self = StObject.set(x, "colorId", value.asInstanceOf[js.Any])
     
@@ -253,6 +262,10 @@ object Event {
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
     inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    
+    inline def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
+    
+    inline def setEventTypeUndefined: Self = StObject.set(x, "eventType", js.undefined)
     
     inline def setExtendedProperties(value: Private): Self = StObject.set(x, "extendedProperties", value.asInstanceOf[js.Any])
     
@@ -318,7 +331,7 @@ object Event {
     
     inline def setRecurrenceUndefined: Self = StObject.set(x, "recurrence", js.undefined)
     
-    inline def setRecurrenceVarargs(value: String*): Self = StObject.set(x, "recurrence", js.Array(value :_*))
+    inline def setRecurrenceVarargs(value: String*): Self = StObject.set(x, "recurrence", js.Array(value*))
     
     inline def setRecurringEventId(value: String): Self = StObject.set(x, "recurringEventId", value.asInstanceOf[js.Any])
     

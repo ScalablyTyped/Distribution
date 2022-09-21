@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateDevEndpointRequest extends StObject {
   
   /**
-    * The map of arguments to add the map of arguments used to configure the DevEndpoint. Valid arguments are:    "--enable-glue-datacatalog": ""     "GLUE_PYTHON_VERSION": "3"     "GLUE_PYTHON_VERSION": "2"    You can specify a version of Python support for development endpoints by using the Arguments parameter in the CreateDevEndpoint or UpdateDevEndpoint APIs. If no arguments are provided, the version defaults to Python 2.
+    * The map of arguments to add the map of arguments used to configure the DevEndpoint. Valid arguments are:    "--enable-glue-datacatalog": ""    You can specify a version of Python support for development endpoints by using the Arguments parameter in the CreateDevEndpoint or UpdateDevEndpoint APIs. If no arguments are provided, the version defaults to Python 2.
     */
   var AddArguments: js.UndefOr[MapValue] = js.undefined
   
@@ -63,7 +63,7 @@ object UpdateDevEndpointRequest {
     
     inline def setAddPublicKeysUndefined: Self = StObject.set(x, "AddPublicKeys", js.undefined)
     
-    inline def setAddPublicKeysVarargs(value: GenericString*): Self = StObject.set(x, "AddPublicKeys", js.Array(value :_*))
+    inline def setAddPublicKeysVarargs(value: GenericString*): Self = StObject.set(x, "AddPublicKeys", js.Array(value*))
     
     inline def setCustomLibraries(value: DevEndpointCustomLibraries): Self = StObject.set(x, "CustomLibraries", value.asInstanceOf[js.Any])
     
@@ -73,13 +73,13 @@ object UpdateDevEndpointRequest {
     
     inline def setDeleteArgumentsUndefined: Self = StObject.set(x, "DeleteArguments", js.undefined)
     
-    inline def setDeleteArgumentsVarargs(value: GenericString*): Self = StObject.set(x, "DeleteArguments", js.Array(value :_*))
+    inline def setDeleteArgumentsVarargs(value: GenericString*): Self = StObject.set(x, "DeleteArguments", js.Array(value*))
     
     inline def setDeletePublicKeys(value: PublicKeysList): Self = StObject.set(x, "DeletePublicKeys", value.asInstanceOf[js.Any])
     
     inline def setDeletePublicKeysUndefined: Self = StObject.set(x, "DeletePublicKeys", js.undefined)
     
-    inline def setDeletePublicKeysVarargs(value: GenericString*): Self = StObject.set(x, "DeletePublicKeys", js.Array(value :_*))
+    inline def setDeletePublicKeysVarargs(value: GenericString*): Self = StObject.set(x, "DeletePublicKeys", js.Array(value*))
     
     inline def setEndpointName(value: GenericString): Self = StObject.set(x, "EndpointName", value.asInstanceOf[js.Any])
     

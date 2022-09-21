@@ -62,11 +62,11 @@ object AnimatedImagesControlModel {
     getImageSet: Double => SafeArray[String],
     getImageSetCount: () => Double,
     getPropertySetInfo: () => XPropertySetInfo,
-    getPropertyValue: String => js.Any,
-    getPropertyValues: SeqEquiv[String] => SafeArray[js.Any],
+    getPropertyValue: String => Any,
+    getPropertyValues: SeqEquiv[String] => SafeArray[Any],
     getServiceName: () => String,
     insertImageSet: (Double, SeqEquiv[String]) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     read: XObjectInputStream => Unit,
     release: () => Unit,
     removeContainerListener: XContainerListener => Unit,
@@ -76,8 +76,8 @@ object AnimatedImagesControlModel {
     removePropertyChangeListener: (String, XPropertyChangeListener) => Unit,
     removeVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
     replaceImageSet: (Double, SeqEquiv[String]) => Unit,
-    setPropertyValue: (String, js.Any) => Unit,
-    setPropertyValues: (SeqEquiv[String], SeqEquiv[js.Any]) => Unit,
+    setPropertyValue: (String, Any) => Unit,
+    setPropertyValues: (SeqEquiv[String], SeqEquiv[Any]) => Unit,
     write: XObjectOutputStream => Unit
   ): AnimatedImagesControlModel = {
     val __obj = js.Dynamic.literal(AutoRepeat = AutoRepeat.asInstanceOf[js.Any], DefaultControl = DefaultControl.asInstanceOf[js.Any], Height = Height.asInstanceOf[js.Any], ImageSetCount = ImageSetCount.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], PositionX = PositionX.asInstanceOf[js.Any], PositionY = PositionY.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], ScaleMode = ScaleMode.asInstanceOf[js.Any], ServiceName = ServiceName.asInstanceOf[js.Any], Step = Step.asInstanceOf[js.Any], StepTime = StepTime.asInstanceOf[js.Any], TabIndex = TabIndex.asInstanceOf[js.Any], Tag = Tag.asInstanceOf[js.Any], Width = Width.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addContainerListener = js.Any.fromFunction1(addContainerListener), addEventListener = js.Any.fromFunction1(addEventListener), addPropertiesChangeListener = js.Any.fromFunction2(addPropertiesChangeListener), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), createClone = js.Any.fromFunction0(createClone), dispose = js.Any.fromFunction0(dispose), firePropertiesChangeEvent = js.Any.fromFunction2(firePropertiesChangeEvent), getImageSet = js.Any.fromFunction1(getImageSet), getImageSetCount = js.Any.fromFunction0(getImageSetCount), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getPropertyValues = js.Any.fromFunction1(getPropertyValues), getServiceName = js.Any.fromFunction0(getServiceName), insertImageSet = js.Any.fromFunction2(insertImageSet), queryInterface = js.Any.fromFunction1(queryInterface), read = js.Any.fromFunction1(read), release = js.Any.fromFunction0(release), removeContainerListener = js.Any.fromFunction1(removeContainerListener), removeEventListener = js.Any.fromFunction1(removeEventListener), removeImageSet = js.Any.fromFunction1(removeImageSet), removePropertiesChangeListener = js.Any.fromFunction1(removePropertiesChangeListener), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), replaceImageSet = js.Any.fromFunction2(replaceImageSet), setPropertyValue = js.Any.fromFunction2(setPropertyValue), setPropertyValues = js.Any.fromFunction2(setPropertyValues), write = js.Any.fromFunction1(write))

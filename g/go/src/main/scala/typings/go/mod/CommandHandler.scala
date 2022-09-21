@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * The constructor produces a CommandHandler with the default key bindings.
   */
-class CommandHandler () extends StObject {
+open class CommandHandler () extends StObject {
   
   /**
     * Make sure all of the unnested Parts in the given collection are removed from any containing Groups.
@@ -27,7 +27,7 @@ class CommandHandler () extends StObject {
   def addTopLevelParts(coll: Iterable[Part], check: Boolean): Boolean = js.native
   
   /**Gets or sets a data object that is copied by .groupSelection when creating a new Group. The default value is null. The value must be an Object or null.*/
-  var archetypeGroupData: js.Any = js.native
+  var archetypeGroupData: Any = js.native
   
   /**
     * This predicate controls whether the user can collapse expanded Groups.

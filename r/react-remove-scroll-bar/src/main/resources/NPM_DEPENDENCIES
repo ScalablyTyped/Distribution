@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-remove-scroll-bar" : "2.3.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-remove-scroll-bar" : "2.3.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

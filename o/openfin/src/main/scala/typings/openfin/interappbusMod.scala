@@ -13,17 +13,17 @@ object interappbusMod {
   
   @JSImport("openfin/_v2/api/interappbus/interappbus", JSImport.Default)
   @js.native
-  class default protected () extends InterApplicationBus {
+  open class default protected () extends InterApplicationBus {
     def this(wire: typings.openfin.transportMod.default) = this()
   }
   
   @JSImport("openfin/_v2/api/interappbus/interappbus", "InterAppPayload")
   @js.native
-  class InterAppPayload () extends StObject {
+  open class InterAppPayload () extends StObject {
     
     var destinationUuid: js.UndefOr[String] = js.native
     
-    var message: js.UndefOr[js.Any] = js.native
+    var message: js.UndefOr[Any] = js.native
     
     var sourceUuid: String = js.native
     
@@ -39,17 +39,17 @@ object interappbusMod {
     
     /* protected */ def createSubscriptionKey(uuid: String, name: String, topic: String): String = js.native
     
-    /* private */ var emitSubscriverEvent: js.Any = js.native
+    /* private */ var emitSubscriverEvent: Any = js.native
     
     /* protected */ var emitter: EventEmitter = js.native
     
     var events: SubscriberAdded = js.native
     
-    var on: js.Any = js.native
+    var on: Any = js.native
     
     /* protected */ def onmessage(message: Message[InterAppPayload]): Boolean = js.native
     
-    /* private */ var processMessage: js.Any = js.native
+    /* private */ var processMessage: Any = js.native
     
     /**
       * Publishes a message to all applications running on OpenFin Runtime that
@@ -61,11 +61,11 @@ object interappbusMod {
       * @return {Promise.<void>}
       * @tutorial InterApplicationBus.publish
       */
-    def publish(topic: String, message: js.Any): js.Promise[Unit] = js.native
+    def publish(topic: String, message: Any): js.Promise[Unit] = js.native
     
-    /* private */ var refCounter: js.Any = js.native
+    /* private */ var refCounter: Any = js.native
     
-    var removeAllListeners: js.Any = js.native
+    var removeAllListeners: Any = js.native
     
     /**
       * Sends a message to a specific application on a specific topic.
@@ -77,7 +77,7 @@ object interappbusMod {
       * @return {Promise.<void>}
       * @tutorial InterApplicationBus.send
       */
-    def send(destination: Identity, topic: String, message: js.Any): js.Promise[Unit] = js.native
+    def send(destination: Identity, topic: String, message: Any): js.Promise[Unit] = js.native
     
     /**
       * Subscribes to messages from the specified application on the specified topic.
@@ -94,7 +94,7 @@ object interappbusMod {
       * @return {Promise.<void>}
       * @tutorial InterApplicationBus.subscribe
       */
-    def subscribe(source: Identity, topic: String, listener: js.Any): js.Promise[Unit] = js.native
+    def subscribe(source: Identity, topic: String, listener: Any): js.Promise[Unit] = js.native
     
     /**
       * Unsubscribes to messages from the specified application on the specified topic.
@@ -104,6 +104,6 @@ object interappbusMod {
       * @return {Promise.<void>}
       * @tutorial InterApplicationBus.unsubscribe
       */
-    def unsubscribe(source: Identity, topic: String, listener: js.Any): js.Promise[Unit] = js.native
+    def unsubscribe(source: Identity, topic: String, listener: Any): js.Promise[Unit] = js.native
   }
 }

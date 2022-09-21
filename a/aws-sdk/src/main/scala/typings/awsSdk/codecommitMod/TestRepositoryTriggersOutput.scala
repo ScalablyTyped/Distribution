@@ -29,12 +29,12 @@ object TestRepositoryTriggersOutput {
     
     inline def setFailedExecutionsUndefined: Self = StObject.set(x, "failedExecutions", js.undefined)
     
-    inline def setFailedExecutionsVarargs(value: RepositoryTriggerExecutionFailure*): Self = StObject.set(x, "failedExecutions", js.Array(value :_*))
+    inline def setFailedExecutionsVarargs(value: RepositoryTriggerExecutionFailure*): Self = StObject.set(x, "failedExecutions", js.Array(value*))
     
     inline def setSuccessfulExecutions(value: RepositoryTriggerNameList): Self = StObject.set(x, "successfulExecutions", value.asInstanceOf[js.Any])
     
     inline def setSuccessfulExecutionsUndefined: Self = StObject.set(x, "successfulExecutions", js.undefined)
     
-    inline def setSuccessfulExecutionsVarargs(value: RepositoryTriggerName*): Self = StObject.set(x, "successfulExecutions", js.Array(value :_*))
+    inline def setSuccessfulExecutionsVarargs(value: RepositoryTriggerName*): Self = StObject.set(x, "successfulExecutions", js.Array(value*))
   }
 }

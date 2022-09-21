@@ -90,7 +90,7 @@ object typesMod {
       
       inline def setEntryUndefined: Self = StObject.set(x, "entry", js.undefined)
       
-      inline def setEntryVarargs(value: String*): Self = StObject.set(x, "entry", js.Array(value :_*))
+      inline def setEntryVarargs(value: String*): Self = StObject.set(x, "entry", js.Array(value*))
       
       inline def setEnv(value: String): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       

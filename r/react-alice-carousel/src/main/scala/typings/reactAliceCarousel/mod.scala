@@ -3,10 +3,11 @@ package typings.reactAliceCarousel
 import typings.react.mod.PureComponent
 import typings.react.mod.global.JSX.Element
 import typings.reactAliceCarousel.anon.ActiveIndex
-import typings.reactAliceCarousel.anon.IsNextSlideDisabled
 import typings.reactAliceCarousel.anon.ReadonlyProps
-import typings.reactAliceCarousel.anon.ReadonlyPropsReadonlychil
 import typings.reactAliceCarousel.anon.ReadonlyState
+import typings.reactAliceCarousel.reactAliceCarouselBooleans.`false`
+import typings.reactAliceCarousel.typesMod.EventObject
+import typings.reactAliceCarousel.typesMod.EventType
 import typings.reactAliceCarousel.typesMod.Props
 import typings.reactAliceCarousel.typesMod.SlideTo
 import typings.reactAliceCarousel.typesMod.State
@@ -20,8 +21,8 @@ object mod {
   
   @JSImport("react-alice-carousel", JSImport.Default)
   @js.native
-  class default protected () extends AliceCarousel {
-    def this(props: js.Any) = this()
+  open class default protected () extends AliceCarousel {
+    def this(props: Any) = this()
   }
   /* static members */
   object default {
@@ -36,11 +37,148 @@ object mod {
     inline def defaultProps_=(x: ActiveIndex): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("react-alice-carousel", "AnimationType")
   @js.native
-  trait AliceCarousel
-    extends PureComponent[Props, State, js.Any] {
+  object AnimationType extends StObject {
     
-    /* private */ var RootElement: js.Any = js.native
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.reactAliceCarousel.typesMod.AnimationType & String] = js.native
+    
+    /* "fadeout" */ val FADEOUT: typings.reactAliceCarousel.typesMod.AnimationType.FADEOUT & String = js.native
+    
+    /* "slide" */ val SLIDE: typings.reactAliceCarousel.typesMod.AnimationType.SLIDE & String = js.native
+  }
+  
+  @JSImport("react-alice-carousel", "AutoPlayStrategy")
+  @js.native
+  object AutoPlayStrategy extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.reactAliceCarousel.typesMod.AutoPlayStrategy & String] = js.native
+    
+    /* "action" */ val ACTION: typings.reactAliceCarousel.typesMod.AutoPlayStrategy.ACTION & String = js.native
+    
+    /* "all" */ val ALL: typings.reactAliceCarousel.typesMod.AutoPlayStrategy.ALL & String = js.native
+    
+    /* "default" */ val DEFAULT: typings.reactAliceCarousel.typesMod.AutoPlayStrategy.DEFAULT & String = js.native
+    
+    /* "none" */ val NONE: typings.reactAliceCarousel.typesMod.AutoPlayStrategy.NONE & String = js.native
+  }
+  
+  @JSImport("react-alice-carousel", "AutoplayDirection")
+  @js.native
+  object AutoplayDirection extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.reactAliceCarousel.typesMod.AutoplayDirection & String] = js.native
+    
+    /* "ltr" */ val LTR: typings.reactAliceCarousel.typesMod.AutoplayDirection.LTR & String = js.native
+    
+    /* "rtl" */ val RTL: typings.reactAliceCarousel.typesMod.AutoplayDirection.RTL & String = js.native
+  }
+  
+  @JSImport("react-alice-carousel", "Classnames")
+  @js.native
+  object Classnames extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.reactAliceCarousel.typesMod.Classnames & String] = js.native
+    
+    /* "animated animated-out fadeOut" */ val ANIMATED: typings.reactAliceCarousel.typesMod.Classnames.ANIMATED & String = js.native
+    
+    /* "alice-carousel__next-btn" */ val BUTTON_NEXT: typings.reactAliceCarousel.typesMod.Classnames.BUTTON_NEXT & String = js.native
+    
+    /* "alice-carousel__next-btn-item" */ val BUTTON_NEXT_ITEM: typings.reactAliceCarousel.typesMod.Classnames.BUTTON_NEXT_ITEM & String = js.native
+    
+    /* "alice-carousel__next-btn-wrapper" */ val BUTTON_NEXT_WRAPPER: typings.reactAliceCarousel.typesMod.Classnames.BUTTON_NEXT_WRAPPER & String = js.native
+    
+    /* "alice-carousel__prev-btn" */ val BUTTON_PREV: typings.reactAliceCarousel.typesMod.Classnames.BUTTON_PREV & String = js.native
+    
+    /* "alice-carousel__prev-btn-item" */ val BUTTON_PREV_ITEM: typings.reactAliceCarousel.typesMod.Classnames.BUTTON_PREV_ITEM & String = js.native
+    
+    /* "alice-carousel__prev-btn-wrapper" */ val BUTTON_PREV_WRAPPER: typings.reactAliceCarousel.typesMod.Classnames.BUTTON_PREV_WRAPPER & String = js.native
+    
+    /* "alice-carousel__dots" */ val DOTS: typings.reactAliceCarousel.typesMod.Classnames.DOTS & String = js.native
+    
+    /* "alice-carousel__dots-item" */ val DOTS_ITEM: typings.reactAliceCarousel.typesMod.Classnames.DOTS_ITEM & String = js.native
+    
+    /* "alice-carousel__play-btn" */ val PLAY_BTN: typings.reactAliceCarousel.typesMod.Classnames.PLAY_BTN & String = js.native
+    
+    /* "alice-carousel__play-btn-item" */ val PLAY_BTN_ITEM: typings.reactAliceCarousel.typesMod.Classnames.PLAY_BTN_ITEM & String = js.native
+    
+    /* "alice-carousel__play-btn-wrapper" */ val PLAY_BTN_WRAPPER: typings.reactAliceCarousel.typesMod.Classnames.PLAY_BTN_WRAPPER & String = js.native
+    
+    /* "alice-carousel" */ val ROOT: typings.reactAliceCarousel.typesMod.Classnames.ROOT & String = js.native
+    
+    /* "alice-carousel__slide-info" */ val SLIDE_INFO: typings.reactAliceCarousel.typesMod.Classnames.SLIDE_INFO & String = js.native
+    
+    /* "alice-carousel__slide-info-item" */ val SLIDE_INFO_ITEM: typings.reactAliceCarousel.typesMod.Classnames.SLIDE_INFO_ITEM & String = js.native
+    
+    /* "alice-carousel__stage" */ val STAGE: typings.reactAliceCarousel.typesMod.Classnames.STAGE & String = js.native
+    
+    /* "alice-carousel__stage-item" */ val STAGE_ITEM: typings.reactAliceCarousel.typesMod.Classnames.STAGE_ITEM & String = js.native
+    
+    /* "alice-carousel__wrapper" */ val WRAPPER: typings.reactAliceCarousel.typesMod.Classnames.WRAPPER & String = js.native
+  }
+  
+  @JSImport("react-alice-carousel", "ControlsStrategy")
+  @js.native
+  object ControlsStrategy extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.reactAliceCarousel.typesMod.ControlsStrategy & String] = js.native
+    
+    /* "alternate" */ val ALTERNATE: typings.reactAliceCarousel.typesMod.ControlsStrategy.ALTERNATE & String = js.native
+    
+    /* "default" */ val DEFAULT: typings.reactAliceCarousel.typesMod.ControlsStrategy.DEFAULT & String = js.native
+    
+    /* "responsive" */ val RESPONSIVE: typings.reactAliceCarousel.typesMod.ControlsStrategy.RESPONSIVE & String = js.native
+  }
+  
+  @JSImport("react-alice-carousel", "EventType")
+  @js.native
+  object EventType extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.reactAliceCarousel.typesMod.EventType & String] = js.native
+    
+    /* "action" */ val ACTION: typings.reactAliceCarousel.typesMod.EventType.ACTION & String = js.native
+    
+    /* "init" */ val INIT: typings.reactAliceCarousel.typesMod.EventType.INIT & String = js.native
+    
+    /* "resize" */ val RESIZE: typings.reactAliceCarousel.typesMod.EventType.RESIZE & String = js.native
+    
+    /* "update" */ val UPDATE: typings.reactAliceCarousel.typesMod.EventType.UPDATE & String = js.native
+  }
+  
+  @JSImport("react-alice-carousel", "Modifiers")
+  @js.native
+  object Modifiers extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.reactAliceCarousel.typesMod.Modifiers & String] = js.native
+    
+    /* "__active" */ val ACTIVE: typings.reactAliceCarousel.typesMod.Modifiers.ACTIVE & String = js.native
+    
+    /* "__cloned" */ val CLONED: typings.reactAliceCarousel.typesMod.Modifiers.CLONED & String = js.native
+    
+    /* "__custom" */ val CUSTOM: typings.reactAliceCarousel.typesMod.Modifiers.CUSTOM & String = js.native
+    
+    /* "__inactive" */ val INACTIVE: typings.reactAliceCarousel.typesMod.Modifiers.INACTIVE & String = js.native
+    
+    /* "__pause" */ val PAUSE: typings.reactAliceCarousel.typesMod.Modifiers.PAUSE & String = js.native
+    
+    /* "__separator" */ val SEPARATOR: typings.reactAliceCarousel.typesMod.Modifiers.SEPARATOR & String = js.native
+    
+    /* "__ssr" */ val SSR: typings.reactAliceCarousel.typesMod.Modifiers.SSR & String = js.native
+    
+    /* "__target" */ val TARGET: typings.reactAliceCarousel.typesMod.Modifiers.TARGET & String = js.native
+  }
+  
+  @js.native
+  trait AliceCarousel extends PureComponent[Props, State, Any] {
+    
+    def _addEventListeners(): Unit = js.native
     
     def _cancelTimeoutAnimations(): Unit = js.native
     
@@ -51,10 +189,13 @@ object mod {
     def _clearTouchmovePosition(): Unit = js.native
     
     def _handleBeforeSlideEnd(): js.Promise[Unit] = js.native
+    def _handleBeforeSlideEnd(eventType: EventType): js.Promise[Unit] = js.native
     
     def _handleBeforeTouchEnd(position: Double): Unit = js.native
     
-    def _handleDotClick(index: js.Any): Unit = js.native
+    def _handleDotClick(index: Any): Unit = js.native
+    
+    def _handleKeyboardEvents(e: Any): `false` | Unit | js.Promise[Unit] = js.native
     
     def _handleMouseEnter(): Unit = js.native
     
@@ -68,21 +209,25 @@ object mod {
     
     def _handleResize(e: Event): js.Promise[Unit] = js.native
     
-    /* private */ var _handleResizeDebounced: js.Any = js.native
+    /* private */ var _handleResizeDebounced: Any = js.native
     
     def _handleResized(): Unit = js.native
     
     def _handleSlideChange(): Unit = js.native
+    def _handleSlideChange(eventType: EventType): Unit = js.native
     
     def _handleSlideChanged(): js.Promise[Unit] = js.native
+    def _handleSlideChanged(eventType: EventType): js.Promise[Unit] = js.native
     
-    def _handleSlideTo(hasActiveIndexFadeoutAnimationIndexFadeoutAnimationPosition: SlideTo): js.Promise[Unit] = js.native
+    def _handleSlideTo(hasActiveIndexFadeoutAnimationIndexFadeoutAnimationPositionEventType: SlideTo): js.Promise[Unit] = js.native
     
-    def _handleTouchend(e: js.Any, hasDeltaX: EventData): Unit = js.native
+    def _handleTouchend(e: Any, hasDeltaX: EventData): Unit = js.native
     
-    def _handleTouchmove(e: js.Any, eventData: EventData): Unit = js.native
+    def _handleTouchmove(e: Any, eventData: EventData): Unit = js.native
     
-    def _handleUpdateSlidePosition(activeIndex: js.Any): js.Promise[Unit] = js.native
+    def _handleUpdateSlidePosition(activeIndex: Any): js.Promise[Unit] = js.native
+    
+    def _removeEventListeners(): Unit = js.native
     
     def _renderDotsNavigation(): Element = js.native
     
@@ -94,28 +239,30 @@ object mod {
     
     def _renderSlideInfo(): Element = js.native
     
-    def _renderStageItem(item: js.Any, i: Double): Element = js.native
+    def _renderStageItem(item: Any, i: Double): Element = js.native
     
     def _setAutoPlayInterval(): Unit = js.native
     
     def _setInitialState(): js.Promise[Unit] = js.native
     
-    def _setRootComponentRef(node: js.Any): js.Any = js.native
+    def _setRootComponentRef(node: Any): Any = js.native
     
-    def _setStageComponentRef(node: js.Any): js.Any = js.native
+    def _setStageComponentRef(node: Any): Any = js.native
     
     def _setTouchmovePosition(): Unit = js.native
     
     def _setupSwipeHandlers(): Unit = js.native
     
     def _updateComponent(): Unit = js.native
-    def _updateComponent(props: ReadonlyPropsReadonlychil): Unit = js.native
+    def _updateComponent(props: ReadonlyProps): Unit = js.native
+    
+    def _updateEventListeners(): Unit = js.native
     
     def _updateSwipeProps(): Unit = js.native
     
-    /* private */ var autoPlayTimeoutId: js.Any = js.native
+    /* private */ var autoPlayTimeoutId: Any = js.native
     
-    /* private */ var cancelTouchAnimations: js.Any = js.native
+    /* private */ var cancelTouchAnimations: Any = js.native
     
     def clearTouchendTimeout(): Unit = js.native
     
@@ -128,36 +275,40 @@ object mod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MAliceCarousel(): Unit = js.native
     
-    def eventObject: IsNextSlideDisabled = js.native
+    def eventObject: EventObject = js.native
     
-    /* private */ var hasUserAction: js.Any = js.native
+    /* private */ var hasUserAction: Any = js.native
     
-    /* private */ var isAnimationDisabled: js.Any = js.native
+    /* private */ var isAnimationDisabled: Any = js.native
     
     def isFadeoutAnimationAllowed: Boolean = js.native
     
-    /* private */ var isHovered: js.Any = js.native
+    /* private */ var isHovered: Any = js.native
     
-    /* private */ var isTouchMoveProcessStarted: js.Any = js.native
+    /* private */ var isTouchMoveProcessStarted: Any = js.native
     
-    /* private */ var rootComponentDimensions: js.Any = js.native
+    /* private */ var rootComponentDimensions: Any = js.native
     
-    /* private */ var slideEndTimeoutId: js.Any = js.native
+    /* private */ var rootElement: Any = js.native
     
-    def slideNext(e: js.Any): Unit = js.native
+    /* private */ var slideEndTimeoutId: Any = js.native
     
-    def slidePrev(e: js.Any): Unit = js.native
+    def slideNext(e: Any): Unit = js.native
+    
+    def slidePrev(e: Any): Unit = js.native
     
     def slideTo(): Unit = js.native
     def slideTo(activeIndex: Double): Unit = js.native
+    def slideTo(activeIndex: Double, eventType: EventType): Unit = js.native
+    def slideTo(activeIndex: Unit, eventType: EventType): Unit = js.native
     
-    /* private */ var stageComponent: js.Any = js.native
+    /* private */ var stageComponent: Any = js.native
     
-    /* private */ var startTouchmovePosition: js.Any = js.native
+    /* private */ var startTouchmovePosition: Any = js.native
     
-    /* private */ var swipeListener: js.Any = js.native
+    /* private */ var swipeListener: Any = js.native
     
-    /* private */ var touchEndTimeoutId: js.Any = js.native
+    /* private */ var touchEndTimeoutId: Any = js.native
     
     def touchmovePosition: Double = js.native
   }

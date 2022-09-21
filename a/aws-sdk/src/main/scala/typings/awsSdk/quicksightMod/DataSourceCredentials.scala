@@ -12,7 +12,7 @@ trait DataSourceCredentials extends StObject {
   var CopySourceArn: js.UndefOr[typings.awsSdk.quicksightMod.CopySourceArn] = js.undefined
   
   /**
-    * Credential pair. For more information, see CredentialPair.
+    * Credential pair. For more information, see  CredentialPair .
     */
   var CredentialPair: js.UndefOr[typings.awsSdk.quicksightMod.CredentialPair] = js.undefined
 }

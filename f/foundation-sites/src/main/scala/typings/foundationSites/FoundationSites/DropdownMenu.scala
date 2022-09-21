@@ -5,19 +5,4 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://get.foundation/sites/docs/dropdown-menu.html#javascript-reference
-trait DropdownMenu extends StObject {
-  
-  def destroy(): Unit
-}
-object DropdownMenu {
-  
-  inline def apply(destroy: () => Unit): DropdownMenu = {
-    val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy))
-    __obj.asInstanceOf[DropdownMenu]
-  }
-  
-  extension [Self <: DropdownMenu](x: Self) {
-    
-    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
-  }
-}
+trait DropdownMenu extends StObject

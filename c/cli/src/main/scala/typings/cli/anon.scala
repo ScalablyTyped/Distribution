@@ -14,7 +14,7 @@ object anon {
     
     var `2`: js.UndefOr[String] = js.undefined
     
-    var `3`: js.UndefOr[js.Any] = js.undefined
+    var `3`: js.UndefOr[Any] = js.undefined
   }
   object `0` {
     
@@ -35,7 +35,7 @@ object anon {
       
       inline def set2Undefined: Self = StObject.set(x, "2", js.undefined)
       
-      inline def set3(value: js.Any): Self = StObject.set(x, "3", value.asInstanceOf[js.Any])
+      inline def set3(value: Any): Self = StObject.set(x, "3", value.asInstanceOf[js.Any])
       
       inline def set3Undefined: Self = StObject.set(x, "3", js.undefined)
     }

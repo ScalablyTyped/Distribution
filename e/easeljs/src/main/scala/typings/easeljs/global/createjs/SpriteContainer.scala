@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.SpriteContainer")
 @js.native
-class SpriteContainer ()
+open class SpriteContainer ()
   extends StObject
      with typings.easeljs.createjs.SpriteContainer {
   def this(spriteSheet: typings.easeljs.createjs.SpriteSheet) = this()

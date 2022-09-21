@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AccountQuota extends StObject {
   
   /**
-    * The name of the AWS DMS quota for this AWS account.
+    * The name of the DMS quota for this Amazon Web Services account.
     */
   var AccountQuotaName: js.UndefOr[String] = js.undefined
   

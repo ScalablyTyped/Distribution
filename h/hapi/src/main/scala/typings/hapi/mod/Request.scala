@@ -6,7 +6,7 @@ import typings.hapi.anon.Req
 import typings.hapi.mod.Util.Dictionary
 import typings.hapi.mod.Util.HTTP_METHODS_PARTIAL
 import typings.hapi.mod.Util.HTTP_METHODS_PARTIAL_LOWERCASE
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Readable
 import typings.node.urlMod.URL_
 import typings.podium.mod.Podium
@@ -167,12 +167,12 @@ trait Request
     * An object where each key is the name assigned by a route pre-handler methods function. The values are the raw values provided to the continuation function as argument. For the wrapped response
     * object, use responses.
     */
-  val pre: Dictionary[js.Any] = js.native
+  val pre: Dictionary[Any] = js.native
   
   /**
     * Same as pre but represented as the response object created by the pre method.
     */
-  val preResponses: Dictionary[js.Any] = js.native
+  val preResponses: Dictionary[Any] = js.native
   
   /**
     * By default the object outputted from node's URL parse() method.
@@ -192,7 +192,7 @@ trait Request
     * override with a different response.
     * In case of an aborted request the status code will be set to `disconnectStatusCode`.
     */
-  var response: ResponseObject | ^[js.Any] = js.native
+  var response: ResponseObject | ^[Any] = js.native
   
   /**
     * The request route information object and method
@@ -233,7 +233,7 @@ trait Request
   /**
     * An object containing parsed HTTP state information (cookies) where each key is the cookie name and value is the matching cookie content after processing using any registered cookie definition.
     */
-  val state: Dictionary[js.Any] = js.native
+  val state: Dictionary[Any] = js.native
   
   /**
     * The parsed request URI.

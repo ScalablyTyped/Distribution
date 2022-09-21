@@ -36,7 +36,7 @@ object ClientConfig {
   
   inline def apply[Buckets](
     ghostStoreProvider: Bucket[
-      js.Any, 
+      Any, 
       /* import warning: importer.ImportType#apply Failed type conversion: Buckets[Name] */ js.Any, 
       scala.Nothing
     ] => GhostStore[
@@ -44,7 +44,7 @@ object ClientConfig {
     ],
     heartbeatInterval: Double,
     objectStoreProvider: Bucket[
-      js.Any, 
+      Any, 
       /* import warning: importer.ImportType#apply Failed type conversion: Buckets[Name] */ js.Any, 
       scala.Nothing
     ] => BucketStore[
@@ -61,7 +61,7 @@ object ClientConfig {
     
     inline def setGhostStoreProvider(
       value: Bucket[
-          js.Any, 
+          Any, 
           /* import warning: importer.ImportType#apply Failed type conversion: Buckets[Name] */ js.Any, 
           scala.Nothing
         ] => GhostStore[
@@ -73,7 +73,7 @@ object ClientConfig {
     
     inline def setObjectStoreProvider(
       value: Bucket[
-          js.Any, 
+          Any, 
           /* import warning: importer.ImportType#apply Failed type conversion: Buckets[Name] */ js.Any, 
           scala.Nothing
         ] => BucketStore[

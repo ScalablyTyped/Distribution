@@ -14,7 +14,7 @@ object slider {
       * @param value Number The initial value to set on the thumb.
       * @returns any The thumb
       */
-    var addThumb: js.UndefOr[js.Function1[/* value */ js.UndefOr[Double], js.Any]] = js.undefined
+    var addThumb: js.UndefOr[js.Function1[/* value */ js.UndefOr[Double], Any]] = js.undefined
     
     /** [Config Option] (Boolean) */
     @JSName("animate")
@@ -27,7 +27,7 @@ object slider {
     var constrainThumbs: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Number/Boolean) */
-    var decimalPrecision: js.UndefOr[js.Any] = js.undefined
+    var decimalPrecision: js.UndefOr[Any] = js.undefined
     
     /** [Property] (Boolean) */
     var dragging: js.UndefOr[Boolean] = js.undefined
@@ -37,12 +37,12 @@ object slider {
       * @returns any The current value of the slider at the given index, or an array of all thumb values if no index is given.
       */
     @JSName("getValue")
-    var getValue_IMulti: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], js.Any]] = js.undefined
+    var getValue_IMulti: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], Any]] = js.undefined
     
     /** [Method] Returns an array of values  one for the location of each thumb
       * @returns any The set of thumb values
       */
-    var getValues: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getValues: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Config Option] (Number) */
     var increment: js.UndefOr[Double] = js.undefined
@@ -78,7 +78,7 @@ object slider {
       * @param readOnly Object
       */
     @JSName("setReadOnly")
-    var setReadOnly_IMulti: js.UndefOr[js.Function1[/* readOnly */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setReadOnly_IMulti: js.UndefOr[js.Function1[/* readOnly */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Synchronizes thumbs position to the proper proportion of the total component width based on the current slider value  */
     var syncThumbs: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -87,10 +87,10 @@ object slider {
     var thumbs: js.UndefOr[Array] = js.undefined
     
     /** [Config Option] (Function) */
-    var tipText: js.UndefOr[js.Any] = js.undefined
+    var tipText: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Object/Boolean) */
-    var useTips: js.UndefOr[js.Any] = js.undefined
+    var useTips: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Number) */
     @JSName("value")
@@ -114,7 +114,7 @@ object slider {
     
     extension [Self <: IMulti](x: Self) {
       
-      inline def setAddThumb(value: /* value */ js.UndefOr[Double] => js.Any): Self = StObject.set(x, "addThumb", js.Any.fromFunction1(value))
+      inline def setAddThumb(value: /* value */ js.UndefOr[Double] => Any): Self = StObject.set(x, "addThumb", js.Any.fromFunction1(value))
       
       inline def setAddThumbUndefined: Self = StObject.set(x, "addThumb", js.undefined)
       
@@ -130,7 +130,7 @@ object slider {
       
       inline def setConstrainThumbsUndefined: Self = StObject.set(x, "constrainThumbs", js.undefined)
       
-      inline def setDecimalPrecision(value: js.Any): Self = StObject.set(x, "decimalPrecision", value.asInstanceOf[js.Any])
+      inline def setDecimalPrecision(value: Any): Self = StObject.set(x, "decimalPrecision", value.asInstanceOf[js.Any])
       
       inline def setDecimalPrecisionUndefined: Self = StObject.set(x, "decimalPrecision", js.undefined)
       
@@ -138,11 +138,11 @@ object slider {
       
       inline def setDraggingUndefined: Self = StObject.set(x, "dragging", js.undefined)
       
-      inline def setGetValue(value: /* index */ js.UndefOr[Double] => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
+      inline def setGetValue(value: /* index */ js.UndefOr[Double] => Any): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
       
       inline def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
       
-      inline def setGetValues(value: () => js.Any): Self = StObject.set(x, "getValues", js.Any.fromFunction0(value))
+      inline def setGetValues(value: () => Any): Self = StObject.set(x, "getValues", js.Any.fromFunction0(value))
       
       inline def setGetValuesUndefined: Self = StObject.set(x, "getValues", js.undefined)
       
@@ -178,7 +178,7 @@ object slider {
       
       inline def setSetMinValueUndefined: Self = StObject.set(x, "setMinValue", js.undefined)
       
-      inline def setSetReadOnly(value: /* readOnly */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setReadOnly", js.Any.fromFunction1(value))
+      inline def setSetReadOnly(value: /* readOnly */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setReadOnly", js.Any.fromFunction1(value))
       
       inline def setSetReadOnlyUndefined: Self = StObject.set(x, "setReadOnly", js.undefined)
       
@@ -190,11 +190,11 @@ object slider {
       
       inline def setThumbsUndefined: Self = StObject.set(x, "thumbs", js.undefined)
       
-      inline def setTipText(value: js.Any): Self = StObject.set(x, "tipText", value.asInstanceOf[js.Any])
+      inline def setTipText(value: Any): Self = StObject.set(x, "tipText", value.asInstanceOf[js.Any])
       
       inline def setTipTextUndefined: Self = StObject.set(x, "tipText", js.undefined)
       
-      inline def setUseTips(value: js.Any): Self = StObject.set(x, "useTips", value.asInstanceOf[js.Any])
+      inline def setUseTips(value: Any): Self = StObject.set(x, "useTips", value.asInstanceOf[js.Any])
       
       inline def setUseTipsUndefined: Self = StObject.set(x, "useTips", js.undefined)
       
@@ -224,7 +224,7 @@ object slider {
       * @param value Number The initial value to set on the thumb.
       * @returns any The thumb
       */
-    var addThumb: js.UndefOr[js.Function1[/* value */ js.UndefOr[Double], js.Any]] = js.undefined
+    var addThumb: js.UndefOr[js.Function1[/* value */ js.UndefOr[Double], Any]] = js.undefined
     
     /** [Config Option] (Boolean) */
     @JSName("animate")
@@ -237,7 +237,7 @@ object slider {
     var constrainThumbs: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Number/Boolean) */
-    var decimalPrecision: js.UndefOr[js.Any] = js.undefined
+    var decimalPrecision: js.UndefOr[Any] = js.undefined
     
     /** [Property] (Boolean) */
     var dragging: js.UndefOr[Boolean] = js.undefined
@@ -247,12 +247,12 @@ object slider {
       * @returns any The current value of the slider at the given index, or an array of all thumb values if no index is given.
       */
     @JSName("getValue")
-    var getValue_IMultiSlider: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], js.Any]] = js.undefined
+    var getValue_IMultiSlider: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], Any]] = js.undefined
     
     /** [Method] Returns an array of values  one for the location of each thumb
       * @returns any The set of thumb values
       */
-    var getValues: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getValues: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Config Option] (Number) */
     var increment: js.UndefOr[Double] = js.undefined
@@ -288,7 +288,7 @@ object slider {
       * @param readOnly Object
       */
     @JSName("setReadOnly")
-    var setReadOnly_IMultiSlider: js.UndefOr[js.Function1[/* readOnly */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setReadOnly_IMultiSlider: js.UndefOr[js.Function1[/* readOnly */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Synchronizes thumbs position to the proper proportion of the total component width based on the current slider value  */
     var syncThumbs: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -297,10 +297,10 @@ object slider {
     var thumbs: js.UndefOr[Array] = js.undefined
     
     /** [Config Option] (Function) */
-    var tipText: js.UndefOr[js.Any] = js.undefined
+    var tipText: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Object/Boolean) */
-    var useTips: js.UndefOr[js.Any] = js.undefined
+    var useTips: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Number) */
     @JSName("value")
@@ -324,7 +324,7 @@ object slider {
     
     extension [Self <: IMultiSlider](x: Self) {
       
-      inline def setAddThumb(value: /* value */ js.UndefOr[Double] => js.Any): Self = StObject.set(x, "addThumb", js.Any.fromFunction1(value))
+      inline def setAddThumb(value: /* value */ js.UndefOr[Double] => Any): Self = StObject.set(x, "addThumb", js.Any.fromFunction1(value))
       
       inline def setAddThumbUndefined: Self = StObject.set(x, "addThumb", js.undefined)
       
@@ -340,7 +340,7 @@ object slider {
       
       inline def setConstrainThumbsUndefined: Self = StObject.set(x, "constrainThumbs", js.undefined)
       
-      inline def setDecimalPrecision(value: js.Any): Self = StObject.set(x, "decimalPrecision", value.asInstanceOf[js.Any])
+      inline def setDecimalPrecision(value: Any): Self = StObject.set(x, "decimalPrecision", value.asInstanceOf[js.Any])
       
       inline def setDecimalPrecisionUndefined: Self = StObject.set(x, "decimalPrecision", js.undefined)
       
@@ -348,11 +348,11 @@ object slider {
       
       inline def setDraggingUndefined: Self = StObject.set(x, "dragging", js.undefined)
       
-      inline def setGetValue(value: /* index */ js.UndefOr[Double] => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
+      inline def setGetValue(value: /* index */ js.UndefOr[Double] => Any): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
       
       inline def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
       
-      inline def setGetValues(value: () => js.Any): Self = StObject.set(x, "getValues", js.Any.fromFunction0(value))
+      inline def setGetValues(value: () => Any): Self = StObject.set(x, "getValues", js.Any.fromFunction0(value))
       
       inline def setGetValuesUndefined: Self = StObject.set(x, "getValues", js.undefined)
       
@@ -388,7 +388,7 @@ object slider {
       
       inline def setSetMinValueUndefined: Self = StObject.set(x, "setMinValue", js.undefined)
       
-      inline def setSetReadOnly(value: /* readOnly */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setReadOnly", js.Any.fromFunction1(value))
+      inline def setSetReadOnly(value: /* readOnly */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setReadOnly", js.Any.fromFunction1(value))
       
       inline def setSetReadOnlyUndefined: Self = StObject.set(x, "setReadOnly", js.undefined)
       
@@ -400,11 +400,11 @@ object slider {
       
       inline def setThumbsUndefined: Self = StObject.set(x, "thumbs", js.undefined)
       
-      inline def setTipText(value: js.Any): Self = StObject.set(x, "tipText", value.asInstanceOf[js.Any])
+      inline def setTipText(value: Any): Self = StObject.set(x, "tipText", value.asInstanceOf[js.Any])
       
       inline def setTipTextUndefined: Self = StObject.set(x, "tipText", js.undefined)
       
-      inline def setUseTips(value: js.Any): Self = StObject.set(x, "useTips", value.asInstanceOf[js.Any])
+      inline def setUseTips(value: Any): Self = StObject.set(x, "useTips", value.asInstanceOf[js.Any])
       
       inline def setUseTipsUndefined: Self = StObject.set(x, "useTips", js.undefined)
       
@@ -434,7 +434,7 @@ object slider {
       * @returns any The current value of the slider
       */
     @JSName("getValue")
-    var getValue_ISingle: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getValue_ISingle: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Programmatically sets the value of the Slider
       * @param value Number The value to set the slider to. (This will be constrained within minValue and maxValue)
@@ -454,7 +454,7 @@ object slider {
     
     extension [Self <: ISingle](x: Self) {
       
-      inline def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+      inline def setGetValue(value: () => Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
       
       inline def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
       
@@ -472,7 +472,7 @@ object slider {
       * @returns any The current value of the slider
       */
     @JSName("getValue")
-    var getValue_ISingleSlider: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getValue_ISingleSlider: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Programmatically sets the value of the Slider
       * @param value Number The value to set the slider to. (This will be constrained within minValue and maxValue)
@@ -492,7 +492,7 @@ object slider {
     
     extension [Self <: ISingleSlider](x: Self) {
       
-      inline def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+      inline def setGetValue(value: () => Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
       
       inline def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
       
@@ -510,7 +510,7 @@ object slider {
       * @returns any The current value of the slider
       */
     @JSName("getValue")
-    var getValue_ISlider: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getValue_ISlider: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Programmatically sets the value of the Slider
       * @param value Number The value to set the slider to. (This will be constrained within minValue and maxValue)
@@ -530,7 +530,7 @@ object slider {
     
     extension [Self <: typings.extjs.Ext.slider.ISlider](x: Self) {
       
-      inline def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+      inline def setGetValue(value: () => Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
       
       inline def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
       

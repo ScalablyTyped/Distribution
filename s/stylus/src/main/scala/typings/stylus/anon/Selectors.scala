@@ -34,7 +34,7 @@ object Selectors {
     
     inline def setSelectors(value: js.Array[Selector]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
     
-    inline def setSelectorsVarargs(value: Selector*): Self = StObject.set(x, "selectors", js.Array(value :_*))
+    inline def setSelectorsVarargs(value: Selector*): Self = StObject.set(x, "selectors", js.Array(value*))
     
     inline def set__type(value: String): Self = StObject.set(x, "__type", value.asInstanceOf[js.Any])
   }

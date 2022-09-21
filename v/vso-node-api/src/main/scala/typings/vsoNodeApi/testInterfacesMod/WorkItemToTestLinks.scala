@@ -21,7 +21,7 @@ object WorkItemToTestLinks {
     
     inline def setTests(value: js.Array[TestMethod]): Self = StObject.set(x, "tests", value.asInstanceOf[js.Any])
     
-    inline def setTestsVarargs(value: TestMethod*): Self = StObject.set(x, "tests", js.Array(value :_*))
+    inline def setTestsVarargs(value: TestMethod*): Self = StObject.set(x, "tests", js.Array(value*))
     
     inline def setWorkItem(value: WorkItemReference): Self = StObject.set(x, "workItem", value.asInstanceOf[js.Any])
   }

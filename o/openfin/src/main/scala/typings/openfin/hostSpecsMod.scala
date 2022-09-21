@@ -81,7 +81,7 @@ object hostSpecsMod {
       
       inline def setCpus(value: js.Array[CpuInfo]): Self = StObject.set(x, "cpus", value.asInstanceOf[js.Any])
       
-      inline def setCpusVarargs(value: CpuInfo*): Self = StObject.set(x, "cpus", js.Array(value :_*))
+      inline def setCpusVarargs(value: CpuInfo*): Self = StObject.set(x, "cpus", js.Array(value*))
       
       inline def setGpu(value: GpuInfo): Self = StObject.set(x, "gpu", value.asInstanceOf[js.Any])
       

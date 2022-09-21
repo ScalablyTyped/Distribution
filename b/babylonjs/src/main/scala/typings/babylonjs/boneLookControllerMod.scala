@@ -1,10 +1,10 @@
 package typings.babylonjs
 
-import typings.babylonjs.abstractMeshMod.AbstractMesh
 import typings.babylonjs.anon.AdjustPitch
 import typings.babylonjs.boneMod.Bone
 import typings.babylonjs.mathAxisMod.Space
 import typings.babylonjs.mathVectorMod.Vector3
+import typings.babylonjs.transformNodeMod.TransformNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,10 +13,10 @@ object boneLookControllerMod {
   
   @JSImport("babylonjs/Bones/boneLookController", "BoneLookController")
   @js.native
-  class BoneLookController protected () extends StObject {
+  open class BoneLookController protected () extends StObject {
     /**
       * Create a BoneLookController
-      * @param mesh the mesh that the bone belongs to
+      * @param mesh the TransformNode that the bone belongs to
       * @param bone the bone that will be looking to the target
       * @param target the target Vector3 to look at
       * @param options optional settings:
@@ -32,51 +32,65 @@ object boneLookControllerMod {
       * * adjustYaw: used to make an adjustment to the yaw of the bone
       * * adjustPitch: used to make an adjustment to the pitch of the bone
       * * adjustRoll: used to make an adjustment to the roll of the bone
+      * @param options.maxYaw
+      * @param options.minYaw
+      * @param options.maxPitch
+      * @param options.minPitch
+      * @param options.slerpAmount
+      * @param options.upAxis
+      * @param options.upAxisSpace
+      * @param options.yawAxis
+      * @param options.pitchAxis
+      * @param options.adjustYaw
+      * @param options.adjustPitch
+      * @param options.adjustRoll
       **/
-    def this(mesh: AbstractMesh, bone: Bone, target: Vector3) = this()
-    def this(mesh: AbstractMesh, bone: Bone, target: Vector3, options: AdjustPitch) = this()
+    def this(mesh: TransformNode, bone: Bone, target: Vector3) = this()
+    def this(mesh: TransformNode, bone: Bone, target: Vector3, options: AdjustPitch) = this()
     
-    /* private */ var _boneQuat: js.Any = js.native
+    /* private */ var _boneQuat: Any = js.native
     
-    /* private */ var _firstFrameSkipped: js.Any = js.native
+    /* private */ var _firstFrameSkipped: Any = js.native
     
-    /* private */ var _fowardAxis: js.Any = js.native
+    /* private */ var _fowardAxis: Any = js.native
     
-    /* private */ var _getAngleBetween: js.Any = js.native
+    /* private */ var _getAngleBetween: Any = js.native
     
-    /* private */ var _getAngleDiff: js.Any = js.native
+    /* private */ var _getAngleDiff: Any = js.native
     
-    /* private */ var _isAngleBetween: js.Any = js.native
+    /* private */ var _isAngleBetween: Any = js.native
     
-    /* private */ var _maxPitch: js.Any = js.native
+    /* private */ var _maxPitch: Any = js.native
     
-    /* private */ var _maxPitchTan: js.Any = js.native
+    /* private */ var _maxPitchTan: Any = js.native
     
-    /* private */ var _maxYaw: js.Any = js.native
+    /* private */ var _maxYaw: Any = js.native
     
-    /* private */ var _maxYawCos: js.Any = js.native
+    /* private */ var _maxYawCos: Any = js.native
     
-    /* private */ var _maxYawSin: js.Any = js.native
+    /* private */ var _maxYawSin: Any = js.native
     
-    /* private */ var _midYawConstraint: js.Any = js.native
+    /* private */ var _midYawConstraint: Any = js.native
     
-    /* private */ var _minPitch: js.Any = js.native
+    /* private */ var _minPitch: Any = js.native
     
-    /* private */ var _minPitchTan: js.Any = js.native
+    /* private */ var _minPitchTan: Any = js.native
     
-    /* private */ var _minYaw: js.Any = js.native
+    /* private */ var _minYaw: Any = js.native
     
-    /* private */ var _minYawCos: js.Any = js.native
+    /* private */ var _minYawCos: Any = js.native
     
-    /* private */ var _minYawSin: js.Any = js.native
+    /* private */ var _minYawSin: Any = js.native
     
-    /* private */ var _slerping: js.Any = js.native
+    /* private */ var _slerping: Any = js.native
     
-    /* private */ var _transformYawPitch: js.Any = js.native
+    /* private */ var _transformYawPitch: Any = js.native
     
-    /* private */ var _transformYawPitchInv: js.Any = js.native
+    /* private */ var _transformYawPitchInv: Any = js.native
     
-    /* private */ var _yawRange: js.Any = js.native
+    /* private */ var _updateLinkedTransformRotation: Any = js.native
+    
+    /* private */ var _yawRange: Any = js.native
     
     /**
       * Used to make an adjustment to the pitch of the bone
@@ -111,9 +125,10 @@ object boneLookControllerMod {
     def maxYaw_=(value: Double): Unit = js.native
     
     /**
-      * The mesh that the bone is attached to
+      * The TransformNode that the bone is attached to
+      * Name kept as mesh for back compatibility
       */
-    var mesh: AbstractMesh = js.native
+    var mesh: TransformNode = js.native
     
     /**
       * Gets or sets the minimum pitch angle that the bone can look to
@@ -159,19 +174,19 @@ object boneLookControllerMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("babylonjs/Bones/boneLookController", "BoneLookController._tmpMats")
+    @JSImport("babylonjs/Bones/boneLookController", "BoneLookController._TmpMats")
     @js.native
-    def _tmpMats: js.Any = js.native
-    inline def _tmpMats_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpMats")(x.asInstanceOf[js.Any])
+    def _TmpMats: Any = js.native
+    inline def _TmpMats_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TmpMats")(x.asInstanceOf[js.Any])
     
-    @JSImport("babylonjs/Bones/boneLookController", "BoneLookController._tmpQuat")
+    @JSImport("babylonjs/Bones/boneLookController", "BoneLookController._TmpQuat")
     @js.native
-    def _tmpQuat: js.Any = js.native
-    inline def _tmpQuat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpQuat")(x.asInstanceOf[js.Any])
+    def _TmpQuat: Any = js.native
+    inline def _TmpQuat_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TmpQuat")(x.asInstanceOf[js.Any])
     
-    @JSImport("babylonjs/Bones/boneLookController", "BoneLookController._tmpVecs")
+    @JSImport("babylonjs/Bones/boneLookController", "BoneLookController._TmpVecs")
     @js.native
-    def _tmpVecs: js.Any = js.native
-    inline def _tmpVecs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpVecs")(x.asInstanceOf[js.Any])
+    def _TmpVecs: Any = js.native
+    inline def _TmpVecs_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TmpVecs")(x.asInstanceOf[js.Any])
   }
 }

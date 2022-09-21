@@ -9,11 +9,11 @@ trait ThemeProviderProps extends StObject {
   
   var children: ReactNode
   
-  var theme: js.Any
+  var theme: Any
 }
 object ThemeProviderProps {
   
-  inline def apply(theme: js.Any): ThemeProviderProps = {
+  inline def apply(theme: Any): ThemeProviderProps = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThemeProviderProps]
   }
@@ -24,6 +24,6 @@ object ThemeProviderProps {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setTheme(value: js.Any): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: Any): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
   }
 }

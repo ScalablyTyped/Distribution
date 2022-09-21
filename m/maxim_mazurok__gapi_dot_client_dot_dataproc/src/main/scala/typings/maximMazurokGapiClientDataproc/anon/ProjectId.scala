@@ -1,6 +1,5 @@
 package typings.maximMazurokGapiClientDataproc.anon
 
-import typings.maximMazurokGapiClientDataproc.gapi.client.dataproc.Cluster
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,6 +12,9 @@ trait ProjectId extends StObject {
   
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.undefined
+  
+  /** Optional. Failure action when primary worker creation fails. */
+  var actionOnFailedPrimaryWorkers: js.UndefOr[String] = js.undefined
   
   /** Data format for response. */
   var alt: js.UndefOr[String] = js.undefined
@@ -42,15 +44,13 @@ trait ProjectId extends StObject {
   var region: String
   
   /**
-    * Optional. A unique id used to identify the request. If the server receives two CreateClusterRequest requests with the same id, then the second request will be ignored and the
-    * first google.longrunning.Operation created and stored in the backend is returned.It is recommended to always set this value to a UUID
-    * (https://en.wikipedia.org/wiki/Universally_unique_identifier).The id must contain only letters (a-z, A-Z), numbers (0-9), underscores (_), and hyphens (-). The maximum length is
+    * Optional. A unique ID used to identify the request. If the server receives two CreateClusterRequest
+    * (https://cloud.google.com/dataproc/docs/reference/rpc/google.cloud.dataproc.v1#google.cloud.dataproc.v1.CreateClusterRequest)s with the same id, then the second request will be
+    * ignored and the first google.longrunning.Operation created and stored in the backend is returned.It is recommended to always set this value to a UUID
+    * (https://en.wikipedia.org/wiki/Universally_unique_identifier).The ID must contain only letters (a-z, A-Z), numbers (0-9), underscores (_), and hyphens (-). The maximum length is
     * 40 characters.
     */
   var requestId: js.UndefOr[String] = js.undefined
-  
-  /** Request body */
-  var resource: Cluster
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -60,8 +60,8 @@ trait ProjectId extends StObject {
 }
 object ProjectId {
   
-  inline def apply(projectId: String, region: String, resource: Cluster): ProjectId = {
-    val __obj = js.Dynamic.literal(projectId = projectId.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
+  inline def apply(projectId: String, region: String): ProjectId = {
+    val __obj = js.Dynamic.literal(projectId = projectId.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectId]
   }
   
@@ -74,6 +74,10 @@ object ProjectId {
     inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
     
     inline def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
+    
+    inline def setActionOnFailedPrimaryWorkers(value: String): Self = StObject.set(x, "actionOnFailedPrimaryWorkers", value.asInstanceOf[js.Any])
+    
+    inline def setActionOnFailedPrimaryWorkersUndefined: Self = StObject.set(x, "actionOnFailedPrimaryWorkers", js.undefined)
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
@@ -110,8 +114,6 @@ object ProjectId {
     inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
     inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
-    
-    inline def setResource(value: Cluster): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

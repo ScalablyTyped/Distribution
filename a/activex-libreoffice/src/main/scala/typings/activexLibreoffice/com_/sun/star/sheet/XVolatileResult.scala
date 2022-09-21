@@ -26,7 +26,7 @@ object XVolatileResult {
   inline def apply(
     acquire: () => Unit,
     addResultListener: XResultListener => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeResultListener: XResultListener => Unit
   ): XVolatileResult = {

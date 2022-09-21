@@ -10,13 +10,13 @@ object anon {
     
     var explanation: String
     
-    var fn: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof WriteGood */ js.Any
+    var fn: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof WriteGood */ Any
   }
   object Explanation {
     
     inline def apply(
       explanation: String,
-      fn: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof WriteGood */ js.Any
+      fn: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof WriteGood */ Any
     ): Explanation = {
       val __obj = js.Dynamic.literal(explanation = explanation.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
       __obj.asInstanceOf[Explanation]
@@ -26,7 +26,7 @@ object anon {
       
       inline def setExplanation(value: String): Self = StObject.set(x, "explanation", value.asInstanceOf[js.Any])
       
-      inline def setFn(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof WriteGood */ js.Any): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+      inline def setFn(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof WriteGood */ Any): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     }
   }
 }

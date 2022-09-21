@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientColorEdit")
 @js.native
-class ASPxClientColorEdit ()
+open class ASPxClientColorEdit ()
   extends StObject
      with typings.devexpressWeb.ASPxClientColorEdit {
   
@@ -46,7 +46,7 @@ class ASPxClientColorEdit ()
   var CloseUp: typings.devexpressWeb.ASPxClientEvent[ASPxClientEventHandler[typings.devexpressWeb.ASPxClientDropDownEditBase]] = js.native
   
   /**
-    * Fires after the selected color has been changed within the color editor via end-user interaction.
+    * Occurs on the client after a user changes the selected color in the color editor.
     */
   /* CompleteClass */
   var ColorChanged: typings.devexpressWeb.ASPxClientEvent[ASPxClientProcessingModeEventHandler[typings.devexpressWeb.ASPxClientColorEdit]] = js.native
@@ -68,7 +68,7 @@ class ASPxClientColorEdit ()
     * @param number A button index.
     */
   /* CompleteClass */
-  override def GetButton(number: Double): js.Any = js.native
+  override def GetButton(number: Double): Any = js.native
   
   /**
     * Returns a value specifying whether a button is displayed. true, if the button visible; otherwise, false.
@@ -121,10 +121,10 @@ class ASPxClientColorEdit ()
   override def GetHeight(): Double = js.native
   
   /**
-    * Returns an HTML element that represents the control's input element.
+    * Returns an HTML element that is the control's input element.
     */
   /* CompleteClass */
-  override def GetInputElement(): js.Any = js.native
+  override def GetInputElement(): Any = js.native
   
   /**
     * Gets a value that indicates whether the editor's value passes validation.
@@ -136,13 +136,13 @@ class ASPxClientColorEdit ()
     * Returns an HTML element that is the root of the control's hierarchy.
     */
   /* CompleteClass */
-  override def GetMainElement(): js.Any = js.native
+  override def GetMainElement(): Any = js.native
   
   /**
     * Returns a client instance of the control that is the parent for a specified control.
     */
   /* CompleteClass */
-  override def GetParentControl(): js.Any = js.native
+  override def GetParentControl(): Any = js.native
   
   /**
     * Returns a value indicating whether the editor's state is read-only on the client-side.
@@ -160,7 +160,7 @@ class ASPxClientColorEdit ()
     * Returns the editor's value.
     */
   /* CompleteClass */
-  override def GetValue(): js.Any = js.native
+  override def GetValue(): Any = js.native
   
   /**
     * Returns a value specifying whether a control is displayed.
@@ -339,7 +339,7 @@ class ASPxClientColorEdit ()
     * @param value An object representing the data to be assigned to the editor's edit value.
     */
   /* CompleteClass */
-  override def SetValue(value: js.Any): Unit = js.native
+  override def SetValue(value: Any): Unit = js.native
   
   /**
     * Specifies whether a control is displayed.
@@ -362,7 +362,7 @@ class ASPxClientColorEdit ()
   override def ShowDropDown(): Unit = js.native
   
   /**
-    * Fires on the client side when the editor's text is changed and focus moves out of the editor by end-user interactions.
+    * Occurs on the client when a user changes the editor's text and the editor loses focus.
     */
   /* CompleteClass */
   var TextChanged: typings.devexpressWeb.ASPxClientEvent[ASPxClientProcessingModeEventHandler[typings.devexpressWeb.ASPxClientTextEdit]] = js.native
@@ -374,7 +374,7 @@ class ASPxClientColorEdit ()
   var TextChanged_ASPxClientColorEdit: typings.devexpressWeb.ASPxClientEvent[ASPxClientProcessingModeEventHandler[typings.devexpressWeb.ASPxClientColorEdit]] = js.native
   
   /**
-    * Fires on the client side when the editor's input value is changed before the focus moves out of the editor by end-user interactions.
+    * Fires on the client each time a user changes an editor's input value.
     */
   /* CompleteClass */
   var UserInput: typings.devexpressWeb.ASPxClientEvent[ASPxClientEventHandler[typings.devexpressWeb.ASPxClientTextEdit]] = js.native
@@ -414,5 +414,5 @@ object ASPxClientColorEdit {
     * @param obj The client object to be type cast.
     */
   /* static member */
-  inline def Cast(obj: js.Any): typings.devexpressWeb.ASPxClientColorEdit = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ASPxClientColorEdit]
+  inline def Cast(obj: Any): typings.devexpressWeb.ASPxClientColorEdit = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ASPxClientColorEdit]
 }

@@ -61,7 +61,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("parse", "Error")
 @js.native
-class Error protected ()
+open class Error protected ()
   extends typings.parse.mod.global.Parse.Error {
   def this(code: ErrorCode, message: String) = this()
 }

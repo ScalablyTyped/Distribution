@@ -1,10 +1,12 @@
 package typings.babylonjs
 
+import typings.babylonjs.drawWrapperMod.DrawWrapper
 import typings.babylonjs.effectMod.Effect
-import typings.babylonjs.internalTextureMod.InternalTexture
 import typings.babylonjs.mathViewportMod.Viewport
 import typings.babylonjs.observableMod.Observable
-import typings.babylonjs.renderTargetTextureMod.RenderTargetTexture
+import typings.babylonjs.renderTargetWrapperMod.IRenderTargetTexture
+import typings.babylonjs.renderTargetWrapperMod.RenderTargetWrapper
+import typings.babylonjs.shaderLanguageMod.ShaderLanguage
 import typings.babylonjs.thinEngineMod.ThinEngine
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
@@ -15,20 +17,26 @@ object effectRendererMod {
   
   @JSImport("babylonjs/Materials/effectRenderer", "EffectRenderer")
   @js.native
-  class EffectRenderer protected () extends StObject {
+  open class EffectRenderer protected () extends StObject {
     /**
       * Creates an effect renderer
-      * @param engine the engine to use for rendering
+      * @param _engine the engine to use for rendering
       * @param options defines the options of the effect renderer
       */
-    def this(engine: ThinEngine) = this()
-    def this(engine: ThinEngine, options: IEffectRendererOptions) = this()
+    def this(_engine: ThinEngine) = this()
+    def this(_engine: ThinEngine, options: IEffectRendererOptions) = this()
     
-    /* private */ var _fullscreenViewport: js.Any = js.native
+    /* private */ var _engine: Any = js.native
     
-    /* private */ var _indexBuffer: js.Any = js.native
+    /* private */ var _fullscreenViewport: Any = js.native
     
-    /* private */ var _vertexBuffers: js.Any = js.native
+    /* private */ var _indexBuffer: Any = js.native
+    
+    /* private */ var _isRenderTargetTexture: Any = js.native
+    
+    /* private */ var _onContextRestoredObserver: Any = js.native
+    
+    /* private */ var _vertexBuffers: Any = js.native
     
     /**
       * Sets the current effect wrapper to use during draw.
@@ -54,17 +62,13 @@ object effectRendererMod {
       */
     def draw(): Unit = js.native
     
-    /* private */ var engine: js.Any = js.native
-    
-    /* private */ var isRenderTargetTexture: js.Any = js.native
-    
     /**
       * renders one or more effects to a specified texture
       * @param effectWrapper the effect to renderer
       * @param outputTexture texture to draw to, if null it will render to the screen.
       */
     def render(effectWrapper: EffectWrapper): Unit = js.native
-    def render(effectWrapper: EffectWrapper, outputTexture: Nullable[InternalTexture | RenderTargetTexture]): Unit = js.native
+    def render(effectWrapper: EffectWrapper, outputTexture: Nullable[RenderTargetWrapper | IRenderTargetTexture]): Unit = js.native
     
     /**
       * Restores engine states
@@ -87,18 +91,23 @@ object effectRendererMod {
     
     @JSImport("babylonjs/Materials/effectRenderer", "EffectRenderer._DefaultOptions")
     @js.native
-    def _DefaultOptions: js.Any = js.native
-    inline def _DefaultOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultOptions")(x.asInstanceOf[js.Any])
+    def _DefaultOptions: Any = js.native
+    inline def _DefaultOptions_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultOptions")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("babylonjs/Materials/effectRenderer", "EffectWrapper")
   @js.native
-  class EffectWrapper protected () extends StObject {
+  open class EffectWrapper protected () extends StObject {
     /**
       * Creates an effect to be renderer
       * @param creationOptions options to create the effect
       */
     def this(creationOptions: EffectWrapperCreationOptions) = this()
+    
+    /** @hidden */
+    var _drawWrapper: DrawWrapper = js.native
+    
+    /* private */ var _onContextRestoredObserver: Any = js.native
     
     /**
       * Disposes of the effect wrapper
@@ -108,7 +117,8 @@ object effectRendererMod {
     /**
       * The underlying effect
       */
-    var effect: Effect = js.native
+    def effect: Effect = js.native
+    def effect_=(effect: Effect): Unit = js.native
     
     /**
       * Event that is fired right before the effect is drawn (should be used to update uniforms)
@@ -157,6 +167,11 @@ object effectRendererMod {
     var samplerNames: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
+      * The language the shader is written in (default: GLSL)
+      */
+    var shaderLanguage: js.UndefOr[ShaderLanguage] = js.undefined
+    
+    /**
       * Uniforms to use in the shader
       */
     var uniformNames: js.UndefOr[js.Array[String]] = js.undefined
@@ -184,13 +199,13 @@ object effectRendererMod {
       
       inline def setAttributeNamesUndefined: Self = StObject.set(x, "attributeNames", js.undefined)
       
-      inline def setAttributeNamesVarargs(value: String*): Self = StObject.set(x, "attributeNames", js.Array(value :_*))
+      inline def setAttributeNamesVarargs(value: String*): Self = StObject.set(x, "attributeNames", js.Array(value*))
       
       inline def setDefines(value: js.Array[String]): Self = StObject.set(x, "defines", value.asInstanceOf[js.Any])
       
       inline def setDefinesUndefined: Self = StObject.set(x, "defines", js.undefined)
       
-      inline def setDefinesVarargs(value: String*): Self = StObject.set(x, "defines", js.Array(value :_*))
+      inline def setDefinesVarargs(value: String*): Self = StObject.set(x, "defines", js.Array(value*))
       
       inline def setEngine(value: ThinEngine): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
       
@@ -210,13 +225,17 @@ object effectRendererMod {
       
       inline def setSamplerNamesUndefined: Self = StObject.set(x, "samplerNames", js.undefined)
       
-      inline def setSamplerNamesVarargs(value: String*): Self = StObject.set(x, "samplerNames", js.Array(value :_*))
+      inline def setSamplerNamesVarargs(value: String*): Self = StObject.set(x, "samplerNames", js.Array(value*))
+      
+      inline def setShaderLanguage(value: ShaderLanguage): Self = StObject.set(x, "shaderLanguage", value.asInstanceOf[js.Any])
+      
+      inline def setShaderLanguageUndefined: Self = StObject.set(x, "shaderLanguage", js.undefined)
       
       inline def setUniformNames(value: js.Array[String]): Self = StObject.set(x, "uniformNames", value.asInstanceOf[js.Any])
       
       inline def setUniformNamesUndefined: Self = StObject.set(x, "uniformNames", js.undefined)
       
-      inline def setUniformNamesVarargs(value: String*): Self = StObject.set(x, "uniformNames", js.Array(value :_*))
+      inline def setUniformNamesVarargs(value: String*): Self = StObject.set(x, "uniformNames", js.Array(value*))
       
       inline def setUseShaderStore(value: Boolean): Self = StObject.set(x, "useShaderStore", value.asInstanceOf[js.Any])
       
@@ -253,13 +272,13 @@ object effectRendererMod {
       
       inline def setIndicesUndefined: Self = StObject.set(x, "indices", js.undefined)
       
-      inline def setIndicesVarargs(value: Double*): Self = StObject.set(x, "indices", js.Array(value :_*))
+      inline def setIndicesVarargs(value: Double*): Self = StObject.set(x, "indices", js.Array(value*))
       
       inline def setPositions(value: js.Array[Double]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
       
       inline def setPositionsUndefined: Self = StObject.set(x, "positions", js.undefined)
       
-      inline def setPositionsVarargs(value: Double*): Self = StObject.set(x, "positions", js.Array(value :_*))
+      inline def setPositionsVarargs(value: Double*): Self = StObject.set(x, "positions", js.Array(value*))
     }
   }
 }

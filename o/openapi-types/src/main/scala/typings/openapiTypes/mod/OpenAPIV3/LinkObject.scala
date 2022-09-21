@@ -13,9 +13,9 @@ trait LinkObject extends StObject {
   
   var operationRef: js.UndefOr[String] = js.undefined
   
-  var parameters: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var parameters: js.UndefOr[StringDictionary[Any]] = js.undefined
   
-  var requestBody: js.UndefOr[js.Any] = js.undefined
+  var requestBody: js.UndefOr[Any] = js.undefined
   
   var server: js.UndefOr[ServerObject] = js.undefined
 }
@@ -40,11 +40,11 @@ object LinkObject {
     
     inline def setOperationRefUndefined: Self = StObject.set(x, "operationRef", js.undefined)
     
-    inline def setParameters(value: StringDictionary[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: StringDictionary[Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    inline def setRequestBody(value: js.Any): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: Any): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
     inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@octokit/plugin-request-log" : "1.0.2"
+      "@octokit/plugin-request-log" : "1.0.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@octokit/plugin-request-log" : "1.0.2"
+      "@octokit/plugin-request-log" : "1.0.4"
     }
   ],
   "compile-devDependencies" : [

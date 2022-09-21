@@ -1,7 +1,7 @@
 
 # Scala.js typings for blueprintjs__datetime
 
-Typings are for version 3.20.0
+Typings are for version 4.3.12
 
 ## Library description:
 Components for interacting with dates and times
@@ -10,10 +10,10 @@ Components for interacting with dates and times
 | ------------------ | :-------------: |
 | Full name          | @blueprintjs/datetime |
 | Keywords           | palantir, blueprint, theme, react, day, picker, date, time |
-| # releases         | 34 |
-| # dependents       | 50 |
-| # downloads        | 1842964 |
-| # stars            | 1 |
+| # releases         | 87 |
+| # dependents       | 0.0 |
+| # downloads        | 203811.0 |
+| # stars            | 19272.0 |
 
 ## Links
 - [Homepage](https://github.com/palantir/blueprint#readme)

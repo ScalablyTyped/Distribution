@@ -41,18 +41,18 @@ object XGroups {
     addEventListener: XEventListener => Unit,
     createGroup: () => XGroup,
     dispose: () => Unit,
-    getByIndex: Double => js.Any,
+    getByIndex: Double => Any,
     getCount: () => Double,
     getElementType: () => `type`,
     getParent: () => XInterface,
     hasElements: () => Boolean,
-    insertByIndex: (Double, js.Any) => Unit,
-    queryInterface: `type` => js.Any,
+    insertByIndex: (Double, Any) => Unit,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeByIndex: Double => Unit,
     removeContainerListener: XContainerListener => Unit,
     removeEventListener: XEventListener => Unit,
-    replaceByIndex: (Double, js.Any) => Unit,
+    replaceByIndex: (Double, Any) => Unit,
     setParent: XInterface => Unit
   ): XGroups = {
     val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], ElementType = ElementType.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], ReportDefinition = ReportDefinition.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addContainerListener = js.Any.fromFunction1(addContainerListener), addEventListener = js.Any.fromFunction1(addEventListener), createGroup = js.Any.fromFunction0(createGroup), dispose = js.Any.fromFunction0(dispose), getByIndex = js.Any.fromFunction1(getByIndex), getCount = js.Any.fromFunction0(getCount), getElementType = js.Any.fromFunction0(getElementType), getParent = js.Any.fromFunction0(getParent), hasElements = js.Any.fromFunction0(hasElements), insertByIndex = js.Any.fromFunction2(insertByIndex), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeByIndex = js.Any.fromFunction1(removeByIndex), removeContainerListener = js.Any.fromFunction1(removeContainerListener), removeEventListener = js.Any.fromFunction1(removeEventListener), replaceByIndex = js.Any.fromFunction2(replaceByIndex), setParent = js.Any.fromFunction1(setParent))

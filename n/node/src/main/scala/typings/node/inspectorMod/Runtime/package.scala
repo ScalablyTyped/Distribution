@@ -8,30 +8,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Id of an execution context.
   */
-type ExecutionContextId = scala.Double
+type ExecutionContextId = Double
 
 /**
   * Unique object identifier.
   */
-type RemoteObjectId = java.lang.String
+type RemoteObjectId = String
 
 /**
   * Unique script identifier.
   */
-type ScriptId = java.lang.String
+type ScriptId = String
 
 /**
   * Number of milliseconds since epoch.
   */
-type Timestamp = scala.Double
+type Timestamp = Double
 
 /**
   * Unique identifier of current debugger.
   * @experimental
   */
-type UniqueDebuggerId = java.lang.String
+type UniqueDebuggerId = String
 
 /**
   * Primitive value which cannot be JSON-stringified.
   */
-type UnserializableValue = java.lang.String
+type UnserializableValue = String

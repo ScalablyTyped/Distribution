@@ -17,13 +17,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.SchemefulSameSiteStrict
   - typings.devtoolsProtocol.devtoolsProtocolStrings.SchemefulSameSiteLax
   - typings.devtoolsProtocol.devtoolsProtocolStrings.SchemefulSameSiteUnspecifiedTreatedAsLax
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.SamePartyFromCrossPartyContext
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.NameValuePairExceedsMaxSize
 */
 trait CookieBlockedReason extends StObject
 object CookieBlockedReason {
   
   inline def DomainMismatch: typings.devtoolsProtocol.devtoolsProtocolStrings.DomainMismatch = "DomainMismatch".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.DomainMismatch]
   
+  inline def NameValuePairExceedsMaxSize: typings.devtoolsProtocol.devtoolsProtocolStrings.NameValuePairExceedsMaxSize = "NameValuePairExceedsMaxSize".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.NameValuePairExceedsMaxSize]
+  
   inline def NotOnPath: typings.devtoolsProtocol.devtoolsProtocolStrings.NotOnPath = "NotOnPath".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.NotOnPath]
+  
+  inline def SamePartyFromCrossPartyContext: typings.devtoolsProtocol.devtoolsProtocolStrings.SamePartyFromCrossPartyContext = "SamePartyFromCrossPartyContext".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SamePartyFromCrossPartyContext]
   
   inline def SameSiteLax: typings.devtoolsProtocol.devtoolsProtocolStrings.SameSiteLax = "SameSiteLax".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SameSiteLax]
   

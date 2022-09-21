@@ -38,7 +38,7 @@ object CalendarGroup {
     
     inline def setCalendarsUndefined: Self = StObject.set(x, "calendars", js.undefined)
     
-    inline def setCalendarsVarargs(value: Calendar*): Self = StObject.set(x, "calendars", js.Array(value :_*))
+    inline def setCalendarsVarargs(value: Calendar*): Self = StObject.set(x, "calendars", js.Array(value*))
     
     inline def setChangeKey(value: NullableOption[String]): Self = StObject.set(x, "changeKey", value.asInstanceOf[js.Any])
     

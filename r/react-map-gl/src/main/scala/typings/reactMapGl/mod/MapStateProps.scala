@@ -12,7 +12,7 @@ trait MapStateProps extends StObject {
   
   var bearing: js.UndefOr[Double] = js.undefined
   
-  var height: js.UndefOr[Double] = js.undefined
+  var height: js.UndefOr[Double | String] = js.undefined
   
   var latitude: js.UndefOr[Double] = js.undefined
   
@@ -46,7 +46,7 @@ trait MapStateProps extends StObject {
   
   var transitionInterruption: js.UndefOr[TRANSITION_EVENTS] = js.undefined
   
-  var width: js.UndefOr[Double] = js.undefined
+  var width: js.UndefOr[Double | String] = js.undefined
   
   var zoom: js.UndefOr[Double] = js.undefined
 }
@@ -67,7 +67,7 @@ object MapStateProps {
     
     inline def setBearingUndefined: Self = StObject.set(x, "bearing", js.undefined)
     
-    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
@@ -135,7 +135,7 @@ object MapStateProps {
     
     inline def setTransitionInterruptionUndefined: Self = StObject.set(x, "transitionInterruption", js.undefined)
     
-    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     

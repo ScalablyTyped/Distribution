@@ -24,18 +24,18 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Emissary.Emitter")
     @js.native
-    class Emitter ()
+    open class Emitter ()
       extends StObject
          with IEmitter {
       
       /* CompleteClass */
-      override def behavior(eventName: String, initialValue: js.Any): Unit = js.native
+      override def behavior(eventName: String, initialValue: Any): Unit = js.native
       
       /* CompleteClass */
       override def decrementSubscriptionCount(eventName: String): Double = js.native
       
       /* CompleteClass */
-      override def emit(eventName: String, args: js.Any*): Unit = js.native
+      override def emit(eventName: String, args: Any*): Unit = js.native
       
       /* CompleteClass */
       override def getSubscriptionCount(eventName: String): Double = js.native
@@ -50,11 +50,11 @@ object global {
       override def off(eventNames: String, handler: js.Function): Unit = js.native
       
       /* CompleteClass */
-      override def on(eventNames: String, handler: js.Function): js.Any = js.native
+      override def on(eventNames: String, handler: js.Function): Any = js.native
       
       // return value type are Signal
       /* CompleteClass */
-      override def once(eventName: String, handler: js.Function): js.Any = js.native
+      override def once(eventName: String, handler: js.Function): Any = js.native
       
       /* CompleteClass */
       override def pauseEvents(eventNames: String): Unit = js.native
@@ -79,7 +79,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Emissary.Subscriber")
     @js.native
-    class Subscriber ()
+    open class Subscriber ()
       extends StObject
          with ISubscriber
     @JSGlobal("Emissary.Subscriber")

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("grpc", "StatusBuilder")
 @js.native
-class StatusBuilder () extends StObject {
+open class StatusBuilder () extends StObject {
   
   /**
     * Builds the status object

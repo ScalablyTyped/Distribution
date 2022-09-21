@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("two.js", "Rectangle")
 @js.native
-class Rectangle protected () extends Path {
+open class Rectangle protected () extends Path {
   def this(x: Double, y: Double, width: Double, height: Double) = this()
 }

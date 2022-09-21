@@ -25,12 +25,12 @@ object Authentication {
     
     inline def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
     
-    inline def setProvidersVarargs(value: AuthProvider*): Self = StObject.set(x, "providers", js.Array(value :_*))
+    inline def setProvidersVarargs(value: AuthProvider*): Self = StObject.set(x, "providers", js.Array(value*))
     
     inline def setRules(value: js.Array[AuthenticationRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
     inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    inline def setRulesVarargs(value: AuthenticationRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: AuthenticationRule*): Self = StObject.set(x, "rules", js.Array(value*))
   }
 }

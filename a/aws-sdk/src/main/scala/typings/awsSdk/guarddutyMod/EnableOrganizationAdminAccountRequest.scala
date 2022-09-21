@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EnableOrganizationAdminAccountRequest extends StObject {
   
   /**
-    * The AWS Account ID for the organization account to be enabled as a GuardDuty delegated administrator.
+    * The Amazon Web Services Account ID for the organization account to be enabled as a GuardDuty delegated administrator.
     */
   var AdminAccountId: String
 }

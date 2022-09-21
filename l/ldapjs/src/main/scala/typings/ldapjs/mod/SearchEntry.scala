@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ldapjs", "SearchEntry")
 @js.native
-class SearchEntry () extends LDAPMessage {
+open class SearchEntry () extends LDAPMessage {
   
   var attributes: js.Array[Attribute] = js.native
   

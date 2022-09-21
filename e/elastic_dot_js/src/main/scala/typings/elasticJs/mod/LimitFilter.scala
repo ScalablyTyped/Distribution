@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elastic.js", "LimitFilter")
 @js.native
-class LimitFilter protected ()
+open class LimitFilter protected ()
   extends StObject
      with Filter {
   /*

@@ -1,22 +1,22 @@
 
 # Scala.js typings for pixi-spine
 
-Typings are for version 2.1.11
+Typings are for version 3.1.0
 
 ## Library description:
-Spine implementation for pixi v^5
+Pixi integration with EsotericSoftware Spine, big, contains all runtimes
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | pixi-spine |
-| Keywords           | - |
-| # releases         | 20 |
-| # dependents       | 22 |
-| # downloads        | 143039 |
-| # stars            | 1 |
+| Keywords           | pixi.js, pixi, spine |
+| # releases         | 24 |
+| # dependents       | 0.0 |
+| # downloads        | 44371.666666666664 |
+| # stars            | 416.0 |
 
 ## Links
-- [Homepage](https://github.com/pixijs/pixi-spine)
+- [Homepage](https://github.com/pixijs/pixi-spine/#readme)
 - [Bugs](https://github.com/pixijs/pixi-spine/issues)
 - [Repository](https://github.com/pixijs/pixi-spine)
 - [Npm](https://www.npmjs.com/package/pixi-spine)

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "BlurPostProcess")
 @js.native
-class BlurPostProcess protected ()
+open class BlurPostProcess protected ()
   extends typings.babylonjs.indexMod.BlurPostProcess {
   /**
     * Creates a new instance BlurPostProcess
@@ -21,7 +21,8 @@ class BlurPostProcess protected ()
     * @param engine The engine which the post process will be applied. (default: current engine)
     * @param reusable If the post process can be reused on the same frame. (default: false)
     * @param textureType Type of textures used when performing the post process. (default: 0)
-    * @param blockCompilation If compilation of the shader should not be done in the constructor. The updateEffect method can be used to compile the shader at a later time. (default: false)
+    * @param defines
+    * @param _blockCompilation If compilation of the shader should not be done in the constructor. The updateEffect method can be used to compile the shader at a later time. (default: false)
     */
   def this(
     name: String,
@@ -34,7 +35,7 @@ class BlurPostProcess protected ()
     reusable: js.UndefOr[Boolean],
     textureType: js.UndefOr[Double],
     defines: js.UndefOr[String],
-    blockCompilation: js.UndefOr[Boolean]
+    _blockCompilation: js.UndefOr[Boolean]
   ) = this()
 }
 /* static members */
@@ -44,9 +45,15 @@ object BlurPostProcess {
   @js.native
   val ^ : js.Any = js.native
   
-  /** @hidden */
+  /**
+    * @param parsedPostProcess
+    * @param targetCamera
+    * @param scene
+    * @param rootUrl
+    * @hidden
+    */
   inline def _Parse(
-    parsedPostProcess: js.Any,
+    parsedPostProcess: Any,
     targetCamera: typings.babylonjs.cameraMod.Camera,
     scene: typings.babylonjs.sceneMod.Scene,
     rootUrl: String

@@ -1,7 +1,8 @@
 package typings.reactFlex
 
 import typings.react.mod.Component
-import typings.react.mod.Props
+import typings.react.mod.LegacyRef
+import typings.react.mod.ReactNode
 import typings.reactFlex.reactFlexStrings.`fit-content`
 import typings.reactFlex.reactFlexStrings.`max-content`
 import typings.reactFlex.reactFlexStrings.`min-content`
@@ -17,26 +18,26 @@ object mod {
   
   @JSImport("react-flex", "Flex")
   @js.native
-  class Flex protected ()
-    extends Component[FlexProps, js.Object, js.Any] {
+  open class Flex protected ()
+    extends Component[FlexProps, js.Object, Any] {
     def this(props: FlexProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: FlexProps, context: js.Any) = this()
+    def this(props: FlexProps, context: Any) = this()
   }
   
   @JSImport("react-flex", "Item")
   @js.native
-  class Item protected ()
-    extends Component[ItemProps, js.Object, js.Any] {
+  open class Item protected ()
+    extends Component[ItemProps, js.Object, Any] {
     def this(props: ItemProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ItemProps, context: js.Any) = this()
+    def this(props: ItemProps, context: Any) = this()
   }
   
   trait CommonFlexProps extends StObject {
@@ -90,7 +91,7 @@ object mod {
     /**
       * For custom style
       */
-    var style: js.UndefOr[js.Any] = js.undefined
+    var style: js.UndefOr[Any] = js.undefined
     
     /**
       * For `flex-wrap: wrap`. Defaults to `true`.
@@ -142,7 +143,7 @@ object mod {
       
       inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
       
-      inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
@@ -154,20 +155,40 @@ object mod {
   
   trait FlexProps
     extends StObject
-       with Props[Flex]
-       with CommonFlexProps
+       with CommonFlexProps {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
+    var ref: js.UndefOr[LegacyRef[Flex]] = js.undefined
+  }
   object FlexProps {
     
     inline def apply(): FlexProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FlexProps]
     }
+    
+    extension [Self <: FlexProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setRef(value: LegacyRef[Flex]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      
+      inline def setRefFunction1(value: /* instance */ Flex | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+    }
   }
   
   trait ItemProps
     extends StObject
-       with Props[Flex]
        with CommonFlexProps {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * A value for the flex-basis css property. Valid values are: `0` (and `'none'`, which is the same),
@@ -186,6 +207,8 @@ object mod {
       * A value for the `flex-shrink` css property. From `0` to `24`.
       */
     var flexShrink: js.UndefOr[Double | String] = js.undefined
+    
+    var ref: js.UndefOr[LegacyRef[Flex]] = js.undefined
   }
   object ItemProps {
     
@@ -195,6 +218,10 @@ object mod {
     }
     
     extension [Self <: ItemProps](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setFlexBasis(value: Double | none | auto | content | `fit-content` | `min-content` | `max-content` | fit): Self = StObject.set(x, "flexBasis", value.asInstanceOf[js.Any])
       
@@ -207,6 +234,14 @@ object mod {
       inline def setFlexShrink(value: Double | String): Self = StObject.set(x, "flexShrink", value.asInstanceOf[js.Any])
       
       inline def setFlexShrinkUndefined: Self = StObject.set(x, "flexShrink", js.undefined)
+      
+      inline def setRef(value: LegacyRef[Flex]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      
+      inline def setRefFunction1(value: /* instance */ Flex | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     }
   }
 }

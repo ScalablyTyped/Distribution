@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("openlayers", "source.TileImage")
 @js.native
-class TileImage protected () extends UrlTile {
+open class TileImage protected () extends UrlTile {
   /**
     * @classdesc
     * Base class for sources providing images divided into a tile grid.

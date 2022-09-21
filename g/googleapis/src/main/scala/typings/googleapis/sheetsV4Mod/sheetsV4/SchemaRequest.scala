@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A single kind of update to apply to a spreadsheet.
-  */
 trait SchemaRequest extends StObject {
   
   /**
@@ -23,6 +20,11 @@ trait SchemaRequest extends StObject {
     * Adds a new conditional format rule.
     */
   var addConditionalFormatRule: js.UndefOr[SchemaAddConditionalFormatRuleRequest] = js.undefined
+  
+  /**
+    * Adds a data source.
+    */
+  var addDataSource: js.UndefOr[SchemaAddDataSourceRequest] = js.undefined
   
   /**
     * Creates a group over the specified range.
@@ -50,6 +52,11 @@ trait SchemaRequest extends StObject {
   var addSheet: js.UndefOr[SchemaAddSheetRequest] = js.undefined
   
   /**
+    * Adds a slicer.
+    */
+  var addSlicer: js.UndefOr[SchemaAddSlicerRequest] = js.undefined
+  
+  /**
     * Appends cells after the last row with data in a sheet.
     */
   var appendCells: js.UndefOr[SchemaAppendCellsRequest] = js.undefined
@@ -65,8 +72,7 @@ trait SchemaRequest extends StObject {
   var autoFill: js.UndefOr[SchemaAutoFillRequest] = js.undefined
   
   /**
-    * Automatically resizes one or more dimensions based on the contents of the
-    * cells in that dimension.
+    * Automatically resizes one or more dimensions based on the contents of the cells in that dimension.
     */
   var autoResizeDimensions: js.UndefOr[SchemaAutoResizeDimensionsRequest] = js.undefined
   
@@ -101,6 +107,11 @@ trait SchemaRequest extends StObject {
   var deleteConditionalFormatRule: js.UndefOr[SchemaDeleteConditionalFormatRuleRequest] = js.undefined
   
   /**
+    * Deletes a data source.
+    */
+  var deleteDataSource: js.UndefOr[SchemaDeleteDataSourceRequest] = js.undefined
+  
+  /**
     * Deletes developer metadata
     */
   var deleteDeveloperMetadata: js.UndefOr[SchemaDeleteDeveloperMetadataRequest] = js.undefined
@@ -114,6 +125,11 @@ trait SchemaRequest extends StObject {
     * Deletes a group over the specified range.
     */
   var deleteDimensionGroup: js.UndefOr[SchemaDeleteDimensionGroupRequest] = js.undefined
+  
+  /**
+    * Removes rows containing duplicate values in specified columns of a cell range.
+    */
+  var deleteDuplicates: js.UndefOr[SchemaDeleteDuplicatesRequest] = js.undefined
   
   /**
     * Deletes an embedded object (e.g, chart, image) in a sheet.
@@ -191,6 +207,11 @@ trait SchemaRequest extends StObject {
   var randomizeRange: js.UndefOr[SchemaRandomizeRangeRequest] = js.undefined
   
   /**
+    * Refreshs one or multiple data sources and associated dbobjects.
+    */
+  var refreshDataSource: js.UndefOr[SchemaRefreshDataSourceRequest] = js.undefined
+  
+  /**
     * Repeats a single cell across a range.
     */
   var repeatCell: js.UndefOr[SchemaRepeatCellRequest] = js.undefined
@@ -216,6 +237,11 @@ trait SchemaRequest extends StObject {
   var textToColumns: js.UndefOr[SchemaTextToColumnsRequest] = js.undefined
   
   /**
+    * Trims cells of whitespace (such as spaces, tabs, or new lines).
+    */
+  var trimWhitespace: js.UndefOr[SchemaTrimWhitespaceRequest] = js.undefined
+  
+  /**
     * Unmerges merged cells.
     */
   var unmergeCells: js.UndefOr[SchemaUnmergeCellsRequest] = js.undefined
@@ -236,7 +262,7 @@ trait SchemaRequest extends StObject {
   var updateCells: js.UndefOr[SchemaUpdateCellsRequest] = js.undefined
   
   /**
-    * Updates a chart&#39;s specifications.
+    * Updates a chart's specifications.
     */
   var updateChartSpec: js.UndefOr[SchemaUpdateChartSpecRequest] = js.undefined
   
@@ -244,6 +270,11 @@ trait SchemaRequest extends StObject {
     * Updates an existing conditional format rule.
     */
   var updateConditionalFormatRule: js.UndefOr[SchemaUpdateConditionalFormatRuleRequest] = js.undefined
+  
+  /**
+    * Updates a data source.
+    */
+  var updateDataSource: js.UndefOr[SchemaUpdateDataSourceRequest] = js.undefined
   
   /**
     * Updates an existing developer metadata entry
@@ -256,12 +287,17 @@ trait SchemaRequest extends StObject {
   var updateDimensionGroup: js.UndefOr[SchemaUpdateDimensionGroupRequest] = js.undefined
   
   /**
-    * Updates dimensions&#39; properties.
+    * Updates dimensions' properties.
     */
   var updateDimensionProperties: js.UndefOr[SchemaUpdateDimensionPropertiesRequest] = js.undefined
   
   /**
-    * Updates an embedded object&#39;s (e.g. chart, image) position.
+    * Updates an embedded object's border.
+    */
+  var updateEmbeddedObjectBorder: js.UndefOr[SchemaUpdateEmbeddedObjectBorderRequest] = js.undefined
+  
+  /**
+    * Updates an embedded object's (e.g. chart, image) position.
     */
   var updateEmbeddedObjectPosition: js.UndefOr[SchemaUpdateEmbeddedObjectPositionRequest] = js.undefined
   
@@ -281,12 +317,17 @@ trait SchemaRequest extends StObject {
   var updateProtectedRange: js.UndefOr[SchemaUpdateProtectedRangeRequest] = js.undefined
   
   /**
-    * Updates a sheet&#39;s properties.
+    * Updates a sheet's properties.
     */
   var updateSheetProperties: js.UndefOr[SchemaUpdateSheetPropertiesRequest] = js.undefined
   
   /**
-    * Updates the spreadsheet&#39;s properties.
+    * Updates a slicer's specifications.
+    */
+  var updateSlicerSpec: js.UndefOr[SchemaUpdateSlicerSpecRequest] = js.undefined
+  
+  /**
+    * Updates the spreadsheet's properties.
     */
   var updateSpreadsheetProperties: js.UndefOr[SchemaUpdateSpreadsheetPropertiesRequest] = js.undefined
 }
@@ -311,6 +352,10 @@ object SchemaRequest {
     
     inline def setAddConditionalFormatRuleUndefined: Self = StObject.set(x, "addConditionalFormatRule", js.undefined)
     
+    inline def setAddDataSource(value: SchemaAddDataSourceRequest): Self = StObject.set(x, "addDataSource", value.asInstanceOf[js.Any])
+    
+    inline def setAddDataSourceUndefined: Self = StObject.set(x, "addDataSource", js.undefined)
+    
     inline def setAddDimensionGroup(value: SchemaAddDimensionGroupRequest): Self = StObject.set(x, "addDimensionGroup", value.asInstanceOf[js.Any])
     
     inline def setAddDimensionGroupUndefined: Self = StObject.set(x, "addDimensionGroup", js.undefined)
@@ -330,6 +375,10 @@ object SchemaRequest {
     inline def setAddSheet(value: SchemaAddSheetRequest): Self = StObject.set(x, "addSheet", value.asInstanceOf[js.Any])
     
     inline def setAddSheetUndefined: Self = StObject.set(x, "addSheet", js.undefined)
+    
+    inline def setAddSlicer(value: SchemaAddSlicerRequest): Self = StObject.set(x, "addSlicer", value.asInstanceOf[js.Any])
+    
+    inline def setAddSlicerUndefined: Self = StObject.set(x, "addSlicer", js.undefined)
     
     inline def setAppendCells(value: SchemaAppendCellsRequest): Self = StObject.set(x, "appendCells", value.asInstanceOf[js.Any])
     
@@ -371,6 +420,10 @@ object SchemaRequest {
     
     inline def setDeleteConditionalFormatRuleUndefined: Self = StObject.set(x, "deleteConditionalFormatRule", js.undefined)
     
+    inline def setDeleteDataSource(value: SchemaDeleteDataSourceRequest): Self = StObject.set(x, "deleteDataSource", value.asInstanceOf[js.Any])
+    
+    inline def setDeleteDataSourceUndefined: Self = StObject.set(x, "deleteDataSource", js.undefined)
+    
     inline def setDeleteDeveloperMetadata(value: SchemaDeleteDeveloperMetadataRequest): Self = StObject.set(x, "deleteDeveloperMetadata", value.asInstanceOf[js.Any])
     
     inline def setDeleteDeveloperMetadataUndefined: Self = StObject.set(x, "deleteDeveloperMetadata", js.undefined)
@@ -382,6 +435,10 @@ object SchemaRequest {
     inline def setDeleteDimensionGroupUndefined: Self = StObject.set(x, "deleteDimensionGroup", js.undefined)
     
     inline def setDeleteDimensionUndefined: Self = StObject.set(x, "deleteDimension", js.undefined)
+    
+    inline def setDeleteDuplicates(value: SchemaDeleteDuplicatesRequest): Self = StObject.set(x, "deleteDuplicates", value.asInstanceOf[js.Any])
+    
+    inline def setDeleteDuplicatesUndefined: Self = StObject.set(x, "deleteDuplicates", js.undefined)
     
     inline def setDeleteEmbeddedObject(value: SchemaDeleteEmbeddedObjectRequest): Self = StObject.set(x, "deleteEmbeddedObject", value.asInstanceOf[js.Any])
     
@@ -443,6 +500,10 @@ object SchemaRequest {
     
     inline def setRandomizeRangeUndefined: Self = StObject.set(x, "randomizeRange", js.undefined)
     
+    inline def setRefreshDataSource(value: SchemaRefreshDataSourceRequest): Self = StObject.set(x, "refreshDataSource", value.asInstanceOf[js.Any])
+    
+    inline def setRefreshDataSourceUndefined: Self = StObject.set(x, "refreshDataSource", js.undefined)
+    
     inline def setRepeatCell(value: SchemaRepeatCellRequest): Self = StObject.set(x, "repeatCell", value.asInstanceOf[js.Any])
     
     inline def setRepeatCellUndefined: Self = StObject.set(x, "repeatCell", js.undefined)
@@ -462,6 +523,10 @@ object SchemaRequest {
     inline def setTextToColumns(value: SchemaTextToColumnsRequest): Self = StObject.set(x, "textToColumns", value.asInstanceOf[js.Any])
     
     inline def setTextToColumnsUndefined: Self = StObject.set(x, "textToColumns", js.undefined)
+    
+    inline def setTrimWhitespace(value: SchemaTrimWhitespaceRequest): Self = StObject.set(x, "trimWhitespace", value.asInstanceOf[js.Any])
+    
+    inline def setTrimWhitespaceUndefined: Self = StObject.set(x, "trimWhitespace", js.undefined)
     
     inline def setUnmergeCells(value: SchemaUnmergeCellsRequest): Self = StObject.set(x, "unmergeCells", value.asInstanceOf[js.Any])
     
@@ -487,6 +552,10 @@ object SchemaRequest {
     
     inline def setUpdateConditionalFormatRuleUndefined: Self = StObject.set(x, "updateConditionalFormatRule", js.undefined)
     
+    inline def setUpdateDataSource(value: SchemaUpdateDataSourceRequest): Self = StObject.set(x, "updateDataSource", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateDataSourceUndefined: Self = StObject.set(x, "updateDataSource", js.undefined)
+    
     inline def setUpdateDeveloperMetadata(value: SchemaUpdateDeveloperMetadataRequest): Self = StObject.set(x, "updateDeveloperMetadata", value.asInstanceOf[js.Any])
     
     inline def setUpdateDeveloperMetadataUndefined: Self = StObject.set(x, "updateDeveloperMetadata", js.undefined)
@@ -498,6 +567,10 @@ object SchemaRequest {
     inline def setUpdateDimensionProperties(value: SchemaUpdateDimensionPropertiesRequest): Self = StObject.set(x, "updateDimensionProperties", value.asInstanceOf[js.Any])
     
     inline def setUpdateDimensionPropertiesUndefined: Self = StObject.set(x, "updateDimensionProperties", js.undefined)
+    
+    inline def setUpdateEmbeddedObjectBorder(value: SchemaUpdateEmbeddedObjectBorderRequest): Self = StObject.set(x, "updateEmbeddedObjectBorder", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateEmbeddedObjectBorderUndefined: Self = StObject.set(x, "updateEmbeddedObjectBorder", js.undefined)
     
     inline def setUpdateEmbeddedObjectPosition(value: SchemaUpdateEmbeddedObjectPositionRequest): Self = StObject.set(x, "updateEmbeddedObjectPosition", value.asInstanceOf[js.Any])
     
@@ -518,6 +591,10 @@ object SchemaRequest {
     inline def setUpdateSheetProperties(value: SchemaUpdateSheetPropertiesRequest): Self = StObject.set(x, "updateSheetProperties", value.asInstanceOf[js.Any])
     
     inline def setUpdateSheetPropertiesUndefined: Self = StObject.set(x, "updateSheetProperties", js.undefined)
+    
+    inline def setUpdateSlicerSpec(value: SchemaUpdateSlicerSpecRequest): Self = StObject.set(x, "updateSlicerSpec", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateSlicerSpecUndefined: Self = StObject.set(x, "updateSlicerSpec", js.undefined)
     
     inline def setUpdateSpreadsheetProperties(value: SchemaUpdateSpreadsheetPropertiesRequest): Self = StObject.set(x, "updateSpreadsheetProperties", value.asInstanceOf[js.Any])
     

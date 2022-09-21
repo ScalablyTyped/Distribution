@@ -19,7 +19,7 @@ trait nlobjColumn
   *
   * @return
   */
-Instantiable0[js.Any] {
+Instantiable0[Any] {
   
   /**
     * add a URL parameter (optionally defined per row) to this column's URL.

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(currency: String): ParsedCurrency = ^.asInstanceOf[js.Dynamic].apply(currency.asInstanceOf[js.Any]).asInstanceOf[ParsedCurrency]
+  inline def apply(currency: String): ParsedCurrency | Null = ^.asInstanceOf[js.Dynamic].apply(currency.asInstanceOf[js.Any]).asInstanceOf[ParsedCurrency | Null]
   
   @JSImport("parsecurrency", JSImport.Namespace)
   @js.native

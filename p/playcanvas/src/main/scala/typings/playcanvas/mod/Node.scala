@@ -5,10 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Create a new animation node.
+  * A animation node has a name and contains an array of keyframes.
   */
 @JSImport("playcanvas", "Node")
 @js.native
-class Node ()
+open class Node ()
   extends StObject
-     with typings.playcanvas.pc.Node
+     with Node1 {
+  
+  /* CompleteClass */
+  var _keys: js.Array[Any] = js.native
+  
+  /* CompleteClass */
+  var _name: String = js.native
+}

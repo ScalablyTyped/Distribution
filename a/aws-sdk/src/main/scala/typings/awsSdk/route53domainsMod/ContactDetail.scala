@@ -22,7 +22,7 @@ trait ContactDetail extends StObject {
   var City: js.UndefOr[typings.awsSdk.route53domainsMod.City] = js.undefined
   
   /**
-    * Indicates whether the contact is a person, company, association, or public organization. Note the following:   If you specify a value other than PERSON, you must also specify a value for OrganizationName.   For some TLDs, the privacy protection available depends on the value that you specify for Contact Type. For the privacy protection settings for your TLD, see Domains that You Can Register with Amazon Route 53 in the Amazon Route 53 Developer Guide    For .es domains, if you specify PERSON, you must specify INDIVIDUAL for the value of ES_LEGAL_FORM.  
+    * Indicates whether the contact is a person, company, association, or public organization. Note the following:   If you specify a value other than PERSON, you must also specify a value for OrganizationName.   For some TLDs, the privacy protection available depends on the value that you specify for Contact Type. For the privacy protection settings for your TLD, see Domains that You Can Register with Amazon Route 53 in the Amazon Route 53 Developer Guide    For .es domains, the value of ContactType must be PERSON for all three contacts.  
     */
   var ContactType: js.UndefOr[typings.awsSdk.route53domainsMod.ContactType] = js.undefined
   
@@ -113,7 +113,7 @@ object ContactDetail {
     
     inline def setExtraParamsUndefined: Self = StObject.set(x, "ExtraParams", js.undefined)
     
-    inline def setExtraParamsVarargs(value: ExtraParam*): Self = StObject.set(x, "ExtraParams", js.Array(value :_*))
+    inline def setExtraParamsVarargs(value: ExtraParam*): Self = StObject.set(x, "ExtraParams", js.Array(value*))
     
     inline def setFax(value: ContactNumber): Self = StObject.set(x, "Fax", value.asInstanceOf[js.Any])
     

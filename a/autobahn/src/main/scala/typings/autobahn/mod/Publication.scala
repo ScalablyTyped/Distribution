@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("autobahn", "Publication")
 @js.native
-class Publication protected ()
+open class Publication protected ()
   extends StObject
      with IPublication {
   def this(id: Double) = this()

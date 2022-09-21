@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@ant-design/react-native", "Badge")
 @js.native
-class Badge () extends default
+open class Badge () extends default
 /* static members */
 object Badge {
   

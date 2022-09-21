@@ -1,10 +1,11 @@
 package typings.mjmlReact.mod
 
-import typings.csstype.mod.BackgroundColorProperty
-import typings.csstype.mod.BorderProperty
-import typings.csstype.mod.BorderRadiusProperty
+import typings.csstype.mod.Property.BackgroundColor
+import typings.csstype.mod.Property.Border
+import typings.csstype.mod.Property.BorderRadius
 import typings.mjmlReact.mjmlReactStrings.hidden
 import typings.mjmlReact.mjmlReactStrings.visible
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,9 +14,11 @@ trait MjmlCarouselProps extends StObject {
   
   var align: js.UndefOr[String] = js.undefined
   
-  var backgroundColor: js.UndefOr[BackgroundColorProperty] = js.undefined
+  var backgroundColor: js.UndefOr[BackgroundColor] = js.undefined
   
   var borderRadius: js.UndefOr[String | Double] = js.undefined
+  
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   var iconWidth: js.UndefOr[String] = js.undefined
   
@@ -23,9 +26,9 @@ trait MjmlCarouselProps extends StObject {
   
   var rightIcon: js.UndefOr[String] = js.undefined
   
-  var tbBorder: js.UndefOr[BorderProperty[String | Double]] = js.undefined
+  var tbBorder: js.UndefOr[Border[String | Double]] = js.undefined
   
-  var tbBorderRadius: js.UndefOr[BorderRadiusProperty[String | Double]] = js.undefined
+  var tbBorderRadius: js.UndefOr[BorderRadius[String | Double]] = js.undefined
   
   var tbHoverBorderColor: js.UndefOr[String] = js.undefined
   
@@ -48,13 +51,17 @@ object MjmlCarouselProps {
     
     inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    inline def setBackgroundColor(value: BackgroundColorProperty): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: BackgroundColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     inline def setBorderRadius(value: String | Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     
     inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
+    
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setIconWidth(value: String): Self = StObject.set(x, "iconWidth", value.asInstanceOf[js.Any])
     
@@ -68,9 +75,9 @@ object MjmlCarouselProps {
     
     inline def setRightIconUndefined: Self = StObject.set(x, "rightIcon", js.undefined)
     
-    inline def setTbBorder(value: BorderProperty[String | Double]): Self = StObject.set(x, "tbBorder", value.asInstanceOf[js.Any])
+    inline def setTbBorder(value: Border[String | Double]): Self = StObject.set(x, "tbBorder", value.asInstanceOf[js.Any])
     
-    inline def setTbBorderRadius(value: BorderRadiusProperty[String | Double]): Self = StObject.set(x, "tbBorderRadius", value.asInstanceOf[js.Any])
+    inline def setTbBorderRadius(value: BorderRadius[String | Double]): Self = StObject.set(x, "tbBorderRadius", value.asInstanceOf[js.Any])
     
     inline def setTbBorderRadiusUndefined: Self = StObject.set(x, "tbBorderRadius", js.undefined)
     

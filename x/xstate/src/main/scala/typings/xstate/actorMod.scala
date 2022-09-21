@@ -1,14 +1,26 @@
 package typings.xstate
 
-import typings.xstate.anon.Context
+import typings.std.Omit
 import typings.xstate.anon.Id
-import typings.xstate.typesMod.AnyEventObject
+import typings.xstate.typegenTypesMod.ResolveTypegenMeta
+import typings.xstate.typegenTypesMod.TypegenDisabled
+import typings.xstate.typesMod.ActorRef
+import typings.xstate.typesMod.BaseActionObject
+import typings.xstate.typesMod.BaseActorRef
 import typings.xstate.typesMod.EventObject
 import typings.xstate.typesMod.InvokeDefinition
+import typings.xstate.typesMod.NoInfer
 import typings.xstate.typesMod.SCXML.Event
+import typings.xstate.typesMod.ServiceMap
 import typings.xstate.typesMod.Spawnable
 import typings.xstate.typesMod.StateMachine
 import typings.xstate.typesMod.Subscribable
+import typings.xstate.xstateStrings.getSnapshot
+import typings.xstate.xstateStrings.id
+import typings.xstate.xstateStrings.send
+import typings.xstate.xstateStrings.stop
+import typings.xstate.xstateStrings.subscribe
+import typings.xstate.xstateStrings.toJSON
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,19 +31,37 @@ object actorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createDeferredActor(entity: Spawnable, id: String): Actor[js.Any, AnyEventObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDeferredActor")(entity.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Actor[js.Any, AnyEventObject]]
-  inline def createDeferredActor(entity: Spawnable, id: String, data: js.Any): Actor[js.Any, AnyEventObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDeferredActor")(entity.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Actor[js.Any, AnyEventObject]]
+  inline def createDeferredActor(entity: Spawnable, id: String): ActorRef[Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDeferredActor")(entity.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ActorRef[Any, Unit]]
+  inline def createDeferredActor(entity: Spawnable, id: String, data: Any): ActorRef[Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDeferredActor")(entity.asInstanceOf[js.Any], id.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[ActorRef[Any, Unit]]
   
   inline def createInvocableActor[TC, TE /* <: EventObject */](
     invokeDefinition: InvokeDefinition[TC, TE],
-    machine: StateMachine[TC, js.Any, TE, Context[TC]],
+    machine: StateMachine[
+      TC, 
+      Any, 
+      TE, 
+      Any, 
+      BaseActionObject, 
+      ServiceMap, 
+      ResolveTypegenMeta[TypegenDisabled, NoInfer[TE], BaseActionObject, ServiceMap]
+    ],
     context: TC,
     _event: Event[TE]
-  ): Actor[js.Any, AnyEventObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("createInvocableActor")(invokeDefinition.asInstanceOf[js.Any], machine.asInstanceOf[js.Any], context.asInstanceOf[js.Any], _event.asInstanceOf[js.Any])).asInstanceOf[Actor[js.Any, AnyEventObject]]
+  ): ActorRef[Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("createInvocableActor")(invokeDefinition.asInstanceOf[js.Any], machine.asInstanceOf[js.Any], context.asInstanceOf[js.Any], _event.asInstanceOf[js.Any])).asInstanceOf[ActorRef[Any, Any]]
   
-  inline def createNullActor(id: String): Actor[js.Any, AnyEventObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("createNullActor")(id.asInstanceOf[js.Any]).asInstanceOf[Actor[js.Any, AnyEventObject]]
+  inline def createNullActor(id: String): ActorRef[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createNullActor")(id.asInstanceOf[js.Any]).asInstanceOf[ActorRef[Any, Any]]
   
-  inline def isActor(item: js.Any): /* is xstate.xstate/lib/Actor.Actor<any, xstate.xstate/lib/types.AnyEventObject> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isActor")(item.asInstanceOf[js.Any]).asInstanceOf[/* is xstate.xstate/lib/Actor.Actor<any, xstate.xstate/lib/types.AnyEventObject> */ Boolean]
+  inline def isActor(item: Any): /* is xstate.xstate/lib/types.ActorRef<any, any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isActor")(item.asInstanceOf[js.Any]).asInstanceOf[/* is xstate.xstate/lib/types.ActorRef<any, any> */ Boolean]
+  
+  inline def isSpawnedActor(item: Any): /* is xstate.xstate/lib/types.ActorRef<any, any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSpawnedActor")(item.asInstanceOf[js.Any]).asInstanceOf[/* is xstate.xstate/lib/types.ActorRef<any, any> */ Boolean]
+  
+  inline def toActorRef[TEvent /* <: EventObject */, TEmitted, TActorRefLike /* <: BaseActorRef[TEvent] */](actorRefLike: TActorRefLike): (ActorRef[TEvent, TEmitted]) & (Omit[
+    TActorRefLike, 
+    /* keyof xstate.xstate/lib/types.ActorRef<any, any> */ send | id | getSnapshot | stop | toJSON | subscribe
+  ]) = ^.asInstanceOf[js.Dynamic].applyDynamic("toActorRef")(actorRefLike.asInstanceOf[js.Any]).asInstanceOf[(ActorRef[TEvent, TEmitted]) & (Omit[
+    TActorRefLike, 
+    /* keyof xstate.xstate/lib/types.ActorRef<any, any> */ send | id | getSnapshot | stop | toJSON | subscribe
+  ])]
   
   @js.native
   trait Actor[TContext, TEvent /* <: EventObject */]
@@ -44,11 +74,11 @@ object actorMod {
     
     var meta: js.UndefOr[InvokeDefinition[TContext, TEvent]] = js.native
     
-    def send(event: TEvent): js.Any = js.native
+    def send(event: TEvent): Any = js.native
     
-    var state: js.UndefOr[js.Any] = js.native
+    var state: js.UndefOr[Any] = js.native
     
-    var stop: js.UndefOr[js.Function0[js.UndefOr[js.Any]]] = js.native
+    var stop: js.UndefOr[js.Function0[js.UndefOr[Any]]] = js.native
     
     def toJSON(): Id = js.native
   }

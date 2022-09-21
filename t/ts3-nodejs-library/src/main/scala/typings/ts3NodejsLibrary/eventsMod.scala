@@ -1,10 +1,9 @@
 package typings.ts3NodejsLibrary
 
 import typings.std.Record
-import typings.ts3NodejsLibrary.anon.Cfid
+import typings.ts3NodejsLibrary.anon.Bantime
 import typings.ts3NodejsLibrary.channelMod.TeamSpeakChannel
 import typings.ts3NodejsLibrary.clientMod.TeamSpeakClient
-import typings.ts3NodejsLibrary.enumMod.ReasonIdentifier
 import typings.ts3NodejsLibrary.enumMod.TextMessageTargetMode
 import typings.ts3NodejsLibrary.responseTypesMod.ClientEntry
 import typings.ts3NodejsLibrary.responseTypesMod.ClientList
@@ -18,20 +17,15 @@ object eventsMod {
     
     var channel: TeamSpeakChannel
     
-    var cpid: Double
+    var cpid: String
     
     var invoker: TeamSpeakClient
     
-    var modified: Record[String, js.Any]
+    var modified: Record[String, Any]
   }
   object ChannelCreate {
     
-    inline def apply(
-      channel: TeamSpeakChannel,
-      cpid: Double,
-      invoker: TeamSpeakClient,
-      modified: Record[String, js.Any]
-    ): ChannelCreate = {
+    inline def apply(channel: TeamSpeakChannel, cpid: String, invoker: TeamSpeakClient, modified: Record[String, Any]): ChannelCreate = {
       val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], cpid = cpid.asInstanceOf[js.Any], invoker = invoker.asInstanceOf[js.Any], modified = modified.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChannelCreate]
     }
@@ -40,30 +34,30 @@ object eventsMod {
       
       inline def setChannel(value: TeamSpeakChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
-      inline def setCpid(value: Double): Self = StObject.set(x, "cpid", value.asInstanceOf[js.Any])
+      inline def setCpid(value: String): Self = StObject.set(x, "cpid", value.asInstanceOf[js.Any])
       
       inline def setInvoker(value: TeamSpeakClient): Self = StObject.set(x, "invoker", value.asInstanceOf[js.Any])
       
-      inline def setModified(value: Record[String, js.Any]): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
+      inline def setModified(value: Record[String, Any]): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
     }
   }
   
   trait ChannelDelete extends StObject {
     
-    var cid: Double
+    var cid: String
     
     var invoker: js.UndefOr[TeamSpeakClient] = js.undefined
   }
   object ChannelDelete {
     
-    inline def apply(cid: Double): ChannelDelete = {
+    inline def apply(cid: String): ChannelDelete = {
       val __obj = js.Dynamic.literal(cid = cid.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChannelDelete]
     }
     
     extension [Self <: ChannelDelete](x: Self) {
       
-      inline def setCid(value: Double): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
+      inline def setCid(value: String): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
       
       inline def setInvoker(value: TeamSpeakClient): Self = StObject.set(x, "invoker", value.asInstanceOf[js.Any])
       
@@ -77,17 +71,17 @@ object eventsMod {
     
     var invoker: TeamSpeakClient
     
-    var modified: Record[String, js.Any]
+    var modified: Record[String, Any]
     
-    var reasonid: Double
+    var reasonid: String
   }
   object ChannelEdit {
     
     inline def apply(
       channel: TeamSpeakChannel,
       invoker: TeamSpeakClient,
-      modified: Record[String, js.Any],
-      reasonid: Double
+      modified: Record[String, Any],
+      reasonid: String
     ): ChannelEdit = {
       val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], invoker = invoker.asInstanceOf[js.Any], modified = modified.asInstanceOf[js.Any], reasonid = reasonid.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChannelEdit]
@@ -99,9 +93,9 @@ object eventsMod {
       
       inline def setInvoker(value: TeamSpeakClient): Self = StObject.set(x, "invoker", value.asInstanceOf[js.Any])
       
-      inline def setModified(value: Record[String, js.Any]): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
+      inline def setModified(value: Record[String, Any]): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
       
-      inline def setReasonid(value: Double): Self = StObject.set(x, "reasonid", value.asInstanceOf[js.Any])
+      inline def setReasonid(value: String): Self = StObject.set(x, "reasonid", value.asInstanceOf[js.Any])
     }
   }
   
@@ -155,11 +149,11 @@ object eventsMod {
     
     var client: js.UndefOr[TeamSpeakClient] = js.undefined
     
-    var event: Cfid
+    var event: Bantime
   }
   object ClientDisconnect {
     
-    inline def apply(event: Cfid): ClientDisconnect = {
+    inline def apply(event: Bantime): ClientDisconnect = {
       val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClientDisconnect]
     }
@@ -170,7 +164,7 @@ object eventsMod {
       
       inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
       
-      inline def setEvent(value: Cfid): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: Bantime): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     }
   }
   
@@ -180,11 +174,11 @@ object eventsMod {
     
     var client: TeamSpeakClient
     
-    var reasonid: ReasonIdentifier
+    var reasonid: String
   }
   object ClientMoved {
     
-    inline def apply(channel: TeamSpeakChannel, client: TeamSpeakClient, reasonid: ReasonIdentifier): ClientMoved = {
+    inline def apply(channel: TeamSpeakChannel, client: TeamSpeakClient, reasonid: String): ClientMoved = {
       val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], client = client.asInstanceOf[js.Any], reasonid = reasonid.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClientMoved]
     }
@@ -195,7 +189,7 @@ object eventsMod {
       
       inline def setClient(value: TeamSpeakClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      inline def setReasonid(value: ReasonIdentifier): Self = StObject.set(x, "reasonid", value.asInstanceOf[js.Any])
+      inline def setReasonid(value: String): Self = StObject.set(x, "reasonid", value.asInstanceOf[js.Any])
     }
   }
   
@@ -225,13 +219,13 @@ object eventsMod {
     
     var invoker: TeamSpeakClient
     
-    var modified: Record[String, js.Any]
+    var modified: Record[String, Any]
     
-    var reasonid: Double
+    var reasonid: String
   }
   object ServerEdit {
     
-    inline def apply(invoker: TeamSpeakClient, modified: Record[String, js.Any], reasonid: Double): ServerEdit = {
+    inline def apply(invoker: TeamSpeakClient, modified: Record[String, Any], reasonid: String): ServerEdit = {
       val __obj = js.Dynamic.literal(invoker = invoker.asInstanceOf[js.Any], modified = modified.asInstanceOf[js.Any], reasonid = reasonid.asInstanceOf[js.Any])
       __obj.asInstanceOf[ServerEdit]
     }
@@ -240,9 +234,9 @@ object eventsMod {
       
       inline def setInvoker(value: TeamSpeakClient): Self = StObject.set(x, "invoker", value.asInstanceOf[js.Any])
       
-      inline def setModified(value: Record[String, js.Any]): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
+      inline def setModified(value: Record[String, Any]): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
       
-      inline def setReasonid(value: Double): Self = StObject.set(x, "reasonid", value.asInstanceOf[js.Any])
+      inline def setReasonid(value: String): Self = StObject.set(x, "reasonid", value.asInstanceOf[js.Any])
     }
   }
   
@@ -292,7 +286,7 @@ object eventsMod {
       
       inline def setClient(value: ClientList): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      inline def setClientVarargs(value: ClientEntry*): Self = StObject.set(x, "client", js.Array(value :_*))
+      inline def setClientVarargs(value: ClientEntry*): Self = StObject.set(x, "client", js.Array(value*))
       
       inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       

@@ -125,7 +125,7 @@ object NetworkProperties {
           js.Array[String] | ManagedDOMStringList, 
           integer | ManagedLong
         ])*
-    ): Self = StObject.set(x, "IPConfigs", js.Array(value :_*))
+    ): Self = StObject.set(x, "IPConfigs", js.Array(value*))
     
     inline def setMacAddress(value: String): Self = StObject.set(x, "MacAddress", value.asInstanceOf[js.Any])
     

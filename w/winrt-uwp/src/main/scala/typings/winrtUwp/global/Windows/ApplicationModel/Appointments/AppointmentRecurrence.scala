@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.ApplicationModel.Appointments
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,12 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentRecurrence")
 @js.native
 /** Initializes a new instance of the AppointmentRecurrence class. */
-class AppointmentRecurrence ()
+open class AppointmentRecurrence ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Appointments.AppointmentRecurrence {
   
   /* CompleteClass */
-  var calendarIdentifier: js.Any = js.native
+  var calendarIdentifier: Any = js.native
   
   /* unmapped type */
   /** Gets or sets the day on which an appointment occurs. Day is of type UInt32 , has a default value of 1, and can be a value from 1 to 31. */
@@ -51,7 +50,7 @@ class AppointmentRecurrence ()
   
   /** Gets or sets the date and time until which an appointment is valid. Until is of type IReference(DateTime) and is NULL by default. Until is mutually exclusive with Occurrences . */
   /* CompleteClass */
-  var until: Date = js.native
+  var until: js.Date = js.native
   
   /** Gets or sets a AppointmentWeekOfMonth -typed value that indicates the week of the month for which the appointment occurs. The first week is the default. */
   /* CompleteClass */

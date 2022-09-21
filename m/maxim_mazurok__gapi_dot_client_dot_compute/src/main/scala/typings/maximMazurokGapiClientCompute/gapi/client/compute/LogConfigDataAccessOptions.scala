@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LogConfigDataAccessOptions extends StObject {
   
+  /** This is deprecated and has no effect. Do not use. */
   var logMode: js.UndefOr[String] = js.undefined
 }
 object LogConfigDataAccessOptions {

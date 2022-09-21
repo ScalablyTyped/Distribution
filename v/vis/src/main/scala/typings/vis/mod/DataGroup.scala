@@ -49,7 +49,7 @@ object DataGroup {
     
     inline def setNestedGroupsUndefined: Self = StObject.set(x, "nestedGroups", js.undefined)
     
-    inline def setNestedGroupsVarargs(value: IdType*): Self = StObject.set(x, "nestedGroups", js.Array(value :_*))
+    inline def setNestedGroupsVarargs(value: IdType*): Self = StObject.set(x, "nestedGroups", js.Array(value*))
     
     inline def setOptions(value: DataGroupOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

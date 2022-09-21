@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TestRun extends StObject {
   
-  var firstView: js.Any
+  var firstView: Any
 }
 object TestRun {
   
-  inline def apply(firstView: js.Any): TestRun = {
+  inline def apply(firstView: Any): TestRun = {
     val __obj = js.Dynamic.literal(firstView = firstView.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestRun]
   }
   
   extension [Self <: TestRun](x: Self) {
     
-    inline def setFirstView(value: js.Any): Self = StObject.set(x, "firstView", value.asInstanceOf[js.Any])
+    inline def setFirstView(value: Any): Self = StObject.set(x, "firstView", value.asInstanceOf[js.Any])
   }
 }

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.BuildingBlockEntries")
 @js.native
-/* private */ class BuildingBlockEntries ()
+/* private */ open class BuildingBlockEntries ()
   extends StObject
      with typings.activexWord.Word.BuildingBlockEntries

@@ -1,5 +1,6 @@
 package typings.tensorflowTfjsBackendCpu
 
+import typings.tensorflowTfjsBackendCpu.unaryTypesMod.SimpleUnaryImpl
 import typings.tensorflowTfjsCore.kernelRegistryMod.KernelConfig
 import typings.tensorflowTfjsCore.kernelRegistryMod.KernelFunc
 import org.scalablytyped.runtime.StObject
@@ -15,4 +16,8 @@ object sqrtMod {
   @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/Sqrt", "sqrtConfig")
   @js.native
   val sqrtConfig: KernelConfig = js.native
+  
+  @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/Sqrt", "sqrtImpl")
+  @js.native
+  val sqrtImpl: SimpleUnaryImpl = js.native
 }

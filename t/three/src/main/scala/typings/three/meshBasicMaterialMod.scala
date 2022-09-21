@@ -1,10 +1,11 @@
 package typings.three
 
 import typings.three.colorMod.Color
-import typings.three.constantsMod.Combine
 import typings.three.materialMod.Material
 import typings.three.materialMod.MaterialParameters
+import typings.three.srcConstantsMod.Combine
 import typings.three.textureMod.Texture
+import typings.three.utilsMod.ColorRepresentation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,89 +14,95 @@ object meshBasicMaterialMod {
   
   @JSImport("three/src/materials/MeshBasicMaterial", "MeshBasicMaterial")
   @js.native
-  class MeshBasicMaterial () extends Material {
+  open class MeshBasicMaterial () extends Material {
     def this(parameters: MeshBasicMaterialParameters) = this()
     
     /**
-    	 * @default null
-    	 */
+      * @default null
+      */
     var alphaMap: Texture | Null = js.native
     
     /**
-    	 * @default null
-    	 */
+      * @default null
+      */
     var aoMap: Texture | Null = js.native
     
     /**
-    	 * @default 1
-    	 */
+      * @default 1
+      */
     var aoMapIntensity: Double = js.native
     
     /**
-    	 * @default new THREE.Color( 0xffffff )
-    	 */
+      * @default new THREE.Color( 0xffffff )
+      */
     var color: Color = js.native
     
     /**
-    	 * @default THREE.MultiplyOperation
-    	 */
+      * @default THREE.MultiplyOperation
+      */
     var combine: Combine = js.native
     
     /**
-    	 * @default null
-    	 */
+      * @default null
+      */
     var envMap: Texture | Null = js.native
     
     /**
-    	 * @default null
-    	 */
+      * Whether the material is affected by fog. Default is true.
+      * @default fog
+      */
+    var fog: Boolean = js.native
+    
+    /**
+      * @default null
+      */
+    var lightMap: Texture | Null = js.native
+    
+    /**
+      * @default 1
+      */
+    var lightMapIntensity: Double = js.native
+    
+    /**
+      * @default null
+      */
     var map: Texture | Null = js.native
     
     /**
-    	 * @default false
-    	 */
-    var morphTargets: Boolean = js.native
-    
-    /**
-    	 * @default 1
-    	 */
+      * @default 1
+      */
     var reflectivity: Double = js.native
     
     /**
-    	 * @default 0.98
-    	 */
+      * @default 0.98
+      */
     var refractionRatio: Double = js.native
     
     def setValues(parameters: MeshBasicMaterialParameters): Unit = js.native
     
     /**
-    	 * @default false
-    	 */
-    var skinning: Boolean = js.native
-    
-    /**
-    	 * @default null
-    	 */
+      * @default null
+      */
     var specularMap: Texture | Null = js.native
     
     /**
-    	 * @default false
-    	 */
+      * @default false
+      */
     var wireframe: Boolean = js.native
     
     /**
-    	 * @default 'round'
-    	 */
+      * @default 'round'
+      */
     var wireframeLinecap: String = js.native
     
     /**
-    	 * @default 'round'
-    	 */
+      * @default 'round'
+      */
     var wireframeLinejoin: String = js.native
     
     /**
-    	 * @default 1
-    	 */
+      * @default 1
+      */
     var wireframeLinewidth: Double = js.native
   }
   
@@ -109,21 +116,23 @@ object meshBasicMaterialMod {
     
     var aoMapIntensity: js.UndefOr[Double] = js.undefined
     
-    var color: js.UndefOr[Color | String | Double] = js.undefined
+    var color: js.UndefOr[ColorRepresentation] = js.undefined
     
     var combine: js.UndefOr[Combine] = js.undefined
     
     var envMap: js.UndefOr[Texture | Null] = js.undefined
     
-    var map: js.UndefOr[Texture | Null] = js.undefined
+    var fog: js.UndefOr[Boolean] = js.undefined
     
-    var morphTargets: js.UndefOr[Boolean] = js.undefined
+    var lightMap: js.UndefOr[Texture | Null] = js.undefined
+    
+    var lightMapIntensity: js.UndefOr[Double] = js.undefined
+    
+    var map: js.UndefOr[Texture | Null] = js.undefined
     
     var reflectivity: js.UndefOr[Double] = js.undefined
     
     var refractionRatio: js.UndefOr[Double] = js.undefined
-    
-    var skinning: js.UndefOr[Boolean] = js.undefined
     
     var specularMap: js.UndefOr[Texture | Null] = js.undefined
     
@@ -160,7 +169,7 @@ object meshBasicMaterialMod {
       
       inline def setAoMapUndefined: Self = StObject.set(x, "aoMap", js.undefined)
       
-      inline def setColor(value: Color | String | Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: ColorRepresentation): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
@@ -174,15 +183,25 @@ object meshBasicMaterialMod {
       
       inline def setEnvMapUndefined: Self = StObject.set(x, "envMap", js.undefined)
       
+      inline def setFog(value: Boolean): Self = StObject.set(x, "fog", value.asInstanceOf[js.Any])
+      
+      inline def setFogUndefined: Self = StObject.set(x, "fog", js.undefined)
+      
+      inline def setLightMap(value: Texture): Self = StObject.set(x, "lightMap", value.asInstanceOf[js.Any])
+      
+      inline def setLightMapIntensity(value: Double): Self = StObject.set(x, "lightMapIntensity", value.asInstanceOf[js.Any])
+      
+      inline def setLightMapIntensityUndefined: Self = StObject.set(x, "lightMapIntensity", js.undefined)
+      
+      inline def setLightMapNull: Self = StObject.set(x, "lightMap", null)
+      
+      inline def setLightMapUndefined: Self = StObject.set(x, "lightMap", js.undefined)
+      
       inline def setMap(value: Texture): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
       inline def setMapNull: Self = StObject.set(x, "map", null)
       
       inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
-      
-      inline def setMorphTargets(value: Boolean): Self = StObject.set(x, "morphTargets", value.asInstanceOf[js.Any])
-      
-      inline def setMorphTargetsUndefined: Self = StObject.set(x, "morphTargets", js.undefined)
       
       inline def setReflectivity(value: Double): Self = StObject.set(x, "reflectivity", value.asInstanceOf[js.Any])
       
@@ -191,10 +210,6 @@ object meshBasicMaterialMod {
       inline def setRefractionRatio(value: Double): Self = StObject.set(x, "refractionRatio", value.asInstanceOf[js.Any])
       
       inline def setRefractionRatioUndefined: Self = StObject.set(x, "refractionRatio", js.undefined)
-      
-      inline def setSkinning(value: Boolean): Self = StObject.set(x, "skinning", value.asInstanceOf[js.Any])
-      
-      inline def setSkinningUndefined: Self = StObject.set(x, "skinning", js.undefined)
       
       inline def setSpecularMap(value: Texture): Self = StObject.set(x, "specularMap", value.asInstanceOf[js.Any])
       

@@ -10,10 +10,10 @@ object roundedCornerMod {
   
   @JSImport("material-ui/svg-icons/action/rounded-corner", JSImport.Default)
   @js.native
-  class default () extends ActionRoundedCorner
+  open class default () extends ActionRoundedCorner
   
   @JSImport("material-ui/svg-icons/action/rounded-corner", "ActionRoundedCorner")
   @js.native
-  class ActionRoundedCorner ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionRoundedCorner ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

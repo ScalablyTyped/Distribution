@@ -42,7 +42,7 @@ trait JSTreeStaticDefaultsDragNDrop extends StObject {
     * @name $.jstree.defaults.dnd.inside_pos
     * @plugin dnd
     */
-  var inside_pos: js.Any
+  var inside_pos: Any
   
   /**
     * a function invoked each time a node is about to be dragged, invoked in the tree's scope and receives the nodes
@@ -103,7 +103,7 @@ object JSTreeStaticDefaultsDragNDrop {
     check_while_dragging: Boolean,
     copy: Boolean,
     drag_selection: Boolean,
-    inside_pos: js.Any,
+    inside_pos: Any,
     is_draggable: Boolean,
     large_drag_target: Boolean,
     large_drop_target: Boolean,
@@ -125,7 +125,7 @@ object JSTreeStaticDefaultsDragNDrop {
     
     inline def setDrag_selection(value: Boolean): Self = StObject.set(x, "drag_selection", value.asInstanceOf[js.Any])
     
-    inline def setInside_pos(value: js.Any): Self = StObject.set(x, "inside_pos", value.asInstanceOf[js.Any])
+    inline def setInside_pos(value: Any): Self = StObject.set(x, "inside_pos", value.asInstanceOf[js.Any])
     
     inline def setIs_draggable(value: Boolean): Self = StObject.set(x, "is_draggable", value.asInstanceOf[js.Any])
     

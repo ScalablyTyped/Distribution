@@ -10,11 +10,11 @@ object loggerFactoryMod {
   
   @JSImport("sip.js/lib/core/log/logger-factory", "LoggerFactory")
   @js.native
-  class LoggerFactory () extends StObject {
+  open class LoggerFactory () extends StObject {
     
-    /* private */ var _connector: js.Any = js.native
+    /* private */ var _connector: Any = js.native
     
-    /* private */ var _level: js.Any = js.native
+    /* private */ var _level: Any = js.native
     
     var builtinEnabled: Boolean = js.native
     
@@ -23,7 +23,7 @@ object loggerFactoryMod {
           /* level */ String, 
           /* category */ String, 
           /* label */ js.UndefOr[String], 
-          /* content */ js.Any, 
+          /* content */ Any, 
           Unit
         ]
       ] = js.native
@@ -33,14 +33,14 @@ object loggerFactoryMod {
             /* level */ String, 
             /* category */ String, 
             /* label */ js.UndefOr[String], 
-            /* content */ js.Any, 
+            /* content */ Any, 
             Unit
           ]
         ]
     ): Unit = js.native
     
-    def genericLog(levelToLog: Levels, category: String, label: String, content: js.Any): Unit = js.native
-    def genericLog(levelToLog: Levels, category: String, label: Unit, content: js.Any): Unit = js.native
+    def genericLog(levelToLog: Levels, category: String, label: String, content: Any): Unit = js.native
+    def genericLog(levelToLog: Levels, category: String, label: Unit, content: Any): Unit = js.native
     
     def getLogger(category: String): Logger = js.native
     def getLogger(category: String, label: String): Logger = js.native
@@ -48,10 +48,10 @@ object loggerFactoryMod {
     def level: Levels = js.native
     def level_=(newLevel: Levels): Unit = js.native
     
-    /* private */ var logger: js.Any = js.native
+    /* private */ var logger: Any = js.native
     
-    /* private */ var loggers: js.Any = js.native
+    /* private */ var loggers: Any = js.native
     
-    /* private */ var print: js.Any = js.native
+    /* private */ var print: Any = js.native
   }
 }

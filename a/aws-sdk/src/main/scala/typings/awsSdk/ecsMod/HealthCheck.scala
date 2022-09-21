@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HealthCheck extends StObject {
   
   /**
-    * A string array representing the command that the container runs to determine if it is healthy. The string array must start with CMD to execute the command arguments directly, or CMD-SHELL to run the command with the container's default shell. For example:  [ "CMD-SHELL", "curl -f http://localhost/ || exit 1" ]  An exit code of 0 indicates success, and non-zero exit code indicates failure. For more information, see HealthCheck in the Create a container section of the Docker Remote API.
+    * A string array representing the command that the container runs to determine if it is healthy. The string array must start with CMD to run the command arguments directly, or CMD-SHELL to run the command with the container's default shell.   When you use the Amazon Web Services Management Console JSON panel, the Command Line Interface, or the APIs, enclose the list of commands in brackets.  [ "CMD-SHELL", "curl -f http://localhost/ || exit 1" ]  You don't need to include the brackets when you use the Amazon Web Services Management Console.   "CMD-SHELL", "curl -f http://localhost/ || exit 1"   An exit code of 0 indicates success, and non-zero exit code indicates failure. For more information, see HealthCheck in the Create a container section of the Docker Remote API.
     */
   var command: StringList
   
@@ -22,7 +22,7 @@ trait HealthCheck extends StObject {
   var retries: js.UndefOr[BoxedInteger] = js.undefined
   
   /**
-    * The optional grace period within which to provide containers time to bootstrap before failed health checks count towards the maximum number of retries. You may specify between 0 and 300 seconds. The startPeriod is disabled by default.  If a health check succeeds within the startPeriod, then the container is considered healthy and any subsequent failures count toward the maximum number of retries. 
+    * The optional grace period to provide containers time to bootstrap before failed health checks count towards the maximum number of retries. You can specify between 0 and 300 seconds. By default, the startPeriod is disabled.  If a health check succeeds within the startPeriod, then the container is considered healthy and any subsequent failures count toward the maximum number of retries. 
     */
   var startPeriod: js.UndefOr[BoxedInteger] = js.undefined
   
@@ -42,7 +42,7 @@ object HealthCheck {
     
     inline def setCommand(value: StringList): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
-    inline def setCommandVarargs(value: String*): Self = StObject.set(x, "command", js.Array(value :_*))
+    inline def setCommandVarargs(value: String*): Self = StObject.set(x, "command", js.Array(value*))
     
     inline def setInterval(value: BoxedInteger): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     

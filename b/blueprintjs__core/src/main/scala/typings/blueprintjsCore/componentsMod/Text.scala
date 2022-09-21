@@ -1,17 +1,17 @@
 package typings.blueprintjsCore.componentsMod
 
-import typings.blueprintjsCore.anon.PartialITextProps
-import typings.blueprintjsCore.textMod.ITextProps
+import typings.blueprintjsCore.anon.PartialTextProps
+import typings.blueprintjsCore.anon.TextPropsOmitHTMLAttribut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core/lib/esm/components", "Text")
 @js.native
-class Text protected ()
+open class Text protected ()
   extends typings.blueprintjsCore.textMod.Text {
-  def this(props: ITextProps) = this()
-  def this(props: ITextProps, context: js.Any) = this()
+  def this(props: TextPropsOmitHTMLAttribut) = this()
+  def this(props: TextPropsOmitHTMLAttribut, context: Any) = this()
 }
 /* static members */
 object Text {
@@ -22,8 +22,8 @@ object Text {
   
   @JSImport("@blueprintjs/core/lib/esm/components", "Text.defaultProps")
   @js.native
-  def defaultProps: PartialITextProps = js.native
-  inline def defaultProps_=(x: PartialITextProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  def defaultProps: PartialTextProps = js.native
+  inline def defaultProps_=(x: PartialTextProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   
   @JSImport("@blueprintjs/core/lib/esm/components", "Text.displayName")
   @js.native

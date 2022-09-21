@@ -11,7 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CommonUserstate
   extends StObject
-     with /* paramater */ StringDictionary[js.Any] {
+     with /* paramater */ StringDictionary[Any] {
+  
+  var `badge-info`: js.UndefOr[BadgeInfo] = js.undefined
+  
+  var `badge-info-raw`: js.UndefOr[String] = js.undefined
   
   var badges: js.UndefOr[Badges] = js.undefined
   
@@ -51,6 +55,14 @@ object CommonUserstate {
   }
   
   extension [Self <: CommonUserstate](x: Self) {
+    
+    inline def `setBadge-info`(value: BadgeInfo): Self = StObject.set(x, "badge-info", value.asInstanceOf[js.Any])
+    
+    inline def `setBadge-info-raw`(value: String): Self = StObject.set(x, "badge-info-raw", value.asInstanceOf[js.Any])
+    
+    inline def `setBadge-info-rawUndefined`: Self = StObject.set(x, "badge-info-raw", js.undefined)
+    
+    inline def `setBadge-infoUndefined`: Self = StObject.set(x, "badge-info", js.undefined)
     
     inline def setBadges(value: Badges): Self = StObject.set(x, "badges", value.asInstanceOf[js.Any])
     

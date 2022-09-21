@@ -23,10 +23,10 @@ object IBUDDY_LIST_INIT {
     
     inline def setBuddyList(value: js.Array[SFSBuddy]): Self = StObject.set(x, "buddyList", value.asInstanceOf[js.Any])
     
-    inline def setBuddyListVarargs(value: SFSBuddy*): Self = StObject.set(x, "buddyList", js.Array(value :_*))
+    inline def setBuddyListVarargs(value: SFSBuddy*): Self = StObject.set(x, "buddyList", js.Array(value*))
     
     inline def setMyVariables(value: js.Array[SFSBuddyVariable]): Self = StObject.set(x, "myVariables", value.asInstanceOf[js.Any])
     
-    inline def setMyVariablesVarargs(value: SFSBuddyVariable*): Self = StObject.set(x, "myVariables", js.Array(value :_*))
+    inline def setMyVariablesVarargs(value: SFSBuddyVariable*): Self = StObject.set(x, "myVariables", js.Array(value*))
   }
 }

@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A response for listing creatives.
-  */
 trait SchemaListCreativesResponse extends StObject {
   
   /**
@@ -15,11 +12,9 @@ trait SchemaListCreativesResponse extends StObject {
   var creatives: js.UndefOr[js.Array[SchemaCreative]] = js.undefined
   
   /**
-    * A token to retrieve the next page of results. Pass this value in the
-    * ListCreativesRequest.page_token field in the subsequent call to
-    * `ListCreatives` method to retrieve the next page of results.
+    * A token to retrieve the next page of results. Pass this value in the ListCreativesRequest.page_token field in the subsequent call to `ListCreatives` method to retrieve the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaListCreativesResponse {
   
@@ -34,9 +29,11 @@ object SchemaListCreativesResponse {
     
     inline def setCreativesUndefined: Self = StObject.set(x, "creatives", js.undefined)
     
-    inline def setCreativesVarargs(value: SchemaCreative*): Self = StObject.set(x, "creatives", js.Array(value :_*))
+    inline def setCreativesVarargs(value: SchemaCreative*): Self = StObject.set(x, "creatives", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

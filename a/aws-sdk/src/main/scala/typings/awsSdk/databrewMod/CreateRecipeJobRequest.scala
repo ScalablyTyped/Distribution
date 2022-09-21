@@ -7,6 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateRecipeJobRequest extends StObject {
   
   /**
+    * One or more artifacts that represent the Glue Data Catalog output from running the job.
+    */
+  var DataCatalogOutputs: js.UndefOr[DataCatalogOutputList] = js.undefined
+  
+  /**
+    * Represents a list of JDBC database output objects which defines the output destination for a DataBrew recipe job to write to. 
+    */
+  var DatabaseOutputs: js.UndefOr[DatabaseOutputList] = js.undefined
+  
+  /**
     * The name of the dataset that this job processes.
     */
   var DatasetName: js.UndefOr[typings.awsSdk.databrewMod.DatasetName] = js.undefined
@@ -17,12 +27,12 @@ trait CreateRecipeJobRequest extends StObject {
   var EncryptionKeyArn: js.UndefOr[typings.awsSdk.databrewMod.EncryptionKeyArn] = js.undefined
   
   /**
-    * The encryption mode for the job, which can be one of the following:    SSE-KMS - Server-side encryption with AWS KMS-managed keys.    SSE-S3 - Server-side encryption with keys managed by Amazon S3.  
+    * The encryption mode for the job, which can be one of the following:    SSE-KMS - Server-side encryption with keys managed by KMS.    SSE-S3 - Server-side encryption with keys managed by Amazon S3.  
     */
   var EncryptionMode: js.UndefOr[typings.awsSdk.databrewMod.EncryptionMode] = js.undefined
   
   /**
-    * A value that enables or disables Amazon CloudWatch logging for the current AWS account. If logging is enabled, CloudWatch writes one log stream for each job run.
+    * Enables or disables Amazon CloudWatch logging for the job. If logging is enabled, CloudWatch writes one log stream for each job run.
     */
   var LogSubscription: js.UndefOr[typings.awsSdk.databrewMod.LogSubscription] = js.undefined
   
@@ -37,14 +47,14 @@ trait CreateRecipeJobRequest extends StObject {
   var MaxRetries: js.UndefOr[typings.awsSdk.databrewMod.MaxRetries] = js.undefined
   
   /**
-    * A unique name for the job.
+    * A unique name for the job. Valid characters are alphanumeric (A-Z, a-z, 0-9), hyphen (-), period (.), and space.
     */
   var Name: JobName
   
   /**
     * One or more artifacts that represent the output from running the job.
     */
-  var Outputs: OutputList
+  var Outputs: js.UndefOr[OutputList] = js.undefined
   
   /**
     * Either the name of an existing project, or a combination of a recipe and a dataset to associate with the recipe.
@@ -54,12 +64,12 @@ trait CreateRecipeJobRequest extends StObject {
   var RecipeReference: js.UndefOr[typings.awsSdk.databrewMod.RecipeReference] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role to be assumed for this request.
+    * The Amazon Resource Name (ARN) of the Identity and Access Management (IAM) role to be assumed when DataBrew runs the job.
     */
   var RoleArn: Arn
   
   /**
-    * Metadata tags to apply to this job dataset.
+    * Metadata tags to apply to this job.
     */
   var Tags: js.UndefOr[TagMap] = js.undefined
   
@@ -70,12 +80,24 @@ trait CreateRecipeJobRequest extends StObject {
 }
 object CreateRecipeJobRequest {
   
-  inline def apply(Name: JobName, Outputs: OutputList, RoleArn: Arn): CreateRecipeJobRequest = {
-    val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Outputs = Outputs.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any])
+  inline def apply(Name: JobName, RoleArn: Arn): CreateRecipeJobRequest = {
+    val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateRecipeJobRequest]
   }
   
   extension [Self <: CreateRecipeJobRequest](x: Self) {
+    
+    inline def setDataCatalogOutputs(value: DataCatalogOutputList): Self = StObject.set(x, "DataCatalogOutputs", value.asInstanceOf[js.Any])
+    
+    inline def setDataCatalogOutputsUndefined: Self = StObject.set(x, "DataCatalogOutputs", js.undefined)
+    
+    inline def setDataCatalogOutputsVarargs(value: DataCatalogOutput*): Self = StObject.set(x, "DataCatalogOutputs", js.Array(value*))
+    
+    inline def setDatabaseOutputs(value: DatabaseOutputList): Self = StObject.set(x, "DatabaseOutputs", value.asInstanceOf[js.Any])
+    
+    inline def setDatabaseOutputsUndefined: Self = StObject.set(x, "DatabaseOutputs", js.undefined)
+    
+    inline def setDatabaseOutputsVarargs(value: DatabaseOutput*): Self = StObject.set(x, "DatabaseOutputs", js.Array(value*))
     
     inline def setDatasetName(value: DatasetName): Self = StObject.set(x, "DatasetName", value.asInstanceOf[js.Any])
     
@@ -105,7 +127,9 @@ object CreateRecipeJobRequest {
     
     inline def setOutputs(value: OutputList): Self = StObject.set(x, "Outputs", value.asInstanceOf[js.Any])
     
-    inline def setOutputsVarargs(value: Output*): Self = StObject.set(x, "Outputs", js.Array(value :_*))
+    inline def setOutputsUndefined: Self = StObject.set(x, "Outputs", js.undefined)
+    
+    inline def setOutputsVarargs(value: Output*): Self = StObject.set(x, "Outputs", js.Array(value*))
     
     inline def setProjectName(value: ProjectName): Self = StObject.set(x, "ProjectName", value.asInstanceOf[js.Any])
     

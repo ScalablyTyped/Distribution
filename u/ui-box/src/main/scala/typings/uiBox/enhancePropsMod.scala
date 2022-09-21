@@ -14,7 +14,7 @@ object enhancePropsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(rawProps: EnhancerProps & ComponentPropsWithoutRef[js.Any]): EnhancedPropsResult = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(rawProps.asInstanceOf[js.Any]).asInstanceOf[EnhancedPropsResult]
+  inline def default(rawProps: EnhancerProps & ComponentPropsWithoutRef[Any]): EnhancedPropsResult = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(rawProps.asInstanceOf[js.Any]).asInstanceOf[EnhancedPropsResult]
   
   trait EnhancedPropsResult extends StObject {
     
@@ -38,7 +38,7 @@ object enhancePropsMod {
   }
   
   type PreservedProps = Without[
-    ComponentProps[js.Any], 
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 143 */ js.Any
+    ComponentProps[Any], 
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 143 */ Any
   ]
 }

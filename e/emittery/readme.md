@@ -1,7 +1,7 @@
 
 # Scala.js typings for emittery
 
-Typings are for version 0.7.2
+Typings are for version 1.0.0
 
 ## Library description:
 Simple and modern async event emitter
@@ -10,10 +10,10 @@ Simple and modern async event emitter
 | ------------------ | :-------------: |
 | Full name          | emittery |
 | Keywords           | event, emitter, eventemitter, events, async, emit, on, once, off, listener, subscribe, unsubscribe, pubsub, tiny, addlistener, addeventlistener, dispatch, dispatcher, observer, trigger, await, promise, typescript, ts, typed |
-| # releases         | 7 |
-| # dependents       | 120 |
-| # downloads        | 44103318 |
-| # stars            | 1 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 6.4431567333333336E7 |
+| # stars            | 1459.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/emittery#readme)

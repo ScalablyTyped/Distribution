@@ -1,19 +1,18 @@
 package typings.procfsStats.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait FileDescriptorStat extends StObject {
   
-  var atime: Date
+  var atime: js.Date
   
   var blksize: Double
   
   var blocks: Double
   
-  var ctime: Date
+  var ctime: js.Date
   
   var dev: Double
   
@@ -23,7 +22,7 @@ trait FileDescriptorStat extends StObject {
   
   var mode: Double
   
-  var mtime: Date
+  var mtime: js.Date
   
   var nlink: Double
   
@@ -36,15 +35,15 @@ trait FileDescriptorStat extends StObject {
 object FileDescriptorStat {
   
   inline def apply(
-    atime: Date,
+    atime: js.Date,
     blksize: Double,
     blocks: Double,
-    ctime: Date,
+    ctime: js.Date,
     dev: Double,
     gid: Double,
     ino: Double,
     mode: Double,
-    mtime: Date,
+    mtime: js.Date,
     nlink: Double,
     rdev: Double,
     size: Double,
@@ -56,13 +55,13 @@ object FileDescriptorStat {
   
   extension [Self <: FileDescriptorStat](x: Self) {
     
-    inline def setAtime(value: Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
+    inline def setAtime(value: js.Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
     
     inline def setBlksize(value: Double): Self = StObject.set(x, "blksize", value.asInstanceOf[js.Any])
     
     inline def setBlocks(value: Double): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
     
-    inline def setCtime(value: Date): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
+    inline def setCtime(value: js.Date): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
     
     inline def setDev(value: Double): Self = StObject.set(x, "dev", value.asInstanceOf[js.Any])
     
@@ -72,7 +71,7 @@ object FileDescriptorStat {
     
     inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    inline def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+    inline def setMtime(value: js.Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
     
     inline def setNlink(value: Double): Self = StObject.set(x, "nlink", value.asInstanceOf[js.Any])
     

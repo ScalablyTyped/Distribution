@@ -29,7 +29,7 @@ object JobAlbumArt {
     
     inline def setArtworkUndefined: Self = StObject.set(x, "Artwork", js.undefined)
     
-    inline def setArtworkVarargs(value: Artwork*): Self = StObject.set(x, "Artwork", js.Array(value :_*))
+    inline def setArtworkVarargs(value: Artwork*): Self = StObject.set(x, "Artwork", js.Array(value*))
     
     inline def setMergePolicy(value: MergePolicy): Self = StObject.set(x, "MergePolicy", value.asInstanceOf[js.Any])
     

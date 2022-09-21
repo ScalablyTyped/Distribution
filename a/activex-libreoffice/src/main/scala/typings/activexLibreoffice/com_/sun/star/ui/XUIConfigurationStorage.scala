@@ -32,7 +32,7 @@ object XUIConfigurationStorage {
   inline def apply(
     acquire: () => Unit,
     hasStorage: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setStorage: XStorage => Unit
   ): XUIConfigurationStorage = {

@@ -9,7 +9,6 @@ import typings.hapi.mod.Json.StringifyArguments
 import typings.hapi.mod.Lifecycle.Method
 import typings.hapi.mod.Lifecycle.ReturnValue
 import typings.hapi.mod.Util.Dictionary
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -291,7 +290,7 @@ object RouteOptions {
     inline def setHandler(value: Method | js.Object): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     
     inline def setHandlerFunction3(
-      value: (/* request */ Request, /* h */ ResponseToolkit, /* err */ js.UndefOr[Error]) => ReturnValue
+      value: (/* request */ Request, /* h */ ResponseToolkit, /* err */ js.UndefOr[js.Error]) => ReturnValue
     ): Self = StObject.set(x, "handler", js.Any.fromFunction3(value))
     
     inline def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
@@ -320,7 +319,7 @@ object RouteOptions {
     
     inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
     
-    inline def setNotesVarargs(value: String*): Self = StObject.set(x, "notes", js.Array(value :_*))
+    inline def setNotesVarargs(value: String*): Self = StObject.set(x, "notes", js.Array(value*))
     
     inline def setPayload(value: RouteOptionsPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
@@ -334,7 +333,7 @@ object RouteOptions {
     
     inline def setPreUndefined: Self = StObject.set(x, "pre", js.undefined)
     
-    inline def setPreVarargs(value: RouteOptionsPreAllOptions*): Self = StObject.set(x, "pre", js.Array(value :_*))
+    inline def setPreVarargs(value: RouteOptionsPreAllOptions*): Self = StObject.set(x, "pre", js.Array(value*))
     
     inline def setResponse(value: RouteOptionsResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
@@ -352,7 +351,7 @@ object RouteOptions {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setTimeout(value: typings.hapi.anon.Server): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     

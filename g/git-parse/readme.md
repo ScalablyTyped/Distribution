@@ -1,7 +1,7 @@
 
 # Scala.js typings for git-parse
 
-Typings are for version 1.0
+Typings are for version 3.0.0
 
 ## Library description:
 Turn a git repository into a javascript object.
@@ -10,10 +10,10 @@ Turn a git repository into a javascript object.
 | ------------------ | :-------------: |
 | Full name          | git-parse |
 | Keywords           | git |
-| # releases         | 2 |
-| # dependents       | 8 |
-| # downloads        | 14708935 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 2053493.6666666667 |
+| # stars            | 28.0 |
 
 ## Links
 - [Homepage](https://github.com/wayfair/git-parse#readme)
@@ -24,7 +24,7 @@ Turn a git repository into a javascript object.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -89,7 +89,7 @@ trait nlobjSearchColumn extends StObject {
     * @param order
     * @return
     */
-  def setSort(order: js.Any): js.Function3[/* name */ String, /* join */ String, /* summary */ String, Unit]
+  def setSort(order: Any): js.Function3[/* name */ String, /* join */ String, /* summary */ String, Unit]
 }
 object nlobjSearchColumn {
   
@@ -100,7 +100,7 @@ object nlobjSearchColumn {
     getName: () => String,
     getSummary: () => String,
     setLabel: String => nlobjSearchColumn,
-    setSort: js.Any => js.Function3[/* name */ String, /* join */ String, /* summary */ String, Unit]
+    setSort: Any => js.Function3[/* name */ String, /* join */ String, /* summary */ String, Unit]
   ): nlobjSearchColumn = {
     val __obj = js.Dynamic.literal(getFormula = js.Any.fromFunction0(getFormula), getJoin = js.Any.fromFunction0(getJoin), getLabel = js.Any.fromFunction0(getLabel), getName = js.Any.fromFunction0(getName), getSummary = js.Any.fromFunction0(getSummary), setLabel = js.Any.fromFunction1(setLabel), setSort = js.Any.fromFunction1(setSort))
     __obj.asInstanceOf[nlobjSearchColumn]
@@ -120,6 +120,6 @@ object nlobjSearchColumn {
     
     inline def setSetLabel(value: String => nlobjSearchColumn): Self = StObject.set(x, "setLabel", js.Any.fromFunction1(value))
     
-    inline def setSetSort(value: js.Any => js.Function3[/* name */ String, /* join */ String, /* summary */ String, Unit]): Self = StObject.set(x, "setSort", js.Any.fromFunction1(value))
+    inline def setSetSort(value: Any => js.Function3[/* name */ String, /* join */ String, /* summary */ String, Unit]): Self = StObject.set(x, "setSort", js.Any.fromFunction1(value))
   }
 }

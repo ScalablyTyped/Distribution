@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("node-mysql-wrapper", "Connection")
 @js.native
-class Connection protected () extends EventEmitter {
+open class Connection protected () extends EventEmitter {
   def this(connection: String) = this()
   def this(connection: typings.mysql.mod.Connection) = this()
   def this(connection: ConnectionConfig) = this()
@@ -57,7 +57,7 @@ class Connection protected () extends EventEmitter {
     * @return {nothing}
     */
   def end(): Unit = js.native
-  def end(callback: js.Function1[/* error */ js.Any, Unit]): Unit = js.native
+  def end(callback: js.Function1[/* error */ Any, Unit]): Unit = js.native
   
   /**
     * Escape the query column's value  and return it.
@@ -96,7 +96,7 @@ class Connection protected () extends EventEmitter {
     * @returnType {nothing}
     * @return {nothing}
     */
-  def notice(tableWhichCalled: String, queryStr: String, rawRows: js.Array[js.Any]): Unit = js.native
+  def notice(tableWhichCalled: String, queryStr: String, rawRows: js.Array[Any]): Unit = js.native
   
   /**
     * Executes a database query.
@@ -106,11 +106,11 @@ class Connection protected () extends EventEmitter {
     * @returnType {nothing}
     * @return {nothing}
     */
-  def query(queryStr: String, callback: js.Function2[/* err */ MysqlError, /* results */ js.Any, js.Any]): Unit = js.native
+  def query(queryStr: String, callback: js.Function2[/* err */ MysqlError, /* results */ Any, Any]): Unit = js.native
   def query(
     queryStr: String,
-    callback: js.Function2[/* err */ MysqlError, /* results */ js.Any, js.Any],
-    queryArguments: js.Array[js.Any]
+    callback: js.Function2[/* err */ MysqlError, /* results */ Any, Any],
+    queryArguments: js.Array[Any]
   ): Unit = js.native
   
   /**
@@ -125,12 +125,12 @@ class Connection protected () extends EventEmitter {
   /**
     * Force to fetch ONLY these Database table names {array of string}.
     */
-  var tableNamesToUseOnly: js.Array[js.Any] = js.native
+  var tableNamesToUseOnly: js.Array[Any] = js.native
   
   /**
     * All tables {MysqlTable} inside this connection's database.
     */
-  var tables: js.Array[Table[js.Any]] = js.native
+  var tables: js.Array[Table[Any]] = js.native
   
   /**
     * Removes an event listener/watcher from a table for a specific event type.
@@ -143,7 +143,7 @@ class Connection protected () extends EventEmitter {
   def unwatch(
     tableName: String,
     evtType: String,
-    callbackToRemove: js.Function1[/* rawResults */ js.Array[js.Any], Unit]
+    callbackToRemove: js.Function1[/* rawResults */ js.Array[Any], Unit]
   ): Unit = js.native
   
   /**
@@ -152,7 +152,7 @@ class Connection protected () extends EventEmitter {
     * @returnType {nothing}
     * @return {nothing}
     */
-  def useOnly(tables: js.Any*): Unit = js.native
+  def useOnly(tables: Any*): Unit = js.native
   
   /**
     * Adds an event listener/watcher on a table for a 'database event'.
@@ -162,5 +162,5 @@ class Connection protected () extends EventEmitter {
     * @returnType {nothing}
     * @return {nothing}
     */
-  def watch(tableName: String, evtType: js.Any, callback: js.Function1[/* rawRows */ js.Array[js.Any], Unit]): Unit = js.native
+  def watch(tableName: String, evtType: Any, callback: js.Function1[/* rawRows */ js.Array[Any], Unit]): Unit = js.native
 }

@@ -1,6 +1,5 @@
 package typings.iobroker.mod.global.ioBroker
 
-import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,7 +31,7 @@ trait State extends StObject {
   var user: js.UndefOr[String] = js.undefined
   
   /** The value of the state. */
-  var `val`: String | Double | Boolean | js.Array[js.Any] | (Record[String, js.Any]) | Null
+  var `val`: StateValue
 }
 object State {
   
@@ -68,10 +67,8 @@ object State {
     
     inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     
-    inline def setVal(value: String | Double | Boolean | js.Array[js.Any] | (Record[String, js.Any])): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
+    inline def setVal(value: StateValue): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
     
     inline def setValNull: Self = StObject.set(x, "val", null)
-    
-    inline def setValVarargs(value: js.Any*): Self = StObject.set(x, "val", js.Array(value :_*))
   }
 }

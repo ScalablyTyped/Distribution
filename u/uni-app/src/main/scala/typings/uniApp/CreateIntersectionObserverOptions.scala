@@ -19,7 +19,7 @@ trait CreateIntersectionObserverOptions extends StObject {
   /**
     * 所有阈值
     */
-  var thresholds: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var thresholds: js.UndefOr[js.Array[Any]] = js.undefined
 }
 object CreateIntersectionObserverOptions {
   
@@ -38,10 +38,10 @@ object CreateIntersectionObserverOptions {
     
     inline def setSelectAllUndefined: Self = StObject.set(x, "selectAll", js.undefined)
     
-    inline def setThresholds(value: js.Array[js.Any]): Self = StObject.set(x, "thresholds", value.asInstanceOf[js.Any])
+    inline def setThresholds(value: js.Array[Any]): Self = StObject.set(x, "thresholds", value.asInstanceOf[js.Any])
     
     inline def setThresholdsUndefined: Self = StObject.set(x, "thresholds", js.undefined)
     
-    inline def setThresholdsVarargs(value: js.Any*): Self = StObject.set(x, "thresholds", js.Array(value :_*))
+    inline def setThresholdsVarargs(value: Any*): Self = StObject.set(x, "thresholds", js.Array(value*))
   }
 }

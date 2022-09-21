@@ -1,25 +1,16 @@
 package typings.babylonjs.global.BABYLON
 
+import typings.babylonjs.BABYLON.IMouseEvent
 import typings.babylonjs.BABYLON.Nullable
-import typings.std.MouseWheelEvent
-import typings.std.PointerEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.PointerInfo")
 @js.native
-class PointerInfo protected ()
+open class PointerInfo protected ()
   extends StObject
      with typings.babylonjs.BABYLON.PointerInfo {
-  def this(
-    `type`: Double,
-    event: MouseWheelEvent,
-    /**
-    * Defines the picking info associated to the info (if any)\
-    */
-  pickInfo: Nullable[typings.babylonjs.BABYLON.PickingInfo]
-  ) = this()
   /**
     * Instantiates a PointerInfo to store pointer related info to the onPointerObservable event.
     * @param type Defines the type of event (PointerEventTypes)
@@ -28,7 +19,7 @@ class PointerInfo protected ()
     */
   def this(
     `type`: Double,
-    event: PointerEvent,
+    event: IMouseEvent,
     /**
     * Defines the picking info associated to the info (if any)\
     */
@@ -39,7 +30,7 @@ class PointerInfo protected ()
     * Defines the related dom event
     */
   /* CompleteClass */
-  var event: PointerEvent | MouseWheelEvent = js.native
+  var event: IMouseEvent = js.native
   
   /**
     * Defines the picking info associated to the info (if any)\

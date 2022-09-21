@@ -10,7 +10,7 @@ trait IgGridColumnFixingLocale
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Text of the feature chooser button for fixing a currently unfixed column.

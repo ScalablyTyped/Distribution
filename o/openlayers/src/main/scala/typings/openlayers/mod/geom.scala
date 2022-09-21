@@ -17,7 +17,7 @@ object geom {
     */
   @JSImport("openlayers", "geom.Circle")
   @js.native
-  class Circle protected () extends SimpleGeometry {
+  open class Circle protected () extends SimpleGeometry {
     /**
       * @classdesc
       * Circle geometry.
@@ -102,7 +102,7 @@ object geom {
     *
     * @api stable
     */
-  class Geometry () extends Object {
+  open class Geometry () extends Object {
     
     /**
       * Return the closest point of the geometry to the passed point as
@@ -210,7 +210,7 @@ object geom {
     * @param opt_geometries Geometries.
     * @api stable
     */
-  class GeometryCollection () extends Geometry {
+  open class GeometryCollection () extends Geometry {
     def this(opt_geometries: js.Array[Geometry]) = this()
     
     /**
@@ -258,7 +258,7 @@ object geom {
     */
   @JSImport("openlayers", "geom.LineString")
   @js.native
-  class LineString protected () extends SimpleGeometry {
+  open class LineString protected () extends SimpleGeometry {
     /**
       * @classdesc
       * Linestring geometry.
@@ -367,7 +367,7 @@ object geom {
     */
   @JSImport("openlayers", "geom.LinearRing")
   @js.native
-  class LinearRing protected () extends SimpleGeometry {
+  open class LinearRing protected () extends SimpleGeometry {
     /**
       * @classdesc
       * Linear ring geometry. Only used as part of polygon; cannot be rendered
@@ -414,7 +414,7 @@ object geom {
     */
   @JSImport("openlayers", "geom.MultiLineString")
   @js.native
-  class MultiLineString protected () extends SimpleGeometry {
+  open class MultiLineString protected () extends SimpleGeometry {
     /**
       * @classdesc
       * Multi-linestring geometry.
@@ -508,7 +508,7 @@ object geom {
     */
   @JSImport("openlayers", "geom.MultiPoint")
   @js.native
-  class MultiPoint protected () extends SimpleGeometry {
+  open class MultiPoint protected () extends SimpleGeometry {
     /**
       * @classdesc
       * Multi-point geometry.
@@ -575,7 +575,7 @@ object geom {
     */
   @JSImport("openlayers", "geom.MultiPolygon")
   @js.native
-  class MultiPolygon protected () extends SimpleGeometry {
+  open class MultiPolygon protected () extends SimpleGeometry {
     /**
       * @classdesc
       * Multi-polygon geometry.
@@ -665,7 +665,7 @@ object geom {
     */
   @JSImport("openlayers", "geom.Point")
   @js.native
-  class Point protected () extends SimpleGeometry {
+  open class Point protected () extends SimpleGeometry {
     /**
       * @classdesc
       * Point geometry.
@@ -710,7 +710,7 @@ object geom {
     */
   @JSImport("openlayers", "geom.Polygon")
   @js.native
-  class Polygon protected () extends SimpleGeometry {
+  open class Polygon protected () extends SimpleGeometry {
     /**
       * @classdesc
       * Polygon geometry.
@@ -864,7 +864,7 @@ object geom {
     *
     * @api stable
     */
-  class SimpleGeometry () extends Geometry {
+  open class SimpleGeometry () extends Geometry {
     
     /**
       * @inheritDoc

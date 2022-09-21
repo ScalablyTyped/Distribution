@@ -29,7 +29,7 @@ trait ASPxClientDashboardItemUnderlyingData extends StObject {
     * @param rowIndex An integer value that specifies the zero-based index of the required row.
     * @param dataMember A String that specifies the required data member.
     */
-  def GetRowValue(rowIndex: Double, dataMember: String): js.Any
+  def GetRowValue(rowIndex: Double, dataMember: String): Any
   
   /**
     * Returns whether a request for underlying data was successful.
@@ -42,7 +42,7 @@ object ASPxClientDashboardItemUnderlyingData {
     GetDataMembers: () => js.Array[String],
     GetRequestDataError: () => String,
     GetRowCount: () => Double,
-    GetRowValue: (Double, String) => js.Any,
+    GetRowValue: (Double, String) => Any,
     IsDataReceived: () => Boolean
   ): ASPxClientDashboardItemUnderlyingData = {
     val __obj = js.Dynamic.literal(GetDataMembers = js.Any.fromFunction0(GetDataMembers), GetRequestDataError = js.Any.fromFunction0(GetRequestDataError), GetRowCount = js.Any.fromFunction0(GetRowCount), GetRowValue = js.Any.fromFunction2(GetRowValue), IsDataReceived = js.Any.fromFunction0(IsDataReceived))
@@ -57,7 +57,7 @@ object ASPxClientDashboardItemUnderlyingData {
     
     inline def setGetRowCount(value: () => Double): Self = StObject.set(x, "GetRowCount", js.Any.fromFunction0(value))
     
-    inline def setGetRowValue(value: (Double, String) => js.Any): Self = StObject.set(x, "GetRowValue", js.Any.fromFunction2(value))
+    inline def setGetRowValue(value: (Double, String) => Any): Self = StObject.set(x, "GetRowValue", js.Any.fromFunction2(value))
     
     inline def setIsDataReceived(value: () => Boolean): Self = StObject.set(x, "IsDataReceived", js.Any.fromFunction0(value))
   }

@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@blueprintjs/core", "Hotkeys")
 @js.native
-class Hotkeys protected ()
+open class Hotkeys protected ()
   extends typings.blueprintjsCore.componentsMod.Hotkeys {
   def this(props: IHotkeysProps) = this()
-  def this(props: IHotkeysProps, context: js.Any) = this()
+  def this(props: IHotkeysProps, context: Any) = this()
 }
 /* static members */
 object Hotkeys {

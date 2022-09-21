@@ -179,13 +179,13 @@ object anon {
       
       inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      inline def setFilesVarargs(value: IFile*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: IFile*): Self = StObject.set(x, "files", js.Array(value*))
       
       inline def setFolders(value: js.Array[IFolder]): Self = StObject.set(x, "folders", value.asInstanceOf[js.Any])
       
       inline def setFoldersUndefined: Self = StObject.set(x, "folders", js.undefined)
       
-      inline def setFoldersVarargs(value: IFolder*): Self = StObject.set(x, "folders", js.Array(value :_*))
+      inline def setFoldersVarargs(value: IFolder*): Self = StObject.set(x, "folders", js.Array(value*))
     }
   }
   

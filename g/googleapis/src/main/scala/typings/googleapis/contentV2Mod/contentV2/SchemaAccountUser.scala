@@ -9,27 +9,27 @@ trait SchemaAccountUser extends StObject {
   /**
     * Whether user is an admin.
     */
-  var admin: js.UndefOr[Boolean] = js.undefined
+  var admin: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * User&#39;s email address.
+    * User's email address.
     */
-  var emailAddress: js.UndefOr[String] = js.undefined
+  var emailAddress: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Whether user is an order manager.
     */
-  var orderManager: js.UndefOr[Boolean] = js.undefined
+  var orderManager: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * Whether user can access payment statements.
     */
-  var paymentsAnalyst: js.UndefOr[Boolean] = js.undefined
+  var paymentsAnalyst: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * Whether user can manage payment settings.
     */
-  var paymentsManager: js.UndefOr[Boolean] = js.undefined
+  var paymentsManager: js.UndefOr[Boolean | Null] = js.undefined
 }
 object SchemaAccountUser {
   
@@ -42,21 +42,31 @@ object SchemaAccountUser {
     
     inline def setAdmin(value: Boolean): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
     
+    inline def setAdminNull: Self = StObject.set(x, "admin", null)
+    
     inline def setAdminUndefined: Self = StObject.set(x, "admin", js.undefined)
     
     inline def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
+    
+    inline def setEmailAddressNull: Self = StObject.set(x, "emailAddress", null)
     
     inline def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
     
     inline def setOrderManager(value: Boolean): Self = StObject.set(x, "orderManager", value.asInstanceOf[js.Any])
     
+    inline def setOrderManagerNull: Self = StObject.set(x, "orderManager", null)
+    
     inline def setOrderManagerUndefined: Self = StObject.set(x, "orderManager", js.undefined)
     
     inline def setPaymentsAnalyst(value: Boolean): Self = StObject.set(x, "paymentsAnalyst", value.asInstanceOf[js.Any])
     
+    inline def setPaymentsAnalystNull: Self = StObject.set(x, "paymentsAnalyst", null)
+    
     inline def setPaymentsAnalystUndefined: Self = StObject.set(x, "paymentsAnalyst", js.undefined)
     
     inline def setPaymentsManager(value: Boolean): Self = StObject.set(x, "paymentsManager", value.asInstanceOf[js.Any])
+    
+    inline def setPaymentsManagerNull: Self = StObject.set(x, "paymentsManager", null)
     
     inline def setPaymentsManagerUndefined: Self = StObject.set(x, "paymentsManager", js.undefined)
   }

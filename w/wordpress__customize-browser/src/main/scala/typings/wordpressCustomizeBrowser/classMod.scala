@@ -14,7 +14,7 @@ object classMod {
     
     def extended(constructor: js.Object): Boolean = js.native
     
-    def initialize(_underscore: js.Any*): Unit = js.native
+    def initialize(_underscore: Any*): Unit = js.native
   }
   /* static members */
   object Class {

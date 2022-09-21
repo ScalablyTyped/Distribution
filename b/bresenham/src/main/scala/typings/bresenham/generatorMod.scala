@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object generatorMod {
   
-  inline def apply(x0: Double, y0: Double, x1: Double, y1: Double): Generator[Point, js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].apply(x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Generator[Point, js.Any, js.Any]]
+  inline def apply(x0: Double, y0: Double, x1: Double, y1: Double): Generator[Point, Any, Any] = (^.asInstanceOf[js.Dynamic].apply(x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Generator[Point, Any, Any]]
   
   @JSImport("bresenham/generator", JSImport.Namespace)
   @js.native

@@ -8,10 +8,16 @@ object listBoxPropTypesMod {
   
   /* Rewritten from type alias, can be one of: 
     - typings.carbonComponentsReact.carbonComponentsReactStrings.sm
+    - typings.carbonComponentsReact.carbonComponentsReactStrings.md
+    - typings.carbonComponentsReact.carbonComponentsReactStrings.lg
     - typings.carbonComponentsReact.carbonComponentsReactStrings.xl
   */
   trait ListBoxSize extends StObject
   object ListBoxSize {
+    
+    inline def lg: typings.carbonComponentsReact.carbonComponentsReactStrings.lg = "lg".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.lg]
+    
+    inline def md: typings.carbonComponentsReact.carbonComponentsReactStrings.md = "md".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.md]
     
     inline def sm: typings.carbonComponentsReact.carbonComponentsReactStrings.sm = "sm".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.sm]
     

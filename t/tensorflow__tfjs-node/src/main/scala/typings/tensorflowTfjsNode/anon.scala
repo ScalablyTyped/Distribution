@@ -1,27 +1,57 @@
 package typings.tensorflowTfjsNode
 
-import typings.std.ArrayBuffer
-import typings.std.Date
 import typings.std.RequestInit
 import typings.tensorflowTfjsCore.anon.Data
+import typings.tensorflowTfjsCore.kernelNamesMod.PackAttrs
+import typings.tensorflowTfjsCore.kernelNamesMod.PackInputs
+import typings.tensorflowTfjsCore.kernelRegistryMod.TensorInfo
 import typings.tensorflowTfjsCore.tensorTypesMod.NamedTensor
 import typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap
 import typings.tensorflowTfjsCore.typesMod.IOHandler
+import typings.tensorflowTfjsCore.typesMod.IOHandlerSync
 import typings.tensorflowTfjsCore.typesMod.LoadOptions
 import typings.tensorflowTfjsCore.typesMod.ModelArtifacts
 import typings.tensorflowTfjsCore.typesMod.TrainingConfig
 import typings.tensorflowTfjsCore.typesMod.WeightGroup
 import typings.tensorflowTfjsCore.typesMod.WeightsManifestConfig
 import typings.tensorflowTfjsCore.typesMod.WeightsManifestEntry
+import typings.tensorflowTfjsNode.nodejsKernelBackendMod.NodeJSKernelBackend
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
+  trait Attrs extends StObject {
+    
+    var attrs: PackAttrs
+    
+    var backend: NodeJSKernelBackend
+    
+    var inputs: PackInputs
+  }
+  object Attrs {
+    
+    inline def apply(attrs: PackAttrs, backend: NodeJSKernelBackend, inputs: PackInputs): Attrs = {
+      val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], backend = backend.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Attrs]
+    }
+    
+    extension [Self <: Attrs](x: Self) {
+      
+      inline def setAttrs(value: PackAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+      
+      inline def setBackend(value: NodeJSKernelBackend): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
+      
+      inline def setInputs(value: PackInputs): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+      
+      inline def setInputsVarargs(value: TensorInfo*): Self = StObject.set(x, "inputs", js.Array(value*))
+    }
+  }
+  
   trait DateSaved extends StObject {
     
-    var dateSaved: Date
+    var dateSaved: js.Date
     
     var modelTopologyBytes: Double
     
@@ -34,7 +64,7 @@ object anon {
   object DateSaved {
     
     inline def apply(
-      dateSaved: Date,
+      dateSaved: js.Date,
       modelTopologyBytes: Double,
       modelTopologyType: String,
       weightDataBytes: Double,
@@ -46,7 +76,7 @@ object anon {
     
     extension [Self <: DateSaved](x: Self) {
       
-      inline def setDateSaved(value: Date): Self = StObject.set(x, "dateSaved", value.asInstanceOf[js.Any])
+      inline def setDateSaved(value: js.Date): Self = StObject.set(x, "dateSaved", value.asInstanceOf[js.Any])
       
       inline def setModelTopologyBytes(value: Double): Self = StObject.set(x, "modelTopologyBytes", value.asInstanceOf[js.Any])
       
@@ -56,6 +86,70 @@ object anon {
       
       inline def setWeightSpecsBytes(value: Double): Self = StObject.set(x, "weightSpecsBytes", value.asInstanceOf[js.Any])
     }
+  }
+  
+  @js.native
+  trait Fn0 extends StObject {
+    
+    def apply(modelArtifacts: js.Object): IOHandlerSync = js.native
+    def apply(modelArtifacts: js.Object, weightSpecs: js.Array[WeightsManifestEntry]): IOHandlerSync = js.native
+    def apply(
+      modelArtifacts: js.Object,
+      weightSpecs: js.Array[WeightsManifestEntry],
+      weightData: js.typedarray.ArrayBuffer
+    ): IOHandlerSync = js.native
+    def apply(
+      modelArtifacts: js.Object,
+      weightSpecs: js.Array[WeightsManifestEntry],
+      weightData: js.typedarray.ArrayBuffer,
+      trainingConfig: TrainingConfig
+    ): IOHandlerSync = js.native
+    def apply(
+      modelArtifacts: js.Object,
+      weightSpecs: js.Array[WeightsManifestEntry],
+      weightData: Unit,
+      trainingConfig: TrainingConfig
+    ): IOHandlerSync = js.native
+    def apply(modelArtifacts: js.Object, weightSpecs: Unit, weightData: js.typedarray.ArrayBuffer): IOHandlerSync = js.native
+    def apply(
+      modelArtifacts: js.Object,
+      weightSpecs: Unit,
+      weightData: js.typedarray.ArrayBuffer,
+      trainingConfig: TrainingConfig
+    ): IOHandlerSync = js.native
+    def apply(modelArtifacts: js.Object, weightSpecs: Unit, weightData: Unit, trainingConfig: TrainingConfig): IOHandlerSync = js.native
+    def apply(modelArtifacts: ModelArtifacts): IOHandlerSync = js.native
+    def apply(modelArtifacts: ModelArtifacts, weightSpecs: js.Array[WeightsManifestEntry]): IOHandlerSync = js.native
+    def apply(
+      modelArtifacts: ModelArtifacts,
+      weightSpecs: js.Array[WeightsManifestEntry],
+      weightData: js.typedarray.ArrayBuffer
+    ): IOHandlerSync = js.native
+    def apply(
+      modelArtifacts: ModelArtifacts,
+      weightSpecs: js.Array[WeightsManifestEntry],
+      weightData: js.typedarray.ArrayBuffer,
+      trainingConfig: TrainingConfig
+    ): IOHandlerSync = js.native
+    def apply(
+      modelArtifacts: ModelArtifacts,
+      weightSpecs: js.Array[WeightsManifestEntry],
+      weightData: Unit,
+      trainingConfig: TrainingConfig
+    ): IOHandlerSync = js.native
+    def apply(modelArtifacts: ModelArtifacts, weightSpecs: Unit, weightData: js.typedarray.ArrayBuffer): IOHandlerSync = js.native
+    def apply(
+      modelArtifacts: ModelArtifacts,
+      weightSpecs: Unit,
+      weightData: js.typedarray.ArrayBuffer,
+      trainingConfig: TrainingConfig
+    ): IOHandlerSync = js.native
+    def apply(
+      modelArtifacts: ModelArtifacts,
+      weightSpecs: Unit,
+      weightData: Unit,
+      trainingConfig: TrainingConfig
+    ): IOHandlerSync = js.native
   }
   
   @js.native
@@ -101,54 +195,58 @@ object anon {
     def apply(
       modelArtifacts: js.Object,
       weightSpecs: js.Array[WeightsManifestEntry],
-      weightData: Unit,
-      trainingConfig: TrainingConfig
+      weightData: js.typedarray.ArrayBuffer
     ): IOHandler = js.native
-    def apply(modelArtifacts: js.Object, weightSpecs: js.Array[WeightsManifestEntry], weightData: ArrayBuffer): IOHandler = js.native
     def apply(
       modelArtifacts: js.Object,
       weightSpecs: js.Array[WeightsManifestEntry],
-      weightData: ArrayBuffer,
+      weightData: js.typedarray.ArrayBuffer,
       trainingConfig: TrainingConfig
     ): IOHandler = js.native
-    def apply(modelArtifacts: js.Object, weightSpecs: Unit, weightData: Unit, trainingConfig: TrainingConfig): IOHandler = js.native
-    def apply(modelArtifacts: js.Object, weightSpecs: Unit, weightData: ArrayBuffer): IOHandler = js.native
+    def apply(
+      modelArtifacts: js.Object,
+      weightSpecs: js.Array[WeightsManifestEntry],
+      weightData: Unit,
+      trainingConfig: TrainingConfig
+    ): IOHandler = js.native
+    def apply(modelArtifacts: js.Object, weightSpecs: Unit, weightData: js.typedarray.ArrayBuffer): IOHandler = js.native
     def apply(
       modelArtifacts: js.Object,
       weightSpecs: Unit,
-      weightData: ArrayBuffer,
+      weightData: js.typedarray.ArrayBuffer,
       trainingConfig: TrainingConfig
     ): IOHandler = js.native
+    def apply(modelArtifacts: js.Object, weightSpecs: Unit, weightData: Unit, trainingConfig: TrainingConfig): IOHandler = js.native
     def apply(modelArtifacts: ModelArtifacts): IOHandler = js.native
     def apply(modelArtifacts: ModelArtifacts, weightSpecs: js.Array[WeightsManifestEntry]): IOHandler = js.native
     def apply(
       modelArtifacts: ModelArtifacts,
       weightSpecs: js.Array[WeightsManifestEntry],
-      weightData: Unit,
+      weightData: js.typedarray.ArrayBuffer
+    ): IOHandler = js.native
+    def apply(
+      modelArtifacts: ModelArtifacts,
+      weightSpecs: js.Array[WeightsManifestEntry],
+      weightData: js.typedarray.ArrayBuffer,
       trainingConfig: TrainingConfig
     ): IOHandler = js.native
     def apply(
       modelArtifacts: ModelArtifacts,
       weightSpecs: js.Array[WeightsManifestEntry],
-      weightData: ArrayBuffer
+      weightData: Unit,
+      trainingConfig: TrainingConfig
     ): IOHandler = js.native
+    def apply(modelArtifacts: ModelArtifacts, weightSpecs: Unit, weightData: js.typedarray.ArrayBuffer): IOHandler = js.native
     def apply(
       modelArtifacts: ModelArtifacts,
-      weightSpecs: js.Array[WeightsManifestEntry],
-      weightData: ArrayBuffer,
+      weightSpecs: Unit,
+      weightData: js.typedarray.ArrayBuffer,
       trainingConfig: TrainingConfig
     ): IOHandler = js.native
     def apply(
       modelArtifacts: ModelArtifacts,
       weightSpecs: Unit,
       weightData: Unit,
-      trainingConfig: TrainingConfig
-    ): IOHandler = js.native
-    def apply(modelArtifacts: ModelArtifacts, weightSpecs: Unit, weightData: ArrayBuffer): IOHandler = js.native
-    def apply(
-      modelArtifacts: ModelArtifacts,
-      weightSpecs: Unit,
-      weightData: ArrayBuffer,
       trainingConfig: TrainingConfig
     ): IOHandler = js.native
   }

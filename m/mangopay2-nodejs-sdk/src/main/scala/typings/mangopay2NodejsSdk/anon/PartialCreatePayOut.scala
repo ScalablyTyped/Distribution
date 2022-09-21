@@ -1,11 +1,13 @@
 package typings.mangopay2NodejsSdk.anon
 
-import typings.mangopay2NodejsSdk.mod.MoneyData
+import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BANK_WIRE
+import typings.mangopay2NodejsSdk.moneyMod.money.MoneyData
+import typings.mangopay2NodejsSdk.payOutMod.payOut.PayoutModeRequestedType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.PayOut.CreatePayOut> */
+/* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/typings/models/payOut.payOut.CreatePayOut> */
 trait PartialCreatePayOut extends StObject {
   
   var AuthorId: js.UndefOr[String] = js.undefined
@@ -19,6 +21,10 @@ trait PartialCreatePayOut extends StObject {
   var DebitedWalletId: js.UndefOr[String] = js.undefined
   
   var Fees: js.UndefOr[MoneyData] = js.undefined
+  
+  var PaymentType: js.UndefOr[BANK_WIRE] = js.undefined
+  
+  var PayoutModeRequested: js.UndefOr[PayoutModeRequestedType] = js.undefined
   
   var Tag: js.UndefOr[String] = js.undefined
 }
@@ -54,6 +60,14 @@ object PartialCreatePayOut {
     inline def setFees(value: MoneyData): Self = StObject.set(x, "Fees", value.asInstanceOf[js.Any])
     
     inline def setFeesUndefined: Self = StObject.set(x, "Fees", js.undefined)
+    
+    inline def setPaymentType(value: BANK_WIRE): Self = StObject.set(x, "PaymentType", value.asInstanceOf[js.Any])
+    
+    inline def setPaymentTypeUndefined: Self = StObject.set(x, "PaymentType", js.undefined)
+    
+    inline def setPayoutModeRequested(value: PayoutModeRequestedType): Self = StObject.set(x, "PayoutModeRequested", value.asInstanceOf[js.Any])
+    
+    inline def setPayoutModeRequestedUndefined: Self = StObject.set(x, "PayoutModeRequested", js.undefined)
     
     inline def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
     

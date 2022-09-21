@@ -4,29 +4,31 @@ import typings.rcTable.anon.Body
 import typings.rcTable.anon.X
 import typings.rcTable.columnGroupMod.ColumnGroupProps
 import typings.rcTable.columnMod.ColumnProps
-import typings.rcTable.footerCellMod.SummaryCellProps
 import typings.rcTable.interfaceMod.ColumnGroupType
 import typings.rcTable.interfaceMod.ColumnType
 import typings.rcTable.interfaceMod.ColumnsType
 import typings.rcTable.interfaceMod.DefaultRecordType
 import typings.rcTable.interfaceMod.ExpandableConfig
+import typings.rcTable.interfaceMod.ExpandedRowRender
 import typings.rcTable.interfaceMod.GetComponentProps
 import typings.rcTable.interfaceMod.GetRowKey
 import typings.rcTable.interfaceMod.Key
-import typings.rcTable.interfaceMod.LegacyExpandableProps
 import typings.rcTable.interfaceMod.PanelRender
+import typings.rcTable.interfaceMod.RenderExpandIcon
+import typings.rcTable.interfaceMod.RenderExpandIconProps
 import typings.rcTable.interfaceMod.RowClassName
 import typings.rcTable.interfaceMod.TableComponents
 import typings.rcTable.interfaceMod.TableLayout
 import typings.rcTable.interfaceMod.TableSticky
 import typings.rcTable.rcTableStrings.ltr
 import typings.rcTable.rcTableStrings.rtl
-import typings.rcTable.rowMod.FooterRowProps
+import typings.rcTable.summaryMod.SummaryProps
 import typings.react.mod.CSSProperties
 import typings.react.mod.HTMLAttributes
+import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
+import typings.react.mod.TdHTMLAttributes
 import typings.react.mod.global.JSX.Element
-import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,16 +48,22 @@ object tableMod {
       * So HOC will not work on this.
       */
     /* was `typeof imported_Column.default` */
-    inline def Column[RecordType](_underscore: ColumnProps[RecordType]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(_underscore.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def Column[RecordType](_underscore: ColumnProps[RecordType]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(_underscore.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /**
       * This is a syntactic sugar for `columns` prop.
       * So HOC will not work on this.
       */
     /* was `typeof imported_ColumnGroup.default` */
-    inline def ColumnGroup[RecordType](_underscore: ColumnGroupProps[RecordType]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ColumnGroup")(_underscore.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def ColumnGroup[RecordType](_underscore: ColumnGroupProps[RecordType]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ColumnGroup")(_underscore.asInstanceOf[js.Any]).asInstanceOf[Any]
     
+    /* was `typeof imported_Summary.default` */
     object Summary {
+      
+      /**
+        * Syntactic sugar. Do not support HOC.
+        */
+      inline def apply(hasChildren: SummaryProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
       
       @JSImport("rc-table/lib/Table", "default.Summary")
       @js.native
@@ -63,13 +71,17 @@ object tableMod {
       
       @JSImport("rc-table/lib/Table", "default.Summary.Cell")
       @js.native
-      def Cell: js.Function1[/* hasClassNameIndexChildrenColSpanRowSpanAlign */ SummaryCellProps, Element] = js.native
-      inline def Cell_=(x: js.Function1[/* hasClassNameIndexChildrenColSpanRowSpanAlign */ SummaryCellProps, Element]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Cell")(x.asInstanceOf[js.Any])
+      def Cell: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof imported_Cell.default */ Any = js.native
+      inline def Cell_=(
+        x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof imported_Cell.default */ Any
+      ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Cell")(x.asInstanceOf[js.Any])
       
       @JSImport("rc-table/lib/Table", "default.Summary.Row")
       @js.native
-      def Row: js.Function1[/* props */ FooterRowProps, Element] = js.native
-      inline def Row_=(x: js.Function1[/* props */ FooterRowProps, Element]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Row")(x.asInstanceOf[js.Any])
+      def Row: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof imported_Row.default */ Any = js.native
+      inline def Row_=(
+        x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof imported_Row.default */ Any
+      ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Row")(x.asInstanceOf[js.Any])
     }
     
     object defaultProps {
@@ -96,11 +108,14 @@ object tableMod {
   @js.native
   val INTERNAL_HOOKS: /* "rc-table-internal-hook" */ String = js.native
   
-  trait TableProps[RecordType]
-    extends StObject
-       with LegacyExpandableProps[RecordType] {
+  /* Inlined parent std.Omit<rc-table.rc-table/lib/interface.LegacyExpandableProps<RecordType>, 'showExpandColumn'> */
+  trait TableProps[RecordType] extends StObject {
+    
+    var caption: js.UndefOr[String | ReactNode] = js.undefined
     
     var children: js.UndefOr[ReactNode] = js.undefined
+    
+    var childrenColumnName: js.UndefOr[String] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -110,16 +125,34 @@ object tableMod {
     
     var data: js.UndefOr[js.Array[RecordType]] = js.undefined
     
+    var defaultExpandAllRows: js.UndefOr[Boolean] = js.undefined
+    
+    var defaultExpandedRowKeys: js.UndefOr[js.Array[Key]] = js.undefined
+    
     var direction: js.UndefOr[ltr | rtl] = js.undefined
     
     var emptyText: js.UndefOr[ReactNode | js.Function0[ReactNode]] = js.undefined
     
+    var expandIcon: js.UndefOr[RenderExpandIcon[RecordType]] = js.undefined
+    
+    var expandIconColumnIndex: js.UndefOr[Double] = js.undefined
+    
+    var expandRowByClick: js.UndefOr[Boolean] = js.undefined
+    
     /** Config expand rows */
     var expandable: js.UndefOr[ExpandableConfig[RecordType]] = js.undefined
+    
+    var expandedRowClassName: js.UndefOr[RowClassName[RecordType]] = js.undefined
+    
+    var expandedRowKeys: js.UndefOr[js.Array[Key]] = js.undefined
+    
+    var expandedRowRender: js.UndefOr[ExpandedRowRender[RecordType]] = js.undefined
     
     var footer: js.UndefOr[PanelRender[RecordType]] = js.undefined
     
     var id: js.UndefOr[String] = js.undefined
+    
+    var indentSize: js.UndefOr[Double] = js.undefined
     
     /**
       * @private Internal usage, may remove by refactor. Should always use `columns` instead.
@@ -134,6 +167,10 @@ object tableMod {
       * !!! DO NOT USE IN PRODUCTION ENVIRONMENT !!!
       */
     var internalRefs: js.UndefOr[Body] = js.undefined
+    
+    var onExpand: js.UndefOr[js.Function2[/* expanded */ Boolean, /* record */ RecordType, Unit]] = js.undefined
+    
+    var onExpandedRowsChange: js.UndefOr[js.Function1[/* expandedKeys */ js.Array[Key], Unit]] = js.undefined
     
     var onHeaderRow: js.UndefOr[GetComponentProps[js.Array[ColumnType[RecordType]]]] = js.undefined
     
@@ -175,7 +212,15 @@ object tableMod {
     
     extension [Self <: TableProps[?], RecordType](x: Self & TableProps[RecordType]) {
       
+      inline def setCaption(value: String | ReactNode): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+      
+      inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+      
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenColumnName(value: String): Self = StObject.set(x, "childrenColumnName", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenColumnNameUndefined: Self = StObject.set(x, "childrenColumnName", js.undefined)
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
@@ -187,7 +232,7 @@ object tableMod {
       
       inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      inline def setColumnsVarargs(value: (ColumnGroupType[RecordType] | ColumnType[RecordType])*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: (ColumnGroupType[RecordType] | ColumnType[RecordType])*): Self = StObject.set(x, "columns", js.Array(value*))
       
       inline def setComponents(value: TableComponents[RecordType]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
@@ -197,7 +242,17 @@ object tableMod {
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDataVarargs(value: RecordType*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: RecordType*): Self = StObject.set(x, "data", js.Array(value*))
+      
+      inline def setDefaultExpandAllRows(value: Boolean): Self = StObject.set(x, "defaultExpandAllRows", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultExpandAllRowsUndefined: Self = StObject.set(x, "defaultExpandAllRows", js.undefined)
+      
+      inline def setDefaultExpandedRowKeys(value: js.Array[Key]): Self = StObject.set(x, "defaultExpandedRowKeys", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultExpandedRowKeysUndefined: Self = StObject.set(x, "defaultExpandedRowKeys", js.undefined)
+      
+      inline def setDefaultExpandedRowKeysVarargs(value: Key*): Self = StObject.set(x, "defaultExpandedRowKeys", js.Array(value*))
       
       inline def setDirection(value: ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -209,9 +264,35 @@ object tableMod {
       
       inline def setEmptyTextUndefined: Self = StObject.set(x, "emptyText", js.undefined)
       
+      inline def setExpandIcon(value: /* props */ RenderExpandIconProps[RecordType] => ReactNode): Self = StObject.set(x, "expandIcon", js.Any.fromFunction1(value))
+      
+      inline def setExpandIconColumnIndex(value: Double): Self = StObject.set(x, "expandIconColumnIndex", value.asInstanceOf[js.Any])
+      
+      inline def setExpandIconColumnIndexUndefined: Self = StObject.set(x, "expandIconColumnIndex", js.undefined)
+      
+      inline def setExpandIconUndefined: Self = StObject.set(x, "expandIcon", js.undefined)
+      
+      inline def setExpandRowByClick(value: Boolean): Self = StObject.set(x, "expandRowByClick", value.asInstanceOf[js.Any])
+      
+      inline def setExpandRowByClickUndefined: Self = StObject.set(x, "expandRowByClick", js.undefined)
+      
       inline def setExpandable(value: ExpandableConfig[RecordType]): Self = StObject.set(x, "expandable", value.asInstanceOf[js.Any])
       
       inline def setExpandableUndefined: Self = StObject.set(x, "expandable", js.undefined)
+      
+      inline def setExpandedRowClassName(value: (RecordType, /* index */ Double, /* indent */ Double) => String): Self = StObject.set(x, "expandedRowClassName", js.Any.fromFunction3(value))
+      
+      inline def setExpandedRowClassNameUndefined: Self = StObject.set(x, "expandedRowClassName", js.undefined)
+      
+      inline def setExpandedRowKeys(value: js.Array[Key]): Self = StObject.set(x, "expandedRowKeys", value.asInstanceOf[js.Any])
+      
+      inline def setExpandedRowKeysUndefined: Self = StObject.set(x, "expandedRowKeys", js.undefined)
+      
+      inline def setExpandedRowKeysVarargs(value: Key*): Self = StObject.set(x, "expandedRowKeys", js.Array(value*))
+      
+      inline def setExpandedRowRender(value: (RecordType, /* index */ Double, /* indent */ Double, /* expanded */ Boolean) => ReactNode): Self = StObject.set(x, "expandedRowRender", js.Any.fromFunction4(value))
+      
+      inline def setExpandedRowRenderUndefined: Self = StObject.set(x, "expandedRowRender", js.undefined)
       
       inline def setFooter(value: /* data */ js.Array[RecordType] => ReactNode): Self = StObject.set(x, "footer", js.Any.fromFunction1(value))
       
@@ -221,6 +302,10 @@ object tableMod {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
+      inline def setIndentSize(value: Double): Self = StObject.set(x, "indentSize", value.asInstanceOf[js.Any])
+      
+      inline def setIndentSizeUndefined: Self = StObject.set(x, "indentSize", js.undefined)
+      
       inline def setInternalHooks(value: String): Self = StObject.set(x, "internalHooks", value.asInstanceOf[js.Any])
       
       inline def setInternalHooksUndefined: Self = StObject.set(x, "internalHooks", js.undefined)
@@ -229,13 +314,21 @@ object tableMod {
       
       inline def setInternalRefsUndefined: Self = StObject.set(x, "internalRefs", js.undefined)
       
+      inline def setOnExpand(value: (/* expanded */ Boolean, /* record */ RecordType) => Unit): Self = StObject.set(x, "onExpand", js.Any.fromFunction2(value))
+      
+      inline def setOnExpandUndefined: Self = StObject.set(x, "onExpand", js.undefined)
+      
+      inline def setOnExpandedRowsChange(value: /* expandedKeys */ js.Array[Key] => Unit): Self = StObject.set(x, "onExpandedRowsChange", js.Any.fromFunction1(value))
+      
+      inline def setOnExpandedRowsChangeUndefined: Self = StObject.set(x, "onExpandedRowsChange", js.undefined)
+      
       inline def setOnHeaderRow(
-        value: (js.Array[ColumnType[RecordType]], /* index */ js.UndefOr[Double]) => HTMLAttributes[HTMLElement]
+        value: (js.Array[ColumnType[RecordType]], /* index */ js.UndefOr[Double]) => HTMLAttributes[Any] | TdHTMLAttributes[Any]
       ): Self = StObject.set(x, "onHeaderRow", js.Any.fromFunction2(value))
       
       inline def setOnHeaderRowUndefined: Self = StObject.set(x, "onHeaderRow", js.undefined)
       
-      inline def setOnRow(value: (RecordType, /* index */ js.UndefOr[Double]) => HTMLAttributes[HTMLElement]): Self = StObject.set(x, "onRow", js.Any.fromFunction2(value))
+      inline def setOnRow(value: (RecordType, /* index */ js.UndefOr[Double]) => HTMLAttributes[Any] | TdHTMLAttributes[Any]): Self = StObject.set(x, "onRow", js.Any.fromFunction2(value))
       
       inline def setOnRowUndefined: Self = StObject.set(x, "onRow", js.undefined)
       

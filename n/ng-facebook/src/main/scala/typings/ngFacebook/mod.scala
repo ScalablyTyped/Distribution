@@ -56,7 +56,7 @@ object mod {
       def api(path: String, method: String, params: js.Object): IPromise[js.Object] = js.native
       def api(path: String, params: js.Object): IPromise[js.Object] = js.native
       
-      def cachedApi(path: String): IPromise[js.Any] = js.native
+      def cachedApi(path: String): IPromise[Any] = js.native
       
       def clearCache(): Unit = js.native
       
@@ -82,7 +82,7 @@ object mod {
       
       def setCache[T](attr: String, `val`: T): Unit = js.native
       
-      def ui(params: FBUIParams): IPromise[js.Any] = js.native
+      def ui(params: FBUIParams): IPromise[Any] = js.native
     }
   }
 }

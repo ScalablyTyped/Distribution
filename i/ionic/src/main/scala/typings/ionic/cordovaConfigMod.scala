@@ -17,7 +17,7 @@ object cordovaConfigMod {
   
   @JSImport("ionic/lib/integrations/cordova/config", "CordovaConfig")
   @js.native
-  class CordovaConfig protected () extends StObject {
+  open class CordovaConfig protected () extends StObject {
     def this(configXmlPath: String, packageJsonPath: String) = this()
     
     /* protected */ var _doc: js.UndefOr[ElementTree] = js.native

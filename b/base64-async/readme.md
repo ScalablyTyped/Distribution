@@ -10,10 +10,10 @@ Non-blocking chunked Base64 encoding
 | ------------------ | :-------------: |
 | Full name          | base64-async |
 | Keywords           | async, asynchronous, non-blocking, base64, encode, decode |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 105072 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4074.3333333333335 |
+| # stars            | 96.0 |
 
 ## Links
 - [Homepage](https://github.com/lukechilds/base64-async)

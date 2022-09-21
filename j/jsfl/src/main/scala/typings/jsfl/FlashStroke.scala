@@ -13,7 +13,7 @@ trait FlashStroke extends StObject {
   var capType: String
   
   /// A string, hexadecimal value, or integer that represents the stroke color.
-  var color: js.Any
+  var color: Any
   
   /// A string that specifies the type of hatching for the stroke.
   var curve: String
@@ -86,7 +86,7 @@ object FlashStroke {
   inline def apply(
     breakAtCorners: Boolean,
     capType: String,
-    color: js.Any,
+    color: Any,
     curve: String,
     dash1: Double,
     dash2: Double,
@@ -120,7 +120,7 @@ object FlashStroke {
     
     inline def setCapType(value: String): Self = StObject.set(x, "capType", value.asInstanceOf[js.Any])
     
-    inline def setColor(value: js.Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setCurve(value: String): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
     

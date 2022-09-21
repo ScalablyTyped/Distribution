@@ -12,7 +12,7 @@ trait ListServicesResponse extends StObject {
   var nextToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The list of full ARN entries for each service associated with the specified cluster.
+    * The list of full ARN entries for each service that's associated with the specified cluster.
     */
   var serviceArns: js.UndefOr[StringList] = js.undefined
 }
@@ -33,6 +33,6 @@ object ListServicesResponse {
     
     inline def setServiceArnsUndefined: Self = StObject.set(x, "serviceArns", js.undefined)
     
-    inline def setServiceArnsVarargs(value: String*): Self = StObject.set(x, "serviceArns", js.Array(value :_*))
+    inline def setServiceArnsVarargs(value: String*): Self = StObject.set(x, "serviceArns", js.Array(value*))
   }
 }

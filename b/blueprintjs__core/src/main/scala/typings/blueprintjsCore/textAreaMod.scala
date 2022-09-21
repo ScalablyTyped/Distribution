@@ -3,13 +3,14 @@ package typings.blueprintjsCore
 import typings.blueprintjsCore.commonMod.AbstractPureComponent2
 import typings.blueprintjsCore.propsMod.IIntentProps
 import typings.blueprintjsCore.propsMod.IProps
-import typings.blueprintjsCore.refsMod.IRef
 import typings.react.mod.AriaAttributes
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ChangeEvent
 import typings.react.mod.ChangeEventHandler
 import typings.react.mod.DOMAttributes
+import typings.react.mod.Ref
 import typings.react.reactStrings.decimal
 import typings.react.reactStrings.email
 import typings.react.reactStrings.inherit
@@ -32,22 +33,22 @@ object textAreaMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/forms/textArea", "TextArea")
   @js.native
-  class TextArea protected ()
-    extends AbstractPureComponent2[ITextAreaProps, ITextAreaState, js.Object] {
-    def this(props: ITextAreaProps) = this()
-    def this(props: ITextAreaProps, context: js.Any) = this()
+  open class TextArea protected ()
+    extends AbstractPureComponent2[TextAreaProps, ITextAreaState, js.Object] {
+    def this(props: TextAreaProps) = this()
+    def this(props: TextAreaProps, context: Any) = this()
     
     @JSName("componentDidMount")
     def componentDidMount_MTextArea(): Unit = js.native
     
     @JSName("componentDidUpdate")
-    def componentDidUpdate_MTextArea(prevProps: ITextAreaProps): Unit = js.native
+    def componentDidUpdate_MTextArea(prevProps: TextAreaProps): Unit = js.native
     
-    /* private */ var handleChange: js.Any = js.native
+    /* private */ var handleChange: Any = js.native
     
-    /* private */ var refHandlers: js.Any = js.native
+    /* private */ var handleRef: Any = js.native
     
-    /* private */ var textareaRef: js.Any = js.native
+    var textareaElement: HTMLTextAreaElement | Null = js.native
   }
   /* static members */
   object TextArea {
@@ -127,7 +128,7 @@ object textAreaMod {
     
     var id: js.UndefOr[String] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var inlist: js.UndefOr[Any] = js.undefined
     
     // Living Standard
     /**
@@ -139,7 +140,7 @@ object textAreaMod {
     /**
       * Ref handler that receives HTML `<textarea>` element backing this component.
       */
-    var inputRef: js.UndefOr[IRef[HTMLTextAreaElement]] = js.undefined
+    var inputRef: js.UndefOr[Ref[HTMLTextAreaElement]] = js.undefined
     
     /**
       * Specify that a standard HTML element should behave like a defined custom built-in element
@@ -192,7 +193,7 @@ object textAreaMod {
     
     // <command>, <menuitem>
     // WAI-ARIA
-    var role: js.UndefOr[String] = js.undefined
+    var role: js.UndefOr[AriaRole] = js.undefined
     
     var rows: js.UndefOr[Double] = js.undefined
     
@@ -294,7 +295,7 @@ object textAreaMod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -332,7 +333,7 @@ object textAreaMod {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
@@ -340,9 +341,11 @@ object textAreaMod {
       
       inline def setInputModeUndefined: Self = StObject.set(x, "inputMode", js.undefined)
       
-      inline def setInputRef(value: IRef[HTMLTextAreaElement]): Self = StObject.set(x, "inputRef", value.asInstanceOf[js.Any])
+      inline def setInputRef(value: Ref[HTMLTextAreaElement]): Self = StObject.set(x, "inputRef", value.asInstanceOf[js.Any])
       
-      inline def setInputRefFunction1(value: /* ref */ HTMLTextAreaElement | Null => js.Any): Self = StObject.set(x, "inputRef", js.Any.fromFunction1(value))
+      inline def setInputRefFunction1(value: /* instance */ HTMLTextAreaElement | Null => Unit): Self = StObject.set(x, "inputRef", js.Any.fromFunction1(value))
+      
+      inline def setInputRefNull: Self = StObject.set(x, "inputRef", null)
       
       inline def setInputRefUndefined: Self = StObject.set(x, "inputRef", js.undefined)
       
@@ -426,7 +429,7 @@ object textAreaMod {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
@@ -486,7 +489,7 @@ object textAreaMod {
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
       
       inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
       
@@ -516,4 +519,6 @@ object textAreaMod {
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     }
   }
+  
+  type TextAreaProps = ITextAreaProps
 }

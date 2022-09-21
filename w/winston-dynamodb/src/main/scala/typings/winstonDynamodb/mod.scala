@@ -2,30 +2,29 @@ package typings.winstonDynamodb
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typings.std.Transport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("winston-dynamodb", "DynamoDB")
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify winston.Transport * / any */ @JSImport("winston-dynamodb", "DynamoDB")
   @js.native
-  class DynamoDB ()
+  open class DynamoDB ()
     extends StObject
-       with Transport
        with DynamoDBTransportInstance {
     def this(options: DynamoDBTransportOptions) = this()
     
-    var AWS: js.Any = js.native
+    var AWS: Any = js.native
     
-    var db: js.Any = js.native
+    var db: Any = js.native
     
     var dynamoDoc: Boolean = js.native
     
     var level: String = js.native
     
-    def log(level: js.Any, msg: js.Any, meta: js.Any, callback: js.Any): js.Any = js.native
+    def log(level: Any, msg: Any, meta: Any, callback: Any): Any = js.native
     
     var name: String = js.native
     

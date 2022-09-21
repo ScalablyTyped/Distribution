@@ -1,6 +1,5 @@
 package typings.scroll
 
-import typings.std.Error
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -46,7 +45,7 @@ object mod {
   
   type ScrollCallback = js.Function2[/* error */ ScrollError, /* value */ Double, Unit]
   
-  type ScrollError = Error | Null
+  type ScrollError = js.Error | Null
   
   trait ScrollOptions extends StObject {
     

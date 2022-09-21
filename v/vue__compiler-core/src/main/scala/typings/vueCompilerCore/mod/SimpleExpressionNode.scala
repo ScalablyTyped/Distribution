@@ -10,6 +10,8 @@ trait SimpleExpressionNode
      with Node2
      with ExpressionNode {
   
+  var constType: ConstantTypes
+  
   var content: String
   
   /**
@@ -24,13 +26,7 @@ trait SimpleExpressionNode
     */
   var identifiers: js.UndefOr[js.Array[String]] = js.undefined
   
-  var isConstant: Boolean
-  
-  /**
-    * some expressions (e.g. transformAssetUrls import identifiers) are constant,
-    * but cannot be stringified because they must be first evaluated at runtime.
-    */
-  var isRuntimeConstant: js.UndefOr[Boolean] = js.undefined
+  var isHandlerKey: js.UndefOr[Boolean] = js.undefined
   
   var isStatic: Boolean
   
@@ -39,13 +35,15 @@ trait SimpleExpressionNode
 }
 object SimpleExpressionNode {
   
-  inline def apply(content: String, isConstant: Boolean, isStatic: Boolean, loc: SourceLocation): SimpleExpressionNode = {
-    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], isConstant = isConstant.asInstanceOf[js.Any], isStatic = isStatic.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
+  inline def apply(constType: ConstantTypes, content: String, isStatic: Boolean, loc: SourceLocation): SimpleExpressionNode = {
+    val __obj = js.Dynamic.literal(constType = constType.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], isStatic = isStatic.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(4)
     __obj.asInstanceOf[SimpleExpressionNode]
   }
   
   extension [Self <: SimpleExpressionNode](x: Self) {
+    
+    inline def setConstType(value: ConstantTypes): Self = StObject.set(x, "constType", value.asInstanceOf[js.Any])
     
     inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
@@ -57,13 +55,11 @@ object SimpleExpressionNode {
     
     inline def setIdentifiersUndefined: Self = StObject.set(x, "identifiers", js.undefined)
     
-    inline def setIdentifiersVarargs(value: String*): Self = StObject.set(x, "identifiers", js.Array(value :_*))
+    inline def setIdentifiersVarargs(value: String*): Self = StObject.set(x, "identifiers", js.Array(value*))
     
-    inline def setIsConstant(value: Boolean): Self = StObject.set(x, "isConstant", value.asInstanceOf[js.Any])
+    inline def setIsHandlerKey(value: Boolean): Self = StObject.set(x, "isHandlerKey", value.asInstanceOf[js.Any])
     
-    inline def setIsRuntimeConstant(value: Boolean): Self = StObject.set(x, "isRuntimeConstant", value.asInstanceOf[js.Any])
-    
-    inline def setIsRuntimeConstantUndefined: Self = StObject.set(x, "isRuntimeConstant", js.undefined)
+    inline def setIsHandlerKeyUndefined: Self = StObject.set(x, "isHandlerKey", js.undefined)
     
     inline def setIsStatic(value: Boolean): Self = StObject.set(x, "isStatic", value.asInstanceOf[js.Any])
     

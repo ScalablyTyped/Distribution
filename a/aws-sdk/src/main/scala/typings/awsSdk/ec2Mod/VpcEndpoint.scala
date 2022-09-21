@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VpcEndpoint extends StObject {
   
   /**
-    * The date and time that the VPC endpoint was created.
+    * The date and time that the endpoint was created.
     */
-  var CreationTimestamp: js.UndefOr[MillisecondDateTime] = js.undefined
+  var CreationTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * (Interface endpoint) The DNS entries for the endpoint.
@@ -17,12 +17,22 @@ trait VpcEndpoint extends StObject {
   var DnsEntries: js.UndefOr[DnsEntrySet] = js.undefined
   
   /**
+    * The DNS options for the endpoint.
+    */
+  var DnsOptions: js.UndefOr[typings.awsSdk.ec2Mod.DnsOptions] = js.undefined
+  
+  /**
     * (Interface endpoint) Information about the security groups that are associated with the network interface.
     */
   var Groups: js.UndefOr[GroupIdentifierSet] = js.undefined
   
   /**
-    * The last error that occurred for VPC endpoint.
+    * The IP address type for the endpoint.
+    */
+  var IpAddressType: js.UndefOr[typings.awsSdk.ec2Mod.IpAddressType] = js.undefined
+  
+  /**
+    * The last error that occurred for endpoint.
     */
   var LastError: js.UndefOr[typings.awsSdk.ec2Mod.LastError] = js.undefined
   
@@ -32,7 +42,7 @@ trait VpcEndpoint extends StObject {
   var NetworkInterfaceIds: js.UndefOr[ValueStringList] = js.undefined
   
   /**
-    * The ID of the AWS account that owns the VPC endpoint.
+    * The ID of the Amazon Web Services account that owns the endpoint.
     */
   var OwnerId: js.UndefOr[String] = js.undefined
   
@@ -47,7 +57,7 @@ trait VpcEndpoint extends StObject {
   var PrivateDnsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether the VPC endpoint is being managed by its service.
+    * Indicates whether the endpoint is being managed by its service.
     */
   var RequesterManaged: js.UndefOr[Boolean] = js.undefined
   
@@ -62,22 +72,22 @@ trait VpcEndpoint extends StObject {
   var ServiceName: js.UndefOr[String] = js.undefined
   
   /**
-    * The state of the VPC endpoint.
+    * The state of the endpoint.
     */
   var State: js.UndefOr[typings.awsSdk.ec2Mod.State] = js.undefined
   
   /**
-    * (Interface endpoint) One or more subnets in which the endpoint is located.
+    * (Interface endpoint) The subnets for the endpoint.
     */
   var SubnetIds: js.UndefOr[ValueStringList] = js.undefined
   
   /**
-    * Any tags assigned to the VPC endpoint.
+    * Any tags assigned to the endpoint.
     */
   var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
-    * The ID of the VPC endpoint.
+    * The ID of the endpoint.
     */
   var VpcEndpointId: js.UndefOr[String] = js.undefined
   
@@ -100,7 +110,7 @@ object VpcEndpoint {
   
   extension [Self <: VpcEndpoint](x: Self) {
     
-    inline def setCreationTimestamp(value: MillisecondDateTime): Self = StObject.set(x, "CreationTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreationTimestamp(value: js.Date): Self = StObject.set(x, "CreationTimestamp", value.asInstanceOf[js.Any])
     
     inline def setCreationTimestampUndefined: Self = StObject.set(x, "CreationTimestamp", js.undefined)
     
@@ -108,13 +118,21 @@ object VpcEndpoint {
     
     inline def setDnsEntriesUndefined: Self = StObject.set(x, "DnsEntries", js.undefined)
     
-    inline def setDnsEntriesVarargs(value: DnsEntry*): Self = StObject.set(x, "DnsEntries", js.Array(value :_*))
+    inline def setDnsEntriesVarargs(value: DnsEntry*): Self = StObject.set(x, "DnsEntries", js.Array(value*))
+    
+    inline def setDnsOptions(value: DnsOptions): Self = StObject.set(x, "DnsOptions", value.asInstanceOf[js.Any])
+    
+    inline def setDnsOptionsUndefined: Self = StObject.set(x, "DnsOptions", js.undefined)
     
     inline def setGroups(value: GroupIdentifierSet): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
     
     inline def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
     
-    inline def setGroupsVarargs(value: SecurityGroupIdentifier*): Self = StObject.set(x, "Groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: SecurityGroupIdentifier*): Self = StObject.set(x, "Groups", js.Array(value*))
+    
+    inline def setIpAddressType(value: IpAddressType): Self = StObject.set(x, "IpAddressType", value.asInstanceOf[js.Any])
+    
+    inline def setIpAddressTypeUndefined: Self = StObject.set(x, "IpAddressType", js.undefined)
     
     inline def setLastError(value: LastError): Self = StObject.set(x, "LastError", value.asInstanceOf[js.Any])
     
@@ -124,7 +142,7 @@ object VpcEndpoint {
     
     inline def setNetworkInterfaceIdsUndefined: Self = StObject.set(x, "NetworkInterfaceIds", js.undefined)
     
-    inline def setNetworkInterfaceIdsVarargs(value: String*): Self = StObject.set(x, "NetworkInterfaceIds", js.Array(value :_*))
+    inline def setNetworkInterfaceIdsVarargs(value: String*): Self = StObject.set(x, "NetworkInterfaceIds", js.Array(value*))
     
     inline def setOwnerId(value: String): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
     
@@ -146,7 +164,7 @@ object VpcEndpoint {
     
     inline def setRouteTableIdsUndefined: Self = StObject.set(x, "RouteTableIds", js.undefined)
     
-    inline def setRouteTableIdsVarargs(value: String*): Self = StObject.set(x, "RouteTableIds", js.Array(value :_*))
+    inline def setRouteTableIdsVarargs(value: String*): Self = StObject.set(x, "RouteTableIds", js.Array(value*))
     
     inline def setServiceName(value: String): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
     
@@ -160,13 +178,13 @@ object VpcEndpoint {
     
     inline def setSubnetIdsUndefined: Self = StObject.set(x, "SubnetIds", js.undefined)
     
-    inline def setSubnetIdsVarargs(value: String*): Self = StObject.set(x, "SubnetIds", js.Array(value :_*))
+    inline def setSubnetIdsVarargs(value: String*): Self = StObject.set(x, "SubnetIds", js.Array(value*))
     
     inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setVpcEndpointId(value: String): Self = StObject.set(x, "VpcEndpointId", value.asInstanceOf[js.Any])
     

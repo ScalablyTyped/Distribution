@@ -64,8 +64,8 @@ trait IHttpService extends StObject {
     * @param data Request content
     * @param config Optional configuration object
     */
-  def patch[T](url: String, data: js.Any): IHttpPromise[T] = js.native
-  def patch[T](url: String, data: js.Any, config: IRequestShortcutConfig): IHttpPromise[T] = js.native
+  def patch[T](url: String, data: Any): IHttpPromise[T] = js.native
+  def patch[T](url: String, data: Any, config: IRequestShortcutConfig): IHttpPromise[T] = js.native
   
   /**
     * Array of config objects for currently pending requests. This is primarily meant to be used for debugging purposes.
@@ -79,8 +79,8 @@ trait IHttpService extends StObject {
     * @param data Request content
     * @param config Optional configuration object
     */
-  def post[T](url: String, data: js.Any): IHttpPromise[T] = js.native
-  def post[T](url: String, data: js.Any, config: IRequestShortcutConfig): IHttpPromise[T] = js.native
+  def post[T](url: String, data: Any): IHttpPromise[T] = js.native
+  def post[T](url: String, data: Any, config: IRequestShortcutConfig): IHttpPromise[T] = js.native
   
   /**
     * Shortcut method to perform PUT request.
@@ -89,6 +89,6 @@ trait IHttpService extends StObject {
     * @param data Request content
     * @param config Optional configuration object
     */
-  def put[T](url: String, data: js.Any): IHttpPromise[T] = js.native
-  def put[T](url: String, data: js.Any, config: IRequestShortcutConfig): IHttpPromise[T] = js.native
+  def put[T](url: String, data: Any): IHttpPromise[T] = js.native
+  def put[T](url: String, data: Any, config: IRequestShortcutConfig): IHttpPromise[T] = js.native
 }

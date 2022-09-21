@@ -6,10 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("matter-js", "World")
 @js.native
-class World () extends Composite {
+open class World () extends Composite {
   
   var bounds: Bounds = js.native
   
+  /**
+    * @deprecated moved to engine.gravity
+    */
   var gravity: Gravity = js.native
 }
 /* static members */
@@ -19,7 +22,7 @@ object World {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def add(world: World, body: js.Array[Body | Composite | Constraint]): World = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(world.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[World]
+  inline def add(world: World, body: js.Array[Body | Composite | Constraint | MouseConstraint]): World = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(world.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[World]
   /**
     * Add objects or arrays of objects of types: Body, Constraint, Composite
     * @param world
@@ -35,8 +38,8 @@ object World {
     * An alias for Composite.addBody since World is also a Composite
     * @method addBody
     * @param {world} world
-    * @param {body} body
-    * @return {world} The original world with the body added
+    * @param {Body} body
+    * @returns {world} The original world with the body added
     */
   inline def addBody(world: World, body: Body): World = (^.asInstanceOf[js.Dynamic].applyDynamic("addBody")(world.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[World]
   
@@ -44,8 +47,8 @@ object World {
     * An alias for Composite.add since World is also a Composite
     * @method addComposite
     * @param {world} world
-    * @param {composite} composite
-    * @return {world} The original world with the objects from composite added
+    * @param {Composite} composite
+    * @returns {world} The original world with the objects from composite added
     */
   inline def addComposite(world: World, composite: Composite): World = (^.asInstanceOf[js.Dynamic].applyDynamic("addComposite")(world.asInstanceOf[js.Any], composite.asInstanceOf[js.Any])).asInstanceOf[World]
   
@@ -54,7 +57,7 @@ object World {
     * @method addConstraint
     * @param {world} world
     * @param {constraint} constraint
-    * @return {world} The original world with the constraint added
+    * @returns {world} The original world with the constraint added
     */
   inline def addConstraint(world: World, constraint: Constraint): World = (^.asInstanceOf[js.Dynamic].applyDynamic("addConstraint")(world.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any])).asInstanceOf[World]
   
@@ -72,7 +75,7 @@ object World {
     * @method create
     * @constructor
     * @param {} options
-    * @return {world} A new world
+    * @returns {world} A new world
     */
   inline def create(options: IWorldDefinition): World = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[World]
 }

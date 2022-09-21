@@ -1,6 +1,5 @@
 package typings.workboxRouting
 
-import typings.std.RegExp
 import typings.workboxRouting.httpmethodMod.HTTPMethod
 import typings.workboxRouting.routeHandlerMod.RouteHandler
 import typings.workboxRouting.routeMod.Route
@@ -12,9 +11,9 @@ object regExpRouteMod {
   
   @JSImport("workbox-routing/RegExpRoute", "RegExpRoute")
   @js.native
-  class RegExpRoute protected ()
+  open class RegExpRoute protected ()
     extends Route[js.Array[String]] {
-    def this(regExp: RegExp, handler: RouteHandler) = this()
-    def this(regExp: RegExp, handler: RouteHandler, method: HTTPMethod) = this()
+    def this(regExp: js.RegExp, handler: RouteHandler) = this()
+    def this(regExp: js.RegExp, handler: RouteHandler, method: HTTPMethod) = this()
   }
 }

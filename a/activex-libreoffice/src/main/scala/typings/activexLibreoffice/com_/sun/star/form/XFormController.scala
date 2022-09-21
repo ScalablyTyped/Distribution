@@ -42,7 +42,7 @@ object XFormController {
     getControls: () => SafeArray[XControl],
     getCurrentControl: () => XControl,
     getModel: () => XTabControllerModel,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeActivateListener: XFormControllerListener => Unit,
     setContainer: XControlContainer => Unit,

@@ -8,5 +8,5 @@ object transitionMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/_Transition", "_Transition")
   @js.native
-  val Transition: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val Transition: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

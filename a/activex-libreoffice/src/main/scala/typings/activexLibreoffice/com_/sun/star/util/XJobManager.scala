@@ -25,7 +25,7 @@ object XJobManager {
   inline def apply(
     acquire: () => Unit,
     cancelAllJobs: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     registerJob: XCancellable => Unit,
     release: () => Unit,
     releaseJob: XCancellable => Unit

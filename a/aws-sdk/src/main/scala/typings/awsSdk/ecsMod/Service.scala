@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Service extends StObject {
   
   /**
-    * The capacity provider strategy associated with the service.
+    * The capacity provider strategy the service uses. When using the DescribeServices API, this field is omitted if the service was created using a launch type.
     */
   var capacityProviderStrategy: js.UndefOr[CapacityProviderStrategy] = js.undefined
   
@@ -17,9 +17,9 @@ trait Service extends StObject {
   var clusterArn: js.UndefOr[String] = js.undefined
   
   /**
-    * The Unix timestamp for when the service was created.
+    * The Unix timestamp for the time when the service was created.
     */
-  var createdAt: js.UndefOr[Timestamp] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The principal that created the service.
@@ -32,7 +32,7 @@ trait Service extends StObject {
   var deploymentConfiguration: js.UndefOr[DeploymentConfiguration] = js.undefined
   
   /**
-    * The deployment controller type the service is using. When using the DescribeServices API, this field is omitted if the service is using the ECS deployment controller type.
+    * The deployment controller type the service is using. When using the DescribeServices API, this field is omitted if the service uses the ECS deployment controller type.
     */
   var deploymentController: js.UndefOr[DeploymentController] = js.undefined
   
@@ -47,9 +47,14 @@ trait Service extends StObject {
   var desiredCount: js.UndefOr[Integer] = js.undefined
   
   /**
-    * Specifies whether to enable Amazon ECS managed tags for the tasks in the service. For more information, see Tagging Your Amazon ECS Resources in the Amazon Elastic Container Service Developer Guide.
+    * Determines whether to use Amazon ECS managed tags for the tasks in the service. For more information, see Tagging Your Amazon ECS Resources in the Amazon Elastic Container Service Developer Guide.
     */
   var enableECSManagedTags: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Determines whether the execute command functionality is enabled for the service. If true, the execute command functionality is enabled for all containers in tasks as part of the service.
+    */
+  var enableExecuteCommand: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The event stream for your service. A maximum of 100 of the latest events are displayed.
@@ -62,12 +67,12 @@ trait Service extends StObject {
   var healthCheckGracePeriodSeconds: js.UndefOr[BoxedInteger] = js.undefined
   
   /**
-    * The launch type on which your service is running. If no value is specified, it will default to EC2. Valid values include EC2 and FARGATE. For more information, see Amazon ECS Launch Types in the Amazon Elastic Container Service Developer Guide.
+    * The launch type the service is using. When using the DescribeServices API, this field is omitted if the service was created using a capacity provider strategy.
     */
   var launchType: js.UndefOr[LaunchType] = js.undefined
   
   /**
-    * A list of Elastic Load Balancing load balancer objects, containing the load balancer name, the container name (as it appears in a container definition), and the container port to access from the load balancer.
+    * A list of Elastic Load Balancing load balancer objects. It contains the load balancer name, the container name, and the container port to access from the load balancer. The container name is as it appears in a container definition.
     */
   var loadBalancers: js.UndefOr[LoadBalancers] = js.undefined
   
@@ -92,17 +97,22 @@ trait Service extends StObject {
   var placementStrategy: js.UndefOr[PlacementStrategies] = js.undefined
   
   /**
-    * The platform version on which to run your service. A platform version is only specified for tasks using the Fargate launch type. If one is not specified, the LATEST platform version is used by default. For more information, see AWS Fargate Platform Versions in the Amazon Elastic Container Service Developer Guide.
+    * The operating system that your tasks in the service run on. A platform family is specified only for tasks using the Fargate launch type.   All tasks that run as part of this service must use the same platformFamily value as the service (for example, LINUX).
+    */
+  var platformFamily: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The platform version to run your service on. A platform version is only specified for tasks that are hosted on Fargate. If one isn't specified, the LATEST platform version is used. For more information, see Fargate Platform Versions in the Amazon Elastic Container Service Developer Guide.
     */
   var platformVersion: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies whether to propagate the tags from the task definition or the service to the task. If no value is specified, the tags are not propagated.
+    * Determines whether to propagate the tags from the task definition or the service to the task. If no value is specified, the tags aren't propagated.
     */
   var propagateTags: js.UndefOr[PropagateTags] = js.undefined
   
   /**
-    * The ARN of the IAM role associated with the service that allows the Amazon ECS container agent to register container instances with an Elastic Load Balancing load balancer.
+    * The ARN of the IAM role that's associated with the service. It allows the Amazon ECS container agent to register container instances with an Elastic Load Balancing load balancer.
     */
   var roleArn: js.UndefOr[String] = js.undefined
   
@@ -112,22 +122,22 @@ trait Service extends StObject {
   var runningCount: js.UndefOr[Integer] = js.undefined
   
   /**
-    * The scheduling strategy to use for the service. For more information, see Services. There are two service scheduler strategies available:    REPLICA-The replica scheduling strategy places and maintains the desired number of tasks across your cluster. By default, the service scheduler spreads tasks across Availability Zones. You can use task placement strategies and constraints to customize task placement decisions.    DAEMON-The daemon scheduling strategy deploys exactly one task on each active container instance that meets all of the task placement constraints that you specify in your cluster. The service scheduler also evaluates the task placement constraints for running tasks and will stop tasks that do not meet the placement constraints.  Fargate tasks do not support the DAEMON scheduling strategy.   
+    * The scheduling strategy to use for the service. For more information, see Services. There are two service scheduler strategies available.    REPLICA-The replica scheduling strategy places and maintains the desired number of tasks across your cluster. By default, the service scheduler spreads tasks across Availability Zones. You can use task placement strategies and constraints to customize task placement decisions.    DAEMON-The daemon scheduling strategy deploys exactly one task on each active container instance. This task meets all of the task placement constraints that you specify in your cluster. The service scheduler also evaluates the task placement constraints for running tasks. It stop tasks that don't meet the placement constraints.  Fargate tasks don't support the DAEMON scheduling strategy.   
     */
   var schedulingStrategy: js.UndefOr[SchedulingStrategy] = js.undefined
   
   /**
-    * The ARN that identifies the service. The ARN contains the arn:aws:ecs namespace, followed by the Region of the service, the AWS account ID of the service owner, the service namespace, and then the service name. For example, arn:aws:ecs:region:012345678910:service/my-service.
+    * The ARN that identifies the service. For more information about the ARN format, see Amazon Resource Name (ARN) in the Amazon ECS Developer Guide.
     */
   var serviceArn: js.UndefOr[String] = js.undefined
   
   /**
-    * The name of your service. Up to 255 letters (uppercase and lowercase), numbers, and hyphens are allowed. Service names must be unique within a cluster, but you can have similarly named services in multiple clusters within a Region or across multiple Regions.
+    * The name of your service. Up to 255 letters (uppercase and lowercase), numbers, underscores, and hyphens are allowed. Service names must be unique within a cluster. However, you can have similarly named services in multiple clusters within a Region or across multiple Regions.
     */
   var serviceName: js.UndefOr[String] = js.undefined
   
   /**
-    * The details of the service discovery registries to assign to this service. For more information, see Service Discovery.
+    * The details for the service discovery registries to assign to this service. For more information, see Service Discovery.
     */
   var serviceRegistries: js.UndefOr[ServiceRegistries] = js.undefined
   
@@ -137,7 +147,7 @@ trait Service extends StObject {
   var status: js.UndefOr[String] = js.undefined
   
   /**
-    * The metadata that you apply to the service to help you categorize and organize them. Each tag consists of a key and an optional value, both of which you define. The following basic restrictions apply to tags:   Maximum number of tags per resource - 50   For each resource, each tag key must be unique, and each tag key can have only one value.   Maximum key length - 128 Unicode characters in UTF-8   Maximum value length - 256 Unicode characters in UTF-8   If your tagging schema is used across multiple services and resources, remember that other services may have restrictions on allowed characters. Generally allowed characters are: letters, numbers, and spaces representable in UTF-8, and the following characters: + - = . _ : / @.   Tag keys and values are case-sensitive.   Do not use aws:, AWS:, or any upper or lowercase combination of such as a prefix for either keys or values as it is reserved for AWS use. You cannot edit or delete tag keys or values with this prefix. Tags with this prefix do not count against your tags per resource limit.  
+    * The metadata that you apply to the service to help you categorize and organize them. Each tag consists of a key and an optional value. You define bot the key and value. The following basic restrictions apply to tags:   Maximum number of tags per resource - 50   For each resource, each tag key must be unique, and each tag key can have only one value.   Maximum key length - 128 Unicode characters in UTF-8   Maximum value length - 256 Unicode characters in UTF-8   If your tagging schema is used across multiple services and resources, remember that other services may have restrictions on allowed characters. Generally allowed characters are: letters, numbers, and spaces representable in UTF-8, and the following characters: + - = . _ : / @.   Tag keys and values are case-sensitive.   Do not use aws:, AWS:, or any upper or lowercase combination of such as a prefix for either keys or values as it is reserved for Amazon Web Services use. You cannot edit or delete tag keys or values with this prefix. Tags with this prefix do not count against your tags per resource limit.  
     */
   var tags: js.UndefOr[Tags] = js.undefined
   
@@ -147,7 +157,7 @@ trait Service extends StObject {
   var taskDefinition: js.UndefOr[String] = js.undefined
   
   /**
-    * Information about a set of Amazon ECS tasks in either an AWS CodeDeploy or an EXTERNAL deployment. An Amazon ECS task set includes details such as the desired number of tasks, how many tasks are running, and whether the task set serves production traffic.
+    * Information about a set of Amazon ECS tasks in either an CodeDeploy or an EXTERNAL deployment. An Amazon ECS task set includes details such as the desired number of tasks, how many tasks are running, and whether the task set serves production traffic.
     */
   var taskSets: js.UndefOr[TaskSets] = js.undefined
 }
@@ -164,13 +174,13 @@ object Service {
     
     inline def setCapacityProviderStrategyUndefined: Self = StObject.set(x, "capacityProviderStrategy", js.undefined)
     
-    inline def setCapacityProviderStrategyVarargs(value: CapacityProviderStrategyItem*): Self = StObject.set(x, "capacityProviderStrategy", js.Array(value :_*))
+    inline def setCapacityProviderStrategyVarargs(value: CapacityProviderStrategyItem*): Self = StObject.set(x, "capacityProviderStrategy", js.Array(value*))
     
     inline def setClusterArn(value: String): Self = StObject.set(x, "clusterArn", value.asInstanceOf[js.Any])
     
     inline def setClusterArnUndefined: Self = StObject.set(x, "clusterArn", js.undefined)
     
-    inline def setCreatedAt(value: Timestamp): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
@@ -190,7 +200,7 @@ object Service {
     
     inline def setDeploymentsUndefined: Self = StObject.set(x, "deployments", js.undefined)
     
-    inline def setDeploymentsVarargs(value: Deployment*): Self = StObject.set(x, "deployments", js.Array(value :_*))
+    inline def setDeploymentsVarargs(value: Deployment*): Self = StObject.set(x, "deployments", js.Array(value*))
     
     inline def setDesiredCount(value: Integer): Self = StObject.set(x, "desiredCount", value.asInstanceOf[js.Any])
     
@@ -200,11 +210,15 @@ object Service {
     
     inline def setEnableECSManagedTagsUndefined: Self = StObject.set(x, "enableECSManagedTags", js.undefined)
     
+    inline def setEnableExecuteCommand(value: Boolean): Self = StObject.set(x, "enableExecuteCommand", value.asInstanceOf[js.Any])
+    
+    inline def setEnableExecuteCommandUndefined: Self = StObject.set(x, "enableExecuteCommand", js.undefined)
+    
     inline def setEvents(value: ServiceEvents): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    inline def setEventsVarargs(value: ServiceEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: ServiceEvent*): Self = StObject.set(x, "events", js.Array(value*))
     
     inline def setHealthCheckGracePeriodSeconds(value: BoxedInteger): Self = StObject.set(x, "healthCheckGracePeriodSeconds", value.asInstanceOf[js.Any])
     
@@ -218,7 +232,7 @@ object Service {
     
     inline def setLoadBalancersUndefined: Self = StObject.set(x, "loadBalancers", js.undefined)
     
-    inline def setLoadBalancersVarargs(value: LoadBalancer*): Self = StObject.set(x, "loadBalancers", js.Array(value :_*))
+    inline def setLoadBalancersVarargs(value: LoadBalancer*): Self = StObject.set(x, "loadBalancers", js.Array(value*))
     
     inline def setNetworkConfiguration(value: NetworkConfiguration): Self = StObject.set(x, "networkConfiguration", value.asInstanceOf[js.Any])
     
@@ -232,13 +246,17 @@ object Service {
     
     inline def setPlacementConstraintsUndefined: Self = StObject.set(x, "placementConstraints", js.undefined)
     
-    inline def setPlacementConstraintsVarargs(value: PlacementConstraint*): Self = StObject.set(x, "placementConstraints", js.Array(value :_*))
+    inline def setPlacementConstraintsVarargs(value: PlacementConstraint*): Self = StObject.set(x, "placementConstraints", js.Array(value*))
     
     inline def setPlacementStrategy(value: PlacementStrategies): Self = StObject.set(x, "placementStrategy", value.asInstanceOf[js.Any])
     
     inline def setPlacementStrategyUndefined: Self = StObject.set(x, "placementStrategy", js.undefined)
     
-    inline def setPlacementStrategyVarargs(value: PlacementStrategy*): Self = StObject.set(x, "placementStrategy", js.Array(value :_*))
+    inline def setPlacementStrategyVarargs(value: PlacementStrategy*): Self = StObject.set(x, "placementStrategy", js.Array(value*))
+    
+    inline def setPlatformFamily(value: String): Self = StObject.set(x, "platformFamily", value.asInstanceOf[js.Any])
+    
+    inline def setPlatformFamilyUndefined: Self = StObject.set(x, "platformFamily", js.undefined)
     
     inline def setPlatformVersion(value: String): Self = StObject.set(x, "platformVersion", value.asInstanceOf[js.Any])
     
@@ -272,7 +290,7 @@ object Service {
     
     inline def setServiceRegistriesUndefined: Self = StObject.set(x, "serviceRegistries", js.undefined)
     
-    inline def setServiceRegistriesVarargs(value: ServiceRegistry*): Self = StObject.set(x, "serviceRegistries", js.Array(value :_*))
+    inline def setServiceRegistriesVarargs(value: ServiceRegistry*): Self = StObject.set(x, "serviceRegistries", js.Array(value*))
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
@@ -282,7 +300,7 @@ object Service {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setTaskDefinition(value: String): Self = StObject.set(x, "taskDefinition", value.asInstanceOf[js.Any])
     
@@ -292,6 +310,6 @@ object Service {
     
     inline def setTaskSetsUndefined: Self = StObject.set(x, "taskSets", js.undefined)
     
-    inline def setTaskSetsVarargs(value: TaskSet*): Self = StObject.set(x, "taskSets", js.Array(value :_*))
+    inline def setTaskSetsVarargs(value: TaskSet*): Self = StObject.set(x, "taskSets", js.Array(value*))
   }
 }

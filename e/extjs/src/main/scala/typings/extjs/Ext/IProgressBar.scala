@@ -10,13 +10,13 @@ trait IProgressBar
   
   /** [Config Option] (Boolean/Object) */
   @JSName("animate")
-  var animate_IProgressBar: js.UndefOr[js.Any] = js.undefined
+  var animate_IProgressBar: js.UndefOr[Any] = js.undefined
   
   /** [Method] Initialized the renderData to be used when rendering the renderTpl
     * @returns Object Object with keys and values that are going to be applied to the renderTpl
     */
   @JSName("initRenderData")
-  var initRenderData_IProgressBar: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var initRenderData_IProgressBar: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns true if the progress bar is currently in a wait operation
     * @returns Boolean True if waiting, else false
@@ -37,7 +37,7 @@ trait IProgressBar
   var text: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (String/HTMLElement/Ext.Element) */
-  var textEl: js.UndefOr[js.Any] = js.undefined
+  var textEl: js.UndefOr[Any] = js.undefined
   
   /** [Method] Updates the progress bar value and optionally its text
     * @param value Number A floating point value between 0 and 1 (e.g., .5)
@@ -68,7 +68,7 @@ trait IProgressBar
     * @returns Ext.ProgressBar this
     */
   @JSName("wait")
-  var wait_FIProgressBar: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var wait_FIProgressBar: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], this.type]] = js.undefined
 }
 object IProgressBar {
   
@@ -79,11 +79,11 @@ object IProgressBar {
   
   extension [Self <: IProgressBar](x: Self) {
     
-    inline def setAnimate(value: js.Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
-    inline def setInitRenderData(value: () => js.Any): Self = StObject.set(x, "initRenderData", js.Any.fromFunction0(value))
+    inline def setInitRenderData(value: () => Any): Self = StObject.set(x, "initRenderData", js.Any.fromFunction0(value))
     
     inline def setInitRenderDataUndefined: Self = StObject.set(x, "initRenderData", js.undefined)
     
@@ -101,7 +101,7 @@ object IProgressBar {
     
     inline def setText(value: java.lang.String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    inline def setTextEl(value: js.Any): Self = StObject.set(x, "textEl", value.asInstanceOf[js.Any])
+    inline def setTextEl(value: Any): Self = StObject.set(x, "textEl", value.asInstanceOf[js.Any])
     
     inline def setTextElUndefined: Self = StObject.set(x, "textEl", js.undefined)
     
@@ -121,7 +121,7 @@ object IProgressBar {
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    inline def setWait_(value: /* config */ js.UndefOr[js.Any] => IProgressBar): Self = StObject.set(x, "wait", js.Any.fromFunction1(value))
+    inline def setWait_(value: /* config */ js.UndefOr[Any] => IProgressBar): Self = StObject.set(x, "wait", js.Any.fromFunction1(value))
     
     inline def setWait_Undefined: Self = StObject.set(x, "wait", js.undefined)
   }

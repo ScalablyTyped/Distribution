@@ -1,6 +1,5 @@
 package typings.reactNative.mod
 
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ trait LogBoxStatic extends StObject {
   /**
     * Silence any logs that match the given strings or regexes.
     */
-  def ignoreLogs(patterns: js.Array[String | RegExp]): Unit = js.native
+  def ignoreLogs(patterns: js.Array[String | js.RegExp]): Unit = js.native
   
   def install(): Unit = js.native
   

@@ -1,5 +1,6 @@
 package typings.ssh2SftpClient
 
+import typings.ssh2SftpClient.mod.FileInfoType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ssh2SftpClientStrings {
   
   @js.native
-  sealed trait `-_` extends StObject
+  sealed trait `-_`
+    extends StObject
+       with FileInfoType
   inline def `-_`: `-_` = "-".asInstanceOf[`-_`]
   
   @js.native
@@ -15,12 +18,20 @@ object ssh2SftpClientStrings {
   inline def a: a = "a".asInstanceOf[a]
   
   @js.native
-  sealed trait d extends StObject
+  sealed trait d
+    extends StObject
+       with FileInfoType
   inline def d: d = "d".asInstanceOf[d]
   
   @js.native
-  sealed trait l extends StObject
+  sealed trait l
+    extends StObject
+       with FileInfoType
   inline def l: l = "l".asInstanceOf[l]
+  
+  @js.native
+  sealed trait r extends StObject
+  inline def r: r = "r".asInstanceOf[r]
   
   @js.native
   sealed trait w extends StObject

@@ -1,12 +1,12 @@
 package typings.cesium.anon
 
-import typings.cesium.mod.Cartesian3
-import typings.cesium.mod.VertexFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CloseBottom extends StObject {
+  
+  var arcType: js.UndefOr[typings.cesium.mod.ArcType] = js.undefined
   
   var closeBottom: js.UndefOr[Boolean] = js.undefined
   
@@ -22,20 +22,26 @@ trait CloseBottom extends StObject {
   
   var perPositionHeight: js.UndefOr[Boolean] = js.undefined
   
-  var positions: js.Array[Cartesian3]
+  var polygonHierarchy: typings.cesium.mod.PolygonHierarchy
   
   var stRotation: js.UndefOr[Double] = js.undefined
   
-  var vertexFormat: js.UndefOr[VertexFormat] = js.undefined
+  var textureCoordinates: js.UndefOr[typings.cesium.mod.PolygonHierarchy] = js.undefined
+  
+  var vertexFormat: js.UndefOr[typings.cesium.mod.VertexFormat] = js.undefined
 }
 object CloseBottom {
   
-  inline def apply(positions: js.Array[Cartesian3]): CloseBottom = {
-    val __obj = js.Dynamic.literal(positions = positions.asInstanceOf[js.Any])
+  inline def apply(polygonHierarchy: typings.cesium.mod.PolygonHierarchy): CloseBottom = {
+    val __obj = js.Dynamic.literal(polygonHierarchy = polygonHierarchy.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloseBottom]
   }
   
   extension [Self <: CloseBottom](x: Self) {
+    
+    inline def setArcType(value: typings.cesium.mod.ArcType): Self = StObject.set(x, "arcType", value.asInstanceOf[js.Any])
+    
+    inline def setArcTypeUndefined: Self = StObject.set(x, "arcType", js.undefined)
     
     inline def setCloseBottom(value: Boolean): Self = StObject.set(x, "closeBottom", value.asInstanceOf[js.Any])
     
@@ -65,15 +71,17 @@ object CloseBottom {
     
     inline def setPerPositionHeightUndefined: Self = StObject.set(x, "perPositionHeight", js.undefined)
     
-    inline def setPositions(value: js.Array[Cartesian3]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
-    
-    inline def setPositionsVarargs(value: Cartesian3*): Self = StObject.set(x, "positions", js.Array(value :_*))
+    inline def setPolygonHierarchy(value: typings.cesium.mod.PolygonHierarchy): Self = StObject.set(x, "polygonHierarchy", value.asInstanceOf[js.Any])
     
     inline def setStRotation(value: Double): Self = StObject.set(x, "stRotation", value.asInstanceOf[js.Any])
     
     inline def setStRotationUndefined: Self = StObject.set(x, "stRotation", js.undefined)
     
-    inline def setVertexFormat(value: VertexFormat): Self = StObject.set(x, "vertexFormat", value.asInstanceOf[js.Any])
+    inline def setTextureCoordinates(value: typings.cesium.mod.PolygonHierarchy): Self = StObject.set(x, "textureCoordinates", value.asInstanceOf[js.Any])
+    
+    inline def setTextureCoordinatesUndefined: Self = StObject.set(x, "textureCoordinates", js.undefined)
+    
+    inline def setVertexFormat(value: typings.cesium.mod.VertexFormat): Self = StObject.set(x, "vertexFormat", value.asInstanceOf[js.Any])
     
     inline def setVertexFormatUndefined: Self = StObject.set(x, "vertexFormat", js.undefined)
   }

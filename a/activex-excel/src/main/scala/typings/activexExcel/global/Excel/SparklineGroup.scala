@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.SparklineGroup")
 @js.native
-/* private */ class SparklineGroup ()
+/* private */ open class SparklineGroup ()
   extends StObject
      with typings.activexExcel.Excel.SparklineGroup {
   
@@ -44,10 +44,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var ExcelDotSparklineGroup_typekey: typings.activexExcel.Excel.SparklineGroup = js.native
   
   /* CompleteClass */
-  override def Item(Index: js.Any): typings.activexExcel.Excel.Sparkline = js.native
+  override def Item(Index: Any): typings.activexExcel.Excel.Sparkline = js.native
   
   /* CompleteClass */
-  var LineWeight: js.Any = js.native
+  var LineWeight: Any = js.native
   
   /* CompleteClass */
   override def Location(Address: String): Range = js.native
@@ -72,7 +72,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def ModifySourceData(SourceData: String): Unit = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var PlotBy: XlSparklineRowCol = js.native

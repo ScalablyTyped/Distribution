@@ -10,10 +10,10 @@ Excel-Style Javascript Data Formatter
 | ------------------ | :-------------: |
 | Full name          | excel-style-dataformatter |
 | Keywords           | excel-like, excel-style, excel, format, dataformatter |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 720 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3815.6666666666665 |
+| # stars            | 8.0 |
 
 ## Links
 - [Homepage](https://github.com/Fakundo/Excel-Style-Javascript-DataFormatter#readme)

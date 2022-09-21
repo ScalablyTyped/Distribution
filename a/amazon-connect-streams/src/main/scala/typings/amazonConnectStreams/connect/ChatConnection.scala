@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * The ChatConnection API provides action methods (no event subscriptions) which can be called to manipulate the state of a particular chat connection within a contact.
   * Like contacts, connections come and go.
-  * It is good practice not to persist these object or keep them as internal state.
+  * It is good practice not to persist these objects or keep them as internal state.
   * If you need to, store the `contactId` and `connectionId` of the connection and make sure that the contact and connection still exist by fetching them in order from the `Agent` API object before calling methods on them.
   */
 @js.native
@@ -23,7 +23,7 @@ trait ChatConnection
     * Gets a `Promise` with the media controller associated with this connection.
     * The promise resolves to a `ChatSession` object from `amazon-connect-chatjs` library.
     */
-  def getMediaController(): js.Promise[js.Any] = js.native
+  def getMediaController(): js.Promise[Any] = js.native
   
   /** Get the media info object associated with this connection. */
   def getMediaInfo(): ChatMediaInfo = js.native

@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("express-frappe", "ExpressFrappe")
   @js.native
-  class ExpressFrappe protected ()
+  open class ExpressFrappe protected ()
     extends typings.expressFrappe.expressFrappeMod.ExpressFrappe {
     def this(config: ExpressFrappeConfig) = this()
   }

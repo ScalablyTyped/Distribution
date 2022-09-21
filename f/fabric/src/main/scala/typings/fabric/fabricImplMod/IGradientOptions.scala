@@ -13,7 +13,7 @@ trait IGradientOptions extends StObject {
   
   var coords: js.UndefOr[IGradientOptionsCoords] = js.undefined
   
-  var gradientTransform: js.UndefOr[js.Any] = js.undefined
+  var gradientTransform: js.UndefOr[Any] = js.undefined
   
   /**
     * Horizontal offset for aligning gradients coming from SVG when outside pathgroups
@@ -42,13 +42,13 @@ object IGradientOptions {
     
     inline def setColorStopsUndefined: Self = StObject.set(x, "colorStops", js.undefined)
     
-    inline def setColorStopsVarargs(value: typings.fabric.anon.Color*): Self = StObject.set(x, "colorStops", js.Array(value :_*))
+    inline def setColorStopsVarargs(value: typings.fabric.anon.Color*): Self = StObject.set(x, "colorStops", js.Array(value*))
     
     inline def setCoords(value: IGradientOptionsCoords): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
     
     inline def setCoordsUndefined: Self = StObject.set(x, "coords", js.undefined)
     
-    inline def setGradientTransform(value: js.Any): Self = StObject.set(x, "gradientTransform", value.asInstanceOf[js.Any])
+    inline def setGradientTransform(value: Any): Self = StObject.set(x, "gradientTransform", value.asInstanceOf[js.Any])
     
     inline def setGradientTransformUndefined: Self = StObject.set(x, "gradientTransform", js.undefined)
     

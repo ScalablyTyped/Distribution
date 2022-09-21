@@ -64,7 +64,7 @@ object ServeOptions {
     
     inline def `set--`(value: js.Array[String]): Self = StObject.set(x, "--", value.asInstanceOf[js.Any])
     
-    inline def `set--Varargs`(value: String*): Self = StObject.set(x, "--", js.Array(value :_*))
+    inline def `set--Varargs`(value: String*): Self = StObject.set(x, "--", js.Array(value*))
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

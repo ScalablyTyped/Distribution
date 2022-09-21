@@ -29,6 +29,6 @@ object BatchWriteRequest {
     
     inline def setOperations(value: BatchWriteOperationList): Self = StObject.set(x, "Operations", value.asInstanceOf[js.Any])
     
-    inline def setOperationsVarargs(value: BatchWriteOperation*): Self = StObject.set(x, "Operations", js.Array(value :_*))
+    inline def setOperationsVarargs(value: BatchWriteOperation*): Self = StObject.set(x, "Operations", js.Array(value*))
   }
 }

@@ -1,57 +1,68 @@
 package typings.rollup.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
+import typings.rollup.anon.AssetFileName
+import typings.rollup.anon.AssetReferenceId
+import typings.rollup.anon.Ast
+import typings.rollup.anon.Change
+import typings.rollup.anon.ChunkId
+import typings.rollup.anon.Code
+import typings.rollup.anon.Event
+import typings.rollup.anon.Handler
+import typings.rollup.anon.IsEntry
+import typings.rollup.anon.Name
+import typings.rollup.anon.PartialSourceDescription
+import typings.rollup.mod.^
+import typings.rollup.rollupStrings.`no-external`
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def VERSION: java.lang.String = typings.rollup.mod.^.asInstanceOf[js.Dynamic].selectDynamic("VERSION").asInstanceOf[java.lang.String]
+inline def VERSION: String = ^.asInstanceOf[js.Dynamic].selectDynamic("VERSION").asInstanceOf[String]
 
-inline def rollup(options: typings.rollup.mod.RollupOptions): js.Promise[typings.rollup.mod.RollupBuild] = typings.rollup.mod.^.asInstanceOf[js.Dynamic].applyDynamic("rollup")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.rollup.mod.RollupBuild]]
+inline def defineConfig(options: js.Array[RollupOptions]): js.Array[RollupOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("defineConfig")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[RollupOptions]]
+inline def defineConfig(options: RollupOptions): RollupOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("defineConfig")(options.asInstanceOf[js.Any]).asInstanceOf[RollupOptions]
 
-inline def watch(config: js.Array[typings.rollup.mod.RollupWatchOptions]): typings.rollup.mod.RollupWatcher = typings.rollup.mod.^.asInstanceOf[js.Dynamic].applyDynamic("watch")(config.asInstanceOf[js.Any]).asInstanceOf[typings.rollup.mod.RollupWatcher]
-inline def watch(config: typings.rollup.mod.RollupWatchOptions): typings.rollup.mod.RollupWatcher = typings.rollup.mod.^.asInstanceOf[js.Dynamic].applyDynamic("watch")(config.asInstanceOf[js.Any]).asInstanceOf[typings.rollup.mod.RollupWatcher]
+inline def rollup(options: RollupOptions): js.Promise[RollupBuild] = ^.asInstanceOf[js.Dynamic].applyDynamic("rollup")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RollupBuild]]
 
-type AddonHook = java.lang.String | typings.rollup.mod.AddonHookFunction
+inline def watch(config: js.Array[RollupWatchOptions]): RollupWatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("watch")(config.asInstanceOf[js.Any]).asInstanceOf[RollupWatcher]
+inline def watch(config: RollupWatchOptions): RollupWatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("watch")(config.asInstanceOf[js.Any]).asInstanceOf[RollupWatcher]
 
-type AddonHookFunction = js.ThisFunction0[
-/* this */ typings.rollup.mod.PluginContext, 
-java.lang.String | js.Promise[java.lang.String]]
+type AddonHook = String | AddonHookFunction
 
-type CustomPluginOptions = org.scalablytyped.runtime.StringDictionary[js.Any]
+type AddonHookFunction = js.ThisFunction0[/* this */ PluginContext, String | js.Promise[String]]
+
+type CustomPluginOptions = StringDictionary[Any]
 
 type EmitAsset = js.Function2[
-/* name */ java.lang.String, 
-/* source */ js.UndefOr[java.lang.String | typings.std.Uint8Array], 
-java.lang.String]
+/* name */ String, 
+/* source */ js.UndefOr[String | js.typedarray.Uint8Array], 
+String]
 
-type EmitChunk = js.Function2[
-/* id */ java.lang.String, 
-/* options */ js.UndefOr[typings.rollup.anon.Name], 
-java.lang.String]
+type EmitChunk = js.Function2[/* id */ String, /* options */ js.UndefOr[Name], String]
 
-type EmitFile = js.Function1[/* emittedFile */ typings.rollup.mod.EmittedFile, java.lang.String]
+type EmitFile = js.Function1[/* emittedFile */ EmittedFile, String]
 
-type ExternalOption = (js.Array[java.lang.String | typings.std.RegExp]) | java.lang.String | typings.std.RegExp | (js.Function3[
-/* source */ java.lang.String, 
-/* importer */ js.UndefOr[java.lang.String], 
-/* isResolved */ scala.Boolean, 
-js.UndefOr[scala.Boolean | scala.Null]])
+type ExternalOption = (js.Array[String | js.RegExp]) | String | js.RegExp | (js.Function3[
+/* source */ String, 
+/* importer */ js.UndefOr[String], 
+/* isResolved */ Boolean, 
+Boolean | Null | Unit])
 
-type GetInterop = js.Function1[/* id */ java.lang.String | scala.Null, typings.rollup.mod.InteropType]
+type GetInterop = js.Function1[/* id */ String | Null, InteropType]
 
-type GetManualChunk = js.Function2[
-/* id */ java.lang.String, 
-/* api */ typings.rollup.mod.GetManualChunkApi, 
-js.UndefOr[java.lang.String | scala.Null]]
+type GetManualChunk = js.Function2[/* id */ String, /* api */ GetManualChunkApi, String | Null | Unit]
 
-type GetModuleInfo = js.Function1[/* moduleId */ java.lang.String, typings.rollup.mod.ModuleInfo | scala.Null]
+type GetModuleInfo = js.Function1[/* moduleId */ String, ModuleInfo | Null]
 
-type GlobalsOption = org.scalablytyped.runtime.StringDictionary[java.lang.String] | (js.Function1[/* name */ java.lang.String, java.lang.String])
+type GlobalsOption = StringDictionary[String] | (js.Function1[/* name */ String, String])
 
-type HasModuleSideEffects = js.Function2[/* id */ java.lang.String, /* external */ scala.Boolean, scala.Boolean]
+type HasModuleSideEffects = js.Function2[/* id */ String, /* external */ Boolean, Boolean]
 
-type InputOption = java.lang.String | js.Array[java.lang.String] | org.scalablytyped.runtime.StringDictionary[java.lang.String]
+type InputOption = String | js.Array[String] | StringDictionary[String]
 
 /* Rewritten from type alias, can be one of: 
   - scala.Boolean
@@ -60,76 +71,68 @@ type InputOption = java.lang.String | js.Array[java.lang.String] | org.scalablyt
   - typings.rollup.rollupStrings.default
   - typings.rollup.rollupStrings.defaultOnly
 */
-type InteropType = typings.rollup.mod._InteropType | scala.Boolean
+type InteropType = _InteropType | Boolean
 
 type IsExternal = js.Function3[
-/* source */ java.lang.String, 
-/* importer */ js.UndefOr[java.lang.String], 
-/* isResolved */ scala.Boolean, 
-scala.Boolean]
+/* source */ String, 
+/* importer */ js.UndefOr[String], 
+/* isResolved */ Boolean, 
+Boolean]
 
-type IsPureModule = js.Function1[/* id */ java.lang.String, js.UndefOr[scala.Boolean | scala.Null]]
+type IsPureModule = js.Function1[/* id */ String, Boolean | Null | Unit]
 
-type LoadHook = js.ThisFunction1[
-/* this */ typings.rollup.mod.PluginContext, 
-/* id */ java.lang.String, 
-js.Promise[typings.rollup.mod.LoadResult] | typings.rollup.mod.LoadResult]
+type LoadHook = js.ThisFunction1[/* this */ PluginContext, /* id */ String, LoadResult]
 
-type LoadResult = js.UndefOr[typings.rollup.mod.SourceDescription | java.lang.String | scala.Null]
+type LoadResult = SourceDescription | String | Null | Unit
 
-type ManualChunksOption = org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]] | typings.rollup.mod.GetManualChunk
+type MakeAsync[Fn] = js.ThisFunction1[/* this */ Any, /* args */ Any, Any | js.Promise[Any]]
 
-type ModuleParsedHook = js.ThisFunction1[
-/* this */ typings.rollup.mod.PluginContext, 
-/* info */ typings.rollup.mod.ModuleInfo, 
-js.Promise[scala.Unit] | scala.Unit]
+type ManualChunksOption = StringDictionary[js.Array[String]] | GetManualChunk
 
-type ModuleSideEffectsOption = scala.Boolean | typings.rollup.rollupStrings.`no-external` | js.Array[java.lang.String] | typings.rollup.mod.HasModuleSideEffects
+type ModuleParsedHook = js.ThisFunction1[/* this */ PluginContext, /* info */ ModuleInfo, Unit]
 
-type OptionsPaths = (typings.std.Record[java.lang.String, java.lang.String]) | (js.Function1[/* id */ java.lang.String, java.lang.String])
+type ModuleSideEffectsOption = Boolean | `no-external` | js.Array[String] | HasModuleSideEffects
 
-type OutputBundle = org.scalablytyped.runtime.StringDictionary[typings.rollup.mod.OutputAsset | typings.rollup.mod.OutputChunk]
+// eslint-disable-next-line @typescript-eslint/ban-types
+type ObjectHook[T, O] = T | (Handler[T] & O)
 
-type OutputBundleWithPlaceholders = org.scalablytyped.runtime.StringDictionary[
-typings.rollup.mod.OutputAsset | typings.rollup.mod.OutputChunk | typings.rollup.mod.FilePlaceholder]
+type OptionsPaths = (Record[String, String]) | (js.Function1[/* id */ String, String])
+
+type OutputBundle = StringDictionary[OutputAsset | OutputChunk]
+
+type OutputBundleWithPlaceholders = StringDictionary[OutputAsset | OutputChunk | FilePlaceholder]
 
 type PartialNull[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
 {[ P in keyof T ]: T[P] | null}
-  */ typings.rollup.rollupStrings.PartialNull & org.scalablytyped.runtime.TopLevel[T]
+  */ typings.rollup.rollupStrings.PartialNull & TopLevel[T]
 
-type PluginImpl[O /* <: js.Object */] = js.Function1[/* options */ js.UndefOr[O], typings.rollup.mod.Plugin]
+type PluginImpl[O /* <: js.Object */] = js.Function1[/* options */ js.UndefOr[O], Plugin]
 
-type PureModulesOption = scala.Boolean | js.Array[java.lang.String] | typings.rollup.mod.IsPureModule
+type PureModulesOption = Boolean | js.Array[String] | IsPureModule
 
 type RenderChunkHook = js.ThisFunction3[
-/* this */ typings.rollup.mod.PluginContext, 
-/* code */ java.lang.String, 
-/* chunk */ typings.rollup.mod.RenderedChunk, 
-/* options */ typings.rollup.mod.NormalizedOutputOptions, 
-(js.Promise[typings.rollup.anon.Code | scala.Null]) | typings.rollup.anon.Code | java.lang.String | scala.Null]
+/* this */ PluginContext, 
+/* code */ String, 
+/* chunk */ RenderedChunk, 
+/* options */ NormalizedOutputOptions, 
+js.UndefOr[Code | String | Null]]
 
-type ResolveAssetUrlHook = js.ThisFunction1[
-/* this */ typings.rollup.mod.PluginContext, 
-/* options */ typings.rollup.anon.AssetFileName, 
-js.UndefOr[java.lang.String | scala.Null]]
+type ResolveAssetUrlHook = js.ThisFunction1[/* this */ PluginContext, /* options */ AssetFileName, String | Null | Unit]
 
 type ResolveDynamicImportHook = js.ThisFunction2[
-/* this */ typings.rollup.mod.PluginContext, 
-/* specifier */ java.lang.String | typings.rollup.mod.AcornNode, 
-/* importer */ java.lang.String, 
-js.Promise[typings.rollup.mod.ResolveIdResult] | typings.rollup.mod.ResolveIdResult]
+/* this */ PluginContext, 
+/* specifier */ String | AcornNode, 
+/* importer */ String, 
+ResolveIdResult]
 
-type ResolveFileUrlHook = js.ThisFunction1[
-/* this */ typings.rollup.mod.PluginContext, 
-/* options */ typings.rollup.anon.AssetReferenceId, 
-js.UndefOr[java.lang.String | scala.Null]]
+type ResolveFileUrlHook = js.ThisFunction1[/* this */ PluginContext, /* options */ AssetReferenceId, String | Null | Unit]
 
 type ResolveIdHook = js.ThisFunction3[
-/* this */ typings.rollup.mod.PluginContext, 
-/* source */ java.lang.String, 
-/* importer */ js.UndefOr[java.lang.String], 
-/* options */ typings.rollup.anon.`1`, 
-js.Promise[typings.rollup.mod.ResolveIdResult] | typings.rollup.mod.ResolveIdResult]
+/* this */ PluginContext, 
+/* source */ String, 
+/* importer */ js.UndefOr[String], 
+/* options */ IsEntry, 
+ResolveIdResult]
 
 /* Rewritten from type alias, can be one of: 
   - java.lang.String
@@ -138,19 +141,23 @@ js.Promise[typings.rollup.mod.ResolveIdResult] | typings.rollup.mod.ResolveIdRes
   - scala.Unit
   - typings.rollup.mod.PartialResolvedId
 */
-type ResolveIdResult = js.UndefOr[typings.rollup.mod._ResolveIdResult | java.lang.String | scala.Null]
+type ResolveIdResult = _ResolveIdResult | String | Null | Unit
 
 type ResolveImportMetaHook = js.ThisFunction2[
-/* this */ typings.rollup.mod.PluginContext, 
-/* prop */ java.lang.String | scala.Null, 
-/* options */ typings.rollup.anon.ChunkId, 
-js.UndefOr[java.lang.String | scala.Null]]
+/* this */ PluginContext, 
+/* prop */ String | Null, 
+/* options */ ChunkId, 
+String | Null | Unit]
 
-type ResolvedIdMap = org.scalablytyped.runtime.StringDictionary[typings.rollup.mod.ResolvedId]
+type ResolvedIdMap = StringDictionary[ResolvedId]
 
-type SerializablePluginCache = org.scalablytyped.runtime.StringDictionary[js.Tuple2[scala.Double, js.Any]]
+type RollupWatcher = RollupAwaitingEmitter[Change]
 
-type SerializedTimings = org.scalablytyped.runtime.StringDictionary[js.Tuple3[scala.Double, scala.Double, scala.Double]]
+type SerializablePluginCache = StringDictionary[js.Tuple2[Double, Any]]
+
+type SerializedTimings = StringDictionary[js.Tuple3[Double, Double, Double]]
+
+type ShouldTransformCachedModuleHook = js.ThisFunction1[/* this */ PluginContext, /* options */ Ast, Boolean]
 
 /* Rewritten from type alias, can be one of: 
   - typings.rollup.mod.ExistingRawSourceMap
@@ -158,32 +165,18 @@ type SerializedTimings = org.scalablytyped.runtime.StringDictionary[js.Tuple3[sc
   - scala.Null
   - typings.rollup.anon.`0`
 */
-type SourceMapInput = typings.rollup.mod._SourceMapInput | java.lang.String | scala.Null
+type SourceMapInput = _SourceMapInput | String | Null
 
-type SourceMapSegment = js.Array[scala.Double] | (js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double]) | (js.Tuple5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double])
+type SourceMapSegment = js.Array[Double] | (js.Tuple4[Double, Double, Double, Double]) | (js.Tuple5[Double, Double, Double, Double, Double])
 
-type SourcemapPathTransformOption = js.Function2[
-/* relativeSourcePath */ java.lang.String, 
-/* sourcemapPath */ java.lang.String, 
-java.lang.String]
+type SourcemapPathTransformOption = js.Function2[/* relativeSourcePath */ String, /* sourcemapPath */ String, String]
 
-type TransformHook = js.ThisFunction2[
-/* this */ typings.rollup.mod.TransformPluginContext, 
-/* code */ java.lang.String, 
-/* id */ java.lang.String, 
-js.Promise[typings.rollup.mod.TransformResult] | typings.rollup.mod.TransformResult]
+type TransformHook = js.ThisFunction2[/* this */ TransformPluginContext, /* code */ String, /* id */ String, TransformResult]
 
-type TransformResult = js.UndefOr[java.lang.String | scala.Null | typings.rollup.anon.PartialSourceDescription]
+type TransformResult = String | Null | Unit | PartialSourceDescription
 
-type WarningHandler = js.Function1[/* warning */ typings.rollup.mod.RollupWarning, scala.Unit]
+type WarningHandler = js.Function1[/* warning */ RollupWarning, Unit]
 
-type WarningHandlerWithDefault = js.Function2[
-/* warning */ typings.rollup.mod.RollupWarning, 
-/* defaultHandler */ typings.rollup.mod.WarningHandler, 
-scala.Unit]
+type WarningHandlerWithDefault = js.Function2[/* warning */ RollupWarning, /* defaultHandler */ WarningHandler, Unit]
 
-type WatchChangeHook = js.ThisFunction2[
-/* this */ typings.rollup.mod.PluginContext, 
-/* id */ java.lang.String, 
-/* change */ typings.rollup.anon.Event, 
-scala.Unit]
+type WatchChangeHook = js.ThisFunction2[/* this */ PluginContext, /* id */ String, /* change */ Event, Unit]

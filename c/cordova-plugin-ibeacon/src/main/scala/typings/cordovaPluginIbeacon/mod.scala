@@ -363,7 +363,7 @@ object mod {
           
           inline def setBeacons(value: js.Array[Beacon]): Self = StObject.set(x, "beacons", value.asInstanceOf[js.Any])
           
-          inline def setBeaconsVarargs(value: Beacon*): Self = StObject.set(x, "beacons", js.Array(value :_*))
+          inline def setBeaconsVarargs(value: Beacon*): Self = StObject.set(x, "beacons", js.Array(value*))
           
           inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
           

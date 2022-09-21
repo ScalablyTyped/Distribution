@@ -1,20 +1,22 @@
 package typings.antd
 
 import typings.antd.anon.AutoComplete
+import typings.antd.anon.GetIconPrefixCls
 import typings.antd.anon.Ghost
 import typings.antd.anon.PartialConfigProviderProp
+import typings.antd.anon.PickConfigProviderPropspr
+import typings.antd.anon.RequiredMark
+import typings.antd.anon.ShowSizeChanger
 import typings.antd.anon.Size
-import typings.antd.anon.ValidateMessages
 import typings.antd.anon.WeakValidationMapConfigPr
 import typings.antd.configProviderContextMod.CSPConfig
 import typings.antd.configProviderContextMod.ConfigConsumerProps
 import typings.antd.configProviderContextMod.DirectionType
 import typings.antd.configProviderSizeContextMod.SizeType
+import typings.antd.defaultRenderEmptyMod.RenderEmptyHandler
 import typings.antd.localeProviderMod.Locale
-import typings.antd.renderEmptyMod.RenderEmptyHandler
 import typings.react.mod.Consumer
 import typings.react.mod.Context
-import typings.react.mod.PropsWithChildren
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.ValidationMap
@@ -25,11 +27,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object configProviderMod {
   
-  /* Inlined react.react.FC<antd.antd/lib/config-provider.ConfigProviderProps> & {  ConfigContext :react.react.Context<antd.antd/lib/config-provider/context.ConfigConsumerProps>} */
+  @JSImport("antd/lib/config-provider", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* Inlined react.react.FC<antd.antd/lib/config-provider.ConfigProviderProps> & {  ConfigContext :react.react.Context<antd.antd/lib/config-provider/context.ConfigConsumerProps>,   SizeContext :react.react.Context<antd.antd/lib/config-provider/SizeContext.SizeType>,   config :(hasPrefixClsIconPrefixClsTheme : std.Pick<antd.antd/lib/config-provider.ConfigProviderProps, 'prefixCls' | 'iconPrefixCls'> & {  theme :antd.antd/lib/config-provider/context.Theme | undefined}): void} */
   object default {
     
-    inline def apply(props: PropsWithChildren[ConfigProviderProps]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-    inline def apply(props: PropsWithChildren[ConfigProviderProps], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    inline def apply(props: ConfigProviderProps): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    inline def apply(props: ConfigProviderProps, context: Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
     
     @JSImport("antd/lib/config-provider", JSImport.Default)
     @js.native
@@ -40,10 +46,20 @@ object configProviderMod {
     def ConfigContext: Context[ConfigConsumerProps] = js.native
     inline def ConfigContext_=(x: Context[ConfigConsumerProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ConfigContext")(x.asInstanceOf[js.Any])
     
+    @JSImport("antd/lib/config-provider", "default.SizeContext")
+    @js.native
+    def SizeContext: Context[SizeType] = js.native
+    inline def SizeContext_=(x: Context[SizeType]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SizeContext")(x.asInstanceOf[js.Any])
+    
+    @JSImport("antd/lib/config-provider", "default.config")
+    @js.native
+    def config: js.Function1[/* hasPrefixClsIconPrefixClsTheme */ PickConfigProviderPropspr, Unit] = js.native
+    inline def config_=(x: js.Function1[/* hasPrefixClsIconPrefixClsTheme */ PickConfigProviderPropspr, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("config")(x.asInstanceOf[js.Any])
+    
     @JSImport("antd/lib/config-provider", "default.contextTypes")
     @js.native
-    def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-    inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+    def contextTypes: js.UndefOr[ValidationMap[Any]] = js.native
+    inline def contextTypes_=(x: js.UndefOr[ValidationMap[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("antd/lib/config-provider", "default.defaultProps")
     @js.native
@@ -73,11 +89,23 @@ object configProviderMod {
   @js.native
   val configConsumerProps: js.Array[String] = js.native
   
+  @JSImport("antd/lib/config-provider", "defaultIconPrefixCls")
+  @js.native
+  val defaultIconPrefixCls: /* "anticon" */ String = js.native
+  
+  @JSImport("antd/lib/config-provider", "defaultPrefixCls")
+  @js.native
+  val defaultPrefixCls: /* "ant" */ String = js.native
+  
+  inline def globalConfig(): GetIconPrefixCls = ^.asInstanceOf[js.Dynamic].applyDynamic("globalConfig")().asInstanceOf[GetIconPrefixCls]
+  
   trait ConfigProviderProps extends StObject {
     
     var autoInsertSpaceInButton: js.UndefOr[Boolean] = js.undefined
     
     var children: js.UndefOr[ReactNode] = js.undefined
+    
+    var componentDisabled: js.UndefOr[Boolean] = js.undefined
     
     var componentSize: js.UndefOr[SizeType] = js.undefined
     
@@ -87,17 +115,21 @@ object configProviderMod {
     
     var dropdownMatchSelectWidth: js.UndefOr[Boolean] = js.undefined
     
-    var form: js.UndefOr[ValidateMessages] = js.undefined
+    var form: js.UndefOr[RequiredMark] = js.undefined
     
-    var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ HTMLElement, HTMLElement]] = js.undefined
+    var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ js.UndefOr[HTMLElement], HTMLElement]] = js.undefined
     
     var getTargetContainer: js.UndefOr[js.Function0[HTMLElement]] = js.undefined
+    
+    var iconPrefixCls: js.UndefOr[String] = js.undefined
     
     var input: js.UndefOr[AutoComplete] = js.undefined
     
     var locale: js.UndefOr[Locale] = js.undefined
     
     var pageHeader: js.UndefOr[Ghost] = js.undefined
+    
+    var pagination: js.UndefOr[ShowSizeChanger] = js.undefined
     
     var prefixCls: js.UndefOr[String] = js.undefined
     
@@ -124,6 +156,10 @@ object configProviderMod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
+      inline def setComponentDisabled(value: Boolean): Self = StObject.set(x, "componentDisabled", value.asInstanceOf[js.Any])
+      
+      inline def setComponentDisabledUndefined: Self = StObject.set(x, "componentDisabled", js.undefined)
+      
       inline def setComponentSize(value: SizeType): Self = StObject.set(x, "componentSize", value.asInstanceOf[js.Any])
       
       inline def setComponentSizeUndefined: Self = StObject.set(x, "componentSize", js.undefined)
@@ -140,17 +176,21 @@ object configProviderMod {
       
       inline def setDropdownMatchSelectWidthUndefined: Self = StObject.set(x, "dropdownMatchSelectWidth", js.undefined)
       
-      inline def setForm(value: ValidateMessages): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+      inline def setForm(value: RequiredMark): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
       inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
       
-      inline def setGetPopupContainer(value: /* triggerNode */ HTMLElement => HTMLElement): Self = StObject.set(x, "getPopupContainer", js.Any.fromFunction1(value))
+      inline def setGetPopupContainer(value: /* triggerNode */ js.UndefOr[HTMLElement] => HTMLElement): Self = StObject.set(x, "getPopupContainer", js.Any.fromFunction1(value))
       
       inline def setGetPopupContainerUndefined: Self = StObject.set(x, "getPopupContainer", js.undefined)
       
       inline def setGetTargetContainer(value: () => HTMLElement): Self = StObject.set(x, "getTargetContainer", js.Any.fromFunction0(value))
       
       inline def setGetTargetContainerUndefined: Self = StObject.set(x, "getTargetContainer", js.undefined)
+      
+      inline def setIconPrefixCls(value: String): Self = StObject.set(x, "iconPrefixCls", value.asInstanceOf[js.Any])
+      
+      inline def setIconPrefixClsUndefined: Self = StObject.set(x, "iconPrefixCls", js.undefined)
       
       inline def setInput(value: AutoComplete): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
@@ -163,6 +203,10 @@ object configProviderMod {
       inline def setPageHeader(value: Ghost): Self = StObject.set(x, "pageHeader", value.asInstanceOf[js.Any])
       
       inline def setPageHeaderUndefined: Self = StObject.set(x, "pageHeader", js.undefined)
+      
+      inline def setPagination(value: ShowSizeChanger): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
+      
+      inline def setPaginationUndefined: Self = StObject.set(x, "pagination", js.undefined)
       
       inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       

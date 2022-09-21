@@ -1,13 +1,12 @@
 package typings.gitlab
 
-import typings.gitlab.anon.Level
-import typings.gitlab.anon.`0`
-import typings.gitlab.anon.`1`
+import typings.gitlab.anon.groupIdstringnumberPagina
+import typings.gitlab.anon.groupIdstringnumberlevelN
+import typings.gitlab.anon.projectIdstringnumberPagi
+import typings.gitlab.anon.projectIdstringnumberleve
 import typings.gitlab.baseServiceMod.BaseServiceOptions
 import typings.gitlab.infrastructureMod.BaseService
-import typings.gitlab.requestHelperMod.BaseRequestOptions
 import typings.gitlab.requestHelperMod.GetResponse
-import typings.gitlab.requestHelperMod.PaginatedRequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,12 +15,14 @@ object notificationSettingsMod {
   
   @JSImport("gitlab/dist/types/core/services/NotificationSettings", "NotificationSettings")
   @js.native
-  class NotificationSettings () extends BaseService {
+  open class NotificationSettings () extends BaseService {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
-    def all(hasProjectIdGroupIdOptions: (`0` | `1`) & PaginatedRequestOptions): js.Promise[GetResponse] = js.native
+    def all(hasProjectIdGroupIdOptions: groupIdstringnumberPagina): js.Promise[GetResponse] = js.native
+    def all(hasProjectIdGroupIdOptions: projectIdstringnumberPagi): js.Promise[GetResponse] = js.native
     
-    def edit(hasProjectIdGroupIdOptions: Level & (`0` | `1`) & BaseRequestOptions): js.Promise[js.Object] = js.native
+    def edit(hasProjectIdGroupIdOptions: groupIdstringnumberlevelN): js.Promise[js.Object] = js.native
+    def edit(hasProjectIdGroupIdOptions: projectIdstringnumberleve): js.Promise[js.Object] = js.native
   }
   
   /* Rewritten from type alias, can be one of: 

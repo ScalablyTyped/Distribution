@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("matrix-appservice-bridge", "MatrixRoom")
 @js.native
-class MatrixRoom protected ()
+open class MatrixRoom protected ()
   extends typings.matrixAppserviceBridge.matrixMod.MatrixRoom {
   /**
     * Create a matrix room.

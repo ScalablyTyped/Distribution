@@ -1,11 +1,12 @@
 package typings.asar
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.asar.anon.Algorithm
 import typings.asar.anon.Stat
 import typings.asar.asarBooleans.`true`
 import typings.glob.mod.IOptions
-import typings.node.Buffer
-import typings.node.NodeJS.ReadWriteStream
+import typings.node.bufferMod.global.Buffer
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,6 +36,8 @@ object mod {
   
   inline def extractFile(archive: String, filename: String): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("extractFile")(archive.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
+  inline def getRawHeader(archive: String): ArchiveHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("getRawHeader")(archive.asInstanceOf[js.Any]).asInstanceOf[ArchiveHeader]
+  
   inline def listPackage(archive: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("listPackage")(archive.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   inline def listPackage(archive: String, options: ListOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("listPackage")(archive.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
@@ -44,6 +47,32 @@ object mod {
   inline def uncache(archive: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("uncache")(archive.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def uncacheAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("uncacheAll")().asInstanceOf[Unit]
+  
+  trait ArchiveHeader extends StObject {
+    
+    // The JSON parsed header string
+    var header: DirectoryRecord
+    
+    var headerSize: Double
+    
+    var headerString: String
+  }
+  object ArchiveHeader {
+    
+    inline def apply(header: DirectoryRecord, headerSize: Double, headerString: String): ArchiveHeader = {
+      val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any], headerSize = headerSize.asInstanceOf[js.Any], headerString = headerString.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ArchiveHeader]
+    }
+    
+    extension [Self <: ArchiveHeader](x: Self) {
+      
+      inline def setHeader(value: DirectoryRecord): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      
+      inline def setHeaderSize(value: Double): Self = StObject.set(x, "headerSize", value.asInstanceOf[js.Any])
+      
+      inline def setHeaderString(value: String): Self = StObject.set(x, "headerString", value.asInstanceOf[js.Any])
+    }
+  }
   
   trait CreateOptions extends StObject {
     
@@ -55,7 +84,12 @@ object mod {
     
     var pattern: js.UndefOr[String] = js.undefined
     
-    var transform: js.UndefOr[js.Function1[/* filePath */ String, ReadWriteStream | Unit]] = js.undefined
+    var transform: js.UndefOr[
+        js.Function1[
+          /* filePath */ String, 
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any) | Unit
+        ]
+      ] = js.undefined
     
     var unpack: js.UndefOr[String] = js.undefined
     
@@ -86,7 +120,9 @@ object mod {
       
       inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
       
-      inline def setTransform(value: /* filePath */ String => ReadWriteStream | Unit): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+      inline def setTransform(
+        value: /* filePath */ String => (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any) | Unit
+      ): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
       
       inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       
@@ -117,6 +153,23 @@ object mod {
     extension [Self <: DirectoryMetadata](x: Self) {
       
       inline def setFiles(value: StringDictionary[EntryMetadata]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait DirectoryRecord extends StObject {
+    
+    var files: Record[String, DirectoryRecord | FileRecord]
+  }
+  object DirectoryRecord {
+    
+    inline def apply(files: Record[String, DirectoryRecord | FileRecord]): DirectoryRecord = {
+      val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DirectoryRecord]
+    }
+    
+    extension [Self <: DirectoryRecord](x: Self) {
+      
+      inline def setFiles(value: Record[String, DirectoryRecord | FileRecord]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     }
   }
   
@@ -168,6 +221,37 @@ object mod {
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    }
+  }
+  
+  trait FileRecord extends StObject {
+    
+    var executable: js.UndefOr[Boolean] = js.undefined
+    
+    var integrity: Algorithm
+    
+    var offset: String
+    
+    var size: Double
+  }
+  object FileRecord {
+    
+    inline def apply(integrity: Algorithm, offset: String, size: Double): FileRecord = {
+      val __obj = js.Dynamic.literal(integrity = integrity.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
+      __obj.asInstanceOf[FileRecord]
+    }
+    
+    extension [Self <: FileRecord](x: Self) {
+      
+      inline def setExecutable(value: Boolean): Self = StObject.set(x, "executable", value.asInstanceOf[js.Any])
+      
+      inline def setExecutableUndefined: Self = StObject.set(x, "executable", js.undefined)
+      
+      inline def setIntegrity(value: Algorithm): Self = StObject.set(x, "integrity", value.asInstanceOf[js.Any])
+      
+      inline def setOffset(value: String): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
   

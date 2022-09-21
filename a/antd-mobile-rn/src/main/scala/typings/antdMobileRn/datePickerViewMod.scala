@@ -12,7 +12,7 @@ object datePickerViewMod {
   
   @JSImport("antd-mobile-rn/lib/date-picker-view/date-picker-view", JSImport.Default)
   @js.native
-  class default () extends DatePickerView
+  open class default () extends DatePickerView
   /* static members */
   object default {
     
@@ -32,6 +32,5 @@ object datePickerViewMod {
   }
   
   @js.native
-  trait DatePickerView
-    extends Component[DatePickerProps, js.Any, js.Any]
+  trait DatePickerView extends Component[DatePickerProps, Any, Any]
 }

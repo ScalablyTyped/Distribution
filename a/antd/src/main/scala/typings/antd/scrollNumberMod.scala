@@ -24,7 +24,7 @@ object scrollNumberMod extends Shortcut {
     
     var count: js.UndefOr[String | Double | Null] = js.undefined
     
-    var onAnimated: js.UndefOr[js.Function] = js.undefined
+    var motionClassName: js.UndefOr[String] = js.undefined
     
     var prefixCls: js.UndefOr[String] = js.undefined
     
@@ -61,9 +61,9 @@ object scrollNumberMod extends Shortcut {
       
       inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
-      inline def setOnAnimated(value: js.Function): Self = StObject.set(x, "onAnimated", value.asInstanceOf[js.Any])
+      inline def setMotionClassName(value: String): Self = StObject.set(x, "motionClassName", value.asInstanceOf[js.Any])
       
-      inline def setOnAnimatedUndefined: Self = StObject.set(x, "onAnimated", js.undefined)
+      inline def setMotionClassNameUndefined: Self = StObject.set(x, "motionClassName", js.undefined)
       
       inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       

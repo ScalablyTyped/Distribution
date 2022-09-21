@@ -4,7 +4,7 @@ import typings.inquirer.inquirerStrings.down
 import typings.inquirer.inquirerStrings.up
 import typings.inquirer.mod.Answers
 import typings.inquirer.mod.RawListQuestionOptions
-import typings.inquirer.mod.prompts.SuccessfulPromptStateData
+import typings.inquirer.mod.inquirer.prompts.SuccessfulPromptStateData
 import typings.node.readlineMod.Interface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,11 +18,11 @@ object rawlistMod {
     * @template TQuestion
     * The options for the question.
     */
-  @JSImport("inquirer/lib/prompts/rawlist", JSImport.Namespace)
+  @JSImport("inquirer/lib/prompts/rawlist", JSImport.Default)
   @js.native
-  class ^[TQuestion /* <: Question */] protected () extends RawListPrompt[TQuestion] {
+  open class default[TQuestion /* <: Question */] protected () extends RawListPrompt[TQuestion] {
     /**
-      * Initializes a new instance of the `RawListPrompt<T>` class.
+      * Initializes a new instance of the {@link RawListPrompt `RawListPrompt<TQuestion>`} class.
       *
       * @param question
       * The question to prompt the user to answer.
@@ -37,7 +37,7 @@ object rawlistMod {
   }
   
   /**
-    * The question for the `RawListPrompt<T>`.
+    * The question for the {@link RawListPrompt `RawListPrompt<TQuestion>`}.
     */
   type Question = RawListQuestionOptions[Answers]
   
@@ -49,34 +49,31 @@ object rawlistMod {
     */
   @js.native
   trait RawListPrompt[TQuestion /* <: Question */]
-    extends typings.inquirer.baseMod.^[TQuestion] {
+    extends typings.inquirer.baseMod.default[TQuestion] {
     
     /**
       * Resolves the value of the prompt.
       */
-    /* protected */ def done(value: js.Any): Unit = js.native
+    /* protected */ def done(value: Any): Unit = js.native
     
     /**
-      * Gets the value of the specified `index`.
+      * Gets the value of the specified {@link index `index`}.
       *
       * @param index
       * The index to get the value for.
       *
       * @returns
-      * The value of the specified `index`.
+      * The value of the specified {@link index `index`}.
       */
-    /* protected */ def getCurrentValue(index: Double): js.Any = js.native
+    /* protected */ def getCurrentValue(index: Double): Any = js.native
     
-    /* protected */ @JSName("onArrowKey")
-    def onArrowKey_down(`type`: down): Unit = js.native
     /**
       * Handles the `ArrowKey`-event of the prompt.
       *
       * @param type
       * A value indicating whether the up or the down-arrow is being pressed.
       */
-    /* protected */ @JSName("onArrowKey")
-    def onArrowKey_up(`type`: up): Unit = js.native
+    /* protected */ def onArrowKey(`type`: up | down): Unit = js.native
     
     /**
       * Handles the `DownKey`-event of the prompt.
@@ -89,7 +86,7 @@ object rawlistMod {
       * @param eventArgs
       * An object which contains event-data.
       */
-    /* protected */ def onEnd(eventArgs: SuccessfulPromptStateData[js.Any]): Unit = js.native
+    /* protected */ def onEnd(eventArgs: SuccessfulPromptStateData[Any]): Unit = js.native
     
     /**
       * Handles the `error`-event of the prompt.
@@ -112,7 +109,7 @@ object rawlistMod {
     /**
       * Gets or sets an object for paginating the content.
       */
-    /* protected */ var paginator: typings.inquirer.paginatorMod.^ = js.native
+    /* protected */ var paginator: typings.inquirer.paginatorMod.default = js.native
     
     /**
       * Gets or sets the default index.

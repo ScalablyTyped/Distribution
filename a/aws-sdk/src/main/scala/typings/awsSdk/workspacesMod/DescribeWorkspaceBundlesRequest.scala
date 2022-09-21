@@ -17,7 +17,7 @@ trait DescribeWorkspaceBundlesRequest extends StObject {
   var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
-    * The owner of the bundles. You cannot combine this parameter with any other filter. Specify AMAZON to describe the bundles provided by AWS or null to describe the bundles that belong to your account.
+    * The owner of the bundles. You cannot combine this parameter with any other filter. To describe the bundles provided by Amazon Web Services, specify AMAZON. To describe the bundles that belong to your account, don't specify a value.
     */
   var Owner: js.UndefOr[BundleOwner] = js.undefined
 }
@@ -34,7 +34,7 @@ object DescribeWorkspaceBundlesRequest {
     
     inline def setBundleIdsUndefined: Self = StObject.set(x, "BundleIds", js.undefined)
     
-    inline def setBundleIdsVarargs(value: BundleId*): Self = StObject.set(x, "BundleIds", js.Array(value :_*))
+    inline def setBundleIdsVarargs(value: BundleId*): Self = StObject.set(x, "BundleIds", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

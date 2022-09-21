@@ -1,6 +1,6 @@
 package typings.oracledb.mod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,7 +21,7 @@ trait SodaDocument extends StObject {
     *
     * @since 3.0
     */
-  def getContent(): Record[String, js.Any]
+  def getContent(): Record[String, Any]
   
   /**
     * A synchronous method that returns the document content as a Buffer.
@@ -57,7 +57,7 @@ trait SodaDocument extends StObject {
     * By default, collections store only JSON document content and this property will be ‘application/json’. This property will be null if the media type
     * is unknown, which will only be in the rare case when a collection was created to store mixed or non-JSON content on top of a pre-existing database table,
     * and that table has NULLs in its mediaType column.
-    * 
+    *
     * @default 'application/json'
     */
   val mediaType: js.UndefOr[String] = js.undefined
@@ -68,7 +68,7 @@ trait SodaDocument extends StObject {
 object SodaDocument {
   
   inline def apply(
-    getContent: () => Record[String, js.Any],
+    getContent: () => Record[String, Any],
     getContentAsBuffer: () => Buffer,
     getContentAsString: () => String,
     lastModified: String,
@@ -84,7 +84,7 @@ object SodaDocument {
     
     inline def setCreatedOnUndefined: Self = StObject.set(x, "createdOn", js.undefined)
     
-    inline def setGetContent(value: () => Record[String, js.Any]): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
+    inline def setGetContent(value: () => Record[String, Any]): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
     
     inline def setGetContentAsBuffer(value: () => Buffer): Self = StObject.set(x, "getContentAsBuffer", js.Any.fromFunction0(value))
     

@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("MatterJS.Constraint")
 @js.native
-class Constraint ()
+open class Constraint ()
   extends StObject
      with typings.phaser.MatterJS.Constraint
 object Constraint {

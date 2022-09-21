@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Video annotation progress. Included in the `metadata` field of the
-  * `Operation` returned by the `GetOperation` call of the
-  * `google::longrunning::Operations` service.
-  */
 trait SchemaGoogleCloudVideointelligenceV1beta2AnnotateVideoProgress extends StObject {
   
   /**
@@ -29,6 +24,6 @@ object SchemaGoogleCloudVideointelligenceV1beta2AnnotateVideoProgress {
     
     inline def setAnnotationProgressUndefined: Self = StObject.set(x, "annotationProgress", js.undefined)
     
-    inline def setAnnotationProgressVarargs(value: SchemaGoogleCloudVideointelligenceV1beta2VideoAnnotationProgress*): Self = StObject.set(x, "annotationProgress", js.Array(value :_*))
+    inline def setAnnotationProgressVarargs(value: SchemaGoogleCloudVideointelligenceV1beta2VideoAnnotationProgress*): Self = StObject.set(x, "annotationProgress", js.Array(value*))
   }
 }

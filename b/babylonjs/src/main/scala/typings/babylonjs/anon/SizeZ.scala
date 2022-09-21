@@ -10,7 +10,7 @@ trait SizeZ extends StObject {
   
   var backUVs: js.UndefOr[Vector4] = js.undefined
   
-  var custom: js.UndefOr[js.Any] = js.undefined
+  var custom: js.UndefOr[Any] = js.undefined
   
   var faceColors: js.UndefOr[js.Array[Color4]] = js.undefined
   
@@ -47,7 +47,7 @@ object SizeZ {
     
     inline def setBackUVsUndefined: Self = StObject.set(x, "backUVs", js.undefined)
     
-    inline def setCustom(value: js.Any): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: Any): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
@@ -55,13 +55,13 @@ object SizeZ {
     
     inline def setFaceColorsUndefined: Self = StObject.set(x, "faceColors", js.undefined)
     
-    inline def setFaceColorsVarargs(value: Color4*): Self = StObject.set(x, "faceColors", js.Array(value :_*))
+    inline def setFaceColorsVarargs(value: Color4*): Self = StObject.set(x, "faceColors", js.Array(value*))
     
     inline def setFaceUV(value: js.Array[Vector4]): Self = StObject.set(x, "faceUV", value.asInstanceOf[js.Any])
     
     inline def setFaceUVUndefined: Self = StObject.set(x, "faceUV", js.undefined)
     
-    inline def setFaceUVVarargs(value: Vector4*): Self = StObject.set(x, "faceUV", js.Array(value :_*))
+    inline def setFaceUVVarargs(value: Vector4*): Self = StObject.set(x, "faceUV", js.Array(value*))
     
     inline def setFlat(value: Boolean): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
     

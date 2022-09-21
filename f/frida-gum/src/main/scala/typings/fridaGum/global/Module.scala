@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Module")
 @js.native
-class Module ()
+open class Module ()
   extends StObject
      with typings.fridaGum.Module {
   

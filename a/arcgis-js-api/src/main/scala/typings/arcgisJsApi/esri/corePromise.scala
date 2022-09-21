@@ -33,8 +33,8 @@ trait corePromise extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Promise.html#when)
     */
-  def when(): js.Promise[js.Any] = js.native
-  def when(callback: js.Function): js.Promise[js.Any] = js.native
-  def when(callback: js.Function, errback: js.Function): js.Promise[js.Any] = js.native
-  def when(callback: Unit, errback: js.Function): js.Promise[js.Any] = js.native
+  def when(): js.Promise[Any] = js.native
+  def when(callback: js.Function): js.Promise[Any] = js.native
+  def when(callback: js.Function, errback: js.Function): js.Promise[Any] = js.native
+  def when(callback: scala.Unit, errback: js.Function): js.Promise[Any] = js.native
 }

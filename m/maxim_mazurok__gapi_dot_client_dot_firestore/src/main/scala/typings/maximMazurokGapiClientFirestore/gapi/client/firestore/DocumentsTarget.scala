@@ -25,6 +25,6 @@ object DocumentsTarget {
     
     inline def setDocumentsUndefined: Self = StObject.set(x, "documents", js.undefined)
     
-    inline def setDocumentsVarargs(value: String*): Self = StObject.set(x, "documents", js.Array(value :_*))
+    inline def setDocumentsVarargs(value: String*): Self = StObject.set(x, "documents", js.Array(value*))
   }
 }

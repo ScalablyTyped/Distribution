@@ -1,6 +1,5 @@
 package typings.slimerjs
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,7 +43,7 @@ trait FsModule extends StObject {
   // last argument should be the filename
   def join(basepath: String, dirname: String, args: String*): String
   
-  def lastModified(path: String): Date
+  def lastModified(path: String): js.Date
   
   def list(path: String): js.Array[String]
   
@@ -78,7 +77,7 @@ trait FsModule extends StObject {
   
   def split(path: String): js.Array[String]
   
-  def touch(path: String, date: Date): Unit
+  def touch(path: String, date: js.Date): Unit
   
   var workingDirectory: String
   
@@ -90,7 +89,7 @@ trait FsModule extends StObject {
     opened in text mode, and its contents are assumed to be UTF-8.
     "a" means to open as "append" mode: the file is open in write-only mode and all written character are append to the file
     */
-  def write(path: String, content: js.Any, mode: String): Unit
+  def write(path: String, content: Any, mode: String): Unit
 }
 object FsModule {
   
@@ -113,7 +112,7 @@ object FsModule {
     isReadable: String => Boolean,
     isWritable: String => Boolean,
     join: (String, String, /* repeated */ String) => String,
-    lastModified: String => Date,
+    lastModified: String => js.Date,
     list: String => js.Array[String],
     makeDirectory: String => Unit,
     makeTree: String => Unit,
@@ -130,9 +129,9 @@ object FsModule {
     separator: String,
     size: String => Double,
     split: String => js.Array[String],
-    touch: (String, Date) => Unit,
+    touch: (String, js.Date) => Unit,
     workingDirectory: String,
-    write: (String, js.Any, String) => Unit
+    write: (String, Any, String) => Unit
   ): FsModule = {
     val __obj = js.Dynamic.literal(absolute = js.Any.fromFunction1(absolute), base = js.Any.fromFunction1(base), basename = js.Any.fromFunction1(basename), changeWorkingDirectory = js.Any.fromFunction1(changeWorkingDirectory), copy = js.Any.fromFunction2(copy), copyTree = js.Any.fromFunction2(copyTree), directory = js.Any.fromFunction1(directory), dirname = js.Any.fromFunction1(dirname), exists = js.Any.fromFunction1(exists), isAbsolute = js.Any.fromFunction1(isAbsolute), isDirectory = js.Any.fromFunction1(isDirectory), isExecutable = js.Any.fromFunction1(isExecutable), isFile = js.Any.fromFunction1(isFile), isLink = js.Any.fromFunction1(isLink), isReadable = js.Any.fromFunction1(isReadable), isWritable = js.Any.fromFunction1(isWritable), join = js.Any.fromFunction3(join), lastModified = js.Any.fromFunction1(lastModified), list = js.Any.fromFunction1(list), makeDirectory = js.Any.fromFunction1(makeDirectory), makeTree = js.Any.fromFunction1(makeTree), mkpath = js.Any.fromFunction1(mkpath), move = js.Any.fromFunction2(move), open = js.Any.fromFunction2(open), read = js.Any.fromFunction2(read), readLink = js.Any.fromFunction1(readLink), remove = js.Any.fromFunction1(remove), removeDirectory = js.Any.fromFunction1(removeDirectory), removeTree = js.Any.fromFunction1(removeTree), rename = js.Any.fromFunction2(rename), rmdir = js.Any.fromFunction1(rmdir), separator = separator.asInstanceOf[js.Any], size = js.Any.fromFunction1(size), split = js.Any.fromFunction1(split), touch = js.Any.fromFunction2(touch), workingDirectory = workingDirectory.asInstanceOf[js.Any], write = js.Any.fromFunction3(write))
     __obj.updateDynamic("extension")(js.Any.fromFunction2(`extension`))
@@ -177,7 +176,7 @@ object FsModule {
     
     inline def setJoin(value: (String, String, /* repeated */ String) => String): Self = StObject.set(x, "join", js.Any.fromFunction3(value))
     
-    inline def setLastModified(value: String => Date): Self = StObject.set(x, "lastModified", js.Any.fromFunction1(value))
+    inline def setLastModified(value: String => js.Date): Self = StObject.set(x, "lastModified", js.Any.fromFunction1(value))
     
     inline def setList(value: String => js.Array[String]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
     
@@ -211,10 +210,10 @@ object FsModule {
     
     inline def setSplit(value: String => js.Array[String]): Self = StObject.set(x, "split", js.Any.fromFunction1(value))
     
-    inline def setTouch(value: (String, Date) => Unit): Self = StObject.set(x, "touch", js.Any.fromFunction2(value))
+    inline def setTouch(value: (String, js.Date) => Unit): Self = StObject.set(x, "touch", js.Any.fromFunction2(value))
     
     inline def setWorkingDirectory(value: String): Self = StObject.set(x, "workingDirectory", value.asInstanceOf[js.Any])
     
-    inline def setWrite(value: (String, js.Any, String) => Unit): Self = StObject.set(x, "write", js.Any.fromFunction3(value))
+    inline def setWrite(value: (String, Any, String) => Unit): Self = StObject.set(x, "write", js.Any.fromFunction3(value))
   }
 }

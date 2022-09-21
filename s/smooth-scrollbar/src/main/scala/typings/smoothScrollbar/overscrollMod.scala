@@ -10,7 +10,7 @@ object overscrollMod {
   
   @JSImport("smooth-scrollbar/plugins/overscroll", JSImport.Default)
   @js.native
-  class default () extends OverscrollPlugin
+  open class default () extends OverscrollPlugin
   /* static members */
   object default {
     
@@ -114,37 +114,37 @@ object overscrollMod {
   @js.native
   trait OverscrollPlugin extends ScrollbarPlugin {
     
-    /* private */ var _absorbMomentum: js.Any = js.native
+    /* private */ var _absorbMomentum: Any = js.native
     
-    /* private */ var _addAmplitude: js.Any = js.native
+    /* private */ var _addAmplitude: Any = js.native
     
-    /* private */ var _amplitude: js.Any = js.native
+    /* private */ var _amplitude: Any = js.native
     
-    /* private */ var _bounce: js.Any = js.native
+    /* private */ var _bounce: Any = js.native
     
-    /* private */ val _enabled: js.Any = js.native
+    /* private */ val _enabled: Any = js.native
     
-    /* private */ var _glow: js.Any = js.native
+    /* private */ var _glow: Any = js.native
     
-    /* private */ val _isWheelLocked: js.Any = js.native
+    /* private */ val _isWheelLocked: Any = js.native
     
-    /* private */ var _lastEventType: js.Any = js.native
+    /* private */ var _lastEventType: Any = js.native
     
-    /* private */ var _lockWheel: js.Any = js.native
+    /* private */ var _lockWheel: Any = js.native
     
-    /* private */ var _nextAmp: js.Any = js.native
+    /* private */ var _nextAmp: Any = js.native
     
-    /* private */ var _position: js.Any = js.native
+    /* private */ var _position: Any = js.native
     
-    /* private */ var _releaseWheel: js.Any = js.native
+    /* private */ var _releaseWheel: Any = js.native
     
-    /* private */ var _render: js.Any = js.native
+    /* private */ var _render: Any = js.native
     
-    /* private */ var _touching: js.Any = js.native
+    /* private */ var _touching: Any = js.native
     
-    /* private */ var _wheelScrollBack: js.Any = js.native
+    /* private */ var _wheelScrollBack: Any = js.native
     
-    /* private */ var _willOverscroll: js.Any = js.native
+    /* private */ var _willOverscroll: Any = js.native
     
     def onRender(remainMomentum: Data2d): Unit = js.native
     

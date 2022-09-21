@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "Quaternion")
 @js.native
-class Quaternion ()
+open class Quaternion ()
   extends typings.wonderJs.quaternionMod.Quaternion {
   def this(x: Double) = this()
   def this(x: Double, y: Double) = this()

@@ -11,7 +11,7 @@ object hdrFilteringMod {
   
   @JSImport("babylonjs/Materials/Textures/Filtering/hdrFiltering", "HDRFiltering")
   @js.native
-  class HDRFiltering protected () extends StObject {
+  open class HDRFiltering protected () extends StObject {
     /**
       * Instantiates HDR filter for reflection maps
       *
@@ -21,21 +21,21 @@ object hdrFilteringMod {
     def this(engine: ThinEngine) = this()
     def this(engine: ThinEngine, options: IHDRFilteringOptions) = this()
     
-    /* private */ var _createEffect: js.Any = js.native
+    /* private */ var _createEffect: Any = js.native
     
-    /* private */ var _createRenderTarget: js.Any = js.native
+    /* private */ var _createRenderTarget: Any = js.native
     
-    /* private */ var _effectRenderer: js.Any = js.native
+    /* private */ var _effectRenderer: Any = js.native
     
-    /* private */ var _effectWrapper: js.Any = js.native
+    /* private */ var _effectWrapper: Any = js.native
     
-    /* private */ var _engine: js.Any = js.native
+    /* private */ var _engine: Any = js.native
     
-    /* private */ var _lodGenerationOffset: js.Any = js.native
+    /* private */ var _lodGenerationOffset: Any = js.native
     
-    /* private */ var _lodGenerationScale: js.Any = js.native
+    /* private */ var _lodGenerationScale: Any = js.native
     
-    /* private */ var _prefilterInternal: js.Any = js.native
+    /* private */ var _prefilterInternal: Any = js.native
     
     /**
       * Scales pixel intensity for the input HDR map.
@@ -56,10 +56,10 @@ object hdrFilteringMod {
       * See http://blog.selfshadow.com/publications/s2013-shading-course/karis/s2013_pbs_epic_notes_v2.pdf for more information
       * @param texture Texture to filter
       * @param onFinished Callback when filtering is done
-      * @return Promise called when prefiltering is done
+      * @returns Promise called when prefiltering is done
       */
-    def prefilter(texture: BaseTexture): js.UndefOr[js.Promise[js.Any]] = js.native
-    def prefilter(texture: BaseTexture, onFinished: Nullable[js.Function0[Unit]]): js.UndefOr[js.Promise[js.Any]] = js.native
+    def prefilter(texture: BaseTexture): js.Promise[Unit] = js.native
+    def prefilter(texture: BaseTexture, onFinished: Nullable[js.Function0[Unit]]): js.Promise[Unit] = js.native
     
     /**
       * Quality switch for prefiltering. Should be set to `Constants.TEXTURE_FILTERING_QUALITY_OFFLINE` unless

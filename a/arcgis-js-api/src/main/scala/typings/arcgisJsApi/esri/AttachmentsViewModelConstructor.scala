@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait AttachmentsViewModelConstructor
   extends StObject
-     with Instantiable0[AttachmentsViewModel]
+     with /**
+  * Provides the logic for the [Attachments](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Attachments.html) widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Attachments-AttachmentsViewModel.html)
+  */
+Instantiable0[AttachmentsViewModel]
      with Instantiable1[/* properties */ AttachmentsViewModelProperties, AttachmentsViewModel]

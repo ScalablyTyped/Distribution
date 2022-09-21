@@ -25,12 +25,12 @@ object SjclCipherDecryptParams {
     
     inline def setIvUndefined: Self = StObject.set(x, "iv", js.undefined)
     
-    inline def setIvVarargs(value: Double*): Self = StObject.set(x, "iv", js.Array(value :_*))
+    inline def setIvVarargs(value: Double*): Self = StObject.set(x, "iv", js.Array(value*))
     
     inline def setSalt(value: BitArray_): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
     
     inline def setSaltUndefined: Self = StObject.set(x, "salt", js.undefined)
     
-    inline def setSaltVarargs(value: Double*): Self = StObject.set(x, "salt", js.Array(value :_*))
+    inline def setSaltVarargs(value: Double*): Self = StObject.set(x, "salt", js.Array(value*))
   }
 }

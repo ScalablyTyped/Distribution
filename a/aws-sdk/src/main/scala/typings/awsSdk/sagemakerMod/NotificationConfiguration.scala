@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NotificationConfiguration extends StObject {
   
   /**
-    * The ARN for the SNS topic to which notifications should be published.
+    * The ARN for the Amazon SNS topic to which notifications should be published.
     */
   var NotificationTopicArn: js.UndefOr[typings.awsSdk.sagemakerMod.NotificationTopicArn] = js.undefined
 }

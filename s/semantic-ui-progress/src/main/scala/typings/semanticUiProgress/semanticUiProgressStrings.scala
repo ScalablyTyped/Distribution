@@ -7,20 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object semanticUiProgressStrings {
   
   @js.native
-  sealed trait autoSuccess extends StObject
-  inline def autoSuccess: autoSuccess = "autoSuccess".asInstanceOf[autoSuccess]
-  
-  @js.native
-  sealed trait className extends StObject
-  inline def className: className = "className".asInstanceOf[className]
-  
-  @js.native
   sealed trait complete extends StObject
   inline def complete: complete = "complete".asInstanceOf[complete]
-  
-  @js.native
-  sealed trait debug extends StObject
-  inline def debug: debug = "debug".asInstanceOf[debug]
   
   @js.native
   sealed trait decrement extends StObject
@@ -29,10 +17,6 @@ object semanticUiProgressStrings {
   @js.native
   sealed trait destroy extends StObject
   inline def destroy: destroy = "destroy".asInstanceOf[destroy]
-  
-  @js.native
-  sealed trait error extends StObject
-  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait `get normalized value` extends StObject
@@ -79,68 +63,12 @@ object semanticUiProgressStrings {
   inline def `is warning`: `is warning` = ("is warning").asInstanceOf[`is warning`]
   
   @js.native
-  sealed trait label extends StObject
-  inline def label: label = "label".asInstanceOf[label]
-  
-  @js.native
-  sealed trait limitValues extends StObject
-  inline def limitValues: limitValues = "limitValues".asInstanceOf[limitValues]
-  
-  @js.native
-  sealed trait metadata extends StObject
-  inline def metadata: metadata = "metadata".asInstanceOf[metadata]
-  
-  @js.native
-  sealed trait name extends StObject
-  inline def name: name = "name".asInstanceOf[name]
-  
-  @js.native
-  sealed trait namespace extends StObject
-  inline def namespace: namespace = "namespace".asInstanceOf[namespace]
-  
-  @js.native
-  sealed trait onActive extends StObject
-  inline def onActive: onActive = "onActive".asInstanceOf[onActive]
-  
-  @js.native
-  sealed trait onChange extends StObject
-  inline def onChange: onChange = "onChange".asInstanceOf[onChange]
-  
-  @js.native
-  sealed trait onError extends StObject
-  inline def onError: onError = "onError".asInstanceOf[onError]
-  
-  @js.native
-  sealed trait onSuccess extends StObject
-  inline def onSuccess: onSuccess = "onSuccess".asInstanceOf[onSuccess]
-  
-  @js.native
-  sealed trait onWarning extends StObject
-  inline def onWarning: onWarning = "onWarning".asInstanceOf[onWarning]
-  
-  @js.native
   sealed trait percent extends StObject
   inline def percent: percent = "percent".asInstanceOf[percent]
   
   @js.native
-  sealed trait performance extends StObject
-  inline def performance: performance = "performance".asInstanceOf[performance]
-  
-  @js.native
-  sealed trait precision extends StObject
-  inline def precision: precision = "precision".asInstanceOf[precision]
-  
-  @js.native
-  sealed trait random extends StObject
-  inline def random: random = "random".asInstanceOf[random]
-  
-  @js.native
   sealed trait ratio extends StObject
   inline def ratio: ratio = "ratio".asInstanceOf[ratio]
-  
-  @js.native
-  sealed trait regExp extends StObject
-  inline def regExp: regExp = "regExp".asInstanceOf[regExp]
   
   @js.native
   sealed trait `remove active` extends StObject
@@ -161,10 +89,6 @@ object semanticUiProgressStrings {
   @js.native
   sealed trait reset extends StObject
   inline def reset: reset = "reset".asInstanceOf[reset]
-  
-  @js.native
-  sealed trait selector extends StObject
-  inline def selector: selector = "selector".asInstanceOf[selector]
   
   @js.native
   sealed trait `set active` extends StObject
@@ -211,30 +135,6 @@ object semanticUiProgressStrings {
   inline def setting: setting = "setting".asInstanceOf[setting]
   
   @js.native
-  sealed trait showActivity extends StObject
-  inline def showActivity: showActivity = "showActivity".asInstanceOf[showActivity]
-  
-  @js.native
-  sealed trait silent extends StObject
-  inline def silent: silent = "silent".asInstanceOf[silent]
-  
-  @js.native
-  sealed trait text extends StObject
-  inline def text: text = "text".asInstanceOf[text]
-  
-  @js.native
-  sealed trait total extends StObject
-  inline def total: total = "total".asInstanceOf[total]
-  
-  @js.native
   sealed trait `update progress` extends StObject
   inline def `update progress`: `update progress` = ("update progress").asInstanceOf[`update progress`]
-  
-  @js.native
-  sealed trait value extends StObject
-  inline def value: value = "value".asInstanceOf[value]
-  
-  @js.native
-  sealed trait verbose extends StObject
-  inline def verbose: verbose = "verbose".asInstanceOf[verbose]
 }

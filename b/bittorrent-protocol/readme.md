@@ -10,15 +10,12 @@ Simple, robust, BitTorrent peer wire protocol implementation
 | ------------------ | :-------------: |
 | Full name          | bittorrent-protocol |
 | Keywords           | bittorrent, p2p, peer, peer-to-peer, protocol, stream, torrent, wire |
-| # releases         | 4 |
-| # dependents       | 8 |
-| # downloads        | 160788 |
-| # stars            | 1 |
+| # releases         | 20 |
+| # dependents       | 0.0 |
+| # downloads        | 29767.666666666668 |
+| # stars            | 309.0 |
 
 ## Links
-- [Homepage](https://github.com/webtorrent/bittorrent-protocol#readme)
-- [Bugs](https://github.com/webtorrent/bittorrent-protocol/issues)
-- [Repository](https://github.com/webtorrent/bittorrent-protocol)
 - [Npm](https://www.npmjs.com/package/bittorrent-protocol)
     
 

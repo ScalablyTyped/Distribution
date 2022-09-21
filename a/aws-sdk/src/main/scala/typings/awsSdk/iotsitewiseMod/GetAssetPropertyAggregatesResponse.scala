@@ -27,7 +27,7 @@ object GetAssetPropertyAggregatesResponse {
     
     inline def setAggregatedValues(value: AggregatedValues): Self = StObject.set(x, "aggregatedValues", value.asInstanceOf[js.Any])
     
-    inline def setAggregatedValuesVarargs(value: AggregatedValue*): Self = StObject.set(x, "aggregatedValues", js.Array(value :_*))
+    inline def setAggregatedValuesVarargs(value: AggregatedValue*): Self = StObject.set(x, "aggregatedValues", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

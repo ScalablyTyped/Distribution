@@ -14,8 +14,8 @@ object touchEventMod {
   
   @JSImport("wonder.js/dist/es2015/event/object/TouchEvent", "TouchEvent")
   @js.native
-  class TouchEvent protected () extends DomEvent {
-    def this(event: js.Any, eventName: EEventName) = this()
+  open class TouchEvent protected () extends DomEvent {
+    def this(event: Any, eventName: EEventName) = this()
     
     @JSName("event")
     var event_TouchEvent: ITouchEventData = js.native

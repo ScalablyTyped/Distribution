@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new TextInput.
   * @param [properties] Properties to set
   */
-class TextInput ()
+open class TextInput ()
   extends StObject
      with ITextInput {
   def this(properties: ITextInput) = this()
@@ -33,7 +32,7 @@ class TextInput ()
     * Converts this TextInput to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 object TextInput {
   
@@ -50,6 +49,8 @@ object TextInput {
   inline def create(): TextInput = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[TextInput]
   inline def create(properties: ITextInput): TextInput = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[TextInput]
   
+  inline def decode(reader: js.typedarray.Uint8Array): TextInput = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TextInput]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): TextInput = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TextInput]
   /**
     * Decodes a TextInput message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -61,9 +62,8 @@ object TextInput {
   /* static member */
   inline def decode(reader: Reader): TextInput = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TextInput]
   inline def decode(reader: Reader, length: Double): TextInput = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TextInput]
-  inline def decode(reader: Uint8Array): TextInput = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TextInput]
-  inline def decode(reader: Uint8Array, length: Double): TextInput = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TextInput]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): TextInput = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TextInput]
   /**
     * Decodes a TextInput message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -73,7 +73,6 @@ object TextInput {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): TextInput = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TextInput]
-  inline def decodeDelimited(reader: Uint8Array): TextInput = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TextInput]
   
   /**
     * Encodes the specified TextInput message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.TextInput.verify|verify} messages.
@@ -101,7 +100,7 @@ object TextInput {
     * @returns TextInput
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): TextInput = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TextInput]
+  inline def fromObject(`object`: StringDictionary[Any]): TextInput = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TextInput]
   
   /**
     * Creates a plain object from a TextInput message. Also converts values to other types if specified.
@@ -110,8 +109,8 @@ object TextInput {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: TextInput): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: TextInput, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: TextInput): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: TextInput, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a TextInput message.
@@ -119,5 +118,5 @@ object TextInput {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

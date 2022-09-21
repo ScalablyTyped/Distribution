@@ -73,7 +73,7 @@ trait ASPxClientFloatingActionButton
     * Specifies the floating action button's container element.
     * @param element An object that specifies the HTML element or a web control on the page that is the container element for the floating action button.
     */
-  def SetContainerElement(element: js.Any): Unit = js.native
+  def SetContainerElement(element: Any): Unit = js.native
   
   /**
     * Specifies the ID of the HTML element or web control on the page.

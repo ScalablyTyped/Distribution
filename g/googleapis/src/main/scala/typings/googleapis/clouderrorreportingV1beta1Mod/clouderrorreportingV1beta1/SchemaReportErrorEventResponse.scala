@@ -4,8 +4,4 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response for reporting an individual error event. Data may be added to this
-  * message in the future.
-  */
 trait SchemaReportErrorEventResponse extends StObject

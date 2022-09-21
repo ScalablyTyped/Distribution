@@ -12,14 +12,14 @@ trait ProxySession extends StObject {
   var Capabilities: js.UndefOr[CapabilityList] = js.undefined
   
   /**
-    * The created timestamp, in ISO 8601 format.
+    * The created time stamp, in ISO 8601 format.
     */
-  var CreatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
+  var CreatedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The ended timestamp, in ISO 8601 format.
+    * The ended time stamp, in ISO 8601 format.
     */
-  var EndedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
+  var EndedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The number of minutes allowed for the proxy session.
@@ -62,9 +62,9 @@ trait ProxySession extends StObject {
   var Status: js.UndefOr[ProxySessionStatus] = js.undefined
   
   /**
-    * The updated timestamp, in ISO 8601 format.
+    * The updated time stamp, in ISO 8601 format.
     */
-  var UpdatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
+  var UpdatedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Amazon Chime voice connector ID.
@@ -84,13 +84,13 @@ object ProxySession {
     
     inline def setCapabilitiesUndefined: Self = StObject.set(x, "Capabilities", js.undefined)
     
-    inline def setCapabilitiesVarargs(value: Capability*): Self = StObject.set(x, "Capabilities", js.Array(value :_*))
+    inline def setCapabilitiesVarargs(value: Capability*): Self = StObject.set(x, "Capabilities", js.Array(value*))
     
-    inline def setCreatedTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreatedTimestamp(value: js.Date): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     
-    inline def setEndedTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "EndedTimestamp", value.asInstanceOf[js.Any])
+    inline def setEndedTimestamp(value: js.Date): Self = StObject.set(x, "EndedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setEndedTimestampUndefined: Self = StObject.set(x, "EndedTimestamp", js.undefined)
     
@@ -118,7 +118,7 @@ object ProxySession {
     
     inline def setParticipantsUndefined: Self = StObject.set(x, "Participants", js.undefined)
     
-    inline def setParticipantsVarargs(value: Participant*): Self = StObject.set(x, "Participants", js.Array(value :_*))
+    inline def setParticipantsVarargs(value: Participant*): Self = StObject.set(x, "Participants", js.Array(value*))
     
     inline def setProxySessionId(value: NonEmptyString128): Self = StObject.set(x, "ProxySessionId", value.asInstanceOf[js.Any])
     
@@ -128,7 +128,7 @@ object ProxySession {
     
     inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    inline def setUpdatedTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "UpdatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setUpdatedTimestamp(value: js.Date): Self = StObject.set(x, "UpdatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setUpdatedTimestampUndefined: Self = StObject.set(x, "UpdatedTimestamp", js.undefined)
     

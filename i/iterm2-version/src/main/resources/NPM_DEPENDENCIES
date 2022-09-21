@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "iterm2-version" : "4.2.0"
+      "iterm2-version" : "5.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "iterm2-version" : "4.2.0"
+      "iterm2-version" : "5.0.0"
     }
   ],
   "compile-devDependencies" : [

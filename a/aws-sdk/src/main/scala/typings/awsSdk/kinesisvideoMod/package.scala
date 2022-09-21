@@ -1,5 +1,8 @@
 package typings.awsSdk.kinesisvideoMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.BEGINS_WITH
+import typings.awsSdk.awsSdkStrings.JPEGQuality
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,59 +16,100 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.awsSdk.awsSdkStrings.GET_HLS_STREAMING_SESSION_URL
   - typings.awsSdk.awsSdkStrings.GET_DASH_STREAMING_SESSION_URL
   - typings.awsSdk.awsSdkStrings.GET_CLIP
+  - typings.awsSdk.awsSdkStrings.GET_IMAGES
   - java.lang.String
 */
-type APIName = typings.awsSdk.kinesisvideoMod._APIName | java.lang.String
+type APIName = _APIName | String
 
-type ChannelInfoList = js.Array[typings.awsSdk.kinesisvideoMod.ChannelInfo]
+type ChannelInfoList = js.Array[ChannelInfo]
 
-type ChannelName = java.lang.String
+type ChannelName = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.WSS
   - typings.awsSdk.awsSdkStrings.HTTPS
   - java.lang.String
 */
-type ChannelProtocol = typings.awsSdk.kinesisvideoMod._ChannelProtocol | java.lang.String
+type ChannelProtocol = _ChannelProtocol | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.MASTER
   - typings.awsSdk.awsSdkStrings.VIEWER
   - java.lang.String
 */
-type ChannelRole = typings.awsSdk.kinesisvideoMod._ChannelRole | java.lang.String
+type ChannelRole = _ChannelRole | String
 
-type ChannelType = typings.awsSdk.awsSdkStrings.SINGLE_MASTER | java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SINGLE_MASTER
+  - typings.awsSdk.awsSdkStrings.FULL_MESH
+  - java.lang.String
+*/
+type ChannelType = _ChannelType | String
 
-type ComparisonOperator = typings.awsSdk.awsSdkStrings.BEGINS_WITH | java.lang.String
+type ComparisonOperator = BEGINS_WITH | String
 
-type DataEndpoint = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - java.lang.String
+*/
+type ConfigurationStatus = _ConfigurationStatus | String
 
-type DataRetentionChangeInHours = scala.Double
+type DataEndpoint = String
 
-type DataRetentionInHours = scala.Double
+type DataRetentionChangeInHours = Double
 
-type DeviceName = java.lang.String
+type DataRetentionInHours = Double
 
-type KmsKeyId = java.lang.String
+type DestinationRegion = String
 
-type ListOfProtocols = js.Array[typings.awsSdk.kinesisvideoMod.ChannelProtocol]
+type DestinationUri = String
 
-type ListStreamsInputLimit = scala.Double
+type DeviceName = String
 
-type MediaType = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.JPEG
+  - typings.awsSdk.awsSdkStrings.PNG
+  - java.lang.String
+*/
+type Format = _Format | String
 
-type MessageTtlSeconds = scala.Double
+type FormatConfig = StringDictionary[FormatConfigValue]
 
-type NextToken = java.lang.String
+type FormatConfigKey = JPEGQuality | String
 
-type ResourceARN = java.lang.String
+type FormatConfigValue = String
 
-type ResourceEndpoint = java.lang.String
+type HeightPixels = Double
 
-type ResourceEndpointList = js.Array[typings.awsSdk.kinesisvideoMod.ResourceEndpointListItem]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SERVER_TIMESTAMP
+  - typings.awsSdk.awsSdkStrings.PRODUCER_TIMESTAMP
+  - java.lang.String
+*/
+type ImageSelectorType = _ImageSelectorType | String
 
-type ResourceTags = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.kinesisvideoMod.TagValue]
+type KmsKeyId = String
+
+type ListOfProtocols = js.Array[ChannelProtocol]
+
+type ListStreamsInputLimit = Double
+
+type MediaType = String
+
+type MessageTtlSeconds = Double
+
+type NextToken = String
+
+type ResourceARN = String
+
+type ResourceEndpoint = String
+
+type ResourceEndpointList = js.Array[ResourceEndpointListItem]
+
+type ResourceTags = StringDictionary[TagValue]
+
+type SamplingInterval = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATING
@@ -74,36 +118,38 @@ type ResourceTags = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.ki
   - typings.awsSdk.awsSdkStrings.DELETING
   - java.lang.String
 */
-type Status = typings.awsSdk.kinesisvideoMod._Status | java.lang.String
+type Status = _Status | String
 
-type StreamInfoList = js.Array[typings.awsSdk.kinesisvideoMod.StreamInfo]
+type StreamInfoList = js.Array[StreamInfo]
 
-type StreamName = java.lang.String
+type StreamName = String
 
-type TagKey = java.lang.String
+type TagKey = String
 
-type TagKeyList = js.Array[typings.awsSdk.kinesisvideoMod.TagKey]
+type TagKeyList = js.Array[TagKey]
 
-type TagList = js.Array[typings.awsSdk.kinesisvideoMod.Tag]
+type TagList = js.Array[Tag]
 
-type TagOnCreateList = js.Array[typings.awsSdk.kinesisvideoMod.Tag]
+type TagOnCreateList = js.Array[Tag]
 
-type TagValue = java.lang.String
+type TagValue = String
 
-type Timestamp = typings.std.Date
+type Timestamp = js.Date
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INCREASE_DATA_RETENTION
   - typings.awsSdk.awsSdkStrings.DECREASE_DATA_RETENTION
   - java.lang.String
 */
-type UpdateDataRetentionOperation = typings.awsSdk.kinesisvideoMod._UpdateDataRetentionOperation | java.lang.String
+type UpdateDataRetentionOperation = _UpdateDataRetentionOperation | String
 
-type Version = java.lang.String
+type Version = String
+
+type WidthPixels = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2017-09-30`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.kinesisvideoMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-script-hook" : "1.7.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-script-hook" : "1.7.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

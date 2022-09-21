@@ -33,6 +33,6 @@ object DescribePendingAggregationRequestsResponse {
     
     inline def setPendingAggregationRequestsUndefined: Self = StObject.set(x, "PendingAggregationRequests", js.undefined)
     
-    inline def setPendingAggregationRequestsVarargs(value: PendingAggregationRequest*): Self = StObject.set(x, "PendingAggregationRequests", js.Array(value :_*))
+    inline def setPendingAggregationRequestsVarargs(value: PendingAggregationRequest*): Self = StObject.set(x, "PendingAggregationRequests", js.Array(value*))
   }
 }

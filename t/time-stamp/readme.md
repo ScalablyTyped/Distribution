@@ -11,14 +11,11 @@ Get a formatted timestamp.
 | Full name          | time-stamp |
 | Keywords           | console, date, format, formatting, log, pretty, stamp, terminal, time, time-stamp |
 | # releases         | 0 |
-| # dependents       | 181 |
-| # downloads        | 147227616 |
-| # stars            | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 1.2015662666666666E7 |
+| # stars            | 109.0 |
 
 ## Links
-- [Homepage](https://github.com/jonschlinkert/time-stamp)
-- [Bugs](https://github.com/jonschlinkert/time-stamp/issues)
-- [Repository](https://github.com/jonschlinkert/time-stamp)
 - [Npm](https://www.npmjs.com/package/time-stamp)
     
 

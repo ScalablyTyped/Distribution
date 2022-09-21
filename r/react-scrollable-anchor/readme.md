@@ -11,9 +11,9 @@ Provide smooth scrolling anchors in React.
 | Full name          | react-scrollable-anchor |
 | Keywords           | react, reactjs, scroll, hash, scrollable, scrolling, anchor, anchors, single, page, app, static, site, jump |
 | # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 707812 |
-| # stars            | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 64450.333333333336 |
+| # stars            | 285.0 |
 
 ## Links
 - [Homepage](https://github.com/gabergg/react-scrollable-anchor)

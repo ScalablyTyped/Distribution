@@ -14,10 +14,10 @@ trait EscapeFunctions extends StObject {
     * @param stringifyObjects If true, don't convert objects into SQL lists
     * @param timeZone Convert dates from UTC to the given timezone.
     */
-  def escape(value: js.Any): String = js.native
-  def escape(value: js.Any, stringifyObjects: Boolean): String = js.native
-  def escape(value: js.Any, stringifyObjects: Boolean, timeZone: String): String = js.native
-  def escape(value: js.Any, stringifyObjects: Unit, timeZone: String): String = js.native
+  def escape(value: Any): String = js.native
+  def escape(value: Any, stringifyObjects: Boolean): String = js.native
+  def escape(value: Any, stringifyObjects: Boolean, timeZone: String): String = js.native
+  def escape(value: Any, stringifyObjects: Unit, timeZone: String): String = js.native
   
   /**
     * Escape an untrusted string to be used as a SQL identifier (database,
@@ -36,8 +36,8 @@ trait EscapeFunctions extends StObject {
     * @param stringifyObjects If true, don't convert objects into SQL lists
     * @param timeZone Convert dates from UTC to the given timezone.
     */
-  def format(sql: String, values: js.Array[js.Any]): String = js.native
-  def format(sql: String, values: js.Array[js.Any], stringifyObjects: Boolean): String = js.native
-  def format(sql: String, values: js.Array[js.Any], stringifyObjects: Boolean, timeZone: String): String = js.native
-  def format(sql: String, values: js.Array[js.Any], stringifyObjects: Unit, timeZone: String): String = js.native
+  def format(sql: String, values: js.Array[Any]): String = js.native
+  def format(sql: String, values: js.Array[Any], stringifyObjects: Boolean): String = js.native
+  def format(sql: String, values: js.Array[Any], stringifyObjects: Boolean, timeZone: String): String = js.native
+  def format(sql: String, values: js.Array[Any], stringifyObjects: Unit, timeZone: String): String = js.native
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait UpdateReleaseRequest extends StObject {
   
-  /** `Release` to update. */
+  /** Required. `Release` to update. */
   var release: js.UndefOr[Release] = js.undefined
   
   /** Specifies which fields to update. */

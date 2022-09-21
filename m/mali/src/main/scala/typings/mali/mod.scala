@@ -1,11 +1,11 @@
 package typings.mali
 
-import typings.grpc.mod.Metadata
-import typings.grpc.mod.Server
-import typings.grpc.mod.ServerDuplexStream
-import typings.grpc.mod.ServerReadableStream
-import typings.grpc.mod.ServerUnaryCall
-import typings.grpc.mod.ServerWriteableStream
+import typings.grpcGrpcJs.mod.Metadata
+import typings.grpcGrpcJs.mod.Server
+import typings.grpcGrpcJs.serverCallMod.ServerDuplexStream
+import typings.grpcGrpcJs.serverCallMod.ServerReadableStream
+import typings.grpcGrpcJs.serverCallMod.ServerUnaryCall
+import typings.grpcGrpcJs.serverCallMod.ServerWritableStream
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,32 +15,35 @@ object mod {
   
   @JSImport("mali", JSImport.Namespace)
   @js.native
-  class ^ () extends Mali {
-    def this(path: js.Any) = this()
-    def this(path: js.Any, name: String) = this()
-    def this(path: js.Any, name: js.Array[String]) = this()
+  open class ^[T] () extends Mali[T] {
+    def this(path: Any) = this()
+    def this(path: Any, name: String) = this()
+    def this(path: Any, name: js.Array[String]) = this()
     def this(path: Unit, name: String) = this()
     def this(path: Unit, name: js.Array[String]) = this()
-    def this(path: js.Any, name: String, options: js.Any) = this()
-    def this(path: js.Any, name: js.Array[String], options: js.Any) = this()
-    def this(path: js.Any, name: Unit, options: js.Any) = this()
-    def this(path: Unit, name: String, options: js.Any) = this()
-    def this(path: Unit, name: js.Array[String], options: js.Any) = this()
-    def this(path: Unit, name: Unit, options: js.Any) = this()
+    def this(path: Any, name: String, options: Any) = this()
+    def this(path: Any, name: js.Array[String], options: Any) = this()
+    def this(path: Any, name: Unit, options: Any) = this()
+    def this(path: Unit, name: String, options: Any) = this()
+    def this(path: Unit, name: js.Array[String], options: Any) = this()
+    def this(path: Unit, name: Unit, options: Any) = this()
+    
+    /* CompleteClass */
+    var context: T = js.native
   }
   
   @JSImport("mali", "Request")
   @js.native
-  class Request protected () extends StObject {
-    def this(call: js.Any, `type`: String) = this()
+  open class Request protected () extends StObject {
+    def this(call: Any, `type`: String) = this()
     
-    var call: js.Any = js.native
+    var call: Any = js.native
     
-    def get(field: String): js.Any = js.native
+    def get(field: String): Any = js.native
     
     def getMetadata(): Metadata = js.native
     
-    var metadata: js.Any = js.native
+    var metadata: Any = js.native
     
     var req: GrpcRequest = js.native
     
@@ -49,54 +52,71 @@ object mod {
   
   @JSImport("mali", "Response")
   @js.native
-  class Response protected () extends StObject {
-    def this(call: js.Any, `type`: String) = this()
+  open class Response protected () extends StObject {
+    def this(call: Any, `type`: String) = this()
     
-    var call: js.Any = js.native
+    var call: Any = js.native
     
-    def get(field: String): js.Any = js.native
+    def get(field: String): Any = js.native
     
     def getMetadata(): Metadata = js.native
     
-    def getStatus(field: String): js.Any = js.native
+    def getStatus(field: String): Any = js.native
     
-    var metadata: js.Any = js.native
+    var metadata: Any = js.native
     
     var res: GrpcResponse = js.native
     
     def sendMetadata(): Unit = js.native
-    def sendMetadata(md: js.Any): Unit = js.native
+    def sendMetadata(md: Any): Unit = js.native
     
-    def set(field: js.Any): Unit = js.native
-    def set(field: js.Any, `val`: js.Any): Unit = js.native
+    def set(field: Any): Unit = js.native
+    def set(field: Any, `val`: Any): Unit = js.native
     
-    def setStatus(field: js.Any): Unit = js.native
-    def setStatus(field: js.Any, `val`: js.Any): Unit = js.native
+    def setStatus(field: Any): Unit = js.native
+    def setStatus(field: Any, `val`: Any): Unit = js.native
     
-    var status: js.Any = js.native
+    var status: Any = js.native
     
     var `type`: String = js.native
   }
   
+  trait App[T] extends StObject {
+    
+    var context: T
+  }
+  object App {
+    
+    inline def apply[T](context: T): App[T] = {
+      val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any])
+      __obj.asInstanceOf[App[T]]
+    }
+    
+    extension [Self <: App[?], T](x: Self & App[T]) {
+      
+      inline def setContext(value: T): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    }
+  }
+  
   @js.native
-  trait Context extends StObject {
+  trait Context[R] extends StObject {
     
     @JSName("package")
     var _package: String = js.native
     
-    var app: Mali = js.native
+    var app: App[R] = js.native
     
     var call: GrpcCall = js.native
     
     var fullName: String = js.native
     
-    def get(field: String): js.Any = js.native
+    def get(field: String): Any = js.native
     
-    def getStatus(field: String): js.Any = js.native
+    def getStatus(field: String): Any = js.native
     
     var locals: js.Object = js.native
     
-    var metadata: js.Any = js.native
+    var metadata: Any = js.native
     
     var name: String = js.native
     
@@ -108,40 +128,42 @@ object mod {
     
     var response: Response = js.native
     
-    def sendMetadata(md: js.Any): Unit = js.native
+    def sendMetadata(md: Any): Unit = js.native
     
     var service: String = js.native
     
-    def set(field: js.Any): Unit = js.native
-    def set(field: js.Any, `val`: js.Any): Unit = js.native
+    def set(field: Any): Unit = js.native
+    def set(field: Any, `val`: Any): Unit = js.native
     
-    def setStatus(field: js.Any): Unit = js.native
-    def setStatus(field: js.Any, `val`: js.Any): Unit = js.native
+    def setStatus(field: Any): Unit = js.native
+    def setStatus(field: Any, `val`: Any): Unit = js.native
     
     var `type`: String = js.native
   }
   
-  type GrpcCall = ServerUnaryCall[js.Any] | ServerReadableStream[js.Any] | (ServerWriteableStream[js.Any, js.Any]) | (ServerDuplexStream[js.Any, js.Any])
+  type GrpcCall = (ServerUnaryCall[Any, Any]) | (ServerReadableStream[Any, Any]) | (ServerWritableStream[Any, Any]) | (ServerDuplexStream[Any, Any])
   
-  type GrpcRequest = js.Any
+  type GrpcRequest = Any
   
-  type GrpcResponse = js.Any
+  type GrpcResponse = Any
   
   @js.native
-  trait Mali extends EventEmitter {
+  trait Mali[T]
+    extends EventEmitter
+       with App[T] {
     
-    def addService(path: js.Any, name: String): Unit = js.native
-    def addService(path: js.Any, name: String, options: js.Any): Unit = js.native
-    def addService(path: js.Any, name: js.Array[String]): Unit = js.native
-    def addService(path: js.Any, name: js.Array[String], options: js.Any): Unit = js.native
+    def addService(path: Any): Unit = js.native
+    def addService(path: Any, name: String): Unit = js.native
+    def addService(path: Any, name: String, options: Any): Unit = js.native
+    def addService(path: Any, name: js.Array[String]): Unit = js.native
+    def addService(path: Any, name: js.Array[String], options: Any): Unit = js.native
+    def addService(path: Any, name: Unit, options: Any): Unit = js.native
     
     def close(): js.Promise[Unit] = js.native
     
-    var context: js.Object = js.native
-    
     var env: String = js.native
     
-    def inspect(): js.Any = js.native
+    def inspect(): Any = js.native
     
     var name: String = js.native
     
@@ -149,24 +171,24 @@ object mod {
     
     var silent: Boolean = js.native
     
-    def start(port: String): Server = js.native
-    def start(port: String, creds: js.Any): Server = js.native
-    def start(port: String, creds: js.Any, options: js.Any): Server = js.native
-    def start(port: String, creds: Unit, options: js.Any): Server = js.native
-    def start(port: Double): Server = js.native
-    def start(port: Double, creds: js.Any): Server = js.native
-    def start(port: Double, creds: js.Any, options: js.Any): Server = js.native
-    def start(port: Double, creds: Unit, options: js.Any): Server = js.native
+    def start(port: String): js.Promise[Server] = js.native
+    def start(port: String, creds: Any): js.Promise[Server] = js.native
+    def start(port: String, creds: Any, options: Any): js.Promise[Server] = js.native
+    def start(port: String, creds: Unit, options: Any): js.Promise[Server] = js.native
+    def start(port: Double): js.Promise[Server] = js.native
+    def start(port: Double, creds: Any): js.Promise[Server] = js.native
+    def start(port: Double, creds: Any, options: Any): js.Promise[Server] = js.native
+    def start(port: Double, creds: Unit, options: Any): js.Promise[Server] = js.native
     
-    def toJSON(): js.Any = js.native
+    def toJSON(): Any = js.native
     
     def use(): Unit = js.native
-    def use(service: js.Any): Unit = js.native
-    def use(service: js.Any, name: js.Any): Unit = js.native
-    def use(service: js.Any, name: js.Any, fns: js.Any): Unit = js.native
-    def use(service: js.Any, name: Unit, fns: js.Any): Unit = js.native
-    def use(service: Unit, name: js.Any): Unit = js.native
-    def use(service: Unit, name: js.Any, fns: js.Any): Unit = js.native
-    def use(service: Unit, name: Unit, fns: js.Any): Unit = js.native
+    def use(service: Any): Unit = js.native
+    def use(service: Any, name: Any): Unit = js.native
+    def use(service: Any, name: Any, fns: Any): Unit = js.native
+    def use(service: Any, name: Unit, fns: Any): Unit = js.native
+    def use(service: Unit, name: Any): Unit = js.native
+    def use(service: Unit, name: Any, fns: Any): Unit = js.native
+    def use(service: Unit, name: Unit, fns: Any): Unit = js.native
   }
 }

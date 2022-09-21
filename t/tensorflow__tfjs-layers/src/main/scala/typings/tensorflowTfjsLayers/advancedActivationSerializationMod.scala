@@ -131,7 +131,7 @@ object advancedActivationSerializationMod {
       
       inline def setShared_axesUndefined: Self = StObject.set(x, "shared_axes", js.undefined)
       
-      inline def setShared_axesVarargs(value: Double*): Self = StObject.set(x, "shared_axes", js.Array(value :_*))
+      inline def setShared_axesVarargs(value: Double*): Self = StObject.set(x, "shared_axes", js.Array(value*))
     }
   }
   

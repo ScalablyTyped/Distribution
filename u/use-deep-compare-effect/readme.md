@@ -1,7 +1,7 @@
 
 # Scala.js typings for use-deep-compare-effect
 
-Typings are for version 1.2
+Typings are for version 1.8.1
 
 ## Library description:
 It's react's useEffect hook, except using deep comparison on the inputs, not reference equality
@@ -10,10 +10,10 @@ It's react's useEffect hook, except using deep comparison on the inputs, not ref
 | ------------------ | :-------------: |
 | Full name          | use-deep-compare-effect |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 85 |
-| # downloads        | 2533618 |
-| # stars            | 0 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 1134717.6666666667 |
+| # stars            | 1602.0 |
 
 ## Links
 - [Homepage](https://github.com/kentcdodds/use-deep-compare-effect#readme)
@@ -24,7 +24,7 @@ It's react's useEffect hook, except using deep comparison on the inputs, not ref
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

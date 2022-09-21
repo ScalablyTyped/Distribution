@@ -10,7 +10,7 @@ object colorSplitterBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/colorSplitterBlock", "ColorSplitterBlock")
   @js.native
-  class ColorSplitterBlock protected () extends NodeMaterialBlock {
+  open class ColorSplitterBlock protected () extends NodeMaterialBlock {
     /**
       * Create a new ColorSplitterBlock
       * @param name defines the block name

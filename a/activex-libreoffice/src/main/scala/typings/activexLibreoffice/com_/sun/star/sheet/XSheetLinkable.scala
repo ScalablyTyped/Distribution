@@ -89,7 +89,7 @@ object XSheetLinkable {
     getLinkSheetName: () => String,
     getLinkUrl: () => String,
     link: (String, String, String, String, SheetLinkMode) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setLinkMode: SheetLinkMode => Unit,
     setLinkSheetName: String => Unit,

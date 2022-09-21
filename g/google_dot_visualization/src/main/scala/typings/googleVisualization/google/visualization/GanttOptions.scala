@@ -1,6 +1,5 @@
 package typings.googleVisualization.google.visualization
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ trait GanttOptions extends StObject {
   
   var criticalPathStyle: js.UndefOr[ChartStroke] = js.undefined
   
-  var defaultStartDate: js.UndefOr[Date | Double] = js.undefined
+  var defaultStartDate: js.UndefOr[js.Date | Double] = js.undefined
   
   var innerGridDarkTrack: js.UndefOr[ChartFill] = js.undefined
   
@@ -72,7 +71,7 @@ object GanttOptions {
     
     inline def setCriticalPathStyleUndefined: Self = StObject.set(x, "criticalPathStyle", js.undefined)
     
-    inline def setDefaultStartDate(value: Date | Double): Self = StObject.set(x, "defaultStartDate", value.asInstanceOf[js.Any])
+    inline def setDefaultStartDate(value: js.Date | Double): Self = StObject.set(x, "defaultStartDate", value.asInstanceOf[js.Any])
     
     inline def setDefaultStartDateUndefined: Self = StObject.set(x, "defaultStartDate", js.undefined)
     

@@ -19,7 +19,7 @@ trait WidgetEditableListOptions[T] extends StObject {
     * If set to false (boolean), the button is not shown.
     * If set to a non-blank string, a button is shown using its value as the text of the button.
     */
-  var addButtons: js.UndefOr[Boolean | String] = js.undefined
+  var addButton: js.UndefOr[Boolean | String] = js.undefined
   
   /**
     * A callback function that gets called when a new item is being added to the list.
@@ -134,9 +134,9 @@ object WidgetEditableListOptions {
   
   extension [Self <: WidgetEditableListOptions[?], T](x: Self & WidgetEditableListOptions[T]) {
     
-    inline def setAddButtons(value: Boolean | String): Self = StObject.set(x, "addButtons", value.asInstanceOf[js.Any])
+    inline def setAddButton(value: Boolean | String): Self = StObject.set(x, "addButton", value.asInstanceOf[js.Any])
     
-    inline def setAddButtonsUndefined: Self = StObject.set(x, "addButtons", js.undefined)
+    inline def setAddButtonUndefined: Self = StObject.set(x, "addButton", js.undefined)
     
     inline def setAddItem(value: (/* row */ JQuery[HTMLElement], /* index */ Double, /* data */ T) => Unit): Self = StObject.set(x, "addItem", js.Any.fromFunction3(value))
     

@@ -11,9 +11,9 @@ Provides a hooking mechanism for Node.js require() calls
 | Full name          | require-hacker |
 | Keywords           | require |
 | # releases         | 0 |
-| # dependents       | 20 |
-| # downloads        | 857761 |
-| # stars            | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 62047.0 |
+| # stars            | 62.0 |
 
 ## Links
 - [Homepage](https://github.com/catamphetamine/require-hacker#readme)

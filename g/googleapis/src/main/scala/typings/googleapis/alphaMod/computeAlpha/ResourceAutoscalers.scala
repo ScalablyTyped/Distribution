@@ -4,31 +4,17 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Autoscalers")
 @js.native
-class ResourceAutoscalers protected () extends StObject {
+open class ResourceAutoscalers protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
-  /**
-    * compute.autoscalers.aggregatedList
-    * @desc Retrieves an aggregated list of autoscalers.
-    * @alias compute.autoscalers.aggregatedList
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-    * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-    * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-    * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
-    * @param {string} params.project Project ID for this request.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def aggregatedList(): GaxiosPromise[SchemaAutoscalerAggregatedList] = js.native
   def aggregatedList(callback: BodyResponseCallback[SchemaAutoscalerAggregatedList]): Unit = js.native
   def aggregatedList(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAutoscalerAggregatedList] = js.native
@@ -39,8 +25,8 @@ class ResourceAutoscalers protected () extends StObject {
   ): Unit = js.native
   def aggregatedList(
     params: ParamsResourceAutoscalersAggregatedlist,
-    options: BodyResponseCallback[SchemaAutoscalerAggregatedList],
-    callback: BodyResponseCallback[SchemaAutoscalerAggregatedList]
+    options: BodyResponseCallback[Readable | SchemaAutoscalerAggregatedList],
+    callback: BodyResponseCallback[Readable | SchemaAutoscalerAggregatedList]
   ): Unit = js.native
   def aggregatedList(params: ParamsResourceAutoscalersAggregatedlist, options: MethodOptions): GaxiosPromise[SchemaAutoscalerAggregatedList] = js.native
   def aggregatedList(
@@ -48,24 +34,88 @@ class ResourceAutoscalers protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAutoscalerAggregatedList]
   ): Unit = js.native
+  /**
+    * Retrieves an aggregated list of autoscalers.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const compute = google.compute('alpha');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *       'https://www.googleapis.com/auth/compute.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.autoscalers.aggregatedList({
+    *     // A filter expression that filters resources listed in the response. Most Compute resources support two types of filter expressions: expressions that support regular expressions and expressions that follow API improvement proposal AIP-160. If you want to use AIP-160, your expression must specify the field name, an operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The operator must be either `=`, `!=`, `\>`, `<`, `<=`, `\>=` or `:`. For example, if you are filtering Compute Engine instances, you can exclude instances named `example-instance` by specifying `name != example-instance`. The `:` operator can be used with string fields to match substrings. For non-string fields it is equivalent to the `=` operator. The `:*` comparison can be used to test whether a key has been defined. For example, to find all objects with `owner` label use: ``` labels.owner:* ``` You can also filter nested fields. For example, you could specify `scheduling.automaticRestart = false` to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels. To filter on multiple expressions, provide each separate expression within parentheses. For example: ``` (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake") ``` By default, each expression is an `AND` expression. However, you can include `AND` and `OR` expressions explicitly. For example: ``` (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true) ``` If you want to use a regular expression, use the `eq` (equal) or `ne` (not equal) operator against a single un-parenthesized expression with or without quotes or against multiple parenthesized expressions. Examples: `fieldname eq unquoted literal` `fieldname eq 'single quoted literal'` `fieldname eq "double quoted literal"` `(fieldname1 eq literal) (fieldname2 ne "literal")` The literal value is interpreted as a regular expression using Google RE2 library syntax. The literal value must match the entire field. For example, to filter for instances that do not end with name "instance", you would use `name ne .*instance`.
+    *     filter: 'placeholder-value',
+    *     // Indicates whether every visible scope for each scope type (zone, region, global) should be included in the response. For new resource types added after this field, the flag has no effect as new resource types will always include every visible scope for each scope type in response. For resource types which predate this field, if this flag is omitted or false, only scopes of the scope types where the resource type is expected to be found will be included.
+    *     includeAllScopes: 'placeholder-value',
+    *     // The maximum number of results per page that should be returned. If the number of available results is larger than `maxResults`, Compute Engine returns a `nextPageToken` that can be used to get the next page of results in subsequent list requests. Acceptable values are `0` to `500`, inclusive. (Default: `500`)
+    *     maxResults: 'placeholder-value',
+    *     // Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name. You can also sort results in descending order based on the creation timestamp using `orderBy="creationTimestamp desc"`. This sorts results based on the `creationTimestamp` field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first. Currently, only sorting by `name` or `creationTimestamp desc` is supported.
+    *     orderBy: 'placeholder-value',
+    *     // Specifies a page token to use. Set `pageToken` to the `nextPageToken` returned by a previous list request to get the next page of results.
+    *     pageToken: 'placeholder-value',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // Opt-in for partial success behavior which provides partial results in case of failure. The default value is false.
+    *     returnPartialSuccess: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "id": "my_id",
+    *   //   "items": {},
+    *   //   "kind": "my_kind",
+    *   //   "nextPageToken": "my_nextPageToken",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "unreachables": [],
+    *   //   "warning": {}
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def aggregatedList(params: ParamsResourceAutoscalersAggregatedlist, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def aggregatedList(
+    params: ParamsResourceAutoscalersAggregatedlist,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
   
   var context: APIRequestContext = js.native
   
-  /**
-    * compute.autoscalers.delete
-    * @desc Deletes the specified autoscaler.
-    * @alias compute.autoscalers.delete
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.autoscaler Name of the autoscaler to delete.
-    * @param {string} params.project Project ID for this request.
-    * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-    * @param {string} params.zone Name of the zone for this request.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -73,8 +123,8 @@ class ResourceAutoscalers protected () extends StObject {
   def delete(params: ParamsResourceAutoscalersDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
     params: ParamsResourceAutoscalersDelete,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def delete(params: ParamsResourceAutoscalersDelete, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(
@@ -82,22 +132,98 @@ class ResourceAutoscalers protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * compute.autoscalers.get
-    * @desc Returns the specified autoscaler resource. Gets a list of available
-    * autoscalers by making a list() request.
-    * @alias compute.autoscalers.get
-    * @memberOf! ()
+    * Deletes the specified autoscaler.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.autoscaler Name of the autoscaler to return.
-    * @param {string} params.project Project ID for this request.
-    * @param {string} params.zone Name of the zone for this request.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const compute = google.compute('alpha');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.autoscalers.delete({
+    *     // Name of the autoscaler to delete.
+    *     autoscaler: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported ( 00000000-0000-0000-0000-000000000000).
+    *     requestId: 'placeholder-value',
+    *     // Name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clientOperationId": "my_clientOperationId",
+    *   //   "creationTimestamp": "my_creationTimestamp",
+    *   //   "description": "my_description",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "httpErrorMessage": "my_httpErrorMessage",
+    *   //   "httpErrorStatusCode": 0,
+    *   //   "id": "my_id",
+    *   //   "insertTime": "my_insertTime",
+    *   //   "kind": "my_kind",
+    *   //   "metadata": {},
+    *   //   "name": "my_name",
+    *   //   "operationGroupId": "my_operationGroupId",
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": 0,
+    *   //   "region": "my_region",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "selfLinkWithId": "my_selfLinkWithId",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetId": "my_targetId",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "user": "my_user",
+    *   //   "warnings": [],
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def delete(params: ParamsResourceAutoscalersDelete, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def delete(
+    params: ParamsResourceAutoscalersDelete,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def get(): GaxiosPromise[SchemaAutoscaler] = js.native
   def get(callback: BodyResponseCallback[SchemaAutoscaler]): Unit = js.native
   def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAutoscaler] = js.native
@@ -105,8 +231,8 @@ class ResourceAutoscalers protected () extends StObject {
   def get(params: ParamsResourceAutoscalersGet, callback: BodyResponseCallback[SchemaAutoscaler]): Unit = js.native
   def get(
     params: ParamsResourceAutoscalersGet,
-    options: BodyResponseCallback[SchemaAutoscaler],
-    callback: BodyResponseCallback[SchemaAutoscaler]
+    options: BodyResponseCallback[Readable | SchemaAutoscaler],
+    callback: BodyResponseCallback[Readable | SchemaAutoscaler]
   ): Unit = js.native
   def get(params: ParamsResourceAutoscalersGet, options: MethodOptions): GaxiosPromise[SchemaAutoscaler] = js.native
   def get(
@@ -114,23 +240,86 @@ class ResourceAutoscalers protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAutoscaler]
   ): Unit = js.native
-  
   /**
-    * compute.autoscalers.insert
-    * @desc Creates an autoscaler in the specified project using the data
-    * included in the request.
-    * @alias compute.autoscalers.insert
-    * @memberOf! ()
+    * Returns the specified autoscaler resource. Gets a list of available autoscalers by making a list() request.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.project Project ID for this request.
-    * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-    * @param {string} params.zone Name of the zone for this request.
-    * @param {().Autoscaler} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const compute = google.compute('alpha');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *       'https://www.googleapis.com/auth/compute.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.autoscalers.get({
+    *     // Name of the autoscaler to return.
+    *     autoscaler: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // Name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "autoscalingPolicy": {},
+    *   //   "creationTimestamp": "my_creationTimestamp",
+    *   //   "description": "my_description",
+    *   //   "id": "my_id",
+    *   //   "kind": "my_kind",
+    *   //   "name": "my_name",
+    *   //   "recommendedSize": 0,
+    *   //   "region": "my_region",
+    *   //   "scalingScheduleStatus": {},
+    *   //   "selfLink": "my_selfLink",
+    *   //   "selfLinkWithId": "my_selfLinkWithId",
+    *   //   "status": "my_status",
+    *   //   "statusDetails": [],
+    *   //   "target": "my_target",
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def get(params: ParamsResourceAutoscalersGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def get(
+    params: ParamsResourceAutoscalersGet,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -138,8 +327,8 @@ class ResourceAutoscalers protected () extends StObject {
   def insert(params: ParamsResourceAutoscalersInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
     params: ParamsResourceAutoscalersInsert,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def insert(params: ParamsResourceAutoscalersInsert, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(
@@ -147,25 +336,118 @@ class ResourceAutoscalers protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * compute.autoscalers.list
-    * @desc Retrieves a list of autoscalers contained within the specified
-    * zone.
-    * @alias compute.autoscalers.list
-    * @memberOf! ()
+    * Creates an autoscaler in the specified project using the data included in the request.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string=} params.filter A filter expression that filters resources listed in the response. The expression must specify the field name, a comparison operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The comparison operator must be either =, !=, >, or <.  For example, if you are filtering Compute Engine instances, you can exclude instances named example-instance by specifying name != example-instance.  You can also filter nested fields. For example, you could specify scheduling.automaticRestart = false to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels.  To filter on multiple expressions, provide each separate expression within parentheses. For example, (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake"). By default, each expression is an AND expression. However, you can include AND and OR expressions explicitly. For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true).
-    * @param {integer=} params.maxResults The maximum number of results per page that should be returned. If the number of available results is larger than maxResults, Compute Engine returns a nextPageToken that can be used to get the next page of results in subsequent list requests. Acceptable values are 0 to 500, inclusive. (Default: 500)
-    * @param {string=} params.orderBy Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name.  You can also sort results in descending order based on the creation timestamp using orderBy="creationTimestamp desc". This sorts results based on the creationTimestamp field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first.  Currently, only sorting by name or creationTimestamp desc is supported.
-    * @param {string=} params.pageToken Specifies a page token to use. Set pageToken to the nextPageToken returned by a previous list request to get the next page of results.
-    * @param {string} params.project Project ID for this request.
-    * @param {string} params.zone Name of the zone for this request.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const compute = google.compute('alpha');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.autoscalers.insert({
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported ( 00000000-0000-0000-0000-000000000000).
+    *     requestId: 'placeholder-value',
+    *     // Name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "autoscalingPolicy": {},
+    *       //   "creationTimestamp": "my_creationTimestamp",
+    *       //   "description": "my_description",
+    *       //   "id": "my_id",
+    *       //   "kind": "my_kind",
+    *       //   "name": "my_name",
+    *       //   "recommendedSize": 0,
+    *       //   "region": "my_region",
+    *       //   "scalingScheduleStatus": {},
+    *       //   "selfLink": "my_selfLink",
+    *       //   "selfLinkWithId": "my_selfLinkWithId",
+    *       //   "status": "my_status",
+    *       //   "statusDetails": [],
+    *       //   "target": "my_target",
+    *       //   "zone": "my_zone"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clientOperationId": "my_clientOperationId",
+    *   //   "creationTimestamp": "my_creationTimestamp",
+    *   //   "description": "my_description",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "httpErrorMessage": "my_httpErrorMessage",
+    *   //   "httpErrorStatusCode": 0,
+    *   //   "id": "my_id",
+    *   //   "insertTime": "my_insertTime",
+    *   //   "kind": "my_kind",
+    *   //   "metadata": {},
+    *   //   "name": "my_name",
+    *   //   "operationGroupId": "my_operationGroupId",
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": 0,
+    *   //   "region": "my_region",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "selfLinkWithId": "my_selfLinkWithId",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetId": "my_targetId",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "user": "my_user",
+    *   //   "warnings": [],
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def insert(params: ParamsResourceAutoscalersInsert, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def insert(
+    params: ParamsResourceAutoscalersInsert,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def list(): GaxiosPromise[SchemaAutoscalerList] = js.native
   def list(callback: BodyResponseCallback[SchemaAutoscalerList]): Unit = js.native
   def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAutoscalerList] = js.native
@@ -173,8 +455,8 @@ class ResourceAutoscalers protected () extends StObject {
   def list(params: ParamsResourceAutoscalersList, callback: BodyResponseCallback[SchemaAutoscalerList]): Unit = js.native
   def list(
     params: ParamsResourceAutoscalersList,
-    options: BodyResponseCallback[SchemaAutoscalerList],
-    callback: BodyResponseCallback[SchemaAutoscalerList]
+    options: BodyResponseCallback[Readable | SchemaAutoscalerList],
+    callback: BodyResponseCallback[Readable | SchemaAutoscalerList]
   ): Unit = js.native
   def list(params: ParamsResourceAutoscalersList, options: MethodOptions): GaxiosPromise[SchemaAutoscalerList] = js.native
   def list(
@@ -182,25 +464,85 @@ class ResourceAutoscalers protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaAutoscalerList]
   ): Unit = js.native
-  
   /**
-    * compute.autoscalers.patch
-    * @desc Updates an autoscaler in the specified project using the data
-    * included in the request. This method supports PATCH semantics and uses
-    * the JSON merge patch format and processing rules.
-    * @alias compute.autoscalers.patch
-    * @memberOf! ()
+    * Retrieves a list of autoscalers contained within the specified zone.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string=} params.autoscaler Name of the autoscaler to patch.
-    * @param {string} params.project Project ID for this request.
-    * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-    * @param {string} params.zone Name of the zone for this request.
-    * @param {().Autoscaler} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const compute = google.compute('alpha');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *       'https://www.googleapis.com/auth/compute.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.autoscalers.list({
+    *     // A filter expression that filters resources listed in the response. Most Compute resources support two types of filter expressions: expressions that support regular expressions and expressions that follow API improvement proposal AIP-160. If you want to use AIP-160, your expression must specify the field name, an operator, and the value that you want to use for filtering. The value must be a string, a number, or a boolean. The operator must be either `=`, `!=`, `\>`, `<`, `<=`, `\>=` or `:`. For example, if you are filtering Compute Engine instances, you can exclude instances named `example-instance` by specifying `name != example-instance`. The `:` operator can be used with string fields to match substrings. For non-string fields it is equivalent to the `=` operator. The `:*` comparison can be used to test whether a key has been defined. For example, to find all objects with `owner` label use: ``` labels.owner:* ``` You can also filter nested fields. For example, you could specify `scheduling.automaticRestart = false` to include instances only if they are not scheduled for automatic restarts. You can use filtering on nested fields to filter based on resource labels. To filter on multiple expressions, provide each separate expression within parentheses. For example: ``` (scheduling.automaticRestart = true) (cpuPlatform = "Intel Skylake") ``` By default, each expression is an `AND` expression. However, you can include `AND` and `OR` expressions explicitly. For example: ``` (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell") AND (scheduling.automaticRestart = true) ``` If you want to use a regular expression, use the `eq` (equal) or `ne` (not equal) operator against a single un-parenthesized expression with or without quotes or against multiple parenthesized expressions. Examples: `fieldname eq unquoted literal` `fieldname eq 'single quoted literal'` `fieldname eq "double quoted literal"` `(fieldname1 eq literal) (fieldname2 ne "literal")` The literal value is interpreted as a regular expression using Google RE2 library syntax. The literal value must match the entire field. For example, to filter for instances that do not end with name "instance", you would use `name ne .*instance`.
+    *     filter: 'placeholder-value',
+    *     // The maximum number of results per page that should be returned. If the number of available results is larger than `maxResults`, Compute Engine returns a `nextPageToken` that can be used to get the next page of results in subsequent list requests. Acceptable values are `0` to `500`, inclusive. (Default: `500`)
+    *     maxResults: 'placeholder-value',
+    *     // Sorts list results by a certain order. By default, results are returned in alphanumerical order based on the resource name. You can also sort results in descending order based on the creation timestamp using `orderBy="creationTimestamp desc"`. This sorts results based on the `creationTimestamp` field in reverse chronological order (newest result first). Use this to sort resources like operations so that the newest operation is returned first. Currently, only sorting by `name` or `creationTimestamp desc` is supported.
+    *     orderBy: 'placeholder-value',
+    *     // Specifies a page token to use. Set `pageToken` to the `nextPageToken` returned by a previous list request to get the next page of results.
+    *     pageToken: 'placeholder-value',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // Opt-in for partial success behavior which provides partial results in case of failure. The default value is false.
+    *     returnPartialSuccess: 'placeholder-value',
+    *     // Name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "id": "my_id",
+    *   //   "items": [],
+    *   //   "kind": "my_kind",
+    *   //   "nextPageToken": "my_nextPageToken",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "warning": {}
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def list(params: ParamsResourceAutoscalersList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def list(
+    params: ParamsResourceAutoscalersList,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def patch(): GaxiosPromise[SchemaOperation] = js.native
   def patch(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -208,8 +550,8 @@ class ResourceAutoscalers protected () extends StObject {
   def patch(params: ParamsResourceAutoscalersPatch, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def patch(
     params: ParamsResourceAutoscalersPatch,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def patch(params: ParamsResourceAutoscalersPatch, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def patch(
@@ -217,22 +559,120 @@ class ResourceAutoscalers protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
   ): Unit = js.native
-  
   /**
-    * compute.autoscalers.testIamPermissions
-    * @desc Returns permissions that a caller has on the specified resource.
-    * @alias compute.autoscalers.testIamPermissions
-    * @memberOf! ()
+    * Updates an autoscaler in the specified project using the data included in the request. This method supports PATCH semantics and uses the JSON merge patch format and processing rules.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string} params.project Project ID for this request.
-    * @param {string} params.resource_ Name or id of the resource for this request.
-    * @param {string} params.zone The name of the zone for this request.
-    * @param {().TestPermissionsRequest} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const compute = google.compute('alpha');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.autoscalers.patch({
+    *     // Name of the autoscaler to patch.
+    *     autoscaler: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported ( 00000000-0000-0000-0000-000000000000).
+    *     requestId: 'placeholder-value',
+    *     // Name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "autoscalingPolicy": {},
+    *       //   "creationTimestamp": "my_creationTimestamp",
+    *       //   "description": "my_description",
+    *       //   "id": "my_id",
+    *       //   "kind": "my_kind",
+    *       //   "name": "my_name",
+    *       //   "recommendedSize": 0,
+    *       //   "region": "my_region",
+    *       //   "scalingScheduleStatus": {},
+    *       //   "selfLink": "my_selfLink",
+    *       //   "selfLinkWithId": "my_selfLinkWithId",
+    *       //   "status": "my_status",
+    *       //   "statusDetails": [],
+    *       //   "target": "my_target",
+    *       //   "zone": "my_zone"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clientOperationId": "my_clientOperationId",
+    *   //   "creationTimestamp": "my_creationTimestamp",
+    *   //   "description": "my_description",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "httpErrorMessage": "my_httpErrorMessage",
+    *   //   "httpErrorStatusCode": 0,
+    *   //   "id": "my_id",
+    *   //   "insertTime": "my_insertTime",
+    *   //   "kind": "my_kind",
+    *   //   "metadata": {},
+    *   //   "name": "my_name",
+    *   //   "operationGroupId": "my_operationGroupId",
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": 0,
+    *   //   "region": "my_region",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "selfLinkWithId": "my_selfLinkWithId",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetId": "my_targetId",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "user": "my_user",
+    *   //   "warnings": [],
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def patch(params: ParamsResourceAutoscalersPatch, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def patch(
+    params: ParamsResourceAutoscalersPatch,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def testIamPermissions(): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestPermissionsResponse]): Unit = js.native
   def testIamPermissions(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
@@ -243,8 +683,8 @@ class ResourceAutoscalers protected () extends StObject {
   ): Unit = js.native
   def testIamPermissions(
     params: ParamsResourceAutoscalersTestiampermissions,
-    options: BodyResponseCallback[SchemaTestPermissionsResponse],
-    callback: BodyResponseCallback[SchemaTestPermissionsResponse]
+    options: BodyResponseCallback[Readable | SchemaTestPermissionsResponse],
+    callback: BodyResponseCallback[Readable | SchemaTestPermissionsResponse]
   ): Unit = js.native
   def testIamPermissions(params: ParamsResourceAutoscalersTestiampermissions, options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(
@@ -252,24 +692,80 @@ class ResourceAutoscalers protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaTestPermissionsResponse]
   ): Unit = js.native
-  
   /**
-    * compute.autoscalers.update
-    * @desc Updates an autoscaler in the specified project using the data
-    * included in the request.
-    * @alias compute.autoscalers.update
-    * @memberOf! ()
+    * Returns permissions that a caller has on the specified resource.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string=} params.autoscaler Name of the autoscaler to update.
-    * @param {string} params.project Project ID for this request.
-    * @param {string=} params.requestId An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed.  For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments.  The request ID must be a valid UUID with the exception that zero UUID is not supported (00000000-0000-0000-0000-000000000000).
-    * @param {string} params.zone Name of the zone for this request.
-    * @param {().Autoscaler} params.resource Request body data
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const compute = google.compute('alpha');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *       'https://www.googleapis.com/auth/compute.readonly',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.autoscalers.testIamPermissions({
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // Name or id of the resource for this request.
+    *     resource: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *     // The name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "permissions": []
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "permissions": []
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def testIamPermissions(params: ParamsResourceAutoscalersTestiampermissions, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def testIamPermissions(
+    params: ParamsResourceAutoscalersTestiampermissions,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def update(): GaxiosPromise[SchemaOperation] = js.native
   def update(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
@@ -277,13 +773,126 @@ class ResourceAutoscalers protected () extends StObject {
   def update(params: ParamsResourceAutoscalersUpdate, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def update(
     params: ParamsResourceAutoscalersUpdate,
-    options: BodyResponseCallback[SchemaOperation],
-    callback: BodyResponseCallback[SchemaOperation]
+    options: BodyResponseCallback[Readable | SchemaOperation],
+    callback: BodyResponseCallback[Readable | SchemaOperation]
   ): Unit = js.native
   def update(params: ParamsResourceAutoscalersUpdate, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def update(
     params: ParamsResourceAutoscalersUpdate,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaOperation]
+  ): Unit = js.native
+  /**
+    * Updates an autoscaler in the specified project using the data included in the request.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/compute.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const compute = google.compute('alpha');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: [
+    *       'https://www.googleapis.com/auth/cloud-platform',
+    *       'https://www.googleapis.com/auth/compute',
+    *     ],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await compute.autoscalers.update({
+    *     // Name of the autoscaler to update.
+    *     autoscaler: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?|[1-9][0-9]{0,19}',
+    *     // Project ID for this request.
+    *     project:
+    *       '(?:(?:[-a-z0-9]{1,63}.)*(?:[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?):)?(?:[0-9]{1,19}|(?:[a-z0-9](?:[-a-z0-9]{0,61}[a-z0-9])?))',
+    *     // An optional request ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been completed. For example, consider a situation where you make an initial request and the request times out. If you make the request again with the same request ID, the server can check if original operation with the same request ID was received, and if so, will ignore the second request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported ( 00000000-0000-0000-0000-000000000000).
+    *     requestId: 'placeholder-value',
+    *     // Name of the zone for this request.
+    *     zone: '[a-z](?:[-a-z0-9]{0,61}[a-z0-9])?',
+    *
+    *     // Request body metadata
+    *     requestBody: {
+    *       // request body parameters
+    *       // {
+    *       //   "autoscalingPolicy": {},
+    *       //   "creationTimestamp": "my_creationTimestamp",
+    *       //   "description": "my_description",
+    *       //   "id": "my_id",
+    *       //   "kind": "my_kind",
+    *       //   "name": "my_name",
+    *       //   "recommendedSize": 0,
+    *       //   "region": "my_region",
+    *       //   "scalingScheduleStatus": {},
+    *       //   "selfLink": "my_selfLink",
+    *       //   "selfLinkWithId": "my_selfLinkWithId",
+    *       //   "status": "my_status",
+    *       //   "statusDetails": [],
+    *       //   "target": "my_target",
+    *       //   "zone": "my_zone"
+    *       // }
+    *     },
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "clientOperationId": "my_clientOperationId",
+    *   //   "creationTimestamp": "my_creationTimestamp",
+    *   //   "description": "my_description",
+    *   //   "endTime": "my_endTime",
+    *   //   "error": {},
+    *   //   "httpErrorMessage": "my_httpErrorMessage",
+    *   //   "httpErrorStatusCode": 0,
+    *   //   "id": "my_id",
+    *   //   "insertTime": "my_insertTime",
+    *   //   "kind": "my_kind",
+    *   //   "metadata": {},
+    *   //   "name": "my_name",
+    *   //   "operationGroupId": "my_operationGroupId",
+    *   //   "operationType": "my_operationType",
+    *   //   "progress": 0,
+    *   //   "region": "my_region",
+    *   //   "selfLink": "my_selfLink",
+    *   //   "selfLinkWithId": "my_selfLinkWithId",
+    *   //   "startTime": "my_startTime",
+    *   //   "status": "my_status",
+    *   //   "statusMessage": "my_statusMessage",
+    *   //   "targetId": "my_targetId",
+    *   //   "targetLink": "my_targetLink",
+    *   //   "user": "my_user",
+    *   //   "warnings": [],
+    *   //   "zone": "my_zone"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def update(params: ParamsResourceAutoscalersUpdate, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def update(
+    params: ParamsResourceAutoscalersUpdate,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
 }

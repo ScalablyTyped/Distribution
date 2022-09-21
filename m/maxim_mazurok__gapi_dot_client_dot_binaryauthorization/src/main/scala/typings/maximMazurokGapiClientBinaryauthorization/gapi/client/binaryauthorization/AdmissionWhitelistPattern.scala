@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AdmissionWhitelistPattern extends StObject {
   
-  /** An image name pattern to allowlist, in the form `registry/path/to/image`. This supports a trailing `*` as a wildcard, but this is allowed only in text after the `registry/` part. */
+  /**
+    * An image name pattern to allowlist, in the form `registry/path/to/image`. This supports a trailing `*` wildcard, but this is allowed only in text after the `registry/` part. This
+    * also supports a trailing `**` wildcard which matches subdirectories of a given entry.
+    */
   var namePattern: js.UndefOr[String] = js.undefined
 }
 object AdmissionWhitelistPattern {

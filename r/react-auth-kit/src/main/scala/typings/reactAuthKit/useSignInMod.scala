@@ -7,14 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object useSignInMod {
   
-  @JSImport("react-auth-kit/hooks/useSignIn", JSImport.Namespace)
+  @JSImport("react-auth-kit/dist/hooks/useSignIn", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
   /**
-    * Authentication SignIn Hook
-    *
-    * @returns - Sign In function
+    *@function
+    *@name useSignIn
+    *@description Authentication SignIn Hook
+    *@returns - Sign In function
     */
   inline def default(): js.Function1[/* signInConfig */ signInFunctionParams, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function1[/* signInConfig */ signInFunctionParams, Boolean]]
 }

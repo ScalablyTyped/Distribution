@@ -1,19 +1,72 @@
 package typings.baseui
 
-import typings.baseui.blockMod.AlignContent
-import typings.baseui.blockMod.AlignItems
-import typings.baseui.blockMod.AlignSelf
-import typings.baseui.blockMod.Display
-import typings.baseui.blockMod.FlexDirection
-import typings.baseui.blockMod.GridAutoFlow
-import typings.baseui.blockMod.JustifyContent
-import typings.baseui.blockMod.JustifyItems
-import typings.baseui.blockMod.JustifySelf
-import typings.baseui.blockMod.Overflow
-import typings.baseui.blockMod.Position
-import typings.baseui.dataTableMod._SortDirectionsT
-import typings.baseui.listMod.ArtworkSizesT
-import typings.baseui.phoneInputMod.StateChange
+import typings.baseui.badgeTypesMod.Color
+import typings.baseui.bannerTypesMod.ActionPosition
+import typings.baseui.bannerTypesMod.ArtworkType
+import typings.baseui.bannerTypesMod.Hierarchy
+import typings.baseui.blockTypesMod.AlignContent
+import typings.baseui.blockTypesMod.AlignItems
+import typings.baseui.blockTypesMod.AlignSelf
+import typings.baseui.blockTypesMod.Display
+import typings.baseui.blockTypesMod.FlexDirection
+import typings.baseui.blockTypesMod.GridAutoFlow
+import typings.baseui.blockTypesMod.JustifyContent
+import typings.baseui.blockTypesMod.JustifyItems
+import typings.baseui.blockTypesMod.JustifySelf
+import typings.baseui.blockTypesMod.Overflow
+import typings.baseui.blockTypesMod.Position
+import typings.baseui.blockTypesMod.WhiteSpace
+import typings.baseui.checkboxTypesMod.LabelPlacement
+import typings.baseui.checkboxTypesMod.StyleType
+import typings.baseui.dataTableTypesMod.Columns
+import typings.baseui.dataTableTypesMod.SortDirections
+import typings.baseui.datepickerTypesMod.Density
+import typings.baseui.datepickerTypesMod._InputRole
+import typings.baseui.datepickerTypesMod._RangedCalendarBehavior
+import typings.baseui.datepickerTypesMod._StateChangeType
+import typings.baseui.drawerTypesMod.Anchor
+import typings.baseui.filterShellMod.ExcludeKind
+import typings.baseui.inputTypesMod.Adjoined
+import typings.baseui.layerTypesMod.TetherPlacement
+import typings.baseui.layoutGridTypesMod.CSSLengthUnit
+import typings.baseui.layoutGridTypesMod.GridStyle
+import typings.baseui.listTypesMod.ArtworkSizes
+import typings.baseui.listTypesMod.Shape
+import typings.baseui.mapMarkerTypesMod.AnchorPositions
+import typings.baseui.mapMarkerTypesMod.BadgeEnhancerSize
+import typings.baseui.mapMarkerTypesMod.FloatingMarkerAnchorType
+import typings.baseui.mapMarkerTypesMod.FloatingMarkerSize
+import typings.baseui.mapMarkerTypesMod.Kind
+import typings.baseui.mapMarkerTypesMod.LabelEnhancerPosition
+import typings.baseui.mapMarkerTypesMod.LocationPuckSize
+import typings.baseui.mapMarkerTypesMod.LocationPuckType
+import typings.baseui.mapMarkerTypesMod.NeedleSize
+import typings.baseui.mapMarkerTypesMod.PinHead
+import typings.baseui.mapMarkerTypesMod.PinHeadSize
+import typings.baseui.modalTypesMod.CloseSource
+import typings.baseui.modalTypesMod.Role
+import typings.baseui.modalTypesMod.Size
+import typings.baseui.phoneInputTypesMod.CountryIso
+import typings.baseui.phoneInputTypesMod.StateChange
+import typings.baseui.popoverTypesMod.AccessibilityType
+import typings.baseui.popoverTypesMod.StateChangeType
+import typings.baseui.popoverTypesMod.TriggerType
+import typings.baseui.radioTypesMod.Align
+import typings.baseui.selectTypesMod.Type
+import typings.baseui.sliderTypesMod.ChangeAction
+import typings.baseui.snackbarTypesMod.Placement
+import typings.baseui.tableSemanticTypesMod.Divider
+import typings.baseui.tableTypesMod._SortDirection
+import typings.baseui.tabsMotionTypesMod.Fill
+import typings.baseui.tabsMotionTypesMod.Orientation
+import typings.baseui.tagTypesMod.TagKind
+import typings.baseui.tagTypesMod.TagSize
+import typings.baseui.tagTypesMod.TagVariant
+import typings.baseui.themesTypesMod.Globals
+import typings.baseui.themesTypesMod.LineStyle
+import typings.baseui.toastTypesMod.KindType
+import typings.baseui.toastTypesMod.NotificationType
+import typings.baseui.toastTypesMod.PlacementType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,97 +74,200 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object baseuiStrings {
   
   @js.native
+  sealed trait $colors extends StObject
+  inline def $colors: $colors = "$colors".asInstanceOf[$colors]
+  
+  @js.native
+  sealed trait $disabled extends StObject
+  inline def $disabled: $disabled = "$disabled".asInstanceOf[$disabled]
+  
+  @js.native
+  sealed trait $isFocusVisible extends StObject
+  inline def $isFocusVisible: $isFocusVisible = "$isFocusVisible".asInstanceOf[$isFocusVisible]
+  
+  @js.native
+  sealed trait $isLoading extends StObject
+  inline def $isLoading: $isLoading = "$isLoading".asInstanceOf[$isLoading]
+  
+  @js.native
+  sealed trait $isSelected extends StObject
+  inline def $isSelected: $isSelected = "$isSelected".asInstanceOf[$isSelected]
+  
+  @js.native
+  sealed trait $kind extends StObject
+  inline def $kind: $kind = "$kind".asInstanceOf[$kind]
+  
+  @js.native
+  sealed trait $shape extends StObject
+  inline def $shape: $shape = "$shape".asInstanceOf[$shape]
+  
+  @js.native
+  sealed trait $size extends StObject
+  inline def $size: $size = "$size".asInstanceOf[$size]
+  
+  @js.native
+  sealed trait $style extends StObject
+  inline def $style: $style = "$style".asInstanceOf[$style]
+  
+  @js.native
+  sealed trait $theme extends StObject
+  inline def $theme: $theme = "$theme".asInstanceOf[$theme]
+  
+  @js.native
+  sealed trait `-moz-initial`
+    extends StObject
+       with Globals
+  inline def `-moz-initial`: `-moz-initial` = "-moz-initial".asInstanceOf[`-moz-initial`]
+  
+  @js.native
+  sealed trait `0px 8px` extends StObject
+  inline def `0px 8px`: `0px 8px` = ("0px 8px").asInstanceOf[`0px 8px`]
+  
+  @js.native
   sealed trait `100Percentsign` extends StObject
   inline def `100Percentsign`: `100Percentsign` = "100%".asInstanceOf[`100Percentsign`]
+  
+  @js.native
+  sealed trait `10px` extends StObject
+  inline def `10px`: `10px` = "10px".asInstanceOf[`10px`]
   
   @js.native
   sealed trait `12` extends StObject
   inline def `12`: `12` = "12".asInstanceOf[`12`]
   
   @js.native
-  sealed trait `24` extends StObject
-  inline def `24`: `24` = "24".asInstanceOf[`24`]
+  sealed trait `16px` extends StObject
+  inline def `16px`: `16px` = "16px".asInstanceOf[`16px`]
   
   @js.native
-  sealed trait `400px` extends StObject
-  inline def `400px`: `400px` = "400px".asInstanceOf[`400px`]
+  sealed trait `20px` extends StObject
+  inline def `20px`: `20px` = "20px".asInstanceOf[`20px`]
+  
+  @js.native
+  sealed trait `24` extends StObject
+  inline def `24`: `24` = "24".asInstanceOf[`24`]
   
   @js.native
   sealed trait `500px` extends StObject
   inline def `500px`: `500px` = "500px".asInstanceOf[`500px`]
   
   @js.native
+  sealed trait `50Percentsign` extends StObject
+  inline def `50Percentsign`: `50Percentsign` = "50%".asInstanceOf[`50Percentsign`]
+  
+  @js.native
+  sealed trait `75Percentsign` extends StObject
+  inline def `75Percentsign`: `75Percentsign` = "75%".asInstanceOf[`75Percentsign`]
+  
+  @js.native
+  sealed trait `8px` extends StObject
+  inline def `8px`: `8px` = "8px".asInstanceOf[`8px`]
+  
+  @js.native
   sealed trait ACCOUNTING extends StObject
   inline def ACCOUNTING: ACCOUNTING = "ACCOUNTING".asInstanceOf[ACCOUNTING]
   
   @js.native
-  sealed trait AD extends StObject
+  sealed trait AD
+    extends StObject
+       with CountryIso
   inline def AD: AD = "AD".asInstanceOf[AD]
   
   @js.native
-  sealed trait AE extends StObject
+  sealed trait AE
+    extends StObject
+       with CountryIso
   inline def AE: AE = "AE".asInstanceOf[AE]
   
   @js.native
-  sealed trait AF extends StObject
+  sealed trait AF
+    extends StObject
+       with CountryIso
   inline def AF: AF = "AF".asInstanceOf[AF]
   
   @js.native
-  sealed trait AG extends StObject
+  sealed trait AG
+    extends StObject
+       with CountryIso
   inline def AG: AG = "AG".asInstanceOf[AG]
   
   @js.native
-  sealed trait AI extends StObject
+  sealed trait AI
+    extends StObject
+       with CountryIso
   inline def AI: AI = "AI".asInstanceOf[AI]
   
   @js.native
-  sealed trait AL extends StObject
+  sealed trait AL
+    extends StObject
+       with CountryIso
   inline def AL: AL = "AL".asInstanceOf[AL]
   
   @js.native
-  sealed trait AM extends StObject
+  sealed trait AM
+    extends StObject
+       with CountryIso
   inline def AM: AM = "AM".asInstanceOf[AM]
   
   @js.native
-  sealed trait ANCHOR extends StObject
+  sealed trait ANCHOR
+    extends StObject
+       with Columns
   inline def ANCHOR: ANCHOR = "ANCHOR".asInstanceOf[ANCHOR]
   
   @js.native
-  sealed trait AO extends StObject
+  sealed trait AO
+    extends StObject
+       with CountryIso
   inline def AO: AO = "AO".asInstanceOf[AO]
   
   @js.native
-  sealed trait AR extends StObject
+  sealed trait AR
+    extends StObject
+       with CountryIso
   inline def AR: AR = "AR".asInstanceOf[AR]
   
   @js.native
-  sealed trait AS extends StObject
+  sealed trait AS
+    extends StObject
+       with CountryIso
   inline def AS: AS = "AS".asInstanceOf[AS]
   
   @js.native
   sealed trait ASC
     extends StObject
-       with _SortDirectionsT
+       with SortDirections
+       with _SortDirection
   inline def ASC: ASC = "ASC".asInstanceOf[ASC]
   
   @js.native
-  sealed trait AT extends StObject
+  sealed trait AT
+    extends StObject
+       with CountryIso
   inline def AT: AT = "AT".asInstanceOf[AT]
   
   @js.native
-  sealed trait AU extends StObject
+  sealed trait AU
+    extends StObject
+       with CountryIso
   inline def AU: AU = "AU".asInstanceOf[AU]
   
   @js.native
-  sealed trait AW extends StObject
+  sealed trait AW
+    extends StObject
+       with CountryIso
   inline def AW: AW = "AW".asInstanceOf[AW]
   
   @js.native
-  sealed trait AX extends StObject
+  sealed trait AX
+    extends StObject
+       with CountryIso
   inline def AX: AX = "AX".asInstanceOf[AX]
   
   @js.native
-  sealed trait AZ extends StObject
+  sealed trait AZ
+    extends StObject
+       with CountryIso
   inline def AZ: AZ = "AZ".asInstanceOf[AZ]
   
   @js.native
@@ -187,83 +343,123 @@ object baseuiStrings {
   inline def `Azerbaijan LeftparenthesisAzərbaycanRightparenthesis`: `Azerbaijan LeftparenthesisAzərbaycanRightparenthesis` = ("Azerbaijan (Az\u0259rbaycan)").asInstanceOf[`Azerbaijan LeftparenthesisAzərbaycanRightparenthesis`]
   
   @js.native
-  sealed trait BA extends StObject
+  sealed trait BA
+    extends StObject
+       with CountryIso
   inline def BA: BA = "BA".asInstanceOf[BA]
   
   @js.native
-  sealed trait BB extends StObject
+  sealed trait BB
+    extends StObject
+       with CountryIso
   inline def BB: BB = "BB".asInstanceOf[BB]
   
   @js.native
-  sealed trait BD extends StObject
+  sealed trait BD
+    extends StObject
+       with CountryIso
   inline def BD: BD = "BD".asInstanceOf[BD]
   
   @js.native
-  sealed trait BE extends StObject
+  sealed trait BE
+    extends StObject
+       with CountryIso
   inline def BE: BE = "BE".asInstanceOf[BE]
   
   @js.native
-  sealed trait BF extends StObject
+  sealed trait BF
+    extends StObject
+       with CountryIso
   inline def BF: BF = "BF".asInstanceOf[BF]
   
   @js.native
-  sealed trait BG extends StObject
+  sealed trait BG
+    extends StObject
+       with CountryIso
   inline def BG: BG = "BG".asInstanceOf[BG]
   
   @js.native
-  sealed trait BH extends StObject
+  sealed trait BH
+    extends StObject
+       with CountryIso
   inline def BH: BH = "BH".asInstanceOf[BH]
   
   @js.native
-  sealed trait BI extends StObject
+  sealed trait BI
+    extends StObject
+       with CountryIso
   inline def BI: BI = "BI".asInstanceOf[BI]
   
   @js.native
-  sealed trait BJ extends StObject
+  sealed trait BJ
+    extends StObject
+       with CountryIso
   inline def BJ: BJ = "BJ".asInstanceOf[BJ]
   
   @js.native
-  sealed trait BL extends StObject
+  sealed trait BL
+    extends StObject
+       with CountryIso
   inline def BL: BL = "BL".asInstanceOf[BL]
   
   @js.native
-  sealed trait BM extends StObject
+  sealed trait BM
+    extends StObject
+       with CountryIso
   inline def BM: BM = "BM".asInstanceOf[BM]
   
   @js.native
-  sealed trait BN extends StObject
+  sealed trait BN
+    extends StObject
+       with CountryIso
   inline def BN: BN = "BN".asInstanceOf[BN]
   
   @js.native
-  sealed trait BO extends StObject
+  sealed trait BO
+    extends StObject
+       with CountryIso
   inline def BO: BO = "BO".asInstanceOf[BO]
   
   @js.native
-  sealed trait BOOLEAN extends StObject
+  sealed trait BOOLEAN
+    extends StObject
+       with Columns
   inline def BOOLEAN: BOOLEAN = "BOOLEAN".asInstanceOf[BOOLEAN]
   
   @js.native
-  sealed trait BR extends StObject
+  sealed trait BR
+    extends StObject
+       with CountryIso
   inline def BR: BR = "BR".asInstanceOf[BR]
   
   @js.native
-  sealed trait BS extends StObject
+  sealed trait BS
+    extends StObject
+       with CountryIso
   inline def BS: BS = "BS".asInstanceOf[BS]
   
   @js.native
-  sealed trait BT extends StObject
+  sealed trait BT
+    extends StObject
+       with CountryIso
   inline def BT: BT = "BT".asInstanceOf[BT]
   
   @js.native
-  sealed trait BW extends StObject
+  sealed trait BW
+    extends StObject
+       with CountryIso
   inline def BW: BW = "BW".asInstanceOf[BW]
   
   @js.native
-  sealed trait BY extends StObject
+  sealed trait BY
+    extends StObject
+       with CountryIso
   inline def BY: BY = "BY".asInstanceOf[BY]
   
   @js.native
-  sealed trait BZ extends StObject
+  sealed trait BZ
+    extends StObject
+       with CountryIso
   inline def BZ: BZ = "BZ".asInstanceOf[BZ]
   
   @js.native
@@ -351,31 +547,45 @@ object baseuiStrings {
   inline def `Burundi LeftparenthesisUburundiRightparenthesis`: `Burundi LeftparenthesisUburundiRightparenthesis` = ("Burundi (Uburundi)").asInstanceOf[`Burundi LeftparenthesisUburundiRightparenthesis`]
   
   @js.native
-  sealed trait CA extends StObject
+  sealed trait CA
+    extends StObject
+       with CountryIso
   inline def CA: CA = "CA".asInstanceOf[CA]
   
   @js.native
-  sealed trait CATEGORICAL extends StObject
+  sealed trait CATEGORICAL
+    extends StObject
+       with Columns
   inline def CATEGORICAL: CATEGORICAL = "CATEGORICAL".asInstanceOf[CATEGORICAL]
   
   @js.native
-  sealed trait CC extends StObject
+  sealed trait CC
+    extends StObject
+       with CountryIso
   inline def CC: CC = "CC".asInstanceOf[CC]
   
   @js.native
-  sealed trait CD extends StObject
+  sealed trait CD
+    extends StObject
+       with CountryIso
   inline def CD: CD = "CD".asInstanceOf[CD]
   
   @js.native
-  sealed trait CF extends StObject
+  sealed trait CF
+    extends StObject
+       with CountryIso
   inline def CF: CF = "CF".asInstanceOf[CF]
   
   @js.native
-  sealed trait CG extends StObject
+  sealed trait CG
+    extends StObject
+       with CountryIso
   inline def CG: CG = "CG".asInstanceOf[CG]
   
   @js.native
-  sealed trait CH extends StObject
+  sealed trait CH
+    extends StObject
+       with CountryIso
   inline def CH: CH = "CH".asInstanceOf[CH]
   
   @js.native
@@ -383,59 +593,87 @@ object baseuiStrings {
   inline def CHANGE: CHANGE = "CHANGE".asInstanceOf[CHANGE]
   
   @js.native
-  sealed trait CI extends StObject
+  sealed trait CI
+    extends StObject
+       with CountryIso
   inline def CI: CI = "CI".asInstanceOf[CI]
   
   @js.native
-  sealed trait CK extends StObject
+  sealed trait CK
+    extends StObject
+       with CountryIso
   inline def CK: CK = "CK".asInstanceOf[CK]
   
   @js.native
-  sealed trait CL extends StObject
+  sealed trait CL
+    extends StObject
+       with CountryIso
   inline def CL: CL = "CL".asInstanceOf[CL]
   
   @js.native
-  sealed trait CM extends StObject
+  sealed trait CM
+    extends StObject
+       with CountryIso
   inline def CM: CM = "CM".asInstanceOf[CM]
   
   @js.native
-  sealed trait CN extends StObject
+  sealed trait CN
+    extends StObject
+       with CountryIso
   inline def CN: CN = "CN".asInstanceOf[CN]
   
   @js.native
-  sealed trait CO extends StObject
+  sealed trait CO
+    extends StObject
+       with CountryIso
   inline def CO: CO = "CO".asInstanceOf[CO]
   
   @js.native
-  sealed trait CR extends StObject
+  sealed trait CR
+    extends StObject
+       with CountryIso
   inline def CR: CR = "CR".asInstanceOf[CR]
   
   @js.native
-  sealed trait CU extends StObject
+  sealed trait CU
+    extends StObject
+       with CountryIso
   inline def CU: CU = "CU".asInstanceOf[CU]
   
   @js.native
-  sealed trait CUSTOM extends StObject
+  sealed trait CUSTOM
+    extends StObject
+       with Columns
   inline def CUSTOM: CUSTOM = "CUSTOM".asInstanceOf[CUSTOM]
   
   @js.native
-  sealed trait CV extends StObject
+  sealed trait CV
+    extends StObject
+       with CountryIso
   inline def CV: CV = "CV".asInstanceOf[CV]
   
   @js.native
-  sealed trait CW extends StObject
+  sealed trait CW
+    extends StObject
+       with CountryIso
   inline def CW: CW = "CW".asInstanceOf[CW]
   
   @js.native
-  sealed trait CX extends StObject
+  sealed trait CX
+    extends StObject
+       with CountryIso
   inline def CX: CX = "CX".asInstanceOf[CX]
   
   @js.native
-  sealed trait CY extends StObject
+  sealed trait CY
+    extends StObject
+       with CountryIso
   inline def CY: CY = "CY".asInstanceOf[CY]
   
   @js.native
-  sealed trait CZ extends StObject
+  sealed trait CZ
+    extends StObject
+       with CountryIso
   inline def CZ: CZ = "CZ".asInstanceOf[CZ]
   
   @js.native
@@ -531,41 +769,58 @@ object baseuiStrings {
   inline def `Côte dRightsinglequotationmarkIvoire`: `Côte dRightsinglequotationmarkIvoire` = ("C\u00F4te d\u2019Ivoire").asInstanceOf[`Côte dRightsinglequotationmarkIvoire`]
   
   @js.native
-  sealed trait DATETIME extends StObject
+  sealed trait DATETIME
+    extends StObject
+       with Columns
   inline def DATETIME: DATETIME = "DATETIME".asInstanceOf[DATETIME]
   
   @js.native
-  sealed trait DE extends StObject
+  sealed trait DE
+    extends StObject
+       with CountryIso
   inline def DE: DE = "DE".asInstanceOf[DE]
   
   @js.native
-  sealed trait DEFAULT extends StObject
+  sealed trait DEFAULT
+    extends StObject
+       with Shape
   inline def DEFAULT: DEFAULT = "DEFAULT".asInstanceOf[DEFAULT]
   
   @js.native
   sealed trait DESC
     extends StObject
-       with _SortDirectionsT
+       with SortDirections
+       with _SortDirection
   inline def DESC: DESC = "DESC".asInstanceOf[DESC]
   
   @js.native
-  sealed trait DJ extends StObject
+  sealed trait DJ
+    extends StObject
+       with CountryIso
   inline def DJ: DJ = "DJ".asInstanceOf[DJ]
   
   @js.native
-  sealed trait DK extends StObject
+  sealed trait DK
+    extends StObject
+       with CountryIso
   inline def DK: DK = "DK".asInstanceOf[DK]
   
   @js.native
-  sealed trait DM extends StObject
+  sealed trait DM
+    extends StObject
+       with CountryIso
   inline def DM: DM = "DM".asInstanceOf[DM]
   
   @js.native
-  sealed trait DO extends StObject
+  sealed trait DO
+    extends StObject
+       with CountryIso
   inline def DO: DO = "DO".asInstanceOf[DO]
   
   @js.native
-  sealed trait DZ extends StObject
+  sealed trait DZ
+    extends StObject
+       with CountryIso
   inline def DZ: DZ = "DZ".asInstanceOf[DZ]
   
   @js.native
@@ -585,27 +840,39 @@ object baseuiStrings {
   inline def `Dominican Republic LeftparenthesisRepública DominicanaRightparenthesis`: `Dominican Republic LeftparenthesisRepública DominicanaRightparenthesis` = ("Dominican Republic (Rep\u00FAblica Dominicana)").asInstanceOf[`Dominican Republic LeftparenthesisRepública DominicanaRightparenthesis`]
   
   @js.native
-  sealed trait EC extends StObject
+  sealed trait EC
+    extends StObject
+       with CountryIso
   inline def EC: EC = "EC".asInstanceOf[EC]
   
   @js.native
-  sealed trait EE extends StObject
+  sealed trait EE
+    extends StObject
+       with CountryIso
   inline def EE: EE = "EE".asInstanceOf[EE]
   
   @js.native
-  sealed trait EG extends StObject
+  sealed trait EG
+    extends StObject
+       with CountryIso
   inline def EG: EG = "EG".asInstanceOf[EG]
   
   @js.native
-  sealed trait ER extends StObject
+  sealed trait ER
+    extends StObject
+       with CountryIso
   inline def ER: ER = "ER".asInstanceOf[ER]
   
   @js.native
-  sealed trait ES extends StObject
+  sealed trait ES
+    extends StObject
+       with CountryIso
   inline def ES: ES = "ES".asInstanceOf[ES]
   
   @js.native
-  sealed trait ET extends StObject
+  sealed trait ET
+    extends StObject
+       with CountryIso
   inline def ET: ET = "ET".asInstanceOf[ET]
   
   @js.native
@@ -619,6 +886,10 @@ object baseuiStrings {
   @js.native
   sealed trait `El Salvador` extends StObject
   inline def `El Salvador`: `El Salvador` = ("El Salvador").asInstanceOf[`El Salvador`]
+  
+  @js.native
+  sealed trait End extends StObject
+  inline def End: End = "End".asInstanceOf[End]
   
   @js.native
   sealed trait Enter extends StObject
@@ -645,27 +916,39 @@ object baseuiStrings {
   inline def Ethiopia: Ethiopia = "Ethiopia".asInstanceOf[Ethiopia]
   
   @js.native
-  sealed trait FI extends StObject
+  sealed trait FI
+    extends StObject
+       with CountryIso
   inline def FI: FI = "FI".asInstanceOf[FI]
   
   @js.native
-  sealed trait FJ extends StObject
+  sealed trait FJ
+    extends StObject
+       with CountryIso
   inline def FJ: FJ = "FJ".asInstanceOf[FJ]
   
   @js.native
-  sealed trait FK extends StObject
+  sealed trait FK
+    extends StObject
+       with CountryIso
   inline def FK: FK = "FK".asInstanceOf[FK]
   
   @js.native
-  sealed trait FM extends StObject
+  sealed trait FM
+    extends StObject
+       with CountryIso
   inline def FM: FM = "FM".asInstanceOf[FM]
   
   @js.native
-  sealed trait FO extends StObject
+  sealed trait FO
+    extends StObject
+       with CountryIso
   inline def FO: FO = "FO".asInstanceOf[FO]
   
   @js.native
-  sealed trait FR extends StObject
+  sealed trait FR
+    extends StObject
+       with CountryIso
   inline def FR: FR = "FR".asInstanceOf[FR]
   
   @js.native
@@ -697,75 +980,111 @@ object baseuiStrings {
   inline def `French Polynesia LeftparenthesisPolynésie françaiseRightparenthesis`: `French Polynesia LeftparenthesisPolynésie françaiseRightparenthesis` = ("French Polynesia (Polyn\u00E9sie fran\u00E7aise)").asInstanceOf[`French Polynesia LeftparenthesisPolynésie françaiseRightparenthesis`]
   
   @js.native
-  sealed trait GA extends StObject
+  sealed trait GA
+    extends StObject
+       with CountryIso
   inline def GA: GA = "GA".asInstanceOf[GA]
   
   @js.native
-  sealed trait GB extends StObject
+  sealed trait GB
+    extends StObject
+       with CountryIso
   inline def GB: GB = "GB".asInstanceOf[GB]
   
   @js.native
-  sealed trait GD extends StObject
+  sealed trait GD
+    extends StObject
+       with CountryIso
   inline def GD: GD = "GD".asInstanceOf[GD]
   
   @js.native
-  sealed trait GE extends StObject
+  sealed trait GE
+    extends StObject
+       with CountryIso
   inline def GE: GE = "GE".asInstanceOf[GE]
   
   @js.native
-  sealed trait GF extends StObject
+  sealed trait GF
+    extends StObject
+       with CountryIso
   inline def GF: GF = "GF".asInstanceOf[GF]
   
   @js.native
-  sealed trait GG extends StObject
+  sealed trait GG
+    extends StObject
+       with CountryIso
   inline def GG: GG = "GG".asInstanceOf[GG]
   
   @js.native
-  sealed trait GH extends StObject
+  sealed trait GH
+    extends StObject
+       with CountryIso
   inline def GH: GH = "GH".asInstanceOf[GH]
   
   @js.native
-  sealed trait GI extends StObject
+  sealed trait GI
+    extends StObject
+       with CountryIso
   inline def GI: GI = "GI".asInstanceOf[GI]
   
   @js.native
-  sealed trait GL extends StObject
+  sealed trait GL
+    extends StObject
+       with CountryIso
   inline def GL: GL = "GL".asInstanceOf[GL]
   
   @js.native
-  sealed trait GM extends StObject
+  sealed trait GM
+    extends StObject
+       with CountryIso
   inline def GM: GM = "GM".asInstanceOf[GM]
   
   @js.native
-  sealed trait GN extends StObject
+  sealed trait GN
+    extends StObject
+       with CountryIso
   inline def GN: GN = "GN".asInstanceOf[GN]
   
   @js.native
-  sealed trait GP extends StObject
+  sealed trait GP
+    extends StObject
+       with CountryIso
   inline def GP: GP = "GP".asInstanceOf[GP]
   
   @js.native
-  sealed trait GQ extends StObject
+  sealed trait GQ
+    extends StObject
+       with CountryIso
   inline def GQ: GQ = "GQ".asInstanceOf[GQ]
   
   @js.native
-  sealed trait GR extends StObject
+  sealed trait GR
+    extends StObject
+       with CountryIso
   inline def GR: GR = "GR".asInstanceOf[GR]
   
   @js.native
-  sealed trait GT extends StObject
+  sealed trait GT
+    extends StObject
+       with CountryIso
   inline def GT: GT = "GT".asInstanceOf[GT]
   
   @js.native
-  sealed trait GU extends StObject
+  sealed trait GU
+    extends StObject
+       with CountryIso
   inline def GU: GU = "GU".asInstanceOf[GU]
   
   @js.native
-  sealed trait GW extends StObject
+  sealed trait GW
+    extends StObject
+       with CountryIso
   inline def GW: GW = "GW".asInstanceOf[GW]
   
   @js.native
-  sealed trait GY extends StObject
+  sealed trait GY
+    extends StObject
+       with CountryIso
   inline def GY: GY = "GY".asInstanceOf[GY]
   
   @js.native
@@ -833,28 +1152,46 @@ object baseuiStrings {
   inline def Guyana: Guyana = "Guyana".asInstanceOf[Guyana]
   
   @js.native
-  sealed trait HK extends StObject
+  sealed trait HALF extends StObject
+  inline def HALF: HALF = "HALF".asInstanceOf[HALF]
+  
+  @js.native
+  sealed trait HK
+    extends StObject
+       with CountryIso
   inline def HK: HK = "HK".asInstanceOf[HK]
   
   @js.native
-  sealed trait HN extends StObject
+  sealed trait HN
+    extends StObject
+       with CountryIso
   inline def HN: HN = "HN".asInstanceOf[HN]
   
   @js.native
-  sealed trait HR extends StObject
+  sealed trait HR
+    extends StObject
+       with CountryIso
   inline def HR: HR = "HR".asInstanceOf[HR]
   
   @js.native
-  sealed trait HT extends StObject
+  sealed trait HT
+    extends StObject
+       with CountryIso
   inline def HT: HT = "HT".asInstanceOf[HT]
   
   @js.native
-  sealed trait HU extends StObject
+  sealed trait HU
+    extends StObject
+       with CountryIso
   inline def HU: HU = "HU".asInstanceOf[HU]
   
   @js.native
   sealed trait Haiti extends StObject
   inline def Haiti: Haiti = "Haiti".asInstanceOf[Haiti]
+  
+  @js.native
+  sealed trait Home extends StObject
+  inline def Home: Home = "Home".asInstanceOf[Home]
   
   @js.native
   sealed trait Honduras extends StObject
@@ -869,43 +1206,63 @@ object baseuiStrings {
   inline def `Hungary LeftparenthesisMagyarországRightparenthesis`: `Hungary LeftparenthesisMagyarországRightparenthesis` = ("Hungary (Magyarorsz\u00E1g)").asInstanceOf[`Hungary LeftparenthesisMagyarországRightparenthesis`]
   
   @js.native
-  sealed trait ID extends StObject
+  sealed trait ID
+    extends StObject
+       with CountryIso
   inline def ID: ID = "ID".asInstanceOf[ID]
   
   @js.native
-  sealed trait IE extends StObject
+  sealed trait IE
+    extends StObject
+       with CountryIso
   inline def IE: IE = "IE".asInstanceOf[IE]
   
   @js.native
-  sealed trait IL extends StObject
+  sealed trait IL
+    extends StObject
+       with CountryIso
   inline def IL: IL = "IL".asInstanceOf[IL]
   
   @js.native
-  sealed trait IM extends StObject
+  sealed trait IM
+    extends StObject
+       with CountryIso
   inline def IM: IM = "IM".asInstanceOf[IM]
   
   @js.native
-  sealed trait IN extends StObject
+  sealed trait IN
+    extends StObject
+       with CountryIso
   inline def IN: IN = "IN".asInstanceOf[IN]
   
   @js.native
-  sealed trait IO extends StObject
+  sealed trait IO
+    extends StObject
+       with CountryIso
   inline def IO: IO = "IO".asInstanceOf[IO]
   
   @js.native
-  sealed trait IQ extends StObject
+  sealed trait IQ
+    extends StObject
+       with CountryIso
   inline def IQ: IQ = "IQ".asInstanceOf[IQ]
   
   @js.native
-  sealed trait IR extends StObject
+  sealed trait IR
+    extends StObject
+       with CountryIso
   inline def IR: IR = "IR".asInstanceOf[IR]
   
   @js.native
-  sealed trait IS extends StObject
+  sealed trait IS
+    extends StObject
+       with CountryIso
   inline def IS: IS = "IS".asInstanceOf[IS]
   
   @js.native
-  sealed trait IT extends StObject
+  sealed trait IT
+    extends StObject
+       with CountryIso
   inline def IT: IT = "IT".asInstanceOf[IT]
   
   @js.native
@@ -945,19 +1302,27 @@ object baseuiStrings {
   inline def `Italy LeftparenthesisItaliaRightparenthesis`: `Italy LeftparenthesisItaliaRightparenthesis` = ("Italy (Italia)").asInstanceOf[`Italy LeftparenthesisItaliaRightparenthesis`]
   
   @js.native
-  sealed trait JE extends StObject
+  sealed trait JE
+    extends StObject
+       with CountryIso
   inline def JE: JE = "JE".asInstanceOf[JE]
   
   @js.native
-  sealed trait JM extends StObject
+  sealed trait JM
+    extends StObject
+       with CountryIso
   inline def JM: JM = "JM".asInstanceOf[JM]
   
   @js.native
-  sealed trait JO extends StObject
+  sealed trait JO
+    extends StObject
+       with CountryIso
   inline def JO: JO = "JO".asInstanceOf[JO]
   
   @js.native
-  sealed trait JP extends StObject
+  sealed trait JP
+    extends StObject
+       with CountryIso
   inline def JP: JP = "JP".asInstanceOf[JP]
   
   @js.native
@@ -977,47 +1342,69 @@ object baseuiStrings {
   inline def `Jordan Leftparenthesis‫الأردن‬‎Rightparenthesis`: `Jordan Leftparenthesis‫الأردن‬‎Rightparenthesis` = ("Jordan (\u202B\u0627\u0644\u0623\u0631\u062F\u0646\u202C\u200E)").asInstanceOf[`Jordan Leftparenthesis‫الأردن‬‎Rightparenthesis`]
   
   @js.native
-  sealed trait KE extends StObject
+  sealed trait KE
+    extends StObject
+       with CountryIso
   inline def KE: KE = "KE".asInstanceOf[KE]
   
   @js.native
-  sealed trait KG extends StObject
+  sealed trait KG
+    extends StObject
+       with CountryIso
   inline def KG: KG = "KG".asInstanceOf[KG]
   
   @js.native
-  sealed trait KH extends StObject
+  sealed trait KH
+    extends StObject
+       with CountryIso
   inline def KH: KH = "KH".asInstanceOf[KH]
   
   @js.native
-  sealed trait KI extends StObject
+  sealed trait KI
+    extends StObject
+       with CountryIso
   inline def KI: KI = "KI".asInstanceOf[KI]
   
   @js.native
-  sealed trait KM extends StObject
+  sealed trait KM
+    extends StObject
+       with CountryIso
   inline def KM: KM = "KM".asInstanceOf[KM]
   
   @js.native
-  sealed trait KN extends StObject
+  sealed trait KN
+    extends StObject
+       with CountryIso
   inline def KN: KN = "KN".asInstanceOf[KN]
   
   @js.native
-  sealed trait KP extends StObject
+  sealed trait KP
+    extends StObject
+       with CountryIso
   inline def KP: KP = "KP".asInstanceOf[KP]
   
   @js.native
-  sealed trait KR extends StObject
+  sealed trait KR
+    extends StObject
+       with CountryIso
   inline def KR: KR = "KR".asInstanceOf[KR]
   
   @js.native
-  sealed trait KW extends StObject
+  sealed trait KW
+    extends StObject
+       with CountryIso
   inline def KW: KW = "KW".asInstanceOf[KW]
   
   @js.native
-  sealed trait KY extends StObject
+  sealed trait KY
+    extends StObject
+       with CountryIso
   inline def KY: KY = "KY".asInstanceOf[KY]
   
   @js.native
-  sealed trait KZ extends StObject
+  sealed trait KZ
+    extends StObject
+       with CountryIso
   inline def KZ: KZ = "KZ".asInstanceOf[KZ]
   
   @js.native
@@ -1045,57 +1432,75 @@ object baseuiStrings {
   inline def `Kyrgyzstan LeftparenthesisКыргызстанRightparenthesis`: `Kyrgyzstan LeftparenthesisКыргызстанRightparenthesis` = ("Kyrgyzstan (\u041A\u044B\u0440\u0433\u044B\u0437\u0441\u0442\u0430\u043D)").asInstanceOf[`Kyrgyzstan LeftparenthesisКыргызстанRightparenthesis`]
   
   @js.native
-  sealed trait L extends StObject
-  inline def L: L = "L".asInstanceOf[L]
-  
-  @js.native
-  sealed trait LA extends StObject
+  sealed trait LA
+    extends StObject
+       with CountryIso
   inline def LA: LA = "LA".asInstanceOf[LA]
   
   @js.native
   sealed trait LARGE
     extends StObject
-       with ArtworkSizesT
+       with ArtworkSizes
   inline def LARGE: LARGE = "LARGE".asInstanceOf[LARGE]
   
   @js.native
-  sealed trait LB extends StObject
+  sealed trait LB
+    extends StObject
+       with CountryIso
   inline def LB: LB = "LB".asInstanceOf[LB]
   
   @js.native
-  sealed trait LC extends StObject
+  sealed trait LC
+    extends StObject
+       with CountryIso
   inline def LC: LC = "LC".asInstanceOf[LC]
   
   @js.native
-  sealed trait LI extends StObject
+  sealed trait LI
+    extends StObject
+       with CountryIso
   inline def LI: LI = "LI".asInstanceOf[LI]
   
   @js.native
-  sealed trait LK extends StObject
+  sealed trait LK
+    extends StObject
+       with CountryIso
   inline def LK: LK = "LK".asInstanceOf[LK]
   
   @js.native
-  sealed trait LR extends StObject
+  sealed trait LR
+    extends StObject
+       with CountryIso
   inline def LR: LR = "LR".asInstanceOf[LR]
   
   @js.native
-  sealed trait LS extends StObject
+  sealed trait LS
+    extends StObject
+       with CountryIso
   inline def LS: LS = "LS".asInstanceOf[LS]
   
   @js.native
-  sealed trait LT extends StObject
+  sealed trait LT
+    extends StObject
+       with CountryIso
   inline def LT: LT = "LT".asInstanceOf[LT]
   
   @js.native
-  sealed trait LU extends StObject
+  sealed trait LU
+    extends StObject
+       with CountryIso
   inline def LU: LU = "LU".asInstanceOf[LU]
   
   @js.native
-  sealed trait LV extends StObject
+  sealed trait LV
+    extends StObject
+       with CountryIso
   inline def LV: LV = "LV".asInstanceOf[LV]
   
   @js.native
-  sealed trait LY extends StObject
+  sealed trait LY
+    extends StObject
+       with CountryIso
   inline def LY: LY = "LY".asInstanceOf[LY]
   
   @js.native
@@ -1135,110 +1540,156 @@ object baseuiStrings {
   inline def Luxembourg: Luxembourg = "Luxembourg".asInstanceOf[Luxembourg]
   
   @js.native
-  sealed trait MA extends StObject
+  sealed trait MA
+    extends StObject
+       with CountryIso
   inline def MA: MA = "MA".asInstanceOf[MA]
   
   @js.native
-  sealed trait MC extends StObject
+  sealed trait MC
+    extends StObject
+       with CountryIso
   inline def MC: MC = "MC".asInstanceOf[MC]
   
   @js.native
-  sealed trait MD extends StObject
+  sealed trait MD
+    extends StObject
+       with CountryIso
   inline def MD: MD = "MD".asInstanceOf[MD]
   
   @js.native
-  sealed trait ME extends StObject
+  sealed trait ME
+    extends StObject
+       with CountryIso
   inline def ME: ME = "ME".asInstanceOf[ME]
   
   @js.native
   sealed trait MEDIUM
     extends StObject
-       with ArtworkSizesT
+       with ArtworkSizes
   inline def MEDIUM: MEDIUM = "MEDIUM".asInstanceOf[MEDIUM]
   
   @js.native
-  sealed trait MF extends StObject
+  sealed trait MF
+    extends StObject
+       with CountryIso
   inline def MF: MF = "MF".asInstanceOf[MF]
   
   @js.native
-  sealed trait MG extends StObject
+  sealed trait MG
+    extends StObject
+       with CountryIso
   inline def MG: MG = "MG".asInstanceOf[MG]
   
   @js.native
-  sealed trait MH extends StObject
+  sealed trait MH
+    extends StObject
+       with CountryIso
   inline def MH: MH = "MH".asInstanceOf[MH]
   
   @js.native
-  sealed trait MK extends StObject
+  sealed trait MK
+    extends StObject
+       with CountryIso
   inline def MK: MK = "MK".asInstanceOf[MK]
   
   @js.native
-  sealed trait ML extends StObject
+  sealed trait ML
+    extends StObject
+       with CountryIso
   inline def ML: ML = "ML".asInstanceOf[ML]
   
   @js.native
-  sealed trait MM extends StObject
+  sealed trait MM
+    extends StObject
+       with CountryIso
   inline def MM: MM = "MM".asInstanceOf[MM]
   
   @js.native
-  sealed trait MN extends StObject
+  sealed trait MN
+    extends StObject
+       with CountryIso
   inline def MN: MN = "MN".asInstanceOf[MN]
   
   @js.native
-  sealed trait MO extends StObject
+  sealed trait MO
+    extends StObject
+       with CountryIso
   inline def MO: MO = "MO".asInstanceOf[MO]
   
   @js.native
-  sealed trait MP extends StObject
+  sealed trait MONTH extends StObject
+  inline def MONTH: MONTH = "MONTH".asInstanceOf[MONTH]
+  
+  @js.native
+  sealed trait MP
+    extends StObject
+       with CountryIso
   inline def MP: MP = "MP".asInstanceOf[MP]
   
   @js.native
-  sealed trait MQ extends StObject
+  sealed trait MQ
+    extends StObject
+       with CountryIso
   inline def MQ: MQ = "MQ".asInstanceOf[MQ]
   
   @js.native
-  sealed trait MR extends StObject
+  sealed trait MR
+    extends StObject
+       with CountryIso
   inline def MR: MR = "MR".asInstanceOf[MR]
   
   @js.native
-  sealed trait MS extends StObject
+  sealed trait MS
+    extends StObject
+       with CountryIso
   inline def MS: MS = "MS".asInstanceOf[MS]
   
   @js.native
-  sealed trait MT extends StObject
+  sealed trait MT
+    extends StObject
+       with CountryIso
   inline def MT: MT = "MT".asInstanceOf[MT]
   
   @js.native
-  sealed trait MU extends StObject
+  sealed trait MU
+    extends StObject
+       with CountryIso
   inline def MU: MU = "MU".asInstanceOf[MU]
   
   @js.native
-  sealed trait MV extends StObject
+  sealed trait MV
+    extends StObject
+       with CountryIso
   inline def MV: MV = "MV".asInstanceOf[MV]
   
   @js.native
-  sealed trait MW extends StObject
+  sealed trait MW
+    extends StObject
+       with CountryIso
   inline def MW: MW = "MW".asInstanceOf[MW]
   
   @js.native
-  sealed trait MX extends StObject
+  sealed trait MX
+    extends StObject
+       with CountryIso
   inline def MX: MX = "MX".asInstanceOf[MX]
   
   @js.native
-  sealed trait MY extends StObject
+  sealed trait MY
+    extends StObject
+       with CountryIso
   inline def MY: MY = "MY".asInstanceOf[MY]
   
   @js.native
-  sealed trait MZ extends StObject
+  sealed trait MZ
+    extends StObject
+       with CountryIso
   inline def MZ: MZ = "MZ".asInstanceOf[MZ]
   
   @js.native
   sealed trait `Macau Leftparenthesis澳門Rightparenthesis` extends StObject
   inline def `Macau Leftparenthesis澳門Rightparenthesis`: `Macau Leftparenthesis澳門Rightparenthesis` = ("Macau (\u6FB3\u9580)").asInstanceOf[`Macau Leftparenthesis澳門Rightparenthesis`]
-  
-  @js.native
-  sealed trait `Macedonia LeftparenthesisFYROMRightparenthesis LeftparenthesisМакедонијаRightparenthesis` extends StObject
-  inline def `Macedonia LeftparenthesisFYROMRightparenthesis LeftparenthesisМакедонијаRightparenthesis`: `Macedonia LeftparenthesisFYROMRightparenthesis LeftparenthesisМакедонијаRightparenthesis` = ("Macedonia (FYROM) (\u041C\u0430\u043A\u0435\u0434\u043E\u043D\u0438\u0458\u0430)").asInstanceOf[`Macedonia LeftparenthesisFYROMRightparenthesis LeftparenthesisМакедонијаRightparenthesis`]
   
   @js.native
   sealed trait `Madagascar LeftparenthesisMadagasikaraRightparenthesis` extends StObject
@@ -1325,55 +1776,81 @@ object baseuiStrings {
   inline def `Myanmar LeftparenthesisBurmaRightparenthesis Leftparenthesisမြန်မာRightparenthesis`: `Myanmar LeftparenthesisBurmaRightparenthesis Leftparenthesisမြန်မာRightparenthesis` = ("Myanmar (Burma) (\u1019\u103C\u1014\u103A\u1019\u102C)").asInstanceOf[`Myanmar LeftparenthesisBurmaRightparenthesis Leftparenthesisမြန်မာRightparenthesis`]
   
   @js.native
-  sealed trait NA extends StObject
+  sealed trait NA
+    extends StObject
+       with CountryIso
   inline def NA: NA = "NA".asInstanceOf[NA]
   
   @js.native
-  sealed trait NC extends StObject
+  sealed trait NC
+    extends StObject
+       with CountryIso
   inline def NC: NC = "NC".asInstanceOf[NC]
   
   @js.native
-  sealed trait NE extends StObject
+  sealed trait NE
+    extends StObject
+       with CountryIso
   inline def NE: NE = "NE".asInstanceOf[NE]
   
   @js.native
-  sealed trait NF extends StObject
+  sealed trait NF
+    extends StObject
+       with CountryIso
   inline def NF: NF = "NF".asInstanceOf[NF]
   
   @js.native
-  sealed trait NG extends StObject
+  sealed trait NG
+    extends StObject
+       with CountryIso
   inline def NG: NG = "NG".asInstanceOf[NG]
   
   @js.native
-  sealed trait NI extends StObject
+  sealed trait NI
+    extends StObject
+       with CountryIso
   inline def NI: NI = "NI".asInstanceOf[NI]
   
   @js.native
-  sealed trait NL extends StObject
+  sealed trait NL
+    extends StObject
+       with CountryIso
   inline def NL: NL = "NL".asInstanceOf[NL]
   
   @js.native
-  sealed trait NO extends StObject
+  sealed trait NO
+    extends StObject
+       with CountryIso
   inline def NO: NO = "NO".asInstanceOf[NO]
   
   @js.native
-  sealed trait NP extends StObject
+  sealed trait NP
+    extends StObject
+       with CountryIso
   inline def NP: NP = "NP".asInstanceOf[NP]
   
   @js.native
-  sealed trait NR extends StObject
+  sealed trait NR
+    extends StObject
+       with CountryIso
   inline def NR: NR = "NR".asInstanceOf[NR]
   
   @js.native
-  sealed trait NU extends StObject
+  sealed trait NU
+    extends StObject
+       with CountryIso
   inline def NU: NU = "NU".asInstanceOf[NU]
   
   @js.native
-  sealed trait NUMERICAL extends StObject
+  sealed trait NUMERICAL
+    extends StObject
+       with Columns
   inline def NUMERICAL: NUMERICAL = "NUMERICAL".asInstanceOf[NUMERICAL]
   
   @js.native
-  sealed trait NZ extends StObject
+  sealed trait NZ
+    extends StObject
+       with CountryIso
   inline def NZ: NZ = "NZ".asInstanceOf[NZ]
   
   @js.native
@@ -1425,6 +1902,10 @@ object baseuiStrings {
   inline def `North Korea Leftparenthesis조선 민주주의 인민 공화국Rightparenthesis`: `North Korea Leftparenthesis조선 민주주의 인민 공화국Rightparenthesis` = ("North Korea (\uC870\uC120 \uBBFC\uC8FC\uC8FC\uC758 \uC778\uBBFC \uACF5\uD654\uAD6D)").asInstanceOf[`North Korea Leftparenthesis조선 민주주의 인민 공화국Rightparenthesis`]
   
   @js.native
+  sealed trait `North Macedonia LeftparenthesisFYROMRightparenthesis LeftparenthesisМакедонијаRightparenthesis` extends StObject
+  inline def `North Macedonia LeftparenthesisFYROMRightparenthesis LeftparenthesisМакедонијаRightparenthesis`: `North Macedonia LeftparenthesisFYROMRightparenthesis LeftparenthesisМакедонијаRightparenthesis` = ("North Macedonia (FYROM) (\u041C\u0430\u043A\u0435\u0434\u043E\u043D\u0438\u0458\u0430)").asInstanceOf[`North Macedonia LeftparenthesisFYROMRightparenthesis LeftparenthesisМакедонијаRightparenthesis`]
+  
+  @js.native
   sealed trait `Northern Mariana Islands` extends StObject
   inline def `Northern Mariana Islands`: `Northern Mariana Islands` = ("Northern Mariana Islands").asInstanceOf[`Northern Mariana Islands`]
   
@@ -1433,7 +1914,9 @@ object baseuiStrings {
   inline def `Norway LeftparenthesisNorgeRightparenthesis`: `Norway LeftparenthesisNorgeRightparenthesis` = ("Norway (Norge)").asInstanceOf[`Norway LeftparenthesisNorgeRightparenthesis`]
   
   @js.native
-  sealed trait OM extends StObject
+  sealed trait OM
+    extends StObject
+       with CountryIso
   inline def OM: OM = "OM".asInstanceOf[OM]
   
   @js.native
@@ -1441,11 +1924,15 @@ object baseuiStrings {
   inline def `Oman Leftparenthesis‫عُمان‬‎Rightparenthesis`: `Oman Leftparenthesis‫عُمان‬‎Rightparenthesis` = ("Oman (\u202B\u0639\u064F\u0645\u0627\u0646\u202C\u200E)").asInstanceOf[`Oman Leftparenthesis‫عُمان‬‎Rightparenthesis`]
   
   @js.native
-  sealed trait PA extends StObject
+  sealed trait PA
+    extends StObject
+       with CountryIso
   inline def PA: PA = "PA".asInstanceOf[PA]
   
   @js.native
-  sealed trait PE extends StObject
+  sealed trait PE
+    extends StObject
+       with CountryIso
   inline def PE: PE = "PE".asInstanceOf[PE]
   
   @js.native
@@ -1453,47 +1940,69 @@ object baseuiStrings {
   inline def PERCENTAGE: PERCENTAGE = "PERCENTAGE".asInstanceOf[PERCENTAGE]
   
   @js.native
-  sealed trait PF extends StObject
+  sealed trait PF
+    extends StObject
+       with CountryIso
   inline def PF: PF = "PF".asInstanceOf[PF]
   
   @js.native
-  sealed trait PG extends StObject
+  sealed trait PG
+    extends StObject
+       with CountryIso
   inline def PG: PG = "PG".asInstanceOf[PG]
   
   @js.native
-  sealed trait PH extends StObject
+  sealed trait PH
+    extends StObject
+       with CountryIso
   inline def PH: PH = "PH".asInstanceOf[PH]
   
   @js.native
-  sealed trait PK extends StObject
+  sealed trait PK
+    extends StObject
+       with CountryIso
   inline def PK: PK = "PK".asInstanceOf[PK]
   
   @js.native
-  sealed trait PL extends StObject
+  sealed trait PL
+    extends StObject
+       with CountryIso
   inline def PL: PL = "PL".asInstanceOf[PL]
   
   @js.native
-  sealed trait PM extends StObject
+  sealed trait PM
+    extends StObject
+       with CountryIso
   inline def PM: PM = "PM".asInstanceOf[PM]
   
   @js.native
-  sealed trait PR extends StObject
+  sealed trait PR
+    extends StObject
+       with CountryIso
   inline def PR: PR = "PR".asInstanceOf[PR]
   
   @js.native
-  sealed trait PS extends StObject
+  sealed trait PS
+    extends StObject
+       with CountryIso
   inline def PS: PS = "PS".asInstanceOf[PS]
   
   @js.native
-  sealed trait PT extends StObject
+  sealed trait PT
+    extends StObject
+       with CountryIso
   inline def PT: PT = "PT".asInstanceOf[PT]
   
   @js.native
-  sealed trait PW extends StObject
+  sealed trait PW
+    extends StObject
+       with CountryIso
   inline def PW: PW = "PW".asInstanceOf[PW]
   
   @js.native
-  sealed trait PY extends StObject
+  sealed trait PY
+    extends StObject
+       with CountryIso
   inline def PY: PY = "PY".asInstanceOf[PY]
   
   @js.native
@@ -1519,6 +2028,12 @@ object baseuiStrings {
   @js.native
   sealed trait Paraguay extends StObject
   inline def Paraguay: Paraguay = "Paraguay".asInstanceOf[Paraguay]
+  
+  @js.native
+  sealed trait Percentsign
+    extends StObject
+       with CSSLengthUnit
+  inline def Percentsign: Percentsign = "%".asInstanceOf[Percentsign]
   
   @js.native
   sealed trait `Peru LeftparenthesisPerúRightparenthesis` extends StObject
@@ -2441,31 +2956,77 @@ object baseuiStrings {
   inline def `Puerto Rico`: `Puerto Rico` = ("Puerto Rico").asInstanceOf[`Puerto Rico`]
   
   @js.native
-  sealed trait QA extends StObject
+  sealed trait Q
+    extends StObject
+       with CSSLengthUnit
+  inline def Q: Q = "Q".asInstanceOf[Q]
+  
+  @js.native
+  sealed trait QA
+    extends StObject
+       with CountryIso
   inline def QA: QA = "QA".asInstanceOf[QA]
+  
+  @js.native
+  sealed trait QUARTER extends StObject
+  inline def QUARTER: QUARTER = "QUARTER".asInstanceOf[QUARTER]
   
   @js.native
   sealed trait `Qatar Leftparenthesis‫قطر‬‎Rightparenthesis` extends StObject
   inline def `Qatar Leftparenthesis‫قطر‬‎Rightparenthesis`: `Qatar Leftparenthesis‫قطر‬‎Rightparenthesis` = ("Qatar (\u202B\u0642\u0637\u0631\u202C\u200E)").asInstanceOf[`Qatar Leftparenthesis‫قطر‬‎Rightparenthesis`]
   
   @js.native
-  sealed trait RE extends StObject
+  sealed trait RANGE_DATE extends StObject
+  inline def RANGE_DATE: RANGE_DATE = "RANGE_DATE".asInstanceOf[RANGE_DATE]
+  
+  @js.native
+  sealed trait RANGE_DATETIME extends StObject
+  inline def RANGE_DATETIME: RANGE_DATETIME = "RANGE_DATETIME".asInstanceOf[RANGE_DATETIME]
+  
+  @js.native
+  sealed trait RANGE_TIME extends StObject
+  inline def RANGE_TIME: RANGE_TIME = "RANGE_TIME".asInstanceOf[RANGE_TIME]
+  
+  @js.native
+  sealed trait RE
+    extends StObject
+       with CountryIso
   inline def RE: RE = "RE".asInstanceOf[RE]
   
   @js.native
-  sealed trait RO extends StObject
+  sealed trait RO
+    extends StObject
+       with CountryIso
   inline def RO: RO = "RO".asInstanceOf[RO]
   
   @js.native
-  sealed trait RS extends StObject
+  sealed trait ROUND
+    extends StObject
+       with Shape
+  inline def ROUND: ROUND = "ROUND".asInstanceOf[ROUND]
+  
+  @js.native
+  sealed trait ROW_INDEX
+    extends StObject
+       with Columns
+  inline def ROW_INDEX: ROW_INDEX = "ROW_INDEX".asInstanceOf[ROW_INDEX]
+  
+  @js.native
+  sealed trait RS
+    extends StObject
+       with CountryIso
   inline def RS: RS = "RS".asInstanceOf[RS]
   
   @js.native
-  sealed trait RU extends StObject
+  sealed trait RU
+    extends StObject
+       with CountryIso
   inline def RU: RU = "RU".asInstanceOf[RU]
   
   @js.native
-  sealed trait RW extends StObject
+  sealed trait RW
+    extends StObject
+       with CountryIso
   inline def RW: RW = "RW".asInstanceOf[RW]
   
   @js.native
@@ -2485,97 +3046,141 @@ object baseuiStrings {
   inline def `Réunion LeftparenthesisLa RéunionRightparenthesis`: `Réunion LeftparenthesisLa RéunionRightparenthesis` = ("R\u00E9union (La R\u00E9union)").asInstanceOf[`Réunion LeftparenthesisLa RéunionRightparenthesis`]
   
   @js.native
-  sealed trait SA extends StObject
+  sealed trait SA
+    extends StObject
+       with CountryIso
   inline def SA: SA = "SA".asInstanceOf[SA]
   
   @js.native
-  sealed trait SB extends StObject
+  sealed trait SB
+    extends StObject
+       with CountryIso
   inline def SB: SB = "SB".asInstanceOf[SB]
   
   @js.native
-  sealed trait SC extends StObject
+  sealed trait SC
+    extends StObject
+       with CountryIso
   inline def SC: SC = "SC".asInstanceOf[SC]
   
   @js.native
-  sealed trait SD extends StObject
+  sealed trait SD
+    extends StObject
+       with CountryIso
   inline def SD: SD = "SD".asInstanceOf[SD]
   
   @js.native
-  sealed trait SE extends StObject
+  sealed trait SE
+    extends StObject
+       with CountryIso
   inline def SE: SE = "SE".asInstanceOf[SE]
   
   @js.native
-  sealed trait SG extends StObject
+  sealed trait SG
+    extends StObject
+       with CountryIso
   inline def SG: SG = "SG".asInstanceOf[SG]
   
   @js.native
-  sealed trait SH extends StObject
+  sealed trait SH
+    extends StObject
+       with CountryIso
   inline def SH: SH = "SH".asInstanceOf[SH]
   
   @js.native
-  sealed trait SI extends StObject
+  sealed trait SI
+    extends StObject
+       with CountryIso
   inline def SI: SI = "SI".asInstanceOf[SI]
   
   @js.native
-  sealed trait SJ extends StObject
+  sealed trait SJ
+    extends StObject
+       with CountryIso
   inline def SJ: SJ = "SJ".asInstanceOf[SJ]
   
   @js.native
-  sealed trait SK extends StObject
+  sealed trait SK
+    extends StObject
+       with CountryIso
   inline def SK: SK = "SK".asInstanceOf[SK]
   
   @js.native
-  sealed trait SL extends StObject
+  sealed trait SL
+    extends StObject
+       with CountryIso
   inline def SL: SL = "SL".asInstanceOf[SL]
   
   @js.native
-  sealed trait SM extends StObject
+  sealed trait SM
+    extends StObject
+       with CountryIso
   inline def SM: SM = "SM".asInstanceOf[SM]
   
   @js.native
   sealed trait SMALL
     extends StObject
-       with ArtworkSizesT
+       with ArtworkSizes
   inline def SMALL: SMALL = "SMALL".asInstanceOf[SMALL]
   
   @js.native
-  sealed trait SN extends StObject
+  sealed trait SN
+    extends StObject
+       with CountryIso
   inline def SN: SN = "SN".asInstanceOf[SN]
   
   @js.native
-  sealed trait SO extends StObject
+  sealed trait SO
+    extends StObject
+       with CountryIso
   inline def SO: SO = "SO".asInstanceOf[SO]
   
   @js.native
-  sealed trait SR extends StObject
+  sealed trait SR
+    extends StObject
+       with CountryIso
   inline def SR: SR = "SR".asInstanceOf[SR]
   
   @js.native
-  sealed trait SS extends StObject
+  sealed trait SS
+    extends StObject
+       with CountryIso
   inline def SS: SS = "SS".asInstanceOf[SS]
   
   @js.native
-  sealed trait ST extends StObject
+  sealed trait ST
+    extends StObject
+       with CountryIso
   inline def ST: ST = "ST".asInstanceOf[ST]
   
   @js.native
-  sealed trait STRING extends StObject
+  sealed trait STRING
+    extends StObject
+       with Columns
   inline def STRING: STRING = "STRING".asInstanceOf[STRING]
   
   @js.native
-  sealed trait SV extends StObject
+  sealed trait SV
+    extends StObject
+       with CountryIso
   inline def SV: SV = "SV".asInstanceOf[SV]
   
   @js.native
-  sealed trait SX extends StObject
+  sealed trait SX
+    extends StObject
+       with CountryIso
   inline def SX: SX = "SX".asInstanceOf[SX]
   
   @js.native
-  sealed trait SY extends StObject
+  sealed trait SY
+    extends StObject
+       with CountryIso
   inline def SY: SY = "SY".asInstanceOf[SY]
   
   @js.native
-  sealed trait SZ extends StObject
+  sealed trait SZ
+    extends StObject
+       with CountryIso
   inline def SZ: SZ = "SZ".asInstanceOf[SZ]
   
   @js.native
@@ -2715,63 +3320,93 @@ object baseuiStrings {
   inline def `São Tomé and Príncipe LeftparenthesisSão Tomé e PríncipeRightparenthesis`: `São Tomé and Príncipe LeftparenthesisSão Tomé e PríncipeRightparenthesis` = ("S\u00E3o Tom\u00E9 and Pr\u00EDncipe (S\u00E3o Tom\u00E9 e Pr\u00EDncipe)").asInstanceOf[`São Tomé and Príncipe LeftparenthesisSão Tomé e PríncipeRightparenthesis`]
   
   @js.native
-  sealed trait TC extends StObject
+  sealed trait TC
+    extends StObject
+       with CountryIso
   inline def TC: TC = "TC".asInstanceOf[TC]
   
   @js.native
-  sealed trait TD extends StObject
+  sealed trait TD
+    extends StObject
+       with CountryIso
   inline def TD: TD = "TD".asInstanceOf[TD]
   
   @js.native
-  sealed trait TG extends StObject
+  sealed trait TG
+    extends StObject
+       with CountryIso
   inline def TG: TG = "TG".asInstanceOf[TG]
   
   @js.native
-  sealed trait TH extends StObject
+  sealed trait TH
+    extends StObject
+       with CountryIso
   inline def TH: TH = "TH".asInstanceOf[TH]
   
   @js.native
-  sealed trait TJ extends StObject
+  sealed trait TJ
+    extends StObject
+       with CountryIso
   inline def TJ: TJ = "TJ".asInstanceOf[TJ]
   
   @js.native
-  sealed trait TK extends StObject
+  sealed trait TK
+    extends StObject
+       with CountryIso
   inline def TK: TK = "TK".asInstanceOf[TK]
   
   @js.native
-  sealed trait TL extends StObject
+  sealed trait TL
+    extends StObject
+       with CountryIso
   inline def TL: TL = "TL".asInstanceOf[TL]
   
   @js.native
-  sealed trait TM extends StObject
+  sealed trait TM
+    extends StObject
+       with CountryIso
   inline def TM: TM = "TM".asInstanceOf[TM]
   
   @js.native
-  sealed trait TN extends StObject
+  sealed trait TN
+    extends StObject
+       with CountryIso
   inline def TN: TN = "TN".asInstanceOf[TN]
   
   @js.native
-  sealed trait TO extends StObject
+  sealed trait TO
+    extends StObject
+       with CountryIso
   inline def TO: TO = "TO".asInstanceOf[TO]
   
   @js.native
-  sealed trait TR extends StObject
+  sealed trait TR
+    extends StObject
+       with CountryIso
   inline def TR: TR = "TR".asInstanceOf[TR]
   
   @js.native
-  sealed trait TT extends StObject
+  sealed trait TT
+    extends StObject
+       with CountryIso
   inline def TT: TT = "TT".asInstanceOf[TT]
   
   @js.native
-  sealed trait TV extends StObject
+  sealed trait TV
+    extends StObject
+       with CountryIso
   inline def TV: TV = "TV".asInstanceOf[TV]
   
   @js.native
-  sealed trait TW extends StObject
+  sealed trait TW
+    extends StObject
+       with CountryIso
   inline def TW: TW = "TW".asInstanceOf[TW]
   
   @js.native
-  sealed trait TZ extends StObject
+  sealed trait TZ
+    extends StObject
+       with CountryIso
   inline def TZ: TZ = "TZ".asInstanceOf[TZ]
   
   @js.native
@@ -2831,7 +3466,9 @@ object baseuiStrings {
   inline def Tuvalu: Tuvalu = "Tuvalu".asInstanceOf[Tuvalu]
   
   @js.native
-  sealed trait UA extends StObject
+  sealed trait UA
+    extends StObject
+       with CountryIso
   inline def UA: UA = "UA".asInstanceOf[UA]
   
   @js.native
@@ -2839,19 +3476,27 @@ object baseuiStrings {
   inline def `UDotSDot Virgin Islands`: `UDotSDot Virgin Islands` = ("U.S. Virgin Islands").asInstanceOf[`UDotSDot Virgin Islands`]
   
   @js.native
-  sealed trait UG extends StObject
+  sealed trait UG
+    extends StObject
+       with CountryIso
   inline def UG: UG = "UG".asInstanceOf[UG]
   
   @js.native
-  sealed trait US extends StObject
+  sealed trait US
+    extends StObject
+       with CountryIso
   inline def US: US = "US".asInstanceOf[US]
   
   @js.native
-  sealed trait UY extends StObject
+  sealed trait UY
+    extends StObject
+       with CountryIso
   inline def UY: UY = "UY".asInstanceOf[UY]
   
   @js.native
-  sealed trait UZ extends StObject
+  sealed trait UZ
+    extends StObject
+       with CountryIso
   inline def UZ: UZ = "UZ".asInstanceOf[UZ]
   
   @js.native
@@ -2883,31 +3528,45 @@ object baseuiStrings {
   inline def `Uzbekistan LeftparenthesisOʻzbekistonRightparenthesis`: `Uzbekistan LeftparenthesisOʻzbekistonRightparenthesis` = ("Uzbekistan (O\u02BBzbekiston)").asInstanceOf[`Uzbekistan LeftparenthesisOʻzbekistonRightparenthesis`]
   
   @js.native
-  sealed trait VA extends StObject
+  sealed trait VA
+    extends StObject
+       with CountryIso
   inline def VA: VA = "VA".asInstanceOf[VA]
   
   @js.native
-  sealed trait VC extends StObject
+  sealed trait VC
+    extends StObject
+       with CountryIso
   inline def VC: VC = "VC".asInstanceOf[VC]
   
   @js.native
-  sealed trait VE extends StObject
+  sealed trait VE
+    extends StObject
+       with CountryIso
   inline def VE: VE = "VE".asInstanceOf[VE]
   
   @js.native
-  sealed trait VG extends StObject
+  sealed trait VG
+    extends StObject
+       with CountryIso
   inline def VG: VG = "VG".asInstanceOf[VG]
   
   @js.native
-  sealed trait VI extends StObject
+  sealed trait VI
+    extends StObject
+       with CountryIso
   inline def VI: VI = "VI".asInstanceOf[VI]
   
   @js.native
-  sealed trait VN extends StObject
+  sealed trait VN
+    extends StObject
+       with CountryIso
   inline def VN: VN = "VN".asInstanceOf[VN]
   
   @js.native
-  sealed trait VU extends StObject
+  sealed trait VU
+    extends StObject
+       with CountryIso
   inline def VU: VU = "VU".asInstanceOf[VU]
   
   @js.native
@@ -2927,11 +3586,19 @@ object baseuiStrings {
   inline def `Vietnam LeftparenthesisViệt NamRightparenthesis`: `Vietnam LeftparenthesisViệt NamRightparenthesis` = ("Vietnam (Vi\u1EC7t Nam)").asInstanceOf[`Vietnam LeftparenthesisViệt NamRightparenthesis`]
   
   @js.native
-  sealed trait WF extends StObject
+  sealed trait WEEKDAY extends StObject
+  inline def WEEKDAY: WEEKDAY = "WEEKDAY".asInstanceOf[WEEKDAY]
+  
+  @js.native
+  sealed trait WF
+    extends StObject
+       with CountryIso
   inline def WF: WF = "WF".asInstanceOf[WF]
   
   @js.native
-  sealed trait WS extends StObject
+  sealed trait WS
+    extends StObject
+       with CountryIso
   inline def WS: WS = "WS".asInstanceOf[WS]
   
   @js.native
@@ -2939,39 +3606,47 @@ object baseuiStrings {
   inline def `Wallis and Futuna LeftparenthesisWallis-et-FutunaRightparenthesis`: `Wallis and Futuna LeftparenthesisWallis-et-FutunaRightparenthesis` = ("Wallis and Futuna (Wallis-et-Futuna)").asInstanceOf[`Wallis and Futuna LeftparenthesisWallis-et-FutunaRightparenthesis`]
   
   @js.native
-  sealed trait XK extends StObject
+  sealed trait XK
+    extends StObject
+       with CountryIso
   inline def XK: XK = "XK".asInstanceOf[XK]
   
   @js.native
-  sealed trait YE extends StObject
+  sealed trait YE
+    extends StObject
+       with CountryIso
   inline def YE: YE = "YE".asInstanceOf[YE]
   
   @js.native
-  sealed trait YT extends StObject
+  sealed trait YEAR extends StObject
+  inline def YEAR: YEAR = "YEAR".asInstanceOf[YEAR]
+  
+  @js.native
+  sealed trait YT
+    extends StObject
+       with CountryIso
   inline def YT: YT = "YT".asInstanceOf[YT]
-  
-  @js.native
-  sealed trait `YYYY-MM` extends StObject
-  inline def `YYYY-MM`: `YYYY-MM` = "YYYY-MM".asInstanceOf[`YYYY-MM`]
-  
-  @js.native
-  sealed trait `YYYY-MM-DD` extends StObject
-  inline def `YYYY-MM-DD`: `YYYY-MM-DD` = "YYYY-MM-DD".asInstanceOf[`YYYY-MM-DD`]
   
   @js.native
   sealed trait `Yemen Leftparenthesis‫اليمن‬‎Rightparenthesis` extends StObject
   inline def `Yemen Leftparenthesis‫اليمن‬‎Rightparenthesis`: `Yemen Leftparenthesis‫اليمن‬‎Rightparenthesis` = ("Yemen (\u202B\u0627\u0644\u064A\u0645\u0646\u202C\u200E)").asInstanceOf[`Yemen Leftparenthesis‫اليمن‬‎Rightparenthesis`]
   
   @js.native
-  sealed trait ZA extends StObject
+  sealed trait ZA
+    extends StObject
+       with CountryIso
   inline def ZA: ZA = "ZA".asInstanceOf[ZA]
   
   @js.native
-  sealed trait ZM extends StObject
+  sealed trait ZM
+    extends StObject
+       with CountryIso
   inline def ZM: ZM = "ZM".asInstanceOf[ZM]
   
   @js.native
-  sealed trait ZW extends StObject
+  sealed trait ZW
+    extends StObject
+       with CountryIso
   inline def ZW: ZW = "ZW".asInstanceOf[ZW]
   
   @js.native
@@ -2983,20 +3658,8 @@ object baseuiStrings {
   inline def Zimbabwe: Zimbabwe = "Zimbabwe".asInstanceOf[Zimbabwe]
   
   @js.native
-  sealed trait _blank extends StObject
-  inline def _blank: _blank = "_blank".asInstanceOf[_blank]
-  
-  @js.native
-  sealed trait _parent extends StObject
-  inline def _parent: _parent = "_parent".asInstanceOf[_parent]
-  
-  @js.native
-  sealed trait _self extends StObject
-  inline def _self: _self = "_self".asInstanceOf[_self]
-  
-  @js.native
-  sealed trait _top extends StObject
-  inline def _top: _top = "_top".asInstanceOf[_top]
+  sealed trait _empty extends StObject
+  inline def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
   sealed trait a extends StObject
@@ -3013,16 +3676,62 @@ object baseuiStrings {
   inline def absolute: absolute = "absolute".asInstanceOf[absolute]
   
   @js.native
-  sealed trait accent extends StObject
+  sealed trait accent
+    extends StObject
+       with Color
+       with Kind
+       with TagKind
   inline def accent: accent = "accent".asInstanceOf[accent]
+  
+  @js.native
+  sealed trait additions extends StObject
+  inline def additions: additions = "additions".asInstanceOf[additions]
+  
+  @js.native
+  sealed trait `additions removals` extends StObject
+  inline def `additions removals`: `additions removals` = ("additions removals").asInstanceOf[`additions removals`]
+  
+  @js.native
+  sealed trait `additions text` extends StObject
+  inline def `additions text`: `additions text` = ("additions text").asInstanceOf[`additions text`]
   
   @js.native
   sealed trait address extends StObject
   inline def address: address = "address".asInstanceOf[address]
   
   @js.native
-  sealed trait alertdialog extends StObject
+  sealed trait `after-edge` extends StObject
+  inline def `after-edge`: `after-edge` = "after-edge".asInstanceOf[`after-edge`]
+  
+  @js.native
+  sealed trait alertdialog
+    extends StObject
+       with Role
   inline def alertdialog: alertdialog = "alertdialog".asInstanceOf[alertdialog]
+  
+  @js.native
+  sealed trait alignContent extends StObject
+  inline def alignContent: alignContent = "alignContent".asInstanceOf[alignContent]
+  
+  @js.native
+  sealed trait alignItems extends StObject
+  inline def alignItems: alignItems = "alignItems".asInstanceOf[alignItems]
+  
+  @js.native
+  sealed trait alignSelf extends StObject
+  inline def alignSelf: alignSelf = "alignSelf".asInstanceOf[alignSelf]
+  
+  @js.native
+  sealed trait all extends StObject
+  inline def all: all = "all".asInstanceOf[all]
+  
+  @js.native
+  sealed trait alphabetic extends StObject
+  inline def alphabetic: alphabetic = "alphabetic".asInstanceOf[alphabetic]
+  
+  @js.native
+  sealed trait am_ extends StObject
+  inline def am_ : am_ = "am".asInstanceOf[am_]
   
   @js.native
   sealed trait animate extends StObject
@@ -3037,6 +3746,10 @@ object baseuiStrings {
   inline def animateTransform: animateTransform = "animateTransform".asInstanceOf[animateTransform]
   
   @js.native
+  sealed trait anonymous extends StObject
+  inline def anonymous: anonymous = "anonymous".asInstanceOf[anonymous]
+  
+  @js.native
   sealed trait any extends StObject
   inline def any: any = "any".asInstanceOf[any]
   
@@ -3049,8 +3762,24 @@ object baseuiStrings {
   inline def article: article = "article".asInstanceOf[article]
   
   @js.native
+  sealed trait as_ extends StObject
+  inline def as_ : as_ = "as".asInstanceOf[as_]
+  
+  @js.native
+  sealed trait ascending extends StObject
+  inline def ascending: ascending = "ascending".asInstanceOf[ascending]
+  
+  @js.native
   sealed trait aside extends StObject
   inline def aside: aside = "aside".asInstanceOf[aside]
+  
+  @js.native
+  sealed trait aspectRatio extends StObject
+  inline def aspectRatio: aspectRatio = "aspectRatio".asInstanceOf[aspectRatio]
+  
+  @js.native
+  sealed trait assertive extends StObject
+  inline def assertive: assertive = "assertive".asInstanceOf[assertive]
   
   @js.native
   sealed trait audio extends StObject
@@ -3063,6 +3792,9 @@ object baseuiStrings {
        with JustifyItems
        with JustifySelf
        with Overflow
+       with Size
+       with typings.baseui.drawerTypesMod.Size
+       with TetherPlacement
   inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
@@ -3070,8 +3802,50 @@ object baseuiStrings {
   inline def b: b = "b".asInstanceOf[b]
   
   @js.native
-  sealed trait backdrop extends StObject
+  sealed trait backdrop
+    extends StObject
+       with CloseSource
+       with typings.baseui.drawerTypesMod.CloseSource
   inline def backdrop: backdrop = "backdrop".asInstanceOf[backdrop]
+  
+  @js.native
+  sealed trait backgroundAttachment extends StObject
+  inline def backgroundAttachment: backgroundAttachment = "backgroundAttachment".asInstanceOf[backgroundAttachment]
+  
+  @js.native
+  sealed trait backgroundClip extends StObject
+  inline def backgroundClip: backgroundClip = "backgroundClip".asInstanceOf[backgroundClip]
+  
+  @js.native
+  sealed trait backgroundColor extends StObject
+  inline def backgroundColor: backgroundColor = "backgroundColor".asInstanceOf[backgroundColor]
+  
+  @js.native
+  sealed trait backgroundImage extends StObject
+  inline def backgroundImage: backgroundImage = "backgroundImage".asInstanceOf[backgroundImage]
+  
+  @js.native
+  sealed trait backgroundOrigin extends StObject
+  inline def backgroundOrigin: backgroundOrigin = "backgroundOrigin".asInstanceOf[backgroundOrigin]
+  
+  @js.native
+  sealed trait backgroundPosition extends StObject
+  inline def backgroundPosition: backgroundPosition = "backgroundPosition".asInstanceOf[backgroundPosition]
+  
+  @js.native
+  sealed trait backgroundRepeat extends StObject
+  inline def backgroundRepeat: backgroundRepeat = "backgroundRepeat".asInstanceOf[backgroundRepeat]
+  
+  @js.native
+  sealed trait backgroundSize extends StObject
+  inline def backgroundSize: backgroundSize = "backgroundSize".asInstanceOf[backgroundSize]
+  
+  @js.native
+  sealed trait badge
+    extends StObject
+       with ArtworkType
+       with typings.baseui.badgeTypesMod.Role
+  inline def badge: badge = "badge".asInstanceOf[badge]
   
   @js.native
   sealed trait base extends StObject
@@ -3096,11 +3870,27 @@ object baseuiStrings {
   inline def bdo: bdo = "bdo".asInstanceOf[bdo]
   
   @js.native
+  sealed trait `before-edge` extends StObject
+  inline def `before-edge`: `before-edge` = "before-edge".asInstanceOf[`before-edge`]
+  
+  @js.native
+  sealed trait below
+    extends StObject
+       with ActionPosition
+  inline def below: below = "below".asInstanceOf[below]
+  
+  @js.native
+  sealed trait bevel extends StObject
+  inline def bevel: bevel = "bevel".asInstanceOf[bevel]
+  
+  @js.native
   sealed trait big extends StObject
   inline def big: big = "big".asInstanceOf[big]
   
   @js.native
-  sealed trait black extends StObject
+  sealed trait black
+    extends StObject
+       with TagKind
   inline def black: black = "black".asInstanceOf[black]
   
   @js.native
@@ -3120,7 +3910,9 @@ object baseuiStrings {
   inline def blockquote: blockquote = "blockquote".asInstanceOf[blockquote]
   
   @js.native
-  sealed trait blue extends StObject
+  sealed trait blue
+    extends StObject
+       with TagKind
   inline def blue: blue = "blue".asInstanceOf[blue]
   
   @js.native
@@ -3128,32 +3920,110 @@ object baseuiStrings {
   inline def body: body = "body".asInstanceOf[body]
   
   @js.native
-  sealed trait both extends StObject
+  sealed trait bold extends StObject
+  inline def bold: bold = "bold".asInstanceOf[bold]
+  
+  @js.native
+  sealed trait bolder extends StObject
+  inline def bolder: bolder = "bolder".asInstanceOf[bolder]
+  
+  @js.native
+  sealed trait `border-box` extends StObject
+  inline def `border-box`: `border-box` = "border-box".asInstanceOf[`border-box`]
+  
+  @js.native
+  sealed trait both
+    extends StObject
+       with Adjoined
   inline def both: both = "both".asInstanceOf[both]
   
   @js.native
-  sealed trait bottom extends StObject
+  sealed trait bottom
+    extends StObject
+       with Anchor
+       with LabelEnhancerPosition
+       with LabelPlacement
+       with typings.baseui.radioTypesMod.LabelPlacement
+       with Placement
+       with PlacementType
+       with TetherPlacement
   inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait bottomLeft extends StObject
+  sealed trait `bottom-left`
+    extends StObject
+       with AnchorPositions
+  inline def `bottom-left`: `bottom-left` = "bottom-left".asInstanceOf[`bottom-left`]
+  
+  @js.native
+  sealed trait `bottom-right`
+    extends StObject
+       with AnchorPositions
+  inline def `bottom-right`: `bottom-right` = "bottom-right".asInstanceOf[`bottom-right`]
+  
+  @js.native
+  sealed trait bottomEdge
+    extends StObject
+       with typings.baseui.badgeTypesMod.Placement
+  inline def bottomEdge: bottomEdge = "bottomEdge".asInstanceOf[bottomEdge]
+  
+  @js.native
+  sealed trait bottomLeft
+    extends StObject
+       with typings.baseui.badgeTypesMod.Placement
+       with Placement
+       with PlacementType
+       with TetherPlacement
   inline def bottomLeft: bottomLeft = "bottomLeft".asInstanceOf[bottomLeft]
   
   @js.native
-  sealed trait bottomRight extends StObject
+  sealed trait bottomLeftEdge
+    extends StObject
+       with typings.baseui.badgeTypesMod.Placement
+  inline def bottomLeftEdge: bottomLeftEdge = "bottomLeftEdge".asInstanceOf[bottomLeftEdge]
+  
+  @js.native
+  sealed trait bottomRight
+    extends StObject
+       with typings.baseui.badgeTypesMod.Placement
+       with Placement
+       with PlacementType
+       with TetherPlacement
   inline def bottomRight: bottomRight = "bottomRight".asInstanceOf[bottomRight]
+  
+  @js.native
+  sealed trait bottomRightEdge
+    extends StObject
+       with typings.baseui.badgeTypesMod.Placement
+  inline def bottomRightEdge: bottomRightEdge = "bottomRightEdge".asInstanceOf[bottomRightEdge]
   
   @js.native
   sealed trait br_ extends StObject
   inline def br_ : br_ = "br".asInstanceOf[br_]
   
   @js.native
-  sealed trait brown extends StObject
+  sealed trait `break-spaces`
+    extends StObject
+       with WhiteSpace
+  inline def `break-spaces`: `break-spaces` = "break-spaces".asInstanceOf[`break-spaces`]
+  
+  @js.native
+  sealed trait brown
+    extends StObject
+       with TagKind
   inline def brown: brown = "brown".asInstanceOf[brown]
+  
+  @js.native
+  sealed trait butt extends StObject
+  inline def butt: butt = "butt".asInstanceOf[butt]
   
   @js.native
   sealed trait button extends StObject
   inline def button: button = "button".asInstanceOf[button]
+  
+  @js.native
+  sealed trait `calcLeftparenthesis$LeftcurlybracketstringRightcurlybracket - Dot5pxRightparenthesis` extends StObject
+  inline def `calcLeftparenthesis$LeftcurlybracketstringRightcurlybracket - Dot5pxRightparenthesis`: `calcLeftparenthesis$LeftcurlybracketstringRightcurlybracket - Dot5pxRightparenthesis` = ("calc(${string} - .5px)").asInstanceOf[`calcLeftparenthesis$LeftcurlybracketstringRightcurlybracket - Dot5pxRightparenthesis`]
   
   @js.native
   sealed trait canvas extends StObject
@@ -3162,6 +4032,10 @@ object baseuiStrings {
   @js.native
   sealed trait caption extends StObject
   inline def caption: caption = "caption".asInstanceOf[caption]
+  
+  @js.native
+  sealed trait cell extends StObject
+  inline def cell: cell = "cell".asInstanceOf[cell]
   
   @js.native
   sealed trait center
@@ -3175,7 +4049,24 @@ object baseuiStrings {
   inline def center: center = "center".asInstanceOf[center]
   
   @js.native
-  sealed trait change_ extends StObject
+  sealed trait central extends StObject
+  inline def central: central = "central".asInstanceOf[central]
+  
+  @js.native
+  sealed trait ch_
+    extends StObject
+       with CSSLengthUnit
+  inline def ch_ : ch_ = "ch".asInstanceOf[ch_]
+  
+  @js.native
+  sealed trait changePage extends StObject
+  inline def changePage: changePage = "changePage".asInstanceOf[changePage]
+  
+  @js.native
+  sealed trait change_
+    extends StObject
+       with ChangeAction
+       with _StateChangeType
   inline def change_ : change_ = "change".asInstanceOf[change_]
   
   @js.native
@@ -3187,7 +4078,13 @@ object baseuiStrings {
   inline def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
   
   @js.native
-  sealed trait circle extends StObject
+  sealed trait children extends StObject
+  inline def children: children = "children".asInstanceOf[children]
+  
+  @js.native
+  sealed trait circle
+    extends StObject
+       with FloatingMarkerAnchorType
   inline def circle: circle = "circle".asInstanceOf[circle]
   
   @js.native
@@ -3195,11 +4092,25 @@ object baseuiStrings {
   inline def cite: cite = "cite".asInstanceOf[cite]
   
   @js.native
-  sealed trait clear extends StObject
+  sealed trait className extends StObject
+  inline def className: className = "className".asInstanceOf[className]
+  
+  @js.native
+  sealed trait clean
+    extends StObject
+       with Divider
+  inline def clean: clean = "clean".asInstanceOf[clean]
+  
+  @js.native
+  sealed trait clear
+    extends StObject
+       with typings.baseui.selectTypesMod.ChangeAction
   inline def clear: clear = "clear".asInstanceOf[clear]
   
   @js.native
-  sealed trait click extends StObject
+  sealed trait click
+    extends StObject
+       with TriggerType
   inline def click: click = "click".asInstanceOf[click]
   
   @js.native
@@ -3207,12 +4118,23 @@ object baseuiStrings {
   inline def clipPath: clipPath = "clipPath".asInstanceOf[clipPath]
   
   @js.native
-  sealed trait close extends StObject
+  sealed trait close
+    extends StObject
+       with StateChangeType
   inline def close: close = "close".asInstanceOf[close]
   
   @js.native
-  sealed trait closeButton extends StObject
+  sealed trait closeButton
+    extends StObject
+       with CloseSource
+       with typings.baseui.drawerTypesMod.CloseSource
   inline def closeButton: closeButton = "closeButton".asInstanceOf[closeButton]
+  
+  @js.native
+  sealed trait cm_
+    extends StObject
+       with CSSLengthUnit
+  inline def cm_ : cm_ = "cm".asInstanceOf[cm_]
   
   @js.native
   sealed trait code extends StObject
@@ -3225,6 +4147,14 @@ object baseuiStrings {
   @js.native
   sealed trait colgroup extends StObject
   inline def colgroup: colgroup = "colgroup".asInstanceOf[colgroup]
+  
+  @js.native
+  sealed trait color extends StObject
+  inline def color: color = "color".asInstanceOf[color]
+  
+  @js.native
+  sealed trait colors extends StObject
+  inline def colors: colors = "colors".asInstanceOf[colors]
   
   @js.native
   sealed trait column
@@ -3246,8 +4176,22 @@ object baseuiStrings {
   inline def `column-reverse`: `column-reverse` = "column-reverse".asInstanceOf[`column-reverse`]
   
   @js.native
-  sealed trait compact extends StObject
+  sealed trait compact
+    extends StObject
+       with GridStyle
+       with typings.baseui.phoneInputTypesMod.Size
+       with typings.baseui.tableSemanticTypesMod.Size
+       with typings.baseui.selectTypesMod.Size
+       with typings.baseui.inputTypesMod.Size
+       with typings.baseui.textareaTypesMod.Size
+       with typings.baseui.paginationTypesMod.Size
   inline def compact: compact = "compact".asInstanceOf[compact]
+  
+  @js.native
+  sealed trait consumer
+    extends StObject
+       with LocationPuckType
+  inline def consumer: consumer = "consumer".asInstanceOf[consumer]
   
   @js.native
   sealed trait contents
@@ -3256,14 +4200,30 @@ object baseuiStrings {
   inline def contents: contents = "contents".asInstanceOf[contents]
   
   @js.native
+  sealed trait copy extends StObject
+  inline def copy: copy = "copy".asInstanceOf[copy]
+  
+  @js.native
   sealed trait countryChange
     extends StObject
        with StateChange
   inline def countryChange: countryChange = "countryChange".asInstanceOf[countryChange]
   
   @js.native
-  sealed trait custom_ extends StObject
+  sealed trait custom_
+    extends StObject
+       with TagKind
   inline def custom_ : custom_ = "custom".asInstanceOf[custom_]
+  
+  @js.native
+  sealed trait dark extends StObject
+  inline def dark: dark = "dark".asInstanceOf[dark]
+  
+  @js.native
+  sealed trait dashed
+    extends StObject
+       with LineStyle
+  inline def dashed: dashed = "dashed".asInstanceOf[dashed]
   
   @js.native
   sealed trait data extends StObject
@@ -3274,11 +4234,33 @@ object baseuiStrings {
   inline def datalist: datalist = "datalist".asInstanceOf[datalist]
   
   @js.native
+  sealed trait date extends StObject
+  inline def date: date = "date".asInstanceOf[date]
+  
+  @js.native
   sealed trait dd extends StObject
   inline def dd: dd = "dd".asInstanceOf[dd]
   
   @js.native
-  sealed trait default_ extends StObject
+  sealed trait defaultValue extends StObject
+  inline def defaultValue: defaultValue = "defaultValue".asInstanceOf[defaultValue]
+  
+  @js.native
+  sealed trait default_
+    extends StObject
+       with Density
+       with GridStyle
+       with Kind
+       with typings.baseui.phoneInputTypesMod.Size
+       with typings.baseui.tableSemanticTypesMod.Size
+       with Size
+       with typings.baseui.selectTypesMod.Size
+       with typings.baseui.inputTypesMod.Size
+       with typings.baseui.drawerTypesMod.Size
+       with typings.baseui.textareaTypesMod.Size
+       with typings.baseui.paginationTypesMod.Size
+       with StyleType
+       with _RangedCalendarBehavior
   inline def default_ : default_ = "default".asInstanceOf[default_]
   
   @js.native
@@ -3300,6 +4282,10 @@ object baseuiStrings {
   inline def desc_ : desc_ = "desc".asInstanceOf[desc_]
   
   @js.native
+  sealed trait descending extends StObject
+  inline def descending: descending = "descending".asInstanceOf[descending]
+  
+  @js.native
   sealed trait details extends StObject
   inline def details: details = "details".asInstanceOf[details]
   
@@ -3308,8 +4294,18 @@ object baseuiStrings {
   inline def dfn: dfn = "dfn".asInstanceOf[dfn]
   
   @js.native
-  sealed trait dialog extends StObject
+  sealed trait dialog
+    extends StObject
+       with Role
   inline def dialog: dialog = "dialog".asInstanceOf[dialog]
+  
+  @js.native
+  sealed trait disabled extends StObject
+  inline def disabled: disabled = "disabled".asInstanceOf[disabled]
+  
+  @js.native
+  sealed trait display extends StObject
+  inline def display: display = "display".asInstanceOf[display]
   
   @js.native
   sealed trait div extends StObject
@@ -3320,15 +4316,39 @@ object baseuiStrings {
   inline def dl: dl = "dl".asInstanceOf[dl]
   
   @js.native
+  sealed trait dotted
+    extends StObject
+       with LineStyle
+  inline def dotted: dotted = "dotted".asInstanceOf[dotted]
+  
+  @js.native
+  sealed trait double
+    extends StObject
+       with LineStyle
+  inline def double: double = "double".asInstanceOf[double]
+  
+  @js.native
   sealed trait dt extends StObject
   inline def dt: dt = "dt".asInstanceOf[dt]
+  
+  @js.native
+  sealed trait earner
+    extends StObject
+       with LocationPuckType
+  inline def earner: earner = "earner".asInstanceOf[earner]
   
   @js.native
   sealed trait ellipse extends StObject
   inline def ellipse: ellipse = "ellipse".asInstanceOf[ellipse]
   
   @js.native
-  sealed trait em extends StObject
+  sealed trait ellipsis extends StObject
+  inline def ellipsis: ellipsis = "ellipsis".asInstanceOf[ellipsis]
+  
+  @js.native
+  sealed trait em
+    extends StObject
+       with CSSLengthUnit
   inline def em: em = "em".asInstanceOf[em]
   
   @js.native
@@ -3336,7 +4356,17 @@ object baseuiStrings {
   inline def embed: embed = "embed".asInstanceOf[embed]
   
   @js.native
-  sealed trait end
+  sealed trait endDate
+    extends StObject
+       with _InputRole
+  inline def endDate: endDate = "endDate".asInstanceOf[endDate]
+  
+  @js.native
+  sealed trait endEnhancer extends StObject
+  inline def endEnhancer: endEnhancer = "endEnhancer".asInstanceOf[endEnhancer]
+  
+  @js.native
+  sealed trait end_
     extends StObject
        with AlignContent
        with AlignItems
@@ -3344,15 +4374,32 @@ object baseuiStrings {
        with JustifyContent
        with JustifyItems
        with JustifySelf
-  inline def end: end = "end".asInstanceOf[end]
+  inline def end_ : end_ = "end".asInstanceOf[end_]
   
   @js.native
   sealed trait enter_ extends StObject
   inline def enter_ : enter_ = "enter".asInstanceOf[enter_]
   
   @js.native
-  sealed trait escape_ extends StObject
+  sealed trait escape_
+    extends StObject
+       with CloseSource
+       with typings.baseui.drawerTypesMod.CloseSource
   inline def escape_ : escape_ = "escape".asInstanceOf[escape_]
+  
+  @js.native
+  sealed trait evenodd extends StObject
+  inline def evenodd: evenodd = "evenodd".asInstanceOf[evenodd]
+  
+  @js.native
+  sealed trait ex
+    extends StObject
+       with CSSLengthUnit
+  inline def ex: ex = "ex".asInstanceOf[ex]
+  
+  @js.native
+  sealed trait execute extends StObject
+  inline def execute: execute = "execute".asInstanceOf[execute]
   
   @js.native
   sealed trait expand extends StObject
@@ -3475,6 +4522,12 @@ object baseuiStrings {
   inline def filter: filter = "filter".asInstanceOf[filter]
   
   @js.native
+  sealed trait finalChange
+    extends StObject
+       with ChangeAction
+  inline def finalChange: finalChange = "finalChange".asInstanceOf[finalChange]
+  
+  @js.native
   sealed trait `first baseline`
     extends StObject
        with AlignContent
@@ -3487,6 +4540,8 @@ object baseuiStrings {
   @js.native
   sealed trait fixed
     extends StObject
+       with Fill
+       with PinHead
        with Position
   inline def fixed: fixed = "fixed".asInstanceOf[fixed]
   
@@ -3525,6 +4580,40 @@ object baseuiStrings {
   inline def `flex-start`: `flex-start` = "flex-start".asInstanceOf[`flex-start`]
   
   @js.native
+  sealed trait flexDirection extends StObject
+  inline def flexDirection: flexDirection = "flexDirection".asInstanceOf[flexDirection]
+  
+  @js.native
+  sealed trait flexGridColumnCount extends StObject
+  inline def flexGridColumnCount: flexGridColumnCount = "flexGridColumnCount".asInstanceOf[flexGridColumnCount]
+  
+  @js.native
+  sealed trait flexGridColumnGap extends StObject
+  inline def flexGridColumnGap: flexGridColumnGap = "flexGridColumnGap".asInstanceOf[flexGridColumnGap]
+  
+  @js.native
+  sealed trait flexGridItemCount extends StObject
+  inline def flexGridItemCount: flexGridItemCount = "flexGridItemCount".asInstanceOf[flexGridItemCount]
+  
+  @js.native
+  sealed trait flexGridItemIndex extends StObject
+  inline def flexGridItemIndex: flexGridItemIndex = "flexGridItemIndex".asInstanceOf[flexGridItemIndex]
+  
+  @js.native
+  sealed trait flexGridRowGap extends StObject
+  inline def flexGridRowGap: flexGridRowGap = "flexGridRowGap".asInstanceOf[flexGridRowGap]
+  
+  @js.native
+  sealed trait flexWrap extends StObject
+  inline def flexWrap: flexWrap = "flexWrap".asInstanceOf[flexWrap]
+  
+  @js.native
+  sealed trait floating
+    extends StObject
+       with PinHead
+  inline def floating: floating = "floating".asInstanceOf[floating]
+  
+  @js.native
   sealed trait flow
     extends StObject
        with Display
@@ -3543,8 +4632,16 @@ object baseuiStrings {
   inline def `flow-root`: `flow-root` = "flow-root".asInstanceOf[`flow-root`]
   
   @js.native
+  sealed trait fluid extends StObject
+  inline def fluid: fluid = "fluid".asInstanceOf[fluid]
+  
+  @js.native
   sealed trait focus extends StObject
   inline def focus: focus = "focus".asInstanceOf[focus]
+  
+  @js.native
+  sealed trait font extends StObject
+  inline def font: font = "font".asInstanceOf[font]
   
   @js.native
   sealed trait footer extends StObject
@@ -3559,7 +4656,10 @@ object baseuiStrings {
   inline def form: form = "form".asInstanceOf[form]
   
   @js.native
-  sealed trait full extends StObject
+  sealed trait full
+    extends StObject
+       with Size
+       with typings.baseui.drawerTypesMod.Size
   inline def full: full = "full".asInstanceOf[full]
   
   @js.native
@@ -3567,14 +4667,95 @@ object baseuiStrings {
   inline def g: g = "g".asInstanceOf[g]
   
   @js.native
-  sealed trait green extends StObject
+  sealed trait grammar extends StObject
+  inline def grammar: grammar = "grammar".asInstanceOf[grammar]
+  
+  @js.native
+  sealed trait green
+    extends StObject
+       with TagKind
   inline def green: green = "green".asInstanceOf[green]
   
   @js.native
   sealed trait grid
     extends StObject
        with Display
+       with Divider
   inline def grid: grid = "grid".asInstanceOf[grid]
+  
+  @js.native
+  sealed trait gridArea extends StObject
+  inline def gridArea: gridArea = "gridArea".asInstanceOf[gridArea]
+  
+  @js.native
+  sealed trait gridAutoColumns extends StObject
+  inline def gridAutoColumns: gridAutoColumns = "gridAutoColumns".asInstanceOf[gridAutoColumns]
+  
+  @js.native
+  sealed trait gridAutoFlow extends StObject
+  inline def gridAutoFlow: gridAutoFlow = "gridAutoFlow".asInstanceOf[gridAutoFlow]
+  
+  @js.native
+  sealed trait gridAutoRows extends StObject
+  inline def gridAutoRows: gridAutoRows = "gridAutoRows".asInstanceOf[gridAutoRows]
+  
+  @js.native
+  sealed trait gridColumn extends StObject
+  inline def gridColumn: gridColumn = "gridColumn".asInstanceOf[gridColumn]
+  
+  @js.native
+  sealed trait gridColumnEnd extends StObject
+  inline def gridColumnEnd: gridColumnEnd = "gridColumnEnd".asInstanceOf[gridColumnEnd]
+  
+  @js.native
+  sealed trait gridColumnGap extends StObject
+  inline def gridColumnGap: gridColumnGap = "gridColumnGap".asInstanceOf[gridColumnGap]
+  
+  @js.native
+  sealed trait gridColumnStart extends StObject
+  inline def gridColumnStart: gridColumnStart = "gridColumnStart".asInstanceOf[gridColumnStart]
+  
+  @js.native
+  sealed trait gridGap extends StObject
+  inline def gridGap: gridGap = "gridGap".asInstanceOf[gridGap]
+  
+  @js.native
+  sealed trait gridRow extends StObject
+  inline def gridRow: gridRow = "gridRow".asInstanceOf[gridRow]
+  
+  @js.native
+  sealed trait gridRowEnd extends StObject
+  inline def gridRowEnd: gridRowEnd = "gridRowEnd".asInstanceOf[gridRowEnd]
+  
+  @js.native
+  sealed trait gridRowGap extends StObject
+  inline def gridRowGap: gridRowGap = "gridRowGap".asInstanceOf[gridRowGap]
+  
+  @js.native
+  sealed trait gridRowStart extends StObject
+  inline def gridRowStart: gridRowStart = "gridRowStart".asInstanceOf[gridRowStart]
+  
+  @js.native
+  sealed trait gridTemplate extends StObject
+  inline def gridTemplate: gridTemplate = "gridTemplate".asInstanceOf[gridTemplate]
+  
+  @js.native
+  sealed trait gridTemplateAreas extends StObject
+  inline def gridTemplateAreas: gridTemplateAreas = "gridTemplateAreas".asInstanceOf[gridTemplateAreas]
+  
+  @js.native
+  sealed trait gridTemplateColumns extends StObject
+  inline def gridTemplateColumns: gridTemplateColumns = "gridTemplateColumns".asInstanceOf[gridTemplateColumns]
+  
+  @js.native
+  sealed trait gridTemplateRows extends StObject
+  inline def gridTemplateRows: gridTemplateRows = "gridTemplateRows".asInstanceOf[gridTemplateRows]
+  
+  @js.native
+  sealed trait groove
+    extends StObject
+       with LineStyle
+  inline def groove: groove = "groove".asInstanceOf[groove]
   
   @js.native
   sealed trait h1 extends StObject
@@ -3601,6 +4782,10 @@ object baseuiStrings {
   inline def h6: h6 = "h6".asInstanceOf[h6]
   
   @js.native
+  sealed trait hanging extends StObject
+  inline def hanging: hanging = "hanging".asInstanceOf[hanging]
+  
+  @js.native
   sealed trait head extends StObject
   inline def head: head = "head".asInstanceOf[head]
   
@@ -3609,21 +4794,45 @@ object baseuiStrings {
   inline def header: header = "header".asInstanceOf[header]
   
   @js.native
+  sealed trait height extends StObject
+  inline def height: height = "height".asInstanceOf[height]
+  
+  @js.native
   sealed trait hgroup extends StObject
   inline def hgroup: hgroup = "hgroup".asInstanceOf[hgroup]
   
   @js.native
   sealed trait hidden
     extends StObject
+       with LineStyle
        with Overflow
   inline def hidden: hidden = "hidden".asInstanceOf[hidden]
   
   @js.native
-  sealed trait horizontal extends StObject
+  sealed trait high
+    extends StObject
+       with Density
+       with Hierarchy
+  inline def high: high = "high".asInstanceOf[high]
+  
+  @js.native
+  sealed trait hintDot
+    extends StObject
+       with typings.baseui.badgeTypesMod.Role
+  inline def hintDot: hintDot = "hintDot".asInstanceOf[hintDot]
+  
+  @js.native
+  sealed trait horizontal
+    extends StObject
+       with Align
+       with Divider
+       with Orientation
   inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
-  sealed trait hover extends StObject
+  sealed trait hover
+    extends StObject
+       with TriggerType
   inline def hover: hover = "hover".asInstanceOf[hover]
   
   @js.native
@@ -3639,6 +4848,16 @@ object baseuiStrings {
   inline def i: i = "i".asInstanceOf[i]
   
   @js.native
+  sealed trait icon
+    extends StObject
+       with ArtworkType
+  inline def icon: icon = "icon".asInstanceOf[icon]
+  
+  @js.native
+  sealed trait ideographic extends StObject
+  inline def ideographic: ideographic = "ideographic".asInstanceOf[ideographic]
+  
+  @js.native
   sealed trait iframe extends StObject
   inline def iframe: iframe = "iframe".asInstanceOf[iframe]
   
@@ -3651,7 +4870,16 @@ object baseuiStrings {
   inline def img: img = "img".asInstanceOf[img]
   
   @js.native
-  sealed trait info extends StObject
+  sealed trait in_
+    extends StObject
+       with CSSLengthUnit
+  inline def in_ : in_ = "in".asInstanceOf[in_]
+  
+  @js.native
+  sealed trait info
+    extends StObject
+       with typings.baseui.bannerTypesMod.Kind
+       with KindType
   inline def info: info = "info".asInstanceOf[info]
   
   @js.native
@@ -3662,11 +4890,13 @@ object baseuiStrings {
        with AlignSelf
        with Display
        with FlexDirection
+       with Globals
        with GridAutoFlow
        with JustifyContent
        with JustifyItems
        with JustifySelf
        with Overflow
+       with WhiteSpace
   inline def inherit: inherit = "inherit".asInstanceOf[inherit]
   
   @js.native
@@ -3677,17 +4907,20 @@ object baseuiStrings {
        with AlignSelf
        with Display
        with FlexDirection
+       with Globals
        with GridAutoFlow
        with JustifyContent
        with JustifyItems
        with JustifySelf
        with Overflow
+       with WhiteSpace
   inline def initial: initial = "initial".asInstanceOf[initial]
   
   @js.native
   sealed trait `inline`
     extends StObject
        with Display
+       with NotificationType
   inline def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   
   @js.native
@@ -3725,8 +4958,56 @@ object baseuiStrings {
   inline def input: input = "input".asInstanceOf[input]
   
   @js.native
+  sealed trait inputRef extends StObject
+  inline def inputRef: inputRef = "inputRef".asInstanceOf[inputRef]
+  
+  @js.native
   sealed trait ins extends StObject
   inline def ins: ins = "ins".asInstanceOf[ins]
+  
+  @js.native
+  sealed trait inset
+    extends StObject
+       with LineStyle
+  inline def inset: inset = "inset".asInstanceOf[inset]
+  
+  @js.native
+  sealed trait intrinsic
+    extends StObject
+       with Fill
+  inline def intrinsic: intrinsic = "intrinsic".asInstanceOf[intrinsic]
+  
+  @js.native
+  sealed trait isLoading extends StObject
+  inline def isLoading: isLoading = "isLoading".asInstanceOf[isLoading]
+  
+  @js.native
+  sealed trait isSelected extends StObject
+  inline def isSelected: isSelected = "isSelected".asInstanceOf[isSelected]
+  
+  @js.native
+  sealed trait isolated extends StObject
+  inline def isolated: isolated = "isolated".asInstanceOf[isolated]
+  
+  @js.native
+  sealed trait item extends StObject
+  inline def item: item = "item".asInstanceOf[item]
+  
+  @js.native
+  sealed trait itemMemoizationComparator extends StObject
+  inline def itemMemoizationComparator: itemMemoizationComparator = "itemMemoizationComparator".asInstanceOf[itemMemoizationComparator]
+  
+  @js.native
+  sealed trait justifyContent extends StObject
+  inline def justifyContent: justifyContent = "justifyContent".asInstanceOf[justifyContent]
+  
+  @js.native
+  sealed trait justifyItems extends StObject
+  inline def justifyItems: justifyItems = "justifyItems".asInstanceOf[justifyItems]
+  
+  @js.native
+  sealed trait justifySelf extends StObject
+  inline def justifySelf: justifySelf = "justifySelf".asInstanceOf[justifySelf]
   
   @js.native
   sealed trait kbd extends StObject
@@ -3737,11 +5018,27 @@ object baseuiStrings {
   inline def keygen: keygen = "keygen".asInstanceOf[keygen]
   
   @js.native
+  sealed trait kind extends StObject
+  inline def kind: kind = "kind".asInstanceOf[kind]
+  
+  @js.native
   sealed trait label extends StObject
   inline def label: label = "label".asInstanceOf[label]
   
   @js.native
-  sealed trait large_ extends StObject
+  sealed trait large_
+    extends StObject
+       with FloatingMarkerSize
+       with LocationPuckSize
+       with PinHeadSize
+       with typings.baseui.phoneInputTypesMod.Size
+       with typings.baseui.spinnerTypesMod.Size
+       with typings.baseui.selectTypesMod.Size
+       with typings.baseui.inputTypesMod.Size
+       with typings.baseui.textareaTypesMod.Size
+       with typings.baseui.progressBarTypesMod.Size
+       with typings.baseui.paginationTypesMod.Size
+       with TagSize
   inline def large_ : large_ = "large".asInstanceOf[large_]
   
   @js.native
@@ -3757,18 +5054,40 @@ object baseuiStrings {
   @js.native
   sealed trait left
     extends StObject
+       with Adjoined
+       with Anchor
        with JustifyContent
        with JustifyItems
        with JustifySelf
+       with LabelEnhancerPosition
+       with LabelPlacement
+       with typings.baseui.radioTypesMod.LabelPlacement
+       with TetherPlacement
   inline def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait leftBottom extends StObject
+  sealed trait leftBottom
+    extends StObject
+       with TetherPlacement
   inline def leftBottom: leftBottom = "leftBottom".asInstanceOf[leftBottom]
   
   @js.native
-  sealed trait leftTop extends StObject
+  sealed trait leftBottomEdge
+    extends StObject
+       with typings.baseui.badgeTypesMod.Placement
+  inline def leftBottomEdge: leftBottomEdge = "leftBottomEdge".asInstanceOf[leftBottomEdge]
+  
+  @js.native
+  sealed trait leftTop
+    extends StObject
+       with TetherPlacement
   inline def leftTop: leftTop = "leftTop".asInstanceOf[leftTop]
+  
+  @js.native
+  sealed trait leftTopEdge
+    extends StObject
+       with typings.baseui.badgeTypesMod.Placement
+  inline def leftTopEdge: leftTopEdge = "leftTopEdge".asInstanceOf[leftTopEdge]
   
   @js.native
   sealed trait `legacy center`
@@ -3793,12 +5112,24 @@ object baseuiStrings {
   inline def legend: legend = "legend".asInstanceOf[legend]
   
   @js.native
+  sealed trait lh
+    extends StObject
+       with CSSLengthUnit
+  inline def lh: lh = "lh".asInstanceOf[lh]
+  
+  @js.native
   sealed trait li_ extends StObject
   inline def li_ : li_ = "li".asInstanceOf[li_]
   
   @js.native
-  sealed trait light extends StObject
+  sealed trait light
+    extends StObject
+       with TagVariant
   inline def light: light = "light".asInstanceOf[light]
+  
+  @js.native
+  sealed trait lighter extends StObject
+  inline def lighter: lighter = "lighter".asInstanceOf[lighter]
   
   @js.native
   sealed trait line extends StObject
@@ -3809,8 +5140,16 @@ object baseuiStrings {
   inline def linearGradient: linearGradient = "linearGradient".asInstanceOf[linearGradient]
   
   @js.native
+  sealed trait linearRGB extends StObject
+  inline def linearRGB: linearRGB = "linearRGB".asInstanceOf[linearRGB]
+  
+  @js.native
   sealed trait link extends StObject
   inline def link: link = "link".asInstanceOf[link]
+  
+  @js.native
+  sealed trait list extends StObject
+  inline def list: list = "list".asInstanceOf[list]
   
   @js.native
   sealed trait `list-item`
@@ -3855,12 +5194,56 @@ object baseuiStrings {
   inline def `list-item inline`: `list-item inline` = ("list-item inline").asInstanceOf[`list-item inline`]
   
   @js.native
+  sealed trait listbox extends StObject
+  inline def listbox: listbox = "listbox".asInstanceOf[listbox]
+  
+  @js.native
+  sealed trait location extends StObject
+  inline def location: location = "location".asInstanceOf[location]
+  
+  @js.native
+  sealed trait locked
+    extends StObject
+       with _RangedCalendarBehavior
+  inline def locked: locked = "locked".asInstanceOf[locked]
+  
+  @js.native
+  sealed trait low
+    extends StObject
+       with Hierarchy
+  inline def low: low = "low".asInstanceOf[low]
+  
+  @js.native
+  sealed trait ltr extends StObject
+  inline def ltr: ltr = "ltr".asInstanceOf[ltr]
+  
+  @js.native
   sealed trait main extends StObject
   inline def main: main = "main".asInstanceOf[main]
   
   @js.native
   sealed trait map extends StObject
   inline def map: map = "map".asInstanceOf[map]
+  
+  @js.native
+  sealed trait margin extends StObject
+  inline def margin: margin = "margin".asInstanceOf[margin]
+  
+  @js.native
+  sealed trait marginBottom extends StObject
+  inline def marginBottom: marginBottom = "marginBottom".asInstanceOf[marginBottom]
+  
+  @js.native
+  sealed trait marginLeft extends StObject
+  inline def marginLeft: marginLeft = "marginLeft".asInstanceOf[marginLeft]
+  
+  @js.native
+  sealed trait marginRight extends StObject
+  inline def marginRight: marginRight = "marginRight".asInstanceOf[marginRight]
+  
+  @js.native
+  sealed trait marginTop extends StObject
+  inline def marginTop: marginTop = "marginTop".asInstanceOf[marginTop]
   
   @js.native
   sealed trait mark extends StObject
@@ -3875,11 +5258,49 @@ object baseuiStrings {
   inline def mask: mask = "mask".asInstanceOf[mask]
   
   @js.native
-  sealed trait medium_ extends StObject
+  sealed trait mathematical extends StObject
+  inline def mathematical: mathematical = "mathematical".asInstanceOf[mathematical]
+  
+  @js.native
+  sealed trait maxHeight extends StObject
+  inline def maxHeight: maxHeight = "maxHeight".asInstanceOf[maxHeight]
+  
+  @js.native
+  sealed trait maxWidth extends StObject
+  inline def maxWidth: maxWidth = "maxWidth".asInstanceOf[maxWidth]
+  
+  @js.native
+  sealed trait medial extends StObject
+  inline def medial: medial = "medial".asInstanceOf[medial]
+  
+  @js.native
+  sealed trait `medium-icon`
+    extends StObject
+       with BadgeEnhancerSize
+  inline def `medium-icon`: `medium-icon` = "medium-icon".asInstanceOf[`medium-icon`]
+  
+  @js.native
+  sealed trait `medium-text`
+    extends StObject
+       with BadgeEnhancerSize
+  inline def `medium-text`: `medium-text` = "medium-text".asInstanceOf[`medium-text`]
+  
+  @js.native
+  sealed trait medium_
+    extends StObject
+       with FloatingMarkerSize
+       with LocationPuckSize
+       with NeedleSize
+       with PinHeadSize
+       with typings.baseui.spinnerTypesMod.Size
+       with typings.baseui.progressBarTypesMod.Size
+       with TagSize
   inline def medium_ : medium_ = "medium".asInstanceOf[medium_]
   
   @js.native
-  sealed trait menu extends StObject
+  sealed trait menu
+    extends StObject
+       with AccessibilityType
   inline def menu: menu = "menu".asInstanceOf[menu]
   
   @js.native
@@ -3899,39 +5320,87 @@ object baseuiStrings {
   inline def meter: meter = "meter".asInstanceOf[meter]
   
   @js.native
-  sealed trait mini extends StObject
+  sealed trait middle extends StObject
+  inline def middle: middle = "middle".asInstanceOf[middle]
+  
+  @js.native
+  sealed trait minHeight extends StObject
+  inline def minHeight: minHeight = "minHeight".asInstanceOf[minHeight]
+  
+  @js.native
+  sealed trait minWidth extends StObject
+  inline def minWidth: minWidth = "minWidth".asInstanceOf[minWidth]
+  
+  @js.native
+  sealed trait mini
+    extends StObject
+       with typings.baseui.phoneInputTypesMod.Size
+       with typings.baseui.selectTypesMod.Size
+       with typings.baseui.inputTypesMod.Size
+       with typings.baseui.textareaTypesMod.Size
+       with typings.baseui.paginationTypesMod.Size
   inline def mini: mini = "mini".asInstanceOf[mini]
   
   @js.native
-  sealed trait minimal extends StObject
-  inline def minimal: minimal = "minimal".asInstanceOf[minimal]
+  sealed trait miter extends StObject
+  inline def miter: miter = "miter".asInstanceOf[miter]
+  
+  @js.native
+  sealed trait mixed extends StObject
+  inline def mixed: mixed = "mixed".asInstanceOf[mixed]
+  
+  @js.native
+  sealed trait mm_
+    extends StObject
+       with CSSLengthUnit
+  inline def mm_ : mm_ = "mm".asInstanceOf[mm_]
+  
+  @js.native
+  sealed trait module extends StObject
+  inline def module: module = "module".asInstanceOf[module]
   
   @js.native
   sealed trait mouseEnter extends StObject
   inline def mouseEnter: mouseEnter = "mouseEnter".asInstanceOf[mouseEnter]
   
   @js.native
-  sealed trait mouseLeave extends StObject
+  sealed trait mouseLeave
+    extends StObject
+       with _StateChangeType
   inline def mouseLeave: mouseLeave = "mouseLeave".asInstanceOf[mouseLeave]
   
   @js.native
-  sealed trait mouseOver extends StObject
+  sealed trait mouseOver
+    extends StObject
+       with _StateChangeType
   inline def mouseOver: mouseOver = "mouseOver".asInstanceOf[mouseOver]
   
   @js.native
-  sealed trait moveDown extends StObject
+  sealed trait move extends StObject
+  inline def move: move = "move".asInstanceOf[move]
+  
+  @js.native
+  sealed trait moveDown
+    extends StObject
+       with _StateChangeType
   inline def moveDown: moveDown = "moveDown".asInstanceOf[moveDown]
   
   @js.native
-  sealed trait moveLeft extends StObject
+  sealed trait moveLeft
+    extends StObject
+       with _StateChangeType
   inline def moveLeft: moveLeft = "moveLeft".asInstanceOf[moveLeft]
   
   @js.native
-  sealed trait moveRight extends StObject
+  sealed trait moveRight
+    extends StObject
+       with _StateChangeType
   inline def moveRight: moveRight = "moveRight".asInstanceOf[moveRight]
   
   @js.native
-  sealed trait moveUp extends StObject
+  sealed trait moveUp
+    extends StObject
+       with _StateChangeType
   inline def moveUp: moveUp = "moveUp".asInstanceOf[moveUp]
   
   @js.native
@@ -3943,12 +5412,28 @@ object baseuiStrings {
   inline def nav: nav = "nav".asInstanceOf[nav]
   
   @js.native
-  sealed trait negative extends StObject
+  sealed trait negative
+    extends StObject
+       with Color
+       with Kind
+       with typings.baseui.bannerTypesMod.Kind
+       with KindType
+       with TagKind
   inline def negative: negative = "negative".asInstanceOf[negative]
   
   @js.native
-  sealed trait neutral extends StObject
+  sealed trait neutral
+    extends StObject
+       with TagKind
   inline def neutral: neutral = "neutral".asInstanceOf[neutral]
+  
+  @js.native
+  sealed trait next extends StObject
+  inline def next: next = "next".asInstanceOf[next]
+  
+  @js.native
+  sealed trait no_ extends StObject
+  inline def no_ : no_ = "no".asInstanceOf[no_]
   
   @js.native
   sealed trait noindex extends StObject
@@ -3957,8 +5442,19 @@ object baseuiStrings {
   @js.native
   sealed trait none
     extends StObject
+       with AccessibilityType
+       with Adjoined
+       with AnchorPositions
+       with BadgeEnhancerSize
        with Display
+       with LabelEnhancerPosition
+       with LineStyle
+       with NeedleSize
   inline def none: none = "none".asInstanceOf[none]
+  
+  @js.native
+  sealed trait nonzero extends StObject
+  inline def nonzero: nonzero = "nonzero".asInstanceOf[nonzero]
   
   @js.native
   sealed trait normal
@@ -3968,6 +5464,7 @@ object baseuiStrings {
        with AlignSelf
        with JustifyItems
        with JustifySelf
+       with WhiteSpace
   inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
@@ -3975,15 +5472,41 @@ object baseuiStrings {
   inline def noscript: noscript = "noscript".asInstanceOf[noscript]
   
   @js.native
+  sealed trait notificationCircle
+    extends StObject
+       with typings.baseui.badgeTypesMod.Role
+  inline def notificationCircle: notificationCircle = "notificationCircle".asInstanceOf[notificationCircle]
+  
+  @js.native
+  sealed trait nowrap
+    extends StObject
+       with WhiteSpace
+  inline def nowrap: nowrap = "nowrap".asInstanceOf[nowrap]
+  
+  @js.native
   sealed trait `object` extends StObject
   inline def `object`: `object` = "object".asInstanceOf[`object`]
+  
+  @js.native
+  sealed trait off extends StObject
+  inline def off: off = "off".asInstanceOf[off]
   
   @js.native
   sealed trait ol extends StObject
   inline def ol: ol = "ol".asInstanceOf[ol]
   
   @js.native
-  sealed trait open extends StObject
+  sealed trait onClick extends StObject
+  inline def onClick: onClick = "onClick".asInstanceOf[onClick]
+  
+  @js.native
+  sealed trait onSelect extends StObject
+  inline def onSelect: onSelect = "onSelect".asInstanceOf[onSelect]
+  
+  @js.native
+  sealed trait open
+    extends StObject
+       with StateChangeType
   inline def open: open = "open".asInstanceOf[open]
   
   @js.native
@@ -3995,11 +5518,19 @@ object baseuiStrings {
   inline def option: option = "option".asInstanceOf[option]
   
   @js.native
-  sealed trait orange extends StObject
+  sealed trait orange
+    extends StObject
+       with TagKind
   inline def orange: orange = "orange".asInstanceOf[orange]
   
   @js.native
-  sealed trait outlined extends StObject
+  sealed trait other extends StObject
+  inline def other: other = "other".asInstanceOf[other]
+  
+  @js.native
+  sealed trait outlined
+    extends StObject
+       with TagVariant
   inline def outlined: outlined = "outlined".asInstanceOf[outlined]
   
   @js.native
@@ -4007,8 +5538,46 @@ object baseuiStrings {
   inline def output: output = "output".asInstanceOf[output]
   
   @js.native
+  sealed trait outset
+    extends StObject
+       with LineStyle
+  inline def outset: outset = "outset".asInstanceOf[outset]
+  
+  @js.native
+  sealed trait overflow extends StObject
+  inline def overflow: overflow = "overflow".asInstanceOf[overflow]
+  
+  @js.native
+  sealed trait overrides extends StObject
+  inline def overrides: overrides = "overrides".asInstanceOf[overrides]
+  
+  @js.native
   sealed trait p extends StObject
   inline def p: p = "p".asInstanceOf[p]
+  
+  @js.native
+  sealed trait padding extends StObject
+  inline def padding: padding = "padding".asInstanceOf[padding]
+  
+  @js.native
+  sealed trait paddingBottom extends StObject
+  inline def paddingBottom: paddingBottom = "paddingBottom".asInstanceOf[paddingBottom]
+  
+  @js.native
+  sealed trait paddingLeft extends StObject
+  inline def paddingLeft: paddingLeft = "paddingLeft".asInstanceOf[paddingLeft]
+  
+  @js.native
+  sealed trait paddingRight extends StObject
+  inline def paddingRight: paddingRight = "paddingRight".asInstanceOf[paddingRight]
+  
+  @js.native
+  sealed trait paddingTop extends StObject
+  inline def paddingTop: paddingTop = "paddingTop".asInstanceOf[paddingTop]
+  
+  @js.native
+  sealed trait page extends StObject
+  inline def page: page = "page".asInstanceOf[page]
   
   @js.native
   sealed trait param extends StObject
@@ -4023,12 +5592,40 @@ object baseuiStrings {
   inline def pattern: pattern = "pattern".asInstanceOf[pattern]
   
   @js.native
+  sealed trait pc
+    extends StObject
+       with CSSLengthUnit
+  inline def pc: pc = "pc".asInstanceOf[pc]
+  
+  @js.native
   sealed trait picture extends StObject
   inline def picture: picture = "picture".asInstanceOf[picture]
   
   @js.native
-  sealed trait pill extends StObject
+  sealed trait pill
+    extends StObject
+       with typings.baseui.badgeTypesMod.Shape
   inline def pill: pill = "pill".asInstanceOf[pill]
+  
+  @js.native
+  sealed trait placeContent extends StObject
+  inline def placeContent: placeContent = "placeContent".asInstanceOf[placeContent]
+  
+  @js.native
+  sealed trait placeItems extends StObject
+  inline def placeItems: placeItems = "placeItems".asInstanceOf[placeItems]
+  
+  @js.native
+  sealed trait placeSelf extends StObject
+  inline def placeSelf: placeSelf = "placeSelf".asInstanceOf[placeSelf]
+  
+  @js.native
+  sealed trait pm_ extends StObject
+  inline def pm_ : pm_ = "pm".asInstanceOf[pm_]
+  
+  @js.native
+  sealed trait polite extends StObject
+  inline def polite: polite = "polite".asInstanceOf[polite]
   
   @js.native
   sealed trait polygon extends StObject
@@ -4039,15 +5636,50 @@ object baseuiStrings {
   inline def polyline: polyline = "polyline".asInstanceOf[polyline]
   
   @js.native
-  sealed trait positive extends StObject
+  sealed trait popup extends StObject
+  inline def popup: popup = "popup".asInstanceOf[popup]
+  
+  @js.native
+  sealed trait position extends StObject
+  inline def position: position = "position".asInstanceOf[position]
+  
+  @js.native
+  sealed trait positive
+    extends StObject
+       with Color
+       with typings.baseui.bannerTypesMod.Kind
+       with KindType
+       with TagKind
   inline def positive: positive = "positive".asInstanceOf[positive]
   
   @js.native
-  sealed trait pre extends StObject
+  sealed trait pre
+    extends StObject
+       with WhiteSpace
   inline def pre: pre = "pre".asInstanceOf[pre]
   
   @js.native
-  sealed trait primary extends StObject
+  sealed trait `pre-line`
+    extends StObject
+       with WhiteSpace
+  inline def `pre-line`: `pre-line` = "pre-line".asInstanceOf[`pre-line`]
+  
+  @js.native
+  sealed trait `pre-wrap`
+    extends StObject
+       with WhiteSpace
+  inline def `pre-wrap`: `pre-wrap` = "pre-wrap".asInstanceOf[`pre-wrap`]
+  
+  @js.native
+  sealed trait previous extends StObject
+  inline def previous: previous = "previous".asInstanceOf[previous]
+  
+  @js.native
+  sealed trait primary
+    extends StObject
+       with Color
+       with typings.baseui.badgeTypesMod.Hierarchy
+       with TagKind
   inline def primary: primary = "primary".asInstanceOf[primary]
   
   @js.native
@@ -4055,12 +5687,26 @@ object baseuiStrings {
   inline def progress: progress = "progress".asInstanceOf[progress]
   
   @js.native
-  sealed trait purple extends StObject
+  sealed trait pt_
+    extends StObject
+       with CSSLengthUnit
+  inline def pt_ : pt_ = "pt".asInstanceOf[pt_]
+  
+  @js.native
+  sealed trait purple
+    extends StObject
+       with TagKind
   inline def purple: purple = "purple".asInstanceOf[purple]
   
   @js.native
-  sealed trait q extends StObject
-  inline def q: q = "q".asInstanceOf[q]
+  sealed trait px
+    extends StObject
+       with CSSLengthUnit
+  inline def px: px = "px".asInstanceOf[px]
+  
+  @js.native
+  sealed trait q_ extends StObject
+  inline def q_ : q_ = "q".asInstanceOf[q_]
   
   @js.native
   sealed trait radialGradient extends StObject
@@ -4071,11 +5717,25 @@ object baseuiStrings {
   inline def radio: radio = "radio".asInstanceOf[radio]
   
   @js.native
+  sealed trait range
+    extends StObject
+       with ExcludeKind
+  inline def range: range = "range".asInstanceOf[range]
+  
+  @js.native
   sealed trait rect extends StObject
   inline def rect: rect = "rect".asInstanceOf[rect]
   
   @js.native
-  sealed trait red extends StObject
+  sealed trait rectangle
+    extends StObject
+       with typings.baseui.badgeTypesMod.Shape
+  inline def rectangle: rectangle = "rectangle".asInstanceOf[rectangle]
+  
+  @js.native
+  sealed trait red
+    extends StObject
+       with TagKind
   inline def red: red = "red".asInstanceOf[red]
   
   @js.native
@@ -4085,32 +5745,90 @@ object baseuiStrings {
   inline def relative: relative = "relative".asInstanceOf[relative]
   
   @js.native
-  sealed trait remove extends StObject
+  sealed trait rem
+    extends StObject
+       with CSSLengthUnit
+  inline def rem: rem = "rem".asInstanceOf[rem]
+  
+  @js.native
+  sealed trait removals extends StObject
+  inline def removals: removals = "removals".asInstanceOf[removals]
+  
+  @js.native
+  sealed trait `removals additions` extends StObject
+  inline def `removals additions`: `removals additions` = ("removals additions").asInstanceOf[`removals additions`]
+  
+  @js.native
+  sealed trait `removals text` extends StObject
+  inline def `removals text`: `removals text` = ("removals text").asInstanceOf[`removals text`]
+  
+  @js.native
+  sealed trait remove
+    extends StObject
+       with typings.baseui.selectTypesMod.ChangeAction
   inline def remove: remove = "remove".asInstanceOf[remove]
+  
+  @js.native
+  sealed trait replace extends StObject
+  inline def replace: replace = "replace".asInstanceOf[replace]
   
   @js.native
   sealed trait reset extends StObject
   inline def reset: reset = "reset".asInstanceOf[reset]
   
   @js.native
+  sealed trait revert
+    extends StObject
+       with Globals
+  inline def revert: revert = "revert".asInstanceOf[revert]
+  
+  @js.native
+  sealed trait ridge
+    extends StObject
+       with LineStyle
+  inline def ridge: ridge = "ridge".asInstanceOf[ridge]
+  
+  @js.native
   sealed trait right
     extends StObject
+       with Adjoined
+       with Anchor
        with JustifyContent
        with JustifyItems
        with JustifySelf
+       with LabelEnhancerPosition
+       with LabelPlacement
+       with typings.baseui.radioTypesMod.LabelPlacement
+       with TetherPlacement
   inline def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait rightBottom extends StObject
+  sealed trait rightBottom
+    extends StObject
+       with TetherPlacement
   inline def rightBottom: rightBottom = "rightBottom".asInstanceOf[rightBottom]
   
   @js.native
-  sealed trait rightTop extends StObject
+  sealed trait rightBottomEdge
+    extends StObject
+       with typings.baseui.badgeTypesMod.Placement
+  inline def rightBottomEdge: rightBottomEdge = "rightBottomEdge".asInstanceOf[rightBottomEdge]
+  
+  @js.native
+  sealed trait rightTop
+    extends StObject
+       with TetherPlacement
   inline def rightTop: rightTop = "rightTop".asInstanceOf[rightTop]
   
   @js.native
-  sealed trait round extends StObject
-  inline def round: round = "round".asInstanceOf[round]
+  sealed trait rightTopEdge
+    extends StObject
+       with typings.baseui.badgeTypesMod.Placement
+  inline def rightTopEdge: rightTopEdge = "rightTopEdge".asInstanceOf[rightTopEdge]
+  
+  @js.native
+  sealed trait round_ extends StObject
+  inline def round_ : round_ = "round".asInstanceOf[round_]
   
   @js.native
   sealed trait row
@@ -4138,6 +5856,10 @@ object baseuiStrings {
   @js.native
   sealed trait rt extends StObject
   inline def rt: rt = "rt".asInstanceOf[rt]
+  
+  @js.native
+  sealed trait rtl extends StObject
+  inline def rtl: rtl = "rtl".asInstanceOf[rtl]
   
   @js.native
   sealed trait ruby
@@ -4180,6 +5902,10 @@ object baseuiStrings {
   inline def s: s = "s".asInstanceOf[s]
   
   @js.native
+  sealed trait sRGB extends StObject
+  inline def sRGB: sRGB = "sRGB".asInstanceOf[sRGB]
+  
+  @js.native
   sealed trait `safe center`
     extends StObject
        with AlignContent
@@ -4193,6 +5919,94 @@ object baseuiStrings {
   @js.native
   sealed trait samp extends StObject
   inline def samp: samp = "samp".asInstanceOf[samp]
+  
+  @js.native
+  sealed trait scale0 extends StObject
+  inline def scale0: scale0 = "scale0".asInstanceOf[scale0]
+  
+  @js.native
+  sealed trait scale100 extends StObject
+  inline def scale100: scale100 = "scale100".asInstanceOf[scale100]
+  
+  @js.native
+  sealed trait scale1000 extends StObject
+  inline def scale1000: scale1000 = "scale1000".asInstanceOf[scale1000]
+  
+  @js.native
+  sealed trait scale1200 extends StObject
+  inline def scale1200: scale1200 = "scale1200".asInstanceOf[scale1200]
+  
+  @js.native
+  sealed trait scale1400 extends StObject
+  inline def scale1400: scale1400 = "scale1400".asInstanceOf[scale1400]
+  
+  @js.native
+  sealed trait scale1600 extends StObject
+  inline def scale1600: scale1600 = "scale1600".asInstanceOf[scale1600]
+  
+  @js.native
+  sealed trait scale200 extends StObject
+  inline def scale200: scale200 = "scale200".asInstanceOf[scale200]
+  
+  @js.native
+  sealed trait scale2400 extends StObject
+  inline def scale2400: scale2400 = "scale2400".asInstanceOf[scale2400]
+  
+  @js.native
+  sealed trait scale300 extends StObject
+  inline def scale300: scale300 = "scale300".asInstanceOf[scale300]
+  
+  @js.native
+  sealed trait scale3200 extends StObject
+  inline def scale3200: scale3200 = "scale3200".asInstanceOf[scale3200]
+  
+  @js.native
+  sealed trait scale400 extends StObject
+  inline def scale400: scale400 = "scale400".asInstanceOf[scale400]
+  
+  @js.native
+  sealed trait scale4800 extends StObject
+  inline def scale4800: scale4800 = "scale4800".asInstanceOf[scale4800]
+  
+  @js.native
+  sealed trait scale500 extends StObject
+  inline def scale500: scale500 = "scale500".asInstanceOf[scale500]
+  
+  @js.native
+  sealed trait scale550 extends StObject
+  inline def scale550: scale550 = "scale550".asInstanceOf[scale550]
+  
+  @js.native
+  sealed trait scale600 extends StObject
+  inline def scale600: scale600 = "scale600".asInstanceOf[scale600]
+  
+  @js.native
+  sealed trait scale650 extends StObject
+  inline def scale650: scale650 = "scale650".asInstanceOf[scale650]
+  
+  @js.native
+  sealed trait scale700 extends StObject
+  inline def scale700: scale700 = "scale700".asInstanceOf[scale700]
+  
+  @js.native
+  sealed trait scale750 extends StObject
+  inline def scale750: scale750 = "scale750".asInstanceOf[scale750]
+  
+  @js.native
+  sealed trait scale800 extends StObject
+  inline def scale800: scale800 = "scale800".asInstanceOf[scale800]
+  
+  @js.native
+  sealed trait scale850 extends StObject
+  inline def scale850: scale850 = "scale850".asInstanceOf[scale850]
+  
+  @js.native
+  sealed trait scale900 extends StObject
+  inline def scale900: scale900 = "scale900".asInstanceOf[scale900]
+  
+  @js.native
+  sealed trait scale950 extends StObject
+  inline def scale950: scale950 = "scale950".asInstanceOf[scale950]
   
   @js.native
   sealed trait script extends StObject
@@ -4217,11 +6031,15 @@ object baseuiStrings {
   inline def scrollY: scrollY = "scrollY".asInstanceOf[scrollY]
   
   @js.native
-  sealed trait search extends StObject
+  sealed trait search
+    extends StObject
+       with Type
   inline def search: search = "search".asInstanceOf[search]
   
   @js.native
-  sealed trait secondary extends StObject
+  sealed trait secondary
+    extends StObject
+       with typings.baseui.badgeTypesMod.Hierarchy
   inline def secondary: secondary = "secondary".asInstanceOf[secondary]
   
   @js.native
@@ -4229,7 +6047,10 @@ object baseuiStrings {
   inline def section: section = "section".asInstanceOf[section]
   
   @js.native
-  sealed trait select extends StObject
+  sealed trait select
+    extends StObject
+       with typings.baseui.selectTypesMod.ChangeAction
+       with Type
   inline def select: select = "select".asInstanceOf[select]
   
   @js.native
@@ -4251,15 +6072,40 @@ object baseuiStrings {
   inline def `self-start`: `self-start` = "self-start".asInstanceOf[`self-start`]
   
   @js.native
+  sealed trait shape extends StObject
+  inline def shape: shape = "shape".asInstanceOf[shape]
+  
+  @js.native
+  sealed trait short
+    extends StObject
+       with NeedleSize
+  inline def short: short = "short".asInstanceOf[short]
+  
+  @js.native
+  sealed trait size extends StObject
+  inline def size: size = "size".asInstanceOf[size]
+  
+  @js.native
   sealed trait slot extends StObject
   inline def slot: slot = "slot".asInstanceOf[slot]
   
   @js.native
-  sealed trait small_ extends StObject
+  sealed trait small_
+    extends StObject
+       with BadgeEnhancerSize
+       with FloatingMarkerSize
+       with LocationPuckSize
+       with PinHeadSize
+       with typings.baseui.spinnerTypesMod.Size
+       with typings.baseui.progressBarTypesMod.Size
+       with TagSize
   inline def small_ : small_ = "small".asInstanceOf[small_]
   
   @js.native
-  sealed trait solid extends StObject
+  sealed trait solid
+    extends StObject
+       with LineStyle
+       with TagVariant
   inline def solid: solid = "solid".asInstanceOf[solid]
   
   @js.native
@@ -4288,11 +6134,23 @@ object baseuiStrings {
   inline def `space-evenly`: `space-evenly` = "space-evenly".asInstanceOf[`space-evenly`]
   
   @js.native
+  sealed trait spacious
+    extends StObject
+       with typings.baseui.tableSemanticTypesMod.Size
+  inline def spacious: spacious = "spacious".asInstanceOf[spacious]
+  
+  @js.native
   sealed trait span extends StObject
   inline def span: span = "span".asInstanceOf[span]
   
   @js.native
-  sealed trait square extends StObject
+  sealed trait spelling extends StObject
+  inline def spelling: spelling = "spelling".asInstanceOf[spelling]
+  
+  @js.native
+  sealed trait square
+    extends StObject
+       with FloatingMarkerAnchorType
   inline def square: square = "square".asInstanceOf[square]
   
   @js.native
@@ -4307,10 +6165,24 @@ object baseuiStrings {
   inline def start: start = "start".asInstanceOf[start]
   
   @js.native
+  sealed trait startDate
+    extends StObject
+       with _InputRole
+  inline def startDate: startDate = "startDate".asInstanceOf[startDate]
+  
+  @js.native
+  sealed trait startEnhancer extends StObject
+  inline def startEnhancer: startEnhancer = "startEnhancer".asInstanceOf[startEnhancer]
+  
+  @js.native
   sealed trait static
     extends StObject
        with Position
   inline def static: static = "static".asInstanceOf[static]
+  
+  @js.native
+  sealed trait step extends StObject
+  inline def step: step = "step".asInstanceOf[step]
   
   @js.native
   sealed trait sticky
@@ -4348,6 +6220,10 @@ object baseuiStrings {
   @js.native
   sealed trait submit extends StObject
   inline def submit: submit = "submit".asInstanceOf[submit]
+  
+  @js.native
+  sealed trait sum extends StObject
+  inline def sum: sum = "sum".asInstanceOf[sum]
   
   @js.native
   sealed trait summary extends StObject
@@ -4424,6 +6300,12 @@ object baseuiStrings {
   inline def `table-row-group`: `table-row-group` = "table-row-group".asInstanceOf[`table-row-group`]
   
   @js.native
+  sealed trait tall
+    extends StObject
+       with NeedleSize
+  inline def tall: tall = "tall".asInstanceOf[tall]
+  
+  @js.native
   sealed trait tbody extends StObject
   inline def tbody: tbody = "tbody".asInstanceOf[tbody]
   
@@ -4436,6 +6318,10 @@ object baseuiStrings {
   inline def template: template = "template".asInstanceOf[template]
   
   @js.native
+  sealed trait terminal extends StObject
+  inline def terminal: terminal = "terminal".asInstanceOf[terminal]
+  
+  @js.native
   sealed trait tertiary extends StObject
   inline def tertiary: tertiary = "tertiary".asInstanceOf[tertiary]
   
@@ -4444,10 +6330,30 @@ object baseuiStrings {
   inline def text: text = "text".asInstanceOf[text]
   
   @js.native
+  sealed trait `text additions` extends StObject
+  inline def `text additions`: `text additions` = ("text additions").asInstanceOf[`text additions`]
+  
+  @js.native
+  sealed trait `text removals` extends StObject
+  inline def `text removals`: `text removals` = ("text removals").asInstanceOf[`text removals`]
+  
+  @js.native
+  sealed trait `text-after-edge` extends StObject
+  inline def `text-after-edge`: `text-after-edge` = "text-after-edge".asInstanceOf[`text-after-edge`]
+  
+  @js.native
+  sealed trait `text-before-edge` extends StObject
+  inline def `text-before-edge`: `text-before-edge` = "text-before-edge".asInstanceOf[`text-before-edge`]
+  
+  @js.native
   sealed trait textChange
     extends StObject
        with StateChange
   inline def textChange: textChange = "textChange".asInstanceOf[textChange]
+  
+  @js.native
+  sealed trait textOverflow extends StObject
+  inline def textOverflow: textOverflow = "textOverflow".asInstanceOf[textOverflow]
   
   @js.native
   sealed trait textPath extends StObject
@@ -4478,32 +6384,88 @@ object baseuiStrings {
   inline def title: title = "title".asInstanceOf[title]
   
   @js.native
-  sealed trait toast extends StObject
+  sealed trait toast
+    extends StObject
+       with NotificationType
   inline def toast: toast = "toast".asInstanceOf[toast]
   
   @js.native
-  sealed trait toggle extends StObject
+  sealed trait toggle
+    extends StObject
+       with StyleType
   inline def toggle: toggle = "toggle".asInstanceOf[toggle]
   
   @js.native
-  sealed trait toggle_round extends StObject
+  sealed trait toggle_round
+    extends StObject
+       with StyleType
   inline def toggle_round: toggle_round = "toggle_round".asInstanceOf[toggle_round]
   
   @js.native
-  sealed trait tooltip extends StObject
+  sealed trait tooltip
+    extends StObject
+       with AccessibilityType
   inline def tooltip: tooltip = "tooltip".asInstanceOf[tooltip]
   
   @js.native
-  sealed trait top extends StObject
+  sealed trait top
+    extends StObject
+       with Anchor
+       with LabelEnhancerPosition
+       with LabelPlacement
+       with typings.baseui.radioTypesMod.LabelPlacement
+       with Placement
+       with PlacementType
+       with TetherPlacement
   inline def top: top = "top".asInstanceOf[top]
   
   @js.native
-  sealed trait topLeft extends StObject
+  sealed trait `top-left`
+    extends StObject
+       with AnchorPositions
+  inline def `top-left`: `top-left` = "top-left".asInstanceOf[`top-left`]
+  
+  @js.native
+  sealed trait `top-right`
+    extends StObject
+       with AnchorPositions
+  inline def `top-right`: `top-right` = "top-right".asInstanceOf[`top-right`]
+  
+  @js.native
+  sealed trait topEdge
+    extends StObject
+       with typings.baseui.badgeTypesMod.Placement
+  inline def topEdge: topEdge = "topEdge".asInstanceOf[topEdge]
+  
+  @js.native
+  sealed trait topLeft
+    extends StObject
+       with typings.baseui.badgeTypesMod.Placement
+       with Placement
+       with PlacementType
+       with TetherPlacement
   inline def topLeft: topLeft = "topLeft".asInstanceOf[topLeft]
   
   @js.native
-  sealed trait topRight extends StObject
+  sealed trait topLeftEdge
+    extends StObject
+       with typings.baseui.badgeTypesMod.Placement
+  inline def topLeftEdge: topLeftEdge = "topLeftEdge".asInstanceOf[topLeftEdge]
+  
+  @js.native
+  sealed trait topRight
+    extends StObject
+       with typings.baseui.badgeTypesMod.Placement
+       with Placement
+       with PlacementType
+       with TetherPlacement
   inline def topRight: topRight = "topRight".asInstanceOf[topRight]
+  
+  @js.native
+  sealed trait topRightEdge
+    extends StObject
+       with typings.baseui.badgeTypesMod.Placement
+  inline def topRightEdge: topRightEdge = "topRightEdge".asInstanceOf[topRightEdge]
   
   @js.native
   sealed trait tr_ extends StObject
@@ -4514,8 +6476,22 @@ object baseuiStrings {
   inline def track: track = "track".asInstanceOf[track]
   
   @js.native
+  sealed trait trailing
+    extends StObject
+       with ActionPosition
+  inline def trailing: trailing = "trailing".asInstanceOf[trailing]
+  
+  @js.native
+  sealed trait tree extends StObject
+  inline def tree: tree = "tree".asInstanceOf[tree]
+  
+  @js.native
   sealed trait tspan extends StObject
   inline def tspan: tspan = "tspan".asInstanceOf[tspan]
+  
+  @js.native
+  sealed trait `type` extends StObject
+  inline def `type`: `type` = "type".asInstanceOf[`type`]
   
   @js.native
   sealed trait u extends StObject
@@ -4544,11 +6520,13 @@ object baseuiStrings {
        with AlignSelf
        with Display
        with FlexDirection
+       with Globals
        with GridAutoFlow
        with JustifyContent
        with JustifyItems
        with JustifySelf
        with Overflow
+       with WhiteSpace
   inline def unset: unset = "unset".asInstanceOf[unset]
   
   @js.native
@@ -4556,7 +6534,13 @@ object baseuiStrings {
   inline def use: use = "use".asInstanceOf[use]
   
   @js.native
-  sealed trait value extends StObject
+  sealed trait `use-credentials` extends StObject
+  inline def `use-credentials`: `use-credentials` = "use-credentials".asInstanceOf[`use-credentials`]
+  
+  @js.native
+  sealed trait value
+    extends StObject
+       with ExcludeKind
   inline def value: value = "value".asInstanceOf[value]
   
   @js.native
@@ -4564,8 +6548,18 @@ object baseuiStrings {
   inline def `var`: `var` = "var".asInstanceOf[`var`]
   
   @js.native
-  sealed trait vertical extends StObject
+  sealed trait vertical
+    extends StObject
+       with Align
+       with Divider
+       with Orientation
   inline def vertical: vertical = "vertical".asInstanceOf[vertical]
+  
+  @js.native
+  sealed trait vh
+    extends StObject
+       with CSSLengthUnit
+  inline def vh: vh = "vh".asInstanceOf[vh]
   
   @js.native
   sealed trait video extends StObject
@@ -4582,7 +6576,30 @@ object baseuiStrings {
   inline def visible: visible = "visible".asInstanceOf[visible]
   
   @js.native
-  sealed trait warning extends StObject
+  sealed trait vmax
+    extends StObject
+       with CSSLengthUnit
+  inline def vmax: vmax = "vmax".asInstanceOf[vmax]
+  
+  @js.native
+  sealed trait vmin
+    extends StObject
+       with CSSLengthUnit
+  inline def vmin: vmin = "vmin".asInstanceOf[vmin]
+  
+  @js.native
+  sealed trait vw
+    extends StObject
+       with CSSLengthUnit
+  inline def vw: vw = "vw".asInstanceOf[vw]
+  
+  @js.native
+  sealed trait warning
+    extends StObject
+       with Color
+       with typings.baseui.bannerTypesMod.Kind
+       with KindType
+       with TagKind
   inline def warning: warning = "warning".asInstanceOf[warning]
   
   @js.native
@@ -4594,12 +6611,54 @@ object baseuiStrings {
   inline def webview: webview = "webview".asInstanceOf[webview]
   
   @js.native
-  sealed trait white extends StObject
-  inline def white: white = "white".asInstanceOf[white]
+  sealed trait whiteSpace extends StObject
+  inline def whiteSpace: whiteSpace = "whiteSpace".asInstanceOf[whiteSpace]
   
   @js.native
-  sealed trait yellow extends StObject
+  sealed trait width extends StObject
+  inline def width: width = "width".asInstanceOf[width]
+  
+  @js.native
+  sealed trait `x-small`
+    extends StObject
+       with BadgeEnhancerSize
+  inline def `x-small`: `x-small` = "x-small".asInstanceOf[`x-small`]
+  
+  @js.native
+  sealed trait `x-small-circle`
+    extends StObject
+       with PinHeadSize
+  inline def `x-small-circle`: `x-small-circle` = "x-small-circle".asInstanceOf[`x-small-circle`]
+  
+  @js.native
+  sealed trait `x-small-square`
+    extends StObject
+       with PinHeadSize
+  inline def `x-small-square`: `x-small-square` = "x-small-square".asInstanceOf[`x-small-square`]
+  
+  @js.native
+  sealed trait `xx-small-circle`
+    extends StObject
+       with FloatingMarkerAnchorType
+       with PinHeadSize
+  inline def `xx-small-circle`: `xx-small-circle` = "xx-small-circle".asInstanceOf[`xx-small-circle`]
+  
+  @js.native
+  sealed trait `xx-small-square`
+    extends StObject
+       with FloatingMarkerAnchorType
+       with PinHeadSize
+  inline def `xx-small-square`: `xx-small-square` = "xx-small-square".asInstanceOf[`xx-small-square`]
+  
+  @js.native
+  sealed trait yellow
+    extends StObject
+       with TagKind
   inline def yellow: yellow = "yellow".asInstanceOf[yellow]
+  
+  @js.native
+  sealed trait yes extends StObject
+  inline def yes: yes = "yes".asInstanceOf[yes]
   
   @js.native
   sealed trait `Åland Islands` extends StObject

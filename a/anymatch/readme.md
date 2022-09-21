@@ -1,7 +1,7 @@
 
 # Scala.js typings for anymatch
 
-Typings are for version 1.3
+Typings are for version 3.1.2
 
 ## Library description:
 Matches strings against configurable strings, globs, regular expressions, and/or functions
@@ -10,10 +10,10 @@ Matches strings against configurable strings, globs, regular expressions, and/or
 | ------------------ | :-------------: |
 | Full name          | anymatch |
 | Keywords           | match, any, string, file, fs, list, glob, regex, regexp, regular, expression, function |
-| # releases         | 7 |
-| # dependents       | 359 |
-| # downloads        | 1232526642 |
-| # stars            | 17 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1.8803987366666666E8 |
+| # stars            | 322.0 |
 
 ## Links
 - [Homepage](https://github.com/micromatch/anymatch)
@@ -24,7 +24,7 @@ Matches strings against configurable strings, globs, regular expressions, and/or
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

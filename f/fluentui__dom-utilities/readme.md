@@ -1,7 +1,7 @@
 
 # Scala.js typings for fluentui__dom-utilities
 
-Typings are for version 1.1.1
+Typings are for version 2.2.2
 
 ## Library description:
 DOM utilities for use within Fluent web components
@@ -10,10 +10,10 @@ DOM utilities for use within Fluent web components
 | ------------------ | :-------------: |
 | Full name          | @fluentui/dom-utilities |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 4 |
-| # downloads        | 565327 |
-| # stars            | 0 |
+| # releases         | 18 |
+| # dependents       | 0.0 |
+| # downloads        | 691407.6666666666 |
+| # stars            | 13774.0 |
 
 ## Links
 - [Homepage](https://github.com/microsoft/fluentui#readme)

@@ -4,22 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An interval of time, with an absolute start and end.
-  */
 trait SchemaTimeInterval extends StObject {
   
   /**
-    * The timestamp marking the end of the range (exclusive) for which data is
-    * included.
+    * The timestamp marking the end of the range (exclusive) for which data is included.
     */
-  var endTime: js.UndefOr[String] = js.undefined
+  var endTime: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The timestamp marking the start of the range (inclusive) for which data
-    * is included.
+    * The timestamp marking the start of the range (inclusive) for which data is included.
     */
-  var startTime: js.UndefOr[String] = js.undefined
+  var startTime: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaTimeInterval {
   
@@ -32,9 +27,13 @@ object SchemaTimeInterval {
     
     inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
+    inline def setEndTimeNull: Self = StObject.set(x, "endTime", null)
+    
     inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
     inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    
+    inline def setStartTimeNull: Self = StObject.set(x, "startTime", null)
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }

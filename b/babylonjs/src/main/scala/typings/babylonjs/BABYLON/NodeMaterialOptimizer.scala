@@ -8,10 +8,10 @@ trait NodeMaterialOptimizer extends StObject {
   
   /**
     * Function used to optimize a NodeMaterial graph
-    * @param vertexOutputNodes defines the list of output nodes for the vertex shader
-    * @param fragmentOutputNodes defines the list of output nodes for the fragment shader
+    * @param _vertexOutputNodes defines the list of output nodes for the vertex shader
+    * @param _fragmentOutputNodes defines the list of output nodes for the fragment shader
     */
-  def optimize(vertexOutputNodes: js.Array[NodeMaterialBlock], fragmentOutputNodes: js.Array[NodeMaterialBlock]): Unit
+  def optimize(_vertexOutputNodes: js.Array[NodeMaterialBlock], _fragmentOutputNodes: js.Array[NodeMaterialBlock]): Unit
 }
 object NodeMaterialOptimizer {
   

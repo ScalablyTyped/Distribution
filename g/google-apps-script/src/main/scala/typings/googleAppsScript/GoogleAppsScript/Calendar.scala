@@ -444,15 +444,15 @@ object Calendar {
   trait Calendar extends StObject {
     
     def createAllDayEvent(title: String, date: Date): CalendarEvent = js.native
-    def createAllDayEvent(title: String, date: Date, options: StringDictionary[js.Any]): CalendarEvent = js.native
+    def createAllDayEvent(title: String, date: Date, options: StringDictionary[Any]): CalendarEvent = js.native
     def createAllDayEvent(title: String, startDate: Date, endDate: Date): CalendarEvent = js.native
-    def createAllDayEvent(title: String, startDate: Date, endDate: Date, options: StringDictionary[js.Any]): CalendarEvent = js.native
+    def createAllDayEvent(title: String, startDate: Date, endDate: Date, options: StringDictionary[Any]): CalendarEvent = js.native
     
     def createAllDayEventSeries(title: String, startDate: Date, recurrence: EventRecurrence): CalendarEventSeries = js.native
-    def createAllDayEventSeries(title: String, startDate: Date, recurrence: EventRecurrence, options: StringDictionary[js.Any]): CalendarEventSeries = js.native
+    def createAllDayEventSeries(title: String, startDate: Date, recurrence: EventRecurrence, options: StringDictionary[Any]): CalendarEventSeries = js.native
     
     def createEvent(title: String, startTime: Date, endTime: Date): CalendarEvent = js.native
-    def createEvent(title: String, startTime: Date, endTime: Date, options: StringDictionary[js.Any]): CalendarEvent = js.native
+    def createEvent(title: String, startTime: Date, endTime: Date, options: StringDictionary[Any]): CalendarEvent = js.native
     
     def createEventFromDescription(description: String): CalendarEvent = js.native
     
@@ -462,7 +462,7 @@ object Calendar {
       startTime: Date,
       endTime: Date,
       recurrence: EventRecurrence,
-      options: StringDictionary[js.Any]
+      options: StringDictionary[Any]
     ): CalendarEventSeries = js.native
     
     def deleteCalendar(): Unit = js.native
@@ -476,10 +476,10 @@ object Calendar {
     def getEventSeriesById(iCalId: String): CalendarEventSeries = js.native
     
     def getEvents(startTime: Date, endTime: Date): js.Array[CalendarEvent] = js.native
-    def getEvents(startTime: Date, endTime: Date, options: StringDictionary[js.Any]): js.Array[CalendarEvent] = js.native
+    def getEvents(startTime: Date, endTime: Date, options: StringDictionary[Any]): js.Array[CalendarEvent] = js.native
     
     def getEventsForDay(date: Date): js.Array[CalendarEvent] = js.native
-    def getEventsForDay(date: Date, options: StringDictionary[js.Any]): js.Array[CalendarEvent] = js.native
+    def getEventsForDay(date: Date, options: StringDictionary[Any]): js.Array[CalendarEvent] = js.native
     
     def getId(): String = js.native
     
@@ -518,31 +518,31 @@ object Calendar {
   @js.native
   trait CalendarApp extends StObject {
     
-    var Color: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Color */ js.Any = js.native
+    var Color: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Color */ Any = js.native
     
-    var EventColor: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EventColor */ js.Any = js.native
+    var EventColor: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EventColor */ Any = js.native
     
-    var GuestStatus: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GuestStatus */ js.Any = js.native
+    var GuestStatus: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GuestStatus */ Any = js.native
     
-    var Month: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Base.Month */ js.Any = js.native
+    var Month: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Base.Month */ Any = js.native
     
-    var Visibility: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Visibility */ js.Any = js.native
+    var Visibility: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Visibility */ Any = js.native
     
-    var Weekday: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Base.Weekday */ js.Any = js.native
+    var Weekday: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Base.Weekday */ Any = js.native
     
     def createAllDayEvent(title: String, date: Date): CalendarEvent = js.native
-    def createAllDayEvent(title: String, date: Date, options: StringDictionary[js.Any]): CalendarEvent = js.native
+    def createAllDayEvent(title: String, date: Date, options: StringDictionary[Any]): CalendarEvent = js.native
     def createAllDayEvent(title: String, startDate: Date, endDate: Date): CalendarEvent = js.native
-    def createAllDayEvent(title: String, startDate: Date, endDate: Date, options: StringDictionary[js.Any]): CalendarEvent = js.native
+    def createAllDayEvent(title: String, startDate: Date, endDate: Date, options: StringDictionary[Any]): CalendarEvent = js.native
     
     def createAllDayEventSeries(title: String, startDate: Date, recurrence: EventRecurrence): CalendarEventSeries = js.native
-    def createAllDayEventSeries(title: String, startDate: Date, recurrence: EventRecurrence, options: StringDictionary[js.Any]): CalendarEventSeries = js.native
+    def createAllDayEventSeries(title: String, startDate: Date, recurrence: EventRecurrence, options: StringDictionary[Any]): CalendarEventSeries = js.native
     
     def createCalendar(name: String): typings.googleAppsScript.GoogleAppsScript.Calendar.Calendar = js.native
-    def createCalendar(name: String, options: StringDictionary[js.Any]): typings.googleAppsScript.GoogleAppsScript.Calendar.Calendar = js.native
+    def createCalendar(name: String, options: StringDictionary[Any]): typings.googleAppsScript.GoogleAppsScript.Calendar.Calendar = js.native
     
     def createEvent(title: String, startTime: Date, endTime: Date): CalendarEvent = js.native
-    def createEvent(title: String, startTime: Date, endTime: Date, options: StringDictionary[js.Any]): CalendarEvent = js.native
+    def createEvent(title: String, startTime: Date, endTime: Date, options: StringDictionary[Any]): CalendarEvent = js.native
     
     def createEventFromDescription(description: String): CalendarEvent = js.native
     
@@ -552,7 +552,7 @@ object Calendar {
       startTime: Date,
       endTime: Date,
       recurrence: EventRecurrence,
-      options: StringDictionary[js.Any]
+      options: StringDictionary[Any]
     ): CalendarEventSeries = js.native
     
     def getAllCalendars(): js.Array[typings.googleAppsScript.GoogleAppsScript.Calendar.Calendar] = js.native
@@ -574,10 +574,10 @@ object Calendar {
     def getEventSeriesById(iCalId: String): CalendarEventSeries = js.native
     
     def getEvents(startTime: Date, endTime: Date): js.Array[CalendarEvent] = js.native
-    def getEvents(startTime: Date, endTime: Date, options: StringDictionary[js.Any]): js.Array[CalendarEvent] = js.native
+    def getEvents(startTime: Date, endTime: Date, options: StringDictionary[Any]): js.Array[CalendarEvent] = js.native
     
     def getEventsForDay(date: Date): js.Array[CalendarEvent] = js.native
-    def getEventsForDay(date: Date, options: StringDictionary[js.Any]): js.Array[CalendarEvent] = js.native
+    def getEventsForDay(date: Date, options: StringDictionary[Any]): js.Array[CalendarEvent] = js.native
     
     def getId(): String = js.native
     
@@ -612,7 +612,7 @@ object Calendar {
     def setTimeZone(timeZone: String): typings.googleAppsScript.GoogleAppsScript.Calendar.Calendar = js.native
     
     def subscribeToCalendar(id: String): typings.googleAppsScript.GoogleAppsScript.Calendar.Calendar = js.native
-    def subscribeToCalendar(id: String, options: StringDictionary[js.Any]): typings.googleAppsScript.GoogleAppsScript.Calendar.Calendar = js.native
+    def subscribeToCalendar(id: String, options: StringDictionary[Any]): typings.googleAppsScript.GoogleAppsScript.Calendar.Calendar = js.native
   }
   
   /**
@@ -1500,7 +1500,7 @@ object Calendar {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: AclRule*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: AclRule*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -1674,7 +1674,7 @@ object Calendar {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: CalendarListEntry*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: CalendarListEntry*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -1759,7 +1759,7 @@ object Calendar {
         
         inline def setDefaultRemindersUndefined: Self = StObject.set(x, "defaultReminders", js.undefined)
         
-        inline def setDefaultRemindersVarargs(value: EventReminder*): Self = StObject.set(x, "defaultReminders", js.Array(value :_*))
+        inline def setDefaultRemindersVarargs(value: EventReminder*): Self = StObject.set(x, "defaultReminders", js.Array(value*))
         
         inline def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
         
@@ -1836,7 +1836,7 @@ object Calendar {
         
         inline def setNotificationsUndefined: Self = StObject.set(x, "notifications", js.undefined)
         
-        inline def setNotificationsVarargs(value: CalendarNotification*): Self = StObject.set(x, "notifications", js.Array(value :_*))
+        inline def setNotificationsVarargs(value: CalendarNotification*): Self = StObject.set(x, "notifications", js.Array(value*))
       }
     }
     
@@ -2041,7 +2041,7 @@ object Calendar {
         
         inline def setEntryPointsUndefined: Self = StObject.set(x, "entryPoints", js.undefined)
         
-        inline def setEntryPointsVarargs(value: EntryPoint*): Self = StObject.set(x, "entryPoints", js.Array(value :_*))
+        inline def setEntryPointsVarargs(value: EntryPoint*): Self = StObject.set(x, "entryPoints", js.Array(value*))
         
         inline def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
         
@@ -2112,7 +2112,7 @@ object Calendar {
         
         inline def setAllowedConferenceSolutionTypesUndefined: Self = StObject.set(x, "allowedConferenceSolutionTypes", js.undefined)
         
-        inline def setAllowedConferenceSolutionTypesVarargs(value: String*): Self = StObject.set(x, "allowedConferenceSolutionTypes", js.Array(value :_*))
+        inline def setAllowedConferenceSolutionTypesVarargs(value: String*): Self = StObject.set(x, "allowedConferenceSolutionTypes", js.Array(value*))
       }
     }
     
@@ -2255,7 +2255,7 @@ object Calendar {
         
         inline def setEntryPointFeaturesUndefined: Self = StObject.set(x, "entryPointFeatures", js.undefined)
         
-        inline def setEntryPointFeaturesVarargs(value: String*): Self = StObject.set(x, "entryPointFeatures", js.Array(value :_*))
+        inline def setEntryPointFeaturesVarargs(value: String*): Self = StObject.set(x, "entryPointFeatures", js.Array(value*))
         
         inline def setEntryPointType(value: String): Self = StObject.set(x, "entryPointType", value.asInstanceOf[js.Any])
         
@@ -2411,7 +2411,7 @@ object Calendar {
         
         inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
         
-        inline def setAttachmentsVarargs(value: EventAttachment*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+        inline def setAttachmentsVarargs(value: EventAttachment*): Self = StObject.set(x, "attachments", js.Array(value*))
         
         inline def setAttendees(value: js.Array[EventAttendee]): Self = StObject.set(x, "attendees", value.asInstanceOf[js.Any])
         
@@ -2421,7 +2421,7 @@ object Calendar {
         
         inline def setAttendeesUndefined: Self = StObject.set(x, "attendees", js.undefined)
         
-        inline def setAttendeesVarargs(value: EventAttendee*): Self = StObject.set(x, "attendees", js.Array(value :_*))
+        inline def setAttendeesVarargs(value: EventAttendee*): Self = StObject.set(x, "attendees", js.Array(value*))
         
         inline def setColorId(value: String): Self = StObject.set(x, "colorId", value.asInstanceOf[js.Any])
         
@@ -2519,7 +2519,7 @@ object Calendar {
         
         inline def setRecurrenceUndefined: Self = StObject.set(x, "recurrence", js.undefined)
         
-        inline def setRecurrenceVarargs(value: String*): Self = StObject.set(x, "recurrence", js.Array(value :_*))
+        inline def setRecurrenceVarargs(value: String*): Self = StObject.set(x, "recurrence", js.Array(value*))
         
         inline def setRecurringEventId(value: String): Self = StObject.set(x, "recurringEventId", value.asInstanceOf[js.Any])
         
@@ -2914,7 +2914,7 @@ object Calendar {
         
         inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
         
-        inline def setOverridesVarargs(value: EventReminder*): Self = StObject.set(x, "overrides", js.Array(value :_*))
+        inline def setOverridesVarargs(value: EventReminder*): Self = StObject.set(x, "overrides", js.Array(value*))
         
         inline def setUseDefault(value: Boolean): Self = StObject.set(x, "useDefault", value.asInstanceOf[js.Any])
         
@@ -2988,7 +2988,7 @@ object Calendar {
         
         inline def setDefaultRemindersUndefined: Self = StObject.set(x, "defaultReminders", js.undefined)
         
-        inline def setDefaultRemindersVarargs(value: EventReminder*): Self = StObject.set(x, "defaultReminders", js.Array(value :_*))
+        inline def setDefaultRemindersVarargs(value: EventReminder*): Self = StObject.set(x, "defaultReminders", js.Array(value*))
         
         inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
@@ -3002,7 +3002,7 @@ object Calendar {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Event*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Event*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -3049,13 +3049,13 @@ object Calendar {
         
         inline def setBusyUndefined: Self = StObject.set(x, "busy", js.undefined)
         
-        inline def setBusyVarargs(value: TimePeriod*): Self = StObject.set(x, "busy", js.Array(value :_*))
+        inline def setBusyVarargs(value: TimePeriod*): Self = StObject.set(x, "busy", js.Array(value*))
         
         inline def setErrors(value: js.Array[Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
         
         inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
         
-        inline def setErrorsVarargs(value: Error*): Self = StObject.set(x, "errors", js.Array(value :_*))
+        inline def setErrorsVarargs(value: Error*): Self = StObject.set(x, "errors", js.Array(value*))
       }
     }
     
@@ -3078,13 +3078,13 @@ object Calendar {
         
         inline def setCalendarsUndefined: Self = StObject.set(x, "calendars", js.undefined)
         
-        inline def setCalendarsVarargs(value: String*): Self = StObject.set(x, "calendars", js.Array(value :_*))
+        inline def setCalendarsVarargs(value: String*): Self = StObject.set(x, "calendars", js.Array(value*))
         
         inline def setErrors(value: js.Array[Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
         
         inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
         
-        inline def setErrorsVarargs(value: Error*): Self = StObject.set(x, "errors", js.Array(value :_*))
+        inline def setErrorsVarargs(value: Error*): Self = StObject.set(x, "errors", js.Array(value*))
       }
     }
     
@@ -3123,7 +3123,7 @@ object Calendar {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: FreeBusyRequestItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: FreeBusyRequestItem*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setTimeMax(value: String): Self = StObject.set(x, "timeMax", value.asInstanceOf[js.Any])
         
@@ -3267,7 +3267,7 @@ object Calendar {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Setting*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Setting*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         

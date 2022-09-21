@@ -42,7 +42,7 @@ object ASPxClientLegend {
     
     inline def setCustomItems(value: js.Array[ASPxClientCustomLegendItem]): Self = StObject.set(x, "customItems", value.asInstanceOf[js.Any])
     
-    inline def setCustomItemsVarargs(value: ASPxClientCustomLegendItem*): Self = StObject.set(x, "customItems", js.Array(value :_*))
+    inline def setCustomItemsVarargs(value: ASPxClientCustomLegendItem*): Self = StObject.set(x, "customItems", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

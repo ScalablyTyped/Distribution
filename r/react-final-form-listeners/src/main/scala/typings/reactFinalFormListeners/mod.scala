@@ -68,20 +68,20 @@ object mod {
   
   trait OnChangeProps extends StObject {
     
-    def children(value: js.Any, previous: js.Any): Unit
+    def children(value: Any, previous: Any): Unit
     
     var name: String
   }
   object OnChangeProps {
     
-    inline def apply(children: (js.Any, js.Any) => Unit, name: String): OnChangeProps = {
+    inline def apply(children: (Any, Any) => Unit, name: String): OnChangeProps = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction2(children), name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnChangeProps]
     }
     
     extension [Self <: OnChangeProps](x: Self) {
       
-      inline def setChildren(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
+      inline def setChildren(value: (Any, Any) => Unit): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

@@ -17,7 +17,7 @@ trait SearchAnalysesResponse extends StObject {
   var NextToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The AWS request ID for this operation.
+    * The Amazon Web Services request ID for this operation.
     */
   var RequestId: js.UndefOr[String] = js.undefined
   
@@ -39,7 +39,7 @@ object SearchAnalysesResponse {
     
     inline def setAnalysisSummaryListUndefined: Self = StObject.set(x, "AnalysisSummaryList", js.undefined)
     
-    inline def setAnalysisSummaryListVarargs(value: AnalysisSummary*): Self = StObject.set(x, "AnalysisSummaryList", js.Array(value :_*))
+    inline def setAnalysisSummaryListVarargs(value: AnalysisSummary*): Self = StObject.set(x, "AnalysisSummaryList", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

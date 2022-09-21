@@ -10,19 +10,19 @@ trait IgToolbarLocale
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Gets/Sets collapse button title.
     *
     */
-  var collapseButtonTitle: js.UndefOr[js.Any] = js.undefined
+  var collapseButtonTitle: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets/Sets expand button title.
     *
     */
-  var expandButtonTitle: js.UndefOr[js.Any] = js.undefined
+  var expandButtonTitle: js.UndefOr[Any] = js.undefined
 }
 object IgToolbarLocale {
   
@@ -33,11 +33,11 @@ object IgToolbarLocale {
   
   extension [Self <: IgToolbarLocale](x: Self) {
     
-    inline def setCollapseButtonTitle(value: js.Any): Self = StObject.set(x, "collapseButtonTitle", value.asInstanceOf[js.Any])
+    inline def setCollapseButtonTitle(value: Any): Self = StObject.set(x, "collapseButtonTitle", value.asInstanceOf[js.Any])
     
     inline def setCollapseButtonTitleUndefined: Self = StObject.set(x, "collapseButtonTitle", js.undefined)
     
-    inline def setExpandButtonTitle(value: js.Any): Self = StObject.set(x, "expandButtonTitle", value.asInstanceOf[js.Any])
+    inline def setExpandButtonTitle(value: Any): Self = StObject.set(x, "expandButtonTitle", value.asInstanceOf[js.Any])
     
     inline def setExpandButtonTitleUndefined: Self = StObject.set(x, "expandButtonTitle", js.undefined)
   }

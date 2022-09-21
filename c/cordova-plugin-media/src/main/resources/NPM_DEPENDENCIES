@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "cordova-plugin-media" : "5.0.3"
+      "cordova-plugin-media" : "6.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "cordova-plugin-media" : "5.0.3"
+      "cordova-plugin-media" : "6.1.0"
     }
   ],
   "compile-devDependencies" : [

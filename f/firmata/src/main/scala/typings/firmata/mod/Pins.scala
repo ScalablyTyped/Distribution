@@ -44,7 +44,7 @@ object Pins {
     
     inline def setSupportedModes(value: js.Array[PIN_MODE]): Self = StObject.set(x, "supportedModes", value.asInstanceOf[js.Any])
     
-    inline def setSupportedModesVarargs(value: PIN_MODE*): Self = StObject.set(x, "supportedModes", js.Array(value :_*))
+    inline def setSupportedModesVarargs(value: PIN_MODE*): Self = StObject.set(x, "supportedModes", js.Array(value*))
     
     inline def setValue(value: PIN_STATE | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

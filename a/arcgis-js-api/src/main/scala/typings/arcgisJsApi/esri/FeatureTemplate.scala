@@ -10,11 +10,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.circle
 import typings.arcgisJsApi.arcgisJsApiStrings.ellipse
 import typings.arcgisJsApi.arcgisJsApiStrings.freehand
 import typings.arcgisJsApi.arcgisJsApiStrings.line
-import typings.arcgisJsApi.arcgisJsApiStrings.none
+import typings.arcgisJsApi.arcgisJsApiStrings.none_
 import typings.arcgisJsApi.arcgisJsApiStrings.point
 import typings.arcgisJsApi.arcgisJsApiStrings.polygon
 import typings.arcgisJsApi.arcgisJsApiStrings.rectangle
-import typings.arcgisJsApi.arcgisJsApiStrings.triangle
+import typings.arcgisJsApi.arcgisJsApiStrings.triangle_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,7 +37,7 @@ trait FeatureTemplate
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureTemplate.html#drawingTool)
     */
-  var drawingTool: `auto-complete-polygon` | circle | ellipse | freehand | line | none | point | polygon | rectangle | arrow | triangle | `left-arrow` | `right-arrow` | `up-arrow` | `down-arrow` = js.native
+  var drawingTool: `auto-complete-polygon` | circle | ellipse | freehand | line | none_ | point | polygon | rectangle | arrow | triangle_ | `left-arrow` | `right-arrow` | `up-arrow` | `down-arrow` = js.native
   
   /**
     * Name of the feature template.

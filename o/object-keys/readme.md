@@ -10,10 +10,10 @@ An Object.keys replacement, in case Object.keys is not available. From https://g
 | ------------------ | :-------------: |
 | Full name          | object-keys |
 | Keywords           | Object.keys, keys, ES5, shim |
-| # releases         | 3 |
-| # dependents       | 222 |
-| # downloads        | 866336736 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.13207155E8 |
+| # stars            | 41.0 |
 
 ## Links
 - [Homepage](https://github.com/ljharb/object-keys#readme)

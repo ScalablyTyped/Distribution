@@ -12,7 +12,7 @@ trait JQuery extends StObject {
     * @param data 
     * @returns {} 
     */
-  def addJSONData(data: js.Array[js.Any]): Unit = js.native
+  def addJSONData(data: js.Array[Any]): Unit = js.native
   
   /**
     * Edits the row specified by rowid.
@@ -21,15 +21,15 @@ trait JQuery extends StObject {
     * @param keys when set to true we can use [Enter] key to save the row and [Esc] to cancel editing
     * @returns {} 
     */
-  def editRow(rowid: js.Any): Unit = js.native
-  def editRow(rowid: js.Any, keys: Boolean): Unit = js.native
+  def editRow(rowid: Any): Unit = js.native
+  def editRow(rowid: Any, keys: Boolean): Unit = js.native
   
   /**
     * Returns the value of the requested parameter. name is the name from the options array. If the name is not set, the entry options are returned.
     * @param name 
     * @returns {} 
     */
-  def getGridParam(name: String): js.Any = js.native
+  def getGridParam(name: String): Any = js.native
   
   var jqGrid: js.UndefOr[JQueryJqGridStatic] = js.native
   
@@ -39,8 +39,8 @@ trait JQuery extends StObject {
     * @param afterRestoreFunc if defined this function is called in after the row is restored.
     * @returns {} 
     */
-  def restoreRow(rowId: js.Any): Unit = js.native
-  def restoreRow(rowId: js.Any, afterRestoreFunc: js.Function1[/* response */ js.Any, Unit]): Unit = js.native
+  def restoreRow(rowId: Any): Unit = js.native
+  def restoreRow(rowId: Any, afterRestoreFunc: js.Function1[/* response */ Any, Unit]): Unit = js.native
   
   /**
     * Saves the edited row.
@@ -51,27 +51,22 @@ trait JQuery extends StObject {
     * @returns {} 
     */
   def saveRow(rowid: String): Unit = js.native
-  def saveRow(rowid: String, successfunc: js.Function1[/* response */ js.Any, Boolean]): Unit = js.native
-  def saveRow(rowid: String, successfunc: js.Function1[/* response */ js.Any, Boolean], url: String): Unit = js.native
+  def saveRow(rowid: String, successfunc: js.Function1[/* response */ Any, Boolean]): Unit = js.native
+  def saveRow(rowid: String, successfunc: js.Function1[/* response */ Any, Boolean], url: String): Unit = js.native
   def saveRow(
     rowid: String,
-    successfunc: js.Function1[/* response */ js.Any, Boolean],
+    successfunc: js.Function1[/* response */ Any, Boolean],
     url: String,
-    extraparam: js.Any
+    extraparam: Any
   ): Unit = js.native
-  def saveRow(
-    rowid: String,
-    successfunc: js.Function1[/* response */ js.Any, Boolean],
-    url: Unit,
-    extraparam: js.Any
-  ): Unit = js.native
+  def saveRow(rowid: String, successfunc: js.Function1[/* response */ Any, Boolean], url: Unit, extraparam: Any): Unit = js.native
   def saveRow(rowid: String, successfunc: Boolean): Unit = js.native
   def saveRow(rowid: String, successfunc: Boolean, url: String): Unit = js.native
-  def saveRow(rowid: String, successfunc: Boolean, url: String, extraparam: js.Any): Unit = js.native
-  def saveRow(rowid: String, successfunc: Boolean, url: Unit, extraparam: js.Any): Unit = js.native
+  def saveRow(rowid: String, successfunc: Boolean, url: String, extraparam: Any): Unit = js.native
+  def saveRow(rowid: String, successfunc: Boolean, url: Unit, extraparam: Any): Unit = js.native
   def saveRow(rowid: String, successfunc: Unit, url: String): Unit = js.native
-  def saveRow(rowid: String, successfunc: Unit, url: String, extraparam: js.Any): Unit = js.native
-  def saveRow(rowid: String, successfunc: Unit, url: Unit, extraparam: js.Any): Unit = js.native
+  def saveRow(rowid: String, successfunc: Unit, url: String, extraparam: Any): Unit = js.native
+  def saveRow(rowid: String, successfunc: Unit, url: Unit, extraparam: Any): Unit = js.native
   
   /**
     * Sets a particular parameter.
@@ -81,5 +76,5 @@ trait JQuery extends StObject {
     * @param obj 
     * @returns {} 
     */
-  def setGridParam(obj: js.Any): Unit = js.native
+  def setGridParam(obj: Any): Unit = js.native
 }

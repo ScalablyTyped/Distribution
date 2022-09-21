@@ -10,10 +10,10 @@ object mod {
   
   @JSImport("react-native-elevated-view", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ElevatedViewProperties, js.Object, js.Any]
+  open class default ()
+    extends Component[ElevatedViewProperties, js.Object, Any]
   
-  type ElevatedView = Component[ElevatedViewProperties, js.Object, js.Any]
+  type ElevatedView = Component[ElevatedViewProperties, js.Object, Any]
   
   trait ElevatedViewProperties
     extends StObject

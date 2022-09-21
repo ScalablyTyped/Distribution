@@ -1,7 +1,5 @@
 package typings.phaser.phaserMod
 
-import typings.phaser.integer
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,6 +16,20 @@ object Utils {
     @js.native
     val ^ : js.Any = js.native
     
+    inline def Add(array: js.Array[Any], item: js.Array[Any]): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Add")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def Add(array: js.Array[Any], item: js.Array[Any], limit: Double): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Add")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def Add(array: js.Array[Any], item: js.Array[Any], limit: Double, callback: js.Function): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Add")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def Add(
+      array: js.Array[Any],
+      item: js.Array[Any],
+      limit: Double,
+      callback: js.Function,
+      context: js.Object
+    ): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Add")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def Add(array: js.Array[Any], item: js.Array[Any], limit: Double, callback: Unit, context: js.Object): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Add")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def Add(array: js.Array[Any], item: js.Array[Any], limit: Unit, callback: js.Function): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Add")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def Add(array: js.Array[Any], item: js.Array[Any], limit: Unit, callback: js.Function, context: js.Object): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Add")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def Add(array: js.Array[Any], item: js.Array[Any], limit: Unit, callback: Unit, context: js.Object): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Add")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     /**
       * Adds the given item, or array of items, to the array.
       * 
@@ -35,41 +47,87 @@ object Utils {
       * @param callback A callback to be invoked for each item successfully added to the array.
       * @param context The context in which the callback is invoked.
       */
-    inline def Add(array: js.Array[js.Any], item: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Add")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def Add(array: js.Array[js.Any], item: js.Any, limit: Unit, callback: js.Function): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Add")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def Add(array: js.Array[js.Any], item: js.Any, limit: Unit, callback: js.Function, context: js.Object): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Add")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def Add(array: js.Array[js.Any], item: js.Any, limit: Unit, callback: Unit, context: js.Object): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Add")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def Add(array: js.Array[js.Any], item: js.Any, limit: integer): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Add")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def Add(array: js.Array[js.Any], item: js.Any, limit: integer, callback: js.Function): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Add")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def Add(array: js.Array[js.Any], item: js.Any, limit: integer, callback: js.Function, context: js.Object): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Add")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def Add(array: js.Array[js.Any], item: js.Any, limit: integer, callback: Unit, context: js.Object): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Add")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def Add(array: js.Array[js.Any], item: js.Array[js.Any]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Add")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def Add(array: js.Array[js.Any], item: js.Array[js.Any], limit: Unit, callback: js.Function): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Add")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def Add(
-      array: js.Array[js.Any],
-      item: js.Array[js.Any],
+    inline def Add(array: js.Array[Any], item: Any): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Add")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def Add(array: js.Array[Any], item: Any, limit: Double): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Add")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def Add(array: js.Array[Any], item: Any, limit: Double, callback: js.Function): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Add")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def Add(array: js.Array[Any], item: Any, limit: Double, callback: js.Function, context: js.Object): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Add")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def Add(array: js.Array[Any], item: Any, limit: Double, callback: Unit, context: js.Object): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Add")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def Add(array: js.Array[Any], item: Any, limit: Unit, callback: js.Function): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Add")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def Add(array: js.Array[Any], item: Any, limit: Unit, callback: js.Function, context: js.Object): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Add")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def Add(array: js.Array[Any], item: Any, limit: Unit, callback: Unit, context: js.Object): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Add")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    
+    inline def AddAt(array: js.Array[Any], item: js.Array[Any]): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def AddAt(array: js.Array[Any], item: js.Array[Any], index: Double): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def AddAt(array: js.Array[Any], item: js.Array[Any], index: Double, limit: Double): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def AddAt(array: js.Array[Any], item: js.Array[Any], index: Double, limit: Double, callback: js.Function): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def AddAt(
+      array: js.Array[Any],
+      item: js.Array[Any],
+      index: Double,
+      limit: Double,
+      callback: js.Function,
+      context: js.Object
+    ): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def AddAt(
+      array: js.Array[Any],
+      item: js.Array[Any],
+      index: Double,
+      limit: Double,
+      callback: Unit,
+      context: js.Object
+    ): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def AddAt(array: js.Array[Any], item: js.Array[Any], index: Double, limit: Unit, callback: js.Function): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def AddAt(
+      array: js.Array[Any],
+      item: js.Array[Any],
+      index: Double,
       limit: Unit,
       callback: js.Function,
       context: js.Object
-    ): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Add")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def Add(array: js.Array[js.Any], item: js.Array[js.Any], limit: Unit, callback: Unit, context: js.Object): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Add")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def Add(array: js.Array[js.Any], item: js.Array[js.Any], limit: integer): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Add")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def Add(array: js.Array[js.Any], item: js.Array[js.Any], limit: integer, callback: js.Function): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Add")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def Add(
-      array: js.Array[js.Any],
-      item: js.Array[js.Any],
-      limit: integer,
-      callback: js.Function,
-      context: js.Object
-    ): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Add")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def Add(
-      array: js.Array[js.Any],
-      item: js.Array[js.Any],
-      limit: integer,
+    ): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def AddAt(
+      array: js.Array[Any],
+      item: js.Array[Any],
+      index: Double,
+      limit: Unit,
       callback: Unit,
       context: js.Object
-    ): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Add")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    
+    ): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def AddAt(array: js.Array[Any], item: js.Array[Any], index: Unit, limit: Double): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def AddAt(array: js.Array[Any], item: js.Array[Any], index: Unit, limit: Double, callback: js.Function): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def AddAt(
+      array: js.Array[Any],
+      item: js.Array[Any],
+      index: Unit,
+      limit: Double,
+      callback: js.Function,
+      context: js.Object
+    ): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def AddAt(
+      array: js.Array[Any],
+      item: js.Array[Any],
+      index: Unit,
+      limit: Double,
+      callback: Unit,
+      context: js.Object
+    ): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def AddAt(array: js.Array[Any], item: js.Array[Any], index: Unit, limit: Unit, callback: js.Function): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def AddAt(
+      array: js.Array[Any],
+      item: js.Array[Any],
+      index: Unit,
+      limit: Unit,
+      callback: js.Function,
+      context: js.Object
+    ): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def AddAt(
+      array: js.Array[Any],
+      item: js.Array[Any],
+      index: Unit,
+      limit: Unit,
+      callback: Unit,
+      context: js.Object
+    ): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     /**
       * Adds the given item, or array of items, to the array starting at the index specified.
       * 
@@ -90,168 +148,50 @@ object Utils {
       * @param callback A callback to be invoked for each item successfully added to the array.
       * @param context The context in which the callback is invoked.
       */
-    inline def AddAt(array: js.Array[js.Any], item: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def AddAt(array: js.Array[js.Any], item: js.Any, index: Unit, limit: Unit, callback: js.Function): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def AddAt(array: js.Array[Any], item: Any): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def AddAt(array: js.Array[Any], item: Any, index: Double): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def AddAt(array: js.Array[Any], item: Any, index: Double, limit: Double): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def AddAt(array: js.Array[Any], item: Any, index: Double, limit: Double, callback: js.Function): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     inline def AddAt(
-      array: js.Array[js.Any],
-      item: js.Any,
+      array: js.Array[Any],
+      item: Any,
+      index: Double,
+      limit: Double,
+      callback: js.Function,
+      context: js.Object
+    ): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def AddAt(array: js.Array[Any], item: Any, index: Double, limit: Double, callback: Unit, context: js.Object): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def AddAt(array: js.Array[Any], item: Any, index: Double, limit: Unit, callback: js.Function): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def AddAt(
+      array: js.Array[Any],
+      item: Any,
+      index: Double,
+      limit: Unit,
+      callback: js.Function,
+      context: js.Object
+    ): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def AddAt(array: js.Array[Any], item: Any, index: Double, limit: Unit, callback: Unit, context: js.Object): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def AddAt(array: js.Array[Any], item: Any, index: Unit, limit: Double): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def AddAt(array: js.Array[Any], item: Any, index: Unit, limit: Double, callback: js.Function): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def AddAt(
+      array: js.Array[Any],
+      item: Any,
+      index: Unit,
+      limit: Double,
+      callback: js.Function,
+      context: js.Object
+    ): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def AddAt(array: js.Array[Any], item: Any, index: Unit, limit: Double, callback: Unit, context: js.Object): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def AddAt(array: js.Array[Any], item: Any, index: Unit, limit: Unit, callback: js.Function): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def AddAt(
+      array: js.Array[Any],
+      item: Any,
       index: Unit,
       limit: Unit,
       callback: js.Function,
       context: js.Object
-    ): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def AddAt(
-      array: js.Array[js.Any],
-      item: js.Any,
-      index: Unit,
-      limit: Unit,
-      callback: Unit,
-      context: js.Object
-    ): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def AddAt(array: js.Array[js.Any], item: js.Any, index: Unit, limit: integer): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def AddAt(array: js.Array[js.Any], item: js.Any, index: Unit, limit: integer, callback: js.Function): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def AddAt(
-      array: js.Array[js.Any],
-      item: js.Any,
-      index: Unit,
-      limit: integer,
-      callback: js.Function,
-      context: js.Object
-    ): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def AddAt(
-      array: js.Array[js.Any],
-      item: js.Any,
-      index: Unit,
-      limit: integer,
-      callback: Unit,
-      context: js.Object
-    ): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def AddAt(array: js.Array[js.Any], item: js.Any, index: integer): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def AddAt(array: js.Array[js.Any], item: js.Any, index: integer, limit: Unit, callback: js.Function): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def AddAt(
-      array: js.Array[js.Any],
-      item: js.Any,
-      index: integer,
-      limit: Unit,
-      callback: js.Function,
-      context: js.Object
-    ): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def AddAt(
-      array: js.Array[js.Any],
-      item: js.Any,
-      index: integer,
-      limit: Unit,
-      callback: Unit,
-      context: js.Object
-    ): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def AddAt(array: js.Array[js.Any], item: js.Any, index: integer, limit: integer): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def AddAt(array: js.Array[js.Any], item: js.Any, index: integer, limit: integer, callback: js.Function): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def AddAt(
-      array: js.Array[js.Any],
-      item: js.Any,
-      index: integer,
-      limit: integer,
-      callback: js.Function,
-      context: js.Object
-    ): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def AddAt(
-      array: js.Array[js.Any],
-      item: js.Any,
-      index: integer,
-      limit: integer,
-      callback: Unit,
-      context: js.Object
-    ): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def AddAt(array: js.Array[js.Any], item: js.Array[js.Any]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def AddAt(array: js.Array[js.Any], item: js.Array[js.Any], index: Unit, limit: Unit, callback: js.Function): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def AddAt(
-      array: js.Array[js.Any],
-      item: js.Array[js.Any],
-      index: Unit,
-      limit: Unit,
-      callback: js.Function,
-      context: js.Object
-    ): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def AddAt(
-      array: js.Array[js.Any],
-      item: js.Array[js.Any],
-      index: Unit,
-      limit: Unit,
-      callback: Unit,
-      context: js.Object
-    ): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def AddAt(array: js.Array[js.Any], item: js.Array[js.Any], index: Unit, limit: integer): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def AddAt(
-      array: js.Array[js.Any],
-      item: js.Array[js.Any],
-      index: Unit,
-      limit: integer,
-      callback: js.Function
-    ): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def AddAt(
-      array: js.Array[js.Any],
-      item: js.Array[js.Any],
-      index: Unit,
-      limit: integer,
-      callback: js.Function,
-      context: js.Object
-    ): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def AddAt(
-      array: js.Array[js.Any],
-      item: js.Array[js.Any],
-      index: Unit,
-      limit: integer,
-      callback: Unit,
-      context: js.Object
-    ): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def AddAt(array: js.Array[js.Any], item: js.Array[js.Any], index: integer): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def AddAt(
-      array: js.Array[js.Any],
-      item: js.Array[js.Any],
-      index: integer,
-      limit: Unit,
-      callback: js.Function
-    ): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def AddAt(
-      array: js.Array[js.Any],
-      item: js.Array[js.Any],
-      index: integer,
-      limit: Unit,
-      callback: js.Function,
-      context: js.Object
-    ): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def AddAt(
-      array: js.Array[js.Any],
-      item: js.Array[js.Any],
-      index: integer,
-      limit: Unit,
-      callback: Unit,
-      context: js.Object
-    ): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def AddAt(array: js.Array[js.Any], item: js.Array[js.Any], index: integer, limit: integer): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def AddAt(
-      array: js.Array[js.Any],
-      item: js.Array[js.Any],
-      index: integer,
-      limit: integer,
-      callback: js.Function
-    ): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def AddAt(
-      array: js.Array[js.Any],
-      item: js.Array[js.Any],
-      index: integer,
-      limit: integer,
-      callback: js.Function,
-      context: js.Object
-    ): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def AddAt(
-      array: js.Array[js.Any],
-      item: js.Array[js.Any],
-      index: integer,
-      limit: integer,
-      callback: Unit,
-      context: js.Object
-    ): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    ): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def AddAt(array: js.Array[Any], item: Any, index: Unit, limit: Unit, callback: Unit, context: js.Object): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAt")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     
     /**
       * Moves the given element to the top of the array.
@@ -259,7 +199,7 @@ object Utils {
       * @param array The array.
       * @param item The element to move.
       */
-    inline def BringToTop(array: js.Array[js.Any], item: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("BringToTop")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def BringToTop(array: js.Array[Any], item: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("BringToTop")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     /**
       * Returns the total number of elements in the array which have a property matching the given value.
@@ -269,10 +209,10 @@ object Utils {
       * @param startIndex An optional start index to search from.
       * @param endIndex An optional end index to search to.
       */
-    inline def CountAllMatching(array: js.Array[js.Any], property: String, value: js.Any): integer = (^.asInstanceOf[js.Dynamic].applyDynamic("CountAllMatching")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[integer]
-    inline def CountAllMatching(array: js.Array[js.Any], property: String, value: js.Any, startIndex: Unit, endIndex: integer): integer = (^.asInstanceOf[js.Dynamic].applyDynamic("CountAllMatching")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[integer]
-    inline def CountAllMatching(array: js.Array[js.Any], property: String, value: js.Any, startIndex: integer): integer = (^.asInstanceOf[js.Dynamic].applyDynamic("CountAllMatching")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[integer]
-    inline def CountAllMatching(array: js.Array[js.Any], property: String, value: js.Any, startIndex: integer, endIndex: integer): integer = (^.asInstanceOf[js.Dynamic].applyDynamic("CountAllMatching")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[integer]
+    inline def CountAllMatching(array: js.Array[Any], property: String, value: Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("CountAllMatching")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def CountAllMatching(array: js.Array[Any], property: String, value: Any, startIndex: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("CountAllMatching")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def CountAllMatching(array: js.Array[Any], property: String, value: Any, startIndex: Double, endIndex: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("CountAllMatching")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def CountAllMatching(array: js.Array[Any], property: String, value: Any, startIndex: Unit, endIndex: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("CountAllMatching")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Passes each element in the array to the given callback.
@@ -281,7 +221,7 @@ object Utils {
       * @param context The context in which the callback is invoked.
       * @param args Additional arguments that will be passed to the callback, after the current array item.
       */
-    inline def Each(array: js.Array[js.Any], callback: js.Function, context: js.Object, args: js.Any*): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Each")(array.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def Each(array: js.Array[Any], callback: js.Function, context: js.Object, args: Any*): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Each")((List(array.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[Any]]
     
     /**
       * Passes each element in the array, between the start and end indexes, to the given callback.
@@ -293,13 +233,13 @@ object Utils {
       * @param args Additional arguments that will be passed to the callback, after the child.
       */
     inline def EachInRange(
-      array: js.Array[js.Any],
+      array: js.Array[Any],
       callback: js.Function,
       context: js.Object,
-      startIndex: integer,
-      endIndex: integer,
-      args: js.Any*
-    ): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("EachInRange")(array.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+      startIndex: Double,
+      endIndex: Double,
+      args: Any*
+    ): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("EachInRange")((List(array.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Array[Any]]
     
     /**
       * Searches a pre-sorted array for the closet value to the given number.
@@ -310,8 +250,8 @@ object Utils {
       * @param array The array to search, which must be sorted.
       * @param key An optional property key. If specified the array elements property will be checked against value.
       */
-    inline def FindClosestInSorted(value: Double, array: js.Array[js.Any]): Double | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("FindClosestInSorted")(value.asInstanceOf[js.Any], array.asInstanceOf[js.Any])).asInstanceOf[Double | js.Any]
-    inline def FindClosestInSorted(value: Double, array: js.Array[js.Any], key: String): Double | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("FindClosestInSorted")(value.asInstanceOf[js.Any], array.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Double | js.Any]
+    inline def FindClosestInSorted(value: Double, array: js.Array[Any]): Double | Any = (^.asInstanceOf[js.Dynamic].applyDynamic("FindClosestInSorted")(value.asInstanceOf[js.Any], array.asInstanceOf[js.Any])).asInstanceOf[Double | Any]
+    inline def FindClosestInSorted(value: Double, array: js.Array[Any], key: String): Double | Any = (^.asInstanceOf[js.Dynamic].applyDynamic("FindClosestInSorted")(value.asInstanceOf[js.Any], array.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Double | Any]
     
     /**
       * Returns all elements in the array.
@@ -329,22 +269,22 @@ object Utils {
       * @param startIndex An optional start index to search from.
       * @param endIndex An optional end index to search to.
       */
-    inline def GetAll(array: js.Array[js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetAll")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
-    inline def GetAll(array: js.Array[js.Any], property: String): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetAll")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def GetAll(array: js.Array[js.Any], property: String, value: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetAll")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def GetAll(array: js.Array[js.Any], property: String, value: js.Any, startIndex: Unit, endIndex: integer): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetAll")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def GetAll(array: js.Array[js.Any], property: String, value: js.Any, startIndex: integer): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetAll")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def GetAll(array: js.Array[js.Any], property: String, value: js.Any, startIndex: integer, endIndex: integer): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetAll")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def GetAll(array: js.Array[js.Any], property: String, value: Unit, startIndex: Unit, endIndex: integer): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetAll")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def GetAll(array: js.Array[js.Any], property: String, value: Unit, startIndex: integer): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetAll")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def GetAll(array: js.Array[js.Any], property: String, value: Unit, startIndex: integer, endIndex: integer): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetAll")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def GetAll(array: js.Array[js.Any], property: Unit, value: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetAll")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def GetAll(array: js.Array[js.Any], property: Unit, value: js.Any, startIndex: Unit, endIndex: integer): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetAll")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def GetAll(array: js.Array[js.Any], property: Unit, value: js.Any, startIndex: integer): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetAll")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def GetAll(array: js.Array[js.Any], property: Unit, value: js.Any, startIndex: integer, endIndex: integer): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetAll")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def GetAll(array: js.Array[js.Any], property: Unit, value: Unit, startIndex: Unit, endIndex: integer): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetAll")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def GetAll(array: js.Array[js.Any], property: Unit, value: Unit, startIndex: integer): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetAll")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def GetAll(array: js.Array[js.Any], property: Unit, value: Unit, startIndex: integer, endIndex: integer): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetAll")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def GetAll(array: js.Array[Any]): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetAll")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
+    inline def GetAll(array: js.Array[Any], property: String): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetAll")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def GetAll(array: js.Array[Any], property: String, value: Any): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetAll")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def GetAll(array: js.Array[Any], property: String, value: Any, startIndex: Double): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetAll")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def GetAll(array: js.Array[Any], property: String, value: Any, startIndex: Double, endIndex: Double): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetAll")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def GetAll(array: js.Array[Any], property: String, value: Any, startIndex: Unit, endIndex: Double): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetAll")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def GetAll(array: js.Array[Any], property: String, value: Unit, startIndex: Double): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetAll")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def GetAll(array: js.Array[Any], property: String, value: Unit, startIndex: Double, endIndex: Double): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetAll")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def GetAll(array: js.Array[Any], property: String, value: Unit, startIndex: Unit, endIndex: Double): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetAll")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def GetAll(array: js.Array[Any], property: Unit, value: Any): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetAll")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def GetAll(array: js.Array[Any], property: Unit, value: Any, startIndex: Double): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetAll")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def GetAll(array: js.Array[Any], property: Unit, value: Any, startIndex: Double, endIndex: Double): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetAll")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def GetAll(array: js.Array[Any], property: Unit, value: Any, startIndex: Unit, endIndex: Double): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetAll")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def GetAll(array: js.Array[Any], property: Unit, value: Unit, startIndex: Double): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetAll")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def GetAll(array: js.Array[Any], property: Unit, value: Unit, startIndex: Double, endIndex: Double): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetAll")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def GetAll(array: js.Array[Any], property: Unit, value: Unit, startIndex: Unit, endIndex: Double): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("GetAll")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     
     /**
       * Returns the first element in the array.
@@ -361,22 +301,22 @@ object Utils {
       * @param startIndex An optional start index to search from. Default 0.
       * @param endIndex An optional end index to search up to (but not included) Default array.length.
       */
-    inline def GetFirst(array: js.Array[js.Any]): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("GetFirst")(array.asInstanceOf[js.Any]).asInstanceOf[js.Object]
-    inline def GetFirst(array: js.Array[js.Any], property: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirst")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-    inline def GetFirst(array: js.Array[js.Any], property: String, value: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirst")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-    inline def GetFirst(array: js.Array[js.Any], property: String, value: js.Any, startIndex: Unit, endIndex: integer): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirst")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-    inline def GetFirst(array: js.Array[js.Any], property: String, value: js.Any, startIndex: integer): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirst")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-    inline def GetFirst(array: js.Array[js.Any], property: String, value: js.Any, startIndex: integer, endIndex: integer): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirst")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-    inline def GetFirst(array: js.Array[js.Any], property: String, value: Unit, startIndex: Unit, endIndex: integer): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirst")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-    inline def GetFirst(array: js.Array[js.Any], property: String, value: Unit, startIndex: integer): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirst")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-    inline def GetFirst(array: js.Array[js.Any], property: String, value: Unit, startIndex: integer, endIndex: integer): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirst")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-    inline def GetFirst(array: js.Array[js.Any], property: Unit, value: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirst")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-    inline def GetFirst(array: js.Array[js.Any], property: Unit, value: js.Any, startIndex: Unit, endIndex: integer): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirst")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-    inline def GetFirst(array: js.Array[js.Any], property: Unit, value: js.Any, startIndex: integer): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirst")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-    inline def GetFirst(array: js.Array[js.Any], property: Unit, value: js.Any, startIndex: integer, endIndex: integer): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirst")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-    inline def GetFirst(array: js.Array[js.Any], property: Unit, value: Unit, startIndex: Unit, endIndex: integer): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirst")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-    inline def GetFirst(array: js.Array[js.Any], property: Unit, value: Unit, startIndex: integer): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirst")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-    inline def GetFirst(array: js.Array[js.Any], property: Unit, value: Unit, startIndex: integer, endIndex: integer): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirst")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    inline def GetFirst(array: js.Array[Any]): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("GetFirst")(array.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+    inline def GetFirst(array: js.Array[Any], property: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirst")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    inline def GetFirst(array: js.Array[Any], property: String, value: Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirst")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    inline def GetFirst(array: js.Array[Any], property: String, value: Any, startIndex: Double): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirst")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    inline def GetFirst(array: js.Array[Any], property: String, value: Any, startIndex: Double, endIndex: Double): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirst")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    inline def GetFirst(array: js.Array[Any], property: String, value: Any, startIndex: Unit, endIndex: Double): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirst")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    inline def GetFirst(array: js.Array[Any], property: String, value: Unit, startIndex: Double): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirst")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    inline def GetFirst(array: js.Array[Any], property: String, value: Unit, startIndex: Double, endIndex: Double): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirst")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    inline def GetFirst(array: js.Array[Any], property: String, value: Unit, startIndex: Unit, endIndex: Double): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirst")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    inline def GetFirst(array: js.Array[Any], property: Unit, value: Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirst")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    inline def GetFirst(array: js.Array[Any], property: Unit, value: Any, startIndex: Double): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirst")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    inline def GetFirst(array: js.Array[Any], property: Unit, value: Any, startIndex: Double, endIndex: Double): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirst")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    inline def GetFirst(array: js.Array[Any], property: Unit, value: Any, startIndex: Unit, endIndex: Double): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirst")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    inline def GetFirst(array: js.Array[Any], property: Unit, value: Unit, startIndex: Double): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirst")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    inline def GetFirst(array: js.Array[Any], property: Unit, value: Unit, startIndex: Double, endIndex: Double): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirst")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    inline def GetFirst(array: js.Array[Any], property: Unit, value: Unit, startIndex: Unit, endIndex: Double): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirst")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Object]
     
     /**
       * Returns a Random element from the array.
@@ -384,10 +324,10 @@ object Utils {
       * @param startIndex An optional start index. Default 0.
       * @param length An optional length, the total number of elements (from the startIndex) to choose from. Default array.length.
       */
-    inline def GetRandom(array: js.Array[js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetRandom")(array.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def GetRandom(array: js.Array[js.Any], startIndex: Unit, length: integer): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetRandom")(array.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def GetRandom(array: js.Array[js.Any], startIndex: integer): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetRandom")(array.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def GetRandom(array: js.Array[js.Any], startIndex: integer, length: integer): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetRandom")(array.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def GetRandom(array: js.Array[Any]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetRandom")(array.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def GetRandom(array: js.Array[Any], startIndex: Double): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetRandom")(array.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def GetRandom(array: js.Array[Any], startIndex: Double, length: Double): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetRandom")(array.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def GetRandom(array: js.Array[Any], startIndex: Unit, length: Double): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetRandom")(array.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     object Matrix {
       
@@ -398,17 +338,18 @@ object Utils {
       /**
         * Checks if an array can be used as a matrix.
         * 
-        * A matrix is a two-dimensional array (array of arrays), where all sub-arrays (rows) have the same length. There must be at least two rows:
+        * A matrix is a two-dimensional array (array of arrays), where all sub-arrays (rows)
+        * have the same length. There must be at least two rows. This is an example matrix:
         * 
         * ```
-        *    [
-        *        [ 1, 1, 1, 1, 1, 1 ],
-        *        [ 2, 0, 0, 0, 0, 4 ],
-        *        [ 2, 0, 1, 2, 0, 4 ],
-        *        [ 2, 0, 3, 4, 0, 4 ],
-        *        [ 2, 0, 0, 0, 0, 4 ],
-        *        [ 3, 3, 3, 3, 3, 3 ]
-        *    ]
+        * [
+        *    [ 1, 1, 1, 1, 1, 1 ],
+        *    [ 2, 0, 0, 0, 0, 4 ],
+        *    [ 2, 0, 1, 2, 0, 4 ],
+        *    [ 2, 0, 3, 4, 0, 4 ],
+        *    [ 2, 0, 0, 0, 0, 4 ],
+        *    [ 3, 3, 3, 3, 3, 3 ]
+        * ]
         * ```
         * @param matrix The array to check.
         */
@@ -417,6 +358,20 @@ object Utils {
       
       /**
         * Generates a string (which you can pass to console.log) from the given Array Matrix.
+        * 
+        * A matrix is a two-dimensional array (array of arrays), where all sub-arrays (rows)
+        * have the same length. There must be at least two rows. This is an example matrix:
+        * 
+        * ```
+        * [
+        *    [ 1, 1, 1, 1, 1, 1 ],
+        *    [ 2, 0, 0, 0, 0, 4 ],
+        *    [ 2, 0, 1, 2, 0, 4 ],
+        *    [ 2, 0, 3, 4, 0, 4 ],
+        *    [ 2, 0, 0, 0, 0, 4 ],
+        *    [ 3, 3, 3, 3, 3, 3 ]
+        * ]
+        * ```
         * @param matrix A 2-dimensional array.
         */
       inline def MatrixToString[T](): String = ^.asInstanceOf[js.Dynamic].applyDynamic("MatrixToString")().asInstanceOf[String]
@@ -424,6 +379,20 @@ object Utils {
       
       /**
         * Reverses the columns in the given Array Matrix.
+        * 
+        * A matrix is a two-dimensional array (array of arrays), where all sub-arrays (rows)
+        * have the same length. There must be at least two rows. This is an example matrix:
+        * 
+        * ```
+        * [
+        *    [ 1, 1, 1, 1, 1, 1 ],
+        *    [ 2, 0, 0, 0, 0, 4 ],
+        *    [ 2, 0, 1, 2, 0, 4 ],
+        *    [ 2, 0, 3, 4, 0, 4 ],
+        *    [ 2, 0, 0, 0, 0, 4 ],
+        *    [ 3, 3, 3, 3, 3, 3 ]
+        * ]
+        * ```
         * @param matrix The array matrix to reverse the columns for.
         */
       inline def ReverseColumns[T](): js.Array[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ReverseColumns")().asInstanceOf[js.Array[js.Array[T]]]
@@ -431,6 +400,20 @@ object Utils {
       
       /**
         * Reverses the rows in the given Array Matrix.
+        * 
+        * A matrix is a two-dimensional array (array of arrays), where all sub-arrays (rows)
+        * have the same length. There must be at least two rows. This is an example matrix:
+        * 
+        * ```
+        * [
+        *    [ 1, 1, 1, 1, 1, 1 ],
+        *    [ 2, 0, 0, 0, 0, 4 ],
+        *    [ 2, 0, 1, 2, 0, 4 ],
+        *    [ 2, 0, 3, 4, 0, 4 ],
+        *    [ 2, 0, 0, 0, 0, 4 ],
+        *    [ 3, 3, 3, 3, 3, 3 ]
+        * ]
+        * ```
         * @param matrix The array matrix to reverse the rows for.
         */
       inline def ReverseRows[T](): js.Array[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ReverseRows")().asInstanceOf[js.Array[js.Array[T]]]
@@ -438,6 +421,20 @@ object Utils {
       
       /**
         * Rotates the array matrix 180 degrees.
+        * 
+        * A matrix is a two-dimensional array (array of arrays), where all sub-arrays (rows)
+        * have the same length. There must be at least two rows. This is an example matrix:
+        * 
+        * ```
+        * [
+        *    [ 1, 1, 1, 1, 1, 1 ],
+        *    [ 2, 0, 0, 0, 0, 4 ],
+        *    [ 2, 0, 1, 2, 0, 4 ],
+        *    [ 2, 0, 3, 4, 0, 4 ],
+        *    [ 2, 0, 0, 0, 0, 4 ],
+        *    [ 3, 3, 3, 3, 3, 3 ]
+        * ]
+        * ```
         * @param matrix The array to rotate.
         */
       inline def Rotate180[T](): js.Array[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("Rotate180")().asInstanceOf[js.Array[js.Array[T]]]
@@ -445,6 +442,20 @@ object Utils {
       
       /**
         * Rotates the array matrix to the left (or 90 degrees)
+        * 
+        * A matrix is a two-dimensional array (array of arrays), where all sub-arrays (rows)
+        * have the same length. There must be at least two rows. This is an example matrix:
+        * 
+        * ```
+        * [
+        *    [ 1, 1, 1, 1, 1, 1 ],
+        *    [ 2, 0, 0, 0, 0, 4 ],
+        *    [ 2, 0, 1, 2, 0, 4 ],
+        *    [ 2, 0, 3, 4, 0, 4 ],
+        *    [ 2, 0, 0, 0, 0, 4 ],
+        *    [ 3, 3, 3, 3, 3, 3 ]
+        * ]
+        * ```
         * @param matrix The array to rotate.
         */
       inline def RotateLeft[T](): js.Array[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("RotateLeft")().asInstanceOf[js.Array[js.Array[T]]]
@@ -457,6 +468,20 @@ object Utils {
         * or a string command: `rotateLeft`, `rotateRight` or `rotate180`.
         * 
         * Based on the routine from {@link http://jsfiddle.net/MrPolywhirl/NH42z/}.
+        * 
+        * A matrix is a two-dimensional array (array of arrays), where all sub-arrays (rows)
+        * have the same length. There must be at least two rows. This is an example matrix:
+        * 
+        * ```
+        * [
+        *    [ 1, 1, 1, 1, 1, 1 ],
+        *    [ 2, 0, 0, 0, 0, 4 ],
+        *    [ 2, 0, 1, 2, 0, 4 ],
+        *    [ 2, 0, 3, 4, 0, 4 ],
+        *    [ 2, 0, 0, 0, 0, 4 ],
+        *    [ 3, 3, 3, 3, 3, 3 ]
+        * ]
+        * ```
         * @param matrix The array to rotate.
         * @param direction The amount to rotate the matrix by. Default 90.
         */
@@ -469,15 +494,73 @@ object Utils {
       
       /**
         * Rotates the array matrix to the left (or -90 degrees)
+        * 
+        * A matrix is a two-dimensional array (array of arrays), where all sub-arrays (rows)
+        * have the same length. There must be at least two rows. This is an example matrix:
+        * 
+        * ```
+        * [
+        *    [ 1, 1, 1, 1, 1, 1 ],
+        *    [ 2, 0, 0, 0, 0, 4 ],
+        *    [ 2, 0, 1, 2, 0, 4 ],
+        *    [ 2, 0, 3, 4, 0, 4 ],
+        *    [ 2, 0, 0, 0, 0, 4 ],
+        *    [ 3, 3, 3, 3, 3, 3 ]
+        * ]
+        * ```
         * @param matrix The array to rotate.
         */
       inline def RotateRight[T](): js.Array[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("RotateRight")().asInstanceOf[js.Array[js.Array[T]]]
       inline def RotateRight[T](matrix: js.Array[js.Array[T]]): js.Array[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("RotateRight")(matrix.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[T]]]
       
       /**
+        * Translates the given Array Matrix by shifting each column and row the
+        * amount specified.
+        * 
+        * A matrix is a two-dimensional array (array of arrays), where all sub-arrays (rows)
+        * have the same length. There must be at least two rows. This is an example matrix:
+        * 
+        * ```
+        * [
+        *    [ 1, 1, 1, 1, 1, 1 ],
+        *    [ 2, 0, 0, 0, 0, 4 ],
+        *    [ 2, 0, 1, 2, 0, 4 ],
+        *    [ 2, 0, 3, 4, 0, 4 ],
+        *    [ 2, 0, 0, 0, 0, 4 ],
+        *    [ 3, 3, 3, 3, 3, 3 ]
+        * ]
+        * ```
+        * @param matrix The array matrix to translate.
+        * @param x The amount to horizontally translate the matrix by. Default 0.
+        * @param y The amount to vertically translate the matrix by. Default 0.
+        */
+      inline def Translate[T](): js.Array[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("Translate")().asInstanceOf[js.Array[js.Array[T]]]
+      inline def Translate[T](matrix: js.Array[js.Array[T]]): js.Array[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("Translate")(matrix.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[T]]]
+      inline def Translate[T](matrix: js.Array[js.Array[T]], x: Double): js.Array[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("Translate")(matrix.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[T]]]
+      inline def Translate[T](matrix: js.Array[js.Array[T]], x: Double, y: Double): js.Array[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("Translate")(matrix.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[T]]]
+      inline def Translate[T](matrix: js.Array[js.Array[T]], x: Unit, y: Double): js.Array[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("Translate")(matrix.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[T]]]
+      inline def Translate[T](matrix: Unit, x: Double): js.Array[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("Translate")(matrix.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[T]]]
+      inline def Translate[T](matrix: Unit, x: Double, y: Double): js.Array[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("Translate")(matrix.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[T]]]
+      inline def Translate[T](matrix: Unit, x: Unit, y: Double): js.Array[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("Translate")(matrix.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[T]]]
+      
+      /**
         * Transposes the elements of the given matrix (array of arrays).
         * 
         * The transpose of a matrix is a new matrix whose rows are the columns of the original.
+        * 
+        * A matrix is a two-dimensional array (array of arrays), where all sub-arrays (rows)
+        * have the same length. There must be at least two rows. This is an example matrix:
+        * 
+        * ```
+        * [
+        *    [ 1, 1, 1, 1, 1, 1 ],
+        *    [ 2, 0, 0, 0, 0, 4 ],
+        *    [ 2, 0, 1, 2, 0, 4 ],
+        *    [ 2, 0, 3, 4, 0, 4 ],
+        *    [ 2, 0, 0, 0, 0, 4 ],
+        *    [ 3, 3, 3, 3, 3, 3 ]
+        * ]
+        * ```
         * @param array The array matrix to transpose.
         */
       inline def TransposeMatrix[T](): js.Array[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("TransposeMatrix")().asInstanceOf[js.Array[js.Array[T]]]
@@ -485,12 +568,30 @@ object Utils {
     }
     
     /**
+      * Moves the given array element above another one in the array.
+      * The array is modified in-place.
+      * @param array The input array.
+      * @param item1 The element to move above base element.
+      * @param item2 The base element.
+      */
+    inline def MoveAbove(array: js.Array[Any], item1: Any, item2: Any): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("MoveAbove")(array.asInstanceOf[js.Any], item1.asInstanceOf[js.Any], item2.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    
+    /**
+      * Moves the given array element below another one in the array.
+      * The array is modified in-place.
+      * @param array The input array.
+      * @param item1 The element to move below base element.
+      * @param item2 The base element.
+      */
+    inline def MoveBelow(array: js.Array[Any], item1: Any, item2: Any): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("MoveBelow")(array.asInstanceOf[js.Any], item1.asInstanceOf[js.Any], item2.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    
+    /**
       * Moves the given array element down one place in the array.
       * The array is modified in-place.
       * @param array The input array.
       * @param item The element to move down the array.
       */
-    inline def MoveDown(array: js.Array[js.Any], item: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("MoveDown")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def MoveDown(array: js.Array[Any], item: Any): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("MoveDown")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     
     /**
       * Moves an element in an array to a new position within the same array.
@@ -499,7 +600,7 @@ object Utils {
       * @param item The element to move.
       * @param index The new index that the element will be moved to.
       */
-    inline def MoveTo(array: js.Array[js.Any], item: js.Any, index: integer): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("MoveTo")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def MoveTo(array: js.Array[Any], item: Any, index: Double): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("MoveTo")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     /**
       * Moves the given array element up one place in the array.
@@ -507,22 +608,23 @@ object Utils {
       * @param array The input array.
       * @param item The element to move up the array.
       */
-    inline def MoveUp(array: js.Array[js.Any], item: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("MoveUp")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def MoveUp(array: js.Array[Any], item: Any): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("MoveUp")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     
     /**
       * Create an array representing the range of numbers (usually integers), between, and inclusive of,
       * the given `start` and `end` arguments. For example:
       * 
-      * `var array = numberArray(2, 4); // array = [2, 3, 4]`
-      * `var array = numberArray(0, 9); // array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]`
+      * `var array = Phaser.Utils.Array.NumberArray(2, 4); // array = [2, 3, 4]`
+      * `var array = Phaser.Utils.Array.NumberArray(0, 9); // array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]`
+      * `var array = Phaser.Utils.Array.NumberArray(8, 2); // array = [8, 7, 6, 5, 4, 3, 2]`
       * 
-      * This is equivalent to `numberArrayStep(start, end, 1)`.
+      * This is equivalent to `Phaser.Utils.Array.NumberArrayStep(start, end, 1)`.
       * 
       * You can optionally provide a prefix and / or suffix string. If given the array will contain
       * strings, not integers. For example:
       * 
-      * `var array = numberArray(1, 4, 'Level '); // array = ["Level 1", "Level 2", "Level 3", "Level 4"]`
-      * `var array = numberArray(5, 7, 'HD-', '.png'); // array = ["HD-5.png", "HD-6.png", "HD-7.png"]`
+      * `var array = Phaser.Utils.Array.NumberArray(1, 4, 'Level '); // array = ["Level 1", "Level 2", "Level 3", "Level 4"]`
+      * `var array = Phaser.Utils.Array.NumberArray(5, 7, 'HD-', '.png'); // array = ["HD-5.png", "HD-6.png", "HD-7.png"]`
       * @param start The minimum value the array starts with.
       * @param end The maximum value the array contains.
       * @param prefix Optional prefix to place before the number. If provided the array will contain strings, not integers.
@@ -569,14 +671,14 @@ object Utils {
       * @param right The index of the right part of the range.
       * @param compare An optional comparison function. Is passed two elements and should return 0, 1 or -1.
       */
-    inline def QuickSelect(arr: js.Array[js.Any], k: integer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickSelect")(arr.asInstanceOf[js.Any], k.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def QuickSelect(arr: js.Array[js.Any], k: integer, left: Unit, right: Unit, compare: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickSelect")(arr.asInstanceOf[js.Any], k.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def QuickSelect(arr: js.Array[js.Any], k: integer, left: Unit, right: integer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickSelect")(arr.asInstanceOf[js.Any], k.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def QuickSelect(arr: js.Array[js.Any], k: integer, left: Unit, right: integer, compare: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickSelect")(arr.asInstanceOf[js.Any], k.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def QuickSelect(arr: js.Array[js.Any], k: integer, left: integer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickSelect")(arr.asInstanceOf[js.Any], k.asInstanceOf[js.Any], left.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def QuickSelect(arr: js.Array[js.Any], k: integer, left: integer, right: Unit, compare: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickSelect")(arr.asInstanceOf[js.Any], k.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def QuickSelect(arr: js.Array[js.Any], k: integer, left: integer, right: integer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickSelect")(arr.asInstanceOf[js.Any], k.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def QuickSelect(arr: js.Array[js.Any], k: integer, left: integer, right: integer, compare: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickSelect")(arr.asInstanceOf[js.Any], k.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def QuickSelect(arr: js.Array[Any], k: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickSelect")(arr.asInstanceOf[js.Any], k.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def QuickSelect(arr: js.Array[Any], k: Double, left: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickSelect")(arr.asInstanceOf[js.Any], k.asInstanceOf[js.Any], left.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def QuickSelect(arr: js.Array[Any], k: Double, left: Double, right: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickSelect")(arr.asInstanceOf[js.Any], k.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def QuickSelect(arr: js.Array[Any], k: Double, left: Double, right: Double, compare: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickSelect")(arr.asInstanceOf[js.Any], k.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def QuickSelect(arr: js.Array[Any], k: Double, left: Double, right: Unit, compare: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickSelect")(arr.asInstanceOf[js.Any], k.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def QuickSelect(arr: js.Array[Any], k: Double, left: Unit, right: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickSelect")(arr.asInstanceOf[js.Any], k.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def QuickSelect(arr: js.Array[Any], k: Double, left: Unit, right: Double, compare: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickSelect")(arr.asInstanceOf[js.Any], k.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def QuickSelect(arr: js.Array[Any], k: Double, left: Unit, right: Unit, compare: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickSelect")(arr.asInstanceOf[js.Any], k.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Creates an array populated with a range of values, based on the given arguments and configuration object.
@@ -612,9 +714,13 @@ object Utils {
       * @param b The second array of range elements.
       * @param options A range configuration object. Can contain: repeat, random, randomB, yoyo, max, qty.
       */
-    inline def Range(a: js.Array[js.Any], b: js.Array[js.Any]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Range")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def Range(a: js.Array[js.Any], b: js.Array[js.Any], options: js.Object): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Range")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def Range(a: js.Array[Any], b: js.Array[Any]): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Range")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def Range(a: js.Array[Any], b: js.Array[Any], options: js.Object): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Range")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     
+    inline def Remove(array: js.Array[Any], item: js.Array[Any]): Any | js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Remove")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Any | js.Array[Any]]
+    inline def Remove(array: js.Array[Any], item: js.Array[Any], callback: js.Function): Any | js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Remove")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any | js.Array[Any]]
+    inline def Remove(array: js.Array[Any], item: js.Array[Any], callback: js.Function, context: js.Object): Any | js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Remove")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Any | js.Array[Any]]
+    inline def Remove(array: js.Array[Any], item: js.Array[Any], callback: Unit, context: js.Object): Any | js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Remove")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Any | js.Array[Any]]
     /**
       * Removes the given item, or array of items, from the array.
       * 
@@ -626,14 +732,10 @@ object Utils {
       * @param callback A callback to be invoked for each item successfully removed from the array.
       * @param context The context in which the callback is invoked.
       */
-    inline def Remove(array: js.Array[js.Any], item: js.Any): js.Any | js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Remove")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[js.Any | js.Array[js.Any]]
-    inline def Remove(array: js.Array[js.Any], item: js.Any, callback: js.Function): js.Any | js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Remove")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any | js.Array[js.Any]]
-    inline def Remove(array: js.Array[js.Any], item: js.Any, callback: js.Function, context: js.Object): js.Any | js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Remove")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any | js.Array[js.Any]]
-    inline def Remove(array: js.Array[js.Any], item: js.Any, callback: Unit, context: js.Object): js.Any | js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Remove")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any | js.Array[js.Any]]
-    inline def Remove(array: js.Array[js.Any], item: js.Array[js.Any]): js.Any | js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Remove")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[js.Any | js.Array[js.Any]]
-    inline def Remove(array: js.Array[js.Any], item: js.Array[js.Any], callback: js.Function): js.Any | js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Remove")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any | js.Array[js.Any]]
-    inline def Remove(array: js.Array[js.Any], item: js.Array[js.Any], callback: js.Function, context: js.Object): js.Any | js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Remove")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any | js.Array[js.Any]]
-    inline def Remove(array: js.Array[js.Any], item: js.Array[js.Any], callback: Unit, context: js.Object): js.Any | js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Remove")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any | js.Array[js.Any]]
+    inline def Remove(array: js.Array[Any], item: Any): Any | js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Remove")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Any | js.Array[Any]]
+    inline def Remove(array: js.Array[Any], item: Any, callback: js.Function): Any | js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Remove")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any | js.Array[Any]]
+    inline def Remove(array: js.Array[Any], item: Any, callback: js.Function, context: js.Object): Any | js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Remove")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Any | js.Array[Any]]
+    inline def Remove(array: js.Array[Any], item: Any, callback: Unit, context: js.Object): Any | js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Remove")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Any | js.Array[Any]]
     
     /**
       * Removes the item from the given position in the array.
@@ -646,10 +748,10 @@ object Utils {
       * @param callback A callback to be invoked for the item removed from the array.
       * @param context The context in which the callback is invoked.
       */
-    inline def RemoveAt(array: js.Array[js.Any], index: integer): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("RemoveAt")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def RemoveAt(array: js.Array[js.Any], index: integer, callback: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("RemoveAt")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def RemoveAt(array: js.Array[js.Any], index: integer, callback: js.Function, context: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("RemoveAt")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def RemoveAt(array: js.Array[js.Any], index: integer, callback: Unit, context: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("RemoveAt")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def RemoveAt(array: js.Array[Any], index: Double): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("RemoveAt")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def RemoveAt(array: js.Array[Any], index: Double, callback: js.Function): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("RemoveAt")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def RemoveAt(array: js.Array[Any], index: Double, callback: js.Function, context: js.Object): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("RemoveAt")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def RemoveAt(array: js.Array[Any], index: Double, callback: Unit, context: js.Object): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("RemoveAt")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     /**
       * Removes the item within the given range in the array.
@@ -663,22 +765,16 @@ object Utils {
       * @param callback A callback to be invoked for the item removed from the array.
       * @param context The context in which the callback is invoked.
       */
-    inline def RemoveBetween(array: js.Array[js.Any], startIndex: integer, endIndex: integer): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("RemoveBetween")(array.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def RemoveBetween(array: js.Array[js.Any], startIndex: integer, endIndex: integer, callback: js.Function): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("RemoveBetween")(array.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def RemoveBetween(array: js.Array[Any], startIndex: Double, endIndex: Double): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("RemoveBetween")(array.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def RemoveBetween(array: js.Array[Any], startIndex: Double, endIndex: Double, callback: js.Function): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("RemoveBetween")(array.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     inline def RemoveBetween(
-      array: js.Array[js.Any],
-      startIndex: integer,
-      endIndex: integer,
+      array: js.Array[Any],
+      startIndex: Double,
+      endIndex: Double,
       callback: js.Function,
       context: js.Object
-    ): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("RemoveBetween")(array.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def RemoveBetween(
-      array: js.Array[js.Any],
-      startIndex: integer,
-      endIndex: integer,
-      callback: Unit,
-      context: js.Object
-    ): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("RemoveBetween")(array.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    ): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("RemoveBetween")(array.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def RemoveBetween(array: js.Array[Any], startIndex: Double, endIndex: Double, callback: Unit, context: js.Object): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("RemoveBetween")(array.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     
     /**
       * Removes a random object from the given array and returns it.
@@ -687,10 +783,10 @@ object Utils {
       * @param start The array index to start the search from. Default 0.
       * @param length Optional restriction on the number of elements to randomly select from. Default array.length.
       */
-    inline def RemoveRandomElement(array: js.Array[js.Any]): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("RemoveRandomElement")(array.asInstanceOf[js.Any]).asInstanceOf[js.Object]
-    inline def RemoveRandomElement(array: js.Array[js.Any], start: Unit, length: integer): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("RemoveRandomElement")(array.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-    inline def RemoveRandomElement(array: js.Array[js.Any], start: integer): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("RemoveRandomElement")(array.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-    inline def RemoveRandomElement(array: js.Array[js.Any], start: integer, length: integer): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("RemoveRandomElement")(array.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    inline def RemoveRandomElement(array: js.Array[Any]): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("RemoveRandomElement")(array.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+    inline def RemoveRandomElement(array: js.Array[Any], start: Double): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("RemoveRandomElement")(array.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    inline def RemoveRandomElement(array: js.Array[Any], start: Double, length: Double): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("RemoveRandomElement")(array.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    inline def RemoveRandomElement(array: js.Array[Any], start: Unit, length: Double): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("RemoveRandomElement")(array.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Object]
     
     /**
       * Replaces an element of the array with the new element.
@@ -700,7 +796,7 @@ object Utils {
       * @param oldChild The element in the array that will be replaced.
       * @param newChild The element to be inserted into the array at the position of `oldChild`.
       */
-    inline def Replace(array: js.Array[js.Any], oldChild: js.Any, newChild: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("Replace")(array.asInstanceOf[js.Any], oldChild.asInstanceOf[js.Any], newChild.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def Replace(array: js.Array[Any], oldChild: Any, newChild: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("Replace")(array.asInstanceOf[js.Any], oldChild.asInstanceOf[js.Any], newChild.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Moves the element at the start of the array to the end, shifting all items in the process.
@@ -708,8 +804,8 @@ object Utils {
       * @param array The array to shift to the left. This array is modified in place.
       * @param total The number of times to shift the array. Default 1.
       */
-    inline def RotateLeft(array: js.Array[js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("RotateLeft")(array.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def RotateLeft(array: js.Array[js.Any], total: integer): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("RotateLeft")(array.asInstanceOf[js.Any], total.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def RotateLeft(array: js.Array[Any]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("RotateLeft")(array.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def RotateLeft(array: js.Array[Any], total: Double): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("RotateLeft")(array.asInstanceOf[js.Any], total.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     /**
       * Moves the element at the end of the array to the start, shifting all items in the process.
@@ -717,8 +813,8 @@ object Utils {
       * @param array The array to shift to the right. This array is modified in place.
       * @param total The number of times to shift the array. Default 1.
       */
-    inline def RotateRight(array: js.Array[js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("RotateRight")(array.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def RotateRight(array: js.Array[js.Any], total: integer): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("RotateRight")(array.asInstanceOf[js.Any], total.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def RotateRight(array: js.Array[Any]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("RotateRight")(array.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def RotateRight(array: js.Array[Any], total: Double): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("RotateRight")(array.asInstanceOf[js.Any], total.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     /**
       * Tests if the start and end indexes are a safe range for the given array.
@@ -727,8 +823,8 @@ object Utils {
       * @param endIndex The end index.
       * @param throwError Throw an error if the range is out of bounds. Default true.
       */
-    inline def SafeRange(array: js.Array[js.Any], startIndex: integer, endIndex: integer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("SafeRange")(array.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    inline def SafeRange(array: js.Array[js.Any], startIndex: integer, endIndex: integer, throwError: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("SafeRange")(array.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any], throwError.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def SafeRange(array: js.Array[Any], startIndex: Double, endIndex: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("SafeRange")(array.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def SafeRange(array: js.Array[Any], startIndex: Double, endIndex: Double, throwError: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("SafeRange")(array.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any], throwError.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Moves the given element to the bottom of the array.
@@ -736,7 +832,7 @@ object Utils {
       * @param array The array.
       * @param item The element to move.
       */
-    inline def SendToBack(array: js.Array[js.Any], item: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("SendToBack")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def SendToBack(array: js.Array[Any], item: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("SendToBack")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     /**
       * Scans the array for elements with the given property. If found, the property is set to the `value`.
@@ -751,10 +847,10 @@ object Utils {
       * @param startIndex An optional start index to search from.
       * @param endIndex An optional end index to search to.
       */
-    inline def SetAll(array: js.Array[js.Any], property: String, value: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("SetAll")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def SetAll(array: js.Array[js.Any], property: String, value: js.Any, startIndex: Unit, endIndex: integer): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("SetAll")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def SetAll(array: js.Array[js.Any], property: String, value: js.Any, startIndex: integer): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("SetAll")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    inline def SetAll(array: js.Array[js.Any], property: String, value: js.Any, startIndex: integer, endIndex: integer): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("SetAll")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def SetAll(array: js.Array[Any], property: String, value: Any): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("SetAll")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def SetAll(array: js.Array[Any], property: String, value: Any, startIndex: Double): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("SetAll")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def SetAll(array: js.Array[Any], property: String, value: Any, startIndex: Double, endIndex: Double): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("SetAll")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    inline def SetAll(array: js.Array[Any], property: String, value: Any, startIndex: Unit, endIndex: Double): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("SetAll")(array.asInstanceOf[js.Any], property.asInstanceOf[js.Any], value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     
     /**
       * Shuffles the contents of the given array using the Fisher-Yates implementation.
@@ -765,34 +861,33 @@ object Utils {
     inline def Shuffle[T](array: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("Shuffle")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
     
     /**
+      * Takes the given array and runs a numeric sort on it, ignoring any non-digits that
+      * may be in the entries.
+      * 
+      * You should only run this on arrays containing strings.
+      * @param array The input array of strings.
+      */
+    inline def SortByDigits(array: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("SortByDigits")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    
+    /**
       * Removes a single item from an array and returns it without creating gc, like the native splice does.
       * Based on code by Mike Reinstein.
       * @param array The array to splice from.
       * @param index The index of the item which should be spliced.
       */
-    inline def SpliceOne(array: js.Array[js.Any], index: integer): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("SpliceOne")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def SpliceOne(array: js.Array[Any], index: Double): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("SpliceOne")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     /**
-      * A stable array sort, because `Array#sort()` is not guaranteed stable.
+      * An in-place stable array sort, because `Array#sort()` is not guaranteed stable.
+      * 
       * This is an implementation of merge sort, without recursion.
-      * @param arr The input array to be sorted.
-      * @param comp The comparison handler.
+      * 
+      * Function based on the Two-Screen/stable sort 0.1.8 from https://github.com/Two-Screen/stable
+      * @param array The input array to be sorted.
+      * @param compare The comparison function.
       */
-    inline def StableSort(arr: js.Array[js.Any], comp: js.Function): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("StableSort")(arr.asInstanceOf[js.Any], comp.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    
-    object StableSortFunctions {
-      
-      @JSImport("phaser", "Utils.Array.StableSortFunctions")
-      @js.native
-      val ^ : js.Any = js.native
-      
-      /**
-        * Sort the input array and simply copy it back if the result isn't in the original array, which happens on an odd number of passes.
-        * @param arr The input array.
-        * @param comp The comparison handler.
-        */
-      inline def inplace(arr: js.Array[js.Any], comp: js.Function): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("inplace")(arr.asInstanceOf[js.Any], comp.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-    }
+    inline def StableSort(array: js.Array[Any]): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("StableSort")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
+    inline def StableSort(array: js.Array[Any], compare: js.Function): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("StableSort")(array.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     
     /**
       * Swaps the position of two elements in the given array.
@@ -802,7 +897,7 @@ object Utils {
       * @param item1 The first element to swap.
       * @param item2 The second element to swap.
       */
-    inline def Swap(array: js.Array[js.Any], item1: js.Any, item2: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Swap")(array.asInstanceOf[js.Any], item1.asInstanceOf[js.Any], item2.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def Swap(array: js.Array[Any], item1: Any, item2: Any): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Swap")(array.asInstanceOf[js.Any], item1.asInstanceOf[js.Any], item2.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
   }
   
   object Base64 {
@@ -820,14 +915,14 @@ object Utils {
       * @param arrayBuffer The Array Buffer to encode.
       * @param mediaType An optional media type, i.e. `audio/ogg` or `image/jpeg`. If included the resulting string will be a data URI.
       */
-    inline def ArrayBufferToBase64(arrayBuffer: ArrayBuffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ArrayBufferToBase64")(arrayBuffer.asInstanceOf[js.Any]).asInstanceOf[String]
-    inline def ArrayBufferToBase64(arrayBuffer: ArrayBuffer, mediaType: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ArrayBufferToBase64")(arrayBuffer.asInstanceOf[js.Any], mediaType.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def ArrayBufferToBase64(arrayBuffer: js.typedarray.ArrayBuffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ArrayBufferToBase64")(arrayBuffer.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def ArrayBufferToBase64(arrayBuffer: js.typedarray.ArrayBuffer, mediaType: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ArrayBufferToBase64")(arrayBuffer.asInstanceOf[js.Any], mediaType.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Converts a base64 string, either with or without a data uri, into an Array Buffer.
       * @param base64 The base64 string to be decoded. Can optionally contain a data URI header, which will be stripped out prior to decoding.
       */
-    inline def Base64ToArrayBuffer(base64: String): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("Base64ToArrayBuffer")(base64.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
+    inline def Base64ToArrayBuffer(base64: String): js.typedarray.ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("Base64ToArrayBuffer")(base64.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.ArrayBuffer]
   }
   
   /**
@@ -846,15 +941,21 @@ object Utils {
     
     /**
       * Shallow Object Clone. Will not clone nested objects.
-      * @param obj the object from which to clone
+      * @param obj The object to clone.
       */
     inline def Clone(obj: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("Clone")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+    
+    /**
+      * Deep Copy the given object or array.
+      * @param obj The object to deep copy.
+      */
+    inline def DeepCopy(obj: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("DeepCopy")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Object]
     
     /**
       * This is a slightly modified version of http://api.jquery.com/jQuery.extend/
       * @param args The objects that will be mixed.
       */
-    inline def Extend(args: js.Any*): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("Extend")(args.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+    inline def Extend(args: Any*): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("Extend")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Object]
     
     /**
       * Retrieves a value from an object. Allows for more advanced selection options, including:
@@ -889,7 +990,7 @@ object Utils {
       * @param key The name of the property to retrieve from the object. If a property is nested, the names of its preceding properties should be separated by a dot (`.`) - `banner.hideBanner` would return the value of the `hideBanner` property from the object stored in the `banner` property of the `source` object.
       * @param defaultValue The value to return if the `key` isn't found in the `source` object.
       */
-    inline def GetAdvancedValue(source: js.Object, key: String, defaultValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetAdvancedValue")(source.asInstanceOf[js.Any], key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def GetAdvancedValue(source: js.Object, key: String, defaultValue: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetAdvancedValue")(source.asInstanceOf[js.Any], key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     /**
       * Finds the key within the top level of the {@link source} object, or returns {@link defaultValue}
@@ -897,8 +998,8 @@ object Utils {
       * @param key The key for the property on source. Must exist at the top level of the source object (no periods)
       * @param defaultValue The default value to use if the key does not exist.
       */
-    inline def GetFastValue(source: js.Object, key: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFastValue")(source.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def GetFastValue(source: js.Object, key: String, defaultValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFastValue")(source.asInstanceOf[js.Any], key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def GetFastValue(source: js.Object, key: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFastValue")(source.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def GetFastValue(source: js.Object, key: String, defaultValue: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFastValue")(source.asInstanceOf[js.Any], key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     /**
       * Retrieves and clamps a numerical value from an object.
@@ -916,7 +1017,7 @@ object Utils {
       * @param key The name of the property to retrieve from the object. If a property is nested, the names of its preceding properties should be separated by a dot (`.`) - `banner.hideBanner` would return the value of the `hideBanner` property from the object stored in the `banner` property of the `source` object.
       * @param defaultValue The value to return if the `key` isn't found in the `source` object.
       */
-    inline def GetValue(source: js.Object, key: String, defaultValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetValue")(source.asInstanceOf[js.Any], key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def GetValue(source: js.Object, key: String, defaultValue: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetValue")(source.asInstanceOf[js.Any], key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     /**
       * Verifies that an object contains all requested keys
@@ -972,7 +1073,7 @@ object Utils {
       * @param object The object to pick the provided keys from.
       * @param keys An array of properties to retrieve from the provided object.
       */
-    inline def Pick(`object`: js.Object, keys: js.Array[js.Any]): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("Pick")(`object`.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    inline def Pick(`object`: js.Object, keys: js.Array[Any]): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("Pick")(`object`.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[js.Object]
     
     /**
       * Sets a value in an object, allowing for dot notation to control the depth of the property.
@@ -997,7 +1098,7 @@ object Utils {
       * @param key The name of the property in the object. If a property is nested, the names of its preceding properties should be separated by a dot (`.`)
       * @param value The value to set into the property, if found in the source object.
       */
-    inline def SetValue(source: js.Object, key: String, value: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("SetValue")(source.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def SetValue(source: js.Object, key: String, value: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("SetValue")(source.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
   object String {
@@ -1014,7 +1115,7 @@ object Utils {
       * @param string The string containing the replacement markers.
       * @param values An array containing values that will replace the markers. If no value exists an empty string is inserted instead.
       */
-    inline def Format(string: java.lang.String, values: js.Array[js.Any]): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("Format")(string.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+    inline def Format(string: java.lang.String, values: js.Array[Any]): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("Format")(string.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
     
     /**
       * Takes the given string and pads it out, to the length required, using the character
@@ -1041,29 +1142,36 @@ object Utils {
       * @param dir The direction dir = 1 (left), 2 (right), 3 (both). Default 3.
       */
     inline def Pad(str: java.lang.String): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("Pad")(str.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+    inline def Pad(str: java.lang.String, len: Double): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("Pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+    inline def Pad(str: java.lang.String, len: Double, pad: java.lang.String): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("Pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+    inline def Pad(str: java.lang.String, len: Double, pad: java.lang.String, dir: Double): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("Pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+    inline def Pad(str: java.lang.String, len: Double, pad: Unit, dir: Double): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("Pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
     inline def Pad(str: java.lang.String, len: Unit, pad: java.lang.String): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("Pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-    inline def Pad(str: java.lang.String, len: Unit, pad: java.lang.String, dir: integer): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("Pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-    inline def Pad(str: java.lang.String, len: Unit, pad: Unit, dir: integer): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("Pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-    inline def Pad(str: java.lang.String, len: integer): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("Pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-    inline def Pad(str: java.lang.String, len: integer, pad: java.lang.String): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("Pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-    inline def Pad(str: java.lang.String, len: integer, pad: java.lang.String, dir: integer): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("Pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-    inline def Pad(str: java.lang.String, len: integer, pad: Unit, dir: integer): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("Pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+    inline def Pad(str: java.lang.String, len: Unit, pad: java.lang.String, dir: Double): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("Pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+    inline def Pad(str: java.lang.String, len: Unit, pad: Unit, dir: Double): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("Pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
     inline def Pad(str: js.Object): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("Pad")(str.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+    inline def Pad(str: js.Object, len: Double): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("Pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+    inline def Pad(str: js.Object, len: Double, pad: java.lang.String): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("Pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+    inline def Pad(str: js.Object, len: Double, pad: java.lang.String, dir: Double): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("Pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+    inline def Pad(str: js.Object, len: Double, pad: Unit, dir: Double): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("Pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
     inline def Pad(str: js.Object, len: Unit, pad: java.lang.String): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("Pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-    inline def Pad(str: js.Object, len: Unit, pad: java.lang.String, dir: integer): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("Pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-    inline def Pad(str: js.Object, len: Unit, pad: Unit, dir: integer): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("Pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-    inline def Pad(str: js.Object, len: integer): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("Pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-    inline def Pad(str: js.Object, len: integer, pad: java.lang.String): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("Pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-    inline def Pad(str: js.Object, len: integer, pad: java.lang.String, dir: integer): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("Pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-    inline def Pad(str: js.Object, len: integer, pad: Unit, dir: integer): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("Pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+    inline def Pad(str: js.Object, len: Unit, pad: java.lang.String, dir: Double): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("Pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+    inline def Pad(str: js.Object, len: Unit, pad: Unit, dir: Double): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("Pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
     inline def Pad(str: Double): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("Pad")(str.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+    inline def Pad(str: Double, len: Double): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("Pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+    inline def Pad(str: Double, len: Double, pad: java.lang.String): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("Pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+    inline def Pad(str: Double, len: Double, pad: java.lang.String, dir: Double): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("Pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+    inline def Pad(str: Double, len: Double, pad: Unit, dir: Double): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("Pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
     inline def Pad(str: Double, len: Unit, pad: java.lang.String): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("Pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-    inline def Pad(str: Double, len: Unit, pad: java.lang.String, dir: integer): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("Pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-    inline def Pad(str: Double, len: Unit, pad: Unit, dir: integer): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("Pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-    inline def Pad(str: Double, len: integer): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("Pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-    inline def Pad(str: Double, len: integer, pad: java.lang.String): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("Pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-    inline def Pad(str: Double, len: integer, pad: java.lang.String, dir: integer): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("Pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-    inline def Pad(str: Double, len: integer, pad: Unit, dir: integer): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("Pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+    inline def Pad(str: Double, len: Unit, pad: java.lang.String, dir: Double): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("Pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+    inline def Pad(str: Double, len: Unit, pad: Unit, dir: Double): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("Pad")(str.asInstanceOf[js.Any], len.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+    
+    /**
+      * Takes a string and removes the character at the given index.
+      * @param string The string to be worked on.
+      * @param index The index of the character to be removed.
+      */
+    inline def RemoveAt(string: java.lang.String, index: Double): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("RemoveAt")(string.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
     
     /**
       * Takes the given string and reverses it, returning the reversed string.

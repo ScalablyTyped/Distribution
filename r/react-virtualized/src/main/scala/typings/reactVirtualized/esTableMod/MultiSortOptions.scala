@@ -23,7 +23,7 @@ object MultiSortOptions {
     
     inline def setDefaultSortByUndefined: Self = StObject.set(x, "defaultSortBy", js.undefined)
     
-    inline def setDefaultSortByVarargs(value: String*): Self = StObject.set(x, "defaultSortBy", js.Array(value :_*))
+    inline def setDefaultSortByVarargs(value: String*): Self = StObject.set(x, "defaultSortBy", js.Array(value*))
     
     inline def setDefaultSortDirection(value: SortDirectionMap): Self = StObject.set(x, "defaultSortDirection", value.asInstanceOf[js.Any])
     

@@ -24,11 +24,11 @@ trait ModifyInstanceEventStartTimeRequest extends StObject {
   /**
     * The new date and time when the event will take place.
     */
-  var NotBefore: DateTime
+  var NotBefore: js.Date
 }
 object ModifyInstanceEventStartTimeRequest {
   
-  inline def apply(InstanceEventId: String, InstanceId: InstanceId, NotBefore: DateTime): ModifyInstanceEventStartTimeRequest = {
+  inline def apply(InstanceEventId: String, InstanceId: InstanceId, NotBefore: js.Date): ModifyInstanceEventStartTimeRequest = {
     val __obj = js.Dynamic.literal(InstanceEventId = InstanceEventId.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any], NotBefore = NotBefore.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyInstanceEventStartTimeRequest]
   }
@@ -43,6 +43,6 @@ object ModifyInstanceEventStartTimeRequest {
     
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    inline def setNotBefore(value: DateTime): Self = StObject.set(x, "NotBefore", value.asInstanceOf[js.Any])
+    inline def setNotBefore(value: js.Date): Self = StObject.set(x, "NotBefore", value.asInstanceOf[js.Any])
   }
 }

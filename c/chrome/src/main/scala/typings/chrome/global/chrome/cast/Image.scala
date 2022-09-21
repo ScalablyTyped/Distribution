@@ -6,12 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("chrome.cast.Image")
 @js.native
-class Image protected ()
+open class Image protected ()
   extends StObject
      with typings.chrome.chrome.cast.Image {
   /**
-    * @param {string} url
-    * @constructor
+    * @param url
     * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.Image
     */
   def this(url: String) = this()

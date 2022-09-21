@@ -211,7 +211,7 @@ trait ASPxClientGridView
     * Deletes a row with the specified key value.
     * @param key An object that uniquely identifies the row.
     */
-  def DeleteRowByKey(key: js.Any): Unit = js.native
+  def DeleteRowByKey(key: Any): Unit = js.native
   
   /**
     * Fires before a detail row is collapsed.
@@ -281,12 +281,12 @@ trait ASPxClientGridView
     */
   var FocusedRowChanged: ASPxClientEvent[ASPxClientGridViewFocusEventHandler[ASPxClientGridView]] = js.native
   
-  def GetAutoFilterEditor(column: String): js.Any = js.native
-  def GetAutoFilterEditor(column: Double): js.Any = js.native
+  def GetAutoFilterEditor(column: String): Any = js.native
+  def GetAutoFilterEditor(column: Double): Any = js.native
   /**
     * Returns the editor used to edit the value in the auto filter row for the specified data column. An object that represents the editor used to edit the value in the specified auto filter row cell. null (Nothing in Visual Basic) if the editor was not found.
     */
-  def GetAutoFilterEditor(column: ASPxClientGridViewColumn): js.Any = js.native
+  def GetAutoFilterEditor(column: ASPxClientGridViewColumn): Any = js.native
   
   /**
     * Returns the client column that resides at the specified position within the column collection. An ASPxClientGridViewColumn object that represents the client column.
@@ -314,7 +314,7 @@ trait ASPxClientGridView
   /**
     * Returns an object specifying the grid column's layout.
     */
-  def GetColumnLayout(): js.Any = js.native
+  def GetColumnLayout(): Any = js.native
   
   /** @deprecated Use the GetColumnCount method instead. */
   /**
@@ -430,7 +430,7 @@ trait ASPxClientGridView
   /**
     * Returns key values of selected rows displayed within the current page.
     */
-  def GetSelectedKeysOnPage(): js.Array[js.Any] = js.native
+  def GetSelectedKeysOnPage(): js.Array[Any] = js.native
   
   /**
     * Returns the number of selected rows.
@@ -630,14 +630,14 @@ trait ASPxClientGridView
   def SelectRows(visibleIndices: Double, selected: Boolean): Unit = js.native
   def SelectRows(visibleIndices: Unit, selected: Boolean): Unit = js.native
   
-  def SelectRowsByKey(keys: js.Any): Unit = js.native
-  def SelectRowsByKey(keys: js.Any, selected: Boolean): Unit = js.native
   /**
     * Selects or deselects the specified row in the grid.
     * @param selected true to select the specified row; false to deselect the row.
     */
-  def SelectRowsByKey(keys: js.Array[js.Any]): Unit = js.native
-  def SelectRowsByKey(keys: js.Array[js.Any], selected: Boolean): Unit = js.native
+  def SelectRowsByKey(keys: js.Array[Any]): Unit = js.native
+  def SelectRowsByKey(keys: js.Array[Any], selected: Boolean): Unit = js.native
+  def SelectRowsByKey(keys: Any): Unit = js.native
+  def SelectRowsByKey(keys: Any, selected: Boolean): Unit = js.native
   
   /**
     * Fires when a user selects a row.
@@ -648,7 +648,7 @@ trait ASPxClientGridView
     * Specifies the grid column's layout.
     * @param columnLayout An object specifying the grid column's layout.
     */
-  def SetColumnLayout(columnLayout: js.Any): Unit = js.native
+  def SetColumnLayout(columnLayout: Any): Unit = js.native
   
   def SetEditValue(column: String, value: String): Unit = js.native
   def SetEditValue(column: Double, value: String): Unit = js.native
@@ -668,7 +668,7 @@ trait ASPxClientGridView
     * Sets the scrollability of various types of grid rows when the grid displays fixed columns.
     * @param scrollableRowSettings An object specifying which types of grid rows should or should not be scrollable.
     */
-  def SetFixedColumnScrollableRows(scrollableRowSettings: js.Any): Unit = js.native
+  def SetFixedColumnScrollableRows(scrollableRowSettings: Any): Unit = js.native
   
   /**
     * Focuses the specified cell.
@@ -682,7 +682,7 @@ trait ASPxClientGridView
     * @param key A String value that identifies the row by its key value.
     * @param columnIndex A zero-based index that identifies the column in the column collection (the column's CollectionItem.Index property value).
     */
-  def SetFocusedCellByKey(key: js.Any, columnIndex: Double): Unit = js.native
+  def SetFocusedCellByKey(key: Any, columnIndex: Double): Unit = js.native
   
   /**
     * Moves focus to the specified row.
@@ -732,7 +732,7 @@ trait ASPxClientGridView
     * @param showAtElement An object that specifies the HTML element relative to whose position the customization window is invoked.
     */
   def ShowCustomizationWindow(): Unit = js.native
-  def ShowCustomizationWindow(showAtElement: js.Any): Unit = js.native
+  def ShowCustomizationWindow(showAtElement: Any): Unit = js.native
   
   /**
     * Displays the Filter Control.
@@ -781,7 +781,7 @@ trait ASPxClientGridView
     * Switches the grid to edit mode.
     * @param key An object that uniquely identifies a data row to be edited.
     */
-  def StartEditRowByKey(key: js.Any): Unit = js.native
+  def StartEditRowByKey(key: Any): Unit = js.native
   
   def UnGroup(column: String): Unit = js.native
   def UnGroup(column: Double): Unit = js.native
@@ -823,11 +823,11 @@ trait ASPxClientGridView
   def UnselectRows(visibleIndices: js.Array[Double]): Unit = js.native
   def UnselectRows(visibleIndices: Double): Unit = js.native
   
-  def UnselectRowsByKey(keys: js.Any): Unit = js.native
   /**
     * Deselects the specified row displayed within the grid.
     */
-  def UnselectRowsByKey(keys: js.Array[js.Any]): Unit = js.native
+  def UnselectRowsByKey(keys: js.Array[Any]): Unit = js.native
+  def UnselectRowsByKey(keys: Any): Unit = js.native
   
   /**
     * Saves all the changes made and switches the grid to browse mode.

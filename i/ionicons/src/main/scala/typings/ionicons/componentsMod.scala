@@ -9,6 +9,7 @@ import typings.std.DocumentAndElementEventHandlers
 import typings.std.Element
 import typings.std.ElementCSSInlineStyle
 import typings.std.ElementContentEditable
+import typings.std.ElementInternals
 import typings.std.EventListenerOptions
 import typings.std.EventListenerOrEventListenerObject
 import typings.std.GlobalEventHandlers
@@ -25,32 +26,182 @@ object componentsMod {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSGlobal("HTMLIonIconElement")
     @js.native
-    class HTMLIonIconElementCls ()
+    open class HTMLIonIconElementCls ()
       extends StObject
          with HTMLIonIconElement {
       
       /* InferMemberOverrides */
-      override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+      override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
       /* InferMemberOverrides */
-      override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+      override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
       /* InferMemberOverrides */
-      override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+      override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
       
+      /* standard dom */
+      /* CompleteClass */
+      var ariaAtomic: String | Null = js.native
+      
+      /* standard dom */
+      /* CompleteClass */
+      var ariaAutoComplete: String | Null = js.native
+      
+      /* standard dom */
+      /* CompleteClass */
+      var ariaBusy: String | Null = js.native
+      
+      /* standard dom */
+      /* CompleteClass */
+      var ariaChecked: String | Null = js.native
+      
+      /* standard dom */
+      /* CompleteClass */
+      var ariaColCount: String | Null = js.native
+      
+      /* standard dom */
+      /* CompleteClass */
+      var ariaColIndex: String | Null = js.native
+      
+      /* standard dom */
+      /* CompleteClass */
+      var ariaColSpan: String | Null = js.native
+      
+      /* standard dom */
+      /* CompleteClass */
+      var ariaCurrent: String | Null = js.native
+      
+      /* standard dom */
+      /* CompleteClass */
+      var ariaDisabled: String | Null = js.native
+      
+      /* standard dom */
+      /* CompleteClass */
+      var ariaExpanded: String | Null = js.native
+      
+      /* standard dom */
+      /* CompleteClass */
+      var ariaHasPopup: String | Null = js.native
+      
+      /* standard dom */
+      /* CompleteClass */
+      var ariaHidden: String | Null = js.native
+      
+      /* standard dom */
+      /* CompleteClass */
+      var ariaKeyShortcuts: String | Null = js.native
+      
+      /* standard dom */
+      /* CompleteClass */
+      var ariaLabel: String | Null = js.native
+      
+      /* standard dom */
+      /* CompleteClass */
+      var ariaLevel: String | Null = js.native
+      
+      /* standard dom */
+      /* CompleteClass */
+      var ariaLive: String | Null = js.native
+      
+      /* standard dom */
+      /* CompleteClass */
+      var ariaModal: String | Null = js.native
+      
+      /* standard dom */
+      /* CompleteClass */
+      var ariaMultiLine: String | Null = js.native
+      
+      /* standard dom */
+      /* CompleteClass */
+      var ariaMultiSelectable: String | Null = js.native
+      
+      /* standard dom */
+      /* CompleteClass */
+      var ariaOrientation: String | Null = js.native
+      
+      /* standard dom */
+      /* CompleteClass */
+      var ariaPlaceholder: String | Null = js.native
+      
+      /* standard dom */
+      /* CompleteClass */
+      var ariaPosInSet: String | Null = js.native
+      
+      /* standard dom */
+      /* CompleteClass */
+      var ariaPressed: String | Null = js.native
+      
+      /* standard dom */
+      /* CompleteClass */
+      var ariaReadOnly: String | Null = js.native
+      
+      /* standard dom */
+      /* CompleteClass */
+      var ariaRequired: String | Null = js.native
+      
+      /* standard dom */
+      /* CompleteClass */
+      var ariaRoleDescription: String | Null = js.native
+      
+      /* standard dom */
+      /* CompleteClass */
+      var ariaRowCount: String | Null = js.native
+      
+      /* standard dom */
+      /* CompleteClass */
+      var ariaRowIndex: String | Null = js.native
+      
+      /* standard dom */
+      /* CompleteClass */
+      var ariaRowSpan: String | Null = js.native
+      
+      /* standard dom */
+      /* CompleteClass */
+      var ariaSelected: String | Null = js.native
+      
+      /* standard dom */
+      /* CompleteClass */
+      var ariaSetSize: String | Null = js.native
+      
+      /* standard dom */
+      /* CompleteClass */
+      var ariaSort: String | Null = js.native
+      
+      /* standard dom */
+      /* CompleteClass */
+      var ariaValueMax: String | Null = js.native
+      
+      /* standard dom */
+      /* CompleteClass */
+      var ariaValueMin: String | Null = js.native
+      
+      /* standard dom */
+      /* CompleteClass */
+      var ariaValueNow: String | Null = js.native
+      
+      /* standard dom */
+      /* CompleteClass */
+      var ariaValueText: String | Null = js.native
+      
+      /* standard dom */
       /* CompleteClass */
       override val assignedSlot: HTMLSlotElement | Null = js.native
       
+      /* standard dom */
       /* CompleteClass */
       var contentEditable: String = js.native
       
+      /* standard dom */
       /* CompleteClass */
       var enterKeyHint: String = js.native
       
+      /* standard dom */
       /* CompleteClass */
       var innerHTML: String = js.native
       
+      /* standard dom */
       /* CompleteClass */
       var inputMode: String = js.native
       
+      /* standard dom */
       /* CompleteClass */
       override val isContentEditable: Boolean = js.native
       
@@ -66,15 +217,13 @@ object componentsMod {
       /* CompleteClass */
       var mode: String = js.native
       
-      /**
-        * Returns the first following sibling that is an element, and null otherwise.
-        */
+      /** Returns the first following sibling that is an element, and null otherwise. */
+      /* standard dom */
       /* CompleteClass */
       override val nextElementSibling: Element | Null = js.native
       
-      /**
-        * Returns the first preceding sibling that is an element, and null otherwise.
-        */
+      /** Returns the first preceding sibling that is an element, and null otherwise. */
+      /* standard dom */
       /* CompleteClass */
       override val previousElementSibling: Element | Null = js.native
       
@@ -92,6 +241,7 @@ object componentsMod {
       /* CompleteClass */
       var sanitize: Boolean = js.native
       
+      /* standard dom */
       /* CompleteClass */
       override val style: CSSStyleDeclaration = js.native
     }
@@ -119,8 +269,8 @@ object componentsMod {
     - scala.AnyRef because Inheritance from two classes. Inlined 
     - js.Any because Inheritance from two classes. Inlined 
     - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
-    - typings.std.HTMLElement because Inheritance from two classes. Inlined accessKeyLabel, offsetWidth, accessKey, spellcheck, offsetTop, innerText, offsetLeft, offsetParent, lang, translate, autocapitalize, dir, draggable, hidden, title, offsetHeight, click, addEventListener, addEventListener, removeEventListener, removeEventListener, addEventListener, removeEventListener
-    - typings.ionicons.stencilPublicRuntimeMod.HTMLStencilElement because Inheritance from two classes. Inlined componentOnReady, forceUpdate */ @js.native
+    - typings.std.HTMLElement because Inheritance from two classes. Inlined accessKeyLabel, offsetWidth, accessKey, spellcheck, offsetTop, innerText, offsetLeft, offsetParent, lang, translate, autocapitalize, dir, outerText, draggable, hidden, inert, title, offsetHeight, attachInternals, click, addEventListener, addEventListener, removeEventListener, removeEventListener, addEventListener, removeEventListener
+    - typings.ionicons.stencilPublicRuntimeMod.HTMLStencilElement because Inheritance from two classes. Inlined componentOnReady */ @js.native
     trait HTMLIonIconElement
       extends StObject
          with IonIcon
@@ -131,45 +281,65 @@ object componentsMod {
          with GlobalEventHandlers
          with HTMLOrSVGElement {
       
+      /* standard dom */
       var accessKey: String = js.native
       
+      /* standard dom */
       val accessKeyLabel: String = js.native
       
       /* InferMemberOverrides */
-      override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+      override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
       /* InferMemberOverrides */
-      override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+      override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
       /* InferMemberOverrides */
-      override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+      override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
       
+      /* standard dom */
+      def attachInternals(): ElementInternals = js.native
+      
+      /* standard dom */
       var autocapitalize: String = js.native
       
+      /* standard dom */
       def click(): Unit = js.native
       
       def componentOnReady(): js.Promise[this.type] = js.native
       
+      /* standard dom */
       var dir: String = js.native
       
+      /* standard dom */
       var draggable: Boolean = js.native
       
-      /** @deprecated */
-      def forceUpdate(): Unit = js.native
-      
+      /* standard dom */
       var hidden: Boolean = js.native
       
+      /* standard dom */
+      var inert: Boolean = js.native
+      
+      /* standard dom */
       var innerText: String = js.native
       
+      /* standard dom */
       var lang: String = js.native
       
+      /* standard dom */
       val offsetHeight: Double = js.native
       
+      /* standard dom */
       val offsetLeft: Double = js.native
       
+      /* standard dom */
       val offsetParent: Element | Null = js.native
       
+      /* standard dom */
       val offsetTop: Double = js.native
       
+      /* standard dom */
       val offsetWidth: Double = js.native
+      
+      /* standard dom */
+      var outerText: String = js.native
       
       /* InferMemberOverrides */
       override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
@@ -178,10 +348,13 @@ object componentsMod {
       /* InferMemberOverrides */
       override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
       
+      /* standard dom */
       var spellcheck: Boolean = js.native
       
+      /* standard dom */
       var title: String = js.native
       
+      /* standard dom */
       var translate: Boolean = js.native
     }
   }
@@ -189,16 +362,6 @@ object componentsMod {
   object Components {
     
     trait IonIcon extends StObject {
-      
-      /**
-        * Set the icon to hidden, respectively `true`, to remove it from the accessibility tree.
-        */
-      var ariaHidden: js.UndefOr[String] = js.undefined
-      
-      /**
-        * Specifies the label to use for accessibility. Defaults to the icon name.
-        */
-      var ariaLabel: js.UndefOr[String] = js.undefined
       
       /**
         * The color to use for the background of the item.
@@ -213,7 +376,7 @@ object componentsMod {
       /**
         * A combination of both `name` and `src`. If a `src` url is detected it will set the `src` property. Otherwise it assumes it's a built-in named SVG and set the `name` property.
         */
-      var icon: js.UndefOr[js.Any] = js.undefined
+      var icon: js.UndefOr[Any] = js.undefined
       
       /**
         * Specifies which icon to use on `ios` mode.
@@ -266,14 +429,6 @@ object componentsMod {
       
       extension [Self <: IonIcon](x: Self) {
         
-        inline def setAriaHidden(value: String): Self = StObject.set(x, "ariaHidden", value.asInstanceOf[js.Any])
-        
-        inline def setAriaHiddenUndefined: Self = StObject.set(x, "ariaHidden", js.undefined)
-        
-        inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
-        
-        inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
-        
         inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
         inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
@@ -282,7 +437,7 @@ object componentsMod {
         
         inline def setFlipRtlUndefined: Self = StObject.set(x, "flipRtl", js.undefined)
         
-        inline def setIcon(value: js.Any): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+        inline def setIcon(value: Any): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         
         inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
         
@@ -338,16 +493,6 @@ object componentsMod {
     trait IonIcon extends StObject {
       
       /**
-        * Set the icon to hidden, respectively `true`, to remove it from the accessibility tree.
-        */
-      var ariaHidden: js.UndefOr[String] = js.undefined
-      
-      /**
-        * Specifies the label to use for accessibility. Defaults to the icon name.
-        */
-      var ariaLabel: js.UndefOr[String] = js.undefined
-      
-      /**
         * The color to use for the background of the item.
         */
       var color: js.UndefOr[String] = js.undefined
@@ -360,7 +505,7 @@ object componentsMod {
       /**
         * A combination of both `name` and `src`. If a `src` url is detected it will set the `src` property. Otherwise it assumes it's a built-in named SVG and set the `name` property.
         */
-      var icon: js.UndefOr[js.Any] = js.undefined
+      var icon: js.UndefOr[Any] = js.undefined
       
       /**
         * Specifies which icon to use on `ios` mode.
@@ -412,14 +557,6 @@ object componentsMod {
       
       extension [Self <: typings.ionicons.componentsMod.LocalJSX.IonIcon](x: Self) {
         
-        inline def setAriaHidden(value: String): Self = StObject.set(x, "ariaHidden", value.asInstanceOf[js.Any])
-        
-        inline def setAriaHiddenUndefined: Self = StObject.set(x, "ariaHidden", js.undefined)
-        
-        inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
-        
-        inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
-        
         inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
         inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
@@ -428,7 +565,7 @@ object componentsMod {
         
         inline def setFlipRtlUndefined: Self = StObject.set(x, "flipRtl", js.undefined)
         
-        inline def setIcon(value: js.Any): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+        inline def setIcon(value: Any): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         
         inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
         

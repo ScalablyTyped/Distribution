@@ -13,9 +13,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[S /* <: js.Object */](source: S, patches: MultipleTopLevelPatch[S]*): S = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], patches.asInstanceOf[js.Any])).asInstanceOf[S]
+  inline def default[S /* <: js.Object */](source: S, patches: MultipleTopLevelPatch[S]*): S = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(List(source.asInstanceOf[js.Any]).`++`(patches.asInstanceOf[Seq[js.Any]])*).asInstanceOf[S]
   
-  type ArrayPatch[T] = ObjectPatch[Record[Double, js.Any]]
+  type ArrayPatch[T] = ObjectPatch[Record[Double, Any]]
   
   @js.native
   trait DeepArray[T]
@@ -41,13 +41,13 @@ object mod {
     def apply(source: S, patches: MultipleTopLevelPatch[S]*): S = js.native
   }
   
-  type MultipleTopLevelPatch[S /* <: js.Object */] = TopLevelPatch[S] | DeepArray[TopLevelPatch[S]]
+  type MultipleTopLevelPatch[S /* <: js.Object */] = TopLevelPatch[S] | Any
   
   type NestedPatch[T] = ObjectPatch[T]
   
   type ObjectPatch[S /* <: js.Object */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof S ]:? S[K] | mergerino.mergerino.DeletePatch | mergerino.mergerino.FunctionPatch<S[K]> | mergerino.mergerino.NestedPatch<S[K]> | mergerino.mergerino.ArrayPatch<S[K]>}
-    */ typings.mergerino.mergerinoStrings.ObjectPatch & TopLevel[js.Any]
+    */ typings.mergerino.mergerinoStrings.ObjectPatch & TopLevel[Any]
   
   type TopLevelPatch[S /* <: js.Object */] = FunctionPatch[S] | ObjectPatch[S] | ArrayPatch[S] | Falsy
   

@@ -19,7 +19,7 @@ trait MsoEnvelope extends StObject {
   /* private */ @JSName("Office.MsoEnvelope_typekey")
   var OfficeDotMsoEnvelope_typekey: MsoEnvelope
   
-  val Parent: js.Any
+  val Parent: Any
 }
 object MsoEnvelope {
   
@@ -28,7 +28,7 @@ object MsoEnvelope {
     Introduction: String,
     Item: MailItem,
     OfficeDotMsoEnvelope_typekey: MsoEnvelope,
-    Parent: js.Any
+    Parent: Any
   ): MsoEnvelope = {
     val __obj = js.Dynamic.literal(CommandBars = CommandBars.asInstanceOf[js.Any], Introduction = Introduction.asInstanceOf[js.Any], Item = Item.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any])
     __obj.updateDynamic("Office.MsoEnvelope_typekey")(OfficeDotMsoEnvelope_typekey.asInstanceOf[js.Any])
@@ -45,6 +45,6 @@ object MsoEnvelope {
     
     inline def setOfficeDotMsoEnvelope_typekey(value: MsoEnvelope): Self = StObject.set(x, "Office.MsoEnvelope_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,12 @@
 package typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager
 
 import typings.gapiClient.gapi.client.Request
+import typings.maximMazurokGapiClientTagmanager.anon.AccesstokenAlt
 import typings.maximMazurokGapiClientTagmanager.anon.Alt
+import typings.maximMazurokGapiClientTagmanager.anon.AltCallback
 import typings.maximMazurokGapiClientTagmanager.anon.Callback
 import typings.maximMazurokGapiClientTagmanager.anon.Fields
 import typings.maximMazurokGapiClientTagmanager.anon.Oauthtoken
-import typings.maximMazurokGapiClientTagmanager.anon.Uploadprotocol
-import typings.maximMazurokGapiClientTagmanager.anon.Xgafv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TagsResource extends StObject {
   
-  def create(request: Alt, body: Tag): Request[Tag] = js.native
   /** Creates a GTM Tag. */
-  def create(request: Uploadprotocol): Request[Tag] = js.native
+  def create(request: AccesstokenAlt): Request[Tag] = js.native
+  def create(request: Alt, body: Tag): Request[Tag] = js.native
   
   /** Deletes a GTM Tag. */
   def delete(): Request[Unit] = js.native
@@ -34,7 +34,7 @@ trait TagsResource extends StObject {
   def revert(): Request[RevertTagResponse] = js.native
   def revert(request: Oauthtoken): Request[RevertTagResponse] = js.native
   
-  def update(request: Oauthtoken, body: Tag): Request[Tag] = js.native
   /** Updates a GTM Tag. */
-  def update(request: Xgafv): Request[Tag] = js.native
+  def update(request: AltCallback): Request[Tag] = js.native
+  def update(request: Oauthtoken, body: Tag): Request[Tag] = js.native
 }

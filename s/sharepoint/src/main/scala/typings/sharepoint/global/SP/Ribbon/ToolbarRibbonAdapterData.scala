@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.Ribbon.ToolbarRibbonAdapterData")
 @js.native
-class ToolbarRibbonAdapterData ()
+open class ToolbarRibbonAdapterData ()
   extends StObject
      with typings.sharepoint.SP.Ribbon.ToolbarRibbonAdapterData

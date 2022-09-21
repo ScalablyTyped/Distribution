@@ -5,10 +5,11 @@ import typings.fluentuiTheme.ithemeMod.ITheme
 import typings.officeUiFabricReact.iconTypesMod.IIconProps
 import typings.react.mod.AllHTMLAttributes
 import typings.react.mod.FormEvent
+import typings.react.mod.InputHTMLAttributes
+import typings.react.mod.RefAttributes
 import typings.react.mod.global.JSX.Element
 import typings.std.HTMLInputElement
 import typings.std.HTMLTextAreaElement
-import typings.std.RegExp
 import typings.uifabricMergeStyles.deepPartialMod.DeepPartial
 import typings.uifabricMergeStyles.istyleMod.IStyle
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
@@ -189,7 +190,7 @@ object textFieldTypesMod {
     /**
       * @deprecated Only used by `MaskedTextField`, which now has a separate `IMaskedTextFieldProps` interface.
       */
-    var maskFormat: js.UndefOr[StringDictionary[RegExp]] = js.undefined
+    var maskFormat: js.UndefOr[StringDictionary[js.RegExp]] = js.undefined
     
     /**
       * Whether or not the text field is a multiline text field.
@@ -239,6 +240,16 @@ object textFieldTypesMod {
       * Custom renderer for the description.
       */
     var onRenderDescription: js.UndefOr[IRenderFunction[ITextFieldProps]] = js.undefined
+    
+    /**
+      * Custom renderer for the actual single-line input field (not used if `multiline` is true).
+      * This receives the processed props which would usually be passed to the `<input>` element
+      * and allows manually modifying them or rendering as a different element. (Use with care,
+      * since changes here could easily break the component.)
+      */
+    var onRenderInput: js.UndefOr[
+        IRenderFunction[InputHTMLAttributes[HTMLInputElement] & RefAttributes[HTMLInputElement]]
+      ] = js.undefined
     
     /**
       * Custom renderer for the label.
@@ -375,7 +386,7 @@ object textFieldTypesMod {
       
       inline def setMaskCharUndefined: Self = StObject.set(x, "maskChar", js.undefined)
       
-      inline def setMaskFormat(value: StringDictionary[RegExp]): Self = StObject.set(x, "maskFormat", value.asInstanceOf[js.Any])
+      inline def setMaskFormat(value: StringDictionary[js.RegExp]): Self = StObject.set(x, "maskFormat", value.asInstanceOf[js.Any])
       
       inline def setMaskFormatUndefined: Self = StObject.set(x, "maskFormat", js.undefined)
       
@@ -404,6 +415,17 @@ object textFieldTypesMod {
       ): Self = StObject.set(x, "onRenderDescription", js.Any.fromFunction2(value))
       
       inline def setOnRenderDescriptionUndefined: Self = StObject.set(x, "onRenderDescription", js.undefined)
+      
+      inline def setOnRenderInput(
+        value: (/* props */ js.UndefOr[InputHTMLAttributes[HTMLInputElement] & RefAttributes[HTMLInputElement]], /* defaultRender */ js.UndefOr[
+              js.Function1[
+                /* props */ js.UndefOr[InputHTMLAttributes[HTMLInputElement] & RefAttributes[HTMLInputElement]], 
+                Element | Null
+              ]
+            ]) => Element | Null
+      ): Self = StObject.set(x, "onRenderInput", js.Any.fromFunction2(value))
+      
+      inline def setOnRenderInputUndefined: Self = StObject.set(x, "onRenderInput", js.undefined)
       
       inline def setOnRenderLabel(
         value: (/* props */ js.UndefOr[ITextFieldProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[ITextFieldProps], Element | Null]]) => Element | Null
@@ -727,20 +749,20 @@ object textFieldTypesMod {
     /**
       * Styling for Label child component.
       */
-    var label: IStyleFunctionOrObject[js.Any, js.Any]
+    var label: IStyleFunctionOrObject[Any, Any]
   }
   object ITextFieldSubComponentStyles {
     
-    inline def apply(label: IStyleFunctionOrObject[js.Any, js.Any]): ITextFieldSubComponentStyles = {
+    inline def apply(label: IStyleFunctionOrObject[Any, Any]): ITextFieldSubComponentStyles = {
       val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITextFieldSubComponentStyles]
     }
     
     extension [Self <: ITextFieldSubComponentStyles](x: Self) {
       
-      inline def setLabel(value: IStyleFunctionOrObject[js.Any, js.Any]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: IStyleFunctionOrObject[Any, Any]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      inline def setLabelFunction1(value: js.Any => DeepPartial[js.Any]): Self = StObject.set(x, "label", js.Any.fromFunction1(value))
+      inline def setLabelFunction1(value: Any => DeepPartial[Any]): Self = StObject.set(x, "label", js.Any.fromFunction1(value))
     }
   }
 }

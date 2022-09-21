@@ -15,7 +15,7 @@ object mod {
   
   @JSImport("leaflet", "Utm")
   @js.native
-  /* private */ class Utm_ () extends StObject {
+  /* private */ open class Utm_ () extends StObject {
     
     var band: String = js.native
     

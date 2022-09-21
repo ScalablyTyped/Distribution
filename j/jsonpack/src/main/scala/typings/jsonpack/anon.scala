@@ -25,15 +25,15 @@ object anon {
       
       inline def setFloats(value: js.Array[Double]): Self = StObject.set(x, "floats", value.asInstanceOf[js.Any])
       
-      inline def setFloatsVarargs(value: Double*): Self = StObject.set(x, "floats", js.Array(value :_*))
+      inline def setFloatsVarargs(value: Double*): Self = StObject.set(x, "floats", js.Array(value*))
       
       inline def setIntegers(value: js.Array[Double]): Self = StObject.set(x, "integers", value.asInstanceOf[js.Any])
       
-      inline def setIntegersVarargs(value: Double*): Self = StObject.set(x, "integers", js.Array(value :_*))
+      inline def setIntegersVarargs(value: Double*): Self = StObject.set(x, "integers", js.Array(value*))
       
       inline def setStrings(value: js.Array[String]): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
       
-      inline def setStringsVarargs(value: String*): Self = StObject.set(x, "strings", js.Array(value :_*))
+      inline def setStringsVarargs(value: String*): Self = StObject.set(x, "strings", js.Array(value*))
     }
   }
   

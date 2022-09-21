@@ -51,6 +51,6 @@ object DescribeSnapshotsRequest {
     
     inline def setSnapshotIdsUndefined: Self = StObject.set(x, "SnapshotIds", js.undefined)
     
-    inline def setSnapshotIdsVarargs(value: SnapshotId*): Self = StObject.set(x, "SnapshotIds", js.Array(value :_*))
+    inline def setSnapshotIdsVarargs(value: SnapshotId*): Self = StObject.set(x, "SnapshotIds", js.Array(value*))
   }
 }

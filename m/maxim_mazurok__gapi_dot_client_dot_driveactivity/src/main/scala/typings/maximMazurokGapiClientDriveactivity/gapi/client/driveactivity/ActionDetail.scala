@@ -19,7 +19,7 @@ trait ActionDetail extends StObject {
   var dlpChange: js.UndefOr[DataLeakPreventionChange] = js.undefined
   
   /** An object was edited. */
-  var edit: js.UndefOr[js.Any] = js.undefined
+  var edit: js.UndefOr[Any] = js.undefined
   
   /** An object was moved. */
   var move: js.UndefOr[Move] = js.undefined
@@ -64,7 +64,7 @@ object ActionDetail {
     
     inline def setDlpChangeUndefined: Self = StObject.set(x, "dlpChange", js.undefined)
     
-    inline def setEdit(value: js.Any): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
+    inline def setEdit(value: Any): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
     
     inline def setEditUndefined: Self = StObject.set(x, "edit", js.undefined)
     

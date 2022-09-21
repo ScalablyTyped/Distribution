@@ -13,7 +13,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`segment-drag`
 import typings.arcgisJsApi.arcgisJsApiStrings.`thumb-change`
 import typings.arcgisJsApi.arcgisJsApiStrings.`thumb-drag`
 import typings.arcgisJsApi.arcgisJsApiStrings.average
-import typings.arcgisJsApi.arcgisJsApiStrings.between
+import typings.arcgisJsApi.arcgisJsApiStrings.between_
 import typings.arcgisJsApi.arcgisJsApiStrings.equal
 import typings.arcgisJsApi.arcgisJsApiStrings.max
 import typings.arcgisJsApi.arcgisJsApiStrings.min
@@ -40,7 +40,7 @@ trait HistogramRangeSlider
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#barCreatedFunction)
     */
-  def barCreatedFunction(index: Double, element: js.Any): Unit = js.native
+  def barCreatedFunction(index: Double, element: Any): scala.Unit = js.native
   /**
     * Function for styling bars representing histogram bins.
     *
@@ -61,10 +61,10 @@ trait HistogramRangeSlider
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#dataLineCreatedFunction)
     */
-  def dataLineCreatedFunction(lineElement: js.Any): Unit = js.native
-  def dataLineCreatedFunction(lineElement: js.Any, labelElement: js.Any): Unit = js.native
-  def dataLineCreatedFunction(lineElement: js.Any, labelElement: js.Any, index: Double): Unit = js.native
-  def dataLineCreatedFunction(lineElement: js.Any, labelElement: Unit, index: Double): Unit = js.native
+  def dataLineCreatedFunction(lineElement: Any): scala.Unit = js.native
+  def dataLineCreatedFunction(lineElement: Any, labelElement: Any): scala.Unit = js.native
+  def dataLineCreatedFunction(lineElement: Any, labelElement: Any, index: Double): scala.Unit = js.native
+  def dataLineCreatedFunction(lineElement: Any, labelElement: scala.Unit, index: Double): scala.Unit = js.native
   /**
     * Function that fires each time a data line is created.
     *
@@ -83,6 +83,8 @@ trait HistogramRangeSlider
   /**
     * Sets the color of the histogram bars that are excluded based on the specified [rangeType](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#rangeType).
     *
+    * @default #d7e5f0
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#excludedBarColor)
     */
   var excludedBarColor: Color_ = js.native
@@ -97,6 +99,8 @@ trait HistogramRangeSlider
   /**
     * Sets the color of the histogram bars that are included in the specified [rangeType](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#rangeType).
     *
+    * @default #599dd4
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#includedBarColor)
     */
   var includedBarColor: Color_ = js.native
@@ -107,7 +111,9 @@ trait HistogramRangeSlider
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#labelFormatFunction)
     */
   def labelFormatFunction(value: Double): String = js.native
-  def labelFormatFunction(value: Double, `type`: Unit, index: Double): String = js.native
+  def labelFormatFunction(value: Double, `type`: average | min | max | tick | value): String = js.native
+  def labelFormatFunction(value: Double, `type`: average | min | max | tick | value, index: Double): String = js.native
+  def labelFormatFunction(value: Double, `type`: scala.Unit, index: Double): String = js.native
   /**
     * A function used to format labels.
     *
@@ -115,26 +121,6 @@ trait HistogramRangeSlider
     */
   @JSName("labelFormatFunction")
   var labelFormatFunction_Original: SliderLabelFormatter = js.native
-  @JSName("labelFormatFunction")
-  def labelFormatFunction_average(value: Double, `type`: average): String = js.native
-  @JSName("labelFormatFunction")
-  def labelFormatFunction_average(value: Double, `type`: average, index: Double): String = js.native
-  @JSName("labelFormatFunction")
-  def labelFormatFunction_max(value: Double, `type`: max): String = js.native
-  @JSName("labelFormatFunction")
-  def labelFormatFunction_max(value: Double, `type`: max, index: Double): String = js.native
-  @JSName("labelFormatFunction")
-  def labelFormatFunction_min(value: Double, `type`: min): String = js.native
-  @JSName("labelFormatFunction")
-  def labelFormatFunction_min(value: Double, `type`: min, index: Double): String = js.native
-  @JSName("labelFormatFunction")
-  def labelFormatFunction_tick(value: Double, `type`: tick): String = js.native
-  @JSName("labelFormatFunction")
-  def labelFormatFunction_tick(value: Double, `type`: tick, index: Double): String = js.native
-  @JSName("labelFormatFunction")
-  def labelFormatFunction_value(value: Double, `type`: value): String = js.native
-  @JSName("labelFormatFunction")
-  def labelFormatFunction_value(value: Double, `type`: value, index: Double): String = js.native
   
   /**
     * The maximum value or upper bound of the slider.
@@ -164,6 +150,8 @@ trait HistogramRangeSlider
   /**
     * Defines how slider thumb values should be rounded.
     *
+    * @default 4
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#precision)
     */
   var precision: Double = js.native
@@ -173,7 +161,7 @@ trait HistogramRangeSlider
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#rangeType)
     */
-  var rangeType: equal | `not-equal` | `less-than` | `greater-than` | `at-most` | `at-least` | between | `not-between` = js.native
+  var rangeType: equal | `not-equal` | `less-than` | `greater-than` | `at-most` | `at-least` | between_ | `not-between` = js.native
   
   /**
     * Indicates the standard deviation of the dataset.
@@ -184,6 +172,8 @@ trait HistogramRangeSlider
   
   /**
     * Indicates the number of standard deviation lines to render on the histogram from the [average].
+    *
+    * @default 1
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#standardDeviationCount)
     */

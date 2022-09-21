@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FilterExpression
   extends StObject
      with PartialStatement
-     with Instantiable2[/* prev */ PartialStatement, /* dfns (repeated) */ js.Any, PartialStatement] {
+     with Instantiable2[/* prev */ PartialStatement, /* dfns (repeated) */ Any, PartialStatement] {
   
   def toAQL(): String = js.native
 }

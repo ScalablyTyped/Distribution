@@ -1,14 +1,14 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import typings.gapiClient.gapi.client.Request
+import typings.maximMazurokGapiClientCompute.anon.Accesstoken
 import typings.maximMazurokGapiClientCompute.anon.Alt
-import typings.maximMazurokGapiClientCompute.anon.Fields
 import typings.maximMazurokGapiClientCompute.anon.OptionsRequestedPolicyVersion
-import typings.maximMazurokGapiClientCompute.anon.ProjectQuotaUserRequestIdResourceUserIpZone
+import typings.maximMazurokGapiClientCompute.anon.QuotaUser
 import typings.maximMazurokGapiClientCompute.anon.QuotaUserReservation
 import typings.maximMazurokGapiClientCompute.anon.QuotaUserResource
 import typings.maximMazurokGapiClientCompute.anon.RequestIdReservation
-import typings.maximMazurokGapiClientCompute.anon.UserIp
+import typings.maximMazurokGapiClientCompute.anon.UploadTypeUploadprotocolUserIpXgafvZone
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +18,7 @@ trait ReservationsResource extends StObject {
   
   /** Retrieves an aggregated list of reservations. */
   def aggregatedList(): Request[ReservationAggregatedList] = js.native
-  def aggregatedList(request: Alt): Request[ReservationAggregatedList] = js.native
+  def aggregatedList(request: Accesstoken): Request[ReservationAggregatedList] = js.native
   
   /** Deletes the specified reservation. */
   def delete(): Request[Operation] = js.native
@@ -32,13 +32,13 @@ trait ReservationsResource extends StObject {
   def getIamPolicy(): Request[Policy] = js.native
   def getIamPolicy(request: OptionsRequestedPolicyVersion): Request[Policy] = js.native
   
+  def insert(request: QuotaUser, body: Reservation): Request[Operation] = js.native
   /** Creates a new reservation. For more information, read Reserving zonal resources. */
-  def insert(request: ProjectQuotaUserRequestIdResourceUserIpZone): Request[Operation] = js.native
-  def insert(request: UserIp, body: Reservation): Request[Operation] = js.native
+  def insert(request: UploadTypeUploadprotocolUserIpXgafvZone): Request[Operation] = js.native
   
   /** A list of all the reservations that have been configured for the specified project in specified zone. */
   def list(): Request[ReservationList] = js.native
-  def list(request: Fields): Request[ReservationList] = js.native
+  def list(request: Alt): Request[ReservationList] = js.native
   
   /** Resizes the reservation (applicable to standalone reservations only). For more information, read Modifying reservations. */
   def resize(request: RequestIdReservation): Request[Operation] = js.native

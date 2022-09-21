@@ -3,6 +3,7 @@ package typings.reactOverlays
 import typings.propTypes.mod.Requireable
 import typings.propTypes.mod.Validator
 import typings.react.mod.ReactNode
+import typings.react.mod.SyntheticEvent
 import typings.react.mod.global.JSX.Element
 import typings.reactOverlays.anon.Arialabelledby
 import typings.reactOverlays.anon.OmitUsePopperOptionsenabl
@@ -10,8 +11,10 @@ import typings.reactOverlays.anon.Popper
 import typings.reactOverlays.anon.Ref
 import typings.reactOverlays.esmUsePopperMod.Offset
 import typings.reactOverlays.esmUsePopperMod.OffsetValue
+import typings.reactOverlays.esmUsePopperMod.UsePopperState
 import typings.reactOverlays.esmUseRootCloseMod.MouseEvents
 import typings.std.Event
+import typings.std.Partial
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -94,8 +97,8 @@ object esmDropdownMenuMod {
         */
       @JSImport("react-overlays/esm/DropdownMenu", "default.propTypes.children")
       @js.native
-      def children: Validator[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
-      inline def children_=(x: Validator[js.Function1[/* repeated */ js.Any, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
+      def children: Validator[js.Function1[/* repeated */ Any, Any]] = js.native
+      inline def children_=(x: Validator[js.Function1[/* repeated */ Any, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
       
       /**
         * Enables the Popper.js `flip` modifier, allowing the Dropdown to
@@ -140,31 +143,84 @@ object esmDropdownMenuMod {
     }
   }
   
-  inline def useDropdownMenu(): UseDropdownMenuValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropdownMenu")().asInstanceOf[UseDropdownMenuValue]
-  inline def useDropdownMenu(options: UseDropdownMenuOptions): UseDropdownMenuValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropdownMenu")(options.asInstanceOf[js.Any]).asInstanceOf[UseDropdownMenuValue]
+  inline def useDropdownMenu(): js.Tuple2[UserDropdownMenuProps, UseDropdownMenuMetadata] = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropdownMenu")().asInstanceOf[js.Tuple2[UserDropdownMenuProps, UseDropdownMenuMetadata]]
+  inline def useDropdownMenu(options: UseDropdownMenuOptions): js.Tuple2[UserDropdownMenuProps, UseDropdownMenuMetadata] = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropdownMenu")(options.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[UserDropdownMenuProps, UseDropdownMenuMetadata]]
   
   trait DropdownMenuProps
     extends StObject
        with UseDropdownMenuOptions {
     
-    def children(args: UseDropdownMenuValue): ReactNode
+    def children(props: UserDropdownMenuProps, meta: UseDropdownMenuMetadata): ReactNode
   }
   object DropdownMenuProps {
     
-    inline def apply(children: UseDropdownMenuValue => ReactNode): DropdownMenuProps = {
-      val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
+    inline def apply(children: (UserDropdownMenuProps, UseDropdownMenuMetadata) => ReactNode): DropdownMenuProps = {
+      val __obj = js.Dynamic.literal(children = js.Any.fromFunction2(children))
       __obj.asInstanceOf[DropdownMenuProps]
     }
     
     extension [Self <: DropdownMenuProps](x: Self) {
       
-      inline def setChildren(value: UseDropdownMenuValue => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: (UserDropdownMenuProps, UseDropdownMenuMetadata) => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
+    }
+  }
+  
+  trait UseDropdownMenuMetadata extends StObject {
+    
+    var alignEnd: js.UndefOr[Boolean] = js.undefined
+    
+    var arrowProps: Partial[UserDropdownMenuArrowProps]
+    
+    var hasShown: Boolean
+    
+    var popper: UsePopperState | Null
+    
+    var show: Boolean
+    
+    var toggle: js.UndefOr[
+        js.Function2[
+          /* nextShow */ Boolean, 
+          /* event */ js.UndefOr[(SyntheticEvent[typings.std.Element, Event]) | Event], 
+          Unit
+        ]
+      ] = js.undefined
+  }
+  object UseDropdownMenuMetadata {
+    
+    inline def apply(arrowProps: Partial[UserDropdownMenuArrowProps], hasShown: Boolean, show: Boolean): UseDropdownMenuMetadata = {
+      val __obj = js.Dynamic.literal(arrowProps = arrowProps.asInstanceOf[js.Any], hasShown = hasShown.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any], popper = null)
+      __obj.asInstanceOf[UseDropdownMenuMetadata]
+    }
+    
+    extension [Self <: UseDropdownMenuMetadata](x: Self) {
+      
+      inline def setAlignEnd(value: Boolean): Self = StObject.set(x, "alignEnd", value.asInstanceOf[js.Any])
+      
+      inline def setAlignEndUndefined: Self = StObject.set(x, "alignEnd", js.undefined)
+      
+      inline def setArrowProps(value: Partial[UserDropdownMenuArrowProps]): Self = StObject.set(x, "arrowProps", value.asInstanceOf[js.Any])
+      
+      inline def setHasShown(value: Boolean): Self = StObject.set(x, "hasShown", value.asInstanceOf[js.Any])
+      
+      inline def setPopper(value: UsePopperState): Self = StObject.set(x, "popper", value.asInstanceOf[js.Any])
+      
+      inline def setPopperNull: Self = StObject.set(x, "popper", null)
+      
+      inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+      
+      inline def setToggle(
+        value: (/* nextShow */ Boolean, /* event */ js.UndefOr[(SyntheticEvent[typings.std.Element, Event]) | Event]) => Unit
+      ): Self = StObject.set(x, "toggle", js.Any.fromFunction2(value))
+      
+      inline def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
     }
   }
   
   trait UseDropdownMenuOptions extends StObject {
     
     var alignEnd: js.UndefOr[Boolean] = js.undefined
+    
+    var fixed: js.UndefOr[Boolean] = js.undefined
     
     var flip: js.UndefOr[Boolean] = js.undefined
     
@@ -190,6 +246,10 @@ object esmDropdownMenuMod {
       inline def setAlignEnd(value: Boolean): Self = StObject.set(x, "alignEnd", value.asInstanceOf[js.Any])
       
       inline def setAlignEndUndefined: Self = StObject.set(x, "alignEnd", js.undefined)
+      
+      inline def setFixed(value: Boolean): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
+      
+      inline def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
       
       inline def setFlip(value: Boolean): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
       
@@ -219,58 +279,7 @@ object esmDropdownMenuMod {
     }
   }
   
-  trait UseDropdownMenuValue extends StObject {
-    
-    var alignEnd: js.UndefOr[Boolean] = js.undefined
-    
-    var arrowProps: (Record[String, js.Any]) & Ref
-    
-    def close(e: Event): Unit
-    
-    def forceUpdate(): Unit
-    
-    var hasShown: Boolean
-    
-    var props: (Record[String, js.Any]) & Arialabelledby
-    
-    var show: Boolean
-    
-    def update(): Unit
-  }
-  object UseDropdownMenuValue {
-    
-    inline def apply(
-      arrowProps: (Record[String, js.Any]) & Ref,
-      close: Event => Unit,
-      forceUpdate: () => Unit,
-      hasShown: Boolean,
-      props: (Record[String, js.Any]) & Arialabelledby,
-      show: Boolean,
-      update: () => Unit
-    ): UseDropdownMenuValue = {
-      val __obj = js.Dynamic.literal(arrowProps = arrowProps.asInstanceOf[js.Any], close = js.Any.fromFunction1(close), forceUpdate = js.Any.fromFunction0(forceUpdate), hasShown = hasShown.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any], update = js.Any.fromFunction0(update))
-      __obj.asInstanceOf[UseDropdownMenuValue]
-    }
-    
-    extension [Self <: UseDropdownMenuValue](x: Self) {
-      
-      inline def setAlignEnd(value: Boolean): Self = StObject.set(x, "alignEnd", value.asInstanceOf[js.Any])
-      
-      inline def setAlignEndUndefined: Self = StObject.set(x, "alignEnd", js.undefined)
-      
-      inline def setArrowProps(value: (Record[String, js.Any]) & Ref): Self = StObject.set(x, "arrowProps", value.asInstanceOf[js.Any])
-      
-      inline def setClose(value: Event => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
-      
-      inline def setForceUpdate(value: () => Unit): Self = StObject.set(x, "forceUpdate", js.Any.fromFunction0(value))
-      
-      inline def setHasShown(value: Boolean): Self = StObject.set(x, "hasShown", value.asInstanceOf[js.Any])
-      
-      inline def setProps(value: (Record[String, js.Any]) & Arialabelledby): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
-      
-      inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
-      
-      inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
-    }
-  }
+  type UserDropdownMenuArrowProps = (Record[String, Any]) & Ref
+  
+  type UserDropdownMenuProps = (Record[String, Any]) & Arialabelledby
 }

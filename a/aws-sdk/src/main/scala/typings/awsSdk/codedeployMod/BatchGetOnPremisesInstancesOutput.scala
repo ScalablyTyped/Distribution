@@ -24,6 +24,6 @@ object BatchGetOnPremisesInstancesOutput {
     
     inline def setInstanceInfosUndefined: Self = StObject.set(x, "instanceInfos", js.undefined)
     
-    inline def setInstanceInfosVarargs(value: InstanceInfo*): Self = StObject.set(x, "instanceInfos", js.Array(value :_*))
+    inline def setInstanceInfosVarargs(value: InstanceInfo*): Self = StObject.set(x, "instanceInfos", js.Array(value*))
   }
 }

@@ -141,11 +141,11 @@ object momentTimezoneUtilsMod {
   inline def invalid(): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")().asInstanceOf[Moment]
   inline def invalid(flags: MomentParsingFlagsOpt): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")(flags.asInstanceOf[js.Any]).asInstanceOf[Moment]
   
-  inline def isDate(m: js.Any): /* is std.Date */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDate")(m.asInstanceOf[js.Any]).asInstanceOf[/* is std.Date */ Boolean]
+  inline def isDate(m: Any): /* is std.Date */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDate")(m.asInstanceOf[js.Any]).asInstanceOf[/* is std.Date */ Boolean]
   
-  inline def isDuration(d: js.Any): /* is moment.moment.Duration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDuration")(d.asInstanceOf[js.Any]).asInstanceOf[/* is moment.moment.Duration */ Boolean]
+  inline def isDuration(d: Any): /* is moment.moment.Duration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDuration")(d.asInstanceOf[js.Any]).asInstanceOf[/* is moment.moment.Duration */ Boolean]
   
-  inline def isMoment(m: js.Any): /* is moment.moment.Moment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMoment")(m.asInstanceOf[js.Any]).asInstanceOf[/* is moment.moment.Moment */ Boolean]
+  inline def isMoment(m: Any): /* is moment.moment.Moment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMoment")(m.asInstanceOf[js.Any]).asInstanceOf[/* is moment.moment.Moment */ Boolean]
   
   inline def lang(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("lang")().asInstanceOf[String]
   inline def lang(language: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("lang")(language.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -166,10 +166,10 @@ object momentTimezoneUtilsMod {
   
   inline def locales(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("locales")().asInstanceOf[js.Array[String]]
   
-  inline def max(moments: Moment*): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(moments.asInstanceOf[js.Any]).asInstanceOf[Moment]
+  inline def max(moments: Moment*): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(moments.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Moment]
   inline def max(moments: js.Array[Moment]): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(moments.asInstanceOf[js.Any]).asInstanceOf[Moment]
   
-  inline def min(moments: Moment*): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(moments.asInstanceOf[js.Any]).asInstanceOf[Moment]
+  inline def min(moments: Moment*): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(moments.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Moment]
   inline def min(moments: js.Array[Moment]): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(moments.asInstanceOf[js.Any]).asInstanceOf[Moment]
   
   inline def months(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("months")().asInstanceOf[js.Array[String]]
@@ -342,13 +342,13 @@ object momentTimezoneUtilsMod {
         
         inline def setLinks(value: js.Array[String]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
         
-        inline def setLinksVarargs(value: String*): Self = StObject.set(x, "links", js.Array(value :_*))
+        inline def setLinksVarargs(value: String*): Self = StObject.set(x, "links", js.Array(value*))
         
         inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
         
         inline def setZones(value: js.Array[String]): Self = StObject.set(x, "zones", value.asInstanceOf[js.Any])
         
-        inline def setZonesVarargs(value: String*): Self = StObject.set(x, "zones", js.Array(value :_*))
+        inline def setZonesVarargs(value: String*): Self = StObject.set(x, "zones", js.Array(value*))
       }
     }
     
@@ -378,17 +378,17 @@ object momentTimezoneUtilsMod {
         
         inline def setAbbrs(value: js.Array[String]): Self = StObject.set(x, "abbrs", value.asInstanceOf[js.Any])
         
-        inline def setAbbrsVarargs(value: String*): Self = StObject.set(x, "abbrs", js.Array(value :_*))
+        inline def setAbbrsVarargs(value: String*): Self = StObject.set(x, "abbrs", js.Array(value*))
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
         inline def setOffsets(value: js.Array[Double]): Self = StObject.set(x, "offsets", value.asInstanceOf[js.Any])
         
-        inline def setOffsetsVarargs(value: Double*): Self = StObject.set(x, "offsets", js.Array(value :_*))
+        inline def setOffsetsVarargs(value: Double*): Self = StObject.set(x, "offsets", js.Array(value*))
         
         inline def setUntils(value: js.Array[Double | Null]): Self = StObject.set(x, "untils", value.asInstanceOf[js.Any])
         
-        inline def setUntilsVarargs(value: (Double | Null)*): Self = StObject.set(x, "untils", js.Array(value :_*))
+        inline def setUntilsVarargs(value: (Double | Null)*): Self = StObject.set(x, "untils", js.Array(value*))
       }
     }
     
@@ -412,13 +412,13 @@ object momentTimezoneUtilsMod {
         
         inline def setLinks(value: js.Array[String]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
         
-        inline def setLinksVarargs(value: String*): Self = StObject.set(x, "links", js.Array(value :_*))
+        inline def setLinksVarargs(value: String*): Self = StObject.set(x, "links", js.Array(value*))
         
         inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
         
         inline def setZones(value: js.Array[UnpackedZone]): Self = StObject.set(x, "zones", value.asInstanceOf[js.Any])
         
-        inline def setZonesVarargs(value: UnpackedZone*): Self = StObject.set(x, "zones", js.Array(value :_*))
+        inline def setZonesVarargs(value: UnpackedZone*): Self = StObject.set(x, "zones", js.Array(value*))
       }
     }
   }

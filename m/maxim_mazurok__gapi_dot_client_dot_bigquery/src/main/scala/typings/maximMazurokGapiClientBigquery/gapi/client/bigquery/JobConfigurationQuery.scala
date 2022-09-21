@@ -27,6 +27,12 @@ trait JobConfigurationQuery extends StObject {
     */
   var createDisposition: js.UndefOr[String] = js.undefined
   
+  /**
+    * If true, creates a new session, where session id will be a server generated random id. If false, runs query with an existing session_id passed in ConnectionProperty, otherwise runs
+    * query in non-session mode.
+    */
+  var createSession: js.UndefOr[Boolean] = js.undefined
+  
   /** [Optional] Specifies the default dataset to use for unqualified table names in the query. Note that this does not alter behavior of unqualified dataset names. */
   var defaultDataset: js.UndefOr[DatasetReference] = js.undefined
   
@@ -90,7 +96,7 @@ trait JobConfigurationQuery extends StObject {
   var tableDefinitions: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.bigquery.gapi.client.bigquery.ExternalDataConfiguration}
-    */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.JobConfigurationQuery & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.JobConfigurationQuery & TopLevel[Any]
   ] = js.undefined
   
   /** Time-based partitioning specification for the destination table. Only one of timePartitioning and rangePartitioning should be specified. */
@@ -140,11 +146,15 @@ object JobConfigurationQuery {
     
     inline def setConnectionPropertiesUndefined: Self = StObject.set(x, "connectionProperties", js.undefined)
     
-    inline def setConnectionPropertiesVarargs(value: ConnectionProperty*): Self = StObject.set(x, "connectionProperties", js.Array(value :_*))
+    inline def setConnectionPropertiesVarargs(value: ConnectionProperty*): Self = StObject.set(x, "connectionProperties", js.Array(value*))
     
     inline def setCreateDisposition(value: String): Self = StObject.set(x, "createDisposition", value.asInstanceOf[js.Any])
     
     inline def setCreateDispositionUndefined: Self = StObject.set(x, "createDisposition", js.undefined)
+    
+    inline def setCreateSession(value: Boolean): Self = StObject.set(x, "createSession", value.asInstanceOf[js.Any])
+    
+    inline def setCreateSessionUndefined: Self = StObject.set(x, "createSession", js.undefined)
     
     inline def setDefaultDataset(value: DatasetReference): Self = StObject.set(x, "defaultDataset", value.asInstanceOf[js.Any])
     
@@ -188,7 +198,7 @@ object JobConfigurationQuery {
     
     inline def setQueryParametersUndefined: Self = StObject.set(x, "queryParameters", js.undefined)
     
-    inline def setQueryParametersVarargs(value: QueryParameter*): Self = StObject.set(x, "queryParameters", js.Array(value :_*))
+    inline def setQueryParametersVarargs(value: QueryParameter*): Self = StObject.set(x, "queryParameters", js.Array(value*))
     
     inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
@@ -200,12 +210,12 @@ object JobConfigurationQuery {
     
     inline def setSchemaUpdateOptionsUndefined: Self = StObject.set(x, "schemaUpdateOptions", js.undefined)
     
-    inline def setSchemaUpdateOptionsVarargs(value: String*): Self = StObject.set(x, "schemaUpdateOptions", js.Array(value :_*))
+    inline def setSchemaUpdateOptionsVarargs(value: String*): Self = StObject.set(x, "schemaUpdateOptions", js.Array(value*))
     
     inline def setTableDefinitions(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.bigquery.gapi.client.bigquery.ExternalDataConfiguration}
-      */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.JobConfigurationQuery & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.JobConfigurationQuery & TopLevel[Any]
     ): Self = StObject.set(x, "tableDefinitions", value.asInstanceOf[js.Any])
     
     inline def setTableDefinitionsUndefined: Self = StObject.set(x, "tableDefinitions", js.undefined)
@@ -226,7 +236,7 @@ object JobConfigurationQuery {
     
     inline def setUserDefinedFunctionResourcesUndefined: Self = StObject.set(x, "userDefinedFunctionResources", js.undefined)
     
-    inline def setUserDefinedFunctionResourcesVarargs(value: UserDefinedFunctionResource*): Self = StObject.set(x, "userDefinedFunctionResources", js.Array(value :_*))
+    inline def setUserDefinedFunctionResourcesVarargs(value: UserDefinedFunctionResource*): Self = StObject.set(x, "userDefinedFunctionResources", js.Array(value*))
     
     inline def setWriteDisposition(value: String): Self = StObject.set(x, "writeDisposition", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,7 @@ object ForcePseudoStateRequest {
     
     inline def setForcedPseudoClasses(value: js.Array[String]): Self = StObject.set(x, "forcedPseudoClasses", value.asInstanceOf[js.Any])
     
-    inline def setForcedPseudoClassesVarargs(value: String*): Self = StObject.set(x, "forcedPseudoClasses", js.Array(value :_*))
+    inline def setForcedPseudoClassesVarargs(value: String*): Self = StObject.set(x, "forcedPseudoClasses", js.Array(value*))
     
     inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
   }

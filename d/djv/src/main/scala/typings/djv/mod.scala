@@ -17,7 +17,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("djv", JSImport.Namespace)
   @js.native
-  class Class ()
+  open class Class ()
     extends StObject
        with typings.djv.mod.djv {
     def this(options: DjvConfig) = this()
@@ -90,20 +90,20 @@ object mod extends Shortcut {
   
   trait Resolved extends StObject {
     
-    def fn(args: js.Any*): js.Any
+    def fn(args: Any*): Any
     
     var schema: js.Object
   }
   object Resolved {
     
-    inline def apply(fn: /* repeated */ js.Any => js.Any, schema: js.Object): Resolved = {
+    inline def apply(fn: /* repeated */ Any => Any, schema: js.Object): Resolved = {
       val __obj = js.Dynamic.literal(fn = js.Any.fromFunction1(fn), schema = schema.asInstanceOf[js.Any])
       __obj.asInstanceOf[Resolved]
     }
     
     extension [Self <: Resolved](x: Self) {
       
-      inline def setFn(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
+      inline def setFn(value: /* repeated */ Any => Any): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
       
       inline def setSchema(value: js.Object): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     }
@@ -118,7 +118,7 @@ object mod extends Shortcut {
   trait djv extends StObject {
     
     def addFormat(name: String, formatter: String): Unit = js.native
-    def addFormat(name: String, formatter: js.Function2[/* schema */ js.Object, /* tpl */ js.Any, Unit]): Unit = js.native
+    def addFormat(name: String, formatter: js.Function2[/* schema */ js.Object, /* tpl */ Any, Unit]): Unit = js.native
     
     def addSchema(nameOrSchema: String): Resolved = js.native
     def addSchema(nameOrSchema: String, schema: js.Object): Resolved = js.native
@@ -137,10 +137,10 @@ object mod extends Shortcut {
     
     var resolved: Resolved = js.native
     
-    def setErrorHandler(errorHandler: js.Function2[/* errorType */ String, /* property */ js.Any, String]): Unit = js.native
+    def setErrorHandler(errorHandler: js.Function2[/* errorType */ String, /* property */ Any, String]): Unit = js.native
     
     def useVersion(version: String): Unit = js.native
-    def useVersion(version: String, configure: js.Any): Unit = js.native
+    def useVersion(version: String, configure: Any): Unit = js.native
     
     def validate(name: String, `object`: js.Object): js.UndefOr[String] = js.native
   }

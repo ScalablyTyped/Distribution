@@ -41,7 +41,7 @@ object ServiceSpec {
     
     inline def setNetworksUndefined: Self = StObject.set(x, "Networks", js.undefined)
     
-    inline def setNetworksVarargs(value: NetworkAttachmentConfig*): Self = StObject.set(x, "Networks", js.Array(value :_*))
+    inline def setNetworksVarargs(value: NetworkAttachmentConfig*): Self = StObject.set(x, "Networks", js.Array(value*))
     
     inline def setRollbackConfig(value: UpdateConfig): Self = StObject.set(x, "RollbackConfig", value.asInstanceOf[js.Any])
     

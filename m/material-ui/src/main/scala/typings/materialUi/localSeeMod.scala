@@ -10,10 +10,10 @@ object localSeeMod {
   
   @JSImport("material-ui/svg-icons/maps/local-see", JSImport.Default)
   @js.native
-  class default () extends MapsLocalSee
+  open class default () extends MapsLocalSee
   
   @JSImport("material-ui/svg-icons/maps/local-see", "MapsLocalSee")
   @js.native
-  class MapsLocalSee ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class MapsLocalSee ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

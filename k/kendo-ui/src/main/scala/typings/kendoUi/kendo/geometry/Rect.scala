@@ -30,10 +30,10 @@ trait Rect
   
   var origin: Point = js.native
   
-  def setOrigin(value: js.Any): Rect = js.native
+  def setOrigin(value: Any): Rect = js.native
   def setOrigin(value: Point): Rect = js.native
   
-  def setSize(value: js.Any): Rect = js.native
+  def setSize(value: Any): Rect = js.native
   def setSize(value: Size): Rect = js.native
   
   var size: Size = js.native

@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TypeofSchedule extends StObject {
   
   /* static member */
-  var Locale: js.Any
+  var Locale: Any
   
   /* static member */
   var fn: Schedule
 }
 object TypeofSchedule {
   
-  inline def apply(Locale: js.Any, fn: Schedule): TypeofSchedule = {
+  inline def apply(Locale: Any, fn: Schedule): TypeofSchedule = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofSchedule]
   }
@@ -24,6 +24,6 @@ object TypeofSchedule {
     
     inline def setFn(value: Schedule): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

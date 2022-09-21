@@ -57,7 +57,7 @@ object modalBackgroundMod {
   
   @JSImport("rbx/components/modal/modal-background", "ModalBackground")
   @js.native
-  val ModalBackground: ForwardRefAsExoticComponent[ModalBackgroundProps, ElementType[js.Any]] = js.native
+  val ModalBackground: ForwardRefAsExoticComponent[ModalBackgroundProps, ElementType[Any]] = js.native
   
   trait ModalBackgroundModifierProps extends StObject {
     

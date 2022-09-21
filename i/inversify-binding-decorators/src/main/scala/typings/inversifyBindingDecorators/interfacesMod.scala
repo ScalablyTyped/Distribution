@@ -11,13 +11,13 @@ object interfacesMod {
   
   object interfaces {
     
-    type BindConstraint = js.Function2[/* bind */ Bind, /* target */ js.Any, js.Any]
+    type BindConstraint = js.Function2[/* bind */ Bind, /* target */ Any, Any]
     
     @js.native
     trait ProvideDoneSyntax extends StObject {
       
-      def done(): js.Function1[/* target */ js.Any, js.Any] = js.native
-      def done(force: Boolean): js.Function1[/* target */ js.Any, js.Any] = js.native
+      def done(): js.Function1[/* target */ Any, Any] = js.native
+      def done(force: Boolean): js.Function1[/* target */ Any, Any] = js.native
     }
     
     @js.native
@@ -47,24 +47,24 @@ object interfacesMod {
     
     trait ProvideSyntax extends StObject {
       
-      def constraint(bind: Bind, target: js.Any): js.Any
+      def constraint(bind: Bind, target: Any): Any
       @JSName("constraint")
       var constraint_Original: BindConstraint
       
-      var implementationType: js.Any
+      var implementationType: Any
     }
     object ProvideSyntax {
       
-      inline def apply(constraint: (/* bind */ Bind, /* target */ js.Any) => js.Any, implementationType: js.Any): ProvideSyntax = {
+      inline def apply(constraint: (/* bind */ Bind, /* target */ Any) => Any, implementationType: Any): ProvideSyntax = {
         val __obj = js.Dynamic.literal(constraint = js.Any.fromFunction2(constraint), implementationType = implementationType.asInstanceOf[js.Any])
         __obj.asInstanceOf[ProvideSyntax]
       }
       
       extension [Self <: ProvideSyntax](x: Self) {
         
-        inline def setConstraint(value: (/* bind */ Bind, /* target */ js.Any) => js.Any): Self = StObject.set(x, "constraint", js.Any.fromFunction2(value))
+        inline def setConstraint(value: (/* bind */ Bind, /* target */ Any) => Any): Self = StObject.set(x, "constraint", js.Any.fromFunction2(value))
         
-        inline def setImplementationType(value: js.Any): Self = StObject.set(x, "implementationType", value.asInstanceOf[js.Any])
+        inline def setImplementationType(value: Any): Self = StObject.set(x, "implementationType", value.asInstanceOf[js.Any])
       }
     }
     
@@ -88,7 +88,7 @@ object interfacesMod {
       
       def whenAnyAncestorNamed(name: String): ProvideOnSyntax[T] = js.native
       
-      def whenAnyAncestorTagged(tag: String, value: js.Any): ProvideOnSyntax[T] = js.native
+      def whenAnyAncestorTagged(tag: String, value: Any): ProvideOnSyntax[T] = js.native
       
       def whenInjectedInto(parent: String): ProvideOnSyntax[T] = js.native
       def whenInjectedInto(parent: js.Function): ProvideOnSyntax[T] = js.native
@@ -100,15 +100,15 @@ object interfacesMod {
       
       def whenNoAncestorNamed(name: String): ProvideOnSyntax[T] = js.native
       
-      def whenNoAncestorTagged(tag: String, value: js.Any): ProvideOnSyntax[T] = js.native
+      def whenNoAncestorTagged(tag: String, value: Any): ProvideOnSyntax[T] = js.native
       
       def whenParentNamed(name: String): ProvideOnSyntax[T] = js.native
       
-      def whenParentTagged(tag: String, value: js.Any): ProvideOnSyntax[T] = js.native
+      def whenParentTagged(tag: String, value: Any): ProvideOnSyntax[T] = js.native
       
       def whenTargetNamed(name: String): ProvideOnSyntax[T] = js.native
       
-      def whenTargetTagged(tag: String, value: js.Any): ProvideOnSyntax[T] = js.native
+      def whenTargetTagged(tag: String, value: Any): ProvideOnSyntax[T] = js.native
     }
   }
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object colorFiltersMod {
   
-  @JSImport("@storybook/addon-a11y/dist/components/ColorFilters", "Filters")
+  @JSImport("@storybook/addon-a11y/dist/ts3.9/components/ColorFilters", "Filters")
   @js.native
   val Filters: FC[SVGProps[SVGSVGElement]] = js.native
 }

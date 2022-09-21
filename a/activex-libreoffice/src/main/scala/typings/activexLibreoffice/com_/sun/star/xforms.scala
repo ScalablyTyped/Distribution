@@ -71,16 +71,16 @@ object xforms {
       addValidityConstraintListener: XValidityConstraintListener => Unit,
       addVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
       dispose: () => Unit,
-      explainInvalid: js.Any => String,
+      explainInvalid: Any => String,
       getAllListEntries: () => SafeArray[String],
       getListEntry: Double => String,
       getListEntryCount: () => Double,
       getPropertySetInfo: () => XPropertySetInfo,
-      getPropertyValue: String => js.Any,
+      getPropertyValue: String => Any,
       getSupportedValueTypes: () => SafeArray[`type`],
-      getValue: `type` => js.Any,
-      isValid: js.Any => Boolean,
-      queryInterface: `type` => js.Any,
+      getValue: `type` => Any,
+      isValid: Any => Boolean,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removeEventListener: XEventListener => Unit,
       removeListEntryListener: XListEntryListener => Unit,
@@ -88,8 +88,8 @@ object xforms {
       removePropertyChangeListener: (String, XPropertyChangeListener) => Unit,
       removeValidityConstraintListener: XValidityConstraintListener => Unit,
       removeVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
-      setPropertyValue: (String, js.Any) => Unit,
-      setValue: js.Any => Unit,
+      setPropertyValue: (String, Any) => Unit,
+      setValue: Any => Unit,
       supportsType: `type` => Boolean
     ): Binding = {
       val __obj = js.Dynamic.literal(AllListEntries = AllListEntries.asInstanceOf[js.Any], BindingNamespaces = BindingNamespaces.asInstanceOf[js.Any], ListEntryCount = ListEntryCount.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], ReadOnly = ReadOnly.asInstanceOf[js.Any], Relevant = Relevant.asInstanceOf[js.Any], SupportedValueTypes = SupportedValueTypes.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), addListEntryListener = js.Any.fromFunction1(addListEntryListener), addModifyListener = js.Any.fromFunction1(addModifyListener), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addValidityConstraintListener = js.Any.fromFunction1(addValidityConstraintListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), dispose = js.Any.fromFunction0(dispose), explainInvalid = js.Any.fromFunction1(explainInvalid), getAllListEntries = js.Any.fromFunction0(getAllListEntries), getListEntry = js.Any.fromFunction1(getListEntry), getListEntryCount = js.Any.fromFunction0(getListEntryCount), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getSupportedValueTypes = js.Any.fromFunction0(getSupportedValueTypes), getValue = js.Any.fromFunction1(getValue), isValid = js.Any.fromFunction1(isValid), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), removeListEntryListener = js.Any.fromFunction1(removeListEntryListener), removeModifyListener = js.Any.fromFunction1(removeModifyListener), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeValidityConstraintListener = js.Any.fromFunction1(removeValidityConstraintListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setPropertyValue = js.Any.fromFunction2(setPropertyValue), setValue = js.Any.fromFunction1(setValue), supportsType = js.Any.fromFunction1(supportsType))
@@ -155,13 +155,13 @@ object xforms {
       cloneDataType: (String, String) => XDataType,
       createEnumeration: () => XEnumeration,
       getBasicDataType: Double => XDataType,
-      getByName: String => js.Any,
+      getByName: String => Any,
       getDataType: String => XDataType,
       getElementNames: () => SafeArray[String],
       getElementType: () => `type`,
       hasByName: String => Boolean,
       hasElements: () => Boolean,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       revokeDataType: String => Unit
     ): XDataTypeRepository = {
@@ -211,7 +211,7 @@ object xforms {
       initEvent: (String, Boolean, Boolean) => Unit,
       initXFormsEvent: (String, Boolean, Boolean) => Unit,
       preventDefault: () => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       stopPropagation: () => Unit
     ): XFormsEvent = {
@@ -248,7 +248,7 @@ object xforms {
       XForms: XNameContainer,
       acquire: () => Unit,
       getXForms: () => XNameContainer,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit
     ): XFormsSupplier = {
       val __obj = js.Dynamic.literal(XForms = XForms.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getXForms = js.Any.fromFunction0(getXForms), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -655,11 +655,11 @@ object xforms {
       getInstanceDocument: String => XDocument,
       getInstances: () => XSet,
       getPropertySetInfo: () => XPropertySetInfo,
-      getPropertyValue: String => js.Any,
+      getPropertyValue: String => Any,
       getSubmission: String => XSubmission,
       getSubmissions: () => XSet,
       initialize: () => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       rebuild: () => Unit,
       recalculate: () => Unit,
       refresh: () => Unit,
@@ -668,7 +668,7 @@ object xforms {
       removeVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
       revalidate: () => Unit,
       setID: String => Unit,
-      setPropertyValue: (String, js.Any) => Unit,
+      setPropertyValue: (String, Any) => Unit,
       submit: String => Unit,
       submitWithInteraction: (String, XInteractionHandler) => Unit
     ): XModel2 = {
@@ -694,14 +694,14 @@ object xforms {
       addVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
       getName: () => String,
       getPropertySetInfo: () => XPropertySetInfo,
-      getPropertyValue: String => js.Any,
-      queryInterface: `type` => js.Any,
+      getPropertyValue: String => Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       removePropertyChangeListener: (String, XPropertyChangeListener) => Unit,
       removeSubmissionVetoListener: XSubmissionVetoListener => Unit,
       removeVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
       setName: String => Unit,
-      setPropertyValue: (String, js.Any) => Unit,
+      setPropertyValue: (String, Any) => Unit,
       submit: () => Unit,
       submitWithInteraction: XInteractionHandler => Unit
     ): XSubmission = {

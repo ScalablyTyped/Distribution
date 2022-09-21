@@ -51,7 +51,7 @@ object PartialBlockStatement {
     
     inline def setParams(value: js.Array[Expression]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    inline def setParamsVarargs(value: Expression*): Self = StObject.set(x, "params", js.Array(value :_*))
+    inline def setParamsVarargs(value: Expression*): Self = StObject.set(x, "params", js.Array(value*))
     
     inline def setProgram(value: Program): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
     

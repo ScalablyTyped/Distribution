@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SpatialStationaryFrameOfReference extends StObject {
   
-  var coordinateSystem: js.Any
+  var coordinateSystem: Any
 }
 object SpatialStationaryFrameOfReference {
   
-  inline def apply(coordinateSystem: js.Any): SpatialStationaryFrameOfReference = {
+  inline def apply(coordinateSystem: Any): SpatialStationaryFrameOfReference = {
     val __obj = js.Dynamic.literal(coordinateSystem = coordinateSystem.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpatialStationaryFrameOfReference]
   }
   
   extension [Self <: SpatialStationaryFrameOfReference](x: Self) {
     
-    inline def setCoordinateSystem(value: js.Any): Self = StObject.set(x, "coordinateSystem", value.asInstanceOf[js.Any])
+    inline def setCoordinateSystem(value: Any): Self = StObject.set(x, "coordinateSystem", value.asInstanceOf[js.Any])
   }
 }

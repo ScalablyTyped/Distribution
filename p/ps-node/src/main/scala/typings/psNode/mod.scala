@@ -1,7 +1,5 @@
 package typings.psNode
 
-import typings.std.Error
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,21 +11,21 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def kill(pID: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pID.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def kill(pID: String, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pID.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def kill(pID: String, cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pID.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def kill(pID: String, signal: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pID.asInstanceOf[js.Any], signal.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def kill(pID: String, signal: String, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pID.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def kill(pID: String, signal: Unit, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pID.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def kill(pID: String, signal: String, cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pID.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def kill(pID: String, signal: Unit, cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pID.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def kill(pID: String, signal: Signal): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pID.asInstanceOf[js.Any], signal.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def kill(pID: String, signal: Signal, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pID.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def kill(pID: String, signal: Signal, cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pID.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def kill(pID: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pID.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def kill(pID: Double, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pID.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def kill(pID: Double, cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pID.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def kill(pID: Double, signal: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pID.asInstanceOf[js.Any], signal.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def kill(pID: Double, signal: String, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pID.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def kill(pID: Double, signal: Unit, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pID.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def kill(pID: Double, signal: String, cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pID.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def kill(pID: Double, signal: Unit, cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pID.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def kill(pID: Double, signal: Signal): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pID.asInstanceOf[js.Any], signal.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def kill(pID: Double, signal: Signal, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pID.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def kill(pID: Double, signal: Signal, cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pID.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def lookup(query: Query, cb: js.Function2[/* err */ Error, /* list */ js.Array[Program], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(query.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def lookup(query: Query, cb: js.Function2[/* err */ js.Error, /* list */ js.Array[Program], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(query.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait Program extends StObject {
     
@@ -48,7 +46,7 @@ object mod {
       
       inline def setArguments(value: js.Array[String]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
-      inline def setArgumentsVarargs(value: String*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+      inline def setArgumentsVarargs(value: String*): Self = StObject.set(x, "arguments", js.Array(value*))
       
       inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
@@ -58,9 +56,9 @@ object mod {
   
   trait Query extends StObject {
     
-    var arguments: js.UndefOr[String | RegExp] = js.undefined
+    var arguments: js.UndefOr[String | js.RegExp] = js.undefined
     
-    var command: js.UndefOr[String | RegExp] = js.undefined
+    var command: js.UndefOr[String | js.RegExp] = js.undefined
     
     var pid: js.UndefOr[String | js.Array[String] | Double] = js.undefined
     
@@ -77,11 +75,11 @@ object mod {
     
     extension [Self <: Query](x: Self) {
       
-      inline def setArguments(value: String | RegExp): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+      inline def setArguments(value: String | js.RegExp): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
       inline def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
       
-      inline def setCommand(value: String | RegExp): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+      inline def setCommand(value: String | js.RegExp): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
       inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
       
@@ -89,7 +87,7 @@ object mod {
       
       inline def setPidUndefined: Self = StObject.set(x, "pid", js.undefined)
       
-      inline def setPidVarargs(value: String*): Self = StObject.set(x, "pid", js.Array(value :_*))
+      inline def setPidVarargs(value: String*): Self = StObject.set(x, "pid", js.Array(value*))
       
       inline def setPpid(value: Double): Self = StObject.set(x, "ppid", value.asInstanceOf[js.Any])
       
@@ -99,7 +97,7 @@ object mod {
       
       inline def setPsargsUndefined: Self = StObject.set(x, "psargs", js.undefined)
       
-      inline def setPsargsVarargs(value: String*): Self = StObject.set(x, "psargs", js.Array(value :_*))
+      inline def setPsargsVarargs(value: String*): Self = StObject.set(x, "psargs", js.Array(value*))
     }
   }
   

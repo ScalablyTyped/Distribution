@@ -13,10 +13,10 @@ trait SpyAnd extends StObject {
   def callThrough(): Spy
   
   /** By chaining the spy with and.returnValue, all calls to the function will return a specific value. */
-  def returnValue(`val`: js.Any): Spy
+  def returnValue(`val`: scala.Any): Spy
   
   /** By chaining the spy with and.returnValues, all calls to the function will return specific values in order until it reaches the end of the return values list. */
-  def returnValues(values: js.Any*): Spy
+  def returnValues(values: scala.Any*): Spy
   
   /** When a calling strategy is used for a spy, the original stubbing behavior can be returned at any time with and.stub. */
   def stub(): Spy
@@ -29,8 +29,8 @@ object SpyAnd {
   inline def apply(
     callFake: js.Function => Spy,
     callThrough: () => Spy,
-    returnValue: js.Any => Spy,
-    returnValues: /* repeated */ js.Any => Spy,
+    returnValue: scala.Any => Spy,
+    returnValues: /* repeated */ scala.Any => Spy,
     stub: () => Spy,
     throwError: String => Spy
   ): SpyAnd = {
@@ -44,9 +44,9 @@ object SpyAnd {
     
     inline def setCallThrough(value: () => Spy): Self = StObject.set(x, "callThrough", js.Any.fromFunction0(value))
     
-    inline def setReturnValue(value: js.Any => Spy): Self = StObject.set(x, "returnValue", js.Any.fromFunction1(value))
+    inline def setReturnValue(value: scala.Any => Spy): Self = StObject.set(x, "returnValue", js.Any.fromFunction1(value))
     
-    inline def setReturnValues(value: /* repeated */ js.Any => Spy): Self = StObject.set(x, "returnValues", js.Any.fromFunction1(value))
+    inline def setReturnValues(value: /* repeated */ scala.Any => Spy): Self = StObject.set(x, "returnValues", js.Any.fromFunction1(value))
     
     inline def setStub(value: () => Spy): Self = StObject.set(x, "stub", js.Any.fromFunction0(value))
     

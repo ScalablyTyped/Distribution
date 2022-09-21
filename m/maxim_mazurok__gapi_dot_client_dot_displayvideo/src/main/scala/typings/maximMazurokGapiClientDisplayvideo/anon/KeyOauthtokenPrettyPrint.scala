@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientDisplayvideo.anon
 
-import typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo.Advertiser
+import typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo.ManualTrigger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ trait KeyOauthtokenPrettyPrint extends StObject {
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.undefined
   
-  /** Output only. The unique ID of the advertiser. Assigned by the system. */
+  /** Required. Immutable. The unique ID of the advertiser that the manual trigger belongs to. */
   var advertiserId: String
   
   /** Data format for response. */
@@ -39,10 +39,7 @@ trait KeyOauthtokenPrettyPrint extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: Advertiser
-  
-  /** Required. The mask to control which fields to update. */
-  var updateMask: js.UndefOr[String] = js.undefined
+  var resource: ManualTrigger
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,7 +49,7 @@ trait KeyOauthtokenPrettyPrint extends StObject {
 }
 object KeyOauthtokenPrettyPrint {
   
-  inline def apply(advertiserId: String, resource: Advertiser): KeyOauthtokenPrettyPrint = {
+  inline def apply(advertiserId: String, resource: ManualTrigger): KeyOauthtokenPrettyPrint = {
     val __obj = js.Dynamic.literal(advertiserId = advertiserId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyOauthtokenPrettyPrint]
   }
@@ -97,11 +94,7 @@ object KeyOauthtokenPrettyPrint {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: Advertiser): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
-    
-    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
-    
-    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setResource(value: ManualTrigger): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

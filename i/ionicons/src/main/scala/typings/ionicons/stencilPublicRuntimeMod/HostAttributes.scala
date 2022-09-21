@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait HostAttributes
   extends StObject
-     with /* prop */ StringDictionary[js.Any] {
+     with /* prop */ StringDictionary[Any] {
   
   var `class`: js.UndefOr[String | StringDictionary[Boolean]] = js.undefined
   

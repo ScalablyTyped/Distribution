@@ -1,6 +1,5 @@
 package typings.reactVis.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,13 +18,13 @@ trait LineMarkSeriesPoint
   
   var stroke: js.UndefOr[String | Double] = js.undefined
   
-  var x: String | Double | Date
+  var x: String | Double | js.Date
   
-  var y: String | Double | Date
+  var y: String | Double | js.Date
 }
 object LineMarkSeriesPoint {
   
-  inline def apply(x: String | Double | Date, y: String | Double | Date): LineMarkSeriesPoint = {
+  inline def apply(x: String | Double | js.Date, y: String | Double | js.Date): LineMarkSeriesPoint = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineMarkSeriesPoint]
   }
@@ -52,8 +51,8 @@ object LineMarkSeriesPoint {
     
     inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
     
-    inline def setX(value: String | Double | Date): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: String | Double | js.Date): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    inline def setY(value: String | Double | Date): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: String | Double | js.Date): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

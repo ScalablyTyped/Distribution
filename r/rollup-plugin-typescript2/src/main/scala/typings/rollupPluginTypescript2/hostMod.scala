@@ -13,48 +13,32 @@ object hostMod {
   
   @JSImport("rollup-plugin-typescript2/dist/host", "LanguageServiceHost")
   @js.native
-  class LanguageServiceHost protected ()
+  open class LanguageServiceHost protected ()
     extends StObject
        with typings.typescript.mod.LanguageServiceHost {
     def this(parsedConfig: ParsedCommandLine, transformers: js.Array[TransformerFactoryCreator], cwd: String) = this()
     
-    /* private */ var cwd: js.Any = js.native
+    /* private */ var cwd: Any = js.native
     
-    /* private */ var fileNames: js.Any = js.native
+    /* private */ var fileNames: Any = js.native
     
-    /* CompleteClass */
-    override def getCompilationSettings(): CompilerOptions = js.native
+    @JSName("getDefaultLibFileName")
+    var getDefaultLibFileName_Original: js.Function1[/* options */ CompilerOptions, String] = js.native
     
-    /* CompleteClass */
-    @JSName("getCurrentDirectory")
-    override def getCurrentDirectory_MLanguageServiceHost(): String = js.native
-    
-    /* CompleteClass */
-    override def getDefaultLibFileName(options: CompilerOptions): String = js.native
-    
-    /* CompleteClass */
-    override def getScriptFileNames(): js.Array[String] = js.native
-    
-    /* CompleteClass */
-    override def getScriptSnapshot(fileName: String): js.UndefOr[IScriptSnapshot] = js.native
-    
-    /* CompleteClass */
-    override def getScriptVersion(fileName: String): String = js.native
-    
-    /* private */ var parsedConfig: js.Any = js.native
+    /* private */ var parsedConfig: Any = js.native
     
     def reset(): Unit = js.native
     
-    /* private */ var service: js.Any = js.native
+    /* private */ var service: Any = js.native
     
     def setLanguageService(service: LanguageService): Unit = js.native
     
-    def setSnapshot(fileName: String, data: String): IScriptSnapshot = js.native
+    def setSnapshot(fileName: String, source: String): IScriptSnapshot = js.native
     
-    /* private */ var snapshots: js.Any = js.native
+    /* private */ var snapshots: Any = js.native
     
-    /* private */ var transformers: js.Any = js.native
+    /* private */ var transformers: Any = js.native
     
-    /* private */ var versions: js.Any = js.native
+    /* private */ var versions: Any = js.native
   }
 }

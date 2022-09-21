@@ -12,7 +12,7 @@ object textMod {
   
   @JSImport("@storybook/addon-knobs/dist/components/types/Text", JSImport.Default)
   @js.native
-  class default () extends TextType
+  open class default () extends TextType
   /* static members */
   object default {
     
@@ -37,9 +37,9 @@ object textMod {
   
   @js.native
   trait TextType
-    extends Component[TextTypeProps, js.Object, js.Any] {
+    extends Component[TextTypeProps, js.Object, Any] {
     
-    /* private */ var handleChange: js.Any = js.native
+    /* private */ var handleChange: Any = js.native
     
     @JSName("shouldComponentUpdate")
     def shouldComponentUpdate_MTextType(nextProps: TextTypeProps): Boolean = js.native

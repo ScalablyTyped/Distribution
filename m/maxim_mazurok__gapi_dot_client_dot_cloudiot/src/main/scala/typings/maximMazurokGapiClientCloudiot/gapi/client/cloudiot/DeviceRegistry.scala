@@ -57,13 +57,13 @@ object DeviceRegistry {
     
     inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
     
-    inline def setCredentialsVarargs(value: RegistryCredential*): Self = StObject.set(x, "credentials", js.Array(value :_*))
+    inline def setCredentialsVarargs(value: RegistryCredential*): Self = StObject.set(x, "credentials", js.Array(value*))
     
     inline def setEventNotificationConfigs(value: js.Array[EventNotificationConfig]): Self = StObject.set(x, "eventNotificationConfigs", value.asInstanceOf[js.Any])
     
     inline def setEventNotificationConfigsUndefined: Self = StObject.set(x, "eventNotificationConfigs", js.undefined)
     
-    inline def setEventNotificationConfigsVarargs(value: EventNotificationConfig*): Self = StObject.set(x, "eventNotificationConfigs", js.Array(value :_*))
+    inline def setEventNotificationConfigsVarargs(value: EventNotificationConfig*): Self = StObject.set(x, "eventNotificationConfigs", js.Array(value*))
     
     inline def setHttpConfig(value: HttpConfig): Self = StObject.set(x, "httpConfig", value.asInstanceOf[js.Any])
     

@@ -10,10 +10,10 @@ extended POSIX-style sprintf
 | ------------------ | :-------------: |
 | Full name          | extsprintf |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 160 |
-| # downloads        | 1248568531 |
-| # stars            | 2 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1.23171965E8 |
+| # stars            | 34.0 |
 
 ## Links
 - [Homepage](https://github.com/davepacheco/node-extsprintf#readme)

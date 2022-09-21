@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react", "DropdownBase")
 @js.native
-class DropdownBase protected ()
+open class DropdownBase protected ()
   extends typings.officeUiFabricReact.libDropdownMod.DropdownBase {
   def this(props: IDropdownProps) = this()
 }

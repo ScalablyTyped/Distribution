@@ -10,7 +10,7 @@ object projectSnippetDiscussionsMod {
   
   @JSImport("gitlab/dist/types/core/services/ProjectSnippetDiscussions", "ProjectSnippetDiscussions")
   @js.native
-  class ProjectSnippetDiscussions protected () extends ResourceDiscussions {
+  open class ProjectSnippetDiscussions protected () extends ResourceDiscussions {
     def this(options: BaseServiceOptions) = this()
   }
 }

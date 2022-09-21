@@ -1,6 +1,5 @@
 package typings.awsSdkClientS3Browser
 
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,22 +11,22 @@ object typesCorsruleMod {
     /**
       * <p>Specifies which headers are allowed in a pre-flight OPTIONS request.</p>
       */
-    var AllowedHeaders: js.UndefOr[js.Array[String] | Iterable[String]] = js.undefined
+    var AllowedHeaders: js.UndefOr[js.Array[String] | js.Iterable[String]] = js.undefined
     
     /**
       * <p>Identifies HTTP methods that the domain/origin specified in the rule is allowed to execute.</p>
       */
-    var AllowedMethods: js.Array[String] | Iterable[String]
+    var AllowedMethods: js.Array[String] | js.Iterable[String]
     
     /**
       * <p>One or more origins you want customers to be able to access the bucket from.</p>
       */
-    var AllowedOrigins: js.Array[String] | Iterable[String]
+    var AllowedOrigins: js.Array[String] | js.Iterable[String]
     
     /**
       * <p>One or more headers in the response that you want customers to be able to access from their applications (for example, from a JavaScript XMLHttpRequest object).</p>
       */
-    var ExposeHeaders: js.UndefOr[js.Array[String] | Iterable[String]] = js.undefined
+    var ExposeHeaders: js.UndefOr[js.Array[String] | js.Iterable[String]] = js.undefined
     
     /**
       * <p>The time in seconds that your browser is to cache the preflight response for the specified resource.</p>
@@ -37,8 +36,8 @@ object typesCorsruleMod {
   object CORSRule {
     
     inline def apply(
-      AllowedMethods: js.Array[String] | Iterable[String],
-      AllowedOrigins: js.Array[String] | Iterable[String]
+      AllowedMethods: js.Array[String] | js.Iterable[String],
+      AllowedOrigins: js.Array[String] | js.Iterable[String]
     ): CORSRule = {
       val __obj = js.Dynamic.literal(AllowedMethods = AllowedMethods.asInstanceOf[js.Any], AllowedOrigins = AllowedOrigins.asInstanceOf[js.Any])
       __obj.asInstanceOf[CORSRule]
@@ -46,25 +45,25 @@ object typesCorsruleMod {
     
     extension [Self <: CORSRule](x: Self) {
       
-      inline def setAllowedHeaders(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "AllowedHeaders", value.asInstanceOf[js.Any])
+      inline def setAllowedHeaders(value: js.Array[String] | js.Iterable[String]): Self = StObject.set(x, "AllowedHeaders", value.asInstanceOf[js.Any])
       
       inline def setAllowedHeadersUndefined: Self = StObject.set(x, "AllowedHeaders", js.undefined)
       
-      inline def setAllowedHeadersVarargs(value: String*): Self = StObject.set(x, "AllowedHeaders", js.Array(value :_*))
+      inline def setAllowedHeadersVarargs(value: String*): Self = StObject.set(x, "AllowedHeaders", js.Array(value*))
       
-      inline def setAllowedMethods(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "AllowedMethods", value.asInstanceOf[js.Any])
+      inline def setAllowedMethods(value: js.Array[String] | js.Iterable[String]): Self = StObject.set(x, "AllowedMethods", value.asInstanceOf[js.Any])
       
-      inline def setAllowedMethodsVarargs(value: String*): Self = StObject.set(x, "AllowedMethods", js.Array(value :_*))
+      inline def setAllowedMethodsVarargs(value: String*): Self = StObject.set(x, "AllowedMethods", js.Array(value*))
       
-      inline def setAllowedOrigins(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "AllowedOrigins", value.asInstanceOf[js.Any])
+      inline def setAllowedOrigins(value: js.Array[String] | js.Iterable[String]): Self = StObject.set(x, "AllowedOrigins", value.asInstanceOf[js.Any])
       
-      inline def setAllowedOriginsVarargs(value: String*): Self = StObject.set(x, "AllowedOrigins", js.Array(value :_*))
+      inline def setAllowedOriginsVarargs(value: String*): Self = StObject.set(x, "AllowedOrigins", js.Array(value*))
       
-      inline def setExposeHeaders(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "ExposeHeaders", value.asInstanceOf[js.Any])
+      inline def setExposeHeaders(value: js.Array[String] | js.Iterable[String]): Self = StObject.set(x, "ExposeHeaders", value.asInstanceOf[js.Any])
       
       inline def setExposeHeadersUndefined: Self = StObject.set(x, "ExposeHeaders", js.undefined)
       
-      inline def setExposeHeadersVarargs(value: String*): Self = StObject.set(x, "ExposeHeaders", js.Array(value :_*))
+      inline def setExposeHeadersVarargs(value: String*): Self = StObject.set(x, "ExposeHeaders", js.Array(value*))
       
       inline def setMaxAgeSeconds(value: Double): Self = StObject.set(x, "MaxAgeSeconds", value.asInstanceOf[js.Any])
       
@@ -113,21 +112,21 @@ object typesCorsruleMod {
       
       inline def setAllowedHeadersUndefined: Self = StObject.set(x, "AllowedHeaders", js.undefined)
       
-      inline def setAllowedHeadersVarargs(value: String*): Self = StObject.set(x, "AllowedHeaders", js.Array(value :_*))
+      inline def setAllowedHeadersVarargs(value: String*): Self = StObject.set(x, "AllowedHeaders", js.Array(value*))
       
       inline def setAllowedMethods(value: js.Array[String]): Self = StObject.set(x, "AllowedMethods", value.asInstanceOf[js.Any])
       
-      inline def setAllowedMethodsVarargs(value: String*): Self = StObject.set(x, "AllowedMethods", js.Array(value :_*))
+      inline def setAllowedMethodsVarargs(value: String*): Self = StObject.set(x, "AllowedMethods", js.Array(value*))
       
       inline def setAllowedOrigins(value: js.Array[String]): Self = StObject.set(x, "AllowedOrigins", value.asInstanceOf[js.Any])
       
-      inline def setAllowedOriginsVarargs(value: String*): Self = StObject.set(x, "AllowedOrigins", js.Array(value :_*))
+      inline def setAllowedOriginsVarargs(value: String*): Self = StObject.set(x, "AllowedOrigins", js.Array(value*))
       
       inline def setExposeHeaders(value: js.Array[String]): Self = StObject.set(x, "ExposeHeaders", value.asInstanceOf[js.Any])
       
       inline def setExposeHeadersUndefined: Self = StObject.set(x, "ExposeHeaders", js.undefined)
       
-      inline def setExposeHeadersVarargs(value: String*): Self = StObject.set(x, "ExposeHeaders", js.Array(value :_*))
+      inline def setExposeHeadersVarargs(value: String*): Self = StObject.set(x, "ExposeHeaders", js.Array(value*))
     }
   }
 }

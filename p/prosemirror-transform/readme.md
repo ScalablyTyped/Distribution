@@ -1,7 +1,7 @@
 
 # Scala.js typings for prosemirror-transform
 
-Typings are for version 1.1
+Typings are for version 1.7.0
 
 ## Library description:
 ProseMirror document transformations
@@ -10,10 +10,10 @@ ProseMirror document transformations
 | ------------------ | :-------------: |
 | Full name          | prosemirror-transform |
 | Keywords           | - |
-| # releases         | 17 |
-| # dependents       | 106 |
-| # downloads        | 7812585 |
-| # stars            | 0 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 2063674.6666666667 |
+| # stars            | 81.0 |
 
 ## Links
 - [Homepage](https://github.com/prosemirror/prosemirror-transform#readme)
@@ -24,7 +24,7 @@ ProseMirror document transformations
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

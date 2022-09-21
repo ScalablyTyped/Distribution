@@ -16,18 +16,18 @@ trait DebugAdapter extends Disposable {
   def handleMessage(message: DebugProtocolMessage): Unit = js.native
   
   /**
-    * An event which fires after the debug adapter has sent a Debug Adapter Protocol message to VS Code.
+    * An event which fires after the debug adapter has sent a Debug Adapter Protocol message to the editor.
     * Messages can be requests, responses, or events.
     */
-  def onDidSendMessage(listener: js.Function1[/* e */ DebugProtocolMessage, js.Any]): Disposable = js.native
-  def onDidSendMessage(listener: js.Function1[/* e */ DebugProtocolMessage, js.Any], thisArgs: js.Any): Disposable = js.native
+  def onDidSendMessage(listener: js.Function1[/* e */ DebugProtocolMessage, Any]): Disposable = js.native
+  def onDidSendMessage(listener: js.Function1[/* e */ DebugProtocolMessage, Any], thisArgs: Any): Disposable = js.native
   def onDidSendMessage(
-    listener: js.Function1[/* e */ DebugProtocolMessage, js.Any],
-    thisArgs: js.Any,
+    listener: js.Function1[/* e */ DebugProtocolMessage, Any],
+    thisArgs: Any,
     disposables: js.Array[Disposable]
   ): Disposable = js.native
   def onDidSendMessage(
-    listener: js.Function1[/* e */ DebugProtocolMessage, js.Any],
+    listener: js.Function1[/* e */ DebugProtocolMessage, Any],
     thisArgs: Unit,
     disposables: js.Array[Disposable]
   ): Disposable = js.native

@@ -1,7 +1,7 @@
 package typings.reapop
 
 import typings.react.mod.Context
-import typings.reapop.typesMod.NewNotification
+import typings.reapop.anon.FnCall
 import typings.reapop.typesMod.Notification
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,7 +21,8 @@ object reapopNotificationsContextMod {
     
     var notifications: js.Array[Notification]
     
-    def notify(notification: NewNotification): Unit
+    @JSName("notify")
+    var notify_FNotificationsContext: FnCall
   }
   object NotificationsContext {
     
@@ -29,10 +30,10 @@ object reapopNotificationsContextMod {
       dismissNotification: String => Unit,
       dismissNotifications: () => Unit,
       notifications: js.Array[Notification],
-      notify_ : NewNotification => Unit
+      notify_ : FnCall
     ): NotificationsContext = {
       val __obj = js.Dynamic.literal(dismissNotification = js.Any.fromFunction1(dismissNotification), dismissNotifications = js.Any.fromFunction0(dismissNotifications), notifications = notifications.asInstanceOf[js.Any])
-      __obj.updateDynamic("notify")(js.Any.fromFunction1(notify_))
+      __obj.updateDynamic("notify")(notify_.asInstanceOf[js.Any])
       __obj.asInstanceOf[NotificationsContext]
     }
     
@@ -44,9 +45,9 @@ object reapopNotificationsContextMod {
       
       inline def setNotifications(value: js.Array[Notification]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
       
-      inline def setNotificationsVarargs(value: Notification*): Self = StObject.set(x, "notifications", js.Array(value :_*))
+      inline def setNotificationsVarargs(value: Notification*): Self = StObject.set(x, "notifications", js.Array(value*))
       
-      inline def setNotify_(value: NewNotification => Unit): Self = StObject.set(x, "notify", js.Any.fromFunction1(value))
+      inline def setNotify_(value: FnCall): Self = StObject.set(x, "notify", value.asInstanceOf[js.Any])
     }
   }
 }

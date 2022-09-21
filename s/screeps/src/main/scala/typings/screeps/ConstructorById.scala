@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ConstructorById[T]
+trait ConstructorById[T /* <: HasId */]
   extends StObject
      with Constructor[T]
      with Instantiable1[/* id */ Id[T], T] {

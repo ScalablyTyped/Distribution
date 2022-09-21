@@ -1,9 +1,9 @@
 package typings.vscodeLanguageserver
 
 import typings.vscodeJsonrpc.cancellationMod.CancellationToken
-import typings.vscodeJsonrpc.mod.ProgressToken
-import typings.vscodeLanguageserver.mod.Feature
-import typings.vscodeLanguageserver.mod._RemoteWindow
+import typings.vscodeJsonrpc.connectionMod.ProgressToken
+import typings.vscodeLanguageserver.serverMod.Feature
+import typings.vscodeLanguageserver.serverMod._RemoteWindow
 import typings.vscodeLanguageserverProtocol.mod.ProgressType
 import typings.vscodeLanguageserverProtocol.protocolMod.PartialResultParams
 import typings.vscodeLanguageserverProtocol.protocolMod.WorkDoneProgressParams
@@ -13,18 +13,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object progressMod {
   
-  @JSImport("vscode-languageserver/lib/progress", JSImport.Namespace)
+  @JSImport("vscode-languageserver/lib/common/progress", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("vscode-languageserver/lib/progress", "ProgressFeature")
+  @JSImport("vscode-languageserver/lib/common/progress", "ProgressFeature")
   @js.native
   val ProgressFeature: Feature[_RemoteWindow, WindowProgress] = js.native
   
-  inline def attachPartialResult[R](connection: ProgressContext, params: PartialResultParams): js.UndefOr[ResultProgress[R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("attachPartialResult")(connection.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ResultProgress[R]]]
+  inline def attachPartialResult[R](connection: ProgressContext, params: PartialResultParams): js.UndefOr[ResultProgressReporter[R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("attachPartialResult")(connection.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ResultProgressReporter[R]]]
   
-  inline def attachWorkDone(connection: ProgressContext): WorkDoneProgress = ^.asInstanceOf[js.Dynamic].applyDynamic("attachWorkDone")(connection.asInstanceOf[js.Any]).asInstanceOf[WorkDoneProgress]
-  inline def attachWorkDone(connection: ProgressContext, params: WorkDoneProgressParams): WorkDoneProgress = (^.asInstanceOf[js.Dynamic].applyDynamic("attachWorkDone")(connection.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[WorkDoneProgress]
+  inline def attachWorkDone(connection: ProgressContext): WorkDoneProgressReporter = ^.asInstanceOf[js.Dynamic].applyDynamic("attachWorkDone")(connection.asInstanceOf[js.Any]).asInstanceOf[WorkDoneProgressReporter]
+  inline def attachWorkDone(connection: ProgressContext, params: WorkDoneProgressParams): WorkDoneProgressReporter = (^.asInstanceOf[js.Dynamic].applyDynamic("attachWorkDone")(connection.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[WorkDoneProgressReporter]
   
   trait ProgressContext extends StObject {
     
@@ -32,29 +32,29 @@ object progressMod {
   }
   object ProgressContext {
     
-    inline def apply(sendProgress: (ProgressType[js.Any], ProgressToken, js.Any) => Unit): ProgressContext = {
+    inline def apply(sendProgress: (ProgressType[Any], ProgressToken, Any) => Unit): ProgressContext = {
       val __obj = js.Dynamic.literal(sendProgress = js.Any.fromFunction3(sendProgress))
       __obj.asInstanceOf[ProgressContext]
     }
     
     extension [Self <: ProgressContext](x: Self) {
       
-      inline def setSendProgress(value: (ProgressType[js.Any], ProgressToken, js.Any) => Unit): Self = StObject.set(x, "sendProgress", js.Any.fromFunction3(value))
+      inline def setSendProgress(value: (ProgressType[Any], ProgressToken, Any) => Unit): Self = StObject.set(x, "sendProgress", js.Any.fromFunction3(value))
     }
   }
   
-  trait ResultProgress[R] extends StObject {
+  trait ResultProgressReporter[R] extends StObject {
     
     def report(data: R): Unit
   }
-  object ResultProgress {
+  object ResultProgressReporter {
     
-    inline def apply[R](report: R => Unit): ResultProgress[R] = {
+    inline def apply[R](report: R => Unit): ResultProgressReporter[R] = {
       val __obj = js.Dynamic.literal(report = js.Any.fromFunction1(report))
-      __obj.asInstanceOf[ResultProgress[R]]
+      __obj.asInstanceOf[ResultProgressReporter[R]]
     }
     
-    extension [Self <: ResultProgress[?], R](x: Self & ResultProgress[R]) {
+    extension [Self <: ResultProgressReporter[?], R](x: Self & ResultProgressReporter[R]) {
       
       inline def setReport(value: R => Unit): Self = StObject.set(x, "report", js.Any.fromFunction1(value))
     }
@@ -63,14 +63,14 @@ object progressMod {
   @js.native
   trait WindowProgress extends StObject {
     
-    def attachWorkDoneProgress(): WorkDoneProgress = js.native
-    def attachWorkDoneProgress(token: ProgressToken): WorkDoneProgress = js.native
+    def attachWorkDoneProgress(): WorkDoneProgressReporter = js.native
+    def attachWorkDoneProgress(token: ProgressToken): WorkDoneProgressReporter = js.native
     
-    def createWorkDoneProgress(): js.Promise[WorkDoneProgress] = js.native
+    def createWorkDoneProgress(): js.Promise[WorkDoneProgressServerReporter] = js.native
   }
   
   @js.native
-  trait WorkDoneProgress extends StObject {
+  trait WorkDoneProgressReporter extends StObject {
     
     def begin(title: String): Unit = js.native
     def begin(title: String, percentage: Double): Unit = js.native
@@ -86,6 +86,12 @@ object progressMod {
     def report(message: String): Unit = js.native
     def report(percentage: Double): Unit = js.native
     def report(percentage: Double, message: String): Unit = js.native
+  }
+  
+  @js.native
+  trait WorkDoneProgressServerReporter
+    extends StObject
+       with WorkDoneProgressReporter {
     
     val token: CancellationToken = js.native
   }

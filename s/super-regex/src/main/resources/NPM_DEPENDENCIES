@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "super-regex" : "0.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "super-regex" : "0.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

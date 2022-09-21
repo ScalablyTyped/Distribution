@@ -9,8 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FontConstructor
   extends StObject
-     with Instantiable0[Font]
+     with /**
+  * The font used to display [2D text symbols](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html) and [3D text symbols](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html).
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Font.html)
+  */
+Instantiable0[Font]
      with Instantiable1[/* properties */ FontProperties, Font] {
   
-  def fromJSON(json: js.Any): Font = js.native
+  def fromJSON(json: Any): Font = js.native
 }

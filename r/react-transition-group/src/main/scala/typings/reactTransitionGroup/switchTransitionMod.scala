@@ -37,8 +37,8 @@ object switchTransitionMod {
     */
   @JSImport("react-transition-group/SwitchTransition", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[SwitchTransitionProps, js.Object, js.Any]
+  open class default ()
+    extends Component[SwitchTransitionProps, js.Object, Any]
   
   @js.native
   sealed trait modes extends StObject
@@ -87,7 +87,7 @@ object switchTransitionMod {
     * }
     * ```
     */
-  type SwitchTransition = Component[SwitchTransitionProps, js.Object, js.Any]
+  type SwitchTransition = Component[SwitchTransitionProps, js.Object, Any]
   
   trait SwitchTransitionProps extends StObject {
     

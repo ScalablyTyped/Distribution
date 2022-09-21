@@ -1,14 +1,25 @@
 package typings.asn1js.mod
 
-import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("asn1js", "Sequence")
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.asn1js.mod._AsnSchemaType because Already inherited
+- typings.asn1js.mod._AsnType because Already inherited */ @JSImport("asn1js", "Sequence")
 @js.native
-class Sequence () extends Constructed {
-  def this(parameters: BaseBlockParams) = this()
-  def this(parameters: Unit, valueBlockType: Instantiable0[LocalValueBlock]) = this()
-  def this(parameters: BaseBlockParams, valueBlockType: Instantiable0[LocalValueBlock]) = this()
+open class Sequence () extends Constructed {
+  def this(parameters: SequenceParams) = this()
+}
+object Sequence {
+  
+  @JSImport("asn1js", "Sequence")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("asn1js", "Sequence.NAME")
+  @js.native
+  def NAME: String = js.native
+  inline def NAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAME")(x.asInstanceOf[js.Any])
 }

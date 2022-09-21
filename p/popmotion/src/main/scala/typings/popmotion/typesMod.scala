@@ -35,7 +35,7 @@ object typesMod {
     }
   }
   
-  type AnimationOptions[V] = PlaybackOptions[V] & (DecayOptions | KeyframeOptions[V] | SpringOptions)
+  type AnimationOptions[V] = (DecayOptions & PlaybackOptions[V]) | (KeyframeOptions[V] & PlaybackOptions[V]) | (SpringOptions & PlaybackOptions[V])
   
   trait AnimationState[V] extends StObject {
     
@@ -152,6 +152,8 @@ object typesMod {
     
     var onComplete: js.UndefOr[js.Function0[Unit]] = js.undefined
     
+    var onStop: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
     var onUpdate: js.UndefOr[js.Function1[/* v */ Double, Unit]] = js.undefined
     
     var restSpeed: js.UndefOr[Double] = js.undefined
@@ -188,6 +190,10 @@ object typesMod {
       inline def setOnComplete(value: () => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction0(value))
       
       inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
+      
+      inline def setOnStop(value: () => Unit): Self = StObject.set(x, "onStop", js.Any.fromFunction0(value))
+      
+      inline def setOnStopUndefined: Self = StObject.set(x, "onStop", js.undefined)
       
       inline def setOnUpdate(value: /* v */ Double => Unit): Self = StObject.set(x, "onUpdate", js.Any.fromFunction1(value))
       
@@ -230,7 +236,7 @@ object typesMod {
       
       inline def setEaseUndefined: Self = StObject.set(x, "ease", js.undefined)
       
-      inline def setEaseVarargs(value: Easing*): Self = StObject.set(x, "ease", js.Array(value :_*))
+      inline def setEaseVarargs(value: Easing*): Self = StObject.set(x, "ease", js.Array(value*))
       
       inline def setFrom(value: V): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -240,11 +246,11 @@ object typesMod {
       
       inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      inline def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value :_*))
+      inline def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value*))
       
       inline def setTo(value: V | js.Array[V]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      inline def setToVarargs(value: V*): Self = StObject.set(x, "to", js.Array(value :_*))
+      inline def setToVarargs(value: V*): Self = StObject.set(x, "to", js.Array(value*))
     }
   }
   

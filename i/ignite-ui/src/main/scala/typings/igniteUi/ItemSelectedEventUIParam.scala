@@ -9,22 +9,22 @@ trait ItemSelectedEventUIParam extends StObject {
   /**
     * Gets a reference to jQuery UI date picker widget, used as a calendar from the igDatePicker.
     */
-  var calendar: js.UndefOr[js.Any] = js.undefined
+  var calendar: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets a reference to the selected date object.
     */
-  var dateFromPicker: js.UndefOr[js.Any] = js.undefined
+  var dateFromPicker: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets a reference to the selected html element from the calendar.
     */
-  var item: js.UndefOr[js.Any] = js.undefined
+  var item: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets a reference to the editor.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
 }
 object ItemSelectedEventUIParam {
   
@@ -35,19 +35,19 @@ object ItemSelectedEventUIParam {
   
   extension [Self <: ItemSelectedEventUIParam](x: Self) {
     
-    inline def setCalendar(value: js.Any): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
+    inline def setCalendar(value: Any): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
     
     inline def setCalendarUndefined: Self = StObject.set(x, "calendar", js.undefined)
     
-    inline def setDateFromPicker(value: js.Any): Self = StObject.set(x, "dateFromPicker", value.asInstanceOf[js.Any])
+    inline def setDateFromPicker(value: Any): Self = StObject.set(x, "dateFromPicker", value.asInstanceOf[js.Any])
     
     inline def setDateFromPickerUndefined: Self = StObject.set(x, "dateFromPicker", js.undefined)
     
-    inline def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
     inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for unist-util-visit-parents
 
-Typings are for version 3.1.1
+Typings are for version 5.1.1
 
 ## Library description:
 unist utility to recursively walk over nodes, with ancestral information
@@ -10,10 +10,10 @@ unist utility to recursively walk over nodes, with ancestral information
 | ------------------ | :-------------: |
 | Full name          | unist-util-visit-parents |
 | Keywords           | unist, unist-util, util, utility, tree, ast, visit, traverse, walk, check, parent, parents |
-| # releases         | 9 |
-| # dependents       | 103 |
-| # downloads        | 187934224 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 3.6892242666666664E7 |
+| # stars            | 30.0 |
 
 ## Links
 - [Homepage](https://github.com/syntax-tree/unist-util-visit-parents#readme)

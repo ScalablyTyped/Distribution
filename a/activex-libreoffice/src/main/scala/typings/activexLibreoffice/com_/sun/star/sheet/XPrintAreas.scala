@@ -119,7 +119,7 @@ object XPrintAreas {
     getPrintTitleRows: () => Boolean,
     getTitleColumns: () => CellRangeAddress,
     getTitleRows: () => CellRangeAddress,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setPrintAreas: SeqEquiv[CellRangeAddress] => Unit,
     setPrintTitleColumns: Boolean => Unit,

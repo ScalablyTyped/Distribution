@@ -7,7 +7,6 @@ import typings.actionsOnGoogle.v2Mod.GoogleActionsV2UserProfile
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2UserUserVerificationStatus
 import typings.googleAuthLibrary.loginticketMod.TokenPayload
 import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ object userMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/user", "Access")
   @js.native
-  class Access protected () extends StObject {
+  open class Access protected () extends StObject {
     /** @hidden */
     def this(user: GoogleActionsV2User) = this()
     
@@ -29,7 +28,7 @@ object userMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/user", "Last")
   @js.native
-  class Last protected () extends StObject {
+  open class Last protected () extends StObject {
     /** @hidden */
     def this(user: GoogleActionsV2User) = this()
     
@@ -38,12 +37,12 @@ object userMod {
       * Undefined if never seen.
       * @public
       */
-    var seen: js.UndefOr[Date] = js.native
+    var seen: js.UndefOr[js.Date] = js.native
   }
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/user", "Name")
   @js.native
-  class Name protected () extends StObject {
+  open class Name protected () extends StObject {
     /** @hidden */
     def this(profile: GoogleActionsV2UserProfile) = this()
     
@@ -68,12 +67,12 @@ object userMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/user", "Profile")
   @js.native
-  class Profile protected () extends StObject {
+  open class Profile protected () extends StObject {
     /** @hidden */
     def this(user: GoogleActionsV2User) = this()
     
     /** @hidden */
-    def _verify(client: OAuth2Client, id: String): js.Promise[js.UndefOr[TokenPayload]] = js.native
+    def _verify(client: OAuth2Client, id: String): js.Promise[TokenPayload] = js.native
     
     /**
       * Gets the Profile Payload object encoded in {@link Profile#token|conv.user.profile.token}.
@@ -137,7 +136,7 @@ object userMod {
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/user", "User")
   @js.native
   /** @hidden */
-  class User[TUserStorage] () extends StObject {
+  open class User[TUserStorage] () extends StObject {
     def this(raw: GoogleActionsV2User) = this()
     def this(raw: Unit, initial: TUserStorage) = this()
     def this(raw: GoogleActionsV2User, initial: TUserStorage) = this()
@@ -149,7 +148,7 @@ object userMod {
     def _serialize(): String = js.native
     
     /** @hidden */
-    def _verifyProfile(client: OAuth2Client, id: String): js.Promise[js.UndefOr[TokenPayload]] = js.native
+    def _verifyProfile(client: OAuth2Client, id: String): js.Promise[TokenPayload] = js.native
     
     /** @public */
     var access: Access = js.native
@@ -212,13 +211,6 @@ object userMod {
       * @public
       */
     var entitlements: js.Array[GoogleActionsV2PackageEntitlement] = js.native
-    
-    /**
-      * Random string ID for Google user.
-      * @deprecated Use {@link User#storage|conv.user.storage} instead.
-      * @public
-      */
-    var id: String = js.native
     
     /** @public */
     var last: Last = js.native

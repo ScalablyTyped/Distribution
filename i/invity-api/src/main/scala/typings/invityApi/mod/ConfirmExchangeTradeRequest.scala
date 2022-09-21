@@ -14,11 +14,11 @@ trait ConfirmExchangeTradeRequest extends StObject {
   // address hash
   var refundAddress: String
   
-  var trade: ExchangeTrade
+  var trade: ExtendedExchangeTrade
 }
 object ConfirmExchangeTradeRequest {
   
-  inline def apply(receiveAddress: String, refundAddress: String, trade: ExchangeTrade): ConfirmExchangeTradeRequest = {
+  inline def apply(receiveAddress: String, refundAddress: String, trade: ExtendedExchangeTrade): ConfirmExchangeTradeRequest = {
     val __obj = js.Dynamic.literal(receiveAddress = receiveAddress.asInstanceOf[js.Any], refundAddress = refundAddress.asInstanceOf[js.Any], trade = trade.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfirmExchangeTradeRequest]
   }
@@ -33,6 +33,6 @@ object ConfirmExchangeTradeRequest {
     
     inline def setRefundAddress(value: String): Self = StObject.set(x, "refundAddress", value.asInstanceOf[js.Any])
     
-    inline def setTrade(value: ExchangeTrade): Self = StObject.set(x, "trade", value.asInstanceOf[js.Any])
+    inline def setTrade(value: ExtendedExchangeTrade): Self = StObject.set(x, "trade", value.asInstanceOf[js.Any])
   }
 }

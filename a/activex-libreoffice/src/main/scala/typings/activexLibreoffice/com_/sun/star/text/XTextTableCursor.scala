@@ -106,7 +106,7 @@ object XTextTableCursor {
     gotoEnd: Boolean => Unit,
     gotoStart: Boolean => Unit,
     mergeRange: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     splitRange: (Double, Boolean) => Boolean
   ): XTextTableCursor = {

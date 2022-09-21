@@ -1,7 +1,6 @@
 package typings.wpapi
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
 import typings.std.File
 import typings.wpapi.anon.Self
 import typings.wpapi.anon.Type
@@ -25,7 +24,7 @@ object mod {
     *
     * @param options An options hash to configure the instance
     */
-  class ^ ()
+  open class ^ ()
     extends StObject
        with WPAPI {
     def this(options: WPAPIOptions) = this()
@@ -41,14 +40,14 @@ object mod {
     */
   @JSImport("wpapi", "WPRequest")
   @js.native
-  class WPRequest protected ()
+  open class WPRequest protected ()
     extends StObject
        with /**
     * A request can define its parameter methods, like .id(), .date(),
     * .author(). They are usually decided by WPAPI routes configuration
     * object.
     */
-  /* customParamsMethod */ StringDictionary[js.Any] {
+  /* customParamsMethod */ StringDictionary[Any] {
     /**
       * WPRequest is the base API request object constructor
       *
@@ -84,8 +83,8 @@ object mod {
       * @param callback A callback to invoke with the results of the POST
       * request
       */
-    def create(data: js.Any): js.Promise[js.Any] = js.native
-    def create(data: js.Any, callback: WPRequestCallback): js.Promise[js.Any] = js.native
+    def create(data: Any): js.Promise[Any] = js.native
+    def create(data: Any, callback: WPRequestCallback): js.Promise[Any] = js.native
     
     /**
       * Delete the specified resource
@@ -94,10 +93,10 @@ object mod {
       * @param callback A callback to invoke with the results of the DELETE
       * request
       */
-    def delete(): js.Promise[js.Any] = js.native
-    def delete(data: js.Any): js.Promise[js.Any] = js.native
-    def delete(data: js.Any, callback: WPRequestCallback): js.Promise[js.Any] = js.native
-    def delete(data: Unit, callback: WPRequestCallback): js.Promise[js.Any] = js.native
+    def delete(): js.Promise[Any] = js.native
+    def delete(data: Any): js.Promise[Any] = js.native
+    def delete(data: Any, callback: WPRequestCallback): js.Promise[Any] = js.native
+    def delete(data: Unit, callback: WPRequestCallback): js.Promise[Any] = js.native
     
     /**
       * Convenience wrapper for .context( 'edit' )
@@ -136,8 +135,8 @@ object mod {
       * @param callback A callback to invoke with the results of the HEAD
       * request
       */
-    def get(): js.Promise[js.Any] = js.native
-    def get(callback: WPRequestCallback): js.Promise[js.Any] = js.native
+    def get(): js.Promise[Any] = js.native
+    def get(callback: WPRequestCallback): js.Promise[Any] = js.native
     
     /**
       * Set the id of resource.
@@ -177,10 +176,7 @@ object mod {
       *
       * @param direction The order to use when sorting the response
       */
-    @JSName("order")
-    def order_asc(direction: asc): WPRequest = js.native
-    @JSName("order")
-    def order_desc(direction: desc): WPRequest = js.native
+    def order(direction: asc | desc): WPRequest = js.native
     
     /**
       * Order a collection by a specific field
@@ -207,12 +203,12 @@ object mod {
       */
     def param(props: String): WPRequest = js.native
     def param(props: String, value: String): WPRequest = js.native
-    def param(props: String, value: js.Array[js.Any]): WPRequest = js.native
+    def param(props: String, value: js.Array[Any]): WPRequest = js.native
     def param(props: String, value: Double): WPRequest = js.native
-    def param(props: StringDictionary[String | Double | js.Array[js.Any]]): WPRequest = js.native
-    def param(props: StringDictionary[String | Double | js.Array[js.Any]], value: String): WPRequest = js.native
-    def param(props: StringDictionary[String | Double | js.Array[js.Any]], value: js.Array[js.Any]): WPRequest = js.native
-    def param(props: StringDictionary[String | Double | js.Array[js.Any]], value: Double): WPRequest = js.native
+    def param(props: StringDictionary[String | Double | js.Array[Any]]): WPRequest = js.native
+    def param(props: StringDictionary[String | Double | js.Array[Any]], value: String): WPRequest = js.native
+    def param(props: StringDictionary[String | Double | js.Array[Any]], value: js.Array[Any]): WPRequest = js.native
+    def param(props: StringDictionary[String | Double | js.Array[Any]], value: Double): WPRequest = js.native
     
     /**
       * Set the number of items to be returned in a page of responses.
@@ -273,13 +269,13 @@ object mod {
       * @param failureCallback A callback to handle any errors encountered
       * by the request
       */
-    def `then`(): js.Promise[js.Any] = js.native
-    def `then`(successCallback: js.Function1[/* data */ js.Any, Unit]): js.Promise[js.Any] = js.native
+    def `then`(): js.Promise[Any] = js.native
+    def `then`(successCallback: js.Function1[/* data */ Any, Unit]): js.Promise[Any] = js.native
     def `then`(
-      successCallback: js.Function1[/* data */ js.Any, Unit],
-      failureCallback: js.Function1[/* error */ Error, Unit]
-    ): js.Promise[js.Any] = js.native
-    def `then`(successCallback: Unit, failureCallback: js.Function1[/* error */ Error, Unit]): js.Promise[js.Any] = js.native
+      successCallback: js.Function1[/* data */ Any, Unit],
+      failureCallback: js.Function1[/* error */ js.Error, Unit]
+    ): js.Promise[Any] = js.native
+    def `then`(successCallback: Unit, failureCallback: js.Function1[/* error */ js.Error, Unit]): js.Promise[Any] = js.native
     
     /**
       * Update the specified resource with the provided data
@@ -290,8 +286,8 @@ object mod {
       * @param callback A callback to invoke with the results of the PATCH
       * request
       */
-    def update(data: js.Any): js.Promise[js.Any] = js.native
-    def update(data: js.Any, callback: WPRequestCallback): js.Promise[js.Any] = js.native
+    def update(data: Any): js.Promise[Any] = js.native
+    def update(data: Any, callback: WPRequestCallback): js.Promise[Any] = js.native
     
     /**
       * Validate whether the specified path parts are valid for this endpoint
@@ -386,7 +382,7 @@ object mod {
       
       inline def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
       
-      inline def setEnumVarargs(value: String*): Self = StObject.set(x, "enum", js.Array(value :_*))
+      inline def setEnumVarargs(value: String*): Self = StObject.set(x, "enum", js.Array(value*))
       
       inline def setItems(value: Type): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
@@ -443,7 +439,7 @@ object mod {
       
       inline def setMethods(value: js.Array[HTTPMethod]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
-      inline def setMethodsVarargs(value: HTTPMethod*): Self = StObject.set(x, "methods", js.Array(value :_*))
+      inline def setMethodsVarargs(value: HTTPMethod*): Self = StObject.set(x, "methods", js.Array(value*))
     }
   }
   
@@ -474,7 +470,7 @@ object mod {
     
     var methods: js.UndefOr[js.Array[HTTPMethod]] = js.undefined
     
-    var mixins: js.UndefOr[StringDictionary[js.Function1[/* val */ js.Any, js.Any]]] = js.undefined
+    var mixins: js.UndefOr[StringDictionary[js.Function1[/* val */ Any, Any]]] = js.undefined
     
     var params: js.UndefOr[js.Array[String]] = js.undefined
   }
@@ -491,9 +487,9 @@ object mod {
       
       inline def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
       
-      inline def setMethodsVarargs(value: HTTPMethod*): Self = StObject.set(x, "methods", js.Array(value :_*))
+      inline def setMethodsVarargs(value: HTTPMethod*): Self = StObject.set(x, "methods", js.Array(value*))
       
-      inline def setMixins(value: StringDictionary[js.Function1[/* val */ js.Any, js.Any]]): Self = StObject.set(x, "mixins", value.asInstanceOf[js.Any])
+      inline def setMixins(value: StringDictionary[js.Function1[/* val */ Any, Any]]): Self = StObject.set(x, "mixins", value.asInstanceOf[js.Any])
       
       inline def setMixinsUndefined: Self = StObject.set(x, "mixins", js.undefined)
       
@@ -501,7 +497,7 @@ object mod {
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      inline def setParamsVarargs(value: String*): Self = StObject.set(x, "params", js.Array(value :_*))
+      inline def setParamsVarargs(value: String*): Self = StObject.set(x, "params", js.Array(value*))
     }
   }
   
@@ -526,15 +522,15 @@ object mod {
       
       inline def setEndpoints(value: js.Array[HTTPEndpoint]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
       
-      inline def setEndpointsVarargs(value: HTTPEndpoint*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
+      inline def setEndpointsVarargs(value: HTTPEndpoint*): Self = StObject.set(x, "endpoints", js.Array(value*))
       
       inline def setMethods(value: js.Array[HTTPMethod]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
-      inline def setMethodsVarargs(value: HTTPMethod*): Self = StObject.set(x, "methods", js.Array(value :_*))
+      inline def setMethodsVarargs(value: HTTPMethod*): Self = StObject.set(x, "methods", js.Array(value*))
       
       inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      inline def set_links(value: Self): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+      inline def set_links(value: typings.wpapi.anon.Self): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
       
       inline def set_linksUndefined: Self = StObject.set(x, "_links", js.undefined)
     }
@@ -563,29 +559,29 @@ object mod {
     
     extension [Self <: Transport](x: Self) {
       
-      inline def setDelete(value: (/* wpreq */ WPRequest, /* cb */ js.UndefOr[WPRequestCallback]) => js.Promise[js.Any]): Self = StObject.set(x, "delete", js.Any.fromFunction2(value))
+      inline def setDelete(value: (/* wpreq */ WPRequest, /* cb */ js.UndefOr[WPRequestCallback]) => js.Promise[Any]): Self = StObject.set(x, "delete", js.Any.fromFunction2(value))
       
       inline def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
       
-      inline def setGet(value: (/* wpreq */ WPRequest, /* cb */ js.UndefOr[WPRequestCallback]) => js.Promise[js.Any]): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+      inline def setGet(value: (/* wpreq */ WPRequest, /* cb */ js.UndefOr[WPRequestCallback]) => js.Promise[Any]): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
       
       inline def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
       
-      inline def setHead(value: (/* wpreq */ WPRequest, /* cb */ js.UndefOr[WPRequestCallback]) => js.Promise[js.Any]): Self = StObject.set(x, "head", js.Any.fromFunction2(value))
+      inline def setHead(value: (/* wpreq */ WPRequest, /* cb */ js.UndefOr[WPRequestCallback]) => js.Promise[Any]): Self = StObject.set(x, "head", js.Any.fromFunction2(value))
       
       inline def setHeadUndefined: Self = StObject.set(x, "head", js.undefined)
       
-      inline def setPost(value: (/* wpreq */ WPRequest, /* cb */ js.UndefOr[WPRequestCallback]) => js.Promise[js.Any]): Self = StObject.set(x, "post", js.Any.fromFunction2(value))
+      inline def setPost(value: (/* wpreq */ WPRequest, /* cb */ js.UndefOr[WPRequestCallback]) => js.Promise[Any]): Self = StObject.set(x, "post", js.Any.fromFunction2(value))
       
       inline def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
       
-      inline def setPut(value: (/* wpreq */ WPRequest, /* cb */ js.UndefOr[WPRequestCallback]) => js.Promise[js.Any]): Self = StObject.set(x, "put", js.Any.fromFunction2(value))
+      inline def setPut(value: (/* wpreq */ WPRequest, /* cb */ js.UndefOr[WPRequestCallback]) => js.Promise[Any]): Self = StObject.set(x, "put", js.Any.fromFunction2(value))
       
       inline def setPutUndefined: Self = StObject.set(x, "put", js.undefined)
     }
   }
   
-  type TransportFunction = js.Function2[/* wpreq */ WPRequest, /* cb */ js.UndefOr[WPRequestCallback], js.Promise[js.Any]]
+  type TransportFunction = js.Function2[/* wpreq */ WPRequest, /* cb */ js.UndefOr[WPRequestCallback], js.Promise[Any]]
   
   /**
     * REST API Client for WordPress
@@ -600,7 +596,7 @@ object mod {
     * .author(). They are usually decided by WPAPI routes configuration
     * object.
     */
-  /* customParamsMethod */ StringDictionary[js.Any] {
+  /* customParamsMethod */ StringDictionary[Any] {
     
     /**
       * Set the authentication to use for a WPAPI site handler instance. Accepts
@@ -777,7 +773,7 @@ object mod {
     }
   }
   
-  type WPRequestCallback = js.Function2[/* error */ Error, /* data */ js.Any, Unit]
+  type WPRequestCallback = js.Function2[/* error */ js.Error, /* data */ Any, Unit]
   
   type WPRequestFactory = js.Function0[WPRequest]
   

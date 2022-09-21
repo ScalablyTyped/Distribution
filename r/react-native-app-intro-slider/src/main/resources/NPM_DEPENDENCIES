@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-native-app-intro-slider" : "4.0.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-native-app-intro-slider" : "4.0.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -10,10 +10,10 @@ object starHalfMod {
   
   @JSImport("material-ui/svg-icons/toggle/star-half", JSImport.Default)
   @js.native
-  class default () extends ToggleStarHalf
+  open class default () extends ToggleStarHalf
   
   @JSImport("material-ui/svg-icons/toggle/star-half", "ToggleStarHalf")
   @js.native
-  class ToggleStarHalf ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ToggleStarHalf ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

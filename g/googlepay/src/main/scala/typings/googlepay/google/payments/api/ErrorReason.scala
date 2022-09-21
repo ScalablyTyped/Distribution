@@ -21,6 +21,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *   current request. An example would be shipping option cannot be used
   *   for the selected shipping address.
   *
+  * - `OFFER_INVALID`:
+  *   Error when the provided offer info is invalid.
+  *
   * - `PAYMENT_DATA_INVALID`:
   *   Error when the provided payment data is invalid. e.g. Payment token
   *   cannot be charged.
@@ -32,11 +35,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.googlepay.googlepayStrings.SHIPPING_ADDRESS_INVALID
   - typings.googlepay.googlepayStrings.SHIPPING_ADDRESS_UNSERVICEABLE
   - typings.googlepay.googlepayStrings.SHIPPING_OPTION_INVALID
+  - typings.googlepay.googlepayStrings.OFFER_INVALID
   - typings.googlepay.googlepayStrings.PAYMENT_DATA_INVALID
   - typings.googlepay.googlepayStrings.OTHER_ERROR
 */
 trait ErrorReason extends StObject
 object ErrorReason {
+  
+  inline def OFFER_INVALID: typings.googlepay.googlepayStrings.OFFER_INVALID = "OFFER_INVALID".asInstanceOf[typings.googlepay.googlepayStrings.OFFER_INVALID]
   
   inline def OTHER_ERROR: typings.googlepay.googlepayStrings.OTHER_ERROR = "OTHER_ERROR".asInstanceOf[typings.googlepay.googlepayStrings.OTHER_ERROR]
   

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "maxim_mazurok__gapi_dot_client_dot_bigqueryreservation"
-version := "1.0.20201106-bc0ec1"
-scalaVersion := "3.0.1"
+version := "1.0.20220730-747fd6"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "gapi_dot_client" % "1.0-dt-20200426Z-15afbd",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
+  "org.scalablytyped" %%% "gapi_dot_client" % "1.0-dt-20211202Z-1a31eb",
+  "org.scalablytyped" %%% "std" % "4.8-958c79")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

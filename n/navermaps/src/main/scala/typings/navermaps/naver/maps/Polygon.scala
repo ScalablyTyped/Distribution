@@ -33,7 +33,7 @@ trait Polygon
   
   def setClickable(clickable: Boolean): Unit = js.native
   
-  def setOptions(key: String, value: js.Any): Unit = js.native
+  def setOptions(key: String, value: Any): Unit = js.native
   def setOptions(options: PolygonOptions): Unit = js.native
   
   def setPath(path: ArrayOfCoords | ArrayOfCoordsLiteral): Unit = js.native
@@ -42,7 +42,7 @@ trait Polygon
   def setPaths(paths: js.Array[ArrayOfCoords] | ArrayOfCoordsLiteral): Unit = js.native
   
   // TODO. KVOArray.<KVOArrayOfCoords>
-  def setStyles(key: String, value: js.Any): Unit = js.native
+  def setStyles(key: String, value: Any): Unit = js.native
   def setStyles(options: PolygonOptions): Unit = js.native
   
   def setVisible(visible: Boolean): Unit = js.native

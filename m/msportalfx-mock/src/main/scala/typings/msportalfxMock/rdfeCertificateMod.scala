@@ -1,6 +1,5 @@
 package typings.msportalfxMock
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ object rdfeCertificateMod {
     /**
       * Specifies the time that the management certificate was created, in UTC. An example Created value is 2011-05-11T16:15:26Z.
       */
-    var created: Date
+    var created: js.Date
     
     /**
       * Specifies the base-64 encoded data contained in the management certificate, in .cer format.
@@ -32,7 +31,7 @@ object rdfeCertificateMod {
   object SubscriptionCertificate {
     
     inline def apply(
-      created: Date,
+      created: js.Date,
       subscriptionCertificateData: String,
       subscriptionCertificatePublicKey: String,
       subscriptionCertificateThumbprint: String
@@ -43,7 +42,7 @@ object rdfeCertificateMod {
     
     extension [Self <: SubscriptionCertificate](x: Self) {
       
-      inline def setCreated(value: Date): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: js.Date): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
       inline def setSubscriptionCertificateData(value: String): Self = StObject.set(x, "subscriptionCertificateData", value.asInstanceOf[js.Any])
       

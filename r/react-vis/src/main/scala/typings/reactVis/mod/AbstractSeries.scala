@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-vis", "AbstractSeries")
 @js.native
-class AbstractSeries[T] protected ()
-  extends PureComponent[T, js.Object, js.Any] {
+open class AbstractSeries[T] protected ()
+  extends PureComponent[T, js.Object, Any] {
   def this(props: T) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: T, context: js.Any) = this()
+  def this(props: T, context: Any) = this()
 }

@@ -1,5 +1,8 @@
 package typings.styledSystemCss.mod
 
+import typings.csstype.mod.Property.BoxShadow
+import typings.csstype.mod.Property.FontWeight
+import typings.csstype.mod.Property.ZIndex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,9 +22,7 @@ trait OverwriteCSSProperties extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/box-shadow
     */
-  var boxShadow: js.UndefOr[
-    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ js.Any) | Double
-  ] = js.undefined
+  var boxShadow: js.UndefOr[BoxShadow | Double] = js.undefined
   
   /**
     * The **`font-weight`** CSS property specifies the weight (or boldness) of the font. The font weights available to you will depend on the `font-family` you are using. Some fonts are only
@@ -35,9 +36,7 @@ trait OverwriteCSSProperties extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/font-weight
     */
-  var fontWeight: js.UndefOr[
-    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ js.Any) | String
-  ] = js.undefined
+  var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
   
   /**
     * The **`z-index`** CSS property sets the z-order of a positioned element and its descendants or flex items. Overlapping elements with a larger z-index cover those with a smaller one.
@@ -50,9 +49,7 @@ trait OverwriteCSSProperties extends StObject {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/z-index
     */
-  var zIndex: js.UndefOr[
-    (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ js.Any) | String
-  ] = js.undefined
+  var zIndex: js.UndefOr[ZIndex | String] = js.undefined
 }
 object OverwriteCSSProperties {
   
@@ -63,21 +60,15 @@ object OverwriteCSSProperties {
   
   extension [Self <: OverwriteCSSProperties](x: Self) {
     
-    inline def setBoxShadow(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ js.Any) | Double
-    ): Self = StObject.set(x, "boxShadow", value.asInstanceOf[js.Any])
+    inline def setBoxShadow(value: BoxShadow | Double): Self = StObject.set(x, "boxShadow", value.asInstanceOf[js.Any])
     
     inline def setBoxShadowUndefined: Self = StObject.set(x, "boxShadow", js.undefined)
     
-    inline def setFontWeight(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ js.Any) | String
-    ): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+    inline def setFontWeight(value: FontWeight | String): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
     inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
-    inline def setZIndex(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ js.Any) | String
-    ): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    inline def setZIndex(value: ZIndex | String): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
     inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }

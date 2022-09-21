@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "OverlayBase")
 @js.native
-class OverlayBase protected ()
+open class OverlayBase protected ()
   extends typings.officeUiFabricReact.mod.OverlayBase {
   def this(props: IOverlayProps) = this()
 }

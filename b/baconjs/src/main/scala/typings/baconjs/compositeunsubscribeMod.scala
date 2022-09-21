@@ -9,7 +9,7 @@ object compositeunsubscribeMod {
   
   @JSImport("baconjs/types/compositeunsubscribe", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with CompositeUnsubscribe {
     def this(ss: js.Array[Subscription]) = this()
@@ -85,11 +85,11 @@ object compositeunsubscribeMod {
       
       inline def setStarting(value: js.Array[Subscription]): Self = StObject.set(x, "starting", value.asInstanceOf[js.Any])
       
-      inline def setStartingVarargs(value: Subscription*): Self = StObject.set(x, "starting", js.Array(value :_*))
+      inline def setStartingVarargs(value: Subscription*): Self = StObject.set(x, "starting", js.Array(value*))
       
       inline def setSubscriptions(value: js.Array[Unsub]): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
       
-      inline def setSubscriptionsVarargs(value: Unsub*): Self = StObject.set(x, "subscriptions", js.Array(value :_*))
+      inline def setSubscriptionsVarargs(value: Unsub*): Self = StObject.set(x, "subscriptions", js.Array(value*))
       
       inline def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
       

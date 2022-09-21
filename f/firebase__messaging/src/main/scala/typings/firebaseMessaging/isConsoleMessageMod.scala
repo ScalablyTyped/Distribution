@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object isConsoleMessageMod {
   
-  @JSImport("@firebase/messaging/dist/helpers/is-console-message", JSImport.Namespace)
+  @JSImport("@firebase/messaging/dist/esm/src/helpers/is-console-message", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isConsoleMessage(data: js.Any): /* is @firebase/messaging.@firebase/messaging/dist/interfaces/internal-message-payload.ConsoleMessageData */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isConsoleMessage")(data.asInstanceOf[js.Any]).asInstanceOf[/* is @firebase/messaging.@firebase/messaging/dist/interfaces/internal-message-payload.ConsoleMessageData */ Boolean]
+  inline def isConsoleMessage(data: Any): /* is @firebase/messaging.@firebase/messaging/dist/esm/src/interfaces/internal-message-payload.ConsoleMessageData */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isConsoleMessage")(data.asInstanceOf[js.Any]).asInstanceOf[/* is @firebase/messaging.@firebase/messaging/dist/esm/src/interfaces/internal-message-payload.ConsoleMessageData */ Boolean]
 }

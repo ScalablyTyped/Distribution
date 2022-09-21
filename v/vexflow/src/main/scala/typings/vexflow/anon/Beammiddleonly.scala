@@ -40,7 +40,7 @@ object Beammiddleonly {
     
     inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
     
-    inline def setGroupsVarargs(value: Fraction*): Self = StObject.set(x, "groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: Fraction*): Self = StObject.set(x, "groups", js.Array(value*))
     
     inline def setMaintain_stem_directions(value: Boolean): Self = StObject.set(x, "maintain_stem_directions", value.asInstanceOf[js.Any])
     

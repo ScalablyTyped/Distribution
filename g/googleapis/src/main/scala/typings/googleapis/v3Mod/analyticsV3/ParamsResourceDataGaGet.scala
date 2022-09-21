@@ -1,9 +1,5 @@
 package typings.googleapis.v3Mod.analyticsV3
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,38 +9,27 @@ trait ParamsResourceDataGaGet
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * A comma-separated list of Analytics dimensions. E.g.,
-    * 'ga:browser,ga:city'.
+    * A comma-separated list of Analytics dimensions. E.g., 'ga:browser,ga:city'.
     */
   var dimensions: js.UndefOr[String] = js.undefined
   
   /**
-    * End date for fetching Analytics data. Request can should specify an end
-    * date formatted as YYYY-MM-DD, or as a relative date (e.g., today,
-    * yesterday, or 7daysAgo). The default value is yesterday.
+    * End date for fetching Analytics data. Request can should specify an end date formatted as YYYY-MM-DD, or as a relative date (e.g., today, yesterday, or 7daysAgo). The default value is yesterday.
     */
   var `end-date`: js.UndefOr[String] = js.undefined
   
   /**
-    * A comma-separated list of dimension or metric filters to be applied to
-    * Analytics data.
+    * A comma-separated list of dimension or metric filters to be applied to Analytics data.
     */
   var filters: js.UndefOr[String] = js.undefined
   
   /**
-    * Unique table ID for retrieving Analytics data. Table ID is of the form
-    * ga:XXXX, where XXXX is the Analytics view (profile) ID.
+    * Unique table ID for retrieving Analytics data. Table ID is of the form ga:XXXX, where XXXX is the Analytics view (profile) ID.
     */
   var ids: js.UndefOr[String] = js.undefined
   
   /**
-    * The response will include empty rows if this parameter is set to true,
-    * the default is true
+    * The response will include empty rows if this parameter is set to true, the default is true
     */
   var `include-empty-rows`: js.UndefOr[Boolean] = js.undefined
   
@@ -54,8 +39,7 @@ trait ParamsResourceDataGaGet
   var `max-results`: js.UndefOr[Double] = js.undefined
   
   /**
-    * A comma-separated list of Analytics metrics. E.g.,
-    * 'ga:sessions,ga:pageviews'. At least one metric must be specified.
+    * A comma-separated list of Analytics metrics. E.g., 'ga:sessions,ga:pageviews'. At least one metric must be specified.
     */
   var metrics: js.UndefOr[String] = js.undefined
   
@@ -75,21 +59,17 @@ trait ParamsResourceDataGaGet
   var segment: js.UndefOr[String] = js.undefined
   
   /**
-    * A comma-separated list of dimensions or metrics that determine the sort
-    * order for Analytics data.
+    * A comma-separated list of dimensions or metrics that determine the sort order for Analytics data.
     */
   var sort: js.UndefOr[String] = js.undefined
   
   /**
-    * Start date for fetching Analytics data. Requests can specify a start date
-    * formatted as YYYY-MM-DD, or as a relative date (e.g., today, yesterday,
-    * or 7daysAgo). The default value is 7daysAgo.
+    * Start date for fetching Analytics data. Requests can specify a start date formatted as YYYY-MM-DD, or as a relative date (e.g., today, yesterday, or 7daysAgo). The default value is 7daysAgo.
     */
   var `start-date`: js.UndefOr[String] = js.undefined
   
   /**
-    * An index of the first entity to retrieve. Use this parameter as a
-    * pagination mechanism along with the max-results parameter.
+    * An index of the first entity to retrieve. Use this parameter as a pagination mechanism along with the max-results parameter.
     */
   var `start-index`: js.UndefOr[Double] = js.undefined
 }
@@ -101,10 +81,6 @@ object ParamsResourceDataGaGet {
   }
   
   extension [Self <: ParamsResourceDataGaGet](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setDimensions(value: String): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     

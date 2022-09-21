@@ -8,9 +8,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object commonDeviceDescriptorsMod {
   
-  @JSImport("puppeteer-core/lib/esm/puppeteer/common/DeviceDescriptors", "devicesMap")
+  /**
+    * A list of devices to be used with `page.emulate(options)`. Actual list of devices can be found in {@link https://github.com/puppeteer/puppeteer/blob/main/src/common/DeviceDescriptors.ts | src/common/DeviceDescriptors.ts}.
+    *
+    * @example
+    *
+    * ```ts
+    * const puppeteer = require('puppeteer');
+    * const iPhone = puppeteer.devices['iPhone 6'];
+    *
+    * (async () => {
+    *   const browser = await puppeteer.launch();
+    *   const page = await browser.newPage();
+    *   await page.emulate(iPhone);
+    *   await page.goto('https://www.google.com');
+    *   // other actions...
+    *   await browser.close();
+    * })();
+    * ```
+    *
+    * @public
+    */
+  @JSImport("puppeteer-core/lib/esm/puppeteer/common/DeviceDescriptors", "devices")
   @js.native
-  val devicesMap: DevicesMap_ = js.native
+  val devices: DevicesMap = js.native
   
   trait Device extends StObject {
     
@@ -37,5 +58,5 @@ object commonDeviceDescriptorsMod {
     }
   }
   
-  type DevicesMap_ = StringDictionary[Device]
+  type DevicesMap = StringDictionary[Device]
 }

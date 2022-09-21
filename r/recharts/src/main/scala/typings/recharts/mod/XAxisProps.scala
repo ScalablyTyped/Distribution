@@ -2,6 +2,7 @@ package typings.recharts.mod
 
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
+import typings.recharts.anon.PartialXPadding
 import typings.recharts.rechartsStrings.bottom
 import typings.recharts.rechartsStrings.category
 import typings.recharts.rechartsStrings.number
@@ -24,6 +25,8 @@ trait XAxisProps
   var angle: js.UndefOr[Double] = js.undefined
   
   var axisLine: js.UndefOr[Boolean | js.Object] = js.undefined
+  
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   // The key of data displayed in the axis
   var dataKey: js.UndefOr[DataKey] = js.undefined
@@ -56,7 +59,7 @@ trait XAxisProps
   // The orientation of axis
   var orientation: js.UndefOr[top | bottom] = js.undefined
   
-  var padding: js.UndefOr[XPadding] = js.undefined
+  var padding: js.UndefOr[PartialXPadding] = js.undefined
   
   var reversed: js.UndefOr[Boolean] = js.undefined
   
@@ -66,7 +69,7 @@ trait XAxisProps
   
   var textAnchor: js.UndefOr[String] = js.undefined
   
-  var tick: js.UndefOr[Boolean | ContentRenderer[js.Any] | js.Object | ReactElement] = js.undefined
+  var tick: js.UndefOr[Boolean | ContentRenderer[Any] | js.Object | ReactElement] = js.undefined
   
   // The count of ticks
   var tickCount: js.UndefOr[Double] = js.undefined
@@ -83,7 +86,7 @@ trait XAxisProps
   
   // Ticks can be any type when the axis is the type of category
   // Ticks must be numbers when the axis is the type of number
-  var ticks: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var ticks: js.UndefOr[js.Array[Any]] = js.undefined
   
   var `type`: js.UndefOr[number | category] = js.undefined
   
@@ -125,9 +128,13 @@ object XAxisProps {
     
     inline def setAxisLineUndefined: Self = StObject.set(x, "axisLine", js.undefined)
     
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
     inline def setDataKey(value: DataKey): Self = StObject.set(x, "dataKey", value.asInstanceOf[js.Any])
     
-    inline def setDataKeyFunction1(value: /* dataObject */ js.Any => String | Double | (js.Tuple2[Double, Double]) | Null): Self = StObject.set(x, "dataKey", js.Any.fromFunction1(value))
+    inline def setDataKeyFunction1(value: /* dataObject */ Any => String | Double | (js.Tuple2[Double, Double]) | Null): Self = StObject.set(x, "dataKey", js.Any.fromFunction1(value))
     
     inline def setDataKeyUndefined: Self = StObject.set(x, "dataKey", js.undefined)
     
@@ -175,7 +182,7 @@ object XAxisProps {
     
     inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
-    inline def setPadding(value: XPadding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: PartialXPadding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
@@ -195,17 +202,17 @@ object XAxisProps {
     
     inline def setTextAnchorUndefined: Self = StObject.set(x, "textAnchor", js.undefined)
     
-    inline def setTick(value: Boolean | ContentRenderer[js.Any] | js.Object | ReactElement): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
+    inline def setTick(value: Boolean | ContentRenderer[Any] | js.Object | ReactElement): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
     
     inline def setTickCount(value: Double): Self = StObject.set(x, "tickCount", value.asInstanceOf[js.Any])
     
     inline def setTickCountUndefined: Self = StObject.set(x, "tickCount", js.undefined)
     
-    inline def setTickFormatter(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "tickFormatter", js.Any.fromFunction1(value))
+    inline def setTickFormatter(value: /* value */ Any => Any): Self = StObject.set(x, "tickFormatter", js.Any.fromFunction1(value))
     
     inline def setTickFormatterUndefined: Self = StObject.set(x, "tickFormatter", js.undefined)
     
-    inline def setTickFunction1(value: js.Any => ReactNode): Self = StObject.set(x, "tick", js.Any.fromFunction1(value))
+    inline def setTickFunction1(value: Any => ReactNode): Self = StObject.set(x, "tick", js.Any.fromFunction1(value))
     
     inline def setTickLine(value: Boolean | js.Object): Self = StObject.set(x, "tickLine", value.asInstanceOf[js.Any])
     
@@ -221,11 +228,11 @@ object XAxisProps {
     
     inline def setTickUndefined: Self = StObject.set(x, "tick", js.undefined)
     
-    inline def setTicks(value: js.Array[js.Any]): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
+    inline def setTicks(value: js.Array[Any]): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
     
     inline def setTicksUndefined: Self = StObject.set(x, "ticks", js.undefined)
     
-    inline def setTicksVarargs(value: js.Any*): Self = StObject.set(x, "ticks", js.Array(value :_*))
+    inline def setTicksVarargs(value: Any*): Self = StObject.set(x, "ticks", js.Array(value*))
     
     inline def setType(value: number | category): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

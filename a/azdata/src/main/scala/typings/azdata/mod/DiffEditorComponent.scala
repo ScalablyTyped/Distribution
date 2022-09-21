@@ -1,24 +1,18 @@
 package typings.azdata.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.vscode.Thenable
 import typings.vscode.mod.Disposable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typings.azdata.mod.ComponentProperties because Already inherited
+- typings.azdata.mod.Component because var conflicts: CSSStyles, ariaHidden, ariaLabel, ariaRole, ariaSelected, display, enabled, height, position, width. Inlined id, updateProperties, updateProperty, updateCssStyles, onValidityChanged, onValidityChanged, onValidityChanged, onValidityChanged, valid, validate, focus */ @js.native
 trait DiffEditorComponent
   extends StObject
-     with Component {
-  
-  /**
-    * The content inside the left text editor
-    */
-  var contentLeft: String = js.native
-  
-  /**
-    * The content inside the right text editor
-    */
-  var contentRight: String = js.native
+     with DiffEditorProperties {
   
   /**
     * The left editor Uri which will be used as a reference for VSCode Language Service.
@@ -35,41 +29,66 @@ trait DiffEditorComponent
   val editorUriRight: String = js.native
   
   /**
-    * Toggle for whether the editor should be automatically resized or not
+    * Focuses the component.
     */
-  var isAutoResizable: Boolean = js.native
+  def focus(): Thenable[Unit] = js.native
   
-  /**
-    * The languge mode for this text editor. The language mode is SQL by default.
-    */
-  var languageMode: String = js.native
-  
-  /**
-    * Minimum height for editor component
-    */
-  var minimumHeight: Double = js.native
+  val id: String = js.native
   
   /**
     * An event called when the editor content is updated
     */
-  def onContentChanged(listener: js.Function1[/* e */ js.Any, js.Any]): Disposable = js.native
-  def onContentChanged(listener: js.Function1[/* e */ js.Any, js.Any], thisArgs: js.Any): Disposable = js.native
-  def onContentChanged(
-    listener: js.Function1[/* e */ js.Any, js.Any],
-    thisArgs: js.Any,
-    disposables: js.Array[Disposable]
-  ): Disposable = js.native
-  def onContentChanged(listener: js.Function1[/* e */ js.Any, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
+  def onContentChanged(listener: js.Function1[/* e */ Any, Any]): Disposable = js.native
+  def onContentChanged(listener: js.Function1[/* e */ Any, Any], thisArgs: Any): Disposable = js.native
+  def onContentChanged(listener: js.Function1[/* e */ Any, Any], thisArgs: Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onContentChanged(listener: js.Function1[/* e */ Any, Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
   
   /**
     * An event called when the editor is created
     */
-  def onEditorCreated(listener: js.Function1[/* e */ js.Any, js.Any]): Disposable = js.native
-  def onEditorCreated(listener: js.Function1[/* e */ js.Any, js.Any], thisArgs: js.Any): Disposable = js.native
-  def onEditorCreated(
-    listener: js.Function1[/* e */ js.Any, js.Any],
-    thisArgs: js.Any,
-    disposables: js.Array[Disposable]
-  ): Disposable = js.native
-  def onEditorCreated(listener: js.Function1[/* e */ js.Any, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
+  def onEditorCreated(listener: js.Function1[/* e */ Any, Any]): Disposable = js.native
+  def onEditorCreated(listener: js.Function1[/* e */ Any, Any], thisArgs: Any): Disposable = js.native
+  def onEditorCreated(listener: js.Function1[/* e */ Any, Any], thisArgs: Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onEditorCreated(listener: js.Function1[/* e */ Any, Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
+  
+  /**
+    * Event fired to notify that the component's validity has changed
+    */
+  def onValidityChanged(listener: js.Function1[/* e */ Boolean, Any]): Disposable = js.native
+  def onValidityChanged(listener: js.Function1[/* e */ Boolean, Any], thisArgs: Any): Disposable = js.native
+  def onValidityChanged(listener: js.Function1[/* e */ Boolean, Any], thisArgs: Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onValidityChanged(listener: js.Function1[/* e */ Boolean, Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
+  
+  /**
+    * Updates the specified CSS Styles and notifies the UI
+    * @param cssStyles The styles to update
+    * @returns Thenable that completes once the update has been applied to the UI
+    */
+  def updateCssStyles(cssStyles: CssStyles): Thenable[Unit] = js.native
+  
+  /**
+    * Sends any updated properties of the component to the UI
+    *
+    * @returns Thenable that completes once the update
+    * has been applied in the UI
+    */
+  def updateProperties(properties: StringDictionary[Any]): Thenable[Unit] = js.native
+  
+  /**
+    * Sends an updated property of the component to the UI
+    *
+    * @returns Thenable that completes once the update
+    * has been applied in the UI
+    */
+  def updateProperty(key: String, value: Any): Thenable[Unit] = js.native
+  
+  /**
+    * Whether the component is valid or not
+    */
+  val valid: Boolean = js.native
+  
+  /**
+    * Run the component's validations
+    */
+  def validate(): Thenable[Boolean] = js.native
 }

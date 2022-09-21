@@ -2,8 +2,7 @@ package typings.docxTemplates.typesMod
 
 import typings.docxTemplates.anon.Ctx
 import typings.docxTemplates.anon.ModifiedSandbox
-import typings.node.Buffer
-import typings.std.Error
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -71,7 +70,7 @@ trait UserOptions extends StObject {
   /**
     * Gets injected into data function as second argument.
     */
-  var queryVars: js.UndefOr[js.Any] = js.undefined
+  var queryVars: js.UndefOr[Any] = js.undefined
   
   /**
     * When set to `true`, this setting ensures `createReport` throws a `NullishCommandResultError` when the result of an INS, HTML, IMAGE, or LINK command is `null` or `undefined`. This is useful as nullish return values usually indicate a mistake in the template or the invoking code. Defaults to `false`.
@@ -108,12 +107,12 @@ object UserOptions {
     inline def setData(value: ReportData | QueryResolver): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataFunction2(
-      value: (/* query */ js.UndefOr[Query], /* queryVars */ js.Any) => ReportData | js.Promise[ReportData]
+      value: (/* query */ js.UndefOr[String], /* queryVars */ Any) => ReportData | js.Promise[ReportData]
     ): Self = StObject.set(x, "data", js.Any.fromFunction2(value))
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setErrorHandler(value: (/* e */ Error, /* raw_code */ js.UndefOr[String]) => js.Any): Self = StObject.set(x, "errorHandler", js.Any.fromFunction2(value))
+    inline def setErrorHandler(value: (/* e */ js.Error, /* raw_code */ js.UndefOr[String]) => Any): Self = StObject.set(x, "errorHandler", js.Any.fromFunction2(value))
     
     inline def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
     
@@ -137,7 +136,7 @@ object UserOptions {
     
     inline def setProcessLineBreaksUndefined: Self = StObject.set(x, "processLineBreaks", js.undefined)
     
-    inline def setQueryVars(value: js.Any): Self = StObject.set(x, "queryVars", value.asInstanceOf[js.Any])
+    inline def setQueryVars(value: Any): Self = StObject.set(x, "queryVars", value.asInstanceOf[js.Any])
     
     inline def setQueryVarsUndefined: Self = StObject.set(x, "queryVars", js.undefined)
     

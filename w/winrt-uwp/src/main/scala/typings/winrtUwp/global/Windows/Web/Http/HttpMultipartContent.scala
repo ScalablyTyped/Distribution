@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.Web.Http.HttpMultipartContent")
 @js.native
 /** Initializes a new instance of the HttpMultipartContent class. */
-class HttpMultipartContent ()
+open class HttpMultipartContent ()
   extends StObject
      with typings.winrtUwp.Windows.Web.Http.HttpMultipartContent {
   /**

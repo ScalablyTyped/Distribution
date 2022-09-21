@@ -14,7 +14,7 @@ trait Downplay extends StObject {
     *
     * @see https://echarts.apache.org/en/option.html#series-sunburst.levels.downplay
     */
-  var downplay: js.UndefOr[`22`] = js.undefined
+  var downplay: js.UndefOr[`23`] = js.undefined
   
   /**
     * Item style when mouse is hovering. See
@@ -24,7 +24,7 @@ trait Downplay extends StObject {
     *
     * @see https://echarts.apache.org/en/option.html#series-sunburst.levels.emphasis
     */
-  var emphasis: js.UndefOr[`22`] = js.undefined
+  var emphasis: js.UndefOr[`23`] = js.undefined
   
   /**
     * Item style when mouse is hovering related items. See
@@ -34,7 +34,7 @@ trait Downplay extends StObject {
     *
     * @see https://echarts.apache.org/en/option.html#series-sunburst.levels.highlight
     */
-  var highlight: js.UndefOr[`22`] = js.undefined
+  var highlight: js.UndefOr[`23`] = js.undefined
   
   /**
     * Style of Sunburst sectors.
@@ -105,15 +105,15 @@ object Downplay {
   
   extension [Self <: Downplay](x: Self) {
     
-    inline def setDownplay(value: `22`): Self = StObject.set(x, "downplay", value.asInstanceOf[js.Any])
+    inline def setDownplay(value: `23`): Self = StObject.set(x, "downplay", value.asInstanceOf[js.Any])
     
     inline def setDownplayUndefined: Self = StObject.set(x, "downplay", js.undefined)
     
-    inline def setEmphasis(value: `22`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
+    inline def setEmphasis(value: `23`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
     
     inline def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
     
-    inline def setHighlight(value: `22`): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+    inline def setHighlight(value: `23`): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
     
     inline def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
     

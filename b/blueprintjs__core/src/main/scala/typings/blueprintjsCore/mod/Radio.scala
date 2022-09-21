@@ -1,16 +1,16 @@
 package typings.blueprintjsCore.mod
 
-import typings.blueprintjsCore.controlsMod.IRadioProps
+import typings.blueprintjsCore.controlsMod.RadioProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core", "Radio")
 @js.native
-class Radio protected ()
+open class Radio protected ()
   extends typings.blueprintjsCore.componentsMod.Radio {
-  def this(props: IRadioProps) = this()
-  def this(props: IRadioProps, context: js.Any) = this()
+  def this(props: RadioProps) = this()
+  def this(props: RadioProps, context: Any) = this()
 }
 /* static members */
 object Radio {

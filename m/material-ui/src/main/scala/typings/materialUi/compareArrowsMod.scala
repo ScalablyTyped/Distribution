@@ -10,10 +10,10 @@ object compareArrowsMod {
   
   @JSImport("material-ui/svg-icons/action/compare-arrows", JSImport.Default)
   @js.native
-  class default () extends ActionCompareArrows
+  open class default () extends ActionCompareArrows
   
   @JSImport("material-ui/svg-icons/action/compare-arrows", "ActionCompareArrows")
   @js.native
-  class ActionCompareArrows ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionCompareArrows ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

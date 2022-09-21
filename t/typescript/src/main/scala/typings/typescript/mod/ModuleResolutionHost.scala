@@ -23,6 +23,8 @@ trait ModuleResolutionHost extends StObject {
   var realpath: js.UndefOr[js.Function1[/* path */ java.lang.String, java.lang.String]] = js.undefined
   
   var trace: js.UndefOr[js.Function1[/* s */ java.lang.String, Unit]] = js.undefined
+  
+  var useCaseSensitiveFileNames: js.UndefOr[Boolean | js.Function0[Boolean]] = js.undefined
 }
 object ModuleResolutionHost {
   
@@ -59,5 +61,11 @@ object ModuleResolutionHost {
     inline def setTrace(value: /* s */ java.lang.String => Unit): Self = StObject.set(x, "trace", js.Any.fromFunction1(value))
     
     inline def setTraceUndefined: Self = StObject.set(x, "trace", js.undefined)
+    
+    inline def setUseCaseSensitiveFileNames(value: Boolean | js.Function0[Boolean]): Self = StObject.set(x, "useCaseSensitiveFileNames", value.asInstanceOf[js.Any])
+    
+    inline def setUseCaseSensitiveFileNamesFunction0(value: () => Boolean): Self = StObject.set(x, "useCaseSensitiveFileNames", js.Any.fromFunction0(value))
+    
+    inline def setUseCaseSensitiveFileNamesUndefined: Self = StObject.set(x, "useCaseSensitiveFileNames", js.undefined)
   }
 }

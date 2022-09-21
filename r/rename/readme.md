@@ -11,9 +11,9 @@ Rename files using some transformers.
 | Full name          | rename |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 47 |
-| # downloads        | 734653 |
-| # stars            | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 60651.0 |
+| # stars            | 17.0 |
 
 ## Links
 - [Homepage](https://github.com/popomore/rename)

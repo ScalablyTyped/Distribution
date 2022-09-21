@@ -6,13 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "EmptyExpr")
 @js.native
-class EmptyExpr protected ()
-  extends typings.angularCompiler.compilerMod.EmptyExpr {
+open class EmptyExpr protected () extends AST {
   def this(
-    span: typings.angularCompiler.astMod.ParseSpan,
+    span: ParseSpan,
     /**
     * Absolute location of the expression AST in a source code file.
     */
-  sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan
+  sourceSpan: AbsoluteSourceSpan
   ) = this()
 }

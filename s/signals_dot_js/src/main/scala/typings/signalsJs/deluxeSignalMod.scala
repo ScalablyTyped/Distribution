@@ -9,7 +9,7 @@ object deluxeSignalMod {
   
   @JSImport("signals.js/lib/org/osflash/signals/DeluxeSignal", "DeluxeSignal")
   @js.native
-  class DeluxeSignal protected () extends PrioritySignal {
+  open class DeluxeSignal protected () extends PrioritySignal {
     /**
       * Creates a DeluxeSignal instance to dispatch events on behalf of a target object.
       * @param    target The object the signal is dispatching events on behalf of.
@@ -22,8 +22,8 @@ object deluxeSignalMod {
       * NOTE: Subclasses cannot call super.apply(null, valueClasses),
       * but this constructor has logic to support super(valueClasses).
       */
-    def this(target: js.Object, valueClasses: js.Any*) = this()
-    def this(target: Unit, valueClasses: js.Any*) = this()
+    def this(target: js.Object, valueClasses: Any*) = this()
+    def this(target: Unit, valueClasses: Any*) = this()
     
     /* protected */ var _target: js.Object = js.native
     

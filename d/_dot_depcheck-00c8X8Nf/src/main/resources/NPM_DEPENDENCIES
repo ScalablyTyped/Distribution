@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      ".depcheck-00c8X8Nf" : "1.4.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      ".depcheck-00c8X8Nf" : "1.4.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

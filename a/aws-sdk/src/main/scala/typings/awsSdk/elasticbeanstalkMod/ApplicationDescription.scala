@@ -24,12 +24,12 @@ trait ApplicationDescription extends StObject {
   /**
     * The date when the application was created.
     */
-  var DateCreated: js.UndefOr[CreationDate] = js.undefined
+  var DateCreated: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The date when the application was last modified.
     */
-  var DateUpdated: js.UndefOr[UpdateDate] = js.undefined
+  var DateUpdated: js.UndefOr[js.Date] = js.undefined
   
   /**
     * User-defined description of the application.
@@ -67,13 +67,13 @@ object ApplicationDescription {
     
     inline def setConfigurationTemplatesUndefined: Self = StObject.set(x, "ConfigurationTemplates", js.undefined)
     
-    inline def setConfigurationTemplatesVarargs(value: ConfigurationTemplateName*): Self = StObject.set(x, "ConfigurationTemplates", js.Array(value :_*))
+    inline def setConfigurationTemplatesVarargs(value: ConfigurationTemplateName*): Self = StObject.set(x, "ConfigurationTemplates", js.Array(value*))
     
-    inline def setDateCreated(value: CreationDate): Self = StObject.set(x, "DateCreated", value.asInstanceOf[js.Any])
+    inline def setDateCreated(value: js.Date): Self = StObject.set(x, "DateCreated", value.asInstanceOf[js.Any])
     
     inline def setDateCreatedUndefined: Self = StObject.set(x, "DateCreated", js.undefined)
     
-    inline def setDateUpdated(value: UpdateDate): Self = StObject.set(x, "DateUpdated", value.asInstanceOf[js.Any])
+    inline def setDateUpdated(value: js.Date): Self = StObject.set(x, "DateUpdated", value.asInstanceOf[js.Any])
     
     inline def setDateUpdatedUndefined: Self = StObject.set(x, "DateUpdated", js.undefined)
     
@@ -89,6 +89,6 @@ object ApplicationDescription {
     
     inline def setVersionsUndefined: Self = StObject.set(x, "Versions", js.undefined)
     
-    inline def setVersionsVarargs(value: VersionLabel*): Self = StObject.set(x, "Versions", js.Array(value :_*))
+    inline def setVersionsVarargs(value: VersionLabel*): Self = StObject.set(x, "Versions", js.Array(value*))
   }
 }

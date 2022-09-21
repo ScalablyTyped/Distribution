@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "mri" : "1.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "mri" : "1.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

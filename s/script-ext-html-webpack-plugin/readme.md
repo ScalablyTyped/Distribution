@@ -10,10 +10,10 @@ Enhances html-webpack-plugin functionality with async and defer attributes for s
 | ------------------ | :-------------: |
 | Full name          | script-ext-html-webpack-plugin |
 | Keywords           | webpack, plugin, html-webpack-plugin, async, defer, inline, script, module, resource hints, prefetch, preload, dynamic script, async script |
-| # releases         | 3 |
-| # dependents       | 130 |
-| # downloads        | 5729599 |
-| # stars            | 7 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 380490.0 |
+| # stars            | 576.0 |
 
 ## Links
 - [Homepage](https://github.com/numical/script-ext-html-webpack-plugin)

@@ -1,6 +1,5 @@
 package typings.qIo
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,13 +13,13 @@ object QioFS {
   
   trait NodeStats extends StObject {
     
-    var atime: Date
+    var atime: js.Date
     
     var blksize: Double
     
     var blocks: Double
     
-    var ctime: Date
+    var ctime: js.Date
     
     var dev: Double
     
@@ -44,7 +43,7 @@ object QioFS {
     
     var mode: Double
     
-    var mtime: Date
+    var mtime: js.Date
     
     var nlink: Double
     
@@ -59,10 +58,10 @@ object QioFS {
   object NodeStats {
     
     inline def apply(
-      atime: Date,
+      atime: js.Date,
       blksize: Double,
       blocks: Double,
-      ctime: Date,
+      ctime: js.Date,
       dev: Double,
       gid: Double,
       ino: Double,
@@ -74,7 +73,7 @@ object QioFS {
       isSocket: () => Boolean,
       isSymbolicLink: () => Boolean,
       mode: Double,
-      mtime: Date,
+      mtime: js.Date,
       nlink: Double,
       node: NodeStats,
       rdev: Double,
@@ -87,13 +86,13 @@ object QioFS {
     
     extension [Self <: NodeStats](x: Self) {
       
-      inline def setAtime(value: Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
+      inline def setAtime(value: js.Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
       
       inline def setBlksize(value: Double): Self = StObject.set(x, "blksize", value.asInstanceOf[js.Any])
       
       inline def setBlocks(value: Double): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
       
-      inline def setCtime(value: Date): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
+      inline def setCtime(value: js.Date): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
       
       inline def setDev(value: Double): Self = StObject.set(x, "dev", value.asInstanceOf[js.Any])
       
@@ -117,7 +116,7 @@ object QioFS {
       
       inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      inline def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+      inline def setMtime(value: js.Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
       
       inline def setNlink(value: Double): Self = StObject.set(x, "nlink", value.asInstanceOf[js.Any])
       

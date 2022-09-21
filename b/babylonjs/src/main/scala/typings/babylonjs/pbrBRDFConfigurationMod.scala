@@ -1,66 +1,55 @@
 package typings.babylonjs
 
-import typings.babylonjs.sceneMod.Scene
+import org.scalablytyped.runtime.StringDictionary
+import typings.babylonjs.anon.Default
+import typings.babylonjs.materialDefinesMod.MaterialDefines
+import typings.babylonjs.materialPluginBaseMod.MaterialPluginBase
+import typings.babylonjs.pbrBaseMaterialMod.PBRBaseMaterial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pbrBRDFConfigurationMod {
   
+  @JSImport("babylonjs/Materials/PBR/pbrBRDFConfiguration", "MaterialBRDFDefines")
+  @js.native
+  /**
+    * Creates a new instance
+    * @param externalProperties list of external properties to inject into the object
+    */
+  open class MaterialBRDFDefines () extends MaterialDefines {
+    def this(externalProperties: StringDictionary[Default]) = this()
+    
+    var BRDF_V_HEIGHT_CORRELATED: Boolean = js.native
+    
+    var MS_BRDF_ENERGY_CONSERVATION: Boolean = js.native
+    
+    var SPECULAR_GLOSSINESS_ENERGY_CONSERVATION: Boolean = js.native
+    
+    var SPHERICAL_HARMONICS: Boolean = js.native
+  }
+  
   @JSImport("babylonjs/Materials/PBR/pbrBRDFConfiguration", "PBRBRDFConfiguration")
   @js.native
-  class PBRBRDFConfiguration protected () extends StObject {
-    /**
-      * Instantiate a new istance of clear coat configuration.
-      * @param markAllSubMeshesAsMiscDirty Callback to flag the material to dirty
-      */
-    def this(markAllSubMeshesAsMiscDirty: js.Function0[Unit]) = this()
+  open class PBRBRDFConfiguration protected () extends MaterialPluginBase {
+    def this(material: PBRBaseMaterial) = this()
+    def this(material: PBRBaseMaterial, addToPluginList: Boolean) = this()
     
     /** @hidden */
-    /* private */ var _internalMarkAllSubMeshesAsMiscDirty: js.Any = js.native
+    /* private */ var _internalMarkAllSubMeshesAsMiscDirty: Any = js.native
     
     /** @hidden */
     def _markAllSubMeshesAsMiscDirty(): Unit = js.native
     
-    /* private */ var _useEnergyConservation: js.Any = js.native
+    /* private */ var _useEnergyConservation: Any = js.native
     
-    /* private */ var _useSmithVisibilityHeightCorrelated: js.Any = js.native
+    /* private */ var _useSmithVisibilityHeightCorrelated: Any = js.native
     
-    /* private */ var _useSpecularGlossinessInputEnergyConservation: js.Any = js.native
+    /* private */ var _useSpecularGlossinessInputEnergyConservation: Any = js.native
     
-    /* private */ var _useSphericalHarmonics: js.Any = js.native
+    /* private */ var _useSphericalHarmonics: Any = js.native
     
-    /**
-      * Makes a duplicate of the current configuration into another one.
-      * @param brdfConfiguration define the config where to copy the info
-      */
-    def copyTo(brdfConfiguration: PBRBRDFConfiguration): Unit = js.native
-    
-    /**
-      * Get the current class name of the texture useful for serialization or dynamic coding.
-      * @returns "PBRClearCoatConfiguration"
-      */
-    def getClassName(): String = js.native
-    
-    /**
-      * Parses a anisotropy Configuration from a serialized object.
-      * @param source - Serialized object.
-      * @param scene Defines the scene we are parsing for
-      * @param rootUrl Defines the rootUrl to load from
-      */
-    def parse(source: js.Any, scene: Scene, rootUrl: String): Unit = js.native
-    
-    /**
-      * Checks to see if a texture is used in the material.
-      * @param defines the list of "defines" to update.
-      */
-    def prepareDefines(defines: IMaterialBRDFDefines): Unit = js.native
-    
-    /**
-      * Serializes this BRDF configuration.
-      * @returns - An object with the serialized config.
-      */
-    def serialize(): js.Any = js.native
+    def prepareDefines(defines: MaterialBRDFDefines): Unit = js.native
     
     /**
       * Defines if the material uses energy conservation.
@@ -138,45 +127,5 @@ object pbrBRDFConfigurationMod {
     @js.native
     def DEFAULT_USE_SPHERICAL_HARMONICS: Boolean = js.native
     inline def DEFAULT_USE_SPHERICAL_HARMONICS_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_USE_SPHERICAL_HARMONICS")(x.asInstanceOf[js.Any])
-  }
-  
-  trait IMaterialBRDFDefines extends StObject {
-    
-    var BRDF_V_HEIGHT_CORRELATED: Boolean
-    
-    var MS_BRDF_ENERGY_CONSERVATION: Boolean
-    
-    var SPECULAR_GLOSSINESS_ENERGY_CONSERVATION: Boolean
-    
-    var SPHERICAL_HARMONICS: Boolean
-    
-    /** @hidden */
-    var _areMiscDirty: Boolean
-  }
-  object IMaterialBRDFDefines {
-    
-    inline def apply(
-      BRDF_V_HEIGHT_CORRELATED: Boolean,
-      MS_BRDF_ENERGY_CONSERVATION: Boolean,
-      SPECULAR_GLOSSINESS_ENERGY_CONSERVATION: Boolean,
-      SPHERICAL_HARMONICS: Boolean,
-      _areMiscDirty: Boolean
-    ): IMaterialBRDFDefines = {
-      val __obj = js.Dynamic.literal(BRDF_V_HEIGHT_CORRELATED = BRDF_V_HEIGHT_CORRELATED.asInstanceOf[js.Any], MS_BRDF_ENERGY_CONSERVATION = MS_BRDF_ENERGY_CONSERVATION.asInstanceOf[js.Any], SPECULAR_GLOSSINESS_ENERGY_CONSERVATION = SPECULAR_GLOSSINESS_ENERGY_CONSERVATION.asInstanceOf[js.Any], SPHERICAL_HARMONICS = SPHERICAL_HARMONICS.asInstanceOf[js.Any], _areMiscDirty = _areMiscDirty.asInstanceOf[js.Any])
-      __obj.asInstanceOf[IMaterialBRDFDefines]
-    }
-    
-    extension [Self <: IMaterialBRDFDefines](x: Self) {
-      
-      inline def setBRDF_V_HEIGHT_CORRELATED(value: Boolean): Self = StObject.set(x, "BRDF_V_HEIGHT_CORRELATED", value.asInstanceOf[js.Any])
-      
-      inline def setMS_BRDF_ENERGY_CONSERVATION(value: Boolean): Self = StObject.set(x, "MS_BRDF_ENERGY_CONSERVATION", value.asInstanceOf[js.Any])
-      
-      inline def setSPECULAR_GLOSSINESS_ENERGY_CONSERVATION(value: Boolean): Self = StObject.set(x, "SPECULAR_GLOSSINESS_ENERGY_CONSERVATION", value.asInstanceOf[js.Any])
-      
-      inline def setSPHERICAL_HARMONICS(value: Boolean): Self = StObject.set(x, "SPHERICAL_HARMONICS", value.asInstanceOf[js.Any])
-      
-      inline def set_areMiscDirty(value: Boolean): Self = StObject.set(x, "_areMiscDirty", value.asInstanceOf[js.Any])
-    }
   }
 }

@@ -17,7 +17,7 @@ object mod {
     
     var collapseContent: js.UndefOr[Boolean] = js.undefined
     
-    var filter: js.UndefOr[js.Function1[/* node */ js.Any, Boolean]] = js.undefined
+    var filter: js.UndefOr[js.Function1[/* node */ Any, Boolean]] = js.undefined
     
     var indentation: js.UndefOr[String] = js.undefined
     
@@ -40,7 +40,7 @@ object mod {
       
       inline def setCollapseContentUndefined: Self = StObject.set(x, "collapseContent", js.undefined)
       
-      inline def setFilter(value: /* node */ js.Any => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilter(value: /* node */ Any => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
       inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       

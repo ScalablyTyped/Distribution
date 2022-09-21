@@ -9,11 +9,14 @@ object imageBuilderMod {
   
   @JSImport("ol/render/canvas/ImageBuilder", JSImport.Default)
   @js.native
-  class default protected () extends CanvasImageBuilder {
+  open class default protected () extends CanvasImageBuilder {
     def this(tolerance: Double, maxExtent: Extent, resolution: Double, pixelRatio: Double) = this()
   }
   
   @js.native
   trait CanvasImageBuilder
-    extends typings.ol.builderMod.default
+    extends typings.ol.builderMod.default {
+    
+    def setImageStyle(imageStyle: typings.ol.styleImageMod.default, opt_sharedData: Any): Unit = js.native
+  }
 }

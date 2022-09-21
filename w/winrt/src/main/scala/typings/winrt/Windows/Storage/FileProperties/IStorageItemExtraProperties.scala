@@ -12,8 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait IStorageItemExtraProperties extends StObject {
   
-  def retrievePropertiesAsync(propertiesToRetrieve: IIterable[String]): IAsyncOperation[IMap[String, js.Any]] = js.native
+  def retrievePropertiesAsync(propertiesToRetrieve: IIterable[String]): IAsyncOperation[IMap[String, Any]] = js.native
   
   def savePropertiesAsync(): IAsyncAction = js.native
-  def savePropertiesAsync(propertiesToSave: IIterable[IKeyValuePair[String, js.Any]]): IAsyncAction = js.native
+  def savePropertiesAsync(propertiesToSave: IIterable[IKeyValuePair[String, Any]]): IAsyncAction = js.native
 }

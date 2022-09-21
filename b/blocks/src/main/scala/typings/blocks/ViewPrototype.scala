@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /////////////////////////////////////////
 trait ViewPrototype
   extends StObject
-     with /* propertyName */ StringDictionary[js.Any] {
+     with /* propertyName */ StringDictionary[Any] {
   
   /**
     * Override the init method to perform actions when the View is first created and shown on the page
@@ -27,7 +27,7 @@ trait ViewPrototype
   
   var options: js.UndefOr[Route] = js.undefined
   
-  var parentView: js.UndefOr[js.Any] = js.undefined
+  var parentView: js.UndefOr[Any] = js.undefined
   
   /**
     * Override the ready method to perform actions when the DOM is ready and
@@ -72,7 +72,7 @@ object ViewPrototype {
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    inline def setParentView(value: js.Any): Self = StObject.set(x, "parentView", value.asInstanceOf[js.Any])
+    inline def setParentView(value: Any): Self = StObject.set(x, "parentView", value.asInstanceOf[js.Any])
     
     inline def setParentViewUndefined: Self = StObject.set(x, "parentView", js.undefined)
     

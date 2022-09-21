@@ -2,8 +2,9 @@ package typings.reactNavigationCore
 
 import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.Context
+import typings.reactNavigationCore.anon.Readonlykeystringindexnum
 import typings.reactNavigationCore.typesMod.NavigationProp
-import typings.std.Record
+import typings.reactNavigationRouters.typesMod.ParamListBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,20 +18,20 @@ object navigationContextMod extends Shortcut {
   @js.native
   val default: Context[
     js.UndefOr[
-      NavigationProp[Record[String, js.UndefOr[js.Object]], String, js.Any, js.Any, js.Object]
+      NavigationProp[ParamListBase, String, Unit, Readonlykeystringindexnum, js.Object, js.Object]
     ]
   ] = js.native
   
   type _To = Context[
     js.UndefOr[
-      NavigationProp[Record[String, js.UndefOr[js.Object]], String, js.Any, js.Any, js.Object]
+      NavigationProp[ParamListBase, String, Unit, Readonlykeystringindexnum, js.Object, js.Object]
     ]
   ]
   
   /* This means you don't have to write `default`, but can instead just say `navigationContextMod.foo` */
   override def _to: Context[
     js.UndefOr[
-      NavigationProp[Record[String, js.UndefOr[js.Object]], String, js.Any, js.Any, js.Object]
+      NavigationProp[ParamListBase, String, Unit, Readonlykeystringindexnum, js.Object, js.Object]
     ]
   ] = default
 }

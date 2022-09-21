@@ -10,10 +10,10 @@ wget in Node, with Promise support
 | ------------------ | :-------------: |
 | Full name          | node-wget-promise |
 | Keywords           | download, http, promise, request, wget |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 30899 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6240.333333333333 |
+| # stars            | 7.0 |
 
 ## Links
 - [Homepage](https://github.com/ajhsu/node-wget-promise#readme)

@@ -22,6 +22,6 @@ object DescribeTrustedAdvisorCheckSummariesResponse {
     
     inline def setSummaries(value: TrustedAdvisorCheckSummaryList): Self = StObject.set(x, "summaries", value.asInstanceOf[js.Any])
     
-    inline def setSummariesVarargs(value: TrustedAdvisorCheckSummary*): Self = StObject.set(x, "summaries", js.Array(value :_*))
+    inline def setSummariesVarargs(value: TrustedAdvisorCheckSummary*): Self = StObject.set(x, "summaries", js.Array(value*))
   }
 }

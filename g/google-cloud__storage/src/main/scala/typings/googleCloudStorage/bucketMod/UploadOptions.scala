@@ -2,7 +2,7 @@ package typings.googleCloudStorage.bucketMod
 
 import typings.googleCloudStorage.fileMod.CreateWriteStreamOptions
 import typings.googleCloudStorage.fileMod.File
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ trait UploadOptions
   
   var kmsKeyName: js.UndefOr[String] = js.undefined
   
-  var onUploadProgress: js.UndefOr[js.Function1[/* progressEvent */ js.Any, Unit]] = js.undefined
+  var onUploadProgress: js.UndefOr[js.Function1[/* progressEvent */ Any, Unit]] = js.undefined
 }
 object UploadOptions {
   
@@ -40,7 +40,7 @@ object UploadOptions {
     
     inline def setKmsKeyNameUndefined: Self = StObject.set(x, "kmsKeyName", js.undefined)
     
-    inline def setOnUploadProgress(value: /* progressEvent */ js.Any => Unit): Self = StObject.set(x, "onUploadProgress", js.Any.fromFunction1(value))
+    inline def setOnUploadProgress(value: /* progressEvent */ Any => Unit): Self = StObject.set(x, "onUploadProgress", js.Any.fromFunction1(value))
     
     inline def setOnUploadProgressUndefined: Self = StObject.set(x, "onUploadProgress", js.undefined)
   }

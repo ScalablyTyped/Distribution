@@ -33,6 +33,6 @@ object ListSuitesResult {
     
     inline def setSuitesUndefined: Self = StObject.set(x, "suites", js.undefined)
     
-    inline def setSuitesVarargs(value: Suite*): Self = StObject.set(x, "suites", js.Array(value :_*))
+    inline def setSuitesVarargs(value: Suite*): Self = StObject.set(x, "suites", js.Array(value*))
   }
 }

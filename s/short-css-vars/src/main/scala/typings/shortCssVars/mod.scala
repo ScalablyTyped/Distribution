@@ -1,7 +1,6 @@
 package typings.shortCssVars
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ object mod {
   
   @JSImport("short-css-vars", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with ShortCssVars {
     def this(options: Options) = this()
@@ -48,7 +47,7 @@ object mod {
   
   type CustomIgnore = js.Function1[/* name */ String, Boolean]
   
-  type IgnoreType = RegExp | String | CustomIgnore
+  type IgnoreType = js.RegExp | String | CustomIgnore
   
   /**
     * Optional configurations

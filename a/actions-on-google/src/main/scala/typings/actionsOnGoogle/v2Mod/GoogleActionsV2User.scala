@@ -97,13 +97,13 @@ object GoogleActionsV2User {
     
     inline def setPackageEntitlementsUndefined: Self = StObject.set(x, "packageEntitlements", js.undefined)
     
-    inline def setPackageEntitlementsVarargs(value: GoogleActionsV2PackageEntitlement*): Self = StObject.set(x, "packageEntitlements", js.Array(value :_*))
+    inline def setPackageEntitlementsVarargs(value: GoogleActionsV2PackageEntitlement*): Self = StObject.set(x, "packageEntitlements", js.Array(value*))
     
     inline def setPermissions(value: js.Array[GoogleActionsV2UserPermissions]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
     inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
-    inline def setPermissionsVarargs(value: GoogleActionsV2UserPermissions*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: GoogleActionsV2UserPermissions*): Self = StObject.set(x, "permissions", js.Array(value*))
     
     inline def setProfile(value: GoogleActionsV2UserProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     

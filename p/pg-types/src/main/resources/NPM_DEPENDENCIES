@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "pg-types" : "2.2.0"
+      "pg-types" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "pg-types" : "2.2.0"
+      "pg-types" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

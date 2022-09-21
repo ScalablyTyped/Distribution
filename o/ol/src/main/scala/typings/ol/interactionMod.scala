@@ -15,139 +15,139 @@ object interactionMod {
   
   @JSImport("ol/interaction", "DoubleClickZoom")
   @js.native
-  class DoubleClickZoom () extends default {
+  open class DoubleClickZoom () extends default {
     def this(opt_options: Options) = this()
   }
   
   @JSImport("ol/interaction", "DragAndDrop")
   @js.native
-  class DragAndDrop ()
+  open class DragAndDrop ()
     extends typings.ol.dragAndDropMod.default {
     def this(opt_options: typings.ol.dragAndDropMod.Options) = this()
   }
   
   @JSImport("ol/interaction", "DragBox")
   @js.native
-  class DragBox ()
+  open class DragBox ()
     extends typings.ol.dragBoxMod.default {
     def this(opt_options: typings.ol.dragBoxMod.Options) = this()
   }
   
   @JSImport("ol/interaction", "DragPan")
   @js.native
-  class DragPan ()
+  open class DragPan ()
     extends typings.ol.dragPanMod.default {
     def this(opt_options: typings.ol.dragPanMod.Options) = this()
   }
   
   @JSImport("ol/interaction", "DragRotate")
   @js.native
-  class DragRotate ()
+  open class DragRotate ()
     extends typings.ol.dragRotateMod.default {
     def this(opt_options: typings.ol.dragRotateMod.Options) = this()
   }
   
   @JSImport("ol/interaction", "DragRotateAndZoom")
   @js.native
-  class DragRotateAndZoom ()
+  open class DragRotateAndZoom ()
     extends typings.ol.dragRotateAndZoomMod.default {
     def this(opt_options: typings.ol.dragRotateAndZoomMod.Options) = this()
   }
   
   @JSImport("ol/interaction", "DragZoom")
   @js.native
-  class DragZoom ()
+  open class DragZoom ()
     extends typings.ol.dragZoomMod.default {
     def this(opt_options: typings.ol.dragZoomMod.Options) = this()
   }
   
   @JSImport("ol/interaction", "Draw")
   @js.native
-  class Draw protected ()
+  open class Draw protected ()
     extends typings.ol.drawMod.default {
     def this(options: typings.ol.drawMod.Options) = this()
   }
   
   @JSImport("ol/interaction", "Extent")
   @js.native
-  class Extent ()
+  open class Extent ()
     extends typings.ol.interactionExtentMod.default {
     def this(opt_options: typings.ol.interactionExtentMod.Options) = this()
   }
   
   @JSImport("ol/interaction", "Interaction")
   @js.native
-  class Interaction ()
+  open class Interaction ()
     extends typings.ol.interactionInteractionMod.default {
     def this(opt_options: InteractionOptions) = this()
   }
   
   @JSImport("ol/interaction", "KeyboardPan")
   @js.native
-  class KeyboardPan ()
+  open class KeyboardPan ()
     extends typings.ol.keyboardPanMod.default {
     def this(opt_options: typings.ol.keyboardPanMod.Options) = this()
   }
   
   @JSImport("ol/interaction", "KeyboardZoom")
   @js.native
-  class KeyboardZoom ()
+  open class KeyboardZoom ()
     extends typings.ol.keyboardZoomMod.default {
     def this(opt_options: typings.ol.keyboardZoomMod.Options) = this()
   }
   
   @JSImport("ol/interaction", "Modify")
   @js.native
-  class Modify protected ()
+  open class Modify protected ()
     extends typings.ol.modifyMod.default {
     def this(options: typings.ol.modifyMod.Options) = this()
   }
   
   @JSImport("ol/interaction", "MouseWheelZoom")
   @js.native
-  class MouseWheelZoom ()
+  open class MouseWheelZoom ()
     extends typings.ol.mouseWheelZoomMod.default {
     def this(opt_options: typings.ol.mouseWheelZoomMod.Options) = this()
   }
   
   @JSImport("ol/interaction", "PinchRotate")
   @js.native
-  class PinchRotate ()
+  open class PinchRotate ()
     extends typings.ol.pinchRotateMod.default {
     def this(opt_options: typings.ol.pinchRotateMod.Options) = this()
   }
   
   @JSImport("ol/interaction", "PinchZoom")
   @js.native
-  class PinchZoom ()
+  open class PinchZoom ()
     extends typings.ol.pinchZoomMod.default {
     def this(opt_options: typings.ol.pinchZoomMod.Options) = this()
   }
   
   @JSImport("ol/interaction", "Pointer")
   @js.native
-  class Pointer ()
+  open class Pointer ()
     extends typings.ol.pointerMod.default {
     def this(opt_options: typings.ol.pointerMod.Options) = this()
   }
   
   @JSImport("ol/interaction", "Select")
   @js.native
-  class Select ()
+  open class Select ()
     extends typings.ol.selectMod.default {
     def this(opt_options: typings.ol.selectMod.Options) = this()
   }
   
   @JSImport("ol/interaction", "Snap")
   @js.native
-  class Snap ()
+  open class Snap ()
     extends typings.ol.snapMod.default {
     def this(opt_options: typings.ol.snapMod.Options) = this()
   }
   
   @JSImport("ol/interaction", "Translate")
   @js.native
-  class Translate ()
+  open class Translate ()
     extends typings.ol.translateMod.default {
     def this(opt_options: typings.ol.translateMod.Options) = this()
   }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for csv-stringify
 
-Typings are for version 5.5.3
+Typings are for version 6.2.0
 
 ## Library description:
 CSV stringifier implementing the Node.js `stream.Transform` API
@@ -10,15 +10,15 @@ CSV stringifier implementing the Node.js `stream.Transform` API
 | ------------------ | :-------------: |
 | Full name          | csv-stringify |
 | Keywords           | csv, stringify, stringifier |
-| # releases         | 16 |
-| # dependents       | 290 |
-| # downloads        | 33721121 |
-| # stars            | 2 |
+| # releases         | 20 |
+| # dependents       | 0.0 |
+| # downloads        | 9540639.666666666 |
+| # stars            | 3273.0 |
 
 ## Links
 - [Homepage](https://csv.js.org/stringify/)
-- [Bugs](https://github.com/adaltas/node-csv-stringify/issues)
-- [Repository](https://github.com/adaltas/node-csv-stringify)
+- [Bugs](https://github.com/adaltas/node-csv/issues)
+- [Repository](https://github.com/adaltas/node-csv)
 - [Npm](https://www.npmjs.com/package/csv-stringify)
     
 

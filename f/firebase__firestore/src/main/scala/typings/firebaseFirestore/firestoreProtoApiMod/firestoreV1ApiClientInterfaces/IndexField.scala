@@ -1,22 +1,31 @@
 package typings.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces
 
 import typings.firebaseFirestore.firestoreProtoApiMod.IndexFieldMode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IndexField extends js.Object {
+trait IndexField extends StObject {
+  
   var fieldPath: js.UndefOr[String] = js.undefined
+  
   var mode: js.UndefOr[IndexFieldMode] = js.undefined
 }
-
 object IndexField {
-  @scala.inline
-  def apply(fieldPath: String = null, mode: IndexFieldMode = null): IndexField = {
+  
+  inline def apply(): IndexField = {
     val __obj = js.Dynamic.literal()
-    if (fieldPath != null) __obj.updateDynamic("fieldPath")(fieldPath.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexField]
   }
+  
+  extension [Self <: IndexField](x: Self) {
+    
+    inline def setFieldPath(value: String): Self = StObject.set(x, "fieldPath", value.asInstanceOf[js.Any])
+    
+    inline def setFieldPathUndefined: Self = StObject.set(x, "fieldPath", js.undefined)
+    
+    inline def setMode(value: IndexFieldMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+  }
 }
-

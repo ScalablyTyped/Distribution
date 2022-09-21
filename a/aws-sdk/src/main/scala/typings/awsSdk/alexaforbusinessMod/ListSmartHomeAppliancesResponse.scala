@@ -33,6 +33,6 @@ object ListSmartHomeAppliancesResponse {
     
     inline def setSmartHomeAppliancesUndefined: Self = StObject.set(x, "SmartHomeAppliances", js.undefined)
     
-    inline def setSmartHomeAppliancesVarargs(value: SmartHomeAppliance*): Self = StObject.set(x, "SmartHomeAppliances", js.Array(value :_*))
+    inline def setSmartHomeAppliancesVarargs(value: SmartHomeAppliance*): Self = StObject.set(x, "SmartHomeAppliances", js.Array(value*))
   }
 }

@@ -29,7 +29,7 @@ object DescribeBackupsResponse {
     
     inline def setBackupsUndefined: Self = StObject.set(x, "Backups", js.undefined)
     
-    inline def setBackupsVarargs(value: Backup*): Self = StObject.set(x, "Backups", js.Array(value :_*))
+    inline def setBackupsVarargs(value: Backup*): Self = StObject.set(x, "Backups", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

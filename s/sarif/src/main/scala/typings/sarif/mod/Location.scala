@@ -54,7 +54,7 @@ object Location {
     
     inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
     
-    inline def setAnnotationsVarargs(value: Region*): Self = StObject.set(x, "annotations", js.Array(value :_*))
+    inline def setAnnotationsVarargs(value: Region*): Self = StObject.set(x, "annotations", js.Array(value*))
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -64,7 +64,7 @@ object Location {
     
     inline def setLogicalLocationsUndefined: Self = StObject.set(x, "logicalLocations", js.undefined)
     
-    inline def setLogicalLocationsVarargs(value: LogicalLocation*): Self = StObject.set(x, "logicalLocations", js.Array(value :_*))
+    inline def setLogicalLocationsVarargs(value: LogicalLocation*): Self = StObject.set(x, "logicalLocations", js.Array(value*))
     
     inline def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
@@ -82,6 +82,6 @@ object Location {
     
     inline def setRelationshipsUndefined: Self = StObject.set(x, "relationships", js.undefined)
     
-    inline def setRelationshipsVarargs(value: LocationRelationship*): Self = StObject.set(x, "relationships", js.Array(value :_*))
+    inline def setRelationshipsVarargs(value: LocationRelationship*): Self = StObject.set(x, "relationships", js.Array(value*))
   }
 }

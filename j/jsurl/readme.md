@@ -10,10 +10,10 @@ URL friendly JSON-like formatting and parsing
 | ------------------ | :-------------: |
 | Full name          | jsurl |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 15 |
-| # downloads        | 262548 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 42522.666666666664 |
+| # stars            | 315.0 |
 
 ## Links
 - [Homepage](http://github.com/Sage/jsurl)

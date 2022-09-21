@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.Hierarchy")
 @js.native
-class Hierarchy ()
+open class Hierarchy ()
   extends StObject
      with typings.igniteUi.Infragistics.Hierarchy {
   

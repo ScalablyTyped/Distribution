@@ -20,16 +20,16 @@ object regularizersMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/regularizers", "L1L2")
   @js.native
-  class L1L2 () extends Regularizer {
+  open class L1L2 () extends Regularizer {
     def this(args: L1L2Args) = this()
     
-    /* private */ val hasL1: js.Any = js.native
+    /* private */ val hasL1: Any = js.native
     
-    /* private */ val hasL2: js.Any = js.native
+    /* private */ val hasL2: Any = js.native
     
-    /* private */ val l1: js.Any = js.native
+    /* private */ val l1: Any = js.native
     
-    /* private */ val l2: js.Any = js.native
+    /* private */ val l2: Any = js.native
   }
   /* static members */
   object L1L2 {

@@ -1,10 +1,9 @@
 package typings.yauzlPromise
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.node.eventsMod.EventEmitterOptions
 import typings.node.streamMod.Readable
-import typings.std.Date
 import typings.yauzl.mod.Options
 import typings.yauzl.mod.ZipFileOptions
 import org.scalablytyped.runtime.StObject
@@ -19,7 +18,7 @@ object mod {
   
   @JSImport("yauzl-promise", "Entry")
   @js.native
-  class Entry ()
+  open class Entry ()
     extends typings.yauzl.mod.Entry {
     
     def openReadStream(): js.Promise[Readable] = js.native
@@ -35,7 +34,7 @@ object mod {
   
   @JSImport("yauzl-promise", "ZipFile")
   @js.native
-  class ZipFile protected () extends EventEmitter {
+  open class ZipFile protected () extends EventEmitter {
     def this(
       reader: typings.yauzl.mod.RandomAccessReader,
       centralDirectoryOffset: Double,
@@ -86,7 +85,7 @@ object mod {
     def walkEntries(callback: js.Function1[/* entry */ Entry, js.Promise[Unit] | Unit], numEntries: Double): js.Promise[Unit] = js.native
   }
   
-  inline def dosDateTimeToDate(date: Double, time: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("dosDateTimeToDate")(date.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Date]
+  inline def dosDateTimeToDate(date: Double, time: Double): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("dosDateTimeToDate")(date.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[js.Date]
   
   inline def fromBuffer(buffer: Buffer): js.Promise[ZipFile] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ZipFile]]
   inline def fromBuffer(buffer: Buffer, options: Options): js.Promise[ZipFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ZipFile]]

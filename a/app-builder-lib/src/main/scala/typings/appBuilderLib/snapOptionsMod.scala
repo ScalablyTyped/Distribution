@@ -4,8 +4,10 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.appBuilderLib.appBuilderLibStrings.classic
 import typings.appBuilderLib.appBuilderLibStrings.devel
 import typings.appBuilderLib.appBuilderLibStrings.devmode
+import typings.appBuilderLib.appBuilderLibStrings.lzo
 import typings.appBuilderLib.appBuilderLibStrings.stable
 import typings.appBuilderLib.appBuilderLibStrings.strict
+import typings.appBuilderLib.appBuilderLibStrings.xz
 import typings.appBuilderLib.coreMod.TargetSpecificOptions
 import typings.appBuilderLib.linuxOptionsMod.CommonLinuxOptions
 import org.scalablytyped.runtime.StObject
@@ -14,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object snapOptionsMod {
   
-  type PlugDescriptor = StringDictionary[StringDictionary[js.Any] | Null]
+  type PlugDescriptor = StringDictionary[StringDictionary[Any] | Null]
+  
+  type SlotDescriptor = StringDictionary[StringDictionary[Any] | Null]
   
   trait SnapOptions
     extends StObject
@@ -28,6 +32,12 @@ object snapOptionsMod {
       * If list contains `default`, it will be replaced to default list, so, `["default", "foo"]` can be used to add custom parts `foo` in addition to defaults.
       */
     val after: js.UndefOr[js.Array[String] | Null] = js.undefined
+    
+    /**
+      * Allow running the program with native wayland support with --ozone-platform=wayland.
+      * Disabled by default because of this issue in older Electron/Snap versions: https://github.com/electron-userland/electron-builder/issues/4007
+      */
+    val allowNativeWayland: js.UndefOr[Boolean | Null] = js.undefined
     
     /**
       * Specifies which files from the app part to stage and which to exclude. Individual files, directories, wildcards, globstars, and exclusions are accepted. See [Snapcraft filesets](https://snapcraft.io/docs/snapcraft-filesets) to learn more about the format.
@@ -51,6 +61,11 @@ object snapOptionsMod {
       * The list of debian packages needs to be installed for building this snap.
       */
     val buildPackages: js.UndefOr[js.Array[String] | Null] = js.undefined
+    
+    /**
+      * Sets the compression type for the snap. Can be xz, lzo, or null.
+      */
+    val compression: js.UndefOr[xz | lzo | Null] = js.undefined
     
     /**
       * The type of [confinement](https://snapcraft.io/docs/reference/confinement) supported by the snap.
@@ -82,7 +97,7 @@ object snapOptionsMod {
     
     /**
       * The list of [plugs](https://snapcraft.io/docs/reference/interfaces).
-      * Defaults to `["desktop", "desktop-legacy", "home", "x11", "unity7", "browser-support", "network", "gsettings", "audio-playback", "pulseaudio", "opengl"]`.
+      * Defaults to `["desktop", "desktop-legacy", "home", "x11", "wayland", "unity7", "browser-support", "network", "gsettings", "audio-playback", "pulseaudio", "opengl"]`.
       *
       * If list contains `default`, it will be replaced to default list, so, `["default", "foo"]` can be used to add custom plug `foo` in addition to defaults.
       *
@@ -103,12 +118,28 @@ object snapOptionsMod {
     
     /**
       * The list of [slots](https://snapcraft.io/docs/reference/interfaces).
+      *
+      * Additional attributes can be specified using object instead of just name of slot:
+      * ```
+      *[
+      *  {
+      *    "mpris": {
+      *      "name": "chromium"
+      *    },
+      *  }
+      *]
+      *
+      * In case you want your application to be a compliant MPris player, you will need to definie
+      * The mpris slot with "chromium" name.
+      * This electron has it [hardcoded](https://source.chromium.org/chromium/chromium/src/+/master:components/system_media_controls/linux/system_media_controls_linux.cc;l=51;bpv=0;bpt=1),
+      * and we need to pass this name so snap [will allow it](https://forum.snapcraft.io/t/unable-to-use-mpris-interface/15360/7) in strict confinement.
+      *
       */
-    val slots: js.UndefOr[js.Array[String] | Null] = js.undefined
+    val slots: js.UndefOr[(js.Array[String | SlotDescriptor]) | PlugDescriptor | Null] = js.undefined
     
     /**
       * The list of Ubuntu packages to use that are needed to support the `app` part creation. Like `depends` for `deb`.
-      * Defaults to `["libasound2", "libgconf2-4", "libnotify4", "libnspr4", "libnss3", "libpcre3", "libpulse0", "libxss1", "libxtst6"]`.
+      * Defaults to `["libnspr4", "libnss3", "libxss1", "libappindicator3-1", "libsecret-1-0"]`.
       *
       * If list contains `default`, it will be replaced to default list, so, `["default", "foo"]` can be used to add custom package `foo` in addition to defaults.
       */
@@ -118,6 +149,11 @@ object snapOptionsMod {
       * The 78 character long summary. Defaults to [productName](/configuration/configuration#Configuration-productName).
       */
     val summary: js.UndefOr[String | Null] = js.undefined
+    
+    /**
+      * An optional title for the snap, may contain uppercase letters and spaces. Defaults to `productName`. See [snap format documentation](https://snapcraft.io/docs/snap-format).
+      */
+    val title: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Whether to use template snap. Defaults to `true` if `stagePackages` not specified.
@@ -139,7 +175,13 @@ object snapOptionsMod {
       
       inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
       
-      inline def setAfterVarargs(value: String*): Self = StObject.set(x, "after", js.Array(value :_*))
+      inline def setAfterVarargs(value: String*): Self = StObject.set(x, "after", js.Array(value*))
+      
+      inline def setAllowNativeWayland(value: Boolean): Self = StObject.set(x, "allowNativeWayland", value.asInstanceOf[js.Any])
+      
+      inline def setAllowNativeWaylandNull: Self = StObject.set(x, "allowNativeWayland", null)
+      
+      inline def setAllowNativeWaylandUndefined: Self = StObject.set(x, "allowNativeWayland", js.undefined)
       
       inline def setAppPartStage(value: js.Array[String]): Self = StObject.set(x, "appPartStage", value.asInstanceOf[js.Any])
       
@@ -147,7 +189,7 @@ object snapOptionsMod {
       
       inline def setAppPartStageUndefined: Self = StObject.set(x, "appPartStage", js.undefined)
       
-      inline def setAppPartStageVarargs(value: String*): Self = StObject.set(x, "appPartStage", js.Array(value :_*))
+      inline def setAppPartStageVarargs(value: String*): Self = StObject.set(x, "appPartStage", js.Array(value*))
       
       inline def setAssumes(value: js.Array[String] | String): Self = StObject.set(x, "assumes", value.asInstanceOf[js.Any])
       
@@ -155,7 +197,7 @@ object snapOptionsMod {
       
       inline def setAssumesUndefined: Self = StObject.set(x, "assumes", js.undefined)
       
-      inline def setAssumesVarargs(value: String*): Self = StObject.set(x, "assumes", js.Array(value :_*))
+      inline def setAssumesVarargs(value: String*): Self = StObject.set(x, "assumes", js.Array(value*))
       
       inline def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
       
@@ -167,7 +209,13 @@ object snapOptionsMod {
       
       inline def setBuildPackagesUndefined: Self = StObject.set(x, "buildPackages", js.undefined)
       
-      inline def setBuildPackagesVarargs(value: String*): Self = StObject.set(x, "buildPackages", js.Array(value :_*))
+      inline def setBuildPackagesVarargs(value: String*): Self = StObject.set(x, "buildPackages", js.Array(value*))
+      
+      inline def setCompression(value: xz | lzo): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+      
+      inline def setCompressionNull: Self = StObject.set(x, "compression", null)
+      
+      inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
       
       inline def setConfinement(value: devmode | strict | classic): Self = StObject.set(x, "confinement", value.asInstanceOf[js.Any])
       
@@ -205,15 +253,15 @@ object snapOptionsMod {
       
       inline def setPlugsUndefined: Self = StObject.set(x, "plugs", js.undefined)
       
-      inline def setPlugsVarargs(value: (String | PlugDescriptor)*): Self = StObject.set(x, "plugs", js.Array(value :_*))
+      inline def setPlugsVarargs(value: (String | PlugDescriptor)*): Self = StObject.set(x, "plugs", js.Array(value*))
       
-      inline def setSlots(value: js.Array[String]): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+      inline def setSlots(value: (js.Array[String | SlotDescriptor]) | PlugDescriptor): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
       
       inline def setSlotsNull: Self = StObject.set(x, "slots", null)
       
       inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
       
-      inline def setSlotsVarargs(value: String*): Self = StObject.set(x, "slots", js.Array(value :_*))
+      inline def setSlotsVarargs(value: (String | SlotDescriptor)*): Self = StObject.set(x, "slots", js.Array(value*))
       
       inline def setStagePackages(value: js.Array[String]): Self = StObject.set(x, "stagePackages", value.asInstanceOf[js.Any])
       
@@ -221,13 +269,19 @@ object snapOptionsMod {
       
       inline def setStagePackagesUndefined: Self = StObject.set(x, "stagePackages", js.undefined)
       
-      inline def setStagePackagesVarargs(value: String*): Self = StObject.set(x, "stagePackages", js.Array(value :_*))
+      inline def setStagePackagesVarargs(value: String*): Self = StObject.set(x, "stagePackages", js.Array(value*))
       
       inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
       
       inline def setSummaryNull: Self = StObject.set(x, "summary", null)
       
       inline def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
+      
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      
+      inline def setTitleNull: Self = StObject.set(x, "title", null)
+      
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
       inline def setUseTemplateApp(value: Boolean): Self = StObject.set(x, "useTemplateApp", value.asInstanceOf[js.Any])
       

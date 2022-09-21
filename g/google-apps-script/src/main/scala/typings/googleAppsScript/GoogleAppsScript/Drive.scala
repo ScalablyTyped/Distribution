@@ -64,6 +64,11 @@ import typings.googleAppsScript.GoogleAppsScript.Drive.Schema.TeamDriveList
 import typings.googleAppsScript.GoogleAppsScript.Drive.Schema.TeamDriveRestrictions
 import typings.googleAppsScript.GoogleAppsScript.Drive.Schema.User
 import typings.googleAppsScript.GoogleAppsScript.Drive.Schema.UserPicture
+import typings.googleAppsScript.googleAppsScriptStrings.fileOrganizer
+import typings.googleAppsScript.googleAppsScriptStrings.organizer
+import typings.googleAppsScript.googleAppsScriptStrings.owner
+import typings.googleAppsScript.googleAppsScriptStrings.reader
+import typings.googleAppsScript.googleAppsScriptStrings.writer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -489,11 +494,11 @@ object Drive {
       // Insert a new file.
       def insert(resource: typings.googleAppsScript.GoogleAppsScript.Drive.Schema.File): typings.googleAppsScript.GoogleAppsScript.Drive.Schema.File = js.native
       // Insert a new file.
-      def insert(resource: typings.googleAppsScript.GoogleAppsScript.Drive.Schema.File, mediaData: js.Any): typings.googleAppsScript.GoogleAppsScript.Drive.Schema.File = js.native
+      def insert(resource: typings.googleAppsScript.GoogleAppsScript.Drive.Schema.File, mediaData: Any): typings.googleAppsScript.GoogleAppsScript.Drive.Schema.File = js.native
       // Insert a new file.
       def insert(
         resource: typings.googleAppsScript.GoogleAppsScript.Drive.Schema.File,
-        mediaData: js.Any,
+        mediaData: Any,
         optionalArgs: js.Object
       ): typings.googleAppsScript.GoogleAppsScript.Drive.Schema.File = js.native
       
@@ -537,13 +542,13 @@ object Drive {
       def update(
         resource: typings.googleAppsScript.GoogleAppsScript.Drive.Schema.File,
         fileId: String,
-        mediaData: js.Any
+        mediaData: Any
       ): typings.googleAppsScript.GoogleAppsScript.Drive.Schema.File = js.native
       // Updates file metadata and/or content.
       def update(
         resource: typings.googleAppsScript.GoogleAppsScript.Drive.Schema.File,
         fileId: String,
-        mediaData: js.Any,
+        mediaData: Any,
         optionalArgs: js.Object
       ): typings.googleAppsScript.GoogleAppsScript.Drive.Schema.File = js.native
       
@@ -671,9 +676,9 @@ object Drive {
       // Overwrites the Realtime API data model associated with this file with the provided JSON data model.
       def update(fileId: String): Unit = js.native
       // Overwrites the Realtime API data model associated with this file with the provided JSON data model.
-      def update(fileId: String, mediaData: js.Any): Unit = js.native
+      def update(fileId: String, mediaData: Any): Unit = js.native
       // Overwrites the Realtime API data model associated with this file with the provided JSON data model.
-      def update(fileId: String, mediaData: js.Any, optionalArgs: js.Object): Unit = js.native
+      def update(fileId: String, mediaData: Any, optionalArgs: js.Object): Unit = js.native
     }
     
     @js.native
@@ -762,9 +767,9 @@ object Drive {
   @js.native
   trait DriveApp extends StObject {
     
-    var Access: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Access */ js.Any = js.native
+    var Access: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Access */ Any = js.native
     
-    var Permission: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Permission */ js.Any = js.native
+    var Permission: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Permission */ Any = js.native
     
     /**
       * Adds the given file to the root of the user's Drive.
@@ -810,12 +815,33 @@ object Drive {
     /** Creates a folder in the root of the user's Drive with the given name. */
     def createFolder(name: String): Folder = js.native
     
+    /** Creates a shortcut to the provided Drive item ID, and returns it. */
+    def createShortcut(targetId: String): typings.googleAppsScript.GoogleAppsScript.Drive.File = js.native
+    
+    /**
+      * Creates a shortcut to the provided Drive item ID and resource key, and
+      * returns it. Resource keys are an additional parameter which need to be
+      * passed to access the target file or folder that has been shared using a
+      * link.
+      */
+    def createShortcutForTargetIdAndResourceKey(targetId: String, targetResourceKey: String): typings.googleAppsScript.GoogleAppsScript.Drive.File = js.native
+    
     /**
       * Gets the file with the given ID.
       * Throws a scripting exception if the file does not exist or
       * the user does not have permission to access it.
       */
     def getFileById(id: String): typings.googleAppsScript.GoogleAppsScript.Drive.File = js.native
+    
+    /**
+      * Gets the file with the given ID and resource key. Resource keys are an
+      * additional parameter which need to be passed to access files that have
+      * been shared using a link.
+      *
+      * Throws a scripting exception if the file doesn't exist or the user
+      * doesn't have permission to access it.
+      */
+    def getFileByIdAndResourceKey(id: String, resourceKey: String): typings.googleAppsScript.GoogleAppsScript.Drive.File = js.native
     
     /** Gets a collection of all files in the user's Drive. */
     def getFiles(): FileIterator = js.native
@@ -831,6 +857,15 @@ object Drive {
       * does not exist or the user does not have permission to access it.
       */
     def getFolderById(id: String): Folder = js.native
+    
+    /**
+      * Gets the folder with the given ID and resource key. Resource keys are
+      * an additional parameter which need to be passed to access folders that
+      * have been shared using a link.
+      * Throws a scripting exception if the folder doesn't exist or the user
+      * doesn't have permission to access it.
+      */
+    def getFolderByIdAndResourceKey(id: String, resourceKey: String): Folder = js.native
     
     /** Gets a collection of all folders in the user's Drive. */
     def getFolders(): FolderIterator = js.native
@@ -1048,7 +1083,7 @@ object Drive {
     
     def getDateCreated(): Date = js.native
     
-    def getDescription(): String = js.native
+    def getDescription(): String | Null = js.native
     
     def getDownloadUrl(): String = js.native
     
@@ -1066,11 +1101,23 @@ object Drive {
     
     def getParents(): FolderIterator = js.native
     
+    def getResourceKey(): String | Null = js.native
+    
+    def getSecurityUpdateEligible(): Boolean = js.native
+    
+    def getSecurityUpdateEnabled(): Boolean = js.native
+    
     def getSharingAccess(): Access = js.native
     
     def getSharingPermission(): typings.googleAppsScript.GoogleAppsScript.Drive.Permission = js.native
     
     def getSize(): Integer = js.native
+    
+    def getTargetId(): String | Null = js.native
+    
+    def getTargetMimeType(): String | Null = js.native
+    
+    def getTargetResourceKey(): String | Null = js.native
     
     def getThumbnail(): Blob = js.native
     
@@ -1088,6 +1135,8 @@ object Drive {
     def makeCopy(destination: Folder): typings.googleAppsScript.GoogleAppsScript.Drive.File = js.native
     def makeCopy(name: String): typings.googleAppsScript.GoogleAppsScript.Drive.File = js.native
     def makeCopy(name: String, destination: Folder): typings.googleAppsScript.GoogleAppsScript.Drive.File = js.native
+    
+    def moveTo(destination: Folder): typings.googleAppsScript.GoogleAppsScript.Drive.File = js.native
     
     def removeCommenter(emailAddress: String): typings.googleAppsScript.GoogleAppsScript.Drive.File = js.native
     def removeCommenter(user: typings.googleAppsScript.GoogleAppsScript.Base.User): typings.googleAppsScript.GoogleAppsScript.Drive.File = js.native
@@ -1109,6 +1158,8 @@ object Drive {
     
     def setOwner(emailAddress: String): typings.googleAppsScript.GoogleAppsScript.Drive.File = js.native
     def setOwner(user: typings.googleAppsScript.GoogleAppsScript.Base.User): typings.googleAppsScript.GoogleAppsScript.Drive.File = js.native
+    
+    def setSecurityUpdateEnabled(enabled: Boolean): typings.googleAppsScript.GoogleAppsScript.Drive.File = js.native
     
     def setShareableByEditors(shareable: Boolean): typings.googleAppsScript.GoogleAppsScript.Drive.File = js.native
     
@@ -1202,6 +1253,10 @@ object Drive {
     
     def createFolder(name: String): Folder = js.native
     
+    def createShortcut(targetId: String): typings.googleAppsScript.GoogleAppsScript.Drive.File = js.native
+    
+    def createShortcutForTargetIdAndResourceKey(targetId: String, targetResourceKey: String): typings.googleAppsScript.GoogleAppsScript.Drive.File = js.native
+    
     def getAccess(email: String): typings.googleAppsScript.GoogleAppsScript.Drive.Permission = js.native
     def getAccess(user: typings.googleAppsScript.GoogleAppsScript.Base.User): typings.googleAppsScript.GoogleAppsScript.Drive.Permission = js.native
     
@@ -1231,6 +1286,12 @@ object Drive {
     
     def getParents(): FolderIterator = js.native
     
+    def getResourceKey(): String | Null = js.native
+    
+    def getSecurityUpdateEligible(): Boolean = js.native
+    
+    def getSecurityUpdateEnabled(): Boolean = js.native
+    
     def getSharingAccess(): Access = js.native
     
     def getSharingPermission(): typings.googleAppsScript.GoogleAppsScript.Drive.Permission = js.native
@@ -1246,6 +1307,8 @@ object Drive {
     def isStarred(): Boolean = js.native
     
     def isTrashed(): Boolean = js.native
+    
+    def moveTo(destination: Folder): Folder = js.native
     
     def removeEditor(emailAddress: String): Folder = js.native
     def removeEditor(user: typings.googleAppsScript.GoogleAppsScript.Base.User): Folder = js.native
@@ -1270,6 +1333,8 @@ object Drive {
     
     def setOwner(emailAddress: String): Folder = js.native
     def setOwner(user: typings.googleAppsScript.GoogleAppsScript.Base.User): Folder = js.native
+    
+    def setSecurityUpdateEnabled(enabled: Boolean): Folder = js.native
     
     def setShareableByEditors(shareable: Boolean): Folder = js.native
     
@@ -1389,7 +1454,7 @@ object Drive {
         
         inline def setAdditionalRoleInfoUndefined: Self = StObject.set(x, "additionalRoleInfo", js.undefined)
         
-        inline def setAdditionalRoleInfoVarargs(value: AboutAdditionalRoleInfo*): Self = StObject.set(x, "additionalRoleInfo", js.Array(value :_*))
+        inline def setAdditionalRoleInfoVarargs(value: AboutAdditionalRoleInfo*): Self = StObject.set(x, "additionalRoleInfo", js.Array(value*))
         
         inline def setCanCreateDrives(value: Boolean): Self = StObject.set(x, "canCreateDrives", value.asInstanceOf[js.Any])
         
@@ -1407,7 +1472,7 @@ object Drive {
         
         inline def setDriveThemesUndefined: Self = StObject.set(x, "driveThemes", js.undefined)
         
-        inline def setDriveThemesVarargs(value: AboutDriveThemes*): Self = StObject.set(x, "driveThemes", js.Array(value :_*))
+        inline def setDriveThemesVarargs(value: AboutDriveThemes*): Self = StObject.set(x, "driveThemes", js.Array(value*))
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -1417,25 +1482,25 @@ object Drive {
         
         inline def setExportFormatsUndefined: Self = StObject.set(x, "exportFormats", js.undefined)
         
-        inline def setExportFormatsVarargs(value: AboutExportFormats*): Self = StObject.set(x, "exportFormats", js.Array(value :_*))
+        inline def setExportFormatsVarargs(value: AboutExportFormats*): Self = StObject.set(x, "exportFormats", js.Array(value*))
         
         inline def setFeatures(value: js.Array[AboutFeatures]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
         
         inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
         
-        inline def setFeaturesVarargs(value: AboutFeatures*): Self = StObject.set(x, "features", js.Array(value :_*))
+        inline def setFeaturesVarargs(value: AboutFeatures*): Self = StObject.set(x, "features", js.Array(value*))
         
         inline def setFolderColorPalette(value: js.Array[String]): Self = StObject.set(x, "folderColorPalette", value.asInstanceOf[js.Any])
         
         inline def setFolderColorPaletteUndefined: Self = StObject.set(x, "folderColorPalette", js.undefined)
         
-        inline def setFolderColorPaletteVarargs(value: String*): Self = StObject.set(x, "folderColorPalette", js.Array(value :_*))
+        inline def setFolderColorPaletteVarargs(value: String*): Self = StObject.set(x, "folderColorPalette", js.Array(value*))
         
         inline def setImportFormats(value: js.Array[AboutImportFormats]): Self = StObject.set(x, "importFormats", value.asInstanceOf[js.Any])
         
         inline def setImportFormatsUndefined: Self = StObject.set(x, "importFormats", js.undefined)
         
-        inline def setImportFormatsVarargs(value: AboutImportFormats*): Self = StObject.set(x, "importFormats", js.Array(value :_*))
+        inline def setImportFormatsVarargs(value: AboutImportFormats*): Self = StObject.set(x, "importFormats", js.Array(value*))
         
         inline def setIsCurrentAppInstalled(value: Boolean): Self = StObject.set(x, "isCurrentAppInstalled", value.asInstanceOf[js.Any])
         
@@ -1457,7 +1522,7 @@ object Drive {
         
         inline def setMaxUploadSizesUndefined: Self = StObject.set(x, "maxUploadSizes", js.undefined)
         
-        inline def setMaxUploadSizesVarargs(value: AboutMaxUploadSizes*): Self = StObject.set(x, "maxUploadSizes", js.Array(value :_*))
+        inline def setMaxUploadSizesVarargs(value: AboutMaxUploadSizes*): Self = StObject.set(x, "maxUploadSizes", js.Array(value*))
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -1471,7 +1536,7 @@ object Drive {
         
         inline def setQuotaBytesByServiceUndefined: Self = StObject.set(x, "quotaBytesByService", js.undefined)
         
-        inline def setQuotaBytesByServiceVarargs(value: AboutQuotaBytesByService*): Self = StObject.set(x, "quotaBytesByService", js.Array(value :_*))
+        inline def setQuotaBytesByServiceVarargs(value: AboutQuotaBytesByService*): Self = StObject.set(x, "quotaBytesByService", js.Array(value*))
         
         inline def setQuotaBytesTotal(value: String): Self = StObject.set(x, "quotaBytesTotal", value.asInstanceOf[js.Any])
         
@@ -1509,7 +1574,7 @@ object Drive {
         
         inline def setTeamDriveThemesUndefined: Self = StObject.set(x, "teamDriveThemes", js.undefined)
         
-        inline def setTeamDriveThemesVarargs(value: AboutTeamDriveThemes*): Self = StObject.set(x, "teamDriveThemes", js.Array(value :_*))
+        inline def setTeamDriveThemesVarargs(value: AboutTeamDriveThemes*): Self = StObject.set(x, "teamDriveThemes", js.Array(value*))
         
         inline def setUser(value: typings.googleAppsScript.GoogleAppsScript.Drive.Schema.User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
         
@@ -1536,7 +1601,7 @@ object Drive {
         
         inline def setRoleSetsUndefined: Self = StObject.set(x, "roleSets", js.undefined)
         
-        inline def setRoleSetsVarargs(value: AboutAdditionalRoleInfoRoleSets*): Self = StObject.set(x, "roleSets", js.Array(value :_*))
+        inline def setRoleSetsVarargs(value: AboutAdditionalRoleInfoRoleSets*): Self = StObject.set(x, "roleSets", js.Array(value*))
         
         inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
@@ -1563,7 +1628,7 @@ object Drive {
         
         inline def setAdditionalRolesUndefined: Self = StObject.set(x, "additionalRoles", js.undefined)
         
-        inline def setAdditionalRolesVarargs(value: String*): Self = StObject.set(x, "additionalRoles", js.Array(value :_*))
+        inline def setAdditionalRolesVarargs(value: String*): Self = StObject.set(x, "additionalRoles", js.Array(value*))
         
         inline def setPrimaryRole(value: String): Self = StObject.set(x, "primaryRole", value.asInstanceOf[js.Any])
         
@@ -1625,7 +1690,7 @@ object Drive {
         
         inline def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
         
-        inline def setTargetsVarargs(value: String*): Self = StObject.set(x, "targets", js.Array(value :_*))
+        inline def setTargetsVarargs(value: String*): Self = StObject.set(x, "targets", js.Array(value*))
       }
     }
     
@@ -1677,7 +1742,7 @@ object Drive {
         
         inline def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
         
-        inline def setTargetsVarargs(value: String*): Self = StObject.set(x, "targets", js.Array(value :_*))
+        inline def setTargetsVarargs(value: String*): Self = StObject.set(x, "targets", js.Array(value*))
       }
     }
     
@@ -1841,7 +1906,7 @@ object Drive {
         
         inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
         
-        inline def setIconsVarargs(value: AppIcons*): Self = StObject.set(x, "icons", js.Array(value :_*))
+        inline def setIconsVarargs(value: AppIcons*): Self = StObject.set(x, "icons", js.Array(value*))
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -1875,13 +1940,13 @@ object Drive {
         
         inline def setPrimaryFileExtensionsUndefined: Self = StObject.set(x, "primaryFileExtensions", js.undefined)
         
-        inline def setPrimaryFileExtensionsVarargs(value: String*): Self = StObject.set(x, "primaryFileExtensions", js.Array(value :_*))
+        inline def setPrimaryFileExtensionsVarargs(value: String*): Self = StObject.set(x, "primaryFileExtensions", js.Array(value*))
         
         inline def setPrimaryMimeTypes(value: js.Array[String]): Self = StObject.set(x, "primaryMimeTypes", value.asInstanceOf[js.Any])
         
         inline def setPrimaryMimeTypesUndefined: Self = StObject.set(x, "primaryMimeTypes", js.undefined)
         
-        inline def setPrimaryMimeTypesVarargs(value: String*): Self = StObject.set(x, "primaryMimeTypes", js.Array(value :_*))
+        inline def setPrimaryMimeTypesVarargs(value: String*): Self = StObject.set(x, "primaryMimeTypes", js.Array(value*))
         
         inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
         
@@ -1895,13 +1960,13 @@ object Drive {
         
         inline def setSecondaryFileExtensionsUndefined: Self = StObject.set(x, "secondaryFileExtensions", js.undefined)
         
-        inline def setSecondaryFileExtensionsVarargs(value: String*): Self = StObject.set(x, "secondaryFileExtensions", js.Array(value :_*))
+        inline def setSecondaryFileExtensionsVarargs(value: String*): Self = StObject.set(x, "secondaryFileExtensions", js.Array(value*))
         
         inline def setSecondaryMimeTypes(value: js.Array[String]): Self = StObject.set(x, "secondaryMimeTypes", value.asInstanceOf[js.Any])
         
         inline def setSecondaryMimeTypesUndefined: Self = StObject.set(x, "secondaryMimeTypes", js.undefined)
         
-        inline def setSecondaryMimeTypesVarargs(value: String*): Self = StObject.set(x, "secondaryMimeTypes", js.Array(value :_*))
+        inline def setSecondaryMimeTypesVarargs(value: String*): Self = StObject.set(x, "secondaryMimeTypes", js.Array(value*))
         
         inline def setShortDescription(value: String): Self = StObject.set(x, "shortDescription", value.asInstanceOf[js.Any])
         
@@ -1985,7 +2050,7 @@ object Drive {
         
         inline def setDefaultAppIdsUndefined: Self = StObject.set(x, "defaultAppIds", js.undefined)
         
-        inline def setDefaultAppIdsVarargs(value: String*): Self = StObject.set(x, "defaultAppIds", js.Array(value :_*))
+        inline def setDefaultAppIdsVarargs(value: String*): Self = StObject.set(x, "defaultAppIds", js.Array(value*))
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -1995,7 +2060,7 @@ object Drive {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: App*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: App*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -2127,7 +2192,7 @@ object Drive {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Change*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Change*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -2259,7 +2324,7 @@ object Drive {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: ChildReference*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: ChildReference*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -2409,7 +2474,7 @@ object Drive {
         
         inline def setRepliesUndefined: Self = StObject.set(x, "replies", js.undefined)
         
-        inline def setRepliesVarargs(value: CommentReply*): Self = StObject.set(x, "replies", js.Array(value :_*))
+        inline def setRepliesVarargs(value: CommentReply*): Self = StObject.set(x, "replies", js.Array(value*))
         
         inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
         
@@ -2471,7 +2536,7 @@ object Drive {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Comment*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Comment*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -2583,7 +2648,7 @@ object Drive {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: CommentReply*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: CommentReply*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -2861,7 +2926,7 @@ object Drive {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: typings.googleAppsScript.GoogleAppsScript.Drive.Schema.Drive*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: typings.googleAppsScript.GoogleAppsScript.Drive.Schema.Drive*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -3019,6 +3084,8 @@ object Drive {
       var sharedWithMeDate: js.UndefOr[String] = js.undefined
       
       var sharingUser: js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Drive.Schema.User] = js.undefined
+      
+      var shortcutDetails: js.UndefOr[ShortcutDetails] = js.undefined
       
       var spaces: js.UndefOr[js.Array[String]] = js.undefined
       
@@ -3229,37 +3296,37 @@ object Drive {
         
         inline def setOwnerNamesUndefined: Self = StObject.set(x, "ownerNames", js.undefined)
         
-        inline def setOwnerNamesVarargs(value: String*): Self = StObject.set(x, "ownerNames", js.Array(value :_*))
+        inline def setOwnerNamesVarargs(value: String*): Self = StObject.set(x, "ownerNames", js.Array(value*))
         
         inline def setOwners(value: js.Array[typings.googleAppsScript.GoogleAppsScript.Drive.Schema.User]): Self = StObject.set(x, "owners", value.asInstanceOf[js.Any])
         
         inline def setOwnersUndefined: Self = StObject.set(x, "owners", js.undefined)
         
-        inline def setOwnersVarargs(value: typings.googleAppsScript.GoogleAppsScript.Drive.Schema.User*): Self = StObject.set(x, "owners", js.Array(value :_*))
+        inline def setOwnersVarargs(value: typings.googleAppsScript.GoogleAppsScript.Drive.Schema.User*): Self = StObject.set(x, "owners", js.Array(value*))
         
         inline def setParents(value: js.Array[ParentReference]): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
         
         inline def setParentsUndefined: Self = StObject.set(x, "parents", js.undefined)
         
-        inline def setParentsVarargs(value: ParentReference*): Self = StObject.set(x, "parents", js.Array(value :_*))
+        inline def setParentsVarargs(value: ParentReference*): Self = StObject.set(x, "parents", js.Array(value*))
         
         inline def setPermissionIds(value: js.Array[String]): Self = StObject.set(x, "permissionIds", value.asInstanceOf[js.Any])
         
         inline def setPermissionIdsUndefined: Self = StObject.set(x, "permissionIds", js.undefined)
         
-        inline def setPermissionIdsVarargs(value: String*): Self = StObject.set(x, "permissionIds", js.Array(value :_*))
+        inline def setPermissionIdsVarargs(value: String*): Self = StObject.set(x, "permissionIds", js.Array(value*))
         
         inline def setPermissions(value: js.Array[typings.googleAppsScript.GoogleAppsScript.Drive.Schema.Permission]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
         
         inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
         
-        inline def setPermissionsVarargs(value: typings.googleAppsScript.GoogleAppsScript.Drive.Schema.Permission*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+        inline def setPermissionsVarargs(value: typings.googleAppsScript.GoogleAppsScript.Drive.Schema.Permission*): Self = StObject.set(x, "permissions", js.Array(value*))
         
         inline def setProperties(value: js.Array[Property]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
         
         inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
         
-        inline def setPropertiesVarargs(value: Property*): Self = StObject.set(x, "properties", js.Array(value :_*))
+        inline def setPropertiesVarargs(value: Property*): Self = StObject.set(x, "properties", js.Array(value*))
         
         inline def setQuotaBytesUsed(value: String): Self = StObject.set(x, "quotaBytesUsed", value.asInstanceOf[js.Any])
         
@@ -3285,11 +3352,15 @@ object Drive {
         
         inline def setSharingUserUndefined: Self = StObject.set(x, "sharingUser", js.undefined)
         
+        inline def setShortcutDetails(value: ShortcutDetails): Self = StObject.set(x, "shortcutDetails", value.asInstanceOf[js.Any])
+        
+        inline def setShortcutDetailsUndefined: Self = StObject.set(x, "shortcutDetails", js.undefined)
+        
         inline def setSpaces(value: js.Array[String]): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
         
         inline def setSpacesUndefined: Self = StObject.set(x, "spaces", js.undefined)
         
-        inline def setSpacesVarargs(value: String*): Self = StObject.set(x, "spaces", js.Array(value :_*))
+        inline def setSpacesVarargs(value: String*): Self = StObject.set(x, "spaces", js.Array(value*))
         
         inline def setTeamDriveId(value: String): Self = StObject.set(x, "teamDriveId", value.asInstanceOf[js.Any])
         
@@ -3807,7 +3878,7 @@ object Drive {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: typings.googleAppsScript.GoogleAppsScript.Drive.Schema.File*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: typings.googleAppsScript.GoogleAppsScript.Drive.Schema.File*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -3904,7 +3975,7 @@ object Drive {
         
         inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
         
-        inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+        inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -3943,7 +4014,7 @@ object Drive {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: ParentReference*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: ParentReference*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -4024,7 +4095,7 @@ object Drive {
       
       var photoLink: js.UndefOr[String] = js.undefined
       
-      var role: js.UndefOr[String] = js.undefined
+      var role: js.UndefOr[owner | organizer | fileOrganizer | writer | reader] = js.undefined
       
       var selfLink: js.UndefOr[String] = js.undefined
       
@@ -4049,7 +4120,7 @@ object Drive {
         
         inline def setAdditionalRolesUndefined: Self = StObject.set(x, "additionalRoles", js.undefined)
         
-        inline def setAdditionalRolesVarargs(value: String*): Self = StObject.set(x, "additionalRoles", js.Array(value :_*))
+        inline def setAdditionalRolesVarargs(value: String*): Self = StObject.set(x, "additionalRoles", js.Array(value*))
         
         inline def setAuthKey(value: String): Self = StObject.set(x, "authKey", value.asInstanceOf[js.Any])
         
@@ -4091,13 +4162,13 @@ object Drive {
         
         inline def setPermissionDetailsUndefined: Self = StObject.set(x, "permissionDetails", js.undefined)
         
-        inline def setPermissionDetailsVarargs(value: PermissionPermissionDetails*): Self = StObject.set(x, "permissionDetails", js.Array(value :_*))
+        inline def setPermissionDetailsVarargs(value: PermissionPermissionDetails*): Self = StObject.set(x, "permissionDetails", js.Array(value*))
         
         inline def setPhotoLink(value: String): Self = StObject.set(x, "photoLink", value.asInstanceOf[js.Any])
         
         inline def setPhotoLinkUndefined: Self = StObject.set(x, "photoLink", js.undefined)
         
-        inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+        inline def setRole(value: owner | organizer | fileOrganizer | writer | reader): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
         
         inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
         
@@ -4109,7 +4180,7 @@ object Drive {
         
         inline def setTeamDrivePermissionDetailsUndefined: Self = StObject.set(x, "teamDrivePermissionDetails", js.undefined)
         
-        inline def setTeamDrivePermissionDetailsVarargs(value: PermissionTeamDrivePermissionDetails*): Self = StObject.set(x, "teamDrivePermissionDetails", js.Array(value :_*))
+        inline def setTeamDrivePermissionDetailsVarargs(value: PermissionTeamDrivePermissionDetails*): Self = StObject.set(x, "teamDrivePermissionDetails", js.Array(value*))
         
         inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
@@ -4179,7 +4250,7 @@ object Drive {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: typings.googleAppsScript.GoogleAppsScript.Drive.Schema.Permission*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: typings.googleAppsScript.GoogleAppsScript.Drive.Schema.Permission*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -4205,7 +4276,7 @@ object Drive {
       
       var permissionType: js.UndefOr[String] = js.undefined
       
-      var role: js.UndefOr[String] = js.undefined
+      var role: js.UndefOr[organizer | fileOrganizer | writer | reader] = js.undefined
     }
     object PermissionPermissionDetails {
       
@@ -4220,7 +4291,7 @@ object Drive {
         
         inline def setAdditionalRolesUndefined: Self = StObject.set(x, "additionalRoles", js.undefined)
         
-        inline def setAdditionalRolesVarargs(value: String*): Self = StObject.set(x, "additionalRoles", js.Array(value :_*))
+        inline def setAdditionalRolesVarargs(value: String*): Self = StObject.set(x, "additionalRoles", js.Array(value*))
         
         inline def setInherited(value: Boolean): Self = StObject.set(x, "inherited", value.asInstanceOf[js.Any])
         
@@ -4234,7 +4305,7 @@ object Drive {
         
         inline def setPermissionTypeUndefined: Self = StObject.set(x, "permissionType", js.undefined)
         
-        inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+        inline def setRole(value: organizer | fileOrganizer | writer | reader): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
         
         inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       }
@@ -4265,7 +4336,7 @@ object Drive {
         
         inline def setAdditionalRolesUndefined: Self = StObject.set(x, "additionalRoles", js.undefined)
         
-        inline def setAdditionalRolesVarargs(value: String*): Self = StObject.set(x, "additionalRoles", js.Array(value :_*))
+        inline def setAdditionalRolesVarargs(value: String*): Self = StObject.set(x, "additionalRoles", js.Array(value*))
         
         inline def setInherited(value: Boolean): Self = StObject.set(x, "inherited", value.asInstanceOf[js.Any])
         
@@ -4361,7 +4432,7 @@ object Drive {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Property*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Property*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -4523,7 +4594,7 @@ object Drive {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: Revision*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Revision*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
@@ -4536,6 +4607,31 @@ object Drive {
         inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
         
         inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
+      }
+    }
+    
+    trait ShortcutDetails extends StObject {
+      
+      var targetId: js.UndefOr[String] = js.undefined
+      
+      var targetMimeType: js.UndefOr[String] = js.undefined
+    }
+    object ShortcutDetails {
+      
+      inline def apply(): ShortcutDetails = {
+        val __obj = js.Dynamic.literal()
+        __obj.asInstanceOf[ShortcutDetails]
+      }
+      
+      extension [Self <: ShortcutDetails](x: Self) {
+        
+        inline def setTargetId(value: String): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
+        
+        inline def setTargetIdUndefined: Self = StObject.set(x, "targetId", js.undefined)
+        
+        inline def setTargetMimeType(value: String): Self = StObject.set(x, "targetMimeType", value.asInstanceOf[js.Any])
+        
+        inline def setTargetMimeTypeUndefined: Self = StObject.set(x, "targetMimeType", js.undefined)
       }
     }
     
@@ -4822,7 +4918,7 @@ object Drive {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: TeamDrive*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: TeamDrive*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         

@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param objects ActiveSelection objects
   * @param [options] Options object
   */
-class ActiveSelection ()
+open class ActiveSelection ()
   extends typings.fabric.fabricImplMod.ActiveSelection {
   def this(objects: js.Array[typings.fabric.fabricImplMod.Object]) = this()
   def this(objects: js.Array[typings.fabric.fabricImplMod.Object], options: IObjectOptions) = this()
@@ -31,5 +31,5 @@ object ActiveSelection {
     * @param object Object to create a group from
     * @param [callback] Callback to invoke when an ActiveSelection instance is created
     */
-  inline def fromObject(`object`: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def fromObject(`object`: Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

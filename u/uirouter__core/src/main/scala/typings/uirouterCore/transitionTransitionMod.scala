@@ -28,7 +28,7 @@ object transitionTransitionMod {
   
   @JSImport("@uirouter/core/lib/transition/transition", "Transition")
   @js.native
-  class Transition protected ()
+  open class Transition protected ()
     extends StObject
        with IHookRegistry {
     /**
@@ -72,32 +72,32 @@ object transitionTransitionMod {
     var _aborted: Boolean = js.native
     
     /** @internal If a transition doesn't exit/enter any states, returns any [[Param]] whose value changed */
-    /* private */ var _changedParams: js.Any = js.native
+    /* private */ var _changedParams: Any = js.native
     
     /** @internal */
-    /* private */ var _deferred: js.Any = js.native
+    /* private */ var _deferred: Any = js.native
     
     /** @internal */
-    /* private */ var _error: js.Any = js.native
+    /* private */ var _error: Any = js.native
     
     /** @internal */
-    /* private */ var _hookBuilder: js.Any = js.native
+    /* private */ var _hookBuilder: Any = js.native
     
     /** @internal */
     def _ignoredReason(): js.UndefOr[SameAsCurrent | SameAsPending] = js.native
     
     /** @internal */
-    /* private */ var _options: js.Any = js.native
+    /* private */ var _options: Any = js.native
     
     /** @internal Holds the hook registration functions such as those passed to Transition.onStart() */
     @JSName("_registeredHooks")
     var _registeredHooks_Transition: RegisteredHooks = js.native
     
     /** @internal */
-    /* private */ var _targetState: js.Any = js.native
+    /* private */ var _targetState: Any = js.native
     
     /** @internal */
-    /* private */ var _treeChanges: js.Any = js.native
+    /* private */ var _treeChanges: Any = js.native
     
     /**
       * Aborts this transition
@@ -141,13 +141,13 @@ object transitionTransitionMod {
     def addResolvable(resolvable: ResolvableLiteral): Unit = js.native
     def addResolvable(resolvable: ResolvableLiteral, state: StateOrName): Unit = js.native
     
-    /* private */ var applyViewConfigs: js.Any = js.native
+    /* private */ var applyViewConfigs: Any = js.native
     
     /** @internal
       * Creates the transition-level hook registration functions
       * (which can then be used to register hooks)
       */
-    /* private */ var createTransitionHookRegFns: js.Any = js.native
+    /* private */ var createTransitionHookRegFns: Any = js.native
     
     /**
       * Returns true if the transition is dynamic.
@@ -223,8 +223,8 @@ object transitionTransitionMod {
       *
       * @returns an array of resolve tokens (keys)
       */
-    def getResolveTokens(): js.Array[js.Any] = js.native
-    def getResolveTokens(pathname: String): js.Array[js.Any] = js.native
+    def getResolveTokens(): js.Array[Any] = js.native
+    def getResolveTokens(pathname: String): js.Array[Any] = js.native
     
     /**
       * Returns true if the transition is ignored.
@@ -365,8 +365,8 @@ object transitionTransitionMod {
       *
       * @returns transition parameter values for the desired path.
       */
-    def params(): StringDictionary[js.Any] = js.native
-    def params(pathname: String): StringDictionary[js.Any] = js.native
+    def params(): StringDictionary[Any] = js.native
+    def params(pathname: String): StringDictionary[Any] = js.native
     
     /**
       * Gets the new values of any parameters that changed during this transition.
@@ -427,7 +427,7 @@ object transitionTransitionMod {
       *
       * @returns an immutable object with changed parameter keys/values.
       */
-    def paramsChanged(): StringDictionary[js.Any] = js.native
+    def paramsChanged(): StringDictionary[Any] = js.native
     @JSName("paramsChanged")
     def paramsChanged_T_T[T](): T = js.native
     
@@ -442,7 +442,7 @@ object transitionTransitionMod {
       * When the transition is successful, the promise is resolved
       * When the transition is unsuccessful, the promise is rejected with the [[Rejection]] or javascript error
       */
-    var promise: js.Promise[js.Any] = js.native
+    var promise: js.Promise[Any] = js.native
     
     /**
       * Creates a new transition that is a redirection of the current one.
@@ -499,7 +499,7 @@ object transitionTransitionMod {
       *
       * @returns a promise for a successful transition.
       */
-    def run(): js.Promise[js.Any] = js.native
+    def run(): js.Promise[Any] = js.native
     
     /**
       * A boolean which indicates if the transition was successful

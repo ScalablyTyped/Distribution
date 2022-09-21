@@ -29,6 +29,6 @@ object ListTagsForDeliveryStreamOutput {
     
     inline def setTags(value: ListTagsForDeliveryStreamOutputTagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

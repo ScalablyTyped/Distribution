@@ -46,6 +46,6 @@ object ScreenshotCluster {
     
     inline def setScreensUndefined: Self = StObject.set(x, "screens", js.undefined)
     
-    inline def setScreensVarargs(value: Screen*): Self = StObject.set(x, "screens", js.Array(value :_*))
+    inline def setScreensVarargs(value: Screen*): Self = StObject.set(x, "screens", js.Array(value*))
   }
 }

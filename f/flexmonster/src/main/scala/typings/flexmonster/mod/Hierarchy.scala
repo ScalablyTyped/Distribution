@@ -45,7 +45,7 @@ object Hierarchy {
     
     inline def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
     
-    inline def setLevelsVarargs(value: Level*): Self = StObject.set(x, "levels", js.Array(value :_*))
+    inline def setLevelsVarargs(value: Level*): Self = StObject.set(x, "levels", js.Array(value*))
     
     inline def setSortName(value: String): Self = StObject.set(x, "sortName", value.asInstanceOf[js.Any])
     
@@ -55,7 +55,7 @@ object Hierarchy {
     
     inline def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
     
-    inline def setSortOrderVarargs(value: String*): Self = StObject.set(x, "sortOrder", js.Array(value :_*))
+    inline def setSortOrderVarargs(value: String*): Self = StObject.set(x, "sortOrder", js.Array(value*))
     
     inline def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
     

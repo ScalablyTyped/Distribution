@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The permission setting of an object.
-  */
 trait SchemaPermission extends StObject {
   
   /**
-    * If true, the item can be discovered (e.g. in the user&#39;s &quot;Shared
-    * with me&quot; collection) without needing a link to the item.
+    * If true, the item can be discovered (e.g. in the user's "Shared with me" collection) without needing a link to the item.
     */
-  var allowDiscovery: js.UndefOr[Boolean] = js.undefined
+  var allowDiscovery: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * If set, this permission applies to anyone, even logged out users.
@@ -31,12 +27,9 @@ trait SchemaPermission extends StObject {
   var group: js.UndefOr[SchemaGroup] = js.undefined
   
   /**
-    * Indicates the &lt;a
-    * href=&quot;/drive/web/manage-sharing#roles&quot;&gt;Google Drive
-    * permissions role&lt;/a&gt;. The role determines a user&#39;s ability to
-    * read, write, and comment on items.
+    * Indicates the [Google Drive permissions role](https://developers.google.com/drive/web/manage-sharing#roles). The role determines a user's ability to read, write, and comment on items.
     */
-  var role: js.UndefOr[String] = js.undefined
+  var role: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The user to whom this permission applies.
@@ -54,6 +47,8 @@ object SchemaPermission {
     
     inline def setAllowDiscovery(value: Boolean): Self = StObject.set(x, "allowDiscovery", value.asInstanceOf[js.Any])
     
+    inline def setAllowDiscoveryNull: Self = StObject.set(x, "allowDiscovery", null)
+    
     inline def setAllowDiscoveryUndefined: Self = StObject.set(x, "allowDiscovery", js.undefined)
     
     inline def setAnyone(value: SchemaAnyone): Self = StObject.set(x, "anyone", value.asInstanceOf[js.Any])
@@ -69,6 +64,8 @@ object SchemaPermission {
     inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
     inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    
+    inline def setRoleNull: Self = StObject.set(x, "role", null)
     
     inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     

@@ -23,7 +23,7 @@ object QDataPages {
     
     inline def setQAxisData(value: js.Array[INxAxisData]): Self = StObject.set(x, "qAxisData", value.asInstanceOf[js.Any])
     
-    inline def setQAxisDataVarargs(value: INxAxisData*): Self = StObject.set(x, "qAxisData", js.Array(value :_*))
+    inline def setQAxisDataVarargs(value: INxAxisData*): Self = StObject.set(x, "qAxisData", js.Array(value*))
     
     inline def setQDataPages(value: INxDataPage): Self = StObject.set(x, "qDataPages", value.asInstanceOf[js.Any])
   }

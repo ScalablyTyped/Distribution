@@ -1,14 +1,13 @@
 package typings.natsHemera.mod
 
 import typings.natsHemera.anon.ExpectedMessages
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ClientRequest extends StObject {
   
-  var error: Error
+  var error: js.Error
   
   var pattern: ClientPattern
   
@@ -18,14 +17,19 @@ trait ClientRequest extends StObject {
 }
 object ClientRequest {
   
-  inline def apply(error: Error, pattern: ClientPattern, payload: HemeraMessagePayload, transport: ExpectedMessages): ClientRequest = {
+  inline def apply(
+    error: js.Error,
+    pattern: ClientPattern,
+    payload: HemeraMessagePayload,
+    transport: ExpectedMessages
+  ): ClientRequest = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], transport = transport.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientRequest]
   }
   
   extension [Self <: ClientRequest](x: Self) {
     
-    inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     inline def setPattern(value: ClientPattern): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     

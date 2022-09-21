@@ -1,7 +1,7 @@
 
 # Scala.js typings for croppie
 
-Typings are for version 2.5
+Typings are for version 2.6
 
 ## Library description:
 A simple javascript image cropper
@@ -10,10 +10,10 @@ A simple javascript image cropper
 | ------------------ | :-------------: |
 | Full name          | croppie |
 | Keywords           | crop, cropper, image, cropping |
-| # releases         | 3 |
-| # dependents       | 38 |
-| # downloads        | 1595983 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 304076.0 |
+| # stars            | 2401.0 |
 
 ## Links
 - [Homepage](http://foliotek.github.io/Croppie)

@@ -8,7 +8,7 @@ object la {
   
   @JSGlobal("ranjs.la.Matrix")
   @js.native
-  class Matrix ()
+  open class Matrix ()
     extends typings.ranjs.mod.la.Matrix {
     def this(arg: js.Array[js.Array[Double]]) = this()
     def this(arg: Double) = this()
@@ -17,7 +17,7 @@ object la {
   
   @JSGlobal("ranjs.la.Vector")
   @js.native
-  class Vector ()
+  open class Vector ()
     extends typings.ranjs.mod.la.Vector {
     def this(arg: js.Array[Double]) = this()
     def this(arg: Double) = this()

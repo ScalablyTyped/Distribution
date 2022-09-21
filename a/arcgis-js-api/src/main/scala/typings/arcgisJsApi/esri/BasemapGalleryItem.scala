@@ -28,6 +28,8 @@ trait BasemapGalleryItem
   /**
     * The item's state.
     *
+    * @default loading
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery-support-BasemapGalleryItem.html#state)
     */
   val state: loading | ready | typings.arcgisJsApi.arcgisJsApiStrings.error = js.native

@@ -7,7 +7,6 @@ import typings.googleProtobuf.mod.ExtensionFieldBinaryInfo
 import typings.googleProtobuf.mod.ExtensionFieldInfo
 import typings.googleProtobuf.mod.Message
 import typings.libraCore.validatorPublicKeysPbMod.ValidatorPublicKeys
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ object validatorSetPbMod {
   
   @JSImport("libra-core/lib/@/generated/validator_set_pb", "ValidatorSet")
   @js.native
-  class ValidatorSet () extends Message {
+  open class ValidatorSet () extends Message {
     
     def addValidatorPublicKeys(): ValidatorPublicKeys = js.native
     def addValidatorPublicKeys(value: Unit, index: Double): ValidatorPublicKeys = js.native
@@ -36,7 +35,7 @@ object validatorSetPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def deserializeBinary(bytes: Uint8Array): ValidatorSet = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[ValidatorSet]
+    inline def deserializeBinary(bytes: js.typedarray.Uint8Array): ValidatorSet = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[ValidatorSet]
     
     inline def deserializeBinaryFromReader(message: ValidatorSet, reader: BinaryReader): ValidatorSet = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[ValidatorSet]
     
@@ -72,7 +71,7 @@ object validatorSetPbMod {
         
         inline def setValidatorPublicKeysList(value: js.Array[typings.libraCore.validatorPublicKeysPbMod.ValidatorPublicKeys.AsObject]): Self = StObject.set(x, "validatorPublicKeysList", value.asInstanceOf[js.Any])
         
-        inline def setValidatorPublicKeysListVarargs(value: typings.libraCore.validatorPublicKeysPbMod.ValidatorPublicKeys.AsObject*): Self = StObject.set(x, "validatorPublicKeysList", js.Array(value :_*))
+        inline def setValidatorPublicKeysListVarargs(value: typings.libraCore.validatorPublicKeysPbMod.ValidatorPublicKeys.AsObject*): Self = StObject.set(x, "validatorPublicKeysList", js.Array(value*))
       }
     }
   }

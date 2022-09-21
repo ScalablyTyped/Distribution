@@ -1,6 +1,6 @@
 package typings.nodegit
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.nodegit.nodegitNumbers.`2`
 import typings.nodegit.nodegitNumbers.`4`
 import typings.nodegit.nodegitNumbers.`6`
@@ -16,7 +16,7 @@ object odbMod {
   
   @JSImport("nodegit/odb", "Odb")
   @js.native
-  class Odb () extends StObject {
+  open class Odb () extends StObject {
     
     def addDiskAlternate(path: String): Double = js.native
     

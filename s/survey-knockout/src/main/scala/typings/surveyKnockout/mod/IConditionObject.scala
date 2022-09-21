@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IConditionObject extends StObject {
   
+  var context: js.UndefOr[Question] = js.undefined
+  
   var name: String
   
   var question: Question
@@ -20,6 +22,10 @@ object IConditionObject {
   }
   
   extension [Self <: IConditionObject](x: Self) {
+    
+    inline def setContext(value: Question): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,7 @@ trait AccountSettings extends StObject {
   
   var messaging_enabled: Boolean
   
-  var pro_expiration: js.Any
+  var pro_expiration: Any
   
   var public_images: Boolean
 }
@@ -35,7 +35,7 @@ object AccountSettings {
     email: String,
     high_quality: Boolean,
     messaging_enabled: Boolean,
-    pro_expiration: js.Any,
+    pro_expiration: Any,
     public_images: Boolean
   ): AccountSettings = {
     val __obj = js.Dynamic.literal(accepted_gallery_terms = accepted_gallery_terms.asInstanceOf[js.Any], active_emails = active_emails.asInstanceOf[js.Any], album_privacy = album_privacy.asInstanceOf[js.Any], blocked_users = blocked_users.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], high_quality = high_quality.asInstanceOf[js.Any], messaging_enabled = messaging_enabled.asInstanceOf[js.Any], pro_expiration = pro_expiration.asInstanceOf[js.Any], public_images = public_images.asInstanceOf[js.Any])
@@ -48,13 +48,13 @@ object AccountSettings {
     
     inline def setActive_emails(value: js.Array[String]): Self = StObject.set(x, "active_emails", value.asInstanceOf[js.Any])
     
-    inline def setActive_emailsVarargs(value: String*): Self = StObject.set(x, "active_emails", js.Array(value :_*))
+    inline def setActive_emailsVarargs(value: String*): Self = StObject.set(x, "active_emails", js.Array(value*))
     
     inline def setAlbum_privacy(value: String): Self = StObject.set(x, "album_privacy", value.asInstanceOf[js.Any])
     
     inline def setBlocked_users(value: js.Array[BlockedUser]): Self = StObject.set(x, "blocked_users", value.asInstanceOf[js.Any])
     
-    inline def setBlocked_usersVarargs(value: BlockedUser*): Self = StObject.set(x, "blocked_users", js.Array(value :_*))
+    inline def setBlocked_usersVarargs(value: BlockedUser*): Self = StObject.set(x, "blocked_users", js.Array(value*))
     
     inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
@@ -62,7 +62,7 @@ object AccountSettings {
     
     inline def setMessaging_enabled(value: Boolean): Self = StObject.set(x, "messaging_enabled", value.asInstanceOf[js.Any])
     
-    inline def setPro_expiration(value: js.Any): Self = StObject.set(x, "pro_expiration", value.asInstanceOf[js.Any])
+    inline def setPro_expiration(value: Any): Self = StObject.set(x, "pro_expiration", value.asInstanceOf[js.Any])
     
     inline def setPublic_images(value: Boolean): Self = StObject.set(x, "public_images", value.asInstanceOf[js.Any])
   }

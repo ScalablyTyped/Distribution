@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object asapMod {
   
-  @JSImport("rxjs/internal/scheduler/asap", "asap")
+  @JSImport("rxjs/dist/types/internal/scheduler/asap", "asap")
   @js.native
   val asap: AsapScheduler = js.native
   
-  @JSImport("rxjs/internal/scheduler/asap", "asapScheduler")
+  @JSImport("rxjs/dist/types/internal/scheduler/asap", "asapScheduler")
   @js.native
   val asapScheduler: AsapScheduler = js.native
 }

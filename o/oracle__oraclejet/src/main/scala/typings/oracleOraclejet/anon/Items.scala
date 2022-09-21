@@ -36,11 +36,11 @@ object Items {
     
     inline def setItems(value: js.Array[BorderColor]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: BorderColor*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: BorderColor*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setSections(value: js.Array[js.Object]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
     
-    inline def setSectionsVarargs(value: js.Object*): Self = StObject.set(x, "sections", js.Array(value :_*))
+    inline def setSectionsVarargs(value: js.Object*): Self = StObject.set(x, "sections", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

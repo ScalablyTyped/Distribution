@@ -12,14 +12,14 @@ trait ClusterCredentials extends StObject {
   var DbPassword: js.UndefOr[SensitiveString] = js.undefined
   
   /**
-    * A database user name that is authorized to log on to the database DbName using the password DbPassword. If the specified DbUser exists in the database, the new user name has the same database privileges as the the user named in DbUser. By default, the user is added to PUBLIC. If the DbGroups parameter is specifed, DbUser is added to the listed groups for any sessions created using these credentials.
+    * A database user name that is authorized to log on to the database DbName using the password DbPassword. If the specified DbUser exists in the database, the new user name has the same database permissions as the the user named in DbUser. By default, the user is added to PUBLIC. If the DbGroups parameter is specifed, DbUser is added to the listed groups for any sessions created using these credentials.
     */
   var DbUser: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time the password in DbPassword expires.
     */
-  var Expiration: js.UndefOr[TStamp] = js.undefined
+  var Expiration: js.UndefOr[js.Date] = js.undefined
 }
 object ClusterCredentials {
   
@@ -38,7 +38,7 @@ object ClusterCredentials {
     
     inline def setDbUserUndefined: Self = StObject.set(x, "DbUser", js.undefined)
     
-    inline def setExpiration(value: TStamp): Self = StObject.set(x, "Expiration", value.asInstanceOf[js.Any])
+    inline def setExpiration(value: js.Date): Self = StObject.set(x, "Expiration", value.asInstanceOf[js.Any])
     
     inline def setExpirationUndefined: Self = StObject.set(x, "Expiration", js.undefined)
   }

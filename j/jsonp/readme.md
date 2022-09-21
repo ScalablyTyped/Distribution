@@ -11,9 +11,9 @@ A sane JSONP implementation.
 | Full name          | jsonp |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 237 |
-| # downloads        | 9575934 |
-| # stars            | 17 |
+| # dependents       | 0.0 |
+| # downloads        | 2093889.6666666667 |
+| # stars            | 1909.0 |
 
 ## Links
 - [Homepage](https://github.com/LearnBoost/jsonp#readme)

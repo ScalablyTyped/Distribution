@@ -10,15 +10,12 @@ Seamless integration between Rollup and TypeScript.
 | ------------------ | :-------------: |
 | Full name          | rollup-typescript |
 | Keywords           | rollup-plugin, typescript, es2015 |
-| # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 2212 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 814.6666666666666 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/glixlur/rollup-typescript)
-- [Bugs](https://github.com/glixlur/rollup-typescript/issues)
-- [Repository](https://github.com/glixlur/rollup-typescript)
 - [Npm](https://www.npmjs.com/package/rollup-typescript)
     
 

@@ -66,9 +66,7 @@ trait IXmlWriter
     * @param data Array
     * @returns Object
     */
-  var writeRecords: js.UndefOr[
-    js.Function2[/* request */ js.UndefOr[js.Any], /* data */ js.UndefOr[Array], js.Any]
-  ] = js.undefined
+  var writeRecords: js.UndefOr[js.Function2[/* request */ js.UndefOr[Any], /* data */ js.UndefOr[Array], Any]] = js.undefined
 }
 object IXmlWriter {
   
@@ -127,7 +125,7 @@ object IXmlWriter {
     
     inline def setSetRecordUndefined: Self = StObject.set(x, "setRecord", js.undefined)
     
-    inline def setWriteRecords(value: (/* request */ js.UndefOr[js.Any], /* data */ js.UndefOr[Array]) => js.Any): Self = StObject.set(x, "writeRecords", js.Any.fromFunction2(value))
+    inline def setWriteRecords(value: (/* request */ js.UndefOr[Any], /* data */ js.UndefOr[Array]) => Any): Self = StObject.set(x, "writeRecords", js.Any.fromFunction2(value))
     
     inline def setWriteRecordsUndefined: Self = StObject.set(x, "writeRecords", js.undefined)
   }

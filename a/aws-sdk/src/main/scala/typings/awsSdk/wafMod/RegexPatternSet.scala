@@ -38,6 +38,6 @@ object RegexPatternSet {
     
     inline def setRegexPatternStrings(value: RegexPatternStrings): Self = StObject.set(x, "RegexPatternStrings", value.asInstanceOf[js.Any])
     
-    inline def setRegexPatternStringsVarargs(value: RegexPatternString*): Self = StObject.set(x, "RegexPatternStrings", js.Array(value :_*))
+    inline def setRegexPatternStringsVarargs(value: RegexPatternString*): Self = StObject.set(x, "RegexPatternStrings", js.Array(value*))
   }
 }

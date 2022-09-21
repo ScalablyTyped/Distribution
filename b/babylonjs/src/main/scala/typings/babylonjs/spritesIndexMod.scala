@@ -18,7 +18,7 @@ object spritesIndexMod {
   
   @JSImport("babylonjs/Sprites/index", "Sprite")
   @js.native
-  class Sprite protected ()
+  open class Sprite protected ()
     extends typings.babylonjs.spriteMod.Sprite {
     /**
       * Creates a new Sprite
@@ -41,12 +41,12 @@ object spritesIndexMod {
       * @param manager defines the hosting manager
       * @returns the new sprite
       */
-    inline def Parse(parsedSprite: js.Any, manager: typings.babylonjs.spriteManagerMod.SpriteManager): typings.babylonjs.spriteMod.Sprite = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedSprite.asInstanceOf[js.Any], manager.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.spriteMod.Sprite]
+    inline def Parse(parsedSprite: Any, manager: typings.babylonjs.spriteManagerMod.SpriteManager): typings.babylonjs.spriteMod.Sprite = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedSprite.asInstanceOf[js.Any], manager.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.spriteMod.Sprite]
   }
   
   @JSImport("babylonjs/Sprites/index", "SpriteManager")
   @js.native
-  class SpriteManager protected ()
+  open class SpriteManager protected ()
     extends typings.babylonjs.spriteManagerMod.SpriteManager {
     /**
       * Creates a new sprite manager
@@ -56,7 +56,7 @@ object spritesIndexMod {
       * @param cellSize defines the size of a sprite cell
       * @param scene defines the hosting scene
       * @param epsilon defines the epsilon value to align texture (0.01 by default)
-      * @param samplingMode defines the smapling mode to use with spritesheet
+      * @param samplingMode defines the sampling mode to use with spritesheet
       * @param fromPacked set to false; do not alter
       * @param spriteJSON null otherwise a JSON object defining sprite sheet data; do not alter
       */
@@ -65,7 +65,7 @@ object spritesIndexMod {
     name: String,
       imgUrl: String,
       capacity: Double,
-      cellSize: js.Any,
+      cellSize: Any,
       scene: Scene
     ) = this()
     def this(
@@ -73,7 +73,7 @@ object spritesIndexMod {
     name: String,
       imgUrl: String,
       capacity: Double,
-      cellSize: js.Any,
+      cellSize: Any,
       scene: Scene,
       epsilon: Double
     ) = this()
@@ -82,7 +82,7 @@ object spritesIndexMod {
     name: String,
       imgUrl: String,
       capacity: Double,
-      cellSize: js.Any,
+      cellSize: Any,
       scene: Scene,
       epsilon: Double,
       samplingMode: Double
@@ -92,7 +92,7 @@ object spritesIndexMod {
     name: String,
       imgUrl: String,
       capacity: Double,
-      cellSize: js.Any,
+      cellSize: Any,
       scene: Scene,
       epsilon: Unit,
       samplingMode: Double
@@ -102,7 +102,7 @@ object spritesIndexMod {
     name: String,
       imgUrl: String,
       capacity: Double,
-      cellSize: js.Any,
+      cellSize: Any,
       scene: Scene,
       epsilon: Double,
       samplingMode: Double,
@@ -113,7 +113,7 @@ object spritesIndexMod {
     name: String,
       imgUrl: String,
       capacity: Double,
-      cellSize: js.Any,
+      cellSize: Any,
       scene: Scene,
       epsilon: Double,
       samplingMode: Unit,
@@ -124,7 +124,7 @@ object spritesIndexMod {
     name: String,
       imgUrl: String,
       capacity: Double,
-      cellSize: js.Any,
+      cellSize: Any,
       scene: Scene,
       epsilon: Unit,
       samplingMode: Double,
@@ -135,7 +135,7 @@ object spritesIndexMod {
     name: String,
       imgUrl: String,
       capacity: Double,
-      cellSize: js.Any,
+      cellSize: Any,
       scene: Scene,
       epsilon: Unit,
       samplingMode: Unit,
@@ -146,96 +146,96 @@ object spritesIndexMod {
     name: String,
       imgUrl: String,
       capacity: Double,
-      cellSize: js.Any,
+      cellSize: Any,
       scene: Scene,
       epsilon: Double,
       samplingMode: Double,
       fromPacked: Boolean,
-      spriteJSON: js.Any
+      spriteJSON: Any
     ) = this()
     def this(
       /** defines the manager's name */
     name: String,
       imgUrl: String,
       capacity: Double,
-      cellSize: js.Any,
+      cellSize: Any,
       scene: Scene,
       epsilon: Double,
       samplingMode: Double,
       fromPacked: Unit,
-      spriteJSON: js.Any
+      spriteJSON: Any
     ) = this()
     def this(
       /** defines the manager's name */
     name: String,
       imgUrl: String,
       capacity: Double,
-      cellSize: js.Any,
+      cellSize: Any,
       scene: Scene,
       epsilon: Double,
       samplingMode: Unit,
       fromPacked: Boolean,
-      spriteJSON: js.Any
+      spriteJSON: Any
     ) = this()
     def this(
       /** defines the manager's name */
     name: String,
       imgUrl: String,
       capacity: Double,
-      cellSize: js.Any,
+      cellSize: Any,
       scene: Scene,
       epsilon: Double,
       samplingMode: Unit,
       fromPacked: Unit,
-      spriteJSON: js.Any
+      spriteJSON: Any
     ) = this()
     def this(
       /** defines the manager's name */
     name: String,
       imgUrl: String,
       capacity: Double,
-      cellSize: js.Any,
+      cellSize: Any,
       scene: Scene,
       epsilon: Unit,
       samplingMode: Double,
       fromPacked: Boolean,
-      spriteJSON: js.Any
+      spriteJSON: Any
     ) = this()
     def this(
       /** defines the manager's name */
     name: String,
       imgUrl: String,
       capacity: Double,
-      cellSize: js.Any,
+      cellSize: Any,
       scene: Scene,
       epsilon: Unit,
       samplingMode: Double,
       fromPacked: Unit,
-      spriteJSON: js.Any
+      spriteJSON: Any
     ) = this()
     def this(
       /** defines the manager's name */
     name: String,
       imgUrl: String,
       capacity: Double,
-      cellSize: js.Any,
+      cellSize: Any,
       scene: Scene,
       epsilon: Unit,
       samplingMode: Unit,
       fromPacked: Boolean,
-      spriteJSON: js.Any
+      spriteJSON: Any
     ) = this()
     def this(
       /** defines the manager's name */
     name: String,
       imgUrl: String,
       capacity: Double,
-      cellSize: js.Any,
+      cellSize: Any,
       scene: Scene,
       epsilon: Unit,
       samplingMode: Unit,
       fromPacked: Unit,
-      spriteJSON: js.Any
+      spriteJSON: Any
     ) = this()
   }
   /* static members */
@@ -247,22 +247,27 @@ object spritesIndexMod {
     
     /**
       * Creates a sprite manager from a snippet saved by the sprite editor
+      * @deprecated Please use ParseFromSnippetAsync instead
       * @param snippetId defines the snippet to load (can be set to _BLANK to create a default one)
       * @param scene defines the hosting scene
       * @param rootUrl defines the root URL to use to load textures and relative dependencies
       * @returns a promise that will resolve to the new sprite manager
       */
-    inline def CreateFromSnippetAsync(snippetId: String, scene: Scene): js.Promise[typings.babylonjs.spriteManagerMod.SpriteManager] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.spriteManagerMod.SpriteManager]]
-    inline def CreateFromSnippetAsync(snippetId: String, scene: Scene, rootUrl: String): js.Promise[typings.babylonjs.spriteManagerMod.SpriteManager] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.spriteManagerMod.SpriteManager]]
+    @JSImport("babylonjs/Sprites/index", "SpriteManager.CreateFromSnippetAsync")
+    @js.native
+    def CreateFromSnippetAsync: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SpriteManager.ParseFromSnippetAsync */ Any = js.native
+    inline def CreateFromSnippetAsync_=(
+      x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SpriteManager.ParseFromSnippetAsync */ Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreateFromSnippetAsync")(x.asInstanceOf[js.Any])
     
     /**
       * Parses a JSON object to create a new sprite manager.
       * @param parsedManager The JSON object to parse
-      * @param scene The scene to create the sprite managerin
+      * @param scene The scene to create the sprite manager
       * @param rootUrl The root url to use to load external dependencies like texture
       * @returns the new sprite manager
       */
-    inline def Parse(parsedManager: js.Any, scene: Scene, rootUrl: String): typings.babylonjs.spriteManagerMod.SpriteManager = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedManager.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.spriteManagerMod.SpriteManager]
+    inline def Parse(parsedManager: Any, scene: Scene, rootUrl: String): typings.babylonjs.spriteManagerMod.SpriteManager = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedManager.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.spriteManagerMod.SpriteManager]
     
     /**
       * Creates a sprite manager from a snippet saved in a remote file
@@ -275,6 +280,16 @@ object spritesIndexMod {
     inline def ParseFromFileAsync(name: Nullable[String], url: String, scene: Scene): js.Promise[typings.babylonjs.spriteManagerMod.SpriteManager] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.spriteManagerMod.SpriteManager]]
     inline def ParseFromFileAsync(name: Nullable[String], url: String, scene: Scene, rootUrl: String): js.Promise[typings.babylonjs.spriteManagerMod.SpriteManager] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromFileAsync")(name.asInstanceOf[js.Any], url.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.spriteManagerMod.SpriteManager]]
     
+    /**
+      * Creates a sprite manager from a snippet saved by the sprite editor
+      * @param snippetId defines the snippet to load (can be set to _BLANK to create a default one)
+      * @param scene defines the hosting scene
+      * @param rootUrl defines the root URL to use to load textures and relative dependencies
+      * @returns a promise that will resolve to the new sprite manager
+      */
+    inline def ParseFromSnippetAsync(snippetId: String, scene: Scene): js.Promise[typings.babylonjs.spriteManagerMod.SpriteManager] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.spriteManagerMod.SpriteManager]]
+    inline def ParseFromSnippetAsync(snippetId: String, scene: Scene, rootUrl: String): js.Promise[typings.babylonjs.spriteManagerMod.SpriteManager] = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromSnippetAsync")(snippetId.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.spriteManagerMod.SpriteManager]]
+    
     /** Define the Url to load snippets */
     @JSImport("babylonjs/Sprites/index", "SpriteManager.SnippetUrl")
     @js.native
@@ -284,7 +299,7 @@ object spritesIndexMod {
   
   @JSImport("babylonjs/Sprites/index", "SpriteMap")
   @js.native
-  class SpriteMap protected ()
+  open class SpriteMap protected ()
     extends typings.babylonjs.spriteMapMod.SpriteMap {
     /**
       * Creates a new SpriteMap
@@ -305,7 +320,7 @@ object spritesIndexMod {
   
   @JSImport("babylonjs/Sprites/index", "SpritePackedManager")
   @js.native
-  class SpritePackedManager protected ()
+  open class SpritePackedManager protected ()
     extends typings.babylonjs.spritePackedManagerMod.SpritePackedManager {
     /**
       * Creates a new sprite manager from a packed sprite sheet
@@ -315,7 +330,7 @@ object spritesIndexMod {
       * @param scene defines the hosting scene
       * @param spriteJSON null otherwise a JSON object defining sprite sheet data
       * @param epsilon defines the epsilon value to align texture (0.01 by default)
-      * @param samplingMode defines the smapling mode to use with spritesheet
+      * @param samplingMode defines the sampling mode to use with spritesheet
       * @param fromPacked set to true; do not alter
       */
     def this(
@@ -424,7 +439,7 @@ object spritesIndexMod {
   
   @JSImport("babylonjs/Sprites/index", "SpriteSceneComponent")
   @js.native
-  class SpriteSceneComponent protected ()
+  open class SpriteSceneComponent protected ()
     extends typings.babylonjs.spriteSceneComponentMod.SpriteSceneComponent {
     /**
       * Creates a new instance of the component for the given scene

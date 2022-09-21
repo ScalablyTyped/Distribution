@@ -14,9 +14,13 @@ trait IDropdownMenuOptions extends StObject {
   
   var closeOnClick: js.UndefOr[Boolean] = js.undefined
   
+  var closeOnClickInside: js.UndefOr[Boolean] = js.undefined
+  
   var closingTime: js.UndefOr[Double] = js.undefined
   
   var disableHover: js.UndefOr[Boolean] = js.undefined
+  
+  var disableHoverOnTouch: js.UndefOr[Boolean] = js.undefined
   
   var forceFollow: js.UndefOr[Boolean] = js.undefined
   
@@ -49,6 +53,10 @@ object IDropdownMenuOptions {
     
     inline def setCloseOnClick(value: Boolean): Self = StObject.set(x, "closeOnClick", value.asInstanceOf[js.Any])
     
+    inline def setCloseOnClickInside(value: Boolean): Self = StObject.set(x, "closeOnClickInside", value.asInstanceOf[js.Any])
+    
+    inline def setCloseOnClickInsideUndefined: Self = StObject.set(x, "closeOnClickInside", js.undefined)
+    
     inline def setCloseOnClickUndefined: Self = StObject.set(x, "closeOnClick", js.undefined)
     
     inline def setClosingTime(value: Double): Self = StObject.set(x, "closingTime", value.asInstanceOf[js.Any])
@@ -56,6 +64,10 @@ object IDropdownMenuOptions {
     inline def setClosingTimeUndefined: Self = StObject.set(x, "closingTime", js.undefined)
     
     inline def setDisableHover(value: Boolean): Self = StObject.set(x, "disableHover", value.asInstanceOf[js.Any])
+    
+    inline def setDisableHoverOnTouch(value: Boolean): Self = StObject.set(x, "disableHoverOnTouch", value.asInstanceOf[js.Any])
+    
+    inline def setDisableHoverOnTouchUndefined: Self = StObject.set(x, "disableHoverOnTouch", js.undefined)
     
     inline def setDisableHoverUndefined: Self = StObject.set(x, "disableHover", js.undefined)
     

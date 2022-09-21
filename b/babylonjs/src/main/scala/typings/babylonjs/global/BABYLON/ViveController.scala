@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.ViveController")
 @js.native
-class ViveController protected ()
+open class ViveController protected ()
   extends StObject
      with typings.babylonjs.BABYLON.ViveController {
   /**
     * Creates a new ViveController from a gamepad
     * @param vrGamepad the gamepad that the controller should be created from
     */
-  def this(vrGamepad: js.Any) = this()
+  def this(vrGamepad: Any) = this()
   
   /**
     * The rotation quaternion of the device in babylon space.

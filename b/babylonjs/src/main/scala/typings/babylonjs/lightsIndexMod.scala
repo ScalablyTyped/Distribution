@@ -12,7 +12,7 @@ object lightsIndexMod {
   
   @JSImport("babylonjs/Lights/index", "CascadedShadowGenerator")
   @js.native
-  class CascadedShadowGenerator protected ()
+  open class CascadedShadowGenerator protected ()
     extends typings.babylonjs.shadowsIndexMod.CascadedShadowGenerator {
     /**
       * Creates a Cascaded Shadow Generator object.
@@ -72,19 +72,22 @@ object lightsIndexMod {
       * @param scene The scene to create the shadow map for
       * @returns The parsed shadow generator
       */
-    inline def Parse(parsedShadowGenerator: js.Any, scene: Scene): typings.babylonjs.shadowGeneratorMod.ShadowGenerator = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedShadowGenerator.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.shadowGeneratorMod.ShadowGenerator]
+    inline def Parse(parsedShadowGenerator: Any, scene: Scene): typings.babylonjs.shadowGeneratorMod.ShadowGenerator = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedShadowGenerator.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.shadowGeneratorMod.ShadowGenerator]
     
-    /** @hidden */
-    inline def _SceneComponentInitialization(scene: Scene): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_SceneComponentInitialization")(scene.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    
-    @JSImport("babylonjs/Lights/index", "CascadedShadowGenerator.frustumCornersNDCSpace")
+    @JSImport("babylonjs/Lights/index", "CascadedShadowGenerator._FrustumCornersNDCSpace")
     @js.native
-    val frustumCornersNDCSpace: js.Any = js.native
+    val _FrustumCornersNDCSpace: Any = js.native
+    
+    /**
+      * @param _
+      * @hidden
+      */
+    inline def _SceneComponentInitialization(scene: Scene): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_SceneComponentInitialization")(scene.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("babylonjs/Lights/index", "DirectionalLight")
   @js.native
-  class DirectionalLight protected ()
+  open class DirectionalLight protected ()
     extends typings.babylonjs.directionalLightMod.DirectionalLight {
     /**
       * Creates a DirectionalLight object in the scene, oriented towards the passed direction (Vector3).
@@ -100,7 +103,7 @@ object lightsIndexMod {
   
   @JSImport("babylonjs/Lights/index", "HemisphericLight")
   @js.native
-  class HemisphericLight protected ()
+  open class HemisphericLight protected ()
     extends typings.babylonjs.hemisphericLightMod.HemisphericLight {
     /**
       * Creates a HemisphericLight object in the scene according to the passed direction (Vector3).
@@ -121,7 +124,7 @@ object lightsIndexMod {
     /**
       * Creates a Light object in the scene.
       * Documentation : https://doc.babylonjs.com/babylon101/lights
-      * @param name The firendly name of the light
+      * @param name The friendly name of the light
       * @param scene The scene the light belongs too
       */
     def this(name: String, scene: Scene) = this()
@@ -132,14 +135,6 @@ object lightsIndexMod {
     @JSImport("babylonjs/Lights/index", "Light")
     @js.native
     val ^ : js.Any = js.native
-    
-    /**
-      * Sort function to order lights for rendering.
-      * @param a First Light object to compare to second.
-      * @param b Second Light object to compare first.
-      * @return -1 to reduce's a's index relative to be, 0 for no change, 1 to increase a's index relative to b.
-      */
-    inline def CompareLightsPriority(a: typings.babylonjs.lightMod.Light, b: typings.babylonjs.lightMod.Light): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("CompareLightsPriority")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Falloff Default: light is falling off following the material specification:
@@ -281,12 +276,12 @@ object lightsIndexMod {
       * @param scene The scene to create the parsed light in
       * @returns the created light after parsing
       */
-    inline def Parse(parsedLight: js.Any, scene: Scene): Nullable[typings.babylonjs.lightMod.Light] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedLight.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.lightMod.Light]]
+    inline def Parse(parsedLight: Any, scene: Scene): Nullable[typings.babylonjs.lightMod.Light] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedLight.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.lightMod.Light]]
   }
   
   @JSImport("babylonjs/Lights/index", "PointLight")
   @js.native
-  class PointLight protected ()
+  open class PointLight protected ()
     extends typings.babylonjs.pointLightMod.PointLight {
     /**
       * Creates a PointLight object from the passed name and position (Vector3) and adds it in the scene.
@@ -306,7 +301,7 @@ object lightsIndexMod {
   
   @JSImport("babylonjs/Lights/index", "ShadowGenerator")
   @js.native
-  class ShadowGenerator protected ()
+  open class ShadowGenerator protected ()
     extends typings.babylonjs.shadowsIndexMod.ShadowGenerator {
     /**
       * Creates a ShadowGenerator object.
@@ -315,10 +310,10 @@ object lightsIndexMod {
       * Documentation : https://doc.babylonjs.com/babylon101/shadows
       * @param mapSize The size of the texture what stores the shadows. Example : 1024.
       * @param light The light object generating the shadows.
-      * @param usefulFloatFirst By default the generator will try to use half float textures but if you need precision (for self shadowing for instance), you can use this option to enforce full float texture.
+      * @param usefullFloatFirst By default the generator will try to use half float textures but if you need precision (for self shadowing for instance), you can use this option to enforce full float texture.
       */
     def this(mapSize: Double, light: IShadowLight) = this()
-    def this(mapSize: Double, light: IShadowLight, usefulFloatFirst: Boolean) = this()
+    def this(mapSize: Double, light: IShadowLight, usefullFloatFirst: Boolean) = this()
   }
   /* static members */
   object ShadowGenerator {
@@ -334,6 +329,14 @@ object lightsIndexMod {
     @js.native
     def CLASSNAME: String = js.native
     inline def CLASSNAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLASSNAME")(x.asInstanceOf[js.Any])
+    
+    /**
+      * Defines the default alpha cutoff value used for transparent alpha tested materials.
+      */
+    @JSImport("babylonjs/Lights/index", "ShadowGenerator.DEFAULT_ALPHA_CUTOFF")
+    @js.native
+    def DEFAULT_ALPHA_CUTOFF: Double = js.native
+    inline def DEFAULT_ALPHA_CUTOFF_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_ALPHA_CUTOFF")(x.asInstanceOf[js.Any])
     
     /**
       * Shadow generator mode ESM: Blurred Exponential Shadow Mapping using the inverse of the exponential preventing
@@ -409,9 +412,9 @@ object lightsIndexMod {
       * @param constr A function that builds a shadow generator or undefined to create an instance of the default shadow generator
       * @returns The parsed shadow generator
       */
-    inline def Parse(parsedShadowGenerator: js.Any, scene: Scene): typings.babylonjs.shadowGeneratorMod.ShadowGenerator = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedShadowGenerator.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.shadowGeneratorMod.ShadowGenerator]
+    inline def Parse(parsedShadowGenerator: Any, scene: Scene): typings.babylonjs.shadowGeneratorMod.ShadowGenerator = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedShadowGenerator.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.shadowGeneratorMod.ShadowGenerator]
     inline def Parse(
-      parsedShadowGenerator: js.Any,
+      parsedShadowGenerator: Any,
       scene: Scene,
       constr: js.Function2[/* mapSize */ Double, /* light */ IShadowLight, this.type]
     ): typings.babylonjs.shadowGeneratorMod.ShadowGenerator = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedShadowGenerator.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], constr.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.shadowGeneratorMod.ShadowGenerator]
@@ -452,13 +455,16 @@ object lightsIndexMod {
     @js.native
     val QUALITY_MEDIUM: Double = js.native
     
-    /** @hidden */
+    /**
+      * @param _
+      * @hidden
+      */
     inline def _SceneComponentInitialization(scene: Scene): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_SceneComponentInitialization")(scene.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("babylonjs/Lights/index", "ShadowGeneratorSceneComponent")
   @js.native
-  class ShadowGeneratorSceneComponent protected ()
+  open class ShadowGeneratorSceneComponent protected ()
     extends typings.babylonjs.shadowsIndexMod.ShadowGeneratorSceneComponent {
     /**
       * Creates a new instance of the component for the given scene
@@ -474,7 +480,7 @@ object lightsIndexMod {
     /**
       * Creates a Light object in the scene.
       * Documentation : https://doc.babylonjs.com/babylon101/lights
-      * @param name The firendly name of the light
+      * @param name The friendly name of the light
       * @param scene The scene the light belongs too
       */
     def this(name: String, scene: Scene) = this()
@@ -482,7 +488,7 @@ object lightsIndexMod {
   
   @JSImport("babylonjs/Lights/index", "SpotLight")
   @js.native
-  class SpotLight protected ()
+  open class SpotLight protected ()
     extends typings.babylonjs.spotLightMod.SpotLight {
     /**
       * Creates a SpotLight object in the scene. A spot light is a simply light oriented cone.
@@ -506,12 +512,12 @@ object lightsIndexMod {
     
     @JSImport("babylonjs/Lights/index", "SpotLight._IsProceduralTexture")
     @js.native
-    def _IsProceduralTexture: js.Any = js.native
-    inline def _IsProceduralTexture_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsProceduralTexture")(x.asInstanceOf[js.Any])
+    def _IsProceduralTexture: Any = js.native
+    inline def _IsProceduralTexture_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsProceduralTexture")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Lights/index", "SpotLight._IsTexture")
     @js.native
-    def _IsTexture: js.Any = js.native
-    inline def _IsTexture_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsTexture")(x.asInstanceOf[js.Any])
+    def _IsTexture: Any = js.native
+    inline def _IsTexture_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsTexture")(x.asInstanceOf[js.Any])
   }
 }

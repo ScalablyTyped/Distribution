@@ -9,10 +9,10 @@ object platformBrowserMod {
   
   @JSImport("@tensorflow/tfjs-core/dist/platforms/platform_browser", "PlatformBrowser")
   @js.native
-  class PlatformBrowser ()
+  open class PlatformBrowser ()
     extends StObject
        with Platform {
     
-    /* private */ var textEncoder: js.Any = js.native
+    /* private */ var textEncoder: Any = js.native
   }
 }

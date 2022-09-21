@@ -29,12 +29,17 @@ trait ConfigurationProfile extends StObject {
   /**
     * The name of the configuration profile.
     */
-  var Name: js.UndefOr[typings.awsSdk.appconfigMod.Name] = js.undefined
+  var Name: js.UndefOr[LongName] = js.undefined
   
   /**
     * The ARN of an IAM role with permission to access the configuration at the specified LocationUri.
     */
   var RetrievalRoleArn: js.UndefOr[RoleArn] = js.undefined
+  
+  /**
+    * The type of configurations contained in the profile. AppConfig supports feature flags and freeform configurations. We recommend you create feature flag configurations to enable or disable new features and freeform configurations to distribute configurations to an application. When calling this API, enter one of the following values for Type:  AWS.AppConfig.FeatureFlags   AWS.Freeform 
+    */
+  var Type: js.UndefOr[ConfigurationProfileType] = js.undefined
   
   /**
     * A list of methods for validating the configuration.
@@ -66,7 +71,7 @@ object ConfigurationProfile {
     
     inline def setLocationUriUndefined: Self = StObject.set(x, "LocationUri", js.undefined)
     
-    inline def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: LongName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
@@ -74,10 +79,14 @@ object ConfigurationProfile {
     
     inline def setRetrievalRoleArnUndefined: Self = StObject.set(x, "RetrievalRoleArn", js.undefined)
     
+    inline def setType(value: ConfigurationProfileType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    
     inline def setValidators(value: ValidatorList): Self = StObject.set(x, "Validators", value.asInstanceOf[js.Any])
     
     inline def setValidatorsUndefined: Self = StObject.set(x, "Validators", js.undefined)
     
-    inline def setValidatorsVarargs(value: Validator*): Self = StObject.set(x, "Validators", js.Array(value :_*))
+    inline def setValidatorsVarargs(value: Validator*): Self = StObject.set(x, "Validators", js.Array(value*))
   }
 }

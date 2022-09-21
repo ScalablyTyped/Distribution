@@ -39,9 +39,9 @@ object GraphQLObjectTypeConfig {
     
     inline def setInterfacesUndefined: Self = StObject.set(x, "interfaces", js.undefined)
     
-    inline def setInterfacesVarargs(value: GraphQLInterfaceType*): Self = StObject.set(x, "interfaces", js.Array(value :_*))
+    inline def setInterfacesVarargs(value: GraphQLInterfaceType*): Self = StObject.set(x, "interfaces", js.Array(value*))
     
-    inline def setIsTypeOf(value: (/* source */ js.Any, /* context */ js.Any, /* info */ GraphQLResolveInfo) => Boolean): Self = StObject.set(x, "isTypeOf", js.Any.fromFunction3(value))
+    inline def setIsTypeOf(value: (/* source */ Any, /* context */ Any, /* info */ GraphQLResolveInfo) => Boolean): Self = StObject.set(x, "isTypeOf", js.Any.fromFunction3(value))
     
     inline def setIsTypeOfUndefined: Self = StObject.set(x, "isTypeOf", js.undefined)
     

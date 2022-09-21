@@ -42,7 +42,7 @@ trait IListDataNotificationHandler[T] extends StObject {
     * Indicates that all previous data obtained from the IListDataAdapter is invalid and should be refreshed.
     * @returns A Promise that completes when the data has been completely refreshed and all change notifications have been sent.
     **/
-  def invalidateAll(): Promise[js.Any] = js.native
+  def invalidateAll(): Promise[Any] = js.native
   
   /**
     * Raises a notification that an item was moved within the IListDataAdapter object's data source.

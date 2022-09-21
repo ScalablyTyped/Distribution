@@ -14,70 +14,70 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "Services.LanguageService")
 @js.native
-class LanguageService protected ()
+open class LanguageService protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.Services.LanguageService {
   def this(host: ILanguageServiceHost) = this()
   
   /* private */ /* CompleteClass */
-  override def _getHostFileName(fileName: js.Any): js.Any = js.native
+  override def _getHostFileName(fileName: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def _getHostSpecificDiagnosticWithFileName(diagnostic: js.Any): js.Any = js.native
+  override def _getHostSpecificDiagnosticWithFileName(diagnostic: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  var _syntaxTreeCache: js.Any = js.native
+  var _syntaxTreeCache: Any = js.native
   
   /* private */ /* CompleteClass */
-  var activeCompletionSession: js.Any = js.native
+  var activeCompletionSession: Any = js.native
   
   /* private */ /* CompleteClass */
   override def addDeclaration(
-    symbolKind: js.Any,
-    symbolName: js.Any,
-    containerKind: js.Any,
-    containerName: js.Any,
-    declaration: js.Any,
-    result: js.Any
-  ): js.Any = js.native
+    symbolKind: Any,
+    symbolName: Any,
+    containerKind: Any,
+    containerName: Any,
+    declaration: Any,
+    result: Any
+  ): Any = js.native
   
   /* private */ /* CompleteClass */
   override def addDeclarations(
-    symbolKind: js.Any,
-    symbolName: js.Any,
-    containerKind: js.Any,
-    containerName: js.Any,
-    declarations: js.Any,
-    result: js.Any
-  ): js.Any = js.native
+    symbolKind: Any,
+    symbolName: Any,
+    containerKind: Any,
+    containerName: Any,
+    declarations: Any,
+    result: Any
+  ): Any = js.native
   
   /* CompleteClass */
   override def cleanupSemanticCache(): Unit = js.native
   
   /* private */ /* CompleteClass */
-  var compiler: js.Any = js.native
+  var compiler: Any = js.native
   
   /* private */ /* CompleteClass */
-  override def containErrors(diagnostics: js.Any): js.Any = js.native
+  override def containErrors(diagnostics: Any): Any = js.native
   
   /* private */ /* CompleteClass */
   override def findSearchValueInPullDecl(
-    fileName: js.Any,
-    declarations: js.Any,
-    results: js.Any,
-    searchTerms: js.Any,
-    parentName: js.Any,
-    parentkindName: js.Any
-  ): js.Any = js.native
+    fileName: Any,
+    declarations: Any,
+    results: Any,
+    searchTerms: Any,
+    parentName: Any,
+    parentkindName: Any
+  ): Any = js.native
   
   /* private */ /* CompleteClass */
-  var formattingRulesProvider: js.Any = js.native
+  var formattingRulesProvider: Any = js.native
   
   /* private */ /* CompleteClass */
-  override def getAllSemanticDiagnostics(): js.Any = js.native
+  override def getAllSemanticDiagnostics(): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def getAllSyntacticDiagnostics(): js.Any = js.native
+  override def getAllSyntacticDiagnostics(): Any = js.native
   
   /* CompleteClass */
   override def getBraceMatchingAtPosition(fileName: String, position: Double): js.Array[TextSpan] = js.native
@@ -89,13 +89,13 @@ class LanguageService protected ()
   override def getCompilerOptionsDiagnostics(): js.Array[Diagnostic] = js.native
   
   /* private */ /* CompleteClass */
-  override def getCompletionEntriesForKeywords(keywords: js.Any, result: js.Any): js.Any = js.native
+  override def getCompletionEntriesForKeywords(keywords: Any, result: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def getCompletionEntriesFromDecls(decls: js.Any, result: js.Any): js.Any = js.native
+  override def getCompletionEntriesFromDecls(decls: Any, result: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def getCompletionEntriesFromSymbols(symbolInfo: js.Any, result: js.Any): js.Any = js.native
+  override def getCompletionEntriesFromSymbols(symbolInfo: Any, result: Any): Any = js.native
   
   /* CompleteClass */
   override def getCompletionEntryDetails(fileName: String, position: Double, entryName: String): CompletionEntryDetails = js.native
@@ -142,16 +142,16 @@ class LanguageService protected ()
   ): js.Array[typings.typescriptServices.TypeScript.Services.TextEdit] = js.native
   
   /* private */ /* CompleteClass */
-  override def getFormattingManager(fileName: js.Any, options: js.Any): js.Any = js.native
+  override def getFormattingManager(fileName: Any, options: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def getFullNameOfSymbol(symbol: js.Any, enclosingScopeSymbol: js.Any): js.Any = js.native
+  override def getFullNameOfSymbol(symbol: Any, enclosingScopeSymbol: Any): Any = js.native
   
   /* CompleteClass */
   override def getImplementorsAtPosition(fileName: String, position: Double): js.Array[typings.typescriptServices.TypeScript.Services.ReferenceEntry] = js.native
   
   /* private */ /* CompleteClass */
-  override def getImplementorsInFile(fileName: js.Any, symbol: js.Any): js.Any = js.native
+  override def getImplementorsInFile(fileName: Any, symbol: Any): Any = js.native
   
   /* CompleteClass */
   override def getIndentationAtPosition(
@@ -161,7 +161,7 @@ class LanguageService protected ()
   ): Double = js.native
   
   /* private */ /* CompleteClass */
-  override def getModuleOrEnumKind(symbol: js.Any): js.Any = js.native
+  override def getModuleOrEnumKind(symbol: Any): Any = js.native
   
   /* CompleteClass */
   override def getNameOrDottedNameSpan(fileName: String, startPos: Double, endPos: Double): typings.typescriptServices.TypeScript.Services.SpanInfo = js.native
@@ -179,25 +179,25 @@ class LanguageService protected ()
   override def getOverrides(container: PullTypeSymbol, memberSym: PullSymbol): js.Array[PullTypeSymbol] = js.native
   
   /* private */ /* CompleteClass */
-  override def getPossibleSymbolReferencePositions(fileName: js.Any, symbolName: js.Any): js.Any = js.native
+  override def getPossibleSymbolReferencePositions(fileName: Any, symbolName: Any): Any = js.native
   
   /* CompleteClass */
   override def getReferencesAtPosition(fileName: String, position: Double): js.Array[typings.typescriptServices.TypeScript.Services.ReferenceEntry] = js.native
   
   /* private */ /* CompleteClass */
-  override def getReferencesInFile(fileName: js.Any, symbol: js.Any, containingASTOpt: js.Any): js.Any = js.native
+  override def getReferencesInFile(fileName: Any, symbol: Any, containingASTOpt: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def getResolvedCompletionEntryDetailsFromSymbol(symbol: js.Any, enclosingScopeSymbol: js.Any): js.Any = js.native
+  override def getResolvedCompletionEntryDetailsFromSymbol(symbol: Any, enclosingScopeSymbol: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def getScriptElementKindModifiers(symbol: js.Any): js.Any = js.native
+  override def getScriptElementKindModifiers(symbol: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def getScriptElementKindModifiersFromDecl(decl: js.Any): js.Any = js.native
+  override def getScriptElementKindModifiersFromDecl(decl: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def getScriptElementKindModifiersFromFlags(flags: js.Any): js.Any = js.native
+  override def getScriptElementKindModifiersFromFlags(flags: Any): Any = js.native
   
   /* CompleteClass */
   override def getScriptLexicalStructure(fileName: String): js.Array[typings.typescriptServices.TypeScript.Services.NavigateToItem] = js.native
@@ -209,13 +209,13 @@ class LanguageService protected ()
   override def getSignatureAtPosition(fileName: String, position: Double): typings.typescriptServices.TypeScript.Services.SignatureInfo = js.native
   
   /* private */ /* CompleteClass */
-  override def getSingleNodeReferenceAtPosition(fileName: js.Any, position: js.Any): js.Any = js.native
+  override def getSingleNodeReferenceAtPosition(fileName: Any, position: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def getSymbolInfoAtPosition(fileName: js.Any, pos: js.Any, requireName: js.Any): js.Any = js.native
+  override def getSymbolInfoAtPosition(fileName: Any, pos: Any, requireName: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def getSymbolScopeAST(symbol: js.Any, ast: js.Any): js.Any = js.native
+  override def getSymbolScopeAST(symbol: Any, ast: Any): Any = js.native
   
   /* CompleteClass */
   override def getSyntacticDiagnostics(fileName: String): js.Array[Diagnostic] = js.native
@@ -227,74 +227,68 @@ class LanguageService protected ()
   override def getTypeAtPosition(fileName: String, position: Double): typings.typescriptServices.TypeScript.Services.TypeInfo = js.native
   
   /* private */ /* CompleteClass */
-  override def getTypeInfoEligiblePath(fileName: js.Any, position: js.Any, isConstructorValidPosition: js.Any): js.Any = js.native
+  override def getTypeInfoEligiblePath(fileName: Any, position: Any, isConstructorValidPosition: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def getTypeParameterSignatureFromPartiallyWrittenExpression(document: js.Any, position: js.Any, genericTypeArgumentListInfo: js.Any): js.Any = js.native
+  override def getTypeParameterSignatureFromPartiallyWrittenExpression(document: Any, position: Any, genericTypeArgumentListInfo: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def hasAnyUpperCaseCharacter(s: js.Any): js.Any = js.native
+  override def hasAnyUpperCaseCharacter(s: Any): Any = js.native
   
   /* CompleteClass */
   var host: ILanguageServiceHost = js.native
   
   /* private */ /* CompleteClass */
-  override def isContainerDeclaration(declaration: js.Any): js.Any = js.native
+  override def isContainerDeclaration(declaration: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def isLetterOrDigit(char: js.Any): js.Any = js.native
+  override def isLetterOrDigit(char: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def isWriteAccess(current: js.Any): js.Any = js.native
+  override def isWriteAccess(current: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  var logger: js.Any = js.native
+  var logger: Any = js.native
   
   /* private */ /* CompleteClass */
-  override def mapPullElementKind(
-    kind: js.Any,
-    symbol: js.Any,
-    useConstructorAsClass: js.Any,
-    varIsFunction: js.Any,
-    functionIsConstructor: js.Any
-  ): js.Any = js.native
+  override def mapPullElementKind(kind: Any, symbol: Any, useConstructorAsClass: Any, varIsFunction: Any, functionIsConstructor: Any): Any = js.native
   
   /* CompleteClass */
   override def refresh(): Unit = js.native
   
   /* private */ /* CompleteClass */
-  override def shouldIncludeDeclarationInNavigationItems(declaration: js.Any): js.Any = js.native
+  override def shouldIncludeDeclarationInNavigationItems(declaration: Any): Any = js.native
   
   /* private */ /* CompleteClass */
   override def tryAddConstructor(
-    symbolKind: js.Any,
-    symbolName: js.Any,
-    containerKind: js.Any,
-    containerName: js.Any,
-    declarations: js.Any,
-    result: js.Any
-  ): js.Any = js.native
+    symbolKind: Any,
+    symbolName: Any,
+    containerKind: Any,
+    containerName: Any,
+    declarations: Any,
+    result: Any
+  ): Any = js.native
   
   /* private */ /* CompleteClass */
   override def tryAddDefinition(
-    symbolKind: js.Any,
-    symbolName: js.Any,
-    containerKind: js.Any,
-    containerName: js.Any,
-    declarations: js.Any,
-    result: js.Any
-  ): js.Any = js.native
+    symbolKind: Any,
+    symbolName: Any,
+    containerKind: Any,
+    containerName: Any,
+    declarations: Any,
+    result: Any
+  ): Any = js.native
   
   /* private */ /* CompleteClass */
   override def tryAddSignatures(
-    symbolKind: js.Any,
-    symbolName: js.Any,
-    containerKind: js.Any,
-    containerName: js.Any,
-    declarations: js.Any,
-    result: js.Any
-  ): js.Any = js.native
+    symbolKind: Any,
+    symbolName: Any,
+    containerKind: Any,
+    containerName: Any,
+    declarations: Any,
+    result: Any
+  ): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def tryFindDeclFromPreviousCompilerVersion(invalidatedDecl: js.Any): js.Any = js.native
+  override def tryFindDeclFromPreviousCompilerVersion(invalidatedDecl: Any): Any = js.native
 }

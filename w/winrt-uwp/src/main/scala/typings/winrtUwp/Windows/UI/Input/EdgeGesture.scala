@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait EdgeGesture extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_canceled(`type`: canceled, listener: TypedEventHandler[EdgeGesture, EdgeGestureEventArgs]): Unit = js.native
   @JSName("addEventListener")
@@ -40,7 +40,7 @@ trait EdgeGesture extends StObject {
   @JSName("onstarting")
   var onstarting_Original: TypedEventHandler[EdgeGesture, EdgeGestureEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_canceled(`type`: canceled, listener: TypedEventHandler[EdgeGesture, EdgeGestureEventArgs]): Unit = js.native
   @JSName("removeEventListener")

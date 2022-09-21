@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Video segment level annotation results for text detection.
-  */
 trait SchemaGoogleCloudVideointelligenceV1beta2TextSegment extends StObject {
   
   /**
-    * Confidence for the track of detected text. It is calculated as the
-    * highest over all frames where OCR detected text appears.
+    * Confidence for the track of detected text. It is calculated as the highest over all frames where OCR detected text appears.
     */
-  var confidence: js.UndefOr[Double] = js.undefined
+  var confidence: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * Information related to the frames where OCR detected text appears.
@@ -36,13 +32,15 @@ object SchemaGoogleCloudVideointelligenceV1beta2TextSegment {
     
     inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
+    inline def setConfidenceNull: Self = StObject.set(x, "confidence", null)
+    
     inline def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
     
     inline def setFrames(value: js.Array[SchemaGoogleCloudVideointelligenceV1beta2TextFrame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     
     inline def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
     
-    inline def setFramesVarargs(value: SchemaGoogleCloudVideointelligenceV1beta2TextFrame*): Self = StObject.set(x, "frames", js.Array(value :_*))
+    inline def setFramesVarargs(value: SchemaGoogleCloudVideointelligenceV1beta2TextFrame*): Self = StObject.set(x, "frames", js.Array(value*))
     
     inline def setSegment(value: SchemaGoogleCloudVideointelligenceV1beta2VideoSegment): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
     

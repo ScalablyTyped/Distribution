@@ -1,5 +1,7 @@
 package typings.awsLambda
 
+import typings.awsLambda.autoscalingMod.AutoScalingInstanceMarketOption
+import typings.awsLambda.autoscalingMod.AutoScalingScaleInCause
 import typings.awsLambda.codebuildCloudwatchStateMod.CodeBuildCacheType
 import typings.awsLambda.codebuildCloudwatchStateMod.CodeBuildEnvironmentComputeType
 import typings.awsLambda.codebuildCloudwatchStateMod.CodeBuildEnvironmentPullCredentialsType
@@ -16,8 +18,11 @@ import typings.awsLambda.codepipelineCloudwatchStageMod.CodePipelineStageState
 import typings.awsLambda.commonMod.ChallengeName
 import typings.awsLambda.connectContactFlowMod.ConnectContactFlowChannel
 import typings.awsLambda.connectContactFlowMod.ConnectContactFlowInitiationMethod
+import typings.awsLambda.customEmailSenderMod.AccountTakeOverActionType
 import typings.awsLambda.kinesisFirehoseTransformationMod.FirehoseRecordTransformationStatus
+import typings.awsLambda.lexV2Mod.LexV2IntentState
 import typings.awsLambda.s3BatchMod.S3BatchResultResultCode
+import typings.awsLambda.secretsmanagerMod.SecretsManagerRotationEventStep
 import typings.awsLambda.sqsMod._SQSMessageAttributeDataType
 import typings.awsLambda.userMigrationMod.UserStatus
 import org.scalablytyped.runtime.StObject
@@ -25,6 +30,10 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object awsLambdaStrings {
+  
+  @js.native
+  sealed trait `0` extends StObject
+  inline def `0`: `0` = "0".asInstanceOf[`0`]
   
   @js.native
   sealed trait `1Dot0` extends StObject
@@ -49,6 +58,10 @@ object awsLambdaStrings {
   inline def ARCHIVED: ARCHIVED = "ARCHIVED".asInstanceOf[ARCHIVED]
   
   @js.native
+  sealed trait ARCHIVE_ACCESS extends StObject
+  inline def ARCHIVE_ACCESS: ARCHIVE_ACCESS = "ARCHIVE_ACCESS".asInstanceOf[ARCHIVE_ACCESS]
+  
+  @js.native
   sealed trait ARM_CONTAINER
     extends StObject
        with CodeBuildEnvironmentType
@@ -69,6 +82,12 @@ object awsLambdaStrings {
     extends StObject
        with CodeBuildSourceLocationType
   inline def BITBUCKET: BITBUCKET = "BITBUCKET".asInstanceOf[BITBUCKET]
+  
+  @js.native
+  sealed trait BLOCK
+    extends StObject
+       with AccountTakeOverActionType
+  inline def BLOCK: BLOCK = "BLOCK".asInstanceOf[BLOCK]
   
   @js.native
   sealed trait BUILD
@@ -105,6 +124,10 @@ object awsLambdaStrings {
     extends StObject
        with _SQSMessageAttributeDataType
   inline def Binary: Binary = "Binary".asInstanceOf[Binary]
+  
+  @js.native
+  sealed trait Bounce extends StObject
+  inline def Bounce: Bounce = "Bounce".asInstanceOf[Bounce]
   
   @js.native
   sealed trait Build_
@@ -175,6 +198,10 @@ object awsLambdaStrings {
   inline def CONFIRMED: CONFIRMED = "CONFIRMED".asInstanceOf[CONFIRMED]
   
   @js.native
+  sealed trait CONNECT extends StObject
+  inline def CONNECT: CONNECT = "CONNECT".asInstanceOf[CONNECT]
+  
+  @js.native
   sealed trait CREATE_TIME extends StObject
   inline def CREATE_TIME: CREATE_TIME = "CREATE_TIME".asInstanceOf[CREATE_TIME]
   
@@ -203,6 +230,10 @@ object awsLambdaStrings {
   inline def `CodePipeline Stage Execution State Change`: `CodePipeline Stage Execution State Change` = ("CodePipeline Stage Execution State Change").asInstanceOf[`CodePipeline Stage Execution State Change`]
   
   @js.native
+  sealed trait CompleteMultipartUpload extends StObject
+  inline def CompleteMultipartUpload: CompleteMultipartUpload = "CompleteMultipartUpload".asInstanceOf[CompleteMultipartUpload]
+  
+  @js.native
   sealed trait ConfirmIntent extends StObject
   inline def ConfirmIntent: ConfirmIntent = "ConfirmIntent".asInstanceOf[ConfirmIntent]
   
@@ -215,6 +246,10 @@ object awsLambdaStrings {
   inline def ContactFlowEvent: ContactFlowEvent = "ContactFlowEvent".asInstanceOf[ContactFlowEvent]
   
   @js.native
+  sealed trait CopyObject extends StObject
+  inline def CopyObject: CopyObject = "CopyObject".asInstanceOf[CopyObject]
+  
+  @js.native
   sealed trait Create extends StObject
   inline def Create: Create = "Create".asInstanceOf[Create]
   
@@ -225,6 +260,34 @@ object awsLambdaStrings {
   @js.native
   sealed trait Custom extends StObject
   inline def Custom: Custom = "Custom".asInstanceOf[Custom]
+  
+  @js.native
+  sealed trait CustomEmailSender_AccountTakeOverNotification extends StObject
+  inline def CustomEmailSender_AccountTakeOverNotification: CustomEmailSender_AccountTakeOverNotification = "CustomEmailSender_AccountTakeOverNotification".asInstanceOf[CustomEmailSender_AccountTakeOverNotification]
+  
+  @js.native
+  sealed trait CustomEmailSender_AdminCreateUser extends StObject
+  inline def CustomEmailSender_AdminCreateUser: CustomEmailSender_AdminCreateUser = "CustomEmailSender_AdminCreateUser".asInstanceOf[CustomEmailSender_AdminCreateUser]
+  
+  @js.native
+  sealed trait CustomEmailSender_ForgotPassword extends StObject
+  inline def CustomEmailSender_ForgotPassword: CustomEmailSender_ForgotPassword = "CustomEmailSender_ForgotPassword".asInstanceOf[CustomEmailSender_ForgotPassword]
+  
+  @js.native
+  sealed trait CustomEmailSender_ResendCode extends StObject
+  inline def CustomEmailSender_ResendCode: CustomEmailSender_ResendCode = "CustomEmailSender_ResendCode".asInstanceOf[CustomEmailSender_ResendCode]
+  
+  @js.native
+  sealed trait CustomEmailSender_SignUp extends StObject
+  inline def CustomEmailSender_SignUp: CustomEmailSender_SignUp = "CustomEmailSender_SignUp".asInstanceOf[CustomEmailSender_SignUp]
+  
+  @js.native
+  sealed trait CustomEmailSender_UpdateUserAttribute extends StObject
+  inline def CustomEmailSender_UpdateUserAttribute: CustomEmailSender_UpdateUserAttribute = "CustomEmailSender_UpdateUserAttribute".asInstanceOf[CustomEmailSender_UpdateUserAttribute]
+  
+  @js.native
+  sealed trait CustomEmailSender_VerifyUserAttribute extends StObject
+  inline def CustomEmailSender_VerifyUserAttribute: CustomEmailSender_VerifyUserAttribute = "CustomEmailSender_VerifyUserAttribute".asInstanceOf[CustomEmailSender_VerifyUserAttribute]
   
   @js.native
   sealed trait CustomMessage_AdminCreateUser extends StObject
@@ -259,6 +322,42 @@ object awsLambdaStrings {
   inline def CustomPayload: CustomPayload = "CustomPayload".asInstanceOf[CustomPayload]
   
   @js.native
+  sealed trait CustomSMSSender_AdminCreateUser extends StObject
+  inline def CustomSMSSender_AdminCreateUser: CustomSMSSender_AdminCreateUser = "CustomSMSSender_AdminCreateUser".asInstanceOf[CustomSMSSender_AdminCreateUser]
+  
+  @js.native
+  sealed trait CustomSMSSender_Authentication extends StObject
+  inline def CustomSMSSender_Authentication: CustomSMSSender_Authentication = "CustomSMSSender_Authentication".asInstanceOf[CustomSMSSender_Authentication]
+  
+  @js.native
+  sealed trait CustomSMSSender_ForgotPassword extends StObject
+  inline def CustomSMSSender_ForgotPassword: CustomSMSSender_ForgotPassword = "CustomSMSSender_ForgotPassword".asInstanceOf[CustomSMSSender_ForgotPassword]
+  
+  @js.native
+  sealed trait CustomSMSSender_ResendCode extends StObject
+  inline def CustomSMSSender_ResendCode: CustomSMSSender_ResendCode = "CustomSMSSender_ResendCode".asInstanceOf[CustomSMSSender_ResendCode]
+  
+  @js.native
+  sealed trait CustomSMSSender_SignUp extends StObject
+  inline def CustomSMSSender_SignUp: CustomSMSSender_SignUp = "CustomSMSSender_SignUp".asInstanceOf[CustomSMSSender_SignUp]
+  
+  @js.native
+  sealed trait CustomSMSSender_UpdateUserAttribute extends StObject
+  inline def CustomSMSSender_UpdateUserAttribute: CustomSMSSender_UpdateUserAttribute = "CustomSMSSender_UpdateUserAttribute".asInstanceOf[CustomSMSSender_UpdateUserAttribute]
+  
+  @js.native
+  sealed trait CustomSMSSender_VerifyUserAttribute extends StObject
+  inline def CustomSMSSender_VerifyUserAttribute: CustomSMSSender_VerifyUserAttribute = "CustomSMSSender_VerifyUserAttribute".asInstanceOf[CustomSMSSender_VerifyUserAttribute]
+  
+  @js.native
+  sealed trait DEEP_ARCHIVE extends StObject
+  inline def DEEP_ARCHIVE: DEEP_ARCHIVE = "DEEP_ARCHIVE".asInstanceOf[DEEP_ARCHIVE]
+  
+  @js.native
+  sealed trait DEEP_ARCHIVE_ACCESS extends StObject
+  inline def DEEP_ARCHIVE_ACCESS: DEEP_ARCHIVE_ACCESS = "DEEP_ARCHIVE_ACCESS".asInstanceOf[DEEP_ARCHIVE_ACCESS]
+  
+  @js.native
   sealed trait DEVICE_PASSWORD_VERIFIER
     extends StObject
        with ChallengeName
@@ -271,10 +370,26 @@ object awsLambdaStrings {
   inline def DEVICE_SRP_AUTH: DEVICE_SRP_AUTH = "DEVICE_SRP_AUTH".asInstanceOf[DEVICE_SRP_AUTH]
   
   @js.native
+  sealed trait DISABLED extends StObject
+  inline def DISABLED: DISABLED = "DISABLED".asInstanceOf[DISABLED]
+  
+  @js.native
+  sealed trait DISCONNECT extends StObject
+  inline def DISCONNECT: DISCONNECT = "DISCONNECT".asInstanceOf[DISCONNECT]
+  
+  @js.native
   sealed trait DOWNLOAD_SOURCE
     extends StObject
        with CodeBuildPhaseType
   inline def DOWNLOAD_SOURCE: DOWNLOAD_SOURCE = "DOWNLOAD_SOURCE".asInstanceOf[DOWNLOAD_SOURCE]
+  
+  @js.native
+  sealed trait DTMF extends StObject
+  inline def DTMF: DTMF = "DTMF".asInstanceOf[DTMF]
+  
+  @js.native
+  sealed trait Default extends StObject
+  inline def Default: Default = "Default".asInstanceOf[Default]
   
   @js.native
   sealed trait DefineAuthChallenge_Authentication extends StObject
@@ -287,6 +402,14 @@ object awsLambdaStrings {
   @js.native
   sealed trait Delete extends StObject
   inline def Delete: Delete = "Delete".asInstanceOf[Delete]
+  
+  @js.native
+  sealed trait `Delete Marker Created` extends StObject
+  inline def `Delete Marker Created`: `Delete Marker Created` = ("Delete Marker Created").asInstanceOf[`Delete Marker Created`]
+  
+  @js.native
+  sealed trait DeleteObject extends StObject
+  inline def DeleteObject: DeleteObject = "DeleteObject".asInstanceOf[DeleteObject]
   
   @js.native
   sealed trait Denied extends StObject
@@ -321,6 +444,10 @@ object awsLambdaStrings {
   inline def ElicitSlot: ElicitSlot = "ElicitSlot".asInstanceOf[ElicitSlot]
   
   @js.native
+  sealed trait FAIL extends StObject
+  inline def FAIL: FAIL = "FAIL".asInstanceOf[FAIL]
+  
+  @js.native
   sealed trait FAILED
     extends StObject
        with CodeBuildPhaseStatusType
@@ -349,16 +476,26 @@ object awsLambdaStrings {
   inline def FORCE_CHANGE_PASSWORD: FORCE_CHANGE_PASSWORD = "FORCE_CHANGE_PASSWORD".asInstanceOf[FORCE_CHANGE_PASSWORD]
   
   @js.native
-  sealed trait Failed_ extends StObject
+  sealed trait Failed_
+    extends StObject
+       with LexV2IntentState
   inline def Failed_ : Failed_ = "Failed".asInstanceOf[Failed_]
   
   @js.native
-  sealed trait Fulfilled extends StObject
+  sealed trait Fulfilled
+    extends StObject
+       with LexV2IntentState
   inline def Fulfilled: Fulfilled = "Fulfilled".asInstanceOf[Fulfilled]
   
   @js.native
   sealed trait FulfillmentCodeHook extends StObject
   inline def FulfillmentCodeHook: FulfillmentCodeHook = "FulfillmentCodeHook".asInstanceOf[FulfillmentCodeHook]
+  
+  @js.native
+  sealed trait FulfillmentInProgress
+    extends StObject
+       with LexV2IntentState
+  inline def FulfillmentInProgress: FulfillmentInProgress = "FulfillmentInProgress".asInstanceOf[FulfillmentInProgress]
   
   @js.native
   sealed trait GITHUB
@@ -371,6 +508,22 @@ object awsLambdaStrings {
     extends StObject
        with CodeBuildSourceLocationType
   inline def GITHUB_ENTERPRISE: GITHUB_ENTERPRISE = "GITHUB_ENTERPRISE".asInstanceOf[GITHUB_ENTERPRISE]
+  
+  @js.native
+  sealed trait GLACIER extends StObject
+  inline def GLACIER: GLACIER = "GLACIER".asInstanceOf[GLACIER]
+  
+  @js.native
+  sealed trait GLACIER_IR extends StObject
+  inline def GLACIER_IR: GLACIER_IR = "GLACIER_IR".asInstanceOf[GLACIER_IR]
+  
+  @js.native
+  sealed trait GRAY extends StObject
+  inline def GRAY: GRAY = "GRAY".asInstanceOf[GRAY]
+  
+  @js.native
+  sealed trait IN extends StObject
+  inline def IN: IN = "IN".asInstanceOf[IN]
   
   @js.native
   sealed trait INBOUND
@@ -389,10 +542,30 @@ object awsLambdaStrings {
   inline def INSTALL: INSTALL = "INSTALL".asInstanceOf[INSTALL]
   
   @js.native
+  sealed trait INSTANCE_REFRESH
+    extends StObject
+       with AutoScalingScaleInCause
+  inline def INSTANCE_REFRESH: INSTANCE_REFRESH = "INSTANCE_REFRESH".asInstanceOf[INSTANCE_REFRESH]
+  
+  @js.native
+  sealed trait INTELLIGENT_TIERING extends StObject
+  inline def INTELLIGENT_TIERING: INTELLIGENT_TIERING = "INTELLIGENT_TIERING".asInstanceOf[INTELLIGENT_TIERING]
+  
+  @js.native
   sealed trait IN_PROGRESS
     extends StObject
        with CodeBuildStateType
   inline def IN_PROGRESS: IN_PROGRESS = "IN_PROGRESS".asInstanceOf[IN_PROGRESS]
+  
+  @js.native
+  sealed trait ImageResponseCard extends StObject
+  inline def ImageResponseCard: ImageResponseCard = "ImageResponseCard".asInstanceOf[ImageResponseCard]
+  
+  @js.native
+  sealed trait InProgress
+    extends StObject
+       with LexV2IntentState
+  inline def InProgress: InProgress = "InProgress".asInstanceOf[InProgress]
   
   @js.native
   sealed trait Invoke
@@ -431,6 +604,46 @@ object awsLambdaStrings {
   inline def LOG_APPEND_TIME: LOG_APPEND_TIME = "LOG_APPEND_TIME".asInstanceOf[LOG_APPEND_TIME]
   
   @js.native
+  sealed trait Lambda extends StObject
+  inline def Lambda: Lambda = "Lambda".asInstanceOf[Lambda]
+  
+  @js.native
+  sealed trait `Lifecycle Expiration` extends StObject
+  inline def `Lifecycle Expiration`: `Lifecycle Expiration` = ("Lifecycle Expiration").asInstanceOf[`Lifecycle Expiration`]
+  
+  @js.native
+  sealed trait List extends StObject
+  inline def List: List = "List".asInstanceOf[List]
+  
+  @js.native
+  sealed trait MAX_INSTANCE_LIFETIME
+    extends StObject
+       with AutoScalingScaleInCause
+  inline def MAX_INSTANCE_LIFETIME: MAX_INSTANCE_LIFETIME = "MAX_INSTANCE_LIFETIME".asInstanceOf[MAX_INSTANCE_LIFETIME]
+  
+  @js.native
+  sealed trait MESSAGE extends StObject
+  inline def MESSAGE: MESSAGE = "MESSAGE".asInstanceOf[MESSAGE]
+  
+  @js.native
+  sealed trait MFA
+    extends StObject
+       with AccountTakeOverActionType
+  inline def MFA: MFA = "MFA".asInstanceOf[MFA]
+  
+  @js.native
+  sealed trait MFA_IF_CONFIGURED
+    extends StObject
+       with AccountTakeOverActionType
+  inline def MFA_IF_CONFIGURED: MFA_IF_CONFIGURED = "MFA_IF_CONFIGURED".asInstanceOf[MFA_IF_CONFIGURED]
+  
+  @js.native
+  sealed trait MFA_REQUIRED
+    extends StObject
+       with AccountTakeOverActionType
+  inline def MFA_REQUIRED: MFA_REQUIRED = "MFA_REQUIRED".asInstanceOf[MFA_REQUIRED]
+  
+  @js.native
   sealed trait MODIFY extends StObject
   inline def MODIFY: MODIFY = "MODIFY".asInstanceOf[MODIFY]
   
@@ -441,6 +654,12 @@ object awsLambdaStrings {
   @js.native
   sealed trait NEW_IMAGE extends StObject
   inline def NEW_IMAGE: NEW_IMAGE = "NEW_IMAGE".asInstanceOf[NEW_IMAGE]
+  
+  @js.native
+  sealed trait NO_ACTION
+    extends StObject
+       with AccountTakeOverActionType
+  inline def NO_ACTION: NO_ACTION = "NO_ACTION".asInstanceOf[NO_ACTION]
   
   @js.native
   sealed trait NO_CACHE
@@ -469,10 +688,58 @@ object awsLambdaStrings {
   inline def OLD_IMAGE: OLD_IMAGE = "OLD_IMAGE".asInstanceOf[OLD_IMAGE]
   
   @js.native
+  sealed trait ONEZONE_IA extends StObject
+  inline def ONEZONE_IA: ONEZONE_IA = "ONEZONE_IA".asInstanceOf[ONEZONE_IA]
+  
+  @js.native
   sealed trait OUTBOUND
     extends StObject
        with ConnectContactFlowInitiationMethod
   inline def OUTBOUND: OUTBOUND = "OUTBOUND".asInstanceOf[OUTBOUND]
+  
+  @js.native
+  sealed trait OUTPOSTS extends StObject
+  inline def OUTPOSTS: OUTPOSTS = "OUTPOSTS".asInstanceOf[OUTPOSTS]
+  
+  @js.native
+  sealed trait `Object ACL Updated` extends StObject
+  inline def `Object ACL Updated`: `Object ACL Updated` = ("Object ACL Updated").asInstanceOf[`Object ACL Updated`]
+  
+  @js.native
+  sealed trait `Object Access Tier Changed` extends StObject
+  inline def `Object Access Tier Changed`: `Object Access Tier Changed` = ("Object Access Tier Changed").asInstanceOf[`Object Access Tier Changed`]
+  
+  @js.native
+  sealed trait `Object Created` extends StObject
+  inline def `Object Created`: `Object Created` = ("Object Created").asInstanceOf[`Object Created`]
+  
+  @js.native
+  sealed trait `Object Deleted` extends StObject
+  inline def `Object Deleted`: `Object Deleted` = ("Object Deleted").asInstanceOf[`Object Deleted`]
+  
+  @js.native
+  sealed trait `Object Restore Completed` extends StObject
+  inline def `Object Restore Completed`: `Object Restore Completed` = ("Object Restore Completed").asInstanceOf[`Object Restore Completed`]
+  
+  @js.native
+  sealed trait `Object Restore Expired` extends StObject
+  inline def `Object Restore Expired`: `Object Restore Expired` = ("Object Restore Expired").asInstanceOf[`Object Restore Expired`]
+  
+  @js.native
+  sealed trait `Object Restore Initiated` extends StObject
+  inline def `Object Restore Initiated`: `Object Restore Initiated` = ("Object Restore Initiated").asInstanceOf[`Object Restore Initiated`]
+  
+  @js.native
+  sealed trait `Object Storage Class Changed` extends StObject
+  inline def `Object Storage Class Changed`: `Object Storage Class Changed` = ("Object Storage Class Changed").asInstanceOf[`Object Storage Class Changed`]
+  
+  @js.native
+  sealed trait `Object Tags Added` extends StObject
+  inline def `Object Tags Added`: `Object Tags Added` = ("Object Tags Added").asInstanceOf[`Object Tags Added`]
+  
+  @js.native
+  sealed trait `Object Tags Deleted` extends StObject
+  inline def `Object Tags Deleted`: `Object Tags Deleted` = ("Object Tags Deleted").asInstanceOf[`Object Tags Deleted`]
   
   @js.native
   sealed trait Ok
@@ -487,6 +754,10 @@ object awsLambdaStrings {
   inline def PARAMETER_STORE: PARAMETER_STORE = "PARAMETER_STORE".asInstanceOf[PARAMETER_STORE]
   
   @js.native
+  sealed trait PASS extends StObject
+  inline def PASS: PASS = "PASS".asInstanceOf[PASS]
+  
+  @js.native
   sealed trait PASSWORD_VERIFIER
     extends StObject
        with ChallengeName
@@ -497,6 +768,10 @@ object awsLambdaStrings {
     extends StObject
        with CodeBuildEnvironmentVariableType
   inline def PLAINTEXT: PLAINTEXT = "PLAINTEXT".asInstanceOf[PLAINTEXT]
+  
+  @js.native
+  sealed trait `POST Object` extends StObject
+  inline def `POST Object`: `POST Object` = ("POST Object").asInstanceOf[`POST Object`]
   
   @js.native
   sealed trait POST_BUILD
@@ -511,6 +786,10 @@ object awsLambdaStrings {
   inline def PRE_BUILD: PRE_BUILD = "PRE_BUILD".asInstanceOf[PRE_BUILD]
   
   @js.native
+  sealed trait PROCESSING_FAILED extends StObject
+  inline def PROCESSING_FAILED: PROCESSING_FAILED = "PROCESSING_FAILED".asInstanceOf[PROCESSING_FAILED]
+  
+  @js.native
   sealed trait PROVISIONING
     extends StObject
        with CodeBuildPhaseType
@@ -521,6 +800,10 @@ object awsLambdaStrings {
     extends StObject
        with S3BatchResultResultCode
   inline def PermanentFailure: PermanentFailure = "PermanentFailure".asInstanceOf[PermanentFailure]
+  
+  @js.native
+  sealed trait `Permanently Deleted` extends StObject
+  inline def `Permanently Deleted`: `Permanently Deleted` = ("Permanently Deleted").asInstanceOf[`Permanently Deleted`]
   
   @js.native
   sealed trait PlainText_ extends StObject
@@ -561,10 +844,24 @@ object awsLambdaStrings {
   inline def ProcessingFailed: ProcessingFailed = "ProcessingFailed".asInstanceOf[ProcessingFailed]
   
   @js.native
+  sealed trait PutObject extends StObject
+  inline def PutObject: PutObject = "PutObject".asInstanceOf[PutObject]
+  
+  @js.native
   sealed trait QUEUED
     extends StObject
        with CodeBuildPhaseType
   inline def QUEUED: QUEUED = "QUEUED".asInstanceOf[QUEUED]
+  
+  @js.native
+  sealed trait REBALANCE
+    extends StObject
+       with AutoScalingScaleInCause
+  inline def REBALANCE: REBALANCE = "REBALANCE".asInstanceOf[REBALANCE]
+  
+  @js.native
+  sealed trait REDUCED_REDUNDANCY extends StObject
+  inline def REDUCED_REDUNDANCY: REDUCED_REDUNDANCY = "REDUCED_REDUNDANCY".asInstanceOf[REDUCED_REDUNDANCY]
   
   @js.native
   sealed trait REMOVE extends StObject
@@ -592,11 +889,23 @@ object awsLambdaStrings {
   inline def RESUMED: RESUMED = "RESUMED".asInstanceOf[RESUMED]
   
   @js.native
+  sealed trait ReadyForFulfillment
+    extends StObject
+       with LexV2IntentState
+  inline def ReadyForFulfillment: ReadyForFulfillment = "ReadyForFulfillment".asInstanceOf[ReadyForFulfillment]
+  
+  @js.native
   sealed trait S3
     extends StObject
        with CodeBuildCacheType
        with CodeBuildSourceLocationType
   inline def S3: S3 = "S3".asInstanceOf[S3]
+  
+  @js.native
+  sealed trait SCALE_IN
+    extends StObject
+       with AutoScalingScaleInCause
+  inline def SCALE_IN: SCALE_IN = "SCALE_IN".asInstanceOf[SCALE_IN]
   
   @js.native
   sealed trait SECRETS_MANAGER
@@ -621,6 +930,10 @@ object awsLambdaStrings {
   inline def SMS_MFA: SMS_MFA = "SMS_MFA".asInstanceOf[SMS_MFA]
   
   @js.native
+  sealed trait SNS extends StObject
+  inline def SNS: SNS = "SNS".asInstanceOf[SNS]
+  
+  @js.native
   sealed trait SRP_A
     extends StObject
        with ChallengeName
@@ -629,6 +942,14 @@ object awsLambdaStrings {
   @js.native
   sealed trait SSML extends StObject
   inline def SSML: SSML = "SSML".asInstanceOf[SSML]
+  
+  @js.native
+  sealed trait STANDARD extends StObject
+  inline def STANDARD: STANDARD = "STANDARD".asInstanceOf[STANDARD]
+  
+  @js.native
+  sealed trait STANDARD_IA extends StObject
+  inline def STANDARD_IA: STANDARD_IA = "STANDARD_IA".asInstanceOf[STANDARD_IA]
   
   @js.native
   sealed trait STARTED
@@ -676,6 +997,10 @@ object awsLambdaStrings {
   inline def SUPPRESS: SUPPRESS = "SUPPRESS".asInstanceOf[SUPPRESS]
   
   @js.native
+  sealed trait Scalar extends StObject
+  inline def Scalar: Scalar = "Scalar".asInstanceOf[Scalar]
+  
+  @js.native
   sealed trait `Scheduled Event` extends StObject
   inline def `Scheduled Event`: `Scheduled Event` = ("Scheduled Event").asInstanceOf[`Scheduled Event`]
   
@@ -684,6 +1009,22 @@ object awsLambdaStrings {
     extends StObject
        with CodePipelineActionCategory
   inline def Source: Source = "Source".asInstanceOf[Source]
+  
+  @js.native
+  sealed trait Speech extends StObject
+  inline def Speech: Speech = "Speech".asInstanceOf[Speech]
+  
+  @js.native
+  sealed trait SpellByLetter extends StObject
+  inline def SpellByLetter: SpellByLetter = "SpellByLetter".asInstanceOf[SpellByLetter]
+  
+  @js.native
+  sealed trait SpellByWord extends StObject
+  inline def SpellByWord: SpellByWord = "SpellByWord".asInstanceOf[SpellByWord]
+  
+  @js.native
+  sealed trait Stop extends StObject
+  inline def Stop: Stop = "Stop".asInstanceOf[Stop]
   
   @js.native
   sealed trait String
@@ -808,6 +1149,16 @@ object awsLambdaStrings {
   inline def WINDOWS_CONTAINER: WINDOWS_CONTAINER = "WINDOWS_CONTAINER".asInstanceOf[WINDOWS_CONTAINER]
   
   @js.native
+  sealed trait Waiting
+    extends StObject
+       with LexV2IntentState
+  inline def Waiting: Waiting = "Waiting".asInstanceOf[Waiting]
+  
+  @js.native
+  sealed trait WorkMail extends StObject
+  inline def WorkMail: WorkMail = "WorkMail".asInstanceOf[WorkMail]
+  
+  @js.native
   sealed trait applicationSlashvndDotamazonawsDotcardDotgeneric extends StObject
   inline def applicationSlashvndDotamazonawsDotcardDotgeneric: applicationSlashvndDotamazonawsDotcardDotgeneric = "application/vnd.amazonaws.card.generic".asInstanceOf[applicationSlashvndDotamazonawsDotcardDotgeneric]
   
@@ -824,8 +1175,24 @@ object awsLambdaStrings {
   inline def awsDotcodepipeline: awsDotcodepipeline = "aws.codepipeline".asInstanceOf[awsDotcodepipeline]
   
   @js.native
+  sealed trait awsDots3 extends StObject
+  inline def awsDots3: awsDots3 = "aws.s3".asInstanceOf[awsDots3]
+  
+  @js.native
   sealed trait base64 extends StObject
   inline def base64: base64 = "base64".asInstanceOf[base64]
+  
+  @js.native
+  sealed trait createSecret
+    extends StObject
+       with SecretsManagerRotationEventStep
+  inline def createSecret: createSecret = "createSecret".asInstanceOf[createSecret]
+  
+  @js.native
+  sealed trait finishSecret
+    extends StObject
+       with SecretsManagerRotationEventStep
+  inline def finishSecret: finishSecret = "finishSecret".asInstanceOf[finishSecret]
   
   @js.native
   sealed trait http extends StObject
@@ -840,6 +1207,12 @@ object awsLambdaStrings {
   inline def none_ : none_ = "none".asInstanceOf[none_]
   
   @js.native
+  sealed trait `on-demand`
+    extends StObject
+       with AutoScalingInstanceMarketOption
+  inline def `on-demand`: `on-demand` = "on-demand".asInstanceOf[`on-demand`]
+  
+  @js.native
   sealed trait `origin-access-identity` extends StObject
   inline def `origin-access-identity`: `origin-access-identity` = "origin-access-identity".asInstanceOf[`origin-access-identity`]
   
@@ -852,12 +1225,42 @@ object awsLambdaStrings {
   inline def `origin-response`: `origin-response` = "origin-response".asInstanceOf[`origin-response`]
   
   @js.native
+  sealed trait quarantine extends StObject
+  inline def quarantine: quarantine = "quarantine".asInstanceOf[quarantine]
+  
+  @js.native
   sealed trait `read-only` extends StObject
   inline def `read-only`: `read-only` = "read-only".asInstanceOf[`read-only`]
   
   @js.native
+  sealed trait reject extends StObject
+  inline def reject: reject = "reject".asInstanceOf[reject]
+  
+  @js.native
   sealed trait replace extends StObject
   inline def replace: replace = "replace".asInstanceOf[replace]
+  
+  @js.native
+  sealed trait s3DotamazonawsDotcom extends StObject
+  inline def s3DotamazonawsDotcom: s3DotamazonawsDotcom = "s3.amazonaws.com".asInstanceOf[s3DotamazonawsDotcom]
+  
+  @js.native
+  sealed trait setSecret
+    extends StObject
+       with SecretsManagerRotationEventStep
+  inline def setSecret: setSecret = "setSecret".asInstanceOf[setSecret]
+  
+  @js.native
+  sealed trait spot
+    extends StObject
+       with AutoScalingInstanceMarketOption
+  inline def spot: spot = "spot".asInstanceOf[spot]
+  
+  @js.native
+  sealed trait testSecret
+    extends StObject
+       with SecretsManagerRotationEventStep
+  inline def testSecret: testSecret = "testSecret".asInstanceOf[testSecret]
   
   @js.native
   sealed trait text_ extends StObject

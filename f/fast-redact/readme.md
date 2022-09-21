@@ -1,7 +1,7 @@
 
 # Scala.js typings for fast-redact
 
-Typings are for version 2.0
+Typings are for version 3.0
 
 ## Library description:
 very fast object redaction
@@ -10,10 +10,10 @@ very fast object redaction
 | ------------------ | :-------------: |
 | Full name          | fast-redact |
 | Keywords           | redact, censor, performance, performant, gdpr, fast, speed, serialize, stringify |
-| # releases         | 7 |
-| # dependents       | 9 |
-| # downloads        | 32003128 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 1.2239816E7 |
+| # stars            | 203.0 |
 
 ## Links
 - [Homepage](https://github.com/davidmarkclements/fast-redact#readme)

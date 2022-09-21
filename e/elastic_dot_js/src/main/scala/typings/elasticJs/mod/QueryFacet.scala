@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elastic.js", "QueryFacet")
 @js.native
-class QueryFacet protected ()
+open class QueryFacet protected ()
   extends StObject
      with Facet {
   /*
@@ -61,5 +61,5 @@ class QueryFacet protected ()
     Retrieves the internal facet object. This is typically used by
     internal API functions so use with caution.
     */
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
 }

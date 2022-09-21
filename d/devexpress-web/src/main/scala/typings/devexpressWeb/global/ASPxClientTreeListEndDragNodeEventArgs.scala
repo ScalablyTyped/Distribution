@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientTreeListEndDragNodeEventArgs")
 @js.native
-class ASPxClientTreeListEndDragNodeEventArgs ()
+open class ASPxClientTreeListEndDragNodeEventArgs ()
   extends StObject
      with typings.devexpressWeb.ASPxClientTreeListEndDragNodeEventArgs {
   
@@ -23,7 +23,7 @@ class ASPxClientTreeListEndDragNodeEventArgs ()
     * Provides access to the parameters associated with the ASPxClientTreeList.NodeClick and ASPxClientTreeList.NodeDblClick events.
     */
   /* CompleteClass */
-  var htmlEvent: js.Any = js.native
+  var htmlEvent: Any = js.native
   
   /**
     * Gets the processed node's key value.
@@ -35,5 +35,5 @@ class ASPxClientTreeListEndDragNodeEventArgs ()
     * Gets the target element.
     */
   /* CompleteClass */
-  var targetElement: js.Any = js.native
+  var targetElement: Any = js.native
 }

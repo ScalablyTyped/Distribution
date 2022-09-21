@@ -1,8 +1,7 @@
 package typings.nodeZopfliEs
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Transform
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ object mod {
   
   @JSImport("node-zopfli-es", JSImport.Namespace)
   @js.native
-  class ^ () extends Transform {
+  open class ^ () extends Transform {
     def this(format: Format) = this()
     def this(format: Unit, options: Options) = this()
     def this(format: Format, options: Options) = this()
@@ -23,14 +22,14 @@ object mod {
   /* static member */
   inline def compress(input: Buffer, format: Format): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(input.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   /* static member */
-  inline def compress(input: Buffer, format: Format, cb: js.Function2[/* err */ Error, /* out */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(input.asInstanceOf[js.Any], format.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def compress(input: Buffer, format: Format, cb: js.Function2[/* err */ js.Error, /* out */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(input.asInstanceOf[js.Any], format.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def compress(input: Buffer, format: Format, options: Options): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(input.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   /* static member */
   inline def compress(
     input: Buffer,
     format: Format,
     options: Options,
-    cb: js.Function2[/* err */ Error, /* out */ Buffer, Unit]
+    cb: js.Function2[/* err */ js.Error, /* out */ Buffer, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(input.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
@@ -48,10 +47,10 @@ object mod {
   /* static member */
   inline def deflate(input: Buffer): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("deflate")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
   /* static member */
-  inline def deflate(input: Buffer, cb: js.Function2[/* err */ Error, /* out */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deflate")(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def deflate(input: Buffer, cb: js.Function2[/* err */ js.Error, /* out */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deflate")(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def deflate(input: Buffer, options: Options): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("deflate")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   /* static member */
-  inline def deflate(input: Buffer, options: Options, cb: js.Function2[/* err */ Error, /* out */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deflate")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def deflate(input: Buffer, options: Options, cb: js.Function2[/* err */ js.Error, /* out */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deflate")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
   inline def deflateSync(): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("deflateSync")().asInstanceOf[Buffer]
@@ -60,10 +59,10 @@ object mod {
   /* static member */
   inline def gzip(input: Buffer): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("gzip")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
   /* static member */
-  inline def gzip(input: Buffer, cb: js.Function2[/* err */ Error, /* out */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("gzip")(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def gzip(input: Buffer, cb: js.Function2[/* err */ js.Error, /* out */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("gzip")(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def gzip(input: Buffer, options: Options): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("gzip")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   /* static member */
-  inline def gzip(input: Buffer, options: Options, cb: js.Function2[/* err */ Error, /* out */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("gzip")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def gzip(input: Buffer, options: Options, cb: js.Function2[/* err */ js.Error, /* out */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("gzip")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
   inline def gzipSync(): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("gzipSync")().asInstanceOf[Buffer]
@@ -72,10 +71,10 @@ object mod {
   /* static member */
   inline def zlib(input: Buffer): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("zlib")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
   /* static member */
-  inline def zlib(input: Buffer, cb: js.Function2[/* err */ Error, /* out */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("zlib")(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def zlib(input: Buffer, cb: js.Function2[/* err */ js.Error, /* out */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("zlib")(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def zlib(input: Buffer, options: Options): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("zlib")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   /* static member */
-  inline def zlib(input: Buffer, options: Options, cb: js.Function2[/* err */ Error, /* out */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("zlib")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def zlib(input: Buffer, options: Options, cb: js.Function2[/* err */ js.Error, /* out */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("zlib")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
   inline def zlibSync(): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("zlibSync")().asInstanceOf[Buffer]

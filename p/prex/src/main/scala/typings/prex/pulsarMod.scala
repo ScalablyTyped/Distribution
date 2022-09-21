@@ -1,6 +1,6 @@
 package typings.prex
 
-import typings.esfxCancelable.distMod.Cancelable
+import typings.esfxCancelable.mod.Cancelable
 import typings.prex.cancellationMod.CancellationToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,9 +10,9 @@ object pulsarMod {
   
   @JSImport("prex/out/lib/pulsar", "Pulsar")
   @js.native
-  class Pulsar () extends StObject {
+  open class Pulsar () extends StObject {
     
-    /* private */ var _waiters: js.Any = js.native
+    /* private */ var _waiters: Any = js.native
     
     /**
       * Notifies the next waiter.

@@ -9,7 +9,7 @@ trait GetTraceSummariesRequest extends StObject {
   /**
     * The end of the time frame for which to retrieve traces.
     */
-  var EndTime: Timestamp
+  var EndTime: js.Date
   
   /**
     * Specify a filter expression to retrieve trace summaries for services or requests that meet certain requirements.
@@ -34,7 +34,7 @@ trait GetTraceSummariesRequest extends StObject {
   /**
     * The start of the time frame for which to retrieve traces.
     */
-  var StartTime: Timestamp
+  var StartTime: js.Date
   
   /**
     * A parameter to indicate whether to query trace summaries by TraceId or Event time.
@@ -43,14 +43,14 @@ trait GetTraceSummariesRequest extends StObject {
 }
 object GetTraceSummariesRequest {
   
-  inline def apply(EndTime: Timestamp, StartTime: Timestamp): GetTraceSummariesRequest = {
+  inline def apply(EndTime: js.Date, StartTime: js.Date): GetTraceSummariesRequest = {
     val __obj = js.Dynamic.literal(EndTime = EndTime.asInstanceOf[js.Any], StartTime = StartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTraceSummariesRequest]
   }
   
   extension [Self <: GetTraceSummariesRequest](x: Self) {
     
-    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setFilterExpression(value: FilterExpression): Self = StObject.set(x, "FilterExpression", value.asInstanceOf[js.Any])
     
@@ -68,7 +68,7 @@ object GetTraceSummariesRequest {
     
     inline def setSamplingUndefined: Self = StObject.set(x, "Sampling", js.undefined)
     
-    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setTimeRangeType(value: TimeRangeType): Self = StObject.set(x, "TimeRangeType", value.asInstanceOf[js.Any])
     

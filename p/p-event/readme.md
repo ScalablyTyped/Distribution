@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-event
 
-Typings are for version 4.2.0
+Typings are for version 5.0.1
 
 ## Library description:
 Promisify an event by waiting for it to be emitted
@@ -10,10 +10,10 @@ Promisify an event by waiting for it to be emitted
 | ------------------ | :-------------: |
 | Full name          | p-event |
 | Keywords           | promise, events, event, emitter, eventemitter, event-emitter, emit, emits, listener, promisify, addlistener, addeventlistener, wait, waits, on, browser, dom, async, await, promises, bluebird |
-| # releases         | 8 |
-| # dependents       | 92 |
-| # downloads        | 100497915 |
-| # stars            | 2 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 3.2709681333333332E7 |
+| # stars            | 386.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/p-event#readme)

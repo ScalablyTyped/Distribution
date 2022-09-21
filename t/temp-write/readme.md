@@ -1,7 +1,7 @@
 
 # Scala.js typings for temp-write
 
-Typings are for version 4.0.0
+Typings are for version 5.0.0
 
 ## Library description:
 Write string/buffer/stream to a random temp file
@@ -10,15 +10,12 @@ Write string/buffer/stream to a random temp file
 | ------------------ | :-------------: |
 | Full name          | temp-write |
 | Keywords           | temp, temporary, tempfile, file, filename, path, random, write, fs, string, buffer, stream |
-| # releases         | 2 |
-| # dependents       | 136 |
-| # downloads        | 55017908 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6311416.0 |
+| # stars            | 97.0 |
 
 ## Links
-- [Homepage](https://github.com/sindresorhus/temp-write#readme)
-- [Bugs](https://github.com/sindresorhus/temp-write/issues)
-- [Repository](https://github.com/sindresorhus/temp-write)
 - [Npm](https://www.npmjs.com/package/temp-write)
     
 

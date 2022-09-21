@@ -11,7 +11,7 @@ trait IOneOf extends StObject {
   var oneof: js.Array[String]
   
   /** Oneof options */
-  var options: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var options: js.UndefOr[StringDictionary[Any]] = js.undefined
 }
 object IOneOf {
   
@@ -24,9 +24,9 @@ object IOneOf {
     
     inline def setOneof(value: js.Array[String]): Self = StObject.set(x, "oneof", value.asInstanceOf[js.Any])
     
-    inline def setOneofVarargs(value: String*): Self = StObject.set(x, "oneof", js.Array(value :_*))
+    inline def setOneofVarargs(value: String*): Self = StObject.set(x, "oneof", js.Array(value*))
     
-    inline def setOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: StringDictionary[Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }

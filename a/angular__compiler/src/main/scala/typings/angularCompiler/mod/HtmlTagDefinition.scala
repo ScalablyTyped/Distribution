@@ -7,7 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "HtmlTagDefinition")
 @js.native
-class HtmlTagDefinition ()
-  extends typings.angularCompiler.compilerMod.HtmlTagDefinition {
+open class HtmlTagDefinition ()
+  extends StObject
+     with TagDefinition {
   def this(hasClosedByChildrenImplicitNamespacePrefixContentTypeClosedByParentIsVoidIgnoreFirstLfPreventNamespaceInheritance: ClosedByChildren) = this()
+  
+  /* private */ var closedByChildren: Any = js.native
+  
+  /* private */ var contentType: Any = js.native
 }

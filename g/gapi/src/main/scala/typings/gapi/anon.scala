@@ -51,7 +51,7 @@ object anon {
       
       inline def setDiscoveryDocsUndefined: Self = StObject.set(x, "discoveryDocs", js.undefined)
       
-      inline def setDiscoveryDocsVarargs(value: String*): Self = StObject.set(x, "discoveryDocs", js.Array(value :_*))
+      inline def setDiscoveryDocsVarargs(value: String*): Self = StObject.set(x, "discoveryDocs", js.Array(value*))
       
       inline def setHosted_domain(value: String): Self = StObject.set(x, "hosted_domain", value.asInstanceOf[js.Any])
       
@@ -93,12 +93,12 @@ object anon {
     /**
       * If your app will write moments, list the full URI of the types of moments that you intend to write.
       */
-    var requestvisibleactions: js.UndefOr[js.Any] = js.undefined
+    var requestvisibleactions: js.UndefOr[Any] = js.undefined
     
     /**
       * The OAuth 2.0 scopes for the APIs that you would like to use as a space-delimited list.
       */
-    var scope: js.UndefOr[js.Any] = js.undefined
+    var scope: js.UndefOr[Any] = js.undefined
   }
   object Apppackagename {
     
@@ -129,11 +129,11 @@ object anon {
       
       inline def setIncludegrantedscopesUndefined: Self = StObject.set(x, "includegrantedscopes", js.undefined)
       
-      inline def setRequestvisibleactions(value: js.Any): Self = StObject.set(x, "requestvisibleactions", value.asInstanceOf[js.Any])
+      inline def setRequestvisibleactions(value: Any): Self = StObject.set(x, "requestvisibleactions", value.asInstanceOf[js.Any])
       
       inline def setRequestvisibleactionsUndefined: Self = StObject.set(x, "requestvisibleactions", js.undefined)
       
-      inline def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
       inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     }
@@ -160,7 +160,7 @@ object anon {
     
     var body: String
     
-    var headers: js.Array[js.Any]
+    var headers: js.Array[Any]
     
     var status: Double
     
@@ -168,7 +168,7 @@ object anon {
   }
   object Body {
     
-    inline def apply(body: String, headers: js.Array[js.Any], status: Double, statusText: String): Body = {
+    inline def apply(body: String, headers: js.Array[Any], status: Double, statusText: String): Body = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any])
       __obj.asInstanceOf[Body]
     }
@@ -177,9 +177,9 @@ object anon {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      inline def setHeaders(value: js.Array[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Array[Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      inline def setHeadersVarargs(value: js.Any*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: Any*): Self = StObject.set(x, "headers", js.Array(value*))
       
       inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
@@ -193,12 +193,12 @@ object anon {
       /**
       * is the response for this request only. Its format is defined by the API method being called.
       */
-    individualResponse: js.Any,
+    individualResponse: Any,
       /**
       * is the raw batch ID-response map as a string. It contains all responses to all requests in the batch.
       */
-    rawBatchResponse: js.Any
-    ): js.Any
+    rawBatchResponse: Any
+    ): Any
     
     /**
       * Identifies the response for this request in the map of batch responses. If one is not provided, the system generates a random ID.
@@ -207,14 +207,14 @@ object anon {
   }
   object Callback {
     
-    inline def apply(callback: (js.Any, js.Any) => js.Any, id: String): Callback = {
+    inline def apply(callback: (Any, Any) => Any, id: String): Callback = {
       val __obj = js.Dynamic.literal(callback = js.Any.fromFunction2(callback), id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[Callback]
     }
     
     extension [Self <: Callback](x: Self) {
       
-      inline def setCallback(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+      inline def setCallback(value: (Any, Any) => Any): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -245,7 +245,7 @@ object anon {
     /**
       * The auth scope or scopes to authorize. Auth scopes for individual APIs can be found in their documentation.
       */
-    var scope: js.UndefOr[js.Any] = js.undefined
+    var scope: js.UndefOr[Any] = js.undefined
   }
   object Clientid {
     
@@ -272,7 +272,7 @@ object anon {
       
       inline def setResponse_typeUndefined: Self = StObject.set(x, "response_type", js.undefined)
       
-      inline def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
       inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     }

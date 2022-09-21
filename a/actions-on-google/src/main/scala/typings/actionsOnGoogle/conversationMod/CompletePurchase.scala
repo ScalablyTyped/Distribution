@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param options The raw {@link GoogleActionsTransactionsV3CompletePurchaseValueSpec}
   * @public
   */
-class CompletePurchase ()
+open class CompletePurchase ()
   extends typings.actionsOnGoogle.helperMod.CompletePurchase {
   def this(options: GoogleActionsTransactionsV3CompletePurchaseValueSpec) = this()
 }

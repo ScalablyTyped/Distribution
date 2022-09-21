@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("gitlab", "CommitDiscussions")
 @js.native
-class CommitDiscussions protected ()
+open class CommitDiscussions protected ()
   extends typings.gitlab.servicesMod.CommitDiscussions {
   def this(options: BaseServiceOptions) = this()
 }

@@ -35,7 +35,7 @@ object XCompatibilityNames {
   inline def apply(
     acquire: () => Unit,
     getCompatibilityNames: String => SafeArray[LocalizedName],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XCompatibilityNames = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getCompatibilityNames = js.Any.fromFunction1(getCompatibilityNames), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

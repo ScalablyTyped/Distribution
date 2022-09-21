@@ -10,7 +10,7 @@ trait TreeHierarchicalDataSourceSettingsTreeDSSorting
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Specifies from which data bound level to be applied sorting - 0 is the first level

@@ -4,6 +4,7 @@ import typings.vegaLite.channeldefMod.FieldName
 import typings.vegaLite.datetimeMod.DateTime
 import typings.vegaLite.exprMod.ExprRef
 import typings.vegaLite.logicalMod.LogicalComposition
+import typings.vegaLite.parameterMod.ParameterName
 import typings.vegaLite.srcTimeunitMod.TimeUnit
 import typings.vegaLite.srcTimeunitMod.TimeUnitParams
 import typings.vegaTypings.signalMod.SignalRef
@@ -23,25 +24,25 @@ object srcPredicateMod {
   inline def fieldValidPredicate(fieldExpr: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fieldValidPredicate")(fieldExpr.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def fieldValidPredicate(fieldExpr: String, valid: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fieldValidPredicate")(fieldExpr.asInstanceOf[js.Any], valid.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def isFieldEqualPredicate(predicate: js.Any): /* is vega-lite.vega-lite/build/src/predicate.FieldEqualPredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldEqualPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/predicate.FieldEqualPredicate */ Boolean]
+  inline def isFieldEqualPredicate(predicate: Any): /* is vega-lite.vega-lite/build/src/predicate.FieldEqualPredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldEqualPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/predicate.FieldEqualPredicate */ Boolean]
   
-  inline def isFieldGTEPredicate(predicate: js.Any): /* is vega-lite.vega-lite/build/src/predicate.FieldGTEPredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldGTEPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/predicate.FieldGTEPredicate */ Boolean]
+  inline def isFieldGTEPredicate(predicate: Any): /* is vega-lite.vega-lite/build/src/predicate.FieldGTEPredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldGTEPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/predicate.FieldGTEPredicate */ Boolean]
   
-  inline def isFieldGTPredicate(predicate: js.Any): /* is vega-lite.vega-lite/build/src/predicate.FieldGTPredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldGTPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/predicate.FieldGTPredicate */ Boolean]
+  inline def isFieldGTPredicate(predicate: Any): /* is vega-lite.vega-lite/build/src/predicate.FieldGTPredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldGTPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/predicate.FieldGTPredicate */ Boolean]
   
-  inline def isFieldLTEPredicate(predicate: js.Any): /* is vega-lite.vega-lite/build/src/predicate.FieldLTEPredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldLTEPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/predicate.FieldLTEPredicate */ Boolean]
+  inline def isFieldLTEPredicate(predicate: Any): /* is vega-lite.vega-lite/build/src/predicate.FieldLTEPredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldLTEPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/predicate.FieldLTEPredicate */ Boolean]
   
-  inline def isFieldLTPredicate(predicate: js.Any): /* is vega-lite.vega-lite/build/src/predicate.FieldLTPredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldLTPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/predicate.FieldLTPredicate */ Boolean]
+  inline def isFieldLTPredicate(predicate: Any): /* is vega-lite.vega-lite/build/src/predicate.FieldLTPredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldLTPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/predicate.FieldLTPredicate */ Boolean]
   
-  inline def isFieldOneOfPredicate(predicate: js.Any): /* is vega-lite.vega-lite/build/src/predicate.FieldOneOfPredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldOneOfPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/predicate.FieldOneOfPredicate */ Boolean]
+  inline def isFieldOneOfPredicate(predicate: Any): /* is vega-lite.vega-lite/build/src/predicate.FieldOneOfPredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldOneOfPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/predicate.FieldOneOfPredicate */ Boolean]
   
   inline def isFieldPredicate(predicate: Predicate): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def isFieldRangePredicate(predicate: js.Any): /* is vega-lite.vega-lite/build/src/predicate.FieldRangePredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldRangePredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/predicate.FieldRangePredicate */ Boolean]
+  inline def isFieldRangePredicate(predicate: Any): /* is vega-lite.vega-lite/build/src/predicate.FieldRangePredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldRangePredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/predicate.FieldRangePredicate */ Boolean]
   
-  inline def isFieldValidPredicate(predicate: js.Any): /* is vega-lite.vega-lite/build/src/predicate.FieldValidPredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldValidPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/predicate.FieldValidPredicate */ Boolean]
+  inline def isFieldValidPredicate(predicate: Any): /* is vega-lite.vega-lite/build/src/predicate.FieldValidPredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldValidPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/predicate.FieldValidPredicate */ Boolean]
   
-  inline def isSelectionPredicate(predicate: LogicalComposition[Predicate]): /* is vega-lite.vega-lite/build/src/predicate.SelectionPredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSelectionPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/predicate.SelectionPredicate */ Boolean]
+  inline def isSelectionPredicate(predicate: LogicalComposition[Predicate]): /* is vega-lite.vega-lite/build/src/predicate.ParameterPredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSelectionPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/predicate.ParameterPredicate */ Boolean]
   
   inline def normalizePredicate(f: Predicate): Predicate = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizePredicate")(f.asInstanceOf[js.Any]).asInstanceOf[Predicate]
   
@@ -188,7 +189,7 @@ object srcPredicateMod {
       
       inline def setOneOf(value: js.Array[Boolean | DateTime | Double | String]): Self = StObject.set(x, "oneOf", value.asInstanceOf[js.Any])
       
-      inline def setOneOfVarargs(value: (Boolean | DateTime | Double | String)*): Self = StObject.set(x, "oneOf", js.Array(value :_*))
+      inline def setOneOfVarargs(value: (Boolean | DateTime | Double | String)*): Self = StObject.set(x, "oneOf", js.Array(value*))
     }
   }
   
@@ -306,7 +307,7 @@ object srcPredicateMod {
       
       inline def setRange(value: (js.Array[Double | DateTime | Null | ExprRef | SignalRef]) | ExprRef | SignalRef): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
-      inline def setRangeVarargs(value: (Double | DateTime | Null | ExprRef | SignalRef)*): Self = StObject.set(x, "range", js.Array(value :_*))
+      inline def setRangeVarargs(value: (Double | DateTime | Null | ExprRef | SignalRef)*): Self = StObject.set(x, "range", js.Array(value*))
     }
   }
   
@@ -334,6 +335,38 @@ object srcPredicateMod {
     }
   }
   
+  trait ParameterPredicate
+    extends StObject
+       with _Predicate {
+    
+    /**
+      * For selection parameters, the predicate of empty selections returns true by default.
+      * Override this behavior, by setting this property `empty: false`.
+      */
+    var empty: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Filter using a parameter name.
+      */
+    var param: ParameterName
+  }
+  object ParameterPredicate {
+    
+    inline def apply(param: ParameterName): ParameterPredicate = {
+      val __obj = js.Dynamic.literal(param = param.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ParameterPredicate]
+    }
+    
+    extension [Self <: ParameterPredicate](x: Self) {
+      
+      inline def setEmpty(value: Boolean): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
+      
+      inline def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
+      
+      inline def setParam(value: ParameterName): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
+    }
+  }
+  
   /* Rewritten from type alias, can be one of: 
     - typings.vegaLite.srcPredicateMod.FieldEqualPredicate
     - typings.vegaLite.srcPredicateMod.FieldRangePredicate
@@ -343,32 +376,10 @@ object srcPredicateMod {
     - typings.vegaLite.srcPredicateMod.FieldLTEPredicate
     - typings.vegaLite.srcPredicateMod.FieldGTEPredicate
     - typings.vegaLite.srcPredicateMod.FieldValidPredicate_
-    - typings.vegaLite.srcPredicateMod.SelectionPredicate
+    - typings.vegaLite.srcPredicateMod.ParameterPredicate
     - java.lang.String
   */
   type Predicate = _Predicate | String
-  
-  trait SelectionPredicate
-    extends StObject
-       with _Predicate {
-    
-    /**
-      * Filter using a selection name or a logical composition of selection names.
-      */
-    var selection: LogicalComposition[String]
-  }
-  object SelectionPredicate {
-    
-    inline def apply(selection: LogicalComposition[String]): SelectionPredicate = {
-      val __obj = js.Dynamic.literal(selection = selection.asInstanceOf[js.Any])
-      __obj.asInstanceOf[SelectionPredicate]
-    }
-    
-    extension [Self <: SelectionPredicate](x: Self) {
-      
-      inline def setSelection(value: LogicalComposition[String]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
-    }
-  }
   
   trait _Predicate extends StObject
   object _Predicate {
@@ -416,9 +427,9 @@ object srcPredicateMod {
       __obj.asInstanceOf[typings.vegaLite.srcPredicateMod.FieldValidPredicate_]
     }
     
-    inline def SelectionPredicate(selection: LogicalComposition[String]): typings.vegaLite.srcPredicateMod.SelectionPredicate = {
-      val __obj = js.Dynamic.literal(selection = selection.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.vegaLite.srcPredicateMod.SelectionPredicate]
+    inline def ParameterPredicate(param: ParameterName): typings.vegaLite.srcPredicateMod.ParameterPredicate = {
+      val __obj = js.Dynamic.literal(param = param.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.vegaLite.srcPredicateMod.ParameterPredicate]
     }
   }
 }

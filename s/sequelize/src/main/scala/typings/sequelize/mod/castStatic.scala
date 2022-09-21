@@ -14,4 +14,4 @@ trait castStatic
   * @param val The value to cast
   * @param type The type to cast it to
   */
-Instantiable2[/* val */ js.Any, /* type */ String, cast]
+Instantiable2[/* val */ Any, /* type */ String, cast]

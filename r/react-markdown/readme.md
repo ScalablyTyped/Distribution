@@ -1,19 +1,19 @@
 
 # Scala.js typings for react-markdown
 
-Typings are for version 5.0.3
+Typings are for version 8.0.3
 
 ## Library description:
-Render Markdown as React components
+React component to render markdown
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-markdown |
 | Keywords           | remark, unified, markdown, commonmark, gfm, ast, react, react-component, component |
-| # releases         | 15 |
-| # dependents       | 677 |
-| # downloads        | 25431962 |
-| # stars            | 17 |
+| # releases         | 17 |
+| # dependents       | 0.0 |
+| # downloads        | 4937175.666666667 |
+| # stars            | 8912.0 |
 
 ## Links
 - [Homepage](https://github.com/remarkjs/react-markdown#readme)

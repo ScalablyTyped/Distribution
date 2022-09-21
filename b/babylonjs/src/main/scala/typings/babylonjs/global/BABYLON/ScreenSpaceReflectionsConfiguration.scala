@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.ScreenSpaceReflectionsConfiguration")
 @js.native
-class ScreenSpaceReflectionsConfiguration ()
+open class ScreenSpaceReflectionsConfiguration ()
   extends StObject
      with typings.babylonjs.BABYLON.ScreenSpaceReflectionsConfiguration {
   

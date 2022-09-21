@@ -12,7 +12,7 @@ trait View extends StObject {
   var BrowseToWindow: Double = js.native
   
   def CollapseOutline(): Unit = js.native
-  def CollapseOutline(Range: js.Any): Unit = js.native
+  def CollapseOutline(Range: Any): Unit = js.native
   
   var ConflictMode: Boolean = js.native
   
@@ -29,7 +29,7 @@ trait View extends StObject {
   var EnlargeFontsLessThan: Double = js.native
   
   def ExpandOutline(): Unit = js.native
-  def ExpandOutline(Range: js.Any): Unit = js.native
+  def ExpandOutline(Range: Any): Unit = js.native
   
   var FieldShading: WdFieldShading = js.native
   
@@ -45,7 +45,7 @@ trait View extends StObject {
   
   var Panning: Boolean = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def PreviousHeaderFooter(): Unit = js.native
   

@@ -11,9 +11,9 @@ A module to transform a description of a location (i.e. street address, town nam
 | Full name          | react-geocode |
 | Keywords           | google, geocode, geocoder, geocoding |
 | # releases         | 3 |
-| # dependents       | 7 |
-| # downloads        | 893585 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 191194.33333333334 |
+| # stars            | 168.0 |
 
 ## Links
 - [Homepage](https://github.com/shukerullah/react-geocode#readme)

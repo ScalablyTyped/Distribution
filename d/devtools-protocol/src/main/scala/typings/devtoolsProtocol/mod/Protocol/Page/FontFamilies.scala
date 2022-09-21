@@ -22,9 +22,9 @@ trait FontFamilies extends StObject {
   var fixed: js.UndefOr[String] = js.undefined
   
   /**
-    * The pictograph font-family.
+    * The math font-family.
     */
-  var pictograph: js.UndefOr[String] = js.undefined
+  var math: js.UndefOr[String] = js.undefined
   
   /**
     * The sansSerif font-family.
@@ -62,9 +62,9 @@ object FontFamilies {
     
     inline def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
     
-    inline def setPictograph(value: String): Self = StObject.set(x, "pictograph", value.asInstanceOf[js.Any])
+    inline def setMath(value: String): Self = StObject.set(x, "math", value.asInstanceOf[js.Any])
     
-    inline def setPictographUndefined: Self = StObject.set(x, "pictograph", js.undefined)
+    inline def setMathUndefined: Self = StObject.set(x, "math", js.undefined)
     
     inline def setSansSerif(value: String): Self = StObject.set(x, "sansSerif", value.asInstanceOf[js.Any])
     

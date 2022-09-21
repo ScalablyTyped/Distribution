@@ -10,10 +10,10 @@ Check whether a value is empty or blank, includes string whitespace support
 | ------------------ | :-------------: |
 | Full name          | is-blank |
 | Keywords           | string, blank, whitespace, object, array, empty |
-| # releases         | 0 |
-| # dependents       | 53 |
-| # downloads        | 5808528 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 148735.66666666666 |
+| # stars            | 7.0 |
 
 ## Links
 - [Homepage](https://github.com/johnotander/is-blank#readme)

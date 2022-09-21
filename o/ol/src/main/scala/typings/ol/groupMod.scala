@@ -12,7 +12,7 @@ object groupMod {
   
   @JSImport("ol/layer/Group", JSImport.Default)
   @js.native
-  class default () extends LayerGroup {
+  open class default () extends LayerGroup {
     def this(opt_options: Options) = this()
   }
   
@@ -83,7 +83,7 @@ object groupMod {
       
       inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
       
-      inline def setLayersVarargs(value: typings.ol.baseMod.default*): Self = StObject.set(x, "layers", js.Array(value :_*))
+      inline def setLayersVarargs(value: typings.ol.baseMod.default*): Self = StObject.set(x, "layers", js.Array(value*))
       
       inline def setMaxResolution(value: Double): Self = StObject.set(x, "maxResolution", value.asInstanceOf[js.Any])
       

@@ -9,10 +9,10 @@ Pluralize and singularize any word
 | ------------------ | :-------------: |
 | Full name          | pluralize |
 | Keywords           | plural, plurals, pluralize, singular, singularize, inflection |
-| # releases         | 2 |
-| # dependents       | 2557 |
-| # downloads        | 190638135 |
-| # stars            | 33 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2.4841207333333332E7 |
+| # stars            | 1894.0 |
 
 ## Links
 - [Homepage](https://github.com/blakeembrey/pluralize#readme)

@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.Devices
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Devices.AllJoyn.AllJoynAuthenticationMechanism
 import typings.winrtUwp.Windows.Devices.AllJoyn.AllJoynBusAttachmentState
 import typings.winrtUwp.Windows.Devices.AllJoyn.AllJoynSessionLostReason
@@ -41,7 +40,7 @@ object AllJoyn {
     
     /** The date of manufacture. */
     /* CompleteClass */
-    var dateOfManufacture: Date = js.native
+    var dateOfManufacture: js.Date = js.native
     
     /** The default app name assigned by the manufacturer- either the developer or the OEM. This property is a shortcut to the entry in the AppNames property for the DefaultLanguage . */
     /* CompleteClass */
@@ -101,7 +100,7 @@ object AllJoyn {
     
     /** The date of manufacture. */
     /* CompleteClass */
-    var dateOfManufacture: Date = js.native
+    var dateOfManufacture: js.Date = js.native
     
     /** The default language of the app. */
     /* CompleteClass */
@@ -133,7 +132,7 @@ object AllJoyn {
     
     /** This is a set of fields, where each other named AllJoynAboutDataView property is also accessible. For example, ModelNumber is Properties ["ModelNumber"]. Additionally, this property can be used to get custom properties. */
     /* CompleteClass */
-    var properties: IMapView[String, js.Any] = js.native
+    var properties: IMapView[String, Any] = js.native
     
     /** The version number of the app. */
     /* CompleteClass */
@@ -190,7 +189,7 @@ object AllJoyn {
   /** Contains information about a join session request that is used to determine if the request will be accepted and initiate the session connection. */
   @JSGlobal("Windows.Devices.AllJoyn.AllJoynAcceptSessionJoinerEventArgs")
   @js.native
-  class AllJoynAcceptSessionJoinerEventArgs protected ()
+  open class AllJoynAcceptSessionJoinerEventArgs protected ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.AllJoyn.AllJoynAcceptSessionJoinerEventArgs {
     /**
@@ -279,7 +278,7 @@ object AllJoyn {
   @JSGlobal("Windows.Devices.AllJoyn.AllJoynBusAttachment")
   @js.native
   /** Generates an AllJoynBusAttachment object using the default named pipe connection specification. */
-  class AllJoynBusAttachment ()
+  open class AllJoynBusAttachment ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.AllJoyn.AllJoynBusAttachment {
     /**
@@ -423,7 +422,7 @@ object AllJoyn {
   /** Exposes information about the sender of a message being processed. */
   @JSGlobal("Windows.Devices.AllJoyn.AllJoynMessageInfo")
   @js.native
-  class AllJoynMessageInfo protected ()
+  open class AllJoynMessageInfo protected ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.AllJoyn.AllJoynMessageInfo {
     /**
@@ -440,7 +439,7 @@ object AllJoyn {
   /** Contains status information that indicates why a Producer app was stopped. */
   @JSGlobal("Windows.Devices.AllJoyn.AllJoynProducerStoppedEventArgs")
   @js.native
-  class AllJoynProducerStoppedEventArgs protected ()
+  open class AllJoynProducerStoppedEventArgs protected ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.AllJoyn.AllJoynProducerStoppedEventArgs {
     /**
@@ -457,7 +456,7 @@ object AllJoyn {
   /** Exposes unique name and transport information for an advertising app. */
   @JSGlobal("Windows.Devices.AllJoyn.AllJoynServiceInfo")
   @js.native
-  class AllJoynServiceInfo protected ()
+  open class AllJoynServiceInfo protected ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.AllJoyn.AllJoynServiceInfo {
     /**
@@ -484,7 +483,7 @@ object AllJoyn {
   /** Contains information that identifies an advertising app that is no longer available. */
   @JSGlobal("Windows.Devices.AllJoyn.AllJoynServiceInfoRemovedEventArgs")
   @js.native
-  class AllJoynServiceInfoRemovedEventArgs protected ()
+  open class AllJoynServiceInfoRemovedEventArgs protected ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.AllJoyn.AllJoynServiceInfoRemovedEventArgs {
     /**
@@ -501,7 +500,7 @@ object AllJoyn {
   /** Contains information that identifies the reason for a lost session. */
   @JSGlobal("Windows.Devices.AllJoyn.AllJoynSessionLostEventArgs")
   @js.native
-  class AllJoynSessionLostEventArgs protected ()
+  open class AllJoynSessionLostEventArgs protected ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.AllJoyn.AllJoynSessionLostEventArgs {
     /**
@@ -539,7 +538,7 @@ object AllJoyn {
   /** Contains information about a peer that was added to a session. */
   @JSGlobal("Windows.Devices.AllJoyn.AllJoynSessionMemberAddedEventArgs")
   @js.native
-  class AllJoynSessionMemberAddedEventArgs protected ()
+  open class AllJoynSessionMemberAddedEventArgs protected ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.AllJoyn.AllJoynSessionMemberAddedEventArgs {
     /**
@@ -556,7 +555,7 @@ object AllJoyn {
   /** Contains information about a remote app removed from a session. */
   @JSGlobal("Windows.Devices.AllJoyn.AllJoynSessionMemberRemovedEventArgs")
   @js.native
-  class AllJoynSessionMemberRemovedEventArgs protected ()
+  open class AllJoynSessionMemberRemovedEventArgs protected ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.AllJoyn.AllJoynSessionMemberRemovedEventArgs {
     /**
@@ -729,7 +728,7 @@ object AllJoyn {
   /** Contains information about the stopped session watcher object. */
   @JSGlobal("Windows.Devices.AllJoyn.AllJoynWatcherStoppedEventArgs")
   @js.native
-  class AllJoynWatcherStoppedEventArgs protected ()
+  open class AllJoynWatcherStoppedEventArgs protected ()
     extends StObject
        with typings.winrtUwp.Windows.Devices.AllJoyn.AllJoynWatcherStoppedEventArgs {
     /**

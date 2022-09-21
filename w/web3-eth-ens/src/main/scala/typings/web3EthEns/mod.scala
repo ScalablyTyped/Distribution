@@ -1,7 +1,6 @@
 package typings.web3EthEns
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
 import typings.web3Core.mod.PromiEvent
 import typings.web3Core.mod.TransactionConfig
 import typings.web3Core.mod.TransactionReceipt
@@ -19,92 +18,96 @@ object mod {
   
   @JSImport("web3-eth-ens", "Ens")
   @js.native
-  class Ens protected () extends StObject {
-    def this(eth: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Eth */ js.Any) = this()
+  open class Ens protected () extends StObject {
+    def this(eth: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Eth */ Any) = this()
     
     /**
       * @deprecated This callback signature is deprecated
       */
     def getAddress(name: String): js.Promise[String] = js.native
-    def getAddress(name: String, callback: js.Function1[/* value */ js.Any, Unit]): js.Promise[String] = js.native
-    def getAddress(name: String, callback: js.Function2[/* error */ Error, /* address */ String, Unit]): js.Promise[String] = js.native
+    def getAddress(name: String, callback: js.Function1[/* value */ Any, Unit]): js.Promise[String] = js.native
+    def getAddress(name: String, callback: js.Function2[/* error */ js.Error, /* address */ String, Unit]): js.Promise[String] = js.native
     
     /**
       * @deprecated This callback signature is deprecated
       */
     def getContent(name: String): js.Promise[String] = js.native
-    def getContent(name: String, callback: js.Function1[/* value */ js.Any, Unit]): js.Promise[String] = js.native
-    def getContent(name: String, callback: js.Function2[/* error */ Error, /* contentHash */ String, Unit]): js.Promise[String] = js.native
+    def getContent(name: String, callback: js.Function1[/* value */ Any, Unit]): js.Promise[String] = js.native
+    def getContent(name: String, callback: js.Function2[/* error */ js.Error, /* contentHash */ String, Unit]): js.Promise[String] = js.native
     
     /**
       * @deprecated This callback signature is deprecated
       */
     def getContenthash(name: String): js.Promise[ContentHash] = js.native
     def getContenthash(name: String, callback: js.Function1[/* value */ ContentHash, Unit]): js.Promise[ContentHash] = js.native
-    def getContenthash(name: String, callback: js.Function2[/* error */ Error, /* contenthash */ ContentHash, Unit]): js.Promise[ContentHash] = js.native
+    def getContenthash(name: String, callback: js.Function2[/* error */ js.Error, /* contenthash */ ContentHash, Unit]): js.Promise[ContentHash] = js.native
     
     /**
       * @deprecated This callback signature is deprecated
       */
     def getMultihash(name: String): js.Promise[String] = js.native
-    def getMultihash(name: String, callback: js.Function1[/* value */ js.Any, Unit]): js.Promise[String] = js.native
-    def getMultihash(name: String, callback: js.Function2[/* error */ Error, /* multihash */ String, Unit]): js.Promise[String] = js.native
+    def getMultihash(name: String, callback: js.Function1[/* value */ Any, Unit]): js.Promise[String] = js.native
+    def getMultihash(name: String, callback: js.Function2[/* error */ js.Error, /* multihash */ String, Unit]): js.Promise[String] = js.native
     
     /**
       * @deprecated This callback signature is deprecated
       */
     def getOwner(name: String): js.Promise[String] = js.native
-    def getOwner(name: String, callback: js.Function1[/* value */ js.Any, Unit]): js.Promise[String] = js.native
-    def getOwner(name: String, callback: js.Function2[/* error */ Error, /* owner */ String, Unit]): js.Promise[String] = js.native
+    def getOwner(name: String, callback: js.Function1[/* value */ Any, Unit]): js.Promise[String] = js.native
+    def getOwner(name: String, callback: js.Function2[/* error */ js.Error, /* owner */ String, Unit]): js.Promise[String] = js.native
     
     /**
       * @deprecated This callback signature is deprecated
       */
     def getPubkey(name: String): js.Promise[StringDictionary[String]] = js.native
-    def getPubkey(name: String, callback: js.Function1[/* value */ js.Any, Unit]): js.Promise[StringDictionary[String]] = js.native
+    def getPubkey(name: String, callback: js.Function1[/* value */ Any, Unit]): js.Promise[StringDictionary[String]] = js.native
     def getPubkey(
       name: String,
-      callback: js.Function2[/* error */ Error, /* result */ StringDictionary[String], Unit]
+      callback: js.Function2[/* error */ js.Error, /* result */ StringDictionary[String], Unit]
     ): js.Promise[StringDictionary[String]] = js.native
     
     /**
       * @deprecated This callback signature is deprecated
       */
     def getResolver(name: String): js.Promise[Contract] = js.native
-    def getResolver(name: String, callback: js.Function1[/* value */ js.Any, Unit]): js.Promise[Contract] = js.native
-    def getResolver(name: String, callback: js.Function2[/* error */ Error, /* contract */ Contract, Unit]): js.Promise[Contract] = js.native
+    def getResolver(name: String, callback: js.Function1[/* value */ Any, Unit]): js.Promise[Contract] = js.native
+    def getResolver(name: String, callback: js.Function2[/* error */ js.Error, /* contract */ Contract, Unit]): js.Promise[Contract] = js.native
     
     /**
       * @deprecated This callback signature is deprecated
       */
     def getTTL(name: String): js.Promise[String] = js.native
-    def getTTL(name: String, callback: js.Function1[/* value */ js.Any, Unit]): js.Promise[String] = js.native
-    def getTTL(name: String, callback: js.Function2[/* error */ Error, /* ttl */ String, Unit]): js.Promise[String] = js.native
+    def getTTL(name: String, callback: js.Function1[/* value */ Any, Unit]): js.Promise[String] = js.native
+    def getTTL(name: String, callback: js.Function2[/* error */ js.Error, /* ttl */ String, Unit]): js.Promise[String] = js.native
     
     /**
       * @deprecated This callback signature is deprecated
       */
     def getText(name: String, key: String): js.Promise[String] = js.native
-    def getText(name: String, key: String, callback: js.Function1[/* value */ js.Any, Unit]): js.Promise[String] = js.native
-    def getText(name: String, key: String, callback: js.Function2[/* error */ Error, /* ensName */ String, Unit]): js.Promise[String] = js.native
+    def getText(name: String, key: String, callback: js.Function1[/* value */ Any, Unit]): js.Promise[String] = js.native
+    def getText(
+      name: String,
+      key: String,
+      callback: js.Function2[/* error */ js.Error, /* ensName */ String, Unit]
+    ): js.Promise[String] = js.native
     
     /**
       * @deprecated This callback signature is deprecated
       */
     def isApprovedForAll(owner: String, operator: String): js.Promise[Boolean] = js.native
-    def isApprovedForAll(owner: String, operator: String, callback: js.Function1[/* value */ js.Any, Unit]): js.Promise[Boolean] = js.native
+    def isApprovedForAll(owner: String, operator: String, callback: js.Function1[/* value */ Any, Unit]): js.Promise[Boolean] = js.native
     def isApprovedForAll(
       owner: String,
       operator: String,
-      callback: js.Function2[/* error */ Error, /* result */ Boolean, Unit]
+      callback: js.Function2[/* error */ js.Error, /* result */ Boolean, Unit]
     ): js.Promise[Boolean] = js.native
     
     /**
       * @deprecated This callback signature is deprecated
       */
     def recordExists(name: String): js.Promise[Boolean] = js.native
-    def recordExists(name: String, callback: js.Function1[/* value */ js.Any, Unit]): js.Promise[Boolean] = js.native
-    def recordExists(name: String, callback: js.Function2[/* error */ Error, /* result */ Boolean, Unit]): js.Promise[Boolean] = js.native
+    def recordExists(name: String, callback: js.Function1[/* value */ Any, Unit]): js.Promise[Boolean] = js.native
+    def recordExists(name: String, callback: js.Function2[/* error */ js.Error, /* result */ Boolean, Unit]): js.Promise[Boolean] = js.native
     
     var registry: Registry = js.native
     
@@ -114,8 +117,8 @@ object mod {
       * @deprecated Please use the "getResolver" method instead of "resolver"
       */
     def resolver(name: String): js.Promise[Contract] = js.native
-    def resolver(name: String, callback: js.Function1[/* value */ js.Any, Unit]): js.Promise[Contract] = js.native
-    def resolver(name: String, callback: js.Function2[/* error */ Error, /* contract */ Contract, Unit]): js.Promise[Contract] = js.native
+    def resolver(name: String, callback: js.Function1[/* value */ Any, Unit]): js.Promise[Contract] = js.native
+    def resolver(name: String, callback: js.Function2[/* error */ js.Error, /* contract */ Contract, Unit]): js.Promise[Contract] = js.native
     
     def setAddress(name: String, address: String): PromiEvent[TransactionReceipt | TransactionRevertInstructionError] = js.native
     def setAddress(
@@ -123,7 +126,7 @@ object mod {
       address: String,
       txConfig: Unit,
       callback: js.Function2[
-          /* error */ Error | TransactionRevertInstructionError, 
+          /* error */ js.Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
           Unit
         ]
@@ -134,7 +137,7 @@ object mod {
       address: String,
       txConfig: TransactionConfig,
       callback: js.Function2[
-          /* error */ Error | TransactionRevertInstructionError, 
+          /* error */ js.Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
           Unit
         ]
@@ -146,7 +149,7 @@ object mod {
       approved: Boolean,
       txConfig: Unit,
       callback: js.Function2[
-          /* error */ Error | TransactionRevertInstructionError, 
+          /* error */ js.Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
           Unit
         ]
@@ -157,7 +160,7 @@ object mod {
       approved: Boolean,
       txConfig: TransactionConfig,
       callback: js.Function2[
-          /* error */ Error | TransactionRevertInstructionError, 
+          /* error */ js.Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
           Unit
         ]
@@ -169,7 +172,7 @@ object mod {
       hash: String,
       txConfig: Unit,
       callback: js.Function2[
-          /* error */ Error | TransactionRevertInstructionError, 
+          /* error */ js.Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
           Unit
         ]
@@ -180,7 +183,7 @@ object mod {
       hash: String,
       txConfig: TransactionConfig,
       callback: js.Function2[
-          /* error */ Error | TransactionRevertInstructionError, 
+          /* error */ js.Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
           Unit
         ]
@@ -192,7 +195,7 @@ object mod {
       hash: String,
       txConfig: Unit,
       callback: js.Function2[
-          /* error */ Error | TransactionRevertInstructionError, 
+          /* error */ js.Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
           Unit
         ]
@@ -203,7 +206,7 @@ object mod {
       hash: String,
       txConfig: TransactionConfig,
       callback: js.Function2[
-          /* error */ Error | TransactionRevertInstructionError, 
+          /* error */ js.Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
           Unit
         ]
@@ -215,7 +218,7 @@ object mod {
       hash: String,
       txConfig: Unit,
       callback: js.Function2[
-          /* error */ Error | TransactionRevertInstructionError, 
+          /* error */ js.Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
           Unit
         ]
@@ -226,7 +229,7 @@ object mod {
       hash: String,
       txConfig: TransactionConfig,
       callback: js.Function2[
-          /* error */ Error | TransactionRevertInstructionError, 
+          /* error */ js.Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
           Unit
         ]
@@ -238,7 +241,7 @@ object mod {
       address: String,
       txConfig: Unit,
       callback: js.Function2[
-          /* error */ Error | TransactionRevertInstructionError, 
+          /* error */ js.Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
           Unit
         ]
@@ -249,7 +252,7 @@ object mod {
       address: String,
       txConfig: TransactionConfig,
       callback: js.Function2[
-          /* error */ Error | TransactionRevertInstructionError, 
+          /* error */ js.Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
           Unit
         ]
@@ -262,7 +265,7 @@ object mod {
       y: String,
       txConfig: Unit,
       callback: js.Function2[
-          /* error */ Error | TransactionRevertInstructionError, 
+          /* error */ js.Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
           Unit
         ]
@@ -274,7 +277,7 @@ object mod {
       y: String,
       txConfig: TransactionConfig,
       callback: js.Function2[
-          /* error */ Error | TransactionRevertInstructionError, 
+          /* error */ js.Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
           Unit
         ]
@@ -288,7 +291,7 @@ object mod {
       ttl: String,
       txConfig: Unit,
       callback: js.Function2[
-          /* error */ Error | TransactionRevertInstructionError, 
+          /* error */ js.Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
           Unit
         ]
@@ -301,7 +304,7 @@ object mod {
       ttl: String,
       txConfig: TransactionConfig,
       callback: js.Function2[
-          /* error */ Error | TransactionRevertInstructionError, 
+          /* error */ js.Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
           Unit
         ]
@@ -314,7 +317,7 @@ object mod {
       ttl: Double,
       txConfig: Unit,
       callback: js.Function2[
-          /* error */ Error | TransactionRevertInstructionError, 
+          /* error */ js.Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
           Unit
         ]
@@ -327,7 +330,7 @@ object mod {
       ttl: Double,
       txConfig: TransactionConfig,
       callback: js.Function2[
-          /* error */ Error | TransactionRevertInstructionError, 
+          /* error */ js.Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
           Unit
         ]
@@ -339,7 +342,7 @@ object mod {
       address: String,
       txConfig: Unit,
       callback: js.Function2[
-          /* error */ Error | TransactionRevertInstructionError, 
+          /* error */ js.Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
           Unit
         ]
@@ -350,7 +353,7 @@ object mod {
       address: String,
       txConfig: TransactionConfig,
       callback: js.Function2[
-          /* error */ Error | TransactionRevertInstructionError, 
+          /* error */ js.Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
           Unit
         ]
@@ -363,7 +366,7 @@ object mod {
       address: String,
       txConfig: Unit,
       callback: js.Function2[
-          /* error */ Error | TransactionRevertInstructionError, 
+          /* error */ js.Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
           Unit
         ]
@@ -375,7 +378,7 @@ object mod {
       address: String,
       txConfig: TransactionConfig,
       callback: js.Function2[
-          /* error */ Error | TransactionRevertInstructionError, 
+          /* error */ js.Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
           Unit
         ]
@@ -390,7 +393,7 @@ object mod {
       ttl: String,
       txConfig: Unit,
       callback: js.Function2[
-          /* error */ Error | TransactionRevertInstructionError, 
+          /* error */ js.Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
           Unit
         ]
@@ -411,7 +414,7 @@ object mod {
       ttl: String,
       txConfig: TransactionConfig,
       callback: js.Function2[
-          /* error */ Error | TransactionRevertInstructionError, 
+          /* error */ js.Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
           Unit
         ]
@@ -425,7 +428,7 @@ object mod {
       ttl: Double,
       txConfig: Unit,
       callback: js.Function2[
-          /* error */ Error | TransactionRevertInstructionError, 
+          /* error */ js.Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
           Unit
         ]
@@ -446,7 +449,7 @@ object mod {
       ttl: Double,
       txConfig: TransactionConfig,
       callback: js.Function2[
-          /* error */ Error | TransactionRevertInstructionError, 
+          /* error */ js.Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
           Unit
         ]
@@ -458,7 +461,7 @@ object mod {
       ttl: String,
       txConfig: Unit,
       callback: js.Function2[
-          /* error */ Error | TransactionRevertInstructionError, 
+          /* error */ js.Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
           Unit
         ]
@@ -469,7 +472,7 @@ object mod {
       ttl: String,
       txConfig: TransactionConfig,
       callback: js.Function2[
-          /* error */ Error | TransactionRevertInstructionError, 
+          /* error */ js.Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
           Unit
         ]
@@ -480,7 +483,7 @@ object mod {
       ttl: Double,
       txConfig: Unit,
       callback: js.Function2[
-          /* error */ Error | TransactionRevertInstructionError, 
+          /* error */ js.Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
           Unit
         ]
@@ -491,7 +494,7 @@ object mod {
       ttl: Double,
       txConfig: TransactionConfig,
       callback: js.Function2[
-          /* error */ Error | TransactionRevertInstructionError, 
+          /* error */ js.Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
           Unit
         ]
@@ -504,7 +507,7 @@ object mod {
       value: String,
       txConfig: Unit,
       callback: js.Function2[
-          /* error */ Error | TransactionRevertInstructionError, 
+          /* error */ js.Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
           Unit
         ]
@@ -516,7 +519,7 @@ object mod {
       value: String,
       txConfig: TransactionConfig,
       callback: js.Function2[
-          /* error */ Error | TransactionRevertInstructionError, 
+          /* error */ js.Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
           Unit
         ]
@@ -526,17 +529,17 @@ object mod {
       * @deprecated This callback signature is deprecated
       */
     def supportsInterface(name: String, interfaceId: String): js.Promise[Boolean] = js.native
-    def supportsInterface(name: String, interfaceId: String, callback: js.Function1[/* value */ js.Any, Unit]): js.Promise[Boolean] = js.native
+    def supportsInterface(name: String, interfaceId: String, callback: js.Function1[/* value */ Any, Unit]): js.Promise[Boolean] = js.native
     def supportsInterface(
       name: String,
       interfaceId: String,
-      callback: js.Function2[/* error */ Error, /* supported */ Boolean, Unit]
+      callback: js.Function2[/* error */ js.Error, /* supported */ Boolean, Unit]
     ): js.Promise[Boolean] = js.native
   }
   
   @JSImport("web3-eth-ens", "Registry")
   @js.native
-  class Registry protected () extends StObject {
+  open class Registry protected () extends StObject {
     def this(ens: Ens) = this()
     
     var contract: Contract | Null = js.native
@@ -547,36 +550,36 @@ object mod {
       * @deprecated This callback signature is deprecated
       */
     def getOwner(name: String): js.Promise[String] = js.native
-    def getOwner(name: String, callback: js.Function1[/* value */ js.Any, Unit]): js.Promise[String] = js.native
-    def getOwner(name: String, callback: js.Function2[/* error */ Error, /* address */ String, Unit]): js.Promise[String] = js.native
+    def getOwner(name: String, callback: js.Function1[/* value */ Any, Unit]): js.Promise[String] = js.native
+    def getOwner(name: String, callback: js.Function2[/* error */ js.Error, /* address */ String, Unit]): js.Promise[String] = js.native
     
     /**
       * @deprecated This callback signature is deprecated
       */
     def getResolver(name: String): js.Promise[Contract] = js.native
-    def getResolver(name: String, callback: js.Function1[/* value */ js.Any, Unit]): js.Promise[Contract] = js.native
-    def getResolver(name: String, callback: js.Function2[/* error */ Error, /* contract */ Contract, Unit]): js.Promise[Contract] = js.native
+    def getResolver(name: String, callback: js.Function1[/* value */ Any, Unit]): js.Promise[Contract] = js.native
+    def getResolver(name: String, callback: js.Function2[/* error */ js.Error, /* contract */ Contract, Unit]): js.Promise[Contract] = js.native
     
     /**
       * @deprecated This callback signature is deprecated
       */
     def getTTl(name: String): js.Promise[String] = js.native
-    def getTTl(name: String, callback: js.Function1[/* value */ js.Any, Unit]): js.Promise[String] = js.native
-    def getTTl(name: String, callback: js.Function2[/* error */ Error, /* ttl */ String, Unit]): js.Promise[String] = js.native
+    def getTTl(name: String, callback: js.Function1[/* value */ Any, Unit]): js.Promise[String] = js.native
+    def getTTl(name: String, callback: js.Function2[/* error */ js.Error, /* ttl */ String, Unit]): js.Promise[String] = js.native
     
     /**
       * @deprecated Please use the "getOwner" method instead of "owner"
       */
     def owner(name: String): js.Promise[String] = js.native
-    def owner(name: String, callback: js.Function1[/* value */ js.Any, Unit]): js.Promise[String] = js.native
-    def owner(name: String, callback: js.Function2[/* error */ Error, /* address */ String, Unit]): js.Promise[String] = js.native
+    def owner(name: String, callback: js.Function1[/* value */ Any, Unit]): js.Promise[String] = js.native
+    def owner(name: String, callback: js.Function2[/* error */ js.Error, /* address */ String, Unit]): js.Promise[String] = js.native
     
     /**
       * @deprecated Please use the "getResolver" method instead of "resolver"
       */
     def resolver(name: String): js.Promise[Contract] = js.native
-    def resolver(name: String, callback: js.Function1[/* value */ js.Any, Unit]): js.Promise[Contract] = js.native
-    def resolver(name: String, callback: js.Function2[/* error */ Error, /* contract */ Contract, Unit]): js.Promise[Contract] = js.native
+    def resolver(name: String, callback: js.Function1[/* value */ Any, Unit]): js.Promise[Contract] = js.native
+    def resolver(name: String, callback: js.Function2[/* error */ js.Error, /* contract */ Contract, Unit]): js.Promise[Contract] = js.native
     
     def setOwner(name: String, address: String): PromiEvent[TransactionReceipt | TransactionRevertInstructionError] = js.native
     def setOwner(
@@ -584,7 +587,7 @@ object mod {
       address: String,
       txConfig: Unit,
       callback: js.Function2[
-          /* error */ Error | TransactionRevertInstructionError, 
+          /* error */ js.Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
           Unit
         ]
@@ -595,7 +598,7 @@ object mod {
       address: String,
       txConfig: TransactionConfig,
       callback: js.Function2[
-          /* error */ Error | TransactionRevertInstructionError, 
+          /* error */ js.Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
           Unit
         ]
@@ -607,7 +610,7 @@ object mod {
       address: String,
       txConfig: Unit,
       callback: js.Function2[
-          /* error */ Error | TransactionRevertInstructionError, 
+          /* error */ js.Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
           Unit
         ]
@@ -618,7 +621,7 @@ object mod {
       address: String,
       txConfig: TransactionConfig,
       callback: js.Function2[
-          /* error */ Error | TransactionRevertInstructionError, 
+          /* error */ js.Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
           Unit
         ]
@@ -631,7 +634,7 @@ object mod {
       address: String,
       txConfig: Unit,
       callback: js.Function2[
-          /* error */ Error | TransactionRevertInstructionError, 
+          /* error */ js.Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
           Unit
         ]
@@ -643,7 +646,7 @@ object mod {
       address: String,
       txConfig: TransactionConfig,
       callback: js.Function2[
-          /* error */ Error | TransactionRevertInstructionError, 
+          /* error */ js.Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
           Unit
         ]
@@ -655,7 +658,7 @@ object mod {
       ttl: String,
       txConfig: Unit,
       callback: js.Function2[
-          /* error */ Error | TransactionRevertInstructionError, 
+          /* error */ js.Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
           Unit
         ]
@@ -666,7 +669,7 @@ object mod {
       ttl: String,
       txConfig: TransactionConfig,
       callback: js.Function2[
-          /* error */ Error | TransactionRevertInstructionError, 
+          /* error */ js.Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
           Unit
         ]
@@ -677,7 +680,7 @@ object mod {
       ttl: Double,
       txConfig: Unit,
       callback: js.Function2[
-          /* error */ Error | TransactionRevertInstructionError, 
+          /* error */ js.Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
           Unit
         ]
@@ -688,7 +691,7 @@ object mod {
       ttl: Double,
       txConfig: TransactionConfig,
       callback: js.Function2[
-          /* error */ Error | TransactionRevertInstructionError, 
+          /* error */ js.Error | TransactionRevertInstructionError, 
           /* receipt */ TransactionReceipt, 
           Unit
         ]
@@ -699,7 +702,7 @@ object mod {
     
     var decoded: String | Null
     
-    var error: js.UndefOr[Error | Null] = js.undefined
+    var error: js.UndefOr[js.Error | Null] = js.undefined
     
     var protocolType: ipfs | bzz | onion | onion3 | Null
   }
@@ -716,7 +719,7 @@ object mod {
       
       inline def setDecodedNull: Self = StObject.set(x, "decoded", null)
       
-      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorNull: Self = StObject.set(x, "error", null)
       

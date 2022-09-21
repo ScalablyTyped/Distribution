@@ -11,9 +11,9 @@ Schedule work to be completed when the browser is idle.
 | Full name          | nanoscheduler |
 | Keywords           | schedule, request, idle, callback, requestidlecallback, stack, push, singleton |
 | # releases         | 1 |
-| # dependents       | 4 |
-| # downloads        | 1343598 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 119541.0 |
+| # stars            | 48.0 |
 
 ## Links
 - [Homepage](https://github.com/choojs/nanoscheduler#readme)

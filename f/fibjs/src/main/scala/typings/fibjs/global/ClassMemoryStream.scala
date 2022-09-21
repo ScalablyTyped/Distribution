@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 
   */
-class ClassMemoryStream ()
+open class ClassMemoryStream ()
   extends StObject
      with typings.fibjs.ClassMemoryStream

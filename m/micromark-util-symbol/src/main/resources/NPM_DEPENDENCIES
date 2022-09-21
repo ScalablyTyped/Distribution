@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "micromark-util-symbol" : "1.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "micromark-util-symbol" : "1.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.TreeHierarchicalDataSource")
 @js.native
-class TreeHierarchicalDataSource protected ()
+open class TreeHierarchicalDataSource protected ()
   extends StObject
      with typings.igniteUi.Infragistics.TreeHierarchicalDataSource {
   def this(settings: TreeHierarchicalDataSourceSettings) = this()

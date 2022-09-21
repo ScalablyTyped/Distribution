@@ -11,17 +11,17 @@ trait BootstrapCardViewCellInfo extends StObject {
   
   def endEdit(): Unit = js.native
   
-  def getCellTextContainer(visibleIndex: Double, columnFieldNameOrId: String): js.Any = js.native
+  def getCellTextContainer(visibleIndex: Double, columnFieldNameOrId: String): Any = js.native
   
-  def getCellValue(visibleIndex: Double, columnFieldNameOrId: String, initial: Boolean): js.Any = js.native
+  def getCellValue(visibleIndex: Double, columnFieldNameOrId: String, initial: Boolean): Any = js.native
   
-  def getColumnDisplayText(columnFieldNameOrId: String, value: js.Any): String = js.native
+  def getColumnDisplayText(columnFieldNameOrId: String, value: Any): String = js.native
   
   def getEditCellInfo(): BootstrapCardViewCellInfo | Null = js.native
   
   def hasChanges(): Boolean = js.native
   
-  /* protected */ val instance: js.Any = js.native
+  /* protected */ val instance: Any = js.native
   
   def moveFocusBackward(): Boolean = js.native
   
@@ -31,11 +31,11 @@ trait BootstrapCardViewCellInfo extends StObject {
   def resetChanges(visibleIndex: Double, columnIndex: Double): Unit = js.native
   
   // tslint:disable-line:unified-signatures
-  def setCellValue(visibleIndex: Double, columnFieldNameOrId: String, value: js.Any): Unit = js.native
+  def setCellValue(visibleIndex: Double, columnFieldNameOrId: String, value: Any): Unit = js.native
   def setCellValue(
     visibleIndex: Double,
     columnFieldNameOrId: String,
-    value: js.Any,
+    value: Any,
     displayText: String,
     cancelCellHighlighting: Boolean
   ): Unit = js.native

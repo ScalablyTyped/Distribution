@@ -32,7 +32,7 @@ object ListHistoryResponse {
     
     inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
     
-    inline def setHistoryVarargs(value: History*): Self = StObject.set(x, "history", js.Array(value :_*))
+    inline def setHistoryVarargs(value: History*): Self = StObject.set(x, "history", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

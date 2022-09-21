@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.OlapMetadataTreeItem")
 @js.native
-class OlapMetadataTreeItem ()
+open class OlapMetadataTreeItem ()
   extends StObject
      with typings.igniteUi.Infragistics.OlapMetadataTreeItem {
   

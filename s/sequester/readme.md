@@ -10,10 +10,10 @@ A read/write lock for evented operations.
 | ------------------ | :-------------: |
 | Full name          | sequester |
 | Keywords           | cadence, concurrency, lock, mutex, transaction, database, evented, cadence |
-| # releases         | 5 |
-| # dependents       | 3 |
-| # downloads        | 2531 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 476.6666666666667 |
+| # stars            | 6.0 |
 
 ## Links
 - [Homepage](https://github.com/bigeasy/sequester)

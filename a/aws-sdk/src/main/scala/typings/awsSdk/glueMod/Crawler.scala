@@ -12,7 +12,7 @@ trait Crawler extends StObject {
   var Classifiers: js.UndefOr[ClassifierNameList] = js.undefined
   
   /**
-    * Crawler configuration information. This versioned JSON string allows users to specify aspects of a crawler's behavior. For more information, see Configuring a Crawler.
+    * Crawler configuration information. This versioned JSON string allows users to specify aspects of a crawler's behavior. For more information, see Include and Exclude Patterns.
     */
   var Configuration: js.UndefOr[CrawlerConfiguration] = js.undefined
   
@@ -29,7 +29,7 @@ trait Crawler extends StObject {
   /**
     * The time that the crawler was created.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the database in which the crawler's output is stored.
@@ -42,6 +42,11 @@ trait Crawler extends StObject {
   var Description: js.UndefOr[DescriptionString] = js.undefined
   
   /**
+    * Specifies whether the crawler should use Lake Formation credentials for the crawler instead of the IAM role credentials.
+    */
+  var LakeFormationConfiguration: js.UndefOr[typings.awsSdk.glueMod.LakeFormationConfiguration] = js.undefined
+  
+  /**
     * The status of the last crawl, and potentially error information if an error occurred.
     */
   var LastCrawl: js.UndefOr[LastCrawlInfo] = js.undefined
@@ -49,7 +54,12 @@ trait Crawler extends StObject {
   /**
     * The time that the crawler was last updated.
     */
-  var LastUpdated: js.UndefOr[Timestamp] = js.undefined
+  var LastUpdated: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * A configuration that specifies whether data lineage is enabled for the crawler.
+    */
+  var LineageConfiguration: js.UndefOr[typings.awsSdk.glueMod.LineageConfiguration] = js.undefined
   
   /**
     * The name of the crawler.
@@ -109,7 +119,7 @@ object Crawler {
     
     inline def setClassifiersUndefined: Self = StObject.set(x, "Classifiers", js.undefined)
     
-    inline def setClassifiersVarargs(value: NameString*): Self = StObject.set(x, "Classifiers", js.Array(value :_*))
+    inline def setClassifiersVarargs(value: NameString*): Self = StObject.set(x, "Classifiers", js.Array(value*))
     
     inline def setConfiguration(value: CrawlerConfiguration): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
     
@@ -123,7 +133,7 @@ object Crawler {
     
     inline def setCrawlerSecurityConfigurationUndefined: Self = StObject.set(x, "CrawlerSecurityConfiguration", js.undefined)
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
@@ -135,13 +145,21 @@ object Crawler {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
+    inline def setLakeFormationConfiguration(value: LakeFormationConfiguration): Self = StObject.set(x, "LakeFormationConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setLakeFormationConfigurationUndefined: Self = StObject.set(x, "LakeFormationConfiguration", js.undefined)
+    
     inline def setLastCrawl(value: LastCrawlInfo): Self = StObject.set(x, "LastCrawl", value.asInstanceOf[js.Any])
     
     inline def setLastCrawlUndefined: Self = StObject.set(x, "LastCrawl", js.undefined)
     
-    inline def setLastUpdated(value: Timestamp): Self = StObject.set(x, "LastUpdated", value.asInstanceOf[js.Any])
+    inline def setLastUpdated(value: js.Date): Self = StObject.set(x, "LastUpdated", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedUndefined: Self = StObject.set(x, "LastUpdated", js.undefined)
+    
+    inline def setLineageConfiguration(value: LineageConfiguration): Self = StObject.set(x, "LineageConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setLineageConfigurationUndefined: Self = StObject.set(x, "LineageConfiguration", js.undefined)
     
     inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

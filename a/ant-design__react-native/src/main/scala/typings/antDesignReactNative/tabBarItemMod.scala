@@ -17,7 +17,7 @@ object tabBarItemMod {
   
   @JSImport("@ant-design/react-native/lib/tab-bar/TabBarItem", JSImport.Default)
   @js.native
-  class default () extends TabBarItem
+  open class default () extends TabBarItem
   /* static members */
   object default {
     
@@ -32,8 +32,7 @@ object tabBarItemMod {
   }
   
   @js.native
-  trait TabBarItem
-    extends Component[TabBarItemProps, js.Any, js.Any]
+  trait TabBarItem extends Component[TabBarItemProps, Any, Any]
   
   trait TabBarItemProps extends StObject {
     
@@ -82,7 +81,7 @@ object tabBarItemMod {
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      inline def setIconVarargs(value: ImageURISource*): Self = StObject.set(x, "icon", js.Array(value :_*))
+      inline def setIconVarargs(value: ImageURISource*): Self = StObject.set(x, "icon", js.Array(value*))
       
       inline def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
       
@@ -98,7 +97,7 @@ object tabBarItemMod {
       
       inline def setSelectedIconUndefined: Self = StObject.set(x, "selectedIcon", js.undefined)
       
-      inline def setSelectedIconVarargs(value: ImageURISource*): Self = StObject.set(x, "selectedIcon", js.Array(value :_*))
+      inline def setSelectedIconVarargs(value: ImageURISource*): Self = StObject.set(x, "selectedIcon", js.Array(value*))
       
       inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
       

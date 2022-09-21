@@ -4,21 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Details about a channelsection, including playlists and channels.
-  */
 trait SchemaChannelSectionContentDetails extends StObject {
   
   /**
     * The channel ids for type multiple_channels.
     */
-  var channels: js.UndefOr[js.Array[String]] = js.undefined
+  var channels: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
-    * The playlist ids for type single_playlist and multiple_playlists. For
-    * singlePlaylist, only one playlistId is allowed.
+    * The playlist ids for type single_playlist and multiple_playlists. For singlePlaylist, only one playlistId is allowed.
     */
-  var playlists: js.UndefOr[js.Array[String]] = js.undefined
+  var playlists: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaChannelSectionContentDetails {
   
@@ -31,14 +27,18 @@ object SchemaChannelSectionContentDetails {
     
     inline def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
+    inline def setChannelsNull: Self = StObject.set(x, "channels", null)
+    
     inline def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
     
-    inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
+    inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value*))
     
     inline def setPlaylists(value: js.Array[String]): Self = StObject.set(x, "playlists", value.asInstanceOf[js.Any])
     
+    inline def setPlaylistsNull: Self = StObject.set(x, "playlists", null)
+    
     inline def setPlaylistsUndefined: Self = StObject.set(x, "playlists", js.undefined)
     
-    inline def setPlaylistsVarargs(value: String*): Self = StObject.set(x, "playlists", js.Array(value :_*))
+    inline def setPlaylistsVarargs(value: String*): Self = StObject.set(x, "playlists", js.Array(value*))
   }
 }

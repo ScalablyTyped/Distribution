@@ -16,13 +16,13 @@ trait HTMLDivision extends StObject {
   def Delete(): Unit = js.native
   
   def HTMLDivisionParent(): HTMLDivision = js.native
-  def HTMLDivisionParent(LevelsUp: js.Any): HTMLDivision = js.native
+  def HTMLDivisionParent(LevelsUp: Any): HTMLDivision = js.native
   
   val HTMLDivisions: typings.activexWord.Word.HTMLDivisions = js.native
   
   var LeftIndent: Double = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   val Range: typings.activexWord.Word.Range = js.native
   

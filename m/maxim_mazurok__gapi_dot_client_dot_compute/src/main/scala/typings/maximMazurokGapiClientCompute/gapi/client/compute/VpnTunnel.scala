@@ -78,23 +78,14 @@ trait VpnTunnel extends StObject {
   var sharedSecretHash: js.UndefOr[String] = js.undefined
   
   /**
-    * [Output Only] The status of the VPN tunnel, which can be one of the following:
-    * - PROVISIONING: Resource is being allocated for the VPN tunnel.
-    * - WAITING_FOR_FULL_CONFIG: Waiting to receive all VPN-related configs from the user. Network, TargetVpnGateway, VpnTunnel, ForwardingRule, and Route resources are needed to setup
-    * the VPN tunnel.
-    * - FIRST_HANDSHAKE: Successful first handshake with the peer VPN.
-    * - ESTABLISHED: Secure session is successfully established with the peer VPN.
-    * - NETWORK_ERROR: Deprecated, replaced by NO_INCOMING_PACKETS
-    * - AUTHORIZATION_ERROR: Auth error (for example, bad shared secret).
-    * - NEGOTIATION_FAILURE: Handshake failed.
-    * - DEPROVISIONING: Resources are being deallocated for the VPN tunnel.
-    * - FAILED: Tunnel creation has failed and the tunnel is not ready to be used.
-    * - NO_INCOMING_PACKETS: No incoming packets from peer.
-    * - REJECTED: Tunnel configuration was rejected, can be result of being blacklisted.
-    * - ALLOCATING_RESOURCES: Cloud VPN is in the process of allocating all required resources.
-    * - STOPPED: Tunnel is stopped due to its Forwarding Rules being deleted for Classic VPN tunnels or the project is in frozen state.
-    * - PEER_IDENTITY_MISMATCH: Peer identity does not match peer IP, probably behind NAT.
-    * - TS_NARROWING_NOT_ALLOWED: Traffic selector narrowing not allowed for an HA-VPN tunnel.
+    * [Output Only] The status of the VPN tunnel, which can be one of the following: - PROVISIONING: Resource is being allocated for the VPN tunnel. - WAITING_FOR_FULL_CONFIG: Waiting to
+    * receive all VPN-related configs from the user. Network, TargetVpnGateway, VpnTunnel, ForwardingRule, and Route resources are needed to setup the VPN tunnel. - FIRST_HANDSHAKE:
+    * Successful first handshake with the peer VPN. - ESTABLISHED: Secure session is successfully established with the peer VPN. - NETWORK_ERROR: Deprecated, replaced by
+    * NO_INCOMING_PACKETS - AUTHORIZATION_ERROR: Auth error (for example, bad shared secret). - NEGOTIATION_FAILURE: Handshake failed. - DEPROVISIONING: Resources are being deallocated
+    * for the VPN tunnel. - FAILED: Tunnel creation has failed and the tunnel is not ready to be used. - NO_INCOMING_PACKETS: No incoming packets from peer. - REJECTED: Tunnel
+    * configuration was rejected, can be result of being denied access. - ALLOCATING_RESOURCES: Cloud VPN is in the process of allocating all required resources. - STOPPED: Tunnel is
+    * stopped due to its Forwarding Rules being deleted for Classic VPN tunnels or the project is in frozen state. - PEER_IDENTITY_MISMATCH: Peer identity does not match peer IP, probably
+    * behind NAT. - TS_NARROWING_NOT_ALLOWED: Traffic selector narrowing not allowed for an HA-VPN tunnel.
     */
   var status: js.UndefOr[String] = js.undefined
   
@@ -147,7 +138,7 @@ object VpnTunnel {
     
     inline def setLocalTrafficSelectorUndefined: Self = StObject.set(x, "localTrafficSelector", js.undefined)
     
-    inline def setLocalTrafficSelectorVarargs(value: String*): Self = StObject.set(x, "localTrafficSelector", js.Array(value :_*))
+    inline def setLocalTrafficSelectorVarargs(value: String*): Self = StObject.set(x, "localTrafficSelector", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -177,7 +168,7 @@ object VpnTunnel {
     
     inline def setRemoteTrafficSelectorUndefined: Self = StObject.set(x, "remoteTrafficSelector", js.undefined)
     
-    inline def setRemoteTrafficSelectorVarargs(value: String*): Self = StObject.set(x, "remoteTrafficSelector", js.Array(value :_*))
+    inline def setRemoteTrafficSelectorVarargs(value: String*): Self = StObject.set(x, "remoteTrafficSelector", js.Array(value*))
     
     inline def setRouter(value: String): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
     

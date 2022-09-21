@@ -42,6 +42,8 @@ trait BasemapGalleryViewModel
   /**
     * The view model's state.
     *
+    * @default disabled
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery-BasemapGalleryViewModel.html#state)
     */
   val state: ready | disabled = js.native

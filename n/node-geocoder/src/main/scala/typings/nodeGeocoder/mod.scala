@@ -25,21 +25,21 @@ object mod {
   
   @JSImport("node-geocoder", "Geocoder")
   @js.native
-  class Geocoder () extends StObject {
+  open class Geocoder () extends StObject {
     
     def batchGeocode(queries: js.Array[Query | String]): js.Promise[js.Array[BatchResult]] = js.native
     def batchGeocode(
       queries: js.Array[Query | String],
-      cb: js.Function2[/* err */ js.Any, /* data */ js.Array[BatchResult], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.Array[BatchResult], Unit]
     ): js.Promise[js.Array[BatchResult]] = js.native
     
     def geocode(query: String): js.Promise[js.Array[Entry]] = js.native
-    def geocode(query: String, cb: js.Function2[/* err */ js.Any, /* data */ js.Array[Entry], Unit]): js.Promise[js.Array[Entry]] = js.native
+    def geocode(query: String, cb: js.Function2[/* err */ Any, /* data */ js.Array[Entry], Unit]): js.Promise[js.Array[Entry]] = js.native
     def geocode(query: Query): js.Promise[js.Array[Entry]] = js.native
-    def geocode(query: Query, cb: js.Function2[/* err */ js.Any, /* data */ js.Array[Entry], Unit]): js.Promise[js.Array[Entry]] = js.native
+    def geocode(query: Query, cb: js.Function2[/* err */ Any, /* data */ js.Array[Entry], Unit]): js.Promise[js.Array[Entry]] = js.native
     
     def reverse(loc: Location): js.Promise[js.Array[Entry]] = js.native
-    def reverse(loc: Location, cb: js.Function2[/* err */ js.Any, /* data */ js.Array[Entry], Unit]): js.Promise[js.Array[Entry]] = js.native
+    def reverse(loc: Location, cb: js.Function2[/* err */ Any, /* data */ js.Array[Entry], Unit]): js.Promise[js.Array[Entry]] = js.native
   }
   
   trait AgolOptions extends StObject {
@@ -73,7 +73,7 @@ object mod {
   
   trait BaseOptions extends StObject {
     
-    var formatter: js.UndefOr[js.Any] = js.undefined
+    var formatter: js.UndefOr[Any] = js.undefined
     
     var formatterPattern: js.UndefOr[String] = js.undefined
     
@@ -92,7 +92,7 @@ object mod {
     
     extension [Self <: BaseOptions](x: Self) {
       
-      inline def setFormatter(value: js.Any): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
+      inline def setFormatter(value: Any): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
       
       inline def setFormatterPattern(value: String): Self = StObject.set(x, "formatterPattern", value.asInstanceOf[js.Any])
       
@@ -114,24 +114,24 @@ object mod {
   
   trait BatchResult extends StObject {
     
-    var error: js.Any
+    var error: Any
     
     var value: js.Array[Entry]
   }
   object BatchResult {
     
-    inline def apply(error: js.Any, value: js.Array[Entry]): BatchResult = {
+    inline def apply(error: Any, value: js.Array[Entry]): BatchResult = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[BatchResult]
     }
     
     extension [Self <: BatchResult](x: Self) {
       
-      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setValue(value: js.Array[Entry]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      inline def setValueVarargs(value: Entry*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: Entry*): Self = StObject.set(x, "value", js.Array(value*))
     }
   }
   
@@ -340,7 +340,9 @@ object mod {
   
   trait HereOptions extends StObject {
     
-    var appCode: String
+    var apiKey: String
+    
+    var appCode: js.UndefOr[String] = js.undefined
     
     var appId: String
     
@@ -358,14 +360,18 @@ object mod {
   }
   object HereOptions {
     
-    inline def apply(appCode: String, appId: String): HereOptions = {
-      val __obj = js.Dynamic.literal(appCode = appCode.asInstanceOf[js.Any], appId = appId.asInstanceOf[js.Any], provider = "here")
+    inline def apply(apiKey: String, appId: String): HereOptions = {
+      val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any], appId = appId.asInstanceOf[js.Any], provider = "here")
       __obj.asInstanceOf[HereOptions]
     }
     
     extension [Self <: HereOptions](x: Self) {
       
+      inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
+      
       inline def setAppCode(value: String): Self = StObject.set(x, "appCode", value.asInstanceOf[js.Any])
+      
+      inline def setAppCodeUndefined: Self = StObject.set(x, "appCode", js.undefined)
       
       inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       
@@ -490,13 +496,14 @@ object mod {
     }
   }
   
-  type Options = BaseOptions & (GenericOptions | HereOptions | OpenStreetMapOptions | OpenDataFranceOptions | AgolOptions | SmartyStreetsOptions | GoogleOptions)
+  type Options = (GenericOptions & BaseOptions) | (HereOptions & BaseOptions) | (OpenStreetMapOptions & BaseOptions) | (OpenDataFranceOptions & BaseOptions) | (AgolOptions & BaseOptions) | (SmartyStreetsOptions & BaseOptions) | (GoogleOptions & BaseOptions)
   
   /* Rewritten from type alias, can be one of: 
     - typings.nodeGeocoder.nodeGeocoderStrings.freegeoip
     - typings.nodeGeocoder.nodeGeocoderStrings.datasciencetoolkit
     - typings.nodeGeocoder.nodeGeocoderStrings.locationiq
     - typings.nodeGeocoder.nodeGeocoderStrings.mapquest
+    - typings.nodeGeocoder.nodeGeocoderStrings.mapbox
     - typings.nodeGeocoder.nodeGeocoderStrings.openmapquest
     - typings.nodeGeocoder.nodeGeocoderStrings.tomtom
     - typings.nodeGeocoder.nodeGeocoderStrings.nominatimmapquest
@@ -516,6 +523,8 @@ object mod {
     inline def geocodio: typings.nodeGeocoder.nodeGeocoderStrings.geocodio = "geocodio".asInstanceOf[typings.nodeGeocoder.nodeGeocoderStrings.geocodio]
     
     inline def locationiq: typings.nodeGeocoder.nodeGeocoderStrings.locationiq = "locationiq".asInstanceOf[typings.nodeGeocoder.nodeGeocoderStrings.locationiq]
+    
+    inline def mapbox: typings.nodeGeocoder.nodeGeocoderStrings.mapbox = "mapbox".asInstanceOf[typings.nodeGeocoder.nodeGeocoderStrings.mapbox]
     
     inline def mapquest: typings.nodeGeocoder.nodeGeocoderStrings.mapquest = "mapquest".asInstanceOf[typings.nodeGeocoder.nodeGeocoderStrings.mapquest]
     

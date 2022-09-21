@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object loggerMod {
   
-  @JSImport("@firebase/logger/dist/src/logger", JSImport.Namespace)
+  @JSImport("@firebase/logger/dist/esm/src/logger", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
   @js.native
   sealed trait LogLevel extends StObject
-  @JSImport("@firebase/logger/dist/src/logger", "LogLevel")
+  @JSImport("@firebase/logger/dist/esm/src/logger", "LogLevel")
   @js.native
   object LogLevel extends StObject {
     
@@ -56,9 +56,9 @@ object loggerMod {
     /* 3 */ val WARN: typings.firebaseLogger.loggerMod.LogLevel.WARN & Double = js.native
   }
   
-  @JSImport("@firebase/logger/dist/src/logger", "Logger")
+  @JSImport("@firebase/logger/dist/esm/src/logger", "Logger")
   @js.native
-  class Logger protected () extends StObject {
+  open class Logger protected () extends StObject {
     /**
       * Gives you an instance of a Logger to capture messages according to
       * Firebase's logging scheme.
@@ -71,28 +71,28 @@ object loggerMod {
       * The main (internal) log handler for the Logger instance.
       * Can be set to a new function in internal package code but not by user.
       */
-    /* private */ var _logHandler: js.Any = js.native
+    /* private */ var _logHandler: Any = js.native
     
     /**
       * The log level of the given Logger instance.
       */
-    /* private */ var _logLevel: js.Any = js.native
+    /* private */ var _logLevel: Any = js.native
     
     /**
       * The optional, additional, user-defined log handler for the Logger instance.
       */
-    /* private */ var _userLogHandler: js.Any = js.native
+    /* private */ var _userLogHandler: Any = js.native
     
     /**
       * The functions below are all based on the `console` interface
       */
-    def debug(args: js.Any*): Unit = js.native
+    def debug(args: Any*): Unit = js.native
     
-    def error(args: js.Any*): Unit = js.native
+    def error(args: Any*): Unit = js.native
     
-    def info(args: js.Any*): Unit = js.native
+    def info(args: Any*): Unit = js.native
     
-    def log(args: js.Any*): Unit = js.native
+    def log(args: Any*): Unit = js.native
     
     def logHandler: LogHandler = js.native
     def logHandler_=(`val`: LogHandler): Unit = js.native
@@ -108,10 +108,10 @@ object loggerMod {
     def userLogHandler: LogHandler | Null = js.native
     def userLogHandler_=(`val`: LogHandler | Null): Unit = js.native
     
-    def warn(args: js.Any*): Unit = js.native
+    def warn(args: Any*): Unit = js.native
   }
   
-  @JSImport("@firebase/logger/dist/src/logger", "instances")
+  @JSImport("@firebase/logger/dist/esm/src/logger", "instances")
   @js.native
   val instances: js.Array[Logger] = js.native
   
@@ -127,7 +127,7 @@ object loggerMod {
   
   trait LogCallbackParams extends StObject {
     
-    var args: js.Array[js.Any]
+    var args: js.Array[Any]
     
     var level: LogLevelString
     
@@ -137,7 +137,7 @@ object loggerMod {
   }
   object LogCallbackParams {
     
-    inline def apply(args: js.Array[js.Any], level: LogLevelString, message: String, `type`: String): LogCallbackParams = {
+    inline def apply(args: js.Array[Any], level: LogLevelString, message: String, `type`: String): LogCallbackParams = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[LogCallbackParams]
@@ -145,9 +145,9 @@ object loggerMod {
     
     extension [Self <: LogCallbackParams](x: Self) {
       
-      inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: Any*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setLevel(value: LogLevelString): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
@@ -160,7 +160,7 @@ object loggerMod {
   @js.native
   trait LogHandler extends StObject {
     
-    def apply(loggerInstance: Logger, logType: LogLevel, args: js.Any*): Unit = js.native
+    def apply(loggerInstance: Logger, logType: LogLevel, args: Any*): Unit = js.native
   }
   
   /* Rewritten from type alias, can be one of: 

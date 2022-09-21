@@ -1,13 +1,13 @@
 package typings.babylonjs.global.BABYLON
 
-import typings.std.KeyboardEvent
+import typings.babylonjs.BABYLON.IKeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("BABYLON.KeyboardInfoPre")
 @js.native
-class KeyboardInfoPre protected ()
+open class KeyboardInfoPre protected ()
   extends StObject
      with typings.babylonjs.BABYLON.KeyboardInfoPre {
   /**
@@ -24,20 +24,14 @@ class KeyboardInfoPre protected ()
     /**
     * Defines the related dom event
     */
-  event: KeyboardEvent
+  event: IKeyboardEvent
   ) = this()
   
   /**
     * Defines the related dom event
     */
   /* CompleteClass */
-  var event: KeyboardEvent = js.native
-  
-  /**
-    * Defines whether the engine should skip the next onKeyboardObservable associated to this pre.
-    */
-  /* CompleteClass */
-  var skipOnPointerObservable: Boolean = js.native
+  var event: IKeyboardEvent = js.native
   
   /**
     * Defines the type of event (KeyboardEventTypes)

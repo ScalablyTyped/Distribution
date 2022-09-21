@@ -49,7 +49,7 @@ object anon {
       
       inline def setAllSignatures(value: js.Array[PullSignatureSymbol]): Self = StObject.set(x, "allSignatures", value.asInstanceOf[js.Any])
       
-      inline def setAllSignaturesVarargs(value: PullSignatureSymbol*): Self = StObject.set(x, "allSignatures", js.Array(value :_*))
+      inline def setAllSignaturesVarargs(value: PullSignatureSymbol*): Self = StObject.set(x, "allSignatures", js.Array(value*))
       
       inline def setSignature(value: PullSignatureSymbol): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     }
@@ -178,7 +178,7 @@ object anon {
       
       inline def setLineStarts(value: js.Array[Double]): Self = StObject.set(x, "lineStarts", value.asInstanceOf[js.Any])
       
-      inline def setLineStartsVarargs(value: Double*): Self = StObject.set(x, "lineStarts", js.Array(value :_*))
+      inline def setLineStartsVarargs(value: Double*): Self = StObject.set(x, "lineStarts", js.Array(value*))
     }
   }
   

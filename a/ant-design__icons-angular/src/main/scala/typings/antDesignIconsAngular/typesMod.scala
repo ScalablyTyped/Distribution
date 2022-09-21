@@ -78,15 +78,15 @@ object typesMod {
       
       inline def setFill(value: js.Array[String]): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
-      inline def setFillVarargs(value: String*): Self = StObject.set(x, "fill", js.Array(value :_*))
+      inline def setFillVarargs(value: String*): Self = StObject.set(x, "fill", js.Array(value*))
       
       inline def setOutline(value: js.Array[String]): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
       
-      inline def setOutlineVarargs(value: String*): Self = StObject.set(x, "outline", js.Array(value :_*))
+      inline def setOutlineVarargs(value: String*): Self = StObject.set(x, "outline", js.Array(value*))
       
       inline def setTwotone(value: js.Array[String]): Self = StObject.set(x, "twotone", value.asInstanceOf[js.Any])
       
-      inline def setTwotoneVarargs(value: String*): Self = StObject.set(x, "twotone", js.Array(value :_*))
+      inline def setTwotoneVarargs(value: String*): Self = StObject.set(x, "twotone", js.Array(value*))
     }
   }
   

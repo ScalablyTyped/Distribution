@@ -17,7 +17,7 @@ object mod {
   
   object run {
     
-    inline def apply(options: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def apply(options: Any): Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     @JSImport("oauth2-implicit", "run")
     @js.native
@@ -63,7 +63,7 @@ object mod {
       
       inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value*))
       
       inline def setState(value: AuthState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
@@ -92,7 +92,7 @@ object mod {
   
   trait AuthState
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var originalUrl: String
   }

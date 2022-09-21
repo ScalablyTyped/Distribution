@@ -22,6 +22,6 @@ object RebuildWorkspacesRequest {
     
     inline def setRebuildWorkspaceRequests(value: RebuildWorkspaceRequests): Self = StObject.set(x, "RebuildWorkspaceRequests", value.asInstanceOf[js.Any])
     
-    inline def setRebuildWorkspaceRequestsVarargs(value: RebuildRequest*): Self = StObject.set(x, "RebuildWorkspaceRequests", js.Array(value :_*))
+    inline def setRebuildWorkspaceRequestsVarargs(value: RebuildRequest*): Self = StObject.set(x, "RebuildWorkspaceRequests", js.Array(value*))
   }
 }

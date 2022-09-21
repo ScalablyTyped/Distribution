@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@libp2p/interface-connection-encrypter" : "2.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@libp2p/interface-connection-encrypter" : "2.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

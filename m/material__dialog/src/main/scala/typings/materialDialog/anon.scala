@@ -1,5 +1,9 @@
 package typings.materialDialog
 
+import typings.materialBase.typesMod.EventType
+import typings.materialBase.typesMod.SpecificEventListener
+import typings.materialBase.typesMod.SpecificWindowEventListener
+import typings.materialBase.typesMod.WindowEventType
 import typings.std.Event
 import typings.std.EventTarget
 import typings.std.HTMLElement
@@ -102,27 +106,48 @@ object anon {
     
     var CLOSING: String
     
+    var FULLSCREEN: String
+    
     var OPEN: String
     
     var OPENING: String
     
+    var SCRIM_HIDDEN: String
+    
     var SCROLLABLE: String
+    
+    var SCROLL_DIVIDER_FOOTER: String
+    
+    var SCROLL_DIVIDER_HEADER: String
     
     var SCROLL_LOCK: String
     
     var STACKED: String
+    
+    var SURFACE_SCRIM_HIDING: String
+    
+    var SURFACE_SCRIM_SHOWING: String
+    
+    var SURFACE_SCRIM_SHOWN: String
   }
   object CLOSING {
     
     inline def apply(
       CLOSING: String,
+      FULLSCREEN: String,
       OPEN: String,
       OPENING: String,
+      SCRIM_HIDDEN: String,
       SCROLLABLE: String,
+      SCROLL_DIVIDER_FOOTER: String,
+      SCROLL_DIVIDER_HEADER: String,
       SCROLL_LOCK: String,
-      STACKED: String
+      STACKED: String,
+      SURFACE_SCRIM_HIDING: String,
+      SURFACE_SCRIM_SHOWING: String,
+      SURFACE_SCRIM_SHOWN: String
     ): CLOSING = {
-      val __obj = js.Dynamic.literal(CLOSING = CLOSING.asInstanceOf[js.Any], OPEN = OPEN.asInstanceOf[js.Any], OPENING = OPENING.asInstanceOf[js.Any], SCROLLABLE = SCROLLABLE.asInstanceOf[js.Any], SCROLL_LOCK = SCROLL_LOCK.asInstanceOf[js.Any], STACKED = STACKED.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(CLOSING = CLOSING.asInstanceOf[js.Any], FULLSCREEN = FULLSCREEN.asInstanceOf[js.Any], OPEN = OPEN.asInstanceOf[js.Any], OPENING = OPENING.asInstanceOf[js.Any], SCRIM_HIDDEN = SCRIM_HIDDEN.asInstanceOf[js.Any], SCROLLABLE = SCROLLABLE.asInstanceOf[js.Any], SCROLL_DIVIDER_FOOTER = SCROLL_DIVIDER_FOOTER.asInstanceOf[js.Any], SCROLL_DIVIDER_HEADER = SCROLL_DIVIDER_HEADER.asInstanceOf[js.Any], SCROLL_LOCK = SCROLL_LOCK.asInstanceOf[js.Any], STACKED = STACKED.asInstanceOf[js.Any], SURFACE_SCRIM_HIDING = SURFACE_SCRIM_HIDING.asInstanceOf[js.Any], SURFACE_SCRIM_SHOWING = SURFACE_SCRIM_SHOWING.asInstanceOf[js.Any], SURFACE_SCRIM_SHOWN = SURFACE_SCRIM_SHOWN.asInstanceOf[js.Any])
       __obj.asInstanceOf[CLOSING]
     }
     
@@ -130,15 +155,29 @@ object anon {
       
       inline def setCLOSING(value: String): Self = StObject.set(x, "CLOSING", value.asInstanceOf[js.Any])
       
+      inline def setFULLSCREEN(value: String): Self = StObject.set(x, "FULLSCREEN", value.asInstanceOf[js.Any])
+      
       inline def setOPEN(value: String): Self = StObject.set(x, "OPEN", value.asInstanceOf[js.Any])
       
       inline def setOPENING(value: String): Self = StObject.set(x, "OPENING", value.asInstanceOf[js.Any])
       
+      inline def setSCRIM_HIDDEN(value: String): Self = StObject.set(x, "SCRIM_HIDDEN", value.asInstanceOf[js.Any])
+      
       inline def setSCROLLABLE(value: String): Self = StObject.set(x, "SCROLLABLE", value.asInstanceOf[js.Any])
+      
+      inline def setSCROLL_DIVIDER_FOOTER(value: String): Self = StObject.set(x, "SCROLL_DIVIDER_FOOTER", value.asInstanceOf[js.Any])
+      
+      inline def setSCROLL_DIVIDER_HEADER(value: String): Self = StObject.set(x, "SCROLL_DIVIDER_HEADER", value.asInstanceOf[js.Any])
       
       inline def setSCROLL_LOCK(value: String): Self = StObject.set(x, "SCROLL_LOCK", value.asInstanceOf[js.Any])
       
       inline def setSTACKED(value: String): Self = StObject.set(x, "STACKED", value.asInstanceOf[js.Any])
+      
+      inline def setSURFACE_SCRIM_HIDING(value: String): Self = StObject.set(x, "SURFACE_SCRIM_HIDING", value.asInstanceOf[js.Any])
+      
+      inline def setSURFACE_SCRIM_SHOWING(value: String): Self = StObject.set(x, "SURFACE_SCRIM_SHOWING", value.asInstanceOf[js.Any])
+      
+      inline def setSURFACE_SCRIM_SHOWN(value: String): Self = StObject.set(x, "SURFACE_SCRIM_SHOWN", value.asInstanceOf[js.Any])
     }
   }
   
@@ -174,6 +213,18 @@ object anon {
     
     var clickDefaultButton: js.UndefOr[js.Function0[Unit]] = js.undefined
     
+    var deregisterContentEventHandler: js.UndefOr[
+        js.Function2[/* evtType */ EventType, /* handler */ SpecificEventListener[EventType], Unit]
+      ] = js.undefined
+    
+    var deregisterWindowEventHandler: js.UndefOr[
+        js.Function2[
+          /* evtType */ WindowEventType, 
+          /* handler */ SpecificWindowEventListener[WindowEventType], 
+          Unit
+        ]
+      ] = js.undefined
+    
     var eventTargetMatches: js.UndefOr[js.Function2[/* target */ EventTarget | Null, /* selector */ String, Boolean]] = js.undefined
     
     var getActionFromEvent: js.UndefOr[js.Function1[/* evt */ Event, String | Null]] = js.undefined
@@ -184,6 +235,10 @@ object anon {
     
     var isContentScrollable: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
+    var isScrollableContentAtBottom: js.UndefOr[js.Function0[Boolean]] = js.undefined
+    
+    var isScrollableContentAtTop: js.UndefOr[js.Function0[Boolean]] = js.undefined
+    
     var notifyClosed: js.UndefOr[js.Function1[/* action */ String, Unit]] = js.undefined
     
     var notifyClosing: js.UndefOr[js.Function1[/* action */ String, Unit]] = js.undefined
@@ -191,6 +246,18 @@ object anon {
     var notifyOpened: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var notifyOpening: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
+    var registerContentEventHandler: js.UndefOr[
+        js.Function2[/* evtType */ EventType, /* handler */ SpecificEventListener[EventType], Unit]
+      ] = js.undefined
+    
+    var registerWindowEventHandler: js.UndefOr[
+        js.Function2[
+          /* evtType */ WindowEventType, 
+          /* handler */ SpecificWindowEventListener[WindowEventType], 
+          Unit
+        ]
+      ] = js.undefined
     
     var releaseFocus: js.UndefOr[js.Function0[Unit]] = js.undefined
     
@@ -227,6 +294,16 @@ object anon {
       
       inline def setClickDefaultButtonUndefined: Self = StObject.set(x, "clickDefaultButton", js.undefined)
       
+      inline def setDeregisterContentEventHandler(value: (/* evtType */ EventType, /* handler */ SpecificEventListener[EventType]) => Unit): Self = StObject.set(x, "deregisterContentEventHandler", js.Any.fromFunction2(value))
+      
+      inline def setDeregisterContentEventHandlerUndefined: Self = StObject.set(x, "deregisterContentEventHandler", js.undefined)
+      
+      inline def setDeregisterWindowEventHandler(
+        value: (/* evtType */ WindowEventType, /* handler */ SpecificWindowEventListener[WindowEventType]) => Unit
+      ): Self = StObject.set(x, "deregisterWindowEventHandler", js.Any.fromFunction2(value))
+      
+      inline def setDeregisterWindowEventHandlerUndefined: Self = StObject.set(x, "deregisterWindowEventHandler", js.undefined)
+      
       inline def setEventTargetMatches(value: (/* target */ EventTarget | Null, /* selector */ String) => Boolean): Self = StObject.set(x, "eventTargetMatches", js.Any.fromFunction2(value))
       
       inline def setEventTargetMatchesUndefined: Self = StObject.set(x, "eventTargetMatches", js.undefined)
@@ -247,6 +324,14 @@ object anon {
       
       inline def setIsContentScrollableUndefined: Self = StObject.set(x, "isContentScrollable", js.undefined)
       
+      inline def setIsScrollableContentAtBottom(value: () => Boolean): Self = StObject.set(x, "isScrollableContentAtBottom", js.Any.fromFunction0(value))
+      
+      inline def setIsScrollableContentAtBottomUndefined: Self = StObject.set(x, "isScrollableContentAtBottom", js.undefined)
+      
+      inline def setIsScrollableContentAtTop(value: () => Boolean): Self = StObject.set(x, "isScrollableContentAtTop", js.Any.fromFunction0(value))
+      
+      inline def setIsScrollableContentAtTopUndefined: Self = StObject.set(x, "isScrollableContentAtTop", js.undefined)
+      
       inline def setNotifyClosed(value: /* action */ String => Unit): Self = StObject.set(x, "notifyClosed", js.Any.fromFunction1(value))
       
       inline def setNotifyClosedUndefined: Self = StObject.set(x, "notifyClosed", js.undefined)
@@ -262,6 +347,16 @@ object anon {
       inline def setNotifyOpening(value: () => Unit): Self = StObject.set(x, "notifyOpening", js.Any.fromFunction0(value))
       
       inline def setNotifyOpeningUndefined: Self = StObject.set(x, "notifyOpening", js.undefined)
+      
+      inline def setRegisterContentEventHandler(value: (/* evtType */ EventType, /* handler */ SpecificEventListener[EventType]) => Unit): Self = StObject.set(x, "registerContentEventHandler", js.Any.fromFunction2(value))
+      
+      inline def setRegisterContentEventHandlerUndefined: Self = StObject.set(x, "registerContentEventHandler", js.undefined)
+      
+      inline def setRegisterWindowEventHandler(
+        value: (/* evtType */ WindowEventType, /* handler */ SpecificWindowEventListener[WindowEventType]) => Unit
+      ): Self = StObject.set(x, "registerWindowEventHandler", js.Any.fromFunction2(value))
+      
+      inline def setRegisterWindowEventHandlerUndefined: Self = StObject.set(x, "registerWindowEventHandler", js.undefined)
       
       inline def setReleaseFocus(value: () => Unit): Self = StObject.set(x, "releaseFocus", js.Any.fromFunction0(value))
       

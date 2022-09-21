@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TextInputs extends StObject {
   
-  var children: js.UndefOr[Flatten[String | TextInput]] = js.undefined
+  var children: js.UndefOr[Flatten[String | TextInput | Cid]] = js.undefined
   
   var textInputs: js.UndefOr[scala.Nothing] = js.undefined
 }
@@ -21,10 +21,10 @@ object TextInputs {
   
   extension [Self <: TextInputs](x: Self) {
     
-    inline def setChildren(value: Flatten[String | TextInput]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Flatten[String | TextInput | Cid]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setChildrenVarargs(value: (String | TextInput)*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: (String | TextInput | Cid)*): Self = StObject.set(x, "children", js.Array(value*))
   }
 }

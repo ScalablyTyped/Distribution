@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@intlify/core-base" : "9.2.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@intlify/core-base" : "9.2.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

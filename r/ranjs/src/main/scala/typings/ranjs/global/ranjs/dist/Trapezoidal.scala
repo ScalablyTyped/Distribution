@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.Trapezoidal")
 @js.native
-class Trapezoidal ()
+open class Trapezoidal ()
   extends typings.ranjs.mod.dist.Trapezoidal {
   def this(a: Double) = this()
   def this(a: Double, b: Double) = this()

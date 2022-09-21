@@ -29,6 +29,6 @@ object ResumeGameServerGroupInput {
     
     inline def setResumeActions(value: GameServerGroupActions): Self = StObject.set(x, "ResumeActions", value.asInstanceOf[js.Any])
     
-    inline def setResumeActionsVarargs(value: GameServerGroupAction*): Self = StObject.set(x, "ResumeActions", js.Array(value :_*))
+    inline def setResumeActionsVarargs(value: GameServerGroupAction*): Self = StObject.set(x, "ResumeActions", js.Array(value*))
   }
 }

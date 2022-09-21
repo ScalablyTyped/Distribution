@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RNFetchBlobResponseInfo extends StObject {
   
-  var headers: js.Any
+  var headers: Any
   
   var respType: text | blob | _empty | json
   
@@ -29,7 +29,7 @@ trait RNFetchBlobResponseInfo extends StObject {
 object RNFetchBlobResponseInfo {
   
   inline def apply(
-    headers: js.Any,
+    headers: Any,
     respType: text | blob | _empty | json,
     rnfbEncode: path | base64 | ascii | utf8,
     state: Double,
@@ -42,7 +42,7 @@ object RNFetchBlobResponseInfo {
   
   extension [Self <: RNFetchBlobResponseInfo](x: Self) {
     
-    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setRespType(value: text | blob | _empty | json): Self = StObject.set(x, "respType", value.asInstanceOf[js.Any])
     

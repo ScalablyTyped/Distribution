@@ -29,7 +29,7 @@ object DnsServersOptionsModifyStructure {
     
     inline def setCustomDnsServersUndefined: Self = StObject.set(x, "CustomDnsServers", js.undefined)
     
-    inline def setCustomDnsServersVarargs(value: String*): Self = StObject.set(x, "CustomDnsServers", js.Array(value :_*))
+    inline def setCustomDnsServersVarargs(value: String*): Self = StObject.set(x, "CustomDnsServers", js.Array(value*))
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     

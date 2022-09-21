@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Initializes a new instance of the ASPxClientChartDesignerSaveCommandExecuteEventArgs class.
   */
-class ASPxClientChartDesignerSaveCommandExecuteEventArgs ()
+open class ASPxClientChartDesignerSaveCommandExecuteEventArgs ()
   extends StObject
      with typings.devexpressWeb.ASPxClientChartDesignerSaveCommandExecuteEventArgs {
   

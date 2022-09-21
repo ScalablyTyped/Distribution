@@ -28,7 +28,7 @@ trait Shape extends StObject {
   
   val AnimationSettings: typings.activexPowerpoint.PowerPoint.AnimationSettings = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   def Apply(): Unit = js.native
   
@@ -168,7 +168,7 @@ trait Shape extends StObject {
   
   val OLEFormat: typings.activexPowerpoint.PowerPoint.OLEFormat = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   val ParentGroup: Shape = js.native
   
@@ -241,7 +241,7 @@ trait Shape extends StObject {
   
   val VerticalFlip: MsoTriState = js.native
   
-  val Vertices: js.Any = js.native
+  val Vertices: Any = js.native
   
   var Visible: MsoTriState = js.native
   

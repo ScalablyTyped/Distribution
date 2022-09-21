@@ -11,11 +11,11 @@ trait Audit extends StObject {
   
   val created_at: String
   
-  val events: js.Array[js.Any] | Null
+  val events: js.Array[Any] | Null
   
   val id: ZendeskID
   
-  val metadata: js.Any | Null
+  val metadata: Any | Null
   
   val ticket_id: ZendeskID
   
@@ -34,15 +34,15 @@ object Audit {
     
     inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
-    inline def setEvents(value: js.Array[js.Any]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: js.Array[Any]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     inline def setEventsNull: Self = StObject.set(x, "events", null)
     
-    inline def setEventsVarargs(value: js.Any*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: Any*): Self = StObject.set(x, "events", js.Array(value*))
     
     inline def setId(value: ZendeskID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setMetadataNull: Self = StObject.set(x, "metadata", null)
     

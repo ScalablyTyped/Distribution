@@ -15,25 +15,25 @@ object templateFactoryMod {
   
   @JSImport("@uirouter/angularjs/lib/templateFactory", "TemplateFactory")
   @js.native
-  class TemplateFactory ()
+  open class TemplateFactory ()
     extends StObject
        with TemplateFactoryProvider {
     
     /** @hidden */ @JSName("$get")
     var $get: js.Array[
-        String | (js.Function3[/* $http */ js.Any, /* $templateCache */ js.Any, /* $injector */ js.Any, this.type])
+        String | (js.Function3[/* $http */ Any, /* $templateCache */ Any, /* $injector */ Any, this.type])
       ] = js.native
     
     /** @hidden */ /* private */ @JSName("$http")
-    var $http: js.Any = js.native
+    var $http: Any = js.native
     
     /** @hidden */ /* private */ @JSName("$templateCache")
-    var $templateCache: js.Any = js.native
+    var $templateCache: Any = js.native
     
     /** @hidden */ /* private */ @JSName("$templateRequest")
-    var $templateRequest: js.Any = js.native
+    var $templateRequest: Any = js.native
     
-    /** @hidden */ /* private */ var _useHttp: js.Any = js.native
+    /** @hidden */ /* private */ var _useHttp: Any = js.native
     
     /**
       * Creates a component's template by invoking an injectable provider function.
@@ -42,7 +42,7 @@ object templateFactoryMod {
       * @param {Function} injectFn a function used to invoke the template provider
       * @return {string} The template html as a string: "<component-name input1='::$resolve.foo'></component-name>".
       */
-    def fromComponentProvider(provider: IInjectable, params: js.Any, context: ResolveContext): js.Promise[js.Any] = js.native
+    def fromComponentProvider(provider: IInjectable, params: Any, context: ResolveContext): js.Promise[Any] = js.native
     
     /**
       * Creates a template from a configuration object.
@@ -57,7 +57,7 @@ object templateFactoryMod {
       * @return {string|object}  The template html as a string, or a promise for
       * that string,or `null` if no template is configured.
       */
-    def fromConfig(config: Ng1ViewDeclaration, params: js.Any, context: ResolveContext): js.Promise[Component] = js.native
+    def fromConfig(config: Ng1ViewDeclaration, params: Any, context: ResolveContext): js.Promise[Component] = js.native
     
     /**
       * Creates a template by invoking an injectable provider function.
@@ -67,7 +67,7 @@ object templateFactoryMod {
       * @return {string|Promise.<string>} The template html as a string, or a promise
       * for that string.
       */
-    def fromProvider(provider: IInjectable, params: js.Any, context: ResolveContext): js.Promise[js.Any] = js.native
+    def fromProvider(provider: IInjectable, params: Any, context: ResolveContext): js.Promise[Any] = js.native
     
     /**
       * Creates a template from a string or a function returning a string.
@@ -78,10 +78,10 @@ object templateFactoryMod {
       * @return {string|object} The template html as a string, or a promise for that
       * string.
       */
-    def fromString(template: String): js.Any = js.native
-    def fromString(template: String, params: RawParams): js.Any = js.native
-    def fromString(template: js.Function): js.Any = js.native
-    def fromString(template: js.Function, params: RawParams): js.Any = js.native
+    def fromString(template: String): Any = js.native
+    def fromString(template: String, params: RawParams): Any = js.native
+    def fromString(template: js.Function): Any = js.native
+    def fromString(template: js.Function, params: RawParams): Any = js.native
     
     /**
       * Loads a template from the a URL via `$http` and `$templateCache`.
@@ -92,8 +92,8 @@ object templateFactoryMod {
       * @return {string|Promise.<string>} The template html as a string, or a promise
       * for that string.
       */
-    def fromUrl(url: String, params: js.Any): js.Any = js.native
-    def fromUrl(url: js.Function, params: js.Any): js.Any = js.native
+    def fromUrl(url: String, params: Any): Any = js.native
+    def fromUrl(url: js.Function, params: Any): Any = js.native
     
     /**
       * Creates a template from a component's name
@@ -110,7 +110,7 @@ object templateFactoryMod {
       * @return {string} The template as a string: "<component-name input1='::$resolve.foo'></component-name>".
       */
     def makeComponentTemplate(uiView: IAugmentedJQuery, context: ResolveContext, component: String): String = js.native
-    def makeComponentTemplate(uiView: IAugmentedJQuery, context: ResolveContext, component: String, bindings: js.Any): String = js.native
+    def makeComponentTemplate(uiView: IAugmentedJQuery, context: ResolveContext, component: String, bindings: Any): String = js.native
     
     /**
       * Forces $templateFactory to use $http instead of $templateRequest.
@@ -134,6 +134,6 @@ object templateFactoryMod {
       * @param useUnsafeHttpService `true` to use `$http` to fetch templates
       */
     /* CompleteClass */
-    override def useHttpService(useUnsafeHttpService: Boolean): js.Any = js.native
+    override def useHttpService(useUnsafeHttpService: Boolean): Any = js.native
   }
 }

@@ -8,7 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSGlobal("__esri.PortalFolder")
 @js.native
-class PortalFolderCls ()
+/**
+  * Provides information about folders used to organize content in a portal.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalFolder.html)
+  */
+open class PortalFolderCls ()
   extends StObject
      with typings.arcgisJsApi.esri.PortalFolder {
   def this(properties: PortalFolderProperties) = this()

@@ -7,27 +7,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateFaqRequest extends StObject {
   
   /**
-    * A token that you provide to identify the request to create a FAQ. Multiple calls to the CreateFaqRequest operation with the same client token will create only one FAQ. 
+    * A token that you provide to identify the request to create a FAQ. Multiple calls to the CreateFaqRequest API with the same client token will create only one FAQ. 
     */
   var ClientToken: js.UndefOr[ClientTokenName] = js.undefined
   
   /**
-    * A description of the FAQ.
+    * A description for the FAQ.
     */
   var Description: js.UndefOr[typings.awsSdk.kendraMod.Description] = js.undefined
   
   /**
-    * The format of the input file. You can choose between a basic CSV format, a CSV format that includes customs attributes in a header, and a JSON format that includes custom attributes. The format must match the format of the file stored in the S3 bucket identified in the S3Path parameter. For more information, see Adding questions and answers.
+    * The format of the FAQ input file. You can choose between a basic CSV format, a CSV format that includes customs attributes in a header, and a JSON format that includes custom attributes. The format must match the format of the file stored in the S3 bucket identified in the S3Path parameter. For more information, see Adding questions and answers.
     */
   var FileFormat: js.UndefOr[FaqFileFormat] = js.undefined
   
   /**
-    * The identifier of the index that contains the FAQ.
+    * The identifier of the index for the FAQ.
     */
   var IndexId: typings.awsSdk.kendraMod.IndexId
   
   /**
-    * The name that should be associated with the FAQ.
+    * The code for a language. This allows you to support a language for the FAQ document. English is supported by default. For more information on supported languages, including their codes, see Adding documents in languages other than English.
+    */
+  var LanguageCode: js.UndefOr[typings.awsSdk.kendraMod.LanguageCode] = js.undefined
+  
+  /**
+    * A name for the FAQ.
     */
   var Name: FaqName
   
@@ -37,7 +42,7 @@ trait CreateFaqRequest extends StObject {
   var RoleArn: typings.awsSdk.kendraMod.RoleArn
   
   /**
-    * The S3 location of the FAQ input data.
+    * The path to the FAQ file in S3.
     */
   var S3Path: typings.awsSdk.kendraMod.S3Path
   
@@ -69,6 +74,10 @@ object CreateFaqRequest {
     
     inline def setIndexId(value: IndexId): Self = StObject.set(x, "IndexId", value.asInstanceOf[js.Any])
     
+    inline def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
+    
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "LanguageCode", js.undefined)
+    
     inline def setName(value: FaqName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
@@ -79,6 +88,6 @@ object CreateFaqRequest {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

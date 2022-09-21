@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientContainer.anon
 
-import typings.maximMazurokGapiClientContainer.gapi.client.container.SetNodePoolManagementRequest
+import typings.maximMazurokGapiClientContainer.gapi.client.container.RollbackNodePoolUpgradeRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +20,7 @@ trait AccesstokenAlt extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
-  /** Deprecated. The name of the cluster to update. This field has been deprecated and replaced by the name field. */
+  /** Deprecated. The name of the cluster to rollback. This field has been deprecated and replaced by the name field. */
   var clusterId: String
   
   /** Selector specifying which fields to include in a partial response. */
@@ -29,7 +29,7 @@ trait AccesstokenAlt extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Deprecated. The name of the node pool to update. This field has been deprecated and replaced by the name field. */
+  /** Deprecated. The name of the node pool to rollback. This field has been deprecated and replaced by the name field. */
   var nodePoolId: String
   
   /** OAuth 2.0 token for the current user. */
@@ -39,8 +39,8 @@ trait AccesstokenAlt extends StObject {
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Deprecated. The Google Developers Console [project ID or project number](https://support.google.com/cloud/answer/6158840). This field has been deprecated and replaced by the
-    * name field.
+    * Deprecated. The Google Developers Console [project ID or project number](https://cloud.google.com/resource-manager/docs/creating-managing-projects). This field has been
+    * deprecated and replaced by the name field.
     */
   var projectId: String
   
@@ -48,7 +48,7 @@ trait AccesstokenAlt extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: SetNodePoolManagementRequest
+  var resource: RollbackNodePoolUpgradeRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -68,7 +68,7 @@ object AccesstokenAlt {
     clusterId: String,
     nodePoolId: String,
     projectId: String,
-    resource: SetNodePoolManagementRequest,
+    resource: RollbackNodePoolUpgradeRequest,
     zone: String
   ): AccesstokenAlt = {
     val __obj = js.Dynamic.literal(clusterId = clusterId.asInstanceOf[js.Any], nodePoolId = nodePoolId.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], zone = zone.asInstanceOf[js.Any])
@@ -119,7 +119,7 @@ object AccesstokenAlt {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: SetNodePoolManagementRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: RollbackNodePoolUpgradeRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

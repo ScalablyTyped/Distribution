@@ -10,7 +10,7 @@ object rectMod {
   
   object default {
     
-    @JSImport("@antv/g-math/lib/rect", JSImport.Default)
+    @JSImport("@antv/g-math/dist/rect", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
@@ -42,7 +42,7 @@ object rectMod {
       * @param {number} t 比例 0-1 之间的值
       * @return {object} 计算出来的点信息，包含 x,y
       */
-    inline def pointAt(x: Double, y: Double, width: Double, height: Double, t: Double): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("pointAt")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Point]
+    inline def pointAt(x: Double, y: Double, width: Double, height: Double, t: Double): Point | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("pointAt")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Point | Null]
     
     /**
       * 点到矩形的最小距离

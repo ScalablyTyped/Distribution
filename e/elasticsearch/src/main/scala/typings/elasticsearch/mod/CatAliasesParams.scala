@@ -23,6 +23,6 @@ object CatAliasesParams {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setNameVarargs(value: String*): Self = StObject.set(x, "name", js.Array(value :_*))
+    inline def setNameVarargs(value: String*): Self = StObject.set(x, "name", js.Array(value*))
   }
 }

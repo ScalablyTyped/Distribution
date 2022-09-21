@@ -44,19 +44,19 @@ object GrantParameters {
     
     inline def setAuthKeysUndefined: Self = StObject.set(x, "authKeys", js.undefined)
     
-    inline def setAuthKeysVarargs(value: String*): Self = StObject.set(x, "authKeys", js.Array(value :_*))
+    inline def setAuthKeysVarargs(value: String*): Self = StObject.set(x, "authKeys", js.Array(value*))
     
     inline def setChannelGroups(value: js.Array[String]): Self = StObject.set(x, "channelGroups", value.asInstanceOf[js.Any])
     
     inline def setChannelGroupsUndefined: Self = StObject.set(x, "channelGroups", js.undefined)
     
-    inline def setChannelGroupsVarargs(value: String*): Self = StObject.set(x, "channelGroups", js.Array(value :_*))
+    inline def setChannelGroupsVarargs(value: String*): Self = StObject.set(x, "channelGroups", js.Array(value*))
     
     inline def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
     inline def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
     
-    inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
+    inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value*))
     
     inline def setDelete(value: Boolean): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
@@ -90,7 +90,7 @@ object GrantParameters {
     
     inline def setUuidsUndefined: Self = StObject.set(x, "uuids", js.undefined)
     
-    inline def setUuidsVarargs(value: String*): Self = StObject.set(x, "uuids", js.Array(value :_*))
+    inline def setUuidsVarargs(value: String*): Self = StObject.set(x, "uuids", js.Array(value*))
     
     inline def setWrite(value: Boolean): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
     

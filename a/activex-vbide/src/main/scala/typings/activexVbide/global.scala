@@ -29,12 +29,12 @@ object global {
     
     @JSGlobal("VBIDE.AddIn")
     @js.native
-    /* private */ class AddIn ()
+    /* private */ open class AddIn ()
       extends StObject
          with typings.activexVbide.VBIDE.AddIn {
       
       /* CompleteClass */
-      override def Collection(index: js.Any): typings.activexVbide.VBIDE.AddIn = js.native
+      override def Collection(index: Any): typings.activexVbide.VBIDE.AddIn = js.native
       /* CompleteClass */
       @JSName("Collection")
       override val Collection_Original: Addins = js.native
@@ -49,7 +49,7 @@ object global {
       override val Guid: String = js.native
       
       /* CompleteClass */
-      var Object: js.Any = js.native
+      var Object: Any = js.native
       
       /* CompleteClass */
       override val ProgId: String = js.native
@@ -64,7 +64,7 @@ object global {
     
     @JSGlobal("VBIDE.Application")
     @js.native
-    /* private */ class Application ()
+    /* private */ open class Application ()
       extends StObject
          with typings.activexVbide.VBIDE.Application {
       
@@ -78,13 +78,13 @@ object global {
     
     @JSGlobal("VBIDE.CodeModule")
     @js.native
-    /* private */ class CodeModule ()
+    /* private */ open class CodeModule ()
       extends StObject
          with typings.activexVbide.VBIDE.CodeModule
     
     @JSGlobal("VBIDE.CodePane")
     @js.native
-    /* private */ class CodePane ()
+    /* private */ open class CodePane ()
       extends StObject
          with typings.activexVbide.VBIDE.CodePane {
       
@@ -95,7 +95,7 @@ object global {
       override val CodePaneView: vbextCodePaneview = js.native
       
       /* CompleteClass */
-      override def Collection(index: js.Any): typings.activexVbide.VBIDE.CodePane = js.native
+      override def Collection(index: Any): typings.activexVbide.VBIDE.CodePane = js.native
       /* CompleteClass */
       @JSName("Collection")
       override val Collection_Original: CodePanes = js.native
@@ -128,7 +128,7 @@ object global {
     
     @JSGlobal("VBIDE.CommandBarEvents")
     @js.native
-    /* private */ class CommandBarEvents ()
+    /* private */ open class CommandBarEvents ()
       extends StObject
          with typings.activexVbide.VBIDE.CommandBarEvents {
       
@@ -139,7 +139,7 @@ object global {
     
     @JSGlobal("VBIDE.Component")
     @js.native
-    /* private */ class Component ()
+    /* private */ open class Component ()
       extends StObject
          with typings.activexVbide.VBIDE.Component {
       
@@ -153,7 +153,7 @@ object global {
       var Name: String = js.native
       
       /* CompleteClass */
-      override def Parent(index: js.Any): typings.activexVbide.VBIDE.Component = js.native
+      override def Parent(index: Any): typings.activexVbide.VBIDE.Component = js.native
       /* CompleteClass */
       @JSName("Parent")
       override val Parent_Original: Components = js.native
@@ -165,12 +165,12 @@ object global {
     
     @JSGlobal("VBIDE.Events")
     @js.native
-    /* private */ class Events ()
+    /* private */ open class Events ()
       extends StObject
          with typings.activexVbide.VBIDE.Events {
       
       /* CompleteClass */
-      override def CommandBarEvents(CommandBarControl: js.Any): typings.activexVbide.VBIDE.CommandBarEvents = js.native
+      override def CommandBarEvents(CommandBarControl: Any): typings.activexVbide.VBIDE.CommandBarEvents = js.native
       
       /* CompleteClass */
       override def ReferencesEvents(VBProject: typings.activexVbide.VBIDE.VBProject): typings.activexVbide.VBIDE.ReferencesEvents = js.native
@@ -182,7 +182,7 @@ object global {
     
     @JSGlobal("VBIDE.ProjectTemplate")
     @js.native
-    /* private */ class ProjectTemplate ()
+    /* private */ open class ProjectTemplate ()
       extends StObject
          with typings.activexVbide.VBIDE.ProjectTemplate {
       
@@ -199,13 +199,13 @@ object global {
     
     @JSGlobal("VBIDE.Property")
     @js.native
-    /* private */ class Property ()
+    /* private */ open class Property ()
       extends StObject
          with typings.activexVbide.VBIDE.Property
     
     @JSGlobal("VBIDE.Reference")
     @js.native
-    /* private */ class Reference ()
+    /* private */ open class Reference ()
       extends StObject
          with typings.activexVbide.VBIDE.Reference {
       
@@ -213,7 +213,7 @@ object global {
       override val BuiltIn: Boolean = js.native
       
       /* CompleteClass */
-      override def Collection(index: js.Any): typings.activexVbide.VBIDE.Reference = js.native
+      override def Collection(index: Any): typings.activexVbide.VBIDE.Reference = js.native
       /* CompleteClass */
       @JSName("Collection")
       override val Collection_Original: References = js.native
@@ -252,7 +252,7 @@ object global {
     
     @JSGlobal("VBIDE.ReferencesEvents")
     @js.native
-    /* private */ class ReferencesEvents ()
+    /* private */ open class ReferencesEvents ()
       extends StObject
          with typings.activexVbide.VBIDE.ReferencesEvents {
       
@@ -263,7 +263,7 @@ object global {
     
     @JSGlobal("VBIDE.VBComponent")
     @js.native
-    /* private */ class VBComponent ()
+    /* private */ open class VBComponent ()
       extends StObject
          with typings.activexVbide.VBIDE.VBComponent {
       
@@ -274,13 +274,13 @@ object global {
       override val CodeModule: typings.activexVbide.VBIDE.CodeModule = js.native
       
       /* CompleteClass */
-      override def Collection(index: js.Any): typings.activexVbide.VBIDE.VBComponent = js.native
+      override def Collection(index: Any): typings.activexVbide.VBIDE.VBComponent = js.native
       /* CompleteClass */
       @JSName("Collection")
       override val Collection_Original: VBComponents = js.native
       
       /* CompleteClass */
-      override val Designer: js.Any = js.native
+      override val Designer: Any = js.native
       
       /* CompleteClass */
       override val DesignerID: String = js.native
@@ -298,7 +298,7 @@ object global {
       var Name: String = js.native
       
       /* CompleteClass */
-      override def Properties(index: js.Any): typings.activexVbide.VBIDE.Property = js.native
+      override def Properties(index: Any): typings.activexVbide.VBIDE.Property = js.native
       /* CompleteClass */
       @JSName("Properties")
       override val Properties_Original: Properties = js.native
@@ -319,7 +319,7 @@ object global {
     
     @JSGlobal("VBIDE.VBE")
     @js.native
-    /* private */ class VBE ()
+    /* private */ open class VBE ()
       extends StObject
          with typings.activexVbide.VBIDE.VBE {
       
@@ -333,13 +333,13 @@ object global {
       override val ActiveWindow: typings.activexVbide.VBIDE.Window = js.native
       
       /* CompleteClass */
-      override def Addins(index: js.Any): typings.activexVbide.VBIDE.AddIn = js.native
+      override def Addins(index: Any): typings.activexVbide.VBIDE.AddIn = js.native
       /* CompleteClass */
       @JSName("Addins")
       override val Addins_Original: Addins = js.native
       
       /* CompleteClass */
-      override def CodePanes(index: js.Any): typings.activexVbide.VBIDE.CodePane = js.native
+      override def CodePanes(index: Any): typings.activexVbide.VBIDE.CodePane = js.native
       /* CompleteClass */
       @JSName("CodePanes")
       override val CodePanes_Original: CodePanes = js.native
@@ -366,7 +366,7 @@ object global {
       var VBIDEDotVBE_typekey: typings.activexVbide.VBIDE.VBE = js.native
       
       /* CompleteClass */
-      override def VBProjects(index: js.Any): typings.activexVbide.VBIDE.VBProject = js.native
+      override def VBProjects(index: Any): typings.activexVbide.VBIDE.VBProject = js.native
       /* CompleteClass */
       @JSName("VBProjects")
       override val VBProjects_Original: VBProjects = js.native
@@ -375,7 +375,7 @@ object global {
       override val Version: String = js.native
       
       /* CompleteClass */
-      override def Windows(index: js.Any): typings.activexVbide.VBIDE.Window = js.native
+      override def Windows(index: Any): typings.activexVbide.VBIDE.Window = js.native
       /* CompleteClass */
       @JSName("Windows")
       override val Windows_Original: Windows = js.native
@@ -383,7 +383,7 @@ object global {
     
     @JSGlobal("VBIDE.VBProject")
     @js.native
-    /* private */ class VBProject ()
+    /* private */ open class VBProject ()
       extends StObject
          with typings.activexVbide.VBIDE.VBProject {
       
@@ -394,7 +394,7 @@ object global {
       var BuildFileName: String = js.native
       
       /* CompleteClass */
-      override def Collection(index: js.Any): typings.activexVbide.VBIDE.VBProject = js.native
+      override def Collection(index: Any): typings.activexVbide.VBIDE.VBProject = js.native
       /* CompleteClass */
       @JSName("Collection")
       override val Collection_Original: VBProjects = js.native
@@ -427,7 +427,7 @@ object global {
       override val Protection: vbextProjectProtection = js.native
       
       /* CompleteClass */
-      override def References(index: js.Any): typings.activexVbide.VBIDE.Reference = js.native
+      override def References(index: Any): typings.activexVbide.VBIDE.Reference = js.native
       /* CompleteClass */
       @JSName("References")
       override val References_Original: References = js.native
@@ -442,7 +442,7 @@ object global {
       override val Type: vbextProjectType = js.native
       
       /* CompleteClass */
-      override def VBComponents(index: js.Any): typings.activexVbide.VBIDE.VBComponent = js.native
+      override def VBComponents(index: Any): typings.activexVbide.VBIDE.VBComponent = js.native
       /* CompleteClass */
       @JSName("VBComponents")
       override val VBComponents_Original: VBComponents = js.native
@@ -457,7 +457,7 @@ object global {
     
     @JSGlobal("VBIDE.Window")
     @js.native
-    /* private */ class Window ()
+    /* private */ open class Window ()
       extends StObject
          with typings.activexVbide.VBIDE.Window {
       
@@ -468,7 +468,7 @@ object global {
       override def Close(): Unit = js.native
       
       /* CompleteClass */
-      override def Collection(index: js.Any): typings.activexVbide.VBIDE.Window = js.native
+      override def Collection(index: Any): typings.activexVbide.VBIDE.Window = js.native
       /* CompleteClass */
       @JSName("Collection")
       override val Collection_Original: Windows = js.native
@@ -486,7 +486,7 @@ object global {
       override val LinkedWindowFrame: typings.activexVbide.VBIDE.Window = js.native
       
       /* CompleteClass */
-      override def LinkedWindows(index: js.Any): typings.activexVbide.VBIDE.Window = js.native
+      override def LinkedWindows(index: Any): typings.activexVbide.VBIDE.Window = js.native
       /* CompleteClass */
       @JSName("LinkedWindows")
       override val LinkedWindows_Original: LinkedWindows = js.native

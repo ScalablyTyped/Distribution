@@ -8,7 +8,6 @@ import typings.javascriptStringify.javascriptStringifyStrings.Graveaccent
 import typings.javascriptStringify.typesMod.Next
 import typings.javascriptStringify.typesMod.ToString
 import typings.std.PropertyKey
-import typings.std.RegExp
 import typings.std.RegExpExecArray
 import typings.std.WeakSet
 import org.scalablytyped.runtime.StObject
@@ -23,17 +22,17 @@ object functionMod {
   
   @JSImport("javascript-stringify/dist/function", "FunctionParser")
   @js.native
-  class FunctionParser protected () extends StObject {
-    def this(fn: js.Function, indent: String, next: Next) = this()
-    def this(fn: js.Function, indent: String, next: Next, key: String) = this()
+  open class FunctionParser protected () extends StObject {
+    def this(fn: js.Function1[/* repeated */ Any, Any], indent: String, next: Next) = this()
+    def this(fn: js.Function1[/* repeated */ Any, Any], indent: String, next: Next, key: String) = this()
     
-    def consumeMatch(re: RegExp): RegExpExecArray | Null = js.native
+    def consumeMatch(re: js.RegExp): RegExpExecArray | Null = js.native
     
     /**
       * Advance the parser past an arbitrary regular expression. Return `token`,
       * or the match object of the regexp.
       */
-    def consumeRegExp(re: RegExp, token: String): js.UndefOr[String] = js.native
+    def consumeRegExp(re: js.RegExp, token: String): js.UndefOr[String] = js.native
     
     /**
       * Advance the parser past one element of JavaScript syntax. This could be a
@@ -44,9 +43,9 @@ object functionMod {
       *
       * (This isn't a full parser, so the token scanning logic used here is as
       * simple as it can be. As a consequence, some things that are one token in
-      * JavaScript, like decimal number literals or most multicharacter operators
+      * JavaScript, like decimal number literals or most multi-character operators
       * like '&&', are split into more than one token here. However, awareness of
-      * some multicharacter sequences like '=>' is necessary, so we match the few
+      * some multi-character sequences like '=>' is necessary, so we match the few
       * of them that we care about.)
       */
     def consumeSyntax(): js.UndefOr[String] = js.native
@@ -64,7 +63,7 @@ object functionMod {
       */
     def consumeWhitespace(): Unit = js.native
     
-    var fn: js.Function = js.native
+    def fn(args: Any*): Any = js.native
     
     var fnString: String = js.native
     
@@ -84,8 +83,8 @@ object functionMod {
     
     var keyQuote: js.UndefOr[String] = js.native
     
-    def next(value: js.Any): js.UndefOr[String] = js.native
-    def next(value: js.Any, key: PropertyKey): js.UndefOr[String] = js.native
+    def next(value: Any): js.UndefOr[String] = js.native
+    def next(value: Any, key: PropertyKey): js.UndefOr[String] = js.native
     @JSName("next")
     var next_Original: Next = js.native
     
@@ -99,8 +98,6 @@ object functionMod {
       * Attempt to advance the parser past the keywords expected to be at the
       * start of this function's definition. This method sets `this.hadKeyword`
       * based on whether or not a `function` keyword is consumed.
-      *
-      * @return {boolean}
       */
     def tryParsePrefixTokens(): Boolean = js.native
     
@@ -115,7 +112,7 @@ object functionMod {
   
   @JSImport("javascript-stringify/dist/function", "USED_METHOD_KEY")
   @js.native
-  val USED_METHOD_KEY: WeakSet[js.Function] = js.native
+  val USED_METHOD_KEY: WeakSet[js.Function1[/* repeated */ Any, Any]] = js.native
   
   inline def dedentFunction(fnString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dedentFunction")(fnString.asInstanceOf[js.Any]).asInstanceOf[String]
   

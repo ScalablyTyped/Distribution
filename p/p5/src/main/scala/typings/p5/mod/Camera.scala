@@ -7,11 +7,49 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Camera extends StObject {
   
   /**
-    *   Sets a camera's position and orientation. This is
-    *   equivalent to calling camera() on a p5.Camera
-    *   object.
+    *   Sets the camera's position and orientation.
+    *   Accepts the same parameters as the global
+    *   camera(). More information on this function can be
+    *   found there.
     */
   def camera(): Unit
+  
+  /**
+    *   x coordinate representing center of the sketch
+    */
+  var centerX: Double
+  
+  /**
+    *   y coordinate representing center of the sketch
+    */
+  var centerY: Double
+  
+  /**
+    *   z coordinate representing center of the sketch
+    */
+  var centerZ: Double
+  
+  /**
+    *   camera position value on x axis
+    */
+  var eyeX: Double
+  
+  /**
+    *   camera position value on y axis
+    */
+  var eyeY: Double
+  
+  /**
+    *   camera position value on z axis
+    */
+  var eyeZ: Double
+  
+  /**
+    *   Sets the camera's frustum. Accepts the same
+    *   parameters as the global frustum(). More
+    *   information on this function can be found there.
+    */
+  def frustum(): Unit
   
   /**
     *   Reorients the camera to look at a position in
@@ -35,9 +73,9 @@ trait Camera extends StObject {
   def move(x: Double, y: Double, z: Double): Unit
   
   /**
-    *   Sets an orthographic projection for a p5.Camera
-    *   object and sets parameters for that projection
-    *   according to ortho() syntax.
+    *   Sets an orthographic projection. Accepts the same
+    *   parameters as the global ortho(). More information
+    *   on this function can be found there.
     */
   def ortho(): Unit
   
@@ -51,9 +89,9 @@ trait Camera extends StObject {
   def pan(angle: Double): Unit
   
   /**
-    *   Sets a perspective projection for a p5.Camera
-    *   object and sets parameters for that projection
-    *   according to perspective() syntax.
+    *   Sets a perspective projection. Accepts the same
+    *   parameters as the global perspective(). More
+    *   information on this function can be found there.
     */
   def perspective(): Unit
   
@@ -73,26 +111,65 @@ trait Camera extends StObject {
     *   counterclockwise (to the left).
     */
   def tilt(angle: Double): Unit
+  
+  /**
+    *   x component of direction 'up' from camera
+    */
+  var upX: Double
+  
+  /**
+    *   y component of direction 'up' from camera
+    */
+  var upY: Double
+  
+  /**
+    *   z component of direction 'up' from camera
+    */
+  var upZ: Double
 }
 object Camera {
   
   inline def apply(
     camera: () => Unit,
+    centerX: Double,
+    centerY: Double,
+    centerZ: Double,
+    eyeX: Double,
+    eyeY: Double,
+    eyeZ: Double,
+    frustum: () => Unit,
     lookAt: (Double, Double, Double) => Unit,
     move: (Double, Double, Double) => Unit,
     ortho: () => Unit,
     pan: Double => Unit,
     perspective: () => Unit,
     setPosition: (Double, Double, Double) => Unit,
-    tilt: Double => Unit
+    tilt: Double => Unit,
+    upX: Double,
+    upY: Double,
+    upZ: Double
   ): Camera = {
-    val __obj = js.Dynamic.literal(camera = js.Any.fromFunction0(camera), lookAt = js.Any.fromFunction3(lookAt), move = js.Any.fromFunction3(move), ortho = js.Any.fromFunction0(ortho), pan = js.Any.fromFunction1(pan), perspective = js.Any.fromFunction0(perspective), setPosition = js.Any.fromFunction3(setPosition), tilt = js.Any.fromFunction1(tilt))
+    val __obj = js.Dynamic.literal(camera = js.Any.fromFunction0(camera), centerX = centerX.asInstanceOf[js.Any], centerY = centerY.asInstanceOf[js.Any], centerZ = centerZ.asInstanceOf[js.Any], eyeX = eyeX.asInstanceOf[js.Any], eyeY = eyeY.asInstanceOf[js.Any], eyeZ = eyeZ.asInstanceOf[js.Any], frustum = js.Any.fromFunction0(frustum), lookAt = js.Any.fromFunction3(lookAt), move = js.Any.fromFunction3(move), ortho = js.Any.fromFunction0(ortho), pan = js.Any.fromFunction1(pan), perspective = js.Any.fromFunction0(perspective), setPosition = js.Any.fromFunction3(setPosition), tilt = js.Any.fromFunction1(tilt), upX = upX.asInstanceOf[js.Any], upY = upY.asInstanceOf[js.Any], upZ = upZ.asInstanceOf[js.Any])
     __obj.asInstanceOf[Camera]
   }
   
   extension [Self <: Camera](x: Self) {
     
     inline def setCamera(value: () => Unit): Self = StObject.set(x, "camera", js.Any.fromFunction0(value))
+    
+    inline def setCenterX(value: Double): Self = StObject.set(x, "centerX", value.asInstanceOf[js.Any])
+    
+    inline def setCenterY(value: Double): Self = StObject.set(x, "centerY", value.asInstanceOf[js.Any])
+    
+    inline def setCenterZ(value: Double): Self = StObject.set(x, "centerZ", value.asInstanceOf[js.Any])
+    
+    inline def setEyeX(value: Double): Self = StObject.set(x, "eyeX", value.asInstanceOf[js.Any])
+    
+    inline def setEyeY(value: Double): Self = StObject.set(x, "eyeY", value.asInstanceOf[js.Any])
+    
+    inline def setEyeZ(value: Double): Self = StObject.set(x, "eyeZ", value.asInstanceOf[js.Any])
+    
+    inline def setFrustum(value: () => Unit): Self = StObject.set(x, "frustum", js.Any.fromFunction0(value))
     
     inline def setLookAt(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "lookAt", js.Any.fromFunction3(value))
     
@@ -107,5 +184,11 @@ object Camera {
     inline def setSetPosition(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "setPosition", js.Any.fromFunction3(value))
     
     inline def setTilt(value: Double => Unit): Self = StObject.set(x, "tilt", js.Any.fromFunction1(value))
+    
+    inline def setUpX(value: Double): Self = StObject.set(x, "upX", value.asInstanceOf[js.Any])
+    
+    inline def setUpY(value: Double): Self = StObject.set(x, "upY", value.asInstanceOf[js.Any])
+    
+    inline def setUpZ(value: Double): Self = StObject.set(x, "upZ", value.asInstanceOf[js.Any])
   }
 }

@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.NumberDictionary
 import typings.std.HTMLStyleElement
 import typings.std.Window
 import typings.tampermonkey.Tampermonkey.AbortHandle
+import typings.tampermonkey.Tampermonkey.ContentType
 import typings.tampermonkey.Tampermonkey.DownloadRequest
 import typings.tampermonkey.Tampermonkey.NotificationDetails
 import typings.tampermonkey.Tampermonkey.NotificationOnClick
@@ -11,13 +12,77 @@ import typings.tampermonkey.Tampermonkey.NotificationOnDone
 import typings.tampermonkey.Tampermonkey.OpenTabObject
 import typings.tampermonkey.Tampermonkey.OpenTabOptions
 import typings.tampermonkey.Tampermonkey.Request
+import typings.tampermonkey.Tampermonkey.Response
+import typings.tampermonkey.Tampermonkey.ScriptInfo
 import typings.tampermonkey.Tampermonkey.ValueChangeListener
-import typings.tampermonkey.anon.Mimetype
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
+  
+  // GM.*
+  /**
+    * `GM` has all the `GM_*` apis in promisified form
+    */
+  /* Inlined std.Readonly<{addStyle (css : string): std.Promise<std.HTMLStyleElement>, setValue (name : string, value : any): std.Promise<void>, getValue <TValue>(name : string, defaultValue : TValue | undefined): std.Promise<TValue>, deleteValue (name : string): std.Promise<void>, listValues (): std.Promise<std.Array<string>>, addValueChangeListener (name : string, listener : tampermonkey.Tampermonkey.ValueChangeListener): std.Promise<number>, removeValueChangeListener (listenerId : number): std.Promise<void>, getResourceText (name : string): std.Promise<string>, getResourceUrl (name : string): std.Promise<string>, registerMenuCommand (name : string, onClick : (): void, accessKey : string | undefined): std.Promise<number>, unregisterMenuCommand (menuCommandId : number): std.Promise<void>, xmlHttpRequest <TContext = any>(details : tampermonkey.Tampermonkey.Request<TContext>): std.Promise<tampermonkey.Tampermonkey.Response<TContext>>, download (details : tampermonkey.Tampermonkey.DownloadRequest): std.Promise<void>, saveTab (obj : any): std.Promise<void>, getTab (): std.Promise<any>, getTabs (): std.Promise<{[tabId: number] : any}>,   info :tampermonkey.Tampermonkey.ScriptInfo, log (message : ...any): std.Promise<void>, openInTab (url : string, options : tampermonkey.Tampermonkey.OpenTabOptions | boolean | undefined): std.Promise<tampermonkey.Tampermonkey.OpenTabObject>, notification (details : tampermonkey.Tampermonkey.NotificationDetails, ondone : tampermonkey.Tampermonkey.NotificationOnDone | undefined): std.Promise<boolean>, notification (text : string, title : string | undefined, image : string | undefined, onclick : tampermonkey.Tampermonkey.NotificationOnClick | undefined): std.Promise<boolean>, setClipboard (data : string, info : tampermonkey.Tampermonkey.ContentType | undefined): std.Promise<void>}> */
+  object GM {
+    
+    @JSGlobal("GM")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def addStyle(css: String): js.Promise[HTMLStyleElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("addStyle")(css.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLStyleElement]]
+    
+    inline def addValueChangeListener(name: String, listener: ValueChangeListener): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("addValueChangeListener")(name.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+    
+    inline def deleteValue(name: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteValue")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    
+    inline def download(details: DownloadRequest): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("download")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    
+    inline def getResourceText(name: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getResourceText")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+    
+    inline def getResourceUrl(name: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getResourceUrl")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+    
+    inline def getTab(): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTab")().asInstanceOf[js.Promise[Any]]
+    
+    inline def getTabs(): js.Promise[NumberDictionary[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTabs")().asInstanceOf[js.Promise[NumberDictionary[Any]]]
+    
+    inline def getValue[TValue](name: String): js.Promise[TValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("getValue")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TValue]]
+    inline def getValue[TValue](name: String, defaultValue: TValue): js.Promise[TValue] = (^.asInstanceOf[js.Dynamic].applyDynamic("getValue")(name.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TValue]]
+    
+    @JSGlobal("GM.info")
+    @js.native
+    val info: ScriptInfo = js.native
+    
+    inline def listValues(): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listValues")().asInstanceOf[js.Promise[js.Array[String]]]
+    
+    inline def log(message: Any*): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(message.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Promise[Unit]]
+    
+    inline def notification(details: NotificationDetails): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("notification")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    inline def notification(details: NotificationDetails, ondone: NotificationOnDone): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("notification")(details.asInstanceOf[js.Any], ondone.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    
+    inline def openInTab(url: String): js.Promise[OpenTabObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("openInTab")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[OpenTabObject]]
+    inline def openInTab(url: String, options: Boolean): js.Promise[OpenTabObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("openInTab")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[OpenTabObject]]
+    inline def openInTab(url: String, options: OpenTabOptions): js.Promise[OpenTabObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("openInTab")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[OpenTabObject]]
+    
+    inline def registerMenuCommand(name: String, onClick: js.Function0[Unit]): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerMenuCommand")(name.asInstanceOf[js.Any], onClick.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+    inline def registerMenuCommand(name: String, onClick: js.Function0[Unit], accessKey: String): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerMenuCommand")(name.asInstanceOf[js.Any], onClick.asInstanceOf[js.Any], accessKey.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+    
+    inline def removeValueChangeListener(listenerId: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeValueChangeListener")(listenerId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    
+    inline def saveTab(obj: Any): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("saveTab")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    
+    inline def setClipboard(data: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setClipboard")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    inline def setClipboard(data: String, info: ContentType): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setClipboard")(data.asInstanceOf[js.Any], info.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    
+    inline def setValue(name: String, value: Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setValue")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    
+    inline def unregisterMenuCommand(menuCommandId: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("unregisterMenuCommand")(menuCommandId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    
+    inline def xmlHttpRequest[TContext](// onload and the like still work
+    details: Request[TContext]): js.Promise[Response[TContext]] = ^.asInstanceOf[js.Dynamic].applyDynamic("xmlHttpRequest")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Response[TContext]]]
+  }
   
   // Styles
   /**
@@ -53,21 +118,25 @@ object global {
   inline def GMGetResourceURL(name: String): String = js.Dynamic.global.applyDynamic("GM_getResourceURL")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /** Gets a object that is persistent as long as this tab is open */
-  inline def GMGetTab(callback: js.Function1[/* obj */ js.Any, Unit]): Unit = js.Dynamic.global.applyDynamic("GM_getTab")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def GMGetTab(callback: js.Function1[/* obj */ Any, Unit]): Unit = js.Dynamic.global.applyDynamic("GM_getTab")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** Gets all tab objects as a hash to communicate with other script instances */
-  inline def GMGetTabs(callback: js.Function1[/* tabsMap */ NumberDictionary[js.Any], Unit]): Unit = js.Dynamic.global.applyDynamic("GM_getTabs")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def GMGetTabs(callback: js.Function1[/* tabsMap */ NumberDictionary[Any], Unit]): Unit = js.Dynamic.global.applyDynamic("GM_getTabs")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** Gets the value of 'name' from storage */
   inline def GMGetValue[TValue](name: String): TValue = js.Dynamic.global.applyDynamic("GM_getValue")(name.asInstanceOf[js.Any]).asInstanceOf[TValue]
   inline def GMGetValue[TValue](name: String, defaultValue: TValue): TValue = (js.Dynamic.global.applyDynamic("GM_getValue")(name.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[TValue]
   
+  // Utils
+  @JSGlobal("GM_info")
+  @js.native
+  val GMInfo: ScriptInfo = js.native
+  
   /** Lists all names of the storage */
   inline def GMListValues(): js.Array[String] = js.Dynamic.global.applyDynamic("GM_listValues")().asInstanceOf[js.Array[String]]
   
-  // Utils
   /** Log a message to the console */
-  inline def GMLog(message: js.Any*): Unit = js.Dynamic.global.applyDynamic("GM_log")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def GMLog(message: Any*): Unit = js.Dynamic.global.applyDynamic("GM_log")(message.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
   
   /**
     * Shows a HTML5 Desktop notification and/or highlight the current tab.
@@ -103,7 +172,7 @@ object global {
     *
     * If neither active nor loadInBackground is given, then the tab will not be
     * focused.
-    * @returns Object with the function `close`, the listener `onclosed` and a flag
+    * @returns Object with the function `close`, the listener `onclose` and a flag
     * called `closed`.
     */
   inline def GMOpenInTab(url: String): OpenTabObject = js.Dynamic.global.applyDynamic("GM_openInTab")(url.asInstanceOf[js.Any]).asInstanceOf[OpenTabObject]
@@ -132,16 +201,15 @@ object global {
     * type ("text" or "html").
     */
   inline def GMSetClipboard(data: String): Unit = js.Dynamic.global.applyDynamic("GM_setClipboard")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def GMSetClipboard(data: String, info: String): Unit = (js.Dynamic.global.applyDynamic("GM_setClipboard")(data.asInstanceOf[js.Any], info.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def GMSetClipboard(data: String, info: Mimetype): Unit = (js.Dynamic.global.applyDynamic("GM_setClipboard")(data.asInstanceOf[js.Any], info.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def GMSetClipboard(data: String, info: ContentType): Unit = (js.Dynamic.global.applyDynamic("GM_setClipboard")(data.asInstanceOf[js.Any], info.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   // Storage
   /** Sets the value of `name` to the storage */
-  inline def GMSetValue(name: String, value: js.Any): Unit = (js.Dynamic.global.applyDynamic("GM_setValue")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def GMSetValue(name: String, value: Any): Unit = (js.Dynamic.global.applyDynamic("GM_setValue")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     *  Unregister a menu command that was previously registered by
-    * `GM_registerMenuCommand` with the given menu command ID.
+    * `GM_registerMenuCommand` or `GM.registerMenuCommand` with the given menu command ID.
     */
   inline def GMUnregisterMenuCommand(menuCommandId: Double): Unit = js.Dynamic.global.applyDynamic("GM_unregisterMenuCommand")(menuCommandId.asInstanceOf[js.Any]).asInstanceOf[Unit]
   

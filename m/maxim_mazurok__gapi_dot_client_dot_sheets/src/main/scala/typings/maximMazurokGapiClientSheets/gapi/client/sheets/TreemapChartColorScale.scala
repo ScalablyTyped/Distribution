@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TreemapChartColorScale extends StObject {
   
-  /** The background color for cells with a color value greater than or equal to maxValue. Defaults to #109618 if not specified. */
+  /** The background color for cells with a color value greater than or equal to maxValue. Defaults to #109618 if not specified. Deprecated: Use max_value_color_style. */
   var maxValueColor: js.UndefOr[Color] = js.undefined
   
   /**
@@ -15,7 +15,7 @@ trait TreemapChartColorScale extends StObject {
     */
   var maxValueColorStyle: js.UndefOr[ColorStyle] = js.undefined
   
-  /** The background color for cells with a color value at the midpoint between minValue and maxValue. Defaults to #efe6dc if not specified. */
+  /** The background color for cells with a color value at the midpoint between minValue and maxValue. Defaults to #efe6dc if not specified. Deprecated: Use mid_value_color_style. */
   var midValueColor: js.UndefOr[Color] = js.undefined
   
   /**
@@ -24,13 +24,13 @@ trait TreemapChartColorScale extends StObject {
     */
   var midValueColorStyle: js.UndefOr[ColorStyle] = js.undefined
   
-  /** The background color for cells with a color value less than or equal to minValue. Defaults to #dc3912 if not specified. */
+  /** The background color for cells with a color value less than or equal to minValue. Defaults to #dc3912 if not specified. Deprecated: Use min_value_color_style. */
   var minValueColor: js.UndefOr[Color] = js.undefined
   
   /** The background color for cells with a color value less than or equal to minValue. Defaults to #dc3912 if not specified. If min_value_color is also set, this field takes precedence. */
   var minValueColorStyle: js.UndefOr[ColorStyle] = js.undefined
   
-  /** The background color for cells that have no color data associated with them. Defaults to #000000 if not specified. */
+  /** The background color for cells that have no color data associated with them. Defaults to #000000 if not specified. Deprecated: Use no_data_color_style. */
   var noDataColor: js.UndefOr[Color] = js.undefined
   
   /** The background color for cells that have no color data associated with them. Defaults to #000000 if not specified. If no_data_color is also set, this field takes precedence. */

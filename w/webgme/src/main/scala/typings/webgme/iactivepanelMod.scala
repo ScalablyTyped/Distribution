@@ -9,7 +9,7 @@ object iactivepanelMod {
   
   @JSImport("js/PanelManager/IActivePanel", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with IActivePanel {
     

@@ -2,7 +2,6 @@ package typings.eggMultipart
 
 import typings.eggMultipart.mod.Context
 import typings.eggMultipart.mod.MatchItem
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -74,7 +73,7 @@ object anon {
       
       inline def setFileExtensionsUndefined: Self = StObject.set(x, "fileExtensions", js.undefined)
       
-      inline def setFileExtensionsVarargs(value: String*): Self = StObject.set(x, "fileExtensions", js.Array(value :_*))
+      inline def setFileExtensionsVarargs(value: String*): Self = StObject.set(x, "fileExtensions", js.Array(value*))
       
       inline def setFileModeMatch(value: MatchItem | js.Array[MatchItem]): Self = StObject.set(x, "fileModeMatch", value.asInstanceOf[js.Any])
       
@@ -82,7 +81,7 @@ object anon {
       
       inline def setFileModeMatchUndefined: Self = StObject.set(x, "fileModeMatch", js.undefined)
       
-      inline def setFileModeMatchVarargs(value: MatchItem*): Self = StObject.set(x, "fileModeMatch", js.Array(value :_*))
+      inline def setFileModeMatchVarargs(value: MatchItem*): Self = StObject.set(x, "fileModeMatch", js.Array(value*))
       
       inline def setFileSize(value: String | Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
       
@@ -106,15 +105,15 @@ object anon {
       
       inline def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
       
-      inline def setWhitelistVarargs(value: String*): Self = StObject.set(x, "whitelist", js.Array(value :_*))
+      inline def setWhitelistVarargs(value: String*): Self = StObject.set(x, "whitelist", js.Array(value*))
     }
   }
   
   trait CurrentDate extends StObject {
     
-    var currentDate: js.UndefOr[String | Double | Date] = js.undefined
+    var currentDate: js.UndefOr[String | Double | js.Date] = js.undefined
     
-    var endDate: js.UndefOr[String | Double | Date] = js.undefined
+    var endDate: js.UndefOr[String | Double | js.Date] = js.undefined
     
     var iterator: js.UndefOr[Boolean] = js.undefined
     
@@ -131,11 +130,11 @@ object anon {
     
     extension [Self <: CurrentDate](x: Self) {
       
-      inline def setCurrentDate(value: String | Double | Date): Self = StObject.set(x, "currentDate", value.asInstanceOf[js.Any])
+      inline def setCurrentDate(value: String | Double | js.Date): Self = StObject.set(x, "currentDate", value.asInstanceOf[js.Any])
       
       inline def setCurrentDateUndefined: Self = StObject.set(x, "currentDate", js.undefined)
       
-      inline def setEndDate(value: String | Double | Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+      inline def setEndDate(value: String | Double | js.Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
       
       inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
       

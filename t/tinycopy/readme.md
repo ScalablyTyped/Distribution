@@ -11,9 +11,9 @@ Tiny library for clipboard copy.
 | Full name          | tinycopy |
 | Keywords           | copy, tiny, clipboard |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 6149 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 266.3333333333333 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/vvatanabe/tinycopy#readme)

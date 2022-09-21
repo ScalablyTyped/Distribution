@@ -12,7 +12,7 @@ trait ListPromptsRequest extends StObject {
   var InstanceId: typings.awsSdk.connectMod.InstanceId
   
   /**
-    * The maximum number of results to return per page.
+    * The maximum number of results to return per page. The default MaxResult size is 100.
     */
   var MaxResults: js.UndefOr[MaxResult1000] = js.undefined
   

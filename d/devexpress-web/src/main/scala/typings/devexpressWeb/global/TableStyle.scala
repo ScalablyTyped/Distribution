@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("TableStyle")
 @js.native
-class TableStyle ()
+open class TableStyle ()
   extends StObject
      with typings.devexpressWeb.TableStyle {
   

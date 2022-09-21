@@ -1,7 +1,7 @@
 
 # Scala.js typings for pkg-dir
 
-Typings are for version 5.0.0
+Typings are for version 7.0.0
 
 ## Library description:
 Find the root directory of a Node.js project or npm package
@@ -9,11 +9,11 @@ Find the root directory of a Node.js project or npm package
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | pkg-dir |
-| Keywords           | package, json, root, npm, entry, find, up, find-up, findup, look-up, look, file, search, match, resolve, parent, parents, folder, directory, dir, walk, walking, path |
-| # releases         | 5 |
-| # dependents       | 585 |
-| # downloads        | 1375808747 |
-| # stars            | 8 |
+| Keywords           | package, json, root, npm, entry, find, up, find-up, findup, look-up, look, file, search, match, resolve, parent, parents, folder, directory, walk, walking, path |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 2.1076283033333334E8 |
+| # stars            | 193.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/pkg-dir#readme)

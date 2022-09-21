@@ -34,7 +34,7 @@ trait ModalDialogOptions
   extends StObject
      with ComponentOptions {
   
-  var content: js.UndefOr[js.Any] = js.undefined
+  var content: js.UndefOr[Any] = js.undefined
   
   var description: js.UndefOr[String] = js.undefined
   
@@ -55,7 +55,7 @@ object ModalDialogOptions {
   
   extension [Self <: ModalDialogOptions](x: Self) {
     
-    inline def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     

@@ -36,6 +36,6 @@ object InsightResults {
     
     inline def setResultValues(value: InsightResultValueList): Self = StObject.set(x, "ResultValues", value.asInstanceOf[js.Any])
     
-    inline def setResultValuesVarargs(value: InsightResultValue*): Self = StObject.set(x, "ResultValues", js.Array(value :_*))
+    inline def setResultValuesVarargs(value: InsightResultValue*): Self = StObject.set(x, "ResultValues", js.Array(value*))
   }
 }

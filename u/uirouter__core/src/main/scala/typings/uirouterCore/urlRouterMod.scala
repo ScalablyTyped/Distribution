@@ -1,6 +1,5 @@
 package typings.uirouterCore
 
-import typings.std.RegExp
 import typings.uirouterCore.anon.Absolute
 import typings.uirouterCore.anon.Priority
 import typings.uirouterCore.anon.Replace
@@ -22,7 +21,7 @@ object urlRouterMod {
   
   @JSImport("@uirouter/core/lib/url/urlRouter", "UrlRouter")
   @js.native
-  class UrlRouter protected () extends StObject {
+  open class UrlRouter protected () extends StObject {
     /** @internal */
     def this(/** @internal */ router: UIRouter) = this()
     
@@ -50,8 +49,8 @@ object urlRouterMod {
       * @returns Returns the fully compiled URL, or `null` if `params` fail validation against `urlMatcher`
       */
     def href(urlMatcher: UrlMatcher): String = js.native
-    def href(urlMatcher: UrlMatcher, params: js.Any): String = js.native
-    def href(urlMatcher: UrlMatcher, params: js.Any, options: Absolute): String = js.native
+    def href(urlMatcher: UrlMatcher, params: Any): String = js.native
+    def href(urlMatcher: UrlMatcher, params: Any, options: Absolute): String = js.native
     def href(urlMatcher: UrlMatcher, params: Unit, options: Absolute): String = js.native
     
     /** @deprecated use [[UrlRules.initial]]*/
@@ -67,7 +66,7 @@ object urlRouterMod {
     def listen(): js.Function = js.native
     def listen(enabled: Boolean): js.Function = js.native
     
-    /** @internal */ /* private */ var location: js.Any = js.native
+    /** @internal */ /* private */ var location: Any = js.native
     
     /** @deprecated use [[UrlService.match]]*/
     def `match`(urlParts: UrlParts): MatchResult = js.native
@@ -96,7 +95,7 @@ object urlRouterMod {
     /** @deprecated use [[UrlRules.removeRule]]*/
     def removeRule(rule: UrlRule): Unit = js.native
     
-    /* private */ var router: js.Any = js.native
+    /* private */ var router: Any = js.native
     
     /** @deprecated use [[UrlRules.rule]]*/
     def rule(rule: UrlRule): js.Function = js.native
@@ -110,7 +109,7 @@ object urlRouterMod {
     
     /** @deprecated use [[UrlService.sync]]*/
     def sync(): Unit = js.native
-    def sync(evt: js.Any): Unit = js.native
+    def sync(evt: Any): Unit = js.native
     
     /** Internal API. */
     def update(): Unit = js.native
@@ -124,10 +123,10 @@ object urlRouterMod {
     def when(matcher: String, handler: UrlRuleHandlerFn): UrlRule = js.native
     def when(matcher: String, handler: UrlRuleHandlerFn, options: Priority): UrlRule = js.native
     /** @deprecated use [[UrlRules.when]]*/
-    def when(matcher: RegExp, handler: String): UrlRule = js.native
-    def when(matcher: RegExp, handler: String, options: Priority): UrlRule = js.native
-    def when(matcher: RegExp, handler: UrlRuleHandlerFn): UrlRule = js.native
-    def when(matcher: RegExp, handler: UrlRuleHandlerFn, options: Priority): UrlRule = js.native
+    def when(matcher: js.RegExp, handler: String): UrlRule = js.native
+    def when(matcher: js.RegExp, handler: String, options: Priority): UrlRule = js.native
+    def when(matcher: js.RegExp, handler: UrlRuleHandlerFn): UrlRule = js.native
+    def when(matcher: js.RegExp, handler: UrlRuleHandlerFn, options: Priority): UrlRule = js.native
     def when(matcher: UrlMatcher, handler: String): UrlRule = js.native
     def when(matcher: UrlMatcher, handler: String, options: Priority): UrlRule = js.native
     def when(matcher: UrlMatcher, handler: UrlRuleHandlerFn): UrlRule = js.native

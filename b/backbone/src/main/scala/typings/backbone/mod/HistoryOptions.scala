@@ -8,6 +8,8 @@ trait HistoryOptions
   extends StObject
      with Silenceable {
   
+  var hashChange: js.UndefOr[Boolean] = js.undefined
+  
   var pushState: js.UndefOr[Boolean] = js.undefined
   
   var root: js.UndefOr[String] = js.undefined
@@ -20,6 +22,10 @@ object HistoryOptions {
   }
   
   extension [Self <: HistoryOptions](x: Self) {
+    
+    inline def setHashChange(value: Boolean): Self = StObject.set(x, "hashChange", value.asInstanceOf[js.Any])
+    
+    inline def setHashChangeUndefined: Self = StObject.set(x, "hashChange", js.undefined)
     
     inline def setPushState(value: Boolean): Self = StObject.set(x, "pushState", value.asInstanceOf[js.Any])
     

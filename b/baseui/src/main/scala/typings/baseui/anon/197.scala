@@ -1,33 +1,33 @@
 package typings.baseui.anon
 
-import typings.baseui.baseuiStrings.LK
-import typings.baseui.baseuiStrings.Plussign94
-import typings.baseui.baseuiStrings.`Sri Lanka Leftparenthesisශ්‍රී ලංකාවRightparenthesis`
+import typings.baseui.baseuiStrings.PM
+import typings.baseui.baseuiStrings.Plussign508
+import typings.baseui.baseuiStrings.`Saint Pierre and Miquelon LeftparenthesisSaint-Pierre-et-MiquelonRightparenthesis`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `197` extends StObject {
   
-  var dialCode: Plussign94
+  val dialCode: Plussign508
   
-  var id: LK
+  val id: PM
   
-  var label: `Sri Lanka Leftparenthesisශ්‍රී ලංකාවRightparenthesis`
+  val label: `Saint Pierre and Miquelon LeftparenthesisSaint-Pierre-et-MiquelonRightparenthesis`
 }
 object `197` {
   
   inline def apply(): `197` = {
-    val __obj = js.Dynamic.literal(dialCode = "+94", id = "LK", label = "Sri Lanka (\u0DC1\u0DCA\u200D\u0DBB\u0DD3 \u0DBD\u0D82\u0D9A\u0DCF\u0DC0)")
+    val __obj = js.Dynamic.literal(dialCode = "+508", id = "PM", label = "Saint Pierre and Miquelon (Saint-Pierre-et-Miquelon)")
     __obj.asInstanceOf[`197`]
   }
   
   extension [Self <: `197`](x: Self) {
     
-    inline def setDialCode(value: Plussign94): Self = StObject.set(x, "dialCode", value.asInstanceOf[js.Any])
+    inline def setDialCode(value: Plussign508): Self = StObject.set(x, "dialCode", value.asInstanceOf[js.Any])
     
-    inline def setId(value: LK): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: PM): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setLabel(value: `Sri Lanka Leftparenthesisශ්‍රී ලංකාවRightparenthesis`): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: `Saint Pierre and Miquelon LeftparenthesisSaint-Pierre-et-MiquelonRightparenthesis`): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
   }
 }

@@ -11,9 +11,9 @@ Zero configuration loading spinner.
 | Full name          | react-spinner |
 | Keywords           | facebook, react, spin, spinner, loading, react-component |
 | # releases         | 0 |
-| # dependents       | 18 |
-| # downloads        | 808546 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 130902.0 |
+| # stars            | 186.0 |
 
 ## Links
 - [Homepage](https://github.com/chenglou/react-spinner)

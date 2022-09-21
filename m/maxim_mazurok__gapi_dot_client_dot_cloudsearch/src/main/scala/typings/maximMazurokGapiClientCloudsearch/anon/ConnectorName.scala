@@ -19,7 +19,7 @@ trait ConnectorName extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
-  /** Name of connector making this call. Format: datasources/{source_id}/connectors/{ID} */
+  /** The name of connector making this call. Format: datasources/{source_id}/connectors/{ID} */
   var connectorName: js.UndefOr[String] = js.undefined
   
   /** If you are asked by Google to help with debugging, set this field. Otherwise, ignore this field. */
@@ -35,7 +35,7 @@ trait ConnectorName extends StObject {
   /** Required. The RequestMode for this request. */
   var mode: js.UndefOr[String] = js.undefined
   
-  /** Required. Name of the item to delete. Format: datasources/{source_id}/items/{item_id} */
+  /** Required. The name of the item to delete. Format: datasources/{source_id}/items/{item_id} */
   var name: String
   
   /** OAuth 2.0 token for the current user. */
@@ -56,7 +56,8 @@ trait ConnectorName extends StObject {
   /**
     * Required. The incremented version of the item to delete from the index. The indexing system stores the version from the datasource as a byte string and compares the Item version
     * in the index to the version of the queued Item using lexical ordering. Cloud Search Indexing won't delete any queued item with a version value that is less than or equal to the
-    * version of the currently indexed item. The maximum length for this field is 1024 bytes.
+    * version of the currently indexed item. The maximum length for this field is 1024 bytes. For information on how item version affects the deletion process, refer to [Handle
+    * revisions after manual deletes](https://developers.google.com/cloud-search/docs/guides/operations).
     */
   var version: js.UndefOr[String] = js.undefined
 }

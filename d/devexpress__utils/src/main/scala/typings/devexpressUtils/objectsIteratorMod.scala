@@ -11,7 +11,7 @@ object objectsIteratorMod {
   
   @JSImport("@devexpress/utils/lib/intervals/sparse/objects-iterator", "SparseObjectsIterator")
   @js.native
-  class SparseObjectsIterator[T /* <: ConstInterval */, ObjT] protected () extends SparseIntervalsIterator[T] {
+  open class SparseObjectsIterator[T /* <: ConstInterval */, ObjT] protected () extends SparseIntervalsIterator[T] {
     def this(sparseIntervals: SparseIntervals[T], objects: js.Array[ObjT]) = this()
     
     var obj: ObjT = js.native

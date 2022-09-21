@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "type-signals" : "1.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "type-signals" : "1.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

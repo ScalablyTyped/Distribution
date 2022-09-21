@@ -14,7 +14,7 @@ object auth {
   @js.native
   trait Auth
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     val app: App = js.native
     

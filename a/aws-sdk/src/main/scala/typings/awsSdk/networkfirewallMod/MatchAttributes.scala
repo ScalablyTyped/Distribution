@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MatchAttributes extends StObject {
   
   /**
-    * The destination ports to inspect for. If not specified, this matches with any destination port. This setting is only used for protocols 6 (TCP) and 17 (UDP).  You can specify individual ports, for example 1994 and you can specify port ranges, for example 1990-1994. 
+    * The destination ports to inspect for. If not specified, this matches with any destination port. This setting is only used for protocols 6 (TCP) and 17 (UDP).  You can specify individual ports, for example 1994 and you can specify port ranges, for example 1990:1994. 
     */
   var DestinationPorts: js.UndefOr[PortRanges] = js.undefined
   
@@ -22,7 +22,7 @@ trait MatchAttributes extends StObject {
   var Protocols: js.UndefOr[ProtocolNumbers] = js.undefined
   
   /**
-    * The source ports to inspect for. If not specified, this matches with any source port. This setting is only used for protocols 6 (TCP) and 17 (UDP).  You can specify individual ports, for example 1994 and you can specify port ranges, for example 1990-1994. 
+    * The source ports to inspect for. If not specified, this matches with any source port. This setting is only used for protocols 6 (TCP) and 17 (UDP).  You can specify individual ports, for example 1994 and you can specify port ranges, for example 1990:1994. 
     */
   var SourcePorts: js.UndefOr[PortRanges] = js.undefined
   
@@ -49,36 +49,36 @@ object MatchAttributes {
     
     inline def setDestinationPortsUndefined: Self = StObject.set(x, "DestinationPorts", js.undefined)
     
-    inline def setDestinationPortsVarargs(value: PortRange*): Self = StObject.set(x, "DestinationPorts", js.Array(value :_*))
+    inline def setDestinationPortsVarargs(value: PortRange*): Self = StObject.set(x, "DestinationPorts", js.Array(value*))
     
     inline def setDestinations(value: Addresses): Self = StObject.set(x, "Destinations", value.asInstanceOf[js.Any])
     
     inline def setDestinationsUndefined: Self = StObject.set(x, "Destinations", js.undefined)
     
-    inline def setDestinationsVarargs(value: Address*): Self = StObject.set(x, "Destinations", js.Array(value :_*))
+    inline def setDestinationsVarargs(value: Address*): Self = StObject.set(x, "Destinations", js.Array(value*))
     
     inline def setProtocols(value: ProtocolNumbers): Self = StObject.set(x, "Protocols", value.asInstanceOf[js.Any])
     
     inline def setProtocolsUndefined: Self = StObject.set(x, "Protocols", js.undefined)
     
-    inline def setProtocolsVarargs(value: ProtocolNumber*): Self = StObject.set(x, "Protocols", js.Array(value :_*))
+    inline def setProtocolsVarargs(value: ProtocolNumber*): Self = StObject.set(x, "Protocols", js.Array(value*))
     
     inline def setSourcePorts(value: PortRanges): Self = StObject.set(x, "SourcePorts", value.asInstanceOf[js.Any])
     
     inline def setSourcePortsUndefined: Self = StObject.set(x, "SourcePorts", js.undefined)
     
-    inline def setSourcePortsVarargs(value: PortRange*): Self = StObject.set(x, "SourcePorts", js.Array(value :_*))
+    inline def setSourcePortsVarargs(value: PortRange*): Self = StObject.set(x, "SourcePorts", js.Array(value*))
     
     inline def setSources(value: Addresses): Self = StObject.set(x, "Sources", value.asInstanceOf[js.Any])
     
     inline def setSourcesUndefined: Self = StObject.set(x, "Sources", js.undefined)
     
-    inline def setSourcesVarargs(value: Address*): Self = StObject.set(x, "Sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: Address*): Self = StObject.set(x, "Sources", js.Array(value*))
     
     inline def setTCPFlags(value: TCPFlags): Self = StObject.set(x, "TCPFlags", value.asInstanceOf[js.Any])
     
     inline def setTCPFlagsUndefined: Self = StObject.set(x, "TCPFlags", js.undefined)
     
-    inline def setTCPFlagsVarargs(value: TCPFlagField*): Self = StObject.set(x, "TCPFlags", js.Array(value :_*))
+    inline def setTCPFlagsVarargs(value: TCPFlagField*): Self = StObject.set(x, "TCPFlags", js.Array(value*))
   }
 }

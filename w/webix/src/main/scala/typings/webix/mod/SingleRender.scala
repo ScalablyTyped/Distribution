@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SingleRender extends StObject {
   
-  def customize(obj: js.Any): Unit = js.native
+  def customize(obj: Any): Unit = js.native
   
-  def render(id: String, data: js.Any, `type`: String): Unit = js.native
-  def render(id: Double, data: js.Any, `type`: String): Unit = js.native
+  def render(id: String, data: Any, `type`: String): Unit = js.native
+  def render(id: Double, data: Any, `type`: String): Unit = js.native
   
-  def sync(source: js.Any, filter: WebixCallback, silent: Boolean): Unit = js.native
+  def sync(source: Any, filter: WebixCallback, silent: Boolean): Unit = js.native
   
-  var `type`: StringDictionary[js.Any] = js.native
+  var `type`: StringDictionary[Any] = js.native
 }
 object SingleRender {
   

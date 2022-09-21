@@ -4,16 +4,16 @@
 Typings are for version 1.3
 
 ## Library description:
-Convert html to rtf format in the server
+Convert html to rtf format in the browser and the server
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | html-to-rtf |
-| Keywords           | html, rtf, convert, server, node, javascript |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 42312 |
-| # stars            | 0 |
+| Keywords           | html, rtf, convert, server, node, javascript, browser |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5429.0 |
+| # stars            | 27.0 |
 
 ## Links
 - [Homepage](https://github.com/oziresrds/html-to-rtf#readme)

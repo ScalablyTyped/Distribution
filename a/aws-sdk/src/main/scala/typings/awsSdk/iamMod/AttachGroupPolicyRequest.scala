@@ -12,7 +12,7 @@ trait AttachGroupPolicyRequest extends StObject {
   var GroupName: groupNameType
   
   /**
-    * The Amazon Resource Name (ARN) of the IAM policy you want to attach. For more information about ARNs, see Amazon Resource Names (ARNs) and AWS Service Namespaces in the AWS General Reference.
+    * The Amazon Resource Name (ARN) of the IAM policy you want to attach. For more information about ARNs, see Amazon Resource Names (ARNs) in the Amazon Web Services General Reference.
     */
   var PolicyArn: arnType
 }

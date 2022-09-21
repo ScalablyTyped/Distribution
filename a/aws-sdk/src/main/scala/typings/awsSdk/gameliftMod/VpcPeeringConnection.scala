@@ -12,12 +12,12 @@ trait VpcPeeringConnection extends StObject {
   var FleetArn: js.UndefOr[typings.awsSdk.gameliftMod.FleetArn] = js.undefined
   
   /**
-    * A unique identifier for a fleet. This ID determines the ID of the Amazon GameLift VPC for your fleet.
+    * A unique identifier for the fleet. This ID determines the ID of the Amazon GameLift VPC for your fleet.
     */
   var FleetId: js.UndefOr[typings.awsSdk.gameliftMod.FleetId] = js.undefined
   
   /**
-    * A unique identifier for the VPC that contains the Amazon GameLift fleet for this connection. This VPC is managed by Amazon GameLift and does not appear in your AWS account. 
+    * A unique identifier for the VPC that contains the Amazon GameLift fleet for this connection. This VPC is managed by Amazon GameLift and does not appear in your Amazon Web Services account. 
     */
   var GameLiftVpcId: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
@@ -27,7 +27,7 @@ trait VpcPeeringConnection extends StObject {
   var IpV4CidrBlock: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
   /**
-    * A unique identifier for a VPC with resources to be accessed by your Amazon GameLift fleet. The VPC must be in the same Region where your fleet is deployed. Look up a VPC ID using the VPC Dashboard in the AWS Management Console. Learn more about VPC peering in VPC Peering with Amazon GameLift Fleets.
+    * A unique identifier for a VPC with resources to be accessed by your GameLift fleet. The VPC must be in the same Region as your fleet. To look up a VPC ID, use the VPC Dashboard in the Amazon Web Services Management Console. Learn more about VPC peering in VPC Peering with GameLift Fleets.
     */
   var PeerVpcId: js.UndefOr[NonZeroAndMaxString] = js.undefined
   

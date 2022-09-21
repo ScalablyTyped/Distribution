@@ -1,5 +1,6 @@
 package typings.reactOverlays
 
+import typings.propTypes.mod.ReactNodeLike
 import typings.propTypes.mod.Requireable
 import typings.propTypes.mod.Validator
 import typings.react.mod.KeyboardEvent
@@ -7,7 +8,6 @@ import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.global.JSX.Element
-import typings.reactOverlays.anon.Props
 import typings.reactOverlays.dropdownContextMod.DropDirection
 import typings.reactOverlays.dropdownMenuMod.DropdownMenuProps
 import typings.reactOverlays.dropdownToggleMod.DropdownToggleProps
@@ -25,6 +25,7 @@ object dropdownMod {
     
     /**
       * @displayName Dropdown
+      * @public
       */
     inline def apply(
       hasDropAlignEndDefaultShowRawShowRawOnToggleItemSelectorFocusFirstItemOnShowChildren: DropdownProps
@@ -106,8 +107,8 @@ object dropdownMod {
           */
         @JSImport("react-overlays/cjs/Dropdown", "default.Menu.propTypes.children")
         @js.native
-        def children: Validator[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
-        inline def children_=(x: Validator[js.Function1[/* repeated */ js.Any, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
+        def children: Validator[js.Function1[/* repeated */ Any, Any]] = js.native
+        inline def children_=(x: Validator[js.Function1[/* repeated */ Any, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
         
         /**
           * Enables the Popper.js `flip` modifier, allowing the Dropdown to
@@ -195,8 +196,8 @@ object dropdownMod {
           */
         @JSImport("react-overlays/cjs/Dropdown", "default.Toggle.propTypes.children")
         @js.native
-        def children: Validator[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
-        inline def children_=(x: Validator[js.Function1[/* repeated */ js.Any, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
+        def children: Validator[js.Function1[/* repeated */ Any, Any]] = js.native
+        inline def children_=(x: Validator[js.Function1[/* repeated */ Any, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
       }
     }
     
@@ -232,8 +233,8 @@ object dropdownMod {
         */
       @JSImport("react-overlays/cjs/Dropdown", "default.propTypes.children")
       @js.native
-      def children: Validator[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
-      inline def children_=(x: Validator[js.Function1[/* repeated */ js.Any, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
+      def children: Requireable[ReactNodeLike] = js.native
+      inline def children_=(x: Requireable[ReactNodeLike]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
       
       /**
         * Sets the initial show position of the Dropdown.
@@ -289,8 +290,8 @@ object dropdownMod {
         */
       @JSImport("react-overlays/cjs/Dropdown", "default.propTypes.onToggle")
       @js.native
-      def onToggle: Requireable[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
-      inline def onToggle_=(x: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onToggle")(x.asInstanceOf[js.Any])
+      def onToggle: Requireable[js.Function1[/* repeated */ Any, Any]] = js.native
+      inline def onToggle_=(x: Requireable[js.Function1[/* repeated */ Any, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onToggle")(x.asInstanceOf[js.Any])
       
       /**
         * Whether or not the Dropdown is visible.
@@ -326,7 +327,7 @@ object dropdownMod {
     
     var alignEnd: js.UndefOr[Boolean] = js.native
     
-    def children(arg: Props): ReactNode = js.native
+    var children: ReactNode = js.native
     
     var defaultShow: js.UndefOr[Boolean] = js.native
     
@@ -338,6 +339,7 @@ object dropdownMod {
     
     def onToggle(nextShow: Boolean): Unit = js.native
     def onToggle(nextShow: Boolean, event: SyntheticEvent[typings.std.Element, Event]): Unit = js.native
+    def onToggle(nextShow: Boolean, event: Event): Unit = js.native
     
     var show: js.UndefOr[Boolean] = js.native
   }

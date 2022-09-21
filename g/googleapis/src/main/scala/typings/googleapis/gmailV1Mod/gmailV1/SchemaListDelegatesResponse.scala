@@ -4,13 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response for the ListDelegates method.
-  */
 trait SchemaListDelegatesResponse extends StObject {
   
   /**
-    * List of the user&#39;s delegates (with any verification status).
+    * List of the user's delegates (with any verification status). If an account doesn't have delegates, this field doesn't appear.
     */
   var delegates: js.UndefOr[js.Array[SchemaDelegate]] = js.undefined
 }
@@ -27,6 +24,6 @@ object SchemaListDelegatesResponse {
     
     inline def setDelegatesUndefined: Self = StObject.set(x, "delegates", js.undefined)
     
-    inline def setDelegatesVarargs(value: SchemaDelegate*): Self = StObject.set(x, "delegates", js.Array(value :_*))
+    inline def setDelegatesVarargs(value: SchemaDelegate*): Self = StObject.set(x, "delegates", js.Array(value*))
   }
 }

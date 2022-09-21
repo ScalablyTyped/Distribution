@@ -17,5 +17,5 @@ trait KMLLayerConstructor
 Instantiable0[KMLLayer]
      with Instantiable1[/* properties */ KMLLayerProperties, KMLLayer] {
   
-  def fromJSON(json: js.Any): KMLLayer = js.native
+  def fromJSON(json: Any): KMLLayer = js.native
 }

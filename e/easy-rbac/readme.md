@@ -11,9 +11,9 @@ RBAC implementation for Node.js
 | Full name          | easy-rbac |
 | Keywords           | rbac |
 | # releases         | 2 |
-| # dependents       | 10 |
-| # downloads        | 90573 |
-| # stars            | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 13625.0 |
+| # stars            | 161.0 |
 
 ## Links
 - [Homepage](https://github.com/DeadAlready/easy-rbac#readme)

@@ -97,7 +97,7 @@ object Base {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSGlobal("GoogleAppsScript.Base.Date")
   @js.native
-  class DateCls ()
+  open class DateCls ()
     extends StObject
        with typings.googleAppsScript.GoogleAppsScript.Base.Date {
     def this(value: String) = this()
@@ -174,96 +174,6 @@ object Base {
     def this(year: Double, month: Double, date: Unit, hours: Unit, minutes: Double, seconds: Unit, ms: Double) = this()
     def this(year: Double, month: Double, date: Unit, hours: Unit, minutes: Unit, seconds: Double, ms: Double) = this()
     def this(year: Double, month: Double, date: Unit, hours: Unit, minutes: Unit, seconds: Unit, ms: Double) = this()
-  }
-  
-  /**
-    * An enumeration that provides access to MIME-type declarations without typing the strings
-    * explicitly. Methods that expect a MIME type rendered as a string (for example,
-    * 'image/png') also accept any of the values below, so long as the method supports the
-    * underlying MIME type.
-    *
-    *     // Use MimeType enum to log the name of every Google Doc in the user's Drive.
-    *     var docs = DriveApp.getFilesByType(MimeType.GOOGLE_DOCS);
-    *     while (docs.hasNext()) {
-    *      var doc = docs.next();
-    *      Logger.log(doc.getName())
-    *     }
-    *
-    *     // Use plain string to log the size of every PNG in the user's Drive.
-    *     var pngs = DriveApp.getFilesByType('image/png');
-    *     while (pngs.hasNext()) {
-    *      var png = pngs.next();
-    *      Logger.log(png.getSize());
-    *     }
-    */
-  @JSGlobal("GoogleAppsScript.Base.MimeType")
-  @js.native
-  object MimeType extends StObject {
-    
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Base.MimeType & Double] = js.native
-    
-    /* 8 */ val BMP: typings.googleAppsScript.GoogleAppsScript.Base.MimeType.BMP & Double = js.native
-    
-    /* 14 */ val CSS: typings.googleAppsScript.GoogleAppsScript.Base.MimeType.CSS & Double = js.native
-    
-    /* 15 */ val CSV: typings.googleAppsScript.GoogleAppsScript.Base.MimeType.CSV & Double = js.native
-    
-    /* 7 */ val FOLDER: typings.googleAppsScript.GoogleAppsScript.Base.MimeType.FOLDER & Double = js.native
-    
-    /* 9 */ val GIF: typings.googleAppsScript.GoogleAppsScript.Base.MimeType.GIF & Double = js.native
-    
-    /* 0 */ val GOOGLE_APPS_SCRIPT: typings.googleAppsScript.GoogleAppsScript.Base.MimeType.GOOGLE_APPS_SCRIPT & Double = js.native
-    
-    /* 2 */ val GOOGLE_DOCS: typings.googleAppsScript.GoogleAppsScript.Base.MimeType.GOOGLE_DOCS & Double = js.native
-    
-    /* 1 */ val GOOGLE_DRAWINGS: typings.googleAppsScript.GoogleAppsScript.Base.MimeType.GOOGLE_DRAWINGS & Double = js.native
-    
-    /* 3 */ val GOOGLE_FORMS: typings.googleAppsScript.GoogleAppsScript.Base.MimeType.GOOGLE_FORMS & Double = js.native
-    
-    /* 4 */ val GOOGLE_SHEETS: typings.googleAppsScript.GoogleAppsScript.Base.MimeType.GOOGLE_SHEETS & Double = js.native
-    
-    /* 5 */ val GOOGLE_SITES: typings.googleAppsScript.GoogleAppsScript.Base.MimeType.GOOGLE_SITES & Double = js.native
-    
-    /* 6 */ val GOOGLE_SLIDES: typings.googleAppsScript.GoogleAppsScript.Base.MimeType.GOOGLE_SLIDES & Double = js.native
-    
-    /* 16 */ val HTML: typings.googleAppsScript.GoogleAppsScript.Base.MimeType.HTML & Double = js.native
-    
-    /* 17 */ val JAVASCRIPT: typings.googleAppsScript.GoogleAppsScript.Base.MimeType.JAVASCRIPT & Double = js.native
-    
-    /* 10 */ val JPEG: typings.googleAppsScript.GoogleAppsScript.Base.MimeType.JPEG & Double = js.native
-    
-    /* 24 */ val MICROSOFT_EXCEL: typings.googleAppsScript.GoogleAppsScript.Base.MimeType.MICROSOFT_EXCEL & Double = js.native
-    
-    /* 25 */ val MICROSOFT_EXCEL_LEGACY: typings.googleAppsScript.GoogleAppsScript.Base.MimeType.MICROSOFT_EXCEL_LEGACY & Double = js.native
-    
-    /* 26 */ val MICROSOFT_POWERPOINT: typings.googleAppsScript.GoogleAppsScript.Base.MimeType.MICROSOFT_POWERPOINT & Double = js.native
-    
-    /* 27 */ val MICROSOFT_POWERPOINT_LEGACY: typings.googleAppsScript.GoogleAppsScript.Base.MimeType.MICROSOFT_POWERPOINT_LEGACY & Double = js.native
-    
-    /* 28 */ val MICROSOFT_WORD: typings.googleAppsScript.GoogleAppsScript.Base.MimeType.MICROSOFT_WORD & Double = js.native
-    
-    /* 29 */ val MICROSOFT_WORD_LEGACY: typings.googleAppsScript.GoogleAppsScript.Base.MimeType.MICROSOFT_WORD_LEGACY & Double = js.native
-    
-    /* 20 */ val OPENDOCUMENT_GRAPHICS: typings.googleAppsScript.GoogleAppsScript.Base.MimeType.OPENDOCUMENT_GRAPHICS & Double = js.native
-    
-    /* 21 */ val OPENDOCUMENT_PRESENTATION: typings.googleAppsScript.GoogleAppsScript.Base.MimeType.OPENDOCUMENT_PRESENTATION & Double = js.native
-    
-    /* 22 */ val OPENDOCUMENT_SPREADSHEET: typings.googleAppsScript.GoogleAppsScript.Base.MimeType.OPENDOCUMENT_SPREADSHEET & Double = js.native
-    
-    /* 23 */ val OPENDOCUMENT_TEXT: typings.googleAppsScript.GoogleAppsScript.Base.MimeType.OPENDOCUMENT_TEXT & Double = js.native
-    
-    /* 13 */ val PDF: typings.googleAppsScript.GoogleAppsScript.Base.MimeType.PDF & Double = js.native
-    
-    /* 18 */ val PLAIN_TEXT: typings.googleAppsScript.GoogleAppsScript.Base.MimeType.PLAIN_TEXT & Double = js.native
-    
-    /* 11 */ val PNG: typings.googleAppsScript.GoogleAppsScript.Base.MimeType.PNG & Double = js.native
-    
-    /* 19 */ val RTF: typings.googleAppsScript.GoogleAppsScript.Base.MimeType.RTF & Double = js.native
-    
-    /* 12 */ val SVG: typings.googleAppsScript.GoogleAppsScript.Base.MimeType.SVG & Double = js.native
-    
-    /* 30 */ val ZIP: typings.googleAppsScript.GoogleAppsScript.Base.MimeType.ZIP & Double = js.native
   }
   
   /**

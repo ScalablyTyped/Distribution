@@ -8,8 +8,10 @@ trait HmacKeyAlgorithm
   extends StObject
      with KeyAlgorithm {
   
+  /* standard dom */
   var hash: KeyAlgorithm
   
+  /* standard dom */
   var length: Double
 }
 object HmacKeyAlgorithm {

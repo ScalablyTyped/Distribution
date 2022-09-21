@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Matter.MouseConstraint")
 @js.native
-class MouseConstraint ()
+open class MouseConstraint ()
   extends typings.matterJs.mod.MouseConstraint
 /* static members */
 object MouseConstraint {
@@ -23,7 +23,7 @@ object MouseConstraint {
     * @method create
     * @param {engine} engine
     * @param {} options
-    * @return {MouseConstraint} A new MouseConstraint
+    * @returns {MouseConstraint} A new MouseConstraint
     */
   inline def create(engine: typings.matterJs.mod.Engine): typings.matterJs.mod.MouseConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(engine.asInstanceOf[js.Any]).asInstanceOf[typings.matterJs.mod.MouseConstraint]
   inline def create(engine: typings.matterJs.mod.Engine, options: IMouseConstraintDefinition): typings.matterJs.mod.MouseConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(engine.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.matterJs.mod.MouseConstraint]

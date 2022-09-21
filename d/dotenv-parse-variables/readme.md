@@ -1,7 +1,7 @@
 
 # Scala.js typings for dotenv-parse-variables
 
-Typings are for version 0.2
+Typings are for version 2.0
 
 ## Library description:
 Parse dotenv files for Boolean, Array, and Number variable types, built for CrocodileJS
@@ -10,15 +10,12 @@ Parse dotenv files for Boolean, Array, and Number variable types, built for Croc
 | ------------------ | :-------------: |
 | Full name          | dotenv-parse-variables |
 | Keywords           | array, boolean, check, convert, dot, dotenv, env, number, parse, variables |
-| # releases         | 7 |
-| # dependents       | 18 |
-| # downloads        | 850564 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 349999.0 |
+| # stars            | 117.0 |
 
 ## Links
-- [Homepage](https://github.com/niftylettuce/dotenv-parse-variables)
-- [Bugs](https://github.com/niftylettuce/dotenv-parse-variables/issues)
-- [Repository](https://github.com/niftylettuce/dotenv-parse-variables)
 - [Npm](https://www.npmjs.com/package/dotenv-parse-variables)
     
 

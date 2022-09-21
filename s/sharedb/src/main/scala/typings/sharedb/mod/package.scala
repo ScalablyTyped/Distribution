@@ -1,41 +1,51 @@
 package typings.sharedb.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.sharedb.sharedbBooleans.`true`
+import typings.sharedb.sharedbMod.Logger
+import typings.sharedb.sharedbMod.Types
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
 /* static member */
-inline def types: typings.sharedb.sharedbMod.Types = typings.sharedb.mod.^.asInstanceOf[js.Dynamic].selectDynamic("types").asInstanceOf[typings.sharedb.sharedbMod.Types]
-inline def types_=(x: typings.sharedb.sharedbMod.Types): scala.Unit = typings.sharedb.mod.^.asInstanceOf[js.Dynamic].updateDynamic("types")(x.asInstanceOf[js.Any])
+inline def logger: Logger = ^.asInstanceOf[js.Dynamic].selectDynamic("logger").asInstanceOf[Logger]
+inline def logger_=(x: Logger): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("logger")(x.asInstanceOf[js.Any])
+
+/* static member */
+inline def types: Types = ^.asInstanceOf[js.Dynamic].selectDynamic("types").asInstanceOf[Types]
+inline def types_=(x: Types): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("types")(x.asInstanceOf[js.Any])
 
 type AddNumOp = typings.sharedb.sharedbMod.AddNumOp
 
-type BasicCallback = js.Function1[/* err */ js.UndefOr[typings.std.Error], scala.Unit]
+type BasicCallback = js.Function1[/* err */ js.UndefOr[js.Error], Unit]
 
 type CreateOp = typings.sharedb.sharedbMod.CreateOp
 
 type DBQueryCallback = js.Function3[
-/* err */ typings.sharedb.mod.Error | scala.Null, 
-/* snapshots */ js.Array[typings.sharedb.sharedbMod.Snapshot], 
-/* extra */ js.UndefOr[js.Any], 
-scala.Unit]
+/* err */ Error | Null, 
+/* snapshots */ js.Array[Snapshot], 
+/* extra */ js.UndefOr[Any], 
+Unit]
 
 type DBQueryMethod = js.Function5[
-/* collection */ java.lang.String, 
-/* query */ js.Any, 
-/* fields */ js.UndefOr[typings.sharedb.mod.ProjectionFields], 
-/* options */ js.Any, 
-/* callback */ typings.sharedb.mod.DBQueryCallback, 
-scala.Unit]
+/* collection */ String, 
+/* query */ Any, 
+/* fields */ ProjectionFields, 
+/* options */ Any, 
+/* callback */ DBQueryCallback, 
+Unit]
 
 type DeleteOp = typings.sharedb.sharedbMod.DeleteOp
 
-type Doc = typings.sharedb.sharedbMod.Doc
+type Doc = typings.sharedb.sharedbMod.Doc[Any]
 
 type EditOp = typings.sharedb.sharedbMod.EditOp
 
 type Error = typings.sharedb.sharedbMod.Error
+
+type ErrorHandler = js.Function2[/* error */ js.Error, /* context */ ErrorHandlerContext, Unit]
 
 type ListDeleteOp = typings.sharedb.sharedbMod.ListDeleteOp
 
@@ -55,11 +65,13 @@ type Op = typings.sharedb.sharedbMod.Op
 
 type Path = typings.sharedb.sharedbMod.Path
 
-type ProjectionFields = org.scalablytyped.runtime.StringDictionary[typings.sharedb.sharedbBooleans.`true`]
+type ProjectionFields = StringDictionary[`true`]
 
-type Query = typings.sharedb.sharedbMod.Query
+type Query = typings.sharedb.sharedbMod.Query[Any]
 
 type ShareDBSourceOptions = typings.sharedb.sharedbMod.ShareDBSourceOptions
+
+type Snapshot = typings.sharedb.sharedbMod.Snapshot[Any]
 
 type StringDeleteOp = typings.sharedb.sharedbMod.StringDeleteOp
 

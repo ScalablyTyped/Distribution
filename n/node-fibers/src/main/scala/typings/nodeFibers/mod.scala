@@ -17,6 +17,6 @@ object mod {
   def current: Fiber = js.native
   inline def current_=(x: Fiber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("current")(x.asInstanceOf[js.Any])
   
-  inline def `yield`(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("yield")().asInstanceOf[js.Any]
-  inline def `yield`(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("yield")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def `yield`(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("yield")().asInstanceOf[Any]
+  inline def `yield`(value: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("yield")(value.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

@@ -1,50 +1,25 @@
 package typings.maximMazurokGapiClientAdsense.gapi.client.adsense
 
-import typings.maximMazurokGapiClientAdsense.anon.AdPosition
-import typings.maximMazurokGapiClientAdsense.anon.BackupOption
-import typings.maximMazurokGapiClientAdsense.anon.MarkupLanguage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait AdUnit extends StObject {
   
-  /** Identity code of this ad unit, not necessarily unique across ad clients. */
-  var code: js.UndefOr[String] = js.undefined
+  /** Required. Settings specific to content ads (AFC). */
+  var contentAdsSettings: js.UndefOr[ContentAdsSettings] = js.undefined
   
-  /** Settings specific to content ads (AFC) and highend mobile content ads (AFMC - deprecated). */
-  var contentAdsSettings: js.UndefOr[BackupOption] = js.undefined
+  /** Required. Display name of the ad unit, as provided when the ad unit was created. */
+  var displayName: js.UndefOr[String] = js.undefined
   
-  /** Custom style information specific to this ad unit. */
-  var customStyle: js.UndefOr[AdStyle] = js.undefined
-  
-  /** Settings specific to feed ads (AFF) - deprecated. */
-  var feedAdsSettings: js.UndefOr[AdPosition] = js.undefined
-  
-  /** Unique identifier of this ad unit. This should be considered an opaque identifier; it is not safe to rely on it being in any particular format. */
-  var id: js.UndefOr[String] = js.undefined
-  
-  /** Kind of resource this is, in this case adsense#adUnit. */
-  var kind: js.UndefOr[String] = js.undefined
-  
-  /** Settings specific to WAP mobile content ads (AFMC) - deprecated. */
-  var mobileContentAdsSettings: js.UndefOr[MarkupLanguage] = js.undefined
-  
-  /** Name of this ad unit. */
+  /** Output only. Resource name of the ad unit. Format: accounts/{account}/adclients/{adclient}/adunits/{adunit} */
   var name: js.UndefOr[String] = js.undefined
   
-  /** ID of the saved ad style which holds this ad unit's style information. */
-  var savedStyleId: js.UndefOr[String] = js.undefined
+  /** Output only. Unique ID of the ad unit as used in the `AD_UNIT_ID` reporting dimension. */
+  var reportingDimensionId: js.UndefOr[String] = js.undefined
   
-  /**
-    * Status of this ad unit. Possible values are:
-    * NEW: Indicates that the ad unit was created within the last seven days and does not yet have any activity associated with it.
-    *
-    * ACTIVE: Indicates that there has been activity on this ad unit in the last seven days.
-    *
-    * INACTIVE: Indicates that there has been no activity on this ad unit in the last seven days.
-    */
-  var status: js.UndefOr[String] = js.undefined
+  /** State of the ad unit. */
+  var state: js.UndefOr[String] = js.undefined
 }
 object AdUnit {
   
@@ -55,44 +30,24 @@ object AdUnit {
   
   extension [Self <: AdUnit](x: Self) {
     
-    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
-    
-    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
-    
-    inline def setContentAdsSettings(value: BackupOption): Self = StObject.set(x, "contentAdsSettings", value.asInstanceOf[js.Any])
+    inline def setContentAdsSettings(value: ContentAdsSettings): Self = StObject.set(x, "contentAdsSettings", value.asInstanceOf[js.Any])
     
     inline def setContentAdsSettingsUndefined: Self = StObject.set(x, "contentAdsSettings", js.undefined)
     
-    inline def setCustomStyle(value: AdStyle): Self = StObject.set(x, "customStyle", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    inline def setCustomStyleUndefined: Self = StObject.set(x, "customStyle", js.undefined)
-    
-    inline def setFeedAdsSettings(value: AdPosition): Self = StObject.set(x, "feedAdsSettings", value.asInstanceOf[js.Any])
-    
-    inline def setFeedAdsSettingsUndefined: Self = StObject.set(x, "feedAdsSettings", js.undefined)
-    
-    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-    
-    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
-    
-    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
-    
-    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
-    
-    inline def setMobileContentAdsSettings(value: MarkupLanguage): Self = StObject.set(x, "mobileContentAdsSettings", value.asInstanceOf[js.Any])
-    
-    inline def setMobileContentAdsSettingsUndefined: Self = StObject.set(x, "mobileContentAdsSettings", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setSavedStyleId(value: String): Self = StObject.set(x, "savedStyleId", value.asInstanceOf[js.Any])
+    inline def setReportingDimensionId(value: String): Self = StObject.set(x, "reportingDimensionId", value.asInstanceOf[js.Any])
     
-    inline def setSavedStyleIdUndefined: Self = StObject.set(x, "savedStyleId", js.undefined)
+    inline def setReportingDimensionIdUndefined: Self = StObject.set(x, "reportingDimensionId", js.undefined)
     
-    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

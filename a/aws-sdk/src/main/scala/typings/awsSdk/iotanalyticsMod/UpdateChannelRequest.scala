@@ -12,12 +12,12 @@ trait UpdateChannelRequest extends StObject {
   var channelName: ChannelName
   
   /**
-    * Where channel data is stored. You can choose one of serviceManagedS3 or customerManagedS3 storage. If not specified, the default is serviceManagedS3. You cannot change this storage option after the channel is created.
+    * Where channel data is stored. You can choose one of serviceManagedS3 or customerManagedS3 storage. If not specified, the default is serviceManagedS3. You can't change this storage option after the channel is created.
     */
   var channelStorage: js.UndefOr[ChannelStorage] = js.undefined
   
   /**
-    * How long, in days, message data is kept for the channel. The retention period cannot be updated if the channel's S3 storage is customer-managed.
+    * How long, in days, message data is kept for the channel. The retention period can't be updated if the channel's Amazon S3 storage is customer-managed.
     */
   var retentionPeriod: js.UndefOr[RetentionPeriod] = js.undefined
 }

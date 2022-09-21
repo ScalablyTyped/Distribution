@@ -16,6 +16,13 @@ trait CreateFlowRequest extends StObject {
     */
   var Entitlements: js.UndefOr[listOfGrantEntitlementRequest] = js.undefined
   
+  var Maintenance: js.UndefOr[AddMaintenance] = js.undefined
+  
+  /**
+    * The media streams that you want to add to the flow. You can associate these media streams with sources and outputs on the flow.
+    */
+  var MediaStreams: js.UndefOr[listOfAddMediaStreamRequest] = js.undefined
+  
   /**
     * The name of the flow.
     */
@@ -54,7 +61,17 @@ object CreateFlowRequest {
     
     inline def setEntitlementsUndefined: Self = StObject.set(x, "Entitlements", js.undefined)
     
-    inline def setEntitlementsVarargs(value: GrantEntitlementRequest*): Self = StObject.set(x, "Entitlements", js.Array(value :_*))
+    inline def setEntitlementsVarargs(value: GrantEntitlementRequest*): Self = StObject.set(x, "Entitlements", js.Array(value*))
+    
+    inline def setMaintenance(value: AddMaintenance): Self = StObject.set(x, "Maintenance", value.asInstanceOf[js.Any])
+    
+    inline def setMaintenanceUndefined: Self = StObject.set(x, "Maintenance", js.undefined)
+    
+    inline def setMediaStreams(value: listOfAddMediaStreamRequest): Self = StObject.set(x, "MediaStreams", value.asInstanceOf[js.Any])
+    
+    inline def setMediaStreamsUndefined: Self = StObject.set(x, "MediaStreams", js.undefined)
+    
+    inline def setMediaStreamsVarargs(value: AddMediaStreamRequest*): Self = StObject.set(x, "MediaStreams", js.Array(value*))
     
     inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
@@ -62,7 +79,7 @@ object CreateFlowRequest {
     
     inline def setOutputsUndefined: Self = StObject.set(x, "Outputs", js.undefined)
     
-    inline def setOutputsVarargs(value: AddOutputRequest*): Self = StObject.set(x, "Outputs", js.Array(value :_*))
+    inline def setOutputsVarargs(value: AddOutputRequest*): Self = StObject.set(x, "Outputs", js.Array(value*))
     
     inline def setSource(value: SetSourceRequest): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     
@@ -76,12 +93,12 @@ object CreateFlowRequest {
     
     inline def setSourcesUndefined: Self = StObject.set(x, "Sources", js.undefined)
     
-    inline def setSourcesVarargs(value: SetSourceRequest*): Self = StObject.set(x, "Sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: SetSourceRequest*): Self = StObject.set(x, "Sources", js.Array(value*))
     
     inline def setVpcInterfaces(value: listOfVpcInterfaceRequest): Self = StObject.set(x, "VpcInterfaces", value.asInstanceOf[js.Any])
     
     inline def setVpcInterfacesUndefined: Self = StObject.set(x, "VpcInterfaces", js.undefined)
     
-    inline def setVpcInterfacesVarargs(value: VpcInterfaceRequest*): Self = StObject.set(x, "VpcInterfaces", js.Array(value :_*))
+    inline def setVpcInterfacesVarargs(value: VpcInterfaceRequest*): Self = StObject.set(x, "VpcInterfaces", js.Array(value*))
   }
 }

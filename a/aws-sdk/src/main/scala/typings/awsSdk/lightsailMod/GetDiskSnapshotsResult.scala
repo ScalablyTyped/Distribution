@@ -29,7 +29,7 @@ object GetDiskSnapshotsResult {
     
     inline def setDiskSnapshotsUndefined: Self = StObject.set(x, "diskSnapshots", js.undefined)
     
-    inline def setDiskSnapshotsVarargs(value: DiskSnapshot*): Self = StObject.set(x, "diskSnapshots", js.Array(value :_*))
+    inline def setDiskSnapshotsVarargs(value: DiskSnapshot*): Self = StObject.set(x, "diskSnapshots", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "notepack.io" : "3.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "notepack.io" : "3.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

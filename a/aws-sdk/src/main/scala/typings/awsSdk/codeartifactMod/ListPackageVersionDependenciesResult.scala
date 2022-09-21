@@ -13,17 +13,17 @@ trait ListPackageVersionDependenciesResult extends StObject {
   var _package: js.UndefOr[PackageName] = js.undefined
   
   /**
-    *  The returned list of  PackageDependency  objects. 
+    *  The returned list of PackageDependency objects. 
     */
   var dependencies: js.UndefOr[PackageDependencyList] = js.undefined
   
   /**
-    *  A format that specifies the type of the package that contains the returned dependencies. The valid values are:     npm     pypi     maven   
+    *  A format that specifies the type of the package that contains the returned dependencies. 
     */
   var format: js.UndefOr[PackageFormat] = js.undefined
   
   /**
-    *  The namespace of the package. The package component that specifies its namespace depends on its type. For example:     The namespace of a Maven package is its groupId.     The namespace of an npm package is its scope.     A Python package does not contain a corresponding component, so Python packages do not have a namespace.   
+    * The namespace of the package version that contains the returned dependencies. The package version component that specifies its namespace depends on its type. For example:    The namespace of a Maven package version is its groupId.     The namespace of an npm package version is its scope.     Python and NuGet package versions do not contain a corresponding component, package versions of those formats do not have a namespace.   
     */
   var namespace: js.UndefOr[PackageNamespace] = js.undefined
   
@@ -55,7 +55,7 @@ object ListPackageVersionDependenciesResult {
     
     inline def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
     
-    inline def setDependenciesVarargs(value: PackageDependency*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
+    inline def setDependenciesVarargs(value: PackageDependency*): Self = StObject.set(x, "dependencies", js.Array(value*))
     
     inline def setFormat(value: PackageFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

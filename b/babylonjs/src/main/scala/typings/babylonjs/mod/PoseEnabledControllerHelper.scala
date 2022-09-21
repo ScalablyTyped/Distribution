@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "PoseEnabledControllerHelper")
 @js.native
-class PoseEnabledControllerHelper ()
+open class PoseEnabledControllerHelper ()
   extends typings.babylonjs.legacyMod.PoseEnabledControllerHelper
 /* static members */
 object PoseEnabledControllerHelper {
@@ -22,7 +22,7 @@ object PoseEnabledControllerHelper {
     * @param vrGamepad the gamepad to initialized
     * @returns a vr controller of the type the gamepad identified as
     */
-  inline def InitiateController(vrGamepad: js.Any): typings.babylonjs.gamepadMod.Gamepad = ^.asInstanceOf[js.Dynamic].applyDynamic("InitiateController")(vrGamepad.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.gamepadMod.Gamepad]
+  inline def InitiateController(vrGamepad: Any): typings.babylonjs.gamepadMod.Gamepad = ^.asInstanceOf[js.Dynamic].applyDynamic("InitiateController")(vrGamepad.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.gamepadMod.Gamepad]
   
   /** @hidden */
   @JSImport("babylonjs", "PoseEnabledControllerHelper._ControllerFactories")
@@ -33,6 +33,6 @@ object PoseEnabledControllerHelper {
   /** @hidden */
   @JSImport("babylonjs", "PoseEnabledControllerHelper._DefaultControllerFactory")
   @js.native
-  def _DefaultControllerFactory: Nullable[js.Function1[/* gamepadInfo */ js.Any, typings.babylonjs.gamepadMod.Gamepad]] = js.native
-  inline def _DefaultControllerFactory_=(x: Nullable[js.Function1[/* gamepadInfo */ js.Any, typings.babylonjs.gamepadMod.Gamepad]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultControllerFactory")(x.asInstanceOf[js.Any])
+  def _DefaultControllerFactory: Nullable[js.Function1[/* gamepadInfo */ Any, typings.babylonjs.gamepadMod.Gamepad]] = js.native
+  inline def _DefaultControllerFactory_=(x: Nullable[js.Function1[/* gamepadInfo */ Any, typings.babylonjs.gamepadMod.Gamepad]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DefaultControllerFactory")(x.asInstanceOf[js.Any])
 }

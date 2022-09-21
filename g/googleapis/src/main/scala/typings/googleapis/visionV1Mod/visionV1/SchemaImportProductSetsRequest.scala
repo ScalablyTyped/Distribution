@@ -4,13 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request message for the `ImportProductSets` method.
-  */
 trait SchemaImportProductSetsRequest extends StObject {
   
   /**
-    * The input content for the list of requests.
+    * Required. The input content for the list of requests.
     */
   var inputConfig: js.UndefOr[SchemaImportProductSetsInputConfig] = js.undefined
 }

@@ -10,10 +10,10 @@ Higher-order functions for easier error handling
 | ------------------ | :-------------: |
 | Full name          | iferr |
 | Keywords           | error, errors |
-| # releases         | 0 |
-| # dependents       | 92 |
-| # downloads        | 469460372 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4.3285750666666664E7 |
+| # stars            | 13.0 |
 
 ## Links
 - [Homepage](https://github.com/shesek/iferr)

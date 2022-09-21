@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Web.Http
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ trait HttpCookie extends StObject {
   var domain: String
   
   /** Get or set the expiration date and time for the HttpCookie . */
-  var expires: Date
+  var expires: js.Date
   
   /** Get or set a value that controls whether a script or other active content can access this HttpCookie . */
   var httpOnly: Boolean
@@ -33,7 +32,7 @@ object HttpCookie {
   
   inline def apply(
     domain: String,
-    expires: Date,
+    expires: js.Date,
     httpOnly: Boolean,
     name: String,
     path: String,
@@ -48,7 +47,7 @@ object HttpCookie {
     
     inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    inline def setExpires(value: Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+    inline def setExpires(value: js.Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
     
     inline def setHttpOnly(value: Boolean): Self = StObject.set(x, "httpOnly", value.asInstanceOf[js.Any])
     

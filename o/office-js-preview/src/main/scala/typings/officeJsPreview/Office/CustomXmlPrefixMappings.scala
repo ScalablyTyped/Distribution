@@ -19,7 +19,7 @@ trait CustomXmlPrefixMappings extends StObject {
     *
     * @remarks
     *
-    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+    * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * If no namespace is assigned to the requested prefix, the method returns an empty string ("").
     *
@@ -49,7 +49,7 @@ trait CustomXmlPrefixMappings extends StObject {
     *
     * @remarks
     *
-    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+    * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * If the prefix already exists in the namespace manager, this method will overwrite the mapping of that prefix except when the prefix is one
     * added or used by the data store internally, in which case it will return an error.
@@ -74,7 +74,7 @@ trait CustomXmlPrefixMappings extends StObject {
     *
     * @remarks
     *
-    * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
+    * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/office-add-in-requirement-sets#customxmlparts | CustomXmlParts}
     *
     * If no prefix is assigned to the requested namespace, the method returns an empty string (""). If there are multiple prefixes specified in
     * the namespace manager, the method returns the first prefix that matches the supplied namespace.

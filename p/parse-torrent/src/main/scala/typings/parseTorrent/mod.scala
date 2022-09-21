@@ -1,12 +1,10 @@
 package typings.parseTorrent
 
 import org.scalablytyped.runtime.Shortcut
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.parseTorrentFile.mod.ParsedFile
 import typings.parseTorrentFile.mod.TorrentInfo
 import typings.std.Blob
-import typings.std.Date
-import typings.std.Error
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,7 +22,7 @@ object mod extends Shortcut {
     extends StObject
        with typings.magnetUri.mod.Instance {
     
-    var created: js.UndefOr[Date] = js.undefined
+    var created: js.UndefOr[js.Date] = js.undefined
     
     var createdBy: js.UndefOr[String] = js.undefined
     
@@ -57,7 +55,7 @@ object mod extends Shortcut {
     
     extension [Self <: Instance](x: Self) {
       
-      inline def setCreated(value: Date): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: js.Date): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
       inline def setCreatedBy(value: String): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
       
@@ -69,7 +67,7 @@ object mod extends Shortcut {
       
       inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      inline def setFilesVarargs(value: ParsedFile*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: ParsedFile*): Self = StObject.set(x, "files", js.Array(value*))
       
       inline def setInfo(value: TorrentInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
@@ -95,7 +93,7 @@ object mod extends Shortcut {
       
       inline def setPiecesUndefined: Self = StObject.set(x, "pieces", js.undefined)
       
-      inline def setPiecesVarargs(value: String*): Self = StObject.set(x, "pieces", js.Array(value :_*))
+      inline def setPiecesVarargs(value: String*): Self = StObject.set(x, "pieces", js.Array(value*))
       
       inline def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
       
@@ -113,23 +111,23 @@ object mod extends Shortcut {
     def apply(torrent: typings.parseTorrentFile.mod.Instance): Instance = js.native
     
     def remote(torrent: String): Unit = js.native
-    def remote(torrent: String, cb: js.Function2[/* err */ Error, /* torrent */ js.UndefOr[Instance], Unit]): Unit = js.native
+    def remote(torrent: String, cb: js.Function2[/* err */ js.Error, /* torrent */ js.UndefOr[Instance], Unit]): Unit = js.native
     def remote(torrent: typings.magnetUri.mod.Instance): Unit = js.native
     def remote(
       torrent: typings.magnetUri.mod.Instance,
-      cb: js.Function2[/* err */ Error, /* torrent */ js.UndefOr[Instance], Unit]
+      cb: js.Function2[/* err */ js.Error, /* torrent */ js.UndefOr[Instance], Unit]
     ): Unit = js.native
     def remote(torrent: Buffer): Unit = js.native
-    def remote(torrent: Buffer, cb: js.Function2[/* err */ Error, /* torrent */ js.UndefOr[Instance], Unit]): Unit = js.native
+    def remote(torrent: Buffer, cb: js.Function2[/* err */ js.Error, /* torrent */ js.UndefOr[Instance], Unit]): Unit = js.native
     def remote(torrent: Instance): Unit = js.native
-    def remote(torrent: Instance, cb: js.Function2[/* err */ Error, /* torrent */ js.UndefOr[Instance], Unit]): Unit = js.native
+    def remote(torrent: Instance, cb: js.Function2[/* err */ js.Error, /* torrent */ js.UndefOr[Instance], Unit]): Unit = js.native
     def remote(torrent: typings.parseTorrentFile.mod.Instance): Unit = js.native
     def remote(
       torrent: typings.parseTorrentFile.mod.Instance,
-      cb: js.Function2[/* err */ Error, /* torrent */ js.UndefOr[Instance], Unit]
+      cb: js.Function2[/* err */ js.Error, /* torrent */ js.UndefOr[Instance], Unit]
     ): Unit = js.native
     def remote(torrent: Blob): Unit = js.native
-    def remote(torrent: Blob, cb: js.Function2[/* err */ Error, /* torrent */ js.UndefOr[Instance], Unit]): Unit = js.native
+    def remote(torrent: Blob, cb: js.Function2[/* err */ js.Error, /* torrent */ js.UndefOr[Instance], Unit]): Unit = js.native
     
     def toMagnetURI(parsed: typings.magnetUri.mod.Instance): String = js.native
     @JSName("toMagnetURI")

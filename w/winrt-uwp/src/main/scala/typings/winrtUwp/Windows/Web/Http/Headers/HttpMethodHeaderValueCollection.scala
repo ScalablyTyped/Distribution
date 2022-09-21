@@ -50,7 +50,7 @@ trait HttpMethodHeaderValueCollection
     */
   def getView(): IVectorView[HttpMethod] = js.native
   
-  def indexOf(value: HttpMethod, extra: js.Any*): Index = js.native
+  def indexOf(value: HttpMethod, extra: Any*): Index = js.native
   /**
     * Determines the index of a specific item in the collection.
     * @param item The object to locate in the collection.

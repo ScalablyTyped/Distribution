@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "cli-cursor" : "3.1.0"
+      "cli-cursor" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "cli-cursor" : "3.1.0"
+      "cli-cursor" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

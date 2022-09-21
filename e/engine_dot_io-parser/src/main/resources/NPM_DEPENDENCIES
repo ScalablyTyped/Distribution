@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "engine.io-parser" : "5.0.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "engine.io-parser" : "5.0.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

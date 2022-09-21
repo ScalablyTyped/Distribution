@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@lona/svg-model" : "3.0.0-alpha.10"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@lona/svg-model" : "3.0.0-alpha.10"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

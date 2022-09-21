@@ -29,7 +29,7 @@ object DescribeAcceleratorOfferingsRequest {
     
     inline def setAcceleratorTypesUndefined: Self = StObject.set(x, "acceleratorTypes", js.undefined)
     
-    inline def setAcceleratorTypesVarargs(value: AcceleratorTypeName*): Self = StObject.set(x, "acceleratorTypes", js.Array(value :_*))
+    inline def setAcceleratorTypesVarargs(value: AcceleratorTypeName*): Self = StObject.set(x, "acceleratorTypes", js.Array(value*))
     
     inline def setLocationType(value: LocationType): Self = StObject.set(x, "locationType", value.asInstanceOf[js.Any])
   }

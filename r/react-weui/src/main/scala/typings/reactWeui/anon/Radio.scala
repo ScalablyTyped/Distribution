@@ -12,7 +12,7 @@ trait Radio extends StObject {
   
   var select: Boolean
   
-  var selectPos: js.Any
+  var selectPos: Any
   
   var switch: Boolean
   
@@ -26,7 +26,7 @@ object Radio {
     checkbox: Boolean,
     radio: Boolean,
     select: Boolean,
-    selectPos: js.Any,
+    selectPos: Any,
     switch: Boolean,
     vcode: Boolean,
     warn: Boolean
@@ -43,7 +43,7 @@ object Radio {
     
     inline def setSelect(value: Boolean): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     
-    inline def setSelectPos(value: js.Any): Self = StObject.set(x, "selectPos", value.asInstanceOf[js.Any])
+    inline def setSelectPos(value: Any): Self = StObject.set(x, "selectPos", value.asInstanceOf[js.Any])
     
     inline def setSwitch(value: Boolean): Self = StObject.set(x, "switch", value.asInstanceOf[js.Any])
     

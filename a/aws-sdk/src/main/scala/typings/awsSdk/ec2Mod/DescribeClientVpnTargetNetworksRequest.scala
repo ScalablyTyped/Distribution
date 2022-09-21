@@ -49,7 +49,7 @@ object DescribeClientVpnTargetNetworksRequest {
     
     inline def setAssociationIdsUndefined: Self = StObject.set(x, "AssociationIds", js.undefined)
     
-    inline def setAssociationIdsVarargs(value: String*): Self = StObject.set(x, "AssociationIds", js.Array(value :_*))
+    inline def setAssociationIdsVarargs(value: String*): Self = StObject.set(x, "AssociationIds", js.Array(value*))
     
     inline def setClientVpnEndpointId(value: ClientVpnEndpointId): Self = StObject.set(x, "ClientVpnEndpointId", value.asInstanceOf[js.Any])
     
@@ -61,7 +61,7 @@ object DescribeClientVpnTargetNetworksRequest {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setMaxResults(value: DescribeClientVpnTargetNetworksMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

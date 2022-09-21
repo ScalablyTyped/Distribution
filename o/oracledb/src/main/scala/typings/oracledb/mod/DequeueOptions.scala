@@ -1,13 +1,13 @@
 package typings.oracledb.mod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** 
+/**
   * Options to use when dequeuing messages. Attributes can be set before each queue.deqOne() or queue.deqMany().
-  * 
+  *
   * @see https://oracle.github.io/node-oracledb/doc/api.html#aqoptions
   * @since 4.0
   */

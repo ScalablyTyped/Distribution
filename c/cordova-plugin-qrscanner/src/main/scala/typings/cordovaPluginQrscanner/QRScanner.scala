@@ -17,7 +17,7 @@ trait QRScanner extends StObject {
     * @param {function} [callback] Callback that gets the QRScannerStatus object.
     */
   def cancelScan(): Unit = js.native
-  def cancelScan(callback: js.Function1[/* status */ QRScannerStatus, js.Any]): Unit = js.native
+  def cancelScan(callback: js.Function1[/* status */ QRScannerStatus, Any]): Unit = js.native
   
   /**
     * Runs hide(), stops scanning, video capture, and the preview, and
@@ -27,7 +27,7 @@ trait QRScanner extends StObject {
     * @param {function} [callback] Callback that gets the QRScannerStatus object.
     */
   def destroy(): Unit = js.native
-  def destroy(callback: js.Function1[/* status */ QRScannerStatus, js.Any]): Unit = js.native
+  def destroy(callback: js.Function1[/* status */ QRScannerStatus, Any]): Unit = js.native
   
   /**
     * Disable the device's light. If `QRScanner.prepare()` has not been called,
@@ -35,7 +35,7 @@ trait QRScanner extends StObject {
     * @param {function} [callback] Callback that gets an error or the QRScannerStatus object.
     */
   def disableLight(): Unit = js.native
-  def disableLight(callback: js.Function2[/* error */ QRScannerError, /* status */ QRScannerStatus, js.Any]): Unit = js.native
+  def disableLight(callback: js.Function2[/* error */ QRScannerError, /* status */ QRScannerStatus, Any]): Unit = js.native
   
   /**
     * Enable the device's light (for scanning in low-light environments). If
@@ -44,13 +44,13 @@ trait QRScanner extends StObject {
     * @param {function} [callback] Callback that gets an error or the QRScannerStatus object.
     */
   def enableLight(): Unit = js.native
-  def enableLight(callback: js.Function2[/* error */ QRScannerError, /* status */ QRScannerStatus, js.Any]): Unit = js.native
+  def enableLight(callback: js.Function2[/* error */ QRScannerError, /* status */ QRScannerStatus, Any]): Unit = js.native
   
   /**
     * Retrieve the status of QRScanner and provide it to the callback function.
     * @param {function} callback Callback that gets the QRScannerStatus object.
     */
-  def getStatus(callback: js.Function1[/* status */ QRScannerStatus, js.Any]): Unit = js.native
+  def getStatus(callback: js.Function1[/* status */ QRScannerStatus, Any]): Unit = js.native
   
   /**
     * Configures the native webview to be opaque with a white background,
@@ -58,7 +58,7 @@ trait QRScanner extends StObject {
     * @param {function} [callback] Callback that gets the QRScannerStatus object.
     */
   def hide(): Unit = js.native
-  def hide(callback: js.Function1[/* status */ QRScannerStatus, js.Any]): Unit = js.native
+  def hide(callback: js.Function1[/* status */ QRScannerStatus, Any]): Unit = js.native
   
   /**
     * Open the app-specific permission settings in the user's device settings.
@@ -70,14 +70,14 @@ trait QRScanner extends StObject {
     * @param {function} [callback] Callback that gets the QRScannerStatus object.
     */
   def openSettings(): Unit = js.native
-  def openSettings(callback: js.Function2[/* error */ QRScannerError, /* status */ QRScannerStatus, js.Any]): Unit = js.native
+  def openSettings(callback: js.Function2[/* error */ QRScannerError, /* status */ QRScannerStatus, Any]): Unit = js.native
   
   /**
     * Pauses the video preview on the current frame (as if a snapshot was taken).
     * @param {function} [callback] Callback that gets the QRScannerStatus object.
     */
   def pausePreview(): Unit = js.native
-  def pausePreview(callback: js.Function1[/* status */ QRScannerStatus, js.Any]): Unit = js.native
+  def pausePreview(callback: js.Function1[/* status */ QRScannerStatus, Any]): Unit = js.native
   
   /**
     * Request permission to access the camera (if not already granted), prepare
@@ -86,14 +86,14 @@ trait QRScanner extends StObject {
     * @param {function} [callback] Callback that gets an error or the QRScannerStatus object.
     */
   def prepare(): Unit = js.native
-  def prepare(callback: js.Function2[/* error */ QRScannerError, /* status */ QRScannerStatus, js.Any]): Unit = js.native
+  def prepare(callback: js.Function2[/* error */ QRScannerError, /* status */ QRScannerStatus, Any]): Unit = js.native
   
   /**
     * Resumes the video preview.
     * @param {function} [callback] Callback that gets the QRScannerStatus object.
     */
   def resumePreview(): Unit = js.native
-  def resumePreview(callback: js.Function1[/* status */ QRScannerStatus, js.Any]): Unit = js.native
+  def resumePreview(callback: js.Function1[/* status */ QRScannerStatus, Any]): Unit = js.native
   
   /**
     * Sets QRScanner to "watch" for valid QR codes. Once a valid code is
@@ -103,7 +103,7 @@ trait QRScanner extends StObject {
     * not need to be visible for scanning to function.
     * @param {function} callback Callback that gets an error or the results string.
     */
-  def scan(callback: js.Function2[/* error */ QRScannerError, /* result */ String, js.Any]): Unit = js.native
+  def scan(callback: js.Function2[/* error */ QRScannerError, /* result */ String, Any]): Unit = js.native
   
   /**
     * Configures the native webview to have a transparent background, then sets
@@ -115,7 +115,7 @@ trait QRScanner extends StObject {
     * @param {function} [callback] Callback that gets the QRScannerStatus object.
     */
   def show(): Unit = js.native
-  def show(callback: js.Function1[/* status */ QRScannerStatus, js.Any]): Unit = js.native
+  def show(callback: js.Function1[/* status */ QRScannerStatus, Any]): Unit = js.native
   
   /**
     * Switch video capture to the device's back camera. If `QRScanner.prepare()`
@@ -123,7 +123,7 @@ trait QRScanner extends StObject {
     * @param {function} [callback] Callback that gets an error or the QRScannerStatus object.
     */
   def useBackCamera(): Unit = js.native
-  def useBackCamera(callback: js.Function2[/* error */ QRScannerError, /* status */ QRScannerStatus, js.Any]): Unit = js.native
+  def useBackCamera(callback: js.Function2[/* error */ QRScannerError, /* status */ QRScannerStatus, Any]): Unit = js.native
   
   /**
     * Switch video capture to the `index` camera. Camera `0` is the back camera,
@@ -135,7 +135,7 @@ trait QRScanner extends StObject {
   def useCamera(index: Double): Unit = js.native
   def useCamera(
     index: Double,
-    callback: js.Function2[/* error */ QRScannerError, /* status */ QRScannerStatus, js.Any]
+    callback: js.Function2[/* error */ QRScannerError, /* status */ QRScannerStatus, Any]
   ): Unit = js.native
   
   /**
@@ -144,5 +144,5 @@ trait QRScanner extends StObject {
     * @param {function} [callback] Callback that gets an error or the QRScannerStatus object.
     */
   def useFrontCamera(): Unit = js.native
-  def useFrontCamera(callback: js.Function2[/* error */ QRScannerError, /* status */ QRScannerStatus, js.Any]): Unit = js.native
+  def useFrontCamera(callback: js.Function2[/* error */ QRScannerError, /* status */ QRScannerStatus, Any]): Unit = js.native
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LDAPMessageJsonObject
   extends StObject
-     with /* k */ StringDictionary[js.Any] {
+     with /* k */ StringDictionary[Any] {
   
   var controls: js.Array[Control]
   
@@ -26,7 +26,7 @@ object LDAPMessageJsonObject {
     
     inline def setControls(value: js.Array[Control]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
     
-    inline def setControlsVarargs(value: Control*): Self = StObject.set(x, "controls", js.Array(value :_*))
+    inline def setControlsVarargs(value: Control*): Self = StObject.set(x, "controls", js.Array(value*))
     
     inline def setMessageID(value: Double): Self = StObject.set(x, "messageID", value.asInstanceOf[js.Any])
     

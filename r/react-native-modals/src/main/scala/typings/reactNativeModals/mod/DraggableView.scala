@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-modals", "DraggableView")
 @js.native
-class DraggableView protected ()
-  extends Component[DraggableViewProps, js.Object, js.Any] {
+open class DraggableView protected ()
+  extends Component[DraggableViewProps, js.Object, Any] {
   def this(props: DraggableViewProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: DraggableViewProps, context: js.Any) = this()
+  def this(props: DraggableViewProps, context: Any) = this()
 }

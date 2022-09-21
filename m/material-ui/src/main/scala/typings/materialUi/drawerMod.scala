@@ -10,10 +10,10 @@ object drawerMod {
   
   @JSImport("material-ui/Drawer", JSImport.Default)
   @js.native
-  class default () extends Drawer
+  open class default () extends Drawer
   
   @JSImport("material-ui/Drawer", "Drawer")
   @js.native
-  class Drawer ()
-    extends Component[DrawerProps, js.Object, js.Any]
+  open class Drawer ()
+    extends Component[DrawerProps, js.Object, Any]
 }

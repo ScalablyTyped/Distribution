@@ -11,15 +11,15 @@ trait MapEventListener extends StObject {
   
   var eventName: String
   
-  def listener(event: js.Any): js.Any
+  def listener(event: Any): Any
   
   var listenerId: String
   
-  var target: js.Any
+  var target: Any
 }
 object MapEventListener {
   
-  inline def apply(eventName: String, listener: js.Any => js.Any, listenerId: String, target: js.Any): MapEventListener = {
+  inline def apply(eventName: String, listener: Any => Any, listenerId: String, target: Any): MapEventListener = {
     val __obj = js.Dynamic.literal(eventName = eventName.asInstanceOf[js.Any], listener = js.Any.fromFunction1(listener), listenerId = listenerId.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapEventListener]
   }
@@ -28,10 +28,10 @@ object MapEventListener {
     
     inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
     
-    inline def setListener(value: js.Any => js.Any): Self = StObject.set(x, "listener", js.Any.fromFunction1(value))
+    inline def setListener(value: Any => Any): Self = StObject.set(x, "listener", js.Any.fromFunction1(value))
     
     inline def setListenerId(value: String): Self = StObject.set(x, "listenerId", value.asInstanceOf[js.Any])
     
-    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

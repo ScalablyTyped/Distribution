@@ -9,7 +9,7 @@ trait DescribeRecipeResponse extends StObject {
   /**
     * The date and time that the recipe was created.
     */
-  var CreateDate: js.UndefOr[Date] = js.undefined
+  var CreateDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The identifier (user name) of the user who created the recipe.
@@ -29,7 +29,7 @@ trait DescribeRecipeResponse extends StObject {
   /**
     * The date and time that the recipe was last modified.
     */
-  var LastModifiedDate: js.UndefOr[Date] = js.undefined
+  var LastModifiedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the recipe.
@@ -49,7 +49,7 @@ trait DescribeRecipeResponse extends StObject {
   /**
     * The date and time when the recipe was last published.
     */
-  var PublishedDate: js.UndefOr[Date] = js.undefined
+  var PublishedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The recipe version identifier.
@@ -80,7 +80,7 @@ object DescribeRecipeResponse {
   
   extension [Self <: DescribeRecipeResponse](x: Self) {
     
-    inline def setCreateDate(value: Date): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
+    inline def setCreateDate(value: js.Date): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
     inline def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
     
@@ -96,7 +96,7 @@ object DescribeRecipeResponse {
     
     inline def setLastModifiedByUndefined: Self = StObject.set(x, "LastModifiedBy", js.undefined)
     
-    inline def setLastModifiedDate(value: Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: js.Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
     
@@ -110,7 +110,7 @@ object DescribeRecipeResponse {
     
     inline def setPublishedByUndefined: Self = StObject.set(x, "PublishedBy", js.undefined)
     
-    inline def setPublishedDate(value: Date): Self = StObject.set(x, "PublishedDate", value.asInstanceOf[js.Any])
+    inline def setPublishedDate(value: js.Date): Self = StObject.set(x, "PublishedDate", value.asInstanceOf[js.Any])
     
     inline def setPublishedDateUndefined: Self = StObject.set(x, "PublishedDate", js.undefined)
     
@@ -126,7 +126,7 @@ object DescribeRecipeResponse {
     
     inline def setStepsUndefined: Self = StObject.set(x, "Steps", js.undefined)
     
-    inline def setStepsVarargs(value: RecipeStep*): Self = StObject.set(x, "Steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: RecipeStep*): Self = StObject.set(x, "Steps", js.Array(value*))
     
     inline def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     

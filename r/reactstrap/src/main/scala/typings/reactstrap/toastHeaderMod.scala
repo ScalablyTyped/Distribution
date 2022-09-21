@@ -8,7 +8,7 @@ import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
-import typings.reactstrap.mod.CSSModule
+import typings.reactstrap.utilsMod.CSSModule
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,19 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object toastHeaderMod {
   
-  @JSImport("reactstrap/lib/ToastHeader", JSImport.Default)
+  @JSImport("reactstrap/types/lib/ToastHeader", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ToastHeaderProps, js.Object, js.Any]
+  open class default ()
+    extends Component[ToastHeaderProps, js.Object, Any]
   
-  type ToastHeader = Component[ToastHeaderProps, js.Object, js.Any]
+  type ToastHeader = Component[ToastHeaderProps, js.Object, Any]
   
   trait ToastHeaderProps
     extends StObject
        with HTMLAttributes[HTMLElement]
-       with /* key */ StringDictionary[js.Any] {
-    
-    var charCode: js.UndefOr[String | Double] = js.undefined
+       with /* key */ StringDictionary[Any] {
     
     var close: js.UndefOr[ReactNode] = js.undefined
     
@@ -38,11 +36,11 @@ object toastHeaderMod {
     
     var icon: js.UndefOr[String | ReactNode] = js.undefined
     
-    var tag: js.UndefOr[ElementType[js.Any]] = js.undefined
+    var tag: js.UndefOr[ElementType[Any]] = js.undefined
     
-    var toggle: js.UndefOr[MouseEventHandler[js.Any]] = js.undefined
+    var toggle: js.UndefOr[MouseEventHandler[Any]] = js.undefined
     
-    var wrapTag: js.UndefOr[ElementType[js.Any]] = js.undefined
+    var wrapTag: js.UndefOr[ElementType[Any]] = js.undefined
   }
   object ToastHeaderProps {
     
@@ -52,10 +50,6 @@ object toastHeaderMod {
     }
     
     extension [Self <: ToastHeaderProps](x: Self) {
-      
-      inline def setCharCode(value: String | Double): Self = StObject.set(x, "charCode", value.asInstanceOf[js.Any])
-      
-      inline def setCharCodeUndefined: Self = StObject.set(x, "charCode", js.undefined)
       
       inline def setClose(value: ReactNode): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
@@ -73,15 +67,15 @@ object toastHeaderMod {
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      inline def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: ElementType[Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
       inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
       
-      inline def setToggle(value: MouseEvent[js.Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
+      inline def setToggle(value: MouseEvent[Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
       
       inline def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
       
-      inline def setWrapTag(value: ElementType[js.Any]): Self = StObject.set(x, "wrapTag", value.asInstanceOf[js.Any])
+      inline def setWrapTag(value: ElementType[Any]): Self = StObject.set(x, "wrapTag", value.asInstanceOf[js.Any])
       
       inline def setWrapTagUndefined: Self = StObject.set(x, "wrapTag", js.undefined)
     }

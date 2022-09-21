@@ -130,7 +130,7 @@ trait ShapeRange extends StObject {
   @JSName("Nodes")
   val Nodes_Original: ShapeNodes = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   val ParentGroup: Shape = js.native
   
@@ -191,5 +191,5 @@ trait ShapeRange extends StObject {
   
   val ZOrderPosition: Double = js.native
   
-  def _Default(Index: js.Any): Shape = js.native
+  def _Default(Index: Any): Shape = js.native
 }

@@ -35,7 +35,7 @@ trait ASPxClientSpellChecker
     * Starts checking contents of the specified element.
     * @param element An object representing the element being checked.
     */
-  def CheckElement(element: js.Any): Unit
+  def CheckElement(element: Any): Unit
   
   /**
     * Starts checking contents of the specified element.
@@ -47,7 +47,7 @@ trait ASPxClientSpellChecker
     * Starts checking the contents of controls in the specified container.
     * @param containerElement An object representing a control which contains elements being checked.
     */
-  def CheckElementsInContainer(containerElement: js.Any): Unit
+  def CheckElementsInContainer(containerElement: Any): Unit
   
   /**
     * Starts checking the contents of controls in the specified container.
@@ -68,14 +68,14 @@ object ASPxClientSpellChecker {
     BeforeCheck: ASPxClientEvent[ASPxClientBeforeCheckEventHandler[ASPxClientSpellChecker]],
     Check: () => Unit,
     CheckCompleteFormShowing: ASPxClientEvent[ASPxClientCancelEventHandler[ASPxClientSpellChecker]],
-    CheckElement: js.Any => Unit,
+    CheckElement: Any => Unit,
     CheckElementById: String => Unit,
-    CheckElementsInContainer: js.Any => Unit,
+    CheckElementsInContainer: Any => Unit,
     CheckElementsInContainerById: String => Unit,
     GetClientVisible: () => Boolean,
     GetHeight: () => Double,
-    GetMainElement: () => js.Any,
-    GetParentControl: () => js.Any,
+    GetMainElement: () => Any,
+    GetParentControl: () => Any,
     GetVisible: () => Boolean,
     GetWidth: () => Double,
     InCallback: () => Boolean,
@@ -102,11 +102,11 @@ object ASPxClientSpellChecker {
     
     inline def setCheckCompleteFormShowing(value: ASPxClientEvent[ASPxClientCancelEventHandler[ASPxClientSpellChecker]]): Self = StObject.set(x, "CheckCompleteFormShowing", value.asInstanceOf[js.Any])
     
-    inline def setCheckElement(value: js.Any => Unit): Self = StObject.set(x, "CheckElement", js.Any.fromFunction1(value))
+    inline def setCheckElement(value: Any => Unit): Self = StObject.set(x, "CheckElement", js.Any.fromFunction1(value))
     
     inline def setCheckElementById(value: String => Unit): Self = StObject.set(x, "CheckElementById", js.Any.fromFunction1(value))
     
-    inline def setCheckElementsInContainer(value: js.Any => Unit): Self = StObject.set(x, "CheckElementsInContainer", js.Any.fromFunction1(value))
+    inline def setCheckElementsInContainer(value: Any => Unit): Self = StObject.set(x, "CheckElementsInContainer", js.Any.fromFunction1(value))
     
     inline def setCheckElementsInContainerById(value: String => Unit): Self = StObject.set(x, "CheckElementsInContainerById", js.Any.fromFunction1(value))
     

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("athenajs", "Sprite")
 @js.native
-class Sprite protected () extends Drawable {
+open class Sprite protected () extends Drawable {
   def this(`type`: String, spriteOptions: SpriteOptions) = this()
   
   def addAnimation(name: String, imgPath: String, options: AnimOptions): Unit = js.native

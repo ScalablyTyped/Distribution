@@ -10,15 +10,12 @@ A jQuery plugin that enables HTML5 placeholder behavior for browsers that arenâ€
 | ------------------ | :-------------: |
 | Full name          | jquery.placeholder |
 | Keywords           | jquery, placeholder, html5, placeholder, ie |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 14082 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 556.6666666666666 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/mathiasbynens/jquery-placeholder)
-- [Bugs](https://github.com/mathiasbynens/jquery-placeholder/issues)
-- [Repository](https://github.com/mathiasbynens/jquery-placeholder)
 - [Npm](https://www.npmjs.com/package/jquery.placeholder)
     
 

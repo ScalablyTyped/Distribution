@@ -30,10 +30,10 @@ object BatchUpdateFindingsResponse {
     
     inline def setProcessedFindings(value: AwsSecurityFindingIdentifierList): Self = StObject.set(x, "ProcessedFindings", value.asInstanceOf[js.Any])
     
-    inline def setProcessedFindingsVarargs(value: AwsSecurityFindingIdentifier*): Self = StObject.set(x, "ProcessedFindings", js.Array(value :_*))
+    inline def setProcessedFindingsVarargs(value: AwsSecurityFindingIdentifier*): Self = StObject.set(x, "ProcessedFindings", js.Array(value*))
     
     inline def setUnprocessedFindings(value: BatchUpdateFindingsUnprocessedFindingsList): Self = StObject.set(x, "UnprocessedFindings", value.asInstanceOf[js.Any])
     
-    inline def setUnprocessedFindingsVarargs(value: BatchUpdateFindingsUnprocessedFinding*): Self = StObject.set(x, "UnprocessedFindings", js.Array(value :_*))
+    inline def setUnprocessedFindingsVarargs(value: BatchUpdateFindingsUnprocessedFinding*): Self = StObject.set(x, "UnprocessedFindings", js.Array(value*))
   }
 }

@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Base component for plain JS classes
 @JSImport("babel-plugin-react-html-attrs", "Component")
 @js.native
-class Component[P, S, SS] protected ()
+open class Component[P, S, SS] protected ()
   extends StObject
      with ComponentLifecycle[P, S, SS] {
   def this(props: P) = this()
-  def this(props: P, context: js.Any) = this()
+  def this(props: P, context: Any) = this()
   
   /**
     * If using the new style context, re-declare this in your class to be the
@@ -32,7 +32,7 @@ class Component[P, S, SS] protected ()
     * @see https://reactjs.org/docs/context.html
     */
   // TODO (TypeScript 3.0): unknown
-  var context: js.Any = js.native
+  var context: Any = js.native
   
   def forceUpdate(): Unit = js.native
   def forceUpdate(callback: js.Function0[Unit]): Unit = js.native
@@ -99,6 +99,6 @@ object Component {
   /* static member */
   @JSImport("babel-plugin-react-html-attrs", "Component.contextType")
   @js.native
-  def contextType: js.UndefOr[Context[js.Any]] = js.native
-  inline def contextType_=(x: js.UndefOr[Context[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+  def contextType: js.UndefOr[Context[Any]] = js.native
+  inline def contextType_=(x: js.UndefOr[Context[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
 }

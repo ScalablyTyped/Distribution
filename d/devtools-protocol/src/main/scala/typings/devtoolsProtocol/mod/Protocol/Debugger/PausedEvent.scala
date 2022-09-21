@@ -1,5 +1,6 @@
 package typings.devtoolsProtocol.mod.Protocol.Debugger
 
+import typings.devtoolsProtocol.devtoolsProtocolStrings.CSPViolation
 import typings.devtoolsProtocol.devtoolsProtocolStrings.DOM
 import typings.devtoolsProtocol.devtoolsProtocolStrings.EventListener
 import typings.devtoolsProtocol.devtoolsProtocolStrings.OOM
@@ -42,7 +43,7 @@ trait PausedEvent extends StObject {
   /**
     * Object containing break-specific auxiliary properties.
     */
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
   /**
     * Hit breakpoints IDs
@@ -52,13 +53,13 @@ trait PausedEvent extends StObject {
   /**
     * Pause reason. (PausedEventReason enum)
     */
-  var reason: ambiguous | assert | debugCommand | DOM | EventListener | exception | instrumentation | OOM | other_ | promiseRejection | XHR
+  var reason: ambiguous | assert | CSPViolation | debugCommand | DOM | EventListener | exception | instrumentation | OOM | other_ | promiseRejection | XHR
 }
 object PausedEvent {
   
   inline def apply(
     callFrames: js.Array[CallFrame],
-    reason: ambiguous | assert | debugCommand | DOM | EventListener | exception | instrumentation | OOM | other_ | promiseRejection | XHR
+    reason: ambiguous | assert | CSPViolation | debugCommand | DOM | EventListener | exception | instrumentation | OOM | other_ | promiseRejection | XHR
   ): PausedEvent = {
     val __obj = js.Dynamic.literal(callFrames = callFrames.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[PausedEvent]
@@ -80,9 +81,9 @@ object PausedEvent {
     
     inline def setCallFrames(value: js.Array[CallFrame]): Self = StObject.set(x, "callFrames", value.asInstanceOf[js.Any])
     
-    inline def setCallFramesVarargs(value: CallFrame*): Self = StObject.set(x, "callFrames", js.Array(value :_*))
+    inline def setCallFramesVarargs(value: CallFrame*): Self = StObject.set(x, "callFrames", js.Array(value*))
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -90,10 +91,10 @@ object PausedEvent {
     
     inline def setHitBreakpointsUndefined: Self = StObject.set(x, "hitBreakpoints", js.undefined)
     
-    inline def setHitBreakpointsVarargs(value: String*): Self = StObject.set(x, "hitBreakpoints", js.Array(value :_*))
+    inline def setHitBreakpointsVarargs(value: String*): Self = StObject.set(x, "hitBreakpoints", js.Array(value*))
     
     inline def setReason(
-      value: ambiguous | assert | debugCommand | DOM | EventListener | exception | instrumentation | OOM | other_ | promiseRejection | XHR
+      value: ambiguous | assert | CSPViolation | debugCommand | DOM | EventListener | exception | instrumentation | OOM | other_ | promiseRejection | XHR
     ): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }
 }

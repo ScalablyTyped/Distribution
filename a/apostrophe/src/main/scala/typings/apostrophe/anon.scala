@@ -27,7 +27,7 @@ object anon {
       
       inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+      inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value*))
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -37,29 +37,15 @@ object anon {
   
   trait Form extends StObject {
     
-    def form(
-      req: js.Any,
-      data: js.Any,
-      name: String,
-      `object`: AposObject,
-      field: js.Any,
-      callback: js.Function0[js.Any]
-    ): Unit
+    def form(req: Any, data: Any, name: String, `object`: AposObject, field: Any, callback: js.Function0[Any]): Unit
     
-    def string(
-      req: js.Any,
-      data: js.Any,
-      name: String,
-      `object`: AposObject,
-      field: js.Any,
-      callback: js.Function0[js.Any]
-    ): Unit
+    def string(req: Any, data: Any, name: String, `object`: AposObject, field: Any, callback: js.Function0[Any]): Unit
   }
   object Form {
     
     inline def apply(
-      form: (js.Any, js.Any, String, AposObject, js.Any, js.Function0[js.Any]) => Unit,
-      string: (js.Any, js.Any, String, AposObject, js.Any, js.Function0[js.Any]) => Unit
+      form: (Any, Any, String, AposObject, Any, js.Function0[Any]) => Unit,
+      string: (Any, Any, String, AposObject, Any, js.Function0[Any]) => Unit
     ): Form = {
       val __obj = js.Dynamic.literal(form = js.Any.fromFunction6(form), string = js.Any.fromFunction6(string))
       __obj.asInstanceOf[Form]
@@ -67,9 +53,9 @@ object anon {
     
     extension [Self <: Form](x: Self) {
       
-      inline def setForm(value: (js.Any, js.Any, String, AposObject, js.Any, js.Function0[js.Any]) => Unit): Self = StObject.set(x, "form", js.Any.fromFunction6(value))
+      inline def setForm(value: (Any, Any, String, AposObject, Any, js.Function0[Any]) => Unit): Self = StObject.set(x, "form", js.Any.fromFunction6(value))
       
-      inline def setString(value: (js.Any, js.Any, String, AposObject, js.Any, js.Function0[js.Any]) => Unit): Self = StObject.set(x, "string", js.Any.fromFunction6(value))
+      inline def setString(value: (Any, Any, String, AposObject, Any, js.Function0[Any]) => Unit): Self = StObject.set(x, "string", js.Any.fromFunction6(value))
     }
   }
   

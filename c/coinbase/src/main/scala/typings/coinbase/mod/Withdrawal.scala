@@ -1,14 +1,13 @@
 package typings.coinbase.mod
 
 import typings.coinbase.coinbaseStrings.deposit
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("coinbase", "Withdrawal")
 @js.native
-class Withdrawal ()
+open class Withdrawal ()
   extends StObject
      with Resource {
   
@@ -21,17 +20,12 @@ class Withdrawal ()
     * Completes a withdrawal that is created in commit: false state.
     * Scope: wallet:withdrawals:create
     */
-  def commit(cb: js.Function2[/* error */ Error | Null, /* result */ this.type, Unit]): Unit = js.native
+  def commit(cb: js.Function2[/* error */ js.Error | Null, /* result */ this.type, Unit]): Unit = js.native
   
   /**
     * Has this withdrawal been committed?
     */
   var committed: Boolean = js.native
-  
-  /**
-    * ISO timestamp (sometimes needs additional permissions)
-    */
-  var created_at: js.UndefOr[String] = js.native
   
   /**
     * Fee associated to this withdrawal
@@ -80,9 +74,4 @@ class Withdrawal ()
     * Associated transaction (e.g. a bank, fiat account)
     */
   var transaction: ResourceRef = js.native
-  
-  /**
-    * ISO timestamp (sometimes needs additional permissions)
-    */
-  var updated_at: js.UndefOr[String] = js.native
 }

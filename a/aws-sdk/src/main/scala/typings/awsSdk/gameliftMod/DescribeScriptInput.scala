@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeScriptInput extends StObject {
   
   /**
-    * A unique identifier for a Realtime script to retrieve properties for. You can use either the script ID or ARN value.
+    * A unique identifier for the Realtime script to retrieve properties for. You can use either the script ID or ARN value.
     */
   var ScriptId: ScriptIdOrArn
 }

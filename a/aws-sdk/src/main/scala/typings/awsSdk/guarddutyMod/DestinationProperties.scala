@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DestinationProperties extends StObject {
   
   /**
-    * The ARN of the resource to publish to.
+    * The ARN of the resource to publish to. To specify an S3 bucket folder use the following format: arn:aws:s3:::DOC-EXAMPLE-BUCKET/myFolder/ 
     */
   var DestinationArn: js.UndefOr[String] = js.undefined
   

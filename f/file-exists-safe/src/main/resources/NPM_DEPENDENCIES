@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "file-exists-safe" : "1.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "file-exists-safe" : "1.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

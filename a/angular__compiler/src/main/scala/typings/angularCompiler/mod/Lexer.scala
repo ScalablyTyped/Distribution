@@ -6,5 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "Lexer")
 @js.native
-class Lexer ()
-  extends typings.angularCompiler.compilerMod.Lexer
+open class Lexer () extends StObject {
+  
+  def tokenize(text: String): js.Array[Token] = js.native
+}

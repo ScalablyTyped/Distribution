@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object findIndexMod {
   
-  @JSImport("@antv/util/lib/find-index", JSImport.Namespace)
+  @JSImport("@antv/util/lib/lodash/find-index", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

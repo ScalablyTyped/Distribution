@@ -10,10 +10,10 @@ Smooth scrolling for the web
 | ------------------ | :-------------: |
 | Full name          | iscroll |
 | Keywords           | scrolling, carousel, zoom, iphone, android, mobile, desktop |
-| # releases         | 0 |
-| # dependents       | 126 |
-| # downloads        | 480864 |
-| # stars            | 19 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 54496.333333333336 |
+| # stars            | 12848.0 |
 
 ## Links
 - [Homepage](http://iscrolljs.com)

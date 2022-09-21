@@ -32,7 +32,7 @@ import typings.browserfs.fileSystemMod.FileSystemConstructor
 import typings.browserfs.indexedDBMod.IndexedDBFileSystem
 import typings.browserfs.zipFSMod.ZipTOC
 import typings.dropboxjs.Dropbox.Client
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.pathMod.PlatformPath
 import typings.node.processMod.global.NodeJS.Process
 import typings.std.Worker
@@ -48,7 +48,7 @@ object global {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def BFSRequire(module: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("BFSRequire")(module.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def BFSRequire(module: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("BFSRequire")(module.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     inline def BFSRequire_bfsutils(module: bfs_utils): TypeofBFSUtils = ^.asInstanceOf[js.Dynamic].applyDynamic("BFSRequire")(module.asInstanceOf[js.Any]).asInstanceOf[TypeofBFSUtils]
     
@@ -62,22 +62,22 @@ object global {
     
     @JSGlobal("BrowserFS.EmscriptenFS")
     @js.native
-    class EmscriptenFS ()
+    open class EmscriptenFS ()
       extends typings.browserfs.mod.EmscriptenFS {
-      def this(_FS: js.Any) = this()
-      def this(_FS: js.Any, _PATH: js.Any) = this()
-      def this(_FS: Unit, _PATH: js.Any) = this()
-      def this(_FS: js.Any, _PATH: js.Any, _ERRNO_CODES: js.Any) = this()
-      def this(_FS: js.Any, _PATH: Unit, _ERRNO_CODES: js.Any) = this()
-      def this(_FS: Unit, _PATH: js.Any, _ERRNO_CODES: js.Any) = this()
-      def this(_FS: Unit, _PATH: Unit, _ERRNO_CODES: js.Any) = this()
-      def this(_FS: js.Any, _PATH: js.Any, _ERRNO_CODES: js.Any, nodefs: default) = this()
-      def this(_FS: js.Any, _PATH: js.Any, _ERRNO_CODES: Unit, nodefs: default) = this()
-      def this(_FS: js.Any, _PATH: Unit, _ERRNO_CODES: js.Any, nodefs: default) = this()
-      def this(_FS: js.Any, _PATH: Unit, _ERRNO_CODES: Unit, nodefs: default) = this()
-      def this(_FS: Unit, _PATH: js.Any, _ERRNO_CODES: js.Any, nodefs: default) = this()
-      def this(_FS: Unit, _PATH: js.Any, _ERRNO_CODES: Unit, nodefs: default) = this()
-      def this(_FS: Unit, _PATH: Unit, _ERRNO_CODES: js.Any, nodefs: default) = this()
+      def this(_FS: Any) = this()
+      def this(_FS: Any, _PATH: Any) = this()
+      def this(_FS: Unit, _PATH: Any) = this()
+      def this(_FS: Any, _PATH: Any, _ERRNO_CODES: Any) = this()
+      def this(_FS: Any, _PATH: Unit, _ERRNO_CODES: Any) = this()
+      def this(_FS: Unit, _PATH: Any, _ERRNO_CODES: Any) = this()
+      def this(_FS: Unit, _PATH: Unit, _ERRNO_CODES: Any) = this()
+      def this(_FS: Any, _PATH: Any, _ERRNO_CODES: Any, nodefs: default) = this()
+      def this(_FS: Any, _PATH: Any, _ERRNO_CODES: Unit, nodefs: default) = this()
+      def this(_FS: Any, _PATH: Unit, _ERRNO_CODES: Any, nodefs: default) = this()
+      def this(_FS: Any, _PATH: Unit, _ERRNO_CODES: Unit, nodefs: default) = this()
+      def this(_FS: Unit, _PATH: Any, _ERRNO_CODES: Any, nodefs: default) = this()
+      def this(_FS: Unit, _PATH: Any, _ERRNO_CODES: Unit, nodefs: default) = this()
+      def this(_FS: Unit, _PATH: Unit, _ERRNO_CODES: Any, nodefs: default) = this()
       def this(_FS: Unit, _PATH: Unit, _ERRNO_CODES: Unit, nodefs: default) = this()
     }
     
@@ -85,7 +85,7 @@ object global {
       
       @JSGlobal("BrowserFS.Errors.ApiError")
       @js.native
-      class ApiError protected ()
+      open class ApiError protected ()
         extends typings.browserfs.mod.Errors.ApiError {
         /**
           * Represents a BrowserFS error. Passed back to applications after a failed
@@ -129,7 +129,7 @@ object global {
         inline def fromBuffer(buffer: Buffer): typings.browserfs.apiErrorMod.ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.browserfs.apiErrorMod.ApiError]
         inline def fromBuffer(buffer: Buffer, i: Double): typings.browserfs.apiErrorMod.ApiError = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], i.asInstanceOf[js.Any])).asInstanceOf[typings.browserfs.apiErrorMod.ApiError]
         
-        inline def fromJSON(json: js.Any): typings.browserfs.apiErrorMod.ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.browserfs.apiErrorMod.ApiError]
+        inline def fromJSON(json: Any): typings.browserfs.apiErrorMod.ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.browserfs.apiErrorMod.ApiError]
       }
       
       @JSGlobal("BrowserFS.Errors.ErrorCode")
@@ -186,7 +186,7 @@ object global {
       /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
       @JSGlobal("BrowserFS.FileSystem.AsyncMirror")
       @js.native
-      class AsyncMirror protected ()
+      open class AsyncMirror protected ()
         extends typings.browserfs.asyncMirrorMod.default {
         /**
           * **Deprecated; use AsyncMirror.Create() method instead.**
@@ -215,7 +215,7 @@ object global {
       /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
       @JSGlobal("BrowserFS.FileSystem.Dropbox")
       @js.native
-      class Dropbox protected ()
+      open class Dropbox protected ()
         extends typings.browserfs.dropboxMod.default {
         /**
           * **Deprecated. Please use Dropbox.Create() method instead.**
@@ -235,13 +235,13 @@ object global {
       /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
       @JSGlobal("BrowserFS.FileSystem.Emscripten")
       @js.native
-      class Emscripten protected ()
+      open class Emscripten protected ()
         extends typings.browserfs.emscriptenMod.default {
         /**
           * Creates a BrowserFS file system for the given Emscripten file system.
           * @param _FS The Emscripten file system (`FS`).
           */
-        def this(_FS: js.Any) = this()
+        def this(_FS: Any) = this()
       }
       @JSGlobal("BrowserFS.FileSystem.Emscripten")
       @js.native
@@ -251,7 +251,7 @@ object global {
       /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
       @JSGlobal("BrowserFS.FileSystem.FolderAdapter")
       @js.native
-      class FolderAdapter protected ()
+      open class FolderAdapter protected ()
         extends typings.browserfs.folderAdapterMod.default {
         /**
           * Wraps a file system, and uses the given folder as its root.
@@ -281,7 +281,7 @@ object global {
         * @param size storage quota to request, in megabytes. Allocated value may be less.
         * @param type window.PERSISTENT or window.TEMPORARY. Defaults to PERSISTENT.
         */
-      class HTML5FS ()
+      open class HTML5FS ()
         extends typings.browserfs.html5fsMod.default {
         def this(size: Double) = this()
         def this(size: Double, `type`: Double) = this()
@@ -299,7 +299,7 @@ object global {
       /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
       @JSGlobal("BrowserFS.FileSystem.InMemory")
       @js.native
-      class InMemory ()
+      open class InMemory ()
         extends typings.browserfs.inMemoryMod.default
       @JSGlobal("BrowserFS.FileSystem.InMemory")
       @js.native
@@ -309,7 +309,7 @@ object global {
       /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
       @JSGlobal("BrowserFS.FileSystem.IndexedDB")
       @js.native
-      class IndexedDB protected ()
+      open class IndexedDB protected ()
         extends typings.browserfs.indexedDBMod.default {
         /**
           * **Deprecated. Use IndexedDB.Create() method instead.**
@@ -334,7 +334,7 @@ object global {
       /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
       @JSGlobal("BrowserFS.FileSystem.IsoFS")
       @js.native
-      class IsoFS protected ()
+      open class IsoFS protected ()
         extends typings.browserfs.isoFSMod.default {
         /**
           * **Deprecated. Please use IsoFS.Create() method instead.**
@@ -359,7 +359,7 @@ object global {
       /**
         * Creates a new LocalStorage file system using the contents of `localStorage`.
         */
-      class LocalStorage ()
+      open class LocalStorage ()
         extends typings.browserfs.localStorageMod.default
       @JSGlobal("BrowserFS.FileSystem.LocalStorage")
       @js.native
@@ -372,7 +372,7 @@ object global {
       /**
         * Creates a new, empty MountableFileSystem.
         */
-      class MountableFileSystem ()
+      open class MountableFileSystem ()
         extends typings.browserfs.mountableFileSystemMod.default
       @JSGlobal("BrowserFS.FileSystem.MountableFileSystem")
       @js.native
@@ -382,7 +382,7 @@ object global {
       /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
       @JSGlobal("BrowserFS.FileSystem.OverlayFS")
       @js.native
-      class OverlayFS protected ()
+      open class OverlayFS protected ()
         extends typings.browserfs.overlayFSMod.default {
         /**
           * **Deprecated. Please use OverlayFS.Create() method instead.**
@@ -407,7 +407,7 @@ object global {
       /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
       @JSGlobal("BrowserFS.FileSystem.WorkerFS")
       @js.native
-      class WorkerFS protected ()
+      open class WorkerFS protected ()
         extends typings.browserfs.workerFSMod.default {
         /**
           * **Deprecated. Please use WorkerFS.Create() method instead.**
@@ -426,7 +426,7 @@ object global {
       /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
       @JSGlobal("BrowserFS.FileSystem.XmlHttpRequest")
       @js.native
-      class XmlHttpRequest protected ()
+      open class XmlHttpRequest protected ()
         extends typings.browserfs.xmlHttpRequestMod.default {
         /**
           * **Deprecated. Please use XmlHttpRequest.Create() method instead to construct XmlHttpRequest objects.**
@@ -461,7 +461,7 @@ object global {
       /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
       @JSGlobal("BrowserFS.FileSystem.ZipFS")
       @js.native
-      class ZipFS protected ()
+      open class ZipFS protected ()
         extends typings.browserfs.zipFSMod.default {
         def this(input: ZipTOC) = this()
         /**
@@ -487,13 +487,13 @@ object global {
     
     inline def initialize(rootfs: FileSystem): FileSystem = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(rootfs.asInstanceOf[js.Any]).asInstanceOf[FileSystem]
     
-    inline def install(obj: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def install(obj: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     inline def registerFileSystem(name: String, fs: FileSystemConstructor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerFileSystem")(name.asInstanceOf[js.Any], fs.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSGlobal("BrowserFS.setImmediate")
     @js.native
-    def setImmediate: js.Function1[/* cb */ js.Function, js.Any] = js.native
-    inline def setImmediate_=(x: js.Function1[/* cb */ js.Function, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("setImmediate")(x.asInstanceOf[js.Any])
+    def setImmediate: js.Function1[/* cb */ js.Function, Any] = js.native
+    inline def setImmediate_=(x: js.Function1[/* cb */ js.Function, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("setImmediate")(x.asInstanceOf[js.Any])
   }
 }

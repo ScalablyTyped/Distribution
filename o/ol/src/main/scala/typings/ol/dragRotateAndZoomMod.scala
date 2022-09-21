@@ -9,7 +9,7 @@ object dragRotateAndZoomMod {
   
   @JSImport("ol/interaction/DragRotateAndZoom", JSImport.Default)
   @js.native
-  class default () extends DragRotateAndZoom {
+  open class default () extends DragRotateAndZoom {
     def this(opt_options: Options) = this()
   }
   

@@ -4,57 +4,56 @@ import typings.ddTrace.ddTraceStrings.`aws-sdk`
 import typings.ddTrace.ddTraceStrings.`cassandra-driver`
 import typings.ddTrace.ddTraceStrings.`generic-pool`
 import typings.ddTrace.ddTraceStrings.`google-cloud-pubsub`
-import typings.ddTrace.ddTraceStrings.`limitd-client`
 import typings.ddTrace.ddTraceStrings.`microgateway-core`
 import typings.ddTrace.ddTraceStrings.`mongodb-core`
-import typings.ddTrace.ddTraceStrings.`promise-js`
 import typings.ddTrace.ddTraceStrings.amqp10
 import typings.ddTrace.ddTraceStrings.amqplib
-import typings.ddTrace.ddTraceStrings.bluebird
 import typings.ddTrace.ddTraceStrings.bunyan
 import typings.ddTrace.ddTraceStrings.connect
 import typings.ddTrace.ddTraceStrings.couchbase
+import typings.ddTrace.ddTraceStrings.cucumber
+import typings.ddTrace.ddTraceStrings.cypress
 import typings.ddTrace.ddTraceStrings.dns
 import typings.ddTrace.ddTraceStrings.elasticsearch
 import typings.ddTrace.ddTraceStrings.express
 import typings.ddTrace.ddTraceStrings.fastify
-import typings.ddTrace.ddTraceStrings.fs
 import typings.ddTrace.ddTraceStrings.graphql
 import typings.ddTrace.ddTraceStrings.grpc
 import typings.ddTrace.ddTraceStrings.hapi
 import typings.ddTrace.ddTraceStrings.http
 import typings.ddTrace.ddTraceStrings.http2
 import typings.ddTrace.ddTraceStrings.ioredis
+import typings.ddTrace.ddTraceStrings.jest
+import typings.ddTrace.ddTraceStrings.kafkajs
 import typings.ddTrace.ddTraceStrings.knex
 import typings.ddTrace.ddTraceStrings.koa
 import typings.ddTrace.ddTraceStrings.memcached
+import typings.ddTrace.ddTraceStrings.mocha
+import typings.ddTrace.ddTraceStrings.moleculer
 import typings.ddTrace.ddTraceStrings.mongoose
 import typings.ddTrace.ddTraceStrings.mysql
 import typings.ddTrace.ddTraceStrings.mysql2
 import typings.ddTrace.ddTraceStrings.net
+import typings.ddTrace.ddTraceStrings.next
+import typings.ddTrace.ddTraceStrings.oracledb
 import typings.ddTrace.ddTraceStrings.paperplane
 import typings.ddTrace.ddTraceStrings.pg
 import typings.ddTrace.ddTraceStrings.pino
-import typings.ddTrace.ddTraceStrings.promise
-import typings.ddTrace.ddTraceStrings.q
 import typings.ddTrace.ddTraceStrings.redis
 import typings.ddTrace.ddTraceStrings.restify
 import typings.ddTrace.ddTraceStrings.rhea
 import typings.ddTrace.ddTraceStrings.router
+import typings.ddTrace.ddTraceStrings.sharedb
 import typings.ddTrace.ddTraceStrings.tedious
-import typings.ddTrace.ddTraceStrings.when
 import typings.ddTrace.ddTraceStrings.winston
 import typings.ddTrace.mod.plugins.awsSdk
 import typings.ddTrace.mod.plugins.cassandraDriver
 import typings.ddTrace.mod.plugins.genericPool
 import typings.ddTrace.mod.plugins.googleCloudPubsub
-import typings.ddTrace.mod.plugins.limitdClient
 import typings.ddTrace.mod.plugins.microgatewayCore
 import typings.ddTrace.mod.plugins.mongodbCore
-import typings.ddTrace.mod.plugins.promiseJs
 import typings.opentracing.mod.Tracer
 import typings.opentracing.tracerMod.SpanOptions
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -85,8 +84,8 @@ trait Tracer_ extends Tracer {
     * @param  {string} format The format of the carrier.
     * @param  {any} carrier The carrier object.
     */
-  def inject(spanContext: SpanContext, format: String, carrier: js.Any): Unit = js.native
-  def inject(spanContext: Span, format: String, carrier: js.Any): Unit = js.native
+  def inject(spanContext: SpanContext, format: String, carrier: Any): Unit = js.native
+  def inject(spanContext: Span, format: String, carrier: Any): Unit = js.native
   
   /**
     * Returns a reference to the current scope.
@@ -99,6 +98,13 @@ trait Tracer_ extends Tracer {
     * initialization.
     */
   def setUrl(url: String): this.type = js.native
+  
+  /**
+    * Links an authenticated user to the current trace.
+    * @param {User} user Properties of the authenticated user. Accepts custom fields.
+    * @returns {Tracer} The Tracer instance for chaining.
+    */
+  def setUser(user: User): Tracer_ = js.native
   
   /**
     * Instruments a function by automatically creating a span activated on its
@@ -121,7 +127,7 @@ trait Tracer_ extends Tracer {
     name: String,
     fn: js.Function2[
       /* span */ js.UndefOr[Span], 
-      /* fn */ js.UndefOr[js.Function1[/* error */ js.UndefOr[Error], js.Any]], 
+      /* fn */ js.UndefOr[js.Function1[/* error */ js.UndefOr[js.Error], Any]], 
       T
     ]
   ): T = js.native
@@ -130,7 +136,7 @@ trait Tracer_ extends Tracer {
     options: TraceOptions & SpanOptions,
     fn: js.Function2[
       /* span */ js.UndefOr[Span], 
-      /* done */ js.UndefOr[js.Function1[/* error */ js.UndefOr[Error], String]], 
+      /* done */ js.UndefOr[js.Function1[/* error */ js.UndefOr[js.Error], String]], 
       T
     ]
   ): T = js.native
@@ -159,12 +165,6 @@ trait Tracer_ extends Tracer {
   @JSName("use")
   def use_awssdk(plugin: `aws-sdk`, config: awsSdk): this.type = js.native
   @JSName("use")
-  def use_bluebird(plugin: bluebird): this.type = js.native
-  @JSName("use")
-  def use_bluebird(plugin: bluebird, config: Boolean): this.type = js.native
-  @JSName("use")
-  def use_bluebird(plugin: bluebird, config: typings.ddTrace.mod.plugins.bluebird): this.type = js.native
-  @JSName("use")
   def use_bunyan(plugin: bunyan): this.type = js.native
   @JSName("use")
   def use_bunyan(plugin: bunyan, config: Boolean): this.type = js.native
@@ -189,6 +189,18 @@ trait Tracer_ extends Tracer {
   @JSName("use")
   def use_couchbase(plugin: couchbase, config: typings.ddTrace.mod.plugins.couchbase): this.type = js.native
   @JSName("use")
+  def use_cucumber(plugin: cucumber): this.type = js.native
+  @JSName("use")
+  def use_cucumber(plugin: cucumber, config: Boolean): this.type = js.native
+  @JSName("use")
+  def use_cucumber(plugin: cucumber, config: typings.ddTrace.mod.plugins.cucumber): this.type = js.native
+  @JSName("use")
+  def use_cypress(plugin: cypress): this.type = js.native
+  @JSName("use")
+  def use_cypress(plugin: cypress, config: Boolean): this.type = js.native
+  @JSName("use")
+  def use_cypress(plugin: cypress, config: typings.ddTrace.mod.plugins.cypress): this.type = js.native
+  @JSName("use")
   def use_dns(plugin: dns): this.type = js.native
   @JSName("use")
   def use_dns(plugin: dns, config: Boolean): this.type = js.native
@@ -212,12 +224,6 @@ trait Tracer_ extends Tracer {
   def use_fastify(plugin: fastify, config: Boolean): this.type = js.native
   @JSName("use")
   def use_fastify(plugin: fastify, config: typings.ddTrace.mod.plugins.fastify): this.type = js.native
-  @JSName("use")
-  def use_fs(plugin: fs): this.type = js.native
-  @JSName("use")
-  def use_fs(plugin: fs, config: Boolean): this.type = js.native
-  @JSName("use")
-  def use_fs(plugin: fs, config: typings.ddTrace.mod.plugins.fs): this.type = js.native
   @JSName("use")
   def use_genericpool(plugin: `generic-pool`): this.type = js.native
   @JSName("use")
@@ -267,6 +273,18 @@ trait Tracer_ extends Tracer {
   @JSName("use")
   def use_ioredis(plugin: ioredis, config: typings.ddTrace.mod.plugins.ioredis): this.type = js.native
   @JSName("use")
+  def use_jest(plugin: jest): this.type = js.native
+  @JSName("use")
+  def use_jest(plugin: jest, config: Boolean): this.type = js.native
+  @JSName("use")
+  def use_jest(plugin: jest, config: typings.ddTrace.mod.plugins.jest): this.type = js.native
+  @JSName("use")
+  def use_kafkajs(plugin: kafkajs): this.type = js.native
+  @JSName("use")
+  def use_kafkajs(plugin: kafkajs, config: Boolean): this.type = js.native
+  @JSName("use")
+  def use_kafkajs(plugin: kafkajs, config: typings.ddTrace.mod.plugins.kafkajs): this.type = js.native
+  @JSName("use")
   def use_knex(plugin: knex): this.type = js.native
   @JSName("use")
   def use_knex(plugin: knex, config: Boolean): this.type = js.native
@@ -279,12 +297,6 @@ trait Tracer_ extends Tracer {
   @JSName("use")
   def use_koa(plugin: koa, config: typings.ddTrace.mod.plugins.koa): this.type = js.native
   @JSName("use")
-  def use_limitdclient(plugin: `limitd-client`): this.type = js.native
-  @JSName("use")
-  def use_limitdclient(plugin: `limitd-client`, config: Boolean): this.type = js.native
-  @JSName("use")
-  def use_limitdclient(plugin: `limitd-client`, config: limitdClient): this.type = js.native
-  @JSName("use")
   def use_memcached(plugin: memcached): this.type = js.native
   @JSName("use")
   def use_memcached(plugin: memcached, config: Boolean): this.type = js.native
@@ -296,6 +308,18 @@ trait Tracer_ extends Tracer {
   def use_microgatewaycore(plugin: `microgateway-core`, config: Boolean): this.type = js.native
   @JSName("use")
   def use_microgatewaycore(plugin: `microgateway-core`, config: microgatewayCore): this.type = js.native
+  @JSName("use")
+  def use_mocha(plugin: mocha): this.type = js.native
+  @JSName("use")
+  def use_mocha(plugin: mocha, config: Boolean): this.type = js.native
+  @JSName("use")
+  def use_mocha(plugin: mocha, config: typings.ddTrace.mod.plugins.mocha): this.type = js.native
+  @JSName("use")
+  def use_moleculer(plugin: moleculer): this.type = js.native
+  @JSName("use")
+  def use_moleculer(plugin: moleculer, config: Boolean): this.type = js.native
+  @JSName("use")
+  def use_moleculer(plugin: moleculer, config: typings.ddTrace.mod.plugins.moleculer): this.type = js.native
   @JSName("use")
   def use_mongodbcore(plugin: `mongodb-core`): this.type = js.native
   @JSName("use")
@@ -327,6 +351,18 @@ trait Tracer_ extends Tracer {
   @JSName("use")
   def use_net(plugin: net, config: typings.ddTrace.mod.plugins.net): this.type = js.native
   @JSName("use")
+  def use_next(plugin: next): this.type = js.native
+  @JSName("use")
+  def use_next(plugin: next, config: Boolean): this.type = js.native
+  @JSName("use")
+  def use_next(plugin: next, config: typings.ddTrace.mod.plugins.next): this.type = js.native
+  @JSName("use")
+  def use_oracledb(plugin: oracledb): this.type = js.native
+  @JSName("use")
+  def use_oracledb(plugin: oracledb, config: Boolean): this.type = js.native
+  @JSName("use")
+  def use_oracledb(plugin: oracledb, config: typings.ddTrace.mod.plugins.oracledb): this.type = js.native
+  @JSName("use")
   def use_paperplane(plugin: paperplane): this.type = js.native
   @JSName("use")
   def use_paperplane(plugin: paperplane, config: Boolean): this.type = js.native
@@ -344,24 +380,6 @@ trait Tracer_ extends Tracer {
   def use_pino(plugin: pino, config: Boolean): this.type = js.native
   @JSName("use")
   def use_pino(plugin: pino, config: typings.ddTrace.mod.plugins.pino): this.type = js.native
-  @JSName("use")
-  def use_promise(plugin: promise): this.type = js.native
-  @JSName("use")
-  def use_promise(plugin: promise, config: Boolean): this.type = js.native
-  @JSName("use")
-  def use_promise(plugin: promise, config: typings.ddTrace.mod.plugins.promise): this.type = js.native
-  @JSName("use")
-  def use_promisejs(plugin: `promise-js`): this.type = js.native
-  @JSName("use")
-  def use_promisejs(plugin: `promise-js`, config: Boolean): this.type = js.native
-  @JSName("use")
-  def use_promisejs(plugin: `promise-js`, config: promiseJs): this.type = js.native
-  @JSName("use")
-  def use_q(plugin: q): this.type = js.native
-  @JSName("use")
-  def use_q(plugin: q, config: Boolean): this.type = js.native
-  @JSName("use")
-  def use_q(plugin: q, config: typings.ddTrace.mod.plugins.q): this.type = js.native
   @JSName("use")
   def use_redis(plugin: redis): this.type = js.native
   @JSName("use")
@@ -387,17 +405,17 @@ trait Tracer_ extends Tracer {
   @JSName("use")
   def use_router(plugin: router, config: typings.ddTrace.mod.plugins.router): this.type = js.native
   @JSName("use")
+  def use_sharedb(plugin: sharedb): this.type = js.native
+  @JSName("use")
+  def use_sharedb(plugin: sharedb, config: Boolean): this.type = js.native
+  @JSName("use")
+  def use_sharedb(plugin: sharedb, config: typings.ddTrace.mod.plugins.sharedb): this.type = js.native
+  @JSName("use")
   def use_tedious(plugin: tedious): this.type = js.native
   @JSName("use")
   def use_tedious(plugin: tedious, config: Boolean): this.type = js.native
   @JSName("use")
   def use_tedious(plugin: tedious, config: typings.ddTrace.mod.plugins.tedious): this.type = js.native
-  @JSName("use")
-  def use_when(plugin: when): this.type = js.native
-  @JSName("use")
-  def use_when(plugin: when, config: Boolean): this.type = js.native
-  @JSName("use")
-  def use_when(plugin: when, config: typings.ddTrace.mod.plugins.when): this.type = js.native
   @JSName("use")
   def use_winston(plugin: winston): this.type = js.native
   @JSName("use")
@@ -422,5 +440,5 @@ trait Tracer_ extends Tracer {
   def wrap[T](name: String, fn: T): T = js.native
   def wrap[T](name: String, fn: T, requiresParent: Boolean): T = js.native
   def wrap[T](name: String, options: TraceOptions & SpanOptions, fn: T): T = js.native
-  def wrap[T](name: String, options: js.Function1[/* repeated */ js.Any, TraceOptions & SpanOptions], fn: T): T = js.native
+  def wrap[T](name: String, options: js.Function1[/* repeated */ Any, TraceOptions & SpanOptions], fn: T): T = js.native
 }

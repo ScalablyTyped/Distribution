@@ -11,7 +11,7 @@ object global {
     /*~ Write your module's methods and properties in this class */
     @JSGlobal("tabulatorLib")
     @js.native
-    class ^ ()
+    open class ^ ()
       extends typings.tabulator.mod.^
   }
 }

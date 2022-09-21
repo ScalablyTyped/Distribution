@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.WebXROculusTouchMotionController")
 @js.native
-class WebXROculusTouchMotionController protected ()
+open class WebXROculusTouchMotionController protected ()
   extends StObject
      with typings.babylonjs.BABYLON.WebXROculusTouchMotionController {
   def this(
@@ -20,20 +20,20 @@ class WebXROculusTouchMotionController protected ()
     scene: typings.babylonjs.BABYLON.Scene,
     gamepadObject: IMinimalMotionControllerObject,
     handedness: MotionControllerHandedness,
-    legacyMapping: Boolean
+    _legacyMapping: Boolean
   ) = this()
   def this(
     scene: typings.babylonjs.BABYLON.Scene,
     gamepadObject: IMinimalMotionControllerObject,
     handedness: MotionControllerHandedness,
-    legacyMapping: Boolean,
+    _legacyMapping: Boolean,
     _forceLegacyControllers: Boolean
   ) = this()
   def this(
     scene: typings.babylonjs.BABYLON.Scene,
     gamepadObject: IMinimalMotionControllerObject,
     handedness: MotionControllerHandedness,
-    legacyMapping: Unit,
+    _legacyMapping: Unit,
     _forceLegacyControllers: Boolean
   ) = this()
   

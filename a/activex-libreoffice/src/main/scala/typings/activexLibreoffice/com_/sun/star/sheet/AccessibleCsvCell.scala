@@ -89,7 +89,7 @@ object AccessibleCsvCell {
     getTextBehindIndex: (Double, Double) => TextSegment,
     getTextRange: (Double, Double) => String,
     grabFocus: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setCaretPosition: Double => Boolean,
     setSelection: (Double, Double) => Boolean

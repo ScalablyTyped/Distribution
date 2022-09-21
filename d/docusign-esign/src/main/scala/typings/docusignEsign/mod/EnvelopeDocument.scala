@@ -190,7 +190,7 @@ object EnvelopeDocument {
     
     inline def setAddedRecipientIdsUndefined: Self = StObject.set(x, "addedRecipientIds", js.undefined)
     
-    inline def setAddedRecipientIdsVarargs(value: String*): Self = StObject.set(x, "addedRecipientIds", js.Array(value :_*))
+    inline def setAddedRecipientIdsVarargs(value: String*): Self = StObject.set(x, "addedRecipientIds", js.Array(value*))
     
     inline def setAttachmentTabId(value: String): Self = StObject.set(x, "attachmentTabId", value.asInstanceOf[js.Any])
     
@@ -212,7 +212,7 @@ object EnvelopeDocument {
     
     inline def setAvailableDocumentTypesUndefined: Self = StObject.set(x, "availableDocumentTypes", js.undefined)
     
-    inline def setAvailableDocumentTypesVarargs(value: (/* This object contains information about the type of signature. */ SignatureType)*): Self = StObject.set(x, "availableDocumentTypes", js.Array(value :_*))
+    inline def setAvailableDocumentTypesVarargs(value: (/* This object contains information about the type of signature. */ SignatureType)*): Self = StObject.set(x, "availableDocumentTypes", js.Array(value*))
     
     inline def setContainsPdfFormFields(value: String): Self = StObject.set(x, "containsPdfFormFields", value.asInstanceOf[js.Any])
     
@@ -236,7 +236,7 @@ object EnvelopeDocument {
     
     inline def setDocumentFieldsVarargs(
       value: (/* A name-value pair that describes an item and provides a value for the item. */ NameValue)*
-    ): Self = StObject.set(x, "documentFields", js.Array(value :_*))
+    ): Self = StObject.set(x, "documentFields", js.Array(value*))
     
     inline def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
     
@@ -276,7 +276,7 @@ object EnvelopeDocument {
     
     inline def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
     
-    inline def setPagesVarargs(value: (/* Description of a page of a document. */ Page)*): Self = StObject.set(x, "pages", js.Array(value :_*))
+    inline def setPagesVarargs(value: (/* Description of a page of a document. */ Page)*): Self = StObject.set(x, "pages", js.Array(value*))
     
     inline def setSignerMustAcknowledge(value: String): Self = StObject.set(x, "signerMustAcknowledge", value.asInstanceOf[js.Any])
     

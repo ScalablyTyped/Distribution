@@ -10,10 +10,10 @@ object gifMod {
   
   @JSImport("material-ui/svg-icons/action/gif", JSImport.Default)
   @js.native
-  class default () extends ActionGif
+  open class default () extends ActionGif
   
   @JSImport("material-ui/svg-icons/action/gif", "ActionGif")
   @js.native
-  class ActionGif ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionGif ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -26,7 +26,7 @@ object ListInputSecurityGroupsResponse {
     
     inline def setInputSecurityGroupsUndefined: Self = StObject.set(x, "InputSecurityGroups", js.undefined)
     
-    inline def setInputSecurityGroupsVarargs(value: InputSecurityGroup*): Self = StObject.set(x, "InputSecurityGroups", js.Array(value :_*))
+    inline def setInputSecurityGroupsVarargs(value: InputSecurityGroup*): Self = StObject.set(x, "InputSecurityGroups", js.Array(value*))
     
     inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

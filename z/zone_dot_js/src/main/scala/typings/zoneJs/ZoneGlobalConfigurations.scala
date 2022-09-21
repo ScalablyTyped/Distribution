@@ -424,6 +424,34 @@ trait ZoneGlobalConfigurations extends StObject {
   var __Zone_disable_on_property: js.UndefOr[Boolean] = js.undefined
   
   /**
+    *
+    * Disable the monkey patching of the browser's `queueMicrotask()` API.
+    *
+    * By default, `zone.js` monkey patches the browser's `queueMicrotask()` API
+    * to ensure that `queueMicrotask()` callback is invoked in the same zone as zone used to invoke
+    * `queueMicrotask()`. And also the callback is running as `microTask` like
+    * `Promise.prototype.then()`.
+    *
+    * Consider the following example:
+    *
+    * ```
+    * const zone = Zone.current.fork({name: 'myZone'});
+    * zone.run(() => {
+    *   queueMicrotask(() => {
+    *     console.log('queueMicrotask() callback is invoked in the zone', Zone.current.name);
+    *     // Since `queueMicrotask()` was invoked in `myZone`, same zone is restored
+    *     // when 'queueMicrotask() callback is invoked, resulting in `myZone` being console logged.
+    *   });
+    * });
+    * ```
+    *
+    * If you set `__Zone_disable_queueMicrotask = true` before importing `zone.js`,
+    * `zone.js` does not monkey patch the `queueMicrotask()` API and the above code
+    * output will change to: 'queueMicrotask() callback is invoked in the zone <root>'.
+    */
+  var __Zone_disable_queueMicrotask: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Disable the monkey patch of the browser `registerElement()` API.
     *
     * NOTE: This configuration is only available in the legacy bundle (dist/zone.js), this
@@ -643,6 +671,10 @@ object ZoneGlobalConfigurations {
     
     inline def set__Zone_disable_on_propertyUndefined: Self = StObject.set(x, "__Zone_disable_on_property", js.undefined)
     
+    inline def set__Zone_disable_queueMicrotask(value: Boolean): Self = StObject.set(x, "__Zone_disable_queueMicrotask", value.asInstanceOf[js.Any])
+    
+    inline def set__Zone_disable_queueMicrotaskUndefined: Self = StObject.set(x, "__Zone_disable_queueMicrotask", js.undefined)
+    
     inline def set__Zone_disable_registerElement(value: Boolean): Self = StObject.set(x, "__Zone_disable_registerElement", value.asInstanceOf[js.Any])
     
     inline def set__Zone_disable_registerElementUndefined: Self = StObject.set(x, "__Zone_disable_registerElement", js.undefined)
@@ -663,12 +695,12 @@ object ZoneGlobalConfigurations {
     
     inline def set__zone_symbol__PASSIVE_EVENTSUndefined: Self = StObject.set(x, "__zone_symbol__PASSIVE_EVENTS", js.undefined)
     
-    inline def set__zone_symbol__PASSIVE_EVENTSVarargs(value: String*): Self = StObject.set(x, "__zone_symbol__PASSIVE_EVENTS", js.Array(value :_*))
+    inline def set__zone_symbol__PASSIVE_EVENTSVarargs(value: String*): Self = StObject.set(x, "__zone_symbol__PASSIVE_EVENTS", js.Array(value*))
     
     inline def set__zone_symbol__UNPATCHED_EVENTS(value: js.Array[String]): Self = StObject.set(x, "__zone_symbol__UNPATCHED_EVENTS", value.asInstanceOf[js.Any])
     
     inline def set__zone_symbol__UNPATCHED_EVENTSUndefined: Self = StObject.set(x, "__zone_symbol__UNPATCHED_EVENTS", js.undefined)
     
-    inline def set__zone_symbol__UNPATCHED_EVENTSVarargs(value: String*): Self = StObject.set(x, "__zone_symbol__UNPATCHED_EVENTS", js.Array(value :_*))
+    inline def set__zone_symbol__UNPATCHED_EVENTSVarargs(value: String*): Self = StObject.set(x, "__zone_symbol__UNPATCHED_EVENTS", js.Array(value*))
   }
 }

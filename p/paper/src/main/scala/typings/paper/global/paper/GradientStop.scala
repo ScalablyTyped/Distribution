@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ramp as a value between `0` and `1`; `null` or `undefined` for automatic
   * assignment.
   */
-class GradientStop ()
+open class GradientStop ()
   extends StObject
      with typings.paper.paper.GradientStop {
   def this(color: typings.paper.paper.Color) = this()

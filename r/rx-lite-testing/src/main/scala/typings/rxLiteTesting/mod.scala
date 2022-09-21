@@ -20,13 +20,13 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("rx-lite-testing", "MockObserver")
   @js.native
-  class MockObserverCls[T] protected ()
+  open class MockObserverCls[T] protected ()
     extends StObject
        with typings.rxLiteTesting.Rx.MockObserver[T] {
     def this(scheduler: IScheduler) = this()
     
     /* CompleteClass */
-    override def checked(): Observer[js.Any] = js.native
+    override def checked(): Observer[Any] = js.native
     
     /* CompleteClass */
     var messages: js.Array[typings.rxLiteTesting.Rx.Recorded] = js.native
@@ -50,9 +50,9 @@ object mod {
     
     inline def onCompleted(ticks: Double): typings.rxLiteTesting.Rx.Recorded = ^.asInstanceOf[js.Dynamic].applyDynamic("onCompleted")(ticks.asInstanceOf[js.Any]).asInstanceOf[typings.rxLiteTesting.Rx.Recorded]
     
-    inline def onError(ticks: Double, exception: js.Any): typings.rxLiteTesting.Rx.Recorded = (^.asInstanceOf[js.Dynamic].applyDynamic("onError")(ticks.asInstanceOf[js.Any], exception.asInstanceOf[js.Any])).asInstanceOf[typings.rxLiteTesting.Rx.Recorded]
+    inline def onError(ticks: Double, exception: Any): typings.rxLiteTesting.Rx.Recorded = (^.asInstanceOf[js.Dynamic].applyDynamic("onError")(ticks.asInstanceOf[js.Any], exception.asInstanceOf[js.Any])).asInstanceOf[typings.rxLiteTesting.Rx.Recorded]
     
-    inline def onNext(ticks: Double, value: js.Any): typings.rxLiteTesting.Rx.Recorded = (^.asInstanceOf[js.Dynamic].applyDynamic("onNext")(ticks.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.rxLiteTesting.Rx.Recorded]
+    inline def onNext(ticks: Double, value: Any): typings.rxLiteTesting.Rx.Recorded = (^.asInstanceOf[js.Dynamic].applyDynamic("onNext")(ticks.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.rxLiteTesting.Rx.Recorded]
     
     inline def subscribe(subscribeAt: Double): typings.rxLiteTesting.Rx.Subscription = ^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(subscribeAt.asInstanceOf[js.Any]).asInstanceOf[typings.rxLiteTesting.Rx.Subscription]
     inline def subscribe(subscribeAt: Double, unsubscribeAt: Double): typings.rxLiteTesting.Rx.Subscription = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(subscribeAt.asInstanceOf[js.Any], unsubscribeAt.asInstanceOf[js.Any])).asInstanceOf[typings.rxLiteTesting.Rx.Subscription]
@@ -65,15 +65,11 @@ object mod {
   
   @JSImport("rx-lite-testing", "Recorded")
   @js.native
-  class Recorded protected ()
+  open class Recorded protected ()
     extends StObject
        with typings.rxLiteTesting.Rx.Recorded {
-    def this(time: Double, value: js.Any) = this()
-    def this(
-      time: Double,
-      value: js.Any,
-      equalityComparer: js.Function2[/* x */ js.Any, /* y */ js.Any, Boolean]
-    ) = this()
+    def this(time: Double, value: Any) = this()
+    def this(time: Double, value: Any, equalityComparer: js.Function2[/* x */ Any, /* y */ Any, Boolean]) = this()
     
     /* CompleteClass */
     override def equals(other: typings.rxLiteTesting.Rx.Recorded): Boolean = js.native
@@ -82,12 +78,12 @@ object mod {
     var time: Double = js.native
     
     /* CompleteClass */
-    var value: js.Any = js.native
+    var value: Any = js.native
   }
   
   @JSImport("rx-lite-testing", "Subscription")
   @js.native
-  class Subscription protected ()
+  open class Subscription protected ()
     extends StObject
        with typings.rxLiteTesting.Rx.Subscription {
     def this(subscribeAt: Double) = this()
@@ -100,7 +96,7 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("rx-lite-testing", "TestScheduler")
   @js.native
-  class TestSchedulerCls ()
+  open class TestSchedulerCls ()
     extends StObject
        with TestScheduler {
     
@@ -130,7 +126,7 @@ object mod {
     var isEnabled: Boolean = js.native
     
     /* CompleteClass */
-    override def isScheduler(value: js.Any): Boolean = js.native
+    override def isScheduler(value: Any): Boolean = js.native
     
     /* CompleteClass */
     override def now(): Double = js.native

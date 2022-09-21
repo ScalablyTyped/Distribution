@@ -7,39 +7,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ReportGroup extends StObject {
   
   /**
-    *  The ARN of a ReportGroup. 
+    * The ARN of the ReportGroup. 
     */
   var arn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    *  The date and time this ReportGroup was created. 
+    * The date and time this ReportGroup was created. 
     */
-  var created: js.UndefOr[Timestamp] = js.undefined
+  var created: js.UndefOr[js.Date] = js.undefined
   
   /**
-    *  Information about the destination where the raw data of this ReportGroup is exported. 
+    * Information about the destination where the raw data of this ReportGroup is exported. 
     */
   var exportConfig: js.UndefOr[ReportExportConfig] = js.undefined
   
   /**
-    *  The date and time this ReportGroup was last modified. 
+    * The date and time this ReportGroup was last modified. 
     */
-  var lastModified: js.UndefOr[Timestamp] = js.undefined
+  var lastModified: js.UndefOr[js.Date] = js.undefined
   
   /**
-    *  The name of a ReportGroup. 
+    * The name of the ReportGroup. 
     */
   var name: js.UndefOr[ReportGroupName] = js.undefined
   
+  /**
+    * The status of the report group. This property is read-only. This can be one of the following values:  ACTIVE  The report group is active.  DELETING  The report group is in the process of being deleted.  
+    */
   var status: js.UndefOr[ReportGroupStatusType] = js.undefined
   
   /**
-    *  A list of tag key and value pairs associated with this report group.  These tags are available for use by AWS services that support AWS CodeBuild report group tags.
+    * A list of tag key and value pairs associated with this report group.  These tags are available for use by Amazon Web Services services that support CodeBuild report group tags.
     */
   var tags: js.UndefOr[TagList] = js.undefined
   
   /**
-    *  The type of the ReportGroup. The one valid value is TEST. 
+    * The type of the ReportGroup. This can be one of the following values:  CODE_COVERAGE  The report group contains code coverage reports.  TEST  The report group contains test reports.  
     */
   var `type`: js.UndefOr[ReportType] = js.undefined
 }
@@ -56,7 +59,7 @@ object ReportGroup {
     
     inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    inline def setCreated(value: Timestamp): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: js.Date): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
@@ -64,7 +67,7 @@ object ReportGroup {
     
     inline def setExportConfigUndefined: Self = StObject.set(x, "exportConfig", js.undefined)
     
-    inline def setLastModified(value: Timestamp): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
+    inline def setLastModified(value: js.Date): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedUndefined: Self = StObject.set(x, "lastModified", js.undefined)
     
@@ -80,7 +83,7 @@ object ReportGroup {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setType(value: ReportType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

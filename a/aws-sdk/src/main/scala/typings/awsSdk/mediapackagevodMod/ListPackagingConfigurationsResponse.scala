@@ -33,6 +33,6 @@ object ListPackagingConfigurationsResponse {
     
     inline def setPackagingConfigurationsUndefined: Self = StObject.set(x, "PackagingConfigurations", js.undefined)
     
-    inline def setPackagingConfigurationsVarargs(value: PackagingConfiguration*): Self = StObject.set(x, "PackagingConfigurations", js.Array(value :_*))
+    inline def setPackagingConfigurationsVarargs(value: PackagingConfiguration*): Self = StObject.set(x, "PackagingConfigurations", js.Array(value*))
   }
 }

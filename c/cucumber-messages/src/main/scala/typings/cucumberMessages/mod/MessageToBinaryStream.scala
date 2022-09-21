@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("cucumber-messages", "MessageToBinaryStream")
 @js.native
-class MessageToBinaryStream[T] () extends default[T]
+open class MessageToBinaryStream[T] () extends default[T]

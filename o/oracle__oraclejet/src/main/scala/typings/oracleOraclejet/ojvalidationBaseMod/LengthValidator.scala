@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@oracle/oraclejet/ojvalidation-base", "LengthValidator")
 @js.native
-class LengthValidator ()
+open class LengthValidator ()
   extends StObject
      with Validator[Double | String] {
   def this(options: ValidatorOptions) = this()

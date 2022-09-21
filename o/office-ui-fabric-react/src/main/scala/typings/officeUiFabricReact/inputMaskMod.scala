@@ -1,7 +1,6 @@
 package typings.officeUiFabricReact
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,8 +30,8 @@ object inputMaskMod {
   
   inline def parseMask(): js.Array[IMaskValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseMask")().asInstanceOf[js.Array[IMaskValue]]
   inline def parseMask(mask: String): js.Array[IMaskValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseMask")(mask.asInstanceOf[js.Any]).asInstanceOf[js.Array[IMaskValue]]
-  inline def parseMask(mask: String, formatChars: StringDictionary[RegExp]): js.Array[IMaskValue] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseMask")(mask.asInstanceOf[js.Any], formatChars.asInstanceOf[js.Any])).asInstanceOf[js.Array[IMaskValue]]
-  inline def parseMask(mask: Unit, formatChars: StringDictionary[RegExp]): js.Array[IMaskValue] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseMask")(mask.asInstanceOf[js.Any], formatChars.asInstanceOf[js.Any])).asInstanceOf[js.Array[IMaskValue]]
+  inline def parseMask(mask: String, formatChars: StringDictionary[js.RegExp]): js.Array[IMaskValue] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseMask")(mask.asInstanceOf[js.Any], formatChars.asInstanceOf[js.Any])).asInstanceOf[js.Array[IMaskValue]]
+  inline def parseMask(mask: Unit, formatChars: StringDictionary[js.RegExp]): js.Array[IMaskValue] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseMask")(mask.asInstanceOf[js.Any], formatChars.asInstanceOf[js.Any])).asInstanceOf[js.Array[IMaskValue]]
   
   trait IMaskValue extends StObject {
     
@@ -42,13 +41,13 @@ object inputMaskMod {
       */
     var displayIndex: Double
     
-    var format: RegExp
+    var format: js.RegExp
     
     var value: js.UndefOr[String] = js.undefined
   }
   object IMaskValue {
     
-    inline def apply(displayIndex: Double, format: RegExp): IMaskValue = {
+    inline def apply(displayIndex: Double, format: js.RegExp): IMaskValue = {
       val __obj = js.Dynamic.literal(displayIndex = displayIndex.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any])
       __obj.asInstanceOf[IMaskValue]
     }
@@ -57,7 +56,7 @@ object inputMaskMod {
       
       inline def setDisplayIndex(value: Double): Self = StObject.set(x, "displayIndex", value.asInstanceOf[js.Any])
       
-      inline def setFormat(value: RegExp): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: js.RegExp): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       

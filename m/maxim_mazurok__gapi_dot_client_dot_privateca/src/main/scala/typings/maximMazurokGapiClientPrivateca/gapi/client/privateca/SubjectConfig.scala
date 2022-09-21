@@ -6,10 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SubjectConfig extends StObject {
   
-  /** Optional. The "common name" of the distinguished name. */
-  var commonName: js.UndefOr[String] = js.undefined
-  
-  /** Required. Contains distinguished name fields such as the location and organization. */
+  /** Required. Contains distinguished name fields such as the common name, location and organization. */
   var subject: js.UndefOr[Subject] = js.undefined
   
   /** Optional. The subject alternative name fields. */
@@ -23,10 +20,6 @@ object SubjectConfig {
   }
   
   extension [Self <: SubjectConfig](x: Self) {
-    
-    inline def setCommonName(value: String): Self = StObject.set(x, "commonName", value.asInstanceOf[js.Any])
-    
-    inline def setCommonNameUndefined: Self = StObject.set(x, "commonName", js.undefined)
     
     inline def setSubject(value: Subject): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     

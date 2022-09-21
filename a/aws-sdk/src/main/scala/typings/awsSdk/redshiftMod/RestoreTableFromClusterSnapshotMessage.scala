@@ -12,6 +12,11 @@ trait RestoreTableFromClusterSnapshotMessage extends StObject {
   var ClusterIdentifier: String
   
   /**
+    * Indicates whether name identifiers for database, schema, and table are case sensitive. If true, the names are case sensitive. If false (default), the names are not case sensitive.
+    */
+  var EnableCaseSensitiveIdentifier: js.UndefOr[BooleanOptional] = js.undefined
+  
+  /**
     * The name of the table to create as a result of the current request.
     */
   var NewTableName: String
@@ -62,6 +67,10 @@ object RestoreTableFromClusterSnapshotMessage {
   extension [Self <: RestoreTableFromClusterSnapshotMessage](x: Self) {
     
     inline def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
+    
+    inline def setEnableCaseSensitiveIdentifier(value: BooleanOptional): Self = StObject.set(x, "EnableCaseSensitiveIdentifier", value.asInstanceOf[js.Any])
+    
+    inline def setEnableCaseSensitiveIdentifierUndefined: Self = StObject.set(x, "EnableCaseSensitiveIdentifier", js.undefined)
     
     inline def setNewTableName(value: String): Self = StObject.set(x, "NewTableName", value.asInstanceOf[js.Any])
     

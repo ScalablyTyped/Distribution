@@ -9,11 +9,10 @@ object toastDemoBasicNativeMod {
   
   @JSImport("antd-mobile-rn/lib/toast/demo/basic.native", JSImport.Default)
   @js.native
-  class default () extends ToastExample
+  open class default () extends ToastExample
   
   @js.native
-  trait ToastExample
-    extends Component[js.Any, js.Any, js.Any] {
+  trait ToastExample extends Component[Any, Any, Any] {
     
     def alwaysShowToast(): Unit = js.native
     
@@ -23,6 +22,6 @@ object toastDemoBasicNativeMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MToastExample(): Unit = js.native
     
-    var timer: js.Any = js.native
+    var timer: Any = js.native
   }
 }

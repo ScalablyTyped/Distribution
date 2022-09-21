@@ -10,10 +10,10 @@ object partyModeMod {
   
   @JSImport("material-ui/svg-icons/social/party-mode", JSImport.Default)
   @js.native
-  class default () extends SocialPartyMode
+  open class default () extends SocialPartyMode
   
   @JSImport("material-ui/svg-icons/social/party-mode", "SocialPartyMode")
   @js.native
-  class SocialPartyMode ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class SocialPartyMode ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

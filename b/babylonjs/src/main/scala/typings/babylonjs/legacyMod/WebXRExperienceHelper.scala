@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 /**
   * Creates a WebXRExperienceHelper
-  * @param scene The scene the helper should be created in
+  * @param _scene The scene the helper should be created in
   */
-/* private */ class WebXRExperienceHelper ()
+/* private */ open class WebXRExperienceHelper ()
   extends typings.babylonjs.indexMod.WebXRExperienceHelper
 /* static members */
 object WebXRExperienceHelper {

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StartConfigRulesEvaluationRequest extends StObject {
   
   /**
-    * The list of names of AWS Config rules that you want to run evaluations for.
+    * The list of names of Config rules that you want to run evaluations for.
     */
   var ConfigRuleNames: js.UndefOr[ReevaluateConfigRuleNames] = js.undefined
 }
@@ -24,6 +24,6 @@ object StartConfigRulesEvaluationRequest {
     
     inline def setConfigRuleNamesUndefined: Self = StObject.set(x, "ConfigRuleNames", js.undefined)
     
-    inline def setConfigRuleNamesVarargs(value: ConfigRuleName*): Self = StObject.set(x, "ConfigRuleNames", js.Array(value :_*))
+    inline def setConfigRuleNamesVarargs(value: ConfigRuleName*): Self = StObject.set(x, "ConfigRuleNames", js.Array(value*))
   }
 }

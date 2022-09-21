@@ -36,14 +36,14 @@ object WorkItemRelationUpdates {
     
     inline def setAdded(value: js.Array[WorkItemRelation]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
     
-    inline def setAddedVarargs(value: WorkItemRelation*): Self = StObject.set(x, "added", js.Array(value :_*))
+    inline def setAddedVarargs(value: WorkItemRelation*): Self = StObject.set(x, "added", js.Array(value*))
     
     inline def setRemoved(value: js.Array[WorkItemRelation]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
     
-    inline def setRemovedVarargs(value: WorkItemRelation*): Self = StObject.set(x, "removed", js.Array(value :_*))
+    inline def setRemovedVarargs(value: WorkItemRelation*): Self = StObject.set(x, "removed", js.Array(value*))
     
     inline def setUpdated(value: js.Array[WorkItemRelation]): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
-    inline def setUpdatedVarargs(value: WorkItemRelation*): Self = StObject.set(x, "updated", js.Array(value :_*))
+    inline def setUpdatedVarargs(value: WorkItemRelation*): Self = StObject.set(x, "updated", js.Array(value*))
   }
 }

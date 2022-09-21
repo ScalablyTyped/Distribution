@@ -44,15 +44,15 @@ object PhaseCallbacks {
   
   extension [Self <: PhaseCallbacks](x: Self) {
     
-    inline def setPrepare(value: /* event */ js.UndefOr[PhaseEvent] => Unit): Self = StObject.set(x, "prepare", js.Any.fromFunction1(value))
+    inline def setPrepare(value: /* event */ js.UndefOr[PhaseEvent] => scala.Unit): Self = StObject.set(x, "prepare", js.Any.fromFunction1(value))
     
     inline def setPrepareUndefined: Self = StObject.set(x, "prepare", js.undefined)
     
-    inline def setRender(value: /* event */ js.UndefOr[PhaseEvent] => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+    inline def setRender(value: /* event */ js.UndefOr[PhaseEvent] => scala.Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
     
     inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     
-    inline def setUpdate(value: /* event */ js.UndefOr[PhaseEvent] => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+    inline def setUpdate(value: /* event */ js.UndefOr[PhaseEvent] => scala.Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     
     inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }

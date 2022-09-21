@@ -25,7 +25,7 @@ object GoogleFirestoreAdminV1ListIndexesResponse {
     
     inline def setIndexesUndefined: Self = StObject.set(x, "indexes", js.undefined)
     
-    inline def setIndexesVarargs(value: GoogleFirestoreAdminV1Index*): Self = StObject.set(x, "indexes", js.Array(value :_*))
+    inline def setIndexesVarargs(value: GoogleFirestoreAdminV1Index*): Self = StObject.set(x, "indexes", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,7 @@ object TfvcChange {
     
     inline def setMergeSources(value: js.Array[TfvcMergeSource]): Self = StObject.set(x, "mergeSources", value.asInstanceOf[js.Any])
     
-    inline def setMergeSourcesVarargs(value: TfvcMergeSource*): Self = StObject.set(x, "mergeSources", js.Array(value :_*))
+    inline def setMergeSourcesVarargs(value: TfvcMergeSource*): Self = StObject.set(x, "mergeSources", js.Array(value*))
     
     inline def setPendingVersion(value: Double): Self = StObject.set(x, "pendingVersion", value.asInstanceOf[js.Any])
   }

@@ -13,8 +13,8 @@ object resourceIssueBoardsMod {
   
   @JSImport("gitlab/dist/types/core/templates/ResourceIssueBoards", "ResourceIssueBoards")
   @js.native
-  class ResourceIssueBoards protected () extends BaseService {
-    def this(resourceType: String, options: js.Any) = this()
+  open class ResourceIssueBoards protected () extends BaseService {
+    def this(resourceType: String, options: Any) = this()
     
     def all(resourceId: String): js.Promise[GetResponse] = js.native
     def all(resourceId: String, options: PaginatedRequestOptions): js.Promise[GetResponse] = js.native

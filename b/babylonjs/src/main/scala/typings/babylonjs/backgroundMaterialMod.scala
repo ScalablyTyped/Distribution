@@ -19,12 +19,13 @@ object backgroundMaterialMod {
   
   @JSImport("babylonjs/Materials/Background/backgroundMaterial", "BackgroundMaterial")
   @js.native
-  class BackgroundMaterial protected () extends PushMaterial {
+  open class BackgroundMaterial protected () extends PushMaterial {
     /**
       * Instantiates a Background Material in the given scene
       * @param name The friendly name of the material
       * @param scene The scene to add the material to
       */
+    def this(name: String) = this()
     def this(name: String, scene: Scene) = this()
     
     /* protected */ var __perceptualColor: Nullable[Color3] = js.native
@@ -38,18 +39,18 @@ object backgroundMaterialMod {
     /**
       * Compute the primary color according to the chosen perceptual color.
       */
-    /* private */ var _computePrimaryColorFromPerceptualColor: js.Any = js.native
+    /* private */ var _computePrimaryColorFromPerceptualColor: Any = js.native
     
     /**
       * Compute the highlights and shadow colors according to their chosen levels.
       */
-    /* private */ var _computePrimaryColors: js.Any = js.native
+    /* private */ var _computePrimaryColors: Any = js.native
     
     /* protected */ var _diffuseTexture: Nullable[BaseTexture] = js.native
     
     /* protected */ var _enableNoise: Boolean = js.native
     
-    /* private */ var _fovMultiplier: js.Any = js.native
+    /* private */ var _fovMultiplier: Any = js.native
     
     /**
       * Default configuration related to image processing available in the Background Material.
@@ -59,9 +60,9 @@ object backgroundMaterialMod {
     /**
       * Keep track of the image processing observer to allow dispose and replace.
       */
-    /* private */ var _imageProcessingObserver: js.Any = js.native
+    /* private */ var _imageProcessingObserver: Any = js.native
     
-    /* private */ var _maxSimultaneousLights: js.Any = js.native
+    /* private */ var _maxSimultaneousLights: Any = js.native
     
     /* protected */ var _opacityFresnel: Boolean = js.native
     
@@ -84,15 +85,15 @@ object backgroundMaterialMod {
     
     /* protected */ var _primaryColorShadowLevel: float = js.native
     
-    /* private */ var _primaryHighlightColor: js.Any = js.native
+    /* private */ var _primaryHighlightColor: Any = js.native
     
-    /* private */ var _primaryShadowColor: js.Any = js.native
+    /* private */ var _primaryShadowColor: Any = js.native
     
     /* protected */ var _reflectionAmount: Double = js.native
     
     /* protected */ var _reflectionBlur: float = js.native
     
-    /* private */ var _reflectionControls: js.Any = js.native
+    /* private */ var _reflectionControls: Any = js.native
     
     /* protected */ var _reflectionFalloffDistance: Double = js.native
     
@@ -104,7 +105,7 @@ object backgroundMaterialMod {
     
     /* protected */ var _reflectionTexture: Nullable[BaseTexture] = js.native
     
-    /* private */ var _renderTargets: js.Any = js.native
+    /* private */ var _renderTargets: Any = js.native
     
     /* protected */ var _sceneCenter: Vector3 = js.native
     
@@ -112,19 +113,14 @@ object backgroundMaterialMod {
     
     /* protected */ var _shadowLights: Nullable[js.Array[IShadowLight]] = js.native
     
-    /* private */ var _shadowOnly: js.Any = js.native
+    /* private */ var _shadowOnly: Any = js.native
     
     /* protected */ var _useRGBColor: Boolean = js.native
     
-    /* private */ var _white: js.Any = js.native
+    /* private */ var _white: Any = js.native
     
     /**
-      * Build the uniform buffer used in the material.
-      */
-    def buildUniformLayout(): Unit = js.native
-    
-    /**
-      * The color grading curves provide additional color adjustmnent that is applied after any color grading transform (3D LUT).
+      * The color grading curves provide additional color adjustment that is applied after any color grading transform (3D LUT).
       * They allow basic adjustment of saturation and small exposure adjustments, along with color filter tinting to provide white balance adjustment or more stylistic effects.
       * These are similar to controls found in many professional imaging or colorist software. The global controls are applied to the entire image. For advanced tuning, extra controls are provided to adjust the shadow, midtone and highlight areas of the image;
       * corresponding to low luminance, medium luminance, and high luminance areas respectively.
@@ -132,16 +128,16 @@ object backgroundMaterialMod {
     def cameraColorCurves: Nullable[ColorCurves] = js.native
     
     /**
-      * Gets wether the color curves effect is enabled.
+      * Gets whether the color curves effect is enabled.
       */
     def cameraColorCurvesEnabled: Boolean = js.native
     /**
-      * Sets wether the color curves effect is enabled.
+      * Sets whether the color curves effect is enabled.
       */
     def cameraColorCurvesEnabled_=(value: Boolean): Unit = js.native
     
     /**
-      * The color grading curves provide additional color adjustmnent that is applied after any color grading transform (3D LUT).
+      * The color grading curves provide additional color adjustment that is applied after any color grading transform (3D LUT).
       * They allow basic adjustment of saturation and small exposure adjustments, along with color filter tinting to provide white balance adjustment or more stylistic effects.
       * These are similar to controls found in many professional imaging or colorist software. The global controls are applied to the entire image. For advanced tuning, extra controls are provided to adjust the shadow, midtone and highlight areas of the image;
       * corresponding to low luminance, medium luminance, and high luminance areas respectively.
@@ -149,11 +145,11 @@ object backgroundMaterialMod {
     def cameraColorCurves_=(value: Nullable[ColorCurves]): Unit = js.native
     
     /**
-      * Gets wether the color grading effect is enabled.
+      * Gets whether the color grading effect is enabled.
       */
     def cameraColorGradingEnabled: Boolean = js.native
     /**
-      * Gets wether the color grading effect is enabled.
+      * Gets whether the color grading effect is enabled.
       */
     def cameraColorGradingEnabled_=(value: Boolean): Unit = js.native
     
@@ -189,11 +185,11 @@ object backgroundMaterialMod {
     def cameraExposure_=(value: float): Unit = js.native
     
     /**
-      * Gets wether tonemapping is enabled or not.
+      * Gets whether tonemapping is enabled or not.
       */
     def cameraToneMappingEnabled: Boolean = js.native
     /**
-      * Sets wether tonemapping is enabled or not
+      * Sets whether tonemapping is enabled or not
       */
     def cameraToneMappingEnabled_=(value: Boolean): Unit = js.native
     
@@ -239,12 +235,12 @@ object backgroundMaterialMod {
     var opacityFresnel: Boolean = js.native
     
     /**
-      * Key light Color (multiply against the environement texture)
+      * Key light Color (multiply against the environment texture)
       */
     var primaryColor: Color3 = js.native
     
     /**
-      * Defines the level of the highliights (highlight area of the reflection map) in order to help scaling the colors.
+      * Defines the level of the highlights (highlight area of the reflection map) in order to help scaling the colors.
       * The primary color is used at the level chosen to define what the white area would look.
       */
     def primaryColorHighlightLevel: float = js.native
@@ -357,7 +353,7 @@ object backgroundMaterialMod {
       * @param rootUrl The root url of the assets the material depends upon
       * @returns the instantiated BackgroundMaterial.
       */
-    inline def Parse(source: js.Any, scene: Scene, rootUrl: String): BackgroundMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[BackgroundMaterial]
+    inline def Parse(source: Any, scene: Scene, rootUrl: String): BackgroundMaterial = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[BackgroundMaterial]
     
     /**
       * Standard reflectance value at parallel view angle.

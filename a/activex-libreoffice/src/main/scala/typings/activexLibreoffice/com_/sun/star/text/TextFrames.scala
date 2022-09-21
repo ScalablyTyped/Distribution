@@ -24,14 +24,14 @@ object TextFrames {
     ElementType: `type`,
     acquire: () => Unit,
     addContainerListener: XContainerListener => Unit,
-    getByIndex: Double => js.Any,
-    getByName: String => js.Any,
+    getByIndex: Double => Any,
+    getByName: String => Any,
     getCount: () => Double,
     getElementNames: () => SafeArray[String],
     getElementType: () => `type`,
     hasByName: String => Boolean,
     hasElements: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeContainerListener: XContainerListener => Unit
   ): TextFrames = {

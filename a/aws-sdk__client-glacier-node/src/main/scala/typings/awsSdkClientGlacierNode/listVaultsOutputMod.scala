@@ -8,5 +8,5 @@ object listVaultsOutputMod {
   
   @JSImport("@aws-sdk/client-glacier-node/model/ListVaultsOutput", "ListVaultsOutput")
   @js.native
-  val ListVaultsOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ListVaultsOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -60,7 +60,7 @@ object Collation {
       */
     def getMany(startIndex: Double): ItemsCharacterGrouping = js.native
     
-    def indexOf(value: CharacterGrouping, extra: js.Any*): Index = js.native
+    def indexOf(value: CharacterGrouping, extra: Any*): Index = js.native
     /* hack */
     @JSName("indexOf")
     def indexOf_Double(searchElement: CharacterGrouping): Double = js.native

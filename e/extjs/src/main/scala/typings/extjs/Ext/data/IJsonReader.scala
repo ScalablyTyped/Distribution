@@ -9,7 +9,7 @@ trait IJsonReader
      with typings.extjs.Ext.data.reader.IReader {
   
   /** [Property] (Object) */
-  var jsonData: js.UndefOr[js.Any] = js.undefined
+  var jsonData: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var metaProperty: js.UndefOr[String] = js.undefined
@@ -29,7 +29,7 @@ object IJsonReader {
   
   extension [Self <: IJsonReader](x: Self) {
     
-    inline def setJsonData(value: js.Any): Self = StObject.set(x, "jsonData", value.asInstanceOf[js.Any])
+    inline def setJsonData(value: Any): Self = StObject.set(x, "jsonData", value.asInstanceOf[js.Any])
     
     inline def setJsonDataUndefined: Self = StObject.set(x, "jsonData", js.undefined)
     

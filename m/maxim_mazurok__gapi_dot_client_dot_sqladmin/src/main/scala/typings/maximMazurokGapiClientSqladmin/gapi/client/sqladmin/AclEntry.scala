@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AclEntry extends StObject {
   
-  /** The time when this access control entry expires in RFC 3339 format, for example *2012-11-15T16:19:00.094Z*. */
+  /** The time when this access control entry expires in [RFC 3339](https://tools.ietf.org/html/rfc3339) format, for example `2012-11-15T16:19:00.094Z`. */
   var expirationTime: js.UndefOr[String] = js.undefined
   
-  /** This is always *sql#aclEntry*. */
+  /** This is always `sql#aclEntry`. */
   var kind: js.UndefOr[String] = js.undefined
   
   /** Optional. A label to identify this entry. */

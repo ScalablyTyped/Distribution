@@ -12,7 +12,7 @@ trait CancelCommandRequest extends StObject {
   var CommandId: typings.awsSdk.ssmMod.CommandId
   
   /**
-    * (Optional) A list of instance IDs on which you want to cancel the command. If not provided, the command is canceled on every instance on which it was requested.
+    * (Optional) A list of managed node IDs on which you want to cancel the command. If not provided, the command is canceled on every node on which it was requested.
     */
   var InstanceIds: js.UndefOr[InstanceIdList] = js.undefined
 }
@@ -31,6 +31,6 @@ object CancelCommandRequest {
     
     inline def setInstanceIdsUndefined: Self = StObject.set(x, "InstanceIds", js.undefined)
     
-    inline def setInstanceIdsVarargs(value: InstanceId*): Self = StObject.set(x, "InstanceIds", js.Array(value :_*))
+    inline def setInstanceIdsVarargs(value: InstanceId*): Self = StObject.set(x, "InstanceIds", js.Array(value*))
   }
 }

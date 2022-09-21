@@ -23,7 +23,7 @@ trait ChartSpecs extends StObject {
   
   var refreshInterval: js.UndefOr[Double] = js.undefined
   
-  var view: js.UndefOr[js.Any] = js.undefined
+  var view: js.UndefOr[Any] = js.undefined
 }
 object ChartSpecs {
   
@@ -64,7 +64,7 @@ object ChartSpecs {
     
     inline def setRefreshIntervalUndefined: Self = StObject.set(x, "refreshInterval", js.undefined)
     
-    inline def setView(value: js.Any): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: Any): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }

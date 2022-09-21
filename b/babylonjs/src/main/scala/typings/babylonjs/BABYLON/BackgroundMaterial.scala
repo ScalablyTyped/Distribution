@@ -20,18 +20,18 @@ trait BackgroundMaterial
   /**
     * Compute the primary color according to the chosen perceptual color.
     */
-  /* private */ var _computePrimaryColorFromPerceptualColor: js.Any = js.native
+  /* private */ var _computePrimaryColorFromPerceptualColor: Any = js.native
   
   /**
     * Compute the highlights and shadow colors according to their chosen levels.
     */
-  /* private */ var _computePrimaryColors: js.Any = js.native
+  /* private */ var _computePrimaryColors: Any = js.native
   
   /* protected */ var _diffuseTexture: Nullable[BaseTexture] = js.native
   
   /* protected */ var _enableNoise: Boolean = js.native
   
-  /* private */ var _fovMultiplier: js.Any = js.native
+  /* private */ var _fovMultiplier: Any = js.native
   
   /**
     * Default configuration related to image processing available in the Background Material.
@@ -41,9 +41,9 @@ trait BackgroundMaterial
   /**
     * Keep track of the image processing observer to allow dispose and replace.
     */
-  /* private */ var _imageProcessingObserver: js.Any = js.native
+  /* private */ var _imageProcessingObserver: Any = js.native
   
-  /* private */ var _maxSimultaneousLights: js.Any = js.native
+  /* private */ var _maxSimultaneousLights: Any = js.native
   
   /* protected */ var _opacityFresnel: Boolean = js.native
   
@@ -66,15 +66,15 @@ trait BackgroundMaterial
   
   /* protected */ var _primaryColorShadowLevel: float = js.native
   
-  /* private */ var _primaryHighlightColor: js.Any = js.native
+  /* private */ var _primaryHighlightColor: Any = js.native
   
-  /* private */ var _primaryShadowColor: js.Any = js.native
+  /* private */ var _primaryShadowColor: Any = js.native
   
   /* protected */ var _reflectionAmount: Double = js.native
   
   /* protected */ var _reflectionBlur: float = js.native
   
-  /* private */ var _reflectionControls: js.Any = js.native
+  /* private */ var _reflectionControls: Any = js.native
   
   /* protected */ var _reflectionFalloffDistance: Double = js.native
   
@@ -86,7 +86,7 @@ trait BackgroundMaterial
   
   /* protected */ var _reflectionTexture: Nullable[BaseTexture] = js.native
   
-  /* private */ var _renderTargets: js.Any = js.native
+  /* private */ var _renderTargets: Any = js.native
   
   /* protected */ var _sceneCenter: Vector3 = js.native
   
@@ -94,19 +94,14 @@ trait BackgroundMaterial
   
   /* protected */ var _shadowLights: Nullable[js.Array[IShadowLight]] = js.native
   
-  /* private */ var _shadowOnly: js.Any = js.native
+  /* private */ var _shadowOnly: Any = js.native
   
   /* protected */ var _useRGBColor: Boolean = js.native
   
-  /* private */ var _white: js.Any = js.native
+  /* private */ var _white: Any = js.native
   
   /**
-    * Build the uniform buffer used in the material.
-    */
-  def buildUniformLayout(): Unit = js.native
-  
-  /**
-    * The color grading curves provide additional color adjustmnent that is applied after any color grading transform (3D LUT).
+    * The color grading curves provide additional color adjustment that is applied after any color grading transform (3D LUT).
     * They allow basic adjustment of saturation and small exposure adjustments, along with color filter tinting to provide white balance adjustment or more stylistic effects.
     * These are similar to controls found in many professional imaging or colorist software. The global controls are applied to the entire image. For advanced tuning, extra controls are provided to adjust the shadow, midtone and highlight areas of the image;
     * corresponding to low luminance, medium luminance, and high luminance areas respectively.
@@ -114,16 +109,16 @@ trait BackgroundMaterial
   def cameraColorCurves: Nullable[ColorCurves] = js.native
   
   /**
-    * Gets wether the color curves effect is enabled.
+    * Gets whether the color curves effect is enabled.
     */
   def cameraColorCurvesEnabled: Boolean = js.native
   /**
-    * Sets wether the color curves effect is enabled.
+    * Sets whether the color curves effect is enabled.
     */
   def cameraColorCurvesEnabled_=(value: Boolean): Unit = js.native
   
   /**
-    * The color grading curves provide additional color adjustmnent that is applied after any color grading transform (3D LUT).
+    * The color grading curves provide additional color adjustment that is applied after any color grading transform (3D LUT).
     * They allow basic adjustment of saturation and small exposure adjustments, along with color filter tinting to provide white balance adjustment or more stylistic effects.
     * These are similar to controls found in many professional imaging or colorist software. The global controls are applied to the entire image. For advanced tuning, extra controls are provided to adjust the shadow, midtone and highlight areas of the image;
     * corresponding to low luminance, medium luminance, and high luminance areas respectively.
@@ -131,11 +126,11 @@ trait BackgroundMaterial
   def cameraColorCurves_=(value: Nullable[ColorCurves]): Unit = js.native
   
   /**
-    * Gets wether the color grading effect is enabled.
+    * Gets whether the color grading effect is enabled.
     */
   def cameraColorGradingEnabled: Boolean = js.native
   /**
-    * Gets wether the color grading effect is enabled.
+    * Gets whether the color grading effect is enabled.
     */
   def cameraColorGradingEnabled_=(value: Boolean): Unit = js.native
   
@@ -171,11 +166,11 @@ trait BackgroundMaterial
   def cameraExposure_=(value: float): Unit = js.native
   
   /**
-    * Gets wether tonemapping is enabled or not.
+    * Gets whether tonemapping is enabled or not.
     */
   def cameraToneMappingEnabled: Boolean = js.native
   /**
-    * Sets wether tonemapping is enabled or not
+    * Sets whether tonemapping is enabled or not
     */
   def cameraToneMappingEnabled_=(value: Boolean): Unit = js.native
   
@@ -221,12 +216,12 @@ trait BackgroundMaterial
   var opacityFresnel: Boolean = js.native
   
   /**
-    * Key light Color (multiply against the environement texture)
+    * Key light Color (multiply against the environment texture)
     */
   var primaryColor: Color3 = js.native
   
   /**
-    * Defines the level of the highliights (highlight area of the reflection map) in order to help scaling the colors.
+    * Defines the level of the highlights (highlight area of the reflection map) in order to help scaling the colors.
     * The primary color is used at the level chosen to define what the white area would look.
     */
   def primaryColorHighlightLevel: float = js.native

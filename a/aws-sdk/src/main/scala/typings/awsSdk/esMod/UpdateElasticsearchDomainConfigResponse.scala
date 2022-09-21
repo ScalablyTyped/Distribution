@@ -10,6 +10,11 @@ trait UpdateElasticsearchDomainConfigResponse extends StObject {
     * The status of the updated Elasticsearch domain. 
     */
   var DomainConfig: ElasticsearchDomainConfig
+  
+  /**
+    * Contains result of DryRun. 
+    */
+  var DryRunResults: js.UndefOr[typings.awsSdk.esMod.DryRunResults] = js.undefined
 }
 object UpdateElasticsearchDomainConfigResponse {
   
@@ -21,5 +26,9 @@ object UpdateElasticsearchDomainConfigResponse {
   extension [Self <: UpdateElasticsearchDomainConfigResponse](x: Self) {
     
     inline def setDomainConfig(value: ElasticsearchDomainConfig): Self = StObject.set(x, "DomainConfig", value.asInstanceOf[js.Any])
+    
+    inline def setDryRunResults(value: DryRunResults): Self = StObject.set(x, "DryRunResults", value.asInstanceOf[js.Any])
+    
+    inline def setDryRunResultsUndefined: Self = StObject.set(x, "DryRunResults", js.undefined)
   }
 }

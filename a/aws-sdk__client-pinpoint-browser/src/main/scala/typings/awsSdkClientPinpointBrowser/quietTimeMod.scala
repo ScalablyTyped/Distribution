@@ -8,5 +8,5 @@ object quietTimeMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/_QuietTime", "_QuietTime")
   @js.native
-  val QuietTime: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val QuietTime: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

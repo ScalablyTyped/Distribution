@@ -12,18 +12,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object textPathMod {
   
-  @JSImport("konva/types/shapes/TextPath", "TextPath")
+  @JSImport("konva/lib/shapes/TextPath", "TextPath")
   @js.native
-  class TextPath () extends Shape[TextPathConfig] {
+  open class TextPath () extends Shape[TextPathConfig] {
     def this(config: TextPathConfig) = this()
     
-    def _getContextFont(): js.Any = js.native
+    def _getContextFont(): Any = js.native
     
-    def _getTextSize(text: js.Any): HeightWidth = js.native
+    def _getTextSize(text: Any): HeightWidth = js.native
     
-    def _hitFunc(context: js.Any): Unit = js.native
+    def _hitFunc(context: Any): Unit = js.native
     
-    def _sceneFunc(context: js.Any): Unit = js.native
+    def _sceneFunc(context: Any): Unit = js.native
     
     def _setTextData(): Unit = js.native
     
@@ -35,7 +35,7 @@ object textPathMod {
     def data(): String = js.native
     def data(v: String): this.type = js.native
     
-    var dataArray: js.Array[js.Any] = js.native
+    var dataArray: js.Array[Any] = js.native
     
     @JSName("data")
     var data_Original: GetSet[String, this.type] = js.native
@@ -80,7 +80,7 @@ object textPathMod {
     
     var partialText: String = js.native
     
-    def setText(text: js.Any): js.Any = js.native
+    def setText(text: Any): Any = js.native
     
     def text(): String = js.native
     def text(v: String): this.type = js.native
@@ -115,6 +115,8 @@ object textPathMod {
     
     var fontStyle: js.UndefOr[String] = js.undefined
     
+    var letterSpacing: js.UndefOr[Double] = js.undefined
+    
     var text: js.UndefOr[String] = js.undefined
   }
   object TextPathConfig {
@@ -141,6 +143,10 @@ object textPathMod {
       inline def setFontStyle(value: String): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
       
       inline def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
+      
+      inline def setLetterSpacing(value: Double): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
+      
+      inline def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       

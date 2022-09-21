@@ -78,7 +78,7 @@ object mod {
       
       inline def setRaw(value: js.Array[String | Double]): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      inline def setRawVarargs(value: (String | Double)*): Self = StObject.set(x, "raw", js.Array(value :_*))
+      inline def setRawVarargs(value: (String | Double)*): Self = StObject.set(x, "raw", js.Array(value*))
       
       inline def setSpaced(value: String): Self = StObject.set(x, "spaced", value.asInstanceOf[js.Any])
     }

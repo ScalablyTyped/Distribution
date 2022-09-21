@@ -15,7 +15,7 @@ object searchBoxMod {
   
   @JSImport("office-ui-fabric-react/lib/components/SearchBox", "SearchBoxBase")
   @js.native
-  class SearchBoxBase protected ()
+  open class SearchBoxBase protected ()
     extends typings.officeUiFabricReact.searchBoxBaseMod.SearchBoxBase {
     def this(props: ISearchBoxProps) = this()
   }

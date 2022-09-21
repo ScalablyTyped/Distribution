@@ -16,53 +16,53 @@ object datasetMod {
     * @param {any[]} [data=[]] The data for this Dataset.
     * @param {any} [metadata={}] An object containing additional information.
     */
-  class Dataset () extends StObject {
-    def this(data: js.Array[js.Any]) = this()
-    def this(data: js.Array[js.Any], metadata: js.Any) = this()
-    def this(data: Unit, metadata: js.Any) = this()
+  open class Dataset () extends StObject {
+    def this(data: js.Array[Any]) = this()
+    def this(data: js.Array[Any], metadata: Any) = this()
+    def this(data: Unit, metadata: Any) = this()
     
-    /* private */ var _callbacks: js.Any = js.native
+    /* private */ var _callbacks: Any = js.native
     
-    /* private */ var _data: js.Any = js.native
+    /* private */ var _data: Any = js.native
     
-    /* private */ def _dispatchUpdate(): js.Any = js.native
+    /* private */ var _dispatchUpdate: Any = js.native
     
-    /* private */ var _metadata: js.Any = js.native
+    /* private */ var _metadata: Any = js.native
     
     /**
       * Store an update id for fast detection of changes to the dataset. Also, this
       * uses a global monotonically increasing value so that it may be used as a
       * combination update-aware memoize key.
       */
-    /* private */ var _updateId: js.Any = js.native
+    /* private */ var _updateId: Any = js.native
     
     /**
       * Gets the data.
       *
       * @returns {any[]}
       */
-    def data(): js.Array[js.Any] = js.native
+    def data(): js.Array[Any] = js.native
     /**
       * Sets the data.
       *
       * @param {any[]} data
       * @returns {Dataset} The calling Dataset.
       */
-    def data(data: js.Array[js.Any]): this.type = js.native
+    def data(data: js.Array[Any]): this.type = js.native
     
     /**
       * Gets the metadata.
       *
       * @returns {any}
       */
-    def metadata(): js.Any = js.native
+    def metadata(): Any = js.native
     /**
       * Sets the metadata.
       *
       * @param {any} metadata
       * @returns {Dataset} The calling Dataset.
       */
-    def metadata(metadata: js.Any): this.type = js.native
+    def metadata(metadata: Any): this.type = js.native
     
     /**
       * Removes a callback that would be called when the Dataset updates.

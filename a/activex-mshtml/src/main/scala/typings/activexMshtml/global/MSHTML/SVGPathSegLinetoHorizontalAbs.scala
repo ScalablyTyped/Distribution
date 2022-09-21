@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.SVGPathSegLinetoHorizontalAbs")
 @js.native
-/* private */ class SVGPathSegLinetoHorizontalAbs ()
+/* private */ open class SVGPathSegLinetoHorizontalAbs ()
   extends StObject
      with typings.activexMshtml.MSHTML.SVGPathSegLinetoHorizontalAbs {
   

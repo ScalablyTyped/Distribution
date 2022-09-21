@@ -10,21 +10,21 @@ object screenManagerMod {
   /**
     * Provides the functionality to manage the content of a console-screen.
     */
-  @JSImport("inquirer/lib/utils/screen-manager", JSImport.Namespace)
+  @JSImport("inquirer/lib/utils/screen-manager", JSImport.Default)
   @js.native
-  class ^ protected ()
+  open class default protected ()
     extends StObject
        with ScreenManager {
     /**
-      * Initializes a new instance of the `ScreenManager` class.
+      * Initializes a new instance of the {@link ScreenManager `ScreenManager`} class.
       *
       * @param readLine
-      * An object for performing read from and write to the console.
+      * An object for reading from and writing to the console.
       */
     def this(readLine: Interface) = this()
     
     /**
-      * Splits the `text` into multiple lines with the specified max `width`.
+      * Splits the {@link text `text`} into multiple lines with the specified maximum {@link width `width`}.
       *
       * @param text
       * The text to process.
@@ -36,7 +36,7 @@ object screenManagerMod {
     override def breakLines(text: String, width: Double): js.Array[String] = js.native
     
     /**
-      * Cleans all lines expect the first `extraLines`.
+      * Cleans all lines expect the first {@link extraLines `extraLines`}.
       *
       * @param extraLines
       * The number of lines at the begin to skip.
@@ -57,13 +57,13 @@ object screenManagerMod {
     var extraLinesUnderPrompt: Double = js.native
     
     /**
-      * Adds line-breaks to the specified `text` with the specified max `width`.
+      * Adds line-breaks to the specified {@link text `text`} with the specified maximum {@link width `width`}.
       *
       * @param text
       * The text to process.
       *
       * @param width
-      * The max width of each line.
+      * The maximum width of each line.
       */
     /* protected */ /* CompleteClass */
     override def forceLineReturn(text: String, width: Double): String = js.native
@@ -102,7 +102,7 @@ object screenManagerMod {
     override def render(content: String, bottomContent: String): Unit = js.native
     
     /**
-      * Gets or sets an object for performing read from and write to the console.
+      * Gets or sets an object for reading from and writing to the console.
       */
     /* CompleteClass */
     var rl: Interface = js.native
@@ -114,7 +114,7 @@ object screenManagerMod {
   trait ScreenManager extends StObject {
     
     /**
-      * Splits the `text` into multiple lines with the specified max `width`.
+      * Splits the {@link text `text`} into multiple lines with the specified maximum {@link width `width`}.
       *
       * @param text
       * The text to process.
@@ -125,7 +125,7 @@ object screenManagerMod {
     /* protected */ def breakLines(text: String, width: Double): js.Array[String]
     
     /**
-      * Cleans all lines expect the first `extraLines`.
+      * Cleans all lines expect the first {@link extraLines `extraLines`}.
       *
       * @param extraLines
       * The number of lines at the begin to skip.
@@ -143,13 +143,13 @@ object screenManagerMod {
     var extraLinesUnderPrompt: Double
     
     /**
-      * Adds line-breaks to the specified `text` with the specified max `width`.
+      * Adds line-breaks to the specified {@link text `text`} with the specified maximum {@link width `width`}.
       *
       * @param text
       * The text to process.
       *
       * @param width
-      * The max width of each line.
+      * The maximum width of each line.
       */
     /* protected */ def forceLineReturn(text: String, width: Double): String
     
@@ -183,7 +183,7 @@ object screenManagerMod {
     def render(content: String, bottomContent: String): Unit
     
     /**
-      * Gets or sets an object for performing read from and write to the console.
+      * Gets or sets an object for reading from and writing to the console.
       */
     var rl: Interface
   }

@@ -34,30 +34,30 @@ object mod {
   
   trait ParseResult extends StObject {
     
-    var general: js.Any
+    var general: Any
     
-    var lists: js.Array[js.Any]
+    var lists: js.Array[Any]
     
-    var tables: js.Array[js.Any]
+    var tables: js.Array[Any]
   }
   object ParseResult {
     
-    inline def apply(general: js.Any, lists: js.Array[js.Any], tables: js.Array[js.Any]): ParseResult = {
+    inline def apply(general: Any, lists: js.Array[Any], tables: js.Array[Any]): ParseResult = {
       val __obj = js.Dynamic.literal(general = general.asInstanceOf[js.Any], lists = lists.asInstanceOf[js.Any], tables = tables.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParseResult]
     }
     
     extension [Self <: ParseResult](x: Self) {
       
-      inline def setGeneral(value: js.Any): Self = StObject.set(x, "general", value.asInstanceOf[js.Any])
+      inline def setGeneral(value: Any): Self = StObject.set(x, "general", value.asInstanceOf[js.Any])
       
-      inline def setLists(value: js.Array[js.Any]): Self = StObject.set(x, "lists", value.asInstanceOf[js.Any])
+      inline def setLists(value: js.Array[Any]): Self = StObject.set(x, "lists", value.asInstanceOf[js.Any])
       
-      inline def setListsVarargs(value: js.Any*): Self = StObject.set(x, "lists", js.Array(value :_*))
+      inline def setListsVarargs(value: Any*): Self = StObject.set(x, "lists", js.Array(value*))
       
-      inline def setTables(value: js.Array[js.Any]): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
+      inline def setTables(value: js.Array[Any]): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
       
-      inline def setTablesVarargs(value: js.Any*): Self = StObject.set(x, "tables", js.Array(value :_*))
+      inline def setTablesVarargs(value: Any*): Self = StObject.set(x, "tables", js.Array(value*))
     }
   }
 }

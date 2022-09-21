@@ -10,10 +10,10 @@ quote and parse shell commands
 | ------------------ | :-------------: |
 | Full name          | shell-quote |
 | Keywords           | command, parse, quote, shell |
-| # releases         | 6 |
-| # dependents       | 554 |
-| # downloads        | 301827974 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5.4500465666666664E7 |
+| # stars            | 172.0 |
 
 ## Links
 - [Homepage](https://github.com/substack/node-shell-quote)

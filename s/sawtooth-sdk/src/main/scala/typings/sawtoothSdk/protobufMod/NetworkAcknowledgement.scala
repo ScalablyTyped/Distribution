@@ -5,7 +5,6 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
 import typings.sawtoothSdk.protobufMod.NetworkAcknowledgement.Status
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new NetworkAcknowledgement.
   * @param [properties] Properties to set
   */
-class NetworkAcknowledgement ()
+open class NetworkAcknowledgement ()
   extends StObject
      with INetworkAcknowledgement {
   def this(properties: INetworkAcknowledgement) = this()
@@ -29,7 +28,7 @@ class NetworkAcknowledgement ()
     * Converts this NetworkAcknowledgement to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 /* static members */
 object NetworkAcknowledgement {
@@ -75,6 +74,8 @@ object NetworkAcknowledgement {
   inline def create(): NetworkAcknowledgement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[NetworkAcknowledgement]
   inline def create(properties: INetworkAcknowledgement): NetworkAcknowledgement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[NetworkAcknowledgement]
   
+  inline def decode(reader: js.typedarray.Uint8Array): NetworkAcknowledgement = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[NetworkAcknowledgement]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): NetworkAcknowledgement = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[NetworkAcknowledgement]
   /**
     * Decodes a NetworkAcknowledgement message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -85,9 +86,8 @@ object NetworkAcknowledgement {
     */
   inline def decode(reader: Reader): NetworkAcknowledgement = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[NetworkAcknowledgement]
   inline def decode(reader: Reader, length: Double): NetworkAcknowledgement = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[NetworkAcknowledgement]
-  inline def decode(reader: Uint8Array): NetworkAcknowledgement = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[NetworkAcknowledgement]
-  inline def decode(reader: Uint8Array, length: Double): NetworkAcknowledgement = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[NetworkAcknowledgement]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): NetworkAcknowledgement = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[NetworkAcknowledgement]
   /**
     * Decodes a NetworkAcknowledgement message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -96,7 +96,6 @@ object NetworkAcknowledgement {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   inline def decodeDelimited(reader: Reader): NetworkAcknowledgement = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[NetworkAcknowledgement]
-  inline def decodeDelimited(reader: Uint8Array): NetworkAcknowledgement = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[NetworkAcknowledgement]
   
   /**
     * Encodes the specified NetworkAcknowledgement message. Does not implicitly {@link NetworkAcknowledgement.verify|verify} messages.
@@ -121,7 +120,7 @@ object NetworkAcknowledgement {
     * @param object Plain object
     * @returns NetworkAcknowledgement
     */
-  inline def fromObject(`object`: StringDictionary[js.Any]): NetworkAcknowledgement = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[NetworkAcknowledgement]
+  inline def fromObject(`object`: StringDictionary[Any]): NetworkAcknowledgement = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[NetworkAcknowledgement]
   
   /**
     * Creates a plain object from a NetworkAcknowledgement message. Also converts values to other types if specified.
@@ -129,13 +128,13 @@ object NetworkAcknowledgement {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  inline def toObject(message: NetworkAcknowledgement): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: NetworkAcknowledgement, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: NetworkAcknowledgement): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: NetworkAcknowledgement, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a NetworkAcknowledgement message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

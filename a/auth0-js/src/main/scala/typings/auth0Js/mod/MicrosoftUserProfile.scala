@@ -33,6 +33,6 @@ object MicrosoftUserProfile {
     
     inline def setEmailsUndefined: Self = StObject.set(x, "emails", js.undefined)
     
-    inline def setEmailsVarargs(value: String*): Self = StObject.set(x, "emails", js.Array(value :_*))
+    inline def setEmailsVarargs(value: String*): Self = StObject.set(x, "emails", js.Array(value*))
   }
 }

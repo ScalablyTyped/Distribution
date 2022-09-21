@@ -12,17 +12,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("firmata", JSImport.Namespace)
 @js.native
-class ^ protected () extends Board {
-  def this(serialPort: js.Any) = this()
-  def this(serialPort: js.Any, optionsOrCallback: js.Function1[/* error */ js.Any, Unit]) = this()
-  def this(serialPort: js.Any, optionsOrCallback: Options) = this()
+open class ^ protected () extends Board {
+  def this(serialPort: Any) = this()
+  def this(serialPort: Any, optionsOrCallback: js.Function1[/* error */ Any, Unit]) = this()
+  def this(serialPort: Any, optionsOrCallback: Options) = this()
   def this(
-    serialPort: js.Any,
-    optionsOrCallback: js.Function1[/* error */ js.Any, Unit],
-    callback: js.Function1[/* error */ js.Any, Unit]
+    serialPort: Any,
+    optionsOrCallback: js.Function1[/* error */ Any, Unit],
+    callback: js.Function1[/* error */ Any, Unit]
   ) = this()
-  def this(serialPort: js.Any, optionsOrCallback: Unit, callback: js.Function1[/* error */ js.Any, Unit]) = this()
-  def this(serialPort: js.Any, optionsOrCallback: Options, callback: js.Function1[/* error */ js.Any, Unit]) = this()
+  def this(serialPort: Any, optionsOrCallback: Unit, callback: js.Function1[/* error */ Any, Unit]) = this()
+  def this(serialPort: Any, optionsOrCallback: Options, callback: js.Function1[/* error */ Any, Unit]) = this()
 }
 @JSImport("firmata", JSImport.Namespace)
 @js.native

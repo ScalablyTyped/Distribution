@@ -13,11 +13,11 @@ trait GenericCollection[T] extends StObject {
       /* elements */ js.UndefOr[js.Array[T]], 
       Unit
     ]
-  ): js.Any
+  ): Any
   
   var elements: js.Array[T]
   
-  def randomize(info: js.Any): GenericCollection[T]
+  def randomize(info: Any): GenericCollection[T]
   
   def rename(pattern: String): GenericCollection[T]
   
@@ -35,9 +35,9 @@ object GenericCollection {
       /* index */ js.UndefOr[Double], 
       /* elements */ js.UndefOr[js.Array[T]], 
       Unit
-    ] => js.Any,
+    ] => Any,
     elements: js.Array[T],
-    randomize: js.Any => GenericCollection[T],
+    randomize: Any => GenericCollection[T],
     rename: String => GenericCollection[T],
     select: () => GenericCollection[T],
     toGrid: (Double, Double) => GenericCollection[T],
@@ -55,14 +55,14 @@ object GenericCollection {
           /* index */ js.UndefOr[Double], 
           /* elements */ js.UndefOr[js.Array[T]], 
           Unit
-        ] => js.Any
+        ] => Any
     ): Self = StObject.set(x, "each", js.Any.fromFunction1(value))
     
     inline def setElements(value: js.Array[T]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
-    inline def setElementsVarargs(value: T*): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: T*): Self = StObject.set(x, "elements", js.Array(value*))
     
-    inline def setRandomize(value: js.Any => GenericCollection[T]): Self = StObject.set(x, "randomize", js.Any.fromFunction1(value))
+    inline def setRandomize(value: Any => GenericCollection[T]): Self = StObject.set(x, "randomize", js.Any.fromFunction1(value))
     
     inline def setRename(value: String => GenericCollection[T]): Self = StObject.set(x, "rename", js.Any.fromFunction1(value))
     

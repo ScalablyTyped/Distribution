@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.BenktanderII")
 @js.native
-class BenktanderII ()
+open class BenktanderII ()
   extends typings.ranjs.mod.dist.BenktanderII {
   def this(a: Double) = this()
   def this(a: Double, b: Double) = this()

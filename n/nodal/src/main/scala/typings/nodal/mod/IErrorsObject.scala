@@ -9,7 +9,7 @@ trait IErrorsObject
   extends StObject
      with /* field */ StringDictionary[js.Array[String]] {
   
-  var _query: js.UndefOr[js.Any] = js.undefined
+  var _query: js.UndefOr[Any] = js.undefined
 }
 object IErrorsObject {
   
@@ -20,7 +20,7 @@ object IErrorsObject {
   
   extension [Self <: IErrorsObject](x: Self) {
     
-    inline def set_query(value: js.Any): Self = StObject.set(x, "_query", value.asInstanceOf[js.Any])
+    inline def set_query(value: Any): Self = StObject.set(x, "_query", value.asInstanceOf[js.Any])
     
     inline def set_queryUndefined: Self = StObject.set(x, "_query", js.undefined)
   }

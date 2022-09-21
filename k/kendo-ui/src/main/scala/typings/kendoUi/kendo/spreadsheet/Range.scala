@@ -1,7 +1,6 @@
 package typings.kendoUi.kendo.spreadsheet
 
 import typings.kendoUi.kendo.Observable
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,30 +20,30 @@ trait Range
   @JSName("bold")
   def bold_Boolean(): Boolean = js.native
   
-  def borderBottom(): js.Any = js.native
-  def borderBottom(value: js.Any): Unit = js.native
+  def borderBottom(): Any = js.native
+  def borderBottom(value: Any): Unit = js.native
   @JSName("borderBottom")
   def borderBottom_Unit(): Unit = js.native
   
-  def borderLeft(): js.Any = js.native
-  def borderLeft(value: js.Any): Unit = js.native
+  def borderLeft(): Any = js.native
+  def borderLeft(value: Any): Unit = js.native
   @JSName("borderLeft")
   def borderLeft_Unit(): Unit = js.native
   
-  def borderRight(): js.Any = js.native
-  def borderRight(value: js.Any): Unit = js.native
+  def borderRight(): Any = js.native
+  def borderRight(value: Any): Unit = js.native
   @JSName("borderRight")
   def borderRight_Unit(): Unit = js.native
   
-  def borderTop(): js.Any = js.native
-  def borderTop(value: js.Any): Unit = js.native
+  def borderTop(): Any = js.native
+  def borderTop(value: Any): Unit = js.native
   @JSName("borderTop")
   def borderTop_Unit(): Unit = js.native
   
   def clear(): Unit = js.native
-  def clear(options: js.Any): Unit = js.native
+  def clear(options: Any): Unit = js.native
   
-  def clearFilter(indices: js.Any): Unit = js.native
+  def clearFilter(indices: Any): Unit = js.native
   def clearFilter(indices: Double): Unit = js.native
   
   def color(): String = js.native
@@ -72,7 +71,7 @@ trait Range
   def fillFrom(srcRange: Range): Unit = js.native
   def fillFrom(srcRange: Range, direction: Double): Unit = js.native
   
-  def filter(filter: js.Any): Unit = js.native
+  def filter(filter: Any): Unit = js.native
   def filter(filter: Boolean): Unit = js.native
   
   def fontFamily(): String = js.native
@@ -99,10 +98,10 @@ trait Range
   
   def hasFilter(): Boolean = js.native
   
-  def input(): js.Any = js.native
+  def input(): Any = js.native
   def input(value: String): Unit = js.native
+  def input(value: js.Date): Unit = js.native
   def input(value: Double): Unit = js.native
-  def input(value: Date): Unit = js.native
   @JSName("input")
   def input_Unit(): Unit = js.native
   
@@ -126,7 +125,7 @@ trait Range
   
   def select(): Unit = js.native
   
-  def sort(sort: js.Any): Unit = js.native
+  def sort(sort: Any): Unit = js.native
   def sort(sort: Double): Unit = js.native
   
   def textAlign(): String = js.native
@@ -136,20 +135,20 @@ trait Range
   
   def unmerge(): Unit = js.native
   
-  def validation(): js.Any = js.native
-  def validation(value: js.Any): Unit = js.native
+  def validation(): Any = js.native
+  def validation(value: Any): Unit = js.native
   @JSName("validation")
   def validation_Unit(): Unit = js.native
   
-  def value(): js.Any = js.native
+  def value(): Any = js.native
   def value(value: String): Unit = js.native
+  def value(value: js.Date): Unit = js.native
   def value(value: Double): Unit = js.native
-  def value(value: Date): Unit = js.native
   @JSName("value")
   def value_Unit(): Unit = js.native
   
-  def values(): js.Any = js.native
-  def values(values: js.Any): Unit = js.native
+  def values(): Any = js.native
+  def values(values: Any): Unit = js.native
   
   def verticalAlign(): String = js.native
   def verticalAlign(value: String): Unit = js.native

@@ -1,6 +1,5 @@
 package typings.tuyaPanelKit.mod
 
-import typings.react.mod.ReactNode
 import typings.reactNative.mod.ViewProps
 import typings.tuyaPanelKit.tuyaPanelKitStrings.`box-none`
 import typings.tuyaPanelKit.tuyaPanelKitStrings.`box-only`
@@ -14,10 +13,28 @@ trait GestureProps
   extends StObject
      with ViewProps {
   
-  var children: js.UndefOr[ReactNode] = js.undefined
-  
+  /**
+    * @language zh-CN
+    * @description 是否禁止滑动
+    * @defaultValue false
+    */
+  /**
+    * @language en-US
+    * @description Is sliding prohibited
+    * @defaultValue false
+    */
   var disabled: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 手势区域
+    * @defaultValue 'box-only'
+    */
+  /**
+    * @language en-US
+    * @description Gesture area
+    * @defaultValue 'box-only'
+    */
   @JSName("pointerEvents")
   var pointerEvents_GestureProps: js.UndefOr[`box-none` | none_ | `box-only` | auto] = js.undefined
 }
@@ -29,10 +46,6 @@ object GestureProps {
   }
   
   extension [Self <: GestureProps](x: Self) {
-    
-    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-    
-    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

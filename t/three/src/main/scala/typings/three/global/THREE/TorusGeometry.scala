@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("THREE.TorusGeometry")
 @js.native
 /**
-	 * @param [radius=1]
-	 * @param [tube=0.4]
-	 * @param [radialSegments=8]
-	 * @param [tubularSegments=6]
-	 * @param [arc=Math.PI * 2]
-	 */
-class TorusGeometry ()
+  * @param [radius=1]
+  * @param [tube=0.4]
+  * @param [radialSegments=8]
+  * @param [tubularSegments=6]
+  * @param [arc=Math.PI * 2]
+  */
+open class TorusGeometry ()
   extends typings.three.mod.TorusGeometry {
   def this(radius: Double) = this()
   def this(radius: Double, tube: Double) = this()
@@ -46,4 +46,13 @@ class TorusGeometry ()
   def this(radius: Unit, tube: Unit, radialSegments: Double, tubularSegments: Unit, arc: Double) = this()
   def this(radius: Unit, tube: Unit, radialSegments: Unit, tubularSegments: Double, arc: Double) = this()
   def this(radius: Unit, tube: Unit, radialSegments: Unit, tubularSegments: Unit, arc: Double) = this()
+}
+/* static members */
+object TorusGeometry {
+  
+  @JSGlobal("THREE.TorusGeometry")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def fromJSON(data: Any): typings.three.torusGeometryMod.TorusGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.torusGeometryMod.TorusGeometry]
 }

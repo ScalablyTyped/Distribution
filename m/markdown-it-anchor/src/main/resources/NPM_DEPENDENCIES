@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "markdown-it-anchor" : "8.6.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "markdown-it-anchor" : "8.6.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -63,7 +63,7 @@ object BuyProviderInfo {
     
     inline def setPaymentMethods(value: js.Array[BuyCryptoPaymentMethod]): Self = StObject.set(x, "paymentMethods", value.asInstanceOf[js.Any])
     
-    inline def setPaymentMethodsVarargs(value: BuyCryptoPaymentMethod*): Self = StObject.set(x, "paymentMethods", js.Array(value :_*))
+    inline def setPaymentMethodsVarargs(value: BuyCryptoPaymentMethod*): Self = StObject.set(x, "paymentMethods", js.Array(value*))
     
     inline def setStatusUrl(value: String): Self = StObject.set(x, "statusUrl", value.asInstanceOf[js.Any])
     
@@ -71,14 +71,14 @@ object BuyProviderInfo {
     
     inline def setSupportedCountries(value: js.Array[String]): Self = StObject.set(x, "supportedCountries", value.asInstanceOf[js.Any])
     
-    inline def setSupportedCountriesVarargs(value: String*): Self = StObject.set(x, "supportedCountries", js.Array(value :_*))
+    inline def setSupportedCountriesVarargs(value: String*): Self = StObject.set(x, "supportedCountries", js.Array(value*))
     
     inline def setTradedCoins(value: js.Array[String]): Self = StObject.set(x, "tradedCoins", value.asInstanceOf[js.Any])
     
-    inline def setTradedCoinsVarargs(value: String*): Self = StObject.set(x, "tradedCoins", js.Array(value :_*))
+    inline def setTradedCoinsVarargs(value: String*): Self = StObject.set(x, "tradedCoins", js.Array(value*))
     
     inline def setTradedFiatCurrencies(value: js.Array[String]): Self = StObject.set(x, "tradedFiatCurrencies", value.asInstanceOf[js.Any])
     
-    inline def setTradedFiatCurrenciesVarargs(value: String*): Self = StObject.set(x, "tradedFiatCurrencies", js.Array(value :_*))
+    inline def setTradedFiatCurrenciesVarargs(value: String*): Self = StObject.set(x, "tradedFiatCurrencies", js.Array(value*))
   }
 }

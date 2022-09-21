@@ -13,5 +13,11 @@ trait NativeEventEmitter
   extends StObject
      with EventEmitter {
   
-  def addListener(eventType: String, listener: js.Function1[/* event */ js.Any, Unit], context: js.Object): EmitterSubscription = js.native
+  def addListener(eventType: String, listener: js.Function1[/* event */ Any, Unit], context: js.Object): EmitterSubscription = js.native
+  
+  /**
+    * Removes a subscription created by the addListener, the EventSubscription#remove()
+    * function actually calls through to this.
+    */
+  def removeSubscription(subscription: EmitterSubscription): Unit = js.native
 }

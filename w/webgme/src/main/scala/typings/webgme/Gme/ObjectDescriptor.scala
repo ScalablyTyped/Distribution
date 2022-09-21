@@ -76,7 +76,7 @@ object ObjectDescriptor {
     
     inline def setChildrenIds(value: js.Array[String]): Self = StObject.set(x, "childrenIds", value.asInstanceOf[js.Any])
     
-    inline def setChildrenIdsVarargs(value: String*): Self = StObject.set(x, "childrenIds", js.Array(value :_*))
+    inline def setChildrenIdsVarargs(value: String*): Self = StObject.set(x, "childrenIds", js.Array(value*))
     
     inline def setChildrenNum(value: Double): Self = StObject.set(x, "childrenNum", value.asInstanceOf[js.Any])
     

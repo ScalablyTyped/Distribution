@@ -8,5 +8,5 @@ object deleteBackupOutputMod {
   
   @JSImport("@aws-sdk/client-dynamodb-browser/model/DeleteBackupOutput", "DeleteBackupOutput")
   @js.native
-  val DeleteBackupOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val DeleteBackupOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

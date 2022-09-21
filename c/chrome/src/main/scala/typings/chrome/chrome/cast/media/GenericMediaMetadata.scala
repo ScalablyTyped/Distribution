@@ -43,7 +43,7 @@ object GenericMediaMetadata {
     
     inline def setImages(value: js.Array[Image]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
-    inline def setImagesVarargs(value: Image*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: Image*): Self = StObject.set(x, "images", js.Array(value*))
     
     inline def setMetadataType(value: MetadataType): Self = StObject.set(x, "metadataType", value.asInstanceOf[js.Any])
     

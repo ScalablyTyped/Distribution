@@ -10,10 +10,10 @@ Small module that calls a function when your computer wakes up from sleep
 | ------------------ | :-------------: |
 | Full name          | on-wake-up |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 6285 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 250.0 |
+| # stars            | 42.0 |
 
 ## Links
 - [Homepage](https://github.com/mafintosh/on-wake-up)

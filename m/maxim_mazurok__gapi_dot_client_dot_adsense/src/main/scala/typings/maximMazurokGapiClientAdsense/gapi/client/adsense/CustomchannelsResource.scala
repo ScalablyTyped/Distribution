@@ -1,12 +1,8 @@
 package typings.maximMazurokGapiClientAdsense.gapi.client.adsense
 
 import typings.gapiClient.gapi.client.Request
-import typings.maximMazurokGapiClientAdsense.anon.AdClientId
-import typings.maximMazurokGapiClientAdsense.anon.AdUnitId
-import typings.maximMazurokGapiClientAdsense.anon.CustomChannelId
-import typings.maximMazurokGapiClientAdsense.anon.Key
-import typings.maximMazurokGapiClientAdsense.anon.MaxResults
-import typings.maximMazurokGapiClientAdsense.anon.Oauthtoken
+import typings.maximMazurokGapiClientAdsense.anon.Accesstoken
+import typings.maximMazurokGapiClientAdsense.anon.Alt
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,17 +10,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait CustomchannelsResource extends StObject {
   
-  var adunits: AdunitsResource = js.native
-  
-  /** Get the specified custom channel from the specified ad client for the specified account. */
+  /** Gets information about the selected custom channel. */
   def get(): Request[CustomChannel] = js.native
-  def get(request: CustomChannelId): Request[CustomChannel] = js.native
-  def get(request: Oauthtoken): Request[CustomChannel] = js.native
+  def get(request: Accesstoken): Request[CustomChannel] = js.native
   
-  /** List all custom channels which the specified ad unit belongs to. */
-  def list(): Request[CustomChannels] = js.native
-  def list(request: AdClientId): Request[CustomChannels] = js.native
-  def list(request: AdUnitId): Request[CustomChannels] = js.native
-  def list(request: Key): Request[CustomChannels] = js.native
-  def list(request: MaxResults): Request[CustomChannels] = js.native
+  /** Lists all the custom channels available in an ad client. */
+  def list(): Request[ListCustomChannelsResponse] = js.native
+  def list(request: Alt): Request[ListCustomChannelsResponse] = js.native
+  
+  /** Lists all the ad units available for a custom channel. */
+  def listLinkedAdUnits(): Request[ListLinkedAdUnitsResponse] = js.native
+  def listLinkedAdUnits(request: Alt): Request[ListLinkedAdUnitsResponse] = js.native
 }

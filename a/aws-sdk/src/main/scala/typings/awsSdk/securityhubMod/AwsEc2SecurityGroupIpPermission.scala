@@ -27,7 +27,7 @@ trait AwsEc2SecurityGroupIpPermission extends StObject {
   var Ipv6Ranges: js.UndefOr[AwsEc2SecurityGroupIpv6RangeList] = js.undefined
   
   /**
-    * [VPC only] The prefix list IDs for an AWS service. With outbound rules, this is the AWS service to access through a VPC endpoint from instances associated with the security group.
+    * [VPC only] The prefix list IDs for an Amazon Web Services service. With outbound rules, this is the Amazon Web Services service to access through a VPC endpoint from instances associated with the security group.
     */
   var PrefixListIds: js.UndefOr[AwsEc2SecurityGroupPrefixListIdList] = js.undefined
   
@@ -37,7 +37,7 @@ trait AwsEc2SecurityGroupIpPermission extends StObject {
   var ToPort: js.UndefOr[Integer] = js.undefined
   
   /**
-    * The security group and AWS account ID pairs.
+    * The security group and Amazon Web Services account ID pairs.
     */
   var UserIdGroupPairs: js.UndefOr[AwsEc2SecurityGroupUserIdGroupPairList] = js.undefined
 }
@@ -62,19 +62,19 @@ object AwsEc2SecurityGroupIpPermission {
     
     inline def setIpRangesUndefined: Self = StObject.set(x, "IpRanges", js.undefined)
     
-    inline def setIpRangesVarargs(value: AwsEc2SecurityGroupIpRange*): Self = StObject.set(x, "IpRanges", js.Array(value :_*))
+    inline def setIpRangesVarargs(value: AwsEc2SecurityGroupIpRange*): Self = StObject.set(x, "IpRanges", js.Array(value*))
     
     inline def setIpv6Ranges(value: AwsEc2SecurityGroupIpv6RangeList): Self = StObject.set(x, "Ipv6Ranges", value.asInstanceOf[js.Any])
     
     inline def setIpv6RangesUndefined: Self = StObject.set(x, "Ipv6Ranges", js.undefined)
     
-    inline def setIpv6RangesVarargs(value: AwsEc2SecurityGroupIpv6Range*): Self = StObject.set(x, "Ipv6Ranges", js.Array(value :_*))
+    inline def setIpv6RangesVarargs(value: AwsEc2SecurityGroupIpv6Range*): Self = StObject.set(x, "Ipv6Ranges", js.Array(value*))
     
     inline def setPrefixListIds(value: AwsEc2SecurityGroupPrefixListIdList): Self = StObject.set(x, "PrefixListIds", value.asInstanceOf[js.Any])
     
     inline def setPrefixListIdsUndefined: Self = StObject.set(x, "PrefixListIds", js.undefined)
     
-    inline def setPrefixListIdsVarargs(value: AwsEc2SecurityGroupPrefixListId*): Self = StObject.set(x, "PrefixListIds", js.Array(value :_*))
+    inline def setPrefixListIdsVarargs(value: AwsEc2SecurityGroupPrefixListId*): Self = StObject.set(x, "PrefixListIds", js.Array(value*))
     
     inline def setToPort(value: Integer): Self = StObject.set(x, "ToPort", value.asInstanceOf[js.Any])
     
@@ -84,6 +84,6 @@ object AwsEc2SecurityGroupIpPermission {
     
     inline def setUserIdGroupPairsUndefined: Self = StObject.set(x, "UserIdGroupPairs", js.undefined)
     
-    inline def setUserIdGroupPairsVarargs(value: AwsEc2SecurityGroupUserIdGroupPair*): Self = StObject.set(x, "UserIdGroupPairs", js.Array(value :_*))
+    inline def setUserIdGroupPairsVarargs(value: AwsEc2SecurityGroupUserIdGroupPair*): Self = StObject.set(x, "UserIdGroupPairs", js.Array(value*))
   }
 }

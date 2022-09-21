@@ -23,5 +23,5 @@ object bemMod {
   
   type Element = String
   
-  type Modifier = Record[String, js.Any]
+  type Modifier = Record[String, Any]
 }

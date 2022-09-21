@@ -46,7 +46,7 @@ object XTypeProvider {
     acquire: () => Unit,
     getImplementationId: () => SafeArray[Double],
     getTypes: () => SafeArray[`type`],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XTypeProvider = {
     val __obj = js.Dynamic.literal(ImplementationId = ImplementationId.asInstanceOf[js.Any], Types = Types.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getImplementationId = js.Any.fromFunction0(getImplementationId), getTypes = js.Any.fromFunction0(getTypes), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

@@ -1,9 +1,5 @@
 package typings.googleapis.dialogflowV2Mod.dialogflowV2
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,28 +9,17 @@ trait ParamsResourceProjectsAgentIntentsGet
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
     * Optional. The resource view to apply to the returned intent.
     */
   var intentView: js.UndefOr[String] = js.undefined
   
   /**
-    * Optional. The language to retrieve training phrases, parameters and rich
-    * messages for. If not specified, the agent's default language is used.
-    * [Many
-    * languages](https://cloud.google.com/dialogflow-enterprise/docs/reference/language)
-    * are supported. Note: languages must be enabled in the agent before they
-    * can be used.
+    * Optional. The language used to access language-specific data. If not specified, the agent's default language is used. For more information, see [Multilingual intent and entity data](https://cloud.google.com/dialogflow/docs/agents-multilingual#intent-entity).
     */
   var languageCode: js.UndefOr[String] = js.undefined
   
   /**
-    * Required. The name of the intent. Format: `projects/<Project
-    * ID>/agent/intents/<Intent ID>`.
+    * Required. The name of the intent. Format: `projects//agent/intents/`.
     */
   var name: js.UndefOr[String] = js.undefined
 }
@@ -46,10 +31,6 @@ object ParamsResourceProjectsAgentIntentsGet {
   }
   
   extension [Self <: ParamsResourceProjectsAgentIntentsGet](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setIntentView(value: String): Self = StObject.set(x, "intentView", value.asInstanceOf[js.Any])
     

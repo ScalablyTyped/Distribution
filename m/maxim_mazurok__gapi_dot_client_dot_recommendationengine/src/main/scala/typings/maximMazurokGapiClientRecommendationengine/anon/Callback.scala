@@ -27,7 +27,7 @@ trait Callback extends StObject {
   
   /**
     * Required. The API key to unregister including full resource path.
-    * "projects/∗/locations/global/catalogs/default_catalog/eventStores/default_event_store/predictionApiKeyRegistrations/"
+    * `projects/ *‍/locations/global/catalogs/default_catalog/eventStores/default_event_store/predictionApiKeyRegistrations/`
     */
   var name: String
   

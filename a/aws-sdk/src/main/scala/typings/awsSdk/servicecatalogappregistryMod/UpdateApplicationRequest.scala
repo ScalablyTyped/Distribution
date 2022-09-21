@@ -17,7 +17,7 @@ trait UpdateApplicationRequest extends StObject {
   var description: js.UndefOr[Description] = js.undefined
   
   /**
-    * The new name of the application. The name must be unique in the region in which you are updating the application.
+    * Deprecated: The new name of the application. The name must be unique in the region in which you are updating the application. Please do not use this field as we have stopped supporting name updates.
     */
   var name: js.UndefOr[Name] = js.undefined
 }

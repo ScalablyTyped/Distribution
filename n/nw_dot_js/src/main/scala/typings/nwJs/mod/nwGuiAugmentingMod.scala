@@ -36,14 +36,14 @@ object nwGuiAugmentingMod {
     *
     * @param option {Object} (Optional) Option to customize returned menu object.
     */
-  class Menu ()
+  open class Menu ()
     extends typings.nwJs.mod.global.nw.Menu {
     def this(option: MenuOption) = this()
   }
   
   @JSImport("nw.gui", "MenuItem")
   @js.native
-  class MenuItem protected ()
+  open class MenuItem protected ()
     extends typings.nwJs.mod.global.nw.MenuItem {
     /**
       * Create a new MenuItem.
@@ -65,7 +65,7 @@ object nwGuiAugmentingMod {
   
   @JSImport("nw.gui", "Shortcut")
   @js.native
-  class Shortcut protected ()
+  open class Shortcut protected ()
     extends typings.nwJs.mod.global.nw.Shortcut {
     /**
       * Create new Shortcut.
@@ -77,7 +77,7 @@ object nwGuiAugmentingMod {
   
   @JSImport("nw.gui", "Tray")
   @js.native
-  class Tray protected ()
+  open class Tray protected ()
     extends typings.nwJs.mod.global.nw.Tray {
     /**
       * Create a new Tray.

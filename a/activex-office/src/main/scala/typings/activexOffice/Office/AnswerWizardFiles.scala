@@ -11,7 +11,7 @@ trait AnswerWizardFiles extends StObject {
   
   def Add(FileName: String): Unit = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val Count: Double = js.native
   
@@ -21,5 +21,5 @@ trait AnswerWizardFiles extends StObject {
   
   def Item(Index: Double): String = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
 }

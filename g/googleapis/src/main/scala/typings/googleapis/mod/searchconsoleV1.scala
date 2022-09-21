@@ -9,38 +9,58 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object searchconsoleV1 {
   
+  @JSImport("googleapis", "searchconsole_v1.Resource$Searchanalytics")
+  @js.native
+  open class ResourceSearchanalytics protected ()
+    extends typings.googleapis.searchconsoleV1Mod.searchconsoleV1.ResourceSearchanalytics {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "searchconsole_v1.Resource$Sitemaps")
+  @js.native
+  open class ResourceSitemaps protected ()
+    extends typings.googleapis.searchconsoleV1Mod.searchconsoleV1.ResourceSitemaps {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "searchconsole_v1.Resource$Sites")
+  @js.native
+  open class ResourceSites protected ()
+    extends typings.googleapis.searchconsoleV1Mod.searchconsoleV1.ResourceSites {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "searchconsole_v1.Resource$Urlinspection")
+  @js.native
+  open class ResourceUrlinspection protected ()
+    extends typings.googleapis.searchconsoleV1Mod.searchconsoleV1.ResourceUrlinspection {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "searchconsole_v1.Resource$Urlinspection$Index")
+  @js.native
+  open class ResourceUrlinspectionIndex protected ()
+    extends typings.googleapis.searchconsoleV1Mod.searchconsoleV1.ResourceUrlinspectionIndex {
+    def this(context: APIRequestContext) = this()
+  }
+  
   @JSImport("googleapis", "searchconsole_v1.Resource$Urltestingtools")
   @js.native
-  class ResourceUrltestingtools protected ()
+  open class ResourceUrltestingtools protected ()
     extends typings.googleapis.searchconsoleV1Mod.searchconsoleV1.ResourceUrltestingtools {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "searchconsole_v1.Resource$Urltestingtools$Mobilefriendlytest")
   @js.native
-  class ResourceUrltestingtoolsMobilefriendlytest protected ()
+  open class ResourceUrltestingtoolsMobilefriendlytest protected ()
     extends typings.googleapis.searchconsoleV1Mod.searchconsoleV1.ResourceUrltestingtoolsMobilefriendlytest {
     def this(context: APIRequestContext) = this()
   }
   
-  /**
-    * Google Search Console URL Testing Tools API
-    *
-    * Provides tools for running validation tests against single URLs
-    *
-    * @example
-    * const {google} = require('googleapis');
-    * const searchconsole = google.searchconsole('v1');
-    *
-    * @namespace searchconsole
-    * @type {Function}
-    * @version v1
-    * @variation v1
-    * @param {object=} options Options for Searchconsole
-    */
   @JSImport("googleapis", "searchconsole_v1.Searchconsole")
   @js.native
-  class Searchconsole protected ()
+  open class Searchconsole protected ()
     extends typings.googleapis.searchconsoleV1Mod.searchconsoleV1.Searchconsole {
     def this(options: GlobalOptions) = this()
     def this(options: GlobalOptions, google: GoogleConfigurable) = this()

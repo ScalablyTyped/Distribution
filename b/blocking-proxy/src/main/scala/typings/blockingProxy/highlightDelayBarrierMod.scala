@@ -11,24 +11,24 @@ object highlightDelayBarrierMod {
   
   @JSImport("blocking-proxy/built/lib/highlight_delay_barrier", "HighlightDelayBarrier")
   @js.native
-  class HighlightDelayBarrier protected ()
+  open class HighlightDelayBarrier protected ()
     extends StObject
        with WebDriverBarrier {
     def this(client: SimpleWebDriverClient, delay: Double) = this()
     
-    /* private */ var client: js.Any = js.native
+    /* private */ var client: Any = js.native
     
     var delay: Double = js.native
     
-    /* private */ def highlightData(top: js.Any, left: js.Any, width: js.Any, height: js.Any): js.Any = js.native
+    /* private */ def highlightData(top: Any, left: Any, width: Any, height: Any): Any = js.native
     
-    /* private */ def isHighlightCommand(command: js.Any): js.Any = js.native
+    /* private */ def isHighlightCommand(command: Any): Any = js.native
     
     /* CompleteClass */
     override def onCommand(command: WebDriverCommand): js.Promise[Unit] = js.native
     
-    /* private */ def removeHighlightData(): js.Any = js.native
+    /* private */ def removeHighlightData(): Any = js.native
     
-    /* private */ def sleep(delay: js.Any): js.Any = js.native
+    /* private */ def sleep(delay: Any): Any = js.native
   }
 }

@@ -36,6 +36,6 @@ object ContributionBase {
     
     inline def setVisibleTo(value: js.Array[String]): Self = StObject.set(x, "visibleTo", value.asInstanceOf[js.Any])
     
-    inline def setVisibleToVarargs(value: String*): Self = StObject.set(x, "visibleTo", js.Array(value :_*))
+    inline def setVisibleToVarargs(value: String*): Self = StObject.set(x, "visibleTo", js.Array(value*))
   }
 }

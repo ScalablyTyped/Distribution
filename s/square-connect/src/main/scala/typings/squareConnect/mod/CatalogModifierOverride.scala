@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CatalogModifierOverride")
 @js.native
-class CatalogModifierOverride () extends StObject {
+open class CatalogModifierOverride () extends StObject {
   
   /**
     * The ID of the `CatalogModifier` whose default behavior is being overridden.

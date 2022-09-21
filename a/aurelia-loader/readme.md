@@ -10,15 +10,13 @@ An abstract module which specifies an interface for loading modules and view tem
 | ------------------ | :-------------: |
 | Full name          | aurelia-loader |
 | Keywords           | aurelia, loader, modules |
-| # releases         | 3 |
-| # dependents       | 31 |
-| # downloads        | 506343 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 49662.666666666664 |
+| # stars            | 25.0 |
 
 ## Links
 - [Homepage](http://aurelia.io)
-- [Bugs](https://github.com/aurelia/loader/issues)
-- [Repository](https://github.com/aurelia/loader)
 - [Npm](https://www.npmjs.com/package/aurelia-loader)
     
 

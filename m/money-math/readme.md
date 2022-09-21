@@ -10,10 +10,10 @@ jsbn-based arbitrary precision operations on currency amounts "XXX.YY"; because 
 | ------------------ | :-------------: |
 | Full name          | money-math |
 | Keywords           | money, gmp, currency, bigint, bignum, jsbn, browser, browserify, arithmetic, arbitrary, precision, format |
-| # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 95652 |
-| # stars            | 8 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 9796.333333333334 |
+| # stars            | 96.0 |
 
 ## Links
 - [Homepage](https://github.com/ikr/money-math#readme)

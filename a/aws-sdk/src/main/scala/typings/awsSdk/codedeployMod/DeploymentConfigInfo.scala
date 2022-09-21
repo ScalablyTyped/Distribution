@@ -14,7 +14,7 @@ trait DeploymentConfigInfo extends StObject {
   /**
     * The time at which the deployment configuration was created.
     */
-  var createTime: js.UndefOr[Timestamp] = js.undefined
+  var createTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The deployment configuration ID.
@@ -49,7 +49,7 @@ object DeploymentConfigInfo {
     
     inline def setComputePlatformUndefined: Self = StObject.set(x, "computePlatform", js.undefined)
     
-    inline def setCreateTime(value: Timestamp): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: js.Date): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
     inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     

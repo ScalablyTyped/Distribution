@@ -14,14 +14,14 @@ object s3ClientMod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.AWSClient<InputTypesUnion, OutputTypesUnion, _stream.Readable> * / any */ @JSImport("@aws-sdk/client-s3-node/S3Client", "S3Client")
   @js.native
-  class S3Client protected () extends StObject {
+  open class S3Client protected () extends StObject {
     def this(configuration: S3Configuration) = this()
     
     val config: S3ResolvedConfiguration = js.native
     
     def destroy(): Unit = js.native
     
-    val middlewareStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any = js.native
+    val middlewareStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any = js.native
     
     /**
       * This will need to be revised when the command interface lands.
@@ -31,7 +31,7 @@ object s3ClientMod {
     ): js.Promise[OutputType] = js.native
     def send[InputType /* <: InputTypesUnion */, OutputType /* <: OutputTypesUnion */](
       command: Command[InputTypesUnion, InputType, OutputTypesUnion, OutputType, S3ResolvedConfiguration],
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[OutputType], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[OutputType], Unit]
     ): Unit = js.native
   }
 }

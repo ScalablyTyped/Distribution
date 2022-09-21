@@ -29,7 +29,7 @@ object GoogleActionsV2MediaResponse {
     
     inline def setMediaObjectsUndefined: Self = StObject.set(x, "mediaObjects", js.undefined)
     
-    inline def setMediaObjectsVarargs(value: GoogleActionsV2MediaObject*): Self = StObject.set(x, "mediaObjects", js.Array(value :_*))
+    inline def setMediaObjectsVarargs(value: GoogleActionsV2MediaObject*): Self = StObject.set(x, "mediaObjects", js.Array(value*))
     
     inline def setMediaType(value: GoogleActionsV2MediaResponseMediaType): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     

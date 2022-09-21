@@ -10,10 +10,10 @@ react-swipeable-views utility modules
 | ------------------ | :-------------: |
 | Full name          | react-swipeable-views-utils |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 54 |
-| # downloads        | 10201579 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1176313.6666666667 |
+| # stars            | 4196.0 |
 
 ## Links
 - [Homepage](https://github.com/oliviertassinari/react-swipeable-views#readme)

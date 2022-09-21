@@ -10,10 +10,10 @@ object chatBubbleMod {
   
   @JSImport("material-ui/svg-icons/communication/chat-bubble", JSImport.Default)
   @js.native
-  class default () extends CommunicationChatBubble
+  open class default () extends CommunicationChatBubble
   
   @JSImport("material-ui/svg-icons/communication/chat-bubble", "CommunicationChatBubble")
   @js.native
-  class CommunicationChatBubble ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class CommunicationChatBubble ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

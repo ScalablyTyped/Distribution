@@ -11,9 +11,9 @@ A localStorage wrapper for all browsers without using cookies or flash. Uses loc
 | Full name          | store |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 476 |
-| # downloads        | 7797336 |
-| # stars            | 43 |
+| # dependents       | 0.0 |
+| # downloads        | 813986.6666666666 |
+| # stars            | 13775.0 |
 
 ## Links
 - [Homepage](https://github.com/marcuswestin/store.js#readme)

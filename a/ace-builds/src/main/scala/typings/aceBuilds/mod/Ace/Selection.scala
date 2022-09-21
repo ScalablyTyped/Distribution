@@ -20,9 +20,9 @@ trait Selection
   
   def getAllRanges(): js.Array[Range] = js.native
   
-  def getAnchor(): Point = js.native
+  def getAnchor(): Position = js.native
   
-  def getCursor(): Point = js.native
+  def getCursor(): Position = js.native
   
   def getRange(): Range = js.native
   
@@ -57,7 +57,7 @@ trait Selection
   def moveCursorTo(row: Double, column: Double): Unit = js.native
   def moveCursorTo(row: Double, column: Double, keepDesiredColumn: Boolean): Unit = js.native
   
-  def moveCursorToPosition(position: js.Any): Unit = js.native
+  def moveCursorToPosition(position: Any): Unit = js.native
   
   def moveCursorToScreen(row: Double, column: Double, keepDesiredColumn: Boolean): Unit = js.native
   
@@ -89,7 +89,7 @@ trait Selection
   
   def selectTo(row: Double, column: Double): Unit = js.native
   
-  def selectToPosition(pos: js.Any): Unit = js.native
+  def selectToPosition(pos: Any): Unit = js.native
   
   def selectUp(): Unit = js.native
   
@@ -106,7 +106,7 @@ trait Selection
   def setRange(range: Range): Unit = js.native
   def setRange(range: Range, reverse: Boolean): Unit = js.native
   
-  def setSelectionRange(`match`: js.Any): Unit = js.native
+  def setSelectionRange(`match`: Any): Unit = js.native
   
   def toJSON(): SavedSelection | js.Array[SavedSelection] = js.native
 }

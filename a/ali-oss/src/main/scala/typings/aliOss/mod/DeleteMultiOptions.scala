@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DeleteMultiOptions extends StObject {
   
-  var quite: js.UndefOr[Boolean] = js.undefined
+  /** quite mode or verbose mode, default is false */
+  var quiet: js.UndefOr[Boolean] = js.undefined
   
-  // quite mode or verbose mode, default is false
   var timeout: js.UndefOr[Double] = js.undefined
 }
 object DeleteMultiOptions {
@@ -20,9 +20,9 @@ object DeleteMultiOptions {
   
   extension [Self <: DeleteMultiOptions](x: Self) {
     
-    inline def setQuite(value: Boolean): Self = StObject.set(x, "quite", value.asInstanceOf[js.Any])
+    inline def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
     
-    inline def setQuiteUndefined: Self = StObject.set(x, "quite", js.undefined)
+    inline def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
     
     inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     

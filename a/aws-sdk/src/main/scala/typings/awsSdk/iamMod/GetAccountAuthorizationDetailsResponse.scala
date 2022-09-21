@@ -49,7 +49,7 @@ object GetAccountAuthorizationDetailsResponse {
     
     inline def setGroupDetailListUndefined: Self = StObject.set(x, "GroupDetailList", js.undefined)
     
-    inline def setGroupDetailListVarargs(value: GroupDetail*): Self = StObject.set(x, "GroupDetailList", js.Array(value :_*))
+    inline def setGroupDetailListVarargs(value: GroupDetail*): Self = StObject.set(x, "GroupDetailList", js.Array(value*))
     
     inline def setIsTruncated(value: booleanType): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     
@@ -63,18 +63,18 @@ object GetAccountAuthorizationDetailsResponse {
     
     inline def setPoliciesUndefined: Self = StObject.set(x, "Policies", js.undefined)
     
-    inline def setPoliciesVarargs(value: ManagedPolicyDetail*): Self = StObject.set(x, "Policies", js.Array(value :_*))
+    inline def setPoliciesVarargs(value: ManagedPolicyDetail*): Self = StObject.set(x, "Policies", js.Array(value*))
     
     inline def setRoleDetailList(value: roleDetailListType): Self = StObject.set(x, "RoleDetailList", value.asInstanceOf[js.Any])
     
     inline def setRoleDetailListUndefined: Self = StObject.set(x, "RoleDetailList", js.undefined)
     
-    inline def setRoleDetailListVarargs(value: RoleDetail*): Self = StObject.set(x, "RoleDetailList", js.Array(value :_*))
+    inline def setRoleDetailListVarargs(value: RoleDetail*): Self = StObject.set(x, "RoleDetailList", js.Array(value*))
     
     inline def setUserDetailList(value: userDetailListType): Self = StObject.set(x, "UserDetailList", value.asInstanceOf[js.Any])
     
     inline def setUserDetailListUndefined: Self = StObject.set(x, "UserDetailList", js.undefined)
     
-    inline def setUserDetailListVarargs(value: UserDetail*): Self = StObject.set(x, "UserDetailList", js.Array(value :_*))
+    inline def setUserDetailListVarargs(value: UserDetail*): Self = StObject.set(x, "UserDetailList", js.Array(value*))
   }
 }

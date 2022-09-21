@@ -1,6 +1,8 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.IHandle
 import typings.arcgisJsApi.arcgisJsApiStrings.`base-dynamic`
+import typings.arcgisJsApi.arcgisJsApiStrings.refresh
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
@@ -16,11 +18,11 @@ trait BaseDynamicLayer
      with BlendLayer {
   
   /**
-    * Adds a promise to the layer's [loadable](https://developers.arcgis.com/javascript/latest/guide/programming-patterns/#loadable) chain.
+    * Adds a promise to the layer's [loadable](https://developers.arcgis.com/javascript/latest/programming-patterns/#loadable) chain.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseDynamicLayer.html#addResolvingPromise)
     */
-  def addResolvingPromise(promiseToLoad: js.Promise[js.Any]): js.Promise[js.Any] = js.native
+  def addResolvingPromise(promiseToLoad: js.Promise[Any]): js.Promise[Any] = js.native
   
   /**
     * This method fetches the image for the specified extent and size.
@@ -36,6 +38,9 @@ trait BaseDynamicLayer
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseDynamicLayer.html#getImageUrl)
     */
   def getImageUrl(extent: Extent, width: Double, height: Double): js.Promise[String] | String = js.native
+  
+  @JSName("on")
+  def on_refresh(name: refresh, eventHandler: BaseDynamicLayerRefreshEventHandler): IHandle = js.native
   
   @JSName("type")
   val type_BaseDynamicLayer: `base-dynamic` = js.native

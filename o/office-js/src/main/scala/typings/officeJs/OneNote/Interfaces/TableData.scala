@@ -4,45 +4,45 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface describing the data returned by calling "table.toJSON()". */
+/** An interface describing the data returned by calling `table.toJSON()`. */
 trait TableData extends StObject {
   
   /**
-    *
     * Gets or sets whether the borders are visible or not. True if they are visible, false if they are hidden.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var borderVisible: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets the number of columns in the table.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var columnCount: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Gets the ID of the table. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var id: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Gets the number of rows in the table.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var rowCount: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Gets all of the table rows. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var rows: js.UndefOr[js.Array[TableRowData]] = js.undefined
@@ -76,6 +76,6 @@ object TableData {
     
     inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    inline def setRowsVarargs(value: TableRowData*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: TableRowData*): Self = StObject.set(x, "rows", js.Array(value*))
   }
 }

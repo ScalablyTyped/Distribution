@@ -10,6 +10,17 @@ trait CategoryLegendCfg
      with LegendBaseCfg {
   
   /**
+    * 分页器配置
+    * @type {LegendPageNavigatorCfg}
+    */
+  var flipNavigation: js.UndefOr[LegendPageNavigatorCfg] = js.undefined
+  
+  /**
+    * 是否翻页
+    */
+  var flipPage: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * 图例的高度，默认为 null
     * @type {[type]}
     */
@@ -63,10 +74,21 @@ trait CategoryLegendCfg
   var maxItemWidth: js.UndefOr[Double] = js.undefined
   
   /**
+    * 翻页行数（只适用于横向）
+    */
+  var maxRow: js.UndefOr[Double] = js.undefined
+  
+  /**
     * 最大宽度
     * @type {number}
     */
   var maxWidth: js.UndefOr[Double] = js.undefined
+  
+  /**
+    *
+    * @type {LegendRadio}
+    */
+  var radio: js.UndefOr[LegendRadio] = js.undefined
 }
 object CategoryLegendCfg {
   
@@ -76,6 +98,14 @@ object CategoryLegendCfg {
   }
   
   extension [Self <: CategoryLegendCfg](x: Self) {
+    
+    inline def setFlipNavigation(value: LegendPageNavigatorCfg): Self = StObject.set(x, "flipNavigation", value.asInstanceOf[js.Any])
+    
+    inline def setFlipNavigationUndefined: Self = StObject.set(x, "flipNavigation", js.undefined)
+    
+    inline def setFlipPage(value: Boolean): Self = StObject.set(x, "flipPage", value.asInstanceOf[js.Any])
+    
+    inline def setFlipPageUndefined: Self = StObject.set(x, "flipPage", js.undefined)
     
     inline def setItemHeight(value: Double): Self = StObject.set(x, "itemHeight", value.asInstanceOf[js.Any])
     
@@ -99,7 +129,7 @@ object CategoryLegendCfg {
     
     inline def setItems(value: js.Array[ListItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: ListItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ListItem*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setMarker(value: LegendMarkerCfg): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
@@ -113,8 +143,16 @@ object CategoryLegendCfg {
     
     inline def setMaxItemWidthUndefined: Self = StObject.set(x, "maxItemWidth", js.undefined)
     
+    inline def setMaxRow(value: Double): Self = StObject.set(x, "maxRow", value.asInstanceOf[js.Any])
+    
+    inline def setMaxRowUndefined: Self = StObject.set(x, "maxRow", js.undefined)
+    
     inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
     inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+    
+    inline def setRadio(value: LegendRadio): Self = StObject.set(x, "radio", value.asInstanceOf[js.Any])
+    
+    inline def setRadioUndefined: Self = StObject.set(x, "radio", js.undefined)
   }
 }

@@ -75,6 +75,9 @@ trait LiveBroadcastContentDetails extends StObject {
     * need to send a liveCuepoints.insert request that sets the cuepoint's eventState to end to remove the in-stream slate and make your broadcast stream visible to viewers.
     */
   var startWithSlate: js.UndefOr[Boolean] = js.undefined
+  
+  /** The 3D stereo layout of this broadcast. This defaults to mono. */
+  var stereoLayout: js.UndefOr[String] = js.undefined
 }
 object LiveBroadcastContentDetails {
   
@@ -148,5 +151,9 @@ object LiveBroadcastContentDetails {
     inline def setStartWithSlate(value: Boolean): Self = StObject.set(x, "startWithSlate", value.asInstanceOf[js.Any])
     
     inline def setStartWithSlateUndefined: Self = StObject.set(x, "startWithSlate", js.undefined)
+    
+    inline def setStereoLayout(value: String): Self = StObject.set(x, "stereoLayout", value.asInstanceOf[js.Any])
+    
+    inline def setStereoLayoutUndefined: Self = StObject.set(x, "stereoLayout", js.undefined)
   }
 }

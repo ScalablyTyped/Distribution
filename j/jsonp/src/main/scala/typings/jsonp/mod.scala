@@ -1,6 +1,5 @@
 package typings.jsonp
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,5 +55,5 @@ object mod {
     }
   }
   
-  type RequestCallback = js.Function2[/* error */ Error | Null, /* data */ js.Any, Unit]
+  type RequestCallback = js.Function2[/* error */ js.Error | Null, /* data */ Any, Unit]
 }

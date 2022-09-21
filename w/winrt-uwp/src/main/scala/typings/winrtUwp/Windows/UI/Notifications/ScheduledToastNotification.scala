@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.UI.Notifications
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Data.Xml.Dom.XmlDocument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,7 +12,7 @@ trait ScheduledToastNotification extends StObject {
   var content: XmlDocument
   
   /** Gets the time that this toast notification is scheduled to be displayed. */
-  var deliveryTime: Date
+  var deliveryTime: js.Date
   
   /** Gets or sets the group identifier for the notification. */
   var group: String
@@ -37,7 +36,7 @@ object ScheduledToastNotification {
   
   inline def apply(
     content: XmlDocument,
-    deliveryTime: Date,
+    deliveryTime: js.Date,
     group: String,
     id: String,
     maximumSnoozeCount: Double,
@@ -53,7 +52,7 @@ object ScheduledToastNotification {
     
     inline def setContent(value: XmlDocument): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    inline def setDeliveryTime(value: Date): Self = StObject.set(x, "deliveryTime", value.asInstanceOf[js.Any])
+    inline def setDeliveryTime(value: js.Date): Self = StObject.set(x, "deliveryTime", value.asInstanceOf[js.Any])
     
     inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     

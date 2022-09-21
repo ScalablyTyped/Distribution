@@ -14,7 +14,7 @@ trait DisassociateTransitGatewayMulticastDomainRequest extends StObject {
   /**
     * The IDs of the subnets;
     */
-  var SubnetIds: js.UndefOr[ValueStringList] = js.undefined
+  var SubnetIds: js.UndefOr[TransitGatewaySubnetIdList] = js.undefined
   
   /**
     * The ID of the attachment.
@@ -39,11 +39,11 @@ object DisassociateTransitGatewayMulticastDomainRequest {
     
     inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    inline def setSubnetIds(value: ValueStringList): Self = StObject.set(x, "SubnetIds", value.asInstanceOf[js.Any])
+    inline def setSubnetIds(value: TransitGatewaySubnetIdList): Self = StObject.set(x, "SubnetIds", value.asInstanceOf[js.Any])
     
     inline def setSubnetIdsUndefined: Self = StObject.set(x, "SubnetIds", js.undefined)
     
-    inline def setSubnetIdsVarargs(value: String*): Self = StObject.set(x, "SubnetIds", js.Array(value :_*))
+    inline def setSubnetIdsVarargs(value: SubnetId*): Self = StObject.set(x, "SubnetIds", js.Array(value*))
     
     inline def setTransitGatewayAttachmentId(value: TransitGatewayAttachmentId): Self = StObject.set(x, "TransitGatewayAttachmentId", value.asInstanceOf[js.Any])
     

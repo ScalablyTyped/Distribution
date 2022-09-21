@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Partial<@popperjs/core.@popperjs/core/lib/types.OptionsGeneric<any>> */
 trait PartialOptionsGenericany extends StObject {
   
-  var modifiers: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var modifiers: js.UndefOr[js.Array[Any]] = js.undefined
   
   var onFirstUpdate: js.UndefOr[js.Function1[/* arg0 */ PartialState, Unit]] = js.undefined
   
@@ -25,11 +25,11 @@ object PartialOptionsGenericany {
   
   extension [Self <: PartialOptionsGenericany](x: Self) {
     
-    inline def setModifiers(value: js.Array[js.Any]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+    inline def setModifiers(value: js.Array[Any]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     
     inline def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
     
-    inline def setModifiersVarargs(value: js.Any*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
+    inline def setModifiersVarargs(value: Any*): Self = StObject.set(x, "modifiers", js.Array(value*))
     
     inline def setOnFirstUpdate(value: /* arg0 */ PartialState => Unit): Self = StObject.set(x, "onFirstUpdate", js.Any.fromFunction1(value))
     

@@ -20,7 +20,7 @@ trait DropCap extends StObject {
   
   var LinesToDrop: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Position: WdDropPosition
   
@@ -37,7 +37,7 @@ object DropCap {
     Enable: () => Unit,
     FontName: String,
     LinesToDrop: Double,
-    Parent: js.Any,
+    Parent: Any,
     Position: WdDropPosition,
     WordDotDropCap_typekey: DropCap
   ): DropCap = {
@@ -62,7 +62,7 @@ object DropCap {
     
     inline def setLinesToDrop(value: Double): Self = StObject.set(x, "LinesToDrop", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPosition(value: WdDropPosition): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     

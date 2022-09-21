@@ -32,6 +32,6 @@ object INxStackPage {
     
     inline def setQData(value: js.Array[INxStackedPivotCell]): Self = StObject.set(x, "qData", value.asInstanceOf[js.Any])
     
-    inline def setQDataVarargs(value: INxStackedPivotCell*): Self = StObject.set(x, "qData", js.Array(value :_*))
+    inline def setQDataVarargs(value: INxStackedPivotCell*): Self = StObject.set(x, "qData", js.Array(value*))
   }
 }

@@ -4,21 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A lightweight reference to a Team Drive.
-  */
 trait SchemaTeamDriveReference extends StObject {
   
   /**
-    * The resource name of the Team Drive. The format is
-    * &quot;teamDrives/TEAM_DRIVE_ID&quot;.
+    * This field is deprecated; please see `DriveReference.name` instead.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The title of the Team Drive.
+    * This field is deprecated; please see `DriveReference.title` instead.
     */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaTeamDriveReference {
   
@@ -31,9 +27,13 @@ object SchemaTeamDriveReference {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleNull: Self = StObject.set(x, "title", null)
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }

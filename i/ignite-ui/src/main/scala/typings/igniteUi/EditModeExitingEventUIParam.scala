@@ -29,7 +29,7 @@ trait EditModeExitingEventUIParam extends StObject {
   /**
     * Gets a reference to the spreadsheet widget.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
 }
 object EditModeExitingEventUIParam {
   
@@ -56,7 +56,7 @@ object EditModeExitingEventUIParam {
     
     inline def setEditTextUndefined: Self = StObject.set(x, "editText", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }

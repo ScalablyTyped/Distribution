@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientLoadingPanel")
 @js.native
-class ASPxClientLoadingPanel ()
+open class ASPxClientLoadingPanel ()
   extends StObject
      with typings.devexpressWeb.ASPxClientLoadingPanel {
   
@@ -37,13 +37,13 @@ class ASPxClientLoadingPanel ()
     * Returns an HTML element that is the root of the control's hierarchy.
     */
   /* CompleteClass */
-  override def GetMainElement(): js.Any = js.native
+  override def GetMainElement(): Any = js.native
   
   /**
     * Returns a client instance of the control that is the parent for a specified control.
     */
   /* CompleteClass */
-  override def GetParentControl(): js.Any = js.native
+  override def GetParentControl(): Any = js.native
   
   /**
     * Gets the text displayed within the ASPxLoadingPanel.
@@ -142,7 +142,7 @@ class ASPxClientLoadingPanel ()
     * @param htmlElement An object that specifies the required HTML element.
     */
   /* CompleteClass */
-  override def ShowInElement(htmlElement: js.Any): Unit = js.native
+  override def ShowInElement(htmlElement: Any): Unit = js.native
   
   /**
     * Invokes the loading panel, displaying it over the specified element.
@@ -168,5 +168,5 @@ object ASPxClientLoadingPanel {
     * @param obj The client object to be type cast.
     */
   /* static member */
-  inline def Cast(obj: js.Any): typings.devexpressWeb.ASPxClientLoadingPanel = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ASPxClientLoadingPanel]
+  inline def Cast(obj: Any): typings.devexpressWeb.ASPxClientLoadingPanel = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ASPxClientLoadingPanel]
 }

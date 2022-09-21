@@ -1,45 +1,66 @@
 package typings.materialUiCore
 
-import typings.react.mod.Component
-import typings.react.mod.ReactElement
 import typings.react.mod.ReactInstance
+import typings.react.mod.ReactNode
+import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object portalPortalMod {
   
-  @JSImport("@material-ui/core/Portal/Portal", JSImport.Default)
+  @JSImport("@material-ui/core/Portal/Portal", JSImport.Namespace)
   @js.native
-  class default ()
-    extends Component[PortalProps, js.Object, js.Any]
+  val ^ : js.Any = js.native
   
-  type Portal = Component[PortalProps, js.Object, js.Any]
+  inline def default(props: PortalProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait PortalProps extends StObject {
     
-    var children: ReactElement
+    /**
+      * The children to render into the `container`.
+      */
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var container: js.UndefOr[ReactInstance | js.Function0[ReactInstance] | Null] = js.undefined
+    /**
+      * A HTML element, component instance, or function that returns either.
+      * The `container` will have the portal children appended to it.
+      *
+      * By default, it uses the body of the top-level document object,
+      * so it's simply `document.body` most of the time.
+      */
+    var container: js.UndefOr[ReactInstance | (js.Function0[ReactInstance | Null]) | Null] = js.undefined
     
+    /**
+      * Disable the portal behavior.
+      * The children stay within it's parent DOM hierarchy.
+      */
     var disablePortal: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Callback fired once the children has been mounted into the `container`.
+      *
+      * This prop will be removed in v5, the ref can be used instead.
+      * @deprecated Use the ref instead.
+      */
     var onRendered: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object PortalProps {
     
-    inline def apply(children: ReactElement): PortalProps = {
-      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    inline def apply(): PortalProps = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PortalProps]
     }
     
     extension [Self <: PortalProps](x: Self) {
       
-      inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setContainer(value: ReactInstance | js.Function0[ReactInstance]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setContainerFunction0(value: () => ReactInstance): Self = StObject.set(x, "container", js.Any.fromFunction0(value))
+      inline def setContainer(value: ReactInstance | (js.Function0[ReactInstance | Null])): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      
+      inline def setContainerFunction0(value: () => ReactInstance | Null): Self = StObject.set(x, "container", js.Any.fromFunction0(value))
       
       inline def setContainerNull: Self = StObject.set(x, "container", null)
       

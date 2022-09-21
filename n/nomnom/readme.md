@@ -9,10 +9,10 @@ Option parser with generated usage and commands
 | ------------------ | :-------------: |
 | Full name          | nomnom |
 | Keywords           | arguments, option parser, command line, options, parser |
-| # releases         | 0 |
-| # dependents       | 549 |
-| # downloads        | 48680202 |
-| # stars            | 32 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2833324.3333333335 |
+| # stars            | 473.0 |
 
 ## Links
 - [Homepage](https://github.com/harthur/nomnom)

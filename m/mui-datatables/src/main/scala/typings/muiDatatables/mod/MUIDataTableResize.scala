@@ -12,9 +12,9 @@ trait MUIDataTableResize extends StObject {
   
   var rowSelected: js.UndefOr[Boolean] = js.undefined
   
-  var setResizeable: js.UndefOr[js.Function1[/* args */ js.Any, js.Any]] = js.undefined
+  var setResizeable: js.UndefOr[js.Function1[/* args */ Any, Any]] = js.undefined
   
-  var updateDividers: js.UndefOr[js.Function1[/* args */ js.Any, js.Any]] = js.undefined
+  var updateDividers: js.UndefOr[js.Function1[/* args */ Any, Any]] = js.undefined
 }
 object MUIDataTableResize {
   
@@ -37,11 +37,11 @@ object MUIDataTableResize {
     
     inline def setRowSelectedUndefined: Self = StObject.set(x, "rowSelected", js.undefined)
     
-    inline def setSetResizeable(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "setResizeable", js.Any.fromFunction1(value))
+    inline def setSetResizeable(value: /* args */ Any => Any): Self = StObject.set(x, "setResizeable", js.Any.fromFunction1(value))
     
     inline def setSetResizeableUndefined: Self = StObject.set(x, "setResizeable", js.undefined)
     
-    inline def setUpdateDividers(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "updateDividers", js.Any.fromFunction1(value))
+    inline def setUpdateDividers(value: /* args */ Any => Any): Self = StObject.set(x, "updateDividers", js.Any.fromFunction1(value))
     
     inline def setUpdateDividersUndefined: Self = StObject.set(x, "updateDividers", js.undefined)
   }

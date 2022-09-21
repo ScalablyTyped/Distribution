@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "TmpColors")
 @js.native
-class TmpColors ()
+open class TmpColors ()
   extends typings.babylonjs.mathsIndexMod.TmpColors
 /* static members */
 object TmpColors {

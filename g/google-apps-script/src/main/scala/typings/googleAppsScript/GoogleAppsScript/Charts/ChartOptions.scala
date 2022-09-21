@@ -15,17 +15,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait ChartOptions extends StObject {
   
-  def get(option: String): js.Any
+  def get(option: String): Any
 }
 object ChartOptions {
   
-  inline def apply(get: String => js.Any): ChartOptions = {
+  inline def apply(get: String => Any): ChartOptions = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
     __obj.asInstanceOf[ChartOptions]
   }
   
   extension [Self <: ChartOptions](x: Self) {
     
-    inline def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: String => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
   }
 }

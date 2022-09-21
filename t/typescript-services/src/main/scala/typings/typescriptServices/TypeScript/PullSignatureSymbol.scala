@@ -10,15 +10,15 @@ trait PullSignatureSymbol
      with PullSymbol
      with InstantiableSymbol {
   
-  /* private */ var _allowedToReferenceTypeParameters: js.Any = js.native
+  /* private */ var _allowedToReferenceTypeParameters: Any = js.native
   
-  /* private */ var _instantiationCache: js.Any = js.native
+  /* private */ var _instantiationCache: Any = js.native
   
-  /* private */ var _isDefinition: js.Any = js.native
+  /* private */ var _isDefinition: Any = js.native
   
-  /* private */ var _memberTypeParameterNameCache: js.Any = js.native
+  /* private */ var _memberTypeParameterNameCache: Any = js.native
   
-  /* private */ var _stringConstantOverload: js.Any = js.native
+  /* private */ var _stringConstantOverload: Any = js.native
   
   var _typeParameters: js.Array[PullTypeParameterSymbol] = js.native
   
@@ -26,7 +26,7 @@ trait PullSignatureSymbol
   
   def _wrapsSomeTypeParameterIntoInfinitelyExpandingTypeReferenceWorker(enclosingType: PullTypeSymbol, knownWrapMap: IBitMatrix): Boolean = js.native
   
-  /* private */ var _wrapsTypeParameterCache: js.Any = js.native
+  /* private */ var _wrapsTypeParameterCache: Any = js.native
   
   def addParameter(parameter: PullSymbol): Unit = js.native
   def addParameter(parameter: PullSymbol, isOptional: Boolean): Unit = js.native

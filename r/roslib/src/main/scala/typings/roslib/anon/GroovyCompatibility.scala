@@ -2,6 +2,7 @@ package typings.roslib.anon
 
 import typings.roslib.roslibStrings.socketDotio
 import typings.roslib.roslibStrings.websocket
+import typings.roslib.roslibStrings.workersocket
 import typings.std.RTCDataChannelInit
 import typings.std.RTCPeerConnection
 import org.scalablytyped.runtime.StObject
@@ -12,7 +13,7 @@ trait GroovyCompatibility extends StObject {
   
   var groovyCompatibility: js.UndefOr[Boolean] = js.undefined
   
-  var transportLibrary: js.UndefOr[websocket | socketDotio | RTCPeerConnection] = js.undefined
+  var transportLibrary: js.UndefOr[websocket | workersocket | socketDotio | RTCPeerConnection] = js.undefined
   
   var transportOptions: js.UndefOr[RTCDataChannelInit] = js.undefined
   
@@ -31,7 +32,7 @@ object GroovyCompatibility {
     
     inline def setGroovyCompatibilityUndefined: Self = StObject.set(x, "groovyCompatibility", js.undefined)
     
-    inline def setTransportLibrary(value: websocket | socketDotio | RTCPeerConnection): Self = StObject.set(x, "transportLibrary", value.asInstanceOf[js.Any])
+    inline def setTransportLibrary(value: websocket | workersocket | socketDotio | RTCPeerConnection): Self = StObject.set(x, "transportLibrary", value.asInstanceOf[js.Any])
     
     inline def setTransportLibraryUndefined: Self = StObject.set(x, "transportLibrary", js.undefined)
     

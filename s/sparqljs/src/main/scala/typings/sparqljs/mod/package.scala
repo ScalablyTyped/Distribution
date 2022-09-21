@@ -1,11 +1,16 @@
 package typings.sparqljs.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.rdfjsTypes.dataModelMod.BlankNode
+import typings.rdfjsTypes.dataModelMod.Literal
+import typings.rdfjsTypes.dataModelMod.NamedNode
+import typings.rdfjsTypes.dataModelMod.Quad
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type BlankTerm = typings.rdfJs.mod.BlankNode
+type BlankTerm = BlankNode
 
 /* Rewritten from type alias, can be one of: 
   - typings.sparqljs.mod.OperationExpression
@@ -17,21 +22,18 @@ type BlankTerm = typings.rdfJs.mod.BlankNode
   - typings.sparqljs.mod.Tuple
   - typings.sparqljs.mod.Term
 */
-type Expression = typings.sparqljs.mod._Expression | typings.sparqljs.mod.Term
+type Expression = _Expression | Term
 
-type IriTerm = typings.rdfJs.mod.NamedNode[java.lang.String]
+type IriTerm = NamedNode[String]
 
-type LiteralTerm = typings.rdfJs.mod.Literal
+type LiteralTerm = Literal
 
-type QuadTerm = typings.rdfJs.mod.Quad
+type QuadTerm = Quad
 
-type Term = typings.sparqljs.mod.VariableTerm | typings.sparqljs.mod.IriTerm | typings.sparqljs.mod.LiteralTerm | typings.sparqljs.mod.BlankTerm | typings.sparqljs.mod.QuadTerm
+type Term = VariableTerm | IriTerm | LiteralTerm | BlankTerm | QuadTerm
 
-type ValuePatternRow = org.scalablytyped.runtime.StringDictionary[
-js.UndefOr[
-  typings.sparqljs.mod.IriTerm | typings.sparqljs.mod.BlankTerm | typings.sparqljs.mod.LiteralTerm
-]]
+type ValuePatternRow = StringDictionary[js.UndefOr[IriTerm | BlankTerm | LiteralTerm]]
 
-type Variable = typings.sparqljs.mod.VariableExpression | typings.sparqljs.mod.VariableTerm
+type Variable = VariableExpression | VariableTerm
 
-type VariableTerm = typings.rdfJs.mod.Variable
+type VariableTerm = typings.rdfjsTypes.dataModelMod.Variable

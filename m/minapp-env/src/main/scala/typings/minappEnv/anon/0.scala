@@ -10,7 +10,7 @@ trait `0` extends StObject {
   @JSName(js.Symbol.replace)
   var replace: js.Function2[
     /* string */ String, 
-    /* replacer */ js.Function2[/* substring */ String, /* repeated */ js.Any, String], 
+    /* replacer */ js.Function2[/* substring */ String, /* repeated */ Any, String], 
     String
   ] = js.native
 }

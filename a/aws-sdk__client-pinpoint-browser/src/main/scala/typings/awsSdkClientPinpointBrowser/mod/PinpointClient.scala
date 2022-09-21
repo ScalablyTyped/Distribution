@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-pinpoint-browser", "PinpointClient")
 @js.native
-class PinpointClient protected ()
+open class PinpointClient protected ()
   extends typings.awsSdkClientPinpointBrowser.pinpointClientMod.PinpointClient {
   def this(configuration: PinpointConfiguration) = this()
 }

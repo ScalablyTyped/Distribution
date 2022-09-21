@@ -6,16 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ReportStatus extends StObject {
   
-  /** If the report failed, this records the cause. */
-  var failure: js.UndefOr[ReportFailure] = js.undefined
-  
-  /** The time when this report either completed successfully or failed. */
-  var finishTimeMs: js.UndefOr[String] = js.undefined
+  /** Output only. The time when this report either completed successfully or failed. */
+  var finishTime: js.UndefOr[String] = js.undefined
   
   /** The file type of the report. */
   var format: js.UndefOr[String] = js.undefined
   
-  /** The state of the report. */
+  /** Output only. The state of the report. */
   var state: js.UndefOr[String] = js.undefined
 }
 object ReportStatus {
@@ -27,13 +24,9 @@ object ReportStatus {
   
   extension [Self <: ReportStatus](x: Self) {
     
-    inline def setFailure(value: ReportFailure): Self = StObject.set(x, "failure", value.asInstanceOf[js.Any])
+    inline def setFinishTime(value: String): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
     
-    inline def setFailureUndefined: Self = StObject.set(x, "failure", js.undefined)
-    
-    inline def setFinishTimeMs(value: String): Self = StObject.set(x, "finishTimeMs", value.asInstanceOf[js.Any])
-    
-    inline def setFinishTimeMsUndefined: Self = StObject.set(x, "finishTimeMs", js.undefined)
+    inline def setFinishTimeUndefined: Self = StObject.set(x, "finishTime", js.undefined)
     
     inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

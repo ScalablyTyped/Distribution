@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("blessed", "Widgets.LineElement")
 @js.native
-class LineElement protected () extends BoxElement {
+open class LineElement protected () extends BoxElement {
   def this(opts: LineOptions) = this()
   
   /**

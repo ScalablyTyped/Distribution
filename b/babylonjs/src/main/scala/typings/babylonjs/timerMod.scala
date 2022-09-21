@@ -17,7 +17,7 @@ object timerMod {
   
   @JSImport("babylonjs/Misc/timer", "AdvancedTimer")
   @js.native
-  class AdvancedTimer[T] protected ()
+  open class AdvancedTimer[T] protected ()
     extends StObject
        with IDisposable {
     /**
@@ -26,29 +26,29 @@ object timerMod {
       */
     def this(options: ITimerOptions[T]) = this()
     
-    /* private */ var _breakCondition: js.Any = js.native
+    /* private */ var _breakCondition: Any = js.native
     
-    /* private */ var _breakOnNextTick: js.Any = js.native
+    /* private */ var _breakOnNextTick: Any = js.native
     
-    /* private */ var _contextObservable: js.Any = js.native
+    /* private */ var _contextObservable: Any = js.native
     
-    /* private */ var _observableParameters: js.Any = js.native
+    /* private */ var _observableParameters: Any = js.native
     
-    /* private */ var _observer: js.Any = js.native
+    /* private */ var _observer: Any = js.native
     
-    /* private */ var _setState: js.Any = js.native
+    /* private */ var _setState: Any = js.native
     
-    /* private */ var _startTime: js.Any = js.native
+    /* private */ var _startTime: Any = js.native
     
-    /* private */ var _state: js.Any = js.native
+    /* private */ var _state: Any = js.native
     
-    /* private */ var _stop: js.Any = js.native
+    /* private */ var _stop: Any = js.native
     
-    /* private */ var _tick: js.Any = js.native
+    /* private */ var _tick: Any = js.native
     
-    /* private */ var _timeToEnd: js.Any = js.native
+    /* private */ var _timeToEnd: Any = js.native
     
-    /* private */ var _timer: js.Any = js.native
+    /* private */ var _timer: Any = js.native
     
     /**
       * set a breaking condition for this timer. Default is to never break during count
@@ -138,7 +138,7 @@ object timerMod {
     /* 1 */ val STARTED: typings.babylonjs.timerMod.TimerState.STARTED & Double = js.native
   }
   
-  inline def setAndStartTimer(options: ITimerOptions[js.Any]): Nullable[Observer[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("setAndStartTimer")(options.asInstanceOf[js.Any]).asInstanceOf[Nullable[Observer[js.Any]]]
+  inline def setAndStartTimer(options: ITimerOptions[Any]): Nullable[Observer[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("setAndStartTimer")(options.asInstanceOf[js.Any]).asInstanceOf[Nullable[Observer[Any]]]
   
   trait ITimerData[T] extends StObject {
     
@@ -211,17 +211,17 @@ object timerMod {
     /**
       * Will be triggered when the break condition has met (prematurely ended)
       */
-    var onAborted: js.UndefOr[js.Function1[/* data */ ITimerData[js.Any], Unit]] = js.undefined
+    var onAborted: js.UndefOr[js.Function1[/* data */ ITimerData[Any], Unit]] = js.undefined
     
     /**
       * Will be triggered when the time condition has met
       */
-    var onEnded: js.UndefOr[js.Function1[/* data */ ITimerData[js.Any], Unit]] = js.undefined
+    var onEnded: js.UndefOr[js.Function1[/* data */ ITimerData[Any], Unit]] = js.undefined
     
     /**
       * Optional function to execute on each tick (or count)
       */
-    var onTick: js.UndefOr[js.Function1[/* data */ ITimerData[js.Any], Unit]] = js.undefined
+    var onTick: js.UndefOr[js.Function1[/* data */ ITimerData[Any], Unit]] = js.undefined
     
     /**
       * Time-to-end
@@ -247,15 +247,15 @@ object timerMod {
       
       inline def setObservableParametersUndefined: Self = StObject.set(x, "observableParameters", js.undefined)
       
-      inline def setOnAborted(value: /* data */ ITimerData[js.Any] => Unit): Self = StObject.set(x, "onAborted", js.Any.fromFunction1(value))
+      inline def setOnAborted(value: /* data */ ITimerData[Any] => Unit): Self = StObject.set(x, "onAborted", js.Any.fromFunction1(value))
       
       inline def setOnAbortedUndefined: Self = StObject.set(x, "onAborted", js.undefined)
       
-      inline def setOnEnded(value: /* data */ ITimerData[js.Any] => Unit): Self = StObject.set(x, "onEnded", js.Any.fromFunction1(value))
+      inline def setOnEnded(value: /* data */ ITimerData[Any] => Unit): Self = StObject.set(x, "onEnded", js.Any.fromFunction1(value))
       
       inline def setOnEndedUndefined: Self = StObject.set(x, "onEnded", js.undefined)
       
-      inline def setOnTick(value: /* data */ ITimerData[js.Any] => Unit): Self = StObject.set(x, "onTick", js.Any.fromFunction1(value))
+      inline def setOnTick(value: /* data */ ITimerData[Any] => Unit): Self = StObject.set(x, "onTick", js.Any.fromFunction1(value))
       
       inline def setOnTickUndefined: Self = StObject.set(x, "onTick", js.undefined)
       

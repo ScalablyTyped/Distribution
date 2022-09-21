@@ -13,10 +13,9 @@ trait SchemaAcceleratorTypesScopedList extends StObject {
   var acceleratorTypes: js.UndefOr[js.Array[SchemaAcceleratorType]] = js.undefined
   
   /**
-    * [Output Only] An informational warning that appears when the accelerator
-    * types list is empty.
+    * [Output Only] An informational warning that appears when the accelerator types list is empty.
     */
-  var warning: js.UndefOr[Code] = js.undefined
+  var warning: js.UndefOr[Code | Null] = js.undefined
 }
 object SchemaAcceleratorTypesScopedList {
   
@@ -31,9 +30,11 @@ object SchemaAcceleratorTypesScopedList {
     
     inline def setAcceleratorTypesUndefined: Self = StObject.set(x, "acceleratorTypes", js.undefined)
     
-    inline def setAcceleratorTypesVarargs(value: SchemaAcceleratorType*): Self = StObject.set(x, "acceleratorTypes", js.Array(value :_*))
+    inline def setAcceleratorTypesVarargs(value: SchemaAcceleratorType*): Self = StObject.set(x, "acceleratorTypes", js.Array(value*))
     
     inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    
+    inline def setWarningNull: Self = StObject.set(x, "warning", null)
     
     inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }

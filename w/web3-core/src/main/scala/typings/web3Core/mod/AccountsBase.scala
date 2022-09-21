@@ -1,14 +1,13 @@
 package typings.web3Core.mod
 
 import typings.node.netMod.Socket
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("web3-core", "AccountsBase")
 @js.native
-class AccountsBase () extends StObject {
+open class AccountsBase () extends StObject {
   def this(provider: typings.web3Core.mod.provider) = this()
   def this(provider: typings.web3Core.mod.provider, net: Socket) = this()
   
@@ -21,7 +20,7 @@ class AccountsBase () extends StObject {
   
   def encrypt(privateKey: String, password: String): EncryptedKeystoreV3Json = js.native
   
-  val givenProvider: js.Any = js.native
+  val givenProvider: Any = js.native
   
   def hashMessage(message: String): String = js.native
   
@@ -44,7 +43,7 @@ class AccountsBase () extends StObject {
   def signTransaction(
     transactionConfig: TransactionConfig,
     privateKey: String,
-    callback: js.Function2[/* error */ Error, /* signedTransaction */ SignedTransaction, Unit]
+    callback: js.Function2[/* error */ js.Error, /* signedTransaction */ SignedTransaction, Unit]
   ): js.Promise[SignedTransaction] = js.native
   
   var wallet: WalletBase = js.native

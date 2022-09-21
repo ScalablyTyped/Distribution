@@ -8,7 +8,7 @@ object anon {
   
   trait Exports extends StObject {
     
-    var exports: js.Any
+    var exports: Any
     
     var fullpath: String
     
@@ -16,20 +16,20 @@ object anon {
   }
   object Exports {
     
-    inline def apply(exports: js.Any, fullpath: String, properties: js.Array[String]): Exports = {
+    inline def apply(exports: Any, fullpath: String, properties: js.Array[String]): Exports = {
       val __obj = js.Dynamic.literal(exports = exports.asInstanceOf[js.Any], fullpath = fullpath.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
       __obj.asInstanceOf[Exports]
     }
     
     extension [Self <: Exports](x: Self) {
       
-      inline def setExports(value: js.Any): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
+      inline def setExports(value: Any): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
       
       inline def setFullpath(value: String): Self = StObject.set(x, "fullpath", value.asInstanceOf[js.Any])
       
       inline def setProperties(value: js.Array[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      inline def setPropertiesVarargs(value: String*): Self = StObject.set(x, "properties", js.Array(value :_*))
+      inline def setPropertiesVarargs(value: String*): Self = StObject.set(x, "properties", js.Array(value*))
     }
   }
   
@@ -73,7 +73,7 @@ object anon {
     
     var ignore: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var initializer: js.UndefOr[js.Function2[/* obj */ js.Object, /* options */ Path, js.Any]] = js.undefined
+    var initializer: js.UndefOr[js.Function2[/* obj */ js.Object, /* options */ Path, Any]] = js.undefined
     
     var inject: js.UndefOr[js.Object] = js.undefined
     
@@ -108,7 +108,7 @@ object anon {
       
       inline def setDirectoryUndefined: Self = StObject.set(x, "directory", js.undefined)
       
-      inline def setDirectoryVarargs(value: String*): Self = StObject.set(x, "directory", js.Array(value :_*))
+      inline def setDirectoryVarargs(value: String*): Self = StObject.set(x, "directory", js.Array(value*))
       
       inline def setFieldClass(value: String): Self = StObject.set(x, "fieldClass", value.asInstanceOf[js.Any])
       
@@ -122,9 +122,9 @@ object anon {
       
       inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value*))
       
-      inline def setInitializer(value: (/* obj */ js.Object, /* options */ Path) => js.Any): Self = StObject.set(x, "initializer", js.Any.fromFunction2(value))
+      inline def setInitializer(value: (/* obj */ js.Object, /* options */ Path) => Any): Self = StObject.set(x, "initializer", js.Any.fromFunction2(value))
       
       inline def setInitializerUndefined: Self = StObject.set(x, "initializer", js.undefined)
       
@@ -136,7 +136,7 @@ object anon {
       
       inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
       
-      inline def setMatchVarargs(value: String*): Self = StObject.set(x, "match", js.Array(value :_*))
+      inline def setMatchVarargs(value: String*): Self = StObject.set(x, "match", js.Array(value*))
       
       inline def setOverride(value: Boolean): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
       
@@ -165,7 +165,7 @@ object anon {
     
     var ignore: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var initializer: js.UndefOr[js.Function2[/* obj */ js.Object, /* options */ Path, js.Any]] = js.undefined
+    var initializer: js.UndefOr[js.Function2[/* obj */ js.Object, /* options */ Path, Any]] = js.undefined
     
     var inject: js.UndefOr[js.Object] = js.undefined
     
@@ -198,7 +198,7 @@ object anon {
       
       inline def setDirectoryUndefined: Self = StObject.set(x, "directory", js.undefined)
       
-      inline def setDirectoryVarargs(value: String*): Self = StObject.set(x, "directory", js.Array(value :_*))
+      inline def setDirectoryVarargs(value: String*): Self = StObject.set(x, "directory", js.Array(value*))
       
       inline def setFilter(value: /* obj */ js.Object => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
@@ -208,9 +208,9 @@ object anon {
       
       inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value*))
       
-      inline def setInitializer(value: (/* obj */ js.Object, /* options */ Path) => js.Any): Self = StObject.set(x, "initializer", js.Any.fromFunction2(value))
+      inline def setInitializer(value: (/* obj */ js.Object, /* options */ Path) => Any): Self = StObject.set(x, "initializer", js.Any.fromFunction2(value))
       
       inline def setInitializerUndefined: Self = StObject.set(x, "initializer", js.undefined)
       
@@ -222,7 +222,7 @@ object anon {
       
       inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
       
-      inline def setMatchVarargs(value: String*): Self = StObject.set(x, "match", js.Array(value :_*))
+      inline def setMatchVarargs(value: String*): Self = StObject.set(x, "match", js.Array(value*))
       
       inline def setOverride(value: Boolean): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
       

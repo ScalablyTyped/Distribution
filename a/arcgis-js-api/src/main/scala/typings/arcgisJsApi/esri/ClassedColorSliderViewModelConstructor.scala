@@ -9,7 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ClassedColorSliderViewModelConstructor
   extends StObject
-     with Instantiable0[ClassedColorSliderViewModel]
+     with /**
+  * Provides the logic for the [ClassedColorSlider](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ClassedColorSlider.html) widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ClassedColorSlider-ClassedColorSliderViewModel.html)
+  */
+Instantiable0[ClassedColorSliderViewModel]
      with Instantiable1[
       /* properties */ ClassedColorSliderViewModelProperties, 
       ClassedColorSliderViewModel

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents a list on a SharePoint Web site. */
 @JSGlobal("SP.List")
 @js.native
-class List[T] ()
+open class List[T] ()
   extends StObject
      with typings.sharepoint.SP.List[T]

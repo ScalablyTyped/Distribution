@@ -1,5 +1,6 @@
 package typings.matterJs.mod
 
+import typings.matterJs.anon.PartialGravity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,36 +13,62 @@ trait IEngineDefinition extends StObject {
     * The default value of `2` is usually very adequate.
     *
     * @property constraintIterations
-    * @type number
+    * @type {number | undefined}
     * @default 2
     */
   var constraintIterations: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * A `Matter.Detector` instance.
+    *
+    * @property detector
+    * @type {Detector | undefined}
+    * @default {Matter.Detector} instance
+    */
+  var detector: js.UndefOr[Detector] = js.undefined
   
   /**
     * A flag that specifies whether the engine should allow sleeping via the `Matter.Sleeping` module.
     * Sleeping can improve stability and performance, but often at the expense of accuracy.
     *
     * @property enableSleeping
-    * @type boolean
+    * @type {boolean | undefined}
     * @default false
     */
   var enableSleeping: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * An instance of a broadphase controller. The default value is a `Matter.Grid` instance created by `Engine.create`.
+    * The gravity to apply on all bodies in `engine.world`.
     *
-    * @property broadphase
-    * @type grid
+    * @property gravity
+    * @type {Partial<Gravity> | undefined}
+    */
+  var gravity: js.UndefOr[PartialGravity] = js.undefined
+  
+  /**
+    * A `Matter.Grid` instance.
+    *
+    * @deprecated replaced by `engine.detector`
+    * @property grid
+    * @type {Grid | undefined}
     * @default a Matter.Grid instance
     */
   var grid: js.UndefOr[Grid] = js.undefined
+  
+  /**
+    * An object reserved for storing plugin-specific properties.
+    *
+    * @property plugin
+    * @type {{}}
+    */
+  var plugin: js.UndefOr[js.Object] = js.undefined
   
   /**
     * An integer `Number` that specifies the number of position iterations to perform each update.
     * The higher the value, the higher quality the simulation will be at the expense of performance.
     *
     * @property positionIterations
-    * @type number
+    * @type {number | undefined}
     * @default 6
     */
   var positionIterations: js.UndefOr[Double] = js.undefined
@@ -50,7 +77,7 @@ trait IEngineDefinition extends StObject {
     * An `Object` containing properties regarding the timing systems of the engine.
     *
     * @property timing
-    * @type object
+    * @type {IEngineTimingOptions | undefined}
     */
   var timing: js.UndefOr[IEngineTimingOptions] = js.undefined
   
@@ -59,7 +86,7 @@ trait IEngineDefinition extends StObject {
     * The higher the value, the higher quality the simulation will be at the expense of performance.
     *
     * @property velocityIterations
-    * @type number
+    * @type {number | undefined}
     * @default 4
     */
   var velocityIterations: js.UndefOr[Double] = js.undefined
@@ -69,7 +96,7 @@ trait IEngineDefinition extends StObject {
     *
     * @property world
     * @type world
-    * @default a Matter.World instance
+    * @default {Matter.World} instance
     */
   var world: js.UndefOr[World] = js.undefined
 }
@@ -86,13 +113,25 @@ object IEngineDefinition {
     
     inline def setConstraintIterationsUndefined: Self = StObject.set(x, "constraintIterations", js.undefined)
     
+    inline def setDetector(value: Detector): Self = StObject.set(x, "detector", value.asInstanceOf[js.Any])
+    
+    inline def setDetectorUndefined: Self = StObject.set(x, "detector", js.undefined)
+    
     inline def setEnableSleeping(value: Boolean): Self = StObject.set(x, "enableSleeping", value.asInstanceOf[js.Any])
     
     inline def setEnableSleepingUndefined: Self = StObject.set(x, "enableSleeping", js.undefined)
     
+    inline def setGravity(value: PartialGravity): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
+    
+    inline def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
+    
     inline def setGrid(value: Grid): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     
     inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
+    
+    inline def setPlugin(value: js.Object): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+    
+    inline def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
     
     inline def setPositionIterations(value: Double): Self = StObject.set(x, "positionIterations", value.asInstanceOf[js.Any])
     

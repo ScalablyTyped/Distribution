@@ -66,7 +66,7 @@ object PricingExpression {
     
     inline def setTieredRatesUndefined: Self = StObject.set(x, "tieredRates", js.undefined)
     
-    inline def setTieredRatesVarargs(value: TierRate*): Self = StObject.set(x, "tieredRates", js.Array(value :_*))
+    inline def setTieredRatesVarargs(value: TierRate*): Self = StObject.set(x, "tieredRates", js.Array(value*))
     
     inline def setUsageUnit(value: String): Self = StObject.set(x, "usageUnit", value.asInstanceOf[js.Any])
     

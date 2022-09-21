@@ -10,7 +10,7 @@ object moveCanvasActionMod {
   
   @JSImport("storm-react-diagrams/dist/src/actions/MoveCanvasAction", "MoveCanvasAction")
   @js.native
-  class MoveCanvasAction protected () extends BaseAction {
+  open class MoveCanvasAction protected () extends BaseAction {
     def this(mouseX: Double, mouseY: Double, diagramModel: DiagramModel) = this()
     
     var initialOffsetX: Double = js.native

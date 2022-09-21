@@ -17,7 +17,7 @@ object tagPickerMod {
   
   @JSImport("office-ui-fabric-react/lib/components/pickers/TagPicker/TagPicker", "TagPickerBase")
   @js.native
-  class TagPickerBase protected () extends BasePicker[ITag, ITagPickerProps] {
+  open class TagPickerBase protected () extends BasePicker[ITag, ITagPickerProps] {
     def this(props: ITagPickerProps) = this()
   }
   /* static members */

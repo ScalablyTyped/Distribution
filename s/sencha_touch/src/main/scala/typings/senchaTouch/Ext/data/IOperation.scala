@@ -23,7 +23,7 @@ trait IOperation
   var batch: js.UndefOr[IBatch] = js.undefined
   
   /** [Config Option] (Function) */
-  var callback: js.UndefOr[js.Any] = js.undefined
+  var callback: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Ext.util.Filter[]) */
   var filters: js.UndefOr[Array] = js.undefined
@@ -46,12 +46,12 @@ trait IOperation
   /** [Method] Returns the value of callback
     * @returns Function
     */
-  var getCallback: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getCallback: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the error string or object that was set using setException
     * @returns String/Object The error object.
     */
-  var getError: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getError: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of filters
     * @returns Ext.util.Filter[]
@@ -76,17 +76,17 @@ trait IOperation
   /** [Method] Returns the value of node
     * @returns Object
     */
-  var getNode: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getNode: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of page
     * @returns Object
     */
-  var getPage: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getPage: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of params
     * @returns Object
     */
-  var getParams: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getParams: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of request
     * @returns Ext.data.Request
@@ -96,7 +96,7 @@ trait IOperation
   /** [Method] Returns the value of response
     * @returns Object
     */
-  var getResponse: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getResponse: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of resultSet
     * @returns Ext.data.ResultSet
@@ -106,7 +106,7 @@ trait IOperation
   /** [Method] Returns the value of scope
     * @returns Object
     */
-  var getScope: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getScope: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of sorters
     * @returns Ext.util.Sorter[]
@@ -126,7 +126,7 @@ trait IOperation
   /** [Method] Returns the value of url
     * @returns Object
     */
-  var getUrl: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getUrl: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of withCredentials
     * @returns Boolean
@@ -166,7 +166,7 @@ trait IOperation
   var model: js.UndefOr[IModel] = js.undefined
   
   /** [Config Option] (Object) */
-  var params: js.UndefOr[js.Any] = js.undefined
+  var params: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Array) */
   var records: js.UndefOr[Array] = js.undefined
@@ -175,13 +175,13 @@ trait IOperation
   var request: js.UndefOr[IRequest] = js.undefined
   
   /** [Config Option] (Object) */
-  var response: js.UndefOr[js.Any] = js.undefined
+  var response: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Ext.data.ResultSet) */
   var resultSet: js.UndefOr[IResultSet] = js.undefined
   
   /** [Config Option] (Object) */
-  var scope: js.UndefOr[js.Any] = js.undefined
+  var scope: js.UndefOr[Any] = js.undefined
   
   /** [Method] Sets the value of action
     * @param action String The new value.
@@ -201,7 +201,7 @@ trait IOperation
   /** [Method] Sets the value of callback
     * @param callback Function The new value.
     */
-  var setCallback: js.UndefOr[js.Function1[/* callback */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setCallback: js.UndefOr[js.Function1[/* callback */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Marks the Operation as completed  */
   var setCompleted: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -209,7 +209,7 @@ trait IOperation
   /** [Method] Marks the Operation as having experienced an exception
     * @param error String/Object error string/object
     */
-  var setException: js.UndefOr[js.Function1[/* error */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setException: js.UndefOr[js.Function1[/* error */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of filters
     * @param filters Ext.util.Filter[] The new value.
@@ -234,17 +234,17 @@ trait IOperation
   /** [Method] Sets the value of node
     * @param node Object The new value.
     */
-  var setNode: js.UndefOr[js.Function1[/* node */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setNode: js.UndefOr[js.Function1[/* node */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of page
     * @param page Object The new value.
     */
-  var setPage: js.UndefOr[js.Function1[/* page */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setPage: js.UndefOr[js.Function1[/* page */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of params
     * @param params Object The new value.
     */
-  var setParams: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setParams: js.UndefOr[js.Function1[/* params */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of records
     * @param records Array The new value.
@@ -259,7 +259,7 @@ trait IOperation
   /** [Method] Sets the value of response
     * @param response Object The new value.
     */
-  var setResponse: js.UndefOr[js.Function1[/* response */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setResponse: js.UndefOr[js.Function1[/* response */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of resultSet
     * @param resultSet Ext.data.ResultSet The new value.
@@ -269,7 +269,7 @@ trait IOperation
   /** [Method] Sets the value of scope
     * @param scope Object The new value.
     */
-  var setScope: js.UndefOr[js.Function1[/* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setScope: js.UndefOr[js.Function1[/* scope */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of sorters
     * @param sorters Ext.util.Sorter[] The new value.
@@ -295,7 +295,7 @@ trait IOperation
   /** [Method] Sets the value of url
     * @param url Object The new value.
     */
-  var setUrl: js.UndefOr[js.Function1[/* url */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setUrl: js.UndefOr[js.Function1[/* url */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of withCredentials
     * @param withCredentials Boolean The new value.
@@ -340,7 +340,7 @@ object IOperation {
     
     inline def setBatchUndefined: Self = StObject.set(x, "batch", js.undefined)
     
-    inline def setCallback(value: js.Any): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+    inline def setCallback(value: Any): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
@@ -360,11 +360,11 @@ object IOperation {
     
     inline def setGetBatchUndefined: Self = StObject.set(x, "getBatch", js.undefined)
     
-    inline def setGetCallback(value: () => js.Any): Self = StObject.set(x, "getCallback", js.Any.fromFunction0(value))
+    inline def setGetCallback(value: () => Any): Self = StObject.set(x, "getCallback", js.Any.fromFunction0(value))
     
     inline def setGetCallbackUndefined: Self = StObject.set(x, "getCallback", js.undefined)
     
-    inline def setGetError(value: () => js.Any): Self = StObject.set(x, "getError", js.Any.fromFunction0(value))
+    inline def setGetError(value: () => Any): Self = StObject.set(x, "getError", js.Any.fromFunction0(value))
     
     inline def setGetErrorUndefined: Self = StObject.set(x, "getError", js.undefined)
     
@@ -384,15 +384,15 @@ object IOperation {
     
     inline def setGetModelUndefined: Self = StObject.set(x, "getModel", js.undefined)
     
-    inline def setGetNode(value: () => js.Any): Self = StObject.set(x, "getNode", js.Any.fromFunction0(value))
+    inline def setGetNode(value: () => Any): Self = StObject.set(x, "getNode", js.Any.fromFunction0(value))
     
     inline def setGetNodeUndefined: Self = StObject.set(x, "getNode", js.undefined)
     
-    inline def setGetPage(value: () => js.Any): Self = StObject.set(x, "getPage", js.Any.fromFunction0(value))
+    inline def setGetPage(value: () => Any): Self = StObject.set(x, "getPage", js.Any.fromFunction0(value))
     
     inline def setGetPageUndefined: Self = StObject.set(x, "getPage", js.undefined)
     
-    inline def setGetParams(value: () => js.Any): Self = StObject.set(x, "getParams", js.Any.fromFunction0(value))
+    inline def setGetParams(value: () => Any): Self = StObject.set(x, "getParams", js.Any.fromFunction0(value))
     
     inline def setGetParamsUndefined: Self = StObject.set(x, "getParams", js.undefined)
     
@@ -400,7 +400,7 @@ object IOperation {
     
     inline def setGetRequestUndefined: Self = StObject.set(x, "getRequest", js.undefined)
     
-    inline def setGetResponse(value: () => js.Any): Self = StObject.set(x, "getResponse", js.Any.fromFunction0(value))
+    inline def setGetResponse(value: () => Any): Self = StObject.set(x, "getResponse", js.Any.fromFunction0(value))
     
     inline def setGetResponseUndefined: Self = StObject.set(x, "getResponse", js.undefined)
     
@@ -408,7 +408,7 @@ object IOperation {
     
     inline def setGetResultSetUndefined: Self = StObject.set(x, "getResultSet", js.undefined)
     
-    inline def setGetScope(value: () => js.Any): Self = StObject.set(x, "getScope", js.Any.fromFunction0(value))
+    inline def setGetScope(value: () => Any): Self = StObject.set(x, "getScope", js.Any.fromFunction0(value))
     
     inline def setGetScopeUndefined: Self = StObject.set(x, "getScope", js.undefined)
     
@@ -424,7 +424,7 @@ object IOperation {
     
     inline def setGetSynchronousUndefined: Self = StObject.set(x, "getSynchronous", js.undefined)
     
-    inline def setGetUrl(value: () => js.Any): Self = StObject.set(x, "getUrl", js.Any.fromFunction0(value))
+    inline def setGetUrl(value: () => Any): Self = StObject.set(x, "getUrl", js.Any.fromFunction0(value))
     
     inline def setGetUrlUndefined: Self = StObject.set(x, "getUrl", js.undefined)
     
@@ -464,7 +464,7 @@ object IOperation {
     
     inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
-    inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
@@ -476,7 +476,7 @@ object IOperation {
     
     inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
-    inline def setResponse(value: js.Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
     inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     
@@ -484,7 +484,7 @@ object IOperation {
     
     inline def setResultSetUndefined: Self = StObject.set(x, "resultSet", js.undefined)
     
-    inline def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
@@ -500,7 +500,7 @@ object IOperation {
     
     inline def setSetBatchUndefined: Self = StObject.set(x, "setBatch", js.undefined)
     
-    inline def setSetCallback(value: /* callback */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setCallback", js.Any.fromFunction1(value))
+    inline def setSetCallback(value: /* callback */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setCallback", js.Any.fromFunction1(value))
     
     inline def setSetCallbackUndefined: Self = StObject.set(x, "setCallback", js.undefined)
     
@@ -508,7 +508,7 @@ object IOperation {
     
     inline def setSetCompletedUndefined: Self = StObject.set(x, "setCompleted", js.undefined)
     
-    inline def setSetException(value: /* error */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setException", js.Any.fromFunction1(value))
+    inline def setSetException(value: /* error */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setException", js.Any.fromFunction1(value))
     
     inline def setSetExceptionUndefined: Self = StObject.set(x, "setException", js.undefined)
     
@@ -528,15 +528,15 @@ object IOperation {
     
     inline def setSetModelUndefined: Self = StObject.set(x, "setModel", js.undefined)
     
-    inline def setSetNode(value: /* node */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setNode", js.Any.fromFunction1(value))
+    inline def setSetNode(value: /* node */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setNode", js.Any.fromFunction1(value))
     
     inline def setSetNodeUndefined: Self = StObject.set(x, "setNode", js.undefined)
     
-    inline def setSetPage(value: /* page */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setPage", js.Any.fromFunction1(value))
+    inline def setSetPage(value: /* page */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setPage", js.Any.fromFunction1(value))
     
     inline def setSetPageUndefined: Self = StObject.set(x, "setPage", js.undefined)
     
-    inline def setSetParams(value: /* params */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setParams", js.Any.fromFunction1(value))
+    inline def setSetParams(value: /* params */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setParams", js.Any.fromFunction1(value))
     
     inline def setSetParamsUndefined: Self = StObject.set(x, "setParams", js.undefined)
     
@@ -548,7 +548,7 @@ object IOperation {
     
     inline def setSetRequestUndefined: Self = StObject.set(x, "setRequest", js.undefined)
     
-    inline def setSetResponse(value: /* response */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setResponse", js.Any.fromFunction1(value))
+    inline def setSetResponse(value: /* response */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setResponse", js.Any.fromFunction1(value))
     
     inline def setSetResponseUndefined: Self = StObject.set(x, "setResponse", js.undefined)
     
@@ -556,7 +556,7 @@ object IOperation {
     
     inline def setSetResultSetUndefined: Self = StObject.set(x, "setResultSet", js.undefined)
     
-    inline def setSetScope(value: /* scope */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setScope", js.Any.fromFunction1(value))
+    inline def setSetScope(value: /* scope */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setScope", js.Any.fromFunction1(value))
     
     inline def setSetScopeUndefined: Self = StObject.set(x, "setScope", js.undefined)
     
@@ -580,7 +580,7 @@ object IOperation {
     
     inline def setSetSynchronousUndefined: Self = StObject.set(x, "setSynchronous", js.undefined)
     
-    inline def setSetUrl(value: /* url */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setUrl", js.Any.fromFunction1(value))
+    inline def setSetUrl(value: /* url */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setUrl", js.Any.fromFunction1(value))
     
     inline def setSetUrlUndefined: Self = StObject.set(x, "setUrl", js.undefined)
     

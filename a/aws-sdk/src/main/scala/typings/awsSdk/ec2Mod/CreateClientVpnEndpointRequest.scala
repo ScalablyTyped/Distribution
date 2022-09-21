@@ -22,7 +22,12 @@ trait CreateClientVpnEndpointRequest extends StObject {
   var ClientConnectOptions: js.UndefOr[typings.awsSdk.ec2Mod.ClientConnectOptions] = js.undefined
   
   /**
-    * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see How to Ensure Idempotency.
+    * Options for enabling a customizable text banner that will be displayed on Amazon Web Services provided clients when a VPN session is established.
+    */
+  var ClientLoginBannerOptions: js.UndefOr[typings.awsSdk.ec2Mod.ClientLoginBannerOptions] = js.undefined
+  
+  /**
+    * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see How to ensure idempotency.
     */
   var ClientToken: js.UndefOr[String] = js.undefined
   
@@ -57,12 +62,17 @@ trait CreateClientVpnEndpointRequest extends StObject {
   var SelfServicePortal: js.UndefOr[typings.awsSdk.ec2Mod.SelfServicePortal] = js.undefined
   
   /**
-    * The ARN of the server certificate. For more information, see the AWS Certificate Manager User Guide.
+    * The ARN of the server certificate. For more information, see the Certificate Manager User Guide.
     */
   var ServerCertificateArn: String
   
   /**
-    * Indicates whether split-tunnel is enabled on the AWS Client VPN endpoint. By default, split-tunnel on a VPN endpoint is disabled. For information about split-tunnel VPN endpoints, see Split-Tunnel AWS Client VPN Endpoint in the AWS Client VPN Administrator Guide.
+    * The maximum VPN session duration time in hours. Valid values: 8 | 10 | 12 | 24  Default value: 24 
+    */
+  var SessionTimeoutHours: js.UndefOr[Integer] = js.undefined
+  
+  /**
+    * Indicates whether split-tunnel is enabled on the Client VPN endpoint. By default, split-tunnel on a VPN endpoint is disabled. For information about split-tunnel VPN endpoints, see Split-tunnel Client VPN endpoint in the Client VPN Administrator Guide.
     */
   var SplitTunnel: js.UndefOr[Boolean] = js.undefined
   
@@ -102,13 +112,17 @@ object CreateClientVpnEndpointRequest {
     
     inline def setAuthenticationOptions(value: ClientVpnAuthenticationRequestList): Self = StObject.set(x, "AuthenticationOptions", value.asInstanceOf[js.Any])
     
-    inline def setAuthenticationOptionsVarargs(value: ClientVpnAuthenticationRequest*): Self = StObject.set(x, "AuthenticationOptions", js.Array(value :_*))
+    inline def setAuthenticationOptionsVarargs(value: ClientVpnAuthenticationRequest*): Self = StObject.set(x, "AuthenticationOptions", js.Array(value*))
     
     inline def setClientCidrBlock(value: String): Self = StObject.set(x, "ClientCidrBlock", value.asInstanceOf[js.Any])
     
     inline def setClientConnectOptions(value: ClientConnectOptions): Self = StObject.set(x, "ClientConnectOptions", value.asInstanceOf[js.Any])
     
     inline def setClientConnectOptionsUndefined: Self = StObject.set(x, "ClientConnectOptions", js.undefined)
+    
+    inline def setClientLoginBannerOptions(value: ClientLoginBannerOptions): Self = StObject.set(x, "ClientLoginBannerOptions", value.asInstanceOf[js.Any])
+    
+    inline def setClientLoginBannerOptionsUndefined: Self = StObject.set(x, "ClientLoginBannerOptions", js.undefined)
     
     inline def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
@@ -124,7 +138,7 @@ object CreateClientVpnEndpointRequest {
     
     inline def setDnsServersUndefined: Self = StObject.set(x, "DnsServers", js.undefined)
     
-    inline def setDnsServersVarargs(value: String*): Self = StObject.set(x, "DnsServers", js.Array(value :_*))
+    inline def setDnsServersVarargs(value: String*): Self = StObject.set(x, "DnsServers", js.Array(value*))
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
@@ -134,13 +148,17 @@ object CreateClientVpnEndpointRequest {
     
     inline def setSecurityGroupIdsUndefined: Self = StObject.set(x, "SecurityGroupIds", js.undefined)
     
-    inline def setSecurityGroupIdsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value :_*))
+    inline def setSecurityGroupIdsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value*))
     
     inline def setSelfServicePortal(value: SelfServicePortal): Self = StObject.set(x, "SelfServicePortal", value.asInstanceOf[js.Any])
     
     inline def setSelfServicePortalUndefined: Self = StObject.set(x, "SelfServicePortal", js.undefined)
     
     inline def setServerCertificateArn(value: String): Self = StObject.set(x, "ServerCertificateArn", value.asInstanceOf[js.Any])
+    
+    inline def setSessionTimeoutHours(value: Integer): Self = StObject.set(x, "SessionTimeoutHours", value.asInstanceOf[js.Any])
+    
+    inline def setSessionTimeoutHoursUndefined: Self = StObject.set(x, "SessionTimeoutHours", js.undefined)
     
     inline def setSplitTunnel(value: Boolean): Self = StObject.set(x, "SplitTunnel", value.asInstanceOf[js.Any])
     
@@ -150,7 +168,7 @@ object CreateClientVpnEndpointRequest {
     
     inline def setTagSpecificationsUndefined: Self = StObject.set(x, "TagSpecifications", js.undefined)
     
-    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value :_*))
+    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value*))
     
     inline def setTransportProtocol(value: TransportProtocol): Self = StObject.set(x, "TransportProtocol", value.asInstanceOf[js.Any])
     

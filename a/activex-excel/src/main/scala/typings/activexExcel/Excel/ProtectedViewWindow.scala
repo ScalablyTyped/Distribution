@@ -17,14 +17,8 @@ trait ProtectedViewWindow extends StObject {
   
   def Edit(): typings.activexExcel.Excel.Workbook = js.native
   def Edit(WriteResPassword: String): typings.activexExcel.Excel.Workbook = js.native
-  @JSName("Edit")
-  def Edit_0(WriteResPassword: String, UpdateLinks: `0`): typings.activexExcel.Excel.Workbook = js.native
-  @JSName("Edit")
-  def Edit_0(WriteResPassword: Unit, UpdateLinks: `0`): typings.activexExcel.Excel.Workbook = js.native
-  @JSName("Edit")
-  def Edit_1(WriteResPassword: String, UpdateLinks: `1`): typings.activexExcel.Excel.Workbook = js.native
-  @JSName("Edit")
-  def Edit_1(WriteResPassword: Unit, UpdateLinks: `1`): typings.activexExcel.Excel.Workbook = js.native
+  def Edit(WriteResPassword: String, UpdateLinks: `0` | `1`): typings.activexExcel.Excel.Workbook = js.native
+  def Edit(WriteResPassword: Unit, UpdateLinks: `0` | `1`): typings.activexExcel.Excel.Workbook = js.native
   
   var EnableResize: Boolean = js.native
   

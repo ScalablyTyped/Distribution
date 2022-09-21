@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("xmlbuilder", "XMLDeclaration")
 @js.native
-class XMLDeclaration () extends StObject {
+open class XMLDeclaration () extends StObject {
   
   /**
     * Encoding declaration, e.g. `UTF-8`

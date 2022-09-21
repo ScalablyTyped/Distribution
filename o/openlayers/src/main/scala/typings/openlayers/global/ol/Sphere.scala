@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ol.Sphere")
 @js.native
-class Sphere protected ()
+open class Sphere protected ()
   extends typings.openlayers.mod.Sphere {
   /**
     * @classdesc

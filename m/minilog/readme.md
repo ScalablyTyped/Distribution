@@ -10,10 +10,10 @@ Lightweight client & server-side logging with Stream-API backends and counting, 
 | ------------------ | :-------------: |
 | Full name          | minilog |
 | Keywords           | logging, sysadmin, tools |
-| # releases         | 0 |
-| # dependents       | 112 |
-| # downloads        | 552330 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 73821.66666666667 |
+| # stars            | 371.0 |
 
 ## Links
 - [Homepage](https://github.com/mixu/minilog#readme)

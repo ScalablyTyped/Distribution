@@ -1,7 +1,7 @@
 
 # Scala.js typings for tensorflow__tfjs-core
 
-Typings are for version 2.7.0
+Typings are for version 3.20.0
 
 ## Library description:
 Hardware-accelerated JavaScript library for machine intelligence
@@ -10,15 +10,15 @@ Hardware-accelerated JavaScript library for machine intelligence
 | ------------------ | :-------------: |
 | Full name          | @tensorflow/tfjs-core |
 | Keywords           | - |
-| # releases         | 59 |
-| # dependents       | 52 |
-| # downloads        | 1740037 |
-| # stars            | 0 |
+| # releases         | 33 |
+| # dependents       | 0.0 |
+| # downloads        | 607942.3333333334 |
+| # stars            | 16517.0 |
 
 ## Links
-- [Homepage](https://github.com/tensorflow/tfjs-core#readme)
-- [Bugs](https://github.com/tensorflow/tfjs-core/issues)
-- [Repository](https://github.com/tensorflow/tfjs-core)
+- [Homepage](https://github.com/tensorflow/tfjs#readme)
+- [Bugs](https://github.com/tensorflow/tfjs/issues)
+- [Repository](https://github.com/tensorflow/tfjs)
 - [Npm](https://www.npmjs.com/package/%40tensorflow%2Ftfjs-core)
     
 

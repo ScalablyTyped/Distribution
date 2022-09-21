@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Initializes a new instance of the ASPxClientReportDesignerExitDesignerEventArgs class with the default settings.
   */
-class ASPxClientReportDesignerExitDesignerEventArgs ()
+open class ASPxClientReportDesignerExitDesignerEventArgs ()
   extends StObject
      with typings.devexpressWeb.ASPxClientEventArgs

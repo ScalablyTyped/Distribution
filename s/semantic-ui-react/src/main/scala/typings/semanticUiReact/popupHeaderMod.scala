@@ -2,8 +2,8 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.FC
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,12 +13,12 @@ object popupHeaderMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/modules/Popup/PopupHeader", JSImport.Default)
   @js.native
-  val default: StatelessComponent[PopupHeaderProps] = js.native
+  val default: FC[PopupHeaderProps] = js.native
   
   trait PopupHeaderProps
     extends StObject
        with StrictPopupHeaderProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object PopupHeaderProps {
     
     inline def apply(): PopupHeaderProps = {
@@ -30,7 +30,7 @@ object popupHeaderMod extends Shortcut {
   trait StrictPopupHeaderProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -50,7 +50,7 @@ object popupHeaderMod extends Shortcut {
     
     extension [Self <: StrictPopupHeaderProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -68,8 +68,8 @@ object popupHeaderMod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[PopupHeaderProps]
+  type _To = FC[PopupHeaderProps]
   
   /* This means you don't have to write `default`, but can instead just say `popupHeaderMod.foo` */
-  override def _to: StatelessComponent[PopupHeaderProps] = default
+  override def _to: FC[PopupHeaderProps] = default
 }

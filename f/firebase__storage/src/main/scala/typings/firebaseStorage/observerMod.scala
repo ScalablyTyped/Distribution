@@ -1,15 +1,15 @@
 package typings.firebaseStorage
 
-import typings.firebaseStorage.errorMod.FirebaseStorageError
+import typings.firebaseStorage.errorMod.StorageError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object observerMod {
   
-  @JSImport("@firebase/storage/dist/src/implementation/observer", "Observer")
+  @JSImport("@firebase/storage/dist/node-esm/src/implementation/observer", "Observer")
   @js.native
-  class Observer[T] ()
+  open class Observer[T] ()
     extends StObject
        with StorageObserver[T] {
     def this(nextOrObserver: NextFn[T]) = this()
@@ -27,16 +27,26 @@ object observerMod {
   
   type CompleteFn = js.Function0[Unit]
   
-  type ErrorFn = js.Function1[/* error */ FirebaseStorageError, Unit]
+  type ErrorFn = js.Function1[/* error */ StorageError, Unit]
   
   type NextFn[T] = js.Function1[/* value */ T, Unit]
   
   trait StorageObserver[T] extends StObject {
     
+    /**
+      * A function that is called if the event stream ends normally.
+      */
     var complete: js.UndefOr[CompleteFn] = js.undefined
     
+    /**
+      * A function that is called with a `StorageError`
+      * if the event stream ends due to an error.
+      */
     var error: js.UndefOr[ErrorFn] = js.undefined
     
+    /**
+      * Function that is called once for each value in the event stream.
+      */
     var next: js.UndefOr[NextFn[T]] = js.undefined
   }
   object StorageObserver {
@@ -52,7 +62,7 @@ object observerMod {
       
       inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
       
-      inline def setError(value: /* error */ FirebaseStorageError => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* error */ StorageError => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       

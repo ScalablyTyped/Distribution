@@ -9,10 +9,10 @@ object paginationMod {
   
   @JSImport("@catho/quantum/Pagination", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[PaginationProps, js.Object, js.Any]
+  open class default ()
+    extends Component[PaginationProps, js.Object, Any]
   
-  type Pagination = Component[PaginationProps, js.Object, js.Any]
+  type Pagination = Component[PaginationProps, js.Object, Any]
   
   trait PaginationProps extends StObject {
     

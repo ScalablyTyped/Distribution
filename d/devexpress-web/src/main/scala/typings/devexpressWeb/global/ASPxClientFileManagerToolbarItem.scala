@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientFileManagerToolbarItem")
 @js.native
-class ASPxClientFileManagerToolbarItem ()
+open class ASPxClientFileManagerToolbarItem ()
   extends StObject
      with typings.devexpressWeb.ASPxClientFileManagerToolbarItem {
   

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PutAppInstanceStreamingConfigurationsRequest extends StObject {
   
   /**
-    * The ARN of the app instance.
+    * The ARN of the AppInstance.
     */
   var AppInstanceArn: ChimeArn
   
   /**
-    * The streaming configurations set for an app instance.
+    * The streaming configurations set for an AppInstance.
     */
   var AppInstanceStreamingConfigurations: AppInstanceStreamingConfigurationList
 }
@@ -32,6 +32,6 @@ object PutAppInstanceStreamingConfigurationsRequest {
     
     inline def setAppInstanceStreamingConfigurations(value: AppInstanceStreamingConfigurationList): Self = StObject.set(x, "AppInstanceStreamingConfigurations", value.asInstanceOf[js.Any])
     
-    inline def setAppInstanceStreamingConfigurationsVarargs(value: AppInstanceStreamingConfiguration*): Self = StObject.set(x, "AppInstanceStreamingConfigurations", js.Array(value :_*))
+    inline def setAppInstanceStreamingConfigurationsVarargs(value: AppInstanceStreamingConfiguration*): Self = StObject.set(x, "AppInstanceStreamingConfigurations", js.Array(value*))
   }
 }

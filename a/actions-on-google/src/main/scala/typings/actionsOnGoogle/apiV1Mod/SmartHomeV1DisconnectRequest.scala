@@ -24,7 +24,7 @@ object SmartHomeV1DisconnectRequest {
     
     inline def setInputs(value: js.Array[Intent]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
-    inline def setInputsVarargs(value: Intent*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+    inline def setInputsVarargs(value: Intent*): Self = StObject.set(x, "inputs", js.Array(value*))
     
     inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
   }

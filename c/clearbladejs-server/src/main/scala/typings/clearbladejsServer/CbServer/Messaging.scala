@@ -1,6 +1,5 @@
 package typings.clearbladejsServer.CbServer
 
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ trait Messaging extends StObject {
   def getMessageHistoryWithTimeFrame(topic: String, count: Double, last: Double, start: Double, stop: Double, callback: CbCallback): Unit = js.native
   
   def publish(topic: String, payload: String): Unit = js.native
-  def publish(topic: String, payload: ArrayBuffer): Unit = js.native
+  def publish(topic: String, payload: js.typedarray.ArrayBuffer): Unit = js.native
   
   var systemKey: String = js.native
   

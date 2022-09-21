@@ -1,6 +1,5 @@
 package typings.audiobufferToWav
 
-import typings.std.ArrayBuffer
 import typings.std.AudioBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(buffer: AudioBuffer): ArrayBuffer = ^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
-  inline def apply(buffer: AudioBuffer, options: Options): ArrayBuffer = (^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ArrayBuffer]
+  inline def apply(buffer: AudioBuffer): js.typedarray.ArrayBuffer = ^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.ArrayBuffer]
+  inline def apply(buffer: AudioBuffer, options: Options): js.typedarray.ArrayBuffer = (^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.ArrayBuffer]
   
   @JSImport("audiobuffer-to-wav", JSImport.Namespace)
   @js.native

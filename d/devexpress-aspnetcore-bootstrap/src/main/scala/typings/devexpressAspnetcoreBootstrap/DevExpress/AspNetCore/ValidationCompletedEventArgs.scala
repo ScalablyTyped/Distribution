@@ -8,7 +8,7 @@ trait ValidationCompletedEventArgs
   extends StObject
      with EventArgs {
   
-  val container: js.Any
+  val container: Any
   
   val firstInvalidControl: Control
   
@@ -23,7 +23,7 @@ trait ValidationCompletedEventArgs
 object ValidationCompletedEventArgs {
   
   inline def apply(
-    container: js.Any,
+    container: Any,
     firstInvalidControl: Control,
     firstVisibleInvalidControl: Control,
     invisibleControlsValidated: Boolean,
@@ -37,7 +37,7 @@ object ValidationCompletedEventArgs {
   
   extension [Self <: ValidationCompletedEventArgs](x: Self) {
     
-    inline def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     inline def setFirstInvalidControl(value: Control): Self = StObject.set(x, "firstInvalidControl", value.asInstanceOf[js.Any])
     

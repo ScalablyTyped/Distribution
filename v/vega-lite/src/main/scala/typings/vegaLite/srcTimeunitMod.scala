@@ -2,6 +2,17 @@ package typings.vegaLite
 
 import typings.vegaLite.anon.End
 import typings.vegaLite.vegaLiteNumbers.`1`
+import typings.vegaLite.vegaLiteStrings.date
+import typings.vegaLite.vegaLiteStrings.day
+import typings.vegaLite.vegaLiteStrings.dayofyear
+import typings.vegaLite.vegaLiteStrings.hours
+import typings.vegaLite.vegaLiteStrings.milliseconds
+import typings.vegaLite.vegaLiteStrings.minutes
+import typings.vegaLite.vegaLiteStrings.month
+import typings.vegaLite.vegaLiteStrings.quarter
+import typings.vegaLite.vegaLiteStrings.seconds
+import typings.vegaLite.vegaLiteStrings.week
+import typings.vegaLite.vegaLiteStrings.year
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -180,7 +191,9 @@ object srcTimeunitMod {
   
   @JSImport("vega-lite/build/src/timeunit", "TIMEUNIT_PARTS")
   @js.native
-  val TIMEUNIT_PARTS: js.Array[typings.vegaTypings.transformMod.TimeUnit] = js.native
+  val TIMEUNIT_PARTS: js.Array[
+    day | month | year | quarter | week | hours | minutes | seconds | date | dayofyear | milliseconds
+  ] = js.native
   
   object UTC_MULTI_TIMEUNIT_INDEX {
     
@@ -361,7 +374,7 @@ object srcTimeunitMod {
   
   inline def getLocalTimeUnit(t: UtcTimeUnit): LocalTimeUnit = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalTimeUnit")(t.asInstanceOf[js.Any]).asInstanceOf[LocalTimeUnit]
   
-  inline def getTimeUnitParts(timeUnit: TimeUnit): js.Array[typings.vegaTypings.transformMod.TimeUnit] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTimeUnitParts")(timeUnit.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.vegaTypings.transformMod.TimeUnit]]
+  inline def getTimeUnitParts(timeUnit: TimeUnit): js.Array[LocalSingleTimeUnit] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTimeUnitParts")(timeUnit.asInstanceOf[js.Any]).asInstanceOf[js.Array[LocalSingleTimeUnit]]
   
   inline def isLocalSingleTimeUnit(timeUnit: String): /* is vega-lite.vega-lite/build/src/timeunit.LocalSingleTimeUnit */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLocalSingleTimeUnit")(timeUnit.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/timeunit.LocalSingleTimeUnit */ Boolean]
   

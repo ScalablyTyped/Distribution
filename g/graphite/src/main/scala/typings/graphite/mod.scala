@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("graphite", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with GraphiteClient {
     def this(properties: GraphiteClientProperties) = this()
@@ -18,51 +18,51 @@ object mod {
   val ^ : js.Any = js.native
   
   /* static member */
-  inline def appendTags(flatMetrics: js.Any, tags: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("appendTags")(flatMetrics.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def appendTags(flatMetrics: Any, tags: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("appendTags")(flatMetrics.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /* static member */
   inline def createClient(dsn: String): GraphiteClient = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(dsn.asInstanceOf[js.Any]).asInstanceOf[GraphiteClient]
   
   /* static member */
-  inline def flatten(`object`: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def flatten(`object`: js.Any, flat: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(`object`.asInstanceOf[js.Any], flat.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def flatten(`object`: js.Any, flat: js.Any, prefix: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(`object`.asInstanceOf[js.Any], flat.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def flatten(`object`: js.Any, flat: Unit, prefix: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(`object`.asInstanceOf[js.Any], flat.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def flatten(`object`: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(`object`.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def flatten(`object`: Any, flat: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(`object`.asInstanceOf[js.Any], flat.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def flatten(`object`: Any, flat: Any, prefix: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(`object`.asInstanceOf[js.Any], flat.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def flatten(`object`: Any, flat: Unit, prefix: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(`object`.asInstanceOf[js.Any], flat.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  type Callback = js.Function1[/* err */ js.Any, Unit]
+  type Callback = js.Function1[/* err */ Any, Unit]
   
   @js.native
   trait GraphiteClient extends StObject {
     
     def end(): Unit = js.native
     
-    def write(metrics: js.Any): Unit = js.native
-    def write(metrics: js.Any, callback: Callback): Unit = js.native
-    def write(metrics: js.Any, timestamp: Double): Unit = js.native
-    def write(metrics: js.Any, timestamp: Double, callback: Callback): Unit = js.native
-    def write(metrics: js.Any, timestamp: Unit, callback: Callback): Unit = js.native
+    def write(metrics: Any): Unit = js.native
+    def write(metrics: Any, callback: Callback): Unit = js.native
+    def write(metrics: Any, timestamp: Double): Unit = js.native
+    def write(metrics: Any, timestamp: Double, callback: Callback): Unit = js.native
+    def write(metrics: Any, timestamp: Unit, callback: Callback): Unit = js.native
     
-    def writeTagged(metrics: js.Any, tags: js.Any): Unit = js.native
-    def writeTagged(metrics: js.Any, tags: js.Any, callback: Callback): Unit = js.native
-    def writeTagged(metrics: js.Any, tags: js.Any, timestamp: Double): Unit = js.native
-    def writeTagged(metrics: js.Any, tags: js.Any, timestamp: Double, callback: Callback): Unit = js.native
-    def writeTagged(metrics: js.Any, tags: js.Any, timestamp: Unit, callback: Callback): Unit = js.native
+    def writeTagged(metrics: Any, tags: Any): Unit = js.native
+    def writeTagged(metrics: Any, tags: Any, callback: Callback): Unit = js.native
+    def writeTagged(metrics: Any, tags: Any, timestamp: Double): Unit = js.native
+    def writeTagged(metrics: Any, tags: Any, timestamp: Double, callback: Callback): Unit = js.native
+    def writeTagged(metrics: Any, tags: Any, timestamp: Unit, callback: Callback): Unit = js.native
   }
   
   trait GraphiteClientProperties extends StObject {
     
-    var carbon: js.Any
+    var carbon: Any
   }
   object GraphiteClientProperties {
     
-    inline def apply(carbon: js.Any): GraphiteClientProperties = {
+    inline def apply(carbon: Any): GraphiteClientProperties = {
       val __obj = js.Dynamic.literal(carbon = carbon.asInstanceOf[js.Any])
       __obj.asInstanceOf[GraphiteClientProperties]
     }
     
     extension [Self <: GraphiteClientProperties](x: Self) {
       
-      inline def setCarbon(value: js.Any): Self = StObject.set(x, "carbon", value.asInstanceOf[js.Any])
+      inline def setCarbon(value: Any): Self = StObject.set(x, "carbon", value.asInstanceOf[js.Any])
     }
   }
 }

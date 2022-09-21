@@ -16,7 +16,7 @@ object createExportJobCommandMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/commands/CreateExportJobCommand", "CreateExportJobCommand")
   @js.native
-  class CreateExportJobCommand protected ()
+  open class CreateExportJobCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object createExportJobCommandMod {
     override val middlewareStack: MiddlewareStack[CreateExportJobInput, CreateExportJobOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ Any,
       configuration: PinpointResolvedConfiguration
     ): Handler[CreateExportJobInput, CreateExportJobOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: PinpointResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[CreateExportJobInput, CreateExportJobOutput] = js.native
   }
 }

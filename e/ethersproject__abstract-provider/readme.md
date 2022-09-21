@@ -1,7 +1,7 @@
 
 # Scala.js typings for ethersproject__abstract-provider
 
-Typings are for version 5.0.6
+Typings are for version 5.7.0
 
 ## Library description:
 An Abstract Class for describing an Ethereum Provider for ethers.
@@ -10,10 +10,10 @@ An Abstract Class for describing an Ethereum Provider for ethers.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/abstract-provider |
 | Keywords           | Ethereum, ethers |
-| # releases         | 36 |
-| # dependents       | 25 |
-| # downloads        | 1627064 |
-| # stars            | 0 |
+| # releases         | 17 |
+| # dependents       | 0.0 |
+| # downloads        | 3504805.6666666665 |
+| # stars            | 5503.0 |
 
 ## Links
 - [Homepage](https://github.com/ethers-io/ethers.js#readme)

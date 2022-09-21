@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Contains the custom data for one of the following PlayReady-ND messages: Registration Challenge, Registration Response, License Fetch Challenge, or License Fetch Response. */
 @JSGlobal("Windows.Media.Protection.PlayReady.NDCustomData")
 @js.native
-class NDCustomData protected ()
+open class NDCustomData protected ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Protection.PlayReady.NDCustomData {
   /**

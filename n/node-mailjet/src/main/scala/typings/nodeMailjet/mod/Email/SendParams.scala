@@ -22,7 +22,7 @@ object SendParams {
     
     inline def setMessages(value: js.Array[SendParamsMessage]): Self = StObject.set(x, "Messages", value.asInstanceOf[js.Any])
     
-    inline def setMessagesVarargs(value: SendParamsMessage*): Self = StObject.set(x, "Messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: SendParamsMessage*): Self = StObject.set(x, "Messages", js.Array(value*))
     
     inline def setSandboxMode(value: Boolean): Self = StObject.set(x, "SandboxMode", value.asInstanceOf[js.Any])
     

@@ -14,6 +14,6 @@ object rendererComponentMod {
   @js.native
   abstract class RendererComponent () extends Component {
     
-    def render(renderer: Renderer, target: EntityObject, camera: GameObject): js.Any = js.native
+    def render(renderer: Renderer, target: EntityObject, camera: GameObject): Any = js.native
   }
 }

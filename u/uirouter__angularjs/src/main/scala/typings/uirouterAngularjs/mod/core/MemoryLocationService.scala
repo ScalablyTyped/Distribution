@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@uirouter/angularjs", "core.MemoryLocationService")
 @js.native
-class MemoryLocationService protected ()
+open class MemoryLocationService protected ()
   extends typings.uirouterCore.mod.MemoryLocationService {
   def this(router: typings.uirouterCore.routerMod.UIRouter) = this()
 }

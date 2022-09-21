@@ -29,7 +29,7 @@ object ClusterSubnetGroupMessage {
     
     inline def setClusterSubnetGroupsUndefined: Self = StObject.set(x, "ClusterSubnetGroups", js.undefined)
     
-    inline def setClusterSubnetGroupsVarargs(value: ClusterSubnetGroup*): Self = StObject.set(x, "ClusterSubnetGroups", js.Array(value :_*))
+    inline def setClusterSubnetGroupsVarargs(value: ClusterSubnetGroup*): Self = StObject.set(x, "ClusterSubnetGroups", js.Array(value*))
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

@@ -117,6 +117,9 @@ object downloads {
     
     var canResume: Boolean
     
+    /** The cookie store ID of the contextual identity. */
+    var cookieStoreId: js.UndefOr[String] = js.undefined
+    
     /** Indication of whether this download is thought to be safe or known to be suspicious. */
     var danger: DangerType
     
@@ -197,6 +200,10 @@ object downloads {
       
       inline def setCanResume(value: Boolean): Self = StObject.set(x, "canResume", value.asInstanceOf[js.Any])
       
+      inline def setCookieStoreId(value: String): Self = StObject.set(x, "cookieStoreId", value.asInstanceOf[js.Any])
+      
+      inline def setCookieStoreIdUndefined: Self = StObject.set(x, "cookieStoreId", js.undefined)
+      
       inline def setDanger(value: DangerType): Self = StObject.set(x, "danger", value.asInstanceOf[js.Any])
       
       inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
@@ -254,6 +261,9 @@ object downloads {
     
     var conflictAction: js.UndefOr[FilenameConflictAction] = js.undefined
     
+    /** The cookie store ID of the contextual identity; requires "cookies" permission. */
+    var cookieStoreId: js.UndefOr[String] = js.undefined
+    
     /** A file path relative to the Downloads directory to contain the downloaded file. */
     var filename: js.UndefOr[String] = js.undefined
     
@@ -297,6 +307,10 @@ object downloads {
       
       inline def setConflictActionUndefined: Self = StObject.set(x, "conflictAction", js.undefined)
       
+      inline def setCookieStoreId(value: String): Self = StObject.set(x, "cookieStoreId", value.asInstanceOf[js.Any])
+      
+      inline def setCookieStoreIdUndefined: Self = StObject.set(x, "cookieStoreId", js.undefined)
+      
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
       inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
@@ -305,7 +319,7 @@ object downloads {
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      inline def setHeadersVarargs(value: DownloadOptionsHeaders*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: DownloadOptionsHeaders*): Self = StObject.set(x, "headers", js.Array(value*))
       
       inline def setIncognito(value: Boolean): Self = StObject.set(x, "incognito", value.asInstanceOf[js.Any])
       
@@ -366,6 +380,9 @@ object downloads {
     
     /** Number of bytes received so far from the host, without considering file compression. */
     var bytesReceived: js.UndefOr[Double] = js.undefined
+    
+    /** The cookie store ID of the contextual identity. */
+    var cookieStoreId: js.UndefOr[String] = js.undefined
     
     /** Indication of whether this download is thought to be safe or known to be suspicious. */
     var danger: js.UndefOr[DangerType] = js.undefined
@@ -454,6 +471,10 @@ object downloads {
       
       inline def setBytesReceivedUndefined: Self = StObject.set(x, "bytesReceived", js.undefined)
       
+      inline def setCookieStoreId(value: String): Self = StObject.set(x, "cookieStoreId", value.asInstanceOf[js.Any])
+      
+      inline def setCookieStoreIdUndefined: Self = StObject.set(x, "cookieStoreId", js.undefined)
+      
       inline def setDanger(value: DangerType): Self = StObject.set(x, "danger", value.asInstanceOf[js.Any])
       
       inline def setDangerUndefined: Self = StObject.set(x, "danger", js.undefined)
@@ -506,7 +527,7 @@ object downloads {
       
       inline def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
       
-      inline def setOrderByVarargs(value: String*): Self = StObject.set(x, "orderBy", js.Array(value :_*))
+      inline def setOrderByVarargs(value: String*): Self = StObject.set(x, "orderBy", js.Array(value*))
       
       inline def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
       
@@ -516,7 +537,7 @@ object downloads {
       
       inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
-      inline def setQueryVarargs(value: String*): Self = StObject.set(x, "query", js.Array(value :_*))
+      inline def setQueryVarargs(value: String*): Self = StObject.set(x, "query", js.Array(value*))
       
       inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       

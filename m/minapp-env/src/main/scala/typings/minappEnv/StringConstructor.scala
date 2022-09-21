@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StringConstructor
   extends StObject
      with Instantiable0[String]
-     with Instantiable1[/* value */ js.Any, String] {
+     with Instantiable1[/* value */ Any, String] {
   
   def apply(): java.lang.String = js.native
-  def apply(value: js.Any): java.lang.String = js.native
+  def apply(value: Any): java.lang.String = js.native
   
   def fromCharCode(codes: Double*): java.lang.String = js.native
   
@@ -30,5 +30,5 @@ trait StringConstructor
     * @param template A well-formed template string call site representation.
     * @param substitutions A set of substitution values.
     */
-  def raw(template: TemplateStringsArray, substitutions: js.Any*): java.lang.String = js.native
+  def raw(template: TemplateStringsArray, substitutions: Any*): java.lang.String = js.native
 }

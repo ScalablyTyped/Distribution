@@ -17,7 +17,7 @@ trait AwsSecretsManagerSecretDetails extends StObject {
   var Description: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The ARN, Key ID, or alias of the AWS KMS customer master key (CMK) used to encrypt the SecretString or SecretBinary values for versions of this secret.
+    * The ARN, Key ID, or alias of the KMS key used to encrypt the SecretString or SecretBinary values for versions of this secret.
     */
   var KmsKeyId: js.UndefOr[NonEmptyString] = js.undefined
   

@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ColorScaleConditionalFormatUpdateData extends StObject {
   
   /**
-    *
     * The criteria of the color scale. Midpoint is optional when using a two point color scale.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var criteria: js.UndefOr[ConditionalColorScaleCriteria] = js.undefined

@@ -22,7 +22,7 @@ trait AnimationBehavior extends StObject {
   
   val MotionEffect: typings.activexPowerpoint.PowerPoint.MotionEffect
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.AnimationBehavior_typekey")
   var PowerPointDotAnimationBehavior_typekey: AnimationBehavior
@@ -50,7 +50,7 @@ object AnimationBehavior {
     Delete: () => Unit,
     FilterEffect: FilterEffect,
     MotionEffect: MotionEffect,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotAnimationBehavior_typekey: AnimationBehavior,
     PropertyEffect: PropertyEffect,
     RotationEffect: RotationEffect,
@@ -82,7 +82,7 @@ object AnimationBehavior {
     
     inline def setMotionEffect(value: MotionEffect): Self = StObject.set(x, "MotionEffect", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotAnimationBehavior_typekey(value: AnimationBehavior): Self = StObject.set(x, "PowerPoint.AnimationBehavior_typekey", value.asInstanceOf[js.Any])
     

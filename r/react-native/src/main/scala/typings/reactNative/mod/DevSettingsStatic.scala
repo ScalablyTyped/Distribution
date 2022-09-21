@@ -15,7 +15,7 @@ trait DevSettingsStatic
     * @param title - The title of the menu item. Is internally used as id and should therefore be unique.
     * @param handler - The callback invoked when pressing the menu item.
     */
-  def addMenuItem(title: String, handler: js.Function0[js.Any]): Unit = js.native
+  def addMenuItem(title: String, handler: js.Function0[Any]): Unit = js.native
   
   /**
     * Reload the application.

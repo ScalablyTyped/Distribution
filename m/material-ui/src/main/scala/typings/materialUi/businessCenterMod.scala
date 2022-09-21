@@ -10,10 +10,10 @@ object businessCenterMod {
   
   @JSImport("material-ui/svg-icons/places/business-center", JSImport.Default)
   @js.native
-  class default () extends PlacesBusinessCenter
+  open class default () extends PlacesBusinessCenter
   
   @JSImport("material-ui/svg-icons/places/business-center", "PlacesBusinessCenter")
   @js.native
-  class PlacesBusinessCenter ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class PlacesBusinessCenter ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

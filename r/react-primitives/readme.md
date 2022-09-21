@@ -10,15 +10,12 @@ Primitive React Interfaces Across Targets
 | ------------------ | :-------------: |
 | Full name          | react-primitives |
 | Keywords           | react |
-| # releases         | 4 |
-| # dependents       | 46 |
-| # downloads        | 62102 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 8080.666666666667 |
+| # stars            | 3076.0 |
 
 ## Links
-- [Homepage](https://github.com/lelandrichardson/react-primitives#readme)
-- [Bugs](https://github.com/lelandrichardson/react-primitives/issues)
-- [Repository](https://github.com/lelandrichardson/react-primitives)
 - [Npm](https://www.npmjs.com/package/react-primitives)
     
 

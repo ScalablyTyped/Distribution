@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ComponentInterface
   extends StObject
-     with /* prop */ StringDictionary[js.Any] {
+     with /* prop */ StringDictionary[Any] {
   
   /**
     * The component has loaded and has already rendered.
@@ -41,7 +41,7 @@ trait ComponentInterface
     * componentShouldUpdate is not called on the first render.
     */
   var componentShouldUpdate: js.UndefOr[
-    js.Function3[/* newVal */ js.Any, /* oldVal */ js.Any, /* propName */ String, Boolean | Unit]
+    js.Function3[/* newVal */ Any, /* oldVal */ Any, /* propName */ String, Boolean | Unit]
   ] = js.undefined
   
   /**
@@ -71,7 +71,7 @@ trait ComponentInterface
   
   var disconnectedCallback: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var render: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var render: js.UndefOr[js.Function0[Any]] = js.undefined
 }
 object ComponentInterface {
   
@@ -94,7 +94,7 @@ object ComponentInterface {
     
     inline def setComponentDidUpdateUndefined: Self = StObject.set(x, "componentDidUpdate", js.undefined)
     
-    inline def setComponentShouldUpdate(value: (/* newVal */ js.Any, /* oldVal */ js.Any, /* propName */ String) => Boolean | Unit): Self = StObject.set(x, "componentShouldUpdate", js.Any.fromFunction3(value))
+    inline def setComponentShouldUpdate(value: (/* newVal */ Any, /* oldVal */ Any, /* propName */ String) => Boolean | Unit): Self = StObject.set(x, "componentShouldUpdate", js.Any.fromFunction3(value))
     
     inline def setComponentShouldUpdateUndefined: Self = StObject.set(x, "componentShouldUpdate", js.undefined)
     
@@ -118,7 +118,7 @@ object ComponentInterface {
     
     inline def setDisconnectedCallbackUndefined: Self = StObject.set(x, "disconnectedCallback", js.undefined)
     
-    inline def setRender(value: () => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
+    inline def setRender(value: () => Any): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
     
     inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
   }

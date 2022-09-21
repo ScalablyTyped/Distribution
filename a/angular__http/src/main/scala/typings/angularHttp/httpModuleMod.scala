@@ -18,11 +18,11 @@ object httpModuleMod {
   
   @JSImport("@angular/http/src/http_module", "HttpModule")
   @js.native
-  class HttpModule () extends StObject
+  open class HttpModule () extends StObject
   
   @JSImport("@angular/http/src/http_module", "JsonpModule")
   @js.native
-  class JsonpModule () extends StObject
+  open class JsonpModule () extends StObject
   
   inline def createDefaultCookieXSRFStrategy(): CookieXSRFStrategy = ^.asInstanceOf[js.Dynamic].applyDynamic("_createDefaultCookieXSRFStrategy")().asInstanceOf[CookieXSRFStrategy]
   

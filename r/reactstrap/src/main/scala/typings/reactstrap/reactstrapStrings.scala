@@ -1,8 +1,7 @@
 package typings.reactstrap
 
-import typings.reactstrap.customInputMod.CustomInputType
-import typings.reactstrap.dropdownMod.Direction
 import typings.reactstrap.inputMod.InputType
+import typings.reactstrap.offcanvasMod.Direction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,8 +37,18 @@ object reactstrapStrings {
   inline def assertive: assertive = "assertive".asInstanceOf[assertive]
   
   @js.native
+  sealed trait black extends StObject
+  inline def black: black = "black".asInstanceOf[black]
+  
+  @js.native
   sealed trait both extends StObject
   inline def both: both = "both".asInstanceOf[both]
+  
+  @js.native
+  sealed trait bottom
+    extends StObject
+       with Direction
+  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
   sealed trait button
@@ -54,7 +63,6 @@ object reactstrapStrings {
   @js.native
   sealed trait checkbox
     extends StObject
-       with CustomInputType
        with InputType
   inline def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
   
@@ -99,13 +107,9 @@ object reactstrapStrings {
   inline def dialog: dialog = "dialog".asInstanceOf[dialog]
   
   @js.native
-  sealed trait done extends StObject
-  inline def done: done = "done".asInstanceOf[done]
-  
-  @js.native
   sealed trait down
     extends StObject
-       with Direction
+       with typings.reactstrap.dropdownMod.Direction
   inline def down: down = "down".asInstanceOf[down]
   
   @js.native
@@ -115,8 +119,11 @@ object reactstrapStrings {
   inline def email: email = "email".asInstanceOf[email]
   
   @js.native
-  sealed trait enter extends StObject
-  inline def enter: enter = "enter".asInstanceOf[enter]
+  sealed trait end
+    extends StObject
+       with Direction
+       with typings.reactstrap.dropdownMod.Direction
+  inline def end: end = "end".asInstanceOf[end]
   
   @js.native
   sealed trait execute extends StObject
@@ -125,13 +132,12 @@ object reactstrapStrings {
   @js.native
   sealed trait file
     extends StObject
-       with CustomInputType
        with InputType
   inline def file: file = "file".asInstanceOf[file]
   
   @js.native
-  sealed trait go extends StObject
-  inline def go: go = "go".asInstanceOf[go]
+  sealed trait fluid extends StObject
+  inline def fluid: fluid = "fluid".asInstanceOf[fluid]
   
   @js.native
   sealed trait grammar extends StObject
@@ -170,12 +176,6 @@ object reactstrapStrings {
   inline def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   
   @js.native
-  sealed trait left
-    extends StObject
-       with Direction
-  inline def left: left = "left".asInstanceOf[left]
-  
-  @js.native
   sealed trait lg extends StObject
   inline def lg: lg = "lg".asInstanceOf[lg]
   
@@ -194,6 +194,10 @@ object reactstrapStrings {
   @js.native
   sealed trait location extends StObject
   inline def location: location = "location".asInstanceOf[location]
+  
+  @js.native
+  sealed trait md extends StObject
+  inline def md: md = "md".asInstanceOf[md]
   
   @js.native
   sealed trait menu extends StObject
@@ -274,20 +278,14 @@ object reactstrapStrings {
   inline def prev: prev = "prev".asInstanceOf[prev]
   
   @js.native
-  sealed trait previous extends StObject
-  inline def previous: previous = "previous".asInstanceOf[previous]
-  
-  @js.native
   sealed trait radio
     extends StObject
-       with CustomInputType
        with InputType
   inline def radio: radio = "radio".asInstanceOf[radio]
   
   @js.native
   sealed trait range
     extends StObject
-       with CustomInputType
        with InputType
   inline def range: range = "range".asInstanceOf[range]
   
@@ -310,12 +308,6 @@ object reactstrapStrings {
   inline def reset: reset = "reset".asInstanceOf[reset]
   
   @js.native
-  sealed trait right
-    extends StObject
-       with Direction
-  inline def right: right = "right".asInstanceOf[right]
-  
-  @js.native
   sealed trait search
     extends StObject
        with InputType
@@ -324,13 +316,8 @@ object reactstrapStrings {
   @js.native
   sealed trait select
     extends StObject
-       with CustomInputType
        with InputType
   inline def select: select = "select".asInstanceOf[select]
-  
-  @js.native
-  sealed trait send extends StObject
-  inline def send: send = "send".asInstanceOf[send]
   
   @js.native
   sealed trait sm extends StObject
@@ -339,6 +326,13 @@ object reactstrapStrings {
   @js.native
   sealed trait spelling extends StObject
   inline def spelling: spelling = "spelling".asInstanceOf[spelling]
+  
+  @js.native
+  sealed trait start
+    extends StObject
+       with Direction
+       with typings.reactstrap.dropdownMod.Direction
+  inline def start: start = "start".asInstanceOf[start]
   
   @js.native
   sealed trait static extends StObject
@@ -357,7 +351,7 @@ object reactstrapStrings {
   @js.native
   sealed trait switch
     extends StObject
-       with CustomInputType
+       with InputType
   inline def switch: switch = "switch".asInstanceOf[switch]
   
   @js.native
@@ -393,13 +387,19 @@ object reactstrapStrings {
   inline def time: time = "time".asInstanceOf[time]
   
   @js.native
+  sealed trait top
+    extends StObject
+       with Direction
+  inline def top: top = "top".asInstanceOf[top]
+  
+  @js.native
   sealed trait tree extends StObject
   inline def tree: tree = "tree".asInstanceOf[tree]
   
   @js.native
   sealed trait up
     extends StObject
-       with Direction
+       with typings.reactstrap.dropdownMod.Direction
   inline def up: up = "up".asInstanceOf[up]
   
   @js.native
@@ -417,6 +417,18 @@ object reactstrapStrings {
     extends StObject
        with InputType
   inline def week: week = "week".asInstanceOf[week]
+  
+  @js.native
+  sealed trait white extends StObject
+  inline def white: white = "white".asInstanceOf[white]
+  
+  @js.native
+  sealed trait xl extends StObject
+  inline def xl: xl = "xl".asInstanceOf[xl]
+  
+  @js.native
+  sealed trait xxl extends StObject
+  inline def xxl: xxl = "xxl".asInstanceOf[xxl]
   
   @js.native
   sealed trait yes extends StObject

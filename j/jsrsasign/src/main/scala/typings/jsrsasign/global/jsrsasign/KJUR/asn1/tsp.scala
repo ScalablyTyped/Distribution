@@ -41,7 +41,7 @@ object tsp {
     */
   @JSGlobal("jsrsasign.KJUR.asn1.tsp.AbstractTSAAdapter")
   @js.native
-  class AbstractTSAAdapter ()
+  open class AbstractTSAAdapter ()
     extends typings.jsrsasign.mod.KJUR.asn1.tsp.AbstractTSAAdapter
   
   /**
@@ -61,7 +61,7 @@ object tsp {
     */
   @JSGlobal("jsrsasign.KJUR.asn1.tsp.Accuracy")
   @js.native
-  class Accuracy ()
+  open class Accuracy ()
     extends typings.jsrsasign.mod.KJUR.asn1.tsp.Accuracy {
     def this(params: Micros) = this()
   }
@@ -83,7 +83,7 @@ object tsp {
     */
   @JSGlobal("jsrsasign.KJUR.asn1.tsp.FixedTSAAdapter")
   @js.native
-  class FixedTSAAdapter ()
+  open class FixedTSAAdapter ()
     extends typings.jsrsasign.mod.KJUR.asn1.tsp.FixedTSAAdapter {
     def this(initParams: SigAlg) = this()
   }
@@ -103,7 +103,7 @@ object tsp {
     */
   @JSGlobal("jsrsasign.KJUR.asn1.tsp.MessageImprint")
   @js.native
-  class MessageImprint ()
+  open class MessageImprint ()
     extends typings.jsrsasign.mod.KJUR.asn1.tsp.MessageImprint {
     def this(params: HashValue) = this()
   }
@@ -126,7 +126,7 @@ object tsp {
     */
   @JSGlobal("jsrsasign.KJUR.asn1.tsp.PKIFailureInfo")
   @js.native
-  class PKIFailureInfo ()
+  open class PKIFailureInfo ()
     extends typings.jsrsasign.mod.KJUR.asn1.tsp.PKIFailureInfo {
     def this(params: IntegerParam) = this()
     def this(params: NameParam) = this()
@@ -193,7 +193,7 @@ object tsp {
     */
   @JSGlobal("jsrsasign.KJUR.asn1.tsp.PKIFreeText")
   @js.native
-  class PKIFreeText ()
+  open class PKIFreeText ()
     extends typings.jsrsasign.mod.KJUR.asn1.tsp.PKIFreeText {
     def this(params: ArrayParam[String]) = this()
   }
@@ -214,7 +214,7 @@ object tsp {
     */
   @JSGlobal("jsrsasign.KJUR.asn1.tsp.PKIStatus")
   @js.native
-  class PKIStatus ()
+  open class PKIStatus ()
     extends typings.jsrsasign.mod.KJUR.asn1.tsp.PKIStatus {
     def this(params: NameParam) = this()
   }
@@ -273,7 +273,7 @@ object tsp {
     */
   @JSGlobal("jsrsasign.KJUR.asn1.tsp.PKIStatusInfo")
   @js.native
-  class PKIStatusInfo ()
+  open class PKIStatusInfo ()
     extends typings.jsrsasign.mod.KJUR.asn1.tsp.PKIStatusInfo {
     def this(params: Failinfo) = this()
   }
@@ -285,7 +285,7 @@ object tsp {
     */
   @JSGlobal("jsrsasign.KJUR.asn1.tsp.SimpleTSAAdapter")
   @js.native
-  class SimpleTSAAdapter ()
+  open class SimpleTSAAdapter ()
     extends typings.jsrsasign.mod.KJUR.asn1.tsp.SimpleTSAAdapter {
     def this(initParams: SigAlg) = this()
   }
@@ -337,7 +337,7 @@ object tsp {
     */
   @JSGlobal("jsrsasign.KJUR.asn1.tsp.TSTInfo")
   @js.native
-  class TSTInfo protected ()
+  open class TSTInfo protected ()
     extends typings.jsrsasign.mod.KJUR.asn1.tsp.TSTInfo {
     def this(params: typings.jsrsasign.anon.Accuracy) = this()
   }
@@ -358,7 +358,7 @@ object tsp {
     */
   @JSGlobal("jsrsasign.KJUR.asn1.tsp.TimeStampReq")
   @js.native
-  class TimeStampReq ()
+  open class TimeStampReq ()
     extends typings.jsrsasign.mod.KJUR.asn1.tsp.TimeStampReq {
     def this(params: Mi) = this()
   }
@@ -375,7 +375,7 @@ object tsp {
     */
   @JSGlobal("jsrsasign.KJUR.asn1.tsp.TimeStampResp")
   @js.native
-  class TimeStampResp ()
+  open class TimeStampResp ()
     extends typings.jsrsasign.mod.KJUR.asn1.tsp.TimeStampResp {
     def this(params: Status) = this()
   }

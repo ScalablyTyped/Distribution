@@ -2,8 +2,8 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.FC
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import typings.semanticUiReact.semanticUiReactStrings.left
 import typings.semanticUiReact.semanticUiReactStrings.right
@@ -15,12 +15,12 @@ object menuMenuMenuMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/collections/Menu/MenuMenu", JSImport.Default)
   @js.native
-  val default: StatelessComponent[MenuMenuProps] = js.native
+  val default: FC[MenuMenuProps] = js.native
   
   trait MenuMenuProps
     extends StObject
        with StrictMenuMenuProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object MenuMenuProps {
     
     inline def apply(): MenuMenuProps = {
@@ -32,7 +32,7 @@ object menuMenuMenuMod extends Shortcut {
   trait StrictMenuMenuProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -55,7 +55,7 @@ object menuMenuMenuMod extends Shortcut {
     
     extension [Self <: StrictMenuMenuProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -77,8 +77,8 @@ object menuMenuMenuMod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[MenuMenuProps]
+  type _To = FC[MenuMenuProps]
   
   /* This means you don't have to write `default`, but can instead just say `menuMenuMenuMod.foo` */
-  override def _to: StatelessComponent[MenuMenuProps] = default
+  override def _to: FC[MenuMenuProps] = default
 }

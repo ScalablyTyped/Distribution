@@ -12,7 +12,7 @@ trait MLUserDataEncryption extends StObject {
   var KmsKeyId: js.UndefOr[NameString] = js.undefined
   
   /**
-    * The encryption mode applied to user data. Valid values are:   DISABLED: encryption is disabled   SSEKMS: use of server-side encryption with AWS Key Management Service (SSE-KMS) for user data stored in Amazon S3.  
+    * The encryption mode applied to user data. Valid values are:   DISABLED: encryption is disabled   SSEKMS: use of server-side encryption with Key Management Service (SSE-KMS) for user data stored in Amazon S3.  
     */
   var MlUserDataEncryptionMode: MLUserDataEncryptionModeString
 }

@@ -15,7 +15,7 @@ object global {
       * 定位服务
       * @param options 选项
       */
-    class Geolocation ()
+    open class Geolocation ()
       extends StObject
          with typings.amapJsApiGeolocation.AMap.Geolocation {
       def this(options: Options) = this()

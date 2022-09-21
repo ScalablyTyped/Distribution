@@ -29,6 +29,7 @@ import typings.officeUiFabricReact.officeUiFabricReactStrings.decimal
 import typings.officeUiFabricReact.officeUiFabricReactStrings.descending
 import typings.officeUiFabricReact.officeUiFabricReactStrings.dialog
 import typings.officeUiFabricReact.officeUiFabricReactStrings.email
+import typings.officeUiFabricReact.officeUiFabricReactStrings.environment
 import typings.officeUiFabricReact.officeUiFabricReactStrings.execute
 import typings.officeUiFabricReact.officeUiFabricReactStrings.grammar
 import typings.officeUiFabricReact.officeUiFabricReactStrings.grid
@@ -59,6 +60,7 @@ import typings.officeUiFabricReact.officeUiFabricReactStrings.text
 import typings.officeUiFabricReact.officeUiFabricReactStrings.time
 import typings.officeUiFabricReact.officeUiFabricReactStrings.tree
 import typings.officeUiFabricReact.officeUiFabricReactStrings.url
+import typings.officeUiFabricReact.officeUiFabricReactStrings.user
 import typings.officeUiFabricReact.officeUiFabricReactStrings.vertical
 import typings.officeUiFabricReact.officeUiFabricReactStrings.yes
 import typings.officeUiFabricReact.splitButtonClassNamesMod.ISplitButtonClassNames
@@ -66,6 +68,7 @@ import typings.react.anon.Html
 import typings.react.mod.AnchorHTMLAttributes
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.ButtonHTMLAttributes
 import typings.react.mod.CSSProperties
@@ -99,7 +102,7 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
-import typings.react.mod.global.JSX.Element
+import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLAnchorElement
 import typings.std.HTMLButtonElement
@@ -140,11 +143,11 @@ trait PartialIBaseButtonProps extends StObject {
   
   var `aria-activedescendant`: js.UndefOr[String] = js.undefined
   
-  var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
+  var `aria-atomic`: js.UndefOr[Booleanish] = js.undefined
   
   var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
   
-  var `aria-busy`: js.UndefOr[Boolean] = js.undefined
+  var `aria-busy`: js.UndefOr[Booleanish] = js.undefined
   
   var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
   
@@ -162,21 +165,21 @@ trait PartialIBaseButtonProps extends StObject {
   
   var `aria-details`: js.UndefOr[String] = js.undefined
   
-  var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
+  var `aria-disabled`: js.UndefOr[Booleanish] = js.undefined
   
   var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
   
   var `aria-errormessage`: js.UndefOr[String] = js.undefined
   
-  var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
+  var `aria-expanded`: js.UndefOr[Booleanish] = js.undefined
   
   var `aria-flowto`: js.UndefOr[String] = js.undefined
   
-  var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
+  var `aria-grabbed`: js.UndefOr[Booleanish] = js.undefined
   
   var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
   
-  var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
+  var `aria-hidden`: js.UndefOr[Booleanish] = js.undefined
   
   var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
   
@@ -190,11 +193,11 @@ trait PartialIBaseButtonProps extends StObject {
   
   var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
   
-  var `aria-modal`: js.UndefOr[Boolean] = js.undefined
+  var `aria-modal`: js.UndefOr[Booleanish] = js.undefined
   
-  var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
+  var `aria-multiline`: js.UndefOr[Booleanish] = js.undefined
   
-  var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
+  var `aria-multiselectable`: js.UndefOr[Booleanish] = js.undefined
   
   var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
   
@@ -206,13 +209,13 @@ trait PartialIBaseButtonProps extends StObject {
   
   var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
   
-  var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
+  var `aria-readonly`: js.UndefOr[Booleanish] = js.undefined
   
   var `aria-relevant`: js.UndefOr[
     additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
   ] = js.undefined
   
-  var `aria-required`: js.UndefOr[Boolean] = js.undefined
+  var `aria-required`: js.UndefOr[Booleanish] = js.undefined
   
   var `aria-roledescription`: js.UndefOr[String] = js.undefined
   
@@ -222,7 +225,7 @@ trait PartialIBaseButtonProps extends StObject {
   
   var `aria-rowspan`: js.UndefOr[Double] = js.undefined
   
-  var `aria-selected`: js.UndefOr[Boolean] = js.undefined
+  var `aria-selected`: js.UndefOr[Booleanish] = js.undefined
   
   var `aria-setsize`: js.UndefOr[Double] = js.undefined
   
@@ -262,7 +265,7 @@ trait PartialIBaseButtonProps extends StObject {
   
   var buttonType: js.UndefOr[ButtonType] = js.undefined
   
-  var capture: js.UndefOr[Boolean | String] = js.undefined
+  var capture: js.UndefOr[Boolean | user | environment] = js.undefined
   
   var cellPadding: js.UndefOr[Double | String] = js.undefined
   
@@ -304,7 +307,7 @@ trait PartialIBaseButtonProps extends StObject {
   
   var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
   
   var datatype: js.UndefOr[String] = js.undefined
   
@@ -312,7 +315,7 @@ trait PartialIBaseButtonProps extends StObject {
   
   var defaultChecked: js.UndefOr[Boolean] = js.undefined
   
-  var defaultRender: js.UndefOr[js.Any] = js.undefined
+  var defaultRender: js.UndefOr[Any] = js.undefined
   
   var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.undefined
   
@@ -324,7 +327,7 @@ trait PartialIBaseButtonProps extends StObject {
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var download: js.UndefOr[js.Any] = js.undefined
+  var download: js.UndefOr[Any] = js.undefined
   
   var draggable: js.UndefOr[Booleanish] = js.undefined
   
@@ -393,7 +396,7 @@ trait PartialIBaseButtonProps extends StObject {
   
   var id: js.UndefOr[String] = js.undefined
   
-  var inlist: js.UndefOr[js.Any] = js.undefined
+  var inlist: js.UndefOr[Any] = js.undefined
   
   var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
   
@@ -1007,7 +1010,7 @@ trait PartialIBaseButtonProps extends StObject {
   
   var reversed: js.UndefOr[Boolean] = js.undefined
   
-  var role: js.UndefOr[String] = js.undefined
+  var role: js.UndefOr[AriaRole] = js.undefined
   
   var rootProps: js.UndefOr[
     ButtonHTMLAttributes[HTMLButtonElement] | AnchorHTMLAttributes[HTMLAnchorElement]
@@ -1160,7 +1163,7 @@ object PartialIBaseButtonProps {
     
     inline def `setAria-activedescendantUndefined`: Self = StObject.set(x, "aria-activedescendant", js.undefined)
     
-    inline def `setAria-atomic`(value: Boolean): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
+    inline def `setAria-atomic`(value: Booleanish): Self = StObject.set(x, "aria-atomic", value.asInstanceOf[js.Any])
     
     inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
     
@@ -1168,7 +1171,7 @@ object PartialIBaseButtonProps {
     
     inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
     
-    inline def `setAria-busy`(value: Boolean): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
+    inline def `setAria-busy`(value: Booleanish): Self = StObject.set(x, "aria-busy", value.asInstanceOf[js.Any])
     
     inline def `setAria-busyUndefined`: Self = StObject.set(x, "aria-busy", js.undefined)
     
@@ -1204,7 +1207,7 @@ object PartialIBaseButtonProps {
     
     inline def `setAria-detailsUndefined`: Self = StObject.set(x, "aria-details", js.undefined)
     
-    inline def `setAria-disabled`(value: Boolean): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
+    inline def `setAria-disabled`(value: Booleanish): Self = StObject.set(x, "aria-disabled", value.asInstanceOf[js.Any])
     
     inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
     
@@ -1216,7 +1219,7 @@ object PartialIBaseButtonProps {
     
     inline def `setAria-errormessageUndefined`: Self = StObject.set(x, "aria-errormessage", js.undefined)
     
-    inline def `setAria-expanded`(value: Boolean): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
+    inline def `setAria-expanded`(value: Booleanish): Self = StObject.set(x, "aria-expanded", value.asInstanceOf[js.Any])
     
     inline def `setAria-expandedUndefined`: Self = StObject.set(x, "aria-expanded", js.undefined)
     
@@ -1224,7 +1227,7 @@ object PartialIBaseButtonProps {
     
     inline def `setAria-flowtoUndefined`: Self = StObject.set(x, "aria-flowto", js.undefined)
     
-    inline def `setAria-grabbed`(value: Boolean): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
+    inline def `setAria-grabbed`(value: Booleanish): Self = StObject.set(x, "aria-grabbed", value.asInstanceOf[js.Any])
     
     inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
     
@@ -1232,7 +1235,7 @@ object PartialIBaseButtonProps {
     
     inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
     
-    inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
+    inline def `setAria-hidden`(value: Booleanish): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
     
     inline def `setAria-hiddenUndefined`: Self = StObject.set(x, "aria-hidden", js.undefined)
     
@@ -1260,15 +1263,15 @@ object PartialIBaseButtonProps {
     
     inline def `setAria-liveUndefined`: Self = StObject.set(x, "aria-live", js.undefined)
     
-    inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
+    inline def `setAria-modal`(value: Booleanish): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
     
     inline def `setAria-modalUndefined`: Self = StObject.set(x, "aria-modal", js.undefined)
     
-    inline def `setAria-multiline`(value: Boolean): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
+    inline def `setAria-multiline`(value: Booleanish): Self = StObject.set(x, "aria-multiline", value.asInstanceOf[js.Any])
     
     inline def `setAria-multilineUndefined`: Self = StObject.set(x, "aria-multiline", js.undefined)
     
-    inline def `setAria-multiselectable`(value: Boolean): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
+    inline def `setAria-multiselectable`(value: Booleanish): Self = StObject.set(x, "aria-multiselectable", value.asInstanceOf[js.Any])
     
     inline def `setAria-multiselectableUndefined`: Self = StObject.set(x, "aria-multiselectable", js.undefined)
     
@@ -1292,7 +1295,7 @@ object PartialIBaseButtonProps {
     
     inline def `setAria-pressedUndefined`: Self = StObject.set(x, "aria-pressed", js.undefined)
     
-    inline def `setAria-readonly`(value: Boolean): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
+    inline def `setAria-readonly`(value: Booleanish): Self = StObject.set(x, "aria-readonly", value.asInstanceOf[js.Any])
     
     inline def `setAria-readonlyUndefined`: Self = StObject.set(x, "aria-readonly", js.undefined)
     
@@ -1302,7 +1305,7 @@ object PartialIBaseButtonProps {
     
     inline def `setAria-relevantUndefined`: Self = StObject.set(x, "aria-relevant", js.undefined)
     
-    inline def `setAria-required`(value: Boolean): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
+    inline def `setAria-required`(value: Booleanish): Self = StObject.set(x, "aria-required", value.asInstanceOf[js.Any])
     
     inline def `setAria-requiredUndefined`: Self = StObject.set(x, "aria-required", js.undefined)
     
@@ -1322,7 +1325,7 @@ object PartialIBaseButtonProps {
     
     inline def `setAria-rowspanUndefined`: Self = StObject.set(x, "aria-rowspan", js.undefined)
     
-    inline def `setAria-selected`(value: Boolean): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
+    inline def `setAria-selected`(value: Booleanish): Self = StObject.set(x, "aria-selected", value.asInstanceOf[js.Any])
     
     inline def `setAria-selectedUndefined`: Self = StObject.set(x, "aria-selected", js.undefined)
     
@@ -1402,7 +1405,7 @@ object PartialIBaseButtonProps {
     
     inline def setButtonTypeUndefined: Self = StObject.set(x, "buttonType", js.undefined)
     
-    inline def setCapture(value: Boolean | String): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+    inline def setCapture(value: Boolean | user | environment): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
     inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
     
@@ -1488,7 +1491,7 @@ object PartialIBaseButtonProps {
     
     inline def setDangerouslySetInnerHTMLUndefined: Self = StObject.set(x, "dangerouslySetInnerHTML", js.undefined)
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -1506,7 +1509,7 @@ object PartialIBaseButtonProps {
     
     inline def setDefaultCheckedUndefined: Self = StObject.set(x, "defaultChecked", js.undefined)
     
-    inline def setDefaultRender(value: js.Any): Self = StObject.set(x, "defaultRender", value.asInstanceOf[js.Any])
+    inline def setDefaultRender(value: Any): Self = StObject.set(x, "defaultRender", value.asInstanceOf[js.Any])
     
     inline def setDefaultRenderUndefined: Self = StObject.set(x, "defaultRender", js.undefined)
     
@@ -1516,7 +1519,7 @@ object PartialIBaseButtonProps {
     
     inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+    inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
     
     inline def setDefer(value: Boolean): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     
@@ -1536,7 +1539,7 @@ object PartialIBaseButtonProps {
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    inline def setDownload(value: js.Any): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
+    inline def setDownload(value: Any): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
     
     inline def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
     
@@ -1636,7 +1639,7 @@ object PartialIBaseButtonProps {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+    inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
     
     inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
     
@@ -1842,7 +1845,8 @@ object PartialIBaseButtonProps {
     
     inline def setOnBlur(
       value: FocusEvent[
-          HTMLAnchorElement | HTMLButtonElement | HTMLDivElement | BaseButton | Button | HTMLSpanElement
+          HTMLAnchorElement | HTMLButtonElement | HTMLDivElement | BaseButton | Button | HTMLSpanElement, 
+          Element
         ] => scala.Unit
     ): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
     
@@ -2052,7 +2056,8 @@ object PartialIBaseButtonProps {
     
     inline def setOnFocus(
       value: FocusEvent[
-          HTMLAnchorElement | HTMLButtonElement | HTMLDivElement | BaseButton | Button | HTMLSpanElement
+          HTMLAnchorElement | HTMLButtonElement | HTMLDivElement | BaseButton | Button | HTMLSpanElement, 
+          Element
         ] => scala.Unit
     ): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
     
@@ -2321,35 +2326,50 @@ object PartialIBaseButtonProps {
     inline def setOnRateChangeUndefined: Self = StObject.set(x, "onRateChange", js.undefined)
     
     inline def setOnRenderAriaDescription(
-      value: (/* props */ js.UndefOr[IButtonProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IButtonProps], Element | Null]]) => Element | Null
+      value: (/* props */ js.UndefOr[IButtonProps], /* defaultRender */ js.UndefOr[
+          js.Function1[/* props */ js.UndefOr[IButtonProps], typings.react.mod.global.JSX.Element | Null]
+        ]) => typings.react.mod.global.JSX.Element | Null
     ): Self = StObject.set(x, "onRenderAriaDescription", js.Any.fromFunction2(value))
     
     inline def setOnRenderAriaDescriptionUndefined: Self = StObject.set(x, "onRenderAriaDescription", js.undefined)
     
     inline def setOnRenderChildren(
-      value: (/* props */ js.UndefOr[IButtonProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IButtonProps], Element | Null]]) => Element | Null
+      value: (/* props */ js.UndefOr[IButtonProps], /* defaultRender */ js.UndefOr[
+          js.Function1[/* props */ js.UndefOr[IButtonProps], typings.react.mod.global.JSX.Element | Null]
+        ]) => typings.react.mod.global.JSX.Element | Null
     ): Self = StObject.set(x, "onRenderChildren", js.Any.fromFunction2(value))
     
     inline def setOnRenderChildrenUndefined: Self = StObject.set(x, "onRenderChildren", js.undefined)
     
     inline def setOnRenderDescription(
-      value: (/* props */ js.UndefOr[IButtonProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IButtonProps], Element | Null]]) => Element | Null
+      value: (/* props */ js.UndefOr[IButtonProps], /* defaultRender */ js.UndefOr[
+          js.Function1[/* props */ js.UndefOr[IButtonProps], typings.react.mod.global.JSX.Element | Null]
+        ]) => typings.react.mod.global.JSX.Element | Null
     ): Self = StObject.set(x, "onRenderDescription", js.Any.fromFunction2(value))
     
     inline def setOnRenderDescriptionUndefined: Self = StObject.set(x, "onRenderDescription", js.undefined)
     
     inline def setOnRenderIcon(
-      value: (/* props */ js.UndefOr[IButtonProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IButtonProps], Element | Null]]) => Element | Null
+      value: (/* props */ js.UndefOr[IButtonProps], /* defaultRender */ js.UndefOr[
+          js.Function1[/* props */ js.UndefOr[IButtonProps], typings.react.mod.global.JSX.Element | Null]
+        ]) => typings.react.mod.global.JSX.Element | Null
     ): Self = StObject.set(x, "onRenderIcon", js.Any.fromFunction2(value))
     
     inline def setOnRenderIconUndefined: Self = StObject.set(x, "onRenderIcon", js.undefined)
     
     inline def setOnRenderMenu(
-      value: (/* props */ js.UndefOr[IContextualMenuProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IContextualMenuProps], Element | Null]]) => Element | Null
+      value: (/* props */ js.UndefOr[IContextualMenuProps], /* defaultRender */ js.UndefOr[
+          js.Function1[
+            /* props */ js.UndefOr[IContextualMenuProps], 
+            typings.react.mod.global.JSX.Element | Null
+          ]
+        ]) => typings.react.mod.global.JSX.Element | Null
     ): Self = StObject.set(x, "onRenderMenu", js.Any.fromFunction2(value))
     
     inline def setOnRenderMenuIcon(
-      value: (/* props */ js.UndefOr[IButtonProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IButtonProps], Element | Null]]) => Element | Null
+      value: (/* props */ js.UndefOr[IButtonProps], /* defaultRender */ js.UndefOr[
+          js.Function1[/* props */ js.UndefOr[IButtonProps], typings.react.mod.global.JSX.Element | Null]
+        ]) => typings.react.mod.global.JSX.Element | Null
     ): Self = StObject.set(x, "onRenderMenuIcon", js.Any.fromFunction2(value))
     
     inline def setOnRenderMenuIconUndefined: Self = StObject.set(x, "onRenderMenuIcon", js.undefined)
@@ -2357,7 +2377,9 @@ object PartialIBaseButtonProps {
     inline def setOnRenderMenuUndefined: Self = StObject.set(x, "onRenderMenu", js.undefined)
     
     inline def setOnRenderText(
-      value: (/* props */ js.UndefOr[IButtonProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IButtonProps], Element | Null]]) => Element | Null
+      value: (/* props */ js.UndefOr[IButtonProps], /* defaultRender */ js.UndefOr[
+          js.Function1[/* props */ js.UndefOr[IButtonProps], typings.react.mod.global.JSX.Element | Null]
+        ]) => typings.react.mod.global.JSX.Element | Null
     ): Self = StObject.set(x, "onRenderText", js.Any.fromFunction2(value))
     
     inline def setOnRenderTextUndefined: Self = StObject.set(x, "onRenderText", js.undefined)
@@ -2591,7 +2613,7 @@ object PartialIBaseButtonProps {
     
     inline def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
     
-    inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
     inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
@@ -2775,7 +2797,7 @@ object PartialIBaseButtonProps {
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
     
     inline def setVariantClassName(value: String): Self = StObject.set(x, "variantClassName", value.asInstanceOf[js.Any])
     

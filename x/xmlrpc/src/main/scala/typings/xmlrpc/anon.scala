@@ -1,6 +1,5 @@
 package typings.xmlrpc
 
-import typings.std.Date
 import typings.xmlrpc.mod.HeadersProcessor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,20 +9,20 @@ object anon {
   
   trait Expires extends StObject {
     
-    var expires: Date
+    var expires: js.Date
     
     var secure: Boolean
   }
   object Expires {
     
-    inline def apply(expires: Date, secure: Boolean): Expires = {
+    inline def apply(expires: js.Date, secure: Boolean): Expires = {
       val __obj = js.Dynamic.literal(expires = expires.asInstanceOf[js.Any], secure = secure.asInstanceOf[js.Any])
       __obj.asInstanceOf[Expires]
     }
     
     extension [Self <: Expires](x: Self) {
       
-      inline def setExpires(value: Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: js.Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
       inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
     }
@@ -65,7 +64,7 @@ object anon {
       
       inline def setProcessors(value: js.Array[HeadersProcessor]): Self = StObject.set(x, "processors", value.asInstanceOf[js.Any])
       
-      inline def setProcessorsVarargs(value: HeadersProcessor*): Self = StObject.set(x, "processors", js.Array(value :_*))
+      inline def setProcessorsVarargs(value: HeadersProcessor*): Self = StObject.set(x, "processors", js.Array(value*))
     }
   }
 }

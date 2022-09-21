@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait NativeObjectWrapper extends StObject {
   
-  var ObjectId: js.Any
+  var ObjectId: Any
 }
 object NativeObjectWrapper {
   
-  inline def apply(ObjectId: js.Any): NativeObjectWrapper = {
+  inline def apply(ObjectId: Any): NativeObjectWrapper = {
     val __obj = js.Dynamic.literal(ObjectId = ObjectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[NativeObjectWrapper]
   }
   
   extension [Self <: NativeObjectWrapper](x: Self) {
     
-    inline def setObjectId(value: js.Any): Self = StObject.set(x, "ObjectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: Any): Self = StObject.set(x, "ObjectId", value.asInstanceOf[js.Any])
   }
 }

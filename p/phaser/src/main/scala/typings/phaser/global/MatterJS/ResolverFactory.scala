@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MatterJS.ResolverFactory")
 @js.native
-class ResolverFactory ()
+open class ResolverFactory ()
   extends StObject
      with typings.phaser.MatterJS.ResolverFactory {
   

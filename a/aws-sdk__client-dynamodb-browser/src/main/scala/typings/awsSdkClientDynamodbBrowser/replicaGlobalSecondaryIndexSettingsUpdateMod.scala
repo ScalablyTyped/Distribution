@@ -8,5 +8,5 @@ object replicaGlobalSecondaryIndexSettingsUpdateMod {
   
   @JSImport("@aws-sdk/client-dynamodb-browser/model/_ReplicaGlobalSecondaryIndexSettingsUpdate", "_ReplicaGlobalSecondaryIndexSettingsUpdate")
   @js.native
-  val ReplicaGlobalSecondaryIndexSettingsUpdate: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ReplicaGlobalSecondaryIndexSettingsUpdate: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

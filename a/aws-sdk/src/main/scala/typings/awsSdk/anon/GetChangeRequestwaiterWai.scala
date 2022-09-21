@@ -1,6 +1,6 @@
 package typings.awsSdk.anon
 
-import typings.awsSdk.route53Mod.ResourceId
+import typings.awsSdk.route53Mod.ChangeId
 import typings.awsSdk.serviceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,11 +15,11 @@ trait GetChangeRequestwaiterWai extends StObject {
   /**
     * The ID of the change batch request. The value that you specify here is the value that ChangeResourceRecordSets returned in the Id element when you submitted the request.
     */
-  var Id: ResourceId
+  var Id: ChangeId
 }
 object GetChangeRequestwaiterWai {
   
-  inline def apply(Id: ResourceId): GetChangeRequestwaiterWai = {
+  inline def apply(Id: ChangeId): GetChangeRequestwaiterWai = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetChangeRequestwaiterWai]
   }
@@ -30,6 +30,6 @@ object GetChangeRequestwaiterWai {
     
     inline def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
-    inline def setId(value: ResourceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: ChangeId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

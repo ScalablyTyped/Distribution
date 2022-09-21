@@ -1,7 +1,7 @@
 
 # Scala.js typings for localized-countries
 
-Typings are for version 1.0
+Typings are for version 2.0
 
 ## Library description:
 Country code to name mappings for several languages
@@ -10,10 +10,10 @@ Country code to name mappings for several languages
 | ------------------ | :-------------: |
 | Full name          | localized-countries |
 | Keywords           | countries, country, i18n, localize, code, lookup |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 71685 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 23210.333333333332 |
+| # stars            | 20.0 |
 
 ## Links
 - [Homepage](https://github.com/marcbachmann/localized-countries#readme)

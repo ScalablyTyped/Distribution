@@ -12,7 +12,7 @@ trait DescribeJournalKinesisStreamRequest extends StObject {
   var LedgerName: typings.awsSdk.qldbMod.LedgerName
   
   /**
-    * The unique ID that QLDB assigns to each QLDB journal stream.
+    * The UUID (represented in Base62-encoded text) of the QLDB journal stream to describe.
     */
   var StreamId: UniqueId
 }

@@ -14,7 +14,7 @@ trait _Link extends StObject {
   
   def isInternal(): Boolean = js.native
   
-  def queryParamters(): js.Any = js.native
+  def queryParamters(): Any = js.native
   
   def rel(): String | Null = js.native
   

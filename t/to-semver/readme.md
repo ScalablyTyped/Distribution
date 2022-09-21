@@ -1,7 +1,7 @@
 
 # Scala.js typings for to-semver
 
-Typings are for version 3.0.0
+Typings are for version 4.0.0
 
 ## Library description:
 Get an array of valid, sorted, and cleaned semver versions from an array of strings
@@ -10,15 +10,12 @@ Get an array of valid, sorted, and cleaned semver versions from an array of stri
 | ------------------ | :-------------: |
 | Full name          | to-semver |
 | Keywords           | semver, semantic, version, versions, versioning, list, array, clean, sort, cleaned, sorted, valid, validated, filter, filtered, git, tag, tags |
-| # releases         | 3 |
-| # dependents       | 6 |
-| # downloads        | 86747 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 11321.666666666666 |
+| # stars            | 40.0 |
 
 ## Links
-- [Homepage](https://github.com/sindresorhus/to-semver#readme)
-- [Bugs](https://github.com/sindresorhus/to-semver/issues)
-- [Repository](https://github.com/sindresorhus/to-semver)
 - [Npm](https://www.npmjs.com/package/to-semver)
     
 

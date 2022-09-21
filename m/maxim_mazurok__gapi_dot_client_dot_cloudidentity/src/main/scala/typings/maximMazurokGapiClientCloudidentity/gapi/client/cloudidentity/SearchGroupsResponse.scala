@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SearchGroupsResponse extends StObject {
   
-  /** The `Group`s that match the search query. */
+  /** The `Group` resources that match the search query. */
   var groups: js.UndefOr[js.Array[Group]] = js.undefined
   
   /** A continuation token to retrieve the next page of results, or empty if there are no more results available. */
@@ -25,7 +25,7 @@ object SearchGroupsResponse {
     
     inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
     
-    inline def setGroupsVarargs(value: Group*): Self = StObject.set(x, "groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: Group*): Self = StObject.set(x, "groups", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

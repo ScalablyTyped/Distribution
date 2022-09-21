@@ -1,10 +1,14 @@
 package typings.relayRuntime
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.relayRuntime.anon.Readonlykindmissingfieldl
 import typings.relayRuntime.anon.Readonlykindmissingfieldt
+import typings.relayRuntime.anon.Readonlykindrelayresolver
 import typings.relayRuntime.relayDefaultHandlerProviderMod.HandlerProvider
 import typings.relayRuntime.relayModernQueryExecutorMod.TaskScheduler
 import typings.relayRuntime.relayNetworkTypesMod.Network
+import typings.relayRuntime.relayResponseNormalizerMod.GetDataID
+import typings.relayRuntime.relayRuntimeTypesMod.RenderPolicy
 import typings.relayRuntime.relayStoreTypesMod.Environment
 import typings.relayRuntime.relayStoreTypesMod.LogEvent
 import typings.relayRuntime.relayStoreTypesMod.LogFunction
@@ -22,7 +26,7 @@ object relayModernEnvironmentMod {
   
   @JSImport("relay-runtime/lib/store/RelayModernEnvironment", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with RelayModernEnvironment {
     def this(config: EnvironmentConfig) = this()
@@ -30,7 +34,11 @@ object relayModernEnvironmentMod {
   
   trait EnvironmentConfig extends StObject {
     
+    val UNSTABLE_defaultRenderPolicy: js.UndefOr[RenderPolicy | Null] = js.undefined
+    
     val configName: js.UndefOr[String] = js.undefined
+    
+    val getDataID: js.UndefOr[GetDataID | Null] = js.undefined
     
     val handlerProvider: js.UndefOr[HandlerProvider | Null] = js.undefined
     
@@ -46,11 +54,13 @@ object relayModernEnvironmentMod {
     
     val operationTracker: js.UndefOr[OperationTracker | Null] = js.undefined
     
-    val options: js.UndefOr[js.Any] = js.undefined
+    val options: js.UndefOr[Any] = js.undefined
     
     val requiredFieldLogger: js.UndefOr[RequiredFieldLogger | Null] = js.undefined
     
     val scheduler: js.UndefOr[TaskScheduler | Null] = js.undefined
+    
+    val shouldProcessClientComponents: js.UndefOr[Boolean | Null] = js.undefined
     
     val store: Store
     
@@ -69,7 +79,13 @@ object relayModernEnvironmentMod {
       
       inline def setConfigNameUndefined: Self = StObject.set(x, "configName", js.undefined)
       
-      inline def setHandlerProvider(value: /* handle */ String => js.Any): Self = StObject.set(x, "handlerProvider", js.Any.fromFunction1(value))
+      inline def setGetDataID(value: (/* fieldValue */ StringDictionary[Any], /* typeName */ String) => Any): Self = StObject.set(x, "getDataID", js.Any.fromFunction2(value))
+      
+      inline def setGetDataIDNull: Self = StObject.set(x, "getDataID", null)
+      
+      inline def setGetDataIDUndefined: Self = StObject.set(x, "getDataID", js.undefined)
+      
+      inline def setHandlerProvider(value: /* handle */ String => Any): Self = StObject.set(x, "handlerProvider", js.Any.fromFunction1(value))
       
       inline def setHandlerProviderNull: Self = StObject.set(x, "handlerProvider", null)
       
@@ -91,7 +107,7 @@ object relayModernEnvironmentMod {
       
       inline def setMissingFieldHandlersUndefined: Self = StObject.set(x, "missingFieldHandlers", js.undefined)
       
-      inline def setMissingFieldHandlersVarargs(value: MissingFieldHandler*): Self = StObject.set(x, "missingFieldHandlers", js.Array(value :_*))
+      inline def setMissingFieldHandlersVarargs(value: MissingFieldHandler*): Self = StObject.set(x, "missingFieldHandlers", js.Array(value*))
       
       inline def setNetwork(value: Network): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
       
@@ -107,11 +123,13 @@ object relayModernEnvironmentMod {
       
       inline def setOperationTrackerUndefined: Self = StObject.set(x, "operationTracker", js.undefined)
       
-      inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      inline def setRequiredFieldLogger(value: /* arg */ Readonlykindmissingfieldl | Readonlykindmissingfieldt => Unit): Self = StObject.set(x, "requiredFieldLogger", js.Any.fromFunction1(value))
+      inline def setRequiredFieldLogger(
+        value: /* arg */ Readonlykindmissingfieldl | Readonlykindmissingfieldt | Readonlykindrelayresolver => Unit
+      ): Self = StObject.set(x, "requiredFieldLogger", js.Any.fromFunction1(value))
       
       inline def setRequiredFieldLoggerNull: Self = StObject.set(x, "requiredFieldLogger", null)
       
@@ -123,11 +141,23 @@ object relayModernEnvironmentMod {
       
       inline def setSchedulerUndefined: Self = StObject.set(x, "scheduler", js.undefined)
       
+      inline def setShouldProcessClientComponents(value: Boolean): Self = StObject.set(x, "shouldProcessClientComponents", value.asInstanceOf[js.Any])
+      
+      inline def setShouldProcessClientComponentsNull: Self = StObject.set(x, "shouldProcessClientComponents", null)
+      
+      inline def setShouldProcessClientComponentsUndefined: Self = StObject.set(x, "shouldProcessClientComponents", js.undefined)
+      
       inline def setStore(value: Store): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       
       inline def setTreatMissingFieldsAsNull(value: Boolean): Self = StObject.set(x, "treatMissingFieldsAsNull", value.asInstanceOf[js.Any])
       
       inline def setTreatMissingFieldsAsNullUndefined: Self = StObject.set(x, "treatMissingFieldsAsNull", js.undefined)
+      
+      inline def setUNSTABLE_defaultRenderPolicy(value: RenderPolicy): Self = StObject.set(x, "UNSTABLE_defaultRenderPolicy", value.asInstanceOf[js.Any])
+      
+      inline def setUNSTABLE_defaultRenderPolicyNull: Self = StObject.set(x, "UNSTABLE_defaultRenderPolicy", null)
+      
+      inline def setUNSTABLE_defaultRenderPolicyUndefined: Self = StObject.set(x, "UNSTABLE_defaultRenderPolicy", js.undefined)
     }
   }
   
@@ -137,10 +167,6 @@ object relayModernEnvironmentMod {
        with Environment {
     
     var configName: js.UndefOr[String | Null] = js.native
-    
-    def isRequestActive(requestIdentifier: String): Boolean = js.native
-    
-    def isServer(): Boolean = js.native
     
     def replaceUpdate(update: OptimisticUpdateFunction, newUpdate: OptimisticUpdateFunction): Unit = js.native
     

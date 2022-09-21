@@ -442,6 +442,10 @@ object oracleOraclejetStrings {
   inline def beforeMarker: beforeMarker = "beforeMarker".asInstanceOf[beforeMarker]
   
   @js.native
+  sealed trait beforeinput extends StObject
+  inline def beforeinput: beforeinput = "beforeinput".asInstanceOf[beforeinput]
+  
+  @js.native
   sealed trait belowMarker extends StObject
   inline def belowMarker: belowMarker = "belowMarker".asInstanceOf[belowMarker]
   
@@ -520,10 +524,6 @@ object oracleOraclejetStrings {
   @js.native
   sealed trait byte extends StObject
   inline def byte: byte = "byte".asInstanceOf[byte]
-  
-  @js.native
-  sealed trait cancel extends StObject
-  inline def cancel: cancel = "cancel".asInstanceOf[cancel]
   
   @js.native
   sealed trait cancelBehavior extends StObject
@@ -798,6 +798,18 @@ object oracleOraclejetStrings {
   @js.native
   sealed trait combo extends StObject
   inline def combo: combo = "combo".asInstanceOf[combo]
+  
+  @js.native
+  sealed trait compositionend extends StObject
+  inline def compositionend: compositionend = "compositionend".asInstanceOf[compositionend]
+  
+  @js.native
+  sealed trait compositionstart extends StObject
+  inline def compositionstart: compositionstart = "compositionstart".asInstanceOf[compositionstart]
+  
+  @js.native
+  sealed trait compositionupdate extends StObject
+  inline def compositionupdate: compositionupdate = "compositionupdate".asInstanceOf[compositionupdate]
   
   @js.native
   sealed trait conditional extends StObject
@@ -1174,10 +1186,6 @@ object oracleOraclejetStrings {
   inline def dragenter: dragenter = "dragenter".asInstanceOf[dragenter]
   
   @js.native
-  sealed trait dragexit extends StObject
-  inline def dragexit: dragexit = "dragexit".asInstanceOf[dragexit]
-  
-  @js.native
   sealed trait dragleave extends StObject
   inline def dragleave: dragleave = "dragleave".asInstanceOf[dragleave]
   
@@ -1479,6 +1487,10 @@ object oracleOraclejetStrings {
   @js.native
   sealed trait forChanged extends StObject
   inline def forChanged: forChanged = "forChanged".asInstanceOf[forChanged]
+  
+  @js.native
+  sealed trait formdata extends StObject
+  inline def formdata: formdata = "formdata".asInstanceOf[formdata]
   
   @js.native
   sealed trait fromMax extends StObject
@@ -4101,6 +4113,10 @@ object oracleOraclejetStrings {
   inline def sliding: sliding = "sliding".asInstanceOf[sliding]
   
   @js.native
+  sealed trait slotchange extends StObject
+  inline def slotchange: slotchange = "slotchange".asInstanceOf[slotchange]
+  
+  @js.native
   sealed trait sm
     extends StObject
        with SCREEN_RANGE
@@ -4863,6 +4879,22 @@ object oracleOraclejetStrings {
     extends StObject
        with SEVERITY_TYPE
   inline def warning: warning = "warning".asInstanceOf[warning]
+  
+  @js.native
+  sealed trait webkitanimationend extends StObject
+  inline def webkitanimationend: webkitanimationend = "webkitanimationend".asInstanceOf[webkitanimationend]
+  
+  @js.native
+  sealed trait webkitanimationiteration extends StObject
+  inline def webkitanimationiteration: webkitanimationiteration = "webkitanimationiteration".asInstanceOf[webkitanimationiteration]
+  
+  @js.native
+  sealed trait webkitanimationstart extends StObject
+  inline def webkitanimationstart: webkitanimationstart = "webkitanimationstart".asInstanceOf[webkitanimationstart]
+  
+  @js.native
+  sealed trait webkittransitionend extends StObject
+  inline def webkittransitionend: webkittransitionend = "webkittransitionend".asInstanceOf[webkittransitionend]
   
   @js.native
   sealed trait weeks extends StObject

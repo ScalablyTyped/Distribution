@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructor for this deferred object.
   */
-class Deferred[T] ()
+open class Deferred[T] ()
   extends StObject
      with typings.babylonjs.BABYLON.Deferred[T]

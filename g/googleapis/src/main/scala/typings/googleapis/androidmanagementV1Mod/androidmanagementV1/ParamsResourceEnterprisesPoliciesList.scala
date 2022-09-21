@@ -1,9 +1,5 @@
 package typings.googleapis.androidmanagementV1Mod.androidmanagementV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,13 +9,7 @@ trait ParamsResourceEnterprisesPoliciesList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * The requested page size. The actual page size may be fixed to a min or
-    * max value.
+    * The requested page size. The actual page size may be fixed to a min or max value.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
@@ -29,7 +19,7 @@ trait ParamsResourceEnterprisesPoliciesList
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The name of the enterprise in the form enterprises/{enterpriseId}.
+    * The name of the enterprise in the form enterprises/{enterpriseId\}.
     */
   var parent: js.UndefOr[String] = js.undefined
 }
@@ -41,10 +31,6 @@ object ParamsResourceEnterprisesPoliciesList {
   }
   
   extension [Self <: ParamsResourceEnterprisesPoliciesList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     

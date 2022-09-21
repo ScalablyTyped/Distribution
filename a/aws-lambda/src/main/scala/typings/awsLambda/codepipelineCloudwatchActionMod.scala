@@ -106,7 +106,7 @@ object codepipelineCloudwatchActionMod {
       
       inline def setResources(value: js.Array[String]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
       
-      inline def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
+      inline def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value*))
       
       inline def setSource(value: awsDotcodepipeline): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       

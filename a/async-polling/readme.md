@@ -9,15 +9,12 @@ An easy way to run reliable polling without messing with setTimeout.
 | ------------------ | :-------------: |
 | Full name          | async-polling |
 | Keywords           | poll, polling, async, setTimeout, setInterval, task |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 707778 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 30933.333333333332 |
+| # stars            | 17.0 |
 
 ## Links
-- [Homepage](https://github.com/cGuille/async-polling#readme)
-- [Bugs](https://github.com/cGuille/async-polling/issues)
-- [Repository](https://github.com/cGuille/async-polling)
 - [Npm](https://www.npmjs.com/package/async-polling)
     
 

@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Devices.Geolocation
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.EventHandler
@@ -165,7 +164,7 @@ object Geofencing {
     var singleUse: Boolean
     
     /** The time to start monitoring the Geofence . */
-    var startTime: Date
+    var startTime: js.Date
   }
   object Geofence {
     
@@ -176,7 +175,7 @@ object Geofencing {
       id: String,
       monitoredStates: MonitoredGeofenceStates,
       singleUse: Boolean,
-      startTime: Date
+      startTime: js.Date
     ): Geofence = {
       val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], dwellTime = dwellTime.asInstanceOf[js.Any], geoshape = geoshape.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], monitoredStates = monitoredStates.asInstanceOf[js.Any], singleUse = singleUse.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
       __obj.asInstanceOf[Geofence]
@@ -196,7 +195,7 @@ object Geofencing {
       
       inline def setSingleUse(value: Boolean): Self = StObject.set(x, "singleUse", value.asInstanceOf[js.Any])
       
-      inline def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     }
   }
   
@@ -204,11 +203,11 @@ object Geofencing {
   @js.native
   trait GeofenceMonitor extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_geofencestatechanged(`type`: geofencestatechanged, listener: TypedEventHandler[GeofenceMonitor, js.Any]): Unit = js.native
+    def addEventListener_geofencestatechanged(`type`: geofencestatechanged, listener: TypedEventHandler[GeofenceMonitor, Any]): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_statuschanged(`type`: statuschanged, listener: TypedEventHandler[GeofenceMonitor, js.Any]): Unit = js.native
+    def addEventListener_statuschanged(`type`: statuschanged, listener: TypedEventHandler[GeofenceMonitor, Any]): Unit = js.native
     
     /** Returns a vector of the app's Geofence objects currently registered with the system wide GeofenceMonitor . */
     var geofences: IVector[Geofence] = js.native
@@ -217,16 +216,16 @@ object Geofencing {
     var lastKnownGeoposition: Geoposition = js.native
     
     /** Raised when the state of one or more Geofence objects in the Geofences collection of the GeofenceMonitor has changed */
-    def ongeofencestatechanged(ev: js.Any & WinRTEvent[GeofenceMonitor]): Unit = js.native
+    def ongeofencestatechanged(ev: Any & WinRTEvent[GeofenceMonitor]): Unit = js.native
     /** Raised when the state of one or more Geofence objects in the Geofences collection of the GeofenceMonitor has changed */
     @JSName("ongeofencestatechanged")
-    var ongeofencestatechanged_Original: TypedEventHandler[GeofenceMonitor, js.Any] = js.native
+    var ongeofencestatechanged_Original: TypedEventHandler[GeofenceMonitor, Any] = js.native
     
     /** Raised when the status of the GeofenceMonitor has changed. */
-    def onstatuschanged(ev: js.Any & WinRTEvent[GeofenceMonitor]): Unit = js.native
+    def onstatuschanged(ev: Any & WinRTEvent[GeofenceMonitor]): Unit = js.native
     /** Raised when the status of the GeofenceMonitor has changed. */
     @JSName("onstatuschanged")
-    var onstatuschanged_Original: TypedEventHandler[GeofenceMonitor, js.Any] = js.native
+    var onstatuschanged_Original: TypedEventHandler[GeofenceMonitor, Any] = js.native
     
     /**
       * Gets a collection of status changes to the Geofence objects in the Geofences collection of the GeofenceMonitor .
@@ -234,11 +233,11 @@ object Geofencing {
       */
     def readReports(): IVectorView[GeofenceStateChangeReport] = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("removeEventListener")
-    def removeEventListener_geofencestatechanged(`type`: geofencestatechanged, listener: TypedEventHandler[GeofenceMonitor, js.Any]): Unit = js.native
+    def removeEventListener_geofencestatechanged(`type`: geofencestatechanged, listener: TypedEventHandler[GeofenceMonitor, Any]): Unit = js.native
     @JSName("removeEventListener")
-    def removeEventListener_statuschanged(`type`: statuschanged, listener: TypedEventHandler[GeofenceMonitor, js.Any]): Unit = js.native
+    def removeEventListener_statuschanged(`type`: statuschanged, listener: TypedEventHandler[GeofenceMonitor, Any]): Unit = js.native
     
     /** Indicates the current state of the GeofenceMonitor . */
     var status: GeofenceMonitorStatus = js.native

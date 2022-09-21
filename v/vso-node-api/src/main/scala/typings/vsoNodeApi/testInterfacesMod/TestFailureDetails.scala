@@ -23,6 +23,6 @@ object TestFailureDetails {
     
     inline def setTestResults(value: js.Array[TestCaseResultIdentifier]): Self = StObject.set(x, "testResults", value.asInstanceOf[js.Any])
     
-    inline def setTestResultsVarargs(value: TestCaseResultIdentifier*): Self = StObject.set(x, "testResults", js.Array(value :_*))
+    inline def setTestResultsVarargs(value: TestCaseResultIdentifier*): Self = StObject.set(x, "testResults", js.Array(value*))
   }
 }

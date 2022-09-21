@@ -9,7 +9,6 @@ import typings.reactNativeZeroconf.reactNativeZeroconfStrings.resolved
 import typings.reactNativeZeroconf.reactNativeZeroconfStrings.start
 import typings.reactNativeZeroconf.reactNativeZeroconfStrings.stop
 import typings.reactNativeZeroconf.reactNativeZeroconfStrings.update
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ object mod {
   
   @JSImport("react-native-zeroconf", JSImport.Default)
   @js.native
-  class default () extends Zeroconf
+  open class default () extends Zeroconf
   
   trait Service extends StObject {
     
@@ -32,7 +31,7 @@ object mod {
     
     var port: Double
     
-    var txt: StringDictionary[js.Any]
+    var txt: StringDictionary[Any]
   }
   object Service {
     
@@ -42,7 +41,7 @@ object mod {
       host: String,
       name: String,
       port: Double,
-      txt: StringDictionary[js.Any]
+      txt: StringDictionary[Any]
     ): Service = {
       val __obj = js.Dynamic.literal(addresses = addresses.asInstanceOf[js.Any], fullName = fullName.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], txt = txt.asInstanceOf[js.Any])
       __obj.asInstanceOf[Service]
@@ -52,7 +51,7 @@ object mod {
       
       inline def setAddresses(value: js.Array[String]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
       
-      inline def setAddressesVarargs(value: String*): Self = StObject.set(x, "addresses", js.Array(value :_*))
+      inline def setAddressesVarargs(value: String*): Self = StObject.set(x, "addresses", js.Array(value*))
       
       inline def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
       
@@ -62,7 +61,7 @@ object mod {
       
       inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      inline def setTxt(value: StringDictionary[js.Any]): Self = StObject.set(x, "txt", value.asInstanceOf[js.Any])
+      inline def setTxt(value: StringDictionary[Any]): Self = StObject.set(x, "txt", value.asInstanceOf[js.Any])
     }
   }
   
@@ -85,30 +84,22 @@ object mod {
       */
     def getServices(): StringDictionary[Service] = js.native
     
+    def on(e: start | stop | update, listener: js.Function0[Any]): this.type = js.native
+    /**
+      * @param name Name of the the service.
+      */
+    def on(e: found | remove, listener: js.Function1[/* name */ String, Any]): this.type = js.native
     /**
       * Triggered when an error occurs.
       */
     @JSName("on")
-    def on_error(e: error, listener: js.Function1[/* err */ Error, js.Any]): this.type = js.native
-    /**
-      * @param name Name of the the service.
-      */
-    @JSName("on")
-    def on_found(e: found, listener: js.Function1[/* name */ String, js.Any]): this.type = js.native
-    @JSName("on")
-    def on_remove(e: remove, listener: js.Function1[/* name */ String, js.Any]): this.type = js.native
+    def on_error(e: error, listener: js.Function1[/* err */ js.Error, Any]): this.type = js.native
     /**
       * Triggered when a service is resolved.
       * @description Broadcast a service object once it is fully resolved.
       */
     @JSName("on")
-    def on_resolved(e: resolved, listener: js.Function1[/* service */ Service, js.Any]): this.type = js.native
-    @JSName("on")
-    def on_start(e: start, listener: js.Function0[js.Any]): this.type = js.native
-    @JSName("on")
-    def on_stop(e: stop, listener: js.Function0[js.Any]): this.type = js.native
-    @JSName("on")
-    def on_update(e: update, listener: js.Function0[js.Any]): this.type = js.native
+    def on_resolved(e: resolved, listener: js.Function1[/* service */ Service, Any]): this.type = js.native
     
     /**
       * Publish a service.
@@ -134,7 +125,7 @@ object mod {
       domain: String,
       name: String,
       port: Double,
-      txt: StringDictionary[js.Any]
+      txt: StringDictionary[Any]
     ): Unit = js.native
     def publishService(
       `type`: String,
@@ -142,7 +133,7 @@ object mod {
       domain: String,
       name: String,
       port: Unit,
-      txt: StringDictionary[js.Any]
+      txt: StringDictionary[Any]
     ): Unit = js.native
     def publishService(`type`: String, protocol: String, domain: String, name: Unit, port: Double): Unit = js.native
     def publishService(
@@ -151,7 +142,7 @@ object mod {
       domain: String,
       name: Unit,
       port: Double,
-      txt: StringDictionary[js.Any]
+      txt: StringDictionary[Any]
     ): Unit = js.native
     def publishService(
       `type`: String,
@@ -159,7 +150,7 @@ object mod {
       domain: String,
       name: Unit,
       port: Unit,
-      txt: StringDictionary[js.Any]
+      txt: StringDictionary[Any]
     ): Unit = js.native
     def publishService(`type`: String, protocol: String, domain: Unit, name: String): Unit = js.native
     def publishService(`type`: String, protocol: String, domain: Unit, name: String, port: Double): Unit = js.native
@@ -169,7 +160,7 @@ object mod {
       domain: Unit,
       name: String,
       port: Double,
-      txt: StringDictionary[js.Any]
+      txt: StringDictionary[Any]
     ): Unit = js.native
     def publishService(
       `type`: String,
@@ -177,7 +168,7 @@ object mod {
       domain: Unit,
       name: String,
       port: Unit,
-      txt: StringDictionary[js.Any]
+      txt: StringDictionary[Any]
     ): Unit = js.native
     def publishService(`type`: String, protocol: String, domain: Unit, name: Unit, port: Double): Unit = js.native
     def publishService(
@@ -186,16 +177,9 @@ object mod {
       domain: Unit,
       name: Unit,
       port: Double,
-      txt: StringDictionary[js.Any]
+      txt: StringDictionary[Any]
     ): Unit = js.native
-    def publishService(
-      `type`: String,
-      protocol: String,
-      domain: Unit,
-      name: Unit,
-      port: Unit,
-      txt: StringDictionary[js.Any]
-    ): Unit = js.native
+    def publishService(`type`: String, protocol: String, domain: Unit, name: Unit, port: Unit, txt: StringDictionary[Any]): Unit = js.native
     
     /**
       * Remove listeners.

@@ -33,7 +33,7 @@ trait PictureFormat extends StObject {
   
   def IncrementContrast(Increment: Double): Unit
   
-  val Parent: js.Any
+  val Parent: Any
   
   var TransparencyColor: Double
   
@@ -57,7 +57,7 @@ object PictureFormat {
     CropTop: Double,
     IncrementBrightness: Double => Unit,
     IncrementContrast: Double => Unit,
-    Parent: js.Any,
+    Parent: Any,
     TransparencyColor: Double,
     TransparentBackground: MsoTriState,
     WordDotPictureFormat_typekey: PictureFormat
@@ -93,7 +93,7 @@ object PictureFormat {
     
     inline def setIncrementContrast(value: Double => Unit): Self = StObject.set(x, "IncrementContrast", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setTransparencyColor(value: Double): Self = StObject.set(x, "TransparencyColor", value.asInstanceOf[js.Any])
     

@@ -24,29 +24,23 @@ object rectanglePlotMod {
     * @param {Scale.Scale} xScale
     * @param {Scale.Scale} yScale
     */
-  class Rectangle[X, Y] () extends XYPlot[X, Y] {
+  open class Rectangle[X, Y] () extends XYPlot[X, Y] {
     
     /* protected */ def _createDrawer(): ProxyDrawer = js.native
     
-    /* private */ def _drawLabel(dataToDraw: js.Any, dataset: js.Any, datasetIndex: js.Any): js.Any = js.native
+    /* private */ var _drawLabel: Any = js.native
     
-    /* private */ def _drawLabels(): js.Any = js.native
+    /* private */ var _drawLabels: Any = js.native
     
-    /* private */ def _entityBBox(datum: js.Any, index: js.Any, dataset: js.Any, attrToProjector: js.Any): js.Any = js.native
+    /* private */ var _entityBBox: Any = js.native
     
-    /* private */ var _label: js.Any = js.native
+    /* private */ var _label: Any = js.native
     
-    /* private */ var _labelsEnabled: js.Any = js.native
+    /* private */ var _labelsEnabled: Any = js.native
     
-    /* private */ def _overlayLabel(
-      labelXRange: js.Any,
-      labelYRange: js.Any,
-      datumIndex: js.Any,
-      datasetIndex: js.Any,
-      dataToDraw: js.Any
-    ): js.Any = js.native
+    /* private */ var _overlayLabel: Any = js.native
     
-    /* private */ def _rectangleWidth(scale: js.Any): js.Any = js.native
+    /* private */ var _rectangleWidth: Any = js.native
     
     /**
       * Gets the accessor for labels.
@@ -122,12 +116,12 @@ object rectanglePlotMod {
     
     @JSImport("plottable/build/src/plots/rectanglePlot", "Rectangle._X2_KEY")
     @js.native
-    def _X2_KEY: js.Any = js.native
-    inline def _X2_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_X2_KEY")(x.asInstanceOf[js.Any])
+    def _X2_KEY: Any = js.native
+    inline def _X2_KEY_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_X2_KEY")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/plots/rectanglePlot", "Rectangle._Y2_KEY")
     @js.native
-    def _Y2_KEY: js.Any = js.native
-    inline def _Y2_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Y2_KEY")(x.asInstanceOf[js.Any])
+    def _Y2_KEY: Any = js.native
+    inline def _Y2_KEY_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Y2_KEY")(x.asInstanceOf[js.Any])
   }
 }

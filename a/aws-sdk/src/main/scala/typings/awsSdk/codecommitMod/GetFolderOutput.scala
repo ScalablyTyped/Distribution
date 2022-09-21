@@ -56,7 +56,7 @@ object GetFolderOutput {
     
     inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    inline def setFilesVarargs(value: File*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: File*): Self = StObject.set(x, "files", js.Array(value*))
     
     inline def setFolderPath(value: Path): Self = StObject.set(x, "folderPath", value.asInstanceOf[js.Any])
     
@@ -64,19 +64,19 @@ object GetFolderOutput {
     
     inline def setSubFoldersUndefined: Self = StObject.set(x, "subFolders", js.undefined)
     
-    inline def setSubFoldersVarargs(value: Folder*): Self = StObject.set(x, "subFolders", js.Array(value :_*))
+    inline def setSubFoldersVarargs(value: Folder*): Self = StObject.set(x, "subFolders", js.Array(value*))
     
     inline def setSubModules(value: SubModuleList): Self = StObject.set(x, "subModules", value.asInstanceOf[js.Any])
     
     inline def setSubModulesUndefined: Self = StObject.set(x, "subModules", js.undefined)
     
-    inline def setSubModulesVarargs(value: SubModule*): Self = StObject.set(x, "subModules", js.Array(value :_*))
+    inline def setSubModulesVarargs(value: SubModule*): Self = StObject.set(x, "subModules", js.Array(value*))
     
     inline def setSymbolicLinks(value: SymbolicLinkList): Self = StObject.set(x, "symbolicLinks", value.asInstanceOf[js.Any])
     
     inline def setSymbolicLinksUndefined: Self = StObject.set(x, "symbolicLinks", js.undefined)
     
-    inline def setSymbolicLinksVarargs(value: SymbolicLink*): Self = StObject.set(x, "symbolicLinks", js.Array(value :_*))
+    inline def setSymbolicLinksVarargs(value: SymbolicLink*): Self = StObject.set(x, "symbolicLinks", js.Array(value*))
     
     inline def setTreeId(value: ObjectId): Self = StObject.set(x, "treeId", value.asInstanceOf[js.Any])
     

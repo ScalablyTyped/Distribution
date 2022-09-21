@@ -17,5 +17,5 @@ trait WebTileLayerConstructor
 Instantiable0[WebTileLayer]
      with Instantiable1[/* properties */ WebTileLayerProperties, WebTileLayer] {
   
-  def fromJSON(json: js.Any): WebTileLayer = js.native
+  def fromJSON(json: Any): WebTileLayer = js.native
 }

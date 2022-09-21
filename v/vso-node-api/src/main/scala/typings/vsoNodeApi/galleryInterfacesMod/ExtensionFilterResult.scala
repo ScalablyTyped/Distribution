@@ -36,12 +36,12 @@ object ExtensionFilterResult {
     
     inline def setExtensions(value: js.Array[PublishedExtension]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
-    inline def setExtensionsVarargs(value: PublishedExtension*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+    inline def setExtensionsVarargs(value: PublishedExtension*): Self = StObject.set(x, "extensions", js.Array(value*))
     
     inline def setPagingToken(value: String): Self = StObject.set(x, "pagingToken", value.asInstanceOf[js.Any])
     
     inline def setResultMetadata(value: js.Array[ExtensionFilterResultMetadata]): Self = StObject.set(x, "resultMetadata", value.asInstanceOf[js.Any])
     
-    inline def setResultMetadataVarargs(value: ExtensionFilterResultMetadata*): Self = StObject.set(x, "resultMetadata", js.Array(value :_*))
+    inline def setResultMetadataVarargs(value: ExtensionFilterResultMetadata*): Self = StObject.set(x, "resultMetadata", js.Array(value*))
   }
 }

@@ -22,6 +22,6 @@ object ImagesDeleteAllResponse {
     
     inline def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
     
-    inline def setDeletedVarargs(value: Image*): Self = StObject.set(x, "deleted", js.Array(value :_*))
+    inline def setDeletedVarargs(value: Image*): Self = StObject.set(x, "deleted", js.Array(value*))
   }
 }

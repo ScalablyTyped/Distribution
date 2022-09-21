@@ -97,7 +97,7 @@ object PlacementIds {
     
     inline def setPlacementIdsUndefined: Self = StObject.set(x, "placementIds", js.undefined)
     
-    inline def setPlacementIdsVarargs(value: String*): Self = StObject.set(x, "placementIds", js.Array(value :_*))
+    inline def setPlacementIdsVarargs(value: String*): Self = StObject.set(x, "placementIds", js.Array(value*))
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
@@ -113,7 +113,7 @@ object PlacementIds {
     
     inline def setTagFormatsUndefined: Self = StObject.set(x, "tagFormats", js.undefined)
     
-    inline def setTagFormatsVarargs(value: String*): Self = StObject.set(x, "tagFormats", js.Array(value :_*))
+    inline def setTagFormatsVarargs(value: String*): Self = StObject.set(x, "tagFormats", js.Array(value*))
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

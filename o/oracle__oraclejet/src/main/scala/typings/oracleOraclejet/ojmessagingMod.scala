@@ -9,7 +9,7 @@ object ojmessagingMod {
   
   @JSImport("@oracle/oraclejet/ojmessaging", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Message {
     def this(summary: String, detail: String) = this()

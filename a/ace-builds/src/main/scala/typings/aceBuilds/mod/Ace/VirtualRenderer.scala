@@ -22,6 +22,7 @@ import typings.aceBuilds.aceBuildsStrings.showLineNumbers
 import typings.aceBuilds.aceBuildsStrings.showPrintMargin
 import typings.aceBuilds.aceBuildsStrings.theme
 import typings.aceBuilds.aceBuildsStrings.vScrollBarAlwaysVisible
+import typings.aceBuilds.anon.OffsetX
 import typings.aceBuilds.anon.PageX
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -34,16 +35,23 @@ trait VirtualRenderer
      with OptionsProvider
      with EventEmitter {
   
+  @JSName("$padding")
+  val $padding: Double = js.native
+  
   def adjustWrapLimit(): Boolean = js.native
   
   def alignCursor(cursor: Double, alignment: Double): Double = js.native
-  def alignCursor(cursor: Point, alignment: Double): Double = js.native
+  def alignCursor(cursor: Position, alignment: Double): Double = js.native
   
   def animateScrolling(fromValue: Double, callback: js.Function0[Unit]): Unit = js.native
   
   def attachToShadowRoot(): Unit = js.native
   
-  var container: HTMLElement = js.native
+  val characterWidth: Double = js.native
+  
+  val container: HTMLElement = js.native
+  
+  val content: HTMLElement = js.native
   
   def destroy(): Unit = js.native
   
@@ -144,13 +152,19 @@ trait VirtualRenderer
   
   def isScrollableBy(deltaX: Double, deltaY: Double): Boolean = js.native
   
+  val lineHeight: Double = js.native
+  
+  def pixelToScreenCoordinates(x: Double, y: Double): OffsetX = js.native
+  
   def scrollBy(deltaX: Double, deltaY: Double): Unit = js.native
   
-  def scrollCursorIntoView(cursor: Point): Unit = js.native
-  def scrollCursorIntoView(cursor: Point, offset: Double): Unit = js.native
+  def scrollCursorIntoView(cursor: Position): Unit = js.native
+  def scrollCursorIntoView(cursor: Position, offset: Double): Unit = js.native
   
-  def scrollSelectionIntoView(anchor: Point, lead: Point): Unit = js.native
-  def scrollSelectionIntoView(anchor: Point, lead: Point, offset: Double): Unit = js.native
+  val scrollLeft: Double = js.native
+  
+  def scrollSelectionIntoView(anchor: Position, lead: Position): Unit = js.native
+  def scrollSelectionIntoView(anchor: Position, lead: Position, offset: Double): Unit = js.native
   
   def scrollTo(x: Double, y: Double): Unit = js.native
   
@@ -161,6 +175,10 @@ trait VirtualRenderer
   def scrollToX(scrollLeft: Double): Unit = js.native
   
   def scrollToY(scrollTop: Double): Unit = js.native
+  
+  val scrollTop: Double = js.native
+  
+  val scroller: HTMLElement = js.native
   
   def setAnimatedScroll(shouldAnimate: Boolean): Unit = js.native
   

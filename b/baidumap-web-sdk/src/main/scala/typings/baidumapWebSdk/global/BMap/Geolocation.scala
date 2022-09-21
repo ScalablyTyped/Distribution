@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMap.Geolocation")
 @js.native
-class Geolocation ()
+open class Geolocation ()
   extends StObject
      with typings.baidumapWebSdk.BMap.Geolocation

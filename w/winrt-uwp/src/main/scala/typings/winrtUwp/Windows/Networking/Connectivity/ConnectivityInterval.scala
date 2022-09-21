@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Networking.Connectivity
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,11 +11,11 @@ trait ConnectivityInterval extends StObject {
   var connectionDuration: Double
   
   /** Indicates when the connection was initially established. */
-  var startTime: Date
+  var startTime: js.Date
 }
 object ConnectivityInterval {
   
-  inline def apply(connectionDuration: Double, startTime: Date): ConnectivityInterval = {
+  inline def apply(connectionDuration: Double, startTime: js.Date): ConnectivityInterval = {
     val __obj = js.Dynamic.literal(connectionDuration = connectionDuration.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectivityInterval]
   }
@@ -25,6 +24,6 @@ object ConnectivityInterval {
     
     inline def setConnectionDuration(value: Double): Self = StObject.set(x, "connectionDuration", value.asInstanceOf[js.Any])
     
-    inline def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
   }
 }

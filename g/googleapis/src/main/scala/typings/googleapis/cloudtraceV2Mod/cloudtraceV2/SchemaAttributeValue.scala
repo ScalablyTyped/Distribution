@@ -4,20 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The allowed types for [VALUE] in a `[KEY]:[VALUE]` attribute.
-  */
 trait SchemaAttributeValue extends StObject {
   
   /**
     * A Boolean value represented by `true` or `false`.
     */
-  var boolValue: js.UndefOr[Boolean] = js.undefined
+  var boolValue: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * A 64-bit signed integer.
     */
-  var intValue: js.UndefOr[String] = js.undefined
+  var intValue: js.UndefOr[String | Null] = js.undefined
   
   /**
     * A string up to 256 bytes long.
@@ -35,9 +32,13 @@ object SchemaAttributeValue {
     
     inline def setBoolValue(value: Boolean): Self = StObject.set(x, "boolValue", value.asInstanceOf[js.Any])
     
+    inline def setBoolValueNull: Self = StObject.set(x, "boolValue", null)
+    
     inline def setBoolValueUndefined: Self = StObject.set(x, "boolValue", js.undefined)
     
     inline def setIntValue(value: String): Self = StObject.set(x, "intValue", value.asInstanceOf[js.Any])
+    
+    inline def setIntValueNull: Self = StObject.set(x, "intValue", null)
     
     inline def setIntValueUndefined: Self = StObject.set(x, "intValue", js.undefined)
     

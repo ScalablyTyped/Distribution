@@ -1,7 +1,6 @@
 package typings.fbWatchman
 
 import typings.node.eventsMod.EventEmitter
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,14 +9,14 @@ object mod {
   
   @JSImport("fb-watchman", "Client")
   @js.native
-  class Client () extends EventEmitter {
+  open class Client () extends EventEmitter {
     def this(options: ClientOptions) = this()
     
     def cancelCommands(why: String): Unit = js.native
     
     def capabilityCheck(caps: Capabilities, done: doneCallback): Unit = js.native
     
-    def command(args: js.Any, done: doneCallback): Unit = js.native
+    def command(args: Any, done: doneCallback): Unit = js.native
     
     def connect(): Unit = js.native
     
@@ -28,26 +27,26 @@ object mod {
   
   trait Capabilities extends StObject {
     
-    var optional: js.Array[js.Any]
+    var optional: js.Array[Any]
     
-    var required: js.Array[js.Any]
+    var required: js.Array[Any]
   }
   object Capabilities {
     
-    inline def apply(optional: js.Array[js.Any], required: js.Array[js.Any]): Capabilities = {
+    inline def apply(optional: js.Array[Any], required: js.Array[Any]): Capabilities = {
       val __obj = js.Dynamic.literal(optional = optional.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any])
       __obj.asInstanceOf[Capabilities]
     }
     
     extension [Self <: Capabilities](x: Self) {
       
-      inline def setOptional(value: js.Array[js.Any]): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+      inline def setOptional(value: js.Array[Any]): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
       
-      inline def setOptionalVarargs(value: js.Any*): Self = StObject.set(x, "optional", js.Array(value :_*))
+      inline def setOptionalVarargs(value: Any*): Self = StObject.set(x, "optional", js.Array(value*))
       
-      inline def setRequired(value: js.Array[js.Any]): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: js.Array[Any]): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
-      inline def setRequiredVarargs(value: js.Any*): Self = StObject.set(x, "required", js.Array(value :_*))
+      inline def setRequiredVarargs(value: Any*): Self = StObject.set(x, "required", js.Array(value*))
     }
   }
   
@@ -87,5 +86,5 @@ object mod {
     inline def unilateralTags: typings.fbWatchman.fbWatchmanStrings.unilateralTags = "unilateralTags".asInstanceOf[typings.fbWatchman.fbWatchmanStrings.unilateralTags]
   }
   
-  type doneCallback = js.Function2[/* error */ js.UndefOr[Error | Null], /* resp */ js.UndefOr[js.Any], js.Any]
+  type doneCallback = js.Function2[/* error */ js.UndefOr[js.Error | Null], /* resp */ js.UndefOr[Any], Any]
 }

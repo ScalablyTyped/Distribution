@@ -1,6 +1,5 @@
 package typings.scriptableIos
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,19 +31,19 @@ trait Reminder extends StObject {
     * _Completion date of reminder._
     * @see https://docs.scriptable.app/reminder/#completiondate
     */
-  var completionDate: Date
+  var completionDate: js.Date
   
   /**
     * _Creation date of reminder._
     * @see https://docs.scriptable.app/reminder/#creationdate
     */
-  var creationDate: Date
+  var creationDate: js.Date
   
   /**
     * _Due date of reminder._
     * @see https://docs.scriptable.app/reminder/#duedate
     */
-  var dueDate: Date
+  var dueDate: js.Date
   
   /**
     * _Whether the due date includes a time._
@@ -61,7 +60,7 @@ trait Reminder extends StObject {
   var identifier: String
   
   /**
-    * _Whether the reminder is completed_
+    * _Whether the reminder is completed._
     * @see https://docs.scriptable.app/reminder/#iscompleted
     */
   var isCompleted: Boolean
@@ -117,9 +116,9 @@ object Reminder {
   inline def apply(
     addRecurrenceRule: RecurrenceRule => Unit,
     calendar: Calendar,
-    completionDate: Date,
-    creationDate: Date,
-    dueDate: Date,
+    completionDate: js.Date,
+    creationDate: js.Date,
+    dueDate: js.Date,
     dueDateIncludesTime: Boolean,
     identifier: String,
     isCompleted: Boolean,
@@ -141,11 +140,11 @@ object Reminder {
     
     inline def setCalendar(value: Calendar): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
     
-    inline def setCompletionDate(value: Date): Self = StObject.set(x, "completionDate", value.asInstanceOf[js.Any])
+    inline def setCompletionDate(value: js.Date): Self = StObject.set(x, "completionDate", value.asInstanceOf[js.Any])
     
-    inline def setCreationDate(value: Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
-    inline def setDueDate(value: Date): Self = StObject.set(x, "dueDate", value.asInstanceOf[js.Any])
+    inline def setDueDate(value: js.Date): Self = StObject.set(x, "dueDate", value.asInstanceOf[js.Any])
     
     inline def setDueDateIncludesTime(value: Boolean): Self = StObject.set(x, "dueDateIncludesTime", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,7 @@ object SpreadsheetSheetSort {
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    inline def setColumnsVarargs(value: SpreadsheetSheetSortColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: SpreadsheetSheetSortColumn*): Self = StObject.set(x, "columns", js.Array(value*))
     
     inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     

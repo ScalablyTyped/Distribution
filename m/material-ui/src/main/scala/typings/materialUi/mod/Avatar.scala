@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui", "Avatar")
 @js.native
-class Avatar ()
-  extends Component[AvatarProps, js.Object, js.Any]
+open class Avatar ()
+  extends Component[AvatarProps, js.Object, Any]

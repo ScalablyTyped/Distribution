@@ -5,6 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reactstrap/lib", "ButtonGroup")
+@JSImport("reactstrap", "ButtonGroup")
 @js.native
-class ButtonGroup () extends default
+open class ButtonGroup () extends default

@@ -8,5 +8,5 @@ object versionMod {
   
   @JSImport("@octokit/plugin-request-log/dist-types/version", "VERSION")
   @js.native
-  val VERSION: /* "1.0.2" */ String = js.native
+  val VERSION: /* "1.0.4" */ String = js.native
 }

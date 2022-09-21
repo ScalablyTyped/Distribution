@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.Services.CompletionSession")
 @js.native
-class CompletionSession protected ()
+open class CompletionSession protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.Services.CompletionSession {
   def this(fileName: String, position: Double, entries: IdentiferNameHashTable[CachedCompletionEntryDetails]) = this()

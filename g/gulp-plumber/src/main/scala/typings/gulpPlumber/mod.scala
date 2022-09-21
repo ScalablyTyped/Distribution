@@ -1,7 +1,6 @@
 package typings.gulpPlumber
 
 import org.scalablytyped.runtime.Shortcut
-import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ object mod extends Shortcut {
   val ^ : GulpPlumber = js.native
   
   /** an error handler function to be attached to the stream on('error') */
-  type ErrorHandlerFunction = js.Function1[/* error */ js.Any, Unit]
+  type ErrorHandlerFunction = js.Function1[/* error */ Any, Unit]
   
   /** Prevent pipe breaking caused by errors from gulp plugins */
   /** Prevent pipe breaking caused by errors from gulp plugins */
@@ -25,17 +24,17 @@ object mod extends Shortcut {
       * 
       * @param options Sets options as described in the Options interface
       */
-    def apply(): ReadWriteStream = js.native
+    def apply(): Any = js.native
     /**
       * Returns Stream, that fixes pipe methods on Streams that are next in pipeline.
       * 
       * @param errorHandler the function to be attached to the stream on('error')
       */
-    def apply(errorHandler: ErrorHandlerFunction): ReadWriteStream = js.native
-    def apply(options: Options): ReadWriteStream = js.native
+    def apply(errorHandler: ErrorHandlerFunction): Any = js.native
+    def apply(options: Options): Any = js.native
     
     /** returns default behaviour for pipeline after it was piped */
-    def stop(): ReadWriteStream = js.native
+    def stop(): Any = js.native
   }
   
   trait Options extends StObject {
@@ -62,7 +61,7 @@ object mod extends Shortcut {
       
       inline def setErrorHandler(value: ErrorHandlerFunction | Boolean): Self = StObject.set(x, "errorHandler", value.asInstanceOf[js.Any])
       
-      inline def setErrorHandlerFunction1(value: /* error */ js.Any => Unit): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
+      inline def setErrorHandlerFunction1(value: /* error */ Any => Unit): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
       
       inline def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
       

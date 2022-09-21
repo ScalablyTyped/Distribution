@@ -12,7 +12,7 @@ object httpEmitterMod {
   
   @JSImport("cloudevents-sdk/lib/bindings/http/http_emitter", "HTTPEmitter")
   @js.native
-  class HTTPEmitter protected () extends StObject {
+  open class HTTPEmitter protected () extends StObject {
     /**
       * Creates a new instance of {HTTPEmitter}. The default emitter uses the 1.0
       * protocol specification in binary mode.
@@ -24,7 +24,7 @@ object httpEmitterMod {
       */
     def this(hasUrlVersion: Url) = this()
     
-    var binary: js.Any = js.native
+    var binary: Any = js.native
     
     /**
       * Sends the {CloudEvent} to an event receiver over HTTP POST
@@ -41,10 +41,10 @@ object httpEmitterMod {
       * Possible values are "binary" and "structured". Default: structured
       * @returns {Promise} Promise with an eventual response from the receiver
       */
-    def send(event: CloudEvent): js.Any = js.native
-    def send(event: CloudEvent, hasUrlModeHttpOpts: Mode): js.Any = js.native
+    def send(event: CloudEvent): Any = js.native
+    def send(event: CloudEvent, hasUrlModeHttpOpts: Mode): Any = js.native
     
-    var structured: js.Any = js.native
+    var structured: Any = js.native
     
     var url: URL | String = js.native
   }

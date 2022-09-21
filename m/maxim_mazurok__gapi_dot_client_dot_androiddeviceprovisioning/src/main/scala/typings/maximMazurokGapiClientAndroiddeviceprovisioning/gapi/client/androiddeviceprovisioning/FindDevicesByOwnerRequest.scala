@@ -31,7 +31,7 @@ object FindDevicesByOwnerRequest {
     
     inline def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
     
-    inline def setCustomerIdVarargs(value: String*): Self = StObject.set(x, "customerId", js.Array(value :_*))
+    inline def setCustomerIdVarargs(value: String*): Self = StObject.set(x, "customerId", js.Array(value*))
     
     inline def setLimit(value: String): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

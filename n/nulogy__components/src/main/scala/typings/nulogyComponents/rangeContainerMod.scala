@@ -8,5 +8,5 @@ object rangeContainerMod {
   
   @JSImport("@nulogy/components/src/RangeContainer", "RangeContainer")
   @js.native
-  val RangeContainer: js.Any = js.native
+  val RangeContainer: Any = js.native
 }

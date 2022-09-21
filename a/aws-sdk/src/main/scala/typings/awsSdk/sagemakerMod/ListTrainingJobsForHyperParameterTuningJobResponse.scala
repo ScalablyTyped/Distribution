@@ -31,6 +31,6 @@ object ListTrainingJobsForHyperParameterTuningJobResponse {
     
     inline def setTrainingJobSummaries(value: HyperParameterTrainingJobSummaries): Self = StObject.set(x, "TrainingJobSummaries", value.asInstanceOf[js.Any])
     
-    inline def setTrainingJobSummariesVarargs(value: HyperParameterTrainingJobSummary*): Self = StObject.set(x, "TrainingJobSummaries", js.Array(value :_*))
+    inline def setTrainingJobSummariesVarargs(value: HyperParameterTrainingJobSummary*): Self = StObject.set(x, "TrainingJobSummaries", js.Array(value*))
   }
 }

@@ -34,6 +34,12 @@ trait BuildOptions extends StObject {
   /** Compute Engine machine type on which to run the build. */
   var machineType: js.UndefOr[String] = js.undefined
   
+  /**
+    * Optional. Specification for execution on a `WorkerPool`. See [running builds in a private pool](https://cloud.google.com/build/docs/private-pools/run-builds-in-private-pool) for
+    * more information.
+    */
+  var pool: js.UndefOr[PoolOption] = js.undefined
+  
   /** Requested verifiability options. */
   var requestedVerifyOption: js.UndefOr[String] = js.undefined
   
@@ -59,7 +65,7 @@ trait BuildOptions extends StObject {
     */
   var volumes: js.UndefOr[js.Array[Volume]] = js.undefined
   
-  /** Option to specify a `WorkerPool` for the build. Format: projects/{project}/locations/{location}/workerPools/{workerPool} This field is experimental. */
+  /** This field deprecated; please use `pool.name` instead. */
   var workerPool: js.UndefOr[String] = js.undefined
 }
 object BuildOptions {
@@ -83,7 +89,7 @@ object BuildOptions {
     
     inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
-    inline def setEnvVarargs(value: String*): Self = StObject.set(x, "env", js.Array(value :_*))
+    inline def setEnvVarargs(value: String*): Self = StObject.set(x, "env", js.Array(value*))
     
     inline def setLogStreamingOption(value: String): Self = StObject.set(x, "logStreamingOption", value.asInstanceOf[js.Any])
     
@@ -97,6 +103,10 @@ object BuildOptions {
     
     inline def setMachineTypeUndefined: Self = StObject.set(x, "machineType", js.undefined)
     
+    inline def setPool(value: PoolOption): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
+    
+    inline def setPoolUndefined: Self = StObject.set(x, "pool", js.undefined)
+    
     inline def setRequestedVerifyOption(value: String): Self = StObject.set(x, "requestedVerifyOption", value.asInstanceOf[js.Any])
     
     inline def setRequestedVerifyOptionUndefined: Self = StObject.set(x, "requestedVerifyOption", js.undefined)
@@ -105,13 +115,13 @@ object BuildOptions {
     
     inline def setSecretEnvUndefined: Self = StObject.set(x, "secretEnv", js.undefined)
     
-    inline def setSecretEnvVarargs(value: String*): Self = StObject.set(x, "secretEnv", js.Array(value :_*))
+    inline def setSecretEnvVarargs(value: String*): Self = StObject.set(x, "secretEnv", js.Array(value*))
     
     inline def setSourceProvenanceHash(value: js.Array[String]): Self = StObject.set(x, "sourceProvenanceHash", value.asInstanceOf[js.Any])
     
     inline def setSourceProvenanceHashUndefined: Self = StObject.set(x, "sourceProvenanceHash", js.undefined)
     
-    inline def setSourceProvenanceHashVarargs(value: String*): Self = StObject.set(x, "sourceProvenanceHash", js.Array(value :_*))
+    inline def setSourceProvenanceHashVarargs(value: String*): Self = StObject.set(x, "sourceProvenanceHash", js.Array(value*))
     
     inline def setSubstitutionOption(value: String): Self = StObject.set(x, "substitutionOption", value.asInstanceOf[js.Any])
     
@@ -121,7 +131,7 @@ object BuildOptions {
     
     inline def setVolumesUndefined: Self = StObject.set(x, "volumes", js.undefined)
     
-    inline def setVolumesVarargs(value: Volume*): Self = StObject.set(x, "volumes", js.Array(value :_*))
+    inline def setVolumesVarargs(value: Volume*): Self = StObject.set(x, "volumes", js.Array(value*))
     
     inline def setWorkerPool(value: String): Self = StObject.set(x, "workerPool", value.asInstanceOf[js.Any])
     

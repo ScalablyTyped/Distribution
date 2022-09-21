@@ -7,11 +7,8 @@ import typings.exceljs.anon.PartialZlibOptions
 import typings.exceljs.exceljsStrings.cache
 import typings.exceljs.exceljsStrings.emit
 import typings.exceljs.exceljsStrings.ignore
-import typings.node.NodeJS.TypedArray
 import typings.node.streamMod.Stream
-import typings.std.ArrayBuffer
 import typings.std.AsyncIterator
-import typings.std.DataView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,18 +19,18 @@ object stream {
     
     @JSImport("exceljs", "stream.xlsx.WorkbookReader")
     @js.native
-    class WorkbookReader protected () extends Workbook {
+    open class WorkbookReader protected () extends Workbook {
       def this(input: String, options: PartialWorkbookStreamRead) = this()
       def this(input: Stream, options: PartialWorkbookStreamRead) = this()
       
-      def parse(): AsyncIterator[js.Any, js.Any, Unit] = js.native
+      def parse(): AsyncIterator[Any, Any, Unit] = js.native
       
       def read(): js.Promise[Unit] = js.native
     }
     
     @JSImport("exceljs", "stream.xlsx.WorkbookWriter")
     @js.native
-    class WorkbookWriter protected () extends Workbook {
+    open class WorkbookWriter protected () extends Workbook {
       def this(options: PartialWorkbookStreamWrit) = this()
       
       def addApp(): js.Promise[Unit] = js.native
@@ -60,7 +57,7 @@ object stream {
     
     @JSImport("exceljs", "stream.xlsx.WorksheetReader")
     @js.native
-    class WorksheetReader protected () extends StObject {
+    open class WorksheetReader protected () extends StObject {
       def this(options: WorksheetReaderOptions) = this()
       
       def columns(): Double = js.native
@@ -69,7 +66,7 @@ object stream {
       
       def getColumn(c: Double): Column = js.native
       
-      def parse(): AsyncIterator[js.Array[js.Any], js.Any, Unit] = js.native
+      def parse(): AsyncIterator[js.Array[Any], Any, Unit] = js.native
       
       def read(): js.Promise[Unit] = js.native
     }
@@ -279,7 +276,7 @@ object stream {
       var chunkSize: Double
       
       // compression only
-      var dictionary: Buffer | TypedArray | DataView | ArrayBuffer
+      var dictionary: js.typedarray.ArrayBuffer | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.TypedArray */ Any) | js.typedarray.DataView
       
       /**
       			 * @default constants.Z_FINISH
@@ -305,7 +302,7 @@ object stream {
       
       inline def apply(
         chunkSize: Double,
-        dictionary: Buffer | TypedArray | DataView | ArrayBuffer,
+        dictionary: js.typedarray.ArrayBuffer | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.TypedArray */ Any) | js.typedarray.DataView,
         finishFlush: Double,
         flush: Double,
         level: Double,
@@ -321,7 +318,9 @@ object stream {
         
         inline def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
         
-        inline def setDictionary(value: Buffer | TypedArray | DataView | ArrayBuffer): Self = StObject.set(x, "dictionary", value.asInstanceOf[js.Any])
+        inline def setDictionary(
+          value: js.typedarray.ArrayBuffer | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.TypedArray */ Any) | js.typedarray.DataView
+        ): Self = StObject.set(x, "dictionary", value.asInstanceOf[js.Any])
         
         inline def setFinishFlush(value: Double): Self = StObject.set(x, "finishFlush", value.asInstanceOf[js.Any])
         

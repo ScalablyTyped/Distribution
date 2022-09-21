@@ -10,10 +10,10 @@ Get a user's name from git config at the project or global scope, depending on w
 | ------------------ | :-------------: |
 | Full name          | git-user-name |
 | Keywords           | git, gitconfig, github, global, name, user, username |
-| # releases         | 0 |
-| # dependents       | 87 |
-| # downloads        | 167929 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 55524.333333333336 |
+| # stars            | 21.0 |
 
 ## Links
 - [Homepage](https://github.com/jonschlinkert/git-user-name)

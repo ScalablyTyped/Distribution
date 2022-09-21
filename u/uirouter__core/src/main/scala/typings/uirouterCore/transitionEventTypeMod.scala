@@ -15,7 +15,7 @@ object transitionEventTypeMod {
   
   @JSImport("@uirouter/core/lib/transition/transitionEventType", "TransitionEventType")
   @js.native
-  class TransitionEventType protected () extends StObject {
+  open class TransitionEventType protected () extends StObject {
     def this(name: String, hookPhase: TransitionHookPhase, hookOrder: Double, criteriaMatchPath: PathType) = this()
     def this(
       name: String,

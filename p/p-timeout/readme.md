@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-timeout
 
-Typings are for version 3.2.0
+Typings are for version 6.0.0
 
 ## Library description:
 Timeout a promise after a specified amount of time
@@ -11,9 +11,9 @@ Timeout a promise after a specified amount of time
 | Full name          | p-timeout |
 | Keywords           | promise, timeout, error, invalidate, async, await, promises, time, out, cancel, bluebird |
 | # releases         | 7 |
-| # dependents       | 147 |
-| # downloads        | 242909624 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 4.9403414333333336E7 |
+| # stars            | 196.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/p-timeout#readme)

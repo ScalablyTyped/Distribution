@@ -11,6 +11,9 @@ trait GoogleCloudRecommenderV1Impact extends StObject {
   
   /** Use with CategoryType.COST */
   var costProjection: js.UndefOr[GoogleCloudRecommenderV1CostProjection] = js.undefined
+  
+  /** Use with CategoryType.SECURITY */
+  var securityProjection: js.UndefOr[GoogleCloudRecommenderV1SecurityProjection] = js.undefined
 }
 object GoogleCloudRecommenderV1Impact {
   
@@ -28,5 +31,9 @@ object GoogleCloudRecommenderV1Impact {
     inline def setCostProjection(value: GoogleCloudRecommenderV1CostProjection): Self = StObject.set(x, "costProjection", value.asInstanceOf[js.Any])
     
     inline def setCostProjectionUndefined: Self = StObject.set(x, "costProjection", js.undefined)
+    
+    inline def setSecurityProjection(value: GoogleCloudRecommenderV1SecurityProjection): Self = StObject.set(x, "securityProjection", value.asInstanceOf[js.Any])
+    
+    inline def setSecurityProjectionUndefined: Self = StObject.set(x, "securityProjection", js.undefined)
   }
 }

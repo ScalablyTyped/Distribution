@@ -1,6 +1,5 @@
 package typings.c3.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ trait GridLineOptionsWithAxis
 }
 object GridLineOptionsWithAxis {
   
-  inline def apply(value: String | Double | Date): GridLineOptionsWithAxis = {
+  inline def apply(value: String | Double | js.Date): GridLineOptionsWithAxis = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridLineOptionsWithAxis]
   }

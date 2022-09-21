@@ -29,12 +29,12 @@ object ModifyHostsResult {
     
     inline def setSuccessfulUndefined: Self = StObject.set(x, "Successful", js.undefined)
     
-    inline def setSuccessfulVarargs(value: String*): Self = StObject.set(x, "Successful", js.Array(value :_*))
+    inline def setSuccessfulVarargs(value: String*): Self = StObject.set(x, "Successful", js.Array(value*))
     
     inline def setUnsuccessful(value: UnsuccessfulItemList): Self = StObject.set(x, "Unsuccessful", value.asInstanceOf[js.Any])
     
     inline def setUnsuccessfulUndefined: Self = StObject.set(x, "Unsuccessful", js.undefined)
     
-    inline def setUnsuccessfulVarargs(value: UnsuccessfulItem*): Self = StObject.set(x, "Unsuccessful", js.Array(value :_*))
+    inline def setUnsuccessfulVarargs(value: UnsuccessfulItem*): Self = StObject.set(x, "Unsuccessful", js.Array(value*))
   }
 }

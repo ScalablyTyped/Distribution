@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "ObjectTypeSyntax")
 @js.native
-class ObjectTypeSyntax protected ()
+open class ObjectTypeSyntax protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.ObjectTypeSyntax {
   def this(
@@ -23,7 +23,7 @@ class ObjectTypeSyntax protected ()
   ) = this()
   
   /* CompleteClass */
-  override def accept(visitor: ISyntaxVisitor): js.Any = js.native
+  override def accept(visitor: ISyntaxVisitor): Any = js.native
   
   /* CompleteClass */
   override def childAt(index: Double): ISyntaxElement = js.native

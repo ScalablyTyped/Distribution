@@ -10,14 +10,54 @@ trait TabDataSource
   extends StObject
      with ViewProps {
   
+  /**
+    * @language zh-CN
+    * @description 是否可以点击切换 Tab
+    * @defaultValue undefined
+    */
+  /**
+    * @language en-US
+    * @description Can I click switch tab
+    * @defaultValue undefined
+    */
   var disabled: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description Tab 标签里的文本
+    * @defaultValue undefined
+    */
+  /**
+    * @language en-US
+    * @description Text in tab
+    * @defaultValue undefined
+    */
   var label: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 自定义 Tab 渲染
+    * @defaultValue undefined
+    */
+  /**
+    * @language en-US
+    * @description Custom tab rendering
+    * @defaultValue undefined
+    */
   var renderTab: js.UndefOr[
     js.Function3[/* isActive */ Boolean, /* state */ js.Object, /* props */ js.Object, ReactNode]
   ] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 索引值
+    * @defaultValue undefined
+    */
+  /**
+    * @language en-US
+    * @description Index
+    * @defaultValue undefined
+    */
   var value: String
 }
 object TabDataSource {

@@ -17,7 +17,7 @@ trait ListDataSetsResponse extends StObject {
   var NextToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The AWS request ID for this operation.
+    * The Amazon Web Services request ID for this operation.
     */
   var RequestId: js.UndefOr[String] = js.undefined
   
@@ -39,7 +39,7 @@ object ListDataSetsResponse {
     
     inline def setDataSetSummariesUndefined: Self = StObject.set(x, "DataSetSummaries", js.undefined)
     
-    inline def setDataSetSummariesVarargs(value: DataSetSummary*): Self = StObject.set(x, "DataSetSummaries", js.Array(value :_*))
+    inline def setDataSetSummariesVarargs(value: DataSetSummary*): Self = StObject.set(x, "DataSetSummaries", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

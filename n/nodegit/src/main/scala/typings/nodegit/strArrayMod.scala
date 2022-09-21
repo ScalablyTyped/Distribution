@@ -8,7 +8,7 @@ object strArrayMod {
   
   @JSImport("nodegit/str-array", "Strarray")
   @js.native
-  class Strarray () extends StObject {
+  open class Strarray () extends StObject {
     
     def copy(src: Strarray): Double = js.native
     

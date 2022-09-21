@@ -27,7 +27,7 @@ object ContentType {
     
     inline def setGenericAttachments(value: js.Array[LexGenericAttachment]): Self = StObject.set(x, "genericAttachments", value.asInstanceOf[js.Any])
     
-    inline def setGenericAttachmentsVarargs(value: LexGenericAttachment*): Self = StObject.set(x, "genericAttachments", js.Array(value :_*))
+    inline def setGenericAttachmentsVarargs(value: LexGenericAttachment*): Self = StObject.set(x, "genericAttachments", js.Array(value*))
     
     inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }

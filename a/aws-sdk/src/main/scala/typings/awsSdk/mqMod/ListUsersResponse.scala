@@ -22,7 +22,7 @@ trait ListUsersResponse extends StObject {
   var NextToken: js.UndefOr[string] = js.undefined
   
   /**
-    * Required. The list of all ActiveMQ usernames for the specified broker.
+    * Required. The list of all ActiveMQ usernames for the specified broker. Does not apply to RabbitMQ brokers.
     */
   var Users: js.UndefOr[listOfUserSummary] = js.undefined
 }
@@ -51,6 +51,6 @@ object ListUsersResponse {
     
     inline def setUsersUndefined: Self = StObject.set(x, "Users", js.undefined)
     
-    inline def setUsersVarargs(value: UserSummary*): Self = StObject.set(x, "Users", js.Array(value :_*))
+    inline def setUsersVarargs(value: UserSummary*): Self = StObject.set(x, "Users", js.Array(value*))
   }
 }

@@ -24,7 +24,7 @@ trait ElasticGpuAssociation extends StObject {
   /**
     * The ID of the Elastic Graphics accelerator.
     */
-  var ElasticGpuId: js.UndefOr[String] = js.undefined
+  var ElasticGpuId: js.UndefOr[typings.awsSdk.ec2Mod.ElasticGpuId] = js.undefined
 }
 object ElasticGpuAssociation {
   
@@ -47,7 +47,7 @@ object ElasticGpuAssociation {
     
     inline def setElasticGpuAssociationTimeUndefined: Self = StObject.set(x, "ElasticGpuAssociationTime", js.undefined)
     
-    inline def setElasticGpuId(value: String): Self = StObject.set(x, "ElasticGpuId", value.asInstanceOf[js.Any])
+    inline def setElasticGpuId(value: ElasticGpuId): Self = StObject.set(x, "ElasticGpuId", value.asInstanceOf[js.Any])
     
     inline def setElasticGpuIdUndefined: Self = StObject.set(x, "ElasticGpuId", js.undefined)
   }

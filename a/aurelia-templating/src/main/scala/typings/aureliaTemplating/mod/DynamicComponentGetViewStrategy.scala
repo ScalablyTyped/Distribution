@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DynamicComponentGetViewStrategy extends StObject {
   
   /**
-    * Implement this hook if you want to provide custom view strategy when this component is used with the compose element or the router.
-    */
+  	* Implement this hook if you want to provide custom view strategy when this component is used with the compose element or the router.
+  	*/
   def getViewStrategy(): String | ViewStrategy_
 }
 object DynamicComponentGetViewStrategy {

@@ -9,12 +9,12 @@ trait JobFlowExecutionStatusDetail extends StObject {
   /**
     * The creation date and time of the job flow.
     */
-  var CreationDateTime: Date
+  var CreationDateTime: js.Date
   
   /**
     * The completion date and time of the job flow.
     */
-  var EndDateTime: js.UndefOr[Date] = js.undefined
+  var EndDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Description of the job flow last changed state.
@@ -24,12 +24,12 @@ trait JobFlowExecutionStatusDetail extends StObject {
   /**
     * The date and time when the job flow was ready to start running bootstrap actions.
     */
-  var ReadyDateTime: js.UndefOr[Date] = js.undefined
+  var ReadyDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The start date and time of the job flow.
     */
-  var StartDateTime: js.UndefOr[Date] = js.undefined
+  var StartDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The state of the job flow.
@@ -38,16 +38,16 @@ trait JobFlowExecutionStatusDetail extends StObject {
 }
 object JobFlowExecutionStatusDetail {
   
-  inline def apply(CreationDateTime: Date, State: JobFlowExecutionState): JobFlowExecutionStatusDetail = {
+  inline def apply(CreationDateTime: js.Date, State: JobFlowExecutionState): JobFlowExecutionStatusDetail = {
     val __obj = js.Dynamic.literal(CreationDateTime = CreationDateTime.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobFlowExecutionStatusDetail]
   }
   
   extension [Self <: JobFlowExecutionStatusDetail](x: Self) {
     
-    inline def setCreationDateTime(value: Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
+    inline def setCreationDateTime(value: js.Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
     
-    inline def setEndDateTime(value: Date): Self = StObject.set(x, "EndDateTime", value.asInstanceOf[js.Any])
+    inline def setEndDateTime(value: js.Date): Self = StObject.set(x, "EndDateTime", value.asInstanceOf[js.Any])
     
     inline def setEndDateTimeUndefined: Self = StObject.set(x, "EndDateTime", js.undefined)
     
@@ -55,11 +55,11 @@ object JobFlowExecutionStatusDetail {
     
     inline def setLastStateChangeReasonUndefined: Self = StObject.set(x, "LastStateChangeReason", js.undefined)
     
-    inline def setReadyDateTime(value: Date): Self = StObject.set(x, "ReadyDateTime", value.asInstanceOf[js.Any])
+    inline def setReadyDateTime(value: js.Date): Self = StObject.set(x, "ReadyDateTime", value.asInstanceOf[js.Any])
     
     inline def setReadyDateTimeUndefined: Self = StObject.set(x, "ReadyDateTime", js.undefined)
     
-    inline def setStartDateTime(value: Date): Self = StObject.set(x, "StartDateTime", value.asInstanceOf[js.Any])
+    inline def setStartDateTime(value: js.Date): Self = StObject.set(x, "StartDateTime", value.asInstanceOf[js.Any])
     
     inline def setStartDateTimeUndefined: Self = StObject.set(x, "StartDateTime", js.undefined)
     

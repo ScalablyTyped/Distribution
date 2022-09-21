@@ -32,16 +32,11 @@ trait SizeVariableProperties
   /**
     * Only applicable when working in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
+    * @default all
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#axis)
     */
   var axis: js.UndefOr[width | depth | height | `width-and-depth` | all] = js.undefined
-  
-  /**
-    * The only supported expression is `view.scale`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#expression)
-    */
-  var expression: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum data value used in the size ramp.
@@ -128,10 +123,6 @@ object SizeVariableProperties {
     
     inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
-    inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
-    
-    inline def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
-    
     inline def setMaxDataValue(value: Double): Self = StObject.set(x, "maxDataValue", value.asInstanceOf[js.Any])
     
     inline def setMaxDataValueUndefined: Self = StObject.set(x, "maxDataValue", js.undefined)
@@ -156,7 +147,7 @@ object SizeVariableProperties {
     
     inline def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
     
-    inline def setStopsVarargs(value: SizeStopProperties*): Self = StObject.set(x, "stops", js.Array(value :_*))
+    inline def setStopsVarargs(value: SizeStopProperties*): Self = StObject.set(x, "stops", js.Array(value*))
     
     inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,5 @@
 package typings.amazonConnectStreams.connect
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,6 +31,13 @@ trait Contact extends StObject {
   def addConnection(endpoint: Endpoint, callbacks: SuccessFailOptions): Unit = js.native
   
   /**
+    * Clear the contact.
+    *
+    * @param callbacks Success and failure callbacks to determine whether the operation was successful.
+    */
+  def clear(callbacks: SuccessFailOptions): Unit = js.native
+  
+  /**
     * This is an API that completes this contact entirely.
     * That means that this should only be used for non-monitoring agent connections.
     *
@@ -54,6 +60,7 @@ trait Contact extends StObject {
   
   /**
     * Close the contact and all of its associated connections.
+    * This method can also reject and clear contacts but those behaviors will be deprecated.
     * If the contact is a voice contact, and there is a third-party, the customer remains bridged with the third party and will not be disconnected from the call.
     * Otherwise, the agent and customer are disconnected.
     *
@@ -62,7 +69,7 @@ trait Contact extends StObject {
   def destroy(): Unit = js.native
   def destroy(callbacks: SuccessFailOptions): Unit = js.native
   
-  /** Get the inital connection of the contact, or null if the initial connection is no longer active. */
+  /** Get the initial connection of the contact, or null if the initial connection is no longer active. */
   def getActiveInitialConnection(): BaseConnection | Null = js.native
   
   /**
@@ -80,6 +87,9 @@ trait Contact extends StObject {
   /** Get the unique contactId of this contact. */
   def getContactId(): String = js.native
   
+  /** Get description for the contact. */
+  def getDescription(): String = js.native
+  
   /**
     * Returns a formatted string with the contact event and ID.
     *
@@ -93,6 +103,9 @@ trait Contact extends StObject {
   /** Alias for `getOriginalContactId()`. */
   def getInitialContactId(): String = js.native
   
+  /** Get name for the contact. */
+  def getName(): String = js.native
+  
   /**
     * Get the original (initial) contact id from which this contact was transferred, or none if this is not an internal Connect transfer.
     * This is typically a contact owned by another agent, thus this agent will not be able to manipulate it.
@@ -104,7 +117,10 @@ trait Contact extends StObject {
   def getQueue(): Queue = js.native
   
   /** Gets the timestamp associated with when the contact was placed in the queue. */
-  def getQueueTimestamp(): Date = js.native
+  def getQueueTimestamp(): js.Date = js.native
+  
+  /** Get references for the contact. */
+  def getReferences(): ReferenceDictionary = js.native
   
   /**
     * In Voice contacts, there can only be one active third-party connection.
@@ -112,13 +128,19 @@ trait Contact extends StObject {
     */
   def getSingleActiveThirdPartyConnection(): BaseConnection | Null = js.native
   
-  /** Get a ContactState object representing the state of the contact. */
-  def getStatus(): ContactState = js.native
+  /** Get an object representing the state of the contact. */
+  def getState(): ContactState = js.native
   
   /**
     * Get the duration of the contact state in milliseconds relative to local time.
     * This takes into account time skew between the JS client and the Amazon Connect backend servers.
     */
+  def getStateDuration(): Double = js.native
+  
+  /** Alias for `getStatus()` */
+  def getStatus(): ContactState = js.native
+  
+  /** Alias for `getStateDuration()` */
   def getStatusDuration(): Double = js.native
   
   /** Get a list of all of the third-party connections, i.e. the list of all connections except for the initial connection, or an empty list if there are no third-party connections. */
@@ -139,6 +161,9 @@ trait Contact extends StObject {
   
   /** Determine whether this is an inbound or outbound contact. */
   def isInbound(): Boolean = js.native
+  
+  /** Determine whether this contact is a softphone call and multiparty conference feature is turned on.  */
+  def isMultiPartyConferenceEnabled(): Boolean = js.native
   
   /** Determine whether this contact is a softphone call.  */
   def isSoftphoneCall(): Boolean = js.native
@@ -179,7 +204,7 @@ trait Contact extends StObject {
   /**
     * Subscribe a method to be invoked when the contact is connecting.
     * This works with chat and softphone contacts.
-    * This event happens when a call or chat comes in, before accepting (there is an exception for queue callbacks, in which onConnecting's handler is executed after the callback is accepted).
+    * This event happens when a call or chat comes in, before accepting (there is an exception for queue callbacks, in which onConnecting's handler is started after the callback is accepted).
     * Note that once the contact has been accepted, the `onAccepted` handler will be triggered.
     *
     * @param callback A callback to receive the `Contact` API object instance.
@@ -201,6 +226,14 @@ trait Contact extends StObject {
     * @param callback A callback to receive the `Contact` API object instance.
     */
   def onEnded(callback: ContactCallback): Unit = js.native
+  
+  /**
+    * Subscribe a method to be invoked when the contact error event is triggered. 
+    * This event is only triggered when a contact state of type error appears in the snapshot.
+    * 
+    * @param callback A callback to receive the `Contact` API object instance.
+    */
+  def onError(callback: ContactCallback): Unit = js.native
   
   /**
     * Subscribe a method to be invoked when a queue callback contact is incoming.
@@ -232,6 +265,14 @@ trait Contact extends StObject {
     * @param callback A callback to receive the `Contact` API object instance.
     */
   def onRefresh(callback: ContactCallback): Unit = js.native
+  
+  /**
+    * Reject an incoming contact.
+    *
+    * @param callbacks Success and failure callbacks to determine whether the operation was successful.
+    */
+  def reject(): Unit = js.native
+  def reject(callbacks: SuccessFailOptions): Unit = js.native
   
   /**
     * The data behind the `Contact` API object is ephemeral and changes whenever new data is provided.

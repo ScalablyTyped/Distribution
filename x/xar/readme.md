@@ -11,9 +11,9 @@ extensible archiver
 | Full name          | xar |
 | Keywords           | archive, macos |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 11932 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1487.3333333333333 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/finnp/xar)

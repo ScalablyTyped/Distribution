@@ -1,5 +1,8 @@
 package typings.acmeClient
 
+import typings.acmeClient.acmeClientStrings.`P-256`
+import typings.acmeClient.acmeClientStrings.`P-384`
+import typings.acmeClient.acmeClientStrings.`P-521`
 import typings.acmeClient.acmeClientStrings.deactivated
 import typings.acmeClient.acmeClientStrings.expired
 import typings.acmeClient.acmeClientStrings.invalid
@@ -9,6 +12,7 @@ import typings.acmeClient.acmeClientStrings.ready
 import typings.acmeClient.acmeClientStrings.revoked
 import typings.acmeClient.acmeClientStrings.valid
 import typings.acmeClient.anon.Production
+import typings.acmeClient.anon.ProductionString
 import typings.acmeClient.rfc8555Mod.Account
 import typings.acmeClient.rfc8555Mod.AccountCreateRequest
 import typings.acmeClient.rfc8555Mod.AccountUpdateRequest
@@ -17,17 +21,20 @@ import typings.acmeClient.rfc8555Mod.Challenge
 import typings.acmeClient.rfc8555Mod.Identifier
 import typings.acmeClient.rfc8555Mod.OrderCreateRequest
 import typings.axios.mod.AxiosInstance
-import typings.node.Buffer
-import typings.std.Date
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("acme-client", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("acme-client", "Client")
   @js.native
-  class Client protected () extends StObject {
+  open class Client protected () extends StObject {
     def this(opts: ClientOptions) = this()
     
     def auto(opts: ClientAutoOptions): js.Promise[String] = js.native
@@ -79,21 +86,37 @@ object mod {
   @js.native
   val axios: AxiosInstance = js.native
   
+  @JSImport("acme-client", "crypto")
+  @js.native
+  val crypto: CryptoInterface = js.native
+  
   object directory {
     
     @JSImport("acme-client", "directory")
     @js.native
     val ^ : js.Any = js.native
     
+    @JSImport("acme-client", "directory.buypass")
+    @js.native
+    def buypass: Production = js.native
+    inline def buypass_=(x: Production): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buypass")(x.asInstanceOf[js.Any])
+    
     @JSImport("acme-client", "directory.letsencrypt")
     @js.native
     def letsencrypt: Production = js.native
     inline def letsencrypt_=(x: Production): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("letsencrypt")(x.asInstanceOf[js.Any])
+    
+    @JSImport("acme-client", "directory.zerossl")
+    @js.native
+    def zerossl: ProductionString = js.native
+    inline def zerossl_=(x: ProductionString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("zerossl")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("acme-client", "forge")
   @js.native
-  val forge: CryptoInterface = js.native
+  val forge: CryptoLegacyInterface = js.native
+  
+  inline def setLogger(fn: js.Function1[/* msg */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogger")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait Authorization
     extends StObject
@@ -138,7 +161,7 @@ object mod {
       
       inline def setAltNames(value: js.Array[String]): Self = StObject.set(x, "altNames", value.asInstanceOf[js.Any])
       
-      inline def setAltNamesVarargs(value: String*): Self = StObject.set(x, "altNames", js.Array(value :_*))
+      inline def setAltNamesVarargs(value: String*): Self = StObject.set(x, "altNames", js.Array(value*))
       
       inline def setCommonName(value: String): Self = StObject.set(x, "commonName", value.asInstanceOf[js.Any])
     }
@@ -150,13 +173,13 @@ object mod {
     
     var issuer: CertificateIssuer
     
-    var notAfter: Date
+    var notAfter: js.Date
     
-    var notBefore: Date
+    var notBefore: js.Date
   }
   object CertificateInfo {
     
-    inline def apply(domains: CertificateDomains, issuer: CertificateIssuer, notAfter: Date, notBefore: Date): CertificateInfo = {
+    inline def apply(domains: CertificateDomains, issuer: CertificateIssuer, notAfter: js.Date, notBefore: js.Date): CertificateInfo = {
       val __obj = js.Dynamic.literal(domains = domains.asInstanceOf[js.Any], issuer = issuer.asInstanceOf[js.Any], notAfter = notAfter.asInstanceOf[js.Any], notBefore = notBefore.asInstanceOf[js.Any])
       __obj.asInstanceOf[CertificateInfo]
     }
@@ -167,9 +190,9 @@ object mod {
       
       inline def setIssuer(value: CertificateIssuer): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
       
-      inline def setNotAfter(value: Date): Self = StObject.set(x, "notAfter", value.asInstanceOf[js.Any])
+      inline def setNotAfter(value: js.Date): Self = StObject.set(x, "notAfter", value.asInstanceOf[js.Any])
       
-      inline def setNotBefore(value: Date): Self = StObject.set(x, "notBefore", value.asInstanceOf[js.Any])
+      inline def setNotBefore(value: js.Date): Self = StObject.set(x, "notBefore", value.asInstanceOf[js.Any])
     }
   }
   
@@ -194,11 +217,11 @@ object mod {
   
   trait ClientAutoOptions extends StObject {
     
-    def challengeCreateFn(authz: Authorization, challenge: Challenge, keyAuthorization: String): js.Promise[js.Any]
+    def challengeCreateFn(authz: Authorization, challenge: Challenge, keyAuthorization: String): js.Promise[Any]
     
     var challengePriority: js.UndefOr[js.Array[String]] = js.undefined
     
-    def challengeRemoveFn(authz: Authorization, challenge: Challenge, keyAuthorization: String): js.Promise[js.Any]
+    def challengeRemoveFn(authz: Authorization, challenge: Challenge, keyAuthorization: String): js.Promise[Any]
     
     var csr: CsrBuffer | CsrString
     
@@ -213,8 +236,8 @@ object mod {
   object ClientAutoOptions {
     
     inline def apply(
-      challengeCreateFn: (Authorization, Challenge, String) => js.Promise[js.Any],
-      challengeRemoveFn: (Authorization, Challenge, String) => js.Promise[js.Any],
+      challengeCreateFn: (Authorization, Challenge, String) => js.Promise[Any],
+      challengeRemoveFn: (Authorization, Challenge, String) => js.Promise[Any],
       csr: CsrBuffer | CsrString
     ): ClientAutoOptions = {
       val __obj = js.Dynamic.literal(challengeCreateFn = js.Any.fromFunction3(challengeCreateFn), challengeRemoveFn = js.Any.fromFunction3(challengeRemoveFn), csr = csr.asInstanceOf[js.Any])
@@ -223,15 +246,15 @@ object mod {
     
     extension [Self <: ClientAutoOptions](x: Self) {
       
-      inline def setChallengeCreateFn(value: (Authorization, Challenge, String) => js.Promise[js.Any]): Self = StObject.set(x, "challengeCreateFn", js.Any.fromFunction3(value))
+      inline def setChallengeCreateFn(value: (Authorization, Challenge, String) => js.Promise[Any]): Self = StObject.set(x, "challengeCreateFn", js.Any.fromFunction3(value))
       
       inline def setChallengePriority(value: js.Array[String]): Self = StObject.set(x, "challengePriority", value.asInstanceOf[js.Any])
       
       inline def setChallengePriorityUndefined: Self = StObject.set(x, "challengePriority", js.undefined)
       
-      inline def setChallengePriorityVarargs(value: String*): Self = StObject.set(x, "challengePriority", js.Array(value :_*))
+      inline def setChallengePriorityVarargs(value: String*): Self = StObject.set(x, "challengePriority", js.Array(value*))
       
-      inline def setChallengeRemoveFn(value: (Authorization, Challenge, String) => js.Promise[js.Any]): Self = StObject.set(x, "challengeRemoveFn", js.Any.fromFunction3(value))
+      inline def setChallengeRemoveFn(value: (Authorization, Challenge, String) => js.Promise[Any]): Self = StObject.set(x, "challengeRemoveFn", js.Any.fromFunction3(value))
       
       inline def setCsr(value: CsrBuffer | CsrString): Self = StObject.set(x, "csr", value.asInstanceOf[js.Any])
       
@@ -253,6 +276,27 @@ object mod {
     }
   }
   
+  trait ClientExternalAccountBindingOptions extends StObject {
+    
+    var hmacKey: String
+    
+    var kid: String
+  }
+  object ClientExternalAccountBindingOptions {
+    
+    inline def apply(hmacKey: String, kid: String): ClientExternalAccountBindingOptions = {
+      val __obj = js.Dynamic.literal(hmacKey = hmacKey.asInstanceOf[js.Any], kid = kid.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ClientExternalAccountBindingOptions]
+    }
+    
+    extension [Self <: ClientExternalAccountBindingOptions](x: Self) {
+      
+      inline def setHmacKey(value: String): Self = StObject.set(x, "hmacKey", value.asInstanceOf[js.Any])
+      
+      inline def setKid(value: String): Self = StObject.set(x, "kid", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait ClientOptions extends StObject {
     
     var accountKey: PrivateKeyBuffer | PrivateKeyString
@@ -266,6 +310,8 @@ object mod {
     var backoffMin: js.UndefOr[Double] = js.undefined
     
     var directoryUrl: String
+    
+    var externalAccountBinding: js.UndefOr[ClientExternalAccountBindingOptions] = js.undefined
   }
   object ClientOptions {
     
@@ -295,11 +341,50 @@ object mod {
       inline def setBackoffMinUndefined: Self = StObject.set(x, "backoffMin", js.undefined)
       
       inline def setDirectoryUrl(value: String): Self = StObject.set(x, "directoryUrl", value.asInstanceOf[js.Any])
+      
+      inline def setExternalAccountBinding(value: ClientExternalAccountBindingOptions): Self = StObject.set(x, "externalAccountBinding", value.asInstanceOf[js.Any])
+      
+      inline def setExternalAccountBindingUndefined: Self = StObject.set(x, "externalAccountBinding", js.undefined)
     }
   }
   
   @js.native
   trait CryptoInterface extends StObject {
+    
+    def createCsr(data: CsrOptions): js.Promise[js.Tuple2[PrivateKeyBuffer, CsrBuffer]] = js.native
+    def createCsr(data: CsrOptions, keyPem: PrivateKeyBuffer): js.Promise[js.Tuple2[PrivateKeyBuffer, CsrBuffer]] = js.native
+    def createCsr(data: CsrOptions, keyPem: PrivateKeyString): js.Promise[js.Tuple2[PrivateKeyBuffer, CsrBuffer]] = js.native
+    
+    def createPrivateEcdsaKey(): js.Promise[PrivateKeyBuffer] = js.native
+    def createPrivateEcdsaKey(namedCurve: `P-256` | `P-384` | `P-521`): js.Promise[PrivateKeyBuffer] = js.native
+    
+    def createPrivateKey(): js.Promise[PrivateKeyBuffer] = js.native
+    def createPrivateKey(keySize: Double): js.Promise[PrivateKeyBuffer] = js.native
+    
+    def createPrivateRsaKey(): js.Promise[PrivateKeyBuffer] = js.native
+    def createPrivateRsaKey(keySize: Double): js.Promise[PrivateKeyBuffer] = js.native
+    
+    def getJwk(keyPem: PrivateKeyBuffer | PublicKeyBuffer): RsaPublicJwk | EcdsaPublicJwk = js.native
+    def getJwk(keyPem: PrivateKeyString | PublicKeyString): RsaPublicJwk | EcdsaPublicJwk = js.native
+    
+    def getPemBodyAsB64u(pem: CertificateBuffer): String = js.native
+    def getPemBodyAsB64u(pem: CertificateString): String = js.native
+    
+    def getPublicKey(keyPem: PrivateKeyBuffer | PublicKeyBuffer): PublicKeyBuffer = js.native
+    def getPublicKey(keyPem: PrivateKeyString | PublicKeyString): PublicKeyBuffer = js.native
+    
+    def readCertificateInfo(certPem: CertificateBuffer): CertificateInfo = js.native
+    def readCertificateInfo(certPem: CertificateString): CertificateInfo = js.native
+    
+    def readCsrDomains(csrPem: CsrBuffer): CertificateDomains = js.native
+    def readCsrDomains(csrPem: CsrString): CertificateDomains = js.native
+    
+    def splitPemChain(chainPem: CertificateBuffer): js.Array[String] = js.native
+    def splitPemChain(chainPem: CertificateString): js.Array[String] = js.native
+  }
+  
+  @js.native
+  trait CryptoLegacyInterface extends StObject {
     
     def createCsr(data: CsrOptions): js.Promise[js.Tuple2[PrivateKeyBuffer, CsrBuffer]] = js.native
     def createCsr(data: CsrOptions, key: PrivateKeyBuffer): js.Promise[js.Tuple2[PrivateKeyBuffer, CsrBuffer]] = js.native
@@ -311,8 +396,8 @@ object mod {
     def createPublicKey(key: PrivateKeyBuffer): js.Promise[PublicKeyBuffer] = js.native
     def createPublicKey(key: PrivateKeyString): js.Promise[PublicKeyBuffer] = js.native
     
-    def getModulus(input: CertificateBuffer | CsrBuffer | PrivateKeyBuffer | PublicKeyBuffer): js.Promise[Buffer] = js.native
     def getModulus(input: CertificateString | CsrString | PrivateKeyString | PublicKeyString): js.Promise[Buffer] = js.native
+    def getModulus(input: CertificateBuffer | CsrBuffer | PrivateKeyBuffer | PublicKeyBuffer): js.Promise[Buffer] = js.native
     
     def getPemBody(str: String): String = js.native
     
@@ -363,7 +448,7 @@ object mod {
       
       inline def setAltNamesUndefined: Self = StObject.set(x, "altNames", js.undefined)
       
-      inline def setAltNamesVarargs(value: String*): Self = StObject.set(x, "altNames", js.Array(value :_*))
+      inline def setAltNamesVarargs(value: String*): Self = StObject.set(x, "altNames", js.Array(value*))
       
       inline def setCommonName(value: String): Self = StObject.set(x, "commonName", value.asInstanceOf[js.Any])
       
@@ -401,6 +486,35 @@ object mod {
   
   type CsrString = String
   
+  trait EcdsaPublicJwk extends StObject {
+    
+    var crv: String
+    
+    var kty: String
+    
+    var x: String
+    
+    var y: String
+  }
+  object EcdsaPublicJwk {
+    
+    inline def apply(crv: String, kty: String, x: String, y: String): EcdsaPublicJwk = {
+      val __obj = js.Dynamic.literal(crv = crv.asInstanceOf[js.Any], kty = kty.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+      __obj.asInstanceOf[EcdsaPublicJwk]
+    }
+    
+    extension [Self <: EcdsaPublicJwk](x: Self) {
+      
+      inline def setCrv(value: String): Self = StObject.set(x, "crv", value.asInstanceOf[js.Any])
+      
+      inline def setKty(value: String): Self = StObject.set(x, "kty", value.asInstanceOf[js.Any])
+      
+      inline def setX(value: String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      
+      inline def setY(value: String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait Order
     extends StObject
        with typings.acmeClient.rfc8555Mod.Order {
@@ -434,4 +548,29 @@ object mod {
   type PublicKeyBuffer = Buffer
   
   type PublicKeyString = String
+  
+  trait RsaPublicJwk extends StObject {
+    
+    var e: String
+    
+    var kty: String
+    
+    var n: String
+  }
+  object RsaPublicJwk {
+    
+    inline def apply(e: String, kty: String, n: String): RsaPublicJwk = {
+      val __obj = js.Dynamic.literal(e = e.asInstanceOf[js.Any], kty = kty.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RsaPublicJwk]
+    }
+    
+    extension [Self <: RsaPublicJwk](x: Self) {
+      
+      inline def setE(value: String): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+      
+      inline def setKty(value: String): Self = StObject.set(x, "kty", value.asInstanceOf[js.Any])
+      
+      inline def setN(value: String): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
+    }
+  }
 }

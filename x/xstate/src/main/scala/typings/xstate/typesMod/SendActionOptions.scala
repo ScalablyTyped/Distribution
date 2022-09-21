@@ -1,6 +1,5 @@
 package typings.xstate.typesMod
 
-import typings.xstate.actorMod.Actor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ trait SendActionOptions[TContext, TEvent /* <: EventObject */] extends StObject 
   var id: js.UndefOr[String | Double] = js.undefined
   
   var to: js.UndefOr[
-    String | (ExprWithMeta[TContext, TEvent, String | Double | (Actor[js.Any, AnyEventObject])])
+    String | (ActorRef[Any, Any]) | (ExprWithMeta[TContext, TEvent, String | (ActorRef[Any, Any])])
   ] = js.undefined
 }
 object SendActionOptions {
@@ -35,12 +34,10 @@ object SendActionOptions {
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setTo(
-      value: String | (ExprWithMeta[TContext, TEvent, String | Double | (Actor[js.Any, AnyEventObject])])
+      value: String | (ActorRef[Any, Any]) | (ExprWithMeta[TContext, TEvent, String | (ActorRef[Any, Any])])
     ): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
-    inline def setToFunction3(
-      value: (TContext, TEvent, /* meta */ SCXMLEventMeta[TEvent]) => String | Double | (Actor[js.Any, AnyEventObject])
-    ): Self = StObject.set(x, "to", js.Any.fromFunction3(value))
+    inline def setToFunction3(value: (TContext, TEvent, /* meta */ SCXMLEventMeta[TEvent]) => String | (ActorRef[Any, Any])): Self = StObject.set(x, "to", js.Any.fromFunction3(value))
     
     inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
   }

@@ -10,10 +10,10 @@ object loupeMod {
   
   @JSImport("material-ui/svg-icons/image/loupe", JSImport.Default)
   @js.native
-  class default () extends ImageLoupe
+  open class default () extends ImageLoupe
   
   @JSImport("material-ui/svg-icons/image/loupe", "ImageLoupe")
   @js.native
-  class ImageLoupe ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageLoupe ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

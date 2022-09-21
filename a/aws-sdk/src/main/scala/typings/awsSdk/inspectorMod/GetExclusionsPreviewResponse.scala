@@ -34,7 +34,7 @@ object GetExclusionsPreviewResponse {
     
     inline def setExclusionPreviewsUndefined: Self = StObject.set(x, "exclusionPreviews", js.undefined)
     
-    inline def setExclusionPreviewsVarargs(value: ExclusionPreview*): Self = StObject.set(x, "exclusionPreviews", js.Array(value :_*))
+    inline def setExclusionPreviewsVarargs(value: ExclusionPreview*): Self = StObject.set(x, "exclusionPreviews", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

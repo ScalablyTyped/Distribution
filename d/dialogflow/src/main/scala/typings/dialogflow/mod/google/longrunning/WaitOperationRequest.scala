@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new WaitOperationRequest.
   * @param [properties] Properties to set
   */
-class WaitOperationRequest ()
+open class WaitOperationRequest ()
   extends StObject
      with IWaitOperationRequest {
   def this(properties: IWaitOperationRequest) = this()
@@ -29,7 +28,7 @@ class WaitOperationRequest ()
     * Converts this WaitOperationRequest to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 object WaitOperationRequest {
   
@@ -46,6 +45,8 @@ object WaitOperationRequest {
   inline def create(): WaitOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[WaitOperationRequest]
   inline def create(properties: IWaitOperationRequest): WaitOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[WaitOperationRequest]
   
+  inline def decode(reader: js.typedarray.Uint8Array): WaitOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[WaitOperationRequest]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): WaitOperationRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[WaitOperationRequest]
   /**
     * Decodes a WaitOperationRequest message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -57,9 +58,8 @@ object WaitOperationRequest {
   /* static member */
   inline def decode(reader: Reader): WaitOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[WaitOperationRequest]
   inline def decode(reader: Reader, length: Double): WaitOperationRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[WaitOperationRequest]
-  inline def decode(reader: Uint8Array): WaitOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[WaitOperationRequest]
-  inline def decode(reader: Uint8Array, length: Double): WaitOperationRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[WaitOperationRequest]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): WaitOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[WaitOperationRequest]
   /**
     * Decodes a WaitOperationRequest message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -69,7 +69,6 @@ object WaitOperationRequest {
     */
   /* static member */
   inline def decodeDelimited(reader: Reader): WaitOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[WaitOperationRequest]
-  inline def decodeDelimited(reader: Uint8Array): WaitOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[WaitOperationRequest]
   
   /**
     * Encodes the specified WaitOperationRequest message. Does not implicitly {@link google.longrunning.WaitOperationRequest.verify|verify} messages.
@@ -97,7 +96,7 @@ object WaitOperationRequest {
     * @returns WaitOperationRequest
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[js.Any]): WaitOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[WaitOperationRequest]
+  inline def fromObject(`object`: StringDictionary[Any]): WaitOperationRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[WaitOperationRequest]
   
   /**
     * Creates a plain object from a WaitOperationRequest message. Also converts values to other types if specified.
@@ -106,8 +105,8 @@ object WaitOperationRequest {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: WaitOperationRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: WaitOperationRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: WaitOperationRequest): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: WaitOperationRequest, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a WaitOperationRequest message.
@@ -115,5 +114,5 @@ object WaitOperationRequest {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

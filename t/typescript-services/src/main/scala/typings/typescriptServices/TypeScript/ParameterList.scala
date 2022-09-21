@@ -15,10 +15,10 @@ trait ParameterList
 object ParameterList {
   
   inline def apply(
-    _astID: js.Any,
+    _astID: Any,
     _end: Double,
-    _postComments: js.Any,
-    _preComments: js.Any,
+    _postComments: Any,
+    _preComments: Any,
     _start: Double,
     _trailingTriviaWidth: Double,
     end: () => Double,
@@ -46,7 +46,7 @@ object ParameterList {
     
     inline def setOpenParenTrailingComments(value: js.Array[Comment]): Self = StObject.set(x, "openParenTrailingComments", value.asInstanceOf[js.Any])
     
-    inline def setOpenParenTrailingCommentsVarargs(value: Comment*): Self = StObject.set(x, "openParenTrailingComments", js.Array(value :_*))
+    inline def setOpenParenTrailingCommentsVarargs(value: Comment*): Self = StObject.set(x, "openParenTrailingComments", js.Array(value*))
     
     inline def setParameters(value: ISeparatedSyntaxList2): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
   }

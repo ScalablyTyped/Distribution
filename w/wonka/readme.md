@@ -1,24 +1,24 @@
 
 # Scala.js typings for wonka
 
-Typings are for version 3.2.2
+Typings are for version 6.1.0
 
 ## Library description:
-A fast push & pull stream library for Reason/OCaml, Flow, and TypeScript
+A tiny but capable push & pull stream library for TypeScript and Flow
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | wonka |
-| Keywords           | wonka, reason, bucklescript, callbag, callback, observable, iterable, stream |
-| # releases         | 53 |
-| # dependents       | 25 |
-| # downloads        | 6168858 |
-| # stars            | 0 |
+| Keywords           | wonka, typescript, events, callbag, callback, observable, iterable, stream |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 1486633.0 |
+| # stars            | 562.0 |
 
 ## Links
-- [Homepage](https://wonka.kitten.sh/)
-- [Bugs](https://github.com/kitten/wonka/issues)
-- [Repository](https://github.com/kitten/wonka)
+- [Homepage](https://github.com/0no-co/wonka#readme)
+- [Bugs](https://github.com/0no-co/wonka/issues)
+- [Repository](https://github.com/0no-co/wonka)
 - [Npm](https://www.npmjs.com/package/wonka)
     
 

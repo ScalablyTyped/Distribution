@@ -28,7 +28,7 @@ object TableConditionalEntry {
     getOperator: () => ConditionOperator,
     getSourcePosition: () => CellAddress,
     getStyleName: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setFormula1: String => Unit,
     setFormula2: String => Unit,

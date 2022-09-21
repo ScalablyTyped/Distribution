@@ -1,7 +1,7 @@
 
 # Scala.js typings for webpack
 
-Typings are for version 4.44.2
+Typings are for version 5.74.0
 
 ## Library description:
 Packs CommonJs/AMD modules for the browser. Allows to split your codebase into multiple bundles, which can be loaded on demand. Support loaders to preprocess files, i.e. json, jsx, es7, css, less, ... and your custom stuff.
@@ -10,10 +10,10 @@ Packs CommonJs/AMD modules for the browser. Allows to split your codebase into m
 | ------------------ | :-------------: |
 | Full name          | webpack |
 | Keywords           | - |
-| # releases         | 128 |
-| # dependents       | 16602 |
-| # downloads        | 528110645 |
-| # stars            | 551 |
+| # releases         | 155 |
+| # dependents       | 0.0 |
+| # downloads        | 9.569827333333333E7 |
+| # stars            | 61448.0 |
 
 ## Links
 - [Homepage](https://github.com/webpack/webpack)

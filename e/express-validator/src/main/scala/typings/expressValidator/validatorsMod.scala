@@ -2,6 +2,7 @@ package typings.expressValidator
 
 import typings.expressValidator.anon.CheckFalsy
 import typings.expressValidator.anon.Max
+import typings.expressValidator.anon.Strict
 import typings.expressValidator.baseMod.CustomValidator
 import typings.expressValidator.baseMod.DynamicMessageCreator
 import typings.expressValidator.optionsMod.AlphaLocale
@@ -9,9 +10,13 @@ import typings.expressValidator.optionsMod.AlphanumericLocale
 import typings.expressValidator.optionsMod.ContainsOptions
 import typings.expressValidator.optionsMod.HashAlgorithm
 import typings.expressValidator.optionsMod.IPVersion
-import typings.expressValidator.optionsMod.IdentityCard
+import typings.expressValidator.optionsMod.IdentityCardLocale
+import typings.expressValidator.optionsMod.IsAlphaOptions
+import typings.expressValidator.optionsMod.IsAlphanumericOptions
 import typings.expressValidator.optionsMod.IsBase64Options
+import typings.expressValidator.optionsMod.IsBooleanOptions
 import typings.expressValidator.optionsMod.IsCurrencyOptions
+import typings.expressValidator.optionsMod.IsDateOptions
 import typings.expressValidator.optionsMod.IsDecimalOptions
 import typings.expressValidator.optionsMod.IsEmailOptions
 import typings.expressValidator.optionsMod.IsEmptyOptions
@@ -23,9 +28,11 @@ import typings.expressValidator.optionsMod.IsISSNOptions
 import typings.expressValidator.optionsMod.IsIntOptions
 import typings.expressValidator.optionsMod.IsJSONOptions
 import typings.expressValidator.optionsMod.IsLatLongOptions
+import typings.expressValidator.optionsMod.IsLicensePlateLocale
 import typings.expressValidator.optionsMod.IsMACAddressOptions
 import typings.expressValidator.optionsMod.IsMobilePhoneOptions
 import typings.expressValidator.optionsMod.IsNumericOptions
+import typings.expressValidator.optionsMod.IsStrongPasswordOptions
 import typings.expressValidator.optionsMod.IsURLOptions
 import typings.expressValidator.optionsMod.MinMaxExtendedOptions
 import typings.expressValidator.optionsMod.MinMaxOptions
@@ -34,7 +41,7 @@ import typings.expressValidator.optionsMod.PassportCountryCode
 import typings.expressValidator.optionsMod.PostalCodeLocale
 import typings.expressValidator.optionsMod.TaxIDLocale
 import typings.expressValidator.optionsMod.UUIDVersion
-import typings.std.RegExp
+import typings.expressValidator.optionsMod.VATCountryCode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,8 +51,8 @@ object validatorsMod {
   @js.native
   trait Validators[Return] extends StObject {
     
-    def contains(elem: js.Any): Return = js.native
-    def contains(elem: js.Any, options: ContainsOptions): Return = js.native
+    def contains(elem: Any): Return = js.native
+    def contains(elem: Any, options: ContainsOptions): Return = js.native
     
     def custom(validator: CustomValidator): Return = js.native
     
@@ -58,10 +65,14 @@ object validatorsMod {
     def isAfter(date: String): Return = js.native
     
     def isAlpha(): Return = js.native
+    def isAlpha(locale: Unit, options: IsAlphaOptions): Return = js.native
     def isAlpha(locale: AlphaLocale): Return = js.native
+    def isAlpha(locale: AlphaLocale, options: IsAlphaOptions): Return = js.native
     
     def isAlphanumeric(): Return = js.native
+    def isAlphanumeric(locale: Unit, options: IsAlphanumericOptions): Return = js.native
     def isAlphanumeric(locale: AlphanumericLocale): Return = js.native
+    def isAlphanumeric(locale: AlphanumericLocale, options: IsAlphanumericOptions): Return = js.native
     
     def isArray(): Return = js.native
     def isArray(options: Max): Return = js.native
@@ -72,6 +83,8 @@ object validatorsMod {
     
     def isBase32(): Return = js.native
     
+    def isBase58(): Return = js.native
+    
     def isBase64(): Return = js.native
     def isBase64(options: IsBase64Options): Return = js.native
     
@@ -79,6 +92,7 @@ object validatorsMod {
     def isBefore(date: String): Return = js.native
     
     def isBoolean(): Return = js.native
+    def isBoolean(options: IsBooleanOptions): Return = js.native
     
     def isBtcAddress(): Return = js.native
     
@@ -92,6 +106,7 @@ object validatorsMod {
     def isDataURI(): Return = js.native
     
     def isDate(): Return = js.native
+    def isDate(options: IsDateOptions): Return = js.native
     
     def isDecimal(): Return = js.native
     def isDecimal(options: IsDecimalOptions): Return = js.native
@@ -135,6 +150,7 @@ object validatorsMod {
     def isIP(version: IPVersion): Return = js.native
     
     def isIPRange(): Return = js.native
+    def isIPRange(version: IPVersion): Return = js.native
     
     def isISBN(): Return = js.native
     def isISBN(version: Double): Return = js.native
@@ -145,6 +161,8 @@ object validatorsMod {
     
     def isISO31661Alpha3(): Return = js.native
     
+    def isISO4217(): Return = js.native
+    
     def isISO8601(): Return = js.native
     def isISO8601(options: IsISO8601Options): Return = js.native
     
@@ -154,9 +172,9 @@ object validatorsMod {
     def isISSN(options: IsISSNOptions): Return = js.native
     
     def isIdentityCard(): Return = js.native
-    def isIdentityCard(locale: IdentityCard): Return = js.native
+    def isIdentityCard(locale: IdentityCardLocale): Return = js.native
     
-    def isIn(values: js.Array[js.Any]): Return = js.native
+    def isIn(values: js.Array[Any]): Return = js.native
     
     def isInt(): Return = js.native
     def isInt(options: IsIntOptions): Return = js.native
@@ -170,6 +188,8 @@ object validatorsMod {
     def isLatLong(options: IsLatLongOptions): Return = js.native
     
     def isLength(options: MinMaxOptions): Return = js.native
+    
+    def isLicensePlate(locale: IsLicensePlateLocale): Return = js.native
     
     def isLocale(): Return = js.native
     
@@ -196,6 +216,9 @@ object validatorsMod {
     def isNumeric(): Return = js.native
     def isNumeric(options: IsNumericOptions): Return = js.native
     
+    def isObject(): Return = js.native
+    def isObject(options: Strict): Return = js.native
+    
     def isOctal(): Return = js.native
     
     def isPassportNumber(): Return = js.native
@@ -216,6 +239,9 @@ object validatorsMod {
     
     def isString(): Return = js.native
     
+    def isStrongPassword(): Return = js.native
+    def isStrongPassword(options: IsStrongPasswordOptions): Return = js.native
+    
     def isSurrogatePair(): Return = js.native
     
     def isTaxID(locale: TaxIDLocale): Return = js.native
@@ -228,6 +254,8 @@ object validatorsMod {
     
     def isUppercase(): Return = js.native
     
+    def isVAT(countryCode: VATCountryCode): Return = js.native
+    
     def isVariableWidth(): Return = js.native
     
     def isWhitelisted(chars: String): Return = js.native
@@ -235,15 +263,15 @@ object validatorsMod {
     
     def matches(pattern: String): Return = js.native
     def matches(pattern: String, modifiers: String): Return = js.native
-    def matches(pattern: RegExp): Return = js.native
-    def matches(pattern: RegExp, modifiers: String): Return = js.native
+    def matches(pattern: js.RegExp): Return = js.native
+    def matches(pattern: js.RegExp, modifiers: String): Return = js.native
     
     def not(): Return = js.native
     
     def notEmpty(): Return = js.native
     def notEmpty(options: IsEmptyOptions): Return = js.native
     
-    def withMessage(message: js.Any): Return = js.native
+    def withMessage(message: Any): Return = js.native
     def withMessage(message: DynamicMessageCreator): Return = js.native
   }
 }

@@ -10,6 +10,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object joiStrings {
   
   @js.native
+  sealed trait `-_` extends StObject
+  inline def `-_`: `-_` = "-".asInstanceOf[`-_`]
+  
+  @js.native
+  sealed trait Colon extends StObject
+  inline def Colon: Colon = ":".asInstanceOf[Colon]
+  
+  @js.native
   sealed trait NFC extends StObject
   inline def NFC: NFC = "NFC".asInstanceOf[NFC]
   
@@ -26,8 +34,12 @@ object joiStrings {
   inline def NFKD: NFKD = "NFKD".asInstanceOf[NFKD]
   
   @js.native
-  sealed trait SchemaMap extends StObject
-  inline def SchemaMap: SchemaMap = "SchemaMap".asInstanceOf[SchemaMap]
+  sealed trait PartialSchemaMap extends StObject
+  inline def PartialSchemaMap: PartialSchemaMap = "PartialSchemaMap".asInstanceOf[PartialSchemaMap]
+  
+  @js.native
+  sealed trait StrictSchemaMap extends StObject
+  inline def StrictSchemaMap: StrictSchemaMap = "StrictSchemaMap".asInstanceOf[StrictSchemaMap]
   
   @js.native
   sealed trait ValidationError extends StObject

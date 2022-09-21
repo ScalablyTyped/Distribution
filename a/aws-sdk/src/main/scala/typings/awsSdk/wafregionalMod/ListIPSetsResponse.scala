@@ -29,7 +29,7 @@ object ListIPSetsResponse {
     
     inline def setIPSetsUndefined: Self = StObject.set(x, "IPSets", js.undefined)
     
-    inline def setIPSetsVarargs(value: IPSetSummary*): Self = StObject.set(x, "IPSets", js.Array(value :_*))
+    inline def setIPSetsVarargs(value: IPSetSummary*): Self = StObject.set(x, "IPSets", js.Array(value*))
     
     inline def setNextMarker(value: NextMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     

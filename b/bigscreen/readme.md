@@ -10,10 +10,10 @@ A simple library for using the JavaScript Fullscreen API.
 | ------------------ | :-------------: |
 | Full name          | bigscreen |
 | Keywords           | fullscreen, video |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 126416 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6312.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/bdougherty/BigScreen)

@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait VBProjects extends StObject {
   
-  def apply(index: js.Any): VBProject = js.native
+  def apply(index: Any): VBProject = js.native
   
   def Add(Type: vbextProjectType): VBProject = js.native
   
   val Count: Double = js.native
   
-  def Item(index: js.Any): VBProject = js.native
+  def Item(index: Any): VBProject = js.native
   
   def Open(bstrPath: String): VBProject = js.native
   

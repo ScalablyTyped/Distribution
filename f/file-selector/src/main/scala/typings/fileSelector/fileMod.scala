@@ -1,6 +1,6 @@
 package typings.fileSelector
 
-import typings.std.Blob
+import typings.std.File
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,19 +20,9 @@ object fileMod {
   inline def toFileWithPath(file: FileWithPath, path: String): FileWithPath = (^.asInstanceOf[js.Dynamic].applyDynamic("toFileWithPath")(file.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[FileWithPath]
   
   @js.native
-  trait DOMFile
-    extends StObject
-       with Blob {
-    
-    val lastModified: Double = js.native
-    
-    val name: String = js.native
-  }
-  
-  @js.native
   trait FileWithPath
     extends StObject
-       with DOMFile {
+       with File {
     
     val path: js.UndefOr[String] = js.native
   }

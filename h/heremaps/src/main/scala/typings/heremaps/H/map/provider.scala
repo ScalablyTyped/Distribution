@@ -8,7 +8,6 @@ import typings.heremaps.H.util.EventTarget
 import typings.heremaps.H.util.ICache
 import typings.heremaps.H.util.ICancelable
 import typings.heremaps.H.util.Job.Priority
-import typings.std.ArrayBuffer
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
@@ -156,7 +155,7 @@ object provider {
     /**
       * The invalidation mark represents a counter which is increased whenever an invalidation takes place.
       */
-    type Mark = js.Any
+    type Mark = Any
   }
   
   /**
@@ -238,6 +237,26 @@ object provider {
         inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
       }
     }
+  }
+  
+  /**
+    * A LocalObjectProvider acts as a database for map objects. It provides functionality to fetch visible objects for specific geographical bounding box and zoom levels.
+    * All objects are organized in a hierarchical group structure.
+    * An object can be added to the provider by adding it to a group within this structure.
+    * The root group of the provider can be fetched via the method H.map.provider.LocalObjectProvider#getRootGroup.
+    * A H.Map has its own LocalObjectProvider and offer a means to add and remove objects.
+    * Only in advanced use cases, is there a need to create an additional LocalObjectProvider.
+    */
+  @js.native
+  trait LocalObjectProvider
+    extends StObject
+       with ObjectProvider {
+    
+    /**
+      * This method retrieves the root group for the given provider.
+      * @returns {H.map.Group} - an object representing the root group for the given provider.
+      */
+    def getRootGroup(): Group = js.native
   }
   
   /**
@@ -539,8 +558,8 @@ object provider {
       y: Double,
       z: Double,
       onResponse: js.Function2[
-          /* object */ js.Array[Object] | HTMLImageElement | HTMLCanvasElement | ArrayBuffer, 
-          /* response */ js.Any, 
+          /* object */ js.Array[Object] | HTMLImageElement | HTMLCanvasElement | js.typedarray.ArrayBuffer, 
+          /* response */ Any, 
           Unit
         ]
     ): ICancelable = js.native
@@ -549,8 +568,8 @@ object provider {
       y: Double,
       z: Double,
       onResponse: js.Function2[
-          /* object */ js.Array[Object] | HTMLImageElement | HTMLCanvasElement | ArrayBuffer, 
-          /* response */ js.Any, 
+          /* object */ js.Array[Object] | HTMLImageElement | HTMLCanvasElement | js.typedarray.ArrayBuffer, 
+          /* response */ Any, 
           Unit
         ],
       onError: js.Function1[/* s */ String, Unit]
@@ -560,8 +579,8 @@ object provider {
       y: Double,
       z: Double,
       onResponse: js.Function2[
-          /* object */ js.Array[Object] | HTMLImageElement | HTMLCanvasElement | ArrayBuffer, 
-          /* response */ js.Any, 
+          /* object */ js.Array[Object] | HTMLImageElement | HTMLCanvasElement | js.typedarray.ArrayBuffer, 
+          /* response */ Any, 
           Unit
         ],
       onError: js.Function1[/* s */ String, Unit],
@@ -572,8 +591,8 @@ object provider {
       y: Double,
       z: Double,
       onResponse: js.Function2[
-          /* object */ js.Array[Object] | HTMLImageElement | HTMLCanvasElement | ArrayBuffer, 
-          /* response */ js.Any, 
+          /* object */ js.Array[Object] | HTMLImageElement | HTMLCanvasElement | js.typedarray.ArrayBuffer, 
+          /* response */ Any, 
           Unit
         ],
       onError: Unit,
@@ -603,7 +622,7 @@ object provider {
     */
   trait Tile extends StObject {
     
-    var data: js.Any
+    var data: Any
     
     var key: String
     
@@ -617,14 +636,14 @@ object provider {
   }
   object Tile {
     
-    inline def apply(data: js.Any, key: String, valid: Boolean, x: Double, y: Double, z: Double): Tile = {
+    inline def apply(data: Any, key: String, valid: Boolean, x: Double, y: Double, z: Double): Tile = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
       __obj.asInstanceOf[Tile]
     }
     
     extension [Self <: Tile](x: Self) {
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -653,12 +672,12 @@ object provider {
     extends StObject
        with Provider {
     
-    var cancelTile: js.Any = js.native
+    var cancelTile: Any = js.native
     
-    var cancelTileByKey: js.Any = js.native
+    var cancelTileByKey: Any = js.native
     
     def createTileInternal(x: Double, y: Double, z: Double, data: HTMLCanvasElement): Tile = js.native
-    def createTileInternal(x: Double, y: Double, z: Double, data: HTMLCanvasElement, opt_options: StringDictionary[js.Any]): Tile = js.native
+    def createTileInternal(x: Double, y: Double, z: Double, data: HTMLCanvasElement, opt_options: StringDictionary[Any]): Tile = js.native
     /**
       * This method creates a tile object with given parameters
       * @param x {number} - x tile coordinate (row)
@@ -669,7 +688,7 @@ object provider {
       * @returns {H.map.provider.Tile}
       */
     def createTileInternal(x: Double, y: Double, z: Double, data: HTMLImageElement): Tile = js.native
-    def createTileInternal(x: Double, y: Double, z: Double, data: HTMLImageElement, opt_options: StringDictionary[js.Any]): Tile = js.native
+    def createTileInternal(x: Double, y: Double, z: Double, data: HTMLImageElement, opt_options: StringDictionary[Any]): Tile = js.native
     
     /**
       * This method creates a tile key consisting of the provider&#x27;s uri, and the tile&#x27;s x, y and z coordinates, seperated by underscores e.g.: &quot;4711_7_42_23&quot;
@@ -680,7 +699,7 @@ object provider {
       */
     def getTileKey(x: Double, y: Double, z: Double): String = js.native
     
-    var requestTile: js.Any = js.native
+    var requestTile: Any = js.native
   }
   object TileProvider {
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for office-ui-fabric-react
 
-Typings are for version 7.152.1
+Typings are for version 7.197.6
 
 ## Library description:
 Reusable React components for building experiences for Microsoft 365.
@@ -10,10 +10,10 @@ Reusable React components for building experiences for Microsoft 365.
 | ------------------ | :-------------: |
 | Full name          | office-ui-fabric-react |
 | Keywords           | - |
-| # releases         | 568 |
-| # dependents       | 234 |
-| # downloads        | 6274725 |
-| # stars            | 4 |
+| # releases         | 170 |
+| # dependents       | 0.0 |
+| # downloads        | 368993.3333333333 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/microsoft/fluentui#readme)

@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * A collection of all the chart objects on a worksheet.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @JSGlobal("Excel.ChartCollection")
 @js.native
-class ChartCollection ()
+open class ChartCollection ()
   extends StObject
      with typings.officeJs.Excel.ChartCollection {
   

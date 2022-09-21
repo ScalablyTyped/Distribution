@@ -270,7 +270,7 @@ object XboxLive {
   @JSGlobal("Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement")
   @js.native
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  class XboxLiveQualityOfServiceMeasurement ()
+  open class XboxLiveQualityOfServiceMeasurement ()
     extends StObject
        with typings.winrtUwp.Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement {
     

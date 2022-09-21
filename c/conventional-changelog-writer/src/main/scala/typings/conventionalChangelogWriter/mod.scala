@@ -53,7 +53,7 @@ object mod {
       
       inline def setCommits(value: js.Array[TransformedCommit[T]]): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
       
-      inline def setCommitsVarargs(value: TransformedCommit[T]*): Self = StObject.set(x, "commits", js.Array(value :_*))
+      inline def setCommitsVarargs(value: TransformedCommit[T]*): Self = StObject.set(x, "commits", js.Array(value*))
       
       inline def setTitle(value: String | `false`): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
@@ -209,11 +209,11 @@ object mod {
         
         inline def setCommitGroups(value: js.Array[CommitGroup[T]]): Self = StObject.set(x, "commitGroups", value.asInstanceOf[js.Any])
         
-        inline def setCommitGroupsVarargs(value: CommitGroup[T]*): Self = StObject.set(x, "commitGroups", js.Array(value :_*))
+        inline def setCommitGroupsVarargs(value: CommitGroup[T]*): Self = StObject.set(x, "commitGroups", js.Array(value*))
         
         inline def setNoteGroups(value: js.Array[NoteGroup]): Self = StObject.set(x, "noteGroups", value.asInstanceOf[js.Any])
         
-        inline def setNoteGroupsVarargs(value: NoteGroup*): Self = StObject.set(x, "noteGroups", js.Array(value :_*))
+        inline def setNoteGroupsVarargs(value: NoteGroup*): Self = StObject.set(x, "noteGroups", js.Array(value*))
       }
     }
   }
@@ -236,7 +236,7 @@ object mod {
       
       inline def setCommits(value: js.Array[Note]): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
       
-      inline def setCommitsVarargs(value: Note*): Self = StObject.set(x, "commits", js.Array(value :_*))
+      inline def setCommitsVarargs(value: Note*): Self = StObject.set(x, "commits", js.Array(value*))
       
       inline def setTitle(value: String | `false`): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
@@ -281,7 +281,7 @@ object mod {
       * @default
       * function () {}
       */
-    var debug: js.UndefOr[js.Function1[/* message */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var debug: js.UndefOr[js.Function1[/* message */ js.UndefOr[Any], Unit]] = js.undefined
     
     /**
       * If `true`, the stream will flush out the last bit of commits (could be empty)
@@ -463,7 +463,7 @@ object mod {
       
       inline def setCommitGroupsSortUndefined: Self = StObject.set(x, "commitGroupsSort", js.undefined)
       
-      inline def setCommitGroupsSortVarargs(value: String*): Self = StObject.set(x, "commitGroupsSort", js.Array(value :_*))
+      inline def setCommitGroupsSortVarargs(value: String*): Self = StObject.set(x, "commitGroupsSort", js.Array(value*))
       
       inline def setCommitPartial(value: String): Self = StObject.set(x, "commitPartial", value.asInstanceOf[js.Any])
       
@@ -473,9 +473,9 @@ object mod {
       
       inline def setCommitsSortUndefined: Self = StObject.set(x, "commitsSort", js.undefined)
       
-      inline def setCommitsSortVarargs(value: String*): Self = StObject.set(x, "commitsSort", js.Array(value :_*))
+      inline def setCommitsSortVarargs(value: String*): Self = StObject.set(x, "commitsSort", js.Array(value*))
       
-      inline def setDebug(value: /* message */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+      inline def setDebug(value: /* message */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
       
       inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
@@ -521,13 +521,13 @@ object mod {
       
       inline def setNoteGroupsSortUndefined: Self = StObject.set(x, "noteGroupsSort", js.undefined)
       
-      inline def setNoteGroupsSortVarargs(value: String*): Self = StObject.set(x, "noteGroupsSort", js.Array(value :_*))
+      inline def setNoteGroupsSortVarargs(value: String*): Self = StObject.set(x, "noteGroupsSort", js.Array(value*))
       
       inline def setNotesSort(value: Sort[Note]): Self = StObject.set(x, "notesSort", value.asInstanceOf[js.Any])
       
       inline def setNotesSortUndefined: Self = StObject.set(x, "notesSort", js.undefined)
       
-      inline def setNotesSortVarargs(value: String*): Self = StObject.set(x, "notesSort", js.Array(value :_*))
+      inline def setNotesSortVarargs(value: String*): Self = StObject.set(x, "notesSort", js.Array(value*))
       
       inline def setPartials(value: Record[String, String]): Self = StObject.set(x, "partials", value.asInstanceOf[js.Any])
       

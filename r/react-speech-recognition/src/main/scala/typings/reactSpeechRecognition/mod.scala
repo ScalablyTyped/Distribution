@@ -1,7 +1,6 @@
 package typings.reactSpeechRecognition
 
-import typings.reactSpeechRecognition.anon.FinalTranscript
-import typings.std.RegExp
+import typings.reactSpeechRecognition.anon.BrowserSupportsSpeechRecognition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,14 +15,16 @@ object mod {
   @js.native
   val default: SpeechRecognition = js.native
   
-  inline def useSpeechRecognition(): FinalTranscript = ^.asInstanceOf[js.Dynamic].applyDynamic("useSpeechRecognition")().asInstanceOf[FinalTranscript]
-  inline def useSpeechRecognition(options: SpeechRecognitionOptions): FinalTranscript = ^.asInstanceOf[js.Dynamic].applyDynamic("useSpeechRecognition")(options.asInstanceOf[js.Any]).asInstanceOf[FinalTranscript]
+  inline def useSpeechRecognition(): BrowserSupportsSpeechRecognition = ^.asInstanceOf[js.Dynamic].applyDynamic("useSpeechRecognition")().asInstanceOf[BrowserSupportsSpeechRecognition]
+  inline def useSpeechRecognition(options: SpeechRecognitionOptions): BrowserSupportsSpeechRecognition = ^.asInstanceOf[js.Dynamic].applyDynamic("useSpeechRecognition")(options.asInstanceOf[js.Any]).asInstanceOf[BrowserSupportsSpeechRecognition]
   
   trait Command extends StObject {
     
-    def callback(args: js.Any*): js.Any
+    var bestMatchOnly: js.UndefOr[Boolean] = js.undefined
     
-    var command: String | RegExp
+    def callback(args: Any*): Any
+    
+    var command: String | js.Array[String] | js.RegExp
     
     var fuzzyMatchingThreshold: js.UndefOr[Double] = js.undefined
     
@@ -33,16 +34,22 @@ object mod {
   }
   object Command {
     
-    inline def apply(callback: /* repeated */ js.Any => js.Any, command: String | RegExp): Command = {
+    inline def apply(callback: /* repeated */ Any => Any, command: String | js.Array[String] | js.RegExp): Command = {
       val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), command = command.asInstanceOf[js.Any])
       __obj.asInstanceOf[Command]
     }
     
     extension [Self <: Command](x: Self) {
       
-      inline def setCallback(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+      inline def setBestMatchOnly(value: Boolean): Self = StObject.set(x, "bestMatchOnly", value.asInstanceOf[js.Any])
       
-      inline def setCommand(value: String | RegExp): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+      inline def setBestMatchOnlyUndefined: Self = StObject.set(x, "bestMatchOnly", js.undefined)
+      
+      inline def setCallback(value: /* repeated */ Any => Any): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+      
+      inline def setCommand(value: String | js.Array[String] | js.RegExp): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+      
+      inline def setCommandVarargs(value: String*): Self = StObject.set(x, "command", js.Array(value*))
       
       inline def setFuzzyMatchingThreshold(value: Double): Self = StObject.set(x, "fuzzyMatchingThreshold", value.asInstanceOf[js.Any])
       
@@ -88,6 +95,8 @@ object mod {
     
     def abortListening(): Unit = js.native
     
+    def applyPolyfill(speechRecognitionPolyfill: Any): Unit = js.native
+    
     def browserSupportsSpeechRecognition(): Boolean = js.native
     
     def getRecognition(): SpeechRecognition | Null = js.native
@@ -123,7 +132,7 @@ object mod {
       
       inline def setCommandsUndefined: Self = StObject.set(x, "commands", js.undefined)
       
-      inline def setCommandsVarargs(value: Command*): Self = StObject.set(x, "commands", js.Array(value :_*))
+      inline def setCommandsVarargs(value: Command*): Self = StObject.set(x, "commands", js.Array(value*))
       
       inline def setTranscribing(value: Boolean): Self = StObject.set(x, "transcribing", value.asInstanceOf[js.Any])
       

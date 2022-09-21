@@ -12,7 +12,7 @@ object pickerMixinMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(ComposedComponent: js.Any): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(ComposedComponent.asInstanceOf[js.Any]).asInstanceOf[Item]
+  inline def default(ComposedComponent: Any): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(ComposedComponent.asInstanceOf[js.Any]).asInstanceOf[Item]
   
   trait IItemProps extends StObject {
     
@@ -20,11 +20,11 @@ object pickerMixinMod {
     
     var className: js.UndefOr[String] = js.undefined
     
-    var value: js.Any
+    var value: Any
   }
   object IItemProps {
     
-    inline def apply(value: js.Any): IItemProps = {
+    inline def apply(value: Any): IItemProps = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[IItemProps]
     }
@@ -39,7 +39,7 @@ object pickerMixinMod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

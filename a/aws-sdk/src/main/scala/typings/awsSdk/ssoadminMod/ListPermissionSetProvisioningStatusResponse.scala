@@ -33,6 +33,6 @@ object ListPermissionSetProvisioningStatusResponse {
     
     inline def setPermissionSetsProvisioningStatusUndefined: Self = StObject.set(x, "PermissionSetsProvisioningStatus", js.undefined)
     
-    inline def setPermissionSetsProvisioningStatusVarargs(value: PermissionSetProvisioningStatusMetadata*): Self = StObject.set(x, "PermissionSetsProvisioningStatus", js.Array(value :_*))
+    inline def setPermissionSetsProvisioningStatusVarargs(value: PermissionSetProvisioningStatusMetadata*): Self = StObject.set(x, "PermissionSetsProvisioningStatus", js.Array(value*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.socks
 
+import typings.node.bufferMod.global.Buffer
 import typings.socks.constantsMod.SocksProxyType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -7,7 +8,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait Host extends StObject {
+  trait Customauthmethod extends StObject {
+    
+    var custom_auth_method: js.UndefOr[Double] = js.undefined
+    
+    var custom_auth_request_handler: js.UndefOr[js.Function0[js.Promise[Buffer]]] = js.undefined
+    
+    var custom_auth_response_handler: js.UndefOr[js.Function1[/* data */ Buffer, js.Promise[Boolean]]] = js.undefined
+    
+    var custom_auth_response_size: js.UndefOr[Double] = js.undefined
     
     var host: js.UndefOr[String] = js.undefined
     
@@ -21,15 +30,31 @@ object anon {
     
     var userId: js.UndefOr[String] = js.undefined
   }
-  object Host {
+  object Customauthmethod {
     
-    inline def apply(port: Double, `type`: SocksProxyType): Host = {
+    inline def apply(port: Double, `type`: SocksProxyType): Customauthmethod = {
       val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Host]
+      __obj.asInstanceOf[Customauthmethod]
     }
     
-    extension [Self <: Host](x: Self) {
+    extension [Self <: Customauthmethod](x: Self) {
+      
+      inline def setCustom_auth_method(value: Double): Self = StObject.set(x, "custom_auth_method", value.asInstanceOf[js.Any])
+      
+      inline def setCustom_auth_methodUndefined: Self = StObject.set(x, "custom_auth_method", js.undefined)
+      
+      inline def setCustom_auth_request_handler(value: () => js.Promise[Buffer]): Self = StObject.set(x, "custom_auth_request_handler", js.Any.fromFunction0(value))
+      
+      inline def setCustom_auth_request_handlerUndefined: Self = StObject.set(x, "custom_auth_request_handler", js.undefined)
+      
+      inline def setCustom_auth_response_handler(value: /* data */ Buffer => js.Promise[Boolean]): Self = StObject.set(x, "custom_auth_response_handler", js.Any.fromFunction1(value))
+      
+      inline def setCustom_auth_response_handlerUndefined: Self = StObject.set(x, "custom_auth_response_handler", js.undefined)
+      
+      inline def setCustom_auth_response_size(value: Double): Self = StObject.set(x, "custom_auth_response_size", value.asInstanceOf[js.Any])
+      
+      inline def setCustom_auth_response_sizeUndefined: Self = StObject.set(x, "custom_auth_response_size", js.undefined)
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       

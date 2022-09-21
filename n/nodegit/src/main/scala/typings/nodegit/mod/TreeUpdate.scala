@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "TreeUpdate")
 @js.native
-class TreeUpdate ()
+open class TreeUpdate ()
   extends typings.nodegit.treeUpdateMod.TreeUpdate

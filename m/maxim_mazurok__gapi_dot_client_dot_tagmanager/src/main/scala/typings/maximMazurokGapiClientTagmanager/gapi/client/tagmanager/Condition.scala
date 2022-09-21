@@ -30,7 +30,7 @@ object Condition {
     
     inline def setParameterUndefined: Self = StObject.set(x, "parameter", js.undefined)
     
-    inline def setParameterVarargs(value: Parameter*): Self = StObject.set(x, "parameter", js.Array(value :_*))
+    inline def setParameterVarargs(value: Parameter*): Self = StObject.set(x, "parameter", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

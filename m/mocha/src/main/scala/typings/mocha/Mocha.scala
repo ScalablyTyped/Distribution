@@ -2,6 +2,9 @@ package typings.mocha
 
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.StringDictionary
+import typings.mocha.Mocha.AsyncFunc
+import typings.mocha.Mocha.Func
+import typings.mocha.Mocha.HookFunction
 import typings.mocha.Mocha.Interface
 import typings.mocha.Mocha.MochaInstanceOptions
 import typings.mocha.Mocha.Reporter
@@ -26,6 +29,7 @@ import typings.mocha.mochaStrings.fail
 import typings.mocha.mochaStrings.failed
 import typings.mocha.mochaStrings.fast
 import typings.mocha.mochaStrings.hook
+import typings.mocha.mochaStrings.idle
 import typings.mocha.mochaStrings.medium
 import typings.mocha.mochaStrings.pass
 import typings.mocha.mochaStrings.passed
@@ -34,15 +38,14 @@ import typings.mocha.mochaStrings.ready
 import typings.mocha.mochaStrings.require
 import typings.mocha.mochaStrings.retry
 import typings.mocha.mochaStrings.run
+import typings.mocha.mochaStrings.running
 import typings.mocha.mochaStrings.slow
 import typings.mocha.mochaStrings.start
+import typings.mocha.mochaStrings.stopped
 import typings.mocha.mochaStrings.suite
 import typings.mocha.mochaStrings.test
 import typings.mocha.mochaStrings.waiting
-import typings.std.Date
-import typings.std.Error
 import typings.std.HTMLLIElement
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,11 +53,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Mocha extends StObject {
   
-  /* private */ var _growl: js.Any = js.native
+  /* private */ var _growl: Any = js.native
   
-  /* private */ var _reporter: js.Any = js.native
+  /* private */ var _reporter: Any = js.native
   
-  /* private */ var _ui: js.Any = js.native
+  /* private */ var _ui: Any = js.native
   
   /**
     * Add test `file`.
@@ -93,6 +96,16 @@ trait Mocha extends StObject {
   def checkLeaks(): this.type = js.native
   
   /**
+    * Enables or disables whether or not to dispose after each test run.
+    * Disable this to ensure you can run the test suite multiple times.
+    * If disabled, be sure to dispose mocha when you're done to prevent memory leaks.
+    *
+    * @see https://mochajs.org/api/mocha#cleanReferencesAfterRun
+    */
+  def cleanReferencesAfterRun(): this.type = js.native
+  def cleanReferencesAfterRun(clean: Boolean): this.type = js.native
+  
+  /**
     * Delay root suite execution.
     *
     * @see https://mochajs.org/api/mocha#delay
@@ -106,6 +119,28 @@ trait Mocha extends StObject {
     * @see https://mochajs.org/api/mocha#dispose
     */
   def dispose(): Unit = js.native
+  
+  /**
+    * Whether to activate dry-run mode.
+    *
+    * @param dryRun Whether to activate dry-run mode. Defaults to `true`.
+    */
+  def dryRun(): this.type = js.native
+  def dryRun(dryRun: Boolean): this.type = js.native
+  
+  /**
+    * Toggle execution of any global setup fixture(s)
+    *
+    * @see https://mochajs.org/api/mocha#enableGlobalSetup
+    */
+  def enableGlobalSetup(enabled: Boolean): this.type = js.native
+  
+  /**
+    * Toggle execution of any global teardown fixture(s)
+    *
+    * @see https://mochajs.org/api/mocha#enableGlobalTeardown
+    */
+  def enableGlobalTeardown(enabled: Boolean): this.type = js.native
   
   /**
     * Escape string and add it to grep as a RegExp.
@@ -138,6 +173,104 @@ trait Mocha extends StObject {
   def fullTrace(): this.type = js.native
   
   /**
+    * [bdd, qunit, tdd] Describe a "hook" to execute the given callback `fn`. The name of the
+    * function is used as the name of the hook.
+    *
+    * - _Only available when invoked via the mocha CLI._
+    */
+  /**
+    * Configures one or more global setup fixtures.
+    * If given no parameters, unsets any previously-set fixtures.
+    *
+    * @see https://mochajs.org/api/mocha#globalSetup
+    */
+  def globalSetup(fn: AsyncFunc): Unit = js.native
+  /**
+    * [bdd, qunit, tdd] Describe a "hook" to execute the given callback `fn`. The name of the
+    * function is used as the name of the hook.
+    *
+    * - _Only available when invoked via the mocha CLI._
+    */
+  /**
+    * Configures one or more global setup fixtures.
+    * If given no parameters, unsets any previously-set fixtures.
+    *
+    * @see https://mochajs.org/api/mocha#globalSetup
+    */
+  def globalSetup(fn: Func): Unit = js.native
+  /**
+    * [bdd, qunit, tdd] Describe a "hook" to execute the given `title` and callback `fn`.
+    *
+    * - _Only available when invoked via the mocha CLI._
+    */
+  /**
+    * Configures one or more global setup fixtures.
+    * If given no parameters, unsets any previously-set fixtures.
+    *
+    * @see https://mochajs.org/api/mocha#globalSetup
+    */
+  def globalSetup(name: String): Unit = js.native
+  def globalSetup(name: String, fn: AsyncFunc): Unit = js.native
+  def globalSetup(name: String, fn: Func): Unit = js.native
+  /**
+    * Configures one or more global setup fixtures.
+    * If given no parameters, unsets any previously-set fixtures.
+    *
+    * @see https://mochajs.org/api/mocha#globalSetup
+    */
+  @JSName("globalSetup")
+  var globalSetup_Original: HookFunction = js.native
+  
+  /**
+    * [bdd, qunit, tdd] Describe a "hook" to execute the given callback `fn`. The name of the
+    * function is used as the name of the hook.
+    *
+    * - _Only available when invoked via the mocha CLI._
+    */
+  /**
+    * Configures one or more global teardown fixtures.
+    * If given no parameters, unsets any previously-set fixtures.
+    *
+    * @see https://mochajs.org/api/mocha#globalTeardown
+    */
+  def globalTeardown(fn: AsyncFunc): Unit = js.native
+  /**
+    * [bdd, qunit, tdd] Describe a "hook" to execute the given callback `fn`. The name of the
+    * function is used as the name of the hook.
+    *
+    * - _Only available when invoked via the mocha CLI._
+    */
+  /**
+    * Configures one or more global teardown fixtures.
+    * If given no parameters, unsets any previously-set fixtures.
+    *
+    * @see https://mochajs.org/api/mocha#globalTeardown
+    */
+  def globalTeardown(fn: Func): Unit = js.native
+  /**
+    * [bdd, qunit, tdd] Describe a "hook" to execute the given `title` and callback `fn`.
+    *
+    * - _Only available when invoked via the mocha CLI._
+    */
+  /**
+    * Configures one or more global teardown fixtures.
+    * If given no parameters, unsets any previously-set fixtures.
+    *
+    * @see https://mochajs.org/api/mocha#globalTeardown
+    */
+  def globalTeardown(name: String): Unit = js.native
+  def globalTeardown(name: String, fn: AsyncFunc): Unit = js.native
+  def globalTeardown(name: String, fn: Func): Unit = js.native
+  /**
+    * Configures one or more global teardown fixtures.
+    * If given no parameters, unsets any previously-set fixtures.
+    *
+    * @see https://mochajs.org/api/mocha#globalTeardown
+    */
+  @JSName("globalTeardown")
+  var globalTeardown_Original: HookFunction = js.native
+  
+  /**
     * Ignore `globals` array or string.
     *
     * @see https://mochajs.org/api/mocha#globals
@@ -151,7 +284,7 @@ trait Mocha extends StObject {
     * @see https://mochajs.org/api/mocha#grep
     */
   def grep(re: String): this.type = js.native
-  def grep(re: RegExp): this.type = js.native
+  def grep(re: js.RegExp): this.type = js.native
   
   /**
     * Enable growl support.
@@ -159,6 +292,20 @@ trait Mocha extends StObject {
     * @see https://mochajs.org/api/mocha#growl
     */
   def growl(): this.type = js.native
+  
+  /**
+    * Returns `true` if one or more global setup fixtures have been supplied
+    *
+    * @see https://mochajs.org/api/mocha#hasGlobalSetupFixtures
+    */
+  def hasGlobalSetupFixtures(): Boolean = js.native
+  
+  /**
+    * Returns `true` if one or more global teardown fixtures have been supplied
+    *
+    * @see https://mochajs.org/api/mocha#hasGlobalTeardownFixtures
+    */
+  def hasGlobalTeardownFixtures(): Boolean = js.native
   
   /**
     * Invert `.grep()` matches.
@@ -210,8 +357,8 @@ trait Mocha extends StObject {
     */
   def reporter(): this.type = js.native
   def reporter(reporter: String): this.type = js.native
-  def reporter(reporter: String, reporterOptions: js.Any): this.type = js.native
-  def reporter(reporter: Unit, reporterOptions: js.Any): this.type = js.native
+  def reporter(reporter: String, reporterOptions: Any): this.type = js.native
+  def reporter(reporter: Unit, reporterOptions: Any): this.type = js.native
   /**
     * Set reporter to one of the built-in reporters.
     *
@@ -219,8 +366,8 @@ trait Mocha extends StObject {
     */
   def reporter(reporter: Reporter): this.type = js.native
   def reporter(reporter: ReporterConstructor): this.type = js.native
-  def reporter(reporter: ReporterConstructor, reporterOptions: js.Any): this.type = js.native
-  def reporter(reporter: Reporter, reporterOptions: js.Any): this.type = js.native
+  def reporter(reporter: ReporterConstructor, reporterOptions: Any): this.type = js.native
+  def reporter(reporter: Reporter, reporterOptions: Any): this.type = js.native
   
   /**
     * Set the number of times to retry failed tests.
@@ -299,7 +446,7 @@ object Mocha {
   /**
     * Async callback function used for tests and hooks.
     */
-  type AsyncFunc = js.ThisFunction0[/* this */ Context, js.Thenable[js.Any]]
+  type AsyncFunc = js.ThisFunction0[/* this */ Context, js.Thenable[Any]]
   
   // #endregion Runnable untyped events
   /**
@@ -310,9 +457,9 @@ object Mocha {
   @js.native
   trait Context
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
-    /* private */ var _runnable: js.Any = js.native
+    /* private */ var _runnable: Any = js.native
     
     var currentTest: js.UndefOr[Test] = js.native
     
@@ -362,7 +509,7 @@ object Mocha {
     def timeout(ms: Double): this.type = js.native
   }
   
-  type Done = js.Function1[/* err */ js.UndefOr[js.Any], Unit]
+  type Done = js.Function1[/* err */ js.UndefOr[Any], Unit]
   
   @js.native
   trait ExclusiveSuiteFunction extends StObject {
@@ -429,7 +576,7 @@ object Mocha {
     extends StObject
        with Runnable {
     
-    /* private */ var _error: js.Any = js.native
+    /* private */ var _error: Any = js.native
     
     // added by Runner
     /**
@@ -437,13 +584,13 @@ object Mocha {
       *
       * @see https://mochajs.org/api/Hook.html#error
       */
-    def error(): js.Any = js.native
+    def error(): Any = js.native
     /**
       * Set the test `err`.
       *
       * @see https://mochajs.org/api/Hook.html#error
       */
-    def error(err: js.Any): Unit = js.native
+    def error(err: Any): Unit = js.native
     
     var originalTitle: js.UndefOr[String] = js.native
     
@@ -1371,7 +1518,7 @@ object Mocha {
       
       inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value*))
     }
   }
   
@@ -1380,75 +1527,91 @@ object Mocha {
     */
   trait MochaOptions extends StObject {
     
+    /** Propagate uncaught errors? */
     var allowUncaught: js.UndefOr[Boolean] = js.undefined
     
+    /** Force `done` callback or promise? */
     var asyncOnly: js.UndefOr[Boolean] = js.undefined
     
     /** bail on the first test failure. */
     var bail: js.UndefOr[Boolean] = js.undefined
     
-    /** check for global variable leaks. */
+    /** Check for global variable leaks? */
     var checkLeaks: js.UndefOr[Boolean] = js.undefined
     
     /** Color TTY output from reporter */
     var color: js.UndefOr[Boolean] = js.undefined
     
+    /** Delay root suite execution? */
     var delay: js.UndefOr[Boolean] = js.undefined
     
+    /** Show diff on failure? */
+    var diff: js.UndefOr[Boolean] = js.undefined
+    
+    /** Report tests without running them? */
+    var dryRun: js.UndefOr[Boolean] = js.undefined
+    
+    /** Test filter given string. */
+    var fgrep: js.UndefOr[String] = js.undefined
+    
+    /** Tests marked `only` fail the suite? */
     var forbidOnly: js.UndefOr[Boolean] = js.undefined
     
+    /** Pending tests fail the suite? */
     var forbidPending: js.UndefOr[Boolean] = js.undefined
     
-    /** display the full stack trace on failure. */
-    var fullStackTrace: js.UndefOr[Boolean] = js.undefined
-    
+    /** Full stacktrace upon failure? */
     var fullTrace: js.UndefOr[Boolean] = js.undefined
     
-    /** Array of accepted globals. */
+    /** Variables expected in global scope. */
     var globals: js.UndefOr[js.Array[String]] = js.undefined
     
-    /** string or regexp to filter tests with. */
-    var grep: js.UndefOr[String | RegExp] = js.undefined
+    /** Test filter given regular expression. */
+    var grep: js.UndefOr[String | js.RegExp] = js.undefined
     
-    /** Enable growl support. */
+    /** Enable desktop notifications? */
     var growl: js.UndefOr[Boolean] = js.undefined
     
-    /** Do not show diffs at all. */
-    var hideDiff: js.UndefOr[Boolean] = js.undefined
-    
-    /** Use inline diffs rather than +/-. */
+    /** Display inline diffs? */
     var inlineDiffs: js.UndefOr[Boolean] = js.undefined
     
-    /** Max number of worker processes for parallel runs */
+    /** Invert test filter matches? */
+    var invert: js.UndefOr[Boolean] = js.undefined
+    
+    /** Should be `true` if `Mocha` process is running in a worker process. */
+    var isWorker: js.UndefOr[Boolean] = js.undefined
+    
+    /** Max number of worker processes for parallel runs. */
     var jobs: js.UndefOr[Double] = js.undefined
     
+    /** Disable syntax highlighting? */
     var noHighlighting: js.UndefOr[Boolean] = js.undefined
     
-    /** Run job in parallel */
+    /** Run jobs in parallel */
     var parallel: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * Reporter constructor, built-in reporter name, or reporter module path. Defaults to
-      * `"spec"`.
-      */
+    /** Reporter name or constructor. */
     var reporter: js.UndefOr[String | ReporterConstructor] = js.undefined
     
-    /** Options to pass to the reporter. */
-    var reporterOptions: js.UndefOr[js.Any] = js.undefined
+    /** Reporter settings object. */
+    var reporterOptions: js.UndefOr[Any] = js.undefined
     
-    /** number of times to retry failed tests. */
+    /** Pathname of `rootHooks` plugin for parallel runs. */
+    var require: js.UndefOr[js.Array[String]] = js.undefined
+    
+    /** Number of times to retry failed tests. */
     var retries: js.UndefOr[Double] = js.undefined
     
-    /** Assigns hooks to the root suite */
+    /** Hooks to bootstrap the root suite with. */
     var rootHooks: js.UndefOr[RootHookObject] = js.undefined
     
-    /** milliseconds to wait before considering a test slow. */
+    /** Slow threshold value. */
     var slow: js.UndefOr[Double] = js.undefined
     
-    /** timeout in milliseconds or time string like '1s'. */
+    /** Timeout threshold value. */
     var timeout: js.UndefOr[Double | String] = js.undefined
     
-    /** Test interfaces ("bdd", "tdd", "exports", etc.). */
+    /** Interface name. */
     var ui: js.UndefOr[Interface] = js.undefined
   }
   object MochaOptions {
@@ -1484,6 +1647,18 @@ object Mocha {
       
       inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
+      inline def setDiff(value: Boolean): Self = StObject.set(x, "diff", value.asInstanceOf[js.Any])
+      
+      inline def setDiffUndefined: Self = StObject.set(x, "diff", js.undefined)
+      
+      inline def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
+      
+      inline def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
+      
+      inline def setFgrep(value: String): Self = StObject.set(x, "fgrep", value.asInstanceOf[js.Any])
+      
+      inline def setFgrepUndefined: Self = StObject.set(x, "fgrep", js.undefined)
+      
       inline def setForbidOnly(value: Boolean): Self = StObject.set(x, "forbidOnly", value.asInstanceOf[js.Any])
       
       inline def setForbidOnlyUndefined: Self = StObject.set(x, "forbidOnly", js.undefined)
@@ -1491,10 +1666,6 @@ object Mocha {
       inline def setForbidPending(value: Boolean): Self = StObject.set(x, "forbidPending", value.asInstanceOf[js.Any])
       
       inline def setForbidPendingUndefined: Self = StObject.set(x, "forbidPending", js.undefined)
-      
-      inline def setFullStackTrace(value: Boolean): Self = StObject.set(x, "fullStackTrace", value.asInstanceOf[js.Any])
-      
-      inline def setFullStackTraceUndefined: Self = StObject.set(x, "fullStackTrace", js.undefined)
       
       inline def setFullTrace(value: Boolean): Self = StObject.set(x, "fullTrace", value.asInstanceOf[js.Any])
       
@@ -1504,9 +1675,9 @@ object Mocha {
       
       inline def setGlobalsUndefined: Self = StObject.set(x, "globals", js.undefined)
       
-      inline def setGlobalsVarargs(value: String*): Self = StObject.set(x, "globals", js.Array(value :_*))
+      inline def setGlobalsVarargs(value: String*): Self = StObject.set(x, "globals", js.Array(value*))
       
-      inline def setGrep(value: String | RegExp): Self = StObject.set(x, "grep", value.asInstanceOf[js.Any])
+      inline def setGrep(value: String | js.RegExp): Self = StObject.set(x, "grep", value.asInstanceOf[js.Any])
       
       inline def setGrepUndefined: Self = StObject.set(x, "grep", js.undefined)
       
@@ -1514,13 +1685,17 @@ object Mocha {
       
       inline def setGrowlUndefined: Self = StObject.set(x, "growl", js.undefined)
       
-      inline def setHideDiff(value: Boolean): Self = StObject.set(x, "hideDiff", value.asInstanceOf[js.Any])
-      
-      inline def setHideDiffUndefined: Self = StObject.set(x, "hideDiff", js.undefined)
-      
       inline def setInlineDiffs(value: Boolean): Self = StObject.set(x, "inlineDiffs", value.asInstanceOf[js.Any])
       
       inline def setInlineDiffsUndefined: Self = StObject.set(x, "inlineDiffs", js.undefined)
+      
+      inline def setInvert(value: Boolean): Self = StObject.set(x, "invert", value.asInstanceOf[js.Any])
+      
+      inline def setInvertUndefined: Self = StObject.set(x, "invert", js.undefined)
+      
+      inline def setIsWorker(value: Boolean): Self = StObject.set(x, "isWorker", value.asInstanceOf[js.Any])
+      
+      inline def setIsWorkerUndefined: Self = StObject.set(x, "isWorker", js.undefined)
       
       inline def setJobs(value: Double): Self = StObject.set(x, "jobs", value.asInstanceOf[js.Any])
       
@@ -1536,11 +1711,17 @@ object Mocha {
       
       inline def setReporter(value: String | ReporterConstructor): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
       
-      inline def setReporterOptions(value: js.Any): Self = StObject.set(x, "reporterOptions", value.asInstanceOf[js.Any])
+      inline def setReporterOptions(value: Any): Self = StObject.set(x, "reporterOptions", value.asInstanceOf[js.Any])
       
       inline def setReporterOptionsUndefined: Self = StObject.set(x, "reporterOptions", js.undefined)
       
       inline def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
+      
+      inline def setRequire(value: js.Array[String]): Self = StObject.set(x, "require", value.asInstanceOf[js.Any])
+      
+      inline def setRequireUndefined: Self = StObject.set(x, "require", js.undefined)
+      
+      inline def setRequireVarargs(value: String*): Self = StObject.set(x, "require", js.Array(value*))
       
       inline def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
       
@@ -1695,25 +1876,25 @@ object Mocha {
       
       inline def setAfterAllUndefined: Self = StObject.set(x, "afterAll", js.undefined)
       
-      inline def setAfterAllVarargs(value: (AsyncFunc | Func)*): Self = StObject.set(x, "afterAll", js.Array(value :_*))
+      inline def setAfterAllVarargs(value: (AsyncFunc | Func)*): Self = StObject.set(x, "afterAll", js.Array(value*))
       
       inline def setAfterEach(value: Func | AsyncFunc | (js.Array[AsyncFunc | Func])): Self = StObject.set(x, "afterEach", value.asInstanceOf[js.Any])
       
       inline def setAfterEachUndefined: Self = StObject.set(x, "afterEach", js.undefined)
       
-      inline def setAfterEachVarargs(value: (AsyncFunc | Func)*): Self = StObject.set(x, "afterEach", js.Array(value :_*))
+      inline def setAfterEachVarargs(value: (AsyncFunc | Func)*): Self = StObject.set(x, "afterEach", js.Array(value*))
       
       inline def setBeforeAll(value: Func | AsyncFunc | (js.Array[AsyncFunc | Func])): Self = StObject.set(x, "beforeAll", value.asInstanceOf[js.Any])
       
       inline def setBeforeAllUndefined: Self = StObject.set(x, "beforeAll", js.undefined)
       
-      inline def setBeforeAllVarargs(value: (AsyncFunc | Func)*): Self = StObject.set(x, "beforeAll", js.Array(value :_*))
+      inline def setBeforeAllVarargs(value: (AsyncFunc | Func)*): Self = StObject.set(x, "beforeAll", js.Array(value*))
       
       inline def setBeforeEach(value: Func | AsyncFunc | (js.Array[AsyncFunc | Func])): Self = StObject.set(x, "beforeEach", value.asInstanceOf[js.Any])
       
       inline def setBeforeEachUndefined: Self = StObject.set(x, "beforeEach", js.undefined)
       
-      inline def setBeforeEachVarargs(value: (AsyncFunc | Func)*): Self = StObject.set(x, "beforeEach", js.Array(value :_*))
+      inline def setBeforeEachVarargs(value: (AsyncFunc | Func)*): Self = StObject.set(x, "beforeEach", js.Array(value*))
     }
   }
   
@@ -1730,19 +1911,19 @@ object Mocha {
     extends StObject
        with EventEmitter {
     
-    /* private */ var _currentRetry: js.Any = js.native
+    /* private */ var _currentRetry: Any = js.native
     
-    /* private */ var _retries: js.Any = js.native
+    /* private */ var _retries: Any = js.native
     
-    /* private */ var _slow: js.Any = js.native
+    /* private */ var _slow: Any = js.native
     
-    /* private */ var _timeout: js.Any = js.native
+    /* private */ var _timeout: Any = js.native
     
-    /* private */ var _timeoutError: js.Any = js.native
+    /* private */ var _timeoutError: Any = js.native
     
-    def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+    def addListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("addListener")
-    def addListener_error(event: error, listener: js.Function1[/* error */ js.Any, Unit]): this.type = js.native
+    def addListener_error(event: error, listener: js.Function1[/* error */ Any, Unit]): this.type = js.native
     
     var allowUncaught: js.UndefOr[Boolean] = js.native
     
@@ -1776,9 +1957,9 @@ object Mocha {
     
     var duration: js.UndefOr[Double] = js.native
     
-    def emit(name: String, args: js.Any*): Boolean = js.native
+    def emit(name: String, args: Any*): Boolean = js.native
     @JSName("emit")
-    def emit_error(name: error, error: js.Any): Boolean = js.native
+    def emit_error(name: error, error: Any): Boolean = js.native
     
     var file: js.UndefOr[String] = js.native
     
@@ -1826,29 +2007,29 @@ object Mocha {
       */
     def isPending(): Boolean = js.native
     
-    def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+    def on(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* error */ js.Any, Unit]): this.type = js.native
+    def on_error(event: error, listener: js.Function1[/* error */ Any, Unit]): this.type = js.native
     
-    def once(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+    def once(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("once")
-    def once_error(event: error, listener: js.Function1[/* error */ js.Any, Unit]): this.type = js.native
+    def once_error(event: error, listener: js.Function1[/* error */ Any, Unit]): this.type = js.native
     
     var parent: js.UndefOr[Suite] = js.native
     
     var pending: Boolean = js.native
     
-    def prependListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+    def prependListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("prependListener")
-    def prependListener_error(event: error, listener: js.Function1[/* error */ js.Any, Unit]): this.type = js.native
+    def prependListener_error(event: error, listener: js.Function1[/* error */ Any, Unit]): this.type = js.native
     
-    def prependOnceListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+    def prependOnceListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("prependOnceListener")
-    def prependOnceListener_error(event: error, listener: js.Function1[/* error */ js.Any, Unit]): this.type = js.native
+    def prependOnceListener_error(event: error, listener: js.Function1[/* error */ Any, Unit]): this.type = js.native
     
-    def removeListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+    def removeListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("removeListener")
-    def removeListener_error(event: error, listener: js.Function1[/* error */ js.Any, Unit]): this.type = js.native
+    def removeListener_error(event: error, listener: js.Function1[/* error */ Any, Unit]): this.type = js.native
     
     /**
       * Reset the timeout.
@@ -1896,7 +2077,7 @@ object Mocha {
     def slow(ms: String): this.type = js.native
     def slow(ms: Double): this.type = js.native
     
-    var state: js.UndefOr[failed | passed] = js.native
+    var state: js.UndefOr[failed | passed | pending] = js.native
     
     var sync: Boolean = js.native
     
@@ -1916,7 +2097,7 @@ object Mocha {
     def timeout(ms: String): this.type = js.native
     def timeout(ms: Double): this.type = js.native
     
-    var timer: js.UndefOr[js.Any] = js.native
+    var timer: js.UndefOr[Any] = js.native
     
     var title: String = js.native
     
@@ -1961,13 +2142,13 @@ object Mocha {
     extends StObject
        with EventEmitter {
     
-    /* private */ var _abort: js.Any = js.native
+    /* private */ var _abort: Any = js.native
     
-    /* private */ var _defaultGrep: js.Any = js.native
+    /* private */ var _defaultGrep: Any = js.native
     
-    /* private */ var _delay: js.Any = js.native
+    /* private */ var _delay: Any = js.native
     
-    /* private */ var _globals: js.Any = js.native
+    /* private */ var _globals: Any = js.native
     
     /**
       * Cleanly abort execution.
@@ -1976,11 +2157,11 @@ object Mocha {
       */
     def abort(): this.type = js.native
     
-    def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+    def addListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("addListener")
     def addListener_end(event: end, listener: js.Function0[Unit]): this.type = js.native
     @JSName("addListener")
-    def addListener_fail(event: fail, listener: js.Function2[/* test */ Test, /* err */ js.Any, Unit]): this.type = js.native
+    def addListener_fail(event: fail, listener: js.Function2[/* test */ Test, /* err */ Any, Unit]): this.type = js.native
     @JSName("addListener")
     def addListener_hook(event: hook, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
     @JSName("addListener")
@@ -2026,11 +2207,11 @@ object Mocha {
       */
     def dispose(): Unit = js.native
     
-    def emit(name: String, args: js.Any*): Boolean = js.native
+    def emit(name: String, args: Any*): Boolean = js.native
     @JSName("emit")
     def emit_end(name: end): Boolean = js.native
     @JSName("emit")
-    def emit_fail(name: fail, test: Test, err: js.Any): Boolean = js.native
+    def emit_fail(name: fail, test: Test, err: Any): Boolean = js.native
     @JSName("emit")
     def emit_hook(name: hook, hook: Hook): Boolean = js.native
     @JSName("emit")
@@ -2057,7 +2238,7 @@ object Mocha {
       *
       * @see https://mochajs.org/api/Mocha.Runner.html#fail
       */
-    /* protected */ def fail(test: Test, err: js.Any): Unit = js.native
+    /* protected */ def fail(test: Test, err: Any): Unit = js.native
     
     /**
       * Fail the given `hook` with `err`.
@@ -2077,7 +2258,7 @@ object Mocha {
       *
       * @see https://mochajs.org/api/Mocha.Runner.html#failHook
       */
-    /* protected */ def failHook(hook: Hook, err: js.Any): Unit = js.native
+    /* protected */ def failHook(hook: Hook, err: Any): Unit = js.native
     
     var failures: Double = js.native
     
@@ -2113,7 +2294,7 @@ object Mocha {
       *
       * @see https://mochajs.org/api/Mocha.Runner.html#.Runner#grep
       */
-    def grep(re: RegExp, invert: Boolean): this.type = js.native
+    def grep(re: js.RegExp, invert: Boolean): this.type = js.native
     
     /**
       * Returns the number of tests matching the grep search for the
@@ -2135,22 +2316,16 @@ object Mocha {
       *
       * @see https://mochajs.org/api/Mocha.Runner.html#hookDown
       */
-    /* protected */ def hookDown(
-      name: String,
-      fn: js.Function2[/* err */ js.UndefOr[js.Any], /* errSuite */ js.UndefOr[Suite], Unit]
-    ): Unit = js.native
+    /* protected */ def hookDown(name: String, fn: js.Function2[/* err */ js.UndefOr[Any], /* errSuite */ js.UndefOr[Suite], Unit]): Unit = js.native
     
-    /* private */ var hookErr: js.Any = js.native
+    /* private */ var hookErr: Any = js.native
     
     /**
       * Run hooks from the top level down.
       *
       * @see https://mochajs.org/api/Mocha.Runner.html#hookUp
       */
-    /* protected */ def hookUp(
-      name: String,
-      fn: js.Function2[/* err */ js.UndefOr[js.Any], /* errSuite */ js.UndefOr[Suite], Unit]
-    ): Unit = js.native
+    /* protected */ def hookUp(name: String, fn: js.Function2[/* err */ js.UndefOr[Any], /* errSuite */ js.UndefOr[Suite], Unit]): Unit = js.native
     
     /**
       * Run hook `name` for the given array of `suites`
@@ -2161,18 +2336,18 @@ object Mocha {
     /* protected */ def hooks(
       name: String,
       suites: js.Array[Suite],
-      fn: js.Function2[/* err */ js.UndefOr[js.Any], /* errSuite */ js.UndefOr[Suite], Unit]
+      fn: js.Function2[/* err */ js.UndefOr[Any], /* errSuite */ js.UndefOr[Suite], Unit]
     ): Unit = js.native
     
-    /* private */ var next: js.Any = js.native
+    /* private */ var next: Any = js.native
     
-    /* private */ var nextSuite: js.Any = js.native
+    /* private */ var nextSuite: Any = js.native
     
-    def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+    def on(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("on")
     def on_end(event: end, listener: js.Function0[Unit]): this.type = js.native
     @JSName("on")
-    def on_fail(event: fail, listener: js.Function2[/* test */ Test, /* err */ js.Any, Unit]): this.type = js.native
+    def on_fail(event: fail, listener: js.Function2[/* test */ Test, /* err */ Any, Unit]): this.type = js.native
     @JSName("on")
     def on_hook(event: hook, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
     @JSName("on")
@@ -2194,11 +2369,11 @@ object Mocha {
     @JSName("on")
     def on_waiting(event: waiting, listener: js.Function1[/* rootSuite */ Suite, Unit]): this.type = js.native
     
-    def once(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+    def once(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("once")
     def once_end(event: end, listener: js.Function0[Unit]): this.type = js.native
     @JSName("once")
-    def once_fail(event: fail, listener: js.Function2[/* test */ Test, /* err */ js.Any, Unit]): this.type = js.native
+    def once_fail(event: fail, listener: js.Function2[/* test */ Test, /* err */ Any, Unit]): this.type = js.native
     @JSName("once")
     def once_hook(event: hook, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
     @JSName("once")
@@ -2227,11 +2402,11 @@ object Mocha {
       */
     /* protected */ def parents(): js.Array[Suite] = js.native
     
-    def prependListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+    def prependListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("prependListener")
     def prependListener_end(event: end, listener: js.Function0[Unit]): this.type = js.native
     @JSName("prependListener")
-    def prependListener_fail(event: fail, listener: js.Function2[/* test */ Test, /* err */ js.Any, Unit]): this.type = js.native
+    def prependListener_fail(event: fail, listener: js.Function2[/* test */ Test, /* err */ Any, Unit]): this.type = js.native
     @JSName("prependListener")
     def prependListener_hook(event: hook, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
     @JSName("prependListener")
@@ -2253,11 +2428,11 @@ object Mocha {
     @JSName("prependListener")
     def prependListener_waiting(event: waiting, listener: js.Function1[/* rootSuite */ Suite, Unit]): this.type = js.native
     
-    def prependOnceListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+    def prependOnceListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("prependOnceListener")
     def prependOnceListener_end(event: end, listener: js.Function0[Unit]): this.type = js.native
     @JSName("prependOnceListener")
-    def prependOnceListener_fail(event: fail, listener: js.Function2[/* test */ Test, /* err */ js.Any, Unit]): this.type = js.native
+    def prependOnceListener_fail(event: fail, listener: js.Function2[/* test */ Test, /* err */ Any, Unit]): this.type = js.native
     @JSName("prependOnceListener")
     def prependOnceListener_hook(event: hook, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
     @JSName("prependOnceListener")
@@ -2279,13 +2454,13 @@ object Mocha {
     @JSName("prependOnceListener")
     def prependOnceListener_waiting(event: waiting, listener: js.Function1[/* rootSuite */ Suite, Unit]): this.type = js.native
     
-    /* private */ var prevGlobalsLength: js.Any = js.native
+    /* private */ var prevGlobalsLength: Any = js.native
     
-    def removeListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+    def removeListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("removeListener")
     def removeListener_end(event: end, listener: js.Function0[Unit]): this.type = js.native
     @JSName("removeListener")
-    def removeListener_fail(event: fail, listener: js.Function2[/* test */ Test, /* err */ js.Any, Unit]): this.type = js.native
+    def removeListener_fail(event: fail, listener: js.Function2[/* test */ Test, /* err */ Any, Unit]): this.type = js.native
     @JSName("removeListener")
     def removeListener_hook(event: hook, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
     @JSName("removeListener")
@@ -2327,7 +2502,7 @@ object Mocha {
       *
       * @see https://mochajs.org/api/Mocha.Runner.html#runTest
       */
-    /* protected */ def runTest(fn: Done): js.Any = js.native
+    /* protected */ def runTest(fn: Done): Any = js.native
     
     /**
       * Run tests in the given `suite` and invoke the callback `fn()` when complete.
@@ -2351,7 +2526,7 @@ object Mocha {
       *
       * @see https://mochajs.org/api/Mocha.Runner.html#uncaught
       */
-    def uncaught(err: js.Any): Unit = js.native
+    def uncaught(err: Any): Unit = js.native
   }
   
   trait RunnerConstants extends StObject {
@@ -2383,11 +2558,17 @@ object Mocha {
     val EVENT_TEST_PENDING: pending
     
     val EVENT_TEST_RETRY: retry
+    
+    val STATE_IDLE: idle
+    
+    val STATE_RUNNING: running
+    
+    val STATE_STOPPED: stopped
   }
   object RunnerConstants {
     
     inline def apply(): RunnerConstants = {
-      val __obj = js.Dynamic.literal(EVENT_DELAY_BEGIN = "waiting", EVENT_DELAY_END = "ready", EVENT_HOOK_BEGIN = "hook", EVENT_HOOK_END = "hook end", EVENT_RUN_BEGIN = "start", EVENT_RUN_END = "end", EVENT_SUITE_BEGIN = "suite", EVENT_SUITE_END = "suite end", EVENT_TEST_BEGIN = "test", EVENT_TEST_END = "test end", EVENT_TEST_FAIL = "fail", EVENT_TEST_PASS = "pass", EVENT_TEST_PENDING = "pending", EVENT_TEST_RETRY = "retry")
+      val __obj = js.Dynamic.literal(EVENT_DELAY_BEGIN = "waiting", EVENT_DELAY_END = "ready", EVENT_HOOK_BEGIN = "hook", EVENT_HOOK_END = "hook end", EVENT_RUN_BEGIN = "start", EVENT_RUN_END = "end", EVENT_SUITE_BEGIN = "suite", EVENT_SUITE_END = "suite end", EVENT_TEST_BEGIN = "test", EVENT_TEST_END = "test end", EVENT_TEST_FAIL = "fail", EVENT_TEST_PASS = "pass", EVENT_TEST_PENDING = "pending", EVENT_TEST_RETRY = "retry", STATE_IDLE = "idle", STATE_RUNNING = "running", STATE_STOPPED = "stopped")
       __obj.asInstanceOf[RunnerConstants]
     }
     
@@ -2420,6 +2601,46 @@ object Mocha {
       inline def setEVENT_TEST_PENDING(value: pending): Self = StObject.set(x, "EVENT_TEST_PENDING", value.asInstanceOf[js.Any])
       
       inline def setEVENT_TEST_RETRY(value: retry): Self = StObject.set(x, "EVENT_TEST_RETRY", value.asInstanceOf[js.Any])
+      
+      inline def setSTATE_IDLE(value: idle): Self = StObject.set(x, "STATE_IDLE", value.asInstanceOf[js.Any])
+      
+      inline def setSTATE_RUNNING(value: running): Self = StObject.set(x, "STATE_RUNNING", value.asInstanceOf[js.Any])
+      
+      inline def setSTATE_STOPPED(value: stopped): Self = StObject.set(x, "STATE_STOPPED", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait RunnerOptions extends StObject {
+    
+    /** Whether to clean references to test fns and hooks when a suite is done. */
+    var cleanReferencesAfterRun: js.UndefOr[Boolean] = js.undefined
+    
+    /** Whether to delay execution of root suite until ready. */
+    var delay: js.UndefOr[Boolean] = js.undefined
+    
+    /** Whether to report tests without running them. */
+    var dryRun: js.UndefOr[Boolean] = js.undefined
+  }
+  object RunnerOptions {
+    
+    inline def apply(): RunnerOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[RunnerOptions]
+    }
+    
+    extension [Self <: RunnerOptions](x: Self) {
+      
+      inline def setCleanReferencesAfterRun(value: Boolean): Self = StObject.set(x, "cleanReferencesAfterRun", value.asInstanceOf[js.Any])
+      
+      inline def setCleanReferencesAfterRunUndefined: Self = StObject.set(x, "cleanReferencesAfterRun", js.undefined)
+      
+      inline def setDelay(value: Boolean): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      
+      inline def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
+      
+      inline def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
     }
   }
   
@@ -2430,7 +2651,7 @@ object Mocha {
     
     var duration: js.UndefOr[Double] = js.undefined
     
-    var end: js.UndefOr[Date] = js.undefined
+    var end: js.UndefOr[js.Date] = js.undefined
     
     var failures: Double
     
@@ -2438,7 +2659,7 @@ object Mocha {
     
     var pending: Double
     
-    var start: js.UndefOr[Date] = js.undefined
+    var start: js.UndefOr[js.Date] = js.undefined
     
     var suites: Double
     
@@ -2457,7 +2678,7 @@ object Mocha {
       
       inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      inline def setEnd(value: Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: js.Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
       inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
@@ -2467,7 +2688,7 @@ object Mocha {
       
       inline def setPending(value: Double): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
       
-      inline def setStart(value: Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: js.Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
       inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       
@@ -2508,15 +2729,15 @@ object Mocha {
     extends StObject
        with EventEmitter {
     
-    /* private */ var _afterAll: js.Any = js.native
+    /* private */ var _afterAll: Any = js.native
     
-    /* private */ var _afterEach: js.Any = js.native
+    /* private */ var _afterEach: Any = js.native
     
-    /* private */ var _bail: js.Any = js.native
+    /* private */ var _bail: Any = js.native
     
-    /* private */ var _beforeAll: js.Any = js.native
+    /* private */ var _beforeAll: Any = js.native
     
-    /* private */ var _beforeEach: js.Any = js.native
+    /* private */ var _beforeEach: Any = js.native
     
     /**
       * Generic hook-creator.
@@ -2525,17 +2746,17 @@ object Mocha {
     /* protected */ def _createHook(title: String, fn: AsyncFunc): Hook = js.native
     /* protected */ def _createHook(title: String, fn: Func): Hook = js.native
     
-    /* private */ var _onlySuites: js.Any = js.native
+    /* private */ var _onlySuites: Any = js.native
     
-    /* private */ var _onlyTests: js.Any = js.native
+    /* private */ var _onlyTests: Any = js.native
     
-    /* private */ var _retries: js.Any = js.native
+    /* private */ var _retries: Any = js.native
     
-    /* private */ var _slow: js.Any = js.native
+    /* private */ var _slow: Any = js.native
     
-    /* private */ var _timeout: js.Any = js.native
+    /* private */ var _timeout: Any = js.native
     
-    def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+    def addListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("addListener")
     def addListener_afterAll(event: afterAll, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
     @JSName("addListener")
@@ -2557,7 +2778,7 @@ object Mocha {
     @JSName("addListener")
     def addListener_require(
       event: require,
-      listener: js.Function3[/* module */ js.Any, /* file */ String, /* mocha */ Mocha, Unit]
+      listener: js.Function3[/* module */ Any, /* file */ String, /* mocha */ Mocha, Unit]
     ): this.type = js.native
     @JSName("addListener")
     def addListener_run(event: run, listener: js.Function0[Unit]): this.type = js.native
@@ -2680,7 +2901,7 @@ object Mocha {
       */
     def eachTest(fn: js.Function1[/* test */ Test, Unit]): this.type = js.native
     
-    def emit(name: String, args: js.Any*): Boolean = js.native
+    def emit(name: String, args: Any*): Boolean = js.native
     @JSName("emit")
     def emit_afterAll(name: afterAll, hook: Hook): Boolean = js.native
     @JSName("emit")
@@ -2694,7 +2915,7 @@ object Mocha {
     @JSName("emit")
     def emit_prerequire(name: `pre-require`, context: MochaGlobals, file: String, mocha: Mocha): Boolean = js.native
     @JSName("emit")
-    def emit_require(name: require, module: js.Any, file: String, mocha: Mocha): Boolean = js.native
+    def emit_require(name: require, module: Any, file: String, mocha: Mocha): Boolean = js.native
     @JSName("emit")
     def emit_run(name: run): Boolean = js.native
     @JSName("emit")
@@ -2719,7 +2940,7 @@ object Mocha {
       */
     def isPending(): Boolean = js.native
     
-    def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+    def on(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("on")
     def on_afterAll(event: afterAll, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
     @JSName("on")
@@ -2741,7 +2962,7 @@ object Mocha {
     @JSName("on")
     def on_require(
       event: require,
-      listener: js.Function3[/* module */ js.Any, /* file */ String, /* mocha */ Mocha, Unit]
+      listener: js.Function3[/* module */ Any, /* file */ String, /* mocha */ Mocha, Unit]
     ): this.type = js.native
     @JSName("on")
     def on_run(event: run, listener: js.Function0[Unit]): this.type = js.native
@@ -2750,7 +2971,7 @@ object Mocha {
     @JSName("on")
     def on_test(event: test, listener: js.Function1[/* test */ Test, Unit]): this.type = js.native
     
-    def once(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+    def once(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("once")
     def once_afterAll(event: afterAll, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
     @JSName("once")
@@ -2772,7 +2993,7 @@ object Mocha {
     @JSName("once")
     def once_require(
       event: require,
-      listener: js.Function3[/* module */ js.Any, /* file */ String, /* mocha */ Mocha, Unit]
+      listener: js.Function3[/* module */ Any, /* file */ String, /* mocha */ Mocha, Unit]
     ): this.type = js.native
     @JSName("once")
     def once_run(event: run, listener: js.Function0[Unit]): this.type = js.native
@@ -2785,7 +3006,7 @@ object Mocha {
     
     var pending: Boolean = js.native
     
-    def prependListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+    def prependListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("prependListener")
     def prependListener_afterAll(event: afterAll, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
     @JSName("prependListener")
@@ -2807,7 +3028,7 @@ object Mocha {
     @JSName("prependListener")
     def prependListener_require(
       event: require,
-      listener: js.Function3[/* module */ js.Any, /* file */ String, /* mocha */ Mocha, Unit]
+      listener: js.Function3[/* module */ Any, /* file */ String, /* mocha */ Mocha, Unit]
     ): this.type = js.native
     @JSName("prependListener")
     def prependListener_run(event: run, listener: js.Function0[Unit]): this.type = js.native
@@ -2816,7 +3037,7 @@ object Mocha {
     @JSName("prependListener")
     def prependListener_test(event: test, listener: js.Function1[/* test */ Test, Unit]): this.type = js.native
     
-    def prependOnceListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+    def prependOnceListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("prependOnceListener")
     def prependOnceListener_afterAll(event: afterAll, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
     @JSName("prependOnceListener")
@@ -2838,7 +3059,7 @@ object Mocha {
     @JSName("prependOnceListener")
     def prependOnceListener_require(
       event: require,
-      listener: js.Function3[/* module */ js.Any, /* file */ String, /* mocha */ Mocha, Unit]
+      listener: js.Function3[/* module */ Any, /* file */ String, /* mocha */ Mocha, Unit]
     ): this.type = js.native
     @JSName("prependOnceListener")
     def prependOnceListener_run(event: run, listener: js.Function0[Unit]): this.type = js.native
@@ -2847,7 +3068,7 @@ object Mocha {
     @JSName("prependOnceListener")
     def prependOnceListener_test(event: test, listener: js.Function1[/* test */ Test, Unit]): this.type = js.native
     
-    def removeListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+    def removeListener(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     @JSName("removeListener")
     def removeListener_afterAll(event: afterAll, listener: js.Function1[/* hook */ Hook, Unit]): this.type = js.native
     @JSName("removeListener")
@@ -2869,7 +3090,7 @@ object Mocha {
     @JSName("removeListener")
     def removeListener_require(
       event: require,
-      listener: js.Function3[/* module */ js.Any, /* file */ String, /* mocha */ Mocha, Unit]
+      listener: js.Function3[/* module */ Any, /* file */ String, /* mocha */ Mocha, Unit]
     ): this.type = js.native
     @JSName("removeListener")
     def removeListener_run(event: run, listener: js.Function0[Unit]): this.type = js.native
@@ -3096,7 +3317,7 @@ object Mocha {
        with Runnable {
     
     // added by reporters
-    var err: js.UndefOr[Error] = js.native
+    var err: js.UndefOr[js.Error] = js.native
     
     var speed: js.UndefOr[slow | medium | fast] = js.native
     
@@ -3298,7 +3519,7 @@ object Mocha {
         
         inline def setFailures(value: js.Array[Test]): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
         
-        inline def setFailuresVarargs(value: Test*): Self = StObject.set(x, "failures", js.Array(value :_*))
+        inline def setFailuresVarargs(value: Test*): Self = StObject.set(x, "failures", js.Array(value*))
         
         inline def setRunner(value: Runner): Self = StObject.set(x, "runner", value.asInstanceOf[js.Any])
         
@@ -3617,64 +3838,64 @@ object Mocha {
       extends StObject
          with Base_ {
       
-      /* private */ var appendRainbow: js.Any
+      /* private */ var appendRainbow: Any
       
-      /* private */ var colorIndex: js.Any
+      /* private */ var colorIndex: Any
       
-      /* private */ var cursorDown: js.Any
+      /* private */ var cursorDown: Any
       
-      /* private */ var cursorUp: js.Any
+      /* private */ var cursorUp: Any
       
-      /* private */ var draw: js.Any
+      /* private */ var draw: Any
       
-      /* private */ var drawNyanCat: js.Any
+      /* private */ var drawNyanCat: Any
       
-      /* private */ var drawRainbow: js.Any
+      /* private */ var drawRainbow: Any
       
-      /* private */ var drawScoreboard: js.Any
+      /* private */ var drawScoreboard: Any
       
-      /* private */ var face: js.Any
+      /* private */ var face: Any
       
-      /* private */ var generateColors: js.Any
+      /* private */ var generateColors: Any
       
-      /* private */ var numberOfLines: js.Any
+      /* private */ var numberOfLines: Any
       
-      /* private */ var rainbowColors: js.Any
+      /* private */ var rainbowColors: Any
       
-      /* private */ var rainbowify: js.Any
+      /* private */ var rainbowify: Any
       
-      /* private */ var scoreboardWidth: js.Any
+      /* private */ var scoreboardWidth: Any
       
-      /* private */ var tick: js.Any
+      /* private */ var tick: Any
       
-      /* private */ var trajectories: js.Any
+      /* private */ var trajectories: Any
       
-      /* private */ var trajectoryWidthMax: js.Any
+      /* private */ var trajectoryWidthMax: Any
     }
     object Nyan_ {
       
       inline def apply(
-        appendRainbow: js.Any,
-        colorIndex: js.Any,
-        cursorDown: js.Any,
-        cursorUp: js.Any,
-        draw: js.Any,
-        drawNyanCat: js.Any,
-        drawRainbow: js.Any,
-        drawScoreboard: js.Any,
+        appendRainbow: Any,
+        colorIndex: Any,
+        cursorDown: Any,
+        cursorUp: Any,
+        draw: Any,
+        drawNyanCat: Any,
+        drawRainbow: Any,
+        drawScoreboard: Any,
         epilogue: () => Unit,
-        face: js.Any,
+        face: Any,
         failures: js.Array[Test],
-        generateColors: js.Any,
-        numberOfLines: js.Any,
-        rainbowColors: js.Any,
-        rainbowify: js.Any,
+        generateColors: Any,
+        numberOfLines: Any,
+        rainbowColors: Any,
+        rainbowify: Any,
         runner: Runner,
-        scoreboardWidth: js.Any,
+        scoreboardWidth: Any,
         stats: Stats,
-        tick: js.Any,
-        trajectories: js.Any,
-        trajectoryWidthMax: js.Any
+        tick: Any,
+        trajectories: Any,
+        trajectoryWidthMax: Any
       ): Nyan_ = {
         val __obj = js.Dynamic.literal(appendRainbow = appendRainbow.asInstanceOf[js.Any], colorIndex = colorIndex.asInstanceOf[js.Any], cursorDown = cursorDown.asInstanceOf[js.Any], cursorUp = cursorUp.asInstanceOf[js.Any], draw = draw.asInstanceOf[js.Any], drawNyanCat = drawNyanCat.asInstanceOf[js.Any], drawRainbow = drawRainbow.asInstanceOf[js.Any], drawScoreboard = drawScoreboard.asInstanceOf[js.Any], epilogue = js.Any.fromFunction0(epilogue), face = face.asInstanceOf[js.Any], failures = failures.asInstanceOf[js.Any], generateColors = generateColors.asInstanceOf[js.Any], numberOfLines = numberOfLines.asInstanceOf[js.Any], rainbowColors = rainbowColors.asInstanceOf[js.Any], rainbowify = rainbowify.asInstanceOf[js.Any], runner = runner.asInstanceOf[js.Any], scoreboardWidth = scoreboardWidth.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any], tick = tick.asInstanceOf[js.Any], trajectories = trajectories.asInstanceOf[js.Any], trajectoryWidthMax = trajectoryWidthMax.asInstanceOf[js.Any])
         __obj.asInstanceOf[Nyan_]
@@ -3682,39 +3903,39 @@ object Mocha {
       
       extension [Self <: Nyan_](x: Self) {
         
-        inline def setAppendRainbow(value: js.Any): Self = StObject.set(x, "appendRainbow", value.asInstanceOf[js.Any])
+        inline def setAppendRainbow(value: Any): Self = StObject.set(x, "appendRainbow", value.asInstanceOf[js.Any])
         
-        inline def setColorIndex(value: js.Any): Self = StObject.set(x, "colorIndex", value.asInstanceOf[js.Any])
+        inline def setColorIndex(value: Any): Self = StObject.set(x, "colorIndex", value.asInstanceOf[js.Any])
         
-        inline def setCursorDown(value: js.Any): Self = StObject.set(x, "cursorDown", value.asInstanceOf[js.Any])
+        inline def setCursorDown(value: Any): Self = StObject.set(x, "cursorDown", value.asInstanceOf[js.Any])
         
-        inline def setCursorUp(value: js.Any): Self = StObject.set(x, "cursorUp", value.asInstanceOf[js.Any])
+        inline def setCursorUp(value: Any): Self = StObject.set(x, "cursorUp", value.asInstanceOf[js.Any])
         
-        inline def setDraw(value: js.Any): Self = StObject.set(x, "draw", value.asInstanceOf[js.Any])
+        inline def setDraw(value: Any): Self = StObject.set(x, "draw", value.asInstanceOf[js.Any])
         
-        inline def setDrawNyanCat(value: js.Any): Self = StObject.set(x, "drawNyanCat", value.asInstanceOf[js.Any])
+        inline def setDrawNyanCat(value: Any): Self = StObject.set(x, "drawNyanCat", value.asInstanceOf[js.Any])
         
-        inline def setDrawRainbow(value: js.Any): Self = StObject.set(x, "drawRainbow", value.asInstanceOf[js.Any])
+        inline def setDrawRainbow(value: Any): Self = StObject.set(x, "drawRainbow", value.asInstanceOf[js.Any])
         
-        inline def setDrawScoreboard(value: js.Any): Self = StObject.set(x, "drawScoreboard", value.asInstanceOf[js.Any])
+        inline def setDrawScoreboard(value: Any): Self = StObject.set(x, "drawScoreboard", value.asInstanceOf[js.Any])
         
-        inline def setFace(value: js.Any): Self = StObject.set(x, "face", value.asInstanceOf[js.Any])
+        inline def setFace(value: Any): Self = StObject.set(x, "face", value.asInstanceOf[js.Any])
         
-        inline def setGenerateColors(value: js.Any): Self = StObject.set(x, "generateColors", value.asInstanceOf[js.Any])
+        inline def setGenerateColors(value: Any): Self = StObject.set(x, "generateColors", value.asInstanceOf[js.Any])
         
-        inline def setNumberOfLines(value: js.Any): Self = StObject.set(x, "numberOfLines", value.asInstanceOf[js.Any])
+        inline def setNumberOfLines(value: Any): Self = StObject.set(x, "numberOfLines", value.asInstanceOf[js.Any])
         
-        inline def setRainbowColors(value: js.Any): Self = StObject.set(x, "rainbowColors", value.asInstanceOf[js.Any])
+        inline def setRainbowColors(value: Any): Self = StObject.set(x, "rainbowColors", value.asInstanceOf[js.Any])
         
-        inline def setRainbowify(value: js.Any): Self = StObject.set(x, "rainbowify", value.asInstanceOf[js.Any])
+        inline def setRainbowify(value: Any): Self = StObject.set(x, "rainbowify", value.asInstanceOf[js.Any])
         
-        inline def setScoreboardWidth(value: js.Any): Self = StObject.set(x, "scoreboardWidth", value.asInstanceOf[js.Any])
+        inline def setScoreboardWidth(value: Any): Self = StObject.set(x, "scoreboardWidth", value.asInstanceOf[js.Any])
         
-        inline def setTick(value: js.Any): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
+        inline def setTick(value: Any): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
         
-        inline def setTrajectories(value: js.Any): Self = StObject.set(x, "trajectories", value.asInstanceOf[js.Any])
+        inline def setTrajectories(value: Any): Self = StObject.set(x, "trajectories", value.asInstanceOf[js.Any])
         
-        inline def setTrajectoryWidthMax(value: js.Any): Self = StObject.set(x, "trajectoryWidthMax", value.asInstanceOf[js.Any])
+        inline def setTrajectoryWidthMax(value: Any): Self = StObject.set(x, "trajectoryWidthMax", value.asInstanceOf[js.Any])
       }
     }
     

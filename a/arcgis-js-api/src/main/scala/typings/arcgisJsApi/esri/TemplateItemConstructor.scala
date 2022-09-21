@@ -9,5 +9,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TemplateItemConstructor
   extends StObject
-     with Instantiable0[TemplateItem]
-     with Instantiable1[/* properties */ TemplateItemProperties, TemplateItem]
+     with /**
+  * The item displayed within the [FeatureTemplates](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html) widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItem.html)
+  */
+Instantiable0[TemplateItem]
+     with Instantiable1[/* properties */ TemplateItemProperties, TemplateItem] {
+  
+  /**
+    * Fetches the thumbnail used to display the template item.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItem.html#fetchThumbnail)
+    */
+  def fetchThumbnail(): js.Promise[Any] = js.native
+}

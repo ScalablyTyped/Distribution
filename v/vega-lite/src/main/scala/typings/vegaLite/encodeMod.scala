@@ -12,5 +12,5 @@ object encodeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def labels(model: UnitModel, channel: PositionScaleChannel, specifiedLabelsSpec: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("labels")(model.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedLabelsSpec.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def labels(model: UnitModel, channel: PositionScaleChannel, specifiedLabelsSpec: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("labels")(model.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], specifiedLabelsSpec.asInstanceOf[js.Any])).asInstanceOf[Any]
 }

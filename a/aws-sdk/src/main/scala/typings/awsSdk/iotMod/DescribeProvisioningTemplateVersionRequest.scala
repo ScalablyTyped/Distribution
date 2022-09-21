@@ -12,7 +12,7 @@ trait DescribeProvisioningTemplateVersionRequest extends StObject {
   var templateName: TemplateName
   
   /**
-    * The fleet provisioning template version ID.
+    * The provisioning template version ID.
     */
   var versionId: TemplateVersionId
 }

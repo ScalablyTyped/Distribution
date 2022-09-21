@@ -10,31 +10,31 @@ object AjaxFileJQuery {
   
   trait IAjaxFileJQueryExtension extends StObject {
     
-    def ajaxWithFile(jqueryOption: IJQueryOption): JQueryDeferred[js.Any]
+    def ajaxWithFile(jqueryOption: IJQueryOption): JQueryDeferred[Any]
   }
   object IAjaxFileJQueryExtension {
     
-    inline def apply(ajaxWithFile: IJQueryOption => JQueryDeferred[js.Any]): IAjaxFileJQueryExtension = {
+    inline def apply(ajaxWithFile: IJQueryOption => JQueryDeferred[Any]): IAjaxFileJQueryExtension = {
       val __obj = js.Dynamic.literal(ajaxWithFile = js.Any.fromFunction1(ajaxWithFile))
       __obj.asInstanceOf[IAjaxFileJQueryExtension]
     }
     
     extension [Self <: IAjaxFileJQueryExtension](x: Self) {
       
-      inline def setAjaxWithFile(value: IJQueryOption => JQueryDeferred[js.Any]): Self = StObject.set(x, "ajaxWithFile", js.Any.fromFunction1(value))
+      inline def setAjaxWithFile(value: IJQueryOption => JQueryDeferred[Any]): Self = StObject.set(x, "ajaxWithFile", js.Any.fromFunction1(value))
     }
   }
   
   trait IJQueryOption extends StObject {
     
-    var complete: js.UndefOr[js.Function2[/* jqXHR */ IJQueryXHR, /* textStatus */ String, js.Any]] = js.undefined
+    var complete: js.UndefOr[js.Function2[/* jqXHR */ IJQueryXHR, /* textStatus */ String, Any]] = js.undefined
     
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     var dataType: js.UndefOr[String] = js.undefined
     
     var error: js.UndefOr[
-        js.Function3[/* jqXHR */ IJQueryXHR, /* textStatus */ String, /* errorThrown */ String, js.Any]
+        js.Function3[/* jqXHR */ IJQueryXHR, /* textStatus */ String, /* errorThrown */ String, Any]
       ] = js.undefined
     
     var files: js.UndefOr[js.Array[IFileData]] = js.undefined
@@ -42,7 +42,7 @@ object AjaxFileJQuery {
     var global: js.UndefOr[Boolean] = js.undefined
     
     var success: js.UndefOr[
-        js.Function3[/* data */ js.Any, /* textStatus */ String, /* jqXHR */ IJQueryXHR, js.Any]
+        js.Function3[/* data */ Any, /* textStatus */ String, /* jqXHR */ IJQueryXHR, Any]
       ] = js.undefined
     
     var timeout: js.UndefOr[Double] = js.undefined
@@ -60,11 +60,11 @@ object AjaxFileJQuery {
     
     extension [Self <: IJQueryOption](x: Self) {
       
-      inline def setComplete(value: (/* jqXHR */ IJQueryXHR, /* textStatus */ String) => js.Any): Self = StObject.set(x, "complete", js.Any.fromFunction2(value))
+      inline def setComplete(value: (/* jqXHR */ IJQueryXHR, /* textStatus */ String) => Any): Self = StObject.set(x, "complete", js.Any.fromFunction2(value))
       
       inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
       
@@ -72,7 +72,7 @@ object AjaxFileJQuery {
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setError(value: (/* jqXHR */ IJQueryXHR, /* textStatus */ String, /* errorThrown */ String) => js.Any): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
+      inline def setError(value: (/* jqXHR */ IJQueryXHR, /* textStatus */ String, /* errorThrown */ String) => Any): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
@@ -80,13 +80,13 @@ object AjaxFileJQuery {
       
       inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      inline def setFilesVarargs(value: IFileData*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: IFileData*): Self = StObject.set(x, "files", js.Array(value*))
       
       inline def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
       
       inline def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
       
-      inline def setSuccess(value: (/* data */ js.Any, /* textStatus */ String, /* jqXHR */ IJQueryXHR) => js.Any): Self = StObject.set(x, "success", js.Any.fromFunction3(value))
+      inline def setSuccess(value: (/* data */ Any, /* textStatus */ String, /* jqXHR */ IJQueryXHR) => Any): Self = StObject.set(x, "success", js.Any.fromFunction3(value))
       
       inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
       
@@ -110,21 +110,21 @@ object AjaxFileJQuery {
     def abort(): Unit = js.native
     def abort(statusText: String): Unit = js.native
     
-    var beforeSend: js.UndefOr[js.Function2[/* jqXHR */ this.type, /* settings */ JQueryAjaxSettings, js.Any]] = js.native
+    var beforeSend: js.UndefOr[js.Function2[/* jqXHR */ this.type, /* settings */ JQueryAjaxSettings, Any]] = js.native
     
-    var complete: js.UndefOr[js.Function2[/* jqXHR */ this.type, /* textStatus */ String, js.Any]] = js.native
+    var complete: js.UndefOr[js.Function2[/* jqXHR */ this.type, /* textStatus */ String, Any]] = js.native
     
-    var dataFilter: js.UndefOr[js.Function2[/* data */ js.Any, /* ty */ js.Any, js.Any]] = js.native
+    var dataFilter: js.UndefOr[js.Function2[/* data */ Any, /* ty */ Any, Any]] = js.native
     
     var error: js.UndefOr[
-        js.Function3[/* jqXHR */ this.type, /* textStatus */ String, /* errorThrown */ String, js.Any]
+        js.Function3[/* jqXHR */ this.type, /* textStatus */ String, /* errorThrown */ String, Any]
       ] = js.native
     
     def getAllResponseHeaders(): String = js.native
     
     def getResponseHeader(header: String): String = js.native
     
-    var readyState: js.Any = js.native
+    var readyState: Any = js.native
     
     var responseText: String = js.native
     
@@ -134,12 +134,12 @@ object AjaxFileJQuery {
     
     var status: Double = js.native
     
-    var statusCode: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var statusCode: js.UndefOr[StringDictionary[Any]] = js.native
     
     var statusText: String = js.native
     
     var success: js.UndefOr[
-        js.Function3[/* data */ js.Any, /* textStatus */ String, /* jqXHR */ this.type, js.Any]
+        js.Function3[/* data */ Any, /* textStatus */ String, /* jqXHR */ this.type, Any]
       ] = js.native
   }
 }

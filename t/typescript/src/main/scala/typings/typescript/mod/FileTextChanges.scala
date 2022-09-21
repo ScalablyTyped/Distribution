@@ -29,6 +29,6 @@ object FileTextChanges {
     
     inline def setTextChanges(value: js.Array[TextChange]): Self = StObject.set(x, "textChanges", value.asInstanceOf[js.Any])
     
-    inline def setTextChangesVarargs(value: TextChange*): Self = StObject.set(x, "textChanges", js.Array(value :_*))
+    inline def setTextChangesVarargs(value: TextChange*): Self = StObject.set(x, "textChanges", js.Array(value*))
   }
 }

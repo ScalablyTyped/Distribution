@@ -39,6 +39,6 @@ object Country {
     
     inline def setProvincesUndefined: Self = StObject.set(x, "provinces", js.undefined)
     
-    inline def setProvincesVarargs(value: Province*): Self = StObject.set(x, "provinces", js.Array(value :_*))
+    inline def setProvincesVarargs(value: Province*): Self = StObject.set(x, "provinces", js.Array(value*))
   }
 }

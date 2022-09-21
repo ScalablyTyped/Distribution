@@ -24,6 +24,6 @@ object DescribeNFSFileSharesOutput {
     
     inline def setNFSFileShareInfoListUndefined: Self = StObject.set(x, "NFSFileShareInfoList", js.undefined)
     
-    inline def setNFSFileShareInfoListVarargs(value: NFSFileShareInfo*): Self = StObject.set(x, "NFSFileShareInfoList", js.Array(value :_*))
+    inline def setNFSFileShareInfoListVarargs(value: NFSFileShareInfo*): Self = StObject.set(x, "NFSFileShareInfoList", js.Array(value*))
   }
 }

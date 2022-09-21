@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CharacteristicEventHandlers extends StObject {
   
-  def oncharacteristicvaluechanged(ev: Event): js.Any
+  def oncharacteristicvaluechanged(ev: Event): Any
 }
 object CharacteristicEventHandlers {
   
-  inline def apply(oncharacteristicvaluechanged: Event => js.Any): CharacteristicEventHandlers = {
+  inline def apply(oncharacteristicvaluechanged: Event => Any): CharacteristicEventHandlers = {
     val __obj = js.Dynamic.literal(oncharacteristicvaluechanged = js.Any.fromFunction1(oncharacteristicvaluechanged))
     __obj.asInstanceOf[CharacteristicEventHandlers]
   }
   
   extension [Self <: CharacteristicEventHandlers](x: Self) {
     
-    inline def setOncharacteristicvaluechanged(value: Event => js.Any): Self = StObject.set(x, "oncharacteristicvaluechanged", js.Any.fromFunction1(value))
+    inline def setOncharacteristicvaluechanged(value: Event => Any): Self = StObject.set(x, "oncharacteristicvaluechanged", js.Any.fromFunction1(value))
   }
 }

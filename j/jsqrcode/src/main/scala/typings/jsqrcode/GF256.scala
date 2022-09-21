@@ -55,7 +55,7 @@ object GF256 {
     
     inline def setExpTable(value: js.Array[Double]): Self = StObject.set(x, "expTable", value.asInstanceOf[js.Any])
     
-    inline def setExpTableVarargs(value: Double*): Self = StObject.set(x, "expTable", js.Array(value :_*))
+    inline def setExpTableVarargs(value: Double*): Self = StObject.set(x, "expTable", js.Array(value*))
     
     inline def setInverse(value: Double => Double): Self = StObject.set(x, "inverse", js.Any.fromFunction1(value))
     
@@ -63,7 +63,7 @@ object GF256 {
     
     inline def setLogTable(value: js.Array[Double]): Self = StObject.set(x, "logTable", value.asInstanceOf[js.Any])
     
-    inline def setLogTableVarargs(value: Double*): Self = StObject.set(x, "logTable", js.Array(value :_*))
+    inline def setLogTableVarargs(value: Double*): Self = StObject.set(x, "logTable", js.Array(value*))
     
     inline def setMultiply(value: (Double, Double) => Double): Self = StObject.set(x, "multiply", js.Any.fromFunction2(value))
     

@@ -16,7 +16,6 @@ import typings.phaser.Phaser.GameObjects.Components.Transform
 import typings.phaser.Phaser.GameObjects.Components.Visible
 import typings.phaser.Phaser.Renderer.Canvas.CanvasRenderer
 import typings.phaser.Phaser.Renderer.WebGL.WebGLRenderer
-import typings.phaser.integer
 import typings.std.CanvasPattern
 import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
@@ -33,7 +32,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * You shouldn't ever create a TileSprite any larger than your actual canvas size. If you want to create a large repeating background
   * that scrolls across the whole map of your game, then you create a TileSprite that fits the canvas size and then use the `tilePosition`
-  * property to scroll the texture as the player moves. If you create a TileSprite that is thousands of pixels in size then it will 
+  * property to scroll the texture as the player moves. If you create a TileSprite that is thousands of pixels in size then it will
   * consume huge amounts of memory and cause performance issues. Remember: use `tilePosition` to scroll your texture and `tileScale` to
   * adjust the scale of the texture - don't resize the sprite itself or make it larger than it needs.
   * 
@@ -105,12 +104,12 @@ trait TileSprite
   /**
     * The next power of two value from the height of the Fill Pattern frame.
     */
-  var potHeight: integer = js.native
+  var potHeight: Double = js.native
   
   /**
     * The next power of two value from the width of the Fill Pattern frame.
     */
-  var potWidth: integer = js.native
+  var potWidth: Double = js.native
   
   /**
     * Internal destroy handler, called as part of the destroy process.
@@ -131,7 +130,7 @@ trait TileSprite
     * @param frame The name or index of the frame within the Texture.
     */
   def setFrame(frame: String): this.type = js.native
-  def setFrame(frame: integer): this.type = js.native
+  def setFrame(frame: Double): this.type = js.native
   
   /**
     * Sets the texture and frame this Game Object will use to render with.
@@ -142,7 +141,7 @@ trait TileSprite
     */
   def setTexture(key: String): this.type = js.native
   def setTexture(key: String, frame: String): this.type = js.native
-  def setTexture(key: String, frame: integer): this.type = js.native
+  def setTexture(key: String, frame: Double): this.type = js.native
   
   /**
     * Sets {@link Phaser.GameObjects.TileSprite#tilePositionX} and {@link Phaser.GameObjects.TileSprite#tilePositionY}.

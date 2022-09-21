@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param cnstr The connection string for your cluster.
   * @param options The options object.
   */
-class Cluster () extends StObject {
+open class Cluster () extends StObject {
   def this(cnstr: String) = this()
   def this(cnstr: String, options: ClusterConstructorOptions) = this()
   def this(cnstr: Unit, options: ClusterConstructorOptions) = this()

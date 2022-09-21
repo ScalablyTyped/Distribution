@@ -22,7 +22,7 @@ object areaMeasurement3DMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with AreaMeasurement3D {
     def this(properties: AreaMeasurement3DProperties) = this()

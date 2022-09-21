@@ -1,7 +1,7 @@
 
 # Scala.js typings for it-drain
 
-Typings are for version 1.0.3
+Typings are for version 1.0.5
 
 ## Library description:
 Empties an async iterator
@@ -11,12 +11,12 @@ Empties an async iterator
 | Full name          | it-drain |
 | Keywords           | - |
 | # releases         | 5 |
-| # dependents       | 9 |
-| # downloads        | 265125 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 236331.66666666666 |
+| # stars            | 200.0 |
 
 ## Links
-- [Homepage](https://github.com/achingbrain/it#readme)
+- [Homepage](https://github.com/achingbrain/it/tree/master/packages/it-drain#readme)
 - [Bugs](https://github.com/achingbrain/it/issues)
 - [Repository](https://github.com/achingbrain/it)
 - [Npm](https://www.npmjs.com/package/it-drain)

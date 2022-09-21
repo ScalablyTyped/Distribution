@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-s3-browser", "PutBucketEncryptionCommand")
 @js.native
-class PutBucketEncryptionCommand protected ()
+open class PutBucketEncryptionCommand protected ()
   extends typings.awsSdkClientS3Browser.putBucketEncryptionCommandMod.PutBucketEncryptionCommand {
   def this(input: PutBucketEncryptionInput) = this()
 }

@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TranscriptionJobSummary extends StObject {
   
   /**
-    * A timestamp that shows when the job was completed.
+    * The date and time the specified transcription job finished processing. Timestamps are in the format YYYY-MM-DD'T'HH:MM:SS.SSSSSS-UTC. For example, 2022-05-04T12:33:13.922000-07:00 represents a transcription job that started processing at 12:33 PM UTC-7 on May 4, 2022.
     */
-  var CompletionTime: js.UndefOr[DateTime] = js.undefined
+  var CompletionTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The content redaction settings of the transcription job.
@@ -17,49 +17,59 @@ trait TranscriptionJobSummary extends StObject {
   var ContentRedaction: js.UndefOr[typings.awsSdk.transcribeserviceMod.ContentRedaction] = js.undefined
   
   /**
-    * A timestamp that shows when the job was created.
+    * The date and time the specified transcription job request was made. Timestamps are in the format YYYY-MM-DD'T'HH:MM:SS.SSSSSS-UTC. For example, 2022-05-04T12:32:58.761000-07:00 represents a transcription job that started processing at 12:32 PM UTC-7 on May 4, 2022.
     */
-  var CreationTime: js.UndefOr[DateTime] = js.undefined
+  var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * If the TranscriptionJobStatus field is FAILED, a description of the error.
+    * If TranscriptionJobStatus is FAILED, FailureReason contains information about why the transcription job failed. See also: Common Errors.
     */
   var FailureReason: js.UndefOr[typings.awsSdk.transcribeserviceMod.FailureReason] = js.undefined
   
   /**
-    * A value between zero and one that Amazon Transcribe assigned to the language it identified in the source audio. A higher score indicates that Amazon Transcribe is more confident in the language it identified.
+    * The confidence score associated with the language identified in your media file. Confidence scores are values between 0 and 1; a larger value indicates a higher probability that the identified language correctly matches the language spoken in your media.
     */
   var IdentifiedLanguageScore: js.UndefOr[typings.awsSdk.transcribeserviceMod.IdentifiedLanguageScore] = js.undefined
   
   /**
-    * Whether automatic language identification was enabled for a transcription job.
+    * Indicates whether automatic language identification was enabled (TRUE) for the specified transcription job.
     */
   var IdentifyLanguage: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The language code for the input speech.
+    * Indicates whether automatic multi-language identification was enabled (TRUE) for the specified transcription job.
+    */
+  var IdentifyMultipleLanguages: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * The language code used to create your transcription.
     */
   var LanguageCode: js.UndefOr[typings.awsSdk.transcribeserviceMod.LanguageCode] = js.undefined
+  
+  /**
+    * The language codes used to create your transcription job. This parameter is used with multi-language identification. For single-language identification, the singular version of this parameter, LanguageCode, is present.
+    */
+  var LanguageCodes: js.UndefOr[LanguageCodeList] = js.undefined
   
   var ModelSettings: js.UndefOr[typings.awsSdk.transcribeserviceMod.ModelSettings] = js.undefined
   
   /**
-    * Indicates the location of the output of the transcription job. If the value is CUSTOMER_BUCKET then the location is the S3 bucket specified in the outputBucketName field when the transcription job was started with the StartTranscriptionJob operation. If the value is SERVICE_BUCKET then the output is stored by Amazon Transcribe and can be retrieved using the URI in the GetTranscriptionJob response's TranscriptFileUri field.
+    * Indicates where the specified transcription output is stored. If the value is CUSTOMER_BUCKET, the location is the Amazon S3 bucket you specified using the OutputBucketName parameter in your request. If you also included OutputKey in your request, your output is located in the path you specified in your request. If the value is SERVICE_BUCKET, the location is a service-managed Amazon S3 bucket. To access a transcript stored in a service-managed bucket, use the URI shown in the TranscriptFileUri or RedactedTranscriptFileUri field.
     */
   var OutputLocationType: js.UndefOr[typings.awsSdk.transcribeserviceMod.OutputLocationType] = js.undefined
   
   /**
-    * A timestamp that shows when the job started processing.
+    * The date and time your transcription job began processing. Timestamps are in the format YYYY-MM-DD'T'HH:MM:SS.SSSSSS-UTC. For example, 2022-05-04T12:32:58.789000-07:00 represents a transcription job that started processing at 12:32 PM UTC-7 on May 4, 2022.
     */
-  var StartTime: js.UndefOr[DateTime] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The name of the transcription job.
+    * The name of the transcription job. Job names are case sensitive and must be unique within an Amazon Web Services account.
     */
   var TranscriptionJobName: js.UndefOr[typings.awsSdk.transcribeserviceMod.TranscriptionJobName] = js.undefined
   
   /**
-    * The status of the transcription job. When the status is COMPLETED, use the GetTranscriptionJob operation to get the results of the transcription.
+    * Provides the status of your transcription job. If the status is COMPLETED, the job is finished and you can find the results at the location specified in TranscriptFileUri (or RedactedTranscriptFileUri, if you requested transcript redaction). If the status is FAILED, FailureReason provides details on why your transcription job failed.
     */
   var TranscriptionJobStatus: js.UndefOr[typings.awsSdk.transcribeserviceMod.TranscriptionJobStatus] = js.undefined
 }
@@ -72,7 +82,7 @@ object TranscriptionJobSummary {
   
   extension [Self <: TranscriptionJobSummary](x: Self) {
     
-    inline def setCompletionTime(value: DateTime): Self = StObject.set(x, "CompletionTime", value.asInstanceOf[js.Any])
+    inline def setCompletionTime(value: js.Date): Self = StObject.set(x, "CompletionTime", value.asInstanceOf[js.Any])
     
     inline def setCompletionTimeUndefined: Self = StObject.set(x, "CompletionTime", js.undefined)
     
@@ -80,7 +90,7 @@ object TranscriptionJobSummary {
     
     inline def setContentRedactionUndefined: Self = StObject.set(x, "ContentRedaction", js.undefined)
     
-    inline def setCreationTime(value: DateTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
@@ -96,9 +106,19 @@ object TranscriptionJobSummary {
     
     inline def setIdentifyLanguageUndefined: Self = StObject.set(x, "IdentifyLanguage", js.undefined)
     
+    inline def setIdentifyMultipleLanguages(value: Boolean): Self = StObject.set(x, "IdentifyMultipleLanguages", value.asInstanceOf[js.Any])
+    
+    inline def setIdentifyMultipleLanguagesUndefined: Self = StObject.set(x, "IdentifyMultipleLanguages", js.undefined)
+    
     inline def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     
     inline def setLanguageCodeUndefined: Self = StObject.set(x, "LanguageCode", js.undefined)
+    
+    inline def setLanguageCodes(value: LanguageCodeList): Self = StObject.set(x, "LanguageCodes", value.asInstanceOf[js.Any])
+    
+    inline def setLanguageCodesUndefined: Self = StObject.set(x, "LanguageCodes", js.undefined)
+    
+    inline def setLanguageCodesVarargs(value: LanguageCodeItem*): Self = StObject.set(x, "LanguageCodes", js.Array(value*))
     
     inline def setModelSettings(value: ModelSettings): Self = StObject.set(x, "ModelSettings", value.asInstanceOf[js.Any])
     
@@ -108,7 +128,7 @@ object TranscriptionJobSummary {
     
     inline def setOutputLocationTypeUndefined: Self = StObject.set(x, "OutputLocationType", js.undefined)
     
-    inline def setStartTime(value: DateTime): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     

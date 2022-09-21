@@ -10,10 +10,10 @@ Common error classes and utility functions
 | ------------------ | :-------------: |
 | Full name          | common-errors |
 | Keywords           | error, errors, common errors, exception, exceptions, validation, standard, argument, null, database, data, mysql, sql, db, memcached, redis, transaction, rollback, connection, status codes, log, crash, error handler |
-| # releases         | 3 |
-| # dependents       | 75 |
-| # downloads        | 353992 |
-| # stars            | 20 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 34243.0 |
+| # stars            | 278.0 |
 
 ## Links
 - [Homepage](https://github.com/shutterstock/node-common-errors)

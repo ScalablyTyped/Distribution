@@ -10,8 +10,13 @@ trait colorboard
   extends StObject
      with baseview {
   
+  @JSName("$prepareValue")
+  def $prepareValue(args: Any*): Any = js.native
+  @JSName("$prepareValue")
+  var $prepareValue_Original: WebixCallback = js.native
+  
   @JSName("$scope")
-  var $scope: js.Any = js.native
+  var $scope: Any = js.native
   
   @JSName("$setValue")
   def $setValue(value: String): Unit = js.native
@@ -21,7 +26,7 @@ trait colorboard
   
   def blockEvent(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[Any]): Boolean = js.native
   
   @JSName("config")
   var config_colorboard: colorboardConfig = js.native
@@ -32,14 +37,14 @@ trait colorboard
   
   def hasEvent(name: String): Boolean = js.native
   
-  def mapEvent(map: js.Any): Unit = js.native
+  def mapEvent(map: Any): Unit = js.native
   
   def moveSelection(direction: String): Unit = js.native
   
   def refresh(): Unit = js.native
   
-  def render(id: String, data: js.Any, `type`: String): Unit = js.native
-  def render(id: Double, data: js.Any, `type`: String): Unit = js.native
+  def render(id: String, data: Any, `type`: String): Unit = js.native
+  def render(id: Double, data: Any, `type`: String): Unit = js.native
   
   def setValue(value: String): String = js.native
   

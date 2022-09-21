@@ -11,9 +11,9 @@ A small and simple package which can traverse a XML document
 | Full name          | xmljs |
 | Keywords           | xml, xmljs, soap |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 31000 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1107.6666666666667 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/blackshadev/xmljs)

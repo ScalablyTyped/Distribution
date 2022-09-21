@@ -24,6 +24,6 @@ object GetFindingStatisticsResponse {
     
     inline def setCountsByGroupUndefined: Self = StObject.set(x, "countsByGroup", js.undefined)
     
-    inline def setCountsByGroupVarargs(value: GroupCount*): Self = StObject.set(x, "countsByGroup", js.Array(value :_*))
+    inline def setCountsByGroupVarargs(value: GroupCount*): Self = StObject.set(x, "countsByGroup", js.Array(value*))
   }
 }

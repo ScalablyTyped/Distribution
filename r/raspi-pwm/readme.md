@@ -10,10 +10,10 @@ Provides access to PWM on the Raspberry Pi as part of the Raspi.js library suite
 | ------------------ | :-------------: |
 | Full name          | raspi-pwm |
 | Keywords           | nodebots, robotics, raspberry pi |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 2277 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 167.0 |
+| # stars            | 26.0 |
 
 ## Links
 - [Homepage](https://github.com/nebrius/raspi-pwm)

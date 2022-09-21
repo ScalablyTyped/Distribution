@@ -46,7 +46,7 @@ object XExtendedTextConversion {
     getConversionWithOffset: (String, Double, Double, Locale, Double, Double, js.Array[SeqEquiv[Double]]) => String,
     getConversions: (String, Double, Double, Locale, Double, Double) => TextConversionResult,
     interactiveConversion: (Locale, Double, Double) => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XExtendedTextConversion = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), getConversion = js.Any.fromFunction6(getConversion), getConversionWithOffset = js.Any.fromFunction7(getConversionWithOffset), getConversions = js.Any.fromFunction6(getConversions), interactiveConversion = js.Any.fromFunction3(interactiveConversion), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

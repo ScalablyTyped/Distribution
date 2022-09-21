@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientTreeListCustomButtonEventArgs")
 @js.native
-class ASPxClientTreeListCustomButtonEventArgs ()
+open class ASPxClientTreeListCustomButtonEventArgs ()
   extends StObject
      with typings.devexpressWeb.ASPxClientTreeListCustomButtonEventArgs {
   

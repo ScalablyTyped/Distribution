@@ -24,12 +24,12 @@ trait Fragment extends StObject {
   /**
     * The timestamp from the producer corresponding to the fragment.
     */
-  var ProducerTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var ProducerTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The timestamp from the AWS server corresponding to the fragment.
     */
-  var ServerTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var ServerTimestamp: js.UndefOr[js.Date] = js.undefined
 }
 object Fragment {
   
@@ -52,11 +52,11 @@ object Fragment {
     
     inline def setFragmentSizeInBytesUndefined: Self = StObject.set(x, "FragmentSizeInBytes", js.undefined)
     
-    inline def setProducerTimestamp(value: Timestamp): Self = StObject.set(x, "ProducerTimestamp", value.asInstanceOf[js.Any])
+    inline def setProducerTimestamp(value: js.Date): Self = StObject.set(x, "ProducerTimestamp", value.asInstanceOf[js.Any])
     
     inline def setProducerTimestampUndefined: Self = StObject.set(x, "ProducerTimestamp", js.undefined)
     
-    inline def setServerTimestamp(value: Timestamp): Self = StObject.set(x, "ServerTimestamp", value.asInstanceOf[js.Any])
+    inline def setServerTimestamp(value: js.Date): Self = StObject.set(x, "ServerTimestamp", value.asInstanceOf[js.Any])
     
     inline def setServerTimestampUndefined: Self = StObject.set(x, "ServerTimestamp", js.undefined)
   }

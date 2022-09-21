@@ -22,6 +22,6 @@ object LoggingConfiguration {
     
     inline def setLogDestinationConfigs(value: LogDestinationConfigs): Self = StObject.set(x, "LogDestinationConfigs", value.asInstanceOf[js.Any])
     
-    inline def setLogDestinationConfigsVarargs(value: LogDestinationConfig*): Self = StObject.set(x, "LogDestinationConfigs", js.Array(value :_*))
+    inline def setLogDestinationConfigsVarargs(value: LogDestinationConfig*): Self = StObject.set(x, "LogDestinationConfigs", js.Array(value*))
   }
 }

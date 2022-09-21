@@ -11,8 +11,6 @@ trait PushMaterial
   
   /* protected */ var _activeEffect: Effect = js.native
   
-  /* protected */ def _afterBind(mesh: Mesh, effect: Nullable[Effect]): Unit = js.native
-  
   /* protected */ def _isReadyForSubMesh(subMesh: SubMesh): Boolean = js.native
   
   /* protected */ def _mustRebind(scene: Scene, effect: Effect): Boolean = js.native

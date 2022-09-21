@@ -14,7 +14,7 @@ trait ModifyScheduledActionMessage extends StObject {
   /**
     * A modified end time of the scheduled action. For more information about this parameter, see ScheduledAction. 
     */
-  var EndTime: js.UndefOr[TStamp] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A different IAM role to assume to run the target action. For more information about this parameter, see ScheduledAction.
@@ -39,7 +39,7 @@ trait ModifyScheduledActionMessage extends StObject {
   /**
     * A modified start time of the scheduled action. For more information about this parameter, see ScheduledAction. 
     */
-  var StartTime: js.UndefOr[TStamp] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A modified JSON format of the scheduled action. For more information about this parameter, see ScheduledAction. 
@@ -59,7 +59,7 @@ object ModifyScheduledActionMessage {
     
     inline def setEnableUndefined: Self = StObject.set(x, "Enable", js.undefined)
     
-    inline def setEndTime(value: TStamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
@@ -77,7 +77,7 @@ object ModifyScheduledActionMessage {
     
     inline def setScheduledActionName(value: String): Self = StObject.set(x, "ScheduledActionName", value.asInstanceOf[js.Any])
     
-    inline def setStartTime(value: TStamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     

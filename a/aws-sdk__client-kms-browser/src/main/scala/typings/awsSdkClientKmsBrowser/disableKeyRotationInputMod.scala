@@ -8,5 +8,5 @@ object disableKeyRotationInputMod {
   
   @JSImport("@aws-sdk/client-kms-browser/model/DisableKeyRotationInput", "DisableKeyRotationInput")
   @js.native
-  val DisableKeyRotationInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val DisableKeyRotationInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

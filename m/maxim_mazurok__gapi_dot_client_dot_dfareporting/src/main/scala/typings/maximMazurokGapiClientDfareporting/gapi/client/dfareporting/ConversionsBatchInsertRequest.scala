@@ -28,7 +28,7 @@ object ConversionsBatchInsertRequest {
     
     inline def setConversionsUndefined: Self = StObject.set(x, "conversions", js.undefined)
     
-    inline def setConversionsVarargs(value: Conversion*): Self = StObject.set(x, "conversions", js.Array(value :_*))
+    inline def setConversionsVarargs(value: Conversion*): Self = StObject.set(x, "conversions", js.Array(value*))
     
     inline def setEncryptionInfo(value: EncryptionInfo): Self = StObject.set(x, "encryptionInfo", value.asInstanceOf[js.Any])
     

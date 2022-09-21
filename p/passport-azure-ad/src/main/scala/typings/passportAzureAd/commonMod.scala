@@ -2,7 +2,9 @@ package typings.passportAzureAd
 
 import typings.passportAzureAd.passportAzureAdBooleans.`true`
 import typings.passportAzureAd.passportAzureAdStrings.`0`
+import typings.passportAzureAd.passportAzureAdStrings.`1Dot0`
 import typings.passportAzureAd.passportAzureAdStrings.`1`
+import typings.passportAzureAd.passportAzureAdStrings.`2Dot0`
 import typings.passportAzureAd.passportAzureAdStrings.`2`
 import typings.passportAzureAd.passportAzureAdStrings.error
 import typings.passportAzureAd.passportAzureAdStrings.info
@@ -56,7 +58,7 @@ object commonMod {
       
       inline def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
       
-      inline def setIssuerVarargs(value: String*): Self = StObject.set(x, "issuer", js.Array(value :_*))
+      inline def setIssuerVarargs(value: String*): Self = StObject.set(x, "issuer", js.Array(value*))
       
       inline def setLoggingLevel(value: info | warn | error): Self = StObject.set(x, "loggingLevel", value.asInstanceOf[js.Any])
       
@@ -74,19 +76,19 @@ object commonMod {
   
   trait ITokenPayload extends StObject {
     
-    /** The "Authentication context class" claim. A value of "0" indicates the end-user authentication did not meet the requirements of ISO/IEC 29115. */
+    /** Only present in v1.0 tokens. The "Authentication context class" claim. A value of "0" indicates the end-user authentication did not meet the requirements of ISO/IEC 29115. */
     var acr: js.UndefOr[`0` | `1`] = js.undefined
     
     /** An internal claim used by Azure AD to record data for token reuse. */
     var aio: js.UndefOr[String] = js.undefined
     
-    /** Identifies how the subject of the token was authenticated.  */
+    /** Only present in v1.0 tokens. Identifies how the subject of the token was authenticated.  */
     var amr: js.UndefOr[js.Array[String]] = js.undefined
     
-    /** GUID represents the application ID of the client using the token. */
+    /** Only present in v1.0 tokens. GUID represents the application ID of the client using the token. */
     var appid: js.UndefOr[String] = js.undefined
     
-    /** Indicates how the client was authenticated. For a public client, the value is "0".
+    /** Only present in v1.0 tokens. Indicates how the client was authenticated. For a public client, the value is "0".
       * If client ID and client secret are used, the value is "1". If a client certificate was used for authentication, the value is "2". */
     var appidacr: js.UndefOr[`0` | `1` | `2`] = js.undefined
     
@@ -103,6 +105,12 @@ object commonMod {
     /** The "exp" (expiration time) claim identifies the expiration time on or after which the JWT must not be accepted for processing. */
     var exp: js.UndefOr[Double] = js.undefined
     
+    /** Provides the last name, surname, or family name of the user as defined on the user object. */
+    var family_name: js.UndefOr[String] = js.undefined
+    
+    /** Provides the first or given name of the user, as set on the user object. */
+    var given_name: js.UndefOr[String] = js.undefined
+    
     /** Provides object IDs that represent the subject's group memberships. */
     var groups: js.UndefOr[String | js.Array[String]] = js.undefined
     
@@ -111,6 +119,16 @@ object commonMod {
     
     /** "Issued At" indicates when the authentication for this token occurred. */
     var iat: js.UndefOr[Double] = js.undefined
+    
+    /** The identity provider that authenticated the subject of the token*/
+    var idp: js.UndefOr[String] = js.undefined
+    
+    /** Signals if the client is logging in from the corporate network. If they aren't, the claim isn't included. */
+    var in_corp: js.UndefOr[String] = js.undefined
+    
+    /** v1.0 basic claims */
+    /** The IP address the user authenticated from. */
+    var ipaddr: js.UndefOr[String] = js.undefined
     
     /** A security token service(STS) URI. Identifies the STS that constructs and returns the token,
       * and the Azure AD tenant in which the user was authenticated.*/
@@ -123,17 +141,29 @@ object commonMod {
     /** The "nbf" (not before) claim identifies the time before which the JWT must not be accepted for processing. */
     var nbf: js.UndefOr[Double] = js.undefined
     
+    /** An additional name for the user, separate from first or last name */
+    var nickname: js.UndefOr[String] = js.undefined
+    
     /** GUID represents a user. This ID uniquely identifies the user across applications. */
     var oid: js.UndefOr[String] = js.undefined
     
+    /** In cases where the user has an on-premises authentication, this claim provides their SID. */
+    var onprem_sid: js.UndefOr[String] = js.undefined
+    
     /** Only present in v2.0 tokens. The primary username that represents the user. It could be an email address, phone number, or a generic username without a specified format */
-    var preferred_name: js.UndefOr[String] = js.undefined
+    var preferred_username: js.UndefOr[String] = js.undefined
+    
+    /** Indicates when the user's password expires. */
+    var pwd_exp: js.UndefOr[Double] = js.undefined
+    
+    /** A URL where users can be sent to reset their password. */
+    var pwd_url: js.UndefOr[String] = js.undefined
     
     /** An internal claim used by Azure to revalidate tokens. */
     var rh: js.UndefOr[String] = js.undefined
     
     /** The set of permissions exposed by your application that the requesting application has been given permission to call. */
-    var roles: js.UndefOr[String] = js.undefined
+    var roles: js.UndefOr[js.Array[String]] = js.undefined
     
     /** The set of scopes exposed by your application for which the client application has requested (and received) consent. */
     var scp: js.UndefOr[String] = js.undefined
@@ -157,7 +187,7 @@ object commonMod {
     var uti: js.UndefOr[String] = js.undefined
     
     /** Indicates the version of the access token. */
-    var ver: js.UndefOr[String] = js.undefined
+    var ver: js.UndefOr[`1Dot0` | `2Dot0`] = js.undefined
   }
   object ITokenPayload {
     
@@ -180,7 +210,7 @@ object commonMod {
       
       inline def setAmrUndefined: Self = StObject.set(x, "amr", js.undefined)
       
-      inline def setAmrVarargs(value: String*): Self = StObject.set(x, "amr", js.Array(value :_*))
+      inline def setAmrVarargs(value: String*): Self = StObject.set(x, "amr", js.Array(value*))
       
       inline def setAppid(value: String): Self = StObject.set(x, "appid", value.asInstanceOf[js.Any])
       
@@ -206,11 +236,19 @@ object commonMod {
       
       inline def setExpUndefined: Self = StObject.set(x, "exp", js.undefined)
       
+      inline def setFamily_name(value: String): Self = StObject.set(x, "family_name", value.asInstanceOf[js.Any])
+      
+      inline def setFamily_nameUndefined: Self = StObject.set(x, "family_name", js.undefined)
+      
+      inline def setGiven_name(value: String): Self = StObject.set(x, "given_name", value.asInstanceOf[js.Any])
+      
+      inline def setGiven_nameUndefined: Self = StObject.set(x, "given_name", js.undefined)
+      
       inline def setGroups(value: String | js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
       
       inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
       
-      inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
+      inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value*))
       
       inline def setHasgroups(value: `true`): Self = StObject.set(x, "hasgroups", value.asInstanceOf[js.Any])
       
@@ -219,6 +257,18 @@ object commonMod {
       inline def setIat(value: Double): Self = StObject.set(x, "iat", value.asInstanceOf[js.Any])
       
       inline def setIatUndefined: Self = StObject.set(x, "iat", js.undefined)
+      
+      inline def setIdp(value: String): Self = StObject.set(x, "idp", value.asInstanceOf[js.Any])
+      
+      inline def setIdpUndefined: Self = StObject.set(x, "idp", js.undefined)
+      
+      inline def setIn_corp(value: String): Self = StObject.set(x, "in_corp", value.asInstanceOf[js.Any])
+      
+      inline def setIn_corpUndefined: Self = StObject.set(x, "in_corp", js.undefined)
+      
+      inline def setIpaddr(value: String): Self = StObject.set(x, "ipaddr", value.asInstanceOf[js.Any])
+      
+      inline def setIpaddrUndefined: Self = StObject.set(x, "ipaddr", js.undefined)
       
       inline def setIss(value: String): Self = StObject.set(x, "iss", value.asInstanceOf[js.Any])
       
@@ -232,21 +282,39 @@ object commonMod {
       
       inline def setNbfUndefined: Self = StObject.set(x, "nbf", js.undefined)
       
+      inline def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
+      
+      inline def setNicknameUndefined: Self = StObject.set(x, "nickname", js.undefined)
+      
       inline def setOid(value: String): Self = StObject.set(x, "oid", value.asInstanceOf[js.Any])
       
       inline def setOidUndefined: Self = StObject.set(x, "oid", js.undefined)
       
-      inline def setPreferred_name(value: String): Self = StObject.set(x, "preferred_name", value.asInstanceOf[js.Any])
+      inline def setOnprem_sid(value: String): Self = StObject.set(x, "onprem_sid", value.asInstanceOf[js.Any])
       
-      inline def setPreferred_nameUndefined: Self = StObject.set(x, "preferred_name", js.undefined)
+      inline def setOnprem_sidUndefined: Self = StObject.set(x, "onprem_sid", js.undefined)
+      
+      inline def setPreferred_username(value: String): Self = StObject.set(x, "preferred_username", value.asInstanceOf[js.Any])
+      
+      inline def setPreferred_usernameUndefined: Self = StObject.set(x, "preferred_username", js.undefined)
+      
+      inline def setPwd_exp(value: Double): Self = StObject.set(x, "pwd_exp", value.asInstanceOf[js.Any])
+      
+      inline def setPwd_expUndefined: Self = StObject.set(x, "pwd_exp", js.undefined)
+      
+      inline def setPwd_url(value: String): Self = StObject.set(x, "pwd_url", value.asInstanceOf[js.Any])
+      
+      inline def setPwd_urlUndefined: Self = StObject.set(x, "pwd_url", js.undefined)
       
       inline def setRh(value: String): Self = StObject.set(x, "rh", value.asInstanceOf[js.Any])
       
       inline def setRhUndefined: Self = StObject.set(x, "rh", js.undefined)
       
-      inline def setRoles(value: String): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
+      inline def setRoles(value: js.Array[String]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
       
       inline def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
+      
+      inline def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value*))
       
       inline def setScp(value: String): Self = StObject.set(x, "scp", value.asInstanceOf[js.Any])
       
@@ -272,11 +340,11 @@ object commonMod {
       
       inline def setUtiUndefined: Self = StObject.set(x, "uti", js.undefined)
       
-      inline def setVer(value: String): Self = StObject.set(x, "ver", value.asInstanceOf[js.Any])
+      inline def setVer(value: `1Dot0` | `2Dot0`): Self = StObject.set(x, "ver", value.asInstanceOf[js.Any])
       
       inline def setVerUndefined: Self = StObject.set(x, "ver", js.undefined)
     }
   }
   
-  type VerifyCallback = js.Function3[/* error */ js.Any, /* user */ js.UndefOr[js.Any], /* info */ js.UndefOr[js.Any], Unit]
+  type VerifyCallback = js.Function3[/* error */ Any, /* user */ js.UndefOr[Any], /* info */ js.UndefOr[Any], Unit]
 }

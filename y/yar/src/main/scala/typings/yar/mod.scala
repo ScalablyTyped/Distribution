@@ -49,16 +49,16 @@ object mod extends Shortcut {
       * 'isOverride' used to indicate that the message provided should replace
       * any existing value instead of being appended to it (defaults to false).
       */
-    def flash(`type`: String): js.Array[js.Any] = js.native
-    def flash(`type`: String, message: js.Any): js.Array[js.Any] = js.native
-    def flash(`type`: String, message: js.Any, isOverride: Boolean): js.Array[js.Any] = js.native
-    def flash(`type`: String, message: Unit, isOverride: Boolean): js.Array[js.Any] = js.native
+    def flash(`type`: String): js.Array[Any] = js.native
+    def flash(`type`: String, message: Any): js.Array[Any] = js.native
+    def flash(`type`: String, message: Any, isOverride: Boolean): js.Array[Any] = js.native
+    def flash(`type`: String, message: Unit, isOverride: Boolean): js.Array[Any] = js.native
     
     /**
       * retrieve value using a key. If 'clear' is 'true', key is cleared on return.
       */
-    def get(key: String): js.Any = js.native
-    def get(key: String, clear: Boolean): js.Any = js.native
+    def get(key: String): Any = js.native
+    def get(key: String, clear: Boolean): Any = js.native
     
     /**
       * Session id, see `customSessionIDGenerator`.
@@ -86,7 +86,7 @@ object mod extends Shortcut {
     /**
       *  assigns values to multiple keys using each 'keysObject' top-level property. Returns the keysObject.
       */
-    def set[T /* <: StringDictionary[js.Any] */](keysObject: T): T = js.native
+    def set[T /* <: StringDictionary[Any] */](keysObject: T): T = js.native
     
     /**
       * Manually notify the session of changes (when using get()
@@ -100,7 +100,7 @@ object mod extends Shortcut {
     /**
       * hapi cache options which includes (among other options):
       */
-    var cache: js.UndefOr[CachePolicyOptions[js.Any]] = js.undefined
+    var cache: js.UndefOr[CachePolicyOptions[Any]] = js.undefined
     
     /**
       * the configuration for cookie-specific features:
@@ -141,7 +141,7 @@ object mod extends Shortcut {
     
     extension [Self <: YarOptions](x: Self) {
       
-      inline def setCache(value: CachePolicyOptions[js.Any]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: CachePolicyOptions[Any]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
       inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       

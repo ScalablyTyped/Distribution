@@ -11,7 +11,7 @@ object maxPoolBackpropGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/max_pool_backprop_gpu", "MaxPool2DBackpropProgram")
   @js.native
-  class MaxPool2DBackpropProgram protected ()
+  open class MaxPool2DBackpropProgram protected ()
     extends StObject
        with GPGPUProgram {
     def this(convInfo: Conv2DInfo) = this()
@@ -28,7 +28,7 @@ object maxPoolBackpropGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/max_pool_backprop_gpu", "MaxPool3DBackpropProgram")
   @js.native
-  class MaxPool3DBackpropProgram protected ()
+  open class MaxPool3DBackpropProgram protected ()
     extends StObject
        with GPGPUProgram {
     def this(convInfo: Conv3DInfo) = this()

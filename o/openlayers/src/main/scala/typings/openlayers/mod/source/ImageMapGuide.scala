@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("openlayers", "source.ImageMapGuide")
 @js.native
-class ImageMapGuide protected () extends Image {
+open class ImageMapGuide protected () extends Image {
   /**
     * @classdesc
     * Source for images from Mapguide servers

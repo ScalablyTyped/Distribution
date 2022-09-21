@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "PersonaCoinBase")
 @js.native
-class PersonaCoinBase protected ()
+open class PersonaCoinBase protected ()
   extends typings.officeUiFabricReact.mod.PersonaCoinBase {
   def this(props: IPersonaCoinProps) = this()
 }

@@ -39,7 +39,7 @@ trait DescribeEnvironmentHealthResult extends StObject {
   /**
     * The date and time that the health information was retrieved.
     */
-  var RefreshedAt: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.RefreshedAt] = js.undefined
+  var RefreshedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The environment's operational status. Ready, Launching, Updating, Terminating, or Terminated.
@@ -63,7 +63,7 @@ object DescribeEnvironmentHealthResult {
     
     inline def setCausesUndefined: Self = StObject.set(x, "Causes", js.undefined)
     
-    inline def setCausesVarargs(value: Cause*): Self = StObject.set(x, "Causes", js.Array(value :_*))
+    inline def setCausesVarargs(value: Cause*): Self = StObject.set(x, "Causes", js.Array(value*))
     
     inline def setColor(value: String): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
     
@@ -81,7 +81,7 @@ object DescribeEnvironmentHealthResult {
     
     inline def setInstancesHealthUndefined: Self = StObject.set(x, "InstancesHealth", js.undefined)
     
-    inline def setRefreshedAt(value: RefreshedAt): Self = StObject.set(x, "RefreshedAt", value.asInstanceOf[js.Any])
+    inline def setRefreshedAt(value: js.Date): Self = StObject.set(x, "RefreshedAt", value.asInstanceOf[js.Any])
     
     inline def setRefreshedAtUndefined: Self = StObject.set(x, "RefreshedAt", js.undefined)
     

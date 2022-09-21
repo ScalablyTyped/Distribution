@@ -17,7 +17,7 @@ object Player {
        with /**
     * Properties that are not part of this type description will be retained; so, this can be viewed as a generic metadata storage mechanism as well.
     */
-  /* key */ StringDictionary[js.Any] {
+  /* key */ StringDictionary[Any] {
     
     /**
       * Unused, except if this object is passed to the MediaSession API.
@@ -32,7 +32,7 @@ object Player {
     /**
       * Unused, except if this object is passed to the MediaSession API. If not specified, will be populated via the poster, if available.
       */
-    var artwork: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var artwork: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * URL to an image that will display before playback.
@@ -49,7 +49,7 @@ object Player {
       *  An array of objects to be used to create text tracks, following the native track element format.
       *  For ease of removal, these will be created as "remote" text tracks and set to automatically clean up on source changes.
       */
-    var textTracks: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var textTracks: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Unused, except if this object is passed to the MediaSession API.
@@ -73,11 +73,11 @@ object Player {
       
       inline def setArtistUndefined: Self = StObject.set(x, "artist", js.undefined)
       
-      inline def setArtwork(value: js.Array[js.Any]): Self = StObject.set(x, "artwork", value.asInstanceOf[js.Any])
+      inline def setArtwork(value: js.Array[Any]): Self = StObject.set(x, "artwork", value.asInstanceOf[js.Any])
       
       inline def setArtworkUndefined: Self = StObject.set(x, "artwork", js.undefined)
       
-      inline def setArtworkVarargs(value: js.Any*): Self = StObject.set(x, "artwork", js.Array(value :_*))
+      inline def setArtworkVarargs(value: Any*): Self = StObject.set(x, "artwork", js.Array(value*))
       
       inline def setPoster(value: String): Self = StObject.set(x, "poster", value.asInstanceOf[js.Any])
       
@@ -87,13 +87,13 @@ object Player {
       
       inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
       
-      inline def setSrcVarargs(value: SourceObject*): Self = StObject.set(x, "src", js.Array(value :_*))
+      inline def setSrcVarargs(value: SourceObject*): Self = StObject.set(x, "src", js.Array(value*))
       
-      inline def setTextTracks(value: js.Array[js.Any]): Self = StObject.set(x, "textTracks", value.asInstanceOf[js.Any])
+      inline def setTextTracks(value: js.Array[Any]): Self = StObject.set(x, "textTracks", value.asInstanceOf[js.Any])
       
       inline def setTextTracksUndefined: Self = StObject.set(x, "textTracks", js.undefined)
       
-      inline def setTextTracksVarargs(value: js.Any*): Self = StObject.set(x, "textTracks", js.Array(value :_*))
+      inline def setTextTracksVarargs(value: Any*): Self = StObject.set(x, "textTracks", js.Array(value*))
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       

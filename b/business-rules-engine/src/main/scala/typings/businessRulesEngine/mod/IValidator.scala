@@ -9,16 +9,16 @@ trait IValidator extends StObject {
   
   var Error: IError
   
-  def Validate(context: js.Any): IValidationFailure
+  def Validate(context: Any): IValidationFailure
   
-  def ValidateAsync(context: js.Any): Promise[IValidationFailure]
+  def ValidateAsync(context: Any): Promise[IValidationFailure]
 }
 object IValidator {
   
   inline def apply(
     Error: IError,
-    Validate: js.Any => IValidationFailure,
-    ValidateAsync: js.Any => Promise[IValidationFailure]
+    Validate: Any => IValidationFailure,
+    ValidateAsync: Any => Promise[IValidationFailure]
   ): IValidator = {
     val __obj = js.Dynamic.literal(Error = Error.asInstanceOf[js.Any], Validate = js.Any.fromFunction1(Validate), ValidateAsync = js.Any.fromFunction1(ValidateAsync))
     __obj.asInstanceOf[IValidator]
@@ -28,8 +28,8 @@ object IValidator {
     
     inline def setError(value: IError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     
-    inline def setValidate(value: js.Any => IValidationFailure): Self = StObject.set(x, "Validate", js.Any.fromFunction1(value))
+    inline def setValidate(value: Any => IValidationFailure): Self = StObject.set(x, "Validate", js.Any.fromFunction1(value))
     
-    inline def setValidateAsync(value: js.Any => Promise[IValidationFailure]): Self = StObject.set(x, "ValidateAsync", js.Any.fromFunction1(value))
+    inline def setValidateAsync(value: Any => Promise[IValidationFailure]): Self = StObject.set(x, "ValidateAsync", js.Any.fromFunction1(value))
   }
 }

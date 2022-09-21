@@ -18,5 +18,5 @@ object containsMod {
     *
     * @param seed - Seed
     */
-  inline def default(str: String, seed: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def default(str: String, seed: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

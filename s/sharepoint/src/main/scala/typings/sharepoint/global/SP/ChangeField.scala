@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.ChangeField")
 @js.native
-class ChangeField ()
+open class ChangeField ()
   extends StObject
      with typings.sharepoint.SP.ChangeField

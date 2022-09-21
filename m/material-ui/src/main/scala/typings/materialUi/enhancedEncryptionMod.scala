@@ -10,10 +10,10 @@ object enhancedEncryptionMod {
   
   @JSImport("material-ui/svg-icons/notification/enhanced-encryption", JSImport.Default)
   @js.native
-  class default () extends NotificationEnhancedEncryption
+  open class default () extends NotificationEnhancedEncryption
   
   @JSImport("material-ui/svg-icons/notification/enhanced-encryption", "NotificationEnhancedEncryption")
   @js.native
-  class NotificationEnhancedEncryption ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NotificationEnhancedEncryption ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

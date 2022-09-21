@@ -1,55 +1,31 @@
 package typings.localStorage
 
-import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
   
   @JSImport("local-storage", JSImport.Namespace)
   @js.native
-  val ^ : Accessor = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait Accessor extends StObject {
-    
-    def apply(key: String): js.Any = js.native
-    /**
-      * Invokes set if value is present and get otherwise
-      * https://github.com/bevacqua/local-storage#lskey-value
-      */
-    def apply(key: String, value: js.Any): Boolean = js.native
-    
-    /** https://github.com/bevacqua/local-storage#lsclear */
-    def clear(): Boolean = js.native
-    
-    /**
-      * Internally uses JSON.parse to parse value from storage without try/catch
-      * https://github.com/bevacqua/local-storage#lsgetkey
-      */
-    def get(key: String): js.Any = js.native
-    
-    /** https://github.com/bevacqua/local-storage#lsoffkey-fn */
-    def off(key: String, callback: Listener): Unit = js.native
-    
-    /** https://github.com/bevacqua/local-storage#lsonkey-fn */
-    def on(key: String, callback: Listener): Unit = js.native
-    
-    /** https://github.com/bevacqua/local-storage#lsremovekey */
-    def remove(key: String): Boolean = js.native
-    
-    /**
-      * Internally uses JSON.stringify before saving.
-      * https://github.com/bevacqua/local-storage#lssetkey-value
-      */
-    def set(key: String, value: js.Any): Boolean = js.native
-  }
+  inline def default[T](key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default[T](key: String, value: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  type Listener = js.Function3[/* newValue */ js.Any, /* oldValue */ js.Any, /* url */ String, js.Any]
+  inline def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
   
-  type _To = Accessor
+  inline def get[T](key: String): T = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: Accessor = ^
+  inline def off[T](key: String, cb: js.Function1[/* value */ T, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(key.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def off[T](key: String, cb: js.Function2[/* value */ T, /* old */ T, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(key.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def off[T](key: String, cb: js.Function3[/* value */ T, /* old */ T, /* url */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(key.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on[T](key: String, cb: js.Function1[/* value */ T, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(key.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on[T](key: String, cb: js.Function2[/* value */ T, /* old */ T, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(key.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on[T](key: String, cb: js.Function3[/* value */ T, /* old */ T, /* url */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(key.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def remove(key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def set[T](key: String, value: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

@@ -19,12 +19,12 @@ trait UtteranceData extends StObject {
   /**
     * The date that the utterance was first recorded.
     */
-  var firstUtteredDate: js.UndefOr[Timestamp] = js.undefined
+  var firstUtteredDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The date that the utterance was last recorded.
     */
-  var lastUtteredDate: js.UndefOr[Timestamp] = js.undefined
+  var lastUtteredDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The text that was entered by the user or the text representation of an audio clip.
@@ -48,11 +48,11 @@ object UtteranceData {
     
     inline def setDistinctUsersUndefined: Self = StObject.set(x, "distinctUsers", js.undefined)
     
-    inline def setFirstUtteredDate(value: Timestamp): Self = StObject.set(x, "firstUtteredDate", value.asInstanceOf[js.Any])
+    inline def setFirstUtteredDate(value: js.Date): Self = StObject.set(x, "firstUtteredDate", value.asInstanceOf[js.Any])
     
     inline def setFirstUtteredDateUndefined: Self = StObject.set(x, "firstUtteredDate", js.undefined)
     
-    inline def setLastUtteredDate(value: Timestamp): Self = StObject.set(x, "lastUtteredDate", value.asInstanceOf[js.Any])
+    inline def setLastUtteredDate(value: js.Date): Self = StObject.set(x, "lastUtteredDate", value.asInstanceOf[js.Any])
     
     inline def setLastUtteredDateUndefined: Self = StObject.set(x, "lastUtteredDate", js.undefined)
     

@@ -34,7 +34,7 @@ object Computer {
     
     inline def setComputerAttributesUndefined: Self = StObject.set(x, "ComputerAttributes", js.undefined)
     
-    inline def setComputerAttributesVarargs(value: Attribute*): Self = StObject.set(x, "ComputerAttributes", js.Array(value :_*))
+    inline def setComputerAttributesVarargs(value: Attribute*): Self = StObject.set(x, "ComputerAttributes", js.Array(value*))
     
     inline def setComputerId(value: SID): Self = StObject.set(x, "ComputerId", value.asInstanceOf[js.Any])
     

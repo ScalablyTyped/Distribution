@@ -3,6 +3,7 @@ package typings.babylonjs
 import typings.babylonjs.baseTextureMod.BaseTexture
 import typings.babylonjs.cubeTextureMod.CubeTexture
 import typings.babylonjs.iInspectableMod.IInspectable
+import typings.babylonjs.internalTextureMod.InternalTexture
 import typings.babylonjs.mathVectorMod.Matrix
 import typings.babylonjs.mirrorTextureMod.MirrorTexture
 import typings.babylonjs.observableMod.Observable
@@ -10,10 +11,9 @@ import typings.babylonjs.renderTargetTextureMod.RenderTargetTexture
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.thinEngineMod.ThinEngine
 import typings.babylonjs.typesMod.Nullable
-import typings.std.ArrayBuffer
-import typings.std.ArrayBufferView
 import typings.std.Blob
 import typings.std.HTMLImageElement
+import typings.std.ImageBitmap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,16 +22,16 @@ object textureMod {
   
   @JSImport("babylonjs/Materials/Textures/texture", "Texture")
   @js.native
-  class Texture protected () extends BaseTexture {
+  open class Texture protected () extends BaseTexture {
     /**
       * Instantiates a new texture.
       * This represents a texture in babylon. It can be easily loaded from a network, base64 or html input.
       * @see https://doc.babylonjs.com/babylon101/materials#texture
       * @param url defines the url of the picture to load as a texture
       * @param sceneOrEngine defines the scene or engine the texture will belong to
-      * @param noMipmap defines if the texture will require mip maps or not
+      * @param noMipmapOrOptions defines if the texture will require mip maps or not or set of all options to create the texture
       * @param invertY defines if the texture needs to be inverted on the y axis during loading
-      * @param samplingMode defines the sampling mode we want for the texture while fectching from it (Texture.NEAREST_SAMPLINGMODE...)
+      * @param samplingMode defines the sampling mode we want for the texture while fetching from it (Texture.NEAREST_SAMPLINGMODE...)
       * @param onLoad defines a callback triggered when the texture has been loaded
       * @param onError defines a callback triggered when an error occurred during the loading session
       * @param buffer defines the buffer to load the texture from in case the texture is loaded from a buffer representation
@@ -39,92 +39,103 @@ object textureMod {
       * @param format defines the format of the texture we are trying to load (Engine.TEXTUREFORMAT_RGBA...)
       * @param mimeType defines an optional mime type information
       * @param loaderOptions options to be passed to the loader
+      * @param creationFlags specific flags to use when creating the texture (Constants.TEXTURE_CREATIONFLAG_STORAGE for storage textures, for eg)
+      * @param forcedExtension defines the extension to use to pick the right loader
       */
     def this(
       url: Nullable[String],
-      sceneOrEngine: Nullable[Scene | ThinEngine],
-      noMipmap: js.UndefOr[Boolean],
+      sceneOrEngine: js.UndefOr[Nullable[Scene | ThinEngine]],
+      noMipmapOrOptions: js.UndefOr[Boolean | ITextureCreationOptions],
       invertY: js.UndefOr[Boolean],
       samplingMode: js.UndefOr[Double],
       onLoad: js.UndefOr[Nullable[js.Function0[Unit]]],
       onError: js.UndefOr[
             Nullable[
-              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+              js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
             ]
           ],
       buffer: js.UndefOr[
-            Nullable[String | ArrayBuffer | ArrayBufferView | HTMLImageElement | Blob | ImageBitmap]
+            Nullable[
+              String | js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | HTMLImageElement | Blob | ImageBitmap
+            ]
           ],
       deleteBuffer: js.UndefOr[Boolean],
       format: js.UndefOr[Double],
       mimeType: js.UndefOr[String],
-      loaderOptions: js.UndefOr[js.Any]
+      loaderOptions: js.UndefOr[Any],
+      creationFlags: js.UndefOr[Double],
+      forcedExtension: js.UndefOr[String]
     ) = this()
     
     /** @hidden */
-    var _buffer: Nullable[String | ArrayBuffer | ArrayBufferView | HTMLImageElement | Blob | ImageBitmap] = js.native
+    var _buffer: Nullable[
+        String | js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | HTMLImageElement | Blob | ImageBitmap
+      ] = js.native
     
-    /* private */ var _cachedCoordinatesMode: js.Any = js.native
+    /* private */ var _cachedCoordinatesMode: Any = js.native
     
-    /* private */ var _cachedHomogeneousRotationInUVTransform: js.Any = js.native
+    /* private */ var _cachedHomogeneousRotationInUVTransform: Any = js.native
     
-    /* private */ var _cachedProjectionMatrixId: js.Any = js.native
+    /* private */ var _cachedProjectionMatrixId: Any = js.native
     
-    /* private */ var _cachedTextureMatrix: js.Any = js.native
+    /* private */ var _cachedTextureMatrix: Any = js.native
     
-    /* private */ var _cachedUAng: js.Any = js.native
+    /* private */ var _cachedUAng: Any = js.native
     
-    /* private */ var _cachedUOffset: js.Any = js.native
+    /* private */ var _cachedUOffset: Any = js.native
     
-    /* private */ var _cachedURotationCenter: js.Any = js.native
+    /* private */ var _cachedURotationCenter: Any = js.native
     
-    /* private */ var _cachedUScale: js.Any = js.native
+    /* private */ var _cachedUScale: Any = js.native
     
-    /* private */ var _cachedVAng: js.Any = js.native
+    /* private */ var _cachedVAng: Any = js.native
     
-    /* private */ var _cachedVOffset: js.Any = js.native
+    /* private */ var _cachedVOffset: Any = js.native
     
-    /* private */ var _cachedVRotationCenter: js.Any = js.native
+    /* private */ var _cachedVRotationCenter: Any = js.native
     
-    /* private */ var _cachedVScale: js.Any = js.native
+    /* private */ var _cachedVScale: Any = js.native
     
-    /* private */ var _cachedWAng: js.Any = js.native
+    /* private */ var _cachedWAng: Any = js.native
     
-    /* private */ var _cachedWRotationCenter: js.Any = js.native
+    /* private */ var _cachedWRotationCenter: Any = js.native
     
-    /* private */ var _delayedOnError: js.Any = js.native
+    /* private */ var _creationFlags: Any = js.native
     
-    /* private */ var _delayedOnLoad: js.Any = js.native
+    /* private */ var _delayedOnError: Any = js.native
     
-    /* private */ var _deleteBuffer: js.Any = js.native
+    /* private */ var _delayedOnLoad: Any = js.native
+    
+    /* private */ var _deleteBuffer: Any = js.native
+    
+    /* private */ var _forcedExtension: Any = js.native
     
     /* protected */ var _format: Nullable[Double] = js.native
-    
-    /** @hidden */
-    /* protected */ var _initialSamplingMode: Double = js.native
     
     /** @hidden */
     var _invertY: Boolean = js.native
     
     /* protected */ var _isBlocking: Boolean = js.native
     
-    /* private */ var _loaderOptions: js.Any = js.native
+    /* private */ var _loaderOptions: Any = js.native
     
-    /* private */ var _mimeType: js.Any = js.native
+    /* private */ var _mimeType: Any = js.native
     
-    /* private */ var _noMipmap: js.Any = js.native
+    /* private */ var _noMipmap: Any = js.native
     
-    /* private */ var _prepareRowForTextureGeneration: js.Any = js.native
+    /* private */ var _prepareRowForTextureGeneration: Any = js.native
     
-    /* private */ var _projectionModeMatrix: js.Any = js.native
+    /* private */ var _projectionModeMatrix: Any = js.native
     
-    /* private */ var _rowGenerationMatrix: js.Any = js.native
+    /* private */ var _rowGenerationMatrix: Any = js.native
     
-    /* private */ var _t0: js.Any = js.native
+    /* private */ var _t0: Any = js.native
     
-    /* private */ var _t1: js.Any = js.native
+    /* private */ var _t1: Any = js.native
     
-    /* private */ var _t2: js.Any = js.native
+    /* private */ var _t2: Any = js.native
+    
+    /* private */ var _useSRGBBuffer: Any = js.native
     
     /**
       * Checks if the texture has the same transform matrix than another texture
@@ -166,12 +177,8 @@ object textureMod {
     var onLoadObservable: Observable[Texture] = js.native
     
     /**
-      * Get the current sampling mode associated with the texture.
-      */
-    def samplingMode: Double = js.native
-    
-    /**
       * Define an offset on the texture to rotate around the u coordinates of the UVs
+      * The angle is defined in radians.
       * @see https://doc.babylonjs.com/how_to/more_materials
       */
     var uAng: Double = js.native
@@ -198,14 +205,40 @@ object textureMod {
       * @param url the url of the texture
       * @param buffer the buffer of the texture (defaults to null)
       * @param onLoad callback called when the texture is loaded  (defaults to null)
+      * @param forcedExtension defines the extension to use to pick the right loader
       */
     def updateURL(url: String): Unit = js.native
     def updateURL(url: String, buffer: Unit, onLoad: js.Function0[Unit]): Unit = js.native
-    def updateURL(url: String, buffer: Nullable[String | ArrayBuffer | ArrayBufferView | HTMLImageElement | Blob]): Unit = js.native
+    def updateURL(url: String, buffer: Unit, onLoad: js.Function0[Unit], forcedExtension: String): Unit = js.native
+    def updateURL(url: String, buffer: Unit, onLoad: Unit, forcedExtension: String): Unit = js.native
     def updateURL(
       url: String,
-      buffer: Nullable[String | ArrayBuffer | ArrayBufferView | HTMLImageElement | Blob],
+      buffer: Nullable[
+          String | js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | HTMLImageElement | Blob
+        ]
+    ): Unit = js.native
+    def updateURL(
+      url: String,
+      buffer: Nullable[
+          String | js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | HTMLImageElement | Blob
+        ],
       onLoad: js.Function0[Unit]
+    ): Unit = js.native
+    def updateURL(
+      url: String,
+      buffer: Nullable[
+          String | js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | HTMLImageElement | Blob
+        ],
+      onLoad: js.Function0[Unit],
+      forcedExtension: String
+    ): Unit = js.native
+    def updateURL(
+      url: String,
+      buffer: Nullable[
+          String | js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | HTMLImageElement | Blob
+        ],
+      onLoad: Unit,
+      forcedExtension: String
     ): Unit = js.native
     
     /**
@@ -215,6 +248,7 @@ object textureMod {
     
     /**
       * Define an offset on the texture to rotate around the v coordinates of the UVs
+      * The angle is defined in radians.
       * @see https://doc.babylonjs.com/how_to/more_materials
       */
     var vAng: Double = js.native
@@ -238,6 +272,7 @@ object textureMod {
     
     /**
       * Define an offset on the texture to rotate around the w coordinates of the UVs (in case of 3d texture)
+      * The angle is defined in radians.
       * @see https://doc.babylonjs.com/how_to/more_materials
       */
     var wAng: Double = js.native
@@ -274,25 +309,27 @@ object textureMod {
       * @param data Define the base64 payload without the data: prefix
       * @param name Define the name of the texture in the scene useful fo caching purpose for instance
       * @param scene Define the scene the texture should belong to
-      * @param noMipmap Forces the texture to not create mip map information if true
+      * @param noMipmapOrOptions defines if the texture will require mip maps or not or set of all options to create the texture
       * @param invertY define if the texture needs to be inverted on the y axis during loading
-      * @param samplingMode define the sampling mode we want for the texture while fectching from it (Texture.NEAREST_SAMPLINGMODE...)
+      * @param samplingMode define the sampling mode we want for the texture while fetching from it (Texture.NEAREST_SAMPLINGMODE...)
       * @param onLoad define a callback triggered when the texture has been loaded
       * @param onError define a callback triggered when an error occurred during the loading session
       * @param format define the format of the texture we are trying to load (Engine.TEXTUREFORMAT_RGBA...)
+      * @param creationFlags specific flags to use when creating the texture (Constants.TEXTURE_CREATIONFLAG_STORAGE for storage textures, for eg)
       * @returns the created texture
       */
     inline def CreateFromBase64String(
       data: String,
       name: String,
       scene: Scene,
-      noMipmap: js.UndefOr[Boolean],
+      noMipmapOrOptions: js.UndefOr[Boolean | ITextureCreationOptions],
       invertY: js.UndefOr[Boolean],
       samplingMode: js.UndefOr[Double],
       onLoad: js.UndefOr[Nullable[js.Function0[Unit]]],
       onError: js.UndefOr[Nullable[js.Function0[Unit]]],
-      format: js.UndefOr[Double]
-    ): Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromBase64String")(data.asInstanceOf[js.Any], name.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], noMipmap.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Texture]
+      format: js.UndefOr[Double],
+      creationFlags: js.UndefOr[Double]
+    ): Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateFromBase64String")(data.asInstanceOf[js.Any], name.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], noMipmapOrOptions.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], format.asInstanceOf[js.Any], creationFlags.asInstanceOf[js.Any])).asInstanceOf[Texture]
     
     /** Equirectangular coordinates mode */
     @JSImport("babylonjs/Materials/Textures/texture", "Texture.EQUIRECTANGULAR_MODE")
@@ -360,35 +397,36 @@ object textureMod {
     
     /**
       * Creates a texture from its data: representation. (data: will be added in case only the payload has been passed in)
-      * @param data Define the base64 payload without the data: prefix
       * @param name Define the name of the texture in the scene useful fo caching purpose for instance
       * @param buffer define the buffer to load the texture from in case the texture is loaded from a buffer representation
       * @param scene Define the scene the texture should belong to
       * @param deleteBuffer define if the buffer we are loading the texture from should be deleted after load
-      * @param noMipmap Forces the texture to not create mip map information if true
+      * @param noMipmapOrOptions defines if the texture will require mip maps or not or set of all options to create the texture
       * @param invertY define if the texture needs to be inverted on the y axis during loading
-      * @param samplingMode define the sampling mode we want for the texture while fectching from it (Texture.NEAREST_SAMPLINGMODE...)
+      * @param samplingMode define the sampling mode we want for the texture while fetching from it (Texture.NEAREST_SAMPLINGMODE...)
       * @param onLoad define a callback triggered when the texture has been loaded
       * @param onError define a callback triggered when an error occurred during the loading session
       * @param format define the format of the texture we are trying to load (Engine.TEXTUREFORMAT_RGBA...)
+      * @param creationFlags specific flags to use when creating the texture (Constants.TEXTURE_CREATIONFLAG_STORAGE for storage textures, for eg)
       * @returns the created texture
       */
     inline def LoadFromDataString(
       name: String,
-      buffer: js.Any,
+      buffer: Any,
       scene: Scene,
       deleteBuffer: js.UndefOr[Boolean],
-      noMipmap: js.UndefOr[Boolean],
+      noMipmapOrOptions: js.UndefOr[Boolean | ITextureCreationOptions],
       invertY: js.UndefOr[Boolean],
       samplingMode: js.UndefOr[Double],
       onLoad: js.UndefOr[Nullable[js.Function0[Unit]]],
       onError: js.UndefOr[
           Nullable[
-            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
           ]
         ],
-      format: js.UndefOr[Double]
-    ): Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadFromDataString")(name.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], deleteBuffer.asInstanceOf[js.Any], noMipmap.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Texture]
+      format: js.UndefOr[Double],
+      creationFlags: js.UndefOr[Double]
+    ): Texture = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadFromDataString")(name.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], deleteBuffer.asInstanceOf[js.Any], noMipmapOrOptions.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], format.asInstanceOf[js.Any], creationFlags.asInstanceOf[js.Any])).asInstanceOf[Texture]
     
     /** Texture is repeating and mirrored */
     @JSImport("babylonjs/Materials/Textures/texture", "Texture.MIRROR_ADDRESSMODE")
@@ -430,6 +468,14 @@ object textureMod {
     @js.native
     val NEAREST_SAMPLINGMODE: Double = js.native
     
+    /**
+      * This observable will notify when any texture had a loading error
+      */
+    @JSImport("babylonjs/Materials/Textures/texture", "Texture.OnTextureLoadErrorObservable")
+    @js.native
+    def OnTextureLoadErrorObservable: Observable[BaseTexture] = js.native
+    inline def OnTextureLoadErrorObservable_=(x: Observable[BaseTexture]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OnTextureLoadErrorObservable")(x.asInstanceOf[js.Any])
+    
     /** Planar coordinates mode */
     @JSImport("babylonjs/Materials/Textures/texture", "Texture.PLANAR_MODE")
     @js.native
@@ -447,7 +493,7 @@ object textureMod {
       * @param rootUrl Define the root url of the parsing sequence in the case of relative dependencies
       * @returns The parsed texture if successful
       */
-    inline def Parse(parsedTexture: js.Any, scene: Scene, rootUrl: String): Nullable[BaseTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[BaseTexture]]
+    inline def Parse(parsedTexture: Any, scene: Scene, rootUrl: String): Nullable[BaseTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[BaseTexture]]
     
     /** Inverse Cubic coordinates mode */
     @JSImport("babylonjs/Materials/Textures/texture", "Texture.SKYBOX_MODE")
@@ -485,13 +531,160 @@ object textureMod {
     @js.native
     val WRAP_ADDRESSMODE: Double = js.native
     
-    /** @hidden */
+    /**
+      * @param name
+      * @param renderTargetSize
+      * @param scene
+      * @param generateMipMaps
+      * @hidden
+      */
     inline def _CreateMirror(name: String, renderTargetSize: Double, scene: Scene, generateMipMaps: Boolean): MirrorTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateMirror")(name.asInstanceOf[js.Any], renderTargetSize.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any])).asInstanceOf[MirrorTexture]
     
-    /** @hidden */
+    /**
+      * @param name
+      * @param renderTargetSize
+      * @param scene
+      * @param generateMipMaps
+      * @param creationFlags
+      * @hidden
+      */
     inline def _CreateRenderTargetTexture(name: String, renderTargetSize: Double, scene: Scene, generateMipMaps: Boolean): RenderTargetTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateRenderTargetTexture")(name.asInstanceOf[js.Any], renderTargetSize.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any])).asInstanceOf[RenderTargetTexture]
+    inline def _CreateRenderTargetTexture(
+      name: String,
+      renderTargetSize: Double,
+      scene: Scene,
+      generateMipMaps: Boolean,
+      creationFlags: Double
+    ): RenderTargetTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("_CreateRenderTargetTexture")(name.asInstanceOf[js.Any], renderTargetSize.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], generateMipMaps.asInstanceOf[js.Any], creationFlags.asInstanceOf[js.Any])).asInstanceOf[RenderTargetTexture]
     
-    /** @hidden */
-    inline def _CubeTextureParser(jsonTexture: js.Any, scene: Scene, rootUrl: String): CubeTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("_CubeTextureParser")(jsonTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[CubeTexture]
+    /**
+      * @param jsonTexture
+      * @param scene
+      * @param rootUrl
+      * @hidden
+      */
+    inline def _CubeTextureParser(jsonTexture: Any, scene: Scene, rootUrl: String): CubeTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("_CubeTextureParser")(jsonTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[CubeTexture]
+  }
+  
+  trait ITextureCreationOptions extends StObject {
+    
+    /** Defines the buffer to load the texture from in case the texture is loaded from a buffer representation (default: null) */
+    var buffer: js.UndefOr[
+        Nullable[
+          String | js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | HTMLImageElement | Blob | ImageBitmap
+        ]
+      ] = js.undefined
+    
+    /** Specific flags to use when creating the texture (Constants.TEXTURE_CREATIONFLAG_STORAGE for storage textures, for eg) (default: undefined) */
+    var creationFlags: js.UndefOr[Double] = js.undefined
+    
+    /** Defines if the buffer we are loading the texture from should be deleted after load (default: false) */
+    var deleteBuffer: js.UndefOr[Boolean] = js.undefined
+    
+    /** Defines the format of the texture we are trying to load (Engine.TEXTUREFORMAT_RGBA...) (default: ) */
+    var format: js.UndefOr[Double] = js.undefined
+    
+    /** Defines the underlying texture from an already existing one */
+    var internalTexture: js.UndefOr[InternalTexture] = js.undefined
+    
+    /** Defines if the texture needs to be inverted on the y axis during loading (default: true) */
+    var invertY: js.UndefOr[Boolean] = js.undefined
+    
+    /** Options to be passed to the loader (default: undefined) */
+    var loaderOptions: js.UndefOr[Any] = js.undefined
+    
+    /** Defines an optional mime type information (default: undefined) */
+    var mimeType: js.UndefOr[String] = js.undefined
+    
+    /** Defines if the texture will require mip maps or not (default: false) */
+    var noMipmap: js.UndefOr[Boolean] = js.undefined
+    
+    /** Defines a callback triggered when an error occurred during the loading session (default: null) */
+    var onError: js.UndefOr[
+        Nullable[
+          js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
+        ]
+      ] = js.undefined
+    
+    /** Defines a callback triggered when the texture has been loaded (default: null) */
+    var onLoad: js.UndefOr[Nullable[js.Function0[Unit]]] = js.undefined
+    
+    /** Defines the sampling mode we want for the texture while fetching from it (Texture.NEAREST_SAMPLINGMODE...) (default: Texture.TRILINEAR_SAMPLINGMODE) */
+    var samplingMode: js.UndefOr[Double] = js.undefined
+    
+    /** Defines if the texture must be loaded in a sRGB GPU buffer (if supported by the GPU) (default: false) */
+    var useSRGBBuffer: js.UndefOr[Boolean] = js.undefined
+  }
+  object ITextureCreationOptions {
+    
+    inline def apply(): ITextureCreationOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ITextureCreationOptions]
+    }
+    
+    extension [Self <: ITextureCreationOptions](x: Self) {
+      
+      inline def setBuffer(
+        value: Nullable[
+              String | js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | HTMLImageElement | Blob | ImageBitmap
+            ]
+      ): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      
+      inline def setBufferNull: Self = StObject.set(x, "buffer", null)
+      
+      inline def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
+      
+      inline def setCreationFlags(value: Double): Self = StObject.set(x, "creationFlags", value.asInstanceOf[js.Any])
+      
+      inline def setCreationFlagsUndefined: Self = StObject.set(x, "creationFlags", js.undefined)
+      
+      inline def setDeleteBuffer(value: Boolean): Self = StObject.set(x, "deleteBuffer", value.asInstanceOf[js.Any])
+      
+      inline def setDeleteBufferUndefined: Self = StObject.set(x, "deleteBuffer", js.undefined)
+      
+      inline def setFormat(value: Double): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      
+      inline def setInternalTexture(value: InternalTexture): Self = StObject.set(x, "internalTexture", value.asInstanceOf[js.Any])
+      
+      inline def setInternalTextureUndefined: Self = StObject.set(x, "internalTexture", js.undefined)
+      
+      inline def setInvertY(value: Boolean): Self = StObject.set(x, "invertY", value.asInstanceOf[js.Any])
+      
+      inline def setInvertYUndefined: Self = StObject.set(x, "invertY", js.undefined)
+      
+      inline def setLoaderOptions(value: Any): Self = StObject.set(x, "loaderOptions", value.asInstanceOf[js.Any])
+      
+      inline def setLoaderOptionsUndefined: Self = StObject.set(x, "loaderOptions", js.undefined)
+      
+      inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+      
+      inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+      
+      inline def setNoMipmap(value: Boolean): Self = StObject.set(x, "noMipmap", value.asInstanceOf[js.Any])
+      
+      inline def setNoMipmapUndefined: Self = StObject.set(x, "noMipmap", js.undefined)
+      
+      inline def setOnError(value: (/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction2(value))
+      
+      inline def setOnErrorNull: Self = StObject.set(x, "onError", null)
+      
+      inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+      
+      inline def setOnLoad(value: () => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction0(value))
+      
+      inline def setOnLoadNull: Self = StObject.set(x, "onLoad", null)
+      
+      inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
+      
+      inline def setSamplingMode(value: Double): Self = StObject.set(x, "samplingMode", value.asInstanceOf[js.Any])
+      
+      inline def setSamplingModeUndefined: Self = StObject.set(x, "samplingMode", js.undefined)
+      
+      inline def setUseSRGBBuffer(value: Boolean): Self = StObject.set(x, "useSRGBBuffer", value.asInstanceOf[js.Any])
+      
+      inline def setUseSRGBBufferUndefined: Self = StObject.set(x, "useSRGBBuffer", js.undefined)
+    }
   }
 }

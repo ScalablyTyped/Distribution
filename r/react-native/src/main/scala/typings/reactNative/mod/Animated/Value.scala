@@ -6,17 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native", "Animated.Value")
 @js.native
-class Value protected ()
-  extends AnimatedWithChildren
-     with _WithAnimatedValue[js.Any] {
+open class Value protected () extends AnimatedWithChildren {
   def this(value: Double) = this()
-  
-  /**
-    * Adds an asynchronous listener to the value so you can observe updates from
-    * animations.  This is useful because there is no way to
-    * synchronously read the value because it might be driven natively.
-    */
-  def addListener(callback: ValueListenerCallback): String = js.native
+  def this(value: Double, config: AnimatedConfig) = this()
   
   /**
     * Sets the offset value to the base value, and resets the base value to zero.
@@ -34,11 +26,7 @@ class Value protected ()
     * Interpolates the value before updating the property, e.g. mapping 0-1 to
     * 0-10.
     */
-  def interpolate(config: InterpolationConfigType): AnimatedInterpolation = js.native
-  
-  def removeAllListeners(): Unit = js.native
-  
-  def removeListener(id: String): Unit = js.native
+  def interpolate[OutputT /* <: Double | String */](config: InterpolationConfigType): AnimatedInterpolation[OutputT] = js.native
   
   /**
     * Sets an offset that is applied on top of whatever value is set, whether via

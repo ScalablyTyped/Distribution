@@ -12,10 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("semantic-ui-react", "DropdownDivider")
 @js.native
-class DropdownDivider protected ()
-  extends Component[DropdownDividerProps, ComponentState, js.Any] {
+open class DropdownDivider protected () extends Component[DropdownDividerProps, ComponentState, Any] {
   def this(props: DropdownDividerProps) = this()
-  def this(props: DropdownDividerProps, context: js.Any) = this()
+  def this(props: DropdownDividerProps, context: Any) = this()
 }
 object DropdownDivider {
   

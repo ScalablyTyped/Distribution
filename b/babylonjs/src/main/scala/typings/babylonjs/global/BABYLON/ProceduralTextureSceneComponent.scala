@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.ProceduralTextureSceneComponent")
 @js.native
-class ProceduralTextureSceneComponent protected ()
+open class ProceduralTextureSceneComponent protected ()
   extends StObject
      with typings.babylonjs.BABYLON.ProceduralTextureSceneComponent {
   /**
@@ -16,7 +16,7 @@ class ProceduralTextureSceneComponent protected ()
   def this(scene: typings.babylonjs.BABYLON.Scene) = this()
   
   /* private */ /* CompleteClass */
-  var _beforeClear: js.Any = js.native
+  var _beforeClear: Any = js.native
   
   /**
     * Disposes the component and the associated ressources.

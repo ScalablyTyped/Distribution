@@ -19,7 +19,7 @@ trait MatchmakingTicket extends StObject {
   /**
     * Time stamp indicating when this matchmaking request stopped being processed due to success, failure, or cancellation. Format is a number expressed in Unix time as milliseconds (for example "1469498468.057").
     */
-  var EndTime: js.UndefOr[Timestamp] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Average amount of time (in seconds) that players are currently waiting for a match. If there is not enough recent data, this property may be empty.
@@ -27,7 +27,7 @@ trait MatchmakingTicket extends StObject {
   var EstimatedWaitTime: js.UndefOr[WholeNumber] = js.undefined
   
   /**
-    * Identifier and connection information of the game session created for the match. This information is added to the ticket only after the matchmaking request has been successfully completed.
+    * Identifier and connection information of the game session created for the match. This information is added to the ticket only after the matchmaking request has been successfully completed. This parameter is not set when FlexMatch is being used without GameLift hosting.
     */
   var GameSessionConnectionInfo: js.UndefOr[typings.awsSdk.gameliftMod.GameSessionConnectionInfo] = js.undefined
   
@@ -39,7 +39,7 @@ trait MatchmakingTicket extends StObject {
   /**
     * Time stamp indicating when this matchmaking request was received. Format is a number expressed in Unix time as milliseconds (for example "1469498468.057").
     */
-  var StartTime: js.UndefOr[Timestamp] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Current status of the matchmaking request.    QUEUED -- The matchmaking request has been received and is currently waiting to be processed.    SEARCHING -- The matchmaking request is currently being processed.     REQUIRES_ACCEPTANCE -- A match has been proposed and the players must accept the match (see AcceptMatch). This status is used only with requests that use a matchmaking configuration with a player acceptance requirement.    PLACING -- The FlexMatch engine has matched players and is in the process of placing a new game session for the match.    COMPLETED -- Players have been matched and a game session is ready to host the players. A ticket in this state contains the necessary connection information for players.    FAILED -- The matchmaking request was not completed.    CANCELLED -- The matchmaking request was canceled. This may be the result of a call to StopMatchmaking or a proposed match that one or more players failed to accept.    TIMED_OUT -- The matchmaking request was not successful within the duration specified in the matchmaking configuration.     Matchmaking requests that fail to successfully complete (statuses FAILED, CANCELLED, TIMED_OUT) can be resubmitted as new requests with new ticket IDs. 
@@ -78,7 +78,7 @@ object MatchmakingTicket {
     
     inline def setConfigurationNameUndefined: Self = StObject.set(x, "ConfigurationName", js.undefined)
     
-    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
@@ -94,9 +94,9 @@ object MatchmakingTicket {
     
     inline def setPlayersUndefined: Self = StObject.set(x, "Players", js.undefined)
     
-    inline def setPlayersVarargs(value: Player*): Self = StObject.set(x, "Players", js.Array(value :_*))
+    inline def setPlayersVarargs(value: Player*): Self = StObject.set(x, "Players", js.Array(value*))
     
-    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     

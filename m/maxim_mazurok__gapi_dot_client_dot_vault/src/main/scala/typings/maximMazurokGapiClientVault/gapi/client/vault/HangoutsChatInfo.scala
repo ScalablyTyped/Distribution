@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HangoutsChatInfo extends StObject {
   
-  /** A set of rooms to search. */
+  /** A list of Chat spaces IDs, as provided by the [Chat API](https://developers.google.com/hangouts/chat). */
   var roomId: js.UndefOr[js.Array[String]] = js.undefined
 }
 object HangoutsChatInfo {
@@ -22,6 +22,6 @@ object HangoutsChatInfo {
     
     inline def setRoomIdUndefined: Self = StObject.set(x, "roomId", js.undefined)
     
-    inline def setRoomIdVarargs(value: String*): Self = StObject.set(x, "roomId", js.Array(value :_*))
+    inline def setRoomIdVarargs(value: String*): Self = StObject.set(x, "roomId", js.Array(value*))
   }
 }

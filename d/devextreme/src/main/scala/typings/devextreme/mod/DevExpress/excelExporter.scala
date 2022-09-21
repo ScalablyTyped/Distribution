@@ -1,10 +1,10 @@
 package typings.devextreme.mod.DevExpress
 
 import typings.devextreme.anon.ExcelCell
-import typings.devextreme.anon.NameValue
+import typings.devextreme.anon.Name
 import typings.devextreme.anon.PivotCell
 import typings.devextreme.mod.DevExpress.ui.dxDataGrid
-import typings.devextreme.mod.DevExpress.ui.dxDataGridColumn
+import typings.devextreme.mod.DevExpress.ui.dxDataGrid.Column
 import typings.devextreme.mod.DevExpress.ui.dxPivotGrid
 import typings.devextreme.mod.DevExpress.ui.dxPivotGridPivotGridCell
 import org.scalablytyped.runtime.StObject
@@ -16,12 +16,12 @@ object excelExporter {
   trait CellAddress extends StObject {
     
     /**
-      * [descr:CellAddress.column]
+      * The index of a column that contains the cell.
       */
     var column: js.UndefOr[Double] = js.undefined
     
     /**
-      * [descr:CellAddress.row]
+      * The index of a row that contains the cell.
       */
     var row: js.UndefOr[Double] = js.undefined
   }
@@ -47,12 +47,12 @@ object excelExporter {
   trait CellRange extends StObject {
     
     /**
-      * [descr:CellRange.from]
+      * Coordinates of the top left cell.
       */
     var from: js.UndefOr[CellAddress] = js.undefined
     
     /**
-      * [descr:CellRange.to]
+      * Coordinates of the bottom right cell.
       */
     var to: js.UndefOr[CellAddress] = js.undefined
   }
@@ -75,42 +75,44 @@ object excelExporter {
     }
   }
   
+  type DataGridCell = ExcelDataGridCell
+  
   trait ExcelDataGridCell extends StObject {
     
     /**
-      * [descr:ExcelDataGridCell.column]
+      * The configuration of the cell&apos;s column.
       */
-    var column: js.UndefOr[dxDataGridColumn] = js.undefined
+    var column: js.UndefOr[Column[Any, Any]] = js.undefined
     
     /**
-      * [descr:ExcelDataGridCell.data]
+      * The data object of the cell&apos;s row.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /**
-      * [descr:ExcelDataGridCell.groupIndex]
+      * The group index of the cell&apos;s row. Available when the rowType is &apos;group&apos;.
       */
     var groupIndex: js.UndefOr[Double] = js.undefined
     
     /**
-      * [descr:ExcelDataGridCell.groupSummaryItems]
+      * Information about group summary items the cell represents.
       */
-    var groupSummaryItems: js.UndefOr[js.Array[NameValue]] = js.undefined
+    var groupSummaryItems: js.UndefOr[js.Array[Name]] = js.undefined
     
     /**
-      * [descr:ExcelDataGridCell.rowType]
+      * The type of the cell&apos;s row.
       */
     var rowType: js.UndefOr[String] = js.undefined
     
     /**
-      * [descr:ExcelDataGridCell.totalSummaryItemName]
+      * The identifier of the total summary item that the cell represents.
       */
     var totalSummaryItemName: js.UndefOr[String] = js.undefined
     
     /**
-      * [descr:ExcelDataGridCell.value]
+      * The cell&apos;s raw value.
       */
-    var value: js.UndefOr[js.Any] = js.undefined
+    var value: js.UndefOr[Any] = js.undefined
   }
   object ExcelDataGridCell {
     
@@ -121,11 +123,11 @@ object excelExporter {
     
     extension [Self <: ExcelDataGridCell](x: Self) {
       
-      inline def setColumn(value: dxDataGridColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Column[Any, Any]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
       inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -133,11 +135,11 @@ object excelExporter {
       
       inline def setGroupIndexUndefined: Self = StObject.set(x, "groupIndex", js.undefined)
       
-      inline def setGroupSummaryItems(value: js.Array[NameValue]): Self = StObject.set(x, "groupSummaryItems", value.asInstanceOf[js.Any])
+      inline def setGroupSummaryItems(value: js.Array[Name]): Self = StObject.set(x, "groupSummaryItems", value.asInstanceOf[js.Any])
       
       inline def setGroupSummaryItemsUndefined: Self = StObject.set(x, "groupSummaryItems", js.undefined)
       
-      inline def setGroupSummaryItemsVarargs(value: NameValue*): Self = StObject.set(x, "groupSummaryItems", js.Array(value :_*))
+      inline def setGroupSummaryItemsVarargs(value: Name*): Self = StObject.set(x, "groupSummaryItems", js.Array(value*))
       
       inline def setRowType(value: String): Self = StObject.set(x, "rowType", value.asInstanceOf[js.Any])
       
@@ -147,7 +149,7 @@ object excelExporter {
       
       inline def setTotalSummaryItemNameUndefined: Self = StObject.set(x, "totalSummaryItemName", js.undefined)
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
@@ -156,24 +158,24 @@ object excelExporter {
   trait ExcelExportBaseProps extends StObject {
     
     /**
-      * [descr:ExcelExportBaseProps.keepColumnWidths]
+      * Specifies whether Excel columns should have the same width as their source UI component&apos;s columns.
       */
     var keepColumnWidths: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * [descr:ExcelExportBaseProps.loadPanel]
+      * Configures the load panel.
       */
     var loadPanel: js.UndefOr[ExportLoadPanel] = js.undefined
     
     /**
-      * [descr:ExcelExportBaseProps.topLeftCell]
+      * A cell used as a start position for export.
       */
     var topLeftCell: js.UndefOr[CellAddress | String] = js.undefined
     
     /**
-      * [descr:ExcelExportBaseProps.worksheet]
+      * An Excel worksheet to which the grid should be exported.
       */
-    var worksheet: js.UndefOr[js.Any] = js.undefined
+    var worksheet: js.UndefOr[js.Object] = js.undefined
   }
   object ExcelExportBaseProps {
     
@@ -196,7 +198,7 @@ object excelExporter {
       
       inline def setTopLeftCellUndefined: Self = StObject.set(x, "topLeftCell", js.undefined)
       
-      inline def setWorksheet(value: js.Any): Self = StObject.set(x, "worksheet", value.asInstanceOf[js.Any])
+      inline def setWorksheet(value: js.Object): Self = StObject.set(x, "worksheet", value.asInstanceOf[js.Any])
       
       inline def setWorksheetUndefined: Self = StObject.set(x, "worksheet", js.undefined)
     }
@@ -207,22 +209,22 @@ object excelExporter {
        with ExcelExportBaseProps {
     
     /**
-      * [descr:ExcelExportDataGridProps.autoFilterEnabled]
+      * Specifies whether to enable Excel filtering in the document.
       */
     var autoFilterEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * [descr:ExcelExportDataGridProps.component]
+      * A DataGrid instance. This setting is required.
       */
-    var component: js.UndefOr[dxDataGrid] = js.undefined
+    var component: js.UndefOr[dxDataGrid[Any, Any]] = js.undefined
     
     /**
-      * [descr:ExcelExportDataGridProps.customizeCell]
+      * Customizes an Excel cell after creation.
       */
-    var customizeCell: js.UndefOr[js.Function1[/* options */ ExcelCell, js.Any]] = js.undefined
+    var customizeCell: js.UndefOr[js.Function1[/* options */ ExcelCell, Unit]] = js.undefined
     
     /**
-      * [descr:ExcelExportDataGridProps.selectedRowsOnly]
+      * Specifies whether to export only selected rows.
       */
     var selectedRowsOnly: js.UndefOr[Boolean] = js.undefined
   }
@@ -239,11 +241,11 @@ object excelExporter {
       
       inline def setAutoFilterEnabledUndefined: Self = StObject.set(x, "autoFilterEnabled", js.undefined)
       
-      inline def setComponent(value: dxDataGrid): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: dxDataGrid[Any, Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      inline def setCustomizeCell(value: /* options */ ExcelCell => js.Any): Self = StObject.set(x, "customizeCell", js.Any.fromFunction1(value))
+      inline def setCustomizeCell(value: /* options */ ExcelCell => Unit): Self = StObject.set(x, "customizeCell", js.Any.fromFunction1(value))
       
       inline def setCustomizeCellUndefined: Self = StObject.set(x, "customizeCell", js.undefined)
       
@@ -258,14 +260,24 @@ object excelExporter {
        with ExcelExportBaseProps {
     
     /**
-      * [descr:ExcelExportPivotGridProps.component]
+      * A PivotGrid instance. This setting is required.
       */
     var component: js.UndefOr[dxPivotGrid] = js.undefined
     
     /**
-      * [descr:ExcelExportPivotGridProps.customizeCell]
+      * Customizes an Excel cell after creation.
       */
-    var customizeCell: js.UndefOr[js.Function1[/* options */ PivotCell, js.Any]] = js.undefined
+    var customizeCell: js.UndefOr[js.Function1[/* options */ PivotCell, Unit]] = js.undefined
+    
+    /**
+      * Specifies whether to merge neighbouring cells in the column field if they have the same values.
+      */
+    var mergeColumnFieldValues: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Specifies whether to merge neighbouring cells in the row field if they have the same values.
+      */
+    var mergeRowFieldValues: js.UndefOr[Boolean] = js.undefined
   }
   object ExcelExportPivotGridProps {
     
@@ -280,9 +292,17 @@ object excelExporter {
       
       inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      inline def setCustomizeCell(value: /* options */ PivotCell => js.Any): Self = StObject.set(x, "customizeCell", js.Any.fromFunction1(value))
+      inline def setCustomizeCell(value: /* options */ PivotCell => Unit): Self = StObject.set(x, "customizeCell", js.Any.fromFunction1(value))
       
       inline def setCustomizeCellUndefined: Self = StObject.set(x, "customizeCell", js.undefined)
+      
+      inline def setMergeColumnFieldValues(value: Boolean): Self = StObject.set(x, "mergeColumnFieldValues", value.asInstanceOf[js.Any])
+      
+      inline def setMergeColumnFieldValuesUndefined: Self = StObject.set(x, "mergeColumnFieldValues", js.undefined)
+      
+      inline def setMergeRowFieldValues(value: Boolean): Self = StObject.set(x, "mergeRowFieldValues", value.asInstanceOf[js.Any])
+      
+      inline def setMergeRowFieldValuesUndefined: Self = StObject.set(x, "mergeRowFieldValues", js.undefined)
     }
   }
   
@@ -291,17 +311,17 @@ object excelExporter {
        with dxPivotGridPivotGridCell {
     
     /**
-      * [descr:ExcelPivotGridCell.area]
+      * The area to which the cell belongs.
       */
     var area: js.UndefOr[String] = js.undefined
     
     /**
-      * [descr:ExcelPivotGridCell.columnIndex]
+      * A zero-based index that indicates the position of the cell&apos;s column.
       */
     var columnIndex: js.UndefOr[Double] = js.undefined
     
     /**
-      * [descr:ExcelPivotGridCell.rowIndex]
+      * A zero-based index that indicates the position of the cell&apos;s row.
       */
     var rowIndex: js.UndefOr[Double] = js.undefined
   }
@@ -328,97 +348,5 @@ object excelExporter {
     }
   }
   
-  trait ExportLoadPanel extends StObject {
-    
-    /**
-      * [descr:ExportLoadPanel.enabled]
-      */
-    var enabled: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * [descr:ExportLoadPanel.height]
-      */
-    var height: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * [descr:ExportLoadPanel.indicatorSrc]
-      */
-    var indicatorSrc: js.UndefOr[String] = js.undefined
-    
-    /**
-      * [descr:ExportLoadPanel.shading]
-      */
-    var shading: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * [descr:ExportLoadPanel.shadingColor]
-      */
-    var shadingColor: js.UndefOr[String] = js.undefined
-    
-    /**
-      * [descr:ExportLoadPanel.showIndicator]
-      */
-    var showIndicator: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * [descr:ExportLoadPanel.showPane]
-      */
-    var showPane: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * [descr:ExportLoadPanel.text]
-      */
-    var text: js.UndefOr[String] = js.undefined
-    
-    /**
-      * [descr:ExportLoadPanel.width]
-      */
-    var width: js.UndefOr[Double] = js.undefined
-  }
-  object ExportLoadPanel {
-    
-    inline def apply(): ExportLoadPanel = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ExportLoadPanel]
-    }
-    
-    extension [Self <: ExportLoadPanel](x: Self) {
-      
-      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
-      
-      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
-      
-      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
-      
-      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
-      
-      inline def setIndicatorSrc(value: String): Self = StObject.set(x, "indicatorSrc", value.asInstanceOf[js.Any])
-      
-      inline def setIndicatorSrcUndefined: Self = StObject.set(x, "indicatorSrc", js.undefined)
-      
-      inline def setShading(value: Boolean): Self = StObject.set(x, "shading", value.asInstanceOf[js.Any])
-      
-      inline def setShadingColor(value: String): Self = StObject.set(x, "shadingColor", value.asInstanceOf[js.Any])
-      
-      inline def setShadingColorUndefined: Self = StObject.set(x, "shadingColor", js.undefined)
-      
-      inline def setShadingUndefined: Self = StObject.set(x, "shading", js.undefined)
-      
-      inline def setShowIndicator(value: Boolean): Self = StObject.set(x, "showIndicator", value.asInstanceOf[js.Any])
-      
-      inline def setShowIndicatorUndefined: Self = StObject.set(x, "showIndicator", js.undefined)
-      
-      inline def setShowPane(value: Boolean): Self = StObject.set(x, "showPane", value.asInstanceOf[js.Any])
-      
-      inline def setShowPaneUndefined: Self = StObject.set(x, "showPane", js.undefined)
-      
-      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
-      
-      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
-      
-      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
-      
-      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
-    }
-  }
+  type PivotGridCell = ExcelPivotGridCell
 }

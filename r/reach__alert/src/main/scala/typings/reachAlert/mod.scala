@@ -1,45 +1,40 @@
 package typings.reachAlert
 
 import org.scalablytyped.runtime.Shortcut
-import typings.reachAlert.reachAlertStrings.assertive
-import typings.reachAlert.reachAlertStrings.polite
-import typings.react.mod.FC
-import typings.react.mod.HTMLProps
-import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
   
+  /**
+    * Alert
+    *
+    * Screen-reader-friendly alert messages. In many apps developers add "alert"
+    * messages when network events or other things happen. Users with assistive
+    * technologies may not know about the message unless you develop for it.
+    *
+    * @see Docs https://reach.tech/alert
+    */
   @JSImport("@reach/alert", JSImport.Default)
   @js.native
-  val default: FC[AlertProps] = js.native
+  val default: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Polymorphic.ForwardRefComponent<'div', AlertProps> */ Any = js.native
   
-  trait AlertProps
-    extends StObject
-       with HTMLProps[HTMLDivElement] {
-    
-    @JSName("type")
-    var type_AlertProps: js.UndefOr[assertive | polite] = js.undefined
-  }
-  object AlertProps {
-    
-    inline def apply(): AlertProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[AlertProps]
-    }
-    
-    extension [Self <: AlertProps](x: Self) {
-      
-      inline def setType(value: assertive | polite): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-      
-      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
-    }
-  }
+  /**
+    * Alert
+    *
+    * Screen-reader-friendly alert messages. In many apps developers add "alert"
+    * messages when network events or other things happen. Users with assistive
+    * technologies may not know about the message unless you develop for it.
+    *
+    * @see Docs https://reach.tech/alert
+    */
+  @JSImport("@reach/alert", "Alert")
+  @js.native
+  val Alert: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Polymorphic.ForwardRefComponent<'div', AlertProps> */ Any = js.native
   
-  type _To = FC[AlertProps]
+  type _To = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Polymorphic.ForwardRefComponent<'div', AlertProps> */ Any
   
   /* This means you don't have to write `default`, but can instead just say `mod.foo` */
-  override def _to: FC[AlertProps] = default
+  override def _to: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Polymorphic.ForwardRefComponent<'div', AlertProps> */ Any = default
 }

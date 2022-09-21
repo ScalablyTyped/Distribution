@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("sip.js/lib/core", "Parameters")
 @js.native
-class Parameters protected ()
+open class Parameters protected ()
   extends typings.sipJs.messagesMod.Parameters {
-  def this(parameters: StringDictionary[String]) = this()
+  def this(parameters: StringDictionary[js.UndefOr[String | Double | Null]]) = this()
 }

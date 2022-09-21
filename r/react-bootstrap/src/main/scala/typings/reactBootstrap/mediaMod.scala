@@ -2,8 +2,8 @@ package typings.reactBootstrap
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.react.mod.Component
+import typings.react.mod.ElementType
 import typings.react.mod.HTMLProps
-import typings.react.mod.ReactType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,8 +12,8 @@ object mediaMod {
   
   @JSImport("react-bootstrap/lib/Media", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[MediaProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[MediaProps, js.Object, Any]
   @JSImport("react-bootstrap/lib/Media", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
@@ -21,7 +21,7 @@ object mediaMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/Media", "Body")
   @js.native
-  class Body ()
+  open class Body ()
     extends typings.reactBootstrap.mediaBodyMod.^
   /* static member */
   @JSImport("react-bootstrap/lib/Media", "Body")
@@ -32,7 +32,7 @@ object mediaMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/Media", "Heading")
   @js.native
-  class Heading ()
+  open class Heading ()
     extends typings.reactBootstrap.mediaHeadingMod.^
   /* static member */
   @JSImport("react-bootstrap/lib/Media", "Heading")
@@ -43,7 +43,7 @@ object mediaMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/Media", "Left")
   @js.native
-  class Left ()
+  open class Left ()
     extends typings.reactBootstrap.mediaLeftMod.^
   /* static member */
   @JSImport("react-bootstrap/lib/Media", "Left")
@@ -54,7 +54,7 @@ object mediaMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/Media", "List")
   @js.native
-  class List ()
+  open class List ()
     extends typings.reactBootstrap.mediaListMod.^
   /* static member */
   @JSImport("react-bootstrap/lib/Media", "List")
@@ -64,7 +64,7 @@ object mediaMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/Media", "ListItem")
   @js.native
-  class ListItem ()
+  open class ListItem ()
     extends typings.reactBootstrap.mediaListItemMod.^
   /* static member */
   @JSImport("react-bootstrap/lib/Media", "ListItem")
@@ -77,7 +77,7 @@ object mediaMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib/Media", "Right")
   @js.native
-  class Right ()
+  open class Right ()
     extends typings.reactBootstrap.mediaRightMod.^
   /* static member */
   @JSImport("react-bootstrap/lib/Media", "Right")
@@ -85,15 +85,13 @@ object mediaMod {
   def Right: Instantiable0[typings.reactBootstrap.mediaRightMod.^] = js.native
   inline def Right_=(x: Instantiable0[typings.reactBootstrap.mediaRightMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Right")(x.asInstanceOf[js.Any])
   
-  @js.native
-  trait Media
-    extends Component[MediaProps, js.Object, js.Any]
+  type Media = Component[MediaProps, js.Object, Any]
   
   trait MediaProps
     extends StObject
        with HTMLProps[Media] {
     
-    var componentClass: js.UndefOr[ReactType[js.Any]] = js.undefined
+    var componentClass: js.UndefOr[ElementType[Any]] = js.undefined
   }
   object MediaProps {
     
@@ -104,7 +102,7 @@ object mediaMod {
     
     extension [Self <: MediaProps](x: Self) {
       
-      inline def setComponentClass(value: ReactType[js.Any]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
+      inline def setComponentClass(value: ElementType[Any]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
       
       inline def setComponentClassUndefined: Self = StObject.set(x, "componentClass", js.undefined)
     }

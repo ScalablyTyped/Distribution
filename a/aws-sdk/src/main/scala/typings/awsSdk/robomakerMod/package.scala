@@ -1,5 +1,8 @@
 package typings.awsSdk.robomakerMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.InternalServiceError
+import typings.awsSdk.awsSdkStrings.OGRE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,33 +14,50 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.awsSdk.awsSdkStrings.ARMHF
   - java.lang.String
 */
-type Architecture = typings.awsSdk.robomakerMod._Architecture | java.lang.String
+type Architecture = _Architecture | String
 
-type Arn = java.lang.String
+type Arn = String
 
-type Arns = js.Array[typings.awsSdk.robomakerMod.Arn]
+type Arns = js.Array[Arn]
 
-type BatchTimeoutInSeconds = scala.Double
+type BatchTimeoutInSeconds = Double
 
 type Boolean = scala.Boolean
 
 type BoxedBoolean = scala.Boolean
 
-type ClientRequestToken = java.lang.String
+type ClientRequestToken = String
 
-type Command = java.lang.String
+type Command = String
 
-type CreateSimulationJobRequests = js.Array[typings.awsSdk.robomakerMod.SimulationJobRequest]
+type CommandList = js.Array[NonEmptyString]
 
-type CreatedAt = typings.std.Date
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CPU
+  - typings.awsSdk.awsSdkStrings.GPU_AND_CPU
+  - java.lang.String
+*/
+type ComputeType = _ComputeType | String
 
-type DataSourceConfigs = js.Array[typings.awsSdk.robomakerMod.DataSourceConfig]
+type CreateSimulationJobRequests = js.Array[SimulationJobRequest]
 
-type DataSourceNames = js.Array[typings.awsSdk.robomakerMod.Name]
+type CreatedAt = js.Date
 
-type DataSources = js.Array[typings.awsSdk.robomakerMod.DataSource]
+type DataSourceConfigs = js.Array[DataSourceConfig]
 
-type DeploymentApplicationConfigs = js.Array[typings.awsSdk.robomakerMod.DeploymentApplicationConfig]
+type DataSourceNames = js.Array[Name]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Prefix_
+  - typings.awsSdk.awsSdkStrings.Archive_
+  - typings.awsSdk.awsSdkStrings.File_
+  - java.lang.String
+*/
+type DataSourceType = _DataSourceType | String
+
+type DataSources = js.Array[DataSource]
+
+type DeploymentApplicationConfigs = js.Array[DeploymentApplicationConfig]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ResourceNotFound
@@ -59,12 +79,16 @@ type DeploymentApplicationConfigs = js.Array[typings.awsSdk.robomakerMod.Deploym
   - typings.awsSdk.awsSdkStrings.PostLaunchFileFailure
   - typings.awsSdk.awsSdkStrings.BadPermissionError
   - typings.awsSdk.awsSdkStrings.DownloadConditionFailed
+  - typings.awsSdk.awsSdkStrings.BadLambdaAssociated
   - typings.awsSdk.awsSdkStrings.InternalServerError
+  - typings.awsSdk.awsSdkStrings.RobotApplicationDoesNotExist
+  - typings.awsSdk.awsSdkStrings.DeploymentFleetDoesNotExist
+  - typings.awsSdk.awsSdkStrings.FleetDeploymentTimeout
   - java.lang.String
 */
-type DeploymentJobErrorCode = typings.awsSdk.robomakerMod._DeploymentJobErrorCode | java.lang.String
+type DeploymentJobErrorCode = _DeploymentJobErrorCode | String
 
-type DeploymentJobs = js.Array[typings.awsSdk.robomakerMod.DeploymentJob]
+type DeploymentJobs = js.Array[DeploymentJob]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Pending_
@@ -75,90 +99,103 @@ type DeploymentJobs = js.Array[typings.awsSdk.robomakerMod.DeploymentJob]
   - typings.awsSdk.awsSdkStrings.Canceled_
   - java.lang.String
 */
-type DeploymentStatus = typings.awsSdk.robomakerMod._DeploymentStatus | java.lang.String
+type DeploymentStatus = _DeploymentStatus | String
 
-type DeploymentTimeout = scala.Double
+type DeploymentTimeout = Double
 
-type DeploymentVersion = java.lang.String
+type DeploymentVersion = String
 
-type EnvironmentVariableKey = java.lang.String
+type EnvironmentVariableKey = String
 
-type EnvironmentVariableMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.robomakerMod.EnvironmentVariableValue]
+type EnvironmentVariableMap = StringDictionary[EnvironmentVariableValue]
 
-type EnvironmentVariableValue = java.lang.String
+type EnvironmentVariableValue = String
 
-type FailedAt = typings.std.Date
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.FAIL
+  - typings.awsSdk.awsSdkStrings.RESTART
+  - java.lang.String
+*/
+type ExitBehavior = _ExitBehavior | String
 
-type FailedCreateSimulationJobRequests = js.Array[typings.awsSdk.robomakerMod.FailedCreateSimulationJobRequest]
+type FailedAt = js.Date
+
+type FailedCreateSimulationJobRequests = js.Array[FailedCreateSimulationJobRequest]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Fail_
   - typings.awsSdk.awsSdkStrings.Continue_
   - java.lang.String
 */
-type FailureBehavior = typings.awsSdk.robomakerMod._FailureBehavior | java.lang.String
+type FailureBehavior = _FailureBehavior | String
 
-type FilterValues = js.Array[typings.awsSdk.robomakerMod.Name]
+type FilterValues = js.Array[Name]
 
-type Filters = js.Array[typings.awsSdk.robomakerMod.Filter]
+type Filters = js.Array[Filter]
 
-type Fleets = js.Array[typings.awsSdk.robomakerMod.Fleet]
+type Fleets = js.Array[Fleet]
 
-type FloorplanCount = scala.Double
+type FloorplanCount = Double
 
-type GenericInteger = scala.Double
+type GPUUnit = Double
 
-type GenericString = java.lang.String
+type GenericInteger = Double
 
-type IamRole = java.lang.String
+type GenericString = String
 
-type Id = java.lang.String
+type IamRole = String
 
-type Integer = scala.Double
+type Id = String
 
-type InteriorCountPerFloorplan = scala.Double
+type ImageDigest = String
 
-type JobDuration = scala.Double
+type Integer = Double
 
-type Json = java.lang.String
+type InteriorCountPerFloorplan = Double
 
-type LastStartedAt = typings.std.Date
+type JobDuration = Double
 
-type LastUpdatedAt = typings.std.Date
+type Json = String
 
-type MaxConcurrency = scala.Double
+type LastStartedAt = js.Date
 
-type MaxResults = scala.Double
+type LastUpdatedAt = js.Date
 
-type Name = java.lang.String
+type MaxConcurrency = Double
 
-type NonEmptyString = java.lang.String
+type MaxResults = Double
 
-type NonSystemPort = scala.Double
+type Name = String
 
-type PaginationToken = java.lang.String
+type NonEmptyString = String
 
-type Path = java.lang.String
+type NonSystemPort = Double
 
-type PercentDone = scala.Double
+type PaginationToken = String
 
-type Percentage = scala.Double
+type Path = String
 
-type Port = scala.Double
+type PercentDone = Double
 
-type PortMappingList = js.Array[typings.awsSdk.robomakerMod.PortMapping]
+type Percentage = Double
 
-type RenderingEngineType = typings.awsSdk.awsSdkStrings.OGRE | java.lang.String
+type Port = Double
 
-type RenderingEngineVersionType = java.lang.String
+type PortMappingList = js.Array[PortMapping]
 
-type RevisionId = java.lang.String
+type RenderingEngineType = OGRE | String
 
-type RobotApplicationConfigs = js.Array[typings.awsSdk.robomakerMod.RobotApplicationConfig]
+type RenderingEngineVersionType = String
 
-type RobotApplicationNames = js.Array[typings.awsSdk.robomakerMod.Name]
+type RepositoryUrl = String
 
-type RobotApplicationSummaries = js.Array[typings.awsSdk.robomakerMod.RobotApplicationSummary]
+type RevisionId = String
+
+type RobotApplicationConfigs = js.Array[RobotApplicationConfig]
+
+type RobotApplicationNames = js.Array[Name]
+
+type RobotApplicationSummaries = js.Array[RobotApplicationSummary]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Validating_
@@ -170,24 +207,26 @@ type RobotApplicationSummaries = js.Array[typings.awsSdk.robomakerMod.RobotAppli
   - typings.awsSdk.awsSdkStrings.Finished_
   - java.lang.String
 */
-type RobotDeploymentStep = typings.awsSdk.robomakerMod._RobotDeploymentStep | java.lang.String
+type RobotDeploymentStep = _RobotDeploymentStep | String
 
-type RobotDeploymentSummary = js.Array[typings.awsSdk.robomakerMod.RobotDeployment]
+type RobotDeploymentSummary = js.Array[RobotDeployment]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ROS
   - typings.awsSdk.awsSdkStrings.ROS2
+  - typings.awsSdk.awsSdkStrings.General_
   - java.lang.String
 */
-type RobotSoftwareSuiteType = typings.awsSdk.robomakerMod._RobotSoftwareSuiteType | java.lang.String
+type RobotSoftwareSuiteType = _RobotSoftwareSuiteType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Kinetic
   - typings.awsSdk.awsSdkStrings.Melodic
   - typings.awsSdk.awsSdkStrings.Dashing
+  - typings.awsSdk.awsSdkStrings.Foxy
   - java.lang.String
 */
-type RobotSoftwareSuiteVersionType = typings.awsSdk.robomakerMod._RobotSoftwareSuiteVersionType | java.lang.String
+type RobotSoftwareSuiteVersionType = _RobotSoftwareSuiteVersionType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Available_
@@ -199,29 +238,33 @@ type RobotSoftwareSuiteVersionType = typings.awsSdk.robomakerMod._RobotSoftwareS
   - typings.awsSdk.awsSdkStrings.NoResponse
   - java.lang.String
 */
-type RobotStatus = typings.awsSdk.robomakerMod._RobotStatus | java.lang.String
+type RobotStatus = _RobotStatus | String
 
-type Robots = js.Array[typings.awsSdk.robomakerMod.Robot]
+type Robots = js.Array[Robot]
 
-type S3Bucket = java.lang.String
+type S3Bucket = String
 
-type S3Etag = java.lang.String
+type S3Etag = String
 
-type S3Key = java.lang.String
+type S3Etags = js.Array[S3Etag]
 
-type S3KeyOutputs = js.Array[typings.awsSdk.robomakerMod.S3KeyOutput]
+type S3Key = String
 
-type S3Keys = js.Array[typings.awsSdk.robomakerMod.S3Key]
+type S3KeyOrPrefix = String
 
-type SecurityGroups = js.Array[typings.awsSdk.robomakerMod.NonEmptyString]
+type S3KeyOutputs = js.Array[S3KeyOutput]
 
-type SimulationApplicationConfigs = js.Array[typings.awsSdk.robomakerMod.SimulationApplicationConfig]
+type S3KeysOrPrefixes = js.Array[S3KeyOrPrefix]
 
-type SimulationApplicationNames = js.Array[typings.awsSdk.robomakerMod.Name]
+type SecurityGroups = js.Array[NonEmptyString]
 
-type SimulationApplicationSummaries = js.Array[typings.awsSdk.robomakerMod.SimulationApplicationSummary]
+type SimulationApplicationConfigs = js.Array[SimulationApplicationConfig]
 
-type SimulationJobBatchErrorCode = typings.awsSdk.awsSdkStrings.InternalServiceError | java.lang.String
+type SimulationApplicationNames = js.Array[Name]
+
+type SimulationApplicationSummaries = js.Array[SimulationApplicationSummary]
+
+type SimulationJobBatchErrorCode = InternalServiceError | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Pending_
@@ -235,14 +278,16 @@ type SimulationJobBatchErrorCode = typings.awsSdk.awsSdkStrings.InternalServiceE
   - typings.awsSdk.awsSdkStrings.TimedOut_
   - java.lang.String
 */
-type SimulationJobBatchStatus = typings.awsSdk.robomakerMod._SimulationJobBatchStatus | java.lang.String
+type SimulationJobBatchStatus = _SimulationJobBatchStatus | String
 
-type SimulationJobBatchSummaries = js.Array[typings.awsSdk.robomakerMod.SimulationJobBatchSummary]
+type SimulationJobBatchSummaries = js.Array[SimulationJobBatchSummary]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.InternalServiceError
   - typings.awsSdk.awsSdkStrings.RobotApplicationCrash
   - typings.awsSdk.awsSdkStrings.SimulationApplicationCrash
+  - typings.awsSdk.awsSdkStrings.RobotApplicationHealthCheckFailure
+  - typings.awsSdk.awsSdkStrings.SimulationApplicationHealthCheckFailure
   - typings.awsSdk.awsSdkStrings.BadPermissionsRobotApplication
   - typings.awsSdk.awsSdkStrings.BadPermissionsSimulationApplication
   - typings.awsSdk.awsSdkStrings.BadPermissionsS3Object
@@ -254,6 +299,7 @@ type SimulationJobBatchSummaries = js.Array[typings.awsSdk.robomakerMod.Simulati
   - typings.awsSdk.awsSdkStrings.InvalidBundleRobotApplication
   - typings.awsSdk.awsSdkStrings.InvalidBundleSimulationApplication
   - typings.awsSdk.awsSdkStrings.InvalidS3Resource
+  - typings.awsSdk.awsSdkStrings.ThrottlingError
   - typings.awsSdk.awsSdkStrings.LimitExceeded
   - typings.awsSdk.awsSdkStrings.MismatchedEtag
   - typings.awsSdk.awsSdkStrings.RobotApplicationVersionMismatchedEtag
@@ -267,9 +313,10 @@ type SimulationJobBatchSummaries = js.Array[typings.awsSdk.robomakerMod.Simulati
   - typings.awsSdk.awsSdkStrings.WrongRegionS3Output
   - typings.awsSdk.awsSdkStrings.WrongRegionRobotApplication
   - typings.awsSdk.awsSdkStrings.WrongRegionSimulationApplication
+  - typings.awsSdk.awsSdkStrings.UploadContentMismatchError
   - java.lang.String
 */
-type SimulationJobErrorCode = typings.awsSdk.robomakerMod._SimulationJobErrorCode | java.lang.String
+type SimulationJobErrorCode = _SimulationJobErrorCode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Pending_
@@ -284,48 +331,62 @@ type SimulationJobErrorCode = typings.awsSdk.robomakerMod._SimulationJobErrorCod
   - typings.awsSdk.awsSdkStrings.Canceled_
   - java.lang.String
 */
-type SimulationJobStatus = typings.awsSdk.robomakerMod._SimulationJobStatus | java.lang.String
+type SimulationJobStatus = _SimulationJobStatus | String
 
-type SimulationJobSummaries = js.Array[typings.awsSdk.robomakerMod.SimulationJobSummary]
+type SimulationJobSummaries = js.Array[SimulationJobSummary]
 
-type SimulationJobs = js.Array[typings.awsSdk.robomakerMod.SimulationJob]
+type SimulationJobs = js.Array[SimulationJob]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Gazebo
   - typings.awsSdk.awsSdkStrings.RosbagPlay
+  - typings.awsSdk.awsSdkStrings.SimulationRuntime
   - java.lang.String
 */
-type SimulationSoftwareSuiteType = typings.awsSdk.robomakerMod._SimulationSoftwareSuiteType | java.lang.String
+type SimulationSoftwareSuiteType = _SimulationSoftwareSuiteType | String
 
-type SimulationSoftwareSuiteVersionType = java.lang.String
+type SimulationSoftwareSuiteVersionType = String
 
-type SimulationTimeMillis = scala.Double
+type SimulationTimeMillis = Double
 
-type SimulationUnit = scala.Double
+type SimulationUnit = Double
 
-type SourceConfigs = js.Array[typings.awsSdk.robomakerMod.SourceConfig]
+type SourceConfigs = js.Array[SourceConfig]
 
-type Sources = js.Array[typings.awsSdk.robomakerMod.Source]
+type Sources = js.Array[Source]
 
-type Subnets = js.Array[typings.awsSdk.robomakerMod.NonEmptyString]
+type Subnets = js.Array[NonEmptyString]
 
-type TagKey = java.lang.String
+type TagKey = String
 
-type TagKeyList = js.Array[typings.awsSdk.robomakerMod.TagKey]
+type TagKeyList = js.Array[TagKey]
 
-type TagMap = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.robomakerMod.TagValue]
+type TagMap = StringDictionary[TagValue]
 
-type TagValue = java.lang.String
+type TagValue = String
 
-type TemplateName = java.lang.String
+type TemplateName = String
 
-type TemplateSummaries = js.Array[typings.awsSdk.robomakerMod.TemplateSummary]
+type TemplateSummaries = js.Array[TemplateSummary]
 
-type Version = java.lang.String
+type Tools = js.Array[Tool]
 
-type VersionQualifier = java.lang.String
+type UnrestrictedCommand = String
 
-type WorldConfigs = js.Array[typings.awsSdk.robomakerMod.WorldConfig]
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.UPLOAD_ON_TERMINATE
+  - typings.awsSdk.awsSdkStrings.UPLOAD_ROLLING_AUTO_REMOVE
+  - java.lang.String
+*/
+type UploadBehavior = _UploadBehavior | String
+
+type UploadConfigurations = js.Array[UploadConfiguration]
+
+type Version = String
+
+type VersionQualifier = String
+
+type WorldConfigs = js.Array[WorldConfig]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.InternalServiceError
@@ -336,7 +397,7 @@ type WorldConfigs = js.Array[typings.awsSdk.robomakerMod.WorldConfig]
   - typings.awsSdk.awsSdkStrings.AccessDenied
   - java.lang.String
 */
-type WorldExportJobErrorCode = typings.awsSdk.robomakerMod._WorldExportJobErrorCode | java.lang.String
+type WorldExportJobErrorCode = _WorldExportJobErrorCode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Pending_
@@ -347,11 +408,11 @@ type WorldExportJobErrorCode = typings.awsSdk.robomakerMod._WorldExportJobErrorC
   - typings.awsSdk.awsSdkStrings.Canceled_
   - java.lang.String
 */
-type WorldExportJobStatus = typings.awsSdk.robomakerMod._WorldExportJobStatus | java.lang.String
+type WorldExportJobStatus = _WorldExportJobStatus | String
 
-type WorldExportJobSummaries = js.Array[typings.awsSdk.robomakerMod.WorldExportJobSummary]
+type WorldExportJobSummaries = js.Array[WorldExportJobSummary]
 
-type WorldFailures = js.Array[typings.awsSdk.robomakerMod.WorldFailure]
+type WorldFailures = js.Array[WorldFailure]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.InternalServiceError
@@ -362,7 +423,7 @@ type WorldFailures = js.Array[typings.awsSdk.robomakerMod.WorldFailure]
   - typings.awsSdk.awsSdkStrings.AllWorldGenerationFailed
   - java.lang.String
 */
-type WorldGenerationJobErrorCode = typings.awsSdk.robomakerMod._WorldGenerationJobErrorCode | java.lang.String
+type WorldGenerationJobErrorCode = _WorldGenerationJobErrorCode | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Pending_
@@ -374,15 +435,15 @@ type WorldGenerationJobErrorCode = typings.awsSdk.robomakerMod._WorldGenerationJ
   - typings.awsSdk.awsSdkStrings.Canceled_
   - java.lang.String
 */
-type WorldGenerationJobStatus = typings.awsSdk.robomakerMod._WorldGenerationJobStatus | java.lang.String
+type WorldGenerationJobStatus = _WorldGenerationJobStatus | String
 
-type WorldGenerationJobSummaries = js.Array[typings.awsSdk.robomakerMod.WorldGenerationJobSummary]
+type WorldGenerationJobSummaries = js.Array[WorldGenerationJobSummary]
 
-type WorldSummaries = js.Array[typings.awsSdk.robomakerMod.WorldSummary]
+type WorldSummaries = js.Array[WorldSummary]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2018-06-29`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.robomakerMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

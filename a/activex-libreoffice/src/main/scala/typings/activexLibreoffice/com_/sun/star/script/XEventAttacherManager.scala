@@ -28,7 +28,7 @@ trait XEventAttacherManager
     * Exceptions of type {@link com.sun.star.beans.IntrospectionException} and {@link com.sun.star.script.CannotCreateAdapterException} that can be thrown
     * by methods of {@link XEventAttacher} are caught and ignored.
     */
-  def attach(nIndex: Double, xObject: XInterface, aHelper: js.Any): Unit
+  def attach(nIndex: Double, xObject: XInterface, aHelper: Any): Unit
   
   /**
     * detaches all the ScriptEvents from the given object which are registered at this object for the given index.
@@ -120,11 +120,11 @@ object XEventAttacherManager {
   inline def apply(
     acquire: () => Unit,
     addScriptListener: XScriptListener => Unit,
-    attach: (Double, XInterface, js.Any) => Unit,
+    attach: (Double, XInterface, Any) => Unit,
     detach: (Double, XInterface) => Unit,
     getScriptEvents: Double => SafeArray[ScriptEventDescriptor],
     insertEntry: Double => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     registerScriptEvent: (Double, ScriptEventDescriptor) => Unit,
     registerScriptEvents: (Double, SeqEquiv[ScriptEventDescriptor]) => Unit,
     release: () => Unit,
@@ -141,7 +141,7 @@ object XEventAttacherManager {
     
     inline def setAddScriptListener(value: XScriptListener => Unit): Self = StObject.set(x, "addScriptListener", js.Any.fromFunction1(value))
     
-    inline def setAttach(value: (Double, XInterface, js.Any) => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction3(value))
+    inline def setAttach(value: (Double, XInterface, Any) => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction3(value))
     
     inline def setDetach(value: (Double, XInterface) => Unit): Self = StObject.set(x, "detach", js.Any.fromFunction2(value))
     

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.ApplicationModel.Background.NetworkOperatorHotspotAuthenticationTrigger")
 @js.native
 /** Initializes a new instance of a mobile network operator hotspot authentication trigger. */
-class NetworkOperatorHotspotAuthenticationTrigger ()
+open class NetworkOperatorHotspotAuthenticationTrigger ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Background.NetworkOperatorHotspotAuthenticationTrigger

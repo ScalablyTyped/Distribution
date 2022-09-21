@@ -1,131 +1,53 @@
 package typings.angularCommon.mod
 
-import typings.rxjs.typesMod.SubscriptionLike
+import typings.angularCore.mod.ɵɵFactoryDeclaration
+import typings.angularCore.mod.ɵɵInjectableDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * @description
+  *
+  * A service that applications can use to interact with a browser's URL.
+  *
+  * Depending on the `LocationStrategy` used, `Location` persists
+  * to the URL's path or the URL's hash segment.
+  *
+  * @usageNotes
+  *
+  * It's better to use the `Router.navigate()` service to trigger route changes. Use
+  * `Location` only if you need to interact with or create normalized URLs outside of
+  * routing.
+  *
+  * `Location` is responsible for normalizing the URL against the application's base href.
+  * A normalized URL is absolute from the URL host, includes the application's base href, and has no
+  * trailing slash:
+  * - `/my/app/user/123` is normalized
+  * - `my/app/user/123` **is not** normalized
+  * - `/my/app/user/123/` **is not** normalized
+  *
+  * ### Example
+  *
+  * <code-example path='common/location/ts/path_location_component.ts'
+  * region='LocationComponent'></code-example>
+  *
+  * @publicApi
+  */
 @JSImport("@angular/common", "Location")
 @js.native
-class Location protected () extends StObject {
-  def this(platformStrategy: LocationStrategy, platformLocation: PlatformLocation) = this()
+open class Location protected ()
+  extends StObject
+     with Location2 {
+  def this(locationStrategy: LocationStrategy) = this()
   
   /**
-    * Navigates back in the platform's history.
+    * A callback method that performs custom clean-up, invoked immediately
+    * before a directive, pipe, or service instance is destroyed.
     */
-  def back(): Unit = js.native
-  
-  /**
-    * Navigates forward in the platform's history.
-    */
-  def forward(): Unit = js.native
-  
-  /**
-    * Reports the current state of the location history.
-    * @returns The current value of the `history.state` object.
-    */
-  def getState(): js.Any = js.native
-  
-  /**
-    * Changes the browser's URL to a normalized version of a given URL, and pushes a
-    * new item onto the platform's history.
-    *
-    * @param path  URL path to normalize.
-    * @param query Query parameters.
-    * @param state Location history state.
-    *
-    */
-  def go(path: String): Unit = js.native
-  def go(path: String, query: String): Unit = js.native
-  def go(path: String, query: String, state: js.Any): Unit = js.native
-  def go(path: String, query: Unit, state: js.Any): Unit = js.native
-  
-  /**
-    * Normalizes the given path and compares to the current normalized path.
-    *
-    * @param path The given URL path.
-    * @param query Query parameters.
-    *
-    * @returns True if the given URL path is equal to the current normalized path, false
-    * otherwise.
-    */
-  def isCurrentPathEqualTo(path: String): Boolean = js.native
-  def isCurrentPathEqualTo(path: String, query: String): Boolean = js.native
-  
-  /**
-    * Normalizes a URL path by stripping any trailing slashes.
-    *
-    * @param url String representing a URL.
-    *
-    * @returns The normalized URL string.
-    */
-  def normalize(url: String): String = js.native
-  
-  /**
-    * Registers a URL change listener. Use to catch updates performed by the Angular
-    * framework that are not detectible through "popstate" or "hashchange" events.
-    *
-    * @param fn The change handler function, which take a URL and a location history state.
-    */
-  def onUrlChange(fn: js.Function2[/* url */ String, /* state */ js.Any, Unit]): Unit = js.native
-  
-  /**
-    * Normalizes the URL path for this location.
-    *
-    * @param includeHash True to include an anchor fragment in the path.
-    *
-    * @returns The normalized URL path.
-    */
-  def path(): String = js.native
-  def path(includeHash: Boolean): String = js.native
-  
-  /**
-    * Normalizes an external URL path.
-    * If the given URL doesn't begin with a leading slash (`'/'`), adds one
-    * before normalizing. Adds a hash if `HashLocationStrategy` is
-    * in use, or the `APP_BASE_HREF` if the `PathLocationStrategy` is in use.
-    *
-    * @param url String representing a URL.
-    *
-    * @returns  A normalized platform-specific URL.
-    */
-  def prepareExternalUrl(url: String): String = js.native
-  
-  /**
-    * Changes the browser's URL to a normalized version of the given URL, and replaces
-    * the top item on the platform's history stack.
-    *
-    * @param path  URL path to normalize.
-    * @param query Query parameters.
-    * @param state Location history state.
-    */
-  def replaceState(path: String): Unit = js.native
-  def replaceState(path: String, query: String): Unit = js.native
-  def replaceState(path: String, query: String, state: js.Any): Unit = js.native
-  def replaceState(path: String, query: Unit, state: js.Any): Unit = js.native
-  
-  /**
-    * Subscribes to the platform's `popState` events.
-    *
-    * @param value Event that is triggered when the state history changes.
-    * @param exception The exception to throw.
-    *
-    * @returns Subscribed events.
-    */
-  def subscribe(onNext: js.Function1[/* value */ PopStateEvent, Unit]): SubscriptionLike = js.native
-  def subscribe(
-    onNext: js.Function1[/* value */ PopStateEvent, Unit],
-    onThrow: js.Function1[/* exception */ js.Any, Unit]
-  ): SubscriptionLike = js.native
-  def subscribe(
-    onNext: js.Function1[/* value */ PopStateEvent, Unit],
-    onThrow: js.Function1[/* exception */ js.Any, Unit],
-    onReturn: js.Function0[Unit]
-  ): SubscriptionLike = js.native
-  def subscribe(onNext: js.Function1[/* value */ PopStateEvent, Unit], onThrow: Null, onReturn: js.Function0[Unit]): SubscriptionLike = js.native
-  def subscribe(onNext: js.Function1[/* value */ PopStateEvent, Unit], onThrow: Unit, onReturn: js.Function0[Unit]): SubscriptionLike = js.native
+  /* CompleteClass */
+  override def ngOnDestroy(): Unit = js.native
 }
-/* static members */
 object Location {
   
   @JSImport("@angular/common", "Location")
@@ -141,7 +63,11 @@ object Location {
     *
     * @returns The joined URL string.
     */
-  inline def joinWithSlash(start: String, end: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("joinWithSlash")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[String]
+  /* static member */
+  @JSImport("@angular/common", "Location.joinWithSlash")
+  @js.native
+  def joinWithSlash: js.Function2[/* start */ String, /* end */ String, String] = js.native
+  inline def joinWithSlash_=(x: js.Function2[/* start */ String, /* end */ String, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("joinWithSlash")(x.asInstanceOf[js.Any])
   
   /**
     * Normalizes URL parameters by prepending with `?` if needed.
@@ -150,7 +76,11 @@ object Location {
     *
     * @returns The normalized URL parameters string.
     */
-  inline def normalizeQueryParams(params: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeQueryParams")(params.asInstanceOf[js.Any]).asInstanceOf[String]
+  /* static member */
+  @JSImport("@angular/common", "Location.normalizeQueryParams")
+  @js.native
+  def normalizeQueryParams: js.Function1[/* params */ String, String] = js.native
+  inline def normalizeQueryParams_=(x: js.Function1[/* params */ String, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("normalizeQueryParams")(x.asInstanceOf[js.Any])
   
   /**
     * Removes a trailing slash from a URL string if needed.
@@ -161,5 +91,21 @@ object Location {
     *
     * @returns The URL string, modified if needed.
     */
-  inline def stripTrailingSlash(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stripTrailingSlash")(url.asInstanceOf[js.Any]).asInstanceOf[String]
+  /* static member */
+  @JSImport("@angular/common", "Location.stripTrailingSlash")
+  @js.native
+  def stripTrailingSlash: js.Function1[/* url */ String, String] = js.native
+  inline def stripTrailingSlash_=(x: js.Function1[/* url */ String, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stripTrailingSlash")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("@angular/common", "Location.\u0275fac")
+  @js.native
+  def ɵfac: ɵɵFactoryDeclaration[Location2, scala.Nothing] = js.native
+  inline def ɵfac_=(x: ɵɵFactoryDeclaration[Location2, scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("@angular/common", "Location.\u0275prov")
+  @js.native
+  def ɵprov: ɵɵInjectableDeclaration[Location2] = js.native
+  inline def ɵprov_=(x: ɵɵInjectableDeclaration[Location2]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275prov")(x.asInstanceOf[js.Any])
 }

@@ -11,5 +11,6 @@ trait ProcessingInstruction
      with CharacterData
      with LinkStyle {
   
+  /* standard dom */
   val target: java.lang.String = js.native
 }

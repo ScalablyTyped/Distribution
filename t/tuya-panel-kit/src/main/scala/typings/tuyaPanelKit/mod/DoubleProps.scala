@@ -9,28 +9,148 @@ trait DoubleProps
   extends StObject
      with ProgressProps {
   
+  /**
+    * @language zh-CN
+    * @description 轨道不满360度结束的圆环颜色
+    * @defaultValue "#E5E5E5"
+    */
+  /**
+    * @language en-US
+    * @description The color of the ring at the end of the track less than 360 degrees
+    * @defaultValue "#E5E5E5"
+    */
   var endColor: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 最大值
+    * @defaultValue 25
+    */
+  /**
+    * @language en-US
+    * @description Max value
+    * @defaultValue 25
+    */
   var maxValue: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 开始端 thumb 小圆球的填充色
+    * @defaultValue "#fff"
+    */
+  /**
+    * @language en-US
+    * @description Fill color of thumb ball at the beginning of progress bar
+    * @defaultValue "#fff"
+    */
   var minThumbFill: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 开始端thumb小圆球的边框色
+    * @defaultValue "#FF4800"
+    */
+  /**
+    * @language en-US
+    * @description The border color of the thumb ball at the beginning
+    * @defaultValue "#FF4800"
+    */
   var minThumbStroke: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 最小值
+    * @defaultValue 0
+    */
+  /**
+    * @language en-US
+    * @description Min value
+    * @defaultValue 0
+    */
   var minValue: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 滑动结束回调
+    * @defaultValue () => {}
+    */
+  /**
+    * @language en-US
+    * @description Callback of ending the slide.
+    * @defaultValue () => {}
+    */
   var onSlidingComplete: js.UndefOr[js.Function1[/* argus */ MaxValue, Unit]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 值改变的回调
+    * @defaultValue () => {}
+    */
+  /**
+    * @language en-US
+    * @description Callback of value change
+    * @defaultValue () => {}
+    */
   var onValueChange: js.UndefOr[js.Function1[/* argus */ MaxValue, Unit]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 轨道不满360度开始的圆环颜色
+    * @defaultValue "#E5E5E5"
+    */
+  /**
+    * @language en-US
+    * @description The color of the ring that begins at less than 360 degrees
+    * @defaultValue "#E5E5E5"
+    */
   var startColor: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 结束端thumb小圆球的填充色
+    * @defaultValue "#fff"
+    */
+  /**
+    * @language en-US
+    * @description Fill color of the thumb ball at the end
+    * @defaultValue "#fff"
+    */
   var thumbFill: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description thumb小圆球的半径
+    * @defaultValue 3.5
+    */
+  /**
+    * @language en-US
+    * @description Radius of thumb ball
+    * @defaultValue 3.5
+    */
   var thumbRadius: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 结束端thumb小圆球的边框色
+    * @defaultValue "#FF4800"
+    */
+  /**
+    * @language en-US
+    * @description The border color of the thumb ball at the end
+    * @defaultValue "#FF4800"
+    */
   var thumbStroke: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description thumb 小圆球边框宽度
+    * @defaultValue 2
+    */
+  /**
+    * @language en-US
+    * @description Border width of thumb ball
+    * @defaultValue 2
+    */
   var thumbStrokeWidth: js.UndefOr[Double] = js.undefined
 }
 object DoubleProps {

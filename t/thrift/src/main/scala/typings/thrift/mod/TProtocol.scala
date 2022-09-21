@@ -1,6 +1,6 @@
 package typings.thrift.mod
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.thrift.mod.Thrift.MessageType
 import typings.thrift.mod.Thrift.Type
 import org.scalablytyped.runtime.StObject

@@ -27,7 +27,7 @@ Instantiable0[Unit] {
   /**
     * Registers a component with the application and initializes it if the component is not already initialized.
     */
-  def addComponent(component: js.Any): Unit = js.native
+  def addComponent(component: Any): Unit = js.native
   
   /**
     * Creates a history point and adds it to the browser's history stack.
@@ -109,7 +109,7 @@ Instantiable0[Unit] {
   /**
     * Registers with the application an object that will require disposing. This member is static and can be invoked without creating an instance of the class.
     */
-  def registerDisposableObject(`object`: js.Any): Unit = js.native
+  def registerDisposableObject(`object`: Any): Unit = js.native
   
   /**
     * Raised after all scripts have been loaded but before objects are created.
@@ -141,5 +141,5 @@ Instantiable0[Unit] {
   /**
     * Unregisters a disposable object from the application. This member is static and can be invoked without creating an instance of the class.
     */
-  def unregisterDisposableObject(`object`: js.Any): Unit = js.native
+  def unregisterDisposableObject(`object`: Any): Unit = js.native
 }

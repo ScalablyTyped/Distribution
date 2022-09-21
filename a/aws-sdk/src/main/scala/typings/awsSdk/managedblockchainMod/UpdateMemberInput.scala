@@ -12,12 +12,12 @@ trait UpdateMemberInput extends StObject {
   var LogPublishingConfiguration: js.UndefOr[MemberLogPublishingConfiguration] = js.undefined
   
   /**
-    * The unique ID of the member.
+    * The unique identifier of the member.
     */
   var MemberId: ResourceIdString
   
   /**
-    * The unique ID of the Managed Blockchain network to which the member belongs.
+    * The unique identifier of the Managed Blockchain network to which the member belongs.
     */
   var NetworkId: ResourceIdString
 }

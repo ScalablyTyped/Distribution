@@ -4,24 +4,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Information about a new playlist item.
-  */
 trait SchemaActivityContentDetailsPlaylistItem extends StObject {
   
   /**
     * The value that YouTube uses to uniquely identify the playlist.
     */
-  var playlistId: js.UndefOr[String] = js.undefined
+  var playlistId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * ID of the item within the playlist.
     */
-  var playlistItemId: js.UndefOr[String] = js.undefined
+  var playlistItemId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The resourceId object contains information about the resource that was
-    * added to the playlist.
+    * The resourceId object contains information about the resource that was added to the playlist.
     */
   var resourceId: js.UndefOr[SchemaResourceId] = js.undefined
 }
@@ -36,9 +32,13 @@ object SchemaActivityContentDetailsPlaylistItem {
     
     inline def setPlaylistId(value: String): Self = StObject.set(x, "playlistId", value.asInstanceOf[js.Any])
     
+    inline def setPlaylistIdNull: Self = StObject.set(x, "playlistId", null)
+    
     inline def setPlaylistIdUndefined: Self = StObject.set(x, "playlistId", js.undefined)
     
     inline def setPlaylistItemId(value: String): Self = StObject.set(x, "playlistItemId", value.asInstanceOf[js.Any])
+    
+    inline def setPlaylistItemIdNull: Self = StObject.set(x, "playlistItemId", null)
     
     inline def setPlaylistItemIdUndefined: Self = StObject.set(x, "playlistItemId", js.undefined)
     

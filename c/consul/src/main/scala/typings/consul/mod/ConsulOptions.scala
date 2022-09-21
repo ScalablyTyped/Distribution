@@ -31,7 +31,7 @@ object ConsulOptions {
     
     inline def setCaUndefined: Self = StObject.set(x, "ca", js.undefined)
     
-    inline def setCaVarargs(value: String*): Self = StObject.set(x, "ca", js.Array(value :_*))
+    inline def setCaVarargs(value: String*): Self = StObject.set(x, "ca", js.Array(value*))
     
     inline def setDefaults(value: CommonOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     

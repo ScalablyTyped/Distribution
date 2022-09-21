@@ -22,6 +22,6 @@ object BatchGetDevEndpointsRequest {
     
     inline def setDevEndpointNames(value: DevEndpointNames): Self = StObject.set(x, "DevEndpointNames", value.asInstanceOf[js.Any])
     
-    inline def setDevEndpointNamesVarargs(value: GenericString*): Self = StObject.set(x, "DevEndpointNames", js.Array(value :_*))
+    inline def setDevEndpointNamesVarargs(value: GenericString*): Self = StObject.set(x, "DevEndpointNames", js.Array(value*))
   }
 }

@@ -10,7 +10,7 @@ trait IgTreeDragAndDropSettings
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Gets whether the widget will accept drag and drop from other controls.
@@ -29,7 +29,7 @@ trait IgTreeDragAndDropSettings
     * "string" Possible values: "parent", "document", "window".
     * "array" An array defining a bounding box in the form [ x1, y1, x2, y2 ].
     */
-  var containment: js.UndefOr[Boolean | String | js.Object | js.Array[js.Any]] = js.undefined
+  var containment: js.UndefOr[Boolean | String | js.Object | js.Array[Any]] = js.undefined
   
   /**
     * Gets the HTML markup for the "copy after" helper.
@@ -172,11 +172,11 @@ object IgTreeDragAndDropSettings {
     
     inline def setAllowDropUndefined: Self = StObject.set(x, "allowDrop", js.undefined)
     
-    inline def setContainment(value: Boolean | String | js.Object | js.Array[js.Any]): Self = StObject.set(x, "containment", value.asInstanceOf[js.Any])
+    inline def setContainment(value: Boolean | String | js.Object | js.Array[Any]): Self = StObject.set(x, "containment", value.asInstanceOf[js.Any])
     
     inline def setContainmentUndefined: Self = StObject.set(x, "containment", js.undefined)
     
-    inline def setContainmentVarargs(value: js.Any*): Self = StObject.set(x, "containment", js.Array(value :_*))
+    inline def setContainmentVarargs(value: Any*): Self = StObject.set(x, "containment", js.Array(value*))
     
     inline def setCopyAfterMarkup(value: String): Self = StObject.set(x, "copyAfterMarkup", value.asInstanceOf[js.Any])
     

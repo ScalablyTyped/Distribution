@@ -12,7 +12,7 @@ trait EC2SecurityGroup extends StObject {
   var EC2SecurityGroupName: js.UndefOr[String] = js.undefined
   
   /**
-    * The AWS account ID of the Amazon EC2 security group owner.
+    * The Amazon account ID of the Amazon EC2 security group owner.
     */
   var EC2SecurityGroupOwnerId: js.UndefOr[String] = js.undefined
   

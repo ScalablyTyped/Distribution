@@ -23,7 +23,7 @@ object Client {
   inline def apply(
     checkout: CheckoutResource,
     collection: CollectionResource,
-    fetchNextPage: js.Array[js.Any] => js.Array[js.Any],
+    fetchNextPage: js.Array[Any] => js.Array[Any],
     image: Image,
     product: ProductResource,
     shop: ShopResource
@@ -38,7 +38,7 @@ object Client {
     
     inline def setCollection(value: CollectionResource): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
     
-    inline def setFetchNextPage(value: js.Array[js.Any] => js.Array[js.Any]): Self = StObject.set(x, "fetchNextPage", js.Any.fromFunction1(value))
+    inline def setFetchNextPage(value: js.Array[Any] => js.Array[Any]): Self = StObject.set(x, "fetchNextPage", js.Any.fromFunction1(value))
     
     inline def setImage(value: Image): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     

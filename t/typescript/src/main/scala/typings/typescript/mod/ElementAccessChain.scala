@@ -10,5 +10,5 @@ trait ElementAccessChain
      with ElementAccessExpression
      with OptionalChain {
   
-  var _optionalChainBrand: js.Any = js.native
+  var _optionalChainBrand: Any = js.native
 }

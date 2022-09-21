@@ -1,6 +1,5 @@
 package typings.tensorflowTfjsBackendCpu
 
-import typings.std.Float32Array
 import typings.tensorflowTfjsBackendCpu.anon.Real
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.TypedArray
@@ -13,10 +12,10 @@ object binaryTypesMod {
   type ComplexBinaryKernelImpl = js.Function6[
     /* aShape */ js.Array[Double], 
     /* bShape */ js.Array[Double], 
-    /* aRealVals */ Float32Array, 
-    /* aImagVals */ Float32Array, 
-    /* bRealVals */ Float32Array, 
-    /* bImagVals */ Float32Array, 
+    /* aRealVals */ js.typedarray.Float32Array, 
+    /* aImagVals */ js.typedarray.Float32Array, 
+    /* bRealVals */ js.typedarray.Float32Array, 
+    /* bImagVals */ js.typedarray.Float32Array, 
     js.Tuple3[TypedArray, TypedArray, js.Array[Double]]
   ]
   
@@ -25,11 +24,11 @@ object binaryTypesMod {
   type SimpleBinaryKernelImpl = js.Function5[
     /* aShape */ js.Array[Double], 
     /* bShape */ js.Array[Double], 
-    /* aVals */ TypedArray, 
-    /* bVals */ TypedArray, 
+    /* aVals */ TypedArray | js.Array[String], 
+    /* bVals */ TypedArray | js.Array[String], 
     /* dtype */ DataType, 
     js.Tuple2[TypedArray, js.Array[Double]]
   ]
   
-  type SimpleBinaryOperation = js.Function2[/* a */ Double, /* b */ Double, Double]
+  type SimpleBinaryOperation = js.Function2[/* a */ Double | String, /* b */ Double | String, Double]
 }

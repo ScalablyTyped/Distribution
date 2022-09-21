@@ -1,11 +1,11 @@
 package typings.vegaLite
 
-import typings.std.Record
 import typings.vegaLite.dataMod.AncestorParse
 import typings.vegaLite.dataflowMod.DataFlowNode
 import typings.vegaLite.modelMod.Model
 import typings.vegaLite.srcDataMod.Parse
 import typings.vegaLite.transformMod.FilterTransform
+import typings.vegaLite.utilMod.Dict
 import typings.vegaTypings.transformMod.FormulaTransform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,15 +19,15 @@ object formatparseMod {
   
   @JSImport("vega-lite/build/src/compile/data/formatparse", "ParseNode")
   @js.native
-  class ParseNode protected () extends DataFlowNode {
+  open class ParseNode protected () extends DataFlowNode {
     def this(parent: DataFlowNode, parse: Parse) = this()
     
-    /* private */ var _parse: js.Any = js.native
+    /* private */ var _parse: Any = js.native
     
     /**
       * Assemble an object for Vega's format.parse property.
       */
-    def assembleFormatParse(): Record[String, String] = js.native
+    def assembleFormatParse(): Dict[String] = js.native
     
     def assembleTransforms(): js.Array[FormulaTransform] = js.native
     def assembleTransforms(onlyNested: Boolean): js.Array[FormulaTransform] = js.native
@@ -54,9 +54,9 @@ object formatparseMod {
     inline def makeWithAncestors(parent: DataFlowNode, explicit: Parse, `implicit`: Parse, ancestorParse: AncestorParse): ParseNode = (^.asInstanceOf[js.Dynamic].applyDynamic("makeWithAncestors")(parent.asInstanceOf[js.Any], explicit.asInstanceOf[js.Any], `implicit`.asInstanceOf[js.Any], ancestorParse.asInstanceOf[js.Any])).asInstanceOf[ParseNode]
   }
   
-  inline def getImplicitFromEncoding(model: Model): Record[String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getImplicitFromEncoding")(model.asInstanceOf[js.Any]).asInstanceOf[Record[String, String]]
+  inline def getImplicitFromEncoding(model: Model): Dict[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getImplicitFromEncoding")(model.asInstanceOf[js.Any]).asInstanceOf[Dict[String]]
   
-  inline def getImplicitFromFilterTransform(transform: FilterTransform): Record[String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getImplicitFromFilterTransform")(transform.asInstanceOf[js.Any]).asInstanceOf[Record[String, String]]
+  inline def getImplicitFromFilterTransform(transform: FilterTransform): Dict[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getImplicitFromFilterTransform")(transform.asInstanceOf[js.Any]).asInstanceOf[Dict[String]]
   
-  inline def getImplicitFromSelection(model: Model): Record[String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getImplicitFromSelection")(model.asInstanceOf[js.Any]).asInstanceOf[Record[String, String]]
+  inline def getImplicitFromSelection(model: Model): Dict[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getImplicitFromSelection")(model.asInstanceOf[js.Any]).asInstanceOf[Dict[String]]
 }

@@ -42,7 +42,7 @@ object anon {
       
       inline def setMessages(value: js.Array[String]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
-      inline def setMessagesVarargs(value: String*): Self = StObject.set(x, "messages", js.Array(value :_*))
+      inline def setMessagesVarargs(value: String*): Self = StObject.set(x, "messages", js.Array(value*))
       
       inline def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       

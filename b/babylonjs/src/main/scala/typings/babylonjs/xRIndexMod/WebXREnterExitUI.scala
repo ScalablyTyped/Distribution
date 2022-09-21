@@ -7,13 +7,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/XR/index", "WebXREnterExitUI")
 @js.native
-/**
-  *
-  * @param scene babylon scene object to use
-  * @param options (read-only) version of the options passed to this UI
-  */
-/* private */ class WebXREnterExitUI ()
-  extends typings.babylonjs.webXREnterExitUIMod.WebXREnterExitUI
+open class WebXREnterExitUI protected ()
+  extends typings.babylonjs.webXREnterExitUIMod.WebXREnterExitUI {
+  /**
+    * Construct a new EnterExit UI class
+    *
+    * @param _scene babylon scene object to use
+    * @param options (read-only) version of the options passed to this UI
+    */
+  def this(
+    _scene: Scene,
+    /** version of the options passed to this UI */
+  options: typings.babylonjs.webXREnterExitUIMod.WebXREnterExitUIOptions
+  ) = this()
+}
 /* static members */
 object WebXREnterExitUI {
   

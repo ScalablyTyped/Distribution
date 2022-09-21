@@ -15,7 +15,7 @@ object bufferGeometryLoaderMod {
   
   @JSImport("three/src/loaders/BufferGeometryLoader", "BufferGeometryLoader")
   @js.native
-  class BufferGeometryLoader () extends Loader {
+  open class BufferGeometryLoader () extends Loader {
     def this(manager: LoadingManager) = this()
     
     def load(
@@ -40,6 +40,6 @@ object bufferGeometryLoaderMod {
       onError: js.Function1[/* event */ ErrorEvent, Unit]
     ): Unit = js.native
     
-    def parse(json: js.Any): InstancedBufferGeometry | BufferGeometry = js.native
+    def parse(json: Any): InstancedBufferGeometry | BufferGeometry = js.native
   }
 }

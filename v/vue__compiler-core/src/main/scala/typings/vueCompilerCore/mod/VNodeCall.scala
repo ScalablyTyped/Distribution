@@ -12,16 +12,18 @@ trait VNodeCall
      with JSChildNode {
   
   var children: js.UndefOr[
-    js.Array[TemplateChildNode] | TemplateTextChildNode | SlotsExpression | ForRenderListExpression
+    js.Array[TemplateChildNode] | TemplateTextChildNode | SlotsExpression | ForRenderListExpression | SimpleExpressionNode
   ] = js.undefined
   
   var directives: js.UndefOr[DirectiveArguments] = js.undefined
   
   var disableTracking: Boolean
   
-  var dynamicProps: js.UndefOr[String] = js.undefined
+  var dynamicProps: js.UndefOr[String | SimpleExpressionNode] = js.undefined
   
   var isBlock: Boolean
+  
+  var isComponent: Boolean
   
   var patchFlag: js.UndefOr[String] = js.undefined
   
@@ -37,10 +39,11 @@ object VNodeCall {
   inline def apply(
     disableTracking: Boolean,
     isBlock: Boolean,
+    isComponent: Boolean,
     loc: SourceLocation,
     tag: String | js.Symbol | CallExpression
   ): VNodeCall = {
-    val __obj = js.Dynamic.literal(disableTracking = disableTracking.asInstanceOf[js.Any], isBlock = isBlock.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(disableTracking = disableTracking.asInstanceOf[js.Any], isBlock = isBlock.asInstanceOf[js.Any], isComponent = isComponent.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(13)
     __obj.asInstanceOf[VNodeCall]
   }
@@ -48,12 +51,12 @@ object VNodeCall {
   extension [Self <: VNodeCall](x: Self) {
     
     inline def setChildren(
-      value: js.Array[TemplateChildNode] | TemplateTextChildNode | SlotsExpression | ForRenderListExpression
+      value: js.Array[TemplateChildNode] | TemplateTextChildNode | SlotsExpression | ForRenderListExpression | SimpleExpressionNode
     ): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setChildrenVarargs(value: TemplateChildNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: TemplateChildNode*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setDirectives(value: DirectiveArguments): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
     
@@ -61,11 +64,13 @@ object VNodeCall {
     
     inline def setDisableTracking(value: Boolean): Self = StObject.set(x, "disableTracking", value.asInstanceOf[js.Any])
     
-    inline def setDynamicProps(value: String): Self = StObject.set(x, "dynamicProps", value.asInstanceOf[js.Any])
+    inline def setDynamicProps(value: String | SimpleExpressionNode): Self = StObject.set(x, "dynamicProps", value.asInstanceOf[js.Any])
     
     inline def setDynamicPropsUndefined: Self = StObject.set(x, "dynamicProps", js.undefined)
     
     inline def setIsBlock(value: Boolean): Self = StObject.set(x, "isBlock", value.asInstanceOf[js.Any])
+    
+    inline def setIsComponent(value: Boolean): Self = StObject.set(x, "isComponent", value.asInstanceOf[js.Any])
     
     inline def setPatchFlag(value: String): Self = StObject.set(x, "patchFlag", value.asInstanceOf[js.Any])
     

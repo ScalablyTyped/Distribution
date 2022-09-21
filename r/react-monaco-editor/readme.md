@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-monaco-editor
 
-Typings are for version 0.40.0
+Typings are for version 0.50.1
 
 ## Library description:
 Monaco Editor for React
@@ -10,10 +10,10 @@ Monaco Editor for React
 | ------------------ | :-------------: |
 | Full name          | react-monaco-editor |
 | Keywords           | monaco, editor, react, vscode |
-| # releases         | 28 |
-| # dependents       | 97 |
-| # downloads        | 3280089 |
-| # stars            | 1 |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 387631.0 |
+| # stars            | 2893.0 |
 
 ## Links
 - [Homepage](https://github.com/react-monaco-editor/react-monaco-editor)

@@ -10,14 +10,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-virtualized", "MultiGrid")
 @js.native
-class MultiGrid protected ()
+open class MultiGrid protected ()
   extends typings.reactVirtualized.esMultiGridMod.MultiGrid {
   def this(props: MultiGridProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: MultiGridProps, context: js.Any) = this()
+  def this(props: MultiGridProps, context: Any) = this()
 }
 /* static members */
 object MultiGrid {

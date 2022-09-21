@@ -1,7 +1,7 @@
 
 # Scala.js typings for jimp__core
 
-Typings are for version 0.16.1
+Typings are for version 0.16.2
 
 ## Library description:
 Jimp core
@@ -10,10 +10,10 @@ Jimp core
 | ------------------ | :-------------: |
 | Full name          | @jimp/core |
 | Keywords           | - |
-| # releases         | 101 |
-| # dependents       | 3 |
-| # downloads        | 43341106 |
-| # stars            | 0 |
+| # releases         | 21 |
+| # dependents       | 0.0 |
+| # downloads        | 5268173.666666667 |
+| # stars            | 12136.0 |
 
 ## Links
 - [Homepage](https://github.com/oliver-moran/jimp#readme)

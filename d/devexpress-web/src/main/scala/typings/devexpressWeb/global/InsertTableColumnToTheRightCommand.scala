@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("InsertTableColumnToTheRightCommand")
 @js.native
-class InsertTableColumnToTheRightCommand ()
+open class InsertTableColumnToTheRightCommand ()
   extends StObject
      with typings.devexpressWeb.InsertTableColumnToTheRightCommand {
   

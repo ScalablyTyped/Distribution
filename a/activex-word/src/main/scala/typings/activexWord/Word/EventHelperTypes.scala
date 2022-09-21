@@ -125,7 +125,7 @@ object EventHelperTypes {
     
     var puArgErr: Double
     
-    var pvarResult: js.Any
+    var pvarResult: Any
     
     val riid: GUID
     
@@ -139,7 +139,7 @@ object EventHelperTypes {
       pdispparams: DISPPARAMS,
       pexcepinfo: EXCEPINFO,
       puArgErr: Double,
-      pvarResult: js.Any,
+      pvarResult: Any,
       riid: GUID,
       wFlags: Double
     ): ApplicationInvokeParameter = {
@@ -159,7 +159,7 @@ object EventHelperTypes {
       
       inline def setPuArgErr(value: Double): Self = StObject.set(x, "puArgErr", value.asInstanceOf[js.Any])
       
-      inline def setPvarResult(value: js.Any): Self = StObject.set(x, "pvarResult", value.asInstanceOf[js.Any])
+      inline def setPvarResult(value: Any): Self = StObject.set(x, "pvarResult", value.asInstanceOf[js.Any])
       
       inline def setRiid(value: GUID): Self = StObject.set(x, "riid", value.asInstanceOf[js.Any])
       

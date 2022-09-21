@@ -27,7 +27,7 @@ object DescribeEventDetailsRequest {
     
     inline def setEventArns(value: eventArnList): Self = StObject.set(x, "eventArns", value.asInstanceOf[js.Any])
     
-    inline def setEventArnsVarargs(value: eventArn*): Self = StObject.set(x, "eventArns", js.Array(value :_*))
+    inline def setEventArnsVarargs(value: eventArn*): Self = StObject.set(x, "eventArns", js.Array(value*))
     
     inline def setLocale(value: locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     

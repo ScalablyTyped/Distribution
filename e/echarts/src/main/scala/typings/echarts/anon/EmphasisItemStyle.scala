@@ -9,7 +9,7 @@ trait EmphasisItemStyle extends StObject {
   /**
     * @see https://echarts.apache.org/en/option.html#series-tree.leaves.emphasis
     */
-  var emphasis: js.UndefOr[`8`] = js.undefined
+  var emphasis: js.UndefOr[`9`] = js.undefined
   
   /**
     * The style of the leaf node in the tree.
@@ -37,7 +37,7 @@ object EmphasisItemStyle {
   
   extension [Self <: EmphasisItemStyle](x: Self) {
     
-    inline def setEmphasis(value: `8`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
+    inline def setEmphasis(value: `9`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
     
     inline def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
     

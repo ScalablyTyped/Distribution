@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMap.Circle")
 @js.native
-class Circle protected ()
+open class Circle protected ()
   extends StObject
      with typings.baidumapWebSdk.BMap.Circle {
   def this(center: typings.baidumapWebSdk.BMap.Point, radius: Double) = this()

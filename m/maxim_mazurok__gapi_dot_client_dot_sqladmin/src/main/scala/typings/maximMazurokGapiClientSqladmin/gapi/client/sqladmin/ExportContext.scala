@@ -1,27 +1,28 @@
 package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
+import typings.maximMazurokGapiClientSqladmin.anon.EscapeCharacter
 import typings.maximMazurokGapiClientSqladmin.anon.MysqlExportOptions
-import typings.maximMazurokGapiClientSqladmin.anon.SelectQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ExportContext extends StObject {
   
-  /** Options for exporting data as CSV. *MySQL* and *PostgreSQL* instances only. */
-  var csvExportOptions: js.UndefOr[SelectQuery] = js.undefined
+  /** Options for exporting data as CSV. `MySQL` and `PostgreSQL` instances only. */
+  var csvExportOptions: js.UndefOr[EscapeCharacter] = js.undefined
   
   /**
-    * Databases to be exported. *MySQL instances:* If *fileType* is *SQL* and no database is specified, all databases are exported, except for the *mysql* system database. If *fileType*
-    * is *CSV*, you can specify one database, either by using this property or by using the *csvExportOptions.selectQuery* property, which takes precedence over this property. *PostgreSQL
-    * instances:* You must specify one database to be exported. If *fileType* is *CSV*, this database must match the one specified in the *csvExportOptions.selectQuery* property.
+    * Databases to be exported. `MySQL instances:` If `fileType` is `SQL` and no database is specified, all databases are exported, except for the `mysql` system database. If `fileType`
+    * is `CSV`, you can specify one database, either by using this property or by using the `csvExportOptions.selectQuery` property, which takes precedence over this property. `PostgreSQL
+    * instances:` You must specify one database to be exported. If `fileType` is `CSV`, this database must match the one specified in the `csvExportOptions.selectQuery` property. `SQL
+    * Server instances:` You must specify one database to be exported, and the `fileType` must be `BAK`.
     */
   var databases: js.UndefOr[js.Array[String]] = js.undefined
   
-  /** The file type for the specified uri. *SQL*: The file contains SQL statements. *CSV*: The file contains CSV data. *BAK*: The file contains backup data for a SQL Server instance. */
+  /** The file type for the specified uri. */
   var fileType: js.UndefOr[String] = js.undefined
   
-  /** This is always *sql#exportContext*. */
+  /** This is always `sql#exportContext`. */
   var kind: js.UndefOr[String] = js.undefined
   
   /** Option for export offload. */
@@ -31,8 +32,8 @@ trait ExportContext extends StObject {
   var sqlExportOptions: js.UndefOr[MysqlExportOptions] = js.undefined
   
   /**
-    * The path to the file in Google Cloud Storage where the export will be stored. The URI is in the form *gs: //bucketName/fileName*. If the file already exists, the requests //
-    * succeeds, but the operation fails. If *fileType* is // *SQL* and the filename ends with .gz, the contents are // compressed.
+    * The path to the file in Google Cloud Storage where the export will be stored. The URI is in the form `gs://bucketName/fileName`. If the file already exists, the request succeeds,
+    * but the operation fails. If `fileType` is `SQL` and the filename ends with .gz, the contents are compressed.
     */
   var uri: js.UndefOr[String] = js.undefined
 }
@@ -45,7 +46,7 @@ object ExportContext {
   
   extension [Self <: ExportContext](x: Self) {
     
-    inline def setCsvExportOptions(value: SelectQuery): Self = StObject.set(x, "csvExportOptions", value.asInstanceOf[js.Any])
+    inline def setCsvExportOptions(value: EscapeCharacter): Self = StObject.set(x, "csvExportOptions", value.asInstanceOf[js.Any])
     
     inline def setCsvExportOptionsUndefined: Self = StObject.set(x, "csvExportOptions", js.undefined)
     
@@ -53,7 +54,7 @@ object ExportContext {
     
     inline def setDatabasesUndefined: Self = StObject.set(x, "databases", js.undefined)
     
-    inline def setDatabasesVarargs(value: String*): Self = StObject.set(x, "databases", js.Array(value :_*))
+    inline def setDatabasesVarargs(value: String*): Self = StObject.set(x, "databases", js.Array(value*))
     
     inline def setFileType(value: String): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
     

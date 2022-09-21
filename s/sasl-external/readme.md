@@ -11,9 +11,9 @@ JavaScript implementation of EXTERNAL SASL mechanism.
 | Full name          | sasl-external |
 | Keywords           | sasl, auth, authn, authentication, security |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 86633 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 3781.3333333333335 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/jaredhanson/js-sasl-external#readme)

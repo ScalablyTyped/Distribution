@@ -10,10 +10,10 @@ Facebook token authentication strategy for Passport
 | ------------------ | :-------------: |
 | Full name          | passport-facebook-token |
 | Keywords           | passport, facebook, auth, authn, authentication, identity |
-| # releases         | 2 |
-| # dependents       | 43 |
-| # downloads        | 771193 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 64441.0 |
+| # stars            | 390.0 |
 
 ## Links
 - [Homepage](https://github.com/drudge/passport-facebook-token#readme)

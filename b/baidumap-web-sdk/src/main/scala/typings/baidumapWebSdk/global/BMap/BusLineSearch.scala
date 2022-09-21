@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMap.BusLineSearch")
 @js.native
-class BusLineSearch protected ()
+open class BusLineSearch protected ()
   extends StObject
      with typings.baidumapWebSdk.BMap.BusLineSearch {
   def this(location: String) = this()

@@ -40,7 +40,7 @@ trait IColor
     * @param str String Color in string.
     * @returns Object this
     */
-  var setFromString: js.UndefOr[js.Function1[/* str */ js.UndefOr[String], js.Any]] = js.undefined
+  var setFromString: js.UndefOr[js.Function1[/* str */ js.UndefOr[String], Any]] = js.undefined
   
   /** [Method] Set current color based on the specified HSL values
     * @param h Number Hue component (0..359)
@@ -53,7 +53,7 @@ trait IColor
       /* h */ js.UndefOr[Double], 
       /* s */ js.UndefOr[Double], 
       /* l */ js.UndefOr[Double], 
-      js.Any
+      Any
     ]
   ] = js.undefined
   
@@ -61,7 +61,7 @@ trait IColor
     * @param color String/Array The color value (i.e 'rgb(255, 255, 255)', 'color: #ffffff'). Can also be an Array, in this case the function handles the first member.
     * @returns String The color in hexadecimal format.
     */
-  var toHex: js.UndefOr[js.Function1[/* color */ js.UndefOr[js.Any], String]] = js.undefined
+  var toHex: js.UndefOr[js.Function1[/* color */ js.UndefOr[Any], String]] = js.undefined
   
   /** [Method] Return the color in the hex format i e
     * @returns String
@@ -98,17 +98,15 @@ object IColor {
     
     inline def setLightnessFactorUndefined: Self = StObject.set(x, "lightnessFactor", js.undefined)
     
-    inline def setSetFromString(value: /* str */ js.UndefOr[String] => js.Any): Self = StObject.set(x, "setFromString", js.Any.fromFunction1(value))
+    inline def setSetFromString(value: /* str */ js.UndefOr[String] => Any): Self = StObject.set(x, "setFromString", js.Any.fromFunction1(value))
     
     inline def setSetFromStringUndefined: Self = StObject.set(x, "setFromString", js.undefined)
     
-    inline def setSetHSL(
-      value: (/* h */ js.UndefOr[Double], /* s */ js.UndefOr[Double], /* l */ js.UndefOr[Double]) => js.Any
-    ): Self = StObject.set(x, "setHSL", js.Any.fromFunction3(value))
+    inline def setSetHSL(value: (/* h */ js.UndefOr[Double], /* s */ js.UndefOr[Double], /* l */ js.UndefOr[Double]) => Any): Self = StObject.set(x, "setHSL", js.Any.fromFunction3(value))
     
     inline def setSetHSLUndefined: Self = StObject.set(x, "setHSL", js.undefined)
     
-    inline def setToHex(value: /* color */ js.UndefOr[js.Any] => String): Self = StObject.set(x, "toHex", js.Any.fromFunction1(value))
+    inline def setToHex(value: /* color */ js.UndefOr[Any] => String): Self = StObject.set(x, "toHex", js.Any.fromFunction1(value))
     
     inline def setToHexUndefined: Self = StObject.set(x, "toHex", js.undefined)
     

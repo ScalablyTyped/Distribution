@@ -7,32 +7,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OrganizationManagedRuleMetadata extends StObject {
   
   /**
-    * The description that you provide for organization config rule.
+    * The description that you provide for your organization Config rule.
     */
   var Description: js.UndefOr[StringWithCharLimit256Min0] = js.undefined
   
   /**
-    * A string, in JSON format, that is passed to organization config rule Lambda function.
+    * A string, in JSON format, that is passed to your organization Config rule Lambda function.
     */
   var InputParameters: js.UndefOr[StringWithCharLimit2048] = js.undefined
   
   /**
-    * The maximum frequency with which AWS Config runs evaluations for a rule. You are using an AWS managed rule that is triggered at a periodic frequency.  By default, rules with a periodic trigger are evaluated every 24 hours. To change the frequency, specify a valid value for the MaximumExecutionFrequency parameter. 
+    * The maximum frequency with which Config runs evaluations for a rule. This is for an Config managed rule that is triggered at a periodic frequency.  By default, rules with a periodic trigger are evaluated every 24 hours. To change the frequency, specify a valid value for the MaximumExecutionFrequency parameter. 
     */
   var MaximumExecutionFrequency: js.UndefOr[typings.awsSdk.configserviceMod.MaximumExecutionFrequency] = js.undefined
   
   /**
-    * The ID of the AWS resource that was evaluated.
+    * The ID of the Amazon Web Services resource that was evaluated.
     */
   var ResourceIdScope: js.UndefOr[StringWithCharLimit768] = js.undefined
   
   /**
-    * The type of the AWS resource that was evaluated.
+    * The type of the Amazon Web Services resource that was evaluated.
     */
   var ResourceTypesScope: js.UndefOr[typings.awsSdk.configserviceMod.ResourceTypesScope] = js.undefined
   
   /**
-    * For organization config managed rules, a predefined identifier from a list. For example, IAM_PASSWORD_POLICY is a managed rule. To reference a managed rule, see Using AWS Managed Config Rules.
+    * For organization config managed rules, a predefined identifier from a list. For example, IAM_PASSWORD_POLICY is a managed rule. To reference a managed rule, see Using Config managed rules.
     */
   var RuleIdentifier: StringWithCharLimit256
   
@@ -75,7 +75,7 @@ object OrganizationManagedRuleMetadata {
     
     inline def setResourceTypesScopeUndefined: Self = StObject.set(x, "ResourceTypesScope", js.undefined)
     
-    inline def setResourceTypesScopeVarargs(value: StringWithCharLimit256*): Self = StObject.set(x, "ResourceTypesScope", js.Array(value :_*))
+    inline def setResourceTypesScopeVarargs(value: StringWithCharLimit256*): Self = StObject.set(x, "ResourceTypesScope", js.Array(value*))
     
     inline def setRuleIdentifier(value: StringWithCharLimit256): Self = StObject.set(x, "RuleIdentifier", value.asInstanceOf[js.Any])
     

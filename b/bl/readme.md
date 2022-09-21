@@ -1,7 +1,7 @@
 
 # Scala.js typings for bl
 
-Typings are for version v2.1.0
+Typings are for version v5.0
 
 ## Library description:
 Buffer List: collect buffers and access with a standard readable Buffer interface, streamable too!
@@ -10,10 +10,10 @@ Buffer List: collect buffers and access with a standard readable Buffer interfac
 | ------------------ | :-------------: |
 | Full name          | bl |
 | Keywords           | buffer, buffers, stream, awesomesauce |
-| # releases         | 9 |
-| # dependents       | 493 |
-| # downloads        | 507041334 |
-| # stars            | 64 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 8.773279933333333E7 |
+| # stars            | 402.0 |
 
 ## Links
 - [Homepage](https://github.com/rvagg/bl)

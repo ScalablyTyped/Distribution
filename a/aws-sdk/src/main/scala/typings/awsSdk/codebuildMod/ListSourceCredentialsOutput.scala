@@ -24,6 +24,6 @@ object ListSourceCredentialsOutput {
     
     inline def setSourceCredentialsInfosUndefined: Self = StObject.set(x, "sourceCredentialsInfos", js.undefined)
     
-    inline def setSourceCredentialsInfosVarargs(value: SourceCredentialsInfo*): Self = StObject.set(x, "sourceCredentialsInfos", js.Array(value :_*))
+    inline def setSourceCredentialsInfosVarargs(value: SourceCredentialsInfo*): Self = StObject.set(x, "sourceCredentialsInfos", js.Array(value*))
   }
 }

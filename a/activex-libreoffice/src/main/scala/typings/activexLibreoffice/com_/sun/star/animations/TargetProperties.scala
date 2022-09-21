@@ -16,11 +16,11 @@ trait TargetProperties extends StObject {
   
   var Properties: SafeArray[NamedValue]
   
-  var Target: js.Any
+  var Target: Any
 }
 object TargetProperties {
   
-  inline def apply(Properties: SafeArray[NamedValue], Target: js.Any): TargetProperties = {
+  inline def apply(Properties: SafeArray[NamedValue], Target: Any): TargetProperties = {
     val __obj = js.Dynamic.literal(Properties = Properties.asInstanceOf[js.Any], Target = Target.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetProperties]
   }
@@ -29,6 +29,6 @@ object TargetProperties {
     
     inline def setProperties(value: SafeArray[NamedValue]): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     
-    inline def setTarget(value: js.Any): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Any): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
   }
 }

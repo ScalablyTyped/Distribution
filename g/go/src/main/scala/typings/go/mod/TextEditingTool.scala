@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * You do not normally need to create an instance of this tool because one already exists as the ToolManager.textEditingTool, which you can modify.
   */
-class TextEditingTool () extends Tool {
+open class TextEditingTool () extends Tool {
   
   /**
     * Finish editing by trying to accept the new text.

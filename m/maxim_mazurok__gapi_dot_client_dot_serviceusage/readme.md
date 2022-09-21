@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_serviceusage
 
-Typings are for version 1.0.20201118
+Typings are for version 1.0.20220811
 
 ## Library description:
 TypeScript typings for Service Usage API v1
@@ -10,10 +10,10 @@ TypeScript typings for Service Usage API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.serviceusage |
 | Keywords           | - |
-| # releases         | 34 |
-| # dependents       | 1 |
-| # downloads        | 2409 |
-| # stars            | 0 |
+| # releases         | 246 |
+| # dependents       | 0.0 |
+| # downloads        | 2220.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

@@ -1,9 +1,11 @@
 package typings.mjmlReact.mod
 
-import typings.csstype.mod.BackgroundColorProperty
-import typings.csstype.mod.ColorProperty
-import typings.csstype.mod.TextAlignProperty
-import typings.csstype.mod.VerticalAlignProperty
+import typings.csstype.mod.Property.BackgroundColor
+import typings.csstype.mod.Property.Color
+import typings.csstype.mod.Property.FontWeight
+import typings.csstype.mod.Property.TextAlign
+import typings.csstype.mod.Property.VerticalAlign
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,11 +14,13 @@ trait MjmlButtonProps extends StObject {
   
   var align: js.UndefOr[String] = js.undefined
   
-  var backgroundColor: js.UndefOr[BackgroundColorProperty] = js.undefined
+  var backgroundColor: js.UndefOr[BackgroundColor] = js.undefined
   
-  var color: js.UndefOr[ColorProperty] = js.undefined
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var containerBackgroundColor: js.UndefOr[BackgroundColorProperty] = js.undefined
+  var color: js.UndefOr[Color] = js.undefined
+  
+  var containerBackgroundColor: js.UndefOr[BackgroundColor] = js.undefined
   
   var fontFamily: js.UndefOr[String] = js.undefined
   
@@ -24,21 +28,23 @@ trait MjmlButtonProps extends StObject {
   
   var fontStyle: js.UndefOr[String] = js.undefined
   
-  var fontWeight: js.UndefOr[Double] = js.undefined
+  var fontWeight: js.UndefOr[FontWeight] = js.undefined
   
   var height: js.UndefOr[String | Double] = js.undefined
   
   var innerPadding: js.UndefOr[String] = js.undefined
   
+  var letterSpacing: js.UndefOr[String | Double] = js.undefined
+  
   var lineHeight: js.UndefOr[String | Double] = js.undefined
   
-  var textAlign: js.UndefOr[TextAlignProperty] = js.undefined
+  var textAlign: js.UndefOr[TextAlign] = js.undefined
   
   var textDecoration: js.UndefOr[String] = js.undefined
   
   var textTransform: js.UndefOr[String] = js.undefined
   
-  var verticalAlign: js.UndefOr[VerticalAlignProperty[String | Double]] = js.undefined
+  var verticalAlign: js.UndefOr[VerticalAlign[String | Double]] = js.undefined
   
   var width: js.UndefOr[String | Double] = js.undefined
 }
@@ -55,15 +61,19 @@ object MjmlButtonProps {
     
     inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    inline def setBackgroundColor(value: BackgroundColorProperty): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: BackgroundColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    inline def setColor(value: ColorProperty): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setContainerBackgroundColor(value: BackgroundColorProperty): Self = StObject.set(x, "containerBackgroundColor", value.asInstanceOf[js.Any])
+    inline def setContainerBackgroundColor(value: BackgroundColor): Self = StObject.set(x, "containerBackgroundColor", value.asInstanceOf[js.Any])
     
     inline def setContainerBackgroundColorUndefined: Self = StObject.set(x, "containerBackgroundColor", js.undefined)
     
@@ -79,7 +89,7 @@ object MjmlButtonProps {
     
     inline def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
     
-    inline def setFontWeight(value: Double): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+    inline def setFontWeight(value: FontWeight): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
     inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
@@ -91,11 +101,15 @@ object MjmlButtonProps {
     
     inline def setInnerPaddingUndefined: Self = StObject.set(x, "innerPadding", js.undefined)
     
+    inline def setLetterSpacing(value: String | Double): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
+    
+    inline def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
+    
     inline def setLineHeight(value: String | Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     
     inline def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
     
-    inline def setTextAlign(value: TextAlignProperty): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+    inline def setTextAlign(value: TextAlign): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
     
     inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
     
@@ -107,7 +121,7 @@ object MjmlButtonProps {
     
     inline def setTextTransformUndefined: Self = StObject.set(x, "textTransform", js.undefined)
     
-    inline def setVerticalAlign(value: VerticalAlignProperty[String | Double]): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+    inline def setVerticalAlign(value: VerticalAlign[String | Double]): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
     
     inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
     

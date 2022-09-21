@@ -45,7 +45,7 @@ object XFilterManager {
     acquire: () => Unit,
     appendFilter: (String, String) => Unit,
     getCurrentFilter: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setCurrentFilter: String => Unit
   ): XFilterManager = {

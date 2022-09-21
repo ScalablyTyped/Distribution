@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait DataChangeType extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 @JSGlobal("Excel.DataChangeType")
@@ -14,9 +15,9 @@ sealed trait DataChangeType extends StObject
 object DataChangeType extends StObject {
   
   /**
-    * CellDeleted represents the data change event is triggered by deleting cells.
+    * `CellDeleted` indicates that the data change event is triggered by deleting cells.
+    * @remarks
     * [Api set: ExcelApi 1.7]
-    *
     */
   @js.native
   sealed trait cellDeleted
@@ -24,9 +25,9 @@ object DataChangeType extends StObject {
        with DataChangeType
   
   /**
-    * CellInserted represents the data change event is triggered by inserting new cells.
+    * `CellInserted` indicates that the data change event is triggered by inserting new cells.
+    * @remarks
     * [Api set: ExcelApi 1.7]
-    *
     */
   @js.native
   sealed trait cellInserted
@@ -34,9 +35,9 @@ object DataChangeType extends StObject {
        with DataChangeType
   
   /**
-    * ColumnDeleted represents the data change event is triggered by deleting columns.
+    * `ColumnDeleted` indicates that the data change event is triggered by deleting columns.
+    * @remarks
     * [Api set: ExcelApi 1.7]
-    *
     */
   @js.native
   sealed trait columnDeleted
@@ -44,9 +45,9 @@ object DataChangeType extends StObject {
        with DataChangeType
   
   /**
-    * ColumnInserted represents the data change event is triggered by inserting new columns.
+    * `ColumnInserted` indicates that the data change event is triggered by inserting new columns.
+    * @remarks
     * [Api set: ExcelApi 1.7]
-    *
     */
   @js.native
   sealed trait columnInserted
@@ -54,9 +55,9 @@ object DataChangeType extends StObject {
        with DataChangeType
   
   /**
-    * RangeEdited represents the data change event is triggered by range being edited.
+    * `RangeEdited` indicates that the data change event is triggered by a range being edited.
+    * @remarks
     * [Api set: ExcelApi 1.7]
-    *
     */
   @js.native
   sealed trait rangeEdited
@@ -64,9 +65,9 @@ object DataChangeType extends StObject {
        with DataChangeType
   
   /**
-    * RowDeleted represents the data change event is triggered by deleting rows.
+    * `RowDeleted` indicates that the data change event is triggered by deleting rows.
+    * @remarks
     * [Api set: ExcelApi 1.7]
-    *
     */
   @js.native
   sealed trait rowDeleted
@@ -74,9 +75,9 @@ object DataChangeType extends StObject {
        with DataChangeType
   
   /**
-    * RowInserted represents the data change event is triggered by inserting new rows.
+    * `RowInserted` indicates that the data change event is triggered by inserting new rows.
+    * @remarks
     * [Api set: ExcelApi 1.7]
-    *
     */
   @js.native
   sealed trait rowInserted
@@ -84,9 +85,9 @@ object DataChangeType extends StObject {
        with DataChangeType
   
   /**
-    * Unknown represents the type of data change is not the listed types.
-    * [Api set: ExcelApi The name of this value was 'Others' in ExcelApi 1.7]
-    *
+    * `Unknown` indicates that the type of data change is not one of the listed types.
+    * @remarks
+    * [Api set: ExcelApi 1.8. The name of this value was 'Others' in ExcelApi 1.7]
     */
   @js.native
   sealed trait unknown

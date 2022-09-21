@@ -49,15 +49,15 @@ object telemetry {
       
       inline def setExtra_keys(value: js.Array[String]): Self = StObject.set(x, "extra_keys", value.asInstanceOf[js.Any])
       
-      inline def setExtra_keysVarargs(value: String*): Self = StObject.set(x, "extra_keys", js.Array(value :_*))
+      inline def setExtra_keysVarargs(value: String*): Self = StObject.set(x, "extra_keys", js.Array(value*))
       
       inline def setMethods(value: js.Array[String]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
-      inline def setMethodsVarargs(value: String*): Self = StObject.set(x, "methods", js.Array(value :_*))
+      inline def setMethodsVarargs(value: String*): Self = StObject.set(x, "methods", js.Array(value*))
       
       inline def setObjects(value: js.Array[String]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
       
-      inline def setObjectsVarargs(value: String*): Self = StObject.set(x, "objects", js.Array(value :_*))
+      inline def setObjectsVarargs(value: String*): Self = StObject.set(x, "objects", js.Array(value*))
       
       inline def setRecord_on_release(value: Boolean): Self = StObject.set(x, "record_on_release", value.asInstanceOf[js.Any])
       
@@ -159,7 +159,7 @@ object telemetry {
     var addEnvironment: js.UndefOr[Boolean] = js.undefined
     
     /** Set to override the environment data. */
-    var overrideEnvironment: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var overrideEnvironment: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     /** If true, send the ping using the PingSender. */
     var usePingSender: js.UndefOr[Boolean] = js.undefined
@@ -181,7 +181,7 @@ object telemetry {
       
       inline def setAddEnvironmentUndefined: Self = StObject.set(x, "addEnvironment", js.undefined)
       
-      inline def setOverrideEnvironment(value: StringDictionary[js.Any]): Self = StObject.set(x, "overrideEnvironment", value.asInstanceOf[js.Any])
+      inline def setOverrideEnvironment(value: StringDictionary[Any]): Self = StObject.set(x, "overrideEnvironment", value.asInstanceOf[js.Any])
       
       inline def setOverrideEnvironmentUndefined: Self = StObject.set(x, "overrideEnvironment", js.undefined)
       

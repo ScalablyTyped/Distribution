@@ -1,7 +1,7 @@
 
 # Scala.js typings for setprototypeof
 
-Typings are for version 1.1.1
+Typings are for version 1.2.0
 
 ## Library description:
 A small polyfill for Object.setprototypeof
@@ -10,10 +10,10 @@ A small polyfill for Object.setprototypeof
 | ------------------ | :-------------: |
 | Full name          | setprototypeof |
 | Keywords           | polyfill, object, setprototypeof |
-| # releases         | 3 |
-| # dependents       | 182 |
-| # downloads        | 1004855325 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1.7378015633333334E8 |
+| # stars            | 50.0 |
 
 ## Links
 - [Homepage](https://github.com/wesleytodd/setprototypeof)

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("jsrsasign.ECCurveFp")
 @js.native
-class ECCurveFp protected ()
+open class ECCurveFp protected ()
   extends typings.jsrsasign.mod.ECCurveFp {
   def this(
     q: typings.jsrsasign.jsrsasign.BigInteger,

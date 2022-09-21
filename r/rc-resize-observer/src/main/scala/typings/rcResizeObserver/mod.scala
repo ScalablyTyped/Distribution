@@ -1,13 +1,10 @@
 package typings.rcResizeObserver
 
-import typings.rcResizeObserver.anon.Height
-import typings.rcResizeObserver.anon.OffsetHeight
-import typings.react.mod.Component
-import typings.react.mod.ReactInstance
+import typings.rcResizeObserver.collectionMod.CollectionProps
+import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
-import typings.resizeObserverPolyfill.mod.ResizeObserver
-import typings.resizeObserverPolyfill.mod.global.ResizeObserverCallback
-import typings.std.Element
+import typings.react.mod.RefObject
+import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,63 +12,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("rc-resize-observer", JSImport.Default)
-  @js.native
-  class default () extends ReactResizeObserver
   object default {
+    
+    inline def apply(props: ResizeObserverProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
     
     @JSImport("rc-resize-observer", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
-    /* static member */
-    @JSImport("rc-resize-observer", "default.displayName")
-    @js.native
-    def displayName: String = js.native
-    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    /* was `typeof imported_Collection.Collection` */
+    inline def Collection(hasChildrenOnBatchResize: CollectionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Collection")(hasChildrenOnBatchResize.asInstanceOf[js.Any]).asInstanceOf[Element]
   }
   
-  @js.native
-  trait ReactResizeObserver
-    extends Component[ResizeObserverProps, ResizeObserverState, js.Any] {
-    
-    var childNode: RefNode = js.native
-    
-    @JSName("componentDidMount")
-    def componentDidMount_MReactResizeObserver(): Unit = js.native
-    
-    @JSName("componentDidUpdate")
-    def componentDidUpdate_MReactResizeObserver(): Unit = js.native
-    
-    @JSName("componentWillUnmount")
-    def componentWillUnmount_MReactResizeObserver(): Unit = js.native
-    
-    var currentElement: Element | Null = js.native
-    
-    def destroyObserver(): Unit = js.native
-    
-    def onComponentUpdated(): Unit = js.native
-    
-    var onResize: ResizeObserverCallback = js.native
-    
-    var resizeObserver: ResizeObserver | Null = js.native
-    
-    def setChildNode(node: RefNode): Unit = js.native
-    
-    @JSName("state")
-    var state_ReactResizeObserver: OffsetHeight = js.native
-  }
-  
-  type RefNode = ReactInstance | HTMLElement | Null
+  type OnResize = js.Function2[/* size */ SizeInfo, /* element */ HTMLElement, Unit]
   
   trait ResizeObserverProps extends StObject {
     
-    var children: ReactNode
+    var children: ReactNode | (js.Function1[/* ref */ RefObject[Any], ReactElement])
+    
+    /** Pass to ResizeObserver.Collection with additional data */
+    var data: js.UndefOr[Any] = js.undefined
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
     /** Trigger if element resized. Will always trigger when first time render. */
-    var onResize: js.UndefOr[js.Function1[/* size */ Height, Unit]] = js.undefined
+    var onResize: js.UndefOr[OnResize] = js.undefined
   }
   object ResizeObserverProps {
     
@@ -82,21 +47,27 @@ object mod {
     
     extension [Self <: ResizeObserverProps](x: Self) {
       
-      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode | (js.Function1[/* ref */ RefObject[Any], ReactElement])): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenFunction1(value: /* ref */ RefObject[Any] => ReactElement): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      inline def setOnResize(value: /* size */ Height => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      inline def setOnResize(value: (/* size */ SizeInfo, /* element */ HTMLElement) => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction2(value))
       
       inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     }
   }
   
-  trait ResizeObserverState extends StObject {
+  trait SizeInfo extends StObject {
     
     var height: Double
     
@@ -106,14 +77,14 @@ object mod {
     
     var width: Double
   }
-  object ResizeObserverState {
+  object SizeInfo {
     
-    inline def apply(height: Double, offsetHeight: Double, offsetWidth: Double, width: Double): ResizeObserverState = {
+    inline def apply(height: Double, offsetHeight: Double, offsetWidth: Double, width: Double): SizeInfo = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], offsetHeight = offsetHeight.asInstanceOf[js.Any], offsetWidth = offsetWidth.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ResizeObserverState]
+      __obj.asInstanceOf[SizeInfo]
     }
     
-    extension [Self <: ResizeObserverState](x: Self) {
+    extension [Self <: SizeInfo](x: Self) {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

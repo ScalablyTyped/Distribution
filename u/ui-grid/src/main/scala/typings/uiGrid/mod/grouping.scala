@@ -92,10 +92,10 @@ object grouping {
       * Sets the aggregation type on a column.
       * If the column is currently grouped then it removes the grouping first.
       * If the aggregationDef is null then will result in the aggregation being removed.
-      * @param {string} columnName The name of the column we want to aggregate
-      * @param {string | function} or aggregationDef one of the recognised types from uiGridGroupingConstants or
+      * @param columnName The name of the column we want to aggregate
+      * @param or aggregationDef one of the recognised types from uiGridGroupingConstants or
       * a custom aggregation function.
-      * @param {string} [aggregationLabel] The label to use for aggregation
+      * @param [aggregationLabel] The label to use for aggregation
       */
     def aggregateColumn(columnName: String, or: String): Unit = js.native
     def aggregateColumn(columnName: String, or: String, aggregationLabel: String): Unit = js.native
@@ -114,7 +114,7 @@ object grouping {
       * Adds expandedState to the information provided by the internal getGrouping,
       * and removes any aggregations that have a source of grouping
       * (i.e. will be automatically reapplied when we regroup the column)
-      * @param {boolean} getExpanded whether or not to return the expanded state
+      * @param getExpanded whether or not to return the expanded state
       */
     def getGrouping(getExpanded: Boolean): IGridGroupingConfiguration = js.native
     
@@ -123,7 +123,7 @@ object grouping {
       * If the column doesn't have a sort, adds one, by default ASC.
       * This column will move to the left of any non-group columns.
       * The move is handled in a columnProcessor, so it gets called as part of refresh.
-      * @param {string} columnName the name of the column we want to group
+      * @param columnName the name of the column we want to group
       */
     def groupColumn(columnName: String): Unit = js.native
     
@@ -133,7 +133,7 @@ object grouping {
     /**
       * Set the grouping configuration for this grid, used by the saveState feature,
       * but can also be used by any user to specify a combined grouping and aggregation configuration
-      * @param {IGridGroupingConfiguration} config The config to apply, in the format provided out by getGrouping
+      * @param config The config to apply, in the format provided out by getGrouping
       */
     def setGrouping(config: IGridGroupingConfiguration): Unit = js.native
     
@@ -143,7 +143,7 @@ object grouping {
       *
       * This column will move to the right of any other group columns, the move is handled in a columnProcessor,
       * so it gets called as part of refresh
-      * @param {string} columnName the name of the column to ungroup
+      * @param columnName the name of the column to ungroup
       */
     def ungroupColumn(columnName: String): Unit = js.native
   }
@@ -180,11 +180,11 @@ object grouping {
       
       inline def setGrouping(value: js.Array[IGripGroup]): Self = StObject.set(x, "grouping", value.asInstanceOf[js.Any])
       
-      inline def setGroupingVarargs(value: IGripGroup*): Self = StObject.set(x, "grouping", js.Array(value :_*))
+      inline def setGroupingVarargs(value: IGripGroup*): Self = StObject.set(x, "grouping", js.Array(value*))
       
       inline def setTreeAggregations(value: js.Array[IGridTreeAggregations]): Self = StObject.set(x, "treeAggregations", value.asInstanceOf[js.Any])
       
-      inline def setTreeAggregationsVarargs(value: IGridTreeAggregations*): Self = StObject.set(x, "treeAggregations", js.Array(value :_*))
+      inline def setTreeAggregationsVarargs(value: IGridTreeAggregations*): Self = StObject.set(x, "treeAggregations", js.Array(value*))
     }
   }
   

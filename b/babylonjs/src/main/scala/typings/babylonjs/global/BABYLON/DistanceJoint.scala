@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.DistanceJoint")
 @js.native
-class DistanceJoint protected ()
+open class DistanceJoint protected ()
   extends StObject
      with typings.babylonjs.BABYLON.DistanceJoint {
   /**

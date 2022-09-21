@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CANNON.ConvexPolyhedron")
 @js.native
-class ConvexPolyhedron ()
+open class ConvexPolyhedron ()
   extends StObject
      with typings.cannon.CANNON.ConvexPolyhedron {
   def this(points: js.Array[typings.cannon.CANNON.Vec3]) = this()
-  def this(points: js.Array[typings.cannon.CANNON.Vec3], faces: js.Array[Double]) = this()
-  def this(points: Unit, faces: js.Array[Double]) = this()
+  def this(points: js.Array[typings.cannon.CANNON.Vec3], faces: js.Array[js.Array[Double]]) = this()
+  def this(points: Unit, faces: js.Array[js.Array[Double]]) = this()
   
   /* CompleteClass */
   var boundingSphereRadius: Double = js.native
@@ -36,7 +36,7 @@ class ConvexPolyhedron ()
     separatingNormal: typings.cannon.CANNON.Vec3,
     minDist: Double,
     maxDist: Double,
-    result: js.Array[js.Any]
+    result: js.Array[Any]
   ): Unit = js.native
   
   /* CompleteClass */
@@ -47,7 +47,7 @@ class ConvexPolyhedron ()
     worldVertsB1: js.Array[typings.cannon.CANNON.Vec3],
     minDist: Double,
     maxDist: Double,
-    result: js.Array[js.Any]
+    result: js.Array[Any]
   ): Unit = js.native
   
   /* CompleteClass */
@@ -90,8 +90,8 @@ class ConvexPolyhedron ()
     posB: typings.cannon.CANNON.Vec3,
     quatB: typings.cannon.CANNON.Quaternion,
     target: typings.cannon.CANNON.Vec3,
-    faceListA: js.Array[js.Any],
-    faceListB: js.Array[js.Any]
+    faceListA: js.Array[Any],
+    faceListB: js.Array[Any]
   ): Boolean = js.native
   
   /* CompleteClass */
@@ -102,6 +102,9 @@ class ConvexPolyhedron ()
   
   /* CompleteClass */
   override def getPlaneConstantOfFace(face_i: Double): Double = js.native
+  
+  /* CompleteClass */
+  var id: Double = js.native
   
   /* CompleteClass */
   override def pointIsInside(p: typings.cannon.CANNON.Vec3): Boolean = js.native

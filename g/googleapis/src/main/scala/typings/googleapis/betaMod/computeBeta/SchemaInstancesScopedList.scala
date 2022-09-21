@@ -13,10 +13,9 @@ trait SchemaInstancesScopedList extends StObject {
   var instances: js.UndefOr[js.Array[SchemaInstance]] = js.undefined
   
   /**
-    * [Output Only] Informational warning which replaces the list of instances
-    * when the list is empty.
+    * [Output Only] Informational warning which replaces the list of instances when the list is empty.
     */
-  var warning: js.UndefOr[Code] = js.undefined
+  var warning: js.UndefOr[Code | Null] = js.undefined
 }
 object SchemaInstancesScopedList {
   
@@ -31,9 +30,11 @@ object SchemaInstancesScopedList {
     
     inline def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
     
-    inline def setInstancesVarargs(value: SchemaInstance*): Self = StObject.set(x, "instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: SchemaInstance*): Self = StObject.set(x, "instances", js.Array(value*))
     
     inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    
+    inline def setWarningNull: Self = StObject.set(x, "warning", null)
     
     inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }

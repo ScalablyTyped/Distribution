@@ -1,36 +1,37 @@
 package typings.ethereumCryptography
 
-import typings.ethereumCryptography.anon.Xpriv
-import typings.ethereumCryptography.pureHdkeyMod.HDKeyT
-import typings.ethereumCryptography.pureHdkeyMod.Versions
-import typings.node.Buffer
+import typings.scureBip32.anon.Xpriv
+import typings.scureBip32.mod.HDKeyOpt
+import typings.scureBip32.mod.Versions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hdkeyMod {
   
-  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("ethereum-cryptography/hdkey", "HARDENED_OFFSET")
+  @js.native
+  val HARDENED_OFFSET: Double = js.native
+  
   @JSImport("ethereum-cryptography/hdkey", "HDKey")
   @js.native
-  class HDKey () extends HDKeyT
+  open class HDKey protected ()
+    extends typings.scureBip32.mod.HDKey {
+    def this(opt: HDKeyOpt) = this()
+  }
+  /* static members */
   object HDKey {
     
     @JSImport("ethereum-cryptography/hdkey", "HDKey")
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("ethereum-cryptography/hdkey", "HDKey.HARDENED_OFFSET")
-    @js.native
-    def HARDENED_OFFSET: Double = js.native
-    inline def HARDENED_OFFSET_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HARDENED_OFFSET")(x.asInstanceOf[js.Any])
+    inline def fromExtendedKey(base58key: String): typings.scureBip32.mod.HDKey = ^.asInstanceOf[js.Dynamic].applyDynamic("fromExtendedKey")(base58key.asInstanceOf[js.Any]).asInstanceOf[typings.scureBip32.mod.HDKey]
+    inline def fromExtendedKey(base58key: String, versions: Versions): typings.scureBip32.mod.HDKey = (^.asInstanceOf[js.Dynamic].applyDynamic("fromExtendedKey")(base58key.asInstanceOf[js.Any], versions.asInstanceOf[js.Any])).asInstanceOf[typings.scureBip32.mod.HDKey]
     
-    inline def fromExtendedKey(base58key: String): HDKeyT = ^.asInstanceOf[js.Dynamic].applyDynamic("fromExtendedKey")(base58key.asInstanceOf[js.Any]).asInstanceOf[HDKeyT]
-    inline def fromExtendedKey(base58key: String, versions: Versions): HDKeyT = (^.asInstanceOf[js.Dynamic].applyDynamic("fromExtendedKey")(base58key.asInstanceOf[js.Any], versions.asInstanceOf[js.Any])).asInstanceOf[HDKeyT]
+    inline def fromJSON(json: Xpriv): typings.scureBip32.mod.HDKey = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typings.scureBip32.mod.HDKey]
     
-    inline def fromJSON(json: Xpriv): HDKeyT = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[HDKeyT]
-    
-    inline def fromMasterSeed(seed: Buffer): HDKeyT = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMasterSeed")(seed.asInstanceOf[js.Any]).asInstanceOf[HDKeyT]
-    inline def fromMasterSeed(seed: Buffer, versions: Versions): HDKeyT = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMasterSeed")(seed.asInstanceOf[js.Any], versions.asInstanceOf[js.Any])).asInstanceOf[HDKeyT]
+    inline def fromMasterSeed(seed: js.typedarray.Uint8Array): typings.scureBip32.mod.HDKey = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMasterSeed")(seed.asInstanceOf[js.Any]).asInstanceOf[typings.scureBip32.mod.HDKey]
+    inline def fromMasterSeed(seed: js.typedarray.Uint8Array, versions: Versions): typings.scureBip32.mod.HDKey = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMasterSeed")(seed.asInstanceOf[js.Any], versions.asInstanceOf[js.Any])).asInstanceOf[typings.scureBip32.mod.HDKey]
   }
 }

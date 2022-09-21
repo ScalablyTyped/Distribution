@@ -46,7 +46,7 @@ trait PrettyPrint extends StObject {
   /** Upload protocol for media (e.g. "raw", "multipart"). */
   var upload_protocol: js.UndefOr[String] = js.undefined
   
-  /** Specifies which parts of the Hold to return. */
+  /** The amount of detail to return for a hold. */
   var view: js.UndefOr[String] = js.undefined
 }
 object PrettyPrint {

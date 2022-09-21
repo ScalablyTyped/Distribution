@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.OutputFile")
 @js.native
-class OutputFile protected ()
+open class OutputFile protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.OutputFile {
   def this(

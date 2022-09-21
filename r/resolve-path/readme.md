@@ -10,10 +10,10 @@ Resolve a relative path against a root path with validation
 | ------------------ | :-------------: |
 | Full name          | resolve-path |
 | Keywords           | resolve, path, safe |
-| # releases         | 1 |
-| # dependents       | 41 |
-| # downloads        | 17715344 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2757112.0 |
+| # stars            | 30.0 |
 
 ## Links
 - [Homepage](https://github.com/pillarjs/resolve-path#readme)

@@ -12,5 +12,5 @@ object renamePropMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(outterName: String, innerName: String): ComponentEnhancer[js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(outterName.asInstanceOf[js.Any], innerName.asInstanceOf[js.Any])).asInstanceOf[ComponentEnhancer[js.Any, js.Any]]
+  inline def default(outterName: String, innerName: String): ComponentEnhancer[Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(outterName.asInstanceOf[js.Any], innerName.asInstanceOf[js.Any])).asInstanceOf[ComponentEnhancer[Any, Any]]
 }

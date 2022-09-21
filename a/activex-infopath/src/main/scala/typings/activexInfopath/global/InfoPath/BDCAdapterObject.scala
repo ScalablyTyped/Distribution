@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.BDCAdapterObject")
 @js.native
-/* private */ class BDCAdapterObject ()
+/* private */ open class BDCAdapterObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.BDCAdapterObject {
   

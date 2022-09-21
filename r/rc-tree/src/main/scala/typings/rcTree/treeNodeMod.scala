@@ -3,6 +3,7 @@ package typings.rcTree
 import org.scalablytyped.runtime.Shortcut
 import typings.rcTree.anon.DragNodeHighlight
 import typings.rcTree.contextTypesMod.TreeContextProps
+import typings.rcTree.interfaceMod.BasicDataNode
 import typings.rcTree.interfaceMod.DataNode
 import typings.rcTree.interfaceMod.IconType
 import typings.rcTree.interfaceMod.Key
@@ -14,6 +15,8 @@ import typings.react.mod.DragEvent
 import typings.react.mod.FC
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.react.mod.ReactElement
+import typings.react.mod.ReactFragment
 import typings.react.mod.ReactNode
 import typings.react.mod.Ref
 import typings.react.mod.global.JSX.Element
@@ -28,18 +31,17 @@ object treeNodeMod extends Shortcut {
   
   @JSImport("rc-tree/es/TreeNode", JSImport.Default)
   @js.native
-  val default: FC[TreeNodeProps] = js.native
+  val default: FC[TreeNodeProps[DataNode]] = js.native
   
   @JSImport("rc-tree/es/TreeNode", "InternalTreeNode")
   @js.native
-  class InternalTreeNode protected ()
-    extends Component[InternalTreeNodeProps, TreeNodeState, js.Any] {
+  open class InternalTreeNode protected () extends Component[InternalTreeNodeProps, TreeNodeState, Any] {
     def this(props: InternalTreeNodeProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: InternalTreeNodeProps, context: js.Any) = this()
+    def this(props: InternalTreeNodeProps, context: Any) = this()
     
     @JSName("componentDidMount")
     def componentDidMount_MInternalTreeNode(): Unit = js.native
@@ -47,13 +49,15 @@ object treeNodeMod extends Shortcut {
     @JSName("componentDidUpdate")
     def componentDidUpdate_MInternalTreeNode(): Unit = js.native
     
-    def getNodeState(): open | close = js.native
+    def getNodeState(): close | open = js.native
     
     def hasChildren(): Boolean = js.native
     
-    def isCheckable(): js.Object = js.native
+    def isCheckable(): String | Double | Boolean | ReactElement | ReactFragment = js.native
     
     def isDisabled(): Boolean = js.native
+    
+    def isDraggable(): Boolean = js.native
     
     def isLeaf(): Boolean = js.native
     
@@ -89,27 +93,33 @@ object treeNodeMod extends Shortcut {
     
     def renderCheckbox(): Element = js.native
     
+    def renderDragHandler(): Element = js.native
+    
+    def renderDropIndicator(): ReactNode = js.native
+    
     def renderIcon(): Element = js.native
     
     def renderSelector(): Element = js.native
     
     def renderSwitcher(): Element = js.native
     
+    def renderSwitcherIconDom(isLeaf: Boolean): ReactNode = js.native
+    
     var selectHandle: HTMLSpanElement = js.native
     
-    def setSelectHandle(node: js.Any): Unit = js.native
+    def setSelectHandle(node: Any): Unit = js.native
     
     @JSName("state")
     var state_InternalTreeNode: DragNodeHighlight = js.native
     
-    def syncLoadData(props: js.Any): Unit = js.native
+    def syncLoadData(props: Any): Unit = js.native
   }
   
   trait InternalTreeNodeProps
     extends StObject
-       with TreeNodeProps {
+       with TreeNodeProps[DataNode] {
     
-    var context: js.UndefOr[TreeContextProps] = js.undefined
+    var context: js.UndefOr[TreeContextProps[DataNode]] = js.undefined
   }
   object InternalTreeNodeProps {
     
@@ -120,13 +130,13 @@ object treeNodeMod extends Shortcut {
     
     extension [Self <: InternalTreeNodeProps](x: Self) {
       
-      inline def setContext(value: TreeContextProps): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: TreeContextProps[DataNode]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     }
   }
   
-  trait TreeNodeProps extends StObject {
+  trait TreeNodeProps[TreeDataType /* <: BasicDataNode */] extends StObject {
     
     var active: js.UndefOr[Boolean] = js.undefined
     
@@ -139,7 +149,7 @@ object treeNodeMod extends Shortcut {
     var className: js.UndefOr[String] = js.undefined
     
     /** New added in Tree for easy data access */
-    var data: js.UndefOr[DataNode] = js.undefined
+    var data: js.UndefOr[TreeDataType] = js.undefined
     
     var disableCheckbox: js.UndefOr[Boolean] = js.undefined
     
@@ -160,6 +170,8 @@ object treeNodeMod extends Shortcut {
     var halfChecked: js.UndefOr[Boolean] = js.undefined
     
     var icon: js.UndefOr[IconType] = js.undefined
+    
+    var id: js.UndefOr[String] = js.undefined
     
     var isEnd: js.UndefOr[js.Array[Boolean]] = js.undefined
     
@@ -185,16 +197,16 @@ object treeNodeMod extends Shortcut {
     
     var switcherIcon: js.UndefOr[IconType] = js.undefined
     
-    var title: js.UndefOr[ReactNode | (js.Function1[/* data */ DataNode, ReactNode])] = js.undefined
+    var title: js.UndefOr[ReactNode | (js.Function1[/* data */ TreeDataType, ReactNode])] = js.undefined
   }
   object TreeNodeProps {
     
-    inline def apply(): TreeNodeProps = {
+    inline def apply[TreeDataType /* <: BasicDataNode */](): TreeNodeProps[TreeDataType] = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[TreeNodeProps]
+      __obj.asInstanceOf[TreeNodeProps[TreeDataType]]
     }
     
-    extension [Self <: TreeNodeProps](x: Self) {
+    extension [Self <: TreeNodeProps[?], TreeDataType /* <: BasicDataNode */](x: Self & TreeNodeProps[TreeDataType]) {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -216,7 +228,7 @@ object treeNodeMod extends Shortcut {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setData(value: DataNode): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: TreeDataType): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -262,15 +274,19 @@ object treeNodeMod extends Shortcut {
       
       inline def setIcon(value: IconType): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      inline def setIconFunction1(value: /* props */ TreeNodeProps => ReactNode): Self = StObject.set(x, "icon", js.Any.fromFunction1(value))
+      inline def setIconFunction1(value: /* props */ TreeNodeProps[DataNode] => ReactNode): Self = StObject.set(x, "icon", js.Any.fromFunction1(value))
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
       inline def setIsEnd(value: js.Array[Boolean]): Self = StObject.set(x, "isEnd", value.asInstanceOf[js.Any])
       
       inline def setIsEndUndefined: Self = StObject.set(x, "isEnd", js.undefined)
       
-      inline def setIsEndVarargs(value: Boolean*): Self = StObject.set(x, "isEnd", js.Array(value :_*))
+      inline def setIsEndVarargs(value: Boolean*): Self = StObject.set(x, "isEnd", js.Array(value*))
       
       inline def setIsLeaf(value: Boolean): Self = StObject.set(x, "isLeaf", value.asInstanceOf[js.Any])
       
@@ -280,7 +296,7 @@ object treeNodeMod extends Shortcut {
       
       inline def setIsStartUndefined: Self = StObject.set(x, "isStart", js.undefined)
       
-      inline def setIsStartVarargs(value: Boolean*): Self = StObject.set(x, "isStart", js.Array(value :_*))
+      inline def setIsStartVarargs(value: Boolean*): Self = StObject.set(x, "isStart", js.Array(value*))
       
       inline def setLoaded(value: Boolean): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
       
@@ -316,13 +332,13 @@ object treeNodeMod extends Shortcut {
       
       inline def setSwitcherIcon(value: IconType): Self = StObject.set(x, "switcherIcon", value.asInstanceOf[js.Any])
       
-      inline def setSwitcherIconFunction1(value: /* props */ TreeNodeProps => ReactNode): Self = StObject.set(x, "switcherIcon", js.Any.fromFunction1(value))
+      inline def setSwitcherIconFunction1(value: /* props */ TreeNodeProps[DataNode] => ReactNode): Self = StObject.set(x, "switcherIcon", js.Any.fromFunction1(value))
       
       inline def setSwitcherIconUndefined: Self = StObject.set(x, "switcherIcon", js.undefined)
       
-      inline def setTitle(value: ReactNode | (js.Function1[/* data */ DataNode, ReactNode])): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ReactNode | (js.Function1[/* data */ TreeDataType, ReactNode])): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      inline def setTitleFunction1(value: /* data */ DataNode => ReactNode): Self = StObject.set(x, "title", js.Any.fromFunction1(value))
+      inline def setTitleFunction1(value: /* data */ TreeDataType => ReactNode): Self = StObject.set(x, "title", js.Any.fromFunction1(value))
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
@@ -345,8 +361,8 @@ object treeNodeMod extends Shortcut {
     }
   }
   
-  type _To = FC[TreeNodeProps]
+  type _To = FC[TreeNodeProps[DataNode]]
   
   /* This means you don't have to write `default`, but can instead just say `treeNodeMod.foo` */
-  override def _to: FC[TreeNodeProps] = default
+  override def _to: FC[TreeNodeProps[DataNode]] = default
 }

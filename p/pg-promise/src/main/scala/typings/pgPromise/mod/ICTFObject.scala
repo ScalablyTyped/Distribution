@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // API: https://github.com/vitaly-t/pg-promise#custom-type-formatting
 trait ICTFObject extends StObject {
   
-  def toPostgres(a: js.Any): js.Any
+  def toPostgres(a: Any): Any
 }
 object ICTFObject {
   
-  inline def apply(toPostgres: js.Any => js.Any): ICTFObject = {
+  inline def apply(toPostgres: Any => Any): ICTFObject = {
     val __obj = js.Dynamic.literal(toPostgres = js.Any.fromFunction1(toPostgres))
     __obj.asInstanceOf[ICTFObject]
   }
   
   extension [Self <: ICTFObject](x: Self) {
     
-    inline def setToPostgres(value: js.Any => js.Any): Self = StObject.set(x, "toPostgres", js.Any.fromFunction1(value))
+    inline def setToPostgres(value: Any => Any): Self = StObject.set(x, "toPostgres", js.Any.fromFunction1(value))
   }
 }

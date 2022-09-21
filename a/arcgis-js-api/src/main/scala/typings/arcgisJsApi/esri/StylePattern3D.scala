@@ -5,7 +5,7 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`diagonal-cross`
 import typings.arcgisJsApi.arcgisJsApiStrings.`forward-diagonal`
 import typings.arcgisJsApi.arcgisJsApiStrings.cross
 import typings.arcgisJsApi.arcgisJsApiStrings.horizontal
-import typings.arcgisJsApi.arcgisJsApiStrings.none
+import typings.arcgisJsApi.arcgisJsApiStrings.none_
 import typings.arcgisJsApi.arcgisJsApiStrings.solid
 import typings.arcgisJsApi.arcgisJsApiStrings.style
 import typings.arcgisJsApi.arcgisJsApiStrings.vertical
@@ -22,14 +22,16 @@ trait StylePattern3D
   /**
     * The fill style.
     *
+    * @default solid
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-patterns-StylePattern3D.html#style)
     */
-  var style: `backward-diagonal` | cross | `diagonal-cross` | `forward-diagonal` | horizontal | none | solid | vertical = js.native
+  var style: `backward-diagonal` | cross | `diagonal-cross` | `forward-diagonal` | horizontal | none_ | solid | vertical = js.native
   
   /**
     * The pattern type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-patterns-StylePattern3D.html#type)
     */
-  var `type`: style = js.native
+  val `type`: style = js.native
 }

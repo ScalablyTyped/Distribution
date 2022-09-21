@@ -10,5 +10,5 @@ object pointInPolygonMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(points: js.Any, x: js.Any, y: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(points.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def default(points: Any, x: Any, y: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(points.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

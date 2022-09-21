@@ -31,7 +31,7 @@ object shallowMod {
       * Similar to `ReactDOM.render` but it doesn't require DOM and only renders a single level deep.
       */
     def render(element: ReactElement): Unit = js.native
-    def render(element: ReactElement, context: js.Any): Unit = js.native
+    def render(element: ReactElement, context: Any): Unit = js.native
     
     def unmount(): Unit = js.native
   }

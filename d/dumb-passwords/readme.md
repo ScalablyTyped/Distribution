@@ -10,10 +10,10 @@ Guard your users from security problems that start by having dumb passwords
 | ------------------ | :-------------: |
 | Full name          | dumb-passwords |
 | Keywords           | stupid, dumb, password, stupid passwords, dumb passwords, common, common passwords, security, user, user password, risks, top 10000 worst passwords |
-| # releases         | 0 |
-| # dependents       | 25 |
-| # downloads        | 677312 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 31829.0 |
+| # stars            | 84.0 |
 
 ## Links
 - [Homepage](https://github.com/kn9ts/dumb-passwords#readme)

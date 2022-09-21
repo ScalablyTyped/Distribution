@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap", "FormControlFeedback")
 @js.native
-class FormControlFeedback ()
+open class FormControlFeedback ()
   extends typings.reactBootstrap.libMod.FormControlFeedback

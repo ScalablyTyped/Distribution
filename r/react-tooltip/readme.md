@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-tooltip
 
-Typings are for version 4.2.11
+Typings are for version 4.2.21
 
 ## Library description:
 react tooltip component
@@ -10,10 +10,10 @@ react tooltip component
 | ------------------ | :-------------: |
 | Full name          | react-tooltip |
 | Keywords           | react, react-component, tooltip, react-tooltip |
-| # releases         | 34 |
-| # dependents       | 490 |
-| # downloads        | 21577337 |
-| # stars            | 26 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 5233781.666666667 |
+| # stars            | 2796.0 |
 
 ## Links
 - [Homepage](https://github.com/wwayne/react-tooltip#readme)

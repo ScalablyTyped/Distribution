@@ -16,12 +16,6 @@ trait Uploadprotocol extends StObject {
   /** Data format for response. */
   var alt: js.UndefOr[String] = js.undefined
   
-  /**
-    * If true the prices for all regions targeted by the parent app that don't have a price specified for this in-app product will be auto converted to the target currency based on
-    * the default price. Defaults to false.
-    */
-  var autoConvertMissingPrices: js.UndefOr[Boolean] = js.undefined
-  
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
@@ -34,7 +28,7 @@ trait Uploadprotocol extends StObject {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Package name of the app. */
+  /** Required. The app package name. */
   var packageName: String
   
   /** Returns response with indentations and line breaks. */
@@ -69,10 +63,6 @@ object Uploadprotocol {
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
     inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
-    
-    inline def setAutoConvertMissingPrices(value: Boolean): Self = StObject.set(x, "autoConvertMissingPrices", value.asInstanceOf[js.Any])
-    
-    inline def setAutoConvertMissingPricesUndefined: Self = StObject.set(x, "autoConvertMissingPrices", js.undefined)
     
     inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     

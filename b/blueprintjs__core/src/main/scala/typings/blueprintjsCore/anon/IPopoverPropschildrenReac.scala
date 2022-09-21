@@ -4,9 +4,11 @@ import typings.blueprintjsCore.popoverMod.PopoverInteractionKind
 import typings.blueprintjsCore.popoverSharedPropsMod.PopoverPosition
 import typings.popperJs.mod.Boundary
 import typings.popperJs.mod.Modifiers
+import typings.popperJs.mod.Placement
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.HTMLProps
 import typings.react.mod.ReactNode
+import typings.react.mod.Ref
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.global.JSX.Element
 import typings.std.Event
@@ -21,6 +23,7 @@ trait IPopoverPropschildrenReac extends StObject {
   
   /**
     * Whether the overlay should acquire application focus when it first opens.
+    *
     * @default true
     */
   var autoFocus: js.UndefOr[Boolean] = js.undefined
@@ -32,12 +35,14 @@ trait IPopoverPropschildrenReac extends StObject {
     * Determines the boundary element used by Popper for its `flip` and
     * `preventOverflow` modifiers. Three shorthand keywords are supported;
     * Popper will find the correct DOM element itself.
+    *
     * @default "scrollParent"
     */
   var boundary: js.UndefOr[Boundary] = js.undefined
   
   /**
     * Whether pressing the `esc` key should invoke `onClose`.
+    *
     * @default true
     */
   var canEscapeKeyClose: js.UndefOr[Boolean] = js.undefined
@@ -46,6 +51,7 @@ trait IPopoverPropschildrenReac extends StObject {
     * When enabled, clicks inside a `Classes.POPOVER_DISMISS` element
     * will only close the current popover and not outer popovers.
     * When disabled, the current popover and any ancestor popovers will be closed.
+    *
     * @see http://blueprintjs.com/docs/#core/components/popover.closing-on-click
     * @default false
     */
@@ -64,12 +70,14 @@ trait IPopoverPropschildrenReac extends StObject {
   
   /**
     * Initial opened state when uncontrolled.
+    *
     * @default false
     */
   var defaultIsOpen: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Prevents the popover from appearing when `true`.
+    *
     * @default false
     */
   var disabled: js.UndefOr[Boolean] = js.undefined
@@ -79,6 +87,7 @@ trait IPopoverPropschildrenReac extends StObject {
     * to focus an element outside the overlay and this prop is enabled, then the overlay will
     * immediately bring focus back to itself. If you are nesting overlay components, either disable
     * this prop on the "outermost" overlays or mark the nested ones `usePortal={false}`.
+    *
     * @default true
     */
   var enforceFocus: js.UndefOr[Boolean] = js.undefined
@@ -96,6 +105,7 @@ trait IPopoverPropschildrenReac extends StObject {
     * closed. This prop is only available when `interactionKind` is
     * `PopoverInteractionKind.CLICK`. When popovers with backdrop are opened,
     * they become focused.
+    *
     * @default false
     */
   var hasBackdrop: js.UndefOr[Boolean] = js.undefined
@@ -104,6 +114,7 @@ trait IPopoverPropschildrenReac extends StObject {
     * The amount of time in milliseconds the popover should remain open after
     * the user hovers off the trigger. The timer is canceled if the user mouses
     * over the target before it expires.
+    *
     * @default 300
     */
   var hoverCloseDelay: js.UndefOr[Double] = js.undefined
@@ -112,6 +123,7 @@ trait IPopoverPropschildrenReac extends StObject {
     * The amount of time in milliseconds the popover should wait before opening
     * after the user hovers over the trigger. The timer is canceled if the user
     * mouses away from the target before it expires.
+    *
     * @default 150
     */
   var hoverOpenDelay: js.UndefOr[Double] = js.undefined
@@ -119,12 +131,14 @@ trait IPopoverPropschildrenReac extends StObject {
   /**
     * Whether a popover that uses a `Portal` should automatically inherit the
     * dark theme from its parent.
+    *
     * @default true
     */
   var inheritDarkTheme: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The kind of interaction that triggers the display of the popover.
+    *
     * @default PopoverInteractionKind.CLICK
     */
   var interactionKind: js.UndefOr[PopoverInteractionKind] = js.undefined
@@ -134,6 +148,7 @@ trait IPopoverPropschildrenReac extends StObject {
     * controlled mode, where the only way to change visibility is by updating
     * this property. If `disabled={true}`, this prop will be ignored, and the
     * popover will remain closed.
+    *
     * @default undefined
     */
   var isOpen: js.UndefOr[Boolean] = js.undefined
@@ -143,6 +158,7 @@ trait IPopoverPropschildrenReac extends StObject {
     * to the DOM when the overlay is opened for the first time; otherwise this happens when the
     * component mounts. Lazy mounting provides noticeable performance improvements if you have lots
     * of overlays at once, such as on each row of a table.
+    *
     * @default true
     */
   var `lazy`: js.UndefOr[Boolean] = js.undefined
@@ -150,6 +166,7 @@ trait IPopoverPropschildrenReac extends StObject {
   /**
     * Whether to apply minimal styling to this popover or tooltip. Minimal popovers
     * do not have an arrow pointing to their target and use a subtler animation.
+    *
     * @default false
     */
   var minimal: js.UndefOr[Boolean] = js.undefined
@@ -213,9 +230,26 @@ trait IPopoverPropschildrenReac extends StObject {
     * Whether the popover should open when its target is focused. If `true`,
     * target will render with `tabindex="0"` to make it focusable via keyboard
     * navigation.
+    *
+    * Note that this functionality is only enabled for hover interaction
+    * popovers/tooltips.
+    *
     * @default true
     */
   var openOnTargetFocus: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * The placement (relative to the target) at which the popover should appear.
+    * Mutually exclusive with `position` prop.
+    *
+    * The default value of `"auto"` will choose the best placement when opened
+    * and will allow the popover to reposition itself to remain onscreen as the
+    * user scrolls around.
+    *
+    * @see https://popper.js.org/docs/v1/#Popper.placements
+    * @default "auto"
+    */
+  var placement: js.UndefOr[Placement] = js.undefined
   
   /**
     * A space-delimited string of class names applied to the popover element.
@@ -225,7 +259,7 @@ trait IPopoverPropschildrenReac extends StObject {
   /**
     * Ref supplied to the `Classes.POPOVER` element.
     */
-  var popoverRef: js.UndefOr[js.Function1[/* ref */ HTMLElement | Null, Unit]] = js.undefined
+  var popoverRef: js.UndefOr[Ref[HTMLElement]] = js.undefined
   
   /**
     * Space-delimited string of class names applied to the `Portal` element if
@@ -236,19 +270,36 @@ trait IPopoverPropschildrenReac extends StObject {
   /**
     * The container element into which the overlay renders its contents, when `usePortal` is `true`.
     * This prop is ignored if `usePortal` is `false`.
+    *
     * @default document.body
     */
   var portalContainer: js.UndefOr[HTMLElement] = js.undefined
   
   /**
     * The position (relative to the target) at which the popover should appear.
+    * Mutually exclusive with `placement` prop.
     *
     * The default value of `"auto"` will choose the best position when opened
     * and will allow the popover to reposition itself to remain onscreen as the
     * user scrolls around.
+    *
     * @default "auto"
     */
   var position: js.UndefOr[PopoverPosition] = js.undefined
+  
+  /**
+    * Whether the application should return focus to the last active element in the
+    * document after this popover closes.
+    *
+    * This is automatically set to `false` if this is a hover interaction popover.
+    *
+    * If you are attaching a popover _and_ a tooltip to the same target, you must take
+    * care to either disable this prop for the popover _or_ disable the tooltip's
+    * `openOnTargetFocus` prop.
+    *
+    * @default false
+    */
+  var shouldReturnFocusOnClose: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The target to which the popover content is attached. This can instead be
@@ -273,10 +324,11 @@ trait IPopoverPropschildrenReac extends StObject {
     *
     * By default, a `<span>` tag is used so popovers appear as inline-block
     * elements and can be nested in text. Use `<div>` tag for a block element.
+    *
     * @default "span"
     */
   var targetTagName: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any
   ] = js.undefined
   
   /**
@@ -284,6 +336,7 @@ trait IPopoverPropschildrenReac extends StObject {
     * This is used by React `CSSTransition` to know when a transition completes and must match
     * the duration of the animation in CSS. Only set this prop if you override Blueprint's default
     * transitions with new transitions of a different length.
+    *
     * @default 300
     */
   var transitionDuration: js.UndefOr[Double] = js.undefined
@@ -300,6 +353,7 @@ trait IPopoverPropschildrenReac extends StObject {
     * Not using a `Portal` can result in smoother performance when scrolling
     * and allows the popover content to inherit CSS styles from surrounding
     * elements, but it remains subject to the overflow bounds of its ancestors.
+    *
     * @default true
     */
   var usePortal: js.UndefOr[Boolean] = js.undefined
@@ -307,10 +361,11 @@ trait IPopoverPropschildrenReac extends StObject {
   /**
     * HTML tag name for the wrapper element, which also receives the
     * `className` prop.
+    *
     * @default "span"
     */
   var wrapperTagName: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any
   ] = js.undefined
 }
 object IPopoverPropschildrenReac {
@@ -436,11 +491,19 @@ object IPopoverPropschildrenReac {
     
     inline def setOpenOnTargetFocusUndefined: Self = StObject.set(x, "openOnTargetFocus", js.undefined)
     
+    inline def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+    
+    inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+    
     inline def setPopoverClassName(value: String): Self = StObject.set(x, "popoverClassName", value.asInstanceOf[js.Any])
     
     inline def setPopoverClassNameUndefined: Self = StObject.set(x, "popoverClassName", js.undefined)
     
-    inline def setPopoverRef(value: /* ref */ HTMLElement | Null => Unit): Self = StObject.set(x, "popoverRef", js.Any.fromFunction1(value))
+    inline def setPopoverRef(value: Ref[HTMLElement]): Self = StObject.set(x, "popoverRef", value.asInstanceOf[js.Any])
+    
+    inline def setPopoverRefFunction1(value: /* instance */ HTMLElement | Null => Unit): Self = StObject.set(x, "popoverRef", js.Any.fromFunction1(value))
+    
+    inline def setPopoverRefNull: Self = StObject.set(x, "popoverRef", null)
     
     inline def setPopoverRefUndefined: Self = StObject.set(x, "popoverRef", js.undefined)
     
@@ -456,6 +519,10 @@ object IPopoverPropschildrenReac {
     
     inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
+    inline def setShouldReturnFocusOnClose(value: Boolean): Self = StObject.set(x, "shouldReturnFocusOnClose", value.asInstanceOf[js.Any])
+    
+    inline def setShouldReturnFocusOnCloseUndefined: Self = StObject.set(x, "shouldReturnFocusOnClose", js.undefined)
+    
     inline def setTarget(value: String | Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     inline def setTargetClassName(value: String): Self = StObject.set(x, "targetClassName", value.asInstanceOf[js.Any])
@@ -466,7 +533,7 @@ object IPopoverPropschildrenReac {
     
     inline def setTargetPropsUndefined: Self = StObject.set(x, "targetProps", js.undefined)
     
-    inline def setTargetTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any): Self = StObject.set(x, "targetTagName", value.asInstanceOf[js.Any])
+    inline def setTargetTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any): Self = StObject.set(x, "targetTagName", value.asInstanceOf[js.Any])
     
     inline def setTargetTagNameUndefined: Self = StObject.set(x, "targetTagName", js.undefined)
     
@@ -480,7 +547,7 @@ object IPopoverPropschildrenReac {
     
     inline def setUsePortalUndefined: Self = StObject.set(x, "usePortal", js.undefined)
     
-    inline def setWrapperTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any): Self = StObject.set(x, "wrapperTagName", value.asInstanceOf[js.Any])
+    inline def setWrapperTagName(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ Any): Self = StObject.set(x, "wrapperTagName", value.asInstanceOf[js.Any])
     
     inline def setWrapperTagNameUndefined: Self = StObject.set(x, "wrapperTagName", js.undefined)
   }

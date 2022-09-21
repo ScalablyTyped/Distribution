@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elastic.js", "SuggestContextMixin")
 @js.native
-class SuggestContextMixin () extends StObject {
+open class SuggestContextMixin () extends StObject {
   
   /*
     Sets analyzer used to analyze the suggest text.

@@ -1,6 +1,7 @@
 package typings.maximMazurokGapiClientDrive.gapi.client.drive
 
 import typings.gapiClient.gapi.client.Request
+import typings.maximMazurokGapiClientDrive.anon.AllowItemDeletion
 import typings.maximMazurokGapiClientDrive.anon.PageToken
 import typings.maximMazurokGapiClientDrive.anon.QuotaUser
 import typings.maximMazurokGapiClientDrive.anon.RequestId
@@ -20,7 +21,7 @@ trait DrivesResource extends StObject {
   
   /** Permanently deletes a shared drive for which the user is an organizer. The shared drive cannot contain any untrashed items. */
   def delete(): Request[Unit] = js.native
-  def delete(request: UserIp): Request[Unit] = js.native
+  def delete(request: AllowItemDeletion): Request[Unit] = js.native
   
   /** Gets a shared drive's metadata by ID. */
   def get(): Request[Drive] = js.native

@@ -10,10 +10,10 @@ object feedbackMod {
   
   @JSImport("material-ui/svg-icons/action/feedback", JSImport.Default)
   @js.native
-  class default () extends ActionFeedback
+  open class default () extends ActionFeedback
   
   @JSImport("material-ui/svg-icons/action/feedback", "ActionFeedback")
   @js.native
-  class ActionFeedback ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionFeedback ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

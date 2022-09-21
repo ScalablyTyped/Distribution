@@ -14,17 +14,16 @@ object comboBoxComboBoxMod {
   
   @JSImport("office-ui-fabric-react/lib/components/ComboBox/ComboBox", "ComboBox")
   @js.native
-  class ComboBox protected ()
-    extends Component[IComboBoxProps, IComboBoxState, js.Any] {
+  open class ComboBox protected () extends Component[IComboBoxProps, IComboBoxState, Any] {
     def this(props: IComboBoxProps) = this()
     
     @JSName("UNSAFE_componentWillReceiveProps")
     def UNSAFE_componentWillReceiveProps_MComboBox(newProps: IComboBoxProps): Unit = js.native
     
-    /* private */ var _async: js.Any = js.native
+    /* private */ var _async: Any = js.native
     
     /** The input aspect of the comboBox */
-    /* private */ var _autofill: js.Any = js.native
+    /* private */ var _autofill: Any = js.native
     
     /**
       * Given default selected key(s) and selected key(s), return the selected keys(s).
@@ -33,71 +32,71 @@ object comboBoxComboBoxMod {
       * @returns No matter what specific types the input parameters are, always return an array of
       *  either strings or numbers instead of premitive type.  This normlization makes caller's logic easier.
       */
-    /* private */ var _buildDefaultSelectedKeys: js.Any = js.native
+    /* private */ var _buildDefaultSelectedKeys: Any = js.native
     
-    /* private */ var _buildSelectedKeys: js.Any = js.native
+    /* private */ var _buildSelectedKeys: Any = js.native
     
-    /* private */ var _classNames: js.Any = js.native
+    /* private */ var _classNames: Any = js.native
     
     /**
       * Clears the pending info state
       */
-    /* private */ var _clearPendingInfo: js.Any = js.native
+    /* private */ var _clearPendingInfo: Any = js.native
     
     /** The callout element */
-    /* private */ var _comboBoxMenu: js.Any = js.native
+    /* private */ var _comboBoxMenu: Any = js.native
     
     /** The wrapping div of the input and button */
-    /* private */ var _comboBoxWrapper: js.Any = js.native
+    /* private */ var _comboBoxWrapper: Any = js.native
     
     /** Promise used when resolving the comboBox options */
-    /* private */ var _currentPromise: js.Any = js.native
+    /* private */ var _currentPromise: Any = js.native
     
     /** The current visible value sent to the auto fill on render */
-    /* private */ var _currentVisibleValue: js.Any = js.native
+    /* private */ var _currentVisibleValue: Any = js.native
     
-    /* private */ var _events: js.Any = js.native
+    /* private */ var _events: Any = js.native
     
     /**
       * Determines if we should be setting focus back to the input when the menu closes.
       * The general rule of thumb is if the menu was launched via the keyboard focus should go back
       * to the input, if it was dropped via the mouse focus should not be forced back to the input.
       */
-    /* private */ var _focusInputAfterClose: js.Any = js.native
+    /* private */ var _focusInputAfterClose: Any = js.native
     
     /**
       * Get the aria-activedescendant value for the comboxbox.
       * @returns the id of the current focused combo item, otherwise the id of the currently selected element,
       * null otherwise
       */
-    /* private */ var _getAriaActiveDescendantValue: js.Any = js.native
+    /* private */ var _getAriaActiveDescendantValue: Any = js.native
     
     /**
       * Get the aria autocomplete value for the Combobox
       * @returns 'inline' if auto-complete automatically dynamic, 'both' if we have a list of possible values to pick from
       * and can dynamically populate input, and 'none' if auto-complete is not enabled as we can't give user inputs.
       */
-    /* private */ var _getAriaAutoCompleteValue: js.Any = js.native
+    /* private */ var _getAriaAutoCompleteValue: Any = js.native
     
     /**
       * Get the styles for the current option.
       * @param item - Item props for the current option
       */
-    /* private */ var _getCaretButtonStyles: js.Any = js.native
+    /* private */ var _getCaretButtonStyles: Any = js.native
     
     /**
       * Get the styles for the current option.
       * @param item - Item props for the current option
       */
-    /* private */ var _getCurrentOptionStyles: js.Any = js.native
+    /* private */ var _getCurrentOptionStyles: Any = js.native
     
-    /* private */ var _getFirstSelectedIndex: js.Any = js.native
+    /* private */ var _getFirstSelectedIndex: Any = js.native
     
     /**
       * Returns a string that concatenates all of the selected values
       * for multiselect combobox.
       */
-    /* private */ var _getMultiselectDisplayString: js.Any = js.native
+    /* private */ var _getMultiselectDisplayString: Any = js.native
     
     /**
       * Walk along the options starting at the index, stepping by the delta (positive or negative)
@@ -107,18 +106,18 @@ object comboBoxComboBoxMod {
       * @returns - the next valid selectable index. If the new index is outside of the bounds,
       * it will snap to the edge of the options array. If delta == 0 and the given index is not selectable
       */
-    /* private */ var _getNextSelectableIndex: js.Any = js.native
+    /* private */ var _getNextSelectableIndex: Any = js.native
     
     /**
       * Gets the pending selected index taking into account hover, valueValidIndex, and selectedIndex
       * @param includeCurrentPendingValue - Should we include the currentPendingValue when
       * finding the index
       */
-    /* private */ var _getPendingSelectedIndex: js.Any = js.native
+    /* private */ var _getPendingSelectedIndex: Any = js.native
     
-    /* private */ var _getPendingString: js.Any = js.native
+    /* private */ var _getPendingString: Any = js.native
     
-    /* private */ var _getPreviewText: js.Any = js.native
+    /* private */ var _getPreviewText: Any = js.native
     
     /**
       * Get the indices of the options that are marked as selected
@@ -126,36 +125,36 @@ object comboBoxComboBoxMod {
       * @param selectedKeys - the known selected keys to find
       * @returns - an array of the indices of the selected options, empty array if nothing is selected
       */
-    /* private */ var _getSelectedIndices: js.Any = js.native
+    /* private */ var _getSelectedIndices: Any = js.native
     
     /**
       * Get the correct value to pass to the input
       * to show to the user based off of the current props and state
       * @returns the value to pass to the input
       */
-    /* private */ var _getVisibleValue: js.Any = js.native
+    /* private */ var _getVisibleValue: Any = js.native
     
     /** Flag for when we get the first mouseMove */
-    /* private */ var _gotMouseMove: js.Any = js.native
+    /* private */ var _gotMouseMove: Any = js.native
     
     /**
       * Handle dismissing the menu and
       * eating the required key event when disabled
       * @param ev - the keyboard event that was fired
       */
-    /* private */ var _handleInputWhenDisabled: js.Any = js.native
+    /* private */ var _handleInputWhenDisabled: Any = js.native
     
-    /* private */ var _handleTouchAndPointerEvent: js.Any = js.native
+    /* private */ var _handleTouchAndPointerEvent: Any = js.native
     
     /**
       * Returns true if the component has some kind of focus. If it's either focusing or if it's focused
       */
-    /* private */ var _hasFocus: js.Any = js.native
+    /* private */ var _hasFocus: Any = js.native
     
-    /* private */ var _hasPendingValue: js.Any = js.native
+    /* private */ var _hasPendingValue: Any = js.native
     
     /** The base id for the ComboBox */
-    /* private */ var _id: js.Any = js.native
+    /* private */ var _id: Any = js.native
     
     /**
       * Is the index within the bounds of the array?
@@ -163,14 +162,14 @@ object comboBoxComboBoxMod {
       * @param index - the index to check
       * @returns - true if the index is valid for the given options, false otherwise
       */
-    /* private */ var _indexWithinBounds: js.Any = js.native
+    /* private */ var _indexWithinBounds: Any = js.native
     
     /**
       * Returns true if the key for the event is alt (Mac option) or meta (Mac command).
       */
-    /* private */ var _isAltOrMeta: js.Any = js.native
+    /* private */ var _isAltOrMeta: Any = js.native
     
-    /* private */ var _isOptionChecked: js.Any = js.native
+    /* private */ var _isOptionChecked: Any = js.native
     
     /**
       * If we are coming from a mouseOut:
@@ -184,126 +183,126 @@ object comboBoxComboBoxMod {
       * we do not have a valid index and we currently have a pending input value,
       * otherwise use the selected index
       * */
-    /* private */ var _isOptionSelected: js.Any = js.native
+    /* private */ var _isOptionSelected: Any = js.native
     
-    /* private */ var _isPendingOption: js.Any = js.native
+    /* private */ var _isPendingOption: Any = js.native
     
-    /* private */ var _isScrollIdle: js.Any = js.native
+    /* private */ var _isScrollIdle: Any = js.native
     
     /** True if the most recent keydown event was for alt (option) or meta (command). */
-    /* private */ var _lastKeyDownWasAltOrMeta: js.Any = js.native
+    /* private */ var _lastKeyDownWasAltOrMeta: Any = js.native
     
     /**
       * After a character is inserted when autocomplete is true and allowFreeform is false,
       * remember the task that will clear the pending string of characters.
       */
-    /* private */ var _lastReadOnlyAutoCompleteChangeTimeoutId: js.Any = js.native
+    /* private */ var _lastReadOnlyAutoCompleteChangeTimeoutId: Any = js.native
     
-    /* private */ var _lastTouchTimeoutId: js.Any = js.native
+    /* private */ var _lastTouchTimeoutId: Any = js.native
     
-    /* private */ var _normalizeToString: js.Any = js.native
+    /* private */ var _normalizeToString: Any = js.native
     
-    /* private */ var _notifyPendingValueChanged: js.Any = js.native
+    /* private */ var _notifyPendingValueChanged: Any = js.native
     
-    /* private */ var _onAfterClearPendingInfo: js.Any = js.native
+    /* private */ var _onAfterClearPendingInfo: Any = js.native
     
     /**
       * Click handler for the autofill.
       */
-    /* private */ var _onAutofillClick: js.Any = js.native
+    /* private */ var _onAutofillClick: Any = js.native
     
     /**
       * OnBlur handler. Set the focused state to false
       * and submit any pending value
       */
-    /* private */ var _onBlur: js.Any = js.native
+    /* private */ var _onBlur: Any = js.native
     
-    /* private */ var _onCalloutLayerMounted: js.Any = js.native
+    /* private */ var _onCalloutLayerMounted: Any = js.native
     
     /**
       * Mouse clicks to headers, dividers and scrollbar should not make input lose focus
       */
-    /* private */ var _onCalloutMouseDown: js.Any = js.native
+    /* private */ var _onCalloutMouseDown: Any = js.native
     
     /**
       * Click handler for the button of the comboBox
       * and the input when not allowing freeform. This
       * toggles the expand/collapse state of the comboBox (if enbled)
       */
-    /* private */ var _onComboBoxClick: js.Any = js.native
+    /* private */ var _onComboBoxClick: Any = js.native
     
     /**
       * Handles dismissing (cancelling) the menu
       */
-    /* private */ var _onDismiss: js.Any = js.native
+    /* private */ var _onDismiss: Any = js.native
     
     /**
       * Focus (and select) the content of the input
       * and set the focused state
       */
-    /* private */ var _onFocus: js.Any = js.native
+    /* private */ var _onFocus: Any = js.native
     
     /**
       * Handler for typing changes on the input
       * @param updatedValue - the newly changed value
       */
-    /* private */ var _onInputChange: js.Any = js.native
+    /* private */ var _onInputChange: Any = js.native
     
     /**
       * Handle keydown on the input
       * @param ev - The keyboard event that was fired
       */
-    /* private */ var _onInputKeyDown: js.Any = js.native
+    /* private */ var _onInputKeyDown: Any = js.native
     
     /**
       * Handle keyup on the input
       * @param ev - the keyboard event that was fired
       */
-    /* private */ var _onInputKeyUp: js.Any = js.native
+    /* private */ var _onInputKeyUp: Any = js.native
     
     /**
       * Click handler for the menu items
       * to select the item and also close the menu
       * @param index - the index of the item that was clicked
       */
-    /* private */ var _onItemClick: js.Any = js.native
+    /* private */ var _onItemClick: Any = js.native
     
-    /* private */ var _onLayerMounted: js.Any = js.native
+    /* private */ var _onLayerMounted: Any = js.native
     
-    /* private */ var _onOptionMouseEnter: js.Any = js.native
+    /* private */ var _onOptionMouseEnter: Any = js.native
     
-    /* private */ var _onOptionMouseLeave: js.Any = js.native
+    /* private */ var _onOptionMouseLeave: Any = js.native
     
-    /* private */ var _onOptionMouseMove: js.Any = js.native
+    /* private */ var _onOptionMouseMove: Any = js.native
     
-    /* private */ var _onPointerDown: js.Any = js.native
+    /* private */ var _onPointerDown: Any = js.native
     
-    /* private */ var _onRenderContainer: js.Any = js.native
+    /* private */ var _onRenderContainer: Any = js.native
     
-    /* private */ var _onRenderItem: js.Any = js.native
+    /* private */ var _onRenderItem: Any = js.native
     
-    /* private */ var _onRenderLabel: js.Any = js.native
+    /* private */ var _onRenderLabel: Any = js.native
     
-    /* private */ var _onRenderList: js.Any = js.native
+    /* private */ var _onRenderList: Any = js.native
     
-    /* private */ var _onRenderLowerContent: js.Any = js.native
+    /* private */ var _onRenderLowerContent: Any = js.native
     
-    /* private */ var _onRenderOptionContent: js.Any = js.native
+    /* private */ var _onRenderOptionContent: Any = js.native
     
-    /* private */ var _onRenderUpperContent: js.Any = js.native
+    /* private */ var _onRenderUpperContent: Any = js.native
     
     /**
       * Callback issued when the options should be resolved, if they have been updated or
       * if they need to be passed in the first time. This only does work if an onResolveOptions
       * callback was passed in
       */
-    /* private */ var _onResolveOptions: js.Any = js.native
+    /* private */ var _onResolveOptions: Any = js.native
     
     /**
       * Scroll handler for the callout to make sure the mouse events
       * for updating focus are not interacting during scroll
       */
-    /* private */ var _onScroll: js.Any = js.native
+    /* private */ var _onScroll: Any = js.native
     
     /**
       * componentDidUpdate handler for the auto fill component
@@ -313,9 +312,9 @@ object comboBoxComboBoxMod {
       * @returns - should the full value of the input be selected?
       * True if the defaultVisibleValue equals the suggestedDisplayValue, false otherwise
       */
-    /* private */ var _onShouldSelectFullInputValueInAutofillComponentDidUpdate: js.Any = js.native
+    /* private */ var _onShouldSelectFullInputValueInAutofillComponentDidUpdate: Any = js.native
     
-    /* private */ var _onTouchStart: js.Any = js.native
+    /* private */ var _onTouchStart: Any = js.native
     
     /**
       * componentWillReceiveProps handler for the auto fill component
@@ -324,33 +323,33 @@ object comboBoxComboBoxMod {
       *  in to the auto fill's componentWillReceiveProps
       * @returns - the updated value to set, if needed
       */
-    /* private */ var _onUpdateValueInAutofillWillReceiveProps: js.Any = js.native
+    /* private */ var _onUpdateValueInAutofillWillReceiveProps: Any = js.native
     
     /**
       * Process the new input's new value when the comboBox
       * allows freeform entry
       * @param updatedValue - the input's newly changed value
       */
-    /* private */ var _processInputChangeWithFreeform: js.Any = js.native
+    /* private */ var _processInputChangeWithFreeform: Any = js.native
     
     /**
       * Process the new input's new value when the comboBox
       * does not allow freeform entry
       * @param updatedValue - the input's newly changed value
       */
-    /* private */ var _processInputChangeWithoutFreeform: js.Any = js.native
+    /* private */ var _processInputChangeWithoutFreeform: Any = js.native
     
-    /* private */ var _processingClearPendingInfo: js.Any = js.native
+    /* private */ var _processingClearPendingInfo: Any = js.native
     
-    /* private */ var _processingTouch: js.Any = js.native
+    /* private */ var _processingTouch: Any = js.native
     
-    /* private */ var _renderComboBoxWrapper: js.Any = js.native
+    /* private */ var _renderComboBoxWrapper: Any = js.native
     
-    /* private */ var _renderHeader: js.Any = js.native
+    /* private */ var _renderHeader: Any = js.native
     
-    /* private */ var _renderOption: js.Any = js.native
+    /* private */ var _renderOption: Any = js.native
     
-    /* private */ var _renderSeparator: js.Any = js.native
+    /* private */ var _renderSeparator: Any = js.native
     
     /**
       * Reset the selected index by clearing the
@@ -358,24 +357,24 @@ object comboBoxComboBoxMod {
       * and setting the suggested display value to the last
       * selected state text
       */
-    /* private */ var _resetSelectedIndex: js.Any = js.native
+    /* private */ var _resetSelectedIndex: Any = js.native
     
-    /* private */ var _root: js.Any = js.native
+    /* private */ var _root: Any = js.native
     
-    /* private */ var _scrollIdleTimeoutId: js.Any = js.native
+    /* private */ var _scrollIdleTimeoutId: Any = js.native
     
     /**
       * Scroll the selected element into view
       */
-    /* private */ var _scrollIntoView: js.Any = js.native
+    /* private */ var _scrollIntoView: Any = js.native
     
     /** The menu item element that is currently selected */
-    /* private */ var _selectedElement: js.Any = js.native
+    /* private */ var _selectedElement: Any = js.native
     
     /**
       * Sets the isOpen state and updates focusInputAfterClose
       */
-    /* private */ var _setOpenStateAndFocusOnClose: js.Any = js.native
+    /* private */ var _setOpenStateAndFocusOnClose: Any = js.native
     
     /**
       * Set the pending info
@@ -383,20 +382,20 @@ object comboBoxComboBoxMod {
       * @param currentPendingValueValidIndex - new pending value index to set
       * @param suggestedDisplayValue - new suggest display value to set
       */
-    /* private */ var _setPendingInfo: js.Any = js.native
+    /* private */ var _setPendingInfo: Any = js.native
     
     /**
       * Set the pending info from the given index
       * @param index - the index to set the pending info from
       */
-    /* private */ var _setPendingInfoFromIndex: js.Any = js.native
+    /* private */ var _setPendingInfoFromIndex: Any = js.native
     
     /**
       * Sets the pending info for the comboBox
       * @param index - the index to search from
       * @param searchDirection - the direction to search
       */
-    /* private */ var _setPendingInfoFromIndexAndDirection: js.Any = js.native
+    /* private */ var _setPendingInfoFromIndexAndDirection: Any = js.native
     
     /**
       * Set the selected index. Note, this is
@@ -404,14 +403,14 @@ object comboBoxComboBoxMod {
       * @param index - the index to set (or the index to set from if a search direction is provided)
       * @param searchDirection - the direction to search along the options from the given index
       */
-    /* private */ var _setSelectedIndex: js.Any = js.native
+    /* private */ var _setSelectedIndex: Any = js.native
     
-    /* private */ var _shouldIgnoreMouseEvent: js.Any = js.native
+    /* private */ var _shouldIgnoreMouseEvent: Any = js.native
     
     /**
       * Submit a pending value if there is one
       */
-    /* private */ var _submitPendingValue: js.Any = js.native
+    /* private */ var _submitPendingValue: Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MComboBox(): Unit = js.native
@@ -500,7 +499,7 @@ object comboBoxComboBoxMod {
       
       inline def setCurrentOptions(value: js.Array[IComboBoxOption]): Self = StObject.set(x, "currentOptions", value.asInstanceOf[js.Any])
       
-      inline def setCurrentOptionsVarargs(value: IComboBoxOption*): Self = StObject.set(x, "currentOptions", js.Array(value :_*))
+      inline def setCurrentOptionsVarargs(value: IComboBoxOption*): Self = StObject.set(x, "currentOptions", js.Array(value*))
       
       inline def setCurrentPendingValue(value: String): Self = StObject.set(x, "currentPendingValue", value.asInstanceOf[js.Any])
       
@@ -522,7 +521,7 @@ object comboBoxComboBoxMod {
       
       inline def setSelectedIndicesUndefined: Self = StObject.set(x, "selectedIndices", js.undefined)
       
-      inline def setSelectedIndicesVarargs(value: Double*): Self = StObject.set(x, "selectedIndices", js.Array(value :_*))
+      inline def setSelectedIndicesVarargs(value: Double*): Self = StObject.set(x, "selectedIndices", js.Array(value*))
       
       inline def setSuggestedDisplayValue(value: String): Self = StObject.set(x, "suggestedDisplayValue", value.asInstanceOf[js.Any])
       

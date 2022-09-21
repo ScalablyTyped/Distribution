@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-touch", "Holdable")
 @js.native
-class Holdable protected ()
-  extends Component[HoldableProps, js.Object, js.Any] {
+open class Holdable protected ()
+  extends Component[HoldableProps, js.Object, Any] {
   def this(props: HoldableProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: HoldableProps, context: js.Any) = this()
+  def this(props: HoldableProps, context: Any) = this()
 }

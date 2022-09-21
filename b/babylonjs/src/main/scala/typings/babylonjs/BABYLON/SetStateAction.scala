@@ -9,7 +9,7 @@ trait SetStateAction
   extends StObject
      with Action {
   
-  /* private */ var _target: js.Any = js.native
+  /* private */ var _target: Any = js.native
   
   /**
     * The value to store in the state field.

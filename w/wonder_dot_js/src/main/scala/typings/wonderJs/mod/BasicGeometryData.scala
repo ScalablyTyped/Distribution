@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "BasicGeometryData")
 @js.native
-class BasicGeometryData protected ()
+open class BasicGeometryData protected ()
   extends typings.wonderJs.basicGeometryDataMod.BasicGeometryData {
   def this(geometry: typings.wonderJs.geometryMod.Geometry) = this()
 }

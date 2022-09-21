@@ -36,14 +36,14 @@ trait PlusSpeech extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/speech.html](http://www.html5plus.org/doc/zh_cn/speech.html)
     */
   def addEventListener(): Unit = js.native
-  def addEventListener(event: Unit, listener: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def addEventListener(event: Unit, listener: js.Function1[/* result */ js.Any, Unit], capture: Boolean): Unit = js.native
+  def addEventListener(event: Unit, listener: js.Function1[/* result */ Any, Unit]): Unit = js.native
+  def addEventListener(event: Unit, listener: js.Function1[/* result */ Any, Unit], capture: Boolean): Unit = js.native
   def addEventListener(event: Unit, listener: Unit, capture: Boolean): Unit = js.native
   def addEventListener(event: PlusSpeechSpeechRecoginzeEvents): Unit = js.native
-  def addEventListener(event: PlusSpeechSpeechRecoginzeEvents, listener: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def addEventListener(event: PlusSpeechSpeechRecoginzeEvents, listener: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def addEventListener(
     event: PlusSpeechSpeechRecoginzeEvents,
-    listener: js.Function1[/* result */ js.Any, Unit],
+    listener: js.Function1[/* result */ Any, Unit],
     capture: Boolean
   ): Unit = js.native
   def addEventListener(event: PlusSpeechSpeechRecoginzeEvents, listener: Unit, capture: Boolean): Unit = js.native
@@ -59,20 +59,20 @@ trait PlusSpeech extends StObject {
   def startRecognize(
     options: Unit,
     successCB: js.Function1[/* result */ String, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def startRecognize(options: Unit, successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def startRecognize(options: Unit, successCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def startRecognize(options: PlusSpeechSpeechRecognizeOptions): Unit = js.native
   def startRecognize(options: PlusSpeechSpeechRecognizeOptions, successCB: js.Function1[/* result */ String, Unit]): Unit = js.native
   def startRecognize(
     options: PlusSpeechSpeechRecognizeOptions,
     successCB: js.Function1[/* result */ String, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def startRecognize(
     options: PlusSpeechSpeechRecognizeOptions,
     successCB: Unit,
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   
   /**

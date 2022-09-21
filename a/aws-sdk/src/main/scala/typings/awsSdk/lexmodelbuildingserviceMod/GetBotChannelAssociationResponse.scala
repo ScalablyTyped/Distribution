@@ -24,7 +24,7 @@ trait GetBotChannelAssociationResponse extends StObject {
   /**
     * The date that the association between the bot and the channel was created.
     */
-  var createdDate: js.UndefOr[Timestamp] = js.undefined
+  var createdDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A description of the association between the bot and the channel.
@@ -72,7 +72,7 @@ object GetBotChannelAssociationResponse {
     
     inline def setBotNameUndefined: Self = StObject.set(x, "botName", js.undefined)
     
-    inline def setCreatedDate(value: Timestamp): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     inline def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
     

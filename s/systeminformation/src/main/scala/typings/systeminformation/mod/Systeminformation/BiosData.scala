@@ -6,9 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BiosData extends StObject {
   
+  var features: js.UndefOr[js.Array[String]] = js.undefined
+  
+  var language: js.UndefOr[String] = js.undefined
+  
   var releaseDate: String
   
   var revision: String
+  
+  var serial: js.UndefOr[String] = js.undefined
   
   var vendor: String
   
@@ -23,9 +29,23 @@ object BiosData {
   
   extension [Self <: BiosData](x: Self) {
     
+    inline def setFeatures(value: js.Array[String]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+    
+    inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
+    
+    inline def setFeaturesVarargs(value: String*): Self = StObject.set(x, "features", js.Array(value*))
+    
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    
     inline def setReleaseDate(value: String): Self = StObject.set(x, "releaseDate", value.asInstanceOf[js.Any])
     
     inline def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+    
+    inline def setSerial(value: String): Self = StObject.set(x, "serial", value.asInstanceOf[js.Any])
+    
+    inline def setSerialUndefined: Self = StObject.set(x, "serial", js.undefined)
     
     inline def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
     

@@ -8,13 +8,13 @@ object mod {
   
   @JSImport("@keystonejs/oembed-adapters", "IframelyOEmbedAdapter")
   @js.native
-  class IframelyOEmbedAdapter protected () extends StObject {
+  open class IframelyOEmbedAdapter protected () extends StObject {
     def this(options: OEmbedAdapterConfig) = this()
     
     // Unlikely to be used in client apps, hence the any, but if you're using this, feel free to
     // type it properly. It's a res.json response from Fetch, just didn't want to pull that in
     // when it's unlikely to be actually used in client apps, Keystone calls this.
-    def fetch(parameters: js.Any): js.Promise[js.Any] = js.native
+    def fetch(parameters: Any): js.Promise[Any] = js.native
   }
   
   trait OEmbedAdapterConfig extends StObject {

@@ -29,7 +29,7 @@ object Print {
     
     /** Returns the printed element
       */
-    var content: js.UndefOr[js.Any] = js.undefined
+    var content: js.UndefOr[Any] = js.undefined
     
     /** Returns the Print model
       */
@@ -52,7 +52,7 @@ object Print {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
       inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       

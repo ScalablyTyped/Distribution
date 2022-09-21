@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Microsoft.Maps.Color")
 @js.native
-class Color protected ()
+open class Color protected ()
   extends StObject
      with typings.bingmaps.Microsoft.Maps.Color {
   /**

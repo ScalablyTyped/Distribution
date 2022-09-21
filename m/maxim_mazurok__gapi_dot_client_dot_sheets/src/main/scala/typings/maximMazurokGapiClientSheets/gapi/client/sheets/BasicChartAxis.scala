@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BasicChartAxis extends StObject {
   
-  /** The format of the title. Only valid if the axis is not associated with the domain. */
+  /** The format of the title. Only valid if the axis is not associated with the domain. The link field is not supported. */
   var format: js.UndefOr[TextFormat] = js.undefined
   
   /** The position of this axis. */

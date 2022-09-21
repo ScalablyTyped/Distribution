@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.WebXRBackgroundRemover")
 @js.native
-class WebXRBackgroundRemover protected ()
+open class WebXRBackgroundRemover protected ()
   extends StObject
      with typings.babylonjs.BABYLON.WebXRBackgroundRemover {
   /**
@@ -38,7 +38,7 @@ object WebXRBackgroundRemover {
     */
   @JSGlobal("BABYLON.WebXRBackgroundRemover.Name")
   @js.native
-  val Name: String = js.native
+  val Name: /* "xr-background-remover" */ String = js.native
   
   /**
     * The (Babylon) version of this module.
@@ -47,5 +47,5 @@ object WebXRBackgroundRemover {
     */
   @JSGlobal("BABYLON.WebXRBackgroundRemover.Version")
   @js.native
-  val Version: Double = js.native
+  val Version: /* 1 */ Double = js.native
 }

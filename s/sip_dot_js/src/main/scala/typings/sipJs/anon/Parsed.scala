@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Parsed extends StObject {
   
-  var parsed: js.UndefOr[js.Any] = js.undefined
+  var parsed: js.UndefOr[Any] = js.undefined
   
   var raw: String
 }
@@ -19,7 +19,7 @@ object Parsed {
   
   extension [Self <: Parsed](x: Self) {
     
-    inline def setParsed(value: js.Any): Self = StObject.set(x, "parsed", value.asInstanceOf[js.Any])
+    inline def setParsed(value: Any): Self = StObject.set(x, "parsed", value.asInstanceOf[js.Any])
     
     inline def setParsedUndefined: Self = StObject.set(x, "parsed", js.undefined)
     

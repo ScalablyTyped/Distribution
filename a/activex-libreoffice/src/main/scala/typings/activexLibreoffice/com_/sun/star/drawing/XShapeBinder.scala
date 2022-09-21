@@ -29,7 +29,7 @@ object XShapeBinder {
   inline def apply(
     acquire: () => Unit,
     bind: XShapes => XShape,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     unbind: XShape => Unit
   ): XShapeBinder = {

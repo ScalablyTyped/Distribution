@@ -17,7 +17,6 @@ import typings.jasmine.jasmine.FunctionMatchers
 import typings.jasmine.jasmine.HtmlReporter
 import typings.jasmine.jasmine.HtmlSpecFilter
 import typings.jasmine.jasmine.Matchers
-import typings.jasmine.jasmine.MatchersUtil
 import typings.jasmine.jasmine.NothingMatcher
 import typings.jasmine.jasmine.ObjectContaining
 import typings.jasmine.jasmine.Spy
@@ -29,8 +28,8 @@ import typings.jasmine.jasmineStrings.get
 import typings.jasmine.jasmineStrings.objectContaining_
 import typings.jasmine.jasmineStrings.set
 import typings.std.ArrayLike
-import typings.std.RegExp
-import typings.std.Symbol
+import typings.std.Map
+import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,7 +37,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object global {
   
   /**
-    * Run some shared teardown once before all of the specs in the describe are run.
+    * Run some shared teardown once after all of the specs in the describe are run.
     * Note: Be careful, sharing the teardown from a afterAll makes it easy to accidentally leak state between your specs so that they erroneously pass or fail.
     * @param action Function that contains the code to teardown your specs.
     * @param timeout Custom timeout for an async afterAll
@@ -119,7 +118,7 @@ object global {
     * @param e Reason for the failure
     */
   inline def fail(): Unit = js.Dynamic.global.applyDynamic("fail")().asInstanceOf[Unit]
-  inline def fail(e: js.Any): Unit = js.Dynamic.global.applyDynamic("fail")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def fail(e: Any): Unit = js.Dynamic.global.applyDynamic("fail")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * A focused `describe`. If suites or specs are focused, only those that are focused will be executed.
@@ -165,6 +164,9 @@ object global {
     def DEFAULT_TIMEOUT_INTERVAL: Double = js.native
     inline def DEFAULT_TIMEOUT_INTERVAL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_TIMEOUT_INTERVAL")(x.asInstanceOf[js.Any])
     
+    /**
+      * @deprecated Private method that may be changed or removed in the future
+      */
     inline def DiffBuilder(): typings.jasmine.jasmine.DiffBuilder = ^.asInstanceOf[js.Dynamic].applyDynamic("DiffBuilder")().asInstanceOf[typings.jasmine.jasmine.DiffBuilder]
     
     @JSGlobal("jasmine.HtmlReporter")
@@ -188,7 +190,7 @@ object global {
     inline def MAX_PRETTY_PRINT_ARRAY_LENGTH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_PRETTY_PRINT_ARRAY_LENGTH")(x.asInstanceOf[js.Any])
     
     /**
-      * Maximum number of charasters to display when pretty printing objects.
+      * Maximum number of characters to display when pretty printing objects.
       * Characters past this number will be ellipised.
       */
     @JSGlobal("jasmine.MAX_PRETTY_PRINT_CHARS")
@@ -219,16 +221,18 @@ object global {
     
     inline def addMatchers(matchers: CustomMatcherFactories): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addMatchers")(matchers.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
+    inline def addSpyStrategy[Fn /* <: Func */](name: String, factory: Fn): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addSpyStrategy")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def any(aclass: js.Symbol): AsymmetricMatcher[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("any")(aclass.asInstanceOf[js.Any]).asInstanceOf[AsymmetricMatcher[Any]]
     /**
       * That will succeed if the actual value being compared is an instance of the specified class/constructor.
       */
-    inline def any(aclass: Constructor): AsymmetricMatcher[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("any")(aclass.asInstanceOf[js.Any]).asInstanceOf[AsymmetricMatcher[js.Any]]
-    inline def any(aclass: Symbol): AsymmetricMatcher[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("any")(aclass.asInstanceOf[js.Any]).asInstanceOf[AsymmetricMatcher[js.Any]]
+    inline def any(aclass: Constructor): AsymmetricMatcher[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("any")(aclass.asInstanceOf[js.Any]).asInstanceOf[AsymmetricMatcher[Any]]
     
     /**
       * That will succeed if the actual value being compared is not `null` and not `undefined`.
       */
-    inline def anything(): AsymmetricMatcher[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("anything")().asInstanceOf[AsymmetricMatcher[js.Any]]
+    inline def anything(): AsymmetricMatcher[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("anything")().asInstanceOf[AsymmetricMatcher[Any]]
     
     inline def arrayContaining[T](sample: typings.jasmine.jasmine.ArrayLike[T]): ArrayContaining[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayContaining")(sample.asInstanceOf[js.Any]).asInstanceOf[ArrayContaining[T]]
     
@@ -241,33 +245,37 @@ object global {
     inline def createSpy[Fn /* <: Func */](name: String, originalFn: Fn): Spy[Fn] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSpy")(name.asInstanceOf[js.Any], originalFn.asInstanceOf[js.Any])).asInstanceOf[Spy[Fn]]
     inline def createSpy[Fn /* <: Func */](name: Unit, originalFn: Fn): Spy[Fn] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSpy")(name.asInstanceOf[js.Any], originalFn.asInstanceOf[js.Any])).asInstanceOf[Spy[Fn]]
     
-    inline def createSpyObj(baseName: String, methodNames: SpyObjMethodNames[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createSpyObj")(baseName.asInstanceOf[js.Any], methodNames.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def createSpyObj(baseName: String, methodNames: SpyObjMethodNames[Unit], propertyNames: SpyObjPropertyNames[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createSpyObj")(baseName.asInstanceOf[js.Any], methodNames.asInstanceOf[js.Any], propertyNames.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def createSpyObj(methodNames: SpyObjMethodNames[Unit]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createSpyObj")(methodNames.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def createSpyObj(methodNames: SpyObjMethodNames[Unit], propertyNames: SpyObjPropertyNames[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createSpyObj")(methodNames.asInstanceOf[js.Any], propertyNames.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def createSpyObj(baseName: String, methodNames: SpyObjMethodNames[Unit]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createSpyObj")(baseName.asInstanceOf[js.Any], methodNames.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def createSpyObj(baseName: String, methodNames: SpyObjMethodNames[Unit], propertyNames: SpyObjPropertyNames[Unit]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createSpyObj")(baseName.asInstanceOf[js.Any], methodNames.asInstanceOf[js.Any], propertyNames.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def createSpyObj(methodNames: SpyObjMethodNames[Unit]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createSpyObj")(methodNames.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def createSpyObj(methodNames: SpyObjMethodNames[Unit], propertyNames: SpyObjPropertyNames[Unit]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createSpyObj")(methodNames.asInstanceOf[js.Any], propertyNames.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     inline def createSpyObj_T_SpyObj[T](baseName: String, methodNames: SpyObjMethodNames[T]): SpyObj[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSpyObj")(baseName.asInstanceOf[js.Any], methodNames.asInstanceOf[js.Any])).asInstanceOf[SpyObj[T]]
     inline def createSpyObj_T_SpyObj[T](baseName: String, methodNames: SpyObjMethodNames[T], propertyNames: SpyObjPropertyNames[T]): SpyObj[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSpyObj")(baseName.asInstanceOf[js.Any], methodNames.asInstanceOf[js.Any], propertyNames.asInstanceOf[js.Any])).asInstanceOf[SpyObj[T]]
     inline def createSpyObj_T_SpyObj[T](methodNames: SpyObjMethodNames[T]): SpyObj[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createSpyObj")(methodNames.asInstanceOf[js.Any]).asInstanceOf[SpyObj[T]]
     inline def createSpyObj_T_SpyObj[T](methodNames: SpyObjMethodNames[T], propertyNames: SpyObjPropertyNames[T]): SpyObj[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSpyObj")(methodNames.asInstanceOf[js.Any], propertyNames.asInstanceOf[js.Any])).asInstanceOf[SpyObj[T]]
     
+    inline def debugLog(msg: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debugLog")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
     /**
       * That will succeed if the actual value being compared is empty.
       * @since 3.1.0
       */
-    inline def empty(): AsymmetricMatcher[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[AsymmetricMatcher[js.Any]]
+    inline def empty(): AsymmetricMatcher[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[AsymmetricMatcher[Any]]
     
     object errors {
       
       @JSGlobal("jasmine.errors.ExpectationFailed")
       @js.native
-      class ExpectationFailed ()
+      open class ExpectationFailed ()
         extends StObject
            with typings.jasmine.jasmine.errors.ExpectationFailed {
         
+        /* standard es5 */
         /* CompleteClass */
         var message: String = js.native
         
+        /* standard es5 */
         /* CompleteClass */
         var name: String = js.native
       }
@@ -277,22 +285,29 @@ object global {
       * That will succeed if the actual value being compared is  `null`, `undefined`, `0`, `false` or anything falsey.
       * @since 3.1.0
       */
-    inline def falsy(): AsymmetricMatcher[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("falsy")().asInstanceOf[AsymmetricMatcher[js.Any]]
+    inline def falsy(): AsymmetricMatcher[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("falsy")().asInstanceOf[AsymmetricMatcher[Any]]
     
+    /**
+      * @deprecated Private method that may be changed or removed in the future
+      */
     inline def formatErrorMsg(domain: String, usage: String): js.Function1[/* msg */ String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatErrorMsg")(domain.asInstanceOf[js.Any], usage.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* msg */ String, String]]
     
     inline def getEnv(): Env = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnv")().asInstanceOf[Env]
     
-    @JSGlobal("jasmine.matchersUtil")
-    @js.native
-    def matchersUtil: MatchersUtil = js.native
-    inline def matchersUtil_=(x: MatchersUtil): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("matchersUtil")(x.asInstanceOf[js.Any])
+    /**
+      * Determines whether the provided function is a Jasmine spy.
+      * @since 2.0.0
+      * @param putativeSpy The function to check.
+      */
+    inline def isSpy(putativeSpy: Func): /* is jasmine.jasmine.Spy<jasmine.jasmine.Func> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSpy")(putativeSpy.asInstanceOf[js.Any]).asInstanceOf[/* is jasmine.jasmine.Spy<jasmine.jasmine.Func> */ Boolean]
+    
+    inline def mapContaining[K, V](sample: Map[K, V]): AsymmetricMatcher[Map[K, V]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapContaining")(sample.asInstanceOf[js.Any]).asInstanceOf[AsymmetricMatcher[Map[K, V]]]
     
     /**
       * That will succeed if the actual value being compared is not empty.
       * @since 3.1.0
       */
-    inline def notEmpty(): AsymmetricMatcher[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("notEmpty")().asInstanceOf[AsymmetricMatcher[js.Any]]
+    inline def notEmpty(): AsymmetricMatcher[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("notEmpty")().asInstanceOf[AsymmetricMatcher[Any]]
     
     inline def objectContaining[T](
       sample: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -300,18 +315,30 @@ object global {
       */ objectContaining_ & TopLevel[T]
     ): ObjectContaining[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("objectContaining")(sample.asInstanceOf[js.Any]).asInstanceOf[ObjectContaining[T]]
     
-    inline def pp(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pp")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def setContaining[T](sample: Set[T]): AsymmetricMatcher[Set[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("setContaining")(sample.asInstanceOf[js.Any]).asInstanceOf[AsymmetricMatcher[Set[T]]]
     
-    inline def setDefaultSpyStrategy[Fn /* <: Func */](and: SpyAnd[Fn]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultSpyStrategy")(and.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setDefaultSpyStrategy[Fn /* <: Func */](): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultSpyStrategy")().asInstanceOf[Unit]
+    inline def setDefaultSpyStrategy[Fn /* <: Func */](fn: js.Function1[/* and */ SpyAnd[Fn], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultSpyStrategy")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    inline def spyOnGlobalErrorsAsync(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("spyOnGlobalErrorsAsync")().asInstanceOf[js.Promise[Unit]]
+    inline def spyOnGlobalErrorsAsync(fn: js.Function1[/* globalErrorSpy */ js.Error, js.Promise[Unit]]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("spyOnGlobalErrorsAsync")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    
+    inline def stringContaining(str: String): AsymmetricMatcher[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("stringContaining")(str.asInstanceOf[js.Any]).asInstanceOf[AsymmetricMatcher[String]]
+    inline def stringContaining(str: js.RegExp): AsymmetricMatcher[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("stringContaining")(str.asInstanceOf[js.Any]).asInstanceOf[AsymmetricMatcher[String]]
     
     inline def stringMatching(str: String): AsymmetricMatcher[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("stringMatching")(str.asInstanceOf[js.Any]).asInstanceOf[AsymmetricMatcher[String]]
-    inline def stringMatching(str: RegExp): AsymmetricMatcher[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("stringMatching")(str.asInstanceOf[js.Any]).asInstanceOf[AsymmetricMatcher[String]]
+    inline def stringMatching(str: js.RegExp): AsymmetricMatcher[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("stringMatching")(str.asInstanceOf[js.Any]).asInstanceOf[AsymmetricMatcher[String]]
     
     /**
       * That will succeed if the actual value being compared is `true` or anything truthy.
       * @since 3.1.0
       */
-    inline def truthy(): AsymmetricMatcher[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("truthy")().asInstanceOf[AsymmetricMatcher[js.Any]]
+    inline def truthy(): AsymmetricMatcher[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("truthy")().asInstanceOf[AsymmetricMatcher[Any]]
+    
+    @JSGlobal("jasmine.version")
+    @js.native
+    def version: String = js.native
+    inline def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -322,21 +349,19 @@ object global {
   inline def pending(): Unit = js.Dynamic.global.applyDynamic("pending")().asInstanceOf[Unit]
   inline def pending(reason: String): Unit = js.Dynamic.global.applyDynamic("pending")(reason.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def runs(asyncMethod: js.Function): Unit = js.Dynamic.global.applyDynamic("runs")(asyncMethod.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  
   /**
     * Sets a user-defined property that will be provided to reporters as
     * part of the properties field of SpecResult.
     * @since 3.6.0
     */
-  inline def setSpecProperty(key: String, value: js.Any): Unit = (js.Dynamic.global.applyDynamic("setSpecProperty")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setSpecProperty(key: String, value: Any): Unit = (js.Dynamic.global.applyDynamic("setSpecProperty")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sets a user-defined property that will be provided to reporters as
     * part of the properties field of SuiteResult.
     * @since 3.6.0
     */
-  inline def setSuiteProperty(key: String, value: js.Any): Unit = (js.Dynamic.global.applyDynamic("setSuiteProperty")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setSuiteProperty(key: String, value: Any): Unit = (js.Dynamic.global.applyDynamic("setSuiteProperty")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Install a spy onto an existing object.
@@ -344,16 +369,18 @@ object global {
     * @param method The name of the method to replace with a `Spy`.
     */
   inline def spyOn[T, K /* <: /* keyof T */ String */](`object`: T, method: K): Spy[
-    (js.Function1[/* args */ js.Any, js.Any]) | (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any)
+    (js.Function1[/* args */ Any, Any]) | (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any)
   ] = (js.Dynamic.global.applyDynamic("spyOn")(`object`.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Spy[
-    (js.Function1[/* args */ js.Any, js.Any]) | (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any)
+    (js.Function1[/* args */ Any, Any]) | (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any)
   ]]
   
   /**
     * Installs spies on all writable and configurable properties of an object.
     * @param object The object upon which to install the `Spy`s.
+    * @param includeNonEnumerable Whether or not to add spies to non-enumerable properties.
     */
   inline def spyOnAllFunctions[T](`object`: T): SpyObj[T] = js.Dynamic.global.applyDynamic("spyOnAllFunctions")(`object`.asInstanceOf[js.Any]).asInstanceOf[SpyObj[T]]
+  inline def spyOnAllFunctions[T](`object`: T, includeNonEnumerable: Boolean): SpyObj[T] = (js.Dynamic.global.applyDynamic("spyOnAllFunctions")(`object`.asInstanceOf[js.Any], includeNonEnumerable.asInstanceOf[js.Any])).asInstanceOf[SpyObj[T]]
   
   /**
     * Install a spy on a property installed with `Object.defineProperty` onto an existing object.
@@ -361,19 +388,43 @@ object global {
     * @param property The name of the property to replace with a `Spy`.
     * @param accessType The access type (get|set) of the property to `Spy` on.
     */
-  inline def spyOnProperty[T](`object`: T, property: /* keyof T */ String): Spy[Func] = (js.Dynamic.global.applyDynamic("spyOnProperty")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Spy[Func]]
+  inline def spyOnProperty[T, K /* <: /* keyof T */ String */](`object`: T, property: K): Spy[
+    js.ThisFunction0[
+      /* this */ T, 
+      /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+    ]
+  ] = (js.Dynamic.global.applyDynamic("spyOnProperty")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Spy[
+    js.ThisFunction0[
+      /* this */ T, 
+      /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+    ]
+  ]]
   
-  inline def spyOnProperty_get[T](`object`: T, property: /* keyof T */ String, accessType: get): Spy[Func] = (js.Dynamic.global.applyDynamic("spyOnProperty")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], accessType.asInstanceOf[js.Any])).asInstanceOf[Spy[Func]]
+  inline def spyOnProperty_get[T, K /* <: /* keyof T */ String */](`object`: T, property: K, accessType: get): Spy[
+    js.ThisFunction0[
+      /* this */ T, 
+      /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+    ]
+  ] = (js.Dynamic.global.applyDynamic("spyOnProperty")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], accessType.asInstanceOf[js.Any])).asInstanceOf[Spy[
+    js.ThisFunction0[
+      /* this */ T, 
+      /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+    ]
+  ]]
   
-  inline def spyOnProperty_set[T](`object`: T, property: /* keyof T */ String, accessType: set): Spy[Func] = (js.Dynamic.global.applyDynamic("spyOnProperty")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], accessType.asInstanceOf[js.Any])).asInstanceOf[Spy[Func]]
-  
-  inline def waits(): Unit = js.Dynamic.global.applyDynamic("waits")().asInstanceOf[Unit]
-  inline def waits(timeout: Double): Unit = js.Dynamic.global.applyDynamic("waits")(timeout.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  
-  inline def waitsFor(latchMethod: js.Function0[Boolean]): Unit = js.Dynamic.global.applyDynamic("waitsFor")(latchMethod.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def waitsFor(latchMethod: js.Function0[Boolean], failureMessage: String): Unit = (js.Dynamic.global.applyDynamic("waitsFor")(latchMethod.asInstanceOf[js.Any], failureMessage.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def waitsFor(latchMethod: js.Function0[Boolean], failureMessage: String, timeout: Double): Unit = (js.Dynamic.global.applyDynamic("waitsFor")(latchMethod.asInstanceOf[js.Any], failureMessage.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def waitsFor(latchMethod: js.Function0[Boolean], failureMessage: Unit, timeout: Double): Unit = (js.Dynamic.global.applyDynamic("waitsFor")(latchMethod.asInstanceOf[js.Any], failureMessage.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def spyOnProperty_set[T, K /* <: /* keyof T */ String */](`object`: T, property: K, accessType: set): Spy[
+    js.ThisFunction1[
+      /* this */ T, 
+      /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ /* value */ js.Any, 
+      Unit
+    ]
+  ] = (js.Dynamic.global.applyDynamic("spyOnProperty")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], accessType.asInstanceOf[js.Any])).asInstanceOf[Spy[
+    js.ThisFunction1[
+      /* this */ T, 
+      /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ /* value */ js.Any, 
+      Unit
+    ]
+  ]]
   
   /**
     * A temporarily disabled `describe`. Specs within an xdescribe will be marked pending and not executed.

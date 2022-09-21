@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.Component
 import typings.react.mod.ElementType
 import typings.react.mod.HTMLAttributes
-import typings.reactstrap.mod.CSSModule
+import typings.reactstrap.utilsMod.CSSModule
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,17 +12,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mediaMod {
   
-  @JSImport("reactstrap/lib/Media", JSImport.Default)
+  @JSImport("reactstrap/types/lib/Media", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[MediaProps, js.Object, js.Any]
+  open class default ()
+    extends Component[MediaProps, js.Object, Any]
   
-  type Media = Component[MediaProps, js.Object, js.Any]
+  type Media = Component[MediaProps, js.Object, Any]
   
   trait MediaProps
     extends StObject
        with HTMLAttributes[HTMLElement]
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var alt: js.UndefOr[String] = js.undefined
     
@@ -48,7 +48,7 @@ object mediaMod {
     
     var src: js.UndefOr[String] = js.undefined
     
-    var tag: js.UndefOr[ElementType[js.Any]] = js.undefined
+    var tag: js.UndefOr[ElementType[Any]] = js.undefined
     
     var top: js.UndefOr[Boolean] = js.undefined
   }
@@ -109,7 +109,7 @@ object mediaMod {
       
       inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
       
-      inline def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: ElementType[Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
       inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
       

@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_logging
 
-Typings are for version 2.0.20201114
+Typings are for version 2.0.20220805
 
 ## Library description:
 TypeScript typings for Cloud Logging API v2
@@ -10,10 +10,10 @@ TypeScript typings for Cloud Logging API v2
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.logging |
 | Keywords           | - |
-| # releases         | 11 |
-| # dependents       | 1 |
-| # downloads        | 1067 |
-| # stars            | 0 |
+| # releases         | 60 |
+| # dependents       | 0.0 |
+| # downloads        | 961.3333333333334 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

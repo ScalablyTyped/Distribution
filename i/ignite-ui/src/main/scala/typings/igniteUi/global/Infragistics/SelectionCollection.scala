@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.SelectionCollection")
 @js.native
-class SelectionCollection protected ()
+open class SelectionCollection protected ()
   extends StObject
      with typings.igniteUi.Infragistics.SelectionCollection {
   def this(settings: SelectionCollectionSettings) = this()

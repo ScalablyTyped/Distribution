@@ -1,30 +1,32 @@
 package typings.zetapushJs.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.zetapushJs.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def VERSION: java.lang.String = typings.zetapushJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("VERSION").asInstanceOf[java.lang.String]
+inline def VERSION: String = ^.asInstanceOf[js.Dynamic].selectDynamic("VERSION").asInstanceOf[String]
 
 type AsyncMacroServicePublisher = js.Function4[
-/* method */ java.lang.String, 
-/* parameters */ js.UndefOr[typings.zetapushJs.mod.PublishParameters], 
-/* hardFail */ js.UndefOr[scala.Boolean], 
-/* debug */ js.UndefOr[scala.Double], 
-js.Promise[js.Any]]
+/* method */ String, 
+/* parameters */ js.UndefOr[PublishParameters], 
+/* hardFail */ js.UndefOr[Boolean], 
+/* debug */ js.UndefOr[Double], 
+js.Promise[Any]]
 
-type AuthenticationCallback = js.Function0[typings.zetapushJs.mod.AbstractHandshake]
+type AuthenticationCallback = js.Function0[AbstractHandshake]
 
-type ConnectionStatusHandler = scala.Double
+type ConnectionStatusHandler = Double
 
 type MacroServicePublisher = js.Function4[
-/* method */ java.lang.String, 
-/* parameters */ js.UndefOr[typings.zetapushJs.mod.PublishParameters], 
-/* hardFail */ js.UndefOr[scala.Boolean], 
-/* debug */ js.UndefOr[scala.Double], 
-scala.Unit]
+/* method */ String, 
+/* parameters */ js.UndefOr[PublishParameters], 
+/* hardFail */ js.UndefOr[Boolean], 
+/* debug */ js.UndefOr[Double], 
+Unit]
 
-type PublishParameters = org.scalablytyped.runtime.StringDictionary[js.Any]
+type PublishParameters = StringDictionary[Any]
 
-type ServicePublisher = js.Function2[/* method */ java.lang.String, /* parameters */ js.Any, scala.Unit]
+type ServicePublisher = js.Function2[/* method */ String, /* parameters */ Any, Unit]

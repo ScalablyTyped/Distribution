@@ -164,7 +164,7 @@ object JQueryGlide {
       * False for not appending arrows
       * Id or class name (e.g. '.class-name') for appending to specific HTML markup
       */
-    var arrows: js.UndefOr[js.Any] = js.undefined
+    var arrows: js.UndefOr[Any] = js.undefined
     
     /**
       * Default: 'slider-arrows'
@@ -176,7 +176,7 @@ object JQueryGlide {
       * Default: 4000
       * {Int or Bool} False for turning off autoplay
       */
-    var autoplay: js.UndefOr[js.Any] = js.undefined
+    var autoplay: js.UndefOr[Any] = js.undefined
     
     /**
       * Default: function () {}
@@ -213,7 +213,7 @@ object JQueryGlide {
       * False for not appending arrows
       * Id or class name (e.g. '.class-name') for appending to specific HTML markup
       */
-    var navigation: js.UndefOr[js.Any] = js.undefined
+    var navigation: js.UndefOr[Any] = js.undefined
     
     /**
       * Default: true
@@ -243,7 +243,7 @@ object JQueryGlide {
       * Default: 60
       * {Int or Bool} Touch settings
       */
-    var touchDistance: js.UndefOr[js.Any] = js.undefined
+    var touchDistance: js.UndefOr[Any] = js.undefined
   }
   object IGlideOptions {
     
@@ -290,7 +290,7 @@ object JQueryGlide {
       
       inline def setArrowRightTextUndefined: Self = StObject.set(x, "arrowRightText", js.undefined)
       
-      inline def setArrows(value: js.Any): Self = StObject.set(x, "arrows", value.asInstanceOf[js.Any])
+      inline def setArrows(value: Any): Self = StObject.set(x, "arrows", value.asInstanceOf[js.Any])
       
       inline def setArrowsUndefined: Self = StObject.set(x, "arrows", js.undefined)
       
@@ -298,7 +298,7 @@ object JQueryGlide {
       
       inline def setArrowsWrapperClassUndefined: Self = StObject.set(x, "arrowsWrapperClass", js.undefined)
       
-      inline def setAutoplay(value: js.Any): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
+      inline def setAutoplay(value: Any): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
       
       inline def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
       
@@ -322,7 +322,7 @@ object JQueryGlide {
       
       inline def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
       
-      inline def setNavigation(value: js.Any): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
+      inline def setNavigation(value: Any): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
       
       inline def setNavigationCenter(value: Boolean): Self = StObject.set(x, "navigationCenter", value.asInstanceOf[js.Any])
       
@@ -342,7 +342,7 @@ object JQueryGlide {
       
       inline def setNavigationUndefined: Self = StObject.set(x, "navigation", js.undefined)
       
-      inline def setTouchDistance(value: js.Any): Self = StObject.set(x, "touchDistance", value.asInstanceOf[js.Any])
+      inline def setTouchDistance(value: Any): Self = StObject.set(x, "touchDistance", value.asInstanceOf[js.Any])
       
       inline def setTouchDistanceUndefined: Self = StObject.set(x, "touchDistance", js.undefined)
     }

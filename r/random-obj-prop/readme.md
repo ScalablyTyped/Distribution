@@ -1,7 +1,7 @@
 
 # Scala.js typings for random-obj-prop
 
-Typings are for version 2.0.0
+Typings are for version 3.0.0
 
 ## Library description:
 Get a random property from an object
@@ -10,10 +10,10 @@ Get a random property from an object
 | ------------------ | :-------------: |
 | Full name          | random-obj-prop |
 | Keywords           | random, randomize, math, object, property, prop, pick, select, choice |
-| # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 1704 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 212.66666666666666 |
+| # stars            | 11.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/random-obj-prop#readme)

@@ -27,6 +27,6 @@ object ListOutpostsOutput {
     
     inline def setOutpostsUndefined: Self = StObject.set(x, "Outposts", js.undefined)
     
-    inline def setOutpostsVarargs(value: Outpost*): Self = StObject.set(x, "Outposts", js.Array(value :_*))
+    inline def setOutpostsVarargs(value: Outpost*): Self = StObject.set(x, "Outposts", js.Array(value*))
   }
 }

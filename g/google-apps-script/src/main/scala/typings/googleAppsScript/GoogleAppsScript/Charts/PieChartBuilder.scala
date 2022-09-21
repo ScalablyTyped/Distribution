@@ -48,7 +48,7 @@ trait PieChartBuilder extends StObject {
   
   def setLegendTextStyle(textStyle: TextStyle): PieChartBuilder = js.native
   
-  def setOption(option: String, value: js.Any): PieChartBuilder = js.native
+  def setOption(option: String, value: Any): PieChartBuilder = js.native
   
   def setTitle(chartTitle: String): PieChartBuilder = js.native
   

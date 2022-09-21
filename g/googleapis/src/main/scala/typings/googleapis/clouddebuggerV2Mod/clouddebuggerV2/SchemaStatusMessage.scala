@@ -4,13 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Represents a contextual status message. The message can indicate an error
-  * or informational status, and refer to specific parts of the containing
-  * object. For example, the `Breakpoint.status` field can indicate an error
-  * referring to the `BREAKPOINT_SOURCE_LOCATION` with the message `Location
-  * not found`.
-  */
 trait SchemaStatusMessage extends StObject {
   
   /**
@@ -21,12 +14,12 @@ trait SchemaStatusMessage extends StObject {
   /**
     * Distinguishes errors from informational messages.
     */
-  var isError: js.UndefOr[Boolean] = js.undefined
+  var isError: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * Reference to which the message applies.
     */
-  var refersTo: js.UndefOr[String] = js.undefined
+  var refersTo: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaStatusMessage {
   
@@ -43,9 +36,13 @@ object SchemaStatusMessage {
     
     inline def setIsError(value: Boolean): Self = StObject.set(x, "isError", value.asInstanceOf[js.Any])
     
+    inline def setIsErrorNull: Self = StObject.set(x, "isError", null)
+    
     inline def setIsErrorUndefined: Self = StObject.set(x, "isError", js.undefined)
     
     inline def setRefersTo(value: String): Self = StObject.set(x, "refersTo", value.asInstanceOf[js.Any])
+    
+    inline def setRefersToNull: Self = StObject.set(x, "refersTo", null)
     
     inline def setRefersToUndefined: Self = StObject.set(x, "refersTo", js.undefined)
   }

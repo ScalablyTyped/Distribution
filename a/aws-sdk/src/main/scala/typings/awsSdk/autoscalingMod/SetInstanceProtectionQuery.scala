@@ -9,7 +9,7 @@ trait SetInstanceProtectionQuery extends StObject {
   /**
     * The name of the Auto Scaling group.
     */
-  var AutoScalingGroupName: ResourceName
+  var AutoScalingGroupName: XmlStringMaxLen255
   
   /**
     * One or more instance IDs. You can specify up to 50 instances.
@@ -24,7 +24,7 @@ trait SetInstanceProtectionQuery extends StObject {
 object SetInstanceProtectionQuery {
   
   inline def apply(
-    AutoScalingGroupName: ResourceName,
+    AutoScalingGroupName: XmlStringMaxLen255,
     InstanceIds: InstanceIds,
     ProtectedFromScaleIn: ProtectedFromScaleIn
   ): SetInstanceProtectionQuery = {
@@ -34,11 +34,11 @@ object SetInstanceProtectionQuery {
   
   extension [Self <: SetInstanceProtectionQuery](x: Self) {
     
-    inline def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
+    inline def setAutoScalingGroupName(value: XmlStringMaxLen255): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     
     inline def setInstanceIds(value: InstanceIds): Self = StObject.set(x, "InstanceIds", value.asInstanceOf[js.Any])
     
-    inline def setInstanceIdsVarargs(value: XmlStringMaxLen19*): Self = StObject.set(x, "InstanceIds", js.Array(value :_*))
+    inline def setInstanceIdsVarargs(value: XmlStringMaxLen19*): Self = StObject.set(x, "InstanceIds", js.Array(value*))
     
     inline def setProtectedFromScaleIn(value: ProtectedFromScaleIn): Self = StObject.set(x, "ProtectedFromScaleIn", value.asInstanceOf[js.Any])
   }

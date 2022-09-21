@@ -43,7 +43,7 @@ object AnalyzeDocumentResponse {
     
     inline def setBlocksUndefined: Self = StObject.set(x, "Blocks", js.undefined)
     
-    inline def setBlocksVarargs(value: Block*): Self = StObject.set(x, "Blocks", js.Array(value :_*))
+    inline def setBlocksVarargs(value: Block*): Self = StObject.set(x, "Blocks", js.Array(value*))
     
     inline def setDocumentMetadata(value: DocumentMetadata): Self = StObject.set(x, "DocumentMetadata", value.asInstanceOf[js.Any])
     

@@ -65,7 +65,7 @@ object anon {
       
       inline def setValuesVarargs(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: TParams[keyof TParams] */ js.Any)*
-      ): Self = StObject.set(x, "values", js.Array(value :_*))
+      ): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
   
@@ -101,7 +101,7 @@ object anon {
       
       inline def setValuesVarargs(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: TParams[keyof TParams] */ js.Any)*
-      ): Self = StObject.set(x, "values", js.Array(value :_*))
+      ): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
 }

@@ -12,6 +12,11 @@ trait TrafficMirrorTarget extends StObject {
   var Description: js.UndefOr[String] = js.undefined
   
   /**
+    * The ID of the Gateway Load Balancer endpoint.
+    */
+  var GatewayLoadBalancerEndpointId: js.UndefOr[String] = js.undefined
+  
+  /**
     * The network interface ID that is attached to the target.
     */
   var NetworkInterfaceId: js.UndefOr[String] = js.undefined
@@ -54,6 +59,10 @@ object TrafficMirrorTarget {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
+    inline def setGatewayLoadBalancerEndpointId(value: String): Self = StObject.set(x, "GatewayLoadBalancerEndpointId", value.asInstanceOf[js.Any])
+    
+    inline def setGatewayLoadBalancerEndpointIdUndefined: Self = StObject.set(x, "GatewayLoadBalancerEndpointId", js.undefined)
+    
     inline def setNetworkInterfaceId(value: String): Self = StObject.set(x, "NetworkInterfaceId", value.asInstanceOf[js.Any])
     
     inline def setNetworkInterfaceIdUndefined: Self = StObject.set(x, "NetworkInterfaceId", js.undefined)
@@ -70,7 +79,7 @@ object TrafficMirrorTarget {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setTrafficMirrorTargetId(value: String): Self = StObject.set(x, "TrafficMirrorTargetId", value.asInstanceOf[js.Any])
     

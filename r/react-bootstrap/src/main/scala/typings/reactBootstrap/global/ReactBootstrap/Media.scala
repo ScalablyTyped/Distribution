@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ReactBootstrap.Media")
 @js.native
-class Media ()
+open class Media ()
   extends typings.reactBootstrap.mod.Media
 object Media {
   
@@ -18,7 +18,7 @@ object Media {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ReactBootstrap.Media.Body")
   @js.native
-  class Body ()
+  open class Body ()
     extends typings.reactBootstrap.mediaBodyMod.^
   /* static member */
   @JSGlobal("ReactBootstrap.Media.Body")
@@ -29,7 +29,7 @@ object Media {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ReactBootstrap.Media.Heading")
   @js.native
-  class Heading ()
+  open class Heading ()
     extends typings.reactBootstrap.mediaHeadingMod.^
   /* static member */
   @JSGlobal("ReactBootstrap.Media.Heading")
@@ -40,7 +40,7 @@ object Media {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ReactBootstrap.Media.Left")
   @js.native
-  class Left ()
+  open class Left ()
     extends typings.reactBootstrap.mediaLeftMod.^
   /* static member */
   @JSGlobal("ReactBootstrap.Media.Left")
@@ -51,7 +51,7 @@ object Media {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ReactBootstrap.Media.List")
   @js.native
-  class List ()
+  open class List ()
     extends typings.reactBootstrap.mediaListMod.^
   /* static member */
   @JSGlobal("ReactBootstrap.Media.List")
@@ -61,7 +61,7 @@ object Media {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ReactBootstrap.Media.ListItem")
   @js.native
-  class ListItem ()
+  open class ListItem ()
     extends typings.reactBootstrap.mediaListItemMod.^
   /* static member */
   @JSGlobal("ReactBootstrap.Media.ListItem")
@@ -74,7 +74,7 @@ object Media {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("ReactBootstrap.Media.Right")
   @js.native
-  class Right ()
+  open class Right ()
     extends typings.reactBootstrap.mediaRightMod.^
   /* static member */
   @JSGlobal("ReactBootstrap.Media.Right")

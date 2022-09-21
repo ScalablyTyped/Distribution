@@ -1,12 +1,15 @@
 package typings.obliterator
 
+import typings.std.IterableIterator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("obliterator/permutations", JSImport.Namespace)
-@js.native
-object permutationsMod extends js.Object {
-  def default[T](array: js.Array[T], r: Double): typings.obliterator.iteratorMod.default[js.Array[T]] = js.native
+object permutationsMod {
+  
+  @JSImport("obliterator/permutations", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default[T](array: js.Array[T], r: Double): IterableIterator[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(array.asInstanceOf[js.Any], r.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[js.Array[T]]]
 }
-

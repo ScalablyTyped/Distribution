@@ -12,7 +12,7 @@ trait AgentInfo extends StObject {
   
   var expiration: Double
   
-  var metrics: js.Any
+  var metrics: Any
   
   var name: AgentName
   
@@ -28,7 +28,7 @@ object AgentInfo {
     creation_time: String,
     did: DID,
     expiration: Double,
-    metrics: js.Any,
+    metrics: Any,
     name: AgentName,
     url: AgentURL,
     verkey: Verkey
@@ -45,7 +45,7 @@ object AgentInfo {
     
     inline def setExpiration(value: Double): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
     
-    inline def setMetrics(value: js.Any): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+    inline def setMetrics(value: Any): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
     inline def setName(value: AgentName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

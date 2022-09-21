@@ -1,171 +1,498 @@
 package typings.navigo
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
-import typings.navigo.anon.As
-import typings.navigo.anon.Hooks
-import typings.std.RegExp
+import typings.navigo.navigoBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("navigo", JSImport.Namespace)
+  @JSImport("navigo", JSImport.Default)
   @js.native
-  /**
-    * Constructs the router
-    * @param root The main URL of your application.
-    * @param useHash If useHash set to true then the router uses an old routing approach with hash in the URL. Navigo anyways falls back to this mode if there is no History API supported.
-    */
-  class ^ ()
+  open class default protected ()
     extends StObject
        with Navigo {
     def this(root: String) = this()
-    def this(root: String, useHash: Boolean) = this()
-    def this(root: Null, useHash: Boolean) = this()
-    def this(root: Unit, useHash: Boolean) = this()
-    def this(root: String, useHash: Boolean, hash: String) = this()
-    def this(root: String, useHash: Unit, hash: String) = this()
-    def this(root: Null, useHash: Boolean, hash: String) = this()
-    def this(root: Null, useHash: Unit, hash: String) = this()
-    def this(root: Unit, useHash: Boolean, hash: String) = this()
-    def this(root: Unit, useHash: Unit, hash: String) = this()
+    def this(root: String, options: RouterOptions) = this()
   }
   
-  trait GenericHooks extends StObject {
+  type AfterHook = js.Function1[/* match */ Match, Unit]
+  
+  type AlreadyHook = js.Function1[/* match */ Match, Unit]
+  
+  type BeforeHook = js.Function2[/* done */ js.Function, /* match */ Match, Unit]
+  
+  trait GenerateOptions extends StObject {
     
-    var after: js.UndefOr[js.Function1[/* params */ js.UndefOr[Params], Unit]] = js.undefined
-    
-    var before: js.UndefOr[
-        js.Function2[
-          /* done */ js.Function1[/* suppress */ js.UndefOr[Boolean], Unit], 
-          /* params */ js.UndefOr[Params], 
-          Unit
-        ]
-      ] = js.undefined
+    var includeRoot: Boolean
   }
-  object GenericHooks {
+  object GenerateOptions {
     
-    inline def apply(): GenericHooks = {
+    inline def apply(includeRoot: Boolean): GenerateOptions = {
+      val __obj = js.Dynamic.literal(includeRoot = includeRoot.asInstanceOf[js.Any])
+      __obj.asInstanceOf[GenerateOptions]
+    }
+    
+    extension [Self <: GenerateOptions](x: Self) {
+      
+      inline def setIncludeRoot(value: Boolean): Self = StObject.set(x, "includeRoot", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type Handler = js.Function1[/* match */ js.UndefOr[Match], Unit]
+  
+  type LeaveHook = js.Function2[/* done */ js.Function, /* match */ Match | js.Array[Match], Unit]
+  
+  trait Match extends StObject {
+    
+    var data: StringDictionary[String] | Null
+    
+    var hashString: String
+    
+    var params: StringDictionary[String] | Null
+    
+    var queryString: String
+    
+    var route: Route
+    
+    var url: String
+  }
+  object Match {
+    
+    inline def apply(hashString: String, queryString: String, route: Route, url: String): Match = {
+      val __obj = js.Dynamic.literal(hashString = hashString.asInstanceOf[js.Any], queryString = queryString.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], data = null, params = null)
+      __obj.asInstanceOf[Match]
+    }
+    
+    extension [Self <: Match](x: Self) {
+      
+      inline def setData(value: StringDictionary[String]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setDataNull: Self = StObject.set(x, "data", null)
+      
+      inline def setHashString(value: String): Self = StObject.set(x, "hashString", value.asInstanceOf[js.Any])
+      
+      inline def setParams(value: StringDictionary[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      
+      inline def setParamsNull: Self = StObject.set(x, "params", null)
+      
+      inline def setQueryString(value: String): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
+      
+      inline def setRoute(value: Route): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+      
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait NavigateOptions extends StObject {
+    
+    var callHandler: js.UndefOr[Boolean] = js.undefined
+    
+    var callHooks: js.UndefOr[Boolean] = js.undefined
+    
+    var force: js.UndefOr[Boolean] = js.undefined
+    
+    var historyAPIMethod: js.UndefOr[String] = js.undefined
+    
+    var resolveOptions: js.UndefOr[ResolveOptions] = js.undefined
+    
+    var stateObj: js.UndefOr[js.Object] = js.undefined
+    
+    var title: js.UndefOr[String] = js.undefined
+    
+    var updateBrowserURL: js.UndefOr[Boolean] = js.undefined
+    
+    var updateState: js.UndefOr[Boolean] = js.undefined
+  }
+  object NavigateOptions {
+    
+    inline def apply(): NavigateOptions = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[GenericHooks]
+      __obj.asInstanceOf[NavigateOptions]
     }
     
-    extension [Self <: GenericHooks](x: Self) {
+    extension [Self <: NavigateOptions](x: Self) {
       
-      inline def setAfter(value: /* params */ js.UndefOr[Params] => Unit): Self = StObject.set(x, "after", js.Any.fromFunction1(value))
+      inline def setCallHandler(value: Boolean): Self = StObject.set(x, "callHandler", value.asInstanceOf[js.Any])
       
-      inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+      inline def setCallHandlerUndefined: Self = StObject.set(x, "callHandler", js.undefined)
       
-      inline def setBefore(
-        value: (/* done */ js.Function1[/* suppress */ js.UndefOr[Boolean], Unit], /* params */ js.UndefOr[Params]) => Unit
-      ): Self = StObject.set(x, "before", js.Any.fromFunction2(value))
+      inline def setCallHooks(value: Boolean): Self = StObject.set(x, "callHooks", value.asInstanceOf[js.Any])
       
-      inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+      inline def setCallHooksUndefined: Self = StObject.set(x, "callHooks", js.undefined)
+      
+      inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+      
+      inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+      
+      inline def setHistoryAPIMethod(value: String): Self = StObject.set(x, "historyAPIMethod", value.asInstanceOf[js.Any])
+      
+      inline def setHistoryAPIMethodUndefined: Self = StObject.set(x, "historyAPIMethod", js.undefined)
+      
+      inline def setResolveOptions(value: ResolveOptions): Self = StObject.set(x, "resolveOptions", value.asInstanceOf[js.Any])
+      
+      inline def setResolveOptionsUndefined: Self = StObject.set(x, "resolveOptions", js.undefined)
+      
+      inline def setStateObj(value: js.Object): Self = StObject.set(x, "stateObj", value.asInstanceOf[js.Any])
+      
+      inline def setStateObjUndefined: Self = StObject.set(x, "stateObj", js.undefined)
+      
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      
+      inline def setUpdateBrowserURL(value: Boolean): Self = StObject.set(x, "updateBrowserURL", value.asInstanceOf[js.Any])
+      
+      inline def setUpdateBrowserURLUndefined: Self = StObject.set(x, "updateBrowserURL", js.undefined)
+      
+      inline def setUpdateState(value: Boolean): Self = StObject.set(x, "updateState", value.asInstanceOf[js.Any])
+      
+      inline def setUpdateStateUndefined: Self = StObject.set(x, "updateState", js.undefined)
     }
   }
-  
-  type Keys = String
   
   @js.native
   trait Navigo extends StObject {
     
+    var __dirty: Boolean = js.native
+    
+    var __freezeListening: Boolean = js.native
+    
+    var __markAsClean: js.Function = js.native
+    
+    var __waiting: js.Array[js.Function] = js.native
+    
+    def _checkForAHash(path: String): String = js.native
+    
+    def _clean(path: String): String = js.native
+    
+    var _notFoundRoute: Route = js.native
+    
+    def _pathToMatchObject(path: String): Match = js.native
+    
+    def _setCurrent(current: js.Array[Match]): Unit = js.native
+    
+    def addAfterHook(route: String, hookFunction: js.Function): js.Function = js.native
+    def addAfterHook(route: Route, hookFunction: js.Function): js.Function = js.native
+    
+    def addAlreadyHook(route: String, hookFunction: js.Function): js.Function = js.native
+    def addAlreadyHook(route: Route, hookFunction: js.Function): js.Function = js.native
+    
+    def addBeforeHook(route: String, hookFunction: js.Function): js.Function = js.native
+    def addBeforeHook(route: Route, hookFunction: js.Function): js.Function = js.native
+    
+    def addLeaveHook(route: String, hookFunction: js.Function): js.Function = js.native
+    def addLeaveHook(route: Route, hookFunction: js.Function): js.Function = js.native
+    
+    var current: Null | js.Array[Match] = js.native
+    
     def destroy(): Unit = js.native
     
-    def disableIfAPINotAvailable(): Unit = js.native
+    var destroyed: Boolean = js.native
     
-    def generate(path: String): String = js.native
-    def generate(path: String, params: js.Any): String = js.native
+    def generate(name: String): String = js.native
+    def generate(name: String, data: js.Object): String = js.native
+    def generate(name: String, data: js.Object, options: GenerateOptions): String = js.native
+    def generate(name: String, data: Unit, options: GenerateOptions): String = js.native
     
-    def getLinkPath(link: js.Any): js.Any = js.native
+    def getCurrentLocation(): Match = js.native
     
-    def historyAPIUpdateMethod(): Unit = js.native
-    def historyAPIUpdateMethod(method: String): Unit = js.native
+    def getLinkPath(link: js.Object): String = js.native
     
-    def hooks(hooks: GenericHooks): Unit = js.native
+    def getRoute(nameOrHandler: String): js.UndefOr[Route] = js.native
+    def getRoute(nameOrHandler: js.Function): js.UndefOr[Route] = js.native
     
-    def lastRouteResolved(): Hooks = js.native
+    def hooks(hooks: RouteHooks): Navigo = js.native
+    
+    def lastResolved(): Null | js.Array[Match] = js.native
     
     def link(path: String): String = js.native
     
-    def navigate(path: String): Unit = js.native
-    def navigate(path: String, absolute: Boolean): Unit = js.native
+    def `match`(path: String): `false` | js.Array[Match] = js.native
     
-    def notFound(handler: js.Function1[/* query */ String, Unit]): Unit = js.native
-    def notFound(handler: js.Function1[/* query */ String, Unit], hooks: NavigoHooks): Unit = js.native
+    def matchLocation(path: String): `false` | Match = js.native
+    def matchLocation(path: String, currentLocation: String): `false` | Match = js.native
+    def matchLocation(path: String, currentLocation: String, annotatePathWithRoot: Boolean): `false` | Match = js.native
+    def matchLocation(path: String, currentLocation: Unit, annotatePathWithRoot: Boolean): `false` | Match = js.native
+    def matchLocation(path: js.RegExp): `false` | Match = js.native
+    def matchLocation(path: js.RegExp, currentLocation: String): `false` | Match = js.native
+    def matchLocation(path: js.RegExp, currentLocation: String, annotatePathWithRoot: Boolean): `false` | Match = js.native
+    def matchLocation(path: js.RegExp, currentLocation: Unit, annotatePathWithRoot: Boolean): `false` | Match = js.native
     
-    def off(location: String, handler: RouteHandler): Unit = js.native
+    def navigate(to: String): Unit = js.native
+    def navigate(to: String, options: NavigateOptions): Unit = js.native
     
-    def on(location: String, handler: RouteHandler): Navigo = js.native
-    def on(location: String, handler: RouteHandler, hooks: NavigoHooks): Navigo = js.native
-    def on(location: RegExp, handler: js.Function1[/* repeated */ String, Unit]): Navigo = js.native
-    def on(location: RegExp, handler: js.Function1[/* repeated */ String, Unit], hooks: NavigoHooks): Navigo = js.native
-    def on(rootHandler: RouteHandler): Navigo = js.native
-    def on(rootHandler: RouteHandler, hooks: NavigoHooks): Navigo = js.native
-    def on(routes: StringDictionary[RouteHandler]): Navigo = js.native
+    def navigateByName(name: String): Boolean = js.native
+    def navigateByName(name: String, data: js.Object): Boolean = js.native
+    def navigateByName(name: String, data: js.Object, options: NavigateOptions): Boolean = js.native
+    def navigateByName(name: String, data: Unit, options: NavigateOptions): Boolean = js.native
     
-    def pause(): Unit = js.native
-    def pause(change: Boolean): Unit = js.native
+    def notFound(handler: js.Function): Navigo = js.native
+    def notFound(handler: js.Function, hooks: RouteHooks): Navigo = js.native
     
-    def resolve(): Boolean = js.native
-    def resolve(currentURL: String): Boolean = js.native
+    def off(handler: js.Function): Navigo = js.native
+    def off(path: String): Navigo = js.native
+    def off(path: js.RegExp): Navigo = js.native
     
-    def resume(): Unit = js.native
+    def on(f: Handler): Navigo = js.native
+    def on(f: Handler, hooks: RouteHooks): Navigo = js.native
+    def on(map: js.Object): Navigo = js.native
+    def on(map: js.Object, hooks: RouteHooks): Navigo = js.native
+    def on(path: String, f: Handler): Navigo = js.native
+    def on(path: String, f: Handler, hooks: RouteHooks): Navigo = js.native
+    def on(path: js.RegExp, f: Handler): Navigo = js.native
+    def on(path: js.RegExp, f: Handler, hooks: RouteHooks): Navigo = js.native
     
-    def updatePageLinks(): Unit = js.native
+    def resolve(): `false` | Match = js.native
+    def resolve(path: String): `false` | Match = js.native
+    def resolve(path: String, resolveOptions: ResolveOptions): `false` | Match = js.native
+    def resolve(path: Unit, resolveOptions: ResolveOptions): `false` | Match = js.native
+    
+    var root: String = js.native
+    
+    var routes: js.Array[Route] = js.native
+    
+    def updatePageLinks(): Navigo = js.native
   }
   
-  trait NavigoHooks extends StObject {
+  trait QContext extends StObject {
     
-    var after: js.UndefOr[js.Function1[/* params */ js.UndefOr[Params], Unit]] = js.undefined
+    var currentLocationPath: String
     
-    var already: js.UndefOr[js.Function1[/* params */ js.UndefOr[Params], Unit]] = js.undefined
+    var instance: Navigo
     
-    var before: js.UndefOr[
-        js.Function2[
-          /* done */ js.Function1[/* suppress */ js.UndefOr[Boolean], Unit], 
-          /* params */ js.UndefOr[Params], 
-          Unit
-        ]
-      ] = js.undefined
+    var `match`: js.UndefOr[Match] = js.undefined
     
-    var leave: js.UndefOr[js.Function1[/* params */ js.UndefOr[Params], Unit]] = js.undefined
+    var matches: js.UndefOr[js.Array[Match]] = js.undefined
+    
+    var navigateOptions: js.UndefOr[NavigateOptions] = js.undefined
+    
+    var notFoundHandled: js.UndefOr[Boolean] = js.undefined
+    
+    var resolveOptions: js.UndefOr[ResolveOptions] = js.undefined
+    
+    var to: String
   }
-  object NavigoHooks {
+  object QContext {
     
-    inline def apply(): NavigoHooks = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[NavigoHooks]
+    inline def apply(currentLocationPath: String, instance: Navigo, to: String): QContext = {
+      val __obj = js.Dynamic.literal(currentLocationPath = currentLocationPath.asInstanceOf[js.Any], instance = instance.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
+      __obj.asInstanceOf[QContext]
     }
     
-    extension [Self <: NavigoHooks](x: Self) {
+    extension [Self <: QContext](x: Self) {
       
-      inline def setAfter(value: /* params */ js.UndefOr[Params] => Unit): Self = StObject.set(x, "after", js.Any.fromFunction1(value))
+      inline def setCurrentLocationPath(value: String): Self = StObject.set(x, "currentLocationPath", value.asInstanceOf[js.Any])
+      
+      inline def setInstance(value: Navigo): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+      
+      inline def setMatch(value: Match): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+      
+      inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
+      
+      inline def setMatches(value: js.Array[Match]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
+      
+      inline def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
+      
+      inline def setMatchesVarargs(value: Match*): Self = StObject.set(x, "matches", js.Array(value*))
+      
+      inline def setNavigateOptions(value: NavigateOptions): Self = StObject.set(x, "navigateOptions", value.asInstanceOf[js.Any])
+      
+      inline def setNavigateOptionsUndefined: Self = StObject.set(x, "navigateOptions", js.undefined)
+      
+      inline def setNotFoundHandled(value: Boolean): Self = StObject.set(x, "notFoundHandled", value.asInstanceOf[js.Any])
+      
+      inline def setNotFoundHandledUndefined: Self = StObject.set(x, "notFoundHandled", js.undefined)
+      
+      inline def setResolveOptions(value: ResolveOptions): Self = StObject.set(x, "resolveOptions", value.asInstanceOf[js.Any])
+      
+      inline def setResolveOptionsUndefined: Self = StObject.set(x, "resolveOptions", js.undefined)
+      
+      inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait ResolveOptions extends StObject {
+    
+    var hash: js.UndefOr[Boolean] = js.undefined
+    
+    var noMatchWarning: js.UndefOr[Boolean] = js.undefined
+    
+    var strategy: js.UndefOr[ResolveStrategy] = js.undefined
+  }
+  object ResolveOptions {
+    
+    inline def apply(): ResolveOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ResolveOptions]
+    }
+    
+    extension [Self <: ResolveOptions](x: Self) {
+      
+      inline def setHash(value: Boolean): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      
+      inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+      
+      inline def setNoMatchWarning(value: Boolean): Self = StObject.set(x, "noMatchWarning", value.asInstanceOf[js.Any])
+      
+      inline def setNoMatchWarningUndefined: Self = StObject.set(x, "noMatchWarning", js.undefined)
+      
+      inline def setStrategy(value: ResolveStrategy): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
+      
+      inline def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
+    }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.navigo.navigoStrings.ONE
+    - typings.navigo.navigoStrings.ALL
+  */
+  trait ResolveStrategy extends StObject
+  object ResolveStrategy {
+    
+    inline def ALL: typings.navigo.navigoStrings.ALL = "ALL".asInstanceOf[typings.navigo.navigoStrings.ALL]
+    
+    inline def ONE: typings.navigo.navigoStrings.ONE = "ONE".asInstanceOf[typings.navigo.navigoStrings.ONE]
+  }
+  
+  trait Route extends StObject {
+    
+    def handler(): Unit
+    def handler(`match`: Match): Unit
+    @JSName("handler")
+    var handler_Original: Handler
+    
+    var hooks: RouteHooksStorage
+    
+    var name: String
+    
+    var path: String | js.RegExp
+  }
+  object Route {
+    
+    inline def apply(
+      handler: /* match */ js.UndefOr[Match] => Unit,
+      hooks: RouteHooksStorage,
+      name: String,
+      path: String | js.RegExp
+    ): Route = {
+      val __obj = js.Dynamic.literal(handler = js.Any.fromFunction1(handler), hooks = hooks.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Route]
+    }
+    
+    extension [Self <: Route](x: Self) {
+      
+      inline def setHandler(value: /* match */ js.UndefOr[Match] => Unit): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
+      
+      inline def setHooks(value: RouteHooksStorage): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setPath(value: String | js.RegExp): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait RouteHooks extends StObject {
+    
+    var after: js.UndefOr[AfterHook] = js.undefined
+    
+    var already: js.UndefOr[AlreadyHook] = js.undefined
+    
+    var before: js.UndefOr[BeforeHook] = js.undefined
+    
+    var leave: js.UndefOr[LeaveHook] = js.undefined
+  }
+  object RouteHooks {
+    
+    inline def apply(): RouteHooks = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[RouteHooks]
+    }
+    
+    extension [Self <: RouteHooks](x: Self) {
+      
+      inline def setAfter(value: /* match */ Match => Unit): Self = StObject.set(x, "after", js.Any.fromFunction1(value))
       
       inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
       
-      inline def setAlready(value: /* params */ js.UndefOr[Params] => Unit): Self = StObject.set(x, "already", js.Any.fromFunction1(value))
+      inline def setAlready(value: /* match */ Match => Unit): Self = StObject.set(x, "already", js.Any.fromFunction1(value))
       
       inline def setAlreadyUndefined: Self = StObject.set(x, "already", js.undefined)
       
-      inline def setBefore(
-        value: (/* done */ js.Function1[/* suppress */ js.UndefOr[Boolean], Unit], /* params */ js.UndefOr[Params]) => Unit
-      ): Self = StObject.set(x, "before", js.Any.fromFunction2(value))
+      inline def setBefore(value: (/* done */ js.Function, /* match */ Match) => Unit): Self = StObject.set(x, "before", js.Any.fromFunction2(value))
       
       inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
       
-      inline def setLeave(value: /* params */ js.UndefOr[Params] => Unit): Self = StObject.set(x, "leave", js.Any.fromFunction1(value))
+      inline def setLeave(value: (/* done */ js.Function, /* match */ Match | js.Array[Match]) => Unit): Self = StObject.set(x, "leave", js.Any.fromFunction2(value))
       
       inline def setLeaveUndefined: Self = StObject.set(x, "leave", js.undefined)
     }
   }
   
-  type Params = State
+  trait RouteHooksStorage extends StObject {
+    
+    var after: js.UndefOr[js.Array[AfterHook]] = js.undefined
+    
+    var already: js.UndefOr[js.Array[AlreadyHook]] = js.undefined
+    
+    var before: js.UndefOr[js.Array[BeforeHook]] = js.undefined
+    
+    var leave: js.UndefOr[js.Array[LeaveHook]] = js.undefined
+  }
+  object RouteHooksStorage {
+    
+    inline def apply(): RouteHooksStorage = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[RouteHooksStorage]
+    }
+    
+    extension [Self <: RouteHooksStorage](x: Self) {
+      
+      inline def setAfter(value: js.Array[AfterHook]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+      
+      inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+      
+      inline def setAfterVarargs(value: AfterHook*): Self = StObject.set(x, "after", js.Array(value*))
+      
+      inline def setAlready(value: js.Array[AlreadyHook]): Self = StObject.set(x, "already", value.asInstanceOf[js.Any])
+      
+      inline def setAlreadyUndefined: Self = StObject.set(x, "already", js.undefined)
+      
+      inline def setAlreadyVarargs(value: AlreadyHook*): Self = StObject.set(x, "already", js.Array(value*))
+      
+      inline def setBefore(value: js.Array[BeforeHook]): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+      
+      inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+      
+      inline def setBeforeVarargs(value: BeforeHook*): Self = StObject.set(x, "before", js.Array(value*))
+      
+      inline def setLeave(value: js.Array[LeaveHook]): Self = StObject.set(x, "leave", value.asInstanceOf[js.Any])
+      
+      inline def setLeaveUndefined: Self = StObject.set(x, "leave", js.undefined)
+      
+      inline def setLeaveVarargs(value: LeaveHook*): Self = StObject.set(x, "leave", js.Array(value*))
+    }
+  }
   
-  type RouteHandler = (js.Function2[/* params */ Params, /* query */ String, Unit]) | As
-  
-  type State = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ k in navigo.navigo.Keys ]: any}
-    */ typings.navigo.navigoStrings.State & TopLevel[js.Any]
+  trait RouterOptions
+    extends StObject
+       with ResolveOptions {
+    
+    var linksSelector: js.UndefOr[String] = js.undefined
+  }
+  object RouterOptions {
+    
+    inline def apply(): RouterOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[RouterOptions]
+    }
+    
+    extension [Self <: RouterOptions](x: Self) {
+      
+      inline def setLinksSelector(value: String): Self = StObject.set(x, "linksSelector", value.asInstanceOf[js.Any])
+      
+      inline def setLinksSelectorUndefined: Self = StObject.set(x, "linksSelector", js.undefined)
+    }
+  }
 }

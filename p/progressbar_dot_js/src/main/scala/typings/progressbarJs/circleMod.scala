@@ -9,7 +9,7 @@ object circleMod {
   
   @JSImport("progressbar.js/circle", JSImport.Namespace)
   @js.native
-  class ^ () extends Circle
+  open class ^ () extends Circle
   
   @js.native
   trait Circle

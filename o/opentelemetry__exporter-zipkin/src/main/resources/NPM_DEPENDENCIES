@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@opentelemetry/exporter-zipkin" : "1.7.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@opentelemetry/exporter-zipkin" : "1.7.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

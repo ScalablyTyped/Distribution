@@ -16,7 +16,7 @@ trait ComponentDidMount extends StObject {
   
   def componentWillUnmount(): Unit = js.native
   
-  var context: js.Any = js.native
+  var context: Any = js.native
   
   def forceUpdate(): Unit = js.native
   def forceUpdate(callBack: js.Function0[Unit]): Unit = js.native

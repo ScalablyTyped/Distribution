@@ -15,6 +15,9 @@ trait GooglePrivacyDlpV2BigQueryOptions extends StObject {
     */
   var identifyingFields: js.UndefOr[js.Array[GooglePrivacyDlpV2FieldId]] = js.undefined
   
+  /** Limit scanning only to these fields. */
+  var includedFields: js.UndefOr[js.Array[GooglePrivacyDlpV2FieldId]] = js.undefined
+  
   /**
     * Max number of rows to scan. If the table has more rows than this value, the rest of the rows are omitted. If not set, or if set to 0, all rows will be scanned. Only one of
     * rows_limit and rows_limit_percent can be specified. Cannot be used in conjunction with TimespanConfig.
@@ -45,13 +48,19 @@ object GooglePrivacyDlpV2BigQueryOptions {
     
     inline def setExcludedFieldsUndefined: Self = StObject.set(x, "excludedFields", js.undefined)
     
-    inline def setExcludedFieldsVarargs(value: GooglePrivacyDlpV2FieldId*): Self = StObject.set(x, "excludedFields", js.Array(value :_*))
+    inline def setExcludedFieldsVarargs(value: GooglePrivacyDlpV2FieldId*): Self = StObject.set(x, "excludedFields", js.Array(value*))
     
     inline def setIdentifyingFields(value: js.Array[GooglePrivacyDlpV2FieldId]): Self = StObject.set(x, "identifyingFields", value.asInstanceOf[js.Any])
     
     inline def setIdentifyingFieldsUndefined: Self = StObject.set(x, "identifyingFields", js.undefined)
     
-    inline def setIdentifyingFieldsVarargs(value: GooglePrivacyDlpV2FieldId*): Self = StObject.set(x, "identifyingFields", js.Array(value :_*))
+    inline def setIdentifyingFieldsVarargs(value: GooglePrivacyDlpV2FieldId*): Self = StObject.set(x, "identifyingFields", js.Array(value*))
+    
+    inline def setIncludedFields(value: js.Array[GooglePrivacyDlpV2FieldId]): Self = StObject.set(x, "includedFields", value.asInstanceOf[js.Any])
+    
+    inline def setIncludedFieldsUndefined: Self = StObject.set(x, "includedFields", js.undefined)
+    
+    inline def setIncludedFieldsVarargs(value: GooglePrivacyDlpV2FieldId*): Self = StObject.set(x, "includedFields", js.Array(value*))
     
     inline def setRowsLimit(value: String): Self = StObject.set(x, "rowsLimit", value.asInstanceOf[js.Any])
     

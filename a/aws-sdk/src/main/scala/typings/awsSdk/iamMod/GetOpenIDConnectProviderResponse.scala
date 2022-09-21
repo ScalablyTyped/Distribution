@@ -12,9 +12,14 @@ trait GetOpenIDConnectProviderResponse extends StObject {
   var ClientIDList: js.UndefOr[clientIDListType] = js.undefined
   
   /**
-    * The date and time when the IAM OIDC provider resource object was created in the AWS account.
+    * The date and time when the IAM OIDC provider resource object was created in the Amazon Web Services account.
     */
-  var CreateDate: js.UndefOr[dateType] = js.undefined
+  var CreateDate: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * A list of tags that are attached to the specified IAM OIDC provider. The returned list of tags is sorted by tag key. For more information about tagging, see Tagging IAM resources in the IAM User Guide.
+    */
+  var Tags: js.UndefOr[tagListType] = js.undefined
   
   /**
     * A list of certificate thumbprints that are associated with the specified IAM OIDC provider resource object. For more information, see CreateOpenIDConnectProvider. 
@@ -39,17 +44,23 @@ object GetOpenIDConnectProviderResponse {
     
     inline def setClientIDListUndefined: Self = StObject.set(x, "ClientIDList", js.undefined)
     
-    inline def setClientIDListVarargs(value: clientIDType*): Self = StObject.set(x, "ClientIDList", js.Array(value :_*))
+    inline def setClientIDListVarargs(value: clientIDType*): Self = StObject.set(x, "ClientIDList", js.Array(value*))
     
-    inline def setCreateDate(value: dateType): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
+    inline def setCreateDate(value: js.Date): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
     inline def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
+    
+    inline def setTags(value: tagListType): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setThumbprintList(value: thumbprintListType): Self = StObject.set(x, "ThumbprintList", value.asInstanceOf[js.Any])
     
     inline def setThumbprintListUndefined: Self = StObject.set(x, "ThumbprintList", js.undefined)
     
-    inline def setThumbprintListVarargs(value: thumbprintType*): Self = StObject.set(x, "ThumbprintList", js.Array(value :_*))
+    inline def setThumbprintListVarargs(value: thumbprintType*): Self = StObject.set(x, "ThumbprintList", js.Array(value*))
     
     inline def setUrl(value: OpenIDConnectProviderUrlType): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     

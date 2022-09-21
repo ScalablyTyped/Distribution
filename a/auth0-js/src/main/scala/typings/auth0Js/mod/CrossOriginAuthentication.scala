@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("auth0-js", "CrossOriginAuthentication")
 @js.native
-class CrossOriginAuthentication protected () extends StObject {
-  def this(webAuth: js.Any, options: js.Any) = this()
+open class CrossOriginAuthentication protected () extends StObject {
+  def this(webAuth: Any, options: Any) = this()
   
   /**
     * Runs the callback code for the cross origin authentication call. This method is meant to be called by the cross origin authentication callback url.
@@ -25,5 +25,5 @@ class CrossOriginAuthentication protected () extends StObject {
     * @param cb Callback function called only when an authentication error, like invalid username or password, occurs.
     * For other types of errors, there will be a redirect to the `redirectUri`.
     */
-  def login(options: CrossOriginLoginOptions, callback: Auth0Callback[js.Any, Auth0Error]): Unit = js.native
+  def login(options: CrossOriginLoginOptions, callback: Auth0Callback[Any, Auth0Error]): Unit = js.native
 }

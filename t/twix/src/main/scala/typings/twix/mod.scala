@@ -3,7 +3,6 @@ package typings.twix
 import typings.moment.mod.Duration_
 import typings.moment.mod.Moment
 import typings.moment.mod.MomentInput
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,6 +54,10 @@ object mod {
       def twix(date: js.Array[Double], allDay: Boolean): Twix = js.native
       def twix(date: js.Array[Double], format: String, options: TwixParseAndFormatOptions): Twix = js.native
       def twix(date: js.Array[Double], options: TwixParseAndFormatOptions): Twix = js.native
+      def twix(date: js.Date): Twix = js.native
+      def twix(date: js.Date, allDay: Boolean): Twix = js.native
+      def twix(date: js.Date, format: String, options: TwixParseAndFormatOptions): Twix = js.native
+      def twix(date: js.Date, options: TwixParseAndFormatOptions): Twix = js.native
       def twix(date: Double): Twix = js.native
       def twix(date: Double, allDay: Boolean): Twix = js.native
       def twix(date: Double, format: String, options: TwixParseAndFormatOptions): Twix = js.native
@@ -63,10 +66,6 @@ object mod {
       def twix(date: MomentInput, allDay: Boolean): Twix = js.native
       def twix(date: MomentInput, format: String, options: TwixParseAndFormatOptions): Twix = js.native
       def twix(date: MomentInput, options: TwixParseAndFormatOptions): Twix = js.native
-      def twix(date: Date): Twix = js.native
-      def twix(date: Date, allDay: Boolean): Twix = js.native
-      def twix(date: Date, format: String, options: TwixParseAndFormatOptions): Twix = js.native
-      def twix(date: Date, options: TwixParseAndFormatOptions): Twix = js.native
       def twix(date: Moment): Twix = js.native
       def twix(date: Moment, allDay: Boolean): Twix = js.native
       def twix(date: Moment, format: String, options: TwixParseAndFormatOptions): Twix = js.native
@@ -80,8 +79,8 @@ object mod {
     def asDuration(period: String): Duration_ = js.native
     
     def contains(date: String): Boolean = js.native
+    def contains(date: js.Date): Boolean = js.native
     def contains(date: Moment): Boolean = js.native
-    def contains(date: Date): Boolean = js.native
     
     def count(period: String): Double = js.native
     
@@ -131,7 +130,7 @@ object mod {
     def split(other: Moment): js.Array[Twix] = js.native
     def split(start: Moment, end: Moment): js.Array[Twix] = js.native
     
-    def toDate(): Date = js.native
+    def toDate(): js.Date = js.native
     
     def union(other: Twix): Twix = js.native
     
@@ -140,7 +139,7 @@ object mod {
   
   trait TwixFormatOptions extends StObject {
     
-    var allDay: js.UndefOr[js.Any] = js.undefined
+    var allDay: js.UndefOr[Any] = js.undefined
     
     var dayFormat: js.UndefOr[String] = js.undefined
     
@@ -190,7 +189,7 @@ object mod {
     
     extension [Self <: TwixFormatOptions](x: Self) {
       
-      inline def setAllDay(value: js.Any): Self = StObject.set(x, "allDay", value.asInstanceOf[js.Any])
+      inline def setAllDay(value: Any): Self = StObject.set(x, "allDay", value.asInstanceOf[js.Any])
       
       inline def setAllDayUndefined: Self = StObject.set(x, "allDay", js.undefined)
       
@@ -318,7 +317,7 @@ object mod {
     
     var allDay: js.UndefOr[String] = js.undefined
     
-    var template: js.UndefOr[js.Function2[/* left */ js.Any, /* right */ js.Any, js.Any]] = js.undefined
+    var template: js.UndefOr[js.Function2[/* left */ Any, /* right */ Any, Any]] = js.undefined
   }
   object TwixSimpleFormatOptions {
     
@@ -333,7 +332,7 @@ object mod {
       
       inline def setAllDayUndefined: Self = StObject.set(x, "allDay", js.undefined)
       
-      inline def setTemplate(value: (/* left */ js.Any, /* right */ js.Any) => js.Any): Self = StObject.set(x, "template", js.Any.fromFunction2(value))
+      inline def setTemplate(value: (/* left */ Any, /* right */ Any) => Any): Self = StObject.set(x, "template", js.Any.fromFunction2(value))
       
       inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     }
@@ -341,7 +340,7 @@ object mod {
   
   trait TwixStatic extends StObject {
     
-    var formatTemplate: js.UndefOr[js.Function2[/* left */ js.Any, /* right */ js.Any, js.Any]] = js.undefined
+    var formatTemplate: js.UndefOr[js.Function2[/* left */ Any, /* right */ Any, Any]] = js.undefined
   }
   object TwixStatic {
     
@@ -352,7 +351,7 @@ object mod {
     
     extension [Self <: TwixStatic](x: Self) {
       
-      inline def setFormatTemplate(value: (/* left */ js.Any, /* right */ js.Any) => js.Any): Self = StObject.set(x, "formatTemplate", js.Any.fromFunction2(value))
+      inline def setFormatTemplate(value: (/* left */ Any, /* right */ Any) => Any): Self = StObject.set(x, "formatTemplate", js.Any.fromFunction2(value))
       
       inline def setFormatTemplateUndefined: Self = StObject.set(x, "formatTemplate", js.undefined)
     }

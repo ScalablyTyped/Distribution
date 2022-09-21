@@ -34,7 +34,7 @@ object InventoryAggregator {
     
     inline def setAggregatorsUndefined: Self = StObject.set(x, "Aggregators", js.undefined)
     
-    inline def setAggregatorsVarargs(value: InventoryAggregator*): Self = StObject.set(x, "Aggregators", js.Array(value :_*))
+    inline def setAggregatorsVarargs(value: InventoryAggregator*): Self = StObject.set(x, "Aggregators", js.Array(value*))
     
     inline def setExpression(value: InventoryAggregatorExpression): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
     
@@ -44,6 +44,6 @@ object InventoryAggregator {
     
     inline def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
     
-    inline def setGroupsVarargs(value: InventoryGroup*): Self = StObject.set(x, "Groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: InventoryGroup*): Self = StObject.set(x, "Groups", js.Array(value*))
   }
 }

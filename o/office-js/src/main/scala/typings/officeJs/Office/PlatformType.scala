@@ -8,6 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 sealed trait PlatformType extends StObject
 /**
   * Specifies the OS or other platform on which the Office host application is running.
+  * 
+  * @remarks
+  * **Important**: In Outlook, this enum is available from Mailbox requirement set 1.5.
   */
 @JSGlobal("Office.PlatformType")
 @js.native
@@ -54,7 +57,7 @@ object PlatformType extends StObject {
        with PlatformType
   
   /**
-    * The platform an iOS device.
+    * The platform is an iOS device.
     */
   @js.native
   sealed trait iOS

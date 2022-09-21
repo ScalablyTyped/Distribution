@@ -13,20 +13,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SplashScreen extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_dismissed(`type`: dismissed, listener: TypedEventHandler[SplashScreen, js.Any]): Unit = js.native
+  def addEventListener_dismissed(`type`: dismissed, listener: TypedEventHandler[SplashScreen, Any]): Unit = js.native
   
   /** The coordinates of the app's splash screen image relative to the window. */
   var imageLocation: Rect = js.native
   
   /** Fires when the app's splash screen is dismissed. */
-  def ondismissed(ev: js.Any & WinRTEvent[SplashScreen]): Unit = js.native
+  def ondismissed(ev: Any & WinRTEvent[SplashScreen]): Unit = js.native
   /** Fires when the app's splash screen is dismissed. */
   @JSName("ondismissed")
-  var ondismissed_Original: TypedEventHandler[SplashScreen, js.Any] = js.native
+  var ondismissed_Original: TypedEventHandler[SplashScreen, Any] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_dismissed(`type`: dismissed, listener: TypedEventHandler[SplashScreen, js.Any]): Unit = js.native
+  def removeEventListener_dismissed(`type`: dismissed, listener: TypedEventHandler[SplashScreen, Any]): Unit = js.native
 }

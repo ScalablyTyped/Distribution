@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("three", "ImageBitmapLoader")
 @js.native
-class ImageBitmapLoader ()
-  extends typings.three.imageBitmapLoaderMod.ImageBitmapLoader {
+open class ImageBitmapLoader ()
+  extends typings.three.threeMod.ImageBitmapLoader {
   def this(manager: typings.three.loadingManagerMod.LoadingManager) = this()
 }

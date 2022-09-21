@@ -45,7 +45,7 @@ object mod {
   
   @JSImport("tablesorter", "Theme")
   @js.native
-  class Theme ()
+  open class Theme ()
     extends typings.tablesorter.themeMod.Theme
   
   object global {

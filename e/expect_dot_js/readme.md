@@ -10,10 +10,10 @@ BDD style assertions for node and the browser.
 | ------------------ | :-------------: |
 | Full name          | expect.js |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 179 |
-| # downloads        | 7049712 |
-| # stars            | 23 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 434020.6666666667 |
+| # stars            | 2101.0 |
 
 ## Links
 - [Homepage](https://github.com/LearnBoost/expect.js)

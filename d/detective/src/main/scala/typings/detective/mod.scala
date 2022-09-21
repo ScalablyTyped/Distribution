@@ -41,7 +41,7 @@ object mod extends Shortcut {
     /**
       * (when opts.nodes === true) - an array of AST nodes for each argument found in a require() call
       */
-    var nodes: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var nodes: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * an array of each string found in a require()
@@ -59,17 +59,17 @@ object mod extends Shortcut {
       
       inline def setExpressions(value: js.Array[String]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
       
-      inline def setExpressionsVarargs(value: String*): Self = StObject.set(x, "expressions", js.Array(value :_*))
+      inline def setExpressionsVarargs(value: String*): Self = StObject.set(x, "expressions", js.Array(value*))
       
-      inline def setNodes(value: js.Array[js.Any]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+      inline def setNodes(value: js.Array[Any]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
       inline def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
       
-      inline def setNodesVarargs(value: js.Any*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+      inline def setNodesVarargs(value: Any*): Self = StObject.set(x, "nodes", js.Array(value*))
       
       inline def setStrings(value: js.Array[String]): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
       
-      inline def setStringsVarargs(value: String*): Self = StObject.set(x, "strings", js.Array(value :_*))
+      inline def setStringsVarargs(value: String*): Self = StObject.set(x, "strings", js.Array(value*))
     }
   }
   
@@ -110,7 +110,7 @@ object mod extends Shortcut {
     /**
       * a function returning whether an AST CallExpression node is a require call
       */
-    var isRequire: js.UndefOr[js.Function1[/* node */ js.Any, Boolean]] = js.undefined
+    var isRequire: js.UndefOr[js.Function1[/* node */ Any, Boolean]] = js.undefined
     
     /**
       * When true, each node has a loc object attached with start and end subobjects, each of which
@@ -176,7 +176,7 @@ object mod extends Shortcut {
       
       inline def setEcmaVersionUndefined: Self = StObject.set(x, "ecmaVersion", js.undefined)
       
-      inline def setIsRequire(value: /* node */ js.Any => Boolean): Self = StObject.set(x, "isRequire", js.Any.fromFunction1(value))
+      inline def setIsRequire(value: /* node */ Any => Boolean): Self = StObject.set(x, "isRequire", js.Any.fromFunction1(value))
       
       inline def setIsRequireUndefined: Self = StObject.set(x, "isRequire", js.undefined)
       

@@ -33,6 +33,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.auth0.auth0Strings.guardian
   - typings.auth0.auth0Strings.instagram
   - typings.auth0.auth0Strings.ip
+  - typings.auth0.auth0Strings.line
   - typings.auth0.auth0Strings.linkedin
   - typings.auth0.auth0Strings.miicard
   - typings.auth0.auth0Strings.oauth1
@@ -123,6 +124,8 @@ object Strategy {
   inline def instagram: typings.auth0.auth0Strings.instagram = "instagram".asInstanceOf[typings.auth0.auth0Strings.instagram]
   
   inline def ip: typings.auth0.auth0Strings.ip = "ip".asInstanceOf[typings.auth0.auth0Strings.ip]
+  
+  inline def line: typings.auth0.auth0Strings.line = "line".asInstanceOf[typings.auth0.auth0Strings.line]
   
   inline def linkedin: typings.auth0.auth0Strings.linkedin = "linkedin".asInstanceOf[typings.auth0.auth0Strings.linkedin]
   

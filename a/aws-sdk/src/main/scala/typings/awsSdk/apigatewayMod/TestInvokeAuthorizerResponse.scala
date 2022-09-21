@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TestInvokeAuthorizerResponse extends StObject {
   
+  /**
+    * The authorization response.
+    */
   var authorization: js.UndefOr[MapOfStringToList] = js.undefined
   
   /**

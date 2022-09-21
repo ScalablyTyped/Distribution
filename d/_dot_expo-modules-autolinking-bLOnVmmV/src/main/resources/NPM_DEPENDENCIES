@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      ".expo-modules-autolinking-bLOnVmmV" : "0.8.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      ".expo-modules-autolinking-bLOnVmmV" : "0.8.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

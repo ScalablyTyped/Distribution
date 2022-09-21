@@ -78,7 +78,7 @@ object ChipsOptions {
     
     inline def setData(value: js.Array[ChipData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: ChipData*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: ChipData*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

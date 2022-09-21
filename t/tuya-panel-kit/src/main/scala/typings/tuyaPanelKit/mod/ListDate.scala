@@ -1,8 +1,7 @@
 package typings.tuyaPanelKit.mod
 
 import typings.react.mod.ElementType
-import typings.reactNative.mod.StyleProp
-import typings.reactNative.mod.ViewStyle
+import typings.tuyaPanelKit.anon.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,31 +10,59 @@ trait ListDate
   extends StObject
      with TYFlatListData {
   
-  var Icon: js.UndefOr[ElementType[js.Any]] = js.undefined
+  /**
+    * @language zh-CN
+    * @description 列表项图标
+    * @defaultValue undefined
+    */
+  /**
+    * @language en-US
+    * @description List item icon
+    * @defaultValue undefined
+    */
+  var Icon: js.UndefOr[ElementType[Any]] = js.undefined
   
-  var styles: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  /**
+    * @language zh-CN
+    * @description 列表项各部分样式
+    * @defaultValue {}
+    */
+  /**
+    * @language en-US
+    * @description List item style
+    * @defaultValue {}
+    */
+  var styles: js.UndefOr[Container] = js.undefined
   
-  var value: js.Any
+  /**
+    * @language zh-CN
+    * @description 列表项类型值
+    * @defaultValue undefined
+    */
+  /**
+    * @language en-US
+    * @description List item type value
+    * @defaultValue undefined
+    */
+  var value: Any
 }
 object ListDate {
   
-  inline def apply(value: js.Any): ListDate = {
+  inline def apply(value: Any): ListDate = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDate]
   }
   
   extension [Self <: ListDate](x: Self) {
     
-    inline def setIcon(value: ElementType[js.Any]): Self = StObject.set(x, "Icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: ElementType[Any]): Self = StObject.set(x, "Icon", value.asInstanceOf[js.Any])
     
     inline def setIconUndefined: Self = StObject.set(x, "Icon", js.undefined)
     
-    inline def setStyles(value: StyleProp[ViewStyle]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
-    
-    inline def setStylesNull: Self = StObject.set(x, "styles", null)
+    inline def setStyles(value: Container): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -3,12 +3,14 @@ package typings.ddTrace
 import typings.ddTrace.ddTraceStrings._dd1DotsrDoteausr
 import typings.ddTrace.ddTraceStrings._ddDotmeasured
 import typings.ddTrace.ddTraceStrings.error
+import typings.ddTrace.ddTraceStrings.httpDotclient_ip
 import typings.ddTrace.ddTraceStrings.httpDotmethod
 import typings.ddTrace.ddTraceStrings.httpDotrequestDotheaders
 import typings.ddTrace.ddTraceStrings.httpDotresponseDotheaders
 import typings.ddTrace.ddTraceStrings.httpDotroute
 import typings.ddTrace.ddTraceStrings.httpDotstatus_code
 import typings.ddTrace.ddTraceStrings.httpDoturl
+import typings.ddTrace.ddTraceStrings.httpDotuseragent
 import typings.ddTrace.ddTraceStrings.manualDotdrop
 import typings.ddTrace.ddTraceStrings.manualDotkeep
 import typings.ddTrace.ddTraceStrings.resourceDotname
@@ -35,6 +37,11 @@ object tagsMod {
   @js.native
   def ERROR: error = js.native
   inline def ERROR_=(x: error): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERROR")(x.asInstanceOf[js.Any])
+  
+  @JSImport("dd-trace/ext/tags", "HTTP_CLIENT_IP")
+  @js.native
+  def HTTP_CLIENT_IP: httpDotclient_ip = js.native
+  inline def HTTP_CLIENT_IP_=(x: httpDotclient_ip): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTTP_CLIENT_IP")(x.asInstanceOf[js.Any])
   
   @JSImport("dd-trace/ext/tags", "HTTP_METHOD")
   @js.native
@@ -65,6 +72,11 @@ object tagsMod {
   @js.native
   def HTTP_URL: httpDoturl = js.native
   inline def HTTP_URL_=(x: httpDoturl): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTTP_URL")(x.asInstanceOf[js.Any])
+  
+  @JSImport("dd-trace/ext/tags", "HTTP_USERAGENT")
+  @js.native
+  def HTTP_USERAGENT: httpDotuseragent = js.native
+  inline def HTTP_USERAGENT_=(x: httpDotuseragent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTTP_USERAGENT")(x.asInstanceOf[js.Any])
   
   @JSImport("dd-trace/ext/tags", "MANUAL_DROP")
   @js.native

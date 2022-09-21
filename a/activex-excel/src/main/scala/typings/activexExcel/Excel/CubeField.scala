@@ -67,7 +67,7 @@ trait CubeField extends StObject {
   
   var Orientation: XlPivotFieldOrientation = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   val PivotFields: typings.activexExcel.Excel.PivotFields = js.native
   
@@ -80,7 +80,7 @@ trait CubeField extends StObject {
   val Value: String = js.native
   
   def _AddMemberPropertyField(Property: String): Unit = js.native
-  def _AddMemberPropertyField(Property: String, PropertyOrder: js.Any): Unit = js.native
+  def _AddMemberPropertyField(Property: String, PropertyOrder: Any): Unit = js.native
   
   val _Caption: String = js.native
 }

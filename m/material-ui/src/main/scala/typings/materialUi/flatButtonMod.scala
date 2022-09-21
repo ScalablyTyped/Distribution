@@ -10,10 +10,10 @@ object flatButtonMod {
   
   @JSImport("material-ui/FlatButton", JSImport.Default)
   @js.native
-  class default () extends FlatButton
+  open class default () extends FlatButton
   
   @JSImport("material-ui/FlatButton", "FlatButton")
   @js.native
-  class FlatButton ()
-    extends Component[FlatButtonProps, js.Object, js.Any]
+  open class FlatButton ()
+    extends Component[FlatButtonProps, js.Object, Any]
 }

@@ -39,7 +39,7 @@ object BillingInfo {
     
     inline def setBillingIdUndefined: Self = StObject.set(x, "billingId", js.undefined)
     
-    inline def setBillingIdVarargs(value: String*): Self = StObject.set(x, "billingId", js.Array(value :_*))
+    inline def setBillingIdVarargs(value: String*): Self = StObject.set(x, "billingId", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

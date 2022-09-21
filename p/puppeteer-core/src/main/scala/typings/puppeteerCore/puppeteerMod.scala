@@ -1,11 +1,11 @@
 package typings.puppeteerCore
 
-import typings.puppeteerCore.browserConnectorMod.BrowserOptions
+import typings.puppeteerCore.anon.ReadonlySlow3GNetworkCond
+import typings.puppeteerCore.browserConnectorMod.BrowserConnectOptions
 import typings.puppeteerCore.browserMod.Browser
 import typings.puppeteerCore.connectionTransportMod.ConnectionTransport
-import typings.puppeteerCore.deviceDescriptorsMod.DevicesMap_
-import typings.puppeteerCore.errorsMod.PuppeteerErrors_
-import typings.puppeteerCore.productMod.Product
+import typings.puppeteerCore.deviceDescriptorsMod.DevicesMap
+import typings.puppeteerCore.errorsMod.PuppeteerErrors
 import typings.puppeteerCore.queryHandlerMod.CustomQueryHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,18 +15,29 @@ object puppeteerMod {
   
   @JSImport("puppeteer-core/lib/cjs/puppeteer/common/Puppeteer", "Puppeteer")
   @js.native
-  class Puppeteer protected () extends StObject {
+  open class Puppeteer protected () extends StObject {
     /**
       * @internal
       */
     def this(settings: CommonPuppeteerSettings) = this()
     
+    /**
+      * @internal
+      */
     /* protected */ var _changedProduct: Boolean = js.native
     
+    /**
+      * @internal
+      */
     /* protected */ var _isPuppeteerCore: Boolean = js.native
     
     /**
-      * Clears all registered handlers.
+      * @deprecated Import directly puppeteer.
+      * @example
+      *
+      * ```ts
+      * import {clearCustomQueryHandlers} from 'puppeteer';
+      * ```
       */
     def clearCustomQueryHandlers(): Unit = js.native
     
@@ -41,75 +52,62 @@ object puppeteerMod {
     def connect(options: ConnectOptions): js.Promise[Browser] = js.native
     
     /**
-      * @returns a list with the names of all registered custom query handlers.
+      * @deprecated Import directly puppeteer.
+      * @example
+      *
+      * ```ts
+      * import {customQueryHandlerNames} from 'puppeteer';
+      * ```
       */
     def customQueryHandlerNames(): js.Array[String] = js.native
     
     /**
-      * @remarks
-      * A list of devices to be used with `page.emulate(options)`. Actual list of devices can be found in {@link https://github.com/puppeteer/puppeteer/blob/main/src/common/DeviceDescriptors.ts | src/common/DeviceDescriptors.ts}.
-      *
+      * @deprecated Import directly puppeteer.
       * @example
       *
-      * ```js
-      * const puppeteer = require('puppeteer');
-      * const iPhone = puppeteer.devices['iPhone 6'];
-      *
-      * (async () => {
-      *   const browser = await puppeteer.launch();
-      *   const page = await browser.newPage();
-      *   await page.emulate(iPhone);
-      *   await page.goto('https://www.google.com');
-      *   // other actions...
-      *   await browser.close();
-      * })();
-      * ```
-      *
-      */
-    def devices: DevicesMap_ = js.native
-    
-    /**
-      * @remarks
-      *
-      * Puppeteer methods might throw errors if they are unable to fulfill a request.
-      * For example, `page.waitForSelector(selector[, options])` might fail if
-      * the selector doesn't match any nodes during the given timeframe.
-      *
-      * For certain types of errors Puppeteer uses specific error classes.
-      * These classes are available via `puppeteer.errors`.
-      *
-      * @example
-      * An example of handling a timeout error:
-      * ```js
-      * try {
-      *   await page.waitForSelector('.foo');
-      * } catch (e) {
-      *   if (e instanceof puppeteer.errors.TimeoutError) {
-      *     // Do something if this is a timeout.
-      *   }
-      * }
+      * ```ts
+      * import {devices} from 'puppeteer';
       * ```
       */
-    def errors: PuppeteerErrors_ = js.native
+    def devices: DevicesMap = js.native
     
     /**
-      * Registers a {@link CustomQueryHandler | custom query handler}. After
-      * registration, the handler can be used everywhere where a selector is
-      * expected by prepending the selection string with `<name>/`. The name is
-      * only allowed to consist of lower- and upper case latin letters.
+      * @deprecated Import directly puppeteer.
       * @example
+      *
+      * ```ts
+      * import {errors} from 'puppeteer';
       * ```
-      * puppeteer.registerCustomQueryHandler('text', { … });
-      * const aHandle = await page.$('text/…');
+      */
+    def errors: PuppeteerErrors = js.native
+    
+    /**
+      * @deprecated Import directly puppeteer.
+      * @example
+      *
+      * ```ts
+      * import {networkConditions} from 'puppeteer';
       * ```
-      * @param name - The name that the custom query handler will be registered under.
-      * @param queryHandler - The {@link CustomQueryHandler | custom query handler} to
-      * register.
+      */
+    def networkConditions: ReadonlySlow3GNetworkCond = js.native
+    
+    /**
+      * @deprecated Import directly puppeteer.
+      * @example
+      *
+      * ```ts
+      * import {registerCustomQueryHandler} from 'puppeteer';
+      * ```
       */
     def registerCustomQueryHandler(name: String, queryHandler: CustomQueryHandler): Unit = js.native
     
     /**
-      * @param name - The name of the query handler to unregistered.
+      * @deprecated Import directly puppeteer.
+      * @example
+      *
+      * ```ts
+      * import {unregisterCustomQueryHandler} from 'puppeteer';
+      * ```
       */
     def unregisterCustomQueryHandler(name: String): Unit = js.native
   }
@@ -133,13 +131,11 @@ object puppeteerMod {
   
   trait ConnectOptions
     extends StObject
-       with BrowserOptions {
+       with BrowserConnectOptions {
     
     var browserURL: js.UndefOr[String] = js.undefined
     
     var browserWSEndpoint: js.UndefOr[String] = js.undefined
-    
-    var product: js.UndefOr[Product] = js.undefined
     
     var transport: js.UndefOr[ConnectionTransport] = js.undefined
   }
@@ -159,10 +155,6 @@ object puppeteerMod {
       inline def setBrowserWSEndpoint(value: String): Self = StObject.set(x, "browserWSEndpoint", value.asInstanceOf[js.Any])
       
       inline def setBrowserWSEndpointUndefined: Self = StObject.set(x, "browserWSEndpoint", js.undefined)
-      
-      inline def setProduct(value: Product): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
-      
-      inline def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
       
       inline def setTransport(value: ConnectionTransport): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
       

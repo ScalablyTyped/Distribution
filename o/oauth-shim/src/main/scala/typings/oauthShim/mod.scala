@@ -2,12 +2,11 @@ package typings.oauthShim
 
 import org.scalablytyped.runtime.Shortcut
 import typings.expressServeStaticCore.mod.NextFunction
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.expressServeStaticCore.mod.RequestHandler
 import typings.expressServeStaticCore.mod.Response
 import typings.oauthShim.anon.Data
 import typings.oauthShim.anon.Get
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,49 +47,61 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait Handler
-    extends RequestHandler[ParamsDictionary, js.Any, js.Any, Query] {
+  trait Handler extends RequestHandler {
     
     var credentials: Get = js.native
     
     def init(configs: js.Array[Config]): Unit = js.native
     
-    def interpret(
-      req: typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query],
-      res: Response[js.Any, Double],
-      next: NextFunction
-    ): js.Any = js.native
+    def interpret(req: typings.expressServeStaticCore.mod.Request, res: Response): Any = js.native
+    def interpret(req: typings.expressServeStaticCore.mod.Request, res: Response, next: NextFunction): Any = js.native
     @JSName("interpret")
-    var interpret_Original: typings.express.mod.RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    var interpret_Original: typings.express.mod.RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = js.native
     
-    def proxy(
-      req: typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query],
-      res: Response[js.Any, Double],
-      next: NextFunction
-    ): js.Any = js.native
+    def proxy(req: typings.expressServeStaticCore.mod.Request, res: Response): Any = js.native
+    def proxy(req: typings.expressServeStaticCore.mod.Request, res: Response, next: NextFunction): Any = js.native
     @JSName("proxy")
-    var proxy_Original: typings.express.mod.RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    var proxy_Original: typings.express.mod.RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = js.native
     
-    def redirect(
-      req: typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query],
-      res: Response[js.Any, Double],
-      next: NextFunction
-    ): js.Any = js.native
+    def redirect(req: typings.expressServeStaticCore.mod.Request, res: Response): Any = js.native
+    def redirect(req: typings.expressServeStaticCore.mod.Request, res: Response, next: NextFunction): Any = js.native
     @JSName("redirect")
-    var redirect_Original: typings.express.mod.RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    var redirect_Original: typings.express.mod.RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = js.native
     
-    def unhandled(
-      req: typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query],
-      res: Response[js.Any, Double],
-      next: NextFunction
-    ): js.Any = js.native
+    def unhandled(req: typings.expressServeStaticCore.mod.Request, res: Response): Any = js.native
+    def unhandled(req: typings.expressServeStaticCore.mod.Request, res: Response, next: NextFunction): Any = js.native
     @JSName("unhandled")
-    var unhandled_Original: typings.express.mod.RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    var unhandled_Original: typings.express.mod.RequestHandler[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ] = js.native
   }
   
   @js.native
   trait Request
-    extends typings.expressServeStaticCore.mod.Request[ParamsDictionary, js.Any, js.Any, Query] {
+    extends StObject
+       with typings.expressServeStaticCore.mod.Request {
     
     var oauthshim: js.UndefOr[Data] = js.native
   }

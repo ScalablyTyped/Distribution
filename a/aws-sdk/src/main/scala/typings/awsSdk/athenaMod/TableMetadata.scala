@@ -14,12 +14,12 @@ trait TableMetadata extends StObject {
   /**
     * The time that the table was created.
     */
-  var CreateTime: js.UndefOr[Timestamp] = js.undefined
+  var CreateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The last time the table was accessed.
     */
-  var LastAccessTime: js.UndefOr[Timestamp] = js.undefined
+  var LastAccessTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the table.
@@ -54,13 +54,13 @@ object TableMetadata {
     
     inline def setColumnsUndefined: Self = StObject.set(x, "Columns", js.undefined)
     
-    inline def setColumnsVarargs(value: Column*): Self = StObject.set(x, "Columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: Column*): Self = StObject.set(x, "Columns", js.Array(value*))
     
-    inline def setCreateTime(value: Timestamp): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: js.Date): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     
     inline def setCreateTimeUndefined: Self = StObject.set(x, "CreateTime", js.undefined)
     
-    inline def setLastAccessTime(value: Timestamp): Self = StObject.set(x, "LastAccessTime", value.asInstanceOf[js.Any])
+    inline def setLastAccessTime(value: js.Date): Self = StObject.set(x, "LastAccessTime", value.asInstanceOf[js.Any])
     
     inline def setLastAccessTimeUndefined: Self = StObject.set(x, "LastAccessTime", js.undefined)
     
@@ -74,7 +74,7 @@ object TableMetadata {
     
     inline def setPartitionKeysUndefined: Self = StObject.set(x, "PartitionKeys", js.undefined)
     
-    inline def setPartitionKeysVarargs(value: Column*): Self = StObject.set(x, "PartitionKeys", js.Array(value :_*))
+    inline def setPartitionKeysVarargs(value: Column*): Self = StObject.set(x, "PartitionKeys", js.Array(value*))
     
     inline def setTableType(value: TableTypeString): Self = StObject.set(x, "TableType", value.asInstanceOf[js.Any])
     

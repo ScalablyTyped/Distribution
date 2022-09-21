@@ -12,7 +12,7 @@ trait VolumeFrom extends StObject {
   var readOnly: js.UndefOr[BoxedBoolean] = js.undefined
   
   /**
-    * The name of another container within the same task definition from which to mount volumes.
+    * The name of another container within the same task definition to mount volumes from.
     */
   var sourceContainer: js.UndefOr[String] = js.undefined
 }

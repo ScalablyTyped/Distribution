@@ -33,6 +33,6 @@ object RoleUsageType {
     
     inline def setResourcesUndefined: Self = StObject.set(x, "Resources", js.undefined)
     
-    inline def setResourcesVarargs(value: arnType*): Self = StObject.set(x, "Resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: arnType*): Self = StObject.set(x, "Resources", js.Array(value*))
   }
 }

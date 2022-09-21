@@ -114,18 +114,18 @@ object status {
     var State: Double
     
     /** optional data which can be used by an implementation to send additional information. The content is dependent on the specific implementation. */
-    var aStateData: js.Any
+    var aStateData: Any
   }
   object ItemStatus {
     
-    inline def apply(State: Double, aStateData: js.Any): ItemStatus = {
+    inline def apply(State: Double, aStateData: Any): ItemStatus = {
       val __obj = js.Dynamic.literal(State = State.asInstanceOf[js.Any], aStateData = aStateData.asInstanceOf[js.Any])
       __obj.asInstanceOf[ItemStatus]
     }
     
     extension [Self <: ItemStatus](x: Self) {
       
-      inline def setAStateData(value: js.Any): Self = StObject.set(x, "aStateData", value.asInstanceOf[js.Any])
+      inline def setAStateData(value: Any): Self = StObject.set(x, "aStateData", value.asInstanceOf[js.Any])
       
       inline def setState(value: Double): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     }

@@ -11,17 +11,17 @@ object collectorMod {
   
   @JSImport("@devexpress/utils/lib/intervals/sparse/collector", "SparseIntervalsCollector")
   @js.native
-  class SparseIntervalsCollector[IntervalT /* <: MutableInterval */, TemplateT /* <: IReproducibleInterval[IntervalT] */] protected () extends StObject {
+  open class SparseIntervalsCollector[IntervalT /* <: MutableInterval */, TemplateT /* <: IReproducibleInterval[IntervalT] */] protected () extends StObject {
     def this(template: TemplateT) = this()
     
     def add(index: Double): Unit = js.native
     
-    /* private */ var curr: js.Any = js.native
+    /* private */ var curr: Any = js.native
     
     def getIntervals(): SparseIntervals[IntervalT] = js.native
     
-    /* private */ var intervals: js.Any = js.native
+    /* private */ var intervals: Any = js.native
     
-    /* private */ var template: js.Any = js.native
+    /* private */ var template: Any = js.native
   }
 }

@@ -1,5 +1,6 @@
 package typings.phoenix
 
+import org.scalablytyped.runtime.Instantiable1
 import typings.phoenix.mod.BinaryType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -55,20 +56,16 @@ object anon {
     var binaryType: js.UndefOr[BinaryType] = js.undefined
     
     var decode: js.UndefOr[
-        js.Function2[/* payload */ String, /* callback */ js.Function1[/* decoded */ js.Any, Unit], Unit]
+        js.Function2[/* payload */ String, /* callback */ js.Function1[/* decoded */ Any, Unit], Unit]
       ] = js.undefined
     
     var encode: js.UndefOr[
-        js.Function2[
-          /* payload */ js.Object, 
-          /* callback */ js.Function1[/* encoded */ js.Any, Unit], 
-          Unit
-        ]
+        js.Function2[/* payload */ js.Object, /* callback */ js.Function1[/* encoded */ Any, Unit], Unit]
       ] = js.undefined
     
     var heartbeatIntervalMs: js.UndefOr[Double] = js.undefined
     
-    var logger: js.UndefOr[js.Function3[/* kind */ String, /* message */ String, /* data */ js.Any, Unit]] = js.undefined
+    var logger: js.UndefOr[js.Function3[/* kind */ String, /* message */ String, /* data */ Any, Unit]] = js.undefined
     
     var longpollerTimeout: js.UndefOr[Double] = js.undefined
     
@@ -80,7 +77,7 @@ object anon {
     
     var timeout: js.UndefOr[Double] = js.undefined
     
-    var transport: js.UndefOr[String] = js.undefined
+    var transport: js.UndefOr[Instantiable1[/* endpoint */ String, js.Object]] = js.undefined
     
     var vsn: js.UndefOr[String] = js.undefined
   }
@@ -97,11 +94,11 @@ object anon {
       
       inline def setBinaryTypeUndefined: Self = StObject.set(x, "binaryType", js.undefined)
       
-      inline def setDecode(value: (/* payload */ String, /* callback */ js.Function1[/* decoded */ js.Any, Unit]) => Unit): Self = StObject.set(x, "decode", js.Any.fromFunction2(value))
+      inline def setDecode(value: (/* payload */ String, /* callback */ js.Function1[/* decoded */ Any, Unit]) => Unit): Self = StObject.set(x, "decode", js.Any.fromFunction2(value))
       
       inline def setDecodeUndefined: Self = StObject.set(x, "decode", js.undefined)
       
-      inline def setEncode(value: (/* payload */ js.Object, /* callback */ js.Function1[/* encoded */ js.Any, Unit]) => Unit): Self = StObject.set(x, "encode", js.Any.fromFunction2(value))
+      inline def setEncode(value: (/* payload */ js.Object, /* callback */ js.Function1[/* encoded */ Any, Unit]) => Unit): Self = StObject.set(x, "encode", js.Any.fromFunction2(value))
       
       inline def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
       
@@ -109,7 +106,7 @@ object anon {
       
       inline def setHeartbeatIntervalMsUndefined: Self = StObject.set(x, "heartbeatIntervalMs", js.undefined)
       
-      inline def setLogger(value: (/* kind */ String, /* message */ String, /* data */ js.Any) => Unit): Self = StObject.set(x, "logger", js.Any.fromFunction3(value))
+      inline def setLogger(value: (/* kind */ String, /* message */ String, /* data */ Any) => Unit): Self = StObject.set(x, "logger", js.Any.fromFunction3(value))
       
       inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
@@ -135,7 +132,7 @@ object anon {
       
       inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      inline def setTransport(value: String): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
+      inline def setTransport(value: Instantiable1[/* endpoint */ String, js.Object]): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
       
       inline def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
       

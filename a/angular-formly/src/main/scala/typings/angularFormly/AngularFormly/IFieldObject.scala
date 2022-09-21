@@ -48,7 +48,7 @@ trait IFieldObject extends StObject {
     *
     * see http://docs.angular-formly.com/docs/field-configuration-object#data-object
     */
-  var data: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var data: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   /**
     * Use defaultValue to initialize it the model. If this is provided and the value of the
@@ -56,7 +56,7 @@ trait IFieldObject extends StObject {
     *
     * see http://docs.angular-formly.com/docs/field-configuration-object#defaultvalue-any
     */
-  var defaultValue: js.UndefOr[js.Any] = js.undefined
+  var defaultValue: js.UndefOr[Any] = js.undefined
   
   var elementAttributes: js.UndefOr[StringDictionary[String]] = js.undefined
   
@@ -108,7 +108,7 @@ trait IFieldObject extends StObject {
     */
   var id: js.UndefOr[String] = js.undefined
   
-  var initialValue: js.UndefOr[js.Any] = js.undefined
+  var initialValue: js.UndefOr[Any] = js.undefined
   
   /**
     * Can be set instead of type or template to use a custom html template form field. Works
@@ -280,7 +280,7 @@ trait IFieldObject extends StObject {
     * see http://docs.angular-formly.com/docs/field-configuration-object#value-gettersetter-function
     */
   //Getter
-  var value: js.UndefOr[js.Function0[js.Any]] & (js.UndefOr[js.Function1[/* val */ js.Any, Unit]])
+  var value: js.UndefOr[js.Function0[Any]] & (js.UndefOr[js.Function1[/* val */ Any, Unit]])
   
   //Setter
   /**
@@ -305,7 +305,7 @@ trait IFieldObject extends StObject {
 }
 object IFieldObject {
   
-  inline def apply(value: js.UndefOr[js.Function0[js.Any]] & (js.UndefOr[js.Function1[/* val */ js.Any, Unit]])): IFieldObject = {
+  inline def apply(value: js.UndefOr[js.Function0[Any]] & (js.UndefOr[js.Function1[/* val */ Any, Unit]])): IFieldObject = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFieldObject]
   }
@@ -324,11 +324,11 @@ object IFieldObject {
     
     inline def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
     
-    inline def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: StringDictionary[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
@@ -344,13 +344,13 @@ object IFieldObject {
     
     inline def setFormControlUndefined: Self = StObject.set(x, "formControl", js.undefined)
     
-    inline def setFormControlVarargs(value: IFormController*): Self = StObject.set(x, "formControl", js.Array(value :_*))
+    inline def setFormControlVarargs(value: IFormController*): Self = StObject.set(x, "formControl", js.Array(value*))
     
     inline def setHide(value: Boolean): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
     
     inline def setHideExpression(value: String | IExpressionFunction): Self = StObject.set(x, "hideExpression", value.asInstanceOf[js.Any])
     
-    inline def setHideExpressionFunction3(value: (/* $viewValue */ js.Any, /* $modelValue */ js.Any, /* scope */ ITemplateScope) => js.Any): Self = StObject.set(x, "hideExpression", js.Any.fromFunction3(value))
+    inline def setHideExpressionFunction3(value: (/* $viewValue */ Any, /* $modelValue */ Any, /* scope */ ITemplateScope) => Any): Self = StObject.set(x, "hideExpression", js.Any.fromFunction3(value))
     
     inline def setHideExpressionUndefined: Self = StObject.set(x, "hideExpression", js.undefined)
     
@@ -360,7 +360,7 @@ object IFieldObject {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setInitialValue(value: js.Any): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
+    inline def setInitialValue(value: Any): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
     
     inline def setInitialValueUndefined: Self = StObject.set(x, "initialValue", js.undefined)
     
@@ -398,7 +398,7 @@ object IFieldObject {
     
     inline def setOptionsTypesUndefined: Self = StObject.set(x, "optionsTypes", js.undefined)
     
-    inline def setOptionsTypesVarargs(value: String*): Self = StObject.set(x, "optionsTypes", js.Array(value :_*))
+    inline def setOptionsTypesVarargs(value: String*): Self = StObject.set(x, "optionsTypes", js.Array(value*))
     
     inline def setResetModel(value: () => Unit): Self = StObject.set(x, "resetModel", js.Any.fromFunction0(value))
     
@@ -448,18 +448,18 @@ object IFieldObject {
     
     inline def setValidatorsUndefined: Self = StObject.set(x, "validators", js.undefined)
     
-    inline def setValue(value: js.UndefOr[js.Function0[js.Any]] & (js.UndefOr[js.Function1[/* val */ js.Any, Unit]])): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.UndefOr[js.Function0[Any]] & (js.UndefOr[js.Function1[/* val */ Any, Unit]])): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setWatcher(value: IWatcher | js.Array[IWatcher]): Self = StObject.set(x, "watcher", value.asInstanceOf[js.Any])
     
     inline def setWatcherUndefined: Self = StObject.set(x, "watcher", js.undefined)
     
-    inline def setWatcherVarargs(value: IWatcher*): Self = StObject.set(x, "watcher", js.Array(value :_*))
+    inline def setWatcherVarargs(value: IWatcher*): Self = StObject.set(x, "watcher", js.Array(value*))
     
     inline def setWrapper(value: String | js.Array[String]): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
     
     inline def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
     
-    inline def setWrapperVarargs(value: String*): Self = StObject.set(x, "wrapper", js.Array(value :_*))
+    inline def setWrapperVarargs(value: String*): Self = StObject.set(x, "wrapper", js.Array(value*))
   }
 }

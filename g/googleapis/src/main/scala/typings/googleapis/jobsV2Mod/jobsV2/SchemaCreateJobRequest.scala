@@ -4,25 +4,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Input only.  Create job request.
-  */
 trait SchemaCreateJobRequest extends StObject {
   
   /**
-    * Deprecated. Please use processing_options. This flag is ignored if
-    * processing_options is set.  Optional.  If set to `true`, the service does
-    * not attempt to resolve a more precise address for the job.
+    * Deprecated. Please use processing_options. This flag is ignored if processing_options is set. Optional. If set to `true`, the service does not attempt to resolve a more precise address for the job.
     */
-  var disableStreetAddressResolution: js.UndefOr[Boolean] = js.undefined
+  var disableStreetAddressResolution: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * Required.  The Job to be created.
+    * Required. The Job to be created.
     */
   var job: js.UndefOr[SchemaJob] = js.undefined
   
   /**
-    * Optional.  Options for job processing.
+    * Optional. Options for job processing.
     */
   var processingOptions: js.UndefOr[SchemaJobProcessingOptions] = js.undefined
 }
@@ -36,6 +31,8 @@ object SchemaCreateJobRequest {
   extension [Self <: SchemaCreateJobRequest](x: Self) {
     
     inline def setDisableStreetAddressResolution(value: Boolean): Self = StObject.set(x, "disableStreetAddressResolution", value.asInstanceOf[js.Any])
+    
+    inline def setDisableStreetAddressResolutionNull: Self = StObject.set(x, "disableStreetAddressResolution", null)
     
     inline def setDisableStreetAddressResolutionUndefined: Self = StObject.set(x, "disableStreetAddressResolution", js.undefined)
     

@@ -25,7 +25,7 @@ object TranspileOutput {
     
     inline def setDiagnosticsUndefined: Self = StObject.set(x, "diagnostics", js.undefined)
     
-    inline def setDiagnosticsVarargs(value: Diagnostic*): Self = StObject.set(x, "diagnostics", js.Array(value :_*))
+    inline def setDiagnosticsVarargs(value: Diagnostic*): Self = StObject.set(x, "diagnostics", js.Array(value*))
     
     inline def setOutputText(value: java.lang.String): Self = StObject.set(x, "outputText", value.asInstanceOf[js.Any])
     

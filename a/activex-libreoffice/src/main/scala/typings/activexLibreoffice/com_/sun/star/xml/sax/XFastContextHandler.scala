@@ -68,7 +68,7 @@ object XFastContextHandler {
     createUnknownChildContext: (String, String, XFastAttributeList) => XFastContextHandler,
     endFastElement: Double => Unit,
     endUnknownElement: (String, String) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     startFastElement: (Double, XFastAttributeList) => Unit,
     startUnknownElement: (String, String, XFastAttributeList) => Unit

@@ -31,7 +31,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Creates a 2D affine transformation matrix that describes the identity
   * transformation.
   */
-class Matrix ()
+open class Matrix ()
   extends StObject
      with typings.paper.paper.Matrix {
   /** 

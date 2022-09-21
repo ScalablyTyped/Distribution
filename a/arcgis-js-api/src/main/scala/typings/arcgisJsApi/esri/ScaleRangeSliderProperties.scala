@@ -1,5 +1,7 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.anon.MapViewPropertiestype2d
+import typings.arcgisJsApi.anon.SceneViewPropertiestype3d
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,6 +12,8 @@ trait ScaleRangeSliderProperties
   
   /**
     * When `true`, sets the widget to a disabled state so the user cannot interact with it.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider.html#disabled)
     */
@@ -53,16 +57,20 @@ trait ScaleRangeSliderProperties
   /**
     * The region that the scale thumbnails will focus on.
     *
+    * @default "US"
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider.html#region)
     */
-  var region: js.UndefOr[SupportedRegion] = js.undefined
+  var region: js.UndefOr[
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 73 */ Any
+  ] = js.undefined
   
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
+  var view: js.UndefOr[MapViewPropertiestype2d | SceneViewPropertiestype3d] = js.undefined
   
   /**
     * The view model for this widget.
@@ -111,11 +119,11 @@ object ScaleRangeSliderProperties {
     
     inline def setMinScaleUndefined: Self = StObject.set(x, "minScale", js.undefined)
     
-    inline def setRegion(value: SupportedRegion): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 73 */ Any): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
-    inline def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewPropertiestype2d | SceneViewPropertiestype3d): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
     inline def setViewModel(value: ScaleRangeSliderViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     

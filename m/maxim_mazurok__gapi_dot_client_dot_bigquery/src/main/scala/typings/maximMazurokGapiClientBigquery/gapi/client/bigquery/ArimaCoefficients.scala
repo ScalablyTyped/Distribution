@@ -28,7 +28,7 @@ object ArimaCoefficients {
     
     inline def setAutoRegressiveCoefficientsUndefined: Self = StObject.set(x, "autoRegressiveCoefficients", js.undefined)
     
-    inline def setAutoRegressiveCoefficientsVarargs(value: Double*): Self = StObject.set(x, "autoRegressiveCoefficients", js.Array(value :_*))
+    inline def setAutoRegressiveCoefficientsVarargs(value: Double*): Self = StObject.set(x, "autoRegressiveCoefficients", js.Array(value*))
     
     inline def setInterceptCoefficient(value: Double): Self = StObject.set(x, "interceptCoefficient", value.asInstanceOf[js.Any])
     
@@ -38,6 +38,6 @@ object ArimaCoefficients {
     
     inline def setMovingAverageCoefficientsUndefined: Self = StObject.set(x, "movingAverageCoefficients", js.undefined)
     
-    inline def setMovingAverageCoefficientsVarargs(value: Double*): Self = StObject.set(x, "movingAverageCoefficients", js.Array(value :_*))
+    inline def setMovingAverageCoefficientsVarargs(value: Double*): Self = StObject.set(x, "movingAverageCoefficients", js.Array(value*))
   }
 }

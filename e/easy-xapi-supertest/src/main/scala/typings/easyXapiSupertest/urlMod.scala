@@ -39,7 +39,7 @@ object urlMod {
     
     var protocol: String
     
-    var query: js.Any
+    var query: Any
     
     var search: String
     
@@ -56,7 +56,7 @@ object urlMod {
       pathname: String,
       port: String,
       protocol: String,
-      query: js.Any,
+      query: Any,
       search: String,
       slashes: Boolean
     ): Url = {
@@ -88,7 +88,7 @@ object urlMod {
       
       inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
@@ -114,7 +114,7 @@ object urlMod {
     
     var protocol: js.UndefOr[String] = js.undefined
     
-    var query: js.UndefOr[js.Any] = js.undefined
+    var query: js.UndefOr[Any] = js.undefined
     
     var search: js.UndefOr[String] = js.undefined
   }
@@ -159,7 +159,7 @@ object urlMod {
       
       inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
       
-      inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       

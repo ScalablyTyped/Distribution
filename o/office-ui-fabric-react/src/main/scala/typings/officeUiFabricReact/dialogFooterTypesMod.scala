@@ -1,8 +1,6 @@
 package typings.officeUiFabricReact
 
 import typings.fluentuiTheme.ithemeMod.ITheme
-import typings.officeUiFabricReact.dialogFooterBaseMod.DialogFooterBase
-import typings.react.mod.Props
 import typings.uifabricMergeStyles.deepPartialMod.DeepPartial
 import typings.uifabricMergeStyles.istyleMod.IStyle
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
@@ -15,9 +13,8 @@ object dialogFooterTypesMod {
   
   trait IDialogFooter extends StObject
   
-  trait IDialogFooterProps
-    extends StObject
-       with Props[DialogFooterBase] {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.Props<DialogFooterBase> * / any */ trait IDialogFooterProps extends StObject {
     
     /**
       * Optional override class name

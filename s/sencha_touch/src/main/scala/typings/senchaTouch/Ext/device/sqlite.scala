@@ -14,7 +14,7 @@ object sqlite {
     /** [Method] Verifies and changes the version of the database at the same time as doing a schema update with a Ext device sqlite S
       * @param config Object The object which contains the following config options:
       */
-    var changeVersion: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var changeVersion: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Returns the current version of the database
       * @returns String The database current version.
@@ -24,12 +24,12 @@ object sqlite {
     /** [Method] Works the same way as transaction but performs a Ext device sqlite SQLTransaction instance in a read only mode
       * @param config Object
       */
-    var readTransaction: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var readTransaction: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Performs a Ext device sqlite SQLTransaction instance in a read write mode
       * @param config Object The object which contains the following config options:
       */
-    var transaction: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var transaction: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object IDatabase {
     
@@ -40,7 +40,7 @@ object sqlite {
     
     extension [Self <: IDatabase](x: Self) {
       
-      inline def setChangeVersion(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "changeVersion", js.Any.fromFunction1(value))
+      inline def setChangeVersion(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "changeVersion", js.Any.fromFunction1(value))
       
       inline def setChangeVersionUndefined: Self = StObject.set(x, "changeVersion", js.undefined)
       
@@ -48,11 +48,11 @@ object sqlite {
       
       inline def setGetVersionUndefined: Self = StObject.set(x, "getVersion", js.undefined)
       
-      inline def setReadTransaction(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "readTransaction", js.Any.fromFunction1(value))
+      inline def setReadTransaction(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "readTransaction", js.Any.fromFunction1(value))
       
       inline def setReadTransactionUndefined: Self = StObject.set(x, "readTransaction", js.undefined)
       
-      inline def setTransaction(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "transaction", js.Any.fromFunction1(value))
+      inline def setTransaction(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "transaction", js.Any.fromFunction1(value))
       
       inline def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
     }
@@ -113,7 +113,7 @@ object sqlite {
       * @param index Number This is required. The index of a row.
       * @returns Object The row.
       */
-    var item: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], js.Any]] = js.undefined
+    var item: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], Any]] = js.undefined
   }
   object ISQLResultSetRowList {
     
@@ -128,7 +128,7 @@ object sqlite {
       
       inline def setGetLengthUndefined: Self = StObject.set(x, "getLength", js.undefined)
       
-      inline def setItem(value: /* index */ js.UndefOr[Double] => js.Any): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
+      inline def setItem(value: /* index */ js.UndefOr[Double] => Any): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
       
       inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     }
@@ -141,7 +141,7 @@ object sqlite {
     /** [Method] Executes an SQL statement
       * @param config Object The object which contains the following config options:
       */
-    var executeSql: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var executeSql: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Unit]] = js.undefined
   }
   object ISQLTransaction {
     
@@ -152,7 +152,7 @@ object sqlite {
     
     extension [Self <: ISQLTransaction](x: Self) {
       
-      inline def setExecuteSql(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "executeSql", js.Any.fromFunction1(value))
+      inline def setExecuteSql(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "executeSql", js.Any.fromFunction1(value))
       
       inline def setExecuteSqlUndefined: Self = StObject.set(x, "executeSql", js.undefined)
     }
@@ -166,7 +166,7 @@ object sqlite {
       * @param config Object The object which contains the following config options:
       * @returns Ext.device.sqlite.Database The opened database, null if an error occured.
       */
-    var openDatabase: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], IDatabase]] = js.undefined
+    var openDatabase: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], IDatabase]] = js.undefined
   }
   object ISencha {
     
@@ -177,7 +177,7 @@ object sqlite {
     
     extension [Self <: ISencha](x: Self) {
       
-      inline def setOpenDatabase(value: /* config */ js.UndefOr[js.Any] => IDatabase): Self = StObject.set(x, "openDatabase", js.Any.fromFunction1(value))
+      inline def setOpenDatabase(value: /* config */ js.UndefOr[Any] => IDatabase): Self = StObject.set(x, "openDatabase", js.Any.fromFunction1(value))
       
       inline def setOpenDatabaseUndefined: Self = StObject.set(x, "openDatabase", js.undefined)
     }

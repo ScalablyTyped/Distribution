@@ -13,7 +13,7 @@ object diffMod {
   
   @JSImport("react-ace/lib/diff", JSImport.Default)
   @js.native
-  class default protected () extends DiffComponent {
+  open class default protected () extends DiffComponent {
     def this(props: IDiffEditorProps) = this()
   }
   /* static members */
@@ -35,20 +35,19 @@ object diffMod {
   }
   
   @js.native
-  trait DiffComponent
-    extends Component[IDiffEditorProps, IDiffEditorState, js.Any] {
+  trait DiffComponent extends Component[IDiffEditorProps, IDiffEditorState, Any] {
     
     @JSName("componentDidUpdate")
     def componentDidUpdate_MDiffComponent(): Unit = js.native
     
-    def diff(): js.Array[js.Array[js.Any]] = js.native
+    def diff(): js.Array[js.Array[Any]] = js.native
     
-    def generateDiffedLines(diff: js.Any): Left = js.native
+    def generateDiffedLines(diff: Any): Left = js.native
     
-    def onChange(value: js.Any): Unit = js.native
+    def onChange(value: Any): Unit = js.native
     
-    def setCodeMarkers(): js.Array[js.Array[js.Any]] = js.native
-    def setCodeMarkers(diffedLines: js.Any): js.Array[js.Array[js.Any]] = js.native
+    def setCodeMarkers(): js.Array[js.Array[Any]] = js.native
+    def setCodeMarkers(diffedLines: Any): js.Array[js.Array[Any]] = js.native
   }
   
   trait IDiffEditorProps extends StObject {
@@ -79,7 +78,7 @@ object diffMod {
     
     var name: js.UndefOr[String] = js.undefined
     
-    var onChange: js.UndefOr[js.Function2[/* value */ js.Array[String], /* event */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var onChange: js.UndefOr[js.Function2[/* value */ js.Array[String], /* event */ js.UndefOr[Any], Unit]] = js.undefined
     
     var onLoad: js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]] = js.undefined
     
@@ -138,13 +137,13 @@ object diffMod {
       
       inline def setEnableBasicAutocompletionUndefined: Self = StObject.set(x, "enableBasicAutocompletion", js.undefined)
       
-      inline def setEnableBasicAutocompletionVarargs(value: String*): Self = StObject.set(x, "enableBasicAutocompletion", js.Array(value :_*))
+      inline def setEnableBasicAutocompletionVarargs(value: String*): Self = StObject.set(x, "enableBasicAutocompletion", js.Array(value*))
       
       inline def setEnableLiveAutocompletion(value: Boolean | js.Array[String]): Self = StObject.set(x, "enableLiveAutocompletion", value.asInstanceOf[js.Any])
       
       inline def setEnableLiveAutocompletionUndefined: Self = StObject.set(x, "enableLiveAutocompletion", js.undefined)
       
-      inline def setEnableLiveAutocompletionVarargs(value: String*): Self = StObject.set(x, "enableLiveAutocompletion", js.Array(value :_*))
+      inline def setEnableLiveAutocompletionVarargs(value: String*): Self = StObject.set(x, "enableLiveAutocompletion", js.Array(value*))
       
       inline def setFocus(value: Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
       
@@ -178,7 +177,7 @@ object diffMod {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setOnChange(value: (/* value */ js.Array[String], /* event */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      inline def setOnChange(value: (/* value */ js.Array[String], /* event */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -206,7 +205,7 @@ object diffMod {
       
       inline def setScrollMarginUndefined: Self = StObject.set(x, "scrollMargin", js.undefined)
       
-      inline def setScrollMarginVarargs(value: Double*): Self = StObject.set(x, "scrollMargin", js.Array(value :_*))
+      inline def setScrollMarginVarargs(value: Double*): Self = StObject.set(x, "scrollMargin", js.Array(value*))
       
       inline def setSetOptions(value: js.Object): Self = StObject.set(x, "setOptions", value.asInstanceOf[js.Any])
       
@@ -240,7 +239,7 @@ object diffMod {
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
       
       inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
@@ -267,7 +266,7 @@ object diffMod {
       
       inline def setValue(value: js.Array[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
     }
   }
 }

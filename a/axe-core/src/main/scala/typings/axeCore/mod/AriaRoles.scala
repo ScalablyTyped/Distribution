@@ -34,7 +34,7 @@ object AriaRoles {
     
     inline def setAllowedAttrsUndefined: Self = StObject.set(x, "allowedAttrs", js.undefined)
     
-    inline def setAllowedAttrsVarargs(value: String*): Self = StObject.set(x, "allowedAttrs", js.Array(value :_*))
+    inline def setAllowedAttrsVarargs(value: String*): Self = StObject.set(x, "allowedAttrs", js.Array(value*))
     
     inline def setNameFromContent(value: Boolean): Self = StObject.set(x, "nameFromContent", value.asInstanceOf[js.Any])
     
@@ -44,19 +44,19 @@ object AriaRoles {
     
     inline def setRequiredAttrsUndefined: Self = StObject.set(x, "requiredAttrs", js.undefined)
     
-    inline def setRequiredAttrsVarargs(value: String*): Self = StObject.set(x, "requiredAttrs", js.Array(value :_*))
+    inline def setRequiredAttrsVarargs(value: String*): Self = StObject.set(x, "requiredAttrs", js.Array(value*))
     
     inline def setRequiredContext(value: js.Array[String]): Self = StObject.set(x, "requiredContext", value.asInstanceOf[js.Any])
     
     inline def setRequiredContextUndefined: Self = StObject.set(x, "requiredContext", js.undefined)
     
-    inline def setRequiredContextVarargs(value: String*): Self = StObject.set(x, "requiredContext", js.Array(value :_*))
+    inline def setRequiredContextVarargs(value: String*): Self = StObject.set(x, "requiredContext", js.Array(value*))
     
     inline def setRequiredOwned(value: js.Array[String]): Self = StObject.set(x, "requiredOwned", value.asInstanceOf[js.Any])
     
     inline def setRequiredOwnedUndefined: Self = StObject.set(x, "requiredOwned", js.undefined)
     
-    inline def setRequiredOwnedVarargs(value: String*): Self = StObject.set(x, "requiredOwned", js.Array(value :_*))
+    inline def setRequiredOwnedVarargs(value: String*): Self = StObject.set(x, "requiredOwned", js.Array(value*))
     
     inline def setType(value: AriaRolesType | DpubRolesType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

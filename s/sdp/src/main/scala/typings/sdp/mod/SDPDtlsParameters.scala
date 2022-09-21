@@ -21,7 +21,7 @@ object SDPDtlsParameters {
     
     inline def setFingerprints(value: js.Array[SDPFingerprint]): Self = StObject.set(x, "fingerprints", value.asInstanceOf[js.Any])
     
-    inline def setFingerprintsVarargs(value: SDPFingerprint*): Self = StObject.set(x, "fingerprints", js.Array(value :_*))
+    inline def setFingerprintsVarargs(value: SDPFingerprint*): Self = StObject.set(x, "fingerprints", js.Array(value*))
     
     inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
   }

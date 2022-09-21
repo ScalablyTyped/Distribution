@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ResourceUtilization extends StObject {
   
   /**
-    * Utilization of current Amazon EC2 instance. 
+    * The utilization of current Amazon EC2 instance. 
     */
   var EC2ResourceUtilization: js.UndefOr[typings.awsSdk.costexplorerMod.EC2ResourceUtilization] = js.undefined
 }

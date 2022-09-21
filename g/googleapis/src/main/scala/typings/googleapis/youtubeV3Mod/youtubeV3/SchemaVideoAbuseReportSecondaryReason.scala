@@ -9,12 +9,12 @@ trait SchemaVideoAbuseReportSecondaryReason extends StObject {
   /**
     * The ID of this abuse report secondary reason.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The localized label for this abuse report secondary reason.
     */
-  var label: js.UndefOr[String] = js.undefined
+  var label: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaVideoAbuseReportSecondaryReason {
   
@@ -27,9 +27,13 @@ object SchemaVideoAbuseReportSecondaryReason {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
+    inline def setIdNull: Self = StObject.set(x, "id", null)
+    
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelNull: Self = StObject.set(x, "label", null)
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }

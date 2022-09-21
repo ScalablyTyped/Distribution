@@ -14,7 +14,7 @@ trait ListParagraphs extends StObject {
   
   def Item(Index: Double): Paragraph
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.ListParagraphs_typekey")
   var WordDotListParagraphs_typekey: ListParagraphs
@@ -26,7 +26,7 @@ object ListParagraphs {
     Count: Double,
     Creator: Double,
     Item: Double => Paragraph,
-    Parent: js.Any,
+    Parent: Any,
     WordDotListParagraphs_typekey: ListParagraphs
   ): ListParagraphs = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
@@ -44,7 +44,7 @@ object ListParagraphs {
     
     inline def setItem(value: Double => Paragraph): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotListParagraphs_typekey(value: ListParagraphs): Self = StObject.set(x, "Word.ListParagraphs_typekey", value.asInstanceOf[js.Any])
   }

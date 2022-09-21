@@ -1,9 +1,9 @@
 package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublisher
 
 import typings.gapiClient.gapi.client.Request
-import typings.maximMazurokGapiClientAndroidpublisher.anon.KeyOauthtoken
+import typings.maximMazurokGapiClientAndroidpublisher.anon.QuotaUserUploadType
+import typings.maximMazurokGapiClientAndroidpublisher.anon.ResourceUploadType
 import typings.maximMazurokGapiClientAndroidpublisher.anon.VariantId
-import typings.maximMazurokGapiClientAndroidpublisher.anon.VersionCode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,9 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait VariantsResource extends StObject {
   
-  def create(request: KeyOauthtoken, body: Variant): Request[Variant] = js.native
+  def create(request: QuotaUserUploadType, body: Variant): Request[Variant] = js.native
   /** Creates an APK which is suitable for inclusion in a system image from an already uploaded Android App Bundle. */
-  def create(request: VersionCode): Request[Variant] = js.native
+  def create(request: ResourceUploadType): Request[Variant] = js.native
   
   /** Downloads a previously created system APK which is suitable for inclusion in a system image. */
   def download(): Request[Unit] = js.native
@@ -25,5 +25,5 @@ trait VariantsResource extends StObject {
   
   /** Returns the list of previously created system APK variants. */
   def list(): Request[SystemApksListResponse] = js.native
-  def list(request: KeyOauthtoken): Request[SystemApksListResponse] = js.native
+  def list(request: QuotaUserUploadType): Request[SystemApksListResponse] = js.native
 }

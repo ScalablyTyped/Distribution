@@ -24,7 +24,7 @@ trait XPropertyContainer
     * @throws PropertyExistException if a property with the same name already exists.
     * @throws IllegalTypeException if the specified type is not allowed.
     */
-  def addProperty(Name: String, Attributes: Double, DefaultValue: js.Any): Unit
+  def addProperty(Name: String, Attributes: Double, DefaultValue: Any): Unit
   
   /**
     * removes a property from the object.
@@ -37,8 +37,8 @@ object XPropertyContainer {
   
   inline def apply(
     acquire: () => Unit,
-    addProperty: (String, Double, js.Any) => Unit,
-    queryInterface: `type` => js.Any,
+    addProperty: (String, Double, Any) => Unit,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeProperty: String => Unit
   ): XPropertyContainer = {
@@ -48,7 +48,7 @@ object XPropertyContainer {
   
   extension [Self <: XPropertyContainer](x: Self) {
     
-    inline def setAddProperty(value: (String, Double, js.Any) => Unit): Self = StObject.set(x, "addProperty", js.Any.fromFunction3(value))
+    inline def setAddProperty(value: (String, Double, Any) => Unit): Self = StObject.set(x, "addProperty", js.Any.fromFunction3(value))
     
     inline def setRemoveProperty(value: String => Unit): Self = StObject.set(x, "removeProperty", js.Any.fromFunction1(value))
   }

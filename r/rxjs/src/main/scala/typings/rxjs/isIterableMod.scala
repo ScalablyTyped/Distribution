@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object isIterableMod {
   
-  @JSImport("rxjs/internal/util/isIterable", JSImport.Namespace)
+  @JSImport("rxjs/dist/types/internal/util/isIterable", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isIterable(input: js.Any): /* is std.Iterable<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIterable")(input.asInstanceOf[js.Any]).asInstanceOf[/* is std.Iterable<any> */ Boolean]
+  inline def isIterable(input: Any): /* is std.Iterable<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIterable")(input.asInstanceOf[js.Any]).asInstanceOf[/* is std.Iterable<any> */ Boolean]
 }

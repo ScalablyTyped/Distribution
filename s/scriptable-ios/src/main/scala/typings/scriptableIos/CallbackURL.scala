@@ -1,5 +1,7 @@
 package typings.scriptableIos
 
+import typings.scriptableIos.anon.Result
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs an object that opens x-callback-url requests and waits for a response from the target app.
   * @see https://docs.scriptable.app/callbackurl/#-new-callbackurl
   */
-trait CallbackURL extends StObject {
+trait CallbackURL[T /* <: String */] extends StObject {
   
   /**
     * _Construct CallbackURL._
@@ -39,21 +41,25 @@ trait CallbackURL extends StObject {
     * not invoke the callback.
     * @see https://docs.scriptable.app/callbackurl/#-open
     */
-  def open(): js.Promise[js.Any]
+  def open(): js.Promise[(Record[String, String | Double | Boolean | Null]) | Result]
 }
 object CallbackURL {
   
-  inline def apply(addParameter: (String, String) => Unit, getURL: () => String, open: () => js.Promise[js.Any]): CallbackURL = {
+  inline def apply[T /* <: String */](
+    addParameter: (String, String) => Unit,
+    getURL: () => String,
+    open: () => js.Promise[(Record[String, String | Double | Boolean | Null]) | Result]
+  ): CallbackURL[T] = {
     val __obj = js.Dynamic.literal(addParameter = js.Any.fromFunction2(addParameter), getURL = js.Any.fromFunction0(getURL), open = js.Any.fromFunction0(open))
-    __obj.asInstanceOf[CallbackURL]
+    __obj.asInstanceOf[CallbackURL[T]]
   }
   
-  extension [Self <: CallbackURL](x: Self) {
+  extension [Self <: CallbackURL[?], T /* <: String */](x: Self & CallbackURL[T]) {
     
     inline def setAddParameter(value: (String, String) => Unit): Self = StObject.set(x, "addParameter", js.Any.fromFunction2(value))
     
     inline def setGetURL(value: () => String): Self = StObject.set(x, "getURL", js.Any.fromFunction0(value))
     
-    inline def setOpen(value: () => js.Promise[js.Any]): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
+    inline def setOpen(value: () => js.Promise[(Record[String, String | Double | Boolean | Null]) | Result]): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
   }
 }

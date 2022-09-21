@@ -61,7 +61,7 @@ object INxVariableProperties {
     
     inline def setQPreDefinedList(value: js.Array[String]): Self = StObject.set(x, "qPreDefinedList", value.asInstanceOf[js.Any])
     
-    inline def setQPreDefinedListVarargs(value: String*): Self = StObject.set(x, "qPreDefinedList", js.Array(value :_*))
+    inline def setQPreDefinedListVarargs(value: String*): Self = StObject.set(x, "qPreDefinedList", js.Array(value*))
     
     inline def setQUsePredefListedValues(value: Boolean): Self = StObject.set(x, "qUsePredefListedValues", value.asInstanceOf[js.Any])
   }

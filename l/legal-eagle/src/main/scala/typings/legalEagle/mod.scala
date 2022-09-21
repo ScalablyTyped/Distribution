@@ -1,7 +1,6 @@
 package typings.legalEagle
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ object mod {
   
   inline def apply(
     options: Options,
-    cb: js.Function2[/* err */ Error | Null, /* licenseSummary */ LicenseLookup, Unit]
+    cb: js.Function2[/* err */ js.Error | Null, /* licenseSummary */ LicenseLookup, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("legal-eagle", JSImport.Namespace)

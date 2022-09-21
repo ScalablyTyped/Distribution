@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object extendedEncodeUriComponentMod {
   
-  @JSImport("@aws-sdk/smithy-client/dist/cjs/extended-encode-uri-component", JSImport.Namespace)
+  @JSImport("@aws-sdk/smithy-client/dist-types/extended-encode-uri-component", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

@@ -10,13 +10,13 @@ object global {
   
   @JSGlobal("JSONEditor")
   @js.native
-  class JSONEditor protected ()
+  open class JSONEditor protected ()
     extends StObject
        with typings.jsoneditoronline.JSONEditor {
     def this(container: HTMLElement) = this()
     def this(container: HTMLElement, options: JSONEditorOptions) = this()
-    def this(container: HTMLElement, options: Unit, json: js.Any) = this()
-    def this(container: HTMLElement, options: JSONEditorOptions, json: js.Any) = this()
+    def this(container: HTMLElement, options: Unit, json: Any) = this()
+    def this(container: HTMLElement, options: JSONEditorOptions, json: Any) = this()
   }
   object JSONEditor {
     
@@ -72,7 +72,7 @@ object global {
   
   @JSGlobal("JSONEditorAppendNode")
   @js.native
-  class JSONEditorAppendNode protected ()
+  open class JSONEditorAppendNode protected ()
     extends StObject
        with typings.jsoneditoronline.JSONEditorNode {
     def this(editor: typings.jsoneditoronline.JSONEditor) = this()
@@ -117,7 +117,7 @@ object global {
     override def getParent(): typings.jsoneditoronline.JSONEditorNode = js.native
     
     /* CompleteClass */
-    override def getValue(): js.Any = js.native
+    override def getValue(): Any = js.native
     
     /* CompleteClass */
     override def hide(): Unit = js.native
@@ -156,7 +156,7 @@ object global {
     override def setParent(parent: typings.jsoneditoronline.JSONEditorNode): Unit = js.native
     
     /* CompleteClass */
-    override def setValue(value: js.Any): Unit = js.native
+    override def setValue(value: Any): Unit = js.native
     
     /* CompleteClass */
     override def showChilds(): Unit = js.native
@@ -171,12 +171,12 @@ object global {
     override def updateField(field: String): Unit = js.native
     
     /* CompleteClass */
-    override def updateValue(value: js.Any): Unit = js.native
+    override def updateValue(value: Any): Unit = js.native
   }
   
   @JSGlobal("JSONEditorHistory")
   @js.native
-  class JSONEditorHistory protected ()
+  open class JSONEditorHistory protected ()
     extends StObject
        with typings.jsoneditoronline.JSONEditorHistory {
     def this(editor: typings.jsoneditoronline.JSONEditor) = this()
@@ -205,7 +205,7 @@ object global {
   
   @JSGlobal("JSONEditorNode")
   @js.native
-  class JSONEditorNode protected ()
+  open class JSONEditorNode protected ()
     extends StObject
        with typings.jsoneditoronline.JSONEditorNode {
     def this(editor: typings.jsoneditoronline.JSONEditor, params: JSONEditorConstructorParams) = this()
@@ -250,7 +250,7 @@ object global {
     override def getParent(): typings.jsoneditoronline.JSONEditorNode = js.native
     
     /* CompleteClass */
-    override def getValue(): js.Any = js.native
+    override def getValue(): Any = js.native
     
     /* CompleteClass */
     override def hide(): Unit = js.native
@@ -289,7 +289,7 @@ object global {
     override def setParent(parent: typings.jsoneditoronline.JSONEditorNode): Unit = js.native
     
     /* CompleteClass */
-    override def setValue(value: js.Any): Unit = js.native
+    override def setValue(value: Any): Unit = js.native
     
     /* CompleteClass */
     override def showChilds(): Unit = js.native
@@ -304,12 +304,12 @@ object global {
     override def updateField(field: String): Unit = js.native
     
     /* CompleteClass */
-    override def updateValue(value: js.Any): Unit = js.native
+    override def updateValue(value: Any): Unit = js.native
   }
   
   @JSGlobal("JSONEditorSearchBox")
   @js.native
-  class JSONEditorSearchBox protected ()
+  open class JSONEditorSearchBox protected ()
     extends StObject
        with typings.jsoneditoronline.JSONEditorSearchBox {
     def this(editor: typings.jsoneditoronline.JSONEditor, container: HTMLElement) = this()
@@ -344,13 +344,13 @@ object global {
   
   @JSGlobal("JSONFormatter")
   @js.native
-  class JSONFormatter protected ()
+  open class JSONFormatter protected ()
     extends StObject
        with typings.jsoneditoronline.JSONFormatter {
     def this(container: HTMLElement) = this()
     def this(container: HTMLElement, options: JSONFormatterOptions) = this()
-    def this(container: HTMLElement, options: Unit, json: js.Any) = this()
-    def this(container: HTMLElement, options: JSONFormatterOptions, json: js.Any) = this()
+    def this(container: HTMLElement, options: Unit, json: Any) = this()
+    def this(container: HTMLElement, options: JSONFormatterOptions, json: Any) = this()
     
     /* CompleteClass */
     override def get(): js.Object = js.native

@@ -49,6 +49,11 @@ object ItemType extends StObject {
        with ItemType
   
   @js.native
+  sealed trait FILE_UPLOAD
+    extends StObject
+       with ItemType
+  
+  @js.native
   sealed trait GRID
     extends StObject
        with ItemType

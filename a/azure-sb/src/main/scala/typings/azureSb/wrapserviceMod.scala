@@ -10,7 +10,7 @@ object wrapserviceMod {
   
   @JSImport("azure-sb/lib/wrapservice", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with WrapService {
     def this(acsHost: String) = this()

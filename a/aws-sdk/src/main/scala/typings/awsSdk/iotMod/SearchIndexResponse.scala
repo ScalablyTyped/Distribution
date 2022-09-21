@@ -38,12 +38,12 @@ object SearchIndexResponse {
     
     inline def setThingGroupsUndefined: Self = StObject.set(x, "thingGroups", js.undefined)
     
-    inline def setThingGroupsVarargs(value: ThingGroupDocument*): Self = StObject.set(x, "thingGroups", js.Array(value :_*))
+    inline def setThingGroupsVarargs(value: ThingGroupDocument*): Self = StObject.set(x, "thingGroups", js.Array(value*))
     
     inline def setThings(value: ThingDocumentList): Self = StObject.set(x, "things", value.asInstanceOf[js.Any])
     
     inline def setThingsUndefined: Self = StObject.set(x, "things", js.undefined)
     
-    inline def setThingsVarargs(value: ThingDocument*): Self = StObject.set(x, "things", js.Array(value :_*))
+    inline def setThingsVarargs(value: ThingDocument*): Self = StObject.set(x, "things", js.Array(value*))
   }
 }

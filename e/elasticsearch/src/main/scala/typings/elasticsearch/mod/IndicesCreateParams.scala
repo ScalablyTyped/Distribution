@@ -8,6 +8,8 @@ trait IndicesCreateParams
   extends StObject
      with GenericParams {
   
+  var includeTypeName: js.UndefOr[Boolean] = js.undefined
+  
   var index: String
   
   var masterTimeout: js.UndefOr[TimeSpan] = js.undefined
@@ -26,6 +28,10 @@ object IndicesCreateParams {
   }
   
   extension [Self <: IndicesCreateParams](x: Self) {
+    
+    inline def setIncludeTypeName(value: Boolean): Self = StObject.set(x, "includeTypeName", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeTypeNameUndefined: Self = StObject.set(x, "includeTypeName", js.undefined)
     
     inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

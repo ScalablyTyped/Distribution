@@ -65,7 +65,7 @@ object ISelectInfo {
     
     inline def setQContinuousRangeInfo(value: js.Array[IRange]): Self = StObject.set(x, "qContinuousRangeInfo", value.asInstanceOf[js.Any])
     
-    inline def setQContinuousRangeInfoVarargs(value: IRange*): Self = StObject.set(x, "qContinuousRangeInfo", js.Array(value :_*))
+    inline def setQContinuousRangeInfoVarargs(value: IRange*): Self = StObject.set(x, "qContinuousRangeInfo", js.Array(value*))
     
     inline def setQNumberFormat(value: IFieldAttributes): Self = StObject.set(x, "qNumberFormat", value.asInstanceOf[js.Any])
     
@@ -73,7 +73,7 @@ object ISelectInfo {
     
     inline def setQRangeInfo(value: js.Array[INxRangeSelectInfo]): Self = StObject.set(x, "qRangeInfo", value.asInstanceOf[js.Any])
     
-    inline def setQRangeInfoVarargs(value: INxRangeSelectInfo*): Self = StObject.set(x, "qRangeInfo", js.Array(value :_*))
+    inline def setQRangeInfoVarargs(value: INxRangeSelectInfo*): Self = StObject.set(x, "qRangeInfo", js.Array(value*))
     
     inline def setQRangeLo(value: Double): Self = StObject.set(x, "qRangeLo", value.asInstanceOf[js.Any])
     

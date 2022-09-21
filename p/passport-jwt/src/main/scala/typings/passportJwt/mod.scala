@@ -1,10 +1,9 @@
 package typings.passportJwt
 
 import typings.express.mod.Request_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.jsonwebtoken.mod.VerifyOptions
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,13 +33,35 @@ object mod {
   
   @JSImport("passport-jwt", "Strategy")
   @js.native
-  class Strategy protected ()
+  open class Strategy protected ()
     extends typings.passportStrategy.mod.Strategy {
     def this(opt: StrategyOptions, verify: VerifyCallback) = this()
     def this(opt: StrategyOptions, verify: VerifyCallbackWithRequest) = this()
   }
   
-  type JwtFromRequestFunction = js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], String | Null]
+  type JwtFromRequestFunction = js.Function1[
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
+    String | Null
+  ]
+  
+  type SecretOrKeyProvider = js.Function3[
+    /* request */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
+    /* rawJwtToken */ Any, 
+    /* done */ js.Function2[/* err */ Any, /* secretOrKey */ js.UndefOr[String | Buffer], Unit], 
+    Unit
+  ]
   
   trait StrategyOptions extends StObject {
     
@@ -54,7 +75,15 @@ object mod {
     
     var jsonWebTokenOptions: js.UndefOr[VerifyOptions] = js.undefined
     
-    def jwtFromRequest(req: Request_[ParamsDictionary, js.Any, js.Any, Query]): String | Null
+    def jwtFromRequest(
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
+    ): String | Null
     @JSName("jwtFromRequest")
     var jwtFromRequest_Original: JwtFromRequestFunction
     
@@ -62,11 +91,19 @@ object mod {
     
     var secretOrKey: js.UndefOr[String | Buffer] = js.undefined
     
-    var secretOrKeyProvider: js.UndefOr[js.Any] = js.undefined
+    var secretOrKeyProvider: js.UndefOr[SecretOrKeyProvider] = js.undefined
   }
   object StrategyOptions {
     
-    inline def apply(jwtFromRequest: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => String | Null): StrategyOptions = {
+    inline def apply(
+      jwtFromRequest: /* req */ Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ] => String | Null
+    ): StrategyOptions = {
       val __obj = js.Dynamic.literal(jwtFromRequest = js.Any.fromFunction1(jwtFromRequest))
       __obj.asInstanceOf[StrategyOptions]
     }
@@ -77,7 +114,7 @@ object mod {
       
       inline def setAlgorithmsUndefined: Self = StObject.set(x, "algorithms", js.undefined)
       
-      inline def setAlgorithmsVarargs(value: String*): Self = StObject.set(x, "algorithms", js.Array(value :_*))
+      inline def setAlgorithmsVarargs(value: String*): Self = StObject.set(x, "algorithms", js.Array(value*))
       
       inline def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
       
@@ -95,7 +132,15 @@ object mod {
       
       inline def setJsonWebTokenOptionsUndefined: Self = StObject.set(x, "jsonWebTokenOptions", js.undefined)
       
-      inline def setJwtFromRequest(value: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => String | Null): Self = StObject.set(x, "jwtFromRequest", js.Any.fromFunction1(value))
+      inline def setJwtFromRequest(
+        value: /* req */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ] => String | Null
+      ): Self = StObject.set(x, "jwtFromRequest", js.Any.fromFunction1(value))
       
       inline def setPassReqToCallback(value: Boolean): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
       
@@ -103,7 +148,15 @@ object mod {
       
       inline def setSecretOrKey(value: String | Buffer): Self = StObject.set(x, "secretOrKey", value.asInstanceOf[js.Any])
       
-      inline def setSecretOrKeyProvider(value: js.Any): Self = StObject.set(x, "secretOrKeyProvider", value.asInstanceOf[js.Any])
+      inline def setSecretOrKeyProvider(
+        value: (/* request */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ], /* rawJwtToken */ Any, /* done */ js.Function2[/* err */ Any, /* secretOrKey */ js.UndefOr[String | Buffer], Unit]) => Unit
+      ): Self = StObject.set(x, "secretOrKeyProvider", js.Any.fromFunction3(value))
       
       inline def setSecretOrKeyProviderUndefined: Self = StObject.set(x, "secretOrKeyProvider", js.undefined)
       
@@ -111,13 +164,19 @@ object mod {
     }
   }
   
-  type VerifiedCallback = js.Function3[/* error */ js.Any, /* user */ js.UndefOr[js.Any], /* info */ js.UndefOr[js.Any], Unit]
+  type VerifiedCallback = js.Function3[/* error */ Any, /* user */ js.UndefOr[Any], /* info */ js.UndefOr[Any], Unit]
   
-  type VerifyCallback = js.Function2[/* payload */ js.Any, /* done */ VerifiedCallback, Unit]
+  type VerifyCallback = js.Function2[/* payload */ Any, /* done */ VerifiedCallback, Unit]
   
   type VerifyCallbackWithRequest = js.Function3[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-    /* payload */ js.Any, 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
+    /* payload */ Any, 
     /* done */ VerifiedCallback, 
     Unit
   ]

@@ -19,7 +19,7 @@ trait SchemaExtensionInfo extends StObject {
   /**
     * The date and time that the schema extension was completed.
     */
-  var EndDateTime: js.UndefOr[typings.awsSdk.directoryserviceMod.EndDateTime] = js.undefined
+  var EndDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The identifier of the schema extension.
@@ -39,7 +39,7 @@ trait SchemaExtensionInfo extends StObject {
   /**
     * The date and time that the schema extension started being applied to the directory.
     */
-  var StartDateTime: js.UndefOr[typings.awsSdk.directoryserviceMod.StartDateTime] = js.undefined
+  var StartDateTime: js.UndefOr[js.Date] = js.undefined
 }
 object SchemaExtensionInfo {
   
@@ -58,7 +58,7 @@ object SchemaExtensionInfo {
     
     inline def setDirectoryIdUndefined: Self = StObject.set(x, "DirectoryId", js.undefined)
     
-    inline def setEndDateTime(value: EndDateTime): Self = StObject.set(x, "EndDateTime", value.asInstanceOf[js.Any])
+    inline def setEndDateTime(value: js.Date): Self = StObject.set(x, "EndDateTime", value.asInstanceOf[js.Any])
     
     inline def setEndDateTimeUndefined: Self = StObject.set(x, "EndDateTime", js.undefined)
     
@@ -74,7 +74,7 @@ object SchemaExtensionInfo {
     
     inline def setSchemaExtensionStatusUndefined: Self = StObject.set(x, "SchemaExtensionStatus", js.undefined)
     
-    inline def setStartDateTime(value: StartDateTime): Self = StObject.set(x, "StartDateTime", value.asInstanceOf[js.Any])
+    inline def setStartDateTime(value: js.Date): Self = StObject.set(x, "StartDateTime", value.asInstanceOf[js.Any])
     
     inline def setStartDateTimeUndefined: Self = StObject.set(x, "StartDateTime", js.undefined)
   }

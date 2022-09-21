@@ -230,7 +230,7 @@ object Events {
       
       inline def setParents(value: js.Array[Node]): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
       
-      inline def setParentsVarargs(value: Node*): Self = StObject.set(x, "parents", js.Array(value :_*))
+      inline def setParentsVarargs(value: Node*): Self = StObject.set(x, "parents", js.Array(value*))
       
       inline def setSelectionChange(value: Boolean): Self = StObject.set(x, "selectionChange", value.asInstanceOf[js.Any])
     }

@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A themeable solid color value.
-  */
 trait SchemaOpaqueColor extends StObject {
   
   /**
@@ -17,7 +14,7 @@ trait SchemaOpaqueColor extends StObject {
   /**
     * An opaque theme color.
     */
-  var themeColor: js.UndefOr[String] = js.undefined
+  var themeColor: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaOpaqueColor {
   
@@ -33,6 +30,8 @@ object SchemaOpaqueColor {
     inline def setRgbColorUndefined: Self = StObject.set(x, "rgbColor", js.undefined)
     
     inline def setThemeColor(value: String): Self = StObject.set(x, "themeColor", value.asInstanceOf[js.Any])
+    
+    inline def setThemeColorNull: Self = StObject.set(x, "themeColor", null)
     
     inline def setThemeColorUndefined: Self = StObject.set(x, "themeColor", js.undefined)
   }

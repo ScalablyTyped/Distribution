@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("p2", "IslandManager")
 @js.native
-class IslandManager () extends Solver {
+open class IslandManager () extends Solver {
   def this(options: IslandManagerOptions) = this()
   
   def bfs(root: IslandNode, bds: js.Array[Body], eqs: js.Array[Equation]): Unit = js.native

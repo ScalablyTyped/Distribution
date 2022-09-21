@@ -1,6 +1,7 @@
 package typings.reactNativeSimpleRadioButton
 
 import typings.react.mod.Component
+import typings.react.mod.ReactNode
 import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
@@ -13,43 +14,43 @@ object mod {
   
   @JSImport("react-native-simple-radio-button", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ReactNativeRadioFormProps, js.Object, js.Any]
+  open class default ()
+    extends Component[ReactNativeRadioFormProps, js.Object, Any]
   
   @JSImport("react-native-simple-radio-button", "RadioButton")
   @js.native
-  class RadioButton protected ()
-    extends Component[RadioButtonProps, js.Object, js.Any] {
+  open class RadioButton protected ()
+    extends Component[RadioButtonProps, js.Object, Any] {
     def this(props: RadioButtonProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: RadioButtonProps, context: js.Any) = this()
+    def this(props: RadioButtonProps, context: Any) = this()
   }
   
   @JSImport("react-native-simple-radio-button", "RadioButtonInput")
   @js.native
-  class RadioButtonInput protected ()
-    extends Component[RadioButtonInputProps, js.Object, js.Any] {
+  open class RadioButtonInput protected ()
+    extends Component[RadioButtonInputProps, js.Object, Any] {
     def this(props: RadioButtonInputProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: RadioButtonInputProps, context: js.Any) = this()
+    def this(props: RadioButtonInputProps, context: Any) = this()
   }
   
   @JSImport("react-native-simple-radio-button", "RadioButtonLabel")
   @js.native
-  class RadioButtonLabel protected ()
-    extends Component[RadioButtonLabelProps, js.Object, js.Any] {
+  open class RadioButtonLabel protected ()
+    extends Component[RadioButtonLabelProps, js.Object, Any] {
     def this(props: RadioButtonLabelProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: RadioButtonLabelProps, context: js.Any) = this()
+    def this(props: RadioButtonLabelProps, context: Any) = this()
   }
   
   trait DefaultRadioFormProps extends StObject {
@@ -58,7 +59,7 @@ object mod {
     
     var accessible: js.UndefOr[Boolean] = js.undefined
     
-    var onPress: js.UndefOr[js.Function1[/* val */ js.UndefOr[js.Any], js.Any]] = js.undefined
+    var onPress: js.UndefOr[js.Function1[/* val */ js.UndefOr[Any], Any]] = js.undefined
     
     var testID: js.UndefOr[String] = js.undefined
   }
@@ -79,7 +80,7 @@ object mod {
       
       inline def setAccessibleUndefined: Self = StObject.set(x, "accessible", js.undefined)
       
-      inline def setOnPress(value: /* val */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
+      inline def setOnPress(value: /* val */ js.UndefOr[Any] => Any): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
       
       inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
       
@@ -207,6 +208,8 @@ object mod {
     
     var buttonColor: js.UndefOr[String] = js.undefined
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var idSeparator: js.UndefOr[String] = js.undefined
     
     var isSelected: js.UndefOr[Boolean] = js.undefined
@@ -233,6 +236,10 @@ object mod {
       inline def setButtonColor(value: String): Self = StObject.set(x, "buttonColor", value.asInstanceOf[js.Any])
       
       inline def setButtonColorUndefined: Self = StObject.set(x, "buttonColor", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setIdSeparator(value: String): Self = StObject.set(x, "idSeparator", value.asInstanceOf[js.Any])
       
@@ -268,7 +275,7 @@ object mod {
     }
   }
   
-  type RadioForm = Component[ReactNativeRadioFormProps, js.Object, js.Any]
+  type RadioForm = Component[ReactNativeRadioFormProps, js.Object, Any]
   
   trait ReactNativeRadioFormProps
     extends StObject
@@ -277,6 +284,8 @@ object mod {
     var animation: js.UndefOr[Boolean] = js.undefined
     
     var buttonColor: js.UndefOr[String] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var formHorizontal: js.UndefOr[Boolean] = js.undefined
     
@@ -305,6 +314,10 @@ object mod {
       
       inline def setButtonColorUndefined: Self = StObject.set(x, "buttonColor", js.undefined)
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setFormHorizontal(value: Boolean): Self = StObject.set(x, "formHorizontal", value.asInstanceOf[js.Any])
       
       inline def setFormHorizontalUndefined: Self = StObject.set(x, "formHorizontal", js.undefined)
@@ -325,7 +338,7 @@ object mod {
       
       inline def setRadio_propsUndefined: Self = StObject.set(x, "radio_props", js.undefined)
       
-      inline def setRadio_propsVarargs(value: Label*): Self = StObject.set(x, "radio_props", js.Array(value :_*))
+      inline def setRadio_propsVarargs(value: Label*): Self = StObject.set(x, "radio_props", js.Array(value*))
     }
   }
 }

@@ -27,7 +27,7 @@ object XErrorBroadcaster {
   inline def apply(
     acquire: () => Unit,
     addErrorListener: XErrorListener => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeErrorListener: XErrorListener => Unit
   ): XErrorBroadcaster = {

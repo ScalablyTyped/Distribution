@@ -6,23 +6,22 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Represents the properties of an appointment or message in a shared folder, mailbox, or calendar.
+  * Represents the properties of an appointment or message in a shared folder or shared mailbox (now in preview).
   *
   * For more information on how this object is used, see the
-  * {@link https://docs.microsoft.com/office/dev/add-ins/outlook/delegate-access | delegate access} article.
-  *
-  * [Api set: Mailbox 1.8]
+  * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | shared folders and shared mailbox} article.
   *
   * @remarks
+  * [Api set: Mailbox 1.8]
   *
-  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+  * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
   *
-  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+  * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 trait SharedProperties extends StObject {
   
   /**
-    * The permissions that the delegate has on a shared folder.
+    * The permissions that the delegate has on a shared folder, or the user has on a shared mailbox.
     */
   var delegatePermissions: DelegatePermissions
   

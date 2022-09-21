@@ -28,13 +28,13 @@ object ListJobsResponse {
     
     inline def setFailedLocationUndefined: Self = StObject.set(x, "failedLocation", js.undefined)
     
-    inline def setFailedLocationVarargs(value: FailedLocation*): Self = StObject.set(x, "failedLocation", js.Array(value :_*))
+    inline def setFailedLocationVarargs(value: FailedLocation*): Self = StObject.set(x, "failedLocation", js.Array(value*))
     
     inline def setJobs(value: js.Array[Job]): Self = StObject.set(x, "jobs", value.asInstanceOf[js.Any])
     
     inline def setJobsUndefined: Self = StObject.set(x, "jobs", js.undefined)
     
-    inline def setJobsVarargs(value: Job*): Self = StObject.set(x, "jobs", js.Array(value :_*))
+    inline def setJobsVarargs(value: Job*): Self = StObject.set(x, "jobs", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

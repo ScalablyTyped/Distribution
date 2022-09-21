@@ -9,7 +9,7 @@ object urlMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/response/url", "OpenUrlAction")
   @js.native
-  class OpenUrlAction protected ()
+  open class OpenUrlAction protected ()
     extends StObject
        with GoogleActionsV2UiElementsOpenUrlAction {
     /** @public */

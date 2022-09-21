@@ -10,9 +10,9 @@ IO using Q promises
 | Full name          | q-io |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 205 |
-| # downloads        | 1590759 |
-| # stars            | 26 |
+| # dependents       | 0.0 |
+| # downloads        | 120300.33333333333 |
+| # stars            | 315.0 |
 
 ## Links
 - [Homepage](http://github.com/kriskowal/q-io/)

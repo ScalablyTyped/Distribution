@@ -86,7 +86,7 @@ object pagination {
       
       inline def setPaginationPageSizesUndefined: Self = StObject.set(x, "paginationPageSizes", js.undefined)
       
-      inline def setPaginationPageSizesVarargs(value: Double*): Self = StObject.set(x, "paginationPageSizes", js.Array(value :_*))
+      inline def setPaginationPageSizesVarargs(value: Double*): Self = StObject.set(x, "paginationPageSizes", js.Array(value*))
       
       inline def setPaginationTemplate(value: String): Self = StObject.set(x, "paginationTemplate", value.asInstanceOf[js.Any])
       
@@ -107,13 +107,13 @@ object pagination {
     // Methods
     /**
       * Get the current page
-      * @returns {number} the number of the current page
+      * @returns the number of the current page
       */
     def getPage(): Double
     
     /**
       * Get the total number of pages
-      * @returns {number} the total number of pages
+      * @returns the total number of pages
       */
     def getTotalPages(): Double
     
@@ -132,7 +132,7 @@ object pagination {
     
     /**
       * Moves to the requested page
-      * @param {number} page The number of the page that should be displayed
+      * @param page The number of the page that should be displayed
       */
     def seek(page: Double): Unit
   }

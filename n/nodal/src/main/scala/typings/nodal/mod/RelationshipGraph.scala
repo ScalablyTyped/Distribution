@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodal", "RelationshipGraph")
 @js.native
-class RelationshipGraph () extends StObject {
+open class RelationshipGraph () extends StObject {
   
   var edges: js.Array[RelationshipEdge] = js.native
   

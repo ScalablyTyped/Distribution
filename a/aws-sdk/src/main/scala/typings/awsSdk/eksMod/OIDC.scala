@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OIDC extends StObject {
   
   /**
-    * The issuer URL for the OpenID Connect identity provider.
+    * The issuer URL for the OIDC identity provider.
     */
   var issuer: js.UndefOr[String] = js.undefined
 }

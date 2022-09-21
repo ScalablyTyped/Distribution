@@ -32,7 +32,7 @@ object global {
         ArrayLike[typings.jsClipper.ClipperLib.IntPoint] | typings.jsClipper.ClipperLib.IntPoint
       ]]
     
-    inline def Clear(a: ArrayLike[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Clear")(a.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def Clear(a: ArrayLike[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Clear")(a.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSGlobal("ClipperLib.ClipType")
     @js.native
@@ -52,13 +52,13 @@ object global {
     
     @JSGlobal("ClipperLib.Clipper")
     @js.native
-    class Clipper ()
+    open class Clipper ()
       extends StObject
          with typings.jsClipper.ClipperLib.Clipper
     
     @JSGlobal("ClipperLib.ClipperBase")
     @js.native
-    class ClipperBase ()
+    open class ClipperBase ()
       extends StObject
          with typings.jsClipper.ClipperLib.ClipperBase
     
@@ -86,7 +86,7 @@ object global {
     
     @JSGlobal("ClipperLib.DoublePoint")
     @js.native
-    class DoublePoint protected ()
+    open class DoublePoint protected ()
       extends StObject
          with typings.jsClipper.ClipperLib.DoublePoint {
       def this(x: Double, y: Double) = this()
@@ -114,7 +114,7 @@ object global {
     
     @JSGlobal("ClipperLib.ExPolygon")
     @js.native
-    class ExPolygon ()
+    open class ExPolygon ()
       extends StObject
          with typings.jsClipper.ClipperLib.ExPolygon {
       
@@ -127,7 +127,7 @@ object global {
     
     @JSGlobal("ClipperLib.HorzJoinRec")
     @js.native
-    class HorzJoinRec ()
+    open class HorzJoinRec ()
       extends StObject
          with typings.jsClipper.ClipperLib.HorzJoinRec {
       
@@ -140,7 +140,7 @@ object global {
     
     @JSGlobal("ClipperLib.IntPoint")
     @js.native
-    class IntPoint ()
+    open class IntPoint ()
       extends StObject
          with typings.jsClipper.ClipperLib.IntPoint {
       def this(PointXY: typings.jsClipper.ClipperLib.IntPoint) = this()
@@ -155,7 +155,7 @@ object global {
     
     @JSGlobal("ClipperLib.IntRect")
     @js.native
-    class IntRect ()
+    open class IntRect ()
       extends StObject
          with typings.jsClipper.ClipperLib.IntRect {
       def this(left: Double, top: Double, right: Double, bottom: Double) = this()
@@ -175,7 +175,7 @@ object global {
     
     @JSGlobal("ClipperLib.IntersectNode")
     @js.native
-    class IntersectNode ()
+    open class IntersectNode ()
       extends StObject
          with typings.jsClipper.ClipperLib.IntersectNode {
       
@@ -194,7 +194,7 @@ object global {
     
     @JSGlobal("ClipperLib.JoinRec")
     @js.native
-    class JoinRec ()
+    open class JoinRec ()
       extends StObject
          with typings.jsClipper.ClipperLib.JoinRec {
       
@@ -244,7 +244,7 @@ object global {
     
     @JSGlobal("ClipperLib.LocalMinima")
     @js.native
-    class LocalMinima ()
+    open class LocalMinima ()
       extends StObject
          with typings.jsClipper.ClipperLib.LocalMinima {
       
@@ -276,7 +276,7 @@ object global {
     
     @JSGlobal("ClipperLib.OutPt")
     @js.native
-    class OutPt ()
+    open class OutPt ()
       extends StObject
          with typings.jsClipper.ClipperLib.OutPt {
       
@@ -295,7 +295,7 @@ object global {
     
     @JSGlobal("ClipperLib.OutRec")
     @js.native
-    class OutRec ()
+    open class OutRec ()
       extends StObject
          with typings.jsClipper.ClipperLib.OutRec {
       
@@ -347,7 +347,7 @@ object global {
     
     @JSGlobal("ClipperLib.PolyOffsetBuilder")
     @js.native
-    class PolyOffsetBuilder protected ()
+    open class PolyOffsetBuilder protected ()
       extends StObject
          with typings.jsClipper.ClipperLib.PolyOffsetBuilder {
       def this(
@@ -416,7 +416,7 @@ object global {
     
     @JSGlobal("ClipperLib.Polygon")
     @js.native
-    class Polygon ()
+    open class Polygon ()
       extends StObject
          with typings.jsClipper.ClipperLib.Polygon {
       def this(poly: ArrayLike[typings.jsClipper.ClipperLib.IntPoint]) = this()
@@ -424,7 +424,7 @@ object global {
     
     @JSGlobal("ClipperLib.Polygons")
     @js.native
-    class Polygons ()
+    open class Polygons ()
       extends StObject
          with typings.jsClipper.ClipperLib.Polygons {
       def this(polys: ArrayLike[ArrayLike[typings.jsClipper.ClipperLib.IntPoint]]) = this()
@@ -448,7 +448,7 @@ object global {
     
     @JSGlobal("ClipperLib.Scanbeam")
     @js.native
-    class Scanbeam ()
+    open class Scanbeam ()
       extends StObject
          with typings.jsClipper.ClipperLib.Scanbeam {
       
@@ -461,7 +461,7 @@ object global {
     
     @JSGlobal("ClipperLib.TEdge")
     @js.native
-    class TEdge ()
+    open class TEdge ()
       extends StObject
          with typings.jsClipper.ClipperLib.TEdge {
       

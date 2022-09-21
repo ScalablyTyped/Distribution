@@ -82,7 +82,7 @@ object LegendProps {
     inline def setFormatter(
       value: (/* value */ js.UndefOr[
           /* import warning: importer.ImportType#apply Failed type conversion: recharts.recharts.LegendPayload['value'] */ js.Any
-        ], /* entry */ js.UndefOr[LegendPayload], /* i */ js.UndefOr[Double]) => js.Any
+        ], /* entry */ js.UndefOr[LegendPayload], /* i */ js.UndefOr[Double]) => Any
     ): Self = StObject.set(x, "formatter", js.Any.fromFunction3(value))
     
     inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
@@ -127,7 +127,7 @@ object LegendProps {
     
     inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
-    inline def setPayloadVarargs(value: LegendPayload*): Self = StObject.set(x, "payload", js.Array(value :_*))
+    inline def setPayloadVarargs(value: LegendPayload*): Self = StObject.set(x, "payload", js.Array(value*))
     
     inline def setVerticalAlign(value: top | middle | bottom): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
     

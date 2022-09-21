@@ -6,34 +6,22 @@ import typings.reactNative.reactNativeStrings.`box-only`
 import typings.reactNative.reactNativeStrings.`no-hide-descendants`
 import typings.reactNative.reactNativeStrings.assertive
 import typings.reactNative.reactNativeStrings.auto
-import typings.reactNative.reactNativeStrings.button
 import typings.reactNative.reactNativeStrings.no
 import typings.reactNative.reactNativeStrings.none
 import typings.reactNative.reactNativeStrings.polite
-import typings.reactNative.reactNativeStrings.radiobutton_checked
-import typings.reactNative.reactNativeStrings.radiobutton_unchecked
 import typings.reactNative.reactNativeStrings.yes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent react-native.react-native.AccessibilityProps */
-/* Inlined parent react-native.react-native.Omit<react-native.react-native.ViewProps, 'style' | 'hitSlop'> */
+/* Inlined parent react-native.react-native.Omit<react-native.react-native.ViewProps, 'children' | 'style' | 'hitSlop'> */
 trait PressableProps extends StObject {
   
   /**
     * Provides an array of custom actions available for accessibility.
     */
   var accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.undefined
-  
-  /**
-    * In some cases, we also want to alert the end user of the type of selected component (i.e., that it is a “button”).
-    * If we were using native buttons, this would work automatically. Since we are using javascript, we need to
-    * provide a bit more context for TalkBack. To do so, you must specify the ‘accessibilityComponentType’ property
-    * for any UI component. For instances, we support ‘button’, ‘radiobutton_checked’ and ‘radiobutton_unchecked’ and so on.
-    * @platform android
-    */
-  var accessibilityComponentType: js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked] = js.undefined
   
   /**
     * A Boolean value indicating whether the accessibility elements contained within this accessibility element
@@ -60,6 +48,20 @@ trait PressableProps extends StObject {
   var accessibilityLabel: js.UndefOr[String] = js.undefined
   
   /**
+    * Specifies the nativeID of the associated label text. When the assistive technology focuses on the component with this props, the text is read aloud.
+    * @platform android
+    */
+  var accessibilityLabelledBy: js.UndefOr[String | js.Array[String]] = js.undefined
+  
+  /**
+    * Indicates to the accessibility services that the UI component is in
+    * a specific language. The provided string should be formatted following
+    * the BCP 47 specification (https://www.rfc-editor.org/info/bcp47).
+    * @platform ios
+    */
+  var accessibilityLanguage: js.UndefOr[String] = js.undefined
+  
+  /**
     * Indicates to accessibility services whether the user should be notified when this view changes.
     * Works for Android API >= 19 only.
     * See http://developer.android.com/reference/android/view/View.html#attr_android:accessibilityLiveRegion for references.
@@ -76,13 +78,6 @@ trait PressableProps extends StObject {
     * Accessibility State tells a person using either VoiceOver on iOS or TalkBack on Android the state of the element currently focused on.
     */
   var accessibilityState: js.UndefOr[AccessibilityState] = js.undefined
-  
-  /**
-    * Accessibility traits tell a person using VoiceOver what kind of element they have selected.
-    * Is this element a label? A button? A header? These questions are answered by accessibilityTraits.
-    * @platform ios
-    */
-  var accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.undefined
   
   /**
     * Represents the current value of a component. It can be a textual description of a component's value, or for range-based components, such as sliders and progress bars,
@@ -113,12 +108,30 @@ trait PressableProps extends StObject {
   var android_ripple: js.UndefOr[Null | PressableAndroidRippleConfig] = js.undefined
   
   /**
+    * Whether a press gesture can be interrupted by a parent gesture such as a
+    * scroll event. Defaults to true.
+    */
+  var cancelable: js.UndefOr[Null | Boolean] = js.undefined
+  
+  /**
     * Either children or a render prop that receives a boolean reflecting whether
     * the component is currently pressed.
     */
   var children: js.UndefOr[ReactNode | (js.Function1[/* state */ PressableStateCallbackType, ReactNode])] = js.undefined
   
   var collapsable: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Duration to wait after hover in before calling `onHoverIn`.
+    * @platform macos windows
+    */
+  var delayHoverIn: js.UndefOr[Double | Null] = js.undefined
+  
+  /**
+    * Duration to wait after hover out before calling `onHoverOut`.
+    * @platform macos windows
+    */
+  var delayHoverOut: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * Duration (in milliseconds) from `onPressIn` before `onLongPress` is called.
@@ -175,6 +188,28 @@ trait PressableProps extends StObject {
     */
   var onAccessibilityTap: js.UndefOr[js.Function0[Unit]] = js.undefined
   
+  /**
+    * Called after the element loses focus.
+    * @platform macos windows
+    */
+  var onBlur: js.UndefOr[Null | (js.Function1[/* event */ NativeSyntheticEvent[TargetedEvent], Unit])] = js.undefined
+  
+  /**
+    * Called after the element is focused.
+    * @platform macos windows
+    */
+  var onFocus: js.UndefOr[Null | (js.Function1[/* event */ NativeSyntheticEvent[TargetedEvent], Unit])] = js.undefined
+  
+  /**
+    * Called when the hover is activated to provide visual feedback.
+    */
+  var onHoverIn: js.UndefOr[Null | (js.Function1[/* event */ MouseEvent, Unit])] = js.undefined
+  
+  /**
+    * Called when the hover is deactivated to undo visual feedback.
+    */
+  var onHoverOut: js.UndefOr[Null | (js.Function1[/* event */ MouseEvent, Unit])] = js.undefined
+  
   var onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.undefined
   
   /**
@@ -191,6 +226,30 @@ trait PressableProps extends StObject {
   var onMoveShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
   
   var onMoveShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
+  
+  var onPointerCancel: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerCancelCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerDown: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerDownCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerEnter: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerEnterCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerLeave: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerLeaveCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerMove: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerMoveCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerUp: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
+  var onPointerUpCapture: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
   
   /**
     * Called when a single tap gesture is detected.
@@ -275,6 +334,11 @@ trait PressableProps extends StObject {
   var tvParallaxShiftDistanceY: js.UndefOr[Double] = js.undefined
   
   var tvParallaxTiltAngle: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Duration (in milliseconds) to wait after press down before calling onPressIn.
+    */
+  var unstable_pressDelay: js.UndefOr[Double] = js.undefined
 }
 object PressableProps {
   
@@ -289,11 +353,7 @@ object PressableProps {
     
     inline def setAccessibilityActionsUndefined: Self = StObject.set(x, "accessibilityActions", js.undefined)
     
-    inline def setAccessibilityActionsVarargs(value: AccessibilityActionInfo*): Self = StObject.set(x, "accessibilityActions", js.Array(value :_*))
-    
-    inline def setAccessibilityComponentType(value: none | button | radiobutton_checked | radiobutton_unchecked): Self = StObject.set(x, "accessibilityComponentType", value.asInstanceOf[js.Any])
-    
-    inline def setAccessibilityComponentTypeUndefined: Self = StObject.set(x, "accessibilityComponentType", js.undefined)
+    inline def setAccessibilityActionsVarargs(value: AccessibilityActionInfo*): Self = StObject.set(x, "accessibilityActions", js.Array(value*))
     
     inline def setAccessibilityElementsHidden(value: Boolean): Self = StObject.set(x, "accessibilityElementsHidden", value.asInstanceOf[js.Any])
     
@@ -311,6 +371,16 @@ object PressableProps {
     
     inline def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
     
+    inline def setAccessibilityLabelledBy(value: String | js.Array[String]): Self = StObject.set(x, "accessibilityLabelledBy", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityLabelledByUndefined: Self = StObject.set(x, "accessibilityLabelledBy", js.undefined)
+    
+    inline def setAccessibilityLabelledByVarargs(value: String*): Self = StObject.set(x, "accessibilityLabelledBy", js.Array(value*))
+    
+    inline def setAccessibilityLanguage(value: String): Self = StObject.set(x, "accessibilityLanguage", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityLanguageUndefined: Self = StObject.set(x, "accessibilityLanguage", js.undefined)
+    
     inline def setAccessibilityLiveRegion(value: none | polite | assertive): Self = StObject.set(x, "accessibilityLiveRegion", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityLiveRegionUndefined: Self = StObject.set(x, "accessibilityLiveRegion", js.undefined)
@@ -322,12 +392,6 @@ object PressableProps {
     inline def setAccessibilityState(value: AccessibilityState): Self = StObject.set(x, "accessibilityState", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityStateUndefined: Self = StObject.set(x, "accessibilityState", js.undefined)
-    
-    inline def setAccessibilityTraits(value: AccessibilityTrait | js.Array[AccessibilityTrait]): Self = StObject.set(x, "accessibilityTraits", value.asInstanceOf[js.Any])
-    
-    inline def setAccessibilityTraitsUndefined: Self = StObject.set(x, "accessibilityTraits", js.undefined)
-    
-    inline def setAccessibilityTraitsVarargs(value: AccessibilityTrait*): Self = StObject.set(x, "accessibilityTraits", js.Array(value :_*))
     
     inline def setAccessibilityValue(value: AccessibilityValue): Self = StObject.set(x, "accessibilityValue", value.asInstanceOf[js.Any])
     
@@ -353,6 +417,12 @@ object PressableProps {
     
     inline def setAndroid_rippleUndefined: Self = StObject.set(x, "android_ripple", js.undefined)
     
+    inline def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
+    
+    inline def setCancelableNull: Self = StObject.set(x, "cancelable", null)
+    
+    inline def setCancelableUndefined: Self = StObject.set(x, "cancelable", js.undefined)
+    
     inline def setChildren(value: ReactNode | (js.Function1[/* state */ PressableStateCallbackType, ReactNode])): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenFunction1(value: /* state */ PressableStateCallbackType => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
@@ -362,6 +432,18 @@ object PressableProps {
     inline def setCollapsable(value: Boolean): Self = StObject.set(x, "collapsable", value.asInstanceOf[js.Any])
     
     inline def setCollapsableUndefined: Self = StObject.set(x, "collapsable", js.undefined)
+    
+    inline def setDelayHoverIn(value: Double): Self = StObject.set(x, "delayHoverIn", value.asInstanceOf[js.Any])
+    
+    inline def setDelayHoverInNull: Self = StObject.set(x, "delayHoverIn", null)
+    
+    inline def setDelayHoverInUndefined: Self = StObject.set(x, "delayHoverIn", js.undefined)
+    
+    inline def setDelayHoverOut(value: Double): Self = StObject.set(x, "delayHoverOut", value.asInstanceOf[js.Any])
+    
+    inline def setDelayHoverOutNull: Self = StObject.set(x, "delayHoverOut", null)
+    
+    inline def setDelayHoverOutUndefined: Self = StObject.set(x, "delayHoverOut", js.undefined)
     
     inline def setDelayLongPress(value: Double): Self = StObject.set(x, "delayLongPress", value.asInstanceOf[js.Any])
     
@@ -417,6 +499,30 @@ object PressableProps {
     
     inline def setOnAccessibilityTapUndefined: Self = StObject.set(x, "onAccessibilityTap", js.undefined)
     
+    inline def setOnBlur(value: /* event */ NativeSyntheticEvent[TargetedEvent] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+    
+    inline def setOnBlurNull: Self = StObject.set(x, "onBlur", null)
+    
+    inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
+    
+    inline def setOnFocus(value: /* event */ NativeSyntheticEvent[TargetedEvent] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+    
+    inline def setOnFocusNull: Self = StObject.set(x, "onFocus", null)
+    
+    inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+    
+    inline def setOnHoverIn(value: /* event */ MouseEvent => Unit): Self = StObject.set(x, "onHoverIn", js.Any.fromFunction1(value))
+    
+    inline def setOnHoverInNull: Self = StObject.set(x, "onHoverIn", null)
+    
+    inline def setOnHoverInUndefined: Self = StObject.set(x, "onHoverIn", js.undefined)
+    
+    inline def setOnHoverOut(value: /* event */ MouseEvent => Unit): Self = StObject.set(x, "onHoverOut", js.Any.fromFunction1(value))
+    
+    inline def setOnHoverOutNull: Self = StObject.set(x, "onHoverOut", null)
+    
+    inline def setOnHoverOutUndefined: Self = StObject.set(x, "onHoverOut", js.undefined)
+    
     inline def setOnLayout(value: /* event */ LayoutChangeEvent => Unit): Self = StObject.set(x, "onLayout", js.Any.fromFunction1(value))
     
     inline def setOnLayoutUndefined: Self = StObject.set(x, "onLayout", js.undefined)
@@ -438,6 +544,54 @@ object PressableProps {
     inline def setOnMoveShouldSetResponderCaptureUndefined: Self = StObject.set(x, "onMoveShouldSetResponderCapture", js.undefined)
     
     inline def setOnMoveShouldSetResponderUndefined: Self = StObject.set(x, "onMoveShouldSetResponder", js.undefined)
+    
+    inline def setOnPointerCancel(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerCancel", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerCancelCapture(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerCancelCapture", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerCancelCaptureUndefined: Self = StObject.set(x, "onPointerCancelCapture", js.undefined)
+    
+    inline def setOnPointerCancelUndefined: Self = StObject.set(x, "onPointerCancel", js.undefined)
+    
+    inline def setOnPointerDown(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerDown", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerDownCapture(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerDownCapture", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerDownCaptureUndefined: Self = StObject.set(x, "onPointerDownCapture", js.undefined)
+    
+    inline def setOnPointerDownUndefined: Self = StObject.set(x, "onPointerDown", js.undefined)
+    
+    inline def setOnPointerEnter(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerEnter", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerEnterCapture(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerEnterCapture", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerEnterCaptureUndefined: Self = StObject.set(x, "onPointerEnterCapture", js.undefined)
+    
+    inline def setOnPointerEnterUndefined: Self = StObject.set(x, "onPointerEnter", js.undefined)
+    
+    inline def setOnPointerLeave(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerLeave", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerLeaveCapture(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerLeaveCapture", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerLeaveCaptureUndefined: Self = StObject.set(x, "onPointerLeaveCapture", js.undefined)
+    
+    inline def setOnPointerLeaveUndefined: Self = StObject.set(x, "onPointerLeave", js.undefined)
+    
+    inline def setOnPointerMove(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerMove", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerMoveCapture(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerMoveCapture", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerMoveCaptureUndefined: Self = StObject.set(x, "onPointerMoveCapture", js.undefined)
+    
+    inline def setOnPointerMoveUndefined: Self = StObject.set(x, "onPointerMove", js.undefined)
+    
+    inline def setOnPointerUp(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerUp", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerUpCapture(value: /* event */ PointerEvent => Unit): Self = StObject.set(x, "onPointerUpCapture", js.Any.fromFunction1(value))
+    
+    inline def setOnPointerUpCaptureUndefined: Self = StObject.set(x, "onPointerUpCapture", js.undefined)
+    
+    inline def setOnPointerUpUndefined: Self = StObject.set(x, "onPointerUp", js.undefined)
     
     inline def setOnPress(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
     
@@ -578,5 +732,9 @@ object PressableProps {
     inline def setTvParallaxTiltAngle(value: Double): Self = StObject.set(x, "tvParallaxTiltAngle", value.asInstanceOf[js.Any])
     
     inline def setTvParallaxTiltAngleUndefined: Self = StObject.set(x, "tvParallaxTiltAngle", js.undefined)
+    
+    inline def setUnstable_pressDelay(value: Double): Self = StObject.set(x, "unstable_pressDelay", value.asInstanceOf[js.Any])
+    
+    inline def setUnstable_pressDelayUndefined: Self = StObject.set(x, "unstable_pressDelay", js.undefined)
   }
 }

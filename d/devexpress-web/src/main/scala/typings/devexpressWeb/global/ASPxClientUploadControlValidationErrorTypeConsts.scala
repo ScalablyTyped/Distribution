@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientUploadControlValidationErrorTypeConsts")
 @js.native
-class ASPxClientUploadControlValidationErrorTypeConsts ()
+open class ASPxClientUploadControlValidationErrorTypeConsts ()
   extends StObject
      with typings.devexpressWeb.ASPxClientUploadControlValidationErrorTypeConsts
 object ASPxClientUploadControlValidationErrorTypeConsts {

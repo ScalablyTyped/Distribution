@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("google.earth.GETimeControl")
 @js.native
-class GETimeControl ()
+open class GETimeControl ()
   extends StObject
      with typings.googleEarth.google.earth.GETimeControl {
   

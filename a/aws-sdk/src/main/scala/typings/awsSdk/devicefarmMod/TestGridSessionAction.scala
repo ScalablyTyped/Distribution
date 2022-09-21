@@ -24,7 +24,7 @@ trait TestGridSessionAction extends StObject {
   /**
     * The time that the session invoked the action.
     */
-  var started: js.UndefOr[DateTime] = js.undefined
+  var started: js.UndefOr[js.Date] = js.undefined
   
   /**
     * HTTP status code returned to the browser when the action was taken.
@@ -52,7 +52,7 @@ object TestGridSessionAction {
     
     inline def setRequestMethodUndefined: Self = StObject.set(x, "requestMethod", js.undefined)
     
-    inline def setStarted(value: DateTime): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
+    inline def setStarted(value: js.Date): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
     
     inline def setStartedUndefined: Self = StObject.set(x, "started", js.undefined)
     

@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("tabris.Layout")
 @js.native
-class Layout protected ()
+open class Layout protected ()
   extends typings.tabris.mod.Layout {
+  /**
+    * Base class for all layout managers.
+    */
   /* protected */ def this(options: js.Object) = this()
 }

@@ -24,6 +24,6 @@ object FileSystemManagerGetSavedFileListSuccessCallbackResult {
     
     inline def setFileList(value: js.Array[FileItem]): Self = StObject.set(x, "fileList", value.asInstanceOf[js.Any])
     
-    inline def setFileListVarargs(value: FileItem*): Self = StObject.set(x, "fileList", js.Array(value :_*))
+    inline def setFileListVarargs(value: FileItem*): Self = StObject.set(x, "fileList", js.Array(value*))
   }
 }

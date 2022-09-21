@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html)
   */
-class UICls ()
+open class UICls ()
   extends StObject
      with typings.arcgisJsApi.esri.UI {
   def this(properties: UIProperties) = this()

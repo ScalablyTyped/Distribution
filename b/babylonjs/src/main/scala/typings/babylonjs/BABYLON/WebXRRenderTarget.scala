@@ -1,8 +1,8 @@
 package typings.babylonjs.BABYLON
 
-import typings.babylonjs.WebGLRenderingContext
 import typings.babylonjs.XRSession
 import typings.babylonjs.XRWebGLLayer
+import typings.std.WebGLRenderingContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ trait WebXRRenderTarget
   var canvasContext: WebGLRenderingContext
   
   /**
-    * Initializes the xr layer for the session
+    * Initializes a XRWebGLLayer to be used as the session's baseLayer.
     * @param xrSession xr session
     * @returns a promise that will resolve once the XR Layer has been created
     */

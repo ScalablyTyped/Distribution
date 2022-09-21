@@ -1,7 +1,7 @@
 
 # Scala.js typings for escape-goat
 
-Typings are for version 3.0.0
+Typings are for version 4.0.0
 
 ## Library description:
 Escape a string for use in HTML or the inverse
@@ -10,10 +10,10 @@ Escape a string for use in HTML or the inverse
 | ------------------ | :-------------: |
 | Full name          | escape-goat |
 | Keywords           | escape, unescape, html, entity, entities, escaping, sanitize, sanitization, utility, template, attribute, value, interpolate, xss, goat, 🐐 |
-| # releases         | 5 |
-| # dependents       | 80 |
-| # downloads        | 107357387 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 3.0402815666666668E7 |
+| # stars            | 437.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/escape-goat#readme)

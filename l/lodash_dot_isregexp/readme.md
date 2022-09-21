@@ -10,10 +10,10 @@ The lodash method `_.isRegExp` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.isregexp |
 | Keywords           | lodash-modularized, isregexp |
-| # releases         | 0 |
-| # dependents       | 62 |
-| # downloads        | 5023122 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 389768.3333333333 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

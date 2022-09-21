@@ -13,7 +13,7 @@ import typings.jws.jwsStrings.PS512
 import typings.jws.jwsStrings.RS256
 import typings.jws.jwsStrings.RS384
 import typings.jws.jwsStrings.RS512
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.node.streamMod.Readable
 import typings.node.streamMod.Writable
@@ -37,6 +37,8 @@ object mod {
   inline def createVerify(options: VerifyOptions): VerifyStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createVerify")(options.asInstanceOf[js.Any]).asInstanceOf[VerifyStream]
   
   inline def decode(signature: String): Signature = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(signature.asInstanceOf[js.Any]).asInstanceOf[Signature]
+  
+  inline def isValid(signature: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(signature.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def sign(options: SignOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
@@ -92,7 +94,7 @@ object mod {
       
       inline def setX5cUndefined: Self = StObject.set(x, "x5c", js.undefined)
       
-      inline def setX5cVarargs(value: String*): Self = StObject.set(x, "x5c", js.Array(value :_*))
+      inline def setX5cVarargs(value: String*): Self = StObject.set(x, "x5c", js.Array(value*))
       
       inline def setX5t(value: String): Self = StObject.set(x, "x5t", value.asInstanceOf[js.Any])
       
@@ -137,7 +139,7 @@ object mod {
       
       inline def setCritUndefined: Self = StObject.set(x, "crit", js.undefined)
       
-      inline def setCritVarargs(value: String*): Self = StObject.set(x, "crit", js.Array(value :_*))
+      inline def setCritVarargs(value: String*): Self = StObject.set(x, "crit", js.Array(value*))
       
       inline def setCty(value: String): Self = StObject.set(x, "cty", value.asInstanceOf[js.Any])
       
@@ -182,7 +184,7 @@ object mod {
       
       inline def setKey_opsUndefined: Self = StObject.set(x, "key_ops", js.undefined)
       
-      inline def setKey_opsVarargs(value: String*): Self = StObject.set(x, "key_ops", js.Array(value :_*))
+      inline def setKey_opsVarargs(value: String*): Self = StObject.set(x, "key_ops", js.Array(value*))
       
       inline def setKty(value: String): Self = StObject.set(x, "kty", value.asInstanceOf[js.Any])
       
@@ -192,7 +194,7 @@ object mod {
     }
   }
   
-  type PrivateProperties = StringDictionary[js.Any]
+  type PrivateProperties = StringDictionary[Any]
   
   trait SignOptions extends StObject {
     
@@ -203,22 +205,22 @@ object mod {
     /**
       * Can be a string, Buffer, Readable stream, or object.
       */
-    var key: js.UndefOr[js.Any] = js.undefined
+    var key: js.UndefOr[Any] = js.undefined
     
     /**
       * Can be a string, Buffer, Readable stream, or object.
       */
-    var payload: js.UndefOr[js.Any] = js.undefined
+    var payload: js.UndefOr[Any] = js.undefined
     
     /**
       * Can be a string, Buffer, Readable stream, or object.
       */
-    var privateKey: js.UndefOr[js.Any] = js.undefined
+    var privateKey: js.UndefOr[Any] = js.undefined
     
     /**
       * Can be a string, Buffer, Readable stream, or object.
       */
-    var secret: js.UndefOr[js.Any] = js.undefined
+    var secret: js.UndefOr[Any] = js.undefined
   }
   object SignOptions {
     
@@ -235,19 +237,19 @@ object mod {
       
       inline def setHeader(value: Header): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      inline def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
       inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      inline def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
       inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
       
-      inline def setPrivateKey(value: js.Any): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
+      inline def setPrivateKey(value: Any): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
       
       inline def setPrivateKeyUndefined: Self = StObject.set(x, "privateKey", js.undefined)
       
-      inline def setSecret(value: js.Any): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+      inline def setSecret(value: Any): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
       
       inline def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
     }
@@ -259,7 +261,7 @@ object mod {
     /**
       * Can be a string, Buffer, Readable stream, or object.
       */
-    var key: js.Any = js.native
+    var key: Any = js.native
     
     /**
       * A Writable Stream that expects the JWS payload. Do not
@@ -276,25 +278,25 @@ object mod {
       *
       * Example: privateKeyStream.pipe(signer.privateKey);
       */
-    var privateKey: js.Any = js.native
+    var privateKey: Any = js.native
     
     /**
       * Can be a string, Buffer, Readable stream, or object.
       */
-    var secret: js.Any = js.native
+    var secret: Any = js.native
   }
   
   trait Signature extends StObject {
     
     var header: Header
     
-    var payload: js.Any
+    var payload: Any
     
     var signature: String
   }
   object Signature {
     
-    inline def apply(header: Header, payload: js.Any, signature: String): Signature = {
+    inline def apply(header: Header, payload: Any, signature: String): Signature = {
       val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any])
       __obj.asInstanceOf[Signature]
     }
@@ -303,7 +305,7 @@ object mod {
       
       inline def setHeader(value: Header): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      inline def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
       inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     }
@@ -364,7 +366,7 @@ object mod {
     /**
       * Key.  Can be a string, buffer, or object.
       */
-    var key: js.Any = js.native
+    var key: Any = js.native
     
     /**
       * A Writable Stream that expects a public key or secret.
@@ -376,7 +378,7 @@ object mod {
     /**
       * Secret.  Can be a string, buffer, or object.
       */
-    var secret: js.Any = js.native
+    var secret: Any = js.native
     
     /**
       * A Writable Stream that expects a JWS Signature. Do not

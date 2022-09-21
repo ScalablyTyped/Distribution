@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@aws-sdk/middleware-logger" : "1.0.0-rc.7"
+      "@aws-sdk/middleware-logger" : "3.171.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@aws-sdk/middleware-logger" : "1.0.0-rc.7"
+      "@aws-sdk/middleware-logger" : "3.171.0"
     }
   ],
   "compile-devDependencies" : [

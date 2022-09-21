@@ -10,10 +10,10 @@ observe-js is a library for observing changes on JavaScript objects/arrays
 | ------------------ | :-------------: |
 | Full name          | observe-js |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 17 |
-| # downloads        | 19626 |
-| # stars            | 7 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3756.3333333333335 |
+| # stars            | 1359.0 |
 
 ## Links
 - [Homepage](https://github.com/Polymer/observe-js#readme)

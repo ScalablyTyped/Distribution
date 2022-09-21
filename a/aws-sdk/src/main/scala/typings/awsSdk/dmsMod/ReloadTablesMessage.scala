@@ -38,6 +38,6 @@ object ReloadTablesMessage {
     
     inline def setTablesToReload(value: TableListToReload): Self = StObject.set(x, "TablesToReload", value.asInstanceOf[js.Any])
     
-    inline def setTablesToReloadVarargs(value: TableToReload*): Self = StObject.set(x, "TablesToReload", js.Array(value :_*))
+    inline def setTablesToReloadVarargs(value: TableToReload*): Self = StObject.set(x, "TablesToReload", js.Array(value*))
   }
 }

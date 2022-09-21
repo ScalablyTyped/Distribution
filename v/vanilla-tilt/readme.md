@@ -1,7 +1,7 @@
 
 # Scala.js typings for vanilla-tilt
 
-Typings are for version 1.7.0
+Typings are for version 1.7.2
 
 ## Library description:
 A smooth 3D tilt javascript library forked from Tilt.js
@@ -10,10 +10,10 @@ A smooth 3D tilt javascript library forked from Tilt.js
 | ------------------ | :-------------: |
 | Full name          | vanilla-tilt |
 | Keywords           | tilt, effect, vanilla, js, 60fps, smooth, tilt.js |
-| # releases         | 4 |
-| # dependents       | 4 |
-| # downloads        | 145859 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 48265.333333333336 |
+| # stars            | 3057.0 |
 
 ## Links
 - [Homepage](https://github.com/micku7zu/vanilla-tilt.js#readme)

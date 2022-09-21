@@ -1,6 +1,6 @@
 package typings.sawtoothSdk
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.sawtoothSdk.coreMod.Context
 import typings.sawtoothSdk.coreMod.PrivateKey
 import typings.sawtoothSdk.coreMod.PublicKey
@@ -13,7 +13,7 @@ object secp256k1Mod {
   
   @JSImport("sawtooth-sdk/signing/secp256k1", "Secp256k1Context")
   @js.native
-  class Secp256k1Context () extends Context {
+  open class Secp256k1Context () extends Context {
     
     /**
       * Return a computed Secp256k1PublicKey from a Secp256k1PrivateKey.
@@ -43,7 +43,7 @@ object secp256k1Mod {
   
   @JSImport("sawtooth-sdk/signing/secp256k1", "Secp256k1PrivateKey")
   @js.native
-  class Secp256k1PrivateKey protected () extends PrivateKey {
+  open class Secp256k1PrivateKey protected () extends PrivateKey {
     def this(privateKeyBytes: Buffer) = this()
     
     /** The bytes of the public key */
@@ -74,7 +74,7 @@ object secp256k1Mod {
   
   @JSImport("sawtooth-sdk/signing/secp256k1", "Secp256k1PublicKey")
   @js.native
-  class Secp256k1PublicKey protected () extends PublicKey {
+  open class Secp256k1PublicKey protected () extends PublicKey {
     def this(publicKeyBytes: Buffer) = this()
     
     /** The bytes of the public key */

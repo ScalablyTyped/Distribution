@@ -15,7 +15,7 @@ object nsisLangMod {
   
   @JSImport("app-builder-lib/out/targets/nsis/nsisLang", "LangConfigurator")
   @js.native
-  class LangConfigurator protected () extends StObject {
+  open class LangConfigurator protected () extends StObject {
     def this(options: NsisOptions) = this()
     
     val isMultiLang: Boolean = js.native
@@ -25,7 +25,7 @@ object nsisLangMod {
   
   inline def addCustomMessageFileInclude(
     input: String,
-    packager: PlatformPackager[js.Any],
+    packager: PlatformPackager[Any],
     scriptGenerator: NsisScriptGenerator,
     langConfigurator: LangConfigurator
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("addCustomMessageFileInclude")(input.asInstanceOf[js.Any], packager.asInstanceOf[js.Any], scriptGenerator.asInstanceOf[js.Any], langConfigurator.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]

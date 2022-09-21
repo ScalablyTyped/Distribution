@@ -1,13 +1,14 @@
 package typings.ckeditorCkeditor5Engine.anon
 
-import typings.ckeditorCkeditor5Utils.mod.PriorityString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Priority extends StObject {
   
-  var priority: js.UndefOr[PriorityString | Double] = js.undefined
+  var priority: js.UndefOr[
+    Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PriorityString */ Any)
+  ] = js.undefined
 }
 object Priority {
   
@@ -18,7 +19,9 @@ object Priority {
   
   extension [Self <: Priority](x: Self) {
     
-    inline def setPriority(value: PriorityString | Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(
+      value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PriorityString */ Any)
+    ): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
   }

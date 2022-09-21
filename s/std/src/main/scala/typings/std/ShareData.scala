@@ -6,10 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ShareData extends StObject {
   
+  /* standard dom */
+  var files: js.UndefOr[js.Array[File]] = js.undefined
+  
+  /* standard dom */
   var text: js.UndefOr[java.lang.String] = js.undefined
   
+  /* standard dom */
   var title: js.UndefOr[java.lang.String] = js.undefined
   
+  /* standard dom */
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 object ShareData {
@@ -20,6 +26,12 @@ object ShareData {
   }
   
   extension [Self <: ShareData](x: Self) {
+    
+    inline def setFiles(value: js.Array[File]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    
+    inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+    
+    inline def setFilesVarargs(value: File*): Self = StObject.set(x, "files", js.Array(value*))
     
     inline def setText(value: java.lang.String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

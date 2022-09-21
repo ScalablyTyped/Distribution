@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "dom-loaded" : "2.0.0"
+      "dom-loaded" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "dom-loaded" : "2.0.0"
+      "dom-loaded" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

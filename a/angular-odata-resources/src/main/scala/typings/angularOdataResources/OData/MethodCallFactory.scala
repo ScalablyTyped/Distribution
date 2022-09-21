@@ -8,4 +8,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait MethodCallFactory
   extends StObject
-     with Instantiable2[/* methodName */ String, /* args (repeated) */ js.Any, MethodCall]
+     with Instantiable2[/* methodName */ String, /* args (repeated) */ Any, MethodCall]

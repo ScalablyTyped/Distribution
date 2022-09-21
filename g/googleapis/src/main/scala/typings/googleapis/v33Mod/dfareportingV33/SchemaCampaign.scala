@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Contains properties of a Campaign Manager campaign.
-  */
 trait SchemaCampaign extends StObject {
   
   /**
-    * Account ID of this campaign. This is a read-only field that can be left
-    * blank.
+    * Account ID of this campaign. This is a read-only field that can be left blank.
     */
-  var accountId: js.UndefOr[String] = js.undefined
+  var accountId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Ad blocking settings for this campaign.
@@ -28,35 +24,32 @@ trait SchemaCampaign extends StObject {
   /**
     * Advertiser group ID of the associated advertiser.
     */
-  var advertiserGroupId: js.UndefOr[String] = js.undefined
+  var advertiserGroupId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Advertiser ID of this campaign. This is a required field.
     */
-  var advertiserId: js.UndefOr[String] = js.undefined
+  var advertiserId: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Dimension value for the advertiser ID of this campaign. This is a
-    * read-only, auto-generated field.
+    * Dimension value for the advertiser ID of this campaign. This is a read-only, auto-generated field.
     */
   var advertiserIdDimensionValue: js.UndefOr[SchemaDimensionValue] = js.undefined
   
   /**
     * Whether this campaign has been archived.
     */
-  var archived: js.UndefOr[Boolean] = js.undefined
+  var archived: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * Audience segment groups assigned to this campaign. Cannot have more than
-    * 300 segment groups.
+    * Audience segment groups assigned to this campaign. Cannot have more than 300 segment groups.
     */
   var audienceSegmentGroups: js.UndefOr[js.Array[SchemaAudienceSegmentGroup]] = js.undefined
   
   /**
-    * Billing invoice code included in the Campaign Manager client billing
-    * invoices associated with the campaign.
+    * Billing invoice code included in the Campaign Manager client billing invoices associated with the campaign.
     */
-  var billingInvoiceCode: js.UndefOr[String] = js.undefined
+  var billingInvoiceCode: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Click-through URL suffix override properties for this campaign.
@@ -64,21 +57,19 @@ trait SchemaCampaign extends StObject {
   var clickThroughUrlSuffixProperties: js.UndefOr[SchemaClickThroughUrlSuffixProperties] = js.undefined
   
   /**
-    * Arbitrary comments about this campaign. Must be less than 256 characters
-    * long.
+    * Arbitrary comments about this campaign. Must be less than 256 characters long.
     */
-  var comment: js.UndefOr[String] = js.undefined
+  var comment: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Information about the creation of this campaign. This is a read-only
-    * field.
+    * Information about the creation of this campaign. This is a read-only field.
     */
   var createInfo: js.UndefOr[SchemaLastModifiedInfo] = js.undefined
   
   /**
     * List of creative group IDs that are assigned to the campaign.
     */
-  var creativeGroupIds: js.UndefOr[js.Array[String]] = js.undefined
+  var creativeGroupIds: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
     * Creative optimization configuration for the campaign.
@@ -93,81 +84,61 @@ trait SchemaCampaign extends StObject {
   /**
     * The default landing page ID for this campaign.
     */
-  var defaultLandingPageId: js.UndefOr[String] = js.undefined
+  var defaultLandingPageId: js.UndefOr[String | Null] = js.undefined
+  
+  var endDate: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Date on which the campaign will stop running. On insert, the end date
-    * must be today or a future date. The end date must be later than or be the
-    * same as the start date. If, for example, you set 6/25/2015 as both the
-    * start and end dates, the effective campaign run date is just that day
-    * only, 6/25/2015. The hours, minutes, and seconds of the end date should
-    * not be set, as doing so will result in an error. This is a required
-    * field.
-    */
-  var endDate: js.UndefOr[String] = js.undefined
-  
-  /**
-    * Overrides that can be used to activate or deactivate advertiser event
-    * tags.
+    * Overrides that can be used to activate or deactivate advertiser event tags.
     */
   var eventTagOverrides: js.UndefOr[js.Array[SchemaEventTagOverride]] = js.undefined
   
   /**
     * External ID for this campaign.
     */
-  var externalId: js.UndefOr[String] = js.undefined
+  var externalId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * ID of this campaign. This is a read-only auto-generated field.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Dimension value for the ID of this campaign. This is a read-only,
-    * auto-generated field.
+    * Dimension value for the ID of this campaign. This is a read-only, auto-generated field.
     */
   var idDimensionValue: js.UndefOr[SchemaDimensionValue] = js.undefined
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;dfareporting#campaign&quot;.
+    * Identifies what kind of resource this is. Value: the fixed string "dfareporting#campaign".
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Information about the most recent modification of this campaign. This is
-    * a read-only field.
+    * Information about the most recent modification of this campaign. This is a read-only field.
     */
   var lastModifiedInfo: js.UndefOr[SchemaLastModifiedInfo] = js.undefined
   
   /**
-    * Name of this campaign. This is a required field and must be less than 256
-    * characters long and unique among campaigns of the same advertiser.
+    * Name of this campaign. This is a required field and must be less than 256 characters long and unique among campaigns of the same advertiser.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Whether Nielsen reports are enabled for this campaign.
     */
-  var nielsenOcrEnabled: js.UndefOr[Boolean] = js.undefined
+  var nielsenOcrEnabled: js.UndefOr[Boolean | Null] = js.undefined
+  
+  var startDate: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Date on which the campaign starts running. The start date can be any
-    * date. The hours, minutes, and seconds of the start date should not be
-    * set, as doing so will result in an error. This is a required field.
+    * Subaccount ID of this campaign. This is a read-only field that can be left blank.
     */
-  var startDate: js.UndefOr[String] = js.undefined
-  
-  /**
-    * Subaccount ID of this campaign. This is a read-only field that can be
-    * left blank.
-    */
-  var subaccountId: js.UndefOr[String] = js.undefined
+  var subaccountId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Campaign trafficker contact emails.
     */
-  var traffickerEmails: js.UndefOr[js.Array[String]] = js.undefined
+  var traffickerEmails: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaCampaign {
   
@@ -180,6 +151,8 @@ object SchemaCampaign {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
+    inline def setAccountIdNull: Self = StObject.set(x, "accountId", null)
+    
     inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
     inline def setAdBlockingConfiguration(value: SchemaAdBlockingConfiguration): Self = StObject.set(x, "adBlockingConfiguration", value.asInstanceOf[js.Any])
@@ -190,9 +163,11 @@ object SchemaCampaign {
     
     inline def setAdditionalCreativeOptimizationConfigurationsUndefined: Self = StObject.set(x, "additionalCreativeOptimizationConfigurations", js.undefined)
     
-    inline def setAdditionalCreativeOptimizationConfigurationsVarargs(value: SchemaCreativeOptimizationConfiguration*): Self = StObject.set(x, "additionalCreativeOptimizationConfigurations", js.Array(value :_*))
+    inline def setAdditionalCreativeOptimizationConfigurationsVarargs(value: SchemaCreativeOptimizationConfiguration*): Self = StObject.set(x, "additionalCreativeOptimizationConfigurations", js.Array(value*))
     
     inline def setAdvertiserGroupId(value: String): Self = StObject.set(x, "advertiserGroupId", value.asInstanceOf[js.Any])
+    
+    inline def setAdvertiserGroupIdNull: Self = StObject.set(x, "advertiserGroupId", null)
     
     inline def setAdvertiserGroupIdUndefined: Self = StObject.set(x, "advertiserGroupId", js.undefined)
     
@@ -202,9 +177,13 @@ object SchemaCampaign {
     
     inline def setAdvertiserIdDimensionValueUndefined: Self = StObject.set(x, "advertiserIdDimensionValue", js.undefined)
     
+    inline def setAdvertiserIdNull: Self = StObject.set(x, "advertiserId", null)
+    
     inline def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
     
     inline def setArchived(value: Boolean): Self = StObject.set(x, "archived", value.asInstanceOf[js.Any])
+    
+    inline def setArchivedNull: Self = StObject.set(x, "archived", null)
     
     inline def setArchivedUndefined: Self = StObject.set(x, "archived", js.undefined)
     
@@ -212,9 +191,11 @@ object SchemaCampaign {
     
     inline def setAudienceSegmentGroupsUndefined: Self = StObject.set(x, "audienceSegmentGroups", js.undefined)
     
-    inline def setAudienceSegmentGroupsVarargs(value: SchemaAudienceSegmentGroup*): Self = StObject.set(x, "audienceSegmentGroups", js.Array(value :_*))
+    inline def setAudienceSegmentGroupsVarargs(value: SchemaAudienceSegmentGroup*): Self = StObject.set(x, "audienceSegmentGroups", js.Array(value*))
     
     inline def setBillingInvoiceCode(value: String): Self = StObject.set(x, "billingInvoiceCode", value.asInstanceOf[js.Any])
+    
+    inline def setBillingInvoiceCodeNull: Self = StObject.set(x, "billingInvoiceCode", null)
     
     inline def setBillingInvoiceCodeUndefined: Self = StObject.set(x, "billingInvoiceCode", js.undefined)
     
@@ -224,6 +205,8 @@ object SchemaCampaign {
     
     inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
+    inline def setCommentNull: Self = StObject.set(x, "comment", null)
+    
     inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
     inline def setCreateInfo(value: SchemaLastModifiedInfo): Self = StObject.set(x, "createInfo", value.asInstanceOf[js.Any])
@@ -232,9 +215,11 @@ object SchemaCampaign {
     
     inline def setCreativeGroupIds(value: js.Array[String]): Self = StObject.set(x, "creativeGroupIds", value.asInstanceOf[js.Any])
     
+    inline def setCreativeGroupIdsNull: Self = StObject.set(x, "creativeGroupIds", null)
+    
     inline def setCreativeGroupIdsUndefined: Self = StObject.set(x, "creativeGroupIds", js.undefined)
     
-    inline def setCreativeGroupIdsVarargs(value: String*): Self = StObject.set(x, "creativeGroupIds", js.Array(value :_*))
+    inline def setCreativeGroupIdsVarargs(value: String*): Self = StObject.set(x, "creativeGroupIds", js.Array(value*))
     
     inline def setCreativeOptimizationConfiguration(value: SchemaCreativeOptimizationConfiguration): Self = StObject.set(x, "creativeOptimizationConfiguration", value.asInstanceOf[js.Any])
     
@@ -246,9 +231,13 @@ object SchemaCampaign {
     
     inline def setDefaultLandingPageId(value: String): Self = StObject.set(x, "defaultLandingPageId", value.asInstanceOf[js.Any])
     
+    inline def setDefaultLandingPageIdNull: Self = StObject.set(x, "defaultLandingPageId", null)
+    
     inline def setDefaultLandingPageIdUndefined: Self = StObject.set(x, "defaultLandingPageId", js.undefined)
     
     inline def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+    
+    inline def setEndDateNull: Self = StObject.set(x, "endDate", null)
     
     inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
     
@@ -256,9 +245,11 @@ object SchemaCampaign {
     
     inline def setEventTagOverridesUndefined: Self = StObject.set(x, "eventTagOverrides", js.undefined)
     
-    inline def setEventTagOverridesVarargs(value: SchemaEventTagOverride*): Self = StObject.set(x, "eventTagOverrides", js.Array(value :_*))
+    inline def setEventTagOverridesVarargs(value: SchemaEventTagOverride*): Self = StObject.set(x, "eventTagOverrides", js.Array(value*))
     
     inline def setExternalId(value: String): Self = StObject.set(x, "externalId", value.asInstanceOf[js.Any])
+    
+    inline def setExternalIdNull: Self = StObject.set(x, "externalId", null)
     
     inline def setExternalIdUndefined: Self = StObject.set(x, "externalId", js.undefined)
     
@@ -268,9 +259,13 @@ object SchemaCampaign {
     
     inline def setIdDimensionValueUndefined: Self = StObject.set(x, "idDimensionValue", js.undefined)
     
+    inline def setIdNull: Self = StObject.set(x, "id", null)
+    
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
@@ -280,24 +275,34 @@ object SchemaCampaign {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setNielsenOcrEnabled(value: Boolean): Self = StObject.set(x, "nielsenOcrEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setNielsenOcrEnabledNull: Self = StObject.set(x, "nielsenOcrEnabled", null)
     
     inline def setNielsenOcrEnabledUndefined: Self = StObject.set(x, "nielsenOcrEnabled", js.undefined)
     
     inline def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
+    inline def setStartDateNull: Self = StObject.set(x, "startDate", null)
+    
     inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
     
     inline def setSubaccountId(value: String): Self = StObject.set(x, "subaccountId", value.asInstanceOf[js.Any])
+    
+    inline def setSubaccountIdNull: Self = StObject.set(x, "subaccountId", null)
     
     inline def setSubaccountIdUndefined: Self = StObject.set(x, "subaccountId", js.undefined)
     
     inline def setTraffickerEmails(value: js.Array[String]): Self = StObject.set(x, "traffickerEmails", value.asInstanceOf[js.Any])
     
+    inline def setTraffickerEmailsNull: Self = StObject.set(x, "traffickerEmails", null)
+    
     inline def setTraffickerEmailsUndefined: Self = StObject.set(x, "traffickerEmails", js.undefined)
     
-    inline def setTraffickerEmailsVarargs(value: String*): Self = StObject.set(x, "traffickerEmails", js.Array(value :_*))
+    inline def setTraffickerEmailsVarargs(value: String*): Self = StObject.set(x, "traffickerEmails", js.Array(value*))
   }
 }

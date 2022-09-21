@@ -10,9 +10,9 @@ A shell for Q to enable retries.
 | Full name          | q-retry |
 | Keywords           | q, retry, promise |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 3660 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 291.3333333333333 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/vilic/q-retry)

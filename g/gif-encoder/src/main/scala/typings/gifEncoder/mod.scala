@@ -19,10 +19,9 @@ import typings.gifEncoder.gifEncoderStrings.readable
 import typings.gifEncoder.gifEncoderStrings.resume
 import typings.gifEncoder.gifEncoderStrings.writeHeaderNumbersignstart
 import typings.gifEncoder.gifEncoderStrings.writeHeaderNumbersignstop
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Readable
 import typings.std.ArrayLike
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,7 +30,7 @@ object mod {
   
   @JSImport("gif-encoder", JSImport.Namespace)
   @js.native
-  class ^ protected () extends GIFEncoder {
+  open class ^ protected () extends GIFEncoder {
     def this(
       /**
       * Width, in pixels, of the GIF to output.
@@ -127,59 +126,23 @@ object mod {
       */
     def flushData(): Unit = js.native
     
-    @JSName("on")
-    def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
+    def on(
+      event: close | end | pause | resume | readable | writeHeaderNumbersignstart | writeHeaderNumbersignstop | frameNumbersignstart | frameNumbersignstop | finishNumbersignstart | finishNumbersignstop,
+      listener: js.Function0[Unit]
+    ): this.type = js.native
     @JSName("on")
     def on_data(event: data, listener: js.Function1[/* chunk */ Buffer, Unit]): this.type = js.native
     @JSName("on")
-    def on_end(event: end, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
-    @JSName("on")
-    def on_finishstart(event: finishNumbersignstart, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_finishstop(event: finishNumbersignstop, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_framestart(event: frameNumbersignstart, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_framestop(event: frameNumbersignstop, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_writeHeaderstart(event: writeHeaderNumbersignstart, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("on")
-    def on_writeHeaderstop(event: writeHeaderNumbersignstop, listener: js.Function0[Unit]): this.type = js.native
+    def on_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     
-    @JSName("once")
-    def once_close(event: close, listener: js.Function0[Unit]): this.type = js.native
+    def once(
+      event: close | end | pause | resume | readable | writeHeaderNumbersignstart | writeHeaderNumbersignstop | frameNumbersignstart | frameNumbersignstop | finishNumbersignstart | finishNumbersignstop,
+      listener: js.Function0[Unit]
+    ): this.type = js.native
     @JSName("once")
     def once_data(event: data, listener: js.Function1[/* chunk */ Buffer, Unit]): this.type = js.native
     @JSName("once")
-    def once_end(event: end, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("once")
-    def once_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
-    @JSName("once")
-    def once_finishstart(event: finishNumbersignstart, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("once")
-    def once_finishstop(event: finishNumbersignstop, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("once")
-    def once_framestart(event: frameNumbersignstart, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("once")
-    def once_framestop(event: frameNumbersignstop, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("once")
-    def once_pause(event: pause, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("once")
-    def once_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("once")
-    def once_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("once")
-    def once_writeHeaderstart(event: writeHeaderNumbersignstart, listener: js.Function0[Unit]): this.type = js.native
-    @JSName("once")
-    def once_writeHeaderstop(event: writeHeaderNumbersignstop, listener: js.Function0[Unit]): this.type = js.native
+    def once_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     
     /**
       * Third part of addFrame; encodes the analyzed/indexed pixels for the GIF format.
@@ -214,8 +177,7 @@ object mod {
     /**
       * Alters behavior of how to render between frames.
       */
-    @JSName("setDispose")
-    def setDispose_0(
+    def setDispose(
       /**
       * If no transparent color has been set, defaults to 0.
       * Otherwise, defaults to 2.
@@ -233,70 +195,7 @@ object mod {
       *      restore the area overwritten by the graphic with
       *      what was there prior to rendering the graphic.
       */
-    disposalCode: `0`
-    ): Unit = js.native
-    @JSName("setDispose")
-    def setDispose_1(
-      /**
-      * If no transparent color has been set, defaults to 0.
-      * Otherwise, defaults to 2.
-      *
-      * 0 -  No disposal specified. The decoder is
-      *      not required to take any action.
-      *
-      * 1 -  Do not dispose. The graphic is to be left
-      *      in place.
-      *
-      * 2 -  Restore to background color. The area used by the
-      *      graphic must be restored to the background color.
-      *
-      * 3 -  Restore to previous. The decoder is required to
-      *      restore the area overwritten by the graphic with
-      *      what was there prior to rendering the graphic.
-      */
-    disposalCode: `1`
-    ): Unit = js.native
-    @JSName("setDispose")
-    def setDispose_2(
-      /**
-      * If no transparent color has been set, defaults to 0.
-      * Otherwise, defaults to 2.
-      *
-      * 0 -  No disposal specified. The decoder is
-      *      not required to take any action.
-      *
-      * 1 -  Do not dispose. The graphic is to be left
-      *      in place.
-      *
-      * 2 -  Restore to background color. The area used by the
-      *      graphic must be restored to the background color.
-      *
-      * 3 -  Restore to previous. The decoder is required to
-      *      restore the area overwritten by the graphic with
-      *      what was there prior to rendering the graphic.
-      */
-    disposalCode: `2`
-    ): Unit = js.native
-    @JSName("setDispose")
-    def setDispose_3(
-      /**
-      * If no transparent color has been set, defaults to 0.
-      * Otherwise, defaults to 2.
-      *
-      * 0 -  No disposal specified. The decoder is
-      *      not required to take any action.
-      *
-      * 1 -  Do not dispose. The graphic is to be left
-      *      in place.
-      *
-      * 2 -  Restore to background color. The area used by the
-      *      graphic must be restored to the background color.
-      *
-      * 3 -  Restore to previous. The decoder is required to
-      *      restore the area overwritten by the graphic with
-      *      what was there prior to rendering the graphic.
-      */
-    disposalCode: `3`
+    disposalCode: `0` | `1` | `2` | `3`
     ): Unit = js.native
     
     /**

@@ -1,5 +1,6 @@
 package typings.playcanvas.anon
 
+import typings.playcanvas.mod.Asset_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,11 +9,11 @@ trait Loop extends StObject {
   
   var fps: js.UndefOr[Double] = js.undefined
   
-  var loop: js.UndefOr[js.Any] = js.undefined
+  var loop: js.UndefOr[Boolean] = js.undefined
   
   var name: js.UndefOr[String] = js.undefined
   
-  var spriteAsset: js.UndefOr[Double] = js.undefined
+  var spriteAsset: js.UndefOr[Double | Asset_] = js.undefined
 }
 object Loop {
   
@@ -27,7 +28,7 @@ object Loop {
     
     inline def setFpsUndefined: Self = StObject.set(x, "fps", js.undefined)
     
-    inline def setLoop(value: js.Any): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+    inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
     inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
     
@@ -35,7 +36,7 @@ object Loop {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setSpriteAsset(value: Double): Self = StObject.set(x, "spriteAsset", value.asInstanceOf[js.Any])
+    inline def setSpriteAsset(value: Double | Asset_): Self = StObject.set(x, "spriteAsset", value.asInstanceOf[js.Any])
     
     inline def setSpriteAssetUndefined: Self = StObject.set(x, "spriteAsset", js.undefined)
   }

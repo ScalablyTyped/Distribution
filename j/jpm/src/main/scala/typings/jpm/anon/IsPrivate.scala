@@ -9,13 +9,13 @@ trait IsPrivate extends StObject {
   
   var isPrivate: js.UndefOr[Boolean] = js.undefined
   
-  var onActivate: js.UndefOr[js.Function1[/* window */ BrowserWindow, js.Any]] = js.undefined
+  var onActivate: js.UndefOr[js.Function1[/* window */ BrowserWindow, Any]] = js.undefined
   
-  var onClose: js.UndefOr[js.Function1[/* window */ BrowserWindow, js.Any]] = js.undefined
+  var onClose: js.UndefOr[js.Function1[/* window */ BrowserWindow, Any]] = js.undefined
   
-  var onDeactivate: js.UndefOr[js.Function1[/* window */ BrowserWindow, js.Any]] = js.undefined
+  var onDeactivate: js.UndefOr[js.Function1[/* window */ BrowserWindow, Any]] = js.undefined
   
-  var onOpen: js.UndefOr[js.Function1[/* window */ BrowserWindow, js.Any]] = js.undefined
+  var onOpen: js.UndefOr[js.Function1[/* window */ BrowserWindow, Any]] = js.undefined
   
   var url: String
 }
@@ -32,19 +32,19 @@ object IsPrivate {
     
     inline def setIsPrivateUndefined: Self = StObject.set(x, "isPrivate", js.undefined)
     
-    inline def setOnActivate(value: /* window */ BrowserWindow => js.Any): Self = StObject.set(x, "onActivate", js.Any.fromFunction1(value))
+    inline def setOnActivate(value: /* window */ BrowserWindow => Any): Self = StObject.set(x, "onActivate", js.Any.fromFunction1(value))
     
     inline def setOnActivateUndefined: Self = StObject.set(x, "onActivate", js.undefined)
     
-    inline def setOnClose(value: /* window */ BrowserWindow => js.Any): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+    inline def setOnClose(value: /* window */ BrowserWindow => Any): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
     
     inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
     
-    inline def setOnDeactivate(value: /* window */ BrowserWindow => js.Any): Self = StObject.set(x, "onDeactivate", js.Any.fromFunction1(value))
+    inline def setOnDeactivate(value: /* window */ BrowserWindow => Any): Self = StObject.set(x, "onDeactivate", js.Any.fromFunction1(value))
     
     inline def setOnDeactivateUndefined: Self = StObject.set(x, "onDeactivate", js.undefined)
     
-    inline def setOnOpen(value: /* window */ BrowserWindow => js.Any): Self = StObject.set(x, "onOpen", js.Any.fromFunction1(value))
+    inline def setOnOpen(value: /* window */ BrowserWindow => Any): Self = StObject.set(x, "onOpen", js.Any.fromFunction1(value))
     
     inline def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
     

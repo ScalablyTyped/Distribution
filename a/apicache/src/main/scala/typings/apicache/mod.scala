@@ -2,7 +2,6 @@ package typings.apicache
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.apicache.anon.Exclude
-import typings.redis.mod.RedisClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,45 +12,46 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def clear(target: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(target.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def clear(target: js.Array[js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(target.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def clear(target: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(target.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def clear(target: js.Array[Any]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(target.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def clone_(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")().asInstanceOf[js.Any]
+  inline def clone_(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")().asInstanceOf[Any]
   
-  inline def getDuration(duration: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getDuration")(duration.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def getDuration(duration: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getDuration")(duration.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getDuration(duration: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getDuration")(duration.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def getDuration(duration: Double): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getDuration")(duration.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def getIndex(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getIndex")().asInstanceOf[js.Any]
+  inline def getIndex(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getIndex")().asInstanceOf[Any]
   
-  inline def getPerformance(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getPerformance")().asInstanceOf[js.Any]
+  inline def getPerformance(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getPerformance")().asInstanceOf[Any]
   
   @JSImport("apicache", "id")
   @js.native
   val id: Double = js.native
   
-  inline def middleware(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("middleware")().asInstanceOf[js.Any]
-  inline def middleware(duration: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(duration.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def middleware(duration: String, toggleMiddleware: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(duration.asInstanceOf[js.Any], toggleMiddleware.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def middleware(duration: String, toggleMiddleware: js.Any, localOptions: Options_): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(duration.asInstanceOf[js.Any], toggleMiddleware.asInstanceOf[js.Any], localOptions.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def middleware(duration: String, toggleMiddleware: Unit, localOptions: Options_): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(duration.asInstanceOf[js.Any], toggleMiddleware.asInstanceOf[js.Any], localOptions.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def middleware(duration: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(duration.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def middleware(duration: Double, toggleMiddleware: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(duration.asInstanceOf[js.Any], toggleMiddleware.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def middleware(duration: Double, toggleMiddleware: js.Any, localOptions: Options_): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(duration.asInstanceOf[js.Any], toggleMiddleware.asInstanceOf[js.Any], localOptions.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def middleware(duration: Double, toggleMiddleware: Unit, localOptions: Options_): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(duration.asInstanceOf[js.Any], toggleMiddleware.asInstanceOf[js.Any], localOptions.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def middleware(duration: Unit, toggleMiddleware: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(duration.asInstanceOf[js.Any], toggleMiddleware.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def middleware(duration: Unit, toggleMiddleware: js.Any, localOptions: Options_): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(duration.asInstanceOf[js.Any], toggleMiddleware.asInstanceOf[js.Any], localOptions.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def middleware(duration: Unit, toggleMiddleware: Unit, localOptions: Options_): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(duration.asInstanceOf[js.Any], toggleMiddleware.asInstanceOf[js.Any], localOptions.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def middleware(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("middleware")().asInstanceOf[Any]
+  inline def middleware(duration: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(duration.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def middleware(duration: String, toggleMiddleware: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(duration.asInstanceOf[js.Any], toggleMiddleware.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def middleware(duration: String, toggleMiddleware: Any, localOptions: Options_): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(duration.asInstanceOf[js.Any], toggleMiddleware.asInstanceOf[js.Any], localOptions.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def middleware(duration: String, toggleMiddleware: Unit, localOptions: Options_): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(duration.asInstanceOf[js.Any], toggleMiddleware.asInstanceOf[js.Any], localOptions.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def middleware(duration: Double): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(duration.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def middleware(duration: Double, toggleMiddleware: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(duration.asInstanceOf[js.Any], toggleMiddleware.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def middleware(duration: Double, toggleMiddleware: Any, localOptions: Options_): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(duration.asInstanceOf[js.Any], toggleMiddleware.asInstanceOf[js.Any], localOptions.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def middleware(duration: Double, toggleMiddleware: Unit, localOptions: Options_): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(duration.asInstanceOf[js.Any], toggleMiddleware.asInstanceOf[js.Any], localOptions.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def middleware(duration: Unit, toggleMiddleware: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(duration.asInstanceOf[js.Any], toggleMiddleware.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def middleware(duration: Unit, toggleMiddleware: Any, localOptions: Options_): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(duration.asInstanceOf[js.Any], toggleMiddleware.asInstanceOf[js.Any], localOptions.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def middleware(duration: Unit, toggleMiddleware: Unit, localOptions: Options_): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(duration.asInstanceOf[js.Any], toggleMiddleware.asInstanceOf[js.Any], localOptions.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def newInstance(config: Options_): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("newInstance")(config.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def newInstance(config: Options_): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("newInstance")(config.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def options(options: Options_): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("options")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def options(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("options")().asInstanceOf[Any]
+  inline def options(options: Options_): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("options")(options.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def resetIndex(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetIndex")().asInstanceOf[Unit]
   
   trait Options_ extends StObject {
     
     /** appendKey takes the req/res objects and returns a custom value to extend the cache key */
-    var appendKey: js.UndefOr[js.Any] = js.undefined
+    var appendKey: js.UndefOr[Any] = js.undefined
     
     /** if true, enables console output */
     var debug: js.UndefOr[Boolean] = js.undefined
@@ -73,7 +73,9 @@ object mod {
     /**
       * if provided, uses the [node-redis](https://github.com/NodeRedis/node_redis) client instead of [memory-cache](https://github.com/ptarjan/node-cache)
       */
-    var redisClient: js.UndefOr[RedisClient] = js.undefined
+    var redisClient: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RedisClient */ Any
+      ] = js.undefined
     
     var statusCodes: js.UndefOr[Exclude] = js.undefined
     
@@ -91,7 +93,7 @@ object mod {
     
     extension [Self <: Options_](x: Self) {
       
-      inline def setAppendKey(value: js.Any): Self = StObject.set(x, "appendKey", value.asInstanceOf[js.Any])
+      inline def setAppendKey(value: Any): Self = StObject.set(x, "appendKey", value.asInstanceOf[js.Any])
       
       inline def setAppendKeyUndefined: Self = StObject.set(x, "appendKey", js.undefined)
       
@@ -111,13 +113,15 @@ object mod {
       
       inline def setHeaderBlacklistUndefined: Self = StObject.set(x, "headerBlacklist", js.undefined)
       
-      inline def setHeaderBlacklistVarargs(value: String*): Self = StObject.set(x, "headerBlacklist", js.Array(value :_*))
+      inline def setHeaderBlacklistVarargs(value: String*): Self = StObject.set(x, "headerBlacklist", js.Array(value*))
       
       inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      inline def setRedisClient(value: RedisClient): Self = StObject.set(x, "redisClient", value.asInstanceOf[js.Any])
+      inline def setRedisClient(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RedisClient */ Any
+      ): Self = StObject.set(x, "redisClient", value.asInstanceOf[js.Any])
       
       inline def setRedisClientUndefined: Self = StObject.set(x, "redisClient", js.undefined)
       

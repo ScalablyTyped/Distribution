@@ -1,16 +1,15 @@
 package typings.playcanvas.anon
 
-import typings.playcanvas.pc.Ray
-import typings.playcanvas.pc.XrHitTestSource
-import typings.playcanvas.pc.callbacks.XrHitTestStart
-import typings.std.Error
+import typings.playcanvas.mod.Ray
+import typings.playcanvas.mod.XrHitTestSource
+import typings.playcanvas.mod.XrHitTestStartCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait EntityTypes extends StObject {
   
-  var callback: js.UndefOr[XrHitTestStart] = js.undefined
+  var callback: js.UndefOr[XrHitTestStartCallback] = js.undefined
   
   var entityTypes: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -29,7 +28,7 @@ object EntityTypes {
   
   extension [Self <: EntityTypes](x: Self) {
     
-    inline def setCallback(value: (/* err */ Error | Null, /* hitTestSource */ XrHitTestSource | Null) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+    inline def setCallback(value: (/* err */ js.Error | Null, /* hitTestSource */ XrHitTestSource | Null) => Any): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
@@ -37,7 +36,7 @@ object EntityTypes {
     
     inline def setEntityTypesUndefined: Self = StObject.set(x, "entityTypes", js.undefined)
     
-    inline def setEntityTypesVarargs(value: String*): Self = StObject.set(x, "entityTypes", js.Array(value :_*))
+    inline def setEntityTypesVarargs(value: String*): Self = StObject.set(x, "entityTypes", js.Array(value*))
     
     inline def setOffsetRay(value: Ray): Self = StObject.set(x, "offsetRay", value.asInstanceOf[js.Any])
     

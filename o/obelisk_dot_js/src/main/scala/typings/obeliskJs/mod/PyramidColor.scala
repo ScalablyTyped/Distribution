@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("obelisk.js", "PyramidColor")
 @js.native
-class PyramidColor () extends AbstractColor {
+open class PyramidColor () extends AbstractColor {
   def this(border: Double) = this()
   def this(border: Double, borderHighlight: Double) = this()
   def this(border: Unit, borderHighlight: Double) = this()

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.webix.webix.ui.baseview because Already inherited
-- typings.webix.webix.ui.geochart because var conflicts: $height, $scope, $skin_Original, $view, $width, config, data, name, waitData. Inlined  */ @JSGlobal("webix.ui.geochart")
+- typings.webix.webix.ui.geochart because var conflicts: $height, $scope, $setNode, $skin_Original, $view, $width, config, data, name, waitData. Inlined  */ @JSGlobal("webix.ui.geochart")
 @js.native
-class geochart ()
+open class geochart ()
   extends typings.webix.mod.ui.geochart

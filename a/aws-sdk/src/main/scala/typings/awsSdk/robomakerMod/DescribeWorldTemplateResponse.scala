@@ -19,12 +19,12 @@ trait DescribeWorldTemplateResponse extends StObject {
   /**
     * The time, in milliseconds since the epoch, when the world template was created.
     */
-  var createdAt: js.UndefOr[CreatedAt] = js.undefined
+  var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The time, in milliseconds since the epoch, when the world template was last updated.
     */
-  var lastUpdatedAt: js.UndefOr[LastUpdatedAt] = js.undefined
+  var lastUpdatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the world template.
@@ -35,6 +35,11 @@ trait DescribeWorldTemplateResponse extends StObject {
     * A map that contains tag keys and tag values that are attached to the world template.
     */
   var tags: js.UndefOr[TagMap] = js.undefined
+  
+  /**
+    * The version of the world template that you're using.
+    */
+  var version: js.UndefOr[GenericString] = js.undefined
 }
 object DescribeWorldTemplateResponse {
   
@@ -53,11 +58,11 @@ object DescribeWorldTemplateResponse {
     
     inline def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
     
-    inline def setCreatedAt(value: CreatedAt): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
-    inline def setLastUpdatedAt(value: LastUpdatedAt): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedAt(value: js.Date): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedAtUndefined: Self = StObject.set(x, "lastUpdatedAt", js.undefined)
     
@@ -68,5 +73,9 @@ object DescribeWorldTemplateResponse {
     inline def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    
+    inline def setVersion(value: GenericString): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

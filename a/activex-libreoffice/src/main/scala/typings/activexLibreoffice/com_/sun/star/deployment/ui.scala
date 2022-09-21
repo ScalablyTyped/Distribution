@@ -33,7 +33,7 @@ object ui {
       acquire: () => Unit,
       create: (XWindow, String, String) => Unit,
       execute: () => Double,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       setTitle: String => Unit
     ): LicenseDialog = {
@@ -80,7 +80,7 @@ object ui {
       create: (XWindow, String) => Unit,
       createAndInstall: String => Unit,
       createDefault: () => Unit,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       setDialogTitle: String => Unit,
       startExecuteModal: XDialogClosedListener => Unit
@@ -116,7 +116,7 @@ object ui {
       acquire: () => Unit,
       create: () => Unit,
       execute: () => Double,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       setTitle: String => Unit
     ): UpdateRequiredDialog = {

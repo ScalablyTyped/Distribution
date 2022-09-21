@@ -9,7 +9,7 @@ trait DescribeStateMachineOutput extends StObject {
   /**
     * The date the state machine is created.
     */
-  var creationDate: Timestamp
+  var creationDate: js.Date
   
   /**
     * The Amazon States Language definition of the state machine. See Amazon States Language.
@@ -51,7 +51,7 @@ trait DescribeStateMachineOutput extends StObject {
 object DescribeStateMachineOutput {
   
   inline def apply(
-    creationDate: Timestamp,
+    creationDate: js.Date,
     definition: Definition,
     name: Name,
     roleArn: Arn,
@@ -65,7 +65,7 @@ object DescribeStateMachineOutput {
   
   extension [Self <: DescribeStateMachineOutput](x: Self) {
     
-    inline def setCreationDate(value: Timestamp): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     inline def setDefinition(value: Definition): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     

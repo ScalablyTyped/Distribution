@@ -38,7 +38,7 @@ object Compression {
   /** A compressor takes information written to a stream and compresses it using a compression algorithm. */
   @JSGlobal("Windows.Storage.Compression.Compressor")
   @js.native
-  class Compressor protected ()
+  open class Compressor protected ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.Compression.Compressor {
     /**
@@ -91,7 +91,7 @@ object Compression {
   /** A decompressor takes a stream compressed by a compressor and decompresses it. */
   @JSGlobal("Windows.Storage.Compression.Decompressor")
   @js.native
-  class Decompressor protected ()
+  open class Decompressor protected ()
     extends StObject
        with typings.winrtUwp.Windows.Storage.Compression.Decompressor {
     /**

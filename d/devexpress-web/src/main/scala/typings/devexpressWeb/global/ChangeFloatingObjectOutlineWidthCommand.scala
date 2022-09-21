@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ChangeFloatingObjectOutlineWidthCommand")
 @js.native
-class ChangeFloatingObjectOutlineWidthCommand ()
+open class ChangeFloatingObjectOutlineWidthCommand ()
   extends StObject
      with typings.devexpressWeb.ChangeFloatingObjectOutlineWidthCommand {
   

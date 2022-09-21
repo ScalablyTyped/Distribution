@@ -26,8 +26,8 @@ object aggregateMod {
     
     @JSImport("@antv/data-set/lib/transform/aggregate", "default.VALID_AGGREGATES")
     @js.native
-    def VALID_AGGREGATES: js.Array[js.Any] = js.native
-    inline def VALID_AGGREGATES_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VALID_AGGREGATES")(x.asInstanceOf[js.Any])
+    def VALID_AGGREGATES: js.Array[Any] = js.native
+    inline def VALID_AGGREGATES_=(x: js.Array[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VALID_AGGREGATES")(x.asInstanceOf[js.Any])
   }
   
   trait Options extends StObject {
@@ -36,7 +36,7 @@ object aggregateMod {
     
     var fields: js.UndefOr[js.Array[String]] = js.undefined
     
-    var groupBy: js.UndefOr[String | js.Array[String] | (js.Function1[/* item */ js.Any, String])] = js.undefined
+    var groupBy: js.UndefOr[String | js.Array[String] | (js.Function1[/* item */ Any, String])] = js.undefined
     
     var operations: js.UndefOr[
         js.Array[
@@ -57,21 +57,21 @@ object aggregateMod {
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      inline def setAsVarargs(value: String*): Self = StObject.set(x, "as", js.Array(value :_*))
+      inline def setAsVarargs(value: String*): Self = StObject.set(x, "as", js.Array(value*))
       
       inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
       inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
-      inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+      inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value*))
       
-      inline def setGroupBy(value: String | js.Array[String] | (js.Function1[/* item */ js.Any, String])): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
+      inline def setGroupBy(value: String | js.Array[String] | (js.Function1[/* item */ Any, String])): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
       
-      inline def setGroupByFunction1(value: /* item */ js.Any => String): Self = StObject.set(x, "groupBy", js.Any.fromFunction1(value))
+      inline def setGroupByFunction1(value: /* item */ Any => String): Self = StObject.set(x, "groupBy", js.Any.fromFunction1(value))
       
       inline def setGroupByUndefined: Self = StObject.set(x, "groupBy", js.undefined)
       
-      inline def setGroupByVarargs(value: String*): Self = StObject.set(x, "groupBy", js.Array(value :_*))
+      inline def setGroupByVarargs(value: String*): Self = StObject.set(x, "groupBy", js.Array(value*))
       
       inline def setOperations(
         value: js.Array[
@@ -83,7 +83,7 @@ object aggregateMod {
       
       inline def setOperationsVarargs(
         value: (count | max | min | mean | average | median | mode | product | standardDeviation | sum | sumSimple | variance)*
-      ): Self = StObject.set(x, "operations", js.Array(value :_*))
+      ): Self = StObject.set(x, "operations", js.Array(value*))
     }
   }
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "SyntaxUtilities")
 @js.native
-class SyntaxUtilities ()
+open class SyntaxUtilities ()
   extends StObject
      with typings.typescriptServices.TypeScript.SyntaxUtilities
 object SyntaxUtilities {

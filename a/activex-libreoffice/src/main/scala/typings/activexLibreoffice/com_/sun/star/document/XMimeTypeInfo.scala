@@ -27,7 +27,7 @@ object XMimeTypeInfo {
     SupportedMimeTypeNames: SafeArray[String],
     acquire: () => Unit,
     getSupportedMimeTypeNames: () => SafeArray[String],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     supportsMimeType: String => Boolean
   ): XMimeTypeInfo = {

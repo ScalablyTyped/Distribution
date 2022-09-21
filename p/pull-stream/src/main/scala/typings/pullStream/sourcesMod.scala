@@ -30,17 +30,17 @@ object sourcesMod {
   
   @JSImport("pull-stream/sources", "keys")
   @js.native
-  val keys: js.Function1[/* obj */ js.Object | js.Array[js.Any], Source[String]] = js.native
+  val keys: js.Function1[/* obj */ js.Object | js.Array[Any], Source[String]] = js.native
   
   inline def once[T](): Source[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("once")().asInstanceOf[Source[T]]
   inline def once[T](value: T): Source[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("once")(value.asInstanceOf[js.Any]).asInstanceOf[Source[T]]
-  inline def once[T](value: T, onAbort: js.Function1[/* err */ js.UndefOr[EndOrError], js.Any]): Source[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(value.asInstanceOf[js.Any], onAbort.asInstanceOf[js.Any])).asInstanceOf[Source[T]]
-  inline def once[T](value: Unit, onAbort: js.Function1[/* err */ js.UndefOr[EndOrError], js.Any]): Source[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(value.asInstanceOf[js.Any], onAbort.asInstanceOf[js.Any])).asInstanceOf[Source[T]]
+  inline def once[T](value: T, onAbort: js.Function1[/* err */ js.UndefOr[EndOrError], Any]): Source[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(value.asInstanceOf[js.Any], onAbort.asInstanceOf[js.Any])).asInstanceOf[Source[T]]
+  inline def once[T](value: Unit, onAbort: js.Function1[/* err */ js.UndefOr[EndOrError], Any]): Source[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(value.asInstanceOf[js.Any], onAbort.asInstanceOf[js.Any])).asInstanceOf[Source[T]]
   
   inline def values[T](): Source[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")().asInstanceOf[Source[T]]
   inline def values[T](arrayOrObject: js.Array[T]): Source[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(arrayOrObject.asInstanceOf[js.Any]).asInstanceOf[Source[T]]
-  inline def values[T](arrayOrObject: js.Array[T], onAbort: js.Function1[/* err */ js.UndefOr[EndOrError], js.Any]): Source[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("values")(arrayOrObject.asInstanceOf[js.Any], onAbort.asInstanceOf[js.Any])).asInstanceOf[Source[T]]
-  inline def values[T](arrayOrObject: Unit, onAbort: js.Function1[/* err */ js.UndefOr[EndOrError], js.Any]): Source[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("values")(arrayOrObject.asInstanceOf[js.Any], onAbort.asInstanceOf[js.Any])).asInstanceOf[Source[T]]
-  inline def values[T](arrayOrObject: Record[js.Any, T]): Source[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(arrayOrObject.asInstanceOf[js.Any]).asInstanceOf[Source[T]]
-  inline def values[T](arrayOrObject: Record[js.Any, T], onAbort: js.Function1[/* err */ js.UndefOr[EndOrError], js.Any]): Source[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("values")(arrayOrObject.asInstanceOf[js.Any], onAbort.asInstanceOf[js.Any])).asInstanceOf[Source[T]]
+  inline def values[T](arrayOrObject: js.Array[T], onAbort: js.Function1[/* err */ js.UndefOr[EndOrError], Any]): Source[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("values")(arrayOrObject.asInstanceOf[js.Any], onAbort.asInstanceOf[js.Any])).asInstanceOf[Source[T]]
+  inline def values[T](arrayOrObject: Unit, onAbort: js.Function1[/* err */ js.UndefOr[EndOrError], Any]): Source[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("values")(arrayOrObject.asInstanceOf[js.Any], onAbort.asInstanceOf[js.Any])).asInstanceOf[Source[T]]
+  inline def values[T](arrayOrObject: Record[Any, T]): Source[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(arrayOrObject.asInstanceOf[js.Any]).asInstanceOf[Source[T]]
+  inline def values[T](arrayOrObject: Record[Any, T], onAbort: js.Function1[/* err */ js.UndefOr[EndOrError], Any]): Source[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("values")(arrayOrObject.asInstanceOf[js.Any], onAbort.asInstanceOf[js.Any])).asInstanceOf[Source[T]]
 }

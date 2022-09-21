@@ -29,6 +29,6 @@ object PathQueryOptions {
     
     inline def setPathFiltersUndefined: Self = StObject.set(x, "pathFilters", js.undefined)
     
-    inline def setPathFiltersVarargs(value: PathFilter*): Self = StObject.set(x, "pathFilters", js.Array(value :_*))
+    inline def setPathFiltersVarargs(value: PathFilter*): Self = StObject.set(x, "pathFilters", js.Array(value*))
   }
 }

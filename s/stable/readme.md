@@ -11,9 +11,9 @@ A stable array sort for JavaScript
 | Full name          | stable |
 | Keywords           | stable, array, sort |
 | # releases         | 0 |
-| # dependents       | 134 |
-| # downloads        | 341688026 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 4.9520115E7 |
+| # stars            | 74.0 |
 
 ## Links
 - [Homepage](https://github.com/Two-Screen/stable#readme)

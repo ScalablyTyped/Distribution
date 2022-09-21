@@ -7,13 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Cluster extends StObject {
   
-  /** Required. The cluster name. Cluster names within a project must be unique. Names of deleted clusters can be reused. */
+  /**
+    * Required. The cluster name, which must be unique within a project. The name must start with a lowercase letter, and can contain up to 51 lowercase letters, numbers, and hyphens. It
+    * cannot end with a hyphen. The name of a deleted cluster can be reused.
+    */
   var clusterName: js.UndefOr[String] = js.undefined
   
   /** Output only. A cluster UUID (Unique Universal Identifier). Dataproc generates this value when it creates the cluster. */
   var clusterUuid: js.UndefOr[String] = js.undefined
   
-  /** Required. The cluster config. Note that Dataproc may set default values, and values may change when clusters are updated. */
+  /**
+    * Optional. The cluster config for a cluster of Compute Engine Instances. Note that Dataproc may set default values, and values may change when clusters are updated.Exactly one of
+    * ClusterConfig or VirtualClusterConfig must be specified.
+    */
   var config: js.UndefOr[ClusterConfig] = js.undefined
   
   /**
@@ -24,7 +30,7 @@ trait Cluster extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.Cluster & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.Cluster & TopLevel[Any]
   ] = js.undefined
   
   /** Output only. Contains cluster daemon metrics such as HDFS and YARN stats.Beta Feature: This report is available for testing purposes only. It may be changed before final release. */
@@ -38,6 +44,13 @@ trait Cluster extends StObject {
   
   /** Output only. The previous cluster status. */
   var statusHistory: js.UndefOr[js.Array[ClusterStatus]] = js.undefined
+  
+  /**
+    * Optional. The virtual cluster config is used when creating a Dataproc cluster that does not directly control the underlying compute resources, for example, when creating a
+    * Dataproc-on-GKE cluster (https://cloud.google.com/dataproc/docs/guides/dpgke/dataproc-gke). Dataproc may set default values, and values may change when clusters are updated. Exactly
+    * one of config or virtual_cluster_config must be specified.
+    */
+  var virtualClusterConfig: js.UndefOr[VirtualClusterConfig] = js.undefined
 }
 object Cluster {
   
@@ -63,7 +76,7 @@ object Cluster {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.Cluster & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.Cluster & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -82,8 +95,12 @@ object Cluster {
     
     inline def setStatusHistoryUndefined: Self = StObject.set(x, "statusHistory", js.undefined)
     
-    inline def setStatusHistoryVarargs(value: ClusterStatus*): Self = StObject.set(x, "statusHistory", js.Array(value :_*))
+    inline def setStatusHistoryVarargs(value: ClusterStatus*): Self = StObject.set(x, "statusHistory", js.Array(value*))
     
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    
+    inline def setVirtualClusterConfig(value: VirtualClusterConfig): Self = StObject.set(x, "virtualClusterConfig", value.asInstanceOf[js.Any])
+    
+    inline def setVirtualClusterConfigUndefined: Self = StObject.set(x, "virtualClusterConfig", js.undefined)
   }
 }

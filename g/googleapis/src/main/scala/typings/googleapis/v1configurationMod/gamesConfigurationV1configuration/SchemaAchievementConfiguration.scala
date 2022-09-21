@@ -4,17 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * This is a JSON template for an achievement configuration resource.
-  */
 trait SchemaAchievementConfiguration extends StObject {
   
   /**
-    * The type of the achievement. Possible values are:   -
-    * &quot;STANDARD&quot; - Achievement is either locked or unlocked.  -
-    * &quot;INCREMENTAL&quot; - Achievement is incremental.
+    * The type of the achievement.
     */
-  var achievementType: js.UndefOr[String] = js.undefined
+  var achievementType: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The draft data of the achievement.
@@ -24,21 +19,17 @@ trait SchemaAchievementConfiguration extends StObject {
   /**
     * The ID of the achievement.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The initial state of the achievement. Possible values are:   -
-    * &quot;HIDDEN&quot; - Achievement is hidden.  - &quot;REVEALED&quot; -
-    * Achievement is revealed.  - &quot;UNLOCKED&quot; - Achievement is
-    * unlocked.
+    * The initial state of the achievement.
     */
-  var initialState: js.UndefOr[String] = js.undefined
+  var initialState: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Uniquely identifies the type of this resource. Value is always the fixed
-    * string gamesConfiguration#achievementConfiguration.
+    * Uniquely identifies the type of this resource. Value is always the fixed string `gamesConfiguration#achievementConfiguration`.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The read-only published data of the achievement.
@@ -48,12 +39,12 @@ trait SchemaAchievementConfiguration extends StObject {
   /**
     * Steps to unlock. Only applicable to incremental achievements.
     */
-  var stepsToUnlock: js.UndefOr[Double] = js.undefined
+  var stepsToUnlock: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * The token for this resource.
     */
-  var token: js.UndefOr[String] = js.undefined
+  var token: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaAchievementConfiguration {
   
@@ -66,6 +57,8 @@ object SchemaAchievementConfiguration {
     
     inline def setAchievementType(value: String): Self = StObject.set(x, "achievementType", value.asInstanceOf[js.Any])
     
+    inline def setAchievementTypeNull: Self = StObject.set(x, "achievementType", null)
+    
     inline def setAchievementTypeUndefined: Self = StObject.set(x, "achievementType", js.undefined)
     
     inline def setDraft(value: SchemaAchievementConfigurationDetail): Self = StObject.set(x, "draft", value.asInstanceOf[js.Any])
@@ -74,13 +67,19 @@ object SchemaAchievementConfiguration {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
+    inline def setIdNull: Self = StObject.set(x, "id", null)
+    
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setInitialState(value: String): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
     
+    inline def setInitialStateNull: Self = StObject.set(x, "initialState", null)
+    
     inline def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
@@ -90,9 +89,13 @@ object SchemaAchievementConfiguration {
     
     inline def setStepsToUnlock(value: Double): Self = StObject.set(x, "stepsToUnlock", value.asInstanceOf[js.Any])
     
+    inline def setStepsToUnlockNull: Self = StObject.set(x, "stepsToUnlock", null)
+    
     inline def setStepsToUnlockUndefined: Self = StObject.set(x, "stepsToUnlock", js.undefined)
     
     inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    
+    inline def setTokenNull: Self = StObject.set(x, "token", null)
     
     inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
   }

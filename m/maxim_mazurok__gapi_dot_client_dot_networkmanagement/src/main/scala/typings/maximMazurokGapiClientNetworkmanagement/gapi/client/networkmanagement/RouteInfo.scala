@@ -54,7 +54,7 @@ object RouteInfo {
     
     inline def setInstanceTagsUndefined: Self = StObject.set(x, "instanceTags", js.undefined)
     
-    inline def setInstanceTagsVarargs(value: String*): Self = StObject.set(x, "instanceTags", js.Array(value :_*))
+    inline def setInstanceTagsVarargs(value: String*): Self = StObject.set(x, "instanceTags", js.Array(value*))
     
     inline def setNetworkUri(value: String): Self = StObject.set(x, "networkUri", value.asInstanceOf[js.Any])
     

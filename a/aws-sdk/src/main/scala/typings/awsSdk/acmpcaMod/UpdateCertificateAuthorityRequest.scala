@@ -12,7 +12,7 @@ trait UpdateCertificateAuthorityRequest extends StObject {
   var CertificateAuthorityArn: Arn
   
   /**
-    * Revocation information for your private CA.
+    * Contains information to enable Online Certificate Status Protocol (OCSP) support, to enable a certificate revocation list (CRL), to enable both, or to enable neither. If this parameter is not supplied, existing capibilites remain unchanged. For more information, see the OcspConfiguration and CrlConfiguration types.
     */
   var RevocationConfiguration: js.UndefOr[typings.awsSdk.acmpcaMod.RevocationConfiguration] = js.undefined
   

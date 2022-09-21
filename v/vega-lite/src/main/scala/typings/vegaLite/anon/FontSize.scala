@@ -1,11 +1,14 @@
 package typings.vegaLite.anon
 
-import typings.vegaTypings.scaleMod.ScaleField
+import typings.vegaLite.vegaLiteStrings.center
+import typings.vegaLite.vegaLiteStrings.left
+import typings.vegaLite.vegaLiteStrings.right
+import typings.vegaTypings.encodeMod.Text
 import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.titleMod.TitleEncode
-import typings.vegaTypings.valuesMod.AlignValue
 import typings.vegaTypings.valuesMod.AnchorValue
 import typings.vegaTypings.valuesMod.ColorValue
+import typings.vegaTypings.valuesMod.FontStyleValue
 import typings.vegaTypings.valuesMod.FontWeightValue
 import typings.vegaTypings.valuesMod.NumberValue
 import typings.vegaTypings.valuesMod.StringValue
@@ -16,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FontSize extends StObject {
   
-  var align: AlignValue
+  var align: center | left | right | SignalRef | FieldField | Scale | Band | Range | ValueAlign
   
   var anchor: js.UndefOr[AnchorValue] = js.undefined
   
@@ -38,11 +41,11 @@ trait FontSize extends StObject {
   
   var fontSize: js.UndefOr[NumberValue] = js.undefined
   
-  var fontStyle: js.UndefOr[StringValue] = js.undefined
+  var fontStyle: js.UndefOr[FontStyleValue] = js.undefined
   
   var fontWeight: js.UndefOr[FontWeightValue] = js.undefined
   
-  var frame: StringValue
+  var frame: String | SignalRef | FieldField | Scale | Band | Range | ValueString
   
   var interactive: js.UndefOr[Boolean] = js.undefined
   
@@ -54,11 +57,11 @@ trait FontSize extends StObject {
   
   var offset: js.UndefOr[NumberValue] = js.undefined
   
-  var orient: js.UndefOr[ScaleField] = js.undefined
+  var orient: js.UndefOr[String | SignalRef] = js.undefined
   
   var style: String | js.Array[String]
   
-  var subtitle: js.UndefOr[String | js.Array[String] | SignalRef] = js.undefined
+  var subtitle: js.UndefOr[SignalRef | Text] = js.undefined
   
   var subtitleColor: js.UndefOr[ColorValue] = js.undefined
   
@@ -66,7 +69,7 @@ trait FontSize extends StObject {
   
   var subtitleFontSize: js.UndefOr[NumberValue] = js.undefined
   
-  var subtitleFontStyle: js.UndefOr[StringValue] = js.undefined
+  var subtitleFontStyle: js.UndefOr[FontStyleValue] = js.undefined
   
   var subtitleFontWeight: js.UndefOr[FontWeightValue] = js.undefined
   
@@ -74,17 +77,17 @@ trait FontSize extends StObject {
   
   var subtitlePadding: js.UndefOr[NumberValue] = js.undefined
   
-  var text: String | js.Array[String] | SignalRef | Signal
+  var text: SignalRef | Text
   
   var zindex: js.UndefOr[Double] = js.undefined
 }
 object FontSize {
   
   inline def apply(
-    align: AlignValue,
-    frame: StringValue,
+    align: center | left | right | SignalRef | FieldField | Scale | Band | Range | ValueAlign,
+    frame: String | SignalRef | FieldField | Scale | Band | Range | ValueString,
     style: String | js.Array[String],
-    text: String | js.Array[String] | SignalRef | Signal
+    text: SignalRef | Text
   ): FontSize = {
     val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], frame = frame.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontSize]
@@ -92,7 +95,7 @@ object FontSize {
   
   extension [Self <: FontSize](x: Self) {
     
-    inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: center | left | right | SignalRef | FieldField | Scale | Band | Range | ValueAlign): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     inline def setAnchor(value: AnchorValue): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
@@ -136,7 +139,7 @@ object FontSize {
     
     inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
-    inline def setFontStyle(value: StringValue): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
+    inline def setFontStyle(value: FontStyleValue): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
     
     inline def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
     
@@ -146,7 +149,7 @@ object FontSize {
     
     inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
-    inline def setFrame(value: StringValue): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
+    inline def setFrame(value: String | SignalRef | FieldField | Scale | Band | Range | ValueString): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     
     inline def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
     
@@ -168,15 +171,15 @@ object FontSize {
     
     inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    inline def setOrient(value: ScaleField): Self = StObject.set(x, "orient", value.asInstanceOf[js.Any])
+    inline def setOrient(value: String | SignalRef): Self = StObject.set(x, "orient", value.asInstanceOf[js.Any])
     
     inline def setOrientUndefined: Self = StObject.set(x, "orient", js.undefined)
     
     inline def setStyle(value: String | js.Array[String]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    inline def setStyleVarargs(value: String*): Self = StObject.set(x, "style", js.Array(value :_*))
+    inline def setStyleVarargs(value: String*): Self = StObject.set(x, "style", js.Array(value*))
     
-    inline def setSubtitle(value: String | js.Array[String] | SignalRef): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+    inline def setSubtitle(value: SignalRef | Text): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
     
     inline def setSubtitleColor(value: ColorValue): Self = StObject.set(x, "subtitleColor", value.asInstanceOf[js.Any])
     
@@ -190,7 +193,7 @@ object FontSize {
     
     inline def setSubtitleFontSizeUndefined: Self = StObject.set(x, "subtitleFontSize", js.undefined)
     
-    inline def setSubtitleFontStyle(value: StringValue): Self = StObject.set(x, "subtitleFontStyle", value.asInstanceOf[js.Any])
+    inline def setSubtitleFontStyle(value: FontStyleValue): Self = StObject.set(x, "subtitleFontStyle", value.asInstanceOf[js.Any])
     
     inline def setSubtitleFontStyleUndefined: Self = StObject.set(x, "subtitleFontStyle", js.undefined)
     
@@ -210,11 +213,11 @@ object FontSize {
     
     inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
     
-    inline def setSubtitleVarargs(value: String*): Self = StObject.set(x, "subtitle", js.Array(value :_*))
+    inline def setSubtitleVarargs(value: String*): Self = StObject.set(x, "subtitle", js.Array(value*))
     
-    inline def setText(value: String | js.Array[String] | SignalRef | Signal): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: SignalRef | Text): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    inline def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value :_*))
+    inline def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value*))
     
     inline def setZindex(value: Double): Self = StObject.set(x, "zindex", value.asInstanceOf[js.Any])
     

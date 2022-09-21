@@ -1,24 +1,24 @@
 package typings.babelTraverse.anon
 
-import typings.babelTraverse.babelTraverseStrings.DecimalLiteral
+import typings.babelTraverse.babelTraverseStrings.ImportNamespaceSpecifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `201` extends StObject {
   
-  var `type`: DecimalLiteral
+  var `type`: ImportNamespaceSpecifier
 }
 object `201` {
   
   inline def apply(): `201` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")("DecimalLiteral")
+    __obj.updateDynamic("type")("ImportNamespaceSpecifier")
     __obj.asInstanceOf[`201`]
   }
   
   extension [Self <: `201`](x: Self) {
     
-    inline def setType(value: DecimalLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ImportNamespaceSpecifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

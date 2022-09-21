@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_slides
 
-Typings are for version 1.0.20201110
+Typings are for version 1.0.20220802
 
 ## Library description:
 TypeScript typings for Google Slides API v1
@@ -10,10 +10,10 @@ TypeScript typings for Google Slides API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.slides |
 | Keywords           | - |
-| # releases         | 14 |
-| # dependents       | 1 |
-| # downloads        | 1316 |
-| # stars            | 0 |
+| # releases         | 91 |
+| # dependents       | 0.0 |
+| # downloads        | 2167.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

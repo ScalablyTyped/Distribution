@@ -12,6 +12,11 @@ trait GetChannelMessageRequest extends StObject {
   var ChannelArn: ChimeArn
   
   /**
+    * The AppInstanceUserArn of the user that makes the API call.
+    */
+  var ChimeBearer: js.UndefOr[ChimeArn] = js.undefined
+  
+  /**
     * The ID of the message.
     */
   var MessageId: typings.awsSdk.chimeMod.MessageId
@@ -26,6 +31,10 @@ object GetChannelMessageRequest {
   extension [Self <: GetChannelMessageRequest](x: Self) {
     
     inline def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
+    
+    inline def setChimeBearer(value: ChimeArn): Self = StObject.set(x, "ChimeBearer", value.asInstanceOf[js.Any])
+    
+    inline def setChimeBearerUndefined: Self = StObject.set(x, "ChimeBearer", js.undefined)
     
     inline def setMessageId(value: MessageId): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
   }

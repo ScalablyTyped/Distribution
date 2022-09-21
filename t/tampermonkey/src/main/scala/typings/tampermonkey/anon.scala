@@ -6,6 +6,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
+  trait Imported extends StObject {
+    
+    var imported: Boolean
+  }
+  object Imported {
+    
+    inline def apply(imported: Boolean): Imported = {
+      val __obj = js.Dynamic.literal(imported = imported.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Imported]
+    }
+    
+    extension [Self <: Imported](x: Self) {
+      
+      inline def setImported(value: Boolean): Self = StObject.set(x, "imported", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait Mimetype extends StObject {
     
     var mimetype: js.UndefOr[String] = js.undefined

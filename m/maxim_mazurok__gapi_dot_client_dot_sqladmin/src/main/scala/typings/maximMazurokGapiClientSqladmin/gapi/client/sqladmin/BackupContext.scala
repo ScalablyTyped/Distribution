@@ -9,7 +9,7 @@ trait BackupContext extends StObject {
   /** The identifier of the backup. */
   var backupId: js.UndefOr[String] = js.undefined
   
-  /** This is always *sql#backupContext*. */
+  /** This is always `sql#backupContext`. */
   var kind: js.UndefOr[String] = js.undefined
 }
 object BackupContext {

@@ -1,6 +1,7 @@
 package typings.vscodeLanguageserverProtocol.protocolMod
 
-import typings.vscodeLanguageserverProtocol.anon.`1`
+import typings.vscodeLanguageserverProtocol.anon.`2`
+import typings.vscodeLanguageserverProtocol.anon.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,14 +14,32 @@ trait DocumentSymbolClientCapabilities extends StObject {
   var dynamicRegistration: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The client support hierarchical document symbols.
+    * The client supports hierarchical document symbols.
     */
   var hierarchicalDocumentSymbolSupport: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specific capabilities for the `SymbolKind`.
+    * The client supports an additional label presented in the UI when
+    * registering a document symbol provider.
+    *
+    * @since 3.16.0
     */
-  var symbolKind: js.UndefOr[`1`] = js.undefined
+  var labelSupport: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Specific capabilities for the `SymbolKind` in the
+    * `textDocument/documentSymbol` request.
+    */
+  var symbolKind: js.UndefOr[`2`] = js.undefined
+  
+  /**
+    * The client supports tags on `SymbolInformation`. Tags are supported on
+    * `DocumentSymbol` if `hierarchicalDocumentSymbolSupport` is set to true.
+    * Clients supporting tags have to handle unknown tags gracefully.
+    *
+    * @since 3.16.0
+    */
+  var tagSupport: js.UndefOr[`3`] = js.undefined
 }
 object DocumentSymbolClientCapabilities {
   
@@ -39,8 +58,16 @@ object DocumentSymbolClientCapabilities {
     
     inline def setHierarchicalDocumentSymbolSupportUndefined: Self = StObject.set(x, "hierarchicalDocumentSymbolSupport", js.undefined)
     
-    inline def setSymbolKind(value: `1`): Self = StObject.set(x, "symbolKind", value.asInstanceOf[js.Any])
+    inline def setLabelSupport(value: Boolean): Self = StObject.set(x, "labelSupport", value.asInstanceOf[js.Any])
+    
+    inline def setLabelSupportUndefined: Self = StObject.set(x, "labelSupport", js.undefined)
+    
+    inline def setSymbolKind(value: `2`): Self = StObject.set(x, "symbolKind", value.asInstanceOf[js.Any])
     
     inline def setSymbolKindUndefined: Self = StObject.set(x, "symbolKind", js.undefined)
+    
+    inline def setTagSupport(value: `3`): Self = StObject.set(x, "tagSupport", value.asInstanceOf[js.Any])
+    
+    inline def setTagSupportUndefined: Self = StObject.set(x, "tagSupport", js.undefined)
   }
 }

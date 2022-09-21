@@ -9,7 +9,7 @@ trait SchemaSpellResult extends StObject {
   /**
     * The suggested spelling of the query.
     */
-  var suggestedQuery: js.UndefOr[String] = js.undefined
+  var suggestedQuery: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaSpellResult {
   
@@ -21,6 +21,8 @@ object SchemaSpellResult {
   extension [Self <: SchemaSpellResult](x: Self) {
     
     inline def setSuggestedQuery(value: String): Self = StObject.set(x, "suggestedQuery", value.asInstanceOf[js.Any])
+    
+    inline def setSuggestedQueryNull: Self = StObject.set(x, "suggestedQuery", null)
     
     inline def setSuggestedQueryUndefined: Self = StObject.set(x, "suggestedQuery", js.undefined)
   }

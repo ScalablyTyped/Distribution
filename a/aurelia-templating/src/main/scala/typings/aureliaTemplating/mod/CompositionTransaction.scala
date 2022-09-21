@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("aurelia-templating", "CompositionTransaction")
 @js.native
 /**
-  * Creates an instance of CompositionTransaction.
-  */
-class CompositionTransaction () extends StObject {
+	* Creates an instance of CompositionTransaction.
+	*/
+open class CompositionTransaction () extends StObject {
   
   /**
-    * Enlist an async render operation into the transaction.
-    * @return A completion notifier.
-    */
+  	* Enlist an async render operation into the transaction.
+  	* @return A completion notifier.
+  	*/
   def enlist(): CompositionTransactionNotifier = js.native
   
   /**
-    * Attempt to take ownership of the composition transaction.
-    * @return An ownership token if successful, otherwise null.
-    */
+  	* Attempt to take ownership of the composition transaction.
+  	* @return An ownership token if successful, otherwise null.
+  	*/
   def tryCapture(): CompositionTransactionOwnershipToken = js.native
 }

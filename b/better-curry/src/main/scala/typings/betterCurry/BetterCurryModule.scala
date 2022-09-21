@@ -13,16 +13,16 @@ object BetterCurryModule {
     
     def delegate[T](proto: T, target: String): Delegate[T] = js.native
     
-    def flatten(args: (js.Array[js.Any] | js.Any)*): js.Array[js.Any] = js.native
+    def flatten(args: (js.Array[Any] | Any)*): js.Array[Any] = js.native
     
-    def predefine[T /* <: js.Function */](fn: T, args: js.Array[js.Any]): OriginalFunctionReminder[T] = js.native
-    def predefine[T /* <: js.Function */](fn: T, args: js.Array[js.Any], context: js.Object): OriginalFunctionReminder[T] = js.native
-    def predefine[T /* <: js.Function */](fn: T, args: js.Array[js.Any], context: js.Object, len: Double): OriginalFunctionReminder[T] = js.native
-    def predefine[T /* <: js.Function */](fn: T, args: js.Array[js.Any], context: js.Object, len: Double, checkArguments: Boolean): OriginalFunctionReminder[T] = js.native
-    def predefine[T /* <: js.Function */](fn: T, args: js.Array[js.Any], context: js.Object, len: Unit, checkArguments: Boolean): OriginalFunctionReminder[T] = js.native
-    def predefine[T /* <: js.Function */](fn: T, args: js.Array[js.Any], context: Unit, len: Double): OriginalFunctionReminder[T] = js.native
-    def predefine[T /* <: js.Function */](fn: T, args: js.Array[js.Any], context: Unit, len: Double, checkArguments: Boolean): OriginalFunctionReminder[T] = js.native
-    def predefine[T /* <: js.Function */](fn: T, args: js.Array[js.Any], context: Unit, len: Unit, checkArguments: Boolean): OriginalFunctionReminder[T] = js.native
+    def predefine[T /* <: js.Function */](fn: T, args: js.Array[Any]): OriginalFunctionReminder[T] = js.native
+    def predefine[T /* <: js.Function */](fn: T, args: js.Array[Any], context: js.Object): OriginalFunctionReminder[T] = js.native
+    def predefine[T /* <: js.Function */](fn: T, args: js.Array[Any], context: js.Object, len: Double): OriginalFunctionReminder[T] = js.native
+    def predefine[T /* <: js.Function */](fn: T, args: js.Array[Any], context: js.Object, len: Double, checkArguments: Boolean): OriginalFunctionReminder[T] = js.native
+    def predefine[T /* <: js.Function */](fn: T, args: js.Array[Any], context: js.Object, len: Unit, checkArguments: Boolean): OriginalFunctionReminder[T] = js.native
+    def predefine[T /* <: js.Function */](fn: T, args: js.Array[Any], context: Unit, len: Double): OriginalFunctionReminder[T] = js.native
+    def predefine[T /* <: js.Function */](fn: T, args: js.Array[Any], context: Unit, len: Double, checkArguments: Boolean): OriginalFunctionReminder[T] = js.native
+    def predefine[T /* <: js.Function */](fn: T, args: js.Array[Any], context: Unit, len: Unit, checkArguments: Boolean): OriginalFunctionReminder[T] = js.native
     
     def wrap[T /* <: js.Function */](fn: T): OriginalFunctionReminder[T] = js.native
     def wrap[T /* <: js.Function */](fn: T, context: js.Object): OriginalFunctionReminder[T] = js.native
@@ -46,12 +46,12 @@ object BetterCurryModule {
     def getter(name: String): Delegate[T] = js.native
     def getter(name: DelegateOptions): Delegate[T] = js.native
     
-    var getters: js.Array[js.Any] = js.native
+    var getters: js.Array[Any] = js.native
     
     def method(name: String): Delegate[T] = js.native
     def method(name: DelegateOptions): Delegate[T] = js.native
     
-    var methods: js.Array[js.Any] = js.native
+    var methods: js.Array[Any] = js.native
     
     var proto: T = js.native
     
@@ -60,14 +60,14 @@ object BetterCurryModule {
     def setter(name: String): Delegate[T] = js.native
     def setter(name: DelegateOptions): Delegate[T] = js.native
     
-    var setters: js.Array[js.Any] = js.native
+    var setters: js.Array[Any] = js.native
     
     var target: String = js.native
   }
   
   trait DelegateOptions extends StObject {
     
-    var args: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var args: js.UndefOr[js.Array[Any]] = js.undefined
     
     var as: js.UndefOr[String] = js.undefined
     
@@ -84,11 +84,11 @@ object BetterCurryModule {
     
     extension [Self <: DelegateOptions](x: Self) {
       
-      inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
       inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: Any*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

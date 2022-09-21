@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "LayerVariable")
 @js.native
-class LayerVariable protected ()
+open class LayerVariable protected ()
   extends typings.tensorflowTfjs.mod.LayerVariable {
   /**
     * Construct Variable from a `tf.Tensor`.

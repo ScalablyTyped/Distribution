@@ -80,7 +80,7 @@ object kmsMod {
   
   @JSImport("@aws-sdk/client-kms-node/KMS", "KMS")
   @js.native
-  class KMS protected () extends KMSClient {
+  open class KMS protected () extends KMSClient {
     def this(configuration: KMSConfiguration) = this()
     
     /**
@@ -97,7 +97,7 @@ object kmsMod {
     def cancelKeyDeletion(args: CancelKeyDeletionInput): js.Promise[CancelKeyDeletionOutput] = js.native
     def cancelKeyDeletion(
       args: CancelKeyDeletionInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[CancelKeyDeletionOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[CancelKeyDeletionOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -116,7 +116,7 @@ object kmsMod {
     def createAlias(args: CreateAliasInput): js.Promise[CreateAliasOutput] = js.native
     def createAlias(
       args: CreateAliasInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[CreateAliasOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[CreateAliasOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -136,7 +136,7 @@ object kmsMod {
     def createGrant(args: CreateGrantInput): js.Promise[CreateGrantOutput] = js.native
     def createGrant(
       args: CreateGrantInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[CreateGrantOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[CreateGrantOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -155,7 +155,7 @@ object kmsMod {
     def createKey(args: CreateKeyInput): js.Promise[CreateKeyOutput] = js.native
     def createKey(
       args: CreateKeyInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[CreateKeyOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[CreateKeyOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -173,7 +173,7 @@ object kmsMod {
       *   - {Error} An error originating from the SDK or customizations rather than the service
       */
     def decrypt(args: DecryptInput): js.Promise[DecryptOutput] = js.native
-    def decrypt(args: DecryptInput, cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DecryptOutput], Unit]): Unit = js.native
+    def decrypt(args: DecryptInput, cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DecryptOutput], Unit]): Unit = js.native
     
     /**
       * <p>Deletes the specified alias. You cannot perform this operation on an alias in a different AWS account. </p> <p>Because an alias is not a property of a CMK, you can delete and change the aliases of a CMK without affecting the CMK. Also, aliases do not appear in the response from the <a>DescribeKey</a> operation. To get the aliases of all CMKs, use the <a>ListAliases</a> operation. </p> <p>Each CMK can have multiple aliases. To change the alias of a CMK, use <a>DeleteAlias</a> to delete the current alias and <a>CreateAlias</a> to create a new alias. To associate an existing alias with a different customer master key (CMK), call <a>UpdateAlias</a>.</p>
@@ -188,7 +188,7 @@ object kmsMod {
     def deleteAlias(args: DeleteAliasInput): js.Promise[DeleteAliasOutput] = js.native
     def deleteAlias(
       args: DeleteAliasInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteAliasOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteAliasOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -206,7 +206,7 @@ object kmsMod {
     def deleteImportedKeyMaterial(args: DeleteImportedKeyMaterialInput): js.Promise[DeleteImportedKeyMaterialOutput] = js.native
     def deleteImportedKeyMaterial(
       args: DeleteImportedKeyMaterialInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteImportedKeyMaterialOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteImportedKeyMaterialOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -222,7 +222,7 @@ object kmsMod {
     def describeKey(args: DescribeKeyInput): js.Promise[DescribeKeyOutput] = js.native
     def describeKey(
       args: DescribeKeyInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DescribeKeyOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DescribeKeyOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -239,7 +239,7 @@ object kmsMod {
     def disableKey(args: DisableKeyInput): js.Promise[DisableKeyOutput] = js.native
     def disableKey(
       args: DisableKeyInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DisableKeyOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DisableKeyOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -258,7 +258,7 @@ object kmsMod {
     def disableKeyRotation(args: DisableKeyRotationInput): js.Promise[DisableKeyRotationOutput] = js.native
     def disableKeyRotation(
       args: DisableKeyRotationInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DisableKeyRotationOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DisableKeyRotationOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -276,7 +276,7 @@ object kmsMod {
     def enableKey(args: EnableKeyInput): js.Promise[EnableKeyOutput] = js.native
     def enableKey(
       args: EnableKeyInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[EnableKeyOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[EnableKeyOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -295,7 +295,7 @@ object kmsMod {
     def enableKeyRotation(args: EnableKeyRotationInput): js.Promise[EnableKeyRotationOutput] = js.native
     def enableKeyRotation(
       args: EnableKeyRotationInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[EnableKeyRotationOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[EnableKeyRotationOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -313,7 +313,7 @@ object kmsMod {
       *   - {Error} An error originating from the SDK or customizations rather than the service
       */
     def encrypt(args: EncryptInput): js.Promise[EncryptOutput] = js.native
-    def encrypt(args: EncryptInput, cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[EncryptOutput], Unit]): Unit = js.native
+    def encrypt(args: EncryptInput, cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[EncryptOutput], Unit]): Unit = js.native
     
     /**
       * <p>Returns a data encryption key that you can use in your application to encrypt data locally. </p> <p>You must specify the customer master key (CMK) under which to generate the data key. You must also specify the length of the data key using either the <code>KeySpec</code> or <code>NumberOfBytes</code> field. You must specify one field or the other, but not both. For common key lengths (128-bit and 256-bit symmetric keys), we recommend that you use <code>KeySpec</code>. To perform this operation on a CMK in a different AWS account, specify the key ARN or alias ARN in the value of the KeyId parameter.</p> <p>This operation returns a plaintext copy of the data key in the <code>Plaintext</code> field of the response, and an encrypted copy of the data key in the <code>CiphertextBlob</code> field. The data key is encrypted under the CMK specified in the <code>KeyId</code> field of the request. </p> <p>We recommend that you use the following pattern to encrypt data locally in your application:</p> <ol> <li> <p>Use this operation (<code>GenerateDataKey</code>) to get a data encryption key.</p> </li> <li> <p>Use the plaintext data encryption key (returned in the <code>Plaintext</code> field of the response) to encrypt data locally, then erase the plaintext data key from memory.</p> </li> <li> <p>Store the encrypted data key (returned in the <code>CiphertextBlob</code> field of the response) alongside the locally encrypted data.</p> </li> </ol> <p>To decrypt data locally:</p> <ol> <li> <p>Use the <a>Decrypt</a> operation to decrypt the encrypted data key into a plaintext copy of the data key.</p> </li> <li> <p>Use the plaintext data key to decrypt data locally, then erase the plaintext data key from memory.</p> </li> </ol> <p>To return only an encrypted copy of the data key, use <a>GenerateDataKeyWithoutPlaintext</a>. To return a random byte string that is cryptographically secure, use <a>GenerateRandom</a>.</p> <p>If you use the optional <code>EncryptionContext</code> field, you must store at least enough information to be able to reconstruct the full encryption context when you later send the ciphertext to the <a>Decrypt</a> operation. It is a good practice to choose an encryption context that you can reconstruct on the fly to better secure the ciphertext. For more information, see <a href="http://docs.aws.amazon.com/kms/latest/developerguide/encryption-context.html">Encryption Context</a> in the <i>AWS Key Management Service Developer Guide</i>.</p> <p>The result of this operation varies with the key state of the CMK. For details, see <a href="http://docs.aws.amazon.com/kms/latest/developerguide/key-state.html">How Key State Affects Use of a Customer Master Key</a> in the <i>AWS Key Management Service Developer Guide</i>.</p>
@@ -332,7 +332,7 @@ object kmsMod {
     def generateDataKey(args: GenerateDataKeyInput): js.Promise[GenerateDataKeyOutput] = js.native
     def generateDataKey(
       args: GenerateDataKeyInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GenerateDataKeyOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GenerateDataKeyOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -352,7 +352,7 @@ object kmsMod {
     def generateDataKeyWithoutPlaintext(args: GenerateDataKeyWithoutPlaintextInput): js.Promise[GenerateDataKeyWithoutPlaintextOutput] = js.native
     def generateDataKeyWithoutPlaintext(
       args: GenerateDataKeyWithoutPlaintextInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GenerateDataKeyWithoutPlaintextOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GenerateDataKeyWithoutPlaintextOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -366,7 +366,7 @@ object kmsMod {
     def generateRandom(args: GenerateRandomInput): js.Promise[GenerateRandomOutput] = js.native
     def generateRandom(
       args: GenerateRandomInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GenerateRandomOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GenerateRandomOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -383,7 +383,7 @@ object kmsMod {
     def getKeyPolicy(args: GetKeyPolicyInput): js.Promise[GetKeyPolicyOutput] = js.native
     def getKeyPolicy(
       args: GetKeyPolicyInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetKeyPolicyOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetKeyPolicyOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -401,7 +401,7 @@ object kmsMod {
     def getKeyRotationStatus(args: GetKeyRotationStatusInput): js.Promise[GetKeyRotationStatusOutput] = js.native
     def getKeyRotationStatus(
       args: GetKeyRotationStatusInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetKeyRotationStatusOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetKeyRotationStatusOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -419,7 +419,7 @@ object kmsMod {
     def getParametersForImport(args: GetParametersForImportInput): js.Promise[GetParametersForImportOutput] = js.native
     def getParametersForImport(
       args: GetParametersForImportInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetParametersForImportOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetParametersForImportOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -441,7 +441,7 @@ object kmsMod {
     def importKeyMaterial(args: ImportKeyMaterialInput): js.Promise[ImportKeyMaterialOutput] = js.native
     def importKeyMaterial(
       args: ImportKeyMaterialInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ImportKeyMaterialOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ImportKeyMaterialOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -456,7 +456,7 @@ object kmsMod {
     def listAliases(args: ListAliasesInput): js.Promise[ListAliasesOutput] = js.native
     def listAliases(
       args: ListAliasesInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListAliasesOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ListAliasesOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -474,7 +474,7 @@ object kmsMod {
     def listGrants(args: ListGrantsInput): js.Promise[ListGrantsOutput] = js.native
     def listGrants(
       args: ListGrantsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListGrantsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ListGrantsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -491,7 +491,7 @@ object kmsMod {
     def listKeyPolicies(args: ListKeyPoliciesInput): js.Promise[ListKeyPoliciesOutput] = js.native
     def listKeyPolicies(
       args: ListKeyPoliciesInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListKeyPoliciesOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ListKeyPoliciesOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -504,10 +504,7 @@ object kmsMod {
       *   - {Error} An error originating from the SDK or customizations rather than the service
       */
     def listKeys(args: ListKeysInput): js.Promise[ListKeysOutput] = js.native
-    def listKeys(
-      args: ListKeysInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListKeysOutput], Unit]
-    ): Unit = js.native
+    def listKeys(args: ListKeysInput, cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ListKeysOutput], Unit]): Unit = js.native
     
     /**
       * <p>Returns a list of all tags for the specified customer master key (CMK).</p> <p>You cannot perform this operation on a CMK in a different AWS account.</p>
@@ -522,7 +519,7 @@ object kmsMod {
     def listResourceTags(args: ListResourceTagsInput): js.Promise[ListResourceTagsOutput] = js.native
     def listResourceTags(
       args: ListResourceTagsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListResourceTagsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ListResourceTagsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -539,7 +536,7 @@ object kmsMod {
     def listRetirableGrants(args: ListRetirableGrantsInput): js.Promise[ListRetirableGrantsOutput] = js.native
     def listRetirableGrants(
       args: ListRetirableGrantsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ListRetirableGrantsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ListRetirableGrantsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -559,7 +556,7 @@ object kmsMod {
     def putKeyPolicy(args: PutKeyPolicyInput): js.Promise[PutKeyPolicyOutput] = js.native
     def putKeyPolicy(
       args: PutKeyPolicyInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutKeyPolicyOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[PutKeyPolicyOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -580,7 +577,7 @@ object kmsMod {
     def reEncrypt(args: ReEncryptInput): js.Promise[ReEncryptOutput] = js.native
     def reEncrypt(
       args: ReEncryptInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ReEncryptOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ReEncryptOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -599,7 +596,7 @@ object kmsMod {
     def retireGrant(args: RetireGrantInput): js.Promise[RetireGrantOutput] = js.native
     def retireGrant(
       args: RetireGrantInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[RetireGrantOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[RetireGrantOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -617,7 +614,7 @@ object kmsMod {
     def revokeGrant(args: RevokeGrantInput): js.Promise[RevokeGrantOutput] = js.native
     def revokeGrant(
       args: RevokeGrantInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[RevokeGrantOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[RevokeGrantOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -634,7 +631,7 @@ object kmsMod {
     def scheduleKeyDeletion(args: ScheduleKeyDeletionInput): js.Promise[ScheduleKeyDeletionOutput] = js.native
     def scheduleKeyDeletion(
       args: ScheduleKeyDeletionInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[ScheduleKeyDeletionOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[ScheduleKeyDeletionOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -652,7 +649,7 @@ object kmsMod {
     def tagResource(args: TagResourceInput): js.Promise[TagResourceOutput] = js.native
     def tagResource(
       args: TagResourceInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[TagResourceOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[TagResourceOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -669,7 +666,7 @@ object kmsMod {
     def untagResource(args: UntagResourceInput): js.Promise[UntagResourceOutput] = js.native
     def untagResource(
       args: UntagResourceInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UntagResourceOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[UntagResourceOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -685,7 +682,7 @@ object kmsMod {
     def updateAlias(args: UpdateAliasInput): js.Promise[UpdateAliasOutput] = js.native
     def updateAlias(
       args: UpdateAliasInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UpdateAliasOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[UpdateAliasOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -702,7 +699,7 @@ object kmsMod {
     def updateKeyDescription(args: UpdateKeyDescriptionInput): js.Promise[UpdateKeyDescriptionOutput] = js.native
     def updateKeyDescription(
       args: UpdateKeyDescriptionInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UpdateKeyDescriptionOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[UpdateKeyDescriptionOutput], Unit]
     ): Unit = js.native
   }
 }

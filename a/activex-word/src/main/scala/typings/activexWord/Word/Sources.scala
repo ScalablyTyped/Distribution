@@ -16,7 +16,7 @@ trait Sources extends StObject {
   
   def Item(Index: Double): Source
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.Sources_typekey")
   var WordDotSources_typekey: Sources
@@ -29,7 +29,7 @@ object Sources {
     Count: Double,
     Creator: Double,
     Item: Double => Source,
-    Parent: js.Any,
+    Parent: Any,
     WordDotSources_typekey: Sources
   ): Sources = {
     val __obj = js.Dynamic.literal(Add = js.Any.fromFunction1(Add), Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
@@ -49,7 +49,7 @@ object Sources {
     
     inline def setItem(value: Double => Source): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotSources_typekey(value: Sources): Self = StObject.set(x, "Word.Sources_typekey", value.asInstanceOf[js.Any])
   }

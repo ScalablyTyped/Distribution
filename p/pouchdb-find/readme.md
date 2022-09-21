@@ -10,10 +10,10 @@ Easy-to-use query language for PouchDB
 | ------------------ | :-------------: |
 | Full name          | pouchdb-find |
 | Keywords           | pouch, pouchdb, plugin, find, mango, query, couch, couchdb |
-| # releases         | 5 |
-| # dependents       | 162 |
-| # downloads        | 1153355 |
-| # stars            | 6 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 215244.66666666666 |
+| # stars            | 15073.0 |
 
 ## Links
 - [Homepage](https://github.com/pouchdb/pouchdb#readme)

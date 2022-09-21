@@ -29,7 +29,10 @@ trait TimeSeries extends StObject {
     */
   var points: js.UndefOr[js.Array[Point]] = js.undefined
   
-  /** The associated monitored resource. Custom metrics can use only certain monitored resource types in their time series data. */
+  /**
+    * The associated monitored resource. Custom metrics can use only certain monitored resource types in their time series data. For more information, see Monitored resources for custom
+    * metrics (https://cloud.google.com/monitoring/custom-metrics/creating-metrics#custom-metric-resources).
+    */
   var resource: js.UndefOr[MonitoredResource] = js.undefined
   
   /**
@@ -69,7 +72,7 @@ object TimeSeries {
     
     inline def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
     
-    inline def setPointsVarargs(value: Point*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: Point*): Self = StObject.set(x, "points", js.Array(value*))
     
     inline def setResource(value: MonitoredResource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     

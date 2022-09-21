@@ -10,10 +10,10 @@ react-swipeable-views core modules
 | ------------------ | :-------------: |
 | Full name          | react-swipeable-views-core |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 21 |
-| # downloads        | 10203455 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1188716.6666666667 |
+| # stars            | 4196.0 |
 
 ## Links
 - [Homepage](https://github.com/oliviertassinari/react-swipeable-views#readme)

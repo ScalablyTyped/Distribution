@@ -15,7 +15,7 @@ object endpointMod {
   - org.scalablytyped.runtime.StObject because Already inherited
   - org.scalablytyped.runtime.StringDictionary because Already inherited */ @JSImport("googleapis-common/build/src/endpoint", "Endpoint")
   @js.native
-  class Endpoint protected ()
+  open class Endpoint protected ()
     extends StObject
        with Target
        with APIRequestContext {
@@ -33,7 +33,7 @@ object endpointMod {
       * @param {object} schema The current schema from which to extract methods.
       * @param {object} context The context to add to each method.
       */
-    /* private */ var applyMethodsFromSchema: js.Any = js.native
+    /* private */ var applyMethodsFromSchema: Any = js.native
     
     /**
       * Given a schema, add methods and resources to a target.
@@ -47,7 +47,7 @@ object endpointMod {
       */
     def applySchema(target: Target, rootSchema: Schema, schema: SchemaResource, context: APIRequestContext): Unit = js.native
     
-    /* private */ var getPathParams: js.Any = js.native
+    /* private */ var getPathParams: Any = js.native
     
     /**
       * Given a method schema, add a method to a target.
@@ -57,7 +57,7 @@ object endpointMod {
       * @param method The method schema from which to generate the method.
       * @param context The context to add to the method.
       */
-    /* private */ var makeMethod: js.Any = js.native
+    /* private */ var makeMethod: Any = js.native
   }
   
   type Target = StringDictionary[js.Object]

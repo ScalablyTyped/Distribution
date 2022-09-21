@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("openlayers", "Tile")
 @js.native
-class Tile protected () extends EventTarget {
+open class Tile protected () extends EventTarget {
   /**
     * @classdesc
     * Base class for tiles.

@@ -1,6 +1,7 @@
 package typings.vegaLite.transformMod
 
 import typings.vegaLite.channeldefMod.FieldName
+import typings.vegaLite.parameterMod.ParameterName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,19 +11,19 @@ trait LookupSelection
      with LookupBase {
   
   /**
-    * Selection name to look up.
+    * Selection parameter name to look up.
     */
-  var selection: String
+  var param: ParameterName
 }
 object LookupSelection {
   
-  inline def apply(key: FieldName, selection: String): LookupSelection = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any])
+  inline def apply(key: FieldName, param: ParameterName): LookupSelection = {
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], param = param.asInstanceOf[js.Any])
     __obj.asInstanceOf[LookupSelection]
   }
   
   extension [Self <: LookupSelection](x: Self) {
     
-    inline def setSelection(value: String): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+    inline def setParam(value: ParameterName): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
   }
 }

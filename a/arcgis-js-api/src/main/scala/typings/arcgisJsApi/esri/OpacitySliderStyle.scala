@@ -13,6 +13,8 @@ trait OpacitySliderStyle
   /**
     * The color of the slider's track.
     *
+    * @default new Color([0, 121, 193])
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-OpacitySlider.html#style)
     */
   var trackFillColor: js.UndefOr[Color_] = js.undefined
@@ -23,7 +25,7 @@ object OpacitySliderStyle {
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
-    set: (js.UndefOr[js.Function2[/* propertyName */ String, /* value */ js.Any, OpacitySliderStyle]]) & (js.UndefOr[js.Function1[/* props */ HashMap[js.Any], OpacitySliderStyle]])
+    set: (js.UndefOr[js.Function2[/* propertyName */ String, /* value */ Any, OpacitySliderStyle]]) & (js.UndefOr[js.Function1[/* props */ HashMap[Any], OpacitySliderStyle]])
   ): OpacitySliderStyle = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), set = set.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpacitySliderStyle]

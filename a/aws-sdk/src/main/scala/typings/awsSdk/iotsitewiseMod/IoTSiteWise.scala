@@ -20,12 +20,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IoTSiteWise extends Service {
   
   /**
-    * Associates a child asset with the given parent asset through a hierarchy defined in the parent asset's model. For more information, see Associating assets in the AWS IoT SiteWise User Guide.
+    * Associates a child asset with the given parent asset through a hierarchy defined in the parent asset's model. For more information, see Associating assets in the IoT SiteWise User Guide.
     */
   def associateAssets(): Request[js.Object, AWSError] = js.native
   def associateAssets(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Associates a child asset with the given parent asset through a hierarchy defined in the parent asset's model. For more information, see Associating assets in the AWS IoT SiteWise User Guide.
+    * Associates a child asset with the given parent asset through a hierarchy defined in the parent asset's model. For more information, see Associating assets in the IoT SiteWise User Guide.
     */
   def associateAssets(params: AssociateAssetsRequest): Request[js.Object, AWSError] = js.native
   def associateAssets(
@@ -34,12 +34,26 @@ trait IoTSiteWise extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Associates a group (batch) of assets with an AWS IoT SiteWise Monitor project.
+    * Associates a time series (data stream) with an asset property.
+    */
+  def associateTimeSeriesToAssetProperty(): Request[js.Object, AWSError] = js.native
+  def associateTimeSeriesToAssetProperty(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Associates a time series (data stream) with an asset property.
+    */
+  def associateTimeSeriesToAssetProperty(params: AssociateTimeSeriesToAssetPropertyRequest): Request[js.Object, AWSError] = js.native
+  def associateTimeSeriesToAssetProperty(
+    params: AssociateTimeSeriesToAssetPropertyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Associates a group (batch) of assets with an IoT SiteWise Monitor project.
     */
   def batchAssociateProjectAssets(): Request[BatchAssociateProjectAssetsResponse, AWSError] = js.native
   def batchAssociateProjectAssets(callback: js.Function2[/* err */ AWSError, /* data */ BatchAssociateProjectAssetsResponse, Unit]): Request[BatchAssociateProjectAssetsResponse, AWSError] = js.native
   /**
-    * Associates a group (batch) of assets with an AWS IoT SiteWise Monitor project.
+    * Associates a group (batch) of assets with an IoT SiteWise Monitor project.
     */
   def batchAssociateProjectAssets(params: BatchAssociateProjectAssetsRequest): Request[BatchAssociateProjectAssetsResponse, AWSError] = js.native
   def batchAssociateProjectAssets(
@@ -48,14 +62,14 @@ trait IoTSiteWise extends Service {
   ): Request[BatchAssociateProjectAssetsResponse, AWSError] = js.native
   
   /**
-    * Disassociates a group (batch) of assets from an AWS IoT SiteWise Monitor project.
+    * Disassociates a group (batch) of assets from an IoT SiteWise Monitor project.
     */
   def batchDisassociateProjectAssets(): Request[BatchDisassociateProjectAssetsResponse, AWSError] = js.native
   def batchDisassociateProjectAssets(
     callback: js.Function2[/* err */ AWSError, /* data */ BatchDisassociateProjectAssetsResponse, Unit]
   ): Request[BatchDisassociateProjectAssetsResponse, AWSError] = js.native
   /**
-    * Disassociates a group (batch) of assets from an AWS IoT SiteWise Monitor project.
+    * Disassociates a group (batch) of assets from an IoT SiteWise Monitor project.
     */
   def batchDisassociateProjectAssets(params: BatchDisassociateProjectAssetsRequest): Request[BatchDisassociateProjectAssetsResponse, AWSError] = js.native
   def batchDisassociateProjectAssets(
@@ -64,12 +78,58 @@ trait IoTSiteWise extends Service {
   ): Request[BatchDisassociateProjectAssetsResponse, AWSError] = js.native
   
   /**
-    * Sends a list of asset property values to AWS IoT SiteWise. Each value is a timestamp-quality-value (TQV) data point. For more information, see Ingesting data using the API in the AWS IoT SiteWise User Guide. To identify an asset property, you must specify one of the following:   The assetId and propertyId of an asset property.   A propertyAlias, which is a data stream alias (for example, /company/windfarm/3/turbine/7/temperature). To define an asset property's alias, see UpdateAssetProperty.    With respect to Unix epoch time, AWS IoT SiteWise accepts only TQVs that have a timestamp of no more than 15 minutes in the past and no more than 5 minutes in the future. AWS IoT SiteWise rejects timestamps outside of the inclusive range of [-15, +5] minutes and returns a TimestampOutOfRangeException error. For each asset property, AWS IoT SiteWise overwrites TQVs with duplicate timestamps unless the newer TQV has a different quality. For example, if you store a TQV {T1, GOOD, V1}, then storing {T1, GOOD, V2} replaces the existing TQV.  AWS IoT SiteWise authorizes access to each BatchPutAssetPropertyValue entry individually. For more information, see BatchPutAssetPropertyValue authorization in the AWS IoT SiteWise User Guide.
+    * Gets aggregated values (for example, average, minimum, and maximum) for one or more asset properties. For more information, see Querying aggregates in the IoT SiteWise User Guide.
+    */
+  def batchGetAssetPropertyAggregates(): Request[BatchGetAssetPropertyAggregatesResponse, AWSError] = js.native
+  def batchGetAssetPropertyAggregates(
+    callback: js.Function2[/* err */ AWSError, /* data */ BatchGetAssetPropertyAggregatesResponse, Unit]
+  ): Request[BatchGetAssetPropertyAggregatesResponse, AWSError] = js.native
+  /**
+    * Gets aggregated values (for example, average, minimum, and maximum) for one or more asset properties. For more information, see Querying aggregates in the IoT SiteWise User Guide.
+    */
+  def batchGetAssetPropertyAggregates(params: BatchGetAssetPropertyAggregatesRequest): Request[BatchGetAssetPropertyAggregatesResponse, AWSError] = js.native
+  def batchGetAssetPropertyAggregates(
+    params: BatchGetAssetPropertyAggregatesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ BatchGetAssetPropertyAggregatesResponse, Unit]
+  ): Request[BatchGetAssetPropertyAggregatesResponse, AWSError] = js.native
+  
+  /**
+    * Gets the current value for one or more asset properties. For more information, see Querying current values in the IoT SiteWise User Guide.
+    */
+  def batchGetAssetPropertyValue(): Request[BatchGetAssetPropertyValueResponse, AWSError] = js.native
+  def batchGetAssetPropertyValue(callback: js.Function2[/* err */ AWSError, /* data */ BatchGetAssetPropertyValueResponse, Unit]): Request[BatchGetAssetPropertyValueResponse, AWSError] = js.native
+  /**
+    * Gets the current value for one or more asset properties. For more information, see Querying current values in the IoT SiteWise User Guide.
+    */
+  def batchGetAssetPropertyValue(params: BatchGetAssetPropertyValueRequest): Request[BatchGetAssetPropertyValueResponse, AWSError] = js.native
+  def batchGetAssetPropertyValue(
+    params: BatchGetAssetPropertyValueRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ BatchGetAssetPropertyValueResponse, Unit]
+  ): Request[BatchGetAssetPropertyValueResponse, AWSError] = js.native
+  
+  /**
+    * Gets the historical values for one or more asset properties. For more information, see Querying historical values in the IoT SiteWise User Guide.
+    */
+  def batchGetAssetPropertyValueHistory(): Request[BatchGetAssetPropertyValueHistoryResponse, AWSError] = js.native
+  def batchGetAssetPropertyValueHistory(
+    callback: js.Function2[/* err */ AWSError, /* data */ BatchGetAssetPropertyValueHistoryResponse, Unit]
+  ): Request[BatchGetAssetPropertyValueHistoryResponse, AWSError] = js.native
+  /**
+    * Gets the historical values for one or more asset properties. For more information, see Querying historical values in the IoT SiteWise User Guide.
+    */
+  def batchGetAssetPropertyValueHistory(params: BatchGetAssetPropertyValueHistoryRequest): Request[BatchGetAssetPropertyValueHistoryResponse, AWSError] = js.native
+  def batchGetAssetPropertyValueHistory(
+    params: BatchGetAssetPropertyValueHistoryRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ BatchGetAssetPropertyValueHistoryResponse, Unit]
+  ): Request[BatchGetAssetPropertyValueHistoryResponse, AWSError] = js.native
+  
+  /**
+    * Sends a list of asset property values to IoT SiteWise. Each value is a timestamp-quality-value (TQV) data point. For more information, see Ingesting data using the API in the IoT SiteWise User Guide. To identify an asset property, you must specify one of the following:   The assetId and propertyId of an asset property.   A propertyAlias, which is a data stream alias (for example, /company/windfarm/3/turbine/7/temperature). To define an asset property's alias, see UpdateAssetProperty.    With respect to Unix epoch time, IoT SiteWise accepts only TQVs that have a timestamp of no more than 7 days in the past and no more than 10 minutes in the future. IoT SiteWise rejects timestamps outside of the inclusive range of [-7 days, +10 minutes] and returns a TimestampOutOfRangeException error. For each asset property, IoT SiteWise overwrites TQVs with duplicate timestamps unless the newer TQV has a different quality. For example, if you store a TQV {T1, GOOD, V1}, then storing {T1, GOOD, V2} replaces the existing TQV.  IoT SiteWise authorizes access to each BatchPutAssetPropertyValue entry individually. For more information, see BatchPutAssetPropertyValue authorization in the IoT SiteWise User Guide.
     */
   def batchPutAssetPropertyValue(): Request[BatchPutAssetPropertyValueResponse, AWSError] = js.native
   def batchPutAssetPropertyValue(callback: js.Function2[/* err */ AWSError, /* data */ BatchPutAssetPropertyValueResponse, Unit]): Request[BatchPutAssetPropertyValueResponse, AWSError] = js.native
   /**
-    * Sends a list of asset property values to AWS IoT SiteWise. Each value is a timestamp-quality-value (TQV) data point. For more information, see Ingesting data using the API in the AWS IoT SiteWise User Guide. To identify an asset property, you must specify one of the following:   The assetId and propertyId of an asset property.   A propertyAlias, which is a data stream alias (for example, /company/windfarm/3/turbine/7/temperature). To define an asset property's alias, see UpdateAssetProperty.    With respect to Unix epoch time, AWS IoT SiteWise accepts only TQVs that have a timestamp of no more than 15 minutes in the past and no more than 5 minutes in the future. AWS IoT SiteWise rejects timestamps outside of the inclusive range of [-15, +5] minutes and returns a TimestampOutOfRangeException error. For each asset property, AWS IoT SiteWise overwrites TQVs with duplicate timestamps unless the newer TQV has a different quality. For example, if you store a TQV {T1, GOOD, V1}, then storing {T1, GOOD, V2} replaces the existing TQV.  AWS IoT SiteWise authorizes access to each BatchPutAssetPropertyValue entry individually. For more information, see BatchPutAssetPropertyValue authorization in the AWS IoT SiteWise User Guide.
+    * Sends a list of asset property values to IoT SiteWise. Each value is a timestamp-quality-value (TQV) data point. For more information, see Ingesting data using the API in the IoT SiteWise User Guide. To identify an asset property, you must specify one of the following:   The assetId and propertyId of an asset property.   A propertyAlias, which is a data stream alias (for example, /company/windfarm/3/turbine/7/temperature). To define an asset property's alias, see UpdateAssetProperty.    With respect to Unix epoch time, IoT SiteWise accepts only TQVs that have a timestamp of no more than 7 days in the past and no more than 10 minutes in the future. IoT SiteWise rejects timestamps outside of the inclusive range of [-7 days, +10 minutes] and returns a TimestampOutOfRangeException error. For each asset property, IoT SiteWise overwrites TQVs with duplicate timestamps unless the newer TQV has a different quality. For example, if you store a TQV {T1, GOOD, V1}, then storing {T1, GOOD, V2} replaces the existing TQV.  IoT SiteWise authorizes access to each BatchPutAssetPropertyValue entry individually. For more information, see BatchPutAssetPropertyValue authorization in the IoT SiteWise User Guide.
     */
   def batchPutAssetPropertyValue(params: BatchPutAssetPropertyValueRequest): Request[BatchPutAssetPropertyValueResponse, AWSError] = js.native
   def batchPutAssetPropertyValue(
@@ -81,12 +141,12 @@ trait IoTSiteWise extends Service {
   var config_IoTSiteWise: ConfigBase & ClientConfiguration = js.native
   
   /**
-    * Creates an access policy that grants the specified identity (AWS SSO user, AWS SSO group, or IAM user) access to the specified AWS IoT SiteWise Monitor portal or project resource.
+    * Creates an access policy that grants the specified identity (Amazon Web Services SSO user, Amazon Web Services SSO group, or IAM user) access to the specified IoT SiteWise Monitor portal or project resource.
     */
   def createAccessPolicy(): Request[CreateAccessPolicyResponse, AWSError] = js.native
   def createAccessPolicy(callback: js.Function2[/* err */ AWSError, /* data */ CreateAccessPolicyResponse, Unit]): Request[CreateAccessPolicyResponse, AWSError] = js.native
   /**
-    * Creates an access policy that grants the specified identity (AWS SSO user, AWS SSO group, or IAM user) access to the specified AWS IoT SiteWise Monitor portal or project resource.
+    * Creates an access policy that grants the specified identity (Amazon Web Services SSO user, Amazon Web Services SSO group, or IAM user) access to the specified IoT SiteWise Monitor portal or project resource.
     */
   def createAccessPolicy(params: CreateAccessPolicyRequest): Request[CreateAccessPolicyResponse, AWSError] = js.native
   def createAccessPolicy(
@@ -95,12 +155,12 @@ trait IoTSiteWise extends Service {
   ): Request[CreateAccessPolicyResponse, AWSError] = js.native
   
   /**
-    * Creates an asset from an existing asset model. For more information, see Creating assets in the AWS IoT SiteWise User Guide.
+    * Creates an asset from an existing asset model. For more information, see Creating assets in the IoT SiteWise User Guide.
     */
   def createAsset(): Request[CreateAssetResponse, AWSError] = js.native
   def createAsset(callback: js.Function2[/* err */ AWSError, /* data */ CreateAssetResponse, Unit]): Request[CreateAssetResponse, AWSError] = js.native
   /**
-    * Creates an asset from an existing asset model. For more information, see Creating assets in the AWS IoT SiteWise User Guide.
+    * Creates an asset from an existing asset model. For more information, see Creating assets in the IoT SiteWise User Guide.
     */
   def createAsset(params: CreateAssetRequest): Request[CreateAssetResponse, AWSError] = js.native
   def createAsset(
@@ -109,12 +169,12 @@ trait IoTSiteWise extends Service {
   ): Request[CreateAssetResponse, AWSError] = js.native
   
   /**
-    * Creates an asset model from specified property and hierarchy definitions. You create assets from asset models. With asset models, you can easily create assets of the same type that have standardized definitions. Each asset created from a model inherits the asset model's property and hierarchy definitions. For more information, see Defining asset models in the AWS IoT SiteWise User Guide.
+    * Creates an asset model from specified property and hierarchy definitions. You create assets from asset models. With asset models, you can easily create assets of the same type that have standardized definitions. Each asset created from a model inherits the asset model's property and hierarchy definitions. For more information, see Defining asset models in the IoT SiteWise User Guide.
     */
   def createAssetModel(): Request[CreateAssetModelResponse, AWSError] = js.native
   def createAssetModel(callback: js.Function2[/* err */ AWSError, /* data */ CreateAssetModelResponse, Unit]): Request[CreateAssetModelResponse, AWSError] = js.native
   /**
-    * Creates an asset model from specified property and hierarchy definitions. You create assets from asset models. With asset models, you can easily create assets of the same type that have standardized definitions. Each asset created from a model inherits the asset model's property and hierarchy definitions. For more information, see Defining asset models in the AWS IoT SiteWise User Guide.
+    * Creates an asset model from specified property and hierarchy definitions. You create assets from asset models. With asset models, you can easily create assets of the same type that have standardized definitions. Each asset created from a model inherits the asset model's property and hierarchy definitions. For more information, see Defining asset models in the IoT SiteWise User Guide.
     */
   def createAssetModel(params: CreateAssetModelRequest): Request[CreateAssetModelResponse, AWSError] = js.native
   def createAssetModel(
@@ -123,12 +183,26 @@ trait IoTSiteWise extends Service {
   ): Request[CreateAssetModelResponse, AWSError] = js.native
   
   /**
-    * Creates a dashboard in an AWS IoT SiteWise Monitor project.
+    * Defines a job to ingest data to IoT SiteWise from Amazon S3. For more information, see Create a bulk import job (CLI) in the Amazon Simple Storage Service User Guide.  You must enable IoT SiteWise to export data to Amazon S3 before you create a bulk import job. For more information about how to configure storage settings, see PutStorageConfiguration. 
+    */
+  def createBulkImportJob(): Request[CreateBulkImportJobResponse, AWSError] = js.native
+  def createBulkImportJob(callback: js.Function2[/* err */ AWSError, /* data */ CreateBulkImportJobResponse, Unit]): Request[CreateBulkImportJobResponse, AWSError] = js.native
+  /**
+    * Defines a job to ingest data to IoT SiteWise from Amazon S3. For more information, see Create a bulk import job (CLI) in the Amazon Simple Storage Service User Guide.  You must enable IoT SiteWise to export data to Amazon S3 before you create a bulk import job. For more information about how to configure storage settings, see PutStorageConfiguration. 
+    */
+  def createBulkImportJob(params: CreateBulkImportJobRequest): Request[CreateBulkImportJobResponse, AWSError] = js.native
+  def createBulkImportJob(
+    params: CreateBulkImportJobRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateBulkImportJobResponse, Unit]
+  ): Request[CreateBulkImportJobResponse, AWSError] = js.native
+  
+  /**
+    * Creates a dashboard in an IoT SiteWise Monitor project.
     */
   def createDashboard(): Request[CreateDashboardResponse, AWSError] = js.native
   def createDashboard(callback: js.Function2[/* err */ AWSError, /* data */ CreateDashboardResponse, Unit]): Request[CreateDashboardResponse, AWSError] = js.native
   /**
-    * Creates a dashboard in an AWS IoT SiteWise Monitor project.
+    * Creates a dashboard in an IoT SiteWise Monitor project.
     */
   def createDashboard(params: CreateDashboardRequest): Request[CreateDashboardResponse, AWSError] = js.native
   def createDashboard(
@@ -137,12 +211,12 @@ trait IoTSiteWise extends Service {
   ): Request[CreateDashboardResponse, AWSError] = js.native
   
   /**
-    * Creates a gateway, which is a virtual or edge device that delivers industrial data streams from local servers to AWS IoT SiteWise. For more information, see Ingesting data using a gateway in the AWS IoT SiteWise User Guide.
+    * Creates a gateway, which is a virtual or edge device that delivers industrial data streams from local servers to IoT SiteWise. For more information, see Ingesting data using a gateway in the IoT SiteWise User Guide.
     */
   def createGateway(): Request[CreateGatewayResponse, AWSError] = js.native
   def createGateway(callback: js.Function2[/* err */ AWSError, /* data */ CreateGatewayResponse, Unit]): Request[CreateGatewayResponse, AWSError] = js.native
   /**
-    * Creates a gateway, which is a virtual or edge device that delivers industrial data streams from local servers to AWS IoT SiteWise. For more information, see Ingesting data using a gateway in the AWS IoT SiteWise User Guide.
+    * Creates a gateway, which is a virtual or edge device that delivers industrial data streams from local servers to IoT SiteWise. For more information, see Ingesting data using a gateway in the IoT SiteWise User Guide.
     */
   def createGateway(params: CreateGatewayRequest): Request[CreateGatewayResponse, AWSError] = js.native
   def createGateway(
@@ -151,12 +225,12 @@ trait IoTSiteWise extends Service {
   ): Request[CreateGatewayResponse, AWSError] = js.native
   
   /**
-    * Creates a portal, which can contain projects and dashboards. AWS IoT SiteWise Monitor uses AWS SSO or IAM to authenticate portal users and manage user permissions.  Before you can sign in to a new portal, you must add at least one identity to that portal. For more information, see Adding or removing portal administrators in the AWS IoT SiteWise User Guide. 
+    * Creates a portal, which can contain projects and dashboards. IoT SiteWise Monitor uses Amazon Web Services SSO or IAM to authenticate portal users and manage user permissions.  Before you can sign in to a new portal, you must add at least one identity to that portal. For more information, see Adding or removing portal administrators in the IoT SiteWise User Guide. 
     */
   def createPortal(): Request[CreatePortalResponse, AWSError] = js.native
   def createPortal(callback: js.Function2[/* err */ AWSError, /* data */ CreatePortalResponse, Unit]): Request[CreatePortalResponse, AWSError] = js.native
   /**
-    * Creates a portal, which can contain projects and dashboards. AWS IoT SiteWise Monitor uses AWS SSO or IAM to authenticate portal users and manage user permissions.  Before you can sign in to a new portal, you must add at least one identity to that portal. For more information, see Adding or removing portal administrators in the AWS IoT SiteWise User Guide. 
+    * Creates a portal, which can contain projects and dashboards. IoT SiteWise Monitor uses Amazon Web Services SSO or IAM to authenticate portal users and manage user permissions.  Before you can sign in to a new portal, you must add at least one identity to that portal. For more information, see Adding or removing portal administrators in the IoT SiteWise User Guide. 
     */
   def createPortal(params: CreatePortalRequest): Request[CreatePortalResponse, AWSError] = js.native
   def createPortal(
@@ -165,26 +239,12 @@ trait IoTSiteWise extends Service {
   ): Request[CreatePortalResponse, AWSError] = js.native
   
   /**
-    * Creates a pre-signed URL to a portal. Use this operation to create URLs to portals that use AWS Identity and Access Management (IAM) to authenticate users. An IAM user with access to a portal can call this API to get a URL to that portal. The URL contains a session token that lets the IAM user access the portal.
-    */
-  def createPresignedPortalUrl(): Request[CreatePresignedPortalUrlResponse, AWSError] = js.native
-  def createPresignedPortalUrl(callback: js.Function2[/* err */ AWSError, /* data */ CreatePresignedPortalUrlResponse, Unit]): Request[CreatePresignedPortalUrlResponse, AWSError] = js.native
-  /**
-    * Creates a pre-signed URL to a portal. Use this operation to create URLs to portals that use AWS Identity and Access Management (IAM) to authenticate users. An IAM user with access to a portal can call this API to get a URL to that portal. The URL contains a session token that lets the IAM user access the portal.
-    */
-  def createPresignedPortalUrl(params: CreatePresignedPortalUrlRequest): Request[CreatePresignedPortalUrlResponse, AWSError] = js.native
-  def createPresignedPortalUrl(
-    params: CreatePresignedPortalUrlRequest,
-    callback: js.Function2[/* err */ AWSError, /* data */ CreatePresignedPortalUrlResponse, Unit]
-  ): Request[CreatePresignedPortalUrlResponse, AWSError] = js.native
-  
-  /**
-    * Creates a project in the specified portal.
+    * Creates a project in the specified portal.  Make sure that the project name and description don't contain confidential information. 
     */
   def createProject(): Request[CreateProjectResponse, AWSError] = js.native
   def createProject(callback: js.Function2[/* err */ AWSError, /* data */ CreateProjectResponse, Unit]): Request[CreateProjectResponse, AWSError] = js.native
   /**
-    * Creates a project in the specified portal.
+    * Creates a project in the specified portal.  Make sure that the project name and description don't contain confidential information. 
     */
   def createProject(params: CreateProjectRequest): Request[CreateProjectResponse, AWSError] = js.native
   def createProject(
@@ -193,12 +253,12 @@ trait IoTSiteWise extends Service {
   ): Request[CreateProjectResponse, AWSError] = js.native
   
   /**
-    * Deletes an access policy that grants the specified identity access to the specified AWS IoT SiteWise Monitor resource. You can use this operation to revoke access to an AWS IoT SiteWise Monitor resource.
+    * Deletes an access policy that grants the specified identity access to the specified IoT SiteWise Monitor resource. You can use this operation to revoke access to an IoT SiteWise Monitor resource.
     */
   def deleteAccessPolicy(): Request[DeleteAccessPolicyResponse, AWSError] = js.native
   def deleteAccessPolicy(callback: js.Function2[/* err */ AWSError, /* data */ DeleteAccessPolicyResponse, Unit]): Request[DeleteAccessPolicyResponse, AWSError] = js.native
   /**
-    * Deletes an access policy that grants the specified identity access to the specified AWS IoT SiteWise Monitor resource. You can use this operation to revoke access to an AWS IoT SiteWise Monitor resource.
+    * Deletes an access policy that grants the specified identity access to the specified IoT SiteWise Monitor resource. You can use this operation to revoke access to an IoT SiteWise Monitor resource.
     */
   def deleteAccessPolicy(params: DeleteAccessPolicyRequest): Request[DeleteAccessPolicyResponse, AWSError] = js.native
   def deleteAccessPolicy(
@@ -207,12 +267,12 @@ trait IoTSiteWise extends Service {
   ): Request[DeleteAccessPolicyResponse, AWSError] = js.native
   
   /**
-    * Deletes an asset. This action can't be undone. For more information, see Deleting assets and models in the AWS IoT SiteWise User Guide.   You can't delete an asset that's associated to another asset. For more information, see DisassociateAssets. 
+    * Deletes an asset. This action can't be undone. For more information, see Deleting assets and models in the IoT SiteWise User Guide.   You can't delete an asset that's associated to another asset. For more information, see DisassociateAssets. 
     */
   def deleteAsset(): Request[DeleteAssetResponse, AWSError] = js.native
   def deleteAsset(callback: js.Function2[/* err */ AWSError, /* data */ DeleteAssetResponse, Unit]): Request[DeleteAssetResponse, AWSError] = js.native
   /**
-    * Deletes an asset. This action can't be undone. For more information, see Deleting assets and models in the AWS IoT SiteWise User Guide.   You can't delete an asset that's associated to another asset. For more information, see DisassociateAssets. 
+    * Deletes an asset. This action can't be undone. For more information, see Deleting assets and models in the IoT SiteWise User Guide.   You can't delete an asset that's associated to another asset. For more information, see DisassociateAssets. 
     */
   def deleteAsset(params: DeleteAssetRequest): Request[DeleteAssetResponse, AWSError] = js.native
   def deleteAsset(
@@ -221,12 +281,12 @@ trait IoTSiteWise extends Service {
   ): Request[DeleteAssetResponse, AWSError] = js.native
   
   /**
-    * Deletes an asset model. This action can't be undone. You must delete all assets created from an asset model before you can delete the model. Also, you can't delete an asset model if a parent asset model exists that contains a property formula expression that depends on the asset model that you want to delete. For more information, see Deleting assets and models in the AWS IoT SiteWise User Guide.
+    * Deletes an asset model. This action can't be undone. You must delete all assets created from an asset model before you can delete the model. Also, you can't delete an asset model if a parent asset model exists that contains a property formula expression that depends on the asset model that you want to delete. For more information, see Deleting assets and models in the IoT SiteWise User Guide.
     */
   def deleteAssetModel(): Request[DeleteAssetModelResponse, AWSError] = js.native
   def deleteAssetModel(callback: js.Function2[/* err */ AWSError, /* data */ DeleteAssetModelResponse, Unit]): Request[DeleteAssetModelResponse, AWSError] = js.native
   /**
-    * Deletes an asset model. This action can't be undone. You must delete all assets created from an asset model before you can delete the model. Also, you can't delete an asset model if a parent asset model exists that contains a property formula expression that depends on the asset model that you want to delete. For more information, see Deleting assets and models in the AWS IoT SiteWise User Guide.
+    * Deletes an asset model. This action can't be undone. You must delete all assets created from an asset model before you can delete the model. Also, you can't delete an asset model if a parent asset model exists that contains a property formula expression that depends on the asset model that you want to delete. For more information, see Deleting assets and models in the IoT SiteWise User Guide.
     */
   def deleteAssetModel(params: DeleteAssetModelRequest): Request[DeleteAssetModelResponse, AWSError] = js.native
   def deleteAssetModel(
@@ -235,12 +295,12 @@ trait IoTSiteWise extends Service {
   ): Request[DeleteAssetModelResponse, AWSError] = js.native
   
   /**
-    * Deletes a dashboard from AWS IoT SiteWise Monitor.
+    * Deletes a dashboard from IoT SiteWise Monitor.
     */
   def deleteDashboard(): Request[DeleteDashboardResponse, AWSError] = js.native
   def deleteDashboard(callback: js.Function2[/* err */ AWSError, /* data */ DeleteDashboardResponse, Unit]): Request[DeleteDashboardResponse, AWSError] = js.native
   /**
-    * Deletes a dashboard from AWS IoT SiteWise Monitor.
+    * Deletes a dashboard from IoT SiteWise Monitor.
     */
   def deleteDashboard(params: DeleteDashboardRequest): Request[DeleteDashboardResponse, AWSError] = js.native
   def deleteDashboard(
@@ -249,12 +309,12 @@ trait IoTSiteWise extends Service {
   ): Request[DeleteDashboardResponse, AWSError] = js.native
   
   /**
-    * Deletes a gateway from AWS IoT SiteWise. When you delete a gateway, some of the gateway's files remain in your gateway's file system.
+    * Deletes a gateway from IoT SiteWise. When you delete a gateway, some of the gateway's files remain in your gateway's file system.
     */
   def deleteGateway(): Request[js.Object, AWSError] = js.native
   def deleteGateway(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Deletes a gateway from AWS IoT SiteWise. When you delete a gateway, some of the gateway's files remain in your gateway's file system.
+    * Deletes a gateway from IoT SiteWise. When you delete a gateway, some of the gateway's files remain in your gateway's file system.
     */
   def deleteGateway(params: DeleteGatewayRequest): Request[js.Object, AWSError] = js.native
   def deleteGateway(
@@ -263,12 +323,12 @@ trait IoTSiteWise extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Deletes a portal from AWS IoT SiteWise Monitor.
+    * Deletes a portal from IoT SiteWise Monitor.
     */
   def deletePortal(): Request[DeletePortalResponse, AWSError] = js.native
   def deletePortal(callback: js.Function2[/* err */ AWSError, /* data */ DeletePortalResponse, Unit]): Request[DeletePortalResponse, AWSError] = js.native
   /**
-    * Deletes a portal from AWS IoT SiteWise Monitor.
+    * Deletes a portal from IoT SiteWise Monitor.
     */
   def deletePortal(params: DeletePortalRequest): Request[DeletePortalResponse, AWSError] = js.native
   def deletePortal(
@@ -277,12 +337,12 @@ trait IoTSiteWise extends Service {
   ): Request[DeletePortalResponse, AWSError] = js.native
   
   /**
-    * Deletes a project from AWS IoT SiteWise Monitor.
+    * Deletes a project from IoT SiteWise Monitor.
     */
   def deleteProject(): Request[DeleteProjectResponse, AWSError] = js.native
   def deleteProject(callback: js.Function2[/* err */ AWSError, /* data */ DeleteProjectResponse, Unit]): Request[DeleteProjectResponse, AWSError] = js.native
   /**
-    * Deletes a project from AWS IoT SiteWise Monitor.
+    * Deletes a project from IoT SiteWise Monitor.
     */
   def deleteProject(params: DeleteProjectRequest): Request[DeleteProjectResponse, AWSError] = js.native
   def deleteProject(
@@ -291,12 +351,26 @@ trait IoTSiteWise extends Service {
   ): Request[DeleteProjectResponse, AWSError] = js.native
   
   /**
-    * Describes an access policy, which specifies an identity's access to an AWS IoT SiteWise Monitor portal or project.
+    * Deletes a time series (data stream). If you delete a time series that's associated with an asset property, the asset property still exists, but the time series will no longer be associated with this asset property. To identify a time series, do one of the following:   If the time series isn't associated with an asset property, specify the alias of the time series.   If the time series is associated with an asset property, specify one of the following:    The alias of the time series.   The assetId and propertyId that identifies the asset property.    
+    */
+  def deleteTimeSeries(): Request[js.Object, AWSError] = js.native
+  def deleteTimeSeries(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes a time series (data stream). If you delete a time series that's associated with an asset property, the asset property still exists, but the time series will no longer be associated with this asset property. To identify a time series, do one of the following:   If the time series isn't associated with an asset property, specify the alias of the time series.   If the time series is associated with an asset property, specify one of the following:    The alias of the time series.   The assetId and propertyId that identifies the asset property.    
+    */
+  def deleteTimeSeries(params: DeleteTimeSeriesRequest): Request[js.Object, AWSError] = js.native
+  def deleteTimeSeries(
+    params: DeleteTimeSeriesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Describes an access policy, which specifies an identity's access to an IoT SiteWise Monitor portal or project.
     */
   def describeAccessPolicy(): Request[DescribeAccessPolicyResponse, AWSError] = js.native
   def describeAccessPolicy(callback: js.Function2[/* err */ AWSError, /* data */ DescribeAccessPolicyResponse, Unit]): Request[DescribeAccessPolicyResponse, AWSError] = js.native
   /**
-    * Describes an access policy, which specifies an identity's access to an AWS IoT SiteWise Monitor portal or project.
+    * Describes an access policy, which specifies an identity's access to an IoT SiteWise Monitor portal or project.
     */
   def describeAccessPolicy(params: DescribeAccessPolicyRequest): Request[DescribeAccessPolicyResponse, AWSError] = js.native
   def describeAccessPolicy(
@@ -347,6 +421,20 @@ trait IoTSiteWise extends Service {
   ): Request[DescribeAssetPropertyResponse, AWSError] = js.native
   
   /**
+    * Retrieves information about a bulk import job request. For more information, see Describe a bulk import job (CLI) in the Amazon Simple Storage Service User Guide.
+    */
+  def describeBulkImportJob(): Request[DescribeBulkImportJobResponse, AWSError] = js.native
+  def describeBulkImportJob(callback: js.Function2[/* err */ AWSError, /* data */ DescribeBulkImportJobResponse, Unit]): Request[DescribeBulkImportJobResponse, AWSError] = js.native
+  /**
+    * Retrieves information about a bulk import job request. For more information, see Describe a bulk import job (CLI) in the Amazon Simple Storage Service User Guide.
+    */
+  def describeBulkImportJob(params: DescribeBulkImportJobRequest): Request[DescribeBulkImportJobResponse, AWSError] = js.native
+  def describeBulkImportJob(
+    params: DescribeBulkImportJobRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeBulkImportJobResponse, Unit]
+  ): Request[DescribeBulkImportJobResponse, AWSError] = js.native
+  
+  /**
     * Retrieves information about a dashboard.
     */
   def describeDashboard(): Request[DescribeDashboardResponse, AWSError] = js.native
@@ -359,6 +447,22 @@ trait IoTSiteWise extends Service {
     params: DescribeDashboardRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeDashboardResponse, Unit]
   ): Request[DescribeDashboardResponse, AWSError] = js.native
+  
+  /**
+    * Retrieves information about the default encryption configuration for the Amazon Web Services account in the default or specified Region. For more information, see Key management in the IoT SiteWise User Guide.
+    */
+  def describeDefaultEncryptionConfiguration(): Request[DescribeDefaultEncryptionConfigurationResponse, AWSError] = js.native
+  def describeDefaultEncryptionConfiguration(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeDefaultEncryptionConfigurationResponse, Unit]
+  ): Request[DescribeDefaultEncryptionConfigurationResponse, AWSError] = js.native
+  /**
+    * Retrieves information about the default encryption configuration for the Amazon Web Services account in the default or specified Region. For more information, see Key management in the IoT SiteWise User Guide.
+    */
+  def describeDefaultEncryptionConfiguration(params: DescribeDefaultEncryptionConfigurationRequest): Request[DescribeDefaultEncryptionConfigurationResponse, AWSError] = js.native
+  def describeDefaultEncryptionConfiguration(
+    params: DescribeDefaultEncryptionConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeDefaultEncryptionConfigurationResponse, Unit]
+  ): Request[DescribeDefaultEncryptionConfigurationResponse, AWSError] = js.native
   
   /**
     * Retrieves information about a gateway.
@@ -375,14 +479,14 @@ trait IoTSiteWise extends Service {
   ): Request[DescribeGatewayResponse, AWSError] = js.native
   
   /**
-    * Retrieves information about a gateway capability configuration. Each gateway capability defines data sources for a gateway. A capability configuration can contain multiple data source configurations. If you define OPC-UA sources for a gateway in the AWS IoT SiteWise console, all of your OPC-UA sources are stored in one capability configuration. To list all capability configurations for a gateway, use DescribeGateway.
+    * Retrieves information about a gateway capability configuration. Each gateway capability defines data sources for a gateway. A capability configuration can contain multiple data source configurations. If you define OPC-UA sources for a gateway in the IoT SiteWise console, all of your OPC-UA sources are stored in one capability configuration. To list all capability configurations for a gateway, use DescribeGateway.
     */
   def describeGatewayCapabilityConfiguration(): Request[DescribeGatewayCapabilityConfigurationResponse, AWSError] = js.native
   def describeGatewayCapabilityConfiguration(
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeGatewayCapabilityConfigurationResponse, Unit]
   ): Request[DescribeGatewayCapabilityConfigurationResponse, AWSError] = js.native
   /**
-    * Retrieves information about a gateway capability configuration. Each gateway capability defines data sources for a gateway. A capability configuration can contain multiple data source configurations. If you define OPC-UA sources for a gateway in the AWS IoT SiteWise console, all of your OPC-UA sources are stored in one capability configuration. To list all capability configurations for a gateway, use DescribeGateway.
+    * Retrieves information about a gateway capability configuration. Each gateway capability defines data sources for a gateway. A capability configuration can contain multiple data source configurations. If you define OPC-UA sources for a gateway in the IoT SiteWise console, all of your OPC-UA sources are stored in one capability configuration. To list all capability configurations for a gateway, use DescribeGateway.
     */
   def describeGatewayCapabilityConfiguration(params: DescribeGatewayCapabilityConfigurationRequest): Request[DescribeGatewayCapabilityConfigurationResponse, AWSError] = js.native
   def describeGatewayCapabilityConfiguration(
@@ -391,12 +495,12 @@ trait IoTSiteWise extends Service {
   ): Request[DescribeGatewayCapabilityConfigurationResponse, AWSError] = js.native
   
   /**
-    * Retrieves the current AWS IoT SiteWise logging options.
+    * Retrieves the current IoT SiteWise logging options.
     */
   def describeLoggingOptions(): Request[DescribeLoggingOptionsResponse, AWSError] = js.native
   def describeLoggingOptions(callback: js.Function2[/* err */ AWSError, /* data */ DescribeLoggingOptionsResponse, Unit]): Request[DescribeLoggingOptionsResponse, AWSError] = js.native
   /**
-    * Retrieves the current AWS IoT SiteWise logging options.
+    * Retrieves the current IoT SiteWise logging options.
     */
   def describeLoggingOptions(params: DescribeLoggingOptionsRequest): Request[DescribeLoggingOptionsResponse, AWSError] = js.native
   def describeLoggingOptions(
@@ -433,6 +537,34 @@ trait IoTSiteWise extends Service {
   ): Request[DescribeProjectResponse, AWSError] = js.native
   
   /**
+    * Retrieves information about the storage configuration for IoT SiteWise.
+    */
+  def describeStorageConfiguration(): Request[DescribeStorageConfigurationResponse, AWSError] = js.native
+  def describeStorageConfiguration(callback: js.Function2[/* err */ AWSError, /* data */ DescribeStorageConfigurationResponse, Unit]): Request[DescribeStorageConfigurationResponse, AWSError] = js.native
+  /**
+    * Retrieves information about the storage configuration for IoT SiteWise.
+    */
+  def describeStorageConfiguration(params: DescribeStorageConfigurationRequest): Request[DescribeStorageConfigurationResponse, AWSError] = js.native
+  def describeStorageConfiguration(
+    params: DescribeStorageConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeStorageConfigurationResponse, Unit]
+  ): Request[DescribeStorageConfigurationResponse, AWSError] = js.native
+  
+  /**
+    * Retrieves information about a time series (data stream). To identify a time series, do one of the following:   If the time series isn't associated with an asset property, specify the alias of the time series.   If the time series is associated with an asset property, specify one of the following:    The alias of the time series.   The assetId and propertyId that identifies the asset property.    
+    */
+  def describeTimeSeries(): Request[DescribeTimeSeriesResponse, AWSError] = js.native
+  def describeTimeSeries(callback: js.Function2[/* err */ AWSError, /* data */ DescribeTimeSeriesResponse, Unit]): Request[DescribeTimeSeriesResponse, AWSError] = js.native
+  /**
+    * Retrieves information about a time series (data stream). To identify a time series, do one of the following:   If the time series isn't associated with an asset property, specify the alias of the time series.   If the time series is associated with an asset property, specify one of the following:    The alias of the time series.   The assetId and propertyId that identifies the asset property.    
+    */
+  def describeTimeSeries(params: DescribeTimeSeriesRequest): Request[DescribeTimeSeriesResponse, AWSError] = js.native
+  def describeTimeSeries(
+    params: DescribeTimeSeriesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeTimeSeriesResponse, Unit]
+  ): Request[DescribeTimeSeriesResponse, AWSError] = js.native
+  
+  /**
     * Disassociates a child asset from the given parent asset through a hierarchy defined in the parent asset's model.
     */
   def disassociateAssets(): Request[js.Object, AWSError] = js.native
@@ -447,12 +579,26 @@ trait IoTSiteWise extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Gets aggregated values for an asset property. For more information, see Querying aggregates in the AWS IoT SiteWise User Guide. To identify an asset property, you must specify one of the following:   The assetId and propertyId of an asset property.   A propertyAlias, which is a data stream alias (for example, /company/windfarm/3/turbine/7/temperature). To define an asset property's alias, see UpdateAssetProperty.  
+    * Disassociates a time series (data stream) from an asset property.
+    */
+  def disassociateTimeSeriesFromAssetProperty(): Request[js.Object, AWSError] = js.native
+  def disassociateTimeSeriesFromAssetProperty(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Disassociates a time series (data stream) from an asset property.
+    */
+  def disassociateTimeSeriesFromAssetProperty(params: DisassociateTimeSeriesFromAssetPropertyRequest): Request[js.Object, AWSError] = js.native
+  def disassociateTimeSeriesFromAssetProperty(
+    params: DisassociateTimeSeriesFromAssetPropertyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Gets aggregated values for an asset property. For more information, see Querying aggregates in the IoT SiteWise User Guide. To identify an asset property, you must specify one of the following:   The assetId and propertyId of an asset property.   A propertyAlias, which is a data stream alias (for example, /company/windfarm/3/turbine/7/temperature). To define an asset property's alias, see UpdateAssetProperty.  
     */
   def getAssetPropertyAggregates(): Request[GetAssetPropertyAggregatesResponse, AWSError] = js.native
   def getAssetPropertyAggregates(callback: js.Function2[/* err */ AWSError, /* data */ GetAssetPropertyAggregatesResponse, Unit]): Request[GetAssetPropertyAggregatesResponse, AWSError] = js.native
   /**
-    * Gets aggregated values for an asset property. For more information, see Querying aggregates in the AWS IoT SiteWise User Guide. To identify an asset property, you must specify one of the following:   The assetId and propertyId of an asset property.   A propertyAlias, which is a data stream alias (for example, /company/windfarm/3/turbine/7/temperature). To define an asset property's alias, see UpdateAssetProperty.  
+    * Gets aggregated values for an asset property. For more information, see Querying aggregates in the IoT SiteWise User Guide. To identify an asset property, you must specify one of the following:   The assetId and propertyId of an asset property.   A propertyAlias, which is a data stream alias (for example, /company/windfarm/3/turbine/7/temperature). To define an asset property's alias, see UpdateAssetProperty.  
     */
   def getAssetPropertyAggregates(params: GetAssetPropertyAggregatesRequest): Request[GetAssetPropertyAggregatesResponse, AWSError] = js.native
   def getAssetPropertyAggregates(
@@ -461,12 +607,12 @@ trait IoTSiteWise extends Service {
   ): Request[GetAssetPropertyAggregatesResponse, AWSError] = js.native
   
   /**
-    * Gets an asset property's current value. For more information, see Querying current values in the AWS IoT SiteWise User Guide. To identify an asset property, you must specify one of the following:   The assetId and propertyId of an asset property.   A propertyAlias, which is a data stream alias (for example, /company/windfarm/3/turbine/7/temperature). To define an asset property's alias, see UpdateAssetProperty.  
+    * Gets an asset property's current value. For more information, see Querying current values in the IoT SiteWise User Guide. To identify an asset property, you must specify one of the following:   The assetId and propertyId of an asset property.   A propertyAlias, which is a data stream alias (for example, /company/windfarm/3/turbine/7/temperature). To define an asset property's alias, see UpdateAssetProperty.  
     */
   def getAssetPropertyValue(): Request[GetAssetPropertyValueResponse, AWSError] = js.native
   def getAssetPropertyValue(callback: js.Function2[/* err */ AWSError, /* data */ GetAssetPropertyValueResponse, Unit]): Request[GetAssetPropertyValueResponse, AWSError] = js.native
   /**
-    * Gets an asset property's current value. For more information, see Querying current values in the AWS IoT SiteWise User Guide. To identify an asset property, you must specify one of the following:   The assetId and propertyId of an asset property.   A propertyAlias, which is a data stream alias (for example, /company/windfarm/3/turbine/7/temperature). To define an asset property's alias, see UpdateAssetProperty.  
+    * Gets an asset property's current value. For more information, see Querying current values in the IoT SiteWise User Guide. To identify an asset property, you must specify one of the following:   The assetId and propertyId of an asset property.   A propertyAlias, which is a data stream alias (for example, /company/windfarm/3/turbine/7/temperature). To define an asset property's alias, see UpdateAssetProperty.  
     */
   def getAssetPropertyValue(params: GetAssetPropertyValueRequest): Request[GetAssetPropertyValueResponse, AWSError] = js.native
   def getAssetPropertyValue(
@@ -475,12 +621,12 @@ trait IoTSiteWise extends Service {
   ): Request[GetAssetPropertyValueResponse, AWSError] = js.native
   
   /**
-    * Gets the history of an asset property's values. For more information, see Querying historical values in the AWS IoT SiteWise User Guide. To identify an asset property, you must specify one of the following:   The assetId and propertyId of an asset property.   A propertyAlias, which is a data stream alias (for example, /company/windfarm/3/turbine/7/temperature). To define an asset property's alias, see UpdateAssetProperty.  
+    * Gets the history of an asset property's values. For more information, see Querying historical values in the IoT SiteWise User Guide. To identify an asset property, you must specify one of the following:   The assetId and propertyId of an asset property.   A propertyAlias, which is a data stream alias (for example, /company/windfarm/3/turbine/7/temperature). To define an asset property's alias, see UpdateAssetProperty.  
     */
   def getAssetPropertyValueHistory(): Request[GetAssetPropertyValueHistoryResponse, AWSError] = js.native
   def getAssetPropertyValueHistory(callback: js.Function2[/* err */ AWSError, /* data */ GetAssetPropertyValueHistoryResponse, Unit]): Request[GetAssetPropertyValueHistoryResponse, AWSError] = js.native
   /**
-    * Gets the history of an asset property's values. For more information, see Querying historical values in the AWS IoT SiteWise User Guide. To identify an asset property, you must specify one of the following:   The assetId and propertyId of an asset property.   A propertyAlias, which is a data stream alias (for example, /company/windfarm/3/turbine/7/temperature). To define an asset property's alias, see UpdateAssetProperty.  
+    * Gets the history of an asset property's values. For more information, see Querying historical values in the IoT SiteWise User Guide. To identify an asset property, you must specify one of the following:   The assetId and propertyId of an asset property.   A propertyAlias, which is a data stream alias (for example, /company/windfarm/3/turbine/7/temperature). To define an asset property's alias, see UpdateAssetProperty.  
     */
   def getAssetPropertyValueHistory(params: GetAssetPropertyValueHistoryRequest): Request[GetAssetPropertyValueHistoryResponse, AWSError] = js.native
   def getAssetPropertyValueHistory(
@@ -489,12 +635,28 @@ trait IoTSiteWise extends Service {
   ): Request[GetAssetPropertyValueHistoryResponse, AWSError] = js.native
   
   /**
-    * Retrieves a paginated list of access policies for an identity (an AWS SSO user, an AWS SSO group, or an IAM user) or an AWS IoT SiteWise Monitor resource (a portal or project).
+    * Get interpolated values for an asset property for a specified time interval, during a period of time. If your time series is missing data points during the specified time interval, you can use interpolation to estimate the missing data. For example, you can use this operation to return the interpolated temperature values for a wind turbine every 24 hours over a duration of 7 days. To identify an asset property, you must specify one of the following:   The assetId and propertyId of an asset property.   A propertyAlias, which is a data stream alias (for example, /company/windfarm/3/turbine/7/temperature). To define an asset property's alias, see UpdateAssetProperty.  
+    */
+  def getInterpolatedAssetPropertyValues(): Request[GetInterpolatedAssetPropertyValuesResponse, AWSError] = js.native
+  def getInterpolatedAssetPropertyValues(
+    callback: js.Function2[/* err */ AWSError, /* data */ GetInterpolatedAssetPropertyValuesResponse, Unit]
+  ): Request[GetInterpolatedAssetPropertyValuesResponse, AWSError] = js.native
+  /**
+    * Get interpolated values for an asset property for a specified time interval, during a period of time. If your time series is missing data points during the specified time interval, you can use interpolation to estimate the missing data. For example, you can use this operation to return the interpolated temperature values for a wind turbine every 24 hours over a duration of 7 days. To identify an asset property, you must specify one of the following:   The assetId and propertyId of an asset property.   A propertyAlias, which is a data stream alias (for example, /company/windfarm/3/turbine/7/temperature). To define an asset property's alias, see UpdateAssetProperty.  
+    */
+  def getInterpolatedAssetPropertyValues(params: GetInterpolatedAssetPropertyValuesRequest): Request[GetInterpolatedAssetPropertyValuesResponse, AWSError] = js.native
+  def getInterpolatedAssetPropertyValues(
+    params: GetInterpolatedAssetPropertyValuesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetInterpolatedAssetPropertyValuesResponse, Unit]
+  ): Request[GetInterpolatedAssetPropertyValuesResponse, AWSError] = js.native
+  
+  /**
+    * Retrieves a paginated list of access policies for an identity (an Amazon Web Services SSO user, an Amazon Web Services SSO group, or an IAM user) or an IoT SiteWise Monitor resource (a portal or project).
     */
   def listAccessPolicies(): Request[ListAccessPoliciesResponse, AWSError] = js.native
   def listAccessPolicies(callback: js.Function2[/* err */ AWSError, /* data */ ListAccessPoliciesResponse, Unit]): Request[ListAccessPoliciesResponse, AWSError] = js.native
   /**
-    * Retrieves a paginated list of access policies for an identity (an AWS SSO user, an AWS SSO group, or an IAM user) or an AWS IoT SiteWise Monitor resource (a portal or project).
+    * Retrieves a paginated list of access policies for an identity (an Amazon Web Services SSO user, an Amazon Web Services SSO group, or an IAM user) or an IoT SiteWise Monitor resource (a portal or project).
     */
   def listAccessPolicies(params: ListAccessPoliciesRequest): Request[ListAccessPoliciesResponse, AWSError] = js.native
   def listAccessPolicies(
@@ -515,6 +677,20 @@ trait IoTSiteWise extends Service {
     params: ListAssetModelsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListAssetModelsResponse, Unit]
   ): Request[ListAssetModelsResponse, AWSError] = js.native
+  
+  /**
+    * Retrieves a paginated list of asset relationships for an asset. You can use this operation to identify an asset's root asset and all associated assets between that asset and its root.
+    */
+  def listAssetRelationships(): Request[ListAssetRelationshipsResponse, AWSError] = js.native
+  def listAssetRelationships(callback: js.Function2[/* err */ AWSError, /* data */ ListAssetRelationshipsResponse, Unit]): Request[ListAssetRelationshipsResponse, AWSError] = js.native
+  /**
+    * Retrieves a paginated list of asset relationships for an asset. You can use this operation to identify an asset's root asset and all associated assets between that asset and its root.
+    */
+  def listAssetRelationships(params: ListAssetRelationshipsRequest): Request[ListAssetRelationshipsResponse, AWSError] = js.native
+  def listAssetRelationships(
+    params: ListAssetRelationshipsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListAssetRelationshipsResponse, Unit]
+  ): Request[ListAssetRelationshipsResponse, AWSError] = js.native
   
   /**
     * Retrieves a paginated list of asset summaries. You can use this operation to do the following:   List assets based on a specific asset model.   List top-level assets.   You can't use this operation to list all assets. To retrieve summaries for all of your assets, use ListAssetModels to get all of your asset model IDs. Then, use ListAssets to get all assets for each asset model.
@@ -545,12 +721,26 @@ trait IoTSiteWise extends Service {
   ): Request[ListAssociatedAssetsResponse, AWSError] = js.native
   
   /**
-    * Retrieves a paginated list of dashboards for an AWS IoT SiteWise Monitor project.
+    * Retrieves a paginated list of bulk import job requests. For more information, see List bulk import jobs (CLI) in the IoT SiteWise User Guide.
+    */
+  def listBulkImportJobs(): Request[ListBulkImportJobsResponse, AWSError] = js.native
+  def listBulkImportJobs(callback: js.Function2[/* err */ AWSError, /* data */ ListBulkImportJobsResponse, Unit]): Request[ListBulkImportJobsResponse, AWSError] = js.native
+  /**
+    * Retrieves a paginated list of bulk import job requests. For more information, see List bulk import jobs (CLI) in the IoT SiteWise User Guide.
+    */
+  def listBulkImportJobs(params: ListBulkImportJobsRequest): Request[ListBulkImportJobsResponse, AWSError] = js.native
+  def listBulkImportJobs(
+    params: ListBulkImportJobsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListBulkImportJobsResponse, Unit]
+  ): Request[ListBulkImportJobsResponse, AWSError] = js.native
+  
+  /**
+    * Retrieves a paginated list of dashboards for an IoT SiteWise Monitor project.
     */
   def listDashboards(): Request[ListDashboardsResponse, AWSError] = js.native
   def listDashboards(callback: js.Function2[/* err */ AWSError, /* data */ ListDashboardsResponse, Unit]): Request[ListDashboardsResponse, AWSError] = js.native
   /**
-    * Retrieves a paginated list of dashboards for an AWS IoT SiteWise Monitor project.
+    * Retrieves a paginated list of dashboards for an IoT SiteWise Monitor project.
     */
   def listDashboards(params: ListDashboardsRequest): Request[ListDashboardsResponse, AWSError] = js.native
   def listDashboards(
@@ -573,12 +763,12 @@ trait IoTSiteWise extends Service {
   ): Request[ListGatewaysResponse, AWSError] = js.native
   
   /**
-    * Retrieves a paginated list of AWS IoT SiteWise Monitor portals.
+    * Retrieves a paginated list of IoT SiteWise Monitor portals.
     */
   def listPortals(): Request[ListPortalsResponse, AWSError] = js.native
   def listPortals(callback: js.Function2[/* err */ AWSError, /* data */ ListPortalsResponse, Unit]): Request[ListPortalsResponse, AWSError] = js.native
   /**
-    * Retrieves a paginated list of AWS IoT SiteWise Monitor portals.
+    * Retrieves a paginated list of IoT SiteWise Monitor portals.
     */
   def listPortals(params: ListPortalsRequest): Request[ListPortalsResponse, AWSError] = js.native
   def listPortals(
@@ -587,12 +777,12 @@ trait IoTSiteWise extends Service {
   ): Request[ListPortalsResponse, AWSError] = js.native
   
   /**
-    * Retrieves a paginated list of assets associated with an AWS IoT SiteWise Monitor project.
+    * Retrieves a paginated list of assets associated with an IoT SiteWise Monitor project.
     */
   def listProjectAssets(): Request[ListProjectAssetsResponse, AWSError] = js.native
   def listProjectAssets(callback: js.Function2[/* err */ AWSError, /* data */ ListProjectAssetsResponse, Unit]): Request[ListProjectAssetsResponse, AWSError] = js.native
   /**
-    * Retrieves a paginated list of assets associated with an AWS IoT SiteWise Monitor project.
+    * Retrieves a paginated list of assets associated with an IoT SiteWise Monitor project.
     */
   def listProjectAssets(params: ListProjectAssetsRequest): Request[ListProjectAssetsResponse, AWSError] = js.native
   def listProjectAssets(
@@ -601,12 +791,12 @@ trait IoTSiteWise extends Service {
   ): Request[ListProjectAssetsResponse, AWSError] = js.native
   
   /**
-    * Retrieves a paginated list of projects for an AWS IoT SiteWise Monitor portal.
+    * Retrieves a paginated list of projects for an IoT SiteWise Monitor portal.
     */
   def listProjects(): Request[ListProjectsResponse, AWSError] = js.native
   def listProjects(callback: js.Function2[/* err */ AWSError, /* data */ ListProjectsResponse, Unit]): Request[ListProjectsResponse, AWSError] = js.native
   /**
-    * Retrieves a paginated list of projects for an AWS IoT SiteWise Monitor portal.
+    * Retrieves a paginated list of projects for an IoT SiteWise Monitor portal.
     */
   def listProjects(params: ListProjectsRequest): Request[ListProjectsResponse, AWSError] = js.native
   def listProjects(
@@ -615,12 +805,12 @@ trait IoTSiteWise extends Service {
   ): Request[ListProjectsResponse, AWSError] = js.native
   
   /**
-    * Retrieves the list of tags for an AWS IoT SiteWise resource.
+    * Retrieves the list of tags for an IoT SiteWise resource.
     */
   def listTagsForResource(): Request[ListTagsForResourceResponse, AWSError] = js.native
   def listTagsForResource(callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]): Request[ListTagsForResourceResponse, AWSError] = js.native
   /**
-    * Retrieves the list of tags for an AWS IoT SiteWise resource.
+    * Retrieves the list of tags for an IoT SiteWise resource.
     */
   def listTagsForResource(params: ListTagsForResourceRequest): Request[ListTagsForResourceResponse, AWSError] = js.native
   def listTagsForResource(
@@ -629,12 +819,42 @@ trait IoTSiteWise extends Service {
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
   
   /**
-    * Sets logging options for AWS IoT SiteWise.
+    * Retrieves a paginated list of time series (data streams).
+    */
+  def listTimeSeries(): Request[ListTimeSeriesResponse, AWSError] = js.native
+  def listTimeSeries(callback: js.Function2[/* err */ AWSError, /* data */ ListTimeSeriesResponse, Unit]): Request[ListTimeSeriesResponse, AWSError] = js.native
+  /**
+    * Retrieves a paginated list of time series (data streams).
+    */
+  def listTimeSeries(params: ListTimeSeriesRequest): Request[ListTimeSeriesResponse, AWSError] = js.native
+  def listTimeSeries(
+    params: ListTimeSeriesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListTimeSeriesResponse, Unit]
+  ): Request[ListTimeSeriesResponse, AWSError] = js.native
+  
+  /**
+    * Sets the default encryption configuration for the Amazon Web Services account. For more information, see Key management in the IoT SiteWise User Guide.
+    */
+  def putDefaultEncryptionConfiguration(): Request[PutDefaultEncryptionConfigurationResponse, AWSError] = js.native
+  def putDefaultEncryptionConfiguration(
+    callback: js.Function2[/* err */ AWSError, /* data */ PutDefaultEncryptionConfigurationResponse, Unit]
+  ): Request[PutDefaultEncryptionConfigurationResponse, AWSError] = js.native
+  /**
+    * Sets the default encryption configuration for the Amazon Web Services account. For more information, see Key management in the IoT SiteWise User Guide.
+    */
+  def putDefaultEncryptionConfiguration(params: PutDefaultEncryptionConfigurationRequest): Request[PutDefaultEncryptionConfigurationResponse, AWSError] = js.native
+  def putDefaultEncryptionConfiguration(
+    params: PutDefaultEncryptionConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutDefaultEncryptionConfigurationResponse, Unit]
+  ): Request[PutDefaultEncryptionConfigurationResponse, AWSError] = js.native
+  
+  /**
+    * Sets logging options for IoT SiteWise.
     */
   def putLoggingOptions(): Request[PutLoggingOptionsResponse, AWSError] = js.native
   def putLoggingOptions(callback: js.Function2[/* err */ AWSError, /* data */ PutLoggingOptionsResponse, Unit]): Request[PutLoggingOptionsResponse, AWSError] = js.native
   /**
-    * Sets logging options for AWS IoT SiteWise.
+    * Sets logging options for IoT SiteWise.
     */
   def putLoggingOptions(params: PutLoggingOptionsRequest): Request[PutLoggingOptionsResponse, AWSError] = js.native
   def putLoggingOptions(
@@ -643,12 +863,26 @@ trait IoTSiteWise extends Service {
   ): Request[PutLoggingOptionsResponse, AWSError] = js.native
   
   /**
-    * Adds tags to an AWS IoT SiteWise resource. If a tag already exists for the resource, this operation updates the tag's value.
+    * Configures storage settings for IoT SiteWise.
+    */
+  def putStorageConfiguration(): Request[PutStorageConfigurationResponse, AWSError] = js.native
+  def putStorageConfiguration(callback: js.Function2[/* err */ AWSError, /* data */ PutStorageConfigurationResponse, Unit]): Request[PutStorageConfigurationResponse, AWSError] = js.native
+  /**
+    * Configures storage settings for IoT SiteWise.
+    */
+  def putStorageConfiguration(params: PutStorageConfigurationRequest): Request[PutStorageConfigurationResponse, AWSError] = js.native
+  def putStorageConfiguration(
+    params: PutStorageConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutStorageConfigurationResponse, Unit]
+  ): Request[PutStorageConfigurationResponse, AWSError] = js.native
+  
+  /**
+    * Adds tags to an IoT SiteWise resource. If a tag already exists for the resource, this operation updates the tag's value.
     */
   def tagResource(): Request[TagResourceResponse, AWSError] = js.native
   def tagResource(callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]): Request[TagResourceResponse, AWSError] = js.native
   /**
-    * Adds tags to an AWS IoT SiteWise resource. If a tag already exists for the resource, this operation updates the tag's value.
+    * Adds tags to an IoT SiteWise resource. If a tag already exists for the resource, this operation updates the tag's value.
     */
   def tagResource(params: TagResourceRequest): Request[TagResourceResponse, AWSError] = js.native
   def tagResource(
@@ -657,12 +891,12 @@ trait IoTSiteWise extends Service {
   ): Request[TagResourceResponse, AWSError] = js.native
   
   /**
-    * Removes a tag from an AWS IoT SiteWise resource.
+    * Removes a tag from an IoT SiteWise resource.
     */
   def untagResource(): Request[UntagResourceResponse, AWSError] = js.native
   def untagResource(callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]): Request[UntagResourceResponse, AWSError] = js.native
   /**
-    * Removes a tag from an AWS IoT SiteWise resource.
+    * Removes a tag from an IoT SiteWise resource.
     */
   def untagResource(params: UntagResourceRequest): Request[UntagResourceResponse, AWSError] = js.native
   def untagResource(
@@ -671,12 +905,12 @@ trait IoTSiteWise extends Service {
   ): Request[UntagResourceResponse, AWSError] = js.native
   
   /**
-    * Updates an existing access policy that specifies an identity's access to an AWS IoT SiteWise Monitor portal or project resource.
+    * Updates an existing access policy that specifies an identity's access to an IoT SiteWise Monitor portal or project resource.
     */
   def updateAccessPolicy(): Request[UpdateAccessPolicyResponse, AWSError] = js.native
   def updateAccessPolicy(callback: js.Function2[/* err */ AWSError, /* data */ UpdateAccessPolicyResponse, Unit]): Request[UpdateAccessPolicyResponse, AWSError] = js.native
   /**
-    * Updates an existing access policy that specifies an identity's access to an AWS IoT SiteWise Monitor portal or project resource.
+    * Updates an existing access policy that specifies an identity's access to an IoT SiteWise Monitor portal or project resource.
     */
   def updateAccessPolicy(params: UpdateAccessPolicyRequest): Request[UpdateAccessPolicyResponse, AWSError] = js.native
   def updateAccessPolicy(
@@ -685,12 +919,12 @@ trait IoTSiteWise extends Service {
   ): Request[UpdateAccessPolicyResponse, AWSError] = js.native
   
   /**
-    * Updates an asset's name. For more information, see Updating assets and models in the AWS IoT SiteWise User Guide.
+    * Updates an asset's name. For more information, see Updating assets and models in the IoT SiteWise User Guide.
     */
   def updateAsset(): Request[UpdateAssetResponse, AWSError] = js.native
   def updateAsset(callback: js.Function2[/* err */ AWSError, /* data */ UpdateAssetResponse, Unit]): Request[UpdateAssetResponse, AWSError] = js.native
   /**
-    * Updates an asset's name. For more information, see Updating assets and models in the AWS IoT SiteWise User Guide.
+    * Updates an asset's name. For more information, see Updating assets and models in the IoT SiteWise User Guide.
     */
   def updateAsset(params: UpdateAssetRequest): Request[UpdateAssetResponse, AWSError] = js.native
   def updateAsset(
@@ -699,12 +933,12 @@ trait IoTSiteWise extends Service {
   ): Request[UpdateAssetResponse, AWSError] = js.native
   
   /**
-    * Updates an asset model and all of the assets that were created from the model. Each asset created from the model inherits the updated asset model's property and hierarchy definitions. For more information, see Updating assets and models in the AWS IoT SiteWise User Guide.  This operation overwrites the existing model with the provided model. To avoid deleting your asset model's properties or hierarchies, you must include their IDs and definitions in the updated asset model payload. For more information, see DescribeAssetModel. If you remove a property from an asset model, AWS IoT SiteWise deletes all previous data for that property. If you remove a hierarchy definition from an asset model, AWS IoT SiteWise disassociates every asset associated with that hierarchy. You can't change the type or data type of an existing property. 
+    * Updates an asset model and all of the assets that were created from the model. Each asset created from the model inherits the updated asset model's property and hierarchy definitions. For more information, see Updating assets and models in the IoT SiteWise User Guide.  This operation overwrites the existing model with the provided model. To avoid deleting your asset model's properties or hierarchies, you must include their IDs and definitions in the updated asset model payload. For more information, see DescribeAssetModel. If you remove a property from an asset model, IoT SiteWise deletes all previous data for that property. If you remove a hierarchy definition from an asset model, IoT SiteWise disassociates every asset associated with that hierarchy. You can't change the type or data type of an existing property. 
     */
   def updateAssetModel(): Request[UpdateAssetModelResponse, AWSError] = js.native
   def updateAssetModel(callback: js.Function2[/* err */ AWSError, /* data */ UpdateAssetModelResponse, Unit]): Request[UpdateAssetModelResponse, AWSError] = js.native
   /**
-    * Updates an asset model and all of the assets that were created from the model. Each asset created from the model inherits the updated asset model's property and hierarchy definitions. For more information, see Updating assets and models in the AWS IoT SiteWise User Guide.  This operation overwrites the existing model with the provided model. To avoid deleting your asset model's properties or hierarchies, you must include their IDs and definitions in the updated asset model payload. For more information, see DescribeAssetModel. If you remove a property from an asset model, AWS IoT SiteWise deletes all previous data for that property. If you remove a hierarchy definition from an asset model, AWS IoT SiteWise disassociates every asset associated with that hierarchy. You can't change the type or data type of an existing property. 
+    * Updates an asset model and all of the assets that were created from the model. Each asset created from the model inherits the updated asset model's property and hierarchy definitions. For more information, see Updating assets and models in the IoT SiteWise User Guide.  This operation overwrites the existing model with the provided model. To avoid deleting your asset model's properties or hierarchies, you must include their IDs and definitions in the updated asset model payload. For more information, see DescribeAssetModel. If you remove a property from an asset model, IoT SiteWise deletes all previous data for that property. If you remove a hierarchy definition from an asset model, IoT SiteWise disassociates every asset associated with that hierarchy. You can't change the type or data type of an existing property. 
     */
   def updateAssetModel(params: UpdateAssetModelRequest): Request[UpdateAssetModelResponse, AWSError] = js.native
   def updateAssetModel(
@@ -727,12 +961,12 @@ trait IoTSiteWise extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Updates an AWS IoT SiteWise Monitor dashboard.
+    * Updates an IoT SiteWise Monitor dashboard.
     */
   def updateDashboard(): Request[UpdateDashboardResponse, AWSError] = js.native
   def updateDashboard(callback: js.Function2[/* err */ AWSError, /* data */ UpdateDashboardResponse, Unit]): Request[UpdateDashboardResponse, AWSError] = js.native
   /**
-    * Updates an AWS IoT SiteWise Monitor dashboard.
+    * Updates an IoT SiteWise Monitor dashboard.
     */
   def updateDashboard(params: UpdateDashboardRequest): Request[UpdateDashboardResponse, AWSError] = js.native
   def updateDashboard(
@@ -755,14 +989,14 @@ trait IoTSiteWise extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Updates a gateway capability configuration or defines a new capability configuration. Each gateway capability defines data sources for a gateway. A capability configuration can contain multiple data source configurations. If you define OPC-UA sources for a gateway in the AWS IoT SiteWise console, all of your OPC-UA sources are stored in one capability configuration. To list all capability configurations for a gateway, use DescribeGateway.
+    * Updates a gateway capability configuration or defines a new capability configuration. Each gateway capability defines data sources for a gateway. A capability configuration can contain multiple data source configurations. If you define OPC-UA sources for a gateway in the IoT SiteWise console, all of your OPC-UA sources are stored in one capability configuration. To list all capability configurations for a gateway, use DescribeGateway.
     */
   def updateGatewayCapabilityConfiguration(): Request[UpdateGatewayCapabilityConfigurationResponse, AWSError] = js.native
   def updateGatewayCapabilityConfiguration(
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateGatewayCapabilityConfigurationResponse, Unit]
   ): Request[UpdateGatewayCapabilityConfigurationResponse, AWSError] = js.native
   /**
-    * Updates a gateway capability configuration or defines a new capability configuration. Each gateway capability defines data sources for a gateway. A capability configuration can contain multiple data source configurations. If you define OPC-UA sources for a gateway in the AWS IoT SiteWise console, all of your OPC-UA sources are stored in one capability configuration. To list all capability configurations for a gateway, use DescribeGateway.
+    * Updates a gateway capability configuration or defines a new capability configuration. Each gateway capability defines data sources for a gateway. A capability configuration can contain multiple data source configurations. If you define OPC-UA sources for a gateway in the IoT SiteWise console, all of your OPC-UA sources are stored in one capability configuration. To list all capability configurations for a gateway, use DescribeGateway.
     */
   def updateGatewayCapabilityConfiguration(params: UpdateGatewayCapabilityConfigurationRequest): Request[UpdateGatewayCapabilityConfigurationResponse, AWSError] = js.native
   def updateGatewayCapabilityConfiguration(
@@ -771,12 +1005,12 @@ trait IoTSiteWise extends Service {
   ): Request[UpdateGatewayCapabilityConfigurationResponse, AWSError] = js.native
   
   /**
-    * Updates an AWS IoT SiteWise Monitor portal.
+    * Updates an IoT SiteWise Monitor portal.
     */
   def updatePortal(): Request[UpdatePortalResponse, AWSError] = js.native
   def updatePortal(callback: js.Function2[/* err */ AWSError, /* data */ UpdatePortalResponse, Unit]): Request[UpdatePortalResponse, AWSError] = js.native
   /**
-    * Updates an AWS IoT SiteWise Monitor portal.
+    * Updates an IoT SiteWise Monitor portal.
     */
   def updatePortal(params: UpdatePortalRequest): Request[UpdatePortalResponse, AWSError] = js.native
   def updatePortal(
@@ -785,12 +1019,12 @@ trait IoTSiteWise extends Service {
   ): Request[UpdatePortalResponse, AWSError] = js.native
   
   /**
-    * Updates an AWS IoT SiteWise Monitor project.
+    * Updates an IoT SiteWise Monitor project.
     */
   def updateProject(): Request[UpdateProjectResponse, AWSError] = js.native
   def updateProject(callback: js.Function2[/* err */ AWSError, /* data */ UpdateProjectResponse, Unit]): Request[UpdateProjectResponse, AWSError] = js.native
   /**
-    * Updates an AWS IoT SiteWise Monitor project.
+    * Updates an IoT SiteWise Monitor project.
     */
   def updateProject(params: UpdateProjectRequest): Request[UpdateProjectResponse, AWSError] = js.native
   def updateProject(

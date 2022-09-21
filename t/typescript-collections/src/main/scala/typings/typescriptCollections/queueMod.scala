@@ -17,7 +17,7 @@ object queueMod {
     * implementation uses a linked list as a container.
     * @constructor
     */
-  class default[T] ()
+  open class default[T] ()
     extends StObject
        with Queue[T]
   
@@ -91,7 +91,7 @@ object queueMod {
       * @type collections.LinkedList
       * @private
       */
-    /* private */ var list: js.Any = js.native
+    /* private */ var list: Any = js.native
     
     /**
       * Retrieves, but does not remove, the head of this queue.

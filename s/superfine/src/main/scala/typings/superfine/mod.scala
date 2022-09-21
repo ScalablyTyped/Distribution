@@ -1,12 +1,10 @@
 package typings.superfine
 
 import typings.std.HTMLAnchorElement
-import typings.std.HTMLAppletElement
 import typings.std.HTMLAreaElement
 import typings.std.HTMLAudioElement
 import typings.std.HTMLBRElement
 import typings.std.HTMLBaseElement
-import typings.std.HTMLBaseFontElement
 import typings.std.HTMLBodyElement
 import typings.std.HTMLButtonElement
 import typings.std.HTMLCanvasElement
@@ -15,15 +13,11 @@ import typings.std.HTMLDataElement
 import typings.std.HTMLDataListElement
 import typings.std.HTMLDetailsElement
 import typings.std.HTMLDialogElement
-import typings.std.HTMLDirectoryElement
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLEmbedElement
 import typings.std.HTMLFieldSetElement
-import typings.std.HTMLFontElement
 import typings.std.HTMLFormElement
-import typings.std.HTMLFrameElement
-import typings.std.HTMLFrameSetElement
 import typings.std.HTMLHRElement
 import typings.std.HTMLHeadElement
 import typings.std.HTMLHeadingElement
@@ -36,7 +30,6 @@ import typings.std.HTMLLabelElement
 import typings.std.HTMLLegendElement
 import typings.std.HTMLLinkElement
 import typings.std.HTMLMapElement
-import typings.std.HTMLMarqueeElement
 import typings.std.HTMLMenuElement
 import typings.std.HTMLMetaElement
 import typings.std.HTMLMeterElement
@@ -47,7 +40,6 @@ import typings.std.HTMLOptGroupElement
 import typings.std.HTMLOptionElement
 import typings.std.HTMLOutputElement
 import typings.std.HTMLParagraphElement
-import typings.std.HTMLParamElement
 import typings.std.HTMLPictureElement
 import typings.std.HTMLPreElement
 import typings.std.HTMLProgressElement
@@ -59,10 +51,9 @@ import typings.std.HTMLSourceElement
 import typings.std.HTMLSpanElement
 import typings.std.HTMLStyleElement
 import typings.std.HTMLTableCaptionElement
+import typings.std.HTMLTableCellElement
 import typings.std.HTMLTableColElement
-import typings.std.HTMLTableDataCellElement
 import typings.std.HTMLTableElement
-import typings.std.HTMLTableHeaderCellElement
 import typings.std.HTMLTableRowElement
 import typings.std.HTMLTableSectionElement
 import typings.std.HTMLTemplateElement
@@ -72,6 +63,9 @@ import typings.std.HTMLTitleElement
 import typings.std.HTMLTrackElement
 import typings.std.HTMLUListElement
 import typings.std.HTMLVideoElement
+import typings.std.SVGAnimateElement
+import typings.std.SVGAnimateMotionElement
+import typings.std.SVGAnimateTransformElement
 import typings.std.SVGCircleElement
 import typings.std.SVGClipPathElement
 import typings.std.SVGDefsElement
@@ -85,6 +79,7 @@ import typings.std.SVGFEConvolveMatrixElement
 import typings.std.SVGFEDiffuseLightingElement
 import typings.std.SVGFEDisplacementMapElement
 import typings.std.SVGFEDistantLightElement
+import typings.std.SVGFEDropShadowElement
 import typings.std.SVGFEFloodElement
 import typings.std.SVGFEFuncAElement
 import typings.std.SVGFEFuncBElement
@@ -107,6 +102,7 @@ import typings.std.SVGGElement
 import typings.std.SVGImageElement
 import typings.std.SVGLineElement
 import typings.std.SVGLinearGradientElement
+import typings.std.SVGMPathElement
 import typings.std.SVGMarkerElement
 import typings.std.SVGMaskElement
 import typings.std.SVGMetadataElement
@@ -117,6 +113,7 @@ import typings.std.SVGPolylineElement
 import typings.std.SVGRadialGradientElement
 import typings.std.SVGRectElement
 import typings.std.SVGSVGElement
+import typings.std.SVGSetElement
 import typings.std.SVGStopElement
 import typings.std.SVGSwitchElement
 import typings.std.SVGSymbolElement
@@ -130,14 +127,15 @@ import typings.superfine.superfineStrings.`var`
 import typings.superfine.superfineStrings.a
 import typings.superfine.superfineStrings.abbr
 import typings.superfine.superfineStrings.address
-import typings.superfine.superfineStrings.applet
+import typings.superfine.superfineStrings.animate
+import typings.superfine.superfineStrings.animateMotion
+import typings.superfine.superfineStrings.animateTransform
 import typings.superfine.superfineStrings.area
 import typings.superfine.superfineStrings.article
 import typings.superfine.superfineStrings.aside
 import typings.superfine.superfineStrings.audio
 import typings.superfine.superfineStrings.b
 import typings.superfine.superfineStrings.base
-import typings.superfine.superfineStrings.basefont
 import typings.superfine.superfineStrings.bdi
 import typings.superfine.superfineStrings.bdo
 import typings.superfine.superfineStrings.blockquote
@@ -161,7 +159,6 @@ import typings.superfine.superfineStrings.desc
 import typings.superfine.superfineStrings.details
 import typings.superfine.superfineStrings.dfn
 import typings.superfine.superfineStrings.dialog
-import typings.superfine.superfineStrings.dir
 import typings.superfine.superfineStrings.div
 import typings.superfine.superfineStrings.dl
 import typings.superfine.superfineStrings.dt
@@ -176,6 +173,7 @@ import typings.superfine.superfineStrings.feConvolveMatrix
 import typings.superfine.superfineStrings.feDiffuseLighting
 import typings.superfine.superfineStrings.feDisplacementMap
 import typings.superfine.superfineStrings.feDistantLight
+import typings.superfine.superfineStrings.feDropShadow
 import typings.superfine.superfineStrings.feFlood
 import typings.superfine.superfineStrings.feFuncA
 import typings.superfine.superfineStrings.feFuncB
@@ -196,12 +194,9 @@ import typings.superfine.superfineStrings.fieldset
 import typings.superfine.superfineStrings.figcaption
 import typings.superfine.superfineStrings.figure
 import typings.superfine.superfineStrings.filter
-import typings.superfine.superfineStrings.font
 import typings.superfine.superfineStrings.footer
 import typings.superfine.superfineStrings.foreignObject
 import typings.superfine.superfineStrings.form
-import typings.superfine.superfineStrings.frame
-import typings.superfine.superfineStrings.frameset
 import typings.superfine.superfineStrings.g
 import typings.superfine.superfineStrings.h1
 import typings.superfine.superfineStrings.h2
@@ -231,12 +226,12 @@ import typings.superfine.superfineStrings.main
 import typings.superfine.superfineStrings.map
 import typings.superfine.superfineStrings.mark
 import typings.superfine.superfineStrings.marker
-import typings.superfine.superfineStrings.marquee
 import typings.superfine.superfineStrings.mask
 import typings.superfine.superfineStrings.menu
 import typings.superfine.superfineStrings.meta
 import typings.superfine.superfineStrings.metadata
 import typings.superfine.superfineStrings.meter
+import typings.superfine.superfineStrings.mpath
 import typings.superfine.superfineStrings.nav
 import typings.superfine.superfineStrings.noscript
 import typings.superfine.superfineStrings.ol
@@ -244,7 +239,6 @@ import typings.superfine.superfineStrings.optgroup
 import typings.superfine.superfineStrings.option
 import typings.superfine.superfineStrings.output
 import typings.superfine.superfineStrings.p
-import typings.superfine.superfineStrings.param
 import typings.superfine.superfineStrings.path
 import typings.superfine.superfineStrings.pattern
 import typings.superfine.superfineStrings.picture
@@ -263,6 +257,7 @@ import typings.superfine.superfineStrings.samp
 import typings.superfine.superfineStrings.script
 import typings.superfine.superfineStrings.section
 import typings.superfine.superfineStrings.select
+import typings.superfine.superfineStrings.set
 import typings.superfine.superfineStrings.slot
 import typings.superfine.superfineStrings.small
 import typings.superfine.superfineStrings.source
@@ -311,1204 +306,1190 @@ object mod {
     tagName: `object`,
     props: Props[`object`],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[`object`] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[`object`]]
   inline def h(
     tagName: `var`,
     props: Props[`var`],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[`var`] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[`var`]]
   inline def h(
     tagName: abbr,
     props: Props[abbr],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[abbr] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[abbr]]
   inline def h(
     tagName: address,
     props: Props[address],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[address] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[address]]
   inline def h(
-    tagName: applet,
-    props: Props[applet],
+    tagName: animateMotion,
+    props: Props[animateMotion],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
-  ): VNode[applet] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[applet]]
+  ): VNode[animateMotion] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[animateMotion]]
+  inline def h(
+    tagName: animateTransform,
+    props: Props[animateTransform],
+    children: Children[
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
+    ]
+  ): VNode[animateTransform] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[animateTransform]]
+  inline def h(
+    tagName: animate,
+    props: Props[animate],
+    children: Children[
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
+    ]
+  ): VNode[animate] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[animate]]
   inline def h(
     tagName: a,
     props: Props[a],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[a] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[a]]
   inline def h(
     tagName: area,
     props: Props[area],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[area] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[area]]
   inline def h(
     tagName: article,
     props: Props[article],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[article] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[article]]
   inline def h(
     tagName: aside,
     props: Props[aside],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[aside] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[aside]]
   inline def h(
     tagName: audio,
     props: Props[audio],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[audio] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[audio]]
-  inline def h(
-    tagName: basefont,
-    props: Props[basefont],
-    children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
-    ]
-  ): VNode[basefont] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[basefont]]
   inline def h(
     tagName: base,
     props: Props[base],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[base] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[base]]
   inline def h(
     tagName: bdi,
     props: Props[bdi],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[bdi] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[bdi]]
   inline def h(
     tagName: bdo,
     props: Props[bdo],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[bdo] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[bdo]]
   inline def h(
     tagName: blockquote,
     props: Props[blockquote],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[blockquote] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[blockquote]]
   inline def h(
     tagName: body,
     props: Props[body],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[body] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[body]]
   inline def h(
     tagName: b,
     props: Props[b],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[b] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[b]]
   inline def h(
     tagName: br,
     props: Props[br],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[br] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[br]]
   inline def h(
     tagName: button,
     props: Props[button],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[button] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[button]]
   inline def h(
     tagName: canvas,
     props: Props[canvas],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[canvas] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[canvas]]
   inline def h(
     tagName: caption,
     props: Props[caption],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[caption] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[caption]]
   inline def h(
     tagName: circle,
     props: Props[circle],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[circle] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[circle]]
   inline def h(
     tagName: cite,
     props: Props[cite],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[cite] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[cite]]
   inline def h(
     tagName: clipPath,
     props: Props[clipPath],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[clipPath] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[clipPath]]
   inline def h(
     tagName: code,
     props: Props[code],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[code] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[code]]
   inline def h(
     tagName: colgroup,
     props: Props[colgroup],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[colgroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[colgroup]]
   inline def h(
     tagName: col,
     props: Props[col],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[col] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[col]]
   inline def h(
     tagName: datalist,
     props: Props[datalist],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[datalist] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[datalist]]
   inline def h(
     tagName: data,
     props: Props[data],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[data] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[data]]
   inline def h(
     tagName: dd,
     props: Props[dd],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[dd] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[dd]]
   inline def h(
     tagName: defs,
     props: Props[defs],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[defs] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[defs]]
   inline def h(
     tagName: del,
     props: Props[del],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[del] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[del]]
   inline def h(
     tagName: desc,
     props: Props[desc],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[desc] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[desc]]
   inline def h(
     tagName: details,
     props: Props[details],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[details] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[details]]
   inline def h(
     tagName: dfn,
     props: Props[dfn],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[dfn] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[dfn]]
   inline def h(
     tagName: dialog,
     props: Props[dialog],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[dialog] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[dialog]]
-  inline def h(
-    tagName: dir,
-    props: Props[dir],
-    children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
-    ]
-  ): VNode[dir] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[dir]]
   inline def h(
     tagName: div,
     props: Props[div],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[div] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[div]]
   inline def h(
     tagName: dl,
     props: Props[dl],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[dl] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[dl]]
   inline def h(
     tagName: dt,
     props: Props[dt],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[dt] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[dt]]
   inline def h(
     tagName: ellipse,
     props: Props[ellipse],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[ellipse] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[ellipse]]
   inline def h(
     tagName: embed,
     props: Props[embed],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[embed] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[embed]]
   inline def h(
     tagName: em,
     props: Props[em],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[em] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[em]]
   inline def h(
     tagName: feBlend,
     props: Props[feBlend],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[feBlend] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[feBlend]]
   inline def h(
     tagName: feColorMatrix,
     props: Props[feColorMatrix],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[feColorMatrix] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[feColorMatrix]]
   inline def h(
     tagName: feComponentTransfer,
     props: Props[feComponentTransfer],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[feComponentTransfer] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[feComponentTransfer]]
   inline def h(
     tagName: feComposite,
     props: Props[feComposite],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[feComposite] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[feComposite]]
   inline def h(
     tagName: feConvolveMatrix,
     props: Props[feConvolveMatrix],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[feConvolveMatrix] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[feConvolveMatrix]]
   inline def h(
     tagName: feDiffuseLighting,
     props: Props[feDiffuseLighting],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[feDiffuseLighting] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[feDiffuseLighting]]
   inline def h(
     tagName: feDisplacementMap,
     props: Props[feDisplacementMap],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[feDisplacementMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[feDisplacementMap]]
   inline def h(
     tagName: feDistantLight,
     props: Props[feDistantLight],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[feDistantLight] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[feDistantLight]]
+  inline def h(
+    tagName: feDropShadow,
+    props: Props[feDropShadow],
+    children: Children[
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
+    ]
+  ): VNode[feDropShadow] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[feDropShadow]]
   inline def h(
     tagName: feFlood,
     props: Props[feFlood],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[feFlood] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[feFlood]]
   inline def h(
     tagName: feFuncA,
     props: Props[feFuncA],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[feFuncA] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[feFuncA]]
   inline def h(
     tagName: feFuncB,
     props: Props[feFuncB],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[feFuncB] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[feFuncB]]
   inline def h(
     tagName: feFuncG,
     props: Props[feFuncG],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[feFuncG] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[feFuncG]]
   inline def h(
     tagName: feFuncR,
     props: Props[feFuncR],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[feFuncR] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[feFuncR]]
   inline def h(
     tagName: feGaussianBlur,
     props: Props[feGaussianBlur],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[feGaussianBlur] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[feGaussianBlur]]
   inline def h(
     tagName: feImage,
     props: Props[feImage],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[feImage] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[feImage]]
   inline def h(
     tagName: feMergeNode,
     props: Props[feMergeNode],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[feMergeNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[feMergeNode]]
   inline def h(
     tagName: feMerge,
     props: Props[feMerge],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[feMerge] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[feMerge]]
   inline def h(
     tagName: feMorphology,
     props: Props[feMorphology],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[feMorphology] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[feMorphology]]
   inline def h(
     tagName: feOffset,
     props: Props[feOffset],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[feOffset] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[feOffset]]
   inline def h(
     tagName: fePointLight,
     props: Props[fePointLight],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[fePointLight] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[fePointLight]]
   inline def h(
     tagName: feSpecularLighting,
     props: Props[feSpecularLighting],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[feSpecularLighting] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[feSpecularLighting]]
   inline def h(
     tagName: feSpotLight,
     props: Props[feSpotLight],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[feSpotLight] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[feSpotLight]]
   inline def h(
     tagName: feTile,
     props: Props[feTile],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[feTile] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[feTile]]
   inline def h(
     tagName: feTurbulence,
     props: Props[feTurbulence],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[feTurbulence] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[feTurbulence]]
   inline def h(
     tagName: fieldset,
     props: Props[fieldset],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[fieldset] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[fieldset]]
   inline def h(
     tagName: figcaption,
     props: Props[figcaption],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[figcaption] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[figcaption]]
   inline def h(
     tagName: figure,
     props: Props[figure],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[figure] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[figure]]
   inline def h(
     tagName: filter,
     props: Props[filter],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[filter] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[filter]]
-  inline def h(
-    tagName: font,
-    props: Props[font],
-    children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
-    ]
-  ): VNode[font] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[font]]
   inline def h(
     tagName: footer,
     props: Props[footer],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[footer] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[footer]]
   inline def h(
     tagName: foreignObject,
     props: Props[foreignObject],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[foreignObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[foreignObject]]
   inline def h(
     tagName: form,
     props: Props[form],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[form] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[form]]
-  inline def h(
-    tagName: frame,
-    props: Props[frame],
-    children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
-    ]
-  ): VNode[frame] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[frame]]
-  inline def h(
-    tagName: frameset,
-    props: Props[frameset],
-    children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
-    ]
-  ): VNode[frameset] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[frameset]]
   inline def h(
     tagName: g,
     props: Props[g],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[g] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[g]]
   inline def h(
     tagName: h1,
     props: Props[h1],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[h1] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[h1]]
   inline def h(
     tagName: h2,
     props: Props[h2],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[h2] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[h2]]
   inline def h(
     tagName: h3,
     props: Props[h3],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[h3] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[h3]]
   inline def h(
     tagName: h4,
     props: Props[h4],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[h4] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[h4]]
   inline def h(
     tagName: h5,
     props: Props[h5],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[h5] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[h5]]
   inline def h(
     tagName: h6,
     props: Props[h6],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[h6] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[h6]]
   inline def h(
     tagName: header,
     props: Props[header],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[header] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[header]]
   inline def h(
     tagName: head,
     props: Props[head],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[head] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[head]]
   inline def h(
     tagName: hgroup,
     props: Props[hgroup],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[hgroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[hgroup]]
   inline def h(
     tagName: hr,
     props: Props[hr],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[hr] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[hr]]
   inline def h(
     tagName: html,
     props: Props[html],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[html] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[html]]
   inline def h(
     tagName: iframe,
     props: Props[iframe],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[iframe] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[iframe]]
   inline def h(
     tagName: image,
     props: Props[image],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[image] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[image]]
   inline def h(
     tagName: img,
     props: Props[img],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[img] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[img]]
   inline def h(
     tagName: input,
     props: Props[input],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[input] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[input]]
   inline def h(
     tagName: ins,
     props: Props[ins],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[ins] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[ins]]
   inline def h(
     tagName: i,
     props: Props[i],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[i] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[i]]
   inline def h(
     tagName: kbd,
     props: Props[kbd],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[kbd] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[kbd]]
   inline def h(
     tagName: label,
     props: Props[label],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[label] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[label]]
   inline def h(
     tagName: legend,
     props: Props[legend],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[legend] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[legend]]
   inline def h(
     tagName: linearGradient,
     props: Props[linearGradient],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[linearGradient] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[linearGradient]]
   inline def h(
     tagName: line,
     props: Props[line],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[line] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[line]]
   inline def h(
     tagName: link,
     props: Props[link],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[link] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[link]]
   inline def h(
     tagName: li,
     props: Props[li],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[li] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[li]]
   inline def h(
     tagName: main,
     props: Props[main],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[main] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[main]]
   inline def h(
     tagName: map,
     props: Props[map],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[map] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[map]]
   inline def h(
     tagName: marker,
     props: Props[marker],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[marker] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[marker]]
   inline def h(
     tagName: mark,
     props: Props[mark],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[mark] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[mark]]
-  inline def h(
-    tagName: marquee,
-    props: Props[marquee],
-    children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
-    ]
-  ): VNode[marquee] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[marquee]]
   inline def h(
     tagName: mask,
     props: Props[mask],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[mask] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[mask]]
   inline def h(
     tagName: menu,
     props: Props[menu],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[menu] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[menu]]
   inline def h(
     tagName: metadata,
     props: Props[metadata],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[metadata] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[metadata]]
   inline def h(
     tagName: meta,
     props: Props[meta],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[meta] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[meta]]
   inline def h(
     tagName: meter,
     props: Props[meter],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[meter] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[meter]]
+  inline def h(
+    tagName: mpath,
+    props: Props[mpath],
+    children: Children[
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
+    ]
+  ): VNode[mpath] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[mpath]]
   inline def h(
     tagName: nav,
     props: Props[nav],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[nav] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[nav]]
   inline def h(
     tagName: noscript,
     props: Props[noscript],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[noscript] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[noscript]]
   inline def h(
     tagName: ol,
     props: Props[ol],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[ol] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[ol]]
   inline def h(
     tagName: optgroup,
     props: Props[optgroup],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[optgroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[optgroup]]
   inline def h(
     tagName: option,
     props: Props[option],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[option] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[option]]
   inline def h(
     tagName: output,
     props: Props[output],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[output] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[output]]
-  inline def h(
-    tagName: param,
-    props: Props[param],
-    children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
-    ]
-  ): VNode[param] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[param]]
   inline def h(
     tagName: path,
     props: Props[path],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[path] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[path]]
   inline def h(
     tagName: pattern,
     props: Props[pattern],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[pattern] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[pattern]]
   inline def h(
     tagName: picture,
     props: Props[picture],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[picture] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[picture]]
   inline def h(
     tagName: polygon,
     props: Props[polygon],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[polygon] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[polygon]]
   inline def h(
     tagName: polyline,
     props: Props[polyline],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[polyline] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[polyline]]
   inline def h(
     tagName: p,
     props: Props[p],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[p] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[p]]
   inline def h(
     tagName: pre,
     props: Props[pre],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[pre] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[pre]]
   inline def h(
     tagName: progress,
     props: Props[progress],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[progress] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[progress]]
   inline def h(
     tagName: q,
     props: Props[q],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[q] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[q]]
   inline def h(
     tagName: radialGradient,
     props: Props[radialGradient],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[radialGradient] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[radialGradient]]
   inline def h(
     tagName: rect,
     props: Props[rect],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[rect] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[rect]]
   inline def h(
     tagName: rp,
     props: Props[rp],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[rp] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[rp]]
   inline def h(
     tagName: rt,
     props: Props[rt],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[rt] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[rt]]
   inline def h(
     tagName: ruby,
     props: Props[ruby],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[ruby] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[ruby]]
   inline def h(
     tagName: samp,
     props: Props[samp],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[samp] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[samp]]
   inline def h(
     tagName: script,
     props: Props[script],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[script] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[script]]
   inline def h(
     tagName: section,
     props: Props[section],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[section] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[section]]
   inline def h(
     tagName: select,
     props: Props[select],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[select] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[select]]
+  inline def h(
+    tagName: set,
+    props: Props[set],
+    children: Children[
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
+    ]
+  ): VNode[set] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[set]]
   inline def h(
     tagName: slot,
     props: Props[slot],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[slot] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[slot]]
   inline def h(
     tagName: small,
     props: Props[small],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[small] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[small]]
   inline def h(
     tagName: source,
     props: Props[source],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[source] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[source]]
   inline def h(
     tagName: span,
     props: Props[span],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[span] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[span]]
   inline def h(
     tagName: s,
     props: Props[s],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[s] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[s]]
   inline def h(
     tagName: stop,
     props: Props[stop],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[stop] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[stop]]
   inline def h(
     tagName: strong,
     props: Props[strong],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[strong] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[strong]]
   inline def h(
     tagName: style,
     props: Props[style],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[style] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[style]]
   inline def h(
     tagName: sub,
     props: Props[sub],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[sub] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[sub]]
   inline def h(
     tagName: summary,
     props: Props[summary],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[summary] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[summary]]
   inline def h(
     tagName: sup,
     props: Props[sup],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[sup] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[sup]]
   inline def h(
     tagName: svg,
     props: Props[svg],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[svg] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[svg]]
   inline def h(
     tagName: switch,
     props: Props[switch],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[switch] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[switch]]
   inline def h(
     tagName: symbol,
     props: Props[symbol],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[symbol] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[symbol]]
   inline def h(
     tagName: table,
     props: Props[table],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[table] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[table]]
   inline def h(
     tagName: tbody,
     props: Props[tbody],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[tbody] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[tbody]]
   inline def h(
     tagName: td,
     props: Props[td],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[td] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[td]]
   inline def h(
     tagName: template,
     props: Props[template],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[template] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[template]]
   inline def h(
     tagName: textPath,
     props: Props[textPath],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[textPath] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[textPath]]
   inline def h(
     tagName: textarea,
     props: Props[textarea],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[textarea] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[textarea]]
   inline def h(
     tagName: text,
     props: Props[text],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[text] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[text]]
   inline def h(
     tagName: tfoot,
     props: Props[tfoot],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[tfoot] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[tfoot]]
   inline def h(
     tagName: thead,
     props: Props[thead],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[thead] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[thead]]
   inline def h(
     tagName: th,
     props: Props[th],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[th] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[th]]
   inline def h(
     tagName: time,
     props: Props[time],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[time] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[time]]
   inline def h(
     tagName: title,
     props: Props[title],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[title] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[title]]
   inline def h(
     tagName: track,
     props: Props[track],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[track] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[track]]
   inline def h(
     tagName: tr,
     props: Props[tr],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[tr] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[tr]]
   inline def h(
     tagName: tspan,
     props: Props[tspan],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[tspan] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[tspan]]
   inline def h(
     tagName: ul,
     props: Props[ul],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[ul] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[ul]]
   inline def h(
     tagName: u,
     props: Props[u],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[u] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[u]]
   inline def h(
     tagName: use,
     props: Props[use],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[use] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[use]]
   inline def h(
     tagName: video,
     props: Props[video],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[video] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[video]]
   inline def h(
     tagName: view,
     props: Props[view],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 57 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63 */ Any
     ]
   ): VNode[view] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[view]]
   inline def h(
     tagName: wbr,
     props: Props[wbr],
     children: Children[
-      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 112 */ Any
     ]
   ): VNode[wbr] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode[wbr]]
   
@@ -1518,7 +1499,11 @@ object mod {
   
   inline def h_address(tagName: address, props: Props[address]): VNode[address] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[address]]
   
-  inline def h_applet(tagName: applet, props: Props[applet]): VNode[applet] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[applet]]
+  inline def h_animate(tagName: animate, props: Props[animate]): VNode[animate] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[animate]]
+  
+  inline def h_animateMotion(tagName: animateMotion, props: Props[animateMotion]): VNode[animateMotion] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[animateMotion]]
+  
+  inline def h_animateTransform(tagName: animateTransform, props: Props[animateTransform]): VNode[animateTransform] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[animateTransform]]
   
   inline def h_area(tagName: area, props: Props[area]): VNode[area] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[area]]
   
@@ -1531,8 +1516,6 @@ object mod {
   inline def h_b(tagName: b, props: Props[b]): VNode[b] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[b]]
   
   inline def h_base(tagName: base, props: Props[base]): VNode[base] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[base]]
-  
-  inline def h_basefont(tagName: basefont, props: Props[basefont]): VNode[basefont] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[basefont]]
   
   inline def h_bdi(tagName: bdi, props: Props[bdi]): VNode[bdi] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[bdi]]
   
@@ -1580,8 +1563,6 @@ object mod {
   
   inline def h_dialog(tagName: dialog, props: Props[dialog]): VNode[dialog] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[dialog]]
   
-  inline def h_dir(tagName: dir, props: Props[dir]): VNode[dir] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[dir]]
-  
   inline def h_div(tagName: div, props: Props[div]): VNode[div] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[div]]
   
   inline def h_dl(tagName: dl, props: Props[dl]): VNode[dl] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[dl]]
@@ -1609,6 +1590,8 @@ object mod {
   inline def h_feDisplacementMap(tagName: feDisplacementMap, props: Props[feDisplacementMap]): VNode[feDisplacementMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[feDisplacementMap]]
   
   inline def h_feDistantLight(tagName: feDistantLight, props: Props[feDistantLight]): VNode[feDistantLight] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[feDistantLight]]
+  
+  inline def h_feDropShadow(tagName: feDropShadow, props: Props[feDropShadow]): VNode[feDropShadow] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[feDropShadow]]
   
   inline def h_feFlood(tagName: feFlood, props: Props[feFlood]): VNode[feFlood] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[feFlood]]
   
@@ -1650,17 +1633,11 @@ object mod {
   
   inline def h_filter(tagName: filter, props: Props[filter]): VNode[filter] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[filter]]
   
-  inline def h_font(tagName: font, props: Props[font]): VNode[font] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[font]]
-  
   inline def h_footer(tagName: footer, props: Props[footer]): VNode[footer] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[footer]]
   
   inline def h_foreignObject(tagName: foreignObject, props: Props[foreignObject]): VNode[foreignObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[foreignObject]]
   
   inline def h_form(tagName: form, props: Props[form]): VNode[form] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[form]]
-  
-  inline def h_frame(tagName: frame, props: Props[frame]): VNode[frame] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[frame]]
-  
-  inline def h_frameset(tagName: frameset, props: Props[frameset]): VNode[frameset] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[frameset]]
   
   inline def h_g(tagName: g, props: Props[g]): VNode[g] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[g]]
   
@@ -1720,8 +1697,6 @@ object mod {
   
   inline def h_marker(tagName: marker, props: Props[marker]): VNode[marker] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[marker]]
   
-  inline def h_marquee(tagName: marquee, props: Props[marquee]): VNode[marquee] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[marquee]]
-  
   inline def h_mask(tagName: mask, props: Props[mask]): VNode[mask] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[mask]]
   
   inline def h_menu(tagName: menu, props: Props[menu]): VNode[menu] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[menu]]
@@ -1731,6 +1706,8 @@ object mod {
   inline def h_metadata(tagName: metadata, props: Props[metadata]): VNode[metadata] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[metadata]]
   
   inline def h_meter(tagName: meter, props: Props[meter]): VNode[meter] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[meter]]
+  
+  inline def h_mpath(tagName: mpath, props: Props[mpath]): VNode[mpath] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[mpath]]
   
   inline def h_nav(tagName: nav, props: Props[nav]): VNode[nav] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[nav]]
   
@@ -1747,8 +1724,6 @@ object mod {
   inline def h_output(tagName: output, props: Props[output]): VNode[output] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[output]]
   
   inline def h_p(tagName: p, props: Props[p]): VNode[p] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[p]]
-  
-  inline def h_param(tagName: param, props: Props[param]): VNode[param] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[param]]
   
   inline def h_path(tagName: path, props: Props[path]): VNode[path] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[path]]
   
@@ -1785,6 +1760,8 @@ object mod {
   inline def h_section(tagName: section, props: Props[section]): VNode[section] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[section]]
   
   inline def h_select(tagName: select, props: Props[select]): VNode[select] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[select]]
+  
+  inline def h_set(tagName: set, props: Props[set]): VNode[set] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[set]]
   
   inline def h_slot(tagName: slot, props: Props[slot]): VNode[slot] = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(tagName.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode[slot]]
   
@@ -1862,7 +1839,11 @@ object mod {
   
   inline def patch_address(rootElement: HTMLElement, vNode: VNode[address]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def patch_applet(rootElement: HTMLAppletElement, vNode: VNode[applet]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def patch_animate(rootElement: SVGAnimateElement, vNode: VNode[animate]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def patch_animateMotion(rootElement: SVGAnimateMotionElement, vNode: VNode[animateMotion]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def patch_animateTransform(rootElement: SVGAnimateTransformElement, vNode: VNode[animateTransform]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def patch_area(rootElement: HTMLAreaElement, vNode: VNode[area]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -1875,8 +1856,6 @@ object mod {
   inline def patch_b(rootElement: HTMLElement, vNode: VNode[b]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def patch_base(rootElement: HTMLBaseElement, vNode: VNode[base]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def patch_basefont(rootElement: HTMLBaseFontElement, vNode: VNode[basefont]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def patch_bdi(rootElement: HTMLElement, vNode: VNode[bdi]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -1924,8 +1903,6 @@ object mod {
   
   inline def patch_dialog(rootElement: HTMLDialogElement, vNode: VNode[dialog]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def patch_dir(rootElement: HTMLDirectoryElement, vNode: VNode[dir]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
   inline def patch_div(rootElement: HTMLDivElement, vNode: VNode[div]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def patch_dl(rootElement: HTMLDListElement, vNode: VNode[dl]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -1953,6 +1930,8 @@ object mod {
   inline def patch_feDisplacementMap(rootElement: SVGFEDisplacementMapElement, vNode: VNode[feDisplacementMap]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def patch_feDistantLight(rootElement: SVGFEDistantLightElement, vNode: VNode[feDistantLight]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def patch_feDropShadow(rootElement: SVGFEDropShadowElement, vNode: VNode[feDropShadow]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def patch_feFlood(rootElement: SVGFEFloodElement, vNode: VNode[feFlood]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -1994,17 +1973,11 @@ object mod {
   
   inline def patch_filter(rootElement: SVGFilterElement, vNode: VNode[filter]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def patch_font(rootElement: HTMLFontElement, vNode: VNode[font]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
   inline def patch_footer(rootElement: HTMLElement, vNode: VNode[footer]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def patch_foreignObject(rootElement: SVGForeignObjectElement, vNode: VNode[foreignObject]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def patch_form(rootElement: HTMLFormElement, vNode: VNode[form]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def patch_frame(rootElement: HTMLFrameElement, vNode: VNode[frame]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def patch_frameset(rootElement: HTMLFrameSetElement, vNode: VNode[frameset]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def patch_g(rootElement: SVGGElement, vNode: VNode[g]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -2064,8 +2037,6 @@ object mod {
   
   inline def patch_marker(rootElement: SVGMarkerElement, vNode: VNode[marker]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def patch_marquee(rootElement: HTMLMarqueeElement, vNode: VNode[marquee]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
   inline def patch_mask(rootElement: SVGMaskElement, vNode: VNode[mask]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def patch_menu(rootElement: HTMLMenuElement, vNode: VNode[menu]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -2075,6 +2046,8 @@ object mod {
   inline def patch_metadata(rootElement: SVGMetadataElement, vNode: VNode[metadata]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def patch_meter(rootElement: HTMLMeterElement, vNode: VNode[meter]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def patch_mpath(rootElement: SVGMPathElement, vNode: VNode[mpath]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def patch_nav(rootElement: HTMLElement, vNode: VNode[nav]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -2091,8 +2064,6 @@ object mod {
   inline def patch_output(rootElement: HTMLOutputElement, vNode: VNode[output]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def patch_p(rootElement: HTMLParagraphElement, vNode: VNode[p]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def patch_param(rootElement: HTMLParamElement, vNode: VNode[param]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def patch_path(rootElement: SVGPathElement, vNode: VNode[path]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -2130,6 +2101,8 @@ object mod {
   
   inline def patch_select(rootElement: HTMLSelectElement, vNode: VNode[select]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  inline def patch_set(rootElement: SVGSetElement, vNode: VNode[set]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   inline def patch_slot(rootElement: HTMLSlotElement, vNode: VNode[slot]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def patch_small(rootElement: HTMLElement, vNode: VNode[small]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -2160,7 +2133,7 @@ object mod {
   
   inline def patch_tbody(rootElement: HTMLTableSectionElement, vNode: VNode[tbody]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def patch_td(rootElement: HTMLTableDataCellElement, vNode: VNode[td]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def patch_td(rootElement: HTMLTableCellElement, vNode: VNode[td]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def patch_template(rootElement: HTMLTemplateElement, vNode: VNode[template]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -2172,7 +2145,7 @@ object mod {
   
   inline def patch_tfoot(rootElement: HTMLTableSectionElement, vNode: VNode[tfoot]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def patch_th(rootElement: HTMLTableHeaderCellElement, vNode: VNode[th]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def patch_th(rootElement: HTMLTableCellElement, vNode: VNode[th]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def patch_thead(rootElement: HTMLTableSectionElement, vNode: VNode[thead]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -2200,93 +2173,126 @@ object mod {
   
   inline def patch_wbr(rootElement: HTMLElement, vNode: VNode[wbr]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(rootElement.asInstanceOf[js.Any], vNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  type Child[TTagName /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */] = String | VNode[TTagName]
+  type Child[TTagName /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170 */ Any */] = String | VNode[TTagName]
   
-  type Children[TTagName /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */] = Child[TTagName] | js.Array[Child[TTagName]]
+  type Children[TTagName /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170 */ Any */] = Child[TTagName] | js.Array[Child[TTagName]]
   
   /* Inlined std.HTMLElementTagNameMap & std.Pick<std.SVGElementTagNameMap, std.Exclude<keyof std.SVGElementTagNameMap, keyof std.HTMLElementTagNameMap>> */
   trait HtmlOrSvgElementTagNameMap extends StObject {
     
+    /* standard dom */
     var a: HTMLAnchorElement
     
+    /* standard dom */
     var abbr: HTMLElement
     
+    /* standard dom */
     var address: HTMLElement
     
-    var applet: HTMLAppletElement
+    var animate: SVGAnimateElement
     
+    var animateMotion: SVGAnimateMotionElement
+    
+    var animateTransform: SVGAnimateTransformElement
+    
+    /* standard dom */
     var area: HTMLAreaElement
     
+    /* standard dom */
     var article: HTMLElement
     
+    /* standard dom */
     var aside: HTMLElement
     
+    /* standard dom */
     var audio: HTMLAudioElement
     
+    /* standard dom */
     var b: HTMLElement
     
+    /* standard dom */
     var base: HTMLBaseElement
     
-    var basefont: HTMLBaseFontElement
-    
+    /* standard dom */
     var bdi: HTMLElement
     
+    /* standard dom */
     var bdo: HTMLElement
     
+    /* standard dom */
     var blockquote: HTMLQuoteElement
     
+    /* standard dom */
     var body: HTMLBodyElement
     
+    /* standard dom */
     var br: HTMLBRElement
     
+    /* standard dom */
     var button: HTMLButtonElement
     
+    /* standard dom */
     var canvas: HTMLCanvasElement
     
+    /* standard dom */
     var caption: HTMLTableCaptionElement
     
     var circle: SVGCircleElement
     
+    /* standard dom */
     var cite: HTMLElement
     
     var clipPath: SVGClipPathElement
     
+    /* standard dom */
     var code: HTMLElement
     
+    /* standard dom */
     var col: HTMLTableColElement
     
+    /* standard dom */
     var colgroup: HTMLTableColElement
     
+    /* standard dom */
     var data: HTMLDataElement
     
+    /* standard dom */
     var datalist: HTMLDataListElement
     
+    /* standard dom */
     var dd: HTMLElement
     
     var defs: SVGDefsElement
     
+    /* standard dom */
     var del: HTMLModElement
     
     var desc: SVGDescElement
     
+    /* standard dom */
     var details: HTMLDetailsElement
     
+    /* standard dom */
     var dfn: HTMLElement
     
+    /* standard dom */
     var dialog: HTMLDialogElement
     
-    var dir: HTMLDirectoryElement
-    
+    /* standard dom */
     var div: HTMLDivElement
     
+    /* standard dom */
     var dl: HTMLDListElement
     
+    /* standard dom */
     var dt: HTMLElement
     
     var ellipse: SVGEllipseElement
     
+    /* standard dom */
     var em: HTMLElement
     
+    /* standard dom */
     var embed: HTMLEmbedElement
     
     var feBlend: SVGFEBlendElement
@@ -2304,6 +2310,8 @@ object mod {
     var feDisplacementMap: SVGFEDisplacementMapElement
     
     var feDistantLight: SVGFEDistantLightElement
+    
+    var feDropShadow: SVGFEDropShadowElement
     
     var feFlood: SVGFEFloodElement
     
@@ -2337,168 +2345,223 @@ object mod {
     
     var feTurbulence: SVGFETurbulenceElement
     
+    /* standard dom */
     var fieldset: HTMLFieldSetElement
     
+    /* standard dom */
     var figcaption: HTMLElement
     
+    /* standard dom */
     var figure: HTMLElement
     
     var filter: SVGFilterElement
     
-    var font: HTMLFontElement
-    
+    /* standard dom */
     var footer: HTMLElement
     
     var foreignObject: SVGForeignObjectElement
     
+    /* standard dom */
     var form: HTMLFormElement
-    
-    var frame: HTMLFrameElement
-    
-    var frameset: HTMLFrameSetElement
     
     var g: SVGGElement
     
+    /* standard dom */
     var h1: HTMLHeadingElement
     
+    /* standard dom */
     var h2: HTMLHeadingElement
     
+    /* standard dom */
     var h3: HTMLHeadingElement
     
+    /* standard dom */
     var h4: HTMLHeadingElement
     
+    /* standard dom */
     var h5: HTMLHeadingElement
     
+    /* standard dom */
     var h6: HTMLHeadingElement
     
+    /* standard dom */
     var head: HTMLHeadElement
     
+    /* standard dom */
     var header: HTMLElement
     
+    /* standard dom */
     var hgroup: HTMLElement
     
+    /* standard dom */
     var hr: HTMLHRElement
     
+    /* standard dom */
     var html: HTMLHtmlElement
     
+    /* standard dom */
     var i: HTMLElement
     
+    /* standard dom */
     var iframe: HTMLIFrameElement
     
     var image: SVGImageElement
     
+    /* standard dom */
     var img: HTMLImageElement
     
+    /* standard dom */
     var input: HTMLInputElement
     
+    /* standard dom */
     var ins: HTMLModElement
     
+    /* standard dom */
     var kbd: HTMLElement
     
+    /* standard dom */
     var label: HTMLLabelElement
     
+    /* standard dom */
     var legend: HTMLLegendElement
     
+    /* standard dom */
     var li: HTMLLIElement
     
     var line: SVGLineElement
     
     var linearGradient: SVGLinearGradientElement
     
+    /* standard dom */
     var link: HTMLLinkElement
     
+    /* standard dom */
     var main: HTMLElement
     
+    /* standard dom */
     var map: HTMLMapElement
     
+    /* standard dom */
     var mark: HTMLElement
     
     var marker: SVGMarkerElement
     
-    var marquee: HTMLMarqueeElement
-    
     var mask: SVGMaskElement
     
+    /* standard dom */
     var menu: HTMLMenuElement
     
+    /* standard dom */
     var meta: HTMLMetaElement
     
     var metadata: SVGMetadataElement
     
+    /* standard dom */
     var meter: HTMLMeterElement
     
+    var mpath: SVGMPathElement
+    
+    /* standard dom */
     var nav: HTMLElement
     
+    /* standard dom */
     var noscript: HTMLElement
     
+    /* standard dom */
     var `object`: HTMLObjectElement
     
+    /* standard dom */
     var ol: HTMLOListElement
     
+    /* standard dom */
     var optgroup: HTMLOptGroupElement
     
+    /* standard dom */
     var option: HTMLOptionElement
     
+    /* standard dom */
     var output: HTMLOutputElement
     
+    /* standard dom */
     var p: HTMLParagraphElement
-    
-    var param: HTMLParamElement
     
     var path: SVGPathElement
     
     var pattern: SVGPatternElement
     
+    /* standard dom */
     var picture: HTMLPictureElement
     
     var polygon: SVGPolygonElement
     
     var polyline: SVGPolylineElement
     
+    /* standard dom */
     var pre: HTMLPreElement
     
+    /* standard dom */
     var progress: HTMLProgressElement
     
+    /* standard dom */
     var q: HTMLQuoteElement
     
     var radialGradient: SVGRadialGradientElement
     
     var rect: SVGRectElement
     
+    /* standard dom */
     var rp: HTMLElement
     
+    /* standard dom */
     var rt: HTMLElement
     
+    /* standard dom */
     var ruby: HTMLElement
     
+    /* standard dom */
     var s: HTMLElement
     
+    /* standard dom */
     var samp: HTMLElement
     
+    /* standard dom */
     var script: HTMLScriptElement
     
+    /* standard dom */
     var section: HTMLElement
     
+    /* standard dom */
     var select: HTMLSelectElement
     
+    var set: SVGSetElement
+    
+    /* standard dom */
     var slot: HTMLSlotElement
     
+    /* standard dom */
     var small: HTMLElement
     
+    /* standard dom */
     var source: HTMLSourceElement
     
+    /* standard dom */
     var span: HTMLSpanElement
     
     var stop: SVGStopElement
     
+    /* standard dom */
     var strong: HTMLElement
     
+    /* standard dom */
     var style: HTMLStyleElement
     
+    /* standard dom */
     var sub: HTMLElement
     
+    /* standard dom */
     var summary: HTMLElement
     
+    /* standard dom */
     var sup: HTMLElement
     
     var svg: SVGSVGElement
@@ -2507,48 +2570,65 @@ object mod {
     
     var symbol: SVGSymbolElement
     
+    /* standard dom */
     var table: HTMLTableElement
     
+    /* standard dom */
     var tbody: HTMLTableSectionElement
     
-    var td: HTMLTableDataCellElement
+    /* standard dom */
+    var td: HTMLTableCellElement
     
+    /* standard dom */
     var template: HTMLTemplateElement
     
     var text: SVGTextElement
     
     var textPath: SVGTextPathElement
     
+    /* standard dom */
     var textarea: HTMLTextAreaElement
     
+    /* standard dom */
     var tfoot: HTMLTableSectionElement
     
-    var th: HTMLTableHeaderCellElement
+    /* standard dom */
+    var th: HTMLTableCellElement
     
+    /* standard dom */
     var thead: HTMLTableSectionElement
     
+    /* standard dom */
     var time: HTMLTimeElement
     
+    /* standard dom */
     var title: HTMLTitleElement
     
+    /* standard dom */
     var tr: HTMLTableRowElement
     
+    /* standard dom */
     var track: HTMLTrackElement
     
     var tspan: SVGTSpanElement
     
+    /* standard dom */
     var u: HTMLElement
     
+    /* standard dom */
     var ul: HTMLUListElement
     
     var use: SVGUseElement
     
+    /* standard dom */
     var `var`: HTMLElement
     
+    /* standard dom */
     var video: HTMLVideoElement
     
     var view: SVGViewElement
     
+    /* standard dom */
     var wbr: HTMLElement
   }
   object HtmlOrSvgElementTagNameMap {
@@ -2557,14 +2637,15 @@ object mod {
       a: HTMLAnchorElement,
       abbr: HTMLElement,
       address: HTMLElement,
-      applet: HTMLAppletElement,
+      animate: SVGAnimateElement,
+      animateMotion: SVGAnimateMotionElement,
+      animateTransform: SVGAnimateTransformElement,
       area: HTMLAreaElement,
       article: HTMLElement,
       aside: HTMLElement,
       audio: HTMLAudioElement,
       b: HTMLElement,
       base: HTMLBaseElement,
-      basefont: HTMLBaseFontElement,
       bdi: HTMLElement,
       bdo: HTMLElement,
       blockquote: HTMLQuoteElement,
@@ -2588,7 +2669,6 @@ object mod {
       details: HTMLDetailsElement,
       dfn: HTMLElement,
       dialog: HTMLDialogElement,
-      dir: HTMLDirectoryElement,
       div: HTMLDivElement,
       dl: HTMLDListElement,
       dt: HTMLElement,
@@ -2603,6 +2683,7 @@ object mod {
       feDiffuseLighting: SVGFEDiffuseLightingElement,
       feDisplacementMap: SVGFEDisplacementMapElement,
       feDistantLight: SVGFEDistantLightElement,
+      feDropShadow: SVGFEDropShadowElement,
       feFlood: SVGFEFloodElement,
       feFuncA: SVGFEFuncAElement,
       feFuncB: SVGFEFuncBElement,
@@ -2623,12 +2704,9 @@ object mod {
       figcaption: HTMLElement,
       figure: HTMLElement,
       filter: SVGFilterElement,
-      font: HTMLFontElement,
       footer: HTMLElement,
       foreignObject: SVGForeignObjectElement,
       form: HTMLFormElement,
-      frame: HTMLFrameElement,
-      frameset: HTMLFrameSetElement,
       g: SVGGElement,
       h1: HTMLHeadingElement,
       h2: HTMLHeadingElement,
@@ -2658,12 +2736,12 @@ object mod {
       map: HTMLMapElement,
       mark: HTMLElement,
       marker: SVGMarkerElement,
-      marquee: HTMLMarqueeElement,
       mask: SVGMaskElement,
       menu: HTMLMenuElement,
       meta: HTMLMetaElement,
       metadata: SVGMetadataElement,
       meter: HTMLMeterElement,
+      mpath: SVGMPathElement,
       nav: HTMLElement,
       noscript: HTMLElement,
       `object`: HTMLObjectElement,
@@ -2672,7 +2750,6 @@ object mod {
       option: HTMLOptionElement,
       output: HTMLOutputElement,
       p: HTMLParagraphElement,
-      param: HTMLParamElement,
       path: SVGPathElement,
       pattern: SVGPatternElement,
       picture: HTMLPictureElement,
@@ -2691,6 +2768,7 @@ object mod {
       script: HTMLScriptElement,
       section: HTMLElement,
       select: HTMLSelectElement,
+      set: SVGSetElement,
       slot: HTMLSlotElement,
       small: HTMLElement,
       source: HTMLSourceElement,
@@ -2706,13 +2784,13 @@ object mod {
       symbol: SVGSymbolElement,
       table: HTMLTableElement,
       tbody: HTMLTableSectionElement,
-      td: HTMLTableDataCellElement,
+      td: HTMLTableCellElement,
       template: HTMLTemplateElement,
       text: SVGTextElement,
       textPath: SVGTextPathElement,
       textarea: HTMLTextAreaElement,
       tfoot: HTMLTableSectionElement,
-      th: HTMLTableHeaderCellElement,
+      th: HTMLTableCellElement,
       thead: HTMLTableSectionElement,
       time: HTMLTimeElement,
       title: HTMLTitleElement,
@@ -2727,7 +2805,7 @@ object mod {
       view: SVGViewElement,
       wbr: HTMLElement
     ): HtmlOrSvgElementTagNameMap = {
-      val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], abbr = abbr.asInstanceOf[js.Any], address = address.asInstanceOf[js.Any], applet = applet.asInstanceOf[js.Any], area = area.asInstanceOf[js.Any], article = article.asInstanceOf[js.Any], aside = aside.asInstanceOf[js.Any], audio = audio.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], basefont = basefont.asInstanceOf[js.Any], bdi = bdi.asInstanceOf[js.Any], bdo = bdo.asInstanceOf[js.Any], blockquote = blockquote.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], br = br.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], canvas = canvas.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], circle = circle.asInstanceOf[js.Any], cite = cite.asInstanceOf[js.Any], clipPath = clipPath.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], col = col.asInstanceOf[js.Any], colgroup = colgroup.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], datalist = datalist.asInstanceOf[js.Any], dd = dd.asInstanceOf[js.Any], defs = defs.asInstanceOf[js.Any], del = del.asInstanceOf[js.Any], desc = desc.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], dfn = dfn.asInstanceOf[js.Any], dialog = dialog.asInstanceOf[js.Any], dir = dir.asInstanceOf[js.Any], div = div.asInstanceOf[js.Any], dl = dl.asInstanceOf[js.Any], dt = dt.asInstanceOf[js.Any], ellipse = ellipse.asInstanceOf[js.Any], em = em.asInstanceOf[js.Any], embed = embed.asInstanceOf[js.Any], feBlend = feBlend.asInstanceOf[js.Any], feColorMatrix = feColorMatrix.asInstanceOf[js.Any], feComponentTransfer = feComponentTransfer.asInstanceOf[js.Any], feComposite = feComposite.asInstanceOf[js.Any], feConvolveMatrix = feConvolveMatrix.asInstanceOf[js.Any], feDiffuseLighting = feDiffuseLighting.asInstanceOf[js.Any], feDisplacementMap = feDisplacementMap.asInstanceOf[js.Any], feDistantLight = feDistantLight.asInstanceOf[js.Any], feFlood = feFlood.asInstanceOf[js.Any], feFuncA = feFuncA.asInstanceOf[js.Any], feFuncB = feFuncB.asInstanceOf[js.Any], feFuncG = feFuncG.asInstanceOf[js.Any], feFuncR = feFuncR.asInstanceOf[js.Any], feGaussianBlur = feGaussianBlur.asInstanceOf[js.Any], feImage = feImage.asInstanceOf[js.Any], feMerge = feMerge.asInstanceOf[js.Any], feMergeNode = feMergeNode.asInstanceOf[js.Any], feMorphology = feMorphology.asInstanceOf[js.Any], feOffset = feOffset.asInstanceOf[js.Any], fePointLight = fePointLight.asInstanceOf[js.Any], feSpecularLighting = feSpecularLighting.asInstanceOf[js.Any], feSpotLight = feSpotLight.asInstanceOf[js.Any], feTile = feTile.asInstanceOf[js.Any], feTurbulence = feTurbulence.asInstanceOf[js.Any], fieldset = fieldset.asInstanceOf[js.Any], figcaption = figcaption.asInstanceOf[js.Any], figure = figure.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], font = font.asInstanceOf[js.Any], footer = footer.asInstanceOf[js.Any], foreignObject = foreignObject.asInstanceOf[js.Any], form = form.asInstanceOf[js.Any], frame = frame.asInstanceOf[js.Any], frameset = frameset.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], h1 = h1.asInstanceOf[js.Any], h2 = h2.asInstanceOf[js.Any], h3 = h3.asInstanceOf[js.Any], h4 = h4.asInstanceOf[js.Any], h5 = h5.asInstanceOf[js.Any], h6 = h6.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], hgroup = hgroup.asInstanceOf[js.Any], hr = hr.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], i = i.asInstanceOf[js.Any], iframe = iframe.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], img = img.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], ins = ins.asInstanceOf[js.Any], kbd = kbd.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], legend = legend.asInstanceOf[js.Any], li = li.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], linearGradient = linearGradient.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], main = main.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], mark = mark.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any], marquee = marquee.asInstanceOf[js.Any], mask = mask.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], meter = meter.asInstanceOf[js.Any], nav = nav.asInstanceOf[js.Any], noscript = noscript.asInstanceOf[js.Any], ol = ol.asInstanceOf[js.Any], optgroup = optgroup.asInstanceOf[js.Any], option = option.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], param = param.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], picture = picture.asInstanceOf[js.Any], polygon = polygon.asInstanceOf[js.Any], polyline = polyline.asInstanceOf[js.Any], pre = pre.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], q = q.asInstanceOf[js.Any], radialGradient = radialGradient.asInstanceOf[js.Any], rect = rect.asInstanceOf[js.Any], rp = rp.asInstanceOf[js.Any], rt = rt.asInstanceOf[js.Any], ruby = ruby.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], samp = samp.asInstanceOf[js.Any], script = script.asInstanceOf[js.Any], section = section.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], slot = slot.asInstanceOf[js.Any], small = small.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any], strong = strong.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], sub = sub.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any], sup = sup.asInstanceOf[js.Any], svg = svg.asInstanceOf[js.Any], switch = switch.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any], tbody = tbody.asInstanceOf[js.Any], td = td.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textPath = textPath.asInstanceOf[js.Any], textarea = textarea.asInstanceOf[js.Any], tfoot = tfoot.asInstanceOf[js.Any], th = th.asInstanceOf[js.Any], thead = thead.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], tr = tr.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any], tspan = tspan.asInstanceOf[js.Any], u = u.asInstanceOf[js.Any], ul = ul.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], wbr = wbr.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], abbr = abbr.asInstanceOf[js.Any], address = address.asInstanceOf[js.Any], animate = animate.asInstanceOf[js.Any], animateMotion = animateMotion.asInstanceOf[js.Any], animateTransform = animateTransform.asInstanceOf[js.Any], area = area.asInstanceOf[js.Any], article = article.asInstanceOf[js.Any], aside = aside.asInstanceOf[js.Any], audio = audio.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], bdi = bdi.asInstanceOf[js.Any], bdo = bdo.asInstanceOf[js.Any], blockquote = blockquote.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], br = br.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], canvas = canvas.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], circle = circle.asInstanceOf[js.Any], cite = cite.asInstanceOf[js.Any], clipPath = clipPath.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], col = col.asInstanceOf[js.Any], colgroup = colgroup.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], datalist = datalist.asInstanceOf[js.Any], dd = dd.asInstanceOf[js.Any], defs = defs.asInstanceOf[js.Any], del = del.asInstanceOf[js.Any], desc = desc.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], dfn = dfn.asInstanceOf[js.Any], dialog = dialog.asInstanceOf[js.Any], div = div.asInstanceOf[js.Any], dl = dl.asInstanceOf[js.Any], dt = dt.asInstanceOf[js.Any], ellipse = ellipse.asInstanceOf[js.Any], em = em.asInstanceOf[js.Any], embed = embed.asInstanceOf[js.Any], feBlend = feBlend.asInstanceOf[js.Any], feColorMatrix = feColorMatrix.asInstanceOf[js.Any], feComponentTransfer = feComponentTransfer.asInstanceOf[js.Any], feComposite = feComposite.asInstanceOf[js.Any], feConvolveMatrix = feConvolveMatrix.asInstanceOf[js.Any], feDiffuseLighting = feDiffuseLighting.asInstanceOf[js.Any], feDisplacementMap = feDisplacementMap.asInstanceOf[js.Any], feDistantLight = feDistantLight.asInstanceOf[js.Any], feDropShadow = feDropShadow.asInstanceOf[js.Any], feFlood = feFlood.asInstanceOf[js.Any], feFuncA = feFuncA.asInstanceOf[js.Any], feFuncB = feFuncB.asInstanceOf[js.Any], feFuncG = feFuncG.asInstanceOf[js.Any], feFuncR = feFuncR.asInstanceOf[js.Any], feGaussianBlur = feGaussianBlur.asInstanceOf[js.Any], feImage = feImage.asInstanceOf[js.Any], feMerge = feMerge.asInstanceOf[js.Any], feMergeNode = feMergeNode.asInstanceOf[js.Any], feMorphology = feMorphology.asInstanceOf[js.Any], feOffset = feOffset.asInstanceOf[js.Any], fePointLight = fePointLight.asInstanceOf[js.Any], feSpecularLighting = feSpecularLighting.asInstanceOf[js.Any], feSpotLight = feSpotLight.asInstanceOf[js.Any], feTile = feTile.asInstanceOf[js.Any], feTurbulence = feTurbulence.asInstanceOf[js.Any], fieldset = fieldset.asInstanceOf[js.Any], figcaption = figcaption.asInstanceOf[js.Any], figure = figure.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], footer = footer.asInstanceOf[js.Any], foreignObject = foreignObject.asInstanceOf[js.Any], form = form.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], h1 = h1.asInstanceOf[js.Any], h2 = h2.asInstanceOf[js.Any], h3 = h3.asInstanceOf[js.Any], h4 = h4.asInstanceOf[js.Any], h5 = h5.asInstanceOf[js.Any], h6 = h6.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], hgroup = hgroup.asInstanceOf[js.Any], hr = hr.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], i = i.asInstanceOf[js.Any], iframe = iframe.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], img = img.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], ins = ins.asInstanceOf[js.Any], kbd = kbd.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], legend = legend.asInstanceOf[js.Any], li = li.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], linearGradient = linearGradient.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], main = main.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], mark = mark.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any], mask = mask.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], meter = meter.asInstanceOf[js.Any], mpath = mpath.asInstanceOf[js.Any], nav = nav.asInstanceOf[js.Any], noscript = noscript.asInstanceOf[js.Any], ol = ol.asInstanceOf[js.Any], optgroup = optgroup.asInstanceOf[js.Any], option = option.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], picture = picture.asInstanceOf[js.Any], polygon = polygon.asInstanceOf[js.Any], polyline = polyline.asInstanceOf[js.Any], pre = pre.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], q = q.asInstanceOf[js.Any], radialGradient = radialGradient.asInstanceOf[js.Any], rect = rect.asInstanceOf[js.Any], rp = rp.asInstanceOf[js.Any], rt = rt.asInstanceOf[js.Any], ruby = ruby.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], samp = samp.asInstanceOf[js.Any], script = script.asInstanceOf[js.Any], section = section.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], set = set.asInstanceOf[js.Any], slot = slot.asInstanceOf[js.Any], small = small.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any], strong = strong.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], sub = sub.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any], sup = sup.asInstanceOf[js.Any], svg = svg.asInstanceOf[js.Any], switch = switch.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any], tbody = tbody.asInstanceOf[js.Any], td = td.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textPath = textPath.asInstanceOf[js.Any], textarea = textarea.asInstanceOf[js.Any], tfoot = tfoot.asInstanceOf[js.Any], th = th.asInstanceOf[js.Any], thead = thead.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], tr = tr.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any], tspan = tspan.asInstanceOf[js.Any], u = u.asInstanceOf[js.Any], ul = ul.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], wbr = wbr.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.updateDynamic("var")(`var`.asInstanceOf[js.Any])
       __obj.asInstanceOf[HtmlOrSvgElementTagNameMap]
@@ -2741,7 +2819,11 @@ object mod {
       
       inline def setAddress(value: HTMLElement): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      inline def setApplet(value: HTMLAppletElement): Self = StObject.set(x, "applet", value.asInstanceOf[js.Any])
+      inline def setAnimate(value: SVGAnimateElement): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+      
+      inline def setAnimateMotion(value: SVGAnimateMotionElement): Self = StObject.set(x, "animateMotion", value.asInstanceOf[js.Any])
+      
+      inline def setAnimateTransform(value: SVGAnimateTransformElement): Self = StObject.set(x, "animateTransform", value.asInstanceOf[js.Any])
       
       inline def setArea(value: HTMLAreaElement): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
       
@@ -2754,8 +2836,6 @@ object mod {
       inline def setB(value: HTMLElement): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
       inline def setBase(value: HTMLBaseElement): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
-      
-      inline def setBasefont(value: HTMLBaseFontElement): Self = StObject.set(x, "basefont", value.asInstanceOf[js.Any])
       
       inline def setBdi(value: HTMLElement): Self = StObject.set(x, "bdi", value.asInstanceOf[js.Any])
       
@@ -2803,8 +2883,6 @@ object mod {
       
       inline def setDialog(value: HTMLDialogElement): Self = StObject.set(x, "dialog", value.asInstanceOf[js.Any])
       
-      inline def setDir(value: HTMLDirectoryElement): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
-      
       inline def setDiv(value: HTMLDivElement): Self = StObject.set(x, "div", value.asInstanceOf[js.Any])
       
       inline def setDl(value: HTMLDListElement): Self = StObject.set(x, "dl", value.asInstanceOf[js.Any])
@@ -2832,6 +2910,8 @@ object mod {
       inline def setFeDisplacementMap(value: SVGFEDisplacementMapElement): Self = StObject.set(x, "feDisplacementMap", value.asInstanceOf[js.Any])
       
       inline def setFeDistantLight(value: SVGFEDistantLightElement): Self = StObject.set(x, "feDistantLight", value.asInstanceOf[js.Any])
+      
+      inline def setFeDropShadow(value: SVGFEDropShadowElement): Self = StObject.set(x, "feDropShadow", value.asInstanceOf[js.Any])
       
       inline def setFeFlood(value: SVGFEFloodElement): Self = StObject.set(x, "feFlood", value.asInstanceOf[js.Any])
       
@@ -2873,17 +2953,11 @@ object mod {
       
       inline def setFilter(value: SVGFilterElement): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      inline def setFont(value: HTMLFontElement): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
-      
       inline def setFooter(value: HTMLElement): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
       
       inline def setForeignObject(value: SVGForeignObjectElement): Self = StObject.set(x, "foreignObject", value.asInstanceOf[js.Any])
       
       inline def setForm(value: HTMLFormElement): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
-      
-      inline def setFrame(value: HTMLFrameElement): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
-      
-      inline def setFrameset(value: HTMLFrameSetElement): Self = StObject.set(x, "frameset", value.asInstanceOf[js.Any])
       
       inline def setG(value: SVGGElement): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
       
@@ -2943,8 +3017,6 @@ object mod {
       
       inline def setMarker(value: SVGMarkerElement): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
       
-      inline def setMarquee(value: HTMLMarqueeElement): Self = StObject.set(x, "marquee", value.asInstanceOf[js.Any])
-      
       inline def setMask(value: SVGMaskElement): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
       
       inline def setMenu(value: HTMLMenuElement): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
@@ -2954,6 +3026,8 @@ object mod {
       inline def setMetadata(value: SVGMetadataElement): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
       inline def setMeter(value: HTMLMeterElement): Self = StObject.set(x, "meter", value.asInstanceOf[js.Any])
+      
+      inline def setMpath(value: SVGMPathElement): Self = StObject.set(x, "mpath", value.asInstanceOf[js.Any])
       
       inline def setNav(value: HTMLElement): Self = StObject.set(x, "nav", value.asInstanceOf[js.Any])
       
@@ -2970,8 +3044,6 @@ object mod {
       inline def setOutput(value: HTMLOutputElement): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
       inline def setP(value: HTMLParagraphElement): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
-      
-      inline def setParam(value: HTMLParamElement): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
       
       inline def setPath(value: SVGPathElement): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -3009,6 +3081,8 @@ object mod {
       
       inline def setSelect(value: HTMLSelectElement): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
       
+      inline def setSet(value: SVGSetElement): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
+      
       inline def setSlot(value: HTMLSlotElement): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
       
       inline def setSmall(value: HTMLElement): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
@@ -3039,7 +3113,7 @@ object mod {
       
       inline def setTbody(value: HTMLTableSectionElement): Self = StObject.set(x, "tbody", value.asInstanceOf[js.Any])
       
-      inline def setTd(value: HTMLTableDataCellElement): Self = StObject.set(x, "td", value.asInstanceOf[js.Any])
+      inline def setTd(value: HTMLTableCellElement): Self = StObject.set(x, "td", value.asInstanceOf[js.Any])
       
       inline def setTemplate(value: HTMLTemplateElement): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
@@ -3051,7 +3125,7 @@ object mod {
       
       inline def setTfoot(value: HTMLTableSectionElement): Self = StObject.set(x, "tfoot", value.asInstanceOf[js.Any])
       
-      inline def setTh(value: HTMLTableHeaderCellElement): Self = StObject.set(x, "th", value.asInstanceOf[js.Any])
+      inline def setTh(value: HTMLTableCellElement): Self = StObject.set(x, "th", value.asInstanceOf[js.Any])
       
       inline def setThead(value: HTMLTableSectionElement): Self = StObject.set(x, "thead", value.asInstanceOf[js.Any])
       
@@ -3082,23 +3156,23 @@ object mod {
   }
   
   @js.native
-  trait Props[TTagName /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */] extends StObject {
+  trait Props[TTagName /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170 */ Any */] extends StObject {
     
     val key: js.UndefOr[Double | String] = js.native
   }
   
-  trait VNode[TTagName /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */] extends StObject {
+  trait VNode[TTagName /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170 */ Any */] extends StObject {
     
     val name: TTagName
   }
   object VNode {
     
-    inline def apply[TTagName /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */](name: TTagName): VNode[TTagName] = {
+    inline def apply[TTagName /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170 */ Any */](name: TTagName): VNode[TTagName] = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[VNode[TTagName]]
     }
     
-    extension [Self <: VNode[?], TTagName /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */](x: Self & VNode[TTagName]) {
+    extension [Self <: VNode[?], TTagName /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170 */ Any */](x: Self & VNode[TTagName]) {
       
       inline def setName(value: TTagName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -3109,7 +3183,7 @@ object mod {
     object JSX {
       
       type Element = VNode[
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170 */ Any
           ]
       
       /* Inlined {readonly [ TTagName in keyof superfine.superfine.HtmlOrSvgElementTagNameMap ]: superfine.superfine.Props<TTagName>} */
@@ -3121,7 +3195,11 @@ object mod {
         
         val address: Props[typings.superfine.superfineStrings.address]
         
-        val applet: Props[typings.superfine.superfineStrings.applet]
+        val animate: Props[typings.superfine.superfineStrings.animate]
+        
+        val animateMotion: Props[typings.superfine.superfineStrings.animateMotion]
+        
+        val animateTransform: Props[typings.superfine.superfineStrings.animateTransform]
         
         val area: Props[typings.superfine.superfineStrings.area]
         
@@ -3134,8 +3212,6 @@ object mod {
         val b: Props[typings.superfine.superfineStrings.b]
         
         val base: Props[typings.superfine.superfineStrings.base]
-        
-        val basefont: Props[typings.superfine.superfineStrings.basefont]
         
         val bdi: Props[typings.superfine.superfineStrings.bdi]
         
@@ -3183,8 +3259,6 @@ object mod {
         
         val dialog: Props[typings.superfine.superfineStrings.dialog]
         
-        val dir: Props[typings.superfine.superfineStrings.dir]
-        
         val div: Props[typings.superfine.superfineStrings.div]
         
         val dl: Props[typings.superfine.superfineStrings.dl]
@@ -3212,6 +3286,8 @@ object mod {
         val feDisplacementMap: Props[typings.superfine.superfineStrings.feDisplacementMap]
         
         val feDistantLight: Props[typings.superfine.superfineStrings.feDistantLight]
+        
+        val feDropShadow: Props[typings.superfine.superfineStrings.feDropShadow]
         
         val feFlood: Props[typings.superfine.superfineStrings.feFlood]
         
@@ -3253,17 +3329,11 @@ object mod {
         
         val filter: Props[typings.superfine.superfineStrings.filter]
         
-        val font: Props[typings.superfine.superfineStrings.font]
-        
         val footer: Props[typings.superfine.superfineStrings.footer]
         
         val foreignObject: Props[typings.superfine.superfineStrings.foreignObject]
         
         val form: Props[typings.superfine.superfineStrings.form]
-        
-        val frame: Props[typings.superfine.superfineStrings.frame]
-        
-        val frameset: Props[typings.superfine.superfineStrings.frameset]
         
         val g: Props[typings.superfine.superfineStrings.g]
         
@@ -3323,8 +3393,6 @@ object mod {
         
         val marker: Props[typings.superfine.superfineStrings.marker]
         
-        val marquee: Props[typings.superfine.superfineStrings.marquee]
-        
         val mask: Props[typings.superfine.superfineStrings.mask]
         
         val menu: Props[typings.superfine.superfineStrings.menu]
@@ -3334,6 +3402,8 @@ object mod {
         val metadata: Props[typings.superfine.superfineStrings.metadata]
         
         val meter: Props[typings.superfine.superfineStrings.meter]
+        
+        val mpath: Props[typings.superfine.superfineStrings.mpath]
         
         val nav: Props[typings.superfine.superfineStrings.nav]
         
@@ -3350,8 +3420,6 @@ object mod {
         val output: Props[typings.superfine.superfineStrings.output]
         
         val p: Props[typings.superfine.superfineStrings.p]
-        
-        val param: Props[typings.superfine.superfineStrings.param]
         
         val path: Props[typings.superfine.superfineStrings.path]
         
@@ -3388,6 +3456,8 @@ object mod {
         val section: Props[typings.superfine.superfineStrings.section]
         
         val select: Props[typings.superfine.superfineStrings.select]
+        
+        val set: Props[typings.superfine.superfineStrings.set]
         
         val slot: Props[typings.superfine.superfineStrings.slot]
         
@@ -3465,14 +3535,15 @@ object mod {
           a: Props[a],
           abbr: Props[abbr],
           address: Props[address],
-          applet: Props[applet],
+          animate: Props[animate],
+          animateMotion: Props[animateMotion],
+          animateTransform: Props[animateTransform],
           area: Props[area],
           article: Props[article],
           aside: Props[aside],
           audio: Props[audio],
           b: Props[b],
           base: Props[base],
-          basefont: Props[basefont],
           bdi: Props[bdi],
           bdo: Props[bdo],
           blockquote: Props[blockquote],
@@ -3496,7 +3567,6 @@ object mod {
           details: Props[details],
           dfn: Props[dfn],
           dialog: Props[dialog],
-          dir: Props[dir],
           div: Props[div],
           dl: Props[dl],
           dt: Props[dt],
@@ -3511,6 +3581,7 @@ object mod {
           feDiffuseLighting: Props[feDiffuseLighting],
           feDisplacementMap: Props[feDisplacementMap],
           feDistantLight: Props[feDistantLight],
+          feDropShadow: Props[feDropShadow],
           feFlood: Props[feFlood],
           feFuncA: Props[feFuncA],
           feFuncB: Props[feFuncB],
@@ -3531,12 +3602,9 @@ object mod {
           figcaption: Props[figcaption],
           figure: Props[figure],
           filter: Props[filter],
-          font: Props[font],
           footer: Props[footer],
           foreignObject: Props[foreignObject],
           form: Props[form],
-          frame: Props[frame],
-          frameset: Props[frameset],
           g: Props[g],
           h1: Props[h1],
           h2: Props[h2],
@@ -3566,12 +3634,12 @@ object mod {
           map: Props[map],
           mark: Props[mark],
           marker: Props[marker],
-          marquee: Props[marquee],
           mask: Props[mask],
           menu: Props[menu],
           meta: Props[meta],
           metadata: Props[metadata],
           meter: Props[meter],
+          mpath: Props[mpath],
           nav: Props[nav],
           noscript: Props[noscript],
           `object`: Props[`object`],
@@ -3580,7 +3648,6 @@ object mod {
           option: Props[option],
           output: Props[output],
           p: Props[p],
-          param: Props[param],
           path: Props[path],
           pattern: Props[pattern],
           picture: Props[picture],
@@ -3599,6 +3666,7 @@ object mod {
           script: Props[script],
           section: Props[section],
           select: Props[select],
+          set: Props[set],
           slot: Props[slot],
           small: Props[small],
           source: Props[source],
@@ -3635,7 +3703,7 @@ object mod {
           view: Props[view],
           wbr: Props[wbr]
         ): IntrinsicElements = {
-          val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], abbr = abbr.asInstanceOf[js.Any], address = address.asInstanceOf[js.Any], applet = applet.asInstanceOf[js.Any], area = area.asInstanceOf[js.Any], article = article.asInstanceOf[js.Any], aside = aside.asInstanceOf[js.Any], audio = audio.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], basefont = basefont.asInstanceOf[js.Any], bdi = bdi.asInstanceOf[js.Any], bdo = bdo.asInstanceOf[js.Any], blockquote = blockquote.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], br = br.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], canvas = canvas.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], circle = circle.asInstanceOf[js.Any], cite = cite.asInstanceOf[js.Any], clipPath = clipPath.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], col = col.asInstanceOf[js.Any], colgroup = colgroup.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], datalist = datalist.asInstanceOf[js.Any], dd = dd.asInstanceOf[js.Any], defs = defs.asInstanceOf[js.Any], del = del.asInstanceOf[js.Any], desc = desc.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], dfn = dfn.asInstanceOf[js.Any], dialog = dialog.asInstanceOf[js.Any], dir = dir.asInstanceOf[js.Any], div = div.asInstanceOf[js.Any], dl = dl.asInstanceOf[js.Any], dt = dt.asInstanceOf[js.Any], ellipse = ellipse.asInstanceOf[js.Any], em = em.asInstanceOf[js.Any], embed = embed.asInstanceOf[js.Any], feBlend = feBlend.asInstanceOf[js.Any], feColorMatrix = feColorMatrix.asInstanceOf[js.Any], feComponentTransfer = feComponentTransfer.asInstanceOf[js.Any], feComposite = feComposite.asInstanceOf[js.Any], feConvolveMatrix = feConvolveMatrix.asInstanceOf[js.Any], feDiffuseLighting = feDiffuseLighting.asInstanceOf[js.Any], feDisplacementMap = feDisplacementMap.asInstanceOf[js.Any], feDistantLight = feDistantLight.asInstanceOf[js.Any], feFlood = feFlood.asInstanceOf[js.Any], feFuncA = feFuncA.asInstanceOf[js.Any], feFuncB = feFuncB.asInstanceOf[js.Any], feFuncG = feFuncG.asInstanceOf[js.Any], feFuncR = feFuncR.asInstanceOf[js.Any], feGaussianBlur = feGaussianBlur.asInstanceOf[js.Any], feImage = feImage.asInstanceOf[js.Any], feMerge = feMerge.asInstanceOf[js.Any], feMergeNode = feMergeNode.asInstanceOf[js.Any], feMorphology = feMorphology.asInstanceOf[js.Any], feOffset = feOffset.asInstanceOf[js.Any], fePointLight = fePointLight.asInstanceOf[js.Any], feSpecularLighting = feSpecularLighting.asInstanceOf[js.Any], feSpotLight = feSpotLight.asInstanceOf[js.Any], feTile = feTile.asInstanceOf[js.Any], feTurbulence = feTurbulence.asInstanceOf[js.Any], fieldset = fieldset.asInstanceOf[js.Any], figcaption = figcaption.asInstanceOf[js.Any], figure = figure.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], font = font.asInstanceOf[js.Any], footer = footer.asInstanceOf[js.Any], foreignObject = foreignObject.asInstanceOf[js.Any], form = form.asInstanceOf[js.Any], frame = frame.asInstanceOf[js.Any], frameset = frameset.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], h1 = h1.asInstanceOf[js.Any], h2 = h2.asInstanceOf[js.Any], h3 = h3.asInstanceOf[js.Any], h4 = h4.asInstanceOf[js.Any], h5 = h5.asInstanceOf[js.Any], h6 = h6.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], hgroup = hgroup.asInstanceOf[js.Any], hr = hr.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], i = i.asInstanceOf[js.Any], iframe = iframe.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], img = img.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], ins = ins.asInstanceOf[js.Any], kbd = kbd.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], legend = legend.asInstanceOf[js.Any], li = li.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], linearGradient = linearGradient.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], main = main.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], mark = mark.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any], marquee = marquee.asInstanceOf[js.Any], mask = mask.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], meter = meter.asInstanceOf[js.Any], nav = nav.asInstanceOf[js.Any], noscript = noscript.asInstanceOf[js.Any], ol = ol.asInstanceOf[js.Any], optgroup = optgroup.asInstanceOf[js.Any], option = option.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], param = param.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], picture = picture.asInstanceOf[js.Any], polygon = polygon.asInstanceOf[js.Any], polyline = polyline.asInstanceOf[js.Any], pre = pre.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], q = q.asInstanceOf[js.Any], radialGradient = radialGradient.asInstanceOf[js.Any], rect = rect.asInstanceOf[js.Any], rp = rp.asInstanceOf[js.Any], rt = rt.asInstanceOf[js.Any], ruby = ruby.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], samp = samp.asInstanceOf[js.Any], script = script.asInstanceOf[js.Any], section = section.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], slot = slot.asInstanceOf[js.Any], small = small.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any], strong = strong.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], sub = sub.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any], sup = sup.asInstanceOf[js.Any], svg = svg.asInstanceOf[js.Any], switch = switch.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any], tbody = tbody.asInstanceOf[js.Any], td = td.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textPath = textPath.asInstanceOf[js.Any], textarea = textarea.asInstanceOf[js.Any], tfoot = tfoot.asInstanceOf[js.Any], th = th.asInstanceOf[js.Any], thead = thead.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], tr = tr.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any], tspan = tspan.asInstanceOf[js.Any], u = u.asInstanceOf[js.Any], ul = ul.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], wbr = wbr.asInstanceOf[js.Any])
+          val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], abbr = abbr.asInstanceOf[js.Any], address = address.asInstanceOf[js.Any], animate = animate.asInstanceOf[js.Any], animateMotion = animateMotion.asInstanceOf[js.Any], animateTransform = animateTransform.asInstanceOf[js.Any], area = area.asInstanceOf[js.Any], article = article.asInstanceOf[js.Any], aside = aside.asInstanceOf[js.Any], audio = audio.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], bdi = bdi.asInstanceOf[js.Any], bdo = bdo.asInstanceOf[js.Any], blockquote = blockquote.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], br = br.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], canvas = canvas.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], circle = circle.asInstanceOf[js.Any], cite = cite.asInstanceOf[js.Any], clipPath = clipPath.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], col = col.asInstanceOf[js.Any], colgroup = colgroup.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], datalist = datalist.asInstanceOf[js.Any], dd = dd.asInstanceOf[js.Any], defs = defs.asInstanceOf[js.Any], del = del.asInstanceOf[js.Any], desc = desc.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], dfn = dfn.asInstanceOf[js.Any], dialog = dialog.asInstanceOf[js.Any], div = div.asInstanceOf[js.Any], dl = dl.asInstanceOf[js.Any], dt = dt.asInstanceOf[js.Any], ellipse = ellipse.asInstanceOf[js.Any], em = em.asInstanceOf[js.Any], embed = embed.asInstanceOf[js.Any], feBlend = feBlend.asInstanceOf[js.Any], feColorMatrix = feColorMatrix.asInstanceOf[js.Any], feComponentTransfer = feComponentTransfer.asInstanceOf[js.Any], feComposite = feComposite.asInstanceOf[js.Any], feConvolveMatrix = feConvolveMatrix.asInstanceOf[js.Any], feDiffuseLighting = feDiffuseLighting.asInstanceOf[js.Any], feDisplacementMap = feDisplacementMap.asInstanceOf[js.Any], feDistantLight = feDistantLight.asInstanceOf[js.Any], feDropShadow = feDropShadow.asInstanceOf[js.Any], feFlood = feFlood.asInstanceOf[js.Any], feFuncA = feFuncA.asInstanceOf[js.Any], feFuncB = feFuncB.asInstanceOf[js.Any], feFuncG = feFuncG.asInstanceOf[js.Any], feFuncR = feFuncR.asInstanceOf[js.Any], feGaussianBlur = feGaussianBlur.asInstanceOf[js.Any], feImage = feImage.asInstanceOf[js.Any], feMerge = feMerge.asInstanceOf[js.Any], feMergeNode = feMergeNode.asInstanceOf[js.Any], feMorphology = feMorphology.asInstanceOf[js.Any], feOffset = feOffset.asInstanceOf[js.Any], fePointLight = fePointLight.asInstanceOf[js.Any], feSpecularLighting = feSpecularLighting.asInstanceOf[js.Any], feSpotLight = feSpotLight.asInstanceOf[js.Any], feTile = feTile.asInstanceOf[js.Any], feTurbulence = feTurbulence.asInstanceOf[js.Any], fieldset = fieldset.asInstanceOf[js.Any], figcaption = figcaption.asInstanceOf[js.Any], figure = figure.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], footer = footer.asInstanceOf[js.Any], foreignObject = foreignObject.asInstanceOf[js.Any], form = form.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], h1 = h1.asInstanceOf[js.Any], h2 = h2.asInstanceOf[js.Any], h3 = h3.asInstanceOf[js.Any], h4 = h4.asInstanceOf[js.Any], h5 = h5.asInstanceOf[js.Any], h6 = h6.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], hgroup = hgroup.asInstanceOf[js.Any], hr = hr.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], i = i.asInstanceOf[js.Any], iframe = iframe.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], img = img.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], ins = ins.asInstanceOf[js.Any], kbd = kbd.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], legend = legend.asInstanceOf[js.Any], li = li.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], linearGradient = linearGradient.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], main = main.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], mark = mark.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any], mask = mask.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], meter = meter.asInstanceOf[js.Any], mpath = mpath.asInstanceOf[js.Any], nav = nav.asInstanceOf[js.Any], noscript = noscript.asInstanceOf[js.Any], ol = ol.asInstanceOf[js.Any], optgroup = optgroup.asInstanceOf[js.Any], option = option.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], picture = picture.asInstanceOf[js.Any], polygon = polygon.asInstanceOf[js.Any], polyline = polyline.asInstanceOf[js.Any], pre = pre.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], q = q.asInstanceOf[js.Any], radialGradient = radialGradient.asInstanceOf[js.Any], rect = rect.asInstanceOf[js.Any], rp = rp.asInstanceOf[js.Any], rt = rt.asInstanceOf[js.Any], ruby = ruby.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], samp = samp.asInstanceOf[js.Any], script = script.asInstanceOf[js.Any], section = section.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], set = set.asInstanceOf[js.Any], slot = slot.asInstanceOf[js.Any], small = small.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any], strong = strong.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], sub = sub.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any], sup = sup.asInstanceOf[js.Any], svg = svg.asInstanceOf[js.Any], switch = switch.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any], tbody = tbody.asInstanceOf[js.Any], td = td.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textPath = textPath.asInstanceOf[js.Any], textarea = textarea.asInstanceOf[js.Any], tfoot = tfoot.asInstanceOf[js.Any], th = th.asInstanceOf[js.Any], thead = thead.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], tr = tr.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any], tspan = tspan.asInstanceOf[js.Any], u = u.asInstanceOf[js.Any], ul = ul.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], wbr = wbr.asInstanceOf[js.Any])
           __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
           __obj.updateDynamic("var")(`var`.asInstanceOf[js.Any])
           __obj.asInstanceOf[IntrinsicElements]
@@ -3649,7 +3717,11 @@ object mod {
           
           inline def setAddress(value: Props[address]): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
           
-          inline def setApplet(value: Props[applet]): Self = StObject.set(x, "applet", value.asInstanceOf[js.Any])
+          inline def setAnimate(value: Props[animate]): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+          
+          inline def setAnimateMotion(value: Props[animateMotion]): Self = StObject.set(x, "animateMotion", value.asInstanceOf[js.Any])
+          
+          inline def setAnimateTransform(value: Props[animateTransform]): Self = StObject.set(x, "animateTransform", value.asInstanceOf[js.Any])
           
           inline def setArea(value: Props[area]): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
           
@@ -3662,8 +3734,6 @@ object mod {
           inline def setB(value: Props[b]): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
           
           inline def setBase(value: Props[base]): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
-          
-          inline def setBasefont(value: Props[basefont]): Self = StObject.set(x, "basefont", value.asInstanceOf[js.Any])
           
           inline def setBdi(value: Props[bdi]): Self = StObject.set(x, "bdi", value.asInstanceOf[js.Any])
           
@@ -3711,8 +3781,6 @@ object mod {
           
           inline def setDialog(value: Props[dialog]): Self = StObject.set(x, "dialog", value.asInstanceOf[js.Any])
           
-          inline def setDir(value: Props[dir]): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
-          
           inline def setDiv(value: Props[div]): Self = StObject.set(x, "div", value.asInstanceOf[js.Any])
           
           inline def setDl(value: Props[dl]): Self = StObject.set(x, "dl", value.asInstanceOf[js.Any])
@@ -3740,6 +3808,8 @@ object mod {
           inline def setFeDisplacementMap(value: Props[feDisplacementMap]): Self = StObject.set(x, "feDisplacementMap", value.asInstanceOf[js.Any])
           
           inline def setFeDistantLight(value: Props[feDistantLight]): Self = StObject.set(x, "feDistantLight", value.asInstanceOf[js.Any])
+          
+          inline def setFeDropShadow(value: Props[feDropShadow]): Self = StObject.set(x, "feDropShadow", value.asInstanceOf[js.Any])
           
           inline def setFeFlood(value: Props[feFlood]): Self = StObject.set(x, "feFlood", value.asInstanceOf[js.Any])
           
@@ -3781,17 +3851,11 @@ object mod {
           
           inline def setFilter(value: Props[filter]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
           
-          inline def setFont(value: Props[font]): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
-          
           inline def setFooter(value: Props[footer]): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
           
           inline def setForeignObject(value: Props[foreignObject]): Self = StObject.set(x, "foreignObject", value.asInstanceOf[js.Any])
           
           inline def setForm(value: Props[form]): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
-          
-          inline def setFrame(value: Props[frame]): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
-          
-          inline def setFrameset(value: Props[frameset]): Self = StObject.set(x, "frameset", value.asInstanceOf[js.Any])
           
           inline def setG(value: Props[g]): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
           
@@ -3851,8 +3915,6 @@ object mod {
           
           inline def setMarker(value: Props[marker]): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
           
-          inline def setMarquee(value: Props[marquee]): Self = StObject.set(x, "marquee", value.asInstanceOf[js.Any])
-          
           inline def setMask(value: Props[mask]): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
           
           inline def setMenu(value: Props[menu]): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
@@ -3862,6 +3924,8 @@ object mod {
           inline def setMetadata(value: Props[metadata]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
           
           inline def setMeter(value: Props[meter]): Self = StObject.set(x, "meter", value.asInstanceOf[js.Any])
+          
+          inline def setMpath(value: Props[mpath]): Self = StObject.set(x, "mpath", value.asInstanceOf[js.Any])
           
           inline def setNav(value: Props[nav]): Self = StObject.set(x, "nav", value.asInstanceOf[js.Any])
           
@@ -3878,8 +3942,6 @@ object mod {
           inline def setOutput(value: Props[output]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
           
           inline def setP(value: Props[p]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
-          
-          inline def setParam(value: Props[param]): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
           
           inline def setPath(value: Props[path]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
           
@@ -3916,6 +3978,8 @@ object mod {
           inline def setSection(value: Props[section]): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
           
           inline def setSelect(value: Props[select]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+          
+          inline def setSet(value: Props[set]): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
           
           inline def setSlot(value: Props[slot]): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
           

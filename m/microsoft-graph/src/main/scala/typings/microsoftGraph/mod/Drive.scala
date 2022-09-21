@@ -8,6 +8,9 @@ trait Drive
   extends StObject
      with BaseItem {
   
+  // Collection of [bundles][bundle] (albums and multi-select-shared sets of items). Only in personal OneDrive.
+  var bundles: js.UndefOr[NullableOption[js.Array[DriveItem]]] = js.undefined
+  
   /**
     * Describes the type of drive represented by this resource. OneDrive personal drives will return personal. OneDrive for
     * Business will return business. SharePoint document libraries will return documentLibrary. Read-only.
@@ -49,6 +52,14 @@ object Drive {
   
   extension [Self <: Drive](x: Self) {
     
+    inline def setBundles(value: NullableOption[js.Array[DriveItem]]): Self = StObject.set(x, "bundles", value.asInstanceOf[js.Any])
+    
+    inline def setBundlesNull: Self = StObject.set(x, "bundles", null)
+    
+    inline def setBundlesUndefined: Self = StObject.set(x, "bundles", js.undefined)
+    
+    inline def setBundlesVarargs(value: DriveItem*): Self = StObject.set(x, "bundles", js.Array(value*))
+    
     inline def setDriveType(value: NullableOption[String]): Self = StObject.set(x, "driveType", value.asInstanceOf[js.Any])
     
     inline def setDriveTypeNull: Self = StObject.set(x, "driveType", null)
@@ -61,7 +72,7 @@ object Drive {
     
     inline def setFollowingUndefined: Self = StObject.set(x, "following", js.undefined)
     
-    inline def setFollowingVarargs(value: DriveItem*): Self = StObject.set(x, "following", js.Array(value :_*))
+    inline def setFollowingVarargs(value: DriveItem*): Self = StObject.set(x, "following", js.Array(value*))
     
     inline def setItems(value: NullableOption[js.Array[DriveItem]]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
@@ -69,7 +80,7 @@ object Drive {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: DriveItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: DriveItem*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setList(value: NullableOption[List]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
@@ -107,7 +118,7 @@ object Drive {
     
     inline def setSpecialUndefined: Self = StObject.set(x, "special", js.undefined)
     
-    inline def setSpecialVarargs(value: DriveItem*): Self = StObject.set(x, "special", js.Array(value :_*))
+    inline def setSpecialVarargs(value: DriveItem*): Self = StObject.set(x, "special", js.Array(value*))
     
     inline def setSystem(value: NullableOption[SystemFacet]): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
     

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.JsGrid.TableCache")
 @js.native
-class TableCache ()
+open class TableCache ()
   extends StObject
      with typings.sharepoint.SP.JsGrid.TableCache

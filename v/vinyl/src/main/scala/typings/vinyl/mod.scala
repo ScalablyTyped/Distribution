@@ -4,10 +4,10 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
-import typings.node.NodeJS.ReadableStream
-import typings.node.NodeJS.WritableStream
+import typings.node.bufferMod.global.Buffer
 import typings.node.fsMod.Stats
+import typings.std.ReadableStream
+import typings.std.WritableStream
 import typings.vinyl.anon.ConstructorOptionscontent
 import typings.vinyl.anon.ConstructorOptionscontentBase
 import typings.vinyl.anon.ConstructorOptionscontentDictcustomOption
@@ -26,7 +26,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("vinyl", JSImport.Namespace)
   @js.native
-  class Class protected ()
+  open class Class protected ()
     extends StObject
        with NullFile {
     def this(options: ConstructorOptionscontent) = this()
@@ -44,7 +44,7 @@ object mod extends Shortcut {
   
   trait ConstructorOptions
     extends StObject
-       with /* customProperty */ StringDictionary[js.Any] {
+       with /* customProperty */ StringDictionary[Any] {
     
     /**
       * Used for relative pathing. Typically where a glob starts. Default: options.cwd
@@ -56,7 +56,7 @@ object mod extends Shortcut {
       * Type: `Buffer`, `Stream`, or null
       * Default: null
       */
-    var contents: js.UndefOr[Buffer | ReadableStream | Null] = js.undefined
+    var contents: js.UndefOr[Buffer | ReadableStream[Any] | Null] = js.undefined
     
     /**
       * The current working directory of the file. Default: process.cwd()
@@ -79,7 +79,7 @@ object mod extends Shortcut {
     /**
       * The result of an fs.stat call. This is how you mark the file as a directory or
       * symbolic link. See `isDirectory()`, `isSymbolic()` and `fs.Stats` for more information.
-      * http://nodejs.org/api/fs.html#fs_class_fs_stats
+      * https://nodejs.org/api/fs.html#fs_class_fs_stats
       */
     var stat: js.UndefOr[Stats] = js.undefined
   }
@@ -96,7 +96,7 @@ object mod extends Shortcut {
       
       inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
-      inline def setContents(value: Buffer | ReadableStream): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+      inline def setContents(value: Buffer | ReadableStream[Any]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
       inline def setContentsNull: Self = StObject.set(x, "contents", null)
       
@@ -110,7 +110,7 @@ object mod extends Shortcut {
       
       inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
       
-      inline def setHistoryVarargs(value: String*): Self = StObject.set(x, "history", js.Array(value :_*))
+      inline def setHistoryVarargs(value: String*): Self = StObject.set(x, "history", js.Array(value*))
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -130,7 +130,7 @@ object mod extends Shortcut {
   @js.native
   trait File
     extends StObject
-       with /* customProperty */ StringDictionary[js.Any] {
+       with /* customProperty */ StringDictionary[Any] {
     
     //
     /**
@@ -180,7 +180,7 @@ object mod extends Shortcut {
       *
       * Throws when set to any value other than a `Stream`, a `Buffer` or `null`.
       */
-    var contents: Buffer | ReadableStream | Null = js.native
+    var contents: Buffer | ReadableStream[Any] | Null = js.native
     
     /**
       * Gets and sets current working directory. Will always be normalized and have trailing
@@ -314,8 +314,8 @@ object mod extends Shortcut {
       * If file.contents is a Stream, it will pipe it to the stream.
       * If file.contents is null, it will do nothing.
       */
-    def pipe[T /* <: WritableStream */](stream: T): T = js.native
-    def pipe[T /* <: WritableStream */](stream: T, opts: End): T = js.native
+    def pipe[T /* <: WritableStream[Any] */](stream: T): T = js.native
+    def pipe[T /* <: WritableStream[Any] */](stream: T, opts: End): T = js.native
     
     /**
       * Gets the result of `path.relative(file.base, file.path)`.
@@ -388,7 +388,7 @@ object mod extends Shortcut {
     /**
       * Checks if a given object is a vinyl file.
       */
-    def isVinyl(obj: js.Any): /* is std.File */ Boolean = js.native
+    def isVinyl(obj: Any): /* is std.File */ Boolean = js.native
   }
   
   @js.native
@@ -406,7 +406,7 @@ object mod extends Shortcut {
        with File {
     
     @JSName("contents")
-    var contents_StreamFile: ReadableStream = js.native
+    var contents_StreamFile: ReadableStream[Any] = js.native
   }
   
   @js.native

@@ -14,11 +14,11 @@ trait ParameterRuleEnum
   @JSName("type")
   var type_ParameterRuleEnum: `enum` | enumQuestionmark
   
-  var values: js.Array[js.Any]
+  var values: js.Array[Any]
 }
 object ParameterRuleEnum {
   
-  inline def apply(`type`: `enum` | enumQuestionmark, values: js.Array[js.Any]): ParameterRuleEnum = {
+  inline def apply(`type`: `enum` | enumQuestionmark, values: js.Array[Any]): ParameterRuleEnum = {
     val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParameterRuleEnum]
@@ -28,8 +28,8 @@ object ParameterRuleEnum {
     
     inline def setType(value: `enum` | enumQuestionmark): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    inline def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: Any*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

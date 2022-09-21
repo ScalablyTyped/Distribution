@@ -1,16 +1,18 @@
 package typings.hapiHapi.mod
 
 import typings.hapiHapi.hapiHapiBooleans.`true`
-import typings.std.Error
+import typings.hapiHapi.mod.Lifecycle._ReturnValueTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Auth extends StObject {
+trait Auth
+  extends StObject
+     with _ReturnValueTypes {
   
   val data: js.UndefOr[AuthenticationData] = js.undefined
   
-  val error: js.UndefOr[Error | Null] = js.undefined
+  val error: js.UndefOr[js.Error | Null] = js.undefined
   
   val isAuth: `true`
 }
@@ -27,7 +29,7 @@ object Auth {
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     inline def setErrorNull: Self = StObject.set(x, "error", null)
     

@@ -6,7 +6,7 @@ import typings.awsSdkProtocolHttp.httpRequestMod.HttpRequest
 import typings.awsSdkProtocolHttp.httpResponseMod.HttpResponse
 import typings.awsSdkTypes.httpMod.HttpHandlerOptions
 import typings.awsSdkTypes.transferMod.RequestHandler
-import typings.awsSdkTypes.transferMod.RequestHandlerOutput
+import typings.awsSdkTypes.utilMod.Provider
 import typings.node.httpMod.Agent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,33 +14,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object nodeHttpHandlerMod {
   
-  @JSImport("@aws-sdk/node-http-handler/dist/cjs/node-http-handler", "NodeHttpHandler")
+  @JSImport("@aws-sdk/node-http-handler/dist-types/node-http-handler", "NodeHttpHandler")
   @js.native
-  class NodeHttpHandler ()
+  open class NodeHttpHandler ()
     extends StObject
        with RequestHandler[HttpRequest, HttpResponse, HttpHandlerOptions] {
-    def this(hasConnectionTimeoutSocketTimeoutHttpAgentHttpsAgent: NodeHttpOptions) = this()
+    def this(options: NodeHttpHandlerOptions) = this()
+    def this(options: Provider[NodeHttpHandlerOptions | Unit]) = this()
     
-    /* private */ val connectionTimeout: js.Any = js.native
+    /* private */ var config: Any = js.native
+    
+    /* private */ val configProvider: Any = js.native
     
     @JSName("destroy")
     def destroy_MNodeHttpHandler(): Unit = js.native
     
-    /* CompleteClass */
-    override def handle(request: HttpRequest, handlerOptions: HttpHandlerOptions): js.Promise[RequestHandlerOutput[HttpResponse]] = js.native
+    def handle(request: typings.awsSdkProtocolHttp.mod.HttpRequest): js.Promise[Response] = js.native
     def handle(request: typings.awsSdkProtocolHttp.mod.HttpRequest, hasAbortSignal: HttpHandlerOptions): js.Promise[Response] = js.native
-    
-    /* private */ val httpAgent: js.Any = js.native
-    
-    /* private */ val httpsAgent: js.Any = js.native
     
     @JSName("metadata")
     val metadata_NodeHttpHandler: HandlerProtocol = js.native
     
-    /* private */ val socketTimeout: js.Any = js.native
+    /* private */ var resolveDefaultConfig: Any = js.native
   }
   
-  trait NodeHttpOptions extends StObject {
+  trait NodeHttpHandlerOptions extends StObject {
     
     /**
       * The maximum time in milliseconds that the connection phase of a request
@@ -58,14 +56,14 @@ object nodeHttpHandlerMod {
       */
     var socketTimeout: js.UndefOr[Double] = js.undefined
   }
-  object NodeHttpOptions {
+  object NodeHttpHandlerOptions {
     
-    inline def apply(): NodeHttpOptions = {
+    inline def apply(): NodeHttpHandlerOptions = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[NodeHttpOptions]
+      __obj.asInstanceOf[NodeHttpHandlerOptions]
     }
     
-    extension [Self <: NodeHttpOptions](x: Self) {
+    extension [Self <: NodeHttpHandlerOptions](x: Self) {
       
       inline def setConnectionTimeout(value: Double): Self = StObject.set(x, "connectionTimeout", value.asInstanceOf[js.Any])
       

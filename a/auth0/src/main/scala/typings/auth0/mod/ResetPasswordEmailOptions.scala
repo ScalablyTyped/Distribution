@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ResetPasswordEmailOptions extends StObject {
   
+  var client_id: js.UndefOr[String] = js.undefined
+  
   var connection: String
   
   var email: String
@@ -18,6 +20,10 @@ object ResetPasswordEmailOptions {
   }
   
   extension [Self <: ResetPasswordEmailOptions](x: Self) {
+    
+    inline def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
+    
+    inline def setClient_idUndefined: Self = StObject.set(x, "client_id", js.undefined)
     
     inline def setConnection(value: String): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     

@@ -9,21 +9,21 @@ object mod {
   
   @JSImport("@antv/event-emitter", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with EventEmitter
   
   @js.native
   trait EventEmitter extends StObject {
     
-    /* private */ var _events: js.Any = js.native
+    /* private */ var _events: Any = js.native
     
     /**
       * 触发一个事件
       * @param evt
       * @param args
       */
-    def emit(evt: String, args: js.Any*): Unit = js.native
+    def emit(evt: String, args: Any*): Unit = js.native
     
     def getEvents(): Record[String, js.Array[EventType]] = js.native
     

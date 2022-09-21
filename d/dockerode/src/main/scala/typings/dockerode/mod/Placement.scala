@@ -29,7 +29,7 @@ object Placement {
     
     inline def setConstraintsUndefined: Self = StObject.set(x, "Constraints", js.undefined)
     
-    inline def setConstraintsVarargs(value: String*): Self = StObject.set(x, "Constraints", js.Array(value :_*))
+    inline def setConstraintsVarargs(value: String*): Self = StObject.set(x, "Constraints", js.Array(value*))
     
     inline def setMaxReplicas(value: Double): Self = StObject.set(x, "MaxReplicas", value.asInstanceOf[js.Any])
     
@@ -39,12 +39,12 @@ object Placement {
     
     inline def setPlatformsUndefined: Self = StObject.set(x, "Platforms", js.undefined)
     
-    inline def setPlatformsVarargs(value: Architecture*): Self = StObject.set(x, "Platforms", js.Array(value :_*))
+    inline def setPlatformsVarargs(value: Architecture*): Self = StObject.set(x, "Platforms", js.Array(value*))
     
     inline def setPreferences(value: js.Array[Spread]): Self = StObject.set(x, "Preferences", value.asInstanceOf[js.Any])
     
     inline def setPreferencesUndefined: Self = StObject.set(x, "Preferences", js.undefined)
     
-    inline def setPreferencesVarargs(value: Spread*): Self = StObject.set(x, "Preferences", js.Array(value :_*))
+    inline def setPreferencesVarargs(value: Spread*): Self = StObject.set(x, "Preferences", js.Array(value*))
   }
 }

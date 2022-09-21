@@ -23,7 +23,7 @@ trait HttpRequestMessage extends StObject {
   var method: HttpMethod
   
   /** Gets a set of properties on the HttpRequestMessage instance that are for use by the developer. */
-  var properties: IMap[String, js.Any]
+  var properties: IMap[String, Any]
   
   /** Gets or sets the Uri used for the HttpRequestMessage object. */
   var requestUri: Uri
@@ -38,7 +38,7 @@ object HttpRequestMessage {
     content: IHttpContent,
     headers: HttpRequestHeaderCollection,
     method: HttpMethod,
-    properties: IMap[String, js.Any],
+    properties: IMap[String, Any],
     requestUri: Uri,
     transportInformation: HttpTransportInformation
   ): HttpRequestMessage = {
@@ -56,7 +56,7 @@ object HttpRequestMessage {
     
     inline def setMethod(value: HttpMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    inline def setProperties(value: IMap[String, js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: IMap[String, Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setRequestUri(value: Uri): Self = StObject.set(x, "requestUri", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,7 @@ object mod extends Shortcut {
     * another custom function, such as your own tweaked version of jQuery, you
     * can do so by passing the third argument to the Simmer constructor.
     */
-  class defaultCls ()
+  open class defaultCls ()
     extends StObject
        with Simmer {
     def this(scope: Scope) = this()
@@ -72,7 +72,7 @@ object mod extends Shortcut {
       *  - _a function callback will be called with two parameters_: the
       *    exception and the element being analyzed
       */
-    var errorHandling: js.UndefOr[Boolean | (js.Function2[/* error */ js.Any, /* element */ Element, Unit])] = js.undefined
+    var errorHandling: js.UndefOr[Boolean | (js.Function2[/* error */ Any, /* element */ Element, Unit])] = js.undefined
     
     /**
       * A maximum length for the CSS selector can be specified - if no specific
@@ -108,9 +108,9 @@ object mod extends Shortcut {
       
       inline def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
       
-      inline def setErrorHandling(value: Boolean | (js.Function2[/* error */ js.Any, /* element */ Element, Unit])): Self = StObject.set(x, "errorHandling", value.asInstanceOf[js.Any])
+      inline def setErrorHandling(value: Boolean | (js.Function2[/* error */ Any, /* element */ Element, Unit])): Self = StObject.set(x, "errorHandling", value.asInstanceOf[js.Any])
       
-      inline def setErrorHandlingFunction2(value: (/* error */ js.Any, /* element */ Element) => Unit): Self = StObject.set(x, "errorHandling", js.Any.fromFunction2(value))
+      inline def setErrorHandlingFunction2(value: (/* error */ Any, /* element */ Element) => Unit): Self = StObject.set(x, "errorHandling", js.Any.fromFunction2(value))
       
       inline def setErrorHandlingUndefined: Self = StObject.set(x, "errorHandling", js.undefined)
       
@@ -126,7 +126,7 @@ object mod extends Shortcut {
   
   type QueryEngine = js.Function2[
     /* selector */ String, 
-    /* onError */ js.Function1[/* error */ js.Any, Unit], 
+    /* onError */ js.Function1[/* error */ Any, Unit], 
     ArrayLike[Element]
   ]
   
@@ -134,14 +134,14 @@ object mod extends Shortcut {
     extends StObject
        with Scope {
     
-    def querySelectorAll(selector: String, onError: js.Function1[/* error */ js.Any, Unit]): ArrayLike[Element]
+    def querySelectorAll(selector: String, onError: js.Function1[/* error */ Any, Unit]): ArrayLike[Element]
     @JSName("querySelectorAll")
     var querySelectorAll_Original: QueryEngine
   }
   object Queryable {
     
     inline def apply(
-      querySelectorAll: (/* selector */ String, /* onError */ js.Function1[/* error */ js.Any, Unit]) => ArrayLike[Element]
+      querySelectorAll: (/* selector */ String, /* onError */ js.Function1[/* error */ Any, Unit]) => ArrayLike[Element]
     ): Queryable = {
       val __obj = js.Dynamic.literal(querySelectorAll = js.Any.fromFunction2(querySelectorAll))
       __obj.asInstanceOf[Queryable]
@@ -150,7 +150,7 @@ object mod extends Shortcut {
     extension [Self <: Queryable](x: Self) {
       
       inline def setQuerySelectorAll(
-        value: (/* selector */ String, /* onError */ js.Function1[/* error */ js.Any, Unit]) => ArrayLike[Element]
+        value: (/* selector */ String, /* onError */ js.Function1[/* error */ Any, Unit]) => ArrayLike[Element]
       ): Self = StObject.set(x, "querySelectorAll", js.Any.fromFunction2(value))
     }
   }
@@ -163,7 +163,7 @@ object mod extends Shortcut {
   object Scope {
     
     inline def Queryable(
-      querySelectorAll: (/* selector */ String, /* onError */ js.Function1[/* error */ js.Any, Unit]) => ArrayLike[Element]
+      querySelectorAll: (/* selector */ String, /* onError */ js.Function1[/* error */ Any, Unit]) => ArrayLike[Element]
     ): typings.simmerjs.mod.Queryable = {
       val __obj = js.Dynamic.literal(querySelectorAll = js.Any.fromFunction2(querySelectorAll))
       __obj.asInstanceOf[typings.simmerjs.mod.Queryable]

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("H.map.Circle")
 @js.native
-class Circle protected ()
+open class Circle protected ()
   extends StObject
      with typings.heremaps.H.map.Circle {
   /**

@@ -11,9 +11,9 @@ Because stdin with node is annoying
 | Full name          | stdin |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 67 |
-| # downloads        | 5609811 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 498948.6666666667 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/stdin)

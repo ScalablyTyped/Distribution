@@ -9,7 +9,7 @@ object booleanKeyframeTrackMod {
   
   @JSImport("three/src/animation/tracks/BooleanKeyframeTrack", "BooleanKeyframeTrack")
   @js.native
-  class BooleanKeyframeTrack protected () extends KeyframeTrack {
-    def this(name: String, times: js.Array[js.Any], values: js.Array[js.Any]) = this()
+  open class BooleanKeyframeTrack protected () extends KeyframeTrack {
+    def this(name: String, times: js.Array[Any], values: js.Array[Any]) = this()
   }
 }

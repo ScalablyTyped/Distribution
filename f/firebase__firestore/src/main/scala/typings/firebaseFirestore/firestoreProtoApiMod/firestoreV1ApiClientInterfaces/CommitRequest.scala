@@ -1,23 +1,38 @@
 package typings.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CommitRequest extends js.Object {
+trait CommitRequest extends StObject {
+  
   var database: js.UndefOr[String] = js.undefined
+  
   var transaction: js.UndefOr[String] = js.undefined
+  
   var writes: js.UndefOr[js.Array[Write]] = js.undefined
 }
-
 object CommitRequest {
-  @scala.inline
-  def apply(database: String = null, transaction: String = null, writes: js.Array[Write] = null): CommitRequest = {
+  
+  inline def apply(): CommitRequest = {
     val __obj = js.Dynamic.literal()
-    if (database != null) __obj.updateDynamic("database")(database.asInstanceOf[js.Any])
-    if (transaction != null) __obj.updateDynamic("transaction")(transaction.asInstanceOf[js.Any])
-    if (writes != null) __obj.updateDynamic("writes")(writes.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommitRequest]
   }
+  
+  extension [Self <: CommitRequest](x: Self) {
+    
+    inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+    
+    inline def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
+    
+    inline def setTransaction(value: String): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
+    
+    inline def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
+    
+    inline def setWrites(value: js.Array[Write]): Self = StObject.set(x, "writes", value.asInstanceOf[js.Any])
+    
+    inline def setWritesUndefined: Self = StObject.set(x, "writes", js.undefined)
+    
+    inline def setWritesVarargs(value: Write*): Self = StObject.set(x, "writes", js.Array(value*))
+  }
 }
-

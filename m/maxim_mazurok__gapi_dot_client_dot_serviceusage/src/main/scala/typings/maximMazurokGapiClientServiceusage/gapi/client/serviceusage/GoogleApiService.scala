@@ -21,7 +21,7 @@ trait GoogleApiService extends StObject {
   /** Billing configuration. */
   var billing: js.UndefOr[Billing] = js.undefined
   
-  /** This field is obsolete. Its value must be set to `3`. */
+  /** Obsolete. Do not use. This field has no semantic meaning. The service config compiler always sets this field to `3`. */
   var configVersion: js.UndefOr[Double] = js.undefined
   
   /** Context configuration. */
@@ -41,7 +41,7 @@ trait GoogleApiService extends StObject {
   
   /**
     * A list of all enum types included in this API service. Enums referenced directly or indirectly by the `apis` are automatically included. Enums which are not referenced but shall be
-    * included should be listed here by name. Example: enums: - name: google.someapi.v1.SomeEnum
+    * included should be listed here by name by the configuration author. Example: enums: - name: google.someapi.v1.SomeEnum
     */
   var enums: js.UndefOr[js.Array[Enum]] = js.undefined
   
@@ -93,12 +93,12 @@ trait GoogleApiService extends StObject {
     */
   var systemTypes: js.UndefOr[js.Array[Type]] = js.undefined
   
-  /** The product title for this service. */
+  /** The product title for this service, it is the name displayed in Google Cloud Console. */
   var title: js.UndefOr[String] = js.undefined
   
   /**
     * A list of all proto message types included in this API service. Types referenced directly or indirectly by the `apis` are automatically included. Messages which are not referenced
-    * but shall be included, such as types used by the `google.protobuf.Any` type, should be listed here by name. Example: types: - name: google.protobuf.Int32
+    * but shall be included, such as types used by the `google.protobuf.Any` type, should be listed here by name by the configuration author. Example: types: - name: google.protobuf.Int32
     */
   var types: js.UndefOr[js.Array[Type]] = js.undefined
   
@@ -118,7 +118,7 @@ object GoogleApiService {
     
     inline def setApisUndefined: Self = StObject.set(x, "apis", js.undefined)
     
-    inline def setApisVarargs(value: Api*): Self = StObject.set(x, "apis", js.Array(value :_*))
+    inline def setApisVarargs(value: Api*): Self = StObject.set(x, "apis", js.Array(value*))
     
     inline def setAuthentication(value: Authentication): Self = StObject.set(x, "authentication", value.asInstanceOf[js.Any])
     
@@ -156,13 +156,13 @@ object GoogleApiService {
     
     inline def setEndpointsUndefined: Self = StObject.set(x, "endpoints", js.undefined)
     
-    inline def setEndpointsVarargs(value: Endpoint*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
+    inline def setEndpointsVarargs(value: Endpoint*): Self = StObject.set(x, "endpoints", js.Array(value*))
     
     inline def setEnums(value: js.Array[Enum]): Self = StObject.set(x, "enums", value.asInstanceOf[js.Any])
     
     inline def setEnumsUndefined: Self = StObject.set(x, "enums", js.undefined)
     
-    inline def setEnumsVarargs(value: Enum*): Self = StObject.set(x, "enums", js.Array(value :_*))
+    inline def setEnumsVarargs(value: Enum*): Self = StObject.set(x, "enums", js.Array(value*))
     
     inline def setHttp(value: Http): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
     
@@ -180,19 +180,19 @@ object GoogleApiService {
     
     inline def setLogsUndefined: Self = StObject.set(x, "logs", js.undefined)
     
-    inline def setLogsVarargs(value: LogDescriptor*): Self = StObject.set(x, "logs", js.Array(value :_*))
+    inline def setLogsVarargs(value: LogDescriptor*): Self = StObject.set(x, "logs", js.Array(value*))
     
     inline def setMetrics(value: js.Array[MetricDescriptor]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
     inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
-    inline def setMetricsVarargs(value: MetricDescriptor*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: MetricDescriptor*): Self = StObject.set(x, "metrics", js.Array(value*))
     
     inline def setMonitoredResources(value: js.Array[MonitoredResourceDescriptor]): Self = StObject.set(x, "monitoredResources", value.asInstanceOf[js.Any])
     
     inline def setMonitoredResourcesUndefined: Self = StObject.set(x, "monitoredResources", js.undefined)
     
-    inline def setMonitoredResourcesVarargs(value: MonitoredResourceDescriptor*): Self = StObject.set(x, "monitoredResources", js.Array(value :_*))
+    inline def setMonitoredResourcesVarargs(value: MonitoredResourceDescriptor*): Self = StObject.set(x, "monitoredResources", js.Array(value*))
     
     inline def setMonitoring(value: Monitoring): Self = StObject.set(x, "monitoring", value.asInstanceOf[js.Any])
     
@@ -222,7 +222,7 @@ object GoogleApiService {
     
     inline def setSystemTypesUndefined: Self = StObject.set(x, "systemTypes", js.undefined)
     
-    inline def setSystemTypesVarargs(value: Type*): Self = StObject.set(x, "systemTypes", js.Array(value :_*))
+    inline def setSystemTypesVarargs(value: Type*): Self = StObject.set(x, "systemTypes", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
@@ -232,7 +232,7 @@ object GoogleApiService {
     
     inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
-    inline def setTypesVarargs(value: Type*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: Type*): Self = StObject.set(x, "types", js.Array(value*))
     
     inline def setUsage(value: Usage): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
     

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      ".iconv-lite-yWELqwMl" : "0.4.24"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      ".iconv-lite-yWELqwMl" : "0.4.24"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

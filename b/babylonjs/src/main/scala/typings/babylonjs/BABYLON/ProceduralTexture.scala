@@ -1,6 +1,5 @@
 package typings.babylonjs.BABYLON
 
-import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,70 +9,81 @@ trait ProceduralTexture
   extends StObject
      with Texture {
   
-  /* private */ var _cachedDefines: js.Any = js.native
+  /* private */ var _cachedDefines: Any = js.native
   
-  /* private */ var _checkUniform: js.Any = js.native
+  /* private */ var _checkUniform: Any = js.native
   
-  /* private */ var _colors3: js.Any = js.native
+  /* private */ var _colors3: Any = js.native
   
-  /* private */ var _colors4: js.Any = js.native
+  /* private */ var _colors4: Any = js.native
   
-  /* private */ var _contentData: js.Any = js.native
+  /* private */ var _contentData: Any = js.native
   
-  /* private */ var _contentUpdateId: js.Any = js.native
+  /* private */ var _contentUpdateId: Any = js.native
   
-  /* private */ var _createIndexBuffer: js.Any = js.native
+  /* private */ var _createIndexBuffer: Any = js.native
   
-  /* private */ var _currentRefreshId: js.Any = js.native
+  /* private */ var _createRtWrapper: Any = js.native
   
-  /** @hidden **/
-  var _effect: Effect = js.native
+  /* private */ var _currentRefreshId: Any = js.native
+  
+  /* private */ var _drawWrapper: Any = js.native
   
   /** @hidden */
   /* protected */ var _fallbackTexture: Nullable[Texture] = js.native
   
-  /* private */ var _fallbackTextureUsed: js.Any = js.native
+  /* private */ var _fallbackTextureUsed: Any = js.native
   
-  /* private */ var _floats: js.Any = js.native
+  /* private */ var _floats: Any = js.native
   
-  /* private */ var _floatsArrays: js.Any = js.native
+  /* private */ var _floatsArrays: Any = js.native
   
-  /* private */ var _fragment: js.Any = js.native
+  /* private */ var _fragment: Any = js.native
   
-  /* private */ var _frameId: js.Any = js.native
+  /* private */ var _frameId: Any = js.native
   
-  /* private */ var _fullEngine: js.Any = js.native
+  /* private */ var _fullEngine: Any = js.native
   
   /** @hidden */
   var _generateMipMaps: Boolean = js.native
   
   /* protected */ def _getDefines(): String = js.native
   
-  /* private */ var _indexBuffer: js.Any = js.native
+  /* private */ var _indexBuffer: Any = js.native
   
-  /* private */ var _ints: js.Any = js.native
+  /* private */ var _ints: Any = js.native
   
-  /* private */ var _matrices: js.Any = js.native
+  /* private */ var _matrices: Any = js.native
   
-  /* private */ var _refreshRate: js.Any = js.native
+  /* private */ var _refreshRate: Any = js.native
   
-  /* private */ var _samplers: js.Any = js.native
+  /* private */ var _rtWrapper: Any = js.native
+  
+  /* private */ var _samplers: Any = js.native
+  
+  /**
+    * @param effect
+    * @hidden*
+    */
+  def _setEffect(effect: Effect): Unit = js.native
   
   /** @hidden */
   def _shouldRender(): Boolean = js.native
   
-  /* private */ var _size: js.Any = js.native
+  /* private */ var _size: Any = js.native
+  
+  /* private */ var _textureType: Any = js.native
   
   /** @hidden */
   var _textures: org.scalablytyped.runtime.StringDictionary[Texture] = js.native
   
-  /* private */ var _uniforms: js.Any = js.native
+  /* private */ var _uniforms: Any = js.native
   
-  /* private */ var _vectors2: js.Any = js.native
+  /* private */ var _vectors2: Any = js.native
   
-  /* private */ var _vectors3: js.Any = js.native
+  /* private */ var _vectors3: Any = js.native
   
-  /* private */ var _vertexBuffers: js.Any = js.native
+  /* private */ var _vertexBuffers: Any = js.native
   
   /**
     * Define if the texture must be cleared before rendering (default is true)
@@ -82,9 +92,9 @@ trait ProceduralTexture
   
   /**
     * Gets texture content (Use this function wisely as reading from a texture can be slow)
-    * @returns an ArrayBufferView (Uint8Array or Float32Array)
+    * @returns an ArrayBufferView promise (Uint8Array or Float32Array)
     */
-  def getContent(): Nullable[ArrayBufferView] = js.native
+  def getContent(): Nullable[js.Promise[js.typedarray.ArrayBufferView]] = js.native
   
   /**
     * The effect that is created when initializing the post process.
@@ -96,7 +106,7 @@ trait ProceduralTexture
     * Get the size the texture is rendering at.
     * @returns the size (on cube texture it is always squared)
     */
-  def getRenderSize(): RenderTargetTextureSize = js.native
+  def getRenderSize(): TextureSize = js.native
   
   /**
     * Define if the texture is enabled or not (disabled texture will not render)
@@ -154,13 +164,13 @@ trait ProceduralTexture
     * @param size Define the new size the texture should have
     * @param generateMipMaps Define whether the new texture should create mip maps
     */
-  def resize(size: Double, generateMipMaps: Boolean): Unit = js.native
+  def resize(size: TextureSize, generateMipMaps: Boolean): Unit = js.native
   
   /**
     * Set a vec3 in the shader from a Color3.
     * @param name Define the name of the uniform as defined in the shader
     * @param value Define the value to give to the uniform
-    * @return the texture itself allowing "fluent" like uniform updates
+    * @returns the texture itself allowing "fluent" like uniform updates
     */
   def setColor3(name: String, value: Color3): ProceduralTexture = js.native
   
@@ -168,7 +178,7 @@ trait ProceduralTexture
     * Set a vec4 in the shader from a Color4.
     * @param name Define the name of the uniform as defined in the shader
     * @param value Define the value to give to the uniform
-    * @return the texture itself allowing "fluent" like uniform updates
+    * @returns the texture itself allowing "fluent" like uniform updates
     */
   def setColor4(name: String, value: Color4): ProceduralTexture = js.native
   
@@ -176,7 +186,7 @@ trait ProceduralTexture
     * Set a float in the shader.
     * @param name Define the name of the uniform as defined in the shader
     * @param value Define the value to give to the uniform
-    * @return the texture itself allowing "fluent" like uniform updates
+    * @returns the texture itself allowing "fluent" like uniform updates
     */
   def setFloat(name: String, value: Double): ProceduralTexture = js.native
   
@@ -184,7 +194,7 @@ trait ProceduralTexture
     * Set an array of floats in the shader.
     * @param name Define the name of the uniform as defined in the shader
     * @param value Define the value to give to the uniform
-    * @return the texture itself allowing "fluent" like uniform updates
+    * @returns the texture itself allowing "fluent" like uniform updates
     */
   def setFloats(name: String, value: js.Array[Double]): ProceduralTexture = js.native
   
@@ -192,13 +202,13 @@ trait ProceduralTexture
     * Set the fragment shader to use in order to render the texture.
     * @param fragment This can be set to a path (into the shader store) or to a json object containing a fragmentElement property.
     */
-  def setFragment(fragment: js.Any): Unit = js.native
+  def setFragment(fragment: Any): Unit = js.native
   
   /**
     * Set a int in the shader.
     * @param name Define the name of the uniform as defined in the shader
     * @param value Define the value to give to the uniform
-    * @return the texture itself allowing "fluent" like uniform updates
+    * @returns the texture itself allowing "fluent" like uniform updates
     */
   def setInt(name: String, value: Double): ProceduralTexture = js.native
   
@@ -206,7 +216,7 @@ trait ProceduralTexture
     * Set a mat4 in the shader from a MAtrix.
     * @param name Define the name of the uniform as defined in the shader
     * @param value Define the value to give to the uniform
-    * @return the texture itself allowing "fluent" like uniform updates
+    * @returns the texture itself allowing "fluent" like uniform updates
     */
   def setMatrix(name: String, value: Matrix): ProceduralTexture = js.native
   
@@ -214,7 +224,7 @@ trait ProceduralTexture
     * Set a texture in the shader program used to render.
     * @param name Define the name of the uniform samplers as defined in the shader
     * @param texture Define the texture to bind to this sampler
-    * @return the texture itself allowing "fluent" like uniform updates
+    * @returns the texture itself allowing "fluent" like uniform updates
     */
   def setTexture(name: String, texture: Texture): ProceduralTexture = js.native
   
@@ -222,7 +232,7 @@ trait ProceduralTexture
     * Set a vec2 in the shader from a Vector2.
     * @param name Define the name of the uniform as defined in the shader
     * @param value Define the value to give to the uniform
-    * @return the texture itself allowing "fluent" like uniform updates
+    * @returns the texture itself allowing "fluent" like uniform updates
     */
   def setVector2(name: String, value: Vector2): ProceduralTexture = js.native
   
@@ -230,7 +240,7 @@ trait ProceduralTexture
     * Set a vec3 in the shader from a Vector3.
     * @param name Define the name of the uniform as defined in the shader
     * @param value Define the value to give to the uniform
-    * @return the texture itself allowing "fluent" like uniform updates
+    * @returns the texture itself allowing "fluent" like uniform updates
     */
   def setVector3(name: String, value: Vector3): ProceduralTexture = js.native
 }

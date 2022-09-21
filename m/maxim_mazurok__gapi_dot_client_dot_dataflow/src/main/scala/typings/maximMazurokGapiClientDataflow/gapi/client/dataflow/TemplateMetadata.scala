@@ -36,6 +36,6 @@ object TemplateMetadata {
     
     inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    inline def setParametersVarargs(value: ParameterMetadata*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: ParameterMetadata*): Self = StObject.set(x, "parameters", js.Array(value*))
   }
 }

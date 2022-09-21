@@ -10,10 +10,10 @@ More than 130 Handlebars helpers in ~20 categories. Helpers can be used with Ass
 | ------------------ | :-------------: |
 | Full name          | handlebars-helpers |
 | Keywords           | array, assemble, collection, comparison, date, handlebars, helper, helpers, html, i18n, inflection, log, logging, markdown, math, number, object, path, repeat, string, template, time, url, util, utility |
-| # releases         | 0 |
-| # dependents       | 220 |
-| # downloads        | 6156414 |
-| # stars            | 22 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 426599.0 |
+| # stars            | 2063.0 |
 
 ## Links
 - [Homepage](https://github.com/helpers/handlebars-helpers)

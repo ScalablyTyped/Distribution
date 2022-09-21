@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("collect-v8-coverage", "CoverageInstrumenter")
   @js.native
-  class CoverageInstrumenter () extends StObject {
+  open class CoverageInstrumenter () extends StObject {
     
     def startInstrumenting(): js.Promise[Unit] = js.native
     

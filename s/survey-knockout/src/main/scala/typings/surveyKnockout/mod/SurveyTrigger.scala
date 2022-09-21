@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "SurveyTrigger")
 @js.native
-class SurveyTrigger () extends Trigger {
+open class SurveyTrigger () extends Trigger {
   
-  val isOnNextPage: Boolean = js.native
+  /* protected */ def isRealExecution(): Boolean = js.native
   
-  val owner: ISurveyTriggerOwner = js.native
+  def owner: ISurveyTriggerOwner = js.native
   
   /* protected */ var ownerValue: ISurveyTriggerOwner = js.native
   

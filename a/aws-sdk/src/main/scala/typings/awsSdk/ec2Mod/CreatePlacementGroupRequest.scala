@@ -22,6 +22,11 @@ trait CreatePlacementGroupRequest extends StObject {
   var PartitionCount: js.UndefOr[Integer] = js.undefined
   
   /**
+    * Determines how placement groups spread instances.    Host – You can use host only with Outpost placement groups.   Rack – No usage restrictions.  
+    */
+  var SpreadLevel: js.UndefOr[typings.awsSdk.ec2Mod.SpreadLevel] = js.undefined
+  
+  /**
     * The placement strategy.
     */
   var Strategy: js.UndefOr[PlacementStrategy] = js.undefined
@@ -52,6 +57,10 @@ object CreatePlacementGroupRequest {
     
     inline def setPartitionCountUndefined: Self = StObject.set(x, "PartitionCount", js.undefined)
     
+    inline def setSpreadLevel(value: SpreadLevel): Self = StObject.set(x, "SpreadLevel", value.asInstanceOf[js.Any])
+    
+    inline def setSpreadLevelUndefined: Self = StObject.set(x, "SpreadLevel", js.undefined)
+    
     inline def setStrategy(value: PlacementStrategy): Self = StObject.set(x, "Strategy", value.asInstanceOf[js.Any])
     
     inline def setStrategyUndefined: Self = StObject.set(x, "Strategy", js.undefined)
@@ -60,6 +69,6 @@ object CreatePlacementGroupRequest {
     
     inline def setTagSpecificationsUndefined: Self = StObject.set(x, "TagSpecifications", js.undefined)
     
-    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value :_*))
+    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value*))
   }
 }

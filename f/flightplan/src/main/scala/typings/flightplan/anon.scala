@@ -8,18 +8,18 @@ object anon {
   
   trait Exec extends StObject {
     
-    var exec: js.Any
+    var exec: Any
   }
   object Exec {
     
-    inline def apply(exec: js.Any): Exec = {
+    inline def apply(exec: Any): Exec = {
       val __obj = js.Dynamic.literal(exec = exec.asInstanceOf[js.Any])
       __obj.asInstanceOf[Exec]
     }
     
     extension [Self <: Exec](x: Self) {
       
-      inline def setExec(value: js.Any): Self = StObject.set(x, "exec", value.asInstanceOf[js.Any])
+      inline def setExec(value: Any): Self = StObject.set(x, "exec", value.asInstanceOf[js.Any])
     }
   }
 }

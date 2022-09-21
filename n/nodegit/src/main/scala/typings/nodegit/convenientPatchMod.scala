@@ -10,7 +10,7 @@ object convenientPatchMod {
   
   @JSImport("nodegit/convenient-patch", "ConvenientPatch")
   @js.native
-  class ConvenientPatch () extends StObject {
+  open class ConvenientPatch () extends StObject {
     
     /**
       * The hunks in this patch
@@ -75,7 +75,7 @@ object convenientPatchMod {
     /**
       * The line statistics of this patch (#contexts, #added, #deleted)
       */
-    def lineStats(): js.Any = js.native
+    def lineStats(): Any = js.native
     
     /**
       * New attributes of the file

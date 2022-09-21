@@ -29,12 +29,12 @@ object BatchGetAggregateResourceConfigResponse {
     
     inline def setBaseConfigurationItemsUndefined: Self = StObject.set(x, "BaseConfigurationItems", js.undefined)
     
-    inline def setBaseConfigurationItemsVarargs(value: BaseConfigurationItem*): Self = StObject.set(x, "BaseConfigurationItems", js.Array(value :_*))
+    inline def setBaseConfigurationItemsVarargs(value: BaseConfigurationItem*): Self = StObject.set(x, "BaseConfigurationItems", js.Array(value*))
     
     inline def setUnprocessedResourceIdentifiers(value: UnprocessedResourceIdentifierList): Self = StObject.set(x, "UnprocessedResourceIdentifiers", value.asInstanceOf[js.Any])
     
     inline def setUnprocessedResourceIdentifiersUndefined: Self = StObject.set(x, "UnprocessedResourceIdentifiers", js.undefined)
     
-    inline def setUnprocessedResourceIdentifiersVarargs(value: AggregateResourceIdentifier*): Self = StObject.set(x, "UnprocessedResourceIdentifiers", js.Array(value :_*))
+    inline def setUnprocessedResourceIdentifiersVarargs(value: AggregateResourceIdentifier*): Self = StObject.set(x, "UnprocessedResourceIdentifiers", js.Array(value*))
   }
 }

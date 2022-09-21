@@ -42,7 +42,7 @@ object ISearchResult {
     
     inline def setQSearchTerms(value: js.Array[String]): Self = StObject.set(x, "qSearchTerms", value.asInstanceOf[js.Any])
     
-    inline def setQSearchTermsVarargs(value: String*): Self = StObject.set(x, "qSearchTerms", js.Array(value :_*))
+    inline def setQSearchTermsVarargs(value: String*): Self = StObject.set(x, "qSearchTerms", js.Array(value*))
     
     inline def setQTotalNumberOfGroups(value: Double): Self = StObject.set(x, "qTotalNumberOfGroups", value.asInstanceOf[js.Any])
   }

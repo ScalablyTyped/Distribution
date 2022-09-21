@@ -10,7 +10,7 @@ object signatureMod {
   
   @JSImport("nodegit/signature", "Signature")
   @js.native
-  class Signature () extends StObject {
+  open class Signature () extends StObject {
     
     def dup(): js.Promise[Signature] = js.native
     
@@ -29,7 +29,7 @@ object signatureMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def default(repo: Repository): Signature = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(repo.asInstanceOf[js.Any]).asInstanceOf[Signature]
+    inline def default(repo: Repository): js.Promise[Signature] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Signature]]
     
     inline def create(name: String, email: String, time: Double, offset: Double): Signature = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], email.asInstanceOf[js.Any], time.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Signature]
     

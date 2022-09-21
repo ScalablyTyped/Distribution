@@ -30,6 +30,19 @@ trait SeriesMapDataOptions extends StObject {
   var events: js.UndefOr[PointEventsOptionsObject] = js.undefined
   
   /**
+    * (Highmaps) For map and mapline series types, the geometry of a point.
+    *
+    * To achieve a better separation between the structure and the data, it is
+    * recommended to use `mapData` to define the geometry instead of defining
+    * it on the data points themselves.
+    *
+    * The geometry object is compatible to that of a `feature` in geoJSON, so
+    * features of geoJSON can be passed directly into the `data`, optionally
+    * after first filtering and processing it.
+    */
+  var geometry: js.UndefOr[js.Object | SeriesMapDataGeometryOptions] = js.undefined
+  
+  /**
     * (Highmaps) An id for the point. This can be used after render time to get
     * a pointer to the point object through `chart.get()`.
     */
@@ -71,6 +84,9 @@ trait SeriesMapDataOptions extends StObject {
     * To achieve a better separation between the structure and the data, it is
     * recommended to use `mapData` to define that paths instead of defining
     * them on the data points themselves.
+    *
+    * For providing true geographical shapes based on longitude and latitude,
+    * use the `geometry` option instead.
     */
   var path: js.UndefOr[String] = js.undefined
   
@@ -103,6 +119,10 @@ object SeriesMapDataOptions {
     inline def setEvents(value: PointEventsOptionsObject): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    
+    inline def setGeometry(value: js.Object | SeriesMapDataGeometryOptions): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+    
+    inline def setGeometryUndefined: Self = StObject.set(x, "geometry", js.undefined)
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

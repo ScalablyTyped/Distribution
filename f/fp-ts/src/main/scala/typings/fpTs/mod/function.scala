@@ -1,7 +1,13 @@
 package typings.fpTs.mod
 
+import typings.fpTs.booleanAlgebraMod.BooleanAlgebra
+import typings.fpTs.functionMod.Endomorphism
 import typings.fpTs.functionMod.Lazy
 import typings.fpTs.functionMod.Predicate
+import typings.fpTs.monoidMod.Monoid
+import typings.fpTs.ringMod.Ring
+import typings.fpTs.semigroupMod.Semigroup
+import typings.fpTs.semiringMod.Semiring
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,17 +18,31 @@ object function {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def SK[A, B](_underscore: A, b: B): B = (^.asInstanceOf[js.Dynamic].applyDynamic("SK")(_underscore.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[B]
+  
   inline def absurd[A](_underscore: scala.Nothing): A = ^.asInstanceOf[js.Dynamic].applyDynamic("absurd")(_underscore.asInstanceOf[js.Any]).asInstanceOf[A]
   
-  inline def constFalse(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("constFalse")().asInstanceOf[Boolean]
+  inline def apply[A](a: A): js.Function1[/* f */ js.Function1[/* a */ A, Any], Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("apply")(a.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* f */ js.Function1[/* a */ A, Any], Any]]
   
-  inline def constNull(): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("constNull")().asInstanceOf[Null]
+  @JSImport("fp-ts", "function.constFalse")
+  @js.native
+  val constFalse: Lazy[Boolean] = js.native
   
-  inline def constTrue(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("constTrue")().asInstanceOf[Boolean]
+  @JSImport("fp-ts", "function.constNull")
+  @js.native
+  val constNull: Lazy[Null] = js.native
   
-  inline def constUndefined(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("constUndefined")().asInstanceOf[Unit]
+  @JSImport("fp-ts", "function.constTrue")
+  @js.native
+  val constTrue: Lazy[Boolean] = js.native
   
-  inline def constVoid(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("constVoid")().asInstanceOf[Unit]
+  @JSImport("fp-ts", "function.constUndefined")
+  @js.native
+  val constUndefined: Lazy[Unit] = js.native
+  
+  @JSImport("fp-ts", "function.constVoid")
+  @js.native
+  val constVoid: Lazy[Unit] = js.native
   
   inline def constant[A](a: A): Lazy[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("constant")(a.asInstanceOf[js.Any]).asInstanceOf[Lazy[A]]
   
@@ -30,23 +50,23 @@ object function {
   
   inline def flip[A, B, C](f: js.Function2[/* a */ A, /* b */ B, C]): js.Function2[/* b */ B, /* a */ A, C] = ^.asInstanceOf[js.Dynamic].applyDynamic("flip")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* b */ B, /* a */ A, C]]
   
-  inline def flow[A /* <: js.Array[js.Any] */, B](ab: js.Function1[/* a */ A, B]): js.Function1[/* a */ A, B] = ^.asInstanceOf[js.Dynamic].applyDynamic("flow")(ab.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, B]]
-  inline def flow[A /* <: js.Array[js.Any] */, B, C](ab: js.Function1[/* a */ A, B], bc: js.Function1[/* b */ B, C]): js.Function1[/* a */ A, C] = (^.asInstanceOf[js.Dynamic].applyDynamic("flow")(ab.asInstanceOf[js.Any], bc.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* a */ A, C]]
-  inline def flow[A /* <: js.Array[js.Any] */, B, C, D](ab: js.Function1[/* a */ A, B], bc: js.Function1[/* b */ B, C], cd: js.Function1[/* c */ C, D]): js.Function1[/* a */ A, D] = (^.asInstanceOf[js.Dynamic].applyDynamic("flow")(ab.asInstanceOf[js.Any], bc.asInstanceOf[js.Any], cd.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* a */ A, D]]
-  inline def flow[A /* <: js.Array[js.Any] */, B, C, D, E](
+  inline def flow[A /* <: js.Array[Any] */, B](ab: js.Function1[/* a */ A, B]): js.Function1[/* a */ A, B] = ^.asInstanceOf[js.Dynamic].applyDynamic("flow")(ab.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, B]]
+  inline def flow[A /* <: js.Array[Any] */, B, C](ab: js.Function1[/* a */ A, B], bc: js.Function1[/* b */ B, C]): js.Function1[/* a */ A, C] = (^.asInstanceOf[js.Dynamic].applyDynamic("flow")(ab.asInstanceOf[js.Any], bc.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* a */ A, C]]
+  inline def flow[A /* <: js.Array[Any] */, B, C, D](ab: js.Function1[/* a */ A, B], bc: js.Function1[/* b */ B, C], cd: js.Function1[/* c */ C, D]): js.Function1[/* a */ A, D] = (^.asInstanceOf[js.Dynamic].applyDynamic("flow")(ab.asInstanceOf[js.Any], bc.asInstanceOf[js.Any], cd.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* a */ A, D]]
+  inline def flow[A /* <: js.Array[Any] */, B, C, D, E](
     ab: js.Function1[/* a */ A, B],
     bc: js.Function1[/* b */ B, C],
     cd: js.Function1[/* c */ C, D],
     de: js.Function1[/* d */ D, E]
   ): js.Function1[/* a */ A, E] = (^.asInstanceOf[js.Dynamic].applyDynamic("flow")(ab.asInstanceOf[js.Any], bc.asInstanceOf[js.Any], cd.asInstanceOf[js.Any], de.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* a */ A, E]]
-  inline def flow[A /* <: js.Array[js.Any] */, B, C, D, E, F](
+  inline def flow[A /* <: js.Array[Any] */, B, C, D, E, F](
     ab: js.Function1[/* a */ A, B],
     bc: js.Function1[/* b */ B, C],
     cd: js.Function1[/* c */ C, D],
     de: js.Function1[/* d */ D, E],
     ef: js.Function1[/* e */ E, F]
   ): js.Function1[/* a */ A, F] = (^.asInstanceOf[js.Dynamic].applyDynamic("flow")(ab.asInstanceOf[js.Any], bc.asInstanceOf[js.Any], cd.asInstanceOf[js.Any], de.asInstanceOf[js.Any], ef.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* a */ A, F]]
-  inline def flow[A /* <: js.Array[js.Any] */, B, C, D, E, F, G](
+  inline def flow[A /* <: js.Array[Any] */, B, C, D, E, F, G](
     ab: js.Function1[/* a */ A, B],
     bc: js.Function1[/* b */ B, C],
     cd: js.Function1[/* c */ C, D],
@@ -54,7 +74,7 @@ object function {
     ef: js.Function1[/* e */ E, F],
     fg: js.Function1[/* f */ F, G]
   ): js.Function1[/* a */ A, G] = (^.asInstanceOf[js.Dynamic].applyDynamic("flow")(ab.asInstanceOf[js.Any], bc.asInstanceOf[js.Any], cd.asInstanceOf[js.Any], de.asInstanceOf[js.Any], ef.asInstanceOf[js.Any], fg.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* a */ A, G]]
-  inline def flow[A /* <: js.Array[js.Any] */, B, C, D, E, F, G, H](
+  inline def flow[A /* <: js.Array[Any] */, B, C, D, E, F, G, H](
     ab: js.Function1[/* a */ A, B],
     bc: js.Function1[/* b */ B, C],
     cd: js.Function1[/* c */ C, D],
@@ -63,7 +83,7 @@ object function {
     fg: js.Function1[/* f */ F, G],
     gh: js.Function1[/* g */ G, H]
   ): js.Function1[/* a */ A, H] = (^.asInstanceOf[js.Dynamic].applyDynamic("flow")(ab.asInstanceOf[js.Any], bc.asInstanceOf[js.Any], cd.asInstanceOf[js.Any], de.asInstanceOf[js.Any], ef.asInstanceOf[js.Any], fg.asInstanceOf[js.Any], gh.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* a */ A, H]]
-  inline def flow[A /* <: js.Array[js.Any] */, B, C, D, E, F, G, H, I](
+  inline def flow[A /* <: js.Array[Any] */, B, C, D, E, F, G, H, I](
     ab: js.Function1[/* a */ A, B],
     bc: js.Function1[/* b */ B, C],
     cd: js.Function1[/* c */ C, D],
@@ -73,7 +93,7 @@ object function {
     gh: js.Function1[/* g */ G, H],
     hi: js.Function1[/* h */ H, I]
   ): js.Function1[/* a */ A, I] = (^.asInstanceOf[js.Dynamic].applyDynamic("flow")(ab.asInstanceOf[js.Any], bc.asInstanceOf[js.Any], cd.asInstanceOf[js.Any], de.asInstanceOf[js.Any], ef.asInstanceOf[js.Any], fg.asInstanceOf[js.Any], gh.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* a */ A, I]]
-  inline def flow[A /* <: js.Array[js.Any] */, B, C, D, E, F, G, H, I, J](
+  inline def flow[A /* <: js.Array[Any] */, B, C, D, E, F, G, H, I, J](
     ab: js.Function1[/* a */ A, B],
     bc: js.Function1[/* b */ B, C],
     cd: js.Function1[/* c */ C, D],
@@ -84,6 +104,18 @@ object function {
     hi: js.Function1[/* h */ H, I],
     ij: js.Function1[/* i */ I, J]
   ): js.Function1[/* a */ A, J] = (^.asInstanceOf[js.Dynamic].applyDynamic("flow")(ab.asInstanceOf[js.Any], bc.asInstanceOf[js.Any], cd.asInstanceOf[js.Any], de.asInstanceOf[js.Any], ef.asInstanceOf[js.Any], fg.asInstanceOf[js.Any], gh.asInstanceOf[js.Any], hi.asInstanceOf[js.Any], ij.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* a */ A, J]]
+  
+  inline def getBooleanAlgebra[B](B: BooleanAlgebra[B]): js.Function0[BooleanAlgebra[js.Function1[/* a */ scala.Nothing, B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBooleanAlgebra")(B.asInstanceOf[js.Any]).asInstanceOf[js.Function0[BooleanAlgebra[js.Function1[/* a */ scala.Nothing, B]]]]
+  
+  inline def getEndomorphismMonoid[A](): Monoid[Endomorphism[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEndomorphismMonoid")().asInstanceOf[Monoid[Endomorphism[A]]]
+  
+  inline def getMonoid[M](M: Monoid[M]): js.Function0[Monoid[js.Function1[/* a */ scala.Nothing, M]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMonoid")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Monoid[js.Function1[/* a */ scala.Nothing, M]]]]
+  
+  inline def getRing[A, B](R: Ring[B]): Ring[js.Function1[/* a */ A, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRing")(R.asInstanceOf[js.Any]).asInstanceOf[Ring[js.Function1[/* a */ A, B]]]
+  
+  inline def getSemigroup[S](S: Semigroup[S]): js.Function0[Semigroup[js.Function1[/* a */ scala.Nothing, S]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSemigroup")(S.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Semigroup[js.Function1[/* a */ scala.Nothing, S]]]]
+  
+  inline def getSemiring[A, B](S: Semiring[B]): Semiring[js.Function1[/* a */ A, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSemiring")(S.asInstanceOf[js.Any]).asInstanceOf[Semiring[js.Function1[/* a */ A, B]]]
   
   inline def hole[T](): T = ^.asInstanceOf[js.Dynamic].applyDynamic("hole")().asInstanceOf[T]
   
@@ -335,13 +367,13 @@ object function {
     st: js.Function1[/* s */ S, T]
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(a.asInstanceOf[js.Any], ab.asInstanceOf[js.Any], bc.asInstanceOf[js.Any], cd.asInstanceOf[js.Any], de.asInstanceOf[js.Any], ef.asInstanceOf[js.Any], fg.asInstanceOf[js.Any], gh.asInstanceOf[js.Any], hi.asInstanceOf[js.Any], ij.asInstanceOf[js.Any], jk.asInstanceOf[js.Any], kl.asInstanceOf[js.Any], lm.asInstanceOf[js.Any], mn.asInstanceOf[js.Any], no.asInstanceOf[js.Any], op.asInstanceOf[js.Any], pq.asInstanceOf[js.Any], qr.asInstanceOf[js.Any], rs.asInstanceOf[js.Any], st.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  inline def tuple[T /* <: js.Array[js.Any] */](
+  inline def tuple[T /* <: js.Array[Any] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param t because its type T is not an array type */ t: T
   ): T = ^.asInstanceOf[js.Dynamic].applyDynamic("tuple")(t.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  inline def tupled[A /* <: js.Array[js.Any] */, B](f: js.Function1[/* a */ A, B]): js.Function1[/* a */ A, B] = ^.asInstanceOf[js.Dynamic].applyDynamic("tupled")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, B]]
+  inline def tupled[A /* <: js.Array[Any] */, B](f: js.Function1[/* a */ A, B]): js.Function1[/* a */ A, B] = ^.asInstanceOf[js.Dynamic].applyDynamic("tupled")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, B]]
   
   inline def unsafeCoerce[A, B](a: A): B = ^.asInstanceOf[js.Dynamic].applyDynamic("unsafeCoerce")(a.asInstanceOf[js.Any]).asInstanceOf[B]
   
-  inline def untupled[A /* <: js.Array[js.Any] */, B](f: js.Function1[/* a */ A, B]): js.Function1[/* a */ A, B] = ^.asInstanceOf[js.Dynamic].applyDynamic("untupled")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, B]]
+  inline def untupled[A /* <: js.Array[Any] */, B](f: js.Function1[/* a */ A, B]): js.Function1[/* a */ A, B] = ^.asInstanceOf[js.Dynamic].applyDynamic("untupled")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, B]]
 }

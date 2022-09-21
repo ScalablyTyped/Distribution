@@ -17,7 +17,5 @@ object utilMod {
   inline def getMotionName(prefixCls: String, transitionName: String, animationName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getMotionName")(prefixCls.asInstanceOf[js.Any], transitionName.asInstanceOf[js.Any], animationName.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def getMotionName(prefixCls: String, transitionName: Unit, animationName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getMotionName")(prefixCls.asInstanceOf[js.Any], transitionName.asInstanceOf[js.Any], animationName.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def getUUID(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getUUID")().asInstanceOf[Double]
-  
   inline def offset(el: Element): Left = ^.asInstanceOf[js.Dynamic].applyDynamic("offset")(el.asInstanceOf[js.Any]).asInstanceOf[Left]
 }

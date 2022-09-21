@@ -9,6 +9,8 @@ trait SubSurfaceBlock
   extends StObject
      with NodeMaterialBlock {
   
+  def autoConfigure(): Unit = js.native
+  
   /**
     * Gets the refraction object parameters
     */

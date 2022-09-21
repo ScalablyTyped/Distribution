@@ -49,7 +49,7 @@ trait FileExtensionVector
     */
   def getView(): IVectorView[String] = js.native
   
-  def indexOf(value: String, extra: js.Any*): Index = js.native
+  def indexOf(value: String, extra: Any*): Index = js.native
   /* hack */
   @JSName("indexOf")
   def indexOf_Double(searchElement: String): Double = js.native

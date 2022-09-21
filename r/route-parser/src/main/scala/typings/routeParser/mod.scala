@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("route-parser", JSImport.Namespace)
   @js.native
-  class ^[TParams /* <: js.Object */] protected ()
+  open class ^[TParams /* <: js.Object */] protected ()
     extends StObject
        with Route[TParams] {
     /**
@@ -35,7 +35,7 @@ object mod {
     /* CompleteClass */
     override def `match`(pathname: String): (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ k in keyof TParams ]: string}
-      */ typings.routeParser.routeParserStrings.Route & TopLevel[js.Any]) | `false` = js.native
+      */ typings.routeParser.routeParserStrings.Route & TopLevel[Any]) | `false` = js.native
     
     /**
       * Reverse a route specification to a path, returning false if it can't be
@@ -62,7 +62,7 @@ object mod {
       */
     def `match`(pathname: String): (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ k in keyof TParams ]: string}
-      */ typings.routeParser.routeParserStrings.Route & TopLevel[js.Any]) | `false`
+      */ typings.routeParser.routeParserStrings.Route & TopLevel[Any]) | `false`
     
     /**
       * Reverse a route specification to a path, returning false if it can't be
@@ -78,7 +78,7 @@ object mod {
     inline def apply[TParams /* <: js.Object */](
       `match`: String => (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ k in keyof TParams ]: string}
-      */ typings.routeParser.routeParserStrings.Route & TopLevel[js.Any]) | `false`,
+      */ typings.routeParser.routeParserStrings.Route & TopLevel[Any]) | `false`,
       reverse: TParams => String | `false`
     ): Route[TParams] = {
       val __obj = js.Dynamic.literal(reverse = js.Any.fromFunction1(reverse))
@@ -91,7 +91,7 @@ object mod {
       inline def setMatch(
         value: String => (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ k in keyof TParams ]: string}
-        */ typings.routeParser.routeParserStrings.Route & TopLevel[js.Any]) | `false`
+        */ typings.routeParser.routeParserStrings.Route & TopLevel[Any]) | `false`
       ): Self = StObject.set(x, "match", js.Any.fromFunction1(value))
       
       inline def setReverse(value: TParams => String | `false`): Self = StObject.set(x, "reverse", js.Any.fromFunction1(value))

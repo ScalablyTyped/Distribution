@@ -3,12 +3,15 @@ package typings.rcPicker
 import typings.rcPicker.interfaceMod.CustomFormat
 import typings.rcPicker.interfaceMod.Locale
 import typings.rcPicker.interfaceMod.NullableDateType
+import typings.rcPicker.interfaceMod.PanelMode
 import typings.rcPicker.interfaceMod.PickerMode
 import typings.rcPicker.interfaceMod.RangeValue
+import typings.rcPicker.rcPickerStrings.time
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.KeyboardEvent
 import typings.std.EventTarget
 import typings.std.HTMLInputElement
+import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,6 +34,8 @@ object anon {
     
     var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.native
     
+    def onKeyDown(e: KeyboardEvent[HTMLInputElement], preventDefault: js.Function0[Unit]): Unit = js.native
+    
     def onSubmit(): Unit | Boolean = js.native
     
     var open: Boolean = js.native
@@ -38,6 +43,41 @@ object anon {
     def triggerOpen(open: Boolean): Unit = js.native
     
     var value: String = js.native
+  }
+  
+  trait CellDate[DateType] extends StObject {
+    
+    var cellDate: DateType
+    
+    var disabledDate: js.UndefOr[js.Function1[/* date */ DateType, Boolean]] = js.undefined
+    
+    var generateConfig: typings.rcPicker.generateMod.GenerateConfig[DateType]
+    
+    var mode: Omit[PanelMode, time]
+  }
+  object CellDate {
+    
+    inline def apply[DateType](
+      cellDate: DateType,
+      generateConfig: typings.rcPicker.generateMod.GenerateConfig[DateType],
+      mode: Omit[PanelMode, time]
+    ): CellDate[DateType] = {
+      val __obj = js.Dynamic.literal(cellDate = cellDate.asInstanceOf[js.Any], generateConfig = generateConfig.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CellDate[DateType]]
+    }
+    
+    extension [Self <: CellDate[?], DateType](x: Self & CellDate[DateType]) {
+      
+      inline def setCellDate(value: DateType): Self = StObject.set(x, "cellDate", value.asInstanceOf[js.Any])
+      
+      inline def setDisabledDate(value: /* date */ DateType => Boolean): Self = StObject.set(x, "disabledDate", js.Any.fromFunction1(value))
+      
+      inline def setDisabledDateUndefined: Self = StObject.set(x, "disabledDate", js.undefined)
+      
+      inline def setGenerateConfig(value: typings.rcPicker.generateMod.GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
+      
+      inline def setMode(value: Omit[PanelMode, time]): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    }
   }
   
   trait CellPrefixCls[DateType] extends StObject {
@@ -225,6 +265,8 @@ object anon {
     
     def getWeek(locale: String, value: DateType): Double
     
+    def getWeekFirstDate(locale: String, value: DateType): DateType
+    
     def getWeekFirstDay(locale: String): Double
     
     /** Should only return validate date instance */
@@ -235,10 +277,11 @@ object anon {
     inline def apply[DateType](
       format: (String, DateType, String) => String,
       getWeek: (String, DateType) => Double,
+      getWeekFirstDate: (String, DateType) => DateType,
       getWeekFirstDay: String => Double,
       parse: (String, String, js.Array[String]) => DateType | Null
     ): Format[DateType] = {
-      val __obj = js.Dynamic.literal(format = js.Any.fromFunction3(format), getWeek = js.Any.fromFunction2(getWeek), getWeekFirstDay = js.Any.fromFunction1(getWeekFirstDay), parse = js.Any.fromFunction3(parse))
+      val __obj = js.Dynamic.literal(format = js.Any.fromFunction3(format), getWeek = js.Any.fromFunction2(getWeek), getWeekFirstDate = js.Any.fromFunction2(getWeekFirstDate), getWeekFirstDay = js.Any.fromFunction1(getWeekFirstDay), parse = js.Any.fromFunction3(parse))
       __obj.asInstanceOf[Format[DateType]]
     }
     
@@ -255,6 +298,8 @@ object anon {
       inline def setGetShortWeekDaysUndefined: Self = StObject.set(x, "getShortWeekDays", js.undefined)
       
       inline def setGetWeek(value: (String, DateType) => Double): Self = StObject.set(x, "getWeek", js.Any.fromFunction2(value))
+      
+      inline def setGetWeekFirstDate(value: (String, DateType) => DateType): Self = StObject.set(x, "getWeekFirstDate", js.Any.fromFunction2(value))
       
       inline def setGetWeekFirstDay(value: String => Double): Self = StObject.set(x, "getWeekFirstDay", js.Any.fromFunction1(value))
       
@@ -285,7 +330,7 @@ object anon {
       
       inline def setFormatList(value: js.Array[String | CustomFormat[DateType]]): Self = StObject.set(x, "formatList", value.asInstanceOf[js.Any])
       
-      inline def setFormatListVarargs(value: (String | CustomFormat[DateType])*): Self = StObject.set(x, "formatList", js.Array(value :_*))
+      inline def setFormatListVarargs(value: (String | CustomFormat[DateType])*): Self = StObject.set(x, "formatList", js.Array(value*))
       
       inline def setGenerateConfig(value: typings.rcPicker.generateMod.GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
       
@@ -373,7 +418,7 @@ object anon {
       
       inline def setValueTexts(value: js.Array[String]): Self = StObject.set(x, "valueTexts", value.asInstanceOf[js.Any])
       
-      inline def setValueTextsVarargs(value: String*): Self = StObject.set(x, "valueTexts", js.Array(value :_*))
+      inline def setValueTextsVarargs(value: String*): Self = StObject.set(x, "valueTexts", js.Array(value*))
     }
   }
 }

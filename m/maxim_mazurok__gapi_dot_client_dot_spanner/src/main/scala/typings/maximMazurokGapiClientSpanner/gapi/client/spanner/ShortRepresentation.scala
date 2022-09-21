@@ -17,7 +17,7 @@ trait ShortRepresentation extends StObject {
   var subqueries: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: number}
-    */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.ShortRepresentation & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.ShortRepresentation & TopLevel[Any]
   ] = js.undefined
 }
 object ShortRepresentation {
@@ -36,7 +36,7 @@ object ShortRepresentation {
     inline def setSubqueries(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: number}
-      */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.ShortRepresentation & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.ShortRepresentation & TopLevel[Any]
     ): Self = StObject.set(x, "subqueries", value.asInstanceOf[js.Any])
     
     inline def setSubqueriesUndefined: Self = StObject.set(x, "subqueries", js.undefined)

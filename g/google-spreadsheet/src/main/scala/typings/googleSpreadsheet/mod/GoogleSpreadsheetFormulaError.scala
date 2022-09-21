@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("google-spreadsheet", "GoogleSpreadsheetFormulaError")
 @js.native
-class GoogleSpreadsheetFormulaError protected ()
+open class GoogleSpreadsheetFormulaError protected ()
   extends StObject
      with CellError {
   def this(errorInfo: CellError) = this()

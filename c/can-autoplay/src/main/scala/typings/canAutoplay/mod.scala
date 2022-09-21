@@ -1,6 +1,5 @@
 package typings.canAutoplay
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,20 +18,20 @@ object mod {
   
   trait CheckResponse extends StObject {
     
-    var error: Error
+    var error: js.Error
     
     var result: Boolean
   }
   object CheckResponse {
     
-    inline def apply(error: Error, result: Boolean): CheckResponse = {
+    inline def apply(error: js.Error, result: Boolean): CheckResponse = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
       __obj.asInstanceOf[CheckResponse]
     }
     
     extension [Self <: CheckResponse](x: Self) {
       
-      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setResult(value: Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     }

@@ -11,9 +11,9 @@ Typings are for version 1.6
 | Full name          | react-typing-animation |
 | Keywords           | react, typing, animation, animated, typewriter, typist, typer |
 | # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 77056 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5558.0 |
+| # stars            | 245.0 |
 
 ## Links
 - [Homepage](https://github.com/adamjking3/react-typing-animation#readme)

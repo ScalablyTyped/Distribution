@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BaseParams extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+  var complete: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+  var fail: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
   
-  var success: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+  var success: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
 }
 object BaseParams {
   
@@ -23,15 +23,15 @@ object BaseParams {
   
   extension [Self <: BaseParams](x: Self) {
     
-    inline def setComplete(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+    inline def setComplete(value: /* repeated */ Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
     inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    inline def setFail(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
+    inline def setFail(value: /* repeated */ Any => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     
     inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
-    inline def setSuccess(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* repeated */ Any => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
     inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }

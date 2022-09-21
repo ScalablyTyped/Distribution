@@ -40,7 +40,7 @@ trait OMathFunction extends StObject {
   
   val OMath: typings.activexWord.Word.OMath
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Phantom: OMathPhantom
   
@@ -83,7 +83,7 @@ object OMathFunction {
     Mat: OMathMat,
     Nary: OMathNary,
     OMath: OMath,
-    Parent: js.Any,
+    Parent: Any,
     Phantom: OMathPhantom,
     Rad: OMathRad,
     Range: Range,
@@ -136,7 +136,7 @@ object OMathFunction {
     
     inline def setOMath(value: OMath): Self = StObject.set(x, "OMath", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPhantom(value: OMathPhantom): Self = StObject.set(x, "Phantom", value.asInstanceOf[js.Any])
     

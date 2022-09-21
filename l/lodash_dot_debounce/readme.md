@@ -10,10 +10,10 @@ The lodash method `_.debounce` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.debounce |
 | Keywords           | lodash-modularized, debounce |
-| # releases         | 0 |
-| # dependents       | 2073 |
-| # downloads        | 219608671 |
-| # stars            | 7 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6.2661598333333336E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

@@ -10,25 +10,27 @@ object cancellationTokenMod {
   
   @JSImport("builder-util-runtime/out/CancellationToken", "CancellationError")
   @js.native
-  class CancellationError ()
+  open class CancellationError ()
     extends StObject
        with Error {
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("builder-util-runtime/out/CancellationToken", "CancellationToken")
   @js.native
-  class CancellationToken () extends EventEmitter {
+  open class CancellationToken () extends EventEmitter {
     def this(parent: CancellationToken) = this()
     
-    /* private */ var _cancelled: js.Any = js.native
+    /* private */ var _cancelled: Any = js.native
     
-    /* private */ var _parent: js.Any = js.native
+    /* private */ var _parent: Any = js.native
     
     def cancel(): Unit = js.native
     
@@ -36,8 +38,8 @@ object cancellationTokenMod {
     
     def createPromise[R](
       callback: js.Function3[
-          /* resolve */ js.Function1[/* thenableOrResult */ js.UndefOr[R], Unit], 
-          /* reject */ js.Function1[/* error */ Error, Unit], 
+          /* resolve */ js.Function1[/* thenableOrResult */ R | js.Thenable[R], Unit], 
+          /* reject */ js.Function1[/* error */ js.Error, Unit], 
           /* onCancel */ js.Function1[/* callback */ js.Function0[Unit], Unit], 
           Unit
         ]
@@ -45,12 +47,12 @@ object cancellationTokenMod {
     
     def dispose(): Unit = js.native
     
-    /* private */ var onCancel: js.Any = js.native
+    /* private */ var onCancel: Any = js.native
     
-    /* private */ var parentCancelHandler: js.Any = js.native
+    /* private */ var parentCancelHandler: Any = js.native
     
     def parent_=(value: CancellationToken): Unit = js.native
     
-    /* private */ var removeParentCancelHandler: js.Any = js.native
+    /* private */ var removeParentCancelHandler: Any = js.native
   }
 }

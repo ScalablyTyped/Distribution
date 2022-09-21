@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientPrivateca.anon
 
+import typings.maximMazurokGapiClientPrivateca.gapi.client.privateca.CertificateAuthority
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,20 +20,17 @@ trait RequestId extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
-  /** Required. It must be unique within a location and match the regular expression `[a-zA-Z0-9_-]{1,63}` */
-  var certificateAuthorityId: js.UndefOr[String] = js.undefined
-  
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
+  /** Output only. The resource name for this CertificateAuthority in the format `projects/ *‍/locations/ *‍/caPools/ *‍/certificateAuthorities/ *`. */
+  var name: String
+  
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
-  
-  /** Required. The resource name of the location associated with the CertificateAuthorities, in the format `projects/∗/locations/ *`. */
-  var parent: String
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
@@ -49,6 +47,12 @@ trait RequestId extends StObject {
     */
   var requestId: js.UndefOr[String] = js.undefined
   
+  /** Request body */
+  var resource: CertificateAuthority
+  
+  /** Required. A list of fields to be updated in this request. */
+  var updateMask: js.UndefOr[String] = js.undefined
+  
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
   
@@ -57,8 +61,8 @@ trait RequestId extends StObject {
 }
 object RequestId {
   
-  inline def apply(parent: String): RequestId = {
-    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
+  inline def apply(name: String, resource: CertificateAuthority): RequestId = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestId]
   }
   
@@ -80,10 +84,6 @@ object RequestId {
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
-    inline def setCertificateAuthorityId(value: String): Self = StObject.set(x, "certificateAuthorityId", value.asInstanceOf[js.Any])
-    
-    inline def setCertificateAuthorityIdUndefined: Self = StObject.set(x, "certificateAuthorityId", js.undefined)
-    
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
@@ -92,11 +92,11 @@ object RequestId {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
-    
-    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
@@ -109,6 +109,12 @@ object RequestId {
     inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
     inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+    
+    inline def setResource(value: CertificateAuthority): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

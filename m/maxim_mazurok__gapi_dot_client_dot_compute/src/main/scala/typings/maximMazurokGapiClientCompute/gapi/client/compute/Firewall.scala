@@ -54,12 +54,9 @@ trait Firewall extends StObject {
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * URL of the network resource for this firewall rule. If not specified when creating a firewall rule, the default network is used:
-    * global/networks/default
-    * If you choose to specify this field, you can specify the network as a full or partial URL. For example, the following are all valid URLs:
-    * - https://www.googleapis.com/compute/v1/projects/myproject/global/networks/my-network
-    * - projects/myproject/global/networks/my-network
-    * - global/networks/default
+    * URL of the network resource for this firewall rule. If not specified when creating a firewall rule, the default network is used: global/networks/default If you choose to specify
+    * this field, you can specify the network as a full or partial URL. For example, the following are all valid URLs: -
+    * https://www.googleapis.com/compute/v1/projects/myproject/global/networks/my-network - projects/myproject/global/networks/my-network - global/networks/default
     */
   var network: js.UndefOr[String] = js.undefined
   
@@ -124,7 +121,7 @@ object Firewall {
     
     inline def setAllowedUndefined: Self = StObject.set(x, "allowed", js.undefined)
     
-    inline def setAllowedVarargs(value: IPProtocol*): Self = StObject.set(x, "allowed", js.Array(value :_*))
+    inline def setAllowedVarargs(value: IPProtocol*): Self = StObject.set(x, "allowed", js.Array(value*))
     
     inline def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
     
@@ -134,7 +131,7 @@ object Firewall {
     
     inline def setDeniedUndefined: Self = StObject.set(x, "denied", js.undefined)
     
-    inline def setDeniedVarargs(value: IPProtocol*): Self = StObject.set(x, "denied", js.Array(value :_*))
+    inline def setDeniedVarargs(value: IPProtocol*): Self = StObject.set(x, "denied", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -144,7 +141,7 @@ object Firewall {
     
     inline def setDestinationRangesUndefined: Self = StObject.set(x, "destinationRanges", js.undefined)
     
-    inline def setDestinationRangesVarargs(value: String*): Self = StObject.set(x, "destinationRanges", js.Array(value :_*))
+    inline def setDestinationRangesVarargs(value: String*): Self = StObject.set(x, "destinationRanges", js.Array(value*))
     
     inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
@@ -186,30 +183,30 @@ object Firewall {
     
     inline def setSourceRangesUndefined: Self = StObject.set(x, "sourceRanges", js.undefined)
     
-    inline def setSourceRangesVarargs(value: String*): Self = StObject.set(x, "sourceRanges", js.Array(value :_*))
+    inline def setSourceRangesVarargs(value: String*): Self = StObject.set(x, "sourceRanges", js.Array(value*))
     
     inline def setSourceServiceAccounts(value: js.Array[String]): Self = StObject.set(x, "sourceServiceAccounts", value.asInstanceOf[js.Any])
     
     inline def setSourceServiceAccountsUndefined: Self = StObject.set(x, "sourceServiceAccounts", js.undefined)
     
-    inline def setSourceServiceAccountsVarargs(value: String*): Self = StObject.set(x, "sourceServiceAccounts", js.Array(value :_*))
+    inline def setSourceServiceAccountsVarargs(value: String*): Self = StObject.set(x, "sourceServiceAccounts", js.Array(value*))
     
     inline def setSourceTags(value: js.Array[String]): Self = StObject.set(x, "sourceTags", value.asInstanceOf[js.Any])
     
     inline def setSourceTagsUndefined: Self = StObject.set(x, "sourceTags", js.undefined)
     
-    inline def setSourceTagsVarargs(value: String*): Self = StObject.set(x, "sourceTags", js.Array(value :_*))
+    inline def setSourceTagsVarargs(value: String*): Self = StObject.set(x, "sourceTags", js.Array(value*))
     
     inline def setTargetServiceAccounts(value: js.Array[String]): Self = StObject.set(x, "targetServiceAccounts", value.asInstanceOf[js.Any])
     
     inline def setTargetServiceAccountsUndefined: Self = StObject.set(x, "targetServiceAccounts", js.undefined)
     
-    inline def setTargetServiceAccountsVarargs(value: String*): Self = StObject.set(x, "targetServiceAccounts", js.Array(value :_*))
+    inline def setTargetServiceAccountsVarargs(value: String*): Self = StObject.set(x, "targetServiceAccounts", js.Array(value*))
     
     inline def setTargetTags(value: js.Array[String]): Self = StObject.set(x, "targetTags", value.asInstanceOf[js.Any])
     
     inline def setTargetTagsUndefined: Self = StObject.set(x, "targetTags", js.undefined)
     
-    inline def setTargetTagsVarargs(value: String*): Self = StObject.set(x, "targetTags", js.Array(value :_*))
+    inline def setTargetTagsVarargs(value: String*): Self = StObject.set(x, "targetTags", js.Array(value*))
   }
 }

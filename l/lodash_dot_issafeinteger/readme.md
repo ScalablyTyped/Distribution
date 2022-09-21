@@ -10,10 +10,10 @@ The lodash method `_.isSafeInteger` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.issafeinteger |
 | Keywords           | lodash-modularized, issafeinteger |
-| # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 532399 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 50119.0 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

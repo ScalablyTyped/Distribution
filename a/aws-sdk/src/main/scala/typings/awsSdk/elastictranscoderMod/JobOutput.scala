@@ -136,7 +136,7 @@ object JobOutput {
     
     inline def setCompositionUndefined: Self = StObject.set(x, "Composition", js.undefined)
     
-    inline def setCompositionVarargs(value: Clip*): Self = StObject.set(x, "Composition", js.Array(value :_*))
+    inline def setCompositionVarargs(value: Clip*): Self = StObject.set(x, "Composition", js.Array(value*))
     
     inline def setDuration(value: NullableLong): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     
@@ -202,7 +202,7 @@ object JobOutput {
     
     inline def setWatermarksUndefined: Self = StObject.set(x, "Watermarks", js.undefined)
     
-    inline def setWatermarksVarargs(value: JobWatermark*): Self = StObject.set(x, "Watermarks", js.Array(value :_*))
+    inline def setWatermarksVarargs(value: JobWatermark*): Self = StObject.set(x, "Watermarks", js.Array(value*))
     
     inline def setWidth(value: NullableInteger): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,7 @@ object StorageOptions {
     
     inline def setMechanismsUndefined: Self = StObject.set(x, "mechanisms", js.undefined)
     
-    inline def setMechanismsVarargs(value: String*): Self = StObject.set(x, "mechanisms", js.Array(value :_*))
+    inline def setMechanismsVarargs(value: String*): Self = StObject.set(x, "mechanisms", js.Array(value*))
     
     inline def setRequestType(value: String): Self = StObject.set(x, "requestType", value.asInstanceOf[js.Any])
     

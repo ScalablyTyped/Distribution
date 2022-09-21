@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OrganizationConfiguration extends StObject {
   
   /**
-    * Enables AWS Organization integration.
+    * Enables Organizations integration.
     */
   var EnableIntegration: Boolean
 }

@@ -1,242 +1,260 @@
 package typings.firebaseDatabase
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.firebaseAppTypes.mod.FirebaseApp
+import typings.firebaseDatabase.appCheckTokenProviderMod.AppCheckTokenProvider
 import typings.firebaseDatabase.authTokenProviderMod.AuthTokenProvider
-import typings.firebaseDatabase.dataSnapshotMod.DataSnapshot
-import typings.firebaseDatabase.databaseMod.Database
+import typings.firebaseDatabase.eventQueueMod.EventQueue
 import typings.firebaseDatabase.eventRegistrationMod.EventRegistration
+import typings.firebaseDatabase.eventRegistrationMod.QueryContext
+import typings.firebaseDatabase.firebaseDatabaseNumbers.`0`
+import typings.firebaseDatabase.firebaseDatabaseNumbers.`1`
+import typings.firebaseDatabase.firebaseDatabaseNumbers.`2`
+import typings.firebaseDatabase.firebaseDatabaseNumbers.`3`
+import typings.firebaseDatabase.firebaseDatabaseNumbers.`4`
 import typings.firebaseDatabase.miscMod.Indexable
+import typings.firebaseDatabase.nodeMod.Node
 import typings.firebaseDatabase.pathMod.Path
 import typings.firebaseDatabase.persistentConnectionMod.PersistentConnection
-import typings.firebaseDatabase.queryMod.Query
+import typings.firebaseDatabase.referenceImplMod.ValueEventRegistration
 import typings.firebaseDatabase.repoInfoMod.RepoInfo
-import typings.std.Error
+import typings.firebaseDatabase.serverActionsMod.ServerActions
+import typings.firebaseDatabase.snapshotHolderMod.SnapshotHolder
+import typings.firebaseDatabase.sparseSnapshotTreeMod.SparseSnapshotTree
+import typings.firebaseDatabase.statsCollectionMod.StatsCollection
+import typings.firebaseDatabase.statsListenerMod.StatsListener
+import typings.firebaseDatabase.statsReporterMod.StatsReporter
+import typings.firebaseDatabase.syncTreeMod.SyncTree
+import typings.firebaseDatabase.treeMod.Tree
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object repoMod {
   
-  @JSImport("@firebase/database/dist/src/core/Repo", "Repo")
+  @JSImport("@firebase/database/dist/node-esm/src/core/Repo", JSImport.Namespace)
   @js.native
-  class Repo protected () extends StObject {
+  val ^ : js.Any = js.native
+  
+  @JSImport("@firebase/database/dist/node-esm/src/core/Repo", "Repo")
+  @js.native
+  open class Repo protected () extends StObject {
     def this(
       repoInfo_ : RepoInfo,
       forceRestClient_ : Boolean,
-      app: FirebaseApp,
-      authTokenProvider_ : AuthTokenProvider
+      authTokenProvider_ : AuthTokenProvider,
+      appCheckProvider_ : AppCheckTokenProvider
     ) = this()
     
-    /* private */ var __database: js.Any = js.native
-    
-    /* private */ var abortTransactions_ : js.Any = js.native
-    
-    def addEventCallbackForQuery(query: Query, eventRegistration: EventRegistration): Unit = js.native
-    
-    var app: FirebaseApp = js.native
+    var appCheckProvider_ : AppCheckTokenProvider = js.native
     
     var authTokenProvider_ : AuthTokenProvider = js.native
     
-    def callOnCompleteCallback(
-      callback: js.Function2[/* status */ Error | Null, /* errorReason */ js.UndefOr[String], Unit],
-      status: String
-    ): Unit = js.native
-    def callOnCompleteCallback(
-      callback: js.Function2[/* status */ Error | Null, /* errorReason */ js.UndefOr[String], Unit],
-      status: String,
-      errorReason: String
-    ): Unit = js.native
-    def callOnCompleteCallback(callback: Null, status: String): Unit = js.native
-    def callOnCompleteCallback(callback: Null, status: String, errorReason: String): Unit = js.native
-    
     var dataUpdateCount: Double = js.native
     
-    def database: Database = js.native
+    var eventQueue_ : EventQueue = js.native
     
-    /* private */ var eventQueue_ : js.Any = js.native
+    var forceRestClient_ : Boolean = js.native
     
-    /* private */ var forceRestClient_ : js.Any = js.native
+    var infoData_ : SnapshotHolder = js.native
     
-    /**
-      * Generate ServerValues using some variables from the repo object.
-      */
-    def generateServerValues(): Indexable = js.native
+    var infoSyncTree_ : SyncTree = js.native
     
-    /* private */ var getNextWriteId_ : js.Any = js.native
-    
-    /**
-      * The purpose of `getValue` is to return the latest known value
-      * satisfying `query`.
-      *
-      * If the client is connected, this method will send a request
-      * to the server. If the client is not connected, then either:
-      *
-      * 1. The client was once connected, but not anymore.
-      * 2. The client has never connected, this is the first operation
-      *    this repo is handling.
-      *
-      * In case (1), it's possible that the client still has an active
-      * listener, with cached data. Since this is the latest known
-      * value satisfying the query, that's what getValue will return.
-      * If there is no cached data, `getValue` surfaces an "offline"
-      * error.
-      *
-      * In case (2), `getValue` will trigger a time-limited connection
-      * attempt. If the client is unable to connect to the server, it
-      * will surface an "offline" error because there cannot be any
-      * cached data. On the other hand, if the client is able to connect,
-      * `getValue` will return the server's value for the query, if one
-      * exists.
-      *
-      * @param query - The query to surface a value for.
-      */
-    def getValue(query: Query): js.Promise[DataSnapshot] = js.native
-    
-    /* private */ var infoData_ : js.Any = js.native
-    
-    /* private */ var infoSyncTree_ : js.Any = js.native
-    
-    /* private */ var interceptServerDataCallback_ : js.Any = js.native
-    
-    def interceptServerData_(): Unit = js.native
-    def interceptServerData_(callback: js.Function2[/* a */ String, /* b */ js.Any, js.Any]): Unit = js.native
-    
-    def interrupt(): Unit = js.native
+    var interceptServerDataCallback_ : (js.Function2[/* a */ String, /* b */ Any, Unit]) | Null = js.native
     
     /** Key for uniquely identifying this repo, used in RepoManager */
     val key: String = js.native
     
-    /* private */ var log_ : js.Any = js.native
-    
-    /**
-      * @return The namespace represented by the repo.
-      */
-    def name(): String = js.native
-    
-    /* private */ var nextWriteId_ : js.Any = js.native
-    
-    /* private */ var onConnectStatus_ : js.Any = js.native
-    
-    /**
-      * Called by realtime when we get new messages from the server.
-      */
-    /* private */ var onDataUpdate_ : js.Any = js.native
-    
-    def onDisconnectCancel(path: Path): Unit = js.native
-    def onDisconnectCancel(
-      path: Path,
-      onComplete: js.Function2[/* status */ Error | Null, /* errorReason */ js.UndefOr[String], Unit]
-    ): Unit = js.native
-    
-    def onDisconnectSet(path: Path, value: js.Any): Unit = js.native
-    def onDisconnectSet(
-      path: Path,
-      value: js.Any,
-      onComplete: js.Function2[/* status */ Error | Null, /* errorReason */ js.UndefOr[String], Unit]
-    ): Unit = js.native
-    
-    def onDisconnectSetWithPriority(path: Path, value: js.Any, priority: js.Any): Unit = js.native
-    def onDisconnectSetWithPriority(
-      path: Path,
-      value: js.Any,
-      priority: js.Any,
-      onComplete: js.Function2[/* status */ Error | Null, /* errorReason */ js.UndefOr[String], Unit]
-    ): Unit = js.native
-    
-    def onDisconnectUpdate(path: Path, childrenToMerge: StringDictionary[js.Any]): Unit = js.native
-    def onDisconnectUpdate(
-      path: Path,
-      childrenToMerge: StringDictionary[js.Any],
-      onComplete: js.Function2[/* status */ Error | Null, /* errorReason */ js.UndefOr[String], Unit]
-    ): Unit = js.native
+    var nextWriteId_ : Double = js.native
     
     /** A list of data pieces and paths to be set when this client disconnects. */
-    /* private */ var onDisconnect_ : js.Any = js.native
-    
-    /* private */ var onServerInfoUpdate_ : js.Any = js.native
+    var onDisconnect_ : SparseSnapshotTree = js.native
     
     var persistentConnection_ : PersistentConnection | Null = js.native
     
-    def removeEventCallbackForQuery(query: Query, eventRegistration: EventRegistration): Unit = js.native
-    
     var repoInfo_ : RepoInfo = js.native
     
-    /* private */ var rerunTransactions_ : js.Any = js.native
+    var serverSyncTree_ : SyncTree = js.native
     
-    def resume(): Unit = js.native
+    var server_ : ServerActions = js.native
     
-    /**
-      * Applies all of the changes stored up in the onDisconnect_ tree.
-      */
-    /* private */ var runOnDisconnectEvents_ : js.Any = js.native
+    var statsListener_ : StatsListener | Null = js.native
     
-    /* private */ var serverSyncTree_ : js.Any = js.native
+    var statsReporter_ : StatsReporter = js.native
     
-    /**
-      * @return The time in milliseconds, taking the server offset into account if we have one.
-      */
-    def serverTime(): Double = js.native
+    var stats_ : StatsCollection = js.native
     
-    /* private */ var server_ : js.Any = js.native
+    /** Stores queues of outstanding transactions for Firebase locations. */
+    var transactionQueueTree_ : Tree[js.Array[Transaction]] = js.native
+  }
+  
+  inline def repoAddEventCallbackForQuery(repo: Repo, query: QueryContext, eventRegistration: EventRegistration): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("repoAddEventCallbackForQuery")(repo.asInstanceOf[js.Any], query.asInstanceOf[js.Any], eventRegistration.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def repoCallOnCompleteCallback(repo: Repo, callback: js.Function2[js.Error | Null, js.UndefOr[String], Unit], status: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("repoCallOnCompleteCallback")(repo.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def repoCallOnCompleteCallback(
+    repo: Repo,
+    callback: js.Function2[/* status */ js.Error | Null, /* errorReason */ js.UndefOr[String], Unit],
+    status: String,
+    errorReason: String
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("repoCallOnCompleteCallback")(repo.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], status.asInstanceOf[js.Any], errorReason.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def repoCallOnCompleteCallback(repo: Repo, callback: Null, status: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("repoCallOnCompleteCallback")(repo.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def repoCallOnCompleteCallback(repo: Repo, callback: Null, status: String, errorReason: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("repoCallOnCompleteCallback")(repo.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], status.asInstanceOf[js.Any], errorReason.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def repoGenerateServerValues(repo: Repo): Indexable = ^.asInstanceOf[js.Dynamic].applyDynamic("repoGenerateServerValues")(repo.asInstanceOf[js.Any]).asInstanceOf[Indexable]
+  
+  inline def repoGetValue(repo: Repo, query: QueryContext, eventRegistration: ValueEventRegistration): js.Promise[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("repoGetValue")(repo.asInstanceOf[js.Any], query.asInstanceOf[js.Any], eventRegistration.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Node]]
+  
+  inline def repoInterceptServerData(repo: Repo): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("repoInterceptServerData")(repo.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def repoInterceptServerData(repo: Repo, callback: js.Function2[/* a */ String, /* b */ Any, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("repoInterceptServerData")(repo.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def repoInterrupt(repo: Repo): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("repoInterrupt")(repo.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def repoOnDisconnectCancel(repo: Repo, path: Path): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("repoOnDisconnectCancel")(repo.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def repoOnDisconnectCancel(
+    repo: Repo,
+    path: Path,
+    onComplete: js.Function2[/* status */ js.Error | Null, /* errorReason */ js.UndefOr[String], Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("repoOnDisconnectCancel")(repo.asInstanceOf[js.Any], path.asInstanceOf[js.Any], onComplete.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def repoOnDisconnectSet(repo: Repo, path: Path, value: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("repoOnDisconnectSet")(repo.asInstanceOf[js.Any], path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def repoOnDisconnectSet(
+    repo: Repo,
+    path: Path,
+    value: Any,
+    onComplete: js.Function2[/* status */ js.Error | Null, /* errorReason */ js.UndefOr[String], Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("repoOnDisconnectSet")(repo.asInstanceOf[js.Any], path.asInstanceOf[js.Any], value.asInstanceOf[js.Any], onComplete.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def repoOnDisconnectSetWithPriority(repo: Repo, path: Path, value: Any, priority: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("repoOnDisconnectSetWithPriority")(repo.asInstanceOf[js.Any], path.asInstanceOf[js.Any], value.asInstanceOf[js.Any], priority.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def repoOnDisconnectSetWithPriority(
+    repo: Repo,
+    path: Path,
+    value: Any,
+    priority: Any,
+    onComplete: js.Function2[/* status */ js.Error | Null, /* errorReason */ js.UndefOr[String], Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("repoOnDisconnectSetWithPriority")(repo.asInstanceOf[js.Any], path.asInstanceOf[js.Any], value.asInstanceOf[js.Any], priority.asInstanceOf[js.Any], onComplete.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def repoOnDisconnectUpdate(repo: Repo, path: Path, childrenToMerge: StringDictionary[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("repoOnDisconnectUpdate")(repo.asInstanceOf[js.Any], path.asInstanceOf[js.Any], childrenToMerge.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def repoOnDisconnectUpdate(
+    repo: Repo,
+    path: Path,
+    childrenToMerge: StringDictionary[Any],
+    onComplete: js.Function2[/* status */ js.Error | Null, /* errorReason */ js.UndefOr[String], Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("repoOnDisconnectUpdate")(repo.asInstanceOf[js.Any], path.asInstanceOf[js.Any], childrenToMerge.asInstanceOf[js.Any], onComplete.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def repoRemoveEventCallbackForQuery(repo: Repo, query: QueryContext, eventRegistration: EventRegistration): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("repoRemoveEventCallbackForQuery")(repo.asInstanceOf[js.Any], query.asInstanceOf[js.Any], eventRegistration.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def repoResume(repo: Repo): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("repoResume")(repo.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def repoServerTime(repo: Repo): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("repoServerTime")(repo.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  inline def repoSetWithPriority(repo: Repo, path: Path, newVal: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("repoSetWithPriority")(repo.asInstanceOf[js.Any], path.asInstanceOf[js.Any], newVal.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def repoSetWithPriority(repo: Repo, path: Path, newVal: Any, newPriority: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("repoSetWithPriority")(repo.asInstanceOf[js.Any], path.asInstanceOf[js.Any], newVal.asInstanceOf[js.Any], newPriority.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def repoSetWithPriority(
+    repo: Repo,
+    path: Path,
+    newVal: Any,
+    newPriority: String,
+    onComplete: js.Function2[/* status */ js.Error | Null, /* errorReason */ js.UndefOr[String], Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("repoSetWithPriority")(repo.asInstanceOf[js.Any], path.asInstanceOf[js.Any], newVal.asInstanceOf[js.Any], newPriority.asInstanceOf[js.Any], onComplete.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def repoSetWithPriority(repo: Repo, path: Path, newVal: Any, newPriority: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("repoSetWithPriority")(repo.asInstanceOf[js.Any], path.asInstanceOf[js.Any], newVal.asInstanceOf[js.Any], newPriority.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def repoSetWithPriority(
+    repo: Repo,
+    path: Path,
+    newVal: Any,
+    newPriority: Double,
+    onComplete: js.Function2[/* status */ js.Error | Null, /* errorReason */ js.UndefOr[String], Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("repoSetWithPriority")(repo.asInstanceOf[js.Any], path.asInstanceOf[js.Any], newVal.asInstanceOf[js.Any], newPriority.asInstanceOf[js.Any], onComplete.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def repoSetWithPriority(
+    repo: Repo,
+    path: Path,
+    newVal: Any,
+    newPriority: Null,
+    onComplete: js.Function2[/* status */ js.Error | Null, /* errorReason */ js.UndefOr[String], Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("repoSetWithPriority")(repo.asInstanceOf[js.Any], path.asInstanceOf[js.Any], newVal.asInstanceOf[js.Any], newPriority.asInstanceOf[js.Any], onComplete.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def repoStart(repo: Repo, appId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("repoStart")(repo.asInstanceOf[js.Any], appId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def repoStart(repo: Repo, appId: String, authOverride: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("repoStart")(repo.asInstanceOf[js.Any], appId.asInstanceOf[js.Any], authOverride.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def repoStartTransaction(
+    repo: Repo,
+    path: Path,
+    transactionUpdate: js.Function1[/* a */ Any, Any],
+    onComplete: js.Function3[/* error */ js.Error, /* committed */ Boolean, /* node */ Node, Unit],
+    unwatcher: js.Function0[Unit],
+    applyLocally: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("repoStartTransaction")(repo.asInstanceOf[js.Any], path.asInstanceOf[js.Any], transactionUpdate.asInstanceOf[js.Any], onComplete.asInstanceOf[js.Any], unwatcher.asInstanceOf[js.Any], applyLocally.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def repoStartTransaction(
+    repo: Repo,
+    path: Path,
+    transactionUpdate: js.Function1[/* a */ Any, Any],
+    onComplete: Null,
+    unwatcher: js.Function0[Unit],
+    applyLocally: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("repoStartTransaction")(repo.asInstanceOf[js.Any], path.asInstanceOf[js.Any], transactionUpdate.asInstanceOf[js.Any], onComplete.asInstanceOf[js.Any], unwatcher.asInstanceOf[js.Any], applyLocally.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def repoStats(repo: Repo): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("repoStats")(repo.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def repoStats(repo: Repo, showDelta: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("repoStats")(repo.asInstanceOf[js.Any], showDelta.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def repoStatsIncrementCounter(repo: Repo, metric: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("repoStatsIncrementCounter")(repo.asInstanceOf[js.Any], metric.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def repoUpdate(repo: Repo, path: Path, childrenToMerge: StringDictionary[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("repoUpdate")(repo.asInstanceOf[js.Any], path.asInstanceOf[js.Any], childrenToMerge.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def repoUpdate(
+    repo: Repo,
+    path: Path,
+    childrenToMerge: StringDictionary[Any],
+    onComplete: js.Function2[/* status */ js.Error | Null, /* errorReason */ js.UndefOr[String], Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("repoUpdate")(repo.asInstanceOf[js.Any], path.asInstanceOf[js.Any], childrenToMerge.asInstanceOf[js.Any], onComplete.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @js.native
+  trait Transaction extends StObject {
     
-    def setWithPriority(path: Path, newVal: js.Any): Unit = js.native
-    def setWithPriority(path: Path, newVal: js.Any, newPriority: String): Unit = js.native
-    def setWithPriority(
-      path: Path,
-      newVal: js.Any,
-      newPriority: String,
-      onComplete: js.Function2[/* status */ Error | Null, /* errorReason */ js.UndefOr[String], Unit]
-    ): Unit = js.native
-    def setWithPriority(path: Path, newVal: js.Any, newPriority: Double): Unit = js.native
-    def setWithPriority(
-      path: Path,
-      newVal: js.Any,
-      newPriority: Double,
-      onComplete: js.Function2[/* status */ Error | Null, /* errorReason */ js.UndefOr[String], Unit]
-    ): Unit = js.native
-    def setWithPriority(
-      path: Path,
-      newVal: js.Any,
-      newPriority: Null,
-      onComplete: js.Function2[/* status */ Error | Null, /* errorReason */ js.UndefOr[String], Unit]
-    ): Unit = js.native
+    var abortReason: String | Null = js.native
     
-    def start(): Unit = js.native
+    var applyLocally: Boolean = js.native
     
-    def startTransaction(
-      path: Path,
-      transactionUpdate: js.Function1[/* a */ js.Any, Unit],
-      onComplete: js.Function3[/* a */ Error, /* b */ Boolean, /* c */ DataSnapshot, Unit],
-      applyLocally: Boolean
-    ): Unit = js.native
-    def startTransaction(
-      path: Path,
-      transactionUpdate: js.Function1[/* a */ js.Any, Unit],
-      onComplete: Null,
-      applyLocally: Boolean
-    ): Unit = js.native
+    var currentInputSnapshot: Node | Null = js.native
     
-    def stats(): Unit = js.native
-    def stats(showDelta: Boolean): Unit = js.native
+    var currentOutputSnapshotRaw: Node | Null = js.native
     
-    def statsIncrementCounter(metric: String): Unit = js.native
+    var currentOutputSnapshotResolved: Node | Null = js.native
     
-    /* private */ var statsListener_ : js.Any = js.native
+    var currentWriteId: Double = js.native
     
-    /* private */ var statsReporter_ : js.Any = js.native
+    def onComplete(error: js.Error, committed: Boolean): Unit = js.native
+    def onComplete(error: js.Error, committed: Boolean, node: Node): Unit = js.native
+    def onComplete(error: Null, committed: Boolean): Unit = js.native
+    def onComplete(error: Null, committed: Boolean, node: Node): Unit = js.native
     
-    /* private */ var stats_ : js.Any = js.native
+    var order: Double = js.native
     
-    /* private */ var transactionsInit_ : js.Any = js.native
+    var path: Path = js.native
     
-    def update(path: Path, childrenToMerge: StringDictionary[js.Any]): Unit = js.native
-    def update(
-      path: Path,
-      childrenToMerge: StringDictionary[js.Any],
-      onComplete: js.Function2[/* status */ Error | Null, /* errorReason */ js.UndefOr[String], Unit]
-    ): Unit = js.native
+    var retryCount: Double = js.native
     
-    /* private */ var updateInfo_ : js.Any = js.native
+    var status: TransactionStatus = js.native
+    
+    def unwatcher(): Unit = js.native
+    
+    def update(a: Any): Any = js.native
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.firebaseDatabase.firebaseDatabaseNumbers.`0`
+    - typings.firebaseDatabase.firebaseDatabaseNumbers.`1`
+    - typings.firebaseDatabase.firebaseDatabaseNumbers.`2`
+    - typings.firebaseDatabase.firebaseDatabaseNumbers.`3`
+    - typings.firebaseDatabase.firebaseDatabaseNumbers.`4`
+  */
+  trait TransactionStatus extends StObject
+  object TransactionStatus {
+    
+    inline def COMPLETED: `2` = 2.asInstanceOf[`2`]
+    
+    inline def NEEDS_ABORT: `4` = 4.asInstanceOf[`4`]
+    
+    inline def RUN: `0` = 0.asInstanceOf[`0`]
+    
+    inline def SENT: `1` = 1.asInstanceOf[`1`]
+    
+    inline def SENT_NEEDS_ABORT: `3` = 3.asInstanceOf[`3`]
   }
 }

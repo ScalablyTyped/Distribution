@@ -160,7 +160,7 @@ object AMap {
       /**
         * 自定义定位图标，值为Marker对象
         */
-      var locationMarker: js.UndefOr[Marker[js.Any]] = js.undefined
+      var locationMarker: js.UndefOr[Marker[Any]] = js.undefined
       
       /**
         * 定位失败后，是否开启IP定位
@@ -219,7 +219,7 @@ object AMap {
         
         inline def setLocateUndefined: Self = StObject.set(x, "locate", js.undefined)
         
-        inline def setLocationMarker(value: Marker[js.Any]): Self = StObject.set(x, "locationMarker", value.asInstanceOf[js.Any])
+        inline def setLocationMarker(value: Marker[Any]): Self = StObject.set(x, "locationMarker", value.asInstanceOf[js.Any])
         
         inline def setLocationMarkerUndefined: Self = StObject.set(x, "locationMarker", js.undefined)
         

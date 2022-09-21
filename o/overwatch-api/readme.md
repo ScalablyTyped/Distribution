@@ -1,7 +1,7 @@
 
 # Scala.js typings for overwatch-api
 
-Typings are for version 0.10.4
+Typings are for version 0.10.5
 
 ## Library description:
 An Unoffical Overwatch API.
@@ -10,10 +10,10 @@ An Unoffical Overwatch API.
 | ------------------ | :-------------: |
 | Full name          | overwatch-api |
 | Keywords           | node, overwatch, api |
-| # releases         | 12 |
-| # dependents       | 0 |
-| # downloads        | 13316 |
-| # stars            | 0 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 187.33333333333334 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/overwatch-api)

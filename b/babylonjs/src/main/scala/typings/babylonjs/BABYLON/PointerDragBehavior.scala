@@ -12,61 +12,65 @@ trait PointerDragBehavior
   extends StObject
      with Behavior[AbstractMesh] {
   
-  /* private */ var _alternatePickedPoint: js.Any = js.native
+  /* private */ var _activeDragButton: Any = js.native
   
-  /* private */ var _attachedToElement: js.Any = js.native
+  /* private */ var _alternatePickedPoint: Any = js.native
   
-  /* private */ var _beforeRenderObserver: js.Any = js.native
+  /* private */ var _attachedToElement: Any = js.native
   
-  /* private */ var _debugMode: js.Any = js.native
+  /* private */ var _beforeRenderObserver: Any = js.native
   
-  /* private */ var _dragDelta: js.Any = js.native
+  /* private */ var _debugMode: Any = js.native
   
-  /* private */ var _dragPlane: js.Any = js.native
+  /* private */ var _dragDelta: Any = js.native
   
-  /* private */ var _lastPointerRay: js.Any = js.native
+  /* private */ var _dragPlane: Any = js.native
   
-  /* private */ var _localAxis: js.Any = js.native
+  /* private */ var _enabled: Any = js.native
   
-  /* private */ var _lookAt: js.Any = js.native
+  /* private */ var _lastPointerRay: Any = js.native
+  
+  /* private */ var _localAxis: Any = js.native
+  
+  /* private */ var _lookAt: Any = js.native
   
   /* protected */ def _moveDrag(ray: Ray): Unit = js.native
   
-  /* private */ var _moving: js.Any = js.native
+  /* private */ var _moving: Any = js.native
   
-  /* private */ var _options: js.Any = js.native
+  /* private */ var _options: Any = js.native
   
-  /* private */ var _pickWithRayOnDragPlane: js.Any = js.native
+  /* private */ var _pickWithRayOnDragPlane: Any = js.native
   
-  /* private */ var _pointA: js.Any = js.native
+  /* private */ var _pointA: Any = js.native
   
-  /* private */ var _pointC: js.Any = js.native
+  /* private */ var _pointC: Any = js.native
   
-  /* private */ var _pointerObserver: js.Any = js.native
+  /* private */ var _pointerObserver: Any = js.native
   
-  /* private */ var _scene: js.Any = js.native
+  /* private */ var _scene: Any = js.native
   
   /* protected */ def _startDrag(pointerId: Double): Unit = js.native
   /* protected */ def _startDrag(pointerId: Double, fromRay: Unit, startPickedPoint: Vector3): Unit = js.native
   /* protected */ def _startDrag(pointerId: Double, fromRay: Ray): Unit = js.native
   /* protected */ def _startDrag(pointerId: Double, fromRay: Ray, startPickedPoint: Vector3): Unit = js.native
   
-  /* private */ var _startDragRay: js.Any = js.native
+  /* private */ var _startDragRay: Any = js.native
   
-  /* private */ var _targetPosition: js.Any = js.native
+  /* private */ var _targetPosition: Any = js.native
   
-  /* private */ var _tmpVector: js.Any = js.native
+  /* private */ var _tmpVector: Any = js.native
   
-  /* private */ var _updateDragPlanePosition: js.Any = js.native
+  /* private */ var _updateDragPlanePosition: Any = js.native
   
   /**
     * @hidden
     */
   var _useAlternatePickedPointAboveMaxDragAngle: Boolean = js.native
   
-  /* private */ var _useAlternatePickedPointAboveMaxDragAngleDragSpeed: js.Any = js.native
+  /* private */ var _useAlternatePickedPointAboveMaxDragAngleDragSpeed: Any = js.native
   
-  /* private */ var _worldDragAxis: js.Any = js.native
+  /* private */ var _worldDragAxis: Any = js.native
   
   def attach(ownerNode: AbstractMesh, predicate: js.Function1[/* m */ AbstractMesh, Boolean]): Unit = js.native
   
@@ -76,14 +80,26 @@ trait PointerDragBehavior
   var attachedNode: AbstractMesh = js.native
   
   /**
+    * Get or set the currentDraggingPointerId
+    * @deprecated Please use currentDraggingPointerId instead
+    */
+  def currentDraggingPointerID: Double = js.native
+  def currentDraggingPointerID_=(currentDraggingPointerID: Double): Unit = js.native
+  
+  /**
     * The id of the pointer that is currently interacting with the behavior (-1 when no pointer is active)
     */
-  var currentDraggingPointerID: Double = js.native
+  var currentDraggingPointerId: Double = js.native
   
   /**
     * If camera controls should be detached during the drag
     */
   var detachCameraControls: Boolean = js.native
+  
+  /**
+    * Butttons that can be used to initiate a drag
+    */
+  var dragButtons: js.Array[Double] = js.native
   
   /**
     * The distance towards the target drag position to move each frame. This can be useful to avoid jitter. Set this to 1 for no delay. (Default: 0.2)
@@ -95,10 +111,11 @@ trait PointerDragBehavior
     */
   var dragging: Boolean = js.native
   
+  def enabled: Boolean = js.native
   /**
     *  If the drag behavior will react to drag events (Default: true)
     */
-  var enabled: Boolean = js.native
+  def enabled_=(value: Boolean): Unit = js.native
   
   /**
     * The last position where the pointer hit the drag plane in world space
@@ -141,6 +158,11 @@ trait PointerDragBehavior
   var onDragStartObservable: Observable[PointerId] = js.native
   
   /**
+    *  Fires each time behavior enabled state changes
+    */
+  var onEnabledObservable: Observable[Boolean] = js.native
+  
+  /**
     * Gets the options used by the behavior
     */
   def options: DragAxisDragPlaneNormal = js.native
@@ -150,7 +172,7 @@ trait PointerDragBehavior
   def options_=(options: DragAxisDragPlaneNormal): Unit = js.native
   
   /**
-    * Force relase the drag action by code.
+    * Force release the drag action by code.
     */
   def releaseDrag(): Unit = js.native
   
@@ -186,6 +208,7 @@ trait PointerDragBehavior
   
   /**
     * Predicate to determine if it is valid to move the object to a new position when it is moved
+    * @param targetPosition
     */
   def validateDrag(targetPosition: Vector3): Boolean = js.native
 }

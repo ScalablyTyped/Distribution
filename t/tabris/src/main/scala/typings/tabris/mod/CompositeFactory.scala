@@ -10,5 +10,5 @@ trait CompositeFactory
   extends Factory[
       CompositeConstructor, 
       InstanceType[CompositeConstructor], 
-      js.Function1[/* repeated */ js.Any, InstanceType[CompositeConstructor]]
+      js.Function1[/* repeated */ Any, Widget[Any]]
     ]

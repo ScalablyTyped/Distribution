@@ -9,7 +9,7 @@ object rogueMod {
   
   @JSImport("rot-js/lib/map/rogue", JSImport.Default)
   @js.native
-  class default protected () extends Rogue {
+  open class default protected () extends Rogue {
     def this(width: Double, height: Double, options: PartialOptionsCellHeight) = this()
   }
   
@@ -75,13 +75,13 @@ object rogueMod {
     
     def _initRooms(): Unit = js.native
     
-    /* private */ var _options: js.Any = js.native
+    /* private */ var _options: Any = js.native
     
-    /* private */ var connectedCells: js.Any = js.native
+    /* private */ var connectedCells: Any = js.native
     
-    /* private */ var map: js.Any = js.native
+    /* private */ var map: Any = js.native
     
-    /* private */ var rooms: js.Any = js.native
+    /* private */ var rooms: Any = js.native
   }
   
   trait Room extends StObject {
@@ -90,7 +90,7 @@ object rogueMod {
     
     var celly: Double
     
-    var connections: js.Array[js.Any]
+    var connections: js.Array[Any]
     
     var height: Double
     
@@ -105,7 +105,7 @@ object rogueMod {
     inline def apply(
       cellx: Double,
       celly: Double,
-      connections: js.Array[js.Any],
+      connections: js.Array[Any],
       height: Double,
       width: Double,
       x: Double,
@@ -121,9 +121,9 @@ object rogueMod {
       
       inline def setCelly(value: Double): Self = StObject.set(x, "celly", value.asInstanceOf[js.Any])
       
-      inline def setConnections(value: js.Array[js.Any]): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
+      inline def setConnections(value: js.Array[Any]): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
       
-      inline def setConnectionsVarargs(value: js.Any*): Self = StObject.set(x, "connections", js.Array(value :_*))
+      inline def setConnectionsVarargs(value: Any*): Self = StObject.set(x, "connections", js.Array(value*))
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

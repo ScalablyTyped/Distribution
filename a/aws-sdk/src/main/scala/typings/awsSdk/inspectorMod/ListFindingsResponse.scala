@@ -27,7 +27,7 @@ object ListFindingsResponse {
     
     inline def setFindingArns(value: ListReturnedArnList): Self = StObject.set(x, "findingArns", value.asInstanceOf[js.Any])
     
-    inline def setFindingArnsVarargs(value: Arn*): Self = StObject.set(x, "findingArns", js.Array(value :_*))
+    inline def setFindingArnsVarargs(value: Arn*): Self = StObject.set(x, "findingArns", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

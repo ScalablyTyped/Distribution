@@ -23,7 +23,7 @@ object AdScheduleParam {
     
     inline def setAdbreaks(value: js.Array[js.Object]): Self = StObject.set(x, "adbreaks", value.asInstanceOf[js.Any])
     
-    inline def setAdbreaksVarargs(value: js.Object*): Self = StObject.set(x, "adbreaks", js.Array(value :_*))
+    inline def setAdbreaksVarargs(value: js.Object*): Self = StObject.set(x, "adbreaks", js.Array(value*))
     
     inline def setClient(value: String): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     

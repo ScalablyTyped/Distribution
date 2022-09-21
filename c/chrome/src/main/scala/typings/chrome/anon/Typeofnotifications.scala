@@ -6,6 +6,8 @@ import typings.chrome.chrome.notifications.NotificationClosedEvent
 import typings.chrome.chrome.notifications.NotificationOptions
 import typings.chrome.chrome.notifications.NotificationPermissionLevelChangedEvent
 import typings.chrome.chrome.notifications.NotificationShowSettingsEvent
+import typings.chrome.chromeBooleans.`false`
+import typings.chrome.chromeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,14 +18,18 @@ trait Typeofnotifications extends StObject {
   def clear(notificationId: String): Unit = js.native
   def clear(notificationId: String, callback: js.Function1[/* wasCleared */ Boolean, Unit]): Unit = js.native
   
-  def create(notificationId: String, options: NotificationOptions): Unit = js.native
-  def create(
+  @JSName("create")
+  def create_true(notificationId: String, options: NotificationOptions[`true`]): Unit = js.native
+  @JSName("create")
+  def create_true(
     notificationId: String,
-    options: NotificationOptions,
+    options: NotificationOptions[`true`],
     callback: js.Function1[/* notificationId */ String, Unit]
   ): Unit = js.native
-  def create(options: NotificationOptions): Unit = js.native
-  def create(options: NotificationOptions, callback: js.Function1[/* notificationId */ String, Unit]): Unit = js.native
+  @JSName("create")
+  def create_true(options: NotificationOptions[`true`]): Unit = js.native
+  @JSName("create")
+  def create_true(options: NotificationOptions[`true`], callback: js.Function1[/* notificationId */ String, Unit]): Unit = js.native
   
   def getAll(callback: js.Function1[/* notifications */ js.Object, Unit]): Unit = js.native
   
@@ -39,10 +45,12 @@ trait Typeofnotifications extends StObject {
   
   var onShowSettings: NotificationShowSettingsEvent = js.native
   
-  def update(notificationId: String, options: NotificationOptions): Unit = js.native
-  def update(
+  @JSName("update")
+  def update_false(notificationId: String, options: NotificationOptions[`false`]): Unit = js.native
+  @JSName("update")
+  def update_false(
     notificationId: String,
-    options: NotificationOptions,
+    options: NotificationOptions[`false`],
     callback: js.Function1[/* wasUpdated */ Boolean, Unit]
   ): Unit = js.native
 }

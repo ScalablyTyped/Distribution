@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* augmented module */
 object mod {
   
-  inline def apply(target: js.UndefOr[js.Any]): Root = ^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any]).asInstanceOf[Root]
+  inline def apply(target: js.UndefOr[Any]): Root = ^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any]).asInstanceOf[Root]
   
   @JSImport("expect", JSImport.Namespace)
   @js.native

@@ -70,6 +70,24 @@ trait Kafka extends Service {
   
   /**
     * 
+    Creates a new MSK cluster.
+    
+    */
+  def createClusterV2(): Request[CreateClusterV2Response, AWSError] = js.native
+  def createClusterV2(callback: js.Function2[/* err */ AWSError, /* data */ CreateClusterV2Response, Unit]): Request[CreateClusterV2Response, AWSError] = js.native
+  /**
+    * 
+    Creates a new MSK cluster.
+    
+    */
+  def createClusterV2(params: CreateClusterV2Request): Request[CreateClusterV2Response, AWSError] = js.native
+  def createClusterV2(
+    params: CreateClusterV2Request,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateClusterV2Response, Unit]
+  ): Request[CreateClusterV2Response, AWSError] = js.native
+  
+  /**
+    * 
     Creates a new MSK configuration.
     
     */
@@ -157,6 +175,24 @@ trait Kafka extends Service {
     params: DescribeClusterOperationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeClusterOperationResponse, Unit]
   ): Request[DescribeClusterOperationResponse, AWSError] = js.native
+  
+  /**
+    * 
+    Returns a description of the MSK cluster whose Amazon Resource Name (ARN) is specified in the request.
+    
+    */
+  def describeClusterV2(): Request[DescribeClusterV2Response, AWSError] = js.native
+  def describeClusterV2(callback: js.Function2[/* err */ AWSError, /* data */ DescribeClusterV2Response, Unit]): Request[DescribeClusterV2Response, AWSError] = js.native
+  /**
+    * 
+    Returns a description of the MSK cluster whose Amazon Resource Name (ARN) is specified in the request.
+    
+    */
+  def describeClusterV2(params: DescribeClusterV2Request): Request[DescribeClusterV2Response, AWSError] = js.native
+  def describeClusterV2(
+    params: DescribeClusterV2Request,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeClusterV2Response, Unit]
+  ): Request[DescribeClusterV2Response, AWSError] = js.native
   
   /**
     * 
@@ -268,6 +304,24 @@ trait Kafka extends Service {
   
   /**
     * 
+    Returns a list of all the MSK clusters in the current Region.
+    
+    */
+  def listClustersV2(): Request[ListClustersV2Response, AWSError] = js.native
+  def listClustersV2(callback: js.Function2[/* err */ AWSError, /* data */ ListClustersV2Response, Unit]): Request[ListClustersV2Response, AWSError] = js.native
+  /**
+    * 
+    Returns a list of all the MSK clusters in the current Region.
+    
+    */
+  def listClustersV2(params: ListClustersV2Request): Request[ListClustersV2Response, AWSError] = js.native
+  def listClustersV2(
+    params: ListClustersV2Request,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListClustersV2Response, Unit]
+  ): Request[ListClustersV2Response, AWSError] = js.native
+  
+  /**
+    * 
     Returns a list of all the MSK configurations in this Region.
     
     */
@@ -304,14 +358,14 @@ trait Kafka extends Service {
   
   /**
     * 
-    Returns a list of Kafka versions.
+    Returns a list of Apache Kafka versions.
     
     */
   def listKafkaVersions(): Request[ListKafkaVersionsResponse, AWSError] = js.native
   def listKafkaVersions(callback: js.Function2[/* err */ AWSError, /* data */ ListKafkaVersionsResponse, Unit]): Request[ListKafkaVersionsResponse, AWSError] = js.native
   /**
     * 
-    Returns a list of Kafka versions.
+    Returns a list of Apache Kafka versions.
     
     */
   def listKafkaVersions(params: ListKafkaVersionsRequest): Request[ListKafkaVersionsResponse, AWSError] = js.native
@@ -459,6 +513,24 @@ trait Kafka extends Service {
   
   /**
     * 
+    Updates EC2 instance type.
+    
+    */
+  def updateBrokerType(): Request[UpdateBrokerTypeResponse, AWSError] = js.native
+  def updateBrokerType(callback: js.Function2[/* err */ AWSError, /* data */ UpdateBrokerTypeResponse, Unit]): Request[UpdateBrokerTypeResponse, AWSError] = js.native
+  /**
+    * 
+    Updates EC2 instance type.
+    
+    */
+  def updateBrokerType(params: UpdateBrokerTypeRequest): Request[UpdateBrokerTypeResponse, AWSError] = js.native
+  def updateBrokerType(
+    params: UpdateBrokerTypeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateBrokerTypeResponse, Unit]
+  ): Request[UpdateBrokerTypeResponse, AWSError] = js.native
+  
+  /**
+    * 
     Updates the cluster with the configuration that is specified in the request body.
     
     */
@@ -513,6 +585,24 @@ trait Kafka extends Service {
   
   /**
     * 
+    Updates the cluster's connectivity configuration.
+    
+    */
+  def updateConnectivity(): Request[UpdateConnectivityResponse, AWSError] = js.native
+  def updateConnectivity(callback: js.Function2[/* err */ AWSError, /* data */ UpdateConnectivityResponse, Unit]): Request[UpdateConnectivityResponse, AWSError] = js.native
+  /**
+    * 
+    Updates the cluster's connectivity configuration.
+    
+    */
+  def updateConnectivity(params: UpdateConnectivityRequest): Request[UpdateConnectivityResponse, AWSError] = js.native
+  def updateConnectivity(
+    params: UpdateConnectivityRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateConnectivityResponse, Unit]
+  ): Request[UpdateConnectivityResponse, AWSError] = js.native
+  
+  /**
+    * 
     Updates the monitoring settings for the cluster. You can use this operation to specify which Apache Kafka metrics you want Amazon MSK to send to Amazon CloudWatch. You can also specify settings for open monitoring with Prometheus.
     
     */
@@ -528,4 +618,22 @@ trait Kafka extends Service {
     params: UpdateMonitoringRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateMonitoringResponse, Unit]
   ): Request[UpdateMonitoringResponse, AWSError] = js.native
+  
+  /**
+    * 
+    Updates the security settings for the cluster. You can use this operation to specify encryption and authentication on existing clusters.
+    
+    */
+  def updateSecurity(): Request[UpdateSecurityResponse, AWSError] = js.native
+  def updateSecurity(callback: js.Function2[/* err */ AWSError, /* data */ UpdateSecurityResponse, Unit]): Request[UpdateSecurityResponse, AWSError] = js.native
+  /**
+    * 
+    Updates the security settings for the cluster. You can use this operation to specify encryption and authentication on existing clusters.
+    
+    */
+  def updateSecurity(params: UpdateSecurityRequest): Request[UpdateSecurityResponse, AWSError] = js.native
+  def updateSecurity(
+    params: UpdateSecurityRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateSecurityResponse, Unit]
+  ): Request[UpdateSecurityResponse, AWSError] = js.native
 }

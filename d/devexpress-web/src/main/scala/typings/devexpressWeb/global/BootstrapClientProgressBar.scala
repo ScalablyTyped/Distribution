@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("BootstrapClientProgressBar")
 @js.native
-class BootstrapClientProgressBar ()
+open class BootstrapClientProgressBar ()
   extends StObject
      with typings.devexpressWeb.ASPxClientProgressBar {
   
@@ -55,7 +55,7 @@ class BootstrapClientProgressBar ()
     * Returns an HTML element that is the root of the control's hierarchy.
     */
   /* CompleteClass */
-  override def GetMainElement(): js.Any = js.native
+  override def GetMainElement(): Any = js.native
   
   /**
     * Gets the maximum range value of the progress bar.
@@ -73,7 +73,7 @@ class BootstrapClientProgressBar ()
     * Returns a client instance of the control that is the parent for a specified control.
     */
   /* CompleteClass */
-  override def GetParentControl(): js.Any = js.native
+  override def GetParentControl(): Any = js.native
   
   /**
     * Sets the percentage representation of the progress position.
@@ -91,7 +91,7 @@ class BootstrapClientProgressBar ()
     * Returns the editor's value.
     */
   /* CompleteClass */
-  override def GetValue(): js.Any = js.native
+  override def GetValue(): Any = js.native
   
   /**
     * Returns a value specifying whether a control is displayed.
@@ -193,7 +193,7 @@ class BootstrapClientProgressBar ()
     * @param value An object representing the data to be assigned to the editor's edit value.
     */
   /* CompleteClass */
-  override def SetValue(value: js.Any): Unit = js.native
+  override def SetValue(value: Any): Unit = js.native
   
   /**
     * Specifies whether a control is displayed.

@@ -10,10 +10,10 @@ Some utilities for JSON pointers described by RFC 6901
 | ------------------ | :-------------: |
 | Full name          | json-pointer |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 175 |
-| # downloads        | 9046701 |
-| # stars            | 11 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1732457.6666666667 |
+| # stars            | 167.0 |
 
 ## Links
 - [Homepage](https://github.com/manuelstofer/json-pointer)

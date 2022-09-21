@@ -1,11 +1,7 @@
 package typings.ol
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.ol.canvasMod.DeclutterGroup
-import typings.ol.canvasMod.FillState
 import typings.ol.canvasMod.Label
-import typings.ol.canvasMod.StrokeState
-import typings.ol.canvasMod.TextState
+import typings.ol.canvasMod.SerializableInstructions
 import typings.ol.coordinateMod.Coordinate
 import typings.ol.extentMod.Extent
 import typings.ol.olFeatureMod.FeatureLike
@@ -20,7 +16,7 @@ object executorMod {
   
   @JSImport("ol/render/canvas/Executor", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with Executor {
     def this(
@@ -30,6 +26,39 @@ object executorMod {
       instructions: SerializableInstructions,
       renderBuffer: Size
     ) = this()
+  }
+  
+  trait BBox extends StObject {
+    
+    var maxX: Double
+    
+    var maxY: Double
+    
+    var minX: Double
+    
+    var minY: Double
+    
+    var value: Any
+  }
+  object BBox {
+    
+    inline def apply(maxX: Double, maxY: Double, minX: Double, minY: Double, value: Any): BBox = {
+      val __obj = js.Dynamic.literal(maxX = maxX.asInstanceOf[js.Any], maxY = maxY.asInstanceOf[js.Any], minX = minX.asInstanceOf[js.Any], minY = minY.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      __obj.asInstanceOf[BBox]
+    }
+    
+    extension [Self <: BBox](x: Self) {
+      
+      inline def setMaxX(value: Double): Self = StObject.set(x, "maxX", value.asInstanceOf[js.Any])
+      
+      inline def setMaxY(value: Double): Self = StObject.set(x, "maxY", value.asInstanceOf[js.Any])
+      
+      inline def setMinX(value: Double): Self = StObject.set(x, "minX", value.asInstanceOf[js.Any])
+      
+      inline def setMinY(value: Double): Self = StObject.set(x, "minY", value.asInstanceOf[js.Any])
+      
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    }
   }
   
   @js.native
@@ -46,21 +75,16 @@ object executorMod {
       viewRotation: Double,
       snapToPixel: Boolean
     ): Unit = js.native
+    def execute(
+      context: CanvasRenderingContext2D,
+      contextScale: Double,
+      transform: Transform,
+      viewRotation: Double,
+      snapToPixel: Boolean,
+      opt_declutterTree: typings.rbush.mod.default[Any]
+    ): Unit = js.native
     
     def executeHitDetection[T](context: CanvasRenderingContext2D, transform: Transform, viewRotation: Double): js.UndefOr[T] = js.native
-    def executeHitDetection[T](
-      context: CanvasRenderingContext2D,
-      transform: Transform,
-      viewRotation: Double,
-      opt_featureCallback: js.Function0[Unit]
-    ): js.UndefOr[T] = js.native
-    def executeHitDetection[T](
-      context: CanvasRenderingContext2D,
-      transform: Transform,
-      viewRotation: Double,
-      opt_featureCallback: js.Function0[Unit],
-      opt_hitExtent: Extent
-    ): js.UndefOr[T] = js.native
     def executeHitDetection[T](
       context: CanvasRenderingContext2D,
       transform: Transform,
@@ -68,16 +92,27 @@ object executorMod {
       opt_featureCallback: Unit,
       opt_hitExtent: Extent
     ): js.UndefOr[T] = js.native
+    def executeHitDetection[T](
+      context: CanvasRenderingContext2D,
+      transform: Transform,
+      viewRotation: Double,
+      opt_featureCallback: FeatureCallback[T]
+    ): js.UndefOr[T] = js.native
+    def executeHitDetection[T](
+      context: CanvasRenderingContext2D,
+      transform: Transform,
+      viewRotation: Double,
+      opt_featureCallback: FeatureCallback[T],
+      opt_hitExtent: Extent
+    ): js.UndefOr[T] = js.native
     
-    /* protected */ var hitDetectionInstructions: js.Array[js.Any] = js.native
+    /* protected */ var hitDetectionInstructions: js.Array[Any] = js.native
     
-    /* protected */ var instructions: js.Array[js.Any] = js.native
+    /* protected */ var instructions: js.Array[Any] = js.native
     
     /* protected */ var overlaps: Boolean = js.native
     
     /* protected */ var pixelRatio: Double = js.native
-    
-    def renderDeclutter(declutterGroup: DeclutterGroup, feature: FeatureLike, opacity: Double, declutterTree: js.Any): js.Any = js.native
     
     def replayTextBackground_(
       context: CanvasRenderingContext2D,
@@ -85,61 +120,77 @@ object executorMod {
       p2: Coordinate,
       p3: Coordinate,
       p4: Coordinate,
-      fillInstruction: js.Array[js.Any],
-      strokeInstruction: js.Array[js.Any],
-      declutter: Boolean
+      fillInstruction: js.Array[Any],
+      strokeInstruction: js.Array[Any]
     ): Unit = js.native
     
     /* protected */ var resolution: Double = js.native
   }
   
-  trait SerializableInstructions extends StObject {
+  type FeatureCallback[T] = js.Function2[/* p0 */ FeatureLike, /* p1 */ typings.ol.simpleGeometryMod.default, T]
+  
+  trait ImageOrLabelDimensions extends StObject {
     
-    var coordinates: js.Array[Double]
+    var canvasTransform: Transform
     
-    var fillStates: StringDictionary[FillState]
+    var declutterBox: BBox
     
-    var hitDetectionInstructions: js.Array[js.Any]
+    var drawImageH: Double
     
-    var instructions: js.Array[js.Any]
+    var drawImageW: Double
     
-    var strokeStates: StringDictionary[StrokeState]
+    var drawImageX: Double
     
-    var textStates: StringDictionary[TextState]
+    var drawImageY: Double
+    
+    var originX: Double
+    
+    var originY: Double
+    
+    var scale: js.Array[Double]
   }
-  object SerializableInstructions {
+  object ImageOrLabelDimensions {
     
     inline def apply(
-      coordinates: js.Array[Double],
-      fillStates: StringDictionary[FillState],
-      hitDetectionInstructions: js.Array[js.Any],
-      instructions: js.Array[js.Any],
-      strokeStates: StringDictionary[StrokeState],
-      textStates: StringDictionary[TextState]
-    ): SerializableInstructions = {
-      val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any], fillStates = fillStates.asInstanceOf[js.Any], hitDetectionInstructions = hitDetectionInstructions.asInstanceOf[js.Any], instructions = instructions.asInstanceOf[js.Any], strokeStates = strokeStates.asInstanceOf[js.Any], textStates = textStates.asInstanceOf[js.Any])
-      __obj.asInstanceOf[SerializableInstructions]
+      canvasTransform: Transform,
+      declutterBox: BBox,
+      drawImageH: Double,
+      drawImageW: Double,
+      drawImageX: Double,
+      drawImageY: Double,
+      originX: Double,
+      originY: Double,
+      scale: js.Array[Double]
+    ): ImageOrLabelDimensions = {
+      val __obj = js.Dynamic.literal(canvasTransform = canvasTransform.asInstanceOf[js.Any], declutterBox = declutterBox.asInstanceOf[js.Any], drawImageH = drawImageH.asInstanceOf[js.Any], drawImageW = drawImageW.asInstanceOf[js.Any], drawImageX = drawImageX.asInstanceOf[js.Any], drawImageY = drawImageY.asInstanceOf[js.Any], originX = originX.asInstanceOf[js.Any], originY = originY.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ImageOrLabelDimensions]
     }
     
-    extension [Self <: SerializableInstructions](x: Self) {
+    extension [Self <: ImageOrLabelDimensions](x: Self) {
       
-      inline def setCoordinates(value: js.Array[Double]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
+      inline def setCanvasTransform(value: Transform): Self = StObject.set(x, "canvasTransform", value.asInstanceOf[js.Any])
       
-      inline def setCoordinatesVarargs(value: Double*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
+      inline def setCanvasTransformVarargs(value: Double*): Self = StObject.set(x, "canvasTransform", js.Array(value*))
       
-      inline def setFillStates(value: StringDictionary[FillState]): Self = StObject.set(x, "fillStates", value.asInstanceOf[js.Any])
+      inline def setDeclutterBox(value: BBox): Self = StObject.set(x, "declutterBox", value.asInstanceOf[js.Any])
       
-      inline def setHitDetectionInstructions(value: js.Array[js.Any]): Self = StObject.set(x, "hitDetectionInstructions", value.asInstanceOf[js.Any])
+      inline def setDrawImageH(value: Double): Self = StObject.set(x, "drawImageH", value.asInstanceOf[js.Any])
       
-      inline def setHitDetectionInstructionsVarargs(value: js.Any*): Self = StObject.set(x, "hitDetectionInstructions", js.Array(value :_*))
+      inline def setDrawImageW(value: Double): Self = StObject.set(x, "drawImageW", value.asInstanceOf[js.Any])
       
-      inline def setInstructions(value: js.Array[js.Any]): Self = StObject.set(x, "instructions", value.asInstanceOf[js.Any])
+      inline def setDrawImageX(value: Double): Self = StObject.set(x, "drawImageX", value.asInstanceOf[js.Any])
       
-      inline def setInstructionsVarargs(value: js.Any*): Self = StObject.set(x, "instructions", js.Array(value :_*))
+      inline def setDrawImageY(value: Double): Self = StObject.set(x, "drawImageY", value.asInstanceOf[js.Any])
       
-      inline def setStrokeStates(value: StringDictionary[StrokeState]): Self = StObject.set(x, "strokeStates", value.asInstanceOf[js.Any])
+      inline def setOriginX(value: Double): Self = StObject.set(x, "originX", value.asInstanceOf[js.Any])
       
-      inline def setTextStates(value: StringDictionary[TextState]): Self = StObject.set(x, "textStates", value.asInstanceOf[js.Any])
+      inline def setOriginY(value: Double): Self = StObject.set(x, "originY", value.asInstanceOf[js.Any])
+      
+      inline def setScale(value: js.Array[Double]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      
+      inline def setScaleVarargs(value: Double*): Self = StObject.set(x, "scale", js.Array(value*))
     }
   }
+  
+  type ReplayImageOrLabelArgs = Any
 }

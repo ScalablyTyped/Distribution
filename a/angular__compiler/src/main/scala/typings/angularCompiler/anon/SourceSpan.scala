@@ -1,6 +1,6 @@
 package typings.angularCompiler.anon
 
-import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+import typings.angularCompiler.mod.ParseSourceSpan
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

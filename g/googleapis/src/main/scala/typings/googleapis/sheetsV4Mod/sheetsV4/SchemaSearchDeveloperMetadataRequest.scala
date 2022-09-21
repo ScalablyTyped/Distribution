@@ -4,16 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A request to retrieve all developer metadata matching the set of specified
-  * criteria.
-  */
 trait SchemaSearchDeveloperMetadataRequest extends StObject {
   
   /**
-    * The data filters describing the criteria used to determine which
-    * DeveloperMetadata entries to return.  DeveloperMetadata matching any of
-    * the specified filters will be included in the response.
+    * The data filters describing the criteria used to determine which DeveloperMetadata entries to return. DeveloperMetadata matching any of the specified filters are included in the response.
     */
   var dataFilters: js.UndefOr[js.Array[SchemaDataFilter]] = js.undefined
 }
@@ -30,6 +24,6 @@ object SchemaSearchDeveloperMetadataRequest {
     
     inline def setDataFiltersUndefined: Self = StObject.set(x, "dataFilters", js.undefined)
     
-    inline def setDataFiltersVarargs(value: SchemaDataFilter*): Self = StObject.set(x, "dataFilters", js.Array(value :_*))
+    inline def setDataFiltersVarargs(value: SchemaDataFilter*): Self = StObject.set(x, "dataFilters", js.Array(value*))
   }
 }

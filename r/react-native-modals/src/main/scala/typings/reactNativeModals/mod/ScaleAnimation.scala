@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-modals", "ScaleAnimation")
 @js.native
-class ScaleAnimation () extends StObject {
+open class ScaleAnimation () extends StObject {
   def this(toValue: Double) = this()
   
   def createAnimations(): js.Object = js.native

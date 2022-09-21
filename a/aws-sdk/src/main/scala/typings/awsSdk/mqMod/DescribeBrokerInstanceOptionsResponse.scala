@@ -34,7 +34,7 @@ object DescribeBrokerInstanceOptionsResponse {
     
     inline def setBrokerInstanceOptionsUndefined: Self = StObject.set(x, "BrokerInstanceOptions", js.undefined)
     
-    inline def setBrokerInstanceOptionsVarargs(value: BrokerInstanceOption*): Self = StObject.set(x, "BrokerInstanceOptions", js.Array(value :_*))
+    inline def setBrokerInstanceOptionsVarargs(value: BrokerInstanceOption*): Self = StObject.set(x, "BrokerInstanceOptions", js.Array(value*))
     
     inline def setMaxResults(value: integerMin5Max100): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

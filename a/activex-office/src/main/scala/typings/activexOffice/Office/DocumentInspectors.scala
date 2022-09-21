@@ -9,7 +9,7 @@ trait DocumentInspectors extends StObject {
   
   def apply(Index: Double): DocumentInspector = js.native
   
-  val Application: js.Any = js.native
+  val Application: Any = js.native
   
   val Count: Double = js.native
   
@@ -17,5 +17,5 @@ trait DocumentInspectors extends StObject {
   
   def Item(Index: Double): DocumentInspector = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
 }

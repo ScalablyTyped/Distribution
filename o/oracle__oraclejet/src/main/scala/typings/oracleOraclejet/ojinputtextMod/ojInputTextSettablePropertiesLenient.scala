@@ -34,9 +34,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojinputtext.ojInputTextSettableProperties> */
 trait ojInputTextSettablePropertiesLenient
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
-  var asyncValidators: js.UndefOr[js.Array[AsyncValidator[js.Any]]] = js.undefined
+  var asyncValidators: js.UndefOr[js.Array[AsyncValidator[Any]]] = js.undefined
   
   var autocomplete: js.UndefOr[on | off | String] = js.undefined
   
@@ -44,7 +44,7 @@ trait ojInputTextSettablePropertiesLenient
   
   var clearIcon: js.UndefOr[never | always | conditional] = js.undefined
   
-  var converter: js.UndefOr[Converter[js.Any] | RegisteredConverter | Null] = js.undefined
+  var converter: js.UndefOr[Converter[Any] | RegisteredConverter | Null] = js.undefined
   
   var describedBy: js.UndefOr[String | Null] = js.undefined
   
@@ -64,7 +64,7 @@ trait ojInputTextSettablePropertiesLenient
   
   var placeholder: js.UndefOr[String] = js.undefined
   
-  var rawValue: js.UndefOr[js.Any] = js.undefined
+  var rawValue: js.UndefOr[Any] = js.undefined
   
   var readonly: js.UndefOr[Boolean] = js.undefined
   
@@ -76,9 +76,9 @@ trait ojInputTextSettablePropertiesLenient
     typings.oracleOraclejet.oracleOraclejetStrings.valid | pending | invalidHidden | invalidShown
   ] = js.undefined
   
-  var validators: js.UndefOr[(js.Array[Validator[js.Any] | RegisteredValidator]) | Null] = js.undefined
+  var validators: js.UndefOr[(js.Array[Validator[Any] | RegisteredValidator]) | Null] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[Any] = js.undefined
   
   var virtualKeyboard: js.UndefOr[auto | email | number | search | tel | text | url] = js.undefined
 }
@@ -91,11 +91,11 @@ object ojInputTextSettablePropertiesLenient {
   
   extension [Self <: ojInputTextSettablePropertiesLenient](x: Self) {
     
-    inline def setAsyncValidators(value: js.Array[AsyncValidator[js.Any]]): Self = StObject.set(x, "asyncValidators", value.asInstanceOf[js.Any])
+    inline def setAsyncValidators(value: js.Array[AsyncValidator[Any]]): Self = StObject.set(x, "asyncValidators", value.asInstanceOf[js.Any])
     
     inline def setAsyncValidatorsUndefined: Self = StObject.set(x, "asyncValidators", js.undefined)
     
-    inline def setAsyncValidatorsVarargs(value: AsyncValidator[js.Any]*): Self = StObject.set(x, "asyncValidators", js.Array(value :_*))
+    inline def setAsyncValidatorsVarargs(value: AsyncValidator[Any]*): Self = StObject.set(x, "asyncValidators", js.Array(value*))
     
     inline def setAutocomplete(value: on | off | String): Self = StObject.set(x, "autocomplete", value.asInstanceOf[js.Any])
     
@@ -109,7 +109,7 @@ object ojInputTextSettablePropertiesLenient {
     
     inline def setClearIconUndefined: Self = StObject.set(x, "clearIcon", js.undefined)
     
-    inline def setConverter(value: Converter[js.Any] | RegisteredConverter): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
+    inline def setConverter(value: Converter[Any] | RegisteredConverter): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
     
     inline def setConverterNull: Self = StObject.set(x, "converter", null)
     
@@ -149,13 +149,13 @@ object ojInputTextSettablePropertiesLenient {
     
     inline def setMessagesCustomUndefined: Self = StObject.set(x, "messagesCustom", js.undefined)
     
-    inline def setMessagesCustomVarargs(value: ^ *): Self = StObject.set(x, "messagesCustom", js.Array(value :_*))
+    inline def setMessagesCustomVarargs(value: ^ *): Self = StObject.set(x, "messagesCustom", js.Array(value*))
     
     inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
     inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
-    inline def setRawValue(value: js.Any): Self = StObject.set(x, "rawValue", value.asInstanceOf[js.Any])
+    inline def setRawValue(value: Any): Self = StObject.set(x, "rawValue", value.asInstanceOf[js.Any])
     
     inline def setRawValueUndefined: Self = StObject.set(x, "rawValue", js.undefined)
     
@@ -175,15 +175,15 @@ object ojInputTextSettablePropertiesLenient {
     
     inline def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
     
-    inline def setValidators(value: js.Array[Validator[js.Any] | RegisteredValidator]): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
+    inline def setValidators(value: js.Array[Validator[Any] | RegisteredValidator]): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
     
     inline def setValidatorsNull: Self = StObject.set(x, "validators", null)
     
     inline def setValidatorsUndefined: Self = StObject.set(x, "validators", js.undefined)
     
-    inline def setValidatorsVarargs(value: (Validator[js.Any] | RegisteredValidator)*): Self = StObject.set(x, "validators", js.Array(value :_*))
+    inline def setValidatorsVarargs(value: (Validator[Any] | RegisteredValidator)*): Self = StObject.set(x, "validators", js.Array(value*))
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     

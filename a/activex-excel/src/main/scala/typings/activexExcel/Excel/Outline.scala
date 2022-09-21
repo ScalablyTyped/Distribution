@@ -16,12 +16,12 @@ trait Outline extends StObject {
   /* private */ @JSName("Excel.Outline_typekey")
   var ExcelDotOutline_typekey: Outline = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  def ShowLevels(): js.Any = js.native
-  def ShowLevels(RowLevels: Double): js.Any = js.native
-  def ShowLevels(RowLevels: Double, ColumnLevels: Double): js.Any = js.native
-  def ShowLevels(RowLevels: Unit, ColumnLevels: Double): js.Any = js.native
+  def ShowLevels(): Any = js.native
+  def ShowLevels(RowLevels: Double): Any = js.native
+  def ShowLevels(RowLevels: Double, ColumnLevels: Double): Any = js.native
+  def ShowLevels(RowLevels: Unit, ColumnLevels: Double): Any = js.native
   
   var SummaryColumn: XlSummaryColumn = js.native
   

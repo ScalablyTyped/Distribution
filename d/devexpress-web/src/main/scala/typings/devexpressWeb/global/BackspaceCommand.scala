@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("BackspaceCommand")
 @js.native
-class BackspaceCommand ()
+open class BackspaceCommand ()
   extends StObject
      with typings.devexpressWeb.BackspaceCommand {
   

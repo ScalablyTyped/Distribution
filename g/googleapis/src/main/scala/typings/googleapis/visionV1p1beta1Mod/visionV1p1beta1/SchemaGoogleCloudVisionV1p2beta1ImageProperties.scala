@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Stores image properties, such as dominant colors.
-  */
 trait SchemaGoogleCloudVisionV1p2beta1ImageProperties extends StObject {
   
   /**

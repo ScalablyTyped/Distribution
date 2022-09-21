@@ -9,7 +9,7 @@ object constraintMetadataMod {
   
   @JSImport("class-validator/types/metadata/ConstraintMetadata", "ConstraintMetadata")
   @js.native
-  class ConstraintMetadata protected () extends StObject {
+  open class ConstraintMetadata protected () extends StObject {
     def this(target: js.Function) = this()
     def this(target: js.Function, name: String) = this()
     def this(target: js.Function, name: String, async: Boolean) = this()
@@ -23,7 +23,7 @@ object constraintMetadataMod {
     /**
       * Instance of the target custom validation class which performs validation.
       */
-    val instance: ValidatorConstraintInterface = js.native
+    def instance: ValidatorConstraintInterface = js.native
     
     /**
       * Custom validation's name, that will be used as validation error type.

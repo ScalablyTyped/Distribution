@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LiasettingsListPosDataProvidersResponse extends StObject {
   
-  /** Identifies what kind of resource this is. Value: the fixed string "content#liasettingsListPosDataProvidersResponse". */
+  /** Identifies what kind of resource this is. Value: the fixed string "`content#liasettingsListPosDataProvidersResponse`". */
   var kind: js.UndefOr[String] = js.undefined
   
   /** The list of POS data providers for each eligible country */
@@ -29,6 +29,6 @@ object LiasettingsListPosDataProvidersResponse {
     
     inline def setPosDataProvidersUndefined: Self = StObject.set(x, "posDataProviders", js.undefined)
     
-    inline def setPosDataProvidersVarargs(value: PosDataProviders*): Self = StObject.set(x, "posDataProviders", js.Array(value :_*))
+    inline def setPosDataProvidersVarargs(value: PosDataProviders*): Self = StObject.set(x, "posDataProviders", js.Array(value*))
   }
 }

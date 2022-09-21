@@ -15,7 +15,7 @@ object dynamsoftMod extends Shortcut {
   
   @JSImport("dwt/Dynamsoft", JSImport.Default)
   @js.native
-  val default: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DynamsoftEnums */ js.Any) & TypeofDynamsoftStatic = js.native
+  val default: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DynamsoftEnums */ Any) & TypeofDynamsoftStatic = js.native
   
   object DynamsoftStatic {
     
@@ -386,40 +386,34 @@ object dynamsoftMod extends Shortcut {
   
   trait DisplayInfo extends StObject {
     
-    var buttons: js.Any
+    var buttons: Any
     
-    var customProgressText: js.Any
+    var customProgressText: Any
     
-    var dialogText: js.Any
+    var dialogText: Any
     
-    var errorMessages: js.Any
+    var errorMessages: Any
     
-    var generalMessages: js.Any
+    var generalMessages: Any
   }
   object DisplayInfo {
     
-    inline def apply(
-      buttons: js.Any,
-      customProgressText: js.Any,
-      dialogText: js.Any,
-      errorMessages: js.Any,
-      generalMessages: js.Any
-    ): DisplayInfo = {
+    inline def apply(buttons: Any, customProgressText: Any, dialogText: Any, errorMessages: Any, generalMessages: Any): DisplayInfo = {
       val __obj = js.Dynamic.literal(buttons = buttons.asInstanceOf[js.Any], customProgressText = customProgressText.asInstanceOf[js.Any], dialogText = dialogText.asInstanceOf[js.Any], errorMessages = errorMessages.asInstanceOf[js.Any], generalMessages = generalMessages.asInstanceOf[js.Any])
       __obj.asInstanceOf[DisplayInfo]
     }
     
     extension [Self <: DisplayInfo](x: Self) {
       
-      inline def setButtons(value: js.Any): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+      inline def setButtons(value: Any): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
-      inline def setCustomProgressText(value: js.Any): Self = StObject.set(x, "customProgressText", value.asInstanceOf[js.Any])
+      inline def setCustomProgressText(value: Any): Self = StObject.set(x, "customProgressText", value.asInstanceOf[js.Any])
       
-      inline def setDialogText(value: js.Any): Self = StObject.set(x, "dialogText", value.asInstanceOf[js.Any])
+      inline def setDialogText(value: Any): Self = StObject.set(x, "dialogText", value.asInstanceOf[js.Any])
       
-      inline def setErrorMessages(value: js.Any): Self = StObject.set(x, "errorMessages", value.asInstanceOf[js.Any])
+      inline def setErrorMessages(value: Any): Self = StObject.set(x, "errorMessages", value.asInstanceOf[js.Any])
       
-      inline def setGeneralMessages(value: js.Any): Self = StObject.set(x, "generalMessages", value.asInstanceOf[js.Any])
+      inline def setGeneralMessages(value: Any): Self = StObject.set(x, "generalMessages", value.asInstanceOf[js.Any])
     }
   }
   
@@ -761,7 +755,7 @@ object dynamsoftMod extends Shortcut {
     /**
       * A map of all WebTwain instances.
       */
-    var ContainerMap: js.Any = js.native
+    var ContainerMap: Any = js.native
     
     /**
       * Define the Id and UI of the WebTwain instances.
@@ -936,7 +930,7 @@ object dynamsoftMod extends Shortcut {
       * @param event Specify the event.
       * @param callback Specify the callback.
       */
-    def RegisterEvent(event: String, callback: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+    def RegisterEvent(event: String, callback: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
     
     /**
       * Remove all authorizations for accessing local resources.
@@ -988,11 +982,11 @@ object dynamsoftMod extends Shortcut {
       */
     var UseLocalService: Boolean = js.native
     
-    var initQueue: js.Array[js.Any] = js.native
+    var initQueue: js.Array[Any] = js.native
   }
   
-  type _To = (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DynamsoftEnums */ js.Any) & TypeofDynamsoftStatic
+  type _To = (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DynamsoftEnums */ Any) & TypeofDynamsoftStatic
   
   /* This means you don't have to write `default`, but can instead just say `dynamsoftMod.foo` */
-  override def _to: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DynamsoftEnums */ js.Any) & TypeofDynamsoftStatic = default
+  override def _to: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DynamsoftEnums */ Any) & TypeofDynamsoftStatic = default
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object thresholdMod {
   
-  @JSImport("konva/types/filters/Threshold", "Threshold")
+  @JSImport("konva/lib/filters/Threshold", "Threshold")
   @js.native
   val Threshold: Filter = js.native
 }

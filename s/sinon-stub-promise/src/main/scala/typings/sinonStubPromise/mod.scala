@@ -19,10 +19,10 @@ object mod {
     trait SinonStub extends StObject {
       
       def rejects(): SinonStub = js.native
-      def rejects(value: js.Any): SinonStub = js.native
+      def rejects(value: Any): SinonStub = js.native
       
       def resolves(): SinonStub = js.native
-      def resolves(value: js.Any): SinonStub = js.native
+      def resolves(value: Any): SinonStub = js.native
       
       def returnsPromise(): SinonStub = js.native
       
@@ -32,22 +32,22 @@ object mod {
     @js.native
     trait SinonThenable extends StObject {
       
-      def `catch`(onReject: js.Function1[/* rejectValue */ js.UndefOr[js.Any], Unit]): SinonThenable = js.native
+      def `catch`(onReject: js.Function1[/* rejectValue */ js.UndefOr[Any], Unit]): SinonThenable = js.native
       
       def `finally`(callback: js.Function0[Unit]): SinonThenable = js.native
       
-      var rejectValue: js.Any = js.native
+      var rejectValue: Any = js.native
       
       var rejected: Boolean = js.native
       
-      var resolveValue: js.Any = js.native
+      var resolveValue: Any = js.native
       
       var resolved: Boolean = js.native
       
-      def `then`(onFulfill: js.Function1[/* resolveValue */ js.UndefOr[js.Any], Unit]): SinonThenable = js.native
+      def `then`(onFulfill: js.Function1[/* resolveValue */ js.UndefOr[Any], Unit]): SinonThenable = js.native
       def `then`(
-        onFulfill: js.Function1[/* resolveValue */ js.UndefOr[js.Any], Unit],
-        onReject: js.Function1[/* rejectValue */ js.UndefOr[js.Any], Unit]
+        onFulfill: js.Function1[/* resolveValue */ js.UndefOr[Any], Unit],
+        onReject: js.Function1[/* rejectValue */ js.UndefOr[Any], Unit]
       ): SinonThenable = js.native
     }
   }

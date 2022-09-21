@@ -1,7 +1,7 @@
 package typings.gettextParser
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -57,7 +57,7 @@ object mod {
     
     var msgid: String
     
-    var msgid_plural: js.UndefOr[js.Any] = js.undefined
+    var msgid_plural: js.UndefOr[Any] = js.undefined
     
     var msgstr: js.Array[String]
   }
@@ -80,13 +80,13 @@ object mod {
       
       inline def setMsgid(value: String): Self = StObject.set(x, "msgid", value.asInstanceOf[js.Any])
       
-      inline def setMsgid_plural(value: js.Any): Self = StObject.set(x, "msgid_plural", value.asInstanceOf[js.Any])
+      inline def setMsgid_plural(value: Any): Self = StObject.set(x, "msgid_plural", value.asInstanceOf[js.Any])
       
       inline def setMsgid_pluralUndefined: Self = StObject.set(x, "msgid_plural", js.undefined)
       
       inline def setMsgstr(value: js.Array[String]): Self = StObject.set(x, "msgstr", value.asInstanceOf[js.Any])
       
-      inline def setMsgstrVarargs(value: String*): Self = StObject.set(x, "msgstr", js.Array(value :_*))
+      inline def setMsgstrVarargs(value: String*): Self = StObject.set(x, "msgstr", js.Array(value*))
     }
   }
   
@@ -123,7 +123,7 @@ object mod {
   trait MoParser extends StObject {
     
     def compile(table: GetTextTranslations): Buffer = js.native
-    def compile(table: GetTextTranslations, options: js.Any): Buffer = js.native
+    def compile(table: GetTextTranslations, options: Any): Buffer = js.native
     
     def parse(buffer: String): GetTextTranslations = js.native
     def parse(buffer: String, defaultCharset: String): GetTextTranslations = js.native
@@ -135,10 +135,10 @@ object mod {
   trait PoParser extends StObject {
     
     def compile(table: GetTextTranslations): Buffer = js.native
-    def compile(table: GetTextTranslations, options: js.Any): Buffer = js.native
+    def compile(table: GetTextTranslations, options: Any): Buffer = js.native
     
-    def createParseStream(buffer: js.Any): js.Any = js.native
-    def createParseStream(buffer: js.Any, defaultCharset: String): js.Any = js.native
+    def createParseStream(buffer: Any): Any = js.native
+    def createParseStream(buffer: Any, defaultCharset: String): Any = js.native
     
     def parse(buffer: String): GetTextTranslations = js.native
     def parse(buffer: String, defaultCharset: String): GetTextTranslations = js.native

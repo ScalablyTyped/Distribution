@@ -1,7 +1,7 @@
 
 # Scala.js typings for fuse_dot_js
 
-Typings are for version 3.6.1
+Typings are for version 6.6.2
 
 ## Library description:
 Lightweight fuzzy-search
@@ -10,10 +10,10 @@ Lightweight fuzzy-search
 | ------------------ | :-------------: |
 | Full name          | fuse.js |
 | Keywords           | fuzzy, search, bitap |
-| # releases         | 66 |
-| # dependents       | 701 |
-| # downloads        | 96487004 |
-| # stars            | 25 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 1.6833318666666668E7 |
+| # stars            | 14428.0 |
 
 ## Links
 - [Homepage](http://fusejs.io)

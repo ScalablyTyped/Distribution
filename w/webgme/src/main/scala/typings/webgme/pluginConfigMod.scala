@@ -25,7 +25,7 @@ object pluginConfigMod {
   
   @JSImport("plugin/PluginConfig", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with PluginConfig {
     
@@ -96,7 +96,7 @@ object pluginConfigMod {
       * @memberOf GmeConfig
       */
     /* CompleteClass */
-    override def serialize(): js.Any = js.native
+    override def serialize(): Any = js.native
     
     /** Server related settings. */
     /* CompleteClass */

@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_texttospeech
 
-Typings are for version 1.0.20201112
+Typings are for version 1.0.20220808
 
 ## Library description:
 TypeScript typings for Cloud Text-to-Speech API v1
@@ -10,10 +10,10 @@ TypeScript typings for Cloud Text-to-Speech API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.texttospeech |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 1 |
-| # downloads        | 897 |
-| # stars            | 0 |
+| # releases         | 58 |
+| # dependents       | 0.0 |
+| # downloads        | 910.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

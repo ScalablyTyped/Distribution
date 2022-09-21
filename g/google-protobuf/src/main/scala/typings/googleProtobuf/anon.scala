@@ -12,7 +12,6 @@ import typings.googleProtobuf.mod.Map
 import typings.googleProtobuf.mod.Message
 import typings.googleProtobuf.mod.Message.MessageArray
 import typings.googleProtobuf.mod.Message.StaticToObject
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,28 +26,28 @@ object anon {
   @js.native
   trait InstantiableV[V]
     extends StObject
-       with Instantiable1[/* init */ js.Any, V]
+       with Instantiable1[/* init */ Any, V]
   
   @js.native
   trait TypeofMessage
     extends StObject
        with Instantiable0[Message] {
     
-    def addToRepeatedField(msg: Message, fieldNumber: Double, value: js.Any): Unit = js.native
-    def addToRepeatedField(msg: Message, fieldNumber: Double, value: js.Any, index: Double): Unit = js.native
+    def addToRepeatedField(msg: Message, fieldNumber: Double, value: Any): Unit = js.native
+    def addToRepeatedField(msg: Message, fieldNumber: Double, value: Any, index: Double): Unit = js.native
     
     def addToRepeatedWrapperField[T /* <: Message */](msg: Message, fieldNumber: Double, value: T, ctor: Instantiable[T]): T = js.native
     def addToRepeatedWrapperField[T /* <: Message */](msg: Message, fieldNumber: Double, value: T, ctor: Instantiable[T], index: Double): T = js.native
     def addToRepeatedWrapperField[T /* <: Message */](msg: Message, fieldNumber: Double, value: Unit, ctor: Instantiable[T]): T = js.native
     def addToRepeatedWrapperField[T /* <: Message */](msg: Message, fieldNumber: Double, value: Unit, ctor: Instantiable[T], index: Double): T = js.native
     
-    def bytesAsB64(bytes: Uint8Array): String = js.native
+    def bytesAsB64(bytes: js.typedarray.Uint8Array): String = js.native
     
-    def bytesAsU8(str: String): Uint8Array = js.native
+    def bytesAsU8(str: String): js.typedarray.Uint8Array = js.native
     
-    def bytesListAsB64(bytesList: js.Array[Uint8Array]): js.Array[String] = js.native
+    def bytesListAsB64(bytesList: js.Array[js.typedarray.Uint8Array]): js.Array[String] = js.native
     
-    def bytesListAsU8(strList: js.Array[String]): js.Array[Uint8Array] = js.native
+    def bytesListAsU8(strList: js.Array[String]): js.Array[js.typedarray.Uint8Array] = js.native
     
     def clone[T /* <: Message */](msg: T): T = js.native
     
@@ -56,7 +55,7 @@ object anon {
     
     def compareExtensions(extension1: js.Object, extension2: js.Object): Boolean = js.native
     
-    def compareFields(field1: js.Any, field2: js.Any): Boolean = js.native
+    def compareFields(field1: Any, field2: Any): Boolean = js.native
     
     def computeOneofCase(msg: Message, oneof: js.Array[Double]): Double = js.native
     
@@ -64,7 +63,7 @@ object anon {
     
     // These are `abstract static`, but that isn't allowed. Subclasses of Message will have these methods and properties
     // and not having them on Message makes using this class for its intended purpose quite difficult.
-    def deserializeBinary(bytes: Uint8Array): Message = js.native
+    def deserializeBinary(bytes: js.typedarray.Uint8Array): Message = js.native
     
     def deserializeBinaryFromReader(message: Message, reader: BinaryReader): Message = js.native
     
@@ -80,12 +79,13 @@ object anon {
     
     def getFieldWithDefault[T](msg: Message, fieldNumber: Double, defaultValue: T): T = js.native
     
+    def getMapField(msg: Message, fieldNumber: Double, noLazyCreate: Boolean): Map[Any, Any] = js.native
     def getMapField(
       msg: Message,
       fieldNumber: Double,
       noLazyCreate: Boolean,
       valueCtor: /* import warning: importer.ImportType#apply Failed type conversion: typeof Message */ js.Any
-    ): Map[js.Any, js.Any] = js.native
+    ): Map[Any, Any] = js.native
     
     def getOptionalFloatingPointField(msg: Message, fieldNumber: Double): js.UndefOr[Double] = js.native
     
@@ -117,6 +117,14 @@ object anon {
       data: MessageArray,
       messageId: String,
       suggestedPivot: Double,
+      repeatedFields: Null,
+      oneofFields: js.Array[js.Array[Double]]
+    ): Unit = js.native
+    def initialize(
+      msg: Message,
+      data: MessageArray,
+      messageId: String,
+      suggestedPivot: Double,
       repeatedFields: Unit,
       oneofFields: js.Array[js.Array[Double]]
     ): Unit = js.native
@@ -141,6 +149,14 @@ object anon {
       data: MessageArray,
       messageId: Double,
       suggestedPivot: Double,
+      repeatedFields: Null,
+      oneofFields: js.Array[js.Array[Double]]
+    ): Unit = js.native
+    def initialize(
+      msg: Message,
+      data: MessageArray,
+      messageId: Double,
+      suggestedPivot: Double,
       repeatedFields: Unit,
       oneofFields: js.Array[js.Array[Double]]
     ): Unit = js.native
@@ -156,30 +172,30 @@ object anon {
     
     def setOneofField(msg: Message, fieldNumber: Double, oneof: js.Array[Double], value: FieldValue): Unit = js.native
     
-    def setOneofWrapperField(msg: Message, fieldNumber: Double, oneof: js.Array[Double], value: js.Any): Unit = js.native
+    def setOneofWrapperField(msg: Message, fieldNumber: Double, oneof: js.Array[Double], value: Any): Unit = js.native
     
     def setRepeatedWrapperField[T /* <: Message */](msg: Message, fieldNumber: Double): Unit = js.native
     def setRepeatedWrapperField[T /* <: Message */](msg: Message, fieldNumber: Double, value: js.Array[T]): Unit = js.native
     
     def setWrapperField[T /* <: Message */](msg: Message, fieldNumber: Double): Unit = js.native
     def setWrapperField[T /* <: Message */](msg: Message, fieldNumber: Double, value: T): Unit = js.native
-    def setWrapperField[T /* <: Message */](msg: Message, fieldNumber: Double, value: Map[js.Any, js.Any]): Unit = js.native
+    def setWrapperField[T /* <: Message */](msg: Message, fieldNumber: Double, value: Map[Any, Any]): Unit = js.native
     
-    def toMap(field: js.Array[js.Any], mapKeyGetterFn: js.Function1[/* field */ js.Any, String]): Unit = js.native
+    def toMap(field: js.Array[Any], mapKeyGetterFn: js.Function1[/* field */ Any, String]): Unit = js.native
     def toMap(
-      field: js.Array[js.Any],
-      mapKeyGetterFn: js.Function1[/* field */ js.Any, String],
+      field: js.Array[Any],
+      mapKeyGetterFn: js.Function1[/* field */ Any, String],
       toObjectFn: Unit,
       includeInstance: Boolean
     ): Unit = js.native
     def toMap(
-      field: js.Array[js.Any],
-      mapKeyGetterFn: js.Function1[/* field */ js.Any, String],
+      field: js.Array[Any],
+      mapKeyGetterFn: js.Function1[/* field */ Any, String],
       toObjectFn: StaticToObject
     ): Unit = js.native
     def toMap(
-      field: js.Array[js.Any],
-      mapKeyGetterFn: js.Function1[/* field */ js.Any, String],
+      field: js.Array[Any],
+      mapKeyGetterFn: js.Function1[/* field */ Any, String],
       toObjectFn: StaticToObject,
       includeInstance: Boolean
     ): Unit = js.native
@@ -216,21 +232,21 @@ object anon {
     extends StObject
        with Instantiable0[Message] {
     
-    def addToRepeatedField(msg: Message, fieldNumber: Double, value: js.Any): Unit = js.native
-    def addToRepeatedField(msg: Message, fieldNumber: Double, value: js.Any, index: Double): Unit = js.native
+    def addToRepeatedField(msg: Message, fieldNumber: Double, value: Any): Unit = js.native
+    def addToRepeatedField(msg: Message, fieldNumber: Double, value: Any, index: Double): Unit = js.native
     
     def addToRepeatedWrapperField[T /* <: Message */](msg: Message, fieldNumber: Double, value: T, ctor: Instantiable[T]): T = js.native
     def addToRepeatedWrapperField[T /* <: Message */](msg: Message, fieldNumber: Double, value: T, ctor: Instantiable[T], index: Double): T = js.native
     def addToRepeatedWrapperField[T /* <: Message */](msg: Message, fieldNumber: Double, value: Unit, ctor: Instantiable[T]): T = js.native
     def addToRepeatedWrapperField[T /* <: Message */](msg: Message, fieldNumber: Double, value: Unit, ctor: Instantiable[T], index: Double): T = js.native
     
-    def bytesAsB64(bytes: Uint8Array): String = js.native
+    def bytesAsB64(bytes: js.typedarray.Uint8Array): String = js.native
     
-    def bytesAsU8(str: String): Uint8Array = js.native
+    def bytesAsU8(str: String): js.typedarray.Uint8Array = js.native
     
-    def bytesListAsB64(bytesList: js.Array[Uint8Array]): js.Array[String] = js.native
+    def bytesListAsB64(bytesList: js.Array[js.typedarray.Uint8Array]): js.Array[String] = js.native
     
-    def bytesListAsU8(strList: js.Array[String]): js.Array[Uint8Array] = js.native
+    def bytesListAsU8(strList: js.Array[String]): js.Array[js.typedarray.Uint8Array] = js.native
     
     def clone[T /* <: Message */](msg: T): T = js.native
     
@@ -238,7 +254,7 @@ object anon {
     
     def compareExtensions(extension1: js.Object, extension2: js.Object): Boolean = js.native
     
-    def compareFields(field1: js.Any, field2: js.Any): Boolean = js.native
+    def compareFields(field1: Any, field2: Any): Boolean = js.native
     
     def computeOneofCase(msg: Message, oneof: js.Array[Double]): Double = js.native
     
@@ -246,7 +262,7 @@ object anon {
     
     // These are `abstract static`, but that isn't allowed. Subclasses of Message will have these methods and properties
     // and not having them on Message makes using this class for its intended purpose quite difficult.
-    def deserializeBinary(bytes: Uint8Array): Message = js.native
+    def deserializeBinary(bytes: js.typedarray.Uint8Array): Message = js.native
     
     def deserializeBinaryFromReader(message: Message, reader: BinaryReader): Message = js.native
     
@@ -262,12 +278,13 @@ object anon {
     
     def getFieldWithDefault[T](msg: Message, fieldNumber: Double, defaultValue: T): T = js.native
     
+    def getMapField(msg: Message, fieldNumber: Double, noLazyCreate: Boolean): Map[Any, Any] = js.native
     def getMapField(
       msg: Message,
       fieldNumber: Double,
       noLazyCreate: Boolean,
       valueCtor: /* import warning: importer.ImportType#apply Failed type conversion: typeof Message */ js.Any
-    ): Map[js.Any, js.Any] = js.native
+    ): Map[Any, Any] = js.native
     
     def getOptionalFloatingPointField(msg: Message, fieldNumber: Double): js.UndefOr[Double] = js.native
     
@@ -299,6 +316,14 @@ object anon {
       data: MessageArray,
       messageId: String,
       suggestedPivot: Double,
+      repeatedFields: Null,
+      oneofFields: js.Array[js.Array[Double]]
+    ): Unit = js.native
+    def initialize(
+      msg: Message,
+      data: MessageArray,
+      messageId: String,
+      suggestedPivot: Double,
       repeatedFields: Unit,
       oneofFields: js.Array[js.Array[Double]]
     ): Unit = js.native
@@ -323,6 +348,14 @@ object anon {
       data: MessageArray,
       messageId: Double,
       suggestedPivot: Double,
+      repeatedFields: Null,
+      oneofFields: js.Array[js.Array[Double]]
+    ): Unit = js.native
+    def initialize(
+      msg: Message,
+      data: MessageArray,
+      messageId: Double,
+      suggestedPivot: Double,
       repeatedFields: Unit,
       oneofFields: js.Array[js.Array[Double]]
     ): Unit = js.native
@@ -338,30 +371,30 @@ object anon {
     
     def setOneofField(msg: Message, fieldNumber: Double, oneof: js.Array[Double], value: FieldValue): Unit = js.native
     
-    def setOneofWrapperField(msg: Message, fieldNumber: Double, oneof: js.Array[Double], value: js.Any): Unit = js.native
+    def setOneofWrapperField(msg: Message, fieldNumber: Double, oneof: js.Array[Double], value: Any): Unit = js.native
     
     def setRepeatedWrapperField[T /* <: Message */](msg: Message, fieldNumber: Double): Unit = js.native
     def setRepeatedWrapperField[T /* <: Message */](msg: Message, fieldNumber: Double, value: js.Array[T]): Unit = js.native
     
     def setWrapperField[T /* <: Message */](msg: Message, fieldNumber: Double): Unit = js.native
     def setWrapperField[T /* <: Message */](msg: Message, fieldNumber: Double, value: T): Unit = js.native
-    def setWrapperField[T /* <: Message */](msg: Message, fieldNumber: Double, value: Map[js.Any, js.Any]): Unit = js.native
+    def setWrapperField[T /* <: Message */](msg: Message, fieldNumber: Double, value: Map[Any, Any]): Unit = js.native
     
-    def toMap(field: js.Array[js.Any], mapKeyGetterFn: js.Function1[/* field */ js.Any, String]): Unit = js.native
+    def toMap(field: js.Array[Any], mapKeyGetterFn: js.Function1[/* field */ Any, String]): Unit = js.native
     def toMap(
-      field: js.Array[js.Any],
-      mapKeyGetterFn: js.Function1[/* field */ js.Any, String],
+      field: js.Array[Any],
+      mapKeyGetterFn: js.Function1[/* field */ Any, String],
       toObjectFn: Unit,
       includeInstance: Boolean
     ): Unit = js.native
     def toMap(
-      field: js.Array[js.Any],
-      mapKeyGetterFn: js.Function1[/* field */ js.Any, String],
+      field: js.Array[Any],
+      mapKeyGetterFn: js.Function1[/* field */ Any, String],
       toObjectFn: StaticToObject
     ): Unit = js.native
     def toMap(
-      field: js.Array[js.Any],
-      mapKeyGetterFn: js.Function1[/* field */ js.Any, String],
+      field: js.Array[Any],
+      mapKeyGetterFn: js.Function1[/* field */ Any, String],
       toObjectFn: StaticToObject,
       includeInstance: Boolean
     ): Unit = js.native

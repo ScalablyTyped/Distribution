@@ -13,8 +13,8 @@ trait UploadTypeUploadprotocol extends StObject {
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.undefined
   
-  /** Required. The ID of the DV360 advertiser to which the location lists belongs. */
-  var advertiserId: String
+  /** The ID of the advertiser that owns the created channel. */
+  var advertiserId: js.UndefOr[String] = js.undefined
   
   /** Data format for response. */
   var alt: js.UndefOr[String] = js.undefined
@@ -28,20 +28,17 @@ trait UploadTypeUploadprotocol extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** Output only. The unique ID of the location list. Assigned by the system. */
-  var locationListId: String
-  
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
+  
+  /** The ID of the partner that owns the created channel. */
+  var partnerId: String
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
-  
-  /** Required. The mask to control which fields to update. */
-  var updateMask: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -51,8 +48,8 @@ trait UploadTypeUploadprotocol extends StObject {
 }
 object UploadTypeUploadprotocol {
   
-  inline def apply(advertiserId: String, locationListId: String): UploadTypeUploadprotocol = {
-    val __obj = js.Dynamic.literal(advertiserId = advertiserId.asInstanceOf[js.Any], locationListId = locationListId.asInstanceOf[js.Any])
+  inline def apply(partnerId: String): UploadTypeUploadprotocol = {
+    val __obj = js.Dynamic.literal(partnerId = partnerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadTypeUploadprotocol]
   }
   
@@ -67,6 +64,8 @@ object UploadTypeUploadprotocol {
     inline def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
     
     inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
+    
+    inline def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
@@ -84,11 +83,11 @@ object UploadTypeUploadprotocol {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    inline def setLocationListId(value: String): Self = StObject.set(x, "locationListId", value.asInstanceOf[js.Any])
-    
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
+    
+    inline def setPartnerId(value: String): Self = StObject.set(x, "partnerId", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
@@ -97,10 +96,6 @@ object UploadTypeUploadprotocol {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
-    
-    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
-    
-    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

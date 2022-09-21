@@ -1,11 +1,12 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import typings.gapiClient.gapi.client.Request
+import typings.maximMazurokGapiClientCompute.anon.CallbackFieldsKeyOauthtokenPrettyPrintProject
 import typings.maximMazurokGapiClientCompute.anon.Filter
-import typings.maximMazurokGapiClientCompute.anon.OauthtokenPrettyPrintProjectQuotaUserRegionRequestIdResource
+import typings.maximMazurokGapiClientCompute.anon.Oauthtoken
 import typings.maximMazurokGapiClientCompute.anon.RegionTargetHttpsProxy
 import typings.maximMazurokGapiClientCompute.anon.ResourceTargetHttpsProxy
-import typings.maximMazurokGapiClientCompute.anon.TargetHttpsProxyUserIp
+import typings.maximMazurokGapiClientCompute.anon.TargetHttpsProxyUploadType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,8 +23,8 @@ trait RegionTargetHttpsProxiesResource extends StObject {
   def get(request: RegionTargetHttpsProxy): Request[TargetHttpsProxy] = js.native
   
   /** Creates a TargetHttpsProxy resource in the specified project and region using the data included in the request. */
-  def insert(request: OauthtokenPrettyPrintProjectQuotaUserRegionRequestIdResource): Request[Operation] = js.native
-  def insert(request: typings.maximMazurokGapiClientCompute.anon.Project, body: TargetHttpsProxy): Request[Operation] = js.native
+  def insert(request: CallbackFieldsKeyOauthtokenPrettyPrintProject): Request[Operation] = js.native
+  def insert(request: Oauthtoken, body: TargetHttpsProxy): Request[Operation] = js.native
   
   /** Retrieves the list of TargetHttpsProxy resources available to the specified project in the specified region. */
   def list(): Request[TargetHttpsProxyList] = js.native
@@ -37,6 +38,6 @@ trait RegionTargetHttpsProxiesResource extends StObject {
   ): Request[Operation] = js.native
   
   /** Changes the URL map for TargetHttpsProxy. */
-  def setUrlMap(request: TargetHttpsProxyUserIp): Request[Operation] = js.native
+  def setUrlMap(request: TargetHttpsProxyUploadType): Request[Operation] = js.native
   def setUrlMap(request: typings.maximMazurokGapiClientCompute.anon.TargetHttpsProxy, body: UrlMapReference): Request[Operation] = js.native
 }

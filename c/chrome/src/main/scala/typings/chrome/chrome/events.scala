@@ -1,5 +1,6 @@
 package typings.chrome.chrome
 
+import typings.chrome.chrome.webRequest.RequestFilter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,15 +15,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object events {
   
   @js.native
-  trait Event[T /* <: js.Function */] extends StObject {
+  trait BaseEvent[T /* <: js.Function */] extends StObject {
     
-    /**
-      * Registers an event listener callback to an event.
-      * @param callback Called when an event occurs. The parameters of this function depend on the type of event.
-      * The callback parameter should be a function that looks like this:
-      * function() {...};
-      */
     def addListener(callback: T): Unit = js.native
+    def addListener(callback: T, filter: RequestFilter): Unit = js.native
     
     /**
       * Registers rules to handle events.
@@ -82,13 +78,24 @@ object events {
     def removeRules(ruleIdentifiers: Unit, callback: js.Function0[Unit]): Unit = js.native
   }
   
+  /** An object which allows the addition and removal of listeners for a Chrome event. */
+  @js.native
+  trait Event[T /* <: js.Function */]
+    extends StObject
+       with BaseEvent[T]
+  
+  @js.native
+  trait EventWithRequiredFilterInAddListener[T /* <: js.Function */]
+    extends StObject
+       with BaseEvent[T]
+  
   trait Rule extends StObject {
     
     /** List of actions that are triggered if one of the condtions is fulfilled. */
-    var actions: js.Array[js.Any]
+    var actions: js.Array[Any]
     
     /** List of conditions that can trigger the actions. */
-    var conditions: js.Array[js.Any]
+    var conditions: js.Array[Any]
     
     /** Optional. Optional identifier that allows referencing this rule.  */
     var id: js.UndefOr[String] = js.undefined
@@ -105,20 +112,20 @@ object events {
   }
   object Rule {
     
-    inline def apply(actions: js.Array[js.Any], conditions: js.Array[js.Any]): Rule = {
+    inline def apply(actions: js.Array[Any], conditions: js.Array[Any]): Rule = {
       val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], conditions = conditions.asInstanceOf[js.Any])
       __obj.asInstanceOf[Rule]
     }
     
     extension [Self <: Rule](x: Self) {
       
-      inline def setActions(value: js.Array[js.Any]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: js.Array[Any]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      inline def setActionsVarargs(value: js.Any*): Self = StObject.set(x, "actions", js.Array(value :_*))
+      inline def setActionsVarargs(value: Any*): Self = StObject.set(x, "actions", js.Array(value*))
       
-      inline def setConditions(value: js.Array[js.Any]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+      inline def setConditions(value: js.Array[Any]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
       
-      inline def setConditionsVarargs(value: js.Any*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+      inline def setConditionsVarargs(value: Any*): Self = StObject.set(x, "conditions", js.Array(value*))
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -132,7 +139,7 @@ object events {
       
       inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     }
   }
   
@@ -170,7 +177,7 @@ object events {
     var pathSuffix: js.UndefOr[String] = js.undefined
     
     /** Optional. Matches if the port of the URL is contained in any of the specified port lists. For example [80, 443, [1000, 1200]] matches all requests on port 80, 443 and in the range 1000-1200.  */
-    var ports: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var ports: js.UndefOr[js.Array[Double | js.Array[Double]]] = js.undefined
     
     /** Optional. Matches if the query segment of the URL contains a specified string.  */
     var queryContains: js.UndefOr[String] = js.undefined
@@ -251,11 +258,11 @@ object events {
       
       inline def setPathSuffixUndefined: Self = StObject.set(x, "pathSuffix", js.undefined)
       
-      inline def setPorts(value: js.Array[js.Any]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
+      inline def setPorts(value: js.Array[Double | js.Array[Double]]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
       
       inline def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
       
-      inline def setPortsVarargs(value: js.Any*): Self = StObject.set(x, "ports", js.Array(value :_*))
+      inline def setPortsVarargs(value: (Double | js.Array[Double])*): Self = StObject.set(x, "ports", js.Array(value*))
       
       inline def setQueryContains(value: String): Self = StObject.set(x, "queryContains", value.asInstanceOf[js.Any])
       
@@ -277,7 +284,7 @@ object events {
       
       inline def setSchemesUndefined: Self = StObject.set(x, "schemes", js.undefined)
       
-      inline def setSchemesVarargs(value: String*): Self = StObject.set(x, "schemes", js.Array(value :_*))
+      inline def setSchemesVarargs(value: String*): Self = StObject.set(x, "schemes", js.Array(value*))
       
       inline def setUrlContains(value: String): Self = StObject.set(x, "urlContains", value.asInstanceOf[js.Any])
       

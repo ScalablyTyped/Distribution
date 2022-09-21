@@ -8,5 +8,5 @@ object brandedNavBarMod {
   
   @JSImport("@nulogy/components/src/BrandedNavBar", "BrandedNavBar")
   @js.native
-  val BrandedNavBar: js.Any = js.native
+  val BrandedNavBar: Any = js.native
 }

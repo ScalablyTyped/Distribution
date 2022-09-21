@@ -679,7 +679,7 @@ object JQueryWindow {
       
       inline def setCustBtnsUndefined: Self = StObject.set(x, "custBtns", js.undefined)
       
-      inline def setCustBtnsVarargs(value: Button*): Self = StObject.set(x, "custBtns", js.Array(value :_*))
+      inline def setCustBtnsVarargs(value: Button*): Self = StObject.set(x, "custBtns", js.Array(value*))
       
       inline def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
       

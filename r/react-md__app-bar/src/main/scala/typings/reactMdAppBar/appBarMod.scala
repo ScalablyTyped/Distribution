@@ -60,7 +60,7 @@ object appBarMod {
       * prop even though it is possible since it leads to bad practice and props
       * might not get passed as one would expect.
       */
-    var component: js.UndefOr[ElementType[js.Any]] = js.undefined
+    var component: js.UndefOr[ElementType[Any]] = js.undefined
     
     /**
       * Boolean if the `AppBar` should be fixed to the top or bottom of the page.
@@ -117,7 +117,7 @@ object appBarMod {
     
     extension [Self <: AppBarProps](x: Self) {
       
-      inline def setComponent(value: ElementType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: ElementType[Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       

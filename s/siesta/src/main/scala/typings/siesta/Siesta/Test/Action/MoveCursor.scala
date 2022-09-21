@@ -14,9 +14,9 @@ trait MoveCursor
      with IAction
      with IHasTarget {
   
-  var by: js.UndefOr[js.Any] = js.undefined
+  var by: js.UndefOr[Any] = js.undefined
   
-  var to: js.UndefOr[js.Any] = js.undefined
+  var to: js.UndefOr[Any] = js.undefined
 }
 object MoveCursor {
   
@@ -27,11 +27,11 @@ object MoveCursor {
   
   extension [Self <: MoveCursor](x: Self) {
     
-    inline def setBy(value: js.Any): Self = StObject.set(x, "by", value.asInstanceOf[js.Any])
+    inline def setBy(value: Any): Self = StObject.set(x, "by", value.asInstanceOf[js.Any])
     
     inline def setByUndefined: Self = StObject.set(x, "by", js.undefined)
     
-    inline def setTo(value: js.Any): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: Any): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
     inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
   }

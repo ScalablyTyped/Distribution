@@ -36,16 +36,16 @@ object CompiledResult {
     
     inline def setErrors(value: js.Array[ErrorType]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    inline def setErrorsVarargs(value: ErrorType*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: ErrorType*): Self = StObject.set(x, "errors", js.Array(value*))
     
     inline def setRender(value: String): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     
     inline def setStaticRenderFns(value: js.Array[String]): Self = StObject.set(x, "staticRenderFns", value.asInstanceOf[js.Any])
     
-    inline def setStaticRenderFnsVarargs(value: String*): Self = StObject.set(x, "staticRenderFns", js.Array(value :_*))
+    inline def setStaticRenderFnsVarargs(value: String*): Self = StObject.set(x, "staticRenderFns", js.Array(value*))
     
     inline def setTips(value: js.Array[ErrorType]): Self = StObject.set(x, "tips", value.asInstanceOf[js.Any])
     
-    inline def setTipsVarargs(value: ErrorType*): Self = StObject.set(x, "tips", js.Array(value :_*))
+    inline def setTipsVarargs(value: ErrorType*): Self = StObject.set(x, "tips", js.Array(value*))
   }
 }

@@ -1,7 +1,6 @@
 package typings.tarantoolDriver
 
 import typings.node.eventsMod.EventEmitter
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,37 +9,37 @@ object mod {
   
   @JSImport("tarantool-driver", JSImport.Namespace)
   @js.native
-  class ^ protected () extends TarantoolConnection {
+  open class ^ protected () extends TarantoolConnection {
     def this(options: TarantoolOptions) = this()
   }
   
   @js.native
   trait TarantoolConnection extends EventEmitter {
     
-    def call(functionName: String, args: js.Any*): js.Promise[js.Any] = js.native
+    def call(functionName: String, args: Any*): js.Promise[Any] = js.native
     
     /* Connection */
     def connect(): js.Promise[Unit] = js.native
     
-    def delete(spaceId: String, indexId: String, key: js.Array[js.Any]): js.Promise[js.Any] = js.native
-    def delete(spaceId: String, indexId: Double, key: js.Array[js.Any]): js.Promise[js.Any] = js.native
-    def delete(spaceId: Double, indexId: String, key: js.Array[js.Any]): js.Promise[js.Any] = js.native
-    def delete(spaceId: Double, indexId: Double, key: js.Array[js.Any]): js.Promise[js.Any] = js.native
+    def delete(spaceId: String, indexId: String, key: js.Array[Any]): js.Promise[Any] = js.native
+    def delete(spaceId: String, indexId: Double, key: js.Array[Any]): js.Promise[Any] = js.native
+    def delete(spaceId: Double, indexId: String, key: js.Array[Any]): js.Promise[Any] = js.native
+    def delete(spaceId: Double, indexId: Double, key: js.Array[Any]): js.Promise[Any] = js.native
     
     def destroy(): Unit = js.native
     
     def disconnect(): Unit = js.native
     def disconnect(reconnect: Boolean): Unit = js.native
     
-    def eval(expression: String, args: js.Any*): js.Promise[js.Any] = js.native
+    def eval(expression: String, args: Any*): js.Promise[Any] = js.native
     
-    def flushQueue(cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def flushQueue(cb: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
     
-    def insert(spaceId: String, tuple: js.Array[js.Any]): js.Promise[js.Any] = js.native
-    def insert(spaceId: Double, tuple: js.Array[js.Any]): js.Promise[js.Any] = js.native
+    def insert(spaceId: String, tuple: js.Array[Any]): js.Promise[Any] = js.native
+    def insert(spaceId: Double, tuple: js.Array[Any]): js.Promise[Any] = js.native
     
-    def replace(spaceId: String, tuple: js.Array[js.Any]): js.Promise[js.Any] = js.native
-    def replace(spaceId: Double, tuple: js.Array[js.Any]): js.Promise[js.Any] = js.native
+    def replace(spaceId: String, tuple: js.Array[Any]): js.Promise[Any] = js.native
+    def replace(spaceId: Double, tuple: js.Array[Any]): js.Promise[Any] = js.native
     
     def select(
       spaceId: String,
@@ -48,24 +47,24 @@ object mod {
       limit: Double,
       offset: Double,
       iterator: String,
-      key: js.Array[js.Any]
-    ): js.Promise[js.Any] = js.native
+      key: js.Array[Any]
+    ): js.Promise[Any] = js.native
     def select(
       spaceId: String,
       indexId: Double,
       limit: Double,
       offset: Double,
       iterator: String,
-      key: js.Array[js.Any]
-    ): js.Promise[js.Any] = js.native
+      key: js.Array[Any]
+    ): js.Promise[Any] = js.native
     def select(
       spaceId: Double,
       indexId: String,
       limit: Double,
       offset: Double,
       iterator: String,
-      key: js.Array[js.Any]
-    ): js.Promise[js.Any] = js.native
+      key: js.Array[Any]
+    ): js.Promise[Any] = js.native
     /* Commands */
     def select(
       spaceId: Double,
@@ -73,16 +72,16 @@ object mod {
       limit: Double,
       offset: Double,
       iterator: String,
-      key: js.Array[js.Any]
-    ): js.Promise[js.Any] = js.native
+      key: js.Array[Any]
+    ): js.Promise[Any] = js.native
     
-    def update(spaceId: String, indexId: String, key: js.Array[js.Any], ops: js.Array[js.Any]): js.Promise[js.Any] = js.native
-    def update(spaceId: String, indexId: Double, key: js.Array[js.Any], ops: js.Array[js.Any]): js.Promise[js.Any] = js.native
-    def update(spaceId: Double, indexId: String, key: js.Array[js.Any], ops: js.Array[js.Any]): js.Promise[js.Any] = js.native
-    def update(spaceId: Double, indexId: Double, key: js.Array[js.Any], ops: js.Array[js.Any]): js.Promise[js.Any] = js.native
+    def update(spaceId: String, indexId: String, key: js.Array[Any], ops: js.Array[Any]): js.Promise[Any] = js.native
+    def update(spaceId: String, indexId: Double, key: js.Array[Any], ops: js.Array[Any]): js.Promise[Any] = js.native
+    def update(spaceId: Double, indexId: String, key: js.Array[Any], ops: js.Array[Any]): js.Promise[Any] = js.native
+    def update(spaceId: Double, indexId: Double, key: js.Array[Any], ops: js.Array[Any]): js.Promise[Any] = js.native
     
-    def upsert(spaceId: String, ops: js.Array[js.Any], tuple: js.Array[js.Any]): js.Promise[js.Any] = js.native
-    def upsert(spaceId: Double, ops: js.Array[js.Any], tuple: js.Array[js.Any]): js.Promise[js.Any] = js.native
+    def upsert(spaceId: String, ops: js.Array[Any], tuple: js.Array[Any]): js.Promise[Any] = js.native
+    def upsert(spaceId: Double, ops: js.Array[Any], tuple: js.Array[Any]): js.Promise[Any] = js.native
   }
   
   trait TarantoolOptions extends StObject {
@@ -138,7 +137,7 @@ object mod {
       
       inline def setReserveHostsUndefined: Self = StObject.set(x, "reserveHosts", js.undefined)
       
-      inline def setReserveHostsVarargs(value: String*): Self = StObject.set(x, "reserveHosts", js.Array(value :_*))
+      inline def setReserveHostsVarargs(value: String*): Self = StObject.set(x, "reserveHosts", js.Array(value*))
       
       inline def setRetryStrategy(value: /* times */ Double => Double): Self = StObject.set(x, "retryStrategy", js.Any.fromFunction1(value))
       

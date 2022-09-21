@@ -24,7 +24,7 @@ trait SigningCertificate extends StObject {
   /**
     * The date when the signing certificate was uploaded.
     */
-  var UploadDate: js.UndefOr[dateType] = js.undefined
+  var UploadDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the user the signing certificate is associated with.
@@ -51,7 +51,7 @@ object SigningCertificate {
     
     inline def setStatus(value: statusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    inline def setUploadDate(value: dateType): Self = StObject.set(x, "UploadDate", value.asInstanceOf[js.Any])
+    inline def setUploadDate(value: js.Date): Self = StObject.set(x, "UploadDate", value.asInstanceOf[js.Any])
     
     inline def setUploadDateUndefined: Self = StObject.set(x, "UploadDate", js.undefined)
     

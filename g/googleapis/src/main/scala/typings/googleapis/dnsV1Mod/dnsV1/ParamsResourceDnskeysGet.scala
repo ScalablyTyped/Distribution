@@ -1,9 +1,5 @@
 package typings.googleapis.dnsV1Mod.dnsV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,32 +9,27 @@ trait ParamsResourceDnskeysGet
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    *
+    * For mutating operation requests only. An optional identifier specified by the client. Must be unique for operation resources in the Operations collection.
     */
   var clientOperationId: js.UndefOr[String] = js.undefined
   
   /**
-    *
+    * An optional comma-separated list of digest types to compute and display for key signing keys. If omitted, the recommended digest type is computed and displayed.
     */
   var digestType: js.UndefOr[String] = js.undefined
   
   /**
-    *
+    * The identifier of the requested DnsKey.
     */
   var dnsKeyId: js.UndefOr[String] = js.undefined
   
   /**
-    *
+    * Identifies the managed zone addressed by this request. Can be the managed zone name or ID.
     */
   var managedZone: js.UndefOr[String] = js.undefined
   
   /**
-    *
+    * Identifies the project addressed by this request.
     */
   var project: js.UndefOr[String] = js.undefined
 }
@@ -50,10 +41,6 @@ object ParamsResourceDnskeysGet {
   }
   
   extension [Self <: ParamsResourceDnskeysGet](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setClientOperationId(value: String): Self = StObject.set(x, "clientOperationId", value.asInstanceOf[js.Any])
     

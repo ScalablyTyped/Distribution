@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GroupIdentity extends StObject {
   
   /**
-    * The AWS SSO ID of the group.
+    * The Amazon Web Services SSO ID of the group.
     */
   var id: IdentityId
 }

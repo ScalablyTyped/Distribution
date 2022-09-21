@@ -58,7 +58,7 @@ object ithemeslotruleMod {
       
       inline def setDependentRules(value: js.Array[IThemeSlotRule]): Self = StObject.set(x, "dependentRules", value.asInstanceOf[js.Any])
       
-      inline def setDependentRulesVarargs(value: IThemeSlotRule*): Self = StObject.set(x, "dependentRules", js.Array(value :_*))
+      inline def setDependentRulesVarargs(value: IThemeSlotRule*): Self = StObject.set(x, "dependentRules", js.Array(value*))
       
       inline def setInherits(value: IThemeSlotRule): Self = StObject.set(x, "inherits", value.asInstanceOf[js.Any])
       

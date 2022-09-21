@@ -6,19 +6,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object sourcesMod {
   
-  @JSImport("typedoc/dist/lib/models/sources", "SourceDirectory")
+  @JSImport("typedoc/dist/lib/models/sources", "RepositoryType")
   @js.native
-  class SourceDirectory ()
-    extends typings.typedoc.directoryMod.SourceDirectory {
-    def this(name: String) = this()
-    def this(name: String, parent: typings.typedoc.directoryMod.SourceDirectory) = this()
-    def this(name: Unit, parent: typings.typedoc.directoryMod.SourceDirectory) = this()
+  object RepositoryType extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.typedoc.sourcesRepositoryMod.RepositoryType & String] = js.native
+    
+    /* "bitbucket" */ val Bitbucket: typings.typedoc.sourcesRepositoryMod.RepositoryType.Bitbucket & String = js.native
+    
+    /* "github" */ val GitHub: typings.typedoc.sourcesRepositoryMod.RepositoryType.GitHub & String = js.native
+    
+    /* "gitlab" */ val GitLab: typings.typedoc.sourcesRepositoryMod.RepositoryType.GitLab & String = js.native
   }
   
-  @JSImport("typedoc/dist/lib/models/sources", "SourceFile")
+  @JSImport("typedoc/dist/lib/models/sources", "SourceReference")
   @js.native
-  class SourceFile protected ()
-    extends typings.typedoc.fileMod.SourceFile {
-    def this(fullFileName: String) = this()
+  open class SourceReference protected ()
+    extends typings.typedoc.fileMod.SourceReference {
+    def this(fileName: String, line: Double, character: Double) = this()
   }
 }

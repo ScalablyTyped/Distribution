@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("akumina-core", "Digispace.WidgetPropertyViews")
 @js.native
-class WidgetPropertyViews () extends StObject
+open class WidgetPropertyViews () extends StObject
 object WidgetPropertyViews {
   
   @JSImport("akumina-core", "Digispace.WidgetPropertyViews")

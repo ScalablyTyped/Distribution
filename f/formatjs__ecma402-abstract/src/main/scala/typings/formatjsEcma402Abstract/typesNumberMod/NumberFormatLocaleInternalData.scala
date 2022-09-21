@@ -33,7 +33,7 @@ object NumberFormatLocaleInternalData {
     
     inline def setNu(value: js.Array[String]): Self = StObject.set(x, "nu", value.asInstanceOf[js.Any])
     
-    inline def setNuVarargs(value: String*): Self = StObject.set(x, "nu", js.Array(value :_*))
+    inline def setNuVarargs(value: String*): Self = StObject.set(x, "nu", js.Array(value*))
     
     inline def setNumbers(value: RawNumberData): Self = StObject.set(x, "numbers", value.asInstanceOf[js.Any])
     

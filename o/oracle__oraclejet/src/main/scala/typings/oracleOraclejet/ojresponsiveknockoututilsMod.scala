@@ -10,7 +10,7 @@ object ojresponsiveknockoututilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createMediaQueryObservable(queryString: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createMediaQueryObservable")(queryString.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def createMediaQueryObservable(queryString: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createMediaQueryObservable")(queryString.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def createScreenRangeObservable(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createScreenRangeObservable")().asInstanceOf[js.Any]
+  inline def createScreenRangeObservable(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createScreenRangeObservable")().asInstanceOf[Any]
 }

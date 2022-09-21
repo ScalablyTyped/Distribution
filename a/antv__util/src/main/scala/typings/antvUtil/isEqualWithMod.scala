@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object isEqualWithMod {
   
-  @JSImport("@antv/util/lib/is-equal-with", JSImport.Namespace)
+  @JSImport("@antv/util/lib/lodash/is-equal-with", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

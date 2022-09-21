@@ -45,7 +45,7 @@ object bstreekvMod {
     * zero, or a positive integer as the first argument is less than, equal to,
     * or greater than the second.
     */
-  class default[K, V /* <: K */] ()
+  open class default[K, V /* <: K */] ()
     extends StObject
        with BSTreeKV[K, V] {
     def this(compareFunction: ICompareFunction[K]) = this()
@@ -65,7 +65,7 @@ object bstreekvMod {
     override def clear(): Unit = js.native
     
     /* private */ /* CompleteClass */
-    var compare: js.Any = js.native
+    var compare: Any = js.native
     
     /**
       * Returns true if this tree contains the specified element.
@@ -80,7 +80,7 @@ object bstreekvMod {
       * @private
       */
     /* private */ /* CompleteClass */
-    override def createNode(element: js.Any): js.Any = js.native
+    override def createNode(element: Any): Any = js.native
     
     /**
       * Executes the provided function once for each element present in this tree in inorder.
@@ -103,7 +103,7 @@ object bstreekvMod {
       * @private
       */
     /* private */ /* CompleteClass */
-    override def heightAux(node: js.Any): js.Any = js.native
+    override def heightAux(node: Any): Any = js.native
     
     /**
       * Executes the provided function once for each element present in this tree in
@@ -118,10 +118,10 @@ object bstreekvMod {
       * @private
       */
     /* private */ /* CompleteClass */
-    override def inorderTraversalAux(node: js.Any, callback: js.Any, signal: js.Any): js.Any = js.native
+    override def inorderTraversalAux(node: Any, callback: Any, signal: Any): Any = js.native
     
     /* private */ /* CompleteClass */
-    override def insertNode(node: js.Any): js.Any = js.native
+    override def insertNode(node: Any): Any = js.native
     
     /**
       * Returns true if this tree contains no elements.
@@ -143,7 +143,7 @@ object bstreekvMod {
       * @private
       */
     /* private */ /* CompleteClass */
-    override def levelTraversalAux(node: js.Any, callback: js.Any): js.Any = js.native
+    override def levelTraversalAux(node: Any, callback: Any): Any = js.native
     
     /**
       * Returns the maximum element of this tree.
@@ -157,7 +157,7 @@ object bstreekvMod {
       * @private
       */
     /* private */ /* CompleteClass */
-    override def maximumAux(node: js.Any): js.Any = js.native
+    override def maximumAux(node: Any): Any = js.native
     
     /**
       * Returns the minimum element of this tree.
@@ -171,10 +171,10 @@ object bstreekvMod {
       * @private
       */
     /* private */ /* CompleteClass */
-    override def minimumAux(node: js.Any): js.Any = js.native
+    override def minimumAux(node: Any): Any = js.native
     
     /* private */ /* CompleteClass */
-    var nElements: js.Any = js.native
+    var nElements: Any = js.native
     
     /**
       * Executes the provided function once for each element present in this tree in post-order.
@@ -188,7 +188,7 @@ object bstreekvMod {
       * @private
       */
     /* private */ /* CompleteClass */
-    override def postorderTraversalAux(node: js.Any, callback: js.Any, signal: js.Any): js.Any = js.native
+    override def postorderTraversalAux(node: Any, callback: Any, signal: Any): Any = js.native
     
     /**
       * Executes the provided function once for each element present in this tree in pre-order.
@@ -202,7 +202,7 @@ object bstreekvMod {
       * @private
       */
     /* private */ /* CompleteClass */
-    override def preorderTraversalAux(node: js.Any, callback: js.Any, signal: js.Any): js.Any = js.native
+    override def preorderTraversalAux(node: Any, callback: Any, signal: Any): Any = js.native
     
     /**
       * Removes the specified element from this tree if it is present.
@@ -215,10 +215,10 @@ object bstreekvMod {
       * @private
       */
     /* private */ /* CompleteClass */
-    override def removeNode(node: js.Any): js.Any = js.native
+    override def removeNode(node: Any): Any = js.native
     
     /* private */ /* CompleteClass */
-    var root: js.Any = js.native
+    var root: Any = js.native
     
     /**
       * Looks for the value with the provided search key.
@@ -232,7 +232,7 @@ object bstreekvMod {
       * @private
       */
     /* private */ /* CompleteClass */
-    override def searchNode(node: js.Any, element: js.Any): js.Any = js.native
+    override def searchNode(node: Any, element: Any): Any = js.native
     
     /**
       * Returns the number of elements in this tree.
@@ -252,7 +252,7 @@ object bstreekvMod {
       * @private
       */
     /* private */ /* CompleteClass */
-    override def transplant(n1: js.Any, n2: js.Any): js.Any = js.native
+    override def transplant(n1: Any, n2: Any): Any = js.native
   }
   
   trait BSTreeKV[K, V /* <: K */] extends StObject {
@@ -269,7 +269,7 @@ object bstreekvMod {
       */
     def clear(): Unit
     
-    /* private */ var compare: js.Any
+    /* private */ var compare: Any
     
     /**
       * Returns true if this tree contains the specified element.
@@ -282,7 +282,7 @@ object bstreekvMod {
     /**
       * @private
       */
-    /* private */ def createNode(element: js.Any): js.Any
+    /* private */ def createNode(element: Any): Any
     
     /**
       * Executes the provided function once for each element present in this tree in inorder.
@@ -302,7 +302,7 @@ object bstreekvMod {
     /**
       * @private
       */
-    /* private */ def heightAux(node: js.Any): js.Any
+    /* private */ def heightAux(node: Any): Any
     
     /**
       * Executes the provided function once for each element present in this tree in
@@ -315,9 +315,9 @@ object bstreekvMod {
     /**
       * @private
       */
-    /* private */ def inorderTraversalAux(node: js.Any, callback: js.Any, signal: js.Any): js.Any
+    /* private */ def inorderTraversalAux(node: Any, callback: Any, signal: Any): Any
     
-    /* private */ def insertNode(node: js.Any): js.Any
+    /* private */ def insertNode(node: Any): Any
     
     /**
       * Returns true if this tree contains no elements.
@@ -336,7 +336,7 @@ object bstreekvMod {
     /**
       * @private
       */
-    /* private */ def levelTraversalAux(node: js.Any, callback: js.Any): js.Any
+    /* private */ def levelTraversalAux(node: Any, callback: Any): Any
     
     /**
       * Returns the maximum element of this tree.
@@ -348,7 +348,7 @@ object bstreekvMod {
     /**
       * @private
       */
-    /* private */ def maximumAux(node: js.Any): js.Any
+    /* private */ def maximumAux(node: Any): Any
     
     /**
       * Returns the minimum element of this tree.
@@ -360,9 +360,9 @@ object bstreekvMod {
     /**
       * @private
       */
-    /* private */ def minimumAux(node: js.Any): js.Any
+    /* private */ def minimumAux(node: Any): Any
     
-    /* private */ var nElements: js.Any
+    /* private */ var nElements: Any
     
     /**
       * Executes the provided function once for each element present in this tree in post-order.
@@ -374,7 +374,7 @@ object bstreekvMod {
     /**
       * @private
       */
-    /* private */ def postorderTraversalAux(node: js.Any, callback: js.Any, signal: js.Any): js.Any
+    /* private */ def postorderTraversalAux(node: Any, callback: Any, signal: Any): Any
     
     /**
       * Executes the provided function once for each element present in this tree in pre-order.
@@ -386,7 +386,7 @@ object bstreekvMod {
     /**
       * @private
       */
-    /* private */ def preorderTraversalAux(node: js.Any, callback: js.Any, signal: js.Any): js.Any
+    /* private */ def preorderTraversalAux(node: Any, callback: Any, signal: Any): Any
     
     /**
       * Removes the specified element from this tree if it is present.
@@ -397,9 +397,9 @@ object bstreekvMod {
     /**
       * @private
       */
-    /* private */ def removeNode(node: js.Any): js.Any
+    /* private */ def removeNode(node: Any): Any
     
-    /* private */ var root: js.Any
+    /* private */ var root: Any
     
     /**
       * Looks for the value with the provided search key.
@@ -411,7 +411,7 @@ object bstreekvMod {
     /**
       * @private
       */
-    /* private */ def searchNode(node: js.Any, element: js.Any): js.Any
+    /* private */ def searchNode(node: Any, element: Any): Any
     
     /**
       * Returns the number of elements in this tree.
@@ -428,42 +428,42 @@ object bstreekvMod {
     /**
       * @private
       */
-    /* private */ def transplant(n1: js.Any, n2: js.Any): js.Any
+    /* private */ def transplant(n1: Any, n2: Any): Any
   }
   object BSTreeKV {
     
     inline def apply[K, V /* <: K */](
       add: V => Boolean,
       clear: () => Unit,
-      compare: js.Any,
+      compare: Any,
       contains: K => Boolean,
-      createNode: js.Any => js.Any,
+      createNode: Any => Any,
       forEach: ILoopFunction[V] => Unit,
       height: () => Double,
-      heightAux: js.Any => js.Any,
+      heightAux: Any => Any,
       inorderTraversal: ILoopFunction[V] => Unit,
-      inorderTraversalAux: (js.Any, js.Any, js.Any) => js.Any,
-      insertNode: js.Any => js.Any,
+      inorderTraversalAux: (Any, Any, Any) => Any,
+      insertNode: Any => Any,
       isEmpty: () => Boolean,
       levelTraversal: ILoopFunction[V] => Unit,
-      levelTraversalAux: (js.Any, js.Any) => js.Any,
+      levelTraversalAux: (Any, Any) => Any,
       maximum: () => js.UndefOr[V],
-      maximumAux: js.Any => js.Any,
+      maximumAux: Any => Any,
       minimum: () => js.UndefOr[V],
-      minimumAux: js.Any => js.Any,
-      nElements: js.Any,
+      minimumAux: Any => Any,
+      nElements: Any,
       postorderTraversal: ILoopFunction[V] => Unit,
-      postorderTraversalAux: (js.Any, js.Any, js.Any) => js.Any,
+      postorderTraversalAux: (Any, Any, Any) => Any,
       preorderTraversal: ILoopFunction[V] => Unit,
-      preorderTraversalAux: (js.Any, js.Any, js.Any) => js.Any,
+      preorderTraversalAux: (Any, Any, Any) => Any,
       remove: K => Boolean,
-      removeNode: js.Any => js.Any,
-      root: js.Any,
+      removeNode: Any => Any,
+      root: Any,
       search: K => js.UndefOr[V],
-      searchNode: (js.Any, js.Any) => js.Any,
+      searchNode: (Any, Any) => Any,
       size: () => Double,
       toArray: () => js.Array[V],
-      transplant: (js.Any, js.Any) => js.Any
+      transplant: (Any, Any) => Any
     ): BSTreeKV[K, V] = {
       val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), clear = js.Any.fromFunction0(clear), compare = compare.asInstanceOf[js.Any], contains = js.Any.fromFunction1(contains), createNode = js.Any.fromFunction1(createNode), forEach = js.Any.fromFunction1(forEach), height = js.Any.fromFunction0(height), heightAux = js.Any.fromFunction1(heightAux), inorderTraversal = js.Any.fromFunction1(inorderTraversal), inorderTraversalAux = js.Any.fromFunction3(inorderTraversalAux), insertNode = js.Any.fromFunction1(insertNode), isEmpty = js.Any.fromFunction0(isEmpty), levelTraversal = js.Any.fromFunction1(levelTraversal), levelTraversalAux = js.Any.fromFunction2(levelTraversalAux), maximum = js.Any.fromFunction0(maximum), maximumAux = js.Any.fromFunction1(maximumAux), minimum = js.Any.fromFunction0(minimum), minimumAux = js.Any.fromFunction1(minimumAux), nElements = nElements.asInstanceOf[js.Any], postorderTraversal = js.Any.fromFunction1(postorderTraversal), postorderTraversalAux = js.Any.fromFunction3(postorderTraversalAux), preorderTraversal = js.Any.fromFunction1(preorderTraversal), preorderTraversalAux = js.Any.fromFunction3(preorderTraversalAux), remove = js.Any.fromFunction1(remove), removeNode = js.Any.fromFunction1(removeNode), root = root.asInstanceOf[js.Any], search = js.Any.fromFunction1(search), searchNode = js.Any.fromFunction2(searchNode), size = js.Any.fromFunction0(size), toArray = js.Any.fromFunction0(toArray), transplant = js.Any.fromFunction2(transplant))
       __obj.asInstanceOf[BSTreeKV[K, V]]
@@ -475,63 +475,63 @@ object bstreekvMod {
       
       inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      inline def setCompare(value: js.Any): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
+      inline def setCompare(value: Any): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
       
       inline def setContains(value: K => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
       
-      inline def setCreateNode(value: js.Any => js.Any): Self = StObject.set(x, "createNode", js.Any.fromFunction1(value))
+      inline def setCreateNode(value: Any => Any): Self = StObject.set(x, "createNode", js.Any.fromFunction1(value))
       
       inline def setForEach(value: ILoopFunction[V] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
       
       inline def setHeight(value: () => Double): Self = StObject.set(x, "height", js.Any.fromFunction0(value))
       
-      inline def setHeightAux(value: js.Any => js.Any): Self = StObject.set(x, "heightAux", js.Any.fromFunction1(value))
+      inline def setHeightAux(value: Any => Any): Self = StObject.set(x, "heightAux", js.Any.fromFunction1(value))
       
       inline def setInorderTraversal(value: ILoopFunction[V] => Unit): Self = StObject.set(x, "inorderTraversal", js.Any.fromFunction1(value))
       
-      inline def setInorderTraversalAux(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "inorderTraversalAux", js.Any.fromFunction3(value))
+      inline def setInorderTraversalAux(value: (Any, Any, Any) => Any): Self = StObject.set(x, "inorderTraversalAux", js.Any.fromFunction3(value))
       
-      inline def setInsertNode(value: js.Any => js.Any): Self = StObject.set(x, "insertNode", js.Any.fromFunction1(value))
+      inline def setInsertNode(value: Any => Any): Self = StObject.set(x, "insertNode", js.Any.fromFunction1(value))
       
       inline def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
       
       inline def setLevelTraversal(value: ILoopFunction[V] => Unit): Self = StObject.set(x, "levelTraversal", js.Any.fromFunction1(value))
       
-      inline def setLevelTraversalAux(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "levelTraversalAux", js.Any.fromFunction2(value))
+      inline def setLevelTraversalAux(value: (Any, Any) => Any): Self = StObject.set(x, "levelTraversalAux", js.Any.fromFunction2(value))
       
       inline def setMaximum(value: () => js.UndefOr[V]): Self = StObject.set(x, "maximum", js.Any.fromFunction0(value))
       
-      inline def setMaximumAux(value: js.Any => js.Any): Self = StObject.set(x, "maximumAux", js.Any.fromFunction1(value))
+      inline def setMaximumAux(value: Any => Any): Self = StObject.set(x, "maximumAux", js.Any.fromFunction1(value))
       
       inline def setMinimum(value: () => js.UndefOr[V]): Self = StObject.set(x, "minimum", js.Any.fromFunction0(value))
       
-      inline def setMinimumAux(value: js.Any => js.Any): Self = StObject.set(x, "minimumAux", js.Any.fromFunction1(value))
+      inline def setMinimumAux(value: Any => Any): Self = StObject.set(x, "minimumAux", js.Any.fromFunction1(value))
       
-      inline def setNElements(value: js.Any): Self = StObject.set(x, "nElements", value.asInstanceOf[js.Any])
+      inline def setNElements(value: Any): Self = StObject.set(x, "nElements", value.asInstanceOf[js.Any])
       
       inline def setPostorderTraversal(value: ILoopFunction[V] => Unit): Self = StObject.set(x, "postorderTraversal", js.Any.fromFunction1(value))
       
-      inline def setPostorderTraversalAux(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "postorderTraversalAux", js.Any.fromFunction3(value))
+      inline def setPostorderTraversalAux(value: (Any, Any, Any) => Any): Self = StObject.set(x, "postorderTraversalAux", js.Any.fromFunction3(value))
       
       inline def setPreorderTraversal(value: ILoopFunction[V] => Unit): Self = StObject.set(x, "preorderTraversal", js.Any.fromFunction1(value))
       
-      inline def setPreorderTraversalAux(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "preorderTraversalAux", js.Any.fromFunction3(value))
+      inline def setPreorderTraversalAux(value: (Any, Any, Any) => Any): Self = StObject.set(x, "preorderTraversalAux", js.Any.fromFunction3(value))
       
       inline def setRemove(value: K => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
       
-      inline def setRemoveNode(value: js.Any => js.Any): Self = StObject.set(x, "removeNode", js.Any.fromFunction1(value))
+      inline def setRemoveNode(value: Any => Any): Self = StObject.set(x, "removeNode", js.Any.fromFunction1(value))
       
-      inline def setRoot(value: js.Any): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: Any): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
       inline def setSearch(value: K => js.UndefOr[V]): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
       
-      inline def setSearchNode(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "searchNode", js.Any.fromFunction2(value))
+      inline def setSearchNode(value: (Any, Any) => Any): Self = StObject.set(x, "searchNode", js.Any.fromFunction2(value))
       
       inline def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
       
       inline def setToArray(value: () => js.Array[V]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
       
-      inline def setTransplant(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "transplant", js.Any.fromFunction2(value))
+      inline def setTransplant(value: (Any, Any) => Any): Self = StObject.set(x, "transplant", js.Any.fromFunction2(value))
     }
   }
 }

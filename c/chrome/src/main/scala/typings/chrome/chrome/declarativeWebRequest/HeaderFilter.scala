@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HeaderFilter extends StObject {
   
-  var nameContains: js.UndefOr[js.Any] = js.undefined
+  var nameContains: js.UndefOr[String | js.Array[String]] = js.undefined
   
   var nameEquals: js.UndefOr[String] = js.undefined
   
@@ -14,7 +14,7 @@ trait HeaderFilter extends StObject {
   
   var nameSuffix: js.UndefOr[String] = js.undefined
   
-  var valueContains: js.UndefOr[js.Any] = js.undefined
+  var valueContains: js.UndefOr[String | js.Array[String]] = js.undefined
   
   var valueEquals: js.UndefOr[String] = js.undefined
   
@@ -31,9 +31,11 @@ object HeaderFilter {
   
   extension [Self <: HeaderFilter](x: Self) {
     
-    inline def setNameContains(value: js.Any): Self = StObject.set(x, "nameContains", value.asInstanceOf[js.Any])
+    inline def setNameContains(value: String | js.Array[String]): Self = StObject.set(x, "nameContains", value.asInstanceOf[js.Any])
     
     inline def setNameContainsUndefined: Self = StObject.set(x, "nameContains", js.undefined)
+    
+    inline def setNameContainsVarargs(value: String*): Self = StObject.set(x, "nameContains", js.Array(value*))
     
     inline def setNameEquals(value: String): Self = StObject.set(x, "nameEquals", value.asInstanceOf[js.Any])
     
@@ -47,9 +49,11 @@ object HeaderFilter {
     
     inline def setNameSuffixUndefined: Self = StObject.set(x, "nameSuffix", js.undefined)
     
-    inline def setValueContains(value: js.Any): Self = StObject.set(x, "valueContains", value.asInstanceOf[js.Any])
+    inline def setValueContains(value: String | js.Array[String]): Self = StObject.set(x, "valueContains", value.asInstanceOf[js.Any])
     
     inline def setValueContainsUndefined: Self = StObject.set(x, "valueContains", js.undefined)
+    
+    inline def setValueContainsVarargs(value: String*): Self = StObject.set(x, "valueContains", js.Array(value*))
     
     inline def setValueEquals(value: String): Self = StObject.set(x, "valueEquals", value.asInstanceOf[js.Any])
     

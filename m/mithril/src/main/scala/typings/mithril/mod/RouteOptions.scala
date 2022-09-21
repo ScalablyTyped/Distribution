@@ -10,7 +10,7 @@ trait RouteOptions extends StObject {
   var replace: js.UndefOr[Boolean] = js.undefined
   
   /** The state object to pass to the underlying history.pushState / history.replaceState call. */
-  var state: js.UndefOr[js.Any] = js.undefined
+  var state: js.UndefOr[Any] = js.undefined
   
   /** The title string to pass to the underlying history.pushState / history.replaceState call. */
   var title: js.UndefOr[String] = js.undefined
@@ -28,7 +28,7 @@ object RouteOptions {
     
     inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
     
-    inline def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     

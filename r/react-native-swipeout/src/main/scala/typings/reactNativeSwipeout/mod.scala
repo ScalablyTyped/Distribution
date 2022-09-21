@@ -14,10 +14,9 @@ object mod {
   
   @JSImport("react-native-swipeout", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[SwipeoutProperties, js.Any, js.Any]
+  open class default () extends Component[SwipeoutProperties, Any, Any]
   
-  type Swipeout = Component[SwipeoutProperties, js.Any, js.Any]
+  type Swipeout = Component[SwipeoutProperties, Any, Any]
   
   trait SwipeoutButtonProperties extends StObject {
     
@@ -155,7 +154,7 @@ object mod {
       
       inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
       
-      inline def setLeftVarargs(value: SwipeoutButtonProperties*): Self = StObject.set(x, "left", js.Array(value :_*))
+      inline def setLeftVarargs(value: SwipeoutButtonProperties*): Self = StObject.set(x, "left", js.Array(value*))
       
       inline def setOnClose(value: (/* sectionId */ Double, /* rowId */ Double, /* direction */ String) => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction3(value))
       
@@ -177,7 +176,7 @@ object mod {
       
       inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
       
-      inline def setRightVarargs(value: SwipeoutButtonProperties*): Self = StObject.set(x, "right", js.Array(value :_*))
+      inline def setRightVarargs(value: SwipeoutButtonProperties*): Self = StObject.set(x, "right", js.Array(value*))
       
       inline def setRowId(value: Double): Self = StObject.set(x, "rowId", value.asInstanceOf[js.Any])
       

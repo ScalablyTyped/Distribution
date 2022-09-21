@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Map.MapType
 @JSGlobal("naver.maps.CanvasMapType")
 @js.native
-class CanvasMapType protected ()
+open class CanvasMapType protected ()
   extends StObject
      with typings.navermaps.naver.maps.CanvasMapType {
   def this(canvasMapTypeOptions: CanvasMapTypeOptions) = this()

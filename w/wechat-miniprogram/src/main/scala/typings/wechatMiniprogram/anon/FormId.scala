@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FormId extends StObject {
   
-  var formId: js.UndefOr[js.Any] = js.undefined
+  var formId: js.UndefOr[Any] = js.undefined
   
   var target: typings.wechatMiniprogram.WechatMiniprogram.Target[IAnyObject]
   
@@ -23,7 +23,7 @@ object FormId {
   
   extension [Self <: FormId](x: Self) {
     
-    inline def setFormId(value: js.Any): Self = StObject.set(x, "formId", value.asInstanceOf[js.Any])
+    inline def setFormId(value: Any): Self = StObject.set(x, "formId", value.asInstanceOf[js.Any])
     
     inline def setFormIdUndefined: Self = StObject.set(x, "formId", js.undefined)
     

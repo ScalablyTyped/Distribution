@@ -4,6 +4,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`above-and-below`
 import typings.arcgisJsApi.arcgisJsApiStrings.`centered-on`
 import typings.arcgisJsApi.arcgisJsApiStrings.`high-to-low`
 import typings.arcgisJsApi.arcgisJsApiStrings.`percent-of-total`
+import typings.arcgisJsApi.arcgisJsApiStrings.above
+import typings.arcgisJsApi.arcgisJsApiStrings.below
 import typings.arcgisJsApi.arcgisJsApiStrings.days
 import typings.arcgisJsApi.arcgisJsApiStrings.extremes
 import typings.arcgisJsApi.arcgisJsApiStrings.hours
@@ -66,7 +68,7 @@ trait AuthoringInfoVisualVariableProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfoVisualVariable.html#theme)
     */
-  var theme: js.UndefOr[`above-and-below` | `centered-on` | extremes | `high-to-low`] = js.undefined
+  var theme: js.UndefOr[above | below | `above-and-below` | `centered-on` | extremes | `high-to-low`] = js.undefined
   
   /**
     * The type of visual variable generated.
@@ -117,7 +119,7 @@ object AuthoringInfoVisualVariableProperties {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setTheme(value: `above-and-below` | `centered-on` | extremes | `high-to-low`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: above | below | `above-and-below` | `centered-on` | extremes | `high-to-low`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     

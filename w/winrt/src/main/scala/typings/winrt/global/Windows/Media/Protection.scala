@@ -14,7 +14,7 @@ object Protection {
   
   @JSGlobal("Windows.Media.Protection.ComponentLoadFailedEventArgs")
   @js.native
-  class ComponentLoadFailedEventArgs ()
+  open class ComponentLoadFailedEventArgs ()
     extends StObject
        with typings.winrt.Windows.Media.Protection.ComponentLoadFailedEventArgs {
     
@@ -27,7 +27,7 @@ object Protection {
   
   @JSGlobal("Windows.Media.Protection.ComponentRenewal")
   @js.native
-  class ComponentRenewal ()
+  open class ComponentRenewal ()
     extends StObject
        with typings.winrt.Windows.Media.Protection.ComponentRenewal
   /* static members */
@@ -42,18 +42,18 @@ object Protection {
   
   @JSGlobal("Windows.Media.Protection.MediaProtectionManager")
   @js.native
-  class MediaProtectionManager ()
+  open class MediaProtectionManager ()
     extends StObject
        with typings.winrt.Windows.Media.Protection.MediaProtectionManager {
     
     /* CompleteClass */
-    var oncomponentloadfailed: js.Any = js.native
+    var oncomponentloadfailed: Any = js.native
     
     /* CompleteClass */
-    var onrebootneeded: js.Any = js.native
+    var onrebootneeded: Any = js.native
     
     /* CompleteClass */
-    var onservicerequested: js.Any = js.native
+    var onservicerequested: Any = js.native
     
     /* CompleteClass */
     var properties: IPropertySet = js.native
@@ -61,7 +61,7 @@ object Protection {
   
   @JSGlobal("Windows.Media.Protection.MediaProtectionServiceCompletion")
   @js.native
-  class MediaProtectionServiceCompletion ()
+  open class MediaProtectionServiceCompletion ()
     extends StObject
        with typings.winrt.Windows.Media.Protection.MediaProtectionServiceCompletion {
     
@@ -89,7 +89,7 @@ object Protection {
   
   @JSGlobal("Windows.Media.Protection.RevocationAndRenewalInformation")
   @js.native
-  class RevocationAndRenewalInformation ()
+  open class RevocationAndRenewalInformation ()
     extends StObject
        with typings.winrt.Windows.Media.Protection.RevocationAndRenewalInformation {
     
@@ -99,7 +99,7 @@ object Protection {
   
   @JSGlobal("Windows.Media.Protection.RevocationAndRenewalItem")
   @js.native
-  class RevocationAndRenewalItem ()
+  open class RevocationAndRenewalItem ()
     extends StObject
        with typings.winrt.Windows.Media.Protection.RevocationAndRenewalItem {
     
@@ -159,7 +159,7 @@ object Protection {
   
   @JSGlobal("Windows.Media.Protection.ServiceRequestedEventArgs")
   @js.native
-  class ServiceRequestedEventArgs ()
+  open class ServiceRequestedEventArgs ()
     extends StObject
        with typings.winrt.Windows.Media.Protection.ServiceRequestedEventArgs {
     

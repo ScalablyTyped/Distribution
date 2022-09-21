@@ -4,33 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Statistics about the live broadcast. These represent a snapshot of the
-  * values at the time of the request. Statistics are only returned for live
-  * broadcasts.
-  */
 trait SchemaLiveBroadcastStatistics extends StObject {
   
   /**
-    * The number of viewers currently watching the broadcast. The property and
-    * its value will be present if the broadcast has current viewers and the
-    * broadcast owner has not hidden the viewcount for the video. Note that
-    * YouTube stops tracking the number of concurrent viewers for a broadcast
-    * when the broadcast ends. So, this property would not identify the number
-    * of viewers watching an archived video of a live broadcast that already
-    * ended.
+    * The total number of live chat messages currently on the broadcast. The property and its value will be present if the broadcast is public, has the live chat feature enabled, and has at least one message. Note that this field will not be filled after the broadcast ends. So this property would not identify the number of chat messages for an archived video of a completed live broadcast.
     */
-  var concurrentViewers: js.UndefOr[String] = js.undefined
-  
-  /**
-    * The total number of live chat messages currently on the broadcast. The
-    * property and its value will be present if the broadcast is public, has
-    * the live chat feature enabled, and has at least one message. Note that
-    * this field will not be filled after the broadcast ends. So this property
-    * would not identify the number of chat messages for an archived video of a
-    * completed live broadcast.
-    */
-  var totalChatCount: js.UndefOr[String] = js.undefined
+  var totalChatCount: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaLiveBroadcastStatistics {
   
@@ -41,11 +20,9 @@ object SchemaLiveBroadcastStatistics {
   
   extension [Self <: SchemaLiveBroadcastStatistics](x: Self) {
     
-    inline def setConcurrentViewers(value: String): Self = StObject.set(x, "concurrentViewers", value.asInstanceOf[js.Any])
-    
-    inline def setConcurrentViewersUndefined: Self = StObject.set(x, "concurrentViewers", js.undefined)
-    
     inline def setTotalChatCount(value: String): Self = StObject.set(x, "totalChatCount", value.asInstanceOf[js.Any])
+    
+    inline def setTotalChatCountNull: Self = StObject.set(x, "totalChatCount", null)
     
     inline def setTotalChatCountUndefined: Self = StObject.set(x, "totalChatCount", js.undefined)
   }

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "detect-passive-events" : "2.0.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "detect-passive-events" : "2.0.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

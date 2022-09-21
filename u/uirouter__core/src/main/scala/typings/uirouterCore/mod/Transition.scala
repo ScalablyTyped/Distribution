@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@uirouter/core", "Transition")
 @js.native
-class Transition protected ()
+open class Transition protected ()
   extends typings.uirouterCore.transitionMod.Transition {
   /**
     * Creates a new Transition object.

@@ -22,14 +22,9 @@ trait DZ extends StObject {
     * {@link https://developers.deezer.com/sdk/javascript/api | DZ.api}\
     * {@link https://developers.deezer.com/api | API}
     */
-  def api(path: String, callback: js.Function1[/* response */ js.Any, Unit]): Unit = js.native
-  def api(path: String, method: HttpMethod, callback: js.Function1[/* response */ js.Any, Unit]): Unit = js.native
-  def api(
-    path: String,
-    method: HttpMethod,
-    data: js.Any,
-    callback: js.Function1[/* response */ js.Any, Unit]
-  ): Unit = js.native
+  def api(path: String, callback: js.Function1[/* response */ Any, Unit]): Unit = js.native
+  def api(path: String, method: HttpMethod, callback: js.Function1[/* response */ Any, Unit]): Unit = js.native
+  def api(path: String, method: HttpMethod, data: Any, callback: js.Function1[/* response */ Any, Unit]): Unit = js.native
   
   /**
     * Determine if a user is logged in and connected to your app.

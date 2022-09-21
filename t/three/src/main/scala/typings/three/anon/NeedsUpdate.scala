@@ -8,11 +8,11 @@ trait NeedsUpdate extends StObject {
   
   var needsUpdate: Boolean
   
-  var value: js.Any
+  var value: Any
 }
 object NeedsUpdate {
   
-  inline def apply(needsUpdate: Boolean, value: js.Any): NeedsUpdate = {
+  inline def apply(needsUpdate: Boolean, value: Any): NeedsUpdate = {
     val __obj = js.Dynamic.literal(needsUpdate = needsUpdate.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[NeedsUpdate]
   }
@@ -21,6 +21,6 @@ object NeedsUpdate {
     
     inline def setNeedsUpdate(value: Boolean): Self = StObject.set(x, "needsUpdate", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

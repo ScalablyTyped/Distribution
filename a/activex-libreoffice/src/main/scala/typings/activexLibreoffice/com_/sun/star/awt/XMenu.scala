@@ -216,7 +216,7 @@ object XMenu {
     insertItem: (Double, String, Double, Double) => Unit,
     isItemEnabled: Double => Boolean,
     isPopupMenu: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeItem: (Double, Double) => Unit,
     removeMenuListener: XMenuListener => Unit,

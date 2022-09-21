@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.buildInterfacesMod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +19,7 @@ trait WorkspaceTemplate extends StObject {
   /**
     * The last time this template was modified
     */
-  var lastModifiedDate: Date
+  var lastModifiedDate: js.Date
   
   /**
     * List of workspace mappings
@@ -37,7 +36,7 @@ object WorkspaceTemplate {
   inline def apply(
     definitionUri: String,
     lastModifiedBy: String,
-    lastModifiedDate: Date,
+    lastModifiedDate: js.Date,
     mappings: js.Array[WorkspaceMapping],
     workspaceId: Double
   ): WorkspaceTemplate = {
@@ -51,11 +50,11 @@ object WorkspaceTemplate {
     
     inline def setLastModifiedBy(value: String): Self = StObject.set(x, "lastModifiedBy", value.asInstanceOf[js.Any])
     
-    inline def setLastModifiedDate(value: Date): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: js.Date): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setMappings(value: js.Array[WorkspaceMapping]): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
     
-    inline def setMappingsVarargs(value: WorkspaceMapping*): Self = StObject.set(x, "mappings", js.Array(value :_*))
+    inline def setMappingsVarargs(value: WorkspaceMapping*): Self = StObject.set(x, "mappings", js.Array(value*))
     
     inline def setWorkspaceId(value: Double): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
   }

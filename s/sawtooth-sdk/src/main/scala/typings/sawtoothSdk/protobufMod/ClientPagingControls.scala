@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.protobufjs.mod.IConversionOptions
 import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new ClientPagingControls.
   * @param [properties] Properties to set
   */
-class ClientPagingControls ()
+open class ClientPagingControls ()
   extends StObject
      with IClientPagingControls {
   def this(properties: IClientPagingControls) = this()
@@ -32,7 +31,7 @@ class ClientPagingControls ()
     * Converts this ClientPagingControls to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 /* static members */
 object ClientPagingControls {
@@ -49,6 +48,8 @@ object ClientPagingControls {
   inline def create(): ClientPagingControls = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ClientPagingControls]
   inline def create(properties: IClientPagingControls): ClientPagingControls = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ClientPagingControls]
   
+  inline def decode(reader: js.typedarray.Uint8Array): ClientPagingControls = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientPagingControls]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): ClientPagingControls = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ClientPagingControls]
   /**
     * Decodes a ClientPagingControls message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -59,9 +60,8 @@ object ClientPagingControls {
     */
   inline def decode(reader: Reader): ClientPagingControls = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientPagingControls]
   inline def decode(reader: Reader, length: Double): ClientPagingControls = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ClientPagingControls]
-  inline def decode(reader: Uint8Array): ClientPagingControls = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientPagingControls]
-  inline def decode(reader: Uint8Array, length: Double): ClientPagingControls = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ClientPagingControls]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): ClientPagingControls = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientPagingControls]
   /**
     * Decodes a ClientPagingControls message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -70,7 +70,6 @@ object ClientPagingControls {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   inline def decodeDelimited(reader: Reader): ClientPagingControls = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientPagingControls]
-  inline def decodeDelimited(reader: Uint8Array): ClientPagingControls = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientPagingControls]
   
   /**
     * Encodes the specified ClientPagingControls message. Does not implicitly {@link ClientPagingControls.verify|verify} messages.
@@ -95,7 +94,7 @@ object ClientPagingControls {
     * @param object Plain object
     * @returns ClientPagingControls
     */
-  inline def fromObject(`object`: StringDictionary[js.Any]): ClientPagingControls = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ClientPagingControls]
+  inline def fromObject(`object`: StringDictionary[Any]): ClientPagingControls = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ClientPagingControls]
   
   /**
     * Creates a plain object from a ClientPagingControls message. Also converts values to other types if specified.
@@ -103,13 +102,13 @@ object ClientPagingControls {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  inline def toObject(message: ClientPagingControls): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: ClientPagingControls, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: ClientPagingControls): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: ClientPagingControls, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a ClientPagingControls message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

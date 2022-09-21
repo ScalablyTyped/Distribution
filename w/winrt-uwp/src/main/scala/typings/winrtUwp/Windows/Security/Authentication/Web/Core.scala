@@ -111,7 +111,7 @@ object Core {
   /** Represents a request to an online identity provider for an authentication token. */
   trait WebTokenRequest extends StObject {
     
-    var appProperties: js.Any
+    var appProperties: Any
     
     /* unmapped type */
     /** Gets the Id of the client making the request. */
@@ -132,7 +132,7 @@ object Core {
   object WebTokenRequest {
     
     inline def apply(
-      appProperties: js.Any,
+      appProperties: Any,
       clientId: String,
       promptType: WebTokenRequestPromptType,
       properties: IMap[String, String],
@@ -145,7 +145,7 @@ object Core {
     
     extension [Self <: WebTokenRequest](x: Self) {
       
-      inline def setAppProperties(value: js.Any): Self = StObject.set(x, "appProperties", value.asInstanceOf[js.Any])
+      inline def setAppProperties(value: Any): Self = StObject.set(x, "appProperties", value.asInstanceOf[js.Any])
       
       inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
       

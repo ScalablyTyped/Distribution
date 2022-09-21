@@ -25,6 +25,6 @@ object RepricingRuleEligibleOfferMatcherStringMatcher {
     
     inline def setStrAttributesUndefined: Self = StObject.set(x, "strAttributes", js.undefined)
     
-    inline def setStrAttributesVarargs(value: String*): Self = StObject.set(x, "strAttributes", js.Array(value :_*))
+    inline def setStrAttributesVarargs(value: String*): Self = StObject.set(x, "strAttributes", js.Array(value*))
   }
 }

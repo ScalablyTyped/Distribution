@@ -30,7 +30,7 @@ trait Fancytree extends StObject {
     *
     * @returns resolved, when all patches have been applied
     */
-  def applyPatch(patchList: js.Array[NodePatch]): JQueryPromise[js.Any] = js.native
+  def applyPatch(patchList: js.Array[NodePatch]): JQueryPromise[Any] = js.native
   
   /** [ext-clones] Replace a refKey with a new one. */
   def changeRefKey(oldRefKey: String, newRefKey: String): Unit = js.native
@@ -46,7 +46,7 @@ trait Fancytree extends StObject {
   def count(): Double = js.native
   
   /** Write to browser console if debugLevel >= 2 (prepending tree name)  */
-  def debug(msg: js.Any): Unit = js.native
+  def debug(msg: Any): Unit = js.native
   
   /** Temporarily suppress rendering to improve performance on bulk-updates.
     *
@@ -153,7 +153,7 @@ trait Fancytree extends StObject {
   def hasFocus(): Boolean = js.native
   
   /** Write to browser console if debugLevel >= 1 (prepending tree name)  */
-  def info(msg: js.Any): Unit = js.native
+  def info(msg: Any): Unit = js.native
   
   /**  [ext-edit] Check if any node in this tree in edit mode. */
   def isEditing(): FancytreeNode = js.native
@@ -166,13 +166,13 @@ trait Fancytree extends StObject {
   def loadKeyPath(
     keyPathList: js.Array[String],
     callback: js.Function2[/* node */ FancytreeNode, /* status */ String, Unit]
-  ): JQueryPromise[js.Any] = js.native
+  ): JQueryPromise[Any] = js.native
   /** Make sure that a node with a given ID is loaded, by traversing - and loading - its parents. This method is ment for lazy hierarchies. A callback is executed for every node as we go.
     *
     * @param keyPath a key path (e.g. '/3/2_1/7')
     * @param callback callback(node, status) is called for every visited node ('loading', 'loaded', 'ok', 'error')
     */
-  def loadKeyPath(keyPath: String, callback: js.Function2[/* node */ FancytreeNode, /* status */ String, Unit]): JQueryPromise[js.Any] = js.native
+  def loadKeyPath(keyPath: String, callback: js.Function2[/* node */ FancytreeNode, /* status */ String, Unit]): JQueryPromise[Any] = js.native
   
   var options: FancytreeOptions = js.native
   
@@ -183,8 +183,8 @@ trait Fancytree extends StObject {
     *
     * @param source optional new source (defaults to initial source data)
     */
-  def reload(): JQueryPromise[js.Any] = js.native
-  def reload(source: js.Any): JQueryPromise[js.Any] = js.native
+  def reload(): JQueryPromise[Any] = js.native
+  def reload(source: Any): JQueryPromise[Any] = js.native
   
   /** Render tree (i.e. create DOM elements for all top-level nodes).
     *
@@ -208,20 +208,20 @@ trait Fancytree extends StObject {
     * @param callback Called for every node
     * @param includeRoot Returns the hidden system root node (and its children) (default = false)
     */
-  def toDict(): js.Any = js.native
-  def toDict(includeRoot: Boolean): js.Any = js.native
-  def toDict(includeRoot: Boolean, callback: js.Function1[/* node */ FancytreeNode, Unit]): js.Any = js.native
-  def toDict(includeRoot: Unit, callback: js.Function1[/* node */ FancytreeNode, Unit]): js.Any = js.native
+  def toDict(): Any = js.native
+  def toDict(includeRoot: Boolean): Any = js.native
+  def toDict(includeRoot: Boolean, callback: js.Function1[/* node */ FancytreeNode, Unit]): Any = js.native
+  def toDict(includeRoot: Unit, callback: js.Function1[/* node */ FancytreeNode, Unit]): Any = js.native
   
   /** Call fn(node) for all nodes.
     *
     * @param fn the callback function. Return false to stop iteration, return "skip" to skip this node and children only.
     * @returns false, if the iterator was stopped.
     */
-  def visit(fn: js.Function1[/* node */ FancytreeNode, js.Any]): Boolean = js.native
+  def visit(fn: js.Function1[/* node */ FancytreeNode, Any]): Boolean = js.native
   
   /** Write warning to browser console (prepending tree info) */
-  def warn(msg: js.Any): Unit = js.native
+  def warn(msg: Any): Unit = js.native
   
-  var widget: js.Any = js.native
+  var widget: Any = js.native
 }

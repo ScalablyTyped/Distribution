@@ -1,6 +1,5 @@
 package typings.googleMaps.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,11 +16,11 @@ trait Time extends StObject {
   var time_zone: String
   
   /** the time specified as a JavaScript `Date` object. */
-  var value: Date
+  var value: js.Date
 }
 object Time {
   
-  inline def apply(text: String, time_zone: String, value: Date): Time = {
+  inline def apply(text: String, time_zone: String, value: js.Date): Time = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any], time_zone = time_zone.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Time]
   }
@@ -32,6 +31,6 @@ object Time {
     
     inline def setTime_zone(value: String): Self = StObject.set(x, "time_zone", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

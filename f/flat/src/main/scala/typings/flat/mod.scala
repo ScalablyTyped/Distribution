@@ -68,7 +68,7 @@ object mod extends Shortcut {
       }
     }
     
-    type Unflatten = js.Function2[/* target */ js.Any, /* options */ js.UndefOr[UnflattenOptions], js.Any]
+    type Unflatten = js.Function2[/* target */ Any, /* options */ js.UndefOr[UnflattenOptions], Any]
     
     trait UnflattenOptions extends StObject {
       

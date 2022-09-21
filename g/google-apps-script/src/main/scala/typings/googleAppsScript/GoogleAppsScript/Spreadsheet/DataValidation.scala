@@ -27,7 +27,7 @@ trait DataValidation extends StObject {
   
   def getCriteriaType(): DataValidationCriteria
   
-  def getCriteriaValues(): js.Array[js.Any]
+  def getCriteriaValues(): js.Array[Any]
   
   def getHelpText(): String
 }
@@ -37,7 +37,7 @@ object DataValidation {
     copy: () => DataValidationBuilder,
     getAllowInvalid: () => Boolean,
     getCriteriaType: () => DataValidationCriteria,
-    getCriteriaValues: () => js.Array[js.Any],
+    getCriteriaValues: () => js.Array[Any],
     getHelpText: () => String
   ): DataValidation = {
     val __obj = js.Dynamic.literal(copy = js.Any.fromFunction0(copy), getAllowInvalid = js.Any.fromFunction0(getAllowInvalid), getCriteriaType = js.Any.fromFunction0(getCriteriaType), getCriteriaValues = js.Any.fromFunction0(getCriteriaValues), getHelpText = js.Any.fromFunction0(getHelpText))
@@ -52,7 +52,7 @@ object DataValidation {
     
     inline def setGetCriteriaType(value: () => DataValidationCriteria): Self = StObject.set(x, "getCriteriaType", js.Any.fromFunction0(value))
     
-    inline def setGetCriteriaValues(value: () => js.Array[js.Any]): Self = StObject.set(x, "getCriteriaValues", js.Any.fromFunction0(value))
+    inline def setGetCriteriaValues(value: () => js.Array[Any]): Self = StObject.set(x, "getCriteriaValues", js.Any.fromFunction0(value))
     
     inline def setGetHelpText(value: () => String): Self = StObject.set(x, "getHelpText", js.Any.fromFunction0(value))
   }

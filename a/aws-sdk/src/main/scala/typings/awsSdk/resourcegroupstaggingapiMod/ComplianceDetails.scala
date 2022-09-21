@@ -38,12 +38,12 @@ object ComplianceDetails {
     
     inline def setKeysWithNoncompliantValuesUndefined: Self = StObject.set(x, "KeysWithNoncompliantValues", js.undefined)
     
-    inline def setKeysWithNoncompliantValuesVarargs(value: TagKey*): Self = StObject.set(x, "KeysWithNoncompliantValues", js.Array(value :_*))
+    inline def setKeysWithNoncompliantValuesVarargs(value: TagKey*): Self = StObject.set(x, "KeysWithNoncompliantValues", js.Array(value*))
     
     inline def setNoncompliantKeys(value: TagKeyList): Self = StObject.set(x, "NoncompliantKeys", value.asInstanceOf[js.Any])
     
     inline def setNoncompliantKeysUndefined: Self = StObject.set(x, "NoncompliantKeys", js.undefined)
     
-    inline def setNoncompliantKeysVarargs(value: TagKey*): Self = StObject.set(x, "NoncompliantKeys", js.Array(value :_*))
+    inline def setNoncompliantKeysVarargs(value: TagKey*): Self = StObject.set(x, "NoncompliantKeys", js.Array(value*))
   }
 }

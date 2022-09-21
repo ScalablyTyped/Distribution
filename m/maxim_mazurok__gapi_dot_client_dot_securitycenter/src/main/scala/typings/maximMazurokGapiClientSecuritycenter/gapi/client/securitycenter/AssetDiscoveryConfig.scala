@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AssetDiscoveryConfig extends StObject {
   
+  /** The folder ids to use for filtering asset discovery. It consists of only digits, e.g., 756619654966. */
+  var folderIds: js.UndefOr[js.Array[String]] = js.undefined
+  
   /** The mode to use for filtering asset discovery. */
   var inclusionMode: js.UndefOr[String] = js.undefined
   
@@ -21,6 +24,12 @@ object AssetDiscoveryConfig {
   
   extension [Self <: AssetDiscoveryConfig](x: Self) {
     
+    inline def setFolderIds(value: js.Array[String]): Self = StObject.set(x, "folderIds", value.asInstanceOf[js.Any])
+    
+    inline def setFolderIdsUndefined: Self = StObject.set(x, "folderIds", js.undefined)
+    
+    inline def setFolderIdsVarargs(value: String*): Self = StObject.set(x, "folderIds", js.Array(value*))
+    
     inline def setInclusionMode(value: String): Self = StObject.set(x, "inclusionMode", value.asInstanceOf[js.Any])
     
     inline def setInclusionModeUndefined: Self = StObject.set(x, "inclusionMode", js.undefined)
@@ -29,6 +38,6 @@ object AssetDiscoveryConfig {
     
     inline def setProjectIdsUndefined: Self = StObject.set(x, "projectIds", js.undefined)
     
-    inline def setProjectIdsVarargs(value: String*): Self = StObject.set(x, "projectIds", js.Array(value :_*))
+    inline def setProjectIdsVarargs(value: String*): Self = StObject.set(x, "projectIds", js.Array(value*))
   }
 }

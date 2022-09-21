@@ -36,7 +36,7 @@ object XSignatureVerifyResultBroadcaster {
   inline def apply(
     acquire: () => Unit,
     addSignatureVerifyResultListener: XSignatureVerifyResultListener => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeSignatureVerifyResultListener: XSignatureVerifyResultListener => Unit
   ): XSignatureVerifyResultBroadcaster = {

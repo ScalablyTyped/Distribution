@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait OAuth2 extends StObject {
   
-  var client: js.Any
+  var client: Any
   
   var info: OAuth2Info
   
@@ -16,17 +16,17 @@ trait OAuth2 extends StObject {
   
   var transactionID: String
   
-  var user: js.Any
+  var user: Any
 }
 object OAuth2 {
   
   inline def apply(
-    client: js.Any,
+    client: Any,
     info: OAuth2Info,
     redirectURI: String,
     req: OAuth2Req,
     transactionID: String,
-    user: js.Any
+    user: Any
   ): OAuth2 = {
     val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], redirectURI = redirectURI.asInstanceOf[js.Any], req = req.asInstanceOf[js.Any], transactionID = transactionID.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[OAuth2]
@@ -34,7 +34,7 @@ object OAuth2 {
   
   extension [Self <: OAuth2](x: Self) {
     
-    inline def setClient(value: js.Any): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+    inline def setClient(value: Any): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
     inline def setInfo(value: OAuth2Info): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
@@ -44,6 +44,6 @@ object OAuth2 {
     
     inline def setTransactionID(value: String): Self = StObject.set(x, "transactionID", value.asInstanceOf[js.Any])
     
-    inline def setUser(value: js.Any): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: Any): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

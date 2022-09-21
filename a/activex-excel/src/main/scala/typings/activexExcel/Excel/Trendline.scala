@@ -14,13 +14,13 @@ trait Trendline extends StObject {
   
   val Border: typings.activexExcel.Excel.Border
   
-  def ClearFormats(): js.Any
+  def ClearFormats(): Any
   
   val Creator: XlCreator
   
   val DataLabel: typings.activexExcel.Excel.DataLabel
   
-  def Delete(): js.Any
+  def Delete(): Any
   
   var DisplayEquation: Boolean
   
@@ -47,11 +47,11 @@ trait Trendline extends StObject {
   
   var Order: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Period: Double
   
-  def Select(): js.Any
+  def Select(): Any
   
   var Type: XlTrendlineType
 }
@@ -62,10 +62,10 @@ object Trendline {
     Backward: Double,
     Backward2: Double,
     Border: Border,
-    ClearFormats: () => js.Any,
+    ClearFormats: () => Any,
     Creator: XlCreator,
     DataLabel: DataLabel,
-    Delete: () => js.Any,
+    Delete: () => Any,
     DisplayEquation: Boolean,
     DisplayRSquared: Boolean,
     ExcelDotTrendline_typekey: Trendline,
@@ -78,9 +78,9 @@ object Trendline {
     Name: String,
     NameIsAuto: Boolean,
     Order: Double,
-    Parent: js.Any,
+    Parent: Any,
     Period: Double,
-    Select: () => js.Any,
+    Select: () => Any,
     Type: XlTrendlineType
   ): Trendline = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Backward = Backward.asInstanceOf[js.Any], Backward2 = Backward2.asInstanceOf[js.Any], Border = Border.asInstanceOf[js.Any], ClearFormats = js.Any.fromFunction0(ClearFormats), Creator = Creator.asInstanceOf[js.Any], DataLabel = DataLabel.asInstanceOf[js.Any], Delete = js.Any.fromFunction0(Delete), DisplayEquation = DisplayEquation.asInstanceOf[js.Any], DisplayRSquared = DisplayRSquared.asInstanceOf[js.Any], Format = Format.asInstanceOf[js.Any], Forward = Forward.asInstanceOf[js.Any], Forward2 = Forward2.asInstanceOf[js.Any], Index = Index.asInstanceOf[js.Any], Intercept = Intercept.asInstanceOf[js.Any], InterceptIsAuto = InterceptIsAuto.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], NameIsAuto = NameIsAuto.asInstanceOf[js.Any], Order = Order.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Period = Period.asInstanceOf[js.Any], Select = js.Any.fromFunction0(Select), Type = Type.asInstanceOf[js.Any])
@@ -98,13 +98,13 @@ object Trendline {
     
     inline def setBorder(value: Border): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
     
-    inline def setClearFormats(value: () => js.Any): Self = StObject.set(x, "ClearFormats", js.Any.fromFunction0(value))
+    inline def setClearFormats(value: () => Any): Self = StObject.set(x, "ClearFormats", js.Any.fromFunction0(value))
     
     inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
     inline def setDataLabel(value: DataLabel): Self = StObject.set(x, "DataLabel", value.asInstanceOf[js.Any])
     
-    inline def setDelete(value: () => js.Any): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Any): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
     inline def setDisplayEquation(value: Boolean): Self = StObject.set(x, "DisplayEquation", value.asInstanceOf[js.Any])
     
@@ -130,11 +130,11 @@ object Trendline {
     
     inline def setOrder(value: Double): Self = StObject.set(x, "Order", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPeriod(value: Double): Self = StObject.set(x, "Period", value.asInstanceOf[js.Any])
     
-    inline def setSelect(value: () => js.Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
+    inline def setSelect(value: () => Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
     
     inline def setType(value: XlTrendlineType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }

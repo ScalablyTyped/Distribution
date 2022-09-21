@@ -4,129 +4,91 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait Split extends StObject {
+  
+  var BELOW: Double = js.native
+  
+  var BESIDE: Double = js.native
   
   /**
     * Blurs the current editor.
     **/
-  def blur(): Unit
+  def blur(): Unit = js.native
   
   /**
     * Focuses the current editor.
     **/
-  def focus(): Unit
+  def focus(): Unit = js.native
   
   /**
     * Executes `callback` on all of the available editors.
     * @param callback A callback function to execute
     * @param scope The default scope for the callback
     **/
-  def forEach(callback: js.Function, scope: String): Unit
+  def forEach(callback: js.Function, scope: String): Unit = js.native
   
   /**
     * Returns the current editor.
     **/
-  def getCurrentEditor(): Editor
+  def getCurrentEditor(): Editor = js.native
   
   /**
     * Returns the editor identified by the index `idx`.
     * @param idx The index of the editor you want
     **/
-  def getEditor(idx: Double): Unit
+  def getEditor(idx: Double): Editor = js.native
   
   /**
     * Returns the orientation.
     **/
-  def getOrientation(): Double
+  def getOrientation(): Double = js.native
   
   /**
     * Returns the number of splits.
     **/
-  def getSplits(): Double
+  def getSplits(): Double = js.native
   
   /**
     * Resizes the editor.
     **/
-  def resize(): Unit
+  def resize(): Unit = js.native
   
   /**
     * Sets the font size, in pixels, for all the available editors.
     * @param size The new font size
     **/
-  def setFontSize(size: Double): Unit
+  def setFontSize(size: Double): Unit = js.native
   
   /**
     * Sets the keyboard handler for the editor.
     * @param keybinding
     **/
-  def setKeyboardHandler(keybinding: String): Unit
+  def setKeyboardHandler(keybinding: String): Unit = js.native
   
   /**
     * Sets the orientation.
     * @param orientation The new orientation value
     **/
-  def setOrientation(orientation: Double): Unit
+  def setOrientation(orientation: Double): Unit = js.native
   
   /**
     * Sets a new [[EditSession `EditSession`]] for the indicated editor.
     * @param session The new edit session
     * @param idx The editor's index you're interested in
     **/
-  def setSession(session: IEditSession, idx: Double): Unit
+  def setSession(session: IEditSession, idx: Double): Unit = js.native
+  
+  /**
+    * Set the number of splits.
+    * @param splits The number of splits
+    **/
+  def setSplits(): Unit = js.native
+  def setSplits(splits: Double): Unit = js.native
   
   /**
     * Sets a theme for each of the available editors.
     * @param theme The name of the theme to set
     **/
-  def setTheme(theme: String): Unit
-}
-object Split {
-  
-  inline def apply(
-    blur: () => Unit,
-    focus: () => Unit,
-    forEach: (js.Function, String) => Unit,
-    getCurrentEditor: () => Editor,
-    getEditor: Double => Unit,
-    getOrientation: () => Double,
-    getSplits: () => Double,
-    resize: () => Unit,
-    setFontSize: Double => Unit,
-    setKeyboardHandler: String => Unit,
-    setOrientation: Double => Unit,
-    setSession: (IEditSession, Double) => Unit,
-    setTheme: String => Unit
-  ): Split = {
-    val __obj = js.Dynamic.literal(blur = js.Any.fromFunction0(blur), focus = js.Any.fromFunction0(focus), forEach = js.Any.fromFunction2(forEach), getCurrentEditor = js.Any.fromFunction0(getCurrentEditor), getEditor = js.Any.fromFunction1(getEditor), getOrientation = js.Any.fromFunction0(getOrientation), getSplits = js.Any.fromFunction0(getSplits), resize = js.Any.fromFunction0(resize), setFontSize = js.Any.fromFunction1(setFontSize), setKeyboardHandler = js.Any.fromFunction1(setKeyboardHandler), setOrientation = js.Any.fromFunction1(setOrientation), setSession = js.Any.fromFunction2(setSession), setTheme = js.Any.fromFunction1(setTheme))
-    __obj.asInstanceOf[Split]
-  }
-  
-  extension [Self <: Split](x: Self) {
-    
-    inline def setBlur(value: () => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
-    
-    inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
-    
-    inline def setForEach(value: (js.Function, String) => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction2(value))
-    
-    inline def setGetCurrentEditor(value: () => Editor): Self = StObject.set(x, "getCurrentEditor", js.Any.fromFunction0(value))
-    
-    inline def setGetEditor(value: Double => Unit): Self = StObject.set(x, "getEditor", js.Any.fromFunction1(value))
-    
-    inline def setGetOrientation(value: () => Double): Self = StObject.set(x, "getOrientation", js.Any.fromFunction0(value))
-    
-    inline def setGetSplits(value: () => Double): Self = StObject.set(x, "getSplits", js.Any.fromFunction0(value))
-    
-    inline def setResize(value: () => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction0(value))
-    
-    inline def setSetFontSize(value: Double => Unit): Self = StObject.set(x, "setFontSize", js.Any.fromFunction1(value))
-    
-    inline def setSetKeyboardHandler(value: String => Unit): Self = StObject.set(x, "setKeyboardHandler", js.Any.fromFunction1(value))
-    
-    inline def setSetOrientation(value: Double => Unit): Self = StObject.set(x, "setOrientation", js.Any.fromFunction1(value))
-    
-    inline def setSetSession(value: (IEditSession, Double) => Unit): Self = StObject.set(x, "setSession", js.Any.fromFunction2(value))
-    
-    inline def setSetTheme(value: String => Unit): Self = StObject.set(x, "setTheme", js.Any.fromFunction1(value))
-  }
+  def setTheme(theme: String): Unit = js.native
 }

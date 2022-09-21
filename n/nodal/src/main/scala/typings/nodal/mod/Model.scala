@@ -7,14 +7,13 @@ import typings.nodal.anon.Convert
 import typings.nodal.anon.Createdat
 import typings.nodal.anon.Params
 import typings.nodal.anon.TypeofModelInstantiable
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("nodal", "Model")
 @js.native
-class Model protected () extends StObject {
+open class Model protected () extends StObject {
   def this(modelData: js.Object) = this()
   def this(modelData: js.Object, fromStorage: Boolean) = this()
   def this(modelData: js.Object, fromStorage: Boolean, fromSeed: Boolean) = this()
@@ -25,7 +24,7 @@ class Model protected () extends StObject {
     * @param {function} callback Method to execute upon completion, returns error if failed
     * @private
     */
-  /* private */ def __destroy__(callback: js.Any): js.Any = js.native
+  /* private */ def __destroy__(callback: Any): Any = js.native
   
   def __generateSaveQuery__(): Params = js.native
   
@@ -33,66 +32,66 @@ class Model protected () extends StObject {
     * Prepare model for use
     * @private
     */
-  /* private */ def __initialize__(): js.Any = js.native
+  /* private */ def __initialize__(): Any = js.native
   
-  def __load__(data: js.Any): this.type = js.native
-  def __load__(data: js.Any, fromStorage: Boolean): this.type = js.native
-  def __load__(data: js.Any, fromStorage: Boolean, fromSeed: Boolean): this.type = js.native
-  def __load__(data: js.Any, fromStorage: Unit, fromSeed: Boolean): this.type = js.native
+  def __load__(data: Any): this.type = js.native
+  def __load__(data: Any, fromStorage: Boolean): this.type = js.native
+  def __load__(data: Any, fromStorage: Boolean, fromSeed: Boolean): this.type = js.native
+  def __load__(data: Any, fromStorage: Unit, fromSeed: Boolean): this.type = js.native
   
   /**
     * Sets specified field data for the model, assuming data is safe and does not log changes
     * @param {string} field Field to set
     * @param {any} value Value for the field
     */
-  def __safeSet__(field: String, value: js.Any): Unit = js.native
+  def __safeSet__(field: String, value: Any): Unit = js.native
   
   /**
     * Saves model to database
     * @param {function} callback Method to execute upon completion, returns error if failed (including validations didn't pass)
     * @private
     */
-  /* private */ def __save__(callback: js.Any): js.Any = js.native
+  /* private */ def __save__(callback: Any): Any = js.native
   
   /**
     * Validates provided fieldList (or all fields if not provided)
     * @private
     * @param {optional Array} fieldList fields to validate
     */
-  /* private */ def __validate__(field: js.Any): js.Any = js.native
+  /* private */ def __validate__(field: Any): Any = js.native
   
   /**
     * Runs all verifications before saving
     * @param {function} callback Method to execute upon completion. Returns true if OK, false if failed
     * @private
     */
-  def __verify__(callback: js.Function): js.Any = js.native
+  def __verify__(callback: js.Function): Any = js.native
   
   var _calculations: ICalculations = js.native
   
   var _calculationsList: js.Array[String] = js.native
   
-  /* private */ var _changed: js.Any = js.native
+  /* private */ var _changed: Any = js.native
   
-  var _columnLookup: StringDictionary[js.Any] = js.native
+  var _columnLookup: StringDictionary[Any] = js.native
   
   var _columnNames: js.Array[String] = js.native
   
   var _columns: js.Array[IColumn] = js.native
   
-  /* private */ var _data: js.Any = js.native
+  /* private */ var _data: Any = js.native
   
-  /* private */ var _errors: js.Any = js.native
+  /* private */ var _errors: Any = js.native
   
   var _hides: IAnyObject = js.native
   
   var _inStorage: Boolean = js.native
   
-  /* private */ var _isSeeding: js.Any = js.native
+  /* private */ var _isSeeding: Any = js.native
   
-  /* private */ var _joinsCache: js.Any = js.native
+  /* private */ var _joinsCache: Any = js.native
   
-  /* private */ var _joinsList: js.Any = js.native
+  /* private */ var _joinsList: Any = js.native
   
   var _relationshipCache: IAnyObject = js.native
   
@@ -100,9 +99,9 @@ class Model protected () extends StObject {
   
   var _validations: IAnyObject = js.native
   
-  var _validationsList: js.Array[js.Any] = js.native
+  var _validationsList: js.Array[Any] = js.native
   
-  var _verificationsList: js.Any = js.native
+  var _verificationsList: Any = js.native
   
   /**
     * Logic to execute after a model is destroyed. Intended to be overwritten when inherited.
@@ -156,11 +155,11 @@ class Model protected () extends StObject {
     * @param {string} field The field to use for conversion data
     * @param {any} value The value to convert
     */
-  def convert(field: String, value: js.Any): js.Any = js.native
+  def convert(field: String, value: Any): Any = js.native
   
-  var data: js.Any = js.native
+  var data: Any = js.native
   
-  var db: Database | js.Any = js.native
+  var db: Database | Any = js.native
   
   /**
     * Destroys model reference in database.
@@ -188,7 +187,7 @@ class Model protected () extends StObject {
     * @param {string} field
     * @return {any}
     */
-  def fieldDefaultValue(field: String): js.Any = js.native
+  def fieldDefaultValue(field: String): Any = js.native
   
   /**
     * Retrieve our field schema definitions
@@ -208,8 +207,8 @@ class Model protected () extends StObject {
     * Retrieve field data for the model.
     * @param {string} field Field for which you'd like to retrieve data.
     */
-  def get(field: String): js.Any = js.native
-  def get(field: String, ignoreFormat: Boolean): js.Any = js.native
+  def get(field: String): Any = js.native
+  def get(field: String, ignoreFormat: Boolean): Any = js.native
   
   /**
     * Retrieve the schema data type for the specified field
@@ -230,7 +229,7 @@ class Model protected () extends StObject {
     * @param {string} field
     * @return {Object}
     */
-  def getFieldData(field: String): js.Any = js.native
+  def getFieldData(field: String): Any = js.native
   
   /**
     * Tells us whether a model field has changed since we created it or loaded it from storage.
@@ -264,7 +263,7 @@ class Model protected () extends StObject {
     *   Pass in a function with named parameters corresponding the relationships you'd like to retrieve.
     *   The first parameter is always an error callback.
     */
-  def include(callback: js.Function2[/* err */ Error, /* repeated */ this.type | ModelArray[this.type], Unit]): Unit = js.native
+  def include(callback: js.Function2[/* err */ js.Error, /* repeated */ this.type | ModelArray[this.type], Unit]): Unit = js.native
   
   /**
     * Determine whether or not this field is an Array (PostgreSQL supports this)
@@ -318,7 +317,7 @@ class Model protected () extends StObject {
     * @param {string} field Field to set
     * @param {any} value Value for the field
     */
-  def set(field: String, value: js.Any): js.Any = js.native
+  def set(field: String, value: Any): Any = js.native
   
   /**
     * Set an error for a specified field (supports multiple errors)
@@ -346,8 +345,8 @@ class Model protected () extends StObject {
     * Creates a plain object from the Model, with properties matching an optional interface
     * @param {Array} arrInterface Interface to use for object creation
     */
-  def toObject(): js.Any = js.native
-  def toObject(arrInterface: js.Array[js.Any]): js.Any = js.native
+  def toObject(): Any = js.native
+  def toObject(arrInterface: js.Array[Any]): Any = js.native
   
   /**
     * Runs an update query for this specific model instance
@@ -365,8 +364,8 @@ object Model {
   
   @JSImport("nodal", "Model._relationshipCache")
   @js.native
-  def _relationshipCache: js.Any = js.native
-  inline def _relationshipCache_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_relationshipCache")(x.asInstanceOf[js.Any])
+  def _relationshipCache: Any = js.native
+  inline def _relationshipCache_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_relationshipCache")(x.asInstanceOf[js.Any])
   
   /**
     * Create a calculated field (in JavaScript). Must be synchronous.
@@ -380,7 +379,7 @@ object Model {
     * Return the column schema data for a given name
     * @param {string} columnName
     */
-  inline def column(columnName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("column")(columnName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def column(columnName: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("column")(columnName.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /**
     * Get the model's column lookup data
@@ -427,7 +426,7 @@ object Model {
   
   inline def findBy(
     field: String,
-    value: js.Any,
+    value: Any,
     callback: js.Function2[/* err */ IExtendedError, /* model */ js.UndefOr[this.type], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findBy")(field.asInstanceOf[js.Any], value.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -459,7 +458,7 @@ object Model {
     * Tells us if a field is hidden (i.e. from API queries)
     * @param {String} field
     */
-  inline def isHidden(field: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("isHidden")(field.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def isHidden(field: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("isHidden")(field.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /**
     * Sets a joins relationship for the Model. Sets joinedBy relationship for parent.
@@ -526,7 +525,7 @@ object Model {
     * @param {string} message The error message shown if a validation fails.
     * @param {function({any} value)} fnAction the validation to run - first parameter is the value you're testing.
     */
-  inline def validates(field: String, message: String, fnAction: js.Function1[/* value */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validates")(field.asInstanceOf[js.Any], message.asInstanceOf[js.Any], fnAction.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def validates(field: String, message: String, fnAction: js.Function1[/* value */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validates")(field.asInstanceOf[js.Any], message.asInstanceOf[js.Any], fnAction.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Creates a verifier. These run asynchronously, support multiple fields, and check every time you try to save a Model.

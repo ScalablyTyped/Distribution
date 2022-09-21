@@ -155,7 +155,7 @@ object opencl {
       getPlatformID: () => Double,
       isOpcodeSubsetTested: () => Boolean,
       isOpenCLEnabled: () => Boolean,
-      queryInterface: `type` => js.Any,
+      queryInterface: `type` => Any,
       release: () => Unit,
       selectOpenCLDevice: (Double, Double) => Unit,
       setFormulaCellNumberLimit: Double => Unit

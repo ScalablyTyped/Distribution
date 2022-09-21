@@ -34,7 +34,7 @@ object ListEnvironmentsResponse {
     
     inline def setEnvironmentsUndefined: Self = StObject.set(x, "environments", js.undefined)
     
-    inline def setEnvironmentsVarargs(value: Environment*): Self = StObject.set(x, "environments", js.Array(value :_*))
+    inline def setEnvironmentsVarargs(value: Environment*): Self = StObject.set(x, "environments", js.Array(value*))
     
     inline def setExecutionId(value: String): Self = StObject.set(x, "executionId", value.asInstanceOf[js.Any])
     

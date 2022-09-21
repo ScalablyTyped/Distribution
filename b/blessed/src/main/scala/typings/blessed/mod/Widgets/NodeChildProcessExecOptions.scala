@@ -6,19 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait NodeChildProcessExecOptions extends StObject {
   
-  var customFds: js.UndefOr[js.Any] = js.undefined
+  var customFds: js.UndefOr[Any] = js.undefined
   
   var cwd: js.UndefOr[String] = js.undefined
   
   var encoding: js.UndefOr[String] = js.undefined
   
-  var env: js.UndefOr[js.Any] = js.undefined
+  var env: js.UndefOr[Any] = js.undefined
   
   var killSignal: js.UndefOr[String] = js.undefined
   
   var maxBuffer: js.UndefOr[Double] = js.undefined
   
-  var stdio: js.UndefOr[js.Any] = js.undefined
+  var stdio: js.UndefOr[Any] = js.undefined
   
   var timeout: js.UndefOr[Double] = js.undefined
 }
@@ -31,7 +31,7 @@ object NodeChildProcessExecOptions {
   
   extension [Self <: NodeChildProcessExecOptions](x: Self) {
     
-    inline def setCustomFds(value: js.Any): Self = StObject.set(x, "customFds", value.asInstanceOf[js.Any])
+    inline def setCustomFds(value: Any): Self = StObject.set(x, "customFds", value.asInstanceOf[js.Any])
     
     inline def setCustomFdsUndefined: Self = StObject.set(x, "customFds", js.undefined)
     
@@ -43,7 +43,7 @@ object NodeChildProcessExecOptions {
     
     inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
-    inline def setEnv(value: js.Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+    inline def setEnv(value: Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
     inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
@@ -55,7 +55,7 @@ object NodeChildProcessExecOptions {
     
     inline def setMaxBufferUndefined: Self = StObject.set(x, "maxBuffer", js.undefined)
     
-    inline def setStdio(value: js.Any): Self = StObject.set(x, "stdio", value.asInstanceOf[js.Any])
+    inline def setStdio(value: Any): Self = StObject.set(x, "stdio", value.asInstanceOf[js.Any])
     
     inline def setStdioUndefined: Self = StObject.set(x, "stdio", js.undefined)
     

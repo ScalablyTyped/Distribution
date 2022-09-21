@@ -22,7 +22,7 @@ trait IDialogOptions extends StObject {
   // default: true
   var clickOutsideToClose: js.UndefOr[Boolean] = js.undefined
   
-  var closeTo: js.UndefOr[js.Any] = js.undefined
+  var closeTo: js.UndefOr[Any] = js.undefined
   
   var contentElement: js.UndefOr[String | Element] = js.undefined
   
@@ -45,18 +45,18 @@ trait IDialogOptions extends StObject {
   // default: true
   var hasBackdrop: js.UndefOr[Boolean] = js.undefined
   
-  var locals: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var locals: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   var multiple: js.UndefOr[Boolean] = js.undefined
   
   var onComplete: js.UndefOr[js.Function2[/* scope */ IScope, /* element */ JQuery, Unit]] = js.undefined
   
-  var onRemoving: js.UndefOr[js.Function2[/* element */ JQuery, /* removePromise */ IPromise[js.Any], Unit]] = js.undefined
+  var onRemoving: js.UndefOr[js.Function2[/* element */ JQuery, /* removePromise */ IPromise[Any], Unit]] = js.undefined
   
   // default: root node
   var onShowing: js.UndefOr[js.Function2[/* scope */ IScope, /* element */ JQuery, Unit]] = js.undefined
   
-  var openFrom: js.UndefOr[js.Any] = js.undefined
+  var openFrom: js.UndefOr[Any] = js.undefined
   
   var parent: js.UndefOr[String | Element | JQuery] = js.undefined
   
@@ -101,7 +101,7 @@ object IDialogOptions {
     
     inline def setClickOutsideToCloseUndefined: Self = StObject.set(x, "clickOutsideToClose", js.undefined)
     
-    inline def setCloseTo(value: js.Any): Self = StObject.set(x, "closeTo", value.asInstanceOf[js.Any])
+    inline def setCloseTo(value: Any): Self = StObject.set(x, "closeTo", value.asInstanceOf[js.Any])
     
     inline def setCloseToUndefined: Self = StObject.set(x, "closeTo", js.undefined)
     
@@ -115,11 +115,11 @@ object IDialogOptions {
     
     inline def setControllerAsUndefined: Self = StObject.set(x, "controllerAs", js.undefined)
     
-    inline def setControllerFunction1(value: /* repeated */ js.Any => Unit | IController): Self = StObject.set(x, "controller", js.Any.fromFunction1(value))
+    inline def setControllerFunction1(value: /* repeated */ Any => Unit | IController): Self = StObject.set(x, "controller", js.Any.fromFunction1(value))
     
     inline def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
     
-    inline def setControllerVarargs(value: (String | IControllerConstructor)*): Self = StObject.set(x, "controller", js.Array(value :_*))
+    inline def setControllerVarargs(value: (String | IControllerConstructor)*): Self = StObject.set(x, "controller", js.Array(value*))
     
     inline def setDisableParentScroll(value: Boolean): Self = StObject.set(x, "disableParentScroll", value.asInstanceOf[js.Any])
     
@@ -141,7 +141,7 @@ object IDialogOptions {
     
     inline def setHasBackdropUndefined: Self = StObject.set(x, "hasBackdrop", js.undefined)
     
-    inline def setLocals(value: StringDictionary[js.Any]): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
+    inline def setLocals(value: StringDictionary[Any]): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
     
     inline def setLocalsUndefined: Self = StObject.set(x, "locals", js.undefined)
     
@@ -153,7 +153,7 @@ object IDialogOptions {
     
     inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
     
-    inline def setOnRemoving(value: (/* element */ JQuery, /* removePromise */ IPromise[js.Any]) => Unit): Self = StObject.set(x, "onRemoving", js.Any.fromFunction2(value))
+    inline def setOnRemoving(value: (/* element */ JQuery, /* removePromise */ IPromise[Any]) => Unit): Self = StObject.set(x, "onRemoving", js.Any.fromFunction2(value))
     
     inline def setOnRemovingUndefined: Self = StObject.set(x, "onRemoving", js.undefined)
     
@@ -161,7 +161,7 @@ object IDialogOptions {
     
     inline def setOnShowingUndefined: Self = StObject.set(x, "onShowing", js.undefined)
     
-    inline def setOpenFrom(value: js.Any): Self = StObject.set(x, "openFrom", value.asInstanceOf[js.Any])
+    inline def setOpenFrom(value: Any): Self = StObject.set(x, "openFrom", value.asInstanceOf[js.Any])
     
     inline def setOpenFromUndefined: Self = StObject.set(x, "openFrom", js.undefined)
     

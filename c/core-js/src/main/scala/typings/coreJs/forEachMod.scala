@@ -15,7 +15,7 @@ object forEachMod {
   inline def apply[T](
     array: ArrayLike[T],
     callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], Unit],
-    thisArg: js.Any
+    thisArg: Any
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("core-js/fn/array/for-each", JSImport.Namespace)

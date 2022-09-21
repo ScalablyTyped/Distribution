@@ -8,7 +8,7 @@ object notAFunctionErrorMod {
   
   @JSImport("playable/dist/src/core/dependency-container/errors/NotAFunctionError", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends typings.playable.extendableErrorMod.default {
     def this(functionName: String, expectedType: String, givenType: String) = this()
   }

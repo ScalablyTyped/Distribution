@@ -34,10 +34,13 @@ trait LineItem extends StObject {
     */
   var entityStatus: js.UndefOr[String] = js.undefined
   
+  /** Whether to exclude new exchanges from automatically being targeted by the line item. This field is false by default. */
+  var excludeNewExchanges: js.UndefOr[Boolean] = js.undefined
+  
   /** Required. The start and end time of the line item's flight. */
   var flight: js.UndefOr[LineItemFlight] = js.undefined
   
-  /** Required. The frequency capping setting of the line item. */
+  /** Required. The impression frequency cap settings of the line item. The max_impressions field in this settings object must be used if assigning a limited cap. */
   var frequencyCap: js.UndefOr[FrequencyCap] = js.undefined
   
   /** Required. Immutable. The unique ID of the insertion order that the line item belongs to. */
@@ -55,6 +58,12 @@ trait LineItem extends StObject {
   /** Required. Immutable. The type of the line item. */
   var lineItemType: js.UndefOr[String] = js.undefined
   
+  /**
+    * The mobile app promoted by the line item. This is applicable only when line_item_type is either `LINE_ITEM_TYPE_DISPLAY_MOBILE_APP_INSTALL` or
+    * `LINE_ITEM_TYPE_VIDEO_MOBILE_APP_INSTALL`.
+    */
+  var mobileApp: js.UndefOr[MobileApp] = js.undefined
+  
   /** Output only. The resource name of the line item. */
   var name: js.UndefOr[String] = js.undefined
   
@@ -66,6 +75,9 @@ trait LineItem extends StObject {
   
   /** Required. The partner revenue model setting of the line item. */
   var partnerRevenueModel: js.UndefOr[PartnerRevenueModel] = js.undefined
+  
+  /** Output only. The reservation type of the line item. */
+  var reservationType: js.UndefOr[String] = js.undefined
   
   /**
     * The [targeting expansion](https://support.google.com/displayvideo/answer/10191558) settings of the line item. This config is only applicable when eligible audience list targeting is
@@ -112,7 +124,7 @@ object LineItem {
     
     inline def setCreativeIdsUndefined: Self = StObject.set(x, "creativeIds", js.undefined)
     
-    inline def setCreativeIdsVarargs(value: String*): Self = StObject.set(x, "creativeIds", js.Array(value :_*))
+    inline def setCreativeIdsVarargs(value: String*): Self = StObject.set(x, "creativeIds", js.Array(value*))
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
@@ -121,6 +133,10 @@ object LineItem {
     inline def setEntityStatus(value: String): Self = StObject.set(x, "entityStatus", value.asInstanceOf[js.Any])
     
     inline def setEntityStatusUndefined: Self = StObject.set(x, "entityStatus", js.undefined)
+    
+    inline def setExcludeNewExchanges(value: Boolean): Self = StObject.set(x, "excludeNewExchanges", value.asInstanceOf[js.Any])
+    
+    inline def setExcludeNewExchangesUndefined: Self = StObject.set(x, "excludeNewExchanges", js.undefined)
     
     inline def setFlight(value: LineItemFlight): Self = StObject.set(x, "flight", value.asInstanceOf[js.Any])
     
@@ -142,7 +158,7 @@ object LineItem {
     
     inline def setInventorySourceIdsUndefined: Self = StObject.set(x, "inventorySourceIds", js.undefined)
     
-    inline def setInventorySourceIdsVarargs(value: String*): Self = StObject.set(x, "inventorySourceIds", js.Array(value :_*))
+    inline def setInventorySourceIdsVarargs(value: String*): Self = StObject.set(x, "inventorySourceIds", js.Array(value*))
     
     inline def setLineItemId(value: String): Self = StObject.set(x, "lineItemId", value.asInstanceOf[js.Any])
     
@@ -151,6 +167,10 @@ object LineItem {
     inline def setLineItemType(value: String): Self = StObject.set(x, "lineItemType", value.asInstanceOf[js.Any])
     
     inline def setLineItemTypeUndefined: Self = StObject.set(x, "lineItemType", js.undefined)
+    
+    inline def setMobileApp(value: MobileApp): Self = StObject.set(x, "mobileApp", value.asInstanceOf[js.Any])
+    
+    inline def setMobileAppUndefined: Self = StObject.set(x, "mobileApp", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -164,11 +184,15 @@ object LineItem {
     
     inline def setPartnerCostsUndefined: Self = StObject.set(x, "partnerCosts", js.undefined)
     
-    inline def setPartnerCostsVarargs(value: PartnerCost*): Self = StObject.set(x, "partnerCosts", js.Array(value :_*))
+    inline def setPartnerCostsVarargs(value: PartnerCost*): Self = StObject.set(x, "partnerCosts", js.Array(value*))
     
     inline def setPartnerRevenueModel(value: PartnerRevenueModel): Self = StObject.set(x, "partnerRevenueModel", value.asInstanceOf[js.Any])
     
     inline def setPartnerRevenueModelUndefined: Self = StObject.set(x, "partnerRevenueModel", js.undefined)
+    
+    inline def setReservationType(value: String): Self = StObject.set(x, "reservationType", value.asInstanceOf[js.Any])
+    
+    inline def setReservationTypeUndefined: Self = StObject.set(x, "reservationType", js.undefined)
     
     inline def setTargetingExpansion(value: TargetingExpansionConfig): Self = StObject.set(x, "targetingExpansion", value.asInstanceOf[js.Any])
     
@@ -182,6 +206,6 @@ object LineItem {
     
     inline def setWarningMessagesUndefined: Self = StObject.set(x, "warningMessages", js.undefined)
     
-    inline def setWarningMessagesVarargs(value: String*): Self = StObject.set(x, "warningMessages", js.Array(value :_*))
+    inline def setWarningMessagesVarargs(value: String*): Self = StObject.set(x, "warningMessages", js.Array(value*))
   }
 }

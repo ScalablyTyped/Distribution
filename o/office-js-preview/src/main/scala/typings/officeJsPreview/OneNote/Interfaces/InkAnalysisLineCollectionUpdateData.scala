@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface for updating data on the InkAnalysisLineCollection object, for use in "inkAnalysisLineCollection.set({ ... })". */
+/** An interface for updating data on the InkAnalysisLineCollection object, for use in `inkAnalysisLineCollection.set({ ... })`. */
 trait InkAnalysisLineCollectionUpdateData extends StObject {
   
   var items: js.UndefOr[js.Array[InkAnalysisLineData]] = js.undefined
@@ -22,6 +22,6 @@ object InkAnalysisLineCollectionUpdateData {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: InkAnalysisLineData*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: InkAnalysisLineData*): Self = StObject.set(x, "items", js.Array(value*))
   }
 }

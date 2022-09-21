@@ -54,7 +54,7 @@ object DiscoverTypings {
     
     inline def setFileNames(value: js.Array[String]): Self = StObject.set(x, "fileNames", value.asInstanceOf[js.Any])
     
-    inline def setFileNamesVarargs(value: String*): Self = StObject.set(x, "fileNames", js.Array(value :_*))
+    inline def setFileNamesVarargs(value: String*): Self = StObject.set(x, "fileNames", js.Array(value*))
     
     inline def setKind(value: discover): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

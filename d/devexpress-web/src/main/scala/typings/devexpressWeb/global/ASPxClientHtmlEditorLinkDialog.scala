@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientHtmlEditorLinkDialog")
 @js.native
-class ASPxClientHtmlEditorLinkDialog ()
+open class ASPxClientHtmlEditorLinkDialog ()
   extends StObject
      with typings.devexpressWeb.ASPxClientHtmlEditorLinkDialog {
   

@@ -12,7 +12,7 @@ trait Ipv6CidrBlockAssociation extends StObject {
   var AssociationId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * Information about the state of the CIDR block.
+    * Information about the state of the CIDR block. Valid values are as follows:    associating     associated     disassociating     disassociated     failed     failing   
     */
   var CidrBlockState: js.UndefOr[NonEmptyString] = js.undefined
   

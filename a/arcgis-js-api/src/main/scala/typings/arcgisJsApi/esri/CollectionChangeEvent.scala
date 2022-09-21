@@ -23,14 +23,14 @@ object CollectionChangeEvent {
     
     inline def setAdded(value: js.Array[T]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
     
-    inline def setAddedVarargs(value: T*): Self = StObject.set(x, "added", js.Array(value :_*))
+    inline def setAddedVarargs(value: T*): Self = StObject.set(x, "added", js.Array(value*))
     
     inline def setMoved(value: js.Array[T]): Self = StObject.set(x, "moved", value.asInstanceOf[js.Any])
     
-    inline def setMovedVarargs(value: T*): Self = StObject.set(x, "moved", js.Array(value :_*))
+    inline def setMovedVarargs(value: T*): Self = StObject.set(x, "moved", js.Array(value*))
     
     inline def setRemoved(value: js.Array[T]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
     
-    inline def setRemovedVarargs(value: T*): Self = StObject.set(x, "removed", js.Array(value :_*))
+    inline def setRemovedVarargs(value: T*): Self = StObject.set(x, "removed", js.Array(value*))
   }
 }

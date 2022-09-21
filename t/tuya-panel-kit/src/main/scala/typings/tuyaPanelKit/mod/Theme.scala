@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tuya-panel-kit", "Theme")
 @js.native
-class Theme protected ()
-  extends Component[ThemeProps, js.Object, js.Any] {
+open class Theme protected ()
+  extends Component[ThemeProps, js.Object, Any] {
   def this(props: ThemeProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: ThemeProps, context: js.Any) = this()
+  def this(props: ThemeProps, context: Any) = this()
 }

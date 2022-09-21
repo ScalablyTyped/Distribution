@@ -29,7 +29,7 @@ object DescribeRootFoldersResponse {
     
     inline def setFoldersUndefined: Self = StObject.set(x, "Folders", js.undefined)
     
-    inline def setFoldersVarargs(value: FolderMetadata*): Self = StObject.set(x, "Folders", js.Array(value :_*))
+    inline def setFoldersVarargs(value: FolderMetadata*): Self = StObject.set(x, "Folders", js.Array(value*))
     
     inline def setMarker(value: PageMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

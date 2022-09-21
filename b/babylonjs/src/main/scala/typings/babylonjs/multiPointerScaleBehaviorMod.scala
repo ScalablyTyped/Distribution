@@ -13,25 +13,25 @@ object multiPointerScaleBehaviorMod {
   /**
     * Instantiate a new behavior that when attached to a mesh will allow the mesh to be scaled
     */
-  class MultiPointerScaleBehavior ()
+  open class MultiPointerScaleBehavior ()
     extends StObject
        with Behavior[Mesh] {
     
-    /* private */ var _dragBehaviorA: js.Any = js.native
+    /* private */ var _dragBehaviorA: Any = js.native
     
-    /* private */ var _dragBehaviorB: js.Any = js.native
+    /* private */ var _dragBehaviorB: Any = js.native
     
-    /* private */ var _getCurrentDistance: js.Any = js.native
+    /* private */ var _getCurrentDistance: Any = js.native
     
-    /* private */ var _initialScale: js.Any = js.native
+    /* private */ var _initialScale: Any = js.native
     
-    /* private */ var _ownerNode: js.Any = js.native
+    /* private */ var _ownerNode: Any = js.native
     
-    /* private */ var _sceneRenderObserver: js.Any = js.native
+    /* private */ var _sceneRenderObserver: Any = js.native
     
-    /* private */ var _startDistance: js.Any = js.native
+    /* private */ var _startDistance: Any = js.native
     
-    /* private */ var _targetScale: js.Any = js.native
+    /* private */ var _targetScale: Any = js.native
     
     /**
       * Called when the behavior is attached to a target

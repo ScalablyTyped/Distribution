@@ -11,7 +11,7 @@ object dijkstraMod {
   
   @JSImport("rot-js/lib/path/dijkstra", JSImport.Default)
   @js.native
-  class default protected () extends Dijkstra {
+  open class default protected () extends Dijkstra {
     def this(toX: Double, toY: Double, passableCallback: PassableCallback, options: PartialOptions) = this()
   }
   

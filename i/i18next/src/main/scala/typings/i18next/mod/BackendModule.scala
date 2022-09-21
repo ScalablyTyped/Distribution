@@ -10,7 +10,15 @@ trait BackendModule[TOptions]
      with Module {
   
   /** Save the missing translation */
-  def create(languages: js.Array[String], namespace: String, key: String, fallbackValue: String): Unit
+  var create: js.UndefOr[
+    js.Function4[
+      /* languages */ js.Array[String], 
+      /* namespace */ String, 
+      /* key */ String, 
+      /* fallbackValue */ String, 
+      Unit
+    ]
+  ] = js.undefined
   
   def init(services: Services, backendOptions: TOptions, i18nextOptions: InitOptions): Unit
   
@@ -21,7 +29,7 @@ trait BackendModule[TOptions]
     js.Function3[
       /* languages */ js.Array[String], 
       /* namespaces */ js.Array[String], 
-      /* callback */ ReadCallback, 
+      /* callback */ MultiReadCallback, 
       Unit
     ]
   ] = js.undefined
@@ -36,26 +44,26 @@ trait BackendModule[TOptions]
 }
 object BackendModule {
   
-  inline def apply[TOptions](
-    create: (js.Array[String], String, String, String) => Unit,
-    init: (Services, TOptions, InitOptions) => Unit,
-    read: (String, String, ReadCallback) => Unit
-  ): BackendModule[TOptions] = {
-    val __obj = js.Dynamic.literal(create = js.Any.fromFunction4(create), init = js.Any.fromFunction3(init), read = js.Any.fromFunction3(read))
+  inline def apply[TOptions](init: (Services, TOptions, InitOptions) => Unit, read: (String, String, ReadCallback) => Unit): BackendModule[TOptions] = {
+    val __obj = js.Dynamic.literal(init = js.Any.fromFunction3(init), read = js.Any.fromFunction3(read))
     __obj.updateDynamic("type")("backend")
     __obj.asInstanceOf[BackendModule[TOptions]]
   }
   
   extension [Self <: BackendModule[?], TOptions](x: Self & BackendModule[TOptions]) {
     
-    inline def setCreate(value: (js.Array[String], String, String, String) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction4(value))
+    inline def setCreate(
+      value: (/* languages */ js.Array[String], /* namespace */ String, /* key */ String, /* fallbackValue */ String) => Unit
+    ): Self = StObject.set(x, "create", js.Any.fromFunction4(value))
+    
+    inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
     
     inline def setInit(value: (Services, TOptions, InitOptions) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction3(value))
     
     inline def setRead(value: (String, String, ReadCallback) => Unit): Self = StObject.set(x, "read", js.Any.fromFunction3(value))
     
     inline def setReadMulti(
-      value: (/* languages */ js.Array[String], /* namespaces */ js.Array[String], /* callback */ ReadCallback) => Unit
+      value: (/* languages */ js.Array[String], /* namespaces */ js.Array[String], /* callback */ MultiReadCallback) => Unit
     ): Self = StObject.set(x, "readMulti", js.Any.fromFunction3(value))
     
     inline def setReadMultiUndefined: Self = StObject.set(x, "readMulti", js.undefined)

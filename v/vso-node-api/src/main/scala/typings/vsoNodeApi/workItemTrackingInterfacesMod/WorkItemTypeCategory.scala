@@ -31,7 +31,7 @@ trait WorkItemTypeCategory
 object WorkItemTypeCategory {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     defaultWorkItemType: WorkItemTypeReference,
     name: String,
     referenceName: String,
@@ -52,6 +52,6 @@ object WorkItemTypeCategory {
     
     inline def setWorkItemTypes(value: js.Array[WorkItemTypeReference]): Self = StObject.set(x, "workItemTypes", value.asInstanceOf[js.Any])
     
-    inline def setWorkItemTypesVarargs(value: WorkItemTypeReference*): Self = StObject.set(x, "workItemTypes", js.Array(value :_*))
+    inline def setWorkItemTypesVarargs(value: WorkItemTypeReference*): Self = StObject.set(x, "workItemTypes", js.Array(value*))
   }
 }

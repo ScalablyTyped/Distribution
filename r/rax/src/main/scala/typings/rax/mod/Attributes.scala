@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Attributes extends StObject {
   
-  var key: js.UndefOr[Key] = js.undefined
+  var key: js.UndefOr[Key | Null] = js.undefined
 }
 object Attributes {
   
@@ -18,6 +18,8 @@ object Attributes {
   extension [Self <: Attributes](x: Self) {
     
     inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyNull: Self = StObject.set(x, "key", null)
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
   }

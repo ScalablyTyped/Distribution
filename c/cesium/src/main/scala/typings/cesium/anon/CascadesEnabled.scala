@@ -12,6 +12,8 @@ trait CascadesEnabled extends StObject {
   
   var enabled: js.UndefOr[Boolean] = js.undefined
   
+  var fadingEnabled: js.UndefOr[Boolean] = js.undefined
+  
   var isPointLight: js.UndefOr[Boolean] = js.undefined
   
   var lightCamera: typings.cesium.mod.Camera
@@ -48,6 +50,10 @@ object CascadesEnabled {
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    
+    inline def setFadingEnabled(value: Boolean): Self = StObject.set(x, "fadingEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setFadingEnabledUndefined: Self = StObject.set(x, "fadingEnabled", js.undefined)
     
     inline def setIsPointLight(value: Boolean): Self = StObject.set(x, "isPointLight", value.asInstanceOf[js.Any])
     

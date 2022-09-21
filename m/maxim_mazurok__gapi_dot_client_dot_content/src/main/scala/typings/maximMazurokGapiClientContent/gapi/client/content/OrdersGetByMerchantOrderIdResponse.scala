@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait OrdersGetByMerchantOrderIdResponse extends StObject {
   
-  /** Identifies what kind of resource this is. Value: the fixed string "content#ordersGetByMerchantOrderIdResponse". */
+  /** Identifies what kind of resource this is. Value: the fixed string "`content#ordersGetByMerchantOrderIdResponse`". */
   var kind: js.UndefOr[String] = js.undefined
   
   /** The requested order. */

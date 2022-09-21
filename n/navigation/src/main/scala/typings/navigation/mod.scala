@@ -1,12 +1,15 @@
 package typings.navigation
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.TopLevel
 import typings.navigation.anon.Crumbs
+import typings.navigation.anon.Data
 import typings.navigation.navigationStrings.add
 import typings.navigation.navigationStrings.none
 import typings.navigation.navigationStrings.replace
 import typings.std.HTMLAnchorElement
 import typings.std.Location
+import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +18,7 @@ object mod {
   
   @JSImport("navigation", "Crumb")
   @js.native
-  class Crumb protected () extends StObject {
+  open class Crumb[Key /* <: String */, Data /* <: js.Object */] protected () extends StObject {
     /**
       * Initializes a new instance of the Crumb class
       * @param data The Context Data held at the time of navigating away
@@ -28,8 +31,17 @@ object mod {
       * return to the State and pass the associated Data
       * @param last A value indicating whether the Crumb is the last in the
       * crumb trail
+      * @param hash The fragment identifier associated with this navigation
       */
-    def this(data: js.Any, state: State, link: String, crumblessLink: String, last: Boolean) = this()
+    def this(data: Data, state: State[Key, Data], link: String, crumblessLink: String, last: Boolean) = this()
+    def this(
+      data: Data,
+      state: State[Key, Data],
+      link: String,
+      crumblessLink: String,
+      last: Boolean,
+      hash: String
+    ) = this()
     
     /**
       * Gets the link navigation without crumb trail to return to the State
@@ -41,7 +53,12 @@ object mod {
       * Gets the Context Data held at the time of navigating away from this
       * State
       */
-    var data: js.Any = js.native
+    var data: Data = js.native
+    
+    /**
+      * Gets the fragment identifier associated with this navigation
+      */
+    var hash: String = js.native
     
     /**
       * Gets a value indicating whether the Crumb is the last in the crumb
@@ -52,7 +69,7 @@ object mod {
     /**
       * Gets the configuration information associated with this navigation
       */
-    var state: State = js.native
+    var state: State[Key, Data] = js.native
     
     /**
       * Gets the State Title
@@ -72,7 +89,7 @@ object mod {
     * Initializes a new instance of the HTML5HistoryManager class
     * @param applicationPath The application path
     */
-  class HTML5HistoryManager ()
+  open class HTML5HistoryManager ()
     extends StObject
        with HistoryManager {
     def this(applicationPath: String) = this()
@@ -99,7 +116,7 @@ object mod {
     * @param replaceQueryIdentifier a value indicating whether to use '#'
     * in place of '?'. Set to true for Internet explorer 6 and 7 support
     */
-  class HashHistoryManager ()
+  open class HashHistoryManager ()
     extends StObject
        with HistoryManager {
     def this(replaceQueryIdentifier: Boolean) = this()
@@ -116,19 +133,25 @@ object mod {
       * Registers a listener for the hashchange event
       * @param navigateHistory The history navigation event handler
       */
-    def init(navigateHistory: js.Any): Unit = js.native
+    def init(navigateHistory: Any): Unit = js.native
   }
   
   @JSImport("navigation", "State")
   @js.native
-  class State ()
+  open class State[Key /* <: String */, Data /* <: js.Object */] ()
     extends StObject
-       with StateInfo {
+       with StateInfo[Key] {
     
     /**
       * Gets the crumb trail key
       */
     var crumbTrailKey: String = js.native
+    
+    /**
+      * Gets the default NavigationData for this State
+      */
+    @JSName("defaults")
+    var defaults_State: Partial[Data] = js.native
     
     /**
       * Called on the old State after navigating to a different State
@@ -143,20 +166,20 @@ object mod {
     /**
       * Gets the formatted default NavigationData for this State
       */
-    var formattedDefaults: js.Any = js.native
+    var formattedDefaults: Any = js.native
     
     /**
       * Gets the unique key
       */
     /* CompleteClass */
-    var key: String = js.native
+    var key: Key = js.native
     
     /**
       * Called on the current State after navigating to it
       * @param data The current NavigationData
       * @param asyncData The data passed asynchronously while navigating
       */
-    def navigated(data: js.Any, asyncData: js.Any): Unit = js.native
+    def navigated(data: Data, asyncData: Any): Unit = js.native
     
     /**
       * Called on the new State before navigating to it
@@ -166,9 +189,9 @@ object mod {
       * @param history A value indicating whether browser history was used
       */
     def navigating(
-      data: js.Any,
+      data: Data,
       url: String,
-      navigate: js.Function1[/* asyncData */ js.UndefOr[js.Any], Unit],
+      navigate: js.Function1[/* asyncData */ js.UndefOr[Any], Unit],
       history: Boolean
     ): Unit = js.native
     
@@ -205,7 +228,7 @@ object mod {
       * @param The Crumb collection representing the crumb trail
       * @returns Truncated crumb trail
       */
-    def truncateCrumbTrail(state: State, data: js.Any, crumbs: js.Array[Crumb]): js.Array[Crumb] = js.native
+    def truncateCrumbTrail(state: State[Key, Data], data: Data, crumbs: js.Array[Crumb[String, Any]]): js.Array[Crumb[String, Any]] = js.native
     
     /**
       * Called on the old State before navigating to a different State
@@ -215,8 +238,8 @@ object mod {
       * @param unload The function to call to continue to navigate
       * @param history A value indicating whether browser history was used
       */
-    def unloading(state: State, data: js.Any, url: String, unload: js.Function0[Unit]): Unit = js.native
-    def unloading(state: State, data: js.Any, url: String, unload: js.Function0[Unit], history: Boolean): Unit = js.native
+    def unloading(state: State[String, Any], data: Any, url: String, unload: js.Function0[Unit]): Unit = js.native
+    def unloading(state: State[String, Any], data: Any, url: String, unload: js.Function0[Unit], history: Boolean): Unit = js.native
     
     /**
       * Decodes the Url value
@@ -225,7 +248,7 @@ object mod {
       * @param val The Url value of the navigation data item
       * @param queryString A value indicating the Url value's location
       */
-    def urlDecode(state: State, key: String, `val`: String, queryString: Boolean): String = js.native
+    def urlDecode(state: State[Key, Data], key: /* keyof Data */ String, `val`: String, queryString: Boolean): String = js.native
     
     /**
       * Encodes the Url value
@@ -235,25 +258,31 @@ object mod {
       * @param queryString A value indicating the Url value's location
       * @param index The index of the navigation data array item
       */
-    def urlEncode(state: State, key: String, `val`: String, queryString: Boolean): String = js.native
-    def urlEncode(state: State, key: String, `val`: String, queryString: Boolean, index: Double): String = js.native
+    def urlEncode(state: State[Key, Data], key: /* keyof Data */ String, `val`: String, queryString: Boolean): String = js.native
+    def urlEncode(
+      state: State[Key, Data],
+      key: /* keyof Data */ String,
+      `val`: String,
+      queryString: Boolean,
+      index: Double
+    ): String = js.native
     
     /**
       * Validates the NavigationData before navigating to the new State
       * @param data The new NavigationData
       * @returns Validation success indicator
       */
-    def validate(data: js.Any): Boolean = js.native
+    def validate(data: Data): Boolean = js.native
   }
   
   @JSImport("navigation", "StateContext")
   @js.native
-  class StateContext () extends StObject {
+  open class StateContext[Key /* <: String */, Data /* <: js.Object */] () extends StObject {
     
     /**
       * Gets the current asynchronous data
       */
-    var asyncData: js.Any = js.native
+    var asyncData: Any = js.native
     
     /**
       * Clears the Context Data
@@ -264,12 +293,17 @@ object mod {
       * Gets a Crumb collection representing the crumb trail, ordered oldest
       * Crumb first
       */
-    var crumbs: js.Array[Crumb] = js.native
+    var crumbs: js.Array[Crumb[String, Any]] = js.native
     
     /**
       * Gets the NavigationData for the current State
       */
-    var data: js.Any = js.native
+    var data: Data = js.native
+    
+    /**
+      * Gets the fragment identifier of the current Url
+      */
+    var hash: String = js.native
     
     /**
       * Gets a value indicating whether browser history was used
@@ -281,23 +315,28 @@ object mod {
       * @param The data to add to the current NavigationData
       * @returns The combined data
       */
-    def includeCurrentData(data: js.Any): js.Any = js.native
-    def includeCurrentData(data: js.Any, keys: js.Array[String]): js.Any = js.native
+    def includeCurrentData(data: Data): Data = js.native
+    def includeCurrentData(data: Data, keys: js.Array[String]): Data = js.native
     
     /**
       * Gets the next crumb
       */
-    var nextCrumb: Crumb = js.native
+    var nextCrumb: Crumb[Key, Data] = js.native
     
     /**
       * Gets the NavigationData for the last displayed State
       */
-    var oldData: js.Any = js.native
+    var oldData: Any = js.native
+    
+    /**
+      * Gets the fragment identifier of the last displayed State
+      */
+    var oldHash: String = js.native
     
     /**
       * Gets the last State displayed before the current State
       */
-    var oldState: State = js.native
+    var oldState: State[String, Any] = js.native
     
     /**
       * Gets the Url for the last displayed State
@@ -307,12 +346,17 @@ object mod {
     /**
       * Gets the NavigationData of the last Crumb in the crumb trail
       */
-    var previousData: js.Any = js.native
+    var previousData: Any = js.native
+    
+    /**
+      * Gets the fragment identifier of the last Crumb in the crumb trail
+      */
+    var previousHash: String = js.native
     
     /**
       * Gets the State of the last Crumb in the crumb trail
       */
-    var previousState: State = js.native
+    var previousState: State[String, Any] = js.native
     
     /**
       * Gets the Url of the last Crumb in the crumb trail
@@ -322,7 +366,7 @@ object mod {
     /**
       * Gets the current State
       */
-    var state: State = js.native
+    var state: State[Key, Data] = js.native
     
     /**
       * Gets or sets the current title
@@ -342,12 +386,12 @@ object mod {
     * @param stateInfos A collection of State Infos or another State Navigator
     * @param historyManager The manager of the browser Url
     */
-  class StateNavigator () extends StObject {
-    def this(stateInfos: js.Array[StateInfo]) = this()
-    def this(stateInfos: StateNavigator) = this()
-    def this(stateInfos: js.Array[StateInfo], historyManager: HistoryManager) = this()
+  open class StateNavigator[NavigationInfo /* <: StringDictionary[Any] */, Key /* <: /* keyof NavigationInfo */ String */] () extends StObject {
+    def this(stateInfos: js.Array[StateInfo[/* keyof NavigationInfo */ String]]) = this()
+    def this(stateInfos: StateNavigator[NavigationInfo, String]) = this()
+    def this(stateInfos: js.Array[StateInfo[/* keyof NavigationInfo */ String]], historyManager: HistoryManager) = this()
     def this(stateInfos: Unit, historyManager: HistoryManager) = this()
-    def this(stateInfos: StateNavigator, historyManager: HistoryManager) = this()
+    def this(stateInfos: StateNavigator[NavigationInfo, String], historyManager: HistoryManager) = this()
     
     /**
       * Determines if the distance specified is within the bounds of the
@@ -360,10 +404,10 @@ object mod {
       * @param stateInfos A collection of State Infos or another State Navigator
       * @param historyManager The manager of the browser Url
       */
-    def configure(stateInfos: js.Array[StateInfo]): Unit = js.native
-    def configure(stateInfos: js.Array[StateInfo], historyManager: HistoryManager): Unit = js.native
-    def configure(stateInfos: StateNavigator): Unit = js.native
-    def configure(stateInfos: StateNavigator, historyManager: HistoryManager): Unit = js.native
+    def configure(stateInfos: js.Array[StateInfo[/* keyof NavigationInfo */ String]]): Unit = js.native
+    def configure(stateInfos: js.Array[StateInfo[/* keyof NavigationInfo */ String]], historyManager: HistoryManager): Unit = js.native
+    def configure(stateInfos: StateNavigator[NavigationInfo, String]): Unit = js.native
+    def configure(stateInfos: StateNavigator[NavigationInfo, String], historyManager: HistoryManager): Unit = js.native
     
     /**
       * Creates a FluentNavigator
@@ -371,8 +415,8 @@ object mod {
       * context
       * @returns A FluentNavigator
       */
-    def fluent(): FluentNavigator = js.native
-    def fluent(withContext: Boolean): FluentNavigator = js.native
+    def fluent[B /* <: Boolean */](): FluentNavigator[NavigationInfo, String | Key] = js.native
+    def fluent[B /* <: Boolean */](withContext: B): FluentNavigator[NavigationInfo, String | Key] = js.native
     
     /**
       * Gets a Url to navigate back along the crumb trail
@@ -386,22 +430,42 @@ object mod {
       * @param stateKey The key of a State
       * @param navigationData The NavigationData to be passed to the next
       * State and stored in the StateContext
+      * @param hash The fragment identifier of the Url to navigate to
       * @returns Url that will navigate to State specified in the action
       * @throws state does not match the key of a State or there is
       * NavigationData that cannot be converted to a String
       */
-    def getNavigationLink(stateKey: String): String = js.native
-    def getNavigationLink(stateKey: String, navigationData: js.Any): String = js.native
+    def getNavigationLink[StateKey /* <: /* keyof NavigationInfo */ String */](stateKey: StateKey): String = js.native
+    def getNavigationLink[StateKey /* <: /* keyof NavigationInfo */ String */](
+      stateKey: StateKey,
+      navigationData: /* import warning: importer.ImportType#apply Failed type conversion: NavigationInfo[StateKey] */ js.Any
+    ): String = js.native
+    def getNavigationLink[StateKey /* <: /* keyof NavigationInfo */ String */](
+      stateKey: StateKey,
+      navigationData: /* import warning: importer.ImportType#apply Failed type conversion: NavigationInfo[StateKey] */ js.Any,
+      hash: String
+    ): String = js.native
+    def getNavigationLink[StateKey /* <: /* keyof NavigationInfo */ String */](stateKey: StateKey, navigationData: Null, hash: String): String = js.native
+    def getNavigationLink[StateKey /* <: /* keyof NavigationInfo */ String */](stateKey: StateKey, navigationData: Unit, hash: String): String = js.native
     
     /**
       * Gets a Url to navigate to the current State
       * @param navigationData The NavigationData to be passed to the current
       * State and stored in the StateContext
+      * @param hash The fragment identifier of the Url to navigate to
       * @returns Url that will navigate to the current State
       * @throws There is NavigationData that cannot be converted to a String
       */
     def getRefreshLink(): String = js.native
-    def getRefreshLink(navigationData: js.Any): String = js.native
+    def getRefreshLink(
+      navigationData: /* import warning: importer.ImportType#apply Failed type conversion: NavigationInfo[Key] */ js.Any
+    ): String = js.native
+    def getRefreshLink(
+      navigationData: /* import warning: importer.ImportType#apply Failed type conversion: NavigationInfo[Key] */ js.Any,
+      hash: String
+    ): String = js.native
+    def getRefreshLink(navigationData: Null, hash: String): String = js.native
+    def getRefreshLink(navigationData: Unit, hash: String): String = js.native
     
     /**
       * Gets the browser Url manager
@@ -418,8 +482,18 @@ object mod {
       * NavigationData that cannot be converted to a String
       * @throws A mandatory route parameter has not been supplied a value
       */
-    def navigate(stateKey: String): Unit = js.native
-    def navigate(stateKey: String, navigationData: js.Any): Unit = js.native
+    def navigate[StateKey /* <: /* keyof NavigationInfo */ String */](stateKey: StateKey): Unit = js.native
+    def navigate[StateKey /* <: /* keyof NavigationInfo */ String */](
+      stateKey: StateKey,
+      navigationData: /* import warning: importer.ImportType#apply Failed type conversion: NavigationInfo[StateKey] */ js.Any
+    ): Unit = js.native
+    def navigate[StateKey /* <: /* keyof NavigationInfo */ String */](
+      stateKey: StateKey,
+      navigationData: /* import warning: importer.ImportType#apply Failed type conversion: NavigationInfo[StateKey] */ js.Any,
+      historyAction: add | replace | none
+    ): Unit = js.native
+    def navigate[StateKey /* <: /* keyof NavigationInfo */ String */](stateKey: StateKey, navigationData: Null, historyAction: add | replace | none): Unit = js.native
+    def navigate[StateKey /* <: /* keyof NavigationInfo */ String */](stateKey: StateKey, navigationData: Unit, historyAction: add | replace | none): Unit = js.native
     
     /**
       * Navigates back along the crumb trail
@@ -429,12 +503,7 @@ object mod {
       * @throws A mandatory route parameter has not been supplied a value
       */
     def navigateBack(distance: Double): Unit = js.native
-    @JSName("navigateBack")
-    def navigateBack_add(distance: Double, historyAction: add): Unit = js.native
-    @JSName("navigateBack")
-    def navigateBack_none(distance: Double, historyAction: none): Unit = js.native
-    @JSName("navigateBack")
-    def navigateBack_replace(distance: Double, historyAction: replace): Unit = js.native
+    def navigateBack(distance: Double, historyAction: add | replace | none): Unit = js.native
     
     /**
       * Navigates to the url
@@ -445,210 +514,145 @@ object mod {
       * @param currentContext The current StateContext
       */
     def navigateLink(url: String): Unit = js.native
+    def navigateLink(url: String, historyAction: add | replace | none): Unit = js.native
+    def navigateLink(url: String, historyAction: add | replace | none, history: Boolean): Unit = js.native
+    def navigateLink(
+      url: String,
+      historyAction: add | replace | none,
+      history: Boolean,
+      suspendNavigation: js.Function2[
+          /* stateContext */ StateContext[String, Any], 
+          /* resumeNavigation */ js.Function0[Unit], 
+          Unit
+        ]
+    ): Unit = js.native
+    def navigateLink(
+      url: String,
+      historyAction: add | replace | none,
+      history: Boolean,
+      suspendNavigation: js.Function2[
+          /* stateContext */ StateContext[String, Any], 
+          /* resumeNavigation */ js.Function0[Unit], 
+          Unit
+        ],
+      currentContext: StateContext[
+          Key & String, 
+          /* import warning: importer.ImportType#apply Failed type conversion: NavigationInfo[Key] */ js.Any
+        ]
+    ): Unit = js.native
+    def navigateLink(
+      url: String,
+      historyAction: add | replace | none,
+      history: Boolean,
+      suspendNavigation: Unit,
+      currentContext: StateContext[
+          Key & String, 
+          /* import warning: importer.ImportType#apply Failed type conversion: NavigationInfo[Key] */ js.Any
+        ]
+    ): Unit = js.native
+    def navigateLink(
+      url: String,
+      historyAction: add | replace | none,
+      history: Unit,
+      suspendNavigation: js.Function2[
+          /* stateContext */ StateContext[String, Any], 
+          /* resumeNavigation */ js.Function0[Unit], 
+          Unit
+        ]
+    ): Unit = js.native
+    def navigateLink(
+      url: String,
+      historyAction: add | replace | none,
+      history: Unit,
+      suspendNavigation: js.Function2[
+          /* stateContext */ StateContext[String, Any], 
+          /* resumeNavigation */ js.Function0[Unit], 
+          Unit
+        ],
+      currentContext: StateContext[
+          Key & String, 
+          /* import warning: importer.ImportType#apply Failed type conversion: NavigationInfo[Key] */ js.Any
+        ]
+    ): Unit = js.native
+    def navigateLink(
+      url: String,
+      historyAction: add | replace | none,
+      history: Unit,
+      suspendNavigation: Unit,
+      currentContext: StateContext[
+          Key & String, 
+          /* import warning: importer.ImportType#apply Failed type conversion: NavigationInfo[Key] */ js.Any
+        ]
+    ): Unit = js.native
     def navigateLink(url: String, historyAction: Unit, history: Boolean): Unit = js.native
     def navigateLink(
       url: String,
       historyAction: Unit,
       history: Boolean,
-      suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit]
+      suspendNavigation: js.Function2[
+          /* stateContext */ StateContext[String, Any], 
+          /* resumeNavigation */ js.Function0[Unit], 
+          Unit
+        ]
     ): Unit = js.native
     def navigateLink(
       url: String,
       historyAction: Unit,
       history: Boolean,
-      suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit],
-      currentContext: StateContext
+      suspendNavigation: js.Function2[
+          /* stateContext */ StateContext[String, Any], 
+          /* resumeNavigation */ js.Function0[Unit], 
+          Unit
+        ],
+      currentContext: StateContext[
+          Key & String, 
+          /* import warning: importer.ImportType#apply Failed type conversion: NavigationInfo[Key] */ js.Any
+        ]
     ): Unit = js.native
     def navigateLink(
       url: String,
       historyAction: Unit,
       history: Boolean,
       suspendNavigation: Unit,
-      currentContext: StateContext
+      currentContext: StateContext[
+          Key & String, 
+          /* import warning: importer.ImportType#apply Failed type conversion: NavigationInfo[Key] */ js.Any
+        ]
     ): Unit = js.native
     def navigateLink(
       url: String,
       historyAction: Unit,
       history: Unit,
-      suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit]
+      suspendNavigation: js.Function2[
+          /* stateContext */ StateContext[String, Any], 
+          /* resumeNavigation */ js.Function0[Unit], 
+          Unit
+        ]
     ): Unit = js.native
     def navigateLink(
       url: String,
       historyAction: Unit,
       history: Unit,
-      suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit],
-      currentContext: StateContext
+      suspendNavigation: js.Function2[
+          /* stateContext */ StateContext[String, Any], 
+          /* resumeNavigation */ js.Function0[Unit], 
+          Unit
+        ],
+      currentContext: StateContext[
+          Key & String, 
+          /* import warning: importer.ImportType#apply Failed type conversion: NavigationInfo[Key] */ js.Any
+        ]
     ): Unit = js.native
     def navigateLink(
       url: String,
       historyAction: Unit,
       history: Unit,
       suspendNavigation: Unit,
-      currentContext: StateContext
+      currentContext: StateContext[
+          Key & String, 
+          /* import warning: importer.ImportType#apply Failed type conversion: NavigationInfo[Key] */ js.Any
+        ]
     ): Unit = js.native
-    @JSName("navigateLink")
-    def navigateLink_add(url: String, historyAction: add): Unit = js.native
-    @JSName("navigateLink")
-    def navigateLink_add(url: String, historyAction: add, history: Boolean): Unit = js.native
-    @JSName("navigateLink")
-    def navigateLink_add(
-      url: String,
-      historyAction: add,
-      history: Boolean,
-      suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit]
-    ): Unit = js.native
-    @JSName("navigateLink")
-    def navigateLink_add(
-      url: String,
-      historyAction: add,
-      history: Boolean,
-      suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit],
-      currentContext: StateContext
-    ): Unit = js.native
-    @JSName("navigateLink")
-    def navigateLink_add(
-      url: String,
-      historyAction: add,
-      history: Boolean,
-      suspendNavigation: Unit,
-      currentContext: StateContext
-    ): Unit = js.native
-    @JSName("navigateLink")
-    def navigateLink_add(
-      url: String,
-      historyAction: add,
-      history: Unit,
-      suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit]
-    ): Unit = js.native
-    @JSName("navigateLink")
-    def navigateLink_add(
-      url: String,
-      historyAction: add,
-      history: Unit,
-      suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit],
-      currentContext: StateContext
-    ): Unit = js.native
-    @JSName("navigateLink")
-    def navigateLink_add(
-      url: String,
-      historyAction: add,
-      history: Unit,
-      suspendNavigation: Unit,
-      currentContext: StateContext
-    ): Unit = js.native
-    @JSName("navigateLink")
-    def navigateLink_none(url: String, historyAction: none): Unit = js.native
-    @JSName("navigateLink")
-    def navigateLink_none(url: String, historyAction: none, history: Boolean): Unit = js.native
-    @JSName("navigateLink")
-    def navigateLink_none(
-      url: String,
-      historyAction: none,
-      history: Boolean,
-      suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit]
-    ): Unit = js.native
-    @JSName("navigateLink")
-    def navigateLink_none(
-      url: String,
-      historyAction: none,
-      history: Boolean,
-      suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit],
-      currentContext: StateContext
-    ): Unit = js.native
-    @JSName("navigateLink")
-    def navigateLink_none(
-      url: String,
-      historyAction: none,
-      history: Boolean,
-      suspendNavigation: Unit,
-      currentContext: StateContext
-    ): Unit = js.native
-    @JSName("navigateLink")
-    def navigateLink_none(
-      url: String,
-      historyAction: none,
-      history: Unit,
-      suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit]
-    ): Unit = js.native
-    @JSName("navigateLink")
-    def navigateLink_none(
-      url: String,
-      historyAction: none,
-      history: Unit,
-      suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit],
-      currentContext: StateContext
-    ): Unit = js.native
-    @JSName("navigateLink")
-    def navigateLink_none(
-      url: String,
-      historyAction: none,
-      history: Unit,
-      suspendNavigation: Unit,
-      currentContext: StateContext
-    ): Unit = js.native
-    @JSName("navigateLink")
-    def navigateLink_replace(url: String, historyAction: replace): Unit = js.native
-    @JSName("navigateLink")
-    def navigateLink_replace(url: String, historyAction: replace, history: Boolean): Unit = js.native
-    @JSName("navigateLink")
-    def navigateLink_replace(
-      url: String,
-      historyAction: replace,
-      history: Boolean,
-      suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit]
-    ): Unit = js.native
-    @JSName("navigateLink")
-    def navigateLink_replace(
-      url: String,
-      historyAction: replace,
-      history: Boolean,
-      suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit],
-      currentContext: StateContext
-    ): Unit = js.native
-    @JSName("navigateLink")
-    def navigateLink_replace(
-      url: String,
-      historyAction: replace,
-      history: Boolean,
-      suspendNavigation: Unit,
-      currentContext: StateContext
-    ): Unit = js.native
-    @JSName("navigateLink")
-    def navigateLink_replace(
-      url: String,
-      historyAction: replace,
-      history: Unit,
-      suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit]
-    ): Unit = js.native
-    @JSName("navigateLink")
-    def navigateLink_replace(
-      url: String,
-      historyAction: replace,
-      history: Unit,
-      suspendNavigation: js.Function2[/* stateContext */ StateContext, /* resumeNavigation */ js.Function0[Unit], Unit],
-      currentContext: StateContext
-    ): Unit = js.native
-    @JSName("navigateLink")
-    def navigateLink_replace(
-      url: String,
-      historyAction: replace,
-      history: Unit,
-      suspendNavigation: Unit,
-      currentContext: StateContext
-    ): Unit = js.native
-    
-    @JSName("navigate")
-    def navigate_add(stateKey: String, navigationData: js.Any, historyAction: add): Unit = js.native
-    @JSName("navigate")
-    def navigate_add(stateKey: String, navigationData: Unit, historyAction: add): Unit = js.native
-    @JSName("navigate")
-    def navigate_none(stateKey: String, navigationData: js.Any, historyAction: none): Unit = js.native
-    @JSName("navigate")
-    def navigate_none(stateKey: String, navigationData: Unit, historyAction: none): Unit = js.native
-    @JSName("navigate")
-    def navigate_replace(stateKey: String, navigationData: js.Any, historyAction: replace): Unit = js.native
-    @JSName("navigate")
-    def navigate_replace(stateKey: String, navigationData: Unit, historyAction: replace): Unit = js.native
     
     /**
       * Unregisters a before navigate event listener
@@ -656,11 +660,11 @@ object mod {
       */
     def offBeforeNavigate(
       handler: js.Function5[
-          /* state */ State, 
-          /* data */ js.Any, 
+          /* state */ State[String, Any], 
+          /* data */ Any, 
           /* url */ String, 
           /* history */ Boolean, 
-          /* currentContext */ StateContext, 
+          /* currentContext */ StateContext[String, Any], 
           Boolean
         ]
     ): Unit = js.native
@@ -671,11 +675,11 @@ object mod {
       */
     def offNavigate(
       handler: js.Function5[
-          /* oldState */ State, 
-          /* state */ State, 
-          /* data */ js.Any, 
-          /* asyncData */ js.Any, 
-          /* stateContext */ StateContext, 
+          /* oldState */ State[String, Any], 
+          /* state */ State[String, Any], 
+          /* data */ Any, 
+          /* asyncData */ Any, 
+          /* stateContext */ StateContext[String, Any], 
           Unit
         ]
     ): Unit = js.native
@@ -686,11 +690,11 @@ object mod {
       */
     def onBeforeNavigate(
       handler: js.Function5[
-          /* state */ State, 
-          /* data */ js.Any, 
+          /* state */ State[String, Any], 
+          /* data */ Any, 
           /* url */ String, 
           /* history */ Boolean, 
-          /* currentContext */ StateContext, 
+          /* currentContext */ StateContext[String, Any], 
           Boolean
         ]
     ): Unit = js.native
@@ -701,11 +705,11 @@ object mod {
       */
     def onNavigate(
       handler: js.Function5[
-          /* oldState */ State, 
-          /* state */ State, 
-          /* data */ js.Any, 
-          /* asyncData */ js.Any, 
-          /* stateContext */ StateContext, 
+          /* oldState */ State[String, Any], 
+          /* state */ State[String, Any], 
+          /* data */ Any, 
+          /* asyncData */ Any, 
+          /* stateContext */ StateContext[String, Any], 
           Unit
         ]
     ): Unit = js.native
@@ -715,6 +719,8 @@ object mod {
       * @param url The url to parse
       */
     def parseLink(url: String): Crumbs = js.native
+    @JSName("parseLink")
+    def parseLink_StateKey_String_Data[StateKey /* <: /* keyof NavigationInfo */ String */](url: String): Data[StateKey, NavigationInfo] = js.native
     
     /**
       * Navigates to the current State
@@ -725,19 +731,15 @@ object mod {
       * @throws A mandatory route parameter has not been supplied a value
       */
     def refresh(): Unit = js.native
-    def refresh(navigationData: js.Any): Unit = js.native
-    @JSName("refresh")
-    def refresh_add(navigationData: js.Any, historyAction: add): Unit = js.native
-    @JSName("refresh")
-    def refresh_add(navigationData: Unit, historyAction: add): Unit = js.native
-    @JSName("refresh")
-    def refresh_none(navigationData: js.Any, historyAction: none): Unit = js.native
-    @JSName("refresh")
-    def refresh_none(navigationData: Unit, historyAction: none): Unit = js.native
-    @JSName("refresh")
-    def refresh_replace(navigationData: js.Any, historyAction: replace): Unit = js.native
-    @JSName("refresh")
-    def refresh_replace(navigationData: Unit, historyAction: replace): Unit = js.native
+    def refresh(
+      navigationData: /* import warning: importer.ImportType#apply Failed type conversion: NavigationInfo[Key] */ js.Any
+    ): Unit = js.native
+    def refresh(
+      navigationData: /* import warning: importer.ImportType#apply Failed type conversion: NavigationInfo[Key] */ js.Any,
+      historyAction: add | replace | none
+    ): Unit = js.native
+    def refresh(navigationData: Null, historyAction: add | replace | none): Unit = js.native
+    def refresh(navigationData: Unit, historyAction: add | replace | none): Unit = js.native
     
     /**
       * Navigates to the passed in url
@@ -749,28 +751,44 @@ object mod {
     /**
       * Provides access to context sensitive navigation information
       */
-    var stateContext: StateContext = js.native
+    var stateContext: StateContext[
+        Key & String, 
+        /* import warning: importer.ImportType#apply Failed type conversion: NavigationInfo[Key] */ js.Any
+      ] = js.native
     
     /**
       * Gets a list of States
       */
-    var states: StringDictionary[State] = js.native
+    var states: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ Key in keyof NavigationInfo & string ]: navigation.navigation.State<Key, NavigationInfo[Key]>}
+      */ typings.navigation.navigationStrings.StateNavigator & TopLevel[NavigationInfo] = js.native
   }
   
   @js.native
-  trait FluentNavigator extends StObject {
+  trait FluentNavigator[NavigationInfo /* <: StringDictionary[Any] */, Key /* <: /* keyof NavigationInfo */ String */] extends StObject {
     
     /**
       * Navigates to a State
       * @param stateKey The key of a State
       * @param navigationData The NavigationData to be passed to the next
       * State and stored in the StateContext
+      * @param hash The fragment identifier of the Url to navigate to
       * @throws state does not match the key of a State or there is
       * NavigationData that cannot be converted to a String
       * @throws A mandatory route parameter has not been supplied a value
       */
-    def navigate(stateKey: String): FluentNavigator = js.native
-    def navigate(stateKey: String, navigationData: js.Any): FluentNavigator = js.native
+    def navigate[StateKey /* <: /* keyof NavigationInfo */ String */](stateKey: StateKey): FluentNavigator[NavigationInfo, StateKey] = js.native
+    def navigate[StateKey /* <: /* keyof NavigationInfo */ String */](
+      stateKey: StateKey,
+      navigationData: /* import warning: importer.ImportType#apply Failed type conversion: NavigationInfo[StateKey] */ js.Any
+    ): FluentNavigator[NavigationInfo, StateKey] = js.native
+    def navigate[StateKey /* <: /* keyof NavigationInfo */ String */](
+      stateKey: StateKey,
+      navigationData: /* import warning: importer.ImportType#apply Failed type conversion: NavigationInfo[StateKey] */ js.Any,
+      hash: String
+    ): FluentNavigator[NavigationInfo, StateKey] = js.native
+    def navigate[StateKey /* <: /* keyof NavigationInfo */ String */](stateKey: StateKey, navigationData: Null, hash: String): FluentNavigator[NavigationInfo, StateKey] = js.native
+    def navigate[StateKey /* <: /* keyof NavigationInfo */ String */](stateKey: StateKey, navigationData: Unit, hash: String): FluentNavigator[NavigationInfo, StateKey] = js.native
     
     /**
       * Navigates back along the crumb trail
@@ -778,18 +796,26 @@ object mod {
       * @throws canNavigateBack returns false for this distance
       * @throws A mandatory route parameter has not been supplied a value
       */
-    def navigateBack(distance: Double): FluentNavigator = js.native
+    def navigateBack(distance: Double): FluentNavigator[Any, String] = js.native
     
     /**
       * Navigates to the current State
       * @param navigationData The NavigationData to be passed to the current
       * State and stored in the StateContext
-      * @param A value determining the effect on browser history
+      * @param hash The fragment identifier of the Url to navigate to
       * @throws There is NavigationData that cannot be converted to a String
       * @throws A mandatory route parameter has not been supplied a value
       */
-    def refresh(): FluentNavigator = js.native
-    def refresh(navigationData: js.Any): FluentNavigator = js.native
+    def refresh(): FluentNavigator[NavigationInfo, Key] = js.native
+    def refresh(
+      navigationData: /* import warning: importer.ImportType#apply Failed type conversion: NavigationInfo[Key] */ js.Any
+    ): FluentNavigator[NavigationInfo, Key] = js.native
+    def refresh(
+      navigationData: /* import warning: importer.ImportType#apply Failed type conversion: NavigationInfo[Key] */ js.Any,
+      hash: String
+    ): FluentNavigator[NavigationInfo, Key] = js.native
+    def refresh(navigationData: Null, hash: String): FluentNavigator[NavigationInfo, Key] = js.native
+    def refresh(navigationData: Unit, hash: String): FluentNavigator[NavigationInfo, Key] = js.native
     
     /**
       * Gets the current Url
@@ -807,7 +833,7 @@ object mod {
       * @param stateContext The current StateContext
       * browser history entry
       */
-    def addHistory(url: String, replace: Boolean, stateContext: StateContext): Unit = js.native
+    def addHistory(url: String, replace: Boolean, stateContext: StateContext[String, Any]): Unit = js.native
     
     /**
       * Gets or sets a value indicating whether to disable browser history
@@ -842,27 +868,27 @@ object mod {
     def stop(): Unit = js.native
   }
   
-  trait StateInfo
+  trait StateInfo[Key /* <: String */]
     extends StObject
        with /**
     * Gets the additional state attributes
     */
-  /* extras */ StringDictionary[js.Any] {
+  /* extras */ StringDictionary[Any] {
     
     /**
       * Gets the default NavigationData Types for  this State
       */
-    var defaultTypes: js.UndefOr[js.Any] = js.undefined
+    var defaultTypes: js.UndefOr[Any] = js.undefined
     
     /**
       * Gets the default NavigationData for this State
       */
-    var defaults: js.UndefOr[js.Any] = js.undefined
+    var defaults: js.UndefOr[Any] = js.undefined
     
     /**
       * Gets the unique key
       */
-    var key: String
+    var key: Key
     
     /**
       * Gets the route Url patterns
@@ -887,28 +913,28 @@ object mod {
   }
   object StateInfo {
     
-    inline def apply(key: String): StateInfo = {
+    inline def apply[Key /* <: String */](key: Key): StateInfo[Key] = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-      __obj.asInstanceOf[StateInfo]
+      __obj.asInstanceOf[StateInfo[Key]]
     }
     
-    extension [Self <: StateInfo](x: Self) {
+    extension [Self <: StateInfo[?], Key /* <: String */](x: Self & StateInfo[Key]) {
       
-      inline def setDefaultTypes(value: js.Any): Self = StObject.set(x, "defaultTypes", value.asInstanceOf[js.Any])
+      inline def setDefaultTypes(value: Any): Self = StObject.set(x, "defaultTypes", value.asInstanceOf[js.Any])
       
       inline def setDefaultTypesUndefined: Self = StObject.set(x, "defaultTypes", js.undefined)
       
-      inline def setDefaults(value: js.Any): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+      inline def setDefaults(value: Any): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
       
       inline def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
       
-      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
       inline def setRoute(value: String | js.Array[String]): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
       
       inline def setRouteUndefined: Self = StObject.set(x, "route", js.undefined)
       
-      inline def setRouteVarargs(value: String*): Self = StObject.set(x, "route", js.Array(value :_*))
+      inline def setRouteVarargs(value: String*): Self = StObject.set(x, "route", js.Array(value*))
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       

@@ -5,19 +5,23 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type ActivityList = js.Array[typings.awsSdk.stepfunctionsMod.ActivityListItem]
+type ActivityList = js.Array[ActivityListItem]
 
-type Arn = java.lang.String
+type Arn = String
 
-type ConnectorParameters = java.lang.String
+type BilledDuration = Double
 
-type Definition = java.lang.String
+type BilledMemoryUsed = Double
 
-type Enabled = scala.Boolean
+type ConnectorParameters = String
 
-type EventId = scala.Double
+type Definition = String
 
-type ExecutionList = js.Array[typings.awsSdk.stepfunctionsMod.ExecutionListItem]
+type Enabled = Boolean
+
+type EventId = Double
+
+type ExecutionList = js.Array[ExecutionListItem]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.RUNNING
@@ -27,9 +31,9 @@ type ExecutionList = js.Array[typings.awsSdk.stepfunctionsMod.ExecutionListItem]
   - typings.awsSdk.awsSdkStrings.ABORTED
   - java.lang.String
 */
-type ExecutionStatus = typings.awsSdk.stepfunctionsMod._ExecutionStatus | java.lang.String
+type ExecutionStatus = _ExecutionStatus | String
 
-type HistoryEventList = js.Array[typings.awsSdk.stepfunctionsMod.HistoryEvent]
+type HistoryEventList = js.Array[HistoryEvent]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ActivityFailed
@@ -89,17 +93,17 @@ type HistoryEventList = js.Array[typings.awsSdk.stepfunctionsMod.HistoryEvent]
   - typings.awsSdk.awsSdkStrings.WaitStateExited
   - java.lang.String
 */
-type HistoryEventType = typings.awsSdk.stepfunctionsMod._HistoryEventType | java.lang.String
+type HistoryEventType = _HistoryEventType | String
 
-type Identity = java.lang.String
+type Identity = String
 
-type IncludeExecutionData = scala.Boolean
+type IncludeExecutionData = Boolean
 
-type IncludeExecutionDataGetExecutionHistory = scala.Boolean
+type IncludeExecutionDataGetExecutionHistory = Boolean
 
-type ListExecutionsPageToken = java.lang.String
+type ListExecutionsPageToken = String
 
-type LogDestinationList = js.Array[typings.awsSdk.stepfunctionsMod.LogDestination]
+type LogDestinationList = js.Array[LogDestination]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ALL
@@ -108,65 +112,73 @@ type LogDestinationList = js.Array[typings.awsSdk.stepfunctionsMod.LogDestinatio
   - typings.awsSdk.awsSdkStrings.OFF
   - java.lang.String
 */
-type LogLevel = typings.awsSdk.stepfunctionsMod._LogLevel | java.lang.String
+type LogLevel = _LogLevel | String
 
-type Name = java.lang.String
+type Name = String
 
-type PageSize = scala.Double
+type PageSize = Double
 
-type PageToken = java.lang.String
+type PageToken = String
 
-type ReverseOrder = scala.Boolean
+type ReverseOrder = Boolean
 
-type SensitiveCause = java.lang.String
+type SensitiveCause = String
 
-type SensitiveData = java.lang.String
+type SensitiveData = String
 
-type SensitiveDataJobInput = java.lang.String
+type SensitiveDataJobInput = String
 
-type SensitiveError = java.lang.String
+type SensitiveError = String
 
-type StateMachineList = js.Array[typings.awsSdk.stepfunctionsMod.StateMachineListItem]
+type StateMachineList = js.Array[StateMachineListItem]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ACTIVE
   - typings.awsSdk.awsSdkStrings.DELETING
   - java.lang.String
 */
-type StateMachineStatus = typings.awsSdk.stepfunctionsMod._StateMachineStatus | java.lang.String
+type StateMachineStatus = _StateMachineStatus | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.STANDARD
   - typings.awsSdk.awsSdkStrings.EXPRESS
   - java.lang.String
 */
-type StateMachineType = typings.awsSdk.stepfunctionsMod._StateMachineType | java.lang.String
+type StateMachineType = _StateMachineType | String
 
-type TagKey = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SUCCEEDED
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - typings.awsSdk.awsSdkStrings.TIMED_OUT
+  - java.lang.String
+*/
+type SyncExecutionStatus = _SyncExecutionStatus | String
 
-type TagKeyList = js.Array[typings.awsSdk.stepfunctionsMod.TagKey]
+type TagKey = String
 
-type TagList = js.Array[typings.awsSdk.stepfunctionsMod.Tag]
+type TagKeyList = js.Array[TagKey]
 
-type TagValue = java.lang.String
+type TagList = js.Array[Tag]
 
-type TaskToken = java.lang.String
+type TagValue = String
 
-type TimeoutInSeconds = scala.Double
+type TaskToken = String
 
-type Timestamp = typings.std.Date
+type TimeoutInSeconds = Double
 
-type TraceHeader = java.lang.String
+type Timestamp = js.Date
 
-type UnsignedInteger = scala.Double
+type TraceHeader = String
+
+type UnsignedInteger = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2016-11-23`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.stepfunctionsMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String
 
-type included = scala.Boolean
+type includedDetails = Boolean
 
-type truncated = scala.Boolean
+type truncated = Boolean

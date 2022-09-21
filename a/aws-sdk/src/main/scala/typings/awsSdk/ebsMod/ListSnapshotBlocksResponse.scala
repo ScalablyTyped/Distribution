@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListSnapshotBlocksResponse extends StObject {
   
   /**
-    * The size of the block.
+    * The size of the blocks in the snapshot, in bytes.
     */
   var BlockSize: js.UndefOr[typings.awsSdk.ebsMod.BlockSize] = js.undefined
   
@@ -19,7 +19,7 @@ trait ListSnapshotBlocksResponse extends StObject {
   /**
     * The time when the BlockToken expires.
     */
-  var ExpiryTime: js.UndefOr[TimeStamp] = js.undefined
+  var ExpiryTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
@@ -48,9 +48,9 @@ object ListSnapshotBlocksResponse {
     
     inline def setBlocksUndefined: Self = StObject.set(x, "Blocks", js.undefined)
     
-    inline def setBlocksVarargs(value: Block*): Self = StObject.set(x, "Blocks", js.Array(value :_*))
+    inline def setBlocksVarargs(value: Block*): Self = StObject.set(x, "Blocks", js.Array(value*))
     
-    inline def setExpiryTime(value: TimeStamp): Self = StObject.set(x, "ExpiryTime", value.asInstanceOf[js.Any])
+    inline def setExpiryTime(value: js.Date): Self = StObject.set(x, "ExpiryTime", value.asInstanceOf[js.Any])
     
     inline def setExpiryTimeUndefined: Self = StObject.set(x, "ExpiryTime", js.undefined)
     

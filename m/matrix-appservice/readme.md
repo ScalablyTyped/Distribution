@@ -1,7 +1,7 @@
 
 # Scala.js typings for matrix-appservice
 
-Typings are for version 0.7.1
+Typings are for version 1.1.0
 
 ## Library description:
 Matrix Application Service Framework
@@ -10,10 +10,10 @@ Matrix Application Service Framework
 | ------------------ | :-------------: |
 | Full name          | matrix-appservice |
 | Keywords           | matrix-org |
-| # releases         | 9 |
-| # dependents       | 3 |
-| # downloads        | 16536 |
-| # stars            | 0 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 2830.6666666666665 |
+| # stars            | 63.0 |
 
 ## Links
 - [Homepage](https://github.com/matrix-org/matrix-appservice-node#readme)

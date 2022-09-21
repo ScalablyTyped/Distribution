@@ -19,6 +19,8 @@ trait Label extends StObject {
     */
   var `background-color`: js.UndefOr[String] = js.undefined
   
+  var backgroundColor: js.UndefOr[String] = js.undefined
+  
   /**
     * Sets the border color of the object. Colors can be entered by name (e.g., 'purple', 'blue'), hexadecimal notation (e.g., '#666699'
     * , '#33ccff'), or RGB notation (e.g., 'rgb(255,0,0)', 'rgb(0,0,255)'). 'none' | 'transparent' | 'purple' | '#33ccff' | 'rgb(100, 15
@@ -29,14 +31,20 @@ trait Label extends StObject {
   /**
     * Sets the border radius of the object. 2 | 3 | '5px' | ...
     */
-  var `border-radius`: js.UndefOr[Double] = js.undefined
+  var `border-radius`: js.UndefOr[Any] = js.undefined
   
   /**
     * Sets the border width of the object. 1 | 3 | '6px' | ...
     */
-  var `border-width`: js.UndefOr[Double] = js.undefined
+  var `border-width`: js.UndefOr[Any] = js.undefined
   
-  var label: js.UndefOr[Textalign] = js.undefined
+  var borderColor: js.UndefOr[String] = js.undefined
+  
+  var borderRadius: js.UndefOr[Any] = js.undefined
+  
+  var borderWidth: js.UndefOr[Any] = js.undefined
+  
+  var label: js.UndefOr[FontFamily_] = js.undefined
   
   /**
     * Sets the line color of the object. Colors can be entered by name (e.g., 'purple', 'blue'), hexadecimal notation (e.g., '#666699',
@@ -53,23 +61,33 @@ trait Label extends StObject {
   /**
     * Sets the line width of the object. 1 | 3 | '6px' | ...
     */
-  var `line-width`: js.UndefOr[Double] = js.undefined
+  var `line-width`: js.UndefOr[Any] = js.undefined
+  
+  var lineColor: js.UndefOr[String] = js.undefined
+  
+  var lineStyle: js.UndefOr[String] = js.undefined
+  
+  var lineWidth: js.UndefOr[Any] = js.undefined
   
   /**
     * Sets an ending offset for the scale marker. 0.1 | ...
     */
-  var `offset-end`: js.UndefOr[Double] = js.undefined
+  var `offset-end`: js.UndefOr[Any] = js.undefined
   
   /**
     * Sets a starting offset for the scale marker. 0.5 | ...
     */
-  var `offset-start`: js.UndefOr[Double] = js.undefined
+  var `offset-start`: js.UndefOr[Any] = js.undefined
+  
+  var offsetEnd: js.UndefOr[Any] = js.undefined
+  
+  var offsetStart: js.UndefOr[Any] = js.undefined
   
   /**
     * Sets the range of the scale marker. Provide one value for line scale markers and two values (starting and ending) for area scale m
     * arkers. [60] | [20,40] | ...
     */
-  var range: js.UndefOr[js.Any] = js.undefined
+  var range: js.UndefOr[Any] = js.undefined
   
   /**
     * Sets the scale marker type: area or line. 'area' | 'line'
@@ -93,19 +111,35 @@ object Label {
     
     inline def `setBackground-colorUndefined`: Self = StObject.set(x, "background-color", js.undefined)
     
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    
     inline def `setBorder-color`(value: String): Self = StObject.set(x, "border-color", value.asInstanceOf[js.Any])
     
     inline def `setBorder-colorUndefined`: Self = StObject.set(x, "border-color", js.undefined)
     
-    inline def `setBorder-radius`(value: Double): Self = StObject.set(x, "border-radius", value.asInstanceOf[js.Any])
+    inline def `setBorder-radius`(value: Any): Self = StObject.set(x, "border-radius", value.asInstanceOf[js.Any])
     
     inline def `setBorder-radiusUndefined`: Self = StObject.set(x, "border-radius", js.undefined)
     
-    inline def `setBorder-width`(value: Double): Self = StObject.set(x, "border-width", value.asInstanceOf[js.Any])
+    inline def `setBorder-width`(value: Any): Self = StObject.set(x, "border-width", value.asInstanceOf[js.Any])
     
     inline def `setBorder-widthUndefined`: Self = StObject.set(x, "border-width", js.undefined)
     
-    inline def setLabel(value: Textalign): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    
+    inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
+    
+    inline def setBorderRadius(value: Any): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
+    
+    inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
+    
+    inline def setBorderWidth(value: Any): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
+    
+    inline def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
+    
+    inline def setLabel(value: FontFamily_): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
@@ -117,19 +151,39 @@ object Label {
     
     inline def `setLine-styleUndefined`: Self = StObject.set(x, "line-style", js.undefined)
     
-    inline def `setLine-width`(value: Double): Self = StObject.set(x, "line-width", value.asInstanceOf[js.Any])
+    inline def `setLine-width`(value: Any): Self = StObject.set(x, "line-width", value.asInstanceOf[js.Any])
     
     inline def `setLine-widthUndefined`: Self = StObject.set(x, "line-width", js.undefined)
     
-    inline def `setOffset-end`(value: Double): Self = StObject.set(x, "offset-end", value.asInstanceOf[js.Any])
+    inline def setLineColor(value: String): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
+    
+    inline def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
+    
+    inline def setLineStyle(value: String): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
+    
+    inline def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
+    
+    inline def setLineWidth(value: Any): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+    
+    inline def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
+    
+    inline def `setOffset-end`(value: Any): Self = StObject.set(x, "offset-end", value.asInstanceOf[js.Any])
     
     inline def `setOffset-endUndefined`: Self = StObject.set(x, "offset-end", js.undefined)
     
-    inline def `setOffset-start`(value: Double): Self = StObject.set(x, "offset-start", value.asInstanceOf[js.Any])
+    inline def `setOffset-start`(value: Any): Self = StObject.set(x, "offset-start", value.asInstanceOf[js.Any])
     
     inline def `setOffset-startUndefined`: Self = StObject.set(x, "offset-start", js.undefined)
     
-    inline def setRange(value: js.Any): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setOffsetEnd(value: Any): Self = StObject.set(x, "offsetEnd", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetEndUndefined: Self = StObject.set(x, "offsetEnd", js.undefined)
+    
+    inline def setOffsetStart(value: Any): Self = StObject.set(x, "offsetStart", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetStartUndefined: Self = StObject.set(x, "offsetStart", js.undefined)
+    
+    inline def setRange(value: Any): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     

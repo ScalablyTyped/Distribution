@@ -1,7 +1,7 @@
 
 # Scala.js typings for stream-to-string
 
-Typings are for version 1.1
+Typings are for version 1.2.0
 
 ## Library description:
 Pipe a stream into a string, collect value with callback or promise
@@ -11,9 +11,9 @@ Pipe a stream into a string, collect value with callback or promise
 | Full name          | stream-to-string |
 | Keywords           | stream, string, buffer, callback, promise |
 | # releases         | 0 |
-| # dependents       | 106 |
-| # downloads        | 4065035 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 256747.66666666666 |
+| # stars            | 13.0 |
 
 ## Links
 - [Homepage](https://github.com/jasonpincin/stream-to-string)
@@ -24,7 +24,7 @@ Pipe a stream into a string, collect value with callback or promise
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

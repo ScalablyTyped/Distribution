@@ -10,7 +10,7 @@ trait ChartColorFormat extends StObject {
   
   val Creator: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.ChartColorFormat_typekey")
   var PowerPointDotChartColorFormat_typekey: ChartColorFormat
@@ -28,7 +28,7 @@ object ChartColorFormat {
   inline def apply(
     Application: Application,
     Creator: Double,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotChartColorFormat_typekey: ChartColorFormat,
     RGB: Double,
     SchemeColor: Double,
@@ -46,7 +46,7 @@ object ChartColorFormat {
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotChartColorFormat_typekey(value: ChartColorFormat): Self = StObject.set(x, "PowerPoint.ChartColorFormat_typekey", value.asInstanceOf[js.Any])
     

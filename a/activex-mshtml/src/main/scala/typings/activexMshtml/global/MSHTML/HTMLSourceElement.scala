@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLSourceElement")
 @js.native
-/* private */ class HTMLSourceElement ()
+/* private */ open class HTMLSourceElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLSourceElement

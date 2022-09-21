@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CustomAttributeFilter")
 @js.native
-class CustomAttributeFilter () extends StObject {
+open class CustomAttributeFilter () extends StObject {
   
   /**
     * A query expression to filter items or item variations by matching their custom attributes'

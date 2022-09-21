@@ -28,11 +28,11 @@ trait Override extends StObject {
     *     }
     * };
     */
-  def `override`(passageName: String): js.Any
+  def `override`(passageName: String): Any
 }
 object Override {
   
-  inline def apply(`override`: String => js.Any): Override = {
+  inline def apply(`override`: String => Any): Override = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("override")(js.Any.fromFunction1(`override`))
     __obj.asInstanceOf[Override]
@@ -40,6 +40,6 @@ object Override {
   
   extension [Self <: Override](x: Self) {
     
-    inline def setOverride(value: String => js.Any): Self = StObject.set(x, "override", js.Any.fromFunction1(value))
+    inline def setOverride(value: String => Any): Self = StObject.set(x, "override", js.Any.fromFunction1(value))
   }
 }

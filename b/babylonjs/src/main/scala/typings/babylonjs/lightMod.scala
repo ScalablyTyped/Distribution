@@ -2,6 +2,7 @@ package typings.babylonjs
 
 import typings.babylonjs.abstractMeshMod.AbstractMesh
 import typings.babylonjs.effectMod.Effect
+import typings.babylonjs.lightConstantsMod.ISortableLight
 import typings.babylonjs.mathColorMod.Color3
 import typings.babylonjs.mathVectorMod.Vector3
 import typings.babylonjs.nodeMod.Node
@@ -17,11 +18,13 @@ object lightMod {
   
   @JSImport("babylonjs/Lights/light", "Light")
   @js.native
-  abstract class Light protected () extends Node {
+  abstract class Light protected ()
+    extends Node
+       with ISortableLight {
     /**
       * Creates a Light object in the scene.
       * Documentation : https://doc.babylonjs.com/babylon101/lights
-      * @param name The firendly name of the light
+      * @param name The friendly name of the light
       * @param scene The scene the light belongs too
       */
     def this(name: String, scene: Scene) = this()
@@ -32,21 +35,21 @@ object lightMod {
       * @param scene The scene where the light belongs to
       * @param effect The effect we are binding the data to
       * @param useSpecular Defines if specular is supported
-      * @param rebuildInParallel Specifies whether the shader is rebuilding in parallel
+      * @param receiveShadows Defines if the effect (mesh) we bind the light for receives shadows
       */
     def _bindLight(lightIndex: Double, scene: Scene, effect: Effect, useSpecular: Boolean): Unit = js.native
-    def _bindLight(lightIndex: Double, scene: Scene, effect: Effect, useSpecular: Boolean, rebuildInParallel: Boolean): Unit = js.native
+    def _bindLight(lightIndex: Double, scene: Scene, effect: Effect, useSpecular: Boolean, receiveShadows: Boolean): Unit = js.native
     
     /* protected */ def _buildUniformLayout(): Unit = js.native
     
     /**
       * Recomputes the cached photometric scale if needed.
       */
-    /* private */ var _computePhotometricScale: js.Any = js.native
+    /* private */ var _computePhotometricScale: Any = js.native
     
-    /* private */ var _excludeWithLayerMask: js.Any = js.native
+    /* private */ var _excludeWithLayerMask: Any = js.native
     
-    /* private */ var _excludedMeshes: js.Any = js.native
+    /* private */ var _excludedMeshes: Any = js.native
     
     /**
       * @hidden Internal use only.
@@ -56,29 +59,31 @@ object lightMod {
     /**
       * Returns the Photometric Scale according to the light type and intensity mode.
       */
-    /* private */ var _getPhotometricScale: js.Any = js.native
+    /* private */ var _getPhotometricScale: Any = js.native
     
-    /* private */ var _hookArrayForExcluded: js.Any = js.native
+    /* private */ var _hookArrayForExcluded: Any = js.native
     
-    /* private */ var _hookArrayForIncludedOnly: js.Any = js.native
+    /* private */ var _hookArrayForIncludedOnly: Any = js.native
     
-    /* private */ var _includeOnlyWithLayerMask: js.Any = js.native
+    /* private */ var _includeOnlyWithLayerMask: Any = js.native
     
-    /* private */ var _includedOnlyMeshes: js.Any = js.native
+    /* private */ var _includedOnlyMeshes: Any = js.native
     
     /**
       * @hidden Internal use only.
       */
     var _includedOnlyMeshesIds: js.Array[String] = js.native
     
-    /* private */ var _intensityMode: js.Any = js.native
+    /* private */ var _intensityMode: Any = js.native
     
     /* protected */ var _inverseSquaredRange: Double = js.native
     
     /** @hidden */
     val _isLight: Boolean = js.native
     
-    /* private */ var _lightmapMode: js.Any = js.native
+    /* private */ var _lastUseSpecular: Any = js.native
+    
+    /* private */ var _lightmapMode: Any = js.native
     
     /**
       * Forces the meshes to update their light related information in their rendering used effects
@@ -90,16 +95,16 @@ object lightMod {
       * Cached photometric scale default to 1.0 as the automatic intensity mode defaults to 1.0 for every type
       * of light.
       */
-    /* private */ var _photometricScale: js.Any = js.native
+    /* private */ var _photometricScale: Any = js.native
     
-    /* private */ var _radius: js.Any = js.native
+    /* private */ var _radius: Any = js.native
     
-    /* private */ var _range: js.Any = js.native
+    /* private */ var _range: Any = js.native
     
     /** @hidden */
     var _renderId: Double = js.native
     
-    /* private */ var _renderPriority: js.Any = js.native
+    /* private */ var _renderPriority: Any = js.native
     
     /**
       * Reorder the light in the scene according to their defined priority.
@@ -107,18 +112,18 @@ object lightMod {
       */
     def _reorderLightsInScene(): Unit = js.native
     
-    /* private */ var _resyncMeshes: js.Any = js.native
+    /* private */ var _resyncMeshes: Any = js.native
     
-    /* private */ var _shadowEnabled: js.Any = js.native
+    /* private */ var _shadowEnabled: Any = js.native
     
     /**
-      * Shadow generator associted to the light.
+      * Shadow generator associated to the light.
       * @hidden Internal use only.
       */
     var _shadowGenerator: Nullable[IShadowGenerator] = js.native
     
     /**
-      * The current light unifom buffer.
+      * The current light uniform buffer.
       * @hidden Internal use only.
       */
     var _uniformBuffer: UniformBuffer = js.native
@@ -126,7 +131,7 @@ object lightMod {
     /**
       * Specifies if the light will affect the passed mesh.
       * @param mesh The mesh to test against the light
-      * @return true the mesh is affected otherwise, false.
+      * @returns true the mesh is affected otherwise, false.
       */
     def canAffectMesh(mesh: AbstractMesh): Boolean = js.native
     
@@ -165,7 +170,7 @@ object lightMod {
     def excludedMeshes_=(value: js.Array[AbstractMesh]): Unit = js.native
     
     /**
-      * Defines the falloff type for this light. This lets overrriding how punctual light are
+      * Defines the falloff type for this light. This lets overriding how punctual light are
       * falling off base on range or angle.
       * This can be set to any values in Light.FALLOFF_x.
       *
@@ -188,7 +193,7 @@ object lightMod {
     
     /**
       * Returns the Light associated shadow generator if any.
-      * @return the associated shadow generator.
+      * @returns the associated shadow generator.
       */
     def getShadowGenerator(): Nullable[IShadowGenerator] = js.native
     
@@ -250,7 +255,7 @@ object lightMod {
       * @param defines the list of defines
       * @param lightIndex defines the index of the light for the effect
       */
-    def prepareLightSpecificDefines(defines: js.Any, lightIndex: Double): Unit = js.native
+    def prepareLightSpecificDefines(defines: Any, lightIndex: Double): Unit = js.native
     
     /**
       * Gets the light radius used by PBR Materials to simulate soft area lights.
@@ -276,28 +281,31 @@ object lightMod {
       * Defines the rendering priority of the lights. It can help in case of fallback or number of lights
       * exceeding the number allowed of the materials.
       */
+    /* CompleteClass */
     var renderPriority: Double = js.native
     
     /**
       * Serializes the current light into a Serialization object.
       * @returns the serialized object.
       */
-    def serialize(): js.Any = js.native
+    def serialize(): Any = js.native
     
     /**
-      * Gets wether or not the shadows are enabled for this light. This can help turning off/on shadow without detaching
+      * Gets or sets whether or not the shadows are enabled for this light. This can help turning off/on shadow without detaching
       * the current shadow generator.
       */
-    def shadowEnabled: Boolean = js.native
+    /* CompleteClass */
+    var shadowEnabled: Boolean = js.native
     /**
-      * Sets wether or not the shadows are enabled for this light. This can help turning off/on shadow without detaching
+      * Gets whether or not the shadows are enabled for this light. This can help turning off/on shadow without detaching
       * the current shadow generator.
       */
-    def shadowEnabled_=(value: Boolean): Unit = js.native
+    @JSName("shadowEnabled")
+    def shadowEnabled_MLight: Boolean = js.native
     
     /**
       * Specular produces a highlight color on an object.
-      * Note: This is note affecting PBR materials.
+      * Note: This is not affecting PBR materials.
       */
     var specular: Color3 = js.native
     
@@ -333,14 +341,6 @@ object lightMod {
     @JSImport("babylonjs/Lights/light", "Light")
     @js.native
     val ^ : js.Any = js.native
-    
-    /**
-      * Sort function to order lights for rendering.
-      * @param a First Light object to compare to second.
-      * @param b Second Light object to compare first.
-      * @return -1 to reduce's a's index relative to be, 0 for no change, 1 to increase a's index relative to b.
-      */
-    inline def CompareLightsPriority(a: Light, b: Light): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("CompareLightsPriority")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Falloff Default: light is falling off following the material specification:
@@ -482,6 +482,6 @@ object lightMod {
       * @param scene The scene to create the parsed light in
       * @returns the created light after parsing
       */
-    inline def Parse(parsedLight: js.Any, scene: Scene): Nullable[Light] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedLight.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Nullable[Light]]
+    inline def Parse(parsedLight: Any, scene: Scene): Nullable[Light] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedLight.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Nullable[Light]]
   }
 }

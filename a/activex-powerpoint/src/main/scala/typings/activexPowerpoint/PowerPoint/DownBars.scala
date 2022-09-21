@@ -12,7 +12,7 @@ trait DownBars extends StObject {
   
   val Creator: Double
   
-  def Delete(): js.Any
+  def Delete(): Any
   
   val Fill: ChartFillFormat
   
@@ -22,12 +22,12 @@ trait DownBars extends StObject {
   
   val Name: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.DownBars_typekey")
   var PowerPointDotDownBars_typekey: DownBars
   
-  def Select(): js.Any
+  def Select(): Any
 }
 object DownBars {
   
@@ -35,14 +35,14 @@ object DownBars {
     Application: Application,
     Border: ChartBorder,
     Creator: Double,
-    Delete: () => js.Any,
+    Delete: () => Any,
     Fill: ChartFillFormat,
     Format: ChartFormat,
     Interior: Interior,
     Name: String,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotDownBars_typekey: DownBars,
-    Select: () => js.Any
+    Select: () => Any
   ): DownBars = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Border = Border.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Delete = js.Any.fromFunction0(Delete), Fill = Fill.asInstanceOf[js.Any], Format = Format.asInstanceOf[js.Any], Interior = Interior.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Select = js.Any.fromFunction0(Select))
     __obj.updateDynamic("PowerPoint.DownBars_typekey")(PowerPointDotDownBars_typekey.asInstanceOf[js.Any])
@@ -57,7 +57,7 @@ object DownBars {
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setDelete(value: () => js.Any): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Any): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
     inline def setFill(value: ChartFillFormat): Self = StObject.set(x, "Fill", value.asInstanceOf[js.Any])
     
@@ -67,10 +67,10 @@ object DownBars {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotDownBars_typekey(value: DownBars): Self = StObject.set(x, "PowerPoint.DownBars_typekey", value.asInstanceOf[js.Any])
     
-    inline def setSelect(value: () => js.Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
+    inline def setSelect(value: () => Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
   }
 }

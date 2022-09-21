@@ -10,7 +10,7 @@ trait IgTimePickerItemsDelta
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   var hours: js.UndefOr[Double] = js.undefined
   

@@ -8,5 +8,5 @@ object listStreamConsumersMod {
   
   @JSImport("@aws-sdk/client-kinesis-browser/model/ListStreamConsumers", "ListStreamConsumers")
   @js.native
-  val ListStreamConsumers: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val ListStreamConsumers: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

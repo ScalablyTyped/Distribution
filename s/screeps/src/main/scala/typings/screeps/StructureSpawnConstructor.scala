@@ -9,7 +9,7 @@ trait StructureSpawnConstructor
   extends StObject
      with ConstructorById[StructureSpawn] {
   
-  def Spawning(id: Id[typings.screeps.Spawning]): typings.screeps.Spawning = js.native
+  def Spawning(id: Id[StructureSpawn]): typings.screeps.Spawning = js.native
   @JSName("Spawning")
   var Spawning_Original: SpawningConstructor = js.native
 }

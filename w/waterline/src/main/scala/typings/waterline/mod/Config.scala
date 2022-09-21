@@ -5,16 +5,19 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** Waterline Configration */
 trait Config extends StObject {
   
+  /** A set of adapters to configure */
   var adapters: StringDictionary[Adapter]
   
-  var connections: StringDictionary[Connection]
+  /** A set of datastores to configure */
+  var datastores: StringDictionary[DatastoreConfig]
 }
 object Config {
   
-  inline def apply(adapters: StringDictionary[Adapter], connections: StringDictionary[Connection]): Config = {
-    val __obj = js.Dynamic.literal(adapters = adapters.asInstanceOf[js.Any], connections = connections.asInstanceOf[js.Any])
+  inline def apply(adapters: StringDictionary[Adapter], datastores: StringDictionary[DatastoreConfig]): Config = {
+    val __obj = js.Dynamic.literal(adapters = adapters.asInstanceOf[js.Any], datastores = datastores.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
   
@@ -22,6 +25,6 @@ object Config {
     
     inline def setAdapters(value: StringDictionary[Adapter]): Self = StObject.set(x, "adapters", value.asInstanceOf[js.Any])
     
-    inline def setConnections(value: StringDictionary[Connection]): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
+    inline def setDatastores(value: StringDictionary[DatastoreConfig]): Self = StObject.set(x, "datastores", value.asInstanceOf[js.Any])
   }
 }

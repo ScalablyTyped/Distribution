@@ -10,10 +10,10 @@ Check if a file path is a text file
 | ------------------ | :-------------: |
 | Full name          | is-text-path |
 | Keywords           | text, extensions, extension, file, path, check, detect, is |
-| # releases         | 2 |
-| # dependents       | 59 |
-| # downloads        | 84202853 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.4297173333333334E7 |
+| # stars            | 15.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/is-text-path#readme)

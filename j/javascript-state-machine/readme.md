@@ -10,10 +10,10 @@ A finite state machine library
 | ------------------ | :-------------: |
 | Full name          | javascript-state-machine |
 | Keywords           | finite state machine, state machine, server, client |
-| # releases         | 0 |
-| # dependents       | 61 |
-| # downloads        | 4222429 |
-| # stars            | 19 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 614782.6666666666 |
+| # stars            | 8283.0 |
 
 ## Links
 - [Homepage](https://github.com/jakesgordon/javascript-state-machine)

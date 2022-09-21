@@ -17,7 +17,7 @@ trait Comments extends StObject {
   
   def Item(Index: Double): Comment = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def _Default(Index: Double): Comment = js.native
 }

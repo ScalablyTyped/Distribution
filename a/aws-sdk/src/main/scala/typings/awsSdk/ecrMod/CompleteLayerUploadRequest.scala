@@ -12,7 +12,7 @@ trait CompleteLayerUploadRequest extends StObject {
   var layerDigests: LayerDigestList
   
   /**
-    * The AWS account ID associated with the registry to which to upload layers. If you do not specify a registry, the default registry is assumed.
+    * The Amazon Web Services account ID associated with the registry to which to upload layers. If you do not specify a registry, the default registry is assumed.
     */
   var registryId: js.UndefOr[RegistryId] = js.undefined
   
@@ -37,7 +37,7 @@ object CompleteLayerUploadRequest {
     
     inline def setLayerDigests(value: LayerDigestList): Self = StObject.set(x, "layerDigests", value.asInstanceOf[js.Any])
     
-    inline def setLayerDigestsVarargs(value: LayerDigest*): Self = StObject.set(x, "layerDigests", js.Array(value :_*))
+    inline def setLayerDigestsVarargs(value: LayerDigest*): Self = StObject.set(x, "layerDigests", js.Array(value*))
     
     inline def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
     

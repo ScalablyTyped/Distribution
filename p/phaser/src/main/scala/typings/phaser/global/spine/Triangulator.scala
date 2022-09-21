@@ -7,33 +7,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("spine.Triangulator")
 @js.native
-class Triangulator ()
+open class Triangulator ()
   extends StObject
      with typings.phaser.spine.Triangulator {
   
   /* private */ /* CompleteClass */
-  var convexPolygons: js.Any = js.native
+  var convexPolygons: Any = js.native
   
   /* private */ /* CompleteClass */
-  var convexPolygonsIndices: js.Any = js.native
+  var convexPolygonsIndices: Any = js.native
   
   /* CompleteClass */
   override def decompose(verticesArray: js.Array[Double], triangles: js.Array[Double]): js.Array[js.Array[Double]] = js.native
   
   /* private */ /* CompleteClass */
-  var indicesArray: js.Any = js.native
+  var indicesArray: Any = js.native
   
   /* private */ /* CompleteClass */
-  var isConcaveArray: js.Any = js.native
+  var isConcaveArray: Any = js.native
   
   /* private */ /* CompleteClass */
-  var polygonIndicesPool: js.Any = js.native
+  var polygonIndicesPool: Any = js.native
   
   /* private */ /* CompleteClass */
-  var polygonPool: js.Any = js.native
+  var polygonPool: Any = js.native
   
   /* private */ /* CompleteClass */
-  var triangles: js.Any = js.native
+  var triangles: Any = js.native
   
   /* CompleteClass */
   override def triangulate(verticesArray: ArrayLike[Double]): js.Array[Double] = js.native
@@ -47,18 +47,18 @@ object Triangulator {
   /* static member */
   @JSGlobal("spine.Triangulator.isConcave")
   @js.native
-  def isConcave: js.Any = js.native
-  inline def isConcave_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isConcave")(x.asInstanceOf[js.Any])
+  def isConcave: Any = js.native
+  inline def isConcave_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isConcave")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("spine.Triangulator.positiveArea")
   @js.native
-  def positiveArea: js.Any = js.native
-  inline def positiveArea_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("positiveArea")(x.asInstanceOf[js.Any])
+  def positiveArea: Any = js.native
+  inline def positiveArea_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("positiveArea")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("spine.Triangulator.winding")
   @js.native
-  def winding: js.Any = js.native
-  inline def winding_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("winding")(x.asInstanceOf[js.Any])
+  def winding: Any = js.native
+  inline def winding_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("winding")(x.asInstanceOf[js.Any])
 }

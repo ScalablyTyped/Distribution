@@ -118,7 +118,7 @@ object anon {
   /* Inlined std.Partial<react-map-gl.react-map-gl.MapState> */
   trait PartialMapState extends StObject {
     
-    var constructor: js.UndefOr[js.Function1[/* props */ MapStateProps, js.Any]] = js.undefined
+    var constructor: js.UndefOr[js.Function1[/* props */ MapStateProps, Any]] = js.undefined
     
     var getInteractiveState: js.UndefOr[js.Function0[InteractiveState]] = js.undefined
     
@@ -151,7 +151,7 @@ object anon {
     
     extension [Self <: PartialMapState](x: Self) {
       
-      inline def setConstructor(value: /* props */ MapStateProps => js.Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
+      inline def setConstructor(value: /* props */ MapStateProps => Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
       
       inline def setConstructorUndefined: Self = StObject.set(x, "constructor", js.undefined)
       

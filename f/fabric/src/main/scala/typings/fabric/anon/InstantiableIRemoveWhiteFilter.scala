@@ -17,5 +17,5 @@ trait InstantiableIRemoveWhiteFilter
     * Returns filter instance from an object representation
     * @param object Object to create an instance from
     */
-  def fromObject(`object`: js.Any): IRemoveWhiteFilter = js.native
+  def fromObject(`object`: Any): IRemoveWhiteFilter = js.native
 }

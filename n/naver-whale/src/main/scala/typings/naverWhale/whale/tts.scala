@@ -77,7 +77,7 @@ object tts {
       
       inline def setDesiredEventTypesUndefined: Self = StObject.set(x, "desiredEventTypes", js.undefined)
       
-      inline def setDesiredEventTypesVarargs(value: String*): Self = StObject.set(x, "desiredEventTypes", js.Array(value :_*))
+      inline def setDesiredEventTypesVarargs(value: String*): Self = StObject.set(x, "desiredEventTypes", js.Array(value*))
       
       inline def setEnqueue(value: Boolean): Self = StObject.set(x, "enqueue", value.asInstanceOf[js.Any])
       
@@ -111,7 +111,7 @@ object tts {
       
       inline def setRequiredEventTypesUndefined: Self = StObject.set(x, "requiredEventTypes", js.undefined)
       
-      inline def setRequiredEventTypesVarargs(value: String*): Self = StObject.set(x, "requiredEventTypes", js.Array(value :_*))
+      inline def setRequiredEventTypesVarargs(value: String*): Self = StObject.set(x, "requiredEventTypes", js.Array(value*))
       
       inline def setVoiceName(value: String): Self = StObject.set(x, "voiceName", value.asInstanceOf[js.Any])
       
@@ -199,7 +199,7 @@ object tts {
       
       inline def setEventTypesUndefined: Self = StObject.set(x, "eventTypes", js.undefined)
       
-      inline def setEventTypesVarargs(value: String*): Self = StObject.set(x, "eventTypes", js.Array(value :_*))
+      inline def setEventTypesVarargs(value: String*): Self = StObject.set(x, "eventTypes", js.Array(value*))
       
       inline def setExtensionId(value: String): Self = StObject.set(x, "extensionId", value.asInstanceOf[js.Any])
       

@@ -42,7 +42,7 @@ object ShaderCodeNode {
     
     inline def setChildren(value: js.Array[ShaderCodeNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setChildrenVarargs(value: ShaderCodeNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: ShaderCodeNode*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setIsValid(value: org.scalablytyped.runtime.StringDictionary[String] => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction1(value))
     

@@ -7,15 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait InlineCode
   extends StObject
-     with Literal
-     with StaticPhrasingContent {
+     with Literal {
   
   @JSName("type")
   var type_InlineCode: inlineCode
 }
 object InlineCode {
   
-  inline def apply(value: js.Any): InlineCode = {
+  inline def apply(value: Any): InlineCode = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("inlineCode")
     __obj.asInstanceOf[InlineCode]

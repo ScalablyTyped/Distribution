@@ -1,76 +1,99 @@
 package typings.awsSdk.ssoadminMod
 
+import typings.awsSdk.awsSdkStrings.AWS_ACCOUNT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AccountAssignmentList = js.Array[typings.awsSdk.ssoadminMod.AccountAssignment]
+type AccessControlAttributeKey = String
 
-type AccountAssignmentOperationStatusList = js.Array[typings.awsSdk.ssoadminMod.AccountAssignmentOperationStatusMetadata]
+type AccessControlAttributeList = js.Array[AccessControlAttribute]
 
-type AccountId = java.lang.String
+type AccessControlAttributeValueSource = String
 
-type AccountList = js.Array[typings.awsSdk.ssoadminMod.AccountId]
+type AccessControlAttributeValueSourceList = js.Array[AccessControlAttributeValueSource]
 
-type AttachedManagedPolicyList = js.Array[typings.awsSdk.ssoadminMod.AttachedManagedPolicy]
+type AccountAssignmentList = js.Array[AccountAssignment]
 
-type Date = typings.std.Date
+type AccountAssignmentOperationStatusList = js.Array[AccountAssignmentOperationStatusMetadata]
 
-type Duration = java.lang.String
+type AccountId = String
 
-type GeneralArn = java.lang.String
+type AccountList = js.Array[AccountId]
 
-type Id = java.lang.String
+type AttachedManagedPolicyList = js.Array[AttachedManagedPolicy]
 
-type InstanceArn = java.lang.String
+type CustomerManagedPolicyReferenceList = js.Array[CustomerManagedPolicyReference]
 
-type InstanceList = js.Array[typings.awsSdk.ssoadminMod.InstanceMetadata]
+type Date = js.Date
 
-type ManagedPolicyArn = java.lang.String
+type Duration = String
 
-type MaxResults = scala.Double
+type Id = String
 
-type Name = java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - typings.awsSdk.awsSdkStrings.CREATION_IN_PROGRESS
+  - typings.awsSdk.awsSdkStrings.CREATION_FAILED
+  - java.lang.String
+*/
+type InstanceAccessControlAttributeConfigurationStatus = _InstanceAccessControlAttributeConfigurationStatus | String
 
-type PermissionSetArn = java.lang.String
+type InstanceAccessControlAttributeConfigurationStatusReason = String
 
-type PermissionSetDescription = java.lang.String
+type InstanceArn = String
 
-type PermissionSetList = js.Array[typings.awsSdk.ssoadminMod.PermissionSetArn]
+type InstanceList = js.Array[InstanceMetadata]
 
-type PermissionSetName = java.lang.String
+type ManagedPolicyArn = String
 
-type PermissionSetPolicyDocument = java.lang.String
+type ManagedPolicyName = String
 
-type PermissionSetProvisioningStatusList = js.Array[typings.awsSdk.ssoadminMod.PermissionSetProvisioningStatusMetadata]
+type ManagedPolicyPath = String
 
-type PrincipalId = java.lang.String
+type MaxResults = Double
+
+type Name = String
+
+type PermissionSetArn = String
+
+type PermissionSetDescription = String
+
+type PermissionSetList = js.Array[PermissionSetArn]
+
+type PermissionSetName = String
+
+type PermissionSetPolicyDocument = String
+
+type PermissionSetProvisioningStatusList = js.Array[PermissionSetProvisioningStatusMetadata]
+
+type PrincipalId = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.USER
   - typings.awsSdk.awsSdkStrings.GROUP
   - java.lang.String
 */
-type PrincipalType = typings.awsSdk.ssoadminMod._PrincipalType | java.lang.String
+type PrincipalType = _PrincipalType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AWS_ACCOUNT
   - typings.awsSdk.awsSdkStrings.ALL_PROVISIONED_ACCOUNTS
   - java.lang.String
 */
-type ProvisionTargetType = typings.awsSdk.ssoadminMod._ProvisionTargetType | java.lang.String
+type ProvisionTargetType = _ProvisionTargetType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.LATEST_PERMISSION_SET_PROVISIONED
   - typings.awsSdk.awsSdkStrings.LATEST_PERMISSION_SET_NOT_PROVISIONED
   - java.lang.String
 */
-type ProvisioningStatus = typings.awsSdk.ssoadminMod._ProvisioningStatus | java.lang.String
+type ProvisioningStatus = _ProvisioningStatus | String
 
-type Reason = java.lang.String
+type Reason = String
 
-type RelayState = java.lang.String
+type RelayState = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.IN_PROGRESS
@@ -78,27 +101,29 @@ type RelayState = java.lang.String
   - typings.awsSdk.awsSdkStrings.SUCCEEDED
   - java.lang.String
 */
-type StatusValues = typings.awsSdk.ssoadminMod._StatusValues | java.lang.String
+type StatusValues = _StatusValues | String
 
-type TagKey = java.lang.String
+type TagKey = String
 
-type TagKeyList = js.Array[typings.awsSdk.ssoadminMod.TagKey]
+type TagKeyList = js.Array[TagKey]
 
-type TagList = js.Array[typings.awsSdk.ssoadminMod.Tag]
+type TagList = js.Array[Tag]
 
-type TagValue = java.lang.String
+type TagValue = String
 
-type TargetId = java.lang.String
+type TaggableResourceArn = String
 
-type TargetType = typings.awsSdk.awsSdkStrings.AWS_ACCOUNT | java.lang.String
+type TargetId = String
 
-type Token = java.lang.String
+type TargetType = AWS_ACCOUNT | String
 
-type UUId = java.lang.String
+type Token = String
+
+type UUId = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2020-07-20`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.ssoadminMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String

@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Actual extends StObject {
   
   /** The `actual` property on the error instance. */
-  var actual: js.UndefOr[js.Any] = js.undefined
+  var actual: js.UndefOr[Any] = js.undefined
   
   /** The `expected` property on the error instance. */
-  var expected: js.UndefOr[js.Any] = js.undefined
+  var expected: js.UndefOr[Any] = js.undefined
   
   /** If provided, the error message is set to this value. */
   var message: js.UndefOr[String] = js.undefined
@@ -19,6 +19,7 @@ trait Actual extends StObject {
   var operator: js.UndefOr[String] = js.undefined
   
   /** If provided, the generated stack trace omits frames before this function. */
+  // tslint:disable-next-line:ban-types
   var stackStartFn: js.UndefOr[js.Function] = js.undefined
 }
 object Actual {
@@ -30,11 +31,11 @@ object Actual {
   
   extension [Self <: Actual](x: Self) {
     
-    inline def setActual(value: js.Any): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
+    inline def setActual(value: Any): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
     
     inline def setActualUndefined: Self = StObject.set(x, "actual", js.undefined)
     
-    inline def setExpected(value: js.Any): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
+    inline def setExpected(value: Any): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
     
     inline def setExpectedUndefined: Self = StObject.set(x, "expected", js.undefined)
     

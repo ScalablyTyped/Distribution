@@ -9,7 +9,7 @@ object amAngularGaugeMod {
   
   @JSImport("amcharts/AmAngularGauge", JSImport.Default)
   @js.native
-  class default () extends AmAngularGauge
+  open class default () extends AmAngularGauge
   
   @js.native
   trait AmAngularGauge
@@ -200,7 +200,7 @@ object amAngularGaugeMod {
     /**
       * This method allows to create charts with a single config.
       */
-    def makeChart(container: String, config: js.Any, delay: Double): typings.amcharts.amChartMod.default = js.native
+    def makeChart(container: String, config: Any, delay: Double): typings.amcharts.amChartMod.default = js.native
     
     /**
       * Bottom spacing between chart and container.
@@ -297,7 +297,7 @@ object amAngularGaugeMod {
     /**
       * Removes event listener from chart object.
       */
-    def removeListener(chart: typings.amcharts.amChartMod.default, `type`: String, handler: js.Any): Unit = js.native
+    def removeListener(chart: typings.amcharts.amChartMod.default, `type`: String, handler: Any): Unit = js.native
     
     /**
       * A config object for Responsive plugin. Please refer to the following page for more information.

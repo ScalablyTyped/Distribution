@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IamUser extends StObject {
   
   /**
-    * The unique identifier for the AWS account that's associated with the IAM user who performed the action.
+    * The unique identifier for the Amazon Web Services account that's associated with the IAM user who performed the action.
     */
   var accountId: js.UndefOr[string] = js.undefined
   

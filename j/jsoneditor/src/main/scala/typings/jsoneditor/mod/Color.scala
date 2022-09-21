@@ -45,7 +45,7 @@ object Color {
     
     inline def setHslaString(value: String): Self = StObject.set(x, "hslaString", value.asInstanceOf[js.Any])
     
-    inline def setHslaVarargs(value: Double*): Self = StObject.set(x, "hsla", js.Array(value :_*))
+    inline def setHslaVarargs(value: Double*): Self = StObject.set(x, "hsla", js.Array(value*))
     
     inline def setRgbString(value: String): Self = StObject.set(x, "rgbString", value.asInstanceOf[js.Any])
     
@@ -53,6 +53,6 @@ object Color {
     
     inline def setRgbaString(value: String): Self = StObject.set(x, "rgbaString", value.asInstanceOf[js.Any])
     
-    inline def setRgbaVarargs(value: Double*): Self = StObject.set(x, "rgba", js.Array(value :_*))
+    inline def setRgbaVarargs(value: Double*): Self = StObject.set(x, "rgba", js.Array(value*))
   }
 }

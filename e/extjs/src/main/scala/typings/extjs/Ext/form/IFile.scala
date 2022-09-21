@@ -15,7 +15,7 @@ trait IFile
   var button: js.UndefOr[IButton] = js.undefined
   
   /** [Config Option] (Object) */
-  var buttonConfig: js.UndefOr[js.Any] = js.undefined
+  var buttonConfig: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (Number) */
   var buttonMargin: js.UndefOr[Double] = js.undefined
@@ -66,7 +66,7 @@ object IFile {
     
     inline def setButton(value: IButton): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
-    inline def setButtonConfig(value: js.Any): Self = StObject.set(x, "buttonConfig", value.asInstanceOf[js.Any])
+    inline def setButtonConfig(value: Any): Self = StObject.set(x, "buttonConfig", value.asInstanceOf[js.Any])
     
     inline def setButtonConfigUndefined: Self = StObject.set(x, "buttonConfig", js.undefined)
     

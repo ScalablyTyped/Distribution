@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait NavigationConstructor
   extends StObject
-     with Instantiable0[Navigation]
+     with /**
+  * Navigation related configuration settings on the View.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-navigation-Navigation.html)
+  */
+Instantiable0[Navigation]
      with Instantiable1[/* properties */ NavigationProperties, Navigation]

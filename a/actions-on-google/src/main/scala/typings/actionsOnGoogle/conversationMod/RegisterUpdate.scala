@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("actions-on-google/dist/service/actionssdk/conversation", "RegisterUpdate")
 @js.native
-class RegisterUpdate protected ()
+open class RegisterUpdate protected ()
   extends typings.actionsOnGoogle.helperMod.RegisterUpdate {
   /**
     * @param options RegisterUpdate options

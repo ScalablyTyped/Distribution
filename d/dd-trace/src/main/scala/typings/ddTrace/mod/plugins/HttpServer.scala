@@ -16,7 +16,7 @@ trait HttpServer
   var hooks: js.UndefOr[Request] = js.undefined
   
   /**
-    * Whether to enable instrumention of <plugin>.middleware spans
+    * Whether to enable instrumentation of <plugin>.middleware spans
     *
     * @default true
     */

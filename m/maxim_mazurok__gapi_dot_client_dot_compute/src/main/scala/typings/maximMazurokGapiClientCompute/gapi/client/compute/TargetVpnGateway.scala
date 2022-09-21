@@ -64,7 +64,7 @@ object TargetVpnGateway {
     
     inline def setForwardingRulesUndefined: Self = StObject.set(x, "forwardingRules", js.undefined)
     
-    inline def setForwardingRulesVarargs(value: String*): Self = StObject.set(x, "forwardingRules", js.Array(value :_*))
+    inline def setForwardingRulesVarargs(value: String*): Self = StObject.set(x, "forwardingRules", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -98,6 +98,6 @@ object TargetVpnGateway {
     
     inline def setTunnelsUndefined: Self = StObject.set(x, "tunnels", js.undefined)
     
-    inline def setTunnelsVarargs(value: String*): Self = StObject.set(x, "tunnels", js.Array(value :_*))
+    inline def setTunnelsVarargs(value: String*): Self = StObject.set(x, "tunnels", js.Array(value*))
   }
 }

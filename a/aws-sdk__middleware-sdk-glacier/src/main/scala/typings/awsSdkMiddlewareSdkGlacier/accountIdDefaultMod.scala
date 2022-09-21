@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object accountIdDefaultMod {
   
-  @JSImport("@aws-sdk/middleware-sdk-glacier/dist/cjs/account-id-default", JSImport.Namespace)
+  @JSImport("@aws-sdk/middleware-sdk-glacier/dist-types/account-id-default", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def accountIdDefaultMiddleware(): InitializeMiddleware[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("accountIdDefaultMiddleware")().asInstanceOf[InitializeMiddleware[js.Any, js.Any]]
+  inline def accountIdDefaultMiddleware(): InitializeMiddleware[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("accountIdDefaultMiddleware")().asInstanceOf[InitializeMiddleware[Any, Any]]
   
-  @JSImport("@aws-sdk/middleware-sdk-glacier/dist/cjs/account-id-default", "accountIdDefaultMiddlewareOptions")
+  @JSImport("@aws-sdk/middleware-sdk-glacier/dist-types/account-id-default", "accountIdDefaultMiddlewareOptions")
   @js.native
   val accountIdDefaultMiddlewareOptions: InitializeHandlerOptions = js.native
 }

@@ -12,24 +12,22 @@ object listGroupItemMod {
   
   @JSImport("react-bootstrap/lib/ListGroupItem", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[ListGroupItemProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[ListGroupItemProps, js.Object, Any]
   
-  @js.native
-  trait ListGroupItem
-    extends Component[ListGroupItemProps, js.Object, js.Any]
+  type ListGroupItem = Component[ListGroupItemProps, js.Object, Any]
   
   trait ListGroupItemProps
     extends StObject
        with HTMLProps[ListGroupItem] {
     
-    var active: js.UndefOr[js.Any] = js.undefined
+    var active: js.UndefOr[Any] = js.undefined
     
     var bsSize: js.UndefOr[Sizes] = js.undefined
     
     var bsStyle: js.UndefOr[String] = js.undefined
     
-    var eventKey: js.UndefOr[js.Any] = js.undefined
+    var eventKey: js.UndefOr[Any] = js.undefined
     
     var header: js.UndefOr[ReactNode] = js.undefined
     
@@ -44,7 +42,7 @@ object listGroupItemMod {
     
     extension [Self <: ListGroupItemProps](x: Self) {
       
-      inline def setActive(value: js.Any): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Any): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
       inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
@@ -56,7 +54,7 @@ object listGroupItemMod {
       
       inline def setBsStyleUndefined: Self = StObject.set(x, "bsStyle", js.undefined)
       
-      inline def setEventKey(value: js.Any): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
+      inline def setEventKey(value: Any): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
       
       inline def setEventKeyUndefined: Self = StObject.set(x, "eventKey", js.undefined)
       

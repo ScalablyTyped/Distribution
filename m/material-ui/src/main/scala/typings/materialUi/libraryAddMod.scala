@@ -10,10 +10,10 @@ object libraryAddMod {
   
   @JSImport("material-ui/svg-icons/av/library-add", JSImport.Default)
   @js.native
-  class default () extends AvLibraryAdd
+  open class default () extends AvLibraryAdd
   
   @JSImport("material-ui/svg-icons/av/library-add", "AvLibraryAdd")
   @js.native
-  class AvLibraryAdd ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvLibraryAdd ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

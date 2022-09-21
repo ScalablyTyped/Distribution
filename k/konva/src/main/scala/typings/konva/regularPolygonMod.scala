@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object regularPolygonMod {
   
-  @JSImport("konva/types/shapes/RegularPolygon", "RegularPolygon")
+  @JSImport("konva/lib/shapes/RegularPolygon", "RegularPolygon")
   @js.native
-  class RegularPolygon () extends Shape[RegularPolygonConfig] {
+  open class RegularPolygon () extends Shape[RegularPolygonConfig] {
     def this(config: RegularPolygonConfig) = this()
     
-    def _getPoints(): js.Array[js.Any] = js.native
+    def _getPoints(): js.Array[Any] = js.native
     
-    def _sceneFunc(context: js.Any): Unit = js.native
+    def _sceneFunc(context: Any): Unit = js.native
     
     def getHeight(): Double = js.native
     
@@ -27,9 +27,9 @@ object regularPolygonMod {
     @JSName("radius")
     var radius_Original: GetSet[Double, this.type] = js.native
     
-    def setHeight(height: js.Any): Unit = js.native
+    def setHeight(height: Any): Unit = js.native
     
-    def setWidth(width: js.Any): Unit = js.native
+    def setWidth(width: Any): Unit = js.native
     
     def sides(): Double = js.native
     def sides(v: Double): this.type = js.native

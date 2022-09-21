@@ -15,7 +15,7 @@ trait DistanceMeasurement2DViewModelMeasurement
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D-DistanceMeasurement2DViewModel.html#measurement)
     */
-  var geometry: js.Any
+  var geometry: Any
   
   /**
     * Line length (m).
@@ -28,7 +28,7 @@ object DistanceMeasurement2DViewModelMeasurement {
   
   inline def apply(
     constructor: js.Function,
-    geometry: js.Any,
+    geometry: Any,
     hasOwnProperty: PropertyKey => Boolean,
     length: Double,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -39,7 +39,7 @@ object DistanceMeasurement2DViewModelMeasurement {
   
   extension [Self <: DistanceMeasurement2DViewModelMeasurement](x: Self) {
     
-    inline def setGeometry(value: js.Any): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+    inline def setGeometry(value: Any): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
   }

@@ -17,7 +17,7 @@ trait InputJax extends StObject {
     * Once the jax.js file has loaded, this method is replaced by the jax’s Translate() method (see below), so that
     * subsequent calls to Process() will perform the appropriate translation.
     */
-  def Process(script: js.Any, state: js.Any): js.Any
+  def Process(script: Any, state: Any): Any
   
   /*This registers the MIME-type associated with this input jax so that MathJax knows to call this input jax when
     * it sees a <script> of that type. An input jax can register more than one type, but it will be responsible for
@@ -32,7 +32,7 @@ trait InputJax extends StObject {
     * The translation process should include the creation of an Element Jax that stores the data needed for this
     * element.
     */
-  def Translate(script: js.Any, state: js.Any): ElementJax
+  def Translate(script: Any, state: Any): ElementJax
   
   /*The directory where the jax files are stored (e.g., "[MathJax]/jax/input/TeX").*/
   var directory: String
@@ -48,7 +48,7 @@ trait InputJax extends StObject {
   /*This implements the element jax’s needsUpdate() method, and returns true if the jax needs to be rerendered
     * (i.e., the text has changed), and false otherwise.
     */
-  def needsUpdate(element: js.Any): Boolean
+  def needsUpdate(element: Any): Boolean
   
   /*The version number of the jax.*/
   var version: String
@@ -56,13 +56,13 @@ trait InputJax extends StObject {
 object InputJax {
   
   inline def apply(
-    Process: (js.Any, js.Any) => js.Any,
+    Process: (Any, Any) => Any,
     Register: String => Unit,
-    Translate: (js.Any, js.Any) => ElementJax,
+    Translate: (Any, Any) => ElementJax,
     directory: String,
     elementJax: String,
     id: String,
-    needsUpdate: js.Any => Boolean,
+    needsUpdate: Any => Boolean,
     version: String
   ): InputJax = {
     val __obj = js.Dynamic.literal(Process = js.Any.fromFunction2(Process), Register = js.Any.fromFunction1(Register), Translate = js.Any.fromFunction2(Translate), directory = directory.asInstanceOf[js.Any], elementJax = elementJax.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], needsUpdate = js.Any.fromFunction1(needsUpdate), version = version.asInstanceOf[js.Any])
@@ -77,13 +77,13 @@ object InputJax {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setNeedsUpdate(value: js.Any => Boolean): Self = StObject.set(x, "needsUpdate", js.Any.fromFunction1(value))
+    inline def setNeedsUpdate(value: Any => Boolean): Self = StObject.set(x, "needsUpdate", js.Any.fromFunction1(value))
     
-    inline def setProcess(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "Process", js.Any.fromFunction2(value))
+    inline def setProcess(value: (Any, Any) => Any): Self = StObject.set(x, "Process", js.Any.fromFunction2(value))
     
     inline def setRegister(value: String => Unit): Self = StObject.set(x, "Register", js.Any.fromFunction1(value))
     
-    inline def setTranslate(value: (js.Any, js.Any) => ElementJax): Self = StObject.set(x, "Translate", js.Any.fromFunction2(value))
+    inline def setTranslate(value: (Any, Any) => ElementJax): Self = StObject.set(x, "Translate", js.Any.fromFunction2(value))
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }

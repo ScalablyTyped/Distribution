@@ -2,11 +2,14 @@ package typings.videoJs.mod.videojs
 
 import typings.std.Element
 import typings.std.NodeList
-import typings.std.TimeRanges
 import typings.videoJs.mod.videojs.Component.DimensionObject
 import typings.videoJs.mod.videojs.Component.GenericCallback
 import typings.videoJs.mod.videojs.Dom.Predicate
 import typings.videoJs.videoJsStrings.height
+import typings.videoJs.videoJsStrings.liveDisplay
+import typings.videoJs.videoJsStrings.playbackRateMenuButton
+import typings.videoJs.videoJsStrings.progressControl
+import typings.videoJs.videoJsStrings.remainingTimeDisplay
 import typings.videoJs.videoJsStrings.width
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -91,23 +94,23 @@ trait Component
     *         `Component` will get created by this process.
     */
   def addChild(component: String): Component = js.native
-  def addChild(component: String, optionsopt: js.Any): Component = js.native
-  def addChild(component: String, optionsopt: js.Any, indexopt: Double): Component = js.native
+  def addChild(component: String, optionsopt: Any): Component = js.native
+  def addChild(component: String, optionsopt: Any, indexopt: Double): Component = js.native
   def addChild(component: String, optionsopt: Unit, indexopt: Double): Component = js.native
   def addChild(component: Element): Element = js.native
-  def addChild(component: Element, optionsopt: js.Any): Element = js.native
-  def addChild(component: Element, optionsopt: js.Any, indexopt: Double): Element = js.native
+  def addChild(component: Element, optionsopt: Any): Element = js.native
+  def addChild(component: Element, optionsopt: Any, indexopt: Double): Element = js.native
   def addChild(component: Element, optionsopt: Unit, indexopt: Double): Element = js.native
   def addChild[T /* <: Component */](child: T): T = js.native
-  def addChild[T /* <: Component */](child: T, options: js.Any): T = js.native
-  def addChild[T /* <: Component */](child: T, options: js.Any, index: Double): T = js.native
+  def addChild[T /* <: Component */](child: T, options: Any): T = js.native
+  def addChild[T /* <: Component */](child: T, options: Any, index: Double): T = js.native
   def addChild[T /* <: Component */](child: T, options: Unit, index: Double): T = js.native
   @JSName("addChild")
   def addChild_T_Component_T[T /* <: Component */](child: String): T = js.native
   @JSName("addChild")
-  def addChild_T_Component_T[T /* <: Component */](child: String, options: js.Any): T = js.native
+  def addChild_T_Component_T[T /* <: Component */](child: String, options: Any): T = js.native
   @JSName("addChild")
-  def addChild_T_Component_T[T /* <: Component */](child: String, options: js.Any, index: Double): T = js.native
+  def addChild_T_Component_T[T /* <: Component */](child: String, options: Any, index: Double): T = js.native
   @JSName("addChild")
   def addChild_T_Component_T[T /* <: Component */](child: String, options: Unit, index: Double): T = js.native
   
@@ -147,6 +150,14 @@ trait Component
     * @see [Similar to]{@link https://developer.mozilla.org/en-US/docs/Web/API/window/cancelAnimationFrame}
     */
   def cancelAnimationFrame(id: Double): Double = js.native
+  
+  /**
+    * Cancels a current named animation frame if it exists.
+    *
+    * @param name
+    *        Cancels a current named animation frame if it exists.
+    */
+  def cancelNamedAnimationFrame(name: String): Unit = js.native
   
   /**
     * Get an array of all child components
@@ -215,15 +226,13 @@ trait Component
     */
   def createEl(): Element = js.native
   def createEl(tagName: String): Element = js.native
-  def createEl(tagName: String, properties: js.Any): Element = js.native
-  def createEl(tagName: String, properties: js.Any, attributes: js.Any): Element = js.native
-  def createEl(tagName: String, properties: Unit, attributes: js.Any): Element = js.native
-  def createEl(tagName: Unit, properties: js.Any): Element = js.native
-  def createEl(tagName: Unit, properties: js.Any, attributes: js.Any): Element = js.native
-  def createEl(tagName: Unit, properties: Unit, attributes: js.Any): Element = js.native
+  def createEl(tagName: String, properties: Any): Element = js.native
+  def createEl(tagName: String, properties: Any, attributes: Any): Element = js.native
+  def createEl(tagName: String, properties: Unit, attributes: Any): Element = js.native
+  def createEl(tagName: Unit, properties: Any): Element = js.native
+  def createEl(tagName: Unit, properties: Any, attributes: Any): Element = js.native
+  def createEl(tagName: Unit, properties: Unit, attributes: Any): Element = js.native
   
-  @JSName("currentDimension")
-  def currentDimension_height(widthOrHeight: height): Double = js.native
   /**
     * Get the width or the height of the `Component` elements computed style. Uses
     * `window.getComputedStyle`.
@@ -234,8 +243,7 @@ trait Component
     * @return The dimension that gets asked for or 0 if nothing was set
     *         for that dimension.
     */
-  @JSName("currentDimension")
-  def currentDimension_width(widthOrHeight: width): Double = js.native
+  def currentDimension(widthOrHeight: width | height): Double = js.native
   
   /**
     * Get an object that contains width and height values of the `Component`s
@@ -261,18 +269,7 @@ trait Component
     */
   def currentWidth(): Double = js.native
   
-  @JSName("dimension")
-  def dimension_height(widthOrHeight: height): Double = js.native
-  @JSName("dimension")
-  def dimension_height(widthOrHeight: height, num: String): Unit = js.native
-  @JSName("dimension")
-  def dimension_height(widthOrHeight: height, num: String, skipListeners: Boolean): Unit = js.native
-  @JSName("dimension")
-  def dimension_height(widthOrHeight: height, num: Double): Unit = js.native
-  @JSName("dimension")
-  def dimension_height(widthOrHeight: height, num: Double, skipListeners: Boolean): Unit = js.native
-  @JSName("dimension")
-  def dimension_width(widthOrHeight: width): Double = js.native
+  def dimension(widthOrHeight: width | height): Double = js.native
   /**
     * Get or set width or height of the `Component` element. This is the shared code
     * for the {@link Component#width} and {@link Component#height}.
@@ -300,14 +297,10 @@ trait Component
     *
     * @return The dimension when getting or 0 if unset
     */
-  @JSName("dimension")
-  def dimension_width(widthOrHeight: width, num: String): Unit = js.native
-  @JSName("dimension")
-  def dimension_width(widthOrHeight: width, num: String, skipListeners: Boolean): Unit = js.native
-  @JSName("dimension")
-  def dimension_width(widthOrHeight: width, num: Double): Unit = js.native
-  @JSName("dimension")
-  def dimension_width(widthOrHeight: width, num: Double, skipListeners: Boolean): Unit = js.native
+  def dimension(widthOrHeight: width | height, num: String): Unit = js.native
+  def dimension(widthOrHeight: width | height, num: String, skipListeners: Boolean): Unit = js.native
+  def dimension(widthOrHeight: width | height, num: Double): Unit = js.native
+  def dimension(widthOrHeight: width | height, num: Double, skipListeners: Boolean): Unit = js.native
   
   /**
     * Set both the width and height of the `Component` element at the same time.
@@ -418,6 +411,38 @@ trait Component
   def getChildById(id: String): js.UndefOr[Component] = js.native
   
   /**
+    * Returns the child `Component` with the given `name`.
+    *
+    * @param name
+    *        The name of the child `Component` to get.
+    *
+    * @return The child `Component` with the given `name` or undefined.
+    */
+  @JSName("getChild")
+  def getChild_liveDisplay(name: liveDisplay): js.UndefOr[LiveDisplay] = js.native
+  @JSName("getChild")
+  def getChild_playbackRateMenuButton(name: playbackRateMenuButton): js.UndefOr[PlaybackRateMenuButton] = js.native
+  @JSName("getChild")
+  def getChild_progressControl(name: progressControl): js.UndefOr[ProgressControl] = js.native
+  @JSName("getChild")
+  def getChild_remainingTimeDisplay(name: remainingTimeDisplay): js.UndefOr[RemainingTimeDisplay] = js.native
+  
+  /**
+    * Returns the descendant `Component` following the givent
+    * descendant `names`. For instance ['foo', 'bar', 'baz'] would
+    * try to get 'foo' on the current component, 'bar' on the 'foo'
+    * component and 'baz' on the 'bar' component and return undefined
+    * if any of those don't exist.
+    *
+    * @param names
+    *        The name of the child `Component` to get.
+    *
+    * @return The descendant `Component` following the given descendant
+    *         `names` or undefined.
+    */
+  def getDescendant(names: (String | js.Array[String])*): js.UndefOr[Component] = js.native
+  
+  /**
     * Check if a component's element has a CSS class name.
     *
     * @param classToCheck
@@ -464,6 +489,14 @@ trait Component
     * Add and initialize default child `Component`s based upon options.
     */
   def initChildren(): Unit = js.native
+  
+  /**
+    * Determine whether or not this component has been disposed.
+    *
+    * @return
+    *         If the component has been disposed, will be `true`. Otherwise, `false`.
+    */
+  def isDisposed(): Boolean = js.native
   
   /**
     * Localize a string given the string in english.
@@ -534,11 +567,9 @@ trait Component
     *
     * @deprecated since version 5
     */
-  def options(obj: js.Any): js.Any = js.native
+  def options(obj: Any): Any = js.native
   
   var options_ : ComponentOptions = js.native
-  
-  def played(): TimeRanges = js.native
   
   /**
     * Return the {@link Player} that the `Component` has attached to.
@@ -556,7 +587,7 @@ trait Component
     *
     * @return Returns itself; method can be chained.
     */
-  def ready(callback: js.ThisFunction0[/* this */ Player, Unit]): this.type = js.native
+  def ready(callback: ReadyCallback): this.type = js.native
   
   /**
     * Remove an attribute from the `Component`s element.
@@ -610,6 +641,20 @@ trait Component
     * @see [Similar to]{@link https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame}
     */
   def requestAnimationFrame(fn: GenericCallback): Double = js.native
+  
+  /**
+    * Request an animation frame, but only one named animation
+    * frame will be queued. Another will never be added until
+    * the previous one finishes.
+    *
+    * @param name
+    *        The name to give this requestAnimationFrame
+    *
+    * @param  fn
+    *         A function that will be bound to this component and executed just
+    *         before the browser's next repaint.
+    */
+  def requestNamedAnimationFrame(name: String, fn: GenericCallback): js.UndefOr[String] = js.native
   
   /**
     * Set the value of an attribute on the `Component`'s element

@@ -10,10 +10,10 @@ object plusOneMod {
   
   @JSImport("material-ui/svg-icons/social/plus-one", JSImport.Default)
   @js.native
-  class default () extends SocialPlusOne
+  open class default () extends SocialPlusOne
   
   @JSImport("material-ui/svg-icons/social/plus-one", "SocialPlusOne")
   @js.native
-  class SocialPlusOne ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class SocialPlusOne ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

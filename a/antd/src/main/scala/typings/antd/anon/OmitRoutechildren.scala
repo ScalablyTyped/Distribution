@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined antd.antd/lib/_util/type.Omit<antd.antd/lib/breadcrumb/Breadcrumb.Route, 'children'> */
+/* Inlined std.Omit<antd.antd/lib/breadcrumb/Breadcrumb.Route, 'children'> */
 trait OmitRoutechildren extends StObject {
   
   var breadcrumbName: String

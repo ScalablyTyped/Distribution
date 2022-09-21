@@ -35,7 +35,7 @@ object Compression {
   
   @JSGlobal("Windows.Storage.Compression.Compressor")
   @js.native
-  class Compressor protected ()
+  open class Compressor protected ()
     extends StObject
        with typings.winrt.Windows.Storage.Compression.Compressor {
     def this(underlyingStream: IOutputStream) = this()
@@ -62,7 +62,7 @@ object Compression {
   
   @JSGlobal("Windows.Storage.Compression.Decompressor")
   @js.native
-  class Decompressor protected ()
+  open class Decompressor protected ()
     extends StObject
        with typings.winrt.Windows.Storage.Compression.Decompressor {
     def this(underlyingStream: IInputStream) = this()

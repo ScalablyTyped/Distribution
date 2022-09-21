@@ -9,7 +9,7 @@ object assertionErrorMod {
   
   @JSImport("ol/AssertionError", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with AssertionError {
     def this(code: Double) = this()
@@ -23,9 +23,11 @@ object assertionErrorMod {
     /* CompleteClass */
     var code: Double = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }

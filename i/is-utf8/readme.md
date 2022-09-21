@@ -10,15 +10,12 @@ Detect if a buffer is utf8 encoded.
 | ------------------ | :-------------: |
 | Full name          | is-utf8 |
 | Keywords           | utf8, charset |
-| # releases         | 0 |
-| # dependents       | 298 |
-| # downloads        | 378433749 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3.6356899666666664E7 |
+| # stars            | 99.0 |
 
 ## Links
-- [Homepage](https://github.com/wayfind/is-utf8#readme)
-- [Bugs](https://github.com/wayfind/is-utf8/issues)
-- [Repository](https://github.com/wayfind/is-utf8)
 - [Npm](https://www.npmjs.com/package/is-utf8)
     
 

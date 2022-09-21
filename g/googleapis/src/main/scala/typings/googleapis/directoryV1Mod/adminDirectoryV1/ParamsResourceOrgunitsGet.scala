@@ -1,9 +1,5 @@
 package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,19 +9,14 @@ trait ParamsResourceOrgunitsGet
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Immutable ID of the G Suite account
+    * The unique ID for the customer's Google Workspace account. As an account administrator, you can also use the `my_customer` alias to represent your account's `customerId`. The `customerId` is also returned as part of the [Users resource](/admin-sdk/directory/v1/reference/users).
     */
   var customerId: js.UndefOr[String] = js.undefined
   
   /**
-    * Full path of the organizational unit or its ID
+    * The full path of the organizational unit (minus the leading `/`) or its unique ID.
     */
-  var orgUnitPath: js.UndefOr[js.Array[String]] = js.undefined
+  var orgUnitPath: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceOrgunitsGet {
   
@@ -36,18 +27,12 @@ object ParamsResourceOrgunitsGet {
   
   extension [Self <: ParamsResourceOrgunitsGet](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-    
     inline def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
     
     inline def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
     
-    inline def setOrgUnitPath(value: js.Array[String]): Self = StObject.set(x, "orgUnitPath", value.asInstanceOf[js.Any])
+    inline def setOrgUnitPath(value: String): Self = StObject.set(x, "orgUnitPath", value.asInstanceOf[js.Any])
     
     inline def setOrgUnitPathUndefined: Self = StObject.set(x, "orgUnitPath", js.undefined)
-    
-    inline def setOrgUnitPathVarargs(value: String*): Self = StObject.set(x, "orgUnitPath", js.Array(value :_*))
   }
 }

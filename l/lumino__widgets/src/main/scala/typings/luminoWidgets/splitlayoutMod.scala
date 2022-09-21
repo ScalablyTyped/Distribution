@@ -15,7 +15,7 @@ object splitlayoutMod {
   
   @JSImport("@lumino/widgets/types/splitlayout", "SplitLayout")
   @js.native
-  class SplitLayout protected () extends PanelLayout {
+  open class SplitLayout protected () extends PanelLayout {
     /**
       * Construct a new split layout.
       *
@@ -23,37 +23,46 @@ object splitlayoutMod {
       */
     def this(options: IOptions) = this()
     
-    /* private */ var _alignment: js.Any = js.native
+    /* private */ var _alignment: Any = js.native
     
-    /* private */ var _box: js.Any = js.native
+    /* private */ var _box: Any = js.native
     
-    /* private */ var _dirty: js.Any = js.native
+    /* private */ var _dirty: Any = js.native
     
     /**
       * Fit the layout to the total size required by the widgets.
       */
-    /* private */ var _fit: js.Any = js.native
+    /* private */ var _fit: Any = js.native
     
-    /* private */ var _fixed: js.Any = js.native
+    /* private */ var _fixed: Any = js.native
     
-    /* private */ var _handles: js.Any = js.native
+    /* private */ var _handles: Any = js.native
     
-    /* private */ var _hasNormedSizes: js.Any = js.native
+    /* private */ var _hasNormedSizes: Any = js.native
     
-    /* private */ var _items: js.Any = js.native
+    /* private */ var _items: Any = js.native
     
-    /* private */ var _orientation: js.Any = js.native
+    /* private */ var _orientation: Any = js.native
     
-    /* private */ var _sizers: js.Any = js.native
+    /* private */ var _sizers: Any = js.native
     
-    /* private */ var _spacing: js.Any = js.native
+    /* private */ var _spacing: Any = js.native
     
     /**
       * Update the layout position and size of the widgets.
       *
       * The parent offset dimensions should be `-1` if unknown.
       */
-    /* private */ var _update: js.Any = js.native
+    /* private */ var _update: Any = js.native
+    
+    /**
+      * Get the absolute sizes of the widgets in the layout.
+      *
+      * @returns A new array of the absolute sizes of the widgets.
+      *
+      * This method **does not** measure the DOM nodes.
+      */
+    def absoluteSizes(): js.Array[Double] = js.native
     
     /**
       * Get the content alignment for the split layout.
@@ -125,6 +134,8 @@ object splitlayoutMod {
       * Set the relative sizes for the widgets in the layout.
       *
       * @param sizes - The relative sizes for the widgets in the panel.
+      * @param update - Update the layout after setting relative sizes.
+      * Default is True.
       *
       * #### Notes
       * Extra values are ignored, too few will yield an undefined layout.
@@ -132,6 +143,7 @@ object splitlayoutMod {
       * The actual geometry of the DOM nodes is updated asynchronously.
       */
     def setRelativeSizes(sizes: js.Array[Double]): Unit = js.native
+    def setRelativeSizes(sizes: js.Array[Double], update: Boolean): Unit = js.native
     
     /**
       * Get the inter-element spacing for the split layout.
@@ -140,6 +152,29 @@ object splitlayoutMod {
       * Set the inter-element spacing for the split layout.
       */
     var spacing: Double = js.native
+    
+    /**
+      * Update the item position.
+      *
+      * @param i Item index
+      * @param isHorizontal Whether the layout is horizontal or not
+      * @param left Left position in pixels
+      * @param top Top position in pixels
+      * @param height Item height
+      * @param width Item width
+      * @param size Item size
+      */
+    /* protected */ def updateItemPosition(
+      i: Double,
+      isHorizontal: Boolean,
+      left: Double,
+      top: Double,
+      height: Double,
+      width: Double,
+      size: Double
+    ): Unit = js.native
+    
+    /* protected */ var widgetOffset: Double = js.native
   }
   object SplitLayout {
     

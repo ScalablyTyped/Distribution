@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * @param {MSIVmOptions} [options] - Optional parameters.
   */
-class MSIVmTokenCredentials () extends MSITokenCredentials {
+open class MSIVmTokenCredentials () extends MSITokenCredentials {
   def this(options: MSIOptions) = this()
   
   /**

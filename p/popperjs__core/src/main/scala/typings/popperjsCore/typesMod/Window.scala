@@ -18,8 +18,8 @@ trait Window extends StObject {
   
   var ShadowRoot: typings.std.ShadowRoot = js.native
   
-  def addEventListener(`type`: js.Any, listener: js.Any): Unit = js.native
-  def addEventListener(`type`: js.Any, listener: js.Any, optionsOrUseCapture: js.Any): Unit = js.native
+  def addEventListener(`type`: Any, listener: Any): Unit = js.native
+  def addEventListener(`type`: Any, listener: Any, optionsOrUseCapture: Any): Unit = js.native
   
   var devicePixelRatio: Double = js.native
   
@@ -40,8 +40,8 @@ trait Window extends StObject {
   
   var pageYOffset: Double = js.native
   
-  def removeEventListener(`type`: js.Any, listener: js.Any): Unit = js.native
-  def removeEventListener(`type`: js.Any, listener: js.Any, optionsOrUseCapture: js.Any): Unit = js.native
+  def removeEventListener(`type`: Any, listener: Any): Unit = js.native
+  def removeEventListener(`type`: Any, listener: Any, optionsOrUseCapture: Any): Unit = js.native
   
   var visualViewport: js.UndefOr[VisualViewport] = js.native
 }

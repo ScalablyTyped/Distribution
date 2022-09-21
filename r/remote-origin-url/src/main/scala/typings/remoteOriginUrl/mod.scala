@@ -1,6 +1,5 @@
 package typings.remoteOriginUrl
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +25,7 @@ object mod {
   inline def sync(options: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   inline def sync(options: Options): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
-  type Callback = js.Function2[/* error */ Error | Null, /* url */ js.UndefOr[String], Unit]
+  type Callback = js.Function2[/* error */ js.Error | Null, /* url */ js.UndefOr[String], Unit]
   
   trait Options extends StObject {
     

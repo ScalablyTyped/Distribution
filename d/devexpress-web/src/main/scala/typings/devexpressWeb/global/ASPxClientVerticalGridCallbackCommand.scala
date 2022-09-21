@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientVerticalGridCallbackCommand")
 @js.native
-class ASPxClientVerticalGridCallbackCommand ()
+open class ASPxClientVerticalGridCallbackCommand ()
   extends StObject
      with typings.devexpressWeb.ASPxClientVerticalGridCallbackCommand
 object ASPxClientVerticalGridCallbackCommand {

@@ -15,6 +15,9 @@ trait BackendBucket extends StObject {
   /** [Output Only] Creation timestamp in RFC3339 text format. */
   var creationTimestamp: js.UndefOr[String] = js.undefined
   
+  /** Headers that the HTTP/S load balancer should add to proxied responses. */
+  var customResponseHeaders: js.UndefOr[js.Array[String]] = js.undefined
+  
   /** An optional textual description of the resource; provided by the client when the resource is created. */
   var description: js.UndefOr[String] = js.undefined
   
@@ -57,6 +60,12 @@ object BackendBucket {
     inline def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
     
     inline def setCreationTimestampUndefined: Self = StObject.set(x, "creationTimestamp", js.undefined)
+    
+    inline def setCustomResponseHeaders(value: js.Array[String]): Self = StObject.set(x, "customResponseHeaders", value.asInstanceOf[js.Any])
+    
+    inline def setCustomResponseHeadersUndefined: Self = StObject.set(x, "customResponseHeaders", js.undefined)
+    
+    inline def setCustomResponseHeadersVarargs(value: String*): Self = StObject.set(x, "customResponseHeaders", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

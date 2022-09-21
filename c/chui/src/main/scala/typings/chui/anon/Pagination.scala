@@ -13,11 +13,11 @@ trait Pagination extends StObject {
   
   var panels: JQuery
   
-  var target: js.Any
+  var target: Any
 }
 object Pagination {
   
-  inline def apply(panels: JQuery, target: js.Any): Pagination = {
+  inline def apply(panels: JQuery, target: Any): Pagination = {
     val __obj = js.Dynamic.literal(panels = panels.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pagination]
   }
@@ -34,6 +34,6 @@ object Pagination {
     
     inline def setPanels(value: JQuery): Self = StObject.set(x, "panels", value.asInstanceOf[js.Any])
     
-    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

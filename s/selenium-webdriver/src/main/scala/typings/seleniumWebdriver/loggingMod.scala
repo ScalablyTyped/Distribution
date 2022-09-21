@@ -14,7 +14,7 @@ object loggingMod {
   
   @JSImport("selenium-webdriver/lib/logging", "Entry")
   @js.native
-  class Entry protected () extends StObject {
+  open class Entry protected () extends StObject {
     def this(level: String, message: String) = this()
     def this(level: Double, message: String) = this()
     /**
@@ -64,7 +64,7 @@ object loggingMod {
   
   @JSImport("selenium-webdriver/lib/logging", "Level")
   @js.native
-  class Level protected () extends StObject {
+  open class Level protected () extends StObject {
     /**
       * @param {string} name the level's name.
       * @param {number} level the level's numeric value.
@@ -173,7 +173,7 @@ object loggingMod {
   
   @JSImport("selenium-webdriver/lib/logging", "LogManager")
   @js.native
-  class LogManager () extends StObject {
+  open class LogManager () extends StObject {
     
     /**
       * Creates a new logger.
@@ -199,7 +199,7 @@ object loggingMod {
   
   @JSImport("selenium-webdriver/lib/logging", "Logger")
   @js.native
-  class Logger protected () extends StObject {
+  open class Logger protected () extends StObject {
     /**
       * @param {string} name the name of this logger.
       * @param {Level=} opt_level the initial level for this logger.
@@ -213,7 +213,7 @@ object loggingMod {
       *
       * @param {function(!Entry)} handler the handler to add.
       */
-    def addHandler(handler: js.Any): Unit = js.native
+    def addHandler(handler: Any): Unit = js.native
     
     /**
       * Logs a message at the {@link Level.DEBUG} log level.
@@ -259,7 +259,7 @@ object loggingMod {
     def getName(): String = js.native
     
     /** @private {Set<function(!Entry)>} */
-    var handlers_ : js.Any = js.native
+    var handlers_ : Any = js.native
     
     /**
       * Logs a message at the {@link Level.INFO} log level.
@@ -305,7 +305,7 @@ object loggingMod {
       * @param {function(!Entry)} handler the handler to remove.
       * @return {boolean} whether a handler was successfully removed.
       */
-    def removeHandler(handler: js.Any): Unit = js.native
+    def removeHandler(handler: Any): Unit = js.native
     
     /**
       * @param {Level} level the new level for this logger, or `null` if the logger
@@ -332,7 +332,7 @@ object loggingMod {
   
   @JSImport("selenium-webdriver/lib/logging", "Preferences")
   @js.native
-  class Preferences () extends StObject {
+  open class Preferences () extends StObject {
     
     var prefs_ : Map[String, Level] = js.native
     

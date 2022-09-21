@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("obelisk.js", "AbstractColor")
 @js.native
-class AbstractColor () extends StObject {
+open class AbstractColor () extends StObject {
   
   var border: Double = js.native
   

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("__MaterialUI.ThemeWrapper")
 @js.native
-class ThemeWrapper ()
-  extends Component[ThemeWrapperProps, js.Object, js.Any]
+open class ThemeWrapper ()
+  extends Component[ThemeWrapperProps, js.Object, Any]

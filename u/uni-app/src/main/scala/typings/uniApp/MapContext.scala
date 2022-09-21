@@ -11,7 +11,7 @@ trait MapContext extends StObject {
     * 获取原生地图对象 plus.maps.Map
     */
   @JSName("$getAppMap")
-  def $getAppMap(): js.Any = js.native
+  def $getAppMap(): Any = js.native
   
   /**
     * 获取当前地图中心的经纬度，返回的是 gcj02 坐标系，可以用于 uni.openLocation

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateAccessPolicyRequest extends StObject {
   
   /**
-    * The identity for this access policy. Choose an AWS SSO user, an AWS SSO group, or an IAM user.
+    * The identity for this access policy. Choose an Amazon Web Services SSO user, an Amazon Web Services SSO group, or an IAM user.
     */
   var accessPolicyIdentity: Identity
   
@@ -17,7 +17,7 @@ trait CreateAccessPolicyRequest extends StObject {
   var accessPolicyPermission: Permission
   
   /**
-    * The AWS IoT SiteWise Monitor resource for this access policy. Choose either a portal or a project.
+    * The IoT SiteWise Monitor resource for this access policy. Choose either a portal or a project.
     */
   var accessPolicyResource: Resource
   
@@ -27,7 +27,7 @@ trait CreateAccessPolicyRequest extends StObject {
   var clientToken: js.UndefOr[ClientToken] = js.undefined
   
   /**
-    * A list of key-value pairs that contain metadata for the access policy. For more information, see Tagging your AWS IoT SiteWise resources in the AWS IoT SiteWise User Guide.
+    * A list of key-value pairs that contain metadata for the access policy. For more information, see Tagging your IoT SiteWise resources in the IoT SiteWise User Guide.
     */
   var tags: js.UndefOr[TagMap] = js.undefined
 }

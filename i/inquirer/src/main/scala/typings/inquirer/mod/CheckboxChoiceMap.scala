@@ -4,12 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Provides all valid choice-types for the `CheckboxQuestion`.
-  *
-  * @template T
-  * The type of the answers.
-  */
 trait CheckboxChoiceMap[T /* <: Answers */]
   extends StObject
      with BaseChoiceMap[T] {
@@ -20,9 +14,9 @@ object CheckboxChoiceMap {
   
   inline def apply[T /* <: Answers */](
     CheckboxChoiceOptions: CheckboxChoiceOptions[T],
-    Choice: typings.inquirer.choiceMod.^[T],
-    ChoiceOptions: ChoiceOptions[T],
-    Separator: typings.inquirer.separatorMod.^,
+    Choice: typings.inquirer.choiceMod.default[T],
+    ChoiceOptions: ChoiceOptions,
+    Separator: typings.inquirer.separatorMod.default,
     SeparatorOptions: SeparatorOptions
   ): CheckboxChoiceMap[T] = {
     val __obj = js.Dynamic.literal(CheckboxChoiceOptions = CheckboxChoiceOptions.asInstanceOf[js.Any], Choice = Choice.asInstanceOf[js.Any], ChoiceOptions = ChoiceOptions.asInstanceOf[js.Any], Separator = Separator.asInstanceOf[js.Any], SeparatorOptions = SeparatorOptions.asInstanceOf[js.Any])

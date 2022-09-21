@@ -10,10 +10,10 @@ Scrabbleify words (mix letters within words and output the result)
 | ------------------ | :-------------: |
 | Full name          | @hyggedyne/scrabbleify |
 | Keywords           | scrabble, mixletters, randomize |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 297 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 39.333333333333336 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/relativityboy/scrabbleify#readme)

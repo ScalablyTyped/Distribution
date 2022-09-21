@@ -29,7 +29,7 @@ object AddCardOption {
     
     inline def setCardList(value: js.Array[AddCardRequestInfo]): Self = StObject.set(x, "cardList", value.asInstanceOf[js.Any])
     
-    inline def setCardListVarargs(value: AddCardRequestInfo*): Self = StObject.set(x, "cardList", js.Array(value :_*))
+    inline def setCardListVarargs(value: AddCardRequestInfo*): Self = StObject.set(x, "cardList", js.Array(value*))
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

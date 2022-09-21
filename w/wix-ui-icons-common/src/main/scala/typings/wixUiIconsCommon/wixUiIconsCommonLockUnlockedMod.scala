@@ -1,8 +1,8 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
-import typings.wixUiIconsCommon.lockUnlockedMod.LockUnlockedProps
+import typings.react.mod.FC
+import typings.wixUiIconsCommon.distComponentsLockUnlockedMod.LockUnlockedProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,10 +11,10 @@ object wixUiIconsCommonLockUnlockedMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/LockUnlocked", JSImport.Default)
   @js.native
-  val default: SFC[LockUnlockedProps] = js.native
+  val default: FC[LockUnlockedProps] = js.native
   
-  type _To = SFC[LockUnlockedProps]
+  type _To = FC[LockUnlockedProps]
   
   /* This means you don't have to write `default`, but can instead just say `wixUiIconsCommonLockUnlockedMod.foo` */
-  override def _to: SFC[LockUnlockedProps] = default
+  override def _to: FC[LockUnlockedProps] = default
 }

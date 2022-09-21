@@ -4,44 +4,30 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An activity resource contains information about an action that a particular
-  * channel, or user, has taken on YouTube.The actions reported in activity
-  * feeds include rating a video, sharing a video, marking a video as a
-  * favorite, commenting on a video, uploading a video, and so forth. Each
-  * activity resource identifies the type of action, the channel associated
-  * with the action, and the resource(s) associated with the action, such as
-  * the video that was rated or uploaded.
-  */
 trait SchemaActivity extends StObject {
   
   /**
-    * The contentDetails object contains information about the content
-    * associated with the activity. For example, if the snippet.type value is
-    * videoRated, then the contentDetails object&#39;s content identifies the
-    * rated video.
+    * The contentDetails object contains information about the content associated with the activity. For example, if the snippet.type value is videoRated, then the contentDetails object's content identifies the rated video.
     */
   var contentDetails: js.UndefOr[SchemaActivityContentDetails] = js.undefined
   
   /**
-    * Etag of this resource.
+    * Etag of this resource
     */
-  var etag: js.UndefOr[String] = js.undefined
+  var etag: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The ID that YouTube uses to uniquely identify the activity.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;youtube#activity&quot;.
+    * Identifies what kind of resource this is. Value: the fixed string "youtube#activity".
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The snippet object contains basic details about the activity, including
-    * the activity&#39;s type and group ID.
+    * The snippet object contains basic details about the activity, including the activity's type and group ID.
     */
   var snippet: js.UndefOr[SchemaActivitySnippet] = js.undefined
 }
@@ -60,13 +46,19 @@ object SchemaActivity {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
+    inline def setEtagNull: Self = StObject.set(x, "etag", null)
+    
     inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
+    inline def setIdNull: Self = StObject.set(x, "id", null)
+    
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     

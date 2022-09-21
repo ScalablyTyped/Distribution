@@ -16,7 +16,7 @@ object mod {
     *                                     `add()` will return a rejected promise if this limit would be exceeded.
     * @param options [{}] See QueueOptions
     */
-  class ^ ()
+  open class ^ ()
     extends StObject
        with PromiseQueue {
     def this(maxPendingPromises: Double) = this()
@@ -91,7 +91,7 @@ object mod {
   object PromiseQueue {
     
     inline def apply(
-      add: js.Function0[js.Promise[js.Any]] => js.Promise[js.Any],
+      add: js.Function0[js.Promise[Any]] => js.Promise[Any],
       getPendingLength: () => Double,
       getQueueLength: () => Double
     ): PromiseQueue = {
@@ -101,7 +101,7 @@ object mod {
     
     extension [Self <: PromiseQueue](x: Self) {
       
-      inline def setAdd(value: js.Function0[js.Promise[js.Any]] => js.Promise[js.Any]): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+      inline def setAdd(value: js.Function0[js.Promise[Any]] => js.Promise[Any]): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
       inline def setGetPendingLength(value: () => Double): Self = StObject.set(x, "getPendingLength", js.Any.fromFunction0(value))
       

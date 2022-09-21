@@ -7,8 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CustomizeSeriesNameField extends StObject {
   
-  var customizeSeries: js.UndefOr[js.Function1[/* seriesName */ js.Any, PolarChartSeries]] = js.undefined
+  /**
+    * Specifies a callback function that returns a series object with individual series settings.
+    */
+  var customizeSeries: js.UndefOr[js.Function1[/* seriesName */ Any, PolarChartSeries]] = js.undefined
   
+  /**
+    * Specifies a data source field that represents the series name.
+    */
   var nameField: js.UndefOr[String] = js.undefined
 }
 object CustomizeSeriesNameField {
@@ -20,7 +26,7 @@ object CustomizeSeriesNameField {
   
   extension [Self <: CustomizeSeriesNameField](x: Self) {
     
-    inline def setCustomizeSeries(value: /* seriesName */ js.Any => PolarChartSeries): Self = StObject.set(x, "customizeSeries", js.Any.fromFunction1(value))
+    inline def setCustomizeSeries(value: /* seriesName */ Any => PolarChartSeries): Self = StObject.set(x, "customizeSeries", js.Any.fromFunction1(value))
     
     inline def setCustomizeSeriesUndefined: Self = StObject.set(x, "customizeSeries", js.undefined)
     

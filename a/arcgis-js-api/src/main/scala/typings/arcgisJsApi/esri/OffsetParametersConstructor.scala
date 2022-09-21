@@ -9,8 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait OffsetParametersConstructor
   extends StObject
-     with Instantiable0[OffsetParameters]
+     with /**
+  * Sets the offset distance, type and other parameters for the [geometryService.offset](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-geometryService.html#offset) operation.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-OffsetParameters.html)
+  */
+Instantiable0[OffsetParameters]
      with Instantiable1[/* properties */ OffsetParametersProperties, OffsetParameters] {
   
-  def fromJSON(json: js.Any): OffsetParameters = js.native
+  def fromJSON(json: Any): OffsetParameters = js.native
 }

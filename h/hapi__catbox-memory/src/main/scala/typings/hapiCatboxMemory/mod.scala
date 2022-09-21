@@ -4,7 +4,6 @@ import typings.hapiCatbox.mod.CacheKey
 import typings.hapiCatbox.mod.CachedObject
 import typings.hapiCatbox.mod.ClientApi
 import typings.hapiCatbox.mod.ClientOptions
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ object mod {
   // tslint:disable-next-line:no-unnecessary-class
   @JSImport("@hapi/catbox-memory", JSImport.Namespace)
   @js.native
-  class ^[T] ()
+  open class ^[T] ()
     extends StObject
        with ClientApi[T] {
     def this(options: Options) = this()
@@ -56,7 +55,7 @@ object mod {
     
     /** validateSegmentName(segment) - returns null if the segment name is valid (see below), otherwise should return an instance of Error with an appropriate message. */
     /* CompleteClass */
-    override def validateSegmentName(segment: String): Null | Error = js.native
+    override def validateSegmentName(segment: String): Null | js.Error = js.native
   }
   
   // tslint:disable-next-line:no-unnecessary-class

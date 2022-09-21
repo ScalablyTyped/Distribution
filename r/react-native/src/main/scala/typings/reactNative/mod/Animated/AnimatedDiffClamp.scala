@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native", "Animated.AnimatedDiffClamp")
 @js.native
-class AnimatedDiffClamp () extends AnimatedInterpolation
+open class AnimatedDiffClamp[OutputT /* <: Double | String */] () extends AnimatedInterpolation[OutputT]

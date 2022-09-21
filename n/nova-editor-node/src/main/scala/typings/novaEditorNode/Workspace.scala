@@ -2,13 +2,14 @@ package typings.novaEditorNode
 
 import typings.novaEditorNode.anon.AllowDirectories
 import typings.novaEditorNode.anon.Buttons
+import typings.novaEditorNode.anon.Content
 import typings.novaEditorNode.anon.Label
 import typings.novaEditorNode.anon.Placeholder
+import typings.novaEditorNode.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/// https://novadocs.panic.com/api-reference/workspace/
 @js.native
 trait Workspace extends StObject {
   
@@ -28,6 +29,10 @@ trait Workspace extends StObject {
   def openConfig(identifier: String): Unit = js.native
   
   def openFile(uri: String): js.Promise[TextEditor | Null] = js.native
+  def openFile(uri: String, options: FileLocation): js.Promise[TextEditor | Null] = js.native
+  
+  def openNewTextDocument(): js.Promise[TextEditor | Null] = js.native
+  def openNewTextDocument(options: Content & FileLocation): js.Promise[TextEditor | Null] = js.native
   
   val path: String | Null = js.native
   
@@ -46,10 +51,10 @@ trait Workspace extends StObject {
     options: Unit,
     callback: js.Function2[/* choice */ String | Null, /* choiceIndex */ Double | Null, Unit]
   ): Unit = js.native
-  def showChoicePalette(choices: js.Array[String], options: Placeholder): Unit = js.native
+  def showChoicePalette(choices: js.Array[String], options: `0`): Unit = js.native
   def showChoicePalette(
     choices: js.Array[String],
-    options: Placeholder,
+    options: `0`,
     callback: js.Function2[/* choice */ String | Null, /* choiceIndex */ Double | Null, Unit]
   ): Unit = js.native
   

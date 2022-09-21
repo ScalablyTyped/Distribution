@@ -18,7 +18,7 @@ object storage {
     */
   @JSImport("react-native-firebase", "RNFirebase.storage.Storage")
   @js.native
-  class Storage () extends StObject {
+  open class Storage () extends StObject {
     
     /**
       * The app associated with the Storage service instance.

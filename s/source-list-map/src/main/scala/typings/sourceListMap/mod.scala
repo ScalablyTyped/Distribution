@@ -15,7 +15,7 @@ object mod {
   
   @JSImport("source-list-map", "CodeNode")
   @js.native
-  class CodeNode protected () extends StObject {
+  open class CodeNode protected () extends StObject {
     def this(generatedCode: String) = this()
     
     def addGeneratedCode(generatedCode: String): Unit = js.native
@@ -32,7 +32,7 @@ object mod {
   
   @JSImport("source-list-map", "MappingsContext")
   @js.native
-  class MappingsContext () extends StObject {
+  open class MappingsContext () extends StObject {
     
     var currentOriginalLine: Double = js.native
     
@@ -49,7 +49,7 @@ object mod {
   
   @JSImport("source-list-map", "SourceListMap")
   @js.native
-  class SourceListMap () extends StObject {
+  open class SourceListMap () extends StObject {
     def this(generatedCode: String) = this()
     def this(generatedCode: js.Array[SourceNode | CodeNode]) = this()
     def this(generatedCode: CodeNode) = this()
@@ -110,7 +110,7 @@ object mod {
   
   @JSImport("source-list-map", "SourceNode")
   @js.native
-  class SourceNode protected () extends StObject {
+  open class SourceNode protected () extends StObject {
     def this(generatedCode: String, source: String, originalSource: String) = this()
     def this(generatedCode: String, source: String, originalSource: String, startingLine: Double) = this()
     

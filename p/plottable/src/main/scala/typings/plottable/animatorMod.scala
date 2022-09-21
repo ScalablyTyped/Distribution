@@ -21,7 +21,7 @@ object animatorMod {
       *     transition object so that plots may chain the transitions between
       *     animators.
       */
-    def animate(selection: SimpleSelection[js.Any], attrToAppliedProjector: AttributeToAppliedProjector): SimpleSelection[js.Any] | (Transition_[js.Any, js.Any, js.Any, js.Any])
+    def animate(selection: SimpleSelection[Any], attrToAppliedProjector: AttributeToAppliedProjector): SimpleSelection[Any] | (Transition_[Any, Any, Any, Any])
     
     /**
       * Given the number of elements, return the total time the animation requires
@@ -34,7 +34,7 @@ object animatorMod {
   object IAnimator {
     
     inline def apply(
-      animate: (SimpleSelection[js.Any], AttributeToAppliedProjector) => SimpleSelection[js.Any] | (Transition_[js.Any, js.Any, js.Any, js.Any]),
+      animate: (SimpleSelection[Any], AttributeToAppliedProjector) => SimpleSelection[Any] | (Transition_[Any, Any, Any, Any]),
       totalTime: Double => Double
     ): IAnimator = {
       val __obj = js.Dynamic.literal(animate = js.Any.fromFunction2(animate), totalTime = js.Any.fromFunction1(totalTime))
@@ -44,7 +44,7 @@ object animatorMod {
     extension [Self <: IAnimator](x: Self) {
       
       inline def setAnimate(
-        value: (SimpleSelection[js.Any], AttributeToAppliedProjector) => SimpleSelection[js.Any] | (Transition_[js.Any, js.Any, js.Any, js.Any])
+        value: (SimpleSelection[Any], AttributeToAppliedProjector) => SimpleSelection[Any] | (Transition_[Any, Any, Any, Any])
       ): Self = StObject.set(x, "animate", js.Any.fromFunction2(value))
       
       inline def setTotalTime(value: Double => Double): Self = StObject.set(x, "totalTime", js.Any.fromFunction1(value))

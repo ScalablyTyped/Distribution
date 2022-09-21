@@ -1,6 +1,5 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ trait ManufacturerData extends StObject {
   var manufacturerId: String
   
   /** 制造商信息 */
-  var manufacturerSpecificData: js.UndefOr[ArrayBuffer] = js.undefined
+  var manufacturerSpecificData: js.UndefOr[js.typedarray.ArrayBuffer] = js.undefined
 }
 object ManufacturerData {
   
@@ -25,7 +24,7 @@ object ManufacturerData {
     
     inline def setManufacturerId(value: String): Self = StObject.set(x, "manufacturerId", value.asInstanceOf[js.Any])
     
-    inline def setManufacturerSpecificData(value: ArrayBuffer): Self = StObject.set(x, "manufacturerSpecificData", value.asInstanceOf[js.Any])
+    inline def setManufacturerSpecificData(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "manufacturerSpecificData", value.asInstanceOf[js.Any])
     
     inline def setManufacturerSpecificDataUndefined: Self = StObject.set(x, "manufacturerSpecificData", js.undefined)
   }

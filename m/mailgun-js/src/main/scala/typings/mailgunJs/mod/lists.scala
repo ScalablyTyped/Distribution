@@ -10,11 +10,11 @@ object lists {
   @js.native
   trait Member extends StObject {
     
-    def delete(): js.Promise[js.Any] = js.native
-    def delete(callback: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): js.Promise[js.Any] = js.native
+    def delete(): js.Promise[Any] = js.native
+    def delete(callback: js.Function2[/* err */ Error, /* data */ Any, Unit]): js.Promise[Any] = js.native
     
-    def update(data: MemberUpdateData): js.Promise[js.Any] = js.native
-    def update(data: MemberUpdateData, callback: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): js.Promise[js.Any] = js.native
+    def update(data: MemberUpdateData): js.Promise[Any] = js.native
+    def update(data: MemberUpdateData, callback: js.Function2[/* err */ Error, /* data */ Any, Unit]): js.Promise[Any] = js.native
   }
   
   trait MemberAddMultipleData extends StObject {
@@ -34,7 +34,7 @@ object lists {
       
       inline def setMembers(value: js.Array[Address]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
       
-      inline def setMembersVarargs(value: Address*): Self = StObject.set(x, "members", js.Array(value :_*))
+      inline def setMembersVarargs(value: Address*): Self = StObject.set(x, "members", js.Array(value*))
       
       inline def setUpsert(value: Boolean): Self = StObject.set(x, "upsert", value.asInstanceOf[js.Any])
       
@@ -103,13 +103,13 @@ object lists {
   @js.native
   trait Members extends StObject {
     
-    def add(data: MemberAddMultipleData): js.Promise[js.Any] = js.native
-    def add(data: MemberAddMultipleData, callback: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): js.Promise[js.Any] = js.native
+    def add(data: MemberAddMultipleData): js.Promise[Any] = js.native
+    def add(data: MemberAddMultipleData, callback: js.Function2[/* err */ Error, /* data */ Any, Unit]): js.Promise[Any] = js.native
     
-    def create(data: MemberCreateData): js.Promise[js.Any] = js.native
-    def create(data: MemberCreateData, callback: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): js.Promise[js.Any] = js.native
+    def create(data: MemberCreateData): js.Promise[Any] = js.native
+    def create(data: MemberCreateData, callback: js.Function2[/* err */ Error, /* data */ Any, Unit]): js.Promise[Any] = js.native
     
-    def list(): js.Promise[js.Any] = js.native
-    def list(callback: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): js.Promise[js.Any] = js.native
+    def list(): js.Promise[Any] = js.native
+    def list(callback: js.Function2[/* err */ Error, /* data */ Any, Unit]): js.Promise[Any] = js.native
   }
 }

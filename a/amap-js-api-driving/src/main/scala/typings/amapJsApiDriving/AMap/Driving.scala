@@ -226,7 +226,7 @@ object Driving {
       
       inline def setSteps(value: js.Array[DriveStep]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
       
-      inline def setStepsVarargs(value: DriveStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
+      inline def setStepsVarargs(value: DriveStep*): Self = StObject.set(x, "steps", js.Array(value*))
       
       inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
@@ -346,7 +346,7 @@ object Driving {
       
       inline def setCitiesUndefined: Self = StObject.set(x, "cities", js.undefined)
       
-      inline def setCitiesVarargs(value: ViaCity*): Self = StObject.set(x, "cities", js.Array(value :_*))
+      inline def setCitiesVarargs(value: ViaCity*): Self = StObject.set(x, "cities", js.Array(value*))
       
       inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
@@ -358,7 +358,7 @@ object Driving {
       
       inline def setPath(value: js.Array[LngLat]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      inline def setPathVarargs(value: LngLat*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: LngLat*): Self = StObject.set(x, "path", js.Array(value*))
       
       inline def setRoad(value: String): Self = StObject.set(x, "road", value.asInstanceOf[js.Any])
       
@@ -372,11 +372,11 @@ object Driving {
       
       inline def setTmcsPathsUndefined: Self = StObject.set(x, "tmcsPaths", js.undefined)
       
-      inline def setTmcsPathsVarargs(value: TMCsPath*): Self = StObject.set(x, "tmcsPaths", js.Array(value :_*))
+      inline def setTmcsPathsVarargs(value: TMCsPath*): Self = StObject.set(x, "tmcsPaths", js.Array(value*))
       
       inline def setTmcsUndefined: Self = StObject.set(x, "tmcs", js.undefined)
       
-      inline def setTmcsVarargs(value: TMC*): Self = StObject.set(x, "tmcs", js.Array(value :_*))
+      inline def setTmcsVarargs(value: TMC*): Self = StObject.set(x, "tmcs", js.Array(value*))
       
       inline def setToll_distance(value: Double): Self = StObject.set(x, "toll_distance", value.asInstanceOf[js.Any])
       
@@ -585,7 +585,7 @@ object Driving {
       
       inline def setWaypointsUndefined: Self = StObject.set(x, "waypoints", js.undefined)
       
-      inline def setWaypointsVarargs(value: LocationValue*): Self = StObject.set(x, "waypoints", js.Array(value :_*))
+      inline def setWaypointsVarargs(value: LocationValue*): Self = StObject.set(x, "waypoints", js.Array(value*))
     }
   }
   
@@ -697,7 +697,7 @@ object Driving {
       
       inline def setWaypoints(value: js.Array[PoiisWaypointboolean]): Self = StObject.set(x, "waypoints", value.asInstanceOf[js.Any])
       
-      inline def setWaypointsVarargs(value: PoiisWaypointboolean*): Self = StObject.set(x, "waypoints", js.Array(value :_*))
+      inline def setWaypointsVarargs(value: PoiisWaypointboolean*): Self = StObject.set(x, "waypoints", js.Array(value*))
     }
   }
   
@@ -746,7 +746,7 @@ object Driving {
       
       inline def setRoutes(value: js.Array[DriveRoute]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       
-      inline def setRoutesVarargs(value: DriveRoute*): Self = StObject.set(x, "routes", js.Array(value :_*))
+      inline def setRoutesVarargs(value: DriveRoute*): Self = StObject.set(x, "routes", js.Array(value*))
       
       inline def setTaxi_cost(value: Double): Self = StObject.set(x, "taxi_cost", value.asInstanceOf[js.Any])
       
@@ -813,7 +813,7 @@ object Driving {
       
       inline def setWaypoints(value: js.Array[PoiExt & IsWaypoint]): Self = StObject.set(x, "waypoints", value.asInstanceOf[js.Any])
       
-      inline def setWaypointsVarargs(value: (PoiExt & IsWaypoint)*): Self = StObject.set(x, "waypoints", js.Array(value :_*))
+      inline def setWaypointsVarargs(value: (PoiExt & IsWaypoint)*): Self = StObject.set(x, "waypoints", js.Array(value*))
     }
   }
   
@@ -874,11 +874,11 @@ object Driving {
       
       inline def setLcode(value: String | js.Array[scala.Nothing]): Self = StObject.set(x, "lcode", value.asInstanceOf[js.Any])
       
-      inline def setLcodeVarargs(value: scala.Nothing*): Self = StObject.set(x, "lcode", js.Array(value :_*))
+      inline def setLcodeVarargs(value: scala.Nothing*): Self = StObject.set(x, "lcode", js.Array(value*))
       
       inline def setPath(value: js.Array[LngLat]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      inline def setPathVarargs(value: LngLat*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: LngLat*): Self = StObject.set(x, "path", js.Array(value*))
       
       inline def setPolyline(value: String): Self = StObject.set(x, "polyline", value.asInstanceOf[js.Any])
       
@@ -903,7 +903,7 @@ object Driving {
       
       inline def setPath(value: js.Array[LngLat]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      inline def setPathVarargs(value: LngLat*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: LngLat*): Self = StObject.set(x, "path", js.Array(value*))
       
       inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
@@ -946,7 +946,7 @@ object Driving {
       
       inline def setDistricts(value: js.Array[District]): Self = StObject.set(x, "districts", value.asInstanceOf[js.Any])
       
-      inline def setDistrictsVarargs(value: District*): Self = StObject.set(x, "districts", js.Array(value :_*))
+      inline def setDistrictsVarargs(value: District*): Self = StObject.set(x, "districts", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

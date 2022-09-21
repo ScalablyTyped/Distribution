@@ -16,6 +16,8 @@ trait DimensionalDefinitionProperties extends StObject {
   /**
     * Indicates whether the values indicate slices (rather than ranges).
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-DimensionalDefinition.html#isSlice)
     */
   var isSlice: js.UndefOr[Boolean] = js.undefined
@@ -55,7 +57,7 @@ object DimensionalDefinitionProperties {
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: (Double | js.Array[Double])*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: (Double | js.Array[Double])*): Self = StObject.set(x, "values", js.Array(value*))
     
     inline def setVariableName(value: String): Self = StObject.set(x, "variableName", value.asInstanceOf[js.Any])
     

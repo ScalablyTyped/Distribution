@@ -9,5 +9,5 @@ object typesMod {
   
   type Prefer[P, T] = P & (Omit[T, /* keyof P */ String])
   
-  type UnionToIntersection[U] = js.Any
+  type UnionToIntersection[U] = Any
 }

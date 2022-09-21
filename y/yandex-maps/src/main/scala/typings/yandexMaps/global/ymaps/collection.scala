@@ -8,7 +8,7 @@ object collection {
   
   @JSGlobal("ymaps.collection.Item")
   @js.native
-  class Item ()
+  open class Item ()
     extends typings.yandexMaps.mod.collection.Item {
     def this(options: js.Object) = this()
   }

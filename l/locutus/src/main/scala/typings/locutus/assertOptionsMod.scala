@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object assertOptionsMod {
   
-  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  inline def apply(what: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(what.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def apply(what: js.Any, value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(what.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(what: Unit, value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(what.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(what: Any): Any = ^.asInstanceOf[js.Dynamic].apply(what.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(what: Any, value: Any): Any = (^.asInstanceOf[js.Dynamic].apply(what.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(what: Unit, value: Any): Any = (^.asInstanceOf[js.Dynamic].apply(what.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("locutus/php/info/assert_options", JSImport.Namespace)
   @js.native

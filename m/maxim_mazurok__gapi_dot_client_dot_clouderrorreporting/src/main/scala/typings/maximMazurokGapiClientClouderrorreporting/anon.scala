@@ -199,15 +199,15 @@ object anon {
     /** Optional. The maximum number of results to return per response. Default is 20. */
     var pageSize: js.UndefOr[Double] = js.undefined
     
-    /** Optional. A `next_page_token` provided by a previous response. To view additional results, pass this token along with the identical query parameters as the first request. */
+    /** Optional. A next_page_token provided by a previous response. To view additional results, pass this token along with the identical query parameters as the first request. */
     var pageToken: js.UndefOr[String] = js.undefined
     
     /** Returns response with indentations and line breaks. */
     var prettyPrint: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * Required. The resource name of the Google Cloud Platform project. Written as `projects/{projectID}`, where `{projectID}` is the [Google Cloud Platform project
-      * ID](https://support.google.com/cloud/answer/6158840). Example: `projects/my-project-123`.
+      * Required. The resource name of the Google Cloud Platform project. Written as `projects/{projectID}` or `projects/{projectNumber}`, where `{projectID}` and `{projectNumber}` can
+      * be found in the [Google Cloud console](https://support.google.com/cloud/answer/6158840). Examples: `projects/my-project-123`, `projects/5551234`.
       */
     var projectName: String
     
@@ -230,7 +230,7 @@ object anon {
     @JSName("timeRange.period")
     var timeRangeDotperiod: js.UndefOr[String] = js.undefined
     
-    /** Optional. The preferred duration for a single returned `TimedCount`. If not set, no timed counts are returned. */
+    /** Optional. The preferred duration for a single returned TimedCount. If not set, no timed counts are returned. */
     var timedCountDuration: js.UndefOr[String] = js.undefined
     
     /** Legacy upload protocol for media (e.g. "media", "multipart"). */
@@ -280,7 +280,7 @@ object anon {
       
       inline def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
       
-      inline def setGroupIdVarargs(value: String*): Self = StObject.set(x, "groupId", js.Array(value :_*))
+      inline def setGroupIdVarargs(value: String*): Self = StObject.set(x, "groupId", js.Array(value*))
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -564,8 +564,7 @@ object anon {
     var fields: js.UndefOr[String] = js.undefined
     
     /**
-      * Required. The group resource name. Written as `projects/{projectID}/groups/{group_name}`. Call
-      * [`groupStats.list`](https://cloud.google.com/error-reporting/reference/rest/v1beta1/projects.groupStats/list) to return a list of groups belonging to this project. Example:
+      * Required. The group resource name. Written as `projects/{projectID}/groups/{group_name}`. Call groupStats.list to return a list of groups belonging to this project. Example:
       * `projects/my-project-123/groups/my-group`
       */
     var groupName: String

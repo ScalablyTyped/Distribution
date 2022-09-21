@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.ApplicationModel.Background.PushNotificationTrigger")
 @js.native
 /** Invokes a background work item on the app in response to the receipt of a raw notification . */
-class PushNotificationTrigger ()
+open class PushNotificationTrigger ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Background.PushNotificationTrigger {
   /**

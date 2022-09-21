@@ -10,10 +10,10 @@ object mergeTypeMod {
   
   @JSImport("material-ui/svg-icons/editor/merge-type", JSImport.Default)
   @js.native
-  class default () extends EditorMergeType
+  open class default () extends EditorMergeType
   
   @JSImport("material-ui/svg-icons/editor/merge-type", "EditorMergeType")
   @js.native
-  class EditorMergeType ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class EditorMergeType ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

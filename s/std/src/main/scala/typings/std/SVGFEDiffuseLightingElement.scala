@@ -12,22 +12,26 @@ trait SVGFEDiffuseLightingElement
      with SVGFilterPrimitiveStandardAttributes {
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(
     `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
+    callback: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
   
+  /* standard dom */
   val diffuseConstant: SVGAnimatedNumber = js.native
   
+  /* standard dom */
   val in1: SVGAnimatedString = js.native
   
+  /* standard dom */
   val kernelUnitLengthX: SVGAnimatedNumber = js.native
   
+  /* standard dom */
   val kernelUnitLengthY: SVGAnimatedNumber = js.native
   
   /* InferMemberOverrides */
@@ -41,5 +45,6 @@ trait SVGFEDiffuseLightingElement
     options: EventListenerOptions
   ): Unit = js.native
   
+  /* standard dom */
   val surfaceScale: SVGAnimatedNumber = js.native
 }

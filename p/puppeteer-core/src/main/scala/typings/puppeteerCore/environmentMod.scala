@@ -6,6 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object environmentMod {
   
+  @JSImport("puppeteer-core/lib/cjs/puppeteer/environment", "DEFERRED_PROMISE_DEBUG_TIMEOUT")
+  @js.native
+  val DEFERRED_PROMISE_DEBUG_TIMEOUT: Double = js.native
+  
   @JSImport("puppeteer-core/lib/cjs/puppeteer/environment", "isNode")
   @js.native
   val isNode: Boolean = js.native

@@ -7,29 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("knockout", "bindingProvider")
 @js.native
-class bindingProvider ()
+open class bindingProvider ()
   extends StObject
      with IBindingProvider {
   
   /* CompleteClass */
-  override def getBindingAccessors(node: Node, bindingContext: BindingContext[js.Any]): BindingAccessors = js.native
+  override def getBindingAccessors(node: Node, bindingContext: BindingContext[Any]): BindingAccessors = js.native
   
   def getBindingsString(node: Node): String = js.native
-  def getBindingsString(node: Node, bindingContext: BindingContext[js.Any]): String = js.native
+  def getBindingsString(node: Node, bindingContext: BindingContext[Any]): String = js.native
   
   @JSName("getBindings")
-  def getBindings_MbindingProvider(node: Node, bindingContext: BindingContext[js.Any]): js.Object = js.native
+  def getBindings_MbindingProvider(node: Node, bindingContext: BindingContext[Any]): js.Object = js.native
   
   /* CompleteClass */
   override def nodeHasBindings(node: Node): Boolean = js.native
   
-  def parseBindingsString(bindingsString: String, bindingContext: BindingContext[js.Any], node: Node): js.Object = js.native
-  def parseBindingsString(
-    bindingsString: String,
-    bindingContext: BindingContext[js.Any],
-    node: Node,
-    options: BindingOptions
-  ): js.Object | BindingAccessors = js.native
+  def parseBindingsString(bindingsString: String, bindingContext: BindingContext[Any], node: Node): js.Object = js.native
+  def parseBindingsString(bindingsString: String, bindingContext: BindingContext[Any], node: Node, options: BindingOptions): js.Object | BindingAccessors = js.native
 }
 /* static members */
 object bindingProvider {

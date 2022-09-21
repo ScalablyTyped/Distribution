@@ -53,7 +53,7 @@ object XSimpleFileAccess3 {
     openFileRead: String => XInputStream,
     openFileReadWrite: String => XStream,
     openFileWrite: String => XOutputStream,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setHidden: (String, Boolean) => Unit,
     setInteractionHandler: XInteractionHandler => Unit,

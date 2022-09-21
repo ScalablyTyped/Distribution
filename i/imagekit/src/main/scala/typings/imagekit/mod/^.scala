@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("imagekit", JSImport.Namespace)
 @js.native
-class ^ protected () extends ImageKit {
+open class ^ protected () extends ImageKit {
   def this(options: PrivateKey) = this()
 }

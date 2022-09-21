@@ -17,7 +17,12 @@ object buildingGroupSublayerMod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/buildingSublayers/BuildingGroupSublayer", JSImport.Namespace)
   @js.native
-  class Class ()
+  /**
+    * Hierarchical group of [BuildingSceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html) sublayers.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-buildingSublayers-BuildingGroupSublayer.html)
+    */
+  open class Class ()
     extends StObject
        with BuildingGroupSublayer {
     def this(properties: BuildingGroupSublayerProperties) = this()

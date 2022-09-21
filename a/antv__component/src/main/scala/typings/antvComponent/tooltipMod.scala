@@ -10,5 +10,5 @@ object tooltipMod {
   
   @JSImport("@antv/component/lib/tooltip", "Html")
   @js.native
-  class Html[T /* <: TooltipCfg */] () extends default[T]
+  open class Html[T /* <: TooltipCfg */] () extends default[T]
 }

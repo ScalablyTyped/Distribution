@@ -9,36 +9,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait TQueryMetadata extends StObject {
   
-  var descendants: Boolean
+  var flags: QueryFlags
   
-  var isStatic: Boolean
+  var predicate: ProviderToken[Any] | js.Array[String]
   
-  var predicate: Type[js.Any] | InjectionToken[js.Any] | js.Array[String]
-  
-  var read: js.Any
+  var read: Any
 }
 object TQueryMetadata {
   
-  inline def apply(
-    descendants: Boolean,
-    isStatic: Boolean,
-    predicate: Type[js.Any] | InjectionToken[js.Any] | js.Array[String],
-    read: js.Any
-  ): TQueryMetadata = {
-    val __obj = js.Dynamic.literal(descendants = descendants.asInstanceOf[js.Any], isStatic = isStatic.asInstanceOf[js.Any], predicate = predicate.asInstanceOf[js.Any], read = read.asInstanceOf[js.Any])
+  inline def apply(flags: QueryFlags, predicate: ProviderToken[Any] | js.Array[String], read: Any): TQueryMetadata = {
+    val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], predicate = predicate.asInstanceOf[js.Any], read = read.asInstanceOf[js.Any])
     __obj.asInstanceOf[TQueryMetadata]
   }
   
   extension [Self <: TQueryMetadata](x: Self) {
     
-    inline def setDescendants(value: Boolean): Self = StObject.set(x, "descendants", value.asInstanceOf[js.Any])
+    inline def setFlags(value: QueryFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    inline def setIsStatic(value: Boolean): Self = StObject.set(x, "isStatic", value.asInstanceOf[js.Any])
+    inline def setPredicate(value: ProviderToken[Any] | js.Array[String]): Self = StObject.set(x, "predicate", value.asInstanceOf[js.Any])
     
-    inline def setPredicate(value: Type[js.Any] | InjectionToken[js.Any] | js.Array[String]): Self = StObject.set(x, "predicate", value.asInstanceOf[js.Any])
+    inline def setPredicateVarargs(value: String*): Self = StObject.set(x, "predicate", js.Array(value*))
     
-    inline def setPredicateVarargs(value: String*): Self = StObject.set(x, "predicate", js.Array(value :_*))
-    
-    inline def setRead(value: js.Any): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+    inline def setRead(value: Any): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
   }
 }

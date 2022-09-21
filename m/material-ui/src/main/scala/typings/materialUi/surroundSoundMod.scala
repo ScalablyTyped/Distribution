@@ -10,10 +10,10 @@ object surroundSoundMod {
   
   @JSImport("material-ui/svg-icons/av/surround-sound", JSImport.Default)
   @js.native
-  class default () extends AvSurroundSound
+  open class default () extends AvSurroundSound
   
   @JSImport("material-ui/svg-icons/av/surround-sound", "AvSurroundSound")
   @js.native
-  class AvSurroundSound ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvSurroundSound ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

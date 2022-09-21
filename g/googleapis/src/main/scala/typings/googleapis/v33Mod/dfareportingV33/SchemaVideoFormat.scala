@@ -4,26 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Contains information about supported video formats.
-  */
 trait SchemaVideoFormat extends StObject {
   
   /**
     * File type of the video format.
     */
-  var fileType: js.UndefOr[String] = js.undefined
+  var fileType: js.UndefOr[String | Null] = js.undefined
   
   /**
     * ID of the video format.
     */
-  var id: js.UndefOr[Double] = js.undefined
+  var id: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;dfareporting#videoFormat&quot;.
+    * Identifies what kind of resource this is. Value: the fixed string "dfareporting#videoFormat".
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The resolution of this video format.
@@ -33,7 +29,7 @@ trait SchemaVideoFormat extends StObject {
   /**
     * The target bit rate of this video format.
     */
-  var targetBitRate: js.UndefOr[Double] = js.undefined
+  var targetBitRate: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaVideoFormat {
   
@@ -46,13 +42,19 @@ object SchemaVideoFormat {
     
     inline def setFileType(value: String): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
     
+    inline def setFileTypeNull: Self = StObject.set(x, "fileType", null)
+    
     inline def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
+    inline def setIdNull: Self = StObject.set(x, "id", null)
+    
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
@@ -61,6 +63,8 @@ object SchemaVideoFormat {
     inline def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
     
     inline def setTargetBitRate(value: Double): Self = StObject.set(x, "targetBitRate", value.asInstanceOf[js.Any])
+    
+    inline def setTargetBitRateNull: Self = StObject.set(x, "targetBitRate", null)
     
     inline def setTargetBitRateUndefined: Self = StObject.set(x, "targetBitRate", js.undefined)
   }

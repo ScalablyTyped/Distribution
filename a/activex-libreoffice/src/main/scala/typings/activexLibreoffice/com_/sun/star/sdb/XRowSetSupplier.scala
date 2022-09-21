@@ -39,7 +39,7 @@ object XRowSetSupplier {
     RowSet: XRowSet,
     acquire: () => Unit,
     getRowSet: () => XRowSet,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setRowSet: XRowSet => Unit
   ): XRowSetSupplier = {

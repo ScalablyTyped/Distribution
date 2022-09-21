@@ -17,7 +17,7 @@ object optionalMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def filter(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")().asInstanceOf[js.Any]
+    inline def filter(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")().asInstanceOf[Any]
     
     inline def forEach(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("forEach")().asInstanceOf[Unit]
     
@@ -38,7 +38,7 @@ object optionalMod {
     
     inline def isNone_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_isNone")(x.asInstanceOf[js.Any])
     
-    inline def map(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("map")().asInstanceOf[js.Any]
+    inline def map(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("map")().asInstanceOf[Any]
     
     inline def toArray(): js.Array[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")().asInstanceOf[js.Array[scala.Nothing]]
     
@@ -48,7 +48,7 @@ object optionalMod {
   /** @hidden */
   @JSImport("baconjs/types/optional", "Some")
   @js.native
-  class Some[V] protected ()
+  open class Some[V] protected ()
     extends StObject
        with Option[V] {
     def this(value: V) = this()
@@ -59,7 +59,7 @@ object optionalMod {
     override def filter(f: js.Function1[V, Boolean]): Option[V] = js.native
     
     /* CompleteClass */
-    override def forEach(f: js.Function1[V, js.Any]): Unit = js.native
+    override def forEach(f: js.Function1[V, Any]): Unit = js.native
     
     /* CompleteClass */
     override def get(): V = js.native
@@ -82,7 +82,7 @@ object optionalMod {
     var value: V = js.native
   }
   
-  inline def isNone(`object`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNone")(`object`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isNone(`object`: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNone")(`object`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def none[T](): Option[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("none")().asInstanceOf[Option[T]]
   
@@ -93,7 +93,7 @@ object optionalMod {
     
     def filter(f: js.Function1[/* value */ V, Boolean]): Option[V]
     
-    def forEach(f: js.Function1[/* value */ V, js.Any]): Unit
+    def forEach(f: js.Function1[/* value */ V, Any]): Unit
     
     def get(): V
     
@@ -111,12 +111,12 @@ object optionalMod {
     
     inline def apply[V](
       filter: js.Function1[/* value */ V, Boolean] => Option[V],
-      forEach: js.Function1[/* value */ V, js.Any] => Unit,
+      forEach: js.Function1[/* value */ V, Any] => Unit,
       get: () => V,
       getOrElse: V => V,
       inspect: () => String,
       isDefined: Boolean,
-      map: js.Function1[/* value */ V, js.Any] => Option[js.Any],
+      map: js.Function1[/* value */ V, Any] => Option[Any],
       toArray: () => js.Array[V]
     ): Option[V] = {
       val __obj = js.Dynamic.literal(filter = js.Any.fromFunction1(filter), forEach = js.Any.fromFunction1(forEach), get = js.Any.fromFunction0(get), getOrElse = js.Any.fromFunction1(getOrElse), inspect = js.Any.fromFunction0(inspect), isDefined = isDefined.asInstanceOf[js.Any], map = js.Any.fromFunction1(map), toArray = js.Any.fromFunction0(toArray))
@@ -127,7 +127,7 @@ object optionalMod {
       
       inline def setFilter(value: js.Function1[/* value */ V, Boolean] => Option[V]): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      inline def setForEach(value: js.Function1[/* value */ V, js.Any] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
+      inline def setForEach(value: js.Function1[/* value */ V, Any] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
       
       inline def setGet(value: () => V): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
       
@@ -137,7 +137,7 @@ object optionalMod {
       
       inline def setIsDefined(value: Boolean): Self = StObject.set(x, "isDefined", value.asInstanceOf[js.Any])
       
-      inline def setMap(value: js.Function1[/* value */ V, js.Any] => Option[js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+      inline def setMap(value: js.Function1[/* value */ V, Any] => Option[Any]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
       
       inline def setToArray(value: () => js.Array[V]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
     }

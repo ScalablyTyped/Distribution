@@ -19,7 +19,7 @@ trait Parameter extends StObject {
   /**
     * Date the parameter was last changed or updated and the parameter version was created.
     */
-  var LastModifiedDate: js.UndefOr[DateTime] = js.undefined
+  var LastModifiedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the parameter.
@@ -32,17 +32,17 @@ trait Parameter extends StObject {
   var Selector: js.UndefOr[PSParameterSelector] = js.undefined
   
   /**
-    * Applies to parameters that reference information in other AWS services. SourceResult is the raw result or response from the source.
+    * Applies to parameters that reference information in other Amazon Web Services services. SourceResult is the raw result or response from the source.
     */
   var SourceResult: js.UndefOr[String] = js.undefined
   
   /**
-    * The type of parameter. Valid values include the following: String, StringList, and SecureString.
+    * The type of parameter. Valid values include the following: String, StringList, and SecureString.  If type is StringList, the system returns a comma-separated string with no spaces between commas in the Value field. 
     */
   var Type: js.UndefOr[ParameterType] = js.undefined
   
   /**
-    * The parameter value.
+    * The parameter value.  If type is StringList, the system returns a comma-separated string with no spaces between commas in the Value field. 
     */
   var Value: js.UndefOr[PSParameterValue] = js.undefined
   
@@ -68,7 +68,7 @@ object Parameter {
     
     inline def setDataTypeUndefined: Self = StObject.set(x, "DataType", js.undefined)
     
-    inline def setLastModifiedDate(value: DateTime): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: js.Date): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
     

@@ -10,11 +10,11 @@ object stereoCameraMod {
   
   @JSImport("three/src/cameras/StereoCamera", "StereoCamera")
   @js.native
-  class StereoCamera () extends Camera {
+  open class StereoCamera () extends Camera {
     
     /**
-    	 * @default 1
-    	 */
+      * @default 1
+      */
     var aspect: Double = js.native
     
     var cameraL: PerspectiveCamera = js.native
@@ -22,8 +22,8 @@ object stereoCameraMod {
     var cameraR: PerspectiveCamera = js.native
     
     /**
-    	 * @default 0.064
-    	 */
+      * @default 0.064
+      */
     var eyeSep: Double = js.native
     
     @JSName("type")

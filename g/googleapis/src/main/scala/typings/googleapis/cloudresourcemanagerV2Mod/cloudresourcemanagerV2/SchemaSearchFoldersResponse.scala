@@ -4,22 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The response message for searching folders.
-  */
 trait SchemaSearchFoldersResponse extends StObject {
   
   /**
-    * A possibly paginated folder search results. the specified parent
-    * resource.
+    * A possibly paginated folder search results. the specified parent resource.
     */
   var folders: js.UndefOr[js.Array[SchemaFolder]] = js.undefined
   
   /**
-    * A pagination token returned from a previous call to `SearchFolders` that
-    * indicates from where searching should continue. This field is optional.
+    * A pagination token returned from a previous call to `SearchFolders` that indicates from where searching should continue.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaSearchFoldersResponse {
   
@@ -34,9 +29,11 @@ object SchemaSearchFoldersResponse {
     
     inline def setFoldersUndefined: Self = StObject.set(x, "folders", js.undefined)
     
-    inline def setFoldersVarargs(value: SchemaFolder*): Self = StObject.set(x, "folders", js.Array(value :_*))
+    inline def setFoldersVarargs(value: SchemaFolder*): Self = StObject.set(x, "folders", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

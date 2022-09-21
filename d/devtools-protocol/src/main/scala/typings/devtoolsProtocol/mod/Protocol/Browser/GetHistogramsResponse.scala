@@ -22,6 +22,6 @@ object GetHistogramsResponse {
     
     inline def setHistograms(value: js.Array[Histogram]): Self = StObject.set(x, "histograms", value.asInstanceOf[js.Any])
     
-    inline def setHistogramsVarargs(value: Histogram*): Self = StObject.set(x, "histograms", js.Array(value :_*))
+    inline def setHistogramsVarargs(value: Histogram*): Self = StObject.set(x, "histograms", js.Array(value*))
   }
 }

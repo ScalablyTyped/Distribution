@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Fromitem extends StObject {
   
-  var fromitem: js.Any
+  var fromitem: Any
   
-  var target: js.Any
+  var target: Any
   
-  var toitem: js.Any
+  var toitem: Any
   
   var `type`: String
 }
 object Fromitem {
   
-  inline def apply(fromitem: js.Any, target: js.Any, toitem: js.Any, `type`: String): Fromitem = {
+  inline def apply(fromitem: Any, target: Any, toitem: Any, `type`: String): Fromitem = {
     val __obj = js.Dynamic.literal(fromitem = fromitem.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], toitem = toitem.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fromitem]
@@ -24,11 +24,11 @@ object Fromitem {
   
   extension [Self <: Fromitem](x: Self) {
     
-    inline def setFromitem(value: js.Any): Self = StObject.set(x, "fromitem", value.asInstanceOf[js.Any])
+    inline def setFromitem(value: Any): Self = StObject.set(x, "fromitem", value.asInstanceOf[js.Any])
     
-    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    inline def setToitem(value: js.Any): Self = StObject.set(x, "toitem", value.asInstanceOf[js.Any])
+    inline def setToitem(value: Any): Self = StObject.set(x, "toitem", value.asInstanceOf[js.Any])
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

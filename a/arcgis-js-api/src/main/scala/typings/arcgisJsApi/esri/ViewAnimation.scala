@@ -19,10 +19,12 @@ trait ViewAnimation
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ViewAnimation.html#finish)
     */
-  def finish(): Unit = js.native
+  def finish(): scala.Unit = js.native
   
   /**
     * The state of the animation.
+    *
+    * @default running
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ViewAnimation.html#state)
     */
@@ -33,7 +35,7 @@ trait ViewAnimation
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ViewAnimation.html#stop)
     */
-  def stop(): Unit = js.native
+  def stop(): scala.Unit = js.native
   
   /**
     * The target of the animation.

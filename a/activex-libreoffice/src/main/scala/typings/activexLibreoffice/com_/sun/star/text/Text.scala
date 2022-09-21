@@ -140,7 +140,7 @@ object Text {
     insertTextContentAfter: (XTextContent, XTextContent) => Unit,
     insertTextContentBefore: (XTextContent, XTextContent) => Unit,
     moveTextRange: (XTextRange, Double) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeTextContent: XTextContent => Unit,
     setString: String => Unit
@@ -153,10 +153,10 @@ object Text {
     
     inline def setEndRedline(value: PropertyValues): Self = StObject.set(x, "EndRedline", value.asInstanceOf[js.Any])
     
-    inline def setEndRedlineVarargs(value: PropertyValue*): Self = StObject.set(x, "EndRedline", js.Array(value :_*))
+    inline def setEndRedlineVarargs(value: PropertyValue*): Self = StObject.set(x, "EndRedline", js.Array(value*))
     
     inline def setStartRedline(value: PropertyValues): Self = StObject.set(x, "StartRedline", value.asInstanceOf[js.Any])
     
-    inline def setStartRedlineVarargs(value: PropertyValue*): Self = StObject.set(x, "StartRedline", js.Array(value :_*))
+    inline def setStartRedlineVarargs(value: PropertyValue*): Self = StObject.set(x, "StartRedline", js.Array(value*))
   }
 }

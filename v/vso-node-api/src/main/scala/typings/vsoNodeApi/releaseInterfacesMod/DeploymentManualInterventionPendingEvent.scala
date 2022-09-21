@@ -39,7 +39,7 @@ object DeploymentManualInterventionPendingEvent {
     
     inline def setEmailRecipients(value: js.Array[String]): Self = StObject.set(x, "emailRecipients", value.asInstanceOf[js.Any])
     
-    inline def setEmailRecipientsVarargs(value: String*): Self = StObject.set(x, "emailRecipients", js.Array(value :_*))
+    inline def setEmailRecipientsVarargs(value: String*): Self = StObject.set(x, "emailRecipients", js.Array(value*))
     
     inline def setEnvironmentOwner(value: IdentityRef): Self = StObject.set(x, "environmentOwner", value.asInstanceOf[js.Any])
     

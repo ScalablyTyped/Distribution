@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ldapjs", "ApproximateFilter")
 @js.native
-class ApproximateFilter protected ()
+open class ApproximateFilter protected ()
   extends StObject
      with Filter {
   def this(options: Value) = this()
   
   /* CompleteClass */
-  override def matches(obj: js.Any): Boolean = js.native
+  override def matches(obj: Any): Boolean = js.native
   
   /* CompleteClass */
   var `type`: String = js.native

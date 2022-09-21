@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateVoiceConnectorRequest extends StObject {
   
   /**
-    * The AWS Region in which the Amazon Chime Voice Connector is created. Default value: us-east-1.
+    *  The AWS Region in which the Amazon Chime Voice Connector is created. Default value: us-east-1 . 
     */
   var AwsRegion: js.UndefOr[VoiceConnectorAwsRegion] = js.undefined
   

@@ -10,10 +10,10 @@ Static file and directory handlers plugin for hapi.js
 | ------------------ | :-------------: |
 | Full name          | @hapi/inert |
 | Keywords           | file, directory, handler, hapi, plugin |
-| # releases         | 8 |
-| # dependents       | 103 |
-| # downloads        | 3057132 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 460195.3333333333 |
+| # stars            | 238.0 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/inert#readme)

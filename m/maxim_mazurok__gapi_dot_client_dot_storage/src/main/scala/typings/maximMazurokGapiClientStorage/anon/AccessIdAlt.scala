@@ -34,6 +34,9 @@ trait AccessIdAlt extends StObject {
   /** Request body */
   var resource: HmacKeyMetadata
   
+  /** Upload protocol for media (e.g. "media", "multipart", "resumable"). */
+  var uploadType: js.UndefOr[String] = js.undefined
+  
   /** Deprecated. Please use quotaUser instead. */
   var userIp: js.UndefOr[String] = js.undefined
   
@@ -78,6 +81,10 @@ object AccessIdAlt {
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
     inline def setResource(value: HmacKeyMetadata): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    
+    inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
+    
+    inline def setUploadTypeUndefined: Self = StObject.set(x, "uploadType", js.undefined)
     
     inline def setUserIp(value: String): Self = StObject.set(x, "userIp", value.asInstanceOf[js.Any])
     

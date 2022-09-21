@@ -23,10 +23,14 @@ object maximMazurokGapiClientArtifactregistryStrings {
   inline def Status: Status = "Status".asInstanceOf[Status]
   
   @js.native
+  sealed trait Version extends StObject
+  inline def Version: Version = "Version".asInstanceOf[Version]
+  
+  @js.native
   sealed trait artifactregistry extends StObject
   inline def artifactregistry: artifactregistry = "artifactregistry".asInstanceOf[artifactregistry]
   
   @js.native
-  sealed trait v1beta2 extends StObject
-  inline def v1beta2: v1beta2 = "v1beta2".asInstanceOf[v1beta2]
+  sealed trait v1 extends StObject
+  inline def v1: v1 = "v1".asInstanceOf[v1]
 }

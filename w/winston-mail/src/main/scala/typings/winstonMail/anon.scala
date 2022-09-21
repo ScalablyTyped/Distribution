@@ -54,11 +54,11 @@ object anon {
     
     var message: String
     
-    var meta: js.Any
+    var meta: Any
   }
   object Level {
     
-    inline def apply(level: String, message: String, meta: js.Any): Level = {
+    inline def apply(level: String, message: String, meta: Any): Level = {
       val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any])
       __obj.asInstanceOf[Level]
     }
@@ -69,7 +69,7 @@ object anon {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      inline def setMeta(value: js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     }
   }
 }

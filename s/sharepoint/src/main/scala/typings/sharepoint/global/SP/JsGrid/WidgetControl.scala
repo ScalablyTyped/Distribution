@@ -8,7 +8,7 @@ object WidgetControl {
   
   @JSGlobal("SP.JsGrid.WidgetControl.Type")
   @js.native
-  class Type ()
+  open class Type ()
     extends StObject
        with typings.sharepoint.SP.JsGrid.WidgetControl.Type
   object Type {

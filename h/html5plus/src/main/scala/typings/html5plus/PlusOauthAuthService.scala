@@ -20,12 +20,12 @@ trait PlusOauthAuthService extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
     */
   def addPhoneNumber(): Unit = js.native
-  def addPhoneNumber(successCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def addPhoneNumber(successCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def addPhoneNumber(
-    successCallback: js.Function1[/* result */ js.Any, Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    successCallback: js.Function1[/* result */ Any, Unit],
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def addPhoneNumber(successCallback: Unit, errorCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def addPhoneNumber(successCallback: Unit, errorCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   
   /**
     * 授权认证结果数据
@@ -44,25 +44,25 @@ trait PlusOauthAuthService extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
     */
   def authorize(): Unit = js.native
-  def authorize(successCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def authorize(successCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def authorize(
-    successCallback: js.Function1[/* result */ js.Any, Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    successCallback: js.Function1[/* result */ Any, Unit],
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def authorize(
-    successCallback: js.Function1[/* result */ js.Any, Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit],
+    successCallback: js.Function1[/* result */ Any, Unit],
+    errorCallback: js.Function1[/* result */ Any, Unit],
     options: PlusOauthAuthOptions
   ): Unit = js.native
   def authorize(
-    successCallback: js.Function1[/* result */ js.Any, Unit],
+    successCallback: js.Function1[/* result */ Any, Unit],
     errorCallback: Unit,
     options: PlusOauthAuthOptions
   ): Unit = js.native
-  def authorize(successCallback: Unit, errorCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def authorize(successCallback: Unit, errorCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def authorize(
     successCallback: Unit,
-    errorCallback: js.Function1[/* result */ js.Any, Unit],
+    errorCallback: js.Function1[/* result */ Any, Unit],
     options: PlusOauthAuthOptions
   ): Unit = js.native
   def authorize(successCallback: Unit, errorCallback: Unit, options: PlusOauthAuthOptions): Unit = js.native
@@ -87,7 +87,7 @@ trait PlusOauthAuthService extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
     */
-  var extra: js.UndefOr[js.Any] = js.native
+  var extra: js.UndefOr[Any] = js.native
   
   /**
     * 获取登录授权用户信息
@@ -97,12 +97,12 @@ trait PlusOauthAuthService extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
     */
   def getUserInfo(): Unit = js.native
-  def getUserInfo(successCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def getUserInfo(successCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def getUserInfo(
-    successCallback: js.Function1[/* result */ js.Any, Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    successCallback: js.Function1[/* result */ Any, Unit],
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def getUserInfo(successCallback: Unit, errorCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def getUserInfo(successCallback: Unit, errorCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   
   /**
     * 登录授权认证服务标识
@@ -124,25 +124,25 @@ trait PlusOauthAuthService extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
     */
   def login(): Unit = js.native
-  def login(successCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def login(successCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def login(
-    successCallback: js.Function1[/* result */ js.Any, Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    successCallback: js.Function1[/* result */ Any, Unit],
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
   def login(
-    successCallback: js.Function1[/* result */ js.Any, Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit],
+    successCallback: js.Function1[/* result */ Any, Unit],
+    errorCallback: js.Function1[/* result */ Any, Unit],
     options: PlusOauthAuthOptions
   ): Unit = js.native
   def login(
-    successCallback: js.Function1[/* result */ js.Any, Unit],
+    successCallback: js.Function1[/* result */ Any, Unit],
     errorCallback: Unit,
     options: PlusOauthAuthOptions
   ): Unit = js.native
-  def login(successCallback: Unit, errorCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def login(successCallback: Unit, errorCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def login(
     successCallback: Unit,
-    errorCallback: js.Function1[/* result */ js.Any, Unit],
+    errorCallback: js.Function1[/* result */ Any, Unit],
     options: PlusOauthAuthOptions
   ): Unit = js.native
   def login(successCallback: Unit, errorCallback: Unit, options: PlusOauthAuthOptions): Unit = js.native
@@ -155,12 +155,12 @@ trait PlusOauthAuthService extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/oauth.html](http://www.html5plus.org/doc/zh_cn/oauth.html)
     */
   def logout(): Unit = js.native
-  def logout(successCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def logout(successCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def logout(
-    successCallback: js.Function1[/* result */ js.Any, Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
+    successCallback: js.Function1[/* result */ Any, Unit],
+    errorCallback: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def logout(successCallback: Unit, errorCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def logout(successCallback: Unit, errorCallback: js.Function1[/* result */ Any, Unit]): Unit = js.native
   
   /**
     * 登录授权认证用户信息

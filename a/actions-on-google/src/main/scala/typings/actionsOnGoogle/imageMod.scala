@@ -9,7 +9,7 @@ object imageMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/response/image", "Image")
   @js.native
-  class Image protected ()
+  open class Image protected ()
     extends StObject
        with GoogleActionsV2UiElementsImage {
     /**

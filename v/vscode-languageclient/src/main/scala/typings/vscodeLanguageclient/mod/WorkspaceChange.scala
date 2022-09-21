@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vscode-languageclient", "WorkspaceChange")
 @js.native
-class WorkspaceChange ()
-  extends typings.vscodeLanguageclient.clientMod.WorkspaceChange {
+open class WorkspaceChange ()
+  extends typings.vscodeLanguageserverProtocol.mod.WorkspaceChange {
   def this(workspaceEdit: typings.vscodeLanguageserverTypes.mod.WorkspaceEdit) = this()
 }

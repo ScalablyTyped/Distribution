@@ -37,8 +37,8 @@ object createIconSetFromFontAwesome5Mod {
     inline def solid_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("solid")(x.asInstanceOf[js.Any])
   }
   
-  inline def createFA5iconSet(glyphMap: js.Any, metadata: js.Object, fonts: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createFA5iconSet")(glyphMap.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any], fonts.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def createFA5iconSet(glyphMap: js.Any, metadata: js.Object, fonts: js.Any, pro: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createFA5iconSet")(glyphMap.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any], fonts.asInstanceOf[js.Any], pro.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def createFA5iconSet(glyphMap: js.Any, metadata: Unit, fonts: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createFA5iconSet")(glyphMap.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any], fonts.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def createFA5iconSet(glyphMap: js.Any, metadata: Unit, fonts: js.Any, pro: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createFA5iconSet")(glyphMap.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any], fonts.asInstanceOf[js.Any], pro.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def createFA5iconSet(glyphMap: Any, metadata: js.Object, fonts: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createFA5iconSet")(glyphMap.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any], fonts.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def createFA5iconSet(glyphMap: Any, metadata: js.Object, fonts: Any, pro: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createFA5iconSet")(glyphMap.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any], fonts.asInstanceOf[js.Any], pro.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def createFA5iconSet(glyphMap: Any, metadata: Unit, fonts: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createFA5iconSet")(glyphMap.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any], fonts.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def createFA5iconSet(glyphMap: Any, metadata: Unit, fonts: Any, pro: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createFA5iconSet")(glyphMap.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any], fonts.asInstanceOf[js.Any], pro.asInstanceOf[js.Any])).asInstanceOf[Any]
 }

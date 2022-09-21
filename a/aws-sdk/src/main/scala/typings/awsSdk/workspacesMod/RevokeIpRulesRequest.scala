@@ -29,6 +29,6 @@ object RevokeIpRulesRequest {
     
     inline def setUserRules(value: IpRevokedRuleList): Self = StObject.set(x, "UserRules", value.asInstanceOf[js.Any])
     
-    inline def setUserRulesVarargs(value: IpRule*): Self = StObject.set(x, "UserRules", js.Array(value :_*))
+    inline def setUserRulesVarargs(value: IpRule*): Self = StObject.set(x, "UserRules", js.Array(value*))
   }
 }

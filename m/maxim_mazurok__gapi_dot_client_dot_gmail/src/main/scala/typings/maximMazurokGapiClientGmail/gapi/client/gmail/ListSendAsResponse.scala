@@ -22,6 +22,6 @@ object ListSendAsResponse {
     
     inline def setSendAsUndefined: Self = StObject.set(x, "sendAs", js.undefined)
     
-    inline def setSendAsVarargs(value: SendAs*): Self = StObject.set(x, "sendAs", js.Array(value :_*))
+    inline def setSendAsVarargs(value: SendAs*): Self = StObject.set(x, "sendAs", js.Array(value*))
   }
 }

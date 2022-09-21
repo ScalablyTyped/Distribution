@@ -9,11 +9,11 @@ trait XDomainRequest extends StObject {
   /* private */ @JSName("MSHTML.XDomainRequest_typekey")
   var MSHTMLDotXDomainRequest_typekey: XDomainRequest
   
-  val constructor: js.Any
+  val constructor: Any
 }
 object XDomainRequest {
   
-  inline def apply(MSHTMLDotXDomainRequest_typekey: XDomainRequest, constructor: js.Any): XDomainRequest = {
+  inline def apply(MSHTMLDotXDomainRequest_typekey: XDomainRequest, constructor: Any): XDomainRequest = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any])
     __obj.updateDynamic("MSHTML.XDomainRequest_typekey")(MSHTMLDotXDomainRequest_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[XDomainRequest]
@@ -21,7 +21,7 @@ object XDomainRequest {
   
   extension [Self <: XDomainRequest](x: Self) {
     
-    inline def setConstructor(value: js.Any): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
+    inline def setConstructor(value: Any): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
     
     inline def setMSHTMLDotXDomainRequest_typekey(value: XDomainRequest): Self = StObject.set(x, "MSHTML.XDomainRequest_typekey", value.asInstanceOf[js.Any])
   }

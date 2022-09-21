@@ -3,7 +3,6 @@ package typings.filterCss
 import typings.css.mod.AtRule
 import typings.css.mod.Comment
 import typings.css.mod.Rule
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -103,7 +102,7 @@ object mod {
     }
   }
   
-  type Pattern = String | RegExp | PatternFunction
+  type Pattern = String | js.RegExp | PatternFunction
   
   /**
     * @param context The current matching context.

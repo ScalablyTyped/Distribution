@@ -9,5 +9,5 @@ object postValueApplicatorMod {
   
   @JSImport("lodash-decorators/applicators/PostValueApplicator", "PostValueApplicator")
   @js.native
-  class PostValueApplicator () extends Applicator
+  open class PostValueApplicator () extends Applicator
 }

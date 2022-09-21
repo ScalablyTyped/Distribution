@@ -10,12 +10,10 @@ object mod {
   object promisify {
     
     inline def apply(original: CallbackFunction): PromiseFunction = ^.asInstanceOf[js.Dynamic].apply(original.asInstanceOf[js.Any]).asInstanceOf[PromiseFunction]
-    inline def apply[T](original: js.Function1[/* cb */ Callback[T], js.Any]): js.Function0[js.Promise[T]] = ^.asInstanceOf[js.Dynamic].apply(original.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Promise[T]]]
-    inline def apply[T, U](original: js.Function2[/* param1 */ U, /* cb */ Callback[T], js.Any]): js.Function1[/* param1 */ U, js.Promise[T]] = ^.asInstanceOf[js.Dynamic].apply(original.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* param1 */ U, js.Promise[T]]]
-    inline def apply[T, U, V](original: js.Function3[/* param1 */ U, /* param2 */ V, /* cb */ Callback[T], js.Any]): js.Function2[/* param1 */ U, /* param2 */ V, js.Promise[T]] = ^.asInstanceOf[js.Dynamic].apply(original.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* param1 */ U, /* param2 */ V, js.Promise[T]]]
-    inline def apply[T, U, V, W](
-      original: js.Function4[/* param1 */ U, /* param2 */ V, /* param3 */ W, /* cb */ Callback[T], js.Any]
-    ): js.Function3[/* param1 */ U, /* param2 */ V, /* param3 */ W, js.Promise[T]] = ^.asInstanceOf[js.Dynamic].apply(original.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* param1 */ U, /* param2 */ V, /* param3 */ W, js.Promise[T]]]
+    inline def apply[T](original: js.Function1[/* cb */ Callback[T], Any]): js.Function0[js.Promise[T]] = ^.asInstanceOf[js.Dynamic].apply(original.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Promise[T]]]
+    inline def apply[T, U](original: js.Function2[/* param1 */ U, /* cb */ Callback[T], Any]): js.Function1[/* param1 */ U, js.Promise[T]] = ^.asInstanceOf[js.Dynamic].apply(original.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* param1 */ U, js.Promise[T]]]
+    inline def apply[T, U, V](original: js.Function3[/* param1 */ U, /* param2 */ V, /* cb */ Callback[T], Any]): js.Function2[/* param1 */ U, /* param2 */ V, js.Promise[T]] = ^.asInstanceOf[js.Dynamic].apply(original.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* param1 */ U, /* param2 */ V, js.Promise[T]]]
+    inline def apply[T, U, V, W](original: js.Function4[/* param1 */ U, /* param2 */ V, /* param3 */ W, /* cb */ Callback[T], Any]): js.Function3[/* param1 */ U, /* param2 */ V, /* param3 */ W, js.Promise[T]] = ^.asInstanceOf[js.Dynamic].apply(original.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* param1 */ U, /* param2 */ V, /* param3 */ W, js.Promise[T]]]
     
     @JSImport("es6-promisify", "promisify")
     @js.native
@@ -24,7 +22,7 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("es6-promisify", "promisify.Promise")
     @js.native
-    class Promise[T] protected ()
+    open class Promise[T] protected ()
       extends StObject
          with typings.std.Promise[T] {
       /**
@@ -33,9 +31,10 @@ object mod {
         * a resolve callback used to resolve the promise with a value or the result of another promise,
         * and a reject callback used to reject the promise with a provided reason or error.
         */
+      /* standard es2015.promise */
       def this(executor: js.Function2[
                 /* resolve */ js.Function1[/* value */ T | js.Thenable[T], Unit], 
-                /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 
+                /* reject */ js.Function1[/* reason */ js.UndefOr[Any], Unit], 
                 Unit
               ]) = this()
     }
@@ -58,17 +57,17 @@ object mod {
     val argumentNames: js.Symbol = js.native
   }
   
-  type Callback[T] = js.Function2[/* err */ js.Any, /* arg */ js.UndefOr[T], js.Any]
+  type Callback[T] = js.Function2[/* err */ Any, /* arg */ js.UndefOr[T], Any]
   
   @js.native
   trait CallbackFunction extends StObject {
     
-    def apply(args: js.Any*): js.Any = js.native
+    def apply(args: Any*): Any = js.native
   }
   
   @js.native
   trait PromiseFunction extends StObject {
     
-    def apply(args: js.Any*): js.Promise[js.Any] = js.native
+    def apply(args: Any*): js.Promise[Any] = js.native
   }
 }

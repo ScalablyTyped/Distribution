@@ -1,6 +1,5 @@
 package typings.stompit
 
-import typings.std.Error
 import typings.stompit.channelMod.ChannelOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,14 +9,16 @@ object channelPoolMod {
   
   @JSImport("stompit/lib/ChannelPool", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with ChannelPool {
     def this(connectFailover: typings.stompit.connectFailoverMod.^) = this()
     def this(connectFailover: typings.stompit.connectFailoverMod.^, options: ChannelPoolOptions) = this()
     
     /* CompleteClass */
-    override def channel(callback: js.Function2[/* err */ Error | Null, /* channel */ typings.stompit.channelMod.^, Unit]): Unit = js.native
+    override def channel(
+      callback: js.Function2[/* err */ js.Error | Null, /* channel */ typings.stompit.channelMod.^, Unit]
+    ): Unit = js.native
     
     /* CompleteClass */
     override def close(): Unit = js.native
@@ -25,14 +26,16 @@ object channelPoolMod {
   
   trait ChannelPool extends StObject {
     
-    def channel(callback: js.Function2[/* err */ Error | Null, /* channel */ typings.stompit.channelMod.^, Unit]): Unit
+    def channel(
+      callback: js.Function2[/* err */ js.Error | Null, /* channel */ typings.stompit.channelMod.^, Unit]
+    ): Unit
     
     def close(): Unit
   }
   object ChannelPool {
     
     inline def apply(
-      channel: js.Function2[/* err */ Error | Null, /* channel */ typings.stompit.channelMod.^, Unit] => Unit,
+      channel: js.Function2[/* err */ js.Error | Null, /* channel */ typings.stompit.channelMod.^, Unit] => Unit,
       close: () => Unit
     ): ChannelPool = {
       val __obj = js.Dynamic.literal(channel = js.Any.fromFunction1(channel), close = js.Any.fromFunction0(close))
@@ -42,7 +45,7 @@ object channelPoolMod {
     extension [Self <: ChannelPool](x: Self) {
       
       inline def setChannel(
-        value: js.Function2[/* err */ Error | Null, /* channel */ typings.stompit.channelMod.^, Unit] => Unit
+        value: js.Function2[/* err */ js.Error | Null, /* channel */ typings.stompit.channelMod.^, Unit] => Unit
       ): Self = StObject.set(x, "channel", js.Any.fromFunction1(value))
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))

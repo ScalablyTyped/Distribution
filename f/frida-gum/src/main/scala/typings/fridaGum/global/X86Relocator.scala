@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("X86Relocator")
 @js.native
-class X86Relocator protected ()
+open class X86Relocator protected ()
   extends StObject
      with typings.fridaGum.X86Relocator {
   /**

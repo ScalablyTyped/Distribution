@@ -6,11 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FileDecorator extends StObject {
   
+  var dragAreaPlaceholder: String
+  
   var fileDecorator: String
   
   var fileInput: String
   
-  var fileSignBottom: String
+  var fileList: String
+  
+  var fileSign: String
   
   var placeholderInput: String
   
@@ -22,35 +26,38 @@ trait FileDecorator extends StObject {
   
   var removeFile: String
   
-  var removeFileSvg: String
-  
   var root: String
 }
 object FileDecorator {
   
   inline def apply(
+    dragAreaPlaceholder: String,
     fileDecorator: String,
     fileInput: String,
-    fileSignBottom: String,
+    fileList: String,
+    fileSign: String,
     placeholderInput: String,
     preview: String,
     removeButton: String,
     removeButtonBottom: String,
     removeFile: String,
-    removeFileSvg: String,
     root: String
   ): FileDecorator = {
-    val __obj = js.Dynamic.literal(fileDecorator = fileDecorator.asInstanceOf[js.Any], fileInput = fileInput.asInstanceOf[js.Any], fileSignBottom = fileSignBottom.asInstanceOf[js.Any], placeholderInput = placeholderInput.asInstanceOf[js.Any], preview = preview.asInstanceOf[js.Any], removeButton = removeButton.asInstanceOf[js.Any], removeButtonBottom = removeButtonBottom.asInstanceOf[js.Any], removeFile = removeFile.asInstanceOf[js.Any], removeFileSvg = removeFileSvg.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dragAreaPlaceholder = dragAreaPlaceholder.asInstanceOf[js.Any], fileDecorator = fileDecorator.asInstanceOf[js.Any], fileInput = fileInput.asInstanceOf[js.Any], fileList = fileList.asInstanceOf[js.Any], fileSign = fileSign.asInstanceOf[js.Any], placeholderInput = placeholderInput.asInstanceOf[js.Any], preview = preview.asInstanceOf[js.Any], removeButton = removeButton.asInstanceOf[js.Any], removeButtonBottom = removeButtonBottom.asInstanceOf[js.Any], removeFile = removeFile.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileDecorator]
   }
   
   extension [Self <: FileDecorator](x: Self) {
     
+    inline def setDragAreaPlaceholder(value: String): Self = StObject.set(x, "dragAreaPlaceholder", value.asInstanceOf[js.Any])
+    
     inline def setFileDecorator(value: String): Self = StObject.set(x, "fileDecorator", value.asInstanceOf[js.Any])
     
     inline def setFileInput(value: String): Self = StObject.set(x, "fileInput", value.asInstanceOf[js.Any])
     
-    inline def setFileSignBottom(value: String): Self = StObject.set(x, "fileSignBottom", value.asInstanceOf[js.Any])
+    inline def setFileList(value: String): Self = StObject.set(x, "fileList", value.asInstanceOf[js.Any])
+    
+    inline def setFileSign(value: String): Self = StObject.set(x, "fileSign", value.asInstanceOf[js.Any])
     
     inline def setPlaceholderInput(value: String): Self = StObject.set(x, "placeholderInput", value.asInstanceOf[js.Any])
     
@@ -61,8 +68,6 @@ object FileDecorator {
     inline def setRemoveButtonBottom(value: String): Self = StObject.set(x, "removeButtonBottom", value.asInstanceOf[js.Any])
     
     inline def setRemoveFile(value: String): Self = StObject.set(x, "removeFile", value.asInstanceOf[js.Any])
-    
-    inline def setRemoveFileSvg(value: String): Self = StObject.set(x, "removeFileSvg", value.asInstanceOf[js.Any])
     
     inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
   }

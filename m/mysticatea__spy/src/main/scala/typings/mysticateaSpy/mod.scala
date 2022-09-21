@@ -16,7 +16,7 @@ object mod {
   val ^ : js.Any = js.native
   
   inline def spy(): Spy_[js.Function0[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("spy")().asInstanceOf[Spy_[js.Function0[Unit]]]
-  inline def spy[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](f: T): Spy_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("spy")(f.asInstanceOf[js.Any]).asInstanceOf[Spy_[T]]
+  inline def spy[T /* <: js.Function1[/* repeated */ Any, Any] */](f: T): Spy_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("spy")(f.asInstanceOf[js.Any]).asInstanceOf[Spy_[T]]
   
   object Spy_ {
     
@@ -25,10 +25,10 @@ object mod {
       - typings.mysticateaSpy.mod.Spy_.ReturnedCall[T]
       - typings.mysticateaSpy.mod.Spy_.ThrownCall[T]
     */
-    trait Call[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */] extends StObject
+    trait Call[T /* <: js.Function1[/* repeated */ Any, Any] */] extends StObject
     object Call {
       
-      inline def ReturnedCall[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](arguments: Parameters[T], `return`: ReturnType[T], `this`: This[T]): typings.mysticateaSpy.mod.Spy_.ReturnedCall[T] = {
+      inline def ReturnedCall[T /* <: js.Function1[/* repeated */ Any, Any] */](arguments: Parameters[T], `return`: ReturnType[T], `this`: This[T]): typings.mysticateaSpy.mod.Spy_.ReturnedCall[T] = {
         val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any])
         __obj.updateDynamic("return")(`return`.asInstanceOf[js.Any])
         __obj.updateDynamic("this")(`this`.asInstanceOf[js.Any])
@@ -36,7 +36,7 @@ object mod {
         __obj.asInstanceOf[typings.mysticateaSpy.mod.Spy_.ReturnedCall[T]]
       }
       
-      inline def ThrownCall[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](arguments: Parameters[T], `this`: This[T], `throw`: js.Any): typings.mysticateaSpy.mod.Spy_.ThrownCall[T] = {
+      inline def ThrownCall[T /* <: js.Function1[/* repeated */ Any, Any] */](arguments: Parameters[T], `this`: This[T], `throw`: Any): typings.mysticateaSpy.mod.Spy_.ThrownCall[T] = {
         val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any])
         __obj.updateDynamic("this")(`this`.asInstanceOf[js.Any])
         __obj.updateDynamic("throw")(`throw`.asInstanceOf[js.Any])
@@ -46,7 +46,7 @@ object mod {
     }
     
     /** Information for calls on a spy. */
-    trait CallInformation[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */] extends StObject {
+    trait CallInformation[T /* <: js.Function1[/* repeated */ Any, Any] */] extends StObject {
       
       /** Information for each call. */
       val calls: js.Array[Call[T]]
@@ -80,7 +80,7 @@ object mod {
     }
     object CallInformation {
       
-      inline def apply[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
+      inline def apply[T /* <: js.Function1[/* repeated */ Any, Any] */](
         calls: js.Array[Call[T]],
         reset: () => Unit,
         returnedCalls: js.Array[ReturnedCall[T]],
@@ -90,11 +90,11 @@ object mod {
         __obj.asInstanceOf[CallInformation[T]]
       }
       
-      extension [Self <: CallInformation[?], T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](x: Self & CallInformation[T]) {
+      extension [Self <: CallInformation[?], T /* <: js.Function1[/* repeated */ Any, Any] */](x: Self & CallInformation[T]) {
         
         inline def setCalls(value: js.Array[Call[T]]): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
         
-        inline def setCallsVarargs(value: Call[T]*): Self = StObject.set(x, "calls", js.Array(value :_*))
+        inline def setCallsVarargs(value: Call[T]*): Self = StObject.set(x, "calls", js.Array(value*))
         
         inline def setFirstCall(value: Call[T]): Self = StObject.set(x, "firstCall", value.asInstanceOf[js.Any])
         
@@ -124,16 +124,16 @@ object mod {
         
         inline def setReturnedCalls(value: js.Array[ReturnedCall[T]]): Self = StObject.set(x, "returnedCalls", value.asInstanceOf[js.Any])
         
-        inline def setReturnedCallsVarargs(value: ReturnedCall[T]*): Self = StObject.set(x, "returnedCalls", js.Array(value :_*))
+        inline def setReturnedCallsVarargs(value: ReturnedCall[T]*): Self = StObject.set(x, "returnedCalls", js.Array(value*))
         
         inline def setThrownCalls(value: js.Array[ThrownCall[T]]): Self = StObject.set(x, "thrownCalls", value.asInstanceOf[js.Any])
         
-        inline def setThrownCallsVarargs(value: ThrownCall[T]*): Self = StObject.set(x, "thrownCalls", js.Array(value :_*))
+        inline def setThrownCallsVarargs(value: ThrownCall[T]*): Self = StObject.set(x, "thrownCalls", js.Array(value*))
       }
     }
     
     /** Information for each returned call. */
-    trait ReturnedCall[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */]
+    trait ReturnedCall[T /* <: js.Function1[/* repeated */ Any, Any] */]
       extends StObject
          with Call[T] {
       
@@ -147,7 +147,7 @@ object mod {
     }
     object ReturnedCall {
       
-      inline def apply[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](arguments: Parameters[T], `return`: ReturnType[T], `this`: This[T]): ReturnedCall[T] = {
+      inline def apply[T /* <: js.Function1[/* repeated */ Any, Any] */](arguments: Parameters[T], `return`: ReturnType[T], `this`: This[T]): ReturnedCall[T] = {
         val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any])
         __obj.updateDynamic("return")(`return`.asInstanceOf[js.Any])
         __obj.updateDynamic("this")(`this`.asInstanceOf[js.Any])
@@ -155,7 +155,7 @@ object mod {
         __obj.asInstanceOf[ReturnedCall[T]]
       }
       
-      extension [Self <: ReturnedCall[?], T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](x: Self & ReturnedCall[T]) {
+      extension [Self <: ReturnedCall[?], T /* <: js.Function1[/* repeated */ Any, Any] */](x: Self & ReturnedCall[T]) {
         
         inline def setArguments(value: Parameters[T]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
         
@@ -168,7 +168,7 @@ object mod {
     }
     
     /** Information for each thrown call. */
-    trait ThrownCall[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */]
+    trait ThrownCall[T /* <: js.Function1[/* repeated */ Any, Any] */]
       extends StObject
          with Call[T] {
       
@@ -176,13 +176,13 @@ object mod {
       
       var `this`: This[T]
       
-      var `throw`: js.Any
+      var `throw`: Any
       
       var `type`: `throw`
     }
     object ThrownCall {
       
-      inline def apply[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](arguments: Parameters[T], `this`: This[T], `throw`: js.Any): ThrownCall[T] = {
+      inline def apply[T /* <: js.Function1[/* repeated */ Any, Any] */](arguments: Parameters[T], `this`: This[T], `throw`: Any): ThrownCall[T] = {
         val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any])
         __obj.updateDynamic("this")(`this`.asInstanceOf[js.Any])
         __obj.updateDynamic("throw")(`throw`.asInstanceOf[js.Any])
@@ -190,19 +190,19 @@ object mod {
         __obj.asInstanceOf[ThrownCall[T]]
       }
       
-      extension [Self <: ThrownCall[?], T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](x: Self & ThrownCall[T]) {
+      extension [Self <: ThrownCall[?], T /* <: js.Function1[/* repeated */ Any, Any] */](x: Self & ThrownCall[T]) {
         
         inline def setArguments(value: Parameters[T]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
         
         inline def setThis(value: This[T]): Self = StObject.set(x, "this", value.asInstanceOf[js.Any])
         
-        inline def setThrow(value: js.Any): Self = StObject.set(x, "throw", value.asInstanceOf[js.Any])
+        inline def setThrow(value: Any): Self = StObject.set(x, "throw", value.asInstanceOf[js.Any])
         
         inline def setType(value: `throw`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
   }
-  type Spy_[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */] = T & CallInformation[T]
+  type Spy_[T /* <: js.Function1[/* repeated */ Any, Any] */] = T & CallInformation[T]
   
   type This[T] = Unit
 }

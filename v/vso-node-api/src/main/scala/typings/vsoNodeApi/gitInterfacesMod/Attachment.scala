@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +10,7 @@ trait Attachment extends StObject {
   /**
     * Links to other related objects.
     */
-  var _links: js.Any
+  var _links: Any
   
   /**
     * The person that uploaded this attachment.
@@ -26,7 +25,7 @@ trait Attachment extends StObject {
   /**
     * The time the attachment was uploaded.
     */
-  var createdDate: Date
+  var createdDate: js.Date
   
   /**
     * The description of the attachment.
@@ -46,7 +45,7 @@ trait Attachment extends StObject {
   /**
     * Extended properties.
     */
-  var properties: js.Any
+  var properties: Any
   
   /**
     * The url to download the content of the attachment.
@@ -56,14 +55,14 @@ trait Attachment extends StObject {
 object Attachment {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     author: IdentityRef,
     contentHash: String,
-    createdDate: Date,
+    createdDate: js.Date,
     description: String,
     displayName: String,
     id: Double,
-    properties: js.Any,
+    properties: Any,
     url: String
   ): Attachment = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], author = author.asInstanceOf[js.Any], contentHash = contentHash.asInstanceOf[js.Any], createdDate = createdDate.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
@@ -76,7 +75,7 @@ object Attachment {
     
     inline def setContentHash(value: String): Self = StObject.set(x, "contentHash", value.asInstanceOf[js.Any])
     
-    inline def setCreatedDate(value: Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -84,10 +83,10 @@ object Attachment {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

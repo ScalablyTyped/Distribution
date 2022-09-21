@@ -1,7 +1,7 @@
 
 # Scala.js typings for twilio-video
 
-Typings are for version 2.7
+Typings are for version 2.24.1
 
 ## Library description:
 Twilio Video JavaScript Library
@@ -10,10 +10,10 @@ Twilio Video JavaScript Library
 | ------------------ | :-------------: |
 | Full name          | twilio-video |
 | Keywords           | twilio, webrtc, library, javascript, video, rooms |
-| # releases         | 41 |
-| # dependents       | 15 |
-| # downloads        | 2540771 |
-| # stars            | 0 |
+| # releases         | 39 |
+| # dependents       | 0.0 |
+| # downloads        | 538490.3333333334 |
+| # stars            | 509.0 |
 
 ## Links
 - [Homepage](https://twilio.com)
@@ -24,7 +24,7 @@ Twilio Video JavaScript Library
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

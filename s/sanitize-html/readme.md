@@ -1,19 +1,19 @@
 
 # Scala.js typings for sanitize-html
 
-Typings are for version 1.27
+Typings are for version 2.6
 
 ## Library description:
-Clean up user-submitted HTML, preserving whitelisted elements and whitelisted attributes on a per-element basis
+Clean up user-submitted HTML, preserving allowlisted elements and allowlisted attributes on a per-element basis
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | sanitize-html |
 | Keywords           | html, parser, sanitizer, sanitize |
-| # releases         | 27 |
-| # dependents       | 563 |
-| # downloads        | 45488829 |
-| # stars            | 72 |
+| # releases         | 21 |
+| # dependents       | 0.0 |
+| # downloads        | 5830084.333333333 |
+| # stars            | 3076.0 |
 
 ## Links
 - [Homepage](https://github.com/apostrophecms/sanitize-html#readme)

@@ -8,5 +8,5 @@ object endEventMod {
   
   @JSImport("@aws-sdk/client-s3-browser/model/_EndEvent", "_EndEvent")
   @js.native
-  val EndEvent: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val EndEvent: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

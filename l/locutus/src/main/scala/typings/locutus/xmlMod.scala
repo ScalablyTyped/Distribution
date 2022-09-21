@@ -10,9 +10,9 @@ object xmlMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def utf8Decode(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("utf8_decode")().asInstanceOf[js.Any]
-  inline def utf8Decode(strData: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("utf8_decode")(strData.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def utf8Decode(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("utf8_decode")().asInstanceOf[Any]
+  inline def utf8Decode(strData: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("utf8_decode")(strData.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def utf8Encode(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("utf8_encode")().asInstanceOf[js.Any]
-  inline def utf8Encode(argString: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("utf8_encode")(argString.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def utf8Encode(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("utf8_encode")().asInstanceOf[Any]
+  inline def utf8Encode(argString: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("utf8_encode")(argString.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

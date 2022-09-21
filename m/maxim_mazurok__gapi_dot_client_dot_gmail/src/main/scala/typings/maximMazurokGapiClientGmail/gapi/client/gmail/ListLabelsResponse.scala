@@ -25,6 +25,6 @@ object ListLabelsResponse {
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    inline def setLabelsVarargs(value: Label*): Self = StObject.set(x, "labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: Label*): Self = StObject.set(x, "labels", js.Array(value*))
   }
 }

@@ -10,7 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def internals(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("internals")().asInstanceOf[js.Any]
+  inline def internals(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("internals")().asInstanceOf[Any]
   
   inline def prng(n: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("prng")(n.asInstanceOf[js.Any]).asInstanceOf[Unit]
   

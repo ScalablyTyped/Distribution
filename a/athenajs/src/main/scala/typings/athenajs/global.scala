@@ -39,7 +39,7 @@ object global {
     
     @JSGlobal("AthenaJS.Behavior")
     @js.native
-    class Behavior protected ()
+    open class Behavior protected ()
       extends typings.athenajs.mod.Behavior {
       def this(sprite: typings.athenajs.mod.Drawable) = this()
       def this(sprite: typings.athenajs.mod.Drawable, options: JSObject) = this()
@@ -47,14 +47,14 @@ object global {
     
     @JSGlobal("AthenaJS.BitmapText")
     @js.native
-    class BitmapText protected ()
+    open class BitmapText protected ()
       extends typings.athenajs.mod.BitmapText {
       def this(`type`: String, textOptions: BitmapTextOptions) = this()
     }
     
     @JSGlobal("AthenaJS.Deferred")
     @js.native
-    class Deferred ()
+    open class Deferred ()
       extends typings.athenajs.mod.Deferred
     /* static members */
     object Deferred {
@@ -68,12 +68,12 @@ object global {
         *
         */
       inline def resolve(): Promise = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")().asInstanceOf[Promise]
-      inline def resolve(`val`: js.Any): Promise = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(`val`.asInstanceOf[js.Any]).asInstanceOf[Promise]
+      inline def resolve(`val`: Any): Promise = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(`val`.asInstanceOf[js.Any]).asInstanceOf[Promise]
     }
     
     @JSGlobal("AthenaJS.Display")
     @js.native
-    class Display protected ()
+    open class Display protected ()
       extends typings.athenajs.mod.Display {
       /**
         * Creates a new Display instance
@@ -89,14 +89,14 @@ object global {
     
     @JSGlobal("AthenaJS.Drawable")
     @js.native
-    class Drawable protected ()
+    open class Drawable protected ()
       extends typings.athenajs.mod.Drawable {
       def this(`type`: String, options: DrawableOptions) = this()
     }
     
     @JSGlobal("AthenaJS.Effect")
     @js.native
-    class Effect protected ()
+    open class Effect protected ()
       extends typings.athenajs.mod.Effect {
       /**
         * This the class constructor. Default options are:
@@ -111,7 +111,7 @@ object global {
     
     @JSGlobal("AthenaJS.Game")
     @js.native
-    class Game protected ()
+    open class Game protected ()
       extends typings.athenajs.mod.Game {
       def this(options: GameOptions) = this()
     }
@@ -122,14 +122,14 @@ object global {
     
     @JSGlobal("AthenaJS.Map")
     @js.native
-    class Map protected ()
+    open class Map protected ()
       extends typings.athenajs.mod.Map {
       def this(options: MapOptions) = this()
     }
     
     @JSGlobal("AthenaJS.MapEvent")
     @js.native
-    class MapEvent protected ()
+    open class MapEvent protected ()
       extends typings.athenajs.mod.MapEvent {
       /**
         * Creates a new MapEvent
@@ -140,7 +140,7 @@ object global {
     
     @JSGlobal("AthenaJS.Menu")
     @js.native
-    class Menu protected ()
+    open class Menu protected ()
       extends typings.athenajs.mod.Menu {
       def this(id: String, options: MenuOptions) = this()
     }
@@ -151,7 +151,7 @@ object global {
     
     @JSGlobal("AthenaJS.Paint")
     @js.native
-    class Paint protected ()
+    open class Paint protected ()
       extends typings.athenajs.mod.Paint {
       def this(`type`: String, paintOptions: PaintOptions) = this()
     }
@@ -162,28 +162,28 @@ object global {
     
     @JSGlobal("AthenaJS.Scene")
     @js.native
-    class Scene ()
+    open class Scene ()
       extends typings.athenajs.mod.Scene {
       def this(options: SceneOptions) = this()
     }
     
     @JSGlobal("AthenaJS.SimpleText")
     @js.native
-    class SimpleText protected ()
+    open class SimpleText protected ()
       extends typings.athenajs.mod.SimpleText {
       def this(`type`: String, simpleTextOptions: SimpleTextOptions) = this()
     }
     
     @JSGlobal("AthenaJS.Sprite")
     @js.native
-    class Sprite protected ()
+    open class Sprite protected ()
       extends typings.athenajs.mod.Sprite {
       def this(`type`: String, spriteOptions: SpriteOptions) = this()
     }
     
     @JSGlobal("AthenaJS.Tile")
     @js.native
-    class Tile protected ()
+    open class Tile protected ()
       extends typings.athenajs.mod.Tile {
       def this(options: JSObject) = this()
     }
@@ -205,7 +205,7 @@ object global {
     /**
       * Creates the FX class, adding the linear easing
       */
-    class _FX ()
+    open class _FX ()
       extends typings.athenajs.mod._FX
   }
 }

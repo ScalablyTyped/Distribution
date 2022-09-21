@@ -10,5 +10,5 @@ trait NavigationViewFactory
   extends Factory[
       NavigationViewConstructor, 
       InstanceType[NavigationViewConstructor], 
-      js.Function1[/* repeated */ js.Any, InstanceType[NavigationViewConstructor]]
+      js.Function1[/* repeated */ Any, Widget[Any]]
     ]

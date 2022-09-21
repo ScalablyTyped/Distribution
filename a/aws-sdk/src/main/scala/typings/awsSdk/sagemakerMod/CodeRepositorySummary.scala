@@ -19,25 +19,25 @@ trait CodeRepositorySummary extends StObject {
   /**
     * The date and time that the Git repository was created.
     */
-  var CreationTime: typings.awsSdk.sagemakerMod.CreationTime
+  var CreationTime: js.Date
   
   /**
-    * Configuration details for the Git repository, including the URL where it is located and the ARN of the AWS Secrets Manager secret that contains the credentials used to access the repository.
+    * Configuration details for the Git repository, including the URL where it is located and the ARN of the Amazon Web Services Secrets Manager secret that contains the credentials used to access the repository.
     */
   var GitConfig: js.UndefOr[typings.awsSdk.sagemakerMod.GitConfig] = js.undefined
   
   /**
     * The date and time that the Git repository was last modified.
     */
-  var LastModifiedTime: typings.awsSdk.sagemakerMod.LastModifiedTime
+  var LastModifiedTime: js.Date
 }
 object CodeRepositorySummary {
   
   inline def apply(
     CodeRepositoryArn: CodeRepositoryArn,
     CodeRepositoryName: EntityName,
-    CreationTime: CreationTime,
-    LastModifiedTime: LastModifiedTime
+    CreationTime: js.Date,
+    LastModifiedTime: js.Date
   ): CodeRepositorySummary = {
     val __obj = js.Dynamic.literal(CodeRepositoryArn = CodeRepositoryArn.asInstanceOf[js.Any], CodeRepositoryName = CodeRepositoryName.asInstanceOf[js.Any], CreationTime = CreationTime.asInstanceOf[js.Any], LastModifiedTime = LastModifiedTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeRepositorySummary]
@@ -49,12 +49,12 @@ object CodeRepositorySummary {
     
     inline def setCodeRepositoryName(value: EntityName): Self = StObject.set(x, "CodeRepositoryName", value.asInstanceOf[js.Any])
     
-    inline def setCreationTime(value: CreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setGitConfig(value: GitConfig): Self = StObject.set(x, "GitConfig", value.asInstanceOf[js.Any])
     
     inline def setGitConfigUndefined: Self = StObject.set(x, "GitConfig", js.undefined)
     
-    inline def setLastModifiedTime(value: LastModifiedTime): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
   }
 }

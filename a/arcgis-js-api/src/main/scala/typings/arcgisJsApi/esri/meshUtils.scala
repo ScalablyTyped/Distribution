@@ -4,6 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * Various utilities and convenience functions for working with [Mesh](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html) objects.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-meshUtils.html)
+  */
 @js.native
 trait meshUtils extends StObject {
   

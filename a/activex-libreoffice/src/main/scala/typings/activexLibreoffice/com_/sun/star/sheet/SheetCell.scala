@@ -693,7 +693,7 @@ object SheetCell {
     getError: () => Double,
     getFormula: () => String,
     getPropertySetInfo: () => XPropertySetInfo,
-    getPropertyValue: String => js.Any,
+    getPropertyValue: String => Any,
     getRows: () => XTableRows,
     getStart: () => XTextRange,
     getString: () => String,
@@ -710,7 +710,7 @@ object SheetCell {
     queryDependents: Boolean => XSheetCellRanges,
     queryEmptyCells: () => XSheetCellRanges,
     queryFormulaCells: Double => XSheetCellRanges,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     queryIntersection: CellRangeAddress => XSheetCellRanges,
     queryPrecedents: Boolean => XSheetCellRanges,
     queryRowDifferences: CellAddress => XSheetCellRanges,
@@ -724,7 +724,7 @@ object SheetCell {
     resetActionLocks: () => Double,
     setActionLocks: Double => Unit,
     setFormula: String => Unit,
-    setPropertyValue: (String, js.Any) => Unit,
+    setPropertyValue: (String, Any) => Unit,
     setString: String => Unit,
     setValue: Double => Unit
   ): SheetCell = {
@@ -761,7 +761,7 @@ object SheetCell {
     
     inline def setEndRedline(value: PropertyValues): Self = StObject.set(x, "EndRedline", value.asInstanceOf[js.Any])
     
-    inline def setEndRedlineVarargs(value: PropertyValue*): Self = StObject.set(x, "EndRedline", js.Array(value :_*))
+    inline def setEndRedlineVarargs(value: PropertyValue*): Self = StObject.set(x, "EndRedline", js.Array(value*))
     
     inline def setFormulaLocal(value: String): Self = StObject.set(x, "FormulaLocal", value.asInstanceOf[js.Any])
     
@@ -867,7 +867,7 @@ object SheetCell {
     
     inline def setStartRedline(value: PropertyValues): Self = StObject.set(x, "StartRedline", value.asInstanceOf[js.Any])
     
-    inline def setStartRedlineVarargs(value: PropertyValue*): Self = StObject.set(x, "StartRedline", js.Array(value :_*))
+    inline def setStartRedlineVarargs(value: PropertyValue*): Self = StObject.set(x, "StartRedline", js.Array(value*))
     
     inline def setTopBorderDistance(value: Double): Self = StObject.set(x, "TopBorderDistance", value.asInstanceOf[js.Any])
     

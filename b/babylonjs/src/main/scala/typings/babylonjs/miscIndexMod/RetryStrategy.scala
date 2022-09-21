@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Misc/index", "RetryStrategy")
 @js.native
-class RetryStrategy ()
+open class RetryStrategy ()
   extends typings.babylonjs.retryStrategyMod.RetryStrategy
 /* static members */
 object RetryStrategy {

@@ -9,7 +9,7 @@ trait AltDatasetId extends StObject {
   /** Data format for the response. */
   var alt: js.UndefOr[String] = js.undefined
   
-  /** Dataset ID of the table to update */
+  /** Dataset ID of the table to delete */
   var datasetId: String
   
   /** Selector specifying which fields to include in a partial response. */
@@ -24,13 +24,13 @@ trait AltDatasetId extends StObject {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
-  /** Project ID of the table to update */
+  /** Project ID of the table to delete */
   var projectId: String
   
   /** An opaque string that represents a user for quota purposes. Must not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** Table ID of the table to update */
+  /** Table ID of the table to delete */
   var tableId: String
   
   /** Deprecated. Please use quotaUser instead. */

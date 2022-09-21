@@ -9,12 +9,11 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a named sheet view of a worksheet. A sheet view stores the sort and filter rules for a particular worksheet.
   Every sheet view (even a temporary sheet view) has a unique, worksheet-scoped name that is used to access the view.
   *
-  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-  * @beta
+  * @remarks
+  * [Api set: ExcelApiOnline 1.1]
   */
 @js.native
 trait NamedSheetView
@@ -24,8 +23,8 @@ trait NamedSheetView
   /**
     * Activates this sheet view. This is equivalent to using "Switch To" in the Excel UI.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * @remarks
+    * [Api set: ExcelApiOnline 1.1]
     */
   def activate(): Unit = js.native
   
@@ -36,16 +35,16 @@ trait NamedSheetView
   /**
     * Removes the sheet view from the worksheet.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * @remarks
+    * [Api set: ExcelApiOnline 1.1]
     */
   def delete(): Unit = js.native
   
   /**
     * Creates a copy of this sheet view.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * @remarks
+    * [Api set: ExcelApiOnline 1.1]
     *
     * @param name The name of the duplicated sheet view. If no name is provided, one will be generated.
     * @returns The new, duplicated sheet view.
@@ -65,12 +64,11 @@ trait NamedSheetView
   def load(propertyNames: js.Array[String]): NamedSheetView = js.native
   
   /**
-    *
     * Gets or sets the name of the sheet view.
     The temporary sheet view name is the empty string ("").  Naming the view by using the name property causes the sheet view to be saved.
     *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * @remarks
+    * [Api set: ExcelApiOnline 1.1]
     */
   var name: String = js.native
   

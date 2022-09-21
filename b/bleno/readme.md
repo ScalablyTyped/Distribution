@@ -10,10 +10,10 @@ A Node.js module for implementing BLE (Bluetooth Low Energy) peripherals
 | ------------------ | :-------------: |
 | Full name          | bleno |
 | Keywords           | BLE, Bluetooth, Bluetooth Low Energy, Bluetooth Smart, peripheral |
-| # releases         | 0 |
-| # dependents       | 40 |
-| # downloads        | 32556 |
-| # stars            | 8 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1725.0 |
+| # stars            | 2007.0 |
 
 ## Links
 - [Homepage](https://github.com/sandeepmistry/bleno#readme)

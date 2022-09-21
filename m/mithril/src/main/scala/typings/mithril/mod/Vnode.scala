@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Virtual DOM nodes, or vnodes, are Javascript objects that represent an element (or parts of the DOM). */
-trait Vnode[Attrs, State /* <: Lifecycle[Attrs, State] */] extends StObject {
+trait Vnode[Attrs, State] extends StObject {
   
   /** A hashmap of DOM attributes, events, properties and lifecycle methods. */
   var attrs: Attrs
@@ -31,18 +31,20 @@ trait Vnode[Attrs, State /* <: Lifecycle[Attrs, State] */] extends StObject {
 }
 object Vnode {
   
-  inline def apply[Attrs, State /* <: Lifecycle[Attrs, State] */](attrs: Attrs, state: State, tag: String | (ComponentTypes[Attrs, State])): Vnode[Attrs, State] = {
+  inline def apply[Attrs, State](attrs: Attrs, state: State, tag: String | (ComponentTypes[Attrs, State])): Vnode[Attrs, State] = {
     val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[Vnode[Attrs, State]]
   }
   
-  extension [Self <: Vnode[?, ?], Attrs, State /* <: Lifecycle[Attrs, State] */](x: Self & (Vnode[Attrs, State])) {
+  extension [Self <: Vnode[?, ?], Attrs, State](x: Self & (Vnode[Attrs, State])) {
     
     inline def setAttrs(value: Attrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     
     inline def setChildren(value: ChildArrayOrPrimitive): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    inline def setChildrenVarargs(value: Children*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

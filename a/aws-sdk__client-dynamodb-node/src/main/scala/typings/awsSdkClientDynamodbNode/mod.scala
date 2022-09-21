@@ -43,257 +43,257 @@ object mod {
   
   @JSImport("@aws-sdk/client-dynamodb-node", "BatchGetItemCommand")
   @js.native
-  class BatchGetItemCommand protected ()
+  open class BatchGetItemCommand protected ()
     extends typings.awsSdkClientDynamodbNode.batchGetItemCommandMod.BatchGetItemCommand {
     def this(input: BatchGetItemInput) = this()
   }
   
   @JSImport("@aws-sdk/client-dynamodb-node", "BatchWriteItemCommand")
   @js.native
-  class BatchWriteItemCommand protected ()
+  open class BatchWriteItemCommand protected ()
     extends typings.awsSdkClientDynamodbNode.batchWriteItemCommandMod.BatchWriteItemCommand {
     def this(input: BatchWriteItemInput) = this()
   }
   
   @JSImport("@aws-sdk/client-dynamodb-node", "CreateBackupCommand")
   @js.native
-  class CreateBackupCommand protected ()
+  open class CreateBackupCommand protected ()
     extends typings.awsSdkClientDynamodbNode.createBackupCommandMod.CreateBackupCommand {
     def this(input: CreateBackupInput) = this()
   }
   
   @JSImport("@aws-sdk/client-dynamodb-node", "CreateGlobalTableCommand")
   @js.native
-  class CreateGlobalTableCommand protected ()
+  open class CreateGlobalTableCommand protected ()
     extends typings.awsSdkClientDynamodbNode.createGlobalTableCommandMod.CreateGlobalTableCommand {
     def this(input: CreateGlobalTableInput) = this()
   }
   
   @JSImport("@aws-sdk/client-dynamodb-node", "CreateTableCommand")
   @js.native
-  class CreateTableCommand protected ()
+  open class CreateTableCommand protected ()
     extends typings.awsSdkClientDynamodbNode.createTableCommandMod.CreateTableCommand {
     def this(input: CreateTableInput) = this()
   }
   
   @JSImport("@aws-sdk/client-dynamodb-node", "DeleteBackupCommand")
   @js.native
-  class DeleteBackupCommand protected ()
+  open class DeleteBackupCommand protected ()
     extends typings.awsSdkClientDynamodbNode.deleteBackupCommandMod.DeleteBackupCommand {
     def this(input: DeleteBackupInput) = this()
   }
   
   @JSImport("@aws-sdk/client-dynamodb-node", "DeleteItemCommand")
   @js.native
-  class DeleteItemCommand protected ()
+  open class DeleteItemCommand protected ()
     extends typings.awsSdkClientDynamodbNode.deleteItemCommandMod.DeleteItemCommand {
     def this(input: DeleteItemInput) = this()
   }
   
   @JSImport("@aws-sdk/client-dynamodb-node", "DeleteTableCommand")
   @js.native
-  class DeleteTableCommand protected ()
+  open class DeleteTableCommand protected ()
     extends typings.awsSdkClientDynamodbNode.deleteTableCommandMod.DeleteTableCommand {
     def this(input: DeleteTableInput) = this()
   }
   
   @JSImport("@aws-sdk/client-dynamodb-node", "DescribeBackupCommand")
   @js.native
-  class DescribeBackupCommand protected ()
+  open class DescribeBackupCommand protected ()
     extends typings.awsSdkClientDynamodbNode.describeBackupCommandMod.DescribeBackupCommand {
     def this(input: DescribeBackupInput) = this()
   }
   
   @JSImport("@aws-sdk/client-dynamodb-node", "DescribeContinuousBackupsCommand")
   @js.native
-  class DescribeContinuousBackupsCommand protected ()
+  open class DescribeContinuousBackupsCommand protected ()
     extends typings.awsSdkClientDynamodbNode.describeContinuousBackupsCommandMod.DescribeContinuousBackupsCommand {
     def this(input: DescribeContinuousBackupsInput) = this()
   }
   
   @JSImport("@aws-sdk/client-dynamodb-node", "DescribeEndpointsCommand")
   @js.native
-  class DescribeEndpointsCommand protected ()
+  open class DescribeEndpointsCommand protected ()
     extends typings.awsSdkClientDynamodbNode.describeEndpointsCommandMod.DescribeEndpointsCommand {
     def this(input: DescribeEndpointsInput) = this()
   }
   
   @JSImport("@aws-sdk/client-dynamodb-node", "DescribeGlobalTableCommand")
   @js.native
-  class DescribeGlobalTableCommand protected ()
+  open class DescribeGlobalTableCommand protected ()
     extends typings.awsSdkClientDynamodbNode.describeGlobalTableCommandMod.DescribeGlobalTableCommand {
     def this(input: DescribeGlobalTableInput) = this()
   }
   
   @JSImport("@aws-sdk/client-dynamodb-node", "DescribeGlobalTableSettingsCommand")
   @js.native
-  class DescribeGlobalTableSettingsCommand protected ()
+  open class DescribeGlobalTableSettingsCommand protected ()
     extends typings.awsSdkClientDynamodbNode.describeGlobalTableSettingsCommandMod.DescribeGlobalTableSettingsCommand {
     def this(input: DescribeGlobalTableSettingsInput) = this()
   }
   
   @JSImport("@aws-sdk/client-dynamodb-node", "DescribeLimitsCommand")
   @js.native
-  class DescribeLimitsCommand protected ()
+  open class DescribeLimitsCommand protected ()
     extends typings.awsSdkClientDynamodbNode.describeLimitsCommandMod.DescribeLimitsCommand {
     def this(input: DescribeLimitsInput) = this()
   }
   
   @JSImport("@aws-sdk/client-dynamodb-node", "DescribeTableCommand")
   @js.native
-  class DescribeTableCommand protected ()
+  open class DescribeTableCommand protected ()
     extends typings.awsSdkClientDynamodbNode.describeTableCommandMod.DescribeTableCommand {
     def this(input: DescribeTableInput) = this()
   }
   
   @JSImport("@aws-sdk/client-dynamodb-node", "DescribeTimeToLiveCommand")
   @js.native
-  class DescribeTimeToLiveCommand protected ()
+  open class DescribeTimeToLiveCommand protected ()
     extends typings.awsSdkClientDynamodbNode.describeTimeToLiveCommandMod.DescribeTimeToLiveCommand {
     def this(input: DescribeTimeToLiveInput) = this()
   }
   
   @JSImport("@aws-sdk/client-dynamodb-node", "DynamoDB")
   @js.native
-  class DynamoDB protected ()
+  open class DynamoDB protected ()
     extends typings.awsSdkClientDynamodbNode.dynamoDBMod.DynamoDB {
     def this(configuration: DynamoDBConfiguration) = this()
   }
   
   @JSImport("@aws-sdk/client-dynamodb-node", "DynamoDBClient")
   @js.native
-  class DynamoDBClient protected ()
+  open class DynamoDBClient protected ()
     extends typings.awsSdkClientDynamodbNode.dynamoDBClientMod.DynamoDBClient {
     def this(configuration: DynamoDBConfiguration) = this()
   }
   
   @JSImport("@aws-sdk/client-dynamodb-node", "GetItemCommand")
   @js.native
-  class GetItemCommand protected ()
+  open class GetItemCommand protected ()
     extends typings.awsSdkClientDynamodbNode.getItemCommandMod.GetItemCommand {
     def this(input: GetItemInput) = this()
   }
   
   @JSImport("@aws-sdk/client-dynamodb-node", "ListBackupsCommand")
   @js.native
-  class ListBackupsCommand protected ()
+  open class ListBackupsCommand protected ()
     extends typings.awsSdkClientDynamodbNode.listBackupsCommandMod.ListBackupsCommand {
     def this(input: ListBackupsInput) = this()
   }
   
   @JSImport("@aws-sdk/client-dynamodb-node", "ListGlobalTablesCommand")
   @js.native
-  class ListGlobalTablesCommand protected ()
+  open class ListGlobalTablesCommand protected ()
     extends typings.awsSdkClientDynamodbNode.listGlobalTablesCommandMod.ListGlobalTablesCommand {
     def this(input: ListGlobalTablesInput) = this()
   }
   
   @JSImport("@aws-sdk/client-dynamodb-node", "ListTablesCommand")
   @js.native
-  class ListTablesCommand protected ()
+  open class ListTablesCommand protected ()
     extends typings.awsSdkClientDynamodbNode.listTablesCommandMod.ListTablesCommand {
     def this(input: ListTablesInput) = this()
   }
   
   @JSImport("@aws-sdk/client-dynamodb-node", "ListTagsOfResourceCommand")
   @js.native
-  class ListTagsOfResourceCommand protected ()
+  open class ListTagsOfResourceCommand protected ()
     extends typings.awsSdkClientDynamodbNode.listTagsOfResourceCommandMod.ListTagsOfResourceCommand {
     def this(input: ListTagsOfResourceInput) = this()
   }
   
   @JSImport("@aws-sdk/client-dynamodb-node", "PutItemCommand")
   @js.native
-  class PutItemCommand protected ()
+  open class PutItemCommand protected ()
     extends typings.awsSdkClientDynamodbNode.putItemCommandMod.PutItemCommand {
     def this(input: PutItemInput) = this()
   }
   
   @JSImport("@aws-sdk/client-dynamodb-node", "QueryCommand")
   @js.native
-  class QueryCommand protected ()
+  open class QueryCommand protected ()
     extends typings.awsSdkClientDynamodbNode.queryCommandMod.QueryCommand {
     def this(input: QueryInput) = this()
   }
   
   @JSImport("@aws-sdk/client-dynamodb-node", "RestoreTableFromBackupCommand")
   @js.native
-  class RestoreTableFromBackupCommand protected ()
+  open class RestoreTableFromBackupCommand protected ()
     extends typings.awsSdkClientDynamodbNode.restoreTableFromBackupCommandMod.RestoreTableFromBackupCommand {
     def this(input: RestoreTableFromBackupInput) = this()
   }
   
   @JSImport("@aws-sdk/client-dynamodb-node", "RestoreTableToPointInTimeCommand")
   @js.native
-  class RestoreTableToPointInTimeCommand protected ()
+  open class RestoreTableToPointInTimeCommand protected ()
     extends typings.awsSdkClientDynamodbNode.restoreTableToPointInTimeCommandMod.RestoreTableToPointInTimeCommand {
     def this(input: RestoreTableToPointInTimeInput) = this()
   }
   
   @JSImport("@aws-sdk/client-dynamodb-node", "ScanCommand")
   @js.native
-  class ScanCommand protected ()
+  open class ScanCommand protected ()
     extends typings.awsSdkClientDynamodbNode.scanCommandMod.ScanCommand {
     def this(input: ScanInput) = this()
   }
   
   @JSImport("@aws-sdk/client-dynamodb-node", "TagResourceCommand")
   @js.native
-  class TagResourceCommand protected ()
+  open class TagResourceCommand protected ()
     extends typings.awsSdkClientDynamodbNode.tagResourceCommandMod.TagResourceCommand {
     def this(input: TagResourceInput) = this()
   }
   
   @JSImport("@aws-sdk/client-dynamodb-node", "UntagResourceCommand")
   @js.native
-  class UntagResourceCommand protected ()
+  open class UntagResourceCommand protected ()
     extends typings.awsSdkClientDynamodbNode.untagResourceCommandMod.UntagResourceCommand {
     def this(input: UntagResourceInput) = this()
   }
   
   @JSImport("@aws-sdk/client-dynamodb-node", "UpdateContinuousBackupsCommand")
   @js.native
-  class UpdateContinuousBackupsCommand protected ()
+  open class UpdateContinuousBackupsCommand protected ()
     extends typings.awsSdkClientDynamodbNode.updateContinuousBackupsCommandMod.UpdateContinuousBackupsCommand {
     def this(input: UpdateContinuousBackupsInput) = this()
   }
   
   @JSImport("@aws-sdk/client-dynamodb-node", "UpdateGlobalTableCommand")
   @js.native
-  class UpdateGlobalTableCommand protected ()
+  open class UpdateGlobalTableCommand protected ()
     extends typings.awsSdkClientDynamodbNode.updateGlobalTableCommandMod.UpdateGlobalTableCommand {
     def this(input: UpdateGlobalTableInput) = this()
   }
   
   @JSImport("@aws-sdk/client-dynamodb-node", "UpdateGlobalTableSettingsCommand")
   @js.native
-  class UpdateGlobalTableSettingsCommand protected ()
+  open class UpdateGlobalTableSettingsCommand protected ()
     extends typings.awsSdkClientDynamodbNode.updateGlobalTableSettingsCommandMod.UpdateGlobalTableSettingsCommand {
     def this(input: UpdateGlobalTableSettingsInput) = this()
   }
   
   @JSImport("@aws-sdk/client-dynamodb-node", "UpdateItemCommand")
   @js.native
-  class UpdateItemCommand protected ()
+  open class UpdateItemCommand protected ()
     extends typings.awsSdkClientDynamodbNode.updateItemCommandMod.UpdateItemCommand {
     def this(input: UpdateItemInput) = this()
   }
   
   @JSImport("@aws-sdk/client-dynamodb-node", "UpdateTableCommand")
   @js.native
-  class UpdateTableCommand protected ()
+  open class UpdateTableCommand protected ()
     extends typings.awsSdkClientDynamodbNode.updateTableCommandMod.UpdateTableCommand {
     def this(input: UpdateTableInput) = this()
   }
   
   @JSImport("@aws-sdk/client-dynamodb-node", "UpdateTimeToLiveCommand")
   @js.native
-  class UpdateTimeToLiveCommand protected ()
+  open class UpdateTimeToLiveCommand protected ()
     extends typings.awsSdkClientDynamodbNode.updateTimeToLiveCommandMod.UpdateTimeToLiveCommand {
     def this(input: UpdateTimeToLiveInput) = this()
   }
   
   @JSImport("@aws-sdk/client-dynamodb-node", "configurationProperties")
   @js.native
-  val configurationProperties: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.ConfigurationDefinition<DynamoDBResolvableConfiguration, DynamoDBResolvedConfiguration> */ js.Any = js.native
+  val configurationProperties: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.ConfigurationDefinition<DynamoDBResolvableConfiguration, DynamoDBResolvedConfiguration> */ Any = js.native
 }

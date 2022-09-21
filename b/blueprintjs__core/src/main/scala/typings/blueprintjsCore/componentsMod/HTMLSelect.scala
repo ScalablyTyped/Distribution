@@ -1,14 +1,14 @@
 package typings.blueprintjsCore.componentsMod
 
-import typings.blueprintjsCore.htmlSelectMod.IHTMLSelectProps
+import typings.blueprintjsCore.htmlSelectMod.HTMLSelectProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core/lib/esm/components", "HTMLSelect")
 @js.native
-class HTMLSelect protected ()
+open class HTMLSelect protected ()
   extends typings.blueprintjsCore.htmlSelectMod.HTMLSelect {
-  def this(props: IHTMLSelectProps) = this()
-  def this(props: IHTMLSelectProps, context: js.Any) = this()
+  def this(props: HTMLSelectProps) = this()
+  def this(props: HTMLSelectProps, context: Any) = this()
 }

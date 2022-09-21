@@ -13,6 +13,11 @@ trait DashPackage extends StObject {
   var Encryption: js.UndefOr[DashEncryption] = js.undefined
   
   /**
+    * When enabled, an I-Frame only stream will be included in the output.
+    */
+  var IncludeIframeOnlyStream: js.UndefOr[boolean] = js.undefined
+  
+  /**
     * Determines the position of some tags in the Media Presentation Description (MPD).  When set to FULL, elements like SegmentTemplate and ContentProtection are included in each Representation.  When set to COMPACT, duplicate elements are combined and presented at the AdaptationSet level.
     */
   var ManifestLayout: js.UndefOr[typings.awsSdk.mediapackageMod.ManifestLayout] = js.undefined
@@ -41,7 +46,7 @@ trait DashPackage extends StObject {
   var PeriodTriggers: js.UndefOr[listOfPeriodTriggersElement] = js.undefined
   
   /**
-    * The Dynamic Adaptive Streaming over HTTP (DASH) profile type.  When set to "HBBTV_1_5", HbbTV 1.5 compliant output is enabled.
+    * The Dynamic Adaptive Streaming over HTTP (DASH) profile type.  When set to "HBBTV_1_5", HbbTV 1.5 compliant output is enabled. When set to "DVB-DASH_2014", DVB-DASH 2014 compliant output is enabled.
     */
   var Profile: js.UndefOr[typings.awsSdk.mediapackageMod.Profile] = js.undefined
   
@@ -69,7 +74,7 @@ trait DashPackage extends StObject {
   var UtcTiming: js.UndefOr[typings.awsSdk.mediapackageMod.UtcTiming] = js.undefined
   
   /**
-    * Specifies the value attribute of the UTCTiming field when utcTiming is set to HTTP-ISO or HTTP-HEAD
+    * Specifies the value attribute of the UTCTiming field when utcTiming is set to HTTP-ISO, HTTP-HEAD or HTTP-XSDATE
     */
   var UtcTimingUri: js.UndefOr[string] = js.undefined
 }
@@ -86,7 +91,7 @@ object DashPackage {
     
     inline def setAdTriggersUndefined: Self = StObject.set(x, "AdTriggers", js.undefined)
     
-    inline def setAdTriggersVarargs(value: AdTriggersElement*): Self = StObject.set(x, "AdTriggers", js.Array(value :_*))
+    inline def setAdTriggersVarargs(value: AdTriggersElement*): Self = StObject.set(x, "AdTriggers", js.Array(value*))
     
     inline def setAdsOnDeliveryRestrictions(value: AdsOnDeliveryRestrictions): Self = StObject.set(x, "AdsOnDeliveryRestrictions", value.asInstanceOf[js.Any])
     
@@ -95,6 +100,10 @@ object DashPackage {
     inline def setEncryption(value: DashEncryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
     
     inline def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
+    
+    inline def setIncludeIframeOnlyStream(value: boolean): Self = StObject.set(x, "IncludeIframeOnlyStream", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeIframeOnlyStreamUndefined: Self = StObject.set(x, "IncludeIframeOnlyStream", js.undefined)
     
     inline def setManifestLayout(value: ManifestLayout): Self = StObject.set(x, "ManifestLayout", value.asInstanceOf[js.Any])
     
@@ -116,7 +125,7 @@ object DashPackage {
     
     inline def setPeriodTriggersUndefined: Self = StObject.set(x, "PeriodTriggers", js.undefined)
     
-    inline def setPeriodTriggersVarargs(value: PeriodTriggersElement*): Self = StObject.set(x, "PeriodTriggers", js.Array(value :_*))
+    inline def setPeriodTriggersVarargs(value: PeriodTriggersElement*): Self = StObject.set(x, "PeriodTriggers", js.Array(value*))
     
     inline def setProfile(value: Profile): Self = StObject.set(x, "Profile", value.asInstanceOf[js.Any])
     

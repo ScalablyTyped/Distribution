@@ -21,42 +21,40 @@ trait Application extends StObject {
   
   def ActiveInspector(): Inspector = js.native
   
-  def ActiveWindow(): js.Any = js.native
+  def ActiveWindow(): Any = js.native
   
   def AdvancedSearch(Scope: String): Search = js.native
-  def AdvancedSearch(Scope: String, Filter: js.Any): Search = js.native
-  def AdvancedSearch(Scope: String, Filter: js.Any, SearchSubFolders: js.Any): Search = js.native
-  def AdvancedSearch(Scope: String, Filter: js.Any, SearchSubFolders: js.Any, Tag: js.Any): Search = js.native
-  def AdvancedSearch(Scope: String, Filter: js.Any, SearchSubFolders: Unit, Tag: js.Any): Search = js.native
-  def AdvancedSearch(Scope: String, Filter: Unit, SearchSubFolders: js.Any): Search = js.native
-  def AdvancedSearch(Scope: String, Filter: Unit, SearchSubFolders: js.Any, Tag: js.Any): Search = js.native
-  def AdvancedSearch(Scope: String, Filter: Unit, SearchSubFolders: Unit, Tag: js.Any): Search = js.native
+  def AdvancedSearch(Scope: String, Filter: Any): Search = js.native
+  def AdvancedSearch(Scope: String, Filter: Any, SearchSubFolders: Any): Search = js.native
+  def AdvancedSearch(Scope: String, Filter: Any, SearchSubFolders: Any, Tag: Any): Search = js.native
+  def AdvancedSearch(Scope: String, Filter: Any, SearchSubFolders: Unit, Tag: Any): Search = js.native
+  def AdvancedSearch(Scope: String, Filter: Unit, SearchSubFolders: Any): Search = js.native
+  def AdvancedSearch(Scope: String, Filter: Unit, SearchSubFolders: Any, Tag: Any): Search = js.native
+  def AdvancedSearch(Scope: String, Filter: Unit, SearchSubFolders: Unit, Tag: Any): Search = js.native
   
-  val AnswerWizard: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.AnswerWizard */ js.Any = js.native
+  val AnswerWizard: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.AnswerWizard */ Any = js.native
   
   val Application: typings.activexOutlook.Outlook.Application = js.native
   
-  val Assistance: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.IAssistance */ js.Any = js.native
+  val Assistance: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.IAssistance */ Any = js.native
   
-  val Assistant: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.Assistant */ js.Any = js.native
+  val Assistant: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.Assistant */ Any = js.native
   
-  val COMAddIns: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.COMAddIns */ js.Any = js.native
+  val COMAddIns: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.COMAddIns */ Any = js.native
   
   val Class: OlObjectClass = js.native
   
-  def CopyFile(FilePath: String, DestFolderPath: String): js.Any = js.native
+  def CopyFile(FilePath: String, DestFolderPath: String): Any = js.native
   
-  def CreateItemFromTemplate(TemplatePath: String): js.Any = js.native
-  def CreateItemFromTemplate(TemplatePath: String, InFolder: js.Any): js.Any = js.native
+  def CreateItem(ItemType: `12` | `11`): MobileItem = js.native
+  
+  def CreateItemFromTemplate(TemplatePath: String): Any = js.native
+  def CreateItemFromTemplate(TemplatePath: String, InFolder: Any): Any = js.native
   
   @JSName("CreateItem")
   def CreateItem_0(ItemType: `0`): MailItem = js.native
   @JSName("CreateItem")
   def CreateItem_1(ItemType: `1`): AppointmentItem = js.native
-  @JSName("CreateItem")
-  def CreateItem_11(ItemType: `11`): MobileItem = js.native
-  @JSName("CreateItem")
-  def CreateItem_12(ItemType: `12`): MobileItem = js.native
   @JSName("CreateItem")
   def CreateItem_2(ItemType: `2`): ContactItem = js.native
   @JSName("CreateItem")
@@ -70,19 +68,19 @@ trait Application extends StObject {
   @JSName("CreateItem")
   def CreateItem_7(ItemType: `7`): DistListItem = js.native
   
-  def CreateObject(ObjectName: String): js.Any = js.native
+  def CreateObject(ObjectName: String): Any = js.native
   
   val DefaultProfileName: String = js.native
   
   val Explorers: typings.activexOutlook.Outlook.Explorers = js.native
   
-  var FeatureInstall: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.MsoFeatureInstall */ js.Any = js.native
+  var FeatureInstall: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.MsoFeatureInstall */ Any = js.native
   
   def GetNamespace(Type: String): NameSpace = js.native
   
-  def GetNewNickNames(pvar: js.Any): Unit = js.native
+  def GetNewNickNames(pvar: Any): Unit = js.native
   
-  def GetObjectReference(Item: js.Any, ReferenceType: OlReferenceType): js.Any = js.native
+  def GetObjectReference(Item: Any, ReferenceType: OlReferenceType): Any = js.native
   
   val Inspectors: typings.activexOutlook.Outlook.Inspectors = js.native
   
@@ -90,16 +88,16 @@ trait Application extends StObject {
   
   val IsTrusted: Boolean = js.native
   
-  val LanguageSettings: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.LanguageSettings */ js.Any = js.native
+  val LanguageSettings: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.LanguageSettings */ Any = js.native
   
   val Name: String = js.native
   
   /* private */ @JSName("Outlook.Application_typekey")
   var OutlookDotApplication_typekey: typings.activexOutlook.Outlook.Application = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  val PickerDialog: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.PickerDialog */ js.Any = js.native
+  val PickerDialog: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.PickerDialog */ Any = js.native
   
   val ProductCode: String = js.native
   

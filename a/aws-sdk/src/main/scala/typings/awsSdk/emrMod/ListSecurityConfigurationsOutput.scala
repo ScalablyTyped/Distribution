@@ -33,6 +33,6 @@ object ListSecurityConfigurationsOutput {
     
     inline def setSecurityConfigurationsUndefined: Self = StObject.set(x, "SecurityConfigurations", js.undefined)
     
-    inline def setSecurityConfigurationsVarargs(value: SecurityConfigurationSummary*): Self = StObject.set(x, "SecurityConfigurations", js.Array(value :_*))
+    inline def setSecurityConfigurationsVarargs(value: SecurityConfigurationSummary*): Self = StObject.set(x, "SecurityConfigurations", js.Array(value*))
   }
 }

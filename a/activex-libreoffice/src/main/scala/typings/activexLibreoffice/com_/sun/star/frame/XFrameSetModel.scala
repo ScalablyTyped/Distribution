@@ -26,7 +26,7 @@ object XFrameSetModel {
     Source: String,
     acquire: () => Unit,
     getSource: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setSource: String => Unit
   ): XFrameSetModel = {

@@ -9,6 +9,9 @@ trait ReportData extends StObject {
   /** The last time the data in the report was refreshed. All the hits received before this timestamp are included in the calculation of the report. */
   var dataLastRefreshed: js.UndefOr[String] = js.undefined
   
+  /** If empty reason is specified, the report is empty for this reason. */
+  var emptyReason: js.UndefOr[String] = js.undefined
+  
   /** Indicates if response to this request is golden or not. Data is golden when the exact same request will not produce any new results if asked at a later point in time. */
   var isDataGolden: js.UndefOr[Boolean] = js.undefined
   
@@ -56,6 +59,10 @@ object ReportData {
     
     inline def setDataLastRefreshedUndefined: Self = StObject.set(x, "dataLastRefreshed", js.undefined)
     
+    inline def setEmptyReason(value: String): Self = StObject.set(x, "emptyReason", value.asInstanceOf[js.Any])
+    
+    inline def setEmptyReasonUndefined: Self = StObject.set(x, "emptyReason", js.undefined)
+    
     inline def setIsDataGolden(value: Boolean): Self = StObject.set(x, "isDataGolden", value.asInstanceOf[js.Any])
     
     inline def setIsDataGoldenUndefined: Self = StObject.set(x, "isDataGolden", js.undefined)
@@ -64,13 +71,13 @@ object ReportData {
     
     inline def setMaximumsUndefined: Self = StObject.set(x, "maximums", js.undefined)
     
-    inline def setMaximumsVarargs(value: DateRangeValues*): Self = StObject.set(x, "maximums", js.Array(value :_*))
+    inline def setMaximumsVarargs(value: DateRangeValues*): Self = StObject.set(x, "maximums", js.Array(value*))
     
     inline def setMinimums(value: js.Array[DateRangeValues]): Self = StObject.set(x, "minimums", value.asInstanceOf[js.Any])
     
     inline def setMinimumsUndefined: Self = StObject.set(x, "minimums", js.undefined)
     
-    inline def setMinimumsVarargs(value: DateRangeValues*): Self = StObject.set(x, "minimums", js.Array(value :_*))
+    inline def setMinimumsVarargs(value: DateRangeValues*): Self = StObject.set(x, "minimums", js.Array(value*))
     
     inline def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     
@@ -80,24 +87,24 @@ object ReportData {
     
     inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    inline def setRowsVarargs(value: ReportRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: ReportRow*): Self = StObject.set(x, "rows", js.Array(value*))
     
     inline def setSamplesReadCounts(value: js.Array[String]): Self = StObject.set(x, "samplesReadCounts", value.asInstanceOf[js.Any])
     
     inline def setSamplesReadCountsUndefined: Self = StObject.set(x, "samplesReadCounts", js.undefined)
     
-    inline def setSamplesReadCountsVarargs(value: String*): Self = StObject.set(x, "samplesReadCounts", js.Array(value :_*))
+    inline def setSamplesReadCountsVarargs(value: String*): Self = StObject.set(x, "samplesReadCounts", js.Array(value*))
     
     inline def setSamplingSpaceSizes(value: js.Array[String]): Self = StObject.set(x, "samplingSpaceSizes", value.asInstanceOf[js.Any])
     
     inline def setSamplingSpaceSizesUndefined: Self = StObject.set(x, "samplingSpaceSizes", js.undefined)
     
-    inline def setSamplingSpaceSizesVarargs(value: String*): Self = StObject.set(x, "samplingSpaceSizes", js.Array(value :_*))
+    inline def setSamplingSpaceSizesVarargs(value: String*): Self = StObject.set(x, "samplingSpaceSizes", js.Array(value*))
     
     inline def setTotals(value: js.Array[DateRangeValues]): Self = StObject.set(x, "totals", value.asInstanceOf[js.Any])
     
     inline def setTotalsUndefined: Self = StObject.set(x, "totals", js.undefined)
     
-    inline def setTotalsVarargs(value: DateRangeValues*): Self = StObject.set(x, "totals", js.Array(value :_*))
+    inline def setTotalsVarargs(value: DateRangeValues*): Self = StObject.set(x, "totals", js.Array(value*))
   }
 }

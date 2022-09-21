@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.DropTarget")
 @js.native
-class DropTarget protected ()
+open class DropTarget protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.DropTarget {
   def this(element: Element) = this()

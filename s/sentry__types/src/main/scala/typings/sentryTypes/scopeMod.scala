@@ -1,14 +1,18 @@
 package typings.sentryTypes
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.sentryTypes.attachmentMod.Attachment
 import typings.sentryTypes.breadcrumbMod.Breadcrumb
 import typings.sentryTypes.contextMod.Context
 import typings.sentryTypes.contextMod.Contexts
 import typings.sentryTypes.eventprocessorMod.EventProcessor
 import typings.sentryTypes.extraMod.Extra
 import typings.sentryTypes.extraMod.Extras
+import typings.sentryTypes.miscMod.Primitive
+import typings.sentryTypes.sessionMod.RequestSession
 import typings.sentryTypes.sessionMod.Session
 import typings.sentryTypes.severityMod.Severity
+import typings.sentryTypes.severityMod.SeverityLevel
 import typings.sentryTypes.spanMod.Span
 import typings.sentryTypes.transactionMod.Transaction
 import typings.sentryTypes.userMod.User
@@ -31,6 +35,12 @@ object scopeMod {
        with _CaptureContext {
     
     /**
+      * Adds an attachment to the scope
+      * @param attachment Attachment options
+      */
+    def addAttachment(attachment: Attachment): this.type = js.native
+    
+    /**
       * Sets the breadcrumbs in the scope
       * @param breadcrumbs Breadcrumb
       * @param maxBreadcrumbs number of max breadcrumbs to merged into event.
@@ -45,9 +55,24 @@ object scopeMod {
     def clear(): this.type = js.native
     
     /**
+      * Clears attachments from the scope
+      */
+    def clearAttachments(): this.type = js.native
+    
+    /**
       * Clears all currently set Breadcrumbs.
       */
     def clearBreadcrumbs(): this.type = js.native
+    
+    /**
+      * Returns an array of attachments on the scope
+      */
+    def getAttachments(): js.Array[Attachment] = js.native
+    
+    /**
+      * Returns the `RequestSession` if there is one
+      */
+    def getRequestSession(): js.UndefOr[RequestSession] = js.native
     
     /**
       * Returns the `Session` if there is one
@@ -98,9 +123,16 @@ object scopeMod {
     
     /**
       * Sets the level on the scope for future events.
-      * @param level string {@link Severity}
+      * @param level string {@link SeverityLevel}
       */
     def setLevel(level: Severity): this.type = js.native
+    def setLevel(level: SeverityLevel): this.type = js.native
+    
+    /**
+      * Sets the `RequestSession` on the scope
+      */
+    def setRequestSession(): this.type = js.native
+    def setRequestSession(requestSession: RequestSession): this.type = js.native
     
     /**
       * Sets the `Session` on the scope
@@ -117,16 +149,19 @@ object scopeMod {
     
     /**
       * Set key:value that will be sent as tags data with the event.
+      *
+      * Can also be used to unset a tag by passing `undefined`.
+      *
       * @param key String key of tag
-      * @param value String value of tag
+      * @param value Value of tag
       */
-    def setTag(key: String, value: String): this.type = js.native
+    def setTag(key: String, value: Primitive): this.type = js.native
     
     /**
       * Set an object that will be merged sent as tags data with the event.
       * @param tags Tags context object to merge into current context.
       */
-    def setTags(tags: StringDictionary[String]): this.type = js.native
+    def setTags(tags: StringDictionary[Primitive]): this.type = js.native
     
     /**
       * Sets the transaction name on the scope for future events.
@@ -161,9 +196,11 @@ object scopeMod {
     
     var fingerprint: js.Array[String]
     
-    var level: Severity
+    var level: Severity | SeverityLevel
     
-    var tags: StringDictionary[String]
+    var requestSession: RequestSession
+    
+    var tags: StringDictionary[Primitive]
     
     var user: User
   }
@@ -173,11 +210,12 @@ object scopeMod {
       contexts: Contexts,
       extra: Extras,
       fingerprint: js.Array[String],
-      level: Severity,
-      tags: StringDictionary[String],
+      level: Severity | SeverityLevel,
+      requestSession: RequestSession,
+      tags: StringDictionary[Primitive],
       user: User
     ): ScopeContext = {
-      val __obj = js.Dynamic.literal(contexts = contexts.asInstanceOf[js.Any], extra = extra.asInstanceOf[js.Any], fingerprint = fingerprint.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(contexts = contexts.asInstanceOf[js.Any], extra = extra.asInstanceOf[js.Any], fingerprint = fingerprint.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], requestSession = requestSession.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
       __obj.asInstanceOf[ScopeContext]
     }
     
@@ -189,11 +227,13 @@ object scopeMod {
       
       inline def setFingerprint(value: js.Array[String]): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
       
-      inline def setFingerprintVarargs(value: String*): Self = StObject.set(x, "fingerprint", js.Array(value :_*))
+      inline def setFingerprintVarargs(value: String*): Self = StObject.set(x, "fingerprint", js.Array(value*))
       
-      inline def setLevel(value: Severity): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: Severity | SeverityLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setRequestSession(value: RequestSession): Self = StObject.set(x, "requestSession", value.asInstanceOf[js.Any])
+      
+      inline def setTags(value: StringDictionary[Primitive]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
       inline def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }

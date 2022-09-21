@@ -79,6 +79,7 @@ import typings.oracleOraclejet.oracleOraclejetStrings.selectionModeChanged
 import typings.oracleOraclejet.oracleOraclejetStrings.translations
 import typings.std.AnimationEvent
 import typings.std.ClipboardEvent
+import typings.std.CompositionEvent
 import typings.std.CustomEvent
 import typings.std.DragEvent
 import typings.std.Element
@@ -86,12 +87,15 @@ import typings.std.ErrorEvent
 import typings.std.Event
 import typings.std.EventTarget
 import typings.std.FocusEvent
+import typings.std.FormDataEvent
 import typings.std.HTMLElement
+import typings.std.InputEvent
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
 import typings.std.PointerEvent
 import typings.std.ProgressEvent
 import typings.std.SecurityPolicyViolationEvent
+import typings.std.SubmitEvent
 import typings.std.TouchEvent
 import typings.std.TransitionEvent
 import typings.std.UIEvent
@@ -112,7 +116,7 @@ object ojdatagridMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ JetElementCustomEvent[none | cellNavigation | cellEdit], 
-          js.Any
+          Any
         ]
     ): Unit = js.native
     def addEventListener(
@@ -120,7 +124,7 @@ object ojdatagridMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ JetElementCustomEvent[none | cellNavigation | cellEdit], 
-          js.Any
+          Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -129,7 +133,7 @@ object ojdatagridMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ JetElementCustomEvent[auto | loadMoreOnScroll | scroll], 
-          js.Any
+          Any
         ]
     ): Unit = js.native
     def addEventListener(
@@ -137,93 +141,85 @@ object ojdatagridMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ JetElementCustomEvent[auto | loadMoreOnScroll | scroll], 
-          js.Any
+          Any
         ],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_bandingIntervalChanged(
       `type`: bandingIntervalChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Column], js.Any]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Column], Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_bandingIntervalChanged(
       `type`: bandingIntervalChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Column], js.Any],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Column], Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_cellChanged(
       `type`: cellChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[ClassName[K, D]], js.Any]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[ClassName[K, D]], Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_cellChanged(
       `type`: cellChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[ClassName[K, D]], js.Any],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[ClassName[K, D]], Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_currentCellChanged(
       `type`: currentCellChanged,
-      listener: js.ThisFunction1[
-          /* this */ HTMLElement, 
-          /* ev */ JetElementCustomEvent[CurrentCell[K] | Null], 
-          js.Any
-        ]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[CurrentCell[K] | Null], Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_currentCellChanged(
       `type`: currentCellChanged,
-      listener: js.ThisFunction1[
-          /* this */ HTMLElement, 
-          /* ev */ JetElementCustomEvent[CurrentCell[K] | Null], 
-          js.Any
-        ],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[CurrentCell[K] | Null], Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_dataChanged(
       `type`: dataChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[DataProvider[K, D]], js.Any]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[DataProvider[K, D]], Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_dataChanged(
       `type`: dataChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[DataProvider[K, D]], js.Any],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[DataProvider[K, D]], Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_dndChanged(
       `type`: dndChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Reorder], js.Any]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Reorder], Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_dndChanged(
       `type`: dndChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Reorder], js.Any],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Reorder], Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_gridlinesChanged(
       `type`: gridlinesChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Horizontal], js.Any]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Horizontal], Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_gridlinesChanged(
       `type`: gridlinesChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Horizontal], js.Any],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Horizontal], Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_headerChanged(
       `type`: headerChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[ColumnEnd[K, D]], js.Any]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[ColumnEnd[K, D]], Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_headerChanged(
       `type`: headerChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[ColumnEnd[K, D]], js.Any],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[ColumnEnd[K, D]], Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
@@ -232,7 +228,7 @@ object ojdatagridMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeCurrentCell[K], 
-          js.Any
+          Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -241,7 +237,7 @@ object ojdatagridMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeCurrentCell[K], 
-          js.Any
+          Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -251,7 +247,7 @@ object ojdatagridMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeEdit[K, D], 
-          js.Any
+          Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -260,7 +256,7 @@ object ojdatagridMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeEdit[K, D], 
-          js.Any
+          Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -270,7 +266,7 @@ object ojdatagridMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeEditEnd[K, D], 
-          js.Any
+          Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -279,7 +275,7 @@ object ojdatagridMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeEditEnd[K, D], 
-          js.Any
+          Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -289,7 +285,7 @@ object ojdatagridMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojResize, 
-          js.Any
+          Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -298,7 +294,7 @@ object ojdatagridMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojResize, 
-          js.Any
+          Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -308,7 +304,7 @@ object ojdatagridMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojScroll, 
-          js.Any
+          Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -317,7 +313,7 @@ object ojdatagridMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojScroll, 
-          js.Any
+          Any
         ],
       useCapture: Boolean
     ): Unit = js.native
@@ -327,7 +323,7 @@ object ojdatagridMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojSort, 
-          js.Any
+          Any
         ]
     ): Unit = js.native
     @JSName("addEventListener")
@@ -336,60 +332,52 @@ object ojdatagridMod {
       listener: js.ThisFunction1[
           /* this */ HTMLElement, 
           /* ev */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojSort, 
-          js.Any
+          Any
         ],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_scrollPolicyOptionsChanged(
       `type`: scrollPolicyOptionsChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[MaxColumnCount], js.Any]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[MaxColumnCount], Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_scrollPolicyOptionsChanged(
       `type`: scrollPolicyOptionsChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[MaxColumnCount], js.Any],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[MaxColumnCount], Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_scrollPositionChanged(
       `type`: scrollPositionChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[ColumnIndex[K]], js.Any]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[ColumnIndex[K]], Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_scrollPositionChanged(
       `type`: scrollPositionChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[ColumnIndex[K]], js.Any],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[ColumnIndex[K]], Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_selectionChanged(
       `type`: selectionChanged,
-      listener: js.ThisFunction1[
-          /* this */ HTMLElement, 
-          /* ev */ JetElementCustomEvent[js.Array[Selection[K]]], 
-          js.Any
-        ]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[Selection[K]]], Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_selectionChanged(
       `type`: selectionChanged,
-      listener: js.ThisFunction1[
-          /* this */ HTMLElement, 
-          /* ev */ JetElementCustomEvent[js.Array[Selection[K]]], 
-          js.Any
-        ],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[Selection[K]]], Any],
       useCapture: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_selectionModeChanged(
       `type`: selectionModeChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Cell], js.Any]
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Cell], Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_selectionModeChanged(
       `type`: selectionModeChanged,
-      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Cell], js.Any],
+      listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Cell], Any],
       useCapture: Boolean
     ): Unit = js.native
     
@@ -438,52 +426,52 @@ object ojdatagridMod {
     
     var header: ColumnEnd[K, D] = js.native
     
-    var onBandingIntervalChanged: (js.Function1[/* event */ JetElementCustomEvent[Column], js.Any]) | Null = js.native
+    var onBandingIntervalChanged: (js.Function1[/* event */ JetElementCustomEvent[Column], Any]) | Null = js.native
     
-    var onCellChanged: (js.Function1[/* event */ JetElementCustomEvent[ClassName[K, D]], js.Any]) | Null = js.native
+    var onCellChanged: (js.Function1[/* event */ JetElementCustomEvent[ClassName[K, D]], Any]) | Null = js.native
     
-    var onCurrentCellChanged: (js.Function1[/* event */ JetElementCustomEvent[CurrentCell[K] | Null], js.Any]) | Null = js.native
+    var onCurrentCellChanged: (js.Function1[/* event */ JetElementCustomEvent[CurrentCell[K] | Null], Any]) | Null = js.native
     
-    var onDataChanged: (js.Function1[/* event */ JetElementCustomEvent[DataProvider[K, D]], js.Any]) | Null = js.native
+    var onDataChanged: (js.Function1[/* event */ JetElementCustomEvent[DataProvider[K, D]], Any]) | Null = js.native
     
-    var onDndChanged: (js.Function1[/* event */ JetElementCustomEvent[Reorder], js.Any]) | Null = js.native
+    var onDndChanged: (js.Function1[/* event */ JetElementCustomEvent[Reorder], Any]) | Null = js.native
     
-    var onEditModeChanged: (js.Function1[/* event */ JetElementCustomEvent[none | cellNavigation | cellEdit], js.Any]) | Null = js.native
+    var onEditModeChanged: (js.Function1[/* event */ JetElementCustomEvent[none | cellNavigation | cellEdit], Any]) | Null = js.native
     
-    var onGridlinesChanged: (js.Function1[/* event */ JetElementCustomEvent[Horizontal], js.Any]) | Null = js.native
+    var onGridlinesChanged: (js.Function1[/* event */ JetElementCustomEvent[Horizontal], Any]) | Null = js.native
     
-    var onHeaderChanged: (js.Function1[/* event */ JetElementCustomEvent[ColumnEnd[K, D]], js.Any]) | Null = js.native
+    var onHeaderChanged: (js.Function1[/* event */ JetElementCustomEvent[ColumnEnd[K, D]], Any]) | Null = js.native
     
     var onOjBeforeCurrentCell: (js.Function1[
         /* event */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeCurrentCell[K], 
-        js.Any
+        Any
       ]) | Null = js.native
     
     var onOjBeforeEdit: (js.Function1[
         /* event */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeEdit[K, D], 
-        js.Any
+        Any
       ]) | Null = js.native
     
     var onOjBeforeEditEnd: (js.Function1[
         /* event */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojBeforeEditEnd[K, D], 
-        js.Any
+        Any
       ]) | Null = js.native
     
-    var onOjResize: (js.Function1[/* event */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojResize, js.Any]) | Null = js.native
+    var onOjResize: (js.Function1[/* event */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojResize, Any]) | Null = js.native
     
-    var onOjScroll: (js.Function1[/* event */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojScroll, js.Any]) | Null = js.native
+    var onOjScroll: (js.Function1[/* event */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojScroll, Any]) | Null = js.native
     
-    var onOjSort: (js.Function1[/* event */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojSort, js.Any]) | Null = js.native
+    var onOjSort: (js.Function1[/* event */ typings.oracleOraclejet.ojdatagridMod.ojDataGrid.ojSort, Any]) | Null = js.native
     
-    var onScrollPolicyChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | loadMoreOnScroll | scroll], js.Any]) | Null = js.native
+    var onScrollPolicyChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | loadMoreOnScroll | scroll], Any]) | Null = js.native
     
-    var onScrollPolicyOptionsChanged: (js.Function1[/* event */ JetElementCustomEvent[MaxColumnCount], js.Any]) | Null = js.native
+    var onScrollPolicyOptionsChanged: (js.Function1[/* event */ JetElementCustomEvent[MaxColumnCount], Any]) | Null = js.native
     
-    var onScrollPositionChanged: (js.Function1[/* event */ JetElementCustomEvent[ColumnIndex[K]], js.Any]) | Null = js.native
+    var onScrollPositionChanged: (js.Function1[/* event */ JetElementCustomEvent[ColumnIndex[K]], Any]) | Null = js.native
     
-    var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[Selection[K]]], js.Any]) | Null = js.native
+    var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[Selection[K]]], Any]) | Null = js.native
     
-    var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[Cell], js.Any]) | Null = js.native
+    var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[Cell], Any]) | Null = js.native
     
     var scrollPolicy: auto | loadMoreOnScroll | scroll = js.native
     
@@ -497,12 +485,8 @@ object ojdatagridMod {
     
     def setProperties(properties: ojDataGridSettablePropertiesLenient[K, D]): Unit = js.native
     
-    def setProperty(property: editMode, value: cellEdit): Unit = js.native
-    def setProperty(property: editMode, value: cellNavigation): Unit = js.native
-    def setProperty(property: editMode, value: none): Unit = js.native
-    def setProperty(property: scrollPolicy, value: auto): Unit = js.native
-    def setProperty(property: scrollPolicy, value: loadMoreOnScroll): Unit = js.native
-    def setProperty(property: scrollPolicy, value: scroll): Unit = js.native
+    def setProperty(property: editMode, value: none | cellNavigation | cellEdit): Unit = js.native
+    def setProperty(property: scrollPolicy, value: auto | loadMoreOnScroll | scroll): Unit = js.native
     @JSName("setProperty")
     def setProperty_bandingInterval(property: bandingInterval, value: Column): Unit = js.native
     @JSName("setProperty")
@@ -607,7 +591,7 @@ object ojdatagridMod {
       
       var indexes: js.UndefOr[ColumnRow] = js.undefined
       
-      var key: js.UndefOr[js.Any] = js.undefined
+      var key: js.UndefOr[Any] = js.undefined
       
       var keys: js.UndefOr[ColumnK[K]] = js.undefined
       
@@ -637,7 +621,7 @@ object ojdatagridMod {
         
         inline def setIndexesUndefined: Self = StObject.set(x, "indexes", js.undefined)
         
-        inline def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+        inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
         inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
         
@@ -868,14 +852,17 @@ object ojdatagridMod {
       animationstart: AnimationEvent,
       auxclick: MouseEvent,
       bandingIntervalChanged: JetElementCustomEvent[Column],
+      beforeinput: InputEvent,
       blur: FocusEvent,
-      cancel: Event,
       canplay: Event,
       canplaythrough: Event,
       cellChanged: JetElementCustomEvent[ClassName[K, D]],
       change: Event,
       click: MouseEvent,
       close: Event,
+      compositionend: CompositionEvent,
+      compositionstart: CompositionEvent,
+      compositionupdate: CompositionEvent,
       contextmenu: MouseEvent,
       copy: ClipboardEvent,
       cuechange: Event,
@@ -887,7 +874,6 @@ object ojdatagridMod {
       drag: DragEvent,
       dragend: DragEvent,
       dragenter: DragEvent,
-      dragexit: Event,
       dragleave: DragEvent,
       dragover: DragEvent,
       dragstart: DragEvent,
@@ -900,6 +886,7 @@ object ojdatagridMod {
       focus: FocusEvent,
       focusin: FocusEvent,
       focusout: FocusEvent,
+      formdata: FormDataEvent,
       fullscreenchange: Event,
       fullscreenerror: Event,
       gotpointercapture: PointerEvent,
@@ -956,8 +943,9 @@ object ojdatagridMod {
       selectionModeChanged: JetElementCustomEvent[Cell],
       selectionchange: Event,
       selectstart: Event,
+      slotchange: Event,
       stalled: Event,
-      submit: Event,
+      submit: SubmitEvent,
       suspend: Event,
       timeupdate: Event,
       toggle: Event,
@@ -972,9 +960,13 @@ object ojdatagridMod {
       translationsChanged: JetElementCustomEvent[js.Object | Null],
       volumechange: Event,
       waiting: Event,
+      webkitanimationend: Event,
+      webkitanimationiteration: Event,
+      webkitanimationstart: Event,
+      webkittransitionend: Event,
       wheel: WheelEvent
     ): ojDataGridEventMap[K, D] = {
-      val __obj = js.Dynamic.literal(abort = abort.asInstanceOf[js.Any], animationcancel = animationcancel.asInstanceOf[js.Any], animationend = animationend.asInstanceOf[js.Any], animationiteration = animationiteration.asInstanceOf[js.Any], animationstart = animationstart.asInstanceOf[js.Any], auxclick = auxclick.asInstanceOf[js.Any], bandingIntervalChanged = bandingIntervalChanged.asInstanceOf[js.Any], blur = blur.asInstanceOf[js.Any], cancel = cancel.asInstanceOf[js.Any], canplay = canplay.asInstanceOf[js.Any], canplaythrough = canplaythrough.asInstanceOf[js.Any], cellChanged = cellChanged.asInstanceOf[js.Any], change = change.asInstanceOf[js.Any], click = click.asInstanceOf[js.Any], close = close.asInstanceOf[js.Any], contextmenu = contextmenu.asInstanceOf[js.Any], copy = copy.asInstanceOf[js.Any], cuechange = cuechange.asInstanceOf[js.Any], currentCellChanged = currentCellChanged.asInstanceOf[js.Any], cut = cut.asInstanceOf[js.Any], dataChanged = dataChanged.asInstanceOf[js.Any], dblclick = dblclick.asInstanceOf[js.Any], dndChanged = dndChanged.asInstanceOf[js.Any], drag = drag.asInstanceOf[js.Any], dragend = dragend.asInstanceOf[js.Any], dragenter = dragenter.asInstanceOf[js.Any], dragexit = dragexit.asInstanceOf[js.Any], dragleave = dragleave.asInstanceOf[js.Any], dragover = dragover.asInstanceOf[js.Any], dragstart = dragstart.asInstanceOf[js.Any], drop = drop.asInstanceOf[js.Any], durationchange = durationchange.asInstanceOf[js.Any], editModeChanged = editModeChanged.asInstanceOf[js.Any], emptied = emptied.asInstanceOf[js.Any], ended = ended.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], focus = focus.asInstanceOf[js.Any], focusin = focusin.asInstanceOf[js.Any], focusout = focusout.asInstanceOf[js.Any], fullscreenchange = fullscreenchange.asInstanceOf[js.Any], fullscreenerror = fullscreenerror.asInstanceOf[js.Any], gotpointercapture = gotpointercapture.asInstanceOf[js.Any], gridlinesChanged = gridlinesChanged.asInstanceOf[js.Any], headerChanged = headerChanged.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], invalid = invalid.asInstanceOf[js.Any], keydown = keydown.asInstanceOf[js.Any], keypress = keypress.asInstanceOf[js.Any], keyup = keyup.asInstanceOf[js.Any], load = load.asInstanceOf[js.Any], loadeddata = loadeddata.asInstanceOf[js.Any], loadedmetadata = loadedmetadata.asInstanceOf[js.Any], loadstart = loadstart.asInstanceOf[js.Any], lostpointercapture = lostpointercapture.asInstanceOf[js.Any], mousedown = mousedown.asInstanceOf[js.Any], mouseenter = mouseenter.asInstanceOf[js.Any], mouseleave = mouseleave.asInstanceOf[js.Any], mousemove = mousemove.asInstanceOf[js.Any], mouseout = mouseout.asInstanceOf[js.Any], mouseover = mouseover.asInstanceOf[js.Any], mouseup = mouseup.asInstanceOf[js.Any], ojBeforeCurrentCell = ojBeforeCurrentCell.asInstanceOf[js.Any], ojBeforeEdit = ojBeforeEdit.asInstanceOf[js.Any], ojBeforeEditEnd = ojBeforeEditEnd.asInstanceOf[js.Any], ojResize = ojResize.asInstanceOf[js.Any], ojScroll = ojScroll.asInstanceOf[js.Any], ojSort = ojSort.asInstanceOf[js.Any], paste = paste.asInstanceOf[js.Any], pause = pause.asInstanceOf[js.Any], play = play.asInstanceOf[js.Any], playing = playing.asInstanceOf[js.Any], pointercancel = pointercancel.asInstanceOf[js.Any], pointerdown = pointerdown.asInstanceOf[js.Any], pointerenter = pointerenter.asInstanceOf[js.Any], pointerleave = pointerleave.asInstanceOf[js.Any], pointermove = pointermove.asInstanceOf[js.Any], pointerout = pointerout.asInstanceOf[js.Any], pointerover = pointerover.asInstanceOf[js.Any], pointerup = pointerup.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], ratechange = ratechange.asInstanceOf[js.Any], reset = reset.asInstanceOf[js.Any], resize = resize.asInstanceOf[js.Any], scroll = scroll.asInstanceOf[js.Any], scrollPolicyChanged = scrollPolicyChanged.asInstanceOf[js.Any], scrollPolicyOptionsChanged = scrollPolicyOptionsChanged.asInstanceOf[js.Any], scrollPositionChanged = scrollPositionChanged.asInstanceOf[js.Any], securitypolicyviolation = securitypolicyviolation.asInstanceOf[js.Any], seeked = seeked.asInstanceOf[js.Any], seeking = seeking.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], selectionChanged = selectionChanged.asInstanceOf[js.Any], selectionModeChanged = selectionModeChanged.asInstanceOf[js.Any], selectionchange = selectionchange.asInstanceOf[js.Any], selectstart = selectstart.asInstanceOf[js.Any], stalled = stalled.asInstanceOf[js.Any], submit = submit.asInstanceOf[js.Any], suspend = suspend.asInstanceOf[js.Any], timeupdate = timeupdate.asInstanceOf[js.Any], toggle = toggle.asInstanceOf[js.Any], touchcancel = touchcancel.asInstanceOf[js.Any], touchend = touchend.asInstanceOf[js.Any], touchmove = touchmove.asInstanceOf[js.Any], touchstart = touchstart.asInstanceOf[js.Any], transitioncancel = transitioncancel.asInstanceOf[js.Any], transitionend = transitionend.asInstanceOf[js.Any], transitionrun = transitionrun.asInstanceOf[js.Any], transitionstart = transitionstart.asInstanceOf[js.Any], translationsChanged = translationsChanged.asInstanceOf[js.Any], volumechange = volumechange.asInstanceOf[js.Any], waiting = waiting.asInstanceOf[js.Any], wheel = wheel.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(abort = abort.asInstanceOf[js.Any], animationcancel = animationcancel.asInstanceOf[js.Any], animationend = animationend.asInstanceOf[js.Any], animationiteration = animationiteration.asInstanceOf[js.Any], animationstart = animationstart.asInstanceOf[js.Any], auxclick = auxclick.asInstanceOf[js.Any], bandingIntervalChanged = bandingIntervalChanged.asInstanceOf[js.Any], beforeinput = beforeinput.asInstanceOf[js.Any], blur = blur.asInstanceOf[js.Any], canplay = canplay.asInstanceOf[js.Any], canplaythrough = canplaythrough.asInstanceOf[js.Any], cellChanged = cellChanged.asInstanceOf[js.Any], change = change.asInstanceOf[js.Any], click = click.asInstanceOf[js.Any], close = close.asInstanceOf[js.Any], compositionend = compositionend.asInstanceOf[js.Any], compositionstart = compositionstart.asInstanceOf[js.Any], compositionupdate = compositionupdate.asInstanceOf[js.Any], contextmenu = contextmenu.asInstanceOf[js.Any], copy = copy.asInstanceOf[js.Any], cuechange = cuechange.asInstanceOf[js.Any], currentCellChanged = currentCellChanged.asInstanceOf[js.Any], cut = cut.asInstanceOf[js.Any], dataChanged = dataChanged.asInstanceOf[js.Any], dblclick = dblclick.asInstanceOf[js.Any], dndChanged = dndChanged.asInstanceOf[js.Any], drag = drag.asInstanceOf[js.Any], dragend = dragend.asInstanceOf[js.Any], dragenter = dragenter.asInstanceOf[js.Any], dragleave = dragleave.asInstanceOf[js.Any], dragover = dragover.asInstanceOf[js.Any], dragstart = dragstart.asInstanceOf[js.Any], drop = drop.asInstanceOf[js.Any], durationchange = durationchange.asInstanceOf[js.Any], editModeChanged = editModeChanged.asInstanceOf[js.Any], emptied = emptied.asInstanceOf[js.Any], ended = ended.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], focus = focus.asInstanceOf[js.Any], focusin = focusin.asInstanceOf[js.Any], focusout = focusout.asInstanceOf[js.Any], formdata = formdata.asInstanceOf[js.Any], fullscreenchange = fullscreenchange.asInstanceOf[js.Any], fullscreenerror = fullscreenerror.asInstanceOf[js.Any], gotpointercapture = gotpointercapture.asInstanceOf[js.Any], gridlinesChanged = gridlinesChanged.asInstanceOf[js.Any], headerChanged = headerChanged.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], invalid = invalid.asInstanceOf[js.Any], keydown = keydown.asInstanceOf[js.Any], keypress = keypress.asInstanceOf[js.Any], keyup = keyup.asInstanceOf[js.Any], load = load.asInstanceOf[js.Any], loadeddata = loadeddata.asInstanceOf[js.Any], loadedmetadata = loadedmetadata.asInstanceOf[js.Any], loadstart = loadstart.asInstanceOf[js.Any], lostpointercapture = lostpointercapture.asInstanceOf[js.Any], mousedown = mousedown.asInstanceOf[js.Any], mouseenter = mouseenter.asInstanceOf[js.Any], mouseleave = mouseleave.asInstanceOf[js.Any], mousemove = mousemove.asInstanceOf[js.Any], mouseout = mouseout.asInstanceOf[js.Any], mouseover = mouseover.asInstanceOf[js.Any], mouseup = mouseup.asInstanceOf[js.Any], ojBeforeCurrentCell = ojBeforeCurrentCell.asInstanceOf[js.Any], ojBeforeEdit = ojBeforeEdit.asInstanceOf[js.Any], ojBeforeEditEnd = ojBeforeEditEnd.asInstanceOf[js.Any], ojResize = ojResize.asInstanceOf[js.Any], ojScroll = ojScroll.asInstanceOf[js.Any], ojSort = ojSort.asInstanceOf[js.Any], paste = paste.asInstanceOf[js.Any], pause = pause.asInstanceOf[js.Any], play = play.asInstanceOf[js.Any], playing = playing.asInstanceOf[js.Any], pointercancel = pointercancel.asInstanceOf[js.Any], pointerdown = pointerdown.asInstanceOf[js.Any], pointerenter = pointerenter.asInstanceOf[js.Any], pointerleave = pointerleave.asInstanceOf[js.Any], pointermove = pointermove.asInstanceOf[js.Any], pointerout = pointerout.asInstanceOf[js.Any], pointerover = pointerover.asInstanceOf[js.Any], pointerup = pointerup.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], ratechange = ratechange.asInstanceOf[js.Any], reset = reset.asInstanceOf[js.Any], resize = resize.asInstanceOf[js.Any], scroll = scroll.asInstanceOf[js.Any], scrollPolicyChanged = scrollPolicyChanged.asInstanceOf[js.Any], scrollPolicyOptionsChanged = scrollPolicyOptionsChanged.asInstanceOf[js.Any], scrollPositionChanged = scrollPositionChanged.asInstanceOf[js.Any], securitypolicyviolation = securitypolicyviolation.asInstanceOf[js.Any], seeked = seeked.asInstanceOf[js.Any], seeking = seeking.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], selectionChanged = selectionChanged.asInstanceOf[js.Any], selectionModeChanged = selectionModeChanged.asInstanceOf[js.Any], selectionchange = selectionchange.asInstanceOf[js.Any], selectstart = selectstart.asInstanceOf[js.Any], slotchange = slotchange.asInstanceOf[js.Any], stalled = stalled.asInstanceOf[js.Any], submit = submit.asInstanceOf[js.Any], suspend = suspend.asInstanceOf[js.Any], timeupdate = timeupdate.asInstanceOf[js.Any], toggle = toggle.asInstanceOf[js.Any], touchcancel = touchcancel.asInstanceOf[js.Any], touchend = touchend.asInstanceOf[js.Any], touchmove = touchmove.asInstanceOf[js.Any], touchstart = touchstart.asInstanceOf[js.Any], transitioncancel = transitioncancel.asInstanceOf[js.Any], transitionend = transitionend.asInstanceOf[js.Any], transitionrun = transitionrun.asInstanceOf[js.Any], transitionstart = transitionstart.asInstanceOf[js.Any], translationsChanged = translationsChanged.asInstanceOf[js.Any], volumechange = volumechange.asInstanceOf[js.Any], waiting = waiting.asInstanceOf[js.Any], webkitanimationend = webkitanimationend.asInstanceOf[js.Any], webkitanimationiteration = webkitanimationiteration.asInstanceOf[js.Any], webkitanimationstart = webkitanimationstart.asInstanceOf[js.Any], webkittransitionend = webkittransitionend.asInstanceOf[js.Any], wheel = wheel.asInstanceOf[js.Any])
       __obj.asInstanceOf[ojDataGridEventMap[K, D]]
     }
     
@@ -1105,7 +1097,7 @@ object ojdatagridMod {
       
       inline def setSelectionMode(value: Cell): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
       
-      inline def setSelectionVarargs(value: Selection[K]*): Self = StObject.set(x, "selection", js.Array(value :_*))
+      inline def setSelectionVarargs(value: Selection[K]*): Self = StObject.set(x, "selection", js.Array(value*))
       
       inline def setTranslations(value: AccessibleActionableMode): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     }
@@ -1114,7 +1106,7 @@ object ojdatagridMod {
   /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojdatagrid.ojDataGridSettableProperties<K, D>> */
   trait ojDataGridSettablePropertiesLenient[K, D]
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var bandingInterval: js.UndefOr[Column] = js.undefined
     
@@ -1209,7 +1201,7 @@ object ojdatagridMod {
       
       inline def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
       
-      inline def setSelectionVarargs(value: Selection[K]*): Self = StObject.set(x, "selection", js.Array(value :_*))
+      inline def setSelectionVarargs(value: Selection[K]*): Self = StObject.set(x, "selection", js.Array(value*))
       
       inline def setTranslations(value: AccessibleActionableMode): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
       

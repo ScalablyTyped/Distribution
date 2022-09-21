@@ -23,7 +23,7 @@ object snsMod {
       
       inline def setRecords(value: js.Array[SNSEventRecord]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
       
-      inline def setRecordsVarargs(value: SNSEventRecord*): Self = StObject.set(x, "Records", js.Array(value :_*))
+      inline def setRecordsVarargs(value: SNSEventRecord*): Self = StObject.set(x, "Records", js.Array(value*))
     }
   }
   
@@ -76,6 +76,8 @@ object snsMod {
     
     var Timestamp: String
     
+    var Token: js.UndefOr[String] = js.undefined
+    
     var TopicArn: String
     
     var Type: String
@@ -118,6 +120,10 @@ object snsMod {
       inline def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
       
       inline def setTimestamp(value: String): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+      
+      inline def setToken(value: String): Self = StObject.set(x, "Token", value.asInstanceOf[js.Any])
+      
+      inline def setTokenUndefined: Self = StObject.set(x, "Token", js.undefined)
       
       inline def setTopicArn(value: String): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
       

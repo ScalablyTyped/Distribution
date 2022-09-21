@@ -16,8 +16,8 @@ trait ArmFpOperand
 }
 object ArmFpOperand {
   
-  inline def apply(subtracted: Boolean, value: Double): ArmFpOperand = {
-    val __obj = js.Dynamic.literal(subtracted = subtracted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  inline def apply(access: OperandAccess, subtracted: Boolean, value: Double): ArmFpOperand = {
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any], subtracted = subtracted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("fp")
     __obj.asInstanceOf[ArmFpOperand]
   }

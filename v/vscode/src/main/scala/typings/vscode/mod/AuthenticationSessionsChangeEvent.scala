@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AuthenticationSessionsChangeEvent extends StObject {
   
   /**
-    * The [authenticationProvider](#AuthenticationProvider) that has had its sessions change.
+    * The {@link AuthenticationProvider} that has had its sessions change.
     */
   val provider: AuthenticationProviderInformation
 }

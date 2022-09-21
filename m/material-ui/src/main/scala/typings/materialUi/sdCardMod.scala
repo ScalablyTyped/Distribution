@@ -10,10 +10,10 @@ object sdCardMod {
   
   @JSImport("material-ui/svg-icons/notification/sd-card", JSImport.Default)
   @js.native
-  class default () extends NotificationSdCard
+  open class default () extends NotificationSdCard
   
   @JSImport("material-ui/svg-icons/notification/sd-card", "NotificationSdCard")
   @js.native
-  class NotificationSdCard ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NotificationSdCard ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

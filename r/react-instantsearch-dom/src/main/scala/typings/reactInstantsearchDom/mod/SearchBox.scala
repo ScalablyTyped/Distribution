@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-instantsearch-dom", "SearchBox")
 @js.native
-class SearchBox protected ()
-  extends Component[SearchBoxProps, js.Object, js.Any] {
+open class SearchBox protected ()
+  extends Component[SearchBoxProps, js.Object, Any] {
   def this(props: SearchBoxProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: SearchBoxProps, context: js.Any) = this()
+  def this(props: SearchBoxProps, context: Any) = this()
 }

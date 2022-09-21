@@ -51,6 +51,6 @@ object DescribePrincipalIdFormatRequest {
     
     inline def setResourcesUndefined: Self = StObject.set(x, "Resources", js.undefined)
     
-    inline def setResourcesVarargs(value: String*): Self = StObject.set(x, "Resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: String*): Self = StObject.set(x, "Resources", js.Array(value*))
   }
 }

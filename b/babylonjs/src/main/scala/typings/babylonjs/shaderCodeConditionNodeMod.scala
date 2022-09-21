@@ -9,5 +9,5 @@ object shaderCodeConditionNodeMod {
   
   @JSImport("babylonjs/Engines/Processors/shaderCodeConditionNode", "ShaderCodeConditionNode")
   @js.native
-  class ShaderCodeConditionNode () extends ShaderCodeNode
+  open class ShaderCodeConditionNode () extends ShaderCodeNode
 }

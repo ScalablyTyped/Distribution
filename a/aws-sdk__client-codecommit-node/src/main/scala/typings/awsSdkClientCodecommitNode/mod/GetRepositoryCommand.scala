@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-codecommit-node", "GetRepositoryCommand")
 @js.native
-class GetRepositoryCommand protected ()
+open class GetRepositoryCommand protected ()
   extends typings.awsSdkClientCodecommitNode.getRepositoryCommandMod.GetRepositoryCommand {
   def this(input: GetRepositoryInput) = this()
 }

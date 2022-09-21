@@ -21,6 +21,8 @@ trait Zoom
   /**
     * Determines the layout/orientation of the Zoom widget.
     *
+    * @default vertical
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Zoom.html#layout)
     */
   var layout: vertical | horizontal = js.native
@@ -44,12 +46,12 @@ trait Zoom
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Zoom.html#zoomIn)
     */
-  def zoomIn(): Unit = js.native
+  def zoomIn(): scala.Unit = js.native
   
   /**
     * Zooms the view out by an LOD factor of 2.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Zoom.html#zoomOut)
     */
-  def zoomOut(): Unit = js.native
+  def zoomOut(): scala.Unit = js.native
 }

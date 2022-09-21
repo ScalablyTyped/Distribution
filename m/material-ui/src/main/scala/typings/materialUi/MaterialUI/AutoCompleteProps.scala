@@ -37,7 +37,7 @@ trait AutoCompleteProps[DataItem]
   
   var menuCloseDelay: js.UndefOr[Double] = js.undefined
   
-  var menuProps: js.UndefOr[js.Any] = js.undefined
+  var menuProps: js.UndefOr[Any] = js.undefined
   
   var menuStyle: js.UndefOr[CSSProperties] = js.undefined
   
@@ -84,7 +84,7 @@ object AutoCompleteProps {
     
     inline def setDataSourceConfigUndefined: Self = StObject.set(x, "dataSourceConfig", js.undefined)
     
-    inline def setDataSourceVarargs(value: DataItem*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
+    inline def setDataSourceVarargs(value: DataItem*): Self = StObject.set(x, "dataSource", js.Array(value*))
     
     inline def setDisableFocusRipple(value: Boolean): Self = StObject.set(x, "disableFocusRipple", value.asInstanceOf[js.Any])
     
@@ -106,7 +106,7 @@ object AutoCompleteProps {
     
     inline def setMenuCloseDelayUndefined: Self = StObject.set(x, "menuCloseDelay", js.undefined)
     
-    inline def setMenuProps(value: js.Any): Self = StObject.set(x, "menuProps", value.asInstanceOf[js.Any])
+    inline def setMenuProps(value: Any): Self = StObject.set(x, "menuProps", value.asInstanceOf[js.Any])
     
     inline def setMenuPropsUndefined: Self = StObject.set(x, "menuProps", js.undefined)
     

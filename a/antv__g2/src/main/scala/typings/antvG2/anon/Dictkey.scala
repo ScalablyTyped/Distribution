@@ -1,18 +1,18 @@
 package typings.antvG2.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.antvG2.mod.Styles.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Dictkey
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /**
+  * @title 其他自定义的 option
+  */
+/* name */ StringDictionary[Any] {
   
-  var offset: js.UndefOr[Double] = js.undefined
-  
-  var textStyle: js.UndefOr[text] = js.undefined
+  var rotate: js.UndefOr[Double] = js.undefined
 }
 object Dictkey {
   
@@ -23,12 +23,8 @@ object Dictkey {
   
   extension [Self <: Dictkey](x: Self) {
     
-    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
-    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
-    
-    inline def setTextStyle(value: text): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
-    
-    inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+    inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
   }
 }

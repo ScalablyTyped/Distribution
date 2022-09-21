@@ -8,7 +8,7 @@ trait FileDialog extends StObject {
   
   var AllowMultiSelect: Boolean
   
-  val Application: js.Any
+  val Application: Any
   
   var ButtonName: String
   
@@ -33,7 +33,7 @@ trait FileDialog extends StObject {
   /* private */ @JSName("Office.FileDialog_typekey")
   var OfficeDotFileDialog_typekey: FileDialog
   
-  val Parent: js.Any
+  val Parent: Any
   
   def SelectedItems(Index: Double): String
   @JSName("SelectedItems")
@@ -47,7 +47,7 @@ object FileDialog {
   
   inline def apply(
     AllowMultiSelect: Boolean,
-    Application: js.Any,
+    Application: Any,
     ButtonName: String,
     Creator: Double,
     DialogType: MsoFileDialogType,
@@ -58,7 +58,7 @@ object FileDialog {
     InitialView: MsoFileDialogView,
     Item: String,
     OfficeDotFileDialog_typekey: FileDialog,
-    Parent: js.Any,
+    Parent: Any,
     SelectedItems: FileDialogSelectedItems,
     Show: () => Double,
     Title: String
@@ -72,7 +72,7 @@ object FileDialog {
     
     inline def setAllowMultiSelect(value: Boolean): Self = StObject.set(x, "AllowMultiSelect", value.asInstanceOf[js.Any])
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setButtonName(value: String): Self = StObject.set(x, "ButtonName", value.asInstanceOf[js.Any])
     
@@ -94,7 +94,7 @@ object FileDialog {
     
     inline def setOfficeDotFileDialog_typekey(value: FileDialog): Self = StObject.set(x, "Office.FileDialog_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSelectedItems(value: FileDialogSelectedItems): Self = StObject.set(x, "SelectedItems", value.asInstanceOf[js.Any])
     

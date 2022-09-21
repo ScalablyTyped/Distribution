@@ -24,7 +24,7 @@ trait ModifyClusterMaintenanceMessage extends StObject {
   /**
     * A timestamp indicating end time for the deferred maintenance window. If you specify an end time, you can't specify a duration.
     */
-  var DeferMaintenanceEndTime: js.UndefOr[TStamp] = js.undefined
+  var DeferMaintenanceEndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A unique identifier for the deferred maintenance window.
@@ -34,7 +34,7 @@ trait ModifyClusterMaintenanceMessage extends StObject {
   /**
     * A timestamp indicating the start time for the deferred maintenance window.
     */
-  var DeferMaintenanceStartTime: js.UndefOr[TStamp] = js.undefined
+  var DeferMaintenanceStartTime: js.UndefOr[js.Date] = js.undefined
 }
 object ModifyClusterMaintenanceMessage {
   
@@ -53,7 +53,7 @@ object ModifyClusterMaintenanceMessage {
     
     inline def setDeferMaintenanceDurationUndefined: Self = StObject.set(x, "DeferMaintenanceDuration", js.undefined)
     
-    inline def setDeferMaintenanceEndTime(value: TStamp): Self = StObject.set(x, "DeferMaintenanceEndTime", value.asInstanceOf[js.Any])
+    inline def setDeferMaintenanceEndTime(value: js.Date): Self = StObject.set(x, "DeferMaintenanceEndTime", value.asInstanceOf[js.Any])
     
     inline def setDeferMaintenanceEndTimeUndefined: Self = StObject.set(x, "DeferMaintenanceEndTime", js.undefined)
     
@@ -61,7 +61,7 @@ object ModifyClusterMaintenanceMessage {
     
     inline def setDeferMaintenanceIdentifierUndefined: Self = StObject.set(x, "DeferMaintenanceIdentifier", js.undefined)
     
-    inline def setDeferMaintenanceStartTime(value: TStamp): Self = StObject.set(x, "DeferMaintenanceStartTime", value.asInstanceOf[js.Any])
+    inline def setDeferMaintenanceStartTime(value: js.Date): Self = StObject.set(x, "DeferMaintenanceStartTime", value.asInstanceOf[js.Any])
     
     inline def setDeferMaintenanceStartTimeUndefined: Self = StObject.set(x, "DeferMaintenanceStartTime", js.undefined)
     

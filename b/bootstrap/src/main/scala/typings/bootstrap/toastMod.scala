@@ -1,6 +1,15 @@
 package typings.bootstrap
 
-import typings.std.Element
+import typings.bootstrap.anon.PartialOptionsAnimation
+import typings.bootstrap.baseComponentMod.GetInstanceFactory
+import typings.bootstrap.baseComponentMod.GetOrCreateInstanceFactory
+import typings.bootstrap.bootstrapStrings.dispose
+import typings.bootstrap.bootstrapStrings.hide
+import typings.bootstrap.bootstrapStrings.show
+import typings.bootstrap.mod.global.Element
+import typings.bootstrap.mod.global.JQuery
+import typings.bootstrap.toastMod.Toast.Options
+import typings.bootstrap.toastMod.Toast.jQueryInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,30 +18,28 @@ object toastMod {
   
   @JSImport("bootstrap/js/dist/toast", JSImport.Default)
   @js.native
-  class default protected ()
-    extends StObject
-       with Toast {
+  open class default protected () extends Toast {
+    def this(element: String) = this()
     def this(element: Element) = this()
-    
-    /**
-      * Destroys an element’s scrollspy.
-      */
-    /* CompleteClass */
-    override def dispose(): Unit = js.native
-    
-    /**
-      * When using scrollspy in conjunction with adding or removing of
-      * elements from the DOM, you’ll need to call the refresh method like
-      * so:
-      */
-    /* CompleteClass */
-    override def refresh(): Unit = js.native
+    def this(element: String, options: PartialOptionsAnimation) = this()
+    def this(element: Element, options: PartialOptionsAnimation) = this()
   }
   object default {
     
     @JSImport("bootstrap/js/dist/toast", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
+    
+    /**
+      * Default settings of this plugin
+      *
+      * @link https://getbootstrap.com/docs/5.0/getting-started/javascript/#default-settings
+      */
+    /* static member */
+    @JSImport("bootstrap/js/dist/toast", "default.Default")
+    @js.native
+    def Default: Options = js.native
+    inline def Default_=(x: Options): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Default")(x.asInstanceOf[js.Any])
     
     @JSImport("bootstrap/js/dist/toast", "default.Events")
     @js.native
@@ -51,33 +58,51 @@ object toastMod {
     }
     
     /**
-      * Static method which allows you to get the scrollspy instance associated
+      * Static method which allows you to get the toast instance associated
       * with a DOM element
       */
     /* static member */
-    inline def getInstance(element: Element): Toast = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[Toast]
+    @JSImport("bootstrap/js/dist/toast", "default.getInstance")
+    @js.native
+    def getInstance: GetInstanceFactory[Toast] = js.native
+    inline def getInstance_=(x: GetInstanceFactory[Toast]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
+    
+    /**
+      * Static method which allows you to get the scrollspy instance associated with a
+      * DOM element, or create a new one in case it wasn’t initialised
+      */
+    /* static member */
+    @JSImport("bootstrap/js/dist/toast", "default.getOrCreateInstance")
+    @js.native
+    def getOrCreateInstance: GetOrCreateInstanceFactory[Toast, PartialOptionsAnimation] = js.native
+    inline def getOrCreateInstance_=(x: GetOrCreateInstanceFactory[Toast, PartialOptionsAnimation]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOrCreateInstance")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("bootstrap/js/dist/toast", "default.jQueryInterface")
+    @js.native
+    def jQueryInterface: typings.bootstrap.toastMod.Toast.jQueryInterface = js.native
+    inline def jQueryInterface_=(x: jQueryInterface): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("jQueryInterface")(x.asInstanceOf[js.Any])
   }
   
-  trait Toast extends StObject {
+  @js.native
+  trait Toast
+    extends typings.bootstrap.baseComponentMod.default {
     
     /**
-      * Destroys an element’s scrollspy.
+      * Hides an element’s toast. Returns to the caller before the toast has actually
+      * been hidden (i.e. before the hidden.bs.toast event occurs).
+      * You have to manually call this method if you made autohide to false.
       */
-    def dispose(): Unit
+    def hide(): Unit = js.native
     
     /**
-      * When using scrollspy in conjunction with adding or removing of
-      * elements from the DOM, you’ll need to call the refresh method like
-      * so:
+      * Reveals an element’s toast. Returns to the caller before the toast has actually
+      * been shown (i.e. before the shown.bs.toast event occurs).
+      * You have to manually call this method, instead your toast won’t show.
       */
-    def refresh(): Unit
+    def show(): Unit = js.native
   }
   object Toast {
-    
-    inline def apply(dispose: () => Unit, refresh: () => Unit): Toast = {
-      val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), refresh = js.Any.fromFunction0(refresh))
-      __obj.asInstanceOf[Toast]
-    }
     
     @js.native
     sealed trait Events extends StObject
@@ -139,7 +164,7 @@ object toastMod {
       /**
         * Delay hiding the toast (ms)
         *
-        * @default 500
+        * @default 5000
         */
       var delay: Double
     }
@@ -160,11 +185,6 @@ object toastMod {
       }
     }
     
-    extension [Self <: Toast](x: Self) {
-      
-      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
-      
-      inline def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
-    }
+    type jQueryInterface = js.Function1[/* config */ js.UndefOr[PartialOptionsAnimation | show | hide | dispose], JQuery]
   }
 }

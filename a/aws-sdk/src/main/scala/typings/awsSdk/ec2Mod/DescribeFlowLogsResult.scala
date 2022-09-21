@@ -29,7 +29,7 @@ object DescribeFlowLogsResult {
     
     inline def setFlowLogsUndefined: Self = StObject.set(x, "FlowLogs", js.undefined)
     
-    inline def setFlowLogsVarargs(value: FlowLog*): Self = StObject.set(x, "FlowLogs", js.Array(value :_*))
+    inline def setFlowLogsVarargs(value: FlowLog*): Self = StObject.set(x, "FlowLogs", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

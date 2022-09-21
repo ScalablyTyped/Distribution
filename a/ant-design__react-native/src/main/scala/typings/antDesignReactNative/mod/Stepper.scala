@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@ant-design/react-native", "Stepper")
 @js.native
-class Stepper () extends default
+open class Stepper () extends default
 /* static members */
 object Stepper {
   

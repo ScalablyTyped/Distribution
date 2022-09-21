@@ -29,7 +29,7 @@ trait Name extends StObject {
   
   var NameLocal: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   var RefersTo: String
   
@@ -71,7 +71,7 @@ object Name {
     MacroType: XlXLMMacroType,
     Name: String,
     NameLocal: String,
-    Parent: js.Any,
+    Parent: Any,
     RefersTo: String,
     RefersToLocal: String,
     RefersToR1C1: String,
@@ -113,7 +113,7 @@ object Name {
     
     inline def setNameLocal(value: String): Self = StObject.set(x, "NameLocal", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRefersTo(value: String): Self = StObject.set(x, "RefersTo", value.asInstanceOf[js.Any])
     

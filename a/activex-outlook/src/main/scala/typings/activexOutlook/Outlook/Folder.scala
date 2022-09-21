@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Folder extends StObject {
   
   def AddToFavorites(): Unit = js.native
-  def AddToFavorites(fNoUI: js.Any): Unit = js.native
-  def AddToFavorites(fNoUI: js.Any, Name: js.Any): Unit = js.native
-  def AddToFavorites(fNoUI: Unit, Name: js.Any): Unit = js.native
+  def AddToFavorites(fNoUI: Any): Unit = js.native
+  def AddToFavorites(fNoUI: Any, Name: Any): Unit = js.native
+  def AddToFavorites(fNoUI: Unit, Name: Any): Unit = js.native
   
   def AddToPFFavorites(): Unit = js.native
   
@@ -50,14 +50,14 @@ trait Folder extends StObject {
   def GetCustomIcon(): StdPicture = js.native
   
   def GetExplorer(): Explorer = js.native
-  def GetExplorer(DisplayMode: js.Any): Explorer = js.native
+  def GetExplorer(DisplayMode: Any): Explorer = js.native
   
   def GetStorage(StorageIdentifier: String, StorageIdentifierType: OlStorageIdentifierType): StorageItem = js.native
   
   def GetTable(): Table = js.native
-  def GetTable(Filter: js.Any): Table = js.native
-  def GetTable(Filter: js.Any, TableContents: js.Any): Table = js.native
-  def GetTable(Filter: Unit, TableContents: js.Any): Table = js.native
+  def GetTable(Filter: Any): Table = js.native
+  def GetTable(Filter: Any, TableContents: Any): Table = js.native
+  def GetTable(Filter: Unit, TableContents: Any): Table = js.native
   
   var InAppFolderSyncObject: Boolean = js.native
   
@@ -65,7 +65,7 @@ trait Folder extends StObject {
   
   val Items: typings.activexOutlook.Outlook.Items = js.native
   
-  val MAPIOBJECT: js.Any = js.native
+  val MAPIOBJECT: Any = js.native
   
   def MoveTo(DestinationFolder: Folder): Unit = js.native
   
@@ -74,7 +74,7 @@ trait Folder extends StObject {
   /* private */ @JSName("Outlook.Folder_typekey")
   var OutlookDotFolder_typekey: Folder = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   val PropertyAccessor: typings.activexOutlook.Outlook.PropertyAccessor = js.native
   
@@ -94,7 +94,7 @@ trait Folder extends StObject {
   
   val UserDefinedProperties: typings.activexOutlook.Outlook.UserDefinedProperties = js.native
   
-  val UserPermissions: js.Any = js.native
+  val UserPermissions: Any = js.native
   
   val Views: typings.activexOutlook.Outlook.Views = js.native
   

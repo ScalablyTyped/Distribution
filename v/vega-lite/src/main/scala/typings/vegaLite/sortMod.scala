@@ -32,7 +32,7 @@ object sortMod {
   */
   trait AllSortString
     extends StObject
-       with _Sort[js.Any]
+       with _Sort[Any]
   
   trait EncodingSortField[F]
     extends StObject
@@ -161,7 +161,7 @@ object sortMod {
   
   trait SortByEncoding
     extends StObject
-       with _Sort[js.Any] {
+       with _Sort[Any] {
     
     /**
       * The [encoding channel](https://vega.github.io/vega-lite/docs/encoding.html#channels) to sort by (e.g., `"x"`, `"y"`)
@@ -240,13 +240,13 @@ object sortMod {
       
       inline def setField(value: js.Array[FieldName]): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
-      inline def setFieldVarargs(value: FieldName*): Self = StObject.set(x, "field", js.Array(value :_*))
+      inline def setFieldVarargs(value: FieldName*): Self = StObject.set(x, "field", js.Array(value*))
       
       inline def setOrder(value: js.Array[SortOrder]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
       inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
-      inline def setOrderVarargs(value: SortOrder*): Self = StObject.set(x, "order", js.Array(value :_*))
+      inline def setOrderVarargs(value: SortOrder*): Self = StObject.set(x, "order", js.Array(value*))
     }
   }
   

@@ -29,7 +29,7 @@ trait Chart3dOptions extends StObject {
   var depth: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highcharts) Wether to render the chart using the 3D functionality.
+    * (Highcharts) Whether to render the chart using the 3D functionality.
     */
   var enabled: js.UndefOr[Boolean] = js.undefined
   

@@ -9,11 +9,11 @@ Load environment variables using import statements.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-native-dotenv |
-| Keywords           | dotenv, babel-plugin, react, react-native |
-| # releases         | 14 |
-| # dependents       | 19 |
-| # downloads        | 2128545 |
-| # stars            | 1 |
+| Keywords           | dotenv, babel-plugin, babel, dotenv-flow, react, react-native, config, env, 12factor |
+| # releases         | 24 |
+| # dependents       | 0.0 |
+| # downloads        | 341181.6666666667 |
+| # stars            | 470.0 |
 
 ## Links
 - [Homepage](https://github.com/goatandsheep/react-native-dotenv)

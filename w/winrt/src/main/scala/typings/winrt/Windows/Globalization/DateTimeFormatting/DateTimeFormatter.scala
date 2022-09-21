@@ -1,6 +1,5 @@
 package typings.winrt.Windows.Globalization.DateTimeFormatting
 
-import typings.std.Date
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,7 +13,7 @@ object DateTimeFormatter {
   inline def apply(
     calendar: String,
     clock: String,
-    format: Date => String,
+    format: js.Date => String,
     geographicRegion: String,
     includeDay: DayFormat,
     includeDayOfWeek: DayOfWeekFormat,

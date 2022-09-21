@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ojSelectOneSettableProperties[K, D]
   extends StObject
-     with editableValueSettableProperties[js.Any, js.Any, js.Any] {
+     with editableValueSettableProperties[Any, Any, Any] {
   
   var minimumResultsForSearch: Double
   
@@ -68,7 +68,7 @@ object ojSelectOneSettableProperties {
     required: Boolean,
     translations: MoreMatchesFound,
     valid: valid | pending | invalidHidden | invalidShown,
-    value: js.Any,
+    value: Any,
     valueOption: LabelValue
   ): ojSelectOneSettableProperties[K, D] = {
     val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], displayOptions = displayOptions.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any], helpHints = helpHints.asInstanceOf[js.Any], labelHint = labelHint.asInstanceOf[js.Any], messagesCustom = messagesCustom.asInstanceOf[js.Any], minimumResultsForSearch = minimumResultsForSearch.asInstanceOf[js.Any], optionsKeys = optionsKeys.asInstanceOf[js.Any], pickerAttributes = pickerAttributes.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any], renderMode = renderMode.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], valueOption = valueOption.asInstanceOf[js.Any], describedBy = null, options = null, placeholder = null)
@@ -97,7 +97,7 @@ object ojSelectOneSettableProperties {
     
     inline def setOptionsVarargs(
       value: (typings.oracleOraclejet.ojselectcomboboxMod.ojSelect.Option | typings.oracleOraclejet.ojselectcomboboxMod.ojSelect.Optgroup)*
-    ): Self = StObject.set(x, "options", js.Array(value :_*))
+    ): Self = StObject.set(x, "options", js.Array(value*))
     
     inline def setPickerAttributes(value: Class): Self = StObject.set(x, "pickerAttributes", value.asInstanceOf[js.Any])
     

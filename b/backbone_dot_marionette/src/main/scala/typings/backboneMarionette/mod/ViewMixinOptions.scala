@@ -51,7 +51,7 @@ trait ViewMixinOptions extends StObject {
     * Name parts of your template to be used
     * throughout the view with the ui attribute.
     */
-  var ui: js.UndefOr[js.Any] = js.undefined
+  var ui: js.UndefOr[Any] = js.undefined
 }
 object ViewMixinOptions {
   
@@ -66,7 +66,7 @@ object ViewMixinOptions {
     
     inline def setBehaviorsUndefined: Self = StObject.set(x, "behaviors", js.undefined)
     
-    inline def setBehaviorsVarargs(value: Behavior*): Self = StObject.set(x, "behaviors", js.Array(value :_*))
+    inline def setBehaviorsVarargs(value: Behavior*): Self = StObject.set(x, "behaviors", js.Array(value*))
     
     inline def setChildViewEventPrefix(value: String | `false`): Self = StObject.set(x, "childViewEventPrefix", value.asInstanceOf[js.Any])
     
@@ -92,7 +92,7 @@ object ViewMixinOptions {
     
     inline def setTriggersUndefined: Self = StObject.set(x, "triggers", js.undefined)
     
-    inline def setUi(value: js.Any): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
+    inline def setUi(value: Any): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
     
     inline def setUiUndefined: Self = StObject.set(x, "ui", js.undefined)
   }

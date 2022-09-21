@@ -6,22 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ToastNotificationActionTriggerDetail extends StObject {
   
-  var argument: js.Any
+  var argument: Any
   
   /* unmapped type */
-  var userInput: js.Any
+  var userInput: Any
 }
 object ToastNotificationActionTriggerDetail {
   
-  inline def apply(argument: js.Any, userInput: js.Any): ToastNotificationActionTriggerDetail = {
+  inline def apply(argument: Any, userInput: Any): ToastNotificationActionTriggerDetail = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], userInput = userInput.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToastNotificationActionTriggerDetail]
   }
   
   extension [Self <: ToastNotificationActionTriggerDetail](x: Self) {
     
-    inline def setArgument(value: js.Any): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
+    inline def setArgument(value: Any): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     
-    inline def setUserInput(value: js.Any): Self = StObject.set(x, "userInput", value.asInstanceOf[js.Any])
+    inline def setUserInput(value: Any): Self = StObject.set(x, "userInput", value.asInstanceOf[js.Any])
   }
 }

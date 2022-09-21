@@ -6,70 +6,57 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RequestInit extends StObject {
   
-  /**
-    * A BodyInit object or null to set request's body.
-    */
+  /** A BodyInit object or null to set request's body. */
+  /* standard dom */
   var body: js.UndefOr[BodyInit | Null] = js.undefined
   
-  /**
-    * A string indicating how the request will interact with the browser's cache to set request's cache.
-    */
+  /** A string indicating how the request will interact with the browser's cache to set request's cache. */
+  /* standard dom */
   var cache: js.UndefOr[RequestCache] = js.undefined
   
-  /**
-    * A string indicating whether credentials will be sent with the request always, never, or only when sent to a same-origin URL. Sets request's credentials.
-    */
+  /** A string indicating whether credentials will be sent with the request always, never, or only when sent to a same-origin URL. Sets request's credentials. */
+  /* standard dom */
   var credentials: js.UndefOr[RequestCredentials] = js.undefined
   
-  /**
-    * A Headers object, an object literal, or an array of two-item arrays to set request's headers.
-    */
+  /** A Headers object, an object literal, or an array of two-item arrays to set request's headers. */
+  /* standard dom */
   var headers: js.UndefOr[HeadersInit] = js.undefined
   
-  /**
-    * A cryptographic hash of the resource to be fetched by request. Sets request's integrity.
-    */
+  /** A cryptographic hash of the resource to be fetched by request. Sets request's integrity. */
+  /* standard dom */
   var integrity: js.UndefOr[java.lang.String] = js.undefined
   
-  /**
-    * A boolean to set request's keepalive.
-    */
+  /** A boolean to set request's keepalive. */
+  /* standard dom */
   var keepalive: js.UndefOr[scala.Boolean] = js.undefined
   
-  /**
-    * A string to set request's method.
-    */
+  /** A string to set request's method. */
+  /* standard dom */
   var method: js.UndefOr[java.lang.String] = js.undefined
   
-  /**
-    * A string to indicate whether the request will use CORS, or will be restricted to same-origin URLs. Sets request's mode.
-    */
+  /** A string to indicate whether the request will use CORS, or will be restricted to same-origin URLs. Sets request's mode. */
+  /* standard dom */
   var mode: js.UndefOr[RequestMode] = js.undefined
   
-  /**
-    * A string indicating whether request follows redirects, results in an error upon encountering a redirect, or returns the redirect (in an opaque fashion). Sets request's redirect.
-    */
+  /** A string indicating whether request follows redirects, results in an error upon encountering a redirect, or returns the redirect (in an opaque fashion). Sets request's redirect. */
+  /* standard dom */
   var redirect: js.UndefOr[RequestRedirect] = js.undefined
   
-  /**
-    * A string whose value is a same-origin URL, "about:client", or the empty string, to set request's referrer.
-    */
+  /** A string whose value is a same-origin URL, "about:client", or the empty string, to set request's referrer. */
+  /* standard dom */
   var referrer: js.UndefOr[java.lang.String] = js.undefined
   
-  /**
-    * A referrer policy to set request's referrerPolicy.
-    */
+  /** A referrer policy to set request's referrerPolicy. */
+  /* standard dom */
   var referrerPolicy: js.UndefOr[ReferrerPolicy] = js.undefined
   
-  /**
-    * An AbortSignal to set request's signal.
-    */
+  /** An AbortSignal to set request's signal. */
+  /* standard dom */
   var signal: js.UndefOr[AbortSignal | Null] = js.undefined
   
-  /**
-    * Can only be null. Used to disassociate request from any Window.
-    */
-  var window: js.UndefOr[js.Any] = js.undefined
+  /** Can only be null. Used to disassociate request from any Window. */
+  /* standard dom */
+  var window: js.UndefOr[Null] = js.undefined
 }
 object RequestInit {
   
@@ -98,7 +85,7 @@ object RequestInit {
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    inline def setHeadersVarargs(value: js.Array[java.lang.String]*): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: (js.Tuple2[java.lang.String, java.lang.String])*): Self = StObject.set(x, "headers", js.Array(value*))
     
     inline def setIntegrity(value: java.lang.String): Self = StObject.set(x, "integrity", value.asInstanceOf[js.Any])
     
@@ -133,9 +120,5 @@ object RequestInit {
     inline def setSignalNull: Self = StObject.set(x, "signal", null)
     
     inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
-    
-    inline def setWindow(value: js.Any): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
-    
-    inline def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
   }
 }

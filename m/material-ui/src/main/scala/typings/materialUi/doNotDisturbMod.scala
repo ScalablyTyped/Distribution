@@ -10,10 +10,10 @@ object doNotDisturbMod {
   
   @JSImport("material-ui/svg-icons/notification/do-not-disturb", JSImport.Default)
   @js.native
-  class default () extends NotificationDoNotDisturb
+  open class default () extends NotificationDoNotDisturb
   
   @JSImport("material-ui/svg-icons/notification/do-not-disturb", "NotificationDoNotDisturb")
   @js.native
-  class NotificationDoNotDisturb ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NotificationDoNotDisturb ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

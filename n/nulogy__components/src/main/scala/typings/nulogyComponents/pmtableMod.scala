@@ -8,5 +8,5 @@ object pmtableMod {
   
   @JSImport("@nulogy/components/src/PMTable", "PMTable")
   @js.native
-  val PMTable: js.Any = js.native
+  val PMTable: Any = js.native
 }

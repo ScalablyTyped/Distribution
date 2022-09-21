@@ -9,7 +9,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined delay.delay.Delay & {createWithTimers (timers : {  clearTimeout :{None (handle : number): void, None (): void},   setTimeout :{None (handler : std.TimerHandler, timeout : undefined, arguments : ...any): number, None (handler : std.TimerHandler, timeout : number, arguments : ...any): number}}): delay.delay.Delay,   default :/ * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof delay * / any} */
+/* Inlined delay.delay.Delay & {createWithTimers (timers : {clearTimeout (timeoutId : any): void, setTimeout (callback : (args : ...any): void, milliseconds : number, args : ...any): unknown}): delay.delay.Delay,   default :/ * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof delay * / any} */
 object mod {
   
   /**
@@ -28,11 +28,12 @@ object mod {
   // TODO: Remove this for the next major release.
   @JSImport("delay", "default")
   @js.native
-  def default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof delay */ js.Any = js.native
+  def default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof delay */ Any = js.native
   
+  // The types are intentionally loose to make it work with both Node.js and browser versions of these methods.
   inline def createWithTimers(timers: ClearTimeout): Delay = ^.asInstanceOf[js.Dynamic].applyDynamic("createWithTimers")(timers.asInstanceOf[js.Any]).asInstanceOf[Delay]
   
-  inline def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof delay */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof delay */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   /**
   	Create a promise which resolves after a random amount of milliseconds between `minimum` and `maximum` has passed.

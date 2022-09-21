@@ -9,22 +9,22 @@ trait ListTestGridSessionsRequest extends StObject {
   /**
     * Return only sessions created after this time.
     */
-  var creationTimeAfter: js.UndefOr[DateTime] = js.undefined
+  var creationTimeAfter: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Return only sessions created before this time.
     */
-  var creationTimeBefore: js.UndefOr[DateTime] = js.undefined
+  var creationTimeBefore: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Return only sessions that ended after this time.
     */
-  var endTimeAfter: js.UndefOr[DateTime] = js.undefined
+  var endTimeAfter: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Return only sessions that ended before this time.
     */
-  var endTimeBefore: js.UndefOr[DateTime] = js.undefined
+  var endTimeBefore: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Return only this many results at a time.
@@ -55,19 +55,19 @@ object ListTestGridSessionsRequest {
   
   extension [Self <: ListTestGridSessionsRequest](x: Self) {
     
-    inline def setCreationTimeAfter(value: DateTime): Self = StObject.set(x, "creationTimeAfter", value.asInstanceOf[js.Any])
+    inline def setCreationTimeAfter(value: js.Date): Self = StObject.set(x, "creationTimeAfter", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeAfterUndefined: Self = StObject.set(x, "creationTimeAfter", js.undefined)
     
-    inline def setCreationTimeBefore(value: DateTime): Self = StObject.set(x, "creationTimeBefore", value.asInstanceOf[js.Any])
+    inline def setCreationTimeBefore(value: js.Date): Self = StObject.set(x, "creationTimeBefore", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeBeforeUndefined: Self = StObject.set(x, "creationTimeBefore", js.undefined)
     
-    inline def setEndTimeAfter(value: DateTime): Self = StObject.set(x, "endTimeAfter", value.asInstanceOf[js.Any])
+    inline def setEndTimeAfter(value: js.Date): Self = StObject.set(x, "endTimeAfter", value.asInstanceOf[js.Any])
     
     inline def setEndTimeAfterUndefined: Self = StObject.set(x, "endTimeAfter", js.undefined)
     
-    inline def setEndTimeBefore(value: DateTime): Self = StObject.set(x, "endTimeBefore", value.asInstanceOf[js.Any])
+    inline def setEndTimeBefore(value: js.Date): Self = StObject.set(x, "endTimeBefore", value.asInstanceOf[js.Any])
     
     inline def setEndTimeBeforeUndefined: Self = StObject.set(x, "endTimeBefore", js.undefined)
     

@@ -9,14 +9,16 @@ Offical NodeJS SDK for ImageKit.io integration
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | imagekit |
-| Keywords           | - |
-| # releases         | 14 |
-| # dependents       | 5 |
-| # downloads        | 84204 |
-| # stars            | 0 |
+| Keywords           | imagekit, nodejs, javascript, sdk, js, sdk, image, optimization, image, transformation, image, resize |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 26796.666666666668 |
+| # stars            | 49.0 |
 
 ## Links
 - [Homepage](https://imagekit.io/)
+- [Bugs](https://github.com/imagekit-developer/imagekit-nodejs/issues)
+- [Repository](https://github.com/imagekit-developer/imagekit-nodejs)
 - [Npm](https://www.npmjs.com/package/imagekit)
     
 

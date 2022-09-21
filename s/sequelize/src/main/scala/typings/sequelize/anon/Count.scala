@@ -23,6 +23,6 @@ object Count {
     
     inline def setRows(value: js.Array[TInstance]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    inline def setRowsVarargs(value: TInstance*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: TInstance*): Self = StObject.set(x, "rows", js.Array(value*))
   }
 }

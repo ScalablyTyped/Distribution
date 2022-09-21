@@ -15,10 +15,12 @@ object ISurveyErrorOwner {
   inline def apply(
     getErrorCustomText: (String, SurveyError) => String,
     getLocale: () => String,
-    getMarkdownHtml: String => String,
-    getProcessedText: String => String
+    getMarkdownHtml: (String, String) => String,
+    getProcessedText: String => String,
+    getRenderer: String => String,
+    getRendererContext: LocalizableString => Any
   ): ISurveyErrorOwner = {
-    val __obj = js.Dynamic.literal(getErrorCustomText = js.Any.fromFunction2(getErrorCustomText), getLocale = js.Any.fromFunction0(getLocale), getMarkdownHtml = js.Any.fromFunction1(getMarkdownHtml), getProcessedText = js.Any.fromFunction1(getProcessedText))
+    val __obj = js.Dynamic.literal(getErrorCustomText = js.Any.fromFunction2(getErrorCustomText), getLocale = js.Any.fromFunction0(getLocale), getMarkdownHtml = js.Any.fromFunction2(getMarkdownHtml), getProcessedText = js.Any.fromFunction1(getProcessedText), getRenderer = js.Any.fromFunction1(getRenderer), getRendererContext = js.Any.fromFunction1(getRendererContext))
     __obj.asInstanceOf[ISurveyErrorOwner]
   }
   

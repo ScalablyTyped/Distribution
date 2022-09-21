@@ -33,6 +33,6 @@ object DescribeVolumeStatusResult {
     
     inline def setVolumeStatusesUndefined: Self = StObject.set(x, "VolumeStatuses", js.undefined)
     
-    inline def setVolumeStatusesVarargs(value: VolumeStatusItem*): Self = StObject.set(x, "VolumeStatuses", js.Array(value :_*))
+    inline def setVolumeStatusesVarargs(value: VolumeStatusItem*): Self = StObject.set(x, "VolumeStatuses", js.Array(value*))
   }
 }

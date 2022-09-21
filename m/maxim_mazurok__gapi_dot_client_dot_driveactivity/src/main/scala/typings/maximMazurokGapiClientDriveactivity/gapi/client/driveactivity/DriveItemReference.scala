@@ -7,18 +7,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DriveItemReference extends StObject {
   
   /** The Drive item is a file. */
-  var driveFile: js.UndefOr[js.Any] = js.undefined
+  var driveFile: js.UndefOr[Any] = js.undefined
   
   /** The Drive item is a folder. Includes information about the type of folder. */
   var driveFolder: js.UndefOr[DriveFolder] = js.undefined
   
   /** This field is deprecated; please use the `driveFile` field instead. */
-  var file: js.UndefOr[js.Any] = js.undefined
+  var file: js.UndefOr[Any] = js.undefined
   
   /** This field is deprecated; please use the `driveFolder` field instead. */
   var folder: js.UndefOr[Folder] = js.undefined
   
-  /** The target Drive item. The format is "items/ITEM_ID". */
+  /** The target Drive item. The format is `items/ITEM_ID`. */
   var name: js.UndefOr[String] = js.undefined
   
   /** The title of the Drive item. */
@@ -33,7 +33,7 @@ object DriveItemReference {
   
   extension [Self <: DriveItemReference](x: Self) {
     
-    inline def setDriveFile(value: js.Any): Self = StObject.set(x, "driveFile", value.asInstanceOf[js.Any])
+    inline def setDriveFile(value: Any): Self = StObject.set(x, "driveFile", value.asInstanceOf[js.Any])
     
     inline def setDriveFileUndefined: Self = StObject.set(x, "driveFile", js.undefined)
     
@@ -41,7 +41,7 @@ object DriveItemReference {
     
     inline def setDriveFolderUndefined: Self = StObject.set(x, "driveFolder", js.undefined)
     
-    inline def setFile(value: js.Any): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: Any): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
     inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     

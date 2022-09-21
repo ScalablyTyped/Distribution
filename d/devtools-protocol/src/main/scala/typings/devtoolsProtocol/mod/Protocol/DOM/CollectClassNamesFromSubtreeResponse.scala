@@ -22,6 +22,6 @@ object CollectClassNamesFromSubtreeResponse {
     
     inline def setClassNames(value: js.Array[String]): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
     
-    inline def setClassNamesVarargs(value: String*): Self = StObject.set(x, "classNames", js.Array(value :_*))
+    inline def setClassNamesVarargs(value: String*): Self = StObject.set(x, "classNames", js.Array(value*))
   }
 }

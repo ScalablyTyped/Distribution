@@ -25,17 +25,17 @@ trait PageToken extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
+  /** Required. Resource name of the environment to look up the history for. Format: `projects//locations//agents//environments/`. */
+  var name: String
+  
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
   
-  /** Optional. The maximum number of items to return in a single page. By default 100 and at most 1000. */
+  /** The maximum number of items to return in a single page. By default 100 and at most 1000. */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /** The next_page_token value returned from a previous list request. */
   var pageToken: js.UndefOr[String] = js.undefined
-  
-  /** Required. The project to list agents from. Format: `projects/`. */
-  var parent: String
   
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
@@ -51,8 +51,8 @@ trait PageToken extends StObject {
 }
 object PageToken {
   
-  inline def apply(parent: String): PageToken = {
-    val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
+  inline def apply(name: String): PageToken = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageToken]
   }
   
@@ -82,6 +82,8 @@ object PageToken {
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
     inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
@@ -93,8 +95,6 @@ object PageToken {
     inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
     inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
-    
-    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     

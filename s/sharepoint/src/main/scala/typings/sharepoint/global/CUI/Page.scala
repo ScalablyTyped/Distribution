@@ -8,17 +8,17 @@ object Page {
   
   @JSGlobal("CUI.Page.CommandDispatcher")
   @js.native
-  class CommandDispatcher ()
+  open class CommandDispatcher ()
     extends StObject
        with typings.sharepoint.CUI.Page.CommandDispatcher {
     
     /* CompleteClass */
-    override def executeCommand(commandId: String, properties: js.Any): js.Any = js.native
+    override def executeCommand(commandId: String, properties: Any): Any = js.native
   }
   
   @JSGlobal("CUI.Page.FocusManager")
   @js.native
-  class FocusManager ()
+  open class FocusManager ()
     extends StObject
        with typings.sharepoint.CUI.Page.FocusManager {
     
@@ -26,27 +26,27 @@ object Page {
     override def canHandleCommand(commandId: String): Boolean = js.native
     
     /* CompleteClass */
-    override def executeCommand(commandId: String, properties: js.Any): js.Any = js.native
+    override def executeCommand(commandId: String, properties: Any): Any = js.native
     
     /* CompleteClass */
     override def getFocusedComponents(): js.Array[typings.sharepoint.CUI.Component] = js.native
     
     /* CompleteClass */
-    override def handleCommand(commandId: String, properties: js.Any, sequenceNumber: Double): Boolean = js.native
+    override def handleCommand(commandId: String, properties: Any, sequenceNumber: Double): Boolean = js.native
     
     /* CompleteClass */
     override def releaseAllFoci(): Boolean = js.native
     
     /* CompleteClass */
-    override def releaseFocusFromComponent(component: typings.sharepoint.CUI.Component): js.Any = js.native
+    override def releaseFocusFromComponent(component: typings.sharepoint.CUI.Component): Any = js.native
     
     /* CompleteClass */
-    override def requestFocusForComponent(component: typings.sharepoint.CUI.Component): js.Any = js.native
+    override def requestFocusForComponent(component: typings.sharepoint.CUI.Component): Any = js.native
   }
   
   @JSGlobal("CUI.Page.PageComponent")
   @js.native
-  class PageComponent ()
+  open class PageComponent ()
     extends StObject
        with typings.sharepoint.CUI.Page.PageComponent {
     
@@ -63,7 +63,7 @@ object Page {
     override def getId(): String = js.native
     
     /* CompleteClass */
-    override def handleCommand(commandId: String, properties: js.Any, sequenceNumber: Double): Boolean = js.native
+    override def handleCommand(commandId: String, properties: Any, sequenceNumber: Double): Boolean = js.native
     
     /* CompleteClass */
     override def init(): scala.Unit = js.native
@@ -80,12 +80,12 @@ object Page {
   
   @JSGlobal("CUI.Page.PageManager")
   @js.native
-  class PageManager ()
+  open class PageManager ()
     extends StObject
        with typings.sharepoint.CUI.Page.PageManager {
     
     /* CompleteClass */
-    override def add_ribbonInited(value: js.Function0[scala.Unit]): js.Any = js.native
+    override def add_ribbonInited(value: js.Function0[scala.Unit]): Any = js.native
     
     /* CompleteClass */
     override def canHandleCommand(commandId: String): Boolean = js.native
@@ -100,7 +100,7 @@ object Page {
     override def get_undoManager(): typings.sharepoint.CUI.Page.UndoManager = js.native
     
     /* CompleteClass */
-    override def handleCommand(commandId: String, properties: js.Any, sequenceNumber: Double): Boolean = js.native
+    override def handleCommand(commandId: String, properties: Any, sequenceNumber: Double): Boolean = js.native
   }
   object PageManager {
     
@@ -120,7 +120,7 @@ object Page {
   
   @JSGlobal("CUI.Page.UndoManager")
   @js.native
-  class UndoManager ()
+  open class UndoManager ()
     extends StObject
        with typings.sharepoint.CUI.Page.UndoManager {
     
@@ -128,6 +128,6 @@ object Page {
     override def canHandleCommand(commandId: String): Boolean = js.native
     
     /* CompleteClass */
-    override def handleCommand(commandId: String, properties: js.Any, sequenceNumber: Double): Boolean = js.native
+    override def handleCommand(commandId: String, properties: Any, sequenceNumber: Double): Boolean = js.native
   }
 }

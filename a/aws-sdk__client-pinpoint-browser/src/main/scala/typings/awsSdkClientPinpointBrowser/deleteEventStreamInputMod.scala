@@ -8,5 +8,5 @@ object deleteEventStreamInputMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/DeleteEventStreamInput", "DeleteEventStreamInput")
   @js.native
-  val DeleteEventStreamInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val DeleteEventStreamInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

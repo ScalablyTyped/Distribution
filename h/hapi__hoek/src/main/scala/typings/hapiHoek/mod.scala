@@ -6,7 +6,6 @@ import typings.hapiHoek.hapiHoekBooleans.`false`
 import typings.hapiHoek.mod.internals.Without
 import typings.hapiHoek.mod.reach.Options
 import typings.std.ArrayLike
-import typings.std.Error
 import typings.std.Partial
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
@@ -21,7 +20,7 @@ object mod {
   
   @JSImport("@hapi/hoek", "Bench")
   @js.native
-  class Bench () extends StObject {
+  open class Bench () extends StObject {
     
     /** The time in milliseconds since the object was created. */
     def elapsed(): Double = js.native
@@ -89,16 +88,16 @@ object mod {
         
         inline def setShallowUndefined: Self = StObject.set(x, "shallow", js.undefined)
         
-        inline def setShallowVarargs(value: (js.Array[String] | String)*): Self = StObject.set(x, "shallow", js.Array(value :_*))
+        inline def setShallowVarargs(value: (js.Array[String] | String)*): Self = StObject.set(x, "shallow", js.Array(value*))
       }
     }
   }
   
   inline def assert(
-    condition: js.Any,
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(condition.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def assert(condition: js.Any, error: Error): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(condition.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    condition: Any,
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: Any
+  ): /* asserts condition */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(condition.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[/* asserts condition */ Boolean]
+  inline def assert(condition: Any, error: js.Error): /* asserts condition */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(condition.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[/* asserts condition */ Boolean]
   
   inline def block(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("block")().asInstanceOf[js.Promise[Unit]]
   
@@ -140,7 +139,7 @@ object mod {
         
         inline def setShallowUndefined: Self = StObject.set(x, "shallow", js.undefined)
         
-        inline def setShallowVarargs(value: (js.Array[String] | String)*): Self = StObject.set(x, "shallow", js.Array(value :_*))
+        inline def setShallowVarargs(value: (js.Array[String] | String)*): Self = StObject.set(x, "shallow", js.Array(value*))
         
         inline def setSymbols(value: Boolean): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
         
@@ -155,8 +154,8 @@ object mod {
     inline def apply(ref: String, values: String, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].apply(ref.asInstanceOf[js.Any], values.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     inline def apply(ref: String, values: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].apply(ref.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     inline def apply(ref: String, values: js.Array[String], options: Options): Boolean = (^.asInstanceOf[js.Dynamic].apply(ref.asInstanceOf[js.Any], values.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    inline def apply(ref: js.Array[js.Any], values: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].apply(ref.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    inline def apply(ref: js.Array[js.Any], values: js.Any, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].apply(ref.asInstanceOf[js.Any], values.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def apply(ref: js.Array[Any], values: Any): Boolean = (^.asInstanceOf[js.Dynamic].apply(ref.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def apply(ref: js.Array[Any], values: Any, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].apply(ref.asInstanceOf[js.Any], values.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     inline def apply(ref: js.Object, values: String): Boolean = (^.asInstanceOf[js.Dynamic].apply(ref.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     inline def apply(ref: js.Object, values: String, options: OmitOptionsonce): Boolean = (^.asInstanceOf[js.Dynamic].apply(ref.asInstanceOf[js.Any], values.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     inline def apply(ref: js.Object, values: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].apply(ref.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Boolean]
@@ -239,8 +238,8 @@ object mod {
   
   object deepEqual {
     
-    inline def apply(obj: js.Any, ref: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    inline def apply(obj: js.Any, ref: js.Any, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], ref.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def apply(obj: Any, ref: Any): Boolean = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def apply(obj: Any, ref: Any, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], ref.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     @JSImport("@hapi/hoek", "deepEqual")
     @js.native
@@ -297,7 +296,7 @@ object mod {
         
         inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
         
-        inline def setSkipVarargs(value: (String | js.Symbol)*): Self = StObject.set(x, "skip", js.Array(value :_*))
+        inline def setSkipVarargs(value: (String | js.Symbol)*): Self = StObject.set(x, "skip", js.Array(value*))
         
         inline def setSymbols(value: Boolean): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
         
@@ -318,7 +317,7 @@ object mod {
   inline def flatten[T](array: ArrayLike[T | js.Array[T]], target: ArrayLike[T | js.Array[T]]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(array.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
   inline def ignore(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param ignore because its type any is not an array type */ ignore: js.Any
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param ignore because its type any is not an array type */ ignore: Any
   ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ignore")(ignore.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   object intersect {
@@ -357,7 +356,7 @@ object mod {
     }
   }
   
-  inline def isPromise(promise: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromise")(promise.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isPromise(promise: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromise")(promise.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   object merge {
     
@@ -419,24 +418,24 @@ object mod {
   
   object reach {
     
-    inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-    inline def apply(obj: js.Object): js.Any = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def apply(obj: js.Object, chain: String): js.Any = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], chain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def apply(obj: js.Object, chain: String, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], chain.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def apply(obj: js.Object, chain: js.Array[String | Double]): js.Any = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], chain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def apply(obj: js.Object, chain: js.Array[String | Double], options: Options): js.Any = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], chain.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def apply(obj: js.Object, chain: Null, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], chain.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def apply(obj: js.Object, chain: Unit, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], chain.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def apply(obj: js.Object, chain: `false`): js.Any = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], chain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def apply(obj: js.Object, chain: `false`, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], chain.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def apply(obj: Null, chain: String): js.Any = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], chain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def apply(obj: Null, chain: String, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], chain.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def apply(obj: Null, chain: js.Array[String | Double]): js.Any = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], chain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def apply(obj: Null, chain: js.Array[String | Double], options: Options): js.Any = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], chain.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def apply(obj: Null, chain: Null, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], chain.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def apply(obj: Null, chain: Unit, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], chain.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def apply(obj: Null, chain: `false`): js.Any = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], chain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def apply(obj: Null, chain: `false`, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], chain.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+    inline def apply(obj: js.Object): Any = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def apply(obj: js.Object, chain: String): Any = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], chain.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def apply(obj: js.Object, chain: String, options: Options): Any = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], chain.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def apply(obj: js.Object, chain: js.Array[String | Double]): Any = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], chain.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def apply(obj: js.Object, chain: js.Array[String | Double], options: Options): Any = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], chain.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def apply(obj: js.Object, chain: Null, options: Options): Any = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], chain.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def apply(obj: js.Object, chain: Unit, options: Options): Any = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], chain.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def apply(obj: js.Object, chain: `false`): Any = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], chain.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def apply(obj: js.Object, chain: `false`, options: Options): Any = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], chain.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def apply(obj: Null, chain: String): Any = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], chain.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def apply(obj: Null, chain: String, options: Options): Any = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], chain.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def apply(obj: Null, chain: js.Array[String | Double]): Any = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], chain.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def apply(obj: Null, chain: js.Array[String | Double], options: Options): Any = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], chain.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def apply(obj: Null, chain: Null, options: Options): Any = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], chain.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def apply(obj: Null, chain: Unit, options: Options): Any = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], chain.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def apply(obj: Null, chain: `false`): Any = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], chain.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def apply(obj: Null, chain: `false`, options: Options): Any = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], chain.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     @JSImport("@hapi/hoek", "reach")
     @js.native
@@ -449,7 +448,7 @@ object mod {
         *
         * @default false
         */
-      val default: js.UndefOr[js.Any] = js.undefined
+      val default: js.UndefOr[Any] = js.undefined
       
       /**
         * If true, allows traversing functions for properties. false will throw an error if a function is part of the chain.
@@ -488,7 +487,7 @@ object mod {
       
       extension [Self <: Options](x: Self) {
         
-        inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+        inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
         
         inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
         
@@ -516,12 +515,12 @@ object mod {
   inline def reachTemplate(obj: Null, template: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("reachTemplate")(obj.asInstanceOf[js.Any], template.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def reachTemplate(obj: Null, template: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("reachTemplate")(obj.asInstanceOf[js.Any], template.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def stringify(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def stringify(value: js.Any, replacer: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def stringify(value: js.Any, replacer: js.Any, space: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def stringify(value: js.Any, replacer: js.Any, space: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def stringify(value: js.Any, replacer: Unit, space: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def stringify(value: js.Any, replacer: Unit, space: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringify(value: Any, replacer: Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: Any, replacer: Any, space: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: Any, replacer: Any, space: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: Any, replacer: Unit, space: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: Any, replacer: Unit, space: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def wait_[T](): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("wait")().asInstanceOf[js.Promise[T]]
   inline def wait_[T](timeout: Double): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("wait")(timeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
@@ -532,7 +531,7 @@ object mod {
     
     type Without[T, U] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in std.Exclude<keyof T, keyof U> ]:? never}
-      */ typings.hapiHoek.hapiHoekStrings.Without & TopLevel[js.Any]
+      */ typings.hapiHoek.hapiHoekStrings.Without & TopLevel[Any]
   }
   
   object ts {

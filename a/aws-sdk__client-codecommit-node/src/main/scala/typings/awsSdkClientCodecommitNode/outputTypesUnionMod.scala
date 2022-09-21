@@ -7,7 +7,6 @@ import typings.awsSdkClientCodecommitNode.typesCommitMod.UnmarshalledCommit
 import typings.awsSdkClientCodecommitNode.typesPullRequestEventMod.UnmarshalledPullRequestEvent
 import typings.awsSdkClientCodecommitNode.typesPullRequestMod.UnmarshalledPullRequest
 import typings.awsSdkTypes.responseMod.ResponseMetadata
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -103,7 +102,7 @@ object outputTypesUnionMod {
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesDescribePullRequestEventsOutputMod.DescribePullRequestEventsOutput]
     }
     
-    inline def GetBlobOutput($metadata: ResponseMetadata, content: Uint8Array): typings.awsSdkClientCodecommitNode.typesGetBlobOutputMod.GetBlobOutput = {
+    inline def GetBlobOutput($metadata: ResponseMetadata, content: js.typedarray.Uint8Array): typings.awsSdkClientCodecommitNode.typesGetBlobOutputMod.GetBlobOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesGetBlobOutputMod.GetBlobOutput]
     }
@@ -142,7 +141,7 @@ object outputTypesUnionMod {
       $metadata: ResponseMetadata,
       blobId: String,
       commitId: String,
-      fileContent: Uint8Array,
+      fileContent: js.typedarray.Uint8Array,
       fileMode: EXECUTABLE | NORMAL | SYMLINK | String,
       filePath: String,
       fileSize: Double

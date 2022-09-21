@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A &lt;a
-  * href=&quot;/chart/interactive/docs/gallery/candlestickchart&quot;&gt;candlestick
-  * chart&lt;/a&gt;.
-  */
 trait SchemaCandlestickChartSpec extends StObject {
   
   /**
@@ -17,9 +12,7 @@ trait SchemaCandlestickChartSpec extends StObject {
   var data: js.UndefOr[js.Array[SchemaCandlestickData]] = js.undefined
   
   /**
-    * The domain data (horizontal axis) for the candlestick chart.  String data
-    * will be treated as discrete labels, other data will be treated as
-    * continuous values.
+    * The domain data (horizontal axis) for the candlestick chart. String data will be treated as discrete labels, other data will be treated as continuous values.
     */
   var domain: js.UndefOr[SchemaCandlestickDomain] = js.undefined
 }
@@ -36,7 +29,7 @@ object SchemaCandlestickChartSpec {
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setDataVarargs(value: SchemaCandlestickData*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: SchemaCandlestickData*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setDomain(value: SchemaCandlestickDomain): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     

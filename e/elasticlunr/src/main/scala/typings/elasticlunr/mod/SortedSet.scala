@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elasticlunr", "SortedSet")
 @js.native
-class SortedSet[T] () extends StObject {
+open class SortedSet[T] () extends StObject {
   
-  def add(args: js.Any*): Unit = js.native
+  def add(args: Any*): Unit = js.native
   
   def forEach(
     fn: js.Function3[/* element */ T, /* index */ Double, /* collection */ js.Array[T], Unit],

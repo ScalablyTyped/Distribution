@@ -21,7 +21,7 @@ object XDocumentInsertable {
   inline def apply(
     acquire: () => Unit,
     insertDocumentFromURL: (String, SeqEquiv[PropertyValue]) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XDocumentInsertable = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), insertDocumentFromURL = js.Any.fromFunction2(insertDocumentFromURL), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

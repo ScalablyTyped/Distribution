@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-images
 
-Typings are for version 0.5
+Typings are for version 1.2.0-beta.7
 
 ## Library description:
 A mobile-friendly, highly customizable, carousel component for displaying media in ReactJS
@@ -10,10 +10,10 @@ A mobile-friendly, highly customizable, carousel component for displaying media 
 | ------------------ | :-------------: |
 | Full name          | react-images |
 | Keywords           | react, images, carousel, lightbox, gallery, modal |
-| # releases         | 23 |
-| # dependents       | 126 |
-| # downloads        | 2910077 |
-| # stars            | 9 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 298762.3333333333 |
+| # stars            | 2325.0 |
 
 ## Links
 - [Homepage](https://jossmac.github.io/react-images/)
@@ -24,7 +24,7 @@ A mobile-friendly, highly customizable, carousel component for displaying media 
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

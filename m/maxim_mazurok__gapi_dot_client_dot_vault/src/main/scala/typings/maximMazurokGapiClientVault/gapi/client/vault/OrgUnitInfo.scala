@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait OrgUnitInfo extends StObject {
   
-  /** Org unit to search, as provided by the Admin SDK Directory API. */
+  /** The name of the organizational unit to search, as provided by the [Admin SDK Directory API](https://developers.google.com/admin-sdk/directory/). */
   var orgUnitId: js.UndefOr[String] = js.undefined
 }
 object OrgUnitInfo {

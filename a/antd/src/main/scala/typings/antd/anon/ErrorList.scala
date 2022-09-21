@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ErrorList extends StObject {
   
-  var errorList: Element
+  var errorList: Element | Null
   
   var extra: Element | Null
   
@@ -15,14 +15,16 @@ trait ErrorList extends StObject {
 }
 object ErrorList {
   
-  inline def apply(errorList: Element, input: Element): ErrorList = {
-    val __obj = js.Dynamic.literal(errorList = errorList.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], extra = null)
+  inline def apply(input: Element): ErrorList = {
+    val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any], errorList = null, extra = null)
     __obj.asInstanceOf[ErrorList]
   }
   
   extension [Self <: ErrorList](x: Self) {
     
     inline def setErrorList(value: Element): Self = StObject.set(x, "errorList", value.asInstanceOf[js.Any])
+    
+    inline def setErrorListNull: Self = StObject.set(x, "errorList", null)
     
     inline def setExtra(value: Element): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
     

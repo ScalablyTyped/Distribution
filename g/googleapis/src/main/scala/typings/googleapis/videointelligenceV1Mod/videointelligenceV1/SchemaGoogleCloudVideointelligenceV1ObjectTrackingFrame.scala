@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Video frame level annotations for object detection and tracking. This field
-  * stores per frame location, time offset, and confidence.
-  */
 trait SchemaGoogleCloudVideointelligenceV1ObjectTrackingFrame extends StObject {
   
   /**
@@ -18,7 +14,7 @@ trait SchemaGoogleCloudVideointelligenceV1ObjectTrackingFrame extends StObject {
   /**
     * The timestamp of the frame in microseconds.
     */
-  var timeOffset: js.UndefOr[String] = js.undefined
+  var timeOffset: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGoogleCloudVideointelligenceV1ObjectTrackingFrame {
   
@@ -34,6 +30,8 @@ object SchemaGoogleCloudVideointelligenceV1ObjectTrackingFrame {
     inline def setNormalizedBoundingBoxUndefined: Self = StObject.set(x, "normalizedBoundingBox", js.undefined)
     
     inline def setTimeOffset(value: String): Self = StObject.set(x, "timeOffset", value.asInstanceOf[js.Any])
+    
+    inline def setTimeOffsetNull: Self = StObject.set(x, "timeOffset", null)
     
     inline def setTimeOffsetUndefined: Self = StObject.set(x, "timeOffset", js.undefined)
   }

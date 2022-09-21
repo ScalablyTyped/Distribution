@@ -7,6 +7,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object metadataMod {
   
+  type MatchMetadata[T] = js.Function1[/* obj */ T, js.Promise[js.Array[MatchMetadataResult]]]
+  
+  trait MatchMetadataResult extends StObject {
+    
+    var id: String
+    
+    var metadata: js.Array[OnfleetMetadata]
+  }
+  object MatchMetadataResult {
+    
+    inline def apply(id: String, metadata: js.Array[OnfleetMetadata]): MatchMetadataResult = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
+      __obj.asInstanceOf[MatchMetadataResult]
+    }
+    
+    extension [Self <: MatchMetadataResult](x: Self) {
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setMetadata(value: js.Array[OnfleetMetadata]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      
+      inline def setMetadataVarargs(value: OnfleetMetadata*): Self = StObject.set(x, "metadata", js.Array(value*))
+    }
+  }
+  
   /* Rewritten from type alias, can be one of: 
     - typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.boolean
     - typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.number
@@ -69,13 +94,13 @@ object metadataMod {
     
     var `type`: MetadataType
     
-    var value: js.Any
+    var value: Any
     
     var visibility: js.UndefOr[js.Array[MetadataVisibility]] = js.undefined
   }
   object OnfleetMetadata {
     
-    inline def apply(name: String, `type`: MetadataType, value: js.Any): OnfleetMetadata = {
+    inline def apply(name: String, `type`: MetadataType, value: Any): OnfleetMetadata = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnfleetMetadata]
@@ -91,13 +116,13 @@ object metadataMod {
       
       inline def setType(value: MetadataType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setVisibility(value: js.Array[MetadataVisibility]): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
       
       inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
       
-      inline def setVisibilityVarargs(value: MetadataVisibility*): Self = StObject.set(x, "visibility", js.Array(value :_*))
+      inline def setVisibilityVarargs(value: MetadataVisibility*): Self = StObject.set(x, "visibility", js.Array(value*))
     }
   }
 }

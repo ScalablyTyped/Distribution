@@ -14,7 +14,7 @@ trait ContactList extends StObject {
   /**
     * A timestamp noting the last time the contact list was updated.
     */
-  var LastUpdatedTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var LastUpdatedTimestamp: js.UndefOr[js.Date] = js.undefined
 }
 object ContactList {
   
@@ -29,7 +29,7 @@ object ContactList {
     
     inline def setContactListNameUndefined: Self = StObject.set(x, "ContactListName", js.undefined)
     
-    inline def setLastUpdatedTimestamp(value: Timestamp): Self = StObject.set(x, "LastUpdatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTimestamp(value: js.Date): Self = StObject.set(x, "LastUpdatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedTimestampUndefined: Self = StObject.set(x, "LastUpdatedTimestamp", js.undefined)
   }

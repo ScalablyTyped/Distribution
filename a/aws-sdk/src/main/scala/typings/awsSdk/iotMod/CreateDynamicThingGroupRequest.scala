@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateDynamicThingGroupRequest extends StObject {
   
   /**
-    * The dynamic thing group index name.  Currently one index is supported: "AWS_Things". 
+    * The dynamic thing group index name.  Currently one index is supported: AWS_Things. 
     */
   var indexName: js.UndefOr[IndexName] = js.undefined
   
@@ -59,7 +59,7 @@ object CreateDynamicThingGroupRequest {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setThingGroupName(value: ThingGroupName): Self = StObject.set(x, "thingGroupName", value.asInstanceOf[js.Any])
     

@@ -2,8 +2,8 @@ package typings.semanticUiReact
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.FC
 import typings.react.mod.ReactNode
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,12 +13,12 @@ object commentAuthorMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/views/Comment/CommentAuthor", JSImport.Default)
   @js.native
-  val default: StatelessComponent[CommentAuthorProps] = js.native
+  val default: FC[CommentAuthorProps] = js.native
   
   trait CommentAuthorProps
     extends StObject
        with StrictCommentAuthorProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object CommentAuthorProps {
     
     inline def apply(): CommentAuthorProps = {
@@ -30,7 +30,7 @@ object commentAuthorMod extends Shortcut {
   trait StrictCommentAuthorProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -50,7 +50,7 @@ object commentAuthorMod extends Shortcut {
     
     extension [Self <: StrictCommentAuthorProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -68,8 +68,8 @@ object commentAuthorMod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[CommentAuthorProps]
+  type _To = FC[CommentAuthorProps]
   
   /* This means you don't have to write `default`, but can instead just say `commentAuthorMod.foo` */
-  override def _to: StatelessComponent[CommentAuthorProps] = default
+  override def _to: FC[CommentAuthorProps] = default
 }

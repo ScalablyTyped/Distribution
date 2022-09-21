@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents the format properties for the chart trendline.
   *
-  * Represents the format properties for chart trendline.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 @JSGlobal("Excel.ChartTrendlineFormat")
 @js.native
-class ChartTrendlineFormat ()
+open class ChartTrendlineFormat ()
   extends StObject
      with typings.officeJsPreview.Excel.ChartTrendlineFormat {
   

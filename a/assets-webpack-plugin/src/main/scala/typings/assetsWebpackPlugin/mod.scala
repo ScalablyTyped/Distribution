@@ -1,6 +1,7 @@
 package typings.assetsWebpackPlugin
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.webpack.mod.Compiler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,16 +10,14 @@ object mod {
   
   @JSImport("assets-webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with AssetsWebpackPlugin {
     def this(options: Options) = this()
     
     /* CompleteClass */
     @JSName("apply")
-    override def apply(
-      compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any
-    ): Unit = js.native
+    override def apply(compiler: Compiler): Unit = js.native
   }
   
   type Assets = StringDictionary[StringDictionary[String]]
@@ -26,131 +25,157 @@ object mod {
   trait AssetsWebpackPlugin extends StObject {
     
     @JSName("apply")
-    def apply(
-      compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any
-    ): Unit
+    def apply(compiler: Compiler): Unit
   }
   object AssetsWebpackPlugin {
     
-    inline def apply(
-      apply: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any => Unit
-    ): AssetsWebpackPlugin = {
+    inline def apply(apply: Compiler => Unit): AssetsWebpackPlugin = {
       val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply))
       __obj.asInstanceOf[AssetsWebpackPlugin]
     }
     
     extension [Self <: AssetsWebpackPlugin](x: Self) {
       
-      inline def setApply(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any => Unit
-      ): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
+      inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     }
   }
   
   trait Options extends StObject {
     
     /**
-      * If the "entrypoints" option is given, the output will be limited to the entrypoints and the chunks associated with them.
-      * false by default
+      * If the `entrypoints` option is given, the output will be limited to the entrypoints and the chunks associated with them.
+      *
+      * `false` by default.
       */
     var entrypoints: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * When set and "includeAllFileTypes" is set false, only assets matching these types will be included in the assets file.
-      * ['js', 'css'] by default
+      * When set and `includeAllFileTypes` is set `false` , only assets matching these types will be included in the assets file.
+      *
+      * `['js', 'css']` by default.
       */
     var fileTypes: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Name for the created json file.
-      * "webpack-assets.json" by default
+      *
+      * `"webpack-assets.json"` by default.
       */
     var filename: js.UndefOr[String] = js.undefined
     
     /**
-      * If false the output will not include the full path of the generated file.
-      * true by default
+      * If `false` the output will not include the full path of the generated file.
+      *
+      * e.g. `/public/path/bundle.js` vs `bundle.js`
+      *
+      * `true` by default.
       */
     var fullPath: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * When set false, falls back to the "fileTypes" option array to decide which file types to include in the assets file.
-      * true by default
+      * When set `false` , falls back to the "fileTypes" option array to decide which file types to include in the assets file.
+      *
+      * `true` by default.
       */
     var includeAllFileTypes: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * When set and "entrypoints" is set true, will output any files that are part of the unnamed chunk to an additional unnamed ("") entry.
-      * false by default
+      * When set, will output any files that are part of the chunk and marked as auxiliary assets.
+      *
+      * `false` by default.
+      */
+    var includeAuxiliaryAssets: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * When set, will output any files that are part of the chunk and marked as preloadable or prefechtable child assets via a dynamic import.
+      *
+      * `false` by default.
+      */
+    var includeDynamicImportedAssets: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * When set and `entrypoints` is set `true` , will output any files that are part of the unnamed chunk to an additional unnamed ("") entry.
+      *
+      * `false` by default.
       */
     var includeFilesWithoutChunk: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * Inserts the manifest javascript as a text property in your assets.
+      * Inserts the manifest javascript as a `text` property in your assets.
       * Accepts the name or names of your manifest chunk.
       * A manifest is the last CommonChunk that only contains the webpack bootstrap code.
       * This is useful for production use when you want to inline the manifest in your HTML skeleton for long-term caching.
-      * false by default
+      *
+      * `false` by default.
       */
     var includeManifest: js.UndefOr[Boolean | String | js.Array[String]] = js.undefined
     
     /**
-      * When set the output from webpack-subresource-integrity is included in the assets file.
-      * false by default
+      * When set the output from `webpack-subresource-integrity` is included in the assets file.
+      *
+      * `false` by default.
       */
     var integrity: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * When set the assets file will only be generated in memory while running webpack-dev-server and not written to disk.
-      * false by default
+      * When set the assets file will only be generated in memory while running `webpack-dev-server` and not written to disk.
+      *
+      * `false` by default.
       */
     var keepInMemory: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Orders the assets output so that manifest is the first entry.
       * This is useful for cases where script tags are generated from the assets json output, and order of import is important.
-      * false by default
+      *
+      * `false` by default.
       */
     var manifestFirst: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * Inject metadata into the output file. All values will be injected into the key "metadata"
+      * Inject metadata into the output file. All values will be injected into the key `metadata`.
       */
     var metadata: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Path where to save the created JSON file.
-      * Defaults to the current directory
+      *
+      * Defaults to the current directory.
       */
     var path: js.UndefOr[String] = js.undefined
     
     /**
       * Whether to format the JSON output for readability.
-      * false by default
+      *
+      * `false` by default.
       */
     var prettyPrint: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Formats the assets output.
-      * Defaults to JSON.stringify
+      *
+      * Defaults to `JSON.stringify`.
       */
     var processOutput: js.UndefOr[ProcessOutputFn] = js.undefined
     
     /**
-      * If true the full path will automatically be stripped of the /auto/ prefix generated by webpack.
-      * false by default
+      * If `true` the full path will automatically be stripped of the `/auto/` prefix generated by webpack.
+      *
+      * `false` by default.
       */
     var removeFullPathAutoPrefix: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * When set to true, the output JSON file will be updated instead of overwritten.
-      * false by default
+      * When set to `true` , the output JSON file will be updated instead of overwritten.
+      *
+      * `false` by default.
       */
     var update: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Will override the path to use the compiler output path set in your webpack config.
-      * false by default
+      *
+      * `false` by default.
       */
     var useCompilerPath: js.UndefOr[Boolean] = js.undefined
   }
@@ -171,7 +196,7 @@ object mod {
       
       inline def setFileTypesUndefined: Self = StObject.set(x, "fileTypes", js.undefined)
       
-      inline def setFileTypesVarargs(value: String*): Self = StObject.set(x, "fileTypes", js.Array(value :_*))
+      inline def setFileTypesVarargs(value: String*): Self = StObject.set(x, "fileTypes", js.Array(value*))
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
@@ -185,6 +210,14 @@ object mod {
       
       inline def setIncludeAllFileTypesUndefined: Self = StObject.set(x, "includeAllFileTypes", js.undefined)
       
+      inline def setIncludeAuxiliaryAssets(value: Boolean): Self = StObject.set(x, "includeAuxiliaryAssets", value.asInstanceOf[js.Any])
+      
+      inline def setIncludeAuxiliaryAssetsUndefined: Self = StObject.set(x, "includeAuxiliaryAssets", js.undefined)
+      
+      inline def setIncludeDynamicImportedAssets(value: Boolean): Self = StObject.set(x, "includeDynamicImportedAssets", value.asInstanceOf[js.Any])
+      
+      inline def setIncludeDynamicImportedAssetsUndefined: Self = StObject.set(x, "includeDynamicImportedAssets", js.undefined)
+      
       inline def setIncludeFilesWithoutChunk(value: Boolean): Self = StObject.set(x, "includeFilesWithoutChunk", value.asInstanceOf[js.Any])
       
       inline def setIncludeFilesWithoutChunkUndefined: Self = StObject.set(x, "includeFilesWithoutChunk", js.undefined)
@@ -193,7 +226,7 @@ object mod {
       
       inline def setIncludeManifestUndefined: Self = StObject.set(x, "includeManifest", js.undefined)
       
-      inline def setIncludeManifestVarargs(value: String*): Self = StObject.set(x, "includeManifest", js.Array(value :_*))
+      inline def setIncludeManifestVarargs(value: String*): Self = StObject.set(x, "includeManifest", js.Array(value*))
       
       inline def setIntegrity(value: Boolean): Self = StObject.set(x, "integrity", value.asInstanceOf[js.Any])
       

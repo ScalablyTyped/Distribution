@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Microsoft.Maps.Point")
 @js.native
-class Point protected ()
+open class Point protected ()
   extends StObject
      with typings.bingmaps.Microsoft.Maps.Point {
   /**

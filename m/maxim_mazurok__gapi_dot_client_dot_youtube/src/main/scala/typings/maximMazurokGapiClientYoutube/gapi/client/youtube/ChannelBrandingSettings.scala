@@ -35,7 +35,7 @@ object ChannelBrandingSettings {
     
     inline def setHintsUndefined: Self = StObject.set(x, "hints", js.undefined)
     
-    inline def setHintsVarargs(value: PropertyValue*): Self = StObject.set(x, "hints", js.Array(value :_*))
+    inline def setHintsVarargs(value: PropertyValue*): Self = StObject.set(x, "hints", js.Array(value*))
     
     inline def setImage(value: ImageSettings): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     

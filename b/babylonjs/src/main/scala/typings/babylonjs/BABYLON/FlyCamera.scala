@@ -9,26 +9,34 @@ trait FlyCamera
   extends StObject
      with TargetCamera {
   
-  /** @hidden */
+  /**
+    * @param displacement
+    * @hidden
+    */
   def _collideWithWorld(displacement: Vector3): Unit = js.native
   
-  /* private */ var _collider: js.Any = js.native
+  /* private */ var _collider: Any = js.native
   
-  /* private */ var _collisionMask: js.Any = js.native
+  /* private */ var _collisionMask: Any = js.native
   
-  /* private */ var _diffPosition: js.Any = js.native
+  /* private */ var _diffPosition: Any = js.native
   
   /** @hidden */
   var _localDirection: Vector3 = js.native
   
-  /* private */ var _needMoveForGravity: js.Any = js.native
+  /* private */ var _needMoveForGravity: Any = js.native
   
-  /* private */ var _newPosition: js.Any = js.native
+  /* private */ var _newPosition: Any = js.native
   
-  /* private */ var _oldPosition: js.Any = js.native
+  /* private */ var _oldPosition: Any = js.native
   
-  /** @hidden */
-  /* private */ var _onCollisionPositionChange: js.Any = js.native
+  /**
+    * @param collisionId
+    * @param newPosition
+    * @param collidedMesh
+    * @hidden
+    */
+  /* private */ var _onCollisionPositionChange: Any = js.native
   
   /**
     * Track Roll to maintain the wanted Rolling when looking around.

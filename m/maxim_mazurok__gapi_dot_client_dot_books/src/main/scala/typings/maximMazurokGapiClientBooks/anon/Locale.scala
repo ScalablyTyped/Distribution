@@ -117,6 +117,6 @@ object Locale {
     
     inline def setVolumeIds(value: String | js.Array[String]): Self = StObject.set(x, "volumeIds", value.asInstanceOf[js.Any])
     
-    inline def setVolumeIdsVarargs(value: String*): Self = StObject.set(x, "volumeIds", js.Array(value :_*))
+    inline def setVolumeIdsVarargs(value: String*): Self = StObject.set(x, "volumeIds", js.Array(value*))
   }
 }

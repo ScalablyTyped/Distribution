@@ -10,7 +10,7 @@ trait ValidationError
   extends StObject
      with Error {
   
-  var _original: js.Any = js.native
+  var _original: Any = js.native
   
   /**
     * function that returns a string with an annotated version of the object pointing at the places where errors occurred.

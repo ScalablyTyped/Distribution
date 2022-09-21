@@ -22,6 +22,6 @@ object SetCookiesRequest {
     
     inline def setCookies(value: js.Array[CookieParam]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
     
-    inline def setCookiesVarargs(value: CookieParam*): Self = StObject.set(x, "cookies", js.Array(value :_*))
+    inline def setCookiesVarargs(value: CookieParam*): Self = StObject.set(x, "cookies", js.Array(value*))
   }
 }

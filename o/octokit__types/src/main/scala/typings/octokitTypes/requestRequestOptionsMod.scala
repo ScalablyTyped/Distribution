@@ -1,7 +1,6 @@
 package typings.octokitTypes
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.httpMod.Agent
 import typings.octokitTypes.fetchMod.Fetch
 import typings.octokitTypes.signalMod.Signal
 import org.scalablytyped.runtime.StObject
@@ -12,12 +11,14 @@ object requestRequestOptionsMod {
   
   trait RequestRequestOptions
     extends StObject
-       with /* k */ StringDictionary[js.Any] {
+       with /* option */ StringDictionary[Any] {
     
     /**
       * Node only. Useful for custom proxy, certificate, or dns lookup.
+      *
+      * @see https://nodejs.org/api/http.html#http_class_http_agent
       */
-    var agent: js.UndefOr[Agent] = js.undefined
+    var agent: js.UndefOr[Any] = js.undefined
     
     /**
       * Custom replacement for built-in fetch method. Useful for testing or request hooks.
@@ -43,7 +44,7 @@ object requestRequestOptionsMod {
     
     extension [Self <: RequestRequestOptions](x: Self) {
       
-      inline def setAgent(value: Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+      inline def setAgent(value: Any): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
       inline def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
       

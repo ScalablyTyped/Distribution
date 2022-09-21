@@ -8,9 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.estree.mod.SimpleCallExpression
   - typings.estree.mod.NewExpression
 */
-trait CallExpression
-  extends StObject
-     with Expression
+trait CallExpression extends StObject
 object CallExpression {
   
   inline def NewExpression(arguments: js.Array[Expression | SpreadElement], callee: Expression | Super): typings.estree.mod.NewExpression = {

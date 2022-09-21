@@ -19,14 +19,14 @@ object paginationPaginationMod {
   
   @JSImport("semantic-ui-react/dist/commonjs/addons/Pagination/Pagination", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[PaginationProps, js.Object, js.Any]
+  open class default ()
+    extends Component[PaginationProps, js.Object, Any]
   object default {
     
     /* was `typeof PaginationItem` */
     @JSImport("semantic-ui-react/dist/commonjs/addons/Pagination/Pagination", "default.Item")
     @js.native
-    class Item ()
+    open class Item ()
       extends typings.semanticUiReact.paginationItemMod.default
   }
   
@@ -35,12 +35,12 @@ object paginationPaginationMod {
     /* was `typeof PaginationItem` */
     type Item = typings.semanticUiReact.paginationItemMod.default
   }
-  type Pagination = Component[PaginationProps, js.Object, js.Any]
+  type Pagination = Component[PaginationProps, js.Object, Any]
   
   trait PaginationProps
     extends StObject
        with StrictPaginationProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object PaginationProps {
     
     inline def apply(totalPages: Double | String): PaginationProps = {

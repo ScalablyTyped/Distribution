@@ -142,7 +142,7 @@ object Acknowledged {
     
     inline def setGoogleOrderIdsUndefined: Self = StObject.set(x, "googleOrderIds", js.undefined)
     
-    inline def setGoogleOrderIdsVarargs(value: String*): Self = StObject.set(x, "googleOrderIds", js.Array(value :_*))
+    inline def setGoogleOrderIdsVarargs(value: String*): Self = StObject.set(x, "googleOrderIds", js.Array(value*))
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
@@ -178,25 +178,25 @@ object Acknowledged {
     
     inline def setShipmentStatesUndefined: Self = StObject.set(x, "shipmentStates", js.undefined)
     
-    inline def setShipmentStatesVarargs(value: String*): Self = StObject.set(x, "shipmentStates", js.Array(value :_*))
+    inline def setShipmentStatesVarargs(value: String*): Self = StObject.set(x, "shipmentStates", js.Array(value*))
     
     inline def setShipmentStatus(value: String | js.Array[String]): Self = StObject.set(x, "shipmentStatus", value.asInstanceOf[js.Any])
     
     inline def setShipmentStatusUndefined: Self = StObject.set(x, "shipmentStatus", js.undefined)
     
-    inline def setShipmentStatusVarargs(value: String*): Self = StObject.set(x, "shipmentStatus", js.Array(value :_*))
+    inline def setShipmentStatusVarargs(value: String*): Self = StObject.set(x, "shipmentStatus", js.Array(value*))
     
     inline def setShipmentTrackingNumbers(value: String | js.Array[String]): Self = StObject.set(x, "shipmentTrackingNumbers", value.asInstanceOf[js.Any])
     
     inline def setShipmentTrackingNumbersUndefined: Self = StObject.set(x, "shipmentTrackingNumbers", js.undefined)
     
-    inline def setShipmentTrackingNumbersVarargs(value: String*): Self = StObject.set(x, "shipmentTrackingNumbers", js.Array(value :_*))
+    inline def setShipmentTrackingNumbersVarargs(value: String*): Self = StObject.set(x, "shipmentTrackingNumbers", js.Array(value*))
     
     inline def setShipmentTypes(value: String | js.Array[String]): Self = StObject.set(x, "shipmentTypes", value.asInstanceOf[js.Any])
     
     inline def setShipmentTypesUndefined: Self = StObject.set(x, "shipmentTypes", js.undefined)
     
-    inline def setShipmentTypesVarargs(value: String*): Self = StObject.set(x, "shipmentTypes", js.Array(value :_*))
+    inline def setShipmentTypesVarargs(value: String*): Self = StObject.set(x, "shipmentTypes", js.Array(value*))
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

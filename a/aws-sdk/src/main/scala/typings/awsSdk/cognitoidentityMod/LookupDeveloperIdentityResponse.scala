@@ -34,7 +34,7 @@ object LookupDeveloperIdentityResponse {
     
     inline def setDeveloperUserIdentifierListUndefined: Self = StObject.set(x, "DeveloperUserIdentifierList", js.undefined)
     
-    inline def setDeveloperUserIdentifierListVarargs(value: DeveloperUserIdentifier*): Self = StObject.set(x, "DeveloperUserIdentifierList", js.Array(value :_*))
+    inline def setDeveloperUserIdentifierListVarargs(value: DeveloperUserIdentifier*): Self = StObject.set(x, "DeveloperUserIdentifierList", js.Array(value*))
     
     inline def setIdentityId(value: IdentityId): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
     

@@ -14,11 +14,11 @@ object decoratorFactoryMod {
   
   @JSImport("lodash-decorators/factory/DecoratorFactory", "InternalDecoratorFactory")
   @js.native
-  class InternalDecoratorFactory () extends StObject {
+  open class InternalDecoratorFactory () extends StObject {
     
-    /* private */ def _isApplicable(context: js.Any, config: js.Any): js.Any = js.native
+    /* private */ def _isApplicable(context: Any, config: Any): Any = js.native
     
-    /* private */ def _resolveDescriptor(target: js.Any, name: js.Any, descriptor: js.Any): js.Any = js.native
+    /* private */ def _resolveDescriptor(target: Any, name: Any, descriptor: Any): Any = js.native
     
     def createDecorator(config: DecoratorConfig): GenericDecorator = js.native
     
@@ -28,6 +28,6 @@ object decoratorFactoryMod {
   @js.native
   trait GenericDecorator extends StObject {
     
-    def apply(args: js.Any*): LodashDecorator = js.native
+    def apply(args: Any*): LodashDecorator = js.native
   }
 }

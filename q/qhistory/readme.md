@@ -1,7 +1,7 @@
 
 # Scala.js typings for qhistory
 
-Typings are for version 1.0
+Typings are for version 1.1.0
 
 ## Library description:
 Wrap history with query support
@@ -10,10 +10,10 @@ Wrap history with query support
 | ------------------ | :-------------: |
 | Full name          | qhistory |
 | Keywords           | history, query, search |
-| # releases         | 2 |
-| # dependents       | 4 |
-| # downloads        | 1327565 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 40677.333333333336 |
+| # stars            | 44.0 |
 
 ## Links
 - [Homepage](https://github.com/pshrmn/qhistory#readme)
@@ -24,7 +24,7 @@ Wrap history with query support
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

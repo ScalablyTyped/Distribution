@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(value: String): String = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[String]
-  
   @JSImport("stemmer", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def stemmer(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stemmer")(value.asInstanceOf[js.Any]).asInstanceOf[String]
 }

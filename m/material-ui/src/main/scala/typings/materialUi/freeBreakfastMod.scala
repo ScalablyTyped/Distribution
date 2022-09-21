@@ -10,10 +10,10 @@ object freeBreakfastMod {
   
   @JSImport("material-ui/svg-icons/places/free-breakfast", JSImport.Default)
   @js.native
-  class default () extends PlacesFreeBreakfast
+  open class default () extends PlacesFreeBreakfast
   
   @JSImport("material-ui/svg-icons/places/free-breakfast", "PlacesFreeBreakfast")
   @js.native
-  class PlacesFreeBreakfast ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class PlacesFreeBreakfast ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

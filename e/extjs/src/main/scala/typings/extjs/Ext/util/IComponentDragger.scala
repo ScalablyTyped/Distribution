@@ -19,19 +19,19 @@ trait IComponentDragger
     * @param e Object
     */
   @JSName("onDrag")
-  var onDrag_IComponentDragger: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var onDrag_IComponentDragger: js.UndefOr[js.Function1[/* e */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Template method which should be overridden by each DragTracker instance
     * @param e Object
     */
   @JSName("onEnd")
-  var onEnd_IComponentDragger: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var onEnd_IComponentDragger: js.UndefOr[js.Function1[/* e */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Template method which should be overridden by each DragTracker instance
     * @param e Object
     */
   @JSName("onStart")
-  var onStart_IComponentDragger: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var onStart_IComponentDragger: js.UndefOr[js.Function1[/* e */ js.UndefOr[Any], Unit]] = js.undefined
 }
 object IComponentDragger {
   
@@ -50,15 +50,15 @@ object IComponentDragger {
     
     inline def setConstrainUndefined: Self = StObject.set(x, "constrain", js.undefined)
     
-    inline def setOnDrag(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
+    inline def setOnDrag(value: /* e */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
     
     inline def setOnDragUndefined: Self = StObject.set(x, "onDrag", js.undefined)
     
-    inline def setOnEnd(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction1(value))
+    inline def setOnEnd(value: /* e */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction1(value))
     
     inline def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
     
-    inline def setOnStart(value: /* e */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
+    inline def setOnStart(value: /* e */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
     
     inline def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
   }

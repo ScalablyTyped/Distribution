@@ -1,32 +1,33 @@
 package typings.rcCascader
 
+import org.scalablytyped.runtime.Shortcut
+import typings.rcCascader.anon.DisplayName
+import typings.rcCascader.anon.Ref
 import typings.rcCascader.cascaderMod.CascaderProps
-import typings.rcCascader.cascaderMod.CascaderState
+import typings.rcCascader.cascaderMod.DefaultOptionType
+import typings.react.mod.PropsWithChildren
+import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod {
+object mod extends Shortcut {
   
   @JSImport("rc-cascader", JSImport.Default)
   @js.native
-  class default protected ()
-    extends typings.rcCascader.cascaderMod.default {
-    def this(props: CascaderProps) = this()
-  }
-  object default {
-    
-    @JSImport("rc-cascader", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /* static member */
-    @JSImport("rc-cascader", "default.defaultProps")
-    @js.native
-    def defaultProps: CascaderProps = js.native
-    inline def defaultProps_=(x: CascaderProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
-    
-    /* static member */
-    inline def getDerivedStateFromProps(nextProps: CascaderProps, prevState: CascaderState): CascaderState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[CascaderState]
-  }
+  val default: (js.Function1[
+    /* props */ PropsWithChildren[CascaderProps[DefaultOptionType]] & Ref, 
+    ReactElement
+  ]) & DisplayName = js.native
+  
+  type _To = (js.Function1[
+    /* props */ PropsWithChildren[CascaderProps[DefaultOptionType]] & Ref, 
+    ReactElement
+  ]) & DisplayName
+  
+  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
+  override def _to: (js.Function1[
+    /* props */ PropsWithChildren[CascaderProps[DefaultOptionType]] & Ref, 
+    ReactElement
+  ]) & DisplayName = default
 }

@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Shortcut
 import typings.abstractLeveldown.mod.AbstractLevelDOWN
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("level-js", JSImport.Namespace)
   @js.native
-  class Class protected ()
+  open class Class protected ()
     extends StObject
        with Level {
     def this(location: String) = this()
@@ -28,10 +27,10 @@ object mod extends Shortcut {
   @js.native
   trait Level
     extends StObject
-       with AbstractLevelDOWN[js.Any, js.Any] {
+       with AbstractLevelDOWN[Any, Any] {
     
-    def destroy(location: String, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
-    def destroy(location: String, prefix: String, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+    def destroy(location: String, cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
+    def destroy(location: String, prefix: String, cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
     
     val location: String = js.native
     

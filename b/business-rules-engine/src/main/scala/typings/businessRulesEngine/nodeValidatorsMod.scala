@@ -12,16 +12,16 @@ object nodeValidatorsMod {
   
   @JSImport("business-rules-engine/node-validators", "ContainsValidator")
   @js.native
-  class ContainsValidator protected ()
+  open class ContainsValidator protected ()
     extends StObject
        with IAsyncPropertyValidator {
-    def this(Options: Promise[js.Array[js.Any]]) = this()
+    def this(Options: Promise[js.Array[Any]]) = this()
     
-    var Options: Promise[js.Array[js.Any]] = js.native
+    var Options: Promise[js.Array[Any]] = js.native
     
     def isAcceptable(s: String): Promise[Boolean] = js.native
     /* CompleteClass */
-    override def isAcceptable(s: js.Any): Promise[Boolean] = js.native
+    override def isAcceptable(s: Any): Promise[Boolean] = js.native
     
     /* CompleteClass */
     var isAsync: Boolean = js.native
@@ -32,14 +32,14 @@ object nodeValidatorsMod {
   
   @JSImport("business-rules-engine/node-validators", "DateISOValidator")
   @js.native
-  class DateISOValidator ()
+  open class DateISOValidator ()
     extends StObject
        with IStringValidator {
     
     /* CompleteClass */
     override def isAcceptable(s: String): Boolean = js.native
     /* CompleteClass */
-    override def isAcceptable(s: js.Any): Boolean = js.native
+    override def isAcceptable(s: Any): Boolean = js.native
     
     @JSName("tagName")
     var tagName_DateISOValidator: String = js.native
@@ -47,14 +47,14 @@ object nodeValidatorsMod {
   
   @JSImport("business-rules-engine/node-validators", "DateValidator")
   @js.native
-  class DateValidator ()
+  open class DateValidator ()
     extends StObject
        with IStringValidator {
     
     /* CompleteClass */
     override def isAcceptable(s: String): Boolean = js.native
     /* CompleteClass */
-    override def isAcceptable(s: js.Any): Boolean = js.native
+    override def isAcceptable(s: Any): Boolean = js.native
     
     @JSName("tagName")
     var tagName_DateValidator: String = js.native
@@ -62,14 +62,14 @@ object nodeValidatorsMod {
   
   @JSImport("business-rules-engine/node-validators", "DigitValidator")
   @js.native
-  class DigitValidator ()
+  open class DigitValidator ()
     extends StObject
        with IStringValidator {
     
     /* CompleteClass */
     override def isAcceptable(s: String): Boolean = js.native
     /* CompleteClass */
-    override def isAcceptable(s: js.Any): Boolean = js.native
+    override def isAcceptable(s: Any): Boolean = js.native
     
     @JSName("tagName")
     var tagName_DigitValidator: String = js.native
@@ -77,14 +77,14 @@ object nodeValidatorsMod {
   
   @JSImport("business-rules-engine/node-validators", "EmailValidator")
   @js.native
-  class EmailValidator ()
+  open class EmailValidator ()
     extends StObject
        with IStringValidator {
     
     /* CompleteClass */
     override def isAcceptable(s: String): Boolean = js.native
     /* CompleteClass */
-    override def isAcceptable(s: js.Any): Boolean = js.native
+    override def isAcceptable(s: Any): Boolean = js.native
     
     @JSName("tagName")
     var tagName_EmailValidator: String = js.native
@@ -92,14 +92,14 @@ object nodeValidatorsMod {
   
   @JSImport("business-rules-engine/node-validators", "LettersOnlyValidator")
   @js.native
-  class LettersOnlyValidator ()
+  open class LettersOnlyValidator ()
     extends StObject
        with IStringValidator {
     
     /* CompleteClass */
     override def isAcceptable(s: String): Boolean = js.native
     /* CompleteClass */
-    override def isAcceptable(s: js.Any): Boolean = js.native
+    override def isAcceptable(s: Any): Boolean = js.native
     
     @JSName("tagName")
     var tagName_LettersOnlyValidator: String = js.native
@@ -107,7 +107,7 @@ object nodeValidatorsMod {
   
   @JSImport("business-rules-engine/node-validators", "MaxLengthValidator")
   @js.native
-  class MaxLengthValidator ()
+  open class MaxLengthValidator ()
     extends StObject
        with IStringValidator {
     def this(MaxLength: Double) = this()
@@ -117,7 +117,7 @@ object nodeValidatorsMod {
     /* CompleteClass */
     override def isAcceptable(s: String): Boolean = js.native
     /* CompleteClass */
-    override def isAcceptable(s: js.Any): Boolean = js.native
+    override def isAcceptable(s: Any): Boolean = js.native
     
     @JSName("tagName")
     var tagName_MaxLengthValidator: String = js.native
@@ -125,7 +125,7 @@ object nodeValidatorsMod {
   
   @JSImport("business-rules-engine/node-validators", "MaxValidator")
   @js.native
-  class MaxValidator ()
+  open class MaxValidator ()
     extends StObject
        with IPropertyValidator {
     def this(Max: Double) = this()
@@ -133,7 +133,7 @@ object nodeValidatorsMod {
     var Max: Double = js.native
     
     /* CompleteClass */
-    override def isAcceptable(s: js.Any): Boolean = js.native
+    override def isAcceptable(s: Any): Boolean = js.native
     
     @JSName("tagName")
     var tagName_MaxValidator: String = js.native
@@ -141,7 +141,7 @@ object nodeValidatorsMod {
   
   @JSImport("business-rules-engine/node-validators", "MinLengthValidator")
   @js.native
-  class MinLengthValidator ()
+  open class MinLengthValidator ()
     extends StObject
        with IStringValidator {
     def this(MinLength: Double) = this()
@@ -151,7 +151,7 @@ object nodeValidatorsMod {
     /* CompleteClass */
     override def isAcceptable(s: String): Boolean = js.native
     /* CompleteClass */
-    override def isAcceptable(s: js.Any): Boolean = js.native
+    override def isAcceptable(s: Any): Boolean = js.native
     
     @JSName("tagName")
     var tagName_MinLengthValidator: String = js.native
@@ -159,7 +159,7 @@ object nodeValidatorsMod {
   
   @JSImport("business-rules-engine/node-validators", "MinValidator")
   @js.native
-  class MinValidator ()
+  open class MinValidator ()
     extends StObject
        with IPropertyValidator {
     def this(Min: Double) = this()
@@ -167,7 +167,7 @@ object nodeValidatorsMod {
     var Min: Double = js.native
     
     /* CompleteClass */
-    override def isAcceptable(s: js.Any): Boolean = js.native
+    override def isAcceptable(s: Any): Boolean = js.native
     
     @JSName("tagName")
     var tagName_MinValidator: String = js.native
@@ -175,14 +175,14 @@ object nodeValidatorsMod {
   
   @JSImport("business-rules-engine/node-validators", "NumberValidator")
   @js.native
-  class NumberValidator ()
+  open class NumberValidator ()
     extends StObject
        with IStringValidator {
     
     /* CompleteClass */
     override def isAcceptable(s: String): Boolean = js.native
     /* CompleteClass */
-    override def isAcceptable(s: js.Any): Boolean = js.native
+    override def isAcceptable(s: Any): Boolean = js.native
     
     @JSName("tagName")
     var tagName_NumberValidator: String = js.native
@@ -190,7 +190,7 @@ object nodeValidatorsMod {
   
   @JSImport("business-rules-engine/node-validators", "PatternValidator")
   @js.native
-  class PatternValidator ()
+  open class PatternValidator ()
     extends StObject
        with IStringValidator {
     def this(Pattern: String) = this()
@@ -200,7 +200,7 @@ object nodeValidatorsMod {
     /* CompleteClass */
     override def isAcceptable(s: String): Boolean = js.native
     /* CompleteClass */
-    override def isAcceptable(s: js.Any): Boolean = js.native
+    override def isAcceptable(s: Any): Boolean = js.native
     
     @JSName("tagName")
     var tagName_PatternValidator: String = js.native
@@ -208,7 +208,7 @@ object nodeValidatorsMod {
   
   @JSImport("business-rules-engine/node-validators", "RangeLengthValidator")
   @js.native
-  class RangeLengthValidator ()
+  open class RangeLengthValidator ()
     extends StObject
        with IStringValidator {
     def this(RangeLength: js.Array[Double]) = this()
@@ -222,7 +222,7 @@ object nodeValidatorsMod {
     /* CompleteClass */
     override def isAcceptable(s: String): Boolean = js.native
     /* CompleteClass */
-    override def isAcceptable(s: js.Any): Boolean = js.native
+    override def isAcceptable(s: Any): Boolean = js.native
     
     @JSName("tagName")
     var tagName_RangeLengthValidator: String = js.native
@@ -230,7 +230,7 @@ object nodeValidatorsMod {
   
   @JSImport("business-rules-engine/node-validators", "RangeValidator")
   @js.native
-  class RangeValidator ()
+  open class RangeValidator ()
     extends StObject
        with IPropertyValidator {
     def this(Range: js.Array[Double]) = this()
@@ -242,7 +242,7 @@ object nodeValidatorsMod {
     var Range: js.Array[Double] = js.native
     
     /* CompleteClass */
-    override def isAcceptable(s: js.Any): Boolean = js.native
+    override def isAcceptable(s: Any): Boolean = js.native
     
     @JSName("tagName")
     var tagName_RangeValidator: String = js.native
@@ -250,14 +250,14 @@ object nodeValidatorsMod {
   
   @JSImport("business-rules-engine/node-validators", "RequiredValidator")
   @js.native
-  class RequiredValidator ()
+  open class RequiredValidator ()
     extends StObject
        with IStringValidator {
     
     /* CompleteClass */
     override def isAcceptable(s: String): Boolean = js.native
     /* CompleteClass */
-    override def isAcceptable(s: js.Any): Boolean = js.native
+    override def isAcceptable(s: Any): Boolean = js.native
     
     @JSName("tagName")
     var tagName_RequiredValidator: String = js.native
@@ -265,14 +265,14 @@ object nodeValidatorsMod {
   
   @JSImport("business-rules-engine/node-validators", "SignedDigitValidator")
   @js.native
-  class SignedDigitValidator ()
+  open class SignedDigitValidator ()
     extends StObject
        with IStringValidator {
     
     /* CompleteClass */
     override def isAcceptable(s: String): Boolean = js.native
     /* CompleteClass */
-    override def isAcceptable(s: js.Any): Boolean = js.native
+    override def isAcceptable(s: Any): Boolean = js.native
     
     @JSName("tagName")
     var tagName_SignedDigitValidator: String = js.native
@@ -280,7 +280,7 @@ object nodeValidatorsMod {
   
   @JSImport("business-rules-engine/node-validators", "StepValidator")
   @js.native
-  class StepValidator ()
+  open class StepValidator ()
     extends StObject
        with IPropertyValidator {
     def this(Step: String) = this()
@@ -288,7 +288,7 @@ object nodeValidatorsMod {
     var Step: String = js.native
     
     /* CompleteClass */
-    override def isAcceptable(s: js.Any): Boolean = js.native
+    override def isAcceptable(s: Any): Boolean = js.native
     
     @JSName("tagName")
     var tagName_StepValidator: String = js.native
@@ -296,14 +296,14 @@ object nodeValidatorsMod {
   
   @JSImport("business-rules-engine/node-validators", "UrlValidator")
   @js.native
-  class UrlValidator ()
+  open class UrlValidator ()
     extends StObject
        with IStringValidator {
     
     /* CompleteClass */
     override def isAcceptable(s: String): Boolean = js.native
     /* CompleteClass */
-    override def isAcceptable(s: js.Any): Boolean = js.native
+    override def isAcceptable(s: Any): Boolean = js.native
     
     @JSName("tagName")
     var tagName_UrlValidator: String = js.native
@@ -311,14 +311,14 @@ object nodeValidatorsMod {
   
   @JSImport("business-rules-engine/node-validators", "ZipCodeValidator")
   @js.native
-  class ZipCodeValidator ()
+  open class ZipCodeValidator ()
     extends StObject
        with IStringValidator {
     
     /* CompleteClass */
     override def isAcceptable(s: String): Boolean = js.native
     /* CompleteClass */
-    override def isAcceptable(s: js.Any): Boolean = js.native
+    override def isAcceptable(s: Any): Boolean = js.native
     
     @JSName("tagName")
     var tagName_ZipCodeValidator: String = js.native

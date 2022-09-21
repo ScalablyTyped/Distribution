@@ -9,9 +9,16 @@ trait ClearCoatBlock
   extends StObject
      with NodeMaterialBlock {
   
-  /* private */ var _generateTBNSpace: js.Any = js.native
+  /**
+    * Gets the TBN input component
+    */
+  def TBN: NodeMaterialConnectionPoint = js.native
   
-  /* private */ var _scene: js.Any = js.native
+  /* private */ var _generateTBNSpace: Any = js.native
+  
+  /* private */ var _scene: Any = js.native
+  
+  def autoConfigure(): Unit = js.native
   
   /**
     * Gets the clear coat object output component
@@ -62,6 +69,11 @@ trait ClearCoatBlock
     * Gets the uv input component
     */
   def uv: NodeMaterialConnectionPoint = js.native
+  
+  /**
+    * Gets the world normal input component
+    */
+  def worldNormal: NodeMaterialConnectionPoint = js.native
   
   /**
     * Gets the world tangent input component

@@ -18,14 +18,14 @@ trait CursorBasedPagingObject[T] extends StObject {
   
   var limit: Double
   
-  var next: String
+  var next: String | Null
   
   var total: js.UndefOr[Double] = js.undefined
 }
 object CursorBasedPagingObject {
   
-  inline def apply[T](cursors: CursorObject, href: String, items: js.Array[T], limit: Double, next: String): CursorBasedPagingObject[T] = {
-    val __obj = js.Dynamic.literal(cursors = cursors.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], next = next.asInstanceOf[js.Any])
+  inline def apply[T](cursors: CursorObject, href: String, items: js.Array[T], limit: Double): CursorBasedPagingObject[T] = {
+    val __obj = js.Dynamic.literal(cursors = cursors.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], next = null)
     __obj.asInstanceOf[CursorBasedPagingObject[T]]
   }
   
@@ -37,11 +37,13 @@ object CursorBasedPagingObject {
     
     inline def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
     inline def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    
+    inline def setNextNull: Self = StObject.set(x, "next", null)
     
     inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     

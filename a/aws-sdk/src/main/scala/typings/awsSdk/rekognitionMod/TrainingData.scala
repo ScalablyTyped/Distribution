@@ -24,6 +24,6 @@ object TrainingData {
     
     inline def setAssetsUndefined: Self = StObject.set(x, "Assets", js.undefined)
     
-    inline def setAssetsVarargs(value: Asset*): Self = StObject.set(x, "Assets", js.Array(value :_*))
+    inline def setAssetsVarargs(value: Asset*): Self = StObject.set(x, "Assets", js.Array(value*))
   }
 }

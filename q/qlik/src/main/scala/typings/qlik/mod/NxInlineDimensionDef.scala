@@ -41,18 +41,18 @@ object NxInlineDimensionDef {
     
     inline def setQFieldDefs(value: js.Array[String]): Self = StObject.set(x, "qFieldDefs", value.asInstanceOf[js.Any])
     
-    inline def setQFieldDefsVarargs(value: String*): Self = StObject.set(x, "qFieldDefs", js.Array(value :_*))
+    inline def setQFieldDefsVarargs(value: String*): Self = StObject.set(x, "qFieldDefs", js.Array(value*))
     
     inline def setQGrouping(value: N | H | C): Self = StObject.set(x, "qGrouping", value.asInstanceOf[js.Any])
     
     inline def setQNumberPresentations(value: js.Array[FieldAttributes]): Self = StObject.set(x, "qNumberPresentations", value.asInstanceOf[js.Any])
     
-    inline def setQNumberPresentationsVarargs(value: FieldAttributes*): Self = StObject.set(x, "qNumberPresentations", js.Array(value :_*))
+    inline def setQNumberPresentationsVarargs(value: FieldAttributes*): Self = StObject.set(x, "qNumberPresentations", js.Array(value*))
     
     inline def setQReverseSort(value: Boolean): Self = StObject.set(x, "qReverseSort", value.asInstanceOf[js.Any])
     
     inline def setQSortCriteries(value: js.Array[SortCriteria]): Self = StObject.set(x, "qSortCriteries", value.asInstanceOf[js.Any])
     
-    inline def setQSortCriteriesVarargs(value: SortCriteria*): Self = StObject.set(x, "qSortCriteries", js.Array(value :_*))
+    inline def setQSortCriteriesVarargs(value: SortCriteria*): Self = StObject.set(x, "qSortCriteries", js.Array(value*))
   }
 }

@@ -27,6 +27,6 @@ object Snapshot {
     
     inline def setWindows(value: js.Array[WindowOptions]): Self = StObject.set(x, "windows", value.asInstanceOf[js.Any])
     
-    inline def setWindowsVarargs(value: WindowOptions*): Self = StObject.set(x, "windows", js.Array(value :_*))
+    inline def setWindowsVarargs(value: WindowOptions*): Self = StObject.set(x, "windows", js.Array(value*))
   }
 }

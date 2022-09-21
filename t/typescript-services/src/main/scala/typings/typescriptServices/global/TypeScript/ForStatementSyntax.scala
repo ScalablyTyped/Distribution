@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.ForStatementSyntax")
 @js.native
-class ForStatementSyntax protected ()
+open class ForStatementSyntax protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.ForStatementSyntax {
   def this(
@@ -31,7 +31,7 @@ class ForStatementSyntax protected ()
   ) = this()
   
   /* CompleteClass */
-  override def accept(visitor: ISyntaxVisitor): js.Any = js.native
+  override def accept(visitor: ISyntaxVisitor): Any = js.native
   
   /* CompleteClass */
   override def childAt(index: Double): ISyntaxElement = js.native

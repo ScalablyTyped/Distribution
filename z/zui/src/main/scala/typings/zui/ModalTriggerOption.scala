@@ -11,7 +11,7 @@ trait ModalTriggerOption extends StObject {
   
   var backdrop: js.UndefOr[Boolean] = js.undefined
   
-  var broken: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var broken: js.UndefOr[js.Function0[Any]] = js.undefined
   
   var className: js.UndefOr[String] = js.undefined
   
@@ -19,7 +19,7 @@ trait ModalTriggerOption extends StObject {
   
   var height: js.UndefOr[String] = js.undefined
   
-  var hidden: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var hidden: js.UndefOr[js.Function0[Any]] = js.undefined
   
   var icon: js.UndefOr[String] = js.undefined
   
@@ -27,7 +27,7 @@ trait ModalTriggerOption extends StObject {
   
   var keyboard: js.UndefOr[Boolean] = js.undefined
   
-  var loaded: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var loaded: js.UndefOr[js.Function0[Any]] = js.undefined
   
   var loadingIcon: js.UndefOr[String] = js.undefined
   
@@ -35,9 +35,9 @@ trait ModalTriggerOption extends StObject {
   
   var name: js.UndefOr[String] = js.undefined
   
-  var onHide: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var onHide: js.UndefOr[js.Function0[Any]] = js.undefined
   
-  var onShow: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var onShow: js.UndefOr[js.Function0[Any]] = js.undefined
   
   var postion: js.UndefOr[String] = js.undefined
   
@@ -45,7 +45,7 @@ trait ModalTriggerOption extends StObject {
   
   var remote: js.UndefOr[String] = js.undefined
   
-  var show: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var show: js.UndefOr[js.Function0[Any]] = js.undefined
   
   var showHeader: js.UndefOr[Boolean] = js.undefined
   
@@ -74,7 +74,7 @@ object ModalTriggerOption {
     
     inline def setBackdropUndefined: Self = StObject.set(x, "backdrop", js.undefined)
     
-    inline def setBroken(value: () => js.Any): Self = StObject.set(x, "broken", js.Any.fromFunction0(value))
+    inline def setBroken(value: () => Any): Self = StObject.set(x, "broken", js.Any.fromFunction0(value))
     
     inline def setBrokenUndefined: Self = StObject.set(x, "broken", js.undefined)
     
@@ -90,7 +90,7 @@ object ModalTriggerOption {
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    inline def setHidden(value: () => js.Any): Self = StObject.set(x, "hidden", js.Any.fromFunction0(value))
+    inline def setHidden(value: () => Any): Self = StObject.set(x, "hidden", js.Any.fromFunction0(value))
     
     inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
@@ -106,7 +106,7 @@ object ModalTriggerOption {
     
     inline def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
     
-    inline def setLoaded(value: () => js.Any): Self = StObject.set(x, "loaded", js.Any.fromFunction0(value))
+    inline def setLoaded(value: () => Any): Self = StObject.set(x, "loaded", js.Any.fromFunction0(value))
     
     inline def setLoadedUndefined: Self = StObject.set(x, "loaded", js.undefined)
     
@@ -122,11 +122,11 @@ object ModalTriggerOption {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setOnHide(value: () => js.Any): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
+    inline def setOnHide(value: () => Any): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
     
     inline def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
     
-    inline def setOnShow(value: () => js.Any): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
+    inline def setOnShow(value: () => Any): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
     
     inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
     
@@ -142,7 +142,7 @@ object ModalTriggerOption {
     
     inline def setRemoteUndefined: Self = StObject.set(x, "remote", js.undefined)
     
-    inline def setShow(value: () => js.Any): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+    inline def setShow(value: () => Any): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     
     inline def setShowHeader(value: Boolean): Self = StObject.set(x, "showHeader", value.asInstanceOf[js.Any])
     

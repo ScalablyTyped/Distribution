@@ -55,7 +55,7 @@ object StackTransform {
     
     inline def setGroupby(value: js.Array[FieldName]): Self = StObject.set(x, "groupby", value.asInstanceOf[js.Any])
     
-    inline def setGroupbyVarargs(value: FieldName*): Self = StObject.set(x, "groupby", js.Array(value :_*))
+    inline def setGroupbyVarargs(value: FieldName*): Self = StObject.set(x, "groupby", js.Array(value*))
     
     inline def setOffset(value: zero | center | normalize): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
@@ -65,7 +65,7 @@ object StackTransform {
     
     inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
-    inline def setSortVarargs(value: SortField*): Self = StObject.set(x, "sort", js.Array(value :_*))
+    inline def setSortVarargs(value: SortField*): Self = StObject.set(x, "sort", js.Array(value*))
     
     inline def setStack(value: FieldName): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
   }

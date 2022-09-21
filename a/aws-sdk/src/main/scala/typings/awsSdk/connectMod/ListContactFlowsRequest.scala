@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListContactFlowsRequest extends StObject {
   
   /**
-    * The type of contact flow.
+    * The type of flow.
     */
   var ContactFlowTypes: js.UndefOr[typings.awsSdk.connectMod.ContactFlowTypes] = js.undefined
   
   /**
-    * The identifier of the Amazon Connect instance.
+    * The identifier of the Amazon Connect instance. You can find the instanceId in the ARN of the instance.
     */
   var InstanceId: typings.awsSdk.connectMod.InstanceId
   
   /**
-    * The maximimum number of results to return per page.
+    * The maximum number of results to return per page. The default MaxResult size is 100.
     */
   var MaxResults: js.UndefOr[MaxResult1000] = js.undefined
   
@@ -39,7 +39,7 @@ object ListContactFlowsRequest {
     
     inline def setContactFlowTypesUndefined: Self = StObject.set(x, "ContactFlowTypes", js.undefined)
     
-    inline def setContactFlowTypesVarargs(value: ContactFlowType*): Self = StObject.set(x, "ContactFlowTypes", js.Array(value :_*))
+    inline def setContactFlowTypesVarargs(value: ContactFlowType*): Self = StObject.set(x, "ContactFlowTypes", js.Array(value*))
     
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

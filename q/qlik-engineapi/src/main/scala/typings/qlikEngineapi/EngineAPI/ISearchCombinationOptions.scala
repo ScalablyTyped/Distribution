@@ -65,7 +65,7 @@ object ISearchCombinationOptions {
     
     inline def setQAttributesUndefined: Self = StObject.set(x, "qAttributes", js.undefined)
     
-    inline def setQAttributesVarargs(value: String*): Self = StObject.set(x, "qAttributes", js.Array(value :_*))
+    inline def setQAttributesVarargs(value: String*): Self = StObject.set(x, "qAttributes", js.Array(value*))
     
     inline def setQCharEncoding(value: Utf8 | Utf16): Self = StObject.set(x, "qCharEncoding", value.asInstanceOf[js.Any])
     
@@ -73,6 +73,6 @@ object ISearchCombinationOptions {
     
     inline def setQSearchFields(value: js.Array[String]): Self = StObject.set(x, "qSearchFields", value.asInstanceOf[js.Any])
     
-    inline def setQSearchFieldsVarargs(value: String*): Self = StObject.set(x, "qSearchFields", js.Array(value :_*))
+    inline def setQSearchFieldsVarargs(value: String*): Self = StObject.set(x, "qSearchFields", js.Array(value*))
   }
 }

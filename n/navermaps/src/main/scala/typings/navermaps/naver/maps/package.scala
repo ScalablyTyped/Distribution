@@ -1,81 +1,74 @@
 package typings.navermaps.naver.maps
 
+import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AroundControl = typings.navermaps.naver.maps.CustomControl
+type AroundControl = CustomControl
 
-type ArrayOfBounds = js.Array[
-typings.navermaps.naver.maps.LatLngBounds | typings.navermaps.naver.maps.PointBounds]
+type ArrayOfBounds = js.Array[LatLngBounds | PointBounds]
 
-type ArrayOfBoundsLiteral = js.Array[
-typings.navermaps.naver.maps.LatLngBoundsLiteral | typings.navermaps.naver.maps.PointBoundsLiteral]
+type ArrayOfBoundsLiteral = js.Array[LatLngBoundsLiteral | PointBoundsLiteral]
 
-type ArrayOfCoords = js.Array[typings.navermaps.naver.maps.LatLng | typings.navermaps.naver.maps.Point]
+type ArrayOfCoords = js.Array[LatLng | Point]
 
-type ArrayOfCoordsLiteral = js.Array[
-typings.navermaps.naver.maps.LatLngLiteral | typings.navermaps.naver.maps.PointLiteral]
+type ArrayOfCoordsLiteral = js.Array[LatLngLiteral | PointLiteral]
 
-type BoundsLiteral = typings.navermaps.naver.maps.PointBoundsLiteral | typings.navermaps.naver.maps.LatLngBoundsLiteral
+type BoundsLiteral = PointBoundsLiteral | LatLngBoundsLiteral
 
-type CanvasTile = typings.navermaps.naver.maps.Tile
+type CanvasTile = Tile
 
-type CoordLiteral = typings.navermaps.naver.maps.PointLiteral | typings.navermaps.naver.maps.LatLngLiteral
+type CoordLiteral = PointLiteral | LatLngLiteral
 
-type DOMEvent = typings.std.Event
+type DOMEvent = Event
 
-type GPX = js.Any
+type GPX = Any
 
-type GeoJSON = js.Any
+type GeoJSON = Any
 
-type KML = js.Any
+type KML = Any
 
-type KVOArrayOfCoords = js.Any
+type KVOArrayOfCoords = Any
 
 // Naver Layers
-type LabelLayer = typings.navermaps.naver.maps.Layer
+type LabelLayer = Layer
 
-type LatLngBoundsLiteral = typings.navermaps.naver.maps.PointBoundsLiteral | typings.navermaps.naver.maps.LatLngBoundsObjectLiteral
+type LatLngBoundsLiteral = PointBoundsLiteral | LatLngBoundsObjectLiteral
 
-type LatLngLiteral = typings.navermaps.naver.maps.PointLiteral | typings.navermaps.naver.maps.LatLngObjectLiteral
+type LatLngLiteral = PointLiteral | LatLngObjectLiteral
 
 // Naver Controls
-type LogoControl = typings.navermaps.naver.maps.CustomControl
+type LogoControl = CustomControl
 
-type MapDataControl = typings.navermaps.naver.maps.CustomControl
+type MapDataControl = CustomControl
 
-type MapTypeControl = typings.navermaps.naver.maps.CustomControl
+type MapTypeControl = CustomControl
 
-type MapTypeId = java.lang.String
+type MapTypeId = String
 
 /**
   * Types
   */
-type PointArrayLiteral = js.Tuple2[scala.Double, scala.Double]
+type PointArrayLiteral = js.Tuple2[Double, Double]
 
-type PointBoundsArrayLiteral = js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double]
+type PointBoundsArrayLiteral = js.Tuple4[Double, Double, Double, Double]
 
-type PointBoundsLiteral = typings.navermaps.naver.maps.PointBoundsArrayLiteral | typings.navermaps.naver.maps.PointBoundsObjectLiteral
+type PointBoundsLiteral = PointBoundsArrayLiteral | PointBoundsObjectLiteral
 
-type PointLiteral = typings.navermaps.naver.maps.PointArrayLiteral | typings.navermaps.naver.maps.PointObjectLiteral
+type PointLiteral = PointArrayLiteral | PointObjectLiteral
 
-type ScaleControl = typings.navermaps.naver.maps.CustomControl
+type ScaleControl = CustomControl
 
-type SizeArrayLiteral = js.Tuple2[scala.Double, scala.Double]
+type SizeArrayLiteral = js.Tuple2[Double, Double]
 
-type SizeLiteral = typings.navermaps.naver.maps.SizeArrayLiteral | typings.navermaps.naver.maps.SizeObjectLiteral
+type SizeLiteral = SizeArrayLiteral | SizeObjectLiteral
 
-type StylingFunction = js.Function1[
-/* feature */ typings.navermaps.naver.maps.Feature, 
-typings.navermaps.naver.maps.StyleOptions]
+type StylingFunction = js.Function1[/* feature */ Feature, StyleOptions]
 
-type SymbolStyle = java.lang.String
+type SymbolStyle = String
 
-type ZoomControl = typings.navermaps.naver.maps.CustomControl
+type ZoomControl = CustomControl
 
-type forEachOverlayCallback = js.Function2[
-/* overlay */ typings.navermaps.naver.maps.Marker | typings.navermaps.naver.maps.Polyline | typings.navermaps.naver.maps.Polygon, 
-/* index */ scala.Double, 
-scala.Unit]
+type forEachOverlayCallback = js.Function2[/* overlay */ Marker | Polyline | Polygon, /* index */ Double, Unit]

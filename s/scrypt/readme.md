@@ -10,10 +10,10 @@ The scrypt crypto library for NodeJS
 | ------------------ | :-------------: |
 | Full name          | scrypt |
 | Keywords           | scrypt, password, auth, authentication, encryption, crypto, secret, key, secret key, hash, verify |
-| # releases         | 1 |
-| # dependents       | 87 |
-| # downloads        | 1875667 |
-| # stars            | 22 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 39492.666666666664 |
+| # stars            | 373.0 |
 
 ## Links
 - [Homepage](https://github.com/barrysteyn/node-scrypt)

@@ -45,6 +45,11 @@ trait EffectWrapperCreationOptions extends StObject {
   var samplerNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
+    * The language the shader is written in (default: GLSL)
+    */
+  var shaderLanguage: js.UndefOr[ShaderLanguage] = js.undefined
+  
+  /**
     * Uniforms to use in the shader
     */
   var uniformNames: js.UndefOr[js.Array[String]] = js.undefined
@@ -72,13 +77,13 @@ object EffectWrapperCreationOptions {
     
     inline def setAttributeNamesUndefined: Self = StObject.set(x, "attributeNames", js.undefined)
     
-    inline def setAttributeNamesVarargs(value: String*): Self = StObject.set(x, "attributeNames", js.Array(value :_*))
+    inline def setAttributeNamesVarargs(value: String*): Self = StObject.set(x, "attributeNames", js.Array(value*))
     
     inline def setDefines(value: js.Array[String]): Self = StObject.set(x, "defines", value.asInstanceOf[js.Any])
     
     inline def setDefinesUndefined: Self = StObject.set(x, "defines", js.undefined)
     
-    inline def setDefinesVarargs(value: String*): Self = StObject.set(x, "defines", js.Array(value :_*))
+    inline def setDefinesVarargs(value: String*): Self = StObject.set(x, "defines", js.Array(value*))
     
     inline def setEngine(value: ThinEngine): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
     
@@ -98,13 +103,17 @@ object EffectWrapperCreationOptions {
     
     inline def setSamplerNamesUndefined: Self = StObject.set(x, "samplerNames", js.undefined)
     
-    inline def setSamplerNamesVarargs(value: String*): Self = StObject.set(x, "samplerNames", js.Array(value :_*))
+    inline def setSamplerNamesVarargs(value: String*): Self = StObject.set(x, "samplerNames", js.Array(value*))
+    
+    inline def setShaderLanguage(value: ShaderLanguage): Self = StObject.set(x, "shaderLanguage", value.asInstanceOf[js.Any])
+    
+    inline def setShaderLanguageUndefined: Self = StObject.set(x, "shaderLanguage", js.undefined)
     
     inline def setUniformNames(value: js.Array[String]): Self = StObject.set(x, "uniformNames", value.asInstanceOf[js.Any])
     
     inline def setUniformNamesUndefined: Self = StObject.set(x, "uniformNames", js.undefined)
     
-    inline def setUniformNamesVarargs(value: String*): Self = StObject.set(x, "uniformNames", js.Array(value :_*))
+    inline def setUniformNamesVarargs(value: String*): Self = StObject.set(x, "uniformNames", js.Array(value*))
     
     inline def setUseShaderStore(value: Boolean): Self = StObject.set(x, "useShaderStore", value.asInstanceOf[js.Any])
     

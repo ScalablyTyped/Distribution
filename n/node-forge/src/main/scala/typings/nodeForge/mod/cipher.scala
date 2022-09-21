@@ -113,7 +113,7 @@ object cipher {
       
       inline def setIvUndefined: Self = StObject.set(x, "iv", js.undefined)
       
-      inline def setIvVarargs(value: Byte*): Self = StObject.set(x, "iv", js.Array(value :_*))
+      inline def setIvVarargs(value: Byte*): Self = StObject.set(x, "iv", js.Array(value*))
       
       inline def setTag(value: ByteStringBuffer): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       

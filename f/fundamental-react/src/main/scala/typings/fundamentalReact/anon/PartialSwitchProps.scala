@@ -1,5 +1,6 @@
 package typings.fundamentalReact.anon
 
+import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,6 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PartialSwitchProps extends StObject {
   
   var checked: js.UndefOr[Boolean] = js.undefined
+  
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   var className: js.UndefOr[String] = js.undefined
   
@@ -19,13 +22,13 @@ trait PartialSwitchProps extends StObject {
   
   var id: js.UndefOr[String] = js.undefined
   
-  var inputProps: js.UndefOr[js.Any] = js.undefined
+  var inputProps: js.UndefOr[Any] = js.undefined
   
   var internalLabels: js.UndefOr[Checked] = js.undefined
   
-  var labelProps: js.UndefOr[js.Any] = js.undefined
+  var labelProps: js.UndefOr[Any] = js.undefined
   
-  var onChange: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
   
   var semantic: js.UndefOr[Boolean] = js.undefined
 }
@@ -41,6 +44,10 @@ object PartialSwitchProps {
     inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
     inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+    
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
@@ -62,7 +69,7 @@ object PartialSwitchProps {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setInputProps(value: js.Any): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
+    inline def setInputProps(value: Any): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
     
     inline def setInputPropsUndefined: Self = StObject.set(x, "inputProps", js.undefined)
     
@@ -70,11 +77,11 @@ object PartialSwitchProps {
     
     inline def setInternalLabelsUndefined: Self = StObject.set(x, "internalLabels", js.undefined)
     
-    inline def setLabelProps(value: js.Any): Self = StObject.set(x, "labelProps", value.asInstanceOf[js.Any])
+    inline def setLabelProps(value: Any): Self = StObject.set(x, "labelProps", value.asInstanceOf[js.Any])
     
     inline def setLabelPropsUndefined: Self = StObject.set(x, "labelProps", js.undefined)
     
-    inline def setOnChange(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: /* repeated */ Any => Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     

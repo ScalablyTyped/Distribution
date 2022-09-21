@@ -47,7 +47,7 @@ object DeleteLabelsRequest {
     
     inline def setLabelsUndefined: Self = StObject.set(x, "Labels", js.undefined)
     
-    inline def setLabelsVarargs(value: SharedLabel*): Self = StObject.set(x, "Labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: SharedLabel*): Self = StObject.set(x, "Labels", js.Array(value*))
     
     inline def setResourceId(value: ResourceIdType): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
   }

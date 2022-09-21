@@ -9,23 +9,23 @@ object mockResponseMod {
   
   @JSImport("xhr-mock/lib/MockResponse", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with MockResponse
   
   @js.native
   trait MockResponse extends StObject {
     
-    /* private */ var _body: js.Any = js.native
+    /* private */ var _body: Any = js.native
     
-    /* private */ var _headers: js.Any = js.native
+    /* private */ var _headers: Any = js.native
     
-    /* private */ var _reason: js.Any = js.native
+    /* private */ var _reason: Any = js.native
     
-    /* private */ var _status: js.Any = js.native
+    /* private */ var _status: Any = js.native
     
-    def body(): js.Any = js.native
-    def body(body: js.Any): MockResponse = js.native
+    def body(): Any = js.native
+    def body(body: Any): MockResponse = js.native
     
     def header(name: String): Null | String = js.native
     def header(name: String, value: String): MockResponse = js.native

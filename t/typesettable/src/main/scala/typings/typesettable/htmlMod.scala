@@ -18,7 +18,7 @@ object htmlMod {
   
   @JSImport("typesettable/build/src/contexts/html", "HtmlContext")
   @js.native
-  class HtmlContext protected ()
+  open class HtmlContext protected ()
     extends StObject
        with ITypesetterContext[HTMLElement] {
     /**
@@ -32,11 +32,11 @@ object htmlMod {
     def this(element: HTMLElement, className: String, addTitle: Boolean) = this()
     def this(element: HTMLElement, className: Unit, addTitle: Boolean) = this()
     
-    /* private */ var addTitle: js.Any = js.native
+    /* private */ var addTitle: Any = js.native
     
-    /* private */ var className: js.Any = js.native
+    /* private */ var className: Any = js.native
     
-    /* private */ def createHtmlLinePen(textBlock: js.Any): js.Any = js.native
+    /* private */ def createHtmlLinePen(textBlock: Any): Any = js.native
     
     /* CompleteClass */
     override def createPen(text: String, transform: ITransform): IPen = js.native
@@ -53,14 +53,14 @@ object htmlMod {
     @JSName("createRuler")
     var createRuler_Original: IRulerFactory = js.native
     
-    /* private */ var element: js.Any = js.native
+    /* private */ var element: Any = js.native
     
     def setAddTitle(addTitle: Boolean): Unit = js.native
   }
   
   @JSImport("typesettable/build/src/contexts/html", "HtmlUtils")
   @js.native
-  class HtmlUtils () extends StObject
+  open class HtmlUtils () extends StObject
   /* static members */
   object HtmlUtils {
     
@@ -71,7 +71,7 @@ object htmlMod {
     /**
       * Adds the variadic classnames to the Element
       */
-    inline def addClasses(element: Element, classNames: String*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addClasses")(element.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addClasses(element: Element, classNames: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addClasses")(List(element.asInstanceOf[js.Any]).`++`(classNames.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
     
     /**
       * Appends an HTML element with the specified tag name to the provided element.
@@ -79,12 +79,12 @@ object htmlMod {
       *
       * Returns the new element.
       */
-    inline def append(element: Element, tagName: String, classNames: String*): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(element.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+    inline def append(element: Element, tagName: String, classNames: String*): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("append")((List(element.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).`++`(classNames.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[HTMLElement]
     
     /**
       * Creates and returns a new HTMLElement with the attached classnames.
       */
-    inline def create(tagName: String, classNames: String*): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tagName.asInstanceOf[js.Any], classNames.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+    inline def create(tagName: String, classNames: String*): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(List(tagName.asInstanceOf[js.Any]).`++`(classNames.asInstanceOf[Seq[js.Any]])*).asInstanceOf[HTMLElement]
     
     /**
       * Returns the width/height of HTMLElement's bounding box

@@ -19,11 +19,11 @@ object apiServiceMod {
   
   @JSImport("@firebase/performance/dist/src/services/api_service", "Api")
   @js.native
-  class Api () extends StObject {
+  open class Api () extends StObject {
     def this(window: Window) = this()
     
     /** PreformanceObserver constructor function. */
-    /* private */ val PerformanceObserver: js.Any = js.native
+    /* private */ val PerformanceObserver: Any = js.native
     
     val document: Document = js.native
     
@@ -43,9 +43,9 @@ object apiServiceMod {
     
     val navigator: Navigator = js.native
     
-    val onFirstInputDelay: js.UndefOr[js.Function] = js.native
+    val onFirstInputDelay: js.UndefOr[js.Function1[/* fn */ js.Function1[/* fid */ Double, Unit], Unit]] = js.native
     
-    /* private */ val performance: js.Any = js.native
+    /* private */ val performance: Any = js.native
     
     def requiredApisAvailable(): Boolean = js.native
     
@@ -53,7 +53,7 @@ object apiServiceMod {
     
     val window: js.UndefOr[Window] = js.native
     
-    /* private */ val windowLocation: js.Any = js.native
+    /* private */ val windowLocation: Any = js.native
   }
   /* static members */
   object Api {

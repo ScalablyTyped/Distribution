@@ -1,6 +1,6 @@
 package typings.serialport
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Duplex
 import typings.node.streamMod.Transform
 import typings.serialport.anon.Cts
@@ -43,7 +43,6 @@ import typings.serialport.serialportStrings.space
 import typings.serialport.serialportStrings.ucs2
 import typings.serialport.serialportStrings.utf16le
 import typings.serialport.serialportStrings.utf8
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,7 +51,7 @@ object mod {
   
   @JSImport("serialport", JSImport.Namespace)
   @js.native
-  class ^ protected () extends SerialPort {
+  open class ^ protected () extends SerialPort {
     def this(path: String) = this()
     def this(path: String, callback: ErrorCallback) = this()
     def this(path: String, options: OpenOptions) = this()
@@ -66,28 +65,28 @@ object mod {
   // Binding Type Def
   @JSImport("serialport", "BaseBinding")
   @js.native
-  class BaseBinding protected () extends StObject {
-    def this(options: js.Any) = this()
+  open class BaseBinding protected () extends StObject {
+    def this(options: Any) = this()
     
-    def close(): js.Promise[js.Any] = js.native
+    def close(): js.Promise[Any] = js.native
     
-    def drain(): js.Promise[js.Any] = js.native
+    def drain(): js.Promise[Any] = js.native
     
-    def flush(): js.Promise[js.Any] = js.native
+    def flush(): js.Promise[Any] = js.native
     
-    def get(): js.Promise[js.Any] = js.native
+    def get(): js.Promise[Any] = js.native
     
-    def open(path: String, options: OpenOptions): js.Promise[js.Any] = js.native
+    def open(path: String, options: OpenOptions): js.Promise[Any] = js.native
     
-    def read(data: Buffer, offset: Double, length: Double): js.Promise[js.Any] = js.native
+    def read(data: Buffer, offset: Double, length: Double): js.Promise[Any] = js.native
     
-    def set(): js.Promise[js.Any] = js.native
-    def set(options: SetOptions): js.Promise[js.Any] = js.native
+    def set(): js.Promise[Any] = js.native
+    def set(options: SetOptions): js.Promise[Any] = js.native
     
-    def update(): js.Promise[js.Any] = js.native
-    def update(options: UpdateOptions): js.Promise[js.Any] = js.native
+    def update(): js.Promise[Any] = js.native
+    def update(options: UpdateOptions): js.Promise[Any] = js.native
     
-    def write(data: Buffer): js.Promise[js.Any] = js.native
+    def write(data: Buffer): js.Promise[Any] = js.native
   }
   object BaseBinding {
     
@@ -112,43 +111,43 @@ object mod {
     
     @JSImport("serialport", "parsers.ByteLength")
     @js.native
-    class ByteLength protected () extends Transform {
+    open class ByteLength protected () extends Transform {
       def this(options: Length) = this()
     }
     
     @JSImport("serialport", "parsers.CCTalk")
     @js.native
-    class CCTalk () extends Transform
+    open class CCTalk () extends Transform
     
     @JSImport("serialport", "parsers.Delimiter")
     @js.native
-    class Delimiter protected () extends Transform {
+    open class Delimiter protected () extends Transform {
       def this(options: typings.serialport.anon.Delimiter) = this()
     }
     
     @JSImport("serialport", "parsers.Readline")
     @js.native
-    class Readline protected () extends Delimiter {
+    open class Readline protected () extends Delimiter {
       def this(options: Encoding) = this()
     }
     
     @JSImport("serialport", "parsers.Ready")
     @js.native
-    class Ready protected () extends Transform {
+    open class Ready protected () extends Transform {
       def this(options: `0`) = this()
     }
     
     @JSImport("serialport", "parsers.Regex")
     @js.native
-    class Regex protected () extends Transform {
+    open class Regex protected () extends Transform {
       def this(options: typings.serialport.anon.Regex) = this()
     }
   }
   
   // Callbacks Type Defs
-  type ErrorCallback = js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
+  type ErrorCallback = js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit]
   
-  type ModemBitsCallback = js.Function2[/* error */ js.UndefOr[Error | Null], /* status */ Cts, Unit]
+  type ModemBitsCallback = js.Function2[/* error */ js.UndefOr[js.Error | Null], /* status */ Cts, Unit]
   
   // Options Type Defs
   trait OpenOptions extends StObject {
@@ -307,7 +306,7 @@ object mod {
     val binding: BaseBinding = js.native
     
     def close(): Unit = js.native
-    def close(callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Unit = js.native
+    def close(callback: js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit]): Unit = js.native
     
     def drain(): Unit = js.native
     def drain(callback: ErrorCallback): Unit = js.native
@@ -320,10 +319,19 @@ object mod {
     
     val isOpen: Boolean = js.native
     
+    def on(event: String, callback: js.Function1[/* data */ js.UndefOr[Any], Unit]): this.type = js.native
+    
     def open(): Unit = js.native
     def open(callback: ErrorCallback): Unit = js.native
     
     val path: String = js.native
+    
+    def pause(): this.type = js.native
+    
+    def read(): String | Buffer | Null = js.native
+    def read(size: Double): String | Buffer | Null = js.native
+    
+    def resume(): this.type = js.native
     
     def set(options: SetOptions): Unit = js.native
     def set(options: SetOptions, callback: ErrorCallback): Unit = js.native
@@ -331,203 +339,53 @@ object mod {
     def update(options: UpdateOptions): Unit = js.native
     def update(options: UpdateOptions, callback: ErrorCallback): Unit = js.native
     
+    def write(buffer: String, encoding: ascii | utf8 | utf16le | ucs2 | base64 | binary | hex): Boolean = js.native
+    def write(
+      buffer: String,
+      encoding: ascii | utf8 | utf16le | ucs2 | base64 | binary | hex,
+      callback: js.Function2[/* error */ js.UndefOr[js.Error | Null], /* bytesWritten */ Double, Unit]
+    ): Boolean = js.native
     def write(
       buffer: String,
       encoding: Unit,
-      callback: js.Function2[/* error */ js.UndefOr[Error | Null], /* bytesWritten */ Double, Unit]
+      callback: js.Function2[/* error */ js.UndefOr[js.Error | Null], /* bytesWritten */ Double, Unit]
+    ): Boolean = js.native
+    def write(buffer: js.Array[Double], encoding: ascii | utf8 | utf16le | ucs2 | base64 | binary | hex): Boolean = js.native
+    def write(
+      buffer: js.Array[Double],
+      encoding: ascii | utf8 | utf16le | ucs2 | base64 | binary | hex,
+      callback: js.Function2[/* error */ js.UndefOr[js.Error | Null], /* bytesWritten */ Double, Unit]
     ): Boolean = js.native
     def write(
       buffer: js.Array[Double],
       encoding: Unit,
-      callback: js.Function2[/* error */ js.UndefOr[Error | Null], /* bytesWritten */ Double, Unit]
+      callback: js.Function2[/* error */ js.UndefOr[js.Error | Null], /* bytesWritten */ Double, Unit]
+    ): Boolean = js.native
+    def write(buffer: Buffer, encoding: ascii | utf8 | utf16le | ucs2 | base64 | binary | hex): Boolean = js.native
+    def write(
+      buffer: Buffer,
+      encoding: ascii | utf8 | utf16le | ucs2 | base64 | binary | hex,
+      callback: js.Function2[/* error */ js.UndefOr[js.Error | Null], /* bytesWritten */ Double, Unit]
     ): Boolean = js.native
     def write(
       buffer: Buffer,
       encoding: Unit,
-      callback: js.Function2[/* error */ js.UndefOr[Error | Null], /* bytesWritten */ Double, Unit]
+      callback: js.Function2[/* error */ js.UndefOr[js.Error | Null], /* bytesWritten */ Double, Unit]
     ): Boolean = js.native
     def write(data: String): Boolean = js.native
     def write(
       data: String,
-      callback: js.Function2[/* error */ js.UndefOr[Error | Null], /* bytesWritten */ Double, Unit]
+      callback: js.Function2[/* error */ js.UndefOr[js.Error | Null], /* bytesWritten */ Double, Unit]
     ): Boolean = js.native
     def write(data: js.Array[Double]): Boolean = js.native
     def write(
       data: js.Array[Double],
-      callback: js.Function2[/* error */ js.UndefOr[Error | Null], /* bytesWritten */ Double, Unit]
+      callback: js.Function2[/* error */ js.UndefOr[js.Error | Null], /* bytesWritten */ Double, Unit]
     ): Boolean = js.native
     def write(data: Buffer): Boolean = js.native
     def write(
       data: Buffer,
-      callback: js.Function2[/* error */ js.UndefOr[Error | Null], /* bytesWritten */ Double, Unit]
-    ): Boolean = js.native
-    @JSName("write")
-    def write_ascii(buffer: String, encoding: ascii): Boolean = js.native
-    @JSName("write")
-    def write_ascii(
-      buffer: String,
-      encoding: ascii,
-      callback: js.Function2[/* error */ js.UndefOr[Error | Null], /* bytesWritten */ Double, Unit]
-    ): Boolean = js.native
-    @JSName("write")
-    def write_ascii(buffer: js.Array[Double], encoding: ascii): Boolean = js.native
-    @JSName("write")
-    def write_ascii(
-      buffer: js.Array[Double],
-      encoding: ascii,
-      callback: js.Function2[/* error */ js.UndefOr[Error | Null], /* bytesWritten */ Double, Unit]
-    ): Boolean = js.native
-    @JSName("write")
-    def write_ascii(buffer: Buffer, encoding: ascii): Boolean = js.native
-    @JSName("write")
-    def write_ascii(
-      buffer: Buffer,
-      encoding: ascii,
-      callback: js.Function2[/* error */ js.UndefOr[Error | Null], /* bytesWritten */ Double, Unit]
-    ): Boolean = js.native
-    @JSName("write")
-    def write_base64(buffer: String, encoding: base64): Boolean = js.native
-    @JSName("write")
-    def write_base64(
-      buffer: String,
-      encoding: base64,
-      callback: js.Function2[/* error */ js.UndefOr[Error | Null], /* bytesWritten */ Double, Unit]
-    ): Boolean = js.native
-    @JSName("write")
-    def write_base64(buffer: js.Array[Double], encoding: base64): Boolean = js.native
-    @JSName("write")
-    def write_base64(
-      buffer: js.Array[Double],
-      encoding: base64,
-      callback: js.Function2[/* error */ js.UndefOr[Error | Null], /* bytesWritten */ Double, Unit]
-    ): Boolean = js.native
-    @JSName("write")
-    def write_base64(buffer: Buffer, encoding: base64): Boolean = js.native
-    @JSName("write")
-    def write_base64(
-      buffer: Buffer,
-      encoding: base64,
-      callback: js.Function2[/* error */ js.UndefOr[Error | Null], /* bytesWritten */ Double, Unit]
-    ): Boolean = js.native
-    @JSName("write")
-    def write_binary(buffer: String, encoding: binary): Boolean = js.native
-    @JSName("write")
-    def write_binary(
-      buffer: String,
-      encoding: binary,
-      callback: js.Function2[/* error */ js.UndefOr[Error | Null], /* bytesWritten */ Double, Unit]
-    ): Boolean = js.native
-    @JSName("write")
-    def write_binary(buffer: js.Array[Double], encoding: binary): Boolean = js.native
-    @JSName("write")
-    def write_binary(
-      buffer: js.Array[Double],
-      encoding: binary,
-      callback: js.Function2[/* error */ js.UndefOr[Error | Null], /* bytesWritten */ Double, Unit]
-    ): Boolean = js.native
-    @JSName("write")
-    def write_binary(buffer: Buffer, encoding: binary): Boolean = js.native
-    @JSName("write")
-    def write_binary(
-      buffer: Buffer,
-      encoding: binary,
-      callback: js.Function2[/* error */ js.UndefOr[Error | Null], /* bytesWritten */ Double, Unit]
-    ): Boolean = js.native
-    @JSName("write")
-    def write_hex(buffer: String, encoding: hex): Boolean = js.native
-    @JSName("write")
-    def write_hex(
-      buffer: String,
-      encoding: hex,
-      callback: js.Function2[/* error */ js.UndefOr[Error | Null], /* bytesWritten */ Double, Unit]
-    ): Boolean = js.native
-    @JSName("write")
-    def write_hex(buffer: js.Array[Double], encoding: hex): Boolean = js.native
-    @JSName("write")
-    def write_hex(
-      buffer: js.Array[Double],
-      encoding: hex,
-      callback: js.Function2[/* error */ js.UndefOr[Error | Null], /* bytesWritten */ Double, Unit]
-    ): Boolean = js.native
-    @JSName("write")
-    def write_hex(buffer: Buffer, encoding: hex): Boolean = js.native
-    @JSName("write")
-    def write_hex(
-      buffer: Buffer,
-      encoding: hex,
-      callback: js.Function2[/* error */ js.UndefOr[Error | Null], /* bytesWritten */ Double, Unit]
-    ): Boolean = js.native
-    @JSName("write")
-    def write_ucs2(buffer: String, encoding: ucs2): Boolean = js.native
-    @JSName("write")
-    def write_ucs2(
-      buffer: String,
-      encoding: ucs2,
-      callback: js.Function2[/* error */ js.UndefOr[Error | Null], /* bytesWritten */ Double, Unit]
-    ): Boolean = js.native
-    @JSName("write")
-    def write_ucs2(buffer: js.Array[Double], encoding: ucs2): Boolean = js.native
-    @JSName("write")
-    def write_ucs2(
-      buffer: js.Array[Double],
-      encoding: ucs2,
-      callback: js.Function2[/* error */ js.UndefOr[Error | Null], /* bytesWritten */ Double, Unit]
-    ): Boolean = js.native
-    @JSName("write")
-    def write_ucs2(buffer: Buffer, encoding: ucs2): Boolean = js.native
-    @JSName("write")
-    def write_ucs2(
-      buffer: Buffer,
-      encoding: ucs2,
-      callback: js.Function2[/* error */ js.UndefOr[Error | Null], /* bytesWritten */ Double, Unit]
-    ): Boolean = js.native
-    @JSName("write")
-    def write_utf16le(buffer: String, encoding: utf16le): Boolean = js.native
-    @JSName("write")
-    def write_utf16le(
-      buffer: String,
-      encoding: utf16le,
-      callback: js.Function2[/* error */ js.UndefOr[Error | Null], /* bytesWritten */ Double, Unit]
-    ): Boolean = js.native
-    @JSName("write")
-    def write_utf16le(buffer: js.Array[Double], encoding: utf16le): Boolean = js.native
-    @JSName("write")
-    def write_utf16le(
-      buffer: js.Array[Double],
-      encoding: utf16le,
-      callback: js.Function2[/* error */ js.UndefOr[Error | Null], /* bytesWritten */ Double, Unit]
-    ): Boolean = js.native
-    @JSName("write")
-    def write_utf16le(buffer: Buffer, encoding: utf16le): Boolean = js.native
-    @JSName("write")
-    def write_utf16le(
-      buffer: Buffer,
-      encoding: utf16le,
-      callback: js.Function2[/* error */ js.UndefOr[Error | Null], /* bytesWritten */ Double, Unit]
-    ): Boolean = js.native
-    @JSName("write")
-    def write_utf8(buffer: String, encoding: utf8): Boolean = js.native
-    @JSName("write")
-    def write_utf8(
-      buffer: String,
-      encoding: utf8,
-      callback: js.Function2[/* error */ js.UndefOr[Error | Null], /* bytesWritten */ Double, Unit]
-    ): Boolean = js.native
-    @JSName("write")
-    def write_utf8(buffer: js.Array[Double], encoding: utf8): Boolean = js.native
-    @JSName("write")
-    def write_utf8(
-      buffer: js.Array[Double],
-      encoding: utf8,
-      callback: js.Function2[/* error */ js.UndefOr[Error | Null], /* bytesWritten */ Double, Unit]
-    ): Boolean = js.native
-    @JSName("write")
-    def write_utf8(buffer: Buffer, encoding: utf8): Boolean = js.native
-    @JSName("write")
-    def write_utf8(
-      buffer: Buffer,
-      encoding: utf8,
-      callback: js.Function2[/* error */ js.UndefOr[Error | Null], /* bytesWritten */ Double, Unit]
+      callback: js.Function2[/* error */ js.UndefOr[js.Error | Null], /* bytesWritten */ Double, Unit]
     ): Boolean = js.native
   }
   

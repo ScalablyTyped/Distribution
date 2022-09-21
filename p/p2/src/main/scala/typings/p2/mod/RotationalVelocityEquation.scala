@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("p2", "RotationalVelocityEquation")
 @js.native
-class RotationalVelocityEquation protected () extends Equation {
+open class RotationalVelocityEquation protected () extends Equation {
   def this(bodyA: Body, bodyB: Body) = this()
 }

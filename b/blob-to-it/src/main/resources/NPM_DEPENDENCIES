@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "blob-to-it" : "1.0.1"
+      "blob-to-it" : "1.0.4"
     }
   ],
   "test-dependencies" : [
     {
-      "blob-to-it" : "1.0.1"
+      "blob-to-it" : "1.0.4"
     }
   ],
   "compile-devDependencies" : [

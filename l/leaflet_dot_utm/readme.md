@@ -10,10 +10,10 @@ Converts LatLng to UTM WGS84 in Leaflet
 | ------------------ | :-------------: |
 | Full name          | leaflet.utm |
 | Keywords           | Leaflet, map, geo, UTM |
-| # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 6885 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1741.3333333333333 |
+| # stars            | 50.0 |
 
 ## Links
 - [Homepage](https://github.com/jjimenezshaw/Leaflet.UTM#readme)

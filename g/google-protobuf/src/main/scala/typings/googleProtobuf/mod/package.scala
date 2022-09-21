@@ -5,34 +5,26 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AnyFieldType = typings.googleProtobuf.mod.ScalarFieldType | typings.googleProtobuf.mod.RepeatedFieldType | typings.std.Uint8Array
+type AnyFieldType = ScalarFieldType | RepeatedFieldType | js.typedarray.Uint8Array
 
-type BinaryRead = js.Function2[
-/* msg */ js.Any, 
-/* reader */ typings.googleProtobuf.mod.BinaryReadReader, 
-scala.Unit]
+type BinaryRead = js.Function2[/* msg */ Any, /* reader */ BinaryReadReader, Any]
 
-type BinaryReadReader = js.Function2[
-/* msg */ js.Any, 
-/* binaryReader */ typings.googleProtobuf.mod.BinaryReader, 
-scala.Unit]
+type BinaryReadCallback = js.Function2[/* value */ Any, /* binaryReader */ BinaryReader, Unit]
+
+type BinaryReadReader = js.Function2[/* msg */ Any, /* binaryReader */ BinaryReader, Unit]
 
 type BinaryWrite = js.Function3[
-/* fieldNumber */ scala.Double, 
-/* value */ js.Any, 
-/* writerCallback */ typings.googleProtobuf.mod.BinaryWriteCallback, 
-scala.Unit]
+/* fieldNumber */ Double, 
+/* value */ Any, 
+/* writerCallback */ BinaryWriteCallback, 
+Unit]
 
-type BinaryWriteCallback = js.Function2[
-/* value */ js.Any, 
-/* binaryWriter */ typings.googleProtobuf.mod.BinaryWriter, 
-scala.Unit]
+type BinaryWriteCallback = js.Function2[/* value */ Any, /* binaryWriter */ BinaryWriter, Unit]
 
-type ByteSource = typings.std.ArrayBuffer | typings.std.Uint8Array | js.Array[scala.Double] | java.lang.String
+type ByteSource = js.typedarray.ArrayBuffer | js.typedarray.Uint8Array | js.Array[Double] | String
 
-type FieldValue = js.UndefOr[
-java.lang.String | scala.Double | scala.Boolean | typings.std.Uint8Array | typings.googleProtobuf.mod.FieldValueArray]
+type FieldValue = js.UndefOr[String | Double | Boolean | js.typedarray.Uint8Array | FieldValueArray]
 
-type RepeatedFieldType = js.Array[typings.googleProtobuf.mod.ScalarFieldType | typings.std.Uint8Array]
+type RepeatedFieldType = js.Array[ScalarFieldType | js.typedarray.Uint8Array]
 
-type ScalarFieldType = scala.Boolean | scala.Double | java.lang.String
+type ScalarFieldType = Boolean | Double | String

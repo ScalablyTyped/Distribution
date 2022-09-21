@@ -6,26 +6,59 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CollapseAll extends StObject {
   
+  /**
+    * The string to display as a Collapse All context menu item.
+    */
   var collapseAll: js.UndefOr[String] = js.undefined
   
+  /**
+    * Specifies text displayed in a cell when its data is unavailable for some reason.
+    */
   var dataNotAvailable: js.UndefOr[String] = js.undefined
   
+  /**
+    * The string to display as an Expand All context menu item.
+    */
   var expandAll: js.UndefOr[String] = js.undefined
   
+  /**
+    * The string to display as an Export to Excel file context menu item.
+    */
   var exportToExcel: js.UndefOr[String] = js.undefined
   
+  /**
+    * The string to display as a header of the Grand Total row and column.
+    */
   var grandTotal: js.UndefOr[String] = js.undefined
   
+  /**
+    * Specifies the text displayed when a pivot grid does not contain any fields.
+    */
   var noData: js.UndefOr[String] = js.undefined
   
+  /**
+    * The string to display as a Remove All Sorting context menu item.
+    */
   var removeAllSorting: js.UndefOr[String] = js.undefined
   
+  /**
+    * The string to display as a Show Field Chooser context menu item.
+    */
   var showFieldChooser: js.UndefOr[String] = js.undefined
   
+  /**
+    * The string to display as a Sort Column by Summary Value context menu item.
+    */
   var sortColumnBySummary: js.UndefOr[String] = js.undefined
   
+  /**
+    * The string to display as a Sort Row by Summary Value context menu item.
+    */
   var sortRowBySummary: js.UndefOr[String] = js.undefined
   
+  /**
+    * The string to display as a header of the Total row and column.
+    */
   var total: js.UndefOr[String] = js.undefined
 }
 object CollapseAll {

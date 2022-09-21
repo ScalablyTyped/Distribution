@@ -9,12 +9,12 @@ trait DatafeedTarget extends StObject {
   /** The country where the items in the feed will be included in the search index, represented as a CLDR territory code. */
   var country: js.UndefOr[String] = js.undefined
   
-  /** The list of destinations to exclude for this target (corresponds to unchecked check boxes in Merchant Center). */
+  /** The list of destinations to exclude for this target (corresponds to cleared check boxes in Merchant Center). */
   var excludedDestinations: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The list of destinations to include for this target (corresponds to checked check boxes in Merchant Center). Default destinations are always included unless provided in
-    * `excludedDestinations`. List of supported destinations (if available to the account): - DisplayAds - Shopping - ShoppingActions - SurfacesAcrossGoogle
+    * `excludedDestinations`.
     */
   var includedDestinations: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -38,13 +38,13 @@ object DatafeedTarget {
     
     inline def setExcludedDestinationsUndefined: Self = StObject.set(x, "excludedDestinations", js.undefined)
     
-    inline def setExcludedDestinationsVarargs(value: String*): Self = StObject.set(x, "excludedDestinations", js.Array(value :_*))
+    inline def setExcludedDestinationsVarargs(value: String*): Self = StObject.set(x, "excludedDestinations", js.Array(value*))
     
     inline def setIncludedDestinations(value: js.Array[String]): Self = StObject.set(x, "includedDestinations", value.asInstanceOf[js.Any])
     
     inline def setIncludedDestinationsUndefined: Self = StObject.set(x, "includedDestinations", js.undefined)
     
-    inline def setIncludedDestinationsVarargs(value: String*): Self = StObject.set(x, "includedDestinations", js.Array(value :_*))
+    inline def setIncludedDestinationsVarargs(value: String*): Self = StObject.set(x, "includedDestinations", js.Array(value*))
     
     inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     

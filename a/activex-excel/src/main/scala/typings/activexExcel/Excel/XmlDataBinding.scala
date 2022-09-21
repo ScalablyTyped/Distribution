@@ -17,7 +17,7 @@ trait XmlDataBinding extends StObject {
   
   def LoadSettings(Url: String): Unit
   
-  val Parent: js.Any
+  val Parent: Any
   
   def Refresh(): XlXmlImportResult
   
@@ -33,7 +33,7 @@ object XmlDataBinding {
     Creator: XlCreator,
     ExcelDotXmlDataBinding_typekey: XmlDataBinding,
     LoadSettings: String => Unit,
-    Parent: js.Any,
+    Parent: Any,
     Refresh: () => XlXmlImportResult,
     SourceUrl: String,
     _Default: String
@@ -55,7 +55,7 @@ object XmlDataBinding {
     
     inline def setLoadSettings(value: String => Unit): Self = StObject.set(x, "LoadSettings", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRefresh(value: () => XlXmlImportResult): Self = StObject.set(x, "Refresh", js.Any.fromFunction0(value))
     

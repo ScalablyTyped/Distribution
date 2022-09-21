@@ -9,25 +9,25 @@ object mockReportMod {
   
   @JSImport("opentracing/lib/mock_tracer/mock_report", JSImport.Default)
   @js.native
-  class default protected () extends MockReport {
+  open class default protected () extends MockReport {
     def this(spans: js.Array[MockSpan]) = this()
   }
   
   @JSImport("opentracing/lib/mock_tracer/mock_report", "MockReport")
   @js.native
-  class MockReport protected () extends StObject {
+  open class MockReport protected () extends StObject {
     def this(spans: js.Array[MockSpan]) = this()
     
-    /* private */ var debugSpans: js.Any = js.native
+    /* private */ var debugSpans: Any = js.native
     
-    def firstSpanWithTagValue(key: String, `val`: js.Any): MockSpan | Null = js.native
+    def firstSpanWithTagValue(key: String, `val`: Any): MockSpan | Null = js.native
     
     var spans: js.Array[MockSpan] = js.native
     
-    /* private */ var spansByTag: js.Any = js.native
+    /* private */ var spansByTag: Any = js.native
     
-    /* private */ var spansByUUID: js.Any = js.native
+    /* private */ var spansByUUID: Any = js.native
     
-    /* private */ var unfinishedSpans: js.Any = js.native
+    /* private */ var unfinishedSpans: Any = js.native
   }
 }

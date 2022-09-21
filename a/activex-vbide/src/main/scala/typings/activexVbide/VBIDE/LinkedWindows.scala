@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LinkedWindows extends StObject {
   
-  def apply(index: js.Any): Window = js.native
+  def apply(index: Any): Window = js.native
   
   def Add(Window: Window): Unit = js.native
   
   val Count: Double = js.native
   
-  def Item(index: js.Any): Window = js.native
+  def Item(index: Any): Window = js.native
   
   val Parent: Window = js.native
   

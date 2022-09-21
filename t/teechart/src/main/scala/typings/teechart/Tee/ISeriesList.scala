@@ -42,6 +42,6 @@ object ISeriesList {
     
     inline def setItems(value: js.Array[ISeries]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: ISeries*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ISeries*): Self = StObject.set(x, "items", js.Array(value*))
   }
 }

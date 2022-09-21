@@ -4,28 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * `Service` is the root object of Google service configuration schema. It
-  * describes basic information about a service, such as the name and the
-  * title, and delegates other aspects to sub-sections. Each sub-section is
-  * either a proto message or a repeated proto message that configures a
-  * specific aspect, such as auth. See each proto message definition for
-  * details.  Example:      type: google.api.Service     config_version: 3
-  * name: calendar.googleapis.com     title: Google Calendar API     apis: -
-  * name: google.calendar.v3.Calendar     authentication:       providers: -
-  * id: google_calendar_auth         jwks_uri:
-  * https://www.googleapis.com/oauth2/v1/certs         issuer:
-  * https://securetoken.google.com       rules:       - selector: &quot;*&quot;
-  * requirements:           provider_id: google_calendar_auth
-  */
 trait SchemaGoogleApiService extends StObject {
   
   /**
-    * A list of API interfaces exported by this service. Only the `name` field
-    * of the google.protobuf.Api needs to be provided by the configuration
-    * author, as the remaining fields will be derived from the IDL during the
-    * normalization process. It is an error to specify an API interface here
-    * which cannot be resolved against the associated IDL files.
+    * A list of API interfaces exported by this service. Only the `name` field of the google.protobuf.Api needs to be provided by the configuration author, as the remaining fields will be derived from the IDL during the normalization process. It is an error to specify an API interface here which cannot be resolved against the associated IDL files.
     */
   var apis: js.UndefOr[js.Array[SchemaApi]] = js.undefined
   
@@ -45,12 +27,9 @@ trait SchemaGoogleApiService extends StObject {
   var billing: js.UndefOr[SchemaBilling] = js.undefined
   
   /**
-    * The semantic version of the service configuration. The config version
-    * affects the interpretation of the service configuration. For example,
-    * certain features are enabled by default for certain config versions. The
-    * latest config version is `3`.
+    * Obsolete. Do not use. This field has no semantic meaning. The service config compiler always sets this field to `3`.
     */
-  var configVersion: js.UndefOr[Double] = js.undefined
+  var configVersion: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * Context configuration.
@@ -73,24 +52,14 @@ trait SchemaGoogleApiService extends StObject {
   var documentation: js.UndefOr[SchemaDocumentation] = js.undefined
   
   /**
-    * Configuration for network endpoints.  If this is empty, then an endpoint
-    * with the same name as the service is automatically generated to service
-    * all defined APIs.
+    * Configuration for network endpoints. If this is empty, then an endpoint with the same name as the service is automatically generated to service all defined APIs.
     */
   var endpoints: js.UndefOr[js.Array[SchemaEndpoint]] = js.undefined
   
   /**
-    * A list of all enum types included in this API service.  Enums referenced
-    * directly or indirectly by the `apis` are automatically included.  Enums
-    * which are not referenced but shall be included should be listed here by
-    * name. Example:      enums:     - name: google.someapi.v1.SomeEnum
+    * A list of all enum types included in this API service. Enums referenced directly or indirectly by the `apis` are automatically included. Enums which are not referenced but shall be included should be listed here by name by the configuration author. Example: enums: - name: google.someapi.v1.SomeEnum
     */
   var enums: js.UndefOr[js.Array[SchemaEnum]] = js.undefined
-  
-  /**
-    * Experimental configuration.
-    */
-  var experimental: js.UndefOr[SchemaExperimental] = js.undefined
   
   /**
     * HTTP configuration.
@@ -98,11 +67,9 @@ trait SchemaGoogleApiService extends StObject {
   var http: js.UndefOr[SchemaHttp] = js.undefined
   
   /**
-    * A unique ID for a specific instance of this message, typically assigned
-    * by the client for tracking purpose. If empty, the server may choose to
-    * generate one instead. Must be no longer than 60 characters.
+    * A unique ID for a specific instance of this message, typically assigned by the client for tracking purpose. Must be no longer than 63 characters and only lower case letters, digits, '.', '_' and '-' are allowed. If empty, the server may choose to generate one instead.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Logging configuration.
@@ -120,8 +87,7 @@ trait SchemaGoogleApiService extends StObject {
   var metrics: js.UndefOr[js.Array[SchemaMetricDescriptor]] = js.undefined
   
   /**
-    * Defines the monitored resources used by this service. This is required by
-    * the Service.monitoring and Service.logging configurations.
+    * Defines the monitored resources used by this service. This is required by the Service.monitoring and Service.logging configurations.
     */
   var monitoredResources: js.UndefOr[js.Array[SchemaMonitoredResourceDescriptor]] = js.undefined
   
@@ -131,17 +97,14 @@ trait SchemaGoogleApiService extends StObject {
   var monitoring: js.UndefOr[SchemaMonitoring] = js.undefined
   
   /**
-    * The service name, which is a DNS-like logical identifier for the service,
-    * such as `calendar.googleapis.com`. The service name typically goes
-    * through DNS verification to make sure the owner of the service also owns
-    * the DNS name.
+    * The service name, which is a DNS-like logical identifier for the service, such as `calendar.googleapis.com`. The service name typically goes through DNS verification to make sure the owner of the service also owns the DNS name.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The Google project that owns this service.
     */
-  var producerProjectId: js.UndefOr[String] = js.undefined
+  var producerProjectId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Quota configuration.
@@ -159,25 +122,17 @@ trait SchemaGoogleApiService extends StObject {
   var systemParameters: js.UndefOr[SchemaSystemParameters] = js.undefined
   
   /**
-    * A list of all proto message types included in this API service. It serves
-    * similar purpose as [google.api.Service.types], except that these types
-    * are not needed by user-defined APIs. Therefore, they will not show up in
-    * the generated discovery doc. This field should only be used to define
-    * system APIs in ESF.
+    * A list of all proto message types included in this API service. It serves similar purpose as [google.api.Service.types], except that these types are not needed by user-defined APIs. Therefore, they will not show up in the generated discovery doc. This field should only be used to define system APIs in ESF.
     */
   var systemTypes: js.UndefOr[js.Array[SchemaType]] = js.undefined
   
   /**
-    * The product title for this service.
+    * The product title for this service, it is the name displayed in Google Cloud Console.
     */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * A list of all proto message types included in this API service. Types
-    * referenced directly or indirectly by the `apis` are automatically
-    * included.  Messages which are not referenced but shall be included, such
-    * as types used by the `google.protobuf.Any` type, should be listed here by
-    * name. Example:      types:     - name: google.protobuf.Int32
+    * A list of all proto message types included in this API service. Types referenced directly or indirectly by the `apis` are automatically included. Messages which are not referenced but shall be included, such as types used by the `google.protobuf.Any` type, should be listed here by name by the configuration author. Example: types: - name: google.protobuf.Int32
     */
   var types: js.UndefOr[js.Array[SchemaType]] = js.undefined
   
@@ -199,7 +154,7 @@ object SchemaGoogleApiService {
     
     inline def setApisUndefined: Self = StObject.set(x, "apis", js.undefined)
     
-    inline def setApisVarargs(value: SchemaApi*): Self = StObject.set(x, "apis", js.Array(value :_*))
+    inline def setApisVarargs(value: SchemaApi*): Self = StObject.set(x, "apis", js.Array(value*))
     
     inline def setAuthentication(value: SchemaAuthentication): Self = StObject.set(x, "authentication", value.asInstanceOf[js.Any])
     
@@ -214,6 +169,8 @@ object SchemaGoogleApiService {
     inline def setBillingUndefined: Self = StObject.set(x, "billing", js.undefined)
     
     inline def setConfigVersion(value: Double): Self = StObject.set(x, "configVersion", value.asInstanceOf[js.Any])
+    
+    inline def setConfigVersionNull: Self = StObject.set(x, "configVersion", null)
     
     inline def setConfigVersionUndefined: Self = StObject.set(x, "configVersion", js.undefined)
     
@@ -237,23 +194,21 @@ object SchemaGoogleApiService {
     
     inline def setEndpointsUndefined: Self = StObject.set(x, "endpoints", js.undefined)
     
-    inline def setEndpointsVarargs(value: SchemaEndpoint*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
+    inline def setEndpointsVarargs(value: SchemaEndpoint*): Self = StObject.set(x, "endpoints", js.Array(value*))
     
     inline def setEnums(value: js.Array[SchemaEnum]): Self = StObject.set(x, "enums", value.asInstanceOf[js.Any])
     
     inline def setEnumsUndefined: Self = StObject.set(x, "enums", js.undefined)
     
-    inline def setEnumsVarargs(value: SchemaEnum*): Self = StObject.set(x, "enums", js.Array(value :_*))
-    
-    inline def setExperimental(value: SchemaExperimental): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
-    
-    inline def setExperimentalUndefined: Self = StObject.set(x, "experimental", js.undefined)
+    inline def setEnumsVarargs(value: SchemaEnum*): Self = StObject.set(x, "enums", js.Array(value*))
     
     inline def setHttp(value: SchemaHttp): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
     
     inline def setHttpUndefined: Self = StObject.set(x, "http", js.undefined)
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdNull: Self = StObject.set(x, "id", null)
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
@@ -265,19 +220,19 @@ object SchemaGoogleApiService {
     
     inline def setLogsUndefined: Self = StObject.set(x, "logs", js.undefined)
     
-    inline def setLogsVarargs(value: SchemaLogDescriptor*): Self = StObject.set(x, "logs", js.Array(value :_*))
+    inline def setLogsVarargs(value: SchemaLogDescriptor*): Self = StObject.set(x, "logs", js.Array(value*))
     
     inline def setMetrics(value: js.Array[SchemaMetricDescriptor]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
     inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
-    inline def setMetricsVarargs(value: SchemaMetricDescriptor*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: SchemaMetricDescriptor*): Self = StObject.set(x, "metrics", js.Array(value*))
     
     inline def setMonitoredResources(value: js.Array[SchemaMonitoredResourceDescriptor]): Self = StObject.set(x, "monitoredResources", value.asInstanceOf[js.Any])
     
     inline def setMonitoredResourcesUndefined: Self = StObject.set(x, "monitoredResources", js.undefined)
     
-    inline def setMonitoredResourcesVarargs(value: SchemaMonitoredResourceDescriptor*): Self = StObject.set(x, "monitoredResources", js.Array(value :_*))
+    inline def setMonitoredResourcesVarargs(value: SchemaMonitoredResourceDescriptor*): Self = StObject.set(x, "monitoredResources", js.Array(value*))
     
     inline def setMonitoring(value: SchemaMonitoring): Self = StObject.set(x, "monitoring", value.asInstanceOf[js.Any])
     
@@ -285,9 +240,13 @@ object SchemaGoogleApiService {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setProducerProjectId(value: String): Self = StObject.set(x, "producerProjectId", value.asInstanceOf[js.Any])
+    
+    inline def setProducerProjectIdNull: Self = StObject.set(x, "producerProjectId", null)
     
     inline def setProducerProjectIdUndefined: Self = StObject.set(x, "producerProjectId", js.undefined)
     
@@ -307,9 +266,11 @@ object SchemaGoogleApiService {
     
     inline def setSystemTypesUndefined: Self = StObject.set(x, "systemTypes", js.undefined)
     
-    inline def setSystemTypesVarargs(value: SchemaType*): Self = StObject.set(x, "systemTypes", js.Array(value :_*))
+    inline def setSystemTypesVarargs(value: SchemaType*): Self = StObject.set(x, "systemTypes", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleNull: Self = StObject.set(x, "title", null)
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
@@ -317,7 +278,7 @@ object SchemaGoogleApiService {
     
     inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
-    inline def setTypesVarargs(value: SchemaType*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: SchemaType*): Self = StObject.set(x, "types", js.Array(value*))
     
     inline def setUsage(value: SchemaUsage): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
     

@@ -1,24 +1,24 @@
 
 # Scala.js typings for antv__g-math
 
-Typings are for version 0.1.5
+Typings are for version 1.7.17
 
 ## Library description:
-geometry math
+Geometry util
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @antv/g-math |
-| Keywords           | util, antv, g |
-| # releases         | 13 |
-| # dependents       | 9 |
-| # downloads        | 792244 |
-| # stars            | 0 |
+| Keywords           | antv, g |
+| # releases         | 96 |
+| # dependents       | 0.0 |
+| # downloads        | 332760.3333333333 |
+| # stars            | 795.0 |
 
 ## Links
-- [Homepage](https://github.com/antvis/util#readme)
-- [Bugs](https://github.com/antvis/util/issues)
-- [Repository](https://github.com/antvis/util)
+- [Homepage](https://github.com/antvis/g#readme)
+- [Bugs](https://github.com/antvis/g/issues)
+- [Repository](https://github.com/antvis/g)
 - [Npm](https://www.npmjs.com/package/%40antv%2Fg-math)
     
 

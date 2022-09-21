@@ -12,6 +12,8 @@ trait RefreshTokenResponse extends StObject {
   
   var idToken: String
   
+  var refreshToken: js.UndefOr[String] = js.undefined
+  
   var scope: js.UndefOr[String] = js.undefined
   
   var tokenType: String
@@ -30,6 +32,10 @@ object RefreshTokenResponse {
     inline def setExpiresIn(value: Double): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
     
     inline def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
+    
+    inline def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
+    
+    inline def setRefreshTokenUndefined: Self = StObject.set(x, "refreshToken", js.undefined)
     
     inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     

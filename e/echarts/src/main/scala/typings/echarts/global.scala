@@ -93,7 +93,7 @@ object global {
       /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
       @JSGlobal("echarts.graphic.LinearGradient")
       @js.native
-      class LinearGradient protected ()
+      open class LinearGradient protected ()
         extends StObject
            with AddColorStop {
         def this(
@@ -118,7 +118,7 @@ object global {
         var colorStops: ColorStops = js.native
         
         /* CompleteClass */
-        var globalCoord: GlobalCoords = js.native
+        var global: GlobalCoords = js.native
         
         /* CompleteClass */
         var `type`: linear = js.native

@@ -10,10 +10,10 @@ An express-session Store for Azure's DocumentDB NoSQL database service.
 | ------------------ | :-------------: |
 | Full name          | documentdb-session |
 | Keywords           | documentdb, express-session, express, session, azure |
-| # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 3884 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 238.33333333333334 |
+| # stars            | 6.0 |
 
 ## Links
 - [Homepage](https://github.com/dwhieb/documentdb-session#readme)

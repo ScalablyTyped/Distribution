@@ -19,7 +19,7 @@ trait DescribeProcessingJobResponse extends StObject {
   /**
     * The time at which the processing job was created.
     */
-  var CreationTime: Timestamp
+  var CreationTime: js.Date
   
   /**
     * The environment variables set in the Docker container.
@@ -44,7 +44,7 @@ trait DescribeProcessingJobResponse extends StObject {
   /**
     * The time at which the processing job was last modified.
     */
-  var LastModifiedTime: js.UndefOr[Timestamp] = js.undefined
+  var LastModifiedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ARN of a monitoring schedule for an endpoint associated with this processing job.
@@ -59,7 +59,7 @@ trait DescribeProcessingJobResponse extends StObject {
   /**
     * The time at which the processing job completed.
     */
-  var ProcessingEndTime: js.UndefOr[Timestamp] = js.undefined
+  var ProcessingEndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The inputs for a processing job.
@@ -72,7 +72,7 @@ trait DescribeProcessingJobResponse extends StObject {
   var ProcessingJobArn: typings.awsSdk.sagemakerMod.ProcessingJobArn
   
   /**
-    * The name of the processing job. The name must be unique within an AWS Region in the AWS account.
+    * The name of the processing job. The name must be unique within an Amazon Web Services Region in the Amazon Web Services account.
     */
   var ProcessingJobName: typings.awsSdk.sagemakerMod.ProcessingJobName
   
@@ -94,7 +94,7 @@ trait DescribeProcessingJobResponse extends StObject {
   /**
     * The time at which the processing job started.
     */
-  var ProcessingStartTime: js.UndefOr[Timestamp] = js.undefined
+  var ProcessingStartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of an IAM role that Amazon SageMaker can assume to perform tasks on your behalf.
@@ -115,7 +115,7 @@ object DescribeProcessingJobResponse {
   
   inline def apply(
     AppSpecification: AppSpecification,
-    CreationTime: Timestamp,
+    CreationTime: js.Date,
     ProcessingJobArn: ProcessingJobArn,
     ProcessingJobName: ProcessingJobName,
     ProcessingJobStatus: ProcessingJobStatus,
@@ -133,7 +133,7 @@ object DescribeProcessingJobResponse {
     
     inline def setAutoMLJobArnUndefined: Self = StObject.set(x, "AutoMLJobArn", js.undefined)
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setEnvironment(value: ProcessingEnvironmentMap): Self = StObject.set(x, "Environment", value.asInstanceOf[js.Any])
     
@@ -151,7 +151,7 @@ object DescribeProcessingJobResponse {
     
     inline def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
     
-    inline def setLastModifiedTime(value: Timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
     
@@ -163,7 +163,7 @@ object DescribeProcessingJobResponse {
     
     inline def setNetworkConfigUndefined: Self = StObject.set(x, "NetworkConfig", js.undefined)
     
-    inline def setProcessingEndTime(value: Timestamp): Self = StObject.set(x, "ProcessingEndTime", value.asInstanceOf[js.Any])
+    inline def setProcessingEndTime(value: js.Date): Self = StObject.set(x, "ProcessingEndTime", value.asInstanceOf[js.Any])
     
     inline def setProcessingEndTimeUndefined: Self = StObject.set(x, "ProcessingEndTime", js.undefined)
     
@@ -171,7 +171,7 @@ object DescribeProcessingJobResponse {
     
     inline def setProcessingInputsUndefined: Self = StObject.set(x, "ProcessingInputs", js.undefined)
     
-    inline def setProcessingInputsVarargs(value: ProcessingInput*): Self = StObject.set(x, "ProcessingInputs", js.Array(value :_*))
+    inline def setProcessingInputsVarargs(value: ProcessingInput*): Self = StObject.set(x, "ProcessingInputs", js.Array(value*))
     
     inline def setProcessingJobArn(value: ProcessingJobArn): Self = StObject.set(x, "ProcessingJobArn", value.asInstanceOf[js.Any])
     
@@ -185,7 +185,7 @@ object DescribeProcessingJobResponse {
     
     inline def setProcessingResources(value: ProcessingResources): Self = StObject.set(x, "ProcessingResources", value.asInstanceOf[js.Any])
     
-    inline def setProcessingStartTime(value: Timestamp): Self = StObject.set(x, "ProcessingStartTime", value.asInstanceOf[js.Any])
+    inline def setProcessingStartTime(value: js.Date): Self = StObject.set(x, "ProcessingStartTime", value.asInstanceOf[js.Any])
     
     inline def setProcessingStartTimeUndefined: Self = StObject.set(x, "ProcessingStartTime", js.undefined)
     

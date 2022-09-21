@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChartAxisFormatUpdateData extends StObject {
   
   /**
-    *
     * Specifies the font attributes (font name, font size, color, etc.) for a chart axis element.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var font: js.UndefOr[ChartFontUpdateData] = js.undefined
   
   /**
-    *
     * Specifies chart line formatting.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var line: js.UndefOr[ChartLineFormatUpdateData] = js.undefined

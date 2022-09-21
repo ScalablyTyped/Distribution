@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateGrantResponse extends StObject {
   
   /**
-    * The unique identifier for the grant. You can use the GrantId in a subsequent RetireGrant or RevokeGrant operation.
+    * The unique identifier for the grant. You can use the GrantId in a ListGrants, RetireGrant, or RevokeGrant operation.
     */
   var GrantId: js.UndefOr[GrantIdType] = js.undefined
   
   /**
-    * The grant token. For more information, see Grant Tokens in the AWS Key Management Service Developer Guide.
+    * The grant token. Use a grant token when your permission to call this operation comes from a new grant that has not yet achieved eventual consistency. For more information, see Grant token and Using a grant token in the Key Management Service Developer Guide.
     */
   var GrantToken: js.UndefOr[GrantTokenType] = js.undefined
 }

@@ -6,10 +6,10 @@ import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.ElementType
+import typings.react.mod.FC
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.ReactNodeArray
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.breadcrumbDividerMod.BreadcrumbDividerProps
 import typings.semanticUiReact.breadcrumbSectionMod.BreadcrumbSectionProps
 import typings.semanticUiReact.genericMod.SemanticShorthandCollection
@@ -32,10 +32,9 @@ object breadcrumbBreadcrumbMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/collections/Breadcrumb/Breadcrumb", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[BreadcrumbProps, ComponentState, js.Any] {
+  open class default protected () extends Component[BreadcrumbProps, ComponentState, Any] {
     def this(props: BreadcrumbProps) = this()
-    def this(props: BreadcrumbProps, context: js.Any) = this()
+    def this(props: BreadcrumbProps, context: Any) = this()
   }
   object default extends Shortcut {
     
@@ -46,10 +45,9 @@ object breadcrumbBreadcrumbMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("semantic-ui-react/dist/commonjs/collections/Breadcrumb/Breadcrumb", "default.Section")
     @js.native
-    class Section protected ()
-      extends Component[BreadcrumbSectionProps, ComponentState, js.Any] {
+    open class Section protected () extends Component[BreadcrumbSectionProps, ComponentState, Any] {
       def this(props: BreadcrumbSectionProps) = this()
-      def this(props: BreadcrumbSectionProps, context: js.Any) = this()
+      def this(props: BreadcrumbSectionProps, context: Any) = this()
     }
     
     type _To = BreadcrumbComponent
@@ -63,7 +61,7 @@ object breadcrumbBreadcrumbMod {
     extends StObject
        with ComponentClass[BreadcrumbProps, ComponentState] {
     
-    var Divider: StatelessComponent[BreadcrumbDividerProps] = js.native
+    var Divider: FC[BreadcrumbDividerProps] = js.native
     
     var Section: ComponentClass[BreadcrumbSectionProps, ComponentState] = js.native
   }
@@ -71,7 +69,7 @@ object breadcrumbBreadcrumbMod {
   trait BreadcrumbProps
     extends StObject
        with StrictBreadcrumbProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object BreadcrumbProps {
     
     inline def apply(): BreadcrumbProps = {
@@ -83,7 +81,7 @@ object breadcrumbBreadcrumbMod {
   trait StrictBreadcrumbProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -114,7 +112,7 @@ object breadcrumbBreadcrumbMod {
     
     extension [Self <: StrictBreadcrumbProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -142,7 +140,7 @@ object breadcrumbBreadcrumbMod {
       
       inline def setSectionsUndefined: Self = StObject.set(x, "sections", js.undefined)
       
-      inline def setSectionsVarargs(value: SemanticShorthandItem[BreadcrumbSectionProps]*): Self = StObject.set(x, "sections", js.Array(value :_*))
+      inline def setSectionsVarargs(value: SemanticShorthandItem[BreadcrumbSectionProps]*): Self = StObject.set(x, "sections", js.Array(value*))
       
       inline def setSize(value: mini | tiny | small | large | big | huge | massive): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

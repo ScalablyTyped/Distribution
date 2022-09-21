@@ -26,7 +26,7 @@ object DatasetBands {
     ds: Dataset,
     forEach: js.Function2[/* band */ RasterBand, /* i */ Double, Unit] => Unit,
     get: Double => RasterBand,
-    map: js.Function2[/* band */ RasterBand, /* i */ Double, js.Any] => js.Array[js.Any]
+    map: js.Function2[/* band */ RasterBand, /* i */ Double, Any] => js.Array[Any]
   ): DatasetBands = {
     val __obj = js.Dynamic.literal(count = js.Any.fromFunction0(count), create = js.Any.fromFunction1(create), ds = ds.asInstanceOf[js.Any], forEach = js.Any.fromFunction1(forEach), get = js.Any.fromFunction1(get), map = js.Any.fromFunction1(map))
     __obj.asInstanceOf[DatasetBands]
@@ -44,6 +44,6 @@ object DatasetBands {
     
     inline def setGet(value: Double => RasterBand): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    inline def setMap(value: js.Function2[/* band */ RasterBand, /* i */ Double, js.Any] => js.Array[js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+    inline def setMap(value: js.Function2[/* band */ RasterBand, /* i */ Double, Any] => js.Array[Any]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
   }
 }

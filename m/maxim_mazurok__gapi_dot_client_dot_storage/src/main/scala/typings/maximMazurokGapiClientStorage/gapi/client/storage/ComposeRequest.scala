@@ -38,6 +38,6 @@ object ComposeRequest {
     
     inline def setSourceObjectsUndefined: Self = StObject.set(x, "sourceObjects", js.undefined)
     
-    inline def setSourceObjectsVarargs(value: Generation*): Self = StObject.set(x, "sourceObjects", js.Array(value :_*))
+    inline def setSourceObjectsVarargs(value: Generation*): Self = StObject.set(x, "sourceObjects", js.Array(value*))
   }
 }

@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("azure-arm-resource/lib/resource/models", "BaseResource")
 @js.native
-class BaseResource ()
+open class BaseResource ()
   extends typings.msRestAzure.mod.BaseResource

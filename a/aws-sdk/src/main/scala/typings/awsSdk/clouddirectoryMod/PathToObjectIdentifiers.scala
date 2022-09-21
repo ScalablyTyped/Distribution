@@ -29,7 +29,7 @@ object PathToObjectIdentifiers {
     
     inline def setObjectIdentifiersUndefined: Self = StObject.set(x, "ObjectIdentifiers", js.undefined)
     
-    inline def setObjectIdentifiersVarargs(value: ObjectIdentifier*): Self = StObject.set(x, "ObjectIdentifiers", js.Array(value :_*))
+    inline def setObjectIdentifiersVarargs(value: ObjectIdentifier*): Self = StObject.set(x, "ObjectIdentifiers", js.Array(value*))
     
     inline def setPath(value: PathString): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     

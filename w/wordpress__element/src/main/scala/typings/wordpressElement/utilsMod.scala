@@ -10,5 +10,5 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isEmptyElement(element: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmptyElement")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isEmptyElement(element: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmptyElement")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

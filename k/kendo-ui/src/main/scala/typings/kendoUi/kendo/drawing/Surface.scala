@@ -17,7 +17,7 @@ trait Surface
   
   var element: JQuery = js.native
   
-  def eventTarget(e: js.Any): Element = js.native
+  def eventTarget(e: Any): Element = js.native
   
   def hideTooltip(): Unit = js.native
   
@@ -27,5 +27,5 @@ trait Surface
   def resize(force: Boolean): Unit = js.native
   
   def showTooltip(element: Element): Unit = js.native
-  def showTooltip(element: Element, options: js.Any): Unit = js.native
+  def showTooltip(element: Element, options: Any): Unit = js.native
 }

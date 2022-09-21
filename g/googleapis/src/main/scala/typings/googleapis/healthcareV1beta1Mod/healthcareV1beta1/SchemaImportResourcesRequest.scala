@@ -4,27 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Request to import resources.
-  */
 trait SchemaImportResourcesRequest extends StObject {
   
   /**
-    * The content structure in the source location. The default is BUNDLE.
+    * The content structure in the source location. If not specified, the server treats the input source files as BUNDLE.
     */
-  var contentStructure: js.UndefOr[String] = js.undefined
+  var contentStructure: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Cloud Storage source data location and import configuration.  The Cloud
-    * Storage location requires the `roles/storage.objectViewer` Cloud IAM
-    * role.  Each Cloud Storage object should be a text file that contains
-    * newline delimited JSON structures conforming to FHIR standard.  To
-    * improve performance, use multiple Cloud Storage objects where each object
-    * contains a subset of all of the newline-delimited JSON structures. You
-    * can select all of the objects using the uri as the prefix. The maximum
-    * number of objects is 1,000.
+    * Cloud Storage source data location and import configuration. The Cloud Healthcare Service Agent requires the `roles/storage.objectViewer` Cloud IAM roles on the Cloud Storage location. The Healthcare Service Agent Each Cloud Storage object should be a text file that contains the format specified in ContentStructure.
     */
-  var gcsSource: js.UndefOr[SchemaGoogleCloudHealthcareV1beta1FhirRestGcsSource] = js.undefined
+  var gcsSource: js.UndefOr[SchemaGoogleCloudHealthcareV1beta1FhirGcsSource] = js.undefined
 }
 object SchemaImportResourcesRequest {
   
@@ -37,9 +27,11 @@ object SchemaImportResourcesRequest {
     
     inline def setContentStructure(value: String): Self = StObject.set(x, "contentStructure", value.asInstanceOf[js.Any])
     
+    inline def setContentStructureNull: Self = StObject.set(x, "contentStructure", null)
+    
     inline def setContentStructureUndefined: Self = StObject.set(x, "contentStructure", js.undefined)
     
-    inline def setGcsSource(value: SchemaGoogleCloudHealthcareV1beta1FhirRestGcsSource): Self = StObject.set(x, "gcsSource", value.asInstanceOf[js.Any])
+    inline def setGcsSource(value: SchemaGoogleCloudHealthcareV1beta1FhirGcsSource): Self = StObject.set(x, "gcsSource", value.asInstanceOf[js.Any])
     
     inline def setGcsSourceUndefined: Self = StObject.set(x, "gcsSource", js.undefined)
   }

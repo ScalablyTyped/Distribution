@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("actions-on-google/dist/service/actionssdk", "Button")
 @js.native
-class Button protected ()
+open class Button protected ()
   extends typings.actionsOnGoogle.conversationMod.Button {
   /**
     * @param options Button options

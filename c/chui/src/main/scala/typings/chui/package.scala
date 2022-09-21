@@ -1,5 +1,6 @@
 package typings.chui
 
+import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,10 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Interface of the JQuery extension of the W3C event object
   */
-type BaseJQueryEventObject = typings.std.Event
+type BaseJQueryEventObject = Event
 
-type JQueryInputEventObject = typings.chui.BaseJQueryEventObject
+type JQueryInputEventObject = BaseJQueryEventObject
 
-type JQueryKeyEventObject = typings.chui.JQueryInputEventObject
+type JQueryKeyEventObject = JQueryInputEventObject
 
-type JQueryMouseEventObject = typings.chui.JQueryInputEventObject
+type JQueryMouseEventObject = JQueryInputEventObject

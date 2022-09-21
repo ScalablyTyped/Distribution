@@ -10,10 +10,10 @@ The lodash method `_.spread` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.spread |
 | Keywords           | lodash-modularized, spread |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 137678 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 12500.333333333334 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

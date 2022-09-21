@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents the preset criteria conditional format such as above average, below average, unique values, contains blank, nonblank, error, and noerror.
   *
-  * Represents the the preset criteria conditional format such as above average, below average, unique values, contains blank, nonblank, error, and noerror.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 @JSGlobal("Excel.PresetCriteriaConditionalFormat")
 @js.native
-class PresetCriteriaConditionalFormat ()
+open class PresetCriteriaConditionalFormat ()
   extends StObject
      with typings.officeJs.Excel.PresetCriteriaConditionalFormat {
   

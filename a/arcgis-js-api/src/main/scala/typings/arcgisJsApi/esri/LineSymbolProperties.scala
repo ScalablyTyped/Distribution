@@ -19,6 +19,8 @@ trait LineSymbolProperties
   /**
     * The width of the symbol in points.
     *
+    * @default 0.75
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol.html#width)
     */
   var width: js.UndefOr[Double | String] = js.undefined

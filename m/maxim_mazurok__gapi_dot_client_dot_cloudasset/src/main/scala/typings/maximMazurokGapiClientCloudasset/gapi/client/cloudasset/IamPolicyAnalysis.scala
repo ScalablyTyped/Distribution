@@ -35,7 +35,7 @@ object IamPolicyAnalysis {
     
     inline def setAnalysisResultsUndefined: Self = StObject.set(x, "analysisResults", js.undefined)
     
-    inline def setAnalysisResultsVarargs(value: IamPolicyAnalysisResult*): Self = StObject.set(x, "analysisResults", js.Array(value :_*))
+    inline def setAnalysisResultsVarargs(value: IamPolicyAnalysisResult*): Self = StObject.set(x, "analysisResults", js.Array(value*))
     
     inline def setFullyExplored(value: Boolean): Self = StObject.set(x, "fullyExplored", value.asInstanceOf[js.Any])
     
@@ -45,6 +45,6 @@ object IamPolicyAnalysis {
     
     inline def setNonCriticalErrorsUndefined: Self = StObject.set(x, "nonCriticalErrors", js.undefined)
     
-    inline def setNonCriticalErrorsVarargs(value: IamPolicyAnalysisState*): Self = StObject.set(x, "nonCriticalErrors", js.Array(value :_*))
+    inline def setNonCriticalErrorsVarargs(value: IamPolicyAnalysisState*): Self = StObject.set(x, "nonCriticalErrors", js.Array(value*))
   }
 }

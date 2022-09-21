@@ -100,7 +100,7 @@ object mod {
       
       inline def setDashPatternUndefined: Self = StObject.set(x, "dashPattern", js.undefined)
       
-      inline def setDashPatternVarargs(value: Double*): Self = StObject.set(x, "dashPattern", js.Array(value :_*))
+      inline def setDashPatternVarargs(value: Double*): Self = StObject.set(x, "dashPattern", js.Array(value*))
       
       inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       

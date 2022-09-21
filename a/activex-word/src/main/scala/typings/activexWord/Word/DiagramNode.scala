@@ -44,7 +44,7 @@ trait DiagramNode extends StObject {
   
   def NextNode(): DiagramNode = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def PrevNode(): DiagramNode = js.native
   

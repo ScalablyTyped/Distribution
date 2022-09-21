@@ -34,7 +34,7 @@ object ChangeList {
     
     inline def setChangesUndefined: Self = StObject.set(x, "changes", js.undefined)
     
-    inline def setChangesVarargs(value: Change*): Self = StObject.set(x, "changes", js.Array(value :_*))
+    inline def setChangesVarargs(value: Change*): Self = StObject.set(x, "changes", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

@@ -1,14 +1,14 @@
 package typings.bitcoinjsLib
 
 import typings.bitcoinjsLib.networksMod.Network
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object addressMod {
   
-  @JSImport("bitcoinjs-lib/types/address", JSImport.Namespace)
+  @JSImport("bitcoinjs-lib/src/address", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

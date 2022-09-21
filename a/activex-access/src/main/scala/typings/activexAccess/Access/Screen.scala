@@ -25,7 +25,7 @@ trait Screen extends StObject {
   
   var MousePointer: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   val PreviousControl: Control
 }
@@ -41,7 +41,7 @@ object Screen {
     Application: Application,
     IsMemberSafe: Double => Boolean,
     MousePointer: Double,
-    Parent: js.Any,
+    Parent: Any,
     PreviousControl: Control
   ): Screen = {
     val __obj = js.Dynamic.literal(ActiveControl = ActiveControl.asInstanceOf[js.Any], ActiveDataAccessPage = ActiveDataAccessPage.asInstanceOf[js.Any], ActiveDatasheet = ActiveDatasheet.asInstanceOf[js.Any], ActiveForm = ActiveForm.asInstanceOf[js.Any], ActiveReport = ActiveReport.asInstanceOf[js.Any], Application = Application.asInstanceOf[js.Any], IsMemberSafe = js.Any.fromFunction1(IsMemberSafe), MousePointer = MousePointer.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], PreviousControl = PreviousControl.asInstanceOf[js.Any])
@@ -69,7 +69,7 @@ object Screen {
     
     inline def setMousePointer(value: Double): Self = StObject.set(x, "MousePointer", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPreviousControl(value: Control): Self = StObject.set(x, "PreviousControl", value.asInstanceOf[js.Any])
   }

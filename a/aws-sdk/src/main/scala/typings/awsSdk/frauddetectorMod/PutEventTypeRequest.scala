@@ -17,6 +17,11 @@ trait PutEventTypeRequest extends StObject {
   var entityTypes: NonEmptyListOfStrings
   
   /**
+    * Specifies if ingenstion is enabled or disabled.
+    */
+  var eventIngestion: js.UndefOr[EventIngestion] = js.undefined
+  
+  /**
     * The event type variables.
     */
   var eventVariables: NonEmptyListOfStrings
@@ -51,17 +56,21 @@ object PutEventTypeRequest {
     
     inline def setEntityTypes(value: NonEmptyListOfStrings): Self = StObject.set(x, "entityTypes", value.asInstanceOf[js.Any])
     
-    inline def setEntityTypesVarargs(value: String*): Self = StObject.set(x, "entityTypes", js.Array(value :_*))
+    inline def setEntityTypesVarargs(value: String*): Self = StObject.set(x, "entityTypes", js.Array(value*))
+    
+    inline def setEventIngestion(value: EventIngestion): Self = StObject.set(x, "eventIngestion", value.asInstanceOf[js.Any])
+    
+    inline def setEventIngestionUndefined: Self = StObject.set(x, "eventIngestion", js.undefined)
     
     inline def setEventVariables(value: NonEmptyListOfStrings): Self = StObject.set(x, "eventVariables", value.asInstanceOf[js.Any])
     
-    inline def setEventVariablesVarargs(value: String*): Self = StObject.set(x, "eventVariables", js.Array(value :_*))
+    inline def setEventVariablesVarargs(value: String*): Self = StObject.set(x, "eventVariables", js.Array(value*))
     
     inline def setLabels(value: ListOfStrings): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    inline def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value*))
     
     inline def setName(value: identifier): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -69,6 +78,6 @@ object PutEventTypeRequest {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

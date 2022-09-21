@@ -24,7 +24,7 @@ trait AssessmentTemplate extends StObject {
   /**
     * The time at which the assessment template is created.
     */
-  var createdAt: Timestamp
+  var createdAt: js.Date
   
   /**
     * The duration in seconds specified for this assessment template. The default value is 3600 seconds (one hour). The maximum value is 86400 seconds (one day).
@@ -57,7 +57,7 @@ object AssessmentTemplate {
     arn: Arn,
     assessmentRunCount: ArnCount,
     assessmentTargetArn: Arn,
-    createdAt: Timestamp,
+    createdAt: js.Date,
     durationInSeconds: AssessmentRunDuration,
     name: AssessmentTemplateName,
     rulesPackageArns: AssessmentTemplateRulesPackageArnList,
@@ -75,7 +75,7 @@ object AssessmentTemplate {
     
     inline def setAssessmentTargetArn(value: Arn): Self = StObject.set(x, "assessmentTargetArn", value.asInstanceOf[js.Any])
     
-    inline def setCreatedAt(value: Timestamp): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setDurationInSeconds(value: AssessmentRunDuration): Self = StObject.set(x, "durationInSeconds", value.asInstanceOf[js.Any])
     
@@ -87,10 +87,10 @@ object AssessmentTemplate {
     
     inline def setRulesPackageArns(value: AssessmentTemplateRulesPackageArnList): Self = StObject.set(x, "rulesPackageArns", value.asInstanceOf[js.Any])
     
-    inline def setRulesPackageArnsVarargs(value: Arn*): Self = StObject.set(x, "rulesPackageArns", js.Array(value :_*))
+    inline def setRulesPackageArnsVarargs(value: Arn*): Self = StObject.set(x, "rulesPackageArns", js.Array(value*))
     
     inline def setUserAttributesForFindings(value: UserAttributeList): Self = StObject.set(x, "userAttributesForFindings", value.asInstanceOf[js.Any])
     
-    inline def setUserAttributesForFindingsVarargs(value: Attribute*): Self = StObject.set(x, "userAttributesForFindings", js.Array(value :_*))
+    inline def setUserAttributesForFindingsVarargs(value: Attribute*): Self = StObject.set(x, "userAttributesForFindings", js.Array(value*))
   }
 }

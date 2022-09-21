@@ -37,7 +37,7 @@ object XRestartManager {
   inline def apply(
     acquire: () => Unit,
     isRestartRequested: Boolean => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     requestRestart: XInteractionHandler => Unit
   ): XRestartManager = {

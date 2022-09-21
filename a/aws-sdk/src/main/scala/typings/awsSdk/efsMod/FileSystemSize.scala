@@ -9,7 +9,7 @@ trait FileSystemSize extends StObject {
   /**
     * The time at which the size of data, returned in the Value field, was determined. The value is the integer number of seconds since 1970-01-01T00:00:00Z.
     */
-  var Timestamp: js.UndefOr[typings.awsSdk.efsMod.Timestamp] = js.undefined
+  var Timestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The latest known metered size (in bytes) of data stored in the file system.
@@ -35,7 +35,7 @@ object FileSystemSize {
   
   extension [Self <: FileSystemSize](x: Self) {
     
-    inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
     inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
     

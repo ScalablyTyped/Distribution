@@ -10,7 +10,7 @@ object rectMod {
   
   @JSImport("terminal-kit/Rect", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Rect {
     def this(options: AbsoluteOptions) = this()

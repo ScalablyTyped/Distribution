@@ -8,6 +8,6 @@ object inputMod {
   
   @JSImport("semantic-ui-react/dist/commonjs/elements/Input", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.semanticUiReact.inputInputMod.default
 }

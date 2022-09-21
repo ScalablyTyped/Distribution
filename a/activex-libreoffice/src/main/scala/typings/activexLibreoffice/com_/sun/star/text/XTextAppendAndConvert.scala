@@ -38,7 +38,7 @@ object XTextAppendAndConvert {
     insertTextContent: (XTextRange, XTextContent, Boolean) => Unit,
     insertTextContentWithProperties: (XTextContent, PropertyValues, XTextRange) => XTextRange,
     insertTextPortion: (String, PropertyValues, XTextRange) => XTextRange,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeTextContent: XTextContent => Unit,
     setString: String => Unit

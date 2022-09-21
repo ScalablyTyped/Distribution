@@ -14,7 +14,7 @@ trait SmartTagType extends StObject {
   
   val Name: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   val SmartTagActions: typings.activexWord.Word.SmartTagActions
   
@@ -30,7 +30,7 @@ object SmartTagType {
     Creator: Double,
     FriendlyName: String,
     Name: String,
-    Parent: js.Any,
+    Parent: Any,
     SmartTagActions: SmartTagActions,
     SmartTagRecognizers: SmartTagRecognizers,
     WordDotSmartTagType_typekey: SmartTagType
@@ -50,7 +50,7 @@ object SmartTagType {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSmartTagActions(value: SmartTagActions): Self = StObject.set(x, "SmartTagActions", value.asInstanceOf[js.Any])
     

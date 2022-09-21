@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap/lib", "Pager")
 @js.native
-class Pager () extends ^
+open class Pager () extends ^
 object Pager {
   
   @JSImport("react-bootstrap/lib", "Pager")
@@ -18,7 +18,7 @@ object Pager {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib", "Pager.Item")
   @js.native
-  class Item ()
+  open class Item ()
     extends typings.reactBootstrap.pagerItemMod.^
   /* static member */
   @JSImport("react-bootstrap/lib", "Pager.Item")

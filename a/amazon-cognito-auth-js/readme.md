@@ -1,7 +1,7 @@
 
 # Scala.js typings for amazon-cognito-auth-js
 
-Typings are for version 1.2
+Typings are for version 1.3
 
 ## Library description:
 Amazon Cognito Auth JavaScript SDK
@@ -10,15 +10,13 @@ Amazon Cognito Auth JavaScript SDK
 | ------------------ | :-------------: |
 | Full name          | amazon-cognito-auth-js |
 | Keywords           | amazon, aws, cognito, auth |
-| # releases         | 10 |
-| # dependents       | 15 |
-| # downloads        | 780413 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 62041.333333333336 |
+| # stars            | 425.0 |
 
 ## Links
 - [Homepage](http://aws.amazon.com/cognito)
-- [Bugs](https://github.com/aws/amazon-cognito-auth-js/issues)
-- [Repository](https://github.com/aws/amazon-cognito-auth-js)
 - [Npm](https://www.npmjs.com/package/amazon-cognito-auth-js)
     
 

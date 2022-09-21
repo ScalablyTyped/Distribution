@@ -10,10 +10,10 @@ object locationOffMod {
   
   @JSImport("material-ui/svg-icons/communication/location-off", JSImport.Default)
   @js.native
-  class default () extends CommunicationLocationOff
+  open class default () extends CommunicationLocationOff
   
   @JSImport("material-ui/svg-icons/communication/location-off", "CommunicationLocationOff")
   @js.native
-  class CommunicationLocationOff ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class CommunicationLocationOff ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

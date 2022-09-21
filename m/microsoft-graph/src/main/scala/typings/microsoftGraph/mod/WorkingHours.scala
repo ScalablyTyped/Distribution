@@ -33,7 +33,7 @@ object WorkingHours {
     
     inline def setDaysOfWeekUndefined: Self = StObject.set(x, "daysOfWeek", js.undefined)
     
-    inline def setDaysOfWeekVarargs(value: DayOfWeek*): Self = StObject.set(x, "daysOfWeek", js.Array(value :_*))
+    inline def setDaysOfWeekVarargs(value: DayOfWeek*): Self = StObject.set(x, "daysOfWeek", js.Array(value*))
     
     inline def setEndTime(value: NullableOption[String]): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

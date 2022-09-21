@@ -26,7 +26,7 @@ trait QueryTables extends StObject {
   def Item(Index: String): QueryTable = js.native
   def Item(Index: Double): QueryTable = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
-  def _Default(Index: js.Any): QueryTable = js.native
+  def _Default(Index: Any): QueryTable = js.native
 }

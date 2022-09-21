@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Outline extends StObject {
   
-  var border: js.UndefOr[`3`] = js.undefined
+  var border: js.UndefOr[`4`] = js.undefined
   
   var outline: js.UndefOr[ColorSize] = js.undefined
   
-  var shadow: js.UndefOr[ColorSize] = js.undefined
+  var shadow: js.UndefOr[String | ColorSize] = js.undefined
 }
 object Outline {
   
@@ -21,7 +21,7 @@ object Outline {
   
   extension [Self <: Outline](x: Self) {
     
-    inline def setBorder(value: `3`): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: `4`): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
     inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
@@ -29,7 +29,7 @@ object Outline {
     
     inline def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
     
-    inline def setShadow(value: ColorSize): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
+    inline def setShadow(value: String | ColorSize): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
     
     inline def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
   }

@@ -8,6 +8,7 @@ trait ChannelMergerOptions
   extends StObject
      with AudioNodeOptions {
   
+  /* standard dom */
   var numberOfInputs: js.UndefOr[Double] = js.undefined
 }
 object ChannelMergerOptions {

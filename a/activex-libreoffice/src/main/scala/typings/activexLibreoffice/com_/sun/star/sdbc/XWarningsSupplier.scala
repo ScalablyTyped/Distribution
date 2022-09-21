@@ -21,7 +21,7 @@ trait XWarningsSupplier
     * @returns the warnings
     * @throws SQLException if a database access error occurs.
     */
-  val Warnings: js.Any
+  val Warnings: Any
   
   /**
     * clears all warnings reported for the object implementing the interface. After a call to this method, the method {@link
@@ -37,16 +37,16 @@ trait XWarningsSupplier
     * @returns the warnings
     * @throws SQLException if a database access error occurs.
     */
-  def getWarnings(): js.Any
+  def getWarnings(): Any
 }
 object XWarningsSupplier {
   
   inline def apply(
-    Warnings: js.Any,
+    Warnings: Any,
     acquire: () => Unit,
     clearWarnings: () => Unit,
-    getWarnings: () => js.Any,
-    queryInterface: `type` => js.Any,
+    getWarnings: () => Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XWarningsSupplier = {
     val __obj = js.Dynamic.literal(Warnings = Warnings.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), clearWarnings = js.Any.fromFunction0(clearWarnings), getWarnings = js.Any.fromFunction0(getWarnings), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
@@ -57,8 +57,8 @@ object XWarningsSupplier {
     
     inline def setClearWarnings(value: () => Unit): Self = StObject.set(x, "clearWarnings", js.Any.fromFunction0(value))
     
-    inline def setGetWarnings(value: () => js.Any): Self = StObject.set(x, "getWarnings", js.Any.fromFunction0(value))
+    inline def setGetWarnings(value: () => Any): Self = StObject.set(x, "getWarnings", js.Any.fromFunction0(value))
     
-    inline def setWarnings(value: js.Any): Self = StObject.set(x, "Warnings", value.asInstanceOf[js.Any])
+    inline def setWarnings(value: Any): Self = StObject.set(x, "Warnings", value.asInstanceOf[js.Any])
   }
 }

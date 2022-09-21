@@ -44,7 +44,7 @@ trait FlipView[T] extends StObject {
     * @param eventProperties The set of additional properties to be attached to the event object when the event is raised.
     * @returns true if preventDefault was called on the event, otherwise false.
     **/
-  def dispatchEvent(`type`: String, eventProperties: js.Any): Boolean = js.native
+  def dispatchEvent(`type`: String, eventProperties: Any): Boolean = js.native
   
   /**
     * Releases resources held by this FlipView. Call this method when the FlipView is no longer needed. After calling this method, the FlipView becomes unusable.
@@ -74,7 +74,7 @@ trait FlipView[T] extends StObject {
   /**
     * Gets or sets a Template or function that defines the HTML for each item's page.
     **/
-  var itemTemplate: js.Any = js.native
+  var itemTemplate: Any = js.native
   
   /**
     * Navigates to the next page.
@@ -94,19 +94,19 @@ trait FlipView[T] extends StObject {
     * Raised when the FlipView flips to a page and its renderer function completes.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.source.
     **/
-  def onpagecompleted(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def onpagecompleted(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Raised when the FlipView flips to a page.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.source.
     **/
-  def onpageselected(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def onpageselected(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Occurs when an item becomes invisible or visible.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.source, detail.visible.
     **/
-  def onpagevisibilitychanged(eventInfo: CustomEvent[js.Any]): Unit = js.native
+  def onpagevisibilitychanged(eventInfo: CustomEvent[Any]): Unit = js.native
   
   /**
     * Gets or sets the orientation of the FlipView, horizontal or vertical.
@@ -132,5 +132,5 @@ trait FlipView[T] extends StObject {
     * Sets custom animations for the FlipView to use when navigating between pages.
     * @param animations An object that contains up to three fields, one for each navigation action: next, previous, and jump. Each of those fields must be a function with this signature: function (outgoingPage, incomingPage) Each function must return a WinJS.Promise that completes once the animations are finished. If a field is null or undefined, the FlipView reverts to its default animation for that action.
     **/
-  def setCustomAnimations(animations: js.Any): Unit = js.native
+  def setCustomAnimations(animations: Any): Unit = js.native
 }

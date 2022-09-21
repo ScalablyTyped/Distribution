@@ -23,14 +23,6 @@ object tagStyleMod {
     
     var close: ViewStyle
     
-    var closeAndroid: ViewStyle
-    
-    var closeIOS: ViewStyle
-    
-    var closeText: TextStyle
-    
-    var closeTransform: ViewStyle
-    
     var disabledText: TextStyle
     
     var disabledWrap: ViewStyle
@@ -55,10 +47,6 @@ object tagStyleMod {
       activeText: TextStyle,
       activeWrap: ViewStyle,
       close: ViewStyle,
-      closeAndroid: ViewStyle,
-      closeIOS: ViewStyle,
-      closeText: TextStyle,
-      closeTransform: ViewStyle,
       disabledText: TextStyle,
       disabledWrap: ViewStyle,
       normalText: TextStyle,
@@ -69,7 +57,7 @@ object tagStyleMod {
       wrap: ViewStyle,
       wrapSmall: ViewStyle
     ): TagStyle = {
-      val __obj = js.Dynamic.literal(activeText = activeText.asInstanceOf[js.Any], activeWrap = activeWrap.asInstanceOf[js.Any], close = close.asInstanceOf[js.Any], closeAndroid = closeAndroid.asInstanceOf[js.Any], closeIOS = closeIOS.asInstanceOf[js.Any], closeText = closeText.asInstanceOf[js.Any], closeTransform = closeTransform.asInstanceOf[js.Any], disabledText = disabledText.asInstanceOf[js.Any], disabledWrap = disabledWrap.asInstanceOf[js.Any], normalText = normalText.asInstanceOf[js.Any], normalWrap = normalWrap.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textSmall = textSmall.asInstanceOf[js.Any], wrap = wrap.asInstanceOf[js.Any], wrapSmall = wrapSmall.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(activeText = activeText.asInstanceOf[js.Any], activeWrap = activeWrap.asInstanceOf[js.Any], close = close.asInstanceOf[js.Any], disabledText = disabledText.asInstanceOf[js.Any], disabledWrap = disabledWrap.asInstanceOf[js.Any], normalText = normalText.asInstanceOf[js.Any], normalWrap = normalWrap.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textSmall = textSmall.asInstanceOf[js.Any], wrap = wrap.asInstanceOf[js.Any], wrapSmall = wrapSmall.asInstanceOf[js.Any])
       __obj.asInstanceOf[TagStyle]
     }
     
@@ -80,14 +68,6 @@ object tagStyleMod {
       inline def setActiveWrap(value: ViewStyle): Self = StObject.set(x, "activeWrap", value.asInstanceOf[js.Any])
       
       inline def setClose(value: ViewStyle): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
-      
-      inline def setCloseAndroid(value: ViewStyle): Self = StObject.set(x, "closeAndroid", value.asInstanceOf[js.Any])
-      
-      inline def setCloseIOS(value: ViewStyle): Self = StObject.set(x, "closeIOS", value.asInstanceOf[js.Any])
-      
-      inline def setCloseText(value: TextStyle): Self = StObject.set(x, "closeText", value.asInstanceOf[js.Any])
-      
-      inline def setCloseTransform(value: ViewStyle): Self = StObject.set(x, "closeTransform", value.asInstanceOf[js.Any])
       
       inline def setDisabledText(value: TextStyle): Self = StObject.set(x, "disabledText", value.asInstanceOf[js.Any])
       

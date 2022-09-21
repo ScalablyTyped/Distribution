@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PropertyPages extends StObject {
   
-  def Add(Page: js.Any, Title: String): Unit
+  def Add(Page: Any, Title: String): Unit
   
   val Application: typings.activexOutlook.Outlook.Application
   
@@ -14,28 +14,28 @@ trait PropertyPages extends StObject {
   
   val Count: Double
   
-  def Item(Index: js.Any): js.Any
+  def Item(Index: Any): Any
   
   /* private */ @JSName("Outlook.PropertyPages_typekey")
   var OutlookDotPropertyPages_typekey: PropertyPages
   
-  val Parent: js.Any
+  val Parent: Any
   
-  def Remove(Index: js.Any): Unit
+  def Remove(Index: Any): Unit
   
   val Session: NameSpace
 }
 object PropertyPages {
   
   inline def apply(
-    Add: (js.Any, String) => Unit,
+    Add: (Any, String) => Unit,
     Application: Application,
     Class: OlObjectClass,
     Count: Double,
-    Item: js.Any => js.Any,
+    Item: Any => Any,
     OutlookDotPropertyPages_typekey: PropertyPages,
-    Parent: js.Any,
-    Remove: js.Any => Unit,
+    Parent: Any,
+    Remove: Any => Unit,
     Session: NameSpace
   ): PropertyPages = {
     val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), Application = Application.asInstanceOf[js.Any], Class = Class.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any], Remove = js.Any.fromFunction1(Remove), Session = Session.asInstanceOf[js.Any])
@@ -45,7 +45,7 @@ object PropertyPages {
   
   extension [Self <: PropertyPages](x: Self) {
     
-    inline def setAdd(value: (js.Any, String) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (Any, String) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
@@ -53,13 +53,13 @@ object PropertyPages {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => js.Any): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => Any): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
     inline def setOutlookDotPropertyPages_typekey(value: PropertyPages): Self = StObject.set(x, "Outlook.PropertyPages_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    inline def setRemove(value: js.Any => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: Any => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }

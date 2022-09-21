@@ -13,7 +13,7 @@ trait WorkspaceEditEntryMetadata extends StObject {
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * The icon path or [ThemeIcon](#ThemeIcon) for the edit.
+    * The icon path or {@link ThemeIcon} for the edit.
     */
   var iconPath: js.UndefOr[Uri | Dark | ThemeIcon] = js.undefined
   

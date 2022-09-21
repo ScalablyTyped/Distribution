@@ -14,7 +14,7 @@ trait BaseLayerViewGL2DProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerViewGL2D.html#context)
     */
-  var context: js.UndefOr[WebGLRenderingContext | js.Any] = js.undefined
+  var context: js.UndefOr[WebGLRenderingContext | Any] = js.undefined
   
   /**
     * The array of module:esri/views/2d/layers/BaseLayerViewGL2D#Tile objects computed to cover the MapView's visible area.
@@ -39,7 +39,7 @@ object BaseLayerViewGL2DProperties {
   
   extension [Self <: BaseLayerViewGL2DProperties](x: Self) {
     
-    inline def setContext(value: WebGLRenderingContext | js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: WebGLRenderingContext | Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
@@ -47,7 +47,7 @@ object BaseLayerViewGL2DProperties {
     
     inline def setTilesUndefined: Self = StObject.set(x, "tiles", js.undefined)
     
-    inline def setTilesVarargs(value: BaseLayerViewGL2DTile*): Self = StObject.set(x, "tiles", js.Array(value :_*))
+    inline def setTilesVarargs(value: BaseLayerViewGL2DTile*): Self = StObject.set(x, "tiles", js.Array(value*))
     
     inline def setView(value: MapViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     

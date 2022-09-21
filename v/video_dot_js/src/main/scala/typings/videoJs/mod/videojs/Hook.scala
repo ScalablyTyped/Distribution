@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Hook {
   
-  type BeforeSetup = js.Function2[/* element */ HTMLVideoElement, /* options */ js.Any, js.Any]
+  type BeforeSetup = js.Function2[/* element */ HTMLVideoElement, /* options */ Any, Any]
   
   type Setup = js.Function1[/* player */ Player, Unit]
 }

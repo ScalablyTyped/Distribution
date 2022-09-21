@@ -10,10 +10,10 @@ object motorcycleMod {
   
   @JSImport("material-ui/svg-icons/action/motorcycle", JSImport.Default)
   @js.native
-  class default () extends ActionMotorcycle
+  open class default () extends ActionMotorcycle
   
   @JSImport("material-ui/svg-icons/action/motorcycle", "ActionMotorcycle")
   @js.native
-  class ActionMotorcycle ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionMotorcycle ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

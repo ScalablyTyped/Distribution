@@ -22,6 +22,8 @@ trait BodyOptions extends StObject {
   
   var collisionResponse: js.UndefOr[Boolean] = js.undefined
   
+  var damping: js.UndefOr[Double] = js.undefined
+  
   var fixedRotation: js.UndefOr[Boolean] = js.undefined
   
   var fixedX: js.UndefOr[Boolean] = js.undefined
@@ -41,6 +43,10 @@ trait BodyOptions extends StObject {
   var sleepSpeedLimit: js.UndefOr[Double] = js.undefined
   
   var sleepTimeLimit: js.UndefOr[Double] = js.undefined
+  
+  var `type`: js.UndefOr[
+    /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Body.DYNAMIC */ Any
+  ] = js.undefined
   
   var velocity: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
 }
@@ -85,6 +91,10 @@ object BodyOptions {
     
     inline def setCollisionResponseUndefined: Self = StObject.set(x, "collisionResponse", js.undefined)
     
+    inline def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
+    
+    inline def setDampingUndefined: Self = StObject.set(x, "damping", js.undefined)
+    
     inline def setFixedRotation(value: Boolean): Self = StObject.set(x, "fixedRotation", value.asInstanceOf[js.Any])
     
     inline def setFixedRotationUndefined: Self = StObject.set(x, "fixedRotation", js.undefined)
@@ -124,6 +134,10 @@ object BodyOptions {
     inline def setSleepTimeLimit(value: Double): Self = StObject.set(x, "sleepTimeLimit", value.asInstanceOf[js.Any])
     
     inline def setSleepTimeLimitUndefined: Self = StObject.set(x, "sleepTimeLimit", js.undefined)
+    
+    inline def setType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Body.DYNAMIC */ Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     inline def setVelocity(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
     

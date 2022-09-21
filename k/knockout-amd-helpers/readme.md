@@ -9,15 +9,12 @@ Makes Knockout and AMD modules work better together
 | ------------------ | :-------------: |
 | Full name          | knockout-amd-helpers |
 | Keywords           | knockout, knockout.js, knockoutjs, AMD |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 11392 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 677.6666666666666 |
+| # stars            | 195.0 |
 
 ## Links
-- [Homepage](https://github.com/rniemeyer/knockout-sortable)
-- [Bugs](https://github.com/rniemeyer/knockout-amd-helpers/issues)
-- [Repository](https://github.com/rniemeyer/knockout-amd-helpers)
 - [Npm](https://www.npmjs.com/package/knockout-amd-helpers)
     
 

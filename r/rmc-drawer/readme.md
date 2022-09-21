@@ -10,10 +10,10 @@ drawer ui component for react
 | ------------------ | :-------------: |
 | Full name          | rmc-drawer |
 | Keywords           | react, react-component, react-drawer, drawer |
-| # releases         | 0 |
-| # dependents       | 23 |
-| # downloads        | 999828 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 120695.66666666667 |
+| # stars            | 54.0 |
 
 ## Links
 - [Homepage](https://github.com/react-component/m-drawer)

@@ -1,14 +1,16 @@
 package typings.awsSdkClientCognitoIdentity.mod
 
+import typings.awsSdkClientCognitoIdentity.anon.ExceptionOptionTypeExtern
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object ExternalServiceException {
-  
-  @JSImport("@aws-sdk/client-cognito-identity", "ExternalServiceException")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  inline def filterSensitiveLog(obj: typings.awsSdkClientCognitoIdentity.models0Mod.ExternalServiceException): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+@JSImport("@aws-sdk/client-cognito-identity", "ExternalServiceException")
+@js.native
+open class ExternalServiceException protected ()
+  extends typings.awsSdkClientCognitoIdentity.modelsMod.ExternalServiceException {
+  /**
+    * @internal
+    */
+  def this(opts: ExceptionOptionTypeExtern) = this()
 }

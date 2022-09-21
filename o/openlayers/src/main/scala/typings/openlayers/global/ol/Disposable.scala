@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Objects that need to clean up after themselves.
   */
-class Disposable ()
+open class Disposable ()
   extends typings.openlayers.mod.Disposable

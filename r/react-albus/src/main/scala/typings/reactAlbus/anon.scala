@@ -13,18 +13,22 @@ object anon {
     extends StObject
        with WizardContextRenderProps {
     
-    def children(wizard: WizardContext): ReactNode
+    var children: (js.Function1[/* wizard */ WizardContext, ReactNode]) | ReactNode
   }
   object Children {
     
-    inline def apply(children: WizardContext => ReactNode): Children = {
-      val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
+    inline def apply(): Children = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Children]
     }
     
     extension [Self <: Children](x: Self) {
       
-      inline def setChildren(value: WizardContext => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: (js.Function1[/* wizard */ WizardContext, ReactNode]) | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenFunction1(value: /* wizard */ WizardContext => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
   

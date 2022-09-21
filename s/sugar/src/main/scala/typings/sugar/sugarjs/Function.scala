@@ -164,7 +164,7 @@ object Function {
           /* obj */ js.Object, 
           SugarDefaultChainable[Unit]
         ],
-      init: js.Any
+      init: Any
     ): SugarDefaultChainable[T] = js.native
     
     def reject(find: java.lang.String): SugarDefaultChainable[js.Object] = js.native
@@ -193,7 +193,7 @@ object Function {
     def sum[T, U](map: java.lang.String): SugarDefaultChainable[Double] = js.native
     def sum[T, U](map: mapFn[T, U]): SugarDefaultChainable[Double] = js.native
     
-    def tap(tapFn: js.Function1[/* obj */ js.Object, SugarDefaultChainable[js.Any]]): SugarDefaultChainable[js.Object] = js.native
+    def tap(tapFn: js.Function1[/* obj */ js.Object, SugarDefaultChainable[Any]]): SugarDefaultChainable[js.Object] = js.native
     
     def toQueryString[T, U](): SugarDefaultChainable[js.Object] = js.native
     def toQueryString[T, U](options: QueryStringOptions[T, U]): SugarDefaultChainable[js.Object] = js.native
@@ -207,24 +207,24 @@ object Function {
     def after(n: Double): SugarDefaultChainable[typings.sugar.Function] = js.native
     
     @JSName("apply")
-    def apply(thisArg: js.Any): SugarDefaultChainable[js.Any] = js.native
+    def apply(thisArg: Any): SugarDefaultChainable[Any] = js.native
     @JSName("apply")
-    def apply(thisArg: js.Any, argArray: js.Any): SugarDefaultChainable[js.Any] = js.native
+    def apply(thisArg: Any, argArray: Any): SugarDefaultChainable[Any] = js.native
     
-    def bind(thisArg: js.Any, argArray: js.Any*): SugarDefaultChainable[js.Any] = js.native
+    def bind(thisArg: Any, argArray: Any*): SugarDefaultChainable[Any] = js.native
     
-    def call(thisArg: js.Any, argArray: js.Any*): SugarDefaultChainable[js.Any] = js.native
+    def call(thisArg: Any, argArray: Any*): SugarDefaultChainable[Any] = js.native
     
     def cancel(): SugarDefaultChainable[typings.sugar.Function] = js.native
     
     def debounce(): SugarDefaultChainable[typings.sugar.Function] = js.native
     def debounce(ms: Double): SugarDefaultChainable[typings.sugar.Function] = js.native
     
-    def delay(ms: Double, args: js.Any*): SugarDefaultChainable[typings.sugar.Function] = js.native
-    def delay(ms: Unit, args: js.Any*): SugarDefaultChainable[typings.sugar.Function] = js.native
+    def delay(ms: Double, args: Any*): SugarDefaultChainable[typings.sugar.Function] = js.native
+    def delay(ms: Unit, args: Any*): SugarDefaultChainable[typings.sugar.Function] = js.native
     
-    def every(ms: Double, args: js.Any*): SugarDefaultChainable[typings.sugar.Function] = js.native
-    def every(ms: Unit, args: js.Any*): SugarDefaultChainable[typings.sugar.Function] = js.native
+    def every(ms: Double, args: Any*): SugarDefaultChainable[typings.sugar.Function] = js.native
+    def every(ms: Unit, args: Any*): SugarDefaultChainable[typings.sugar.Function] = js.native
     
     def `lazy`(): SugarDefaultChainable[typings.sugar.Function] = js.native
     def `lazy`(ms: Double): SugarDefaultChainable[typings.sugar.Function] = js.native
@@ -247,7 +247,7 @@ object Function {
     
     def once(): SugarDefaultChainable[typings.sugar.Function] = js.native
     
-    def partial(args: js.Any*): SugarDefaultChainable[typings.sugar.Function] = js.native
+    def partial(args: Any*): SugarDefaultChainable[typings.sugar.Function] = js.native
     
     var raw: RawValue = js.native
     
@@ -272,11 +272,11 @@ object Function {
     def debounce(instance: typings.sugar.Function): typings.sugar.Function = js.native
     def debounce(instance: typings.sugar.Function, ms: Double): typings.sugar.Function = js.native
     
-    def delay(instance: typings.sugar.Function, ms: Double, args: js.Any*): typings.sugar.Function = js.native
-    def delay(instance: typings.sugar.Function, ms: Unit, args: js.Any*): typings.sugar.Function = js.native
+    def delay(instance: typings.sugar.Function, ms: Double, args: Any*): typings.sugar.Function = js.native
+    def delay(instance: typings.sugar.Function, ms: Unit, args: Any*): typings.sugar.Function = js.native
     
-    def every(instance: typings.sugar.Function, ms: Double, args: js.Any*): typings.sugar.Function = js.native
-    def every(instance: typings.sugar.Function, ms: Unit, args: js.Any*): typings.sugar.Function = js.native
+    def every(instance: typings.sugar.Function, ms: Double, args: Any*): typings.sugar.Function = js.native
+    def every(instance: typings.sugar.Function, ms: Unit, args: Any*): typings.sugar.Function = js.native
     
     def `lazy`(instance: typings.sugar.Function): typings.sugar.Function = js.native
     def `lazy`(instance: typings.sugar.Function, ms: Double): typings.sugar.Function = js.native
@@ -299,7 +299,7 @@ object Function {
     
     def once(instance: typings.sugar.Function): typings.sugar.Function = js.native
     
-    def partial(instance: typings.sugar.Function, args: js.Any*): typings.sugar.Function = js.native
+    def partial(instance: typings.sugar.Function, args: Any*): typings.sugar.Function = js.native
     
     def throttle(instance: typings.sugar.Function): typings.sugar.Function = js.native
     def throttle(instance: typings.sugar.Function, ms: Double): typings.sugar.Function = js.native

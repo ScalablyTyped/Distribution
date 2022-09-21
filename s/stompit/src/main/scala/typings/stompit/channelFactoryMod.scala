@@ -8,7 +8,7 @@ object channelFactoryMod {
   
   @JSImport("stompit/lib/ChannelFactory", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends typings.stompit.channelPoolMod.^ {
     def this(connectFailover: typings.stompit.connectFailoverMod.^) = this()
   }

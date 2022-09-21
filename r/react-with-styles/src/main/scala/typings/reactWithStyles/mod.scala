@@ -22,98 +22,98 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def css(styles: js.Any*): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(styles.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  inline def css(styles: Any*): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(styles.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Object]
   
   inline def withStyles[T](): js.Function1[
-    /* component */ ComponentType[js.Any], 
+    /* component */ ComponentType[Any], 
     ComponentClass[
       Omit[
-        ElementConfig[ComponentType[js.Any]], 
+        ElementConfig[ComponentType[Any]], 
         /* keyof react-with-styles.react-with-styles.WithStylesProps<T> */ css | styles | theme
       ], 
       ComponentState
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withStyles")().asInstanceOf[js.Function1[
-    /* component */ ComponentType[js.Any], 
+    /* component */ ComponentType[Any], 
     ComponentClass[
       Omit[
-        ElementConfig[ComponentType[js.Any]], 
+        ElementConfig[ComponentType[Any]], 
         /* keyof react-with-styles.react-with-styles.WithStylesProps<T> */ css | styles | theme
       ], 
       ComponentState
     ]
   ]]
   inline def withStyles[T](styleFn: js.Function1[/* theme */ T, Styles]): js.Function1[
-    /* component */ ComponentType[js.Any], 
+    /* component */ ComponentType[Any], 
     ComponentClass[
       Omit[
-        ElementConfig[ComponentType[js.Any]], 
+        ElementConfig[ComponentType[Any]], 
         /* keyof react-with-styles.react-with-styles.WithStylesProps<T> */ css | styles | theme
       ], 
       ComponentState
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withStyles")(styleFn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* component */ ComponentType[js.Any], 
+    /* component */ ComponentType[Any], 
     ComponentClass[
       Omit[
-        ElementConfig[ComponentType[js.Any]], 
+        ElementConfig[ComponentType[Any]], 
         /* keyof react-with-styles.react-with-styles.WithStylesProps<T> */ css | styles | theme
       ], 
       ComponentState
     ]
   ]]
   inline def withStyles[T](styleFn: js.Function1[/* theme */ T, Styles], options: WithStylesOptions): js.Function1[
-    /* component */ ComponentType[js.Any], 
+    /* component */ ComponentType[Any], 
     ComponentClass[
       Omit[
-        ElementConfig[ComponentType[js.Any]], 
+        ElementConfig[ComponentType[Any]], 
         /* keyof react-with-styles.react-with-styles.WithStylesProps<T> */ css | styles | theme
       ], 
       ComponentState
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("withStyles")(styleFn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-    /* component */ ComponentType[js.Any], 
+    /* component */ ComponentType[Any], 
     ComponentClass[
       Omit[
-        ElementConfig[ComponentType[js.Any]], 
+        ElementConfig[ComponentType[Any]], 
         /* keyof react-with-styles.react-with-styles.WithStylesProps<T> */ css | styles | theme
       ], 
       ComponentState
     ]
   ]]
   inline def withStyles[T](styleFn: Null, options: WithStylesOptions): js.Function1[
-    /* component */ ComponentType[js.Any], 
+    /* component */ ComponentType[Any], 
     ComponentClass[
       Omit[
-        ElementConfig[ComponentType[js.Any]], 
+        ElementConfig[ComponentType[Any]], 
         /* keyof react-with-styles.react-with-styles.WithStylesProps<T> */ css | styles | theme
       ], 
       ComponentState
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("withStyles")(styleFn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-    /* component */ ComponentType[js.Any], 
+    /* component */ ComponentType[Any], 
     ComponentClass[
       Omit[
-        ElementConfig[ComponentType[js.Any]], 
+        ElementConfig[ComponentType[Any]], 
         /* keyof react-with-styles.react-with-styles.WithStylesProps<T> */ css | styles | theme
       ], 
       ComponentState
     ]
   ]]
   inline def withStyles[T](styleFn: Unit, options: WithStylesOptions): js.Function1[
-    /* component */ ComponentType[js.Any], 
+    /* component */ ComponentType[Any], 
     ComponentClass[
       Omit[
-        ElementConfig[ComponentType[js.Any]], 
+        ElementConfig[ComponentType[Any]], 
         /* keyof react-with-styles.react-with-styles.WithStylesProps<T> */ css | styles | theme
       ], 
       ComponentState
     ]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("withStyles")(styleFn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
-    /* component */ ComponentType[js.Any], 
+    /* component */ ComponentType[Any], 
     ComponentClass[
       Omit[
-        ElementConfig[ComponentType[js.Any]], 
+        ElementConfig[ComponentType[Any]], 
         /* keyof react-with-styles.react-with-styles.WithStylesProps<T> */ css | styles | theme
       ], 
       ComponentState
@@ -129,8 +129,8 @@ object mod {
     
     @JSImport("react-with-styles", "withStylesPropTypes.css")
     @js.native
-    def css: js.UndefOr[Validator[js.Function1[/* repeated */ js.Any, js.Object]]] = js.native
-    inline def css_=(x: js.UndefOr[Validator[js.Function1[/* repeated */ js.Any, js.Object]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("css")(x.asInstanceOf[js.Any])
+    def css: js.UndefOr[Validator[js.Function1[/* repeated */ Any, js.Object]]] = js.native
+    inline def css_=(x: js.UndefOr[Validator[js.Function1[/* repeated */ Any, js.Object]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("css")(x.asInstanceOf[js.Any])
     
     @JSImport("react-with-styles", "withStylesPropTypes.styles")
     @js.native
@@ -143,7 +143,7 @@ object mod {
     inline def theme_=(x: js.UndefOr[Validator[Theme]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("theme")(x.asInstanceOf[js.Any])
   }
   
-  type ComponentClassProps[C] = js.Any
+  type ComponentClassProps[C] = Any
   
   type ElementConfig[C] = LibraryManagedAttributes[C, ElementProps[C]]
   
@@ -153,7 +153,7 @@ object mod {
   
   type Omit[T, K] = Pick[T, Exclude[/* keyof T */ String, K]]
   
-  type SFCProps[C] = js.Any
+  type SFCProps[C] = Any
   
   type Styles = StringDictionary[Nullable[CSSPropertiespseudoSelect]]
   
@@ -192,7 +192,7 @@ object mod {
       * of these things. It returns an object with an opaque structure that must be spread into a
       * JSX element.
       */
-    def css(styles: js.Any*): js.Object
+    def css(styles: Any*): js.Object
     
     var styles: StringDictionary[js.Object]
     
@@ -200,14 +200,14 @@ object mod {
   }
   object WithStylesProps {
     
-    inline def apply[T](css: /* repeated */ js.Any => js.Object, styles: StringDictionary[js.Object], theme: T): WithStylesProps[T] = {
+    inline def apply[T](css: /* repeated */ Any => js.Object, styles: StringDictionary[js.Object], theme: T): WithStylesProps[T] = {
       val __obj = js.Dynamic.literal(css = js.Any.fromFunction1(css), styles = styles.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[WithStylesProps[T]]
     }
     
     extension [Self <: WithStylesProps[?], T](x: Self & WithStylesProps[T]) {
       
-      inline def setCss(value: /* repeated */ js.Any => js.Object): Self = StObject.set(x, "css", js.Any.fromFunction1(value))
+      inline def setCss(value: /* repeated */ Any => js.Object): Self = StObject.set(x, "css", js.Any.fromFunction1(value))
       
       inline def setStyles(value: StringDictionary[js.Object]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       

@@ -8,8 +8,10 @@ trait IDBVersionChangeEventInit
   extends StObject
      with EventInit {
   
+  /* standard dom */
   var newVersion: js.UndefOr[Double | Null] = js.undefined
   
+  /* standard dom */
   var oldVersion: js.UndefOr[Double] = js.undefined
 }
 object IDBVersionChangeEventInit {

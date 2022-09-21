@@ -15,7 +15,7 @@ object mod {
   @js.native
   val baseFontSize: Double = js.native
   
-  inline def breakpoint(args: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("breakpoint")(args.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def breakpoint(args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("breakpoint")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[String]
   
   inline def breakpointDown(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("breakpointDown")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   

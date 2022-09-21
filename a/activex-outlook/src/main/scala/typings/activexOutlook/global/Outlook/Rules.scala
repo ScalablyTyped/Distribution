@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.Rules")
 @js.native
-/* private */ class Rules ()
+/* private */ open class Rules ()
   extends StObject
      with typings.activexOutlook.Outlook.Rules

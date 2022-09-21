@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("google.earth.KmlPhotoOverlay")
 @js.native
-class KmlPhotoOverlay ()
+open class KmlPhotoOverlay ()
   extends StObject
      with typings.googleEarth.google.earth.KmlOverlay {
   

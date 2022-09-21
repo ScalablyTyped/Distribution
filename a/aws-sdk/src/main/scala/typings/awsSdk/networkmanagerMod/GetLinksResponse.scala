@@ -14,7 +14,7 @@ trait GetLinksResponse extends StObject {
   /**
     * The token for the next page of results.
     */
-  var NextToken: js.UndefOr[String] = js.undefined
+  var NextToken: js.UndefOr[typings.awsSdk.networkmanagerMod.NextToken] = js.undefined
 }
 object GetLinksResponse {
   
@@ -29,9 +29,9 @@ object GetLinksResponse {
     
     inline def setLinksUndefined: Self = StObject.set(x, "Links", js.undefined)
     
-    inline def setLinksVarargs(value: Link*): Self = StObject.set(x, "Links", js.Array(value :_*))
+    inline def setLinksVarargs(value: Link*): Self = StObject.set(x, "Links", js.Array(value*))
     
-    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }

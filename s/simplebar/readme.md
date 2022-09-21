@@ -1,7 +1,7 @@
 
 # Scala.js typings for simplebar
 
-Typings are for version 5.1
+Typings are for version 5.3.8
 
 ## Library description:
 Scrollbars, simpler.
@@ -10,10 +10,10 @@ Scrollbars, simpler.
 | ------------------ | :-------------: |
 | Full name          | simplebar |
 | Keywords           | - |
-| # releases         | 48 |
-| # dependents       | 59 |
-| # downloads        | 66559805 |
-| # stars            | 1 |
+| # releases         | 17 |
+| # dependents       | 0.0 |
+| # downloads        | 3438866.3333333335 |
+| # stars            | 4966.0 |
 
 ## Links
 - [Homepage](https://grsmto.github.io/simplebar/)
@@ -24,7 +24,7 @@ Scrollbars, simpler.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

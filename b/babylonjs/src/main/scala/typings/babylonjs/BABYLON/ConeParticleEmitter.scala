@@ -9,13 +9,13 @@ trait ConeParticleEmitter
   extends StObject
      with IParticleEmitterType {
   
-  /* private */ var _angle: js.Any = js.native
+  /* private */ var _angle: Any = js.native
   
-  /* private */ var _buildHeight: js.Any = js.native
+  /* private */ var _buildHeight: Any = js.native
   
-  /* private */ var _height: js.Any = js.native
+  /* private */ var _height: Any = js.native
   
-  /* private */ var _radius: js.Any = js.native
+  /* private */ var _radius: Any = js.native
   
   /**
     * Gets or sets the angle of the emission cone
@@ -40,7 +40,7 @@ trait ConeParticleEmitter
     * Parse properties from a JSON object
     * @param serializationObject defines the JSON object
     */
-  def parse(serializationObject: js.Any): Unit = js.native
+  def parse(serializationObject: Any): Unit = js.native
   
   /**
     * Gets or sets the radius of the emission cone
@@ -53,4 +53,13 @@ trait ConeParticleEmitter
   var radiusRange: Double = js.native
   
   def radius_=(value: Double): Unit = js.native
+  
+  /**
+    * Called by the particle System when the direction is computed for the created particle.
+    * @param worldMatrix is the world matrix of the particle system
+    * @param directionToUpdate is the direction vector to update with the result
+    * @param particle is the particle we are computed the direction for
+    * @param isLocal defines if the direction should be set in local space
+    */
+  def startDirectionFunction(worldMatrix: Matrix, directionToUpdate: Vector3, particle: Particle, isLocal: Boolean): Unit = js.native
 }

@@ -7,10 +7,13 @@ import typings.jupyterlabSettingregistry.anon.phaseinPhaseTransform
 import typings.jupyterlabSettingregistry.settingregistryMod.ISchemaValidator.IError
 import typings.jupyterlabSettingregistry.settingregistryMod.SettingRegistry.IOptions
 import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry
+import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.IMenu
+import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.IMenuItem
 import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.IPlugin
 import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.ISchema
 import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.ISettings
 import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.IShortcut
+import typings.jupyterlabSettingregistry.tokensMod.ISettingRegistry.IToolbarItem
 import typings.jupyterlabStatedb.interfacesMod.IDataConnector
 import typings.luminoCoreutils.jsonMod.PartialJSONValue
 import typings.luminoCoreutils.jsonMod.ReadonlyJSONObject
@@ -28,7 +31,7 @@ object settingregistryMod {
   /**
     * Instantiate a schema validator.
     */
-  class DefaultSchemaValidator ()
+  open class DefaultSchemaValidator ()
     extends StObject
        with ISchemaValidator {
     
@@ -45,16 +48,16 @@ object settingregistryMod {
       * #### Notes
       * It is safe to call this function multiple times with the same plugin name.
       */
-    /* private */ var _addSchema: js.Any = js.native
+    /* private */ var _addSchema: Any = js.native
     
-    /* private */ var _composer: js.Any = js.native
+    /* private */ var _composer: Any = js.native
     
-    /* private */ var _validator: js.Any = js.native
+    /* private */ var _validator: Any = js.native
   }
   
   @JSImport("@jupyterlab/settingregistry/lib/settingregistry", "SettingRegistry")
   @js.native
-  class SettingRegistry protected ()
+  open class SettingRegistry protected ()
     extends StObject
        with ISettingRegistry {
     /**
@@ -65,35 +68,35 @@ object settingregistryMod {
     /**
       * Load a plugin into the registry.
       */
-    /* private */ var _load: js.Any = js.native
+    /* private */ var _load: Any = js.native
     
-    /* private */ var _pluginChanged: js.Any = js.native
+    /* private */ var _pluginChanged: Any = js.native
     
     /**
       * Preload a list of plugins and fail gracefully.
       */
-    /* private */ var _preload: js.Any = js.native
+    /* private */ var _preload: Any = js.native
     
-    /* private */ var _ready: js.Any = js.native
+    /* private */ var _ready: Any = js.native
     
     /**
       * Save a plugin in the registry.
       */
-    /* private */ var _save: js.Any = js.native
+    /* private */ var _save: Any = js.native
     
-    /* private */ var _timeout: js.Any = js.native
+    /* private */ var _timeout: Any = js.native
     
     /**
       * Transform the plugin if necessary.
       */
-    /* private */ var _transform: js.Any = js.native
+    /* private */ var _transform: Any = js.native
     
-    /* private */ var _transformers: js.Any = js.native
+    /* private */ var _transformers: Any = js.native
     
     /**
       * Validate and preload a plugin, compose the `composite` data.
       */
-    /* private */ var _validate: js.Any = js.native
+    /* private */ var _validate: Any = js.native
     
     /**
       * The data connector used by the setting registry.
@@ -236,6 +239,64 @@ object settingregistryMod {
     val ^ : js.Any = js.native
     
     /**
+      * Remove disabled entries from menu items
+      *
+      * @param items Menu items
+      * @returns Filtered menu items
+      */
+    inline def filterDisabledItems[T /* <: IMenuItem */](items: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterDisabledItems")(items.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+    
+    /**
+      * Merge two set of menu items.
+      *
+      * @param reference Reference set of menu items
+      * @param addition New items to add
+      * @param warn Whether to warn if item is duplicated; default to false
+      * @returns The merged set of items
+      */
+    inline def reconcileItems[T /* <: IMenuItem */](): js.UndefOr[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("reconcileItems")().asInstanceOf[js.UndefOr[js.Array[T]]]
+    inline def reconcileItems[T /* <: IMenuItem */](reference: js.Array[T]): js.UndefOr[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("reconcileItems")(reference.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Array[T]]]
+    inline def reconcileItems[T /* <: IMenuItem */](reference: js.Array[T], addition: js.Array[T]): js.UndefOr[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("reconcileItems")(reference.asInstanceOf[js.Any], addition.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[T]]]
+    inline def reconcileItems[T /* <: IMenuItem */](reference: js.Array[T], addition: js.Array[T], warn: Boolean): js.UndefOr[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("reconcileItems")(reference.asInstanceOf[js.Any], addition.asInstanceOf[js.Any], warn.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[T]]]
+    inline def reconcileItems[T /* <: IMenuItem */](reference: js.Array[T], addition: js.Array[T], warn: Boolean, addNewItems: Boolean): js.UndefOr[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("reconcileItems")(reference.asInstanceOf[js.Any], addition.asInstanceOf[js.Any], warn.asInstanceOf[js.Any], addNewItems.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[T]]]
+    inline def reconcileItems[T /* <: IMenuItem */](reference: js.Array[T], addition: js.Array[T], warn: Unit, addNewItems: Boolean): js.UndefOr[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("reconcileItems")(reference.asInstanceOf[js.Any], addition.asInstanceOf[js.Any], warn.asInstanceOf[js.Any], addNewItems.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[T]]]
+    inline def reconcileItems[T /* <: IMenuItem */](reference: js.Array[T], addition: Unit, warn: Boolean): js.UndefOr[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("reconcileItems")(reference.asInstanceOf[js.Any], addition.asInstanceOf[js.Any], warn.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[T]]]
+    inline def reconcileItems[T /* <: IMenuItem */](reference: js.Array[T], addition: Unit, warn: Boolean, addNewItems: Boolean): js.UndefOr[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("reconcileItems")(reference.asInstanceOf[js.Any], addition.asInstanceOf[js.Any], warn.asInstanceOf[js.Any], addNewItems.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[T]]]
+    inline def reconcileItems[T /* <: IMenuItem */](reference: js.Array[T], addition: Unit, warn: Unit, addNewItems: Boolean): js.UndefOr[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("reconcileItems")(reference.asInstanceOf[js.Any], addition.asInstanceOf[js.Any], warn.asInstanceOf[js.Any], addNewItems.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[T]]]
+    inline def reconcileItems[T /* <: IMenuItem */](reference: Unit, addition: js.Array[T]): js.UndefOr[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("reconcileItems")(reference.asInstanceOf[js.Any], addition.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[T]]]
+    inline def reconcileItems[T /* <: IMenuItem */](reference: Unit, addition: js.Array[T], warn: Boolean): js.UndefOr[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("reconcileItems")(reference.asInstanceOf[js.Any], addition.asInstanceOf[js.Any], warn.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[T]]]
+    inline def reconcileItems[T /* <: IMenuItem */](reference: Unit, addition: js.Array[T], warn: Boolean, addNewItems: Boolean): js.UndefOr[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("reconcileItems")(reference.asInstanceOf[js.Any], addition.asInstanceOf[js.Any], warn.asInstanceOf[js.Any], addNewItems.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[T]]]
+    inline def reconcileItems[T /* <: IMenuItem */](reference: Unit, addition: js.Array[T], warn: Unit, addNewItems: Boolean): js.UndefOr[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("reconcileItems")(reference.asInstanceOf[js.Any], addition.asInstanceOf[js.Any], warn.asInstanceOf[js.Any], addNewItems.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[T]]]
+    inline def reconcileItems[T /* <: IMenuItem */](reference: Unit, addition: Unit, warn: Boolean): js.UndefOr[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("reconcileItems")(reference.asInstanceOf[js.Any], addition.asInstanceOf[js.Any], warn.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[T]]]
+    inline def reconcileItems[T /* <: IMenuItem */](reference: Unit, addition: Unit, warn: Boolean, addNewItems: Boolean): js.UndefOr[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("reconcileItems")(reference.asInstanceOf[js.Any], addition.asInstanceOf[js.Any], warn.asInstanceOf[js.Any], addNewItems.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[T]]]
+    inline def reconcileItems[T /* <: IMenuItem */](reference: Unit, addition: Unit, warn: Unit, addNewItems: Boolean): js.UndefOr[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("reconcileItems")(reference.asInstanceOf[js.Any], addition.asInstanceOf[js.Any], warn.asInstanceOf[js.Any], addNewItems.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[T]]]
+    
+    /**
+      * Reconcile the menus.
+      *
+      * @param reference The reference list of menus.
+      * @param addition The list of menus to add.
+      * @param warn Warn if the command items are duplicated within the same menu.
+      * @returns The reconciled list of menus.
+      */
+    inline def reconcileMenus(): js.Array[IMenu] = ^.asInstanceOf[js.Dynamic].applyDynamic("reconcileMenus")().asInstanceOf[js.Array[IMenu]]
+    inline def reconcileMenus(reference: js.Array[IMenu]): js.Array[IMenu] = ^.asInstanceOf[js.Dynamic].applyDynamic("reconcileMenus")(reference.asInstanceOf[js.Any]).asInstanceOf[js.Array[IMenu]]
+    inline def reconcileMenus(reference: js.Array[IMenu], addition: js.Array[IMenu]): js.Array[IMenu] = (^.asInstanceOf[js.Dynamic].applyDynamic("reconcileMenus")(reference.asInstanceOf[js.Any], addition.asInstanceOf[js.Any])).asInstanceOf[js.Array[IMenu]]
+    inline def reconcileMenus(reference: js.Array[IMenu], addition: js.Array[IMenu], warn: Boolean): js.Array[IMenu] = (^.asInstanceOf[js.Dynamic].applyDynamic("reconcileMenus")(reference.asInstanceOf[js.Any], addition.asInstanceOf[js.Any], warn.asInstanceOf[js.Any])).asInstanceOf[js.Array[IMenu]]
+    inline def reconcileMenus(reference: js.Array[IMenu], addition: js.Array[IMenu], warn: Boolean, addNewItems: Boolean): js.Array[IMenu] = (^.asInstanceOf[js.Dynamic].applyDynamic("reconcileMenus")(reference.asInstanceOf[js.Any], addition.asInstanceOf[js.Any], warn.asInstanceOf[js.Any], addNewItems.asInstanceOf[js.Any])).asInstanceOf[js.Array[IMenu]]
+    inline def reconcileMenus(reference: js.Array[IMenu], addition: js.Array[IMenu], warn: Unit, addNewItems: Boolean): js.Array[IMenu] = (^.asInstanceOf[js.Dynamic].applyDynamic("reconcileMenus")(reference.asInstanceOf[js.Any], addition.asInstanceOf[js.Any], warn.asInstanceOf[js.Any], addNewItems.asInstanceOf[js.Any])).asInstanceOf[js.Array[IMenu]]
+    inline def reconcileMenus(reference: js.Array[IMenu], addition: Null, warn: Boolean): js.Array[IMenu] = (^.asInstanceOf[js.Dynamic].applyDynamic("reconcileMenus")(reference.asInstanceOf[js.Any], addition.asInstanceOf[js.Any], warn.asInstanceOf[js.Any])).asInstanceOf[js.Array[IMenu]]
+    inline def reconcileMenus(reference: js.Array[IMenu], addition: Null, warn: Boolean, addNewItems: Boolean): js.Array[IMenu] = (^.asInstanceOf[js.Dynamic].applyDynamic("reconcileMenus")(reference.asInstanceOf[js.Any], addition.asInstanceOf[js.Any], warn.asInstanceOf[js.Any], addNewItems.asInstanceOf[js.Any])).asInstanceOf[js.Array[IMenu]]
+    inline def reconcileMenus(reference: js.Array[IMenu], addition: Null, warn: Unit, addNewItems: Boolean): js.Array[IMenu] = (^.asInstanceOf[js.Dynamic].applyDynamic("reconcileMenus")(reference.asInstanceOf[js.Any], addition.asInstanceOf[js.Any], warn.asInstanceOf[js.Any], addNewItems.asInstanceOf[js.Any])).asInstanceOf[js.Array[IMenu]]
+    inline def reconcileMenus(reference: Null, addition: js.Array[IMenu]): js.Array[IMenu] = (^.asInstanceOf[js.Dynamic].applyDynamic("reconcileMenus")(reference.asInstanceOf[js.Any], addition.asInstanceOf[js.Any])).asInstanceOf[js.Array[IMenu]]
+    inline def reconcileMenus(reference: Null, addition: js.Array[IMenu], warn: Boolean): js.Array[IMenu] = (^.asInstanceOf[js.Dynamic].applyDynamic("reconcileMenus")(reference.asInstanceOf[js.Any], addition.asInstanceOf[js.Any], warn.asInstanceOf[js.Any])).asInstanceOf[js.Array[IMenu]]
+    inline def reconcileMenus(reference: Null, addition: js.Array[IMenu], warn: Boolean, addNewItems: Boolean): js.Array[IMenu] = (^.asInstanceOf[js.Dynamic].applyDynamic("reconcileMenus")(reference.asInstanceOf[js.Any], addition.asInstanceOf[js.Any], warn.asInstanceOf[js.Any], addNewItems.asInstanceOf[js.Any])).asInstanceOf[js.Array[IMenu]]
+    inline def reconcileMenus(reference: Null, addition: js.Array[IMenu], warn: Unit, addNewItems: Boolean): js.Array[IMenu] = (^.asInstanceOf[js.Dynamic].applyDynamic("reconcileMenus")(reference.asInstanceOf[js.Any], addition.asInstanceOf[js.Any], warn.asInstanceOf[js.Any], addNewItems.asInstanceOf[js.Any])).asInstanceOf[js.Array[IMenu]]
+    inline def reconcileMenus(reference: Null, addition: Null, warn: Boolean): js.Array[IMenu] = (^.asInstanceOf[js.Dynamic].applyDynamic("reconcileMenus")(reference.asInstanceOf[js.Any], addition.asInstanceOf[js.Any], warn.asInstanceOf[js.Any])).asInstanceOf[js.Array[IMenu]]
+    inline def reconcileMenus(reference: Null, addition: Null, warn: Boolean, addNewItems: Boolean): js.Array[IMenu] = (^.asInstanceOf[js.Dynamic].applyDynamic("reconcileMenus")(reference.asInstanceOf[js.Any], addition.asInstanceOf[js.Any], warn.asInstanceOf[js.Any], addNewItems.asInstanceOf[js.Any])).asInstanceOf[js.Array[IMenu]]
+    inline def reconcileMenus(reference: Null, addition: Null, warn: Unit, addNewItems: Boolean): js.Array[IMenu] = (^.asInstanceOf[js.Dynamic].applyDynamic("reconcileMenus")(reference.asInstanceOf[js.Any], addition.asInstanceOf[js.Any], warn.asInstanceOf[js.Any], addNewItems.asInstanceOf[js.Any])).asInstanceOf[js.Array[IMenu]]
+    
+    /**
       * Reconcile default and user shortcuts and return the composite list.
       *
       * @param defaults - The list of default shortcuts.
@@ -245,6 +306,23 @@ object settingregistryMod {
       * @returns A loadable list of shortcuts (omitting disabled and overridden).
       */
     inline def reconcileShortcuts(defaults: js.Array[IShortcut], user: js.Array[IShortcut]): js.Array[IShortcut] = (^.asInstanceOf[js.Dynamic].applyDynamic("reconcileShortcuts")(defaults.asInstanceOf[js.Any], user.asInstanceOf[js.Any])).asInstanceOf[js.Array[IShortcut]]
+    
+    /**
+      * Merge two set of toolbar items.
+      *
+      * @param reference Reference set of toolbar items
+      * @param addition New items to add
+      * @param warn Whether to warn if item is duplicated; default to false
+      * @returns The merged set of items
+      */
+    inline def reconcileToolbarItems(): js.UndefOr[js.Array[IToolbarItem]] = ^.asInstanceOf[js.Dynamic].applyDynamic("reconcileToolbarItems")().asInstanceOf[js.UndefOr[js.Array[IToolbarItem]]]
+    inline def reconcileToolbarItems(reference: js.Array[IToolbarItem]): js.UndefOr[js.Array[IToolbarItem]] = ^.asInstanceOf[js.Dynamic].applyDynamic("reconcileToolbarItems")(reference.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Array[IToolbarItem]]]
+    inline def reconcileToolbarItems(reference: js.Array[IToolbarItem], addition: js.Array[IToolbarItem]): js.UndefOr[js.Array[IToolbarItem]] = (^.asInstanceOf[js.Dynamic].applyDynamic("reconcileToolbarItems")(reference.asInstanceOf[js.Any], addition.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[IToolbarItem]]]
+    inline def reconcileToolbarItems(reference: js.Array[IToolbarItem], addition: js.Array[IToolbarItem], warn: Boolean): js.UndefOr[js.Array[IToolbarItem]] = (^.asInstanceOf[js.Dynamic].applyDynamic("reconcileToolbarItems")(reference.asInstanceOf[js.Any], addition.asInstanceOf[js.Any], warn.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[IToolbarItem]]]
+    inline def reconcileToolbarItems(reference: js.Array[IToolbarItem], addition: Unit, warn: Boolean): js.UndefOr[js.Array[IToolbarItem]] = (^.asInstanceOf[js.Dynamic].applyDynamic("reconcileToolbarItems")(reference.asInstanceOf[js.Any], addition.asInstanceOf[js.Any], warn.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[IToolbarItem]]]
+    inline def reconcileToolbarItems(reference: Unit, addition: js.Array[IToolbarItem]): js.UndefOr[js.Array[IToolbarItem]] = (^.asInstanceOf[js.Dynamic].applyDynamic("reconcileToolbarItems")(reference.asInstanceOf[js.Any], addition.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[IToolbarItem]]]
+    inline def reconcileToolbarItems(reference: Unit, addition: js.Array[IToolbarItem], warn: Boolean): js.UndefOr[js.Array[IToolbarItem]] = (^.asInstanceOf[js.Dynamic].applyDynamic("reconcileToolbarItems")(reference.asInstanceOf[js.Any], addition.asInstanceOf[js.Any], warn.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[IToolbarItem]]]
+    inline def reconcileToolbarItems(reference: Unit, addition: Unit, warn: Boolean): js.UndefOr[js.Array[IToolbarItem]] = (^.asInstanceOf[js.Dynamic].applyDynamic("reconcileToolbarItems")(reference.asInstanceOf[js.Any], addition.asInstanceOf[js.Any], warn.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[IToolbarItem]]]
     
     /**
       * The instantiation options for a setting registry
@@ -291,7 +369,7 @@ object settingregistryMod {
         
         inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
         
-        inline def setPluginsVarargs(value: IPlugin*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+        inline def setPluginsVarargs(value: IPlugin*): Self = StObject.set(x, "plugins", js.Array(value*))
         
         inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
         
@@ -306,7 +384,7 @@ object settingregistryMod {
   
   @JSImport("@jupyterlab/settingregistry/lib/settingregistry", "Settings")
   @js.native
-  class Settings protected ()
+  open class Settings protected ()
     extends StObject
        with ISettings {
     /**
@@ -321,17 +399,25 @@ object settingregistryMod {
       *
       * @returns A calculated default JSON value for a specific setting.
       */
+    def default(): js.UndefOr[PartialJSONValue] = js.native
+    /**
+      * Calculate the default value of a setting by iterating through the schema.
+      *
+      * @param key - The name of the setting whose default value is calculated.
+      *
+      * @returns A calculated default JSON value for a specific setting.
+      */
     /* CompleteClass */
     override def default(key: String): js.UndefOr[PartialJSONValue] = js.native
     
-    /* private */ var _changed: js.Any = js.native
+    /* private */ var _changed: Any = js.native
     
-    /* private */ var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: Any = js.native
     
     /**
       * Handle plugin changes in the setting registry.
       */
-    /* private */ var _onPluginChanged: js.Any = js.native
+    /* private */ var _onPluginChanged: Any = js.native
     
     /**
       * Return the defaults in a commented JSON format.
@@ -392,6 +478,11 @@ object settingregistryMod {
     override val id: String = js.native
     
     /**
+      * Checks if any fields are different from the default value.
+      */
+    def isDefault(user: ReadonlyPartialJSONObject): Boolean = js.native
+    
+    /**
       * Test whether the object has been disposed.
       *
       * #### Notes
@@ -404,6 +495,8 @@ object settingregistryMod {
       */
     @JSName("isDisposed")
     def isDisposed_MSettings: Boolean = js.native
+    
+    def isModified: Boolean = js.native
     
     /* CompleteClass */
     override val plugin: IPlugin = js.native

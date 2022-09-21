@@ -7,7 +7,6 @@ import typings.koa.mod.Middleware
 import typings.koaBouncer.anon.Ctx
 import typings.koaBouncer.anon.Key
 import typings.std.Error
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,40 +19,42 @@ object mod {
   
   @JSImport("koa-bouncer", "ValidationError")
   @js.native
-  class ValidationError protected ()
+  open class ValidationError protected ()
     extends StObject
        with Error {
     def this(key: String, message: String) = this()
     
     var bouncer: Key = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("koa-bouncer", "Validator")
   @js.native
-  class Validator protected () extends StObject {
+  open class Validator protected () extends StObject {
     def this(props: Ctx) = this()
     
-    def check(result: js.Any): Validator = js.native
-    def check(result: js.Any, tip: String): Validator = js.native
+    def check(result: Any): Validator = js.native
+    def check(result: Any, tip: String): Validator = js.native
     
-    def checkNot(result: js.Any): Validator = js.native
-    def checkNot(result: js.Any, tip: String): Validator = js.native
+    def checkNot(result: Any): Validator = js.native
+    def checkNot(result: Any, tip: String): Validator = js.native
     
-    def checkNotPred(pred: js.Any): Validator = js.native
-    def checkNotPred(pred: js.Any, tip: String): Validator = js.native
+    def checkNotPred(pred: Any): Validator = js.native
+    def checkNotPred(pred: Any, tip: String): Validator = js.native
     
-    def checkPred(pred: js.Any): Validator = js.native
-    def checkPred(pred: js.Any, tip: String): Validator = js.native
+    def checkPred(pred: Any): Validator = js.native
+    def checkPred(pred: Any, tip: String): Validator = js.native
     
     def clamp(min: Double, max: Double): Validator = js.native
     
-    def defaultTo(valueOrFunction: js.Any): Validator = js.native
+    def defaultTo(valueOrFunction: Any): Validator = js.native
     
     def encodeBase64(): Validator = js.native
     def encodeBase64(tip: String): Validator = js.native
@@ -94,8 +95,8 @@ object mod {
     def isHexColor(): Validator = js.native
     def isHexColor(tip: String): Validator = js.native
     
-    def isIn(arr: js.Array[js.Any]): Validator = js.native
-    def isIn(arr: js.Array[js.Any], tip: String): Validator = js.native
+    def isIn(arr: js.Array[Any]): Validator = js.native
+    def isIn(arr: js.Array[Any], tip: String): Validator = js.native
     
     def isInt(): Validator = js.native
     def isInt(tip: String): Validator = js.native
@@ -106,8 +107,8 @@ object mod {
     def isLength(min: Double, max: Double): Validator = js.native
     def isLength(min: Double, max: Double, tip: String): Validator = js.native
     
-    def isNotIn(arr: js.Array[js.Any]): Validator = js.native
-    def isNotIn(arr: js.Array[js.Any], tip: String): Validator = js.native
+    def isNotIn(arr: js.Array[Any]): Validator = js.native
+    def isNotIn(arr: js.Array[Any], tip: String): Validator = js.native
     
     def isNumeric(): Validator = js.native
     def isNumeric(tip: String): Validator = js.native
@@ -124,19 +125,19 @@ object mod {
     def lte(otherVal: Double): Validator = js.native
     def lte(otherVal: Double, tip: String): Validator = js.native
     
-    def `match`(regexp: RegExp): Validator = js.native
-    def `match`(regexp: RegExp, tip: String): Validator = js.native
+    def `match`(regexp: js.RegExp): Validator = js.native
+    def `match`(regexp: js.RegExp, tip: String): Validator = js.native
     
-    def notMatch(regexp: RegExp): Validator = js.native
-    def notMatch(regexp: RegExp, tip: String): Validator = js.native
+    def notMatch(regexp: js.RegExp): Validator = js.native
+    def notMatch(regexp: js.RegExp, tip: String): Validator = js.native
     
     def optional(): Validator = js.native
     
     def required(): Validator = js.native
     def required(tip: String): Validator = js.native
     
-    def tap(f: js.Function1[/* arg */ js.Any, js.Any]): Validator = js.native
-    def tap(f: js.Function1[/* arg */ js.Any, js.Any], tip: String): Validator = js.native
+    def tap(f: js.Function1[/* arg */ Any, Any]): Validator = js.native
+    def tap(f: js.Function1[/* arg */ Any, Any], tip: String): Validator = js.native
     
     def toArray(): Validator = js.native
     
@@ -172,16 +173,16 @@ object mod {
   
   inline def isSafeInteger(n: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSafeInteger")(n.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def middleware(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("middleware")().asInstanceOf[Middleware[DefaultState, DefaultContext]]
-  inline def middleware(opts: MiddlewareOption): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(opts.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def middleware(): Middleware[DefaultState, DefaultContext, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("middleware")().asInstanceOf[Middleware[DefaultState, DefaultContext, Any]]
+  inline def middleware(opts: MiddlewareOption): Middleware[DefaultState, DefaultContext, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(opts.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext, Any]]
   
   trait MiddlewareOption extends StObject {
     
-    var getBody: js.UndefOr[js.Function1[/* ctx */ Context, js.Any]] = js.undefined
+    var getBody: js.UndefOr[js.Function1[/* ctx */ Context, Any]] = js.undefined
     
-    var getParams: js.UndefOr[js.Function1[/* ctx */ Context, js.Any]] = js.undefined
+    var getParams: js.UndefOr[js.Function1[/* ctx */ Context, Any]] = js.undefined
     
-    var getQuery: js.UndefOr[js.Function1[/* ctx */ Context, js.Any]] = js.undefined
+    var getQuery: js.UndefOr[js.Function1[/* ctx */ Context, Any]] = js.undefined
   }
   object MiddlewareOption {
     
@@ -192,15 +193,15 @@ object mod {
     
     extension [Self <: MiddlewareOption](x: Self) {
       
-      inline def setGetBody(value: /* ctx */ Context => js.Any): Self = StObject.set(x, "getBody", js.Any.fromFunction1(value))
+      inline def setGetBody(value: /* ctx */ Context => Any): Self = StObject.set(x, "getBody", js.Any.fromFunction1(value))
       
       inline def setGetBodyUndefined: Self = StObject.set(x, "getBody", js.undefined)
       
-      inline def setGetParams(value: /* ctx */ Context => js.Any): Self = StObject.set(x, "getParams", js.Any.fromFunction1(value))
+      inline def setGetParams(value: /* ctx */ Context => Any): Self = StObject.set(x, "getParams", js.Any.fromFunction1(value))
       
       inline def setGetParamsUndefined: Self = StObject.set(x, "getParams", js.undefined)
       
-      inline def setGetQuery(value: /* ctx */ Context => js.Any): Self = StObject.set(x, "getQuery", js.Any.fromFunction1(value))
+      inline def setGetQuery(value: /* ctx */ Context => Any): Self = StObject.set(x, "getQuery", js.Any.fromFunction1(value))
       
       inline def setGetQueryUndefined: Self = StObject.set(x, "getQuery", js.undefined)
     }
@@ -212,11 +213,11 @@ object mod {
     @js.native
     trait Context extends StObject {
       
-      def check(result: js.Any): Unit = js.native
-      def check(result: js.Any, tip: String): Unit = js.native
+      def check(result: Any): Unit = js.native
+      def check(result: Any, tip: String): Unit = js.native
       
-      def checkNot(result: js.Any): Validator = js.native
-      def checkNot(result: js.Any, tip: String): Validator = js.native
+      def checkNot(result: Any): Validator = js.native
+      def checkNot(result: Any, tip: String): Validator = js.native
       
       def validateBody(key: String): Validator = js.native
       
@@ -224,7 +225,7 @@ object mod {
       
       def validateQuery(key: String): Validator = js.native
       
-      var vals: js.Any = js.native
+      var vals: Any = js.native
     }
   }
 }

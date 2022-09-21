@@ -5,38 +5,39 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DateFileAppender
-  extends StObject
-     with Appender {
+trait DateFileAppender extends StObject {
   
-  // include the pattern in the name of the current log file as well as the backups.(default false)
+  // (defaults to false) include the pattern in the name of the current log file.
   var alwaysIncludePattern: js.UndefOr[Boolean] = js.undefined
   
-  // compress the backup files during rolling (backup files will have .gz extension)(default false)
+  // (defaults to false) compress the backup files using gzip (backup files will have .gz extension)
   var compress: js.UndefOr[Boolean] = js.undefined
   
-  // if this value is greater than zero, then files older than that many days will be deleted during log rolling.(default 0)
-  var daysToKeep: js.UndefOr[Double] = js.undefined
-  
-  // default “utf-8”
+  // (defaults to utf-8)
   var encoding: js.UndefOr[String] = js.undefined
+  
+  // (defaults to .) the filename separator when rolling. e.g.: abc.log`.`2013-08-30 or abc`.`2013-08-30.log (keepFileExt)
+  var fileNameSep: js.UndefOr[String] = js.undefined
   
   // the path of the file where you want your logs written.
   var filename: String
   
-  // default ‘a’
+  // (defaults to a)
   var flags: js.UndefOr[String] = js.undefined
   
-  // keep the file extension when rotating logs
+  // (defaults to false) preserve the file extension when rotating log files (`file.log` becomes `file.2017-05-30.log` instead of `file.log.2017-05-30`).
   var keepFileExt: js.UndefOr[Boolean] = js.undefined
   
-  // defaults to basic layout
+  // (defaults to BasicLayout)
   var layout: js.UndefOr[Layout] = js.undefined
   
-  // default 0644
+  // (defaults to 0o600)
   var mode: js.UndefOr[Double] = js.undefined
   
-  // defaults to .yyyy-MM-dd - the pattern to use to determine when to roll the logs.
+  // (defaults to 1) the number of old files that matches the pattern to keep (excluding the hot file).
+  var numBackups: js.UndefOr[Double] = js.undefined
+  
+  // (defaults to yyyy-MM-dd) the pattern to use to determine when to roll the logs.
   /**
     * The following strings are recognised in the pattern:
     *  - yyyy : the full year, use yy for just the last two digits
@@ -70,13 +71,13 @@ object DateFileAppender {
     
     inline def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
     
-    inline def setDaysToKeep(value: Double): Self = StObject.set(x, "daysToKeep", value.asInstanceOf[js.Any])
-    
-    inline def setDaysToKeepUndefined: Self = StObject.set(x, "daysToKeep", js.undefined)
-    
     inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
     inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    
+    inline def setFileNameSep(value: String): Self = StObject.set(x, "fileNameSep", value.asInstanceOf[js.Any])
+    
+    inline def setFileNameSepUndefined: Self = StObject.set(x, "fileNameSep", js.undefined)
     
     inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
@@ -95,6 +96,10 @@ object DateFileAppender {
     inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
     inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    
+    inline def setNumBackups(value: Double): Self = StObject.set(x, "numBackups", value.asInstanceOf[js.Any])
+    
+    inline def setNumBackupsUndefined: Self = StObject.set(x, "numBackups", js.undefined)
     
     inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     

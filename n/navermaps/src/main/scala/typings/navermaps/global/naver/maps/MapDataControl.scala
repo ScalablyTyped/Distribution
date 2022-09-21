@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("naver.maps.MapDataControl")
 @js.native
-class MapDataControl protected ()
+open class MapDataControl protected ()
   extends StObject
      with typings.navermaps.naver.maps.CustomControl {
   def this(MapDataControlOptions: typings.navermaps.naver.maps.MapDataControlOptions) = this()

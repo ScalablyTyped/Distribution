@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-plotly_dot_js
 
-Typings are for version 2.2
+Typings are for version 2.5
 
 ## Library description:
 A plotly.js react component from Plotly
@@ -10,10 +10,10 @@ A plotly.js react component from Plotly
 | ------------------ | :-------------: |
 | Full name          | react-plotly.js |
 | Keywords           | graphing, plotting, data, visualization, plotly, react |
-| # releases         | 5 |
-| # dependents       | 40 |
-| # downloads        | 1890220 |
-| # stars            | 1 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 393749.3333333333 |
+| # stars            | 855.0 |
 
 ## Links
 - [Homepage](https://github.com/plotly/react-plotly.js#readme)

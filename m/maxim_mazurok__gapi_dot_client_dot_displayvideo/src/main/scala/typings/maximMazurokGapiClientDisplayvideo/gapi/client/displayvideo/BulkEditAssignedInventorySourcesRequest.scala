@@ -35,13 +35,13 @@ object BulkEditAssignedInventorySourcesRequest {
     
     inline def setCreatedAssignedInventorySourcesUndefined: Self = StObject.set(x, "createdAssignedInventorySources", js.undefined)
     
-    inline def setCreatedAssignedInventorySourcesVarargs(value: AssignedInventorySource*): Self = StObject.set(x, "createdAssignedInventorySources", js.Array(value :_*))
+    inline def setCreatedAssignedInventorySourcesVarargs(value: AssignedInventorySource*): Self = StObject.set(x, "createdAssignedInventorySources", js.Array(value*))
     
     inline def setDeletedAssignedInventorySources(value: js.Array[String]): Self = StObject.set(x, "deletedAssignedInventorySources", value.asInstanceOf[js.Any])
     
     inline def setDeletedAssignedInventorySourcesUndefined: Self = StObject.set(x, "deletedAssignedInventorySources", js.undefined)
     
-    inline def setDeletedAssignedInventorySourcesVarargs(value: String*): Self = StObject.set(x, "deletedAssignedInventorySources", js.Array(value :_*))
+    inline def setDeletedAssignedInventorySourcesVarargs(value: String*): Self = StObject.set(x, "deletedAssignedInventorySources", js.Array(value*))
     
     inline def setPartnerId(value: String): Self = StObject.set(x, "partnerId", value.asInstanceOf[js.Any])
     

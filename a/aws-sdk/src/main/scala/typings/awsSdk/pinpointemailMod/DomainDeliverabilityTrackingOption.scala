@@ -19,7 +19,7 @@ trait DomainDeliverabilityTrackingOption extends StObject {
   /**
     * The date, in Unix time format, when you enabled the Deliverability dashboard for the domain.
     */
-  var SubscriptionStartDate: js.UndefOr[Timestamp] = js.undefined
+  var SubscriptionStartDate: js.UndefOr[js.Date] = js.undefined
 }
 object DomainDeliverabilityTrackingOption {
   
@@ -38,7 +38,7 @@ object DomainDeliverabilityTrackingOption {
     
     inline def setInboxPlacementTrackingOptionUndefined: Self = StObject.set(x, "InboxPlacementTrackingOption", js.undefined)
     
-    inline def setSubscriptionStartDate(value: Timestamp): Self = StObject.set(x, "SubscriptionStartDate", value.asInstanceOf[js.Any])
+    inline def setSubscriptionStartDate(value: js.Date): Self = StObject.set(x, "SubscriptionStartDate", value.asInstanceOf[js.Any])
     
     inline def setSubscriptionStartDateUndefined: Self = StObject.set(x, "SubscriptionStartDate", js.undefined)
   }

@@ -12,7 +12,7 @@ object global {
   /**
     * @param options A set of options to use. Any options not specified will assume default values.
     */
-  class PayPalConfiguration ()
+  open class PayPalConfiguration ()
     extends StObject
        with typings.paypalCordovaPlugin.PayPalConfiguration {
     def this(options: PayPalConfigurationOptions) = this()
@@ -158,7 +158,7 @@ object global {
   
   @JSGlobal("PayPalItem")
   @js.native
-  class PayPalItem protected ()
+  open class PayPalItem protected ()
     extends StObject
        with typings.paypalCordovaPlugin.PayPalItem {
     /**
@@ -214,7 +214,7 @@ object global {
     */
   @JSGlobal("PayPalPayment")
   @js.native
-  class PayPalPayment protected ()
+  open class PayPalPayment protected ()
     extends StObject
        with typings.paypalCordovaPlugin.PayPalPayment {
     /**
@@ -314,7 +314,7 @@ object global {
     */
   @JSGlobal("PayPalPaymentDetails")
   @js.native
-  class PayPalPaymentDetails protected ()
+  open class PayPalPaymentDetails protected ()
     extends StObject
        with typings.paypalCordovaPlugin.PayPalPaymentDetails {
     /**
@@ -345,7 +345,7 @@ object global {
   
   @JSGlobal("PayPalShippingAddress")
   @js.native
-  class PayPalShippingAddress protected ()
+  open class PayPalShippingAddress protected ()
     extends StObject
        with typings.paypalCordovaPlugin.PayPalShippingAddress {
     /**

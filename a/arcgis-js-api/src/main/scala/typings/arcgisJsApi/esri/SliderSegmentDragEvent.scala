@@ -33,7 +33,7 @@ object SliderSegmentDragEvent {
     
     inline def setThumbIndices(value: js.Array[Double]): Self = StObject.set(x, "thumbIndices", value.asInstanceOf[js.Any])
     
-    inline def setThumbIndicesVarargs(value: Double*): Self = StObject.set(x, "thumbIndices", js.Array(value :_*))
+    inline def setThumbIndicesVarargs(value: Double*): Self = StObject.set(x, "thumbIndices", js.Array(value*))
     
     inline def setType(value: `segment-drag`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

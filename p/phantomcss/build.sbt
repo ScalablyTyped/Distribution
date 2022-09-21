@@ -1,14 +1,15 @@
 organization := "org.scalablytyped"
 name := "phantomcss"
-version := "0.11.1-dt-20201002Z-948586"
-scalaVersion := "3.0.1"
+version := "0.11.1-dt-20220818Z-5c948a"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "casperjs" % "1.1-dt-20200515Z-908724",
-  "org.scalablytyped" %%% "phantomjs" % "1.9-dt-20201002Z-87adfd",
-  "org.scalablytyped" %%% "resemblejs" % "v1.3.0-dt-20201002Z-6b8b89",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
+  "org.scalablytyped" %%% "casperjs" % "1.1-dt-20211202Z-397949",
+  "org.scalablytyped" %%% "node" % "18.7-dt-20220913Z-77cc8d",
+  "org.scalablytyped" %%% "phantomjs" % "1.9-dt-20211223Z-b816ee",
+  "org.scalablytyped" %%% "resemblejs" % "v4.1.0-dt-20220818Z-68652b",
+  "org.scalablytyped" %%% "std" % "4.8-958c79")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

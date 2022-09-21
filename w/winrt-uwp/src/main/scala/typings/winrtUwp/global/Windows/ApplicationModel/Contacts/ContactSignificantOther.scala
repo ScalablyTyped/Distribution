@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactSignificantOther")
 @js.native
 /** Initializes a new instance of a ContactSignificantOther class. */
-class ContactSignificantOther ()
+open class ContactSignificantOther ()
   extends StObject
      with typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactSignificantOther {
   

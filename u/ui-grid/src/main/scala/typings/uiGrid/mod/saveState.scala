@@ -210,14 +210,14 @@ object saveState {
     // Methods
     /**
       * Restores the provided state into the grid
-      * @param {ng.IScope} $scope A scope we can broadcast on
-      * @param {IGridSavedState} state The state that should ve restored into the grid
+      * @param $scope A scope we can broadcast on
+      * @param state The state that should ve restored into the grid
       */
     def restore($scope: IScope, state: IGridSavedState): Unit
     
     /**
       * Packages the current state of the grid into an object, and provides it to the user for saving
-      * @returns {IGridSavedState} Current grid state as a POJO
+      * @returns Current grid state as a POJO
       */
     def save(): IGridSavedState
   }
@@ -261,7 +261,7 @@ object saveState {
       
       inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      inline def setColumnsVarargs(value: ISavedColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: ISavedColumn*): Self = StObject.set(x, "columns", js.Array(value*))
       
       inline def setGrouping(value: IGridGroupingConfiguration): Self = StObject.set(x, "grouping", value.asInstanceOf[js.Any])
       
@@ -271,7 +271,7 @@ object saveState {
       
       inline def setSelection(value: js.Array[IRowVal]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
       
-      inline def setSelectionVarargs(value: IRowVal*): Self = StObject.set(x, "selection", js.Array(value :_*))
+      inline def setSelectionVarargs(value: IRowVal*): Self = StObject.set(x, "selection", js.Array(value*))
       
       inline def setTreeView(value: ITreeState): Self = StObject.set(x, "treeView", value.asInstanceOf[js.Any])
     }
@@ -281,11 +281,11 @@ object saveState {
     
     var identity: Boolean
     
-    var row: Double | js.Any
+    var row: Double | Any
   }
   object IRowVal {
     
-    inline def apply(identity: Boolean, row: Double | js.Any): IRowVal = {
+    inline def apply(identity: Boolean, row: Double | Any): IRowVal = {
       val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
       __obj.asInstanceOf[IRowVal]
     }
@@ -294,7 +294,7 @@ object saveState {
       
       inline def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
-      inline def setRow(value: Double | js.Any): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      inline def setRow(value: Double | Any): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     }
   }
   
@@ -325,7 +325,7 @@ object saveState {
       
       inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      inline def setFiltersVarargs(value: IFilterOptions*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: IFilterOptions*): Self = StObject.set(x, "filters", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

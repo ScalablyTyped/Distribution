@@ -1,17 +1,17 @@
 package typings.matterJs.mod
 
-import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matter-js", "Engine")
 @js.native
-class Engine () extends StObject {
+open class Engine () extends StObject {
   
   /**
-    * An instance of a broadphase controller. The default value is a `Matter.Grid` instance created by `Engine.create`.
+    * Replaced by and now alias for `engine.grid`.
     *
+    * @deprecated use `engine.grid`
     * @property broadphase
     * @type grid
     * @default a Matter.Grid instance
@@ -24,17 +24,26 @@ class Engine () extends StObject {
     * The default value of `2` is usually very adequate.
     *
     * @property constraintIterations
-    * @type number
+    * @type {number}
     * @default 2
     */
   var constraintIterations: Double = js.native
+  
+  /**
+    * A `Matter.Detector` instance.
+    *
+    * @property detector
+    * @type {Detector}
+    * @default {Matter.Detector} instance
+    */
+  var detector: Detector = js.native
   
   /**
     * A flag that specifies whether the engine should allow sleeping via the `Matter.Sleeping` module.
     * Sleeping can improve stability and performance, but often at the expense of accuracy.
     *
     * @property enableSleeping
-    * @type boolean
+    * @type {boolean}
     * @default false
     */
   var enableSleeping: Boolean = js.native
@@ -45,16 +54,34 @@ class Engine () extends StObject {
   var enabled: Boolean = js.native
   
   /**
+    * The gravity to apply on all bodies in `engine.world`.
+    *
+    * @property gravity
+    * @type {Gravity}
+    */
+  var gravity: Gravity = js.native
+  
+  /**
+    * A `Matter.Grid` instance.
+    *
+    * @deprecated replaced by `engine.detector`
+    * @property grid
+    * @type grid
+    * @default a Matter.Grid instance
+    */
+  var grid: Grid = js.native
+  
+  /**
     * Collision pair set for this `Engine`.
     */
-  var pairs: js.Any = js.native
+  var pairs: Any = js.native
   
   /**
     * An integer `Number` that specifies the number of position iterations to perform each update.
     * The higher the value, the higher quality the simulation will be at the expense of performance.
     *
     * @property positionIterations
-    * @type number
+    * @type {number}
     * @default 6
     */
   var positionIterations: Double = js.native
@@ -76,7 +103,7 @@ class Engine () extends StObject {
     * An `Object` containing properties regarding the timing systems of the engine.
     *
     * @property timing
-    * @type object
+    * @type {IEngineTimingOptions}
     */
   var timing: IEngineTimingOptions = js.native
   
@@ -85,7 +112,7 @@ class Engine () extends StObject {
     * The higher the value, the higher quality the simulation will be at the expense of performance.
     *
     * @property velocityIterations
-    * @type number
+    * @type {number}
     * @default 4
     */
   var velocityIterations: Double = js.native
@@ -107,7 +134,7 @@ object Engine {
   val ^ : js.Any = js.native
   
   /**
-    * Clears the engine including the world, pairs and broadphase.
+    * Clears the engine pairs and detector.
     * @method clear
     * @param {engine} engine
     */
@@ -118,26 +145,11 @@ object Engine {
     * All properties have default values, and many are pre-calculated automatically based on other properties.
     * See the properties section below for detailed information on what you can pass via the `options` object.
     * @method create
-    * @param {HTMLElement} element
-    * @param {object} [options]
-    * @return {engine} engine
-    * @deprecated
-    */
-  /**
-    * Creates a new engine. The options parameter is an object that specifies any properties you wish to override the defaults.
-    * All properties have default values, and many are pre-calculated automatically based on other properties.
-    * See the properties section below for detailed information on what you can pass via the `options` object.
-    * @method create
-    * @param {object} [options]
-    * @return {engine} engine
-    * @deprecated
+    * @param {IEngineDefinition} [options]
+    * @returns {Engine} engine
     */
   inline def create(): Engine = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Engine]
-  inline def create(element: Unit, options: IEngineDefinition): Engine = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Engine]
-  inline def create(element: IEngineDefinition): Engine = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any]).asInstanceOf[Engine]
-  inline def create(element: IEngineDefinition, options: IEngineDefinition): Engine = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Engine]
-  inline def create(element: HTMLElement): Engine = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any]).asInstanceOf[Engine]
-  inline def create(element: HTMLElement, options: IEngineDefinition): Engine = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Engine]
+  inline def create(options: IEngineDefinition): Engine = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[Engine]
   
   /**
     * Merges two engines by keeping the configuration of `engineA` but replacing the world with the one from `engineB`.
@@ -148,7 +160,8 @@ object Engine {
   inline def merge(engineA: Engine, engineB: Engine): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(engineA.asInstanceOf[js.Any], engineB.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
-    * An alias for `Runner.run`, see `Matter.Runner` for more information.
+    * A deprecated alias for `Runner.run`, use `Matter.Runner.run(engine)` instead and see `Matter.Runner` for more information.
+    * @deprecated use Matter.Runner.run(engine) instead
     * @method run
     * @param {engine} engine
     */

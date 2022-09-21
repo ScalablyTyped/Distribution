@@ -10,9 +10,8 @@ trait Path2D
   extends StObject
      with CanvasPath {
   
-  /**
-    * Adds to the path the path given by the argument.
-    */
+  /** Adds to the path the path given by the argument. */
+  /* standard dom */
   def addPath(path: Path2D): Unit = js.native
   def addPath(path: Path2D, transform: DOMMatrix2DInit): Unit = js.native
 }

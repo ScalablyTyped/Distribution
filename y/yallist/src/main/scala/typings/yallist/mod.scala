@@ -13,7 +13,7 @@ object mod {
   
   @JSImport("yallist", JSImport.Namespace)
   @js.native
-  class ^[T] ()
+  open class ^[T] ()
     extends StObject
        with Yallist[T] {
     def this(items: T*) = this()
@@ -61,7 +61,7 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("yallist", "Node")
   @js.native
-  class NodeCls[T] protected ()
+  open class NodeCls[T] protected ()
     extends StObject
        with Node[T] {
     def this(value: T) = this()
@@ -86,7 +86,7 @@ object mod {
   /* static member */
   inline def create[T](): Yallist[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Yallist[T]]
   /* static member */
-  inline def create[T](items: T*): Yallist[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(items.asInstanceOf[js.Any]).asInstanceOf[Yallist[T]]
+  inline def create[T](items: T*): Yallist[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(items.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Yallist[T]]
   /* static member */
   inline def create[T](list: ForEachIterable[T]): Yallist[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(list.asInstanceOf[js.Any]).asInstanceOf[Yallist[T]]
   
@@ -204,6 +204,8 @@ object mod {
     def sliceReverse(from: Double): Yallist[T] = js.native
     def sliceReverse(from: Double, to: Double): Yallist[T] = js.native
     def sliceReverse(from: Unit, to: Double): Yallist[T] = js.native
+    
+    def splice(start: Double, deleteCount: Double, nodes: T*): js.Array[T] = js.native
     
     var tail: Node[T] | Null = js.native
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SharedWorkspaceLink extends StObject {
   
-  val Application: js.Any
+  val Application: Any
   
   val CreatedBy: String
   
@@ -28,7 +28,7 @@ trait SharedWorkspaceLink extends StObject {
   /* private */ @JSName("Office.SharedWorkspaceLink_typekey")
   var OfficeDotSharedWorkspaceLink_typekey: SharedWorkspaceLink
   
-  val Parent: js.Any
+  val Parent: Any
   
   def Save(): Unit
   
@@ -37,7 +37,7 @@ trait SharedWorkspaceLink extends StObject {
 object SharedWorkspaceLink {
   
   inline def apply(
-    Application: js.Any,
+    Application: Any,
     CreatedBy: String,
     CreatedDate: VarDate,
     Creator: Double,
@@ -47,7 +47,7 @@ object SharedWorkspaceLink {
     ModifiedDate: VarDate,
     Notes: String,
     OfficeDotSharedWorkspaceLink_typekey: SharedWorkspaceLink,
-    Parent: js.Any,
+    Parent: Any,
     Save: () => Unit,
     URL: String
   ): SharedWorkspaceLink = {
@@ -58,7 +58,7 @@ object SharedWorkspaceLink {
   
   extension [Self <: SharedWorkspaceLink](x: Self) {
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setCreatedBy(value: String): Self = StObject.set(x, "CreatedBy", value.asInstanceOf[js.Any])
     
@@ -78,7 +78,7 @@ object SharedWorkspaceLink {
     
     inline def setOfficeDotSharedWorkspaceLink_typekey(value: SharedWorkspaceLink): Self = StObject.set(x, "Office.SharedWorkspaceLink_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSave(value: () => Unit): Self = StObject.set(x, "Save", js.Any.fromFunction0(value))
     

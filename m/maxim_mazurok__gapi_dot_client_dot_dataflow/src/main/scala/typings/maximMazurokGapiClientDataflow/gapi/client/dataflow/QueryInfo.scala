@@ -22,6 +22,6 @@ object QueryInfo {
     
     inline def setQueryPropertyUndefined: Self = StObject.set(x, "queryProperty", js.undefined)
     
-    inline def setQueryPropertyVarargs(value: String*): Self = StObject.set(x, "queryProperty", js.Array(value :_*))
+    inline def setQueryPropertyVarargs(value: String*): Self = StObject.set(x, "queryProperty", js.Array(value*))
   }
 }

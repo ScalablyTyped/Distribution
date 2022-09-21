@@ -5,9 +5,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.express.mod.NextFunction
 import typings.express.mod.Request_
 import typings.express.mod.Response_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.nodeRal.anon.App
 import typings.nodeRal.mod.Balance.BalanceContextClass
@@ -24,6 +22,7 @@ import typings.nodeRal.nodeRalStrings.random
 import typings.nodeRal.nodeRalStrings.redis
 import typings.nodeRal.nodeRalStrings.roundrobin
 import typings.nodeRal.nodeRalStrings.soap
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,9 +37,9 @@ object mod {
   @js.native
   abstract class Balance () extends StObject {
     
-    def fetchServer(balanceContext: BalanceContextClass, conf: js.Any, prevBackend: Server): Server = js.native
+    def fetchServer(balanceContext: BalanceContextClass, conf: Any, prevBackend: Server): Server = js.native
     
-    def getCategory(): js.Any = js.native
+    def getCategory(): Any = js.native
     
     def getContextClass(): BalanceContextConstructor = js.native
   }
@@ -57,7 +56,7 @@ object mod {
     
     @JSImport("node-ral", "Balance.BalanceContextClass")
     @js.native
-    class BalanceContextClass protected () extends StObject {
+    open class BalanceContextClass protected () extends StObject {
       def this(serviceID: String, service: Service) = this()
       
       var crossIDCServers: js.Array[String] = js.native
@@ -79,7 +78,7 @@ object mod {
     
     def disableUpdate(): Unit = js.native
     
-    def enableUpdate(interval: Double, all: Boolean, cb: js.Function2[/* err */ js.Any, /* confs */ js.Any, js.Any]): Unit = js.native
+    def enableUpdate(interval: Double, all: Boolean, cb: js.Function2[/* err */ Any, /* confs */ Any, Any]): Unit = js.native
     
     def getConf(name: String): Service = js.native
     
@@ -88,9 +87,9 @@ object mod {
     def getContext(serviceID: String): Service = js.native
     def getContext(serviceID: String, options: Service): Service = js.native
     
-    def getRawConf(): js.Any = js.native
+    def getRawConf(): Any = js.native
     
-    def getUpdateNeededRawConf(): js.Any = js.native
+    def getUpdateNeededRawConf(): Any = js.native
     
     def isAutoUpdateEnabled(): Boolean = js.native
     
@@ -113,9 +112,9 @@ object mod {
   abstract class ConfigNormalizer () extends RalModule {
     
     def needUpdate(): Boolean = js.native
-    def needUpdate(config: js.Any): Boolean = js.native
+    def needUpdate(config: Any): Boolean = js.native
     
-    def normalizeConfig(config: js.Any): typings.nodeRal.mod.Config = js.native
+    def normalizeConfig(config: Any): typings.nodeRal.mod.Config = js.native
   }
   
   @JSImport("node-ral", "Converter")
@@ -124,9 +123,9 @@ object mod {
     
     var isStreamify: `false` = js.native
     
-    def pack(config: Service, data: js.Any): Buffer = js.native
+    def pack(config: Service, data: Any): Buffer = js.native
     
-    def unpack(config: Service, data: js.Any): js.Any = js.native
+    def unpack(config: Service, data: Any): Any = js.native
   }
   
   @JSImport("node-ral", "Logger")
@@ -134,24 +133,48 @@ object mod {
   val Logger: LoggerFactory = js.native
   
   inline def Middleware(): js.Function3[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-    /* resp */ Response_[js.Any], 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
+    /* resp */ Response_[Any, Record[String, Any]], 
     /* next */ NextFunction, 
     Unit
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("Middleware")().asInstanceOf[js.Function3[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-    /* resp */ Response_[js.Any], 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
+    /* resp */ Response_[Any, Record[String, Any]], 
     /* next */ NextFunction, 
     Unit
   ]]
   inline def Middleware(options: Service): js.Function3[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-    /* resp */ Response_[js.Any], 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
+    /* resp */ Response_[Any, Record[String, Any]], 
     /* next */ NextFunction, 
     Unit
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("Middleware")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-    /* resp */ Response_[js.Any], 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
+    /* resp */ Response_[Any, Record[String, Any]], 
     /* next */ NextFunction, 
     Unit
   ]]
@@ -160,13 +183,13 @@ object mod {
   @js.native
   abstract class Protocol () extends RalModule {
     
-    def _request(config: js.Any, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Any = js.native
+    def _request(config: Any, callback: js.Function1[/* repeated */ Any, Any]): Any = js.native
     
-    def beforeRequest(context: js.Any): js.Any = js.native
+    def beforeRequest(context: Any): Any = js.native
     
-    def normalizeConfig(context: js.Any): js.Any = js.native
+    def normalizeConfig(context: Any): Any = js.native
     
-    def talk(config: js.Any, callback: js.Any): js.Any = js.native
+    def talk(config: Any, callback: Any): Any = js.native
   }
   /* static members */
   object Protocol {
@@ -175,9 +198,9 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def beforeRequest(context: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeRequest")(context.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def beforeRequest(context: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeRequest")(context.asInstanceOf[js.Any]).asInstanceOf[Any]
     
-    inline def normalizeConfig(context: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeConfig")(context.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def normalizeConfig(context: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeConfig")(context.asInstanceOf[js.Any]).asInstanceOf[Any]
   }
   
   object RAL {
@@ -191,12 +214,12 @@ object mod {
     
     @JSImport("node-ral", "RAL.NormalizerManager")
     @js.native
-    class NormalizerManager () extends StObject {
+    open class NormalizerManager () extends StObject {
       
       @JSName("apply")
       def apply(config: js.Object): js.Object = js.native
       
-      def needUpdate(config: js.Any): Boolean = js.native
+      def needUpdate(config: Any): Boolean = js.native
       
       var normalizers: js.Array[String] = js.native
       
@@ -205,17 +228,17 @@ object mod {
     
     @JSImport("node-ral", "RAL.RalRunner")
     @js.native
-    class RalRunner protected () extends EventEmitter {
+    open class RalRunner protected () extends EventEmitter {
       def this(serviceName: String) = this()
       def this(serviceName: String, options: js.Object) = this()
       
-      def callRetry(err: js.Any): Unit = js.native
+      def callRetry(err: Any): Unit = js.native
       
       def doRequest(): Unit = js.native
       
       def getLogInfo(): LogInfo = js.native
       
-      def throwError(err: js.Any): Unit = js.native
+      def throwError(err: Any): Unit = js.native
     }
     
     inline def appendExtPath(extPath: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("appendExtPath")(extPath.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -368,24 +391,24 @@ object mod {
   
   trait RalLogger extends StObject {
     
-    def debug(param: js.Any*): Unit
+    def debug(param: Any*): Unit
     
-    def fatal(param: js.Any*): Unit
+    def fatal(param: Any*): Unit
     
-    def notice(param: js.Any*): Unit
+    def notice(param: Any*): Unit
     
-    def trace(param: js.Any*): Unit
+    def trace(param: Any*): Unit
     
-    def warning(param: js.Any*): Unit
+    def warning(param: Any*): Unit
   }
   object RalLogger {
     
     inline def apply(
-      debug: /* repeated */ js.Any => Unit,
-      fatal: /* repeated */ js.Any => Unit,
-      notice: /* repeated */ js.Any => Unit,
-      trace: /* repeated */ js.Any => Unit,
-      warning: /* repeated */ js.Any => Unit
+      debug: /* repeated */ Any => Unit,
+      fatal: /* repeated */ Any => Unit,
+      notice: /* repeated */ Any => Unit,
+      trace: /* repeated */ Any => Unit,
+      warning: /* repeated */ Any => Unit
     ): RalLogger = {
       val __obj = js.Dynamic.literal(debug = js.Any.fromFunction1(debug), fatal = js.Any.fromFunction1(fatal), notice = js.Any.fromFunction1(notice), trace = js.Any.fromFunction1(trace), warning = js.Any.fromFunction1(warning))
       __obj.asInstanceOf[RalLogger]
@@ -393,15 +416,15 @@ object mod {
     
     extension [Self <: RalLogger](x: Self) {
       
-      inline def setDebug(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+      inline def setDebug(value: /* repeated */ Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
       
-      inline def setFatal(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "fatal", js.Any.fromFunction1(value))
+      inline def setFatal(value: /* repeated */ Any => Unit): Self = StObject.set(x, "fatal", js.Any.fromFunction1(value))
       
-      inline def setNotice(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "notice", js.Any.fromFunction1(value))
+      inline def setNotice(value: /* repeated */ Any => Unit): Self = StObject.set(x, "notice", js.Any.fromFunction1(value))
       
-      inline def setTrace(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "trace", js.Any.fromFunction1(value))
+      inline def setTrace(value: /* repeated */ Any => Unit): Self = StObject.set(x, "trace", js.Any.fromFunction1(value))
       
-      inline def setWarning(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "warning", js.Any.fromFunction1(value))
+      inline def setWarning(value: /* repeated */ Any => Unit): Self = StObject.set(x, "warning", js.Any.fromFunction1(value))
     }
   }
   
@@ -436,7 +459,7 @@ object mod {
     
     var balance: random | roundrobin | hashring
     
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     var encoding: js.UndefOr[`utf-8` | GBK] = js.undefined
     
@@ -452,7 +475,7 @@ object mod {
     
     var protocol: http | https | soap | redis
     
-    var query: js.UndefOr[js.Any] = js.undefined
+    var query: js.UndefOr[Any] = js.undefined
     
     var retry: js.UndefOr[Double] = js.undefined
     
@@ -479,7 +502,7 @@ object mod {
       
       inline def setBalance(value: random | roundrobin | hashring): Self = StObject.set(x, "balance", value.asInstanceOf[js.Any])
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -507,7 +530,7 @@ object mod {
       
       inline def setProtocol(value: http | https | soap | redis): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
@@ -517,7 +540,7 @@ object mod {
       
       inline def setServer(value: js.Array[Server]): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
       
-      inline def setServerVarargs(value: Server*): Self = StObject.set(x, "server", js.Array(value :_*))
+      inline def setServerVarargs(value: Server*): Self = StObject.set(x, "server", js.Array(value*))
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       

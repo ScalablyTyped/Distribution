@@ -33,6 +33,6 @@ object ListSpeechSynthesisTasksOutput {
     
     inline def setSynthesisTasksUndefined: Self = StObject.set(x, "SynthesisTasks", js.undefined)
     
-    inline def setSynthesisTasksVarargs(value: SynthesisTask*): Self = StObject.set(x, "SynthesisTasks", js.Array(value :_*))
+    inline def setSynthesisTasksVarargs(value: SynthesisTask*): Self = StObject.set(x, "SynthesisTasks", js.Array(value*))
   }
 }

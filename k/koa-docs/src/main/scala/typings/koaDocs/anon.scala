@@ -44,7 +44,7 @@ object anon {
       
       inline def setRoutes(value: js.Array[Spec]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       
-      inline def setRoutesVarargs(value: Spec*): Self = StObject.set(x, "routes", js.Array(value :_*))
+      inline def setRoutesVarargs(value: Spec*): Self = StObject.set(x, "routes", js.Array(value*))
     }
   }
 }

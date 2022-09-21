@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@fluentui/style-utilities" : "8.7.12"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@fluentui/style-utilities" : "8.7.12"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

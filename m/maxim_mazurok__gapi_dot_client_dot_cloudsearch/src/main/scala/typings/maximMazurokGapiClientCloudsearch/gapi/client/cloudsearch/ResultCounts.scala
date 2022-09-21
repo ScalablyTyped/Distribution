@@ -22,6 +22,6 @@ object ResultCounts {
     
     inline def setSourceResultCountsUndefined: Self = StObject.set(x, "sourceResultCounts", js.undefined)
     
-    inline def setSourceResultCountsVarargs(value: SourceResultCount*): Self = StObject.set(x, "sourceResultCounts", js.Array(value :_*))
+    inline def setSourceResultCountsVarargs(value: SourceResultCount*): Self = StObject.set(x, "sourceResultCounts", js.Array(value*))
   }
 }

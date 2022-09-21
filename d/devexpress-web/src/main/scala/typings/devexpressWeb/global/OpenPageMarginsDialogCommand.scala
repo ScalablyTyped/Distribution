@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("OpenPageMarginsDialogCommand")
 @js.native
-class OpenPageMarginsDialogCommand ()
+open class OpenPageMarginsDialogCommand ()
   extends StObject
      with typings.devexpressWeb.OpenPageMarginsDialogCommand {
   

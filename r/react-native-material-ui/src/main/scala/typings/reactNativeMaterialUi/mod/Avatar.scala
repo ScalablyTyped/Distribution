@@ -7,12 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-material-ui", "Avatar")
 @js.native
-class Avatar protected ()
-  extends Component[AvatarProps, js.Any, js.Any] {
+open class Avatar protected () extends Component[AvatarProps, Any, Any] {
   def this(props: AvatarProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: AvatarProps, context: js.Any) = this()
+  def this(props: AvatarProps, context: Any) = this()
 }

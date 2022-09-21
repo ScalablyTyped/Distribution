@@ -25,6 +25,6 @@ object INxDerivedFieldDescriptionList {
     
     inline def setQDerivedFieldLists(value: js.Array[INxDerivedFieldsData]): Self = StObject.set(x, "qDerivedFieldLists", value.asInstanceOf[js.Any])
     
-    inline def setQDerivedFieldListsVarargs(value: INxDerivedFieldsData*): Self = StObject.set(x, "qDerivedFieldLists", js.Array(value :_*))
+    inline def setQDerivedFieldListsVarargs(value: INxDerivedFieldsData*): Self = StObject.set(x, "qDerivedFieldLists", js.Array(value*))
   }
 }

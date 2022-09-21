@@ -87,7 +87,7 @@ object DockerContainerData {
     
     inline def setMounts(value: js.Array[DockerContainerMountData]): Self = StObject.set(x, "mounts", value.asInstanceOf[js.Any])
     
-    inline def setMountsVarargs(value: DockerContainerMountData*): Self = StObject.set(x, "mounts", js.Array(value :_*))
+    inline def setMountsVarargs(value: DockerContainerMountData*): Self = StObject.set(x, "mounts", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -95,7 +95,7 @@ object DockerContainerData {
     
     inline def setPorts(value: js.Array[Double]): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
     
-    inline def setPortsVarargs(value: Double*): Self = StObject.set(x, "ports", js.Array(value :_*))
+    inline def setPortsVarargs(value: Double*): Self = StObject.set(x, "ports", js.Array(value*))
     
     inline def setRestartCount(value: Double): Self = StObject.set(x, "restartCount", value.asInstanceOf[js.Any])
     

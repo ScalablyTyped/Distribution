@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("elastic.js", "FuzzyLikeThisFieldQuery")
 @js.native
-class FuzzyLikeThisFieldQuery protected ()
+open class FuzzyLikeThisFieldQuery protected ()
   extends StObject
      with Query {
   /*
@@ -71,5 +71,5 @@ class FuzzyLikeThisFieldQuery protected ()
     Retrieves the internal query object. This is typically used by
     internal API functions so use with caution.
     */
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
 }

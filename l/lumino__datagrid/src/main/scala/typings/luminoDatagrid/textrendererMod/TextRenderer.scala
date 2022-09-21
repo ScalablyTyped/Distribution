@@ -5,6 +5,7 @@ import typings.luminoDatagrid.cellrendererMod.CellRenderer.CellConfig
 import typings.luminoDatagrid.cellrendererMod.CellRenderer.ConfigFunc
 import typings.luminoDatagrid.cellrendererMod.CellRenderer.ConfigOption
 import typings.luminoDatagrid.graphicscontextMod.GraphicsContext
+import typings.luminoDatagrid.textrendererMod.TextRenderer.ElideDirection
 import typings.luminoDatagrid.textrendererMod.TextRenderer.HorizontalAlignment
 import typings.luminoDatagrid.textrendererMod.TextRenderer.IOptions
 import typings.luminoDatagrid.textrendererMod.TextRenderer.VerticalAlignment
@@ -14,14 +15,14 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@lumino/datagrid/lib/textrenderer", "TextRenderer")
+@JSImport("@lumino/datagrid/types/textrenderer", "TextRenderer")
 @js.native
 /**
   * Construct a new text renderer.
   *
   * @param options - The options for initializing the renderer.
   */
-class TextRenderer () extends CellRenderer {
+open class TextRenderer () extends CellRenderer {
   def this(options: IOptions) = this()
   
   /**
@@ -48,6 +49,11 @@ class TextRenderer () extends CellRenderer {
   def drawText(gc: GraphicsContext, config: CellConfig): Unit = js.native
   
   /**
+    * Which side to draw the ellipsis.
+    */
+  val elideDirection: ConfigOption[ElideDirection] = js.native
+  
+  /**
     * The CSS shorthand font for drawing the text.
     */
   val font: ConfigOption[String] = js.native
@@ -71,10 +77,15 @@ class TextRenderer () extends CellRenderer {
     * The vertical alignment for the cell text.
     */
   val verticalAlignment: ConfigOption[VerticalAlignment] = js.native
+  
+  /**
+    * Boolean flag for applying text wrapping.
+    */
+  val wrapText: ConfigOption[Boolean] = js.native
 }
 object TextRenderer {
   
-  @JSImport("@lumino/datagrid/lib/textrenderer", "TextRenderer")
+  @JSImport("@lumino/datagrid/types/textrenderer", "TextRenderer")
   @js.native
   val ^ : js.Any = js.native
   
@@ -101,7 +112,7 @@ object TextRenderer {
     inline def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
     inline def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatDate.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
     
-    @JSImport("@lumino/datagrid/lib/textrenderer", "TextRenderer.formatDate")
+    @JSImport("@lumino/datagrid/types/textrenderer", "TextRenderer.formatDate")
     @js.native
     val ^ : js.Any = js.native
     
@@ -154,7 +165,7 @@ object TextRenderer {
     inline def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
     inline def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatExponential.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
     
-    @JSImport("@lumino/datagrid/lib/textrenderer", "TextRenderer.formatExponential")
+    @JSImport("@lumino/datagrid/types/textrenderer", "TextRenderer.formatExponential")
     @js.native
     val ^ : js.Any = js.native
     
@@ -218,7 +229,7 @@ object TextRenderer {
     inline def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
     inline def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatFixed.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
     
-    @JSImport("@lumino/datagrid/lib/textrenderer", "TextRenderer.formatFixed")
+    @JSImport("@lumino/datagrid/types/textrenderer", "TextRenderer.formatFixed")
     @js.native
     val ^ : js.Any = js.native
     
@@ -280,7 +291,7 @@ object TextRenderer {
     inline def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
     inline def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatGeneric.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
     
-    @JSImport("@lumino/datagrid/lib/textrenderer", "TextRenderer.formatGeneric")
+    @JSImport("@lumino/datagrid/types/textrenderer", "TextRenderer.formatGeneric")
     @js.native
     val ^ : js.Any = js.native
     
@@ -335,7 +346,7 @@ object TextRenderer {
     inline def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
     inline def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatISODateTime.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
     
-    @JSImport("@lumino/datagrid/lib/textrenderer", "TextRenderer.formatISODateTime")
+    @JSImport("@lumino/datagrid/types/textrenderer", "TextRenderer.formatISODateTime")
     @js.native
     val ^ : js.Any = js.native
     
@@ -388,7 +399,7 @@ object TextRenderer {
     inline def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
     inline def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatIntlDateTime.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
     
-    @JSImport("@lumino/datagrid/lib/textrenderer", "TextRenderer.formatIntlDateTime")
+    @JSImport("@lumino/datagrid/types/textrenderer", "TextRenderer.formatIntlDateTime")
     @js.native
     val ^ : js.Any = js.native
     
@@ -431,7 +442,7 @@ object TextRenderer {
         
         inline def setLocalesUndefined: Self = StObject.set(x, "locales", js.undefined)
         
-        inline def setLocalesVarargs(value: String*): Self = StObject.set(x, "locales", js.Array(value :_*))
+        inline def setLocalesVarargs(value: String*): Self = StObject.set(x, "locales", js.Array(value*))
         
         inline def setMissing(value: String): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
         
@@ -465,7 +476,7 @@ object TextRenderer {
     inline def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
     inline def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatIntlNumber.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
     
-    @JSImport("@lumino/datagrid/lib/textrenderer", "TextRenderer.formatIntlNumber")
+    @JSImport("@lumino/datagrid/types/textrenderer", "TextRenderer.formatIntlNumber")
     @js.native
     val ^ : js.Any = js.native
     
@@ -508,7 +519,7 @@ object TextRenderer {
         
         inline def setLocalesUndefined: Self = StObject.set(x, "locales", js.undefined)
         
-        inline def setLocalesVarargs(value: String*): Self = StObject.set(x, "locales", js.Array(value :_*))
+        inline def setLocalesVarargs(value: String*): Self = StObject.set(x, "locales", js.Array(value*))
         
         inline def setMissing(value: String): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
         
@@ -542,7 +553,7 @@ object TextRenderer {
     inline def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
     inline def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatPrecision.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
     
-    @JSImport("@lumino/datagrid/lib/textrenderer", "TextRenderer.formatPrecision")
+    @JSImport("@lumino/datagrid/types/textrenderer", "TextRenderer.formatPrecision")
     @js.native
     val ^ : js.Any = js.native
     
@@ -608,7 +619,7 @@ object TextRenderer {
     inline def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
     inline def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatTime.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
     
-    @JSImport("@lumino/datagrid/lib/textrenderer", "TextRenderer.formatTime")
+    @JSImport("@lumino/datagrid/types/textrenderer", "TextRenderer.formatTime")
     @js.native
     val ^ : js.Any = js.native
     
@@ -663,7 +674,7 @@ object TextRenderer {
     inline def apply(): FormatFunc = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[FormatFunc]
     inline def apply(options: typings.luminoDatagrid.textrendererMod.TextRenderer.formatUTCDateTime.IOptions): FormatFunc = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
     
-    @JSImport("@lumino/datagrid/lib/textrenderer", "TextRenderer.formatUTCDateTime")
+    @JSImport("@lumino/datagrid/types/textrenderer", "TextRenderer.formatUTCDateTime")
     @js.native
     val ^ : js.Any = js.native
     
@@ -711,6 +722,21 @@ object TextRenderer {
   inline def measureFontHeight(font: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("measureFontHeight")(font.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
+    * A type alias for the supported ellipsis sides.
+    */
+  /* Rewritten from type alias, can be one of: 
+    - typings.luminoDatagrid.luminoDatagridStrings.left
+    - typings.luminoDatagrid.luminoDatagridStrings.right
+  */
+  trait ElideDirection extends StObject
+  object ElideDirection {
+    
+    inline def left: typings.luminoDatagrid.luminoDatagridStrings.left = "left".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.left]
+    
+    inline def right: typings.luminoDatagrid.luminoDatagridStrings.right = "right".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.right]
+  }
+  
+  /**
     * A type alias for a format function.
     */
   type FormatFunc = ConfigFunc[String]
@@ -746,6 +772,13 @@ object TextRenderer {
     var backgroundColor: js.UndefOr[ConfigOption[String]] = js.undefined
     
     /**
+      * The ellipsis direction for the cell text.
+      *
+      * The default is `'right'`.
+      */
+    var elideDirection: js.UndefOr[ConfigOption[ElideDirection]] = js.undefined
+    
+    /**
       * The font for drawing the cell text.
       *
       * The default is `'12px sans-serif'`.
@@ -779,6 +812,13 @@ object TextRenderer {
       * The default is `'center'`.
       */
     var verticalAlignment: js.UndefOr[ConfigOption[VerticalAlignment]] = js.undefined
+    
+    /**
+      * Whether or not to apply text wrapping.
+      *
+      * The default is `'false'`.
+      */
+    var wrapText: js.UndefOr[ConfigOption[Boolean]] = js.undefined
   }
   object IOptions {
     
@@ -794,6 +834,12 @@ object TextRenderer {
       inline def setBackgroundColorFunction1(value: /* config */ CellConfig => String): Self = StObject.set(x, "backgroundColor", js.Any.fromFunction1(value))
       
       inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+      
+      inline def setElideDirection(value: ConfigOption[ElideDirection]): Self = StObject.set(x, "elideDirection", value.asInstanceOf[js.Any])
+      
+      inline def setElideDirectionFunction1(value: /* config */ CellConfig => ElideDirection): Self = StObject.set(x, "elideDirection", js.Any.fromFunction1(value))
+      
+      inline def setElideDirectionUndefined: Self = StObject.set(x, "elideDirection", js.undefined)
       
       inline def setFont(value: ConfigOption[String]): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
@@ -822,6 +868,12 @@ object TextRenderer {
       inline def setVerticalAlignmentFunction1(value: /* config */ CellConfig => VerticalAlignment): Self = StObject.set(x, "verticalAlignment", js.Any.fromFunction1(value))
       
       inline def setVerticalAlignmentUndefined: Self = StObject.set(x, "verticalAlignment", js.undefined)
+      
+      inline def setWrapText(value: ConfigOption[Boolean]): Self = StObject.set(x, "wrapText", value.asInstanceOf[js.Any])
+      
+      inline def setWrapTextFunction1(value: /* config */ CellConfig => Boolean): Self = StObject.set(x, "wrapText", js.Any.fromFunction1(value))
+      
+      inline def setWrapTextUndefined: Self = StObject.set(x, "wrapText", js.undefined)
     }
   }
   

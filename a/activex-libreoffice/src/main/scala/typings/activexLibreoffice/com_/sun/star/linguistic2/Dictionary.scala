@@ -45,7 +45,7 @@ object Dictionary {
     isActive: () => Boolean,
     isFull: () => Boolean,
     isReadonly: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     remove: String => Boolean,
     removeDictionaryEventListener: XDictionaryEventListener => Boolean,

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ej.PercentageTextbox")
 @js.native
-class PercentageTextbox ()
+open class PercentageTextbox ()
   extends StObject
      with typings.ejWebAll.ej.Editor

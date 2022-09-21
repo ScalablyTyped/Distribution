@@ -12,9 +12,9 @@ trait System extends StObject {
   val ComputerType: String = js.native
   
   def Connect(Path: String): Unit = js.native
-  def Connect(Path: String, Drive: js.Any): Unit = js.native
-  def Connect(Path: String, Drive: js.Any, Password: js.Any): Unit = js.native
-  def Connect(Path: String, Drive: Unit, Password: js.Any): Unit = js.native
+  def Connect(Path: String, Drive: Any): Unit = js.native
+  def Connect(Path: String, Drive: Any, Password: Any): Unit = js.native
+  def Connect(Path: String, Drive: Unit, Password: Any): Unit = js.native
   
   val Country: WdCountry = js.native
   
@@ -38,7 +38,7 @@ trait System extends StObject {
   
   val OperatingSystem: String = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def PrivateProfileString(FileName: String, Section: String, Key: String): String = js.native
   

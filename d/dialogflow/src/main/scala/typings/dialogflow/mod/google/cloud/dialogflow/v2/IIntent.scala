@@ -90,7 +90,7 @@ object IIntent {
     
     inline def setDefaultResponsePlatformsUndefined: Self = StObject.set(x, "defaultResponsePlatforms", js.undefined)
     
-    inline def setDefaultResponsePlatformsVarargs(value: Platform*): Self = StObject.set(x, "defaultResponsePlatforms", js.Array(value :_*))
+    inline def setDefaultResponsePlatformsVarargs(value: Platform*): Self = StObject.set(x, "defaultResponsePlatforms", js.Array(value*))
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
@@ -104,7 +104,7 @@ object IIntent {
     
     inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    inline def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value*))
     
     inline def setFollowupIntentInfo(value: js.Array[IFollowupIntentInfo]): Self = StObject.set(x, "followupIntentInfo", value.asInstanceOf[js.Any])
     
@@ -112,7 +112,7 @@ object IIntent {
     
     inline def setFollowupIntentInfoUndefined: Self = StObject.set(x, "followupIntentInfo", js.undefined)
     
-    inline def setFollowupIntentInfoVarargs(value: IFollowupIntentInfo*): Self = StObject.set(x, "followupIntentInfo", js.Array(value :_*))
+    inline def setFollowupIntentInfoVarargs(value: IFollowupIntentInfo*): Self = StObject.set(x, "followupIntentInfo", js.Array(value*))
     
     inline def setInputContextNames(value: js.Array[String]): Self = StObject.set(x, "inputContextNames", value.asInstanceOf[js.Any])
     
@@ -120,7 +120,7 @@ object IIntent {
     
     inline def setInputContextNamesUndefined: Self = StObject.set(x, "inputContextNames", js.undefined)
     
-    inline def setInputContextNamesVarargs(value: String*): Self = StObject.set(x, "inputContextNames", js.Array(value :_*))
+    inline def setInputContextNamesVarargs(value: String*): Self = StObject.set(x, "inputContextNames", js.Array(value*))
     
     inline def setIsFallback(value: Boolean): Self = StObject.set(x, "isFallback", value.asInstanceOf[js.Any])
     
@@ -134,7 +134,7 @@ object IIntent {
     
     inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
-    inline def setMessagesVarargs(value: IMessage*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: IMessage*): Self = StObject.set(x, "messages", js.Array(value*))
     
     inline def setMlDisabled(value: Boolean): Self = StObject.set(x, "mlDisabled", value.asInstanceOf[js.Any])
     
@@ -154,7 +154,7 @@ object IIntent {
     
     inline def setOutputContextsUndefined: Self = StObject.set(x, "outputContexts", js.undefined)
     
-    inline def setOutputContextsVarargs(value: IContext*): Self = StObject.set(x, "outputContexts", js.Array(value :_*))
+    inline def setOutputContextsVarargs(value: IContext*): Self = StObject.set(x, "outputContexts", js.Array(value*))
     
     inline def setParameters(value: js.Array[IParameter]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
@@ -162,7 +162,7 @@ object IIntent {
     
     inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    inline def setParametersVarargs(value: IParameter*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: IParameter*): Self = StObject.set(x, "parameters", js.Array(value*))
     
     inline def setParentFollowupIntentName(value: String): Self = StObject.set(x, "parentFollowupIntentName", value.asInstanceOf[js.Any])
     
@@ -194,7 +194,7 @@ object IIntent {
     
     inline def setTrainingPhrasesUndefined: Self = StObject.set(x, "trainingPhrases", js.undefined)
     
-    inline def setTrainingPhrasesVarargs(value: ITrainingPhrase*): Self = StObject.set(x, "trainingPhrases", js.Array(value :_*))
+    inline def setTrainingPhrasesVarargs(value: ITrainingPhrase*): Self = StObject.set(x, "trainingPhrases", js.Array(value*))
     
     inline def setWebhookState(
       value: WebhookState | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.Intent.WebhookState * / any */ String)

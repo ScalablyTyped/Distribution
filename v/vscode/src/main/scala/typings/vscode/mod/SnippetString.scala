@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vscode", "SnippetString")
 @js.native
-class SnippetString () extends StObject {
+open class SnippetString () extends StObject {
   def this(value: String) = this()
   
   /**
-    * Builder-function that appends a choice (`${1|a,b,c}`) to
-    * the [`value`](#SnippetString.value) of this snippet string.
+    * Builder-function that appends a choice (`${1|a,b,c|}`) to
+    * the {@linkcode SnippetString.value value} of this snippet string.
     *
     * @param values The values for choices - the array of strings
     * @param number The number of this tabstop, defaults to an auto-increment
@@ -23,7 +23,7 @@ class SnippetString () extends StObject {
   
   /**
     * Builder-function that appends a placeholder (`${1:value}`) to
-    * the [`value`](#SnippetString.value) of this snippet string.
+    * the {@linkcode SnippetString.value value} of this snippet string.
     *
     * @param value The value of this placeholder - either a string or a function
     * with which a nested snippet can be created.
@@ -33,12 +33,12 @@ class SnippetString () extends StObject {
     */
   def appendPlaceholder(value: String): SnippetString = js.native
   def appendPlaceholder(value: String, number: Double): SnippetString = js.native
-  def appendPlaceholder(value: js.Function1[/* snippet */ this.type, js.Any]): SnippetString = js.native
-  def appendPlaceholder(value: js.Function1[/* snippet */ this.type, js.Any], number: Double): SnippetString = js.native
+  def appendPlaceholder(value: js.Function1[/* snippet */ this.type, Any]): SnippetString = js.native
+  def appendPlaceholder(value: js.Function1[/* snippet */ this.type, Any], number: Double): SnippetString = js.native
   
   /**
     * Builder-function that appends a tabstop (`$1`, `$2` etc) to
-    * the [`value`](#SnippetString.value) of this snippet string.
+    * the {@linkcode SnippetString.value value} of this snippet string.
     *
     * @param number The number of this tabstop, defaults to an auto-increment
     * value starting at 1.
@@ -49,7 +49,7 @@ class SnippetString () extends StObject {
   
   /**
     * Builder-function that appends the given string to
-    * the [`value`](#SnippetString.value) of this snippet string.
+    * the {@linkcode SnippetString.value value} of this snippet string.
     *
     * @param string A value to append 'as given'. The string will be escaped.
     * @return This snippet string.
@@ -58,7 +58,7 @@ class SnippetString () extends StObject {
   
   /**
     * Builder-function that appends a variable (`${VAR}`) to
-    * the [`value`](#SnippetString.value) of this snippet string.
+    * the {@linkcode SnippetString.value value} of this snippet string.
     *
     * @param name The name of the variable - excluding the `$`.
     * @param defaultValue The default value which is used when the variable name cannot
@@ -66,7 +66,7 @@ class SnippetString () extends StObject {
     * @return This snippet string.
     */
   def appendVariable(name: String, defaultValue: String): SnippetString = js.native
-  def appendVariable(name: String, defaultValue: js.Function1[/* snippet */ this.type, js.Any]): SnippetString = js.native
+  def appendVariable(name: String, defaultValue: js.Function1[/* snippet */ this.type, Any]): SnippetString = js.native
   
   /**
     * The snippet string.

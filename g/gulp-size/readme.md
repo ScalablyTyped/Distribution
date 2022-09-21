@@ -1,7 +1,7 @@
 
 # Scala.js typings for gulp-size
 
-Typings are for version 2.1
+Typings are for version 4.0
 
 ## Library description:
 Display the size of your project
@@ -9,11 +9,11 @@ Display the size of your project
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | gulp-size |
-| Keywords           | gulpplugin, filesize, file, size, log, measure, inspect, debug, gzip |
-| # releases         | 0 |
-| # dependents       | 236 |
-| # downloads        | 2261788 |
-| # stars            | 66 |
+| Keywords           | gulpplugin, filesize, file, size, log, measure, inspect, debug, gzip, brotli |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 188350.0 |
+| # stars            | 234.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/gulp-size#readme)

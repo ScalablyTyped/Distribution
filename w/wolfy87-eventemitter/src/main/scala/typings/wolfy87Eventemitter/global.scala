@@ -10,7 +10,7 @@ object global {
     
     @JSGlobal("EventEmitter")
     @js.native
-    class ^ ()
+    open class ^ ()
       extends typings.wolfy87Eventemitter.mod.^
   }
 }

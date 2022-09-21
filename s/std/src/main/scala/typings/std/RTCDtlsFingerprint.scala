@@ -6,8 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RTCDtlsFingerprint extends StObject {
   
+  /* standard dom */
   var algorithm: js.UndefOr[java.lang.String] = js.undefined
   
+  /* standard dom */
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 object RTCDtlsFingerprint {

@@ -19,7 +19,7 @@ trait CACertificate extends StObject {
   /**
     * The date the CA certificate was created.
     */
-  var creationDate: js.UndefOr[DateType] = js.undefined
+  var creationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The status of the CA certificate. The status value REGISTER_INACTIVE is deprecated and should not be used.
@@ -43,7 +43,7 @@ object CACertificate {
     
     inline def setCertificateIdUndefined: Self = StObject.set(x, "certificateId", js.undefined)
     
-    inline def setCreationDate(value: DateType): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     

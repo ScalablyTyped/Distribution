@@ -1,7 +1,5 @@
 package typings.canvaskitWasm.mod
 
-import typings.std.ArrayBuffer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,6 +15,6 @@ trait TypefaceFontProvider
     * @param bytes - the raw bytes for a typeface.
     * @param family
     */
-  def registerFont(bytes: ArrayBuffer, family: String): Unit = js.native
-  def registerFont(bytes: Uint8Array, family: String): Unit = js.native
+  def registerFont(bytes: js.typedarray.ArrayBuffer, family: String): Unit = js.native
+  def registerFont(bytes: js.typedarray.Uint8Array, family: String): Unit = js.native
 }

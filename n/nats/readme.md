@@ -1,7 +1,7 @@
 
 # Scala.js typings for nats
 
-Typings are for version 1.4.12
+Typings are for version 2.7.1
 
 ## Library description:
 Node.js client for NATS, a lightweight, high-performance cloud native messaging system
@@ -10,10 +10,10 @@ Node.js client for NATS, a lightweight, high-performance cloud native messaging 
 | ------------------ | :-------------: |
 | Full name          | nats |
 | Keywords           | nats, messaging, pubsub, publish, subscribe, queue, distributed, queueing |
-| # releases         | 78 |
-| # dependents       | 241 |
-| # downloads        | 3257290 |
-| # stars            | 9 |
+| # releases         | 46 |
+| # dependents       | 0.0 |
+| # downloads        | 578479.0 |
+| # stars            | 1209.0 |
 
 ## Links
 - [Homepage](https://nats.io)

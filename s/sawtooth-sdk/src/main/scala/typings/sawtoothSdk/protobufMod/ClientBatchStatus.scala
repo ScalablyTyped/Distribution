@@ -6,7 +6,6 @@ import typings.protobufjs.mod.Reader
 import typings.protobufjs.mod.Writer
 import typings.sawtoothSdk.protobufMod.ClientBatchStatus.IInvalidTransaction
 import typings.sawtoothSdk.protobufMod.ClientBatchStatus.Status
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new ClientBatchStatus.
   * @param [properties] Properties to set
   */
-class ClientBatchStatus ()
+open class ClientBatchStatus ()
   extends StObject
      with IClientBatchStatus {
   def this(properties: IClientBatchStatus) = this()
@@ -38,7 +37,7 @@ class ClientBatchStatus ()
     * Converts this ClientBatchStatus to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[js.Any] = js.native
+  def toJSON(): StringDictionary[Any] = js.native
 }
 /* static members */
 object ClientBatchStatus {
@@ -54,14 +53,14 @@ object ClientBatchStatus {
     * Constructs a new InvalidTransaction.
     * @param [properties] Properties to set
     */
-  class InvalidTransaction ()
+  open class InvalidTransaction ()
     extends StObject
        with IInvalidTransaction {
     def this(properties: IInvalidTransaction) = this()
     
     /** InvalidTransaction extendedData. */
     @JSName("extendedData")
-    var extendedData_InvalidTransaction: Uint8Array = js.native
+    var extendedData_InvalidTransaction: js.typedarray.Uint8Array = js.native
     
     /** InvalidTransaction message. */
     @JSName("message")
@@ -71,7 +70,7 @@ object ClientBatchStatus {
       * Converts this InvalidTransaction to JSON.
       * @returns JSON object
       */
-    def toJSON(): StringDictionary[js.Any] = js.native
+    def toJSON(): StringDictionary[Any] = js.native
     
     /** InvalidTransaction transactionId. */
     @JSName("transactionId")
@@ -92,6 +91,8 @@ object ClientBatchStatus {
     inline def create(): InvalidTransaction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[InvalidTransaction]
     inline def create(properties: IInvalidTransaction): InvalidTransaction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[InvalidTransaction]
     
+    inline def decode(reader: js.typedarray.Uint8Array): InvalidTransaction = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[InvalidTransaction]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): InvalidTransaction = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[InvalidTransaction]
     /**
       * Decodes an InvalidTransaction message from the specified reader or buffer.
       * @param reader Reader or buffer to decode from
@@ -103,9 +104,8 @@ object ClientBatchStatus {
     /* static member */
     inline def decode(reader: Reader): InvalidTransaction = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[InvalidTransaction]
     inline def decode(reader: Reader, length: Double): InvalidTransaction = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[InvalidTransaction]
-    inline def decode(reader: Uint8Array): InvalidTransaction = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[InvalidTransaction]
-    inline def decode(reader: Uint8Array, length: Double): InvalidTransaction = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[InvalidTransaction]
     
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): InvalidTransaction = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[InvalidTransaction]
     /**
       * Decodes an InvalidTransaction message from the specified reader or buffer, length delimited.
       * @param reader Reader or buffer to decode from
@@ -115,7 +115,6 @@ object ClientBatchStatus {
       */
     /* static member */
     inline def decodeDelimited(reader: Reader): InvalidTransaction = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[InvalidTransaction]
-    inline def decodeDelimited(reader: Uint8Array): InvalidTransaction = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[InvalidTransaction]
     
     /**
       * Encodes the specified InvalidTransaction message. Does not implicitly {@link ClientBatchStatus.InvalidTransaction.verify|verify} messages.
@@ -143,7 +142,7 @@ object ClientBatchStatus {
       * @returns InvalidTransaction
       */
     /* static member */
-    inline def fromObject(`object`: StringDictionary[js.Any]): InvalidTransaction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[InvalidTransaction]
+    inline def fromObject(`object`: StringDictionary[Any]): InvalidTransaction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[InvalidTransaction]
     
     /**
       * Creates a plain object from an InvalidTransaction message. Also converts values to other types if specified.
@@ -152,8 +151,8 @@ object ClientBatchStatus {
       * @returns Plain object
       */
     /* static member */
-    inline def toObject(message: InvalidTransaction): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-    inline def toObject(message: InvalidTransaction, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+    inline def toObject(message: InvalidTransaction): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+    inline def toObject(message: InvalidTransaction, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
     
     /**
       * Verifies an InvalidTransaction message.
@@ -161,7 +160,7 @@ object ClientBatchStatus {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   @js.native
@@ -213,6 +212,8 @@ object ClientBatchStatus {
   inline def create(): ClientBatchStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ClientBatchStatus]
   inline def create(properties: IClientBatchStatus): ClientBatchStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ClientBatchStatus]
   
+  inline def decode(reader: js.typedarray.Uint8Array): ClientBatchStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientBatchStatus]
+  inline def decode(reader: js.typedarray.Uint8Array, length: Double): ClientBatchStatus = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ClientBatchStatus]
   /**
     * Decodes a ClientBatchStatus message from the specified reader or buffer.
     * @param reader Reader or buffer to decode from
@@ -223,9 +224,8 @@ object ClientBatchStatus {
     */
   inline def decode(reader: Reader): ClientBatchStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientBatchStatus]
   inline def decode(reader: Reader, length: Double): ClientBatchStatus = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ClientBatchStatus]
-  inline def decode(reader: Uint8Array): ClientBatchStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientBatchStatus]
-  inline def decode(reader: Uint8Array, length: Double): ClientBatchStatus = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ClientBatchStatus]
   
+  inline def decodeDelimited(reader: js.typedarray.Uint8Array): ClientBatchStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientBatchStatus]
   /**
     * Decodes a ClientBatchStatus message from the specified reader or buffer, length delimited.
     * @param reader Reader or buffer to decode from
@@ -234,7 +234,6 @@ object ClientBatchStatus {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   inline def decodeDelimited(reader: Reader): ClientBatchStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientBatchStatus]
-  inline def decodeDelimited(reader: Uint8Array): ClientBatchStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientBatchStatus]
   
   /**
     * Encodes the specified ClientBatchStatus message. Does not implicitly {@link ClientBatchStatus.verify|verify} messages.
@@ -259,7 +258,7 @@ object ClientBatchStatus {
     * @param object Plain object
     * @returns ClientBatchStatus
     */
-  inline def fromObject(`object`: StringDictionary[js.Any]): ClientBatchStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ClientBatchStatus]
+  inline def fromObject(`object`: StringDictionary[Any]): ClientBatchStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ClientBatchStatus]
   
   /**
     * Creates a plain object from a ClientBatchStatus message. Also converts values to other types if specified.
@@ -267,21 +266,21 @@ object ClientBatchStatus {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  inline def toObject(message: ClientBatchStatus): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  inline def toObject(message: ClientBatchStatus, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: ClientBatchStatus): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: ClientBatchStatus, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   /**
     * Verifies a ClientBatchStatus message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   /** Properties of an InvalidTransaction. */
   trait IInvalidTransaction extends StObject {
     
     /** InvalidTransaction extendedData */
-    var extendedData: js.UndefOr[Uint8Array | Null] = js.undefined
+    var extendedData: js.UndefOr[js.typedarray.Uint8Array | Null] = js.undefined
     
     /** InvalidTransaction message */
     var message: js.UndefOr[String | Null] = js.undefined
@@ -298,7 +297,7 @@ object ClientBatchStatus {
     
     extension [Self <: IInvalidTransaction](x: Self) {
       
-      inline def setExtendedData(value: Uint8Array): Self = StObject.set(x, "extendedData", value.asInstanceOf[js.Any])
+      inline def setExtendedData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "extendedData", value.asInstanceOf[js.Any])
       
       inline def setExtendedDataNull: Self = StObject.set(x, "extendedData", null)
       

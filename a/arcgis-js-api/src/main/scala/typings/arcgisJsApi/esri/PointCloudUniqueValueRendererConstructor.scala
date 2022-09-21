@@ -20,5 +20,5 @@ Instantiable0[PointCloudUniqueValueRenderer]
       PointCloudUniqueValueRenderer
     ] {
   
-  def fromJSON(json: js.Any): PointCloudUniqueValueRenderer = js.native
+  def fromJSON(json: Any): PointCloudUniqueValueRenderer = js.native
 }

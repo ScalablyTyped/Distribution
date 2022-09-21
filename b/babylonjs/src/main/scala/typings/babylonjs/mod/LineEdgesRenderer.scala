@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "LineEdgesRenderer")
 @js.native
-class LineEdgesRenderer protected ()
+open class LineEdgesRenderer protected ()
   extends typings.babylonjs.legacyMod.LineEdgesRenderer {
   /**
     * This constructor turns off auto generating edges line in Edges Renderer to make it here.

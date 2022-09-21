@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.bip174.interfacesMod.Transaction
 import typings.bip174.interfacesMod.TransactionFromBuffer
 import typings.bip174.mod.Psbt
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.std.InstanceType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

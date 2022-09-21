@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("canvasjs", "Chart")
 @js.native
-class Chart protected () extends StObject {
+open class Chart protected () extends StObject {
   /**
     * Initializes a new instance of CanvasJS Chart.
     * @param containerId the DOM ID of the location where the chart is to be rendered
@@ -67,7 +67,7 @@ class Chart protected () extends StObject {
     * Returns the specified property of Chart.
     * @param propertyName Name of the property.
     */
-  def get(propertyName: String): js.Any = js.native
+  def get(propertyName: String): Any = js.native
   
   /**
     * The current options of the chart.

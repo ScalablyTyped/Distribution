@@ -36,6 +36,6 @@ object ILocaleNumberFormatDescriptor {
     
     inline def setPATTERNS(value: js.Array[ILocaleNumberPatternDescriptor]): Self = StObject.set(x, "PATTERNS", value.asInstanceOf[js.Any])
     
-    inline def setPATTERNSVarargs(value: ILocaleNumberPatternDescriptor*): Self = StObject.set(x, "PATTERNS", js.Array(value :_*))
+    inline def setPATTERNSVarargs(value: ILocaleNumberPatternDescriptor*): Self = StObject.set(x, "PATTERNS", js.Array(value*))
   }
 }

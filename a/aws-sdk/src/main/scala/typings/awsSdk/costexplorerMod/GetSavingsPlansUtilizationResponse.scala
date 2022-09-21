@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetSavingsPlansUtilizationResponse extends StObject {
   
   /**
-    * The amount of cost/commitment you used your Savings Plans. This allows you to specify date ranges.
+    * The amount of cost/commitment that you used your Savings Plans. You can use it to specify date ranges.
     */
   var SavingsPlansUtilizationsByTime: js.UndefOr[typings.awsSdk.costexplorerMod.SavingsPlansUtilizationsByTime] = js.undefined
   
@@ -29,7 +29,7 @@ object GetSavingsPlansUtilizationResponse {
     
     inline def setSavingsPlansUtilizationsByTimeUndefined: Self = StObject.set(x, "SavingsPlansUtilizationsByTime", js.undefined)
     
-    inline def setSavingsPlansUtilizationsByTimeVarargs(value: SavingsPlansUtilizationByTime*): Self = StObject.set(x, "SavingsPlansUtilizationsByTime", js.Array(value :_*))
+    inline def setSavingsPlansUtilizationsByTimeVarargs(value: SavingsPlansUtilizationByTime*): Self = StObject.set(x, "SavingsPlansUtilizationsByTime", js.Array(value*))
     
     inline def setTotal(value: SavingsPlansUtilizationAggregates): Self = StObject.set(x, "Total", value.asInstanceOf[js.Any])
   }

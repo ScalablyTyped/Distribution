@@ -10,7 +10,7 @@ trait IgGridAppendRowsOnDemandLocale
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Specifies caption text for the "load more data" button.

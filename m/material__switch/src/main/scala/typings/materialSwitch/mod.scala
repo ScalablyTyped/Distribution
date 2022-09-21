@@ -1,7 +1,9 @@
 package typings.materialSwitch
 
+import typings.materialBase.Element
+import typings.materialSwitch.adapterMod.MDCSwitchAdapter
 import typings.materialSwitch.anon.PartialMDCSwitchAdapter
-import typings.std.Element
+import typings.std.HTMLButtonElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,12 +11,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  @JSImport("@material/switch", "CssClasses")
+  @js.native
+  object CssClasses extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.materialSwitch.constantsMod.CssClasses & String] = js.native
+    
+    /* "mdc-switch--processing" */ val PROCESSING: typings.materialSwitch.constantsMod.CssClasses.PROCESSING & String = js.native
+    
+    /* "mdc-switch--selected" */ val SELECTED: typings.materialSwitch.constantsMod.CssClasses.SELECTED & String = js.native
+    
+    /* "mdc-switch--unselected" */ val UNSELECTED: typings.materialSwitch.constantsMod.CssClasses.UNSELECTED & String = js.native
+  }
+  
   @JSImport("@material/switch", "MDCSwitch")
   @js.native
-  class MDCSwitch protected ()
+  open class MDCSwitch protected ()
     extends typings.materialSwitch.componentMod.MDCSwitch {
-    def this(root: Element, foundation: Unit, args: js.Any*) = this()
-    def this(root: Element, foundation: typings.materialSwitch.foundationMod.MDCSwitchFoundation, args: js.Any*) = this()
+    def this(root: HTMLButtonElement) = this()
+    def this(
+      root: HTMLButtonElement,
+      foundation: typings.materialSwitch.materialSwitchMod.MDCSwitchRenderFoundation
+    ) = this()
   }
   /* static members */
   object MDCSwitch {
@@ -23,59 +42,107 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def attachTo(root: HTMLElement): typings.materialSwitch.componentMod.MDCSwitch = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialSwitch.componentMod.MDCSwitch]
+    /**
+      * Creates a new `MDCSwitch` and attaches it to the given root element.
+      * @param root The root to attach to.
+      * @return the new component instance.
+      */
+    inline def attachTo(root: HTMLButtonElement): typings.materialSwitch.componentMod.MDCSwitch = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialSwitch.componentMod.MDCSwitch]
   }
   
   @JSImport("@material/switch", "MDCSwitchFoundation")
   @js.native
-  class MDCSwitchFoundation ()
-    extends typings.materialSwitch.foundationMod.MDCSwitchFoundation {
-    def this(adapter: PartialMDCSwitchAdapter) = this()
+  open class MDCSwitchFoundation protected ()
+    extends typings.materialSwitch.materialSwitchMod.MDCSwitchFoundation {
+    def this(adapter: MDCSwitchAdapter) = this()
   }
   
-  /** CSS classes used by the switch. */
-  object cssClasses {
-    
-    @JSImport("@material/switch", "cssClasses")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /** Class used for a switch that is in the "checked" (on) position. */
-    @JSImport("@material/switch", "cssClasses.CHECKED")
-    @js.native
-    def CHECKED: String = js.native
-    inline def CHECKED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CHECKED")(x.asInstanceOf[js.Any])
-    
-    /** Class used for a switch that is disabled. */
-    @JSImport("@material/switch", "cssClasses.DISABLED")
-    @js.native
-    def DISABLED: String = js.native
-    inline def DISABLED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DISABLED")(x.asInstanceOf[js.Any])
+  @JSImport("@material/switch", "MDCSwitchRenderFoundation")
+  @js.native
+  open class MDCSwitchRenderFoundation protected ()
+    extends typings.materialSwitch.materialSwitchMod.MDCSwitchRenderFoundation {
+    def this(adapter: MDCSwitchAdapter) = this()
   }
   
-  /** String constants used by the switch. */
-  object strings {
+  @JSImport("@material/switch", "Selectors")
+  @js.native
+  object Selectors extends StObject {
     
-    @JSImport("@material/switch", "strings")
-    @js.native
-    val ^ : js.Any = js.native
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.materialSwitch.constantsMod.Selectors & String] = js.native
     
-    /** Aria attribute for checked or unchecked state of switch */
-    @JSImport("@material/switch", "strings.ARIA_CHECKED_ATTR")
-    @js.native
-    def ARIA_CHECKED_ATTR: String = js.native
-    inline def ARIA_CHECKED_ATTR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_CHECKED_ATTR")(x.asInstanceOf[js.Any])
+    /* ".mdc-switch__ripple" */ val RIPPLE: typings.materialSwitch.constantsMod.Selectors.RIPPLE & String = js.native
+  }
+  
+  object deprecated {
     
-    /** A CSS selector used to locate the native HTML control for the switch.  */
-    @JSImport("@material/switch", "strings.NATIVE_CONTROL_SELECTOR")
+    @JSImport("@material/switch", "deprecated.MDCSwitch")
     @js.native
-    def NATIVE_CONTROL_SELECTOR: String = js.native
-    inline def NATIVE_CONTROL_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NATIVE_CONTROL_SELECTOR")(x.asInstanceOf[js.Any])
+    open class MDCSwitch protected ()
+      extends typings.materialSwitch.deprecatedMod.MDCSwitch {
+      def this(root: Element, foundation: Unit, args: Any*) = this()
+      def this(root: Element, foundation: typings.materialSwitch.foundationMod.MDCSwitchFoundation, args: Any*) = this()
+    }
+    /* static members */
+    object MDCSwitch {
+      
+      @JSImport("@material/switch", "deprecated.MDCSwitch")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      inline def attachTo(root: HTMLElement): typings.materialSwitch.deprecatedComponentMod.MDCSwitch = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialSwitch.deprecatedComponentMod.MDCSwitch]
+    }
     
-    /** A CSS selector used to locate the ripple surface element for the switch. */
-    @JSImport("@material/switch", "strings.RIPPLE_SURFACE_SELECTOR")
+    @JSImport("@material/switch", "deprecated.MDCSwitchFoundation")
     @js.native
-    def RIPPLE_SURFACE_SELECTOR: String = js.native
-    inline def RIPPLE_SURFACE_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RIPPLE_SURFACE_SELECTOR")(x.asInstanceOf[js.Any])
+    open class MDCSwitchFoundation ()
+      extends typings.materialSwitch.deprecatedMod.MDCSwitchFoundation {
+      def this(adapter: PartialMDCSwitchAdapter) = this()
+    }
+    
+    object cssClasses {
+      
+      @JSImport("@material/switch", "deprecated.cssClasses")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      /** Class used for a switch that is in the "checked" (on) position. */
+      @JSImport("@material/switch", "deprecated.cssClasses.CHECKED")
+      @js.native
+      def CHECKED: String = js.native
+      inline def CHECKED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CHECKED")(x.asInstanceOf[js.Any])
+      
+      /** Class used for a switch that is disabled. */
+      @JSImport("@material/switch", "deprecated.cssClasses.DISABLED")
+      @js.native
+      def DISABLED: String = js.native
+      inline def DISABLED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DISABLED")(x.asInstanceOf[js.Any])
+    }
+    
+    /** String constants used by the switch. */
+    object strings {
+      
+      @JSImport("@material/switch", "deprecated.strings")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      /** Aria attribute for checked or unchecked state of switch */
+      @JSImport("@material/switch", "deprecated.strings.ARIA_CHECKED_ATTR")
+      @js.native
+      def ARIA_CHECKED_ATTR: String = js.native
+      inline def ARIA_CHECKED_ATTR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_CHECKED_ATTR")(x.asInstanceOf[js.Any])
+      
+      /** A CSS selector used to locate the native HTML control for the switch.  */
+      @JSImport("@material/switch", "deprecated.strings.NATIVE_CONTROL_SELECTOR")
+      @js.native
+      def NATIVE_CONTROL_SELECTOR: String = js.native
+      inline def NATIVE_CONTROL_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NATIVE_CONTROL_SELECTOR")(x.asInstanceOf[js.Any])
+      
+      /** A CSS selector used to locate the ripple surface element for the switch. */
+      @JSImport("@material/switch", "deprecated.strings.RIPPLE_SURFACE_SELECTOR")
+      @js.native
+      def RIPPLE_SURFACE_SELECTOR: String = js.native
+      inline def RIPPLE_SURFACE_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RIPPLE_SURFACE_SELECTOR")(x.asInstanceOf[js.Any])
+    }
   }
 }

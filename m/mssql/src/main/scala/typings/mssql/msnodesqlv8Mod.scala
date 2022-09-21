@@ -2,7 +2,7 @@ package typings.mssql
 
 import typings.mssql.mod.IIsolationLevel
 import typings.mssql.mod.IMap
-import typings.mssql.mod.IPool
+import typings.mssql.mod.IResult
 import typings.mssql.mod.ISqlTypeFactoryWithLength
 import typings.mssql.mod.ISqlTypeFactoryWithNoParams
 import typings.mssql.mod.ISqlTypeFactoryWithPrecisionScale
@@ -13,6 +13,8 @@ import typings.mssql.mod.ISqlTypeWithNoParams
 import typings.mssql.mod.ISqlTypeWithPrecisionScale
 import typings.mssql.mod.ISqlTypeWithScale
 import typings.mssql.mod.ISqlTypeWithTvpType
+import typings.mssql.mod.config
+import typings.std.TemplateStringsArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,20 +47,31 @@ object msnodesqlv8Mod {
   
   @JSImport("mssql/msnodesqlv8", "ConnectionError")
   @js.native
-  class ConnectionError protected ()
+  open class ConnectionError protected ()
     extends typings.mssql.mod.ConnectionError {
     def this(message: String) = this()
-    def this(message: String, code: js.Any) = this()
+    def this(message: js.Error) = this()
+    def this(message: String, code: String) = this()
+    def this(message: js.Error, code: String) = this()
   }
   
   @JSImport("mssql/msnodesqlv8", "ConnectionPool")
   @js.native
-  class ConnectionPool protected ()
+  open class ConnectionPool protected ()
     extends typings.mssql.mod.ConnectionPool {
     def this(config: typings.mssql.mod.config) = this()
     def this(connectionString: String) = this()
-    def this(config: typings.mssql.mod.config, callback: js.Function1[/* err */ js.UndefOr[js.Any], Unit]) = this()
-    def this(connectionString: String, callback: js.Function1[/* err */ js.UndefOr[js.Any], Unit]) = this()
+    def this(config: typings.mssql.mod.config, callback: js.Function1[/* err */ js.UndefOr[Any], Unit]) = this()
+    def this(connectionString: String, callback: js.Function1[/* err */ js.UndefOr[Any], Unit]) = this()
+  }
+  /* static members */
+  object ConnectionPool {
+    
+    @JSImport("mssql/msnodesqlv8", "ConnectionPool")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def parseConnectionString(connectionString: String): config = ^.asInstanceOf[js.Dynamic].applyDynamic("parseConnectionString")(connectionString.asInstanceOf[js.Any]).asInstanceOf[config]
   }
   
   @JSImport("mssql/msnodesqlv8", "DRIVERS")
@@ -155,6 +168,16 @@ object msnodesqlv8Mod {
   def MAX: Double = js.native
   inline def MAX_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX")(x.asInstanceOf[js.Any])
   
+  @JSImport("mssql/msnodesqlv8", "MSSQLError")
+  @js.native
+  open class MSSQLError protected ()
+    extends typings.mssql.mod.MSSQLError {
+    def this(message: String) = this()
+    def this(message: js.Error) = this()
+    def this(message: String, code: String) = this()
+    def this(message: js.Error, code: String) = this()
+  }
+  
   @JSImport("mssql/msnodesqlv8", "Money")
   @js.native
   def Money: ISqlTypeFactoryWithNoParams = js.native
@@ -182,7 +205,7 @@ object msnodesqlv8Mod {
   
   @JSImport("mssql/msnodesqlv8", "PreparedStatement")
   @js.native
-  class PreparedStatement ()
+  open class PreparedStatement ()
     extends typings.mssql.mod.PreparedStatement {
     def this(connection: typings.mssql.mod.ConnectionPool) = this()
     def this(transaction: typings.mssql.mod.Transaction) = this()
@@ -190,16 +213,18 @@ object msnodesqlv8Mod {
   
   @JSImport("mssql/msnodesqlv8", "PreparedStatementError")
   @js.native
-  class PreparedStatementError protected ()
+  open class PreparedStatementError protected ()
     extends typings.mssql.mod.PreparedStatementError {
     def this(message: String) = this()
-    def this(message: String, code: js.Any) = this()
+    def this(message: js.Error) = this()
+    def this(message: String, code: String) = this()
+    def this(message: js.Error, code: String) = this()
   }
   
   @JSImport("mssql/msnodesqlv8", "Promise")
   @js.native
-  def Promise: js.Any = js.native
-  inline def Promise_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Promise")(x.asInstanceOf[js.Any])
+  def Promise: Any = js.native
+  inline def Promise_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Promise")(x.asInstanceOf[js.Any])
   
   @JSImport("mssql/msnodesqlv8", "Real")
   @js.native
@@ -208,7 +233,7 @@ object msnodesqlv8Mod {
   
   @JSImport("mssql/msnodesqlv8", "Request")
   @js.native
-  class Request ()
+  open class Request ()
     extends typings.mssql.mod.Request {
     def this(connection: typings.mssql.mod.ConnectionPool) = this()
     def this(preparedStatement: typings.mssql.mod.PreparedStatement) = this()
@@ -217,10 +242,12 @@ object msnodesqlv8Mod {
   
   @JSImport("mssql/msnodesqlv8", "RequestError")
   @js.native
-  class RequestError protected ()
+  open class RequestError protected ()
     extends typings.mssql.mod.RequestError {
     def this(message: String) = this()
-    def this(message: String, code: js.Any) = this()
+    def this(message: js.Error) = this()
+    def this(message: String, code: String) = this()
+    def this(message: js.Error, code: String) = this()
   }
   
   @JSImport("mssql/msnodesqlv8", "SmallDateTime")
@@ -424,7 +451,7 @@ object msnodesqlv8Mod {
     inline def SmallMoney_FTYPES_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SmallMoney")(x.asInstanceOf[js.Any])
     
     inline def TVP(): ISqlTypeWithTvpType = ^.asInstanceOf[js.Dynamic].applyDynamic("TVP")().asInstanceOf[ISqlTypeWithTvpType]
-    inline def TVP(tvpType: js.Any): ISqlTypeWithTvpType = ^.asInstanceOf[js.Dynamic].applyDynamic("TVP")(tvpType.asInstanceOf[js.Any]).asInstanceOf[ISqlTypeWithTvpType]
+    inline def TVP(tvpType: Any): ISqlTypeWithTvpType = ^.asInstanceOf[js.Dynamic].applyDynamic("TVP")(tvpType.asInstanceOf[js.Any]).asInstanceOf[ISqlTypeWithTvpType]
     @JSImport("mssql/msnodesqlv8", "TYPES.TVP")
     @js.native
     def TVP_FTYPES: ISqlTypeFactoryWithTvpType = js.native
@@ -500,7 +527,7 @@ object msnodesqlv8Mod {
   
   @JSImport("mssql/msnodesqlv8", "Table")
   @js.native
-  class Table ()
+  open class Table ()
     extends typings.mssql.mod.Table {
     def this(tableName: String) = this()
   }
@@ -522,17 +549,19 @@ object msnodesqlv8Mod {
   
   @JSImport("mssql/msnodesqlv8", "Transaction")
   @js.native
-  class Transaction ()
+  open class Transaction ()
     extends typings.mssql.mod.Transaction {
     def this(connection: typings.mssql.mod.ConnectionPool) = this()
   }
   
   @JSImport("mssql/msnodesqlv8", "TransactionError")
   @js.native
-  class TransactionError protected ()
+  open class TransactionError protected ()
     extends typings.mssql.mod.TransactionError {
     def this(message: String) = this()
-    def this(message: String, code: js.Any) = this()
+    def this(message: js.Error) = this()
+    def this(message: String, code: String) = this()
+    def this(message: js.Error, code: String) = this()
   }
   
   @JSImport("mssql/msnodesqlv8", "UDT")
@@ -565,6 +594,14 @@ object msnodesqlv8Mod {
   def Xml: ISqlTypeFactoryWithNoParams = js.native
   inline def Xml_=(x: ISqlTypeFactoryWithNoParams): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Xml")(x.asInstanceOf[js.Any])
   
+  inline def connect(config: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def connect(config: String, callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def connect(config: config): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def connect(config: config, callback: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def connect_Promise(config: String): js.Promise[typings.mssql.mod.ConnectionPool] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.mssql.mod.ConnectionPool]]
+  inline def connect_Promise(config: config): js.Promise[typings.mssql.mod.ConnectionPool] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.mssql.mod.ConnectionPool]]
+  
   @JSImport("mssql/msnodesqlv8", "fix")
   @js.native
   def fix: Boolean = js.native
@@ -577,6 +614,16 @@ object msnodesqlv8Mod {
   
   @JSImport("mssql/msnodesqlv8", "pool")
   @js.native
-  def pool: IPool = js.native
-  inline def pool_=(x: IPool): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pool")(x.asInstanceOf[js.Any])
+  def pool: typings.mssql.mod.ConnectionPool = js.native
+  inline def pool_=(x: typings.mssql.mod.ConnectionPool): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pool")(x.asInstanceOf[js.Any])
+  
+  inline def query(command: String): js.Promise[IResult[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(command.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IResult[Any]]]
+  inline def query(command: TemplateStringsArray, interpolations: Any*): js.Promise[IResult[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(List(command.asInstanceOf[js.Any]).`++`(interpolations.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Promise[IResult[Any]]]
+  inline def query[Entity](
+    command: String,
+    callback: js.Function2[/* err */ js.UndefOr[js.Error], /* recordset */ js.UndefOr[IResult[Entity]], Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(command.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def query_Entity[Entity](command: String): js.Promise[IResult[Entity]] = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(command.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IResult[Entity]]]
+  inline def query_Entity[Entity](command: TemplateStringsArray, interpolations: Any*): js.Promise[IResult[Entity]] = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(List(command.asInstanceOf[js.Any]).`++`(interpolations.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Promise[IResult[Entity]]]
 }

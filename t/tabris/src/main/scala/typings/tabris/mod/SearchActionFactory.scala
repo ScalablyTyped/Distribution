@@ -10,5 +10,5 @@ trait SearchActionFactory
   extends Factory[
       SearchActionConstructor, 
       InstanceType[SearchActionConstructor], 
-      js.Function1[/* repeated */ js.Any, InstanceType[SearchActionConstructor]]
+      js.Function1[/* repeated */ Any, Widget[Any]]
     ]

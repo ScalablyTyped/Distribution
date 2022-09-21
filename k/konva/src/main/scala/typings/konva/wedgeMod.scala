@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object wedgeMod {
   
-  @JSImport("konva/types/shapes/Wedge", "Wedge")
+  @JSImport("konva/lib/shapes/Wedge", "Wedge")
   @js.native
-  class Wedge () extends Shape[WedgeConfig] {
+  open class Wedge () extends Shape[WedgeConfig] {
     def this(config: WedgeConfig) = this()
     
-    def _sceneFunc(context: js.Any): Unit = js.native
+    def _sceneFunc(context: Any): Unit = js.native
     
     def angle(): Double = js.native
     def angle(v: Double): this.type = js.native
@@ -35,9 +35,9 @@ object wedgeMod {
     @JSName("radius")
     var radius_Original: GetSet[Double, this.type] = js.native
     
-    def setHeight(height: js.Any): Unit = js.native
+    def setHeight(height: Any): Unit = js.native
     
-    def setWidth(width: js.Any): Unit = js.native
+    def setWidth(width: Any): Unit = js.native
   }
   
   trait WedgeConfig

@@ -9,18 +9,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PhysicsImpostor extends StObject {
   
-  /* private */ var _bodyUpdateRequired: js.Any = js.native
+  /* private */ var _bodyUpdateRequired: Any = js.native
   
-  /* private */ var _deltaPosition: js.Any = js.native
+  /* private */ var _deltaPosition: Any = js.native
   
-  /* private */ var _deltaRotation: js.Any = js.native
+  /* private */ var _deltaRotation: Any = js.native
   
-  /* private */ var _deltaRotationConjugated: js.Any = js.native
+  /* private */ var _deltaRotationConjugated: Any = js.native
   
-  /* private */ var _getPhysicsParent: js.Any = js.native
+  /* private */ var _getPhysicsParent: Any = js.native
   
   /**
-    * This function will completly initialize this impostor.
+    * This function will completely initialize this impostor.
     * It will create a new body - but only if this mesh has no parent.
     * If it has, this impostor will not be used other than to define the impostor
     * of the child mesh.
@@ -28,43 +28,43 @@ trait PhysicsImpostor extends StObject {
     */
   def _init(): Unit = js.native
   
-  /* private */ var _isDisposed: js.Any = js.native
+  /* private */ var _isDisposed: Any = js.native
   
   /** @hidden */
   var _isFromLine: Boolean = js.native
   
-  /* private */ var _joints: js.Any = js.native
+  /* private */ var _joints: Any = js.native
   
-  /* private */ var _onAfterPhysicsStepCallbacks: js.Any = js.native
+  /* private */ var _onAfterPhysicsStepCallbacks: Any = js.native
   
-  /* private */ var _onBeforePhysicsStepCallbacks: js.Any = js.native
+  /* private */ var _onBeforePhysicsStepCallbacks: Any = js.native
   
   /** @hidden */
   var _onPhysicsCollideCallbacks: js.Array[OtherImpostors] = js.native
   
-  /* private */ var _options: js.Any = js.native
+  /* private */ var _options: Any = js.native
   
-  /* private */ var _parent: js.Any = js.native
+  /* private */ var _parent: Any = js.native
   
-  /* private */ var _physicsBody: js.Any = js.native
+  /* private */ var _physicsBody: Any = js.native
   
-  /* private */ var _physicsEngine: js.Any = js.native
+  /* private */ var _physicsEngine: Any = js.native
   
   /** @hidden */
-  var _pluginData: js.Any = js.native
+  var _pluginData: Any = js.native
   
-  /* private */ var _scene: js.Any = js.native
+  /* private */ var _scene: Any = js.native
   
-  /* private */ var _tmpQuat: js.Any = js.native
+  /* private */ var _tmpQuat: Any = js.native
   
-  /* private */ var _tmpQuat2: js.Any = js.native
+  /* private */ var _tmpQuat2: Any = js.native
   
   /**
     * Add an anchor to a cloth impostor
     * @param otherImpostor rigid impostor to anchor to
     * @param width ratio across width from 0 to 1
     * @param height ratio up height from 0 to 1
-    * @param influence the elasticity between cloth impostor and anchor from 0, very stretchy to 1, little strech
+    * @param influence the elasticity between cloth impostor and anchor from 0, very stretchy to 1, little stretch
     * @param noCollisionBetweenLinkedBodies when true collisions between cloth impostor and anchor are ignored; default false
     * @returns impostor the soft imposter
     */
@@ -80,7 +80,7 @@ trait PhysicsImpostor extends StObject {
     * Add a hook to a rope impostor
     * @param otherImpostor rigid impostor to anchor to
     * @param length ratio across rope from 0 to 1
-    * @param influence the elasticity between rope impostor and anchor from 0, very stretchy to 1, little strech
+    * @param influence the elasticity between rope impostor and anchor from 0, very stretchy to 1, little stretch
     * @param noCollisionBetweenLinkedBodies when true collisions between soft impostor and anchor are ignored; default false
     * @returns impostor the rope imposter
     */
@@ -151,11 +151,11 @@ trait PhysicsImpostor extends StObject {
     * Provide a function the will have two variables - the world object and the physics body object
     * @param func The function to execute with the physics plugin native code
     */
-  def executeNativeFunction(func: js.Function2[/* world */ js.Any, /* physicsBody */ js.Any, Unit]): Unit = js.native
+  def executeNativeFunction(func: js.Function2[/* world */ Any, /* physicsBody */ Any, Unit]): Unit = js.native
   
   /**
     * Force a regeneration of this or the parent's impostor's body.
-    * Use under cautious - This will remove all joints already implemented.
+    * Use with caution - This will remove all previously-instantiated joints.
     */
   def forceUpdate(): Unit = js.native
   
@@ -194,17 +194,17 @@ trait PhysicsImpostor extends StObject {
   def getObjectCenter(): Vector3 = js.native
   
   /**
-    * Gets the object extend size
-    * @returns the object extend size
+    * Gets the object extents
+    * @returns the object extents
     */
-  def getObjectExtendSize(): Vector3 = js.native
+  def getObjectExtents(): Vector3 = js.native
   
   /**
     * Get a specific parameter from the options parameters
     * @param paramName The object parameter name
     * @returns The object parameter
     */
-  def getParam(paramName: String): js.Any = js.native
+  def getParam(paramName: String): Any = js.native
   
   /**
     * Get the parent rotation
@@ -242,6 +242,9 @@ trait PhysicsImpostor extends StObject {
   
   /**
     * event and body object due to cannon's event-based architecture.
+    * @param e
+    * @param e.body
+    * @param e.point
     */
   def onCollide(e: Point): Unit = js.native
   
@@ -263,11 +266,11 @@ trait PhysicsImpostor extends StObject {
   /**
     * Gets the body that holds this impostor. Either its own, or its parent.
     */
-  def physicsBody: js.Any = js.native
+  def physicsBody: Any = js.native
   /**
     * Set the physics body. Used mainly by the physics engine/plugin
     */
-  def physicsBody_=(physicsBody: js.Any): Unit = js.native
+  def physicsBody_=(physicsBody: Any): Unit = js.native
   
   /**
     * Gets the positionIterations of a soft body; only supported by the AmmoJSPlugin
@@ -301,7 +304,12 @@ trait PhysicsImpostor extends StObject {
   
   def registerOnPhysicsCollide(
     collideAgainst: js.Array[PhysicsImpostor],
-    func: js.Function2[/* collider */ this.type, /* collidedAgainst */ this.type, Unit]
+    func: js.Function3[
+      /* collider */ this.type, 
+      /* collidedAgainst */ this.type, 
+      /* point */ Nullable[Vector3], 
+      Unit
+    ]
   ): Unit = js.native
   /**
     * register a function that will be executed when this impostor collides against a different body
@@ -310,7 +318,12 @@ trait PhysicsImpostor extends StObject {
     */
   def registerOnPhysicsCollide(
     collideAgainst: PhysicsImpostor,
-    func: js.Function2[/* collider */ this.type, /* collidedAgainst */ this.type, Unit]
+    func: js.Function3[
+      /* collider */ this.type, 
+      /* collidedAgainst */ this.type, 
+      /* point */ Nullable[Vector3], 
+      Unit
+    ]
   ): Unit = js.native
   
   /**
@@ -357,7 +370,7 @@ trait PhysicsImpostor extends StObject {
   def setLinearVelocity(velocity: Nullable[Vector3]): Unit = js.native
   
   /**
-    * Specifically change the body's mass option. Won't recreate the physics body object
+    * Specifically change the body's mass. Won't recreate the physics body object
     * @param mass The mass of the physics imposter
     */
   def setMass(mass: Double): Unit = js.native
@@ -371,7 +384,6 @@ trait PhysicsImpostor extends StObject {
   
   /**
     * Sets the updated scaling
-    * @param updated Specifies if the scaling is updated
     */
   def setScalingUpdated(): Unit = js.native
   
@@ -503,22 +515,24 @@ trait PhysicsImpostor extends StObject {
   
   def unregisterOnPhysicsCollide(
     collideAgainst: js.Array[PhysicsImpostor],
-    func: js.Function2[
+    func: js.Function3[
       /* collider */ this.type, 
       /* collidedAgainst */ this.type | js.Array[this.type], 
+      /* point */ Nullable[Vector3], 
       Unit
     ]
   ): Unit = js.native
   /**
-    * Unregisters the physics imposter on contact
+    * Unregisters the physics imposter's collision callback
     * @param collideAgainst The physics object to collide against
     * @param func Callback to execute on collision
     */
   def unregisterOnPhysicsCollide(
     collideAgainst: PhysicsImpostor,
-    func: js.Function2[
+    func: js.Function3[
       /* collider */ this.type, 
       /* collidedAgainst */ this.type | js.Array[this.type], 
+      /* point */ Nullable[Vector3], 
       Unit
     ]
   ): Unit = js.native

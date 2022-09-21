@@ -22,7 +22,7 @@ trait Diagram extends StObject {
   
   val Nodes: DiagramNodes
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Reverse: MsoTriState
   
@@ -41,7 +41,7 @@ object Diagram {
     Creator: Double,
     FitText: () => Unit,
     Nodes: DiagramNodes,
-    Parent: js.Any,
+    Parent: Any,
     Reverse: MsoTriState,
     Type: MsoDiagramType,
     WordDotDiagram_typekey: Diagram
@@ -67,7 +67,7 @@ object Diagram {
     
     inline def setNodes(value: DiagramNodes): Self = StObject.set(x, "Nodes", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setReverse(value: MsoTriState): Self = StObject.set(x, "Reverse", value.asInstanceOf[js.Any])
     

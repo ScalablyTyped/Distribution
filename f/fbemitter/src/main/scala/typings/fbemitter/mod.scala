@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("fbemitter", "EventEmitter")
   @js.native
-  class EventEmitter () extends StObject {
+  open class EventEmitter () extends StObject {
     
     /**
       * Adds a listener to be invoked when events of the specified type are
@@ -16,13 +16,13 @@ object mod {
       * emitted will be passed to the listener function.
       */
     def addListener(eventType: String, listener: js.Function): EventSubscription = js.native
-    def addListener(eventType: String, listener: js.Function, context: js.Any): EventSubscription = js.native
+    def addListener(eventType: String, listener: js.Function, context: Any): EventSubscription = js.native
     
     /**
       * Emits an event of the given type with the given data. All handlers of that
       * particular type will be notified.
       */
-    def emit(eventType: String, data: js.Any*): Unit = js.native
+    def emit(eventType: String, data: Any*): Unit = js.native
     
     /**
       * Returns an array of listeners that are currently registered for the given
@@ -35,7 +35,7 @@ object mod {
       * invoked once.
       */
     def once(eventType: String, listener: js.Function): EventSubscription = js.native
-    def once(eventType: String, listener: js.Function, context: js.Any): EventSubscription = js.native
+    def once(eventType: String, listener: js.Function, context: Any): EventSubscription = js.native
     
     /**
       * Removes all of the registered listeners, including those registered as
@@ -57,9 +57,9 @@ object mod {
   
   @JSImport("fbemitter", "EventSubscription")
   @js.native
-  class EventSubscription () extends StObject {
+  open class EventSubscription () extends StObject {
     
-    var context: js.Any = js.native
+    var context: Any = js.native
     
     var listener: js.Function = js.native
     

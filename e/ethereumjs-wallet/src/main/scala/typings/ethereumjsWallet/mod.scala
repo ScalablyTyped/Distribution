@@ -5,8 +5,7 @@ import typings.ethereumjsWallet.anon.CipherText
 import typings.ethereumjsWallet.anon.PartialV3Params
 import typings.ethereumjsWallet.hdkeyMod.EthereumHDKey
 import typings.ethereumjsWallet.thirdpartyMod.EtherWalletOptions
-import typings.node.Buffer
-import typings.std.RegExp
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ object mod {
   
   @JSImport("ethereumjs-wallet", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with Wallet {
     def this(privateKey: Buffer) = this()
@@ -88,14 +87,14 @@ object mod {
     /**
       * Create an instance where the address is valid against the supplied pattern (**this will be very slow**)
       */
-    inline def generateVanityAddress(pattern: RegExp): Wallet = ^.asInstanceOf[js.Dynamic].applyDynamic("generateVanityAddress")(pattern.asInstanceOf[js.Any]).asInstanceOf[Wallet]
+    inline def generateVanityAddress(pattern: js.RegExp): Wallet = ^.asInstanceOf[js.Dynamic].applyDynamic("generateVanityAddress")(pattern.asInstanceOf[js.Any]).asInstanceOf[Wallet]
   }
   
   @JSImport("ethereumjs-wallet", "hdkey")
   @js.native
-  class hdkey ()
+  open class hdkey ()
     extends typings.ethereumjsWallet.hdkeyMod.default {
-    def this(_hdkey: js.Any) = this()
+    def this(_hdkey: Any) = this()
   }
   /* static members */
   object hdkey {
@@ -427,16 +426,16 @@ object mod {
     /**
       * Returns the wallet's private key.
       */
-    /* private */ def privKey: js.Any = js.native
+    /* private */ def privKey: Any = js.native
     
-    /* private */ val privateKey: js.Any = js.native
+    /* private */ val privateKey: Any = js.native
     
     /**
       * Returns the wallet's public key.
       */
-    /* private */ def pubKey: js.Any = js.native
+    /* private */ def pubKey: Any = js.native
     
-    /* private */ var publicKey: js.Any = js.native
+    /* private */ var publicKey: Any = js.native
     
     /**
       * Returns an Etherem Version 3 Keystore Format object representing the wallet

@@ -91,10 +91,10 @@ object BuildingFieldStatistics {
     
     inline def setMostFrequentValues(value: js.Array[Double | String]): Self = StObject.set(x, "mostFrequentValues", value.asInstanceOf[js.Any])
     
-    inline def setMostFrequentValuesVarargs(value: (Double | String)*): Self = StObject.set(x, "mostFrequentValues", js.Array(value :_*))
+    inline def setMostFrequentValuesVarargs(value: (Double | String)*): Self = StObject.set(x, "mostFrequentValues", js.Array(value*))
     
     inline def setSubLayerIds(value: js.Array[Double]): Self = StObject.set(x, "subLayerIds", value.asInstanceOf[js.Any])
     
-    inline def setSubLayerIdsVarargs(value: Double*): Self = StObject.set(x, "subLayerIds", js.Array(value :_*))
+    inline def setSubLayerIdsVarargs(value: Double*): Self = StObject.set(x, "subLayerIds", js.Array(value*))
   }
 }

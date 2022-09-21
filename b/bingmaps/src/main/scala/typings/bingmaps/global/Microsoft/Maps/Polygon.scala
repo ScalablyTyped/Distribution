@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Microsoft.Maps.Polygon")
 @js.native
-class Polygon protected ()
+open class Polygon protected ()
   extends StObject
      with typings.bingmaps.Microsoft.Maps.Polygon {
   /**

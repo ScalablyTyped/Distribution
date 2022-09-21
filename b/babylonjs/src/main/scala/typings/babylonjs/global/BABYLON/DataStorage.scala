@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.DataStorage")
 @js.native
-class DataStorage ()
+open class DataStorage ()
   extends StObject
      with typings.babylonjs.BABYLON.DataStorage
 /* static members */
@@ -63,11 +63,11 @@ object DataStorage {
   
   @JSGlobal("BABYLON.DataStorage._GetStorage")
   @js.native
-  def _GetStorage: js.Any = js.native
-  inline def _GetStorage_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetStorage")(x.asInstanceOf[js.Any])
+  def _GetStorage: Any = js.native
+  inline def _GetStorage_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetStorage")(x.asInstanceOf[js.Any])
   
   @JSGlobal("BABYLON.DataStorage._Storage")
   @js.native
-  def _Storage: js.Any = js.native
-  inline def _Storage_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Storage")(x.asInstanceOf[js.Any])
+  def _Storage: Any = js.native
+  inline def _Storage_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Storage")(x.asInstanceOf[js.Any])
 }

@@ -31,6 +31,6 @@ object Resource {
     
     inline def setResourceParameters(value: js.Array[ResourceParameter]): Self = StObject.set(x, "resourceParameters", value.asInstanceOf[js.Any])
     
-    inline def setResourceParametersVarargs(value: ResourceParameter*): Self = StObject.set(x, "resourceParameters", js.Array(value :_*))
+    inline def setResourceParametersVarargs(value: ResourceParameter*): Self = StObject.set(x, "resourceParameters", js.Array(value*))
   }
 }

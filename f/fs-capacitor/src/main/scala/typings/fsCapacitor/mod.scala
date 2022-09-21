@@ -10,27 +10,29 @@ object mod {
   
   @JSImport("fs-capacitor", "ReadAfterDestroyedError")
   @js.native
-  class ReadAfterDestroyedError ()
+  open class ReadAfterDestroyedError ()
     extends StObject
        with Error {
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
   
   @JSImport("fs-capacitor", "ReadStream")
   @js.native
-  class ReadStream ()
+  open class ReadStream ()
     extends typings.node.fsMod.ReadStream {
     def this(opts: ReadableOptions) = this()
   }
   
   @JSImport("fs-capacitor", "WriteStream")
   @js.native
-  class WriteStream ()
+  open class WriteStream ()
     extends typings.node.fsMod.WriteStream {
     
     def createReadStream(): ReadStream = js.native

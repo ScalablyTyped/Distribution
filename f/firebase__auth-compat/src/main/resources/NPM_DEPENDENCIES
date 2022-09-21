@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@firebase/auth-compat" : "0.2.20"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@firebase/auth-compat" : "0.2.20"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

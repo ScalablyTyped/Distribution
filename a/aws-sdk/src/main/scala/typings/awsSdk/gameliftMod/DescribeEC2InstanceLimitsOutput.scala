@@ -24,6 +24,6 @@ object DescribeEC2InstanceLimitsOutput {
     
     inline def setEC2InstanceLimitsUndefined: Self = StObject.set(x, "EC2InstanceLimits", js.undefined)
     
-    inline def setEC2InstanceLimitsVarargs(value: EC2InstanceLimit*): Self = StObject.set(x, "EC2InstanceLimits", js.Array(value :_*))
+    inline def setEC2InstanceLimitsVarargs(value: EC2InstanceLimit*): Self = StObject.set(x, "EC2InstanceLimits", js.Array(value*))
   }
 }

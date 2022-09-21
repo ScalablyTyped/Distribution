@@ -12,7 +12,7 @@ trait DisassociateLexBotRequest extends StObject {
   var BotName: typings.awsSdk.connectMod.BotName
   
   /**
-    * The identifier of the Amazon Connect instance.
+    * The identifier of the Amazon Connect instance. You can find the instanceId in the ARN of the instance.
     */
   var InstanceId: typings.awsSdk.connectMod.InstanceId
   

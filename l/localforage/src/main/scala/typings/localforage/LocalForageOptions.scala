@@ -33,7 +33,7 @@ object LocalForageOptions {
     
     inline def setDriverUndefined: Self = StObject.set(x, "driver", js.undefined)
     
-    inline def setDriverVarargs(value: String*): Self = StObject.set(x, "driver", js.Array(value :_*))
+    inline def setDriverVarargs(value: String*): Self = StObject.set(x, "driver", js.Array(value*))
     
     inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     

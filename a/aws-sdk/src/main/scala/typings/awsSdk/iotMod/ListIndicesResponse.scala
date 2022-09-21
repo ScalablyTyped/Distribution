@@ -29,7 +29,7 @@ object ListIndicesResponse {
     
     inline def setIndexNamesUndefined: Self = StObject.set(x, "indexNames", js.undefined)
     
-    inline def setIndexNamesVarargs(value: IndexName*): Self = StObject.set(x, "indexNames", js.Array(value :_*))
+    inline def setIndexNamesVarargs(value: IndexName*): Self = StObject.set(x, "indexNames", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

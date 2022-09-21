@@ -32,7 +32,7 @@ trait LocalGatewayRouteTableVirtualInterfaceGroupAssociation extends StObject {
   var LocalGatewayVirtualInterfaceGroupId: js.UndefOr[typings.awsSdk.ec2Mod.LocalGatewayVirtualInterfaceGroupId] = js.undefined
   
   /**
-    * The AWS account ID that owns the local gateway virtual interface group association.
+    * The ID of the Amazon Web Services account that owns the local gateway virtual interface group association.
     */
   var OwnerId: js.UndefOr[String] = js.undefined
   
@@ -87,6 +87,6 @@ object LocalGatewayRouteTableVirtualInterfaceGroupAssociation {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

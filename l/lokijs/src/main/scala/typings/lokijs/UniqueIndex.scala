@@ -28,8 +28,8 @@ trait UniqueIndex[E /* <: js.Object */] extends StObject {
   
   /**
     * Updates a document's unique index given an updated object.
-    * @param  {Object} obj Original document object
-    * @param  {Object} doc New document object (likely the same as obj)
+    * @param obj Original document object
+    * @param doc New document object (likely the same as obj)
     */
-  def update(obj: E, doc: js.Any): Unit = js.native
+  def update(obj: E, doc: Any): Unit = js.native
 }

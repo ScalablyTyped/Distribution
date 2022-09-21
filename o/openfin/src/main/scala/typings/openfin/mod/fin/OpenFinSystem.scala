@@ -491,74 +491,16 @@ trait OpenFinSystem extends StObject {
   /**
     * Writes the passed message into both the log file and the console.
     */
-  @JSName("log")
-  def log_debug(level: debug, message: String): Unit = js.native
-  @JSName("log")
-  def log_debug(level: debug, message: String, callback: js.Function0[Unit]): Unit = js.native
-  @JSName("log")
-  def log_debug(
-    level: debug,
+  def log(level: debug | info | warn | error, message: String): Unit = js.native
+  def log(level: debug | info | warn | error, message: String, callback: js.Function0[Unit]): Unit = js.native
+  def log(
+    level: debug | info | warn | error,
     message: String,
     callback: js.Function0[Unit],
     errorCallback: js.Function1[/* reason */ String, Unit]
   ): Unit = js.native
-  @JSName("log")
-  def log_debug(
-    level: debug,
-    message: String,
-    callback: Unit,
-    errorCallback: js.Function1[/* reason */ String, Unit]
-  ): Unit = js.native
-  @JSName("log")
-  def log_error(level: error, message: String): Unit = js.native
-  @JSName("log")
-  def log_error(level: error, message: String, callback: js.Function0[Unit]): Unit = js.native
-  @JSName("log")
-  def log_error(
-    level: error,
-    message: String,
-    callback: js.Function0[Unit],
-    errorCallback: js.Function1[/* reason */ String, Unit]
-  ): Unit = js.native
-  @JSName("log")
-  def log_error(
-    level: error,
-    message: String,
-    callback: Unit,
-    errorCallback: js.Function1[/* reason */ String, Unit]
-  ): Unit = js.native
-  @JSName("log")
-  def log_info(level: info, message: String): Unit = js.native
-  @JSName("log")
-  def log_info(level: info, message: String, callback: js.Function0[Unit]): Unit = js.native
-  @JSName("log")
-  def log_info(
-    level: info,
-    message: String,
-    callback: js.Function0[Unit],
-    errorCallback: js.Function1[/* reason */ String, Unit]
-  ): Unit = js.native
-  @JSName("log")
-  def log_info(
-    level: info,
-    message: String,
-    callback: Unit,
-    errorCallback: js.Function1[/* reason */ String, Unit]
-  ): Unit = js.native
-  @JSName("log")
-  def log_warn(level: warn, message: String): Unit = js.native
-  @JSName("log")
-  def log_warn(level: warn, message: String, callback: js.Function0[Unit]): Unit = js.native
-  @JSName("log")
-  def log_warn(
-    level: warn,
-    message: String,
-    callback: js.Function0[Unit],
-    errorCallback: js.Function1[/* reason */ String, Unit]
-  ): Unit = js.native
-  @JSName("log")
-  def log_warn(
-    level: warn,
+  def log(
+    level: debug | info | warn | error,
     message: String,
     callback: Unit,
     errorCallback: js.Function1[/* reason */ String, Unit]

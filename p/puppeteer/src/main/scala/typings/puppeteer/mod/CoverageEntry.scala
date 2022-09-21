@@ -7,10 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CoverageEntry extends StObject {
   
+  /**
+    * The covered range as start and end positions.
+    */
   var ranges: js.Array[End]
   
+  /**
+    * The content of the style sheet or script.
+    */
   var text: String
   
+  /**
+    * The URL of the style sheet or script.
+    */
   var url: String
 }
 object CoverageEntry {
@@ -24,7 +33,7 @@ object CoverageEntry {
     
     inline def setRanges(value: js.Array[End]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
     
-    inline def setRangesVarargs(value: End*): Self = StObject.set(x, "ranges", js.Array(value :_*))
+    inline def setRangesVarargs(value: End*): Self = StObject.set(x, "ranges", js.Array(value*))
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

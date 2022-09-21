@@ -10,10 +10,10 @@ object gamesMod {
   
   @JSImport("material-ui/svg-icons/av/games", JSImport.Default)
   @js.native
-  class default () extends AvGames
+  open class default () extends AvGames
   
   @JSImport("material-ui/svg-icons/av/games", "AvGames")
   @js.native
-  class AvGames ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvGames ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

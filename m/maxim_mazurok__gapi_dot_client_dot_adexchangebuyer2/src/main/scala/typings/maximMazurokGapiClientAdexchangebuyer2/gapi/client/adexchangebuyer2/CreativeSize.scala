@@ -40,13 +40,13 @@ object CreativeSize {
     
     inline def setAllowedFormatsUndefined: Self = StObject.set(x, "allowedFormats", js.undefined)
     
-    inline def setAllowedFormatsVarargs(value: String*): Self = StObject.set(x, "allowedFormats", js.Array(value :_*))
+    inline def setAllowedFormatsVarargs(value: String*): Self = StObject.set(x, "allowedFormats", js.Array(value*))
     
     inline def setCompanionSizes(value: js.Array[Size]): Self = StObject.set(x, "companionSizes", value.asInstanceOf[js.Any])
     
     inline def setCompanionSizesUndefined: Self = StObject.set(x, "companionSizes", js.undefined)
     
-    inline def setCompanionSizesVarargs(value: Size*): Self = StObject.set(x, "companionSizes", js.Array(value :_*))
+    inline def setCompanionSizesVarargs(value: Size*): Self = StObject.set(x, "companionSizes", js.Array(value*))
     
     inline def setCreativeSizeType(value: String): Self = StObject.set(x, "creativeSizeType", value.asInstanceOf[js.Any])
     

@@ -25,6 +25,11 @@ trait TransitGatewayRouteTablePropagation extends StObject {
     * The ID of the attachment.
     */
   var TransitGatewayAttachmentId: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The ID of the transit gateway route table announcement.
+    */
+  var TransitGatewayRouteTableAnnouncementId: js.UndefOr[typings.awsSdk.ec2Mod.TransitGatewayRouteTableAnnouncementId] = js.undefined
 }
 object TransitGatewayRouteTablePropagation {
   
@@ -50,5 +55,9 @@ object TransitGatewayRouteTablePropagation {
     inline def setTransitGatewayAttachmentId(value: String): Self = StObject.set(x, "TransitGatewayAttachmentId", value.asInstanceOf[js.Any])
     
     inline def setTransitGatewayAttachmentIdUndefined: Self = StObject.set(x, "TransitGatewayAttachmentId", js.undefined)
+    
+    inline def setTransitGatewayRouteTableAnnouncementId(value: TransitGatewayRouteTableAnnouncementId): Self = StObject.set(x, "TransitGatewayRouteTableAnnouncementId", value.asInstanceOf[js.Any])
+    
+    inline def setTransitGatewayRouteTableAnnouncementIdUndefined: Self = StObject.set(x, "TransitGatewayRouteTableAnnouncementId", js.undefined)
   }
 }

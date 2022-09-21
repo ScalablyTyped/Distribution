@@ -42,6 +42,6 @@ object AuditMitigationActionsTaskTarget {
     
     inline def setFindingIdsUndefined: Self = StObject.set(x, "findingIds", js.undefined)
     
-    inline def setFindingIdsVarargs(value: FindingId*): Self = StObject.set(x, "findingIds", js.Array(value :_*))
+    inline def setFindingIdsVarargs(value: FindingId*): Self = StObject.set(x, "findingIds", js.Array(value*))
   }
 }

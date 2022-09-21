@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "CreateDisputeEvidenceFileRequest")
 @js.native
-class CreateDisputeEvidenceFileRequest () extends StObject {
+open class CreateDisputeEvidenceFileRequest () extends StObject {
   
   /**
     * The MIME type of the uploaded file. One of image/heic, image/heif, image/jpeg, application/pdf,  image/png, image/tiff.

@@ -12,7 +12,7 @@ trait MeshCreateFromGLTFParams
      with Object {
   
   /**
-    * Whether the model coordinates should be relative to the geographic or the projected coordinate system (PCS).
+    * Whether to georeference relative to the globe or the projected coordinate system (PCS).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createFromGLTF)
     */

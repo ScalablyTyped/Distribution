@@ -89,6 +89,33 @@ object tabCapture {
   
   type CaptureStatusChangedEvent = Event[js.Function1[/* info */ typings.chrome.chrome.tabCapture.CaptureInfo, Unit]]
   
+  trait GetMediaStreamOptions extends StObject {
+    
+    /** Optional tab id of the tab which will later invoke getUserMedia() to consume the stream. If not specified then the resulting stream can be used only by the calling extension. The stream can only be used by frames in the given tab whose security origin matches the consumber tab's origin. The tab's origin must be a secure origin, e.g. HTTPS. */
+    var consumerTabId: js.UndefOr[Double] = js.undefined
+    
+    /** Optional tab id of the tab which will be captured. If not specified then the current active tab will be selected. Only tabs for which the extension has been granted the activeTab permission can be used as the target tab. */
+    var targetTabId: js.UndefOr[Double] = js.undefined
+  }
+  object GetMediaStreamOptions {
+    
+    inline def apply(): GetMediaStreamOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[GetMediaStreamOptions]
+    }
+    
+    extension [Self <: GetMediaStreamOptions](x: Self) {
+      
+      inline def setConsumerTabId(value: Double): Self = StObject.set(x, "consumerTabId", value.asInstanceOf[js.Any])
+      
+      inline def setConsumerTabIdUndefined: Self = StObject.set(x, "consumerTabId", js.undefined)
+      
+      inline def setTargetTabId(value: Double): Self = StObject.set(x, "targetTabId", value.asInstanceOf[js.Any])
+      
+      inline def setTargetTabIdUndefined: Self = StObject.set(x, "targetTabId", js.undefined)
+    }
+  }
+  
   trait MediaStreamConstraint extends StObject {
     
     var mandatory: js.Object

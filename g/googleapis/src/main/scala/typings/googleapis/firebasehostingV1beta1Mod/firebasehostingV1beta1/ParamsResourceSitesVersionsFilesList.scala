@@ -1,9 +1,5 @@
 package typings.googleapis.firebasehostingV1beta1Mod.firebasehostingV1beta1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,30 +9,22 @@ trait ParamsResourceSitesVersionsFilesList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * The page size to return. Defaults to 1000.
+    * The maximum number of version files to return. The service may return a lower number if fewer version files exist than this maximum number. If unspecified, defaults to 1000.
     */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * The next_page_token from a previous request, if provided. This will be
-    * the encoded version of a
-    * firebase.hosting.proto.metadata.ListFilesPageToken.
+    * A token from a previous call to `ListVersionFiles` that tells the server where to resume listing.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * Required. The parent to list files for, in the format:
-    * <code>sites/<var>site-name</var>/versions/<var>versionID</var></code>
+    * Required. The version for which to list files, in the format: sites/SITE_ID /versions/VERSION_ID
     */
   var parent: js.UndefOr[String] = js.undefined
   
   /**
-    * The type of files in the version that should be listed.
+    *  The type of files that should be listed for the specified version.
     */
   var status: js.UndefOr[String] = js.undefined
 }
@@ -48,10 +36,6 @@ object ParamsResourceSitesVersionsFilesList {
   }
   
   extension [Self <: ParamsResourceSitesVersionsFilesList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     

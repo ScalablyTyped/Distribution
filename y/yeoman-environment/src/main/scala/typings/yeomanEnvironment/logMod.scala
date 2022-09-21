@@ -28,7 +28,7 @@ object logMod {
     */
   type ColorMap[TKeys /* <: String | Double | js.Symbol */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in TKeys ]: / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Color * / any | / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Modifiers * / any}
-    */ typings.yeomanEnvironment.yeomanEnvironmentStrings.ColorMap & TopLevel[js.Any]
+    */ typings.yeomanEnvironment.yeomanEnvironmentStrings.ColorMap & TopLevel[Any]
   
   /**
     * Provides default color-categories.
@@ -63,7 +63,7 @@ object logMod {
   /**
     * Provides the functionality to log messages.
     */
-  type Logger[TCategories /* <: String | Double | js.Symbol */] = EventEmitter & typings.yeomanEnvironment.yeomanEnvironmentStrings.Logger & TopLevel[js.Any] & Call
+  type Logger[TCategories /* <: String | Double | js.Symbol */] = EventEmitter & typings.yeomanEnvironment.yeomanEnvironmentStrings.Logger & TopLevel[Any] & Call[TCategories]
   
   /**
     * Provides options for creating a logger.

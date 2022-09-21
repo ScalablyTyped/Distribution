@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - Dropped new (args : ...any): react-native.react-native.ScrollResponderMixin
 - Dropped new (args : ...any): react-native.react-native.TimerMixin */ @JSImport("react-native", "ListView")
 @js.native
-class ListView ()
-  extends Component[ListViewProps, js.Object, js.Any] {
+open class ListView ()
+  extends Component[ListViewProps, js.Object, Any] {
   
   /**
     * Exports some data, e.g. for perf investigations or analytics.
@@ -21,7 +21,7 @@ class ListView ()
   /**
     * Provides a handle to the underlying scroll responder.
     */
-  def getScrollResponder(): js.Any = js.native
+  def getScrollResponder(): Any = js.native
   
   /**
     * Scrolls to a given x, y offset, either immediately or with a smooth animation.

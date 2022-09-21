@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object createContentHashMod {
   
-  @JSImport("treat/lib/types/createContentHash", JSImport.Namespace)
+  @JSImport("treat/dist/declarations/src/createContentHash", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createContentHash(content: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createContentHash")(content.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def createContentHash(content: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createContentHash")(content.asInstanceOf[js.Any]).asInstanceOf[String]
 }

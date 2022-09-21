@@ -1,6 +1,6 @@
 package typings.cathoQuantum
 
-import typings.cathoQuantum.anon.Spacing
+import typings.cathoQuantum.anon.ColorsComponents
 import typings.cathoQuantum.cathoQuantumStrings.error
 import typings.cathoQuantum.cathoQuantumStrings.large
 import typings.cathoQuantum.cathoQuantumStrings.medium
@@ -27,7 +27,7 @@ object iconButtonMod {
     
     var skin: js.UndefOr[neutral | primary | secondary | success | warning | error] = js.undefined
     
-    var theme: js.UndefOr[Spacing] = js.undefined
+    var theme: js.UndefOr[ColorsComponents] = js.undefined
   }
   object IconButtonProps {
     
@@ -46,7 +46,7 @@ object iconButtonMod {
       
       inline def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
       
-      inline def setTheme(value: Spacing): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ColorsComponents): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
       inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }

@@ -10,15 +10,12 @@ Create and modify trie prefix structures, extract word lists including anagrams 
 | ------------------ | :-------------: |
 | Full name          | trie-prefix-tree |
 | Keywords           | javascript, trie, words |
-| # releases         | 2 |
-| # dependents       | 6 |
-| # downloads        | 75266 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 29032.0 |
+| # stars            | 43.0 |
 
 ## Links
-- [Homepage](https://github.com/lyndseybrowning/trie-prefix#readme)
-- [Bugs](https://github.com/lyndseybrowning/trie-prefix/issues)
-- [Repository](https://github.com/lyndseybrowning/trie-prefix-tree)
 - [Npm](https://www.npmjs.com/package/trie-prefix-tree)
     
 

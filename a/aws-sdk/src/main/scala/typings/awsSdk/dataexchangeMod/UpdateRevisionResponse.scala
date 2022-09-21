@@ -19,7 +19,7 @@ trait UpdateRevisionResponse extends StObject {
   /**
     * The date and time that the revision was created, in ISO 8601 format.
     */
-  var CreatedAt: js.UndefOr[Timestamp] = js.undefined
+  var CreatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The unique identifier for the data set associated with this revision.
@@ -37,6 +37,21 @@ trait UpdateRevisionResponse extends StObject {
   var Id: js.UndefOr[typings.awsSdk.dataexchangeMod.Id] = js.undefined
   
   /**
+    * A required comment to inform subscribers of the reason their access to the revision was revoked.
+    */
+  var RevocationComment: js.UndefOr[stringMin10Max512] = js.undefined
+  
+  /**
+    * A status indicating that subscribers' access to the revision was revoked.
+    */
+  var Revoked: js.UndefOr[boolean] = js.undefined
+  
+  /**
+    * The date and time that the revision was revoked, in ISO 8601 format.
+    */
+  var RevokedAt: js.UndefOr[js.Date] = js.undefined
+  
+  /**
     * The revision ID of the owned revision corresponding to the entitled revision being viewed. This parameter is returned when a revision owner is viewing the entitled copy of its owned revision.
     */
   var SourceId: js.UndefOr[Id] = js.undefined
@@ -44,7 +59,7 @@ trait UpdateRevisionResponse extends StObject {
   /**
     * The date and time that the revision was last updated, in ISO 8601 format.
     */
-  var UpdatedAt: js.UndefOr[Timestamp] = js.undefined
+  var UpdatedAt: js.UndefOr[js.Date] = js.undefined
 }
 object UpdateRevisionResponse {
   
@@ -63,7 +78,7 @@ object UpdateRevisionResponse {
     
     inline def setCommentUndefined: Self = StObject.set(x, "Comment", js.undefined)
     
-    inline def setCreatedAt(value: Timestamp): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
@@ -79,11 +94,23 @@ object UpdateRevisionResponse {
     
     inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
+    inline def setRevocationComment(value: stringMin10Max512): Self = StObject.set(x, "RevocationComment", value.asInstanceOf[js.Any])
+    
+    inline def setRevocationCommentUndefined: Self = StObject.set(x, "RevocationComment", js.undefined)
+    
+    inline def setRevoked(value: boolean): Self = StObject.set(x, "Revoked", value.asInstanceOf[js.Any])
+    
+    inline def setRevokedAt(value: js.Date): Self = StObject.set(x, "RevokedAt", value.asInstanceOf[js.Any])
+    
+    inline def setRevokedAtUndefined: Self = StObject.set(x, "RevokedAt", js.undefined)
+    
+    inline def setRevokedUndefined: Self = StObject.set(x, "Revoked", js.undefined)
+    
     inline def setSourceId(value: Id): Self = StObject.set(x, "SourceId", value.asInstanceOf[js.Any])
     
     inline def setSourceIdUndefined: Self = StObject.set(x, "SourceId", js.undefined)
     
-    inline def setUpdatedAt(value: Timestamp): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
+    inline def setUpdatedAt(value: js.Date): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
     
     inline def setUpdatedAtUndefined: Self = StObject.set(x, "UpdatedAt", js.undefined)
   }

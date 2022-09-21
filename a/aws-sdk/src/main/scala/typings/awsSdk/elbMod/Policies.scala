@@ -34,18 +34,18 @@ object Policies {
     
     inline def setAppCookieStickinessPoliciesUndefined: Self = StObject.set(x, "AppCookieStickinessPolicies", js.undefined)
     
-    inline def setAppCookieStickinessPoliciesVarargs(value: AppCookieStickinessPolicy*): Self = StObject.set(x, "AppCookieStickinessPolicies", js.Array(value :_*))
+    inline def setAppCookieStickinessPoliciesVarargs(value: AppCookieStickinessPolicy*): Self = StObject.set(x, "AppCookieStickinessPolicies", js.Array(value*))
     
     inline def setLBCookieStickinessPolicies(value: LBCookieStickinessPolicies): Self = StObject.set(x, "LBCookieStickinessPolicies", value.asInstanceOf[js.Any])
     
     inline def setLBCookieStickinessPoliciesUndefined: Self = StObject.set(x, "LBCookieStickinessPolicies", js.undefined)
     
-    inline def setLBCookieStickinessPoliciesVarargs(value: LBCookieStickinessPolicy*): Self = StObject.set(x, "LBCookieStickinessPolicies", js.Array(value :_*))
+    inline def setLBCookieStickinessPoliciesVarargs(value: LBCookieStickinessPolicy*): Self = StObject.set(x, "LBCookieStickinessPolicies", js.Array(value*))
     
     inline def setOtherPolicies(value: PolicyNames): Self = StObject.set(x, "OtherPolicies", value.asInstanceOf[js.Any])
     
     inline def setOtherPoliciesUndefined: Self = StObject.set(x, "OtherPolicies", js.undefined)
     
-    inline def setOtherPoliciesVarargs(value: PolicyName*): Self = StObject.set(x, "OtherPolicies", js.Array(value :_*))
+    inline def setOtherPoliciesVarargs(value: PolicyName*): Self = StObject.set(x, "OtherPolicies", js.Array(value*))
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetReservationPurchaseRecommendationRequest extends StObject {
   
   /**
-    * The account ID that is associated with the recommendation. 
+    * The account ID that's associated with the recommendation. 
     */
   var AccountId: js.UndefOr[GenericString] = js.undefined
   
@@ -16,8 +16,10 @@ trait GetReservationPurchaseRecommendationRequest extends StObject {
     */
   var AccountScope: js.UndefOr[typings.awsSdk.costexplorerMod.AccountScope] = js.undefined
   
+  var Filter: js.UndefOr[Expression] = js.undefined
+  
   /**
-    * The number of previous days that you want AWS to consider when it calculates your recommendations.
+    * The number of previous days that you want Amazon Web Services to consider when it calculates your recommendations.
     */
   var LookbackPeriodInDays: js.UndefOr[typings.awsSdk.costexplorerMod.LookbackPeriodInDays] = js.undefined
   
@@ -67,6 +69,10 @@ object GetReservationPurchaseRecommendationRequest {
     inline def setAccountScope(value: AccountScope): Self = StObject.set(x, "AccountScope", value.asInstanceOf[js.Any])
     
     inline def setAccountScopeUndefined: Self = StObject.set(x, "AccountScope", js.undefined)
+    
+    inline def setFilter(value: Expression): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+    
+    inline def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
     
     inline def setLookbackPeriodInDays(value: LookbackPeriodInDays): Self = StObject.set(x, "LookbackPeriodInDays", value.asInstanceOf[js.Any])
     

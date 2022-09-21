@@ -6,26 +6,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RunRealtimeReportRequest extends StObject {
   
-  /** The filter clause of dimensions. Dimensions must be requested to be used in this filter. Metrics cannot be used in this filter. */
+  /** The filter clause of dimensions. Metrics cannot be used in this filter. */
   var dimensionFilter: js.UndefOr[FilterExpression] = js.undefined
   
   /** The dimensions requested and displayed. */
   var dimensions: js.UndefOr[js.Array[Dimension]] = js.undefined
   
-  /** The number of rows to return. If unspecified, 10 rows are returned. If -1, all rows are returned. */
+  /**
+    * The number of rows to return. If unspecified, 10,000 rows are returned. The API returns a maximum of 100,000 rows per request, no matter how many you ask for. `limit` must be
+    * positive. The API can also return fewer rows than the requested `limit`, if there aren't as many dimension values as the `limit`. For instance, there are fewer than 300 possible
+    * values for the dimension `country`, so when reporting on only `country`, you can't get more than 300 rows, even if you set `limit` to a higher value.
+    */
   var limit: js.UndefOr[String] = js.undefined
   
   /** Aggregation of metrics. Aggregated metric values will be shown in rows where the dimension_values are set to "RESERVED_(MetricAggregation)". */
   var metricAggregations: js.UndefOr[js.Array[String]] = js.undefined
   
-  /**
-    * The filter clause of metrics. Applied at post aggregation phase, similar to SQL having-clause. Metrics must be requested to be used in this filter. Dimensions cannot be used in this
-    * filter.
-    */
+  /** The filter clause of metrics. Applied at post aggregation phase, similar to SQL having-clause. Dimensions cannot be used in this filter. */
   var metricFilter: js.UndefOr[FilterExpression] = js.undefined
   
   /** The metrics requested and displayed. */
   var metrics: js.UndefOr[js.Array[Metric]] = js.undefined
+  
+  /**
+    * The minute ranges of event data to read. If unspecified, one minute range for the last 30 minutes will be used. If multiple minute ranges are requested, each response row will
+    * contain a zero based minute range index. If two minute ranges overlap, the event data for the overlapping minutes is included in the response rows for both minute ranges.
+    */
+  var minuteRanges: js.UndefOr[js.Array[MinuteRange]] = js.undefined
   
   /** Specifies how rows are ordered in the response. */
   var orderBys: js.UndefOr[js.Array[OrderBy]] = js.undefined
@@ -50,7 +57,7 @@ object RunRealtimeReportRequest {
     
     inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
     
-    inline def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+    inline def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "dimensions", js.Array(value*))
     
     inline def setLimit(value: String): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
@@ -60,7 +67,7 @@ object RunRealtimeReportRequest {
     
     inline def setMetricAggregationsUndefined: Self = StObject.set(x, "metricAggregations", js.undefined)
     
-    inline def setMetricAggregationsVarargs(value: String*): Self = StObject.set(x, "metricAggregations", js.Array(value :_*))
+    inline def setMetricAggregationsVarargs(value: String*): Self = StObject.set(x, "metricAggregations", js.Array(value*))
     
     inline def setMetricFilter(value: FilterExpression): Self = StObject.set(x, "metricFilter", value.asInstanceOf[js.Any])
     
@@ -70,13 +77,19 @@ object RunRealtimeReportRequest {
     
     inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
-    inline def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "metrics", js.Array(value*))
+    
+    inline def setMinuteRanges(value: js.Array[MinuteRange]): Self = StObject.set(x, "minuteRanges", value.asInstanceOf[js.Any])
+    
+    inline def setMinuteRangesUndefined: Self = StObject.set(x, "minuteRanges", js.undefined)
+    
+    inline def setMinuteRangesVarargs(value: MinuteRange*): Self = StObject.set(x, "minuteRanges", js.Array(value*))
     
     inline def setOrderBys(value: js.Array[OrderBy]): Self = StObject.set(x, "orderBys", value.asInstanceOf[js.Any])
     
     inline def setOrderBysUndefined: Self = StObject.set(x, "orderBys", js.undefined)
     
-    inline def setOrderBysVarargs(value: OrderBy*): Self = StObject.set(x, "orderBys", js.Array(value :_*))
+    inline def setOrderBysVarargs(value: OrderBy*): Self = StObject.set(x, "orderBys", js.Array(value*))
     
     inline def setReturnPropertyQuota(value: Boolean): Self = StObject.set(x, "returnPropertyQuota", value.asInstanceOf[js.Any])
     

@@ -6,5 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("tabris.EventObject")
 @js.native
-class EventObject[TargetType] ()
+/**
+  * Base class for all events fired by the framework. Instances may include additional properties, which
+  * are documented together with the event type. Change events also have a `value` property. 
+  * When the trigger method is called with a new instance of `EventObject`, `type`, `target` and
+  * `timeStamp` are initialized automatically.
+  */
+open class EventObject[TargetType] ()
   extends typings.tabris.mod.EventObject[TargetType]

@@ -10,10 +10,10 @@ Simple, customizable draggable timetable.
 | ------------------ | :-------------: |
 | Full name          | drag-timetable |
 | Keywords           | timetable, schedule |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 780 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 68.33333333333333 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/DJAndries/drag-timetable#readme)

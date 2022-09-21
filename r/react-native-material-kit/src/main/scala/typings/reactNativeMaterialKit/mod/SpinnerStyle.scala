@@ -21,6 +21,6 @@ object SpinnerStyle {
     
     inline def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
     
-    inline def setStrokeColorVarargs(value: String*): Self = StObject.set(x, "strokeColor", js.Array(value :_*))
+    inline def setStrokeColorVarargs(value: String*): Self = StObject.set(x, "strokeColor", js.Array(value*))
   }
 }

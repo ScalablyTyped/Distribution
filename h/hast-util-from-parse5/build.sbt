@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "hast-util-from-parse5"
-version := "6.0.0-f036f3"
-scalaVersion := "2.13.3"
+version := "7.1.0-bc187d"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped" %%% "parse5" % "5.0-dt-20200515Z-a5c018",
-  "org.scalablytyped" %%% "std" % "3.9-bafc13",
-  "org.scalablytyped" %%% "unist" % "2.0-dt-20190213Z-95e8cb",
-  "org.scalablytyped" %%% "vfile" % "4.2.0-722c9d",
-  "org.scalablytyped" %%% "vfile-message" % "2.0.4-60ed86")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped" %%% "hast" % "2.3-dt-20211202Z-8aa810",
+  "org.scalablytyped" %%% "node" % "18.7-dt-20220913Z-77cc8d",
+  "org.scalablytyped" %%% "property-information" % "6.1.1-c1ad28",
+  "org.scalablytyped" %%% "std" % "4.8-958c79",
+  "org.scalablytyped" %%% "unist" % "2.0-dt-20220624Z-f6f04e",
+  "org.scalablytyped" %%% "vfile" % "5.3.5-edd597",
+  "org.scalablytyped" %%% "vfile-message" % "3.1.2-0f5a3e")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalablyTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

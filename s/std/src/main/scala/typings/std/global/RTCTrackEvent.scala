@@ -8,8 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("RTCTrackEvent")
 @js.native
-class RTCTrackEvent protected ()
+open class RTCTrackEvent protected ()
   extends StObject
      with typings.std.RTCTrackEvent {
+  /* standard dom */
   def this(`type`: java.lang.String, eventInitDict: RTCTrackEventInit) = this()
 }

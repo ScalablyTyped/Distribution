@@ -1,17 +1,41 @@
 package typings.reactNative.mod
 
+import typings.reactNative.reactNativeStrings.`birthdate-day`
+import typings.reactNative.reactNativeStrings.`birthdate-full`
+import typings.reactNative.reactNativeStrings.`birthdate-month`
+import typings.reactNative.reactNativeStrings.`birthdate-year`
 import typings.reactNative.reactNativeStrings.`cc-csc`
+import typings.reactNative.reactNativeStrings.`cc-exp-day`
 import typings.reactNative.reactNativeStrings.`cc-exp-month`
 import typings.reactNative.reactNativeStrings.`cc-exp-year`
 import typings.reactNative.reactNativeStrings.`cc-exp`
 import typings.reactNative.reactNativeStrings.`cc-number`
+import typings.reactNative.reactNativeStrings.`name-family`
+import typings.reactNative.reactNativeStrings.`name-given`
+import typings.reactNative.reactNativeStrings.`name-middle-initial`
+import typings.reactNative.reactNativeStrings.`name-middle`
+import typings.reactNative.reactNativeStrings.`name-prefix`
+import typings.reactNative.reactNativeStrings.`name-suffix`
+import typings.reactNative.reactNativeStrings.`password-new`
+import typings.reactNative.reactNativeStrings.`postal-address-country`
+import typings.reactNative.reactNativeStrings.`postal-address-extended-postal-code`
+import typings.reactNative.reactNativeStrings.`postal-address-extended`
+import typings.reactNative.reactNativeStrings.`postal-address-locality`
+import typings.reactNative.reactNativeStrings.`postal-address-region`
+import typings.reactNative.reactNativeStrings.`postal-address`
 import typings.reactNative.reactNativeStrings.`postal-code`
+import typings.reactNative.reactNativeStrings.`sms-otp`
 import typings.reactNative.reactNativeStrings.`street-address`
+import typings.reactNative.reactNativeStrings.`tel-country-code`
+import typings.reactNative.reactNativeStrings.`tel-device`
+import typings.reactNative.reactNativeStrings.`tel-national`
+import typings.reactNative.reactNativeStrings.`username-new`
 import typings.reactNative.reactNativeStrings.auto
 import typings.reactNative.reactNativeStrings.balanced
 import typings.reactNative.reactNativeStrings.bottom
 import typings.reactNative.reactNativeStrings.center
 import typings.reactNative.reactNativeStrings.email
+import typings.reactNative.reactNativeStrings.gender
 import typings.reactNative.reactNativeStrings.highQuality
 import typings.reactNative.reactNativeStrings.name
 import typings.reactNative.reactNativeStrings.no
@@ -31,30 +55,62 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TextInputAndroidProps extends StObject {
   
   /**
-    * Determines which content to suggest on auto complete, e.g.`username`.
-    * To disable auto complete, use `off`.
+    * Specifies autocomplete hints for the system, so it can provide autofill. On Android, the system will always attempt to offer autofill by using heuristics to identify the type of content.
+    * To disable autocomplete, set `autoComplete` to `off`.
     *
     * *Android Only*
     *
-    * The following values work on Android only:
+    * Possible values for `autoComplete` are:
     *
-    * - `username`
-    * - `password`
-    * - `email`
-    * - `name`
-    * - `tel`
-    * - `street-address`
-    * - `postal-code`
-    * - `cc-number`
+    * - `birthdate-day`
+    * - `birthdate-full`
+    * - `birthdate-month`
+    * - `birthdate-year`
     * - `cc-csc`
     * - `cc-exp`
+    * - `cc-exp-day`
     * - `cc-exp-month`
     * - `cc-exp-year`
+    * - `cc-number`
+    * - `email`
+    * - `gender`
+    * - `name`
+    * - `name-family`
+    * - `name-given`
+    * - `name-middle`
+    * - `name-middle-initial`
+    * - `name-prefix`
+    * - `name-suffix`
+    * - `password`
+    * - `password-new`
+    * - `postal-address`
+    * - `postal-address-country`
+    * - `postal-address-extended`
+    * - `postal-address-extended-postal-code`
+    * - `postal-address-locality`
+    * - `postal-address-region`
+    * - `postal-code`
+    * - `street-address`
+    * - `sms-otp`
+    * - `tel`
+    * - `tel-country-code`
+    * - `tel-national`
+    * - `tel-device`
+    * - `username`
+    * - `username-new`
     * - `off`
     */
-  var autoCompleteType: js.UndefOr[
-    `cc-csc` | `cc-exp` | `cc-exp-month` | `cc-exp-year` | `cc-number` | email | name | password | `postal-code` | `street-address` | tel | username | off
+  var autoComplete: js.UndefOr[
+    `birthdate-day` | `birthdate-full` | `birthdate-month` | `birthdate-year` | `cc-csc` | `cc-exp` | `cc-exp-day` | `cc-exp-month` | `cc-exp-year` | `cc-number` | email | gender | name | `name-family` | `name-given` | `name-middle` | `name-middle-initial` | `name-prefix` | `name-suffix` | password | `password-new` | `postal-address` | `postal-address-country` | `postal-address-extended` | `postal-address-extended-postal-code` | `postal-address-locality` | `postal-address-region` | `postal-code` | `street-address` | `sms-otp` | tel | `tel-country-code` | `tel-national` | `tel-device` | username | `username-new` | off
   ] = js.undefined
+  
+  /**
+    * When provided it will set the color of the cursor (or "caret") in the component.
+    * Unlike the behavior of `selectionColor` the cursor color will be set independently
+    * from the color of the text selection box.
+    * @platform android
+    */
+  var cursorColor: js.UndefOr[ColorValue | Null] = js.undefined
   
   /**
     * When false, if there is a small amount of space available around a text input (e.g. landscape orientation on a phone),
@@ -133,11 +189,17 @@ object TextInputAndroidProps {
   
   extension [Self <: TextInputAndroidProps](x: Self) {
     
-    inline def setAutoCompleteType(
-      value: `cc-csc` | `cc-exp` | `cc-exp-month` | `cc-exp-year` | `cc-number` | email | name | password | `postal-code` | `street-address` | tel | username | off
-    ): Self = StObject.set(x, "autoCompleteType", value.asInstanceOf[js.Any])
+    inline def setAutoComplete(
+      value: `birthdate-day` | `birthdate-full` | `birthdate-month` | `birthdate-year` | `cc-csc` | `cc-exp` | `cc-exp-day` | `cc-exp-month` | `cc-exp-year` | `cc-number` | email | gender | name | `name-family` | `name-given` | `name-middle` | `name-middle-initial` | `name-prefix` | `name-suffix` | password | `password-new` | `postal-address` | `postal-address-country` | `postal-address-extended` | `postal-address-extended-postal-code` | `postal-address-locality` | `postal-address-region` | `postal-code` | `street-address` | `sms-otp` | tel | `tel-country-code` | `tel-national` | `tel-device` | username | `username-new` | off
+    ): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
     
-    inline def setAutoCompleteTypeUndefined: Self = StObject.set(x, "autoCompleteType", js.undefined)
+    inline def setAutoCompleteUndefined: Self = StObject.set(x, "autoComplete", js.undefined)
+    
+    inline def setCursorColor(value: ColorValue): Self = StObject.set(x, "cursorColor", value.asInstanceOf[js.Any])
+    
+    inline def setCursorColorNull: Self = StObject.set(x, "cursorColor", null)
+    
+    inline def setCursorColorUndefined: Self = StObject.set(x, "cursorColor", js.undefined)
     
     inline def setDisableFullscreenUI(value: Boolean): Self = StObject.set(x, "disableFullscreenUI", value.asInstanceOf[js.Any])
     

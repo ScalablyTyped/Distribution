@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "fast-safe-stringify" : "2.0.7"
+      "fast-safe-stringify" : "2.1.1"
     }
   ],
   "test-dependencies" : [
     {
-      "fast-safe-stringify" : "2.0.7"
+      "fast-safe-stringify" : "2.1.1"
     }
   ],
   "compile-devDependencies" : [

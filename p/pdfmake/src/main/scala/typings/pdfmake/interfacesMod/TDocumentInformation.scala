@@ -1,33 +1,57 @@
 package typings.pdfmake.interfacesMod
 
-import typings.std.Date
+import typings.pdfmake.pdfmakeStrings.False
+import typings.pdfmake.pdfmakeStrings.True
+import typings.pdfmake.pdfmakeStrings.Unknown
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TDocumentInformation extends StObject {
   
-  /** the name of the author */
+  /** Name of the author. */
   var author: js.UndefOr[String] = js.undefined
   
-  var creationDate: js.UndefOr[Date] = js.undefined
+  /**
+    * Date the document was created.
+    *
+    * Defaults to the current date and time.
+    */
+  var creationDate: js.UndefOr[js.Date] = js.undefined
   
+  /**
+    * Name of the creator.
+    *
+    * Defaults to `pdfmake`.
+    */
   var creator: js.UndefOr[String] = js.undefined
   
-  /** keywords associated with the document */
+  /**
+    * Keywords associated with the document.
+    *
+    * A PDF file stores all keywords as a single string, as given here.
+    * For optimal compatibility, separate keywords using commas or spaces.
+    */
   var keywords: js.UndefOr[String] = js.undefined
   
-  var modDate: js.UndefOr[Date] = js.undefined
+  /** Date the document was last modified. */
+  var modDate: js.UndefOr[js.Date] = js.undefined
   
+  /**
+    * Name of the producer.
+    *
+    * Defaults to `pdfmake`.
+    */
   var producer: js.UndefOr[String] = js.undefined
   
-  /** the subject of the document */
+  /** Subject of the document. */
   var subject: js.UndefOr[String] = js.undefined
   
-  /** the title of the document */
+  /** Document title. */
   var title: js.UndefOr[String] = js.undefined
   
-  var trapped: js.UndefOr[String] = js.undefined
+  /** Indicates whether the document has been corrected for color misregistrations. */
+  var trapped: js.UndefOr[True | False | Unknown] = js.undefined
 }
 object TDocumentInformation {
   
@@ -42,7 +66,7 @@ object TDocumentInformation {
     
     inline def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
     
-    inline def setCreationDate(value: Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
@@ -54,7 +78,7 @@ object TDocumentInformation {
     
     inline def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
     
-    inline def setModDate(value: Date): Self = StObject.set(x, "modDate", value.asInstanceOf[js.Any])
+    inline def setModDate(value: js.Date): Self = StObject.set(x, "modDate", value.asInstanceOf[js.Any])
     
     inline def setModDateUndefined: Self = StObject.set(x, "modDate", js.undefined)
     
@@ -70,7 +94,7 @@ object TDocumentInformation {
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    inline def setTrapped(value: String): Self = StObject.set(x, "trapped", value.asInstanceOf[js.Any])
+    inline def setTrapped(value: True | False | Unknown): Self = StObject.set(x, "trapped", value.asInstanceOf[js.Any])
     
     inline def setTrappedUndefined: Self = StObject.set(x, "trapped", js.undefined)
   }

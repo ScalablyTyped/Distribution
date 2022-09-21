@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.babelTypes.mod._Node because Already inherited */ trait PrivateName_
   extends StObject
      with BaseNode
-     with Private {
+     with Private
+     with Standardized {
   
   var id: Identifier_
   

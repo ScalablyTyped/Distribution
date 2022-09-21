@@ -89,7 +89,408 @@ object mod {
   inline def parseTweet(text: String): ParsedTweet = ^.asInstanceOf[js.Dynamic].applyDynamic("parseTweet")(text.asInstanceOf[js.Any]).asInstanceOf[ParsedTweet]
   inline def parseTweet(text: String, options: ParseTweetOptions): ParsedTweet = (^.asInstanceOf[js.Dynamic].applyDynamic("parseTweet")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParsedTweet]
   
+  object regexen {
+    
+    @JSImport("twitter-text", "regexen")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("twitter-text", "regexen.astralLetterAndMarks")
+    @js.native
+    def astralLetterAndMarks: js.RegExp = js.native
+    inline def astralLetterAndMarks_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("astralLetterAndMarks")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.astralNumerals")
+    @js.native
+    def astralNumerals: js.RegExp = js.native
+    inline def astralNumerals_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("astralNumerals")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.atSigns")
+    @js.native
+    def atSigns: js.RegExp = js.native
+    inline def atSigns_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("atSigns")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.bmpLetterAndMarks")
+    @js.native
+    def bmpLetterAndMarks: js.RegExp = js.native
+    inline def bmpLetterAndMarks_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bmpLetterAndMarks")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.bmpNumerals")
+    @js.native
+    def bmpNumerals: js.RegExp = js.native
+    inline def bmpNumerals_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bmpNumerals")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.cashtag")
+    @js.native
+    def cashtag: js.RegExp = js.native
+    inline def cashtag_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cashtag")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.codePoint")
+    @js.native
+    def codePoint: js.RegExp = js.native
+    inline def codePoint_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("codePoint")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.cyrillicLettersAndMarks")
+    @js.native
+    def cyrillicLettersAndMarks: js.RegExp = js.native
+    inline def cyrillicLettersAndMarks_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cyrillicLettersAndMarks")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.endHashtagMatch")
+    @js.native
+    def endHashtagMatch: js.RegExp = js.native
+    inline def endHashtagMatch_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("endHashtagMatch")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.endMentionMatch")
+    @js.native
+    def endMentionMatch: js.RegExp = js.native
+    inline def endMentionMatch_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("endMentionMatch")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.extractUrl")
+    @js.native
+    def extractUrl: js.RegExp = js.native
+    inline def extractUrl_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extractUrl")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.hashSigns")
+    @js.native
+    def hashSigns: js.RegExp = js.native
+    inline def hashSigns_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hashSigns")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.hashtagAlpha")
+    @js.native
+    def hashtagAlpha: js.RegExp = js.native
+    
+    @JSImport("twitter-text", "regexen.hashtagAlphaNumeric")
+    @js.native
+    def hashtagAlphaNumeric: js.RegExp = js.native
+    inline def hashtagAlphaNumeric_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hashtagAlphaNumeric")(x.asInstanceOf[js.Any])
+    
+    inline def hashtagAlpha_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hashtagAlpha")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.hashtagBoundary")
+    @js.native
+    def hashtagBoundary: js.RegExp = js.native
+    inline def hashtagBoundary_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hashtagBoundary")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.hashtagSpecialChars")
+    @js.native
+    def hashtagSpecialChars: js.RegExp = js.native
+    inline def hashtagSpecialChars_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hashtagSpecialChars")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.invalidChars")
+    @js.native
+    def invalidChars: js.RegExp = js.native
+    
+    @JSImport("twitter-text", "regexen.invalidCharsGroup")
+    @js.native
+    def invalidCharsGroup: js.RegExp = js.native
+    inline def invalidCharsGroup_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invalidCharsGroup")(x.asInstanceOf[js.Any])
+    
+    inline def invalidChars_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invalidChars")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.invalidDomainChars")
+    @js.native
+    def invalidDomainChars: js.RegExp = js.native
+    inline def invalidDomainChars_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invalidDomainChars")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.invalidUrlWithoutProtocolPrecedingChars")
+    @js.native
+    def invalidUrlWithoutProtocolPrecedingChars: js.RegExp = js.native
+    inline def invalidUrlWithoutProtocolPrecedingChars_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invalidUrlWithoutProtocolPrecedingChars")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.latinAccentChars")
+    @js.native
+    def latinAccentChars: js.RegExp = js.native
+    inline def latinAccentChars_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("latinAccentChars")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.nonBmpCodePairs")
+    @js.native
+    def nonBmpCodePairs: js.RegExp = js.native
+    inline def nonBmpCodePairs_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nonBmpCodePairs")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.punct")
+    @js.native
+    def punct: js.RegExp = js.native
+    inline def punct_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("punct")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.rtlChars")
+    @js.native
+    def rtlChars: js.RegExp = js.native
+    inline def rtlChars_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rtlChars")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.spaces")
+    @js.native
+    def spaces: js.RegExp = js.native
+    
+    @JSImport("twitter-text", "regexen.spacesGroup")
+    @js.native
+    def spacesGroup: js.RegExp = js.native
+    inline def spacesGroup_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacesGroup")(x.asInstanceOf[js.Any])
+    
+    inline def spaces_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spaces")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.urlHasHttps")
+    @js.native
+    def urlHasHttps: js.RegExp = js.native
+    inline def urlHasHttps_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("urlHasHttps")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.urlHasProtocol")
+    @js.native
+    def urlHasProtocol: js.RegExp = js.native
+    inline def urlHasProtocol_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("urlHasProtocol")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.validAsciiDomain")
+    @js.native
+    def validAsciiDomain: js.RegExp = js.native
+    inline def validAsciiDomain_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validAsciiDomain")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.validCCTLD")
+    @js.native
+    def validCCTLD: js.RegExp = js.native
+    inline def validCCTLD_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validCCTLD")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.validCashtag")
+    @js.native
+    def validCashtag: js.RegExp = js.native
+    inline def validCashtag_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validCashtag")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.validDomain")
+    @js.native
+    def validDomain: js.RegExp = js.native
+    
+    @JSImport("twitter-text", "regexen.validDomainChars")
+    @js.native
+    def validDomainChars: js.RegExp = js.native
+    inline def validDomainChars_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validDomainChars")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.validDomainName")
+    @js.native
+    def validDomainName: js.RegExp = js.native
+    inline def validDomainName_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validDomainName")(x.asInstanceOf[js.Any])
+    
+    inline def validDomain_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validDomain")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.validGTLD")
+    @js.native
+    def validGTLD: js.RegExp = js.native
+    inline def validGTLD_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validGTLD")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.validGeneralUrlPathChars")
+    @js.native
+    def validGeneralUrlPathChars: js.RegExp = js.native
+    inline def validGeneralUrlPathChars_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validGeneralUrlPathChars")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.validHashtag")
+    @js.native
+    def validHashtag: js.RegExp = js.native
+    inline def validHashtag_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validHashtag")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.validMentionOrList")
+    @js.native
+    def validMentionOrList: js.RegExp = js.native
+    inline def validMentionOrList_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validMentionOrList")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.validMentionPrecedingChars")
+    @js.native
+    def validMentionPrecedingChars: js.RegExp = js.native
+    inline def validMentionPrecedingChars_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validMentionPrecedingChars")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.validPortNumber")
+    @js.native
+    def validPortNumber: js.RegExp = js.native
+    inline def validPortNumber_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validPortNumber")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.validPunycode")
+    @js.native
+    def validPunycode: js.RegExp = js.native
+    inline def validPunycode_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validPunycode")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.validReply")
+    @js.native
+    def validReply: js.RegExp = js.native
+    inline def validReply_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validReply")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.validSubdomain")
+    @js.native
+    def validSubdomain: js.RegExp = js.native
+    inline def validSubdomain_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validSubdomain")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.validTcoUrl")
+    @js.native
+    def validTcoUrl: js.RegExp = js.native
+    inline def validTcoUrl_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validTcoUrl")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.validUrlBalancedParens")
+    @js.native
+    def validUrlBalancedParens: js.RegExp = js.native
+    inline def validUrlBalancedParens_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validUrlBalancedParens")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.validUrlPath")
+    @js.native
+    def validUrlPath: js.RegExp = js.native
+    
+    @JSImport("twitter-text", "regexen.validUrlPathEndingChars")
+    @js.native
+    def validUrlPathEndingChars: js.RegExp = js.native
+    inline def validUrlPathEndingChars_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validUrlPathEndingChars")(x.asInstanceOf[js.Any])
+    
+    inline def validUrlPath_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validUrlPath")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.validUrlPrecedingChars")
+    @js.native
+    def validUrlPrecedingChars: js.RegExp = js.native
+    inline def validUrlPrecedingChars_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validUrlPrecedingChars")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.validUrlQueryChars")
+    @js.native
+    def validUrlQueryChars: js.RegExp = js.native
+    inline def validUrlQueryChars_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validUrlQueryChars")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.validUrlQueryEndingChar")
+    @js.native
+    def validUrlQueryEndingChar: js.RegExp = js.native
+    inline def validUrlQueryEndingChar_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validUrlQueryEndingChar")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.validateUrlAuthority")
+    @js.native
+    def validateUrlAuthority: js.RegExp = js.native
+    inline def validateUrlAuthority_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validateUrlAuthority")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.validateUrlDecOctet")
+    @js.native
+    def validateUrlDecOctet: js.RegExp = js.native
+    inline def validateUrlDecOctet_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validateUrlDecOctet")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.validateUrlDomain")
+    @js.native
+    def validateUrlDomain: js.RegExp = js.native
+    
+    @JSImport("twitter-text", "regexen.validateUrlDomainSegment")
+    @js.native
+    def validateUrlDomainSegment: js.RegExp = js.native
+    inline def validateUrlDomainSegment_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validateUrlDomainSegment")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.validateUrlDomainTld")
+    @js.native
+    def validateUrlDomainTld: js.RegExp = js.native
+    inline def validateUrlDomainTld_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validateUrlDomainTld")(x.asInstanceOf[js.Any])
+    
+    inline def validateUrlDomain_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validateUrlDomain")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.validateUrlFragment")
+    @js.native
+    def validateUrlFragment: js.RegExp = js.native
+    inline def validateUrlFragment_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validateUrlFragment")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.validateUrlHost")
+    @js.native
+    def validateUrlHost: js.RegExp = js.native
+    inline def validateUrlHost_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validateUrlHost")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.validateUrlIp")
+    @js.native
+    def validateUrlIp: js.RegExp = js.native
+    inline def validateUrlIp_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validateUrlIp")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.validateUrlIpv4")
+    @js.native
+    def validateUrlIpv4: js.RegExp = js.native
+    inline def validateUrlIpv4_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validateUrlIpv4")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.validateUrlIpv6")
+    @js.native
+    def validateUrlIpv6: js.RegExp = js.native
+    inline def validateUrlIpv6_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validateUrlIpv6")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.validateUrlPath")
+    @js.native
+    def validateUrlPath: js.RegExp = js.native
+    inline def validateUrlPath_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validateUrlPath")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.validateUrlPchar")
+    @js.native
+    def validateUrlPchar: js.RegExp = js.native
+    inline def validateUrlPchar_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validateUrlPchar")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.validateUrlPctEncoded")
+    @js.native
+    def validateUrlPctEncoded: js.RegExp = js.native
+    inline def validateUrlPctEncoded_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validateUrlPctEncoded")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.validateUrlPort")
+    @js.native
+    def validateUrlPort: js.RegExp = js.native
+    inline def validateUrlPort_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validateUrlPort")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.validateUrlQuery")
+    @js.native
+    def validateUrlQuery: js.RegExp = js.native
+    inline def validateUrlQuery_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validateUrlQuery")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.validateUrlScheme")
+    @js.native
+    def validateUrlScheme: js.RegExp = js.native
+    inline def validateUrlScheme_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validateUrlScheme")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.validateUrlSubDelims")
+    @js.native
+    def validateUrlSubDelims: js.RegExp = js.native
+    inline def validateUrlSubDelims_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validateUrlSubDelims")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.validateUrlSubDomainSegment")
+    @js.native
+    def validateUrlSubDomainSegment: js.RegExp = js.native
+    inline def validateUrlSubDomainSegment_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validateUrlSubDomainSegment")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.validateUrlUnencoded")
+    @js.native
+    def validateUrlUnencoded: js.RegExp = js.native
+    inline def validateUrlUnencoded_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validateUrlUnencoded")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.validateUrlUnicodeAuthority")
+    @js.native
+    def validateUrlUnicodeAuthority: js.RegExp = js.native
+    inline def validateUrlUnicodeAuthority_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validateUrlUnicodeAuthority")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.validateUrlUnicodeDomain")
+    @js.native
+    def validateUrlUnicodeDomain: js.RegExp = js.native
+    
+    @JSImport("twitter-text", "regexen.validateUrlUnicodeDomainSegment")
+    @js.native
+    def validateUrlUnicodeDomainSegment: js.RegExp = js.native
+    inline def validateUrlUnicodeDomainSegment_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validateUrlUnicodeDomainSegment")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.validateUrlUnicodeDomainTld")
+    @js.native
+    def validateUrlUnicodeDomainTld: js.RegExp = js.native
+    inline def validateUrlUnicodeDomainTld_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validateUrlUnicodeDomainTld")(x.asInstanceOf[js.Any])
+    
+    inline def validateUrlUnicodeDomain_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validateUrlUnicodeDomain")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.validateUrlUnicodeHost")
+    @js.native
+    def validateUrlUnicodeHost: js.RegExp = js.native
+    inline def validateUrlUnicodeHost_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validateUrlUnicodeHost")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.validateUrlUnicodeSubDomainSegment")
+    @js.native
+    def validateUrlUnicodeSubDomainSegment: js.RegExp = js.native
+    inline def validateUrlUnicodeSubDomainSegment_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validateUrlUnicodeSubDomainSegment")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.validateUrlUnreserved")
+    @js.native
+    def validateUrlUnreserved: js.RegExp = js.native
+    inline def validateUrlUnreserved_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validateUrlUnreserved")(x.asInstanceOf[js.Any])
+    
+    @JSImport("twitter-text", "regexen.validateUrlUserinfo")
+    @js.native
+    def validateUrlUserinfo: js.RegExp = js.native
+    inline def validateUrlUserinfo_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validateUrlUserinfo")(x.asInstanceOf[js.Any])
+  }
+  
   inline def splitTags(text: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("splitTags")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  
+  inline def standardizeIndices(text: String, startIndex: Double, endIndex: Double): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("standardizeIndices")(text.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
   
   type Attributes = StringDictionary[String | Null]
   
@@ -206,7 +607,7 @@ object mod {
       
       inline def setUrlEntitiesUndefined: Self = StObject.set(x, "urlEntities", js.undefined)
       
-      inline def setUrlEntitiesVarargs(value: UrlEntity*): Self = StObject.set(x, "urlEntities", js.Array(value :_*))
+      inline def setUrlEntitiesVarargs(value: UrlEntity*): Self = StObject.set(x, "urlEntities", js.Array(value*))
       
       inline def setUsernameClass(value: String): Self = StObject.set(x, "usernameClass", value.asInstanceOf[js.Any])
       
@@ -375,6 +776,8 @@ object mod {
     
     var defaultWeight: js.UndefOr[Double] = js.undefined
     
+    var emojiParsingEnabled: js.UndefOr[Boolean] = js.undefined
+    
     var maxWeightedTweetLength: js.UndefOr[Double] = js.undefined
     
     var ranges: js.UndefOr[js.Array[End]] = js.undefined
@@ -398,6 +801,10 @@ object mod {
       
       inline def setDefaultWeightUndefined: Self = StObject.set(x, "defaultWeight", js.undefined)
       
+      inline def setEmojiParsingEnabled(value: Boolean): Self = StObject.set(x, "emojiParsingEnabled", value.asInstanceOf[js.Any])
+      
+      inline def setEmojiParsingEnabledUndefined: Self = StObject.set(x, "emojiParsingEnabled", js.undefined)
+      
       inline def setMaxWeightedTweetLength(value: Double): Self = StObject.set(x, "maxWeightedTweetLength", value.asInstanceOf[js.Any])
       
       inline def setMaxWeightedTweetLengthUndefined: Self = StObject.set(x, "maxWeightedTweetLength", js.undefined)
@@ -406,7 +813,7 @@ object mod {
       
       inline def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
       
-      inline def setRangesVarargs(value: End*): Self = StObject.set(x, "ranges", js.Array(value :_*))
+      inline def setRangesVarargs(value: End*): Self = StObject.set(x, "ranges", js.Array(value*))
       
       inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("RedoCommand")
 @js.native
-class RedoCommand ()
+open class RedoCommand ()
   extends StObject
      with typings.devexpressWeb.RedoCommand {
   

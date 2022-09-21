@@ -11,27 +11,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Ruler2 extends StObject {
   
-  val Application: js.Any
+  val Application: Any
   
   val Creator: Double
   
-  @JSName("Levels")
-  def Levels_1(Index: `1`): RulerLevel2
-  @JSName("Levels")
-  def Levels_2(Index: `2`): RulerLevel2
-  @JSName("Levels")
-  def Levels_3(Index: `3`): RulerLevel2
-  @JSName("Levels")
-  def Levels_4(Index: `4`): RulerLevel2
-  @JSName("Levels")
-  def Levels_5(Index: `5`): RulerLevel2
+  def Levels(Index: `1` | `2` | `3` | `4` | `5`): RulerLevel2
   @JSName("Levels")
   val Levels_Original: RulerLevels2
   
   /* private */ @JSName("Office.Ruler2_typekey")
   var OfficeDotRuler2_typekey: Ruler2
   
-  val Parent: js.Any
+  val Parent: Any
   
   def TabStops(Index: Double): TabStop2
   @JSName("TabStops")
@@ -40,11 +31,11 @@ trait Ruler2 extends StObject {
 object Ruler2 {
   
   inline def apply(
-    Application: js.Any,
+    Application: Any,
     Creator: Double,
     Levels: RulerLevels2,
     OfficeDotRuler2_typekey: Ruler2,
-    Parent: js.Any,
+    Parent: Any,
     TabStops: TabStops2
   ): Ruler2 = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Levels = Levels.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], TabStops = TabStops.asInstanceOf[js.Any])
@@ -54,7 +45,7 @@ object Ruler2 {
   
   extension [Self <: Ruler2](x: Self) {
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
@@ -62,7 +53,7 @@ object Ruler2 {
     
     inline def setOfficeDotRuler2_typekey(value: Ruler2): Self = StObject.set(x, "Office.Ruler2_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setTabStops(value: TabStops2): Self = StObject.set(x, "TabStops", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,7 @@ trait Reminder extends StObject {
   
   val IsVisible: Boolean = js.native
   
-  val Item: js.Any = js.native
+  val Item: Any = js.native
   
   val NextReminderDate: VarDate = js.native
   
@@ -27,10 +27,10 @@ trait Reminder extends StObject {
   /* private */ @JSName("Outlook.Reminder_typekey")
   var OutlookDotReminder_typekey: Reminder = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   val Session: NameSpace = js.native
   
   def Snooze(): Unit = js.native
-  def Snooze(SnoozeTime: js.Any): Unit = js.native
+  def Snooze(SnoozeTime: Any): Unit = js.native
 }

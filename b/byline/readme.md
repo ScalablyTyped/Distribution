@@ -10,10 +10,10 @@ simple line-by-line stream reader
 | ------------------ | :-------------: |
 | Full name          | byline |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 366 |
-| # downloads        | 81872358 |
-| # stars            | 14 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.0752399333333334E7 |
+| # stars            | 315.0 |
 
 ## Links
 - [Homepage](https://github.com/jahewson/node-byline)

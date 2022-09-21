@@ -115,26 +115,26 @@ object phonegapBarcode {
     
     var Encode: EncodingType = js.native
     
-    def encode(encodingType: EncodingType, data: String, success: js.Function1[/* result */ js.Any, js.Any]): Unit = js.native
+    def encode(encodingType: EncodingType, data: String, success: js.Function1[/* result */ Any, Any]): Unit = js.native
     def encode(
       encodingType: EncodingType,
       data: String,
-      success: js.Function1[/* result */ js.Any, js.Any],
-      failure: js.Function1[/* err */ js.Any, js.Any]
+      success: js.Function1[/* result */ Any, Any],
+      failure: js.Function1[/* err */ Any, Any]
     ): Unit = js.native
     
-    def scan(success: js.Function1[/* result */ BarcodeScanResult, js.Any]): Unit = js.native
+    def scan(success: js.Function1[/* result */ BarcodeScanResult, Any]): Unit = js.native
     def scan(
-      success: js.Function1[/* result */ BarcodeScanResult, js.Any],
-      failure: js.Function1[/* err */ js.Any, js.Any]
+      success: js.Function1[/* result */ BarcodeScanResult, Any],
+      failure: js.Function1[/* err */ Any, Any]
     ): Unit = js.native
     def scan(
-      success: js.Function1[/* result */ BarcodeScanResult, js.Any],
-      failure: js.Function1[/* err */ js.Any, js.Any],
+      success: js.Function1[/* result */ BarcodeScanResult, Any],
+      failure: js.Function1[/* err */ Any, Any],
       opts: BarcodeScanOptions
     ): Unit = js.native
     def scan(
-      success: js.Function1[/* result */ BarcodeScanResult, js.Any],
+      success: js.Function1[/* result */ BarcodeScanResult, Any],
       failure: Unit,
       opts: BarcodeScanOptions
     ): Unit = js.native
@@ -142,30 +142,30 @@ object phonegapBarcode {
   
   trait EncodingType extends StObject {
     
-    var EMAIL_TYPE: js.Any
+    var EMAIL_TYPE: Any
     
-    var PHONE_TYPE: js.Any
+    var PHONE_TYPE: Any
     
-    var SMS_TYPE: js.Any
+    var SMS_TYPE: Any
     
-    var TEXT_TYPE: js.Any
+    var TEXT_TYPE: Any
   }
   object EncodingType {
     
-    inline def apply(EMAIL_TYPE: js.Any, PHONE_TYPE: js.Any, SMS_TYPE: js.Any, TEXT_TYPE: js.Any): EncodingType = {
+    inline def apply(EMAIL_TYPE: Any, PHONE_TYPE: Any, SMS_TYPE: Any, TEXT_TYPE: Any): EncodingType = {
       val __obj = js.Dynamic.literal(EMAIL_TYPE = EMAIL_TYPE.asInstanceOf[js.Any], PHONE_TYPE = PHONE_TYPE.asInstanceOf[js.Any], SMS_TYPE = SMS_TYPE.asInstanceOf[js.Any], TEXT_TYPE = TEXT_TYPE.asInstanceOf[js.Any])
       __obj.asInstanceOf[EncodingType]
     }
     
     extension [Self <: EncodingType](x: Self) {
       
-      inline def setEMAIL_TYPE(value: js.Any): Self = StObject.set(x, "EMAIL_TYPE", value.asInstanceOf[js.Any])
+      inline def setEMAIL_TYPE(value: Any): Self = StObject.set(x, "EMAIL_TYPE", value.asInstanceOf[js.Any])
       
-      inline def setPHONE_TYPE(value: js.Any): Self = StObject.set(x, "PHONE_TYPE", value.asInstanceOf[js.Any])
+      inline def setPHONE_TYPE(value: Any): Self = StObject.set(x, "PHONE_TYPE", value.asInstanceOf[js.Any])
       
-      inline def setSMS_TYPE(value: js.Any): Self = StObject.set(x, "SMS_TYPE", value.asInstanceOf[js.Any])
+      inline def setSMS_TYPE(value: Any): Self = StObject.set(x, "SMS_TYPE", value.asInstanceOf[js.Any])
       
-      inline def setTEXT_TYPE(value: js.Any): Self = StObject.set(x, "TEXT_TYPE", value.asInstanceOf[js.Any])
+      inline def setTEXT_TYPE(value: Any): Self = StObject.set(x, "TEXT_TYPE", value.asInstanceOf[js.Any])
     }
   }
 }

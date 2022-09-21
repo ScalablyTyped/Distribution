@@ -17,7 +17,7 @@ trait DirectoryConnectSettingsDescription extends StObject {
   var ConnectIps: js.UndefOr[IpAddrs] = js.undefined
   
   /**
-    * The user name of the service account in the on-premises directory.
+    * The user name of the service account in your self-managed directory.
     */
   var CustomerUserName: js.UndefOr[UserName] = js.undefined
   
@@ -49,13 +49,13 @@ object DirectoryConnectSettingsDescription {
     
     inline def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
     
-    inline def setAvailabilityZonesVarargs(value: AvailabilityZone*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
+    inline def setAvailabilityZonesVarargs(value: AvailabilityZone*): Self = StObject.set(x, "AvailabilityZones", js.Array(value*))
     
     inline def setConnectIps(value: IpAddrs): Self = StObject.set(x, "ConnectIps", value.asInstanceOf[js.Any])
     
     inline def setConnectIpsUndefined: Self = StObject.set(x, "ConnectIps", js.undefined)
     
-    inline def setConnectIpsVarargs(value: IpAddr*): Self = StObject.set(x, "ConnectIps", js.Array(value :_*))
+    inline def setConnectIpsVarargs(value: IpAddr*): Self = StObject.set(x, "ConnectIps", js.Array(value*))
     
     inline def setCustomerUserName(value: UserName): Self = StObject.set(x, "CustomerUserName", value.asInstanceOf[js.Any])
     
@@ -69,7 +69,7 @@ object DirectoryConnectSettingsDescription {
     
     inline def setSubnetIdsUndefined: Self = StObject.set(x, "SubnetIds", js.undefined)
     
-    inline def setSubnetIdsVarargs(value: SubnetId*): Self = StObject.set(x, "SubnetIds", js.Array(value :_*))
+    inline def setSubnetIdsVarargs(value: SubnetId*): Self = StObject.set(x, "SubnetIds", js.Array(value*))
     
     inline def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,5 @@
 package typings.devexpressWeb
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,17 +14,17 @@ trait ASPxClientCalendarCellClickEventArgs
   /**
     * Gets the date that relates to the processed calendar's cell click.
     */
-  var date: Date
+  var date: js.Date
 }
 object ASPxClientCalendarCellClickEventArgs {
   
-  inline def apply(date: Date): ASPxClientCalendarCellClickEventArgs = {
+  inline def apply(date: js.Date): ASPxClientCalendarCellClickEventArgs = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientCalendarCellClickEventArgs]
   }
   
   extension [Self <: ASPxClientCalendarCellClickEventArgs](x: Self) {
     
-    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
   }
 }

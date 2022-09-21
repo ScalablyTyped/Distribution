@@ -10,10 +10,10 @@ The lodash method `_.isEqualWith` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.isequalwith |
 | Keywords           | lodash-modularized, isequalwith |
-| # releases         | 0 |
-| # dependents       | 24 |
-| # downloads        | 370706 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1356537.3333333333 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

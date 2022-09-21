@@ -3,13 +3,10 @@ package typings.ncp
 import typings.ncp.anon.OptionserrsPathLike
 import typings.ncp.anon.Optionserrsundefined
 import typings.ncp.anon.OptionsstopOnErrtrue
-import typings.node.NodeJS.ReadableStream
-import typings.node.NodeJS.WritableStream
 import typings.node.fsMod.PathLike
 import typings.node.fsMod.WriteStream
-import typings.std.Date
-import typings.std.Error
-import typings.std.RegExp
+import typings.std.ReadableStream
+import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +16,7 @@ object mod {
   inline def apply(
     source: String,
     destination: String,
-    callback: js.Function1[/* err */ js.Array[Error] | Null, Unit]
+    callback: js.Function1[/* err */ js.Array[js.Error] | Null, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply(
     source: String,
@@ -31,19 +28,19 @@ object mod {
     source: String,
     destination: String,
     options: Optionserrsundefined,
-    callback: js.Function1[/* err */ js.Array[Error] | Null, Unit]
+    callback: js.Function1[/* err */ js.Array[js.Error] | Null, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply(
     source: String,
     destination: String,
     options: OptionsstopOnErrtrue,
-    callback: js.Function1[/* err */ Error | Null, Unit]
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply(
     source: String,
     destination: String,
     options: Options,
-    callback: js.Function1[/* err */ Error | js.Array[Error] | WriteStream | Null, Unit]
+    callback: js.Function1[/* err */ js.Error | js.Array[js.Error] | WriteStream | Null, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("ncp", JSImport.Namespace)
@@ -52,8 +49,8 @@ object mod {
   
   @JSImport("ncp", "ncp")
   @js.native
-  def ncp: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ncp */ js.Any = js.native
-  inline def ncp_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ncp */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ncp")(x.asInstanceOf[js.Any])
+  def ncp: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ncp */ Any = js.native
+  inline def ncp_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ncp */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ncp")(x.asInstanceOf[js.Any])
   
   /**
     * **NOTE:** This function provides design-time support for util.promisify.
@@ -66,29 +63,29 @@ object mod {
   trait File extends StObject {
     
     /** Accessed time */
-    var atime: Date
+    var atime: js.Date
     
     var mode: Double
     
     /** Modified time */
-    var mtime: Date
+    var mtime: js.Date
     
     var name: String
   }
   object File {
     
-    inline def apply(atime: Date, mode: Double, mtime: Date, name: String): File = {
+    inline def apply(atime: js.Date, mode: Double, mtime: js.Date, name: String): File = {
       val __obj = js.Dynamic.literal(atime = atime.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], mtime = mtime.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[File]
     }
     
     extension [Self <: File](x: Self) {
       
-      inline def setAtime(value: Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
+      inline def setAtime(value: js.Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
       
       inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      inline def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+      inline def setMtime(value: js.Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -102,14 +99,14 @@ object mod {
     
     var errs: js.UndefOr[PathLike] = js.undefined
     
-    var filter: js.UndefOr[RegExp | (js.Function1[/* filename */ String, Boolean])] = js.undefined
+    var filter: js.UndefOr[js.RegExp | (js.Function1[/* filename */ String, Boolean])] = js.undefined
     
     var limit: js.UndefOr[Double] = js.undefined
     
     var stopOnErr: js.UndefOr[Boolean] = js.undefined
     
     var transform: js.UndefOr[
-        js.Function3[/* read */ ReadableStream, /* write */ WritableStream, /* file */ File, Unit]
+        js.Function3[/* read */ ReadableStream[Any], /* write */ WritableStream[Any], /* file */ File, Unit]
       ] = js.undefined
   }
   object Options {
@@ -133,7 +130,7 @@ object mod {
       
       inline def setErrsUndefined: Self = StObject.set(x, "errs", js.undefined)
       
-      inline def setFilter(value: RegExp | (js.Function1[/* filename */ String, Boolean])): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: js.RegExp | (js.Function1[/* filename */ String, Boolean])): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
       inline def setFilterFunction1(value: /* filename */ String => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
@@ -147,7 +144,7 @@ object mod {
       
       inline def setStopOnErrUndefined: Self = StObject.set(x, "stopOnErr", js.undefined)
       
-      inline def setTransform(value: (/* read */ ReadableStream, /* write */ WritableStream, /* file */ File) => Unit): Self = StObject.set(x, "transform", js.Any.fromFunction3(value))
+      inline def setTransform(value: (/* read */ ReadableStream[Any], /* write */ WritableStream[Any], /* file */ File) => Unit): Self = StObject.set(x, "transform", js.Any.fromFunction3(value))
       
       inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     }

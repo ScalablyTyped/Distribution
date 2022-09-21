@@ -1,21 +1,21 @@
 package typings.mangopay2NodejsSdk.mod.models
 
-import typings.mangopay2NodejsSdk.mod.MoneyData
-import typings.mangopay2NodejsSdk.mod.Timestamp
-import typings.mangopay2NodejsSdk.mod.payIn.BasePayInData
-import typings.mangopay2NodejsSdk.mod.transaction.TransactionNature
-import typings.mangopay2NodejsSdk.mod.transaction.TransactionStatus
-import typings.mangopay2NodejsSdk.mod.transaction.TransactionType
+import typings.mangopay2NodejsSdk.moneyMod.money.MoneyData
+import typings.mangopay2NodejsSdk.payInMod.payIn.BasePayInData
+import typings.mangopay2NodejsSdk.transactionMod.transaction.TransactionNature
+import typings.mangopay2NodejsSdk.transactionMod.transaction.TransactionStatus
+import typings.mangopay2NodejsSdk.transactionMod.transaction.TransactionType
+import typings.mangopay2NodejsSdk.typesMod.Timestamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mangopay2-nodejs-sdk", "models.PayIn")
 @js.native
-class PayIn protected ()
+open class PayIn protected ()
   extends EntityBase[BasePayInData]
      with BasePayInData {
-  def this(data: js.Any) = this()
+  def this(data: Any) = this()
   
   /**
     * A user's ID
@@ -66,7 +66,7 @@ class PayIn protected ()
     * The type of execution for the payin
     */
   /* CompleteClass */
-  var ExecutionType: typings.mangopay2NodejsSdk.mod.payIn.PayInExecutionType = js.native
+  var ExecutionType: typings.mangopay2NodejsSdk.payInMod.payIn.PayInExecutionType = js.native
   
   /**
     * Information about the fees that were taken by the client for this transaction (and were hence transferred to the Client's platform wallet)
@@ -87,7 +87,7 @@ class PayIn protected ()
     * The type of payin
     */
   /* CompleteClass */
-  var PaymentType: typings.mangopay2NodejsSdk.mod.payIn.PayInPaymentType = js.native
+  var PaymentType: typings.mangopay2NodejsSdk.payInMod.payIn.PayInPaymentType = js.native
   
   /**
     * The result code

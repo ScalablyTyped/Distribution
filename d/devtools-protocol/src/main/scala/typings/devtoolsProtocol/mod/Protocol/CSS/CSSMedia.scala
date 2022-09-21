@@ -57,7 +57,7 @@ object CSSMedia {
     
     inline def setMediaListUndefined: Self = StObject.set(x, "mediaList", js.undefined)
     
-    inline def setMediaListVarargs(value: MediaQuery*): Self = StObject.set(x, "mediaList", js.Array(value :_*))
+    inline def setMediaListVarargs(value: MediaQuery*): Self = StObject.set(x, "mediaList", js.Array(value*))
     
     inline def setRange(value: SourceRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     

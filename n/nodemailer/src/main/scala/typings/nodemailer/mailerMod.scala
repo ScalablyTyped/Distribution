@@ -1,7 +1,7 @@
 package typings.nodemailer
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.node.netMod.Socket
 import typings.node.streamMod.Readable
@@ -9,7 +9,6 @@ import typings.node.urlMod.Url
 import typings.nodemailer.anon.Comment
 import typings.nodemailer.anon.Prepared
 import typings.nodemailer.anon.Value
-import typings.nodemailer.mod.SentMessageInfo
 import typings.nodemailer.mod.Transport
 import typings.nodemailer.mod.TransportOptions
 import typings.nodemailer.nodemailerBooleans.`false`
@@ -35,8 +34,6 @@ import typings.nodemailer.nodemailerStrings.proxy_handler_socks5
 import typings.nodemailer.nodemailerStrings.token
 import typings.nodemailer.sharedMod.Logger
 import typings.nodemailer.xoauth2Mod.Token
-import typings.std.Date
-import typings.std.Error
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -47,11 +44,11 @@ object mailerMod {
   /** Creates an object for exposing the Mail API */
   @JSImport("nodemailer/lib/mailer", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Mail {
-    def this(transporter: Transport) = this()
-    def this(transporter: Transport, options: TransportOptions) = this()
-    def this(transporter: Transport, options: Unit, defaults: TransportOptions) = this()
-    def this(transporter: Transport, options: TransportOptions, defaults: TransportOptions) = this()
+  open class ^[T] protected () extends Mail[T] {
+    def this(transporter: Transport[T]) = this()
+    def this(transporter: Transport[T], options: TransportOptions) = this()
+    def this(transporter: Transport[T], options: Unit, defaults: TransportOptions) = this()
+    def this(transporter: Transport[T], options: TransportOptions, defaults: TransportOptions) = this()
   }
   
   trait Address extends StObject {
@@ -183,7 +180,7 @@ object mailerMod {
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      inline def setHeadersVarargs(value: Value*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: Value*): Self = StObject.set(x, "headers", js.Array(value*))
       
       inline def setRaw(value: String | Buffer | Readable | AttachmentLike): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
@@ -327,13 +324,13 @@ object mailerMod {
   
   /** Creates an object for exposing the Mail API */
   @js.native
-  trait Mail extends EventEmitter {
+  trait Mail[T] extends EventEmitter {
     
     /** Usage: typeof transporter.MailMessage */
-    var MailMessage: typings.nodemailer.mailMessageMod.^ = js.native
+    var MailMessage: typings.nodemailer.mailMessageMod.^[T] = js.native
     
     @JSName("addListener")
-    def addListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def addListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("addListener")
     def addListener_idle(event: idle, listener: js.Function0[Unit]): this.type = js.native
     @JSName("addListener")
@@ -345,13 +342,25 @@ object mailerMod {
     var dkim: typings.nodemailer.dkimMod.^ = js.native
     
     @JSName("emit")
-    def emit_error(event: error, error: Error): Boolean = js.native
+    def emit_error(event: error, error: js.Error): Boolean = js.native
     @JSName("emit")
     def emit_idle(event: idle): Boolean = js.native
     @JSName("emit")
     def emit_token(event: token, token: Token): Boolean = js.native
     
-    def get(key: String): js.Any = js.native
+    def get(
+      key: proxy_handler_http | proxy_handler_https | proxy_handler_socks | proxy_handler_socks5 | proxy_handler_socks4 | proxy_handler_socks4a
+    ): js.Function3[
+        /* proxy */ Url, 
+        /* options */ TransportOptions, 
+        /* callback */ js.Function2[
+          /* err */ js.Error | Null, 
+          /* socketOptions */ typings.nodemailer.anon.Connection, 
+          Unit
+        ], 
+        Unit
+      ] = js.native
+    def get(key: String): Any = js.native
     
     def getVersionString(): String = js.native
     
@@ -359,49 +368,7 @@ object mailerMod {
     def get_oauth2provisioncb(key: oauth2_provision_cb): js.Function3[
         /* user */ String, 
         /* renew */ Boolean, 
-        /* callback */ js.Function3[/* err */ Error | Null, /* accessToken */ String, /* expires */ Double, Unit], 
-        Unit
-      ] = js.native
-    @JSName("get")
-    def get_proxyhandlerhttp(key: proxy_handler_http): js.Function3[
-        /* proxy */ Url, 
-        /* options */ TransportOptions, 
-        /* callback */ js.Function2[/* err */ Error | Null, /* socketOptions */ typings.nodemailer.anon.Connection, Unit], 
-        Unit
-      ] = js.native
-    @JSName("get")
-    def get_proxyhandlerhttps(key: proxy_handler_https): js.Function3[
-        /* proxy */ Url, 
-        /* options */ TransportOptions, 
-        /* callback */ js.Function2[/* err */ Error | Null, /* socketOptions */ typings.nodemailer.anon.Connection, Unit], 
-        Unit
-      ] = js.native
-    @JSName("get")
-    def get_proxyhandlersocks(key: proxy_handler_socks): js.Function3[
-        /* proxy */ Url, 
-        /* options */ TransportOptions, 
-        /* callback */ js.Function2[/* err */ Error | Null, /* socketOptions */ typings.nodemailer.anon.Connection, Unit], 
-        Unit
-      ] = js.native
-    @JSName("get")
-    def get_proxyhandlersocks4(key: proxy_handler_socks4): js.Function3[
-        /* proxy */ Url, 
-        /* options */ TransportOptions, 
-        /* callback */ js.Function2[/* err */ Error | Null, /* socketOptions */ typings.nodemailer.anon.Connection, Unit], 
-        Unit
-      ] = js.native
-    @JSName("get")
-    def get_proxyhandlersocks4a(key: proxy_handler_socks4a): js.Function3[
-        /* proxy */ Url, 
-        /* options */ TransportOptions, 
-        /* callback */ js.Function2[/* err */ Error | Null, /* socketOptions */ typings.nodemailer.anon.Connection, Unit], 
-        Unit
-      ] = js.native
-    @JSName("get")
-    def get_proxyhandlersocks5(key: proxy_handler_socks5): js.Function3[
-        /* proxy */ Url, 
-        /* options */ TransportOptions, 
-        /* callback */ js.Function2[/* err */ Error | Null, /* socketOptions */ typings.nodemailer.anon.Connection, Unit], 
+        /* callback */ js.Function3[/* err */ js.Error | Null, /* accessToken */ String, /* expires */ Double, Unit], 
         Unit
       ] = js.native
     
@@ -411,23 +378,23 @@ object mailerMod {
     @JSName("listeners")
     def listeners_end(event: end): js.Array[js.Function1[/* token */ Token, Unit]] = js.native
     @JSName("listeners")
-    def listeners_error(event: error): js.Array[js.Function1[/* err */ Error, Unit]] = js.native
+    def listeners_error(event: error): js.Array[js.Function1[/* err */ js.Error, Unit]] = js.native
     @JSName("listeners")
     def listeners_idle(event: idle): js.Array[js.Function0[Unit]] = js.native
     
     var logger: Logger = js.native
     
-    var meta: Map[String, js.Any] = js.native
+    var meta: Map[String, Any] = js.native
     
     @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def on_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("on")
     def on_idle(event: idle, listener: js.Function0[Unit]): this.type = js.native
     @JSName("on")
     def on_token(event: token, listener: js.Function1[/* token */ Token, Unit]): this.type = js.native
     
     @JSName("once")
-    def once_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def once_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("once")
     def once_idle(event: idle, listener: js.Function0[Unit]): this.type = js.native
     @JSName("once")
@@ -438,25 +405,35 @@ object mailerMod {
     @JSName("prependListener")
     def prependListener_end(event: end, listener: js.Function1[/* token */ Token, Unit]): this.type = js.native
     @JSName("prependListener")
-    def prependListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def prependListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("prependListener")
     def prependListener_idle(event: idle, listener: js.Function0[Unit]): this.type = js.native
     
     @JSName("prependOnceListener")
     def prependOnceListener_end(event: end, listener: js.Function1[/* token */ Token, Unit]): this.type = js.native
     @JSName("prependOnceListener")
-    def prependOnceListener_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def prependOnceListener_error(event: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     @JSName("prependOnceListener")
     def prependOnceListener_idle(event: idle, listener: js.Function0[Unit]): this.type = js.native
     
-    def sendMail(mailOptions: Options): js.Promise[SentMessageInfo] = js.native
+    def sendMail(mailOptions: Options): js.Promise[T] = js.native
     /** Sends an email using the preselected transport object */
-    def sendMail(
-      mailOptions: Options,
-      callback: js.Function2[/* err */ Error | Null, /* info */ SentMessageInfo, Unit]
-    ): Unit = js.native
+    def sendMail(mailOptions: Options, callback: js.Function2[/* err */ js.Error | Null, /* info */ T, Unit]): Unit = js.native
     
-    def set(key: String, value: js.Any): Map[String, js.Any] = js.native
+    def set(
+      key: proxy_handler_http | proxy_handler_https | proxy_handler_socks | proxy_handler_socks5 | proxy_handler_socks4 | proxy_handler_socks4a,
+      value: js.Function3[
+          /* proxy */ Url, 
+          /* options */ TransportOptions, 
+          /* callback */ js.Function2[
+            /* err */ js.Error | Null, 
+            /* socketOptions */ js.UndefOr[typings.nodemailer.anon.Connection], 
+            Unit
+          ], 
+          Unit
+        ]
+    ): Map[String, Any] = js.native
+    def set(key: String, value: Any): Map[String, Any] = js.native
     @JSName("set")
     def set_oauth2provisioncb(
       key: oauth2_provision_cb,
@@ -464,110 +441,26 @@ object mailerMod {
           /* user */ String, 
           /* renew */ Boolean, 
           /* callback */ js.Function3[
-            /* err */ Error | Null, 
+            /* err */ js.Error | Null, 
             /* accessToken */ js.UndefOr[String], 
             /* expires */ js.UndefOr[Double], 
             Unit
           ], 
           Unit
         ]
-    ): Map[String, js.Any] = js.native
-    @JSName("set")
-    def set_proxyhandlerhttp(
-      key: proxy_handler_http,
-      value: js.Function3[
-          /* proxy */ Url, 
-          /* options */ TransportOptions, 
-          /* callback */ js.Function2[
-            /* err */ Error | Null, 
-            /* socketOptions */ js.UndefOr[typings.nodemailer.anon.Connection], 
-            Unit
-          ], 
-          Unit
-        ]
-    ): Map[String, js.Any] = js.native
-    @JSName("set")
-    def set_proxyhandlerhttps(
-      key: proxy_handler_https,
-      value: js.Function3[
-          /* proxy */ Url, 
-          /* options */ TransportOptions, 
-          /* callback */ js.Function2[
-            /* err */ Error | Null, 
-            /* socketOptions */ js.UndefOr[typings.nodemailer.anon.Connection], 
-            Unit
-          ], 
-          Unit
-        ]
-    ): Map[String, js.Any] = js.native
-    @JSName("set")
-    def set_proxyhandlersocks(
-      key: proxy_handler_socks,
-      value: js.Function3[
-          /* proxy */ Url, 
-          /* options */ TransportOptions, 
-          /* callback */ js.Function2[
-            /* err */ Error | Null, 
-            /* socketOptions */ js.UndefOr[typings.nodemailer.anon.Connection], 
-            Unit
-          ], 
-          Unit
-        ]
-    ): Map[String, js.Any] = js.native
-    @JSName("set")
-    def set_proxyhandlersocks4(
-      key: proxy_handler_socks4,
-      value: js.Function3[
-          /* proxy */ Url, 
-          /* options */ TransportOptions, 
-          /* callback */ js.Function2[
-            /* err */ Error | Null, 
-            /* socketOptions */ js.UndefOr[typings.nodemailer.anon.Connection], 
-            Unit
-          ], 
-          Unit
-        ]
-    ): Map[String, js.Any] = js.native
-    @JSName("set")
-    def set_proxyhandlersocks4a(
-      key: proxy_handler_socks4a,
-      value: js.Function3[
-          /* proxy */ Url, 
-          /* options */ TransportOptions, 
-          /* callback */ js.Function2[
-            /* err */ Error | Null, 
-            /* socketOptions */ js.UndefOr[typings.nodemailer.anon.Connection], 
-            Unit
-          ], 
-          Unit
-        ]
-    ): Map[String, js.Any] = js.native
-    @JSName("set")
-    def set_proxyhandlersocks5(
-      key: proxy_handler_socks5,
-      value: js.Function3[
-          /* proxy */ Url, 
-          /* options */ TransportOptions, 
-          /* callback */ js.Function2[
-            /* err */ Error | Null, 
-            /* socketOptions */ js.UndefOr[typings.nodemailer.anon.Connection], 
-            Unit
-          ], 
-          Unit
-        ]
-    ): Map[String, js.Any] = js.native
+    ): Map[String, Any] = js.native
     
     /** Sets up proxy handler for a Nodemailer object */
     def setupProxy(proxyUrl: String): Unit = js.native
     
-    var transporter: Transport = js.native
+    var transporter: Transport[T] = js.native
     
-    def use(step: String, plugin: PluginFunction): this.type = js.native
+    def use(step: String, plugin: PluginFunction[T]): this.type = js.native
     
     def verify(): js.Promise[`true`] = js.native
     /** Verifies SMTP configuration */
     @JSName("verify")
-    def verify_true(callback: js.Function2[/* err */ Error | Null, `true`, Unit]): Unit = js.native
+    def verify_true(callback: js.Function2[/* err */ js.Error | Null, `true`, Unit]): Unit = js.native
   }
   
   trait Options extends StObject {
@@ -588,7 +481,7 @@ object mailerMod {
     var cc: js.UndefOr[String | Address | (js.Array[String | Address])] = js.undefined
     
     /** optional Date value, current UTC string will be used if not set */
-    var date: js.UndefOr[Date | String] = js.undefined
+    var date: js.UndefOr[js.Date | String] = js.undefined
     
     /** if set to true then fails with an error when a node tries to load content from a file */
     var disableFileAccess: js.UndefOr[Boolean] = js.undefined
@@ -637,8 +530,8 @@ object mailerMod {
     /** Message-id list (an array or space separated string) */
     var references: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    /** An e-mail address that will appear on the Reply-To: field */
-    var replyTo: js.UndefOr[String | Address] = js.undefined
+    /** Comma separated list or an array of e-mail addresses that will appear on the Reply-To: field */
+    var replyTo: js.UndefOr[String | Address | (js.Array[String | Address])] = js.undefined
     
     /** An e-mail address that will appear on the Sender: field */
     var sender: js.UndefOr[String | Address] = js.undefined
@@ -671,7 +564,7 @@ object mailerMod {
       
       inline def setAlternativesUndefined: Self = StObject.set(x, "alternatives", js.undefined)
       
-      inline def setAlternativesVarargs(value: Attachment*): Self = StObject.set(x, "alternatives", js.Array(value :_*))
+      inline def setAlternativesVarargs(value: Attachment*): Self = StObject.set(x, "alternatives", js.Array(value*))
       
       inline def setAmp(value: String | Buffer | Readable | AmpAttachment): Self = StObject.set(x, "amp", value.asInstanceOf[js.Any])
       
@@ -681,21 +574,21 @@ object mailerMod {
       
       inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
       
-      inline def setAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+      inline def setAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "attachments", js.Array(value*))
       
       inline def setBcc(value: String | Address | (js.Array[String | Address])): Self = StObject.set(x, "bcc", value.asInstanceOf[js.Any])
       
       inline def setBccUndefined: Self = StObject.set(x, "bcc", js.undefined)
       
-      inline def setBccVarargs(value: (String | Address)*): Self = StObject.set(x, "bcc", js.Array(value :_*))
+      inline def setBccVarargs(value: (String | Address)*): Self = StObject.set(x, "bcc", js.Array(value*))
       
       inline def setCc(value: String | Address | (js.Array[String | Address])): Self = StObject.set(x, "cc", value.asInstanceOf[js.Any])
       
       inline def setCcUndefined: Self = StObject.set(x, "cc", js.undefined)
       
-      inline def setCcVarargs(value: (String | Address)*): Self = StObject.set(x, "cc", js.Array(value :_*))
+      inline def setCcVarargs(value: (String | Address)*): Self = StObject.set(x, "cc", js.Array(value*))
       
-      inline def setDate(value: Date | String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: js.Date | String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
       inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
@@ -727,7 +620,7 @@ object mailerMod {
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      inline def setHeadersVarargs(value: Value*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: Value*): Self = StObject.set(x, "headers", js.Array(value*))
       
       inline def setHtml(value: String | Buffer | Readable | AttachmentLike): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
@@ -765,11 +658,13 @@ object mailerMod {
       
       inline def setReferencesUndefined: Self = StObject.set(x, "references", js.undefined)
       
-      inline def setReferencesVarargs(value: String*): Self = StObject.set(x, "references", js.Array(value :_*))
+      inline def setReferencesVarargs(value: String*): Self = StObject.set(x, "references", js.Array(value*))
       
-      inline def setReplyTo(value: String | Address): Self = StObject.set(x, "replyTo", value.asInstanceOf[js.Any])
+      inline def setReplyTo(value: String | Address | (js.Array[String | Address])): Self = StObject.set(x, "replyTo", value.asInstanceOf[js.Any])
       
       inline def setReplyToUndefined: Self = StObject.set(x, "replyTo", js.undefined)
+      
+      inline def setReplyToVarargs(value: (String | Address)*): Self = StObject.set(x, "replyTo", js.Array(value*))
       
       inline def setSender(value: String | Address): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
       
@@ -791,7 +686,7 @@ object mailerMod {
       
       inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
       
-      inline def setToVarargs(value: (String | Address)*): Self = StObject.set(x, "to", js.Array(value :_*))
+      inline def setToVarargs(value: (String | Address)*): Self = StObject.set(x, "to", js.Array(value*))
       
       inline def setWatchHtml(value: String | Buffer | Readable | AttachmentLike): Self = StObject.set(x, "watchHtml", value.asInstanceOf[js.Any])
       
@@ -799,9 +694,9 @@ object mailerMod {
     }
   }
   
-  type PluginFunction = js.Function2[
-    /* mail */ typings.nodemailer.mailMessageMod.^, 
-    /* callback */ js.Function1[/* err */ js.UndefOr[Error | Null], Unit], 
+  type PluginFunction[T] = js.Function2[
+    /* mail */ typings.nodemailer.mailMessageMod.^[T], 
+    /* callback */ js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit], 
     Unit
   ]
   

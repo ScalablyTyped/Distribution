@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tuya-panel-kit", "Dialog")
 @js.native
-class Dialog () extends StObject
+open class Dialog () extends StObject
 /* static members */
 object Dialog {
   

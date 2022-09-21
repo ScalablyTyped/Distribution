@@ -14,14 +14,14 @@ object anon {
     var adapter: String = js.native
     
     /* static member */
-    def render(instanceOrCollection: js.Object): js.Any = js.native
-    def render(instanceOrCollection: js.Object, options: JsonOptions): js.Any = js.native
+    def render(instanceOrCollection: js.Object): Any = js.native
+    def render(instanceOrCollection: js.Object, options: JsonOptions): Any = js.native
     /* static member */
     def render[T](instanceOrCollection: js.Thenable[T]): js.Thenable[T] = js.native
     def render[T](instanceOrCollection: js.Thenable[T], options: JsonOptions): js.Thenable[T] = js.native
     
     /* static member */
-    def toJSON(instanceOrCollection: js.Object): js.Any = js.native
-    def toJSON(instanceOrCollection: js.Object, options: JsonOptions): js.Any = js.native
+    def toJSON(instanceOrCollection: js.Object): Any = js.native
+    def toJSON(instanceOrCollection: js.Object, options: JsonOptions): Any = js.native
   }
 }

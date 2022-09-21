@@ -12,6 +12,6 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def htmlToText(): PluginFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("htmlToText")().asInstanceOf[PluginFunction]
-  inline def htmlToText(options: HtmlToTextOptions): PluginFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("htmlToText")(options.asInstanceOf[js.Any]).asInstanceOf[PluginFunction]
+  inline def htmlToText(): PluginFunction[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("htmlToText")().asInstanceOf[PluginFunction[Any]]
+  inline def htmlToText(options: HtmlToTextOptions): PluginFunction[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("htmlToText")(options.asInstanceOf[js.Any]).asInstanceOf[PluginFunction[Any]]
 }

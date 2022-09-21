@@ -10,15 +10,12 @@ Returns an array of unique "global" directories based on the user's platform and
 | ------------------ | :-------------: |
 | Full name          | global-paths |
 | Keywords           | directory, dirname, global, module, package, path, paths, prefix, resolve |
-| # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 85407 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 11517.666666666666 |
+| # stars            | 12.0 |
 
 ## Links
-- [Homepage](https://github.com/jonschlinkert/global-paths)
-- [Bugs](https://github.com/jonschlinkert/global-paths/issues)
-- [Repository](https://github.com/jonschlinkert/global-paths)
 - [Npm](https://www.npmjs.com/package/global-paths)
     
 

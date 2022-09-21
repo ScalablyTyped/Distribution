@@ -31,7 +31,7 @@ object NonSdkApiInsight {
     
     inline def setExampleTraceMessagesUndefined: Self = StObject.set(x, "exampleTraceMessages", js.undefined)
     
-    inline def setExampleTraceMessagesVarargs(value: String*): Self = StObject.set(x, "exampleTraceMessages", js.Array(value :_*))
+    inline def setExampleTraceMessagesVarargs(value: String*): Self = StObject.set(x, "exampleTraceMessages", js.Array(value*))
     
     inline def setMatcherId(value: String): Self = StObject.set(x, "matcherId", value.asInstanceOf[js.Any])
     

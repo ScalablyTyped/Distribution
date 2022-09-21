@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateProjectRequest extends StObject {
   
   /**
-    * The name of the dataset to associate this project with.
+    * The name of an existing dataset to associate this project with.
     */
   var DatasetName: typings.awsSdk.databrewMod.DatasetName
   
   /**
-    * A unique name for the new project.
+    * A unique name for the new project. Valid characters are alphanumeric (A-Z, a-z, 0-9), hyphen (-), period (.), and space.
     */
   var Name: ProjectName
   
@@ -22,7 +22,7 @@ trait CreateProjectRequest extends StObject {
   var RecipeName: typings.awsSdk.databrewMod.RecipeName
   
   /**
-    * The Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role to be assumed for this request.
+    * The Amazon Resource Name (ARN) of the Identity and Access Management (IAM) role to be assumed for this request.
     */
   var RoleArn: Arn
   

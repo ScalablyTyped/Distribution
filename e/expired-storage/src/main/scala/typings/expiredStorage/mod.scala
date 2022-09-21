@@ -8,10 +8,10 @@ object mod {
   
   @JSImport("expired-storage", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with ExpiredStorage {
-    def this(localStorage: js.Any) = this()
+    def this(localStorage: Any) = this()
   }
   
   @js.native
@@ -42,7 +42,7 @@ object mod {
       * @param key Item key to get (string).
       * @return Stored value (JSON.parsed), or undefined if not set / expired.
       */
-    def getJson(key: String): js.Any = js.native
+    def getJson(key: String): Any = js.native
     
     /**
       * Get item time left to live.
@@ -78,7 +78,7 @@ object mod {
       * @param key Item key to remove (string).
       * @return Storage.removeItem() return code.
       */
-    def removeItem(key: String): js.Any = js.native
+    def removeItem(key: String): Any = js.native
     
     /**
       * Set item.
@@ -87,8 +87,8 @@ object mod {
       * @param expiration Expiration time, in seconds. If not provided, will not set expiration time.
       * @return Storage.setItem() return code.
       */
-    def setItem(key: String, value: String): js.Any = js.native
-    def setItem(key: String, value: String, expiration: Double): js.Any = js.native
+    def setItem(key: String, value: String): Any = js.native
+    def setItem(key: String, value: String, expiration: Double): Any = js.native
     
     /**
       * Set a json serializable value. This basically calls JSON.stringify on 'val' before setting it.
@@ -97,8 +97,8 @@ object mod {
       * @param expiration Expiration time, in seconds. If not provided, will not set expiration time.
       * @param return Storage.setItem() return code.
       */
-    def setJson(key: String, value: js.Object): js.Any = js.native
-    def setJson(key: String, value: js.Object, expirationTime: Double): js.Any = js.native
+    def setJson(key: String, value: js.Object): Any = js.native
+    def setJson(key: String, value: js.Object, expirationTime: Double): Any = js.native
     
     /**
       * Update expiration time for an item (note: doesn't validate that the item is set).
@@ -106,7 +106,7 @@ object mod {
       * @param expiration: New expiration time in seconds to set.
       * @return: Storage.setItem() return code for setting new expiration.
       */
-    def updateExpiration(key: String, expiration: Double): js.Any = js.native
+    def updateExpiration(key: String, expiration: Double): Any = js.native
   }
   
   trait PeekInterface extends StObject {

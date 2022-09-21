@@ -11,7 +11,7 @@ object segmentGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/segment_gpu", "SegmentOpProgram")
   @js.native
-  class SegmentOpProgram protected ()
+  open class SegmentOpProgram protected ()
     extends StObject
        with GPGPUProgram {
     def this(segOpInfo: SegOpInfo, segOpType: unsortedSegmentSum) = this()

@@ -1,6 +1,6 @@
 package typings.rtpParser
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.rtpParser.anon.Channels
 import typings.rtpParser.anon.ChannelsClockRate
 import typings.rtpParser.anon.ChannelsClockRateMediaType
@@ -11,6 +11,7 @@ import typings.rtpParser.anon.ClockRateMediaTypeName
 import typings.rtpParser.anon.MediaType
 import typings.rtpParser.anon.MediaTypeName
 import typings.rtpParser.anon.Name
+import typings.rtpParser.anon.`0`
 import typings.rtpParser.anon.`18`
 import typings.rtpParser.anon.`19`
 import typings.rtpParser.anon.`1`
@@ -21,7 +22,6 @@ import typings.rtpParser.anon.`6`
 import typings.rtpParser.anon.`7`
 import typings.rtpParser.anon.`8`
 import typings.rtpParser.anon.`9`
-import typings.rtpParser.rtpParserNumbers.`0`
 import typings.rtpParser.rtpParserNumbers.`100`
 import typings.rtpParser.rtpParserNumbers.`101`
 import typings.rtpParser.rtpParserNumbers.`102`
@@ -131,76 +131,17 @@ object mod {
   
   inline def parseRtpPacket(buf: Buffer): ParsedRTPPacket = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPacket")(buf.asInstanceOf[js.Any]).asInstanceOf[ParsedRTPPacket]
   
-  inline def parseRtpPayloadType(
-    payloadType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 56 */ js.Any
-  ): `1` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`1`]
+  inline def parseRtpPayloadType(payloadType: `72` | `73` | `74` | `75` | `76`): `0` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`0`]
+  inline def parseRtpPayloadType(payloadType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 56 */ Any): `1` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`1`]
   inline def parseRtpPayloadType(payloadType: Double): ParsedRTPType = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[ParsedRTPType]
   
-  inline def parseRtpPayloadType_0(payloadType: `0`): `19` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`19`]
-  
-  inline def parseRtpPayloadType_1(payloadType: typings.rtpParser.rtpParserNumbers.`1`): `18` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`18`]
+  inline def parseRtpPayloadType_0(payloadType: typings.rtpParser.rtpParserNumbers.`0`): `19` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`19`]
   
   inline def parseRtpPayloadType_10(payloadType: `10`): typings.rtpParser.anon.`10` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`10`]
   
-  inline def parseRtpPayloadType_100(payloadType: `100`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
-  
-  inline def parseRtpPayloadType_101(payloadType: `101`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
-  
-  inline def parseRtpPayloadType_102(payloadType: `102`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
-  
-  inline def parseRtpPayloadType_103(payloadType: `103`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
-  
-  inline def parseRtpPayloadType_104(payloadType: `104`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
-  
-  inline def parseRtpPayloadType_105(payloadType: `105`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
-  
-  inline def parseRtpPayloadType_106(payloadType: `106`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
-  
-  inline def parseRtpPayloadType_107(payloadType: `107`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
-  
-  inline def parseRtpPayloadType_108(payloadType: `108`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
-  
-  inline def parseRtpPayloadType_109(payloadType: `109`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
-  
   inline def parseRtpPayloadType_11(payloadType: `11`): `9` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`9`]
   
-  inline def parseRtpPayloadType_110(payloadType: `110`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
-  
-  inline def parseRtpPayloadType_111(payloadType: `111`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
-  
-  inline def parseRtpPayloadType_112(payloadType: `112`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
-  
-  inline def parseRtpPayloadType_113(payloadType: `113`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
-  
-  inline def parseRtpPayloadType_114(payloadType: `114`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
-  
-  inline def parseRtpPayloadType_115(payloadType: `115`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
-  
-  inline def parseRtpPayloadType_116(payloadType: `116`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
-  
-  inline def parseRtpPayloadType_117(payloadType: `117`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
-  
-  inline def parseRtpPayloadType_118(payloadType: `118`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
-  
-  inline def parseRtpPayloadType_119(payloadType: `119`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
-  
   inline def parseRtpPayloadType_12(payloadType: `12`): `8` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`8`]
-  
-  inline def parseRtpPayloadType_120(payloadType: `120`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
-  
-  inline def parseRtpPayloadType_121(payloadType: `121`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
-  
-  inline def parseRtpPayloadType_122(payloadType: `122`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
-  
-  inline def parseRtpPayloadType_123(payloadType: `123`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
-  
-  inline def parseRtpPayloadType_124(payloadType: `124`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
-  
-  inline def parseRtpPayloadType_125(payloadType: `125`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
-  
-  inline def parseRtpPayloadType_126(payloadType: `126`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
-  
-  inline def parseRtpPayloadType_127(payloadType: `127`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
   
   inline def parseRtpPayloadType_13(payloadType: `13`): `7` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`7`]
   
@@ -212,35 +153,18 @@ object mod {
   
   inline def parseRtpPayloadType_17(payloadType: `17`): ChannelsClockRate = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[ChannelsClockRate]
   
+  inline def parseRtpPayloadType_18(
+    payloadType: typings.rtpParser.rtpParserNumbers.`1` | `2` | typings.rtpParser.rtpParserNumbers.`19`
+  ): `18` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`18`]
   inline def parseRtpPayloadType_18(payloadType: typings.rtpParser.rtpParserNumbers.`18`): Channels = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Channels]
-  
-  inline def parseRtpPayloadType_19(payloadType: typings.rtpParser.rtpParserNumbers.`19`): `18` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`18`]
-  
-  inline def parseRtpPayloadType_2(payloadType: `2`): `18` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`18`]
-  
-  inline def parseRtpPayloadType_20(payloadType: `20`): `5` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`5`]
-  
-  inline def parseRtpPayloadType_21(payloadType: `21`): `5` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`5`]
-  
-  inline def parseRtpPayloadType_22(payloadType: `22`): `5` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`5`]
-  
-  inline def parseRtpPayloadType_23(payloadType: `23`): `5` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`5`]
-  
-  inline def parseRtpPayloadType_24(payloadType: `24`): `4` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`4`]
   
   inline def parseRtpPayloadType_25(payloadType: `25`): `3` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`3`]
   
   inline def parseRtpPayloadType_26(payloadType: `26`): typings.rtpParser.anon.`2` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`2`]
   
-  inline def parseRtpPayloadType_27(payloadType: `27`): `4` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`4`]
-  
   inline def parseRtpPayloadType_28(payloadType: `28`): ClockRateMediaTypeName = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[ClockRateMediaTypeName]
   
-  inline def parseRtpPayloadType_29(payloadType: `29`): `4` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`4`]
-  
   inline def parseRtpPayloadType_3(payloadType: typings.rtpParser.rtpParserNumbers.`3`): typings.rtpParser.anon.`17` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`17`]
-  
-  inline def parseRtpPayloadType_30(payloadType: `30`): `4` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`4`]
   
   inline def parseRtpPayloadType_31(payloadType: `31`): MediaTypeName = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[MediaTypeName]
   
@@ -250,35 +174,23 @@ object mod {
   
   inline def parseRtpPayloadType_34(payloadType: `34`): ClockRate = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[ClockRate]
   
+  inline def parseRtpPayloadType_4(payloadType: `24` | `27` | `29` | `30`): `4` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`4`]
   inline def parseRtpPayloadType_4(payloadType: typings.rtpParser.rtpParserNumbers.`4`): typings.rtpParser.anon.`16` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`16`]
   
+  inline def parseRtpPayloadType_5(payloadType: `20` | `21` | `22` | `23`): `5` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[`5`]
   inline def parseRtpPayloadType_5(payloadType: typings.rtpParser.rtpParserNumbers.`5`): typings.rtpParser.anon.`15` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`15`]
   
   inline def parseRtpPayloadType_6(payloadType: typings.rtpParser.rtpParserNumbers.`6`): typings.rtpParser.anon.`14` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`14`]
   
   inline def parseRtpPayloadType_7(payloadType: typings.rtpParser.rtpParserNumbers.`7`): typings.rtpParser.anon.`13` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`13`]
   
-  inline def parseRtpPayloadType_72(payloadType: `72`): typings.rtpParser.anon.`0` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`0`]
-  
-  inline def parseRtpPayloadType_73(payloadType: `73`): typings.rtpParser.anon.`0` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`0`]
-  
-  inline def parseRtpPayloadType_74(payloadType: `74`): typings.rtpParser.anon.`0` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`0`]
-  
-  inline def parseRtpPayloadType_75(payloadType: `75`): typings.rtpParser.anon.`0` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`0`]
-  
-  inline def parseRtpPayloadType_76(payloadType: `76`): typings.rtpParser.anon.`0` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`0`]
-  
   inline def parseRtpPayloadType_8(payloadType: typings.rtpParser.rtpParserNumbers.`8`): typings.rtpParser.anon.`12` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`12`]
   
   inline def parseRtpPayloadType_9(payloadType: typings.rtpParser.rtpParserNumbers.`9`): typings.rtpParser.anon.`11` = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[typings.rtpParser.anon.`11`]
   
-  inline def parseRtpPayloadType_96(payloadType: `96`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
-  
-  inline def parseRtpPayloadType_97(payloadType: `97`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
-  
-  inline def parseRtpPayloadType_98(payloadType: `98`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
-  
-  inline def parseRtpPayloadType_99(payloadType: `99`): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
+  inline def parseRtpPayloadType_Name(
+    payloadType: `96` | `97` | `98` | `99` | `100` | `101` | `102` | `103` | `104` | `105` | `106` | `107` | `108` | `109` | `110` | `111` | `112` | `113` | `114` | `115` | `116` | `117` | `118` | `119` | `120` | `121` | `122` | `123` | `124` | `125` | `126` | `127`
+  ): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRtpPayloadType")(payloadType.asInstanceOf[js.Any]).asInstanceOf[Name]
   
   @JSImport("rtp-parser", "payloadTypesHash")
   @js.native
@@ -334,7 +246,7 @@ object mod {
       
       inline def setCsrcCount(value: Double): Self = StObject.set(x, "csrcCount", value.asInstanceOf[js.Any])
       
-      inline def setCsrcVarargs(value: Double*): Self = StObject.set(x, "csrc", js.Array(value :_*))
+      inline def setCsrcVarargs(value: Double*): Self = StObject.set(x, "csrc", js.Array(value*))
       
       inline def setExtension(value: Double): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
       
@@ -725,15 +637,15 @@ object mod {
     
     var `71`: `1`
     
-    var `72`: typings.rtpParser.anon.`0`
+    var `72`: `0`
     
-    var `73`: typings.rtpParser.anon.`0`
+    var `73`: `0`
     
-    var `74`: typings.rtpParser.anon.`0`
+    var `74`: `0`
     
-    var `75`: typings.rtpParser.anon.`0`
+    var `75`: `0`
     
-    var `76`: typings.rtpParser.anon.`0`
+    var `76`: `0`
     
     var `77`: `1`
     
@@ -886,11 +798,11 @@ object mod {
       `7`: typings.rtpParser.anon.`13`,
       `70`: `1`,
       `71`: `1`,
-      `72`: typings.rtpParser.anon.`0`,
-      `73`: typings.rtpParser.anon.`0`,
-      `74`: typings.rtpParser.anon.`0`,
-      `75`: typings.rtpParser.anon.`0`,
-      `76`: typings.rtpParser.anon.`0`,
+      `72`: `0`,
+      `73`: `0`,
+      `74`: `0`,
+      `75`: `0`,
+      `76`: `0`,
       `77`: `1`,
       `78`: `1`,
       `79`: `1`,
@@ -1247,15 +1159,15 @@ object mod {
       
       inline def set71(value: `1`): Self = StObject.set(x, "71", value.asInstanceOf[js.Any])
       
-      inline def set72(value: typings.rtpParser.anon.`0`): Self = StObject.set(x, "72", value.asInstanceOf[js.Any])
+      inline def set72(value: `0`): Self = StObject.set(x, "72", value.asInstanceOf[js.Any])
       
-      inline def set73(value: typings.rtpParser.anon.`0`): Self = StObject.set(x, "73", value.asInstanceOf[js.Any])
+      inline def set73(value: `0`): Self = StObject.set(x, "73", value.asInstanceOf[js.Any])
       
-      inline def set74(value: typings.rtpParser.anon.`0`): Self = StObject.set(x, "74", value.asInstanceOf[js.Any])
+      inline def set74(value: `0`): Self = StObject.set(x, "74", value.asInstanceOf[js.Any])
       
-      inline def set75(value: typings.rtpParser.anon.`0`): Self = StObject.set(x, "75", value.asInstanceOf[js.Any])
+      inline def set75(value: `0`): Self = StObject.set(x, "75", value.asInstanceOf[js.Any])
       
-      inline def set76(value: typings.rtpParser.anon.`0`): Self = StObject.set(x, "76", value.asInstanceOf[js.Any])
+      inline def set76(value: `0`): Self = StObject.set(x, "76", value.asInstanceOf[js.Any])
       
       inline def set77(value: `1`): Self = StObject.set(x, "77", value.asInstanceOf[js.Any])
       

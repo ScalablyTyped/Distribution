@@ -8,7 +8,7 @@ object mathMod {
   
   @JSImport("@devexpress/utils/lib/utils/math", "MathUtils")
   @js.native
-  class MathUtils () extends StObject
+  open class MathUtils () extends StObject
   /* static members */
   object MathUtils {
     
@@ -25,8 +25,8 @@ object mathMod {
     
     @JSImport("@devexpress/utils/lib/utils/math", "MathUtils.powFactor")
     @js.native
-    def powFactor: js.Any = js.native
-    inline def powFactor_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("powFactor")(x.asInstanceOf[js.Any])
+    def powFactor: Any = js.native
+    inline def powFactor_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("powFactor")(x.asInstanceOf[js.Any])
     
     inline def restrictValue(`val`: Double, minVal: Double, maxVal: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("restrictValue")(`val`.asInstanceOf[js.Any], minVal.asInstanceOf[js.Any], maxVal.asInstanceOf[js.Any])).asInstanceOf[Double]
     

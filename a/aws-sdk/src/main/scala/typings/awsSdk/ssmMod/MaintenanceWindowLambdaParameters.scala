@@ -17,7 +17,7 @@ trait MaintenanceWindowLambdaParameters extends StObject {
   var Payload: js.UndefOr[MaintenanceWindowLambdaPayload] = js.undefined
   
   /**
-    * (Optional) Specify a Lambda function version or alias name. If you specify a function version, the action uses the qualified function ARN to invoke a specific Lambda function. If you specify an alias name, the action uses the alias ARN to invoke the Lambda function version to which the alias points.
+    * (Optional) Specify an Lambda function version or alias name. If you specify a function version, the operation uses the qualified function Amazon Resource Name (ARN) to invoke a specific Lambda function. If you specify an alias name, the operation uses the alias ARN to invoke the Lambda function version to which the alias points.
     */
   var Qualifier: js.UndefOr[MaintenanceWindowLambdaQualifier] = js.undefined
 }

@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "ExcludeStrategy")
 @js.native
-class ExcludeStrategy () extends StObject
+open class ExcludeStrategy () extends StObject

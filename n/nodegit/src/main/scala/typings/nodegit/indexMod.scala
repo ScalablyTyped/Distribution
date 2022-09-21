@@ -18,7 +18,7 @@ object indexMod {
   
   @JSImport("nodegit/index_", "Index")
   @js.native
-  class Index () extends StObject {
+  open class Index () extends StObject {
     
     def add(sourceEntry: IndexEntry): Double = js.native
     

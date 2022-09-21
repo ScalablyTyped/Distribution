@@ -25,7 +25,7 @@ object BaseHookContext {
     
     inline def setArgv(value: js.Array[String]): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
     
-    inline def setArgvVarargs(value: String*): Self = StObject.set(x, "argv", js.Array(value :_*))
+    inline def setArgvVarargs(value: String*): Self = StObject.set(x, "argv", js.Array(value*))
     
     inline def setEnv(value: ProcessEnv): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     

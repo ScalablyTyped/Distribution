@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "SineEase")
 @js.native
-class SineEase ()
+open class SineEase ()
   extends typings.babylonjs.animationsIndexMod.SineEase

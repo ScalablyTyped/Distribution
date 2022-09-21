@@ -1063,7 +1063,7 @@ object mod {
   
   @JSImport("@lumino/algorithm", "ArrayIterator")
   @js.native
-  class ArrayIterator[T] protected ()
+  open class ArrayIterator[T] protected ()
     extends typings.luminoAlgorithm.iterMod.ArrayIterator[T] {
     /**
       * Construct a new array iterator.
@@ -1075,7 +1075,7 @@ object mod {
   
   @JSImport("@lumino/algorithm", "ChainIterator")
   @js.native
-  class ChainIterator[T] protected ()
+  open class ChainIterator[T] protected ()
     extends typings.luminoAlgorithm.chainMod.ChainIterator[T] {
     /**
       * Construct a new chain iterator.
@@ -1087,15 +1087,12 @@ object mod {
   
   @JSImport("@lumino/algorithm", "EmptyIterator")
   @js.native
-  /**
-    * Construct a new empty iterator.
-    */
-  class EmptyIterator[T] ()
+  open class EmptyIterator[T] ()
     extends typings.luminoAlgorithm.emptyMod.EmptyIterator[T]
   
   @JSImport("@lumino/algorithm", "EnumerateIterator")
   @js.native
-  class EnumerateIterator[T] protected ()
+  open class EnumerateIterator[T] protected ()
     extends typings.luminoAlgorithm.enumerateMod.EnumerateIterator[T] {
     /**
       * Construct a new enumerate iterator.
@@ -1109,7 +1106,7 @@ object mod {
   
   @JSImport("@lumino/algorithm", "FilterIterator")
   @js.native
-  class FilterIterator[T] protected ()
+  open class FilterIterator[T] protected ()
     extends typings.luminoAlgorithm.filterMod.FilterIterator[T] {
     /**
       * Construct a new filter iterator.
@@ -1123,7 +1120,7 @@ object mod {
   
   @JSImport("@lumino/algorithm", "FnIterator")
   @js.native
-  class FnIterator[T] protected ()
+  open class FnIterator[T] protected ()
     extends typings.luminoAlgorithm.iterMod.FnIterator[T] {
     /**
       * Construct a new function iterator.
@@ -1135,7 +1132,7 @@ object mod {
   
   @JSImport("@lumino/algorithm", "ItemIterator")
   @js.native
-  class ItemIterator[T] protected ()
+  open class ItemIterator[T] protected ()
     extends typings.luminoAlgorithm.iterMod.ItemIterator[T] {
     /**
       * Construct a new item iterator.
@@ -1150,7 +1147,7 @@ object mod {
   
   @JSImport("@lumino/algorithm", "KeyIterator")
   @js.native
-  class KeyIterator protected ()
+  open class KeyIterator protected ()
     extends typings.luminoAlgorithm.iterMod.KeyIterator {
     /**
       * Construct a new key iterator.
@@ -1159,13 +1156,13 @@ object mod {
       *
       * @param keys - The keys to iterate, if known.
       */
-    def this(source: StringDictionary[js.Any]) = this()
-    def this(source: StringDictionary[js.Any], keys: js.Array[String]) = this()
+    def this(source: StringDictionary[Any]) = this()
+    def this(source: StringDictionary[Any], keys: js.Array[String]) = this()
   }
   
   @JSImport("@lumino/algorithm", "MapIterator")
   @js.native
-  class MapIterator[T, U] protected ()
+  open class MapIterator[T, U] protected ()
     extends typings.luminoAlgorithm.mapMod.MapIterator[T, U] {
     /**
       * Construct a new map iterator.
@@ -1179,7 +1176,7 @@ object mod {
   
   @JSImport("@lumino/algorithm", "RangeIterator")
   @js.native
-  class RangeIterator protected ()
+  open class RangeIterator protected ()
     extends typings.luminoAlgorithm.rangeMod.RangeIterator {
     /**
       * Construct a new range iterator.
@@ -1195,7 +1192,7 @@ object mod {
   
   @JSImport("@lumino/algorithm", "RepeatIterator")
   @js.native
-  class RepeatIterator[T] protected ()
+  open class RepeatIterator[T] protected ()
     extends typings.luminoAlgorithm.repeatMod.RepeatIterator[T] {
     /**
       * Construct a new repeat iterator.
@@ -1209,7 +1206,7 @@ object mod {
   
   @JSImport("@lumino/algorithm", "RetroArrayIterator")
   @js.native
-  class RetroArrayIterator[T] protected ()
+  open class RetroArrayIterator[T] protected ()
     extends typings.luminoAlgorithm.retroMod.RetroArrayIterator[T] {
     /**
       * Construct a new retro iterator.
@@ -1221,7 +1218,7 @@ object mod {
   
   @JSImport("@lumino/algorithm", "StrideIterator")
   @js.native
-  class StrideIterator[T] protected ()
+  open class StrideIterator[T] protected ()
     extends typings.luminoAlgorithm.strideMod.StrideIterator[T] {
     /**
       * Construct a new stride iterator.
@@ -1343,7 +1340,7 @@ object mod {
   
   @JSImport("@lumino/algorithm", "TakeIterator")
   @js.native
-  class TakeIterator[T] protected ()
+  open class TakeIterator[T] protected ()
     extends typings.luminoAlgorithm.takeMod.TakeIterator[T] {
     /**
       * Construct a new take iterator.
@@ -1357,7 +1354,7 @@ object mod {
   
   @JSImport("@lumino/algorithm", "ValueIterator")
   @js.native
-  class ValueIterator[T] protected ()
+  open class ValueIterator[T] protected ()
     extends typings.luminoAlgorithm.iterMod.ValueIterator[T] {
     /**
       * Construct a new value iterator.
@@ -1372,7 +1369,7 @@ object mod {
   
   @JSImport("@lumino/algorithm", "ZipIterator")
   @js.native
-  class ZipIterator[T] protected ()
+  open class ZipIterator[T] protected ()
     extends typings.luminoAlgorithm.zipMod.ZipIterator[T] {
     /**
       * Construct a new zip iterator.
@@ -1382,7 +1379,7 @@ object mod {
     def this(source: js.Array[IIterator[T]]) = this()
   }
   
-  inline def chain[T](objects: IterableOrArrayLike[T]*): IIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")(objects.asInstanceOf[js.Any]).asInstanceOf[IIterator[T]]
+  inline def chain[T](objects: IterableOrArrayLike[T]*): IIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")(objects.asInstanceOf[Seq[js.Any]]*).asInstanceOf[IIterator[T]]
   
   inline def each[T](
     `object`: IterableOrArrayLike[T],
@@ -1453,5 +1450,5 @@ object mod {
   
   inline def topologicSort[T](edges: IterableOrArrayLike[js.Tuple2[T, T]]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("topologicSort")(edges.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   
-  inline def zip[T](objects: IterableOrArrayLike[T]*): IIterator[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("zip")(objects.asInstanceOf[js.Any]).asInstanceOf[IIterator[js.Array[T]]]
+  inline def zip[T](objects: IterableOrArrayLike[T]*): IIterator[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("zip")(objects.asInstanceOf[Seq[js.Any]]*).asInstanceOf[IIterator[js.Array[T]]]
 }

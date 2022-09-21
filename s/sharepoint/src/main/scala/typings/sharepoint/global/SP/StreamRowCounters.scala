@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.StreamRowCounters")
 @js.native
-class StreamRowCounters ()
+open class StreamRowCounters ()
   extends StObject
      with typings.sharepoint.SP.StreamRowCounters

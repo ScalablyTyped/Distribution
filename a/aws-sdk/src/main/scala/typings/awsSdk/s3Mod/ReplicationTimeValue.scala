@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ReplicationTimeValue extends StObject {
   
   /**
-    *  Contains an integer specifying time in minutes.   Valid values: 15 minutes. 
+    *  Contains an integer specifying time in minutes.   Valid value: 15
     */
   var Minutes: js.UndefOr[typings.awsSdk.s3Mod.Minutes] = js.undefined
 }

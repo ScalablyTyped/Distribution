@@ -11,9 +11,9 @@ Tools for working with all sorts of browser viewports
 | Full name          | viewporter |
 | Keywords           | viewport, scaling, position, mobile |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 68 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 13.0 |
+| # stars            | 6.0 |
 
 ## Links
 - [Homepage](https://github.com/macropodhq/viewporter)

@@ -1,7 +1,7 @@
 
 # Scala.js typings for commercetools__enzyme-extensions
 
-Typings are for version 3.0
+Typings are for version 4.0
 
 ## Library description:
 Enzyme extensions tailored at improving dealing with shallowly rendered wrappers
@@ -11,14 +11,11 @@ Enzyme extensions tailored at improving dealing with shallowly rendered wrappers
 | Full name          | @commercetools/enzyme-extensions |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 1 |
-| # downloads        | 258202 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 8692.0 |
+| # stars            | 30.0 |
 
 ## Links
-- [Homepage](https://github.com/commercetools/enzyme-extensions#readme)
-- [Bugs](https://github.com/commercetools/enzyme-extensions/issues)
-- [Repository](https://github.com/commercetools/enzyme-extensions)
 - [Npm](https://www.npmjs.com/package/%40commercetools%2Fenzyme-extensions)
     
 

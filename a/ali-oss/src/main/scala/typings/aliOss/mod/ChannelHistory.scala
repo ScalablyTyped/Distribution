@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ChannelHistory extends StObject {
   
-  //
   var EndTime: String
   
+  /** the remote addr */
   var RemoteAddr: String
   
   var StartTime: String

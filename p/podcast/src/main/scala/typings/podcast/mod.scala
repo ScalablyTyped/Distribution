@@ -11,7 +11,6 @@ import typings.podcast.podcastStrings.episodic
 import typings.podcast.podcastStrings.full
 import typings.podcast.podcastStrings.serial
 import typings.podcast.podcastStrings.trailer
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +19,7 @@ object mod {
   
   @JSImport("podcast", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Podcast {
     def this(options: FeedOptions) = this()
@@ -66,7 +65,7 @@ object mod {
     
     var managingEditor: js.UndefOr[String] = js.undefined
     
-    var pubDate: js.UndefOr[Date | String] = js.undefined
+    var pubDate: js.UndefOr[js.Date | String] = js.undefined
     
     var title: js.UndefOr[String] = js.undefined
     
@@ -89,7 +88,7 @@ object mod {
       
       inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
       
-      inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+      inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value*))
       
       inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
       
@@ -99,7 +98,7 @@ object mod {
       
       inline def setCustomElementsUndefined: Self = StObject.set(x, "customElements", js.undefined)
       
-      inline def setCustomElementsVarargs(value: js.Object*): Self = StObject.set(x, "customElements", js.Array(value :_*))
+      inline def setCustomElementsVarargs(value: js.Object*): Self = StObject.set(x, "customElements", js.Array(value*))
       
       inline def setCustomNamespaces(value: js.Object): Self = StObject.set(x, "customNamespaces", value.asInstanceOf[js.Any])
       
@@ -125,7 +124,7 @@ object mod {
       
       inline def setItunesCategoryUndefined: Self = StObject.set(x, "itunesCategory", js.undefined)
       
-      inline def setItunesCategoryVarargs(value: FeedItunesCategory*): Self = StObject.set(x, "itunesCategory", js.Array(value :_*))
+      inline def setItunesCategoryVarargs(value: FeedItunesCategory*): Self = StObject.set(x, "itunesCategory", js.Array(value*))
       
       inline def setItunesExplicit(value: Boolean): Self = StObject.set(x, "itunesExplicit", value.asInstanceOf[js.Any])
       
@@ -159,7 +158,7 @@ object mod {
       
       inline def setManagingEditorUndefined: Self = StObject.set(x, "managingEditor", js.undefined)
       
-      inline def setPubDate(value: Date | String): Self = StObject.set(x, "pubDate", value.asInstanceOf[js.Any])
+      inline def setPubDate(value: js.Date | String): Self = StObject.set(x, "pubDate", value.asInstanceOf[js.Any])
       
       inline def setPubDateUndefined: Self = StObject.set(x, "pubDate", js.undefined)
       
@@ -196,7 +195,7 @@ object mod {
       
       inline def setSubcatsUndefined: Self = StObject.set(x, "subcats", js.undefined)
       
-      inline def setSubcatsVarargs(value: FeedItunesCategory*): Self = StObject.set(x, "subcats", js.Array(value :_*))
+      inline def setSubcatsVarargs(value: FeedItunesCategory*): Self = StObject.set(x, "subcats", js.Array(value*))
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
@@ -235,7 +234,7 @@ object mod {
     
     var customElements: js.UndefOr[js.Array[js.Object]] = js.undefined
     
-    var date: Date | String
+    var date: js.Date | String
     
     var description: js.UndefOr[String] = js.undefined
     
@@ -273,7 +272,7 @@ object mod {
   }
   object Item {
     
-    inline def apply(date: Date | String, url: String): Item = {
+    inline def apply(date: js.Date | String, url: String): Item = {
       val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[Item]
     }
@@ -288,7 +287,7 @@ object mod {
       
       inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
       
-      inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+      inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value*))
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -298,9 +297,9 @@ object mod {
       
       inline def setCustomElementsUndefined: Self = StObject.set(x, "customElements", js.undefined)
       
-      inline def setCustomElementsVarargs(value: js.Object*): Self = StObject.set(x, "customElements", js.Array(value :_*))
+      inline def setCustomElementsVarargs(value: js.Object*): Self = StObject.set(x, "customElements", js.Array(value*))
       
-      inline def setDate(value: Date | String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: js.Date | String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       

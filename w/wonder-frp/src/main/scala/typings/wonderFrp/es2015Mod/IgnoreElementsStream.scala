@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder-frp/dist/es2015", "IgnoreElementsStream")
 @js.native
-class IgnoreElementsStream protected ()
+open class IgnoreElementsStream protected ()
   extends typings.wonderFrp.streamIgnoreElementsStreamMod.IgnoreElementsStream {
   def this(source: typings.wonderFrp.coreStreamMod.Stream) = this()
 }

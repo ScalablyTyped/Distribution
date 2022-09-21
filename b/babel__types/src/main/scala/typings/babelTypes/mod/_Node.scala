@@ -28,6 +28,7 @@ import typings.babelTypes.babelTypesStrings.Slash
 import typings.babelTypes.babelTypesStrings.StringLiteral
 import typings.babelTypes.babelTypesStrings.Tilde
 import typings.babelTypes.babelTypesStrings.Verticalline
+import typings.babelTypes.babelTypesStrings.VerticallineGreaterthansign
 import typings.babelTypes.babelTypesStrings.VerticallineVerticalline
 import typings.babelTypes.babelTypesStrings.`--`
 import typings.babelTypes.babelTypesStrings.`-_`
@@ -41,7 +42,7 @@ import typings.babelTypes.babelTypesStrings.in
 import typings.babelTypes.babelTypesStrings.init
 import typings.babelTypes.babelTypesStrings.instanceof
 import typings.babelTypes.babelTypesStrings.let
-import typings.babelTypes.babelTypesStrings.method
+import typings.babelTypes.babelTypesStrings.method_
 import typings.babelTypes.babelTypesStrings.minus
 import typings.babelTypes.babelTypesStrings.module
 import typings.babelTypes.babelTypesStrings.plus
@@ -74,8 +75,8 @@ object _Node {
     __obj.asInstanceOf[typings.babelTypes.mod.ArrayExpression_]
   }
   
-  inline def ArrayPattern_(elements: js.Array[Null | PatternLike]): typings.babelTypes.mod.ArrayPattern_ = {
-    val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any], decorators = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeAnnotation = null)
+  inline def ArrayPattern_(elements: js.Array[Null | PatternLike | LVal]): typings.babelTypes.mod.ArrayPattern_ = {
+    val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any], decorators = null, end = null, innerComments = null, leadingComments = null, loc = null, optional = null, start = null, trailingComments = null, typeAnnotation = null)
     __obj.updateDynamic("type")("ArrayPattern")
     __obj.asInstanceOf[typings.babelTypes.mod.ArrayPattern_]
   }
@@ -91,9 +92,9 @@ object _Node {
     body: BlockStatement_ | Expression,
     expression: Boolean,
     generator: Boolean,
-    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_]
+    params: js.Array[Identifier_ | Pattern | RestElement_]
   ): typings.babelTypes.mod.ArrowFunctionExpression_ = {
-    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, returnType = null, start = null, trailingComments = null, typeParameters = null)
+    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, predicate = null, returnType = null, start = null, trailingComments = null, typeParameters = null)
     __obj.updateDynamic("type")("ArrowFunctionExpression")
     __obj.asInstanceOf[typings.babelTypes.mod.ArrowFunctionExpression_]
   }
@@ -104,7 +105,10 @@ object _Node {
     __obj.asInstanceOf[typings.babelTypes.mod.AssignmentExpression_]
   }
   
-  inline def AssignmentPattern_(left: Identifier_ | ObjectPattern_ | ArrayPattern_ | MemberExpression_, right: Expression): typings.babelTypes.mod.AssignmentPattern_ = {
+  inline def AssignmentPattern_(
+    left: Identifier_ | ObjectPattern_ | ArrayPattern_ | MemberExpression_ | TSAsExpression_ | TSTypeAssertion_ | TSNonNullExpression_,
+    right: Expression
+  ): typings.babelTypes.mod.AssignmentPattern_ = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], decorators = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeAnnotation = null)
     __obj.updateDynamic("type")("AssignmentPattern")
     __obj.asInstanceOf[typings.babelTypes.mod.AssignmentPattern_]
@@ -124,7 +128,7 @@ object _Node {
   
   inline def BinaryExpression_(
     left: Expression | PrivateName_,
-    operator: Plussign | `-_` | Slash | Percentsign | Asterisk | AsteriskAsterisk | Ampersand | Verticalline | GreaterthansignGreaterthansign | GreaterthansignGreaterthansignGreaterthansign | LessthansignLessthansign | typings.babelTypes.babelTypesStrings.^ | EqualssignEqualssign | EqualssignEqualssignEqualssign | ExclamationmarkEqualssign | ExclamationmarkEqualssignEqualssign | in | instanceof | Greaterthansign | Lessthansign | GreaterthansignEqualssign | LessthansignEqualssign,
+    operator: Plussign | `-_` | Slash | Percentsign | Asterisk | AsteriskAsterisk | Ampersand | Verticalline | GreaterthansignGreaterthansign | GreaterthansignGreaterthansignGreaterthansign | LessthansignLessthansign | typings.babelTypes.babelTypesStrings.^ | EqualssignEqualssign | EqualssignEqualssignEqualssign | ExclamationmarkEqualssign | ExclamationmarkEqualssignEqualssign | in | instanceof | Greaterthansign | Lessthansign | GreaterthansignEqualssign | LessthansignEqualssign | VerticallineGreaterthansign,
     right: Expression
   ): typings.babelTypes.mod.BinaryExpression_ = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
@@ -171,7 +175,7 @@ object _Node {
   
   inline def CallExpression_(
     arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName_ | ArgumentPlaceholder_],
-    callee: Expression | V8IntrinsicIdentifier_
+    callee: Expression | Super_ | V8IntrinsicIdentifier_
   ): typings.babelTypes.mod.CallExpression_ = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], callee = callee.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, optional = null, start = null, trailingComments = null, typeArguments = null, typeParameters = null)
     __obj.updateDynamic("type")("CallExpression")
@@ -184,9 +188,22 @@ object _Node {
     __obj.asInstanceOf[typings.babelTypes.mod.CatchClause_]
   }
   
+  inline def ClassAccessorProperty_(
+    computed: Boolean,
+    key: Identifier_ | StringLiteral_ | NumericLiteral_ | BigIntLiteral_ | Expression | PrivateName_,
+    `override`: Boolean,
+    static: Boolean
+  ): typings.babelTypes.mod.ClassAccessorProperty_ = {
+    val __obj = js.Dynamic.literal(computed = computed.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], accessibility = null, declare = null, decorators = null, definite = null, end = null, innerComments = null, leadingComments = null, loc = null, optional = null, readonly = null, start = null, trailingComments = null, typeAnnotation = null, value = null, variance = null)
+    __obj.updateDynamic("override")(`override`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ClassAccessorProperty")
+    __obj.updateDynamic("abstract")(null)
+    __obj.asInstanceOf[typings.babelTypes.mod.ClassAccessorProperty_]
+  }
+  
   inline def ClassBody_(
     body: js.Array[
-      ClassMethod_ | ClassPrivateMethod_ | ClassProperty_ | ClassPrivateProperty_ | TSDeclareMethod_ | TSIndexSignature_
+      ClassMethod_ | ClassPrivateMethod_ | ClassProperty_ | ClassPrivateProperty_ | ClassAccessorProperty_ | TSDeclareMethod_ | TSIndexSignature_ | StaticBlock_
     ]
   ): typings.babelTypes.mod.ClassBody_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
@@ -218,12 +235,14 @@ object _Node {
     body: BlockStatement_,
     computed: Boolean,
     generator: Boolean,
-    key: Identifier_ | StringLiteral_ | NumericLiteral_ | Expression,
-    kind: get | set | method | constructor,
+    key: Identifier_ | StringLiteral_ | NumericLiteral_ | BigIntLiteral_ | Expression,
+    kind: get | set | method_ | constructor,
+    `override`: Boolean,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     static: Boolean
   ): typings.babelTypes.mod.ClassMethod_ = {
     val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], computed = computed.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], access = null, accessibility = null, decorators = null, end = null, innerComments = null, leadingComments = null, loc = null, optional = null, returnType = null, start = null, trailingComments = null, typeParameters = null)
+    __obj.updateDynamic("override")(`override`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ClassMethod")
     __obj.updateDynamic("abstract")(null)
     __obj.asInstanceOf[typings.babelTypes.mod.ClassMethod_]
@@ -235,28 +254,32 @@ object _Node {
     computed: Boolean,
     generator: Boolean,
     key: PrivateName_,
-    kind: get | set | method | constructor,
+    kind: get | set | method_,
+    `override`: Boolean,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     static: Boolean
   ): typings.babelTypes.mod.ClassPrivateMethod_ = {
     val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], computed = computed.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], access = null, accessibility = null, decorators = null, end = null, innerComments = null, leadingComments = null, loc = null, optional = null, returnType = null, start = null, trailingComments = null, typeParameters = null)
+    __obj.updateDynamic("override")(`override`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ClassPrivateMethod")
     __obj.updateDynamic("abstract")(null)
     __obj.asInstanceOf[typings.babelTypes.mod.ClassPrivateMethod_]
   }
   
-  inline def ClassPrivateProperty_(key: PrivateName_, static: js.Any): typings.babelTypes.mod.ClassPrivateProperty_ = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], decorators = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, value = null)
+  inline def ClassPrivateProperty_(key: PrivateName_, static: Boolean): typings.babelTypes.mod.ClassPrivateProperty_ = {
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], decorators = null, definite = null, end = null, innerComments = null, leadingComments = null, loc = null, readonly = null, start = null, trailingComments = null, typeAnnotation = null, value = null, variance = null)
     __obj.updateDynamic("type")("ClassPrivateProperty")
     __obj.asInstanceOf[typings.babelTypes.mod.ClassPrivateProperty_]
   }
   
   inline def ClassProperty_(
     computed: Boolean,
-    key: Identifier_ | StringLiteral_ | NumericLiteral_ | Expression,
+    key: Identifier_ | StringLiteral_ | NumericLiteral_ | BigIntLiteral_ | Expression,
+    `override`: Boolean,
     static: Boolean
   ): typings.babelTypes.mod.ClassProperty_ = {
-    val __obj = js.Dynamic.literal(computed = computed.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], accessibility = null, declare = null, decorators = null, definite = null, end = null, innerComments = null, leadingComments = null, loc = null, optional = null, readonly = null, start = null, trailingComments = null, typeAnnotation = null, value = null)
+    val __obj = js.Dynamic.literal(computed = computed.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], accessibility = null, declare = null, decorators = null, definite = null, end = null, innerComments = null, leadingComments = null, loc = null, optional = null, readonly = null, start = null, trailingComments = null, typeAnnotation = null, value = null, variance = null)
+    __obj.updateDynamic("override")(`override`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ClassProperty")
     __obj.updateDynamic("abstract")(null)
     __obj.asInstanceOf[typings.babelTypes.mod.ClassProperty_]
@@ -331,7 +354,7 @@ object _Node {
   }
   
   inline def DeclareOpaqueType_(id: Identifier_): typings.babelTypes.mod.DeclareOpaqueType_ = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, supertype = null, trailingComments = null, typeParameters = null)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], end = null, impltype = null, innerComments = null, leadingComments = null, loc = null, start = null, supertype = null, trailingComments = null, typeParameters = null)
     __obj.updateDynamic("type")("DeclareOpaqueType")
     __obj.asInstanceOf[typings.babelTypes.mod.DeclareOpaqueType_]
   }
@@ -372,8 +395,8 @@ object _Node {
     __obj.asInstanceOf[typings.babelTypes.mod.Directive_]
   }
   
-  inline def DoExpression_(body: BlockStatement_): typings.babelTypes.mod.DoExpression_ = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+  inline def DoExpression_(async: Boolean, body: BlockStatement_): typings.babelTypes.mod.DoExpression_ = {
+    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("DoExpression")
     __obj.asInstanceOf[typings.babelTypes.mod.DoExpression_]
   }
@@ -396,8 +419,8 @@ object _Node {
     __obj.asInstanceOf[typings.babelTypes.mod.EmptyTypeAnnotation_]
   }
   
-  inline def EnumBooleanBody_(explicit: Boolean, members: js.Array[EnumBooleanMember_]): typings.babelTypes.mod.EnumBooleanBody_ = {
-    val __obj = js.Dynamic.literal(explicit = explicit.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+  inline def EnumBooleanBody_(explicitType: Boolean, hasUnknownMembers: Boolean, members: js.Array[EnumBooleanMember_]): typings.babelTypes.mod.EnumBooleanBody_ = {
+    val __obj = js.Dynamic.literal(explicitType = explicitType.asInstanceOf[js.Any], hasUnknownMembers = hasUnknownMembers.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("EnumBooleanBody")
     __obj.asInstanceOf[typings.babelTypes.mod.EnumBooleanBody_]
   }
@@ -420,8 +443,8 @@ object _Node {
     __obj.asInstanceOf[typings.babelTypes.mod.EnumDefaultedMember_]
   }
   
-  inline def EnumNumberBody_(explicit: Boolean, members: js.Array[EnumNumberMember_]): typings.babelTypes.mod.EnumNumberBody_ = {
-    val __obj = js.Dynamic.literal(explicit = explicit.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+  inline def EnumNumberBody_(explicitType: Boolean, hasUnknownMembers: Boolean, members: js.Array[EnumNumberMember_]): typings.babelTypes.mod.EnumNumberBody_ = {
+    val __obj = js.Dynamic.literal(explicitType = explicitType.asInstanceOf[js.Any], hasUnknownMembers = hasUnknownMembers.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("EnumNumberBody")
     __obj.asInstanceOf[typings.babelTypes.mod.EnumNumberBody_]
   }
@@ -432,8 +455,12 @@ object _Node {
     __obj.asInstanceOf[typings.babelTypes.mod.EnumNumberMember_]
   }
   
-  inline def EnumStringBody_(explicit: Boolean, members: js.Array[EnumStringMember_ | EnumDefaultedMember_]): typings.babelTypes.mod.EnumStringBody_ = {
-    val __obj = js.Dynamic.literal(explicit = explicit.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+  inline def EnumStringBody_(
+    explicitType: Boolean,
+    hasUnknownMembers: Boolean,
+    members: js.Array[EnumStringMember_ | EnumDefaultedMember_]
+  ): typings.babelTypes.mod.EnumStringBody_ = {
+    val __obj = js.Dynamic.literal(explicitType = explicitType.asInstanceOf[js.Any], hasUnknownMembers = hasUnknownMembers.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("EnumStringBody")
     __obj.asInstanceOf[typings.babelTypes.mod.EnumStringBody_]
   }
@@ -444,8 +471,8 @@ object _Node {
     __obj.asInstanceOf[typings.babelTypes.mod.EnumStringMember_]
   }
   
-  inline def EnumSymbolBody_(members: js.Array[EnumDefaultedMember_]): typings.babelTypes.mod.EnumSymbolBody_ = {
-    val __obj = js.Dynamic.literal(members = members.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+  inline def EnumSymbolBody_(hasUnknownMembers: Boolean, members: js.Array[EnumDefaultedMember_]): typings.babelTypes.mod.EnumSymbolBody_ = {
+    val __obj = js.Dynamic.literal(hasUnknownMembers = hasUnknownMembers.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("EnumSymbolBody")
     __obj.asInstanceOf[typings.babelTypes.mod.EnumSymbolBody_]
   }
@@ -457,13 +484,13 @@ object _Node {
   }
   
   inline def ExportAllDeclaration_(source: StringLiteral_): typings.babelTypes.mod.ExportAllDeclaration_ = {
-    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], assertions = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], assertions = null, end = null, exportKind = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("ExportAllDeclaration")
     __obj.asInstanceOf[typings.babelTypes.mod.ExportAllDeclaration_]
   }
   
-  inline def ExportDefaultDeclaration_(declaration: FunctionDeclaration_ | TSDeclareFunction_ | ClassDeclaration_ | Expression): typings.babelTypes.mod.ExportDefaultDeclaration_ = {
-    val __obj = js.Dynamic.literal(declaration = declaration.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+  inline def ExportDefaultDeclaration_(declaration: TSDeclareFunction_ | FunctionDeclaration_ | ClassDeclaration_ | Expression): typings.babelTypes.mod.ExportDefaultDeclaration_ = {
+    val __obj = js.Dynamic.literal(declaration = declaration.asInstanceOf[js.Any], end = null, exportKind = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("ExportDefaultDeclaration")
     __obj.asInstanceOf[typings.babelTypes.mod.ExportDefaultDeclaration_]
   }
@@ -487,7 +514,7 @@ object _Node {
   }
   
   inline def ExportSpecifier_(exported: Identifier_ | StringLiteral_, local: Identifier_): typings.babelTypes.mod.ExportSpecifier_ = {
-    val __obj = js.Dynamic.literal(exported = exported.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    val __obj = js.Dynamic.literal(exported = exported.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any], end = null, exportKind = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("ExportSpecifier")
     __obj.asInstanceOf[typings.babelTypes.mod.ExportSpecifier_]
   }
@@ -526,9 +553,9 @@ object _Node {
     async: Boolean,
     body: BlockStatement_,
     generator: Boolean,
-    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_]
+    params: js.Array[Identifier_ | Pattern | RestElement_]
   ): typings.babelTypes.mod.FunctionDeclaration_ = {
-    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], declare = null, end = null, id = null, innerComments = null, leadingComments = null, loc = null, returnType = null, start = null, trailingComments = null, typeParameters = null)
+    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], declare = null, end = null, id = null, innerComments = null, leadingComments = null, loc = null, predicate = null, returnType = null, start = null, trailingComments = null, typeParameters = null)
     __obj.updateDynamic("type")("FunctionDeclaration")
     __obj.asInstanceOf[typings.babelTypes.mod.FunctionDeclaration_]
   }
@@ -537,9 +564,9 @@ object _Node {
     async: Boolean,
     body: BlockStatement_,
     generator: Boolean,
-    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_]
+    params: js.Array[Identifier_ | Pattern | RestElement_]
   ): typings.babelTypes.mod.FunctionExpression_ = {
-    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], end = null, id = null, innerComments = null, leadingComments = null, loc = null, returnType = null, start = null, trailingComments = null, typeParameters = null)
+    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], end = null, id = null, innerComments = null, leadingComments = null, loc = null, predicate = null, returnType = null, start = null, trailingComments = null, typeParameters = null)
     __obj.updateDynamic("type")("FunctionExpression")
     __obj.asInstanceOf[typings.babelTypes.mod.FunctionExpression_]
   }
@@ -547,6 +574,7 @@ object _Node {
   inline def FunctionTypeAnnotation_(params: js.Array[FunctionTypeParam_], returnType: FlowType): typings.babelTypes.mod.FunctionTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, rest = null, start = null, trailingComments = null, typeParameters = null)
     __obj.updateDynamic("type")("FunctionTypeAnnotation")
+    __obj.updateDynamic("this")(null)
     __obj.asInstanceOf[typings.babelTypes.mod.FunctionTypeAnnotation_]
   }
   
@@ -611,6 +639,12 @@ object _Node {
     val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("Import")
     __obj.asInstanceOf[typings.babelTypes.mod.Import_]
+  }
+  
+  inline def IndexedAccessType_(indexType: FlowType, objectType: FlowType): typings.babelTypes.mod.IndexedAccessType_ = {
+    val __obj = js.Dynamic.literal(indexType = indexType.asInstanceOf[js.Any], objectType = objectType.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("IndexedAccessType")
+    __obj.asInstanceOf[typings.babelTypes.mod.IndexedAccessType_]
   }
   
   inline def InferredPredicate_(): typings.babelTypes.mod.InferredPredicate_ = {
@@ -773,7 +807,11 @@ object _Node {
     __obj.asInstanceOf[typings.babelTypes.mod.LogicalExpression_]
   }
   
-  inline def MemberExpression_(computed: Boolean, `object`: Expression, property: Expression | Identifier_ | PrivateName_): typings.babelTypes.mod.MemberExpression_ = {
+  inline def MemberExpression_(
+    computed: Boolean,
+    `object`: Expression | Super_,
+    property: Expression | Identifier_ | PrivateName_
+  ): typings.babelTypes.mod.MemberExpression_ = {
     val __obj = js.Dynamic.literal(computed = computed.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, optional = null, start = null, trailingComments = null)
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("MemberExpression")
@@ -792,9 +830,15 @@ object _Node {
     __obj.asInstanceOf[typings.babelTypes.mod.MixedTypeAnnotation_]
   }
   
+  inline def ModuleExpression_(body: Program_): typings.babelTypes.mod.ModuleExpression_ = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("ModuleExpression")
+    __obj.asInstanceOf[typings.babelTypes.mod.ModuleExpression_]
+  }
+  
   inline def NewExpression_(
     arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName_ | ArgumentPlaceholder_],
-    callee: Expression | V8IntrinsicIdentifier_
+    callee: Expression | Super_ | V8IntrinsicIdentifier_
   ): typings.babelTypes.mod.NewExpression_ = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], callee = callee.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, optional = null, start = null, trailingComments = null, typeArguments = null, typeParameters = null)
     __obj.updateDynamic("type")("NewExpression")
@@ -854,9 +898,9 @@ object _Node {
     body: BlockStatement_,
     computed: Boolean,
     generator: Boolean,
-    key: Expression | Identifier_ | StringLiteral_ | NumericLiteral_,
-    kind: method | get | set,
-    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_]
+    key: Expression | Identifier_ | StringLiteral_ | NumericLiteral_ | BigIntLiteral_,
+    kind: method_ | get | set,
+    params: js.Array[Identifier_ | Pattern | RestElement_]
   ): typings.babelTypes.mod.ObjectMethod_ = {
     val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], computed = computed.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], decorators = null, end = null, innerComments = null, leadingComments = null, loc = null, returnType = null, start = null, trailingComments = null, typeParameters = null)
     __obj.updateDynamic("type")("ObjectMethod")
@@ -871,7 +915,7 @@ object _Node {
   
   inline def ObjectProperty_(
     computed: Boolean,
-    key: Expression | Identifier_ | StringLiteral_ | NumericLiteral_,
+    key: Expression | Identifier_ | StringLiteral_ | NumericLiteral_ | BigIntLiteral_ | DecimalLiteral_ | PrivateName_,
     shorthand: Boolean,
     value: Expression | PatternLike
   ): typings.babelTypes.mod.ObjectProperty_ = {
@@ -880,8 +924,14 @@ object _Node {
     __obj.asInstanceOf[typings.babelTypes.mod.ObjectProperty_]
   }
   
-  inline def ObjectTypeAnnotation_(exact: Boolean, properties: js.Array[ObjectTypeProperty_ | ObjectTypeSpreadProperty_]): typings.babelTypes.mod.ObjectTypeAnnotation_ = {
-    val __obj = js.Dynamic.literal(exact = exact.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], callProperties = null, end = null, indexers = null, inexact = null, innerComments = null, internalSlots = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+  inline def ObjectTypeAnnotation_(
+    callProperties: js.Array[ObjectTypeCallProperty_],
+    exact: Boolean,
+    indexers: js.Array[ObjectTypeIndexer_],
+    internalSlots: js.Array[ObjectTypeInternalSlot_],
+    properties: js.Array[ObjectTypeProperty_ | ObjectTypeSpreadProperty_]
+  ): typings.babelTypes.mod.ObjectTypeAnnotation_ = {
+    val __obj = js.Dynamic.literal(callProperties = callProperties.asInstanceOf[js.Any], exact = exact.asInstanceOf[js.Any], indexers = indexers.asInstanceOf[js.Any], internalSlots = internalSlots.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], end = null, inexact = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("ObjectTypeAnnotation")
     __obj.asInstanceOf[typings.babelTypes.mod.ObjectTypeAnnotation_]
   }
@@ -907,12 +957,13 @@ object _Node {
   inline def ObjectTypeProperty_(
     key: Identifier_ | StringLiteral_,
     kind: init | get | set,
+    method: Boolean,
     optional: Boolean,
     proto: Boolean,
     static: Boolean,
     value: FlowType
   ): typings.babelTypes.mod.ObjectTypeProperty_ = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], proto = proto.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, variance = null)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], proto = proto.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, variance = null)
     __obj.updateDynamic("type")("ObjectTypeProperty")
     __obj.asInstanceOf[typings.babelTypes.mod.ObjectTypeProperty_]
   }
@@ -930,13 +981,19 @@ object _Node {
   }
   
   inline def OptionalCallExpression_(
-    arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName_],
+    arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName_ | ArgumentPlaceholder_],
     callee: Expression,
     optional: Boolean
   ): typings.babelTypes.mod.OptionalCallExpression_ = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], callee = callee.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeArguments = null, typeParameters = null)
     __obj.updateDynamic("type")("OptionalCallExpression")
     __obj.asInstanceOf[typings.babelTypes.mod.OptionalCallExpression_]
+  }
+  
+  inline def OptionalIndexedAccessType_(indexType: FlowType, objectType: FlowType, optional: Boolean): typings.babelTypes.mod.OptionalIndexedAccessType_ = {
+    val __obj = js.Dynamic.literal(indexType = indexType.asInstanceOf[js.Any], objectType = objectType.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("OptionalIndexedAccessType")
+    __obj.asInstanceOf[typings.babelTypes.mod.OptionalIndexedAccessType_]
   }
   
   inline def OptionalMemberExpression_(computed: Boolean, `object`: Expression, optional: Boolean, property: Expression | Identifier_): typings.babelTypes.mod.OptionalMemberExpression_ = {
@@ -1015,7 +1072,7 @@ object _Node {
   }
   
   inline def RestElement_(argument: LVal): typings.babelTypes.mod.RestElement_ = {
-    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], decorators = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeAnnotation = null)
+    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], decorators = null, end = null, innerComments = null, leadingComments = null, loc = null, optional = null, start = null, trailingComments = null, typeAnnotation = null)
     __obj.updateDynamic("type")("RestElement")
     __obj.asInstanceOf[typings.babelTypes.mod.RestElement_]
   }
@@ -1137,14 +1194,11 @@ object _Node {
   inline def TSConstructorType_(parameters: js.Array[Identifier_ | RestElement_]): typings.babelTypes.mod.TSConstructorType_ = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeAnnotation = null, typeParameters = null)
     __obj.updateDynamic("type")("TSConstructorType")
+    __obj.updateDynamic("abstract")(null)
     __obj.asInstanceOf[typings.babelTypes.mod.TSConstructorType_]
   }
   
-  inline def TSDeclareFunction_(
-    async: Boolean,
-    generator: Boolean,
-    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_]
-  ): typings.babelTypes.mod.TSDeclareFunction_ = {
+  inline def TSDeclareFunction_(async: Boolean, generator: Boolean, params: js.Array[Identifier_ | Pattern | RestElement_]): typings.babelTypes.mod.TSDeclareFunction_ = {
     val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], declare = null, end = null, id = null, innerComments = null, leadingComments = null, loc = null, returnType = null, start = null, trailingComments = null, typeParameters = null)
     __obj.updateDynamic("type")("TSDeclareFunction")
     __obj.asInstanceOf[typings.babelTypes.mod.TSDeclareFunction_]
@@ -1154,12 +1208,14 @@ object _Node {
     async: Boolean,
     computed: Boolean,
     generator: Boolean,
-    key: Identifier_ | StringLiteral_ | NumericLiteral_ | Expression,
-    kind: get | set | method | constructor,
+    key: Identifier_ | StringLiteral_ | NumericLiteral_ | BigIntLiteral_ | Expression,
+    kind: get | set | method_ | constructor,
+    `override`: Boolean,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
     static: Boolean
   ): typings.babelTypes.mod.TSDeclareMethod_ = {
     val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], computed = computed.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], access = null, accessibility = null, decorators = null, end = null, innerComments = null, leadingComments = null, loc = null, optional = null, returnType = null, start = null, trailingComments = null, typeParameters = null)
+    __obj.updateDynamic("override")(`override`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSDeclareMethod")
     __obj.updateDynamic("abstract")(null)
     __obj.asInstanceOf[typings.babelTypes.mod.TSDeclareMethod_]
@@ -1202,7 +1258,7 @@ object _Node {
   }
   
   inline def TSImportEqualsDeclaration_(id: Identifier_, isExport: Boolean, moduleReference: TSEntityName | TSExternalModuleReference_): typings.babelTypes.mod.TSImportEqualsDeclaration_ = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], isExport = isExport.asInstanceOf[js.Any], moduleReference = moduleReference.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], isExport = isExport.asInstanceOf[js.Any], moduleReference = moduleReference.asInstanceOf[js.Any], end = null, importKind = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("TSImportEqualsDeclaration")
     __obj.asInstanceOf[typings.babelTypes.mod.TSImportEqualsDeclaration_]
   }
@@ -1214,7 +1270,7 @@ object _Node {
   }
   
   inline def TSIndexSignature_(parameters: js.Array[Identifier_]): typings.babelTypes.mod.TSIndexSignature_ = {
-    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, readonly = null, start = null, trailingComments = null, typeAnnotation = null)
+    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, readonly = null, start = null, static = null, trailingComments = null, typeAnnotation = null)
     __obj.updateDynamic("type")("TSIndexSignature")
     __obj.asInstanceOf[typings.babelTypes.mod.TSIndexSignature_]
   }
@@ -1229,6 +1285,12 @@ object _Node {
     val __obj = js.Dynamic.literal(typeParameter = typeParameter.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("TSInferType")
     __obj.asInstanceOf[typings.babelTypes.mod.TSInferType_]
+  }
+  
+  inline def TSInstantiationExpression_(expression: Expression): typings.babelTypes.mod.TSInstantiationExpression_ = {
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeParameters = null)
+    __obj.updateDynamic("type")("TSInstantiationExpression")
+    __obj.asInstanceOf[typings.babelTypes.mod.TSInstantiationExpression_]
   }
   
   inline def TSInterfaceBody_(body: js.Array[TSTypeElement]): typings.babelTypes.mod.TSInterfaceBody_ = {
@@ -1256,7 +1318,9 @@ object _Node {
     __obj.asInstanceOf[typings.babelTypes.mod.TSIntrinsicKeyword_]
   }
   
-  inline def TSLiteralType_(literal: NumericLiteral_ | StringLiteral_ | BooleanLiteral_ | BigIntLiteral_): typings.babelTypes.mod.TSLiteralType_ = {
+  inline def TSLiteralType_(
+    literal: NumericLiteral_ | StringLiteral_ | BooleanLiteral_ | BigIntLiteral_ | TemplateLiteral_ | UnaryExpression_
+  ): typings.babelTypes.mod.TSLiteralType_ = {
     val __obj = js.Dynamic.literal(literal = literal.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("TSLiteralType")
     __obj.asInstanceOf[typings.babelTypes.mod.TSLiteralType_]
@@ -1268,8 +1332,13 @@ object _Node {
     __obj.asInstanceOf[typings.babelTypes.mod.TSMappedType_]
   }
   
-  inline def TSMethodSignature_(key: Expression, parameters: js.Array[Identifier_ | RestElement_]): typings.babelTypes.mod.TSMethodSignature_ = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], computed = null, end = null, innerComments = null, leadingComments = null, loc = null, optional = null, start = null, trailingComments = null, typeAnnotation = null, typeParameters = null)
+  inline def TSMethodSignature_(
+    computed: Boolean,
+    key: Expression,
+    kind: method_ | get | set,
+    parameters: js.Array[Identifier_ | RestElement_]
+  ): typings.babelTypes.mod.TSMethodSignature_ = {
+    val __obj = js.Dynamic.literal(computed = computed.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, optional = null, start = null, trailingComments = null, typeAnnotation = null, typeParameters = null)
     __obj.updateDynamic("type")("TSMethodSignature")
     __obj.asInstanceOf[typings.babelTypes.mod.TSMethodSignature_]
   }
@@ -1338,8 +1407,9 @@ object _Node {
   }
   
   inline def TSParameterProperty_(parameter: Identifier_ | AssignmentPattern_): typings.babelTypes.mod.TSParameterProperty_ = {
-    val __obj = js.Dynamic.literal(parameter = parameter.asInstanceOf[js.Any], accessibility = null, end = null, innerComments = null, leadingComments = null, loc = null, readonly = null, start = null, trailingComments = null)
+    val __obj = js.Dynamic.literal(parameter = parameter.asInstanceOf[js.Any], accessibility = null, decorators = null, end = null, innerComments = null, leadingComments = null, loc = null, readonly = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("TSParameterProperty")
+    __obj.updateDynamic("override")(null)
     __obj.asInstanceOf[typings.babelTypes.mod.TSParameterProperty_]
   }
   
@@ -1349,8 +1419,8 @@ object _Node {
     __obj.asInstanceOf[typings.babelTypes.mod.TSParenthesizedType_]
   }
   
-  inline def TSPropertySignature_(key: Expression): typings.babelTypes.mod.TSPropertySignature_ = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], computed = null, end = null, initializer = null, innerComments = null, leadingComments = null, loc = null, optional = null, readonly = null, start = null, trailingComments = null, typeAnnotation = null)
+  inline def TSPropertySignature_(computed: Boolean, key: Expression, kind: get | set): typings.babelTypes.mod.TSPropertySignature_ = {
+    val __obj = js.Dynamic.literal(computed = computed.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], end = null, initializer = null, innerComments = null, leadingComments = null, loc = null, optional = null, readonly = null, start = null, trailingComments = null, typeAnnotation = null)
     __obj.updateDynamic("type")("TSPropertySignature")
     __obj.asInstanceOf[typings.babelTypes.mod.TSPropertySignature_]
   }
@@ -1434,7 +1504,7 @@ object _Node {
   }
   
   inline def TSTypeParameter_(name: String): typings.babelTypes.mod.TSTypeParameter_ = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], constraint = null, default = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], constraint = null, default = null, end = null, in = null, innerComments = null, leadingComments = null, loc = null, out = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("TSTypeParameter")
     __obj.asInstanceOf[typings.babelTypes.mod.TSTypeParameter_]
   }
@@ -1446,7 +1516,7 @@ object _Node {
   }
   
   inline def TSTypeQuery_(exprName: TSEntityName | TSImportType_): typings.babelTypes.mod.TSTypeQuery_ = {
-    val __obj = js.Dynamic.literal(exprName = exprName.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    val __obj = js.Dynamic.literal(exprName = exprName.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeParameters = null)
     __obj.updateDynamic("type")("TSTypeQuery")
     __obj.asInstanceOf[typings.babelTypes.mod.TSTypeQuery_]
   }
@@ -1515,6 +1585,12 @@ object _Node {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("ThrowStatement")
     __obj.asInstanceOf[typings.babelTypes.mod.ThrowStatement_]
+  }
+  
+  inline def TopicReference_(): typings.babelTypes.mod.TopicReference_ = {
+    val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TopicReference")
+    __obj.asInstanceOf[typings.babelTypes.mod.TopicReference_]
   }
   
   inline def TryStatement_(block: BlockStatement_): typings.babelTypes.mod.TryStatement_ = {

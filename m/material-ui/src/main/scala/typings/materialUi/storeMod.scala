@@ -10,10 +10,10 @@ object storeMod {
   
   @JSImport("material-ui/svg-icons/action/store", JSImport.Default)
   @js.native
-  class default () extends ActionStore
+  open class default () extends ActionStore
   
   @JSImport("material-ui/svg-icons/action/store", "ActionStore")
   @js.native
-  class ActionStore ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionStore ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

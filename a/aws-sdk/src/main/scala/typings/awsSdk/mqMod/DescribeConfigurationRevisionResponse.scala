@@ -14,7 +14,7 @@ trait DescribeConfigurationRevisionResponse extends StObject {
   /**
     * Required. The date and time of the configuration.
     */
-  var Created: js.UndefOr[timestampIso8601] = js.undefined
+  var Created: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Required. The base64-encoded XML configuration.
@@ -39,7 +39,7 @@ object DescribeConfigurationRevisionResponse {
     
     inline def setConfigurationIdUndefined: Self = StObject.set(x, "ConfigurationId", js.undefined)
     
-    inline def setCreated(value: timestampIso8601): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: js.Date): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
     
     inline def setCreatedUndefined: Self = StObject.set(x, "Created", js.undefined)
     

@@ -56,6 +56,18 @@ object sinonjsFakeTimersStrings {
   inline def nextTick: nextTick = "nextTick".asInstanceOf[nextTick]
   
   @js.native
+  sealed trait performance
+    extends StObject
+       with FakeMethod
+  inline def performance: performance = "performance".asInstanceOf[performance]
+  
+  @js.native
+  sealed trait queueMicrotask
+    extends StObject
+       with FakeMethod
+  inline def queueMicrotask: queueMicrotask = "queueMicrotask".asInstanceOf[queueMicrotask]
+  
+  @js.native
   sealed trait requestAnimationFrame
     extends StObject
        with FakeMethod

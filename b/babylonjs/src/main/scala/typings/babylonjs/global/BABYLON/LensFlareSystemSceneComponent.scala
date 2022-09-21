@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.LensFlareSystemSceneComponent")
 @js.native
-class LensFlareSystemSceneComponent protected ()
+open class LensFlareSystemSceneComponent protected ()
   extends StObject
      with typings.babylonjs.BABYLON.LensFlareSystemSceneComponent {
   /**

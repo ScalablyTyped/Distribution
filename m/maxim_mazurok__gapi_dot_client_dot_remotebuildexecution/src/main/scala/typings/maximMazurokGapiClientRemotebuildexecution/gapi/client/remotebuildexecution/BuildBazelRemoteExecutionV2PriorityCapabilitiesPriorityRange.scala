@@ -6,8 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BuildBazelRemoteExecutionV2PriorityCapabilitiesPriorityRange extends StObject {
   
+  /** The maximum numeric value for this priority range, which represents the least urgent task or shortest retained item. */
   var maxPriority: js.UndefOr[Double] = js.undefined
   
+  /** The minimum numeric value for this priority range, which represents the most urgent task or longest retained item. */
   var minPriority: js.UndefOr[Double] = js.undefined
 }
 object BuildBazelRemoteExecutionV2PriorityCapabilitiesPriorityRange {

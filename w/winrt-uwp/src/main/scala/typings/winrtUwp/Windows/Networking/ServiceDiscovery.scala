@@ -205,7 +205,7 @@ object ServiceDiscovery {
         */
       def getMany(startIndex: Double): ItemsDnssdServiceInstance = js.native
       
-      def indexOf(value: DnssdServiceInstance, extra: js.Any*): Index = js.native
+      def indexOf(value: DnssdServiceInstance, extra: Any*): Index = js.native
       /* hack */
       @JSName("indexOf")
       def indexOf_Double(searchElement: DnssdServiceInstance): Double = js.native
@@ -218,13 +218,13 @@ object ServiceDiscovery {
     @js.native
     trait DnssdServiceWatcher extends StObject {
       
-      def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+      def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
       @JSName("addEventListener")
       def addEventListener_added(`type`: added, listener: TypedEventHandler[DnssdServiceWatcher, DnssdServiceInstance]): Unit = js.native
       @JSName("addEventListener")
-      def addEventListener_enumerationcompleted(`type`: enumerationcompleted, listener: TypedEventHandler[DnssdServiceWatcher, js.Any]): Unit = js.native
+      def addEventListener_enumerationcompleted(`type`: enumerationcompleted, listener: TypedEventHandler[DnssdServiceWatcher, Any]): Unit = js.native
       @JSName("addEventListener")
-      def addEventListener_stopped(`type`: stopped, listener: TypedEventHandler[DnssdServiceWatcher, js.Any]): Unit = js.native
+      def addEventListener_stopped(`type`: stopped, listener: TypedEventHandler[DnssdServiceWatcher, Any]): Unit = js.native
       
       /** Event that is triggered when a DnssdServiceWatcher has added a DNS Service Discovery (DNS-SD) instance to its collection of available service instances. */
       def onadded(ev: DnssdServiceInstance & WinRTEvent[DnssdServiceWatcher]): Unit = js.native
@@ -233,24 +233,24 @@ object ServiceDiscovery {
       var onadded_Original: TypedEventHandler[DnssdServiceWatcher, DnssdServiceInstance] = js.native
       
       /** Event triggered when a DnssdServiceWatcher has finished enumerating available DNS Service Discovery (DNS-SD) service instances. */
-      def onenumerationcompleted(ev: js.Any & WinRTEvent[DnssdServiceWatcher]): Unit = js.native
+      def onenumerationcompleted(ev: Any & WinRTEvent[DnssdServiceWatcher]): Unit = js.native
       /** Event triggered when a DnssdServiceWatcher has finished enumerating available DNS Service Discovery (DNS-SD) service instances. */
       @JSName("onenumerationcompleted")
-      var onenumerationcompleted_Original: TypedEventHandler[DnssdServiceWatcher, js.Any] = js.native
+      var onenumerationcompleted_Original: TypedEventHandler[DnssdServiceWatcher, Any] = js.native
       
       /** Event triggered when an in-progress enumeration has been stopped. */
-      def onstopped(ev: js.Any & WinRTEvent[DnssdServiceWatcher]): Unit = js.native
+      def onstopped(ev: Any & WinRTEvent[DnssdServiceWatcher]): Unit = js.native
       /** Event triggered when an in-progress enumeration has been stopped. */
       @JSName("onstopped")
-      var onstopped_Original: TypedEventHandler[DnssdServiceWatcher, js.Any] = js.native
+      var onstopped_Original: TypedEventHandler[DnssdServiceWatcher, Any] = js.native
       
-      def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+      def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
       @JSName("removeEventListener")
       def removeEventListener_added(`type`: added, listener: TypedEventHandler[DnssdServiceWatcher, DnssdServiceInstance]): Unit = js.native
       @JSName("removeEventListener")
-      def removeEventListener_enumerationcompleted(`type`: enumerationcompleted, listener: TypedEventHandler[DnssdServiceWatcher, js.Any]): Unit = js.native
+      def removeEventListener_enumerationcompleted(`type`: enumerationcompleted, listener: TypedEventHandler[DnssdServiceWatcher, Any]): Unit = js.native
       @JSName("removeEventListener")
-      def removeEventListener_stopped(`type`: stopped, listener: TypedEventHandler[DnssdServiceWatcher, js.Any]): Unit = js.native
+      def removeEventListener_stopped(`type`: stopped, listener: TypedEventHandler[DnssdServiceWatcher, Any]): Unit = js.native
       
       /** Starts an enumeration of the network for available DNS Service Discovery (DNS-SD) service instances. */
       def start(): Unit = js.native

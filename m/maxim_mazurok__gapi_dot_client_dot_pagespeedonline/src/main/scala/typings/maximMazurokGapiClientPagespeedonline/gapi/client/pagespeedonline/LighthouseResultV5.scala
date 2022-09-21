@@ -11,7 +11,7 @@ trait LighthouseResultV5 extends StObject {
   var audits: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.pagespeedonline.gapi.client.pagespeedonline.LighthouseAuditResultV5}
-    */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.LighthouseResultV5 & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.LighthouseResultV5 & TopLevel[Any]
   ] = js.undefined
   
   /** Map of categories in the LHR. */
@@ -21,7 +21,7 @@ trait LighthouseResultV5 extends StObject {
   var categoryGroups: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.pagespeedonline.gapi.client.pagespeedonline.CategoryGroupV5}
-    */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.LighthouseResultV5 & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.LighthouseResultV5 & TopLevel[Any]
   ] = js.undefined
   
   /** The configuration settings for this LHR. */
@@ -46,7 +46,7 @@ trait LighthouseResultV5 extends StObject {
   var requestedUrl: js.UndefOr[String] = js.undefined
   
   /** List of all run warnings in the LHR. Will always output to at least `[]`. */
-  var runWarnings: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var runWarnings: js.UndefOr[js.Array[Any]] = js.undefined
   
   /** A top-level error message that, if present, indicates a serious enough problem that this Lighthouse result may need to be discarded. */
   var runtimeError: js.UndefOr[RuntimeError] = js.undefined
@@ -72,7 +72,7 @@ object LighthouseResultV5 {
     inline def setAudits(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.pagespeedonline.gapi.client.pagespeedonline.LighthouseAuditResultV5}
-      */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.LighthouseResultV5 & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.LighthouseResultV5 & TopLevel[Any]
     ): Self = StObject.set(x, "audits", value.asInstanceOf[js.Any])
     
     inline def setAuditsUndefined: Self = StObject.set(x, "audits", js.undefined)
@@ -84,7 +84,7 @@ object LighthouseResultV5 {
     inline def setCategoryGroups(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.pagespeedonline.gapi.client.pagespeedonline.CategoryGroupV5}
-      */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.LighthouseResultV5 & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.LighthouseResultV5 & TopLevel[Any]
     ): Self = StObject.set(x, "categoryGroups", value.asInstanceOf[js.Any])
     
     inline def setCategoryGroupsUndefined: Self = StObject.set(x, "categoryGroups", js.undefined)
@@ -117,11 +117,11 @@ object LighthouseResultV5 {
     
     inline def setRequestedUrlUndefined: Self = StObject.set(x, "requestedUrl", js.undefined)
     
-    inline def setRunWarnings(value: js.Array[js.Any]): Self = StObject.set(x, "runWarnings", value.asInstanceOf[js.Any])
+    inline def setRunWarnings(value: js.Array[Any]): Self = StObject.set(x, "runWarnings", value.asInstanceOf[js.Any])
     
     inline def setRunWarningsUndefined: Self = StObject.set(x, "runWarnings", js.undefined)
     
-    inline def setRunWarningsVarargs(value: js.Any*): Self = StObject.set(x, "runWarnings", js.Array(value :_*))
+    inline def setRunWarningsVarargs(value: Any*): Self = StObject.set(x, "runWarnings", js.Array(value*))
     
     inline def setRuntimeError(value: RuntimeError): Self = StObject.set(x, "runtimeError", value.asInstanceOf[js.Any])
     
@@ -131,7 +131,7 @@ object LighthouseResultV5 {
     
     inline def setStackPacksUndefined: Self = StObject.set(x, "stackPacks", js.undefined)
     
-    inline def setStackPacksVarargs(value: StackPack*): Self = StObject.set(x, "stackPacks", js.Array(value :_*))
+    inline def setStackPacksVarargs(value: StackPack*): Self = StObject.set(x, "stackPacks", js.Array(value*))
     
     inline def setTiming(value: Timing): Self = StObject.set(x, "timing", value.asInstanceOf[js.Any])
     

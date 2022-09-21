@@ -9,19 +9,19 @@ object validationErrorMod {
   
   @JSImport("class-validator/types/validation/ValidationError", "ValidationError")
   @js.native
-  class ValidationError () extends StObject {
+  open class ValidationError () extends StObject {
     
     /**
       * Contains all nested validation errors of the property.
       */
-    var children: js.Array[ValidationError] = js.native
+    var children: js.UndefOr[js.Array[ValidationError]] = js.native
     
     /**
       * Constraints that failed validation with error messages.
       */
     var constraints: js.UndefOr[StringDictionary[String]] = js.native
     
-    var contexts: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var contexts: js.UndefOr[StringDictionary[Any]] = js.native
     
     /**
       * Object's property that haven't pass validation.
@@ -48,6 +48,6 @@ object validationErrorMod {
       *
       * OPTIONAL - configurable via the ValidatorOptions.validationError.value option
       */
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[Any] = js.native
   }
 }

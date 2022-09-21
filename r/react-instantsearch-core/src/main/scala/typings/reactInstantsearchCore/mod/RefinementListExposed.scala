@@ -18,6 +18,14 @@ trait RefinementListExposed extends StObject {
     */
   var defaultRefinement: js.UndefOr[js.Array[String]] = js.undefined
   
+  /**
+    * Used to determine whether the facets should be ordered
+    * automatically or using the facet display definitions / pinned items.
+    *
+    * @see https://www.algolia.com/doc/guides/building-search-ui/ui-and-ux-patterns/facet-display/js/
+    */
+  var facetOrdering: js.UndefOr[Boolean] = js.undefined
+  
   /** the minimum number of displayed items */
   var limit: js.UndefOr[Double] = js.undefined
   
@@ -34,7 +42,7 @@ trait RefinementListExposed extends StObject {
   var showMoreLimit: js.UndefOr[Double] = js.undefined
   
   /** (...args: any[]) => any to modify the items being displayed, e.g. for filtering or sorting them. Takes an items as parameter and expects it back in return. */
-  var transformItems: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+  var transformItems: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
 }
 object RefinementListExposed {
   
@@ -51,7 +59,11 @@ object RefinementListExposed {
     
     inline def setDefaultRefinementUndefined: Self = StObject.set(x, "defaultRefinement", js.undefined)
     
-    inline def setDefaultRefinementVarargs(value: String*): Self = StObject.set(x, "defaultRefinement", js.Array(value :_*))
+    inline def setDefaultRefinementVarargs(value: String*): Self = StObject.set(x, "defaultRefinement", js.Array(value*))
+    
+    inline def setFacetOrdering(value: Boolean): Self = StObject.set(x, "facetOrdering", value.asInstanceOf[js.Any])
+    
+    inline def setFacetOrderingUndefined: Self = StObject.set(x, "facetOrdering", js.undefined)
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
@@ -73,7 +85,7 @@ object RefinementListExposed {
     
     inline def setShowMoreUndefined: Self = StObject.set(x, "showMore", js.undefined)
     
-    inline def setTransformItems(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "transformItems", js.Any.fromFunction1(value))
+    inline def setTransformItems(value: /* repeated */ Any => Any): Self = StObject.set(x, "transformItems", js.Any.fromFunction1(value))
     
     inline def setTransformItemsUndefined: Self = StObject.set(x, "transformItems", js.undefined)
   }

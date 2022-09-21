@@ -4,19 +4,26 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait UploadDriver extends StObject {
   
-  var html5: js.Any
-}
-object UploadDriver {
+  @JSName("$drop")
+  def $drop(args: Any*): Any = js.native
+  @JSName("$drop")
+  var $drop_Original: WebixCallback = js.native
   
-  inline def apply(html5: js.Any): UploadDriver = {
-    val __obj = js.Dynamic.literal(html5 = html5.asInstanceOf[js.Any])
-    __obj.asInstanceOf[UploadDriver]
-  }
+  @JSName("$render")
+  var $render: Any = js.native
   
-  extension [Self <: UploadDriver](x: Self) {
-    
-    inline def setHtml5(value: js.Any): Self = StObject.set(x, "html5", value.asInstanceOf[js.Any])
-  }
+  def fileDialog(): Unit = js.native
+  def fileDialog(content: Any): Unit = js.native
+  
+  var html5: Any = js.native
+  
+  def send(id: String): Unit = js.native
+  def send(id: Double): Unit = js.native
+  def send(id: WebixCallback): Unit = js.native
+  
+  def stopUpload(id: String): Unit = js.native
+  def stopUpload(id: Double): Unit = js.native
 }

@@ -16,7 +16,7 @@ trait KnockoutSlidingPageGenerator
 object KnockoutSlidingPageGenerator {
   
   inline def apply(
-    generate: KnockoutPagedObservableArray[js.Any] => js.Array[Double],
+    generate: KnockoutPagedObservableArray[Any] => js.Array[Double],
     windowSize: KnockoutObservable[Double]
   ): KnockoutSlidingPageGenerator = {
     val __obj = js.Dynamic.literal(generate = js.Any.fromFunction1(generate), windowSize = windowSize.asInstanceOf[js.Any])

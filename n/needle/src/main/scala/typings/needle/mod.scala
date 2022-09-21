@@ -7,12 +7,14 @@ import typings.needle.needleStrings.basic
 import typings.needle.needleStrings.digest
 import typings.needle.needleStrings.json
 import typings.needle.needleStrings.xml
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
+import typings.node.dnsMod.LookupOneOptions
 import typings.node.httpMod.Agent
 import typings.node.httpMod.IncomingMessage
-import typings.node.netMod.Socket
+import typings.node.netMod.LookupFunction
+import typings.node.nodeNetMod.Socket
 import typings.node.tlsMod.SecureContextOptions
-import typings.std.Error
+import typings.std.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -114,6 +116,8 @@ object mod {
   
   type BodyData = typings.needle.mod.core.BodyData
   
+  type Cookies = typings.needle.mod.core.Cookies
+  
   type NeedleCallback = typings.needle.mod.core.NeedleCallback
   
   type NeedleHttpVerbs = typings.needle.mod.core.NeedleHttpVerbs
@@ -126,16 +130,16 @@ object mod {
   
   object core {
     
-    type BodyData = Buffer | KeyValue | typings.node.NodeJS.ReadableStream | String | Null
+    type BodyData = Buffer | KeyValue | typings.std.ReadableStream[Any] | String | Null
     
-    type Cookies = StringDictionary[js.Any]
+    type Cookies = StringDictionary[Any]
     
-    type KeyValue = StringDictionary[js.Any]
+    type KeyValue = StringDictionary[Any]
     
     type NeedleCallback = js.Function3[
-        /* error */ Error | Null, 
+        /* error */ js.Error | Null, 
         /* response */ typings.needle.mod.core.NeedleResponse, 
-        /* body */ js.Any, 
+        /* body */ Any, 
         Unit
       ]
     
@@ -164,7 +168,7 @@ object mod {
     }
     
     /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-    - typings.node.httpMod.ClientRequestArgs because var conflicts: agent, auth, headers, localAddress, timeout. Inlined port, protocol, method, defaultPort, setHost, _defaultAgent, hostname, maxHeaderSize, host, socketPath, createConnection, path, family
+    - typings.node.httpMod.ClientRequestArgs because var conflicts: agent, auth, headers, localAddress, timeout. Inlined port, protocol, method, defaultPort, setHost, _defaultAgent, hostname, maxHeaderSize, host, socketPath, createConnection, path, family, signal, lookup
     - typings.node.httpsMod.RequestOptions because var conflicts: agent, auth, headers, localAddress, timeout. Inlined servername, rejectUnauthorized */ trait NeedleOptions
       extends StObject
          with RequestOptions
@@ -178,7 +182,7 @@ object mod {
       var createConnection: js.UndefOr[
             js.Function2[
               /* options */ this.type, 
-              /* oncreate */ js.Function2[/* err */ Error, /* socket */ Socket, Unit], 
+              /* oncreate */ js.Function2[/* err */ js.Error, /* socket */ Socket, Unit], 
               Socket
             ]
           ] = js.undefined
@@ -190,6 +194,8 @@ object mod {
       var host: js.UndefOr[String | Null] = js.undefined
       
       var hostname: js.UndefOr[String | Null] = js.undefined
+      
+      var lookup: js.UndefOr[LookupFunction] = js.undefined
       
       /**
         * @default 8192
@@ -211,6 +217,8 @@ object mod {
       
       var setHost: js.UndefOr[Boolean] = js.undefined
       
+      var signal: js.UndefOr[AbortSignal] = js.undefined
+      
       var socketPath: js.UndefOr[String] = js.undefined
     }
     object NeedleOptions {
@@ -223,7 +231,7 @@ object mod {
       extension [Self <: typings.needle.mod.core.NeedleOptions](x: Self) {
         
         inline def setCreateConnection(
-          value: (typings.needle.mod.core.NeedleOptions, /* oncreate */ js.Function2[/* err */ Error, /* socket */ Socket, Unit]) => Socket
+          value: (typings.needle.mod.core.NeedleOptions, /* oncreate */ js.Function2[/* err */ js.Error, /* socket */ Socket, Unit]) => Socket
         ): Self = StObject.set(x, "createConnection", js.Any.fromFunction2(value))
         
         inline def setCreateConnectionUndefined: Self = StObject.set(x, "createConnection", js.undefined)
@@ -247,6 +255,17 @@ object mod {
         inline def setHostnameNull: Self = StObject.set(x, "hostname", null)
         
         inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
+        
+        inline def setLookup(
+          value: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[
+                  /* err */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any) | Null, 
+                  /* address */ String, 
+                  /* family */ Double, 
+                  Unit
+                ]) => Unit
+        ): Self = StObject.set(x, "lookup", js.Any.fromFunction3(value))
+        
+        inline def setLookupUndefined: Self = StObject.set(x, "lookup", js.undefined)
         
         inline def setMaxHeaderSize(value: Double): Self = StObject.set(x, "maxHeaderSize", value.asInstanceOf[js.Any])
         
@@ -285,6 +304,10 @@ object mod {
         inline def setSetHost(value: Boolean): Self = StObject.set(x, "setHost", value.asInstanceOf[js.Any])
         
         inline def setSetHostUndefined: Self = StObject.set(x, "setHost", js.undefined)
+        
+        inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+        
+        inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
         
         inline def setSocketPath(value: String): Self = StObject.set(x, "socketPath", value.asInstanceOf[js.Any])
         
@@ -329,16 +352,16 @@ object mod {
     @js.native
     trait NeedleResponse extends IncomingMessage {
       
-      var body: js.Any = js.native
+      var body: Any = js.native
       
       var bytes: Double = js.native
       
-      var cookies: js.UndefOr[Cookies] = js.native
+      var cookies: js.UndefOr[typings.needle.mod.core.Cookies] = js.native
       
       var raw: Buffer = js.native
     }
     
-    type ReadableStream = typings.node.NodeJS.ReadableStream
+    type ReadableStream = typings.std.ReadableStream[Any]
     
     trait RedirectOptions extends StObject {
       
@@ -465,7 +488,7 @@ object mod {
       /**
         * Builds and sets a Cookie header from a { key: 'value' } object.
         */
-      var cookies: js.UndefOr[Cookies] = js.undefined
+      var cookies: js.UndefOr[typings.needle.mod.core.Cookies] = js.undefined
       
       /**
         * Alias for follow_max
@@ -596,7 +619,7 @@ object mod {
         
         inline def setContent_typeUndefined: Self = StObject.set(x, "content_type", js.undefined)
         
-        inline def setCookies(value: Cookies): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
+        inline def setCookies(value: typings.needle.mod.core.Cookies): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
         
         inline def setCookiesUndefined: Self = StObject.set(x, "cookies", js.undefined)
         

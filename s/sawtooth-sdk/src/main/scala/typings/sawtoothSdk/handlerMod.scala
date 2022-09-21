@@ -9,7 +9,7 @@ object handlerMod {
   
   @JSImport("sawtooth-sdk/processor/handler", "TransactionHandler")
   @js.native
-  class TransactionHandler protected () extends StObject {
+  open class TransactionHandler protected () extends StObject {
     /**
       * @param transactionFamilyName - the name of the
       * transaction family that this handler can process, e.g. "intkey"
@@ -34,6 +34,6 @@ object handlerMod {
       * access state
       */
     @JSName("apply")
-    def apply(transactionProcessRequest: js.Any, context: Context): Unit = js.native
+    def apply(transactionProcessRequest: Any, context: Context): Unit = js.native
   }
 }

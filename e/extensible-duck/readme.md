@@ -10,10 +10,10 @@ Modular and Extensible Redux Reducer Bundles (ducks-modular-redux)
 | ------------------ | :-------------: |
 | Full name          | extensible-duck |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 3 |
-| # downloads        | 52564 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6523.0 |
+| # stars            | 149.0 |
 
 ## Links
 - [Homepage](https://github.com/investtools/extensible-duck)

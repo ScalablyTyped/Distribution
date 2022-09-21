@@ -14,7 +14,7 @@ trait NavigateBackMiniProgramOptions extends StObject {
   /**
     * 需要返回给上一个uni-app的数据
     */
-  var extraData: js.UndefOr[js.Any] = js.undefined
+  var extraData: js.UndefOr[Any] = js.undefined
   
   /**
     * 接口调用失败的回调函数
@@ -39,7 +39,7 @@ object NavigateBackMiniProgramOptions {
     
     inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    inline def setExtraData(value: js.Any): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
+    inline def setExtraData(value: Any): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
     
     inline def setExtraDataUndefined: Self = StObject.set(x, "extraData", js.undefined)
     

@@ -9,7 +9,7 @@ object motionBlurConfigurationMod {
   
   @JSImport("babylonjs/Rendering/motionBlurConfiguration", "MotionBlurConfiguration")
   @js.native
-  class MotionBlurConfiguration ()
+  open class MotionBlurConfiguration ()
     extends StObject
        with PrePassEffectConfiguration {
     

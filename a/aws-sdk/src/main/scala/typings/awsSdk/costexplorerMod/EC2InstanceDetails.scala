@@ -12,7 +12,7 @@ trait EC2InstanceDetails extends StObject {
   var AvailabilityZone: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * Whether the recommendation is for a current-generation instance. 
+    * Determines whether the recommendation is for a current-generation instance. 
     */
   var CurrentGeneration: js.UndefOr[GenericBoolean] = js.undefined
   
@@ -22,7 +22,7 @@ trait EC2InstanceDetails extends StObject {
   var Family: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * The type of instance that AWS recommends.
+    * The type of instance that Amazon Web Services recommends.
     */
   var InstanceType: js.UndefOr[GenericString] = js.undefined
   
@@ -32,17 +32,17 @@ trait EC2InstanceDetails extends StObject {
   var Platform: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * The AWS Region of the recommended reservation.
+    * The Amazon Web Services Region of the recommended reservation.
     */
   var Region: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * Whether the recommended reservation is size flexible.
+    * Determines whether the recommended reservation is size flexible.
     */
   var SizeFlexEligible: js.UndefOr[GenericBoolean] = js.undefined
   
   /**
-    * Whether the recommended reservation is dedicated or shared.
+    * Determines whether the recommended reservation is dedicated or shared.
     */
   var Tenancy: js.UndefOr[GenericString] = js.undefined
 }

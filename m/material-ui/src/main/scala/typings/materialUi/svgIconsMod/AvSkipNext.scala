@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui/svg-icons", "AvSkipNext")
 @js.native
-class AvSkipNext ()
-  extends Component[SvgIconProps, js.Object, js.Any]
+open class AvSkipNext ()
+  extends Component[SvgIconProps, js.Object, Any]

@@ -38,7 +38,7 @@ object XLinguServiceEventBroadcaster {
   inline def apply(
     acquire: () => Unit,
     addLinguServiceEventListener: XLinguServiceEventListener => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeLinguServiceEventListener: XLinguServiceEventListener => Boolean
   ): XLinguServiceEventBroadcaster = {

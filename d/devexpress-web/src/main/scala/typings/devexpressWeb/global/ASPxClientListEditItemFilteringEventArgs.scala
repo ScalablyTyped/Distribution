@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Initializes a new instance of the ASPxClientListEditItemFilteringEventArgs class.
   */
-class ASPxClientListEditItemFilteringEventArgs ()
+open class ASPxClientListEditItemFilteringEventArgs ()
   extends StObject
      with typings.devexpressWeb.ASPxClientListEditItemFilteringEventArgs {
   

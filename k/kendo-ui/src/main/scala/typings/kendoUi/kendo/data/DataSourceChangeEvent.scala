@@ -16,7 +16,7 @@ trait DataSourceChangeEvent
   
   var items: js.UndefOr[js.Array[DataSourceItemOrGroup]] = js.undefined
   
-  var node: js.UndefOr[js.Any] = js.undefined
+  var node: js.UndefOr[Any] = js.undefined
   
   var value: js.UndefOr[Model] = js.undefined
 }
@@ -45,9 +45,9 @@ object DataSourceChangeEvent {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: DataSourceItemOrGroup*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: DataSourceItemOrGroup*): Self = StObject.set(x, "items", js.Array(value*))
     
-    inline def setNode(value: js.Any): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: Any): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
     inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
     

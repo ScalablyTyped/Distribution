@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("seen", "Quaternion")
 @js.native
-class Quaternion () extends StObject {
+open class Quaternion () extends StObject {
   
   def multiply(q: Point): this.type = js.native
   

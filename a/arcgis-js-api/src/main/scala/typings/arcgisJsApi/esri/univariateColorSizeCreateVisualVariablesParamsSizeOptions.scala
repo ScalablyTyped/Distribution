@@ -15,6 +15,8 @@ trait univariateColorSizeCreateVisualVariablesParamsSizeOptions
   /**
     * When set to `all`, a single size variable that scales uniformly in all dimensions is generated.
     *
+    * @default all
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createVisualVariables)
     */
   var axis: js.UndefOr[all | height] = js.undefined

@@ -16,7 +16,7 @@ object pathMod {
   
   @JSImport("@uirouter/core/lib/path", "PathNode")
   @js.native
-  class PathNode protected ()
+  open class PathNode protected ()
     extends typings.uirouterCore.pathNodeMod.PathNode {
     /** Creates a copy of a PathNode */
     def this(node: typings.uirouterCore.pathNodeMod.PathNode) = this()
@@ -39,7 +39,7 @@ object pathMod {
   
   @JSImport("@uirouter/core/lib/path", "PathUtils")
   @js.native
-  class PathUtils ()
+  open class PathUtils ()
     extends typings.uirouterCore.pathUtilsMod.PathUtils
   /* static members */
   object PathUtils {
@@ -134,7 +134,7 @@ object pathMod {
     inline def nonDynamicParams(node: typings.uirouterCore.pathNodeMod.PathNode): js.Array[Param] = ^.asInstanceOf[js.Dynamic].applyDynamic("nonDynamicParams")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[Param]]
     
     /** Gets the raw parameter values from a path */
-    inline def paramValues(path: js.Array[typings.uirouterCore.pathNodeMod.PathNode]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("paramValues")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def paramValues(path: js.Array[typings.uirouterCore.pathNodeMod.PathNode]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("paramValues")(path.asInstanceOf[js.Any]).asInstanceOf[Any]
     
     /**
       * Return a subpath of a path, which stops at the first matching node

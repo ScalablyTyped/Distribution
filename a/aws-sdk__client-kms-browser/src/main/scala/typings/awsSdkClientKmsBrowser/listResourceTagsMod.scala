@@ -8,5 +8,5 @@ object listResourceTagsMod {
   
   @JSImport("@aws-sdk/client-kms-browser/model/ListResourceTags", "ListResourceTags")
   @js.native
-  val ListResourceTags: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val ListResourceTags: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

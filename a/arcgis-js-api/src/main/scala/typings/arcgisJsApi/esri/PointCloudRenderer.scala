@@ -31,6 +31,8 @@ trait PointCloudRenderer
   /**
     * The number of points to draw per display inch.
     *
+    * @default 10
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudRenderer.html#pointsPerInch)
     */
   var pointsPerInch: Double = js.native

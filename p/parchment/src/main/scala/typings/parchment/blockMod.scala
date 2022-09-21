@@ -1,29 +1,67 @@
 package typings.parchment
 
-import typings.parchment.registryMod.Scope
+import org.scalablytyped.runtime.StringDictionary
+import typings.parchment.blotMod.BlotConstructor
+import typings.parchment.blotMod.Root
+import typings.parchment.scopeMod.Scope
 import typings.std.HTMLElement
+import typings.std.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("parchment/dist/src/blot/block", JSImport.Namespace)
-@js.native
-object blockMod extends js.Object {
-  @js.native
-  trait BlockBlot
-    extends typings.parchment.formatMod.default
+object blockMod {
   
+  @JSImport("parchment/dist/typings/blot/block", JSImport.Default)
   @js.native
-  class default () extends BlockBlot
-  
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    var blotName: String = js.native
-    var scope: Scope = js.native
-    var tagName: String = js.native
-    def formats(domNode: HTMLElement): js.Any = js.native
+  open class default protected () extends BlockBlot {
+    def this(scroll: Root, domNode: Node) = this()
+  }
+  object default {
+    
+    @JSImport("parchment/dist/typings/blot/block", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSImport("parchment/dist/typings/blot/block", "default.allowedChildren")
+    @js.native
+    def allowedChildren: js.Array[BlotConstructor] = js.native
+    inline def allowedChildren_=(x: js.Array[BlotConstructor]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("allowedChildren")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("parchment/dist/typings/blot/block", "default.blotName")
+    @js.native
+    def blotName: String = js.native
+    inline def blotName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("blotName")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    inline def formats(domNode: HTMLElement, scroll: Root): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("formats")(domNode.asInstanceOf[js.Any], scroll.asInstanceOf[js.Any])).asInstanceOf[Any]
+    
+    /* static member */
+    @JSImport("parchment/dist/typings/blot/block", "default.scope")
+    @js.native
+    def scope: Scope = js.native
+    inline def scope_=(x: Scope): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("scope")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("parchment/dist/typings/blot/block", "default.tagName")
+    @js.native
+    def tagName: String = js.native
+    inline def tagName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tagName")(x.asInstanceOf[js.Any])
   }
   
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - typings.parchment.linkedNodeMod.LinkedNode because Already inherited
+  - typings.parchment.blotMod.Blot because Already inherited
+  - typings.parchment.blotMod.Formattable because var conflicts: domNode, next, parent, prev, scroll, statics. Inlined format, formats */ @js.native
+  trait BlockBlot
+    extends typings.parchment.parentMod.default {
+    
+    /* protected */ var attributes: typings.parchment.storeMod.default = js.native
+    
+    def format(name: String, value: Any): Unit = js.native
+    
+    def formats(): StringDictionary[Any] = js.native
+  }
 }
-

@@ -4,7 +4,6 @@ import typings.neverbounce.anon.Academichost
 import typings.neverbounce.anon.Complete
 import typings.neverbounce.anon.ContentType
 import typings.neverbounce.anon.Remote
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ object mod {
   
   @JSImport("neverbounce", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with NeverBounce {
     def this(config: Config) = this()
@@ -22,7 +21,7 @@ object mod {
     var account: Account = js.native
     
     /* CompleteClass */
-    var errors: Errors = js.native
+    var errors: js.Error = js.native
     
     /* CompleteClass */
     override def getConfig(): Config = js.native
@@ -150,7 +149,7 @@ object mod {
   
   trait Config extends StObject {
     
-    var apiKey: js.UndefOr[js.Any] = js.undefined
+    var apiKey: js.UndefOr[Any] = js.undefined
     
     var opts: js.UndefOr[ConfigOptions] = js.undefined
     
@@ -165,7 +164,7 @@ object mod {
     
     extension [Self <: Config](x: Self) {
       
-      inline def setApiKey(value: js.Any): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
+      inline def setApiKey(value: Any): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
       inline def setApiKeyUndefined: Self = StObject.set(x, "apiKey", js.undefined)
       
@@ -216,59 +215,31 @@ object mod {
     }
   }
   
-  type Errors = Error
+  type Errors = js.Error
   
   @js.native
   trait Jobs extends StObject {
     
-    def create(input: js.Any, inputLocation: js.Any, fileName: js.Any): js.Promise[typings.std.Response] = js.native
-    def create(input: js.Any, inputLocation: js.Any, fileName: js.Any, runSample: js.Any): js.Promise[typings.std.Response] = js.native
-    def create(input: js.Any, inputLocation: js.Any, fileName: js.Any, runSample: js.Any, autoParse: js.Any): js.Promise[typings.std.Response] = js.native
-    def create(
-      input: js.Any,
-      inputLocation: js.Any,
-      fileName: js.Any,
-      runSample: js.Any,
-      autoParse: js.Any,
-      autoStart: js.Any
-    ): js.Promise[typings.std.Response] = js.native
-    def create(
-      input: js.Any,
-      inputLocation: js.Any,
-      fileName: js.Any,
-      runSample: js.Any,
-      autoParse: Unit,
-      autoStart: js.Any
-    ): js.Promise[typings.std.Response] = js.native
-    def create(input: js.Any, inputLocation: js.Any, fileName: js.Any, runSample: Unit, autoParse: js.Any): js.Promise[typings.std.Response] = js.native
-    def create(
-      input: js.Any,
-      inputLocation: js.Any,
-      fileName: js.Any,
-      runSample: Unit,
-      autoParse: js.Any,
-      autoStart: js.Any
-    ): js.Promise[typings.std.Response] = js.native
-    def create(
-      input: js.Any,
-      inputLocation: js.Any,
-      fileName: js.Any,
-      runSample: Unit,
-      autoParse: Unit,
-      autoStart: js.Any
-    ): js.Promise[typings.std.Response] = js.native
+    def create(input: Any, inputLocation: Any, fileName: Any): js.Promise[typings.std.Response] = js.native
+    def create(input: Any, inputLocation: Any, fileName: Any, runSample: Any): js.Promise[typings.std.Response] = js.native
+    def create(input: Any, inputLocation: Any, fileName: Any, runSample: Any, autoParse: Any): js.Promise[typings.std.Response] = js.native
+    def create(input: Any, inputLocation: Any, fileName: Any, runSample: Any, autoParse: Any, autoStart: Any): js.Promise[typings.std.Response] = js.native
+    def create(input: Any, inputLocation: Any, fileName: Any, runSample: Any, autoParse: Unit, autoStart: Any): js.Promise[typings.std.Response] = js.native
+    def create(input: Any, inputLocation: Any, fileName: Any, runSample: Unit, autoParse: Any): js.Promise[typings.std.Response] = js.native
+    def create(input: Any, inputLocation: Any, fileName: Any, runSample: Unit, autoParse: Any, autoStart: Any): js.Promise[typings.std.Response] = js.native
+    def create(input: Any, inputLocation: Any, fileName: Any, runSample: Unit, autoParse: Unit, autoStart: Any): js.Promise[typings.std.Response] = js.native
     
     def download(jobId: Double): js.Promise[typings.std.Response] = js.native
     
     def parse(jobId: Double): js.Promise[typings.std.Response] = js.native
-    def parse(jobId: Double, autoStart: js.Any): js.Promise[typings.std.Response] = js.native
+    def parse(jobId: Double, autoStart: Any): js.Promise[typings.std.Response] = js.native
     
-    def results(jobId: Double, query: js.Any): js.Promise[typings.std.Response] = js.native
+    def results(jobId: Double, query: Any): js.Promise[typings.std.Response] = js.native
     
-    def search(query: js.Any): js.Promise[typings.std.Response] = js.native
+    def search(query: Any): js.Promise[typings.std.Response] = js.native
     
     def start(jobId: Double): js.Promise[typings.std.Response] = js.native
-    def start(jobId: Double, runSample: js.Any): js.Promise[typings.std.Response] = js.native
+    def start(jobId: Double, runSample: Any): js.Promise[typings.std.Response] = js.native
     
     def status(jobId: Double): js.Promise[typings.std.Response] = js.native
   }
@@ -277,7 +248,7 @@ object mod {
     
     var account: Account
     
-    var errors: Errors
+    var errors: js.Error
     
     def getConfig(): Config
     
@@ -297,7 +268,7 @@ object mod {
     
     inline def apply(
       account: Account,
-      errors: Errors,
+      errors: js.Error,
       getConfig: () => Config,
       getRequestOpts: ConfigOptions => ConfigOptions,
       jobs: Jobs,
@@ -314,7 +285,7 @@ object mod {
       
       inline def setAccount(value: Account): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
       
-      inline def setErrors(value: Errors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Error): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
       inline def setGetConfig(value: () => Config): Self = StObject.set(x, "getConfig", js.Any.fromFunction0(value))
       
@@ -357,10 +328,10 @@ object mod {
     def check(email: String): js.Promise[typings.std.Response] = js.native
     def check(email: String, addressInfo: Boolean): js.Promise[typings.std.Response] = js.native
     def check(email: String, addressInfo: Boolean, creditsInfo: Boolean): js.Promise[typings.std.Response] = js.native
-    def check(email: String, addressInfo: Boolean, creditsInfo: Boolean, timeout: js.Any): js.Promise[typings.std.Response] = js.native
-    def check(email: String, addressInfo: Boolean, creditsInfo: Unit, timeout: js.Any): js.Promise[typings.std.Response] = js.native
+    def check(email: String, addressInfo: Boolean, creditsInfo: Boolean, timeout: Any): js.Promise[typings.std.Response] = js.native
+    def check(email: String, addressInfo: Boolean, creditsInfo: Unit, timeout: Any): js.Promise[typings.std.Response] = js.native
     def check(email: String, addressInfo: Unit, creditsInfo: Boolean): js.Promise[typings.std.Response] = js.native
-    def check(email: String, addressInfo: Unit, creditsInfo: Boolean, timeout: js.Any): js.Promise[typings.std.Response] = js.native
-    def check(email: String, addressInfo: Unit, creditsInfo: Unit, timeout: js.Any): js.Promise[typings.std.Response] = js.native
+    def check(email: String, addressInfo: Unit, creditsInfo: Boolean, timeout: Any): js.Promise[typings.std.Response] = js.native
+    def check(email: String, addressInfo: Unit, creditsInfo: Unit, timeout: Any): js.Promise[typings.std.Response] = js.native
   }
 }

@@ -1,5 +1,7 @@
 package typings.serverless.awsProviderMod
 
+import typings.serverless.serverlessStrings.ERROR
+import typings.serverless.serverlessStrings.INFO
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +16,7 @@ trait RestApiLogs extends StObject {
   
   var fullExecutionData: js.UndefOr[Boolean] = js.undefined
   
-  var level: js.UndefOr[String] = js.undefined
+  var level: js.UndefOr[INFO | ERROR] = js.undefined
   
   var role: js.UndefOr[String] = js.undefined
   
@@ -45,7 +47,7 @@ object RestApiLogs {
     
     inline def setFullExecutionDataUndefined: Self = StObject.set(x, "fullExecutionData", js.undefined)
     
-    inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: INFO | ERROR): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     

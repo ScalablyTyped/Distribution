@@ -22,6 +22,6 @@ object BatchDeleteClusterSnapshotsRequest {
     
     inline def setIdentifiers(value: DeleteClusterSnapshotMessageList): Self = StObject.set(x, "Identifiers", value.asInstanceOf[js.Any])
     
-    inline def setIdentifiersVarargs(value: DeleteClusterSnapshotMessage*): Self = StObject.set(x, "Identifiers", js.Array(value :_*))
+    inline def setIdentifiersVarargs(value: DeleteClusterSnapshotMessage*): Self = StObject.set(x, "Identifiers", js.Array(value*))
   }
 }

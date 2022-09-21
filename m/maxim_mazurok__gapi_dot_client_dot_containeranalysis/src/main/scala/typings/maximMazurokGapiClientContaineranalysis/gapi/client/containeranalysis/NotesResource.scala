@@ -9,6 +9,7 @@ import typings.maximMazurokGapiClientContaineranalysis.anon.PageSize
 import typings.maximMazurokGapiClientContaineranalysis.anon.Parent
 import typings.maximMazurokGapiClientContaineranalysis.anon.PrettyPrint
 import typings.maximMazurokGapiClientContaineranalysis.anon.QuotaUser
+import typings.maximMazurokGapiClientContaineranalysis.anon.Resource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,7 +48,7 @@ trait NotesResource extends StObject {
   
   def patch(request: PrettyPrint, body: Note): Request[Note] = js.native
   /** Updates the specified note. */
-  def patch(request: typings.maximMazurokGapiClientContaineranalysis.anon.Resource): Request[Note] = js.native
+  def patch(request: Resource): Request[Note] = js.native
   
   /**
     * Sets the access control policy on the specified note or occurrence. Requires `containeranalysis.notes.setIamPolicy` or `containeranalysis.occurrences.setIamPolicy` permission if the

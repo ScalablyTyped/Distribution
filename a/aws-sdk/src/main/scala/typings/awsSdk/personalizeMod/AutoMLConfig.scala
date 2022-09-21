@@ -33,6 +33,6 @@ object AutoMLConfig {
     
     inline def setRecipeListUndefined: Self = StObject.set(x, "recipeList", js.undefined)
     
-    inline def setRecipeListVarargs(value: Arn*): Self = StObject.set(x, "recipeList", js.Array(value :_*))
+    inline def setRecipeListVarargs(value: Arn*): Self = StObject.set(x, "recipeList", js.Array(value*))
   }
 }

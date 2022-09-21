@@ -9,7 +9,7 @@ trait PromptOptions
      with MessageBoxesOptions
      with PromptMethods {
   
-  var attrs: js.UndefOr[js.Any] = js.undefined
+  var attrs: js.UndefOr[Any] = js.undefined
   
   // Prompt type. Available types (text|number|color)
   var label: js.UndefOr[String] = js.undefined
@@ -35,7 +35,7 @@ object PromptOptions {
   
   extension [Self <: PromptOptions](x: Self) {
     
-    inline def setAttrs(value: js.Any): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+    inline def setAttrs(value: Any): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     
     inline def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
     

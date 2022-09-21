@@ -1,18 +1,18 @@
 package typings.mangopay2NodejsSdk.mod.models
 
+import typings.mangopay2NodejsSdk.addressMod.address.AddressType
 import typings.mangopay2NodejsSdk.anon.MakeKeysRequiredPartialUs
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LEGAL
-import typings.mangopay2NodejsSdk.mod.Timestamp
-import typings.mangopay2NodejsSdk.mod.address.AddressType
-import typings.mangopay2NodejsSdk.mod.user.UserLegalData
 import typings.mangopay2NodejsSdk.typesMod.CountryISO
+import typings.mangopay2NodejsSdk.typesMod.Timestamp
+import typings.mangopay2NodejsSdk.userMod.user.UserLegalData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mangopay2-nodejs-sdk", "models.UserLegal")
 @js.native
-class UserLegal protected ()
+open class UserLegal protected ()
   extends EntityBase[UserLegalData]
      with UserLegalData {
   def this(data: MakeKeysRequiredPartialUs) = this()
@@ -45,13 +45,13 @@ class UserLegal protected ()
     * KYC Level (LIGHT or REGULAR)
     */
   /* CompleteClass */
-  var KYCLevel: typings.mangopay2NodejsSdk.mod.user.KYCLevel = js.native
+  var KYCLevel: typings.mangopay2NodejsSdk.userMod.user.KYCLevel = js.native
   
   /**
     * Type for legal user.
     */
   /* CompleteClass */
-  var LegalPersonType: typings.mangopay2NodejsSdk.mod.user.LegalPersonType = js.native
+  var LegalPersonType: typings.mangopay2NodejsSdk.userMod.user.LegalPersonType = js.native
   
   /**
     * The address of the company’s Legal representative person
@@ -105,7 +105,7 @@ class UserLegal protected ()
     * Type of user
     */
   /* CompleteClass */
-  var PersonType: typings.mangopay2NodejsSdk.mod.user.PersonType = js.native
+  var PersonType: typings.mangopay2NodejsSdk.userMod.user.PersonType = js.native
   /* CompleteClass */
   @JSName("PersonType")
   var PersonType_UserLegalData: LEGAL = js.native
@@ -138,5 +138,5 @@ class UserLegal protected ()
     * Sets the person type for the model
     * @param personType
     */
-  def setPersonType(`type`: typings.mangopay2NodejsSdk.mod.user.PersonType): Unit = js.native
+  def setPersonType(`type`: typings.mangopay2NodejsSdk.userMod.user.PersonType): Unit = js.native
 }

@@ -2,7 +2,6 @@ package typings.mobileDetect
 
 import typings.mobileDetect.mod.MobileDetectComplexRules
 import typings.mobileDetect.mod.MobileDetectRules
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,26 +10,26 @@ object anon {
   
   trait FullPattern extends StObject {
     
-    var fullPattern: RegExp
+    var fullPattern: js.RegExp
     
-    var shortPattern: RegExp
+    var shortPattern: js.RegExp
     
-    var tabletPattern: RegExp
+    var tabletPattern: js.RegExp
   }
   object FullPattern {
     
-    inline def apply(fullPattern: RegExp, shortPattern: RegExp, tabletPattern: RegExp): FullPattern = {
+    inline def apply(fullPattern: js.RegExp, shortPattern: js.RegExp, tabletPattern: js.RegExp): FullPattern = {
       val __obj = js.Dynamic.literal(fullPattern = fullPattern.asInstanceOf[js.Any], shortPattern = shortPattern.asInstanceOf[js.Any], tabletPattern = tabletPattern.asInstanceOf[js.Any])
       __obj.asInstanceOf[FullPattern]
     }
     
     extension [Self <: FullPattern](x: Self) {
       
-      inline def setFullPattern(value: RegExp): Self = StObject.set(x, "fullPattern", value.asInstanceOf[js.Any])
+      inline def setFullPattern(value: js.RegExp): Self = StObject.set(x, "fullPattern", value.asInstanceOf[js.Any])
       
-      inline def setShortPattern(value: RegExp): Self = StObject.set(x, "shortPattern", value.asInstanceOf[js.Any])
+      inline def setShortPattern(value: js.RegExp): Self = StObject.set(x, "shortPattern", value.asInstanceOf[js.Any])
       
-      inline def setTabletPattern(value: RegExp): Self = StObject.set(x, "tabletPattern", value.asInstanceOf[js.Any])
+      inline def setTabletPattern(value: js.RegExp): Self = StObject.set(x, "tabletPattern", value.asInstanceOf[js.Any])
     }
   }
   

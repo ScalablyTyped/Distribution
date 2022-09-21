@@ -10,10 +10,10 @@ The lodash method `_.forIn` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.forin |
 | Keywords           | lodash-modularized, forin |
-| # releases         | 0 |
-| # dependents       | 35 |
-| # downloads        | 7404253 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1441443.0 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

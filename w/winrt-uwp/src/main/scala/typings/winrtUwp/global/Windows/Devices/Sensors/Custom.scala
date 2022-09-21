@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.Devices.Sensors
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IMapView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import org.scalablytyped.runtime.StObject
@@ -48,11 +47,11 @@ object Custom {
     
     /** Gets the property set for the sensor. */
     /* CompleteClass */
-    var properties: IMapView[String, js.Any] = js.native
+    var properties: IMapView[String, Any] = js.native
     
     /** Gets the time at which the sensor reported the reading. */
     /* CompleteClass */
-    var timestamp: Date = js.native
+    var timestamp: js.Date = js.native
   }
   
   /** Represents data for the reading–changed event of the custom sensor. */

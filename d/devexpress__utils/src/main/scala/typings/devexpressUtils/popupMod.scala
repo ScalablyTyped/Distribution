@@ -9,7 +9,7 @@ object popupMod {
   
   @JSImport("@devexpress/utils/lib/utils/popup", "PopupUtils")
   @js.native
-  class PopupUtils () extends StObject
+  open class PopupUtils () extends StObject
   /* static members */
   object PopupUtils {
     

@@ -10,10 +10,10 @@ Full-featured BetterScroll
 | ------------------ | :-------------: |
 | Full name          | better-scroll |
 | Keywords           | scroll, iscroll, javascript, typescript, ios |
-| # releases         | 39 |
-| # dependents       | 416 |
-| # downloads        | 581863 |
-| # stars            | 22 |
+| # releases         | 20 |
+| # dependents       | 0.0 |
+| # downloads        | 57114.0 |
+| # stars            | 15637.0 |
 
 ## Links
 - [Homepage](https://github.com/ustbhuangyi/better-scroll)

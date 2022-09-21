@@ -61,38 +61,20 @@ object mod extends Shortcut {
     }
   }
   
+  @js.native
   trait HumanparserStatic extends StObject {
     
-    def getFullestName(name: String): FullerNameOutput
+    def getFullestName(name: String): FullerNameOutput = js.native
     
-    def parseAddress(address: String): AddressOutput
+    def parseAddress(address: String): AddressOutput = js.native
     
-    def parseName(name: String): NameOutput
-  }
-  object HumanparserStatic {
-    
-    inline def apply(
-      getFullestName: String => FullerNameOutput,
-      parseAddress: String => AddressOutput,
-      parseName: String => NameOutput
-    ): HumanparserStatic = {
-      val __obj = js.Dynamic.literal(getFullestName = js.Any.fromFunction1(getFullestName), parseAddress = js.Any.fromFunction1(parseAddress), parseName = js.Any.fromFunction1(parseName))
-      __obj.asInstanceOf[HumanparserStatic]
-    }
-    
-    extension [Self <: HumanparserStatic](x: Self) {
-      
-      inline def setGetFullestName(value: String => FullerNameOutput): Self = StObject.set(x, "getFullestName", js.Any.fromFunction1(value))
-      
-      inline def setParseAddress(value: String => AddressOutput): Self = StObject.set(x, "parseAddress", js.Any.fromFunction1(value))
-      
-      inline def setParseName(value: String => NameOutput): Self = StObject.set(x, "parseName", js.Any.fromFunction1(value))
-    }
+    def parseName(name: String): NameOutput = js.native
+    def parseName(name: String, ignoreSuffix: js.Array[String]): NameOutput = js.native
   }
   
   trait NameOutput extends StObject {
     
-    var firstName: String
+    var firstName: js.UndefOr[String] = js.undefined
     
     var fullName: String
     
@@ -106,14 +88,16 @@ object mod extends Shortcut {
   }
   object NameOutput {
     
-    inline def apply(firstName: String, fullName: String, lastName: String): NameOutput = {
-      val __obj = js.Dynamic.literal(firstName = firstName.asInstanceOf[js.Any], fullName = fullName.asInstanceOf[js.Any], lastName = lastName.asInstanceOf[js.Any])
+    inline def apply(fullName: String, lastName: String): NameOutput = {
+      val __obj = js.Dynamic.literal(fullName = fullName.asInstanceOf[js.Any], lastName = lastName.asInstanceOf[js.Any])
       __obj.asInstanceOf[NameOutput]
     }
     
     extension [Self <: NameOutput](x: Self) {
       
       inline def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
+      
+      inline def setFirstNameUndefined: Self = StObject.set(x, "firstName", js.undefined)
       
       inline def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
       

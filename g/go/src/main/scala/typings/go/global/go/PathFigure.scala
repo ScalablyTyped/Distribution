@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param {boolean=} filled optional: whether the figure is filled (default is true).
   * @param {boolean=} shadowed optional: whether the figure may be drawn with a shadow (default is true).
   */
-class PathFigure ()
+open class PathFigure ()
   extends typings.go.mod.PathFigure {
   def this(sx: Double) = this()
   def this(sx: Double, sy: Double) = this()

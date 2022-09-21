@@ -1,10 +1,11 @@
 package typings.jpushReactNative
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.jpushReactNative.anon.AliascodenumberSequence
 import typings.jpushReactNative.anon.AppBadge
+import typings.jpushReactNative.anon.AppKey
 import typings.jpushReactNative.anon.Badge
 import typings.jpushReactNative.anon.Channel
-import typings.jpushReactNative.anon.Code
 import typings.jpushReactNative.anon.ConnectEnable
 import typings.jpushReactNative.anon.Content
 import typings.jpushReactNative.anon.ContentExtras
@@ -16,7 +17,8 @@ import typings.jpushReactNative.anon.NotificationMaxNumber
 import typings.jpushReactNative.anon.PushTimeDays
 import typings.jpushReactNative.anon.RegisterID
 import typings.jpushReactNative.anon.SilenceTimeEndHour
-import typings.jpushReactNative.anon.TagtagEnableboolean
+import typings.jpushReactNative.anon.TagscodenumberSequence
+import typings.jpushReactNative.anon.TagtagEnablebooleancodenu
 import typings.jpushReactNative.anon.codenumberSequence
 import typings.jpushReactNative.anon.mobileNumberstringSequenc
 import org.scalablytyped.runtime.StObject
@@ -27,7 +29,7 @@ object mod {
   
   @JSImport("jpush-react-native", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with JPush
   /* static members */
@@ -44,7 +46,7 @@ object mod {
     /**
       * 自定义消息事件
       */
-    inline def addCustomMessagegListener(callback: Callback[ContentExtras]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addCustomMessagegListener")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def addCustomMessageListener(callback: Callback[ContentExtras]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addCustomMessageListener")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     //***************************************本地通知***************************************
     /**
@@ -83,7 +85,7 @@ object mod {
     /**
       * tag alias事件
       */
-    inline def addTagAliasListener(callback: Callback[Code & Sequence & (Tags | Alias | TagtagEnableboolean)]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addTagAliasListener")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def addTagAliasListener(callback: Callback[TagscodenumberSequence | AliascodenumberSequence | TagtagEnablebooleancodenu]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addTagAliasListener")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 新增标签
@@ -142,11 +144,11 @@ object mod {
     
     /**
       * 初始化推送服务
-      *
+      * {"appKey":"","channel":"dev","production":1}
       * 请在componentDidMount()调用init,否则会影响通知点击事件的回调
       *
       */
-    inline def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
+    inline def init(params: AppKey): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 开启 CrashLog 上报
@@ -422,7 +424,7 @@ object mod {
       
       inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
     }
   }
 }

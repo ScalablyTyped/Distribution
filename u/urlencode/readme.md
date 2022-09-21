@@ -11,9 +11,9 @@ encodeURIComponent with charset
 | Full name          | urlencode |
 | Keywords           | urlencode, urldecode, encodeURIComponent, decodeURIComponent, querystring, parse |
 | # releases         | 0 |
-| # dependents       | 415 |
-| # downloads        | 14802091 |
-| # stars            | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 2292399.6666666665 |
+| # stars            | 138.0 |
 
 ## Links
 - [Homepage](https://github.com/node-modules/urlencode)

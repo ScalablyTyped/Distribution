@@ -11,9 +11,9 @@ Get the current week number.
 | Full name          | week |
 | Keywords           | calendar, date, dates, format, get, js, month, months, util, utility, week, weekday, weeks, year |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 715 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 47.333333333333336 |
+| # stars            | 9.0 |
 
 ## Links
 - [Homepage](https://github.com/datetime/week)

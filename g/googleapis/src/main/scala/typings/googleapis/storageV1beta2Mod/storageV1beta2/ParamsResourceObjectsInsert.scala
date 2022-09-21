@@ -1,9 +1,5 @@
 package typings.googleapis.storageV1beta2Mod.storageV1beta2
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import typings.googleapis.anon.Body
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,37 +10,27 @@ trait ParamsResourceObjectsInsert
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Name of the bucket in which to store the new object. Overrides the
-    * provided object metadata's bucket value, if any.
+    * Name of the bucket in which to store the new object. Overrides the provided object metadata's bucket value, if any.
     */
   var bucket: js.UndefOr[String] = js.undefined
   
   /**
-    * Makes the operation conditional on whether the object's current
-    * generation matches the given value.
+    * Makes the operation conditional on whether the object's current generation matches the given value.
     */
   var ifGenerationMatch: js.UndefOr[String] = js.undefined
   
   /**
-    * Makes the operation conditional on whether the object's current
-    * generation does not match the given value.
+    * Makes the operation conditional on whether the object's current generation does not match the given value.
     */
   var ifGenerationNotMatch: js.UndefOr[String] = js.undefined
   
   /**
-    * Makes the operation conditional on whether the object's current
-    * metageneration matches the given value.
+    * Makes the operation conditional on whether the object's current metageneration matches the given value.
     */
   var ifMetagenerationMatch: js.UndefOr[String] = js.undefined
   
   /**
-    * Makes the operation conditional on whether the object's current
-    * metageneration does not match the given value.
+    * Makes the operation conditional on whether the object's current metageneration does not match the given value.
     */
   var ifMetagenerationNotMatch: js.UndefOr[String] = js.undefined
   
@@ -54,14 +40,12 @@ trait ParamsResourceObjectsInsert
   var media: js.UndefOr[Body] = js.undefined
   
   /**
-    * Name of the object. Required when the object metadata is not otherwise
-    * provided. Overrides the object metadata's name value, if any.
+    * Name of the object. Required when the object metadata is not otherwise provided. Overrides the object metadata's name value, if any.
     */
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * Set of properties to return. Defaults to noAcl, unless the object
-    * resource specifies the acl property, when it defaults to full.
+    * Set of properties to return. Defaults to noAcl, unless the object resource specifies the acl property, when it defaults to full.
     */
   var projection: js.UndefOr[String] = js.undefined
   
@@ -78,10 +62,6 @@ object ParamsResourceObjectsInsert {
   }
   
   extension [Self <: ParamsResourceObjectsInsert](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     

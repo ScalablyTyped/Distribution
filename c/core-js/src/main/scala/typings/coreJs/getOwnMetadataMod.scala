@@ -24,9 +24,9 @@ object getOwnMetadataMod {
     * ```
     */
   /* was `typeof core.Reflect.getOwnMetadata` */
-  inline def apply(metadataKey: js.Any, target: Object): js.Any = (^.asInstanceOf[js.Dynamic].apply(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(metadataKey: js.Any, target: Object, targetKey: java.lang.String): js.Any = (^.asInstanceOf[js.Dynamic].apply(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(metadataKey: js.Any, target: Object, targetKey: js.Symbol): js.Any = (^.asInstanceOf[js.Dynamic].apply(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(metadataKey: Any, target: Object): Any = (^.asInstanceOf[js.Dynamic].apply(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(metadataKey: Any, target: Object, targetKey: java.lang.String): Any = (^.asInstanceOf[js.Dynamic].apply(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(metadataKey: Any, target: Object, targetKey: js.Symbol): Any = (^.asInstanceOf[js.Dynamic].apply(metadataKey.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("core-js/library/fn/reflect/es7/get-own-metadata", JSImport.Namespace)
   @js.native

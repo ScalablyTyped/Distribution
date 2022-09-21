@@ -1,10 +1,7 @@
 package typings.reactNativeSafeAreaContext
 
-import typings.react.mod.ReactNode
 import typings.reactNative.mod.NativeSyntheticEvent
-import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewProps
-import typings.reactNative.mod.ViewStyle
 import typings.reactNativeSafeAreaContext.reactNativeSafeAreaContextStrings.margin
 import typings.reactNativeSafeAreaContext.reactNativeSafeAreaContextStrings.padding
 import org.scalablytyped.runtime.StObject
@@ -85,13 +82,11 @@ object safeAreaTypesMod {
     }
   }
   
-  trait NativeSafeAreaProviderProps extends StObject {
-    
-    var children: js.UndefOr[ReactNode] = js.undefined
+  trait NativeSafeAreaProviderProps
+    extends StObject
+       with ViewProps {
     
     var onInsetsChange: InsetChangeNativeCallback
-    
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   }
   object NativeSafeAreaProviderProps {
     
@@ -102,25 +97,13 @@ object safeAreaTypesMod {
     
     extension [Self <: NativeSafeAreaProviderProps](x: Self) {
       
-      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-      
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-      
       inline def setOnInsetsChange(value: /* event */ InsetChangedEvent => Unit): Self = StObject.set(x, "onInsetsChange", js.Any.fromFunction1(value))
-      
-      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
-      
-      inline def setStyleNull: Self = StObject.set(x, "style", null)
-      
-      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
   trait NativeSafeAreaViewProps
     extends StObject
        with ViewProps {
-    
-    var children: js.UndefOr[ReactNode] = js.undefined
     
     var edges: js.UndefOr[js.Array[Edge]] = js.undefined
     
@@ -135,15 +118,11 @@ object safeAreaTypesMod {
     
     extension [Self <: NativeSafeAreaViewProps](x: Self) {
       
-      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-      
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-      
       inline def setEdges(value: js.Array[Edge]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
       
       inline def setEdgesUndefined: Self = StObject.set(x, "edges", js.undefined)
       
-      inline def setEdgesVarargs(value: Edge*): Self = StObject.set(x, "edges", js.Array(value :_*))
+      inline def setEdgesVarargs(value: Edge*): Self = StObject.set(x, "edges", js.Array(value*))
       
       inline def setMode(value: padding | margin): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       

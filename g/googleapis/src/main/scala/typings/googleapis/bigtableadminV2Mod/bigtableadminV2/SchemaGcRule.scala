@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Rule for determining which cells to delete during garbage collection.
-  */
 trait SchemaGcRule extends StObject {
   
   /**
@@ -15,15 +12,14 @@ trait SchemaGcRule extends StObject {
   var intersection: js.UndefOr[SchemaIntersection] = js.undefined
   
   /**
-    * Delete cells in a column older than the given age. Values must be at
-    * least one millisecond, and will be truncated to microsecond granularity.
+    * Delete cells in a column older than the given age. Values must be at least one millisecond, and will be truncated to microsecond granularity.
     */
-  var maxAge: js.UndefOr[String] = js.undefined
+  var maxAge: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Delete all cells in a column except the most recent N.
     */
-  var maxNumVersions: js.UndefOr[Double] = js.undefined
+  var maxNumVersions: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * Delete cells that would be deleted by any nested rule.
@@ -45,9 +41,13 @@ object SchemaGcRule {
     
     inline def setMaxAge(value: String): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
     
+    inline def setMaxAgeNull: Self = StObject.set(x, "maxAge", null)
+    
     inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
     
     inline def setMaxNumVersions(value: Double): Self = StObject.set(x, "maxNumVersions", value.asInstanceOf[js.Any])
+    
+    inline def setMaxNumVersionsNull: Self = StObject.set(x, "maxNumVersions", null)
     
     inline def setMaxNumVersionsUndefined: Self = StObject.set(x, "maxNumVersions", js.undefined)
     

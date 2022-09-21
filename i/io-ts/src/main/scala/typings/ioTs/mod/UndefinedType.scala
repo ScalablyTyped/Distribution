@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("io-ts", "UndefinedType")
 @js.native
-class UndefinedType ()
-  extends Type_[Unit, Unit, js.Any] {
+open class UndefinedType () extends Type_[Unit, Unit, Any] {
   
   /**
     * @since 1.0.0

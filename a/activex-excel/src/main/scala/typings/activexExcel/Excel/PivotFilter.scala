@@ -33,13 +33,13 @@ trait PivotFilter extends StObject {
   
   var Order: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   val PivotField: typings.activexExcel.Excel.PivotField
   
-  val Value1: js.Any
+  val Value1: Any
   
-  val Value2: js.Any
+  val Value2: Any
 }
 object PivotFilter {
   
@@ -57,10 +57,10 @@ object PivotFilter {
     MemberPropertyField: PivotField,
     Name: String,
     Order: Double,
-    Parent: js.Any,
+    Parent: Any,
     PivotField: PivotField,
-    Value1: js.Any,
-    Value2: js.Any
+    Value1: Any,
+    Value2: Any
   ): PivotFilter = {
     val __obj = js.Dynamic.literal(Active = Active.asInstanceOf[js.Any], Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], DataCubeField = DataCubeField.asInstanceOf[js.Any], DataField = DataField.asInstanceOf[js.Any], Delete = js.Any.fromFunction0(Delete), Description = Description.asInstanceOf[js.Any], FilterType = FilterType.asInstanceOf[js.Any], IsMemberPropertyFilter = IsMemberPropertyFilter.asInstanceOf[js.Any], MemberPropertyField = MemberPropertyField.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Order = Order.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], PivotField = PivotField.asInstanceOf[js.Any], Value1 = Value1.asInstanceOf[js.Any], Value2 = Value2.asInstanceOf[js.Any])
     __obj.updateDynamic("Excel.PivotFilter_typekey")(ExcelDotPivotFilter_typekey.asInstanceOf[js.Any])
@@ -95,12 +95,12 @@ object PivotFilter {
     
     inline def setOrder(value: Double): Self = StObject.set(x, "Order", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPivotField(value: PivotField): Self = StObject.set(x, "PivotField", value.asInstanceOf[js.Any])
     
-    inline def setValue1(value: js.Any): Self = StObject.set(x, "Value1", value.asInstanceOf[js.Any])
+    inline def setValue1(value: Any): Self = StObject.set(x, "Value1", value.asInstanceOf[js.Any])
     
-    inline def setValue2(value: js.Any): Self = StObject.set(x, "Value2", value.asInstanceOf[js.Any])
+    inline def setValue2(value: Any): Self = StObject.set(x, "Value2", value.asInstanceOf[js.Any])
   }
 }

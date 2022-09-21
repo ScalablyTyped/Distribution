@@ -109,7 +109,7 @@ object XGridColumnModel {
     getColumn: Double => XGridColumn,
     getColumnCount: () => Double,
     getColumns: () => SafeArray[XGridColumn],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeColumn: Double => Unit,
     removeContainerListener: XContainerListener => Unit,

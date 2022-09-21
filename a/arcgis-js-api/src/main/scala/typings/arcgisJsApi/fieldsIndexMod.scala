@@ -17,18 +17,25 @@ object fieldsIndexMod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/support/FieldsIndex", JSImport.Namespace)
   @js.native
-  class Class ()
+  /**
+    * This class provides convenient methods that can be used to make case-insensitive lookups for a field by its name.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FieldsIndex.html)
+    */
+  open class Class ()
     extends StObject
        with FieldsIndex {
-    def this(properties: js.Any) = this()
+    def this(properties: Any) = this()
     
     /**
       * An array of date fields or field json objects.
       *
+      * @default []
+      *
       * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FieldsIndex.html#dateFields)
       */
     /* CompleteClass */
-    var dateFields: js.Array[js.Any | Field] = js.native
+    var dateFields: js.Array[Any | Field] = js.native
     
     /**
       * Returns a field with the specified field name.

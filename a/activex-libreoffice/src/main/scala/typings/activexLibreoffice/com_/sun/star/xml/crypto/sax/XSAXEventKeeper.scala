@@ -109,7 +109,7 @@ object XSAXEventKeeper {
     getElement: Double => XXMLElementWrapper,
     isBlocking: () => Boolean,
     printBufferNodeTree: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeBlocker: Double => Unit,
     removeElementCollector: Double => Unit,

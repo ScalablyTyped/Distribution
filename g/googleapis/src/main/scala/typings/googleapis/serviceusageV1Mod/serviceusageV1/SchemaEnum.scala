@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Enum type definition.
-  */
 trait SchemaEnum extends StObject {
   
   /**
@@ -17,7 +14,7 @@ trait SchemaEnum extends StObject {
   /**
     * Enum type name.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Protocol buffer options.
@@ -32,7 +29,7 @@ trait SchemaEnum extends StObject {
   /**
     * The source syntax.
     */
-  var syntax: js.UndefOr[String] = js.undefined
+  var syntax: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaEnum {
   
@@ -47,9 +44,11 @@ object SchemaEnum {
     
     inline def setEnumvalueUndefined: Self = StObject.set(x, "enumvalue", js.undefined)
     
-    inline def setEnumvalueVarargs(value: SchemaEnumValue*): Self = StObject.set(x, "enumvalue", js.Array(value :_*))
+    inline def setEnumvalueVarargs(value: SchemaEnumValue*): Self = StObject.set(x, "enumvalue", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
@@ -57,13 +56,15 @@ object SchemaEnum {
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    inline def setOptionsVarargs(value: SchemaOption*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: SchemaOption*): Self = StObject.set(x, "options", js.Array(value*))
     
     inline def setSourceContext(value: SchemaSourceContext): Self = StObject.set(x, "sourceContext", value.asInstanceOf[js.Any])
     
     inline def setSourceContextUndefined: Self = StObject.set(x, "sourceContext", js.undefined)
     
     inline def setSyntax(value: String): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
+    
+    inline def setSyntaxNull: Self = StObject.set(x, "syntax", null)
     
     inline def setSyntaxUndefined: Self = StObject.set(x, "syntax", js.undefined)
   }

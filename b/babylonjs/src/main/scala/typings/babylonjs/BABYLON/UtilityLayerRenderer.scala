@@ -9,7 +9,7 @@ trait UtilityLayerRenderer
   extends StObject
      with IDisposable {
   
-  /* private */ var _afterRenderObserver: js.Any = js.native
+  /* private */ var _afterRenderObserver: Any = js.native
   
   /**
     * @hidden
@@ -17,21 +17,21 @@ trait UtilityLayerRenderer
     */
   def _getSharedGizmoLight(): HemisphericLight = js.native
   
-  /* private */ var _lastPointerEvents: js.Any = js.native
+  /* private */ var _lastPointerEvents: Any = js.native
   
-  /* private */ var _notifyObservers: js.Any = js.native
+  /* private */ var _notifyObservers: Any = js.native
   
-  /* private */ var _originalPointerObserver: js.Any = js.native
+  /* private */ var _originalPointerObserver: Any = js.native
   
-  /* private */ var _pointerCaptures: js.Any = js.native
+  /* private */ var _pointerCaptures: Any = js.native
   
-  /* private */ var _renderCamera: js.Any = js.native
+  /* private */ var _renderCamera: Any = js.native
   
-  /* private */ var _sceneDisposeObserver: js.Any = js.native
+  /* private */ var _sceneDisposeObserver: Any = js.native
   
-  /* private */ var _sharedGizmoLight: js.Any = js.native
+  /* private */ var _sharedGizmoLight: Any = js.native
   
-  /* private */ var _updateCamera: js.Any = js.native
+  /* private */ var _updateCamera: Any = js.native
   
   /**
     * Gets the camera that is used to render the utility layer (when not set, this will be the last active camera)
@@ -45,7 +45,7 @@ trait UtilityLayerRenderer
   def mainSceneTrackerPredicate(mesh: Nullable[AbstractMesh]): Boolean = js.native
   
   /**
-    * Observable raised when the pointer move from the utility layer scene to the main scene
+    * Observable raised when the pointer moves from the utility layer scene to the main scene
     */
   var onPointerOutObservable: Observable[Double] = js.native
   
@@ -61,6 +61,11 @@ trait UtilityLayerRenderer
     * If the picking should be done on the utility layer prior to the actual scene (Default: true)
     */
   var pickUtilitySceneFirst: Boolean = js.native
+  
+  /**
+    * Set to false to disable picking
+    */
+  var pickingEnabled: Boolean = js.native
   
   /**
     * If set to false, only pointerUp, pointerDown and pointerMove will be sent to the utilityLayerScene (false by default)

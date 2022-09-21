@@ -15,7 +15,7 @@ object provider {
     */
   @JSGlobal("H.map.provider.ImageTileProvider")
   @js.native
-  class ImageTileProvider protected ()
+  open class ImageTileProvider protected ()
     extends StObject
        with typings.heremaps.H.map.provider.ImageTileProvider {
     /**
@@ -31,7 +31,7 @@ object provider {
     */
   @JSGlobal("H.map.provider.Invalidations")
   @js.native
-  class Invalidations ()
+  open class Invalidations ()
     extends StObject
        with typings.heremaps.H.map.provider.Invalidations {
     
@@ -135,6 +135,20 @@ object provider {
   }
   
   /**
+    * A LocalObjectProvider acts as a database for map objects. It provides functionality to fetch visible objects for specific geographical bounding box and zoom levels.
+    * All objects are organized in a hierarchical group structure.
+    * An object can be added to the provider by adding it to a group within this structure.
+    * The root group of the provider can be fetched via the method H.map.provider.LocalObjectProvider#getRootGroup.
+    * A H.Map has its own LocalObjectProvider and offer a means to add and remove objects.
+    * Only in advanced use cases, is there a need to create an additional LocalObjectProvider.
+    */
+  @JSGlobal("H.map.provider.LocalObjectProvider")
+  @js.native
+  open class LocalObjectProvider ()
+    extends StObject
+       with typings.heremaps.H.map.provider.LocalObjectProvider
+  
+  /**
     * A MarkerTileProvider uses network service to provide markers on tile basis.
     * @property requestTile {} - Request data on a tile basis
     * @property cancelTile {} - Cancels tile from being requested using x, y, z coordinates (column, row, zoom)
@@ -146,7 +160,7 @@ object provider {
     */
   @JSGlobal("H.map.provider.MarkerTileProvider")
   @js.native
-  class MarkerTileProvider protected ()
+  open class MarkerTileProvider protected ()
     extends StObject
        with typings.heremaps.H.map.provider.MarkerTileProvider {
     /**
@@ -165,7 +179,7 @@ object provider {
     * Constructor
     * @param opt_options {H.map.provider.Provider.Options=}
     */
-  class ObjectProvider ()
+  open class ObjectProvider ()
     extends StObject
        with typings.heremaps.H.map.provider.ObjectProvider {
     def this(opt_options: typings.heremaps.H.map.provider.Provider.Options) = this()
@@ -185,7 +199,7 @@ object provider {
     * Constructor
     * @param opt_options {H.map.provider.Provider.Options=}
     */
-  class Provider ()
+  open class Provider ()
     extends StObject
        with typings.heremaps.H.map.provider.Provider {
     def this(opt_options: typings.heremaps.H.map.provider.Provider.Options) = this()
@@ -197,7 +211,7 @@ object provider {
     */
   @JSGlobal("H.map.provider.RemoteTileProvider")
   @js.native
-  class RemoteTileProvider protected ()
+  open class RemoteTileProvider protected ()
     extends StObject
        with typings.heremaps.H.map.provider.RemoteTileProvider {
     /**
@@ -219,7 +233,7 @@ object provider {
     */
   @JSGlobal("H.map.provider.Tile")
   @js.native
-  class Tile protected ()
+  open class Tile protected ()
     extends StObject
        with typings.heremaps.H.map.provider.Tile {
     /**
@@ -230,10 +244,10 @@ object provider {
       * @param data {*} - generic data object which cooresponds to the given coordinates
       */
     def this(x: Double, y: Double, z: Double) = this()
-    def this(x: Double, y: Double, z: Double, data: js.Any) = this()
+    def this(x: Double, y: Double, z: Double, data: Any) = this()
     
     /* CompleteClass */
-    var data: js.Any = js.native
+    var data: Any = js.native
     
     /* CompleteClass */
     var key: String = js.native
@@ -263,7 +277,7 @@ object provider {
     */
   @JSGlobal("H.map.provider.TileProvider")
   @js.native
-  class TileProvider protected ()
+  open class TileProvider protected ()
     extends StObject
        with typings.heremaps.H.map.provider.TileProvider {
     /**

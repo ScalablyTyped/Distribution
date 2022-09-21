@@ -10,10 +10,10 @@ debug toolbar middleware for developing applications in expressjs
 | ------------------ | :-------------: |
 | Full name          | express-debug |
 | Keywords           | express, debug, tool, development, toolbar |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 15708 |
-| # stars            | 10 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1135.6666666666667 |
+| # stars            | 194.0 |
 
 ## Links
 - [Homepage](https://github.com/devoidfury/express-debug)

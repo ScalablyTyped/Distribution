@@ -25,11 +25,11 @@ trait TreeViewOptions extends StObject {
   
   var dataImageUrlField: js.UndefOr[String] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any | HierarchicalDataSource] = js.undefined
+  var dataSource: js.UndefOr[Any | HierarchicalDataSource] = js.undefined
   
   var dataSpriteCssClassField: js.UndefOr[String] = js.undefined
   
-  var dataTextField: js.UndefOr[String | js.Any] = js.undefined
+  var dataTextField: js.UndefOr[String | Any] = js.undefined
   
   var dataUrlField: js.UndefOr[String] = js.undefined
   
@@ -45,6 +45,8 @@ trait TreeViewOptions extends StObject {
   
   var expand: js.UndefOr[js.Function1[/* e */ TreeViewExpandEvent, Unit]] = js.undefined
   
+  var loadCompleted: js.UndefOr[js.Function1[/* e */ TreeViewEvent, Unit]] = js.undefined
+  
   var loadOnDemand: js.UndefOr[Boolean] = js.undefined
   
   var messages: js.UndefOr[TreeViewMessages] = js.undefined
@@ -54,6 +56,8 @@ trait TreeViewOptions extends StObject {
   var navigate: js.UndefOr[js.Function1[/* e */ TreeViewNavigateEvent, Unit]] = js.undefined
   
   var select: js.UndefOr[js.Function1[/* e */ TreeViewSelectEvent, Unit]] = js.undefined
+  
+  var size: js.UndefOr[String] = js.undefined
   
   var template: js.UndefOr[String | js.Function] = js.undefined
 }
@@ -102,7 +106,7 @@ object TreeViewOptions {
     
     inline def setDataImageUrlFieldUndefined: Self = StObject.set(x, "dataImageUrlField", js.undefined)
     
-    inline def setDataSource(value: js.Any | HierarchicalDataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any | HierarchicalDataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
@@ -110,7 +114,7 @@ object TreeViewOptions {
     
     inline def setDataSpriteCssClassFieldUndefined: Self = StObject.set(x, "dataSpriteCssClassField", js.undefined)
     
-    inline def setDataTextField(value: String | js.Any): Self = StObject.set(x, "dataTextField", value.asInstanceOf[js.Any])
+    inline def setDataTextField(value: String | Any): Self = StObject.set(x, "dataTextField", value.asInstanceOf[js.Any])
     
     inline def setDataTextFieldUndefined: Self = StObject.set(x, "dataTextField", js.undefined)
     
@@ -142,6 +146,10 @@ object TreeViewOptions {
     
     inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
     
+    inline def setLoadCompleted(value: /* e */ TreeViewEvent => Unit): Self = StObject.set(x, "loadCompleted", js.Any.fromFunction1(value))
+    
+    inline def setLoadCompletedUndefined: Self = StObject.set(x, "loadCompleted", js.undefined)
+    
     inline def setLoadOnDemand(value: Boolean): Self = StObject.set(x, "loadOnDemand", value.asInstanceOf[js.Any])
     
     inline def setLoadOnDemandUndefined: Self = StObject.set(x, "loadOnDemand", js.undefined)
@@ -161,6 +169,10 @@ object TreeViewOptions {
     inline def setSelect(value: /* e */ TreeViewSelectEvent => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
     
     inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+    
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     inline def setTemplate(value: String | js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     

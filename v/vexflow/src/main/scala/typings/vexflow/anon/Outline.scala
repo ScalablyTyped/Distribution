@@ -27,7 +27,7 @@ object Outline {
     
     inline def setOutline(value: js.Array[Double]): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
     
-    inline def setOutlineVarargs(value: Double*): Self = StObject.set(x, "outline", js.Array(value :_*))
+    inline def setOutlineVarargs(value: Double*): Self = StObject.set(x, "outline", js.Array(value*))
     
     inline def setX_max(value: Double): Self = StObject.set(x, "x_max", value.asInstanceOf[js.Any])
     

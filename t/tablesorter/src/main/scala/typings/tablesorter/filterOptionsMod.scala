@@ -196,7 +196,7 @@ object filterOptionsMod {
       
       inline def setFilter_cellFilterUndefined: Self = StObject.set(x, "filter_cellFilter", js.undefined)
       
-      inline def setFilter_cellFilterVarargs(value: String*): Self = StObject.set(x, "filter_cellFilter", js.Array(value :_*))
+      inline def setFilter_cellFilterVarargs(value: String*): Self = StObject.set(x, "filter_cellFilter", js.Array(value*))
       
       inline def setFilter_childByColumn(value: Boolean): Self = StObject.set(x, "filter_childByColumn", value.asInstanceOf[js.Any])
       
@@ -222,7 +222,7 @@ object filterOptionsMod {
       
       inline def setFilter_cssFilterUndefined: Self = StObject.set(x, "filter_cssFilter", js.undefined)
       
-      inline def setFilter_cssFilterVarargs(value: String*): Self = StObject.set(x, "filter_cssFilter", js.Array(value :_*))
+      inline def setFilter_cssFilterVarargs(value: String*): Self = StObject.set(x, "filter_cssFilter", js.Array(value*))
       
       inline def setFilter_defaultAttrib(value: String): Self = StObject.set(x, "filter_defaultAttrib", value.asInstanceOf[js.Any])
       
@@ -318,7 +318,7 @@ object filterOptionsMod {
       
       inline def setFilter_selectSourceUndefined: Self = StObject.set(x, "filter_selectSource", js.undefined)
       
-      inline def setFilter_selectSourceVarargs(value: (String | SelectSource)*): Self = StObject.set(x, "filter_selectSource", js.Array(value :_*))
+      inline def setFilter_selectSourceVarargs(value: (String | SelectSource)*): Self = StObject.set(x, "filter_selectSource", js.Array(value*))
       
       inline def setFilter_serversideFiltering(value: Boolean): Self = StObject.set(x, "filter_serversideFiltering", value.asInstanceOf[js.Any])
       

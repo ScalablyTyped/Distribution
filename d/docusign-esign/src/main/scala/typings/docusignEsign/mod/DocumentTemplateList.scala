@@ -21,6 +21,6 @@ object DocumentTemplateList {
     
     inline def setDocumentTemplatesUndefined: Self = StObject.set(x, "documentTemplates", js.undefined)
     
-    inline def setDocumentTemplatesVarargs(value: DocumentTemplate*): Self = StObject.set(x, "documentTemplates", js.Array(value :_*))
+    inline def setDocumentTemplatesVarargs(value: DocumentTemplate*): Self = StObject.set(x, "documentTemplates", js.Array(value*))
   }
 }

@@ -1,5 +1,7 @@
 package typings.carbonComponents
 
+import typings.carbonComponents.anon.PartialDataTableOptions
+import typings.std.HTMLElement
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,9 +11,10 @@ object dataTableV2Mod {
   
   @JSImport("carbon-components/components/data-table-v2/data-table-v2", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends typings.carbonComponents.dataTableMod.default {
-    def this(element: js.Any, options: js.Any) = this()
+    def this(element: HTMLElement) = this()
+    def this(element: HTMLElement, options: PartialDataTableOptions) = this()
   }
   object default {
     
@@ -22,8 +25,8 @@ object dataTableV2Mod {
     /* static member */
     @JSImport("carbon-components/components/data-table-v2/data-table-v2", "default.components")
     @js.native
-    def components: WeakMap[js.Object, js.Any] = js.native
-    inline def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
+    def components: WeakMap[js.Object, Any] = js.native
+    inline def components_=(x: WeakMap[js.Object, Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
     
     /* static member */
     object eventHandlers {

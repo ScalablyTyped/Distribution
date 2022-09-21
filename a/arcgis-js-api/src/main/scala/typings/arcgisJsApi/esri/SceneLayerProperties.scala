@@ -11,21 +11,29 @@ trait SceneLayerProperties
      with LayerProperties
      with SceneServiceProperties
      with PortalLayerProperties
-     with ScaleRangeLayerProperties {
+     with ScaleRangeLayerProperties
+     with APIKeyMixinProperties {
   
   /**
-    * The SQL where clause used to filter features on the client.
+    * The SQL where clause used to filter features.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#definitionExpression)
     */
   var definitionExpression: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies how graphics are placed on the vertical axis (z).
+    * Specifies how features are placed on the vertical axis (z).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#elevationInfo)
     */
   var elevationInfo: js.UndefOr[SceneLayerElevationInfo] = js.undefined
+  
+  /**
+    * List of object ids to exclude from rendering.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#excludeObjectIds)
+    */
+  var excludeObjectIds: js.UndefOr[CollectionProperties[Double]] = js.undefined
   
   /**
     * Configures the method for decluttering overlapping features in the view.
@@ -33,6 +41,20 @@ trait SceneLayerProperties
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#featureReduction)
     */
   var featureReduction: js.UndefOr[FeatureReductionSelectionProperties] = js.undefined
+  
+  /**
+    * A collection of polygons and a type to apply client-side spatial feature masking.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#filter)
+    */
+  var filter: js.UndefOr[SceneFilterProperties] = js.undefined
+  
+  /**
+    * When a scene layer is configured as floor-aware, it has a floorInfo property defined.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#floorInfo)
+    */
+  var floorInfo: js.UndefOr[LayerFloorInfoProperties] = js.undefined
   
   /**
     * The geometry type of features in the layer.
@@ -51,12 +73,16 @@ trait SceneLayerProperties
   /**
     * Indicates whether to display labels for this layer.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#labelsVisible)
     */
   var labelsVisible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether the layer will be included in the legend.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#legendEnabled)
     */
@@ -72,12 +98,16 @@ trait SceneLayerProperties
   /**
     * An array of field names from the service to include with each feature.
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#outFields)
     */
   var outFields: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Indicates whether to display popups when features in the layer are clicked.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#popupEnabled)
     */
@@ -100,6 +130,8 @@ trait SceneLayerProperties
   /**
     * Apply perspective scaling to screen-size point symbols in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html#screenSizePerspectiveEnabled)
     */
   var screenSizePerspectiveEnabled: js.UndefOr[Boolean] = js.undefined
@@ -121,9 +153,23 @@ object SceneLayerProperties {
     
     inline def setElevationInfoUndefined: Self = StObject.set(x, "elevationInfo", js.undefined)
     
+    inline def setExcludeObjectIds(value: CollectionProperties[Double]): Self = StObject.set(x, "excludeObjectIds", value.asInstanceOf[js.Any])
+    
+    inline def setExcludeObjectIdsUndefined: Self = StObject.set(x, "excludeObjectIds", js.undefined)
+    
+    inline def setExcludeObjectIdsVarargs(value: Double*): Self = StObject.set(x, "excludeObjectIds", js.Array(value*))
+    
     inline def setFeatureReduction(value: FeatureReductionSelectionProperties): Self = StObject.set(x, "featureReduction", value.asInstanceOf[js.Any])
     
     inline def setFeatureReductionUndefined: Self = StObject.set(x, "featureReduction", js.undefined)
+    
+    inline def setFilter(value: SceneFilterProperties): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    
+    inline def setFloorInfo(value: LayerFloorInfoProperties): Self = StObject.set(x, "floorInfo", value.asInstanceOf[js.Any])
+    
+    inline def setFloorInfoUndefined: Self = StObject.set(x, "floorInfo", js.undefined)
     
     inline def setGeometryType(value: point | mesh): Self = StObject.set(x, "geometryType", value.asInstanceOf[js.Any])
     
@@ -133,7 +179,7 @@ object SceneLayerProperties {
     
     inline def setLabelingInfoUndefined: Self = StObject.set(x, "labelingInfo", js.undefined)
     
-    inline def setLabelingInfoVarargs(value: LabelClassProperties*): Self = StObject.set(x, "labelingInfo", js.Array(value :_*))
+    inline def setLabelingInfoVarargs(value: LabelClassProperties*): Self = StObject.set(x, "labelingInfo", js.Array(value*))
     
     inline def setLabelsVisible(value: Boolean): Self = StObject.set(x, "labelsVisible", value.asInstanceOf[js.Any])
     
@@ -151,7 +197,7 @@ object SceneLayerProperties {
     
     inline def setOutFieldsUndefined: Self = StObject.set(x, "outFields", js.undefined)
     
-    inline def setOutFieldsVarargs(value: String*): Self = StObject.set(x, "outFields", js.Array(value :_*))
+    inline def setOutFieldsVarargs(value: String*): Self = StObject.set(x, "outFields", js.Array(value*))
     
     inline def setPopupEnabled(value: Boolean): Self = StObject.set(x, "popupEnabled", value.asInstanceOf[js.Any])
     

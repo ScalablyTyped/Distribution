@@ -73,13 +73,13 @@ object b2MouseJoint {
     GetReactionTorque: Double => Double,
     GetTarget: () => b2Vec2,
     GetType: () => Double,
-    GetUserData: () => js.Any,
+    GetUserData: () => Any,
     IsActive: () => Boolean,
     SetDampingRatio: Double => Unit,
     SetFrequency: Double => Unit,
     SetMaxForce: Double => Unit,
     SetTarget: b2Vec2 => Unit,
-    SetUserData: js.Any => Unit
+    SetUserData: Any => Unit
   ): b2MouseJoint = {
     val __obj = js.Dynamic.literal(GetAnchorA = js.Any.fromFunction0(GetAnchorA), GetAnchorB = js.Any.fromFunction0(GetAnchorB), GetBodyA = js.Any.fromFunction0(GetBodyA), GetBodyB = js.Any.fromFunction0(GetBodyB), GetDampingRatio = js.Any.fromFunction0(GetDampingRatio), GetFrequency = js.Any.fromFunction0(GetFrequency), GetMaxForce = js.Any.fromFunction0(GetMaxForce), GetNext = js.Any.fromFunction0(GetNext), GetReactionForce = js.Any.fromFunction1(GetReactionForce), GetReactionTorque = js.Any.fromFunction1(GetReactionTorque), GetTarget = js.Any.fromFunction0(GetTarget), GetType = js.Any.fromFunction0(GetType), GetUserData = js.Any.fromFunction0(GetUserData), IsActive = js.Any.fromFunction0(IsActive), SetDampingRatio = js.Any.fromFunction1(SetDampingRatio), SetFrequency = js.Any.fromFunction1(SetFrequency), SetMaxForce = js.Any.fromFunction1(SetMaxForce), SetTarget = js.Any.fromFunction1(SetTarget), SetUserData = js.Any.fromFunction1(SetUserData))
     __obj.asInstanceOf[b2MouseJoint]

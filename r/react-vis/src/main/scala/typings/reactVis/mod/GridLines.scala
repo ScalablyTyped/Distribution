@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-vis", "GridLines")
 @js.native
-class GridLines[T] protected ()
-  extends PureComponent[GridLinesProps & T, js.Object, js.Any] {
+open class GridLines[T] protected ()
+  extends PureComponent[GridLinesProps & T, js.Object, Any] {
   def this(props: GridLinesProps & T) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: GridLinesProps & T, context: js.Any) = this()
+  def this(props: GridLinesProps & T, context: Any) = this()
 }

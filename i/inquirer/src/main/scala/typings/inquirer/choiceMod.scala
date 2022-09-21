@@ -14,13 +14,13 @@ object choiceMod {
     * @template T
     * The type of the answers.
     */
-  @JSImport("inquirer/lib/objects/choice", JSImport.Namespace)
+  @JSImport("inquirer/lib/objects/choice", JSImport.Default)
   @js.native
-  class ^[T /* <: Answers */] protected ()
+  open class default[T /* <: Answers */] protected ()
     extends StObject
        with Choice[T] {
     /**
-      * Initializes a new instance of the `Choice` class.
+      * Initializes a new instance of the {@link Choice `Choice<T>`} class.
       *
       * @param value
       * The value of the choice.
@@ -28,7 +28,7 @@ object choiceMod {
       * @param answers
       * An object which contains the answers to the questions.
       */
-    def this(value: js.Any, answers: T) = this()
+    def this(value: Any, answers: T) = this()
     
     /**
       * @inheritdoc

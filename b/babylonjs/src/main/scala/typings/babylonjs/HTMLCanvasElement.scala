@@ -12,7 +12,7 @@ trait HTMLCanvasElement extends StObject {
   def captureStream(): MediaStream = js.native
   def captureStream(fps: Double): MediaStream = js.native
   
-  /** Track wether a record is in progress */
+  /** Track whether a record is in progress */
   var isRecording: Boolean = js.native
   
   var mozRequestPointerLock: js.UndefOr[js.Function0[Unit]] = js.native

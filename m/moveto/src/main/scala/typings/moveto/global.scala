@@ -17,7 +17,7 @@ object global {
       * @param options Options
       * @param easeFunctions Custom ease functions
       */
-    class ^ ()
+    open class ^ ()
       extends typings.moveto.mod.^ {
       def this(options: MoveToOptions) = this()
       def this(options: Unit, easeFunctions: MoveToEaseFunctionsObject) = this()

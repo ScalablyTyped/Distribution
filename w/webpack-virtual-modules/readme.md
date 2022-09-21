@@ -1,7 +1,7 @@
 
 # Scala.js typings for webpack-virtual-modules
 
-Typings are for version 0.1
+Typings are for version 0.4.5
 
 ## Library description:
 Webpack Virtual Modules
@@ -10,10 +10,10 @@ Webpack Virtual Modules
 | ------------------ | :-------------: |
 | Full name          | webpack-virtual-modules |
 | Keywords           | webpack, webpack-plugin, virtual, modules |
-| # releases         | 11 |
-| # dependents       | 78 |
-| # downloads        | 64111117 |
-| # stars            | 0 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 2.5952046333333332E7 |
+| # stars            | 408.0 |
 
 ## Links
 - [Homepage](https://github.com/sysgears/webpack-virtual-modules#readme)
@@ -24,7 +24,7 @@ Webpack Virtual Modules
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

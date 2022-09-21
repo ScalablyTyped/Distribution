@@ -47,6 +47,6 @@ object UpdateSipRuleRequest {
     
     inline def setTargetApplicationsUndefined: Self = StObject.set(x, "TargetApplications", js.undefined)
     
-    inline def setTargetApplicationsVarargs(value: SipRuleTargetApplication*): Self = StObject.set(x, "TargetApplications", js.Array(value :_*))
+    inline def setTargetApplicationsVarargs(value: SipRuleTargetApplication*): Self = StObject.set(x, "TargetApplications", js.Array(value*))
   }
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for rollup-plugin-typescript2
 
-Typings are for version 0.25.3
+Typings are for version 0.34.0
 
 ## Library description:
 Seamless integration between Rollup and TypeScript. Now with errors.
@@ -10,10 +10,10 @@ Seamless integration between Rollup and TypeScript. Now with errors.
 | ------------------ | :-------------: |
 | Full name          | rollup-plugin-typescript2 |
 | Keywords           | rollup-plugin-typescript2, rollup-plugin-typescript, rollup-plugin, typescript, es2015, rollup, npm |
-| # releases         | 24 |
-| # dependents       | 416 |
-| # downloads        | 13861831 |
-| # stars            | 1 |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 3240924.6666666665 |
+| # stars            | 744.0 |
 
 ## Links
 - [Homepage](https://github.com/ezolenko/rollup-plugin-typescript2)

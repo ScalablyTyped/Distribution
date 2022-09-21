@@ -10,8 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait NativePointer
   extends StObject
-     with NativePointerValue
-     with _NativeReturnValue {
+     with NativePointerValue {
   
   def add(v: String): NativePointer = js.native
   def add(v: Double): NativePointer = js.native

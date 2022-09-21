@@ -27,7 +27,7 @@ object ComplianceInformation {
     
     inline def setCertificationControlsUndefined: Self = StObject.set(x, "certificationControls", js.undefined)
     
-    inline def setCertificationControlsVarargs(value: CertificationControl*): Self = StObject.set(x, "certificationControls", js.Array(value :_*))
+    inline def setCertificationControlsVarargs(value: CertificationControl*): Self = StObject.set(x, "certificationControls", js.Array(value*))
     
     inline def setCertificationName(value: NullableOption[String]): Self = StObject.set(x, "certificationName", value.asInstanceOf[js.Any])
     

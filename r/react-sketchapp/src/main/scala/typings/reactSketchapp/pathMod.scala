@@ -1,35 +1,37 @@
 package typings.reactSketchapp
 
+import typings.propTypes.mod.InferProps
 import typings.react.mod.Component
+import typings.reactSketchapp.anon.D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pathMod {
   
-  @JSImport("react-sketchapp/lib/components/Svg/Path", JSImport.Default)
+  @JSImport("react-sketchapp/lib/components/Svg/Path", "Path")
   @js.native
-  class default ()
-    extends Component[PathProps, js.Object, js.Any]
-  
-  type Path = Component[PathProps, js.Object, js.Any]
-  
-  trait PathProps
-    extends StObject
-       with typings.reactSketchapp.propsMod.PathProps {
-    
-    var d: String
+  open class Path protected ()
+    extends Component[Props, js.Object, Any] {
+    def this(props: Props) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: Props, context: Any) = this()
   }
-  object PathProps {
+  /* static members */
+  object Path {
     
-    inline def apply(d: String): PathProps = {
-      val __obj = js.Dynamic.literal(d = d.asInstanceOf[js.Any])
-      __obj.asInstanceOf[PathProps]
-    }
+    @JSImport("react-sketchapp/lib/components/Svg/Path", "Path")
+    @js.native
+    val ^ : js.Any = js.native
     
-    extension [Self <: PathProps](x: Self) {
-      
-      inline def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
-    }
+    @JSImport("react-sketchapp/lib/components/Svg/Path", "Path.propTypes")
+    @js.native
+    def propTypes: D = js.native
+    inline def propTypes_=(x: D): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
+  
+  type Props = InferProps[D]
 }

@@ -12,14 +12,16 @@ trait Repository extends StObject {
   var Bitbucket: js.UndefOr[ThirdPartySourceRepository] = js.undefined
   
   /**
-    * Information about an AWS CodeCommit repository.
+    * Information about an Amazon Web Services CodeCommit repository.
     */
   var CodeCommit: js.UndefOr[CodeCommitRepository] = js.undefined
   
   /**
-    *  Information about a GitHub Enterprise Server repository. 
+    * Information about a GitHub Enterprise Server repository.
     */
   var GitHubEnterpriseServer: js.UndefOr[ThirdPartySourceRepository] = js.undefined
+  
+  var S3Bucket: js.UndefOr[S3Repository] = js.undefined
 }
 object Repository {
   
@@ -41,5 +43,9 @@ object Repository {
     inline def setGitHubEnterpriseServer(value: ThirdPartySourceRepository): Self = StObject.set(x, "GitHubEnterpriseServer", value.asInstanceOf[js.Any])
     
     inline def setGitHubEnterpriseServerUndefined: Self = StObject.set(x, "GitHubEnterpriseServer", js.undefined)
+    
+    inline def setS3Bucket(value: S3Repository): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
+    
+    inline def setS3BucketUndefined: Self = StObject.set(x, "S3Bucket", js.undefined)
   }
 }

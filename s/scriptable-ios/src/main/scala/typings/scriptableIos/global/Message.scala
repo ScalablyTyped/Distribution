@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a message to be sent either as a text message or an iMessage.
   * @see https://docs.scriptable.app/message/#-new-message
   */
-class Message ()
+open class Message ()
   extends StObject
      with typings.scriptableIos.Message {
   

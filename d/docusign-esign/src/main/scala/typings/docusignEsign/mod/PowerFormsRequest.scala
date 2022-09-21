@@ -24,6 +24,6 @@ object PowerFormsRequest {
     
     inline def setPowerFormsUndefined: Self = StObject.set(x, "powerForms", js.undefined)
     
-    inline def setPowerFormsVarargs(value: (/* Contains details about a PowerForm. */ PowerForm)*): Self = StObject.set(x, "powerForms", js.Array(value :_*))
+    inline def setPowerFormsVarargs(value: (/* Contains details about a PowerForm. */ PowerForm)*): Self = StObject.set(x, "powerForms", js.Array(value*))
   }
 }

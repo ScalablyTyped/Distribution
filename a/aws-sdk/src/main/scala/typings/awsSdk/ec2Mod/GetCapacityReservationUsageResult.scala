@@ -32,7 +32,7 @@ trait GetCapacityReservationUsageResult extends StObject {
   var NextToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The current state of the Capacity Reservation. A Capacity Reservation can be in one of the following states:    active - The Capacity Reservation is active and the capacity is available for your use.    expired - The Capacity Reservation expired automatically at the date and time specified in your request. The reserved capacity is no longer available for your use.    cancelled - The Capacity Reservation was manually cancelled. The reserved capacity is no longer available for your use.    pending - The Capacity Reservation request was successful but the capacity provisioning is still pending.    failed - The Capacity Reservation request has failed. A request might fail due to invalid request parameters, capacity constraints, or instance limit constraints. Failed requests are retained for 60 minutes.  
+    * The current state of the Capacity Reservation. A Capacity Reservation can be in one of the following states:    active - The Capacity Reservation is active and the capacity is available for your use.    expired - The Capacity Reservation expired automatically at the date and time specified in your request. The reserved capacity is no longer available for your use.    cancelled - The Capacity Reservation was cancelled. The reserved capacity is no longer available for your use.    pending - The Capacity Reservation request was successful but the capacity provisioning is still pending.    failed - The Capacity Reservation request has failed. A request might fail due to invalid request parameters, capacity constraints, or instance limit constraints. Failed requests are retained for 60 minutes.  
     */
   var State: js.UndefOr[CapacityReservationState] = js.undefined
   
@@ -66,7 +66,7 @@ object GetCapacityReservationUsageResult {
     
     inline def setInstanceUsagesUndefined: Self = StObject.set(x, "InstanceUsages", js.undefined)
     
-    inline def setInstanceUsagesVarargs(value: InstanceUsage*): Self = StObject.set(x, "InstanceUsages", js.Array(value :_*))
+    inline def setInstanceUsagesVarargs(value: InstanceUsage*): Self = StObject.set(x, "InstanceUsages", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

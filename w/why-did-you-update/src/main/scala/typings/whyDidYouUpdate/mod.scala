@@ -1,6 +1,5 @@
 package typings.whyDidYouUpdate
 
-import typings.std.RegExp
 import typings.whyDidYouUpdate.anon.Typeofreact
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,15 +18,15 @@ object mod {
     
     var name: String
     
-    var next: js.Any
+    var next: Any
     
-    var prev: js.Any
+    var prev: Any
     
-    var `type`: js.Any
+    var `type`: Any
   }
   object Diffs {
     
-    inline def apply(name: String, next: js.Any, prev: js.Any, `type`: js.Any): Diffs = {
+    inline def apply(name: String, next: Any, prev: Any, `type`: Any): Diffs = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], next = next.asInstanceOf[js.Any], prev = prev.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Diffs]
@@ -37,11 +36,11 @@ object mod {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setNext(value: js.Any): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+      inline def setNext(value: Any): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
-      inline def setPrev(value: js.Any): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
+      inline def setPrev(value: Any): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
       
-      inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -49,11 +48,11 @@ object mod {
     
     var collapseComponentGroups: js.UndefOr[Boolean] = js.undefined
     
-    var exclude: js.UndefOr[RegExp] = js.undefined
+    var exclude: js.UndefOr[js.RegExp] = js.undefined
     
     var groupByComment: js.UndefOr[Boolean] = js.undefined
     
-    var include: js.UndefOr[RegExp] = js.undefined
+    var include: js.UndefOr[js.RegExp] = js.undefined
     
     var notifier: js.UndefOr[
         js.Function4[
@@ -78,7 +77,7 @@ object mod {
       
       inline def setCollapseComponentGroupsUndefined: Self = StObject.set(x, "collapseComponentGroups", js.undefined)
       
-      inline def setExclude(value: RegExp): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: js.RegExp): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
       inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
@@ -86,7 +85,7 @@ object mod {
       
       inline def setGroupByCommentUndefined: Self = StObject.set(x, "groupByComment", js.undefined)
       
-      inline def setInclude(value: RegExp): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: js.RegExp): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
       inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       

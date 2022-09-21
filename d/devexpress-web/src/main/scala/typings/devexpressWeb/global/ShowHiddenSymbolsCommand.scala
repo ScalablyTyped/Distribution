@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ShowHiddenSymbolsCommand")
 @js.native
-class ShowHiddenSymbolsCommand ()
+open class ShowHiddenSymbolsCommand ()
   extends StObject
      with typings.devexpressWeb.ShowHiddenSymbolsCommand {
   

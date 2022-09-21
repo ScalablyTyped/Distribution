@@ -8,15 +8,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object protocolCodeLensMod {
   
-  @JSImport("vscode-languageclient/lib/protocolCodeLens", JSImport.Default)
+  @JSImport("vscode-languageclient/lib/common/protocolCodeLens", JSImport.Default)
   @js.native
-  class default protected () extends ProtocolCodeLens {
+  open class default protected () extends ProtocolCodeLens {
     def this(range: Range) = this()
   }
   
   @js.native
   trait ProtocolCodeLens extends CodeLens {
     
-    var data: js.Any = js.native
+    var data: Any = js.native
   }
 }

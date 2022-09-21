@@ -9,7 +9,7 @@ trait GetSitesResponse extends StObject {
   /**
     * The token for the next page of results.
     */
-  var NextToken: js.UndefOr[String] = js.undefined
+  var NextToken: js.UndefOr[typings.awsSdk.networkmanagerMod.NextToken] = js.undefined
   
   /**
     * The sites.
@@ -25,7 +25,7 @@ object GetSitesResponse {
   
   extension [Self <: GetSitesResponse](x: Self) {
     
-    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
@@ -33,6 +33,6 @@ object GetSitesResponse {
     
     inline def setSitesUndefined: Self = StObject.set(x, "Sites", js.undefined)
     
-    inline def setSitesVarargs(value: Site*): Self = StObject.set(x, "Sites", js.Array(value :_*))
+    inline def setSitesVarargs(value: Site*): Self = StObject.set(x, "Sites", js.Array(value*))
   }
 }

@@ -34,7 +34,7 @@ trait ReplicationTaskAssessmentRun extends StObject {
   /**
     * Date on which the assessment run was created using the StartReplicationTaskAssessmentRun operation.
     */
-  var ReplicationTaskAssessmentRunCreationDate: js.UndefOr[TStamp] = js.undefined
+  var ReplicationTaskAssessmentRunCreationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Encryption mode used to encrypt the assessment run results.
@@ -42,22 +42,22 @@ trait ReplicationTaskAssessmentRun extends StObject {
   var ResultEncryptionMode: js.UndefOr[String] = js.undefined
   
   /**
-    * ARN of the AWS KMS encryption key used to encrypt the assessment run results.
+    * ARN of the KMS encryption key used to encrypt the assessment run results.
     */
   var ResultKmsKeyArn: js.UndefOr[String] = js.undefined
   
   /**
-    * Amazon S3 bucket where AWS DMS stores the results of this assessment run.
+    * Amazon S3 bucket where DMS stores the results of this assessment run.
     */
   var ResultLocationBucket: js.UndefOr[String] = js.undefined
   
   /**
-    * Folder in an Amazon S3 bucket where AWS DMS stores the results of this assessment run.
+    * Folder in an Amazon S3 bucket where DMS stores the results of this assessment run.
     */
   var ResultLocationFolder: js.UndefOr[String] = js.undefined
   
   /**
-    * ARN of the service role used to start the assessment run using the StartReplicationTaskAssessmentRun operation.
+    * ARN of the service role used to start the assessment run using the StartReplicationTaskAssessmentRun operation. The role must allow the iam:PassRole action.
     */
   var ServiceAccessRoleArn: js.UndefOr[String] = js.undefined
   
@@ -95,7 +95,7 @@ object ReplicationTaskAssessmentRun {
     
     inline def setReplicationTaskAssessmentRunArnUndefined: Self = StObject.set(x, "ReplicationTaskAssessmentRunArn", js.undefined)
     
-    inline def setReplicationTaskAssessmentRunCreationDate(value: TStamp): Self = StObject.set(x, "ReplicationTaskAssessmentRunCreationDate", value.asInstanceOf[js.Any])
+    inline def setReplicationTaskAssessmentRunCreationDate(value: js.Date): Self = StObject.set(x, "ReplicationTaskAssessmentRunCreationDate", value.asInstanceOf[js.Any])
     
     inline def setReplicationTaskAssessmentRunCreationDateUndefined: Self = StObject.set(x, "ReplicationTaskAssessmentRunCreationDate", js.undefined)
     

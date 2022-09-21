@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ViewerConfig
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var bubbleNode: js.UndefOr[BubbleNode] = js.undefined
   
-  var canvasConfig: js.UndefOr[js.Any] = js.undefined
+  var canvasConfig: js.UndefOr[Any] = js.undefined
   
   var consolidationMemoryLimit: js.UndefOr[Double] = js.undefined
   
@@ -22,7 +22,7 @@ trait ViewerConfig
   
   var disabledExtensions: js.UndefOr[Bimwalk] = js.undefined
   
-  var experimental: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var experimental: js.UndefOr[js.Array[Any]] = js.undefined
   
   var extensions: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -47,7 +47,7 @@ object ViewerConfig {
     
     inline def setBubbleNodeUndefined: Self = StObject.set(x, "bubbleNode", js.undefined)
     
-    inline def setCanvasConfig(value: js.Any): Self = StObject.set(x, "canvasConfig", value.asInstanceOf[js.Any])
+    inline def setCanvasConfig(value: Any): Self = StObject.set(x, "canvasConfig", value.asInstanceOf[js.Any])
     
     inline def setCanvasConfigUndefined: Self = StObject.set(x, "canvasConfig", js.undefined)
     
@@ -63,17 +63,17 @@ object ViewerConfig {
     
     inline def setDisabledExtensionsUndefined: Self = StObject.set(x, "disabledExtensions", js.undefined)
     
-    inline def setExperimental(value: js.Array[js.Any]): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
+    inline def setExperimental(value: js.Array[Any]): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
     
     inline def setExperimentalUndefined: Self = StObject.set(x, "experimental", js.undefined)
     
-    inline def setExperimentalVarargs(value: js.Any*): Self = StObject.set(x, "experimental", js.Array(value :_*))
+    inline def setExperimentalVarargs(value: Any*): Self = StObject.set(x, "experimental", js.Array(value*))
     
     inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
     inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
-    inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+    inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value*))
     
     inline def setSharedPropertyDbPath(value: String): Self = StObject.set(x, "sharedPropertyDbPath", value.asInstanceOf[js.Any])
     

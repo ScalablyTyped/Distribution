@@ -73,7 +73,7 @@ object columnGroupMod {
   
   @JSImport("rbx/grid/columns/column-group", "ColumnGroup")
   @js.native
-  val ColumnGroup: ForwardRefAsExoticComponent[typings.rbx.anon.ColumnGroupProps, ElementType[js.Any]] = js.native
+  val ColumnGroup: ForwardRefAsExoticComponent[typings.rbx.anon.ColumnGroupProps, ElementType[Any]] = js.native
   
   trait ColumnGroupBreakpointOptions extends StObject {
     

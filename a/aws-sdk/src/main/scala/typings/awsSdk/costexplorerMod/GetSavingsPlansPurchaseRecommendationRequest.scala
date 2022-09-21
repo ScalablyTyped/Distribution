@@ -12,12 +12,12 @@ trait GetSavingsPlansPurchaseRecommendationRequest extends StObject {
   var AccountScope: js.UndefOr[typings.awsSdk.costexplorerMod.AccountScope] = js.undefined
   
   /**
-    * You can filter your recommendations by Account ID with the LINKED_ACCOUNT dimension. To filter your recommendations by Account ID, specify Key as LINKED_ACCOUNT and Value as the comma-separated Acount ID(s) for which you want to see Savings Plans purchase recommendations. For GetSavingsPlansPurchaseRecommendation, the Filter does not include CostCategories or Tags. It only includes Dimensions. With Dimensions, Key must be LINKED_ACCOUNT and Value can be a single Account ID or multiple comma-separated Account IDs for which you want to see Savings Plans Purchase Recommendations. AND and OR operators are not supported.
+    * You can filter your recommendations by Account ID with the LINKED_ACCOUNT dimension. To filter your recommendations by Account ID, specify Key as LINKED_ACCOUNT and Value as the comma-separated Acount ID(s) that you want to see Savings Plans purchase recommendations for. For GetSavingsPlansPurchaseRecommendation, the Filter doesn't include CostCategories or Tags. It only includes Dimensions. With Dimensions, Key must be LINKED_ACCOUNT and Value can be a single Account ID or multiple comma-separated Account IDs that you want to see Savings Plans Purchase Recommendations for. AND and OR operators are not supported.
     */
   var Filter: js.UndefOr[Expression] = js.undefined
   
   /**
-    * The lookback period used to generate the recommendation.
+    * The lookback period that's used to generate the recommendation.
     */
   var LookbackPeriodInDays: typings.awsSdk.costexplorerMod.LookbackPeriodInDays
   
@@ -32,17 +32,17 @@ trait GetSavingsPlansPurchaseRecommendationRequest extends StObject {
   var PageSize: js.UndefOr[NonNegativeInteger] = js.undefined
   
   /**
-    * The payment option used to generate these recommendations.
+    * The payment option that's used to generate these recommendations.
     */
   var PaymentOption: typings.awsSdk.costexplorerMod.PaymentOption
   
   /**
-    * The Savings Plans recommendation type requested.
+    * The Savings Plans recommendation type that's requested.
     */
   var SavingsPlansType: SupportedSavingsPlansType
   
   /**
-    * The savings plan recommendation term used to generate these recommendations.
+    * The savings plan recommendation term that's used to generate these recommendations.
     */
   var TermInYears: typings.awsSdk.costexplorerMod.TermInYears
 }

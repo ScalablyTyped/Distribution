@@ -12,6 +12,9 @@ trait ClusterAutoscaling extends StObject {
   /** AutoprovisioningNodePoolDefaults contains defaults for a node pool created by NAP. */
   var autoprovisioningNodePoolDefaults: js.UndefOr[AutoprovisioningNodePoolDefaults] = js.undefined
   
+  /** Defines autoscaling behaviour. */
+  var autoscalingProfile: js.UndefOr[String] = js.undefined
+  
   /** Enables automatic node pool creation and deletion. */
   var enableNodeAutoprovisioning: js.UndefOr[Boolean] = js.undefined
   
@@ -31,11 +34,15 @@ object ClusterAutoscaling {
     
     inline def setAutoprovisioningLocationsUndefined: Self = StObject.set(x, "autoprovisioningLocations", js.undefined)
     
-    inline def setAutoprovisioningLocationsVarargs(value: String*): Self = StObject.set(x, "autoprovisioningLocations", js.Array(value :_*))
+    inline def setAutoprovisioningLocationsVarargs(value: String*): Self = StObject.set(x, "autoprovisioningLocations", js.Array(value*))
     
     inline def setAutoprovisioningNodePoolDefaults(value: AutoprovisioningNodePoolDefaults): Self = StObject.set(x, "autoprovisioningNodePoolDefaults", value.asInstanceOf[js.Any])
     
     inline def setAutoprovisioningNodePoolDefaultsUndefined: Self = StObject.set(x, "autoprovisioningNodePoolDefaults", js.undefined)
+    
+    inline def setAutoscalingProfile(value: String): Self = StObject.set(x, "autoscalingProfile", value.asInstanceOf[js.Any])
+    
+    inline def setAutoscalingProfileUndefined: Self = StObject.set(x, "autoscalingProfile", js.undefined)
     
     inline def setEnableNodeAutoprovisioning(value: Boolean): Self = StObject.set(x, "enableNodeAutoprovisioning", value.asInstanceOf[js.Any])
     
@@ -45,6 +52,6 @@ object ClusterAutoscaling {
     
     inline def setResourceLimitsUndefined: Self = StObject.set(x, "resourceLimits", js.undefined)
     
-    inline def setResourceLimitsVarargs(value: ResourceLimit*): Self = StObject.set(x, "resourceLimits", js.Array(value :_*))
+    inline def setResourceLimitsVarargs(value: ResourceLimit*): Self = StObject.set(x, "resourceLimits", js.Array(value*))
   }
 }

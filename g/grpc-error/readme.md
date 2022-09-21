@@ -10,10 +10,10 @@ Utility Error class suitable for gRPC error responses
 | ------------------ | :-------------: |
 | Full name          | grpc-error |
 | Keywords           | protocol buffer, protobuf, grpc |
-| # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 17328 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 14946.0 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/bojand/grpc-error)

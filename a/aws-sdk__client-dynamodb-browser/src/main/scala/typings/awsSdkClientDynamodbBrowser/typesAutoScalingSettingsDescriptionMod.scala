@@ -2,7 +2,6 @@ package typings.awsSdkClientDynamodbBrowser
 
 import typings.awsSdkClientDynamodbBrowser.typesAutoScalingPolicyDescriptionMod.AutoScalingPolicyDescription
 import typings.awsSdkClientDynamodbBrowser.typesAutoScalingPolicyDescriptionMod.UnmarshalledAutoScalingPolicyDescription
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,7 +33,9 @@ object typesAutoScalingSettingsDescriptionMod {
     /**
       * <p>Information about the scaling policies.</p>
       */
-    var ScalingPolicies: js.UndefOr[js.Array[AutoScalingPolicyDescription] | Iterable[AutoScalingPolicyDescription]] = js.undefined
+    var ScalingPolicies: js.UndefOr[
+        js.Array[AutoScalingPolicyDescription] | js.Iterable[AutoScalingPolicyDescription]
+      ] = js.undefined
   }
   object AutoScalingSettingsDescription {
     
@@ -61,11 +62,11 @@ object typesAutoScalingSettingsDescriptionMod {
       
       inline def setMinimumUnitsUndefined: Self = StObject.set(x, "MinimumUnits", js.undefined)
       
-      inline def setScalingPolicies(value: js.Array[AutoScalingPolicyDescription] | Iterable[AutoScalingPolicyDescription]): Self = StObject.set(x, "ScalingPolicies", value.asInstanceOf[js.Any])
+      inline def setScalingPolicies(value: js.Array[AutoScalingPolicyDescription] | js.Iterable[AutoScalingPolicyDescription]): Self = StObject.set(x, "ScalingPolicies", value.asInstanceOf[js.Any])
       
       inline def setScalingPoliciesUndefined: Self = StObject.set(x, "ScalingPolicies", js.undefined)
       
-      inline def setScalingPoliciesVarargs(value: AutoScalingPolicyDescription*): Self = StObject.set(x, "ScalingPolicies", js.Array(value :_*))
+      inline def setScalingPoliciesVarargs(value: AutoScalingPolicyDescription*): Self = StObject.set(x, "ScalingPolicies", js.Array(value*))
     }
   }
   
@@ -92,7 +93,7 @@ object typesAutoScalingSettingsDescriptionMod {
       
       inline def setScalingPoliciesUndefined: Self = StObject.set(x, "ScalingPolicies", js.undefined)
       
-      inline def setScalingPoliciesVarargs(value: UnmarshalledAutoScalingPolicyDescription*): Self = StObject.set(x, "ScalingPolicies", js.Array(value :_*))
+      inline def setScalingPoliciesVarargs(value: UnmarshalledAutoScalingPolicyDescription*): Self = StObject.set(x, "ScalingPolicies", js.Array(value*))
     }
   }
 }

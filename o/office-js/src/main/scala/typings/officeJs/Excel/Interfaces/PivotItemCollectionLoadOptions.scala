@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a collection of all the PivotItems related to their parent PivotField.
   *
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
 trait PivotItemCollectionLoadOptions extends StObject {
@@ -19,33 +19,33 @@ trait PivotItemCollectionLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * For EACH ITEM in the collection: ID of the PivotItem.
     *
-    * For EACH ITEM in the collection: Id of the PivotItem.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var id: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Determines whether the item is expanded to show child items or if it's collapsed and child items are hidden.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var isExpanded: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Name of the PivotItem.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var name: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Specifies if the PivotItem is visible.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var visible: js.UndefOr[Boolean] = js.undefined

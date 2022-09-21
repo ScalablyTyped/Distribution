@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "json-rpc-engine" : "6.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "json-rpc-engine" : "6.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

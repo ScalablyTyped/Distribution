@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WorksheetCustomPropertyData extends StObject {
   
   /**
+    * Gets the key of the custom property. Custom property keys are case-insensitive. The key is limited to 255 characters (larger values will cause an `InvalidArgument` error to be thrown.)
     *
-    * Gets the key of the custom property. Custom property keys are case-insensitive. The key is limited to 255 characters (larger values will cause an "InvalidArgument" error to be thrown.)
-    *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var key: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Gets or sets the value of the custom property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.12]
     */
   var value: js.UndefOr[String] = js.undefined

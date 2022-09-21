@@ -4,37 +4,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ValidationResult extends StObject {
-  
-  var error: js.UndefOr[ValidationError] = js.undefined
-  
-  var errors: js.UndefOr[ValidationError] = js.undefined
-  
-  var value: js.Any
-  
-  var warning: js.UndefOr[ValidationError] = js.undefined
-}
+/* Rewritten from type alias, can be one of: 
+  - typings.joi.anon.Error[TSchema]
+  - typings.joi.anon.Value
+*/
+trait ValidationResult[TSchema] extends StObject
 object ValidationResult {
   
-  inline def apply(value: js.Any): ValidationResult = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ValidationResult]
+  inline def Error[TSchema](error: Unit, value: TSchema): typings.joi.anon.Error[TSchema] = {
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.joi.anon.Error[TSchema]]
   }
   
-  extension [Self <: ValidationResult](x: Self) {
-    
-    inline def setError(value: ValidationError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
-    
-    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
-    
-    inline def setErrors(value: ValidationError): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
-    
-    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
-    
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-    
-    inline def setWarning(value: ValidationError): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
-    
-    inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+  inline def Value(error: ValidationError, value: Unit): typings.joi.anon.Value = {
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.joi.anon.Value]
   }
 }

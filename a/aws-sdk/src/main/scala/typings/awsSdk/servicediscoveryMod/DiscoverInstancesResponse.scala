@@ -24,6 +24,6 @@ object DiscoverInstancesResponse {
     
     inline def setInstancesUndefined: Self = StObject.set(x, "Instances", js.undefined)
     
-    inline def setInstancesVarargs(value: HttpInstanceSummary*): Self = StObject.set(x, "Instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: HttpInstanceSummary*): Self = StObject.set(x, "Instances", js.Array(value*))
   }
 }

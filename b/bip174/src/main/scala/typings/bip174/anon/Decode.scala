@@ -1,30 +1,30 @@
 package typings.bip174.anon
 
 import typings.bip174.interfacesMod.KeyValue
-import typings.bip174.interfacesMod.WitnessScript
+import typings.bip174.interfacesMod.RedeemScript
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Decode extends StObject {
   
-  def canAdd(currentData: js.Any, newData: js.Any): Boolean
+  def canAdd(currentData: Any, newData: Any): Boolean
   
-  def check(data: js.Any): /* is bip174.bip174/src/lib/interfaces.WitnessScript */ Boolean
+  def check(data: Any): /* is bip174.bip174/src/lib/interfaces.RedeemScript */ Boolean
   
-  def decode(keyVal: KeyValue): WitnessScript
+  def decode(keyVal: KeyValue): RedeemScript
   
-  def encode(data: WitnessScript): KeyValue
+  def encode(data: RedeemScript): KeyValue
   
   var expected: String
 }
 object Decode {
   
   inline def apply(
-    canAdd: (js.Any, js.Any) => Boolean,
-    check: js.Any => /* is bip174.bip174/src/lib/interfaces.WitnessScript */ Boolean,
-    decode: KeyValue => WitnessScript,
-    encode: WitnessScript => KeyValue,
+    canAdd: (Any, Any) => Boolean,
+    check: Any => /* is bip174.bip174/src/lib/interfaces.RedeemScript */ Boolean,
+    decode: KeyValue => RedeemScript,
+    encode: RedeemScript => KeyValue,
     expected: String
   ): Decode = {
     val __obj = js.Dynamic.literal(canAdd = js.Any.fromFunction2(canAdd), check = js.Any.fromFunction1(check), decode = js.Any.fromFunction1(decode), encode = js.Any.fromFunction1(encode), expected = expected.asInstanceOf[js.Any])
@@ -33,13 +33,13 @@ object Decode {
   
   extension [Self <: Decode](x: Self) {
     
-    inline def setCanAdd(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "canAdd", js.Any.fromFunction2(value))
+    inline def setCanAdd(value: (Any, Any) => Boolean): Self = StObject.set(x, "canAdd", js.Any.fromFunction2(value))
     
-    inline def setCheck(value: js.Any => /* is bip174.bip174/src/lib/interfaces.WitnessScript */ Boolean): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
+    inline def setCheck(value: Any => /* is bip174.bip174/src/lib/interfaces.RedeemScript */ Boolean): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
     
-    inline def setDecode(value: KeyValue => WitnessScript): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
+    inline def setDecode(value: KeyValue => RedeemScript): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
     
-    inline def setEncode(value: WitnessScript => KeyValue): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
+    inline def setEncode(value: RedeemScript => KeyValue): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
     
     inline def setExpected(value: String): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
   }

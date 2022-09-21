@@ -31,6 +31,6 @@ object ListVirtualGatewaysOutput {
     
     inline def setVirtualGateways(value: VirtualGatewayList): Self = StObject.set(x, "virtualGateways", value.asInstanceOf[js.Any])
     
-    inline def setVirtualGatewaysVarargs(value: VirtualGatewayRef*): Self = StObject.set(x, "virtualGateways", js.Array(value :_*))
+    inline def setVirtualGatewaysVarargs(value: VirtualGatewayRef*): Self = StObject.set(x, "virtualGateways", js.Array(value*))
   }
 }

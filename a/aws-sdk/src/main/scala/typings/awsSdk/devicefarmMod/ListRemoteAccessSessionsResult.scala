@@ -33,6 +33,6 @@ object ListRemoteAccessSessionsResult {
     
     inline def setRemoteAccessSessionsUndefined: Self = StObject.set(x, "remoteAccessSessions", js.undefined)
     
-    inline def setRemoteAccessSessionsVarargs(value: RemoteAccessSession*): Self = StObject.set(x, "remoteAccessSessions", js.Array(value :_*))
+    inline def setRemoteAccessSessionsVarargs(value: RemoteAccessSession*): Self = StObject.set(x, "remoteAccessSessions", js.Array(value*))
   }
 }

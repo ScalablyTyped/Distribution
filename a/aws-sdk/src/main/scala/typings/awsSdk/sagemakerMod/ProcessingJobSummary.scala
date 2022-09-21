@@ -9,7 +9,7 @@ trait ProcessingJobSummary extends StObject {
   /**
     * The time at which the processing job was created.
     */
-  var CreationTime: Timestamp
+  var CreationTime: js.Date
   
   /**
     * An optional string, up to one KB in size, that contains metadata from the processing container when the processing job exits.
@@ -24,12 +24,12 @@ trait ProcessingJobSummary extends StObject {
   /**
     * A timestamp that indicates the last time the processing job was modified.
     */
-  var LastModifiedTime: js.UndefOr[Timestamp] = js.undefined
+  var LastModifiedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The time at which the processing job completed.
     */
-  var ProcessingEndTime: js.UndefOr[Timestamp] = js.undefined
+  var ProcessingEndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the processing job..
@@ -49,7 +49,7 @@ trait ProcessingJobSummary extends StObject {
 object ProcessingJobSummary {
   
   inline def apply(
-    CreationTime: Timestamp,
+    CreationTime: js.Date,
     ProcessingJobArn: ProcessingJobArn,
     ProcessingJobName: ProcessingJobName,
     ProcessingJobStatus: ProcessingJobStatus
@@ -60,7 +60,7 @@ object ProcessingJobSummary {
   
   extension [Self <: ProcessingJobSummary](x: Self) {
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setExitMessage(value: ExitMessage): Self = StObject.set(x, "ExitMessage", value.asInstanceOf[js.Any])
     
@@ -70,11 +70,11 @@ object ProcessingJobSummary {
     
     inline def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
     
-    inline def setLastModifiedTime(value: Timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
     
-    inline def setProcessingEndTime(value: Timestamp): Self = StObject.set(x, "ProcessingEndTime", value.asInstanceOf[js.Any])
+    inline def setProcessingEndTime(value: js.Date): Self = StObject.set(x, "ProcessingEndTime", value.asInstanceOf[js.Any])
     
     inline def setProcessingEndTimeUndefined: Self = StObject.set(x, "ProcessingEndTime", js.undefined)
     

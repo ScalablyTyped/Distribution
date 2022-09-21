@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.ChartData")
 @js.native
-/* private */ class ChartData ()
+/* private */ open class ChartData ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.ChartData {
   
@@ -24,5 +24,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var PowerPointDotChartData_typekey: typings.activexPowerpoint.PowerPoint.ChartData = js.native
   
   /* CompleteClass */
-  override val Workbook: js.Any = js.native
+  override val Workbook: Any = js.native
 }

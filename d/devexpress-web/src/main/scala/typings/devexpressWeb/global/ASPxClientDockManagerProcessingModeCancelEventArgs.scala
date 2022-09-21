@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientDockManagerProcessingModeCancelEventArgs")
 @js.native
-class ASPxClientDockManagerProcessingModeCancelEventArgs protected ()
+open class ASPxClientDockManagerProcessingModeCancelEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientDockManagerProcessingModeCancelEventArgs {
   /**

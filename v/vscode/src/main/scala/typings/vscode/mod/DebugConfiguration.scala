@@ -10,7 +10,7 @@ trait DebugConfiguration
      with /**
   * Additional debug type specific properties.
   */
-/* key */ StringDictionary[js.Any] {
+/* key */ StringDictionary[Any] {
   
   /**
     * The name of the debug session.

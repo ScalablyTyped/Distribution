@@ -7,50 +7,52 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DatabaseInstance extends StObject {
   
+  /** List all maintenance versions applicable on the instance */
+  var availableMaintenanceVersions: js.UndefOr[js.Array[String]] = js.undefined
+  
   /**
-    * *SECOND_GEN*: Cloud SQL database instance. *EXTERNAL*: A database server that is not managed by Google. This property is read-only; use the *tier* property in the *settings* object
-    * to determine the database type.
+    * The backend type. `SECOND_GEN`: Cloud SQL database instance. `EXTERNAL`: A database server that is not managed by Google. This property is read-only; use the `tier` property in the
+    * `settings` object to determine the database type.
     */
   var backendType: js.UndefOr[String] = js.undefined
   
   /** Connection name of the Cloud SQL instance used in connection strings. */
   var connectionName: js.UndefOr[String] = js.undefined
   
+  /** Output only. The time when the instance was created in [RFC 3339](https://tools.ietf.org/html/rfc3339) format, for example `2012-11-15T16:19:00.094Z`. */
+  var createTime: js.UndefOr[String] = js.undefined
+  
   /**
     * The current disk usage of the instance in bytes. This property has been deprecated. Use the "cloudsql.googleapis.com/database/disk/bytes_used" metric in Cloud Monitoring API
-    * instead. Please see this announcement for details.
+    * instead. Please see [this announcement](https://groups.google.com/d/msg/google-cloud-sql-announce/I_7-F9EBhT0/BtvFtdFeAgAJ) for details.
     */
   var currentDiskSize: js.UndefOr[String] = js.undefined
   
-  /**
-    * The database engine type and version. The *databaseVersion* field cannot be changed after instance creation. MySQL instances: *MYSQL_8_0*, *MYSQL_5_7* (default), or *MYSQL_5_6*.
-    * PostgreSQL instances: *POSTGRES_9_6*, *POSTGRES_10*, *POSTGRES_11* or *POSTGRES_12* (default). SQL Server instances: *SQLSERVER_2017_STANDARD* (default),
-    * *SQLSERVER_2017_ENTERPRISE*, *SQLSERVER_2017_EXPRESS*, or *SQLSERVER_2017_WEB*.
-    */
+  /** Output only. Stores the current database version running on the instance including minor version such as `MYSQL_8_0_18`. */
+  var databaseInstalledVersion: js.UndefOr[String] = js.undefined
+  
+  /** The database engine type and version. The `databaseVersion` field cannot be changed after instance creation. */
   var databaseVersion: js.UndefOr[String] = js.undefined
   
-  /** Disk encryption configuration specific to an instance. Applies only to Second Generation instances. */
+  /** Disk encryption configuration specific to an instance. */
   var diskEncryptionConfiguration: js.UndefOr[DiskEncryptionConfiguration] = js.undefined
   
-  /** Disk encryption status specific to an instance. Applies only to Second Generation instances. */
+  /** Disk encryption status specific to an instance. */
   var diskEncryptionStatus: js.UndefOr[DiskEncryptionStatus] = js.undefined
   
-  /** This field is deprecated and will be removed from a future version of the API. Use the *settings.settingsVersion* field instead. */
+  /** This field is deprecated and will be removed from a future version of the API. Use the `settings.settingsVersion` field instead. */
   var etag: js.UndefOr[String] = js.undefined
   
-  /** The name and status of the failover replica. This property is applicable only to Second Generation instances. */
+  /** The name and status of the failover replica. */
   var failoverReplica: js.UndefOr[Available] = js.undefined
   
   /**
     * The Compute Engine zone that the instance is currently serving from. This value could be different from the zone that was specified when the instance was created if the instance has
-    * failed over to its secondary zone.
+    * failed over to its secondary zone. WARNING: Changing this might restart the instance.
     */
   var gceZone: js.UndefOr[String] = js.undefined
   
-  /**
-    * The instance type. This can be one of the following. *CLOUD_SQL_INSTANCE*: A Cloud SQL instance that is not replicating from a primary instance. *ON_PREMISES_INSTANCE*: An instance
-    * running on the customer's premises. *READ_REPLICA_INSTANCE*: A Cloud SQL instance configured as a read-replica.
-    */
+  /** The instance type. */
   var instanceType: js.UndefOr[String] = js.undefined
   
   /** The assigned IP addresses for the instance. */
@@ -59,8 +61,11 @@ trait DatabaseInstance extends StObject {
   /** The IPv6 address assigned to the instance. (Deprecated) This property was applicable only to First Generation instances. */
   var ipv6Address: js.UndefOr[String] = js.undefined
   
-  /** This is always *sql#instance*. */
+  /** This is always `sql#instance`. */
   var kind: js.UndefOr[String] = js.undefined
+  
+  /** The current software version on the instance. */
+  var maintenanceVersion: js.UndefOr[String] = js.undefined
   
   /** The name of the instance which will act as primary in the replication setup. */
   var masterInstanceName: js.UndefOr[String] = js.undefined
@@ -74,12 +79,18 @@ trait DatabaseInstance extends StObject {
   /** Configuration specific to on-premises instances. */
   var onPremisesConfiguration: js.UndefOr[OnPremisesConfiguration] = js.undefined
   
+  /**
+    * This field represents the report generated by the proactive database wellness job for OutOfDisk issues. * Writers: * the proactive database wellness job for OOD. * Readers: * the
+    * proactive database wellness job
+    */
+  var outOfDiskReport: js.UndefOr[SqlOutOfDiskReport] = js.undefined
+  
   /** The project ID of the project containing the Cloud SQL instance. The Google apps domain is prefixed if applicable. */
   var project: js.UndefOr[String] = js.undefined
   
   /**
-    * The geographical region. Can be *us-central* (*FIRST_GEN* instances only) *us-central1* (*SECOND_GEN* instances only) *asia-east1* or *europe-west1*. Defaults to *us-central* or
-    * *us-central1* depending on the instance type. The region cannot be changed after instance creation.
+    * The geographical region. Can be: * `us-central` (`FIRST_GEN` instances only) * `us-central1` (`SECOND_GEN` instances only) * `asia-east1` or `europe-west1`. Defaults to `us-central`
+    * or `us-central1` depending on the instance type. The region cannot be changed after instance creation.
     */
   var region: js.UndefOr[String] = js.undefined
   
@@ -89,10 +100,10 @@ trait DatabaseInstance extends StObject {
   /** The replicas of the instance. */
   var replicaNames: js.UndefOr[js.Array[String]] = js.undefined
   
-  /** Initial root password. Use only on creation. */
+  /** Initial root password. Use only on creation. You must set root passwords before you can connect to PostgreSQL instances. */
   var rootPassword: js.UndefOr[String] = js.undefined
   
-  /** The status indicating if instance satisfies physical zone separation. Reserved for future use. */
+  /** The status indicating if instance satisfiesPzs. Reserved for future use. */
   var satisfiesPzs: js.UndefOr[Boolean] = js.undefined
   
   /** The start time of any upcoming scheduled maintenance for this instance. */
@@ -100,7 +111,7 @@ trait DatabaseInstance extends StObject {
   
   /**
     * The Compute Engine zone that the failover instance is currently serving from for a regional instance. This value could be different from the zone that was specified when the
-    * instance was created if the instance has failed over to its secondary/failover zone. Reserved for future use.
+    * instance was created if the instance has failed over to its secondary/failover zone.
     */
   var secondaryGceZone: js.UndefOr[String] = js.undefined
   
@@ -110,18 +121,13 @@ trait DatabaseInstance extends StObject {
   /** SSL configuration. */
   var serverCaCert: js.UndefOr[SslCert] = js.undefined
   
-  /** The service account email address assigned to the instance. This property is applicable only to Second Generation instances. */
+  /** The service account email address assigned to the instance.\This property is read-only. */
   var serviceAccountEmailAddress: js.UndefOr[String] = js.undefined
   
   /** The user settings. */
   var settings: js.UndefOr[Settings] = js.undefined
   
-  /**
-    * The current serving state of the Cloud SQL instance. This can be one of the following. *SQL_INSTANCE_STATE_UNSPECIFIED*: The state of the instance is unknown. *RUNNABLE*: The
-    * instance has been stopped by owner. It is not currently running, but it's ready to be restarted. *SUSPENDED*: The instance is not available, for example due to problems with
-    * billing. for example due to problems with billing. *PENDING_DELETE*: The instance is being deleted. *PENDING_CREATE*: The instance is being created. *MAINTENANCE*: The instance is
-    * down for maintenance. *FAILED*: The instance creation failed.
-    */
+  /** The current serving state of the Cloud SQL instance. */
   var state: js.UndefOr[String] = js.undefined
   
   /** If the instance state is SUSPENDED, the reason for the suspension. */
@@ -136,6 +142,12 @@ object DatabaseInstance {
   
   extension [Self <: DatabaseInstance](x: Self) {
     
+    inline def setAvailableMaintenanceVersions(value: js.Array[String]): Self = StObject.set(x, "availableMaintenanceVersions", value.asInstanceOf[js.Any])
+    
+    inline def setAvailableMaintenanceVersionsUndefined: Self = StObject.set(x, "availableMaintenanceVersions", js.undefined)
+    
+    inline def setAvailableMaintenanceVersionsVarargs(value: String*): Self = StObject.set(x, "availableMaintenanceVersions", js.Array(value*))
+    
     inline def setBackendType(value: String): Self = StObject.set(x, "backendType", value.asInstanceOf[js.Any])
     
     inline def setBackendTypeUndefined: Self = StObject.set(x, "backendType", js.undefined)
@@ -144,9 +156,17 @@ object DatabaseInstance {
     
     inline def setConnectionNameUndefined: Self = StObject.set(x, "connectionName", js.undefined)
     
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    
     inline def setCurrentDiskSize(value: String): Self = StObject.set(x, "currentDiskSize", value.asInstanceOf[js.Any])
     
     inline def setCurrentDiskSizeUndefined: Self = StObject.set(x, "currentDiskSize", js.undefined)
+    
+    inline def setDatabaseInstalledVersion(value: String): Self = StObject.set(x, "databaseInstalledVersion", value.asInstanceOf[js.Any])
+    
+    inline def setDatabaseInstalledVersionUndefined: Self = StObject.set(x, "databaseInstalledVersion", js.undefined)
     
     inline def setDatabaseVersion(value: String): Self = StObject.set(x, "databaseVersion", value.asInstanceOf[js.Any])
     
@@ -180,7 +200,7 @@ object DatabaseInstance {
     
     inline def setIpAddressesUndefined: Self = StObject.set(x, "ipAddresses", js.undefined)
     
-    inline def setIpAddressesVarargs(value: IpMapping*): Self = StObject.set(x, "ipAddresses", js.Array(value :_*))
+    inline def setIpAddressesVarargs(value: IpMapping*): Self = StObject.set(x, "ipAddresses", js.Array(value*))
     
     inline def setIpv6Address(value: String): Self = StObject.set(x, "ipv6Address", value.asInstanceOf[js.Any])
     
@@ -189,6 +209,10 @@ object DatabaseInstance {
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    
+    inline def setMaintenanceVersion(value: String): Self = StObject.set(x, "maintenanceVersion", value.asInstanceOf[js.Any])
+    
+    inline def setMaintenanceVersionUndefined: Self = StObject.set(x, "maintenanceVersion", js.undefined)
     
     inline def setMasterInstanceName(value: String): Self = StObject.set(x, "masterInstanceName", value.asInstanceOf[js.Any])
     
@@ -206,6 +230,10 @@ object DatabaseInstance {
     
     inline def setOnPremisesConfigurationUndefined: Self = StObject.set(x, "onPremisesConfiguration", js.undefined)
     
+    inline def setOutOfDiskReport(value: SqlOutOfDiskReport): Self = StObject.set(x, "outOfDiskReport", value.asInstanceOf[js.Any])
+    
+    inline def setOutOfDiskReportUndefined: Self = StObject.set(x, "outOfDiskReport", js.undefined)
+    
     inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
     inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
@@ -222,7 +250,7 @@ object DatabaseInstance {
     
     inline def setReplicaNamesUndefined: Self = StObject.set(x, "replicaNames", js.undefined)
     
-    inline def setReplicaNamesVarargs(value: String*): Self = StObject.set(x, "replicaNames", js.Array(value :_*))
+    inline def setReplicaNamesVarargs(value: String*): Self = StObject.set(x, "replicaNames", js.Array(value*))
     
     inline def setRootPassword(value: String): Self = StObject.set(x, "rootPassword", value.asInstanceOf[js.Any])
     
@@ -264,6 +292,6 @@ object DatabaseInstance {
     
     inline def setSuspensionReasonUndefined: Self = StObject.set(x, "suspensionReason", js.undefined)
     
-    inline def setSuspensionReasonVarargs(value: String*): Self = StObject.set(x, "suspensionReason", js.Array(value :_*))
+    inline def setSuspensionReasonVarargs(value: String*): Self = StObject.set(x, "suspensionReason", js.Array(value*))
   }
 }

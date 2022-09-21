@@ -29,6 +29,6 @@ object DeleteLoadBalancerListenerInput {
     
     inline def setLoadBalancerPorts(value: Ports): Self = StObject.set(x, "LoadBalancerPorts", value.asInstanceOf[js.Any])
     
-    inline def setLoadBalancerPortsVarargs(value: AccessPointPort*): Self = StObject.set(x, "LoadBalancerPorts", js.Array(value :_*))
+    inline def setLoadBalancerPortsVarargs(value: AccessPointPort*): Self = StObject.set(x, "LoadBalancerPorts", js.Array(value*))
   }
 }

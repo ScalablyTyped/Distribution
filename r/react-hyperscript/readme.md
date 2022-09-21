@@ -11,9 +11,9 @@ Hyperscript syntax for React.js markup
 | Full name          | react-hyperscript |
 | Keywords           | react, react.js, hyperscript, markup, dom |
 | # releases         | 0 |
-| # dependents       | 30 |
-| # downloads        | 68732 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 3545.3333333333335 |
+| # stars            | 680.0 |
 
 ## Links
 - [Homepage](https://github.com/mlmorg/react-hyperscript)

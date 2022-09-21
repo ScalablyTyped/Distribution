@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AssociateDRTLogBucketRequest extends StObject {
   
   /**
-    * The Amazon S3 bucket that contains your AWS WAF logs.
+    * The Amazon S3 bucket that contains the logs that you want to share.
     */
   var LogBucket: typings.awsSdk.shieldMod.LogBucket
 }

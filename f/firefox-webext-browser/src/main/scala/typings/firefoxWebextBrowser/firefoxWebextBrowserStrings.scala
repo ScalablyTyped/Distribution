@@ -4,15 +4,17 @@ import typings.firefoxWebextBrowser.browser.`extension`.ViewType
 import typings.firefoxWebextBrowser.browser.activityLog.OnExtensionActivityDetailsType
 import typings.firefoxWebextBrowser.browser.activityLog.OnExtensionActivityDetailsViewType
 import typings.firefoxWebextBrowser.browser.bookmarks.BookmarkTreeNodeType
+import typings.firefoxWebextBrowser.browser.browserSettings.ColorManagementMode
 import typings.firefoxWebextBrowser.browser.browserSettings.ContextMenuMouseEvent
 import typings.firefoxWebextBrowser.browser.browserSettings.ImageAnimationBehavior
 import typings.firefoxWebextBrowser.browser.captivePortal.OnConnectivityAvailableStatus
 import typings.firefoxWebextBrowser.browser.captivePortal.OnStateChangedDetailsState
 import typings.firefoxWebextBrowser.browser.clipboard.SetImageDataImageType
-import typings.firefoxWebextBrowser.browser.contextMenus.ContextType
+import typings.firefoxWebextBrowser.browser.contextMenus.CreateCreatePropertiesCommand
 import typings.firefoxWebextBrowser.browser.contextMenus.ItemType
 import typings.firefoxWebextBrowser.browser.contextMenus.OnClickDataModifiers
 import typings.firefoxWebextBrowser.browser.contextMenus.OverrideContextContextOptionsContext
+import typings.firefoxWebextBrowser.browser.contextMenus._ContextType
 import typings.firefoxWebextBrowser.browser.cookies.OnChangedCause
 import typings.firefoxWebextBrowser.browser.cookies.SameSiteStatus
 import typings.firefoxWebextBrowser.browser.dns._ResolveFlags
@@ -31,10 +33,10 @@ import typings.firefoxWebextBrowser.browser.idle.IdleState
 import typings.firefoxWebextBrowser.browser.management.ExtensionDisabledReason
 import typings.firefoxWebextBrowser.browser.management.ExtensionInstallType
 import typings.firefoxWebextBrowser.browser.management.ExtensionType
+import typings.firefoxWebextBrowser.browser.manifest.ActionManifestDefaultArea
 import typings.firefoxWebextBrowser.browser.manifest.ProtocolHandlerProtocol
 import typings.firefoxWebextBrowser.browser.manifest.ThemeTypeAdditionalBackgroundsAlignment
 import typings.firefoxWebextBrowser.browser.manifest.ThemeTypeAdditionalBackgroundsTiling
-import typings.firefoxWebextBrowser.browser.manifest.WebExtensionManifestBrowserActionDefaultArea
 import typings.firefoxWebextBrowser.browser.manifest.WebExtensionManifestChromeSettingsOverridesSearchProviderParamsCondition
 import typings.firefoxWebextBrowser.browser.manifest.WebExtensionManifestChromeSettingsOverridesSearchProviderParamsPurpose
 import typings.firefoxWebextBrowser.browser.manifest.WebExtensionManifestIncognito
@@ -47,6 +49,7 @@ import typings.firefoxWebextBrowser.browser.notifications.PermissionLevel
 import typings.firefoxWebextBrowser.browser.notifications.TemplateType
 import typings.firefoxWebextBrowser.browser.omnibox.DescriptionStyleType
 import typings.firefoxWebextBrowser.browser.omnibox.OnInputEnteredDisposition
+import typings.firefoxWebextBrowser.browser.privacy.network.HTTPSOnlyModeOption
 import typings.firefoxWebextBrowser.browser.privacy.network.IPHandlingPolicy
 import typings.firefoxWebextBrowser.browser.privacy.network.TlsVersionRestrictionConfigMaximum
 import typings.firefoxWebextBrowser.browser.privacy.network.TlsVersionRestrictionConfigMinimum
@@ -100,29 +103,12 @@ object firefoxWebextBrowserStrings {
   inline def default: default = "default".asInstanceOf[default]
   
   @js.native
-  sealed trait `2g`
-    extends StObject
-       with NetworkLinkInfoType
-  inline def `2g`: `2g` = "2g".asInstanceOf[`2g`]
-  
-  @js.native
-  sealed trait `3g`
-    extends StObject
-       with NetworkLinkInfoType
-  inline def `3g`: `3g` = "3g".asInstanceOf[`3g`]
-  
-  @js.native
-  sealed trait `4g`
-    extends StObject
-       with NetworkLinkInfoType
-  inline def `4g`: `4g` = "4g".asInstanceOf[`4g`]
-  
-  @js.native
   sealed trait Alt
     extends StObject
        with OnClickDataModifiers
        with typings.firefoxWebextBrowser.browser.menus.OnClickDataModifiers
        with typings.firefoxWebextBrowser.browser.pageAction.OnClickDataModifiers
+       with typings.firefoxWebextBrowser.browser.action.OnClickDataModifiers
        with typings.firefoxWebextBrowser.browser.browserAction.OnClickDataModifiers
   inline def Alt: Alt = "Alt".asInstanceOf[Alt]
   
@@ -144,6 +130,7 @@ object firefoxWebextBrowserStrings {
        with OnClickDataModifiers
        with typings.firefoxWebextBrowser.browser.menus.OnClickDataModifiers
        with typings.firefoxWebextBrowser.browser.pageAction.OnClickDataModifiers
+       with typings.firefoxWebextBrowser.browser.action.OnClickDataModifiers
        with typings.firefoxWebextBrowser.browser.browserAction.OnClickDataModifiers
   inline def Command: Command = "Command".asInstanceOf[Command]
   
@@ -153,6 +140,7 @@ object firefoxWebextBrowserStrings {
        with OnClickDataModifiers
        with typings.firefoxWebextBrowser.browser.menus.OnClickDataModifiers
        with typings.firefoxWebextBrowser.browser.pageAction.OnClickDataModifiers
+       with typings.firefoxWebextBrowser.browser.action.OnClickDataModifiers
        with typings.firefoxWebextBrowser.browser.browserAction.OnClickDataModifiers
   inline def Ctrl: Ctrl = "Ctrl".asInstanceOf[Ctrl]
   
@@ -232,6 +220,7 @@ object firefoxWebextBrowserStrings {
        with OnClickDataModifiers
        with typings.firefoxWebextBrowser.browser.menus.OnClickDataModifiers
        with typings.firefoxWebextBrowser.browser.pageAction.OnClickDataModifiers
+       with typings.firefoxWebextBrowser.browser.action.OnClickDataModifiers
        with typings.firefoxWebextBrowser.browser.browserAction.OnClickDataModifiers
   inline def MacCtrl: MacCtrl = "MacCtrl".asInstanceOf[MacCtrl]
   
@@ -319,6 +308,7 @@ object firefoxWebextBrowserStrings {
        with OnClickDataModifiers
        with typings.firefoxWebextBrowser.browser.menus.OnClickDataModifiers
        with typings.firefoxWebextBrowser.browser.pageAction.OnClickDataModifiers
+       with typings.firefoxWebextBrowser.browser.action.OnClickDataModifiers
        with typings.firefoxWebextBrowser.browser.browserAction.OnClickDataModifiers
   inline def Shift: Shift = "Shift".asInstanceOf[Shift]
   
@@ -377,6 +367,40 @@ object firefoxWebextBrowserStrings {
   inline def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
+  sealed trait _execute_action
+    extends StObject
+       with CreateCreatePropertiesCommand
+       with typings.firefoxWebextBrowser.browser.menus.CreateCreatePropertiesCommand
+  inline def _execute_action: _execute_action = "_execute_action".asInstanceOf[_execute_action]
+  
+  @js.native
+  sealed trait _execute_browser_action
+    extends StObject
+       with CreateCreatePropertiesCommand
+       with typings.firefoxWebextBrowser.browser.menus.CreateCreatePropertiesCommand
+  inline def _execute_browser_action: _execute_browser_action = "_execute_browser_action".asInstanceOf[_execute_browser_action]
+  
+  @js.native
+  sealed trait _execute_page_action
+    extends StObject
+       with CreateCreatePropertiesCommand
+       with typings.firefoxWebextBrowser.browser.menus.CreateCreatePropertiesCommand
+  inline def _execute_page_action: _execute_page_action = "_execute_page_action".asInstanceOf[_execute_page_action]
+  
+  @js.native
+  sealed trait _execute_sidebar_action
+    extends StObject
+       with CreateCreatePropertiesCommand
+       with typings.firefoxWebextBrowser.browser.menus.CreateCreatePropertiesCommand
+  inline def _execute_sidebar_action: _execute_sidebar_action = "_execute_sidebar_action".asInstanceOf[_execute_sidebar_action]
+  
+  @js.native
+  sealed trait aarch64
+    extends StObject
+       with PlatformArch
+  inline def aarch64: aarch64 = "aarch64".asInstanceOf[aarch64]
+  
+  @js.native
   sealed trait abandonment
     extends StObject
        with EngagementState
@@ -387,6 +411,13 @@ object firefoxWebextBrowserStrings {
     extends StObject
        with DangerType
   inline def accepted: accepted = "accepted".asInstanceOf[accepted]
+  
+  @js.native
+  sealed trait action
+    extends StObject
+       with _ContextType
+       with typings.firefoxWebextBrowser.browser.menus._ContextType
+  inline def action: action = "action".asInstanceOf[action]
   
   @js.native
   sealed trait active
@@ -427,8 +458,8 @@ object firefoxWebextBrowserStrings {
   @js.native
   sealed trait all
     extends StObject
-       with ContextType
-       with typings.firefoxWebextBrowser.browser.menus.ContextType
+       with _ContextType
+       with typings.firefoxWebextBrowser.browser.menus._ContextType
   inline def all: all = "all".asInstanceOf[all]
   
   @js.native
@@ -452,6 +483,7 @@ object firefoxWebextBrowserStrings {
   @js.native
   sealed trait always
     extends StObject
+       with HTTPSOnlyModeOption
        with TrackingProtectionModeOption
   inline def always: always = "always".asInstanceOf[always]
   
@@ -532,8 +564,8 @@ object firefoxWebextBrowserStrings {
   @js.native
   sealed trait audio
     extends StObject
-       with ContextType
-       with typings.firefoxWebextBrowser.browser.menus.ContextType
+       with _ContextType
+       with typings.firefoxWebextBrowser.browser.menus._ContextType
   inline def audio: audio = "audio".asInstanceOf[audio]
   
   @js.native
@@ -623,10 +655,10 @@ object firefoxWebextBrowserStrings {
   sealed trait bookmark
     extends StObject
        with BookmarkTreeNodeType
-       with ContextType
-       with typings.firefoxWebextBrowser.browser.menus.ContextType
        with OverrideContextContextOptionsContext
        with typings.firefoxWebextBrowser.browser.menus.OverrideContextContextOptionsContext
+       with _ContextType
+       with typings.firefoxWebextBrowser.browser.menus._ContextType
   inline def bookmark: bookmark = "bookmark".asInstanceOf[bookmark]
   
   @js.native
@@ -663,8 +695,8 @@ object firefoxWebextBrowserStrings {
   @js.native
   sealed trait browser_action
     extends StObject
-       with ContextType
-       with typings.firefoxWebextBrowser.browser.menus.ContextType
+       with _ContextType
+       with typings.firefoxWebextBrowser.browser.menus._ContextType
   inline def browser_action: browser_action = "browser_action".asInstanceOf[browser_action]
   
   @js.native
@@ -852,6 +884,12 @@ object firefoxWebextBrowserStrings {
     extends StObject
        with ScalarType
   inline def count: count = "count".asInstanceOf[count]
+  
+  @js.native
+  sealed trait cpu
+    extends StObject
+       with ProfilerFeature
+  inline def cpu: cpu = "cpu".asInstanceOf[cpu]
   
   @js.native
   sealed trait cros
@@ -1068,8 +1106,8 @@ object firefoxWebextBrowserStrings {
   @js.native
   sealed trait editable
     extends StObject
-       with ContextType
-       with typings.firefoxWebextBrowser.browser.menus.ContextType
+       with _ContextType
+       with typings.firefoxWebextBrowser.browser.menus._ContextType
   inline def editable: editable = "editable".asInstanceOf[editable]
   
   @js.native
@@ -1197,8 +1235,8 @@ object firefoxWebextBrowserStrings {
   @js.native
   sealed trait frame
     extends StObject
-       with ContextType
-       with typings.firefoxWebextBrowser.browser.menus.ContextType
+       with _ContextType
+       with typings.firefoxWebextBrowser.browser.menus._ContextType
   inline def frame: frame = "frame".asInstanceOf[frame]
   
   @js.native
@@ -1206,6 +1244,18 @@ object firefoxWebextBrowserStrings {
     extends StObject
        with TransitionQualifier
   inline def from_address_bar: from_address_bar = "from_address_bar".asInstanceOf[from_address_bar]
+  
+  @js.native
+  sealed trait ftp
+    extends StObject
+       with ProtocolHandlerProtocol
+  inline def ftp: ftp = "ftp".asInstanceOf[ftp]
+  
+  @js.native
+  sealed trait full
+    extends StObject
+       with ColorManagementMode
+  inline def full: full = "full".asInstanceOf[full]
   
   @js.native
   sealed trait fullscreen
@@ -1297,10 +1347,10 @@ object firefoxWebextBrowserStrings {
   @js.native
   sealed trait image
     extends StObject
-       with ContextType
-       with typings.firefoxWebextBrowser.browser.menus.ContextType
        with ResourceType
        with TemplateType
+       with _ContextType
+       with typings.firefoxWebextBrowser.browser.menus._ContextType
   inline def image: image = "image".asInstanceOf[image]
   
   @js.native
@@ -1434,8 +1484,8 @@ object firefoxWebextBrowserStrings {
   @js.native
   sealed trait launcher
     extends StObject
-       with ContextType
-       with typings.firefoxWebextBrowser.browser.menus.ContextType
+       with _ContextType
+       with typings.firefoxWebextBrowser.browser.menus._ContextType
   inline def launcher: launcher = "launcher".asInstanceOf[launcher]
   
   @js.native
@@ -1477,10 +1527,10 @@ object firefoxWebextBrowserStrings {
   @js.native
   sealed trait link
     extends StObject
-       with ContextType
-       with typings.firefoxWebextBrowser.browser.menus.ContextType
        with TransitionType
        with typings.firefoxWebextBrowser.browser.history.TransitionType
+       with _ContextType
+       with typings.firefoxWebextBrowser.browser.menus._ContextType
   inline def link: link = "link".asInstanceOf[link]
   
   @js.native
@@ -1574,6 +1624,12 @@ object firefoxWebextBrowserStrings {
   inline def `match`: `match` = "match".asInstanceOf[`match`]
   
   @js.native
+  sealed trait matrix
+    extends StObject
+       with ProtocolHandlerProtocol
+  inline def matrix: matrix = "matrix".asInstanceOf[matrix]
+  
+  @js.native
   sealed trait maximized
     extends StObject
        with WindowState
@@ -1588,7 +1644,7 @@ object firefoxWebextBrowserStrings {
   @js.native
   sealed trait menupanel
     extends StObject
-       with WebExtensionManifestBrowserActionDefaultArea
+       with ActionManifestDefaultArea
   inline def menupanel: menupanel = "menupanel".asInstanceOf[menupanel]
   
   @js.native
@@ -1616,6 +1672,12 @@ object firefoxWebextBrowserStrings {
   inline def mms: mms = "mms".asInstanceOf[mms]
   
   @js.native
+  sealed trait mobile
+    extends StObject
+       with NetworkLinkInfoType
+  inline def mobile: mobile = "mobile".asInstanceOf[mobile]
+  
+  @js.native
   sealed trait mousedown
     extends StObject
        with ContextMenuMouseEvent
@@ -1640,7 +1702,9 @@ object firefoxWebextBrowserStrings {
   inline def mutedInfo: mutedInfo = "mutedInfo".asInstanceOf[mutedInfo]
   
   @js.native
-  sealed trait nativeMessaging extends StObject
+  sealed trait nativeMessaging
+    extends StObject
+       with _OptionalPermission
   inline def nativeMessaging: nativeMessaging = "nativeMessaging".asInstanceOf[nativeMessaging]
   
   @js.native
@@ -1652,7 +1716,7 @@ object firefoxWebextBrowserStrings {
   @js.native
   sealed trait navbar
     extends StObject
-       with WebExtensionManifestBrowserActionDefaultArea
+       with ActionManifestDefaultArea
   inline def navbar: navbar = "navbar".asInstanceOf[navbar]
   
   @js.native
@@ -1670,6 +1734,7 @@ object firefoxWebextBrowserStrings {
   @js.native
   sealed trait never
     extends StObject
+       with HTTPSOnlyModeOption
        with TrackingProtectionModeOption
   inline def never: never = "never".asInstanceOf[never]
   
@@ -1790,6 +1855,12 @@ object firefoxWebextBrowserStrings {
   inline def notifications: notifications = "notifications".asInstanceOf[notifications]
   
   @js.native
+  sealed trait notimerresolutionchange
+    extends StObject
+       with ProfilerFeature
+  inline def notimerresolutionchange: notimerresolutionchange = "notimerresolutionchange".asInstanceOf[notimerresolutionchange]
+  
+  @js.native
   sealed trait `object`
     extends StObject
        with ResourceType
@@ -1800,6 +1871,12 @@ object firefoxWebextBrowserStrings {
     extends StObject
        with ResourceType
   inline def object_subrequest: object_subrequest = "object_subrequest".asInstanceOf[object_subrequest]
+  
+  @js.native
+  sealed trait off
+    extends StObject
+       with ColorManagementMode
+  inline def off: off = "off".asInstanceOf[off]
   
   @js.native
   sealed trait offline
@@ -1842,15 +1919,15 @@ object firefoxWebextBrowserStrings {
   @js.native
   sealed trait page
     extends StObject
-       with ContextType
-       with typings.firefoxWebextBrowser.browser.menus.ContextType
+       with _ContextType
+       with typings.firefoxWebextBrowser.browser.menus._ContextType
   inline def page: page = "page".asInstanceOf[page]
   
   @js.native
   sealed trait page_action
     extends StObject
-       with ContextType
-       with typings.firefoxWebextBrowser.browser.menus.ContextType
+       with _ContextType
+       with typings.firefoxWebextBrowser.browser.menus._ContextType
   inline def page_action: page_action = "page_action".asInstanceOf[page_action]
   
   @js.native
@@ -1864,8 +1941,8 @@ object firefoxWebextBrowserStrings {
   @js.native
   sealed trait password
     extends StObject
-       with ContextType
-       with typings.firefoxWebextBrowser.browser.menus.ContextType
+       with _ContextType
+       with typings.firefoxWebextBrowser.browser.menus._ContextType
   inline def password: password = "password".asInstanceOf[password]
   
   @js.native
@@ -1895,7 +1972,7 @@ object firefoxWebextBrowserStrings {
   @js.native
   sealed trait personaltoolbar
     extends StObject
-       with WebExtensionManifestBrowserActionDefaultArea
+       with ActionManifestDefaultArea
   inline def personaltoolbar: personaltoolbar = "personaltoolbar".asInstanceOf[personaltoolbar]
   
   @js.native
@@ -1952,6 +2029,12 @@ object firefoxWebextBrowserStrings {
   inline def popup: popup = "popup".asInstanceOf[popup]
   
   @js.native
+  sealed trait ppc64
+    extends StObject
+       with PlatformArch
+  inline def ppc64: ppc64 = "ppc64".asInstanceOf[ppc64]
+  
+  @js.native
   sealed trait pref
     extends StObject
        with WebExtensionManifestChromeSettingsOverridesSearchProviderParamsCondition
@@ -1984,6 +2067,7 @@ object firefoxWebextBrowserStrings {
   @js.native
   sealed trait private_browsing
     extends StObject
+       with HTTPSOnlyModeOption
        with TrackingProtectionModeOption
   inline def private_browsing: private_browsing = "private_browsing".asInstanceOf[private_browsing]
   
@@ -2145,6 +2229,12 @@ object firefoxWebextBrowserStrings {
   inline def `right top`: `right top` = ("right top").asInstanceOf[`right top`]
   
   @js.native
+  sealed trait s390x
+    extends StObject
+       with PlatformArch
+  inline def s390x: s390x = "s390x".asInstanceOf[s390x]
+  
+  @js.native
   sealed trait safe
     extends StObject
        with DangerType
@@ -2186,8 +2276,8 @@ object firefoxWebextBrowserStrings {
   @js.native
   sealed trait selection
     extends StObject
-       with ContextType
-       with typings.firefoxWebextBrowser.browser.menus.ContextType
+       with _ContextType
+       with typings.firefoxWebextBrowser.browser.menus._ContextType
   inline def selection: selection = "selection".asInstanceOf[selection]
   
   @js.native
@@ -2258,6 +2348,12 @@ object firefoxWebextBrowserStrings {
     extends StObject
        with WebExtensionManifestIncognito
   inline def spanning: spanning = "spanning".asInstanceOf[spanning]
+  
+  @js.native
+  sealed trait sparc64
+    extends StObject
+       with PlatformArch
+  inline def sparc64: sparc64 = "sparc64".asInstanceOf[sparc64]
   
   @js.native
   sealed trait speculate
@@ -2360,13 +2456,13 @@ object firefoxWebextBrowserStrings {
   @js.native
   sealed trait tab
     extends StObject
-       with ContextType
-       with typings.firefoxWebextBrowser.browser.menus.ContextType
        with OnExtensionActivityDetailsViewType
        with OverrideContextContextOptionsContext
        with typings.firefoxWebextBrowser.browser.menus.OverrideContextContextOptionsContext
        with ResultType
        with ViewType
+       with _ContextType
+       with typings.firefoxWebextBrowser.browser.menus._ContextType
   inline def tab: tab = "tab".asInstanceOf[tab]
   
   @js.native
@@ -2385,14 +2481,14 @@ object firefoxWebextBrowserStrings {
   @js.native
   sealed trait tabstrip
     extends StObject
-       with WebExtensionManifestBrowserActionDefaultArea
+       with ActionManifestDefaultArea
   inline def tabstrip: tabstrip = "tabstrip".asInstanceOf[tabstrip]
   
   @js.native
-  sealed trait tasktracer
+  sealed trait tagged_only
     extends StObject
-       with ProfilerFeature
-  inline def tasktracer: tasktracer = "tasktracer".asInstanceOf[tasktracer]
+       with ColorManagementMode
+  inline def tagged_only: tagged_only = "tagged_only".asInstanceOf[tagged_only]
   
   @js.native
   sealed trait tel
@@ -2440,7 +2536,8 @@ object firefoxWebextBrowserStrings {
   @js.native
   sealed trait tools_menu
     extends StObject
-       with typings.firefoxWebextBrowser.browser.menus.ContextType
+       with _ContextType
+       with typings.firefoxWebextBrowser.browser.menus._ContextType
   inline def tools_menu: tools_menu = "tools_menu".asInstanceOf[tools_menu]
   
   @js.native
@@ -2571,6 +2668,7 @@ object firefoxWebextBrowserStrings {
        with DescriptionStyleType
        with MostVisitedURLType
        with ResultType
+       with UpdatePropertyName
   inline def url: url = "url".asInstanceOf[url]
   
   @js.native
@@ -2607,8 +2705,8 @@ object firefoxWebextBrowserStrings {
   @js.native
   sealed trait video
     extends StObject
-       with ContextType
-       with typings.firefoxWebextBrowser.browser.menus.ContextType
+       with _ContextType
+       with typings.firefoxWebextBrowser.browser.menus._ContextType
   inline def video: video = "video".asInstanceOf[video]
   
   @js.native

@@ -27,17 +27,17 @@ trait ITimerOptions[T] extends StObject {
   /**
     * Will be triggered when the break condition has met (prematurely ended)
     */
-  var onAborted: js.UndefOr[js.Function1[/* data */ ITimerData[js.Any], Unit]] = js.undefined
+  var onAborted: js.UndefOr[js.Function1[/* data */ ITimerData[Any], Unit]] = js.undefined
   
   /**
     * Will be triggered when the time condition has met
     */
-  var onEnded: js.UndefOr[js.Function1[/* data */ ITimerData[js.Any], Unit]] = js.undefined
+  var onEnded: js.UndefOr[js.Function1[/* data */ ITimerData[Any], Unit]] = js.undefined
   
   /**
     * Optional function to execute on each tick (or count)
     */
-  var onTick: js.UndefOr[js.Function1[/* data */ ITimerData[js.Any], Unit]] = js.undefined
+  var onTick: js.UndefOr[js.Function1[/* data */ ITimerData[Any], Unit]] = js.undefined
   
   /**
     * Time-to-end
@@ -63,15 +63,15 @@ object ITimerOptions {
     
     inline def setObservableParametersUndefined: Self = StObject.set(x, "observableParameters", js.undefined)
     
-    inline def setOnAborted(value: /* data */ ITimerData[js.Any] => Unit): Self = StObject.set(x, "onAborted", js.Any.fromFunction1(value))
+    inline def setOnAborted(value: /* data */ ITimerData[Any] => Unit): Self = StObject.set(x, "onAborted", js.Any.fromFunction1(value))
     
     inline def setOnAbortedUndefined: Self = StObject.set(x, "onAborted", js.undefined)
     
-    inline def setOnEnded(value: /* data */ ITimerData[js.Any] => Unit): Self = StObject.set(x, "onEnded", js.Any.fromFunction1(value))
+    inline def setOnEnded(value: /* data */ ITimerData[Any] => Unit): Self = StObject.set(x, "onEnded", js.Any.fromFunction1(value))
     
     inline def setOnEndedUndefined: Self = StObject.set(x, "onEnded", js.undefined)
     
-    inline def setOnTick(value: /* data */ ITimerData[js.Any] => Unit): Self = StObject.set(x, "onTick", js.Any.fromFunction1(value))
+    inline def setOnTick(value: /* data */ ITimerData[Any] => Unit): Self = StObject.set(x, "onTick", js.Any.fromFunction1(value))
     
     inline def setOnTickUndefined: Self = StObject.set(x, "onTick", js.undefined)
     

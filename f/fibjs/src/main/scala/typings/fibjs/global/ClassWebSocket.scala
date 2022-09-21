@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Class_WebSocket")
 @js.native
-class ClassWebSocket protected ()
+open class ClassWebSocket protected ()
   extends StObject
      with typings.fibjs.ClassWebSocket {
   /**

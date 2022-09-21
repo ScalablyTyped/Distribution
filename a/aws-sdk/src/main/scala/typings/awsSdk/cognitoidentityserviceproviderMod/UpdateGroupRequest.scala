@@ -22,7 +22,7 @@ trait UpdateGroupRequest extends StObject {
   var Precedence: js.UndefOr[PrecedenceType] = js.undefined
   
   /**
-    * The new role ARN for the group. This is used for setting the cognito:roles and cognito:preferred_role claims in the token.
+    * The new role Amazon Resource Name (ARN) for the group. This is used for setting the cognito:roles and cognito:preferred_role claims in the token.
     */
   var RoleArn: js.UndefOr[ArnType] = js.undefined
   

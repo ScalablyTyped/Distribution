@@ -2,7 +2,6 @@ package typings.dispatchr
 
 import typings.dispatchr.mod.Store
 import typings.dispatchr.mod.StoreClass
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,13 +12,13 @@ object anon {
     
     var actionName: js.UndefOr[String] = js.undefined
     
-    var error: Error
+    var error: js.Error
     
-    var payload: js.UndefOr[js.Any] = js.undefined
+    var payload: js.UndefOr[Any] = js.undefined
   }
   object ActionName {
     
-    inline def apply(error: Error): ActionName = {
+    inline def apply(error: js.Error): ActionName = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
       __obj.asInstanceOf[ActionName]
     }
@@ -30,9 +29,9 @@ object anon {
       
       inline def setActionNameUndefined: Self = StObject.set(x, "actionName", js.undefined)
       
-      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      inline def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
       inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     }

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IHTMLLocation")
 @js.native
-/* private */ class IHTMLLocation ()
+/* private */ open class IHTMLLocation ()
   extends StObject
      with typings.activexMshtml.MSHTML.IHTMLLocation

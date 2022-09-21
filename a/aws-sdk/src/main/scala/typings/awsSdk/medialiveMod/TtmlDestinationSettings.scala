@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TtmlDestinationSettings extends StObject {
   
   /**
-    * When set to passthrough, passes through style and position information from a TTML-like input source (TTML, SMPTE-TT, CFF-TT) to the CFF-TT output or TTML output.
+    * This field is not currently supported and will not affect the output styling. Leave the default value.
     */
   var StyleControl: js.UndefOr[TtmlDestinationStyleControl] = js.undefined
 }

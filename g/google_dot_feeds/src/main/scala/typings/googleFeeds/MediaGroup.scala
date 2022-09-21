@@ -19,6 +19,6 @@ object MediaGroup {
     
     inline def setContent(value: js.Array[MediaContent]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    inline def setContentVarargs(value: MediaContent*): Self = StObject.set(x, "content", js.Array(value :_*))
+    inline def setContentVarargs(value: MediaContent*): Self = StObject.set(x, "content", js.Array(value*))
   }
 }

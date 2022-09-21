@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ASPxClientMenuAction")
 @js.native
-class ASPxClientMenuAction ()
+open class ASPxClientMenuAction ()
   extends StObject
      with typings.devexpressWeb.ASPxClientMenuAction {
   

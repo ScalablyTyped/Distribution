@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("promise-pool", "Pool")
   @js.native
-  class Pool[T] protected () extends StObject {
+  open class Pool[T] protected () extends StObject {
     /**
       * initialize a task pool.
       * @param processor a function takes the data and index as parameters and returns a promise.
@@ -37,23 +37,23 @@ object mod {
       tasksData: js.Array[T]
     ) = this()
     
-    /* private */ var _currentConcurrency: js.Any = js.native
+    /* private */ var _currentConcurrency: Any = js.native
     
-    /* private */ var _deferred: js.Any = js.native
+    /* private */ var _deferred: Any = js.native
     
-    /* private */ var _index: js.Any = js.native
+    /* private */ var _index: Any = js.native
     
-    /* private */ def _next(): js.Any = js.native
+    /* private */ def _next(): Any = js.native
     
-    /* private */ def _notifyProgress(index: js.Any, success: js.Any, err: js.Any, retries: js.Any): js.Any = js.native
+    /* private */ def _notifyProgress(index: Any, success: Any, err: Any, retries: Any): Any = js.native
     
-    /* private */ var _pauseDeferred: js.Any = js.native
+    /* private */ var _pauseDeferred: Any = js.native
     
-    /* private */ def _process(data: js.Any, index: js.Any): js.Any = js.native
+    /* private */ def _process(data: Any, index: Any): Any = js.native
     
-    /* private */ def _start(): js.Any = js.native
+    /* private */ def _start(): Any = js.native
     
-    /* private */ var _tasksData: js.Any = js.native
+    /* private */ var _tasksData: Any = js.native
     
     /**
       * add a data item.
@@ -148,7 +148,7 @@ object mod {
   
   trait IProgress extends StObject {
     
-    var error: js.Any
+    var error: Any
     
     var fulfilled: Double
     
@@ -167,7 +167,7 @@ object mod {
   object IProgress {
     
     inline def apply(
-      error: js.Any,
+      error: Any,
       fulfilled: Double,
       index: Double,
       pending: Double,
@@ -182,7 +182,7 @@ object mod {
     
     extension [Self <: IProgress](x: Self) {
       
-      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setFulfilled(value: Double): Self = StObject.set(x, "fulfilled", value.asInstanceOf[js.Any])
       

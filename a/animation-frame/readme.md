@@ -11,14 +11,11 @@ An even better requestAnimationFrame
 | Full name          | animation-frame |
 | Keywords           | animationFrame, RAF, requestAnimationFrame, cancelAnimationFrame |
 | # releases         | 0 |
-| # dependents       | 14 |
-| # downloads        | 708195 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 30575.666666666668 |
+| # stars            | 395.0 |
 
 ## Links
-- [Homepage](https://github.com/kof/animation-frame#readme)
-- [Bugs](https://github.com/kof/animation-frame/issues)
-- [Repository](https://github.com/kof/animation-frame)
 - [Npm](https://www.npmjs.com/package/animation-frame)
     
 

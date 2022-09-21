@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CollectionPinOptions
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var pins: js.Array[String | Double]
 }
@@ -22,6 +22,6 @@ object CollectionPinOptions {
     
     inline def setPins(value: js.Array[String | Double]): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
     
-    inline def setPinsVarargs(value: (String | Double)*): Self = StObject.set(x, "pins", js.Array(value :_*))
+    inline def setPinsVarargs(value: (String | Double)*): Self = StObject.set(x, "pins", js.Array(value*))
   }
 }

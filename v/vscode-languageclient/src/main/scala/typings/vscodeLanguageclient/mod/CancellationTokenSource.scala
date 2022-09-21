@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vscode-languageclient", "CancellationTokenSource")
 @js.native
-class CancellationTokenSource ()
-  extends typings.vscodeLanguageclient.clientMod.CancellationTokenSource
+open class CancellationTokenSource ()
+  extends typings.vscodeLanguageserverProtocol.mod.CancellationTokenSource

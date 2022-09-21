@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.SlicerCacheLevel")
 @js.native
-/* private */ class SlicerCacheLevel ()
+/* private */ open class SlicerCacheLevel ()
   extends StObject
      with typings.activexExcel.Excel.SlicerCacheLevel {
   
@@ -37,7 +37,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Ordinal: Double = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override def SlicerItems(Index: String): typings.activexExcel.Excel.SlicerItem = js.native
@@ -51,5 +51,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var SortItems: XlSlicerSort = js.native
   
   /* CompleteClass */
-  override val VisibleSlicerItemsList: js.Any = js.native
+  override val VisibleSlicerItemsList: Any = js.native
 }

@@ -17,8 +17,6 @@ import typings.ariClient.anon.Whisper
 import typings.ariClient.anon.`3`
 import typings.ariClient.anon.`4`
 import typings.ariClient.anon.`5`
-import typings.std.Date
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,7 +38,7 @@ trait Channel
   /**
     * Answer a channel.
     */
-  def answer(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def answer(callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Caller.
@@ -69,7 +67,7 @@ trait Channel
   /**
     * Exit application; continue execution in the dialplan.
     */
-  def continueInDialplan(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def continueInDialplan(callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   def continueInDialplan(params: Label): js.Promise[Unit] = js.native
   /**
     * Exit application; continue execution in the dialplan.
@@ -79,7 +77,7 @@ trait Channel
     * @param [params.priority] - The priority to continue to.
     * @param [params.label] - The label to continue to - will supersede priority if both are provided.
     */
-  def continueInDialplan(params: Label, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def continueInDialplan(params: Label, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Create channel.
@@ -102,12 +100,12 @@ trait Channel
     * @param [params.originator] - Unique ID of the calling channel.
     * @param [params.formats] - The format name capability list to use if originator is not specified. Ex. "ulaw,slin16". Format names can be found with "core show codecs".
     */
-  def create(params: Formats, callback: js.Function2[/* err */ Error, /* channel */ this.type, Unit]): Unit = js.native
+  def create(params: Formats, callback: js.Function2[/* err */ js.Error, /* channel */ this.type, Unit]): Unit = js.native
   
   /**
     * Timestamp when channel was created.
     */
-  var creationtime: Date = js.native
+  var creationtime: js.Date = js.native
   
   /**
     * Dial a created channel.
@@ -119,7 +117,7 @@ trait Channel
   /**
     * Dial a created channel.
     */
-  def dial(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def dial(callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   def dial(params: Timeout): js.Promise[Unit] = js.native
   /**
     * Dial a created channel.
@@ -127,7 +125,7 @@ trait Channel
     * @param [params.caller] - Channel ID of caller.
     * @param [params.timeout] - Dial timeout.
     */
-  def dial(params: Timeout, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def dial(params: Timeout, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Current location in the dialplan.
@@ -163,7 +161,7 @@ trait Channel
     * @param params.format - Format to encode audio in.
     * @param [params.direction] - External media direction.
     */
-  def externalMedia(params: Encapsulation, callback: js.Function2[/* err */ Error, /* channel */ this.type, Unit]): Unit = js.native
+  def externalMedia(params: Encapsulation, callback: js.Function2[/* err */ js.Error, /* channel */ this.type, Unit]): Unit = js.native
   
   /**
     * Channel details.
@@ -172,7 +170,7 @@ trait Channel
   /**
     * Channel details.
     */
-  def get(callback: js.Function2[/* err */ Error, /* channel */ this.type, Unit]): Unit = js.native
+  def get(callback: js.Function2[/* err */ js.Error, /* channel */ this.type, Unit]): Unit = js.native
   
   /**
     * Get the value of a channel variable or function.
@@ -187,7 +185,7 @@ trait Channel
     */
   def getChannelVar(
     params: typings.ariClient.anon.Variable,
-    callback: js.Function2[/* err */ Error, /* variable */ Variable, Unit]
+    callback: js.Function2[/* err */ js.Error, /* variable */ Variable, Unit]
   ): Unit = js.native
   
   /**
@@ -199,14 +197,14 @@ trait Channel
   /**
     * Delete (i.e. hangup) a channel.
     */
-  def hangup(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def hangup(callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   def hangup(params: `4`): js.Promise[Unit] = js.native
   /**
     * Delete (i.e. hangup) a channel.
     *
     * @param [params.reason] - Reason for hanging up the channel.
     */
-  def hangup(params: `4`, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def hangup(params: `4`, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Hold a channel.
@@ -215,7 +213,7 @@ trait Channel
   /**
     * Hold a channel.
     */
-  def hold(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def hold(callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Unique identifier of the channel. This is the same as the Uniqueid field in AMI.
@@ -234,7 +232,7 @@ trait Channel
   /**
     * List all active channels in Asterisk.
     */
-  def list(callback: js.Function2[/* err */ Error, /* channels */ js.Array[this.type], Unit]): Unit = js.native
+  def list(callback: js.Function2[/* err */ js.Error, /* channels */ js.Array[this.type], Unit]): Unit = js.native
   
   /**
     * Move the channel from one Stasis application to another.
@@ -249,7 +247,7 @@ trait Channel
     * @param params.app - The channel will be passed to this Stasis application.
     * @param [params.appArgs] - The application arguments to pass to the Stasis application provided by app.
     */
-  def move(params: AppString, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def move(params: AppString, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Mute a channel.
@@ -260,14 +258,14 @@ trait Channel
   /**
     * Mute a channel.
     */
-  def mute(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def mute(callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   def mute(params: `5`): js.Promise[Unit] = js.native
   /**
     * Mute a channel.
     *
     * @param [params.direction] - Direction in which to mute audio.
     */
-  def mute(params: `5`, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def mute(params: `5`, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Name of the channel (i.e. SIP/foo-0000a7e3).
@@ -317,7 +315,7 @@ trait Channel
     * @param [params.originator] - The unique id of the channel which is originating this one.
     * @param [params.formats] - The format name capability list to use if originator is not specified. Ex. "ulaw,slin16". Format names can be found with "core show codecs".
     */
-  def originate(params: Extension, callback: js.Function2[/* err */ Error, /* channel */ this.type, Unit]): Unit = js.native
+  def originate(params: Extension, callback: js.Function2[/* err */ js.Error, /* channel */ this.type, Unit]): Unit = js.native
   
   /**
     * Create a new channel (originate with id).
@@ -362,7 +360,7 @@ trait Channel
     * @param [params.originator] - The unique id of the channel which is originating this one.
     * @param [params.formats] - The format name capability list to use if originator is not specified. Ex. "ulaw,slin16". Format names can be found with "core show codecs".
     */
-  def originateWithId(params: Extension, callback: js.Function2[/* err */ Error, /* channel */ this.type, Unit]): Unit = js.native
+  def originateWithId(params: Extension, callback: js.Function2[/* err */ js.Error, /* channel */ this.type, Unit]): Unit = js.native
   
   /**
     * Start playback of media.
@@ -390,7 +388,7 @@ trait Channel
   def play(
     params: Offsetms,
     playback: Playback,
-    callback: js.Function2[/* err */ Error, /* playback */ Playback, Unit]
+    callback: js.Function2[/* err */ js.Error, /* playback */ Playback, Unit]
   ): Unit = js.native
   
   /**
@@ -416,7 +414,7 @@ trait Channel
     * @param [params.offsetms] - Number of milliseconds to skip before playing. Only applies to the first URI if multiple media URIs are specified.
     * @param [params.skipms] - Number of milliseconds to skip for forward/reverse operations.
     */
-  def playWithId(params: PlaybackId, callback: js.Function2[/* err */ Error, /* playback */ Playback, Unit]): Unit = js.native
+  def playWithId(params: PlaybackId, callback: js.Function2[/* err */ js.Error, /* playback */ Playback, Unit]): Unit = js.native
   
   /**
     * Start a recording.
@@ -446,7 +444,7 @@ trait Channel
   def record(
     params: Format,
     recording: LiveRecording,
-    callback: js.Function2[/* err */ Error, /* liverecording */ LiveRecording, Unit]
+    callback: js.Function2[/* err */ js.Error, /* liverecording */ LiveRecording, Unit]
   ): Unit = js.native
   
   /**
@@ -460,7 +458,7 @@ trait Channel
     *
     * @param params.endpoint - The endpoint to redirect the channel to.
     */
-  def redirect(params: EndpointString, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def redirect(params: EndpointString, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Indicate ringing to a channel.
@@ -469,7 +467,7 @@ trait Channel
   /**
     * Indicate ringing to a channel.
     */
-  def ring(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def ring(callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Stop ringing indication on a channel if locally generated.
@@ -478,7 +476,7 @@ trait Channel
   /**
     * Stop ringing indication on a channel if locally generated.
     */
-  def ringStop(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def ringStop(callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * RTP stats on a channel.
@@ -487,7 +485,7 @@ trait Channel
   /**
     * RTP stats on a channel.
     */
-  def rtpstatistics(callback: js.Function2[/* err */ Error, /* rtpstat */ RTPstat, Unit]): Unit = js.native
+  def rtpstatistics(callback: js.Function2[/* err */ js.Error, /* rtpstat */ RTPstat, Unit]): Unit = js.native
   
   /**
     * Send provided DTMF to a given channel.
@@ -502,7 +500,7 @@ trait Channel
   /**
     * Send provided DTMF to a given channel.
     */
-  def sendDTMF(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def sendDTMF(callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   def sendDTMF(params: Before): js.Promise[Unit] = js.native
   /**
     * Send provided DTMF to a given channel.
@@ -513,7 +511,7 @@ trait Channel
     * @param [params.duration] - Length of each DTMF digit (specified in milliseconds).
     * @param [params.after] - Amount of time to wait after DTMF digits (specified in milliseconds) end.
     */
-  def sendDTMF(params: Before, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def sendDTMF(params: Before, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Set the value of a channel variable or function.
@@ -528,7 +526,7 @@ trait Channel
     * @param params.variable - The channel variable or function to set.
     * @param [params.value] - The value to set the variable to.
     */
-  def setChannelVar(params: Value, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def setChannelVar(params: Value, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Start snooping.
@@ -554,7 +552,7 @@ trait Channel
   def snoopChannel(
     params: Whisper,
     snoopChannel: Channel,
-    callback: js.Function2[/* err */ Error, /* channel */ this.type, Unit]
+    callback: js.Function2[/* err */ js.Error, /* channel */ this.type, Unit]
   ): Unit = js.native
   
   /**
@@ -578,7 +576,7 @@ trait Channel
     * @param params.app - Application the snooping channel is placed into.
     * @param [params.appArgs] - The application arguments to pass to the Stasis application.
     */
-  def snoopChannelWithId(params: AppArgsSnoopId, callback: js.Function2[/* err */ Error, /* channel */ this.type, Unit]): Unit = js.native
+  def snoopChannelWithId(params: AppArgsSnoopId, callback: js.Function2[/* err */ js.Error, /* channel */ this.type, Unit]): Unit = js.native
   
   /**
     * Play music on hold to a channel.
@@ -593,7 +591,7 @@ trait Channel
     * Using media operations such as /play on a channel playing MOH in this manner will suspend MOH without resuming automatically. If continuing music on hold is desired, the stasis application
     * must reinitiate music on hold.
     */
-  def startMoh(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def startMoh(callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   def startMoh(params: `3`): js.Promise[Unit] = js.native
   /**
     * Play music on hold to a channel.
@@ -602,7 +600,7 @@ trait Channel
     *
     * @param [params.mohClass] - Music on hold class to use.
     */
-  def startMoh(params: `3`, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def startMoh(params: `3`, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Play silence to a channel.
@@ -613,7 +611,7 @@ trait Channel
     * Play silence to a channel.
     * Using media operations such as /play on a channel playing silence in this manner will suspend silence without resuming automatically.
     */
-  def startSilence(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def startSilence(callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * State.
@@ -627,7 +625,7 @@ trait Channel
   /**
     * Stop playing music on hold to a channel.
     */
-  def stopMoh(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def stopMoh(callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Stop playing silence to a channel.
@@ -636,7 +634,7 @@ trait Channel
   /**
     * Stop playing silence to a channel.
     */
-  def stopSilence(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def stopSilence(callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Remove a channel from hold.
@@ -645,7 +643,7 @@ trait Channel
   /**
     * Remove a channel from hold.
     */
-  def unhold(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def unhold(callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   
   /**
     * Unmute a channel.
@@ -656,12 +654,12 @@ trait Channel
   /**
     * Unmute a channel.
     */
-  def unmute(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def unmute(callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
   def unmute(params: `5`): js.Promise[Unit] = js.native
   /**
     * Unmute a channel.
     *
     * @param [params.direction] - Direction in which to unmute audio.
     */
-  def unmute(params: `5`, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  def unmute(params: `5`, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
 }

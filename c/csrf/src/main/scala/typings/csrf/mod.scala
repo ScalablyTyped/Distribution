@@ -1,6 +1,5 @@
 package typings.csrf
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ object mod {
   /**
     * Token generation/verification class.
     */
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Tokens {
     def this(options: Options) = this()
@@ -49,7 +48,7 @@ object mod {
     }
   }
   
-  type SecretCallback = js.Function2[/* err */ Error | Null, /* secret */ String, Unit]
+  type SecretCallback = js.Function2[/* err */ js.Error | Null, /* secret */ String, Unit]
   
   @js.native
   trait Tokens extends StObject {

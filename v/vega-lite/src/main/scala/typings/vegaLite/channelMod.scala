@@ -69,7 +69,9 @@ object channelMod {
   
   @JSImport("vega-lite/build/src/channel", "CHANNELS")
   @js.native
-  val CHANNELS: js.Array[ExtendedChannel] = js.native
+  val CHANNELS: js.Array[
+    fill | description | detail | key | url | color | fillOpacity | opacity | order | stroke | strokeOpacity | strokeWidth | text | size | x | x2 | y | y2 | strokeDash | tooltip | angle | shape | radius | theta | facet | href | theta2 | radius2 | xOffset | yOffset | longitude | latitude | longitude2 | latitude2 | row | column
+  ] = js.native
   
   @JSImport("vega-lite/build/src/channel", "COLOR")
   @js.native
@@ -93,7 +95,9 @@ object channelMod {
   
   @JSImport("vega-lite/build/src/channel", "FACET_CHANNELS")
   @js.native
-  val FACET_CHANNELS: js.Array[facet | row | column] = js.native
+  val FACET_CHANNELS: js.Array[
+    /* keyof vega-lite.vega-lite/build/src/spec/facet.EncodingFacetMapping<any, any> */ facet | row | column
+  ] = js.native
   
   @JSImport("vega-lite/build/src/channel", "FILL")
   @js.native
@@ -134,14 +138,18 @@ object channelMod {
   @JSImport("vega-lite/build/src/channel", "NONPOSITION_CHANNELS")
   @js.native
   val NONPOSITION_CHANNELS: js.Array[
-    text | fill | stroke | color | shape | description | opacity | fillOpacity | strokeOpacity | strokeWidth | strokeDash | size | angle | detail | key | tooltip | href | url | order
+    fill | description | detail | key | url | color | fillOpacity | opacity | order | stroke | strokeOpacity | strokeWidth | text | size | strokeDash | tooltip | angle | shape | href
   ] = js.native
   
   @JSImport("vega-lite/build/src/channel", "NONPOSITION_SCALE_CHANNELS")
   @js.native
   val NONPOSITION_SCALE_CHANNELS: js.Array[
-    fill | stroke | color | shape | opacity | fillOpacity | strokeOpacity | strokeWidth | strokeDash | size | angle
+    fill | color | fillOpacity | opacity | stroke | strokeOpacity | strokeWidth | size | strokeDash | angle | shape
   ] = js.native
+  
+  @JSImport("vega-lite/build/src/channel", "OFFSET_SCALE_CHANNELS")
+  @js.native
+  val OFFSET_SCALE_CHANNELS: js.Array[xOffset | yOffset] = js.native
   
   @JSImport("vega-lite/build/src/channel", "OPACITY")
   @js.native
@@ -153,7 +161,7 @@ object channelMod {
   
   @JSImport("vega-lite/build/src/channel", "POLAR_POSITION_SCALE_CHANNELS")
   @js.native
-  val POLAR_POSITION_SCALE_CHANNELS: js.Array[theta | radius] = js.native
+  val POLAR_POSITION_SCALE_CHANNELS: js.Array[radius | theta] = js.native
   
   object POLAR_POSITION_SCALE_CHANNEL_INDEX {
     
@@ -170,17 +178,6 @@ object channelMod {
   @js.native
   val POSITION_SCALE_CHANNELS: js.Array[x | y] = js.native
   
-  object POSITION_SCALE_CHANNEL_INDEX {
-    
-    @JSImport("vega-lite/build/src/channel", "POSITION_SCALE_CHANNEL_INDEX.x")
-    @js.native
-    val x: `1` = js.native
-    
-    @JSImport("vega-lite/build/src/channel", "POSITION_SCALE_CHANNEL_INDEX.y")
-    @js.native
-    val y: `1` = js.native
-  }
-  
   @JSImport("vega-lite/build/src/channel", "RADIUS")
   @js.native
   val RADIUS: radius = js.native
@@ -196,7 +193,7 @@ object channelMod {
   @JSImport("vega-lite/build/src/channel", "SCALE_CHANNELS")
   @js.native
   val SCALE_CHANNELS: js.Array[
-    fill | stroke | color | shape | x | y | theta | radius | opacity | fillOpacity | strokeOpacity | strokeWidth | strokeDash | size | angle
+    fill | color | fillOpacity | opacity | stroke | strokeOpacity | strokeWidth | size | x | y | strokeDash | angle | shape | radius | theta | xOffset | yOffset
   ] = js.native
   
   @JSImport("vega-lite/build/src/channel", "SECONDARY_RANGE_CHANNEL")
@@ -210,13 +207,13 @@ object channelMod {
   @JSImport("vega-lite/build/src/channel", "SINGLE_DEF_CHANNELS")
   @js.native
   val SINGLE_DEF_CHANNELS: js.Array[
-    text | fill | stroke | color | shape | description | x | y | x2 | y2 | longitude | latitude | longitude2 | latitude2 | theta | theta2 | radius | radius2 | opacity | fillOpacity | strokeOpacity | strokeWidth | strokeDash | size | angle | key | href | url | facet | row | column
+    fill | description | key | url | color | fillOpacity | opacity | stroke | strokeOpacity | strokeWidth | text | size | x | x2 | y | y2 | strokeDash | angle | shape | radius | theta | facet | href | theta2 | radius2 | xOffset | yOffset | longitude | latitude | longitude2 | latitude2 | row | column
   ] = js.native
   
   @JSImport("vega-lite/build/src/channel", "SINGLE_DEF_UNIT_CHANNELS")
   @js.native
   val SINGLE_DEF_UNIT_CHANNELS: js.Array[
-    text | fill | stroke | color | shape | description | x | y | x2 | y2 | longitude | latitude | longitude2 | latitude2 | theta | theta2 | radius | radius2 | opacity | fillOpacity | strokeOpacity | strokeWidth | strokeDash | size | angle | key | href | url
+    fill | description | key | url | color | fillOpacity | opacity | stroke | strokeOpacity | strokeWidth | text | size | x | x2 | y | y2 | strokeDash | angle | shape | radius | theta | href | theta2 | radius2 | xOffset | yOffset | longitude | latitude | longitude2 | latitude2
   ] = js.native
   
   @JSImport("vega-lite/build/src/channel", "SIZE")
@@ -258,7 +255,7 @@ object channelMod {
   @JSImport("vega-lite/build/src/channel", "UNIT_CHANNELS")
   @js.native
   val UNIT_CHANNELS: js.Array[
-    text | fill | stroke | color | shape | description | x | y | x2 | y2 | longitude | latitude | longitude2 | latitude2 | theta | theta2 | radius | radius2 | opacity | fillOpacity | strokeOpacity | strokeWidth | strokeDash | size | angle | detail | key | tooltip | href | url | order
+    /* keyof vega-lite.vega-lite/build/src/encoding.Encoding<any> */ x | y | xOffset | yOffset | x2 | y2 | longitude | latitude | longitude2 | latitude2 | theta | theta2 | radius | radius2 | color | fill | stroke | opacity | fillOpacity | strokeOpacity | strokeWidth | strokeDash | size | angle | shape | detail | key | text | tooltip | href | url | description | order
   ] = js.native
   
   @JSImport("vega-lite/build/src/channel", "URL")
@@ -273,6 +270,10 @@ object channelMod {
   @js.native
   val X2: x2 = js.native
   
+  @JSImport("vega-lite/build/src/channel", "XOFFSET")
+  @js.native
+  val XOFFSET: xOffset = js.native
+  
   @JSImport("vega-lite/build/src/channel", "Y")
   @js.native
   val Y: y = js.native
@@ -280,6 +281,12 @@ object channelMod {
   @JSImport("vega-lite/build/src/channel", "Y2")
   @js.native
   val Y2: y2 = js.native
+  
+  @JSImport("vega-lite/build/src/channel", "YOFFSET")
+  @js.native
+  val YOFFSET: yOffset = js.native
+  
+  inline def getMainChannelFromOffsetChannel(channel: OffsetScaleChannel): PositionScaleChannel = ^.asInstanceOf[js.Dynamic].applyDynamic("getMainChannelFromOffsetChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[PositionScaleChannel]
   
   inline def getMainRangeChannel_angle(channel: angle): MainChannelOf[angle] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMainRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[MainChannelOf[angle]]
   
@@ -345,17 +352,21 @@ object channelMod {
   
   inline def getMainRangeChannel_x2(channel: x2): MainChannelOf[x2] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMainRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[MainChannelOf[x2]]
   
+  inline def getMainRangeChannel_xOffset(channel: xOffset): MainChannelOf[xOffset] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMainRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[MainChannelOf[xOffset]]
+  
   inline def getMainRangeChannel_y(channel: y): MainChannelOf[y] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMainRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[MainChannelOf[y]]
   
   inline def getMainRangeChannel_y2(channel: y2): MainChannelOf[y2] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMainRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[MainChannelOf[y2]]
   
+  inline def getMainRangeChannel_yOffset(channel: yOffset): MainChannelOf[yOffset] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMainRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[MainChannelOf[yOffset]]
+  
   inline def getOffsetChannel(channel: Channel): xOffset | yOffset | x2Offset | y2Offset | thetaOffset | radiusOffset | theta2Offset | radius2Offset = ^.asInstanceOf[js.Dynamic].applyDynamic("getOffsetChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[xOffset | yOffset | x2Offset | y2Offset | thetaOffset | radiusOffset | theta2Offset | radius2Offset]
+  
+  inline def getOffsetScaleChannel(channel: Channel): OffsetScaleChannel = ^.asInstanceOf[js.Dynamic].applyDynamic("getOffsetScaleChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[OffsetScaleChannel]
   
   inline def getPositionChannelFromLatLong(channel: GeoPositionChannel): PositionChannel = ^.asInstanceOf[js.Dynamic].applyDynamic("getPositionChannelFromLatLong")(channel.asInstanceOf[js.Any]).asInstanceOf[PositionChannel]
   
-  inline def getPositionScaleChannel_height(sizeType: height): PositionScaleChannel = ^.asInstanceOf[js.Dynamic].applyDynamic("getPositionScaleChannel")(sizeType.asInstanceOf[js.Any]).asInstanceOf[PositionScaleChannel]
-  
-  inline def getPositionScaleChannel_width(sizeType: width): PositionScaleChannel = ^.asInstanceOf[js.Dynamic].applyDynamic("getPositionScaleChannel")(sizeType.asInstanceOf[js.Any]).asInstanceOf[PositionScaleChannel]
+  inline def getPositionScaleChannel(sizeType: width | height): PositionScaleChannel = ^.asInstanceOf[js.Dynamic].applyDynamic("getPositionScaleChannel")(sizeType.asInstanceOf[js.Any]).asInstanceOf[PositionScaleChannel]
   
   inline def getSecondaryRangeChannel_angle(channel: angle): js.UndefOr[SecondaryChannelOf[angle]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecondaryRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SecondaryChannelOf[angle]]]
   
@@ -415,15 +426,19 @@ object channelMod {
   
   inline def getSecondaryRangeChannel_x2(channel: x2): js.UndefOr[SecondaryChannelOf[x2]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecondaryRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SecondaryChannelOf[x2]]]
   
+  inline def getSecondaryRangeChannel_xOffset(channel: xOffset): js.UndefOr[SecondaryChannelOf[xOffset]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecondaryRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SecondaryChannelOf[xOffset]]]
+  
   inline def getSecondaryRangeChannel_y(channel: y): js.UndefOr[SecondaryChannelOf[y]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecondaryRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SecondaryChannelOf[y]]]
   
   inline def getSecondaryRangeChannel_y2(channel: y2): js.UndefOr[SecondaryChannelOf[y2]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecondaryRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SecondaryChannelOf[y2]]]
   
+  inline def getSecondaryRangeChannel_yOffset(channel: yOffset): js.UndefOr[SecondaryChannelOf[yOffset]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecondaryRangeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SecondaryChannelOf[yOffset]]]
+  
   inline def getSizeChannel(channel: Channel): js.UndefOr[width | height] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSizeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[width | height]]
   inline def getSizeChannel(channel: PositionChannel): width | height = ^.asInstanceOf[js.Dynamic].applyDynamic("getSizeChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[width | height]
   
-  inline def getVgPositionChannel(channel: PolarPositionChannel): x | y | x2 | y2 | innerRadius | outerRadius | startAngle | endAngle = ^.asInstanceOf[js.Dynamic].applyDynamic("getVgPositionChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[x | y | x2 | y2 | innerRadius | outerRadius | startAngle | endAngle]
-  inline def getVgPositionChannel(channel: PositionChannel): x | y | x2 | y2 | innerRadius | outerRadius | startAngle | endAngle = ^.asInstanceOf[js.Dynamic].applyDynamic("getVgPositionChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[x | y | x2 | y2 | innerRadius | outerRadius | startAngle | endAngle]
+  inline def getVgPositionChannel(channel: PolarPositionChannel): x | x2 | y | y2 | innerRadius | outerRadius | startAngle | endAngle = ^.asInstanceOf[js.Dynamic].applyDynamic("getVgPositionChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[x | x2 | y | y2 | innerRadius | outerRadius | startAngle | endAngle]
+  inline def getVgPositionChannel(channel: PositionChannel): x | x2 | y | y2 | innerRadius | outerRadius | startAngle | endAngle = ^.asInstanceOf[js.Dynamic].applyDynamic("getVgPositionChannel")(channel.asInstanceOf[js.Any]).asInstanceOf[x | x2 | y | y2 | innerRadius | outerRadius | startAngle | endAngle]
   
   inline def isChannel(str: String): /* is vega-lite.vega-lite/build/src/channel.Channel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isChannel")(str.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/channel.Channel */ Boolean]
   
@@ -443,15 +458,19 @@ object channelMod {
   
   inline def isXorY(channel: ExtendedChannel): /* is vega-lite.vega-lite/build/src/channel.PositionScaleChannel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isXorY")(channel.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/channel.PositionScaleChannel */ Boolean]
   
+  inline def isXorYOffset(channel: Channel): /* is vega-lite.vega-lite/build/src/channel.OffsetScaleChannel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isXorYOffset")(channel.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/channel.OffsetScaleChannel */ Boolean]
+  
   inline def rangeType(channel: ExtendedChannel): RangeType = ^.asInstanceOf[js.Dynamic].applyDynamic("rangeType")(channel.asInstanceOf[js.Any]).asInstanceOf[RangeType]
   
   inline def supportLegend(channel: NonPositionScaleChannel): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportLegend")(channel.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def supportMark(channel: Channel, mark: Mark): binned | always = (^.asInstanceOf[js.Dynamic].applyDynamic("supportMark")(channel.asInstanceOf[js.Any], mark.asInstanceOf[js.Any])).asInstanceOf[binned | always]
+  inline def supportMark(channel: ExtendedChannel, mark: Mark): always | binned = (^.asInstanceOf[js.Dynamic].applyDynamic("supportMark")(channel.asInstanceOf[js.Any], mark.asInstanceOf[js.Any])).asInstanceOf[always | binned]
   
   /* keyof vega-lite.vega-lite/build/src/encoding.Encoding<any> */ /* Rewritten from type alias, can be one of: 
     - typings.vegaLite.vegaLiteStrings.x
     - typings.vegaLite.vegaLiteStrings.y
+    - typings.vegaLite.vegaLiteStrings.xOffset
+    - typings.vegaLite.vegaLiteStrings.yOffset
     - typings.vegaLite.vegaLiteStrings.x2
     - typings.vegaLite.vegaLiteStrings.y2
     - typings.vegaLite.vegaLiteStrings.longitude
@@ -535,9 +554,11 @@ object channelMod {
   */
   type MainChannelOf[C /* <: ExtendedChannel */] = _MainChannelOf[C] | C
   
-  type NonPositionChannel = /* import warning: importer.ImportType#apply Failed type conversion: std.Array<'text' | 'fill' | 'stroke' | 'color' | 'shape' | 'description' | 'opacity' | 'fillOpacity' | 'strokeOpacity' | 'strokeWidth' | 'strokeDash' | 'size' | 'angle' | 'detail' | 'key' | 'tooltip' | 'href' | 'url' | 'order'>[number] */ js.Any
+  type NonPositionChannel = /* import warning: importer.ImportType#apply Failed type conversion: std.Array<'fill' | 'description' | 'detail' | 'key' | 'url' | 'color' | 'fillOpacity' | 'opacity' | 'order' | 'stroke' | 'strokeOpacity' | 'strokeWidth' | 'text' | 'size' | 'strokeDash' | 'tooltip' | 'angle' | 'shape' | 'href'>[number] */ js.Any
   
-  type NonPositionScaleChannel = /* import warning: importer.ImportType#apply Failed type conversion: std.Array<'fill' | 'stroke' | 'color' | 'shape' | 'opacity' | 'fillOpacity' | 'strokeOpacity' | 'strokeWidth' | 'strokeDash' | 'size' | 'angle'>[number] */ js.Any
+  type NonPositionScaleChannel = /* import warning: importer.ImportType#apply Failed type conversion: std.Array<'fill' | 'color' | 'fillOpacity' | 'opacity' | 'stroke' | 'strokeOpacity' | 'strokeWidth' | 'size' | 'strokeDash' | 'angle' | 'shape'>[number] */ js.Any
+  
+  type OffsetScaleChannel = /* import warning: importer.ImportType#apply Failed type conversion: std.Array<'xOffset' | 'yOffset'>[0] */ js.Any
   
   /* keyof vega-lite.anon.Radius */ /* Rewritten from type alias, can be one of: 
     - typings.vegaLite.vegaLiteStrings.theta
@@ -567,7 +588,7 @@ object channelMod {
   */
   trait PositionScaleChannel extends StObject
   
-  type ScaleChannel = /* import warning: importer.ImportType#apply Failed type conversion: std.Array<'fill' | 'stroke' | 'color' | 'shape' | 'x' | 'y' | 'theta' | 'radius' | 'opacity' | 'fillOpacity' | 'strokeOpacity' | 'strokeWidth' | 'strokeDash' | 'size' | 'angle'>[number] */ js.Any
+  type ScaleChannel = /* import warning: importer.ImportType#apply Failed type conversion: std.Array<'fill' | 'color' | 'fillOpacity' | 'opacity' | 'stroke' | 'strokeOpacity' | 'strokeWidth' | 'size' | 'x' | 'y' | 'strokeDash' | 'angle' | 'shape' | 'radius' | 'theta' | 'xOffset' | 'yOffset'>[number] */ js.Any
   
   /* Rewritten from type alias, can be one of: 
     - scala.Unit
@@ -604,9 +625,9 @@ object channelMod {
     inline def y2: typings.vegaLite.vegaLiteStrings.y2 = "y2".asInstanceOf[typings.vegaLite.vegaLiteStrings.y2]
   }
   
-  type SingleDefChannel = /* import warning: importer.ImportType#apply Failed type conversion: std.Array<'text' | 'fill' | 'stroke' | 'color' | 'shape' | 'description' | 'x' | 'y' | 'x2' | 'y2' | 'longitude' | 'latitude' | 'longitude2' | 'latitude2' | 'theta' | 'theta2' | 'radius' | 'radius2' | 'opacity' | 'fillOpacity' | 'strokeOpacity' | 'strokeWidth' | 'strokeDash' | 'size' | 'angle' | 'key' | 'href' | 'url' | 'facet' | 'row' | 'column'>[number] */ js.Any
+  type SingleDefChannel = /* import warning: importer.ImportType#apply Failed type conversion: std.Array<'fill' | 'description' | 'key' | 'url' | 'color' | 'fillOpacity' | 'opacity' | 'stroke' | 'strokeOpacity' | 'strokeWidth' | 'text' | 'size' | 'x' | 'x2' | 'y' | 'y2' | 'strokeDash' | 'angle' | 'shape' | 'radius' | 'theta' | 'facet' | 'href' | 'theta2' | 'radius2' | 'xOffset' | 'yOffset' | 'longitude' | 'latitude' | 'longitude2' | 'latitude2' | 'row' | 'column'>[number] */ js.Any
   
-  type SingleDefUnitChannel = /* import warning: importer.ImportType#apply Failed type conversion: std.Array<'text' | 'fill' | 'stroke' | 'color' | 'shape' | 'description' | 'x' | 'y' | 'x2' | 'y2' | 'longitude' | 'latitude' | 'longitude2' | 'latitude2' | 'theta' | 'theta2' | 'radius' | 'radius2' | 'opacity' | 'fillOpacity' | 'strokeOpacity' | 'strokeWidth' | 'strokeDash' | 'size' | 'angle' | 'key' | 'href' | 'url'>[number] */ js.Any
+  type SingleDefUnitChannel = /* import warning: importer.ImportType#apply Failed type conversion: std.Array<'fill' | 'description' | 'key' | 'url' | 'color' | 'fillOpacity' | 'opacity' | 'stroke' | 'strokeOpacity' | 'strokeWidth' | 'text' | 'size' | 'x' | 'x2' | 'y' | 'y2' | 'strokeDash' | 'angle' | 'shape' | 'radius' | 'theta' | 'href' | 'theta2' | 'radius2' | 'xOffset' | 'yOffset' | 'longitude' | 'latitude' | 'longitude2' | 'latitude2'>[number] */ js.Any
   
   /* Inlined std.Partial<std.Record<vega-lite.vega-lite/build/src/mark.Mark, 'always' | 'binned'>> */
   trait SupportedMark extends StObject {

@@ -17,10 +17,10 @@ trait IClickRepeater
   /** [Method] Disables the repeater and stops events from firing
     * @param force Object
     */
-  var disable: js.UndefOr[js.Function1[/* force */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var disable: js.UndefOr[js.Function1[/* force */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Config Option] (String/HTMLElement/Ext.Element) */
-  var el: js.UndefOr[js.Any] = js.undefined
+  var el: js.UndefOr[Any] = js.undefined
   
   /** [Method] Enables the repeater and allows events to fire  */
   var enable: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -59,11 +59,11 @@ object IClickRepeater {
     
     inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
-    inline def setDisable(value: /* force */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction1(value))
+    inline def setDisable(value: /* force */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction1(value))
     
     inline def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
     
-    inline def setEl(value: js.Any): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
+    inline def setEl(value: Any): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
     
     inline def setElUndefined: Self = StObject.set(x, "el", js.undefined)
     

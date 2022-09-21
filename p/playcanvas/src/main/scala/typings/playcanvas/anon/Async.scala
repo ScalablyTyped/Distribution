@@ -9,15 +9,15 @@ trait Async extends StObject {
   
   var async: js.UndefOr[Boolean] = js.undefined
   
-  var cache: js.UndefOr[js.Any] = js.undefined
+  var cache: js.UndefOr[Boolean] = js.undefined
   
-  var headers: js.UndefOr[js.Any] = js.undefined
+  var headers: js.UndefOr[js.Object] = js.undefined
   
   var maxRetries: js.UndefOr[Double] = js.undefined
   
   var maxRetryDelay: js.UndefOr[Double] = js.undefined
   
-  var postdata: js.UndefOr[Document | js.Any] = js.undefined
+  var postdata: js.UndefOr[Document | js.Object] = js.undefined
   
   var responseType: js.UndefOr[String] = js.undefined
   
@@ -38,11 +38,11 @@ object Async {
     
     inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
     
-    inline def setCache(value: js.Any): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
     inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
-    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
@@ -54,7 +54,7 @@ object Async {
     
     inline def setMaxRetryDelayUndefined: Self = StObject.set(x, "maxRetryDelay", js.undefined)
     
-    inline def setPostdata(value: Document | js.Any): Self = StObject.set(x, "postdata", value.asInstanceOf[js.Any])
+    inline def setPostdata(value: Document | js.Object): Self = StObject.set(x, "postdata", value.asInstanceOf[js.Any])
     
     inline def setPostdataUndefined: Self = StObject.set(x, "postdata", js.undefined)
     

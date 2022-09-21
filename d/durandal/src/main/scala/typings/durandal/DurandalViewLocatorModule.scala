@@ -20,7 +20,7 @@ trait DurandalViewLocatorModule extends StObject {
     * @param {object} obj The object to determine the fallback id for.
     * @returns {string} The view id.
     */
-  def determineFallbackViewId(obj: js.Any): String = js.native
+  def determineFallbackViewId(obj: Any): String = js.native
   
   /**
     * Locates the specified view.
@@ -52,8 +52,8 @@ trait DurandalViewLocatorModule extends StObject {
     * @param {DOMElement[]} [elementsToSearch] An existing set of elements to search first.
     * @returns {Promise} A promise of the view.
     */
-  def locateViewForObject(obj: js.Any, area: String): DurandalPromise[HTMLElement] = js.native
-  def locateViewForObject(obj: js.Any, area: String, elementsToSearch: js.Array[HTMLElement]): DurandalPromise[HTMLElement] = js.native
+  def locateViewForObject(obj: Any, area: String): DurandalPromise[HTMLElement] = js.native
+  def locateViewForObject(obj: Any, area: String, elementsToSearch: js.Array[HTMLElement]): DurandalPromise[HTMLElement] = js.native
   
   /**
     * Takes a view id and translates it into a particular area. By default, no translation occurs.

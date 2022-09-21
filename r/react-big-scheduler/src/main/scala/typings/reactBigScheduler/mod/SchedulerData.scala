@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-big-scheduler", "SchedulerData")
 @js.native
-class SchedulerData protected () extends StObject {
+open class SchedulerData protected () extends StObject {
   def this(
     date: js.UndefOr[String],
     viewType: js.UndefOr[ViewTypes],

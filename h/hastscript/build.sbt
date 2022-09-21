@@ -1,13 +1,14 @@
 organization := "org.scalablytyped"
 name := "hastscript"
-version := "6.0.0-96569d"
-scalaVersion := "3.0.1"
+version := "7.0.2-eb65c4"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "hast" % "2.3-dt-20200515Z-6955f4",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab",
-  "org.scalablytyped" %%% "unist" % "2.0-dt-20190213Z-97095f")
+  "org.scalablytyped" %%% "hast" % "2.3-dt-20211202Z-8aa810",
+  "org.scalablytyped" %%% "property-information" % "6.1.1-c1ad28",
+  "org.scalablytyped" %%% "std" % "4.8-958c79",
+  "org.scalablytyped" %%% "unist" % "2.0-dt-20220624Z-f6f04e")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

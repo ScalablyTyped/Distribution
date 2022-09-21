@@ -10,10 +10,10 @@ A wrapper around react-router's Link that allows paths with parameters.
 | ------------------ | :-------------: |
 | Full name          | react-router-param-link |
 | Keywords           | link-component, component, parameter, dynamic, router, react |
-| # releases         | 3 |
-| # dependents       | 0 |
-| # downloads        | 471 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 48.333333333333336 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/mtsg/react-router-param-link#readme)

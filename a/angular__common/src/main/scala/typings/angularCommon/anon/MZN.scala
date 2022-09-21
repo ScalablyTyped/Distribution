@@ -23,14 +23,14 @@ object MZN {
     
     inline def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
     
-    inline def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value :_*))
+    inline def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value*))
     
     inline def setMZN(value: js.Array[String]): Self = StObject.set(x, "MZN", value.asInstanceOf[js.Any])
     
-    inline def setMZNVarargs(value: String*): Self = StObject.set(x, "MZN", js.Array(value :_*))
+    inline def setMZNVarargs(value: String*): Self = StObject.set(x, "MZN", js.Array(value*))
     
     inline def setUSD(value: js.Array[String]): Self = StObject.set(x, "USD", value.asInstanceOf[js.Any])
     
-    inline def setUSDVarargs(value: String*): Self = StObject.set(x, "USD", js.Array(value :_*))
+    inline def setUSDVarargs(value: String*): Self = StObject.set(x, "USD", js.Array(value*))
   }
 }

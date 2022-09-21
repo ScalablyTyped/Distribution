@@ -64,13 +64,13 @@ object EnvelopeFormData {
     
     inline def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
     
-    inline def setFormDataVarargs(value: FormDataItem*): Self = StObject.set(x, "formData", js.Array(value :_*))
+    inline def setFormDataVarargs(value: FormDataItem*): Self = StObject.set(x, "formData", js.Array(value*))
     
     inline def setRecipientFormData(value: js.Array[RecipientFormData]): Self = StObject.set(x, "recipientFormData", value.asInstanceOf[js.Any])
     
     inline def setRecipientFormDataUndefined: Self = StObject.set(x, "recipientFormData", js.undefined)
     
-    inline def setRecipientFormDataVarargs(value: RecipientFormData*): Self = StObject.set(x, "recipientFormData", js.Array(value :_*))
+    inline def setRecipientFormDataVarargs(value: RecipientFormData*): Self = StObject.set(x, "recipientFormData", js.Array(value*))
     
     inline def setSentDateTime(value: String): Self = StObject.set(x, "sentDateTime", value.asInstanceOf[js.Any])
     

@@ -10,10 +10,10 @@ object roomMod {
   
   @JSImport("material-ui/svg-icons/action/room", JSImport.Default)
   @js.native
-  class default () extends ActionRoom
+  open class default () extends ActionRoom
   
   @JSImport("material-ui/svg-icons/action/room", "ActionRoom")
   @js.native
-  class ActionRoom ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionRoom ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

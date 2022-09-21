@@ -82,10 +82,6 @@ object reactBootstrapStrings {
   inline def success: success = "success".asInstanceOf[success]
   
   @js.native
-  sealed trait title extends StObject
-  inline def title: title = "title".asInstanceOf[title]
-  
-  @js.native
   sealed trait `type` extends StObject
   inline def `type`: `type` = "type".asInstanceOf[`type`]
   

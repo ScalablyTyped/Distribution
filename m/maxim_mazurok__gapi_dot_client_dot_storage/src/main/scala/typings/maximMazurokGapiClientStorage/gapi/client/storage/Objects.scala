@@ -32,7 +32,7 @@ object Objects {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: Object*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Object*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
@@ -46,6 +46,6 @@ object Objects {
     
     inline def setPrefixesUndefined: Self = StObject.set(x, "prefixes", js.undefined)
     
-    inline def setPrefixesVarargs(value: String*): Self = StObject.set(x, "prefixes", js.Array(value :_*))
+    inline def setPrefixesVarargs(value: String*): Self = StObject.set(x, "prefixes", js.Array(value*))
   }
 }

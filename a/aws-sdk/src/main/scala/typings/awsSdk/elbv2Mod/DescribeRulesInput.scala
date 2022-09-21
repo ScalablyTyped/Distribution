@@ -51,6 +51,6 @@ object DescribeRulesInput {
     
     inline def setRuleArnsUndefined: Self = StObject.set(x, "RuleArns", js.undefined)
     
-    inline def setRuleArnsVarargs(value: RuleArn*): Self = StObject.set(x, "RuleArns", js.Array(value :_*))
+    inline def setRuleArnsVarargs(value: RuleArn*): Self = StObject.set(x, "RuleArns", js.Array(value*))
   }
 }

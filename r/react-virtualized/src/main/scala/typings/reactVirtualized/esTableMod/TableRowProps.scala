@@ -8,7 +8,7 @@ trait TableRowProps extends StObject {
   
   var className: String
   
-  var columns: js.Array[js.Any]
+  var columns: js.Array[Any]
   
   var index: Double
   
@@ -26,20 +26,20 @@ trait TableRowProps extends StObject {
   
   var onRowRightClick: js.UndefOr[js.Function1[/* params */ RowMouseEventHandlerParams, Unit]] = js.undefined
   
-  var rowData: js.Any
+  var rowData: Any
   
-  var style: js.Any
+  var style: Any
 }
 object TableRowProps {
   
   inline def apply(
     className: String,
-    columns: js.Array[js.Any],
+    columns: js.Array[Any],
     index: Double,
     isScrolling: Boolean,
     key: String,
-    rowData: js.Any,
-    style: js.Any
+    rowData: Any,
+    style: Any
   ): TableRowProps = {
     val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], columns = columns.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], isScrolling = isScrolling.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], rowData = rowData.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableRowProps]
@@ -49,9 +49,9 @@ object TableRowProps {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    inline def setColumns(value: js.Array[js.Any]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: js.Array[Any]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    inline def setColumnsVarargs(value: js.Any*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: Any*): Self = StObject.set(x, "columns", js.Array(value*))
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
@@ -79,8 +79,8 @@ object TableRowProps {
     
     inline def setOnRowRightClickUndefined: Self = StObject.set(x, "onRowRightClick", js.undefined)
     
-    inline def setRowData(value: js.Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
+    inline def setRowData(value: Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
     
-    inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

@@ -12,7 +12,8 @@ object weakMapMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("core-js/es6/weak-map", JSImport.Namespace)
   @js.native
-  class ^[K /* <: js.Object */, V] ()
+  /* standard es2015.collection */
+  open class ^[K /* <: js.Object */, V] ()
     extends StObject
        with WeakMap[K, V] {
     def this(entries: js.Array[js.Tuple2[K, V]]) = this()

@@ -31,6 +31,6 @@ object CompromisedCredentialsRiskConfigurationType {
     
     inline def setEventFilterUndefined: Self = StObject.set(x, "EventFilter", js.undefined)
     
-    inline def setEventFilterVarargs(value: EventFilterType*): Self = StObject.set(x, "EventFilter", js.Array(value :_*))
+    inline def setEventFilterVarargs(value: EventFilterType*): Self = StObject.set(x, "EventFilter", js.Array(value*))
   }
 }

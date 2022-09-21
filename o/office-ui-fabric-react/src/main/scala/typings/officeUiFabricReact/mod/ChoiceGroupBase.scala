@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react", "ChoiceGroupBase")
 @js.native
-class ChoiceGroupBase protected ()
+open class ChoiceGroupBase protected ()
   extends typings.officeUiFabricReact.libChoiceGroupMod.ChoiceGroupBase {
   def this(props: IChoiceGroupProps) = this()
 }

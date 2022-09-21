@@ -3,7 +3,6 @@ package typings.ariClient.mod
 import typings.ariClient.anon.ApplicationName
 import typings.ariClient.anon.EventSource
 import typings.ariClient.anon.Filter
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,7 +41,7 @@ trait Applications extends StObject {
     * @param params.applicationName - Applications name.
     * @param [params.filter] - Specify which event types to allow/disallow.
     */
-  def filter(params: Filter, callback: js.Function2[/* err */ Error, /* application */ Application, Unit]): Unit = js.native
+  def filter(params: Filter, callback: js.Function2[/* err */ js.Error, /* application */ Application, Unit]): Unit = js.native
   
   /**
     * Get details of an application.
@@ -57,7 +56,7 @@ trait Applications extends StObject {
     */
   def get(
     params: ApplicationName,
-    callback: js.Function2[/* err */ Error, /* application */ Application, Unit]
+    callback: js.Function2[/* err */ js.Error, /* application */ Application, Unit]
   ): Unit = js.native
   
   /**
@@ -67,7 +66,7 @@ trait Applications extends StObject {
   /**
     * List all applications.
     */
-  def list(callback: js.Function2[/* err */ Error, /* applications */ js.Array[Application], Unit]): Unit = js.native
+  def list(callback: js.Function2[/* err */ js.Error, /* applications */ js.Array[Application], Unit]): Unit = js.native
   
   /**
     * Subscribe an application to a event source.
@@ -84,7 +83,10 @@ trait Applications extends StObject {
     * @param params.applicationName - Applications name.
     * @param params.eventSource - URI for event source (channel:{channelId}, bridge:{bridgeId}, endpoint:{tech}[/{resource}], deviceState:{deviceName}.
     */
-  def subscribe(params: EventSource, callback: js.Function2[/* err */ Error, /* application */ Application, Unit]): Unit = js.native
+  def subscribe(
+    params: EventSource,
+    callback: js.Function2[/* err */ js.Error, /* application */ Application, Unit]
+  ): Unit = js.native
   
   /**
     * Unsubscribe an application from an event source.
@@ -101,5 +103,8 @@ trait Applications extends StObject {
     * @param params.applicationName - Applications name.
     * @param params.eventSource - URI for event source (channel:{channelId}, bridge:{bridgeId}, endpoint:{tech}[/{resource}], deviceState:{deviceName}.
     */
-  def unsubscribe(params: EventSource, callback: js.Function2[/* err */ Error, /* application */ Application, Unit]): Unit = js.native
+  def unsubscribe(
+    params: EventSource,
+    callback: js.Function2[/* err */ js.Error, /* application */ Application, Unit]
+  ): Unit = js.native
 }

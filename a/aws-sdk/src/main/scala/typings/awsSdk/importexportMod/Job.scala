@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Job extends StObject {
   
-  var CreationDate: js.UndefOr[typings.awsSdk.importexportMod.CreationDate] = js.undefined
+  var CreationDate: js.UndefOr[js.Date] = js.undefined
   
   var IsCanceled: js.UndefOr[typings.awsSdk.importexportMod.IsCanceled] = js.undefined
   
@@ -23,7 +23,7 @@ object Job {
   
   extension [Self <: Job](x: Self) {
     
-    inline def setCreationDate(value: CreationDate): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     

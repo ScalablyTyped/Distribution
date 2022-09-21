@@ -17,7 +17,7 @@ trait Trace extends StObject {
   var Id: js.UndefOr[TraceId] = js.undefined
   
   /**
-    * LimitExceeded is set to true when the trace has exceeded one of the defined quotas. For more information about quotas, see AWS X-Ray endpoints and quotas.
+    * LimitExceeded is set to true when the trace has exceeded one of the defined quotas. For more information about quotas, see Amazon Web Services X-Ray endpoints and quotas.
     */
   var LimitExceeded: js.UndefOr[NullableBoolean] = js.undefined
   
@@ -51,6 +51,6 @@ object Trace {
     
     inline def setSegmentsUndefined: Self = StObject.set(x, "Segments", js.undefined)
     
-    inline def setSegmentsVarargs(value: Segment*): Self = StObject.set(x, "Segments", js.Array(value :_*))
+    inline def setSegmentsVarargs(value: Segment*): Self = StObject.set(x, "Segments", js.Array(value*))
   }
 }

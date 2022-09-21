@@ -42,12 +42,17 @@ trait RevokeSecurityGroupIngressRequest extends StObject {
   var IpProtocol: js.UndefOr[String] = js.undefined
   
   /**
+    * The IDs of the security group rules.
+    */
+  var SecurityGroupRuleIds: js.UndefOr[SecurityGroupRuleIdList] = js.undefined
+  
+  /**
     * [EC2-Classic, default VPC] The name of the source security group. You can't specify this parameter in combination with the following parameters: the CIDR IP address range, the start of the port range, the IP protocol, and the end of the port range. For EC2-VPC, the source security group must be in the same VPC. To revoke a specific rule for an IP protocol and port range, use a set of IP permissions instead.
     */
   var SourceSecurityGroupName: js.UndefOr[String] = js.undefined
   
   /**
-    * [EC2-Classic] The AWS account ID of the source security group, if the source security group is in a different account. You can't specify this parameter in combination with the following parameters: the CIDR IP address range, the IP protocol, the start of the port range, and the end of the port range. To revoke a specific rule for an IP protocol and port range, use a set of IP permissions instead.
+    * [EC2-Classic] The Amazon Web Services account ID of the source security group, if the source security group is in a different account. You can't specify this parameter in combination with the following parameters: the CIDR IP address range, the IP protocol, the start of the port range, and the end of the port range. To revoke a specific rule for an IP protocol and port range, use a set of IP permissions instead.
     */
   var SourceSecurityGroupOwnerId: js.UndefOr[String] = js.undefined
   
@@ -89,11 +94,17 @@ object RevokeSecurityGroupIngressRequest {
     
     inline def setIpPermissionsUndefined: Self = StObject.set(x, "IpPermissions", js.undefined)
     
-    inline def setIpPermissionsVarargs(value: IpPermission*): Self = StObject.set(x, "IpPermissions", js.Array(value :_*))
+    inline def setIpPermissionsVarargs(value: IpPermission*): Self = StObject.set(x, "IpPermissions", js.Array(value*))
     
     inline def setIpProtocol(value: String): Self = StObject.set(x, "IpProtocol", value.asInstanceOf[js.Any])
     
     inline def setIpProtocolUndefined: Self = StObject.set(x, "IpProtocol", js.undefined)
+    
+    inline def setSecurityGroupRuleIds(value: SecurityGroupRuleIdList): Self = StObject.set(x, "SecurityGroupRuleIds", value.asInstanceOf[js.Any])
+    
+    inline def setSecurityGroupRuleIdsUndefined: Self = StObject.set(x, "SecurityGroupRuleIds", js.undefined)
+    
+    inline def setSecurityGroupRuleIdsVarargs(value: String*): Self = StObject.set(x, "SecurityGroupRuleIds", js.Array(value*))
     
     inline def setSourceSecurityGroupName(value: String): Self = StObject.set(x, "SourceSecurityGroupName", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,7 @@ object GoogleActionsV2OrdersGenericExtension {
     
     inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
     
-    inline def setLocationsVarargs(value: GoogleActionsV2OrdersOrderLocation*): Self = StObject.set(x, "locations", js.Array(value :_*))
+    inline def setLocationsVarargs(value: GoogleActionsV2OrdersOrderLocation*): Self = StObject.set(x, "locations", js.Array(value*))
     
     inline def setTime(value: GoogleActionsV2OrdersTime): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     

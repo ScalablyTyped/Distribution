@@ -11,31 +11,53 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("katex", JSImport.Namespace)
+  @JSImport("katex", JSImport.Default)
   @js.native
-  val ^ : js.Any = js.native
+  open class default ()
+    extends StObject
+       with typings.katex.mod.katex
+  /* static members */
+  object default {
+    
+    @JSImport("katex", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Renders a TeX expression into the specified DOM element
+      * @param tex A TeX expression
+      * @param element The DOM element to render into
+      * @param options KaTeX options
+      */
+    inline def render(tex: String, element: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(tex.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def render(tex: String, element: HTMLElement, options: KatexOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(tex.asInstanceOf[js.Any], element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    /**
+      * Renders a TeX expression into an HTML string
+      * @param tex A TeX expression
+      * @param options KaTeX options
+      */
+    inline def renderToString(tex: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("renderToString")(tex.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def renderToString(tex: String, options: KatexOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("renderToString")(tex.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  }
   
   @JSImport("katex", "ParseError")
   @js.native
-  class ParseError protected ()
+  open class ParseError protected ()
     extends StObject
        with Error {
-    def this(message: String, lexer: js.Any, position: Double) = this()
+    def this(message: String, lexer: Any, position: Double) = this()
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     
     var position: Double = js.native
   }
-  
-  inline def render(tex: String, element: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(tex.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def render(tex: String, element: HTMLElement, options: KatexOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(tex.asInstanceOf[js.Any], element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def renderToString(tex: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("renderToString")(tex.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def renderToString(tex: String, options: KatexOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("renderToString")(tex.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait KatexOptions extends StObject {
     
@@ -94,7 +116,7 @@ object mod {
       *
       * See `src/macros.js` for its usage
       */
-    var macros: js.UndefOr[js.Any] = js.undefined
+    var macros: js.UndefOr[Any] = js.undefined
     
     /**
       * Limit the number of macro expansions to specified number
@@ -200,7 +222,7 @@ object mod {
       
       inline def setLeqnoUndefined: Self = StObject.set(x, "leqno", js.undefined)
       
-      inline def setMacros(value: js.Any): Self = StObject.set(x, "macros", value.asInstanceOf[js.Any])
+      inline def setMacros(value: Any): Self = StObject.set(x, "macros", value.asInstanceOf[js.Any])
       
       inline def setMacrosUndefined: Self = StObject.set(x, "macros", js.undefined)
       
@@ -260,4 +282,6 @@ object mod {
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
+  
+  trait katex extends StObject
 }

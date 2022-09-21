@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-beautiful-dnd", "Draggable")
 @js.native
-class Draggable protected ()
-  extends Component[DraggableProps, js.Object, js.Any] {
+open class Draggable protected ()
+  extends Component[DraggableProps, js.Object, Any] {
   def this(props: DraggableProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: DraggableProps, context: js.Any) = this()
+  def this(props: DraggableProps, context: Any) = this()
 }

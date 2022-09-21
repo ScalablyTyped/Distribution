@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("react-latex-next/dist", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.reactLatexNext.latexMod.default
   /* static members */
   object default {

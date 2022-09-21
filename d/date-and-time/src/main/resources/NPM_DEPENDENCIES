@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "date-and-time" : "2.4.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "date-and-time" : "2.4.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

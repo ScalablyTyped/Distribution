@@ -11,17 +11,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Upper extends StObject {
   
-  var color: js.UndefOr[js.Any] = js.undefined
+  var color: js.UndefOr[Any] = js.undefined
   
-  var extend: js.UndefOr[ExtendType[Record[String, js.Any]]] = js.undefined
+  var extend: js.UndefOr[ExtendType[Record[String, Any]]] = js.undefined
   
   var height: js.UndefOr[String] = js.undefined
   
-  var lower: js.UndefOr[`7`] = js.undefined
+  var lower: js.UndefOr[`9`] = js.undefined
   
   var opacity: js.UndefOr[OpacityType] = js.undefined
   
-  var upper: js.UndefOr[`7`] = js.undefined
+  var upper: js.UndefOr[`9`] = js.undefined
 }
 object Upper {
   
@@ -32,13 +32,13 @@ object Upper {
   
   extension [Self <: Upper](x: Self) {
     
-    inline def setColor(value: js.Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setExtend(value: ExtendType[Record[String, js.Any]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+    inline def setExtend(value: ExtendType[Record[String, Any]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     
-    inline def setExtendFunction1(value: /* props */ ExtendProps[Record[String, js.Any]] => ExtendValue[Record[String, js.Any]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtendFunction1(value: /* props */ ExtendProps[Record[String, Any]] => ExtendValue[Record[String, Any]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
     inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
@@ -46,7 +46,7 @@ object Upper {
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    inline def setLower(value: `7`): Self = StObject.set(x, "lower", value.asInstanceOf[js.Any])
+    inline def setLower(value: `9`): Self = StObject.set(x, "lower", value.asInstanceOf[js.Any])
     
     inline def setLowerUndefined: Self = StObject.set(x, "lower", js.undefined)
     
@@ -54,7 +54,7 @@ object Upper {
     
     inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    inline def setUpper(value: `7`): Self = StObject.set(x, "upper", value.asInstanceOf[js.Any])
+    inline def setUpper(value: `9`): Self = StObject.set(x, "upper", value.asInstanceOf[js.Any])
     
     inline def setUpperUndefined: Self = StObject.set(x, "upper", js.undefined)
   }

@@ -8,9 +8,9 @@ trait FlowEdge extends StObject {
   
   def addResidualFlowTo(x: Double, deltaFlow: Double): Unit
   
-  /* private */ var capacity: js.Any
+  /* private */ var capacity: Any
   
-  /* private */ var flow: js.Any
+  /* private */ var flow: Any
   
   def from(): Double
   
@@ -22,22 +22,22 @@ trait FlowEdge extends StObject {
   
   def to(): Double
   
-  /* private */ var v: js.Any
+  /* private */ var v: Any
   
-  /* private */ var w: js.Any
+  /* private */ var w: Any
 }
 object FlowEdge {
   
   inline def apply(
     addResidualFlowTo: (Double, Double) => Unit,
-    capacity: js.Any,
-    flow: js.Any,
+    capacity: Any,
+    flow: Any,
     from: () => Double,
     other: Double => Double,
     residualCapacityTo: Double => Double,
     to: () => Double,
-    v: js.Any,
-    w: js.Any
+    v: Any,
+    w: Any
   ): FlowEdge = {
     val __obj = js.Dynamic.literal(addResidualFlowTo = js.Any.fromFunction2(addResidualFlowTo), capacity = capacity.asInstanceOf[js.Any], flow = flow.asInstanceOf[js.Any], from = js.Any.fromFunction0(from), other = js.Any.fromFunction1(other), residualCapacityTo = js.Any.fromFunction1(residualCapacityTo), to = js.Any.fromFunction0(to), v = v.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowEdge]
@@ -47,9 +47,9 @@ object FlowEdge {
     
     inline def setAddResidualFlowTo(value: (Double, Double) => Unit): Self = StObject.set(x, "addResidualFlowTo", js.Any.fromFunction2(value))
     
-    inline def setCapacity(value: js.Any): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
+    inline def setCapacity(value: Any): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
     
-    inline def setFlow(value: js.Any): Self = StObject.set(x, "flow", value.asInstanceOf[js.Any])
+    inline def setFlow(value: Any): Self = StObject.set(x, "flow", value.asInstanceOf[js.Any])
     
     inline def setFrom(value: () => Double): Self = StObject.set(x, "from", js.Any.fromFunction0(value))
     
@@ -63,8 +63,8 @@ object FlowEdge {
     
     inline def setTo(value: () => Double): Self = StObject.set(x, "to", js.Any.fromFunction0(value))
     
-    inline def setV(value: js.Any): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+    inline def setV(value: Any): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
     
-    inline def setW(value: js.Any): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+    inline def setW(value: Any): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
   }
 }

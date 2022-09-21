@@ -8,9 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("AudioWorkletNode")
 @js.native
-class AudioWorkletNode protected ()
+open class AudioWorkletNode protected ()
   extends StObject
      with typings.std.AudioWorkletNode {
+  /* standard dom */
   def this(context: typings.std.BaseAudioContext, name: java.lang.String) = this()
   def this(context: typings.std.BaseAudioContext, name: java.lang.String, options: AudioWorkletNodeOptions) = this()
 }

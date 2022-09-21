@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Globalization
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -100,7 +99,7 @@ trait Calendar extends StObject {
     * @param other The DateTime object to compare to the current calendar.
     * @return One of the following values:
     */
-  def compareDateTime(other: Date): Double = js.native
+  def compareDateTime(other: js.Date): Double = js.native
   
   /**
     * Copies the values from another Calendar object into this Calendar.
@@ -206,7 +205,7 @@ trait Calendar extends StObject {
     * Builds a date and time, given the components of this Calendar object.
     * @return The DateTime representing the date and time of this Calendar .
     */
-  def getDateTime(): Date = js.native
+  def getDateTime(): js.Date = js.native
   
   /**
     * Gets the identifier that identifies the time zone that is used by this Calendar object.
@@ -397,7 +396,7 @@ trait Calendar extends StObject {
     * Sets all the date and time fields to the date and time represented by the DateTime parameter.
     * @param value The DateTime that is used to set all of the date and time fields.
     */
-  def setDateTime(value: Date): Unit = js.native
+  def setDateTime(value: js.Date): Unit = js.native
   
   /** Sets the components of this Calendar object to the latest date and time that are supported. */
   def setToMax(): Unit = js.native

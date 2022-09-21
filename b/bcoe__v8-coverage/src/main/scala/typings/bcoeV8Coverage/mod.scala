@@ -22,7 +22,7 @@ object mod {
   
   @JSImport("@bcoe/v8-coverage", "RangeTree")
   @js.native
-  class RangeTree protected ()
+  open class RangeTree protected ()
     extends typings.bcoeV8Coverage.rangeTreeMod.RangeTree {
     def this(
       start: Double,

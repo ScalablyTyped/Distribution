@@ -25,7 +25,7 @@ object locationSubscribersMod {
   
   trait EventObject
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var watchId: Double
   }
@@ -44,13 +44,13 @@ object locationSubscribersMod {
   
   trait Subscriber[CallbackType /* <: LocationCallback | LocationHeadingCallback */] extends StObject {
     
-    /* private */ var callbacks: js.Any
+    /* private */ var callbacks: Any
     
-    /* private */ var eventDataField: js.Any
+    /* private */ var eventDataField: Any
     
-    /* private */ var eventName: js.Any
+    /* private */ var eventName: Any
     
-    /* private */ var eventSubscription: js.Any
+    /* private */ var eventSubscription: Any
     
     def maybeInitializeSubscription(): Unit
     
@@ -69,10 +69,10 @@ object locationSubscribersMod {
   object Subscriber {
     
     inline def apply[CallbackType /* <: LocationCallback | LocationHeadingCallback */](
-      callbacks: js.Any,
-      eventDataField: js.Any,
-      eventName: js.Any,
-      eventSubscription: js.Any,
+      callbacks: Any,
+      eventDataField: Any,
+      eventName: Any,
+      eventSubscription: Any,
       maybeInitializeSubscription: () => Unit,
       registerCallback: CallbackType => Double,
       trigger: EventObject => Unit,
@@ -84,13 +84,13 @@ object locationSubscribersMod {
     
     extension [Self <: Subscriber[?], CallbackType /* <: LocationCallback | LocationHeadingCallback */](x: Self & Subscriber[CallbackType]) {
       
-      inline def setCallbacks(value: js.Any): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
+      inline def setCallbacks(value: Any): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
-      inline def setEventDataField(value: js.Any): Self = StObject.set(x, "eventDataField", value.asInstanceOf[js.Any])
+      inline def setEventDataField(value: Any): Self = StObject.set(x, "eventDataField", value.asInstanceOf[js.Any])
       
-      inline def setEventName(value: js.Any): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
+      inline def setEventName(value: Any): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
       
-      inline def setEventSubscription(value: js.Any): Self = StObject.set(x, "eventSubscription", value.asInstanceOf[js.Any])
+      inline def setEventSubscription(value: Any): Self = StObject.set(x, "eventSubscription", value.asInstanceOf[js.Any])
       
       inline def setMaybeInitializeSubscription(value: () => Unit): Self = StObject.set(x, "maybeInitializeSubscription", js.Any.fromFunction0(value))
       

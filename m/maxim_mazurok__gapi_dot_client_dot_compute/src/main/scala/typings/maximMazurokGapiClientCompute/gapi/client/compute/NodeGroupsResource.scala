@@ -1,8 +1,8 @@
 package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import typings.gapiClient.gapi.client.Request
+import typings.maximMazurokGapiClientCompute.anon.Accesstoken
 import typings.maximMazurokGapiClientCompute.anon.Alt
-import typings.maximMazurokGapiClientCompute.anon.Fields
 import typings.maximMazurokGapiClientCompute.anon.FieldsInitialNodeCount
 import typings.maximMazurokGapiClientCompute.anon.FieldsKeyNodeGroup
 import typings.maximMazurokGapiClientCompute.anon.InitialNodeCount
@@ -26,7 +26,7 @@ trait NodeGroupsResource extends StObject {
   
   /** Retrieves an aggregated list of node groups. Note: use nodeGroups.listNodes for more details about each group. */
   def aggregatedList(): Request[NodeGroupAggregatedList] = js.native
-  def aggregatedList(request: Alt): Request[NodeGroupAggregatedList] = js.native
+  def aggregatedList(request: Accesstoken): Request[NodeGroupAggregatedList] = js.native
   
   /** Deletes the specified NodeGroup resource. */
   def delete(): Request[Operation] = js.native
@@ -50,7 +50,7 @@ trait NodeGroupsResource extends StObject {
   
   /** Retrieves a list of node groups available to the specified project. Note: use nodeGroups.listNodes for more details about each group. */
   def list(): Request[NodeGroupList] = js.native
-  def list(request: Fields): Request[NodeGroupList] = js.native
+  def list(request: Alt): Request[NodeGroupList] = js.native
   
   /** Lists nodes in the node group. */
   def listNodes(): Request[NodeGroupsListNodes] = js.native

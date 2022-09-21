@@ -58,9 +58,27 @@ trait SmartMappingSliderBaseProperties
   /**
     * Defines how slider thumb values should be rounded.
     *
+    * @default 4
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html#precision)
     */
   var precision: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * When `true`, all segments will sync together in updating thumb values when the user drags any segment.
+    *
+    * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html#syncedSegmentsEnabled)
+    */
+  var syncedSegmentsEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * The visible elements that are displayed within the widget.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html#visibleElements)
+    */
+  var visibleElements: js.UndefOr[SmartMappingSliderBaseVisibleElements] = js.undefined
   
   /**
     * Zooms the slider track to the bounds provided in this property.
@@ -111,6 +129,14 @@ object SmartMappingSliderBaseProperties {
     inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     
     inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
+    
+    inline def setSyncedSegmentsEnabled(value: Boolean): Self = StObject.set(x, "syncedSegmentsEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setSyncedSegmentsEnabledUndefined: Self = StObject.set(x, "syncedSegmentsEnabled", js.undefined)
+    
+    inline def setVisibleElements(value: SmartMappingSliderBaseVisibleElements): Self = StObject.set(x, "visibleElements", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleElementsUndefined: Self = StObject.set(x, "visibleElements", js.undefined)
     
     inline def setZoomOptions(value: SmartMappingSliderBaseZoomOptions): Self = StObject.set(x, "zoomOptions", value.asInstanceOf[js.Any])
     

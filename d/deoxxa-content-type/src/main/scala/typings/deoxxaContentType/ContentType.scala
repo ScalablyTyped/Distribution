@@ -10,7 +10,7 @@ object ContentType {
   
   trait MediaType extends StObject {
     
-    var params: js.Any
+    var params: Any
     
     var q: js.UndefOr[Double] = js.undefined
     
@@ -18,7 +18,7 @@ object ContentType {
   }
   object MediaType {
     
-    inline def apply(params: js.Any, `type`: String): MediaType = {
+    inline def apply(params: Any, `type`: String): MediaType = {
       val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[MediaType]
@@ -26,7 +26,7 @@ object ContentType {
     
     extension [Self <: MediaType](x: Self) {
       
-      inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setQ(value: Double): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
       
@@ -40,7 +40,7 @@ object ContentType {
   trait MediaTypeStatic
     extends StObject
        with Instantiable1[/* s */ String, MediaType]
-       with Instantiable2[/* s */ String, /* p */ js.Any, MediaType] {
+       with Instantiable2[/* s */ String, /* p */ Any, MediaType] {
     
     def mediaCmp(a: MediaType, b: MediaType): Double = js.native
     

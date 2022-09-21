@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.Reciprocal")
 @js.native
-class Reciprocal ()
+open class Reciprocal ()
   extends typings.ranjs.mod.dist.Reciprocal {
   def this(a: Double) = this()
   def this(a: Double, b: Double) = this()

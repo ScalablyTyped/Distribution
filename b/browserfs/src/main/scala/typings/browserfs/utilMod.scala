@@ -4,9 +4,7 @@ import org.scalablytyped.runtime.NumberDictionary
 import typings.browserfs.fileSystemMod.BFSOneArgCallback
 import typings.browserfs.fileSystemMod.FileSystem
 import typings.browserfs.fileSystemMod.FileSystemConstructor
-import typings.node.Buffer
-import typings.std.ArrayBuffer
-import typings.std.Uint8Array
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,24 +15,24 @@ object utilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def arrayBuffer2Buffer(ab: ArrayBuffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayBuffer2Buffer")(ab.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def arrayBuffer2Buffer(ab: js.typedarray.ArrayBuffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayBuffer2Buffer")(ab.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
   inline def arrayish2Buffer(arr: Arrayish[Double]): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayish2Buffer")(arr.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  inline def buffer2ArrayBuffer(buff: Buffer): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer2ArrayBuffer")(buff.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
+  inline def buffer2ArrayBuffer(buff: Buffer): js.typedarray.ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer2ArrayBuffer")(buff.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.ArrayBuffer]
   
-  inline def buffer2Uint8array(buff: Buffer): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer2Uint8array")(buff.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def buffer2Uint8array(buff: Buffer): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer2Uint8array")(buff.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   
   inline def bufferValidator(v: js.Object, cb: BFSOneArgCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferValidator")(v.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def checkOptions(fsType: FileSystemConstructor, opts: js.Any, cb: BFSOneArgCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkOptions")(fsType.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def checkOptions(fsType: FileSystemConstructor, opts: Any, cb: BFSOneArgCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkOptions")(fsType.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def copyingSlice(buff: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("copyingSlice")(buff.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   inline def copyingSlice(buff: Buffer, start: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("copyingSlice")(buff.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   inline def copyingSlice(buff: Buffer, start: Double, end: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("copyingSlice")(buff.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   inline def copyingSlice(buff: Buffer, start: Unit, end: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("copyingSlice")(buff.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  inline def deprecationMessage(print: Boolean, fsName: String, opts: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deprecationMessage")(print.asInstanceOf[js.Any], fsName.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def deprecationMessage(print: Boolean, fsName: String, opts: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deprecationMessage")(print.asInstanceOf[js.Any], fsName.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def emptyBuffer(): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("emptyBuffer")().asInstanceOf[Buffer]
   
@@ -50,7 +48,7 @@ object utilMod {
   
   inline def mkdirpSync(p: String, mode: Double, fs: FileSystem): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirpSync")(p.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], fs.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def uint8Array2Buffer(u8: Uint8Array): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("uint8Array2Buffer")(u8.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def uint8Array2Buffer(u8: js.typedarray.Uint8Array): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("uint8Array2Buffer")(u8.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
   trait Arrayish[T]
     extends StObject

@@ -1,15 +1,14 @@
 package typings.firebaseInstallations
 
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bufferToBase64UrlSafeMod {
   
-  @JSImport("@firebase/installations/dist/src/helpers/buffer-to-base64-url-safe", JSImport.Namespace)
+  @JSImport("@firebase/installations/dist/esm/src/helpers/buffer-to-base64-url-safe", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def bufferToBase64UrlSafe(array: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bufferToBase64UrlSafe")(array.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def bufferToBase64UrlSafe(array: js.typedarray.Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bufferToBase64UrlSafe")(array.asInstanceOf[js.Any]).asInstanceOf[String]
 }

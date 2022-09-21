@@ -10,12 +10,10 @@ object paginationNextMod {
   
   @JSImport("react-bootstrap/lib/PaginationNext", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[PaginationNextProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[PaginationNextProps, js.Object, Any]
   
-  @js.native
-  trait PaginationNext
-    extends Component[PaginationNextProps, js.Object, js.Any]
+  type PaginationNext = Component[PaginationNextProps, js.Object, Any]
   
   trait PaginationNextProps
     extends StObject

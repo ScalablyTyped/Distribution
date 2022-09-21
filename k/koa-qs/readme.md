@@ -10,10 +10,10 @@ qs for koa
 | ------------------ | :-------------: |
 | Full name          | koa-qs |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 74 |
-| # downloads        | 1675577 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 82858.66666666667 |
+| # stars            | 83.0 |
 
 ## Links
 - [Homepage](https://github.com/koajs/qs#readme)

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      ".ansi-to-html-x9bQETxB" : "0.6.15"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      ".ansi-to-html-x9bQETxB" : "0.6.15"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

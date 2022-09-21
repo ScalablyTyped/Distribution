@@ -1,5 +1,6 @@
 package typings.ipAddress
 
+import typings.ipAddress.commonMod.ReverseFormOptions
 import typings.ipAddress.ipv6Mod.Address6
 import typings.jsbn.mod.BigInteger
 import org.scalablytyped.runtime.StObject
@@ -8,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ipv4Mod {
   
-  @JSImport("ip-address/dist/lib/ipv4", "Address4")
+  @JSImport("ip-address/dist/cjs/lib/ipv4", "Address4")
   @js.native
-  class Address4 protected () extends StObject {
+  open class Address4 protected () extends StObject {
     def this(address: String) = this()
     
     /**
@@ -141,6 +142,17 @@ object ipv4Mod {
     var parsedSubnet: String = js.native
     
     /**
+      * Return the reversed ip6.arpa form of the address
+      * @memberof Address4
+      * @param {Object} options
+      * @param {boolean} options.omitSuffix - omit the "in-addr.arpa" suffix
+      * @instance
+      * @returns {String}
+      */
+    def reverseForm(): String = js.native
+    def reverseForm(options: ReverseFormOptions): String = js.native
+    
+    /**
       * The first address in the range given by this address' subnet.
       * Often referred to as the Network Address.
       * @memberof Address4
@@ -191,9 +203,21 @@ object ipv4Mod {
   /* static members */
   object Address4 {
     
-    @JSImport("ip-address/dist/lib/ipv4", "Address4")
+    @JSImport("ip-address/dist/cjs/lib/ipv4", "Address4")
     @js.native
     val ^ : js.Any = js.native
+    
+    /**
+      * Return an address from in-addr.arpa form
+      * @memberof Address4
+      * @static
+      * @param {string} arpaFormAddress - an 'in-addr.arpa' form ipv4 address
+      * @returns {Adress4}
+      * @example
+      * var address = Address4.fromArpa(42.2.0.192.in-addr.arpa.)
+      * address.correctForm(); // '192.0.2.42'
+      */
+    inline def fromArpa(arpaFormAddress: String): Address4 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArpa")(arpaFormAddress.asInstanceOf[js.Any]).asInstanceOf[Address4]
     
     /**
       * Converts a BigInteger to a v4 address object

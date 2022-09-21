@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ant-design/react-native" : "4.0.6"
+      "@ant-design/react-native" : "5.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@ant-design/react-native" : "4.0.6"
+      "@ant-design/react-native" : "5.0.1"
     }
   ],
   "compile-devDependencies" : [

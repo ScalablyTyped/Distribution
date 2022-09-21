@@ -5,10 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Represents a separator.
-  */
-trait SeparatorOptions extends StObject {
+trait SeparatorOptions
+  extends StObject
+     with ChoiceBase {
   
   /**
     * Gets or sets the text of the separator.
@@ -18,7 +17,8 @@ trait SeparatorOptions extends StObject {
   /**
     * Gets the type of the choice.
     */
-  var `type`: separator
+  @JSName("type")
+  var type_SeparatorOptions: separator
 }
 object SeparatorOptions {
   

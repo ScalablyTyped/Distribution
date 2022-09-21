@@ -101,7 +101,7 @@ object TestMatrix {
     
     inline def setTestExecutionsUndefined: Self = StObject.set(x, "testExecutions", js.undefined)
     
-    inline def setTestExecutionsVarargs(value: TestExecution*): Self = StObject.set(x, "testExecutions", js.Array(value :_*))
+    inline def setTestExecutionsVarargs(value: TestExecution*): Self = StObject.set(x, "testExecutions", js.Array(value*))
     
     inline def setTestMatrixId(value: String): Self = StObject.set(x, "testMatrixId", value.asInstanceOf[js.Any])
     

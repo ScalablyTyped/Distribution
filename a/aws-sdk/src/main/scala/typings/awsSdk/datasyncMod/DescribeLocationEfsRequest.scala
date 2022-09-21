@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeLocationEfsRequest extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the EFS location to describe.
+    * The Amazon Resource Name (ARN) of the Amazon EFS file system location that you want information about.
     */
   var LocationArn: typings.awsSdk.datasyncMod.LocationArn
 }

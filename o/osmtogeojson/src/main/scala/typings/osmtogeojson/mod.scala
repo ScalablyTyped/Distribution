@@ -35,11 +35,11 @@ object mod {
       
       var id: js.UndefOr[String] = js.undefined
       
-      var properties: js.Any
+      var properties: Any
     }
     object Feature {
       
-      inline def apply(geometry: Geometry, properties: js.Any, `type`: String): Feature = {
+      inline def apply(geometry: Geometry, properties: Any, `type`: String): Feature = {
         val __obj = js.Dynamic.literal(geometry = geometry.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[Feature]
@@ -53,7 +53,7 @@ object mod {
         
         inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
         
-        inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+        inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       }
     }
     
@@ -75,7 +75,7 @@ object mod {
         
         inline def setFeatures(value: js.Array[Feature]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
         
-        inline def setFeaturesVarargs(value: Feature*): Self = StObject.set(x, "features", js.Array(value :_*))
+        inline def setFeaturesVarargs(value: Feature*): Self = StObject.set(x, "features", js.Array(value*))
       }
     }
     
@@ -115,7 +115,7 @@ object mod {
         
         inline def setCoordinates(value: Coordinate | (js.Array[js.Array[Coordinate] | Coordinate])): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
         
-        inline def setCoordinatesVarargs(value: (js.Array[Coordinate] | Coordinate)*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
+        inline def setCoordinatesVarargs(value: (js.Array[Coordinate] | Coordinate)*): Self = StObject.set(x, "coordinates", js.Array(value*))
       }
     }
     
@@ -137,7 +137,7 @@ object mod {
         
         inline def setGeometries(value: js.Array[Geometry]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
         
-        inline def setGeometriesVarargs(value: Geometry*): Self = StObject.set(x, "geometries", js.Array(value :_*))
+        inline def setGeometriesVarargs(value: Geometry*): Self = StObject.set(x, "geometries", js.Array(value*))
       }
     }
   }
@@ -153,7 +153,7 @@ object mod {
     /**
       * Either a json object or callback function that is used to determine if a closed way should be treated as a Polygon or LineString.
       */
-    var polygonFeatures: js.UndefOr[js.Any | js.Function] = js.undefined
+    var polygonFeatures: js.UndefOr[Any | js.Function] = js.undefined
     
     /**
       * Either a blacklist of tag keys or a callback function. Will be used to decide if a feature is interesting enough for its own GeoJSON feature.
@@ -175,7 +175,7 @@ object mod {
       
       inline def setFlatPropertiesUndefined: Self = StObject.set(x, "flatProperties", js.undefined)
       
-      inline def setPolygonFeatures(value: js.Any | js.Function): Self = StObject.set(x, "polygonFeatures", value.asInstanceOf[js.Any])
+      inline def setPolygonFeatures(value: Any | js.Function): Self = StObject.set(x, "polygonFeatures", value.asInstanceOf[js.Any])
       
       inline def setPolygonFeaturesUndefined: Self = StObject.set(x, "polygonFeatures", js.undefined)
       
@@ -314,7 +314,7 @@ object mod {
         
         inline def setElements(value: js.Array[Node | Way | Relationship]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
         
-        inline def setElementsVarargs(value: (Node | Way | Relationship)*): Self = StObject.set(x, "elements", js.Array(value :_*))
+        inline def setElementsVarargs(value: (Node | Way | Relationship)*): Self = StObject.set(x, "elements", js.Array(value*))
       }
     }
     
@@ -336,7 +336,7 @@ object mod {
         
         inline def setMembers(value: js.Array[Member]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
         
-        inline def setMembersVarargs(value: Member*): Self = StObject.set(x, "members", js.Array(value :_*))
+        inline def setMembersVarargs(value: Member*): Self = StObject.set(x, "members", js.Array(value*))
       }
     }
     
@@ -358,7 +358,7 @@ object mod {
         
         inline def setNodes(value: js.Array[Double]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
         
-        inline def setNodesVarargs(value: Double*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+        inline def setNodesVarargs(value: Double*): Self = StObject.set(x, "nodes", js.Array(value*))
       }
     }
   }

@@ -7,23 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaProjectsGetXpnResources extends StObject {
   
   /**
-    * [Output Only] Type of resource. Always compute#projectsGetXpnResources
-    * for lists of service resources (a.k.a service projects)
+    * [Output Only] Type of resource. Always compute#projectsGetXpnResources for lists of service resources (a.k.a service projects)
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * [Output Only] This token allows you to get the next page of results for
-    * list requests. If the number of results is larger than maxResults, use
-    * the nextPageToken as a value for the query parameter pageToken in the
-    * next list request. Subsequent list requests will have their own
-    * nextPageToken to continue paging through the results.
+    * [Output Only] This token allows you to get the next page of results for list requests. If the number of results is larger than maxResults, use the nextPageToken as a value for the query parameter pageToken in the next list request. Subsequent list requests will have their own nextPageToken to continue paging through the results.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Service resources (a.k.a service projects) attached to this project as
-    * their shared VPC host.
+    * Service resources (a.k.a service projects) attached to this project as their shared VPC host.
     */
   var resources: js.UndefOr[js.Array[SchemaXpnResourceId]] = js.undefined
 }
@@ -38,9 +32,13 @@ object SchemaProjectsGetXpnResources {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
+    
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
@@ -48,6 +46,6 @@ object SchemaProjectsGetXpnResources {
     
     inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
-    inline def setResourcesVarargs(value: SchemaXpnResourceId*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: SchemaXpnResourceId*): Self = StObject.set(x, "resources", js.Array(value*))
   }
 }

@@ -73,7 +73,7 @@ object SceneViewPerformanceInfo {
     
     inline def setLayerPerformanceInfos(value: js.Array[LayerPerformanceInfo]): Self = StObject.set(x, "layerPerformanceInfos", value.asInstanceOf[js.Any])
     
-    inline def setLayerPerformanceInfosVarargs(value: LayerPerformanceInfo*): Self = StObject.set(x, "layerPerformanceInfos", js.Array(value :_*))
+    inline def setLayerPerformanceInfosVarargs(value: LayerPerformanceInfo*): Self = StObject.set(x, "layerPerformanceInfos", js.Array(value*))
     
     inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,7 @@ object XSpreadsheetView {
     ActiveSheet: XSpreadsheet,
     acquire: () => Unit,
     getActiveSheet: () => XSpreadsheet,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setActiveSheet: XSpreadsheet => Unit
   ): XSpreadsheetView = {

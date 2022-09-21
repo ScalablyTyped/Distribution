@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientDataproc.anon
 
+import typings.maximMazurokGapiClientDataproc.gapi.client.dataproc.RepairClusterRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,11 +20,11 @@ trait Xgafv extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
+  /** Required. The cluster name. */
+  var clusterName: String
+  
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
-  
-  /** Required. The job ID. */
-  var jobId: String
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
@@ -34,7 +35,7 @@ trait Xgafv extends StObject {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
-  /** Required. The ID of the Google Cloud Platform project that the job belongs to. */
+  /** Required. The ID of the Google Cloud Platform project the cluster belongs to. */
   var projectId: String
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
@@ -42,6 +43,9 @@ trait Xgafv extends StObject {
   
   /** Required. The Dataproc region in which to handle the request. */
   var region: String
+  
+  /** Request body */
+  var resource: RepairClusterRequest
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -51,8 +55,8 @@ trait Xgafv extends StObject {
 }
 object Xgafv {
   
-  inline def apply(jobId: String, projectId: String, region: String): Xgafv = {
-    val __obj = js.Dynamic.literal(jobId = jobId.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any])
+  inline def apply(clusterName: String, projectId: String, region: String, resource: RepairClusterRequest): Xgafv = {
+    val __obj = js.Dynamic.literal(clusterName = clusterName.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Xgafv]
   }
   
@@ -74,11 +78,11 @@ object Xgafv {
     
     inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
+    inline def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
+    
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
-    
-    inline def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
@@ -99,6 +103,8 @@ object Xgafv {
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
     inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    
+    inline def setResource(value: RepairClusterRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

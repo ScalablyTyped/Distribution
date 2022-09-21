@@ -10,5 +10,5 @@ object MessageWriter {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def is(value: js.Any): /* is vscode-jsonrpc.vscode-jsonrpc/lib/messageWriter.MessageWriter */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-jsonrpc.vscode-jsonrpc/lib/messageWriter.MessageWriter */ Boolean]
+  inline def is(value: Any): /* is vscode-jsonrpc.vscode-jsonrpc/lib/common/messageWriter.MessageWriter */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-jsonrpc.vscode-jsonrpc/lib/common/messageWriter.MessageWriter */ Boolean]
 }

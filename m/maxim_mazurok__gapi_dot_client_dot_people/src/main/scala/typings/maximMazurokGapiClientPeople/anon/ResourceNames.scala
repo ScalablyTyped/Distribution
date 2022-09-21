@@ -48,8 +48,7 @@ trait ResourceNames extends StObject {
   /**
     * Required. The resource names of the people to provide information about. It's repeatable. The URL query parameter should be resourceNames=<name1>&resourceNames=<name2>&... - To
     * get information about the authenticated user, specify `people/me`. - To get information about a google account, specify `people/{account_id}`. - To get information about a
-    * contact, specify the resource name that identifies the contact as returned by [`people.connections.list`](/people/api/rest/v1/people.connections/list). You can include up to 50
-    * resource names in one request.
+    * contact, specify the resource name that identifies the contact as returned by `people.connections.list`. There is a maximum of 200 resource names.
     */
   var resourceNames: js.UndefOr[String | js.Array[String]] = js.undefined
   
@@ -119,13 +118,13 @@ object ResourceNames {
     
     inline def setResourceNamesUndefined: Self = StObject.set(x, "resourceNames", js.undefined)
     
-    inline def setResourceNamesVarargs(value: String*): Self = StObject.set(x, "resourceNames", js.Array(value :_*))
+    inline def setResourceNamesVarargs(value: String*): Self = StObject.set(x, "resourceNames", js.Array(value*))
     
     inline def setSources(value: String | js.Array[String]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
     inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
-    inline def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value*))
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

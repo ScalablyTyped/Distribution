@@ -9,7 +9,7 @@ trait FilterGroup
      with IFilter
 object FilterGroup {
   
-  inline def apply(execute: js.Any => Boolean): FilterGroup = {
+  inline def apply(execute: Any => Boolean): FilterGroup = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute))
     __obj.asInstanceOf[FilterGroup]
   }

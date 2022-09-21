@@ -8,7 +8,10 @@ trait Team
   extends StObject
      with Entity {
   
-  // The collection of channels &amp; messages associated with the team.
+  // List of channels either hosted in or shared with the team (incoming channels).
+  var allChannels: js.UndefOr[NullableOption[js.Array[Channel]]] = js.undefined
+  
+  // The collection of channels and messages associated with the team.
   var channels: js.UndefOr[NullableOption[js.Array[Channel]]] = js.undefined
   
   /**
@@ -17,7 +20,10 @@ trait Team
     */
   var classification: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // An optional description for the team.
+  // Timestamp at which the team was created.
+  var createdDateTime: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  // An optional description for the team. Maximum length: 1024 characters.
   var description: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The name of the team.
@@ -30,6 +36,9 @@ trait Team
   
   // Settings to configure whether guests can create, update, or delete channels in the team.
   var guestSettings: js.UndefOr[NullableOption[TeamGuestSettings]] = js.undefined
+  
+  // List of channels shared with the team.
+  var incomingChannels: js.UndefOr[NullableOption[js.Array[Channel]]] = js.undefined
   
   // The apps installed in this team.
   var installedApps: js.UndefOr[NullableOption[js.Array[TeamsAppInstallation]]] = js.undefined
@@ -55,6 +64,9 @@ trait Team
   // The async operations that ran or are running on this team.
   var operations: js.UndefOr[NullableOption[js.Array[TeamsAsyncOperation]]] = js.undefined
   
+  // The profile photo for the team.
+  var photo: js.UndefOr[NullableOption[ProfilePhoto]] = js.undefined
+  
   // The general channel for the team.
   var primaryChannel: js.UndefOr[NullableOption[Channel]] = js.undefined
   
@@ -67,8 +79,13 @@ trait Team
     */
   var specialization: js.UndefOr[NullableOption[TeamSpecialization]] = js.undefined
   
+  var summary: js.UndefOr[NullableOption[TeamSummary]] = js.undefined
+  
   // The template this team was created from. See available templates.
   var template: js.UndefOr[NullableOption[TeamsTemplate]] = js.undefined
+  
+  // The ID of the Azure Active Directory tenant.
+  var tenantId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The visibility of the group and team. Defaults to Public.
   var visibility: js.UndefOr[NullableOption[TeamVisibilityType]] = js.undefined
@@ -89,19 +106,33 @@ object Team {
   
   extension [Self <: Team](x: Self) {
     
+    inline def setAllChannels(value: NullableOption[js.Array[Channel]]): Self = StObject.set(x, "allChannels", value.asInstanceOf[js.Any])
+    
+    inline def setAllChannelsNull: Self = StObject.set(x, "allChannels", null)
+    
+    inline def setAllChannelsUndefined: Self = StObject.set(x, "allChannels", js.undefined)
+    
+    inline def setAllChannelsVarargs(value: Channel*): Self = StObject.set(x, "allChannels", js.Array(value*))
+    
     inline def setChannels(value: NullableOption[js.Array[Channel]]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
     inline def setChannelsNull: Self = StObject.set(x, "channels", null)
     
     inline def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
     
-    inline def setChannelsVarargs(value: Channel*): Self = StObject.set(x, "channels", js.Array(value :_*))
+    inline def setChannelsVarargs(value: Channel*): Self = StObject.set(x, "channels", js.Array(value*))
     
     inline def setClassification(value: NullableOption[String]): Self = StObject.set(x, "classification", value.asInstanceOf[js.Any])
     
     inline def setClassificationNull: Self = StObject.set(x, "classification", null)
     
     inline def setClassificationUndefined: Self = StObject.set(x, "classification", js.undefined)
+    
+    inline def setCreatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
+    
+    inline def setCreatedDateTimeNull: Self = StObject.set(x, "createdDateTime", null)
+    
+    inline def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
     
     inline def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -133,13 +164,21 @@ object Team {
     
     inline def setGuestSettingsUndefined: Self = StObject.set(x, "guestSettings", js.undefined)
     
+    inline def setIncomingChannels(value: NullableOption[js.Array[Channel]]): Self = StObject.set(x, "incomingChannels", value.asInstanceOf[js.Any])
+    
+    inline def setIncomingChannelsNull: Self = StObject.set(x, "incomingChannels", null)
+    
+    inline def setIncomingChannelsUndefined: Self = StObject.set(x, "incomingChannels", js.undefined)
+    
+    inline def setIncomingChannelsVarargs(value: Channel*): Self = StObject.set(x, "incomingChannels", js.Array(value*))
+    
     inline def setInstalledApps(value: NullableOption[js.Array[TeamsAppInstallation]]): Self = StObject.set(x, "installedApps", value.asInstanceOf[js.Any])
     
     inline def setInstalledAppsNull: Self = StObject.set(x, "installedApps", null)
     
     inline def setInstalledAppsUndefined: Self = StObject.set(x, "installedApps", js.undefined)
     
-    inline def setInstalledAppsVarargs(value: TeamsAppInstallation*): Self = StObject.set(x, "installedApps", js.Array(value :_*))
+    inline def setInstalledAppsVarargs(value: TeamsAppInstallation*): Self = StObject.set(x, "installedApps", js.Array(value*))
     
     inline def setInternalId(value: NullableOption[String]): Self = StObject.set(x, "internalId", value.asInstanceOf[js.Any])
     
@@ -165,7 +204,7 @@ object Team {
     
     inline def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
     
-    inline def setMembersVarargs(value: ConversationMember*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: ConversationMember*): Self = StObject.set(x, "members", js.Array(value*))
     
     inline def setMessagingSettings(value: NullableOption[TeamMessagingSettings]): Self = StObject.set(x, "messagingSettings", value.asInstanceOf[js.Any])
     
@@ -179,7 +218,13 @@ object Team {
     
     inline def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
     
-    inline def setOperationsVarargs(value: TeamsAsyncOperation*): Self = StObject.set(x, "operations", js.Array(value :_*))
+    inline def setOperationsVarargs(value: TeamsAsyncOperation*): Self = StObject.set(x, "operations", js.Array(value*))
+    
+    inline def setPhoto(value: NullableOption[ProfilePhoto]): Self = StObject.set(x, "photo", value.asInstanceOf[js.Any])
+    
+    inline def setPhotoNull: Self = StObject.set(x, "photo", null)
+    
+    inline def setPhotoUndefined: Self = StObject.set(x, "photo", js.undefined)
     
     inline def setPrimaryChannel(value: NullableOption[Channel]): Self = StObject.set(x, "primaryChannel", value.asInstanceOf[js.Any])
     
@@ -199,11 +244,23 @@ object Team {
     
     inline def setSpecializationUndefined: Self = StObject.set(x, "specialization", js.undefined)
     
+    inline def setSummary(value: NullableOption[TeamSummary]): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    
+    inline def setSummaryNull: Self = StObject.set(x, "summary", null)
+    
+    inline def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
+    
     inline def setTemplate(value: NullableOption[TeamsTemplate]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     inline def setTemplateNull: Self = StObject.set(x, "template", null)
     
     inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    
+    inline def setTenantId(value: NullableOption[String]): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
+    
+    inline def setTenantIdNull: Self = StObject.set(x, "tenantId", null)
+    
+    inline def setTenantIdUndefined: Self = StObject.set(x, "tenantId", js.undefined)
     
     inline def setVisibility(value: NullableOption[TeamVisibilityType]): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     

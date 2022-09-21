@@ -25,7 +25,7 @@ object appMod {
   
   @JSImport("ionic/lib/app", "AppClient")
   @js.native
-  class AppClient protected ()
+  open class AppClient protected ()
     extends ResourceClient
        with ResourceClientLoad[App]
        with ResourceClientCreate[App, AppCreateDetails]

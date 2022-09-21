@@ -4,6 +4,7 @@ import typings.typescript.mod.Identifier
 import typings.typescript.mod.ImportDeclaration
 import typings.typescript.mod.ImportSpecifier
 import typings.typescript.mod.NamedImports
+import typings.typescript.mod.NodeArray
 import typings.typescript.mod.SourceFile
 import typings.typescript.mod.TypeChecker
 import org.scalablytyped.runtime.StObject
@@ -15,6 +16,8 @@ object importsMod {
   @JSImport("@angular/core/schematics/utils/typescript/imports", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def findImportSpecifier(nodes: NodeArray[ImportSpecifier], specifierName: String): js.UndefOr[ImportSpecifier] = (^.asInstanceOf[js.Dynamic].applyDynamic("findImportSpecifier")(nodes.asInstanceOf[js.Any], specifierName.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ImportSpecifier]]
   
   inline def getImportOfIdentifier(typeChecker: TypeChecker, node: Identifier): Import | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getImportOfIdentifier")(typeChecker.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[Import | Null]
   

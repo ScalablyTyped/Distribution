@@ -45,7 +45,7 @@ object XConnectable {
     acquire: () => Unit,
     getPredecessor: () => XConnectable,
     getSuccessor: () => XConnectable,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setPredecessor: XConnectable => Unit,
     setSuccessor: XConnectable => Unit

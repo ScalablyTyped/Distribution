@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder.js/dist/es2015", "ShaderManager")
 @js.native
-class ShaderManager protected ()
+open class ShaderManager protected ()
   extends typings.wonderJs.shaderManagerMod.ShaderManager {
   def this(material: typings.wonderJs.materialMod.Material) = this()
 }

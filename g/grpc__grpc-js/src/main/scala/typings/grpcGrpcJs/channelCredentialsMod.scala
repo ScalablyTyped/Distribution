@@ -1,18 +1,15 @@
 package typings.grpcGrpcJs
 
 import typings.grpcGrpcJs.callCredentialsMod.CallCredentials
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.tlsMod.ConnectionOptions
-import typings.std.Error
+import typings.node.tlsMod.PeerCertificate
+import typings.node.tlsMod.SecureContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object channelCredentialsMod {
-  
-  @JSImport("@grpc/grpc-js/build/src/channel-credentials", JSImport.Namespace)
-  @js.native
-  val ^ : js.Any = js.native
   
   @JSImport("@grpc/grpc-js/build/src/channel-credentials", "ChannelCredentials")
   @js.native
@@ -61,6 +58,19 @@ object channelCredentialsMod {
     val ^ : js.Any = js.native
     
     /**
+      * Return a new ChannelCredentials instance with credentials created using
+      * the provided secureContext. The resulting instances can be used to
+      * construct a Channel that communicates over TLS. gRPC will not override
+      * anything in the provided secureContext, so the environment variables
+      * GRPC_SSL_CIPHER_SUITES and GRPC_DEFAULT_SSL_ROOTS_FILE_PATH will
+      * not be applied.
+      * @param secureContext The return value of tls.createSecureContext()
+      * @param verifyOptions Additional options to modify certificate verification
+      */
+    inline def createFromSecureContext(secureContext: SecureContext): ChannelCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromSecureContext")(secureContext.asInstanceOf[js.Any]).asInstanceOf[ChannelCredentials]
+    inline def createFromSecureContext(secureContext: SecureContext, verifyOptions: VerifyOptions): ChannelCredentials = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromSecureContext")(secureContext.asInstanceOf[js.Any], verifyOptions.asInstanceOf[js.Any])).asInstanceOf[ChannelCredentials]
+    
+    /**
       * Return a new ChannelCredentials instance with no credentials.
       */
     inline def createInsecure(): ChannelCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createInsecure")().asInstanceOf[ChannelCredentials]
@@ -72,6 +82,7 @@ object channelCredentialsMod {
       * @param rootCerts The root certificate data.
       * @param privateKey The client certificate private key, if available.
       * @param certChain The client certificate key chain, if available.
+      * @param verifyOptions Additional options to modify certificate verification
       */
     inline def createSsl(
       rootCerts: js.UndefOr[Buffer | Null],
@@ -81,29 +92,7 @@ object channelCredentialsMod {
     ): ChannelCredentials = (^.asInstanceOf[js.Dynamic].applyDynamic("createSsl")(rootCerts.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], certChain.asInstanceOf[js.Any], verifyOptions.asInstanceOf[js.Any])).asInstanceOf[ChannelCredentials]
   }
   
-  inline def createGoogleDefaultCredentials(): ChannelCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createGoogleDefaultCredentials")().asInstanceOf[ChannelCredentials]
-  
-  trait Certificate extends StObject {
-    
-    /**
-      * The raw certificate in DER form.
-      */
-    var raw: Buffer
-  }
-  object Certificate {
-    
-    inline def apply(raw: Buffer): Certificate = {
-      val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Certificate]
-    }
-    
-    extension [Self <: Certificate](x: Self) {
-      
-      inline def setRaw(value: Buffer): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  type CheckServerIdentityCallback = js.Function2[/* hostname */ String, /* cert */ Certificate, js.UndefOr[Error]]
+  type CheckServerIdentityCallback = js.Function2[/* hostname */ String, /* cert */ PeerCertificate, js.UndefOr[js.Error]]
   
   trait VerifyOptions extends StObject {
     
@@ -122,7 +111,7 @@ object channelCredentialsMod {
     
     extension [Self <: VerifyOptions](x: Self) {
       
-      inline def setCheckServerIdentity(value: (/* hostname */ String, /* cert */ Certificate) => js.UndefOr[Error]): Self = StObject.set(x, "checkServerIdentity", js.Any.fromFunction2(value))
+      inline def setCheckServerIdentity(value: (/* hostname */ String, /* cert */ PeerCertificate) => js.UndefOr[js.Error]): Self = StObject.set(x, "checkServerIdentity", js.Any.fromFunction2(value))
       
       inline def setCheckServerIdentityUndefined: Self = StObject.set(x, "checkServerIdentity", js.undefined)
     }

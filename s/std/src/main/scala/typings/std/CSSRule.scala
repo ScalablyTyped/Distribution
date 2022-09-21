@@ -7,32 +7,47 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** A single CSS rule. There are several types of rules, listed in the Type constants section below. */
 trait CSSRule extends StObject {
   
+  /* standard dom */
   val CHARSET_RULE: Double
   
+  /* standard dom */
   val FONT_FACE_RULE: Double
   
+  /* standard dom */
   val IMPORT_RULE: Double
   
+  /* standard dom */
   val KEYFRAMES_RULE: Double
   
+  /* standard dom */
   val KEYFRAME_RULE: Double
   
+  /* standard dom */
   val MEDIA_RULE: Double
   
+  /* standard dom */
   val NAMESPACE_RULE: Double
   
+  /* standard dom */
   val PAGE_RULE: Double
   
+  /* standard dom */
   val STYLE_RULE: Double
   
+  /* standard dom */
   val SUPPORTS_RULE: Double
   
+  /* standard dom */
   var cssText: java.lang.String
   
+  /* standard dom */
   val parentRule: CSSRule | Null
   
+  /* standard dom */
   val parentStyleSheet: CSSStyleSheet | Null
   
+  /** @deprecated */
+  /* standard dom */
   val `type`: Double
 }
 object CSSRule {

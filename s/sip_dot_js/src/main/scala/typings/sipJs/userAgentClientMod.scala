@@ -21,7 +21,7 @@ object userAgentClientMod {
   
   @JSImport("sip.js/lib/core/user-agents/user-agent-client", "UserAgentClient")
   @js.native
-  class UserAgentClient protected ()
+  open class UserAgentClient protected ()
     extends StObject
        with OutgoingRequest {
     def this(
@@ -36,7 +36,7 @@ object userAgentClientMod {
       delegate: OutgoingRequestDelegate
     ) = this()
     
-    /* private */ var _transaction: js.Any = js.native
+    /* private */ var _transaction: Any = js.native
     
     /**
       * If a 401 (Unauthorized) or 407 (Proxy Authentication Required)
@@ -63,13 +63,13 @@ object userAgentClientMod {
     /* protected */ def authenticationGuard(message: IncomingResponseMessage): Boolean = js.native
     /* protected */ def authenticationGuard(message: IncomingResponseMessage, dialog: Dialog): Boolean = js.native
     
-    /* private */ var challenged: js.Any = js.native
+    /* private */ var challenged: Any = js.native
     
     /* protected */ var core: UserAgentCore = js.native
     
-    /* private */ var credentials: js.Any = js.native
+    /* private */ var credentials: Any = js.native
     
-    /* private */ var init: js.Any = js.native
+    /* private */ var init: Any = js.native
     
     /* protected */ var logger: Logger = js.native
     
@@ -113,12 +113,12 @@ object userAgentClientMod {
       */
     /* protected */ def receiveResponse(message: IncomingResponseMessage): Unit = js.native
     
-    /* private */ var stale: js.Any = js.native
+    /* private */ var stale: Any = js.native
     
     /** The transaction associated with this request. */
     def transaction: ClientTransaction = js.native
     
-    /* private */ var transactionConstructor: js.Any = js.native
+    /* private */ var transactionConstructor: Any = js.native
   }
   
   type ClientTransactionConstructor = Instantiable3[

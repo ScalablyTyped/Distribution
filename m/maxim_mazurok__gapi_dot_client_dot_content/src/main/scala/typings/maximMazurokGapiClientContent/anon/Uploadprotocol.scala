@@ -13,7 +13,7 @@ trait Uploadprotocol extends StObject {
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.undefined
   
-  /** The ID of the account for which to get/update shipping settings. */
+  /** The ID of the account. */
   var accountId: String
   
   /** Data format for response. */
@@ -48,6 +48,9 @@ trait Uploadprotocol extends StObject {
   
   /** Upload protocol for media (e.g. "raw", "multipart"). */
   var upload_protocol: js.UndefOr[String] = js.undefined
+  
+  /** Controls which fields will be populated. Acceptable values are: "merchant" and "css". The default value is "merchant". */
+  var view: js.UndefOr[String] = js.undefined
 }
 object Uploadprotocol {
   
@@ -105,5 +108,9 @@ object Uploadprotocol {
     inline def setUpload_protocol(value: String): Self = StObject.set(x, "upload_protocol", value.asInstanceOf[js.Any])
     
     inline def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
+    
+    inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

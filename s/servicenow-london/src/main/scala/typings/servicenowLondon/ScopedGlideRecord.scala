@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ScopedGlideRecord
   extends StObject
-     with /* fieldName */ StringDictionary[js.Any]
+     with /* fieldName */ StringDictionary[Any]
      with /**
   * Creates an instance of the GlideRecord class for the specified table.
   *
@@ -51,8 +51,8 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     */
   def _query(): Unit = js.native
   def _query(name: String): Unit = js.native
-  def _query(name: String, value: js.Any): Unit = js.native
-  def _query(name: Unit, value: js.Any): Unit = js.native
+  def _query(name: String, value: Any): Unit = js.native
+  def _query(name: Unit, value: Any): Unit = js.native
   
   /**
     * Adds a filter to return active records.
@@ -231,7 +231,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     *   //do something....
     * }
     */
-  def addQuery(name: String, operator: QueryOperator, value: js.Any): ScopedQueryCondition = js.native
+  def addQuery(name: String, operator: QueryOperator, value: Any): ScopedQueryCondition = js.native
   /**
     * Provides the ability to build a request, which when executed, returns the rows from the
     * specified table, that match the request.
@@ -250,7 +250,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     *   rec.update();
     * }
     */
-  def addQuery(name: String, value: js.Any): ScopedQueryCondition = js.native
+  def addQuery(name: String, value: Any): ScopedQueryCondition = js.native
   /**
     * Adds a filter to return records using an encoded query string.
     *
@@ -791,8 +791,8 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     */
   def query(): Unit = js.native
   def query(field: String): Unit = js.native
-  def query(field: String, value: js.Any): Unit = js.native
-  def query(field: Unit, value: js.Any): Unit = js.native
+  def query(field: String, value: Any): Unit = js.native
+  def query(field: Unit, value: Any): Unit = js.native
   
   /**
     * Sets a flag to indicate if the next database action (insert, update, delete) is to be aborted.
@@ -855,7 +855,7 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * gr.setValue(elementName, "My DB is not working");
     * gr.insert();
     */
-  def setValue(name: String, value: js.Any): Unit = js.native
+  def setValue(name: String, value: Any): Unit = js.native
   
   /**
     * Enables or disables the running of business rules, script engines, and audit.
@@ -913,5 +913,5 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     */
   def updateMultiple(): Unit = js.native
   
-  var variables: StringDictionary[js.Any] = js.native
+  var variables: StringDictionary[Any] = js.native
 }

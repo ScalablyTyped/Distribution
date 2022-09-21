@@ -14,10 +14,9 @@ object checkboxMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/modules/Checkbox", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[CheckboxProps, ComponentState, js.Any] {
+  open class default protected () extends Component[CheckboxProps, ComponentState, Any] {
     def this(props: CheckboxProps) = this()
-    def this(props: CheckboxProps, context: js.Any) = this()
+    def this(props: CheckboxProps, context: Any) = this()
   }
   @JSImport("semantic-ui-react/dist/commonjs/modules/Checkbox", JSImport.Default)
   @js.native

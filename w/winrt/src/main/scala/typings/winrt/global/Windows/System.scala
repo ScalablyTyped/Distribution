@@ -30,7 +30,7 @@ object System {
     
     @JSGlobal("Windows.System.Display.DisplayRequest")
     @js.native
-    class DisplayRequest ()
+    open class DisplayRequest ()
       extends StObject
          with typings.winrt.Windows.System.Display.DisplayRequest {
       
@@ -44,7 +44,7 @@ object System {
   
   @JSGlobal("Windows.System.Launcher")
   @js.native
-  class Launcher ()
+  open class Launcher ()
     extends StObject
        with typings.winrt.Windows.System.Launcher
   /* static members */
@@ -63,7 +63,7 @@ object System {
   
   @JSGlobal("Windows.System.LauncherOptions")
   @js.native
-  class LauncherOptions ()
+  open class LauncherOptions ()
     extends StObject
        with typings.winrt.Windows.System.LauncherOptions {
     
@@ -94,7 +94,7 @@ object System {
   
   @JSGlobal("Windows.System.LauncherUIOptions")
   @js.native
-  class LauncherUIOptions ()
+  open class LauncherUIOptions ()
     extends StObject
        with typings.winrt.Windows.System.LauncherUIOptions {
     
@@ -130,7 +130,7 @@ object System {
     
     @JSGlobal("Windows.System.Profile.HardwareIdentification")
     @js.native
-    class HardwareIdentification ()
+    open class HardwareIdentification ()
       extends StObject
          with typings.winrt.Windows.System.Profile.HardwareIdentification
     /* static members */
@@ -145,7 +145,7 @@ object System {
     
     @JSGlobal("Windows.System.Profile.HardwareToken")
     @js.native
-    class HardwareToken ()
+    open class HardwareToken ()
       extends StObject
          with typings.winrt.Windows.System.Profile.HardwareToken {
       
@@ -164,7 +164,7 @@ object System {
     
     @JSGlobal("Windows.System.RemoteDesktop.InteractiveSession")
     @js.native
-    class InteractiveSession ()
+    open class InteractiveSession ()
       extends StObject
          with typings.winrt.Windows.System.RemoteDesktop.InteractiveSession
     /* static members */
@@ -187,7 +187,7 @@ object System {
       
       @JSGlobal("Windows.System.Threading.Core.PreallocatedWorkItem")
       @js.native
-      class PreallocatedWorkItem protected ()
+      open class PreallocatedWorkItem protected ()
         extends StObject
            with typings.winrt.Windows.System.Threading.Core.PreallocatedWorkItem {
         def this(handler: WorkItemHandler) = this()
@@ -200,7 +200,7 @@ object System {
       
       @JSGlobal("Windows.System.Threading.Core.SignalNotifier")
       @js.native
-      class SignalNotifier ()
+      open class SignalNotifier ()
         extends StObject
            with typings.winrt.Windows.System.Threading.Core.SignalNotifier {
         
@@ -227,7 +227,7 @@ object System {
     
     @JSGlobal("Windows.System.Threading.ThreadPool")
     @js.native
-    class ThreadPool ()
+    open class ThreadPool ()
       extends StObject
          with typings.winrt.Windows.System.Threading.ThreadPool
     /* static members */
@@ -244,7 +244,7 @@ object System {
     
     @JSGlobal("Windows.System.Threading.ThreadPoolTimer")
     @js.native
-    class ThreadPoolTimer ()
+    open class ThreadPoolTimer ()
       extends StObject
          with typings.winrt.Windows.System.Threading.ThreadPoolTimer {
       
@@ -316,7 +316,7 @@ object System {
     
     @JSGlobal("Windows.System.UserProfile.GlobalizationPreferences")
     @js.native
-    class GlobalizationPreferences ()
+    open class GlobalizationPreferences ()
       extends StObject
          with typings.winrt.Windows.System.UserProfile.GlobalizationPreferences
     /* static members */
@@ -359,7 +359,7 @@ object System {
     
     @JSGlobal("Windows.System.UserProfile.LockScreen")
     @js.native
-    class LockScreen ()
+    open class LockScreen ()
       extends StObject
          with typings.winrt.Windows.System.UserProfile.LockScreen
     /* static members */
@@ -403,7 +403,7 @@ object System {
     
     @JSGlobal("Windows.System.UserProfile.UserInformation")
     @js.native
-    class UserInformation ()
+    open class UserInformation ()
       extends StObject
          with typings.winrt.Windows.System.UserProfile.UserInformation
     /* static members */
@@ -439,8 +439,8 @@ object System {
       
       @JSGlobal("Windows.System.UserProfile.UserInformation.onaccountpicturechanged")
       @js.native
-      def onaccountpicturechanged: js.Any = js.native
-      inline def onaccountpicturechanged_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onaccountpicturechanged")(x.asInstanceOf[js.Any])
+      def onaccountpicturechanged: Any = js.native
+      inline def onaccountpicturechanged_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onaccountpicturechanged")(x.asInstanceOf[js.Any])
       
       inline def setAccountPictureAsync(image: IStorageFile): IAsyncOperation[SetAccountPictureResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("setAccountPictureAsync")(image.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[SetAccountPictureResult]]
       

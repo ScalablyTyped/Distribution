@@ -24,6 +24,6 @@ object DescribeRaidArraysResult {
     
     inline def setRaidArraysUndefined: Self = StObject.set(x, "RaidArrays", js.undefined)
     
-    inline def setRaidArraysVarargs(value: RaidArray*): Self = StObject.set(x, "RaidArrays", js.Array(value :_*))
+    inline def setRaidArraysVarargs(value: RaidArray*): Self = StObject.set(x, "RaidArrays", js.Array(value*))
   }
 }

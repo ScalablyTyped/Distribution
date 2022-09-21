@@ -19,30 +19,23 @@ trait ISceneLoaderPluginAsync
     * @param fileName Defines the name of the file to load
     * @returns The loaded objects (e.g. meshes, particle systems, skeletons, animation groups, etc.)
     */
-  def importMeshAsync(meshesNames: js.Any, scene: Scene, data: js.Any, rootUrl: String): js.Promise[ISceneLoaderAsyncResult] = js.native
+  def importMeshAsync(meshesNames: Any, scene: Scene, data: Any, rootUrl: String): js.Promise[ISceneLoaderAsyncResult] = js.native
   def importMeshAsync(
-    meshesNames: js.Any,
+    meshesNames: Any,
     scene: Scene,
-    data: js.Any,
+    data: Any,
     rootUrl: String,
     onProgress: js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]
   ): js.Promise[ISceneLoaderAsyncResult] = js.native
   def importMeshAsync(
-    meshesNames: js.Any,
+    meshesNames: Any,
     scene: Scene,
-    data: js.Any,
+    data: Any,
     rootUrl: String,
     onProgress: js.Function1[/* event */ ISceneLoaderProgressEvent, Unit],
     fileName: String
   ): js.Promise[ISceneLoaderAsyncResult] = js.native
-  def importMeshAsync(
-    meshesNames: js.Any,
-    scene: Scene,
-    data: js.Any,
-    rootUrl: String,
-    onProgress: Unit,
-    fileName: String
-  ): js.Promise[ISceneLoaderAsyncResult] = js.native
+  def importMeshAsync(meshesNames: Any, scene: Scene, data: Any, rootUrl: String, onProgress: Unit, fileName: String): js.Promise[ISceneLoaderAsyncResult] = js.native
   
   /**
     * Load into an asset container.
@@ -53,21 +46,21 @@ trait ISceneLoaderPluginAsync
     * @param fileName Defines the name of the file to load
     * @returns The loaded asset container
     */
-  def loadAssetContainerAsync(scene: Scene, data: js.Any, rootUrl: String): js.Promise[AssetContainer] = js.native
+  def loadAssetContainerAsync(scene: Scene, data: Any, rootUrl: String): js.Promise[AssetContainer] = js.native
   def loadAssetContainerAsync(
     scene: Scene,
-    data: js.Any,
+    data: Any,
     rootUrl: String,
     onProgress: js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]
   ): js.Promise[AssetContainer] = js.native
   def loadAssetContainerAsync(
     scene: Scene,
-    data: js.Any,
+    data: Any,
     rootUrl: String,
     onProgress: js.Function1[/* event */ ISceneLoaderProgressEvent, Unit],
     fileName: String
   ): js.Promise[AssetContainer] = js.native
-  def loadAssetContainerAsync(scene: Scene, data: js.Any, rootUrl: String, onProgress: Unit, fileName: String): js.Promise[AssetContainer] = js.native
+  def loadAssetContainerAsync(scene: Scene, data: Any, rootUrl: String, onProgress: Unit, fileName: String): js.Promise[AssetContainer] = js.native
   
   /**
     * Load into a scene.
@@ -78,19 +71,19 @@ trait ISceneLoaderPluginAsync
     * @param fileName Defines the name of the file to load
     * @returns Nothing
     */
-  def loadAsync(scene: Scene, data: js.Any, rootUrl: String): js.Promise[Unit] = js.native
+  def loadAsync(scene: Scene, data: Any, rootUrl: String): js.Promise[Unit] = js.native
   def loadAsync(
     scene: Scene,
-    data: js.Any,
+    data: Any,
     rootUrl: String,
     onProgress: js.Function1[/* event */ ISceneLoaderProgressEvent, Unit]
   ): js.Promise[Unit] = js.native
   def loadAsync(
     scene: Scene,
-    data: js.Any,
+    data: Any,
     rootUrl: String,
     onProgress: js.Function1[/* event */ ISceneLoaderProgressEvent, Unit],
     fileName: String
   ): js.Promise[Unit] = js.native
-  def loadAsync(scene: Scene, data: js.Any, rootUrl: String, onProgress: Unit, fileName: String): js.Promise[Unit] = js.native
+  def loadAsync(scene: Scene, data: Any, rootUrl: String, onProgress: Unit, fileName: String): js.Promise[Unit] = js.native
 }

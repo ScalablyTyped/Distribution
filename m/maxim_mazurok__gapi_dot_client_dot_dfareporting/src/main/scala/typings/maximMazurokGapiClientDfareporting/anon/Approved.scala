@@ -114,7 +114,7 @@ object Approved {
     
     inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
-    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value*))
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
@@ -132,7 +132,7 @@ object Approved {
     
     inline def setOrderIdUndefined: Self = StObject.set(x, "orderId", js.undefined)
     
-    inline def setOrderIdVarargs(value: String*): Self = StObject.set(x, "orderId", js.Array(value :_*))
+    inline def setOrderIdVarargs(value: String*): Self = StObject.set(x, "orderId", js.Array(value*))
     
     inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
@@ -158,7 +158,7 @@ object Approved {
     
     inline def setSiteIdUndefined: Self = StObject.set(x, "siteId", js.undefined)
     
-    inline def setSiteIdVarargs(value: String*): Self = StObject.set(x, "siteId", js.Array(value :_*))
+    inline def setSiteIdVarargs(value: String*): Self = StObject.set(x, "siteId", js.Array(value*))
     
     inline def setSortField(value: String): Self = StObject.set(x, "sortField", value.asInstanceOf[js.Any])
     

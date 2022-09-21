@@ -1,9 +1,5 @@
 package typings.googleapis.fitnessV1Mod.fitnessV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,31 +9,22 @@ trait ParamsResourceUsersDatasourcesDatapointchangesList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
     * The data stream ID of the data source that created the dataset.
     */
   var dataSourceId: js.UndefOr[String] = js.undefined
   
   /**
-    * If specified, no more than this many data point changes will be included
-    * in the response.
+    * If specified, no more than this many data point changes will be included in the response.
     */
   var limit: js.UndefOr[Double] = js.undefined
   
   /**
-    * The continuation token, which is used to page through large result sets.
-    * To get the next page of results, set this parameter to the value of
-    * nextPageToken from the previous response.
+    * The continuation token, which is used to page through large result sets. To get the next page of results, set this parameter to the value of nextPageToken from the previous response.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
   /**
-    * List data points for the person identified. Use me to indicate the
-    * authenticated user. Only me is supported at this time.
+    * List data points for the person identified. Use me to indicate the authenticated user. Only me is supported at this time.
     */
   var userId: js.UndefOr[String] = js.undefined
 }
@@ -49,10 +36,6 @@ object ParamsResourceUsersDatasourcesDatapointchangesList {
   }
   
   extension [Self <: ParamsResourceUsersDatasourcesDatapointchangesList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setDataSourceId(value: String): Self = StObject.set(x, "dataSourceId", value.asInstanceOf[js.Any])
     

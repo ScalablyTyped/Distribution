@@ -1,6 +1,10 @@
 package typings.httpTerminator
 
+import org.scalablytyped.runtime.Instantiable1
+import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.Server
+import typings.node.httpMod.ServerResponse
+import typings.node.nodeNetMod.Socket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,11 +48,37 @@ object mod {
     /**
       * Intsance of http.Server or https.Server.
       */
-    var server: Server | typings.node.httpsMod.Server
+    var server: (Server[
+        Instantiable1[/* socket */ Socket, IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          ServerResponse[IncomingMessage]
+        ]
+      ]) | (typings.node.httpsMod.Server[
+        Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+        ]
+      ])
   }
   object HttpTerminatorConfig {
     
-    inline def apply(server: Server | typings.node.httpsMod.Server): HttpTerminatorConfig = {
+    inline def apply(
+      server: (Server[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[IncomingMessage]
+          ]
+        ]) | (typings.node.httpsMod.Server[
+          Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+          ]
+        ])
+    ): HttpTerminatorConfig = {
       val __obj = js.Dynamic.literal(server = server.asInstanceOf[js.Any])
       __obj.asInstanceOf[HttpTerminatorConfig]
     }
@@ -59,7 +89,21 @@ object mod {
       
       inline def setGracefulTerminationTimeoutUndefined: Self = StObject.set(x, "gracefulTerminationTimeout", js.undefined)
       
-      inline def setServer(value: Server | typings.node.httpsMod.Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+      inline def setServer(
+        value: (Server[
+              Instantiable1[/* socket */ Socket, IncomingMessage], 
+              Instantiable1[
+                /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+                ServerResponse[IncomingMessage]
+              ]
+            ]) | (typings.node.httpsMod.Server[
+              Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+              Instantiable1[
+                /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+                typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+              ]
+            ])
+      ): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -10,11 +10,11 @@ trait DataType extends StObject {
   
   var isLiteral: js.UndefOr[Boolean] = js.undefined
   
-  var value: js.Any
+  var value: Any
 }
 object DataType {
   
-  inline def apply(value: js.Any): DataType = {
+  inline def apply(value: Any): DataType = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataType]
   }
@@ -29,6 +29,6 @@ object DataType {
     
     inline def setIsLiteralUndefined: Self = StObject.set(x, "isLiteral", js.undefined)
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

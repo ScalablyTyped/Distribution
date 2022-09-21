@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait MockJaxLoggingFunction extends StObject {
   
-  def apply(message: js.Any, additionalParameters: js.Any*): Unit = js.native
-  def apply(message: Unit, additionalParameters: js.Any*): Unit = js.native
+  def apply(message: Any, additionalParameters: Any*): Unit = js.native
+  def apply(message: Unit, additionalParameters: Any*): Unit = js.native
 }

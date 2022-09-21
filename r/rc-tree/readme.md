@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-tree
 
-Typings are for version 3.11.0
+Typings are for version 5.7.0
 
 ## Library description:
 tree ui component for react
@@ -10,10 +10,10 @@ tree ui component for react
 | ------------------ | :-------------: |
 | Full name          | rc-tree |
 | Keywords           | react, react-component, react-tree, tree |
-| # releases         | 98 |
-| # dependents       | 270 |
-| # downloads        | 25356071 |
-| # stars            | 4 |
+| # releases         | 52 |
+| # dependents       | 0.0 |
+| # downloads        | 3894169.0 |
+| # stars            | 988.0 |
 
 ## Links
 - [Homepage](http://github.com/react-component/tree)

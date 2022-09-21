@@ -32,7 +32,7 @@ object BatchUpdateDocumentResponse {
     
     inline def setRepliesUndefined: Self = StObject.set(x, "replies", js.undefined)
     
-    inline def setRepliesVarargs(value: Response*): Self = StObject.set(x, "replies", js.Array(value :_*))
+    inline def setRepliesVarargs(value: Response*): Self = StObject.set(x, "replies", js.Array(value*))
     
     inline def setWriteControl(value: WriteControl): Self = StObject.set(x, "writeControl", value.asInstanceOf[js.Any])
     

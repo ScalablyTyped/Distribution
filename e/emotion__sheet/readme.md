@@ -1,7 +1,7 @@
 
 # Scala.js typings for emotion__sheet
 
-Typings are for version 0.9.4
+Typings are for version 1.2.0
 
 ## Library description:
 emotion's stylesheet
@@ -10,15 +10,15 @@ emotion's stylesheet
 | ------------------ | :-------------: |
 | Full name          | @emotion/sheet |
 | Keywords           | - |
-| # releases         | 12 |
-| # dependents       | 9 |
-| # downloads        | 142095740 |
-| # stars            | 0 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 3.4476940666666664E7 |
+| # stars            | 15226.0 |
 
 ## Links
-- [Homepage](https://github.com/emotion-js/emotion#readme)
+- [Homepage](https://github.com/emotion-js/emotion/tree/main#readme)
 - [Bugs](https://github.com/emotion-js/emotion/issues)
-- [Repository](https://github.com/emotion-js/emotion)
+- [Repository](https://github.com/emotion-js/emotion/tree/main)
 - [Npm](https://www.npmjs.com/package/%40emotion%2Fsheet)
     
 

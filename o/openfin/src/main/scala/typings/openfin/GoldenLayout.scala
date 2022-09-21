@@ -87,7 +87,7 @@ object GoldenLayout {
       * A serialisable object. Will be passed to the component constructor function and will be the value returned by
       * container.getState().
       */
-    var componentState: js.UndefOr[js.Any] = js.undefined
+    var componentState: js.UndefOr[Any] = js.undefined
   }
   object ComponentConfig {
     
@@ -101,7 +101,7 @@ object GoldenLayout {
       
       inline def setComponentName(value: String): Self = StObject.set(x, "componentName", value.asInstanceOf[js.Any])
       
-      inline def setComponentState(value: js.Any): Self = StObject.set(x, "componentState", value.asInstanceOf[js.Any])
+      inline def setComponentState(value: Any): Self = StObject.set(x, "componentState", value.asInstanceOf[js.Any])
       
       inline def setComponentStateUndefined: Self = StObject.set(x, "componentState", js.undefined)
     }
@@ -130,7 +130,7 @@ object GoldenLayout {
       
       inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      inline def setContentVarargs(value: ItemConfigType*): Self = StObject.set(x, "content", js.Array(value :_*))
+      inline def setContentVarargs(value: ItemConfigType*): Self = StObject.set(x, "content", js.Array(value*))
       
       inline def setDimensions(value: Dimensions): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
       
@@ -160,7 +160,7 @@ object GoldenLayout {
       * This is similar to setState, but merges the provided state into the current one, rather than overwriting it.
       * @param state A serialisable object
       */
-    def extendState(state: js.Any): Unit = js.native
+    def extendState(state: Any): Unit = js.native
     
     /**
       * Returns the container's inner element as a jQuery element
@@ -170,7 +170,7 @@ object GoldenLayout {
     /**
       * Returns the current state.
       */
-    def getState(): js.Any = js.native
+    def getState(): Any = js.native
     
     /**
       * The current height of the container in pixel
@@ -211,7 +211,7 @@ object GoldenLayout {
       * constructor function. It will also be used when the component is opened in a new window.
       * @param state A serialisable object
       */
-    def setState(state: js.Any): Unit = js.native
+    def setState(state: Any): Unit = js.native
     
     /**
       * Sets the item's title to the provided value. Triggers titleChanged and stateChanged events
@@ -246,7 +246,7 @@ object GoldenLayout {
     extends StObject
        with EventEmitter {
     
-    var _splitter: js.Any = js.native
+    var _splitter: Any = js.native
     
     /**
       * Adds an item as a child to this item. If the item is already a part of a layout it will be removed
@@ -274,10 +274,10 @@ object GoldenLayout {
       * @param skipSelf If true, the method will only be invoked on the item's children, but not on the item itself. Default: false
       */
     def callDownwards(functionName: String): Unit = js.native
-    def callDownwards(functionName: String, functionArguments: js.Array[js.Any]): Unit = js.native
-    def callDownwards(functionName: String, functionArguments: js.Array[js.Any], bottomUp: Boolean): Unit = js.native
-    def callDownwards(functionName: String, functionArguments: js.Array[js.Any], bottomUp: Boolean, skipSelf: Boolean): Unit = js.native
-    def callDownwards(functionName: String, functionArguments: js.Array[js.Any], bottomUp: Unit, skipSelf: Boolean): Unit = js.native
+    def callDownwards(functionName: String, functionArguments: js.Array[Any]): Unit = js.native
+    def callDownwards(functionName: String, functionArguments: js.Array[Any], bottomUp: Boolean): Unit = js.native
+    def callDownwards(functionName: String, functionArguments: js.Array[Any], bottomUp: Boolean, skipSelf: Boolean): Unit = js.native
+    def callDownwards(functionName: String, functionArguments: js.Array[Any], bottomUp: Unit, skipSelf: Boolean): Unit = js.native
     def callDownwards(functionName: String, functionArguments: Unit, bottomUp: Boolean): Unit = js.native
     def callDownwards(functionName: String, functionArguments: Unit, bottomUp: Boolean, skipSelf: Boolean): Unit = js.native
     def callDownwards(functionName: String, functionArguments: Unit, bottomUp: Unit, skipSelf: Boolean): Unit = js.native
@@ -323,7 +323,7 @@ object GoldenLayout {
       * Returns all instances of the component with the specified componentName
       * @param componentName a componentName as specified in the itemConfig
       */
-    def getComponentsByName(componentName: String): js.Any = js.native
+    def getComponentsByName(componentName: String): Any = js.native
     
     /**
       * Calls filterFunction recursively for every item in the tree. If the function returns true the item is added to the resulting array
@@ -350,14 +350,14 @@ object GoldenLayout {
       */
     def hasId(id: String): Boolean = js.native
     
-    var header: js.Any = js.native
+    var header: Any = js.native
     
     /**
       * A String or array of identifiers if provided in the configuration
       */
     var id: String = js.native
     
-    var instance: js.Any = js.native
+    var instance: Any = js.native
     
     /**
       * True if the item is a column
@@ -397,7 +397,7 @@ object GoldenLayout {
     /**
       * A reference to the layoutManager that controls this item
       */
-    var layoutManager: js.Any = js.native
+    var layoutManager: Any = js.native
     
     /**
       * The item that is this item's parent (or null if the item is root)
@@ -551,18 +551,18 @@ object GoldenLayout {
       * Notify listeners of an event and pass arguments along
       * @param eventName The name of the event to emit
       */
-    def emit(eventName: String, arg1: js.Any, arg2: js.Any, argN: js.Any*): Unit = js.native
-    def emit(eventName: String, arg1: js.Any, arg2: Unit, argN: js.Any*): Unit = js.native
-    def emit(eventName: String, arg1: Unit, arg2: js.Any, argN: js.Any*): Unit = js.native
-    def emit(eventName: String, arg1: Unit, arg2: Unit, argN: js.Any*): Unit = js.native
+    def emit(eventName: String, arg1: Any, arg2: Any, argN: Any*): Unit = js.native
+    def emit(eventName: String, arg1: Any, arg2: Unit, argN: Any*): Unit = js.native
+    def emit(eventName: String, arg1: Unit, arg2: Any, argN: Any*): Unit = js.native
+    def emit(eventName: String, arg1: Unit, arg2: Unit, argN: Any*): Unit = js.native
     
     /**
       * Alias for unbind
       */
     def off(eventName: String): Unit = js.native
     def off(eventName: String, callback: js.Function): Unit = js.native
-    def off(eventName: String, callback: js.Function, context: js.Any): Unit = js.native
-    def off(eventName: String, callback: Unit, context: js.Any): Unit = js.native
+    def off(eventName: String, callback: js.Function, context: Any): Unit = js.native
+    def off(eventName: String, callback: Unit, context: Any): Unit = js.native
     
     /**
       * Subscribe to an event
@@ -571,15 +571,15 @@ object GoldenLayout {
       * @param context The value of the this pointer in the callback function
       */
     def on(eventName: String, callback: js.Function): Unit = js.native
-    def on(eventName: String, callback: js.Function, context: js.Any): Unit = js.native
+    def on(eventName: String, callback: js.Function, context: Any): Unit = js.native
     
     /**
       * Alias for emit
       */
-    def trigger(eventName: String, arg1: js.Any, arg2: js.Any, argN: js.Any*): Unit = js.native
-    def trigger(eventName: String, arg1: js.Any, arg2: Unit, argN: js.Any*): Unit = js.native
-    def trigger(eventName: String, arg1: Unit, arg2: js.Any, argN: js.Any*): Unit = js.native
-    def trigger(eventName: String, arg1: Unit, arg2: Unit, argN: js.Any*): Unit = js.native
+    def trigger(eventName: String, arg1: Any, arg2: Any, argN: Any*): Unit = js.native
+    def trigger(eventName: String, arg1: Any, arg2: Unit, argN: Any*): Unit = js.native
+    def trigger(eventName: String, arg1: Unit, arg2: Any, argN: Any*): Unit = js.native
+    def trigger(eventName: String, arg1: Unit, arg2: Unit, argN: Any*): Unit = js.native
     
     /**
       * Unsubscribes either all listeners if just an eventName is provided, just a specific callback if invoked with
@@ -591,8 +591,8 @@ object GoldenLayout {
       */
     def unbind(eventName: String): Unit = js.native
     def unbind(eventName: String, callback: js.Function): Unit = js.native
-    def unbind(eventName: String, callback: js.Function, context: js.Any): Unit = js.native
-    def unbind(eventName: String, callback: Unit, context: js.Any): Unit = js.native
+    def unbind(eventName: String, callback: js.Function, context: Any): Unit = js.native
+    def unbind(eventName: String, callback: Unit, context: Any): Unit = js.native
   }
   
   @js.native
@@ -600,7 +600,7 @@ object GoldenLayout {
     extends StObject
        with EventEmitter {
     
-    var _dragProxy: js.Any = js.native
+    var _dragProxy: Any = js.native
     
     /**
       * A reference to the current, extended top level config.
@@ -668,7 +668,7 @@ object GoldenLayout {
       */
     def destroy(): Unit = js.native
     
-    var dropTargetIndicator: js.Any = js.native
+    var dropTargetIndicator: Any = js.native
     
     /**
       * A singleton instance of EventEmitter that works across windows
@@ -679,7 +679,7 @@ object GoldenLayout {
       * Returns a component that was previously registered with layout.registerComponent().
       * @param name The name of a previously registered component
       */
-    def getComponent(name: String): js.Any = js.native
+    def getComponent(name: String): Any = js.native
     
     /**
       * The current outer height of the layout in pixels.
@@ -712,7 +712,7 @@ object GoldenLayout {
       * @param component     A constructor or factory function. Will be invoked with new and two arguments, a
       *                      containerobject and a component state
       */
-    def registerComponent(name: String, component: js.Any): Unit = js.native
+    def registerComponent(name: String, component: Any): Unit = js.native
     
     /**
       * Removes a dragSource from the layout.
@@ -742,7 +742,7 @@ object GoldenLayout {
     /**
       * Returns the current state of the layout and its components as a serialisable object.
       */
-    def toConfig(): js.Any = js.native
+    def toConfig(): Any = js.native
     
     /**
       * Resizes the layout. If no arguments are provided GoldenLayout measures its container and resizes accordingly.
@@ -875,7 +875,7 @@ object GoldenLayout {
       
       inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      inline def setContentVarargs(value: ItemConfigType*): Self = StObject.set(x, "content", js.Array(value :_*))
+      inline def setContentVarargs(value: ItemConfigType*): Self = StObject.set(x, "content", js.Array(value*))
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -885,7 +885,7 @@ object GoldenLayout {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setIdVarargs(value: String*): Self = StObject.set(x, "id", js.Array(value :_*))
+      inline def setIdVarargs(value: String*): Self = StObject.set(x, "id", js.Array(value*))
       
       inline def setIsClosable(value: Boolean): Self = StObject.set(x, "isClosable", value.asInstanceOf[js.Any])
       
@@ -996,7 +996,7 @@ object GoldenLayout {
     /**
       * Properties that will be passed to the component and accessible using this.props.
       */
-    var props: js.UndefOr[js.Any] = js.undefined
+    var props: js.UndefOr[Any] = js.undefined
   }
   object ReactComponentConfig {
     
@@ -1010,7 +1010,7 @@ object GoldenLayout {
       
       inline def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      inline def setProps(value: js.Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
       inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
     }

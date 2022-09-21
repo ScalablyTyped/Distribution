@@ -13,6 +13,8 @@ trait Initial[State /* <: NavigationState[ParamListBase] */] extends StObject {
   
   var params: js.UndefOr[scala.Nothing] = js.undefined
   
+  var path: js.UndefOr[String] = js.undefined
+  
   var screen: js.UndefOr[scala.Nothing] = js.undefined
   
   var state: js.UndefOr[PartialState[State] | State] = js.undefined
@@ -25,6 +27,10 @@ object Initial {
   }
   
   extension [Self <: Initial[?], State /* <: NavigationState[ParamListBase] */](x: Self & Initial[State]) {
+    
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     inline def setState(value: PartialState[State] | State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

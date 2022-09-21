@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("MFiles.PreviewerActiveXCtrl")
 @js.native
-class PreviewerActiveXCtrl ()
+open class PreviewerActiveXCtrl ()
   extends StObject
      with IPreviewerActiveXCtrl {
   
@@ -26,7 +26,7 @@ class PreviewerActiveXCtrl ()
     lObjVersion: Double,
     lFile: Double,
     lFileVersion: Double,
-    pIHitHighlightingInfo: js.Any,
+    pIHitHighlightingInfo: Any,
     bstrSearchConditions: String
   ): Double = js.native
 }

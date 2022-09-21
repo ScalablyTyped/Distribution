@@ -13,7 +13,7 @@ object forgeMod {
   
   @JSImport("forge-di/dist/Forge", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with Forge {
     def this(config: Config) = this()
@@ -27,18 +27,18 @@ object forgeMod {
     var bindings: StringDictionary[js.Array[typings.forgeDi.bindingMod.default]] = js.native
     
     def get[T](name: String): T = js.native
-    def get[T](name: String, hint: js.Any): T = js.native
-    def get[T](name: String, hint: js.Any, args: Arguments): T = js.native
+    def get[T](name: String, hint: Any): T = js.native
+    def get[T](name: String, hint: Any, args: Arguments): T = js.native
     def get[T](name: String, hint: Unit, args: Arguments): T = js.native
     
     def getAll[T](name: String): js.Array[T] = js.native
     def getAll[T](name: String, args: Arguments): js.Array[T] = js.native
     
-    /* private */ var getMatchingBindings: js.Any = js.native
+    /* private */ var getMatchingBindings: Any = js.native
     
     def getOne[T](name: String): T = js.native
-    def getOne[T](name: String, hint: js.Any): T = js.native
-    def getOne[T](name: String, hint: js.Any, args: Arguments): T = js.native
+    def getOne[T](name: String, hint: Any): T = js.native
+    def getOne[T](name: String, hint: Any, args: Arguments): T = js.native
     def getOne[T](name: String, hint: Unit, args: Arguments): T = js.native
     
     def inspect(): String = js.native
@@ -47,14 +47,8 @@ object forgeMod {
     
     def rebind(name: String): typings.forgeDi.bindingMod.default = js.native
     
-    def resolve(name: String, context: typings.forgeDi.contextMod.default, hint: js.Any, args: Arguments): js.Any = js.native
-    def resolve(
-      name: String,
-      context: typings.forgeDi.contextMod.default,
-      hint: js.Any,
-      args: Arguments,
-      mode: Mode
-    ): js.Any = js.native
+    def resolve(name: String, context: typings.forgeDi.contextMod.default, hint: Any, args: Arguments): Any = js.native
+    def resolve(name: String, context: typings.forgeDi.contextMod.default, hint: Any, args: Arguments, mode: Mode): Any = js.native
     
     def unbind(name: String): Double = js.native
   }

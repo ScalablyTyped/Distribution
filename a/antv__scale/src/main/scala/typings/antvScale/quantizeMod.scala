@@ -1,25 +1,24 @@
 package typings.antvScale
 
+import typings.antvScale.thresholdMod.Threshold
+import typings.antvScale.typesMod.QuantizeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object quantizeMod {
   
-  /**
-    * 分段度量
-    */
-  @JSImport("@antv/scale/lib/continuous/quantize", JSImport.Default)
+  @JSImport("@antv/scale/lib/scales/quantize", "Quantize")
   @js.native
-  class default () extends Quantize
-  
-  /**
-    * 分段度量
-    */
-  @js.native
-  trait Quantize
-    extends typings.antvScale.continuousBaseMod.default {
+  open class Quantize () extends Threshold[QuantizeOptions] {
+    def this(options: QuantizeOptions) = this()
     
-    def invert(value: js.Any): Double = js.native
+    def getThresholds(): js.Array[Double] = js.native
+    
+    /* protected */ def getTickMethodOptions(): js.Array[Double] = js.native
+    
+    def getTicks(): js.Array[Double] = js.native
+    
+    /* protected */ def nice(): Unit = js.native
   }
 }

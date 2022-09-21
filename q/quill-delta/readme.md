@@ -1,7 +1,7 @@
 
 # Scala.js typings for quill-delta
 
-Typings are for version 4.2.2
+Typings are for version 5.0.0
 
 ## Library description:
 Format for representing rich text documents and changes.
@@ -10,10 +10,10 @@ Format for representing rich text documents and changes.
 | ------------------ | :-------------: |
 | Full name          | quill-delta |
 | Keywords           | rich text, ot, operational transform, delta |
-| # releases         | 5 |
-| # dependents       | 113 |
-| # downloads        | 19222046 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5443533.333333333 |
+| # stars            | 631.0 |
 
 ## Links
 - [Homepage](https://github.com/quilljs/delta)

@@ -1,5 +1,6 @@
 package typings.maximMazurokGapiClientContainer.anon
 
+import typings.maximMazurokGapiClientContainer.gapi.client.container.RollbackNodePoolUpgradeRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +26,7 @@ trait Name extends StObject {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
   
-  /** The name (project, location, operation id) of the operation to cancel. Specified in the format `projects/∗/locations/∗/operations/ *`. */
+  /** The name (project, location, cluster, node pool id) of the node poll to rollback upgrade. Specified in the format `projects/ *‍/locations/ *‍/clusters/ *‍/nodePools/ *`. */
   var name: String
   
   /** OAuth 2.0 token for the current user. */
@@ -37,6 +38,9 @@ trait Name extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
+  /** Request body */
+  var resource: RollbackNodePoolUpgradeRequest
+  
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
   
@@ -45,8 +49,8 @@ trait Name extends StObject {
 }
 object Name {
   
-  inline def apply(name: String): Name = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  inline def apply(name: String, resource: RollbackNodePoolUpgradeRequest): Name = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Name]
   }
   
@@ -89,6 +93,8 @@ object Name {
     inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+    
+    inline def setResource(value: RollbackNodePoolUpgradeRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

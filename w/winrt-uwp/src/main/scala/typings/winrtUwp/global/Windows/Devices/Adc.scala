@@ -109,7 +109,7 @@ object Adc {
       * @return When the method completes successfully, it returns a list of values that represent the controllers available on the system.
       */
     /* static member */
-    inline def getControllersAsync(provider: IAdcProvider): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getControllersAsync")(provider.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+    inline def getControllersAsync(provider: IAdcProvider): IPromiseWithIAsyncOperation[IVectorView[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getControllersAsync")(provider.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[Any]]]
     
     /**
       * Gets the default ADC controller on the system.

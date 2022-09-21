@@ -58,11 +58,11 @@ object Schedule {
     
     inline def setSequence(value: js.Array[ArrivalDeparture]): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
     
-    inline def setSequenceVarargs(value: ArrivalDeparture*): Self = StObject.set(x, "sequence", js.Array(value :_*))
+    inline def setSequenceVarargs(value: ArrivalDeparture*): Self = StObject.set(x, "sequence", js.Array(value*))
     
     inline def setStarts(value: js.Array[String]): Self = StObject.set(x, "starts", value.asInstanceOf[js.Any])
     
-    inline def setStartsVarargs(value: String*): Self = StObject.set(x, "starts", js.Array(value :_*))
+    inline def setStartsVarargs(value: String*): Self = StObject.set(x, "starts", js.Array(value*))
     
     inline def setType(value: schedule): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

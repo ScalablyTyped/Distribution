@@ -19,7 +19,7 @@ trait DescribeActivitiesRequest extends StObject {
   /**
     * The timestamp that determines the end time of the activities. The response includes the activities performed before the specified timestamp.
     */
-  var EndTime: js.UndefOr[TimestampType] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Includes indirect activities. An indirect activity results from a direct activity performed on a parent resource. For example, sharing a parent folder (the direct activity) shares all of the subfolders and documents within the parent folder (the indirect activity).
@@ -49,7 +49,7 @@ trait DescribeActivitiesRequest extends StObject {
   /**
     * The timestamp that determines the starting time of the activities. The response includes the activities performed after the specified timestamp.
     */
-  var StartTime: js.UndefOr[TimestampType] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ID of the user who performed the action. The response includes activities pertaining to this user. This is an optional parameter and is only applicable for administrative API (SigV4) requests.
@@ -73,7 +73,7 @@ object DescribeActivitiesRequest {
     
     inline def setAuthenticationTokenUndefined: Self = StObject.set(x, "AuthenticationToken", js.undefined)
     
-    inline def setEndTime(value: TimestampType): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
@@ -97,7 +97,7 @@ object DescribeActivitiesRequest {
     
     inline def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
     
-    inline def setStartTime(value: TimestampType): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     

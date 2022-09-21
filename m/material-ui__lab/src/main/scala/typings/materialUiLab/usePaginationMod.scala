@@ -113,7 +113,7 @@ object usePaginationMod {
       * @param {object} event The event source of the callback.
       * @param {number} page The page selected.
       */
-    var onChange: js.UndefOr[js.Function2[/* event */ ChangeEvent[js.Any], /* page */ Double, Unit]] = js.undefined
+    var onChange: js.UndefOr[js.Function2[/* event */ ChangeEvent[Any], /* page */ Double, Unit]] = js.undefined
     
     /**
       * The current page.
@@ -175,7 +175,7 @@ object usePaginationMod {
       
       inline def setHidePrevButtonUndefined: Self = StObject.set(x, "hidePrevButton", js.undefined)
       
-      inline def setOnChange(value: (/* event */ ChangeEvent[js.Any], /* page */ Double) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      inline def setOnChange(value: (/* event */ ChangeEvent[Any], /* page */ Double) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -212,7 +212,7 @@ object usePaginationMod {
       
       inline def setItems(value: js.Array[UsePaginationItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      inline def setItemsVarargs(value: UsePaginationItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: UsePaginationItem*): Self = StObject.set(x, "items", js.Array(value*))
     }
   }
 }

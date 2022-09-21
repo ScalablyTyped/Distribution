@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ethersproject/bytes" : "5.0.6"
+      "@ethersproject/bytes" : "5.7.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@ethersproject/bytes" : "5.0.6"
+      "@ethersproject/bytes" : "5.7.0"
     }
   ],
   "compile-devDependencies" : [

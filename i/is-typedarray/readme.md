@@ -10,10 +10,10 @@ Detect whether or not an object is a Typed Array
 | ------------------ | :-------------: |
 | Full name          | is-typedarray |
 | Keywords           | typed, array, detect, is, util |
-| # releases         | 0 |
-| # dependents       | 169 |
-| # downloads        | 832531667 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.11412546E8 |
+| # stars            | 21.0 |
 
 ## Links
 - [Homepage](https://github.com/hughsk/is-typedarray)

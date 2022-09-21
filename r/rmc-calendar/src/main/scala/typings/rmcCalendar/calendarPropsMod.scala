@@ -10,7 +10,6 @@ import typings.rmcCalendar.rmcCalendarStrings.one
 import typings.rmcCalendar.rmcCalendarStrings.range
 import typings.rmcCalendar.rmcCalendarStrings.vertical
 import typings.rmcCalendar.rmcCalendarStrings.xl
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,10 +19,10 @@ object calendarPropsMod {
   trait PropsType extends StObject {
     
     /** 显示开始日期，default: today */
-    var defaultDate: js.UndefOr[Date] = js.undefined
+    var defaultDate: js.UndefOr[js.Date] = js.undefined
     
     /** 默认时间选择值 */
-    var defaultTimeValue: js.UndefOr[Date] = js.undefined
+    var defaultTimeValue: js.UndefOr[js.Date] = js.undefined
     
     /** 默认选择值，开始时间、结束时间 */
     var defaultValue: js.UndefOr[SelectDateType] = js.undefined
@@ -32,7 +31,7 @@ object calendarPropsMod {
     var enterDirection: js.UndefOr[horizontal | vertical] = js.undefined
     
     /** 日期扩展数据 */
-    var getDateExtra: js.UndefOr[js.Function1[/* date */ Date, ExtraData]] = js.undefined
+    var getDateExtra: js.UndefOr[js.Function1[/* date */ js.Date, ExtraData]] = js.undefined
     
     /** 无限滚动优化（大范围选择），default: false */
     var infiniteOpt: js.UndefOr[Boolean] = js.undefined
@@ -44,10 +43,10 @@ object calendarPropsMod {
     var locale: js.UndefOr[Locale] = js.undefined
     
     /** 最大日期 */
-    var maxDate: js.UndefOr[Date] = js.undefined
+    var maxDate: js.UndefOr[js.Date] = js.undefined
     
     /** 最小日期 */
-    var minDate: js.UndefOr[Date] = js.undefined
+    var minDate: js.UndefOr[js.Date] = js.undefined
     
     /** 关闭时回调 */
     var onCancel: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -57,20 +56,20 @@ object calendarPropsMod {
     
     /** 确认时回调 */
     var onConfirm: js.UndefOr[
-        js.Function2[/* startDateTime */ js.UndefOr[Date], /* endDateTime */ js.UndefOr[Date], Unit]
+        js.Function2[/* startDateTime */ js.UndefOr[js.Date], /* endDateTime */ js.UndefOr[js.Date], Unit]
       ] = js.undefined
     
     /** 选择日期回调，如果有返回值，选择范围将使用返回值 */
     var onSelect: js.UndefOr[
         js.Function2[
-          /* date */ Date, 
-          /* state */ js.UndefOr[js.Tuple2[js.UndefOr[Date], js.UndefOr[Date]]], 
+          /* date */ js.Date, 
+          /* state */ js.UndefOr[js.Tuple2[js.UndefOr[js.Date], js.UndefOr[js.Date]]], 
           SelectDateType | Unit
         ]
       ] = js.undefined
     
     /** 选择区间包含不可用日期 */
-    var onSelectHasDisableDate: js.UndefOr[js.Function1[/* date */ js.Array[Date], Unit]] = js.undefined
+    var onSelectHasDisableDate: js.UndefOr[js.Function1[/* date */ js.Array[js.Date], Unit]] = js.undefined
     
     /** 是否选择时间，default: false */
     var pickTime: js.UndefOr[Boolean] = js.undefined
@@ -84,7 +83,7 @@ object calendarPropsMod {
     /** 替换快捷选择栏，需要设置showShortcut: true */
     var renderShortcut: js.UndefOr[
         js.Function1[
-          /* select */ js.Function2[/* startDate */ js.UndefOr[Date], /* endDate */ js.UndefOr[Date], Unit], 
+          /* select */ js.Function2[/* startDate */ js.UndefOr[js.Date], /* endDate */ js.UndefOr[js.Date], Unit], 
           ReactNode
         ]
       ] = js.undefined
@@ -119,11 +118,11 @@ object calendarPropsMod {
     
     extension [Self <: PropsType](x: Self) {
       
-      inline def setDefaultDate(value: Date): Self = StObject.set(x, "defaultDate", value.asInstanceOf[js.Any])
+      inline def setDefaultDate(value: js.Date): Self = StObject.set(x, "defaultDate", value.asInstanceOf[js.Any])
       
       inline def setDefaultDateUndefined: Self = StObject.set(x, "defaultDate", js.undefined)
       
-      inline def setDefaultTimeValue(value: Date): Self = StObject.set(x, "defaultTimeValue", value.asInstanceOf[js.Any])
+      inline def setDefaultTimeValue(value: js.Date): Self = StObject.set(x, "defaultTimeValue", value.asInstanceOf[js.Any])
       
       inline def setDefaultTimeValueUndefined: Self = StObject.set(x, "defaultTimeValue", js.undefined)
       
@@ -131,13 +130,13 @@ object calendarPropsMod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: Date*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: js.Date*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setEnterDirection(value: horizontal | vertical): Self = StObject.set(x, "enterDirection", value.asInstanceOf[js.Any])
       
       inline def setEnterDirectionUndefined: Self = StObject.set(x, "enterDirection", js.undefined)
       
-      inline def setGetDateExtra(value: /* date */ Date => ExtraData): Self = StObject.set(x, "getDateExtra", js.Any.fromFunction1(value))
+      inline def setGetDateExtra(value: /* date */ js.Date => ExtraData): Self = StObject.set(x, "getDateExtra", js.Any.fromFunction1(value))
       
       inline def setGetDateExtraUndefined: Self = StObject.set(x, "getDateExtra", js.undefined)
       
@@ -153,11 +152,11 @@ object calendarPropsMod {
       
       inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      inline def setMaxDate(value: Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+      inline def setMaxDate(value: js.Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
       
       inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
       
-      inline def setMinDate(value: Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+      inline def setMinDate(value: js.Date): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
       
       inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
       
@@ -169,15 +168,15 @@ object calendarPropsMod {
       
       inline def setOnClearUndefined: Self = StObject.set(x, "onClear", js.undefined)
       
-      inline def setOnConfirm(value: (/* startDateTime */ js.UndefOr[Date], /* endDateTime */ js.UndefOr[Date]) => Unit): Self = StObject.set(x, "onConfirm", js.Any.fromFunction2(value))
+      inline def setOnConfirm(value: (/* startDateTime */ js.UndefOr[js.Date], /* endDateTime */ js.UndefOr[js.Date]) => Unit): Self = StObject.set(x, "onConfirm", js.Any.fromFunction2(value))
       
       inline def setOnConfirmUndefined: Self = StObject.set(x, "onConfirm", js.undefined)
       
       inline def setOnSelect(
-        value: (/* date */ Date, /* state */ js.UndefOr[js.Tuple2[js.UndefOr[Date], js.UndefOr[Date]]]) => SelectDateType | Unit
+        value: (/* date */ js.Date, /* state */ js.UndefOr[js.Tuple2[js.UndefOr[js.Date], js.UndefOr[js.Date]]]) => SelectDateType | Unit
       ): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
       
-      inline def setOnSelectHasDisableDate(value: /* date */ js.Array[Date] => Unit): Self = StObject.set(x, "onSelectHasDisableDate", js.Any.fromFunction1(value))
+      inline def setOnSelectHasDisableDate(value: /* date */ js.Array[js.Date] => Unit): Self = StObject.set(x, "onSelectHasDisableDate", js.Any.fromFunction1(value))
       
       inline def setOnSelectHasDisableDateUndefined: Self = StObject.set(x, "onSelectHasDisableDate", js.undefined)
       
@@ -196,7 +195,7 @@ object calendarPropsMod {
       inline def setRenderHeaderUndefined: Self = StObject.set(x, "renderHeader", js.undefined)
       
       inline def setRenderShortcut(
-        value: /* select */ js.Function2[/* startDate */ js.UndefOr[Date], /* endDate */ js.UndefOr[Date], Unit] => ReactNode
+        value: /* select */ js.Function2[/* startDate */ js.UndefOr[js.Date], /* endDate */ js.UndefOr[js.Date], Unit] => ReactNode
       ): Self = StObject.set(x, "renderShortcut", js.Any.fromFunction1(value))
       
       inline def setRenderShortcutUndefined: Self = StObject.set(x, "renderShortcut", js.undefined)
@@ -235,5 +234,5 @@ object calendarPropsMod {
     }
   }
   
-  type SelectDateType = (js.Tuple2[Date, Date]) | js.Array[Date]
+  type SelectDateType = (js.Tuple2[js.Date, js.Date]) | js.Array[js.Date]
 }

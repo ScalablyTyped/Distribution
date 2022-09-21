@@ -58,7 +58,7 @@ object GetDocumentAnalysisResponse {
     
     inline def setBlocksUndefined: Self = StObject.set(x, "Blocks", js.undefined)
     
-    inline def setBlocksVarargs(value: Block*): Self = StObject.set(x, "Blocks", js.Array(value :_*))
+    inline def setBlocksVarargs(value: Block*): Self = StObject.set(x, "Blocks", js.Array(value*))
     
     inline def setDocumentMetadata(value: DocumentMetadata): Self = StObject.set(x, "DocumentMetadata", value.asInstanceOf[js.Any])
     
@@ -80,6 +80,6 @@ object GetDocumentAnalysisResponse {
     
     inline def setWarningsUndefined: Self = StObject.set(x, "Warnings", js.undefined)
     
-    inline def setWarningsVarargs(value: Warning*): Self = StObject.set(x, "Warnings", js.Array(value :_*))
+    inline def setWarningsVarargs(value: Warning*): Self = StObject.set(x, "Warnings", js.Array(value*))
   }
 }

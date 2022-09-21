@@ -1,6 +1,5 @@
 package typings.babylonjs.BABYLON
 
-import typings.std.FocusEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,18 +9,20 @@ trait FlyCameraKeyboardInput
   extends StObject
      with ICameraInput[FlyCamera] {
   
-  /* private */ var _engine: js.Any = js.native
+  /* private */ var _engine: Any = js.native
   
-  /* private */ var _keys: js.Any = js.native
+  /* private */ var _keys: Any = js.native
   
-  /* private */ var _onCanvasBlurObserver: js.Any = js.native
+  /* private */ var _onCanvasBlurObserver: Any = js.native
   
-  /* private */ var _onKeyboardObserver: js.Any = js.native
+  /* private */ var _onKeyboardObserver: Any = js.native
   
-  /** @hidden */
-  def _onLostFocus(e: FocusEvent): Unit = js.native
+  /**
+    * @hidden
+    */
+  def _onLostFocus(): Unit = js.native
   
-  /* private */ var _scene: js.Any = js.native
+  /* private */ var _scene: Any = js.native
   
   /**
     * Defines the camera the input is attached to.

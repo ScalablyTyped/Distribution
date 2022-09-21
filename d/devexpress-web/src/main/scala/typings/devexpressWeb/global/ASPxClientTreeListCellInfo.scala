@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientTreeListCellInfo")
 @js.native
-class ASPxClientTreeListCellInfo ()
+open class ASPxClientTreeListCellInfo ()
   extends StObject
      with typings.devexpressWeb.ASPxClientTreeListCellInfo {
   

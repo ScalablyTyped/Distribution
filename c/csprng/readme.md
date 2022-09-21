@@ -10,10 +10,10 @@ Secure random numbers of any size in any base
 | ------------------ | :-------------: |
 | Full name          | csprng |
 | Keywords           | crypto, math, random, security |
-| # releases         | 0 |
-| # dependents       | 17 |
-| # downloads        | 8961359 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1460854.3333333333 |
+| # stars            | 34.0 |
 
 ## Links
 - [Homepage](http://github.com/jcoglan/node-csprng)

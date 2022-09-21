@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response to an async batch image annotation request.
-  */
 trait SchemaGoogleCloudVisionV1p4beta1AsyncBatchAnnotateImagesResponse extends StObject {
   
   /**

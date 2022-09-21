@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GoogleCloudDatalabelingV1p1alpha1LabelOperationMetadata extends StObject {
   
-  /** Output only. The name of annotated dataset in format "projects/∗/datasets/∗/annotatedDatasets/ *". */
+  /** Output only. The name of annotated dataset in format "projects/ *‍/datasets/ *‍/annotatedDatasets/ *". */
   var annotatedDataset: js.UndefOr[String] = js.undefined
   
   /** Output only. Timestamp when labeling request was created. */
   var createTime: js.UndefOr[String] = js.undefined
   
-  /** Output only. The name of dataset to be labeled. "projects/∗/datasets/ *" */
+  /** Output only. The name of dataset to be labeled. "projects/ *‍/datasets/ *" */
   var dataset: js.UndefOr[String] = js.undefined
   
   /** Details of label image bounding box operation. */
@@ -106,7 +106,7 @@ object GoogleCloudDatalabelingV1p1alpha1LabelOperationMetadata {
     
     inline def setPartialFailuresUndefined: Self = StObject.set(x, "partialFailures", js.undefined)
     
-    inline def setPartialFailuresVarargs(value: GoogleRpcStatus*): Self = StObject.set(x, "partialFailures", js.Array(value :_*))
+    inline def setPartialFailuresVarargs(value: GoogleRpcStatus*): Self = StObject.set(x, "partialFailures", js.Array(value*))
     
     inline def setProgressPercent(value: Double): Self = StObject.set(x, "progressPercent", value.asInstanceOf[js.Any])
     

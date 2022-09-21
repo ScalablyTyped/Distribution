@@ -7,26 +7,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Cloud Vision API
-  *
-  * Integrates Google Vision features, including image labeling, face, logo,
-  * and landmark detection, optical character recognition (OCR), and detection
-  * of explicit content, into applications.
-  *
-  * @example
-  * const {google} = require('googleapis');
-  * const vision = google.vision('v1p1beta1');
-  *
-  * @namespace vision
-  * @type {Function}
-  * @version v1p1beta1
-  * @variation v1p1beta1
-  * @param {object=} options Options for Vision
-  */
 @JSImport("googleapis/build/src/apis/vision/v1p1beta1", "vision_v1p1beta1.Vision")
 @js.native
-class Vision protected () extends StObject {
+open class Vision protected () extends StObject {
   def this(options: GlobalOptions) = this()
   def this(options: GlobalOptions, google: GoogleConfigurable) = this()
   
@@ -35,4 +18,6 @@ class Vision protected () extends StObject {
   var files: ResourceFiles = js.native
   
   var images: ResourceImages = js.native
+  
+  var projects: ResourceProjects = js.native
 }

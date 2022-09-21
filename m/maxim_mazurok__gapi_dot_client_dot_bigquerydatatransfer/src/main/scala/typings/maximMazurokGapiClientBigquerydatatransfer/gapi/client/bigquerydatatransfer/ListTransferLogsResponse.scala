@@ -29,6 +29,6 @@ object ListTransferLogsResponse {
     
     inline def setTransferMessagesUndefined: Self = StObject.set(x, "transferMessages", js.undefined)
     
-    inline def setTransferMessagesVarargs(value: TransferMessage*): Self = StObject.set(x, "transferMessages", js.Array(value :_*))
+    inline def setTransferMessagesVarargs(value: TransferMessage*): Self = StObject.set(x, "transferMessages", js.Array(value*))
   }
 }

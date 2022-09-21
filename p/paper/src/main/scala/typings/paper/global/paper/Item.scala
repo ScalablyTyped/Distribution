@@ -14,6 +14,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("paper.Item")
 @js.native
-class Item ()
+open class Item ()
   extends StObject
      with typings.paper.paper.Item

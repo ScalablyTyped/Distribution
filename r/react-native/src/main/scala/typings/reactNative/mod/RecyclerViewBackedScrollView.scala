@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped new (args : ...any): react-native.react-native.ScrollResponderMixin */ @JSImport("react-native", "RecyclerViewBackedScrollView")
 @js.native
-class RecyclerViewBackedScrollView ()
-  extends Component[RecyclerViewBackedScrollViewProps, js.Object, js.Any] {
+open class RecyclerViewBackedScrollView ()
+  extends Component[RecyclerViewBackedScrollViewProps, js.Object, Any] {
   
   /**
     * Returns a reference to the underlying scroll responder, which supports

@@ -4,19 +4,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A batch entry encoding a single non-batch datafeeds response.
-  */
 trait SchemaDatafeedsCustomBatchResponseEntry extends StObject {
   
   /**
     * The ID of the request entry this entry responds to.
     */
-  var batchId: js.UndefOr[Double] = js.undefined
+  var batchId: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * The requested data feed. Defined if and only if the request was
-    * successful.
+    * The requested data feed. Defined if and only if the request was successful.
     */
   var datafeed: js.UndefOr[SchemaDatafeed] = js.undefined
   
@@ -35,6 +31,8 @@ object SchemaDatafeedsCustomBatchResponseEntry {
   extension [Self <: SchemaDatafeedsCustomBatchResponseEntry](x: Self) {
     
     inline def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
+    
+    inline def setBatchIdNull: Self = StObject.set(x, "batchId", null)
     
     inline def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
     

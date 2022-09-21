@@ -5,28 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Item to be stored in the {@link pc.SceneRegistry}.
-  * @property name - The name of the scene.
-  * @property url - The url of the scene file.
-  * @param name - The name of the scene.
-  * @param url - The url of the scene file.
+  * Item to be stored in the {@link SceneRegistry}.
   */
 @JSGlobal("pc.SceneRegistryItem")
 @js.native
-class SceneRegistryItem protected ()
-  extends StObject
-     with typings.playcanvas.pc.SceneRegistryItem {
+open class SceneRegistryItem protected ()
+  extends typings.playcanvas.mod.SceneRegistryItem {
+  /**
+    * Creates a new SceneRegistryItem instance.
+    *
+    * @param {string} name - The name of the scene.
+    * @param {string} url - The url of the scene file.
+    */
   def this(name: String, url: String) = this()
-  
-  /**
-    * The name of the scene.
-    */
-  /* CompleteClass */
-  var name: String = js.native
-  
-  /**
-    * The url of the scene file.
-    */
-  /* CompleteClass */
-  var url: String = js.native
 }

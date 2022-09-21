@@ -57,11 +57,11 @@ object ILocaleDateTimeFormatDescriptor {
     
     inline def setAMPMS(value: js.Array[String]): Self = StObject.set(x, "AMPMS", value.asInstanceOf[js.Any])
     
-    inline def setAMPMSVarargs(value: String*): Self = StObject.set(x, "AMPMS", js.Array(value :_*))
+    inline def setAMPMSVarargs(value: String*): Self = StObject.set(x, "AMPMS", js.Array(value*))
     
     inline def setDAY(value: js.Array[String]): Self = StObject.set(x, "DAY", value.asInstanceOf[js.Any])
     
-    inline def setDAYVarargs(value: String*): Self = StObject.set(x, "DAY", js.Array(value :_*))
+    inline def setDAYVarargs(value: String*): Self = StObject.set(x, "DAY", js.Array(value*))
     
     inline def setFullDate(value: String): Self = StObject.set(x, "fullDate", value.asInstanceOf[js.Any])
     
@@ -69,7 +69,7 @@ object ILocaleDateTimeFormatDescriptor {
     
     inline def setMONTH(value: js.Array[String]): Self = StObject.set(x, "MONTH", value.asInstanceOf[js.Any])
     
-    inline def setMONTHVarargs(value: String*): Self = StObject.set(x, "MONTH", js.Array(value :_*))
+    inline def setMONTHVarargs(value: String*): Self = StObject.set(x, "MONTH", js.Array(value*))
     
     inline def setMedium(value: String): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
     
@@ -79,11 +79,11 @@ object ILocaleDateTimeFormatDescriptor {
     
     inline def setSHORTDAY(value: js.Array[String]): Self = StObject.set(x, "SHORTDAY", value.asInstanceOf[js.Any])
     
-    inline def setSHORTDAYVarargs(value: String*): Self = StObject.set(x, "SHORTDAY", js.Array(value :_*))
+    inline def setSHORTDAYVarargs(value: String*): Self = StObject.set(x, "SHORTDAY", js.Array(value*))
     
     inline def setSHORTMONTH(value: js.Array[String]): Self = StObject.set(x, "SHORTMONTH", value.asInstanceOf[js.Any])
     
-    inline def setSHORTMONTHVarargs(value: String*): Self = StObject.set(x, "SHORTMONTH", js.Array(value :_*))
+    inline def setSHORTMONTHVarargs(value: String*): Self = StObject.set(x, "SHORTMONTH", js.Array(value*))
     
     inline def setShort(value: String): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
     

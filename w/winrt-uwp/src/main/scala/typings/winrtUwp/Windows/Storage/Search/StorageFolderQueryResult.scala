@@ -16,11 +16,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait StorageFolderQueryResult extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_contentschanged(`type`: contentschanged, listener: TypedEventHandler[IStorageQueryResultBase, js.Any]): Unit = js.native
+  def addEventListener_contentschanged(`type`: contentschanged, listener: TypedEventHandler[IStorageQueryResultBase, Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_optionschanged(`type`: optionschanged, listener: TypedEventHandler[IStorageQueryResultBase, js.Any]): Unit = js.native
+  def addEventListener_optionschanged(`type`: optionschanged, listener: TypedEventHandler[IStorageQueryResultBase, Any]): Unit = js.native
   
   /**
     * Modifies query results based on new QueryOptions .
@@ -33,7 +33,7 @@ trait StorageFolderQueryResult extends StObject {
     * @param value The property value to match when searching the query results. The property to that is used to match this value is the property in the first SortEntry of the QueryOptions.SortOrder list.
     * @return When this method completes successfully it returns the index of the matched folder in the query results.
     */
-  def findStartIndexAsync(value: js.Any): IPromiseWithIAsyncOperation[Double] = js.native
+  def findStartIndexAsync(value: Any): IPromiseWithIAsyncOperation[Double] = js.native
   
   /** Gets the folder originally used to create the StorageFolderQueryResult object. This folder represents the scope of the query. */
   var folder: StorageFolder = js.native
@@ -48,14 +48,14 @@ trait StorageFolderQueryResult extends StObject {
     * Retrieves a list of all the folders (or file groups) in the result set.
     * @return When this method completes successfully, it returns a list (type IVectorView ) of folders or file groups that are represented by storageFolder objects. Each of these folder or file group can also be enumerated to retrieve its contents.
     */
-  def getFoldersAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+  def getFoldersAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
   /**
     * Retrieves folders (or file groups) in a specified range.
     * @param startIndex The zero-based index of the first folder to retrieve. This parameter defaults to 0.
     * @param maxNumberOfItems The maximum number of folders or file groups to retrieve. Use -1 to retrieve all folders. If the range contains fewer folders than the max number, all folders in the range are returned.
     * @return When this method completes successfully, it returns a list (type IVectorView ) of folders or file groups that are represented by storageFolder objects.
     */
-  def getFoldersAsync(startIndex: Double, maxNumberOfItems: Double): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+  def getFoldersAsync(startIndex: Double, maxNumberOfItems: Double): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
   
   /**
     * Retrieves the number of folders (or file groups) in the set of query results.
@@ -64,20 +64,20 @@ trait StorageFolderQueryResult extends StObject {
   def getItemCountAsync(): IPromiseWithIAsyncOperation[Double] = js.native
   
   /** Fires when a file is added to, deleted from, or modified in the folder being queried. This event only fires after GetFilesAsync has been called at least once. */
-  def oncontentschanged(ev: js.Any & WinRTEvent[IStorageQueryResultBase]): Unit = js.native
+  def oncontentschanged(ev: Any & WinRTEvent[IStorageQueryResultBase]): Unit = js.native
   /** Fires when a file is added to, deleted from, or modified in the folder being queried. This event only fires after GetFilesAsync has been called at least once. */
   @JSName("oncontentschanged")
-  var oncontentschanged_Original: TypedEventHandler[IStorageQueryResultBase, js.Any] = js.native
+  var oncontentschanged_Original: TypedEventHandler[IStorageQueryResultBase, Any] = js.native
   
   /** Fires when the query options change. */
-  def onoptionschanged(ev: js.Any & WinRTEvent[IStorageQueryResultBase]): Unit = js.native
+  def onoptionschanged(ev: Any & WinRTEvent[IStorageQueryResultBase]): Unit = js.native
   /** Fires when the query options change. */
   @JSName("onoptionschanged")
-  var onoptionschanged_Original: TypedEventHandler[IStorageQueryResultBase, js.Any] = js.native
+  var onoptionschanged_Original: TypedEventHandler[IStorageQueryResultBase, Any] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_contentschanged(`type`: contentschanged, listener: TypedEventHandler[IStorageQueryResultBase, js.Any]): Unit = js.native
+  def removeEventListener_contentschanged(`type`: contentschanged, listener: TypedEventHandler[IStorageQueryResultBase, Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_optionschanged(`type`: optionschanged, listener: TypedEventHandler[IStorageQueryResultBase, js.Any]): Unit = js.native
+  def removeEventListener_optionschanged(`type`: optionschanged, listener: TypedEventHandler[IStorageQueryResultBase, Any]): Unit = js.native
 }

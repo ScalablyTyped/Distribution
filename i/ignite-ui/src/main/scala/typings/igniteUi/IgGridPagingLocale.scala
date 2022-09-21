@@ -10,7 +10,7 @@ trait IgGridPagingLocale
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Leading label text for the drop down from where the page index can be switched.

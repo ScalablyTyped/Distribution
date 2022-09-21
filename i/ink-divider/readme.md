@@ -10,10 +10,10 @@ Divider component for Ink
 | ------------------ | :-------------: |
 | Full name          | ink-divider |
 | Keywords           | ink, ink-component, ink-divider, ink-cli |
-| # releases         | 11 |
-| # dependents       | 19 |
-| # downloads        | 59242 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 7131.0 |
+| # stars            | 26.0 |
 
 ## Links
 - [Homepage](https://github.com/juresotosek/ink-divider#readme)

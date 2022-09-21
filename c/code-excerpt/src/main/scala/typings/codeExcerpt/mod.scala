@@ -6,58 +6,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  /**
-    * Extract code excerpts
-    */
-  inline def apply(
-    /**
-  	 * Source code
-  	 */
-  source: String,
-    /**
-  	 * Line number to extract excerpt for.
-  	 */
-  line: Double
-  ): js.UndefOr[js.Array[ExcerptLine]] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], line.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[ExcerptLine]]]
-  inline def apply(
-    /**
-  	 * Source code
-  	 */
-  source: String,
-    /**
-  	 * Line number to extract excerpt for.
-  	 */
-  line: Double,
-    /**
-  	 * Options
-  	 */
-  options: Options
-  ): js.UndefOr[js.Array[ExcerptLine]] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], line.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[ExcerptLine]]]
-  
   @JSImport("code-excerpt", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  trait ExcerptLine extends StObject {
+  inline def default(source: String, line: Double): js.UndefOr[js.Array[CodeExcerpt]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], line.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[CodeExcerpt]]]
+  inline def default(source: String, line: Double, options: Options): js.UndefOr[js.Array[CodeExcerpt]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], line.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[CodeExcerpt]]]
+  
+  trait CodeExcerpt extends StObject {
     
-    /**
-    		 * Line number
-    		 */
-    val line: Double
+    var line: Double
     
-    /**
-    		 * Line itself
-    		 */
-    val value: String
+    var value: String
   }
-  object ExcerptLine {
+  object CodeExcerpt {
     
-    inline def apply(line: Double, value: String): ExcerptLine = {
+    inline def apply(line: Double, value: String): CodeExcerpt = {
       val __obj = js.Dynamic.literal(line = line.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ExcerptLine]
+      __obj.asInstanceOf[CodeExcerpt]
     }
     
-    extension [Self <: ExcerptLine](x: Self) {
+    extension [Self <: CodeExcerpt](x: Self) {
       
       inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
@@ -67,12 +36,7 @@ object mod {
   
   trait Options extends StObject {
     
-    /**
-    		 * Number of surrounding lines to extract.
-    		 *
-    		 * @default 3
-    		 */
-    val around: js.UndefOr[Double] = js.undefined
+    var around: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

@@ -10,15 +10,12 @@ Formats numbers with separators every 3 digits and currency etc. Highly configur
 | ------------------ | :-------------: |
 | Full name          | format-number |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 40 |
-| # downloads        | 1536535 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 122370.33333333333 |
+| # stars            | 51.0 |
 
 ## Links
-- [Homepage](https://github.com/componitable/format-number#readme)
-- [Bugs](https://github.com/componitable/format-number/issues)
-- [Repository](https://github.com/componitable/format-number)
 - [Npm](https://www.npmjs.com/package/format-number)
     
 

@@ -1,9 +1,6 @@
 package typings.wiredep
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.NodeJS.ReadWriteStream
-import typings.std.Error
-import typings.std.RegExp
 import typings.wiredep.anon.Block
 import typings.wiredep.anon.BlockDetect
 import typings.wiredep.anon.Detect
@@ -35,7 +32,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def stream(config: WiredepParams): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(config.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def stream(config: WiredepParams): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")(config.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   trait FileObject extends StObject {
     
@@ -163,7 +160,7 @@ object mod {
       * @example:
       *  [ /jquery/, 'bower_components/modernizr/modernizr.js' ]
       */
-    var exclude: js.UndefOr[js.Array[String | RegExp]] = js.undefined
+    var exclude: js.UndefOr[js.Array[String | js.RegExp]] = js.undefined
     
     var fileTypes: js.UndefOr[FileTypes] = js.undefined
     
@@ -172,7 +169,7 @@ object mod {
       * @example:
       *  [ /jquery/, 'bower_components/modernizr/modernizr.js' ]
       */
-    var ignorePath: js.UndefOr[String | RegExp] = js.undefined
+    var ignorePath: js.UndefOr[String | js.RegExp] = js.undefined
     
     /**
       * Default: false
@@ -186,7 +183,7 @@ object mod {
       *  - "PKG_NOT_INSTALLED" (a Bower package was not found)
       *  - "BOWER_COMPONENTS_MISSING" (cannot find the `bower_components` directory)
       */
-    var onError: js.UndefOr[js.Function1[/* err */ Error, Unit]] = js.undefined
+    var onError: js.UndefOr[js.Function1[/* err */ js.Error, Unit]] = js.undefined
     
     /**
       * @param {string} filePath name of file that was updated
@@ -240,17 +237,17 @@ object mod {
       
       inline def setDirectoryUndefined: Self = StObject.set(x, "directory", js.undefined)
       
-      inline def setExclude(value: js.Array[String | RegExp]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: js.Array[String | js.RegExp]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
       inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      inline def setExcludeVarargs(value: (String | RegExp)*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "exclude", js.Array(value*))
       
       inline def setFileTypes(value: FileTypes): Self = StObject.set(x, "fileTypes", value.asInstanceOf[js.Any])
       
       inline def setFileTypesUndefined: Self = StObject.set(x, "fileTypes", js.undefined)
       
-      inline def setIgnorePath(value: String | RegExp): Self = StObject.set(x, "ignorePath", value.asInstanceOf[js.Any])
+      inline def setIgnorePath(value: String | js.RegExp): Self = StObject.set(x, "ignorePath", value.asInstanceOf[js.Any])
       
       inline def setIgnorePathUndefined: Self = StObject.set(x, "ignorePath", js.undefined)
       
@@ -258,7 +255,7 @@ object mod {
       
       inline def setIncludeSelfUndefined: Self = StObject.set(x, "includeSelf", js.undefined)
       
-      inline def setOnError(value: /* err */ Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* err */ js.Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
@@ -282,7 +279,7 @@ object mod {
       
       inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
       
-      inline def setSrcVarargs(value: String*): Self = StObject.set(x, "src", js.Array(value :_*))
+      inline def setSrcVarargs(value: String*): Self = StObject.set(x, "src", js.Array(value*))
     }
   }
 }

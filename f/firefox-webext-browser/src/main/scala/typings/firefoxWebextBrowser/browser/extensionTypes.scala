@@ -27,7 +27,7 @@ object extensionTypes {
     inline def user: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.user = "user".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.user]
   }
   
-  type Date = String | Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify globalThis.Date */ js.Any)
+  type Date = String | Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify globalThis.Date */ Any)
   
   /* Rewritten from type alias, can be one of: 
     - typings.firefoxWebextBrowser.anon.File
@@ -63,6 +63,11 @@ object extensionTypes {
       */
     var rect: js.UndefOr[ImageDetailsRect] = js.undefined
     
+    /**
+      * If true, temporarily resets the scroll position of the document to 0\. Only takes effect if rect is also specified.
+      */
+    var resetScrollPosition: js.UndefOr[Boolean] = js.undefined
+    
     /** The scale of the resulting image. Defaults to `devicePixelRatio`. */
     var scale: js.UndefOr[Double] = js.undefined
   }
@@ -86,6 +91,10 @@ object extensionTypes {
       inline def setRect(value: ImageDetailsRect): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
       
       inline def setRectUndefined: Self = StObject.set(x, "rect", js.undefined)
+      
+      inline def setResetScrollPosition(value: Boolean): Self = StObject.set(x, "resetScrollPosition", value.asInstanceOf[js.Any])
+      
+      inline def setResetScrollPositionUndefined: Self = StObject.set(x, "resetScrollPosition", js.undefined)
       
       inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       

@@ -10,10 +10,10 @@ Setup helper for PollyJS when using in jest/jasmine test environment
 | ------------------ | :-------------: |
 | Full name          | setup-polly-jest |
 | Keywords           | polly, pollyjs, jest, jasmine, test, testing, mock, helper |
-| # releases         | 11 |
-| # dependents       | 3 |
-| # downloads        | 427499 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 239028.0 |
+| # stars            | 25.0 |
 
 ## Links
 - [Homepage](https://github.com/gribnoysup/setup-polly-jest#readme)

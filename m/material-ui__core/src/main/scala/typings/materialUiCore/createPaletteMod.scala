@@ -1,10 +1,10 @@
 package typings.materialUiCore
 
+import typings.materialUiCore.anon.Dark
 import typings.materialUiCore.anon.PartialCommonColors
 import typings.materialUiCore.anon.PartialTypeAction
 import typings.materialUiCore.anon.PartialTypeBackground
 import typings.materialUiCore.anon.PartialTypeText
-import typings.materialUiCore.commonMod.CommonColors
 import typings.materialUiCore.mod.Color
 import typings.materialUiCore.mod.PaletteType
 import typings.std.Partial
@@ -128,39 +128,60 @@ object createPaletteMod {
     }
   }
   
+  trait CommonColors extends StObject {
+    
+    var black: String
+    
+    var white: String
+  }
+  object CommonColors {
+    
+    inline def apply(black: String, white: String): CommonColors = {
+      val __obj = js.Dynamic.literal(black = black.asInstanceOf[js.Any], white = white.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CommonColors]
+    }
+    
+    extension [Self <: CommonColors](x: Self) {
+      
+      inline def setBlack(value: String): Self = StObject.set(x, "black", value.asInstanceOf[js.Any])
+      
+      inline def setWhite(value: String): Self = StObject.set(x, "white", value.asInstanceOf[js.Any])
+    }
+  }
+  
   @js.native
   trait Palette extends StObject {
     
     var action: TypeAction = js.native
     
-    def augmentColor(color: ColorPartial): Unit = js.native
-    def augmentColor(color: ColorPartial, mainShade: String): Unit = js.native
-    def augmentColor(color: ColorPartial, mainShade: String, lightShade: String): Unit = js.native
-    def augmentColor(color: ColorPartial, mainShade: String, lightShade: String, darkShade: String): Unit = js.native
-    def augmentColor(color: ColorPartial, mainShade: String, lightShade: String, darkShade: Double): Unit = js.native
-    def augmentColor(color: ColorPartial, mainShade: String, lightShade: Double): Unit = js.native
-    def augmentColor(color: ColorPartial, mainShade: String, lightShade: Double, darkShade: String): Unit = js.native
-    def augmentColor(color: ColorPartial, mainShade: String, lightShade: Double, darkShade: Double): Unit = js.native
-    def augmentColor(color: ColorPartial, mainShade: String, lightShade: Unit, darkShade: String): Unit = js.native
-    def augmentColor(color: ColorPartial, mainShade: String, lightShade: Unit, darkShade: Double): Unit = js.native
-    def augmentColor(color: ColorPartial, mainShade: Double): Unit = js.native
-    def augmentColor(color: ColorPartial, mainShade: Double, lightShade: String): Unit = js.native
-    def augmentColor(color: ColorPartial, mainShade: Double, lightShade: String, darkShade: String): Unit = js.native
-    def augmentColor(color: ColorPartial, mainShade: Double, lightShade: String, darkShade: Double): Unit = js.native
-    def augmentColor(color: ColorPartial, mainShade: Double, lightShade: Double): Unit = js.native
-    def augmentColor(color: ColorPartial, mainShade: Double, lightShade: Double, darkShade: String): Unit = js.native
-    def augmentColor(color: ColorPartial, mainShade: Double, lightShade: Double, darkShade: Double): Unit = js.native
-    def augmentColor(color: ColorPartial, mainShade: Double, lightShade: Unit, darkShade: String): Unit = js.native
-    def augmentColor(color: ColorPartial, mainShade: Double, lightShade: Unit, darkShade: Double): Unit = js.native
-    def augmentColor(color: ColorPartial, mainShade: Unit, lightShade: String): Unit = js.native
-    def augmentColor(color: ColorPartial, mainShade: Unit, lightShade: String, darkShade: String): Unit = js.native
-    def augmentColor(color: ColorPartial, mainShade: Unit, lightShade: String, darkShade: Double): Unit = js.native
-    def augmentColor(color: ColorPartial, mainShade: Unit, lightShade: Double): Unit = js.native
-    def augmentColor(color: ColorPartial, mainShade: Unit, lightShade: Double, darkShade: String): Unit = js.native
-    def augmentColor(color: ColorPartial, mainShade: Unit, lightShade: Double, darkShade: Double): Unit = js.native
-    def augmentColor(color: ColorPartial, mainShade: Unit, lightShade: Unit, darkShade: String): Unit = js.native
-    def augmentColor(color: ColorPartial, mainShade: Unit, lightShade: Unit, darkShade: Double): Unit = js.native
-    def augmentColor(color: PaletteColorOptions): Unit = js.native
+    def augmentColor(color: ColorPartial): PaletteColor = js.native
+    def augmentColor(color: ColorPartial, mainShade: String): PaletteColor = js.native
+    def augmentColor(color: ColorPartial, mainShade: String, lightShade: String): PaletteColor = js.native
+    def augmentColor(color: ColorPartial, mainShade: String, lightShade: String, darkShade: String): PaletteColor = js.native
+    def augmentColor(color: ColorPartial, mainShade: String, lightShade: String, darkShade: Double): PaletteColor = js.native
+    def augmentColor(color: ColorPartial, mainShade: String, lightShade: Double): PaletteColor = js.native
+    def augmentColor(color: ColorPartial, mainShade: String, lightShade: Double, darkShade: String): PaletteColor = js.native
+    def augmentColor(color: ColorPartial, mainShade: String, lightShade: Double, darkShade: Double): PaletteColor = js.native
+    def augmentColor(color: ColorPartial, mainShade: String, lightShade: Unit, darkShade: String): PaletteColor = js.native
+    def augmentColor(color: ColorPartial, mainShade: String, lightShade: Unit, darkShade: Double): PaletteColor = js.native
+    def augmentColor(color: ColorPartial, mainShade: Double): PaletteColor = js.native
+    def augmentColor(color: ColorPartial, mainShade: Double, lightShade: String): PaletteColor = js.native
+    def augmentColor(color: ColorPartial, mainShade: Double, lightShade: String, darkShade: String): PaletteColor = js.native
+    def augmentColor(color: ColorPartial, mainShade: Double, lightShade: String, darkShade: Double): PaletteColor = js.native
+    def augmentColor(color: ColorPartial, mainShade: Double, lightShade: Double): PaletteColor = js.native
+    def augmentColor(color: ColorPartial, mainShade: Double, lightShade: Double, darkShade: String): PaletteColor = js.native
+    def augmentColor(color: ColorPartial, mainShade: Double, lightShade: Double, darkShade: Double): PaletteColor = js.native
+    def augmentColor(color: ColorPartial, mainShade: Double, lightShade: Unit, darkShade: String): PaletteColor = js.native
+    def augmentColor(color: ColorPartial, mainShade: Double, lightShade: Unit, darkShade: Double): PaletteColor = js.native
+    def augmentColor(color: ColorPartial, mainShade: Unit, lightShade: String): PaletteColor = js.native
+    def augmentColor(color: ColorPartial, mainShade: Unit, lightShade: String, darkShade: String): PaletteColor = js.native
+    def augmentColor(color: ColorPartial, mainShade: Unit, lightShade: String, darkShade: Double): PaletteColor = js.native
+    def augmentColor(color: ColorPartial, mainShade: Unit, lightShade: Double): PaletteColor = js.native
+    def augmentColor(color: ColorPartial, mainShade: Unit, lightShade: Double, darkShade: String): PaletteColor = js.native
+    def augmentColor(color: ColorPartial, mainShade: Unit, lightShade: Double, darkShade: Double): PaletteColor = js.native
+    def augmentColor(color: ColorPartial, mainShade: Unit, lightShade: Unit, darkShade: String): PaletteColor = js.native
+    def augmentColor(color: ColorPartial, mainShade: Unit, lightShade: Unit, darkShade: Double): PaletteColor = js.native
+    def augmentColor(color: PaletteColorOptions): PaletteColor = js.native
     
     var background: TypeBackground = js.native
     
@@ -176,15 +197,21 @@ object createPaletteMod {
     
     var grey: Color = js.native
     
+    var info: PaletteColor = js.native
+    
     var primary: PaletteColor = js.native
     
     var secondary: PaletteColor = js.native
     
+    var success: PaletteColor = js.native
+    
     var text: TypeText = js.native
     
-    var tonalOffset: Double = js.native
+    var tonalOffset: PaletteTonalOffset = js.native
     
     var `type`: PaletteType = js.native
+    
+    var warning: PaletteColor = js.native
   }
   
   trait PaletteColor extends StObject {
@@ -252,15 +279,21 @@ object createPaletteMod {
     
     var grey: js.UndefOr[ColorPartial] = js.undefined
     
+    var info: js.UndefOr[PaletteColorOptions] = js.undefined
+    
     var primary: js.UndefOr[PaletteColorOptions] = js.undefined
     
     var secondary: js.UndefOr[PaletteColorOptions] = js.undefined
     
+    var success: js.UndefOr[PaletteColorOptions] = js.undefined
+    
     var text: js.UndefOr[PartialTypeText] = js.undefined
     
-    var tonalOffset: js.UndefOr[Double] = js.undefined
+    var tonalOffset: js.UndefOr[PaletteTonalOffset] = js.undefined
     
     var `type`: js.UndefOr[PaletteType] = js.undefined
+    
+    var warning: js.UndefOr[PaletteColorOptions] = js.undefined
   }
   object PaletteOptions {
     
@@ -303,6 +336,10 @@ object createPaletteMod {
       
       inline def setGreyUndefined: Self = StObject.set(x, "grey", js.undefined)
       
+      inline def setInfo(value: PaletteColorOptions): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      
+      inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
+      
       inline def setPrimary(value: PaletteColorOptions): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
       
       inline def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
@@ -311,19 +348,29 @@ object createPaletteMod {
       
       inline def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
       
+      inline def setSuccess(value: PaletteColorOptions): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      
+      inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+      
       inline def setText(value: PartialTypeText): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
       inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      inline def setTonalOffset(value: Double): Self = StObject.set(x, "tonalOffset", value.asInstanceOf[js.Any])
+      inline def setTonalOffset(value: PaletteTonalOffset): Self = StObject.set(x, "tonalOffset", value.asInstanceOf[js.Any])
       
       inline def setTonalOffsetUndefined: Self = StObject.set(x, "tonalOffset", js.undefined)
       
       inline def setType(value: PaletteType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      
+      inline def setWarning(value: PaletteColorOptions): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+      
+      inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
     }
   }
+  
+  type PaletteTonalOffset = Double | Dark
   
   /* Inlined {[ P in keyof @material-ui/core.@material-ui/core/styles/createPalette.TypeObject ]:? std.Partial<@material-ui/core.@material-ui/core/styles/createPalette.TypeObject[P]>} */
   trait PartialTypeObject extends StObject {
@@ -402,33 +449,50 @@ object createPaletteMod {
   
   trait TypeAction extends StObject {
     
+    var activatedOpacity: Double
+    
     var active: String
     
     var disabled: String
     
     var disabledBackground: String
     
+    var disabledOpacity: Double
+    
+    var focus: String
+    
+    var focusOpacity: Double
+    
     var hover: String
     
     var hoverOpacity: Double
     
     var selected: String
+    
+    var selectedOpacity: Double
   }
   object TypeAction {
     
     inline def apply(
+      activatedOpacity: Double,
       active: String,
       disabled: String,
       disabledBackground: String,
+      disabledOpacity: Double,
+      focus: String,
+      focusOpacity: Double,
       hover: String,
       hoverOpacity: Double,
-      selected: String
+      selected: String,
+      selectedOpacity: Double
     ): TypeAction = {
-      val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], disabledBackground = disabledBackground.asInstanceOf[js.Any], hover = hover.asInstanceOf[js.Any], hoverOpacity = hoverOpacity.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(activatedOpacity = activatedOpacity.asInstanceOf[js.Any], active = active.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], disabledBackground = disabledBackground.asInstanceOf[js.Any], disabledOpacity = disabledOpacity.asInstanceOf[js.Any], focus = focus.asInstanceOf[js.Any], focusOpacity = focusOpacity.asInstanceOf[js.Any], hover = hover.asInstanceOf[js.Any], hoverOpacity = hoverOpacity.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], selectedOpacity = selectedOpacity.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypeAction]
     }
     
     extension [Self <: TypeAction](x: Self) {
+      
+      inline def setActivatedOpacity(value: Double): Self = StObject.set(x, "activatedOpacity", value.asInstanceOf[js.Any])
       
       inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -436,11 +500,19 @@ object createPaletteMod {
       
       inline def setDisabledBackground(value: String): Self = StObject.set(x, "disabledBackground", value.asInstanceOf[js.Any])
       
+      inline def setDisabledOpacity(value: Double): Self = StObject.set(x, "disabledOpacity", value.asInstanceOf[js.Any])
+      
+      inline def setFocus(value: String): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+      
+      inline def setFocusOpacity(value: Double): Self = StObject.set(x, "focusOpacity", value.asInstanceOf[js.Any])
+      
       inline def setHover(value: String): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
       
       inline def setHoverOpacity(value: Double): Self = StObject.set(x, "hoverOpacity", value.asInstanceOf[js.Any])
       
       inline def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedOpacity(value: Double): Self = StObject.set(x, "selectedOpacity", value.asInstanceOf[js.Any])
     }
   }
   

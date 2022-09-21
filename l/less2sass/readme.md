@@ -10,10 +10,10 @@ A quick less to sass converter
 | ------------------ | :-------------: |
 | Full name          | less2sass |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 153568 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3134.6666666666665 |
+| # stars            | 272.0 |
 
 ## Links
 - [Homepage](http://erickryski.com)

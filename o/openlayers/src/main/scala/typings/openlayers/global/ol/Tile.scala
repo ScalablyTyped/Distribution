@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ol.Tile")
 @js.native
-class Tile protected ()
+open class Tile protected ()
   extends typings.openlayers.mod.Tile {
   /**
     * @classdesc

@@ -11,7 +11,6 @@ import typings.chromeApps.chromeAppsStrings.MAX_ATTEMPTS_EXCEEDED
 import typings.chromeApps.chromeAppsStrings.PIN
 import typings.chromeApps.chromeAppsStrings.PUK
 import typings.chromeApps.chromeAppsStrings.UNKNOWN_ERROR
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -96,8 +95,8 @@ object certificateProvider {
   val onCertificatesRequested: typings.chromeApps.chrome.events.Event[
     js.Function2[
       /* certificates */ js.Array[CertificateInfo], 
-      /* callback */ js.Function1[/* rejectedCertificates */ js.Array[ArrayBuffer], Unit], 
-      js.Any
+      /* callback */ js.Function1[/* rejectedCertificates */ js.Array[js.typedarray.ArrayBuffer], Unit], 
+      Any
     ]
   ] = js.native
   
@@ -116,8 +115,8 @@ object certificateProvider {
   val onSignDigestRequested: typings.chromeApps.chrome.events.Event[
     js.Function2[
       /* signRequest */ SignRequest, 
-      /* signCallback */ js.Function1[/* signature */ js.UndefOr[ArrayBuffer], Unit], 
-      js.Any
+      /* signCallback */ js.Function1[/* signature */ js.UndefOr[js.typedarray.ArrayBuffer], Unit], 
+      Any
     ]
   ] = js.native
   

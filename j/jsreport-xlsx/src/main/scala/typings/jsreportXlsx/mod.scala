@@ -1,6 +1,8 @@
 package typings.jsreportXlsx
 
+import typings.jsreportCore.mod.Engine
 import typings.jsreportCore.mod.ExtensionDefinition
+import typings.jsreportCore.mod.Template
 import typings.jsreportXlsx.anon.PartialOptions
 import typings.jsreportXlsx.jsreportXlsxStrings.xlsx
 import org.scalablytyped.runtime.StObject
@@ -58,23 +60,43 @@ object mod {
     }
   }
   
+  trait XlsxTemplate
+    extends StObject
+       with Template {
+    
+    @JSName("recipe")
+    var recipe_XlsxTemplate: xlsx | String
+  }
+  object XlsxTemplate {
+    
+    inline def apply(content: String, engine: Engine | String, recipe: xlsx | String): XlsxTemplate = {
+      val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], engine = engine.asInstanceOf[js.Any], recipe = recipe.asInstanceOf[js.Any])
+      __obj.asInstanceOf[XlsxTemplate]
+    }
+    
+    extension [Self <: XlsxTemplate](x: Self) {
+      
+      inline def setRecipe(value: xlsx | String): Self = StObject.set(x, "recipe", value.asInstanceOf[js.Any])
+    }
+  }
+  
   /* augmented module */
   object jsreportCoreAugmentingMod {
     
-    trait Template extends StObject {
+    trait TemplateRegistry extends StObject {
       
-      var recipe: xlsx | String
+      var XlsxTemplate: typings.jsreportXlsx.mod.XlsxTemplate
     }
-    object Template {
+    object TemplateRegistry {
       
-      inline def apply(recipe: xlsx | String): Template = {
-        val __obj = js.Dynamic.literal(recipe = recipe.asInstanceOf[js.Any])
-        __obj.asInstanceOf[Template]
+      inline def apply(XlsxTemplate: XlsxTemplate): TemplateRegistry = {
+        val __obj = js.Dynamic.literal(XlsxTemplate = XlsxTemplate.asInstanceOf[js.Any])
+        __obj.asInstanceOf[TemplateRegistry]
       }
       
-      extension [Self <: Template](x: Self) {
+      extension [Self <: TemplateRegistry](x: Self) {
         
-        inline def setRecipe(value: xlsx | String): Self = StObject.set(x, "recipe", value.asInstanceOf[js.Any])
+        inline def setXlsxTemplate(value: XlsxTemplate): Self = StObject.set(x, "XlsxTemplate", value.asInstanceOf[js.Any])
       }
     }
   }

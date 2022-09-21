@@ -1,6 +1,5 @@
 package typings.uirouterCore
 
-import typings.std.RegExp
 import typings.uirouterCore.routerMod.UIRouter
 import typings.uirouterCore.stateInterfaceMod.StateDeclaration
 import typings.uirouterCore.stateInterfaceMod.TargetStateDef
@@ -23,7 +22,7 @@ object urlRuleMod {
   
   @JSImport("@uirouter/core/lib/url/urlRule", "BaseUrlRule")
   @js.native
-  class BaseUrlRule protected ()
+  open class BaseUrlRule protected ()
     extends StObject
        with UrlRule {
     def this(`match`: UrlRuleMatchFn) = this()
@@ -51,13 +50,13 @@ object urlRuleMod {
     /* CompleteClass */
     override def handler(): String | TargetState | TargetStateDef | Unit = js.native
     /* CompleteClass */
-    override def handler(matchValue: js.Any): String | TargetState | TargetStateDef | Unit = js.native
+    override def handler(matchValue: Any): String | TargetState | TargetStateDef | Unit = js.native
     /* CompleteClass */
-    override def handler(matchValue: js.Any, url: Unit, router: UIRouter): String | TargetState | TargetStateDef | Unit = js.native
+    override def handler(matchValue: Any, url: Unit, router: UIRouter): String | TargetState | TargetStateDef | Unit = js.native
     /* CompleteClass */
-    override def handler(matchValue: js.Any, url: UrlParts): String | TargetState | TargetStateDef | Unit = js.native
+    override def handler(matchValue: Any, url: UrlParts): String | TargetState | TargetStateDef | Unit = js.native
     /* CompleteClass */
-    override def handler(matchValue: js.Any, url: UrlParts, router: UIRouter): String | TargetState | TargetStateDef | Unit = js.native
+    override def handler(matchValue: Any, url: UrlParts, router: UIRouter): String | TargetState | TargetStateDef | Unit = js.native
     /* CompleteClass */
     override def handler(matchValue: Unit, url: Unit, router: UIRouter): String | TargetState | TargetStateDef | Unit = js.native
     /* CompleteClass */
@@ -80,13 +79,13 @@ object urlRuleMod {
       * See [[UrlRuleMatchFn]] for details
       */
     /* CompleteClass */
-    override def `match`(): js.Any = js.native
+    override def `match`(): Any = js.native
     /* CompleteClass */
-    override def `match`(url: Unit, router: UIRouter): js.Any = js.native
+    override def `match`(url: Unit, router: UIRouter): Any = js.native
     /* CompleteClass */
-    override def `match`(url: UrlParts): js.Any = js.native
+    override def `match`(url: UrlParts): Any = js.native
     /* CompleteClass */
-    override def `match`(url: UrlParts, router: UIRouter): js.Any = js.native
+    override def `match`(url: UrlParts, router: UIRouter): Any = js.native
     
     /**
       * The priority of a given match.
@@ -98,7 +97,7 @@ object urlRuleMod {
       * The rule with the highest `matchPriority` has its [[handler]] called.
       */
     /* CompleteClass */
-    override def matchPriority(`match`: js.Any): Double = js.native
+    override def matchPriority(`match`: Any): Double = js.native
     
     /**
       * This function should match the url and return the match details
@@ -125,7 +124,7 @@ object urlRuleMod {
   
   @JSImport("@uirouter/core/lib/url/urlRule", "UrlRuleFactory")
   @js.native
-  class UrlRuleFactory protected () extends StObject {
+  open class UrlRuleFactory protected () extends StObject {
     def this(router: UIRouter) = this()
     
     def compile(str: String): UrlMatcher = js.native
@@ -133,9 +132,9 @@ object urlRuleMod {
     def create(what: String): UrlRule = js.native
     def create(what: String, handler: String): UrlRule = js.native
     def create(what: String, handler: UrlRuleHandlerFn): UrlRule = js.native
-    def create(what: RegExp): UrlRule = js.native
-    def create(what: RegExp, handler: String): UrlRule = js.native
-    def create(what: RegExp, handler: UrlRuleHandlerFn): UrlRule = js.native
+    def create(what: js.RegExp): UrlRule = js.native
+    def create(what: js.RegExp, handler: String): UrlRule = js.native
+    def create(what: js.RegExp, handler: UrlRuleHandlerFn): UrlRule = js.native
     def create(what: StateDeclaration): UrlRule = js.native
     def create(what: StateDeclaration, handler: String): UrlRule = js.native
     def create(what: StateDeclaration, handler: UrlRuleHandlerFn): UrlRule = js.native
@@ -181,8 +180,8 @@ object urlRuleMod {
       * var result = rule.handler(match); // '/home/bar'
       * ```
       */
-    def fromRegExp(regexp: RegExp, handler: String): RegExpRule = js.native
-    def fromRegExp(regexp: RegExp, handler: UrlRuleHandlerFn): RegExpRule = js.native
+    def fromRegExp(regexp: js.RegExp, handler: String): RegExpRule = js.native
+    def fromRegExp(regexp: js.RegExp, handler: UrlRuleHandlerFn): RegExpRule = js.native
     
     def fromState(stateOrDecl: StateDeclaration, router: UIRouter): StateRule = js.native
     /**
@@ -247,6 +246,6 @@ object urlRuleMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def isUrlRule(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUrlRule")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isUrlRule(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUrlRule")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
 }

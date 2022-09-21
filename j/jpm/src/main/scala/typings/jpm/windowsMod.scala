@@ -27,14 +27,10 @@ object windowsMod {
     
     var activeWindow: BrowserWindow = js.native
     
-    @JSName("on")
-    def on_activate(event: activate, handler: js.Function1[/* window */ BrowserWindow, js.Any]): Unit = js.native
-    @JSName("on")
-    def on_close(event: close, handler: js.Function1[/* window */ BrowserWindow, js.Any]): Unit = js.native
-    @JSName("on")
-    def on_deactivate(event: deactivate, handler: js.Function1[/* window */ BrowserWindow, js.Any]): Unit = js.native
-    @JSName("on")
-    def on_open(event: open, handler: js.Function1[/* window */ BrowserWindow, js.Any]): Unit = js.native
+    def on(
+      event: open | close | activate | deactivate,
+      handler: js.Function1[/* window */ BrowserWindow, Any]
+    ): Unit = js.native
     
     /**
       * Open a new window

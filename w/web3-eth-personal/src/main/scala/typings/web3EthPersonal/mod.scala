@@ -2,7 +2,6 @@ package typings.web3EthPersonal
 
 import org.scalablytyped.runtime.Instantiable0
 import typings.node.netMod.Socket
-import typings.std.Error
 import typings.web3Core.mod.Extension
 import typings.web3Core.mod.Providers
 import typings.web3Core.mod.RLPEncodedTransaction
@@ -15,7 +14,7 @@ object mod {
   
   @JSImport("web3-eth-personal", "Personal")
   @js.native
-  class Personal () extends StObject {
+  open class Personal () extends StObject {
     def this(provider: typings.web3Core.mod.provider) = this()
     def this(provider: typings.web3Core.mod.provider, net: Socket) = this()
     
@@ -31,34 +30,34 @@ object mod {
     def ecRecover(
       dataThatWasSigned: String,
       signature: String,
-      callback: js.Function2[/* error */ Error, /* address */ String, Unit]
+      callback: js.Function2[/* error */ js.Error, /* address */ String, Unit]
     ): js.Promise[String] = js.native
     
-    def extend(`extension`: Extension): js.Any = js.native
+    def extend(`extension`: Extension): Any = js.native
     
     def getAccounts(): js.Promise[js.Array[String]] = js.native
-    def getAccounts(callback: js.Function2[/* error */ Error, /* accounts */ js.Array[String], Unit]): js.Promise[js.Array[String]] = js.native
+    def getAccounts(callback: js.Function2[/* error */ js.Error, /* accounts */ js.Array[String], Unit]): js.Promise[js.Array[String]] = js.native
     
-    val givenProvider: js.Any = js.native
+    val givenProvider: Any = js.native
     
     def importRawKey(privateKey: String, password: String): js.Promise[String] = js.native
     def importRawKey(
       privateKey: String,
       password: String,
-      callback: js.Function2[/* error */ Error, /* result */ String, Unit]
+      callback: js.Function2[/* error */ js.Error, /* result */ String, Unit]
     ): js.Promise[String] = js.native
     
     def lockAccount(address: String): js.Promise[Boolean] = js.native
-    def lockAccount(address: String, callback: js.Function2[/* error */ Error, /* success */ Boolean, Unit]): js.Promise[Boolean] = js.native
+    def lockAccount(address: String, callback: js.Function2[/* error */ js.Error, /* success */ Boolean, Unit]): js.Promise[Boolean] = js.native
     
     def newAccount(password: String): js.Promise[String] = js.native
-    def newAccount(password: String, callback: js.Function2[/* error */ Error, /* address */ String, Unit]): js.Promise[String] = js.native
+    def newAccount(password: String, callback: js.Function2[/* error */ js.Error, /* address */ String, Unit]): js.Promise[String] = js.native
     
     def sendTransaction(transactionConfig: TransactionConfig, password: String): js.Promise[String] = js.native
     def sendTransaction(
       transactionConfig: TransactionConfig,
       password: String,
-      callback: js.Function2[/* error */ Error, /* transactionHash */ String, Unit]
+      callback: js.Function2[/* error */ js.Error, /* transactionHash */ String, Unit]
     ): js.Promise[String] = js.native
     
     def setProvider(provider: typings.web3Core.mod.provider): Boolean = js.native
@@ -68,14 +67,14 @@ object mod {
       dataToSign: String,
       address: String,
       password: String,
-      callback: js.Function2[/* error */ Error, /* signature */ String, Unit]
+      callback: js.Function2[/* error */ js.Error, /* signature */ String, Unit]
     ): js.Promise[String] = js.native
     
     def signTransaction(transactionConfig: TransactionConfig, password: String): js.Promise[RLPEncodedTransaction] = js.native
     def signTransaction(
       transactionConfig: TransactionConfig,
       password: String,
-      callback: js.Function2[/* error */ Error, /* RLPEncodedTransaction */ RLPEncodedTransaction, Unit]
+      callback: js.Function2[/* error */ js.Error, /* RLPEncodedTransaction */ RLPEncodedTransaction, Unit]
     ): js.Promise[RLPEncodedTransaction] = js.native
     
     def unlockAccount(address: String, password: String, unlockDuration: Double): js.Promise[Boolean] = js.native
@@ -83,7 +82,7 @@ object mod {
       address: String,
       password: String,
       unlockDuration: Double,
-      callback: js.Function1[/* error */ Error, Unit]
+      callback: js.Function1[/* error */ js.Error, Unit]
     ): js.Promise[Boolean] = js.native
   }
   /* static members */
@@ -91,7 +90,7 @@ object mod {
     
     @JSImport("web3-eth-personal", "Personal.givenProvider")
     @js.native
-    val givenProvider: js.Any = js.native
+    val givenProvider: Any = js.native
     
     @JSImport("web3-eth-personal", "Personal.providers")
     @js.native

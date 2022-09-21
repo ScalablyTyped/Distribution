@@ -1,22 +1,26 @@
 package typings.xelib.mod
 
+import typings.xelib.mod.^
+import typings.xelib.xelibNumbers.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def wrapper: typings.xelib.mod.XELib = typings.xelib.mod.^.asInstanceOf[js.Dynamic].selectDynamic("wrapper").asInstanceOf[typings.xelib.mod.XELib]
+inline def wrapper: XELib = ^.asInstanceOf[js.Dynamic].selectDynamic("wrapper").asInstanceOf[XELib]
 
-type ContainerHandle = typings.xelib.mod.Handle & js.Object
+type ContainerHandle = Handle & js.Object
 
-type ElementHandle = typings.xelib.mod.Handle & js.Object
+type ElementHandle = Handle & js.Object
 
-type FileHandle = typings.xelib.mod.ContainerHandle & js.Object
+type FileHandle = ContainerHandle & js.Object
+
+type Handle = Double
 
 type I[T] = T
 
-type NodeTreeHandle = typings.xelib.mod.Handle & js.Object
+type NodeTreeHandle = Handle & js.Object
 
-type RecordHandle = typings.xelib.mod.ElementHandle & js.Object
+type RecordHandle = ElementHandle & js.Object
 
-type Zeroable[H /* <: typings.xelib.mod.Handle */] = H | typings.xelib.xelibNumbers.`0`
+type Zeroable[H /* <: Handle */] = H | `0`

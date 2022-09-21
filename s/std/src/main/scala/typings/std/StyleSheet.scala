@@ -7,18 +7,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** A single style sheet. CSS style sheets will further implement the more specialized CSSStyleSheet interface. */
 trait StyleSheet extends StObject {
   
+  /* standard dom */
   var disabled: scala.Boolean
   
+  /* standard dom */
   val href: java.lang.String | Null
   
+  /* standard dom */
   val media: MediaList
   
+  /* standard dom */
   val ownerNode: Element | ProcessingInstruction | Null
   
+  /* standard dom */
   val parentStyleSheet: CSSStyleSheet | Null
   
+  /* standard dom */
   val title: java.lang.String | Null
   
+  /* standard dom */
   val `type`: java.lang.String
 }
 object StyleSheet {

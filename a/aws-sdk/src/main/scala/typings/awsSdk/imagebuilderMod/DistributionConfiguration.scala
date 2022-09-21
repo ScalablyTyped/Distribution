@@ -27,7 +27,7 @@ trait DistributionConfiguration extends StObject {
   var description: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The distributions of the distribution configuration.
+    * The distribution objects that apply Region-specific settings for the deployment of the image to targeted Regions.
     */
   var distributions: js.UndefOr[DistributionList] = js.undefined
   
@@ -75,7 +75,7 @@ object DistributionConfiguration {
     
     inline def setDistributionsUndefined: Self = StObject.set(x, "distributions", js.undefined)
     
-    inline def setDistributionsVarargs(value: Distribution*): Self = StObject.set(x, "distributions", js.Array(value :_*))
+    inline def setDistributionsVarargs(value: Distribution*): Self = StObject.set(x, "distributions", js.Array(value*))
     
     inline def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

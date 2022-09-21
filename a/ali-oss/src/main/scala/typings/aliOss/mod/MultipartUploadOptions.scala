@@ -8,25 +8,26 @@ trait MultipartUploadOptions extends StObject {
   
   var callback: js.UndefOr[ObjectCallback] = js.undefined
   
-  // the progress callback called after each successful upload of one part
+  /** the checkpoint to resume upload, if this is provided, it will continue the upload from where interrupted, otherwise a new multipart upload will be created. */
   var checkpoint: js.UndefOr[Checkpoint] = js.undefined
   
+  /** {Object} only uploadPartCopy api used, detail */
   var copyheaders: js.UndefOr[js.Object] = js.undefined
   
   var headers: js.UndefOr[js.Object] = js.undefined
   
-  // the checkpoint to resume upload, if this is provided, it will continue the upload from where interrupted, otherwise a new multipart upload will be created.
   var meta: js.UndefOr[UserMeta] = js.undefined
   
   var mime: js.UndefOr[String] = js.undefined
   
+  /** the number of parts to be uploaded in parallel */
   var parallel: js.UndefOr[Double] = js.undefined
   
-  // the number of parts to be uploaded in parallel
+  /** the suggested size for each part */
   var partSize: js.UndefOr[Double] = js.undefined
   
-  // the suggested size for each part
-  var progress: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
+  /** the progress callback called after each successful upload of one part */
+  var progress: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
   
   var timeout: js.UndefOr[Double] = js.undefined
 }
@@ -71,7 +72,7 @@ object MultipartUploadOptions {
     
     inline def setPartSizeUndefined: Self = StObject.set(x, "partSize", js.undefined)
     
-    inline def setProgress(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "progress", js.Any.fromFunction1(value))
+    inline def setProgress(value: /* repeated */ Any => Any): Self = StObject.set(x, "progress", js.Any.fromFunction1(value))
     
     inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
     

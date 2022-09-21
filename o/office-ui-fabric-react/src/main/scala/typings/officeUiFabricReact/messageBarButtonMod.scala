@@ -10,13 +10,13 @@ object messageBarButtonMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Button/MessageBarButton/MessageBarButton", "MessageBarButton")
   @js.native
-  class MessageBarButton protected ()
-    extends Component[IButtonProps, js.Object, js.Any] {
+  open class MessageBarButton protected ()
+    extends Component[IButtonProps, js.Object, Any] {
     def this(props: IButtonProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: IButtonProps, context: js.Any) = this()
+    def this(props: IButtonProps, context: Any) = this()
   }
 }

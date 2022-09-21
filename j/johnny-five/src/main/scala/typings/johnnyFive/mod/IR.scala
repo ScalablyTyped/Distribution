@@ -13,7 +13,7 @@ object IR {
     
     @JSImport("johnny-five", "IR.Reflect.Array")
     @js.native
-    class Array protected () extends StObject {
+    open class Array protected () extends StObject {
       def this(option: ArrayOption) = this()
       
       def calibrate(): Unit = js.native
@@ -28,11 +28,11 @@ object IR {
       
       def on(event: String, cb: js.Function0[Unit]): this.type = js.native
       @JSName("on")
-      def on_calibratedData(event: calibratedData, cb: js.Function1[/* data */ js.Any, Unit]): this.type = js.native
+      def on_calibratedData(event: calibratedData, cb: js.Function1[/* data */ Any, Unit]): this.type = js.native
       @JSName("on")
-      def on_data(event: data, cb: js.Function1[/* data */ js.Any, Unit]): this.type = js.native
+      def on_data(event: data, cb: js.Function1[/* data */ Any, Unit]): this.type = js.native
       @JSName("on")
-      def on_line(event: line, cb: js.Function1[/* data */ js.Any, Unit]): this.type = js.native
+      def on_line(event: line, cb: js.Function1[/* data */ Any, Unit]): this.type = js.native
     }
   }
   
@@ -61,7 +61,7 @@ object IR {
       
       inline def setPins(value: js.Array[Double | String]): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
       
-      inline def setPinsVarargs(value: (Double | String)*): Self = StObject.set(x, "pins", js.Array(value :_*))
+      inline def setPinsVarargs(value: (Double | String)*): Self = StObject.set(x, "pins", js.Array(value*))
     }
   }
   
@@ -82,11 +82,11 @@ object IR {
       
       inline def setMax(value: js.Array[Double]): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      inline def setMaxVarargs(value: Double*): Self = StObject.set(x, "max", js.Array(value :_*))
+      inline def setMaxVarargs(value: Double*): Self = StObject.set(x, "max", js.Array(value*))
       
       inline def setMin(value: js.Array[Double]): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      inline def setMinVarargs(value: Double*): Self = StObject.set(x, "min", js.Array(value :_*))
+      inline def setMinVarargs(value: Double*): Self = StObject.set(x, "min", js.Array(value*))
     }
   }
 }

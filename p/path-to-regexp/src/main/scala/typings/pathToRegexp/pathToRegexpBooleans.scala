@@ -10,6 +10,6 @@ object pathToRegexpBooleans {
   @js.native
   sealed trait `false`
     extends StObject
-       with Match_[js.Any]
+       with Match_[Any]
   inline def `false`: `false` = false.asInstanceOf[`false`]
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("evernote", "NoteStore.NoteList")
 @js.native
-class NoteList () extends StObject {
+open class NoteList () extends StObject {
   def this(args: Notes) = this()
   
   var notes: js.UndefOr[js.Array[Note]] = js.native

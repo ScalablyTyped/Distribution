@@ -10,10 +10,10 @@ object signalCellularNoSimMod {
   
   @JSImport("material-ui/svg-icons/device/signal-cellular-no-sim", JSImport.Default)
   @js.native
-  class default () extends DeviceSignalCellularNoSim
+  open class default () extends DeviceSignalCellularNoSim
   
   @JSImport("material-ui/svg-icons/device/signal-cellular-no-sim", "DeviceSignalCellularNoSim")
   @js.native
-  class DeviceSignalCellularNoSim ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class DeviceSignalCellularNoSim ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

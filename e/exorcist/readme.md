@@ -1,7 +1,7 @@
 
 # Scala.js typings for exorcist
 
-Typings are for version v0.4.0
+Typings are for version 2.0
 
 ## Library description:
 Externalizes the source map found inside a stream to an external `.js.map` file
@@ -10,10 +10,10 @@ Externalizes the source map found inside a stream to an external `.js.map` file
 | ------------------ | :-------------: |
 | Full name          | exorcist |
 | Keywords           | source-map, source, map, external, mapfile, browserify, browserify-tool |
-| # releases         | 0 |
-| # dependents       | 81 |
-| # downloads        | 1004586 |
-| # stars            | 19 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 100682.66666666667 |
+| # stars            | 329.0 |
 
 ## Links
 - [Homepage](https://github.com/thlorenz/exorcist)

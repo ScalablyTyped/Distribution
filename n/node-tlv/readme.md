@@ -10,10 +10,10 @@ node tlv parser
 | ------------------ | :-------------: |
 | Full name          | node-tlv |
 | Keywords           | TLV, DGI, Ber-TLV, EMV, ISO7816, SIMPLE-TLV, DOL |
-| # releases         | 9 |
-| # dependents       | 1 |
-| # downloads        | 7017 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1946.6666666666667 |
+| # stars            | 19.0 |
 
 ## Links
 - [Homepage](https://github.com/coolbong/node-tlv#readme)

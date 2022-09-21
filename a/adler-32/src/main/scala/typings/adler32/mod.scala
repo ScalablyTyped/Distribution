@@ -1,6 +1,5 @@
 package typings.adler32
 
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,8 +15,8 @@ object mod {
   
   inline def buf(data: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("buf")(data.asInstanceOf[js.Any]).asInstanceOf[Double]
   inline def buf(data: js.Array[Double], seed: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("buf")(data.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def buf(data: Uint8Array): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("buf")(data.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def buf(data: Uint8Array, seed: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("buf")(data.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def buf(data: js.typedarray.Uint8Array): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("buf")(data.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def buf(data: js.typedarray.Uint8Array, seed: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("buf")(data.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def str(data: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("str")(data.asInstanceOf[js.Any]).asInstanceOf[Double]
   inline def str(data: String, seed: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("str")(data.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Double]

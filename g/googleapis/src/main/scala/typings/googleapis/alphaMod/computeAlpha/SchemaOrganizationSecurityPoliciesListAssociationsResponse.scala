@@ -12,11 +12,9 @@ trait SchemaOrganizationSecurityPoliciesListAssociationsResponse extends StObjec
   var associations: js.UndefOr[js.Array[SchemaSecurityPolicyAssociation]] = js.undefined
   
   /**
-    * [Output Only] Type of securityPolicy associations. Always
-    * compute#organizationSecurityPoliciesListAssociations for lists of
-    * securityPolicy associations.
+    * [Output Only] Type of securityPolicy associations. Always compute#organizationSecurityPoliciesListAssociations for lists of securityPolicy associations.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaOrganizationSecurityPoliciesListAssociationsResponse {
   
@@ -31,9 +29,11 @@ object SchemaOrganizationSecurityPoliciesListAssociationsResponse {
     
     inline def setAssociationsUndefined: Self = StObject.set(x, "associations", js.undefined)
     
-    inline def setAssociationsVarargs(value: SchemaSecurityPolicyAssociation*): Self = StObject.set(x, "associations", js.Array(value :_*))
+    inline def setAssociationsVarargs(value: SchemaSecurityPolicyAssociation*): Self = StObject.set(x, "associations", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }

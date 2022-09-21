@@ -5,20 +5,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * First party identity principal.
-  */
 trait SchemaFirstPartyPrincipal extends StObject {
   
   /**
     * The email address of a Google account. .
     */
-  var principalEmail: js.UndefOr[String] = js.undefined
+  var principalEmail: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Metadata about the service that uses the service account. .
     */
-  var serviceMetadata: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var serviceMetadata: js.UndefOr[StringDictionary[Any] | Null] = js.undefined
 }
 object SchemaFirstPartyPrincipal {
   
@@ -31,9 +28,13 @@ object SchemaFirstPartyPrincipal {
     
     inline def setPrincipalEmail(value: String): Self = StObject.set(x, "principalEmail", value.asInstanceOf[js.Any])
     
+    inline def setPrincipalEmailNull: Self = StObject.set(x, "principalEmail", null)
+    
     inline def setPrincipalEmailUndefined: Self = StObject.set(x, "principalEmail", js.undefined)
     
-    inline def setServiceMetadata(value: StringDictionary[js.Any]): Self = StObject.set(x, "serviceMetadata", value.asInstanceOf[js.Any])
+    inline def setServiceMetadata(value: StringDictionary[Any]): Self = StObject.set(x, "serviceMetadata", value.asInstanceOf[js.Any])
+    
+    inline def setServiceMetadataNull: Self = StObject.set(x, "serviceMetadata", null)
     
     inline def setServiceMetadataUndefined: Self = StObject.set(x, "serviceMetadata", js.undefined)
   }

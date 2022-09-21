@@ -42,7 +42,7 @@ object mod {
     def getAppStrings(): js.Promise[js.Array[String]] = js.native
     def getAppStrings(language: String): js.Promise[js.Array[String]] = js.native
     
-    def getAppiumSettings(): js.Promise[StringDictionary[js.Any]] = js.native
+    def getAppiumSettings(): js.Promise[StringDictionary[Any]] = js.native
     
     def getCurrentContext(): js.Promise[String] = js.native
     
@@ -57,31 +57,9 @@ object mod {
     def getScreenOrientation(): js.Promise[LANDSCAPE | PORTRAIT] = js.native
     
     def hideSoftKeyboard(): js.Promise[Unit] = js.native
+    def hideSoftKeyboard(strategy: default | tapOutside | tapOut | swipeDown | pressKey | press): js.Promise[Unit] = js.native
+    def hideSoftKeyboard(strategy: default | tapOutside | tapOut | swipeDown | pressKey | press, key: String): js.Promise[Unit] = js.native
     def hideSoftKeyboard(strategy: Unit, key: String): js.Promise[Unit] = js.native
-    @JSName("hideSoftKeyboard")
-    def hideSoftKeyboard_default(strategy: default): js.Promise[Unit] = js.native
-    @JSName("hideSoftKeyboard")
-    def hideSoftKeyboard_default(strategy: default, key: String): js.Promise[Unit] = js.native
-    @JSName("hideSoftKeyboard")
-    def hideSoftKeyboard_press(strategy: press): js.Promise[Unit] = js.native
-    @JSName("hideSoftKeyboard")
-    def hideSoftKeyboard_press(strategy: press, key: String): js.Promise[Unit] = js.native
-    @JSName("hideSoftKeyboard")
-    def hideSoftKeyboard_pressKey(strategy: pressKey): js.Promise[Unit] = js.native
-    @JSName("hideSoftKeyboard")
-    def hideSoftKeyboard_pressKey(strategy: pressKey, key: String): js.Promise[Unit] = js.native
-    @JSName("hideSoftKeyboard")
-    def hideSoftKeyboard_swipeDown(strategy: swipeDown): js.Promise[Unit] = js.native
-    @JSName("hideSoftKeyboard")
-    def hideSoftKeyboard_swipeDown(strategy: swipeDown, key: String): js.Promise[Unit] = js.native
-    @JSName("hideSoftKeyboard")
-    def hideSoftKeyboard_tapOut(strategy: tapOut): js.Promise[Unit] = js.native
-    @JSName("hideSoftKeyboard")
-    def hideSoftKeyboard_tapOut(strategy: tapOut, key: String): js.Promise[Unit] = js.native
-    @JSName("hideSoftKeyboard")
-    def hideSoftKeyboard_tapOutside(strategy: tapOutside): js.Promise[Unit] = js.native
-    @JSName("hideSoftKeyboard")
-    def hideSoftKeyboard_tapOutside(strategy: tapOutside, key: String): js.Promise[Unit] = js.native
     
     def installApp(appPath: String): js.Promise[Unit] = js.native
     
@@ -100,7 +78,7 @@ object mod {
     
     def pullFileFromDevice(path: String): js.Promise[String] = js.native
     
-    def pullFolderFromDevice(path: String): js.Promise[js.Any] = js.native
+    def pullFolderFromDevice(path: String): js.Promise[Any] = js.native
     
     def pushFileToDevice(path: String, base64Data: String): js.Promise[Unit] = js.native
     
@@ -108,13 +86,38 @@ object mod {
     
     def resetApp(): js.Promise[Unit] = js.native
     
-    def rotationGesture(
-      x: js.UndefOr[Double],
-      y: js.UndefOr[Double],
-      duration: js.UndefOr[Double],
-      rotation: js.UndefOr[Double],
-      touchCount: js.UndefOr[`1` | `2` | `3` | `4` | `5`]
-    ): js.Promise[Unit] = js.native
+    def rotationGesture(): js.Promise[Unit] = js.native
+    def rotationGesture(x: Double): js.Promise[Unit] = js.native
+    def rotationGesture(x: Double, y: Double): js.Promise[Unit] = js.native
+    def rotationGesture(x: Double, y: Double, duration: Double): js.Promise[Unit] = js.native
+    def rotationGesture(x: Double, y: Double, duration: Double, rotation: Double): js.Promise[Unit] = js.native
+    def rotationGesture(x: Double, y: Double, duration: Double, rotation: Double, touchCount: `1` | `2` | `3` | `4` | `5`): js.Promise[Unit] = js.native
+    def rotationGesture(x: Double, y: Double, duration: Double, rotation: Unit, touchCount: `1` | `2` | `3` | `4` | `5`): js.Promise[Unit] = js.native
+    def rotationGesture(x: Double, y: Double, duration: Unit, rotation: Double): js.Promise[Unit] = js.native
+    def rotationGesture(x: Double, y: Double, duration: Unit, rotation: Double, touchCount: `1` | `2` | `3` | `4` | `5`): js.Promise[Unit] = js.native
+    def rotationGesture(x: Double, y: Double, duration: Unit, rotation: Unit, touchCount: `1` | `2` | `3` | `4` | `5`): js.Promise[Unit] = js.native
+    def rotationGesture(x: Double, y: Unit, duration: Double): js.Promise[Unit] = js.native
+    def rotationGesture(x: Double, y: Unit, duration: Double, rotation: Double): js.Promise[Unit] = js.native
+    def rotationGesture(x: Double, y: Unit, duration: Double, rotation: Double, touchCount: `1` | `2` | `3` | `4` | `5`): js.Promise[Unit] = js.native
+    def rotationGesture(x: Double, y: Unit, duration: Double, rotation: Unit, touchCount: `1` | `2` | `3` | `4` | `5`): js.Promise[Unit] = js.native
+    def rotationGesture(x: Double, y: Unit, duration: Unit, rotation: Double): js.Promise[Unit] = js.native
+    def rotationGesture(x: Double, y: Unit, duration: Unit, rotation: Double, touchCount: `1` | `2` | `3` | `4` | `5`): js.Promise[Unit] = js.native
+    def rotationGesture(x: Double, y: Unit, duration: Unit, rotation: Unit, touchCount: `1` | `2` | `3` | `4` | `5`): js.Promise[Unit] = js.native
+    def rotationGesture(x: Unit, y: Double): js.Promise[Unit] = js.native
+    def rotationGesture(x: Unit, y: Double, duration: Double): js.Promise[Unit] = js.native
+    def rotationGesture(x: Unit, y: Double, duration: Double, rotation: Double): js.Promise[Unit] = js.native
+    def rotationGesture(x: Unit, y: Double, duration: Double, rotation: Double, touchCount: `1` | `2` | `3` | `4` | `5`): js.Promise[Unit] = js.native
+    def rotationGesture(x: Unit, y: Double, duration: Double, rotation: Unit, touchCount: `1` | `2` | `3` | `4` | `5`): js.Promise[Unit] = js.native
+    def rotationGesture(x: Unit, y: Double, duration: Unit, rotation: Double): js.Promise[Unit] = js.native
+    def rotationGesture(x: Unit, y: Double, duration: Unit, rotation: Double, touchCount: `1` | `2` | `3` | `4` | `5`): js.Promise[Unit] = js.native
+    def rotationGesture(x: Unit, y: Double, duration: Unit, rotation: Unit, touchCount: `1` | `2` | `3` | `4` | `5`): js.Promise[Unit] = js.native
+    def rotationGesture(x: Unit, y: Unit, duration: Double): js.Promise[Unit] = js.native
+    def rotationGesture(x: Unit, y: Unit, duration: Double, rotation: Double): js.Promise[Unit] = js.native
+    def rotationGesture(x: Unit, y: Unit, duration: Double, rotation: Double, touchCount: `1` | `2` | `3` | `4` | `5`): js.Promise[Unit] = js.native
+    def rotationGesture(x: Unit, y: Unit, duration: Double, rotation: Unit, touchCount: `1` | `2` | `3` | `4` | `5`): js.Promise[Unit] = js.native
+    def rotationGesture(x: Unit, y: Unit, duration: Unit, rotation: Double): js.Promise[Unit] = js.native
+    def rotationGesture(x: Unit, y: Unit, duration: Unit, rotation: Double, touchCount: `1` | `2` | `3` | `4` | `5`): js.Promise[Unit] = js.native
+    def rotationGesture(x: Unit, y: Unit, duration: Unit, rotation: Unit, touchCount: `1` | `2` | `3` | `4` | `5`): js.Promise[Unit] = js.native
     
     def selectContext(name: String): js.Promise[Unit] = js.native
     
@@ -125,7 +128,7 @@ object mod {
     
     def sendChromiumCommandAndGetResult(cmd: String, params: js.Object): js.Promise[js.Object] = js.native
     
-    def setAppiumSettings(settings: StringDictionary[js.Any]): js.Promise[Unit] = js.native
+    def setAppiumSettings(settings: StringDictionary[Any]): js.Promise[Unit] = js.native
     
     def setGeolocation(): js.Promise[Unit] = js.native
     def setGeolocation(latitude: Double): js.Promise[Unit] = js.native
@@ -136,74 +139,14 @@ object mod {
     def setGeolocation(latitude: Unit, longitude: Double, altitude: Double): js.Promise[Unit] = js.native
     def setGeolocation(latitude: Unit, longitude: Unit, altitude: Double): js.Promise[Unit] = js.native
     
+    def setNetworkConnection(typeOrAirplaneMode: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7`): js.Promise[Unit] = js.native
+    def setNetworkConnection(typeOrAirplaneMode: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7`, wifi: Boolean): js.Promise[Unit] = js.native
+    def setNetworkConnection(typeOrAirplaneMode: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7`, wifi: Boolean, data: Boolean): js.Promise[Unit] = js.native
+    def setNetworkConnection(typeOrAirplaneMode: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7`, wifi: Unit, data: Boolean): js.Promise[Unit] = js.native
     def setNetworkConnection(typeOrAirplaneMode: Boolean): js.Promise[Unit] = js.native
     def setNetworkConnection(typeOrAirplaneMode: Boolean, wifi: Boolean): js.Promise[Unit] = js.native
     def setNetworkConnection(typeOrAirplaneMode: Boolean, wifi: Boolean, data: Boolean): js.Promise[Unit] = js.native
     def setNetworkConnection(typeOrAirplaneMode: Boolean, wifi: Unit, data: Boolean): js.Promise[Unit] = js.native
-    @JSName("setNetworkConnection")
-    def setNetworkConnection_0(typeOrAirplaneMode: `0`): js.Promise[Unit] = js.native
-    @JSName("setNetworkConnection")
-    def setNetworkConnection_0(typeOrAirplaneMode: `0`, wifi: Boolean): js.Promise[Unit] = js.native
-    @JSName("setNetworkConnection")
-    def setNetworkConnection_0(typeOrAirplaneMode: `0`, wifi: Boolean, data: Boolean): js.Promise[Unit] = js.native
-    @JSName("setNetworkConnection")
-    def setNetworkConnection_0(typeOrAirplaneMode: `0`, wifi: Unit, data: Boolean): js.Promise[Unit] = js.native
-    @JSName("setNetworkConnection")
-    def setNetworkConnection_1(typeOrAirplaneMode: `1`): js.Promise[Unit] = js.native
-    @JSName("setNetworkConnection")
-    def setNetworkConnection_1(typeOrAirplaneMode: `1`, wifi: Boolean): js.Promise[Unit] = js.native
-    @JSName("setNetworkConnection")
-    def setNetworkConnection_1(typeOrAirplaneMode: `1`, wifi: Boolean, data: Boolean): js.Promise[Unit] = js.native
-    @JSName("setNetworkConnection")
-    def setNetworkConnection_1(typeOrAirplaneMode: `1`, wifi: Unit, data: Boolean): js.Promise[Unit] = js.native
-    @JSName("setNetworkConnection")
-    def setNetworkConnection_2(typeOrAirplaneMode: `2`): js.Promise[Unit] = js.native
-    @JSName("setNetworkConnection")
-    def setNetworkConnection_2(typeOrAirplaneMode: `2`, wifi: Boolean): js.Promise[Unit] = js.native
-    @JSName("setNetworkConnection")
-    def setNetworkConnection_2(typeOrAirplaneMode: `2`, wifi: Boolean, data: Boolean): js.Promise[Unit] = js.native
-    @JSName("setNetworkConnection")
-    def setNetworkConnection_2(typeOrAirplaneMode: `2`, wifi: Unit, data: Boolean): js.Promise[Unit] = js.native
-    @JSName("setNetworkConnection")
-    def setNetworkConnection_3(typeOrAirplaneMode: `3`): js.Promise[Unit] = js.native
-    @JSName("setNetworkConnection")
-    def setNetworkConnection_3(typeOrAirplaneMode: `3`, wifi: Boolean): js.Promise[Unit] = js.native
-    @JSName("setNetworkConnection")
-    def setNetworkConnection_3(typeOrAirplaneMode: `3`, wifi: Boolean, data: Boolean): js.Promise[Unit] = js.native
-    @JSName("setNetworkConnection")
-    def setNetworkConnection_3(typeOrAirplaneMode: `3`, wifi: Unit, data: Boolean): js.Promise[Unit] = js.native
-    @JSName("setNetworkConnection")
-    def setNetworkConnection_4(typeOrAirplaneMode: `4`): js.Promise[Unit] = js.native
-    @JSName("setNetworkConnection")
-    def setNetworkConnection_4(typeOrAirplaneMode: `4`, wifi: Boolean): js.Promise[Unit] = js.native
-    @JSName("setNetworkConnection")
-    def setNetworkConnection_4(typeOrAirplaneMode: `4`, wifi: Boolean, data: Boolean): js.Promise[Unit] = js.native
-    @JSName("setNetworkConnection")
-    def setNetworkConnection_4(typeOrAirplaneMode: `4`, wifi: Unit, data: Boolean): js.Promise[Unit] = js.native
-    @JSName("setNetworkConnection")
-    def setNetworkConnection_5(typeOrAirplaneMode: `5`): js.Promise[Unit] = js.native
-    @JSName("setNetworkConnection")
-    def setNetworkConnection_5(typeOrAirplaneMode: `5`, wifi: Boolean): js.Promise[Unit] = js.native
-    @JSName("setNetworkConnection")
-    def setNetworkConnection_5(typeOrAirplaneMode: `5`, wifi: Boolean, data: Boolean): js.Promise[Unit] = js.native
-    @JSName("setNetworkConnection")
-    def setNetworkConnection_5(typeOrAirplaneMode: `5`, wifi: Unit, data: Boolean): js.Promise[Unit] = js.native
-    @JSName("setNetworkConnection")
-    def setNetworkConnection_6(typeOrAirplaneMode: `6`): js.Promise[Unit] = js.native
-    @JSName("setNetworkConnection")
-    def setNetworkConnection_6(typeOrAirplaneMode: `6`, wifi: Boolean): js.Promise[Unit] = js.native
-    @JSName("setNetworkConnection")
-    def setNetworkConnection_6(typeOrAirplaneMode: `6`, wifi: Boolean, data: Boolean): js.Promise[Unit] = js.native
-    @JSName("setNetworkConnection")
-    def setNetworkConnection_6(typeOrAirplaneMode: `6`, wifi: Unit, data: Boolean): js.Promise[Unit] = js.native
-    @JSName("setNetworkConnection")
-    def setNetworkConnection_7(typeOrAirplaneMode: `7`): js.Promise[Unit] = js.native
-    @JSName("setNetworkConnection")
-    def setNetworkConnection_7(typeOrAirplaneMode: `7`, wifi: Boolean): js.Promise[Unit] = js.native
-    @JSName("setNetworkConnection")
-    def setNetworkConnection_7(typeOrAirplaneMode: `7`, wifi: Boolean, data: Boolean): js.Promise[Unit] = js.native
-    @JSName("setNetworkConnection")
-    def setNetworkConnection_7(typeOrAirplaneMode: `7`, wifi: Unit, data: Boolean): js.Promise[Unit] = js.native
     
     def setScreenOrientation(orientation: String): js.Promise[Unit] = js.native
     

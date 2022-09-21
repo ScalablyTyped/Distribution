@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.InstancedLinesMesh")
 @js.native
-class InstancedLinesMesh protected ()
+open class InstancedLinesMesh protected ()
   extends StObject
      with typings.babylonjs.BABYLON.InstancedLinesMesh {
   def this(name: String, source: typings.babylonjs.BABYLON.LinesMesh) = this()
@@ -37,7 +37,7 @@ class InstancedLinesMesh protected ()
   
   /**
     * Checks if a cullable object (mesh...) is in the camera frustum
-    * Unlike isInFrustum this cheks the full bounding box
+    * Unlike isInFrustum this checks the full bounding box
     * @param frustumPlanes Camera near/planes
     * @returns true if the object is in frustum otherwise false
     */

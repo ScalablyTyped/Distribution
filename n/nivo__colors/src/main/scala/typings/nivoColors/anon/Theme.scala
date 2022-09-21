@@ -1,36 +1,23 @@
 package typings.nivoColors.anon
 
-import typings.nivoColors.mod._InheritedColorProp
+import typings.propTypes.mod.Validator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Theme
-  extends _InheritedColorProp[js.Any] {
-  var theme: String = js.native
+trait Theme extends StObject {
+  
+  var theme: Validator[String]
 }
-
 object Theme {
-  @scala.inline
-  def apply(theme: String): Theme = {
+  
+  inline def apply(theme: Validator[String]): Theme = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[Theme]
   }
-  @scala.inline
-  implicit class ThemeOps[Self <: Theme] (val x: Self) extends AnyVal {
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
-    }
-    @scala.inline
-    def setTheme(value: String): Self = this.set("theme", value.asInstanceOf[js.Any])
-  }
   
+  extension [Self <: Theme](x: Self) {
+    
+    inline def setTheme(value: Validator[String]): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+  }
 }
-

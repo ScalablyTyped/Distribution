@@ -8,7 +8,7 @@ trait PDFViewerOpenEvent
   extends StObject
      with PDFViewerEvent {
   
-  var file: js.UndefOr[js.Any] = js.undefined
+  var file: js.UndefOr[Any] = js.undefined
 }
 object PDFViewerOpenEvent {
   
@@ -19,7 +19,7 @@ object PDFViewerOpenEvent {
   
   extension [Self <: PDFViewerOpenEvent](x: Self) {
     
-    inline def setFile(value: js.Any): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: Any): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
     inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
   }

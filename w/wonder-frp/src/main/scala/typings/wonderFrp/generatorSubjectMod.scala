@@ -12,41 +12,41 @@ object generatorSubjectMod {
   
   @JSImport("wonder-frp/dist/commonjs/subject/GeneratorSubject", "GeneratorSubject")
   @js.native
-  class GeneratorSubject ()
+  open class GeneratorSubject ()
     extends Entity
        with IObserver {
     
-    /* private */ var _isStart: js.Any = js.native
+    /* private */ var _isStart: Any = js.native
     
     /* CompleteClass */
-    override def completed(): js.Any = js.native
+    override def completed(): Any = js.native
     
     /* CompleteClass */
     override def dispose(): Unit = js.native
     
     /* CompleteClass */
-    override def error(error: js.Any): js.Any = js.native
+    override def error(error: Any): Any = js.native
     
     var isStart: Boolean = js.native
     
     /* CompleteClass */
-    override def next(value: js.Any): js.Any = js.native
+    override def next(value: Any): Any = js.native
     
-    var observer: js.Any = js.native
+    var observer: Any = js.native
     
     def onAfterCompleted(): Unit = js.native
     
-    def onAfterError(error: js.Any): Unit = js.native
+    def onAfterError(error: Any): Unit = js.native
     
-    def onAfterNext(value: js.Any): Unit = js.native
+    def onAfterNext(value: Any): Unit = js.native
     
     def onBeforeCompleted(): Unit = js.native
     
-    def onBeforeError(error: js.Any): Unit = js.native
+    def onBeforeError(error: Any): Unit = js.native
     
-    def onBeforeNext(value: js.Any): Unit = js.native
+    def onBeforeNext(value: Any): Unit = js.native
     
-    def onIsCompleted(value: js.Any): Boolean = js.native
+    def onIsCompleted(value: Any): Boolean = js.native
     
     def remove(observer: Observer): Unit = js.native
     
@@ -67,7 +67,7 @@ object generatorSubjectMod {
     def subscribe(arg1: Observer, onError: js.Function, onCompleted: js.Function): IDisposable = js.native
     def subscribe(arg1: Observer, onError: Unit, onCompleted: js.Function): IDisposable = js.native
     
-    def toStream(): js.Any = js.native
+    def toStream(): Any = js.native
   }
   /* static members */
   object GeneratorSubject {

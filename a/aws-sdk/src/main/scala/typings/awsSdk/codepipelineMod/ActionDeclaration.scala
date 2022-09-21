@@ -70,7 +70,7 @@ object ActionDeclaration {
     
     inline def setInputArtifactsUndefined: Self = StObject.set(x, "inputArtifacts", js.undefined)
     
-    inline def setInputArtifactsVarargs(value: InputArtifact*): Self = StObject.set(x, "inputArtifacts", js.Array(value :_*))
+    inline def setInputArtifactsVarargs(value: InputArtifact*): Self = StObject.set(x, "inputArtifacts", js.Array(value*))
     
     inline def setName(value: ActionName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -82,7 +82,7 @@ object ActionDeclaration {
     
     inline def setOutputArtifactsUndefined: Self = StObject.set(x, "outputArtifacts", js.undefined)
     
-    inline def setOutputArtifactsVarargs(value: OutputArtifact*): Self = StObject.set(x, "outputArtifacts", js.Array(value :_*))
+    inline def setOutputArtifactsVarargs(value: OutputArtifact*): Self = StObject.set(x, "outputArtifacts", js.Array(value*))
     
     inline def setRegion(value: AWSRegionName): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     

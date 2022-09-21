@@ -14,7 +14,7 @@ object geoNodesMod {
   
   @JSImport("gitlab/dist/types/core/services/GeoNodes", "GeoNodes")
   @js.native
-  class GeoNodes () extends BaseService {
+  open class GeoNodes () extends BaseService {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def all(): js.Promise[GetResponse] = js.native

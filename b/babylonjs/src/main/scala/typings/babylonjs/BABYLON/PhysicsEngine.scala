@@ -9,13 +9,15 @@ trait PhysicsEngine
   extends StObject
      with IPhysicsEngine {
   
-  /* private */ var _impostors: js.Any = js.native
+  /* private */ var _impostors: Any = js.native
   
-  /* private */ var _joints: js.Any = js.native
+  /* private */ var _joints: Any = js.native
   
-  /* private */ var _physicsPlugin: js.Any = js.native
+  /* private */ var _physicsPlugin: Any = js.native
   
-  /* private */ var _subTimeStep: js.Any = js.native
+  /* private */ var _subTimeStep: Any = js.native
+  
+  /* private */ var _uniqueIdCounter: Any = js.native
   
   /**
     * Set the sub time step of the physics engine.

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "get-emails" : "3.0.0"
+      "get-emails" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "get-emails" : "3.0.0"
+      "get-emails" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

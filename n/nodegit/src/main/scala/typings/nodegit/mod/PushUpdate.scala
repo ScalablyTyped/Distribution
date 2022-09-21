@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "PushUpdate")
 @js.native
-class PushUpdate ()
+open class PushUpdate ()
   extends typings.nodegit.pushUpdateMod.PushUpdate

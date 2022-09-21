@@ -9,10 +9,10 @@ Typings are for version 1.1.0
 | ------------------ | :-------------: |
 | Full name          | pg-packet-stream |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 1 |
-| # downloads        | 2456889 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 706052.6666666666 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/pg-packet-stream)

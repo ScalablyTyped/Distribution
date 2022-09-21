@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.OlkOptionButton")
 @js.native
-/* private */ class OlkOptionButton ()
+/* private */ open class OlkOptionButton ()
   extends StObject
      with typings.activexOutlook.Outlook.OlkOptionButton {
   
@@ -54,7 +54,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OutlookDotOlkOptionButton_typekey: typings.activexOutlook.Outlook.OlkOptionButton = js.native
   
   /* CompleteClass */
-  var Value: js.Any = js.native
+  var Value: Any = js.native
   
   /* CompleteClass */
   var WordWrap: Boolean = js.native

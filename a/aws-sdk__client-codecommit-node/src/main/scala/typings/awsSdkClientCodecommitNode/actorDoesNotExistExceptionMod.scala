@@ -8,5 +8,5 @@ object actorDoesNotExistExceptionMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/model/ActorDoesNotExistException", "ActorDoesNotExistException")
   @js.native
-  val ActorDoesNotExistException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ActorDoesNotExistException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

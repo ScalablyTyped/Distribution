@@ -12,7 +12,7 @@ trait SearchViewModelSearchCompleteEventResults
   
   var results: js.Array[SearchResult]
   
-  var source: js.Array[js.Any]
+  var source: js.Array[Any]
   
   var sourceIndex: Double
 }
@@ -23,7 +23,7 @@ object SearchViewModelSearchCompleteEventResults {
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
     results: js.Array[SearchResult],
-    source: js.Array[js.Any],
+    source: js.Array[Any],
     sourceIndex: Double
   ): SearchViewModelSearchCompleteEventResults = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), results = results.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], sourceIndex = sourceIndex.asInstanceOf[js.Any])
@@ -34,12 +34,12 @@ object SearchViewModelSearchCompleteEventResults {
     
     inline def setResults(value: js.Array[SearchResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    inline def setResultsVarargs(value: SearchResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: SearchResult*): Self = StObject.set(x, "results", js.Array(value*))
     
-    inline def setSource(value: js.Array[js.Any]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: js.Array[Any]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     inline def setSourceIndex(value: Double): Self = StObject.set(x, "sourceIndex", value.asInstanceOf[js.Any])
     
-    inline def setSourceVarargs(value: js.Any*): Self = StObject.set(x, "source", js.Array(value :_*))
+    inline def setSourceVarargs(value: Any*): Self = StObject.set(x, "source", js.Array(value*))
   }
 }

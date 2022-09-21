@@ -10,7 +10,7 @@ trait PDFViewerErrorEvent
   
   var dialog: js.UndefOr[Dialog] = js.undefined
   
-  var error: js.UndefOr[js.Any] = js.undefined
+  var error: js.UndefOr[Any] = js.undefined
   
   var message: js.UndefOr[String] = js.undefined
 }
@@ -27,7 +27,7 @@ object PDFViewerErrorEvent {
     
     inline def setDialogUndefined: Self = StObject.set(x, "dialog", js.undefined)
     
-    inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     

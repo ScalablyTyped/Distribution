@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.InformationRightsManagementSettings")
 @js.native
-class InformationRightsManagementSettings ()
+open class InformationRightsManagementSettings ()
   extends StObject
      with typings.sharepoint.SP.InformationRightsManagementSettings

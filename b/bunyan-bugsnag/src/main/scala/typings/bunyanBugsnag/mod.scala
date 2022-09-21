@@ -15,7 +15,7 @@ object mod {
   
   trait Options extends StObject {
     
-    var bugsnagClient: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Bugsnag.Client */ js.Any
+    var bugsnagClient: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Bugsnag */ Any
     
     var errorLevel: js.UndefOr[Double | String] = js.undefined
     
@@ -26,7 +26,7 @@ object mod {
   object Options {
     
     inline def apply(
-      bugsnagClient: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Bugsnag.Client */ js.Any
+      bugsnagClient: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Bugsnag */ Any
     ): Options = {
       val __obj = js.Dynamic.literal(bugsnagClient = bugsnagClient.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
@@ -34,9 +34,7 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setBugsnagClient(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Bugsnag.Client */ js.Any
-      ): Self = StObject.set(x, "bugsnagClient", value.asInstanceOf[js.Any])
+      inline def setBugsnagClient(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Bugsnag */ Any): Self = StObject.set(x, "bugsnagClient", value.asInstanceOf[js.Any])
       
       inline def setErrorLevel(value: Double | String): Self = StObject.set(x, "errorLevel", value.asInstanceOf[js.Any])
       
@@ -46,7 +44,7 @@ object mod {
       
       inline def setSystemInfoUndefined: Self = StObject.set(x, "systemInfo", js.undefined)
       
-      inline def setSystemInfoVarargs(value: String*): Self = StObject.set(x, "systemInfo", js.Array(value :_*))
+      inline def setSystemInfoVarargs(value: String*): Self = StObject.set(x, "systemInfo", js.Array(value*))
       
       inline def setWarningLevel(value: Double | String): Self = StObject.set(x, "warningLevel", value.asInstanceOf[js.Any])
       

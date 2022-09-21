@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "quick-lru" : "5.1.1"
+      "quick-lru" : "6.1.1"
     }
   ],
   "test-dependencies" : [
     {
-      "quick-lru" : "5.1.1"
+      "quick-lru" : "6.1.1"
     }
   ],
   "compile-devDependencies" : [

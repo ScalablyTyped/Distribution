@@ -1,61 +1,39 @@
 package typings.mri
 
-import org.scalablytyped.runtime.StringDictionary
+import typings.mri.anon._empty
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(args: js.Array[String]): Argv = ^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any]).asInstanceOf[Argv]
-  inline def apply(args: js.Array[String], options: Options): Argv = (^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Argv]
+  inline def apply[T](): Argv[T] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Argv[T]]
+  inline def apply[T](args: js.Array[String]): Argv[T] = ^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any]).asInstanceOf[Argv[T]]
+  inline def apply[T](args: js.Array[String], options: Options): Argv[T] = (^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Argv[T]]
+  inline def apply[T](args: Unit, options: Options): Argv[T] = (^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Argv[T]]
   
   @JSImport("mri", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  trait Argv
-    extends StObject
-       with DictionaryObject[js.Any] {
-    
-    /** anything after `--` or between options */
-    @JSName("_")
-    var _underscore: js.Array[String]
-  }
-  object Argv {
-    
-    inline def apply(_underscore: js.Array[String]): Argv = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("_")(_underscore.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Argv]
-    }
-    
-    extension [Self <: Argv](x: Self) {
-      
-      inline def set_underscore(value: js.Array[String]): Self = StObject.set(x, "_", value.asInstanceOf[js.Any])
-      
-      inline def set_underscoreVarargs(value: String*): Self = StObject.set(x, "_", js.Array(value :_*))
-    }
-  }
+  type Argv[T] = T & _empty
   
-  /** A string or array of strings */
-  type ArrayOrString = String | js.Array[String]
+  type Arrayable[T] = T | js.Array[T]
   
-  /** An object with any keys whose values conform to a specific type */
-  type DictionaryObject[T] = StringDictionary[T]
+  type Default = Dict[Any]
+  
+  type Dict[T] = Record[String, T]
   
   trait Options extends StObject {
     
-    /** Default values for flags */
-    var default: js.UndefOr[DictionaryObject[js.Any]] = js.undefined
+    var default: js.UndefOr[Dict[Any]] = js.undefined
     
-    /** Additional aliases for specific flags */
-    var alias: js.UndefOr[DictionaryObject[ArrayOrString]] = js.undefined
+    var alias: js.UndefOr[Dict[Arrayable[String]]] = js.undefined
     
-    /** A flag or array of flags whose values are boolean */
-    var boolean: js.UndefOr[ArrayOrString] = js.undefined
+    var boolean: js.UndefOr[Arrayable[String]] = js.undefined
     
-    var string: js.UndefOr[ArrayOrString] = js.undefined
+    var string: js.UndefOr[Arrayable[String]] = js.undefined
     
     var unknown: js.UndefOr[js.Function1[/* flag */ String, Unit]] = js.undefined
   }
@@ -68,25 +46,25 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
-      inline def setAlias(value: DictionaryObject[ArrayOrString]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+      inline def setAlias(value: Dict[Arrayable[String]]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
       inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
       
-      inline def setBoolean(value: ArrayOrString): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
+      inline def setBoolean(value: Arrayable[String]): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
       
       inline def setBooleanUndefined: Self = StObject.set(x, "boolean", js.undefined)
       
-      inline def setBooleanVarargs(value: String*): Self = StObject.set(x, "boolean", js.Array(value :_*))
+      inline def setBooleanVarargs(value: String*): Self = StObject.set(x, "boolean", js.Array(value*))
       
-      inline def setDefault(value: DictionaryObject[js.Any]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: Dict[Any]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
       inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      inline def setString(value: ArrayOrString): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+      inline def setString(value: Arrayable[String]): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
       
       inline def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
       
-      inline def setStringVarargs(value: String*): Self = StObject.set(x, "string", js.Array(value :_*))
+      inline def setStringVarargs(value: String*): Self = StObject.set(x, "string", js.Array(value*))
       
       inline def setUnknown(value: /* flag */ String => Unit): Self = StObject.set(x, "unknown", js.Any.fromFunction1(value))
       

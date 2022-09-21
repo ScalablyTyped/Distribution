@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HeadingStyles extends StObject {
   
-  def Add(Style: js.Any, Level: Double): HeadingStyle
+  def Add(Style: Any, Level: Double): HeadingStyle
   
   val Application: typings.activexWord.Word.Application
   
@@ -16,7 +16,7 @@ trait HeadingStyles extends StObject {
   
   def Item(Index: Double): HeadingStyle
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.HeadingStyles_typekey")
   var WordDotHeadingStyles_typekey: HeadingStyles
@@ -24,12 +24,12 @@ trait HeadingStyles extends StObject {
 object HeadingStyles {
   
   inline def apply(
-    Add: (js.Any, Double) => HeadingStyle,
+    Add: (Any, Double) => HeadingStyle,
     Application: Application,
     Count: Double,
     Creator: Double,
     Item: Double => HeadingStyle,
-    Parent: js.Any,
+    Parent: Any,
     WordDotHeadingStyles_typekey: HeadingStyles
   ): HeadingStyles = {
     val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add), Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
@@ -39,7 +39,7 @@ object HeadingStyles {
   
   extension [Self <: HeadingStyles](x: Self) {
     
-    inline def setAdd(value: (js.Any, Double) => HeadingStyle): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (Any, Double) => HeadingStyle): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
@@ -49,7 +49,7 @@ object HeadingStyles {
     
     inline def setItem(value: Double => HeadingStyle): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotHeadingStyles_typekey(value: HeadingStyles): Self = StObject.set(x, "Word.HeadingStyles_typekey", value.asInstanceOf[js.Any])
   }

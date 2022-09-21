@@ -9,12 +9,12 @@ object srcTestingMod {
   
   @JSImport("@angular/http/testing/src/testing", "MockBackend")
   @js.native
-  class MockBackend ()
+  open class MockBackend ()
     extends typings.angularHttp.mockBackendMod.MockBackend
   
   @JSImport("@angular/http/testing/src/testing", "MockConnection")
   @js.native
-  class MockConnection protected ()
+  open class MockConnection protected ()
     extends typings.angularHttp.mockBackendMod.MockConnection {
     def this(req: Request) = this()
   }

@@ -11,7 +11,7 @@ trait WebpushConfig extends StObject {
   var data: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.WebpushConfig & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.WebpushConfig & TopLevel[Any]
   ] = js.undefined
   
   /** Options for features provided by the FCM SDK for Web. */
@@ -21,7 +21,7 @@ trait WebpushConfig extends StObject {
   var headers: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.WebpushConfig & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.WebpushConfig & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -32,7 +32,7 @@ trait WebpushConfig extends StObject {
   var notification: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.WebpushConfig & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.WebpushConfig & TopLevel[Any]
   ] = js.undefined
 }
 object WebpushConfig {
@@ -47,7 +47,7 @@ object WebpushConfig {
     inline def setData(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.WebpushConfig & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.WebpushConfig & TopLevel[Any]
     ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
@@ -59,7 +59,7 @@ object WebpushConfig {
     inline def setHeaders(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.WebpushConfig & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.WebpushConfig & TopLevel[Any]
     ): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
@@ -67,7 +67,7 @@ object WebpushConfig {
     inline def setNotification(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.WebpushConfig & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.WebpushConfig & TopLevel[Any]
     ): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     
     inline def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)

@@ -1,6 +1,5 @@
 package typings.protobufjs.mod.common
 
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Properties of a google.protobuf.Any message. */
 trait IAny extends StObject {
   
-  var bytes: js.UndefOr[Uint8Array] = js.undefined
+  var bytes: js.UndefOr[js.typedarray.Uint8Array] = js.undefined
   
   var typeUrl: js.UndefOr[String] = js.undefined
 }
@@ -21,7 +20,7 @@ object IAny {
   
   extension [Self <: IAny](x: Self) {
     
-    inline def setBytes(value: Uint8Array): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
+    inline def setBytes(value: js.typedarray.Uint8Array): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     
     inline def setBytesUndefined: Self = StObject.set(x, "bytes", js.undefined)
     

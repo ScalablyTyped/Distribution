@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FunctionComponent[P]
   extends StObject
-     with AnyComponent[P, js.Any] {
+     with AnyComponent[P, Any] {
   
-  def apply(props: RenderableProps[P, js.Any]): VNode[js.Any] | Null = js.native
-  def apply(props: RenderableProps[P, js.Any], context: js.Any): VNode[js.Any] | Null = js.native
+  def apply(props: RenderableProps[P, Any]): VNode[Any] | Null = js.native
+  def apply(props: RenderableProps[P, Any], context: Any): VNode[Any] | Null = js.native
   
   var defaultProps: js.UndefOr[Partial[P]] = js.native
   

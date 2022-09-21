@@ -7,7 +7,7 @@ import org.scalablytyped.runtime.TopLevel
 import typings.grpcGrpcJs.anon.PartialChannelOptions
 import typings.grpcGrpcJs.channelCredentialsMod.ChannelCredentials
 import typings.grpcGrpcJs.clientMod.Client
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -143,7 +143,7 @@ object makeClientMod {
       
       inline def setFileDescriptorProtos(value: js.Array[Buffer]): Self = StObject.set(x, "fileDescriptorProtos", value.asInstanceOf[js.Any])
       
-      inline def setFileDescriptorProtosVarargs(value: Buffer*): Self = StObject.set(x, "fileDescriptorProtos", js.Array(value :_*))
+      inline def setFileDescriptorProtosVarargs(value: Buffer*): Self = StObject.set(x, "fileDescriptorProtos", js.Array(value*))
       
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -224,9 +224,12 @@ object makeClientMod {
           /* credentials */ ChannelCredentials, 
           /* options */ PartialChannelOptions, 
           ServiceClient
-        ]
+        ] {
+    
+    var serviceName: String = js.native
+  }
   
   type ServiceDefinition[ImplementationType] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ index in keyof ImplementationType ]: @grpc/grpc-js.@grpc/grpc-js/build/src/make-client.MethodDefinition<any, any>}
-    */ typings.grpcGrpcJs.grpcGrpcJsStrings.ServiceDefinition & TopLevel[js.Any]
+    */ typings.grpcGrpcJs.grpcGrpcJsStrings.ServiceDefinition & TopLevel[Any]
 }

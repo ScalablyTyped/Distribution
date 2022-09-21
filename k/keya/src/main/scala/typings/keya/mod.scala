@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("keya/out/browser/indexeddb", JSImport.Default)
   @js.native
-  class default[T] () extends IndexedDBStore[T]
+  open class default[T] () extends IndexedDBStore[T]
   /* static members */
   object default {
     

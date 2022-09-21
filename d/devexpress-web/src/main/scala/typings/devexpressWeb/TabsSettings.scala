@@ -32,6 +32,6 @@ object TabsSettings {
     
     inline def setTabs(value: js.Array[TabSettings]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
     
-    inline def setTabsVarargs(value: TabSettings*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+    inline def setTabsVarargs(value: TabSettings*): Self = StObject.set(x, "tabs", js.Array(value*))
   }
 }

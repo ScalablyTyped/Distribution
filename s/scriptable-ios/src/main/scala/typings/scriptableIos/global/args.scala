@@ -85,8 +85,8 @@ object args {
     */
   @JSGlobal("args.shortcutParameter")
   @js.native
-  def shortcutParameter: js.Any = js.native
-  inline def shortcutParameter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shortcutParameter")(x.asInstanceOf[js.Any])
+  def shortcutParameter: Any = js.native
+  inline def shortcutParameter_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shortcutParameter")(x.asInstanceOf[js.Any])
   
   /**
     * _URLs supplied by a share sheet or a shortcut action._
@@ -111,6 +111,6 @@ object args {
     */
   @JSGlobal("args.widgetParameter")
   @js.native
-  def widgetParameter: js.Any = js.native
-  inline def widgetParameter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("widgetParameter")(x.asInstanceOf[js.Any])
+  def widgetParameter: Any = js.native
+  inline def widgetParameter_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("widgetParameter")(x.asInstanceOf[js.Any])
 }

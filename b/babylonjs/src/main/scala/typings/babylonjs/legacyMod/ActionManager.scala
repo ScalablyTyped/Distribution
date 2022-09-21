@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "ActionManager")
 @js.native
-class ActionManager protected ()
+/**
+  * Creates a new action manager
+  * @param scene defines the hosting scene
+  */
+open class ActionManager ()
   extends typings.babylonjs.indexMod.ActionManager {
-  /**
-    * Creates a new action manager
-    * @param scene defines the hosting scene
-    */
-  def this(scene: typings.babylonjs.sceneMod.Scene) = this()
+  def this(scene: Nullable[typings.babylonjs.sceneMod.Scene]) = this()
 }
 /* static members */
 object ActionManager {
@@ -173,7 +173,7 @@ object ActionManager {
     * @param scene defines the hosting scene
     */
   inline def Parse(
-    parsedActions: js.Any,
+    parsedActions: Any,
     `object`: Nullable[typings.babylonjs.abstractMeshMod.AbstractMesh],
     scene: typings.babylonjs.sceneMod.Scene
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedActions.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Unit]

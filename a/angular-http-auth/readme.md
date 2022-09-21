@@ -10,10 +10,10 @@ HTTP Auth Interceptor Module for AngularJS.
 | ------------------ | :-------------: |
 | Full name          | angular-http-auth |
 | Keywords           | angular, auth |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 132730 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 16903.333333333332 |
+| # stars            | 2406.0 |
 
 ## Links
 - [Homepage](https://github.com/witoldsz/angular-http-auth)

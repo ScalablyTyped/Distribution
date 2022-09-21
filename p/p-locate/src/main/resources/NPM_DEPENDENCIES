@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "p-locate" : "5.0.0"
+      "p-locate" : "6.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "p-locate" : "5.0.0"
+      "p-locate" : "6.0.0"
     }
   ],
   "compile-devDependencies" : [

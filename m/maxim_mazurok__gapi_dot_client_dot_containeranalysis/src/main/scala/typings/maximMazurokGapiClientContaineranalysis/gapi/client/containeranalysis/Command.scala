@@ -37,7 +37,7 @@ object Command {
     
     inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
     
     inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
@@ -47,7 +47,7 @@ object Command {
     
     inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
-    inline def setEnvVarargs(value: String*): Self = StObject.set(x, "env", js.Array(value :_*))
+    inline def setEnvVarargs(value: String*): Self = StObject.set(x, "env", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -61,6 +61,6 @@ object Command {
     
     inline def setWaitForUndefined: Self = StObject.set(x, "waitFor", js.undefined)
     
-    inline def setWaitForVarargs(value: String*): Self = StObject.set(x, "waitFor", js.Array(value :_*))
+    inline def setWaitForVarargs(value: String*): Self = StObject.set(x, "waitFor", js.Array(value*))
   }
 }

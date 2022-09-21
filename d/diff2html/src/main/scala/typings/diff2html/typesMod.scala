@@ -62,7 +62,7 @@ object typesMod {
       
       inline def setLines(value: js.Array[DiffLine]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
       
-      inline def setLinesVarargs(value: DiffLine*): Self = StObject.set(x, "lines", js.Array(value :_*))
+      inline def setLinesVarargs(value: DiffLine*): Self = StObject.set(x, "lines", js.Array(value*))
       
       inline def setNewStartLine(value: Double): Self = StObject.set(x, "newStartLine", value.asInstanceOf[js.Any])
       
@@ -106,6 +106,8 @@ object typesMod {
     
     var isRename: js.UndefOr[Boolean] = js.undefined
     
+    var isTooBig: js.UndefOr[Boolean] = js.undefined
+    
     var language: String
     
     var mode: js.UndefOr[String] = js.undefined
@@ -140,7 +142,7 @@ object typesMod {
       
       inline def setBlocks(value: js.Array[DiffBlock]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
       
-      inline def setBlocksVarargs(value: DiffBlock*): Self = StObject.set(x, "blocks", js.Array(value :_*))
+      inline def setBlocksVarargs(value: DiffBlock*): Self = StObject.set(x, "blocks", js.Array(value*))
       
       inline def setChangedPercentage(value: Double): Self = StObject.set(x, "changedPercentage", value.asInstanceOf[js.Any])
       
@@ -154,7 +156,7 @@ object typesMod {
       
       inline def setChecksumBeforeUndefined: Self = StObject.set(x, "checksumBefore", js.undefined)
       
-      inline def setChecksumBeforeVarargs(value: String*): Self = StObject.set(x, "checksumBefore", js.Array(value :_*))
+      inline def setChecksumBeforeVarargs(value: String*): Self = StObject.set(x, "checksumBefore", js.Array(value*))
       
       inline def setDeletedFileMode(value: String): Self = StObject.set(x, "deletedFileMode", value.asInstanceOf[js.Any])
       
@@ -186,6 +188,10 @@ object typesMod {
       
       inline def setIsRenameUndefined: Self = StObject.set(x, "isRename", js.undefined)
       
+      inline def setIsTooBig(value: Boolean): Self = StObject.set(x, "isTooBig", value.asInstanceOf[js.Any])
+      
+      inline def setIsTooBigUndefined: Self = StObject.set(x, "isTooBig", js.undefined)
+      
       inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
       inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
@@ -204,7 +210,7 @@ object typesMod {
       
       inline def setOldModeUndefined: Self = StObject.set(x, "oldMode", js.undefined)
       
-      inline def setOldModeVarargs(value: String*): Self = StObject.set(x, "oldMode", js.Array(value :_*))
+      inline def setOldModeVarargs(value: String*): Self = StObject.set(x, "oldMode", js.Array(value*))
       
       inline def setUnchangedPercentage(value: Double): Self = StObject.set(x, "unchangedPercentage", value.asInstanceOf[js.Any])
       
@@ -233,7 +239,7 @@ object typesMod {
     }
   }
   
-  type DiffLine = (DiffLineDeleted | DiffLineInserted | DiffLineContext) & DiffLineContent
+  type DiffLine = (DiffLineDeleted & DiffLineContent) | (DiffLineInserted & DiffLineContent) | (DiffLineContext & DiffLineContent)
   
   trait DiffLineContent extends StObject {
     

@@ -10,10 +10,10 @@ A micro web server so fast, it'll make you dance! :dancers:
 | ------------------ | :-------------: |
 | Full name          | polka |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 103 |
-| # downloads        | 1866829 |
-| # stars            | 1 |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 350939.6666666667 |
+| # stars            | 5046.0 |
 
 ## Links
 - [Homepage](https://github.com/lukeed/polka#readme)

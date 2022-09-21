@@ -37,7 +37,7 @@ trait ojGanttTaskSettableProperties
   
   var progress: Value
   
-  var rowId: js.UndefOr[js.Any] = js.undefined
+  var rowId: js.UndefOr[Any] = js.undefined
   
   var shortDesc: String | Null
   
@@ -89,7 +89,7 @@ object ojGanttTaskSettableProperties {
     
     inline def setProgress(value: Value): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    inline def setRowId(value: js.Any): Self = StObject.set(x, "rowId", value.asInstanceOf[js.Any])
+    inline def setRowId(value: Any): Self = StObject.set(x, "rowId", value.asInstanceOf[js.Any])
     
     inline def setRowIdUndefined: Self = StObject.set(x, "rowId", js.undefined)
     

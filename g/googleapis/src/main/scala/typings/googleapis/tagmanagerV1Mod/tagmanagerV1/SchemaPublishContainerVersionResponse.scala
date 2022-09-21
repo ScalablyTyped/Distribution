@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Publish container version response.
-  */
 trait SchemaPublishContainerVersionResponse extends StObject {
   
   /**
     * Compiler errors or not.
     */
-  var compilerError: js.UndefOr[Boolean] = js.undefined
+  var compilerError: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * The container version created.
@@ -29,6 +26,8 @@ object SchemaPublishContainerVersionResponse {
   extension [Self <: SchemaPublishContainerVersionResponse](x: Self) {
     
     inline def setCompilerError(value: Boolean): Self = StObject.set(x, "compilerError", value.asInstanceOf[js.Any])
+    
+    inline def setCompilerErrorNull: Self = StObject.set(x, "compilerError", null)
     
     inline def setCompilerErrorUndefined: Self = StObject.set(x, "compilerError", js.undefined)
     

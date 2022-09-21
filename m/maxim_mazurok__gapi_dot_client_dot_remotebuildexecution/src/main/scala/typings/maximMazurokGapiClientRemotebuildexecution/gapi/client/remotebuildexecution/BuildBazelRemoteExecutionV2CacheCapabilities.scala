@@ -21,6 +21,12 @@ trait BuildBazelRemoteExecutionV2CacheCapabilities extends StObject {
     */
   var maxBatchTotalSizeBytes: js.UndefOr[String] = js.undefined
   
+  /**
+    * Compressors supported by the "compressed-blobs" bytestream resources. Servers MUST support identity/no-compression, even if it is not listed here. Note that this does not imply
+    * which if any compressors are supported by the server at the gRPC level.
+    */
+  var supportedCompressor: js.UndefOr[js.Array[String]] = js.undefined
+  
   /** Whether absolute symlink targets are supported. */
   var symlinkAbsolutePathStrategy: js.UndefOr[String] = js.undefined
 }
@@ -45,11 +51,17 @@ object BuildBazelRemoteExecutionV2CacheCapabilities {
     
     inline def setDigestFunctionUndefined: Self = StObject.set(x, "digestFunction", js.undefined)
     
-    inline def setDigestFunctionVarargs(value: String*): Self = StObject.set(x, "digestFunction", js.Array(value :_*))
+    inline def setDigestFunctionVarargs(value: String*): Self = StObject.set(x, "digestFunction", js.Array(value*))
     
     inline def setMaxBatchTotalSizeBytes(value: String): Self = StObject.set(x, "maxBatchTotalSizeBytes", value.asInstanceOf[js.Any])
     
     inline def setMaxBatchTotalSizeBytesUndefined: Self = StObject.set(x, "maxBatchTotalSizeBytes", js.undefined)
+    
+    inline def setSupportedCompressor(value: js.Array[String]): Self = StObject.set(x, "supportedCompressor", value.asInstanceOf[js.Any])
+    
+    inline def setSupportedCompressorUndefined: Self = StObject.set(x, "supportedCompressor", js.undefined)
+    
+    inline def setSupportedCompressorVarargs(value: String*): Self = StObject.set(x, "supportedCompressor", js.Array(value*))
     
     inline def setSymlinkAbsolutePathStrategy(value: String): Self = StObject.set(x, "symlinkAbsolutePathStrategy", value.asInstanceOf[js.Any])
     

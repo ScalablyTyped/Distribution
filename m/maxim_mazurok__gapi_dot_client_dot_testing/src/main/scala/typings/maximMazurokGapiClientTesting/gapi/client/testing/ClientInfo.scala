@@ -25,7 +25,7 @@ object ClientInfo {
     
     inline def setClientInfoDetailsUndefined: Self = StObject.set(x, "clientInfoDetails", js.undefined)
     
-    inline def setClientInfoDetailsVarargs(value: ClientInfoDetail*): Self = StObject.set(x, "clientInfoDetails", js.Array(value :_*))
+    inline def setClientInfoDetailsVarargs(value: ClientInfoDetail*): Self = StObject.set(x, "clientInfoDetails", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

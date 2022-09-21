@@ -1,6 +1,5 @@
 package typings.uirouterAngularjs.mod
 
-import typings.std.RegExp
 import typings.uirouterCore.urlInterfaceMod.UrlMatcherCompileConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@uirouter/angularjs", "UrlMatcher")
 @js.native
-class UrlMatcher protected ()
+open class UrlMatcher protected ()
   extends typings.uirouterCore.mod.UrlMatcher {
   /**
     * @param pattern The pattern to compile into a matcher.
@@ -52,11 +51,11 @@ object UrlMatcher {
   /** @internal */
   @JSImport("@uirouter/angularjs", "UrlMatcher.nameValidator")
   @js.native
-  def nameValidator: RegExp = js.native
-  inline def nameValidator_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nameValidator")(x.asInstanceOf[js.Any])
+  def nameValidator: js.RegExp = js.native
+  inline def nameValidator_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nameValidator")(x.asInstanceOf[js.Any])
   
   /** @internal Given a matcher, return an array with the matcher's path segments and path params, in order */
-  inline def pathSegmentsAndParams(matcher: typings.uirouterCore.urlMatcherMod.UrlMatcher): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("pathSegmentsAndParams")(matcher.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def pathSegmentsAndParams(matcher: typings.uirouterCore.urlMatcherMod.UrlMatcher): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("pathSegmentsAndParams")(matcher.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /** @internal Given a matcher, return an array with the matcher's query params */
   inline def queryParams(matcher: typings.uirouterCore.urlMatcherMod.UrlMatcher): js.Array[typings.uirouterCore.paramMod.Param] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryParams")(matcher.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.uirouterCore.paramMod.Param]]

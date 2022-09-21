@@ -4,15 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The result of reverting a zone in a workspace.
-  */
 trait SchemaRevertZoneResponse extends StObject {
   
   /**
-    * Zone as it appears in the latest container version since the last
-    * workspace synchronization operation. If no zone is present, that means
-    * the zone was deleted in the latest container version.
+    * Zone as it appears in the latest container version since the last workspace synchronization operation. If no zone is present, that means the zone was deleted in the latest container version.
     */
   var zone: js.UndefOr[SchemaZone] = js.undefined
 }

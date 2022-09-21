@@ -1,7 +1,7 @@
 
 # Scala.js typings for cordova-plugin-device
 
-Typings are for version 2.0.3
+Typings are for version 2.1.0
 
 ## Library description:
 Cordova Device Plugin
@@ -9,15 +9,15 @@ Cordova Device Plugin
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | cordova-plugin-device |
-| Keywords           | cordova, device, ecosystem:cordova, cordova-android, cordova-ios, cordova-windows, cordova-browser, cordova-osx |
-| # releases         | 1 |
-| # dependents       | 103 |
-| # downloads        | 3379668 |
-| # stars            | 33 |
+| Keywords           | cordova, device, ecosystem:cordova, cordova-android, cordova-electron, cordova-ios, cordova-windows, cordova-browser, cordova-osx |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 283042.3333333333 |
+| # stars            | 361.0 |
 
 ## Links
 - [Homepage](https://github.com/apache/cordova-plugin-device#readme)
-- [Bugs](https://issues.apache.org/jira/browse/CB)
+- [Bugs](https://github.com/apache/cordova-plugin-device/issues)
 - [Repository](https://github.com/apache/cordova-plugin-device)
 - [Npm](https://www.npmjs.com/package/cordova-plugin-device)
     

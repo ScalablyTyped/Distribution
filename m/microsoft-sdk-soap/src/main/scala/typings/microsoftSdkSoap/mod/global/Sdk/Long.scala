@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Sdk.Long")
 @js.native
-class Long protected () extends AttributeBase {
+open class Long protected () extends AttributeBase {
   /**
     * A Long Attribute.
     * @param name The logical name of the attribute.

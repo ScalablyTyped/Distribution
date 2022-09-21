@@ -4,18 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Imports data into the specified DICOM store. Returns an error if any of the
-  * files to import are not DICOM files. This API will accept duplicate DICOM
-  * instances, by simply ignoring the newly pushed instance (it will not
-  * overwrite).
-  */
 trait SchemaImportDicomDataRequest extends StObject {
   
   /**
-    * Cloud Storage source data location and import configuration.  The Cloud
-    * Storage location requires the `roles/storage.objectViewer` Cloud IAM
-    * role.
+    * Cloud Storage source data location and import configuration. The Cloud Healthcare Service Agent requires the `roles/storage.objectViewer` Cloud IAM roles on the Cloud Storage location.
     */
   var gcsSource: js.UndefOr[SchemaGoogleCloudHealthcareV1beta1DicomGcsSource] = js.undefined
 }

@@ -65,11 +65,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var legendIndex: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highmaps) A map data object containing a `path` definition and
-    * optionally additional properties to join in the data as per the `joinBy`
-    * option.
+    * (Highmaps) An array of objects containing a `geometry` or `path`
+    * definition and optionally additional properties to join in the `data` as
+    * per the `joinBy` option. GeoJSON and TopoJSON structures can also be
+    * passed directly into `mapData`.
     */
-  var mapData: js.UndefOr[js.Array[SeriesMapDataOptions] | js.Any] = js.undefined
+  var mapData: js.UndefOr[GeoJSON | TopoJSON | js.Array[SeriesMapDataOptions]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The name of the series as shown
@@ -129,7 +130,7 @@ object SeriesBoxplotOptions {
     
     inline def setDataVarargs(
       value: ((js.Tuple5[Double | String, Double, Double, Double, Double]) | (js.Tuple6[Double | String, Double, Double, Double, Double, Double]) | PointOptionsObject)*
-    ): Self = StObject.set(x, "data", js.Array(value :_*))
+    ): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -143,11 +144,11 @@ object SeriesBoxplotOptions {
     
     inline def setLegendIndexUndefined: Self = StObject.set(x, "legendIndex", js.undefined)
     
-    inline def setMapData(value: js.Array[SeriesMapDataOptions] | js.Any): Self = StObject.set(x, "mapData", value.asInstanceOf[js.Any])
+    inline def setMapData(value: GeoJSON | TopoJSON | js.Array[SeriesMapDataOptions]): Self = StObject.set(x, "mapData", value.asInstanceOf[js.Any])
     
     inline def setMapDataUndefined: Self = StObject.set(x, "mapData", js.undefined)
     
-    inline def setMapDataVarargs(value: SeriesMapDataOptions*): Self = StObject.set(x, "mapData", js.Array(value :_*))
+    inline def setMapDataVarargs(value: SeriesMapDataOptions*): Self = StObject.set(x, "mapData", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

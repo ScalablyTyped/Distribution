@@ -15,7 +15,7 @@ object babylonjsMeshesAbstractMeshAugmentingMod {
       * Backing filed
       * @hidden
       */
-    var __occlusionDataStorage: typings.babylonjs.engineOcclusionQueryMod.OcclusionDataStorage = js.native
+    var __occlusionDataStorage: typings.babylonjs.engineQueryMod.OcclusionDataStorage = js.native
     
     /** @hidden */
     var _disposePhysicsObserver: Nullable[typings.babylonjs.observableMod.Observer[typings.babylonjs.nodeMod.Node]] = js.native
@@ -24,7 +24,7 @@ object babylonjsMeshesAbstractMeshAugmentingMod {
       * Access property
       * @hidden
       */
-    var _occlusionDataStorage: typings.babylonjs.engineOcclusionQueryMod.OcclusionDataStorage = js.native
+    var _occlusionDataStorage: typings.babylonjs.engineQueryMod.OcclusionDataStorage = js.native
     
     /** @hidden */
     var _physicsImpostor: Nullable[typings.babylonjs.physicsImpostorMod.PhysicsImpostor] = js.native
@@ -75,6 +75,12 @@ object babylonjsMeshesAbstractMeshAugmentingMod {
     var edgesRenderer: Nullable[typings.babylonjs.edgesRendererMod.EdgesRenderer] = js.native
     
     /**
+      * Flag to force rendering the mesh even if occluded
+      * @see https://doc.babylonjs.com/features/occlusionquery
+      */
+    var forceRenderingWhenOccluded: Boolean = js.native
+    
+    /**
       * Gets the current physics impostor
       * @see https://doc.babylonjs.com/features/physics_engine
       * @returns a physics impostor or null
@@ -85,10 +91,10 @@ object babylonjsMeshesAbstractMeshAugmentingMod {
       * Object used to store instanced buffers defined by user
       * @see https://doc.babylonjs.com/how_to/how_to_use_instances#custom-buffers
       */
-    var instancedBuffers: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+    var instancedBuffers: org.scalablytyped.runtime.StringDictionary[Any] = js.native
     
     /**
-      * Gets or sets whether the mesh is occluded or not, it is used also to set the intial state of the mesh to be occluded or not
+      * Gets or sets whether the mesh is occluded or not, it is used also to set the initial state of the mesh to be occluded or not
       * @see https://doc.babylonjs.com/features/occlusionquery
       */
     var isOccluded: Boolean = js.native
@@ -108,7 +114,7 @@ object babylonjsMeshesAbstractMeshAugmentingMod {
     var occlusionQueryAlgorithmType: Double = js.native
     
     /**
-      * This number indicates the number of allowed retries before stop the occlusion query, this is useful if the occlusion query is taking long time before to the query result is retireved, the query result indicates if the object is visible within the scene or not and based on that Babylon.Js engine decideds to show or hide the object.
+      * This number indicates the number of allowed retries before stop the occlusion query, this is useful if the occlusion query is taking long time before to the query result is retrieved, the query result indicates if the object is visible within the scene or not and based on that Babylon.Js engine decides to show or hide the object.
       * The default value is -1 which means don't break the query and wait till the result
       * @see https://doc.babylonjs.com/features/occlusionquery
       */
@@ -116,7 +122,7 @@ object babylonjsMeshesAbstractMeshAugmentingMod {
     
     /**
       * This property is responsible for starting the occlusion query within the Mesh or not, this property is also used to determine what should happen when the occlusionRetryCount is reached. It has supports 3 values:
-      * * OCCLUSION_TYPE_NONE (Default Value): this option means no occlusion query whith the Mesh.
+      * * OCCLUSION_TYPE_NONE (Default Value): this option means no occlusion query within the Mesh.
       * * OCCLUSION_TYPE_OPTIMISTIC: this option is means use occlusion query and if occlusionRetryCount is reached and the query is broken show the mesh.
       * * OCCLUSION_TYPE_STRICT: this option is means use occlusion query and if occlusionRetryCount is reached and the query is broken restore the last state of the mesh occlusion if the mesh was visible then show the mesh if was hidden then hide don't show.
       * @see https://doc.babylonjs.com/features/occlusionquery
@@ -159,7 +165,7 @@ object babylonjsMeshesAbstractMeshAugmentingMod {
       otherMesh: typings.babylonjs.meshMod.Mesh,
       pivot1: typings.babylonjs.mathVectorMod.Vector3,
       pivot2: typings.babylonjs.mathVectorMod.Vector3,
-      options: js.Any
+      options: Any
     ): typings.babylonjs.physicsEngineComponentMod.babylonjsMeshesAbstractMeshAugmentingMod.AbstractMesh = js.native
     
     /**

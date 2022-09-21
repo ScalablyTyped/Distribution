@@ -10,10 +10,10 @@ object hotTubMod {
   
   @JSImport("material-ui/svg-icons/places/hot-tub", JSImport.Default)
   @js.native
-  class default () extends PlacesHotTub
+  open class default () extends PlacesHotTub
   
   @JSImport("material-ui/svg-icons/places/hot-tub", "PlacesHotTub")
   @js.native
-  class PlacesHotTub ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class PlacesHotTub ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

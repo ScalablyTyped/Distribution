@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TypeQueryNode
   extends StObject
-     with TypeNode {
+     with NodeWithTypeArguments {
   
   val exprName: EntityName = js.native
   

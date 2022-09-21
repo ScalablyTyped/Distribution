@@ -1,0 +1,29 @@
+package typings.openapiTypes.mod.OpenAPIV31
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* Rewritten from type alias, can be one of: 
+  - typings.openapiTypes.openapiTypesStrings.`null`
+  - typings.openapiTypes.openapiTypesStrings.boolean
+  - typings.openapiTypes.openapiTypesStrings.`object`
+  - typings.openapiTypes.openapiTypesStrings.number
+  - typings.openapiTypes.openapiTypesStrings.string
+  - typings.openapiTypes.openapiTypesStrings.integer
+*/
+trait NonArraySchemaObjectType extends StObject
+object NonArraySchemaObjectType {
+  
+  inline def boolean: typings.openapiTypes.openapiTypesStrings.boolean = "boolean".asInstanceOf[typings.openapiTypes.openapiTypesStrings.boolean]
+  
+  inline def integer: typings.openapiTypes.openapiTypesStrings.integer = "integer".asInstanceOf[typings.openapiTypes.openapiTypesStrings.integer]
+  
+  inline def `null`: typings.openapiTypes.openapiTypesStrings.`null` = "null".asInstanceOf[typings.openapiTypes.openapiTypesStrings.`null`]
+  
+  inline def number: typings.openapiTypes.openapiTypesStrings.number = "number".asInstanceOf[typings.openapiTypes.openapiTypesStrings.number]
+  
+  inline def `object`: typings.openapiTypes.openapiTypesStrings.`object` = "object".asInstanceOf[typings.openapiTypes.openapiTypesStrings.`object`]
+  
+  inline def string: typings.openapiTypes.openapiTypesStrings.string = "string".asInstanceOf[typings.openapiTypes.openapiTypesStrings.string]
+}

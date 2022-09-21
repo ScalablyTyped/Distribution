@@ -10,15 +10,12 @@ Durandal is a cross-device, cross-platform client framework written in JavaScrip
 | ------------------ | :-------------: |
 | Full name          | durandal |
 | Keywords           | durandal, jquery, knockout, requirejs, spa |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 32185 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2285.6666666666665 |
+| # stars            | 1.0 |
 
 ## Links
-- [Homepage](https://github.com/BlueSpire/Durandal-Bower#readme)
-- [Bugs](https://github.com/BlueSpire/Durandal-Bower/issues)
-- [Repository](https://github.com/BlueSpire/Durandal-Bower)
 - [Npm](https://www.npmjs.com/package/durandal)
     
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mapbox-gl", "DragRotateHandler")
 @js.native
-class DragRotateHandler protected () extends StObject {
+open class DragRotateHandler protected () extends StObject {
   def this(map: Map) = this()
   def this(map: Map, options: BearingSnap) = this()
   

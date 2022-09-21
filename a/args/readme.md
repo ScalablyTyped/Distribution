@@ -1,7 +1,7 @@
 
 # Scala.js typings for args
 
-Typings are for version 3.0
+Typings are for version 5.0
 
 ## Library description:
 Minimal toolkit for building CLIs
@@ -11,9 +11,9 @@ Minimal toolkit for building CLIs
 | Full name          | args |
 | Keywords           | cli, command, arguments, util, bin, commander, nanomist |
 | # releases         | 2 |
-| # dependents       | 381 |
-| # downloads        | 14561880 |
-| # stars            | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 7690221.0 |
+| # stars            | 422.0 |
 
 ## Links
 - [Homepage](https://github.com/leo/args#readme)

@@ -15,12 +15,12 @@ trait Polly extends PollyCustomizations {
   var config_Polly: ConfigBase & ClientConfiguration = js.native
   
   /**
-    * Deletes the specified pronunciation lexicon stored in an AWS Region. A lexicon which has been deleted is not available for speech synthesis, nor is it possible to retrieve it using either the GetLexicon or ListLexicon APIs. For more information, see Managing Lexicons.
+    * Deletes the specified pronunciation lexicon stored in an Amazon Web Services Region. A lexicon which has been deleted is not available for speech synthesis, nor is it possible to retrieve it using either the GetLexicon or ListLexicon APIs. For more information, see Managing Lexicons.
     */
   def deleteLexicon(): Request[DeleteLexiconOutput, AWSError] = js.native
   def deleteLexicon(callback: js.Function2[/* err */ AWSError, /* data */ DeleteLexiconOutput, Unit]): Request[DeleteLexiconOutput, AWSError] = js.native
   /**
-    * Deletes the specified pronunciation lexicon stored in an AWS Region. A lexicon which has been deleted is not available for speech synthesis, nor is it possible to retrieve it using either the GetLexicon or ListLexicon APIs. For more information, see Managing Lexicons.
+    * Deletes the specified pronunciation lexicon stored in an Amazon Web Services Region. A lexicon which has been deleted is not available for speech synthesis, nor is it possible to retrieve it using either the GetLexicon or ListLexicon APIs. For more information, see Managing Lexicons.
     */
   def deleteLexicon(params: DeleteLexiconInput): Request[DeleteLexiconOutput, AWSError] = js.native
   def deleteLexicon(
@@ -43,12 +43,12 @@ trait Polly extends PollyCustomizations {
   ): Request[DescribeVoicesOutput, AWSError] = js.native
   
   /**
-    * Returns the content of the specified pronunciation lexicon stored in an AWS Region. For more information, see Managing Lexicons.
+    * Returns the content of the specified pronunciation lexicon stored in an Amazon Web Services Region. For more information, see Managing Lexicons.
     */
   def getLexicon(): Request[GetLexiconOutput, AWSError] = js.native
   def getLexicon(callback: js.Function2[/* err */ AWSError, /* data */ GetLexiconOutput, Unit]): Request[GetLexiconOutput, AWSError] = js.native
   /**
-    * Returns the content of the specified pronunciation lexicon stored in an AWS Region. For more information, see Managing Lexicons.
+    * Returns the content of the specified pronunciation lexicon stored in an Amazon Web Services Region. For more information, see Managing Lexicons.
     */
   def getLexicon(params: GetLexiconInput): Request[GetLexiconOutput, AWSError] = js.native
   def getLexicon(
@@ -71,12 +71,12 @@ trait Polly extends PollyCustomizations {
   ): Request[GetSpeechSynthesisTaskOutput, AWSError] = js.native
   
   /**
-    * Returns a list of pronunciation lexicons stored in an AWS Region. For more information, see Managing Lexicons.
+    * Returns a list of pronunciation lexicons stored in an Amazon Web Services Region. For more information, see Managing Lexicons.
     */
   def listLexicons(): Request[ListLexiconsOutput, AWSError] = js.native
   def listLexicons(callback: js.Function2[/* err */ AWSError, /* data */ ListLexiconsOutput, Unit]): Request[ListLexiconsOutput, AWSError] = js.native
   /**
-    * Returns a list of pronunciation lexicons stored in an AWS Region. For more information, see Managing Lexicons.
+    * Returns a list of pronunciation lexicons stored in an Amazon Web Services Region. For more information, see Managing Lexicons.
     */
   def listLexicons(params: ListLexiconsInput): Request[ListLexiconsOutput, AWSError] = js.native
   def listLexicons(
@@ -99,12 +99,12 @@ trait Polly extends PollyCustomizations {
   ): Request[ListSpeechSynthesisTasksOutput, AWSError] = js.native
   
   /**
-    * Stores a pronunciation lexicon in an AWS Region. If a lexicon with the same name already exists in the region, it is overwritten by the new lexicon. Lexicon operations have eventual consistency, therefore, it might take some time before the lexicon is available to the SynthesizeSpeech operation. For more information, see Managing Lexicons.
+    * Stores a pronunciation lexicon in an Amazon Web Services Region. If a lexicon with the same name already exists in the region, it is overwritten by the new lexicon. Lexicon operations have eventual consistency, therefore, it might take some time before the lexicon is available to the SynthesizeSpeech operation. For more information, see Managing Lexicons.
     */
   def putLexicon(): Request[PutLexiconOutput, AWSError] = js.native
   def putLexicon(callback: js.Function2[/* err */ AWSError, /* data */ PutLexiconOutput, Unit]): Request[PutLexiconOutput, AWSError] = js.native
   /**
-    * Stores a pronunciation lexicon in an AWS Region. If a lexicon with the same name already exists in the region, it is overwritten by the new lexicon. Lexicon operations have eventual consistency, therefore, it might take some time before the lexicon is available to the SynthesizeSpeech operation. For more information, see Managing Lexicons.
+    * Stores a pronunciation lexicon in an Amazon Web Services Region. If a lexicon with the same name already exists in the region, it is overwritten by the new lexicon. Lexicon operations have eventual consistency, therefore, it might take some time before the lexicon is available to the SynthesizeSpeech operation. For more information, see Managing Lexicons.
     */
   def putLexicon(params: PutLexiconInput): Request[PutLexiconOutput, AWSError] = js.native
   def putLexicon(
@@ -113,12 +113,12 @@ trait Polly extends PollyCustomizations {
   ): Request[PutLexiconOutput, AWSError] = js.native
   
   /**
-    * Allows the creation of an asynchronous synthesis task, by starting a new SpeechSynthesisTask. This operation requires all the standard information needed for speech synthesis, plus the name of an Amazon S3 bucket for the service to store the output of the synthesis task and two optional parameters (OutputS3KeyPrefix and SnsTopicArn). Once the synthesis task is created, this operation will return a SpeechSynthesisTask object, which will include an identifier of this task as well as the current status.
+    * Allows the creation of an asynchronous synthesis task, by starting a new SpeechSynthesisTask. This operation requires all the standard information needed for speech synthesis, plus the name of an Amazon S3 bucket for the service to store the output of the synthesis task and two optional parameters (OutputS3KeyPrefix and SnsTopicArn). Once the synthesis task is created, this operation will return a SpeechSynthesisTask object, which will include an identifier of this task as well as the current status. The SpeechSynthesisTask object is available for 72 hours after starting the asynchronous synthesis task.
     */
   def startSpeechSynthesisTask(): Request[StartSpeechSynthesisTaskOutput, AWSError] = js.native
   def startSpeechSynthesisTask(callback: js.Function2[/* err */ AWSError, /* data */ StartSpeechSynthesisTaskOutput, Unit]): Request[StartSpeechSynthesisTaskOutput, AWSError] = js.native
   /**
-    * Allows the creation of an asynchronous synthesis task, by starting a new SpeechSynthesisTask. This operation requires all the standard information needed for speech synthesis, plus the name of an Amazon S3 bucket for the service to store the output of the synthesis task and two optional parameters (OutputS3KeyPrefix and SnsTopicArn). Once the synthesis task is created, this operation will return a SpeechSynthesisTask object, which will include an identifier of this task as well as the current status.
+    * Allows the creation of an asynchronous synthesis task, by starting a new SpeechSynthesisTask. This operation requires all the standard information needed for speech synthesis, plus the name of an Amazon S3 bucket for the service to store the output of the synthesis task and two optional parameters (OutputS3KeyPrefix and SnsTopicArn). Once the synthesis task is created, this operation will return a SpeechSynthesisTask object, which will include an identifier of this task as well as the current status. The SpeechSynthesisTask object is available for 72 hours after starting the asynchronous synthesis task.
     */
   def startSpeechSynthesisTask(params: StartSpeechSynthesisTaskInput): Request[StartSpeechSynthesisTaskOutput, AWSError] = js.native
   def startSpeechSynthesisTask(

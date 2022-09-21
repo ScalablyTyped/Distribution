@@ -8,7 +8,7 @@ trait ParagraphFormat2 extends StObject {
   
   var Alignment: MsoParagraphAlignment
   
-  val Application: js.Any
+  val Application: Any
   
   var BaselineAlignment: MsoBaselineAlignment
   
@@ -35,7 +35,7 @@ trait ParagraphFormat2 extends StObject {
   /* private */ @JSName("Office.ParagraphFormat2_typekey")
   var OfficeDotParagraphFormat2_typekey: ParagraphFormat2
   
-  val Parent: js.Any
+  val Parent: Any
   
   var RightIndent: Double
   
@@ -57,7 +57,7 @@ object ParagraphFormat2 {
   
   inline def apply(
     Alignment: MsoParagraphAlignment,
-    Application: js.Any,
+    Application: Any,
     BaselineAlignment: MsoBaselineAlignment,
     Bullet: BulletFormat2,
     Creator: Double,
@@ -70,7 +70,7 @@ object ParagraphFormat2 {
     LineRuleBefore: MsoTriState,
     LineRuleWithin: MsoTriState,
     OfficeDotParagraphFormat2_typekey: ParagraphFormat2,
-    Parent: js.Any,
+    Parent: Any,
     RightIndent: Double,
     SpaceAfter: Double,
     SpaceBefore: Double,
@@ -88,7 +88,7 @@ object ParagraphFormat2 {
     
     inline def setAlignment(value: MsoParagraphAlignment): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
     
-    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
     inline def setBaselineAlignment(value: MsoBaselineAlignment): Self = StObject.set(x, "BaselineAlignment", value.asInstanceOf[js.Any])
     
@@ -114,7 +114,7 @@ object ParagraphFormat2 {
     
     inline def setOfficeDotParagraphFormat2_typekey(value: ParagraphFormat2): Self = StObject.set(x, "Office.ParagraphFormat2_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRightIndent(value: Double): Self = StObject.set(x, "RightIndent", value.asInstanceOf[js.Any])
     

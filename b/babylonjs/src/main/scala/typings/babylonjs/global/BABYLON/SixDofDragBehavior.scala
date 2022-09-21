@@ -6,10 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.SixDofDragBehavior")
 @js.native
-/**
-  * Instantiates a behavior that when attached to a mesh will allow the mesh to be dragged around based on directions and origin of the pointer's ray
-  */
-class SixDofDragBehavior ()
+open class SixDofDragBehavior ()
   extends StObject
      with typings.babylonjs.BABYLON.SixDofDragBehavior {
   
@@ -35,16 +32,4 @@ class SixDofDragBehavior ()
   /** gets or sets behavior's name */
   /* CompleteClass */
   var name: String = js.native
-}
-/* static members */
-object SixDofDragBehavior {
-  
-  @JSGlobal("BABYLON.SixDofDragBehavior")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  @JSGlobal("BABYLON.SixDofDragBehavior._virtualScene")
-  @js.native
-  def _virtualScene: js.Any = js.native
-  inline def _virtualScene_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_virtualScene")(x.asInstanceOf[js.Any])
 }

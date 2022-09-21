@@ -24,7 +24,7 @@ object mod {
   @js.native
   trait Broker extends StObject {
     
-    def invokePublish(channelName: String, data: js.Any, suppressEvent: Boolean): js.Promise[Unit] = js.native
+    def invokePublish(channelName: String, data: Any, suppressEvent: Boolean): js.Promise[Unit] = js.native
     
     @JSName("listener")
     def listener_publish(eventName: publish): typings.consumableStream.mod.^[PublishData] = js.native

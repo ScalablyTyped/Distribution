@@ -8,7 +8,7 @@ object unitMod {
   
   @JSImport("sodiumjs/dist/typings/sodium/Unit", "Unit")
   @js.native
-  class Unit () extends StObject
+  open class Unit () extends StObject
   /* static members */
   object Unit {
     

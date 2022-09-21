@@ -16,7 +16,7 @@ object servicesPollyMod {
   /**
     * Creates a new service object with a configuration object.
     */
-  class PollyCustomizations () extends Service {
+  open class PollyCustomizations () extends Service {
     def this(config: ServiceConfigurationOptions) = this()
   }
   /* static members */

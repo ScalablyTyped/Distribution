@@ -11,11 +11,11 @@ trait StripeApplePay extends StObject {
     data: StripeApplePayPaymentRequest,
     onSuccessHandler: js.Function2[
       /* result */ StripeApplePaySessionResult, 
-      /* completion */ js.Function1[/* value */ js.Any, Unit], 
+      /* completion */ js.Function1[/* value */ Any, Unit], 
       Unit
     ],
     onErrorHanlder: js.Function1[/* error */ Message, Unit]
-  ): js.Any
+  ): Any
   
   def checkAvailability(resopnseHandler: js.Function1[/* result */ Boolean, Unit]): Unit
 }
@@ -24,9 +24,9 @@ object StripeApplePay {
   inline def apply(
     buildSession: (StripeApplePayPaymentRequest, js.Function2[
       /* result */ StripeApplePaySessionResult, 
-      /* completion */ js.Function1[/* value */ js.Any, Unit], 
+      /* completion */ js.Function1[/* value */ Any, Unit], 
       Unit
-    ], js.Function1[/* error */ Message, Unit]) => js.Any,
+    ], js.Function1[/* error */ Message, Unit]) => Any,
     checkAvailability: js.Function1[/* result */ Boolean, Unit] => Unit
   ): StripeApplePay = {
     val __obj = js.Dynamic.literal(buildSession = js.Any.fromFunction3(buildSession), checkAvailability = js.Any.fromFunction1(checkAvailability))
@@ -38,9 +38,9 @@ object StripeApplePay {
     inline def setBuildSession(
       value: (StripeApplePayPaymentRequest, js.Function2[
           /* result */ StripeApplePaySessionResult, 
-          /* completion */ js.Function1[/* value */ js.Any, Unit], 
+          /* completion */ js.Function1[/* value */ Any, Unit], 
           Unit
-        ], js.Function1[/* error */ Message, Unit]) => js.Any
+        ], js.Function1[/* error */ Message, Unit]) => Any
     ): Self = StObject.set(x, "buildSession", js.Any.fromFunction3(value))
     
     inline def setCheckAvailability(value: js.Function1[/* result */ Boolean, Unit] => Unit): Self = StObject.set(x, "checkAvailability", js.Any.fromFunction1(value))

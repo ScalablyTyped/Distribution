@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "inferno-compat" : "8.0.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "inferno-compat" : "8.0.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

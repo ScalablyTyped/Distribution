@@ -27,12 +27,12 @@ object ConditionalMergeTag {
     
     inline def setMergeTagsUndefined: Self = StObject.set(x, "mergeTags", js.undefined)
     
-    inline def setMergeTagsVarargs(value: SimpleMergeTag*): Self = StObject.set(x, "mergeTags", js.Array(value :_*))
+    inline def setMergeTagsVarargs(value: SimpleMergeTag*): Self = StObject.set(x, "mergeTags", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setRules(value: js.Array[ConditionalMergeTagRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    inline def setRulesVarargs(value: ConditionalMergeTagRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: ConditionalMergeTagRule*): Self = StObject.set(x, "rules", js.Array(value*))
   }
 }

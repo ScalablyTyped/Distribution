@@ -10,15 +10,15 @@ A client-side library to make absolutely positioned elements attach to elements 
 | ------------------ | :-------------: |
 | Full name          | tether |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 273 |
-| # downloads        | 11921499 |
-| # stars            | 23 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 823956.0 |
+| # stars            | 8464.0 |
 
 ## Links
-- [Homepage](https://github.com/HubSpot/tether#readme)
-- [Bugs](https://github.com/HubSpot/tether/issues)
-- [Repository](https://github.com/HubSpot/tether)
+- [Homepage](https://github.com/shipshapecode/tether#readme)
+- [Bugs](https://github.com/shipshapecode/tether/issues)
+- [Repository](https://github.com/shipshapecode/tether)
 - [Npm](https://www.npmjs.com/package/tether)
     
 

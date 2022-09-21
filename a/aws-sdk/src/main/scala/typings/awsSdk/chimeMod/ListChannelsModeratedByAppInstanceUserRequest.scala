@@ -12,6 +12,11 @@ trait ListChannelsModeratedByAppInstanceUserRequest extends StObject {
   var AppInstanceUserArn: js.UndefOr[ChimeArn] = js.undefined
   
   /**
+    * The AppInstanceUserArn of the user that makes the API call.
+    */
+  var ChimeBearer: js.UndefOr[ChimeArn] = js.undefined
+  
+  /**
     * The maximum number of channels in the request.
     */
   var MaxResults: js.UndefOr[typings.awsSdk.chimeMod.MaxResults] = js.undefined
@@ -33,6 +38,10 @@ object ListChannelsModeratedByAppInstanceUserRequest {
     inline def setAppInstanceUserArn(value: ChimeArn): Self = StObject.set(x, "AppInstanceUserArn", value.asInstanceOf[js.Any])
     
     inline def setAppInstanceUserArnUndefined: Self = StObject.set(x, "AppInstanceUserArn", js.undefined)
+    
+    inline def setChimeBearer(value: ChimeArn): Self = StObject.set(x, "ChimeBearer", value.asInstanceOf[js.Any])
+    
+    inline def setChimeBearerUndefined: Self = StObject.set(x, "ChimeBearer", js.undefined)
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

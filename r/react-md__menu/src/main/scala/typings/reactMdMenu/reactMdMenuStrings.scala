@@ -1,8 +1,5 @@
 package typings.reactMdMenu
 
-import typings.reactMdMenu.orientationMod.MenuOrientation
-import typings.reactMdMenu.useContextMenuMod.ProvidedPropNames
-import typings.reactMdMenu.useVisibilityMod.FocusType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,10 +23,12 @@ object reactMdMenuStrings {
   inline def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait anchor
-    extends StObject
-       with ProvidedPropNames
-  inline def anchor: anchor = "anchor".asInstanceOf[anchor]
+  sealed trait `aria-label` extends StObject
+  inline def `aria-label`: `aria-label` = "aria-label".asInstanceOf[`aria-label`]
+  
+  @js.native
+  sealed trait `aria-labelledby` extends StObject
+  inline def `aria-labelledby`: `aria-labelledby` = "aria-labelledby".asInstanceOf[`aria-labelledby`]
   
   @js.native
   sealed trait ascending extends StObject
@@ -44,14 +43,8 @@ object reactMdMenuStrings {
   inline def both: both = "both".asInstanceOf[both]
   
   @js.native
-  sealed trait button extends StObject
-  inline def button: button = "button".asInstanceOf[button]
-  
-  @js.native
-  sealed trait classNames
-    extends StObject
-       with ProvidedPropNames
-  inline def classNames: classNames = "classNames".asInstanceOf[classNames]
+  sealed trait children extends StObject
+  inline def children: children = "children".asInstanceOf[children]
   
   @js.native
   sealed trait copy extends StObject
@@ -74,24 +67,12 @@ object reactMdMenuStrings {
   inline def dialog: dialog = "dialog".asInstanceOf[dialog]
   
   @js.native
-  sealed trait disableControlClickOkay
-    extends StObject
-       with ProvidedPropNames
-  inline def disableControlClickOkay: disableControlClickOkay = "disableControlClickOkay".asInstanceOf[disableControlClickOkay]
-  
-  @js.native
   sealed trait email extends StObject
   inline def email: email = "email".asInstanceOf[email]
   
   @js.native
   sealed trait execute extends StObject
   inline def execute: execute = "execute".asInstanceOf[execute]
-  
-  @js.native
-  sealed trait first
-    extends StObject
-       with FocusType
-  inline def first: first = "first".asInstanceOf[first]
   
   @js.native
   sealed trait grammar extends StObject
@@ -102,15 +83,11 @@ object reactMdMenuStrings {
   inline def grid: grid = "grid".asInstanceOf[grid]
   
   @js.native
-  sealed trait horizontal
-    extends StObject
-       with MenuOrientation
+  sealed trait horizontal extends StObject
   inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
-  sealed trait id
-    extends StObject
-       with ProvidedPropNames
+  sealed trait id extends StObject
   inline def id: id = "id".asInstanceOf[id]
   
   @js.native
@@ -120,12 +97,6 @@ object reactMdMenuStrings {
   @js.native
   sealed trait `inline` extends StObject
   inline def `inline`: `inline` = "inline".asInstanceOf[`inline`]
-  
-  @js.native
-  sealed trait last
-    extends StObject
-       with FocusType
-  inline def last: last = "last".asInstanceOf[last]
   
   @js.native
   sealed trait link extends StObject
@@ -180,9 +151,7 @@ object reactMdMenuStrings {
   inline def on: on = "on".asInstanceOf[on]
   
   @js.native
-  sealed trait onRequestClose
-    extends StObject
-       with ProvidedPropNames
+  sealed trait onRequestClose extends StObject
   inline def onRequestClose: onRequestClose = "onRequestClose".asInstanceOf[onRequestClose]
   
   @js.native
@@ -194,18 +163,16 @@ object reactMdMenuStrings {
   inline def page: page = "page".asInstanceOf[page]
   
   @js.native
+  sealed trait phone extends StObject
+  inline def phone: phone = "phone".asInstanceOf[phone]
+  
+  @js.native
   sealed trait polite extends StObject
   inline def polite: polite = "polite".asInstanceOf[polite]
   
   @js.native
   sealed trait popup extends StObject
   inline def popup: popup = "popup".asInstanceOf[popup]
-  
-  @js.native
-  sealed trait positionOptions
-    extends StObject
-       with ProvidedPropNames
-  inline def positionOptions: positionOptions = "positionOptions".asInstanceOf[positionOptions]
   
   @js.native
   sealed trait removals extends StObject
@@ -220,16 +187,8 @@ object reactMdMenuStrings {
   inline def `removals text`: `removals text` = ("removals text").asInstanceOf[`removals text`]
   
   @js.native
-  sealed trait reset extends StObject
-  inline def reset: reset = "reset".asInstanceOf[reset]
-  
-  @js.native
   sealed trait search extends StObject
   inline def search: search = "search".asInstanceOf[search]
-  
-  @js.native
-  sealed trait separator extends StObject
-  inline def separator: separator = "separator".asInstanceOf[separator]
   
   @js.native
   sealed trait spelling extends StObject
@@ -238,10 +197,6 @@ object reactMdMenuStrings {
   @js.native
   sealed trait step extends StObject
   inline def step: step = "step".asInstanceOf[step]
-  
-  @js.native
-  sealed trait submit extends StObject
-  inline def submit: submit = "submit".asInstanceOf[submit]
   
   @js.native
   sealed trait tel extends StObject
@@ -268,23 +223,15 @@ object reactMdMenuStrings {
   inline def tree: tree = "tree".asInstanceOf[tree]
   
   @js.native
-  sealed trait `true` extends StObject
-  inline def `true`: `true` = "true".asInstanceOf[`true`]
-  
-  @js.native
   sealed trait url extends StObject
   inline def url: url = "url".asInstanceOf[url]
   
   @js.native
-  sealed trait vertical
-    extends StObject
-       with MenuOrientation
+  sealed trait vertical extends StObject
   inline def vertical: vertical = "vertical".asInstanceOf[vertical]
   
   @js.native
-  sealed trait visible
-    extends StObject
-       with ProvidedPropNames
+  sealed trait visible extends StObject
   inline def visible: visible = "visible".asInstanceOf[visible]
   
   @js.native

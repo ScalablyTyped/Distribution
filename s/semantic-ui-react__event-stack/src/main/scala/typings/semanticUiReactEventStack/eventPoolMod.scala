@@ -12,7 +12,7 @@ object eventPoolMod {
   
   @JSImport("@semantic-ui-react/event-stack/lib/types/lib/EventPool", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with EventPool {
     def this(poolName: String, handlerSets: Map[String, typings.semanticUiReactEventStack.eventSetMod.default]) = this()
@@ -34,12 +34,12 @@ object eventPoolMod {
     
     def dispatchEvent(eventType: String, event: Event): Unit = js.native
     
-    /* private */ val handlerSets: js.Any = js.native
+    /* private */ val handlerSets: Any = js.native
     
     def hasHandlers(): Boolean = js.native
     def hasHandlers(eventType: String): Boolean = js.native
     
-    /* private */ val poolName: js.Any = js.native
+    /* private */ val poolName: Any = js.native
     
     def removeHandlers(eventType: String, eventHandlers: EventListeners): EventPool = js.native
   }

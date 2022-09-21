@@ -24,17 +24,17 @@ trait Backup extends StObject {
   /**
     * The date and time when the backup was copied from a source backup.
     */
-  var CopyTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var CopyTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The date and time when the backup was created.
     */
-  var CreateTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var CreateTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The date and time when the backup will be permanently deleted.
     */
-  var DeleteTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var DeleteTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Specifies whether the service should exempt a backup from the retention policy for the cluster. True exempts a backup from the retention policy. False means the service applies the backup retention policy defined at the cluster.
@@ -80,15 +80,15 @@ object Backup {
     
     inline def setClusterIdUndefined: Self = StObject.set(x, "ClusterId", js.undefined)
     
-    inline def setCopyTimestamp(value: Timestamp): Self = StObject.set(x, "CopyTimestamp", value.asInstanceOf[js.Any])
+    inline def setCopyTimestamp(value: js.Date): Self = StObject.set(x, "CopyTimestamp", value.asInstanceOf[js.Any])
     
     inline def setCopyTimestampUndefined: Self = StObject.set(x, "CopyTimestamp", js.undefined)
     
-    inline def setCreateTimestamp(value: Timestamp): Self = StObject.set(x, "CreateTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreateTimestamp(value: js.Date): Self = StObject.set(x, "CreateTimestamp", value.asInstanceOf[js.Any])
     
     inline def setCreateTimestampUndefined: Self = StObject.set(x, "CreateTimestamp", js.undefined)
     
-    inline def setDeleteTimestamp(value: Timestamp): Self = StObject.set(x, "DeleteTimestamp", value.asInstanceOf[js.Any])
+    inline def setDeleteTimestamp(value: js.Date): Self = StObject.set(x, "DeleteTimestamp", value.asInstanceOf[js.Any])
     
     inline def setDeleteTimestampUndefined: Self = StObject.set(x, "DeleteTimestamp", js.undefined)
     
@@ -112,6 +112,6 @@ object Backup {
     
     inline def setTagListUndefined: Self = StObject.set(x, "TagList", js.undefined)
     
-    inline def setTagListVarargs(value: Tag*): Self = StObject.set(x, "TagList", js.Array(value :_*))
+    inline def setTagListVarargs(value: Tag*): Self = StObject.set(x, "TagList", js.Array(value*))
   }
 }

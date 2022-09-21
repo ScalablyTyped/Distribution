@@ -18,8 +18,8 @@ trait AuthError
 }
 object AuthError {
   
-  inline def apply(code: String, message: String): AuthError = {
-    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
+  inline def apply(code: String, message: String, name: String): AuthError = {
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthError]
   }
   

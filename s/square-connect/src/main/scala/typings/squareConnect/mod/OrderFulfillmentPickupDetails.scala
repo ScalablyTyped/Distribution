@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "OrderFulfillmentPickupDetails")
 @js.native
-class OrderFulfillmentPickupDetails () extends StObject {
+open class OrderFulfillmentPickupDetails () extends StObject {
   
   /**
     * The [timestamp](#workingwithdates) indicating when the fulfillment was accepted.

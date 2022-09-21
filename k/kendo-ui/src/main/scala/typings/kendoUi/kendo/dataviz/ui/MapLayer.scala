@@ -14,9 +14,9 @@ trait MapLayer extends StObject {
   
   var culture: js.UndefOr[String] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any | DataSource] = js.undefined
+  var dataSource: js.UndefOr[Any | DataSource] = js.undefined
   
-  var extent: js.UndefOr[js.Any | Extent] = js.undefined
+  var extent: js.UndefOr[Any | Extent] = js.undefined
   
   var imagerySet: js.UndefOr[String] = js.undefined
   
@@ -38,7 +38,7 @@ trait MapLayer extends StObject {
   
   var style: js.UndefOr[MapLayerStyle] = js.undefined
   
-  var subdomains: js.UndefOr[js.Any] = js.undefined
+  var subdomains: js.UndefOr[Any] = js.undefined
   
   var symbol: js.UndefOr[String | js.Function] = js.undefined
   
@@ -77,11 +77,11 @@ object MapLayer {
     
     inline def setCultureUndefined: Self = StObject.set(x, "culture", js.undefined)
     
-    inline def setDataSource(value: js.Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
-    inline def setExtent(value: js.Any | Extent): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
+    inline def setExtent(value: Any | Extent): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
     
     inline def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
     
@@ -125,7 +125,7 @@ object MapLayer {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setSubdomains(value: js.Any): Self = StObject.set(x, "subdomains", value.asInstanceOf[js.Any])
+    inline def setSubdomains(value: Any): Self = StObject.set(x, "subdomains", value.asInstanceOf[js.Any])
     
     inline def setSubdomainsUndefined: Self = StObject.set(x, "subdomains", js.undefined)
     

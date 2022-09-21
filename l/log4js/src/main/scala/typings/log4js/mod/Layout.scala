@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.log4js.mod.BaseLayout
+  - typings.log4js.mod.BasicLayout
   - typings.log4js.mod.ColoredLayout
   - typings.log4js.mod.MessagePassThroughLayout
   - typings.log4js.mod.DummyLayout
@@ -17,10 +17,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Layout extends StObject
 object Layout {
   
-  inline def BaseLayout(): typings.log4js.mod.BaseLayout = {
+  inline def BasicLayout(): typings.log4js.mod.BasicLayout = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("basic")
-    __obj.asInstanceOf[typings.log4js.mod.BaseLayout]
+    __obj.asInstanceOf[typings.log4js.mod.BasicLayout]
   }
   
   inline def ColoredLayout(`type`: colored | coloured): typings.log4js.mod.ColoredLayout = {

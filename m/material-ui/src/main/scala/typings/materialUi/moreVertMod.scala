@@ -10,10 +10,10 @@ object moreVertMod {
   
   @JSImport("material-ui/svg-icons/navigation/more-vert", JSImport.Default)
   @js.native
-  class default () extends NavigationMoreVert
+  open class default () extends NavigationMoreVert
   
   @JSImport("material-ui/svg-icons/navigation/more-vert", "NavigationMoreVert")
   @js.native
-  class NavigationMoreVert ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NavigationMoreVert ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

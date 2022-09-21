@@ -21,7 +21,7 @@ object mod {
     */
   @JSImport("twitter-stream-channels", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with TwitterStreamChannels {
     /**
@@ -58,7 +58,7 @@ object mod {
   
   @JSImport("twitter-stream-channels", "StreamChannels")
   @js.native
-  class StreamChannels protected () extends EventEmitter {
+  open class StreamChannels protected () extends EventEmitter {
     /**
       * @see https://github.com/topheman/twitter-stream-channels/blob/master/lib/StreamChannels.js#L25
       */

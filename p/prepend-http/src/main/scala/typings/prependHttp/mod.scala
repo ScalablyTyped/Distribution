@@ -6,33 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  /**
-  Prepend `https://` to humanized URLs like `sindresorhus.com` and `localhost`.
-  @param url - URL to prepend `https://` to.
-  @example
-  ```
-  import prependHttp = require('prepend-http');
-  prependHttp('sindresorhus.com');
-  //=> 'https://sindresorhus.com'
-  prependHttp('localhost', {https: false});
-  //=> 'http://localhost'
-  prependHttp('https://sindresorhus.com');
-  //=> 'https://sindresorhus.com'
-  ```
-  */
-  inline def apply(url: String): String = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def apply(url: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  
   @JSImport("prepend-http", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
+  inline def default(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(url.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(url: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   trait Options extends StObject {
     
     /**
-    		Prepend `https://` instead of `http://`.
-    		@default true
-    		*/
+    	Prepend `https://` instead of `http://`.
+    	@default true
+    	*/
     val https: js.UndefOr[Boolean] = js.undefined
   }
   object Options {

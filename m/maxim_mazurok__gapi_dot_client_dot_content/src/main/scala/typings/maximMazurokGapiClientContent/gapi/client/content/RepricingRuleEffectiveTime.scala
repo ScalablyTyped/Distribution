@@ -22,6 +22,6 @@ object RepricingRuleEffectiveTime {
     
     inline def setFixedTimePeriodsUndefined: Self = StObject.set(x, "fixedTimePeriods", js.undefined)
     
-    inline def setFixedTimePeriodsVarargs(value: RepricingRuleEffectiveTimeFixedTimePeriod*): Self = StObject.set(x, "fixedTimePeriods", js.Array(value :_*))
+    inline def setFixedTimePeriodsVarargs(value: RepricingRuleEffectiveTimeFixedTimePeriod*): Self = StObject.set(x, "fixedTimePeriods", js.Array(value*))
   }
 }

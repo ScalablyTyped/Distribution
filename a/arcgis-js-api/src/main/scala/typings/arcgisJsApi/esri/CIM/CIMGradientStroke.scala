@@ -12,7 +12,7 @@ trait CIMGradientStroke
   /**
     * The color scheme that is applied to the stroke.
     */
-  var colorRamp: js.UndefOr[js.Any] = js.undefined
+  var colorRamp: js.UndefOr[Any] = js.undefined
   
   /**
     * How the gradient is applied along the stroke.
@@ -58,7 +58,7 @@ object CIMGradientStroke {
   
   extension [Self <: CIMGradientStroke](x: Self) {
     
-    inline def setColorRamp(value: js.Any): Self = StObject.set(x, "colorRamp", value.asInstanceOf[js.Any])
+    inline def setColorRamp(value: Any): Self = StObject.set(x, "colorRamp", value.asInstanceOf[js.Any])
     
     inline def setColorRampUndefined: Self = StObject.set(x, "colorRamp", js.undefined)
     

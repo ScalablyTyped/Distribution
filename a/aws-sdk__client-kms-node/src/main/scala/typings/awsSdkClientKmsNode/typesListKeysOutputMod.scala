@@ -49,7 +49,7 @@ object typesListKeysOutputMod {
       
       inline def setKeysUndefined: Self = StObject.set(x, "Keys", js.undefined)
       
-      inline def setKeysVarargs(value: UnmarshalledKeyListEntry*): Self = StObject.set(x, "Keys", js.Array(value :_*))
+      inline def setKeysVarargs(value: UnmarshalledKeyListEntry*): Self = StObject.set(x, "Keys", js.Array(value*))
       
       inline def setNextMarker(value: String): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
       

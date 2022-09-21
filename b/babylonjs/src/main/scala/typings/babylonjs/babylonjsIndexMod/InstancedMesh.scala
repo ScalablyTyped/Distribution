@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Meshes/index", "InstancedMesh")
 @js.native
-class InstancedMesh protected ()
+open class InstancedMesh protected ()
   extends typings.babylonjs.instancedMeshMod.InstancedMesh {
   def this(name: String, source: typings.babylonjs.meshMod.Mesh) = this()
 }

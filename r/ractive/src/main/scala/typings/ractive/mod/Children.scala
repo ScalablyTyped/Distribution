@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Children
   extends StObject
-     with Array[Ractive[Ractive[js.Any]]] {
+     with Array[Ractive[Ractive[Any]]] {
   
-  /** Lists of instances targetting anchors by name. */
-  var byName: StringDictionary[js.Array[Ractive[Ractive[js.Any]]]] = js.native
+  /** Lists of instances targeting anchors by name. */
+  var byName: StringDictionary[js.Array[Ractive[Ractive[Any]]]] = js.native
 }

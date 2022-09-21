@@ -34,7 +34,7 @@ object XDialog {
     endExecute: () => Unit,
     execute: () => Double,
     getTitle: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setTitle: String => Unit
   ): XDialog = {

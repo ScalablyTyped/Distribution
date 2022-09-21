@@ -17,7 +17,7 @@ object renderingManagerMod {
   
   @JSImport("babylonjs/Rendering/renderingManager", "RenderingGroupInfo")
   @js.native
-  class RenderingGroupInfo () extends StObject {
+  open class RenderingGroupInfo () extends StObject {
     
     /**
       * The camera currently used for the rendering pass
@@ -37,32 +37,32 @@ object renderingManagerMod {
   
   @JSImport("babylonjs/Rendering/renderingManager", "RenderingManager")
   @js.native
-  class RenderingManager protected () extends StObject {
+  open class RenderingManager protected () extends StObject {
     /**
       * Instantiates a new rendering group for a particular scene
       * @param scene Defines the scene the groups belongs to
       */
     def this(scene: Scene) = this()
     
-    /* private */ var _autoClearDepthStencil: js.Any = js.native
+    /* private */ var _autoClearDepthStencil: Any = js.native
     
-    /* private */ var _clearDepthStencilBuffer: js.Any = js.native
+    /* private */ var _clearDepthStencilBuffer: Any = js.native
     
-    /* private */ var _customAlphaTestSortCompareFn: js.Any = js.native
+    /* private */ var _customAlphaTestSortCompareFn: Any = js.native
     
-    /* private */ var _customOpaqueSortCompareFn: js.Any = js.native
+    /* private */ var _customOpaqueSortCompareFn: Any = js.native
     
-    /* private */ var _customTransparentSortCompareFn: js.Any = js.native
+    /* private */ var _customTransparentSortCompareFn: Any = js.native
     
-    /* private */ var _depthStencilBufferAlreadyCleaned: js.Any = js.native
+    /* private */ var _depthStencilBufferAlreadyCleaned: Any = js.native
     
-    /* private */ var _prepareRenderingGroup: js.Any = js.native
+    /* private */ var _prepareRenderingGroup: Any = js.native
     
-    /* private */ var _renderingGroupInfo: js.Any = js.native
+    /* private */ var _renderingGroupInfo: Any = js.native
     
-    /* private */ var _renderingGroups: js.Any = js.native
+    /* private */ var _renderingGroups: Any = js.native
     
-    /* private */ var _scene: js.Any = js.native
+    /* private */ var _scene: Any = js.native
     
     /**
       * @hidden
@@ -112,7 +112,11 @@ object renderingManagerMod {
     def getAutoClearDepthStencilSetup(index: Double): IRenderingManagerAutoClearSetup = js.native
     
     /**
-      * Renders the entire managed groups. This is used by the scene or the different rennder targets.
+      * Renders the entire managed groups. This is used by the scene or the different render targets.
+      * @param customRenderFunction
+      * @param activeMeshes
+      * @param renderParticles
+      * @param renderSprites
       * @hidden
       */
     def render(
@@ -150,8 +154,8 @@ object renderingManagerMod {
     def setRenderingAutoClearDepthStencil(renderingGroupId: Double, autoClearDepthStencil: Boolean, depth: Unit, stencil: Boolean): Unit = js.native
     
     /**
-      * Overrides the default sort function applied in the renderging group to prepare the meshes.
-      * This allowed control for front to back rendering or reversly depending of the special needs.
+      * Overrides the default sort function applied in the rendering group to prepare the meshes.
+      * This allowed control for front to back rendering or reversely depending of the special needs.
       *
       * @param renderingGroupId The rendering group id corresponding to its index
       * @param opaqueSortCompareFn The opaque queue comparison function use to sort.

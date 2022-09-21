@@ -5,11 +5,17 @@ import typings.std.Event
 import typings.twineSugarcube.anon.Count
 import typings.twineSugarcube.anon.Get
 import typings.twineSugarcube.extensionsMod.global.Array
+import typings.twineSugarcube.twineSugarcubeStrings.autosave
+import typings.twineSugarcube.twineSugarcubeStrings.disk
+import typings.twineSugarcube.twineSugarcubeStrings.serialize
+import typings.twineSugarcube.twineSugarcubeStrings.slot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object saveMod {
+  
+  type LoadHandler = js.Function1[/* save */ SaveObject, Unit]
   
   @js.native
   trait SaveAPI extends StObject {
@@ -28,7 +34,7 @@ object saveMod {
       * @param saveStr The serialized save string.
       * @since 2.21.0
       */
-    def deserialize(saveStr: String): js.Any = js.native
+    def deserialize(saveStr: String): Any = js.native
     
     /**
       * Saves to disk.
@@ -40,8 +46,8 @@ object saveMod {
       */
     def `export`(): Unit = js.native
     def `export`(filename: String): Unit = js.native
-    def `export`(filename: String, metadata: js.Any): Unit = js.native
-    def `export`(filename: Unit, metadata: js.Any): Unit = js.native
+    def `export`(filename: String, metadata: Any): Unit = js.native
+    def `export`(filename: Unit, metadata: Any): Unit = js.native
     
     /**
       * Returns the saves object.
@@ -73,15 +79,107 @@ object saveMod {
     def ok(): Boolean = js.native
     
     /**
+      * Performs any required processing before the save data is loaded — e.g., upgrading
+      * out-of-date save data. The handler is passed one parameter, the save object to be
+      * processed. If it encounters an unrecoverable problem during its processing, it may
+      * throw an exception containing an error message; the message will be displayed to
+      * the player and loading of the save will be terminated.
+      * @since 2.36.0
+      */
+    var onLoad: SaveEventAPI[LoadHandler] = js.native
+    
+    /**
+      * Performs any required processing before the save data is saved. The handlers is passed
+      * two parameters, the save object to be processed and save operation details object.
+      * @since 2.36.0
+      */
+    var onSave: SaveEventAPI[SaveHandler] = js.native
+    
+    /**
       * Returns a save as a serialized string, or null if saving is not allowed within the current context.
       * @param metadata The data to be stored as metadata. Must be JSON-serializable.
       * @since 2.21.0
       */
     def serialize(): String = js.native
-    def serialize(metadata: js.Any): String = js.native
+    def serialize(metadata: Any): String = js.native
     
     var slots: Count = js.native
   }
+  
+  trait SaveDetails extends StObject {
+    
+    /**
+      * A string representing how the save operation came about — i.e., what caused it.
+      */
+    var `type`: autosave | disk | serialize | slot
+  }
+  object SaveDetails {
+    
+    inline def apply(`type`: autosave | disk | serialize | slot): SaveDetails = {
+      val __obj = js.Dynamic.literal()
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SaveDetails]
+    }
+    
+    extension [Self <: SaveDetails](x: Self) {
+      
+      inline def setType(value: autosave | disk | serialize | slot): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait SaveEventAPI[HandlerType] extends StObject {
+    
+    /**
+      * Add new handler
+      * @param handler
+      */
+    def add(handler: HandlerType): Unit
+    
+    /**
+      * Deletes all currently registered handlers.
+      */
+    def clear(): Unit
+    
+    /**
+      * Deletes the specified handler.
+      * @param handler The handler function to be deleted.
+      * @returns `true` if the handler existed or `false` if not.
+      * @example
+      * // Given:
+      * // let myOnLoadHandler = function (save) {
+      * //    // code to process the save object before it's loaded
+      * // };
+      * // Save.onLoad.add(myOnLoadHandler);
+      *
+      * Save.onLoad.delete(myOnLoadHandler);
+      */
+    def delete(handler: HandlerType): Boolean
+    
+    /**
+      * Returns the number of currently registered handlers.
+      */
+    var size: Double
+  }
+  object SaveEventAPI {
+    
+    inline def apply[HandlerType](add: HandlerType => Unit, clear: () => Unit, delete: HandlerType => Boolean, size: Double): SaveEventAPI[HandlerType] = {
+      val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), clear = js.Any.fromFunction0(clear), delete = js.Any.fromFunction1(delete), size = size.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SaveEventAPI[HandlerType]]
+    }
+    
+    extension [Self <: SaveEventAPI[?], HandlerType](x: Self & SaveEventAPI[HandlerType]) {
+      
+      inline def setAdd(value: HandlerType => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+      
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      
+      inline def setDelete(value: HandlerType => Boolean): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
+      
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type SaveHandler = js.Function2[/* save */ SaveObject, /* details */ SaveDetails, Unit]
   
   trait SaveObject extends StObject {
     
@@ -92,7 +190,7 @@ object saveMod {
     var id: String
     
     /** Save metadata(end - user specified; must be JSON - serializable). */
-    var metadata: js.UndefOr[js.Any] = js.undefined
+    var metadata: js.UndefOr[Any] = js.undefined
     
     /** The marshaled story history(see below for details). */
     var state: SavedState
@@ -101,7 +199,7 @@ object saveMod {
     var title: String
     
     /** Save version(end - user specified via Config.saves.version). */
-    var version: js.UndefOr[js.Any] = js.undefined
+    var version: js.UndefOr[Any] = js.undefined
   }
   object SaveObject {
     
@@ -116,7 +214,7 @@ object saveMod {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
       inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
@@ -124,7 +222,7 @@ object saveMod {
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      inline def setVersion(value: js.Any): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Any): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
       inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
@@ -139,11 +237,11 @@ object saveMod {
     var title: String
     
     /** The current variable store object, which contains sigil - less name ⇒ value pairs(e.g.$foo exists as foo). */
-    var variables: StringDictionary[js.Any]
+    var variables: StringDictionary[Any]
   }
   object SavedMoment {
     
-    inline def apply(title: String, variables: StringDictionary[js.Any]): SavedMoment = {
+    inline def apply(title: String, variables: StringDictionary[Any]): SavedMoment = {
       val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
       __obj.asInstanceOf[SavedMoment]
     }
@@ -156,7 +254,7 @@ object saveMod {
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      inline def setVariables(value: StringDictionary[js.Any]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+      inline def setVariables(value: StringDictionary[Any]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     }
   }
   

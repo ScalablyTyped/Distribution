@@ -32,7 +32,7 @@ object mod extends Shortcut {
   @JSImport("atom-keymap", JSImport.Namespace)
   @js.native
   /** Create a new KeymapManager. */
-  class ^ ()
+  open class ^ ()
     extends StObject
        with KeymapManager {
     def this(options: DefaultTarget) = this()
@@ -108,7 +108,7 @@ object mod extends Shortcut {
         @js.native
         trait CommandEvent
           extends StObject
-             with CustomEvent[js.Any] {
+             with CustomEvent[Any] {
           
           def abortKeyBinding(): Unit = js.native
           
@@ -235,7 +235,7 @@ object mod extends Shortcut {
             
             inline def setPartiallyMatchedBindings(value: js.Array[KeyBinding]): Self = StObject.set(x, "partiallyMatchedBindings", value.asInstanceOf[js.Any])
             
-            inline def setPartiallyMatchedBindingsVarargs(value: KeyBinding*): Self = StObject.set(x, "partiallyMatchedBindings", js.Array(value :_*))
+            inline def setPartiallyMatchedBindingsVarargs(value: KeyBinding*): Self = StObject.set(x, "partiallyMatchedBindings", js.Array(value*))
           }
         }
       }
@@ -299,7 +299,7 @@ object mod extends Shortcut {
           
           inline def setKeystrokeArray(value: js.Array[String]): Self = StObject.set(x, "keystrokeArray", value.asInstanceOf[js.Any])
           
-          inline def setKeystrokeArrayVarargs(value: String*): Self = StObject.set(x, "keystrokeArray", js.Array(value :_*))
+          inline def setKeystrokeArrayVarargs(value: String*): Self = StObject.set(x, "keystrokeArray", js.Array(value*))
           
           inline def setKeystrokeCount(value: Double): Self = StObject.set(x, "keystrokeCount", value.asInstanceOf[js.Any])
           

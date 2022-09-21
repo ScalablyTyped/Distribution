@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui", "ToolbarGroup")
 @js.native
-class ToolbarGroup ()
-  extends Component[ToolbarGroupProps, js.Object, js.Any]
+open class ToolbarGroup ()
+  extends Component[ToolbarGroupProps, js.Object, Any]

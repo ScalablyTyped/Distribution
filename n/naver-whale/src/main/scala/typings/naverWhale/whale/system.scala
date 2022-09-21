@@ -56,7 +56,7 @@ object system {
         
         inline def setFeatures(value: js.Array[String]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
         
-        inline def setFeaturesVarargs(value: String*): Self = StObject.set(x, "features", js.Array(value :_*))
+        inline def setFeaturesVarargs(value: String*): Self = StObject.set(x, "features", js.Array(value*))
         
         inline def setModelName(value: String): Self = StObject.set(x, "modelName", value.asInstanceOf[js.Any])
         
@@ -64,7 +64,7 @@ object system {
         
         inline def setProcessors(value: js.Array[typings.chrome.chrome.system.cpu.ProcessorInfo]): Self = StObject.set(x, "processors", value.asInstanceOf[js.Any])
         
-        inline def setProcessorsVarargs(value: typings.chrome.chrome.system.cpu.ProcessorInfo*): Self = StObject.set(x, "processors", js.Array(value :_*))
+        inline def setProcessorsVarargs(value: typings.chrome.chrome.system.cpu.ProcessorInfo*): Self = StObject.set(x, "processors", js.Array(value*))
       }
     }
     

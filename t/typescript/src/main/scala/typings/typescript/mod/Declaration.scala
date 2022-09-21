@@ -9,5 +9,5 @@ trait Declaration
   extends StObject
      with Node {
   
-  var _declarationBrand: js.Any = js.native
+  var _declarationBrand: Any = js.native
 }

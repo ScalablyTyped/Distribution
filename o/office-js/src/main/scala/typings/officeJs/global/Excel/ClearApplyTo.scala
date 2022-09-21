@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * [Api set: ExcelApi 1.1 for All/Formats/Contents, 1.7 for Hyperlinks & HyperlinksAndFormats.]
+  * @remarks
+  * [Api set: ExcelApi 1.1]
   */
 @JSGlobal("Excel.ClearApplyTo")
 @js.native

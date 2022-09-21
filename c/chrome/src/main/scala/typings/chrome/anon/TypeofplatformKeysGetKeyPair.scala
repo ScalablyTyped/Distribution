@@ -4,7 +4,6 @@ import typings.chrome.chrome.platformKeys.ClientCertificateSelectDetails
 import typings.chrome.chrome.platformKeys.Match
 import typings.chrome.chrome.platformKeys.ServerCertificateVerificationDetails
 import typings.chrome.chrome.platformKeys.ServerCertificateVerificationResult
-import typings.std.ArrayBuffer
 import typings.std.CryptoKey
 import typings.std.SubtleCrypto
 import org.scalablytyped.runtime.StObject
@@ -14,13 +13,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TypeofplatformKeysGetKeyPair extends StObject {
   
   def getKeyPair(
-    certificate: ArrayBuffer,
+    certificate: js.typedarray.ArrayBuffer,
     parameters: js.Object,
     callback: js.Function2[/* publicKey */ CryptoKey, /* privateKey */ CryptoKey | Null, Unit]
   ): Unit
   
   def getKeyPairBySpki(
-    publicKeySpkiDer: ArrayBuffer,
+    publicKeySpkiDer: js.typedarray.ArrayBuffer,
     parameters: js.Object,
     callback: js.Function2[/* publicKey */ CryptoKey, /* privateKey */ CryptoKey | Null, Unit]
   ): Unit
@@ -40,8 +39,8 @@ trait TypeofplatformKeysGetKeyPair extends StObject {
 object TypeofplatformKeysGetKeyPair {
   
   inline def apply(
-    getKeyPair: (ArrayBuffer, js.Object, js.Function2[/* publicKey */ CryptoKey, /* privateKey */ CryptoKey | Null, Unit]) => Unit,
-    getKeyPairBySpki: (ArrayBuffer, js.Object, js.Function2[/* publicKey */ CryptoKey, /* privateKey */ CryptoKey | Null, Unit]) => Unit,
+    getKeyPair: (js.typedarray.ArrayBuffer, js.Object, js.Function2[/* publicKey */ CryptoKey, /* privateKey */ CryptoKey | Null, Unit]) => Unit,
+    getKeyPairBySpki: (js.typedarray.ArrayBuffer, js.Object, js.Function2[/* publicKey */ CryptoKey, /* privateKey */ CryptoKey | Null, Unit]) => Unit,
     selectClientCertificates: (ClientCertificateSelectDetails, js.Function1[/* matches */ js.Array[Match], Unit]) => Unit,
     subtleCrypto: () => SubtleCrypto,
     verifyTLSServerCertificate: (ServerCertificateVerificationDetails, js.Function1[/* result */ ServerCertificateVerificationResult, Unit]) => Unit
@@ -53,11 +52,11 @@ object TypeofplatformKeysGetKeyPair {
   extension [Self <: TypeofplatformKeysGetKeyPair](x: Self) {
     
     inline def setGetKeyPair(
-      value: (ArrayBuffer, js.Object, js.Function2[/* publicKey */ CryptoKey, /* privateKey */ CryptoKey | Null, Unit]) => Unit
+      value: (js.typedarray.ArrayBuffer, js.Object, js.Function2[/* publicKey */ CryptoKey, /* privateKey */ CryptoKey | Null, Unit]) => Unit
     ): Self = StObject.set(x, "getKeyPair", js.Any.fromFunction3(value))
     
     inline def setGetKeyPairBySpki(
-      value: (ArrayBuffer, js.Object, js.Function2[/* publicKey */ CryptoKey, /* privateKey */ CryptoKey | Null, Unit]) => Unit
+      value: (js.typedarray.ArrayBuffer, js.Object, js.Function2[/* publicKey */ CryptoKey, /* privateKey */ CryptoKey | Null, Unit]) => Unit
     ): Self = StObject.set(x, "getKeyPairBySpki", js.Any.fromFunction3(value))
     
     inline def setSelectClientCertificates(value: (ClientCertificateSelectDetails, js.Function1[/* matches */ js.Array[Match], Unit]) => Unit): Self = StObject.set(x, "selectClientCertificates", js.Any.fromFunction2(value))

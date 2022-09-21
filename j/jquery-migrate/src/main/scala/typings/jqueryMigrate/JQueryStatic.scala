@@ -85,7 +85,7 @@ object JQueryStatic {
     
     inline def setMigrateWarnings(value: js.Array[String]): Self = StObject.set(x, "migrateWarnings", value.asInstanceOf[js.Any])
     
-    inline def setMigrateWarningsVarargs(value: String*): Self = StObject.set(x, "migrateWarnings", js.Array(value :_*))
+    inline def setMigrateWarningsVarargs(value: String*): Self = StObject.set(x, "migrateWarnings", js.Array(value*))
     
     inline def setUNSAFE_restoreLegacyHtmlPrefilter(value: () => Unit): Self = StObject.set(x, "UNSAFE_restoreLegacyHtmlPrefilter", js.Any.fromFunction0(value))
   }

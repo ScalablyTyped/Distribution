@@ -7,26 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-material-ui", "BottomNavigation")
 @js.native
-class BottomNavigation protected ()
-  extends Component[BottomNavigationProps, js.Any, js.Any] {
+open class BottomNavigation protected () extends Component[BottomNavigationProps, Any, Any] {
   def this(props: BottomNavigationProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: BottomNavigationProps, context: js.Any) = this()
+  def this(props: BottomNavigationProps, context: Any) = this()
 }
 object BottomNavigation {
   
   @JSImport("react-native-material-ui", "BottomNavigation.Action")
   @js.native
-  class Action protected ()
-    extends Component[BottomNavigationAction, js.Any, js.Any] {
+  open class Action protected () extends Component[BottomNavigationAction, Any, Any] {
     def this(props: BottomNavigationAction) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: BottomNavigationAction, context: js.Any) = this()
+    def this(props: BottomNavigationAction, context: Any) = this()
   }
 }

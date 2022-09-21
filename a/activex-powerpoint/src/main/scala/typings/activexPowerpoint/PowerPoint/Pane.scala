@@ -13,7 +13,7 @@ trait Pane extends StObject {
   
   val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.Pane_typekey")
   var PowerPointDotPane_typekey: Pane
@@ -26,7 +26,7 @@ object Pane {
     Activate: () => Unit,
     Active: MsoTriState,
     Application: Application,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotPane_typekey: Pane,
     ViewType: PpViewType
   ): Pane = {
@@ -43,7 +43,7 @@ object Pane {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotPane_typekey(value: Pane): Self = StObject.set(x, "PowerPoint.Pane_typekey", value.asInstanceOf[js.Any])
     

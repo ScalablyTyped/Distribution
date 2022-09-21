@@ -16,4 +16,4 @@ trait OauthErrorStatic
   * @option {String} [error_description] A description of the error.
   * @constructor
   */
-Instantiable1[/* options */ OauthErrorOptions, typings.asana.mod.auth.OauthError]
+Instantiable1[/* options */ OauthErrorOptions, js.Error]

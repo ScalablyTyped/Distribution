@@ -1,8 +1,6 @@
 package typings.npmLicenseCrawler
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.npmLicenseCrawler.anon.LicenseUrl
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +13,7 @@ object mod {
   
   inline def dumpLicenses(args: CrawlerOptions, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dumpLicenses")(args.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  type Callback = js.Function2[/* error */ Error | Null, /* licenses */ Licenses, Unit]
+  type Callback = js.Function2[/* error */ js.Error | Null, /* licenses */ Licenses, Unit]
   
   trait CrawlerOptions extends StObject {
     
@@ -33,6 +31,9 @@ object mod {
     
     /** export data as JSON to the given file. The path will be created if it does not exist. */
     var json: js.UndefOr[String] = js.undefined
+    
+    /** don't show colors in the console output */
+    var noColor: js.UndefOr[Boolean] = js.undefined
     
     /** omit version numbers in result (e.g. "npm-license-crawler@0.1.5" becomes "npm-license-crawler") */
     var omitVersion: js.UndefOr[Boolean] = js.undefined
@@ -77,11 +78,15 @@ object mod {
       
       inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value*))
       
       inline def setJson(value: String): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
       inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
+      
+      inline def setNoColor(value: Boolean): Self = StObject.set(x, "noColor", value.asInstanceOf[js.Any])
+      
+      inline def setNoColorUndefined: Self = StObject.set(x, "noColor", js.undefined)
       
       inline def setOmitVersion(value: Boolean): Self = StObject.set(x, "omitVersion", value.asInstanceOf[js.Any])
       
@@ -101,7 +106,7 @@ object mod {
       
       inline def setStart(value: String | js.Array[String]): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      inline def setStartVarargs(value: String*): Self = StObject.set(x, "start", js.Array(value :_*))
+      inline def setStartVarargs(value: String*): Self = StObject.set(x, "start", js.Array(value*))
       
       inline def setUnknown(value: Boolean): Self = StObject.set(x, "unknown", value.asInstanceOf[js.Any])
       
@@ -109,5 +114,34 @@ object mod {
     }
   }
   
-  type Licenses = StringDictionary[LicenseUrl]
+  trait License extends StObject {
+    
+    var licenseUrl: String
+    
+    var licenses: String
+    
+    var parents: String
+    
+    var repository: String
+  }
+  object License {
+    
+    inline def apply(licenseUrl: String, licenses: String, parents: String, repository: String): License = {
+      val __obj = js.Dynamic.literal(licenseUrl = licenseUrl.asInstanceOf[js.Any], licenses = licenses.asInstanceOf[js.Any], parents = parents.asInstanceOf[js.Any], repository = repository.asInstanceOf[js.Any])
+      __obj.asInstanceOf[License]
+    }
+    
+    extension [Self <: License](x: Self) {
+      
+      inline def setLicenseUrl(value: String): Self = StObject.set(x, "licenseUrl", value.asInstanceOf[js.Any])
+      
+      inline def setLicenses(value: String): Self = StObject.set(x, "licenses", value.asInstanceOf[js.Any])
+      
+      inline def setParents(value: String): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
+      
+      inline def setRepository(value: String): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type Licenses = StringDictionary[License]
 }

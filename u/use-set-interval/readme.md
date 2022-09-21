@@ -10,13 +10,13 @@ A React Hook (using useEffect) which uses window.setInterval().
 | ------------------ | :-------------: |
 | Full name          | use-set-interval |
 | Keywords           | react, hook, hooks, react-hook, react-hooks |
-| # releases         | 14 |
-| # dependents       | 0 |
-| # downloads        | 2052 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 336.0 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://reacthooks.org/use-set-interval)
+- [Homepage](https://gitlab.com/chilts/reacthooks#readme)
 - [Bugs](https://gitlab.com/chilts/reacthooks/issues)
 - [Repository](https://gitlab.com/chilts/reacthooks)
 - [Npm](https://www.npmjs.com/package/use-set-interval)

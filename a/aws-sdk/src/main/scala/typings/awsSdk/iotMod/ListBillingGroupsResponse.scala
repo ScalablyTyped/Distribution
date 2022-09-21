@@ -29,7 +29,7 @@ object ListBillingGroupsResponse {
     
     inline def setBillingGroupsUndefined: Self = StObject.set(x, "billingGroups", js.undefined)
     
-    inline def setBillingGroupsVarargs(value: GroupNameAndArn*): Self = StObject.set(x, "billingGroups", js.Array(value :_*))
+    inline def setBillingGroupsVarargs(value: GroupNameAndArn*): Self = StObject.set(x, "billingGroups", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

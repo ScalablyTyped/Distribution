@@ -19,7 +19,7 @@ trait ImportanceRuleCondition extends StObject {
   /* private */ @JSName("Outlook.ImportanceRuleCondition_typekey")
   var OutlookDotImportanceRuleCondition_typekey: ImportanceRuleCondition
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Session: NameSpace
 }
@@ -32,7 +32,7 @@ object ImportanceRuleCondition {
     Enabled: Boolean,
     Importance: OlImportance,
     OutlookDotImportanceRuleCondition_typekey: ImportanceRuleCondition,
-    Parent: js.Any,
+    Parent: Any,
     Session: NameSpace
   ): ImportanceRuleCondition = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Class = Class.asInstanceOf[js.Any], ConditionType = ConditionType.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any], Importance = Importance.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Session = Session.asInstanceOf[js.Any])
@@ -54,7 +54,7 @@ object ImportanceRuleCondition {
     
     inline def setOutlookDotImportanceRuleCondition_typekey(value: ImportanceRuleCondition): Self = StObject.set(x, "Outlook.ImportanceRuleCondition_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }

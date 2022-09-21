@@ -10,7 +10,7 @@ object logoutMod {
   
   @JSImport("ionic/commands/logout", "LogoutCommand")
   @js.native
-  class LogoutCommand protected () extends Command {
+  open class LogoutCommand protected () extends Command {
     def this(namespace: INamespace) = this()
   }
 }

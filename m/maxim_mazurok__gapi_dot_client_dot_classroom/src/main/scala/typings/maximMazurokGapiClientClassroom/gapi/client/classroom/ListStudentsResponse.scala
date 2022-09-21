@@ -29,6 +29,6 @@ object ListStudentsResponse {
     
     inline def setStudentsUndefined: Self = StObject.set(x, "students", js.undefined)
     
-    inline def setStudentsVarargs(value: Student*): Self = StObject.set(x, "students", js.Array(value :_*))
+    inline def setStudentsVarargs(value: Student*): Self = StObject.set(x, "students", js.Array(value*))
   }
 }

@@ -46,7 +46,7 @@ object ListChangeSetsRequest {
     
     inline def setFilterListUndefined: Self = StObject.set(x, "FilterList", js.undefined)
     
-    inline def setFilterListVarargs(value: Filter*): Self = StObject.set(x, "FilterList", js.Array(value :_*))
+    inline def setFilterListVarargs(value: Filter*): Self = StObject.set(x, "FilterList", js.Array(value*))
     
     inline def setMaxResults(value: MaxResultInteger): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

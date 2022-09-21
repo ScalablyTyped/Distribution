@@ -141,7 +141,7 @@ object configMod {
       
       inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
       
-      inline def setAliasVarargs(value: (Identifiable & AliasOptions)*): Self = StObject.set(x, "alias", js.Array(value :_*))
+      inline def setAliasVarargs(value: (Identifiable & AliasOptions)*): Self = StObject.set(x, "alias", js.Array(value*))
       
       inline def setDefault(
         value: /* import warning: importer.ImportType#apply Failed type conversion: this['defaultSource'] */ js.Any
@@ -183,7 +183,7 @@ object configMod {
       
       inline def setFontsUndefined: Self = StObject.set(x, "fonts", js.undefined)
       
-      inline def setFontsVarargs(value: (Identifiable & CssIconSetOptions)*): Self = StObject.set(x, "fonts", js.Array(value :_*))
+      inline def setFontsVarargs(value: (Identifiable & CssIconSetOptions)*): Self = StObject.set(x, "fonts", js.Array(value*))
       
       inline def setIcon(
         value: /* import warning: importer.ImportType#apply Failed type conversion: this['icons'] */ js.Any
@@ -207,7 +207,7 @@ object configMod {
       
       inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
       
-      inline def setIconsVarargs(value: (Identifiable & (ImageIconOptions | SvgIconOptions))*): Self = StObject.set(x, "icons", js.Array(value :_*))
+      inline def setIconsVarargs(value: (Identifiable & (ImageIconOptions | SvgIconOptions))*): Self = StObject.set(x, "icons", js.Array(value*))
       
       inline def setSourceAlias(
         value: /* import warning: importer.ImportType#apply Failed type conversion: this['alias'] */ js.Any
@@ -225,7 +225,7 @@ object configMod {
       
       inline def setSpritesUndefined: Self = StObject.set(x, "sprites", js.undefined)
       
-      inline def setSpritesVarargs(value: (Identifiable & CssIconSetOptions)*): Self = StObject.set(x, "sprites", js.Array(value :_*))
+      inline def setSpritesVarargs(value: (Identifiable & CssIconSetOptions)*): Self = StObject.set(x, "sprites", js.Array(value*))
       
       inline def setSvgSet(
         value: /* import warning: importer.ImportType#apply Failed type conversion: this['svgSets'] */ js.Any
@@ -237,7 +237,7 @@ object configMod {
       
       inline def setSvgSetsUndefined: Self = StObject.set(x, "svgSets", js.undefined)
       
-      inline def setSvgSetsVarargs(value: (Identifiable & (SvgIconSetOptions | SvgCumulativeIconSetOptions))*): Self = StObject.set(x, "svgSets", js.Array(value :_*))
+      inline def setSvgSetsVarargs(value: (Identifiable & (SvgIconSetOptions | SvgCumulativeIconSetOptions))*): Self = StObject.set(x, "svgSets", js.Array(value*))
     }
   }
 }

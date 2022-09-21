@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      ".svgo-SsALBlVy" : "2.8.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      ".svgo-SsALBlVy" : "2.8.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

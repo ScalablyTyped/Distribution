@@ -1,18 +1,22 @@
 package typings.fluentuiReactComponentEventListener
 
+import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.DOMContentLoaded
 import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.abort
 import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.animationcancel
 import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.animationend
 import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.animationiteration
 import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.animationstart
 import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.auxclick
+import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.beforeinput
 import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.blur
-import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.cancel
 import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.canplay
 import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.canplaythrough
 import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.change
 import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.click
 import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.close
+import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.compositionend
+import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.compositionstart
+import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.compositionupdate
 import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.contextmenu
 import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.copy
 import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.cuechange
@@ -21,7 +25,6 @@ import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventLi
 import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.drag
 import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.dragend
 import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.dragenter
-import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.dragexit
 import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.dragleave
 import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.dragover
 import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.dragstart
@@ -33,6 +36,7 @@ import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventLi
 import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.focus
 import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.focusin
 import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.focusout
+import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.formdata
 import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.fullscreenchange
 import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.fullscreenerror
 import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.gotpointercapture
@@ -79,6 +83,7 @@ import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventLi
 import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.select
 import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.selectionchange
 import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.selectstart
+import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.slotchange
 import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.stalled
 import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.submit
 import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.suspend
@@ -95,6 +100,10 @@ import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventLi
 import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.visibilitychange
 import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.volumechange
 import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.waiting
+import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.webkitanimationend
+import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.webkitanimationiteration
+import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.webkitanimationstart
+import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.webkittransitionend
 import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventListenerStrings.wheel
 import typings.fluentuiReactComponentEventListener.typesMod.EventListenerOptions
 import org.scalablytyped.runtime.StObject
@@ -107,7 +116,7 @@ object eventListenerMod {
     
     inline def apply(
       props: EventListenerOptions[
-          abort | animationcancel | animationend | animationiteration | animationstart | auxclick | blur | cancel | canplay | canplaythrough | change | click | close | contextmenu | copy | cuechange | cut | dblclick | drag | dragend | dragenter | dragexit | dragleave | dragover | dragstart | drop | durationchange | emptied | ended | error | focus | focusin | focusout | fullscreenchange | fullscreenerror | gotpointercapture | input | invalid | keydown | keypress | keyup | load | loadeddata | loadedmetadata | loadstart | lostpointercapture | mousedown | mouseenter | mouseleave | mousemove | mouseout | mouseover | mouseup | paste | pause | play | playing | pointercancel | pointerdown | pointerenter | pointerleave | pointerlockchange | pointerlockerror | pointermove | pointerout | pointerover | pointerup | progress | ratechange | readystatechange | reset | resize | scroll | securitypolicyviolation | seeked | seeking | select | selectionchange | selectstart | stalled | submit | suspend | timeupdate | toggle | touchcancel | touchend | touchmove | touchstart | transitioncancel | transitionend | transitionrun | transitionstart | visibilitychange | volumechange | waiting | wheel
+          DOMContentLoaded | abort | animationcancel | animationend | animationiteration | animationstart | auxclick | beforeinput | blur | canplay | canplaythrough | change | click | close | compositionend | compositionstart | compositionupdate | contextmenu | copy | cuechange | cut | dblclick | drag | dragend | dragenter | dragleave | dragover | dragstart | drop | durationchange | emptied | ended | error | focus | focusin | focusout | formdata | fullscreenchange | fullscreenerror | gotpointercapture | input | invalid | keydown | keypress | keyup | load | loadeddata | loadedmetadata | loadstart | lostpointercapture | mousedown | mouseenter | mouseleave | mousemove | mouseout | mouseover | mouseup | paste | pause | play | playing | pointercancel | pointerdown | pointerenter | pointerleave | pointerlockchange | pointerlockerror | pointermove | pointerout | pointerover | pointerup | progress | ratechange | readystatechange | reset | resize | scroll | securitypolicyviolation | seeked | seeking | select | selectionchange | selectstart | slotchange | stalled | submit | suspend | timeupdate | toggle | touchcancel | touchend | touchmove | touchstart | transitioncancel | transitionend | transitionrun | transitionstart | visibilitychange | volumechange | waiting | webkitanimationend | webkitanimationiteration | webkitanimationstart | webkittransitionend | wheel
         ]
     ): Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Null]
     

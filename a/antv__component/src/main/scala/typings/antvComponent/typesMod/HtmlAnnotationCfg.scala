@@ -21,7 +21,7 @@ trait HtmlAnnotationCfg
   var alignY: js.UndefOr[top | middle | bottom] = js.undefined
   
   /** 自定义 html */
-  var html: String | HTMLElement | (js.Function1[/* container */ HTMLElement, Unit | String | HTMLElement])
+  var html: String | Double | HTMLElement | (js.Function1[/* container */ HTMLElement, Unit | String | Double | HTMLElement])
   
   /** zIndex 设置 */
   var zIndex: js.UndefOr[Double] = js.undefined
@@ -29,7 +29,7 @@ trait HtmlAnnotationCfg
 object HtmlAnnotationCfg {
   
   inline def apply(
-    html: String | HTMLElement | (js.Function1[/* container */ HTMLElement, Unit | String | HTMLElement])
+    html: String | Double | HTMLElement | (js.Function1[/* container */ HTMLElement, Unit | String | Double | HTMLElement])
   ): HtmlAnnotationCfg = {
     val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any])
     __obj.asInstanceOf[HtmlAnnotationCfg]
@@ -46,10 +46,10 @@ object HtmlAnnotationCfg {
     inline def setAlignYUndefined: Self = StObject.set(x, "alignY", js.undefined)
     
     inline def setHtml(
-      value: String | HTMLElement | (js.Function1[/* container */ HTMLElement, Unit | String | HTMLElement])
+      value: String | Double | HTMLElement | (js.Function1[/* container */ HTMLElement, Unit | String | Double | HTMLElement])
     ): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
-    inline def setHtmlFunction1(value: /* container */ HTMLElement => Unit | String | HTMLElement): Self = StObject.set(x, "html", js.Any.fromFunction1(value))
+    inline def setHtmlFunction1(value: /* container */ HTMLElement => Unit | String | Double | HTMLElement): Self = StObject.set(x, "html", js.Any.fromFunction1(value))
     
     inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     

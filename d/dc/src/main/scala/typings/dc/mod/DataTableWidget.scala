@@ -14,10 +14,10 @@ trait DataTableWidget
   @JSName("beginSlice")
   var beginSlice_Original: IGetSet[Double, DataTableWidget] = js.native
   
-  def columns(): js.Array[String | (Accessor[js.Any, js.Any]) | Columns] = js.native
-  def columns(t: js.Array[String | (Accessor[js.Any, js.Any]) | Columns]): DataTableWidget = js.native
+  def columns(): js.Array[String | (Accessor[Any, Any]) | Columns] = js.native
+  def columns(t: js.Array[String | (Accessor[Any, Any]) | Columns]): DataTableWidget = js.native
   @JSName("columns")
-  var columns_Original: IGetSet[js.Array[String | (Accessor[js.Any, js.Any]) | Columns], DataTableWidget] = js.native
+  var columns_Original: IGetSet[js.Array[String | (Accessor[Any, Any]) | Columns], DataTableWidget] = js.native
   
   def endSlice(): Double = js.native
   def endSlice(t: Double): DataTableWidget = js.native
@@ -44,8 +44,8 @@ trait DataTableWidget
   @JSName("size")
   var size_Original: IGetSet[Double, DataTableWidget] = js.native
   
-  def sortBy(): Accessor[js.Any, js.Any] = js.native
-  def sortBy(t: Accessor[js.Any, js.Any]): DataTableWidget = js.native
+  def sortBy(): Accessor[Any, Any] = js.native
+  def sortBy(t: Accessor[Any, Any]): DataTableWidget = js.native
   @JSName("sortBy")
-  var sortBy_Original: IGetSet[Accessor[js.Any, js.Any], DataTableWidget] = js.native
+  var sortBy_Original: IGetSet[Accessor[Any, Any], DataTableWidget] = js.native
 }

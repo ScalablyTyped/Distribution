@@ -1,10 +1,13 @@
 package typings.sipJs.mod
 
+import typings.sipJs.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def name: /* "sip.js" */ java.lang.String = typings.sipJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("name").asInstanceOf[/* "sip.js" */ java.lang.String]
+inline def equivalentURI(a: typings.sipJs.uriMod.URI, b: typings.sipJs.uriMod.URI): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equivalentURI")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 
-inline def version: /* "0.17.1" */ java.lang.String = typings.sipJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[/* "0.17.1" */ java.lang.String]
+inline def name: /* "sip.js" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("name").asInstanceOf[/* "sip.js" */ String]
+
+inline def version: /* "0.20.0" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[/* "0.20.0" */ String]

@@ -13,8 +13,8 @@ trait LodashMap extends StObject {
   
   def apply(iteratee: String): LodashMap5x1 = js.native
   def apply(iteratee: js.Object): LodashMap6x1 = js.native
-  def apply[T](iteratee: String, collection: Dictionary[T]): js.Array[js.Any] = js.native
-  def apply[T](iteratee: String, collection: NumericDictionary[T]): js.Array[js.Any] = js.native
+  def apply[T](iteratee: String, collection: Dictionary[T]): js.Array[Any] = js.native
+  def apply[T](iteratee: String, collection: NumericDictionary[T]): js.Array[Any] = js.native
   def apply[T](iteratee: js.Object, collection: Dictionary[T]): js.Array[Boolean] = js.native
   def apply[T](iteratee: js.Object, collection: NumericDictionary[T]): js.Array[Boolean] = js.native
   def apply[T /* <: js.Object */](iteratee: __): LodashMap3x2[T] = js.native

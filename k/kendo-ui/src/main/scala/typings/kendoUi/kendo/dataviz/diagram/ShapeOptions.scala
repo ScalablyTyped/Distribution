@@ -63,7 +63,7 @@ object ShapeOptions {
     
     inline def setConnectorsUndefined: Self = StObject.set(x, "connectors", js.undefined)
     
-    inline def setConnectorsVarargs(value: ShapeConnector*): Self = StObject.set(x, "connectors", js.Array(value :_*))
+    inline def setConnectorsVarargs(value: ShapeConnector*): Self = StObject.set(x, "connectors", js.Array(value*))
     
     inline def setContent(value: ShapeContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

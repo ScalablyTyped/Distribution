@@ -36,4 +36,11 @@ trait Search
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-Search.html#layers)
     */
   var layers: Collection[SearchLayer] = js.native
+  
+  /**
+    * A collection of tables to be included in search.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-Search.html#tables)
+    */
+  var tables: Collection[SearchTable] = js.native
 }

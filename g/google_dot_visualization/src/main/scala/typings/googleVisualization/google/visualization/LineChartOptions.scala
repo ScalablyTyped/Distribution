@@ -1,7 +1,6 @@
 package typings.googleVisualization.google.visualization
 
 import org.scalablytyped.runtime.NumberDictionary
-import typings.googleVisualization.anon.Style
 import typings.googleVisualization.anon.Type
 import typings.googleVisualization.googleVisualizationStrings.function
 import typings.googleVisualization.googleVisualizationStrings.none
@@ -49,9 +48,9 @@ trait LineChartOptions extends StObject {
   
   var interpolateNulls: js.UndefOr[Boolean] = js.undefined
   
-  var interval: js.UndefOr[js.Any] = js.undefined
+  var interval: js.UndefOr[Any] = js.undefined
   
-  var intervals: js.UndefOr[Style] = js.undefined
+  var intervals: js.UndefOr[Intervals] = js.undefined
   
   var legend: js.UndefOr[ChartLegend | none] = js.undefined
   
@@ -85,7 +84,7 @@ trait LineChartOptions extends StObject {
   
   var trendlines: js.UndefOr[NumberDictionary[ChartTrendlineOptions]] = js.undefined
   
-  var vAxes: js.UndefOr[js.Any] = js.undefined
+  var vAxes: js.UndefOr[Any] = js.undefined
   
   var vAxis: js.UndefOr[ChartAxis] = js.undefined
   
@@ -128,7 +127,7 @@ object LineChartOptions {
     
     inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value*))
     
     inline def setCrosshair(value: ChartCrosshair): Self = StObject.set(x, "crosshair", value.asInstanceOf[js.Any])
     
@@ -178,11 +177,11 @@ object LineChartOptions {
     
     inline def setInterpolateNullsUndefined: Self = StObject.set(x, "interpolateNulls", js.undefined)
     
-    inline def setInterval(value: js.Any): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Any): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
     inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
-    inline def setIntervals(value: Style): Self = StObject.set(x, "intervals", value.asInstanceOf[js.Any])
+    inline def setIntervals(value: Intervals): Self = StObject.set(x, "intervals", value.asInstanceOf[js.Any])
     
     inline def setIntervalsUndefined: Self = StObject.set(x, "intervals", js.undefined)
     
@@ -226,7 +225,7 @@ object LineChartOptions {
     
     inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
-    inline def setSeriesVarargs(value: LineChartSeriesOptions*): Self = StObject.set(x, "series", js.Array(value :_*))
+    inline def setSeriesVarargs(value: LineChartSeriesOptions*): Self = StObject.set(x, "series", js.Array(value*))
     
     inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
@@ -252,7 +251,7 @@ object LineChartOptions {
     
     inline def setTrendlinesUndefined: Self = StObject.set(x, "trendlines", js.undefined)
     
-    inline def setVAxes(value: js.Any): Self = StObject.set(x, "vAxes", value.asInstanceOf[js.Any])
+    inline def setVAxes(value: Any): Self = StObject.set(x, "vAxes", value.asInstanceOf[js.Any])
     
     inline def setVAxesUndefined: Self = StObject.set(x, "vAxes", js.undefined)
     

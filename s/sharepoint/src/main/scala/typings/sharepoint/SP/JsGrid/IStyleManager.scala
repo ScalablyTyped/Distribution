@@ -20,13 +20,13 @@ trait IStyleManager extends StObject {
   
   def UpdateDefaultCellStyleFromCss(styleObject: Cell, cssClass: String): Unit
   
-  def UpdateGridPaneStyleFromCss(styleObject: GridPane, gridStyleNameCollection: js.Any): Unit
+  def UpdateGridPaneStyleFromCss(styleObject: GridPane, gridStyleNameCollection: Any): Unit
   
   def UpdateGroupStylesFromCss(styleObject: Cell, prefix: String): Unit
   
-  def UpdateHeaderStyleFromCss(styleObject: Header, headerStyleNameCol: js.Any): Unit
+  def UpdateHeaderStyleFromCss(styleObject: Header, headerStyleNameCol: Any): Unit
   
-  def UpdateSplitterStyleFromCss(styleObject: Splitter, splitterStyleNameCollection: js.Any): Unit
+  def UpdateSplitterStyleFromCss(styleObject: Splitter, splitterStyleNameCollection: Any): Unit
   
   var columnHeaderStyleCollection: AllSelected
   
@@ -34,7 +34,7 @@ trait IStyleManager extends StObject {
   
   var gridPaneStyle: GridPane
   
-  var groupingStyles: js.Array[js.Any]
+  var groupingStyles: js.Array[Any]
   
   var readOnlyCellStyle: Cell
   
@@ -58,14 +58,14 @@ object IStyleManager {
     GetCellStyle: String => Cell,
     RegisterCellStyle: (String, Cell) => Unit,
     UpdateDefaultCellStyleFromCss: (Cell, String) => Unit,
-    UpdateGridPaneStyleFromCss: (GridPane, js.Any) => Unit,
+    UpdateGridPaneStyleFromCss: (GridPane, Any) => Unit,
     UpdateGroupStylesFromCss: (Cell, String) => Unit,
-    UpdateHeaderStyleFromCss: (Header, js.Any) => Unit,
-    UpdateSplitterStyleFromCss: (Splitter, js.Any) => Unit,
+    UpdateHeaderStyleFromCss: (Header, Any) => Unit,
+    UpdateSplitterStyleFromCss: (Splitter, Any) => Unit,
     columnHeaderStyleCollection: AllSelected,
     defaultCellStyle: Cell,
     gridPaneStyle: GridPane,
-    groupingStyles: js.Array[js.Any],
+    groupingStyles: js.Array[Any],
     readOnlyCellStyle: Cell,
     readOnlyFocusedCellStyle: Cell,
     rowHeaderStyleCollection: AllSelected,
@@ -89,9 +89,9 @@ object IStyleManager {
     
     inline def setGridPaneStyle(value: GridPane): Self = StObject.set(x, "gridPaneStyle", value.asInstanceOf[js.Any])
     
-    inline def setGroupingStyles(value: js.Array[js.Any]): Self = StObject.set(x, "groupingStyles", value.asInstanceOf[js.Any])
+    inline def setGroupingStyles(value: js.Array[Any]): Self = StObject.set(x, "groupingStyles", value.asInstanceOf[js.Any])
     
-    inline def setGroupingStylesVarargs(value: js.Any*): Self = StObject.set(x, "groupingStyles", js.Array(value :_*))
+    inline def setGroupingStylesVarargs(value: Any*): Self = StObject.set(x, "groupingStyles", js.Array(value*))
     
     inline def setReadOnlyCellStyle(value: Cell): Self = StObject.set(x, "readOnlyCellStyle", value.asInstanceOf[js.Any])
     
@@ -107,13 +107,13 @@ object IStyleManager {
     
     inline def setUpdateDefaultCellStyleFromCss(value: (Cell, String) => Unit): Self = StObject.set(x, "UpdateDefaultCellStyleFromCss", js.Any.fromFunction2(value))
     
-    inline def setUpdateGridPaneStyleFromCss(value: (GridPane, js.Any) => Unit): Self = StObject.set(x, "UpdateGridPaneStyleFromCss", js.Any.fromFunction2(value))
+    inline def setUpdateGridPaneStyleFromCss(value: (GridPane, Any) => Unit): Self = StObject.set(x, "UpdateGridPaneStyleFromCss", js.Any.fromFunction2(value))
     
     inline def setUpdateGroupStylesFromCss(value: (Cell, String) => Unit): Self = StObject.set(x, "UpdateGroupStylesFromCss", js.Any.fromFunction2(value))
     
-    inline def setUpdateHeaderStyleFromCss(value: (Header, js.Any) => Unit): Self = StObject.set(x, "UpdateHeaderStyleFromCss", js.Any.fromFunction2(value))
+    inline def setUpdateHeaderStyleFromCss(value: (Header, Any) => Unit): Self = StObject.set(x, "UpdateHeaderStyleFromCss", js.Any.fromFunction2(value))
     
-    inline def setUpdateSplitterStyleFromCss(value: (Splitter, js.Any) => Unit): Self = StObject.set(x, "UpdateSplitterStyleFromCss", js.Any.fromFunction2(value))
+    inline def setUpdateSplitterStyleFromCss(value: (Splitter, Any) => Unit): Self = StObject.set(x, "UpdateSplitterStyleFromCss", js.Any.fromFunction2(value))
     
     inline def setWidgetDockHoverStyle(value: Widget): Self = StObject.set(x, "widgetDockHoverStyle", value.asInstanceOf[js.Any])
     

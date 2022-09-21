@@ -791,7 +791,7 @@ object app {
   trait WindowParams
     extends StObject
        with AppWindow
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var existingWindow: js.UndefOr[Boolean] = js.native
     
@@ -900,7 +900,7 @@ object app {
         
         inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        inline def setItemsVarargs(value: LaunchDataItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: LaunchDataItem*): Self = StObject.set(x, "items", js.Array(value*))
         
         inline def setReferrerUrl(value: String): Self = StObject.set(x, "referrerUrl", value.asInstanceOf[js.Any])
         

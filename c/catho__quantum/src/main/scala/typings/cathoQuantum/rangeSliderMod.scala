@@ -1,6 +1,6 @@
 package typings.cathoQuantum
 
-import typings.cathoQuantum.anon.BaseFontSizeColors
+import typings.cathoQuantum.anon.BaseFontSizeColorsSpacing
 import typings.cathoQuantum.anon.From
 import typings.cathoQuantum.anon.LabelValue
 import typings.cathoQuantum.cathoQuantumBooleans.`false`
@@ -21,10 +21,10 @@ object rangeSliderMod {
   
   @JSImport("@catho/quantum/RangeSlider", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[RangeSliderProps, js.Object, js.Any]
+  open class default ()
+    extends Component[RangeSliderProps, js.Object, Any]
   
-  type RangeSlider = Component[RangeSliderProps, js.Object, js.Any]
+  type RangeSlider = Component[RangeSliderProps, js.Object, Any]
   
   trait RangeSliderProps extends StObject {
     
@@ -46,7 +46,7 @@ object rangeSliderMod {
     
     var step: js.UndefOr[Double] = js.undefined
     
-    var theme: js.UndefOr[BaseFontSizeColors] = js.undefined
+    var theme: js.UndefOr[BaseFontSizeColorsSpacing] = js.undefined
     
     var tipFormatter: js.UndefOr[
         js.Function2[/* value */ js.UndefOr[Double], /* index */ js.UndefOr[Double], String]
@@ -83,7 +83,7 @@ object rangeSliderMod {
       
       inline def setMarksUndefined: Self = StObject.set(x, "marks", js.undefined)
       
-      inline def setMarksVarargs(value: LabelValue*): Self = StObject.set(x, "marks", js.Array(value :_*))
+      inline def setMarksVarargs(value: LabelValue*): Self = StObject.set(x, "marks", js.Array(value*))
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -105,7 +105,7 @@ object rangeSliderMod {
       
       inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
       
-      inline def setTheme(value: BaseFontSizeColors): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: BaseFontSizeColorsSpacing): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
       inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       

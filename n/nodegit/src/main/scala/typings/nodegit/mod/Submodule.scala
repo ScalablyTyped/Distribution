@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "Submodule")
 @js.native
-class Submodule ()
+open class Submodule ()
   extends typings.nodegit.submoduleMod.Submodule
 /* static members */
 object Submodule {

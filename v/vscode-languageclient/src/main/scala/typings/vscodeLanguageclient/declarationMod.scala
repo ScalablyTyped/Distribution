@@ -2,12 +2,13 @@ package typings.vscodeLanguageclient
 
 import typings.vscode.mod.Declaration
 import typings.vscode.mod.DeclarationProvider
+import typings.vscode.mod.Disposable
 import typings.vscode.mod.Position
 import typings.vscode.mod.ProviderResult
 import typings.vscode.mod.TextDocument
 import typings.vscodeJsonrpc.cancellationMod.CancellationToken
-import typings.vscodeLanguageclient.clientMod.BaseLanguageClient
-import typings.vscodeLanguageclient.clientMod.TextDocumentFeature
+import typings.vscodeLanguageclient.featuresMod.FeatureClient
+import typings.vscodeLanguageclient.featuresMod.TextDocumentLanguageFeature
 import typings.vscodeLanguageserverProtocol.protocolDeclarationMod.DeclarationOptions
 import typings.vscodeLanguageserverProtocol.protocolDeclarationMod.DeclarationRegistrationOptions
 import org.scalablytyped.runtime.StObject
@@ -16,10 +17,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object declarationMod {
   
-  @JSImport("vscode-languageclient/lib/declaration", "DeclarationFeature")
+  @JSImport("vscode-languageclient/lib/common/declaration", "DeclarationFeature")
   @js.native
-  class DeclarationFeature protected () extends TextDocumentFeature[Boolean | DeclarationOptions, DeclarationRegistrationOptions, DeclarationProvider] {
-    def this(client: BaseLanguageClient) = this()
+  open class DeclarationFeature protected ()
+    extends TextDocumentLanguageFeature[
+          Boolean | DeclarationOptions, 
+          DeclarationRegistrationOptions, 
+          DeclarationProvider, 
+          DeclarationMiddleware, 
+          js.Object
+        ] {
+    def this(client: FeatureClient[DeclarationMiddleware, js.Object]) = this()
+    
+    /* protected */ def registerLanguageProvider(options: DeclarationRegistrationOptions): js.Tuple2[Disposable, DeclarationProvider] = js.native
+    
+    /* private */ var registerProvider: Any = js.native
   }
   
   trait DeclarationMiddleware extends StObject {

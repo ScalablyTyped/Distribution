@@ -12,7 +12,7 @@ object verticeCommonShaderLibMod {
   
   @JSImport("wonder.js/dist/es2015/renderer/shader/lib/common/VerticeCommonShaderLib", "VerticeCommonShaderLib")
   @js.native
-  class VerticeCommonShaderLib () extends EngineShaderLib {
+  open class VerticeCommonShaderLib () extends EngineShaderLib {
     
     def sendShaderVariables(program: Program, cmd: QuadCommand, material: EngineMaterial): Unit = js.native
     

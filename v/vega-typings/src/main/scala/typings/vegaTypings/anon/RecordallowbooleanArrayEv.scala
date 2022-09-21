@@ -24,6 +24,6 @@ object RecordallowbooleanArrayEv {
     
     inline def setAllow(value: Boolean | js.Array[EventType]): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
     
-    inline def setAllowVarargs(value: EventType*): Self = StObject.set(x, "allow", js.Array(value :_*))
+    inline def setAllowVarargs(value: EventType*): Self = StObject.set(x, "allow", js.Array(value*))
   }
 }

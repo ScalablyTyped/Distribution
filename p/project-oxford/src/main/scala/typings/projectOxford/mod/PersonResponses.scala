@@ -65,7 +65,7 @@ object PersonResponses {
       
       inline def setFaceIds(value: js.Array[String]): Self = StObject.set(x, "faceIds", value.asInstanceOf[js.Any])
       
-      inline def setFaceIdsVarargs(value: String*): Self = StObject.set(x, "faceIds", js.Array(value :_*))
+      inline def setFaceIdsVarargs(value: String*): Self = StObject.set(x, "faceIds", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

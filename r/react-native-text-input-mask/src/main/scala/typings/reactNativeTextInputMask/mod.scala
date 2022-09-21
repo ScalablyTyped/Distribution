@@ -29,10 +29,10 @@ object mod {
   
   @JSImport("react-native-text-input-mask", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[TextInputMaskProps, js.Object, js.Any]
+  open class default ()
+    extends Component[TextInputMaskProps, js.Object, Any]
   
-  type TextInputMask = Component[TextInputMaskProps, js.Object, js.Any]
+  type TextInputMask = Component[TextInputMaskProps, js.Object, Any]
   
   trait TextInputMaskProps
     extends StObject
@@ -199,7 +199,7 @@ object mod {
       */
     var placeholderTextColor: js.UndefOr[String] = js.undefined
     
-    var refInput: js.UndefOr[js.Function1[/* ref */ js.Any, Unit]] = js.undefined
+    var refInput: js.UndefOr[js.Function1[/* ref */ Any, Unit]] = js.undefined
     
     /**
       * enum('default', 'go', 'google', 'join', 'next', 'route', 'search', 'send', 'yahoo', 'done', 'emergency-call')
@@ -355,7 +355,7 @@ object mod {
       
       inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      inline def setRefInput(value: /* ref */ js.Any => Unit): Self = StObject.set(x, "refInput", js.Any.fromFunction1(value))
+      inline def setRefInput(value: /* ref */ Any => Unit): Self = StObject.set(x, "refInput", js.Any.fromFunction1(value))
       
       inline def setRefInputUndefined: Self = StObject.set(x, "refInput", js.undefined)
       

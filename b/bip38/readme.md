@@ -10,10 +10,10 @@ BIP38 is a standard process to encrypt Bitcoin and crypto currency private keys 
 | ------------------ | :-------------: |
 | Full name          | bip38 |
 | Keywords           | bitcoin, crypto, cryptography, litecoin |
-| # releases         | 5 |
-| # dependents       | 99 |
-| # downloads        | 100319 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9283.0 |
+| # stars            | 163.0 |
 
 ## Links
 - [Homepage](http://cryptocoinjs.com/modules/currency/bip38/)

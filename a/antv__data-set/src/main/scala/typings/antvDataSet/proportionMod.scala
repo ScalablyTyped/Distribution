@@ -37,7 +37,7 @@ object proportionMod {
       
       inline def setGroupByUndefined: Self = StObject.set(x, "groupBy", js.undefined)
       
-      inline def setGroupByVarargs(value: String*): Self = StObject.set(x, "groupBy", js.Array(value :_*))
+      inline def setGroupByVarargs(value: String*): Self = StObject.set(x, "groupBy", js.Array(value*))
     }
   }
 }

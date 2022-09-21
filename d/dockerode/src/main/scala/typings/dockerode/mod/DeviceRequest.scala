@@ -30,7 +30,7 @@ object DeviceRequest {
     
     inline def setCapabilitiesUndefined: Self = StObject.set(x, "Capabilities", js.undefined)
     
-    inline def setCapabilitiesVarargs(value: js.Array[String]*): Self = StObject.set(x, "Capabilities", js.Array(value :_*))
+    inline def setCapabilitiesVarargs(value: js.Array[String]*): Self = StObject.set(x, "Capabilities", js.Array(value*))
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
@@ -40,7 +40,7 @@ object DeviceRequest {
     
     inline def setDeviceIDsUndefined: Self = StObject.set(x, "DeviceIDs", js.undefined)
     
-    inline def setDeviceIDsVarargs(value: String*): Self = StObject.set(x, "DeviceIDs", js.Array(value :_*))
+    inline def setDeviceIDsVarargs(value: String*): Self = StObject.set(x, "DeviceIDs", js.Array(value*))
     
     inline def setDriver(value: String): Self = StObject.set(x, "Driver", value.asInstanceOf[js.Any])
     

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ChangeFloatingObjectAbsolutePositionCommand")
 @js.native
-class ChangeFloatingObjectAbsolutePositionCommand ()
+open class ChangeFloatingObjectAbsolutePositionCommand ()
   extends StObject
      with typings.devexpressWeb.ChangeFloatingObjectAbsolutePositionCommand {
   

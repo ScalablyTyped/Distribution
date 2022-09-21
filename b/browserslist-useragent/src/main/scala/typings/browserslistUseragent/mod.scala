@@ -28,6 +28,11 @@ object mod {
     var ignoreMinor: js.UndefOr[Boolean] = js.undefined
     
     var ignorePatch: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * @default process.cwd()
+      */
+    var path: js.UndefOr[String] = js.undefined
   }
   object BrowserslistUseragentOptions {
     
@@ -46,7 +51,7 @@ object mod {
       
       inline def setBrowsersUndefined: Self = StObject.set(x, "browsers", js.undefined)
       
-      inline def setBrowsersVarargs(value: String*): Self = StObject.set(x, "browsers", js.Array(value :_*))
+      inline def setBrowsersVarargs(value: String*): Self = StObject.set(x, "browsers", js.Array(value*))
       
       inline def setEnv(value: String): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
@@ -59,6 +64,10 @@ object mod {
       inline def setIgnorePatch(value: Boolean): Self = StObject.set(x, "ignorePatch", value.asInstanceOf[js.Any])
       
       inline def setIgnorePatchUndefined: Self = StObject.set(x, "ignorePatch", js.undefined)
+      
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     }
   }
   

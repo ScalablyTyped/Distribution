@@ -10,15 +10,12 @@ Component-wrapper for collapse animation for elements with variable (and dynamic
 | ------------------ | :-------------: |
 | Full name          | react-collapse |
 | Keywords           | component, react-component, react, collapse, slide-down, slide-up |
-| # releases         | 4 |
-| # dependents       | 92 |
-| # downloads        | 3835103 |
-| # stars            | 8 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 473431.0 |
+| # stars            | 1060.0 |
 
 ## Links
-- [Homepage](https://github.com/nkbt/react-collapse)
-- [Bugs](https://github.com/nkbt/react-collapse/issues)
-- [Repository](https://github.com/nkbt/react-collapse)
 - [Npm](https://www.npmjs.com/package/react-collapse)
     
 

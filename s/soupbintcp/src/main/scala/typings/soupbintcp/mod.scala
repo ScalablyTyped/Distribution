@@ -1,6 +1,6 @@
 package typings.soupbintcp
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.node.netMod.Socket
 import typings.soupbintcp.anon.Address
@@ -17,35 +17,31 @@ object mod {
   
   @JSImport("soupbintcp", "Client")
   @js.native
-  class Client protected () extends EventEmitter {
+  open class Client protected () extends EventEmitter {
     def this(options: Host) = this()
     def this(options: Host, callback: js.Function0[Unit]) = this()
     
     def end(): Unit = js.native
     
     def login(payload: LoginRequestPayload): Unit = js.native
-    def login(payload: LoginRequestPayload, callback: js.Function1[/* data */ js.UndefOr[js.Any], Unit]): Unit = js.native
+    def login(payload: LoginRequestPayload, callback: js.Function1[/* data */ js.UndefOr[Any], Unit]): Unit = js.native
     
     def logout(): Unit = js.native
-    def logout(callback: js.Function1[/* data */ js.UndefOr[js.Any], Unit]): Unit = js.native
+    def logout(callback: js.Function1[/* data */ js.UndefOr[Any], Unit]): Unit = js.native
     
-    def send(payload: js.Any): Unit = js.native
-    def send(payload: js.Any, callback: js.Function1[/* data */ js.UndefOr[js.Any], Unit]): Unit = js.native
+    def send(payload: Any): Unit = js.native
+    def send(payload: Any, callback: js.Function1[/* data */ js.UndefOr[Any], Unit]): Unit = js.native
   }
   
   @JSImport("soupbintcp", "Connection")
   @js.native
-  class Connection protected () extends EventEmitter {
+  open class Connection protected () extends EventEmitter {
     def this(socket: Socket, options: ConnectionOptions) = this()
     
     def end(): Unit = js.native
     
-    def send(packetType: PacketType, payload: js.Any): Unit = js.native
-    def send(
-      packetType: PacketType,
-      payload: js.Any,
-      callback: js.Function1[/* data */ js.UndefOr[js.Any], Unit]
-    ): Unit = js.native
+    def send(packetType: PacketType, payload: Any): Unit = js.native
+    def send(packetType: PacketType, payload: Any, callback: js.Function1[/* data */ js.UndefOr[Any], Unit]): Unit = js.native
   }
   
   @js.native
@@ -129,7 +125,7 @@ object mod {
   
   @JSImport("soupbintcp", "Parser")
   @js.native
-  class Parser protected () extends StObject {
+  open class Parser protected () extends StObject {
     def this(callback: js.Function2[/* packetType */ PacketType, /* payload */ Buffer, Unit]) = this()
     
     def parse(data: Buffer): Unit = js.native
@@ -137,9 +133,9 @@ object mod {
   
   @JSImport("soupbintcp", "Server")
   @js.native
-  class Server protected () extends EventEmitter {
+  open class Server protected () extends EventEmitter {
     def this(options: Host) = this()
-    def this(options: Host, callback: js.Function1[/* data */ js.UndefOr[js.Any], Unit]) = this()
+    def this(options: Host, callback: js.Function1[/* data */ js.UndefOr[Any], Unit]) = this()
     
     def address(): Address = js.native
     
@@ -148,22 +144,22 @@ object mod {
   
   @JSImport("soupbintcp", "Session")
   @js.native
-  class Session protected () extends EventEmitter {
+  open class Session protected () extends EventEmitter {
     def this(socket: Socket) = this()
     
     def accept(payload: LoginAcceptedPayload): Unit = js.native
-    def accept(payload: LoginAcceptedPayload, callback: js.Function1[/* data */ js.UndefOr[js.Any], Unit]): Unit = js.native
+    def accept(payload: LoginAcceptedPayload, callback: js.Function1[/* data */ js.UndefOr[Any], Unit]): Unit = js.native
     
     def end(): Unit = js.native
     
     def ending(): Unit = js.native
-    def ending(callback: js.Function1[/* data */ js.UndefOr[js.Any], Unit]): Unit = js.native
+    def ending(callback: js.Function1[/* data */ js.UndefOr[Any], Unit]): Unit = js.native
     
     def reject(payload: LoginRejectedPayload): Unit = js.native
-    def reject(payload: LoginRejectedPayload, callback: js.Function1[/* data */ js.UndefOr[js.Any], Unit]): Unit = js.native
+    def reject(payload: LoginRejectedPayload, callback: js.Function1[/* data */ js.UndefOr[Any], Unit]): Unit = js.native
     
-    def send(payload: js.Any): Unit = js.native
-    def send(payload: js.Any, callback: js.Function1[/* data */ js.UndefOr[js.Any], Unit]): Unit = js.native
+    def send(payload: Any): Unit = js.native
+    def send(payload: Any, callback: js.Function1[/* data */ js.UndefOr[Any], Unit]): Unit = js.native
   }
   
   inline def formatLoginAccepted(payload: LoginAcceptedPayload): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("formatLoginAccepted")(payload.asInstanceOf[js.Any]).asInstanceOf[Buffer]

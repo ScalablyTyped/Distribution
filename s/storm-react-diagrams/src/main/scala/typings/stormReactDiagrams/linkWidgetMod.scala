@@ -13,7 +13,7 @@ object linkWidgetMod {
   
   @JSImport("storm-react-diagrams/dist/src/widgets/LinkWidget", "LinkWidget")
   @js.native
-  class LinkWidget protected () extends BaseWidget[LinkProps, LinkState] {
+  open class LinkWidget protected () extends BaseWidget[LinkProps, LinkState] {
     def this(props: LinkProps) = this()
     
     @JSName("shouldComponentUpdate")
@@ -24,7 +24,7 @@ object linkWidgetMod {
     extends StObject
        with BaseWidgetProps {
     
-    var children: js.UndefOr[js.Any] = js.undefined
+    var children: js.UndefOr[Any] = js.undefined
     
     var diagramEngine: DiagramEngine
     
@@ -39,7 +39,7 @@ object linkWidgetMod {
     
     extension [Self <: LinkProps](x: Self) {
       
-      inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       

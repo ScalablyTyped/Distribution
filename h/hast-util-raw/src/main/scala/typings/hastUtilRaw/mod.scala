@@ -1,20 +1,24 @@
 package typings.hastUtilRaw
 
-import typings.unist.mod.Node
-import typings.vfile.mod.VFile
+import typings.hastUtilRaw.complexTypesMod.Raw
+import typings.hastUtilRaw.libMod.Node
+import typings.hastUtilRaw.libMod.VFile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("hast-util-raw", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  /**
-    * Given a hast tree and an optional vfile (for positional info), return a new parsed-again hast tree.
-    * @param tree original hast tree
-    * @param file positional info
-    */
-  def apply(tree: Node): Node = js.native
-  def apply(tree: Node, file: VFile): Node = js.native
+object mod {
+  
+  @JSImport("hast-util-raw", "raw")
+  @js.native
+  val raw: (js.Function3[
+    /* tree */ Node, 
+    /* file */ js.UndefOr[VFile], 
+    /* options */ js.UndefOr[typings.hastUtilRaw.libMod.Options], 
+    Node
+  ]) & (js.Function2[/* tree */ Node, /* options */ js.UndefOr[typings.hastUtilRaw.libMod.Options], Node]) = js.native
+  
+  type Options = typings.hastUtilRaw.libMod.Options
+  
+  type Raw_ = Raw
 }
-

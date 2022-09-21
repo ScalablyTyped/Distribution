@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteScriptInput extends StObject {
   
   /**
-    * A unique identifier for a Realtime script to delete. You can use either the script ID or ARN value.
+    * A unique identifier for the Realtime script to delete. You can use either the script ID or ARN value.
     */
   var ScriptId: ScriptIdOrArn
 }

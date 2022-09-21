@@ -78,7 +78,7 @@ object ChallengeAnswer {
     
     inline def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
     
-    inline def setSessionVarargs(value: ChallengeResult*): Self = StObject.set(x, "session", js.Array(value :_*))
+    inline def setSessionVarargs(value: ChallengeResult*): Self = StObject.set(x, "session", js.Array(value*))
     
     inline def setUserAttributes(value: StringDictionary[String]): Self = StObject.set(x, "userAttributes", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,7 @@ object mod {
     */
   @JSImport("slideout", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Slideout {
     /**
@@ -167,7 +167,7 @@ object mod {
       * @param event The name of the event you want to emit.
       * @param data Data to pass to the listeners.
       */
-    def emit(event: Events, data: js.Any*): Slideout = js.native
+    def emit(event: Events, data: Any*): Slideout = js.native
     
     /**
       * Enables opening the slideout via touch events.
@@ -191,7 +191,7 @@ object mod {
       * @param listener A listener function to remove.
       */
     @JSName("off")
-    def off_translate(event: translate, listener: js.Function1[/* translateX */ Double, js.Any]): Slideout = js.native
+    def off_translate(event: translate, listener: js.Function1[/* translateX */ Double, Any]): Slideout = js.native
     
     /**
       * Adds a listener to the collection for the specified event.
@@ -205,7 +205,7 @@ object mod {
       * @param listener A listener function to add.
       */
     @JSName("on")
-    def on_translate(event: translate, listener: js.Function1[/* translateX */ Double, js.Any]): Slideout = js.native
+    def on_translate(event: translate, listener: js.Function1[/* translateX */ Double, Any]): Slideout = js.native
     
     /**
       * Adds a listener to the collection for the specified event that will be called only once.
@@ -219,7 +219,7 @@ object mod {
       * @param listener A listener function to add.
       */
     @JSName("once")
-    def once_translate(event: translate, listener: js.Function1[/* translateX */ Double, js.Any]): Slideout = js.native
+    def once_translate(event: translate, listener: js.Function1[/* translateX */ Double, Any]): Slideout = js.native
     
     /**
       * Opens the slideout menu. It emits beforeopen and open events.

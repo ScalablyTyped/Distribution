@@ -25,12 +25,12 @@ object ConditionalAccessLocations {
     
     inline def setExcludeLocationsUndefined: Self = StObject.set(x, "excludeLocations", js.undefined)
     
-    inline def setExcludeLocationsVarargs(value: String*): Self = StObject.set(x, "excludeLocations", js.Array(value :_*))
+    inline def setExcludeLocationsVarargs(value: String*): Self = StObject.set(x, "excludeLocations", js.Array(value*))
     
     inline def setIncludeLocations(value: js.Array[String]): Self = StObject.set(x, "includeLocations", value.asInstanceOf[js.Any])
     
     inline def setIncludeLocationsUndefined: Self = StObject.set(x, "includeLocations", js.undefined)
     
-    inline def setIncludeLocationsVarargs(value: String*): Self = StObject.set(x, "includeLocations", js.Array(value :_*))
+    inline def setIncludeLocationsVarargs(value: String*): Self = StObject.set(x, "includeLocations", js.Array(value*))
   }
 }

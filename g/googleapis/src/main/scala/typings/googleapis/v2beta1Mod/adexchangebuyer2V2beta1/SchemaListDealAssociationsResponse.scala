@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A response for listing creative and deal associations
-  */
 trait SchemaListDealAssociationsResponse extends StObject {
   
   /**
@@ -15,12 +12,9 @@ trait SchemaListDealAssociationsResponse extends StObject {
   var associations: js.UndefOr[js.Array[SchemaCreativeDealAssociation]] = js.undefined
   
   /**
-    * A token to retrieve the next page of results. Pass this value in the
-    * ListDealAssociationsRequest.page_token field in the subsequent call to
-    * &#39;ListDealAssociation&#39; method to retrieve the next page of
-    * results.
+    * A token to retrieve the next page of results. Pass this value in the ListDealAssociationsRequest.page_token field in the subsequent call to 'ListDealAssociation' method to retrieve the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaListDealAssociationsResponse {
   
@@ -35,9 +29,11 @@ object SchemaListDealAssociationsResponse {
     
     inline def setAssociationsUndefined: Self = StObject.set(x, "associations", js.undefined)
     
-    inline def setAssociationsVarargs(value: SchemaCreativeDealAssociation*): Self = StObject.set(x, "associations", js.Array(value :_*))
+    inline def setAssociationsVarargs(value: SchemaCreativeDealAssociation*): Self = StObject.set(x, "associations", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

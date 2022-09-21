@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LiasettingsRequestGmbAccessResponse extends StObject {
   
-  /** Identifies what kind of resource this is. Value: the fixed string "content#liasettingsRequestGmbAccessResponse". */
+  /** Identifies what kind of resource this is. Value: the fixed string "`content#liasettingsRequestGmbAccessResponse`". */
   var kind: js.UndefOr[String] = js.undefined
 }
 object LiasettingsRequestGmbAccessResponse {

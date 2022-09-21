@@ -2,14 +2,13 @@ package typings.googleProtobuf.mod
 
 import typings.googleProtobuf.mod.BinaryConstants.FieldType
 import typings.googleProtobuf.mod.BinaryConstants.WireType
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-protobuf", "BinaryReader")
 @js.native
-class BinaryReader () extends StObject {
+open class BinaryReader () extends StObject {
   def this(bytes: ByteSource) = this()
   def this(bytes: Unit, start: Double) = this()
   def this(bytes: ByteSource, start: Double) = this()
@@ -31,7 +30,7 @@ class BinaryReader () extends StObject {
   
   def free(): Unit = js.native
   
-  def getBuffer(): Uint8Array = js.native
+  def getBuffer(): js.typedarray.Uint8Array = js.native
   
   def getCursor(): Double = js.native
   
@@ -45,6 +44,8 @@ class BinaryReader () extends StObject {
   
   def getWireType(): WireType = js.native
   
+  def isDelimited(): Boolean = js.native
+  
   def isEndGroup(): Boolean = js.native
   
   def nextField(): Boolean = js.native
@@ -53,7 +54,7 @@ class BinaryReader () extends StObject {
   
   def readBool(): Boolean = js.native
   
-  def readBytes(): Uint8Array = js.native
+  def readBytes(): js.typedarray.Uint8Array = js.native
   
   def readDouble(): Double = js.native
   
@@ -79,7 +80,7 @@ class BinaryReader () extends StObject {
   
   def readInt64String(): String = js.native
   
-  def readMessage(msg: js.Any, reader: BinaryReadReader): Unit = js.native
+  def readMessage(msg: Any, reader: BinaryReadReader): Any = js.native
   @JSName("readMessage")
   var readMessage_Original: BinaryRead = js.native
   
@@ -155,11 +156,11 @@ class BinaryReader () extends StObject {
   
   def readVarintHash64(): String = js.native
   
-  def registerReadCallback(callbackName: String, callback: js.Function1[/* binaryReader */ this.type, js.Any]): Unit = js.native
+  def registerReadCallback(callbackName: String, callback: js.Function1[/* binaryReader */ this.type, Any]): Unit = js.native
   
   def reset(): Unit = js.native
   
-  def runReadCallback(callbackName: String): js.Any = js.native
+  def runReadCallback(callbackName: String): Any = js.native
   
   def setBlock(): Unit = js.native
   def setBlock(bytes: Unit, start: Double): Unit = js.native

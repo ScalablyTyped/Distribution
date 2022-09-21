@@ -9,7 +9,7 @@ trait ListContactsRequest extends StObject {
   /**
     * End time of a contact.
     */
-  var endTime: Timestamp
+  var endTime: js.Date
   
   /**
     * Name of a ground station.
@@ -39,7 +39,7 @@ trait ListContactsRequest extends StObject {
   /**
     * Start time of a contact.
     */
-  var startTime: Timestamp
+  var startTime: js.Date
   
   /**
     * Status of a contact reservation.
@@ -48,14 +48,14 @@ trait ListContactsRequest extends StObject {
 }
 object ListContactsRequest {
   
-  inline def apply(endTime: Timestamp, startTime: Timestamp, statusList: StatusList): ListContactsRequest = {
+  inline def apply(endTime: js.Date, startTime: js.Date, statusList: StatusList): ListContactsRequest = {
     val __obj = js.Dynamic.literal(endTime = endTime.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], statusList = statusList.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListContactsRequest]
   }
   
   extension [Self <: ListContactsRequest](x: Self) {
     
-    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     inline def setGroundStation(value: String): Self = StObject.set(x, "groundStation", value.asInstanceOf[js.Any])
     
@@ -77,10 +77,10 @@ object ListContactsRequest {
     
     inline def setSatelliteArnUndefined: Self = StObject.set(x, "satelliteArn", js.undefined)
     
-    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
     inline def setStatusList(value: StatusList): Self = StObject.set(x, "statusList", value.asInstanceOf[js.Any])
     
-    inline def setStatusListVarargs(value: ContactStatus*): Self = StObject.set(x, "statusList", js.Array(value :_*))
+    inline def setStatusListVarargs(value: ContactStatus*): Self = StObject.set(x, "statusList", js.Array(value*))
   }
 }

@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object forInMod {
   
-  @JSImport("@antv/util/lib/for-in", JSImport.Namespace)
+  @JSImport("@antv/util/lib/lodash/for-in", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(elements: js.Array[js.Any], func: js.Function2[/* v */ js.Any, /* k */ js.Any, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(elements.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def default(elements: js.Object, func: js.Function2[/* v */ js.Any, /* k */ js.Any, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(elements.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(elements: js.Array[Any], func: js.Function2[/* v */ Any, /* k */ Any, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(elements.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(elements: js.Object, func: js.Function2[/* v */ Any, /* k */ Any, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(elements.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

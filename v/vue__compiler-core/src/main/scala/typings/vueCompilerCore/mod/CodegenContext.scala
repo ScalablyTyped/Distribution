@@ -7,7 +7,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined parent std.Omit<std.Required<@vue/compiler-core.@vue/compiler-core.CodegenOptions>, 'bindingMetadata'> */
+/* Inlined parent std.Omit<std.Required<@vue/compiler-core.@vue/compiler-core.CodegenOptions>, 'bindingMetadata' | 'inline'> */
 @js.native
 trait CodegenContext extends StObject {
   
@@ -22,9 +22,13 @@ trait CodegenContext extends StObject {
   
   def helper(key: js.Symbol): String = js.native
   
+  var inSSR: Boolean = js.native
+  
   def indent(): Unit = js.native
   
   var indentLevel: Double = js.native
+  
+  var isTS: Boolean = js.native
   
   var line: Double = js.native
   
@@ -56,4 +60,6 @@ trait CodegenContext extends StObject {
   var sourceMap: Boolean = js.native
   
   var ssr: Boolean = js.native
+  
+  var ssrRuntimeModuleName: String = js.native
 }

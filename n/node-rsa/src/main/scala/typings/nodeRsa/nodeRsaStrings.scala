@@ -140,6 +140,20 @@ object nodeRsaStrings {
   inline def node: node = "node".asInstanceOf[node]
   
   @js.native
+  sealed trait `openssh-private`
+    extends StObject
+       with Format
+       with FormatPem
+  inline def `openssh-private`: `openssh-private` = "openssh-private".asInstanceOf[`openssh-private`]
+  
+  @js.native
+  sealed trait `openssh-public`
+    extends StObject
+       with Format
+       with FormatPem
+  inline def `openssh-public`: `openssh-public` = "openssh-public".asInstanceOf[`openssh-public`]
+  
+  @js.native
   sealed trait pkcs1
     extends StObject
        with EncryptionScheme

@@ -27,7 +27,7 @@ trait WikitudePlugin extends StObject {
   var _sdkKey: String = js.native
   
   // test type ok?
-  def callJavaScript(js_ : js.Any): Unit = js.native
+  def callJavaScript(js_ : Any): Unit = js.native
   
   def captureScreen(
     successCallback: js.Function1[/* success */ String, Unit],
@@ -85,7 +85,7 @@ trait WikitudePlugin extends StObject {
   
   def setErrorHandler(errorHandler: js.Function1[/* message */ String, Unit]): Unit = js.native
   
-  def setLocation(latitude: js.Any, longitude: js.Any, altitude: js.Any, accuracy: js.Any): Unit = js.native
+  def setLocation(latitude: Any, longitude: Any, altitude: Any, accuracy: Any): Unit = js.native
   
   def setOnUrlInvokeCallback(onUrlInvokeCallback: js.Function1[/* success */ String, Unit]): Unit = js.native
   

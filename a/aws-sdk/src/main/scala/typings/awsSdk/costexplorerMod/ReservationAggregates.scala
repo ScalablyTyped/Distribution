@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ReservationAggregates extends StObject {
   
   /**
-    * The monthly cost of your reservation, amortized over the reservation period.
+    * The monthly cost of your reservation. It's amortized over the reservation period.
     */
   var AmortizedRecurringFee: js.UndefOr[typings.awsSdk.costexplorerMod.AmortizedRecurringFee] = js.undefined
   
   /**
-    * The upfront cost of your reservation, amortized over the reservation period.
+    * The upfront cost of your reservation. It's amortized over the reservation period.
     */
   var AmortizedUpfrontFee: js.UndefOr[typings.awsSdk.costexplorerMod.AmortizedUpfrontFee] = js.undefined
   
   /**
-    * How much you saved due to purchasing and utilizing reservation. AWS calculates this by subtracting TotalAmortizedFee from OnDemandCostOfRIHoursUsed.
+    * How much you saved due to purchasing and utilizing reservation. Amazon Web Services calculates this by subtracting TotalAmortizedFee from OnDemandCostOfRIHoursUsed.
     */
   var NetRISavings: js.UndefOr[typings.awsSdk.costexplorerMod.NetRISavings] = js.undefined
   
   /**
-    * How much your reservation would cost if charged On-Demand rates.
+    * How much your reservation costs if charged On-Demand rates.
     */
   var OnDemandCostOfRIHoursUsed: js.UndefOr[typings.awsSdk.costexplorerMod.OnDemandCostOfRIHoursUsed] = js.undefined
   
@@ -32,9 +32,19 @@ trait ReservationAggregates extends StObject {
   var PurchasedHours: js.UndefOr[typings.awsSdk.costexplorerMod.PurchasedHours] = js.undefined
   
   /**
-    * How many Amazon EC2 reservation hours that you purchased, converted to normalized units. Normalized units are available only for Amazon EC2 usage after November 11, 2017.
+    * The number of Amazon EC2 reservation hours that you purchased. It's converted to normalized units. Normalized units are available only for Amazon EC2 usage after November 11, 2017.
     */
   var PurchasedUnits: js.UndefOr[typings.awsSdk.costexplorerMod.PurchasedUnits] = js.undefined
+  
+  /**
+    * The cost of unused hours for your reservation.
+    */
+  var RICostForUnusedHours: js.UndefOr[typings.awsSdk.costexplorerMod.RICostForUnusedHours] = js.undefined
+  
+  /**
+    * The realized savings because of purchasing and using a reservation.
+    */
+  var RealizedSavings: js.UndefOr[typings.awsSdk.costexplorerMod.RealizedSavings] = js.undefined
   
   /**
     * The total number of reservation hours that you used.
@@ -42,19 +52,24 @@ trait ReservationAggregates extends StObject {
   var TotalActualHours: js.UndefOr[typings.awsSdk.costexplorerMod.TotalActualHours] = js.undefined
   
   /**
-    * The total number of Amazon EC2 reservation hours that you used, converted to normalized units. Normalized units are available only for Amazon EC2 usage after November 11, 2017.
+    * The total number of Amazon EC2 reservation hours that you used. It's converted to normalized units. Normalized units are available only for Amazon EC2 usage after November 11, 2017.
     */
   var TotalActualUnits: js.UndefOr[typings.awsSdk.costexplorerMod.TotalActualUnits] = js.undefined
   
   /**
-    * The total cost of your reservation, amortized over the reservation period.
+    * The total cost of your reservation. It's amortized over the reservation period.
     */
   var TotalAmortizedFee: js.UndefOr[typings.awsSdk.costexplorerMod.TotalAmortizedFee] = js.undefined
   
   /**
-    * How much you could save if you use your entire reservation.
+    * How much you might save if you use your entire reservation.
     */
   var TotalPotentialRISavings: js.UndefOr[typings.awsSdk.costexplorerMod.TotalPotentialRISavings] = js.undefined
+  
+  /**
+    * The unrealized savings because of purchasing and using a reservation.
+    */
+  var UnrealizedSavings: js.UndefOr[typings.awsSdk.costexplorerMod.UnrealizedSavings] = js.undefined
   
   /**
     * The number of reservation hours that you didn't use.
@@ -62,7 +77,7 @@ trait ReservationAggregates extends StObject {
   var UnusedHours: js.UndefOr[typings.awsSdk.costexplorerMod.UnusedHours] = js.undefined
   
   /**
-    * The number of Amazon EC2 reservation hours that you didn't use, converted to normalized units. Normalized units are available only for Amazon EC2 usage after November 11, 2017.
+    * The number of Amazon EC2 reservation hours that you didn't use. It's converted to normalized units. Normalized units are available only for Amazon EC2 usage after November 11, 2017.
     */
   var UnusedUnits: js.UndefOr[typings.awsSdk.costexplorerMod.UnusedUnits] = js.undefined
   
@@ -72,7 +87,7 @@ trait ReservationAggregates extends StObject {
   var UtilizationPercentage: js.UndefOr[typings.awsSdk.costexplorerMod.UtilizationPercentage] = js.undefined
   
   /**
-    * The percentage of Amazon EC2 reservation time that you used, converted to normalized units. Normalized units are available only for Amazon EC2 usage after November 11, 2017.
+    * The percentage of Amazon EC2 reservation time that you used. It's converted to normalized units. Normalized units are available only for Amazon EC2 usage after November 11, 2017.
     */
   var UtilizationPercentageInUnits: js.UndefOr[typings.awsSdk.costexplorerMod.UtilizationPercentageInUnits] = js.undefined
 }
@@ -109,6 +124,14 @@ object ReservationAggregates {
     
     inline def setPurchasedUnitsUndefined: Self = StObject.set(x, "PurchasedUnits", js.undefined)
     
+    inline def setRICostForUnusedHours(value: RICostForUnusedHours): Self = StObject.set(x, "RICostForUnusedHours", value.asInstanceOf[js.Any])
+    
+    inline def setRICostForUnusedHoursUndefined: Self = StObject.set(x, "RICostForUnusedHours", js.undefined)
+    
+    inline def setRealizedSavings(value: RealizedSavings): Self = StObject.set(x, "RealizedSavings", value.asInstanceOf[js.Any])
+    
+    inline def setRealizedSavingsUndefined: Self = StObject.set(x, "RealizedSavings", js.undefined)
+    
     inline def setTotalActualHours(value: TotalActualHours): Self = StObject.set(x, "TotalActualHours", value.asInstanceOf[js.Any])
     
     inline def setTotalActualHoursUndefined: Self = StObject.set(x, "TotalActualHours", js.undefined)
@@ -124,6 +147,10 @@ object ReservationAggregates {
     inline def setTotalPotentialRISavings(value: TotalPotentialRISavings): Self = StObject.set(x, "TotalPotentialRISavings", value.asInstanceOf[js.Any])
     
     inline def setTotalPotentialRISavingsUndefined: Self = StObject.set(x, "TotalPotentialRISavings", js.undefined)
+    
+    inline def setUnrealizedSavings(value: UnrealizedSavings): Self = StObject.set(x, "UnrealizedSavings", value.asInstanceOf[js.Any])
+    
+    inline def setUnrealizedSavingsUndefined: Self = StObject.set(x, "UnrealizedSavings", js.undefined)
     
     inline def setUnusedHours(value: UnusedHours): Self = StObject.set(x, "UnusedHours", value.asInstanceOf[js.Any])
     

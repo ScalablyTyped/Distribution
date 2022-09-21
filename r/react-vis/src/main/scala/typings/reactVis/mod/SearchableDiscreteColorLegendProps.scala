@@ -3,7 +3,7 @@ package typings.reactVis.mod
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactChild
-import typings.reactVis.anon.Color
+import typings.reactVis.anon.Disabled
 import typings.reactVis.reactVisStrings.horizontal
 import typings.reactVis.reactVisStrings.vertical
 import typings.std.HTMLElement
@@ -18,7 +18,7 @@ trait SearchableDiscreteColorLegendProps extends StObject {
   var height: js.UndefOr[Double] = js.undefined
   
   // default: ''
-  var items: js.Array[Color | String | ReactChild]
+  var items: js.Array[Disabled | String | ReactChild]
   
   var onItemClick: js.UndefOr[RVMouseEventHandler] = js.undefined
   
@@ -27,11 +27,11 @@ trait SearchableDiscreteColorLegendProps extends StObject {
   var onItemMouseLeave: js.UndefOr[RVItemEventHandler] = js.undefined
   
   // default: ''
-  var onSearchChange: js.UndefOr[js.Function1[/* x */ js.Any, js.Any]] = js.undefined
+  var onSearchChange: js.UndefOr[js.Function1[/* x */ Any, Any]] = js.undefined
   
   var orientation: js.UndefOr[vertical | horizontal] = js.undefined
   
-  var searchFn: js.UndefOr[js.Function2[/* items */ js.Array[js.Any], /* s */ String, js.Array[js.Any]]] = js.undefined
+  var searchFn: js.UndefOr[js.Function2[/* items */ js.Array[Any], /* s */ String, js.Array[Any]]] = js.undefined
   
   var searchPlaceholder: js.UndefOr[String] = js.undefined
   
@@ -41,7 +41,7 @@ trait SearchableDiscreteColorLegendProps extends StObject {
 }
 object SearchableDiscreteColorLegendProps {
   
-  inline def apply(items: js.Array[Color | String | ReactChild]): SearchableDiscreteColorLegendProps = {
+  inline def apply(items: js.Array[Disabled | String | ReactChild]): SearchableDiscreteColorLegendProps = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchableDiscreteColorLegendProps]
   }
@@ -56,27 +56,27 @@ object SearchableDiscreteColorLegendProps {
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    inline def setItems(value: js.Array[Color | String | ReactChild]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[Disabled | String | ReactChild]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setItemsVarargs(value: (Color | String | ReactChild)*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: (Disabled | String | ReactChild)*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setOnItemClick(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onItemClick", js.Any.fromFunction1(value))
     
     inline def setOnItemClickUndefined: Self = StObject.set(x, "onItemClick", js.undefined)
     
     inline def setOnItemMouseEnter(
-      value: (/* item */ js.Any, /* index */ Double, /* event */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit
+      value: (/* item */ Any, /* index */ Double, /* event */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit
     ): Self = StObject.set(x, "onItemMouseEnter", js.Any.fromFunction3(value))
     
     inline def setOnItemMouseEnterUndefined: Self = StObject.set(x, "onItemMouseEnter", js.undefined)
     
     inline def setOnItemMouseLeave(
-      value: (/* item */ js.Any, /* index */ Double, /* event */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit
+      value: (/* item */ Any, /* index */ Double, /* event */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit
     ): Self = StObject.set(x, "onItemMouseLeave", js.Any.fromFunction3(value))
     
     inline def setOnItemMouseLeaveUndefined: Self = StObject.set(x, "onItemMouseLeave", js.undefined)
     
-    inline def setOnSearchChange(value: /* x */ js.Any => js.Any): Self = StObject.set(x, "onSearchChange", js.Any.fromFunction1(value))
+    inline def setOnSearchChange(value: /* x */ Any => Any): Self = StObject.set(x, "onSearchChange", js.Any.fromFunction1(value))
     
     inline def setOnSearchChangeUndefined: Self = StObject.set(x, "onSearchChange", js.undefined)
     
@@ -84,7 +84,7 @@ object SearchableDiscreteColorLegendProps {
     
     inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
-    inline def setSearchFn(value: (/* items */ js.Array[js.Any], /* s */ String) => js.Array[js.Any]): Self = StObject.set(x, "searchFn", js.Any.fromFunction2(value))
+    inline def setSearchFn(value: (/* items */ js.Array[Any], /* s */ String) => js.Array[Any]): Self = StObject.set(x, "searchFn", js.Any.fromFunction2(value))
     
     inline def setSearchFnUndefined: Self = StObject.set(x, "searchFn", js.undefined)
     

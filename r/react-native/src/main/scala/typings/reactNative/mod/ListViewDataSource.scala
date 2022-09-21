@@ -52,10 +52,10 @@ Instantiable1[/* onAsset */ DataSourceAssetCallback, ListViewDataSource] {
     * handle merging of old and new data separately and then pass that into
     * this function as the `dataBlob`.
     */
-  def cloneWithRows(dataBlob: js.Array[js.Any]): ListViewDataSource = js.native
-  def cloneWithRows(dataBlob: js.Array[js.Any], rowIdentities: js.Array[String | Double]): ListViewDataSource = js.native
-  def cloneWithRows(dataBlob: StringDictionary[js.Any]): ListViewDataSource = js.native
-  def cloneWithRows(dataBlob: StringDictionary[js.Any], rowIdentities: js.Array[String | Double]): ListViewDataSource = js.native
+  def cloneWithRows(dataBlob: js.Array[Any]): ListViewDataSource = js.native
+  def cloneWithRows(dataBlob: js.Array[Any], rowIdentities: js.Array[String | Double]): ListViewDataSource = js.native
+  def cloneWithRows(dataBlob: StringDictionary[Any]): ListViewDataSource = js.native
+  def cloneWithRows(dataBlob: StringDictionary[Any], rowIdentities: js.Array[String | Double]): ListViewDataSource = js.native
   
   /**
     * This performs the same function as the `cloneWithRows` function but here
@@ -68,27 +68,27 @@ Instantiable1[/* onAsset */ DataSourceAssetCallback, ListViewDataSource] {
     *
     * Note: this returns a new object!
     */
-  def cloneWithRowsAndSections(dataBlob: js.Array[js.Any]): ListViewDataSource = js.native
-  def cloneWithRowsAndSections(dataBlob: js.Array[js.Any], sectionIdentities: js.Array[String | Double]): ListViewDataSource = js.native
+  def cloneWithRowsAndSections(dataBlob: js.Array[Any]): ListViewDataSource = js.native
+  def cloneWithRowsAndSections(dataBlob: js.Array[Any], sectionIdentities: js.Array[String | Double]): ListViewDataSource = js.native
   def cloneWithRowsAndSections(
-    dataBlob: js.Array[js.Any],
+    dataBlob: js.Array[Any],
     sectionIdentities: js.Array[String | Double],
     rowIdentities: js.Array[js.Array[String | Double]]
   ): ListViewDataSource = js.native
   def cloneWithRowsAndSections(
-    dataBlob: js.Array[js.Any],
+    dataBlob: js.Array[Any],
     sectionIdentities: Unit,
     rowIdentities: js.Array[js.Array[String | Double]]
   ): ListViewDataSource = js.native
-  def cloneWithRowsAndSections(dataBlob: StringDictionary[js.Any]): ListViewDataSource = js.native
-  def cloneWithRowsAndSections(dataBlob: StringDictionary[js.Any], sectionIdentities: js.Array[String | Double]): ListViewDataSource = js.native
+  def cloneWithRowsAndSections(dataBlob: StringDictionary[Any]): ListViewDataSource = js.native
+  def cloneWithRowsAndSections(dataBlob: StringDictionary[Any], sectionIdentities: js.Array[String | Double]): ListViewDataSource = js.native
   def cloneWithRowsAndSections(
-    dataBlob: StringDictionary[js.Any],
+    dataBlob: StringDictionary[Any],
     sectionIdentities: js.Array[String | Double],
     rowIdentities: js.Array[js.Array[String | Double]]
   ): ListViewDataSource = js.native
   def cloneWithRowsAndSections(
-    dataBlob: StringDictionary[js.Any],
+    dataBlob: StringDictionary[Any],
     sectionIdentities: Unit,
     rowIdentities: js.Array[js.Array[String | Double]]
   ): ListViewDataSource = js.native
@@ -100,7 +100,7 @@ Instantiable1[/* onAsset */ DataSourceAssetCallback, ListViewDataSource] {
   /**
     * Gets the data required to render the row.
     */
-  def getRowData(sectionIndex: Double, rowIndex: Double): js.Any = js.native
+  def getRowData(sectionIndex: Double, rowIndex: Double): Any = js.native
   
   /**
     * Gets the rowID at index provided if the dataSource arrays were flattened,
@@ -111,7 +111,7 @@ Instantiable1[/* onAsset */ DataSourceAssetCallback, ListViewDataSource] {
   /**
     * Gets the data required to render the section header
     */
-  def getSectionHeaderData(sectionIndex: Double): js.Any = js.native
+  def getSectionHeaderData(sectionIndex: Double): Any = js.native
   
   /**
     * Gets the sectionID at index provided if the dataSource arrays were flattened,

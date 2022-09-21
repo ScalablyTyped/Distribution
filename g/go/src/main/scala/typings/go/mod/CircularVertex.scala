@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * This constructs a vertex that does not know about any Node.
   */
-class CircularVertex () extends LayoutVertex {
+open class CircularVertex () extends LayoutVertex {
   
   /**Gets or sets the value used as the vertex's angle.*/
   var actualAngle: Double = js.native

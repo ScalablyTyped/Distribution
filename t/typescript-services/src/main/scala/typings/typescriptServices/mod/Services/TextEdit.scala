@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "Services.TextEdit")
 @js.native
-class TextEdit protected ()
+open class TextEdit protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.Services.TextEdit {
   def this(minChar: Double, limChar: Double, text: String) = this()

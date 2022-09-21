@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@emotion/styled" : "10.0.27"
+      "@emotion/styled" : "11.10.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@emotion/styled" : "10.0.27"
+      "@emotion/styled" : "11.10.4"
     }
   ],
   "compile-devDependencies" : [

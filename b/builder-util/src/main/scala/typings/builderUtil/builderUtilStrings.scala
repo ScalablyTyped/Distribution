@@ -55,6 +55,12 @@ object builderUtilStrings {
   inline def notice: notice = "notice".asInstanceOf[notice]
   
   @js.native
+  sealed trait universal
+    extends StObject
+       with ArchType
+  inline def universal: universal = "universal".asInstanceOf[universal]
+  
+  @js.native
   sealed trait warn
     extends StObject
        with LogLevel

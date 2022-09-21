@@ -16,7 +16,7 @@ trait GitCommit
 object GitCommit {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     author: GitUserDate,
     changeCounts: ChangeCountDictionary,
     changes: js.Array[GitChange],

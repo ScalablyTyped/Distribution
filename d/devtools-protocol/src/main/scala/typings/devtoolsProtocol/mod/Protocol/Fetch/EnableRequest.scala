@@ -36,6 +36,6 @@ object EnableRequest {
     
     inline def setPatternsUndefined: Self = StObject.set(x, "patterns", js.undefined)
     
-    inline def setPatternsVarargs(value: RequestPattern*): Self = StObject.set(x, "patterns", js.Array(value :_*))
+    inline def setPatternsVarargs(value: RequestPattern*): Self = StObject.set(x, "patterns", js.Array(value*))
   }
 }

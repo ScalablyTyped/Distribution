@@ -7,14 +7,13 @@ import typings.googleProtobuf.mod.ExtensionFieldBinaryInfo
 import typings.googleProtobuf.mod.ExtensionFieldInfo
 import typings.googleProtobuf.mod.Message
 import typings.libraCore.transactionPbMod.RawTransaction.PayloadCase
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/transaction_pb", "RawTransaction")
 @js.native
-class RawTransaction () extends Message {
+open class RawTransaction () extends Message {
   
   def clearProgram(): Unit = js.native
   
@@ -30,11 +29,11 @@ class RawTransaction () extends Message {
   
   def getProgram(): js.UndefOr[Program] = js.native
   
-  def getSenderAccount(): Uint8Array | String = js.native
+  def getSenderAccount(): js.typedarray.Uint8Array | String = js.native
   
   def getSenderAccount_asB64(): String = js.native
   
-  def getSenderAccount_asU8(): Uint8Array = js.native
+  def getSenderAccount_asU8(): js.typedarray.Uint8Array = js.native
   
   def getSequenceNumber(): String = js.native
   
@@ -54,7 +53,7 @@ class RawTransaction () extends Message {
   def setProgram(value: Program): Unit = js.native
   
   def setSenderAccount(value: String): Unit = js.native
-  def setSenderAccount(value: Uint8Array): Unit = js.native
+  def setSenderAccount(value: js.typedarray.Uint8Array): Unit = js.native
   
   def setSequenceNumber(value: String): Unit = js.native
   
@@ -96,7 +95,7 @@ object RawTransaction {
     /* 4 */ val WRITE_SET: typings.libraCore.transactionPbMod.RawTransaction.PayloadCase.WRITE_SET & Double = js.native
   }
   
-  inline def deserializeBinary(bytes: Uint8Array): RawTransaction = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[RawTransaction]
+  inline def deserializeBinary(bytes: js.typedarray.Uint8Array): RawTransaction = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[RawTransaction]
   
   inline def deserializeBinaryFromReader(message: RawTransaction, reader: BinaryReader): RawTransaction = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[RawTransaction]
   
@@ -125,7 +124,7 @@ object RawTransaction {
     
     var program: js.UndefOr[typings.libraCore.transactionPbMod.Program.AsObject] = js.undefined
     
-    var senderAccount: Uint8Array | String
+    var senderAccount: js.typedarray.Uint8Array | String
     
     var sequenceNumber: String
     
@@ -137,7 +136,7 @@ object RawTransaction {
       expirationTime: String,
       gasUnitPrice: String,
       maxGasAmount: String,
-      senderAccount: Uint8Array | String,
+      senderAccount: js.typedarray.Uint8Array | String,
       sequenceNumber: String
     ): AsObject = {
       val __obj = js.Dynamic.literal(expirationTime = expirationTime.asInstanceOf[js.Any], gasUnitPrice = gasUnitPrice.asInstanceOf[js.Any], maxGasAmount = maxGasAmount.asInstanceOf[js.Any], senderAccount = senderAccount.asInstanceOf[js.Any], sequenceNumber = sequenceNumber.asInstanceOf[js.Any])
@@ -156,7 +155,7 @@ object RawTransaction {
       
       inline def setProgramUndefined: Self = StObject.set(x, "program", js.undefined)
       
-      inline def setSenderAccount(value: Uint8Array | String): Self = StObject.set(x, "senderAccount", value.asInstanceOf[js.Any])
+      inline def setSenderAccount(value: js.typedarray.Uint8Array | String): Self = StObject.set(x, "senderAccount", value.asInstanceOf[js.Any])
       
       inline def setSequenceNumber(value: String): Self = StObject.set(x, "sequenceNumber", value.asInstanceOf[js.Any])
       

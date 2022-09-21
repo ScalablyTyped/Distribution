@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-	 * @see https://developer.knuddels.de/docs/classes/PublicMessage.html
-	 */
+  * @see https://developer.knuddels.de/docs/classes/PublicMessage.html
+  */
 @JSGlobal("PublicMessage")
 @js.native
-class PublicMessage () extends Message
+open class PublicMessage () extends Message

@@ -18,20 +18,20 @@ object winPackagerMod {
   
   @JSImport("app-builder-lib/out/winPackager", "WinPackager")
   @js.native
-  class WinPackager protected () extends PlatformPackager[WindowsConfiguration] {
+  open class WinPackager protected () extends PlatformPackager[WindowsConfiguration] {
     def this(info: Packager) = this()
     
-    /* private */ var _iconPath: js.Any = js.native
+    /* private */ var _iconPath: Any = js.native
     
     val computedPublisherName: Lazy[js.Array[String] | Null] = js.native
     
     val cscInfo: Lazy[FileCodeSigningInfo | CertificateFromStoreInfo | Null] = js.native
     
-    /* private */ var doSign: js.Any = js.native
+    /* private */ var doSign: Any = js.native
     
     def isForceCodeSigningVerification: Boolean = js.native
     
-    /* private */ var isSignDlls: js.Any = js.native
+    /* private */ var isSignDlls: Any = js.native
     
     val lazyCertInfo: Lazy[CertificateInfo | Null] = js.native
     

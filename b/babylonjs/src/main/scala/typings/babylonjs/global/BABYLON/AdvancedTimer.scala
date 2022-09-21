@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.AdvancedTimer")
 @js.native
-class AdvancedTimer[T] protected ()
+open class AdvancedTimer[T] protected ()
   extends StObject
      with typings.babylonjs.BABYLON.AdvancedTimer[T] {
   /**

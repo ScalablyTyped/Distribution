@@ -12,7 +12,7 @@ trait ObserverBaseDescriptor[T /* <: Ractive[T] */]
   /**
   	 * The observer callback.
   	 */
-  def handler(value: js.Any, old: js.Any, keypath: String, parts: String*): Unit | js.Promise[js.Any]
+  def handler(value: Any, old: Any, keypath: String, parts: String*): Unit | js.Promise[Any]
   /**
   	 * The observer callback.
   	 */

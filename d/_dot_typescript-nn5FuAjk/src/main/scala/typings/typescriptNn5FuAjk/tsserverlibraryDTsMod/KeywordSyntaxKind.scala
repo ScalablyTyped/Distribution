@@ -1,0 +1,92 @@
+package typings.typescriptNn5FuAjk.tsserverlibraryDTsMod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* Rewritten from type alias, can be one of: 
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.AbstractKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.AnyKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.AsKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.AssertsKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.AssertKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.AsyncKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.AwaitKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.BigIntKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.BooleanKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.BreakKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.CaseKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.CatchKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.ClassKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.ConstKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.ConstructorKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.ContinueKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.DebuggerKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.DeclareKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.DefaultKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.DeleteKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.DoKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.ElseKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.EnumKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.ExportKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.ExtendsKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.FalseKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.FinallyKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.ForKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.FromKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.FunctionKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.GetKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.GlobalKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.IfKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.ImplementsKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.ImportKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.InferKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.InKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.InstanceOfKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.InterfaceKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.IntrinsicKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.IsKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.KeyOfKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.LetKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.ModuleKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.NamespaceKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.NeverKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.NewKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.NullKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.NumberKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.ObjectKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.OfKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.PackageKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.PrivateKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.ProtectedKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.PublicKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.ReadonlyKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.OutKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.OverrideKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.RequireKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.ReturnKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.SetKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.StaticKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.StringKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.SuperKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.SwitchKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.SymbolKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.ThisKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.ThrowKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.TrueKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.TryKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.TypeKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.TypeOfKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.UndefinedKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.UniqueKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.UnknownKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.VarKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.VoidKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.WhileKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.WithKeyword
+  - typings.typescriptNn5FuAjk.tsserverlibraryDTsMod.SyntaxKind.YieldKeyword
+*/
+trait KeywordSyntaxKind
+  extends StObject
+     with JSDocSyntaxKind
+     with TokenSyntaxKind

@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Returns service account information associated with a project.
-  */
 trait SchemaGoogleCloudMlV1GetConfigResponse extends StObject {
   
   var config: js.UndefOr[SchemaGoogleCloudMlV1Config] = js.undefined
@@ -14,12 +11,12 @@ trait SchemaGoogleCloudMlV1GetConfigResponse extends StObject {
   /**
     * The service account Cloud ML uses to access resources in the project.
     */
-  var serviceAccount: js.UndefOr[String] = js.undefined
+  var serviceAccount: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The project number for `service_account`.
     */
-  var serviceAccountProject: js.UndefOr[String] = js.undefined
+  var serviceAccountProject: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGoogleCloudMlV1GetConfigResponse {
   
@@ -36,7 +33,11 @@ object SchemaGoogleCloudMlV1GetConfigResponse {
     
     inline def setServiceAccount(value: String): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
     
+    inline def setServiceAccountNull: Self = StObject.set(x, "serviceAccount", null)
+    
     inline def setServiceAccountProject(value: String): Self = StObject.set(x, "serviceAccountProject", value.asInstanceOf[js.Any])
+    
+    inline def setServiceAccountProjectNull: Self = StObject.set(x, "serviceAccountProject", null)
     
     inline def setServiceAccountProjectUndefined: Self = StObject.set(x, "serviceAccountProject", js.undefined)
     

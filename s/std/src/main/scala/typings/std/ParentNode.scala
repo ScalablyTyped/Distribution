@@ -5,14 +5,15 @@ import typings.std.stdStrings.`var`
 import typings.std.stdStrings.a
 import typings.std.stdStrings.abbr
 import typings.std.stdStrings.address
-import typings.std.stdStrings.applet
+import typings.std.stdStrings.animate
+import typings.std.stdStrings.animateMotion
+import typings.std.stdStrings.animateTransform
 import typings.std.stdStrings.area
 import typings.std.stdStrings.article
 import typings.std.stdStrings.aside
 import typings.std.stdStrings.audio
 import typings.std.stdStrings.b
 import typings.std.stdStrings.base
-import typings.std.stdStrings.basefont
 import typings.std.stdStrings.bdi
 import typings.std.stdStrings.bdo
 import typings.std.stdStrings.blockquote
@@ -36,7 +37,6 @@ import typings.std.stdStrings.desc
 import typings.std.stdStrings.details
 import typings.std.stdStrings.dfn
 import typings.std.stdStrings.dialog
-import typings.std.stdStrings.dir
 import typings.std.stdStrings.div
 import typings.std.stdStrings.dl
 import typings.std.stdStrings.dt
@@ -51,6 +51,7 @@ import typings.std.stdStrings.feConvolveMatrix
 import typings.std.stdStrings.feDiffuseLighting
 import typings.std.stdStrings.feDisplacementMap
 import typings.std.stdStrings.feDistantLight
+import typings.std.stdStrings.feDropShadow
 import typings.std.stdStrings.feFlood
 import typings.std.stdStrings.feFuncA
 import typings.std.stdStrings.feFuncB
@@ -71,12 +72,9 @@ import typings.std.stdStrings.fieldset
 import typings.std.stdStrings.figcaption
 import typings.std.stdStrings.figure
 import typings.std.stdStrings.filter
-import typings.std.stdStrings.font
 import typings.std.stdStrings.footer
 import typings.std.stdStrings.foreignObject
 import typings.std.stdStrings.form
-import typings.std.stdStrings.frame
-import typings.std.stdStrings.frameset
 import typings.std.stdStrings.g
 import typings.std.stdStrings.h1
 import typings.std.stdStrings.h2
@@ -106,12 +104,12 @@ import typings.std.stdStrings.main
 import typings.std.stdStrings.map
 import typings.std.stdStrings.mark
 import typings.std.stdStrings.marker
-import typings.std.stdStrings.marquee
 import typings.std.stdStrings.mask
 import typings.std.stdStrings.menu
 import typings.std.stdStrings.meta
 import typings.std.stdStrings.metadata
 import typings.std.stdStrings.meter
+import typings.std.stdStrings.mpath
 import typings.std.stdStrings.nav
 import typings.std.stdStrings.noscript
 import typings.std.stdStrings.ol
@@ -119,7 +117,6 @@ import typings.std.stdStrings.optgroup
 import typings.std.stdStrings.option
 import typings.std.stdStrings.output
 import typings.std.stdStrings.p
-import typings.std.stdStrings.param
 import typings.std.stdStrings.path
 import typings.std.stdStrings.pattern
 import typings.std.stdStrings.picture
@@ -138,6 +135,7 @@ import typings.std.stdStrings.samp
 import typings.std.stdStrings.script
 import typings.std.stdStrings.section
 import typings.std.stdStrings.select
+import typings.std.stdStrings.set
 import typings.std.stdStrings.slot
 import typings.std.stdStrings.small
 import typings.std.stdStrings.source
@@ -177,45 +175,48 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ParentNode extends StObject {
+trait ParentNode
+  extends StObject
+     with Node {
   
   /**
     * Inserts nodes after the last child of node, while replacing strings in nodes with equivalent Text nodes.
-    * 
+    *
     * Throws a "HierarchyRequestError" DOMException if the constraints of the node tree are violated.
     */
+  /* standard dom */
   def append(nodes: (Node | java.lang.String)*): Unit = js.native
   
+  /* standard dom */
   val childElementCount: Double = js.native
   
-  /**
-    * Returns the child elements.
-    */
+  /** Returns the child elements. */
+  /* standard dom */
   val children: HTMLCollection = js.native
   
-  /**
-    * Returns the first child that is an element, and null otherwise.
-    */
+  /** Returns the first child that is an element, and null otherwise. */
+  /* standard dom */
   val firstElementChild: Element | Null = js.native
   
-  /**
-    * Returns the last child that is an element, and null otherwise.
-    */
+  /** Returns the last child that is an element, and null otherwise. */
+  /* standard dom */
   val lastElementChild: Element | Null = js.native
   
   /**
     * Inserts nodes before the first child of node, while replacing strings in nodes with equivalent Text nodes.
-    * 
+    *
     * Throws a "HierarchyRequestError" DOMException if the constraints of the node tree are violated.
     */
+  /* standard dom */
   def prepend(nodes: (Node | java.lang.String)*): Unit = js.native
   
+  /* standard dom */
   def querySelector[E /* <: Element */](selectors: java.lang.String): E | Null = js.native
   
+  /* standard dom */
   def querySelectorAll[E /* <: Element */](selectors: java.lang.String): NodeListOf[E] = js.native
-  /**
-    * Returns all element descendants of node that match selectors.
-    */
+  /** Returns all element descendants of node that match selectors. */
+  /* standard dom */
   @JSName("querySelectorAll")
   def querySelectorAll_a(selectors: a): NodeListOf[HTMLAnchorElement] = js.native
   @JSName("querySelectorAll")
@@ -223,7 +224,11 @@ trait ParentNode extends StObject {
   @JSName("querySelectorAll")
   def querySelectorAll_address(selectors: address): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
-  def querySelectorAll_applet(selectors: applet): NodeListOf[HTMLAppletElement] = js.native
+  def querySelectorAll_animate(selectors: animate): NodeListOf[SVGAnimateElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_animateMotion(selectors: animateMotion): NodeListOf[SVGAnimateMotionElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_animateTransform(selectors: animateTransform): NodeListOf[SVGAnimateTransformElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_area(selectors: area): NodeListOf[HTMLAreaElement] = js.native
   @JSName("querySelectorAll")
@@ -236,8 +241,6 @@ trait ParentNode extends StObject {
   def querySelectorAll_b(selectors: b): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_base(selectors: base): NodeListOf[HTMLBaseElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_basefont(selectors: basefont): NodeListOf[HTMLBaseFontElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_bdi(selectors: bdi): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
@@ -285,8 +288,6 @@ trait ParentNode extends StObject {
   @JSName("querySelectorAll")
   def querySelectorAll_dialog(selectors: dialog): NodeListOf[HTMLDialogElement] = js.native
   @JSName("querySelectorAll")
-  def querySelectorAll_dir(selectors: dir): NodeListOf[HTMLDirectoryElement] = js.native
-  @JSName("querySelectorAll")
   def querySelectorAll_div(selectors: div): NodeListOf[HTMLDivElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_dl(selectors: dl): NodeListOf[HTMLDListElement] = js.native
@@ -314,6 +315,8 @@ trait ParentNode extends StObject {
   def querySelectorAll_feDisplacementMap(selectors: feDisplacementMap): NodeListOf[SVGFEDisplacementMapElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_feDistantLight(selectors: feDistantLight): NodeListOf[SVGFEDistantLightElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_feDropShadow(selectors: feDropShadow): NodeListOf[SVGFEDropShadowElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_feFlood(selectors: feFlood): NodeListOf[SVGFEFloodElement] = js.native
   @JSName("querySelectorAll")
@@ -355,17 +358,11 @@ trait ParentNode extends StObject {
   @JSName("querySelectorAll")
   def querySelectorAll_filter(selectors: filter): NodeListOf[SVGFilterElement] = js.native
   @JSName("querySelectorAll")
-  def querySelectorAll_font(selectors: font): NodeListOf[HTMLFontElement] = js.native
-  @JSName("querySelectorAll")
   def querySelectorAll_footer(selectors: footer): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_foreignObject(selectors: foreignObject): NodeListOf[SVGForeignObjectElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_form(selectors: form): NodeListOf[HTMLFormElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_frame(selectors: frame): NodeListOf[HTMLFrameElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_frameset(selectors: frameset): NodeListOf[HTMLFrameSetElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_g(selectors: g): NodeListOf[SVGGElement] = js.native
   @JSName("querySelectorAll")
@@ -425,8 +422,6 @@ trait ParentNode extends StObject {
   @JSName("querySelectorAll")
   def querySelectorAll_marker(selectors: marker): NodeListOf[SVGMarkerElement] = js.native
   @JSName("querySelectorAll")
-  def querySelectorAll_marquee(selectors: marquee): NodeListOf[HTMLMarqueeElement] = js.native
-  @JSName("querySelectorAll")
   def querySelectorAll_mask(selectors: mask): NodeListOf[SVGMaskElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_menu(selectors: menu): NodeListOf[HTMLMenuElement] = js.native
@@ -436,6 +431,8 @@ trait ParentNode extends StObject {
   def querySelectorAll_metadata(selectors: metadata): NodeListOf[SVGMetadataElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_meter(selectors: meter): NodeListOf[HTMLMeterElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_mpath(selectors: mpath): NodeListOf[SVGMPathElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_nav(selectors: nav): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
@@ -452,8 +449,6 @@ trait ParentNode extends StObject {
   def querySelectorAll_output(selectors: output): NodeListOf[HTMLOutputElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_p(selectors: p): NodeListOf[HTMLParagraphElement] = js.native
-  @JSName("querySelectorAll")
-  def querySelectorAll_param(selectors: param): NodeListOf[HTMLParamElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_path(selectors: path): NodeListOf[SVGPathElement] = js.native
   @JSName("querySelectorAll")
@@ -491,6 +486,8 @@ trait ParentNode extends StObject {
   @JSName("querySelectorAll")
   def querySelectorAll_select(selectors: select): NodeListOf[HTMLSelectElement] = js.native
   @JSName("querySelectorAll")
+  def querySelectorAll_set(selectors: set): NodeListOf[SVGSetElement] = js.native
+  @JSName("querySelectorAll")
   def querySelectorAll_slot(selectors: slot): NodeListOf[HTMLSlotElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_small(selectors: small): NodeListOf[HTMLElement] = js.native
@@ -521,7 +518,7 @@ trait ParentNode extends StObject {
   @JSName("querySelectorAll")
   def querySelectorAll_tbody(selectors: tbody): NodeListOf[HTMLTableSectionElement] = js.native
   @JSName("querySelectorAll")
-  def querySelectorAll_td(selectors: td): NodeListOf[HTMLTableDataCellElement] = js.native
+  def querySelectorAll_td(selectors: td): NodeListOf[HTMLTableCellElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_template(selectors: template): NodeListOf[HTMLTemplateElement] = js.native
   @JSName("querySelectorAll")
@@ -533,7 +530,7 @@ trait ParentNode extends StObject {
   @JSName("querySelectorAll")
   def querySelectorAll_tfoot(selectors: tfoot): NodeListOf[HTMLTableSectionElement] = js.native
   @JSName("querySelectorAll")
-  def querySelectorAll_th(selectors: th): NodeListOf[HTMLTableHeaderCellElement] = js.native
+  def querySelectorAll_th(selectors: th): NodeListOf[HTMLTableCellElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_thead(selectors: thead): NodeListOf[HTMLTableSectionElement] = js.native
   @JSName("querySelectorAll")
@@ -561,9 +558,8 @@ trait ParentNode extends StObject {
   @JSName("querySelectorAll")
   def querySelectorAll_wbr(selectors: wbr): NodeListOf[HTMLElement] = js.native
   
-  /**
-    * Returns the first element that is a descendant of node that matches selectors.
-    */
+  /** Returns the first element that is a descendant of node that matches selectors. */
+  /* standard dom */
   @JSName("querySelector")
   def querySelector_a(selectors: a): HTMLAnchorElement | Null = js.native
   @JSName("querySelector")
@@ -571,7 +567,11 @@ trait ParentNode extends StObject {
   @JSName("querySelector")
   def querySelector_address(selectors: address): HTMLElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_applet(selectors: applet): HTMLAppletElement | Null = js.native
+  def querySelector_animate(selectors: animate): SVGAnimateElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_animateMotion(selectors: animateMotion): SVGAnimateMotionElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_animateTransform(selectors: animateTransform): SVGAnimateTransformElement | Null = js.native
   @JSName("querySelector")
   def querySelector_area(selectors: area): HTMLAreaElement | Null = js.native
   @JSName("querySelector")
@@ -584,8 +584,6 @@ trait ParentNode extends StObject {
   def querySelector_b(selectors: b): HTMLElement | Null = js.native
   @JSName("querySelector")
   def querySelector_base(selectors: base): HTMLBaseElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_basefont(selectors: basefont): HTMLBaseFontElement | Null = js.native
   @JSName("querySelector")
   def querySelector_bdi(selectors: bdi): HTMLElement | Null = js.native
   @JSName("querySelector")
@@ -633,8 +631,6 @@ trait ParentNode extends StObject {
   @JSName("querySelector")
   def querySelector_dialog(selectors: dialog): HTMLDialogElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_dir(selectors: dir): HTMLDirectoryElement | Null = js.native
-  @JSName("querySelector")
   def querySelector_div(selectors: div): HTMLDivElement | Null = js.native
   @JSName("querySelector")
   def querySelector_dl(selectors: dl): HTMLDListElement | Null = js.native
@@ -662,6 +658,8 @@ trait ParentNode extends StObject {
   def querySelector_feDisplacementMap(selectors: feDisplacementMap): SVGFEDisplacementMapElement | Null = js.native
   @JSName("querySelector")
   def querySelector_feDistantLight(selectors: feDistantLight): SVGFEDistantLightElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_feDropShadow(selectors: feDropShadow): SVGFEDropShadowElement | Null = js.native
   @JSName("querySelector")
   def querySelector_feFlood(selectors: feFlood): SVGFEFloodElement | Null = js.native
   @JSName("querySelector")
@@ -703,17 +701,11 @@ trait ParentNode extends StObject {
   @JSName("querySelector")
   def querySelector_filter(selectors: filter): SVGFilterElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_font(selectors: font): HTMLFontElement | Null = js.native
-  @JSName("querySelector")
   def querySelector_footer(selectors: footer): HTMLElement | Null = js.native
   @JSName("querySelector")
   def querySelector_foreignObject(selectors: foreignObject): SVGForeignObjectElement | Null = js.native
   @JSName("querySelector")
   def querySelector_form(selectors: form): HTMLFormElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_frame(selectors: frame): HTMLFrameElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_frameset(selectors: frameset): HTMLFrameSetElement | Null = js.native
   @JSName("querySelector")
   def querySelector_g(selectors: g): SVGGElement | Null = js.native
   @JSName("querySelector")
@@ -773,8 +765,6 @@ trait ParentNode extends StObject {
   @JSName("querySelector")
   def querySelector_marker(selectors: marker): SVGMarkerElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_marquee(selectors: marquee): HTMLMarqueeElement | Null = js.native
-  @JSName("querySelector")
   def querySelector_mask(selectors: mask): SVGMaskElement | Null = js.native
   @JSName("querySelector")
   def querySelector_menu(selectors: menu): HTMLMenuElement | Null = js.native
@@ -784,6 +774,8 @@ trait ParentNode extends StObject {
   def querySelector_metadata(selectors: metadata): SVGMetadataElement | Null = js.native
   @JSName("querySelector")
   def querySelector_meter(selectors: meter): HTMLMeterElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_mpath(selectors: mpath): SVGMPathElement | Null = js.native
   @JSName("querySelector")
   def querySelector_nav(selectors: nav): HTMLElement | Null = js.native
   @JSName("querySelector")
@@ -800,8 +792,6 @@ trait ParentNode extends StObject {
   def querySelector_output(selectors: output): HTMLOutputElement | Null = js.native
   @JSName("querySelector")
   def querySelector_p(selectors: p): HTMLParagraphElement | Null = js.native
-  @JSName("querySelector")
-  def querySelector_param(selectors: param): HTMLParamElement | Null = js.native
   @JSName("querySelector")
   def querySelector_path(selectors: path): SVGPathElement | Null = js.native
   @JSName("querySelector")
@@ -839,6 +829,8 @@ trait ParentNode extends StObject {
   @JSName("querySelector")
   def querySelector_select(selectors: select): HTMLSelectElement | Null = js.native
   @JSName("querySelector")
+  def querySelector_set(selectors: set): SVGSetElement | Null = js.native
+  @JSName("querySelector")
   def querySelector_slot(selectors: slot): HTMLSlotElement | Null = js.native
   @JSName("querySelector")
   def querySelector_small(selectors: small): HTMLElement | Null = js.native
@@ -869,7 +861,7 @@ trait ParentNode extends StObject {
   @JSName("querySelector")
   def querySelector_tbody(selectors: tbody): HTMLTableSectionElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_td(selectors: td): HTMLTableDataCellElement | Null = js.native
+  def querySelector_td(selectors: td): HTMLTableCellElement | Null = js.native
   @JSName("querySelector")
   def querySelector_template(selectors: template): HTMLTemplateElement | Null = js.native
   @JSName("querySelector")
@@ -881,7 +873,7 @@ trait ParentNode extends StObject {
   @JSName("querySelector")
   def querySelector_tfoot(selectors: tfoot): HTMLTableSectionElement | Null = js.native
   @JSName("querySelector")
-  def querySelector_th(selectors: th): HTMLTableHeaderCellElement | Null = js.native
+  def querySelector_th(selectors: th): HTMLTableCellElement | Null = js.native
   @JSName("querySelector")
   def querySelector_thead(selectors: thead): HTMLTableSectionElement | Null = js.native
   @JSName("querySelector")
@@ -908,4 +900,12 @@ trait ParentNode extends StObject {
   def querySelector_view(selectors: view): SVGViewElement | Null = js.native
   @JSName("querySelector")
   def querySelector_wbr(selectors: wbr): HTMLElement | Null = js.native
+  
+  /**
+    * Replace all children of node with nodes, while replacing strings in nodes with equivalent Text nodes.
+    *
+    * Throws a "HierarchyRequestError" DOMException if the constraints of the node tree are violated.
+    */
+  /* standard dom */
+  def replaceChildren(nodes: (Node | java.lang.String)*): Unit = js.native
 }

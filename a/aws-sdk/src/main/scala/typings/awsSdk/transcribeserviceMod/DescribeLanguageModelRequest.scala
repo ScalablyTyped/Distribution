@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeLanguageModelRequest extends StObject {
   
   /**
-    * The name of the custom language model you submit to get more information.
+    * The name of the custom language model you want information about. Model names are case sensitive.
     */
   var ModelName: typings.awsSdk.transcribeserviceMod.ModelName
 }

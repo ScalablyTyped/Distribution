@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   extends StObject
      with BaseNode
      with Expression
-     with ExpressionWrapper {
+     with ExpressionWrapper
+     with Standardized {
   
   var expression: Expression
   

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChannelRetentionSettings extends StObject {
   
   /**
-    * The time in days to retain a channel.
+    * The time in days to retain the messages in a channel.
     */
   var RetentionDays: js.UndefOr[typings.awsSdk.chimeMod.RetentionDays] = js.undefined
 }

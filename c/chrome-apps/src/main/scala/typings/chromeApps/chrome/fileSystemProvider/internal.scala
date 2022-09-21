@@ -7,15 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * Internal interfaces, not for use
-  * @private
-  * @internal
   */
 object internal {
   
-  /**
-    * @private
-    * @internal
-    */
   trait EntryPathRequestedEventOptions
     extends StObject
        with RequestedEventOptions {
@@ -36,10 +30,6 @@ object internal {
     }
   }
   
-  /**
-    * @private
-    * @internal
-    */
   trait FilePathRequestedEventOptions
     extends StObject
        with RequestedEventOptions {
@@ -60,10 +50,6 @@ object internal {
     }
   }
   
-  /**
-    * @private
-    * @internal
-    */
   trait RequestedEventOptions extends StObject {
     
     /** The identifier of the file system related to this operation. */

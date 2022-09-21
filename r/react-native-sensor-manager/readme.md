@@ -11,9 +11,9 @@ A react-native module that allows you to use the accelerometer, gyroscope and ma
 | Full name          | react-native-sensor-manager |
 | Keywords           | react-native, android, react-native-sensor-manager, accelerometer, gyroscope, magnetometer, thermometer, step-counter |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 3132 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 737.3333333333334 |
+| # stars            | 226.0 |
 
 ## Links
 - [Homepage](https://github.com/kprimice/react-native-sensor-manager#readme)

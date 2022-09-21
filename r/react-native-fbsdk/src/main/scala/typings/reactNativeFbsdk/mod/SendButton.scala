@@ -7,12 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-fbsdk", "SendButton")
 @js.native
-class SendButton protected ()
-  extends Component[SendButtonProps, js.Any, js.Any] {
+open class SendButton protected () extends Component[SendButtonProps, Any, Any] {
   def this(props: SendButtonProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: SendButtonProps, context: js.Any) = this()
+  def this(props: SendButtonProps, context: Any) = this()
 }

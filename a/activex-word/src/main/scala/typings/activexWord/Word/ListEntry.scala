@@ -16,7 +16,7 @@ trait ListEntry extends StObject {
   
   var Name: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.ListEntry_typekey")
   var WordDotListEntry_typekey: ListEntry
@@ -29,7 +29,7 @@ object ListEntry {
     Delete: () => Unit,
     Index: Double,
     Name: String,
-    Parent: js.Any,
+    Parent: Any,
     WordDotListEntry_typekey: ListEntry
   ): ListEntry = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Delete = js.Any.fromFunction0(Delete), Index = Index.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any])
@@ -49,7 +49,7 @@ object ListEntry {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotListEntry_typekey(value: ListEntry): Self = StObject.set(x, "Word.ListEntry_typekey", value.asInstanceOf[js.Any])
   }

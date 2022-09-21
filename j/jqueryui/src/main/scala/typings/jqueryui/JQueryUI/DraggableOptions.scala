@@ -12,7 +12,7 @@ trait DraggableOptions
   
   var addClasses: js.UndefOr[Boolean] = js.undefined
   
-  var appendTo: js.UndefOr[js.Any] = js.undefined
+  var appendTo: js.UndefOr[Any] = js.undefined
   
   var axis: js.UndefOr[String] = js.undefined
   
@@ -22,11 +22,11 @@ trait DraggableOptions
   
   var connectToSortable: js.UndefOr[Element | js.Array[Element] | JQuery | String] = js.undefined
   
-  var containment: js.UndefOr[js.Any] = js.undefined
+  var containment: js.UndefOr[Any] = js.undefined
   
   var cursor: js.UndefOr[String] = js.undefined
   
-  var cursorAt: js.UndefOr[js.Any] = js.undefined
+  var cursorAt: js.UndefOr[Any] = js.undefined
   
   var delay: js.UndefOr[Double] = js.undefined
   
@@ -36,17 +36,17 @@ trait DraggableOptions
   
   var grid: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var handle: js.UndefOr[js.Any] = js.undefined
+  var handle: js.UndefOr[Any] = js.undefined
   
-  var helper: js.UndefOr[js.Any] = js.undefined
+  var helper: js.UndefOr[Any] = js.undefined
   
-  var iframeFix: js.UndefOr[js.Any] = js.undefined
+  var iframeFix: js.UndefOr[Any] = js.undefined
   
   var opacity: js.UndefOr[Double] = js.undefined
   
   var refreshPositions: js.UndefOr[Boolean] = js.undefined
   
-  var revert: js.UndefOr[js.Any] = js.undefined
+  var revert: js.UndefOr[Any] = js.undefined
   
   var revertDuration: js.UndefOr[Double] = js.undefined
   
@@ -58,7 +58,7 @@ trait DraggableOptions
   
   var scrollSpeed: js.UndefOr[Double] = js.undefined
   
-  var snap: js.UndefOr[js.Any] = js.undefined
+  var snap: js.UndefOr[Any] = js.undefined
   
   var snapMode: js.UndefOr[String] = js.undefined
   
@@ -81,7 +81,7 @@ object DraggableOptions {
     
     inline def setAddClassesUndefined: Self = StObject.set(x, "addClasses", js.undefined)
     
-    inline def setAppendTo(value: js.Any): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
+    inline def setAppendTo(value: Any): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
     
     inline def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
     
@@ -101,15 +101,15 @@ object DraggableOptions {
     
     inline def setConnectToSortableUndefined: Self = StObject.set(x, "connectToSortable", js.undefined)
     
-    inline def setConnectToSortableVarargs(value: Element*): Self = StObject.set(x, "connectToSortable", js.Array(value :_*))
+    inline def setConnectToSortableVarargs(value: Element*): Self = StObject.set(x, "connectToSortable", js.Array(value*))
     
-    inline def setContainment(value: js.Any): Self = StObject.set(x, "containment", value.asInstanceOf[js.Any])
+    inline def setContainment(value: Any): Self = StObject.set(x, "containment", value.asInstanceOf[js.Any])
     
     inline def setContainmentUndefined: Self = StObject.set(x, "containment", js.undefined)
     
     inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
-    inline def setCursorAt(value: js.Any): Self = StObject.set(x, "cursorAt", value.asInstanceOf[js.Any])
+    inline def setCursorAt(value: Any): Self = StObject.set(x, "cursorAt", value.asInstanceOf[js.Any])
     
     inline def setCursorAtUndefined: Self = StObject.set(x, "cursorAt", js.undefined)
     
@@ -131,17 +131,17 @@ object DraggableOptions {
     
     inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
     
-    inline def setGridVarargs(value: Double*): Self = StObject.set(x, "grid", js.Array(value :_*))
+    inline def setGridVarargs(value: Double*): Self = StObject.set(x, "grid", js.Array(value*))
     
-    inline def setHandle(value: js.Any): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+    inline def setHandle(value: Any): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
     
     inline def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
     
-    inline def setHelper(value: js.Any): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
+    inline def setHelper(value: Any): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
     
     inline def setHelperUndefined: Self = StObject.set(x, "helper", js.undefined)
     
-    inline def setIframeFix(value: js.Any): Self = StObject.set(x, "iframeFix", value.asInstanceOf[js.Any])
+    inline def setIframeFix(value: Any): Self = StObject.set(x, "iframeFix", value.asInstanceOf[js.Any])
     
     inline def setIframeFixUndefined: Self = StObject.set(x, "iframeFix", js.undefined)
     
@@ -153,7 +153,7 @@ object DraggableOptions {
     
     inline def setRefreshPositionsUndefined: Self = StObject.set(x, "refreshPositions", js.undefined)
     
-    inline def setRevert(value: js.Any): Self = StObject.set(x, "revert", value.asInstanceOf[js.Any])
+    inline def setRevert(value: Any): Self = StObject.set(x, "revert", value.asInstanceOf[js.Any])
     
     inline def setRevertDuration(value: Double): Self = StObject.set(x, "revertDuration", value.asInstanceOf[js.Any])
     
@@ -177,7 +177,7 @@ object DraggableOptions {
     
     inline def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
     
-    inline def setSnap(value: js.Any): Self = StObject.set(x, "snap", value.asInstanceOf[js.Any])
+    inline def setSnap(value: Any): Self = StObject.set(x, "snap", value.asInstanceOf[js.Any])
     
     inline def setSnapMode(value: String): Self = StObject.set(x, "snapMode", value.asInstanceOf[js.Any])
     

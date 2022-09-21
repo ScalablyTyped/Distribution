@@ -11,7 +11,7 @@ object global {
     
     @JSGlobal("winstonMail.Mail")
     @js.native
-    class Mail protected ()
+    open class Mail protected ()
       extends typings.winstonMail.mod.Mail {
       def this(options: MailTransportOptions) = this()
     }

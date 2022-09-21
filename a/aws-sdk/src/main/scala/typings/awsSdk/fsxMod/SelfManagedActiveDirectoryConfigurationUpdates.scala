@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SelfManagedActiveDirectoryConfigurationUpdates extends StObject {
   
   /**
-    * A list of up to two IP addresses of DNS servers or domain controllers in the self-managed AD directory.
+    * A list of up to three IP addresses of DNS servers or domain controllers in the self-managed AD directory.
     */
   var DnsIps: js.UndefOr[typings.awsSdk.fsxMod.DnsIps] = js.undefined
   
@@ -34,7 +34,7 @@ object SelfManagedActiveDirectoryConfigurationUpdates {
     
     inline def setDnsIpsUndefined: Self = StObject.set(x, "DnsIps", js.undefined)
     
-    inline def setDnsIpsVarargs(value: IpAddress*): Self = StObject.set(x, "DnsIps", js.Array(value :_*))
+    inline def setDnsIpsVarargs(value: IpAddress*): Self = StObject.set(x, "DnsIps", js.Array(value*))
     
     inline def setPassword(value: DirectoryPassword): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     

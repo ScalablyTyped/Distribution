@@ -1,9 +1,5 @@
 package typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,13 +9,7 @@ trait ParamsResourceProjectsLocationsDatasetsPatch
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Output only. Resource name of the dataset, of the form
-    * `projects/{project_id}/locations/{location_id}/datasets/{dataset_id}`.
+    * Resource name of the dataset, of the form `projects/{project_id\}/locations/{location_id\}/datasets/{dataset_id\}`.
     */
   var name: js.UndefOr[String] = js.undefined
   
@@ -29,9 +19,7 @@ trait ParamsResourceProjectsLocationsDatasetsPatch
   var requestBody: js.UndefOr[SchemaDataset] = js.undefined
   
   /**
-    * The update mask applies to the resource. For the `FieldMask` definition,
-    * see
-    * https://developers.google.com/protocol-buffers/docs/reference/google.protobuf#fieldmask
+    * The update mask applies to the resource. For the `FieldMask` definition, see https://developers.google.com/protocol-buffers/docs/reference/google.protobuf#fieldmask
     */
   var updateMask: js.UndefOr[String] = js.undefined
 }
@@ -43,10 +31,6 @@ object ParamsResourceProjectsLocationsDatasetsPatch {
   }
   
   extension [Self <: ParamsResourceProjectsLocationsDatasetsPatch](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

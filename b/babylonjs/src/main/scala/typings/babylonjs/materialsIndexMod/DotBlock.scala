@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Materials/index", "DotBlock")
 @js.native
-class DotBlock protected ()
+open class DotBlock protected ()
   extends typings.babylonjs.nodeIndexMod.DotBlock {
   /**
     * Creates a new DotBlock

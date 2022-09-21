@@ -1,7 +1,6 @@
 package typings.miniprogram.anon
 
 import typings.miniprogram.AsyncCallbackFailObject
-import typings.std.Uint8ClampedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ trait dataUint8ClampedArrayxnum extends StObject {
   
   var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var data: Uint8ClampedArray
+  var data: js.typedarray.Uint8ClampedArray
   
   var fail: js.UndefOr[js.Function1[/* err */ AsyncCallbackFailObject, Unit]] = js.undefined
   
@@ -27,7 +26,7 @@ trait dataUint8ClampedArrayxnum extends StObject {
 }
 object dataUint8ClampedArrayxnum {
   
-  inline def apply(data: Uint8ClampedArray, height: Double, width: Double, x: Double, y: Double): dataUint8ClampedArrayxnum = {
+  inline def apply(data: js.typedarray.Uint8ClampedArray, height: Double, width: Double, x: Double, y: Double): dataUint8ClampedArrayxnum = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[dataUint8ClampedArrayxnum]
   }
@@ -38,7 +37,7 @@ object dataUint8ClampedArrayxnum {
     
     inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    inline def setData(value: Uint8ClampedArray): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.typedarray.Uint8ClampedArray): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setFail(value: /* err */ AsyncCallbackFailObject => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     

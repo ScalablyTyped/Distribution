@@ -79,7 +79,7 @@ object RecipientPhoneAuthentication {
     
     inline def setSenderProvidedNumbersUndefined: Self = StObject.set(x, "senderProvidedNumbers", js.undefined)
     
-    inline def setSenderProvidedNumbersVarargs(value: String*): Self = StObject.set(x, "senderProvidedNumbers", js.Array(value :_*))
+    inline def setSenderProvidedNumbersVarargs(value: String*): Self = StObject.set(x, "senderProvidedNumbers", js.Array(value*))
     
     inline def setValidateRecipProvidedNumber(value: String): Self = StObject.set(x, "validateRecipProvidedNumber", value.asInstanceOf[js.Any])
     

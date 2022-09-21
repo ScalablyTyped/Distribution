@@ -15,11 +15,11 @@ object mod {
     
     @JSImport("amcharts", "AmCharts.AmAngularGauge")
     @js.native
-    class AmAngularGauge () extends default
+    open class AmAngularGauge () extends default
     
     @JSImport("amcharts", "AmCharts.AmBalloon")
     @js.native
-    class AmBalloon ()
+    open class AmBalloon ()
       extends typings.amcharts.amBalloonMod.default
     
     @JSImport("amcharts", "AmCharts.AmChart")
@@ -27,128 +27,128 @@ object mod {
     /**
       * used when constructing a chart with a theme
       */
-    class AmChart ()
+    open class AmChart ()
       extends typings.amcharts.amChartMod.default {
-      def this(theme: js.Any) = this()
+      def this(theme: Any) = this()
     }
     
     @JSImport("amcharts", "AmCharts.AmCoordinateChart")
     @js.native
-    class AmCoordinateChart ()
+    open class AmCoordinateChart ()
       extends typings.amcharts.amCoordinateChartMod.default
     
     // class AmFunnelChart extends _AmFunnelChart { }
     // class AmGanttChart extends _AmGanttChart { }
     @JSImport("amcharts", "AmCharts.AmGraph")
     @js.native
-    class AmGraph ()
+    open class AmGraph ()
       extends typings.amcharts.amGraphMod.default
     
     @JSImport("amcharts", "AmCharts.AmLegend")
     @js.native
-    class AmLegend ()
+    open class AmLegend ()
       extends typings.amcharts.amLegendMod.default
     
     @JSImport("amcharts", "AmCharts.AmPieChart")
     @js.native
-    class AmPieChart ()
+    open class AmPieChart ()
       extends typings.amcharts.amPieChartMod.default
     
     @JSImport("amcharts", "AmCharts.AmRadarChart")
     @js.native
-    class AmRadarChart ()
+    open class AmRadarChart ()
       extends typings.amcharts.amRadarChartMod.default
     
     @JSImport("amcharts", "AmCharts.AmRectangularChart")
     @js.native
-    class AmRectangularChart ()
+    open class AmRectangularChart ()
       extends typings.amcharts.amRectangularChartMod.default
     
     @JSImport("amcharts", "AmCharts.AmSerialChart")
     @js.native
-    class AmSerialChart ()
+    open class AmSerialChart ()
       extends typings.amcharts.amSerialChartMod.default
     
     // class AmSlicedChart extends _AmSlicedChart { }
     @JSImport("amcharts", "AmCharts.AmXYChart")
     @js.native
-    class AmXYChart ()
+    open class AmXYChart ()
       extends typings.amcharts.amXYChartMod.default
     
     @JSImport("amcharts", "AmCharts.AxisBase")
     @js.native
-    class AxisBase ()
+    open class AxisBase ()
       extends typings.amcharts.axisBaseMod.default
     
     @JSImport("amcharts", "AmCharts.CategoryAxis")
     @js.native
-    class CategoryAxis ()
+    open class CategoryAxis ()
       extends typings.amcharts.categoryAxisMod.default
     
     @JSImport("amcharts", "AmCharts.ChartCursor")
     @js.native
-    class ChartCursor ()
+    open class ChartCursor ()
       extends typings.amcharts.chartCursorMod.default
     
     @JSImport("amcharts", "AmCharts.ChartScrollbar")
     @js.native
-    class ChartScrollbar ()
+    open class ChartScrollbar ()
       extends typings.amcharts.chartScrollbarMod.default
     
     @JSImport("amcharts", "AmCharts.GaugeArrow")
     @js.native
-    class GaugeArrow ()
+    open class GaugeArrow ()
       extends typings.amcharts.gaugeArrowMod.default
     
     @JSImport("amcharts", "AmCharts.GaugeAxis")
     @js.native
-    class GaugeAxis ()
+    open class GaugeAxis ()
       extends typings.amcharts.gaugeAxisMod.default
     
     @JSImport("amcharts", "AmCharts.GaugeBand")
     @js.native
-    class GaugeBand ()
+    open class GaugeBand ()
       extends typings.amcharts.gaugeBandMod.default
     
     @JSImport("amcharts", "AmCharts.GraphDataItem")
     @js.native
-    class GraphDataItem ()
+    open class GraphDataItem ()
       extends typings.amcharts.graphDataItemMod.default
     
     @JSImport("amcharts", "AmCharts.Guide")
     @js.native
-    class Guide ()
+    open class Guide ()
       extends typings.amcharts.guideMod.default
     
     // class Image extends _Image { }
     @JSImport("amcharts", "AmCharts.Label")
     @js.native
-    class Label ()
+    open class Label ()
       extends typings.amcharts.labelMod.default
     
     @JSImport("amcharts", "AmCharts.SerialDataItem")
     @js.native
-    class SerialDataItem ()
+    open class SerialDataItem ()
       extends typings.amcharts.serialDataItemMod.default
     
     @JSImport("amcharts", "AmCharts.Slice")
     @js.native
-    class Slice ()
+    open class Slice ()
       extends typings.amcharts.sliceMod.default
     
     @JSImport("amcharts", "AmCharts.Title")
     @js.native
-    class Title ()
+    open class Title ()
       extends typings.amcharts.titleMod.default
     
     @JSImport("amcharts", "AmCharts.TrendLine")
     @js.native
-    class TrendLine ()
+    open class TrendLine ()
       extends typings.amcharts.trendLineMod.default
     
     @JSImport("amcharts", "AmCharts.ValueAxis")
     @js.native
-    class ValueAxis ()
+    open class ValueAxis ()
       extends typings.amcharts.valueAxisMod.default
     
     /**
@@ -160,8 +160,8 @@ object mod {
       * @param types - Which chart types should call this method. Defaults to all
       * if none is passed.
       */
-    inline def addInitHandler(handler: js.Function0[js.Object]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addInitHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def addInitHandler(handler: js.Function0[js.Object], types: js.Array[String]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addInitHandler")(handler.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def addInitHandler(handler: js.Function0[js.Object]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addInitHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def addInitHandler(handler: js.Function0[js.Object], types: js.Array[String]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addInitHandler")(handler.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     /**
       * Set it to true if you have base href set for your page.
@@ -189,8 +189,8 @@ object mod {
     /**
       * Create chart by params.
       */
-    inline def makeChart(selector: String, params: js.Any): AmChart = (^.asInstanceOf[js.Dynamic].applyDynamic("makeChart")(selector.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[AmChart]
-    inline def makeChart(selector: String, params: js.Any, delay: Double): AmChart = (^.asInstanceOf[js.Dynamic].applyDynamic("makeChart")(selector.asInstanceOf[js.Any], params.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[AmChart]
+    inline def makeChart(selector: String, params: Any): AmChart = (^.asInstanceOf[js.Dynamic].applyDynamic("makeChart")(selector.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[AmChart]
+    inline def makeChart(selector: String, params: Any, delay: Double): AmChart = (^.asInstanceOf[js.Dynamic].applyDynamic("makeChart")(selector.asInstanceOf[js.Any], params.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[AmChart]
     
     /**
       * Array of month names, used when formatting dates (if categoryAxis.parseDates is set to true)
@@ -227,16 +227,16 @@ object mod {
       */
     @JSImport("amcharts", "AmCharts.theme")
     @js.native
-    def theme: js.Any = js.native
-    inline def theme_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("theme")(x.asInstanceOf[js.Any])
+    def theme: Any = js.native
+    inline def theme_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("theme")(x.asInstanceOf[js.Any])
     
     /**
       * Object with existing themes.
       */
     @JSImport("amcharts", "AmCharts.themes")
     @js.native
-    def themes: js.Any = js.native
-    inline def themes_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("themes")(x.asInstanceOf[js.Any])
+    def themes: Any = js.native
+    inline def themes_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("themes")(x.asInstanceOf[js.Any])
     
     /**
       * Set it to true if you want UTC time to be used instead of local time.

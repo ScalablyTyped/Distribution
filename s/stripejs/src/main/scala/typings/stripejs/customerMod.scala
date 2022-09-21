@@ -277,7 +277,7 @@ object customerMod {
       * The customer that this card belongs to
       * NOTE: This attribute will not be in the card object if the card belongs to an account or recipient instead
       */
-    var customer: js.UndefOr[js.Any] = js.undefined
+    var customer: js.UndefOr[Any] = js.undefined
     
     /**
       * If a CVC was provided, results of the check
@@ -408,7 +408,7 @@ object customerMod {
       
       inline def setAvailable_payout_methods(value: js.Array[standard] | (js.Tuple2[standard, instant])): Self = StObject.set(x, "available_payout_methods", value.asInstanceOf[js.Any])
       
-      inline def setAvailable_payout_methodsVarargs(value: standard*): Self = StObject.set(x, "available_payout_methods", js.Array(value :_*))
+      inline def setAvailable_payout_methodsVarargs(value: standard*): Self = StObject.set(x, "available_payout_methods", js.Array(value*))
       
       inline def setBrand(
         value: (`American Express`) | (`Diners Club`) | Discover | JCB | MasterCard | UnionPay | Visa | Unknown
@@ -420,7 +420,7 @@ object customerMod {
       
       inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
       
-      inline def setCustomer(value: js.Any): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
+      inline def setCustomer(value: Any): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
       
       inline def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
       

@@ -48,7 +48,7 @@ object AdditionalData {
     
     inline def setAdditionalData(value: js.Array[Key]): Self = StObject.set(x, "AdditionalData", value.asInstanceOf[js.Any])
     
-    inline def setAdditionalDataVarargs(value: Key*): Self = StObject.set(x, "AdditionalData", js.Array(value :_*))
+    inline def setAdditionalDataVarargs(value: Key*): Self = StObject.set(x, "AdditionalData", js.Array(value*))
     
     inline def setCity(value: String): Self = StObject.set(x, "City", value.asInstanceOf[js.Any])
     

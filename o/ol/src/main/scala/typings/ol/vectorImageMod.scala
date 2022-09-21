@@ -13,7 +13,7 @@ object vectorImageMod {
   
   @JSImport("ol/layer/VectorImage", JSImport.Default)
   @js.native
-  class default () extends VectorImageLayer {
+  open class default () extends VectorImageLayer {
     def this(opt_options: Options) = this()
   }
   
@@ -118,7 +118,7 @@ object vectorImageMod {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setStyleVarargs(value: Style*): Self = StObject.set(x, "style", js.Array(value :_*))
+      inline def setStyleVarargs(value: Style*): Self = StObject.set(x, "style", js.Array(value*))
       
       inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       

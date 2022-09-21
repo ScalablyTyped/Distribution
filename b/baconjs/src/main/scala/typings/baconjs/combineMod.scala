@@ -19,9 +19,9 @@ object combineMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def combine[R](fn: js.Function, observables: js.Array[default[js.Any]]): Property[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(fn.asInstanceOf[js.Any], observables.asInstanceOf[js.Any])).asInstanceOf[Property[R]]
+  inline def combine[R](fn: js.Function, observables: js.Array[default[Any]]): Property[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(fn.asInstanceOf[js.Any], observables.asInstanceOf[js.Any])).asInstanceOf[Property[R]]
   inline def combine[R](fn: Function0[R]): Property[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(fn.asInstanceOf[js.Any]).asInstanceOf[Property[R]]
-  inline def combine[R](observables: js.Array[default[js.Any]], fn: js.Function): Property[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(observables.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Property[R]]
+  inline def combine[R](observables: js.Array[default[Any]], fn: js.Function): Property[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(observables.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Property[R]]
   inline def combine[V, R](a: default[V], fn: Function1[V, R]): Property[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(a.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Property[R]]
   inline def combine[V, R](fn: Function1[V, R], a: default[V]): Property[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(fn.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Property[R]]
   inline def combine[V, V2, R](a: default[V], b: default[V2], fn: Function2[V, V2, R]): Property[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Property[R]]
@@ -65,13 +65,13 @@ object combineMod {
     f: default[V6]
   ): Property[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(fn.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Property[R]]
   
-  inline def combineAsArray[V](streams: (default[V] | js.Array[default[V]])*): Property[js.Array[V]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combineAsArray")(streams.asInstanceOf[js.Any]).asInstanceOf[Property[js.Array[V]]]
+  inline def combineAsArray[V](streams: (default[V] | js.Array[default[V]])*): Property[js.Array[V]] = ^.asInstanceOf[js.Dynamic].applyDynamic("combineAsArray")(streams.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Property[js.Array[V]]]
   
   inline def combineTwo[V, V2, R](left: default[V], right: default[V2], f: Function2[V, V2, R]): Property[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineTwo")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Property[R]]
   
-  inline def combineWith[R](fn: js.Function, observables: js.Array[default[js.Any]]): Property[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineWith")(fn.asInstanceOf[js.Any], observables.asInstanceOf[js.Any])).asInstanceOf[Property[R]]
+  inline def combineWith[R](fn: js.Function, observables: js.Array[default[Any]]): Property[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineWith")(fn.asInstanceOf[js.Any], observables.asInstanceOf[js.Any])).asInstanceOf[Property[R]]
   inline def combineWith[R](fn: Function0[R]): Property[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("combineWith")(fn.asInstanceOf[js.Any]).asInstanceOf[Property[R]]
-  inline def combineWith[R](observables: js.Array[default[js.Any]], fn: js.Function): Property[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineWith")(observables.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Property[R]]
+  inline def combineWith[R](observables: js.Array[default[Any]], fn: js.Function): Property[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineWith")(observables.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Property[R]]
   inline def combineWith[V, R](a: default[V], fn: Function1[V, R]): Property[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineWith")(a.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Property[R]]
   inline def combineWith[V, R](fn: Function1[V, R], a: default[V]): Property[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineWith")(fn.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Property[R]]
   inline def combineWith[V, V2, R](a: default[V], b: default[V2], fn: Function2[V, V2, R]): Property[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("combineWith")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Property[R]]

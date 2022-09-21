@@ -8,12 +8,12 @@ trait KnockstrapCarouselDefaultsIndicatorsTemplate
   extends StObject
      with KnockstrapDefaultsTemplateBase {
   
-  def dataConverter(value: js.Any): KnockstrapCarouselDefaultsIdItemsDataConverted
+  def dataConverter(value: Any): KnockstrapCarouselDefaultsIdItemsDataConverted
 }
 object KnockstrapCarouselDefaultsIndicatorsTemplate {
   
   inline def apply(
-    dataConverter: js.Any => KnockstrapCarouselDefaultsIdItemsDataConverted,
+    dataConverter: Any => KnockstrapCarouselDefaultsIdItemsDataConverted,
     name: String,
     templateEngine: KnockstrapStringTemplateEngine
   ): KnockstrapCarouselDefaultsIndicatorsTemplate = {
@@ -23,6 +23,6 @@ object KnockstrapCarouselDefaultsIndicatorsTemplate {
   
   extension [Self <: KnockstrapCarouselDefaultsIndicatorsTemplate](x: Self) {
     
-    inline def setDataConverter(value: js.Any => KnockstrapCarouselDefaultsIdItemsDataConverted): Self = StObject.set(x, "dataConverter", js.Any.fromFunction1(value))
+    inline def setDataConverter(value: Any => KnockstrapCarouselDefaultsIdItemsDataConverted): Self = StObject.set(x, "dataConverter", js.Any.fromFunction1(value))
   }
 }

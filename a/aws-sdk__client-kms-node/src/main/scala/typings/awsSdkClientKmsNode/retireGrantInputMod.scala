@@ -8,5 +8,5 @@ object retireGrantInputMod {
   
   @JSImport("@aws-sdk/client-kms-node/model/RetireGrantInput", "RetireGrantInput")
   @js.native
-  val RetireGrantInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val RetireGrantInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

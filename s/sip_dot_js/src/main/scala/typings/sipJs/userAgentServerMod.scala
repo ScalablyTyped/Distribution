@@ -18,7 +18,7 @@ object userAgentServerMod {
   
   @JSImport("sip.js/lib/core/user-agents/user-agent-server", "UserAgentServer")
   @js.native
-  class UserAgentServer protected ()
+  open class UserAgentServer protected ()
     extends StObject
        with IncomingRequest {
     def this(
@@ -33,7 +33,7 @@ object userAgentServerMod {
       delegate: IncomingRequestDelegate
     ) = this()
     
-    /* private */ var _transaction: js.Any = js.native
+    /* private */ var _transaction: Any = js.native
     
     /* protected */ def acceptable: Boolean = js.native
     
@@ -41,7 +41,7 @@ object userAgentServerMod {
     
     def dispose(): Unit = js.native
     
-    /* private */ var init: js.Any = js.native
+    /* private */ var init: Any = js.native
     
     /* protected */ var logger: Logger = js.native
     
@@ -89,14 +89,14 @@ object userAgentServerMod {
       * @param statusCode - Status code to reply with.
       * @param options - Reply options bucket.
       */
-    /* private */ var reply: js.Any = js.native
+    /* private */ var reply: Any = js.native
     
     /* protected */ var toTag: String = js.native
     
     /** The transaction associated with this request. */
     def transaction: ServerTransaction = js.native
     
-    /* private */ var transactionConstructor: js.Any = js.native
+    /* private */ var transactionConstructor: Any = js.native
     
     /* protected */ def tryingable: Boolean = js.native
   }

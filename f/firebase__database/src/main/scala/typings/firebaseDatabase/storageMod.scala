@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object storageMod {
   
-  @JSImport("@firebase/database/dist/src/core/storage/storage", "PersistentStorage")
+  @JSImport("@firebase/database/dist/node-esm/src/core/storage/storage", "PersistentStorage")
   @js.native
   val PersistentStorage: DOMStorageWrapper | MemoryStorage = js.native
   
-  @JSImport("@firebase/database/dist/src/core/storage/storage", "SessionStorage")
+  @JSImport("@firebase/database/dist/node-esm/src/core/storage/storage", "SessionStorage")
   @js.native
   val SessionStorage: DOMStorageWrapper | MemoryStorage = js.native
 }

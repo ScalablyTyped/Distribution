@@ -1,102 +1,60 @@
 package typings.firebaseDatabase
 
-import typings.firebaseDatabase.changeMod.Change
+import typings.firebaseDatabase.eventGeneratorMod.EventGenerator
 import typings.firebaseDatabase.eventMod.Event
 import typings.firebaseDatabase.eventRegistrationMod.EventRegistration
+import typings.firebaseDatabase.eventRegistrationMod.QueryContext
 import typings.firebaseDatabase.nodeMod.Node
 import typings.firebaseDatabase.operationMod.Operation
 import typings.firebaseDatabase.pathMod.Path
-import typings.firebaseDatabase.queryMod.Query
 import typings.firebaseDatabase.viewCacheMod.ViewCache
+import typings.firebaseDatabase.viewProcessorMod.ViewProcessor
 import typings.firebaseDatabase.writeTreeMod.WriteTreeRef
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object viewMod {
   
-  @JSImport("@firebase/database/dist/src/core/view/View", "View")
+  @JSImport("@firebase/database/dist/node-esm/src/core/view/View", JSImport.Namespace)
   @js.native
-  class View protected () extends StObject {
-    /**
-      *
-      * @param {!Query} query_
-      * @param {!ViewCache} initialViewCache
-      */
-    def this(query_ : Query, initialViewCache: ViewCache) = this()
+  val ^ : js.Any = js.native
+  
+  @JSImport("@firebase/database/dist/node-esm/src/core/view/View", "View")
+  @js.native
+  open class View protected () extends StObject {
+    def this(query_ : QueryContext, initialViewCache: ViewCache) = this()
     
-    /**
-      * @param {!EventRegistration} eventRegistration
-      */
-    def addEventRegistration(eventRegistration: EventRegistration): Unit = js.native
+    var eventGenerator_ : EventGenerator = js.native
     
-    /**
-      * Applies the given Operation, updates our cache, and returns the appropriate events.
-      *
-      * @param {!Operation} operation
-      * @param {!WriteTreeRef} writesCache
-      * @param {?Node} completeServerCache
-      * @return {!Array.<!Event>}
-      */
-    def applyOperation(operation: Operation, writesCache: WriteTreeRef): js.Array[Event] = js.native
-    def applyOperation(operation: Operation, writesCache: WriteTreeRef, completeServerCache: Node): js.Array[Event] = js.native
+    var eventRegistrations_ : js.Array[EventRegistration] = js.native
     
-    /* private */ var eventGenerator_ : js.Any = js.native
+    var processor_ : ViewProcessor = js.native
     
-    /* private */ var eventRegistrations_ : js.Any = js.native
+    def query: QueryContext = js.native
     
-    /**
-      * @private
-      * @param {!Array.<!Change>} changes
-      * @param {!Node} eventCache
-      * @param {EventRegistration=} eventRegistration
-      * @return {!Array.<!Event>}
-      */
-    def generateEventsForChanges_(changes: js.Array[Change], eventCache: Node): js.Array[Event] = js.native
-    def generateEventsForChanges_(changes: js.Array[Change], eventCache: Node, eventRegistration: EventRegistration): js.Array[Event] = js.native
+    /* private */ var query_ : Any = js.native
     
-    /**
-      * @param {!Path} path
-      * @return {?Node}
-      */
-    def getCompleteServerCache(path: Path): Node | Null = js.native
-    
-    /**
-      * @param {!EventRegistration} registration
-      * @return {!Array.<!Event>}
-      */
-    def getInitialEvents(registration: EventRegistration): js.Array[Event] = js.native
-    
-    /**
-      * @return {!Query}
-      */
-    def getQuery(): Query = js.native
-    
-    /**
-      * @return {?Node}
-      */
-    def getServerCache(): Node | Null = js.native
-    
-    /**
-      * @return {boolean}
-      */
-    def isEmpty(): Boolean = js.native
-    
-    /* private */ var processor_ : js.Any = js.native
-    
-    /* private */ var query_ : js.Any = js.native
-    
-    /**
-      * @param {?EventRegistration} eventRegistration If null, remove all callbacks.
-      * @param {Error=} cancelError If a cancelError is provided, appropriate cancel events will be returned.
-      * @return {!Array.<!Event>} Cancel events, if cancelError was provided.
-      */
-    def removeEventRegistration(): js.Array[Event] = js.native
-    def removeEventRegistration(eventRegistration: Null, cancelError: Error): js.Array[Event] = js.native
-    def removeEventRegistration(eventRegistration: EventRegistration): js.Array[Event] = js.native
-    def removeEventRegistration(eventRegistration: EventRegistration, cancelError: Error): js.Array[Event] = js.native
-    
-    /* private */ var viewCache_ : js.Any = js.native
+    var viewCache_ : ViewCache = js.native
   }
+  
+  inline def viewAddEventRegistration(view: View, eventRegistration: EventRegistration): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("viewAddEventRegistration")(view.asInstanceOf[js.Any], eventRegistration.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def viewApplyOperation(view: View, operation: Operation, writesCache: WriteTreeRef): js.Array[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("viewApplyOperation")(view.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], writesCache.asInstanceOf[js.Any])).asInstanceOf[js.Array[Event]]
+  inline def viewApplyOperation(view: View, operation: Operation, writesCache: WriteTreeRef, completeServerCache: Node): js.Array[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("viewApplyOperation")(view.asInstanceOf[js.Any], operation.asInstanceOf[js.Any], writesCache.asInstanceOf[js.Any], completeServerCache.asInstanceOf[js.Any])).asInstanceOf[js.Array[Event]]
+  
+  inline def viewGetCompleteNode(view: View): Node | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("viewGetCompleteNode")(view.asInstanceOf[js.Any]).asInstanceOf[Node | Null]
+  
+  inline def viewGetCompleteServerCache(view: View, path: Path): Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("viewGetCompleteServerCache")(view.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Node | Null]
+  
+  inline def viewGetInitialEvents(view: View, registration: EventRegistration): js.Array[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("viewGetInitialEvents")(view.asInstanceOf[js.Any], registration.asInstanceOf[js.Any])).asInstanceOf[js.Array[Event]]
+  
+  inline def viewGetServerCache(view: View): Node | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("viewGetServerCache")(view.asInstanceOf[js.Any]).asInstanceOf[Node | Null]
+  
+  inline def viewIsEmpty(view: View): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("viewIsEmpty")(view.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def viewRemoveEventRegistration(view: View): js.Array[Event] = ^.asInstanceOf[js.Dynamic].applyDynamic("viewRemoveEventRegistration")(view.asInstanceOf[js.Any]).asInstanceOf[js.Array[Event]]
+  inline def viewRemoveEventRegistration(view: View, eventRegistration: Null, cancelError: js.Error): js.Array[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("viewRemoveEventRegistration")(view.asInstanceOf[js.Any], eventRegistration.asInstanceOf[js.Any], cancelError.asInstanceOf[js.Any])).asInstanceOf[js.Array[Event]]
+  inline def viewRemoveEventRegistration(view: View, eventRegistration: EventRegistration): js.Array[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("viewRemoveEventRegistration")(view.asInstanceOf[js.Any], eventRegistration.asInstanceOf[js.Any])).asInstanceOf[js.Array[Event]]
+  inline def viewRemoveEventRegistration(view: View, eventRegistration: EventRegistration, cancelError: js.Error): js.Array[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("viewRemoveEventRegistration")(view.asInstanceOf[js.Any], eventRegistration.asInstanceOf[js.Any], cancelError.asInstanceOf[js.Any])).asInstanceOf[js.Array[Event]]
 }

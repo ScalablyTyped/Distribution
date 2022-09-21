@@ -17,22 +17,27 @@ trait ModifyGlobalReplicationGroupMessage extends StObject {
   var AutomaticFailoverEnabled: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
-    * A valid cache node type that you want to scale this Global Datastore to.
+    * A valid cache node type that you want to scale this Global datastore to.
     */
   var CacheNodeType: js.UndefOr[String] = js.undefined
   
   /**
-    * The upgraded version of the cache engine to be run on the clusters in the Global Datastore. 
+    * The name of the cache parameter group to use with the Global datastore. It must be compatible with the major engine version used by the Global datastore.
+    */
+  var CacheParameterGroupName: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The upgraded version of the cache engine to be run on the clusters in the Global datastore. 
     */
   var EngineVersion: js.UndefOr[String] = js.undefined
   
   /**
-    * A description of the Global Datastore
+    * A description of the Global datastore
     */
   var GlobalReplicationGroupDescription: js.UndefOr[String] = js.undefined
   
   /**
-    * The name of the Global Datastore
+    * The name of the Global datastore
     */
   var GlobalReplicationGroupId: String
 }
@@ -54,6 +59,10 @@ object ModifyGlobalReplicationGroupMessage {
     inline def setCacheNodeType(value: String): Self = StObject.set(x, "CacheNodeType", value.asInstanceOf[js.Any])
     
     inline def setCacheNodeTypeUndefined: Self = StObject.set(x, "CacheNodeType", js.undefined)
+    
+    inline def setCacheParameterGroupName(value: String): Self = StObject.set(x, "CacheParameterGroupName", value.asInstanceOf[js.Any])
+    
+    inline def setCacheParameterGroupNameUndefined: Self = StObject.set(x, "CacheParameterGroupName", js.undefined)
     
     inline def setEngineVersion(value: String): Self = StObject.set(x, "EngineVersion", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for koa-xml-body
 
-Typings are for version 2.0
+Typings are for version 2.2
 
 ## Library description:
 koa middleware to parse xml request body
@@ -10,10 +10,10 @@ koa middleware to parse xml request body
 | ------------------ | :-------------: |
 | Full name          | koa-xml-body |
 | Keywords           | xml, body, bodyParser, koa, middleware, xml2js, xml parser |
-| # releases         | 3 |
-| # dependents       | 15 |
-| # downloads        | 89057 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 15439.0 |
+| # stars            | 35.0 |
 
 ## Links
 - [Homepage](https://github.com/creeperyang/koa-xml-body#readme)

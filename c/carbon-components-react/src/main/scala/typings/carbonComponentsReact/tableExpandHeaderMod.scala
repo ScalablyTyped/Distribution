@@ -23,7 +23,12 @@ object tableExpandHeaderMod extends Shortcut {
     
     var ariaLabel: js.UndefOr[String] = js.undefined
     
+    /**
+      * @deprecated
+      */
     var enableExpando: js.UndefOr[Boolean] = js.undefined
+    
+    var enableToggle: js.UndefOr[Boolean] = js.undefined
     
     var expandIconDescription: js.UndefOr[String] = js.undefined
     
@@ -47,6 +52,10 @@ object tableExpandHeaderMod extends Shortcut {
       inline def setEnableExpando(value: Boolean): Self = StObject.set(x, "enableExpando", value.asInstanceOf[js.Any])
       
       inline def setEnableExpandoUndefined: Self = StObject.set(x, "enableExpando", js.undefined)
+      
+      inline def setEnableToggle(value: Boolean): Self = StObject.set(x, "enableToggle", value.asInstanceOf[js.Any])
+      
+      inline def setEnableToggleUndefined: Self = StObject.set(x, "enableToggle", js.undefined)
       
       inline def setExpandIconDescription(value: String): Self = StObject.set(x, "expandIconDescription", value.asInstanceOf[js.Any])
       

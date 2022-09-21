@@ -22,7 +22,7 @@ trait UpdatePatchBaselineResult extends StObject {
   var ApprovedPatchesComplianceLevel: js.UndefOr[PatchComplianceLevel] = js.undefined
   
   /**
-    * Indicates whether the list of approved patches includes non-security updates that should be applied to the instances. The default value is 'false'. Applies to Linux instances only.
+    * Indicates whether the list of approved patches includes non-security updates that should be applied to the managed nodes. The default value is false. Applies to Linux managed nodes only.
     */
   var ApprovedPatchesEnableNonSecurity: js.UndefOr[Boolean] = js.undefined
   
@@ -34,10 +34,10 @@ trait UpdatePatchBaselineResult extends StObject {
   /**
     * The date when the patch baseline was created.
     */
-  var CreatedDate: js.UndefOr[DateTime] = js.undefined
+  var CreatedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * A description of the Patch Baseline.
+    * A description of the patch baseline.
     */
   var Description: js.UndefOr[BaselineDescription] = js.undefined
   
@@ -49,7 +49,7 @@ trait UpdatePatchBaselineResult extends StObject {
   /**
     * The date when the patch baseline was last modified.
     */
-  var ModifiedDate: js.UndefOr[DateTime] = js.undefined
+  var ModifiedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the patch baseline.
@@ -72,7 +72,7 @@ trait UpdatePatchBaselineResult extends StObject {
   var RejectedPatchesAction: js.UndefOr[PatchAction] = js.undefined
   
   /**
-    * Information about the patches to use to update the instances, including target operating systems and source repositories. Applies to Linux instances only.
+    * Information about the patches to use to update the managed nodes, including target operating systems and source repositories. Applies to Linux managed nodes only.
     */
   var Sources: js.UndefOr[PatchSourceList] = js.undefined
 }
@@ -101,13 +101,13 @@ object UpdatePatchBaselineResult {
     
     inline def setApprovedPatchesUndefined: Self = StObject.set(x, "ApprovedPatches", js.undefined)
     
-    inline def setApprovedPatchesVarargs(value: PatchId*): Self = StObject.set(x, "ApprovedPatches", js.Array(value :_*))
+    inline def setApprovedPatchesVarargs(value: PatchId*): Self = StObject.set(x, "ApprovedPatches", js.Array(value*))
     
     inline def setBaselineId(value: BaselineId): Self = StObject.set(x, "BaselineId", value.asInstanceOf[js.Any])
     
     inline def setBaselineIdUndefined: Self = StObject.set(x, "BaselineId", js.undefined)
     
-    inline def setCreatedDate(value: DateTime): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     
     inline def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
     
@@ -119,7 +119,7 @@ object UpdatePatchBaselineResult {
     
     inline def setGlobalFiltersUndefined: Self = StObject.set(x, "GlobalFilters", js.undefined)
     
-    inline def setModifiedDate(value: DateTime): Self = StObject.set(x, "ModifiedDate", value.asInstanceOf[js.Any])
+    inline def setModifiedDate(value: js.Date): Self = StObject.set(x, "ModifiedDate", value.asInstanceOf[js.Any])
     
     inline def setModifiedDateUndefined: Self = StObject.set(x, "ModifiedDate", js.undefined)
     
@@ -139,12 +139,12 @@ object UpdatePatchBaselineResult {
     
     inline def setRejectedPatchesUndefined: Self = StObject.set(x, "RejectedPatches", js.undefined)
     
-    inline def setRejectedPatchesVarargs(value: PatchId*): Self = StObject.set(x, "RejectedPatches", js.Array(value :_*))
+    inline def setRejectedPatchesVarargs(value: PatchId*): Self = StObject.set(x, "RejectedPatches", js.Array(value*))
     
     inline def setSources(value: PatchSourceList): Self = StObject.set(x, "Sources", value.asInstanceOf[js.Any])
     
     inline def setSourcesUndefined: Self = StObject.set(x, "Sources", js.undefined)
     
-    inline def setSourcesVarargs(value: PatchSource*): Self = StObject.set(x, "Sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: PatchSource*): Self = StObject.set(x, "Sources", js.Array(value*))
   }
 }

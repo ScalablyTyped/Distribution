@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "VersionedCatalogObject")
 @js.native
-class VersionedCatalogObject () extends StObject {
+open class VersionedCatalogObject () extends StObject {
   
   /**
     * The version of the object.

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AccessSecretVersionResponse extends StObject {
   
-  /** The resource name of the SecretVersion in the format `projects/∗/secrets/∗/versions/ *`. */
+  /** The resource name of the SecretVersion in the format `projects/ *‍/secrets/ *‍/versions/ *`. */
   var name: js.UndefOr[String] = js.undefined
   
   /** Secret payload */

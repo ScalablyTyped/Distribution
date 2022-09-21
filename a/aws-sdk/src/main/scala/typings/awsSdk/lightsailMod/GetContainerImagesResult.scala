@@ -24,6 +24,6 @@ object GetContainerImagesResult {
     
     inline def setContainerImagesUndefined: Self = StObject.set(x, "containerImages", js.undefined)
     
-    inline def setContainerImagesVarargs(value: ContainerImage*): Self = StObject.set(x, "containerImages", js.Array(value :_*))
+    inline def setContainerImagesVarargs(value: ContainerImage*): Self = StObject.set(x, "containerImages", js.Array(value*))
   }
 }

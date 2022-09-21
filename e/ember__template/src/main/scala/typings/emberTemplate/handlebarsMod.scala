@@ -8,7 +8,7 @@ object handlebarsMod {
   
   @JSImport("@ember/template/-private/handlebars", "SafeString")
   @js.native
-  class SafeString protected () extends StObject {
+  open class SafeString protected () extends StObject {
     def this(str: String) = this()
     
     def toHTML(): String = js.native

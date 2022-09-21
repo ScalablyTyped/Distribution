@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Web.Syndication
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Data.Xml.Dom.XmlDocument
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Foundation.Uri
@@ -61,7 +60,7 @@ trait SyndicationItem extends StObject {
   var language: String
   
   /** Gets or sets the most recent time the item was modified. This property represents the atom:updated element. */
-  var lastUpdatedTime: Date
+  var lastUpdatedTime: js.Date
   
   /** Gets the links contained in the item. */
   var links: IVector[SyndicationLink]
@@ -88,7 +87,7 @@ trait SyndicationItem extends StObject {
   var nodeValue: String
   
   /** Gets or sets the date the item was published. */
-  var publishedDate: Date
+  var publishedDate: js.Date
   
   /** Gets or sets information about the rights of an item. This property represents the atom:rights element. */
   var rights: ISyndicationText
@@ -120,14 +119,14 @@ object SyndicationItem {
     id: String,
     itemUri: Uri,
     language: String,
-    lastUpdatedTime: Date,
+    lastUpdatedTime: js.Date,
     links: IVector[SyndicationLink],
     load: String => Unit,
     loadFromXml: XmlDocument => Unit,
     nodeName: String,
     nodeNamespace: String,
     nodeValue: String,
-    publishedDate: Date,
+    publishedDate: js.Date,
     rights: ISyndicationText,
     source: SyndicationFeed,
     summary: ISyndicationText,
@@ -169,7 +168,7 @@ object SyndicationItem {
     
     inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    inline def setLastUpdatedTime(value: Date): Self = StObject.set(x, "lastUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTime(value: js.Date): Self = StObject.set(x, "lastUpdatedTime", value.asInstanceOf[js.Any])
     
     inline def setLinks(value: IVector[SyndicationLink]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
@@ -183,7 +182,7 @@ object SyndicationItem {
     
     inline def setNodeValue(value: String): Self = StObject.set(x, "nodeValue", value.asInstanceOf[js.Any])
     
-    inline def setPublishedDate(value: Date): Self = StObject.set(x, "publishedDate", value.asInstanceOf[js.Any])
+    inline def setPublishedDate(value: js.Date): Self = StObject.set(x, "publishedDate", value.asInstanceOf[js.Any])
     
     inline def setRights(value: ISyndicationText): Self = StObject.set(x, "rights", value.asInstanceOf[js.Any])
     

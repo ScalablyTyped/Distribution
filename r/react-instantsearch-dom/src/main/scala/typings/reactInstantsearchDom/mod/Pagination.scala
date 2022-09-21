@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-instantsearch-dom", "Pagination")
 @js.native
-class Pagination protected ()
-  extends Component[js.Any, js.Object, js.Any] {
-  def this(props: js.Any) = this()
+open class Pagination protected ()
+  extends Component[Any, js.Object, Any] {
+  def this(props: Any) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: js.Any, context: js.Any) = this()
+  def this(props: Any, context: Any) = this()
 }

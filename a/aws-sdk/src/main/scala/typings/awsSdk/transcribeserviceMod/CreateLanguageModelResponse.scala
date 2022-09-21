@@ -7,27 +7,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateLanguageModelResponse extends StObject {
   
   /**
-    * The Amazon Transcribe standard language model, or base model you've used to create a custom language model.
+    * The Amazon Transcribe standard language model, or base model, you specified when creating your custom language model.
     */
   var BaseModelName: js.UndefOr[typings.awsSdk.transcribeserviceMod.BaseModelName] = js.undefined
   
   /**
-    * The data access role and Amazon S3 prefixes you've chosen to create your custom language model.
+    * Lists your data access role ARN (Amazon Resource Name) and the Amazon S3 locations you provided for your training (S3Uri) and tuning (TuningDataS3Uri) data.
     */
   var InputDataConfig: js.UndefOr[typings.awsSdk.transcribeserviceMod.InputDataConfig] = js.undefined
   
   /**
-    * The language code of the text you've used to create a custom language model.
+    * The language code you selected for your custom language model.
     */
   var LanguageCode: js.UndefOr[CLMLanguageCode] = js.undefined
   
   /**
-    * The name you've chosen for your custom language model.
+    * The name of your custom language model.
     */
   var ModelName: js.UndefOr[typings.awsSdk.transcribeserviceMod.ModelName] = js.undefined
   
   /**
-    * The status of the custom language model. When the status is COMPLETED the model is ready to use.
+    * The status of your custom language model. When the status displays as COMPLETED, your model is ready to use.
     */
   var ModelStatus: js.UndefOr[typings.awsSdk.transcribeserviceMod.ModelStatus] = js.undefined
 }

@@ -4,7 +4,6 @@ import typings.phaser.Phaser.Cameras.Scene2D.Camera
 import typings.phaser.Phaser.GameObjects.GameObject
 import typings.phaser.Phaser.GameObjects.Shape
 import typings.phaser.Phaser.Input.Keyboard.Key
-import typings.phaser.integer
 import typings.phaser.phaserNumbers.`0`
 import typings.phaser.phaserNumbers.`1`
 import typings.phaser.phaserNumbers.`2`
@@ -64,11 +63,11 @@ object Input {
       /**
         * The index of the Gamepad.
         */
-      var index: integer
+      var index: Double
     }
     object Pad {
       
-      inline def apply(id: String, index: integer): Pad = {
+      inline def apply(id: String, index: Double): Pad = {
         val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
         __obj.asInstanceOf[Pad]
       }
@@ -77,19 +76,19 @@ object Input {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        inline def setIndex(value: integer): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+        inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       }
     }
   }
   
-  type HitAreaCallback = js.Function4[/* hitArea */ js.Any, /* x */ Double, /* y */ Double, /* gameObject */ GameObject, Unit]
+  type HitAreaCallback = js.Function4[/* hitArea */ Any, /* x */ Double, /* y */ Double, /* gameObject */ GameObject, Unit]
   
   trait InputConfiguration extends StObject {
     
     /**
       * If `pixelPerfect` is set, this is the alpha tolerance threshold value used in the callback.
       */
-    var alphaTolerance: js.UndefOr[integer] = js.undefined
+    var alphaTolerance: js.UndefOr[Double] = js.undefined
     
     /**
       * The CSS string to be used when the cursor is over this Interactive Object.
@@ -109,15 +108,15 @@ object Input {
     /**
       * The object / shape to use as the Hit Area. If not given it will try to create a Rectangle based on the texture frame.
       */
-    var hitArea: js.UndefOr[js.Any] = js.undefined
+    var hitArea: js.UndefOr[Any] = js.undefined
     
     /**
       * The callback that determines if the pointer is within the Hit Area shape or not.
       */
-    var hitAreaCallback: js.UndefOr[js.Function] = js.undefined
+    var hitAreaCallback: js.UndefOr[HitAreaCallback] = js.undefined
     
     /**
-      * If `true` the a pixel perfect function will be set for the hit area callback. Only works with texture based Game Objects.
+      * If `true` the a pixel perfect function will be set for the hit area callback. Only works with image texture based Game Objects, not Render Textures.
       */
     var pixelPerfect: js.UndefOr[Boolean] = js.undefined
     
@@ -135,7 +134,7 @@ object Input {
     
     extension [Self <: InputConfiguration](x: Self) {
       
-      inline def setAlphaTolerance(value: integer): Self = StObject.set(x, "alphaTolerance", value.asInstanceOf[js.Any])
+      inline def setAlphaTolerance(value: Double): Self = StObject.set(x, "alphaTolerance", value.asInstanceOf[js.Any])
       
       inline def setAlphaToleranceUndefined: Self = StObject.set(x, "alphaTolerance", js.undefined)
       
@@ -151,9 +150,9 @@ object Input {
       
       inline def setDropZoneUndefined: Self = StObject.set(x, "dropZone", js.undefined)
       
-      inline def setHitArea(value: js.Any): Self = StObject.set(x, "hitArea", value.asInstanceOf[js.Any])
+      inline def setHitArea(value: Any): Self = StObject.set(x, "hitArea", value.asInstanceOf[js.Any])
       
-      inline def setHitAreaCallback(value: js.Function): Self = StObject.set(x, "hitAreaCallback", value.asInstanceOf[js.Any])
+      inline def setHitAreaCallback(value: (/* hitArea */ Any, /* x */ Double, /* y */ Double, /* gameObject */ GameObject) => Unit): Self = StObject.set(x, "hitAreaCallback", js.Any.fromFunction4(value))
       
       inline def setHitAreaCallbackUndefined: Self = StObject.set(x, "hitAreaCallback", js.undefined)
       
@@ -285,12 +284,12 @@ object Input {
     /**
       * The hit area for this Interactive Object. Typically a geometry shape, like a Rectangle or Circle.
       */
-    var hitArea: js.Any
+    var hitArea: Any
     
     /**
       * The 'contains' check callback that the hit area shape will use for all hit tests.
       */
-    def hitAreaCallback(hitArea: js.Any, x: Double, y: Double, gameObject: GameObject): Unit
+    def hitAreaCallback(hitArea: Any, x: Double, y: Double, gameObject: GameObject): Unit
     /**
       * The 'contains' check callback that the hit area shape will use for all hit tests.
       */
@@ -335,8 +334,8 @@ object Input {
       dropZone: Boolean,
       enabled: Boolean,
       gameObject: GameObject,
-      hitArea: js.Any,
-      hitAreaCallback: (/* hitArea */ js.Any, /* x */ Double, /* y */ Double, /* gameObject */ GameObject) => Unit,
+      hitArea: Any,
+      hitAreaCallback: (/* hitArea */ Any, /* x */ Double, /* y */ Double, /* gameObject */ GameObject) => Unit,
       hitAreaDebug: Shape,
       localX: Double,
       localY: Double,
@@ -378,9 +377,9 @@ object Input {
       
       inline def setGameObject(value: GameObject): Self = StObject.set(x, "gameObject", value.asInstanceOf[js.Any])
       
-      inline def setHitArea(value: js.Any): Self = StObject.set(x, "hitArea", value.asInstanceOf[js.Any])
+      inline def setHitArea(value: Any): Self = StObject.set(x, "hitArea", value.asInstanceOf[js.Any])
       
-      inline def setHitAreaCallback(value: (/* hitArea */ js.Any, /* x */ Double, /* y */ Double, /* gameObject */ GameObject) => Unit): Self = StObject.set(x, "hitAreaCallback", js.Any.fromFunction4(value))
+      inline def setHitAreaCallback(value: (/* hitArea */ Any, /* x */ Double, /* y */ Double, /* gameObject */ GameObject) => Unit): Self = StObject.set(x, "hitAreaCallback", js.Any.fromFunction4(value))
       
       inline def setHitAreaDebug(value: Shape): Self = StObject.set(x, "hitAreaDebug", value.asInstanceOf[js.Any])
       
@@ -399,37 +398,37 @@ object Input {
       /**
         * A Key object mapping to the DOWN arrow key.
         */
-      var down: js.UndefOr[Key] = js.undefined
+      var down: Key
       
       /**
         * A Key object mapping to the LEFT arrow key.
         */
-      var left: js.UndefOr[Key] = js.undefined
+      var left: Key
       
       /**
         * A Key object mapping to the RIGHT arrow key.
         */
-      var right: js.UndefOr[Key] = js.undefined
+      var right: Key
       
       /**
         * A Key object mapping to the SHIFT key.
         */
-      var shift: js.UndefOr[Key] = js.undefined
+      var shift: Key
       
       /**
         * A Key object mapping to the SPACE BAR key.
         */
-      var space: js.UndefOr[Key] = js.undefined
+      var space: Key
       
       /**
         * A Key object mapping to the UP arrow key.
         */
-      var up: js.UndefOr[Key] = js.undefined
+      var up: Key
     }
     object CursorKeys {
       
-      inline def apply(): CursorKeys = {
-        val __obj = js.Dynamic.literal()
+      inline def apply(down: Key, left: Key, right: Key, shift: Key, space: Key, up: Key): CursorKeys = {
+        val __obj = js.Dynamic.literal(down = down.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], shift = shift.asInstanceOf[js.Any], space = space.asInstanceOf[js.Any], up = up.asInstanceOf[js.Any])
         __obj.asInstanceOf[CursorKeys]
       }
       
@@ -437,27 +436,15 @@ object Input {
         
         inline def setDown(value: Key): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
         
-        inline def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
-        
         inline def setLeft(value: Key): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
-        
-        inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
         
         inline def setRight(value: Key): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
         
-        inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
-        
         inline def setShift(value: Key): Self = StObject.set(x, "shift", value.asInstanceOf[js.Any])
-        
-        inline def setShiftUndefined: Self = StObject.set(x, "shift", js.undefined)
         
         inline def setSpace(value: Key): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
         
-        inline def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
-        
         inline def setUp(value: Key): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
-        
-        inline def setUpUndefined: Self = StObject.set(x, "up", js.undefined)
       }
     }
     

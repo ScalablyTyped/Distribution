@@ -15,8 +15,7 @@ trait BuildBazelRemoteExecutionV2FileNode extends StObject {
   /** The name of the file. */
   var name: js.UndefOr[String] = js.undefined
   
-  /** The node properties of the FileNode. */
-  var nodeProperties: js.UndefOr[js.Array[BuildBazelRemoteExecutionV2NodeProperty]] = js.undefined
+  var nodeProperties: js.UndefOr[BuildBazelRemoteExecutionV2NodeProperties] = js.undefined
 }
 object BuildBazelRemoteExecutionV2FileNode {
   
@@ -39,10 +38,8 @@ object BuildBazelRemoteExecutionV2FileNode {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setNodeProperties(value: js.Array[BuildBazelRemoteExecutionV2NodeProperty]): Self = StObject.set(x, "nodeProperties", value.asInstanceOf[js.Any])
+    inline def setNodeProperties(value: BuildBazelRemoteExecutionV2NodeProperties): Self = StObject.set(x, "nodeProperties", value.asInstanceOf[js.Any])
     
     inline def setNodePropertiesUndefined: Self = StObject.set(x, "nodeProperties", js.undefined)
-    
-    inline def setNodePropertiesVarargs(value: BuildBazelRemoteExecutionV2NodeProperty*): Self = StObject.set(x, "nodeProperties", js.Array(value :_*))
   }
 }

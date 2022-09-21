@@ -1,7 +1,7 @@
 package typings.rcSelect
 
 import org.scalablytyped.runtime.Shortcut
-import typings.rcSelect.interfaceMod.RenderNode
+import typings.rcSelect.baseSelectMod.RenderNode
 import typings.react.mod.FC
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
@@ -26,7 +26,7 @@ object transBtnMod extends Shortcut {
     
     var customizeIcon: RenderNode
     
-    var customizeIconProps: js.UndefOr[js.Any] = js.undefined
+    var customizeIconProps: js.UndefOr[Any] = js.undefined
     
     var onClick: js.UndefOr[MouseEventHandler[HTMLSpanElement]] = js.undefined
     
@@ -49,9 +49,9 @@ object transBtnMod extends Shortcut {
       
       inline def setCustomizeIcon(value: RenderNode): Self = StObject.set(x, "customizeIcon", value.asInstanceOf[js.Any])
       
-      inline def setCustomizeIconFunction1(value: /* props */ js.Any => ReactNode): Self = StObject.set(x, "customizeIcon", js.Any.fromFunction1(value))
+      inline def setCustomizeIconFunction1(value: /* props */ Any => ReactNode): Self = StObject.set(x, "customizeIcon", js.Any.fromFunction1(value))
       
-      inline def setCustomizeIconProps(value: js.Any): Self = StObject.set(x, "customizeIconProps", value.asInstanceOf[js.Any])
+      inline def setCustomizeIconProps(value: Any): Self = StObject.set(x, "customizeIconProps", value.asInstanceOf[js.Any])
       
       inline def setCustomizeIconPropsUndefined: Self = StObject.set(x, "customizeIconProps", js.undefined)
       

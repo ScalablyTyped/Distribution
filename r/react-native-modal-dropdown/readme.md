@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-modal-dropdown
 
-Typings are for version 0.7
+Typings are for version 1.0
 
 ## Library description:
 A react-native dropdown component for both iOS and Android.
@@ -11,9 +11,9 @@ A react-native dropdown component for both iOS and Android.
 | Full name          | react-native-modal-dropdown |
 | Keywords           | react, react-component, react-native, react-native-component, ios, android, modal, dropdown, picker, select, selector, option |
 | # releases         | 3 |
-| # dependents       | 16 |
-| # downloads        | 410052 |
-| # stars            | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 30031.666666666668 |
+| # stars            | 84.0 |
 
 ## Links
 - [Homepage](https://github.com/siemiatj/react-native-modal-dropdown)

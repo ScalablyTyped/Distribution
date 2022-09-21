@@ -10,9 +10,9 @@ Run a series of dependent gulp tasks in order
 | Full name          | run-sequence |
 | Keywords           | gulpfriendly, pipe, sequence, gulp, orchestrator |
 | # releases         | 0 |
-| # dependents       | 975 |
-| # downloads        | 11235329 |
-| # stars            | 198 |
+| # dependents       | 0.0 |
+| # downloads        | 776903.3333333334 |
+| # stars            | 972.0 |
 
 ## Links
 - [Homepage](https://github.com/OverZealous/run-sequence)

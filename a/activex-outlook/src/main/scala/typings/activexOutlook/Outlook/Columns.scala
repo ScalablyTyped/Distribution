@@ -14,14 +14,14 @@ trait Columns extends StObject {
   
   val Count: Double
   
-  def Item(Index: js.Any): Column
+  def Item(Index: Any): Column
   
   /* private */ @JSName("Outlook.Columns_typekey")
   var OutlookDotColumns_typekey: Columns
   
-  val Parent: js.Any
+  val Parent: Any
   
-  def Remove(Index: js.Any): Unit
+  def Remove(Index: Any): Unit
   
   def RemoveAll(): Unit
   
@@ -34,10 +34,10 @@ object Columns {
     Application: Application,
     Class: OlObjectClass,
     Count: Double,
-    Item: js.Any => Column,
+    Item: Any => Column,
     OutlookDotColumns_typekey: Columns,
-    Parent: js.Any,
-    Remove: js.Any => Unit,
+    Parent: Any,
+    Remove: Any => Unit,
     RemoveAll: () => Unit,
     Session: NameSpace
   ): Columns = {
@@ -56,13 +56,13 @@ object Columns {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => Column): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => Column): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
     inline def setOutlookDotColumns_typekey(value: Columns): Self = StObject.set(x, "Outlook.Columns_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    inline def setRemove(value: js.Any => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: Any => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
     
     inline def setRemoveAll(value: () => Unit): Self = StObject.set(x, "RemoveAll", js.Any.fromFunction0(value))
     

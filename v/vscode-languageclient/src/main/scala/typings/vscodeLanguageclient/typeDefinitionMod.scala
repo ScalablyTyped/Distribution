@@ -2,13 +2,14 @@ package typings.vscodeLanguageclient
 
 import typings.vscode.mod.Definition
 import typings.vscode.mod.DefinitionLink
+import typings.vscode.mod.Disposable
 import typings.vscode.mod.Position
 import typings.vscode.mod.ProviderResult
 import typings.vscode.mod.TextDocument
 import typings.vscode.mod.TypeDefinitionProvider
 import typings.vscodeJsonrpc.cancellationMod.CancellationToken
-import typings.vscodeLanguageclient.clientMod.BaseLanguageClient
-import typings.vscodeLanguageclient.clientMod.TextDocumentFeature
+import typings.vscodeLanguageclient.featuresMod.FeatureClient
+import typings.vscodeLanguageclient.featuresMod.TextDocumentLanguageFeature
 import typings.vscodeLanguageserverProtocol.protocolTypeDefinitionMod.TypeDefinitionOptions
 import typings.vscodeLanguageserverProtocol.protocolTypeDefinitionMod.TypeDefinitionRegistrationOptions
 import org.scalablytyped.runtime.StObject
@@ -17,14 +18,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object typeDefinitionMod {
   
-  @JSImport("vscode-languageclient/lib/typeDefinition", "TypeDefinitionFeature")
+  @JSImport("vscode-languageclient/lib/common/typeDefinition", "TypeDefinitionFeature")
   @js.native
-  class TypeDefinitionFeature protected () extends TextDocumentFeature[
+  open class TypeDefinitionFeature protected ()
+    extends TextDocumentLanguageFeature[
           Boolean | TypeDefinitionOptions, 
           TypeDefinitionRegistrationOptions, 
-          TypeDefinitionProvider
+          TypeDefinitionProvider, 
+          TypeDefinitionMiddleware, 
+          js.Object
         ] {
-    def this(client: BaseLanguageClient) = this()
+    def this(client: FeatureClient[TypeDefinitionMiddleware, js.Object]) = this()
+    
+    /* protected */ def registerLanguageProvider(options: TypeDefinitionRegistrationOptions): js.Tuple2[Disposable, TypeDefinitionProvider] = js.native
+    
+    /* private */ var registerProvider: Any = js.native
   }
   
   type ProvideTypeDefinitionSignature = js.ThisFunction3[

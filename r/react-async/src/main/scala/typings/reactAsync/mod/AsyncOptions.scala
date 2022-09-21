@@ -2,14 +2,13 @@ package typings.reactAsync.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.AbortController
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait AsyncOptions[T]
   extends StObject
-     with /* prop */ StringDictionary[js.Any] {
+     with /* prop */ StringDictionary[Any] {
   
   var debugLabel: js.UndefOr[String] = js.undefined
   
@@ -26,7 +25,7 @@ trait AsyncOptions[T]
   
   var initialValue: js.UndefOr[T] = js.undefined
   
-  var onReject: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
+  var onReject: js.UndefOr[js.Function1[/* error */ js.Error, Unit]] = js.undefined
   
   var onResolve: js.UndefOr[js.Function1[/* data */ T, Unit]] = js.undefined
   
@@ -43,9 +42,9 @@ trait AsyncOptions[T]
     ]
   ] = js.undefined
   
-  var watch: js.UndefOr[js.Any] = js.undefined
+  var watch: js.UndefOr[Any] = js.undefined
   
-  var watchFn: js.UndefOr[js.Function2[/* props */ AsyncProps[T], /* prevProps */ AsyncProps[T], js.Any]] = js.undefined
+  var watchFn: js.UndefOr[js.Function2[/* props */ AsyncProps[T], /* prevProps */ AsyncProps[T], Any]] = js.undefined
 }
 object AsyncOptions {
   
@@ -61,7 +60,7 @@ object AsyncOptions {
     inline def setDebugLabelUndefined: Self = StObject.set(x, "debugLabel", js.undefined)
     
     inline def setDeferFn(
-      value: (/* args */ js.Array[js.Any], /* props */ AsyncProps[T], /* controller */ AbortController) => js.Promise[T]
+      value: (/* args */ js.Array[Any], /* props */ AsyncProps[T], /* controller */ AbortController) => js.Promise[T]
     ): Self = StObject.set(x, "deferFn", js.Any.fromFunction3(value))
     
     inline def setDeferFnUndefined: Self = StObject.set(x, "deferFn", js.undefined)
@@ -76,7 +75,7 @@ object AsyncOptions {
     
     inline def setInitialValueUndefined: Self = StObject.set(x, "initialValue", js.undefined)
     
-    inline def setOnReject(value: /* error */ Error => Unit): Self = StObject.set(x, "onReject", js.Any.fromFunction1(value))
+    inline def setOnReject(value: /* error */ js.Error => Unit): Self = StObject.set(x, "onReject", js.Any.fromFunction1(value))
     
     inline def setOnRejectUndefined: Self = StObject.set(x, "onReject", js.undefined)
     
@@ -98,9 +97,9 @@ object AsyncOptions {
     
     inline def setReducerUndefined: Self = StObject.set(x, "reducer", js.undefined)
     
-    inline def setWatch(value: js.Any): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
+    inline def setWatch(value: Any): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
     
-    inline def setWatchFn(value: (/* props */ AsyncProps[T], /* prevProps */ AsyncProps[T]) => js.Any): Self = StObject.set(x, "watchFn", js.Any.fromFunction2(value))
+    inline def setWatchFn(value: (/* props */ AsyncProps[T], /* prevProps */ AsyncProps[T]) => Any): Self = StObject.set(x, "watchFn", js.Any.fromFunction2(value))
     
     inline def setWatchFnUndefined: Self = StObject.set(x, "watchFn", js.undefined)
     

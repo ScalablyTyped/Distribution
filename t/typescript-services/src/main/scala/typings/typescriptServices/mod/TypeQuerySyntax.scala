@@ -12,13 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "TypeQuerySyntax")
 @js.native
-class TypeQuerySyntax protected ()
+open class TypeQuerySyntax protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.TypeQuerySyntax {
   def this(typeOfKeyword: ISyntaxToken, name: INameSyntax, parsedInStrictMode: Boolean) = this()
   
   /* CompleteClass */
-  override def accept(visitor: ISyntaxVisitor): js.Any = js.native
+  override def accept(visitor: ISyntaxVisitor): Any = js.native
   
   /* CompleteClass */
   override def childAt(index: Double): ISyntaxElement = js.native

@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object useDocumentTitleMod {
   
-  @JSImport("@ant-design/pro-utils/lib/hooks/useDocumentTitle", JSImport.Namespace)
+  @JSImport("@ant-design/pro-utils/es/hooks/useDocumentTitle", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(titleInfo: Id, appDefaultTitle: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(titleInfo.asInstanceOf[js.Any], appDefaultTitle.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useDocumentTitle(titleInfo: Id, appDefaultTitle: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useDocumentTitle")(titleInfo.asInstanceOf[js.Any], appDefaultTitle.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def default_false(titleInfo: Id, appDefaultTitle: `false`): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(titleInfo.asInstanceOf[js.Any], appDefaultTitle.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useDocumentTitle_false(titleInfo: Id, appDefaultTitle: `false`): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useDocumentTitle")(titleInfo.asInstanceOf[js.Any], appDefaultTitle.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

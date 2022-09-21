@@ -4,30 +4,19 @@ import typings.gaxios.commonMod.GaxiosPromise
 import typings.googleapisCommon.apiMod.APIRequestContext
 import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
+import typings.googleapisCommon.apiMod.StreamMethodOptions
+import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.3", "dfareporting_v3_3.Resource$Mobileapps")
 @js.native
-class ResourceMobileapps protected () extends StObject {
+open class ResourceMobileapps protected () extends StObject {
   def this(context: APIRequestContext) = this()
   
   var context: APIRequestContext = js.native
   
-  /**
-    * dfareporting.mobileApps.get
-    * @desc Gets one mobile app by ID.
-    * @alias dfareporting.mobileApps.get
-    * @memberOf! ()
-    *
-    * @param {object} params Parameters for request
-    * @param {string} params.id Mobile app ID.
-    * @param {string} params.profileId User profile ID associated with this request.
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
-    */
   def get(): GaxiosPromise[SchemaMobileApp] = js.native
   def get(callback: BodyResponseCallback[SchemaMobileApp]): Unit = js.native
   def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaMobileApp] = js.native
@@ -35,8 +24,8 @@ class ResourceMobileapps protected () extends StObject {
   def get(params: ParamsResourceMobileappsGet, callback: BodyResponseCallback[SchemaMobileApp]): Unit = js.native
   def get(
     params: ParamsResourceMobileappsGet,
-    options: BodyResponseCallback[SchemaMobileApp],
-    callback: BodyResponseCallback[SchemaMobileApp]
+    options: BodyResponseCallback[Readable | SchemaMobileApp],
+    callback: BodyResponseCallback[Readable | SchemaMobileApp]
   ): Unit = js.native
   def get(params: ParamsResourceMobileappsGet, options: MethodOptions): GaxiosPromise[SchemaMobileApp] = js.native
   def get(
@@ -44,24 +33,69 @@ class ResourceMobileapps protected () extends StObject {
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaMobileApp]
   ): Unit = js.native
-  
   /**
-    * dfareporting.mobileApps.list
-    * @desc Retrieves list of available mobile apps.
-    * @alias dfareporting.mobileApps.list
-    * @memberOf! ()
+    * Gets one mobile app by ID.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/dfareporting.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
     *
-    * @param {object} params Parameters for request
-    * @param {string=} params.directories Select only apps from these directories.
-    * @param {string=} params.ids Select only apps with these IDs.
-    * @param {integer=} params.maxResults Maximum number of results to return.
-    * @param {string=} params.pageToken Value of the nextPageToken from the previous result page.
-    * @param {string} params.profileId User profile ID associated with this request.
-    * @param {string=} params.searchString Allows searching for objects by name or ID. Wildcards (*) are allowed. For example, "app*2015" will return objects with names like "app Jan 2018", "app Jan 2018", or simply "app 2018". Most of the searches also add wildcards implicitly at the start and the end of the search string. For example, a search string of "app" will match objects with name "my app", "app 2018", or simply "app".
-    * @param {object} [options] Optionally override request options, such as `url`, `method`, and `encoding`.
-    * @param {callback} callback The callback that handles the response.
-    * @return {object} Request object
+    * const {google} = require('googleapis');
+    * const dfareporting = google.dfareporting('v3.3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/dfatrafficking'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await dfareporting.mobileApps.get({
+    *     // Mobile app ID.
+    *     id: 'placeholder-value',
+    *     // User profile ID associated with this request.
+    *     profileId: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "directory": "my_directory",
+    *   //   "id": "my_id",
+    *   //   "kind": "my_kind",
+    *   //   "publisherName": "my_publisherName",
+    *   //   "title": "my_title"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
     */
+  def get(params: ParamsResourceMobileappsGet, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def get(
+    params: ParamsResourceMobileappsGet,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
+  ): Unit = js.native
+  
   def list(): GaxiosPromise[SchemaMobileAppsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaMobileAppsListResponse]): Unit = js.native
   def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaMobileAppsListResponse] = js.native
@@ -69,13 +103,81 @@ class ResourceMobileapps protected () extends StObject {
   def list(params: ParamsResourceMobileappsList, callback: BodyResponseCallback[SchemaMobileAppsListResponse]): Unit = js.native
   def list(
     params: ParamsResourceMobileappsList,
-    options: BodyResponseCallback[SchemaMobileAppsListResponse],
-    callback: BodyResponseCallback[SchemaMobileAppsListResponse]
+    options: BodyResponseCallback[Readable | SchemaMobileAppsListResponse],
+    callback: BodyResponseCallback[Readable | SchemaMobileAppsListResponse]
   ): Unit = js.native
   def list(params: ParamsResourceMobileappsList, options: MethodOptions): GaxiosPromise[SchemaMobileAppsListResponse] = js.native
   def list(
     params: ParamsResourceMobileappsList,
     options: MethodOptions,
     callback: BodyResponseCallback[SchemaMobileAppsListResponse]
+  ): Unit = js.native
+  /**
+    * Retrieves list of available mobile apps.
+    * @example
+    * ```js
+    * // Before running the sample:
+    * // - Enable the API at:
+    * //   https://console.developers.google.com/apis/api/dfareporting.googleapis.com
+    * // - Login into gcloud by running:
+    * //   `$ gcloud auth application-default login`
+    * // - Install the npm module by running:
+    * //   `$ npm install googleapis`
+    *
+    * const {google} = require('googleapis');
+    * const dfareporting = google.dfareporting('v3.3');
+    *
+    * async function main() {
+    *   const auth = new google.auth.GoogleAuth({
+    *     // Scopes can be specified either as an array or as a single, space-delimited string.
+    *     scopes: ['https://www.googleapis.com/auth/dfatrafficking'],
+    *   });
+    *
+    *   // Acquire an auth client, and bind it to all future calls
+    *   const authClient = await auth.getClient();
+    *   google.options({auth: authClient});
+    *
+    *   // Do the magic
+    *   const res = await dfareporting.mobileApps.list({
+    *     // Select only apps from these directories.
+    *     directories: 'placeholder-value',
+    *     // Select only apps with these IDs.
+    *     ids: 'placeholder-value',
+    *     // Maximum number of results to return.
+    *     maxResults: 'placeholder-value',
+    *     // Value of the nextPageToken from the previous result page.
+    *     pageToken: 'placeholder-value',
+    *     // User profile ID associated with this request.
+    *     profileId: 'placeholder-value',
+    *     // Allows searching for objects by name or ID. Wildcards (*) are allowed. For example, "app*2015" will return objects with names like "app Jan 2018", "app Jan 2018", or simply "app 2018". Most of the searches also add wildcards implicitly at the start and the end of the search string. For example, a search string of "app" will match objects with name "my app", "app 2018", or simply "app".
+    *     searchString: 'placeholder-value',
+    *   });
+    *   console.log(res.data);
+    *
+    *   // Example response
+    *   // {
+    *   //   "kind": "my_kind",
+    *   //   "mobileApps": [],
+    *   //   "nextPageToken": "my_nextPageToken"
+    *   // }
+    * }
+    *
+    * main().catch(e => {
+    *   console.error(e);
+    *   throw e;
+    * });
+    *
+    * ```
+    *
+    * @param params - Parameters for request
+    * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+    * @param callback - Optional callback that handles the response.
+    * @returns A promise if used with async/await, or void if used with a callback.
+    */
+  def list(params: ParamsResourceMobileappsList, options: StreamMethodOptions): GaxiosPromise[Readable] = js.native
+  def list(
+    params: ParamsResourceMobileappsList,
+    options: StreamMethodOptions,
+    callback: BodyResponseCallback[Readable]
   ): Unit = js.native
 }

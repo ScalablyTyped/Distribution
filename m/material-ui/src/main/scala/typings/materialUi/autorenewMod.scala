@@ -10,10 +10,10 @@ object autorenewMod {
   
   @JSImport("material-ui/svg-icons/action/autorenew", JSImport.Default)
   @js.native
-  class default () extends ActionAutorenew
+  open class default () extends ActionAutorenew
   
   @JSImport("material-ui/svg-icons/action/autorenew", "ActionAutorenew")
   @js.native
-  class ActionAutorenew ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionAutorenew ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

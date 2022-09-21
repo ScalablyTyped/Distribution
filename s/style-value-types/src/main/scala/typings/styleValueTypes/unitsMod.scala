@@ -7,27 +7,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object unitsMod {
   
-  @JSImport("style-value-types/lib/value-types/units", "degrees")
+  @JSImport("style-value-types/lib/numbers/units", "degrees")
   @js.native
   val degrees: ValueType = js.native
   
-  @JSImport("style-value-types/lib/value-types/units", "percent")
+  @JSImport("style-value-types/lib/numbers/units", "percent")
   @js.native
   val percent: ValueType = js.native
   
-  @JSImport("style-value-types/lib/value-types/units", "progressPercentage")
+  @JSImport("style-value-types/lib/numbers/units", "progressPercentage")
   @js.native
   val progressPercentage: ValueType = js.native
   
-  @JSImport("style-value-types/lib/value-types/units", "px")
+  @JSImport("style-value-types/lib/numbers/units", "px")
   @js.native
   val px: ValueType = js.native
   
-  @JSImport("style-value-types/lib/value-types/units", "vh")
+  @JSImport("style-value-types/lib/numbers/units", "vh")
   @js.native
   val vh: ValueType = js.native
   
-  @JSImport("style-value-types/lib/value-types/units", "vw")
+  @JSImport("style-value-types/lib/numbers/units", "vw")
   @js.native
   val vw: ValueType = js.native
 }

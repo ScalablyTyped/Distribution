@@ -1,7 +1,7 @@
 
 # Scala.js typings for stylable__node
 
-Typings are for version 3.6.2
+Typings are for version 5.2.1
 
 ## Library description:
 Integrate Stylable into your node application
@@ -10,15 +10,15 @@ Integrate Stylable into your node application
 | ------------------ | :-------------: |
 | Full name          | @stylable/node |
 | Keywords           | - |
-| # releases         | 99 |
-| # dependents       | 9 |
-| # downloads        | 313886 |
-| # stars            | 0 |
+| # releases         | 92 |
+| # dependents       | 0.0 |
+| # downloads        | 26139.666666666668 |
+| # stars            | 1174.0 |
 
 ## Links
-- [Homepage](https://github.com/wix/stylable#readme)
+- [Homepage](https://github.com/wix/stylable/tree/master#readme)
 - [Bugs](https://github.com/wix/stylable/issues)
-- [Repository](https://github.com/wix/stylable)
+- [Repository](https://github.com/wix/stylable/tree/master)
 - [Npm](https://www.npmjs.com/package/%40stylable%2Fnode)
     
 

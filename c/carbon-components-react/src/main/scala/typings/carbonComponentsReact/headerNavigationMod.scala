@@ -11,10 +11,10 @@ object headerNavigationMod {
   
   @JSImport("carbon-components-react/lib/components/UIShell/HeaderNavigation", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[HeaderNavigationProps, js.Object, js.Any]
+  open class default ()
+    extends Component[HeaderNavigationProps, js.Object, Any]
   
-  type HeaderNavigation = Component[HeaderNavigationProps, js.Object, js.Any]
+  type HeaderNavigation = Component[HeaderNavigationProps, js.Object, Any]
   
   type HeaderNavigationProps = ReactAttr[HTMLElement]
 }

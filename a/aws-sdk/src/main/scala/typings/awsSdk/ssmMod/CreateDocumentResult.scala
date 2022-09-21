@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateDocumentResult extends StObject {
   
   /**
-    * Information about the Systems Manager document.
+    * Information about the SSM document.
     */
   var DocumentDescription: js.UndefOr[typings.awsSdk.ssmMod.DocumentDescription] = js.undefined
 }

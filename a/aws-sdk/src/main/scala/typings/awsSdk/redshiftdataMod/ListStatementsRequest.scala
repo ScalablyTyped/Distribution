@@ -17,7 +17,12 @@ trait ListStatementsRequest extends StObject {
   var NextToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The name of the SQL statement specified as input to ExecuteStatement to identify the query. You can list multiple statements by providing a prefix that matches the beginning of the statement name. For example, to list myStatement1, myStatement2, myStatement3, and so on, then provide the a value of myStatement. Data API does a case-sensitive match of SQL statement names to the prefix value you provide. 
+    * A value that filters which statements to return in the response. If true, all statements run by the caller's IAM role are returned. If false, only statements run by the caller's IAM role in the current IAM session are returned. The default is true. 
+    */
+  var RoleLevel: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * The name of the SQL statement specified as input to BatchExecuteStatement or ExecuteStatement to identify the query. You can list multiple statements by providing a prefix that matches the beginning of the statement name. For example, to list myStatement1, myStatement2, myStatement3, and so on, then provide the a value of myStatement. Data API does a case-sensitive match of SQL statement names to the prefix value you provide. 
     */
   var StatementName: js.UndefOr[StatementNameString] = js.undefined
   
@@ -42,6 +47,10 @@ object ListStatementsRequest {
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    
+    inline def setRoleLevel(value: Boolean): Self = StObject.set(x, "RoleLevel", value.asInstanceOf[js.Any])
+    
+    inline def setRoleLevelUndefined: Self = StObject.set(x, "RoleLevel", js.undefined)
     
     inline def setStatementName(value: StatementNameString): Self = StObject.set(x, "StatementName", value.asInstanceOf[js.Any])
     

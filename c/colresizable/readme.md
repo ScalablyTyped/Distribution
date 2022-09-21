@@ -10,10 +10,10 @@ jQuery plugin to resize table columns
 | ------------------ | :-------------: |
 | Full name          | colresizable |
 | Keywords           | resize table, resize columns, resize, resizable, columns, jquery-plugin, table, range slider, colresizable, resize table columns, jquery |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 59317 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4603.333333333333 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](http://bacubacu.com/colresizable/)

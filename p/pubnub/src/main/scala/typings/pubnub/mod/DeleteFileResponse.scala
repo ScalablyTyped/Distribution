@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DeleteFileResponse extends StObject {
   
-  var status: String
+  var status: Double
 }
 object DeleteFileResponse {
   
-  inline def apply(status: String): DeleteFileResponse = {
+  inline def apply(status: Double): DeleteFileResponse = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteFileResponse]
   }
   
   extension [Self <: DeleteFileResponse](x: Self) {
     
-    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

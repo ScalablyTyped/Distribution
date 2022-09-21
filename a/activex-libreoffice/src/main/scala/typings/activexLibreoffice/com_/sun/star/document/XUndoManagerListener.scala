@@ -113,7 +113,7 @@ object XUndoManagerListener {
     enteredHiddenContext: UndoManagerEvent => Unit,
     leftContext: UndoManagerEvent => Unit,
     leftHiddenContext: UndoManagerEvent => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     redoActionsCleared: typings.activexLibreoffice.com_.sun.star.lang.EventObject => Unit,
     release: () => Unit,
     resetAll: typings.activexLibreoffice.com_.sun.star.lang.EventObject => Unit,

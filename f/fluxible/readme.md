@@ -10,15 +10,13 @@ A pluggable container for isomorphic flux applications
 | ------------------ | :-------------: |
 | Full name          | fluxible |
 | Keywords           | yahoo, flux, react, fluxible, isomorphic |
-| # releases         | 0 |
-| # dependents       | 10 |
-| # downloads        | 173627 |
-| # stars            | 3 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 6278.333333333333 |
+| # stars            | 1812.0 |
 
 ## Links
 - [Homepage](https://fluxible.io/)
-- [Bugs](https://github.com/yahoo/fluxible/issues)
-- [Repository](https://github.com/yahoo/fluxible)
 - [Npm](https://www.npmjs.com/package/fluxible)
     
 

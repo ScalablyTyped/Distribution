@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object fetchMod {
   
-  type Fetch = js.Any
+  type Fetch = Any
 }

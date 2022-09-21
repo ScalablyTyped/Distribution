@@ -1,6 +1,5 @@
 package typings.jqueryFormatdatetime
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,7 +40,7 @@ object mod {
       
       inline def setAmpmNamesUndefined: Self = StObject.set(x, "ampmNames", js.undefined)
       
-      inline def setAmpmNamesVarargs(value: String*): Self = StObject.set(x, "ampmNames", js.Array(value :_*))
+      inline def setAmpmNamesVarargs(value: String*): Self = StObject.set(x, "ampmNames", js.Array(value*))
       
       inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
       
@@ -53,11 +52,11 @@ object mod {
       
       inline def setDayNamesShortUndefined: Self = StObject.set(x, "dayNamesShort", js.undefined)
       
-      inline def setDayNamesShortVarargs(value: String*): Self = StObject.set(x, "dayNamesShort", js.Array(value :_*))
+      inline def setDayNamesShortVarargs(value: String*): Self = StObject.set(x, "dayNamesShort", js.Array(value*))
       
       inline def setDayNamesUndefined: Self = StObject.set(x, "dayNames", js.undefined)
       
-      inline def setDayNamesVarargs(value: String*): Self = StObject.set(x, "dayNames", js.Array(value :_*))
+      inline def setDayNamesVarargs(value: String*): Self = StObject.set(x, "dayNames", js.Array(value*))
       
       inline def setFormatAttribute(value: String): Self = StObject.set(x, "formatAttribute", value.asInstanceOf[js.Any])
       
@@ -73,11 +72,11 @@ object mod {
       
       inline def setMonthNamesShortUndefined: Self = StObject.set(x, "monthNamesShort", js.undefined)
       
-      inline def setMonthNamesShortVarargs(value: String*): Self = StObject.set(x, "monthNamesShort", js.Array(value :_*))
+      inline def setMonthNamesShortVarargs(value: String*): Self = StObject.set(x, "monthNamesShort", js.Array(value*))
       
       inline def setMonthNamesUndefined: Self = StObject.set(x, "monthNames", js.undefined)
       
-      inline def setMonthNamesVarargs(value: String*): Self = StObject.set(x, "monthNames", js.Array(value :_*))
+      inline def setMonthNamesVarargs(value: String*): Self = StObject.set(x, "monthNames", js.Array(value*))
       
       inline def setUtc(value: Boolean): Self = StObject.set(x, "utc", value.asInstanceOf[js.Any])
       
@@ -97,8 +96,8 @@ object mod {
     @js.native
     trait JQueryStatic extends StObject {
       
-      def formatDateTime(format: String, date: Date): String = js.native
-      def formatDateTime(format: String, date: Date, options: Options): String = js.native
+      def formatDateTime(format: String, date: js.Date): String = js.native
+      def formatDateTime(format: String, date: js.Date, options: Options): String = js.native
     }
   }
 }

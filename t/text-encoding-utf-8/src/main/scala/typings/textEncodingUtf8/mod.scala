@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Shortcut
-import typings.std.ArrayBuffer
-import typings.std.ArrayBufferView
-import typings.std.Uint8Array
 import typings.textEncodingUtf8.mod.TextEncoding.TextDecoderOptions
 import typings.textEncodingUtf8.mod.TextEncoding.TextDecoderStatic
 import typings.textEncodingUtf8.mod.TextEncoding.TextEncoderOptions
@@ -20,7 +17,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("text-encoding-utf-8", "TextDecoder")
   @js.native
-  class TextDecoder ()
+  open class TextDecoder ()
     extends StObject
        with typings.textEncodingUtf8.mod.TextEncoding.TextDecoder {
     def this(label: String) = this()
@@ -34,7 +31,7 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("text-encoding-utf-8", "TextEncoder")
   @js.native
-  class TextEncoder ()
+  open class TextEncoder ()
     extends StObject
        with typings.textEncodingUtf8.mod.TextEncoding.TextEncoder {
     def this(utfLabel: String) = this()
@@ -54,7 +51,7 @@ object mod {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("text-encoding-utf-8", "TextEncoding.TextDecoder")
     @js.native
-    class TextDecoderCls ()
+    open class TextDecoderCls ()
       extends StObject
          with typings.textEncodingUtf8.mod.TextEncoding.TextDecoder {
       def this(label: String) = this()
@@ -65,7 +62,7 @@ object mod {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("text-encoding-utf-8", "TextEncoding.TextEncoder")
     @js.native
-    class TextEncoderCls ()
+    open class TextEncoderCls ()
       extends StObject
          with typings.textEncodingUtf8.mod.TextEncoding.TextEncoder {
       def this(utfLabel: String) = this()
@@ -96,11 +93,11 @@ object mod {
     trait TextDecoder extends StObject {
       
       def decode(): String = js.native
+      def decode(input: js.typedarray.ArrayBuffer): String = js.native
+      def decode(input: js.typedarray.ArrayBufferView): String = js.native
+      def decode(input: js.typedarray.ArrayBufferView, options: TextDecodeOptions): String = js.native
+      def decode(input: js.typedarray.ArrayBuffer, options: TextDecodeOptions): String = js.native
       def decode(input: Unit, options: TextDecodeOptions): String = js.native
-      def decode(input: ArrayBuffer): String = js.native
-      def decode(input: ArrayBufferView): String = js.native
-      def decode(input: ArrayBufferView, options: TextDecodeOptions): String = js.native
-      def decode(input: ArrayBuffer, options: TextDecodeOptions): String = js.native
       
       var encoding: String = js.native
       
@@ -173,10 +170,10 @@ object mod {
     @js.native
     trait TextEncoder extends StObject {
       
-      def encode(): Uint8Array = js.native
-      def encode(input: String): Uint8Array = js.native
-      def encode(input: String, options: TextEncodeOptions): Uint8Array = js.native
-      def encode(input: Unit, options: TextEncodeOptions): Uint8Array = js.native
+      def encode(): js.typedarray.Uint8Array = js.native
+      def encode(input: String): js.typedarray.Uint8Array = js.native
+      def encode(input: String, options: TextEncodeOptions): js.typedarray.Uint8Array = js.native
+      def encode(input: Unit, options: TextEncodeOptions): js.typedarray.Uint8Array = js.native
       
       var encoding: String = js.native
     }

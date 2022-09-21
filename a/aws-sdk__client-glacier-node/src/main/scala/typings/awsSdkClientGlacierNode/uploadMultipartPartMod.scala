@@ -8,5 +8,5 @@ object uploadMultipartPartMod {
   
   @JSImport("@aws-sdk/client-glacier-node/model/UploadMultipartPart", "UploadMultipartPart")
   @js.native
-  val UploadMultipartPart: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val UploadMultipartPart: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

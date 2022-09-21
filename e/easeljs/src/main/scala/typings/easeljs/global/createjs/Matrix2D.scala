@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("createjs.Matrix2D")
 @js.native
-class Matrix2D protected ()
+open class Matrix2D protected ()
   extends StObject
      with typings.easeljs.createjs.Matrix2D {
   def this(

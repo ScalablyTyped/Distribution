@@ -23,7 +23,7 @@ object XMasterPagesSupplier {
     MasterPages: XDrawPages,
     acquire: () => Unit,
     getMasterPages: () => XDrawPages,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XMasterPagesSupplier = {
     val __obj = js.Dynamic.literal(MasterPages = MasterPages.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getMasterPages = js.Any.fromFunction0(getMasterPages), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

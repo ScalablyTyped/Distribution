@@ -7,12 +7,17 @@ import typings.hlsParser.anon.AverageBandwidth
 import typings.hlsParser.anon.BasePlaylistConstructorPr
 import typings.hlsParser.anon.BasePlaylistConstructorPrCurrentVariant
 import typings.hlsParser.anon.BasePlaylistConstructorPrDiscontinuitySequenceBase
+import typings.hlsParser.anon.Discontinuity
+import typings.hlsParser.anon.Duration
 import typings.hlsParser.anon.Format
 import typings.hlsParser.anon.Height
 import typings.hlsParser.anon.Id
+import typings.hlsParser.anon.LastMSN
 import typings.hlsParser.anon.Offset
 import typings.hlsParser.anon.PartialOptions
 import typings.hlsParser.anon.Uri
+import typings.hlsParser.hlsParserBooleans.`false`
+import typings.hlsParser.hlsParserBooleans.`true`
 import typings.hlsParser.hlsParserStrings.AUDIO
 import typings.hlsParser.hlsParserStrings.EVENT
 import typings.hlsParser.hlsParserStrings.SUBTITLES
@@ -23,8 +28,7 @@ import typings.hlsParser.hlsParserStrings.playlist
 import typings.hlsParser.hlsParserStrings.segment
 import typings.hlsParser.mod.types.MasterPlaylist
 import typings.hlsParser.mod.types.MediaPlaylist
-import typings.node.Buffer
-import typings.std.Date
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,7 +41,7 @@ object mod {
   
   @JSImport("hls-parser", "Data")
   @js.native
-  class Data () extends StObject {
+  open class Data () extends StObject {
     
     var `type`: playlist | segment = js.native
   }
@@ -55,7 +59,7 @@ object mod {
     
     @JSImport("hls-parser", "types.DateRange")
     @js.native
-    class DateRange protected () extends StObject {
+    open class DateRange protected () extends StObject {
       def this(properties: Attributes) = this()
       
       var attributes: js.UndefOr[js.Object] = js.native
@@ -64,7 +68,7 @@ object mod {
       
       var duration: js.UndefOr[Double] = js.native
       
-      var end: js.UndefOr[Date] = js.native
+      var end: js.UndefOr[js.Date] = js.native
       
       var endOnNext: js.UndefOr[Boolean] = js.native
       
@@ -72,12 +76,12 @@ object mod {
       
       var plannedDuration: js.UndefOr[Double] = js.native
       
-      var start: Date = js.native
+      var start: js.Date = js.native
     }
     
     @JSImport("hls-parser", "types.Key")
     @js.native
-    class Key protected () extends StObject {
+    open class Key protected () extends StObject {
       def this(properties: Format) = this()
       
       var format: js.UndefOr[String] = js.native
@@ -93,10 +97,13 @@ object mod {
     
     @JSImport("hls-parser", "types.MasterPlaylist")
     @js.native
-    class MasterPlaylist protected () extends Playlist {
+    open class MasterPlaylist protected () extends Playlist {
       def this(properties: BasePlaylistConstructorPrCurrentVariant) = this()
       
       var currentVariant: js.UndefOr[Double] = js.native
+      
+      @JSName("isMasterPlaylist")
+      var isMasterPlaylist_MasterPlaylist: `true` = js.native
       
       var sessionDataList: js.Array[SessionData] = js.native
       
@@ -107,7 +114,7 @@ object mod {
     
     @JSImport("hls-parser", "types.MediaInitializationSection")
     @js.native
-    class MediaInitializationSection protected () extends StObject {
+    open class MediaInitializationSection protected () extends StObject {
       def this(properties: Uri) = this()
       
       var byterange: js.UndefOr[Byterange] = js.native
@@ -117,7 +124,7 @@ object mod {
     
     @JSImport("hls-parser", "types.MediaPlaylist")
     @js.native
-    class MediaPlaylist protected () extends Playlist {
+    open class MediaPlaylist protected () extends Playlist {
       def this(properties: BasePlaylistConstructorPrDiscontinuitySequenceBase) = this()
       
       var discontinuitySequenceBase: js.UndefOr[Double] = js.native
@@ -126,18 +133,49 @@ object mod {
       
       var isIFrame: Boolean = js.native
       
+      @JSName("isMasterPlaylist")
+      var isMasterPlaylist_MediaPlaylist: `false` = js.native
+      
+      var lowLatencyCompatibility: js.UndefOr[LowLatencyCompatibility] = js.native
+      
       var mediaSequenceBase: js.UndefOr[Double] = js.native
+      
+      var partTargetDuration: js.UndefOr[Double] = js.native
       
       var playlistType: js.UndefOr[EVENT | VOD] = js.native
       
+      var prefetchSegments: js.Array[PrefetchSegment] = js.native
+      
+      var renditionReports: js.UndefOr[js.Array[RenditionReport]] = js.native
+      
       var segments: js.Array[Segment] = js.native
+      
+      var skip: js.UndefOr[Double] = js.native
       
       var targetDuration: Double = js.native
     }
     
+    @JSImport("hls-parser", "types.PartialSegment")
+    @js.native
+    open class PartialSegment protected () extends StObject {
+      def this(properties: Duration) = this()
+      
+      var byterange: js.UndefOr[ByteRange] = js.native
+      
+      var duration: js.UndefOr[Double] = js.native
+      
+      var gap: js.UndefOr[Boolean] = js.native
+      
+      var hint: js.UndefOr[Boolean] = js.native
+      
+      var independent: js.UndefOr[Boolean] = js.native
+      
+      var uri: String = js.native
+    }
+    
     @JSImport("hls-parser", "types.Playlist")
     @js.native
-    class Playlist protected () extends Data {
+    open class Playlist protected () extends Data {
       def this(properties: BasePlaylistConstructorPr) = this()
       
       var independentSegments: Boolean = js.native
@@ -153,9 +191,25 @@ object mod {
       var version: js.UndefOr[Double] = js.native
     }
     
+    @JSImport("hls-parser", "types.PrefetchSegment")
+    @js.native
+    open class PrefetchSegment protected () extends Data {
+      def this(properties: Discontinuity) = this()
+      
+      var discontinuity: js.UndefOr[Boolean] = js.native
+      
+      var discontinuitySequence: Double = js.native
+      
+      var key: js.UndefOr[Key] = js.native
+      
+      var mediaSequenceNumber: Double = js.native
+      
+      var uri: String = js.native
+    }
+    
     @JSImport("hls-parser", "types.Rendition")
     @js.native
-    class Rendition[T] protected () extends StObject {
+    open class Rendition[T] protected () extends StObject {
       def this(properties: AssocLanguage[T]) = this()
       
       var assocLanguage: js.UndefOr[String] = js.native
@@ -183,9 +237,21 @@ object mod {
       var uri: js.UndefOr[String] = js.native
     }
     
+    @JSImport("hls-parser", "types.RenditionReport")
+    @js.native
+    open class RenditionReport protected () extends StObject {
+      def this(properties: LastMSN) = this()
+      
+      var lastMSN: js.UndefOr[Double] = js.native
+      
+      var lastPart: js.UndefOr[Double] = js.native
+      
+      var uri: String = js.native
+    }
+    
     @JSImport("hls-parser", "types.Segment")
     @js.native
-    class Segment protected () extends Data {
+    open class Segment protected () extends Data {
       def this(properties: typings.hlsParser.anon.Byterange) = this()
       
       var byterange: js.UndefOr[Byterange] = js.native
@@ -204,7 +270,9 @@ object mod {
       
       var mediaSequenceNumber: Double = js.native
       
-      var programDateTime: js.UndefOr[Date] = js.native
+      var parts: js.UndefOr[js.Array[PartialSegment]] = js.native
+      
+      var programDateTime: js.UndefOr[js.Date] = js.native
       
       var title: js.UndefOr[String] = js.native
       
@@ -213,7 +281,7 @@ object mod {
     
     @JSImport("hls-parser", "types.SessionData")
     @js.native
-    class SessionData protected () extends StObject {
+    open class SessionData protected () extends StObject {
       def this(properties: Id) = this()
       
       var id: String = js.native
@@ -227,7 +295,7 @@ object mod {
     
     @JSImport("hls-parser", "types.Variant")
     @js.native
-    class Variant protected () extends StObject {
+    open class Variant protected () extends StObject {
       def this(properties: AverageBandwidth) = this()
       
       var audio: js.Array[Rendition[AUDIO]] = js.native
@@ -297,6 +365,64 @@ object mod {
         inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
         
         inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      }
+    }
+    
+    trait ByteRange extends StObject {
+      
+      var length: Double
+      
+      var offset: Double
+    }
+    object ByteRange {
+      
+      inline def apply(length: Double, offset: Double): ByteRange = {
+        val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
+        __obj.asInstanceOf[ByteRange]
+      }
+      
+      extension [Self <: ByteRange](x: Self) {
+        
+        inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+        
+        inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      }
+    }
+    
+    trait LowLatencyCompatibility extends StObject {
+      
+      var canBlockReload: js.UndefOr[Boolean] = js.undefined
+      
+      var canSkipUntil: js.UndefOr[Boolean] = js.undefined
+      
+      var holdBack: js.UndefOr[Double] = js.undefined
+      
+      var partHoldBack: js.UndefOr[Double] = js.undefined
+    }
+    object LowLatencyCompatibility {
+      
+      inline def apply(): LowLatencyCompatibility = {
+        val __obj = js.Dynamic.literal()
+        __obj.asInstanceOf[LowLatencyCompatibility]
+      }
+      
+      extension [Self <: LowLatencyCompatibility](x: Self) {
+        
+        inline def setCanBlockReload(value: Boolean): Self = StObject.set(x, "canBlockReload", value.asInstanceOf[js.Any])
+        
+        inline def setCanBlockReloadUndefined: Self = StObject.set(x, "canBlockReload", js.undefined)
+        
+        inline def setCanSkipUntil(value: Boolean): Self = StObject.set(x, "canSkipUntil", value.asInstanceOf[js.Any])
+        
+        inline def setCanSkipUntilUndefined: Self = StObject.set(x, "canSkipUntil", js.undefined)
+        
+        inline def setHoldBack(value: Double): Self = StObject.set(x, "holdBack", value.asInstanceOf[js.Any])
+        
+        inline def setHoldBackUndefined: Self = StObject.set(x, "holdBack", js.undefined)
+        
+        inline def setPartHoldBack(value: Double): Self = StObject.set(x, "partHoldBack", value.asInstanceOf[js.Any])
+        
+        inline def setPartHoldBackUndefined: Self = StObject.set(x, "partHoldBack", js.undefined)
       }
     }
   }

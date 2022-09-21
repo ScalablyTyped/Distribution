@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ndn-js", "MetaInfo")
 @js.native
-class MetaInfo ()
+open class MetaInfo ()
   extends typings.ndnJs.dataMod.MetaInfo {
   def this(meta: typings.ndnJs.dataMod.MetaInfo) = this()
 }

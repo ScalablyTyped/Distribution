@@ -10,10 +10,10 @@ The lodash method `_.isFinite` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.isfinite |
 | Keywords           | lodash-modularized, isfinite |
-| # releases         | 0 |
-| # dependents       | 54 |
-| # downloads        | 33714839 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3380264.0 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

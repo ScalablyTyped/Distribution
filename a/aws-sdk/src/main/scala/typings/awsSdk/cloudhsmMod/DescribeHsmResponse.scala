@@ -145,7 +145,7 @@ object DescribeHsmResponse {
     
     inline def setPartitionsUndefined: Self = StObject.set(x, "Partitions", js.undefined)
     
-    inline def setPartitionsVarargs(value: PartitionArn*): Self = StObject.set(x, "Partitions", js.Array(value :_*))
+    inline def setPartitionsVarargs(value: PartitionArn*): Self = StObject.set(x, "Partitions", js.Array(value*))
     
     inline def setSerialNumber(value: HsmSerialNumber): Self = StObject.set(x, "SerialNumber", value.asInstanceOf[js.Any])
     

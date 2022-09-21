@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.DepthReducer")
 @js.native
-class DepthReducer protected ()
+open class DepthReducer protected ()
   extends StObject
      with typings.babylonjs.BABYLON.DepthReducer {
   /**

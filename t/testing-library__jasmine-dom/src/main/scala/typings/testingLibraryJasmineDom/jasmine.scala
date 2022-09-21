@@ -1,9 +1,7 @@
 package typings.testingLibraryJasmineDom
 
-import typings.std.HTMLElement
+import typings.std.Element
 import typings.std.Record
-import typings.std.RegExp
-import typings.std.SVGElement
 import typings.testingLibraryJasmineDom.anon.NormalizeWhitespace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -168,8 +166,7 @@ object jasmine {
       * Chequea si un elemento contiene a otro como descendiente.
       */
     def toContainElement(): Boolean = js.native
-    def toContainElement(element: HTMLElement): Boolean = js.native
-    def toContainElement(element: SVGElement): Boolean = js.native
+    def toContainElement(element: Element): Boolean = js.native
     
     /**
       * @description
@@ -180,7 +177,7 @@ object jasmine {
       * Chequea si un elemento tiene cierto atributo.
       */
     def toHaveAttribute(attribute: String): Boolean = js.native
-    def toHaveAttribute(attribute: String, value: js.Any): Boolean = js.native
+    def toHaveAttribute(attribute: String, value: Any): Boolean = js.native
     
     /**
       * @description
@@ -226,7 +223,7 @@ object jasmine {
       */
     def toHaveDescription(): Boolean = js.native
     def toHaveDescription(text: String): Boolean = js.native
-    def toHaveDescription(text: RegExp): Boolean = js.native
+    def toHaveDescription(text: js.RegExp): Boolean = js.native
     
     /**
       * @description
@@ -243,8 +240,8 @@ object jasmine {
       * los cuales pueden ser matcheados usando `toBeChecked` o `toHaveFormValues`.
       */
     def toHaveDisplayValue(value: String): Boolean = js.native
-    def toHaveDisplayValue(value: js.Array[String | RegExp]): Boolean = js.native
-    def toHaveDisplayValue(value: RegExp): Boolean = js.native
+    def toHaveDisplayValue(value: js.Array[String | js.RegExp]): Boolean = js.native
+    def toHaveDisplayValue(value: js.RegExp): Boolean = js.native
     
     /**
       * @description
@@ -268,7 +265,7 @@ object jasmine {
       *
       * Solo puede ser usado con elementos `form` o `fieldset`.
       */
-    def toHaveFormValues(expectedValues: Record[String, js.Any]): Boolean = js.native
+    def toHaveFormValues(expectedValues: Record[String, Any]): Boolean = js.native
     
     /**
       * @description
@@ -283,7 +280,7 @@ object jasmine {
       * Solo matchea si el elemento tiene **todas** las propiedades esperadas aplicadas.
       */
     def toHaveStyle(css: String): Boolean = js.native
-    def toHaveStyle(css: Record[String, js.Any]): Boolean = js.native
+    def toHaveStyle(css: Record[String, Any]): Boolean = js.native
     
     /**
       * @description
@@ -307,8 +304,8 @@ object jasmine {
       */
     def toHaveTextContent(text: String): Boolean = js.native
     def toHaveTextContent(text: String, options: NormalizeWhitespace): Boolean = js.native
-    def toHaveTextContent(text: RegExp): Boolean = js.native
-    def toHaveTextContent(text: RegExp, options: NormalizeWhitespace): Boolean = js.native
+    def toHaveTextContent(text: js.RegExp): Boolean = js.native
+    def toHaveTextContent(text: js.RegExp, options: NormalizeWhitespace): Boolean = js.native
     
     /**
       * @description

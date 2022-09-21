@@ -12,9 +12,14 @@ trait DBCluster extends StObject {
   var AllocatedStorage: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
-    * Provides a list of the AWS Identity and Access Management (IAM) roles that are associated with the DB cluster. IAM roles that are associated with a DB cluster grant permission for the DB cluster to access other AWS services on your behalf.
+    * Provides a list of the Amazon Identity and Access Management (IAM) roles that are associated with the DB cluster. IAM roles that are associated with a DB cluster grant permission for the DB cluster to access other Amazon services on your behalf.
     */
   var AssociatedRoles: js.UndefOr[DBClusterRoles] = js.undefined
+  
+  /**
+    * Time at which the DB cluster will be automatically restarted.
+    */
+  var AutomaticRestartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Provides the list of EC2 Availability Zones that instances in the DB cluster can be created in.
@@ -27,7 +32,7 @@ trait DBCluster extends StObject {
   var BackupRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
-    *  (Not supported by Neptune) 
+    * Not supported by Neptune.
     */
   var CharacterSetName: js.UndefOr[String] = js.undefined
   
@@ -39,7 +44,17 @@ trait DBCluster extends StObject {
   /**
     * Specifies the time when the DB cluster was created, in Universal Coordinated Time (UTC).
     */
-  var ClusterCreateTime: js.UndefOr[TStamp] = js.undefined
+  var ClusterCreateTime: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    *  If set to true, tags are copied to any snapshot of the DB cluster that is created. 
+    */
+  var CopyTagsToSnapshot: js.UndefOr[BooleanOptional] = js.undefined
+  
+  /**
+    * If set to true, the DB cluster can be cloned across accounts.
+    */
+  var CrossAccountClone: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) for the DB cluster.
@@ -57,7 +72,7 @@ trait DBCluster extends StObject {
   var DBClusterMembers: js.UndefOr[DBClusterMemberList] = js.undefined
   
   /**
-    *  (Not supported by Neptune) 
+    * Not supported by Neptune.
     */
   var DBClusterOptionGroupMemberships: js.UndefOr[typings.awsSdk.neptuneMod.DBClusterOptionGroupMemberships] = js.undefined
   
@@ -77,7 +92,7 @@ trait DBCluster extends StObject {
   var DatabaseName: js.UndefOr[String] = js.undefined
   
   /**
-    * The AWS Region-unique, immutable identifier for the DB cluster. This identifier is found in AWS CloudTrail log entries whenever the AWS KMS key for the DB cluster is accessed.
+    * The Amazon Region-unique, immutable identifier for the DB cluster. This identifier is found in Amazon CloudTrail log entries whenever the Amazon KMS key for the DB cluster is accessed.
     */
   var DbClusterResourceId: js.UndefOr[String] = js.undefined
   
@@ -89,7 +104,7 @@ trait DBCluster extends StObject {
   /**
     * Specifies the earliest time to which a database can be restored with point-in-time restore.
     */
-  var EarliestRestorableTime: js.UndefOr[TStamp] = js.undefined
+  var EarliestRestorableTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A list of log types that this DB cluster is configured to export to CloudWatch Logs.
@@ -117,22 +132,22 @@ trait DBCluster extends StObject {
   var HostedZoneId: js.UndefOr[String] = js.undefined
   
   /**
-    * True if mapping of AWS Identity and Access Management (IAM) accounts to database accounts is enabled, and otherwise false.
+    * True if mapping of Amazon Identity and Access Management (IAM) accounts to database accounts is enabled, and otherwise false.
     */
   var IAMDatabaseAuthenticationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * If StorageEncrypted is true, the AWS KMS key identifier for the encrypted DB cluster.
+    * If StorageEncrypted is true, the Amazon KMS key identifier for the encrypted DB cluster.
     */
   var KmsKeyId: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the latest time to which a database can be restored with point-in-time restore.
     */
-  var LatestRestorableTime: js.UndefOr[TStamp] = js.undefined
+  var LatestRestorableTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * Contains the master username for the DB cluster.
+    * Not supported by Neptune.
     */
   var MasterUsername: js.UndefOr[String] = js.undefined
   
@@ -208,13 +223,17 @@ object DBCluster {
     
     inline def setAssociatedRolesUndefined: Self = StObject.set(x, "AssociatedRoles", js.undefined)
     
-    inline def setAssociatedRolesVarargs(value: DBClusterRole*): Self = StObject.set(x, "AssociatedRoles", js.Array(value :_*))
+    inline def setAssociatedRolesVarargs(value: DBClusterRole*): Self = StObject.set(x, "AssociatedRoles", js.Array(value*))
+    
+    inline def setAutomaticRestartTime(value: js.Date): Self = StObject.set(x, "AutomaticRestartTime", value.asInstanceOf[js.Any])
+    
+    inline def setAutomaticRestartTimeUndefined: Self = StObject.set(x, "AutomaticRestartTime", js.undefined)
     
     inline def setAvailabilityZones(value: AvailabilityZones): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
     
     inline def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
     
-    inline def setAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
+    inline def setAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "AvailabilityZones", js.Array(value*))
     
     inline def setBackupRetentionPeriod(value: IntegerOptional): Self = StObject.set(x, "BackupRetentionPeriod", value.asInstanceOf[js.Any])
     
@@ -228,9 +247,17 @@ object DBCluster {
     
     inline def setCloneGroupIdUndefined: Self = StObject.set(x, "CloneGroupId", js.undefined)
     
-    inline def setClusterCreateTime(value: TStamp): Self = StObject.set(x, "ClusterCreateTime", value.asInstanceOf[js.Any])
+    inline def setClusterCreateTime(value: js.Date): Self = StObject.set(x, "ClusterCreateTime", value.asInstanceOf[js.Any])
     
     inline def setClusterCreateTimeUndefined: Self = StObject.set(x, "ClusterCreateTime", js.undefined)
+    
+    inline def setCopyTagsToSnapshot(value: BooleanOptional): Self = StObject.set(x, "CopyTagsToSnapshot", value.asInstanceOf[js.Any])
+    
+    inline def setCopyTagsToSnapshotUndefined: Self = StObject.set(x, "CopyTagsToSnapshot", js.undefined)
+    
+    inline def setCrossAccountClone(value: BooleanOptional): Self = StObject.set(x, "CrossAccountClone", value.asInstanceOf[js.Any])
+    
+    inline def setCrossAccountCloneUndefined: Self = StObject.set(x, "CrossAccountClone", js.undefined)
     
     inline def setDBClusterArn(value: String): Self = StObject.set(x, "DBClusterArn", value.asInstanceOf[js.Any])
     
@@ -244,13 +271,13 @@ object DBCluster {
     
     inline def setDBClusterMembersUndefined: Self = StObject.set(x, "DBClusterMembers", js.undefined)
     
-    inline def setDBClusterMembersVarargs(value: DBClusterMember*): Self = StObject.set(x, "DBClusterMembers", js.Array(value :_*))
+    inline def setDBClusterMembersVarargs(value: DBClusterMember*): Self = StObject.set(x, "DBClusterMembers", js.Array(value*))
     
     inline def setDBClusterOptionGroupMemberships(value: DBClusterOptionGroupMemberships): Self = StObject.set(x, "DBClusterOptionGroupMemberships", value.asInstanceOf[js.Any])
     
     inline def setDBClusterOptionGroupMembershipsUndefined: Self = StObject.set(x, "DBClusterOptionGroupMemberships", js.undefined)
     
-    inline def setDBClusterOptionGroupMembershipsVarargs(value: DBClusterOptionGroupStatus*): Self = StObject.set(x, "DBClusterOptionGroupMemberships", js.Array(value :_*))
+    inline def setDBClusterOptionGroupMembershipsVarargs(value: DBClusterOptionGroupStatus*): Self = StObject.set(x, "DBClusterOptionGroupMemberships", js.Array(value*))
     
     inline def setDBClusterParameterGroup(value: String): Self = StObject.set(x, "DBClusterParameterGroup", value.asInstanceOf[js.Any])
     
@@ -272,7 +299,7 @@ object DBCluster {
     
     inline def setDeletionProtectionUndefined: Self = StObject.set(x, "DeletionProtection", js.undefined)
     
-    inline def setEarliestRestorableTime(value: TStamp): Self = StObject.set(x, "EarliestRestorableTime", value.asInstanceOf[js.Any])
+    inline def setEarliestRestorableTime(value: js.Date): Self = StObject.set(x, "EarliestRestorableTime", value.asInstanceOf[js.Any])
     
     inline def setEarliestRestorableTimeUndefined: Self = StObject.set(x, "EarliestRestorableTime", js.undefined)
     
@@ -280,7 +307,7 @@ object DBCluster {
     
     inline def setEnabledCloudwatchLogsExportsUndefined: Self = StObject.set(x, "EnabledCloudwatchLogsExports", js.undefined)
     
-    inline def setEnabledCloudwatchLogsExportsVarargs(value: String*): Self = StObject.set(x, "EnabledCloudwatchLogsExports", js.Array(value :_*))
+    inline def setEnabledCloudwatchLogsExportsVarargs(value: String*): Self = StObject.set(x, "EnabledCloudwatchLogsExports", js.Array(value*))
     
     inline def setEndpoint(value: String): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
     
@@ -306,7 +333,7 @@ object DBCluster {
     
     inline def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
     
-    inline def setLatestRestorableTime(value: TStamp): Self = StObject.set(x, "LatestRestorableTime", value.asInstanceOf[js.Any])
+    inline def setLatestRestorableTime(value: js.Date): Self = StObject.set(x, "LatestRestorableTime", value.asInstanceOf[js.Any])
     
     inline def setLatestRestorableTimeUndefined: Self = StObject.set(x, "LatestRestorableTime", js.undefined)
     
@@ -338,7 +365,7 @@ object DBCluster {
     
     inline def setReadReplicaIdentifiersUndefined: Self = StObject.set(x, "ReadReplicaIdentifiers", js.undefined)
     
-    inline def setReadReplicaIdentifiersVarargs(value: String*): Self = StObject.set(x, "ReadReplicaIdentifiers", js.Array(value :_*))
+    inline def setReadReplicaIdentifiersVarargs(value: String*): Self = StObject.set(x, "ReadReplicaIdentifiers", js.Array(value*))
     
     inline def setReaderEndpoint(value: String): Self = StObject.set(x, "ReaderEndpoint", value.asInstanceOf[js.Any])
     
@@ -360,6 +387,6 @@ object DBCluster {
     
     inline def setVpcSecurityGroupsUndefined: Self = StObject.set(x, "VpcSecurityGroups", js.undefined)
     
-    inline def setVpcSecurityGroupsVarargs(value: VpcSecurityGroupMembership*): Self = StObject.set(x, "VpcSecurityGroups", js.Array(value :_*))
+    inline def setVpcSecurityGroupsVarargs(value: VpcSecurityGroupMembership*): Self = StObject.set(x, "VpcSecurityGroups", js.Array(value*))
   }
 }

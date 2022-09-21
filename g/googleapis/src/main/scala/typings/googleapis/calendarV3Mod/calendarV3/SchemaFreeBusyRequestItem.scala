@@ -9,7 +9,7 @@ trait SchemaFreeBusyRequestItem extends StObject {
   /**
     * The identifier of a calendar or a group.
     */
-  var id: js.UndefOr[String] = js.undefined
+  var id: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaFreeBusyRequestItem {
   
@@ -21,6 +21,8 @@ object SchemaFreeBusyRequestItem {
   extension [Self <: SchemaFreeBusyRequestItem](x: Self) {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdNull: Self = StObject.set(x, "id", null)
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }

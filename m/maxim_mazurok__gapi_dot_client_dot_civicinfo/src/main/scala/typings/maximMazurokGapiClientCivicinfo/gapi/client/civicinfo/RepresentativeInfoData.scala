@@ -11,7 +11,7 @@ trait RepresentativeInfoData extends StObject {
   var divisions: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.civicinfo.gapi.client.civicinfo.GeographicDivision}
-    */ typings.maximMazurokGapiClientCivicinfo.maximMazurokGapiClientCivicinfoStrings.RepresentativeInfoData & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientCivicinfo.maximMazurokGapiClientCivicinfoStrings.RepresentativeInfoData & TopLevel[Any]
   ] = js.undefined
   
   /** Elected offices referenced by the divisions listed above. Will only be present if includeOffices was true in the request. */
@@ -32,7 +32,7 @@ object RepresentativeInfoData {
     inline def setDivisions(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.civicinfo.gapi.client.civicinfo.GeographicDivision}
-      */ typings.maximMazurokGapiClientCivicinfo.maximMazurokGapiClientCivicinfoStrings.RepresentativeInfoData & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCivicinfo.maximMazurokGapiClientCivicinfoStrings.RepresentativeInfoData & TopLevel[Any]
     ): Self = StObject.set(x, "divisions", value.asInstanceOf[js.Any])
     
     inline def setDivisionsUndefined: Self = StObject.set(x, "divisions", js.undefined)
@@ -41,12 +41,12 @@ object RepresentativeInfoData {
     
     inline def setOfficesUndefined: Self = StObject.set(x, "offices", js.undefined)
     
-    inline def setOfficesVarargs(value: Office*): Self = StObject.set(x, "offices", js.Array(value :_*))
+    inline def setOfficesVarargs(value: Office*): Self = StObject.set(x, "offices", js.Array(value*))
     
     inline def setOfficials(value: js.Array[Official]): Self = StObject.set(x, "officials", value.asInstanceOf[js.Any])
     
     inline def setOfficialsUndefined: Self = StObject.set(x, "officials", js.undefined)
     
-    inline def setOfficialsVarargs(value: Official*): Self = StObject.set(x, "officials", js.Array(value :_*))
+    inline def setOfficialsVarargs(value: Official*): Self = StObject.set(x, "officials", js.Array(value*))
   }
 }

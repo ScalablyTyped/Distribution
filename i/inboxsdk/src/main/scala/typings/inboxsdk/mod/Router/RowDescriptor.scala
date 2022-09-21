@@ -62,7 +62,7 @@ object RowDescriptor {
     
     inline def setLabels(value: js.Array[LabelDescriptor]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    inline def setLabelsVarargs(value: LabelDescriptor*): Self = StObject.set(x, "labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: LabelDescriptor*): Self = StObject.set(x, "labels", js.Array(value*))
     
     inline def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
     
@@ -76,7 +76,7 @@ object RowDescriptor {
     
     inline def setRouteParamsUndefined: Self = StObject.set(x, "routeParams", js.undefined)
     
-    inline def setRouteParamsVarargs(value: String*): Self = StObject.set(x, "routeParams", js.Array(value :_*))
+    inline def setRouteParamsVarargs(value: String*): Self = StObject.set(x, "routeParams", js.Array(value*))
     
     inline def setShortDetailText(value: String): Self = StObject.set(x, "shortDetailText", value.asInstanceOf[js.Any])
     

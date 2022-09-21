@@ -29,7 +29,7 @@ object ListBackupsOutput {
     
     inline def setBackupSummariesUndefined: Self = StObject.set(x, "BackupSummaries", js.undefined)
     
-    inline def setBackupSummariesVarargs(value: BackupSummary*): Self = StObject.set(x, "BackupSummaries", js.Array(value :_*))
+    inline def setBackupSummariesVarargs(value: BackupSummary*): Self = StObject.set(x, "BackupSummaries", js.Array(value*))
     
     inline def setLastEvaluatedBackupArn(value: BackupArn): Self = StObject.set(x, "LastEvaluatedBackupArn", value.asInstanceOf[js.Any])
     

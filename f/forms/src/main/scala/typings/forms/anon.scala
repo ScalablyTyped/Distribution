@@ -1,70 +1,44 @@
 package typings.forms
 
-import typings.forms.mod.Form
+import org.scalablytyped.runtime.StringDictionary
+import typings.forms.mod.FormBound
+import typings.forms.mod.FormData
+import typings.forms.mod.FormFields
 import typings.forms.mod.FormHandleCallback
+import typings.node.httpMod.IncomingMessage
+import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  trait Body extends StObject {
+  trait Empty[Fields /* <: FormFields */, Data /* <: IncomingMessage | (Partial[FormData[Fields]] & StringDictionary[Any]) */] extends StObject {
     
-    var body: String
+    var empty: js.UndefOr[FormHandleCallback[Fields, Data]] = js.undefined
     
-    var method: String
+    var error: js.UndefOr[FormHandleCallback[Fields, Data]] = js.undefined
     
-    var url: String
-  }
-  object Body {
-    
-    inline def apply(body: String, method: String, url: String): Body = {
-      val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Body]
-    }
-    
-    extension [Self <: Body](x: Self) {
-      
-      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
-      
-      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
-      
-      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Empty extends StObject {
-    
-    var empty: js.UndefOr[FormHandleCallback] = js.undefined
-    
-    var error: js.UndefOr[FormHandleCallback] = js.undefined
-    
-    var other: js.UndefOr[FormHandleCallback] = js.undefined
-    
-    var success: js.UndefOr[FormHandleCallback] = js.undefined
+    var success: js.UndefOr[FormHandleCallback[Fields, Data]] = js.undefined
   }
   object Empty {
     
-    inline def apply(): Empty = {
+    inline def apply[Fields /* <: FormFields */, Data /* <: IncomingMessage | (Partial[FormData[Fields]] & StringDictionary[Any]) */](): Empty[Fields, Data] = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Empty]
+      __obj.asInstanceOf[Empty[Fields, Data]]
     }
     
-    extension [Self <: Empty](x: Self) {
+    extension [Self <: Empty[?, ?], Fields /* <: FormFields */, Data /* <: IncomingMessage | (Partial[FormData[Fields]] & StringDictionary[Any]) */](x: Self & (Empty[Fields, Data])) {
       
-      inline def setEmpty(value: /* form */ Form => Unit): Self = StObject.set(x, "empty", js.Any.fromFunction1(value))
+      inline def setEmpty(value: /* form */ FormBound[Fields, Data | FormData[Fields]] => Unit): Self = StObject.set(x, "empty", js.Any.fromFunction1(value))
       
       inline def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
       
-      inline def setError(value: /* form */ Form => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* form */ FormBound[Fields, Data | FormData[Fields]] => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      inline def setOther(value: /* form */ Form => Unit): Self = StObject.set(x, "other", js.Any.fromFunction1(value))
-      
-      inline def setOtherUndefined: Self = StObject.set(x, "other", js.undefined)
-      
-      inline def setSuccess(value: /* form */ Form => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+      inline def setSuccess(value: /* form */ FormBound[Fields, Data | FormData[Fields]] => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
       
       inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     }
@@ -89,13 +63,13 @@ object anon {
       
       inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
       
-      inline def setFieldVarargs(value: String*): Self = StObject.set(x, "field", js.Array(value :_*))
+      inline def setFieldVarargs(value: String*): Self = StObject.set(x, "field", js.Array(value*))
       
       inline def setLabel(value: js.Array[String]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      inline def setLabelVarargs(value: String*): Self = StObject.set(x, "label", js.Array(value :_*))
+      inline def setLabelVarargs(value: String*): Self = StObject.set(x, "label", js.Array(value*))
     }
   }
   
@@ -148,7 +122,7 @@ object anon {
       
       inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
       
-      inline def setClassesVarargs(value: String*): Self = StObject.set(x, "classes", js.Array(value :_*))
+      inline def setClassesVarargs(value: String*): Self = StObject.set(x, "classes", js.Array(value*))
       
       inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
       
@@ -158,7 +132,7 @@ object anon {
       
       inline def setLabelClassesUndefined: Self = StObject.set(x, "labelClasses", js.undefined)
       
-      inline def setLabelClassesVarargs(value: String*): Self = StObject.set(x, "labelClasses", js.Array(value :_*))
+      inline def setLabelClassesVarargs(value: String*): Self = StObject.set(x, "labelClasses", js.Array(value*))
       
       inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       

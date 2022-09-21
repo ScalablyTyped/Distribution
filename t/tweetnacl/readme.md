@@ -1,7 +1,7 @@
 
 # Scala.js typings for tweetnacl
 
-Typings are for version 0.14.5
+Typings are for version 1.0.3
 
 ## Library description:
 Port of TweetNaCl cryptographic library to JavaScript
@@ -10,10 +10,10 @@ Port of TweetNaCl cryptographic library to JavaScript
 | ------------------ | :-------------: |
 | Full name          | tweetnacl |
 | Keywords           | crypto, cryptography, curve25519, ed25519, encrypt, hash, key, nacl, poly1305, public, salsa20, signatures |
-| # releases         | 3 |
-| # dependents       | 806 |
-| # downloads        | 833720976 |
-| # stars            | 9 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 8.684616733333333E7 |
+| # stars            | 1476.0 |
 
 ## Links
 - [Homepage](https://tweetnacl.js.org)

@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "CredUserpassPayload")
 @js.native
-class CredUserpassPayload ()
+open class CredUserpassPayload ()
   extends typings.nodegit.credUserPassPayloadMod.CredUserpassPayload

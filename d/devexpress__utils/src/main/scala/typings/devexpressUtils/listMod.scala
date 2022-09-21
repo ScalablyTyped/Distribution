@@ -16,7 +16,7 @@ object listMod {
   
   @JSImport("@devexpress/utils/lib/utils/list", "ListUtils")
   @js.native
-  class ListUtils () extends StObject
+  open class ListUtils () extends StObject
   /* static members */
   object ListUtils {
     
@@ -223,7 +223,7 @@ object listMod {
     
     inline def equals[T /* <: IEquatable[T] */](a: js.Array[T], b: js.Array[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    inline def equalsByReference(a: js.Array[js.Any], b: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equalsByReference")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def equalsByReference(a: js.Array[Any], b: js.Array[Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equalsByReference")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     inline def filter[T](list: js.Array[T], callback: js.Function2[/* currVal */ T, /* index */ Double, Boolean]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(list.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
     inline def filter[T](
@@ -316,7 +316,7 @@ object listMod {
     
     inline def initByValue[T](numElements: Double, initValue: T): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("initByValue")(numElements.asInstanceOf[js.Any], initValue.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
     
-    inline def joinLists[T, TRes](converter: js.Function1[/* list */ js.Array[T], js.Array[TRes]], lists: js.Array[T]*): js.Array[TRes] = (^.asInstanceOf[js.Dynamic].applyDynamic("joinLists")(converter.asInstanceOf[js.Any], lists.asInstanceOf[js.Any])).asInstanceOf[js.Array[TRes]]
+    inline def joinLists[T, TRes](converter: js.Function1[/* list */ js.Array[T], js.Array[TRes]], lists: js.Array[T]*): js.Array[TRes] = ^.asInstanceOf[js.Dynamic].applyDynamic("joinLists")(List(converter.asInstanceOf[js.Any]).`++`(lists.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Array[TRes]]
     
     inline def last[T](list: js.Array[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("last")(list.asInstanceOf[js.Any]).asInstanceOf[T]
     

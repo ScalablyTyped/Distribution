@@ -19,7 +19,7 @@ trait IFilter
   var exactMatch: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Function) */
-  var filterFn: js.UndefOr[js.Any] = js.undefined
+  var filterFn: js.UndefOr[Any] = js.undefined
   
   /** [Method] Returns the value of anyMatch
     * @returns Boolean
@@ -39,7 +39,7 @@ trait IFilter
   /** [Method] Returns the value of filterFn
     * @returns Function
     */
-  var getFilterFn: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getFilterFn: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of id
     * @returns String
@@ -59,12 +59,12 @@ trait IFilter
   /** [Method] Returns the value of scope
     * @returns Object
     */
-  var getScope: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getScope: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of value
     * @returns RegExp/Mixed
     */
-  var getValue: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getValue: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Config Option] (String) */
   var id: js.UndefOr[String] = js.undefined
@@ -76,7 +76,7 @@ trait IFilter
   var root: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Object) */
-  var scope: js.UndefOr[js.Any] = js.undefined
+  var scope: js.UndefOr[Any] = js.undefined
   
   /** [Method] Sets the value of anyMatch
     * @param anyMatch Boolean The new value.
@@ -96,7 +96,7 @@ trait IFilter
   /** [Method] Sets the value of filterFn
     * @param filterFn Function The new value.
     */
-  var setFilterFn: js.UndefOr[js.Function1[/* filterFn */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setFilterFn: js.UndefOr[js.Function1[/* filterFn */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of id
     * @param id String The new value.
@@ -116,15 +116,15 @@ trait IFilter
   /** [Method] Sets the value of scope
     * @param scope Object The new value.
     */
-  var setScope: js.UndefOr[js.Function1[/* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setScope: js.UndefOr[js.Function1[/* scope */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of value
     * @param value RegExp/Mixed The new value.
     */
-  var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Config Option] (RegExp/Mixed) */
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[Any] = js.undefined
 }
 object IFilter {
   
@@ -147,7 +147,7 @@ object IFilter {
     
     inline def setExactMatchUndefined: Self = StObject.set(x, "exactMatch", js.undefined)
     
-    inline def setFilterFn(value: js.Any): Self = StObject.set(x, "filterFn", value.asInstanceOf[js.Any])
+    inline def setFilterFn(value: Any): Self = StObject.set(x, "filterFn", value.asInstanceOf[js.Any])
     
     inline def setFilterFnUndefined: Self = StObject.set(x, "filterFn", js.undefined)
     
@@ -163,7 +163,7 @@ object IFilter {
     
     inline def setGetExactMatchUndefined: Self = StObject.set(x, "getExactMatch", js.undefined)
     
-    inline def setGetFilterFn(value: () => js.Any): Self = StObject.set(x, "getFilterFn", js.Any.fromFunction0(value))
+    inline def setGetFilterFn(value: () => Any): Self = StObject.set(x, "getFilterFn", js.Any.fromFunction0(value))
     
     inline def setGetFilterFnUndefined: Self = StObject.set(x, "getFilterFn", js.undefined)
     
@@ -179,11 +179,11 @@ object IFilter {
     
     inline def setGetRootUndefined: Self = StObject.set(x, "getRoot", js.undefined)
     
-    inline def setGetScope(value: () => js.Any): Self = StObject.set(x, "getScope", js.Any.fromFunction0(value))
+    inline def setGetScope(value: () => Any): Self = StObject.set(x, "getScope", js.Any.fromFunction0(value))
     
     inline def setGetScopeUndefined: Self = StObject.set(x, "getScope", js.undefined)
     
-    inline def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
     inline def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
     
@@ -199,7 +199,7 @@ object IFilter {
     
     inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    inline def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
     inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
@@ -215,7 +215,7 @@ object IFilter {
     
     inline def setSetExactMatchUndefined: Self = StObject.set(x, "setExactMatch", js.undefined)
     
-    inline def setSetFilterFn(value: /* filterFn */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setFilterFn", js.Any.fromFunction1(value))
+    inline def setSetFilterFn(value: /* filterFn */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setFilterFn", js.Any.fromFunction1(value))
     
     inline def setSetFilterFnUndefined: Self = StObject.set(x, "setFilterFn", js.undefined)
     
@@ -231,15 +231,15 @@ object IFilter {
     
     inline def setSetRootUndefined: Self = StObject.set(x, "setRoot", js.undefined)
     
-    inline def setSetScope(value: /* scope */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setScope", js.Any.fromFunction1(value))
+    inline def setSetScope(value: /* scope */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setScope", js.Any.fromFunction1(value))
     
     inline def setSetScopeUndefined: Self = StObject.set(x, "setScope", js.undefined)
     
-    inline def setSetValue(value: /* value */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: /* value */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
     inline def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 
 type ServiceCallback[TResult] = js.Function4[
-/* err */ typings.std.Error | typings.msRest.mod.ServiceError, 
+/* err */ js.Error | ServiceError, 
 /* result */ js.UndefOr[TResult], 
-/* request */ js.UndefOr[typings.msRest.mod.WebResource], 
+/* request */ js.UndefOr[WebResource], 
 /* response */ js.UndefOr[typings.node.httpMod.IncomingMessage], 
-scala.Unit]
+Unit]

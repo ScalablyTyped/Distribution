@@ -17,7 +17,7 @@ trait ListGroupsResponse extends StObject {
   var NextToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The AWS request ID for this operation.
+    * The Amazon Web Services request ID for this operation.
     */
   var RequestId: js.UndefOr[String] = js.undefined
   
@@ -39,7 +39,7 @@ object ListGroupsResponse {
     
     inline def setGroupListUndefined: Self = StObject.set(x, "GroupList", js.undefined)
     
-    inline def setGroupListVarargs(value: Group*): Self = StObject.set(x, "GroupList", js.Array(value :_*))
+    inline def setGroupListVarargs(value: Group*): Self = StObject.set(x, "GroupList", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

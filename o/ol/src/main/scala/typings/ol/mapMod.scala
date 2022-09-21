@@ -5,8 +5,7 @@ import typings.ol.olFeatureMod.FeatureLike
 import typings.ol.pixelMod.Pixel
 import typings.ol.pluggableMapMod.FrameState
 import typings.ol.renderEventTypeMod.EventType
-import typings.std.Uint8Array
-import typings.std.Uint8ClampedArray
+import typings.ol.rendererVectorMod.FeatureCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,6 +16,53 @@ object mapMod {
   @js.native
   abstract class default protected () extends MapRenderer {
     def this(map: typings.ol.pluggableMapMod.default) = this()
+  }
+  
+  trait HitMatch[T] extends StObject {
+    
+    def callback(
+      p0: FeatureLike,
+      p1: typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default],
+      p2: typings.ol.simpleGeometryMod.default
+    ): T
+    @JSName("callback")
+    var callback_Original: FeatureCallback[T]
+    
+    var distanceSq: Double
+    
+    var feature: FeatureLike
+    
+    var geometry: typings.ol.simpleGeometryMod.default
+    
+    var layer: typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default]
+  }
+  object HitMatch {
+    
+    inline def apply[T](
+      callback: (/* p0 */ FeatureLike, /* p1 */ typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default], /* p2 */ typings.ol.simpleGeometryMod.default) => T,
+      distanceSq: Double,
+      feature: FeatureLike,
+      geometry: typings.ol.simpleGeometryMod.default,
+      layer: typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default]
+    ): HitMatch[T] = {
+      val __obj = js.Dynamic.literal(callback = js.Any.fromFunction3(callback), distanceSq = distanceSq.asInstanceOf[js.Any], feature = feature.asInstanceOf[js.Any], geometry = geometry.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any])
+      __obj.asInstanceOf[HitMatch[T]]
+    }
+    
+    extension [Self <: HitMatch[?], T](x: Self & HitMatch[T]) {
+      
+      inline def setCallback(
+        value: (/* p0 */ FeatureLike, /* p1 */ typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default], /* p2 */ typings.ol.simpleGeometryMod.default) => T
+      ): Self = StObject.set(x, "callback", js.Any.fromFunction3(value))
+      
+      inline def setDistanceSq(value: Double): Self = StObject.set(x, "distanceSq", value.asInstanceOf[js.Any])
+      
+      inline def setFeature(value: FeatureLike): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
+      
+      inline def setGeometry(value: typings.ol.simpleGeometryMod.default): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+      
+      inline def setLayer(value: typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default]): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    }
   }
   
   @js.native
@@ -32,12 +78,7 @@ object mapMod {
       frameState: FrameState,
       hitTolerance: Double,
       checkWrapped: Boolean,
-      callback: js.ThisFunction2[
-          /* this */ S, 
-          /* p0 */ FeatureLike, 
-          /* p1 */ typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default], 
-          T
-        ],
+      callback: FeatureCallback[T],
       thisArg: S,
       layerFilter: js.ThisFunction1[
           /* this */ U, 
@@ -53,7 +94,7 @@ object mapMod {
       hitTolerance: Double,
       callback: js.Function2[
           /* p0 */ typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default], 
-          /* p1 */ Uint8ClampedArray | Uint8Array, 
+          /* p1 */ js.typedarray.Uint8ClampedArray | js.typedarray.Uint8Array, 
           T
         ],
       layerFilter: js.Function1[

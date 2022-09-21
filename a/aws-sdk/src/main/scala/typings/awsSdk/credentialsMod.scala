@@ -1,7 +1,6 @@
 package typings.awsSdk
 
 import typings.awsSdk.errorMod.AWSError
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ object credentialsMod {
   
   @JSImport("aws-sdk/lib/credentials", "Credentials")
   @js.native
-  class Credentials protected () extends StObject {
+  open class Credentials protected () extends StObject {
     /**
       * Creates a Credentials object with a given set of credential information as an options hash.
       *
@@ -19,7 +18,7 @@ object credentialsMod {
     def this(options: CredentialsOptions) = this()
     /**
       * Creates a Credentials object with a given set of credential information as positional arguments.
-      *          *
+      *
       * @param {string} accessKeyId - The AWS access key ID.
       * @param {string} secretAccessKey - The AWS secret access key.
       * @param {string} sessionToken - The optional AWS session token.
@@ -36,7 +35,7 @@ object credentialsMod {
       * Time when credentials should be considered expired.
       * Used in conjunction with expired.
       */
-    var expireTime: Date = js.native
+    var expireTime: js.Date = js.native
     
     /**
       * Whether the credentials have been expired and require a refresh.

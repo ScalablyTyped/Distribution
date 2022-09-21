@@ -10,10 +10,10 @@ Javascript port of KissFFT via Emscripten
 | ------------------ | :-------------: |
 | Full name          | kissfft-js |
 | Keywords           | FFT, DSP, fast-fourier-transform, digital-signal-processing |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 3341 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 325.3333333333333 |
+| # stars            | 13.0 |
 
 ## Links
 - [Homepage](https://github.com/j-funk/kissfft-js#readme)

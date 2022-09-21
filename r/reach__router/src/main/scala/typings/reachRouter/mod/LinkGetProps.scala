@@ -1,6 +1,5 @@
 package typings.reachRouter.mod
 
-import typings.history.mod.LocationState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,16 +12,11 @@ trait LinkGetProps extends StObject {
   
   var isPartiallyCurrent: Boolean
   
-  var location: WindowLocation[LocationState]
+  var location: WindowLocation[Any]
 }
 object LinkGetProps {
   
-  inline def apply(
-    href: String,
-    isCurrent: Boolean,
-    isPartiallyCurrent: Boolean,
-    location: WindowLocation[LocationState]
-  ): LinkGetProps = {
+  inline def apply(href: String, isCurrent: Boolean, isPartiallyCurrent: Boolean, location: WindowLocation[Any]): LinkGetProps = {
     val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], isCurrent = isCurrent.asInstanceOf[js.Any], isPartiallyCurrent = isPartiallyCurrent.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinkGetProps]
   }
@@ -35,6 +29,6 @@ object LinkGetProps {
     
     inline def setIsPartiallyCurrent(value: Boolean): Self = StObject.set(x, "isPartiallyCurrent", value.asInstanceOf[js.Any])
     
-    inline def setLocation(value: WindowLocation[LocationState]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: WindowLocation[Any]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
   }
 }

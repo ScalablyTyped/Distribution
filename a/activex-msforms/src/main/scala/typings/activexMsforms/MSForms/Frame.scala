@@ -24,7 +24,7 @@ trait Frame extends StObject {
   
   var Caption: String = js.native
   
-  def Controls(varg: js.Any): js.Any = js.native
+  def Controls(varg: Any): Any = js.native
   @JSName("Controls")
   val Controls_Original: Controls = js.native
   
@@ -74,9 +74,9 @@ trait Frame extends StObject {
   def Repaint(): Unit = js.native
   
   def Scroll(): Unit = js.native
-  def Scroll(xAction: js.Any): Unit = js.native
-  def Scroll(xAction: js.Any, yAction: js.Any): Unit = js.native
-  def Scroll(xAction: Unit, yAction: js.Any): Unit = js.native
+  def Scroll(xAction: Any): Unit = js.native
+  def Scroll(xAction: Any, yAction: Any): Unit = js.native
+  def Scroll(xAction: Unit, yAction: Any): Unit = js.native
   
   var ScrollBars: fmScrollBars = js.native
   
@@ -88,7 +88,7 @@ trait Frame extends StObject {
   
   var ScrollWidth: Double = js.native
   
-  def Selected(varg: js.Any): js.Any = js.native
+  def Selected(varg: Any): Any = js.native
   @JSName("Selected")
   val Selected_Original: Controls = js.native
   

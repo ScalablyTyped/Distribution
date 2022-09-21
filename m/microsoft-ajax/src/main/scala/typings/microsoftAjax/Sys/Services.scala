@@ -110,11 +110,11 @@ object Services {
       userName: String,
       password: String,
       isPersistent: Boolean,
-      customInfo: js.Any,
+      customInfo: Any,
       redirectUrl: String,
       loginCompletedCallback: js.Function,
       failedCallback: js.Function,
-      userContext: js.Any
+      userContext: Any
     ): Unit = js.native
     
     /**
@@ -138,7 +138,7 @@ object Services {
       redirectUrl: String,
       logoutCompletedCallback: js.Function,
       failedCallback: js.Function,
-      userContext: js.Any
+      userContext: Any
     ): Unit = js.native
     
     /**

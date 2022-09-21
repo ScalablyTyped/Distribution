@@ -6,6 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IAbideOptions extends StObject {
   
+  var a11yAttributes: js.UndefOr[Boolean] = js.undefined
+  
+  var a11yErrorLevel: js.UndefOr[String] = js.undefined
+  
   var formErrorClass: js.UndefOr[String] = js.undefined
   
   var formErrorSelector: js.UndefOr[String] = js.undefined
@@ -16,9 +20,13 @@ trait IAbideOptions extends StObject {
   
   var liveValidate: js.UndefOr[Boolean] = js.undefined
   
-  var validateOn: js.UndefOr[String] = js.undefined
+  var patterns: js.UndefOr[IAbidePatterns] = js.undefined
   
-  var validators: js.UndefOr[js.Any] = js.undefined
+  var validateOn: js.UndefOr[String | Null] = js.undefined
+  
+  var validateOnBlur: js.UndefOr[Boolean] = js.undefined
+  
+  var validators: js.UndefOr[Any] = js.undefined
 }
 object IAbideOptions {
   
@@ -28,6 +36,14 @@ object IAbideOptions {
   }
   
   extension [Self <: IAbideOptions](x: Self) {
+    
+    inline def setA11yAttributes(value: Boolean): Self = StObject.set(x, "a11yAttributes", value.asInstanceOf[js.Any])
+    
+    inline def setA11yAttributesUndefined: Self = StObject.set(x, "a11yAttributes", js.undefined)
+    
+    inline def setA11yErrorLevel(value: String): Self = StObject.set(x, "a11yErrorLevel", value.asInstanceOf[js.Any])
+    
+    inline def setA11yErrorLevelUndefined: Self = StObject.set(x, "a11yErrorLevel", js.undefined)
     
     inline def setFormErrorClass(value: String): Self = StObject.set(x, "formErrorClass", value.asInstanceOf[js.Any])
     
@@ -49,11 +65,21 @@ object IAbideOptions {
     
     inline def setLiveValidateUndefined: Self = StObject.set(x, "liveValidate", js.undefined)
     
+    inline def setPatterns(value: IAbidePatterns): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
+    
+    inline def setPatternsUndefined: Self = StObject.set(x, "patterns", js.undefined)
+    
     inline def setValidateOn(value: String): Self = StObject.set(x, "validateOn", value.asInstanceOf[js.Any])
+    
+    inline def setValidateOnBlur(value: Boolean): Self = StObject.set(x, "validateOnBlur", value.asInstanceOf[js.Any])
+    
+    inline def setValidateOnBlurUndefined: Self = StObject.set(x, "validateOnBlur", js.undefined)
+    
+    inline def setValidateOnNull: Self = StObject.set(x, "validateOn", null)
     
     inline def setValidateOnUndefined: Self = StObject.set(x, "validateOn", js.undefined)
     
-    inline def setValidators(value: js.Any): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
+    inline def setValidators(value: Any): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
     
     inline def setValidatorsUndefined: Self = StObject.set(x, "validators", js.undefined)
   }

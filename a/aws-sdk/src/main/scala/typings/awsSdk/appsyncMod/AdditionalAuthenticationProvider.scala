@@ -7,12 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AdditionalAuthenticationProvider extends StObject {
   
   /**
-    * The authentication type: API key, AWS IAM, OIDC, or Amazon Cognito user pools.
+    * The authentication type: API key, Identity and Access Management (IAM), OpenID Connect (OIDC), Amazon Cognito user pools, or Lambda.
     */
   var authenticationType: js.UndefOr[AuthenticationType] = js.undefined
   
   /**
-    * The OpenID Connect configuration.
+    * Configuration for Lambda function authorization.
+    */
+  var lambdaAuthorizerConfig: js.UndefOr[LambdaAuthorizerConfig] = js.undefined
+  
+  /**
+    * The OIDC configuration.
     */
   var openIDConnectConfig: js.UndefOr[OpenIDConnectConfig] = js.undefined
   
@@ -33,6 +38,10 @@ object AdditionalAuthenticationProvider {
     inline def setAuthenticationType(value: AuthenticationType): Self = StObject.set(x, "authenticationType", value.asInstanceOf[js.Any])
     
     inline def setAuthenticationTypeUndefined: Self = StObject.set(x, "authenticationType", js.undefined)
+    
+    inline def setLambdaAuthorizerConfig(value: LambdaAuthorizerConfig): Self = StObject.set(x, "lambdaAuthorizerConfig", value.asInstanceOf[js.Any])
+    
+    inline def setLambdaAuthorizerConfigUndefined: Self = StObject.set(x, "lambdaAuthorizerConfig", js.undefined)
     
     inline def setOpenIDConnectConfig(value: OpenIDConnectConfig): Self = StObject.set(x, "openIDConnectConfig", value.asInstanceOf[js.Any])
     

@@ -10,10 +10,10 @@ High level library for running beanstalkd workers in Node.js
 | ------------------ | :-------------: |
 | Full name          | beanstalkd-worker |
 | Keywords           | beanstalkd, worker |
-| # releases         | 3 |
-| # dependents       | 1 |
-| # downloads        | 5631 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 368.6666666666667 |
+| # stars            | 12.0 |
 
 ## Links
 - [Homepage](https://github.com/burstable/node-beanstalkd-worker#readme)

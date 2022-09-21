@@ -1,6 +1,5 @@
 package typings.angularCore.mod
 
-import typings.rxjs.mod.Observable_
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,13 +7,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/core", "QueryList")
 @js.native
-class QueryList[T] ()
+/**
+  * @param emitDistinctChangesOnly Whether `QueryList.changes` should fire only when actual change
+  *     has occurred. Or if it should fire when query is recomputed. (recomputing could resolve in
+  *     the same result)
+  */
+open class QueryList[T] ()
   extends StObject
      with Iterable[T] {
+  def this(_emitDistinctChangesOnly: Boolean) = this()
   
-  /* private */ var _results: js.Any = js.native
+  /* private */ var _changes: Any = js.native
   
-  val changes: Observable_[js.Any] = js.native
+  /* private */ var _changesDetected: Any = js.native
+  
+  /* private */ var _emitDistinctChangesOnly: Any = js.native
+  
+  /* private */ var _results: Any = js.native
+  
+  /**
+    * Returns `Observable` of `QueryList` notifying the subscriber of changes.
+    */
+  def changes: Any = js.native
   
   /** internal */
   def destroy(): Unit = js.native
@@ -40,6 +54,11 @@ class QueryList[T] ()
     * [Array.forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
     */
   def forEach(fn: js.Function3[/* item */ T, /* index */ Double, /* array */ js.Array[T], Unit]): Unit = js.native
+  
+  /**
+    * Returns the QueryList entry at `index`.
+    */
+  def get(index: Double): js.UndefOr[T] = js.native
   
   val last: T = js.native
   
@@ -71,8 +90,14 @@ class QueryList[T] ()
     * occurs.
     *
     * @param resultsTree The query results to store
+    * @param identityAccessor Optional function for extracting stable object identity from a value
+    *    in the array. This function is executed for each element of the query result list while
+    *    comparing current query list with the new one (provided as a first argument of the `reset`
+    *    function) to detect if the lists are different. If the function is not provided, elements
+    *    are compared as is (without any pre-processing).
     */
-  def reset(resultsTree: js.Array[T | js.Array[js.Any]]): Unit = js.native
+  def reset(resultsTree: js.Array[T | js.Array[Any]]): Unit = js.native
+  def reset(resultsTree: js.Array[T | js.Array[Any]], identityAccessor: js.Function1[/* value */ T, Any]): Unit = js.native
   
   /** internal */
   def setDirty(): Unit = js.native

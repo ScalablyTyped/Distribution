@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.SlicerCache")
 @js.native
-/* private */ class SlicerCache ()
+/* private */ open class SlicerCache ()
   extends StObject
      with typings.activexExcel.Excel.SlicerCache {
   
@@ -47,7 +47,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val OLAP: Boolean = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override def PivotTables(Index: String): typings.activexExcel.Excel.PivotTable = js.native
@@ -104,7 +104,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def VisibleSlicerItems(Index: Double): typings.activexExcel.Excel.SlicerItem = js.native
   
   /* CompleteClass */
-  var VisibleSlicerItemsList: js.Any = js.native
+  var VisibleSlicerItemsList: Any = js.native
   
   /* CompleteClass */
   @JSName("VisibleSlicerItems")

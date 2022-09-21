@@ -8,5 +8,5 @@ object listBackupsMod {
   
   @JSImport("@aws-sdk/client-dynamodb-node/model/ListBackups", "ListBackups")
   @js.native
-  val ListBackups: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val ListBackups: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

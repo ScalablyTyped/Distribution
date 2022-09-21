@@ -11,7 +11,7 @@ object serverConfigMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(phase: String, dir: String, customConfig: js.Any): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(phase.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], customConfig.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def default(phase: String, dir: String, customConfig: Any): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(phase.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], customConfig.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
   inline def isTargetLikeServerless(target: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTargetLikeServerless")(target.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

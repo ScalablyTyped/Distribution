@@ -7,7 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StartTaskExecutionRequest extends StObject {
   
   /**
-    * A list of filter rules that determines which files to include when running a task. The pattern should contain a single filter string that consists of the patterns to include. The patterns are delimited by "|" (that is, a pipe). For example: "/folder1|/folder2"   
+    * A list of filter rules that determines which files to exclude from a task. The list contains a single filter string that consists of the patterns to exclude. The patterns are delimited by "|" (that is, a pipe), for example, "/folder1|/folder2". 
+    */
+  var Excludes: js.UndefOr[FilterList] = js.undefined
+  
+  /**
+    * A list of filter rules that determines which files to include when running a task. The pattern should contain a single filter string that consists of the patterns to include. The patterns are delimited by "|" (that is, a pipe), for example, "/folder1|/folder2".   
     */
   var Includes: js.UndefOr[FilterList] = js.undefined
   
@@ -27,11 +32,17 @@ object StartTaskExecutionRequest {
   
   extension [Self <: StartTaskExecutionRequest](x: Self) {
     
+    inline def setExcludes(value: FilterList): Self = StObject.set(x, "Excludes", value.asInstanceOf[js.Any])
+    
+    inline def setExcludesUndefined: Self = StObject.set(x, "Excludes", js.undefined)
+    
+    inline def setExcludesVarargs(value: FilterRule*): Self = StObject.set(x, "Excludes", js.Array(value*))
+    
     inline def setIncludes(value: FilterList): Self = StObject.set(x, "Includes", value.asInstanceOf[js.Any])
     
     inline def setIncludesUndefined: Self = StObject.set(x, "Includes", js.undefined)
     
-    inline def setIncludesVarargs(value: FilterRule*): Self = StObject.set(x, "Includes", js.Array(value :_*))
+    inline def setIncludesVarargs(value: FilterRule*): Self = StObject.set(x, "Includes", js.Array(value*))
     
     inline def setOverrideOptions(value: Options): Self = StObject.set(x, "OverrideOptions", value.asInstanceOf[js.Any])
     

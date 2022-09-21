@@ -1,31 +1,42 @@
 package typings.grommet
 
 import typings.grommet.announceContextMod.AnnounceMode
+import typings.grommet.baseMod._DigitalTexts
 import typings.grommet.dataChartMod.GranularityType
 import typings.grommet.dataTableMod.ColumnSizeType
+import typings.grommet.dataTableMod.VerticalAlignType
 import typings.grommet.diagramMod.DiagramConnectionAnchor
 import typings.grommet.diagramMod.DiagramConnectionType
+import typings.grommet.diagramMod._DiagramAnimationType
+import typings.grommet.gridMod._GridSizeType
 import typings.grommet.layerMod.LayerPositionType
 import typings.grommet.listMod.SideType
-import typings.grommet.listMod._PadSizeType
 import typings.grommet.listMod._SizeType
-import typings.grommet.utilsMod.AlignContentType
+import typings.grommet.notificationMod.StatusType
 import typings.grommet.utilsMod.AlignSelfType
 import typings.grommet.utilsMod.BoxSideType
 import typings.grommet.utilsMod.BoxStyleType
+import typings.grommet.utilsMod.DirectionType
 import typings.grommet.utilsMod.EdgeSizeType
 import typings.grommet.utilsMod.JustifyContentType
 import typings.grommet.utilsMod.TextAlignType
+import typings.grommet.utilsMod._AlignContentType
+import typings.grommet.utilsMod._AlignType
 import typings.grommet.utilsMod._BasisType
 import typings.grommet.utilsMod._BoxSizeType
 import typings.grommet.utilsMod._EdgeType
 import typings.grommet.utilsMod._ElevationType
 import typings.grommet.utilsMod._FillType
 import typings.grommet.utilsMod._GapType
+import typings.grommet.utilsMod._HeightType
+import typings.grommet.utilsMod._HoverIndicatorType
 import typings.grommet.utilsMod._OpacityType
 import typings.grommet.utilsMod._PolymorphicType
 import typings.grommet.utilsMod._RoundType
+import typings.grommet.utilsMod._TShirtSizeType
 import typings.grommet.utilsMod._ThicknessType
+import typings.grommet.utilsMod._WidthType
+import typings.grommet.videoMod.controlsItems
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,6 +48,13 @@ object grommetStrings {
   inline def `1`: `1` = "1".asInstanceOf[`1`]
   
   @js.native
+  sealed trait `100Percentsign`
+    extends StObject
+       with _HeightType
+       with _WidthType
+  inline def `100Percentsign`: `100Percentsign` = "100%".asInstanceOf[`100Percentsign`]
+  
+  @js.native
   sealed trait `12` extends StObject
   inline def `12`: `12` = "12".asInstanceOf[`12`]
   
@@ -45,6 +63,7 @@ object grommetStrings {
     extends StObject
        with ColumnSizeType
        with _BasisType
+       with _GridSizeType
   inline def `1Slash2`: `1Slash2` = "1/2".asInstanceOf[`1Slash2`]
   
   @js.native
@@ -52,6 +71,7 @@ object grommetStrings {
     extends StObject
        with ColumnSizeType
        with _BasisType
+       with _GridSizeType
   inline def `1Slash3`: `1Slash3` = "1/3".asInstanceOf[`1Slash3`]
   
   @js.native
@@ -59,6 +79,7 @@ object grommetStrings {
     extends StObject
        with ColumnSizeType
        with _BasisType
+       with _GridSizeType
   inline def `1Slash4`: `1Slash4` = "1/4".asInstanceOf[`1Slash4`]
   
   @js.native
@@ -74,6 +95,7 @@ object grommetStrings {
     extends StObject
        with ColumnSizeType
        with _BasisType
+       with _GridSizeType
   inline def `2Slash3`: `2Slash3` = "2/3".asInstanceOf[`2Slash3`]
   
   @js.native
@@ -81,7 +103,12 @@ object grommetStrings {
     extends StObject
        with ColumnSizeType
        with _BasisType
+       with _GridSizeType
   inline def `2Slash4`: `2Slash4` = "2/4".asInstanceOf[`2Slash4`]
+  
+  @js.native
+  sealed trait `2xl` extends StObject
+  inline def `2xl`: `2xl` = "2xl".asInstanceOf[`2xl`]
   
   @js.native
   sealed trait `3` extends StObject
@@ -92,19 +119,36 @@ object grommetStrings {
     extends StObject
        with ColumnSizeType
        with _BasisType
+       with _GridSizeType
   inline def `3Slash4`: `3Slash4` = "3/4".asInstanceOf[`3Slash4`]
+  
+  @js.native
+  sealed trait `3xl` extends StObject
+  inline def `3xl`: `3xl` = "3xl".asInstanceOf[`3xl`]
   
   @js.native
   sealed trait `4` extends StObject
   inline def `4`: `4` = "4".asInstanceOf[`4`]
   
   @js.native
+  sealed trait `4xl` extends StObject
+  inline def `4xl`: `4xl` = "4xl".asInstanceOf[`4xl`]
+  
+  @js.native
   sealed trait `5` extends StObject
   inline def `5`: `5` = "5".asInstanceOf[`5`]
   
   @js.native
+  sealed trait `5xl` extends StObject
+  inline def `5xl`: `5xl` = "5xl".asInstanceOf[`5xl`]
+  
+  @js.native
   sealed trait `6` extends StObject
   inline def `6`: `6` = "6".asInstanceOf[`6`]
+  
+  @js.native
+  sealed trait `6xl` extends StObject
+  inline def `6xl`: `6xl` = "6xl".asInstanceOf[`6xl`]
   
   @js.native
   sealed trait Africa extends StObject
@@ -139,6 +183,10 @@ object grommetStrings {
   inline def `South America`: `South America` = ("South America").asInstanceOf[`South America`]
   
   @js.native
+  sealed trait Text extends StObject
+  inline def Text: Text = "Text".asInstanceOf[Text]
+  
+  @js.native
   sealed trait _blank extends StObject
   inline def _blank: _blank = "_blank".asInstanceOf[_blank]
   
@@ -165,18 +213,6 @@ object grommetStrings {
     extends StObject
        with _PolymorphicType
   inline def abbr: abbr = "abbr".asInstanceOf[abbr]
-  
-  @js.native
-  sealed trait additions extends StObject
-  inline def additions: additions = "additions".asInstanceOf[additions]
-  
-  @js.native
-  sealed trait `additions removals` extends StObject
-  inline def `additions removals`: `additions removals` = ("additions removals").asInstanceOf[`additions removals`]
-  
-  @js.native
-  sealed trait `additions text` extends StObject
-  inline def `additions text`: `additions text` = ("additions text").asInstanceOf[`additions text`]
   
   @js.native
   sealed trait address
@@ -224,11 +260,19 @@ object grommetStrings {
   inline def area: area = "area".asInstanceOf[area]
   
   @js.native
+  sealed trait areas extends StObject
+  inline def areas: areas = "areas".asInstanceOf[areas]
+  
+  @js.native
   sealed trait around
     extends StObject
-       with AlignContentType
        with JustifyContentType
+       with _AlignContentType
   inline def around: around = "around".asInstanceOf[around]
+  
+  @js.native
+  sealed trait array extends StObject
+  inline def array: array = "array".asInstanceOf[array]
   
   @js.native
   sealed trait arrows extends StObject
@@ -243,10 +287,6 @@ object grommetStrings {
   @js.native
   sealed trait asc extends StObject
   inline def asc: asc = "asc".asInstanceOf[asc]
-  
-  @js.native
-  sealed trait ascending extends StObject
-  inline def ascending: ascending = "ascending".asInstanceOf[ascending]
   
   @js.native
   sealed trait aside
@@ -270,6 +310,7 @@ object grommetStrings {
   sealed trait auto
     extends StObject
        with _BasisType
+       with _GridSizeType
   inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
@@ -281,6 +322,12 @@ object grommetStrings {
     extends StObject
        with _PolymorphicType
   inline def b: b = "b".asInstanceOf[b]
+  
+  @js.native
+  sealed trait background
+    extends StObject
+       with _HoverIndicatorType
+  inline def background: background = "background".asInstanceOf[background]
   
   @js.native
   sealed trait backward extends StObject
@@ -301,7 +348,10 @@ object grommetStrings {
   inline def base: base = "base".asInstanceOf[base]
   
   @js.native
-  sealed trait baseline extends StObject
+  sealed trait baseline
+    extends StObject
+       with _AlignContentType
+       with _AlignType
   inline def baseline: baseline = "baseline".asInstanceOf[baseline]
   
   @js.native
@@ -323,9 +373,9 @@ object grommetStrings {
   @js.native
   sealed trait between
     extends StObject
-       with AlignContentType
        with BoxSideType
        with JustifyContentType
+       with _AlignContentType
   inline def between: between = "between".asInstanceOf[between]
   
   @js.native
@@ -355,8 +405,8 @@ object grommetStrings {
   inline def bold: bold = "bold".asInstanceOf[bold]
   
   @js.native
-  sealed trait both extends StObject
-  inline def both: both = "both".asInstanceOf[both]
+  sealed trait bolder extends StObject
+  inline def bolder: bolder = "bolder".asInstanceOf[bolder]
   
   @js.native
   sealed trait bottom
@@ -364,6 +414,7 @@ object grommetStrings {
        with BoxSideType
        with LayerPositionType
        with SideType
+       with VerticalAlignType
   inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
@@ -411,25 +462,40 @@ object grommetStrings {
   inline def caption: caption = "caption".asInstanceOf[caption]
   
   @js.native
+  sealed trait captions
+    extends StObject
+       with controlsItems
+  inline def captions: captions = "captions".asInstanceOf[captions]
+  
+  @js.native
   sealed trait center
     extends StObject
-       with AlignContentType
        with AlignSelfType
        with DiagramConnectionAnchor
        with JustifyContentType
        with LayerPositionType
        with TextAlignType
+       with _AlignContentType
+       with _AlignType
   inline def center: center = "center".asInstanceOf[center]
   
   @js.native
-  sealed trait checked extends StObject
-  inline def checked: checked = "checked".asInstanceOf[checked]
+  sealed trait change extends StObject
+  inline def change: change = "change".asInstanceOf[change]
+  
+  @js.native
+  sealed trait children extends StObject
+  inline def children: children = "children".asInstanceOf[children]
   
   @js.native
   sealed trait circle
     extends StObject
        with _PolymorphicType
   inline def circle: circle = "circle".asInstanceOf[circle]
+  
+  @js.native
+  sealed trait circles extends StObject
+  inline def circles: circles = "circles".asInstanceOf[circles]
   
   @js.native
   sealed trait cite
@@ -472,11 +538,15 @@ object grommetStrings {
   inline def color: color = "color".asInstanceOf[color]
   
   @js.native
-  sealed trait column extends StObject
+  sealed trait column
+    extends StObject
+       with DirectionType
   inline def column: column = "column".asInstanceOf[column]
   
   @js.native
-  sealed trait `column-reverse` extends StObject
+  sealed trait `column-reverse`
+    extends StObject
+       with DirectionType
   inline def `column-reverse`: `column-reverse` = "column-reverse".asInstanceOf[`column-reverse`]
   
   @js.native
@@ -488,16 +558,14 @@ object grommetStrings {
   inline def contain: contain = "contain".asInstanceOf[contain]
   
   @js.native
-  sealed trait controls extends StObject
-  inline def controls: controls = "controls".asInstanceOf[controls]
-  
-  @js.native
-  sealed trait copy extends StObject
-  inline def copy: copy = "copy".asInstanceOf[copy]
-  
-  @js.native
   sealed trait cover extends StObject
   inline def cover: cover = "cover".asInstanceOf[cover]
+  
+  @js.native
+  sealed trait critical
+    extends StObject
+       with StatusType
+  inline def critical: critical = "critical".asInstanceOf[critical]
   
   @js.native
   sealed trait curved
@@ -528,18 +596,10 @@ object grommetStrings {
   inline def datalist: datalist = "datalist".asInstanceOf[datalist]
   
   @js.native
-  sealed trait date extends StObject
-  inline def date: date = "date".asInstanceOf[date]
-  
-  @js.native
   sealed trait dd
     extends StObject
        with _PolymorphicType
   inline def dd: dd = "dd".asInstanceOf[dd]
-  
-  @js.native
-  sealed trait decimal extends StObject
-  inline def decimal: decimal = "decimal".asInstanceOf[decimal]
   
   @js.native
   sealed trait defs
@@ -560,8 +620,10 @@ object grommetStrings {
   inline def desc: desc = "desc".asInstanceOf[desc]
   
   @js.native
-  sealed trait descending extends StObject
-  inline def descending: descending = "descending".asInstanceOf[descending]
+  sealed trait descriptions
+    extends StObject
+       with controlsItems
+  inline def descriptions: descriptions = "descriptions".asInstanceOf[descriptions]
   
   @js.native
   sealed trait details
@@ -624,6 +686,12 @@ object grommetStrings {
   inline def double: double = "double".asInstanceOf[double]
   
   @js.native
+  sealed trait draw
+    extends StObject
+       with _DiagramAnimationType
+  inline def draw: draw = "draw".asInstanceOf[draw]
+  
+  @js.native
   sealed trait dt
     extends StObject
        with _PolymorphicType
@@ -642,10 +710,6 @@ object grommetStrings {
   inline def em: em = "em".asInstanceOf[em]
   
   @js.native
-  sealed trait email extends StObject
-  inline def email: email = "email".asInstanceOf[email]
-  
-  @js.native
   sealed trait embed
     extends StObject
        with _PolymorphicType
@@ -654,11 +718,12 @@ object grommetStrings {
   @js.native
   sealed trait end
     extends StObject
-       with AlignContentType
        with AlignSelfType
        with BoxSideType
        with JustifyContentType
        with TextAlignType
+       with _AlignContentType
+       with _AlignType
   inline def end: end = "end".asInstanceOf[end]
   
   @js.native
@@ -666,12 +731,10 @@ object grommetStrings {
   inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait evenly extends StObject
+  sealed trait evenly
+    extends StObject
+       with _AlignContentType
   inline def evenly: evenly = "evenly".asInstanceOf[evenly]
-  
-  @js.native
-  sealed trait execute extends StObject
-  inline def execute: execute = "execute".asInstanceOf[execute]
   
   @js.native
   sealed trait fadeIn extends StObject
@@ -680,10 +743,6 @@ object grommetStrings {
   @js.native
   sealed trait fadeOut extends StObject
   inline def fadeOut: fadeOut = "fadeOut".asInstanceOf[fadeOut]
-  
-  @js.native
-  sealed trait `false` extends StObject
-  inline def `false`: `false` = "false".asInstanceOf[`false`]
   
   @js.native
   sealed trait feBlend
@@ -878,7 +937,9 @@ object grommetStrings {
   inline def fit: fit = "fit".asInstanceOf[fit]
   
   @js.native
-  sealed trait flex extends StObject
+  sealed trait flex
+    extends StObject
+       with _GridSizeType
   inline def flex: flex = "flex".asInstanceOf[flex]
   
   @js.native
@@ -907,18 +968,21 @@ object grommetStrings {
   sealed trait full
     extends StObject
        with _BasisType
+       with _GridSizeType
        with _RoundType
   inline def full: full = "full".asInstanceOf[full]
+  
+  @js.native
+  sealed trait fullScreen
+    extends StObject
+       with controlsItems
+  inline def fullScreen: fullScreen = "fullScreen".asInstanceOf[fullScreen]
   
   @js.native
   sealed trait g
     extends StObject
        with _PolymorphicType
   inline def g: g = "g".asInstanceOf[g]
-  
-  @js.native
-  sealed trait grammar extends StObject
-  inline def grammar: grammar = "grammar".asInstanceOf[grammar]
   
   @js.native
   sealed trait grid extends StObject
@@ -1027,18 +1091,14 @@ object grommetStrings {
   inline def html: html = "html".asInstanceOf[html]
   
   @js.native
+  sealed trait huge extends StObject
+  inline def huge: huge = "huge".asInstanceOf[huge]
+  
+  @js.native
   sealed trait i
     extends StObject
        with _PolymorphicType
   inline def i: i = "i".asInstanceOf[i]
-  
-  @js.native
-  sealed trait icon extends StObject
-  inline def icon: icon = "icon".asInstanceOf[icon]
-  
-  @js.native
-  sealed trait id extends StObject
-  inline def id: id = "id".asInstanceOf[id]
   
   @js.native
   sealed trait iframe
@@ -1059,16 +1119,10 @@ object grommetStrings {
   inline def img: img = "img".asInstanceOf[img]
   
   @js.native
-  sealed trait info extends StObject
+  sealed trait info
+    extends StObject
+       with StatusType
   inline def info: info = "info".asInstanceOf[info]
-  
-  @js.native
-  sealed trait inherit extends StObject
-  inline def inherit: inherit = "inherit".asInstanceOf[inherit]
-  
-  @js.native
-  sealed trait `inline` extends StObject
-  inline def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   
   @js.native
   sealed trait input
@@ -1091,6 +1145,12 @@ object grommetStrings {
   @js.native
   sealed trait jiggle extends StObject
   inline def jiggle: jiggle = "jiggle".asInstanceOf[jiggle]
+  
+  @js.native
+  sealed trait justify
+    extends StObject
+       with TextAlignType
+  inline def justify: justify = "justify".asInstanceOf[justify]
   
   @js.native
   sealed trait kbd
@@ -1125,10 +1185,12 @@ object grommetStrings {
        with EdgeSizeType
        with _BasisType
        with _BoxSizeType
+       with _DigitalTexts
        with _ElevationType
-       with _PadSizeType
+       with _GridSizeType
        with _RoundType
        with _SizeType
+       with _TShirtSizeType
        with _ThicknessType
   inline def large: large = "large".asInstanceOf[large]
   
@@ -1161,6 +1223,10 @@ object grommetStrings {
   inline def light: light = "light".asInstanceOf[light]
   
   @js.native
+  sealed trait lighter extends StObject
+  inline def lighter: lighter = "lighter".asInstanceOf[lighter]
+  
+  @js.native
   sealed trait line
     extends StObject
        with _PolymorphicType
@@ -1173,22 +1239,14 @@ object grommetStrings {
   inline def linearGradient: linearGradient = "linearGradient".asInstanceOf[linearGradient]
   
   @js.native
+  sealed trait lines extends StObject
+  inline def lines: lines = "lines".asInstanceOf[lines]
+  
+  @js.native
   sealed trait link
     extends StObject
        with _PolymorphicType
   inline def link: link = "link".asInstanceOf[link]
-  
-  @js.native
-  sealed trait list extends StObject
-  inline def list: list = "list".asInstanceOf[list]
-  
-  @js.native
-  sealed trait listbox extends StObject
-  inline def listbox: listbox = "listbox".asInstanceOf[listbox]
-  
-  @js.native
-  sealed trait location extends StObject
-  inline def location: location = "location".asInstanceOf[location]
   
   @js.native
   sealed trait main
@@ -1232,11 +1290,13 @@ object grommetStrings {
        with GranularityType
        with _BasisType
        with _BoxSizeType
+       with _DigitalTexts
        with _ElevationType
+       with _GridSizeType
        with _OpacityType
-       with _PadSizeType
        with _RoundType
        with _SizeType
+       with _TShirtSizeType
        with _ThicknessType
   inline def medium: medium = "medium".asInstanceOf[medium]
   
@@ -1271,7 +1331,9 @@ object grommetStrings {
   inline def meter: meter = "meter".asInstanceOf[meter]
   
   @js.native
-  sealed trait middle extends StObject
+  sealed trait middle
+    extends StObject
+       with VerticalAlignType
   inline def middle: middle = "middle".asInstanceOf[middle]
   
   @js.native
@@ -1283,22 +1345,18 @@ object grommetStrings {
   inline def minutes: minutes = "minutes".asInstanceOf[minutes]
   
   @js.native
-  sealed trait mixed extends StObject
-  inline def mixed: mixed = "mixed".asInstanceOf[mixed]
-  
-  @js.native
-  sealed trait move extends StObject
-  inline def move: move = "move".asInstanceOf[move]
-  
-  @js.native
   sealed trait mpath
     extends StObject
        with _PolymorphicType
   inline def mpath: mpath = "mpath".asInstanceOf[mpath]
   
   @js.native
-  sealed trait name extends StObject
-  inline def name: name = "name".asInstanceOf[name]
+  sealed trait multiple extends StObject
+  inline def multiple: multiple = "multiple".asInstanceOf[multiple]
+  
+  @js.native
+  sealed trait narrow extends StObject
+  inline def narrow: narrow = "narrow".asInstanceOf[narrow]
   
   @js.native
   sealed trait nav
@@ -1307,12 +1365,12 @@ object grommetStrings {
   inline def nav: nav = "nav".asInstanceOf[nav]
   
   @js.native
-  sealed trait no extends StObject
-  inline def no: no = "no".asInstanceOf[no]
-  
-  @js.native
   sealed trait `no-repeat` extends StObject
   inline def `no-repeat`: `no-repeat` = "no-repeat".asInstanceOf[`no-repeat`]
+  
+  @js.native
+  sealed trait noPad extends StObject
+  inline def noPad: noPad = "noPad".asInstanceOf[noPad]
   
   @js.native
   sealed trait noindex
@@ -1326,12 +1384,13 @@ object grommetStrings {
        with _EdgeType
        with _ElevationType
        with _GapType
-       with _PadSizeType
        with _ThicknessType
   inline def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait normal extends StObject
+  sealed trait normal
+    extends StObject
+       with StatusType
   inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
@@ -1339,10 +1398,6 @@ object grommetStrings {
     extends StObject
        with _PolymorphicType
   inline def noscript: noscript = "noscript".asInstanceOf[noscript]
-  
-  @js.native
-  sealed trait numeric extends StObject
-  inline def numeric: numeric = "numeric".asInstanceOf[numeric]
   
   @js.native
   sealed trait `object`
@@ -1363,16 +1418,12 @@ object grommetStrings {
   inline def ol: ol = "ol".asInstanceOf[ol]
   
   @js.native
-  sealed trait on extends StObject
-  inline def on: on = "on".asInstanceOf[on]
-  
-  @js.native
-  sealed trait onBlur extends StObject
-  inline def onBlur: onBlur = "onBlur".asInstanceOf[onBlur]
-  
-  @js.native
   sealed trait onChange extends StObject
   inline def onChange: onChange = "onChange".asInstanceOf[onChange]
+  
+  @js.native
+  sealed trait onClick extends StObject
+  inline def onClick: onClick = "onClick".asInstanceOf[onClick]
   
   @js.native
   sealed trait onSelect extends StObject
@@ -1393,10 +1444,6 @@ object grommetStrings {
     extends StObject
        with _PolymorphicType
   inline def option: option = "option".asInstanceOf[option]
-  
-  @js.native
-  sealed trait other extends StObject
-  inline def other: other = "other".asInstanceOf[other]
   
   @js.native
   sealed trait output
@@ -1421,10 +1468,6 @@ object grommetStrings {
   inline def p: p = "p".asInstanceOf[p]
   
   @js.native
-  sealed trait page extends StObject
-  inline def page: page = "page".asInstanceOf[page]
-  
-  @js.native
   sealed trait param
     extends StObject
        with _PolymorphicType
@@ -1443,18 +1486,30 @@ object grommetStrings {
   inline def pattern: pattern = "pattern".asInstanceOf[pattern]
   
   @js.native
+  sealed trait pause
+    extends StObject
+       with controlsItems
+  inline def pause: pause = "pause".asInstanceOf[pause]
+  
+  @js.native
   sealed trait picture
     extends StObject
        with _PolymorphicType
   inline def picture: picture = "picture".asInstanceOf[picture]
   
   @js.native
+  sealed trait pie extends StObject
+  inline def pie: pie = "pie".asInstanceOf[pie]
+  
+  @js.native
   sealed trait placeholder extends StObject
   inline def placeholder: placeholder = "placeholder".asInstanceOf[placeholder]
   
   @js.native
-  sealed trait plain extends StObject
-  inline def plain: plain = "plain".asInstanceOf[plain]
+  sealed trait play
+    extends StObject
+       with controlsItems
+  inline def play: play = "play".asInstanceOf[play]
   
   @js.native
   sealed trait point extends StObject
@@ -1479,10 +1534,6 @@ object grommetStrings {
   inline def polyline: polyline = "polyline".asInstanceOf[polyline]
   
   @js.native
-  sealed trait popup extends StObject
-  inline def popup: popup = "popup".asInstanceOf[popup]
-  
-  @js.native
   sealed trait pre
     extends StObject
        with _PolymorphicType
@@ -1495,7 +1546,9 @@ object grommetStrings {
   inline def progress: progress = "progress".asInstanceOf[progress]
   
   @js.native
-  sealed trait pulse extends StObject
+  sealed trait pulse
+    extends StObject
+       with _DiagramAnimationType
   inline def pulse: pulse = "pulse".asInstanceOf[pulse]
   
   @js.native
@@ -1531,24 +1584,16 @@ object grommetStrings {
   inline def ref: ref = "ref".asInstanceOf[ref]
   
   @js.native
-  sealed trait removals extends StObject
-  inline def removals: removals = "removals".asInstanceOf[removals]
-  
-  @js.native
-  sealed trait `removals additions` extends StObject
-  inline def `removals additions`: `removals additions` = ("removals additions").asInstanceOf[`removals additions`]
-  
-  @js.native
-  sealed trait `removals text` extends StObject
-  inline def `removals text`: `removals text` = ("removals text").asInstanceOf[`removals text`]
-  
-  @js.native
   sealed trait repeat extends StObject
   inline def repeat: repeat = "repeat".asInstanceOf[repeat]
   
   @js.native
   sealed trait replace extends StObject
   inline def replace: replace = "replace".asInstanceOf[replace]
+  
+  @js.native
+  sealed trait required extends StObject
+  inline def required: required = "required".asInstanceOf[required]
   
   @js.native
   sealed trait reset extends StObject
@@ -1581,15 +1626,21 @@ object grommetStrings {
   inline def rotateRight: rotateRight = "rotateRight".asInstanceOf[rotateRight]
   
   @js.native
-  sealed trait row extends StObject
+  sealed trait row
+    extends StObject
+       with DirectionType
   inline def row: row = "row".asInstanceOf[row]
   
   @js.native
-  sealed trait `row-responsive` extends StObject
+  sealed trait `row-responsive`
+    extends StObject
+       with DirectionType
   inline def `row-responsive`: `row-responsive` = "row-responsive".asInstanceOf[`row-responsive`]
   
   @js.native
-  sealed trait `row-reverse` extends StObject
+  sealed trait `row-reverse`
+    extends StObject
+       with DirectionType
   inline def `row-reverse`: `row-reverse` = "row-reverse".asInstanceOf[`row-reverse`]
   
   @js.native
@@ -1637,8 +1688,8 @@ object grommetStrings {
   inline def scroll: scroll = "scroll".asInstanceOf[scroll]
   
   @js.native
-  sealed trait search extends StObject
-  inline def search: search = "search".asInstanceOf[search]
+  sealed trait scrollup extends StObject
+  inline def scrollup: scrollup = "scrollup".asInstanceOf[scrollup]
   
   @js.native
   sealed trait seconds extends StObject
@@ -1661,12 +1712,12 @@ object grommetStrings {
   inline def selectors: selectors = "selectors".asInstanceOf[selectors]
   
   @js.native
-  sealed trait shrink extends StObject
-  inline def shrink: shrink = "shrink".asInstanceOf[shrink]
+  sealed trait semicircle extends StObject
+  inline def semicircle: semicircle = "semicircle".asInstanceOf[semicircle]
   
   @js.native
-  sealed trait size extends StObject
-  inline def size: size = "size".asInstanceOf[size]
+  sealed trait shrink extends StObject
+  inline def shrink: shrink = "shrink".asInstanceOf[shrink]
   
   @js.native
   sealed trait slide extends StObject
@@ -1701,11 +1752,13 @@ object grommetStrings {
        with EdgeSizeType
        with _BasisType
        with _BoxSizeType
+       with _DigitalTexts
        with _ElevationType
-       with _PadSizeType
+       with _GridSizeType
        with _PolymorphicType
        with _RoundType
        with _SizeType
+       with _TShirtSizeType
        with _ThicknessType
   inline def small: small = "small".asInstanceOf[small]
   
@@ -1714,6 +1767,10 @@ object grommetStrings {
     extends StObject
        with BoxStyleType
   inline def solid: solid = "solid".asInstanceOf[solid]
+  
+  @js.native
+  sealed trait some extends StObject
+  inline def some: some = "some".asInstanceOf[some]
   
   @js.native
   sealed trait source
@@ -1728,12 +1785,12 @@ object grommetStrings {
   inline def span: span = "span".asInstanceOf[span]
   
   @js.native
-  sealed trait spelling extends StObject
-  inline def spelling: spelling = "spelling".asInstanceOf[spelling]
-  
-  @js.native
   sealed trait square extends StObject
   inline def square: square = "square".asInstanceOf[square]
+  
+  @js.native
+  sealed trait squares extends StObject
+  inline def squares: squares = "squares".asInstanceOf[squares]
   
   @js.native
   sealed trait star extends StObject
@@ -1742,16 +1799,13 @@ object grommetStrings {
   @js.native
   sealed trait start
     extends StObject
-       with AlignContentType
        with AlignSelfType
        with BoxSideType
        with JustifyContentType
        with TextAlignType
+       with _AlignContentType
+       with _AlignType
   inline def start: start = "start".asInstanceOf[start]
-  
-  @js.native
-  sealed trait step extends StObject
-  inline def step: step = "step".asInstanceOf[step]
   
   @js.native
   sealed trait stop
@@ -1762,10 +1816,27 @@ object grommetStrings {
   @js.native
   sealed trait stretch
     extends StObject
-       with AlignContentType
        with AlignSelfType
        with JustifyContentType
+       with _AlignContentType
+       with _AlignType
   inline def stretch: stretch = "stretch".asInstanceOf[stretch]
+  
+  @js.native
+  sealed trait stripesDiagonalDown extends StObject
+  inline def stripesDiagonalDown: stripesDiagonalDown = "stripesDiagonalDown".asInstanceOf[stripesDiagonalDown]
+  
+  @js.native
+  sealed trait stripesDiagonalUp extends StObject
+  inline def stripesDiagonalUp: stripesDiagonalUp = "stripesDiagonalUp".asInstanceOf[stripesDiagonalUp]
+  
+  @js.native
+  sealed trait stripesHorizontal extends StObject
+  inline def stripesHorizontal: stripesHorizontal = "stripesHorizontal".asInstanceOf[stripesHorizontal]
+  
+  @js.native
+  sealed trait stripesVertical extends StObject
+  inline def stripesVertical: stripesVertical = "stripesVertical".asInstanceOf[stripesVertical]
   
   @js.native
   sealed trait strong
@@ -1843,34 +1914,22 @@ object grommetStrings {
   inline def td: td = "td".asInstanceOf[td]
   
   @js.native
-  sealed trait tel extends StObject
-  inline def tel: tel = "tel".asInstanceOf[tel]
-  
-  @js.native
   sealed trait template
     extends StObject
        with _PolymorphicType
   inline def template: template = "template".asInstanceOf[template]
   
   @js.native
-  sealed trait text
-    extends StObject
-       with _PolymorphicType
-  inline def text: text = "text".asInstanceOf[text]
-  
-  @js.native
-  sealed trait `text additions` extends StObject
-  inline def `text additions`: `text additions` = ("text additions").asInstanceOf[`text additions`]
-  
-  @js.native
-  sealed trait `text removals` extends StObject
-  inline def `text removals`: `text removals` = ("text removals").asInstanceOf[`text removals`]
-  
-  @js.native
   sealed trait textPath
     extends StObject
        with _PolymorphicType
   inline def textPath: textPath = "textPath".asInstanceOf[textPath]
+  
+  @js.native
+  sealed trait text_
+    extends StObject
+       with _PolymorphicType
+  inline def text_ : text_ = "text".asInstanceOf[text_]
   
   @js.native
   sealed trait textarea
@@ -1903,6 +1962,10 @@ object grommetStrings {
   inline def time: time = "time".asInstanceOf[time]
   
   @js.native
+  sealed trait tip extends StObject
+  inline def tip: tip = "tip".asInstanceOf[tip]
+  
+  @js.native
   sealed trait title
     extends StObject
        with _PolymorphicType
@@ -1914,6 +1977,7 @@ object grommetStrings {
        with BoxSideType
        with LayerPositionType
        with SideType
+       with VerticalAlignType
   inline def top: top = "top".asInstanceOf[top]
   
   @js.native
@@ -1941,10 +2005,6 @@ object grommetStrings {
   inline def track: track = "track".asInstanceOf[track]
   
   @js.native
-  sealed trait tree extends StObject
-  inline def tree: tree = "tree".asInstanceOf[tree]
-  
-  @js.native
   sealed trait triangle extends StObject
   inline def triangle: triangle = "triangle".asInstanceOf[triangle]
   
@@ -1953,10 +2013,18 @@ object grommetStrings {
   inline def triangleDown: triangleDown = "triangleDown".asInstanceOf[triangleDown]
   
   @js.native
+  sealed trait trim extends StObject
+  inline def trim: trim = "trim".asInstanceOf[trim]
+  
+  @js.native
   sealed trait tspan
     extends StObject
        with _PolymorphicType
   inline def tspan: tspan = "tspan".asInstanceOf[tspan]
+  
+  @js.native
+  sealed trait `type` extends StObject
+  inline def `type`: `type` = "type".asInstanceOf[`type`]
   
   @js.native
   sealed trait u
@@ -1971,8 +2039,10 @@ object grommetStrings {
   inline def ul: ul = "ul".asInstanceOf[ul]
   
   @js.native
-  sealed trait url extends StObject
-  inline def url: url = "url".asInstanceOf[url]
+  sealed trait unknown
+    extends StObject
+       with StatusType
+  inline def unknown: unknown = "unknown".asInstanceOf[unknown]
   
   @js.native
   sealed trait use
@@ -2016,6 +2086,18 @@ object grommetStrings {
   inline def visible: visible = "visible".asInstanceOf[visible]
   
   @js.native
+  sealed trait volume
+    extends StObject
+       with controlsItems
+  inline def volume: volume = "volume".asInstanceOf[volume]
+  
+  @js.native
+  sealed trait warning
+    extends StObject
+       with StatusType
+  inline def warning: warning = "warning".asInstanceOf[warning]
+  
+  @js.native
   sealed trait wbr
     extends StObject
        with _PolymorphicType
@@ -2034,8 +2116,8 @@ object grommetStrings {
   inline def webview: webview = "webview".asInstanceOf[webview]
   
   @js.native
-  sealed trait window extends StObject
-  inline def window: window = "window".asInstanceOf[window]
+  sealed trait wide extends StObject
+  inline def wide: wide = "wide".asInstanceOf[wide]
   
   @js.native
   sealed trait xlarge
@@ -2044,10 +2126,12 @@ object grommetStrings {
        with EdgeSizeType
        with _BasisType
        with _BoxSizeType
+       with _DigitalTexts
        with _ElevationType
-       with _PadSizeType
+       with _GridSizeType
        with _RoundType
        with _SizeType
+       with _TShirtSizeType
        with _ThicknessType
   inline def xlarge: xlarge = "xlarge".asInstanceOf[xlarge]
   
@@ -2057,10 +2141,12 @@ object grommetStrings {
        with EdgeSizeType
        with _BasisType
        with _BoxSizeType
+       with _DigitalTexts
        with _ElevationType
-       with _PadSizeType
+       with _GridSizeType
        with _RoundType
        with _SizeType
+       with _TShirtSizeType
        with _ThicknessType
   inline def xsmall: xsmall = "xsmall".asInstanceOf[xsmall]
   
@@ -2068,6 +2154,9 @@ object grommetStrings {
   sealed trait xxlarge
     extends StObject
        with _BasisType
+       with _DigitalTexts
+       with _HeightType
+       with _WidthType
   inline def xxlarge: xxlarge = "xxlarge".asInstanceOf[xxlarge]
   
   @js.native
@@ -2075,13 +2164,10 @@ object grommetStrings {
     extends StObject
        with EdgeSizeType
        with _BasisType
-       with _PadSizeType
+       with _HeightType
        with _SizeType
+       with _WidthType
   inline def xxsmall: xxsmall = "xxsmall".asInstanceOf[xxsmall]
-  
-  @js.native
-  sealed trait yes extends StObject
-  inline def yes: yes = "yes".asInstanceOf[yes]
   
   @js.native
   sealed trait zoomIn extends StObject

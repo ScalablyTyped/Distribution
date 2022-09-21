@@ -7,21 +7,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ICollection extends StObject {
   
   @JSName("apply")
-  def apply(method: js.Function, `val`: js.Any): js.Any
+  def apply(method: js.Function, `val`: Any): Any
   
-  def each(func: js.Function0[js.Any]): js.Any
+  def each(func: js.Function0[Any]): Any
 }
 object ICollection {
   
-  inline def apply(apply: (js.Function, js.Any) => js.Any, each: js.Function0[js.Any] => js.Any): ICollection = {
+  inline def apply(apply: (js.Function, Any) => Any, each: js.Function0[Any] => Any): ICollection = {
     val __obj = js.Dynamic.literal(apply = js.Any.fromFunction2(apply), each = js.Any.fromFunction1(each))
     __obj.asInstanceOf[ICollection]
   }
   
   extension [Self <: ICollection](x: Self) {
     
-    inline def setApply(value: (js.Function, js.Any) => js.Any): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
+    inline def setApply(value: (js.Function, Any) => Any): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
     
-    inline def setEach(value: js.Function0[js.Any] => js.Any): Self = StObject.set(x, "each", js.Any.fromFunction1(value))
+    inline def setEach(value: js.Function0[Any] => Any): Self = StObject.set(x, "each", js.Any.fromFunction1(value))
   }
 }

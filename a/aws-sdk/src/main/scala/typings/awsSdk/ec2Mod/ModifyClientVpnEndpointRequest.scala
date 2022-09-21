@@ -12,6 +12,11 @@ trait ModifyClientVpnEndpointRequest extends StObject {
   var ClientConnectOptions: js.UndefOr[typings.awsSdk.ec2Mod.ClientConnectOptions] = js.undefined
   
   /**
+    * Options for enabling a customizable text banner that will be displayed on Amazon Web Services provided clients when a VPN session is established.
+    */
+  var ClientLoginBannerOptions: js.UndefOr[typings.awsSdk.ec2Mod.ClientLoginBannerOptions] = js.undefined
+  
+  /**
     * The ID of the Client VPN endpoint to modify.
     */
   var ClientVpnEndpointId: typings.awsSdk.ec2Mod.ClientVpnEndpointId
@@ -47,12 +52,17 @@ trait ModifyClientVpnEndpointRequest extends StObject {
   var SelfServicePortal: js.UndefOr[typings.awsSdk.ec2Mod.SelfServicePortal] = js.undefined
   
   /**
-    * The ARN of the server certificate to be used. The server certificate must be provisioned in AWS Certificate Manager (ACM).
+    * The ARN of the server certificate to be used. The server certificate must be provisioned in Certificate Manager (ACM).
     */
   var ServerCertificateArn: js.UndefOr[String] = js.undefined
   
   /**
-    * Indicates whether the VPN is split-tunnel. For information about split-tunnel VPN endpoints, see Split-Tunnel AWS Client VPN Endpoint in the AWS Client VPN Administrator Guide.
+    * The maximum VPN session duration time in hours. Valid values: 8 | 10 | 12 | 24  Default value: 24 
+    */
+  var SessionTimeoutHours: js.UndefOr[Integer] = js.undefined
+  
+  /**
+    * Indicates whether the VPN is split-tunnel. For information about split-tunnel VPN endpoints, see Split-tunnel Client VPN endpoint in the Client VPN Administrator Guide.
     */
   var SplitTunnel: js.UndefOr[Boolean] = js.undefined
   
@@ -79,6 +89,10 @@ object ModifyClientVpnEndpointRequest {
     
     inline def setClientConnectOptionsUndefined: Self = StObject.set(x, "ClientConnectOptions", js.undefined)
     
+    inline def setClientLoginBannerOptions(value: ClientLoginBannerOptions): Self = StObject.set(x, "ClientLoginBannerOptions", value.asInstanceOf[js.Any])
+    
+    inline def setClientLoginBannerOptionsUndefined: Self = StObject.set(x, "ClientLoginBannerOptions", js.undefined)
+    
     inline def setClientVpnEndpointId(value: ClientVpnEndpointId): Self = StObject.set(x, "ClientVpnEndpointId", value.asInstanceOf[js.Any])
     
     inline def setConnectionLogOptions(value: ConnectionLogOptions): Self = StObject.set(x, "ConnectionLogOptions", value.asInstanceOf[js.Any])
@@ -101,7 +115,7 @@ object ModifyClientVpnEndpointRequest {
     
     inline def setSecurityGroupIdsUndefined: Self = StObject.set(x, "SecurityGroupIds", js.undefined)
     
-    inline def setSecurityGroupIdsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value :_*))
+    inline def setSecurityGroupIdsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value*))
     
     inline def setSelfServicePortal(value: SelfServicePortal): Self = StObject.set(x, "SelfServicePortal", value.asInstanceOf[js.Any])
     
@@ -110,6 +124,10 @@ object ModifyClientVpnEndpointRequest {
     inline def setServerCertificateArn(value: String): Self = StObject.set(x, "ServerCertificateArn", value.asInstanceOf[js.Any])
     
     inline def setServerCertificateArnUndefined: Self = StObject.set(x, "ServerCertificateArn", js.undefined)
+    
+    inline def setSessionTimeoutHours(value: Integer): Self = StObject.set(x, "SessionTimeoutHours", value.asInstanceOf[js.Any])
+    
+    inline def setSessionTimeoutHoursUndefined: Self = StObject.set(x, "SessionTimeoutHours", js.undefined)
     
     inline def setSplitTunnel(value: Boolean): Self = StObject.set(x, "SplitTunnel", value.asInstanceOf[js.Any])
     

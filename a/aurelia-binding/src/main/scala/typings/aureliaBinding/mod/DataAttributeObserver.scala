@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("aurelia-binding", "DataAttributeObserver")
 @js.native
-class DataAttributeObserver protected ()
+open class DataAttributeObserver protected ()
   extends StObject
      with InternalPropertyObserver {
   def this(element: Element, propertyName: String) = this()

@@ -11,13 +11,13 @@ trait IgFinancialChart
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * A FinancialChartRangeSelectorOptionCollection containing the available range selector options on the toolbar.
     * This will be the intersection of the user-defined range selector options, if any, and the range selector options which are automatically determined based on the range of data.
     */
-  var actualRangeSelectorOptions: js.UndefOr[js.Any] = js.undefined
+  var actualRangeSelectorOptions: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets a value indicating whether grid and tick lines are aligned to device pixels.
@@ -45,7 +45,7 @@ trait IgFinancialChart
     * The value provided should be an array of CSS color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  var brushes: js.UndefOr[js.Any] = js.undefined
+  var brushes: js.UndefOr[Any] = js.undefined
   
   /**
     * Occurs when the style of a callout is updated.
@@ -65,7 +65,7 @@ trait IgFinancialChart
   /**
     * Gets or sets the collection of callout data to be annotated.
     */
-  var calloutsItemsSource: js.UndefOr[js.Any] = js.undefined
+  var calloutsItemsSource: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the member path of the label data for the callouts.
@@ -99,12 +99,12 @@ trait IgFinancialChart
     */
   var chartType: js.UndefOr[String] = js.undefined
   
-  var chartTypePickerTemplate: js.UndefOr[js.Any] = js.undefined
+  var chartTypePickerTemplate: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets a function for creating wrapped tooltip
     */
-  var createWrappedTooltip: js.UndefOr[js.Any] = js.undefined
+  var createWrappedTooltip: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets whether annotations are shown along the axis for crosshair values
@@ -132,7 +132,7 @@ trait IgFinancialChart
     * The names of custom indicators to add to the chart.
     * When CustomIndicatorNames is set, the ApplyCustomIndicators event will be raised for each custom indicator name.
     */
-  var customIndicatorNames: js.UndefOr[js.Any] = js.undefined
+  var customIndicatorNames: js.UndefOr[Any] = js.undefined
   
   /**
     * Event which is raised before data binding.
@@ -157,7 +157,7 @@ trait IgFinancialChart
     * That can be instance of array or primitives, array of objects, instance of $.ig.DataSource, or any other data accepted by $.ig.DataSource.
     * Note: if it is set to string and "dataSourceType" option is not set, then $.ig.JSONPDataSource is used.
     */
-  var dataSource: js.UndefOr[js.Any] = js.undefined
+  var dataSource: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets sets data source type (such as "json", "xml", etc). Please refer to the documentation of $.ig.DataSource and its type property
@@ -172,7 +172,7 @@ trait IgFinancialChart
   /**
     * Gets or sets a set of property paths that should be excluded from consideration by the category chart.
     */
-  var excludedProperties: js.UndefOr[js.Any] = js.undefined
+  var excludedProperties: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets whether annotations for the final value of each series is displayed on the axis.
@@ -182,7 +182,7 @@ trait IgFinancialChart
   /**
     * Gets or sets a legend displayed between toolbar and chart's plot area
     */
-  var financialChartLegend: js.UndefOr[js.Any] = js.undefined
+  var financialChartLegend: js.UndefOr[Any] = js.undefined
   
   /**
     * The height of the chart.
@@ -202,25 +202,25 @@ trait IgFinancialChart
   /**
     * Gets or sets a set of property paths that should be included for consideration by the category chart, leaving the remainder excluded. If null, all properties will be considered.
     */
-  var includedProperties: js.UndefOr[js.Any] = js.undefined
+  var includedProperties: js.UndefOr[Any] = js.undefined
   
   /**
     * Brushes to use for financial indicators.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  var indicatorBrushes: js.UndefOr[js.Any] = js.undefined
+  var indicatorBrushes: js.UndefOr[Any] = js.undefined
   
   /**
     * The display types of financial indicators.
     */
-  var indicatorDisplayTypes: js.UndefOr[js.Any] = js.undefined
+  var indicatorDisplayTypes: js.UndefOr[Any] = js.undefined
   
   /**
     * The long period of financial indicators, where applicable.
     */
   var indicatorLongPeriod: js.UndefOr[Double] = js.undefined
   
-  var indicatorMenuTemplate: js.UndefOr[js.Any] = js.undefined
+  var indicatorMenuTemplate: js.UndefOr[Any] = js.undefined
   
   /**
     * The multiplier of financial indicators, where applicable.
@@ -231,7 +231,7 @@ trait IgFinancialChart
     * Brushes to use for negative elements in financial indicators.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  var indicatorNegativeBrushes: js.UndefOr[js.Any] = js.undefined
+  var indicatorNegativeBrushes: js.UndefOr[Any] = js.undefined
   
   /**
     * The period of financial indicators, where applicable.
@@ -261,7 +261,7 @@ trait IgFinancialChart
   /**
     * A collection indicating what financial indicator types to display on the Financial Chart.
     */
-  var indicatorTypes: js.UndefOr[js.Any] = js.undefined
+  var indicatorTypes: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets whether the chart can be horizontally zoomed through user interactions.
@@ -303,7 +303,7 @@ trait IgFinancialChart
     * Databinding can be further configured by attributing the data item classes
     * with the DataSeriesMemberIntentAttribute.
     */
-  var itemsSource: js.UndefOr[js.Any] = js.undefined
+  var itemsSource: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the left margin of the chart content.
@@ -314,14 +314,14 @@ trait IgFinancialChart
     * Gets or sets the legend to connect this chart to.
     * When the legend property is set, the chart will use it to display information about its series.  Legends can be shared by multiple chart controls.
     */
-  var legend: js.UndefOr[js.Any] = js.undefined
+  var legend: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the palette of brushes used for rendering fill area of data point markers.
     * This property applies only to these chart types: point, line, spline, bubble, and polygon
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  var markerBrushes: js.UndefOr[js.Any] = js.undefined
+  var markerBrushes: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the maximum number of markers displyed in the plot area of the chart.
@@ -333,13 +333,13 @@ trait IgFinancialChart
     * This property applies only to these chart types: point, line, spline, bubble, and polygon
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  var markerOutlines: js.UndefOr[js.Any] = js.undefined
+  var markerOutlines: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the marker shapes used for indicating location of data points in this chart.
     * This property applies only to these chart types: point, line, spline, bubble, and polygon
     */
-  var markerTypes: js.UndefOr[js.Any] = js.undefined
+  var markerTypes: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets sets maximum number of displayed records in chart.
@@ -350,34 +350,34 @@ trait IgFinancialChart
     * Gets or sets the palette used for coloring negative items of Waterfall chart type.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  var negativeBrushes: js.UndefOr[js.Any] = js.undefined
+  var negativeBrushes: js.UndefOr[Any] = js.undefined
   
   /**
     * Brushes to use for drawing negative elements, when using a chart type with contextual coloring, such as Waterfall.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  var negativeOutlines: js.UndefOr[js.Any] = js.undefined
+  var negativeOutlines: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the palette of brushes to use for outlines on the chart series.
     * The value provided should be an array of CSS color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  var outlines: js.UndefOr[js.Any] = js.undefined
+  var outlines: js.UndefOr[Any] = js.undefined
   
   /**
     * Brushes to use for filling financial overlays.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  var overlayBrushes: js.UndefOr[js.Any] = js.undefined
+  var overlayBrushes: js.UndefOr[Any] = js.undefined
   
   /**
     * Brushes to use for outlining financial overlays.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  var overlayOutlines: js.UndefOr[js.Any] = js.undefined
+  var overlayOutlines: js.UndefOr[Any] = js.undefined
   
-  var overlayPickerTemplate: js.UndefOr[js.Any] = js.undefined
+  var overlayPickerTemplate: js.UndefOr[Any] = js.undefined
   
   /**
     * The outline thickness of financial overlays.
@@ -387,7 +387,7 @@ trait IgFinancialChart
   /**
     * A collection indicating what financial overlay types to display on the Financial Chart.
     */
-  var overlayTypes: js.UndefOr[js.Any] = js.undefined
+  var overlayTypes: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the scaling value used to affect the pixel density of the control.
@@ -404,9 +404,9 @@ trait IgFinancialChart
   /**
     * A FinancialChartRangeSelectorOptionCollection containing the available range selector options on the toolbar.
     */
-  var rangeSelectorOptions: js.UndefOr[js.Any] = js.undefined
+  var rangeSelectorOptions: js.UndefOr[Any] = js.undefined
   
-  var rangeSelectorTemplate: js.UndefOr[js.Any] = js.undefined
+  var rangeSelectorTemplate: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the rendering resolution for all series in this chart.
@@ -574,17 +574,17 @@ trait IgFinancialChart
   
   var toolbarHeight: js.UndefOr[Double] = js.undefined
   
-  var toolbarTemplate: js.UndefOr[js.Any] = js.undefined
+  var toolbarTemplate: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the id of a template element to use for tooltips, or markup representing the tooltip template.
     */
-  var tooltipTemplate: js.UndefOr[js.Any] = js.undefined
+  var tooltipTemplate: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the names of tooltip templates
     */
-  var tooltipTemplates: js.UndefOr[js.Any] = js.undefined
+  var tooltipTemplates: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the top margin of the chart content.
@@ -600,14 +600,14 @@ trait IgFinancialChart
     * Gets or sets the easing function used for animating series plots when the data is changing.
     * This can be set to one of the known values "linear" or "cubic," or it can be set to an easing function which takes a single numeric parameter and returns a number.
     */
-  var transitionEasingFunction: js.UndefOr[js.Any] = js.undefined
+  var transitionEasingFunction: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the palette of brushes to used for coloring trend lines in this chart.
     * The value provided should be an array of CSS color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  var trendLineBrushes: js.UndefOr[js.Any] = js.undefined
+  var trendLineBrushes: js.UndefOr[Any] = js.undefined
   
   var trendLinePeriod: js.UndefOr[Double] = js.undefined
   
@@ -639,7 +639,7 @@ trait IgFinancialChart
     */
   var trendLineType: js.UndefOr[String] = js.undefined
   
-  var trendLineTypePickerTemplate: js.UndefOr[js.Any] = js.undefined
+  var trendLineTypePickerTemplate: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the behavior that determines how unknown values will be plotted on the chart.Null and Double.NaN are two examples of unknown values.
@@ -668,13 +668,13 @@ trait IgFinancialChart
     * Brushes to use for filling volume series in the volume pane.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  var volumeBrushes: js.UndefOr[js.Any] = js.undefined
+  var volumeBrushes: js.UndefOr[Any] = js.undefined
   
   /**
     * Brushes to use for outlining volume series in the volume pane.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  var volumeOutlines: js.UndefOr[js.Any] = js.undefined
+  var volumeOutlines: js.UndefOr[Any] = js.undefined
   
   /**
     * The outline thickness of volume series in the volume pane.
@@ -692,12 +692,12 @@ trait IgFinancialChart
     */
   var volumeType: js.UndefOr[String] = js.undefined
   
-  var volumeTypePickerTemplate: js.UndefOr[js.Any] = js.undefined
+  var volumeTypePickerTemplate: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the widget of this control
     */
-  var widget: js.UndefOr[js.Any] = js.undefined
+  var widget: js.UndefOr[Any] = js.undefined
   
   /**
     * The width of the chart.
@@ -709,7 +709,7 @@ trait IgFinancialChart
     * WindowRect is expressed as a Rectangle with coordinates and sizes between 0 and 1.
     * The provided object should have numeric properties called left, top, width and height.
     */
-  var windowRect: js.UndefOr[js.Any] = js.undefined
+  var windowRect: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the distance between the X-axis and the bottom of the chart.
@@ -719,7 +719,7 @@ trait IgFinancialChart
   /**
     * Gets or sets function which takes an context object and returns a formatted label for the X-axis.
     */
-  var xAxisFormatLabel: js.UndefOr[js.Any] = js.undefined
+  var xAxisFormatLabel: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets whether to invert the direction of the X-axis by placing the first data items on the right side of the chart.
@@ -729,7 +729,7 @@ trait IgFinancialChart
   /**
     * Gets or sets the format for labels along the X-axis.
     */
-  var xAxisLabel: js.UndefOr[js.Any] = js.undefined
+  var xAxisLabel: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the angle of rotation for labels along the X-axis.
@@ -810,12 +810,12 @@ trait IgFinancialChart
   /**
     * Gets or sets maximum value on x-axis
     */
-  var xAxisMaximumValue: js.UndefOr[js.Any] = js.undefined
+  var xAxisMaximumValue: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets minimum value on x-axis
     */
-  var xAxisMinimumValue: js.UndefOr[js.Any] = js.undefined
+  var xAxisMinimumValue: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the color to apply to minor gridlines along the X-axis.
@@ -935,7 +935,7 @@ trait IgFinancialChart
   /**
     * Gets or sets function which takes a context object and returns a formatted label for the Y-axis.
     */
-  var yAxisFormatLabel: js.UndefOr[js.Any] = js.undefined
+  var yAxisFormatLabel: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the distance between each label and grid line along the Y-axis.
@@ -956,7 +956,7 @@ trait IgFinancialChart
   /**
     * Gets or sets the property or string from which the labels are derived.
     */
-  var yAxisLabel: js.UndefOr[js.Any] = js.undefined
+  var yAxisLabel: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets or sets the angle of rotation for labels along the Y-axis.
@@ -1208,7 +1208,7 @@ object IgFinancialChart {
   
   extension [Self <: IgFinancialChart](x: Self) {
     
-    inline def setActualRangeSelectorOptions(value: js.Any): Self = StObject.set(x, "actualRangeSelectorOptions", value.asInstanceOf[js.Any])
+    inline def setActualRangeSelectorOptions(value: Any): Self = StObject.set(x, "actualRangeSelectorOptions", value.asInstanceOf[js.Any])
     
     inline def setActualRangeSelectorOptionsUndefined: Self = StObject.set(x, "actualRangeSelectorOptions", js.undefined)
     
@@ -1228,7 +1228,7 @@ object IgFinancialChart {
     
     inline def setBottomMarginUndefined: Self = StObject.set(x, "bottomMargin", js.undefined)
     
-    inline def setBrushes(value: js.Any): Self = StObject.set(x, "brushes", value.asInstanceOf[js.Any])
+    inline def setBrushes(value: Any): Self = StObject.set(x, "brushes", value.asInstanceOf[js.Any])
     
     inline def setBrushesUndefined: Self = StObject.set(x, "brushes", js.undefined)
     
@@ -1244,7 +1244,7 @@ object IgFinancialChart {
     
     inline def setCalloutsContentMemberPathUndefined: Self = StObject.set(x, "calloutsContentMemberPath", js.undefined)
     
-    inline def setCalloutsItemsSource(value: js.Any): Self = StObject.set(x, "calloutsItemsSource", value.asInstanceOf[js.Any])
+    inline def setCalloutsItemsSource(value: Any): Self = StObject.set(x, "calloutsItemsSource", value.asInstanceOf[js.Any])
     
     inline def setCalloutsItemsSourceUndefined: Self = StObject.set(x, "calloutsItemsSource", js.undefined)
     
@@ -1266,13 +1266,13 @@ object IgFinancialChart {
     
     inline def setChartType(value: String): Self = StObject.set(x, "chartType", value.asInstanceOf[js.Any])
     
-    inline def setChartTypePickerTemplate(value: js.Any): Self = StObject.set(x, "chartTypePickerTemplate", value.asInstanceOf[js.Any])
+    inline def setChartTypePickerTemplate(value: Any): Self = StObject.set(x, "chartTypePickerTemplate", value.asInstanceOf[js.Any])
     
     inline def setChartTypePickerTemplateUndefined: Self = StObject.set(x, "chartTypePickerTemplate", js.undefined)
     
     inline def setChartTypeUndefined: Self = StObject.set(x, "chartType", js.undefined)
     
-    inline def setCreateWrappedTooltip(value: js.Any): Self = StObject.set(x, "createWrappedTooltip", value.asInstanceOf[js.Any])
+    inline def setCreateWrappedTooltip(value: Any): Self = StObject.set(x, "createWrappedTooltip", value.asInstanceOf[js.Any])
     
     inline def setCreateWrappedTooltipUndefined: Self = StObject.set(x, "createWrappedTooltip", js.undefined)
     
@@ -1288,7 +1288,7 @@ object IgFinancialChart {
     
     inline def setCrosshairsSnapToDataUndefined: Self = StObject.set(x, "crosshairsSnapToData", js.undefined)
     
-    inline def setCustomIndicatorNames(value: js.Any): Self = StObject.set(x, "customIndicatorNames", value.asInstanceOf[js.Any])
+    inline def setCustomIndicatorNames(value: Any): Self = StObject.set(x, "customIndicatorNames", value.asInstanceOf[js.Any])
     
     inline def setCustomIndicatorNamesUndefined: Self = StObject.set(x, "customIndicatorNames", js.undefined)
     
@@ -1300,7 +1300,7 @@ object IgFinancialChart {
     
     inline def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
-    inline def setDataSource(value: js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceType(value: String): Self = StObject.set(x, "dataSourceType", value.asInstanceOf[js.Any])
     
@@ -1312,7 +1312,7 @@ object IgFinancialChart {
     
     inline def setDataSourceUrlUndefined: Self = StObject.set(x, "dataSourceUrl", js.undefined)
     
-    inline def setExcludedProperties(value: js.Any): Self = StObject.set(x, "excludedProperties", value.asInstanceOf[js.Any])
+    inline def setExcludedProperties(value: Any): Self = StObject.set(x, "excludedProperties", value.asInstanceOf[js.Any])
     
     inline def setExcludedPropertiesUndefined: Self = StObject.set(x, "excludedProperties", js.undefined)
     
@@ -1320,7 +1320,7 @@ object IgFinancialChart {
     
     inline def setFinalValueAnnotationsVisibleUndefined: Self = StObject.set(x, "finalValueAnnotationsVisible", js.undefined)
     
-    inline def setFinancialChartLegend(value: js.Any): Self = StObject.set(x, "financialChartLegend", value.asInstanceOf[js.Any])
+    inline def setFinancialChartLegend(value: Any): Self = StObject.set(x, "financialChartLegend", value.asInstanceOf[js.Any])
     
     inline def setFinancialChartLegendUndefined: Self = StObject.set(x, "financialChartLegend", js.undefined)
     
@@ -1332,15 +1332,15 @@ object IgFinancialChart {
     
     inline def setHideTooltipUndefined: Self = StObject.set(x, "hideTooltip", js.undefined)
     
-    inline def setIncludedProperties(value: js.Any): Self = StObject.set(x, "includedProperties", value.asInstanceOf[js.Any])
+    inline def setIncludedProperties(value: Any): Self = StObject.set(x, "includedProperties", value.asInstanceOf[js.Any])
     
     inline def setIncludedPropertiesUndefined: Self = StObject.set(x, "includedProperties", js.undefined)
     
-    inline def setIndicatorBrushes(value: js.Any): Self = StObject.set(x, "indicatorBrushes", value.asInstanceOf[js.Any])
+    inline def setIndicatorBrushes(value: Any): Self = StObject.set(x, "indicatorBrushes", value.asInstanceOf[js.Any])
     
     inline def setIndicatorBrushesUndefined: Self = StObject.set(x, "indicatorBrushes", js.undefined)
     
-    inline def setIndicatorDisplayTypes(value: js.Any): Self = StObject.set(x, "indicatorDisplayTypes", value.asInstanceOf[js.Any])
+    inline def setIndicatorDisplayTypes(value: Any): Self = StObject.set(x, "indicatorDisplayTypes", value.asInstanceOf[js.Any])
     
     inline def setIndicatorDisplayTypesUndefined: Self = StObject.set(x, "indicatorDisplayTypes", js.undefined)
     
@@ -1348,7 +1348,7 @@ object IgFinancialChart {
     
     inline def setIndicatorLongPeriodUndefined: Self = StObject.set(x, "indicatorLongPeriod", js.undefined)
     
-    inline def setIndicatorMenuTemplate(value: js.Any): Self = StObject.set(x, "indicatorMenuTemplate", value.asInstanceOf[js.Any])
+    inline def setIndicatorMenuTemplate(value: Any): Self = StObject.set(x, "indicatorMenuTemplate", value.asInstanceOf[js.Any])
     
     inline def setIndicatorMenuTemplateUndefined: Self = StObject.set(x, "indicatorMenuTemplate", js.undefined)
     
@@ -1356,7 +1356,7 @@ object IgFinancialChart {
     
     inline def setIndicatorMultiplierUndefined: Self = StObject.set(x, "indicatorMultiplier", js.undefined)
     
-    inline def setIndicatorNegativeBrushes(value: js.Any): Self = StObject.set(x, "indicatorNegativeBrushes", value.asInstanceOf[js.Any])
+    inline def setIndicatorNegativeBrushes(value: Any): Self = StObject.set(x, "indicatorNegativeBrushes", value.asInstanceOf[js.Any])
     
     inline def setIndicatorNegativeBrushesUndefined: Self = StObject.set(x, "indicatorNegativeBrushes", js.undefined)
     
@@ -1380,7 +1380,7 @@ object IgFinancialChart {
     
     inline def setIndicatorThicknessUndefined: Self = StObject.set(x, "indicatorThickness", js.undefined)
     
-    inline def setIndicatorTypes(value: js.Any): Self = StObject.set(x, "indicatorTypes", value.asInstanceOf[js.Any])
+    inline def setIndicatorTypes(value: Any): Self = StObject.set(x, "indicatorTypes", value.asInstanceOf[js.Any])
     
     inline def setIndicatorTypesUndefined: Self = StObject.set(x, "indicatorTypes", js.undefined)
     
@@ -1408,7 +1408,7 @@ object IgFinancialChart {
     
     inline def setIsWindowSyncedToVisibleRangeUndefined: Self = StObject.set(x, "isWindowSyncedToVisibleRange", js.undefined)
     
-    inline def setItemsSource(value: js.Any): Self = StObject.set(x, "itemsSource", value.asInstanceOf[js.Any])
+    inline def setItemsSource(value: Any): Self = StObject.set(x, "itemsSource", value.asInstanceOf[js.Any])
     
     inline def setItemsSourceUndefined: Self = StObject.set(x, "itemsSource", js.undefined)
     
@@ -1416,11 +1416,11 @@ object IgFinancialChart {
     
     inline def setLeftMarginUndefined: Self = StObject.set(x, "leftMargin", js.undefined)
     
-    inline def setLegend(value: js.Any): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+    inline def setLegend(value: Any): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     
     inline def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
     
-    inline def setMarkerBrushes(value: js.Any): Self = StObject.set(x, "markerBrushes", value.asInstanceOf[js.Any])
+    inline def setMarkerBrushes(value: Any): Self = StObject.set(x, "markerBrushes", value.asInstanceOf[js.Any])
     
     inline def setMarkerBrushesUndefined: Self = StObject.set(x, "markerBrushes", js.undefined)
     
@@ -1428,11 +1428,11 @@ object IgFinancialChart {
     
     inline def setMarkerMaxCountUndefined: Self = StObject.set(x, "markerMaxCount", js.undefined)
     
-    inline def setMarkerOutlines(value: js.Any): Self = StObject.set(x, "markerOutlines", value.asInstanceOf[js.Any])
+    inline def setMarkerOutlines(value: Any): Self = StObject.set(x, "markerOutlines", value.asInstanceOf[js.Any])
     
     inline def setMarkerOutlinesUndefined: Self = StObject.set(x, "markerOutlines", js.undefined)
     
-    inline def setMarkerTypes(value: js.Any): Self = StObject.set(x, "markerTypes", value.asInstanceOf[js.Any])
+    inline def setMarkerTypes(value: Any): Self = StObject.set(x, "markerTypes", value.asInstanceOf[js.Any])
     
     inline def setMarkerTypesUndefined: Self = StObject.set(x, "markerTypes", js.undefined)
     
@@ -1440,27 +1440,27 @@ object IgFinancialChart {
     
     inline def setMaxRecCountUndefined: Self = StObject.set(x, "maxRecCount", js.undefined)
     
-    inline def setNegativeBrushes(value: js.Any): Self = StObject.set(x, "negativeBrushes", value.asInstanceOf[js.Any])
+    inline def setNegativeBrushes(value: Any): Self = StObject.set(x, "negativeBrushes", value.asInstanceOf[js.Any])
     
     inline def setNegativeBrushesUndefined: Self = StObject.set(x, "negativeBrushes", js.undefined)
     
-    inline def setNegativeOutlines(value: js.Any): Self = StObject.set(x, "negativeOutlines", value.asInstanceOf[js.Any])
+    inline def setNegativeOutlines(value: Any): Self = StObject.set(x, "negativeOutlines", value.asInstanceOf[js.Any])
     
     inline def setNegativeOutlinesUndefined: Self = StObject.set(x, "negativeOutlines", js.undefined)
     
-    inline def setOutlines(value: js.Any): Self = StObject.set(x, "outlines", value.asInstanceOf[js.Any])
+    inline def setOutlines(value: Any): Self = StObject.set(x, "outlines", value.asInstanceOf[js.Any])
     
     inline def setOutlinesUndefined: Self = StObject.set(x, "outlines", js.undefined)
     
-    inline def setOverlayBrushes(value: js.Any): Self = StObject.set(x, "overlayBrushes", value.asInstanceOf[js.Any])
+    inline def setOverlayBrushes(value: Any): Self = StObject.set(x, "overlayBrushes", value.asInstanceOf[js.Any])
     
     inline def setOverlayBrushesUndefined: Self = StObject.set(x, "overlayBrushes", js.undefined)
     
-    inline def setOverlayOutlines(value: js.Any): Self = StObject.set(x, "overlayOutlines", value.asInstanceOf[js.Any])
+    inline def setOverlayOutlines(value: Any): Self = StObject.set(x, "overlayOutlines", value.asInstanceOf[js.Any])
     
     inline def setOverlayOutlinesUndefined: Self = StObject.set(x, "overlayOutlines", js.undefined)
     
-    inline def setOverlayPickerTemplate(value: js.Any): Self = StObject.set(x, "overlayPickerTemplate", value.asInstanceOf[js.Any])
+    inline def setOverlayPickerTemplate(value: Any): Self = StObject.set(x, "overlayPickerTemplate", value.asInstanceOf[js.Any])
     
     inline def setOverlayPickerTemplateUndefined: Self = StObject.set(x, "overlayPickerTemplate", js.undefined)
     
@@ -1468,7 +1468,7 @@ object IgFinancialChart {
     
     inline def setOverlayThicknessUndefined: Self = StObject.set(x, "overlayThickness", js.undefined)
     
-    inline def setOverlayTypes(value: js.Any): Self = StObject.set(x, "overlayTypes", value.asInstanceOf[js.Any])
+    inline def setOverlayTypes(value: Any): Self = StObject.set(x, "overlayTypes", value.asInstanceOf[js.Any])
     
     inline def setOverlayTypesUndefined: Self = StObject.set(x, "overlayTypes", js.undefined)
     
@@ -1480,11 +1480,11 @@ object IgFinancialChart {
     
     inline def setPropertyChangedUndefined: Self = StObject.set(x, "propertyChanged", js.undefined)
     
-    inline def setRangeSelectorOptions(value: js.Any): Self = StObject.set(x, "rangeSelectorOptions", value.asInstanceOf[js.Any])
+    inline def setRangeSelectorOptions(value: Any): Self = StObject.set(x, "rangeSelectorOptions", value.asInstanceOf[js.Any])
     
     inline def setRangeSelectorOptionsUndefined: Self = StObject.set(x, "rangeSelectorOptions", js.undefined)
     
-    inline def setRangeSelectorTemplate(value: js.Any): Self = StObject.set(x, "rangeSelectorTemplate", value.asInstanceOf[js.Any])
+    inline def setRangeSelectorTemplate(value: Any): Self = StObject.set(x, "rangeSelectorTemplate", value.asInstanceOf[js.Any])
     
     inline def setRangeSelectorTemplateUndefined: Self = StObject.set(x, "rangeSelectorTemplate", js.undefined)
     
@@ -1608,15 +1608,15 @@ object IgFinancialChart {
     
     inline def setToolbarHeightUndefined: Self = StObject.set(x, "toolbarHeight", js.undefined)
     
-    inline def setToolbarTemplate(value: js.Any): Self = StObject.set(x, "toolbarTemplate", value.asInstanceOf[js.Any])
+    inline def setToolbarTemplate(value: Any): Self = StObject.set(x, "toolbarTemplate", value.asInstanceOf[js.Any])
     
     inline def setToolbarTemplateUndefined: Self = StObject.set(x, "toolbarTemplate", js.undefined)
     
-    inline def setTooltipTemplate(value: js.Any): Self = StObject.set(x, "tooltipTemplate", value.asInstanceOf[js.Any])
+    inline def setTooltipTemplate(value: Any): Self = StObject.set(x, "tooltipTemplate", value.asInstanceOf[js.Any])
     
     inline def setTooltipTemplateUndefined: Self = StObject.set(x, "tooltipTemplate", js.undefined)
     
-    inline def setTooltipTemplates(value: js.Any): Self = StObject.set(x, "tooltipTemplates", value.asInstanceOf[js.Any])
+    inline def setTooltipTemplates(value: Any): Self = StObject.set(x, "tooltipTemplates", value.asInstanceOf[js.Any])
     
     inline def setTooltipTemplatesUndefined: Self = StObject.set(x, "tooltipTemplates", js.undefined)
     
@@ -1628,11 +1628,11 @@ object IgFinancialChart {
     
     inline def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
     
-    inline def setTransitionEasingFunction(value: js.Any): Self = StObject.set(x, "transitionEasingFunction", value.asInstanceOf[js.Any])
+    inline def setTransitionEasingFunction(value: Any): Self = StObject.set(x, "transitionEasingFunction", value.asInstanceOf[js.Any])
     
     inline def setTransitionEasingFunctionUndefined: Self = StObject.set(x, "transitionEasingFunction", js.undefined)
     
-    inline def setTrendLineBrushes(value: js.Any): Self = StObject.set(x, "trendLineBrushes", value.asInstanceOf[js.Any])
+    inline def setTrendLineBrushes(value: Any): Self = StObject.set(x, "trendLineBrushes", value.asInstanceOf[js.Any])
     
     inline def setTrendLineBrushesUndefined: Self = StObject.set(x, "trendLineBrushes", js.undefined)
     
@@ -1646,7 +1646,7 @@ object IgFinancialChart {
     
     inline def setTrendLineType(value: String): Self = StObject.set(x, "trendLineType", value.asInstanceOf[js.Any])
     
-    inline def setTrendLineTypePickerTemplate(value: js.Any): Self = StObject.set(x, "trendLineTypePickerTemplate", value.asInstanceOf[js.Any])
+    inline def setTrendLineTypePickerTemplate(value: Any): Self = StObject.set(x, "trendLineTypePickerTemplate", value.asInstanceOf[js.Any])
     
     inline def setTrendLineTypePickerTemplateUndefined: Self = StObject.set(x, "trendLineTypePickerTemplate", js.undefined)
     
@@ -1660,11 +1660,11 @@ object IgFinancialChart {
     
     inline def setUpdateTooltipUndefined: Self = StObject.set(x, "updateTooltip", js.undefined)
     
-    inline def setVolumeBrushes(value: js.Any): Self = StObject.set(x, "volumeBrushes", value.asInstanceOf[js.Any])
+    inline def setVolumeBrushes(value: Any): Self = StObject.set(x, "volumeBrushes", value.asInstanceOf[js.Any])
     
     inline def setVolumeBrushesUndefined: Self = StObject.set(x, "volumeBrushes", js.undefined)
     
-    inline def setVolumeOutlines(value: js.Any): Self = StObject.set(x, "volumeOutlines", value.asInstanceOf[js.Any])
+    inline def setVolumeOutlines(value: Any): Self = StObject.set(x, "volumeOutlines", value.asInstanceOf[js.Any])
     
     inline def setVolumeOutlinesUndefined: Self = StObject.set(x, "volumeOutlines", js.undefined)
     
@@ -1674,13 +1674,13 @@ object IgFinancialChart {
     
     inline def setVolumeType(value: String): Self = StObject.set(x, "volumeType", value.asInstanceOf[js.Any])
     
-    inline def setVolumeTypePickerTemplate(value: js.Any): Self = StObject.set(x, "volumeTypePickerTemplate", value.asInstanceOf[js.Any])
+    inline def setVolumeTypePickerTemplate(value: Any): Self = StObject.set(x, "volumeTypePickerTemplate", value.asInstanceOf[js.Any])
     
     inline def setVolumeTypePickerTemplateUndefined: Self = StObject.set(x, "volumeTypePickerTemplate", js.undefined)
     
     inline def setVolumeTypeUndefined: Self = StObject.set(x, "volumeType", js.undefined)
     
-    inline def setWidget(value: js.Any): Self = StObject.set(x, "widget", value.asInstanceOf[js.Any])
+    inline def setWidget(value: Any): Self = StObject.set(x, "widget", value.asInstanceOf[js.Any])
     
     inline def setWidgetUndefined: Self = StObject.set(x, "widget", js.undefined)
     
@@ -1688,7 +1688,7 @@ object IgFinancialChart {
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
-    inline def setWindowRect(value: js.Any): Self = StObject.set(x, "windowRect", value.asInstanceOf[js.Any])
+    inline def setWindowRect(value: Any): Self = StObject.set(x, "windowRect", value.asInstanceOf[js.Any])
     
     inline def setWindowRectUndefined: Self = StObject.set(x, "windowRect", js.undefined)
     
@@ -1696,7 +1696,7 @@ object IgFinancialChart {
     
     inline def setXAxisExtentUndefined: Self = StObject.set(x, "xAxisExtent", js.undefined)
     
-    inline def setXAxisFormatLabel(value: js.Any): Self = StObject.set(x, "xAxisFormatLabel", value.asInstanceOf[js.Any])
+    inline def setXAxisFormatLabel(value: Any): Self = StObject.set(x, "xAxisFormatLabel", value.asInstanceOf[js.Any])
     
     inline def setXAxisFormatLabelUndefined: Self = StObject.set(x, "xAxisFormatLabel", js.undefined)
     
@@ -1704,7 +1704,7 @@ object IgFinancialChart {
     
     inline def setXAxisInvertedUndefined: Self = StObject.set(x, "xAxisInverted", js.undefined)
     
-    inline def setXAxisLabel(value: js.Any): Self = StObject.set(x, "xAxisLabel", value.asInstanceOf[js.Any])
+    inline def setXAxisLabel(value: Any): Self = StObject.set(x, "xAxisLabel", value.asInstanceOf[js.Any])
     
     inline def setXAxisLabelAngle(value: Double): Self = StObject.set(x, "xAxisLabelAngle", value.asInstanceOf[js.Any])
     
@@ -1756,11 +1756,11 @@ object IgFinancialChart {
     
     inline def setXAxisMajorStrokeUndefined: Self = StObject.set(x, "xAxisMajorStroke", js.undefined)
     
-    inline def setXAxisMaximumValue(value: js.Any): Self = StObject.set(x, "xAxisMaximumValue", value.asInstanceOf[js.Any])
+    inline def setXAxisMaximumValue(value: Any): Self = StObject.set(x, "xAxisMaximumValue", value.asInstanceOf[js.Any])
     
     inline def setXAxisMaximumValueUndefined: Self = StObject.set(x, "xAxisMaximumValue", js.undefined)
     
-    inline def setXAxisMinimumValue(value: js.Any): Self = StObject.set(x, "xAxisMinimumValue", value.asInstanceOf[js.Any])
+    inline def setXAxisMinimumValue(value: Any): Self = StObject.set(x, "xAxisMinimumValue", value.asInstanceOf[js.Any])
     
     inline def setXAxisMinimumValueUndefined: Self = StObject.set(x, "xAxisMinimumValue", js.undefined)
     
@@ -1848,7 +1848,7 @@ object IgFinancialChart {
     
     inline def setYAxisExtentUndefined: Self = StObject.set(x, "yAxisExtent", js.undefined)
     
-    inline def setYAxisFormatLabel(value: js.Any): Self = StObject.set(x, "yAxisFormatLabel", value.asInstanceOf[js.Any])
+    inline def setYAxisFormatLabel(value: Any): Self = StObject.set(x, "yAxisFormatLabel", value.asInstanceOf[js.Any])
     
     inline def setYAxisFormatLabelUndefined: Self = StObject.set(x, "yAxisFormatLabel", js.undefined)
     
@@ -1864,7 +1864,7 @@ object IgFinancialChart {
     
     inline def setYAxisIsLogarithmicUndefined: Self = StObject.set(x, "yAxisIsLogarithmic", js.undefined)
     
-    inline def setYAxisLabel(value: js.Any): Self = StObject.set(x, "yAxisLabel", value.asInstanceOf[js.Any])
+    inline def setYAxisLabel(value: Any): Self = StObject.set(x, "yAxisLabel", value.asInstanceOf[js.Any])
     
     inline def setYAxisLabelAngle(value: Double): Self = StObject.set(x, "yAxisLabelAngle", value.asInstanceOf[js.Any])
     

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Sdk.Query.QueryBase")
 @js.native
-class QueryBase protected () extends StObject {
+open class QueryBase protected () extends StObject {
   /**
     * Internal Use Only.
     * @param type An Abstract class for different query classes to inherit from.

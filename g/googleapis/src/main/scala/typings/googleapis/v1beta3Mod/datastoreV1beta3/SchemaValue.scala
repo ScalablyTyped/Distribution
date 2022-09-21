@@ -4,47 +4,37 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A message that can hold any of the supported value types and associated
-  * metadata.
-  */
 trait SchemaValue extends StObject {
   
   /**
-    * An array value. Cannot contain another array value. A `Value` instance
-    * that sets field `array_value` must not set fields `meaning` or
-    * `exclude_from_indexes`.
+    * An array value. Cannot contain another array value. A `Value` instance that sets field `array_value` must not set fields `meaning` or `exclude_from_indexes`.
     */
   var arrayValue: js.UndefOr[SchemaArrayValue] = js.undefined
   
   /**
-    * A blob value. May have at most 1,000,000 bytes. When
-    * `exclude_from_indexes` is false, may have at most 1500 bytes. In JSON
-    * requests, must be base64-encoded.
+    * A blob value. May have at most 1,000,000 bytes. When `exclude_from_indexes` is false, may have at most 1500 bytes. In JSON requests, must be base64-encoded.
     */
-  var blobValue: js.UndefOr[String] = js.undefined
+  var blobValue: js.UndefOr[String | Null] = js.undefined
   
   /**
     * A boolean value.
     */
-  var booleanValue: js.UndefOr[Boolean] = js.undefined
+  var booleanValue: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * A double value.
     */
-  var doubleValue: js.UndefOr[Double] = js.undefined
+  var doubleValue: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * An entity value.  - May have no key. - May have a key with an incomplete
-    * key path. - May have a reserved/read-only key.
+    * An entity value. - May have no key. - May have a key with an incomplete key path. - May have a reserved/read-only key.
     */
   var entityValue: js.UndefOr[SchemaEntity] = js.undefined
   
   /**
-    * If the value should be excluded from all indexes including those defined
-    * explicitly.
+    * If the value should be excluded from all indexes including those defined explicitly.
     */
-  var excludeFromIndexes: js.UndefOr[Boolean] = js.undefined
+  var excludeFromIndexes: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * A geo point value representing a point on the surface of Earth.
@@ -54,7 +44,7 @@ trait SchemaValue extends StObject {
   /**
     * An integer value.
     */
-  var integerValue: js.UndefOr[String] = js.undefined
+  var integerValue: js.UndefOr[String | Null] = js.undefined
   
   /**
     * A key value.
@@ -64,25 +54,22 @@ trait SchemaValue extends StObject {
   /**
     * The `meaning` field should only be populated for backwards compatibility.
     */
-  var meaning: js.UndefOr[Double] = js.undefined
+  var meaning: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * A null value.
     */
-  var nullValue: js.UndefOr[String] = js.undefined
+  var nullValue: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * A UTF-8 encoded string value. When `exclude_from_indexes` is false (it is
-    * indexed) , may have at most 1500 bytes. Otherwise, may be set to at least
-    * 1,000,000 bytes.
+    * A UTF-8 encoded string value. When `exclude_from_indexes` is false (it is indexed) , may have at most 1500 bytes. Otherwise, may be set to at most 1,000,000 bytes.
     */
-  var stringValue: js.UndefOr[String] = js.undefined
+  var stringValue: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * A timestamp value. When stored in the Datastore, precise only to
-    * microseconds; any additional precision is rounded down.
+    * A timestamp value. When stored in the Datastore, precise only to microseconds; any additional precision is rounded down.
     */
-  var timestampValue: js.UndefOr[String] = js.undefined
+  var timestampValue: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaValue {
   
@@ -99,13 +86,19 @@ object SchemaValue {
     
     inline def setBlobValue(value: String): Self = StObject.set(x, "blobValue", value.asInstanceOf[js.Any])
     
+    inline def setBlobValueNull: Self = StObject.set(x, "blobValue", null)
+    
     inline def setBlobValueUndefined: Self = StObject.set(x, "blobValue", js.undefined)
     
     inline def setBooleanValue(value: Boolean): Self = StObject.set(x, "booleanValue", value.asInstanceOf[js.Any])
     
+    inline def setBooleanValueNull: Self = StObject.set(x, "booleanValue", null)
+    
     inline def setBooleanValueUndefined: Self = StObject.set(x, "booleanValue", js.undefined)
     
     inline def setDoubleValue(value: Double): Self = StObject.set(x, "doubleValue", value.asInstanceOf[js.Any])
+    
+    inline def setDoubleValueNull: Self = StObject.set(x, "doubleValue", null)
     
     inline def setDoubleValueUndefined: Self = StObject.set(x, "doubleValue", js.undefined)
     
@@ -115,6 +108,8 @@ object SchemaValue {
     
     inline def setExcludeFromIndexes(value: Boolean): Self = StObject.set(x, "excludeFromIndexes", value.asInstanceOf[js.Any])
     
+    inline def setExcludeFromIndexesNull: Self = StObject.set(x, "excludeFromIndexes", null)
+    
     inline def setExcludeFromIndexesUndefined: Self = StObject.set(x, "excludeFromIndexes", js.undefined)
     
     inline def setGeoPointValue(value: SchemaLatLng): Self = StObject.set(x, "geoPointValue", value.asInstanceOf[js.Any])
@@ -122,6 +117,8 @@ object SchemaValue {
     inline def setGeoPointValueUndefined: Self = StObject.set(x, "geoPointValue", js.undefined)
     
     inline def setIntegerValue(value: String): Self = StObject.set(x, "integerValue", value.asInstanceOf[js.Any])
+    
+    inline def setIntegerValueNull: Self = StObject.set(x, "integerValue", null)
     
     inline def setIntegerValueUndefined: Self = StObject.set(x, "integerValue", js.undefined)
     
@@ -131,17 +128,25 @@ object SchemaValue {
     
     inline def setMeaning(value: Double): Self = StObject.set(x, "meaning", value.asInstanceOf[js.Any])
     
+    inline def setMeaningNull: Self = StObject.set(x, "meaning", null)
+    
     inline def setMeaningUndefined: Self = StObject.set(x, "meaning", js.undefined)
     
     inline def setNullValue(value: String): Self = StObject.set(x, "nullValue", value.asInstanceOf[js.Any])
+    
+    inline def setNullValueNull: Self = StObject.set(x, "nullValue", null)
     
     inline def setNullValueUndefined: Self = StObject.set(x, "nullValue", js.undefined)
     
     inline def setStringValue(value: String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
     
+    inline def setStringValueNull: Self = StObject.set(x, "stringValue", null)
+    
     inline def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
     
     inline def setTimestampValue(value: String): Self = StObject.set(x, "timestampValue", value.asInstanceOf[js.Any])
+    
+    inline def setTimestampValueNull: Self = StObject.set(x, "timestampValue", null)
     
     inline def setTimestampValueUndefined: Self = StObject.set(x, "timestampValue", js.undefined)
   }

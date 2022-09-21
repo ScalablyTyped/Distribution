@@ -12,10 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("semantic-ui-react", "SearchResult")
 @js.native
-class SearchResult protected ()
-  extends Component[SearchResultProps, ComponentState, js.Any] {
+open class SearchResult protected () extends Component[SearchResultProps, ComponentState, Any] {
   def this(props: SearchResultProps) = this()
-  def this(props: SearchResultProps, context: js.Any) = this()
+  def this(props: SearchResultProps, context: Any) = this()
 }
 object SearchResult {
   

@@ -12,8 +12,8 @@ object mod {
   
   @JSImport("material-ui-datatables", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[PartialDataTableProps, js.Object, js.Any]
+  open class default ()
+    extends Component[PartialDataTableProps, js.Object, Any]
   
   trait Column extends StObject {
     
@@ -36,7 +36,7 @@ object mod {
       * @param row - the data object representing this row
       * @returns Any react node (JSX compatible return)
       */
-    var render: js.UndefOr[js.Function2[/* value */ js.Any, /* row */ js.Any, js.Any]] = js.undefined
+    var render: js.UndefOr[js.Function2[/* value */ Any, /* row */ Any, Any]] = js.undefined
     
     /** If the column is sortable */
     var sortable: js.UndefOr[Boolean] = js.undefined
@@ -72,7 +72,7 @@ object mod {
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      inline def setRender(value: (/* value */ js.Any, /* row */ js.Any) => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
+      inline def setRender(value: (/* value */ Any, /* row */ Any) => Any): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
       
       inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
       
@@ -90,7 +90,7 @@ object mod {
     }
   }
   
-  type DataTable = Component[PartialDataTableProps, js.Object, js.Any]
+  type DataTable = Component[PartialDataTableProps, js.Object, Any]
   
   trait DataTableProps extends StObject {
     
@@ -107,7 +107,7 @@ object mod {
     var count: Double
     
     /** The array of objects used as data for the table */
-    var data: js.Array[js.Any]
+    var data: js.Array[Any]
     
     /** If clicking away de-selects all */
     var deselectOnClickaway: Boolean
@@ -135,27 +135,27 @@ object mod {
     var headerToolbarMode: typings.materialUiDatatables.materialUiDatatablesStrings.default | filter | String
     
     /** The hight of the table */
-    var height: js.Any
+    var height: Any
     
     /** If multiple table rows are select-able */
     var multiSelectable: Boolean
     
     /** Callback when the cell is clicked. This callback is only active when selectable is false. */
-    def onCellClick(rowIndex: Double, columnIndex: Double, row: js.Any, columnValue: js.Any, event: js.Any): Unit
+    def onCellClick(rowIndex: Double, columnIndex: Double, row: Any, columnValue: Any, event: Any): Unit
     
     /** Similar to onCellClick, activated when the cell is double clicked. Fires even if rows are selectable. */
-    def onCellDoubleClick(rowIndex: Double, columnIndex: Double, row: js.Any, columnValue: js.Any, event: js.Any): Unit
+    def onCellDoubleClick(rowIndex: Double, columnIndex: Double, row: Any, columnValue: Any, event: Any): Unit
     
     /** Notification if the filter value changes */
     def onFilterValueChange(value: String): Unit
     
-    def onNextPageClick(event: js.Any): Unit
+    def onNextPageClick(event: Any): Unit
     
-    def onPreviousPageClick(event: js.Any): Unit
+    def onPreviousPageClick(event: Any): Unit
     
-    def onRowSelection(selectedRows: js.Any): Unit
+    def onRowSelection(selectedRows: Any): Unit
     
-    def onRowSizeChange(index: Double, value: js.Any): Unit
+    def onRowSizeChange(index: Double, value: Any): Unit
     
     def onSortOrderChange(key: String, order: String): Unit
     
@@ -191,7 +191,7 @@ object mod {
     var stripedRows: Boolean
     
     /** Override the pagination display, ie. "1 - 5 of 11" Return any React node or string */
-    def summaryLabelTemplate(start: Double, end: Double, count: Double): js.Any
+    def summaryLabelTemplate(start: Double, end: Double, count: Double): Any
     
     /** React style object for the tbody tag */
     var tableBodyStyle: CSSProperties
@@ -219,14 +219,14 @@ object mod {
     /** React Style object for the title */
     var titleStyle: CSSProperties
     
-    var toolbarIconRight: js.Any
+    var toolbarIconRight: Any
   }
   object DataTableProps {
     
     inline def apply(
       columns: js.Array[Column],
       count: Double,
-      data: js.Array[js.Any],
+      data: js.Array[Any],
       deselectOnClickaway: Boolean,
       enableSelectAll: Boolean,
       filterHintText: String,
@@ -235,15 +235,15 @@ object mod {
       fixedHeader: Boolean,
       footerToolbarStyle: CSSProperties,
       headerToolbarMode: typings.materialUiDatatables.materialUiDatatablesStrings.default | filter | String,
-      height: js.Any,
+      height: Any,
       multiSelectable: Boolean,
-      onCellClick: (Double, Double, js.Any, js.Any, js.Any) => Unit,
-      onCellDoubleClick: (Double, Double, js.Any, js.Any, js.Any) => Unit,
+      onCellClick: (Double, Double, Any, Any, Any) => Unit,
+      onCellDoubleClick: (Double, Double, Any, Any, Any) => Unit,
       onFilterValueChange: String => Unit,
-      onNextPageClick: js.Any => Unit,
-      onPreviousPageClick: js.Any => Unit,
-      onRowSelection: js.Any => Unit,
-      onRowSizeChange: (Double, js.Any) => Unit,
+      onNextPageClick: Any => Unit,
+      onPreviousPageClick: Any => Unit,
+      onRowSelection: Any => Unit,
+      onRowSizeChange: (Double, Any) => Unit,
       onSortOrderChange: (String, String) => Unit,
       page: Double,
       rowSize: Double,
@@ -257,7 +257,7 @@ object mod {
       showRowHover: Boolean,
       showRowSizeControls: Boolean,
       stripedRows: Boolean,
-      summaryLabelTemplate: (Double, Double, Double) => js.Any,
+      summaryLabelTemplate: (Double, Double, Double) => Any,
       tableBodyStyle: CSSProperties,
       tableHeaderColumnStyle: CSSProperties,
       tableHeaderStyle: CSSProperties,
@@ -267,7 +267,7 @@ object mod {
       tableWrapperStyle: CSSProperties,
       title: String,
       titleStyle: CSSProperties,
-      toolbarIconRight: js.Any
+      toolbarIconRight: Any
     ): DataTableProps = {
       val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], deselectOnClickaway = deselectOnClickaway.asInstanceOf[js.Any], enableSelectAll = enableSelectAll.asInstanceOf[js.Any], filterHintText = filterHintText.asInstanceOf[js.Any], filterValue = filterValue.asInstanceOf[js.Any], fixedFooter = fixedFooter.asInstanceOf[js.Any], fixedHeader = fixedHeader.asInstanceOf[js.Any], footerToolbarStyle = footerToolbarStyle.asInstanceOf[js.Any], headerToolbarMode = headerToolbarMode.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], multiSelectable = multiSelectable.asInstanceOf[js.Any], onCellClick = js.Any.fromFunction5(onCellClick), onCellDoubleClick = js.Any.fromFunction5(onCellDoubleClick), onFilterValueChange = js.Any.fromFunction1(onFilterValueChange), onNextPageClick = js.Any.fromFunction1(onNextPageClick), onPreviousPageClick = js.Any.fromFunction1(onPreviousPageClick), onRowSelection = js.Any.fromFunction1(onRowSelection), onRowSizeChange = js.Any.fromFunction2(onRowSizeChange), onSortOrderChange = js.Any.fromFunction2(onSortOrderChange), page = page.asInstanceOf[js.Any], rowSize = rowSize.asInstanceOf[js.Any], rowSizeLabel = rowSizeLabel.asInstanceOf[js.Any], rowSizeList = rowSizeList.asInstanceOf[js.Any], selectable = selectable.asInstanceOf[js.Any], showCheckboxes = showCheckboxes.asInstanceOf[js.Any], showFooterToolbar = showFooterToolbar.asInstanceOf[js.Any], showHeaderToolbar = showHeaderToolbar.asInstanceOf[js.Any], showHeaderToolbarFilterIcon = showHeaderToolbarFilterIcon.asInstanceOf[js.Any], showRowHover = showRowHover.asInstanceOf[js.Any], showRowSizeControls = showRowSizeControls.asInstanceOf[js.Any], stripedRows = stripedRows.asInstanceOf[js.Any], summaryLabelTemplate = js.Any.fromFunction3(summaryLabelTemplate), tableBodyStyle = tableBodyStyle.asInstanceOf[js.Any], tableHeaderColumnStyle = tableHeaderColumnStyle.asInstanceOf[js.Any], tableHeaderStyle = tableHeaderStyle.asInstanceOf[js.Any], tableRowColumnStyle = tableRowColumnStyle.asInstanceOf[js.Any], tableRowStyle = tableRowStyle.asInstanceOf[js.Any], tableStyle = tableStyle.asInstanceOf[js.Any], tableWrapperStyle = tableWrapperStyle.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], titleStyle = titleStyle.asInstanceOf[js.Any], toolbarIconRight = toolbarIconRight.asInstanceOf[js.Any])
       __obj.asInstanceOf[DataTableProps]
@@ -277,13 +277,13 @@ object mod {
       
       inline def setColumns(value: js.Array[Column]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      inline def setColumnsVarargs(value: Column*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: Column*): Self = StObject.set(x, "columns", js.Array(value*))
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setDeselectOnClickaway(value: Boolean): Self = StObject.set(x, "deselectOnClickaway", value.asInstanceOf[js.Any])
       
@@ -301,23 +301,23 @@ object mod {
       
       inline def setHeaderToolbarMode(value: typings.materialUiDatatables.materialUiDatatablesStrings.default | filter | String): Self = StObject.set(x, "headerToolbarMode", value.asInstanceOf[js.Any])
       
-      inline def setHeight(value: js.Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
       inline def setMultiSelectable(value: Boolean): Self = StObject.set(x, "multiSelectable", value.asInstanceOf[js.Any])
       
-      inline def setOnCellClick(value: (Double, Double, js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "onCellClick", js.Any.fromFunction5(value))
+      inline def setOnCellClick(value: (Double, Double, Any, Any, Any) => Unit): Self = StObject.set(x, "onCellClick", js.Any.fromFunction5(value))
       
-      inline def setOnCellDoubleClick(value: (Double, Double, js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "onCellDoubleClick", js.Any.fromFunction5(value))
+      inline def setOnCellDoubleClick(value: (Double, Double, Any, Any, Any) => Unit): Self = StObject.set(x, "onCellDoubleClick", js.Any.fromFunction5(value))
       
       inline def setOnFilterValueChange(value: String => Unit): Self = StObject.set(x, "onFilterValueChange", js.Any.fromFunction1(value))
       
-      inline def setOnNextPageClick(value: js.Any => Unit): Self = StObject.set(x, "onNextPageClick", js.Any.fromFunction1(value))
+      inline def setOnNextPageClick(value: Any => Unit): Self = StObject.set(x, "onNextPageClick", js.Any.fromFunction1(value))
       
-      inline def setOnPreviousPageClick(value: js.Any => Unit): Self = StObject.set(x, "onPreviousPageClick", js.Any.fromFunction1(value))
+      inline def setOnPreviousPageClick(value: Any => Unit): Self = StObject.set(x, "onPreviousPageClick", js.Any.fromFunction1(value))
       
-      inline def setOnRowSelection(value: js.Any => Unit): Self = StObject.set(x, "onRowSelection", js.Any.fromFunction1(value))
+      inline def setOnRowSelection(value: Any => Unit): Self = StObject.set(x, "onRowSelection", js.Any.fromFunction1(value))
       
-      inline def setOnRowSizeChange(value: (Double, js.Any) => Unit): Self = StObject.set(x, "onRowSizeChange", js.Any.fromFunction2(value))
+      inline def setOnRowSizeChange(value: (Double, Any) => Unit): Self = StObject.set(x, "onRowSizeChange", js.Any.fromFunction2(value))
       
       inline def setOnSortOrderChange(value: (String, String) => Unit): Self = StObject.set(x, "onSortOrderChange", js.Any.fromFunction2(value))
       
@@ -329,7 +329,7 @@ object mod {
       
       inline def setRowSizeList(value: js.Array[Double]): Self = StObject.set(x, "rowSizeList", value.asInstanceOf[js.Any])
       
-      inline def setRowSizeListVarargs(value: Double*): Self = StObject.set(x, "rowSizeList", js.Array(value :_*))
+      inline def setRowSizeListVarargs(value: Double*): Self = StObject.set(x, "rowSizeList", js.Array(value*))
       
       inline def setSelectable(value: Boolean): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
       
@@ -347,7 +347,7 @@ object mod {
       
       inline def setStripedRows(value: Boolean): Self = StObject.set(x, "stripedRows", value.asInstanceOf[js.Any])
       
-      inline def setSummaryLabelTemplate(value: (Double, Double, Double) => js.Any): Self = StObject.set(x, "summaryLabelTemplate", js.Any.fromFunction3(value))
+      inline def setSummaryLabelTemplate(value: (Double, Double, Double) => Any): Self = StObject.set(x, "summaryLabelTemplate", js.Any.fromFunction3(value))
       
       inline def setTableBodyStyle(value: CSSProperties): Self = StObject.set(x, "tableBodyStyle", value.asInstanceOf[js.Any])
       
@@ -367,7 +367,7 @@ object mod {
       
       inline def setTitleStyle(value: CSSProperties): Self = StObject.set(x, "titleStyle", value.asInstanceOf[js.Any])
       
-      inline def setToolbarIconRight(value: js.Any): Self = StObject.set(x, "toolbarIconRight", value.asInstanceOf[js.Any])
+      inline def setToolbarIconRight(value: Any): Self = StObject.set(x, "toolbarIconRight", value.asInstanceOf[js.Any])
     }
   }
 }

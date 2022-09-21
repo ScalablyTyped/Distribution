@@ -37,10 +37,10 @@ object INxAxisTicks {
     
     inline def setQTags(value: js.Array[String]): Self = StObject.set(x, "qTags", value.asInstanceOf[js.Any])
     
-    inline def setQTagsVarargs(value: String*): Self = StObject.set(x, "qTags", js.Array(value :_*))
+    inline def setQTagsVarargs(value: String*): Self = StObject.set(x, "qTags", js.Array(value*))
     
     inline def setQTicks(value: js.Array[INxTickCell]): Self = StObject.set(x, "qTicks", value.asInstanceOf[js.Any])
     
-    inline def setQTicksVarargs(value: INxTickCell*): Self = StObject.set(x, "qTicks", js.Array(value :_*))
+    inline def setQTicksVarargs(value: INxTickCell*): Self = StObject.set(x, "qTicks", js.Array(value*))
   }
 }

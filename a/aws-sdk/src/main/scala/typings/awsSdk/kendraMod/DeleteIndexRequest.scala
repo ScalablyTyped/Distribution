@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteIndexRequest extends StObject {
   
   /**
-    * The identifier of the index to delete.
+    * The identifier of the index you want to delete.
     */
   var Id: IndexId
 }

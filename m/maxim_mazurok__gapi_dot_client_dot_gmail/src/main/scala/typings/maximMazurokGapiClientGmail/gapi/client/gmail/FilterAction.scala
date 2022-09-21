@@ -28,7 +28,7 @@ object FilterAction {
     
     inline def setAddLabelIdsUndefined: Self = StObject.set(x, "addLabelIds", js.undefined)
     
-    inline def setAddLabelIdsVarargs(value: String*): Self = StObject.set(x, "addLabelIds", js.Array(value :_*))
+    inline def setAddLabelIdsVarargs(value: String*): Self = StObject.set(x, "addLabelIds", js.Array(value*))
     
     inline def setForward(value: String): Self = StObject.set(x, "forward", value.asInstanceOf[js.Any])
     
@@ -38,6 +38,6 @@ object FilterAction {
     
     inline def setRemoveLabelIdsUndefined: Self = StObject.set(x, "removeLabelIds", js.undefined)
     
-    inline def setRemoveLabelIdsVarargs(value: String*): Self = StObject.set(x, "removeLabelIds", js.Array(value :_*))
+    inline def setRemoveLabelIdsVarargs(value: String*): Self = StObject.set(x, "removeLabelIds", js.Array(value*))
   }
 }

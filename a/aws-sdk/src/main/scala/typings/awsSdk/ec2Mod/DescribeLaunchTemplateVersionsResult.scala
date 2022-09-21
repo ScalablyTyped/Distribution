@@ -29,7 +29,7 @@ object DescribeLaunchTemplateVersionsResult {
     
     inline def setLaunchTemplateVersionsUndefined: Self = StObject.set(x, "LaunchTemplateVersions", js.undefined)
     
-    inline def setLaunchTemplateVersionsVarargs(value: LaunchTemplateVersion*): Self = StObject.set(x, "LaunchTemplateVersions", js.Array(value :_*))
+    inline def setLaunchTemplateVersionsVarargs(value: LaunchTemplateVersion*): Self = StObject.set(x, "LaunchTemplateVersions", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

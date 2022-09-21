@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientDetrendedPriceOscillator")
 @js.native
-class ASPxClientDetrendedPriceOscillator ()
+open class ASPxClientDetrendedPriceOscillator ()
   extends StObject
      with typings.devexpressWeb.ASPxClientDetrendedPriceOscillator {
   

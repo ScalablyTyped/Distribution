@@ -7,14 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateTaskRequest extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the resource name of the CloudWatch LogGroup.
+    * The Amazon Resource Name (ARN) of the resource name of the Amazon CloudWatch log group.
     */
   var CloudWatchLogGroupArn: js.UndefOr[LogGroupArn] = js.undefined
   
   /**
-    * A list of filter rules that determines which files to exclude from a task. The list should contain a single filter string that consists of the patterns to exclude. The patterns are delimited by "|" (that is, a pipe), for example: "/folder1|/folder2"   
+    * A list of filter rules that determines which files to exclude from a task. The list should contain a single filter string that consists of the patterns to exclude. The patterns are delimited by "|" (that is, a pipe), for example, "/folder1|/folder2".  
     */
   var Excludes: js.UndefOr[FilterList] = js.undefined
+  
+  /**
+    * A list of filter rules that determines which files to include when running a task. The pattern contains a single filter string that consists of the patterns to include. The patterns are delimited by "|" (that is, a pipe), for example, "/folder1|/folder2".
+    */
+  var Includes: js.UndefOr[FilterList] = js.undefined
   
   /**
     * The name of the task to update.
@@ -24,7 +29,7 @@ trait UpdateTaskRequest extends StObject {
   var Options: js.UndefOr[typings.awsSdk.datasyncMod.Options] = js.undefined
   
   /**
-    * Specifies a schedule used to periodically transfer files from a source to a destination location. You can configure your task to execute hourly, daily, weekly or on specific days of the week. You control when in the day or hour you want the task to execute. The time you specify is UTC time. For more information, see task-scheduling.
+    * Specifies a schedule used to periodically transfer files from a source to a destination location. You can configure your task to execute hourly, daily, weekly or on specific days of the week. You control when in the day or hour you want the task to execute. The time you specify is UTC time. For more information, see Scheduling your task.
     */
   var Schedule: js.UndefOr[TaskSchedule] = js.undefined
   
@@ -50,7 +55,13 @@ object UpdateTaskRequest {
     
     inline def setExcludesUndefined: Self = StObject.set(x, "Excludes", js.undefined)
     
-    inline def setExcludesVarargs(value: FilterRule*): Self = StObject.set(x, "Excludes", js.Array(value :_*))
+    inline def setExcludesVarargs(value: FilterRule*): Self = StObject.set(x, "Excludes", js.Array(value*))
+    
+    inline def setIncludes(value: FilterList): Self = StObject.set(x, "Includes", value.asInstanceOf[js.Any])
+    
+    inline def setIncludesUndefined: Self = StObject.set(x, "Includes", js.undefined)
+    
+    inline def setIncludesVarargs(value: FilterRule*): Self = StObject.set(x, "Includes", js.Array(value*))
     
     inline def setName(value: TagValue): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

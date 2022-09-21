@@ -14,9 +14,9 @@ trait FileConverters extends StObject {
   
   val Creator: Double
   
-  def Item(Index: js.Any): FileConverter
+  def Item(Index: Any): FileConverter
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.FileConverters_typekey")
   var WordDotFileConverters_typekey: FileConverters
@@ -28,8 +28,8 @@ object FileConverters {
     ConvertMacWordChevrons: WdChevronConvertRule,
     Count: Double,
     Creator: Double,
-    Item: js.Any => FileConverter,
-    Parent: js.Any,
+    Item: Any => FileConverter,
+    Parent: Any,
     WordDotFileConverters_typekey: FileConverters
   ): FileConverters = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], ConvertMacWordChevrons = ConvertMacWordChevrons.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any])
@@ -47,9 +47,9 @@ object FileConverters {
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => FileConverter): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => FileConverter): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotFileConverters_typekey(value: FileConverters): Self = StObject.set(x, "Word.FileConverters_typekey", value.asInstanceOf[js.Any])
   }

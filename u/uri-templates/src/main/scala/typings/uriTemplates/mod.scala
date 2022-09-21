@@ -21,7 +21,7 @@ object mod {
     
     def fillFromObject(vars: StringDictionary[String | StringDictionary[String]]): String = js.native
     
-    def fromUri(uri: String): StringDictionary[String] = js.native
+    def fromUri(uri: String): js.UndefOr[StringDictionary[String]] = js.native
     
     var template: String = js.native
     

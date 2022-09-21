@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Sys.CollectionChange")
 @js.native
-class CollectionChange protected ()
+open class CollectionChange protected ()
   extends StObject
      with typings.microsoftAjax.Sys.CollectionChange {
   //#region Constructors
@@ -29,9 +29,9 @@ class CollectionChange protected ()
     */
   def this(
     action: typings.microsoftAjax.Sys.NotifyCollectionChangedAction,
-    newItems: js.Array[js.Any],
+    newItems: js.Array[Any],
     newStartingIndex: Double,
-    oldItems: js.Array[js.Any],
+    oldItems: js.Array[Any],
     oldStartingIndex: Double
   ) = this()
   
@@ -48,7 +48,7 @@ class CollectionChange protected ()
     * @return An array of items that were added.
     */
   /* CompleteClass */
-  var newItems: js.Array[js.Any] = js.native
+  var newItems: js.Array[Any] = js.native
   
   /**
     * The index where new items have been inserted.
@@ -62,7 +62,7 @@ class CollectionChange protected ()
     * @return An array containing the items that were removed.
     */
   /* CompleteClass */
-  var oldItems: js.Array[js.Any] = js.native
+  var oldItems: js.Array[Any] = js.native
   
   /**
     * Gets the index where old items have been removed.

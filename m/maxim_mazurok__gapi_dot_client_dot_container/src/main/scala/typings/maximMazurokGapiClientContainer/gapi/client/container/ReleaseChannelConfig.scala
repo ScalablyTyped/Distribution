@@ -36,6 +36,6 @@ object ReleaseChannelConfig {
     
     inline def setValidVersionsUndefined: Self = StObject.set(x, "validVersions", js.undefined)
     
-    inline def setValidVersionsVarargs(value: String*): Self = StObject.set(x, "validVersions", js.Array(value :_*))
+    inline def setValidVersionsVarargs(value: String*): Self = StObject.set(x, "validVersions", js.Array(value*))
   }
 }

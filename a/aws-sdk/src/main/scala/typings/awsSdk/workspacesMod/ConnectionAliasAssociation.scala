@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConnectionAliasAssociation extends StObject {
   
   /**
-    * The identifier of the AWS account that associated the connection alias with a directory.
+    * The identifier of the Amazon Web Services account that associated the connection alias with a directory.
     */
   var AssociatedAccountId: js.UndefOr[AwsAccount] = js.undefined
   

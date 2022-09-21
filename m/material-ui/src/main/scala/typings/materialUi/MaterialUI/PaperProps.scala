@@ -1,22 +1,18 @@
 package typings.materialUi.MaterialUI
 
 import typings.react.mod.HTMLAttributes
-import typings.react.mod.Key
 import typings.react.mod.LegacyRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.react.mod.Props because var conflicts: children. Inlined ref, key */ trait PaperProps
+trait PaperProps
   extends StObject
      with HTMLAttributes[js.Object] {
   
   var circle: js.UndefOr[Boolean] = js.undefined
   
   var height: js.UndefOr[Double | String] = js.undefined
-  
-  var key: js.UndefOr[Key] = js.undefined
   
   var ref: js.UndefOr[LegacyRef[Paper]] = js.undefined
   
@@ -44,10 +40,6 @@ object PaperProps {
     inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
-    
-    inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
-    
-    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     inline def setRef(value: LegacyRef[Paper]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     

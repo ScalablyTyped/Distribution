@@ -16,7 +16,7 @@ object metadataStorageMod {
   
   @JSImport("class-validator/types/metadata/MetadataStorage", "MetadataStorage")
   @js.native
-  class MetadataStorage () extends StObject {
+  open class MetadataStorage () extends StObject {
     
     /**
       * Adds a new constraint metadata.
@@ -33,13 +33,19 @@ object metadataStorageMod {
       */
     def addValidationSchema(schema: ValidationSchema): Unit = js.native
     
-    /* private */ var constraintMetadatas: js.Any = js.native
+    /* private */ var constraintMetadatas: Any = js.native
     
     /**
       * Gets all validation metadatas for the given object with the given groups.
       */
-    def getTargetValidationMetadatas(targetConstructor: js.Function, targetSchema: String): js.Array[ValidationMetadata] = js.native
-    def getTargetValidationMetadatas(targetConstructor: js.Function, targetSchema: String, groups: js.Array[String]): js.Array[ValidationMetadata] = js.native
+    def getTargetValidationMetadatas(targetConstructor: js.Function, targetSchema: String, always: Boolean, strictGroups: Boolean): js.Array[ValidationMetadata] = js.native
+    def getTargetValidationMetadatas(
+      targetConstructor: js.Function,
+      targetSchema: String,
+      always: Boolean,
+      strictGroups: Boolean,
+      groups: js.Array[String]
+    ): js.Array[ValidationMetadata] = js.native
     
     /**
       * Gets all validator constraints for the given object.
@@ -51,9 +57,9 @@ object metadataStorageMod {
       */
     def groupByPropertyName(metadata: js.Array[ValidationMetadata]): StringDictionary[js.Array[ValidationMetadata]] = js.native
     
-    val hasValidationMetaData: Boolean = js.native
+    def hasValidationMetaData: Boolean = js.native
     
-    /* private */ var validationMetadatas: js.Any = js.native
+    /* private */ var validationMetadatas: Any = js.native
   }
   
   inline def getMetadataStorage(): MetadataStorage = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadataStorage")().asInstanceOf[MetadataStorage]

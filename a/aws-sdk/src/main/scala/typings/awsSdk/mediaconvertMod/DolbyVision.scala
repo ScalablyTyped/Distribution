@@ -17,7 +17,12 @@ trait DolbyVision extends StObject {
   var L6Mode: js.UndefOr[DolbyVisionLevel6Mode] = js.undefined
   
   /**
-    * In the current MediaConvert implementation, the Dolby Vision profile is always 5 (PROFILE_5). Therefore, all of your inputs must contain Dolby Vision frame interleaved data.
+    * Required when you set Dolby Vision Profile to Profile 8.1. When you set Content mapping to None, content mapping is not applied to the HDR10-compatible signal. Depending on the source peak nit level, clipping might occur on HDR devices without Dolby Vision. When you set Content mapping to HDR10 1000, the transcoder creates a 1,000 nits peak HDR10-compatible signal by applying static content mapping to the source. This mode is speed-optimized for PQ10 sources with metadata that is created from analysis. For graded Dolby Vision content, be aware that creative intent might not be guaranteed with extreme 1,000 nits trims.
+    */
+  var Mapping: js.UndefOr[DolbyVisionMapping] = js.undefined
+  
+  /**
+    * Required when you enable Dolby Vision. Use Profile 5 to include frame-interleaved Dolby Vision metadata in your output. Your input must include Dolby Vision metadata or an HDR10 YUV color space. Use Profile 8.1 to include frame-interleaved Dolby Vision metadata and HDR10 metadata in your output. Your input must include Dolby Vision metadata.
     */
   var Profile: js.UndefOr[DolbyVisionProfile] = js.undefined
 }
@@ -37,6 +42,10 @@ object DolbyVision {
     inline def setL6Mode(value: DolbyVisionLevel6Mode): Self = StObject.set(x, "L6Mode", value.asInstanceOf[js.Any])
     
     inline def setL6ModeUndefined: Self = StObject.set(x, "L6Mode", js.undefined)
+    
+    inline def setMapping(value: DolbyVisionMapping): Self = StObject.set(x, "Mapping", value.asInstanceOf[js.Any])
+    
+    inline def setMappingUndefined: Self = StObject.set(x, "Mapping", js.undefined)
     
     inline def setProfile(value: DolbyVisionProfile): Self = StObject.set(x, "Profile", value.asInstanceOf[js.Any])
     

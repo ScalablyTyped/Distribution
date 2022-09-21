@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "Sequential")
 @js.native
-class Sequential_ ()
+open class Sequential_ ()
   extends typings.tensorflowTfjs.mod.Sequential_ {
   def this(args: SequentialArgs) = this()
 }

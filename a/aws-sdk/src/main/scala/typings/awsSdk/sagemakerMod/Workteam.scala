@@ -9,7 +9,7 @@ trait Workteam extends StObject {
   /**
     * The date and time that the work team was created (timestamp).
     */
-  var CreateDate: js.UndefOr[Timestamp] = js.undefined
+  var CreateDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A description of the work team.
@@ -19,7 +19,7 @@ trait Workteam extends StObject {
   /**
     * The date and time that the work team was last updated (timestamp).
     */
-  var LastUpdatedDate: js.UndefOr[Timestamp] = js.undefined
+  var LastUpdatedDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A list of MemberDefinition objects that contains objects that identify the workers that make up the work team.  Workforces can be created using Amazon Cognito or your own OIDC Identity Provider (IdP). For private workforces created using Amazon Cognito use CognitoMemberDefinition. For workforces created using your own OIDC identity provider (IdP) use OidcMemberDefinition.
@@ -70,19 +70,19 @@ object Workteam {
   
   extension [Self <: Workteam](x: Self) {
     
-    inline def setCreateDate(value: Timestamp): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
+    inline def setCreateDate(value: js.Date): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
     inline def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
     
     inline def setDescription(value: String200): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    inline def setLastUpdatedDate(value: Timestamp): Self = StObject.set(x, "LastUpdatedDate", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedDate(value: js.Date): Self = StObject.set(x, "LastUpdatedDate", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedDateUndefined: Self = StObject.set(x, "LastUpdatedDate", js.undefined)
     
     inline def setMemberDefinitions(value: MemberDefinitions): Self = StObject.set(x, "MemberDefinitions", value.asInstanceOf[js.Any])
     
-    inline def setMemberDefinitionsVarargs(value: MemberDefinition*): Self = StObject.set(x, "MemberDefinitions", js.Array(value :_*))
+    inline def setMemberDefinitionsVarargs(value: MemberDefinition*): Self = StObject.set(x, "MemberDefinitions", js.Array(value*))
     
     inline def setNotificationConfiguration(value: NotificationConfiguration): Self = StObject.set(x, "NotificationConfiguration", value.asInstanceOf[js.Any])
     
@@ -92,7 +92,7 @@ object Workteam {
     
     inline def setProductListingIdsUndefined: Self = StObject.set(x, "ProductListingIds", js.undefined)
     
-    inline def setProductListingIdsVarargs(value: String*): Self = StObject.set(x, "ProductListingIds", js.Array(value :_*))
+    inline def setProductListingIdsVarargs(value: String*): Self = StObject.set(x, "ProductListingIds", js.Array(value*))
     
     inline def setSubDomain(value: String): Self = StObject.set(x, "SubDomain", value.asInstanceOf[js.Any])
     

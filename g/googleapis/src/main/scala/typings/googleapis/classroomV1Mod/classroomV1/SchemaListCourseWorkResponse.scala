@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response when listing course work.
-  */
 trait SchemaListCourseWorkResponse extends StObject {
   
   /**
@@ -15,10 +12,9 @@ trait SchemaListCourseWorkResponse extends StObject {
   var courseWork: js.UndefOr[js.Array[SchemaCourseWork]] = js.undefined
   
   /**
-    * Token identifying the next page of results to return. If empty, no
-    * further results are available.
+    * Token identifying the next page of results to return. If empty, no further results are available.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaListCourseWorkResponse {
   
@@ -33,9 +29,11 @@ object SchemaListCourseWorkResponse {
     
     inline def setCourseWorkUndefined: Self = StObject.set(x, "courseWork", js.undefined)
     
-    inline def setCourseWorkVarargs(value: SchemaCourseWork*): Self = StObject.set(x, "courseWork", js.Array(value :_*))
+    inline def setCourseWorkVarargs(value: SchemaCourseWork*): Self = StObject.set(x, "courseWork", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }

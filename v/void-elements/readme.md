@@ -11,9 +11,9 @@ Array of "void elements" defined by the HTML specification.
 | Full name          | void-elements |
 | Keywords           | html, void, elements |
 | # releases         | 0 |
-| # dependents       | 69 |
-| # downloads        | 163218388 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 2.140184E7 |
+| # stars            | 23.0 |
 
 ## Links
 - [Homepage](https://github.com/jadejs/void-elements)

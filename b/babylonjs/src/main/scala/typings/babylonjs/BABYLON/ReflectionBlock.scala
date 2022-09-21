@@ -15,9 +15,9 @@ trait ReflectionBlock
   /** @hidden */
   var _defineLinearSpecularReflection: String = js.native
   
-  /* private */ var _scene: js.Any = js.native
+  /* private */ var _scene: Any = js.native
   
-  /* private */ var _vEnvironmentIrradianceName: js.Any = js.native
+  /* private */ var _vEnvironmentIrradianceName: Any = js.native
   
   /** @hidden */
   var _vReflectionFilteringInfoName: String = js.native

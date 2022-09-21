@@ -9,15 +9,19 @@ trait PropertySignature
   extends StObject
      with TypeElement
      with JSDocContainer
-     with HasExpressionInitializer
      with HasJSDoc
+     with HasModifiers
      with HasType
      with VariableLikeDeclaration {
   
-  var initializer: js.UndefOr[Expression] = js.native
+  /** @deprecated A property signature cannot have an initializer */
+  val initializer: js.UndefOr[Expression] = js.native
   
   @JSName("kind")
   val kind_PropertySignature: typings.typescript.mod.SyntaxKind.PropertySignature = js.native
+  
+  @JSName("modifiers")
+  val modifiers_PropertySignature: js.UndefOr[NodeArray[Modifier]] = js.native
   
   @JSName("name")
   val name_PropertySignature: PropertyName = js.native

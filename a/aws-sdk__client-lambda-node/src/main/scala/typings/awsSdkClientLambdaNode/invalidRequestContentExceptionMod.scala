@@ -8,5 +8,5 @@ object invalidRequestContentExceptionMod {
   
   @JSImport("@aws-sdk/client-lambda-node/model/InvalidRequestContentException", "InvalidRequestContentException")
   @js.native
-  val InvalidRequestContentException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val InvalidRequestContentException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

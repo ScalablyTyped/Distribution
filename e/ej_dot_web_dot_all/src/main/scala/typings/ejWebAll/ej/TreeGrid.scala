@@ -15,7 +15,7 @@ trait TreeGrid
     * @param {string} Defines in which position the row wants to be added
     * @returns {void}
     */
-  def addRow(data: js.Any, rowPosition: String): Unit = js.native
+  def addRow(data: Any, rowPosition: String): Unit = js.native
   
   /** Clears the filter applied to a specific column.
     * @param {string} Pass the column field name to clear filtering done in that column.
@@ -97,7 +97,7 @@ trait TreeGrid
     filterValue: String,
     predicate: String,
     matchcase: Boolean,
-    actualFilterValue: js.Any
+    actualFilterValue: Any
   ): Unit = js.native
   
   /** To filter multiple columns with multiple conditions dynamically in TreeGrid.
@@ -124,13 +124,13 @@ trait TreeGrid
     * @param {string} Pass the column field name to get details of that column.
     * @returns {any}
     */
-  def getColumnByField(fieldName: String): js.Any = js.native
+  def getColumnByField(fieldName: String): Any = js.native
   
   /** Gets the column object of specific column.
     * @param {string} Pass the column header text to get details of that column.
     * @returns {any}
     */
-  def getColumnByHeaderText(headerText: String): js.Any = js.native
+  def getColumnByHeaderText(headerText: String): Any = js.native
   
   /** Gets the column index of specific column with data source field.
     * @param {string} Pass the column field name to get its index.
@@ -157,12 +157,12 @@ trait TreeGrid
   /** Gets the selected cell(s) element details in TreeGrid.
     * @returns {any[]}
     */
-  def getSelectedCells(): js.Array[js.Any] = js.native
+  def getSelectedCells(): js.Array[Any] = js.native
   
   /** To get the updated data source of TreeGrid.
     * @returns {any[]}
     */
-  def getUpdatedRecords(): js.Array[js.Any] = js.native
+  def getUpdatedRecords(): js.Array[Any] = js.native
   
   /** Sends request to navigate to a specific page in TreeGrid.
     * @param {number} Pass the page index to perform paging at specified page index.
@@ -192,7 +192,7 @@ trait TreeGrid
     * @param {any} Pass which data you want to show in tree grid
     * @returns {void}
     */
-  def refresh(dataSource: js.Array[js.Any], query: js.Any): Unit = js.native
+  def refresh(dataSource: js.Array[Any], query: Any): Unit = js.native
   
   /** To rename a column with the specified name
     * @param {number} Index of the column to be renamed
@@ -235,7 +235,7 @@ trait TreeGrid
     * @param {boolean} Defines that we need to preserve the previously selected cells or not
     * @returns {void}
     */
-  def selectCells(Indexes: js.Array[js.Any], preservePreviousSelectedCell: Boolean): Unit = js.native
+  def selectCells(Indexes: js.Array[Any], preservePreviousSelectedCell: Boolean): Unit = js.native
   
   /** To open the dialog to add new record/row in TreeGrid.
     * @returns {void}
@@ -278,7 +278,7 @@ trait TreeGrid
     * @param {any} object with modified field value
     * @returns {void}
     */
-  def updateRecordByIndex(index: Double, data: js.Any): Unit = js.native
+  def updateRecordByIndex(index: Double, data: Any): Unit = js.native
   
   /** Sets the minimum responsive width for TreeGrid.
     * @param {string} Pass the minimum responsive width, above which the TreeGrid needs to work in responsive mode.
@@ -895,7 +895,7 @@ object TreeGrid {
     
     /** Returns the TreeGrid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns request type.
       */
@@ -934,7 +934,7 @@ object TreeGrid {
       
       inline def setKeyValueUndefined: Self = StObject.set(x, "keyValue", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -972,7 +972,7 @@ object TreeGrid {
     
     /** Returns the grid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns selected record index
       */
@@ -1015,7 +1015,7 @@ object TreeGrid {
       
       inline def setKeyValueUndefined: Self = StObject.set(x, "keyValue", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1041,7 +1041,7 @@ object TreeGrid {
     
     /** Returns the TreeGrid element which is going to be print
       */
-    var element: js.UndefOr[js.Any] = js.undefined
+    var element: js.UndefOr[Any] = js.undefined
     
     /** Returns request type.
       */
@@ -1060,7 +1060,7 @@ object TreeGrid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
@@ -1078,7 +1078,7 @@ object TreeGrid {
     
     /** Returns the Element of editing cell.
       */
-    var cellElement: js.UndefOr[js.Any] = js.undefined
+    var cellElement: js.UndefOr[Any] = js.undefined
     
     /** Returns the column Index of cell belongs.
       */
@@ -1086,11 +1086,11 @@ object TreeGrid {
     
     /** Returns the data of current cell record.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the row element of editing cell.
       */
-    var rowElement: js.UndefOr[js.Any] = js.undefined
+    var rowElement: js.UndefOr[Any] = js.undefined
   }
   object BeginEditEventArgs {
     
@@ -1105,7 +1105,7 @@ object TreeGrid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCellElement(value: js.Any): Self = StObject.set(x, "cellElement", value.asInstanceOf[js.Any])
+      inline def setCellElement(value: Any): Self = StObject.set(x, "cellElement", value.asInstanceOf[js.Any])
       
       inline def setCellElementUndefined: Self = StObject.set(x, "cellElement", js.undefined)
       
@@ -1113,11 +1113,11 @@ object TreeGrid {
       
       inline def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setRowElement(value: js.Any): Self = StObject.set(x, "rowElement", value.asInstanceOf[js.Any])
+      inline def setRowElement(value: Any): Self = StObject.set(x, "rowElement", value.asInstanceOf[js.Any])
       
       inline def setRowElementUndefined: Self = StObject.set(x, "rowElement", js.undefined)
     }
@@ -1135,31 +1135,31 @@ object TreeGrid {
     
     /** Returns the selecting record object
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the Gantt object Model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the previously selected cell index
       */
-    var previousCellIndex: js.UndefOr[js.Any] = js.undefined
+    var previousCellIndex: js.UndefOr[Any] = js.undefined
     
     /** Returns the previously selected row data
       */
-    var previousData: js.UndefOr[js.Any] = js.undefined
+    var previousData: js.UndefOr[Any] = js.undefined
     
     /** Returns the previously selected row index
       */
-    var previousRowIndex: js.UndefOr[js.Any] = js.undefined
+    var previousRowIndex: js.UndefOr[Any] = js.undefined
     
     /** Returns the previously selected cell element
       */
-    var previousTargetCell: js.UndefOr[js.Any] = js.undefined
+    var previousTargetCell: js.UndefOr[Any] = js.undefined
     
     /** Returns the previously selected row element
       */
-    var previousTargetRow: js.UndefOr[js.Any] = js.undefined
+    var previousTargetRow: js.UndefOr[Any] = js.undefined
     
     /** Returns the row index on the selection
       */
@@ -1167,11 +1167,11 @@ object TreeGrid {
     
     /** Returns the selecting cell element
       */
-    var targetCell: js.UndefOr[js.Any] = js.undefined
+    var targetCell: js.UndefOr[Any] = js.undefined
     
     /** Returns the selecting row element
       */
-    var targetRow: js.UndefOr[js.Any] = js.undefined
+    var targetRow: js.UndefOr[Any] = js.undefined
   }
   object CellSelectedEventArgs {
     
@@ -1190,31 +1190,31 @@ object TreeGrid {
       
       inline def setCellIndexUndefined: Self = StObject.set(x, "cellIndex", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setPreviousCellIndex(value: js.Any): Self = StObject.set(x, "previousCellIndex", value.asInstanceOf[js.Any])
+      inline def setPreviousCellIndex(value: Any): Self = StObject.set(x, "previousCellIndex", value.asInstanceOf[js.Any])
       
       inline def setPreviousCellIndexUndefined: Self = StObject.set(x, "previousCellIndex", js.undefined)
       
-      inline def setPreviousData(value: js.Any): Self = StObject.set(x, "previousData", value.asInstanceOf[js.Any])
+      inline def setPreviousData(value: Any): Self = StObject.set(x, "previousData", value.asInstanceOf[js.Any])
       
       inline def setPreviousDataUndefined: Self = StObject.set(x, "previousData", js.undefined)
       
-      inline def setPreviousRowIndex(value: js.Any): Self = StObject.set(x, "previousRowIndex", value.asInstanceOf[js.Any])
+      inline def setPreviousRowIndex(value: Any): Self = StObject.set(x, "previousRowIndex", value.asInstanceOf[js.Any])
       
       inline def setPreviousRowIndexUndefined: Self = StObject.set(x, "previousRowIndex", js.undefined)
       
-      inline def setPreviousTargetCell(value: js.Any): Self = StObject.set(x, "previousTargetCell", value.asInstanceOf[js.Any])
+      inline def setPreviousTargetCell(value: Any): Self = StObject.set(x, "previousTargetCell", value.asInstanceOf[js.Any])
       
       inline def setPreviousTargetCellUndefined: Self = StObject.set(x, "previousTargetCell", js.undefined)
       
-      inline def setPreviousTargetRow(value: js.Any): Self = StObject.set(x, "previousTargetRow", value.asInstanceOf[js.Any])
+      inline def setPreviousTargetRow(value: Any): Self = StObject.set(x, "previousTargetRow", value.asInstanceOf[js.Any])
       
       inline def setPreviousTargetRowUndefined: Self = StObject.set(x, "previousTargetRow", js.undefined)
       
@@ -1222,11 +1222,11 @@ object TreeGrid {
       
       inline def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
       
-      inline def setTargetCell(value: js.Any): Self = StObject.set(x, "targetCell", value.asInstanceOf[js.Any])
+      inline def setTargetCell(value: Any): Self = StObject.set(x, "targetCell", value.asInstanceOf[js.Any])
       
       inline def setTargetCellUndefined: Self = StObject.set(x, "targetCell", js.undefined)
       
-      inline def setTargetRow(value: js.Any): Self = StObject.set(x, "targetRow", value.asInstanceOf[js.Any])
+      inline def setTargetRow(value: Any): Self = StObject.set(x, "targetRow", value.asInstanceOf[js.Any])
       
       inline def setTargetRowUndefined: Self = StObject.set(x, "targetRow", js.undefined)
     }
@@ -1244,11 +1244,11 @@ object TreeGrid {
     
     /** Returns the selecting record object
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the Gantt object Model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the row index on the selection
       */
@@ -1256,11 +1256,11 @@ object TreeGrid {
     
     /** Returns the selecting cell element
       */
-    var targetCell: js.UndefOr[js.Any] = js.undefined
+    var targetCell: js.UndefOr[Any] = js.undefined
     
     /** Returns the selecting row element
       */
-    var targetRow: js.UndefOr[js.Any] = js.undefined
+    var targetRow: js.UndefOr[Any] = js.undefined
   }
   object CellSelectingEventArgs {
     
@@ -1279,11 +1279,11 @@ object TreeGrid {
       
       inline def setCellIndexUndefined: Self = StObject.set(x, "cellIndex", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1291,11 +1291,11 @@ object TreeGrid {
       
       inline def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
       
-      inline def setTargetCell(value: js.Any): Self = StObject.set(x, "targetCell", value.asInstanceOf[js.Any])
+      inline def setTargetCell(value: Any): Self = StObject.set(x, "targetCell", value.asInstanceOf[js.Any])
       
       inline def setTargetCellUndefined: Self = StObject.set(x, "targetCell", js.undefined)
       
-      inline def setTargetRow(value: js.Any): Self = StObject.set(x, "targetRow", value.asInstanceOf[js.Any])
+      inline def setTargetRow(value: Any): Self = StObject.set(x, "targetRow", value.asInstanceOf[js.Any])
       
       inline def setTargetRowUndefined: Self = StObject.set(x, "targetRow", js.undefined)
     }
@@ -1309,7 +1309,7 @@ object TreeGrid {
     
     /** Returns the data of collapsed record..
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns state of a record whether it is in expanded or collapsed state.
       */
@@ -1340,7 +1340,7 @@ object TreeGrid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -1370,7 +1370,7 @@ object TreeGrid {
     
     /** Returns the data of collapsing record..
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns state of a record whether it is in expanded or collapsing state.
       */
@@ -1397,7 +1397,7 @@ object TreeGrid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -1472,12 +1472,12 @@ object TreeGrid {
     
     /** To customize the ej controls defined in TreeGrid column with their native property.
       */
-    var editParams: js.UndefOr[js.Any] = js.undefined
+    var editParams: js.UndefOr[Any] = js.undefined
     
     /** Gets or sets a template that displays a custom editor for editing the column values.
       * @Default {null}
       */
-    var editTemplate: js.UndefOr[js.Any] = js.undefined
+    var editTemplate: js.UndefOr[Any] = js.undefined
     
     /** Specifies the edit type of the column.
       * @Default {ej.TreeGrid.EditingType.String}
@@ -1501,7 +1501,7 @@ object TreeGrid {
     /** Specifies the display format of a column
       * @Default {null}
       */
-    var format: js.UndefOr[js.Any] = js.undefined
+    var format: js.UndefOr[Any] = js.undefined
     
     /** Specifies the header template value for the column header
       */
@@ -1567,7 +1567,7 @@ object TreeGrid {
     
     /** specifies the conditions for saving data to the database while adding or editing the fields.
       */
-    var validationRules: js.UndefOr[js.Any] = js.undefined
+    var validationRules: js.UndefOr[Any] = js.undefined
     
     /** Controls the visibility of the column.
       * @Default {true}
@@ -1623,7 +1623,7 @@ object TreeGrid {
       
       inline def setCommandsUndefined: Self = StObject.set(x, "commands", js.undefined)
       
-      inline def setCommandsVarargs(value: ColumnsCommand*): Self = StObject.set(x, "commands", js.Array(value :_*))
+      inline def setCommandsVarargs(value: ColumnsCommand*): Self = StObject.set(x, "commands", js.Array(value*))
       
       inline def setDisplayAsCheckbox(value: Boolean): Self = StObject.set(x, "displayAsCheckbox", value.asInstanceOf[js.Any])
       
@@ -1633,11 +1633,11 @@ object TreeGrid {
       
       inline def setDropdownDataUndefined: Self = StObject.set(x, "dropdownData", js.undefined)
       
-      inline def setEditParams(value: js.Any): Self = StObject.set(x, "editParams", value.asInstanceOf[js.Any])
+      inline def setEditParams(value: Any): Self = StObject.set(x, "editParams", value.asInstanceOf[js.Any])
       
       inline def setEditParamsUndefined: Self = StObject.set(x, "editParams", js.undefined)
       
-      inline def setEditTemplate(value: js.Any): Self = StObject.set(x, "editTemplate", value.asInstanceOf[js.Any])
+      inline def setEditTemplate(value: Any): Self = StObject.set(x, "editTemplate", value.asInstanceOf[js.Any])
       
       inline def setEditTemplateUndefined: Self = StObject.set(x, "editTemplate", js.undefined)
       
@@ -1657,7 +1657,7 @@ object TreeGrid {
       
       inline def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
       
-      inline def setFormat(value: js.Any): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: Any): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
       inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
@@ -1713,7 +1713,7 @@ object TreeGrid {
       
       inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
       
-      inline def setValidationRules(value: js.Any): Self = StObject.set(x, "validationRules", value.asInstanceOf[js.Any])
+      inline def setValidationRules(value: Any): Self = StObject.set(x, "validationRules", value.asInstanceOf[js.Any])
       
       inline def setValidationRulesUndefined: Self = StObject.set(x, "validationRules", js.undefined)
       
@@ -1739,7 +1739,7 @@ object TreeGrid {
     
     /** Returns the column data which is dragged
       */
-    var draggedColumn: js.UndefOr[js.Any] = js.undefined
+    var draggedColumn: js.UndefOr[Any] = js.undefined
     
     /** Returns the index of the column being dragged
       */
@@ -1747,11 +1747,11 @@ object TreeGrid {
     
     /** Returns the control model values.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the target column data
       */
-    var targetColumn: js.UndefOr[js.Any] = js.undefined
+    var targetColumn: js.UndefOr[Any] = js.undefined
     
     /** Returns the index of the target column
       */
@@ -1778,7 +1778,7 @@ object TreeGrid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setDraggedColumn(value: js.Any): Self = StObject.set(x, "draggedColumn", value.asInstanceOf[js.Any])
+      inline def setDraggedColumn(value: Any): Self = StObject.set(x, "draggedColumn", value.asInstanceOf[js.Any])
       
       inline def setDraggedColumnIndex(value: Double): Self = StObject.set(x, "draggedColumnIndex", value.asInstanceOf[js.Any])
       
@@ -1786,11 +1786,11 @@ object TreeGrid {
       
       inline def setDraggedColumnUndefined: Self = StObject.set(x, "draggedColumn", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setTargetColumn(value: js.Any): Self = StObject.set(x, "targetColumn", value.asInstanceOf[js.Any])
+      inline def setTargetColumn(value: Any): Self = StObject.set(x, "targetColumn", value.asInstanceOf[js.Any])
       
       inline def setTargetColumnIndex(value: Double): Self = StObject.set(x, "targetColumnIndex", value.asInstanceOf[js.Any])
       
@@ -1812,7 +1812,7 @@ object TreeGrid {
     
     /** Returns the column data which is dragged
       */
-    var draggedColumn: js.UndefOr[js.Any] = js.undefined
+    var draggedColumn: js.UndefOr[Any] = js.undefined
     
     /** Returns the index of the column being dragged
       */
@@ -1820,7 +1820,7 @@ object TreeGrid {
     
     /** Returns the control model values.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the event Type.
       */
@@ -1839,7 +1839,7 @@ object TreeGrid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setDraggedColumn(value: js.Any): Self = StObject.set(x, "draggedColumn", value.asInstanceOf[js.Any])
+      inline def setDraggedColumn(value: Any): Self = StObject.set(x, "draggedColumn", value.asInstanceOf[js.Any])
       
       inline def setDraggedColumnIndex(value: Double): Self = StObject.set(x, "draggedColumnIndex", value.asInstanceOf[js.Any])
       
@@ -1847,7 +1847,7 @@ object TreeGrid {
       
       inline def setDraggedColumnUndefined: Self = StObject.set(x, "draggedColumn", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -1865,7 +1865,7 @@ object TreeGrid {
     
     /** Returns the column data which is dragged
       */
-    var draggedColumn: js.UndefOr[js.Any] = js.undefined
+    var draggedColumn: js.UndefOr[Any] = js.undefined
     
     /** Returns the index of the column being dragged
       */
@@ -1873,11 +1873,11 @@ object TreeGrid {
     
     /** Returns the control model values.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the target column data
       */
-    var targetColumn: js.UndefOr[js.Any] = js.undefined
+    var targetColumn: js.UndefOr[Any] = js.undefined
     
     /** Returns the index of the target column
       */
@@ -1900,7 +1900,7 @@ object TreeGrid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setDraggedColumn(value: js.Any): Self = StObject.set(x, "draggedColumn", value.asInstanceOf[js.Any])
+      inline def setDraggedColumn(value: Any): Self = StObject.set(x, "draggedColumn", value.asInstanceOf[js.Any])
       
       inline def setDraggedColumnIndex(value: Double): Self = StObject.set(x, "draggedColumnIndex", value.asInstanceOf[js.Any])
       
@@ -1908,11 +1908,11 @@ object TreeGrid {
       
       inline def setDraggedColumnUndefined: Self = StObject.set(x, "draggedColumn", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setTargetColumn(value: js.Any): Self = StObject.set(x, "targetColumn", value.asInstanceOf[js.Any])
+      inline def setTargetColumn(value: Any): Self = StObject.set(x, "targetColumn", value.asInstanceOf[js.Any])
       
       inline def setTargetColumnIndex(value: Double): Self = StObject.set(x, "targetColumnIndex", value.asInstanceOf[js.Any])
       
@@ -1934,7 +1934,7 @@ object TreeGrid {
     
     /** Returns the column data in which the resizing started
       */
-    var column: js.UndefOr[js.Any] = js.undefined
+    var column: js.UndefOr[Any] = js.undefined
     
     /** Returns the column index in which the resizing started
       */
@@ -1946,7 +1946,7 @@ object TreeGrid {
     
     /** Returns the control model values.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the new column width after resized
       */
@@ -1958,7 +1958,7 @@ object TreeGrid {
     
     /** Returns initial column element object.
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** Returns the event Type.
       */
@@ -1977,7 +1977,7 @@ object TreeGrid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setColumn(value: js.Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
       inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
       
@@ -1989,7 +1989,7 @@ object TreeGrid {
       
       inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -2001,7 +2001,7 @@ object TreeGrid {
       
       inline def setOldWidthUndefined: Self = StObject.set(x, "oldWidth", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -2041,7 +2041,7 @@ object TreeGrid {
     
     /** Returns the column data in which the resizing started
       */
-    var column: js.UndefOr[js.Any] = js.undefined
+    var column: js.UndefOr[Any] = js.undefined
     
     /** Returns the column index in which the resizing started
       */
@@ -2049,7 +2049,7 @@ object TreeGrid {
     
     /** Returns the control model values.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns column width before dragging
       */
@@ -2057,7 +2057,7 @@ object TreeGrid {
     
     /** Returns initial column element object.
       */
-    var target: js.UndefOr[js.Any] = js.undefined
+    var target: js.UndefOr[Any] = js.undefined
     
     /** Returns the event Type.
       */
@@ -2076,7 +2076,7 @@ object TreeGrid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setColumn(value: js.Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
       inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
       
@@ -2084,7 +2084,7 @@ object TreeGrid {
       
       inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -2092,7 +2092,7 @@ object TreeGrid {
       
       inline def setOldWidthUndefined: Self = StObject.set(x, "oldWidth", js.undefined)
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
@@ -2110,7 +2110,7 @@ object TreeGrid {
     
     /** Returns the column data which is resized
       */
-    var column: js.UndefOr[js.Any] = js.undefined
+    var column: js.UndefOr[Any] = js.undefined
     
     /** Returns the index of the column being resized.
       */
@@ -2118,7 +2118,7 @@ object TreeGrid {
     
     /** Returns the control model values.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns resized column width after resized.
       */
@@ -2145,7 +2145,7 @@ object TreeGrid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setColumn(value: js.Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
       inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
       
@@ -2153,7 +2153,7 @@ object TreeGrid {
       
       inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -2175,7 +2175,7 @@ object TreeGrid {
     
     /** Gets or sets an object to customize command button with available ejButton properties.
       */
-    var buttonOptions: js.UndefOr[js.Any] = js.undefined
+    var buttonOptions: js.UndefOr[Any] = js.undefined
     
     /** Gets or sets a value that define the command column buttons to be displayed.
       */
@@ -2190,7 +2190,7 @@ object TreeGrid {
     
     extension [Self <: ColumnsCommand](x: Self) {
       
-      inline def setButtonOptions(value: js.Any): Self = StObject.set(x, "buttonOptions", value.asInstanceOf[js.Any])
+      inline def setButtonOptions(value: Any): Self = StObject.set(x, "buttonOptions", value.asInstanceOf[js.Any])
       
       inline def setButtonOptionsUndefined: Self = StObject.set(x, "buttonOptions", js.undefined)
       
@@ -2208,11 +2208,11 @@ object TreeGrid {
     
     /** Returns the default context menu items to which we add custom items.
       */
-    var contextMenuItems: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var contextMenuItems: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Returns the TreeGrid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns request type.
       */
@@ -2235,13 +2235,13 @@ object TreeGrid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setContextMenuItems(value: js.Array[js.Any]): Self = StObject.set(x, "contextMenuItems", value.asInstanceOf[js.Any])
+      inline def setContextMenuItems(value: js.Array[Any]): Self = StObject.set(x, "contextMenuItems", value.asInstanceOf[js.Any])
       
       inline def setContextMenuItemsUndefined: Self = StObject.set(x, "contextMenuItems", js.undefined)
       
-      inline def setContextMenuItemsVarargs(value: js.Any*): Self = StObject.set(x, "contextMenuItems", js.Array(value :_*))
+      inline def setContextMenuItemsVarargs(value: Any*): Self = StObject.set(x, "contextMenuItems", js.Array(value*))
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -2280,7 +2280,7 @@ object TreeGrid {
       
       inline def setContextMenuItemsUndefined: Self = StObject.set(x, "contextMenuItems", js.undefined)
       
-      inline def setContextMenuItemsVarargs(value: (ContextMenuItems | String)*): Self = StObject.set(x, "contextMenuItems", js.Array(value :_*))
+      inline def setContextMenuItemsVarargs(value: (ContextMenuItems | String)*): Self = StObject.set(x, "contextMenuItems", js.Array(value*))
       
       inline def setShowContextMenu(value: Boolean): Self = StObject.set(x, "showContextMenu", value.asInstanceOf[js.Any])
       
@@ -2296,7 +2296,7 @@ object TreeGrid {
     
     /** Returns the TreeGrid model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -2315,7 +2315,7 @@ object TreeGrid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -2333,15 +2333,15 @@ object TreeGrid {
     
     /** Returns the data collection of selected row.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the details element of selected row.
       */
-    var detailsElement: js.UndefOr[js.Any] = js.undefined
+    var detailsElement: js.UndefOr[Any] = js.undefined
     
     /** Returns the TreeGrid model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the rowIndex of selected row.
       */
@@ -2364,15 +2364,15 @@ object TreeGrid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDetailsElement(value: js.Any): Self = StObject.set(x, "detailsElement", value.asInstanceOf[js.Any])
+      inline def setDetailsElement(value: Any): Self = StObject.set(x, "detailsElement", value.asInstanceOf[js.Any])
       
       inline def setDetailsElementUndefined: Self = StObject.set(x, "detailsElement", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -2394,11 +2394,11 @@ object TreeGrid {
     
     /** Returns the TreeGrid model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the data collection of hidden details Template
       */
-    var rowData: js.UndefOr[js.Any] = js.undefined
+    var rowData: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -2417,11 +2417,11 @@ object TreeGrid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setRowData(value: js.Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
+      inline def setRowData(value: Any): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
       
       inline def setRowDataUndefined: Self = StObject.set(x, "rowData", js.undefined)
       
@@ -2439,15 +2439,15 @@ object TreeGrid {
     
     /** Returns the data collection of selected row.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the details element of selected row.
       */
-    var detailsElement: js.UndefOr[js.Any] = js.undefined
+    var detailsElement: js.UndefOr[Any] = js.undefined
     
     /** Returns the TreeGrid model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the rowIndex of selected row.
       */
@@ -2470,15 +2470,15 @@ object TreeGrid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setDetailsElement(value: js.Any): Self = StObject.set(x, "detailsElement", value.asInstanceOf[js.Any])
+      inline def setDetailsElement(value: Any): Self = StObject.set(x, "detailsElement", value.asInstanceOf[js.Any])
       
       inline def setDetailsElementUndefined: Self = StObject.set(x, "detailsElement", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -2502,7 +2502,7 @@ object TreeGrid {
     /** Option to add field names whose corresponding values in the dragged row needs to be shown in the preview tooltip.
       * @Default {[]}
       */
-    var tooltipItems: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var tooltipItems: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Custom template for that tooltip that is shown while dragging a row.
       * @Default {null}
@@ -2522,11 +2522,11 @@ object TreeGrid {
       
       inline def setShowTooltipUndefined: Self = StObject.set(x, "showTooltip", js.undefined)
       
-      inline def setTooltipItems(value: js.Array[js.Any]): Self = StObject.set(x, "tooltipItems", value.asInstanceOf[js.Any])
+      inline def setTooltipItems(value: js.Array[Any]): Self = StObject.set(x, "tooltipItems", value.asInstanceOf[js.Any])
       
       inline def setTooltipItemsUndefined: Self = StObject.set(x, "tooltipItems", js.undefined)
       
-      inline def setTooltipItemsVarargs(value: js.Any*): Self = StObject.set(x, "tooltipItems", js.Array(value :_*))
+      inline def setTooltipItemsVarargs(value: Any*): Self = StObject.set(x, "tooltipItems", js.Array(value*))
       
       inline def setTooltipTemplate(value: String): Self = StObject.set(x, "tooltipTemplate", value.asInstanceOf[js.Any])
       
@@ -2702,7 +2702,7 @@ object TreeGrid {
     
     /** Returns the Element of editing cell.
       */
-    var cellElement: js.UndefOr[js.Any] = js.undefined
+    var cellElement: js.UndefOr[Any] = js.undefined
     
     /** Returns the column name of edited cell belongs.
       */
@@ -2710,15 +2710,15 @@ object TreeGrid {
     
     /** Returns the column object of edited cell belongs.
       */
-    var columnObject: js.UndefOr[js.Any] = js.undefined
+    var columnObject: js.UndefOr[Any] = js.undefined
     
     /** Returns the data of edited cell record.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the row element of editing cell.
       */
-    var rowElement: js.UndefOr[js.Any] = js.undefined
+    var rowElement: js.UndefOr[Any] = js.undefined
   }
   object EndEditEventArgs {
     
@@ -2733,7 +2733,7 @@ object TreeGrid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCellElement(value: js.Any): Self = StObject.set(x, "cellElement", value.asInstanceOf[js.Any])
+      inline def setCellElement(value: Any): Self = StObject.set(x, "cellElement", value.asInstanceOf[js.Any])
       
       inline def setCellElementUndefined: Self = StObject.set(x, "cellElement", js.undefined)
       
@@ -2741,15 +2741,15 @@ object TreeGrid {
       
       inline def setColumnNameUndefined: Self = StObject.set(x, "columnName", js.undefined)
       
-      inline def setColumnObject(value: js.Any): Self = StObject.set(x, "columnObject", value.asInstanceOf[js.Any])
+      inline def setColumnObject(value: Any): Self = StObject.set(x, "columnObject", value.asInstanceOf[js.Any])
       
       inline def setColumnObjectUndefined: Self = StObject.set(x, "columnObject", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setRowElement(value: js.Any): Self = StObject.set(x, "rowElement", value.asInstanceOf[js.Any])
+      inline def setRowElement(value: Any): Self = StObject.set(x, "rowElement", value.asInstanceOf[js.Any])
       
       inline def setRowElementUndefined: Self = StObject.set(x, "rowElement", js.undefined)
     }
@@ -2763,7 +2763,7 @@ object TreeGrid {
     
     /** Returns the data of expanded record..
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns state of a record whether it is in expanded or expanded state.
       */
@@ -2794,7 +2794,7 @@ object TreeGrid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -2824,7 +2824,7 @@ object TreeGrid {
     
     /** Returns the data of expanding record..
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns state of a record whether it is in expanded or collapsed state.
       */
@@ -2851,7 +2851,7 @@ object TreeGrid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -2939,7 +2939,7 @@ object TreeGrid {
       
       inline def setFilteredColumnsUndefined: Self = StObject.set(x, "filteredColumns", js.undefined)
       
-      inline def setFilteredColumnsVarargs(value: FilterSettingsFilteredColumn*): Self = StObject.set(x, "filteredColumns", js.Array(value :_*))
+      inline def setFilteredColumnsVarargs(value: FilterSettingsFilteredColumn*): Self = StObject.set(x, "filteredColumns", js.Array(value*))
       
       inline def setMaxFilterChoices(value: Double): Self = StObject.set(x, "maxFilterChoices", value.asInstanceOf[js.Any])
       
@@ -3000,7 +3000,7 @@ object TreeGrid {
     
     /** Returns the TreeGrid model
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -3019,7 +3019,7 @@ object TreeGrid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -3140,7 +3140,7 @@ object TreeGrid {
     /** To Specify the column fields to be displayed in the dialog while inserting a column using column menu.
       * @Default {[]}
       */
-    var columnDialogFields: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var columnDialogFields: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Triggered while dragging a column
       */
@@ -3198,7 +3198,7 @@ object TreeGrid {
     /** Specifies hierarchical or self-referential data to populate the TreeGrid.
       * @Default {null}
       */
-    var dataSource: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var dataSource: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Triggered while rendering details template in TreeGrid
       */
@@ -3314,7 +3314,7 @@ object TreeGrid {
     /** Specifies ej.Query to select data from the dataSource. This property is applicable only when the dataSource is ej.DataManager.
       * @Default {null}
       */
-    var query: js.UndefOr[js.Any] = js.undefined
+    var query: js.UndefOr[Any] = js.undefined
     
     /** Triggered while rendering each cell in the TreeGrid
       */
@@ -3565,11 +3565,11 @@ object TreeGrid {
       
       inline def setCollapsingUndefined: Self = StObject.set(x, "collapsing", js.undefined)
       
-      inline def setColumnDialogFields(value: js.Array[js.Any]): Self = StObject.set(x, "columnDialogFields", value.asInstanceOf[js.Any])
+      inline def setColumnDialogFields(value: js.Array[Any]): Self = StObject.set(x, "columnDialogFields", value.asInstanceOf[js.Any])
       
       inline def setColumnDialogFieldsUndefined: Self = StObject.set(x, "columnDialogFields", js.undefined)
       
-      inline def setColumnDialogFieldsVarargs(value: js.Any*): Self = StObject.set(x, "columnDialogFields", js.Array(value :_*))
+      inline def setColumnDialogFieldsVarargs(value: Any*): Self = StObject.set(x, "columnDialogFields", js.Array(value*))
       
       inline def setColumnDrag(value: /* e */ ColumnDragEventArgs => Unit): Self = StObject.set(x, "columnDrag", js.Any.fromFunction1(value))
       
@@ -3603,7 +3603,7 @@ object TreeGrid {
       
       inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      inline def setColumnsVarargs(value: Column*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: Column*): Self = StObject.set(x, "columns", js.Array(value*))
       
       inline def setCommonWidth(value: Double): Self = StObject.set(x, "commonWidth", value.asInstanceOf[js.Any])
       
@@ -3625,11 +3625,11 @@ object TreeGrid {
       
       inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
       
-      inline def setDataSource(value: js.Array[js.Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      inline def setDataSource(value: js.Array[Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
       
-      inline def setDataSourceVarargs(value: js.Any*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
+      inline def setDataSourceVarargs(value: Any*): Self = StObject.set(x, "dataSource", js.Array(value*))
       
       inline def setDetailsDataBound(value: /* e */ DetailsDataBoundEventArgs => Unit): Self = StObject.set(x, "detailsDataBound", js.Any.fromFunction1(value))
       
@@ -3731,7 +3731,7 @@ object TreeGrid {
       
       inline def setParseRowTemplateUndefined: Self = StObject.set(x, "parseRowTemplate", js.undefined)
       
-      inline def setQuery(value: js.Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       inline def setQueryCellInfo(value: /* e */ QueryCellInfoEventArgs => Unit): Self = StObject.set(x, "queryCellInfo", js.Any.fromFunction1(value))
       
@@ -3791,7 +3791,7 @@ object TreeGrid {
       
       inline def setSelectedCellIndexesUndefined: Self = StObject.set(x, "selectedCellIndexes", js.undefined)
       
-      inline def setSelectedCellIndexesVarargs(value: SelectedCellIndex*): Self = StObject.set(x, "selectedCellIndexes", js.Array(value :_*))
+      inline def setSelectedCellIndexesVarargs(value: SelectedCellIndex*): Self = StObject.set(x, "selectedCellIndexes", js.Array(value*))
       
       inline def setSelectedRowIndex(value: Double): Self = StObject.set(x, "selectedRowIndex", value.asInstanceOf[js.Any])
       
@@ -3849,13 +3849,13 @@ object TreeGrid {
       
       inline def setStackedHeaderRowsUndefined: Self = StObject.set(x, "stackedHeaderRows", js.undefined)
       
-      inline def setStackedHeaderRowsVarargs(value: StackedHeaderRow*): Self = StObject.set(x, "stackedHeaderRows", js.Array(value :_*))
+      inline def setStackedHeaderRowsVarargs(value: StackedHeaderRow*): Self = StObject.set(x, "stackedHeaderRows", js.Array(value*))
       
       inline def setSummaryRows(value: js.Array[SummaryRow]): Self = StObject.set(x, "summaryRows", value.asInstanceOf[js.Any])
       
       inline def setSummaryRowsUndefined: Self = StObject.set(x, "summaryRows", js.undefined)
       
-      inline def setSummaryRowsVarargs(value: SummaryRow*): Self = StObject.set(x, "summaryRows", js.Array(value :_*))
+      inline def setSummaryRowsVarargs(value: SummaryRow*): Self = StObject.set(x, "summaryRows", js.Array(value*))
       
       inline def setToolbarClick(value: /* e */ ToolbarClickEventArgs => Unit): Self = StObject.set(x, "toolbarClick", js.Any.fromFunction1(value))
       
@@ -3959,7 +3959,7 @@ object TreeGrid {
     
     /** Returns the selecting cell element.
       */
-    var cellElement: js.UndefOr[js.Any] = js.undefined
+    var cellElement: js.UndefOr[Any] = js.undefined
     
     /** Returns the value of cell.
       */
@@ -3967,11 +3967,11 @@ object TreeGrid {
     
     /** Returns the column of cell belongs.
       */
-    var column: js.UndefOr[js.Any] = js.undefined
+    var column: js.UndefOr[Any] = js.undefined
     
     /** Returns the data of current cell record.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
   }
   object QueryCellInfoEventArgs {
     
@@ -3986,7 +3986,7 @@ object TreeGrid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCellElement(value: js.Any): Self = StObject.set(x, "cellElement", value.asInstanceOf[js.Any])
+      inline def setCellElement(value: Any): Self = StObject.set(x, "cellElement", value.asInstanceOf[js.Any])
       
       inline def setCellElementUndefined: Self = StObject.set(x, "cellElement", js.undefined)
       
@@ -3994,11 +3994,11 @@ object TreeGrid {
       
       inline def setCellValueUndefined: Self = StObject.set(x, "cellValue", js.undefined)
       
-      inline def setColumn(value: js.Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
       inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     }
@@ -4012,7 +4012,7 @@ object TreeGrid {
     
     /** Returns the element of clicked cell.
       */
-    var cell: js.UndefOr[js.Any] = js.undefined
+    var cell: js.UndefOr[Any] = js.undefined
     
     /** Returns the index of the clicked cell.
       */
@@ -4020,7 +4020,7 @@ object TreeGrid {
     
     /** Returns the data of clicked cell.
       */
-    var cellValue: js.UndefOr[js.Any] = js.undefined
+    var cellValue: js.UndefOr[Any] = js.undefined
     
     /** Returns the column name of the clicked cell.
       */
@@ -4028,7 +4028,7 @@ object TreeGrid {
     
     /** Returns the element of the clicked row.
       */
-    var row: js.UndefOr[js.Any] = js.undefined
+    var row: js.UndefOr[Any] = js.undefined
     
     /** Returns the index of the clicked row.
       */
@@ -4047,7 +4047,7 @@ object TreeGrid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCell(value: js.Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+      inline def setCell(value: Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
       
       inline def setCellIndex(value: Double): Self = StObject.set(x, "cellIndex", value.asInstanceOf[js.Any])
       
@@ -4055,7 +4055,7 @@ object TreeGrid {
       
       inline def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
       
-      inline def setCellValue(value: js.Any): Self = StObject.set(x, "cellValue", value.asInstanceOf[js.Any])
+      inline def setCellValue(value: Any): Self = StObject.set(x, "cellValue", value.asInstanceOf[js.Any])
       
       inline def setCellValueUndefined: Self = StObject.set(x, "cellValue", js.undefined)
       
@@ -4063,7 +4063,7 @@ object TreeGrid {
       
       inline def setColumnNameUndefined: Self = StObject.set(x, "columnName", js.undefined)
       
-      inline def setRow(value: js.Any): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      inline def setRow(value: Any): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       
       inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
       
@@ -4081,7 +4081,7 @@ object TreeGrid {
     
     /** Returns the element of clicked cell.
       */
-    var cell: js.UndefOr[js.Any] = js.undefined
+    var cell: js.UndefOr[Any] = js.undefined
     
     /** Returns the index of the clicked cell.
       */
@@ -4089,7 +4089,7 @@ object TreeGrid {
     
     /** Returns the data of clicked cell.
       */
-    var cellValue: js.UndefOr[js.Any] = js.undefined
+    var cellValue: js.UndefOr[Any] = js.undefined
     
     /** Returns the column name of the clicked cell.
       */
@@ -4097,7 +4097,7 @@ object TreeGrid {
     
     /** Returns the element of the clicked row.
       */
-    var row: js.UndefOr[js.Any] = js.undefined
+    var row: js.UndefOr[Any] = js.undefined
     
     /** Returns the index of the clicked row.
       */
@@ -4116,7 +4116,7 @@ object TreeGrid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCell(value: js.Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+      inline def setCell(value: Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
       
       inline def setCellIndex(value: Double): Self = StObject.set(x, "cellIndex", value.asInstanceOf[js.Any])
       
@@ -4124,7 +4124,7 @@ object TreeGrid {
       
       inline def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
       
-      inline def setCellValue(value: js.Any): Self = StObject.set(x, "cellValue", value.asInstanceOf[js.Any])
+      inline def setCellValue(value: Any): Self = StObject.set(x, "cellValue", value.asInstanceOf[js.Any])
       
       inline def setCellValueUndefined: Self = StObject.set(x, "cellValue", js.undefined)
       
@@ -4132,7 +4132,7 @@ object TreeGrid {
       
       inline def setColumnNameUndefined: Self = StObject.set(x, "columnName", js.undefined)
       
-      inline def setRow(value: js.Any): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      inline def setRow(value: Any): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       
       inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
       
@@ -4150,11 +4150,11 @@ object TreeGrid {
     
     /** Returns the data of rendering row record.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the row element of rendering row.
       */
-    var rowElement: js.UndefOr[js.Any] = js.undefined
+    var rowElement: js.UndefOr[Any] = js.undefined
   }
   object RowDataBoundEventArgs {
     
@@ -4169,11 +4169,11 @@ object TreeGrid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setRowElement(value: js.Any): Self = StObject.set(x, "rowElement", value.asInstanceOf[js.Any])
+      inline def setRowElement(value: Any): Self = StObject.set(x, "rowElement", value.asInstanceOf[js.Any])
       
       inline def setRowElementUndefined: Self = StObject.set(x, "rowElement", js.undefined)
     }
@@ -4191,7 +4191,7 @@ object TreeGrid {
     
     /** Returns the row which we start to drag.
       */
-    var draggedRow: js.UndefOr[js.Any] = js.undefined
+    var draggedRow: js.UndefOr[Any] = js.undefined
     
     /** Returns the row index which we start to drag.
       */
@@ -4203,7 +4203,7 @@ object TreeGrid {
     
     /** Returns the TreeGrid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns request type.
       */
@@ -4211,7 +4211,7 @@ object TreeGrid {
     
     /** Returns the row on which we are dragging.
       */
-    var targetRow: js.UndefOr[js.Any] = js.undefined
+    var targetRow: js.UndefOr[Any] = js.undefined
     
     /** Returns the row index on which we are dragging.
       */
@@ -4238,7 +4238,7 @@ object TreeGrid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setDraggedRow(value: js.Any): Self = StObject.set(x, "draggedRow", value.asInstanceOf[js.Any])
+      inline def setDraggedRow(value: Any): Self = StObject.set(x, "draggedRow", value.asInstanceOf[js.Any])
       
       inline def setDraggedRowIndex(value: Double): Self = StObject.set(x, "draggedRowIndex", value.asInstanceOf[js.Any])
       
@@ -4250,7 +4250,7 @@ object TreeGrid {
       
       inline def setDropPositionUndefined: Self = StObject.set(x, "dropPosition", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -4258,7 +4258,7 @@ object TreeGrid {
       
       inline def setRequestTypeUndefined: Self = StObject.set(x, "requestType", js.undefined)
       
-      inline def setTargetRow(value: js.Any): Self = StObject.set(x, "targetRow", value.asInstanceOf[js.Any])
+      inline def setTargetRow(value: Any): Self = StObject.set(x, "targetRow", value.asInstanceOf[js.Any])
       
       inline def setTargetRowIndex(value: Double): Self = StObject.set(x, "targetRowIndex", value.asInstanceOf[js.Any])
       
@@ -4280,7 +4280,7 @@ object TreeGrid {
     
     /** Returns the row which we start to drag.
       */
-    var draggedRow: js.UndefOr[js.Any] = js.undefined
+    var draggedRow: js.UndefOr[Any] = js.undefined
     
     /** Returns the row index which we start to drag.
       */
@@ -4288,7 +4288,7 @@ object TreeGrid {
     
     /** Returns the TreeGrid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns request type.
       */
@@ -4311,7 +4311,7 @@ object TreeGrid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setDraggedRow(value: js.Any): Self = StObject.set(x, "draggedRow", value.asInstanceOf[js.Any])
+      inline def setDraggedRow(value: Any): Self = StObject.set(x, "draggedRow", value.asInstanceOf[js.Any])
       
       inline def setDraggedRowIndex(value: Boolean): Self = StObject.set(x, "draggedRowIndex", value.asInstanceOf[js.Any])
       
@@ -4319,7 +4319,7 @@ object TreeGrid {
       
       inline def setDraggedRowUndefined: Self = StObject.set(x, "draggedRow", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -4341,7 +4341,7 @@ object TreeGrid {
     
     /** Returns the row which we start to drag.
       */
-    var draggedRow: js.UndefOr[js.Any] = js.undefined
+    var draggedRow: js.UndefOr[Any] = js.undefined
     
     /** Returns the row index which we start to drag.
       */
@@ -4349,7 +4349,7 @@ object TreeGrid {
     
     /** Returns the TreeGrid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns request type.
       */
@@ -4357,7 +4357,7 @@ object TreeGrid {
     
     /** Returns the row which we are dropped to row.
       */
-    var targetRow: js.UndefOr[js.Any] = js.undefined
+    var targetRow: js.UndefOr[Any] = js.undefined
     
     /** Returns the row index which we are dropped to row.
       */
@@ -4380,7 +4380,7 @@ object TreeGrid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setDraggedRow(value: js.Any): Self = StObject.set(x, "draggedRow", value.asInstanceOf[js.Any])
+      inline def setDraggedRow(value: Any): Self = StObject.set(x, "draggedRow", value.asInstanceOf[js.Any])
       
       inline def setDraggedRowIndex(value: Double): Self = StObject.set(x, "draggedRowIndex", value.asInstanceOf[js.Any])
       
@@ -4388,7 +4388,7 @@ object TreeGrid {
       
       inline def setDraggedRowUndefined: Self = StObject.set(x, "draggedRow", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -4396,7 +4396,7 @@ object TreeGrid {
       
       inline def setRequestTypeUndefined: Self = StObject.set(x, "requestType", js.undefined)
       
-      inline def setTargetRow(value: js.Any): Self = StObject.set(x, "targetRow", value.asInstanceOf[js.Any])
+      inline def setTargetRow(value: Any): Self = StObject.set(x, "targetRow", value.asInstanceOf[js.Any])
       
       inline def setTargetRowIndex(value: Double): Self = StObject.set(x, "targetRowIndex", value.asInstanceOf[js.Any])
       
@@ -4418,11 +4418,11 @@ object TreeGrid {
     
     /** Returns the multiple dragged row collection for multiple reorder
       */
-    var draggedRecords: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var draggedRecords: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Returns the row which we start to drag.
       */
-    var draggedRow: js.UndefOr[js.Any] = js.undefined
+    var draggedRow: js.UndefOr[Any] = js.undefined
     
     /** Returns the row index which we start to drag.
       */
@@ -4434,11 +4434,11 @@ object TreeGrid {
     
     /** Returns the TreeGrid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the row which we are dropped to row.
       */
-    var targetRow: js.UndefOr[js.Any] = js.undefined
+    var targetRow: js.UndefOr[Any] = js.undefined
     
     /** Returns the row index which we are dropped to row.
       */
@@ -4461,13 +4461,13 @@ object TreeGrid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setDraggedRecords(value: js.Array[js.Any]): Self = StObject.set(x, "draggedRecords", value.asInstanceOf[js.Any])
+      inline def setDraggedRecords(value: js.Array[Any]): Self = StObject.set(x, "draggedRecords", value.asInstanceOf[js.Any])
       
       inline def setDraggedRecordsUndefined: Self = StObject.set(x, "draggedRecords", js.undefined)
       
-      inline def setDraggedRecordsVarargs(value: js.Any*): Self = StObject.set(x, "draggedRecords", js.Array(value :_*))
+      inline def setDraggedRecordsVarargs(value: Any*): Self = StObject.set(x, "draggedRecords", js.Array(value*))
       
-      inline def setDraggedRow(value: js.Any): Self = StObject.set(x, "draggedRow", value.asInstanceOf[js.Any])
+      inline def setDraggedRow(value: Any): Self = StObject.set(x, "draggedRow", value.asInstanceOf[js.Any])
       
       inline def setDraggedRowIndex(value: Double): Self = StObject.set(x, "draggedRowIndex", value.asInstanceOf[js.Any])
       
@@ -4479,11 +4479,11 @@ object TreeGrid {
       
       inline def setDropPositionUndefined: Self = StObject.set(x, "dropPosition", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      inline def setTargetRow(value: js.Any): Self = StObject.set(x, "targetRow", value.asInstanceOf[js.Any])
+      inline def setTargetRow(value: Any): Self = StObject.set(x, "targetRow", value.asInstanceOf[js.Any])
       
       inline def setTargetRowIndex(value: Double): Self = StObject.set(x, "targetRowIndex", value.asInstanceOf[js.Any])
       
@@ -4505,7 +4505,7 @@ object TreeGrid {
     
     /** Returns the data of selected record.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the index of selecting row record.
       */
@@ -4513,7 +4513,7 @@ object TreeGrid {
     
     /** Returns the selecting row element.
       */
-    var targetRow: js.UndefOr[js.Any] = js.undefined
+    var targetRow: js.UndefOr[Any] = js.undefined
     
     /** Returns the event type.
       */
@@ -4532,7 +4532,7 @@ object TreeGrid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -4540,7 +4540,7 @@ object TreeGrid {
       
       inline def setRecordIndexUndefined: Self = StObject.set(x, "recordIndex", js.undefined)
       
-      inline def setTargetRow(value: js.Any): Self = StObject.set(x, "targetRow", value.asInstanceOf[js.Any])
+      inline def setTargetRow(value: Any): Self = StObject.set(x, "targetRow", value.asInstanceOf[js.Any])
       
       inline def setTargetRowUndefined: Self = StObject.set(x, "targetRow", js.undefined)
       
@@ -4558,11 +4558,11 @@ object TreeGrid {
     
     /** Returns the data selecting record.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /** Returns the previous selected data.
       */
-    var previousData: js.UndefOr[js.Any] = js.undefined
+    var previousData: js.UndefOr[Any] = js.undefined
     
     /** Returns the previous selected row index.
       */
@@ -4570,7 +4570,7 @@ object TreeGrid {
     
     /** Returns the previous selected row element.
       */
-    var previousTreeGridRow: js.UndefOr[js.Any] = js.undefined
+    var previousTreeGridRow: js.UndefOr[Any] = js.undefined
     
     /** Returns the index of selecting row record.
       */
@@ -4578,7 +4578,7 @@ object TreeGrid {
     
     /** Returns the selecting row element.
       */
-    var targetRow: js.UndefOr[js.Any] = js.undefined
+    var targetRow: js.UndefOr[Any] = js.undefined
   }
   object RowSelectingEventArgs {
     
@@ -4593,11 +4593,11 @@ object TreeGrid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      inline def setPreviousData(value: js.Any): Self = StObject.set(x, "previousData", value.asInstanceOf[js.Any])
+      inline def setPreviousData(value: Any): Self = StObject.set(x, "previousData", value.asInstanceOf[js.Any])
       
       inline def setPreviousDataUndefined: Self = StObject.set(x, "previousData", js.undefined)
       
@@ -4605,7 +4605,7 @@ object TreeGrid {
       
       inline def setPreviousIndexUndefined: Self = StObject.set(x, "previousIndex", js.undefined)
       
-      inline def setPreviousTreeGridRow(value: js.Any): Self = StObject.set(x, "previousTreeGridRow", value.asInstanceOf[js.Any])
+      inline def setPreviousTreeGridRow(value: Any): Self = StObject.set(x, "previousTreeGridRow", value.asInstanceOf[js.Any])
       
       inline def setPreviousTreeGridRowUndefined: Self = StObject.set(x, "previousTreeGridRow", js.undefined)
       
@@ -4613,7 +4613,7 @@ object TreeGrid {
       
       inline def setRecordIndexUndefined: Self = StObject.set(x, "recordIndex", js.undefined)
       
-      inline def setTargetRow(value: js.Any): Self = StObject.set(x, "targetRow", value.asInstanceOf[js.Any])
+      inline def setTargetRow(value: Any): Self = StObject.set(x, "targetRow", value.asInstanceOf[js.Any])
       
       inline def setTargetRowUndefined: Self = StObject.set(x, "targetRow", js.undefined)
     }
@@ -4624,7 +4624,7 @@ object TreeGrid {
     /** Default Value
       * @Default {[]}
       */
-    var fields: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var fields: js.UndefOr[js.Array[Any]] = js.undefined
     
     /** Default Value
       * @Default {true}
@@ -4654,11 +4654,11 @@ object TreeGrid {
     
     extension [Self <: SearchSettings](x: Self) {
       
-      inline def setFields(value: js.Array[js.Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: js.Array[Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
       inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
-      inline def setFieldsVarargs(value: js.Any*): Self = StObject.set(x, "fields", js.Array(value :_*))
+      inline def setFieldsVarargs(value: Any*): Self = StObject.set(x, "fields", js.Array(value*))
       
       inline def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
       
@@ -4807,7 +4807,7 @@ object TreeGrid {
       
       inline def setSortedColumnsUndefined: Self = StObject.set(x, "sortedColumns", js.undefined)
       
-      inline def setSortedColumnsVarargs(value: SortSettingsSortedColumn*): Self = StObject.set(x, "sortedColumns", js.Array(value :_*))
+      inline def setSortedColumnsVarargs(value: SortSettingsSortedColumn*): Self = StObject.set(x, "sortedColumns", js.Array(value*))
     }
   }
   
@@ -4860,7 +4860,7 @@ object TreeGrid {
       
       inline def setStackedHeaderColumnsUndefined: Self = StObject.set(x, "stackedHeaderColumns", js.undefined)
       
-      inline def setStackedHeaderColumnsVarargs(value: StackedHeaderRowsStackedHeaderColumn*): Self = StObject.set(x, "stackedHeaderColumns", js.Array(value :_*))
+      inline def setStackedHeaderColumnsVarargs(value: StackedHeaderRowsStackedHeaderColumn*): Self = StObject.set(x, "stackedHeaderColumns", js.Array(value*))
     }
   }
   
@@ -4869,7 +4869,7 @@ object TreeGrid {
     /** Gets or sets a value that indicates the header text for the particular stacked header column.
       * @Default {null}
       */
-    var column: js.UndefOr[js.Any] = js.undefined
+    var column: js.UndefOr[Any] = js.undefined
     
     /** Gets or sets a value that indicates class to the corresponding stackedHeaderColumn.
       * @Default {null}
@@ -4900,7 +4900,7 @@ object TreeGrid {
     
     extension [Self <: StackedHeaderRowsStackedHeaderColumn](x: Self) {
       
-      inline def setColumn(value: js.Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
       inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
       
@@ -4945,7 +4945,7 @@ object TreeGrid {
       
       inline def setSummaryColumnsUndefined: Self = StObject.set(x, "summaryColumns", js.undefined)
       
-      inline def setSummaryColumnsVarargs(value: SummaryRowsSummaryColumn*): Self = StObject.set(x, "summaryColumns", js.Array(value :_*))
+      inline def setSummaryColumnsVarargs(value: SummaryRowsSummaryColumn*): Self = StObject.set(x, "summaryColumns", js.Array(value*))
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
@@ -5030,7 +5030,7 @@ object TreeGrid {
     
     /** Returns the current item.
       */
-    var currentTarget: js.UndefOr[js.Any] = js.undefined
+    var currentTarget: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the toolbar item on which mouse click has been performed
       */
@@ -5038,7 +5038,7 @@ object TreeGrid {
     
     /** Returns the TreeGrid model.
       */
-    var model: js.UndefOr[js.Any] = js.undefined
+    var model: js.UndefOr[Any] = js.undefined
     
     /** Returns the name of the event.
       */
@@ -5057,7 +5057,7 @@ object TreeGrid {
       
       inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      inline def setCurrentTarget(value: js.Any): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+      inline def setCurrentTarget(value: Any): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
       inline def setCurrentTargetUndefined: Self = StObject.set(x, "currentTarget", js.undefined)
       
@@ -5065,7 +5065,7 @@ object TreeGrid {
       
       inline def setItemNameUndefined: Self = StObject.set(x, "itemName", js.undefined)
       
-      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
@@ -5104,7 +5104,7 @@ object TreeGrid {
       
       inline def setCustomToolbarItemsUndefined: Self = StObject.set(x, "customToolbarItems", js.undefined)
       
-      inline def setCustomToolbarItemsVarargs(value: ToolbarSettingsCustomToolbarItem*): Self = StObject.set(x, "customToolbarItems", js.Array(value :_*))
+      inline def setCustomToolbarItemsVarargs(value: ToolbarSettingsCustomToolbarItem*): Self = StObject.set(x, "customToolbarItems", js.Array(value*))
       
       inline def setShowToolbar(value: Boolean): Self = StObject.set(x, "showToolbar", value.asInstanceOf[js.Any])
       
@@ -5114,7 +5114,7 @@ object TreeGrid {
       
       inline def setToolbarItemsUndefined: Self = StObject.set(x, "toolbarItems", js.undefined)
       
-      inline def setToolbarItemsVarargs(value: (ToolbarItems | String)*): Self = StObject.set(x, "toolbarItems", js.Array(value :_*))
+      inline def setToolbarItemsVarargs(value: (ToolbarItems | String)*): Self = StObject.set(x, "toolbarItems", js.Array(value*))
     }
   }
   

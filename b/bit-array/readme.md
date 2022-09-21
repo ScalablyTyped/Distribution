@@ -10,10 +10,10 @@ JavaScript implementation of bit arrays
 | ------------------ | :-------------: |
 | Full name          | bit-array |
 | Keywords           | bit array, bit-array, bit vector, bitset, bitmap, bitstring |
-| # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 11737 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 2083.6666666666665 |
+| # stars            | 76.0 |
 
 ## Links
 - [Homepage](https://github.com/bramstein/bit-array#readme)

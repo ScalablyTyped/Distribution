@@ -18,20 +18,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object getIdentityPoolRolesCommandMod {
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/commands/GetIdentityPoolRolesCommand", "GetIdentityPoolRolesCommand")
+  @JSImport("@aws-sdk/client-cognito-identity/dist-types/commands/GetIdentityPoolRolesCommand", "GetIdentityPoolRolesCommand")
   @js.native
-  class GetIdentityPoolRolesCommand protected ()
-    extends Command[
+  open class GetIdentityPoolRolesCommand protected () extends Command[
           GetIdentityPoolRolesCommandInput, 
           GetIdentityPoolRolesCommandOutput, 
           CognitoIdentityClientResolvedConfig, 
-          js.Any, 
-          js.Any
+          Any, 
+          Any
         ] {
     def this(input: GetIdentityPoolRolesCommandInput) = this()
     
-    /* private */ var deserialize: js.Any = js.native
+    /* private */ var deserialize: Any = js.native
     
+    /**
+      * @internal
+      */
     def resolveMiddleware(
       clientStack: MiddlewareStack[ServiceInputTypes, ServiceOutputTypes],
       configuration: CognitoIdentityClientResolvedConfig
@@ -42,7 +44,7 @@ object getIdentityPoolRolesCommandMod {
       options: HttpHandlerOptions
     ): Handler[GetIdentityPoolRolesCommandInput, GetIdentityPoolRolesCommandOutput] = js.native
     
-    /* private */ var serialize: js.Any = js.native
+    /* private */ var serialize: Any = js.native
   }
   
   type GetIdentityPoolRolesCommandInput = GetIdentityPoolRolesInput

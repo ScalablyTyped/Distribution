@@ -68,7 +68,7 @@ object ValueDescription {
   inline def ValueDescriptionSequence(
     extAttrs: js.Array[ExtendedAttribute],
     parent: Argument | ConstantMemberType | FieldType,
-    value: js.Array[js.Any]
+    value: js.Array[Any]
   ): typings.webidl2.mod.ValueDescriptionSequence = {
     val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("sequence")

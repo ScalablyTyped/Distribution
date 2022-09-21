@@ -8,11 +8,11 @@ trait Args extends StObject {
   
   var argsDict: Dict
   
-  var argsList: js.Array[js.Any]
+  var argsList: js.Array[Any]
 }
 object Args {
   
-  inline def apply(argsDict: Dict, argsList: js.Array[js.Any]): Args = {
+  inline def apply(argsDict: Dict, argsList: js.Array[Any]): Args = {
     val __obj = js.Dynamic.literal(argsDict = argsDict.asInstanceOf[js.Any], argsList = argsList.asInstanceOf[js.Any])
     __obj.asInstanceOf[Args]
   }
@@ -21,8 +21,8 @@ object Args {
     
     inline def setArgsDict(value: Dict): Self = StObject.set(x, "argsDict", value.asInstanceOf[js.Any])
     
-    inline def setArgsList(value: js.Array[js.Any]): Self = StObject.set(x, "argsList", value.asInstanceOf[js.Any])
+    inline def setArgsList(value: js.Array[Any]): Self = StObject.set(x, "argsList", value.asInstanceOf[js.Any])
     
-    inline def setArgsListVarargs(value: js.Any*): Self = StObject.set(x, "argsList", js.Array(value :_*))
+    inline def setArgsListVarargs(value: Any*): Self = StObject.set(x, "argsList", js.Array(value*))
   }
 }

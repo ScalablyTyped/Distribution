@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("spine.DebugUtils")
 @js.native
-class DebugUtils ()
+open class DebugUtils ()
   extends StObject
      with typings.phaser.spine.DebugUtils
 object DebugUtils {

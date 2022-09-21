@@ -10,10 +10,10 @@ A Base64 serializer for Slate editors.
 | ------------------ | :-------------: |
 | Full name          | slate-base64-serializer |
 | Keywords           | deserialize, base64, editor, serialize, serializer, slate |
-| # releases         | 96 |
-| # dependents       | 51 |
-| # downloads        | 4181190 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 318525.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/ianstormtaylor/slate#readme)

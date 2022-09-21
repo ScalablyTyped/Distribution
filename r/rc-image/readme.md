@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-image
 
-Typings are for version 4.0.1
+Typings are for version 5.8.0
 
 ## Library description:
 React easy to use image component
@@ -10,10 +10,10 @@ React easy to use image component
 | ------------------ | :-------------: |
 | Full name          | rc-image |
 | Keywords           | react, react-component, react-image, image |
-| # releases         | 37 |
-| # dependents       | 16 |
-| # downloads        | 5008131 |
-| # stars            | 0 |
+| # releases         | 46 |
+| # dependents       | 0.0 |
+| # downloads        | 2812275.3333333335 |
+| # stars            | 131.0 |
 
 ## Links
 - [Homepage](http://github.com/react-component/image)

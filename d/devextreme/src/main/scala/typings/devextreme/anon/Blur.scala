@@ -6,14 +6,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Blur extends StObject {
   
+  /**
+    * Specifies the shadows&apos; blur distance. A larger value increases the blur distance.
+    */
   var blur: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Colors the labels&apos; shadows.
+    */
   var color: js.UndefOr[String] = js.undefined
   
+  /**
+    * Moves the shadows horizontally from their initial positions.
+    */
   var offsetX: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Moves the shadows vertically from their initial positions.
+    */
   var offsetY: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the shadows&apos; transparency.
+    */
   var opacity: js.UndefOr[Double] = js.undefined
 }
 object Blur {

@@ -34,5 +34,5 @@ trait UnparsedSource
   
   val texts: js.Array[UnparsedSourceText] = js.native
   
-  var typeReferenceDirectives: js.UndefOr[js.Array[java.lang.String]] = js.native
+  var typeReferenceDirectives: js.UndefOr[js.Array[FileReference]] = js.native
 }

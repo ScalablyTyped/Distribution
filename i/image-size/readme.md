@@ -1,7 +1,7 @@
 
 # Scala.js typings for image-size
 
-Typings are for version 0.9.3
+Typings are for version 1.0.2
 
 ## Library description:
 get dimensions of any image file
@@ -9,11 +9,11 @@ get dimensions of any image file
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | image-size |
-| Keywords           | image, size, dimensions, resolution, width, height, png, jpeg, bmp, gif, psd, tiff, webp, svg, icns, ico, cur |
-| # releases         | 10 |
-| # dependents       | 964 |
-| # downloads        | 186910789 |
-| # stars            | 61 |
+| Keywords           | image, size, dimensions, resolution, width, height, png, jpeg, bmp, gif, psd, tga, tiff, webp, svg, icns, ico, cur |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 2.8965151E7 |
+| # stars            | 1632.0 |
 
 ## Links
 - [Homepage](https://github.com/image-size/image-size#readme)

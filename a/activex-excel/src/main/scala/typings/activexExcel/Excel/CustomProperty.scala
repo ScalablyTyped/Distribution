@@ -17,11 +17,11 @@ trait CustomProperty extends StObject {
   
   var Name: String
   
-  val Parent: js.Any
+  val Parent: Any
   
-  var Value: js.Any
+  var Value: Any
   
-  val _Default: js.Any
+  val _Default: Any
 }
 object CustomProperty {
   
@@ -31,9 +31,9 @@ object CustomProperty {
     Delete: () => Unit,
     ExcelDotCustomProperty_typekey: CustomProperty,
     Name: String,
-    Parent: js.Any,
-    Value: js.Any,
-    _Default: js.Any
+    Parent: Any,
+    Value: Any,
+    _Default: Any
   ): CustomProperty = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Delete = js.Any.fromFunction0(Delete), Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any], _Default = _Default.asInstanceOf[js.Any])
     __obj.updateDynamic("Excel.CustomProperty_typekey")(ExcelDotCustomProperty_typekey.asInstanceOf[js.Any])
@@ -52,10 +52,10 @@ object CustomProperty {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    inline def set_Default(value: js.Any): Self = StObject.set(x, "_Default", value.asInstanceOf[js.Any])
+    inline def set_Default(value: Any): Self = StObject.set(x, "_Default", value.asInstanceOf[js.Any])
   }
 }

@@ -6,25 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("massive", "Writable")
 @js.native
-class Writable protected () extends Readable {
+open class Writable protected () extends Readable {
   /** A database table or other writable object */
   def this(spec: WritableSpecification) = this()
   
   /** Delete a record or records. */
-  def destroy(criteria: AnyObject[js.Any]): js.Promise[js.Array[js.Any]] = js.native
-  def destroy(criteria: AnyObject[js.Any], options: ResultProcessingOptions): js.Promise[js.Array[js.Any]] = js.native
+  def destroy(criteria: AnyObject[Any]): js.Promise[js.Array[Any]] = js.native
+  def destroy(criteria: AnyObject[Any], options: ResultProcessingOptions): js.Promise[js.Array[Any]] = js.native
   
   /**
     * Attempts to assemble primary key criteria for a record object representing a row in this table.
     * The criteria must include the full primary key, and must not invoke any operations.
     */
-  def getPkCriteria(record: AnyObject[js.Any]): AnyObject[js.Any] = js.native
+  def getPkCriteria(record: AnyObject[Any]): AnyObject[Any] = js.native
   
-  def insert(data: js.Array[AnyObject[js.Any]]): js.Promise[js.Array[AnyObject[js.Any]]] = js.native
-  def insert(data: js.Array[AnyObject[js.Any]], options: PersistenceInsertOptions & ResultProcessingOptions): js.Promise[js.Array[AnyObject[js.Any]]] = js.native
+  def insert(data: js.Array[AnyObject[Any]]): js.Promise[js.Array[AnyObject[Any]]] = js.native
+  def insert(data: js.Array[AnyObject[Any]], options: PersistenceInsertOptions & ResultProcessingOptions): js.Promise[js.Array[AnyObject[Any]]] = js.native
   /** Insert a record or records into the table. */
-  def insert(data: AnyObject[js.Any]): js.Promise[AnyObject[js.Any]] = js.native
-  def insert(data: AnyObject[js.Any], options: PersistenceInsertOptions & ResultProcessingOptions): js.Promise[AnyObject[js.Any]] = js.native
+  def insert(data: AnyObject[Any]): js.Promise[AnyObject[Any]] = js.native
+  def insert(data: AnyObject[Any], options: PersistenceInsertOptions & ResultProcessingOptions): js.Promise[AnyObject[Any]] = js.native
   
   /**
     * Saves an object.
@@ -33,57 +33,57 @@ class Writable protected () extends Readable {
     * Either way, the newest available version of the record will be returned.
     * This is not a true Postgres upsert! If you need the behavior of ON CONFLICT DO UPDATE, you'll need to use db.query or create an SQL script file.
     */
-  def save(record: AnyObject[js.Any]): js.Promise[AnyObject[js.Any]] = js.native
+  def save(record: AnyObject[Any]): js.Promise[AnyObject[Any]] = js.native
   def save(
-    record: AnyObject[js.Any],
+    record: AnyObject[Any],
     options: PersistenceInsertOptions & PersistenceUpdateDocOptions & ResultProcessingOptions
-  ): js.Promise[AnyObject[js.Any]] = js.native
+  ): js.Promise[AnyObject[Any]] = js.native
   
   /** Save a document to the database. This function will create or replace the entire document body. */
-  def saveDoc(doc: AnyObject[js.Any]): js.Promise[AnyObject[js.Any]] = js.native
+  def saveDoc(doc: AnyObject[Any]): js.Promise[AnyObject[Any]] = js.native
   
-  def update(criteria: Double, changes: AnyObject[js.Any]): js.Promise[AnyObject[js.Any]] = js.native
+  def update(criteria: Double, changes: AnyObject[Any]): js.Promise[AnyObject[Any]] = js.native
   def update(
     criteria: Double,
-    changes: AnyObject[js.Any],
+    changes: AnyObject[Any],
     options: PersistenceUpdateDocOptions & ResultProcessingOptions
-  ): js.Promise[AnyObject[js.Any]] = js.native
-  def update(criteria: AnyObject[js.Any], changes: AnyObject[js.Any]): js.Promise[js.Array[AnyObject[js.Any]]] = js.native
+  ): js.Promise[AnyObject[Any]] = js.native
+  def update(criteria: AnyObject[Any], changes: AnyObject[Any]): js.Promise[js.Array[AnyObject[Any]]] = js.native
   def update(
-    criteria: AnyObject[js.Any],
-    changes: AnyObject[js.Any],
+    criteria: AnyObject[Any],
+    changes: AnyObject[Any],
     options: PersistenceUpdateDocOptions & ResultProcessingOptions
-  ): js.Promise[js.Array[AnyObject[js.Any]]] = js.native
+  ): js.Promise[js.Array[AnyObject[Any]]] = js.native
   /** Update a record. */
-  def update(criteria: UUID, changes: AnyObject[js.Any]): js.Promise[AnyObject[js.Any]] = js.native
+  def update(criteria: UUID, changes: AnyObject[Any]): js.Promise[AnyObject[Any]] = js.native
   def update(
     criteria: UUID,
-    changes: AnyObject[js.Any],
+    changes: AnyObject[Any],
     options: PersistenceUpdateDocOptions & ResultProcessingOptions
-  ): js.Promise[AnyObject[js.Any]] = js.native
+  ): js.Promise[AnyObject[Any]] = js.native
   
-  def updateDoc(criteria: Double, changes: AnyObject[js.Any]): js.Promise[AnyObject[js.Any]] = js.native
+  def updateDoc(criteria: Double, changes: AnyObject[Any]): js.Promise[AnyObject[Any]] = js.native
   def updateDoc(
     criteria: Double,
-    changes: AnyObject[js.Any],
+    changes: AnyObject[Any],
     options: PersistenceUpdateDocOptions & ResultProcessingOptions
-  ): js.Promise[AnyObject[js.Any]] = js.native
-  def updateDoc(criteria: AnyObject[js.Any], changes: AnyObject[js.Any]): js.Promise[AnyObject[js.Any]] = js.native
+  ): js.Promise[AnyObject[Any]] = js.native
+  def updateDoc(criteria: AnyObject[Any], changes: AnyObject[Any]): js.Promise[AnyObject[Any]] = js.native
   def updateDoc(
-    criteria: AnyObject[js.Any],
-    changes: AnyObject[js.Any],
+    criteria: AnyObject[Any],
+    changes: AnyObject[Any],
     options: PersistenceUpdateDocOptions & ResultProcessingOptions
-  ): js.Promise[AnyObject[js.Any]] = js.native
+  ): js.Promise[AnyObject[Any]] = js.native
   /**
     * Update a document, adding new information and changing existing information.
     * This function can be used with any JSON field, not just document tables; however, only document tables can use criteria objects which directly reference document fields.
     * If calling updateDoc with a criteria object for a non-document table, the criteria will be tested against the entire row (as opposed to the document body as it is for document tables).
     * To test elements of the JSON field in a non-document table with a criteria object, use a JSON path string.
     */
-  def updateDoc(criteria: UUID, changes: AnyObject[js.Any]): js.Promise[AnyObject[js.Any]] = js.native
+  def updateDoc(criteria: UUID, changes: AnyObject[Any]): js.Promise[AnyObject[Any]] = js.native
   def updateDoc(
     criteria: UUID,
-    changes: AnyObject[js.Any],
+    changes: AnyObject[Any],
     options: PersistenceUpdateDocOptions & ResultProcessingOptions
-  ): js.Promise[AnyObject[js.Any]] = js.native
+  ): js.Promise[AnyObject[Any]] = js.native
 }

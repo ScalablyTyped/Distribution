@@ -19,7 +19,7 @@ trait ScheduledUpdateGroupAction extends StObject {
   /**
     * The date and time in UTC for the recurring schedule to end. For example, "2019-06-01T00:00:00Z". 
     */
-  var EndTime: js.UndefOr[TimestampType] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The maximum size of the Auto Scaling group.
@@ -49,12 +49,17 @@ trait ScheduledUpdateGroupAction extends StObject {
   /**
     * The date and time in UTC for this action to start. For example, "2019-06-01T00:00:00Z". 
     */
-  var StartTime: js.UndefOr[TimestampType] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * This parameter is no longer used.
+    * This property is no longer used.
     */
-  var Time: js.UndefOr[TimestampType] = js.undefined
+  var Time: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * The time zone for the cron expression.
+    */
+  var TimeZone: js.UndefOr[XmlStringMaxLen255] = js.undefined
 }
 object ScheduledUpdateGroupAction {
   
@@ -73,7 +78,7 @@ object ScheduledUpdateGroupAction {
     
     inline def setDesiredCapacityUndefined: Self = StObject.set(x, "DesiredCapacity", js.undefined)
     
-    inline def setEndTime(value: TimestampType): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
@@ -97,12 +102,16 @@ object ScheduledUpdateGroupAction {
     
     inline def setScheduledActionNameUndefined: Self = StObject.set(x, "ScheduledActionName", js.undefined)
     
-    inline def setStartTime(value: TimestampType): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
-    inline def setTime(value: TimestampType): Self = StObject.set(x, "Time", value.asInstanceOf[js.Any])
+    inline def setTime(value: js.Date): Self = StObject.set(x, "Time", value.asInstanceOf[js.Any])
     
     inline def setTimeUndefined: Self = StObject.set(x, "Time", js.undefined)
+    
+    inline def setTimeZone(value: XmlStringMaxLen255): Self = StObject.set(x, "TimeZone", value.asInstanceOf[js.Any])
+    
+    inline def setTimeZoneUndefined: Self = StObject.set(x, "TimeZone", js.undefined)
   }
 }

@@ -12,12 +12,12 @@ trait CreateNodePoolRequest extends StObject {
   /** Required. The node pool to create. */
   var nodePool: js.UndefOr[NodePool] = js.undefined
   
-  /** The parent (project, location, cluster id) where the node pool will be created. Specified in the format `projects/∗/locations/∗/clusters/ *`. */
+  /** The parent (project, location, cluster name) where the node pool will be created. Specified in the format `projects/ *‍/locations/ *‍/clusters/ *`. */
   var parent: js.UndefOr[String] = js.undefined
   
   /**
-    * Deprecated. The Google Developers Console [project ID or project number](https://developers.google.com/console/help/new/#projectnumber). This field has been deprecated and replaced
-    * by the parent field.
+    * Deprecated. The Google Developers Console [project ID or project number](https://cloud.google.com/resource-manager/docs/creating-managing-projects). This field has been deprecated
+    * and replaced by the parent field.
     */
   var projectId: js.UndefOr[String] = js.undefined
   

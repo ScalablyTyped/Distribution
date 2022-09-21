@@ -9,7 +9,7 @@ object iceymazeMod {
   
   @JSImport("rot-js/lib/map/iceymaze", JSImport.Default)
   @js.native
-  class default protected () extends IceyMaze {
+  open class default protected () extends IceyMaze {
     def this(width: Double, height: Double) = this()
     def this(width: Double, height: Double, regularity: Double) = this()
   }

@@ -10,6 +10,8 @@ trait ChartSeriesItemHighlight extends StObject {
   
   var color: js.UndefOr[String] = js.undefined
   
+  var inactiveOpacity: js.UndefOr[Double] = js.undefined
+  
   var line: js.UndefOr[ChartSeriesItemHighlightLine] = js.undefined
   
   var opacity: js.UndefOr[Double] = js.undefined
@@ -36,6 +38,10 @@ object ChartSeriesItemHighlight {
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setInactiveOpacity(value: Double): Self = StObject.set(x, "inactiveOpacity", value.asInstanceOf[js.Any])
+    
+    inline def setInactiveOpacityUndefined: Self = StObject.set(x, "inactiveOpacity", js.undefined)
     
     inline def setLine(value: ChartSeriesItemHighlightLine): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     

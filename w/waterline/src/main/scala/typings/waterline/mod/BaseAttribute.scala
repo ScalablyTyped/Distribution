@@ -67,7 +67,7 @@ object BaseAttribute {
     
     inline def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
     
-    inline def setEnumVarargs(value: T*): Self = StObject.set(x, "enum", js.Array(value :_*))
+    inline def setEnumVarargs(value: T*): Self = StObject.set(x, "enum", js.Array(value*))
     
     inline def setIndex(value: Boolean): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

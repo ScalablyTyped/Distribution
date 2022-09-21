@@ -6,8 +6,6 @@ import typings.std.Event
 import typings.std.HTMLCanvasElement
 import typings.std.NodeList
 import typings.std.Record
-import typings.vue.vueMod.Vue
-import typings.vue.vueMod.VueConstructor
 import typings.vueCropperjs.anon.Default
 import typings.vueCropperjs.anon.Type
 import typings.vueCropperjs.vueCropperjsStrings.high
@@ -430,16 +428,30 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait VueCropperJsConstructor
-    extends StObject
-       with VueConstructor[Vue] {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VueConstructor * / any */ trait VueCropperJsConstructor extends StObject {
     
-    def data(): Unit = js.native
+    def data(): Unit
     
-    var methods: VueCropperMethods = js.native
+    var methods: VueCropperMethods
     
-    var props: VueCropperProps = js.native
+    var props: VueCropperProps
+  }
+  object VueCropperJsConstructor {
+    
+    inline def apply(data: () => Unit, methods: VueCropperMethods, props: VueCropperProps): VueCropperJsConstructor = {
+      val __obj = js.Dynamic.literal(data = js.Any.fromFunction0(data), methods = methods.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
+      __obj.asInstanceOf[VueCropperJsConstructor]
+    }
+    
+    extension [Self <: VueCropperJsConstructor](x: Self) {
+      
+      inline def setData(value: () => Unit): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
+      
+      inline def setMethods(value: VueCropperMethods): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+      
+      inline def setProps(value: VueCropperProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    }
   }
   
   @js.native
@@ -633,7 +645,7 @@ object mod extends Shortcut {
     
     var checkOrientation: Type
     
-    var containerStyle: Record[String, js.Any]
+    var containerStyle: Record[String, Any]
     
     def crop(): Unit
     
@@ -647,7 +659,7 @@ object mod extends Shortcut {
     
     def cropstart(): Unit
     
-    var data: Record[String, js.Any]
+    var data: Record[String, Any]
     
     var dragMode: String
     
@@ -655,7 +667,7 @@ object mod extends Shortcut {
     
     var highlight: Type
     
-    var imgStyle: Record[String, js.Any]
+    var imgStyle: Record[String, Any]
     
     var initialAspectRatio: Double
     
@@ -714,18 +726,18 @@ object mod extends Shortcut {
       center: Type,
       checkCrossOrigin: Type,
       checkOrientation: Type,
-      containerStyle: Record[String, js.Any],
+      containerStyle: Record[String, Any],
       crop: () => Unit,
       cropBoxMovable: Type,
       cropBoxResizable: Type,
       cropend: () => Unit,
       cropmove: () => Unit,
       cropstart: () => Unit,
-      data: Record[String, js.Any],
+      data: Record[String, Any],
       dragMode: String,
       guides: Type,
       highlight: Type,
-      imgStyle: Record[String, js.Any],
+      imgStyle: Record[String, Any],
       initialAspectRatio: Double,
       minCanvasHeight: Double,
       minCanvasWidth: Double,
@@ -772,7 +784,7 @@ object mod extends Shortcut {
       
       inline def setCheckOrientation(value: Type): Self = StObject.set(x, "checkOrientation", value.asInstanceOf[js.Any])
       
-      inline def setContainerStyle(value: Record[String, js.Any]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
+      inline def setContainerStyle(value: Record[String, Any]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
       
       inline def setCrop(value: () => Unit): Self = StObject.set(x, "crop", js.Any.fromFunction0(value))
       
@@ -786,7 +798,7 @@ object mod extends Shortcut {
       
       inline def setCropstart(value: () => Unit): Self = StObject.set(x, "cropstart", js.Any.fromFunction0(value))
       
-      inline def setData(value: Record[String, js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Record[String, Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDragMode(value: String): Self = StObject.set(x, "dragMode", value.asInstanceOf[js.Any])
       
@@ -794,7 +806,7 @@ object mod extends Shortcut {
       
       inline def setHighlight(value: Type): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
       
-      inline def setImgStyle(value: Record[String, js.Any]): Self = StObject.set(x, "imgStyle", value.asInstanceOf[js.Any])
+      inline def setImgStyle(value: Record[String, Any]): Self = StObject.set(x, "imgStyle", value.asInstanceOf[js.Any])
       
       inline def setInitialAspectRatio(value: Double): Self = StObject.set(x, "initialAspectRatio", value.asInstanceOf[js.Any])
       
@@ -816,7 +828,7 @@ object mod extends Shortcut {
       
       inline def setPreview(value: previewPropType): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
       
-      inline def setPreviewVarargs(value: String*): Self = StObject.set(x, "preview", js.Array(value :_*))
+      inline def setPreviewVarargs(value: String*): Self = StObject.set(x, "preview", js.Array(value*))
       
       inline def setReady(value: () => Unit): Self = StObject.set(x, "ready", js.Any.fromFunction0(value))
       

@@ -23,9 +23,9 @@ object getMetadataKeysMod {
     * ```
     */
   /* was `typeof core.Reflect.getMetadataKeys` */
-  inline def apply(target: Object): Array[js.Any] = ^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any]).asInstanceOf[Array[js.Any]]
-  inline def apply(target: Object, targetKey: java.lang.String): Array[js.Any] = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[Array[js.Any]]
-  inline def apply(target: Object, targetKey: js.Symbol): Array[js.Any] = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[Array[js.Any]]
+  inline def apply(target: Object): Array[Any] = ^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any]).asInstanceOf[Array[Any]]
+  inline def apply(target: Object, targetKey: java.lang.String): Array[Any] = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[Array[Any]]
+  inline def apply(target: Object, targetKey: js.Symbol): Array[Any] = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[Array[Any]]
   
   @JSImport("core-js/library/fn/reflect/es7/get-metadata-keys", JSImport.Namespace)
   @js.native

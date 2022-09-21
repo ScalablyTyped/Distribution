@@ -63,7 +63,7 @@ trait AreaChartBuilder extends StObject {
   
   def setLegendTextStyle(textStyle: TextStyle): AreaChartBuilder = js.native
   
-  def setOption(option: String, value: js.Any): AreaChartBuilder = js.native
+  def setOption(option: String, value: Any): AreaChartBuilder = js.native
   
   def setPointStyle(style: PointStyle): AreaChartBuilder = js.native
   

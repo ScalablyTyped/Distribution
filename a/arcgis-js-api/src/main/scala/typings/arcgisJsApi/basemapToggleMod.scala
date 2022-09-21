@@ -22,7 +22,7 @@ object basemapToggleMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapToggle.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with BasemapToggle {
     def this(properties: BasemapToggleProperties) = this()

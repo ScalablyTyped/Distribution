@@ -1,7 +1,7 @@
 
 # Scala.js typings for pulumi__query
 
-Typings are for version 0.3.0
+Typings are for version v0.6.0
 
 ## Library description:
 An simple, relational SDK for querying TypeScript and JavaScript data structures
@@ -10,15 +10,13 @@ An simple, relational SDK for querying TypeScript and JavaScript data structures
 | ------------------ | :-------------: |
 | Full name          | @pulumi/query |
 | Keywords           | linq, query, rxjs |
-| # releases         | 17 |
-| # dependents       | 3 |
-| # downloads        | 1764756 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 407555.6666666667 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://pulumi.io)
-- [Bugs](https://github.com/pulumi/pulumi-query/issues)
-- [Repository](https://github.com/pulumi/pulumi-query)
 - [Npm](https://www.npmjs.com/package/%40pulumi%2Fquery)
     
 

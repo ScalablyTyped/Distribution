@@ -12,7 +12,7 @@ trait ModifyVpnTunnelOptionsSpecification extends StObject {
   var DPDTimeoutAction: js.UndefOr[String] = js.undefined
   
   /**
-    * The number of seconds after which a DPD timeout occurs. Constraints: A value between 0 and 30. Default: 30 
+    * The number of seconds after which a DPD timeout occurs. Constraints: A value greater than or equal to 30. Default: 30 
     */
   var DPDTimeoutSeconds: js.UndefOr[Integer] = js.undefined
   
@@ -20,6 +20,11 @@ trait ModifyVpnTunnelOptionsSpecification extends StObject {
     * The IKE versions that are permitted for the VPN tunnel. Valid values: ikev1 | ikev2 
     */
   var IKEVersions: js.UndefOr[IKEVersionsRequestList] = js.undefined
+  
+  /**
+    * Options for logging VPN tunnel activity.
+    */
+  var LogOptions: js.UndefOr[VpnTunnelLogOptionsSpecification] = js.undefined
   
   /**
     * One or more Diffie-Hellman group numbers that are permitted for the VPN tunnel for phase 1 IKE negotiations. Valid values: 2 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 
@@ -72,7 +77,7 @@ trait ModifyVpnTunnelOptionsSpecification extends StObject {
   var RekeyFuzzPercentage: js.UndefOr[Integer] = js.undefined
   
   /**
-    * The margin time, in seconds, before the phase 2 lifetime expires, during which the AWS side of the VPN connection performs an IKE rekey. The exact time of the rekey is randomly selected based on the value for RekeyFuzzPercentage. Constraints: A value between 60 and half of Phase2LifetimeSeconds. Default: 540 
+    * The margin time, in seconds, before the phase 2 lifetime expires, during which the Amazon Web Services side of the VPN connection performs an IKE rekey. The exact time of the rekey is randomly selected based on the value for RekeyFuzzPercentage. Constraints: A value between 60 and half of Phase2LifetimeSeconds. Default: 540 
     */
   var RekeyMarginTimeSeconds: js.UndefOr[Integer] = js.undefined
   
@@ -82,7 +87,7 @@ trait ModifyVpnTunnelOptionsSpecification extends StObject {
   var ReplayWindowSize: js.UndefOr[Integer] = js.undefined
   
   /**
-    * The action to take when the establishing the tunnel for the VPN connection. By default, your customer gateway device must initiate the IKE negotiation and bring up the tunnel. Specify start for AWS to initiate the IKE negotiation. Valid Values: add | start  Default: add 
+    * The action to take when the establishing the tunnel for the VPN connection. By default, your customer gateway device must initiate the IKE negotiation and bring up the tunnel. Specify start for Amazon Web Services to initiate the IKE negotiation. Valid Values: add | start  Default: add 
     */
   var StartupAction: js.UndefOr[String] = js.undefined
   
@@ -117,25 +122,29 @@ object ModifyVpnTunnelOptionsSpecification {
     
     inline def setIKEVersionsUndefined: Self = StObject.set(x, "IKEVersions", js.undefined)
     
-    inline def setIKEVersionsVarargs(value: IKEVersionsRequestListValue*): Self = StObject.set(x, "IKEVersions", js.Array(value :_*))
+    inline def setIKEVersionsVarargs(value: IKEVersionsRequestListValue*): Self = StObject.set(x, "IKEVersions", js.Array(value*))
+    
+    inline def setLogOptions(value: VpnTunnelLogOptionsSpecification): Self = StObject.set(x, "LogOptions", value.asInstanceOf[js.Any])
+    
+    inline def setLogOptionsUndefined: Self = StObject.set(x, "LogOptions", js.undefined)
     
     inline def setPhase1DHGroupNumbers(value: Phase1DHGroupNumbersRequestList): Self = StObject.set(x, "Phase1DHGroupNumbers", value.asInstanceOf[js.Any])
     
     inline def setPhase1DHGroupNumbersUndefined: Self = StObject.set(x, "Phase1DHGroupNumbers", js.undefined)
     
-    inline def setPhase1DHGroupNumbersVarargs(value: Phase1DHGroupNumbersRequestListValue*): Self = StObject.set(x, "Phase1DHGroupNumbers", js.Array(value :_*))
+    inline def setPhase1DHGroupNumbersVarargs(value: Phase1DHGroupNumbersRequestListValue*): Self = StObject.set(x, "Phase1DHGroupNumbers", js.Array(value*))
     
     inline def setPhase1EncryptionAlgorithms(value: Phase1EncryptionAlgorithmsRequestList): Self = StObject.set(x, "Phase1EncryptionAlgorithms", value.asInstanceOf[js.Any])
     
     inline def setPhase1EncryptionAlgorithmsUndefined: Self = StObject.set(x, "Phase1EncryptionAlgorithms", js.undefined)
     
-    inline def setPhase1EncryptionAlgorithmsVarargs(value: Phase1EncryptionAlgorithmsRequestListValue*): Self = StObject.set(x, "Phase1EncryptionAlgorithms", js.Array(value :_*))
+    inline def setPhase1EncryptionAlgorithmsVarargs(value: Phase1EncryptionAlgorithmsRequestListValue*): Self = StObject.set(x, "Phase1EncryptionAlgorithms", js.Array(value*))
     
     inline def setPhase1IntegrityAlgorithms(value: Phase1IntegrityAlgorithmsRequestList): Self = StObject.set(x, "Phase1IntegrityAlgorithms", value.asInstanceOf[js.Any])
     
     inline def setPhase1IntegrityAlgorithmsUndefined: Self = StObject.set(x, "Phase1IntegrityAlgorithms", js.undefined)
     
-    inline def setPhase1IntegrityAlgorithmsVarargs(value: Phase1IntegrityAlgorithmsRequestListValue*): Self = StObject.set(x, "Phase1IntegrityAlgorithms", js.Array(value :_*))
+    inline def setPhase1IntegrityAlgorithmsVarargs(value: Phase1IntegrityAlgorithmsRequestListValue*): Self = StObject.set(x, "Phase1IntegrityAlgorithms", js.Array(value*))
     
     inline def setPhase1LifetimeSeconds(value: Integer): Self = StObject.set(x, "Phase1LifetimeSeconds", value.asInstanceOf[js.Any])
     
@@ -145,19 +154,19 @@ object ModifyVpnTunnelOptionsSpecification {
     
     inline def setPhase2DHGroupNumbersUndefined: Self = StObject.set(x, "Phase2DHGroupNumbers", js.undefined)
     
-    inline def setPhase2DHGroupNumbersVarargs(value: Phase2DHGroupNumbersRequestListValue*): Self = StObject.set(x, "Phase2DHGroupNumbers", js.Array(value :_*))
+    inline def setPhase2DHGroupNumbersVarargs(value: Phase2DHGroupNumbersRequestListValue*): Self = StObject.set(x, "Phase2DHGroupNumbers", js.Array(value*))
     
     inline def setPhase2EncryptionAlgorithms(value: Phase2EncryptionAlgorithmsRequestList): Self = StObject.set(x, "Phase2EncryptionAlgorithms", value.asInstanceOf[js.Any])
     
     inline def setPhase2EncryptionAlgorithmsUndefined: Self = StObject.set(x, "Phase2EncryptionAlgorithms", js.undefined)
     
-    inline def setPhase2EncryptionAlgorithmsVarargs(value: Phase2EncryptionAlgorithmsRequestListValue*): Self = StObject.set(x, "Phase2EncryptionAlgorithms", js.Array(value :_*))
+    inline def setPhase2EncryptionAlgorithmsVarargs(value: Phase2EncryptionAlgorithmsRequestListValue*): Self = StObject.set(x, "Phase2EncryptionAlgorithms", js.Array(value*))
     
     inline def setPhase2IntegrityAlgorithms(value: Phase2IntegrityAlgorithmsRequestList): Self = StObject.set(x, "Phase2IntegrityAlgorithms", value.asInstanceOf[js.Any])
     
     inline def setPhase2IntegrityAlgorithmsUndefined: Self = StObject.set(x, "Phase2IntegrityAlgorithms", js.undefined)
     
-    inline def setPhase2IntegrityAlgorithmsVarargs(value: Phase2IntegrityAlgorithmsRequestListValue*): Self = StObject.set(x, "Phase2IntegrityAlgorithms", js.Array(value :_*))
+    inline def setPhase2IntegrityAlgorithmsVarargs(value: Phase2IntegrityAlgorithmsRequestListValue*): Self = StObject.set(x, "Phase2IntegrityAlgorithms", js.Array(value*))
     
     inline def setPhase2LifetimeSeconds(value: Integer): Self = StObject.set(x, "Phase2LifetimeSeconds", value.asInstanceOf[js.Any])
     

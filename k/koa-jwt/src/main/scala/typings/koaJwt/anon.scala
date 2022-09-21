@@ -1,7 +1,6 @@
 package typings.koaJwt
 
 import typings.koa.mod.Context
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +15,7 @@ object anon {
     
     var method: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var path: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.undefined
+    var path: js.UndefOr[String | js.RegExp | (js.Array[String | js.RegExp])] = js.undefined
   }
   object Custom {
     
@@ -35,19 +34,19 @@ object anon {
       
       inline def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
       
-      inline def setExtVarargs(value: String*): Self = StObject.set(x, "ext", js.Array(value :_*))
+      inline def setExtVarargs(value: String*): Self = StObject.set(x, "ext", js.Array(value*))
       
       inline def setMethod(value: String | js.Array[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
       inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      inline def setMethodVarargs(value: String*): Self = StObject.set(x, "method", js.Array(value :_*))
+      inline def setMethodVarargs(value: String*): Self = StObject.set(x, "method", js.Array(value*))
       
-      inline def setPath(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String | js.RegExp | (js.Array[String | js.RegExp])): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      inline def setPathVarargs(value: (String | RegExp)*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "path", js.Array(value*))
     }
   }
 }

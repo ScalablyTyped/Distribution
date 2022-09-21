@@ -5,22 +5,22 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type ChartDataBoundEvent = typings.kendoUi.kendo.dataviz.ui.ChartEvent
+type ChartDataBoundEvent = ChartEvent
 
-type ChartPlotAreaLeaveEvent = typings.kendoUi.kendo.dataviz.ui.ChartEvent
+type ChartPlotAreaLeaveEvent = ChartEvent
 
-type ChartRenderEvent = typings.kendoUi.kendo.dataviz.ui.ChartEvent
+type ChartRenderEvent = ChartEvent
 
-type DiagramDataBoundEvent = typings.kendoUi.kendo.dataviz.ui.DiagramEvent
+type DiagramDataBoundEvent = DiagramEvent
 
-type MapBeforeResetEvent = typings.kendoUi.kendo.dataviz.ui.MapEvent
+type MapBeforeResetEvent = MapEvent
 
-type MapResetEvent = typings.kendoUi.kendo.dataviz.ui.MapEvent
+type MapResetEvent = MapEvent
 
-type SparklinePlotAreaLeaveEvent = typings.kendoUi.kendo.dataviz.ui.SparklineEvent
+type SparklinePlotAreaLeaveEvent = SparklineEvent
 
-type StockChartPlotAreaLeaveEvent = typings.kendoUi.kendo.dataviz.ui.StockChartEvent
+type StockChartPlotAreaLeaveEvent = StockChartEvent
 
-type StockChartRenderEvent = typings.kendoUi.kendo.dataviz.ui.StockChartEvent
+type StockChartRenderEvent = StockChartEvent
 
-type TreeMapDataBoundEvent = typings.kendoUi.kendo.dataviz.ui.TreeMapEvent
+type TreeMapDataBoundEvent = TreeMapEvent

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("postman-collection", "Item")
 @js.native
-class Item () extends Property[ItemDefinition] {
+open class Item () extends Property[ItemDefinition] {
   def this(definition: ItemDefinition) = this()
   
   def authorizeRequestUsing(`type`: String): Unit = js.native
@@ -32,5 +32,5 @@ object Item {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isItem(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isItem")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isItem(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isItem")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

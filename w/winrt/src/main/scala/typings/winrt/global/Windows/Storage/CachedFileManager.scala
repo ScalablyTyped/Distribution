@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Windows.Storage.CachedFileManager")
 @js.native
-class CachedFileManager ()
+open class CachedFileManager ()
   extends StObject
      with typings.winrt.Windows.Storage.CachedFileManager
 /* static members */

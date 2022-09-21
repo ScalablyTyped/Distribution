@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //#region 画布 https://docs.alipay.com/mini/api/ui-canvas
 trait ToTempFilePathOptions
   extends StObject
-     with BaseOptions[js.Any, js.Any] {
+     with BaseOptions[Any, Any] {
   
   // 输出的图片宽度，默认为 width
   var destHeight: Double

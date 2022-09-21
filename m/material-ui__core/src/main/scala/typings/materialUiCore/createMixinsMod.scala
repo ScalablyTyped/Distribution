@@ -1,8 +1,8 @@
 package typings.materialUiCore
 
 import typings.materialUiCore.createBreakpointsMod.Breakpoints
-import typings.materialUiCore.spacingMod.Spacing
-import typings.materialUiCore.withStylesMod.CSSProperties
+import typings.materialUiCore.createSpacingMod.Spacing
+import typings.materialUiStyles.withStylesWithStylesMod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

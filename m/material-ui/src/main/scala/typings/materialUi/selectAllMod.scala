@@ -10,10 +10,10 @@ object selectAllMod {
   
   @JSImport("material-ui/svg-icons/content/select-all", JSImport.Default)
   @js.native
-  class default () extends ContentSelectAll
+  open class default () extends ContentSelectAll
   
   @JSImport("material-ui/svg-icons/content/select-all", "ContentSelectAll")
   @js.native
-  class ContentSelectAll ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ContentSelectAll ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

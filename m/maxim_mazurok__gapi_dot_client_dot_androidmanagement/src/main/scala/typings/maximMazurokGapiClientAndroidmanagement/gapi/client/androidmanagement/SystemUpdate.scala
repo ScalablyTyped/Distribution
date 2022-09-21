@@ -45,7 +45,7 @@ object SystemUpdate {
     
     inline def setFreezePeriodsUndefined: Self = StObject.set(x, "freezePeriods", js.undefined)
     
-    inline def setFreezePeriodsVarargs(value: FreezePeriod*): Self = StObject.set(x, "freezePeriods", js.Array(value :_*))
+    inline def setFreezePeriodsVarargs(value: FreezePeriod*): Self = StObject.set(x, "freezePeriods", js.Array(value*))
     
     inline def setStartMinutes(value: Double): Self = StObject.set(x, "startMinutes", value.asInstanceOf[js.Any])
     

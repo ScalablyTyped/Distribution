@@ -10,10 +10,10 @@ An easy way to create, parse, and validate forms
 | ------------------ | :-------------: |
 | Full name          | forms |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 21 |
-| # downloads        | 59155 |
-| # stars            | 19 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5197.0 |
+| # stars            | 1007.0 |
 
 ## Links
 - [Homepage](https://github.com/caolan/forms#readme)

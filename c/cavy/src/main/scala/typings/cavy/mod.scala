@@ -6,7 +6,8 @@ import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.FunctionComponent
-import typings.react.mod.ReactNode
+import typings.react.mod.ReactElement
+import typings.react.mod.RefCallback
 import typings.react.mod.RefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,11 +21,11 @@ object mod {
   
   @JSImport("cavy", "TestHookStore")
   @js.native
-  class TestHookStore () extends StObject
+  open class TestHookStore () extends StObject
   
   @JSImport("cavy", "TestScope")
   @js.native
-  class TestScope () extends StObject {
+  open class TestScope () extends StObject {
     
     def beforeEach(fn: js.Function0[Unit]): Unit = js.native
     
@@ -38,7 +39,7 @@ object mod {
     
     def fillIn(identifier: String, str: String): js.Promise[Unit] = js.native
     
-    def findComponent(identifier: String): js.Promise[Component[js.Object, js.Object, js.Any]] = js.native
+    def findComponent(identifier: String): js.Promise[Component[js.Object, js.Object, Any]] = js.native
     
     def focus(identifier: String): js.Promise[Unit] = js.native
     
@@ -53,14 +54,14 @@ object mod {
   
   @JSImport("cavy", "Tester")
   @js.native
-  class Tester protected ()
-    extends Component[TesterProps, js.Object, js.Any] {
+  open class Tester protected ()
+    extends Component[TesterProps, js.Object, Any] {
     def this(props: TesterProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: TesterProps, context: js.Any) = this()
+    def this(props: TesterProps, context: Any) = this()
     
     def clearAsync(): js.Promise[Unit] = js.native
     
@@ -71,10 +72,8 @@ object mod {
   
   inline def useCavy(): TestHookGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("useCavy")().asInstanceOf[TestHookGenerator]
   
-  inline def wrap[P /* <: js.Object */](WrappedComponent: js.Object): ComponentClass[P, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[P, ComponentState]]
+  inline def wrap[P /* <: js.Object */](WrappedComponent: ComponentClass[P, ComponentState]): ComponentClass[P, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[P, ComponentState]]
   inline def wrap[P /* <: js.Object */](WrappedComponent: FunctionComponent[P]): ComponentClass[P, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[P, ComponentState]]
-  
-  type RefCallback = js.Function1[/* element */ ReactNode | Null, Unit]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - scala.Any because Already inherited
@@ -85,9 +84,9 @@ object mod {
   - typings.cavy.mod.TestHookGeneratorWithRefObject because Already inherited */ @js.native
   trait TestHookGenerator extends TestHookGeneratorWithRefCallback
   
-  type TestHookGeneratorWithRefCallback = js.Function2[/* label */ String, /* ref */ js.UndefOr[RefCallback], RefCallback]
+  type TestHookGeneratorWithRefCallback = js.Function2[/* label */ String, /* ref */ js.UndefOr[RefCallback[Any]], RefCallback[Any]]
   
-  type TestHookGeneratorWithRefObject = js.Function2[/* label */ String, /* ref */ js.UndefOr[RefObject[js.Any]], RefObject[js.Any]]
+  type TestHookGeneratorWithRefObject = js.Function2[/* label */ String, /* ref */ js.UndefOr[RefObject[Any]], RefObject[Any]]
   
   trait TestReport extends StObject {
     
@@ -112,7 +111,7 @@ object mod {
       
       inline def setResults(value: js.Array[TestResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
-      inline def setResultsVarargs(value: TestResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+      inline def setResultsVarargs(value: TestResult*): Self = StObject.set(x, "results", js.Array(value*))
     }
   }
   
@@ -139,6 +138,8 @@ object mod {
   
   trait TesterProps extends StObject {
     
+    var children: ReactElement
+    
     var clearAsyncStorage: js.UndefOr[Boolean] = js.undefined
     
     var reporter: js.UndefOr[js.Function1[/* report */ TestReport, Unit]] = js.undefined
@@ -156,12 +157,18 @@ object mod {
   }
   object TesterProps {
     
-    inline def apply(specs: js.Array[js.Function1[/* spec */ TestScope, Unit]], store: TestHookStore): TesterProps = {
-      val __obj = js.Dynamic.literal(specs = specs.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any])
+    inline def apply(
+      children: ReactElement,
+      specs: js.Array[js.Function1[/* spec */ TestScope, Unit]],
+      store: TestHookStore
+    ): TesterProps = {
+      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], specs = specs.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any])
       __obj.asInstanceOf[TesterProps]
     }
     
     extension [Self <: TesterProps](x: Self) {
+      
+      inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setClearAsyncStorage(value: Boolean): Self = StObject.set(x, "clearAsyncStorage", value.asInstanceOf[js.Any])
       
@@ -177,7 +184,7 @@ object mod {
       
       inline def setSpecs(value: js.Array[js.Function1[/* spec */ TestScope, Unit]]): Self = StObject.set(x, "specs", value.asInstanceOf[js.Any])
       
-      inline def setSpecsVarargs(value: (js.Function1[/* spec */ TestScope, Unit])*): Self = StObject.set(x, "specs", js.Array(value :_*))
+      inline def setSpecsVarargs(value: (js.Function1[/* spec */ TestScope, Unit])*): Self = StObject.set(x, "specs", js.Array(value*))
       
       inline def setStartDelay(value: Double): Self = StObject.set(x, "startDelay", value.asInstanceOf[js.Any])
       

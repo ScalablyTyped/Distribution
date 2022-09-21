@@ -8,7 +8,7 @@ import typings.maximMazurokGapiClientSpanner.anon.CallbackFields
 import typings.maximMazurokGapiClientSpanner.anon.FieldsKey
 import typings.maximMazurokGapiClientSpanner.anon.Filter
 import typings.maximMazurokGapiClientSpanner.anon.KeyOauthtoken
-import typings.maximMazurokGapiClientSpanner.anon.QuotaUser
+import typings.maximMazurokGapiClientSpanner.anon.OauthtokenPrettyPrint
 import typings.maximMazurokGapiClientSpanner.anon.Resource
 import typings.maximMazurokGapiClientSpanner.anon.UploadType
 import typings.maximMazurokGapiClientSpanner.anon.Uploadprotocol
@@ -22,7 +22,7 @@ trait SessionsResource extends StObject {
   
   /** Creates multiple new sessions. This API can be used to initialize a session cache on the clients. See https://goo.gl/TgSFN2 for best practices on session cache management. */
   def batchCreate(request: typings.maximMazurokGapiClientSpanner.anon.Database): Request[BatchCreateSessionsResponse] = js.native
-  def batchCreate(request: QuotaUser, body: BatchCreateSessionsRequest): Request[BatchCreateSessionsResponse] = js.native
+  def batchCreate(request: UploadType, body: BatchCreateSessionsRequest): Request[BatchCreateSessionsResponse] = js.native
   
   /** Begins a new transaction. This step can often be skipped: Read, ExecuteSql and Commit can begin a new transaction as a side-effect. */
   def beginTransaction(request: Resource): Request[Transaction] = js.native
@@ -36,9 +36,9 @@ trait SessionsResource extends StObject {
     * hour networking failure. At that point, Cloud Spanner has lost track of the transaction outcome and we recommend that you perform another read from the database to see the state of
     * things as they are now.
     */
-  def commit(request: UploadType): Request[CommitResponse] = js.native
+  def commit(request: Uploadprotocol): Request[CommitResponse] = js.native
   
-  def create(request: QuotaUser, body: CreateSessionRequest): Request[Session] = js.native
+  def create(request: UploadType, body: CreateSessionRequest): Request[Session] = js.native
   /**
     * Creates a new session. A session can be used to perform transactions that read and/or modify data in a Cloud Spanner database. Sessions are meant to be reused for many consecutive
     * transactions. Sessions can only execute one transaction at a time. To execute multiple concurrent read-write/write-only transactions, create multiple sessions. Note that standalone
@@ -46,33 +46,33 @@ trait SessionsResource extends StObject {
     * unneeded sessions. Aside from explicit deletes, Cloud Spanner may delete sessions for which no operations are sent for more than an hour. If a session is deleted, requests to it
     * return `NOT_FOUND`. Idle sessions can be kept alive by sending a trivial SQL query periodically, e.g., `"SELECT 1"`.
     */
-  def create(request: Uploadprotocol): Request[Session] = js.native
+  def create(request: Xgafv): Request[Session] = js.native
   
   /** Ends a session, releasing server resources associated with it. This will asynchronously trigger cancellation of any operations that are running with this session. */
   def delete(): Request[js.Object] = js.native
   def delete(request: Accesstoken): Request[js.Object] = js.native
   
-  def executeBatchDml(request: typings.maximMazurokGapiClientSpanner.anon.Session, body: ExecuteBatchDmlRequest): Request[ExecuteBatchDmlResponse] = js.native
   /**
     * Executes a batch of SQL DML statements. This method allows many statements to be run with lower latency than submitting them sequentially with ExecuteSql. Statements are executed in
     * sequential order. A request can succeed even if a statement fails. The ExecuteBatchDmlResponse.status field in the response provides information about the statement that failed.
     * Clients must inspect this field to determine whether an error occurred. Execution stops after the first failed statement; the remaining statements are not executed.
     */
-  def executeBatchDml(request: Xgafv): Request[ExecuteBatchDmlResponse] = js.native
+  def executeBatchDml(request: AccesstokenAlt): Request[ExecuteBatchDmlResponse] = js.native
+  def executeBatchDml(request: typings.maximMazurokGapiClientSpanner.anon.Session, body: ExecuteBatchDmlRequest): Request[ExecuteBatchDmlResponse] = js.native
   
   /**
     * Executes an SQL statement, returning all results in a single reply. This method cannot be used to return a result set larger than 10 MiB; if the query yields more data than that,
     * the query fails with a `FAILED_PRECONDITION` error. Operations inside read-write transactions might return `ABORTED`. If this occurs, the application should restart the transaction
     * from the beginning. See Transaction for more details. Larger result sets can be fetched in streaming fashion by calling ExecuteStreamingSql instead.
     */
-  def executeSql(request: AccesstokenAlt): Request[ResultSet] = js.native
+  def executeSql(request: AltCallback): Request[ResultSet] = js.native
   def executeSql(request: typings.maximMazurokGapiClientSpanner.anon.Session, body: ExecuteSqlRequest): Request[ResultSet] = js.native
   
   /**
     * Like ExecuteSql, except returns the result set as a stream. Unlike ExecuteSql, there is no limit on the size of the returned result set. However, no individual row in the result set
     * can exceed 100 MiB, and no column value can exceed 10 MiB.
     */
-  def executeStreamingSql(request: AccesstokenAlt): Request[PartialResultSet] = js.native
+  def executeStreamingSql(request: AltCallback): Request[PartialResultSet] = js.native
   def executeStreamingSql(request: typings.maximMazurokGapiClientSpanner.anon.Session, body: ExecuteSqlRequest): Request[PartialResultSet] = js.native
   
   /** Gets a session. Returns `NOT_FOUND` if the session does not exist. This is mainly useful for determining whether a session is still alive. */
@@ -89,7 +89,7 @@ trait SessionsResource extends StObject {
     * ExecuteSqlRequests that use the partition tokens. Partition tokens become invalid when the session used to create them is deleted, is idle for too long, begins a new transaction, or
     * becomes too old. When any of these happen, it is not possible to resume the query, and the whole operation must be restarted from the beginning.
     */
-  def partitionQuery(request: AltCallback): Request[PartitionResponse] = js.native
+  def partitionQuery(request: CallbackFields): Request[PartitionResponse] = js.native
   def partitionQuery(request: typings.maximMazurokGapiClientSpanner.anon.Session, body: PartitionQueryRequest): Request[PartitionResponse] = js.native
   
   /**
@@ -99,7 +99,7 @@ trait SessionsResource extends StObject {
     * partition_token. Partition tokens become invalid when the session used to create them is deleted, is idle for too long, begins a new transaction, or becomes too old. When any of
     * these happen, it is not possible to resume the read, and the whole operation must be restarted from the beginning.
     */
-  def partitionRead(request: CallbackFields): Request[PartitionResponse] = js.native
+  def partitionRead(request: FieldsKey): Request[PartitionResponse] = js.native
   def partitionRead(request: typings.maximMazurokGapiClientSpanner.anon.Session, body: PartitionReadRequest): Request[PartitionResponse] = js.native
   
   /**
@@ -108,7 +108,7 @@ trait SessionsResource extends StObject {
     * application should restart the transaction from the beginning. See Transaction for more details. Larger result sets can be yielded in streaming fashion by calling StreamingRead
     * instead.
     */
-  def read(request: FieldsKey): Request[ResultSet] = js.native
+  def read(request: KeyOauthtoken): Request[ResultSet] = js.native
   def read(request: typings.maximMazurokGapiClientSpanner.anon.Session, body: ReadRequest): Request[ResultSet] = js.native
   
   /**
@@ -116,13 +116,13 @@ trait SessionsResource extends StObject {
     * decides not to commit. `Rollback` returns `OK` if it successfully aborts the transaction, the transaction was already aborted, or the transaction is not found. `Rollback` never
     * returns `ABORTED`.
     */
-  def rollback(request: KeyOauthtoken): Request[js.Object] = js.native
+  def rollback(request: OauthtokenPrettyPrint): Request[js.Object] = js.native
   def rollback(request: typings.maximMazurokGapiClientSpanner.anon.Session, body: RollbackRequest): Request[js.Object] = js.native
   
   /**
     * Like Read, except returns the result set as a stream. Unlike Read, there is no limit on the size of the returned result set. However, no individual row in the result set can exceed
     * 100 MiB, and no column value can exceed 10 MiB.
     */
-  def streamingRead(request: FieldsKey): Request[PartialResultSet] = js.native
+  def streamingRead(request: KeyOauthtoken): Request[PartialResultSet] = js.native
   def streamingRead(request: typings.maximMazurokGapiClientSpanner.anon.Session, body: ReadRequest): Request[PartialResultSet] = js.native
 }

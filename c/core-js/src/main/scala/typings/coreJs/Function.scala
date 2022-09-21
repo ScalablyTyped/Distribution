@@ -14,5 +14,5 @@ trait Function extends StObject {
   /**
     * Non-standard.
     */
-  def part(args: js.Any*): js.Any = js.native
+  def part(args: Any*): Any = js.native
 }

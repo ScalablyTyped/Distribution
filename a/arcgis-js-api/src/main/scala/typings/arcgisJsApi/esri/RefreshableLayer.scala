@@ -11,10 +11,12 @@ trait RefreshableLayer extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-RefreshableLayer.html#refresh)
     */
-  def refresh(): Unit
+  def refresh(): scala.Unit
   
   /**
     * Refresh interval of the layer in minutes.
+    *
+    * @default 0
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-RefreshableLayer.html#refreshInterval)
     */
@@ -22,14 +24,14 @@ trait RefreshableLayer extends StObject {
 }
 object RefreshableLayer {
   
-  inline def apply(refresh: () => Unit, refreshInterval: Double): RefreshableLayer = {
+  inline def apply(refresh: () => scala.Unit, refreshInterval: Double): RefreshableLayer = {
     val __obj = js.Dynamic.literal(refresh = js.Any.fromFunction0(refresh), refreshInterval = refreshInterval.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefreshableLayer]
   }
   
   extension [Self <: RefreshableLayer](x: Self) {
     
-    inline def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
+    inline def setRefresh(value: () => scala.Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
     
     inline def setRefreshInterval(value: Double): Self = StObject.set(x, "refreshInterval", value.asInstanceOf[js.Any])
   }

@@ -9,10 +9,10 @@ The official web client library for the Persona API.
 | ------------------ | :-------------: |
 | Full name          | persona |
 | Keywords           | - |
-| # releases         | 40 |
-| # dependents       | 2 |
-| # downloads        | 603475 |
-| # stars            | 0 |
+| # releases         | 33 |
+| # dependents       | 0.0 |
+| # downloads        | 250828.0 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/persona)

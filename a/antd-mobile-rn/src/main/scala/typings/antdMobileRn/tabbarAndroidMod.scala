@@ -11,7 +11,7 @@ object tabbarAndroidMod {
   
   @JSImport("antd-mobile-rn/lib/tab-bar/tabbar.android", JSImport.Default)
   @js.native
-  class default () extends TabBar
+  open class default () extends TabBar
   object default {
     
     @JSImport("antd-mobile-rn/lib/tab-bar/tabbar.android", JSImport.Default)
@@ -21,8 +21,8 @@ object tabbarAndroidMod {
     /* static member */
     @JSImport("antd-mobile-rn/lib/tab-bar/tabbar.android", "default.Item")
     @js.native
-    def Item: js.Any = js.native
-    inline def Item_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+    def Item: Any = js.native
+    inline def Item_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
     
     /* static member */
     object defaultProps {
@@ -49,10 +49,9 @@ object tabbarAndroidMod {
   }
   
   @js.native
-  trait TabBar
-    extends Component[TabBarNativeProps, js.Any, js.Any] {
+  trait TabBar extends Component[TabBarNativeProps, Any, Any] {
     
-    def getPanes(content: Boolean): js.Array[js.Any] = js.native
+    def getPanes(content: Boolean): js.Array[Any] = js.native
   }
   
   trait TabBarNativeProps

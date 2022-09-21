@@ -1,31 +1,22 @@
 package typings.reactNavigationCore.anon
 
-import typings.reactNavigationCore.typesMod.NavigatorScreenParams
-import typings.reactNavigationRouters.typesMod.NavigationState
-import typings.reactNavigationRouters.typesMod.ParamListBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Name[State /* <: NavigationState[ParamListBase] */] extends StObject {
+trait Name extends StObject {
   
   var name: String
-  
-  var params: js.UndefOr[NavigatorScreenParams[State, NavigationState[ParamListBase]]] = js.undefined
 }
 object Name {
   
-  inline def apply[State /* <: NavigationState[ParamListBase] */](name: String): Name[State] = {
+  inline def apply(name: String): Name = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Name[State]]
+    __obj.asInstanceOf[Name]
   }
   
-  extension [Self <: Name[?], State /* <: NavigationState[ParamListBase] */](x: Self & Name[State]) {
+  extension [Self <: Name](x: Self) {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-    
-    inline def setParams(value: NavigatorScreenParams[State, NavigationState[ParamListBase]]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
-    
-    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
   }
 }

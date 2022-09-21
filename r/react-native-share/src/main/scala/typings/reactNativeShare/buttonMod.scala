@@ -51,7 +51,7 @@ object buttonMod extends Shortcut {
       
       inline def setIconSrc(value: ImageSourcePropType): Self = StObject.set(x, "iconSrc", value.asInstanceOf[js.Any])
       
-      inline def setIconSrcVarargs(value: ImageURISource*): Self = StObject.set(x, "iconSrc", js.Array(value :_*))
+      inline def setIconSrcVarargs(value: ImageURISource*): Self = StObject.set(x, "iconSrc", js.Array(value*))
       
       inline def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
       

@@ -137,8 +137,6 @@ object animateMod {
     
     var `-moz-column-fill`: js.UndefOr[String] = js.undefined
     
-    var `-moz-column-gap`: js.UndefOr[String] = js.undefined
-    
     var `-moz-column-rule`: js.UndefOr[String] = js.undefined
     
     var `-moz-column-rule-color`: js.UndefOr[String] = js.undefined
@@ -245,8 +243,6 @@ object animateMod {
     
     var `-ms-accelerator`: js.UndefOr[String] = js.undefined
     
-    var `-ms-align-self`: js.UndefOr[String] = js.undefined
-    
     var `-ms-block-progression`: js.UndefOr[String] = js.undefined
     
     var `-ms-content-zoom-chaining`: js.UndefOr[String] = js.undefined
@@ -294,8 +290,6 @@ object animateMod {
     var `-ms-ime-align`: js.UndefOr[String] = js.undefined
     
     var `-ms-ime-mode`: js.UndefOr[String] = js.undefined
-    
-    var `-ms-justify-self`: js.UndefOr[String] = js.undefined
     
     var `-ms-line-break`: js.UndefOr[String] = js.undefined
     
@@ -517,8 +511,6 @@ object animateMod {
     
     var `-webkit-column-fill`: js.UndefOr[String] = js.undefined
     
-    var `-webkit-column-gap`: js.UndefOr[String] = js.undefined
-    
     var `-webkit-column-rule`: js.UndefOr[String] = js.undefined
     
     var `-webkit-column-rule-color`: js.UndefOr[String] = js.undefined
@@ -557,7 +549,11 @@ object animateMod {
     
     var `-webkit-font-variant-ligatures`: js.UndefOr[String] = js.undefined
     
+    var `-webkit-hyphenate-character`: js.UndefOr[String] = js.undefined
+    
     var `-webkit-hyphens`: js.UndefOr[String] = js.undefined
+    
+    var `-webkit-initial-letter`: js.UndefOr[String] = js.undefined
     
     var `-webkit-justify-content`: js.UndefOr[String] = js.undefined
     
@@ -572,6 +568,18 @@ object animateMod {
     var `-webkit-mask`: js.UndefOr[String] = js.undefined
     
     var `-webkit-mask-attachment`: js.UndefOr[String] = js.undefined
+    
+    var `-webkit-mask-box-image`: js.UndefOr[String] = js.undefined
+    
+    var `-webkit-mask-box-image-outset`: js.UndefOr[String] = js.undefined
+    
+    var `-webkit-mask-box-image-repeat`: js.UndefOr[String] = js.undefined
+    
+    var `-webkit-mask-box-image-slice`: js.UndefOr[String] = js.undefined
+    
+    var `-webkit-mask-box-image-source`: js.UndefOr[String] = js.undefined
+    
+    var `-webkit-mask-box-image-width`: js.UndefOr[String] = js.undefined
     
     var `-webkit-mask-clip`: js.UndefOr[String] = js.undefined
     
@@ -782,8 +790,6 @@ object animateMod {
     var MozColumnCount: js.UndefOr[String] = js.undefined
     
     var MozColumnFill: js.UndefOr[String] = js.undefined
-    
-    var MozColumnGap: js.UndefOr[String] = js.undefined
     
     var MozColumnRule: js.UndefOr[String] = js.undefined
     
@@ -1021,8 +1027,6 @@ object animateMod {
     
     var WebkitColumnFill: js.UndefOr[String] = js.undefined
     
-    var WebkitColumnGap: js.UndefOr[String] = js.undefined
-    
     var WebkitColumnRule: js.UndefOr[String] = js.undefined
     
     var WebkitColumnRuleColor: js.UndefOr[String] = js.undefined
@@ -1061,7 +1065,11 @@ object animateMod {
     
     var WebkitFontVariantLigatures: js.UndefOr[String] = js.undefined
     
+    var WebkitHyphenateCharacter: js.UndefOr[String] = js.undefined
+    
     var WebkitHyphens: js.UndefOr[String] = js.undefined
+    
+    var WebkitInitialLetter: js.UndefOr[String] = js.undefined
     
     var WebkitJustifyContent: js.UndefOr[String] = js.undefined
     
@@ -1076,6 +1084,18 @@ object animateMod {
     var WebkitMask: js.UndefOr[String] = js.undefined
     
     var WebkitMaskAttachment: js.UndefOr[String] = js.undefined
+    
+    var WebkitMaskBoxImage: js.UndefOr[String] = js.undefined
+    
+    var WebkitMaskBoxImageOutset: js.UndefOr[String] = js.undefined
+    
+    var WebkitMaskBoxImageRepeat: js.UndefOr[String] = js.undefined
+    
+    var WebkitMaskBoxImageSlice: js.UndefOr[String] = js.undefined
+    
+    var WebkitMaskBoxImageSource: js.UndefOr[String] = js.undefined
+    
+    var WebkitMaskBoxImageWidth: js.UndefOr[String] = js.undefined
     
     var WebkitMaskClip: js.UndefOr[String] = js.undefined
     
@@ -1183,6 +1203,10 @@ object animateMod {
     
     var WebkitWritingMode: js.UndefOr[String] = js.undefined
     
+    var `accent-color`: js.UndefOr[String] = js.undefined
+    
+    var accentColor: js.UndefOr[String] = js.undefined
+    
     var `align-content`: js.UndefOr[String] = js.undefined
     
     var `align-items`: js.UndefOr[String] = js.undefined
@@ -1207,6 +1231,8 @@ object animateMod {
     
     var animation: js.UndefOr[String] = js.undefined
     
+    var `animation-composition`: js.UndefOr[String] = js.undefined
+    
     var `animation-delay`: js.UndefOr[String] = js.undefined
     
     var `animation-direction`: js.UndefOr[String] = js.undefined
@@ -1221,7 +1247,11 @@ object animateMod {
     
     var `animation-play-state`: js.UndefOr[String] = js.undefined
     
+    var `animation-timeline`: js.UndefOr[String] = js.undefined
+    
     var `animation-timing-function`: js.UndefOr[String] = js.undefined
+    
+    var animationComposition: js.UndefOr[String] = js.undefined
     
     var animationDelay: js.UndefOr[String] = js.undefined
     
@@ -1236,6 +1266,8 @@ object animateMod {
     var animationName: js.UndefOr[String] = js.undefined
     
     var animationPlayState: js.UndefOr[String] = js.undefined
+    
+    var animationTimeline: js.UndefOr[String] = js.undefined
     
     var animationTimingFunction: js.UndefOr[String] = js.undefined
     
@@ -1641,11 +1673,15 @@ object animateMod {
     
     var `color-rendering`: js.UndefOr[String] = js.undefined
     
+    var `color-scheme`: js.UndefOr[String] = js.undefined
+    
     var colorAdjust: js.UndefOr[String] = js.undefined
     
     var colorInterpolation: js.UndefOr[String] = js.undefined
     
     var colorRendering: js.UndefOr[String] = js.undefined
+    
+    var colorScheme: js.UndefOr[String] = js.undefined
     
     var `column-count`: js.UndefOr[String] = js.undefined
     
@@ -1688,6 +1724,10 @@ object animateMod {
     var contain: js.UndefOr[String] = js.undefined
     
     var content: js.UndefOr[String] = js.undefined
+    
+    var `content-visibility`: js.UndefOr[String] = js.undefined
+    
+    var contentVisibility: js.UndefOr[String] = js.undefined
     
     var `counter-increment`: js.UndefOr[String] = js.undefined
     
@@ -1845,6 +1885,10 @@ object animateMod {
     
     var fontWeight: js.UndefOr[String] = js.undefined
     
+    var `forced-color-adjust`: js.UndefOr[String] = js.undefined
+    
+    var forcedColorAdjust: js.UndefOr[String] = js.undefined
+    
     var gap: js.UndefOr[String] = js.undefined
     
     var `glyph-orientation-vertical`: js.UndefOr[String] = js.undefined
@@ -1927,6 +1971,10 @@ object animateMod {
     
     var height: js.UndefOr[String] = js.undefined
     
+    var `hyphenate-character`: js.UndefOr[String] = js.undefined
+    
+    var hyphenateCharacter: js.UndefOr[String] = js.undefined
+    
     var hyphens: js.UndefOr[String] = js.undefined
     
     var `image-orientation`: js.UndefOr[String] = js.undefined
@@ -1952,6 +2000,10 @@ object animateMod {
     var `inline-size`: js.UndefOr[String] = js.undefined
     
     var inlineSize: js.UndefOr[String] = js.undefined
+    
+    var `input-security`: js.UndefOr[String] = js.undefined
+    
+    var inputSecurity: js.UndefOr[String] = js.undefined
     
     var inset: js.UndefOr[String] = js.undefined
     
@@ -2161,11 +2213,15 @@ object animateMod {
     
     var maskType: js.UndefOr[String] = js.undefined
     
-    var `masonry-auto-flow`: js.UndefOr[String] = js.undefined
+    var `math-depth`: js.UndefOr[String] = js.undefined
     
-    var masonryAutoFlow: js.UndefOr[String] = js.undefined
+    var `math-shift`: js.UndefOr[String] = js.undefined
     
     var `math-style`: js.UndefOr[String] = js.undefined
+    
+    var mathDepth: js.UndefOr[String] = js.undefined
+    
+    var mathShift: js.UndefOr[String] = js.undefined
     
     var mathStyle: js.UndefOr[String] = js.undefined
     
@@ -2229,8 +2285,6 @@ object animateMod {
     
     var msAccelerator: js.UndefOr[String] = js.undefined
     
-    var msAlignSelf: js.UndefOr[String] = js.undefined
-    
     var msBlockProgression: js.UndefOr[String] = js.undefined
     
     var msContentZoomChaining: js.UndefOr[String] = js.undefined
@@ -2278,8 +2332,6 @@ object animateMod {
     var msImeAlign: js.UndefOr[String] = js.undefined
     
     var msImeMode: js.UndefOr[String] = js.undefined
-    
-    var msJustifySelf: js.UndefOr[String] = js.undefined
     
     var msLineBreak: js.UndefOr[String] = js.undefined
     
@@ -2455,6 +2507,8 @@ object animateMod {
     
     var `overflow-clip-box`: js.UndefOr[String] = js.undefined
     
+    var `overflow-clip-margin`: js.UndefOr[String] = js.undefined
+    
     var `overflow-inline`: js.UndefOr[String] = js.undefined
     
     var `overflow-wrap`: js.UndefOr[String] = js.undefined
@@ -2468,6 +2522,8 @@ object animateMod {
     var overflowBlock: js.UndefOr[String] = js.undefined
     
     var overflowClipBox: js.UndefOr[String] = js.undefined
+    
+    var overflowClipMargin: js.UndefOr[String] = js.undefined
     
     var overflowInline: js.UndefOr[String] = js.undefined
     
@@ -2578,6 +2634,10 @@ object animateMod {
     var pointerEvents: js.UndefOr[String] = js.undefined
     
     var position: js.UndefOr[String] = js.undefined
+    
+    var `print-color-adjust`: js.UndefOr[String] = js.undefined
+    
+    var printColorAdjust: js.UndefOr[String] = js.undefined
     
     var quotes: js.UndefOr[String] = js.undefined
     
@@ -2773,15 +2833,11 @@ object animateMod {
     
     var `scrollbar-gutter`: js.UndefOr[String] = js.undefined
     
-    var `scrollbar-track-color`: js.UndefOr[String] = js.undefined
-    
     var `scrollbar-width`: js.UndefOr[String] = js.undefined
     
     var scrollbarColor: js.UndefOr[String] = js.undefined
     
     var scrollbarGutter: js.UndefOr[String] = js.undefined
-    
-    var scrollbarTrackColor: js.UndefOr[String] = js.undefined
     
     var scrollbarWidth: js.UndefOr[String] = js.undefined
     
@@ -2859,8 +2915,6 @@ object animateMod {
     
     var `text-anchor`: js.UndefOr[String] = js.undefined
     
-    var `text-combine-horizontal`: js.UndefOr[String] = js.undefined
-    
     var `text-combine-upright`: js.UndefOr[String] = js.undefined
     
     var `text-decoration`: js.UndefOr[String] = js.undefined
@@ -2876,8 +2930,6 @@ object animateMod {
     var `text-decoration-style`: js.UndefOr[String] = js.undefined
     
     var `text-decoration-thickness`: js.UndefOr[String] = js.undefined
-    
-    var `text-decoration-width`: js.UndefOr[String] = js.undefined
     
     var `text-emphasis`: js.UndefOr[String] = js.undefined
     
@@ -2913,8 +2965,6 @@ object animateMod {
     
     var textAnchor: js.UndefOr[String] = js.undefined
     
-    var textCombineHorizontal: js.UndefOr[String] = js.undefined
-    
     var textCombineUpright: js.UndefOr[String] = js.undefined
     
     var textDecoration: js.UndefOr[String] = js.undefined
@@ -2930,8 +2980,6 @@ object animateMod {
     var textDecorationStyle: js.UndefOr[String] = js.undefined
     
     var textDecorationThickness: js.UndefOr[String] = js.undefined
-    
-    var textDecorationWidth: js.UndefOr[String] = js.undefined
     
     var textEmphasis: js.UndefOr[String] = js.undefined
     
@@ -3296,10 +3344,6 @@ object animateMod {
       
       inline def `set-moz-column-fillUndefined`: Self = StObject.set(x, "-moz-column-fill", js.undefined)
       
-      inline def `set-moz-column-gap`(value: String): Self = StObject.set(x, "-moz-column-gap", value.asInstanceOf[js.Any])
-      
-      inline def `set-moz-column-gapUndefined`: Self = StObject.set(x, "-moz-column-gap", js.undefined)
-      
       inline def `set-moz-column-rule`(value: String): Self = StObject.set(x, "-moz-column-rule", value.asInstanceOf[js.Any])
       
       inline def `set-moz-column-rule-color`(value: String): Self = StObject.set(x, "-moz-column-rule-color", value.asInstanceOf[js.Any])
@@ -3512,10 +3556,6 @@ object animateMod {
       
       inline def `set-ms-acceleratorUndefined`: Self = StObject.set(x, "-ms-accelerator", js.undefined)
       
-      inline def `set-ms-align-self`(value: String): Self = StObject.set(x, "-ms-align-self", value.asInstanceOf[js.Any])
-      
-      inline def `set-ms-align-selfUndefined`: Self = StObject.set(x, "-ms-align-self", js.undefined)
-      
       inline def `set-ms-block-progression`(value: String): Self = StObject.set(x, "-ms-block-progression", value.asInstanceOf[js.Any])
       
       inline def `set-ms-block-progressionUndefined`: Self = StObject.set(x, "-ms-block-progression", js.undefined)
@@ -3611,10 +3651,6 @@ object animateMod {
       inline def `set-ms-ime-mode`(value: String): Self = StObject.set(x, "-ms-ime-mode", value.asInstanceOf[js.Any])
       
       inline def `set-ms-ime-modeUndefined`: Self = StObject.set(x, "-ms-ime-mode", js.undefined)
-      
-      inline def `set-ms-justify-self`(value: String): Self = StObject.set(x, "-ms-justify-self", value.asInstanceOf[js.Any])
-      
-      inline def `set-ms-justify-selfUndefined`: Self = StObject.set(x, "-ms-justify-self", js.undefined)
       
       inline def `set-ms-line-break`(value: String): Self = StObject.set(x, "-ms-line-break", value.asInstanceOf[js.Any])
       
@@ -4056,10 +4092,6 @@ object animateMod {
       
       inline def `set-webkit-column-fillUndefined`: Self = StObject.set(x, "-webkit-column-fill", js.undefined)
       
-      inline def `set-webkit-column-gap`(value: String): Self = StObject.set(x, "-webkit-column-gap", value.asInstanceOf[js.Any])
-      
-      inline def `set-webkit-column-gapUndefined`: Self = StObject.set(x, "-webkit-column-gap", js.undefined)
-      
       inline def `set-webkit-column-rule`(value: String): Self = StObject.set(x, "-webkit-column-rule", value.asInstanceOf[js.Any])
       
       inline def `set-webkit-column-rule-color`(value: String): Self = StObject.set(x, "-webkit-column-rule-color", value.asInstanceOf[js.Any])
@@ -4136,9 +4168,17 @@ object animateMod {
       
       inline def `set-webkit-font-variant-ligaturesUndefined`: Self = StObject.set(x, "-webkit-font-variant-ligatures", js.undefined)
       
+      inline def `set-webkit-hyphenate-character`(value: String): Self = StObject.set(x, "-webkit-hyphenate-character", value.asInstanceOf[js.Any])
+      
+      inline def `set-webkit-hyphenate-characterUndefined`: Self = StObject.set(x, "-webkit-hyphenate-character", js.undefined)
+      
       inline def `set-webkit-hyphens`(value: String): Self = StObject.set(x, "-webkit-hyphens", value.asInstanceOf[js.Any])
       
       inline def `set-webkit-hyphensUndefined`: Self = StObject.set(x, "-webkit-hyphens", js.undefined)
+      
+      inline def `set-webkit-initial-letter`(value: String): Self = StObject.set(x, "-webkit-initial-letter", value.asInstanceOf[js.Any])
+      
+      inline def `set-webkit-initial-letterUndefined`: Self = StObject.set(x, "-webkit-initial-letter", js.undefined)
       
       inline def `set-webkit-justify-content`(value: String): Self = StObject.set(x, "-webkit-justify-content", value.asInstanceOf[js.Any])
       
@@ -4165,6 +4205,30 @@ object animateMod {
       inline def `set-webkit-mask-attachment`(value: String): Self = StObject.set(x, "-webkit-mask-attachment", value.asInstanceOf[js.Any])
       
       inline def `set-webkit-mask-attachmentUndefined`: Self = StObject.set(x, "-webkit-mask-attachment", js.undefined)
+      
+      inline def `set-webkit-mask-box-image`(value: String): Self = StObject.set(x, "-webkit-mask-box-image", value.asInstanceOf[js.Any])
+      
+      inline def `set-webkit-mask-box-image-outset`(value: String): Self = StObject.set(x, "-webkit-mask-box-image-outset", value.asInstanceOf[js.Any])
+      
+      inline def `set-webkit-mask-box-image-outsetUndefined`: Self = StObject.set(x, "-webkit-mask-box-image-outset", js.undefined)
+      
+      inline def `set-webkit-mask-box-image-repeat`(value: String): Self = StObject.set(x, "-webkit-mask-box-image-repeat", value.asInstanceOf[js.Any])
+      
+      inline def `set-webkit-mask-box-image-repeatUndefined`: Self = StObject.set(x, "-webkit-mask-box-image-repeat", js.undefined)
+      
+      inline def `set-webkit-mask-box-image-slice`(value: String): Self = StObject.set(x, "-webkit-mask-box-image-slice", value.asInstanceOf[js.Any])
+      
+      inline def `set-webkit-mask-box-image-sliceUndefined`: Self = StObject.set(x, "-webkit-mask-box-image-slice", js.undefined)
+      
+      inline def `set-webkit-mask-box-image-source`(value: String): Self = StObject.set(x, "-webkit-mask-box-image-source", value.asInstanceOf[js.Any])
+      
+      inline def `set-webkit-mask-box-image-sourceUndefined`: Self = StObject.set(x, "-webkit-mask-box-image-source", js.undefined)
+      
+      inline def `set-webkit-mask-box-image-width`(value: String): Self = StObject.set(x, "-webkit-mask-box-image-width", value.asInstanceOf[js.Any])
+      
+      inline def `set-webkit-mask-box-image-widthUndefined`: Self = StObject.set(x, "-webkit-mask-box-image-width", js.undefined)
+      
+      inline def `set-webkit-mask-box-imageUndefined`: Self = StObject.set(x, "-webkit-mask-box-image", js.undefined)
       
       inline def `set-webkit-mask-clip`(value: String): Self = StObject.set(x, "-webkit-mask-clip", value.asInstanceOf[js.Any])
       
@@ -4380,6 +4444,14 @@ object animateMod {
       
       inline def `set-webkit-writing-modeUndefined`: Self = StObject.set(x, "-webkit-writing-mode", js.undefined)
       
+      inline def `setAccent-color`(value: String): Self = StObject.set(x, "accent-color", value.asInstanceOf[js.Any])
+      
+      inline def `setAccent-colorUndefined`: Self = StObject.set(x, "accent-color", js.undefined)
+      
+      inline def setAccentColor(value: String): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
+      
+      inline def setAccentColorUndefined: Self = StObject.set(x, "accentColor", js.undefined)
+      
       inline def `setAlign-content`(value: String): Self = StObject.set(x, "align-content", value.asInstanceOf[js.Any])
       
       inline def `setAlign-contentUndefined`: Self = StObject.set(x, "align-content", js.undefined)
@@ -4426,6 +4498,10 @@ object animateMod {
       
       inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
+      inline def `setAnimation-composition`(value: String): Self = StObject.set(x, "animation-composition", value.asInstanceOf[js.Any])
+      
+      inline def `setAnimation-compositionUndefined`: Self = StObject.set(x, "animation-composition", js.undefined)
+      
       inline def `setAnimation-delay`(value: String): Self = StObject.set(x, "animation-delay", value.asInstanceOf[js.Any])
       
       inline def `setAnimation-delayUndefined`: Self = StObject.set(x, "animation-delay", js.undefined)
@@ -4454,9 +4530,17 @@ object animateMod {
       
       inline def `setAnimation-play-stateUndefined`: Self = StObject.set(x, "animation-play-state", js.undefined)
       
+      inline def `setAnimation-timeline`(value: String): Self = StObject.set(x, "animation-timeline", value.asInstanceOf[js.Any])
+      
+      inline def `setAnimation-timelineUndefined`: Self = StObject.set(x, "animation-timeline", js.undefined)
+      
       inline def `setAnimation-timing-function`(value: String): Self = StObject.set(x, "animation-timing-function", value.asInstanceOf[js.Any])
       
       inline def `setAnimation-timing-functionUndefined`: Self = StObject.set(x, "animation-timing-function", js.undefined)
+      
+      inline def setAnimationComposition(value: String): Self = StObject.set(x, "animationComposition", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationCompositionUndefined: Self = StObject.set(x, "animationComposition", js.undefined)
       
       inline def setAnimationDelay(value: String): Self = StObject.set(x, "animationDelay", value.asInstanceOf[js.Any])
       
@@ -4485,6 +4569,10 @@ object animateMod {
       inline def setAnimationPlayState(value: String): Self = StObject.set(x, "animationPlayState", value.asInstanceOf[js.Any])
       
       inline def setAnimationPlayStateUndefined: Self = StObject.set(x, "animationPlayState", js.undefined)
+      
+      inline def setAnimationTimeline(value: String): Self = StObject.set(x, "animationTimeline", value.asInstanceOf[js.Any])
+      
+      inline def setAnimationTimelineUndefined: Self = StObject.set(x, "animationTimeline", js.undefined)
       
       inline def setAnimationTimingFunction(value: String): Self = StObject.set(x, "animationTimingFunction", value.asInstanceOf[js.Any])
       
@@ -5294,6 +5382,10 @@ object animateMod {
       
       inline def `setColor-renderingUndefined`: Self = StObject.set(x, "color-rendering", js.undefined)
       
+      inline def `setColor-scheme`(value: String): Self = StObject.set(x, "color-scheme", value.asInstanceOf[js.Any])
+      
+      inline def `setColor-schemeUndefined`: Self = StObject.set(x, "color-scheme", js.undefined)
+      
       inline def setColorAdjust(value: String): Self = StObject.set(x, "colorAdjust", value.asInstanceOf[js.Any])
       
       inline def setColorAdjustUndefined: Self = StObject.set(x, "colorAdjust", js.undefined)
@@ -5305,6 +5397,10 @@ object animateMod {
       inline def setColorRendering(value: String): Self = StObject.set(x, "colorRendering", value.asInstanceOf[js.Any])
       
       inline def setColorRenderingUndefined: Self = StObject.set(x, "colorRendering", js.undefined)
+      
+      inline def setColorScheme(value: String): Self = StObject.set(x, "colorScheme", value.asInstanceOf[js.Any])
+      
+      inline def setColorSchemeUndefined: Self = StObject.set(x, "colorScheme", js.undefined)
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
@@ -5390,7 +5486,15 @@ object animateMod {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
+      inline def `setContent-visibility`(value: String): Self = StObject.set(x, "content-visibility", value.asInstanceOf[js.Any])
+      
+      inline def `setContent-visibilityUndefined`: Self = StObject.set(x, "content-visibility", js.undefined)
+      
       inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      
+      inline def setContentVisibility(value: String): Self = StObject.set(x, "contentVisibility", value.asInstanceOf[js.Any])
+      
+      inline def setContentVisibilityUndefined: Self = StObject.set(x, "contentVisibility", js.undefined)
       
       inline def `setCounter-increment`(value: String): Self = StObject.set(x, "counter-increment", value.asInstanceOf[js.Any])
       
@@ -5704,6 +5808,14 @@ object animateMod {
       
       inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
       
+      inline def `setForced-color-adjust`(value: String): Self = StObject.set(x, "forced-color-adjust", value.asInstanceOf[js.Any])
+      
+      inline def `setForced-color-adjustUndefined`: Self = StObject.set(x, "forced-color-adjust", js.undefined)
+      
+      inline def setForcedColorAdjust(value: String): Self = StObject.set(x, "forcedColorAdjust", value.asInstanceOf[js.Any])
+      
+      inline def setForcedColorAdjustUndefined: Self = StObject.set(x, "forcedColorAdjust", js.undefined)
+      
       inline def setGap(value: String): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
       
       inline def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
@@ -5868,6 +5980,14 @@ object animateMod {
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
+      inline def `setHyphenate-character`(value: String): Self = StObject.set(x, "hyphenate-character", value.asInstanceOf[js.Any])
+      
+      inline def `setHyphenate-characterUndefined`: Self = StObject.set(x, "hyphenate-character", js.undefined)
+      
+      inline def setHyphenateCharacter(value: String): Self = StObject.set(x, "hyphenateCharacter", value.asInstanceOf[js.Any])
+      
+      inline def setHyphenateCharacterUndefined: Self = StObject.set(x, "hyphenateCharacter", js.undefined)
+      
       inline def setHyphens(value: String): Self = StObject.set(x, "hyphens", value.asInstanceOf[js.Any])
       
       inline def setHyphensUndefined: Self = StObject.set(x, "hyphens", js.undefined)
@@ -5919,6 +6039,14 @@ object animateMod {
       inline def setInlineSize(value: String): Self = StObject.set(x, "inlineSize", value.asInstanceOf[js.Any])
       
       inline def setInlineSizeUndefined: Self = StObject.set(x, "inlineSize", js.undefined)
+      
+      inline def `setInput-security`(value: String): Self = StObject.set(x, "input-security", value.asInstanceOf[js.Any])
+      
+      inline def `setInput-securityUndefined`: Self = StObject.set(x, "input-security", js.undefined)
+      
+      inline def setInputSecurity(value: String): Self = StObject.set(x, "inputSecurity", value.asInstanceOf[js.Any])
+      
+      inline def setInputSecurityUndefined: Self = StObject.set(x, "inputSecurity", js.undefined)
       
       inline def setInset(value: String): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
       
@@ -6380,17 +6508,25 @@ object animateMod {
       
       inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
       
-      inline def `setMasonry-auto-flow`(value: String): Self = StObject.set(x, "masonry-auto-flow", value.asInstanceOf[js.Any])
+      inline def `setMath-depth`(value: String): Self = StObject.set(x, "math-depth", value.asInstanceOf[js.Any])
       
-      inline def `setMasonry-auto-flowUndefined`: Self = StObject.set(x, "masonry-auto-flow", js.undefined)
+      inline def `setMath-depthUndefined`: Self = StObject.set(x, "math-depth", js.undefined)
       
-      inline def setMasonryAutoFlow(value: String): Self = StObject.set(x, "masonryAutoFlow", value.asInstanceOf[js.Any])
+      inline def `setMath-shift`(value: String): Self = StObject.set(x, "math-shift", value.asInstanceOf[js.Any])
       
-      inline def setMasonryAutoFlowUndefined: Self = StObject.set(x, "masonryAutoFlow", js.undefined)
+      inline def `setMath-shiftUndefined`: Self = StObject.set(x, "math-shift", js.undefined)
       
       inline def `setMath-style`(value: String): Self = StObject.set(x, "math-style", value.asInstanceOf[js.Any])
       
       inline def `setMath-styleUndefined`: Self = StObject.set(x, "math-style", js.undefined)
+      
+      inline def setMathDepth(value: String): Self = StObject.set(x, "mathDepth", value.asInstanceOf[js.Any])
+      
+      inline def setMathDepthUndefined: Self = StObject.set(x, "mathDepth", js.undefined)
+      
+      inline def setMathShift(value: String): Self = StObject.set(x, "mathShift", value.asInstanceOf[js.Any])
+      
+      inline def setMathShiftUndefined: Self = StObject.set(x, "mathShift", js.undefined)
       
       inline def setMathStyle(value: String): Self = StObject.set(x, "mathStyle", value.asInstanceOf[js.Any])
       
@@ -6672,10 +6808,6 @@ object animateMod {
       
       inline def setMozColumnFillUndefined: Self = StObject.set(x, "MozColumnFill", js.undefined)
       
-      inline def setMozColumnGap(value: String): Self = StObject.set(x, "MozColumnGap", value.asInstanceOf[js.Any])
-      
-      inline def setMozColumnGapUndefined: Self = StObject.set(x, "MozColumnGap", js.undefined)
-      
       inline def setMozColumnRule(value: String): Self = StObject.set(x, "MozColumnRule", value.asInstanceOf[js.Any])
       
       inline def setMozColumnRuleColor(value: String): Self = StObject.set(x, "MozColumnRuleColor", value.asInstanceOf[js.Any])
@@ -6888,10 +7020,6 @@ object animateMod {
       
       inline def setMsAcceleratorUndefined: Self = StObject.set(x, "msAccelerator", js.undefined)
       
-      inline def setMsAlignSelf(value: String): Self = StObject.set(x, "msAlignSelf", value.asInstanceOf[js.Any])
-      
-      inline def setMsAlignSelfUndefined: Self = StObject.set(x, "msAlignSelf", js.undefined)
-      
       inline def setMsBlockProgression(value: String): Self = StObject.set(x, "msBlockProgression", value.asInstanceOf[js.Any])
       
       inline def setMsBlockProgressionUndefined: Self = StObject.set(x, "msBlockProgression", js.undefined)
@@ -6987,10 +7115,6 @@ object animateMod {
       inline def setMsImeMode(value: String): Self = StObject.set(x, "msImeMode", value.asInstanceOf[js.Any])
       
       inline def setMsImeModeUndefined: Self = StObject.set(x, "msImeMode", js.undefined)
-      
-      inline def setMsJustifySelf(value: String): Self = StObject.set(x, "msJustifySelf", value.asInstanceOf[js.Any])
-      
-      inline def setMsJustifySelfUndefined: Self = StObject.set(x, "msJustifySelf", js.undefined)
       
       inline def setMsLineBreak(value: String): Self = StObject.set(x, "msLineBreak", value.asInstanceOf[js.Any])
       
@@ -7426,6 +7550,10 @@ object animateMod {
       
       inline def `setOverflow-clip-boxUndefined`: Self = StObject.set(x, "overflow-clip-box", js.undefined)
       
+      inline def `setOverflow-clip-margin`(value: String): Self = StObject.set(x, "overflow-clip-margin", value.asInstanceOf[js.Any])
+      
+      inline def `setOverflow-clip-marginUndefined`: Self = StObject.set(x, "overflow-clip-margin", js.undefined)
+      
       inline def `setOverflow-inline`(value: String): Self = StObject.set(x, "overflow-inline", value.asInstanceOf[js.Any])
       
       inline def `setOverflow-inlineUndefined`: Self = StObject.set(x, "overflow-inline", js.undefined)
@@ -7453,6 +7581,10 @@ object animateMod {
       inline def setOverflowClipBox(value: String): Self = StObject.set(x, "overflowClipBox", value.asInstanceOf[js.Any])
       
       inline def setOverflowClipBoxUndefined: Self = StObject.set(x, "overflowClipBox", js.undefined)
+      
+      inline def setOverflowClipMargin(value: String): Self = StObject.set(x, "overflowClipMargin", value.asInstanceOf[js.Any])
+      
+      inline def setOverflowClipMarginUndefined: Self = StObject.set(x, "overflowClipMargin", js.undefined)
       
       inline def setOverflowInline(value: String): Self = StObject.set(x, "overflowInline", value.asInstanceOf[js.Any])
       
@@ -7675,6 +7807,14 @@ object animateMod {
       inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
       inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      
+      inline def `setPrint-color-adjust`(value: String): Self = StObject.set(x, "print-color-adjust", value.asInstanceOf[js.Any])
+      
+      inline def `setPrint-color-adjustUndefined`: Self = StObject.set(x, "print-color-adjust", js.undefined)
+      
+      inline def setPrintColorAdjust(value: String): Self = StObject.set(x, "printColorAdjust", value.asInstanceOf[js.Any])
+      
+      inline def setPrintColorAdjustUndefined: Self = StObject.set(x, "printColorAdjust", js.undefined)
       
       inline def setQuotes(value: String): Self = StObject.set(x, "quotes", value.asInstanceOf[js.Any])
       
@@ -8048,10 +8188,6 @@ object animateMod {
       
       inline def `setScrollbar-gutterUndefined`: Self = StObject.set(x, "scrollbar-gutter", js.undefined)
       
-      inline def `setScrollbar-track-color`(value: String): Self = StObject.set(x, "scrollbar-track-color", value.asInstanceOf[js.Any])
-      
-      inline def `setScrollbar-track-colorUndefined`: Self = StObject.set(x, "scrollbar-track-color", js.undefined)
-      
       inline def `setScrollbar-width`(value: String): Self = StObject.set(x, "scrollbar-width", value.asInstanceOf[js.Any])
       
       inline def `setScrollbar-widthUndefined`: Self = StObject.set(x, "scrollbar-width", js.undefined)
@@ -8063,10 +8199,6 @@ object animateMod {
       inline def setScrollbarGutter(value: String): Self = StObject.set(x, "scrollbarGutter", value.asInstanceOf[js.Any])
       
       inline def setScrollbarGutterUndefined: Self = StObject.set(x, "scrollbarGutter", js.undefined)
-      
-      inline def setScrollbarTrackColor(value: String): Self = StObject.set(x, "scrollbarTrackColor", value.asInstanceOf[js.Any])
-      
-      inline def setScrollbarTrackColorUndefined: Self = StObject.set(x, "scrollbarTrackColor", js.undefined)
       
       inline def setScrollbarWidth(value: String): Self = StObject.set(x, "scrollbarWidth", value.asInstanceOf[js.Any])
       
@@ -8214,10 +8346,6 @@ object animateMod {
       
       inline def `setText-anchorUndefined`: Self = StObject.set(x, "text-anchor", js.undefined)
       
-      inline def `setText-combine-horizontal`(value: String): Self = StObject.set(x, "text-combine-horizontal", value.asInstanceOf[js.Any])
-      
-      inline def `setText-combine-horizontalUndefined`: Self = StObject.set(x, "text-combine-horizontal", js.undefined)
-      
       inline def `setText-combine-upright`(value: String): Self = StObject.set(x, "text-combine-upright", value.asInstanceOf[js.Any])
       
       inline def `setText-combine-uprightUndefined`: Self = StObject.set(x, "text-combine-upright", js.undefined)
@@ -8247,10 +8375,6 @@ object animateMod {
       inline def `setText-decoration-thickness`(value: String): Self = StObject.set(x, "text-decoration-thickness", value.asInstanceOf[js.Any])
       
       inline def `setText-decoration-thicknessUndefined`: Self = StObject.set(x, "text-decoration-thickness", js.undefined)
-      
-      inline def `setText-decoration-width`(value: String): Self = StObject.set(x, "text-decoration-width", value.asInstanceOf[js.Any])
-      
-      inline def `setText-decoration-widthUndefined`: Self = StObject.set(x, "text-decoration-width", js.undefined)
       
       inline def `setText-decorationUndefined`: Self = StObject.set(x, "text-decoration", js.undefined)
       
@@ -8322,10 +8446,6 @@ object animateMod {
       
       inline def setTextAnchorUndefined: Self = StObject.set(x, "textAnchor", js.undefined)
       
-      inline def setTextCombineHorizontal(value: String): Self = StObject.set(x, "textCombineHorizontal", value.asInstanceOf[js.Any])
-      
-      inline def setTextCombineHorizontalUndefined: Self = StObject.set(x, "textCombineHorizontal", js.undefined)
-      
       inline def setTextCombineUpright(value: String): Self = StObject.set(x, "textCombineUpright", value.asInstanceOf[js.Any])
       
       inline def setTextCombineUprightUndefined: Self = StObject.set(x, "textCombineUpright", js.undefined)
@@ -8357,10 +8477,6 @@ object animateMod {
       inline def setTextDecorationThicknessUndefined: Self = StObject.set(x, "textDecorationThickness", js.undefined)
       
       inline def setTextDecorationUndefined: Self = StObject.set(x, "textDecoration", js.undefined)
-      
-      inline def setTextDecorationWidth(value: String): Self = StObject.set(x, "textDecorationWidth", value.asInstanceOf[js.Any])
-      
-      inline def setTextDecorationWidthUndefined: Self = StObject.set(x, "textDecorationWidth", js.undefined)
       
       inline def setTextEmphasis(value: String): Self = StObject.set(x, "textEmphasis", value.asInstanceOf[js.Any])
       
@@ -8718,10 +8834,6 @@ object animateMod {
       
       inline def setWebkitColumnFillUndefined: Self = StObject.set(x, "WebkitColumnFill", js.undefined)
       
-      inline def setWebkitColumnGap(value: String): Self = StObject.set(x, "WebkitColumnGap", value.asInstanceOf[js.Any])
-      
-      inline def setWebkitColumnGapUndefined: Self = StObject.set(x, "WebkitColumnGap", js.undefined)
-      
       inline def setWebkitColumnRule(value: String): Self = StObject.set(x, "WebkitColumnRule", value.asInstanceOf[js.Any])
       
       inline def setWebkitColumnRuleColor(value: String): Self = StObject.set(x, "WebkitColumnRuleColor", value.asInstanceOf[js.Any])
@@ -8798,9 +8910,17 @@ object animateMod {
       
       inline def setWebkitFontVariantLigaturesUndefined: Self = StObject.set(x, "WebkitFontVariantLigatures", js.undefined)
       
+      inline def setWebkitHyphenateCharacter(value: String): Self = StObject.set(x, "WebkitHyphenateCharacter", value.asInstanceOf[js.Any])
+      
+      inline def setWebkitHyphenateCharacterUndefined: Self = StObject.set(x, "WebkitHyphenateCharacter", js.undefined)
+      
       inline def setWebkitHyphens(value: String): Self = StObject.set(x, "WebkitHyphens", value.asInstanceOf[js.Any])
       
       inline def setWebkitHyphensUndefined: Self = StObject.set(x, "WebkitHyphens", js.undefined)
+      
+      inline def setWebkitInitialLetter(value: String): Self = StObject.set(x, "WebkitInitialLetter", value.asInstanceOf[js.Any])
+      
+      inline def setWebkitInitialLetterUndefined: Self = StObject.set(x, "WebkitInitialLetter", js.undefined)
       
       inline def setWebkitJustifyContent(value: String): Self = StObject.set(x, "WebkitJustifyContent", value.asInstanceOf[js.Any])
       
@@ -8827,6 +8947,30 @@ object animateMod {
       inline def setWebkitMaskAttachment(value: String): Self = StObject.set(x, "WebkitMaskAttachment", value.asInstanceOf[js.Any])
       
       inline def setWebkitMaskAttachmentUndefined: Self = StObject.set(x, "WebkitMaskAttachment", js.undefined)
+      
+      inline def setWebkitMaskBoxImage(value: String): Self = StObject.set(x, "WebkitMaskBoxImage", value.asInstanceOf[js.Any])
+      
+      inline def setWebkitMaskBoxImageOutset(value: String): Self = StObject.set(x, "WebkitMaskBoxImageOutset", value.asInstanceOf[js.Any])
+      
+      inline def setWebkitMaskBoxImageOutsetUndefined: Self = StObject.set(x, "WebkitMaskBoxImageOutset", js.undefined)
+      
+      inline def setWebkitMaskBoxImageRepeat(value: String): Self = StObject.set(x, "WebkitMaskBoxImageRepeat", value.asInstanceOf[js.Any])
+      
+      inline def setWebkitMaskBoxImageRepeatUndefined: Self = StObject.set(x, "WebkitMaskBoxImageRepeat", js.undefined)
+      
+      inline def setWebkitMaskBoxImageSlice(value: String): Self = StObject.set(x, "WebkitMaskBoxImageSlice", value.asInstanceOf[js.Any])
+      
+      inline def setWebkitMaskBoxImageSliceUndefined: Self = StObject.set(x, "WebkitMaskBoxImageSlice", js.undefined)
+      
+      inline def setWebkitMaskBoxImageSource(value: String): Self = StObject.set(x, "WebkitMaskBoxImageSource", value.asInstanceOf[js.Any])
+      
+      inline def setWebkitMaskBoxImageSourceUndefined: Self = StObject.set(x, "WebkitMaskBoxImageSource", js.undefined)
+      
+      inline def setWebkitMaskBoxImageUndefined: Self = StObject.set(x, "WebkitMaskBoxImage", js.undefined)
+      
+      inline def setWebkitMaskBoxImageWidth(value: String): Self = StObject.set(x, "WebkitMaskBoxImageWidth", value.asInstanceOf[js.Any])
+      
+      inline def setWebkitMaskBoxImageWidthUndefined: Self = StObject.set(x, "WebkitMaskBoxImageWidth", js.undefined)
       
       inline def setWebkitMaskClip(value: String): Self = StObject.set(x, "WebkitMaskClip", value.asInstanceOf[js.Any])
       

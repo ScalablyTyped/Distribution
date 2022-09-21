@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object identityMod {
   
-  @JSImport("@antv/util/lib/identity", JSImport.Namespace)
+  @JSImport("@antv/util/lib/lodash/identity", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

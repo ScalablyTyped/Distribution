@@ -100,7 +100,7 @@ object CircularGridLinesProps {
     
     inline def setRRangeUndefined: Self = StObject.set(x, "rRange", js.undefined)
     
-    inline def setRRangeVarargs(value: Double*): Self = StObject.set(x, "rRange", js.Array(value :_*))
+    inline def setRRangeVarargs(value: Double*): Self = StObject.set(x, "rRange", js.Array(value*))
     
     inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
@@ -114,7 +114,7 @@ object CircularGridLinesProps {
     
     inline def setTickValuesUndefined: Self = StObject.set(x, "tickValues", js.undefined)
     
-    inline def setTickValuesVarargs(value: Double*): Self = StObject.set(x, "tickValues", js.Array(value :_*))
+    inline def setTickValuesVarargs(value: Double*): Self = StObject.set(x, "tickValues", js.Array(value*))
     
     inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     

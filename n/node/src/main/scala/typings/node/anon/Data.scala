@@ -22,7 +22,7 @@ object Data {
     
     inline def setData(value: js.Array[Double]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: Double*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Double*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setType(value: typings.node.nodeStrings.Buffer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

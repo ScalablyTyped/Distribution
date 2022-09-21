@@ -11,7 +11,7 @@ trait JobExecutionInfo extends StObject {
   var stages: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.dataflow.gapi.client.dataflow.JobExecutionStageInfo}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.JobExecutionInfo & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.JobExecutionInfo & TopLevel[Any]
   ] = js.undefined
 }
 object JobExecutionInfo {
@@ -26,7 +26,7 @@ object JobExecutionInfo {
     inline def setStages(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.dataflow.gapi.client.dataflow.JobExecutionStageInfo}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.JobExecutionInfo & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.JobExecutionInfo & TopLevel[Any]
     ): Self = StObject.set(x, "stages", value.asInstanceOf[js.Any])
     
     inline def setStagesUndefined: Self = StObject.set(x, "stages", js.undefined)

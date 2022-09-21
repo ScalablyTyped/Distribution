@@ -1,7 +1,7 @@
 
 # Scala.js typings for testing-library__react
 
-Typings are for version 11.2.2
+Typings are for version 13.4.0
 
 ## Library description:
 Simple and complete React DOM testing utilities that encourage good testing practices.
@@ -10,10 +10,10 @@ Simple and complete React DOM testing utilities that encourage good testing prac
 | ------------------ | :-------------: |
 | Full name          | @testing-library/react |
 | Keywords           | testing, react, ui, dom, jsdom, unit, integration, functional, end-to-end, e2e |
-| # releases         | 68 |
-| # dependents       | 2766 |
-| # downloads        | 105297734 |
-| # stars            | 0 |
+| # releases         | 35 |
+| # dependents       | 0.0 |
+| # downloads        | 2.7231827666666668E7 |
+| # stars            | 16908.0 |
 
 ## Links
 - [Homepage](https://github.com/testing-library/react-testing-library#readme)

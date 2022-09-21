@@ -96,7 +96,7 @@ object global {
     
     @JSGlobal("gdal.CoordinateTransformation")
     @js.native
-    class CoordinateTransformation protected ()
+    open class CoordinateTransformation protected ()
       extends typings.gdal.mod.CoordinateTransformation {
       def this(source: typings.gdal.mod.SpatialReference, target: Dataset) = this()
       def this(source: typings.gdal.mod.SpatialReference, target: typings.gdal.mod.SpatialReference) = this()
@@ -140,21 +140,21 @@ object global {
     
     @JSGlobal("gdal.Envelope")
     @js.native
-    class Envelope protected ()
+    open class Envelope protected ()
       extends typings.gdal.mod.Envelope {
       def this(bounds: EnvelopeBounds) = this()
     }
     
     @JSGlobal("gdal.Envelope3D")
     @js.native
-    class Envelope3D protected ()
+    open class Envelope3D protected ()
       extends typings.gdal.mod.Envelope3D {
       def this(bounds: Envelope3DBounds) = this()
     }
     
     @JSGlobal("gdal.Feature")
     @js.native
-    class Feature protected ()
+    open class Feature protected ()
       extends typings.gdal.mod.Feature {
       def this(definition: typings.gdal.mod.FeatureDefn) = this()
       def this(definition: Layer) = this()
@@ -162,12 +162,12 @@ object global {
     
     @JSGlobal("gdal.FeatureDefn")
     @js.native
-    class FeatureDefn ()
+    open class FeatureDefn ()
       extends typings.gdal.mod.FeatureDefn
     
     @JSGlobal("gdal.FieldDefn")
     @js.native
-    class FieldDefn protected ()
+    open class FieldDefn protected ()
       extends typings.gdal.mod.FieldDefn {
       def this(name: String, `type`: String) = this()
     }
@@ -329,6 +329,9 @@ object global {
       
       inline def create(`type`: Double): typings.gdal.mod.Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(`type`.asInstanceOf[js.Any]).asInstanceOf[typings.gdal.mod.Geometry]
       
+      inline def fromGeoJson(geojson: js.Object): typings.gdal.mod.Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromGeoJson")(geojson.asInstanceOf[js.Any]).asInstanceOf[typings.gdal.mod.Geometry]
+      inline def fromGeoJson(geojson: js.Object, srs: typings.gdal.mod.SpatialReference): typings.gdal.mod.Geometry = (^.asInstanceOf[js.Dynamic].applyDynamic("fromGeoJson")(geojson.asInstanceOf[js.Any], srs.asInstanceOf[js.Any])).asInstanceOf[typings.gdal.mod.Geometry]
+      
       inline def fromWKB(wkb: Double): typings.gdal.mod.Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWKB")(wkb.asInstanceOf[js.Any]).asInstanceOf[typings.gdal.mod.Geometry]
       inline def fromWKB(wkb: Double, srs: typings.gdal.mod.SpatialReference): typings.gdal.mod.Geometry = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWKB")(wkb.asInstanceOf[js.Any], srs.asInstanceOf[js.Any])).asInstanceOf[typings.gdal.mod.Geometry]
       
@@ -342,32 +345,32 @@ object global {
     
     @JSGlobal("gdal.GeometryCollection")
     @js.native
-    class GeometryCollection ()
+    open class GeometryCollection ()
       extends typings.gdal.mod.GeometryCollection
     
     @JSGlobal("gdal.LineString")
     @js.native
-    class LineString ()
+    open class LineString ()
       extends typings.gdal.mod.LineString
     
     @JSGlobal("gdal.LinearRing")
     @js.native
-    class LinearRing ()
+    open class LinearRing ()
       extends typings.gdal.mod.LinearRing
     
     @JSGlobal("gdal.MultiLineString")
     @js.native
-    class MultiLineString ()
+    open class MultiLineString ()
       extends typings.gdal.mod.MultiLineString
     
     @JSGlobal("gdal.MultiPoint")
     @js.native
-    class MultiPoint ()
+    open class MultiPoint ()
       extends typings.gdal.mod.MultiPoint
     
     @JSGlobal("gdal.MultiPolygon")
     @js.native
-    class MultiPolygon ()
+    open class MultiPolygon ()
       extends typings.gdal.mod.MultiPolygon
     
     @JSGlobal("gdal.ODrCCreateDataSource")
@@ -516,7 +519,7 @@ object global {
     
     @JSGlobal("gdal.Point")
     @js.native
-    class Point protected ()
+    open class Point protected ()
       extends typings.gdal.mod.Point {
       def this(x: Double, y: Double) = this()
       def this(x: Double, y: Double, z: Double) = this()
@@ -524,12 +527,12 @@ object global {
     
     @JSGlobal("gdal.Polygon")
     @js.native
-    class Polygon ()
+    open class Polygon ()
       extends typings.gdal.mod.Polygon
     
     @JSGlobal("gdal.SpatialReference")
     @js.native
-    class SpatialReference ()
+    open class SpatialReference ()
       extends typings.gdal.mod.SpatialReference {
       def this(wkt: String) = this()
     }
@@ -542,7 +545,7 @@ object global {
       
       inline def fromCRSURL(input: String): typings.gdal.mod.SpatialReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCRSURL")(input.asInstanceOf[js.Any]).asInstanceOf[typings.gdal.mod.SpatialReference]
       
-      inline def fromEPSG(input: String): typings.gdal.mod.SpatialReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEPSG")(input.asInstanceOf[js.Any]).asInstanceOf[typings.gdal.mod.SpatialReference]
+      inline def fromEPSG(input: Double): typings.gdal.mod.SpatialReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEPSG")(input.asInstanceOf[js.Any]).asInstanceOf[typings.gdal.mod.SpatialReference]
       
       inline def fromEPSGA(input: Double): typings.gdal.mod.SpatialReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEPSGA")(input.asInstanceOf[js.Any]).asInstanceOf[typings.gdal.mod.SpatialReference]
       
@@ -595,11 +598,8 @@ object global {
     
     inline def contourGenerate(options: ContourGenerateOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("contourGenerate")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def decToDMS_lat(angle: Double, axis: lat): String = (^.asInstanceOf[js.Dynamic].applyDynamic("decToDMS")(angle.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def decToDMS_lat(angle: Double, axis: lat, precision: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("decToDMS")(angle.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[String]
-    
-    inline def decToDMS_long(angle: Double, axis: long): String = (^.asInstanceOf[js.Dynamic].applyDynamic("decToDMS")(angle.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[String]
-    inline def decToDMS_long(angle: Double, axis: long, precision: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("decToDMS")(angle.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def decToDMS(angle: Double, axis: lat | long): String = (^.asInstanceOf[js.Dynamic].applyDynamic("decToDMS")(angle.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def decToDMS(angle: Double, axis: lat | long, precision: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("decToDMS")(angle.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[String]
     
     @JSGlobal("gdal.drivers")
     @js.native
@@ -615,29 +615,25 @@ object global {
       
       @JSGlobal("gdal.lastError.message")
       @js.native
-      def message: js.Any = js.native
-      inline def message_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("message")(x.asInstanceOf[js.Any])
+      def message: Any = js.native
+      inline def message_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("message")(x.asInstanceOf[js.Any])
       
       @JSGlobal("gdal.lastError.number")
       @js.native
-      def number: js.Any = js.native
-      inline def number_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("number")(x.asInstanceOf[js.Any])
+      def number: Any = js.native
+      inline def number_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("number")(x.asInstanceOf[js.Any])
       
       @JSGlobal("gdal.lastError.type")
       @js.native
-      val `type`: js.Any = js.native
+      val `type`: Any = js.native
     }
     
     inline def open(path: String): Dataset = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any]).asInstanceOf[Dataset]
+    inline def open(path: String, mode: r | rPlussign | w): Dataset = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Dataset]
+    inline def open(path: String, mode: r | rPlussign | w, drivers: String): Dataset = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], drivers.asInstanceOf[js.Any])).asInstanceOf[Dataset]
+    inline def open(path: String, mode: r | rPlussign | w, drivers: js.Array[String]): Dataset = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], drivers.asInstanceOf[js.Any])).asInstanceOf[Dataset]
     inline def open(path: String, mode: Unit, drivers: String): Dataset = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], drivers.asInstanceOf[js.Any])).asInstanceOf[Dataset]
     inline def open(path: String, mode: Unit, drivers: js.Array[String]): Dataset = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], drivers.asInstanceOf[js.Any])).asInstanceOf[Dataset]
-    
-    inline def open_r(path: String, mode: r): Dataset = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Dataset]
-    inline def open_r(path: String, mode: rPlussign): Dataset = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Dataset]
-    inline def open_r(path: String, mode: rPlussign, drivers: String): Dataset = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], drivers.asInstanceOf[js.Any])).asInstanceOf[Dataset]
-    inline def open_r(path: String, mode: rPlussign, drivers: js.Array[String]): Dataset = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], drivers.asInstanceOf[js.Any])).asInstanceOf[Dataset]
-    inline def open_r(path: String, mode: r, drivers: String): Dataset = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], drivers.asInstanceOf[js.Any])).asInstanceOf[Dataset]
-    inline def open_r(path: String, mode: r, drivers: js.Array[String]): Dataset = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], drivers.asInstanceOf[js.Any])).asInstanceOf[Dataset]
     
     inline def open_w(
       path: String,
@@ -649,9 +645,6 @@ object global {
       data_type: js.UndefOr[Double],
       creation_options: js.UndefOr[js.Array[String] | js.Object]
     ): Dataset = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], drivers.asInstanceOf[js.Any], x_size.asInstanceOf[js.Any], y_size.asInstanceOf[js.Any], band_count.asInstanceOf[js.Any], data_type.asInstanceOf[js.Any], creation_options.asInstanceOf[js.Any])).asInstanceOf[Dataset]
-    inline def open_w(path: String, mode: w): Dataset = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Dataset]
-    inline def open_w(path: String, mode: w, drivers: String): Dataset = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], drivers.asInstanceOf[js.Any])).asInstanceOf[Dataset]
-    inline def open_w(path: String, mode: w, drivers: js.Array[String]): Dataset = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], drivers.asInstanceOf[js.Any])).asInstanceOf[Dataset]
     
     inline def polygonize(options: PolygonizeOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("polygonize")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     

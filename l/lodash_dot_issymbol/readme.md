@@ -10,10 +10,10 @@ The lodash method `_.isSymbol` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.issymbol |
 | Keywords           | lodash-modularized, issymbol |
-| # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 25243 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2843.6666666666665 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

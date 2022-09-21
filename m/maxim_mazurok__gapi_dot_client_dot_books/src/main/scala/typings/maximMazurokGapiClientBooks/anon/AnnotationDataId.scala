@@ -104,7 +104,7 @@ object AnnotationDataId {
     
     inline def setAnnotationDataIdUndefined: Self = StObject.set(x, "annotationDataId", js.undefined)
     
-    inline def setAnnotationDataIdVarargs(value: String*): Self = StObject.set(x, "annotationDataId", js.Array(value :_*))
+    inline def setAnnotationDataIdVarargs(value: String*): Self = StObject.set(x, "annotationDataId", js.Array(value*))
     
     inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     

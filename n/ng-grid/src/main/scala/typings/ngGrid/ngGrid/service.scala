@@ -1,6 +1,5 @@
 package typings.ngGrid.ngGrid
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ object service {
     
     def AssignGridContainers(
       $scope: IGridScope,
-      rootel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any,
+      rootel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ Any,
       grid: IGridInstance
     ): Unit
     
@@ -29,7 +28,7 @@ object service {
     
     def digest($scope: IGridScope): Unit
     
-    var eventStorage: js.Any
+    var eventStorage: Any
     
     def getRealWidth(obj: IDimension): Double
     
@@ -44,7 +43,7 @@ object service {
   object IDomUtilityService {
     
     inline def apply(
-      AssignGridContainers: (IGridScope, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any, IGridInstance) => Unit,
+      AssignGridContainers: (IGridScope, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ Any, IGridInstance) => Unit,
       BuildStyles: (IGridScope, IGridInstance, Boolean) => Unit,
       LetterW: Double,
       RebuildGrid: (IGridScope, IGridInstance) => Unit,
@@ -52,7 +51,7 @@ object service {
       ScrollW: Double,
       UpdateGridLayout: (IGridScope, IGridInstance) => Unit,
       digest: IGridScope => Unit,
-      eventStorage: js.Any,
+      eventStorage: Any,
       getRealWidth: IDimension => Double,
       immediate: Double,
       numberOfGrids: Double,
@@ -66,14 +65,14 @@ object service {
     extension [Self <: IDomUtilityService](x: Self) {
       
       inline def setAssignGridContainers(
-        value: (IGridScope, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ js.Any, IGridInstance) => Unit
+        value: (IGridScope, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ Any, IGridInstance) => Unit
       ): Self = StObject.set(x, "AssignGridContainers", js.Any.fromFunction3(value))
       
       inline def setBuildStyles(value: (IGridScope, IGridInstance, Boolean) => Unit): Self = StObject.set(x, "BuildStyles", js.Any.fromFunction3(value))
       
       inline def setDigest(value: IGridScope => Unit): Self = StObject.set(x, "digest", js.Any.fromFunction1(value))
       
-      inline def setEventStorage(value: js.Any): Self = StObject.set(x, "eventStorage", value.asInstanceOf[js.Any])
+      inline def setEventStorage(value: Any): Self = StObject.set(x, "eventStorage", value.asInstanceOf[js.Any])
       
       inline def setGetRealWidth(value: IDimension => Double): Self = StObject.set(x, "getRealWidth", js.Any.fromFunction1(value))
       
@@ -112,21 +111,21 @@ object service {
       
       inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+      inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value*))
     }
   }
   
   trait ISortService extends StObject {
     
-    def Sort(sortInfo: ISortInfo, data: js.Any): Unit
+    def Sort(sortInfo: ISortInfo, data: Any): Unit
     
-    def basicSort(a: js.Any, b: js.Any): Double
+    def basicSort(a: Any, b: Any): Double
     
-    var colSortFnCache: js.Any
+    var colSortFnCache: Any
     
-    def getSortFn(col: IColumn, data: js.Any): js.Function2[/* a */ js.Any, /* b */ js.Any, Double]
+    def getSortFn(col: IColumn, data: Any): js.Function2[/* a */ Any, /* b */ Any, Double]
     
-    def guessSortFn(item: js.Any): js.Function2[/* a */ js.Any, /* b */ js.Any, Double]
+    def guessSortFn(item: Any): js.Function2[/* a */ Any, /* b */ Any, Double]
     
     var isCustomSort: Boolean
     
@@ -136,9 +135,9 @@ object service {
     
     def sortBool(a: Boolean, b: Boolean): Double
     
-    def sortData(sortInfo: ISortInfo, data: js.Any): Unit
+    def sortData(sortInfo: ISortInfo, data: Any): Unit
     
-    def sortDate(a: Date, b: Date): Double
+    def sortDate(a: js.Date, b: js.Date): Double
     
     def sortNumber(a: Double, b: Double): Double
     
@@ -147,17 +146,17 @@ object service {
   object ISortService {
     
     inline def apply(
-      Sort: (ISortInfo, js.Any) => Unit,
-      basicSort: (js.Any, js.Any) => Double,
-      colSortFnCache: js.Any,
-      getSortFn: (IColumn, js.Any) => js.Function2[/* a */ js.Any, /* b */ js.Any, Double],
-      guessSortFn: js.Any => js.Function2[/* a */ js.Any, /* b */ js.Any, Double],
+      Sort: (ISortInfo, Any) => Unit,
+      basicSort: (Any, Any) => Double,
+      colSortFnCache: Any,
+      getSortFn: (IColumn, Any) => js.Function2[/* a */ Any, /* b */ Any, Double],
+      guessSortFn: Any => js.Function2[/* a */ Any, /* b */ Any, Double],
       isCustomSort: Boolean,
       isSorting: Boolean,
       sortAlpha: (String, String) => Double,
       sortBool: (Boolean, Boolean) => Double,
-      sortData: (ISortInfo, js.Any) => Unit,
-      sortDate: (Date, Date) => Double,
+      sortData: (ISortInfo, Any) => Unit,
+      sortDate: (js.Date, js.Date) => Double,
       sortNumber: (Double, Double) => Double,
       sortNumberStr: (String, String) => Double
     ): ISortService = {
@@ -167,27 +166,27 @@ object service {
     
     extension [Self <: ISortService](x: Self) {
       
-      inline def setBasicSort(value: (js.Any, js.Any) => Double): Self = StObject.set(x, "basicSort", js.Any.fromFunction2(value))
+      inline def setBasicSort(value: (Any, Any) => Double): Self = StObject.set(x, "basicSort", js.Any.fromFunction2(value))
       
-      inline def setColSortFnCache(value: js.Any): Self = StObject.set(x, "colSortFnCache", value.asInstanceOf[js.Any])
+      inline def setColSortFnCache(value: Any): Self = StObject.set(x, "colSortFnCache", value.asInstanceOf[js.Any])
       
-      inline def setGetSortFn(value: (IColumn, js.Any) => js.Function2[/* a */ js.Any, /* b */ js.Any, Double]): Self = StObject.set(x, "getSortFn", js.Any.fromFunction2(value))
+      inline def setGetSortFn(value: (IColumn, Any) => js.Function2[/* a */ Any, /* b */ Any, Double]): Self = StObject.set(x, "getSortFn", js.Any.fromFunction2(value))
       
-      inline def setGuessSortFn(value: js.Any => js.Function2[/* a */ js.Any, /* b */ js.Any, Double]): Self = StObject.set(x, "guessSortFn", js.Any.fromFunction1(value))
+      inline def setGuessSortFn(value: Any => js.Function2[/* a */ Any, /* b */ Any, Double]): Self = StObject.set(x, "guessSortFn", js.Any.fromFunction1(value))
       
       inline def setIsCustomSort(value: Boolean): Self = StObject.set(x, "isCustomSort", value.asInstanceOf[js.Any])
       
       inline def setIsSorting(value: Boolean): Self = StObject.set(x, "isSorting", value.asInstanceOf[js.Any])
       
-      inline def setSort(value: (ISortInfo, js.Any) => Unit): Self = StObject.set(x, "Sort", js.Any.fromFunction2(value))
+      inline def setSort(value: (ISortInfo, Any) => Unit): Self = StObject.set(x, "Sort", js.Any.fromFunction2(value))
       
       inline def setSortAlpha(value: (String, String) => Double): Self = StObject.set(x, "sortAlpha", js.Any.fromFunction2(value))
       
       inline def setSortBool(value: (Boolean, Boolean) => Double): Self = StObject.set(x, "sortBool", js.Any.fromFunction2(value))
       
-      inline def setSortData(value: (ISortInfo, js.Any) => Unit): Self = StObject.set(x, "sortData", js.Any.fromFunction2(value))
+      inline def setSortData(value: (ISortInfo, Any) => Unit): Self = StObject.set(x, "sortData", js.Any.fromFunction2(value))
       
-      inline def setSortDate(value: (Date, Date) => Double): Self = StObject.set(x, "sortDate", js.Any.fromFunction2(value))
+      inline def setSortDate(value: (js.Date, js.Date) => Double): Self = StObject.set(x, "sortDate", js.Any.fromFunction2(value))
       
       inline def setSortNumber(value: (Double, Double) => Double): Self = StObject.set(x, "sortNumber", js.Any.fromFunction2(value))
       
@@ -199,34 +198,34 @@ object service {
     
     def endsWith(str: String, suffix: String): Boolean
     
-    def evalProperty(entity: js.Any, path: String): js.Any
+    def evalProperty(entity: Any, path: String): Any
     
-    def forIn(obj: js.Any, action: js.Function2[/* value */ js.Any, /* property */ String, js.Object]): Unit
+    def forIn(obj: Any, action: js.Function2[/* value */ Any, /* property */ String, js.Object]): Unit
     
-    def getElementsByClassName(cl: String): js.Array[js.Any]
+    def getElementsByClassName(cl: String): js.Array[Any]
     
-    def getInstanceType(o: js.Any): String
+    def getInstanceType(o: Any): String
     
-    def isNullOrUndefined(obj: js.Any): Boolean
+    def isNullOrUndefined(obj: Any): Boolean
     
     def newId(): String
     
     def seti18n($scope: IGridScope, language: String): Unit
     
-    def visualLength(node: js.Any): Double
+    def visualLength(node: Any): Double
   }
   object IUtilityService {
     
     inline def apply(
       endsWith: (String, String) => Boolean,
-      evalProperty: (js.Any, String) => js.Any,
-      forIn: (js.Any, js.Function2[/* value */ js.Any, /* property */ String, js.Object]) => Unit,
-      getElementsByClassName: String => js.Array[js.Any],
-      getInstanceType: js.Any => String,
-      isNullOrUndefined: js.Any => Boolean,
+      evalProperty: (Any, String) => Any,
+      forIn: (Any, js.Function2[/* value */ Any, /* property */ String, js.Object]) => Unit,
+      getElementsByClassName: String => js.Array[Any],
+      getInstanceType: Any => String,
+      isNullOrUndefined: Any => Boolean,
       newId: () => String,
       seti18n: (IGridScope, String) => Unit,
-      visualLength: js.Any => Double
+      visualLength: Any => Double
     ): IUtilityService = {
       val __obj = js.Dynamic.literal(endsWith = js.Any.fromFunction2(endsWith), evalProperty = js.Any.fromFunction2(evalProperty), forIn = js.Any.fromFunction2(forIn), getElementsByClassName = js.Any.fromFunction1(getElementsByClassName), getInstanceType = js.Any.fromFunction1(getInstanceType), isNullOrUndefined = js.Any.fromFunction1(isNullOrUndefined), newId = js.Any.fromFunction0(newId), seti18n = js.Any.fromFunction2(seti18n), visualLength = js.Any.fromFunction1(visualLength))
       __obj.asInstanceOf[IUtilityService]
@@ -236,21 +235,21 @@ object service {
       
       inline def setEndsWith(value: (String, String) => Boolean): Self = StObject.set(x, "endsWith", js.Any.fromFunction2(value))
       
-      inline def setEvalProperty(value: (js.Any, String) => js.Any): Self = StObject.set(x, "evalProperty", js.Any.fromFunction2(value))
+      inline def setEvalProperty(value: (Any, String) => Any): Self = StObject.set(x, "evalProperty", js.Any.fromFunction2(value))
       
-      inline def setForIn(value: (js.Any, js.Function2[/* value */ js.Any, /* property */ String, js.Object]) => Unit): Self = StObject.set(x, "forIn", js.Any.fromFunction2(value))
+      inline def setForIn(value: (Any, js.Function2[/* value */ Any, /* property */ String, js.Object]) => Unit): Self = StObject.set(x, "forIn", js.Any.fromFunction2(value))
       
-      inline def setGetElementsByClassName(value: String => js.Array[js.Any]): Self = StObject.set(x, "getElementsByClassName", js.Any.fromFunction1(value))
+      inline def setGetElementsByClassName(value: String => js.Array[Any]): Self = StObject.set(x, "getElementsByClassName", js.Any.fromFunction1(value))
       
-      inline def setGetInstanceType(value: js.Any => String): Self = StObject.set(x, "getInstanceType", js.Any.fromFunction1(value))
+      inline def setGetInstanceType(value: Any => String): Self = StObject.set(x, "getInstanceType", js.Any.fromFunction1(value))
       
-      inline def setIsNullOrUndefined(value: js.Any => Boolean): Self = StObject.set(x, "isNullOrUndefined", js.Any.fromFunction1(value))
+      inline def setIsNullOrUndefined(value: Any => Boolean): Self = StObject.set(x, "isNullOrUndefined", js.Any.fromFunction1(value))
       
       inline def setNewId(value: () => String): Self = StObject.set(x, "newId", js.Any.fromFunction0(value))
       
       inline def setSeti18n(value: (IGridScope, String) => Unit): Self = StObject.set(x, "seti18n", js.Any.fromFunction2(value))
       
-      inline def setVisualLength(value: js.Any => Double): Self = StObject.set(x, "visualLength", js.Any.fromFunction1(value))
+      inline def setVisualLength(value: Any => Double): Self = StObject.set(x, "visualLength", js.Any.fromFunction1(value))
     }
   }
 }

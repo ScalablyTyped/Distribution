@@ -4,17 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response including listed notes.
-  */
 trait SchemaListNotesResponse extends StObject {
   
   /**
-    * The next pagination token in the list response. It should be used as
-    * page_token for the following request. An empty value means no more
-    * result.
+    * The next pagination token in the list response. It should be used as page_token for the following request. An empty value means no more result.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The occurrences requested
@@ -32,12 +27,14 @@ object SchemaListNotesResponse {
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
+    
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     inline def setNotes(value: js.Array[SchemaNote]): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
     inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
     
-    inline def setNotesVarargs(value: SchemaNote*): Self = StObject.set(x, "notes", js.Array(value :_*))
+    inline def setNotesVarargs(value: SchemaNote*): Self = StObject.set(x, "notes", js.Array(value*))
   }
 }

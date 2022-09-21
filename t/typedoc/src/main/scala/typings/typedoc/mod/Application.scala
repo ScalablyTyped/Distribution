@@ -6,7 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typedoc", "Application")
 @js.native
-class Application ()
+/**
+  * Create a new TypeDoc application instance.
+  *
+  * @param options An object containing the options that should be used.
+  */
+open class Application ()
   extends typings.typedoc.applicationMod.Application
 /* static members */
 object Application {
@@ -15,11 +20,18 @@ object Application {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("typedoc", "Application.SUPPORTED_TS_VERSION")
+  /**
+    * Emitted after plugins have been loaded and options have been read, but before they have been frozen.
+    * The listener will be given an instance of {@link Application} and the {@link TypeDocOptions | Partial<TypeDocOptions>}
+    * passed to `bootstrap`.
+    */
+  @JSImport("typedoc", "Application.EVENT_BOOTSTRAP_END")
   @js.native
-  def SUPPORTED_TS_VERSION: String = js.native
-  inline def SUPPORTED_TS_VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUPPORTED_TS_VERSION")(x.asInstanceOf[js.Any])
+  val EVENT_BOOTSTRAP_END: String = js.native
   
+  /**
+    * The version number of TypeDoc.
+    */
   @JSImport("typedoc", "Application.VERSION")
   @js.native
   def VERSION: String = js.native

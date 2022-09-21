@@ -94,18 +94,18 @@ object anon {
   
   trait Express extends StObject {
     
-    def express(): js.Any
+    def express(): Any
   }
   object Express {
     
-    inline def apply(express: () => js.Any): Express = {
+    inline def apply(express: () => Any): Express = {
       val __obj = js.Dynamic.literal(express = js.Any.fromFunction0(express))
       __obj.asInstanceOf[Express]
     }
     
     extension [Self <: Express](x: Self) {
       
-      inline def setExpress(value: () => js.Any): Self = StObject.set(x, "express", js.Any.fromFunction0(value))
+      inline def setExpress(value: () => Any): Self = StObject.set(x, "express", js.Any.fromFunction0(value))
     }
   }
   
@@ -128,7 +128,7 @@ object anon {
   
   trait Route extends StObject {
     
-    var route: js.UndefOr[js.Any] = js.undefined
+    var route: js.UndefOr[Any] = js.undefined
     
     var url: js.UndefOr[String] = js.undefined
   }
@@ -141,7 +141,7 @@ object anon {
     
     extension [Self <: Route](x: Self) {
       
-      inline def setRoute(value: js.Any): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+      inline def setRoute(value: Any): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
       
       inline def setRouteUndefined: Self = StObject.set(x, "route", js.undefined)
       

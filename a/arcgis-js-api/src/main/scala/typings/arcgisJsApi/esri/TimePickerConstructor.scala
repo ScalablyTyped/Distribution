@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TimePickerConstructor
   extends StObject
-     with Instantiable0[TimePicker]
+     with /**
+  * The `TimePicker` class provides functionality to easily choose an input date.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-TimePicker.html)
+  */
+Instantiable0[TimePicker]
      with Instantiable1[/* properties */ TimePickerProperties, TimePicker]

@@ -10,15 +10,12 @@ Console browser and server app module with simplified express-like API
 | ------------------ | :-------------: |
 | Full name          | webprogbase-console-view |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 649 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 47.0 |
+| # stars            | 0.0 |
 
 ## Links
-- [Homepage](https://github.com/DevInCube/webprogbase-console-view#readme)
-- [Bugs](https://github.com/DevInCube/webprogbase-console-view/issues)
-- [Repository](https://github.com/DevInCube/webprogbase-console-view)
 - [Npm](https://www.npmjs.com/package/webprogbase-console-view)
     
 

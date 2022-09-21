@@ -17,7 +17,7 @@ trait Areas extends StObject {
   
   def Item(Index: Double): Range = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   def _Default(Index: Double): Range = js.native
 }

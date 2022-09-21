@@ -19,7 +19,7 @@ trait ScheduledInstanceAvailability extends StObject {
   /**
     * The time period for the first schedule to start.
     */
-  var FirstSlotStartTime: js.UndefOr[DateTime] = js.undefined
+  var FirstSlotStartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The hourly price for a single instance.
@@ -88,7 +88,7 @@ object ScheduledInstanceAvailability {
     
     inline def setAvailableInstanceCountUndefined: Self = StObject.set(x, "AvailableInstanceCount", js.undefined)
     
-    inline def setFirstSlotStartTime(value: DateTime): Self = StObject.set(x, "FirstSlotStartTime", value.asInstanceOf[js.Any])
+    inline def setFirstSlotStartTime(value: js.Date): Self = StObject.set(x, "FirstSlotStartTime", value.asInstanceOf[js.Any])
     
     inline def setFirstSlotStartTimeUndefined: Self = StObject.set(x, "FirstSlotStartTime", js.undefined)
     

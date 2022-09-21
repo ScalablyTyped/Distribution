@@ -51,7 +51,7 @@ object PackFileSection {
     
     inline def setFiles(value: js.Array[FileConfig]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    inline def setFilesVarargs(value: FileConfig*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: FileConfig*): Self = StObject.set(x, "files", js.Array(value*))
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

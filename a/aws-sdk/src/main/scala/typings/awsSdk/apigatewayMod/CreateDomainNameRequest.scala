@@ -32,16 +32,21 @@ trait CreateDomainNameRequest extends StObject {
   var certificatePrivateKey: js.UndefOr[String] = js.undefined
   
   /**
-    * [Required] The name of the DomainName resource.
+    * The name of the DomainName resource.
     */
   var domainName: String
   
   /**
-    * The endpoint configuration of this DomainName showing the endpoint types of the domain name.
+    * The endpoint configuration of this DomainName showing the endpoint types of the domain name. 
     */
   var endpointConfiguration: js.UndefOr[EndpointConfiguration] = js.undefined
   
   var mutualTlsAuthentication: js.UndefOr[MutualTlsAuthenticationInput] = js.undefined
+  
+  /**
+    * The ARN of the public certificate issued by ACM to validate ownership of your custom domain. Only required when configuring mutual TLS and using an ACM imported or private CA certificate ARN as the regionalCertificateArn.
+    */
+  var ownershipVerificationCertificateArn: js.UndefOr[String] = js.undefined
   
   /**
     * The reference to an AWS-managed certificate that will be used by regional endpoint for this domain name. AWS Certificate Manager is the only supported source.
@@ -101,6 +106,10 @@ object CreateDomainNameRequest {
     inline def setMutualTlsAuthentication(value: MutualTlsAuthenticationInput): Self = StObject.set(x, "mutualTlsAuthentication", value.asInstanceOf[js.Any])
     
     inline def setMutualTlsAuthenticationUndefined: Self = StObject.set(x, "mutualTlsAuthentication", js.undefined)
+    
+    inline def setOwnershipVerificationCertificateArn(value: String): Self = StObject.set(x, "ownershipVerificationCertificateArn", value.asInstanceOf[js.Any])
+    
+    inline def setOwnershipVerificationCertificateArnUndefined: Self = StObject.set(x, "ownershipVerificationCertificateArn", js.undefined)
     
     inline def setRegionalCertificateArn(value: String): Self = StObject.set(x, "regionalCertificateArn", value.asInstanceOf[js.Any])
     

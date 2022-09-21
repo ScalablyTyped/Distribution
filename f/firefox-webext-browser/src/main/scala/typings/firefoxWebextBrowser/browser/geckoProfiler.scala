@@ -24,7 +24,6 @@ object geckoProfiler {
     - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.screenshots
     - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.seqstyle
     - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.stackwalk
-    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tasktracer
     - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.threads
     - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.jstracer
     - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.jsallocations
@@ -36,11 +35,15 @@ object geckoProfiler {
     - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.fileioall
     - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.noiostacks
     - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.audiocallbacktracing
+    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.cpu
+    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.notimerresolutionchange
   */
   trait ProfilerFeature extends StObject
   object ProfilerFeature {
     
     inline def audiocallbacktracing: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.audiocallbacktracing = "audiocallbacktracing".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.audiocallbacktracing]
+    
+    inline def cpu: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.cpu = "cpu".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.cpu]
     
     inline def fileio: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.fileio = "fileio".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.fileio]
     
@@ -66,6 +69,8 @@ object geckoProfiler {
     
     inline def nostacksampling: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.nostacksampling = "nostacksampling".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.nostacksampling]
     
+    inline def notimerresolutionchange: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.notimerresolutionchange = "notimerresolutionchange".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.notimerresolutionchange]
+    
     inline def preferencereads: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.preferencereads = "preferencereads".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.preferencereads]
     
     inline def responsiveness: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.responsiveness = "responsiveness".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.responsiveness]
@@ -75,8 +80,6 @@ object geckoProfiler {
     inline def seqstyle: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.seqstyle = "seqstyle".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.seqstyle]
     
     inline def stackwalk: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.stackwalk = "stackwalk".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.stackwalk]
-    
-    inline def tasktracer: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tasktracer = "tasktracer".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.tasktracer]
     
     inline def threads: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.threads = "threads".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.threads]
   }
@@ -117,7 +120,7 @@ object geckoProfiler {
       
       inline def setFeatures(value: js.Array[ProfilerFeature]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
       
-      inline def setFeaturesVarargs(value: ProfilerFeature*): Self = StObject.set(x, "features", js.Array(value :_*))
+      inline def setFeaturesVarargs(value: ProfilerFeature*): Self = StObject.set(x, "features", js.Array(value*))
       
       inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
@@ -125,7 +128,7 @@ object geckoProfiler {
       
       inline def setThreadsUndefined: Self = StObject.set(x, "threads", js.undefined)
       
-      inline def setThreadsVarargs(value: String*): Self = StObject.set(x, "threads", js.Array(value :_*))
+      inline def setThreadsVarargs(value: String*): Self = StObject.set(x, "threads", js.Array(value*))
       
       inline def setWindowLength(value: Double): Self = StObject.set(x, "windowLength", value.asInstanceOf[js.Any])
       

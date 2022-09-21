@@ -9,7 +9,7 @@ trait BrowseOptions[TObject] extends StObject {
   /**
     * The callback called for each batch of objects.
     */
-  val batch: js.UndefOr[js.Function1[/* batch */ js.Array[TObject & ObjectWithObjectID], js.Any]] = js.undefined
+  val batch: js.UndefOr[js.Function1[/* batch */ js.Array[TObject & ObjectWithObjectID], Any]] = js.undefined
   
   /**
     * The callback called to determine if the browse should stop. By
@@ -26,7 +26,7 @@ object BrowseOptions {
   
   extension [Self <: BrowseOptions[?], TObject](x: Self & BrowseOptions[TObject]) {
     
-    inline def setBatch(value: /* batch */ js.Array[TObject & ObjectWithObjectID] => js.Any): Self = StObject.set(x, "batch", js.Any.fromFunction1(value))
+    inline def setBatch(value: /* batch */ js.Array[TObject & ObjectWithObjectID] => Any): Self = StObject.set(x, "batch", js.Any.fromFunction1(value))
     
     inline def setBatchUndefined: Self = StObject.set(x, "batch", js.undefined)
     

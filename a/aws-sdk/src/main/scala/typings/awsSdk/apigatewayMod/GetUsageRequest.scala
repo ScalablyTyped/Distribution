@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetUsageRequest extends StObject {
   
   /**
-    * [Required] The ending date (e.g., 2016-12-31) of the usage data.
+    * The ending date (e.g., 2016-12-31) of the usage data.
     */
   var endDate: String
   
@@ -27,12 +27,12 @@ trait GetUsageRequest extends StObject {
   var position: js.UndefOr[String] = js.undefined
   
   /**
-    * [Required] The starting date (e.g., 2016-01-01) of the usage data.
+    * The starting date (e.g., 2016-01-01) of the usage data.
     */
   var startDate: String
   
   /**
-    * [Required] The Id of the usage plan associated with the usage data.
+    * The Id of the usage plan associated with the usage data.
     */
   var usagePlanId: String
 }

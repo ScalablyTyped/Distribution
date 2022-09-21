@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Editor extends StObject {
   
-  def buildEditForm(container: JQuery[HTMLElement], formId: String, `type`: String, ns: String, node: js.Any): JQuery[HTMLElement] = js.native
+  def buildEditForm(container: JQuery[HTMLElement], formId: String, `type`: String, ns: String, node: Any): JQuery[HTMLElement] = js.native
   
   /**
     * Create a editor ui component
@@ -86,5 +86,5 @@ trait Editor extends StObject {
     * Validate a node
     * @param node - the node being validated
     */
-  def validateNode(node: js.Any): Boolean = js.native
+  def validateNode(node: Any): Boolean = js.native
 }

@@ -1,5 +1,6 @@
 package typings.appBuilderLib
 
+import typings.appBuilderLib.anon.RequiredElectronBrandingO
 import typings.appBuilderLib.configurationMod.Configuration
 import typings.appBuilderLib.frameworkMod.Framework
 import typings.appBuilderLib.mod.Packager
@@ -13,7 +14,34 @@ object electronFrameworkMod {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def createBrandingOpts(opts: Configuration): RequiredElectronBrandingO = ^.asInstanceOf[js.Dynamic].applyDynamic("createBrandingOpts")(opts.asInstanceOf[js.Any]).asInstanceOf[RequiredElectronBrandingO]
+  
   inline def createElectronFrameworkSupport(configuration: Configuration, packager: Packager): js.Promise[Framework] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElectronFrameworkSupport")(configuration.asInstanceOf[js.Any], packager.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Framework]]
+  
+  trait ElectronBrandingOptions extends StObject {
+    
+    var productName: js.UndefOr[String] = js.undefined
+    
+    var projectName: js.UndefOr[String] = js.undefined
+  }
+  object ElectronBrandingOptions {
+    
+    inline def apply(): ElectronBrandingOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ElectronBrandingOptions]
+    }
+    
+    extension [Self <: ElectronBrandingOptions](x: Self) {
+      
+      inline def setProductName(value: String): Self = StObject.set(x, "productName", value.asInstanceOf[js.Any])
+      
+      inline def setProductNameUndefined: Self = StObject.set(x, "productName", js.undefined)
+      
+      inline def setProjectName(value: String): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
+      
+      inline def setProjectNameUndefined: Self = StObject.set(x, "projectName", js.undefined)
+    }
+  }
   
   trait ElectronDownloadOptions extends StObject {
     

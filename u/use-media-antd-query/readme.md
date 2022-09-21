@@ -1,7 +1,7 @@
 
 # Scala.js typings for use-media-antd-query
 
-Typings are for version 1.0.3
+Typings are for version 1.1.0
 
 ## Library description:
 An antd compatible media query hooks
@@ -10,10 +10,10 @@ An antd compatible media query hooks
 | ------------------ | :-------------: |
 | Full name          | use-media-antd-query |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 40 |
-| # downloads        | 636309 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 134363.66666666666 |
+| # stars            | 13.0 |
 
 ## Links
 - [Homepage](https://github.com/chenshuai2144/useMediaQuery#readme)

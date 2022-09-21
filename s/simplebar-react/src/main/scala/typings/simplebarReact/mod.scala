@@ -11,8 +11,8 @@ object mod {
   
   @JSImport("simplebar-react", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[Props, js.Object, js.Any]
+  open class default ()
+    extends Component[Props, js.Object, Any]
   
   trait Props
     extends StObject
@@ -41,5 +41,5 @@ object mod {
     }
   }
   
-  type SimpleBar = Component[Props, js.Object, js.Any]
+  type SimpleBar = Component[Props, js.Object, Any]
 }

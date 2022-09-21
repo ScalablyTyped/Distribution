@@ -1,6 +1,6 @@
 package typings.expoLocation
 
-import typings.unimodulesCore.mod.EventEmitter
+import typings.expoModulesCore.mod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

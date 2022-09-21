@@ -195,7 +195,7 @@ trait ojChart[K, D]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[auto | slideToLeft | slideToRight | none], 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   def addEventListener(
@@ -203,7 +203,7 @@ trait ojChart[K, D]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[auto | slideToLeft | slideToRight | none], 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
@@ -212,7 +212,7 @@ trait ojChart[K, D]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[auto | alphaFade | zoom | none], 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   def addEventListener(
@@ -220,35 +220,35 @@ trait ojChart[K, D]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[auto | alphaFade | zoom | none], 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: coordinateSystemChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[polar | cartesian], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[polar | cartesian], Any]
   ): Unit = js.native
   def addEventListener(
     `type`: coordinateSystemChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[polar | cartesian], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[polar | cartesian], Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: dataCursorBehaviorChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[smooth | snap | auto], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[smooth | snap | auto], Any]
   ): Unit = js.native
   def addEventListener(
     `type`: dataCursorBehaviorChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[smooth | snap | auto], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[smooth | snap | auto], Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: dataCursorChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[off | on | auto], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[off | on | auto], Any]
   ): Unit = js.native
   def addEventListener(
     `type`: dataCursorChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[off | on | auto], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[off | on | auto], Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
@@ -256,7 +256,7 @@ trait ojChart[K, D]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[pan | zoom | select | off | user], 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   def addEventListener(
@@ -264,7 +264,7 @@ trait ojChart[K, D]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[pan | zoom | select | off | user], 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
@@ -273,7 +273,7 @@ trait ojChart[K, D]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[on | seriesOnly | groupsOnly | off], 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   def addEventListener(
@@ -281,7 +281,7 @@ trait ojChart[K, D]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[on | seriesOnly | groupsOnly | off], 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
@@ -290,7 +290,7 @@ trait ojChart[K, D]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[withRescale | withoutRescale | none], 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   def addEventListener(
@@ -298,61 +298,53 @@ trait ojChart[K, D]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[withRescale | withoutRescale | none], 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: highlightMatchChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[any | all], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[any | all], Any]
   ): Unit = js.native
   def addEventListener(
     `type`: highlightMatchChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[any | all], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[any | all], Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: hoverBehaviorChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[dim | none], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[dim | none], Any]
   ): Unit = js.native
   def addEventListener(
     `type`: hoverBehaviorChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[dim | none], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[dim | none], Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: initialZoomingChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[first | last | none], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[first | last | none], Any]
   ): Unit = js.native
   def addEventListener(
     `type`: initialZoomingChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[first | last | none], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[first | last | none], Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: orientationChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[horizontal | vertical], 
-      js.Any
-    ]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[horizontal | vertical], Any]
   ): Unit = js.native
   def addEventListener(
     `type`: orientationChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[horizontal | vertical], 
-      js.Any
-    ],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[horizontal | vertical], Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: polarGridShapeChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[polygon | circle], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[polygon | circle], Any]
   ): Unit = js.native
   def addEventListener(
     `type`: polarGridShapeChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[polygon | circle], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[polygon | circle], Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
@@ -360,7 +352,7 @@ trait ojChart[K, D]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[single | multiple | none], 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   def addEventListener(
@@ -368,7 +360,7 @@ trait ojChart[K, D]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[single | multiple | none], 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
@@ -377,7 +369,7 @@ trait ojChart[K, D]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[ascending | descending | off], 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   def addEventListener(
@@ -385,35 +377,35 @@ trait ojChart[K, D]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[ascending | descending | off], 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: splitDualYChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[on | off | auto], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[on | off | auto], Any]
   ): Unit = js.native
   def addEventListener(
     `type`: splitDualYChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[on | off | auto], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[on | off | auto], Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: stackChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[on | off], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[on | off], Any]
   ): Unit = js.native
   def addEventListener(
     `type`: stackChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[on | off], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[on | off], Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: stackLabelChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[on | off], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[on | off], Any]
   ): Unit = js.native
   def addEventListener(
     `type`: stackLabelChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[on | off], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[on | off], Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
@@ -421,7 +413,7 @@ trait ojChart[K, D]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[enabled | mixedFrequency | skipGaps | disabled | auto], 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   def addEventListener(
@@ -429,17 +421,17 @@ trait ojChart[K, D]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[enabled | mixedFrequency | skipGaps | disabled | auto], 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: touchResponseChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[touchStart | auto], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[touchStart | auto], Any]
   ): Unit = js.native
   def addEventListener(
     `type`: touchResponseChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[touchStart | auto], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[touchStart | auto], Any],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
@@ -449,7 +441,7 @@ trait ojChart[K, D]
       /* ev */ JetElementCustomEvent[
         line | area | lineWithArea | stock | boxPlot | combo | pie | scatter | bubble | funnel | pyramid | bar
       ], 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   def addEventListener(
@@ -459,7 +451,7 @@ trait ojChart[K, D]
       /* ev */ JetElementCustomEvent[
         line | area | lineWithArea | stock | boxPlot | combo | pie | scatter | bubble | funnel | pyramid | bar
       ], 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
@@ -468,7 +460,7 @@ trait ojChart[K, D]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[delayedScrollOnly | liveScrollOnly | delayed | live | off], 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   def addEventListener(
@@ -476,28 +468,28 @@ trait ojChart[K, D]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[delayedScrollOnly | liveScrollOnly | delayed | live | off], 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   def addEventListener(
     `type`: zoomDirectionChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[x | y | auto], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[x | y | auto], Any]
   ): Unit = js.native
   def addEventListener(
     `type`: zoomDirectionChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[x | y | auto], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[x | y | auto], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_asChanged(
     `type`: asChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_asChanged(
     `type`: asChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[String], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -506,7 +498,7 @@ trait ojChart[K, D]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[(DataProvider[K, D]) | Null], 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -515,19 +507,19 @@ trait ojChart[K, D]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[(DataProvider[K, D]) | Null], 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_dataCursorPositionChanged(
     `type`: dataCursorPositionChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[X], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[X], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_dataCursorPositionChanged(
     `type`: dataCursorPositionChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[X], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[X], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -536,7 +528,7 @@ trait ojChart[K, D]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[js.Function1[/* context */ DataLabelContext, Insert | PreventDefault]], 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -545,19 +537,19 @@ trait ojChart[K, D]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[js.Function1[/* context */ DataLabelContext, Insert | PreventDefault]], 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_dndChanged(
     `type`: dndChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Drag], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Drag], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_dndChanged(
     `type`: dndChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Drag], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Drag], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -566,7 +558,7 @@ trait ojChart[K, D]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[(js.Function2[/* param0 */ js.Object, /* param1 */ js.Object, Double]) | Null], 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -575,41 +567,41 @@ trait ojChart[K, D]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[(js.Function2[/* param0 */ js.Object, /* param1 */ js.Object, Double]) | Null], 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_hiddenCategoriesChanged(
     `type`: hiddenCategoriesChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[String]], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[String]], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_hiddenCategoriesChanged(
     `type`: hiddenCategoriesChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[String]], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[String]], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_highlightedCategoriesChanged(
     `type`: highlightedCategoriesChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[String]], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[String]], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_highlightedCategoriesChanged(
     `type`: highlightedCategoriesChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[String]], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[String]], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_legendChanged(
     `type`: legendChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[BackgroundColor], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[BackgroundColor], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_legendChanged(
     `type`: legendChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[BackgroundColor], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[BackgroundColor], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -618,7 +610,7 @@ trait ojChart[K, D]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ typings.oracleOraclejet.ojchartMod.ojChart.ojDrill, 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -627,7 +619,7 @@ trait ojChart[K, D]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ typings.oracleOraclejet.ojchartMod.ojChart.ojDrill, 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
@@ -637,7 +629,7 @@ trait ojChart[K, D]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ typings.oracleOraclejet.ojchartMod.ojChart.ojSelectInput, 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -646,7 +638,7 @@ trait ojChart[K, D]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ typings.oracleOraclejet.ojchartMod.ojChart.ojSelectInput, 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
@@ -656,7 +648,7 @@ trait ojChart[K, D]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ typings.oracleOraclejet.ojchartMod.ojChart.ojViewportChange, 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -665,7 +657,7 @@ trait ojChart[K, D]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ typings.oracleOraclejet.ojchartMod.ojChart.ojViewportChange, 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
@@ -675,7 +667,7 @@ trait ojChart[K, D]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ typings.oracleOraclejet.ojchartMod.ojChart.ojViewportChangeInput, 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -684,63 +676,63 @@ trait ojChart[K, D]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ typings.oracleOraclejet.ojchartMod.ojChart.ojViewportChangeInput, 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_otherThresholdChanged(
     `type`: otherThresholdChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_otherThresholdChanged(
     `type`: otherThresholdChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_overviewChanged(
     `type`: overviewChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Content], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Content], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_overviewChanged(
     `type`: overviewChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Content], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Content], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_pieCenterChanged(
     `type`: pieCenterChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Converter], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Converter], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_pieCenterChanged(
     `type`: pieCenterChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Converter], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Converter], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_plotAreaChanged(
     `type`: plotAreaChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[BorderWidth], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[BorderWidth], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_plotAreaChanged(
     `type`: plotAreaChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[BorderWidth], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[BorderWidth], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_selectionChanged(
     `type`: selectionChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[K]], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[K]], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_selectionChanged(
     `type`: selectionChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[K]], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[js.Array[K]], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
@@ -749,7 +741,7 @@ trait ojChart[K, D]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[(js.Function2[/* param0 */ js.Object, /* param1 */ js.Object, Double]) | Null], 
-      js.Any
+      Any
     ]
   ): Unit = js.native
   @JSName("addEventListener")
@@ -758,85 +750,85 @@ trait ojChart[K, D]
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
       /* ev */ JetElementCustomEvent[(js.Function2[/* param0 */ js.Object, /* param1 */ js.Object, Double]) | Null], 
-      js.Any
+      Any
     ],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_splitterPositionChanged(
     `type`: splitterPositionChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_splitterPositionChanged(
     `type`: splitterPositionChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Double], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_styleDefaultsChanged(
     `type`: styleDefaultsChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnimationDownColor], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnimationDownColor], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_styleDefaultsChanged(
     `type`: styleDefaultsChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnimationDownColor], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AnimationDownColor], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_tooltipChanged(
     `type`: tooltipChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Renderer], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Renderer], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_tooltipChanged(
     `type`: tooltipChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Renderer], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Renderer], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_valueFormatsChanged(
     `type`: valueFormatsChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Close], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Close], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_valueFormatsChanged(
     `type`: valueFormatsChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Close], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[Close], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_xAxisChanged(
     `type`: xAxisChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AxisLine], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AxisLine], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_xAxisChanged(
     `type`: xAxisChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AxisLine], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AxisLine], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_y2AxisChanged(
     `type`: y2AxisChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AlignTickMarks], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AlignTickMarks], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_y2AxisChanged(
     `type`: y2AxisChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AlignTickMarks], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[AlignTickMarks], Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_yAxisChanged(
     `type`: yAxisChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[BaselineScaling], js.Any]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[BaselineScaling], Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_yAxisChanged(
     `type`: yAxisChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[BaselineScaling], js.Any],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[BaselineScaling], Any],
     useCapture: Boolean
   ): Unit = js.native
   
@@ -993,129 +985,123 @@ trait ojChart[K, D]
   
   var legend: BackgroundColor = js.native
   
-  var onAnimationOnDataChangeChanged: (js.Function1[
-    /* event */ JetElementCustomEvent[auto | slideToLeft | slideToRight | none], 
-    js.Any
-  ]) | Null = js.native
+  var onAnimationOnDataChangeChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | slideToLeft | slideToRight | none], Any]) | Null = js.native
   
-  var onAnimationOnDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | alphaFade | zoom | none], js.Any]) | Null = js.native
+  var onAnimationOnDisplayChanged: (js.Function1[/* event */ JetElementCustomEvent[auto | alphaFade | zoom | none], Any]) | Null = js.native
   
-  var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], js.Any]) | Null = js.native
+  var onAsChanged: (js.Function1[/* event */ JetElementCustomEvent[String], Any]) | Null = js.native
   
-  var onCoordinateSystemChanged: (js.Function1[/* event */ JetElementCustomEvent[polar | cartesian], js.Any]) | Null = js.native
+  var onCoordinateSystemChanged: (js.Function1[/* event */ JetElementCustomEvent[polar | cartesian], Any]) | Null = js.native
   
-  var onDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K, D]) | Null], js.Any]) | Null = js.native
+  var onDataChanged: (js.Function1[/* event */ JetElementCustomEvent[(DataProvider[K, D]) | Null], Any]) | Null = js.native
   
-  var onDataCursorBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[smooth | snap | auto], js.Any]) | Null = js.native
+  var onDataCursorBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[smooth | snap | auto], Any]) | Null = js.native
   
-  var onDataCursorChanged: (js.Function1[/* event */ JetElementCustomEvent[off | on | auto], js.Any]) | Null = js.native
+  var onDataCursorChanged: (js.Function1[/* event */ JetElementCustomEvent[off | on | auto], Any]) | Null = js.native
   
-  var onDataCursorPositionChanged: (js.Function1[/* event */ JetElementCustomEvent[X], js.Any]) | Null = js.native
+  var onDataCursorPositionChanged: (js.Function1[/* event */ JetElementCustomEvent[X], Any]) | Null = js.native
   
   var onDataLabelChanged: (js.Function1[
     /* event */ JetElementCustomEvent[js.Function1[/* context */ DataLabelContext, Insert | PreventDefault]], 
-    js.Any
+    Any
   ]) | Null = js.native
   
-  var onDndChanged: (js.Function1[/* event */ JetElementCustomEvent[Drag], js.Any]) | Null = js.native
+  var onDndChanged: (js.Function1[/* event */ JetElementCustomEvent[Drag], Any]) | Null = js.native
   
-  var onDragModeChanged: (js.Function1[/* event */ JetElementCustomEvent[pan | zoom | select | off | user], js.Any]) | Null = js.native
+  var onDragModeChanged: (js.Function1[/* event */ JetElementCustomEvent[pan | zoom | select | off | user], Any]) | Null = js.native
   
-  var onDrillingChanged: (js.Function1[/* event */ JetElementCustomEvent[on | seriesOnly | groupsOnly | off], js.Any]) | Null = js.native
+  var onDrillingChanged: (js.Function1[/* event */ JetElementCustomEvent[on | seriesOnly | groupsOnly | off], Any]) | Null = js.native
   
   var onGroupComparatorChanged: (js.Function1[
     /* event */ JetElementCustomEvent[(js.Function2[/* param0 */ js.Object, /* param1 */ js.Object, Double]) | Null], 
-    js.Any
+    Any
   ]) | Null = js.native
   
-  var onHiddenCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], js.Any]) | Null = js.native
+  var onHiddenCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], Any]) | Null = js.native
   
-  var onHideAndShowBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[withRescale | withoutRescale | none], js.Any]) | Null = js.native
+  var onHideAndShowBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[withRescale | withoutRescale | none], Any]) | Null = js.native
   
-  var onHighlightMatchChanged: (js.Function1[/* event */ JetElementCustomEvent[any | all], js.Any]) | Null = js.native
+  var onHighlightMatchChanged: (js.Function1[/* event */ JetElementCustomEvent[any | all], Any]) | Null = js.native
   
-  var onHighlightedCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], js.Any]) | Null = js.native
+  var onHighlightedCategoriesChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[String]], Any]) | Null = js.native
   
-  var onHoverBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[dim | none], js.Any]) | Null = js.native
+  var onHoverBehaviorChanged: (js.Function1[/* event */ JetElementCustomEvent[dim | none], Any]) | Null = js.native
   
-  var onInitialZoomingChanged: (js.Function1[/* event */ JetElementCustomEvent[first | last | none], js.Any]) | Null = js.native
+  var onInitialZoomingChanged: (js.Function1[/* event */ JetElementCustomEvent[first | last | none], Any]) | Null = js.native
   
-  var onLegendChanged: (js.Function1[/* event */ JetElementCustomEvent[BackgroundColor], js.Any]) | Null = js.native
+  var onLegendChanged: (js.Function1[/* event */ JetElementCustomEvent[BackgroundColor], Any]) | Null = js.native
   
-  var onOjDrill: (js.Function1[/* event */ typings.oracleOraclejet.ojchartMod.ojChart.ojDrill, js.Any]) | Null = js.native
+  var onOjDrill: (js.Function1[/* event */ typings.oracleOraclejet.ojchartMod.ojChart.ojDrill, Any]) | Null = js.native
   
-  var onOjSelectInput: (js.Function1[/* event */ typings.oracleOraclejet.ojchartMod.ojChart.ojSelectInput, js.Any]) | Null = js.native
+  var onOjSelectInput: (js.Function1[/* event */ typings.oracleOraclejet.ojchartMod.ojChart.ojSelectInput, Any]) | Null = js.native
   
-  var onOjViewportChange: (js.Function1[/* event */ typings.oracleOraclejet.ojchartMod.ojChart.ojViewportChange, js.Any]) | Null = js.native
+  var onOjViewportChange: (js.Function1[/* event */ typings.oracleOraclejet.ojchartMod.ojChart.ojViewportChange, Any]) | Null = js.native
   
-  var onOjViewportChangeInput: (js.Function1[
-    /* event */ typings.oracleOraclejet.ojchartMod.ojChart.ojViewportChangeInput, 
-    js.Any
-  ]) | Null = js.native
+  var onOjViewportChangeInput: (js.Function1[/* event */ typings.oracleOraclejet.ojchartMod.ojChart.ojViewportChangeInput, Any]) | Null = js.native
   
-  var onOrientationChanged: (js.Function1[/* event */ JetElementCustomEvent[horizontal | vertical], js.Any]) | Null = js.native
+  var onOrientationChanged: (js.Function1[/* event */ JetElementCustomEvent[horizontal | vertical], Any]) | Null = js.native
   
-  var onOtherThresholdChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], js.Any]) | Null = js.native
+  var onOtherThresholdChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], Any]) | Null = js.native
   
-  var onOverviewChanged: (js.Function1[/* event */ JetElementCustomEvent[Content], js.Any]) | Null = js.native
+  var onOverviewChanged: (js.Function1[/* event */ JetElementCustomEvent[Content], Any]) | Null = js.native
   
-  var onPieCenterChanged: (js.Function1[/* event */ JetElementCustomEvent[Converter], js.Any]) | Null = js.native
+  var onPieCenterChanged: (js.Function1[/* event */ JetElementCustomEvent[Converter], Any]) | Null = js.native
   
-  var onPlotAreaChanged: (js.Function1[/* event */ JetElementCustomEvent[BorderWidth], js.Any]) | Null = js.native
+  var onPlotAreaChanged: (js.Function1[/* event */ JetElementCustomEvent[BorderWidth], Any]) | Null = js.native
   
-  var onPolarGridShapeChanged: (js.Function1[/* event */ JetElementCustomEvent[polygon | circle], js.Any]) | Null = js.native
+  var onPolarGridShapeChanged: (js.Function1[/* event */ JetElementCustomEvent[polygon | circle], Any]) | Null = js.native
   
-  var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[K]], js.Any]) | Null = js.native
+  var onSelectionChanged: (js.Function1[/* event */ JetElementCustomEvent[js.Array[K]], Any]) | Null = js.native
   
-  var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[single | multiple | none], js.Any]) | Null = js.native
+  var onSelectionModeChanged: (js.Function1[/* event */ JetElementCustomEvent[single | multiple | none], Any]) | Null = js.native
   
   var onSeriesComparatorChanged: (js.Function1[
     /* event */ JetElementCustomEvent[(js.Function2[/* param0 */ js.Object, /* param1 */ js.Object, Double]) | Null], 
-    js.Any
+    Any
   ]) | Null = js.native
   
-  var onSortingChanged: (js.Function1[/* event */ JetElementCustomEvent[ascending | descending | off], js.Any]) | Null = js.native
+  var onSortingChanged: (js.Function1[/* event */ JetElementCustomEvent[ascending | descending | off], Any]) | Null = js.native
   
-  var onSplitDualYChanged: (js.Function1[/* event */ JetElementCustomEvent[on | off | auto], js.Any]) | Null = js.native
+  var onSplitDualYChanged: (js.Function1[/* event */ JetElementCustomEvent[on | off | auto], Any]) | Null = js.native
   
-  var onSplitterPositionChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], js.Any]) | Null = js.native
+  var onSplitterPositionChanged: (js.Function1[/* event */ JetElementCustomEvent[Double], Any]) | Null = js.native
   
-  var onStackChanged: (js.Function1[/* event */ JetElementCustomEvent[on | off], js.Any]) | Null = js.native
+  var onStackChanged: (js.Function1[/* event */ JetElementCustomEvent[on | off], Any]) | Null = js.native
   
-  var onStackLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[on | off], js.Any]) | Null = js.native
+  var onStackLabelChanged: (js.Function1[/* event */ JetElementCustomEvent[on | off], Any]) | Null = js.native
   
-  var onStyleDefaultsChanged: (js.Function1[/* event */ JetElementCustomEvent[AnimationDownColor], js.Any]) | Null = js.native
+  var onStyleDefaultsChanged: (js.Function1[/* event */ JetElementCustomEvent[AnimationDownColor], Any]) | Null = js.native
   
   var onTimeAxisTypeChanged: (js.Function1[
     /* event */ JetElementCustomEvent[enabled | mixedFrequency | skipGaps | disabled | auto], 
-    js.Any
+    Any
   ]) | Null = js.native
   
-  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[Renderer], js.Any]) | Null = js.native
+  var onTooltipChanged: (js.Function1[/* event */ JetElementCustomEvent[Renderer], Any]) | Null = js.native
   
-  var onTouchResponseChanged: (js.Function1[/* event */ JetElementCustomEvent[touchStart | auto], js.Any]) | Null = js.native
+  var onTouchResponseChanged: (js.Function1[/* event */ JetElementCustomEvent[touchStart | auto], Any]) | Null = js.native
   
   var onTypeChanged: (js.Function1[
     /* event */ JetElementCustomEvent[
       line | area | lineWithArea | stock | boxPlot | combo | pie | scatter | bubble | funnel | pyramid | bar
     ], 
-    js.Any
+    Any
   ]) | Null = js.native
   
-  var onValueFormatsChanged: (js.Function1[/* event */ JetElementCustomEvent[Close], js.Any]) | Null = js.native
+  var onValueFormatsChanged: (js.Function1[/* event */ JetElementCustomEvent[Close], Any]) | Null = js.native
   
-  var onXAxisChanged: (js.Function1[/* event */ JetElementCustomEvent[AxisLine], js.Any]) | Null = js.native
+  var onXAxisChanged: (js.Function1[/* event */ JetElementCustomEvent[AxisLine], Any]) | Null = js.native
   
-  var onY2AxisChanged: (js.Function1[/* event */ JetElementCustomEvent[AlignTickMarks], js.Any]) | Null = js.native
+  var onY2AxisChanged: (js.Function1[/* event */ JetElementCustomEvent[AlignTickMarks], Any]) | Null = js.native
   
-  var onYAxisChanged: (js.Function1[/* event */ JetElementCustomEvent[BaselineScaling], js.Any]) | Null = js.native
+  var onYAxisChanged: (js.Function1[/* event */ JetElementCustomEvent[BaselineScaling], Any]) | Null = js.native
   
   var onZoomAndScrollChanged: (js.Function1[
     /* event */ JetElementCustomEvent[delayedScrollOnly | liveScrollOnly | delayed | live | off], 
-    js.Any
+    Any
   ]) | Null = js.native
   
-  var onZoomDirectionChanged: (js.Function1[/* event */ JetElementCustomEvent[x | y | auto], js.Any]) | Null = js.native
+  var onZoomDirectionChanged: (js.Function1[/* event */ JetElementCustomEvent[x | y | auto], Any]) | Null = js.native
   
   var orientation: horizontal | vertical = js.native
   
@@ -1137,85 +1123,32 @@ trait ojChart[K, D]
   
   def setProperties(properties: ojChartSettablePropertiesLenient[K, D]): Unit = js.native
   
-  def setProperty(property: `type`, value: area): Unit = js.native
-  def setProperty(property: `type`, value: bar): Unit = js.native
-  def setProperty(property: `type`, value: boxPlot): Unit = js.native
-  def setProperty(property: `type`, value: bubble): Unit = js.native
-  def setProperty(property: `type`, value: combo): Unit = js.native
-  def setProperty(property: `type`, value: funnel): Unit = js.native
-  def setProperty(property: `type`, value: line): Unit = js.native
-  def setProperty(property: `type`, value: lineWithArea): Unit = js.native
-  def setProperty(property: `type`, value: pie): Unit = js.native
-  def setProperty(property: `type`, value: pyramid): Unit = js.native
-  def setProperty(property: `type`, value: scatter): Unit = js.native
-  def setProperty(property: `type`, value: stock): Unit = js.native
-  def setProperty(property: animationOnDataChange, value: auto): Unit = js.native
-  def setProperty(property: animationOnDataChange, value: none): Unit = js.native
-  def setProperty(property: animationOnDataChange, value: slideToLeft): Unit = js.native
-  def setProperty(property: animationOnDataChange, value: slideToRight): Unit = js.native
-  def setProperty(property: animationOnDisplay, value: alphaFade): Unit = js.native
-  def setProperty(property: animationOnDisplay, value: auto): Unit = js.native
-  def setProperty(property: animationOnDisplay, value: none): Unit = js.native
-  def setProperty(property: animationOnDisplay, value: zoom): Unit = js.native
-  def setProperty(property: coordinateSystem, value: cartesian): Unit = js.native
-  def setProperty(property: coordinateSystem, value: polar): Unit = js.native
-  def setProperty(property: dataCursorBehavior, value: auto): Unit = js.native
-  def setProperty(property: dataCursorBehavior, value: smooth): Unit = js.native
-  def setProperty(property: dataCursorBehavior, value: snap): Unit = js.native
-  def setProperty(property: dataCursor, value: auto): Unit = js.native
-  def setProperty(property: dataCursor, value: off): Unit = js.native
-  def setProperty(property: dataCursor, value: on): Unit = js.native
-  def setProperty(property: dragMode, value: off): Unit = js.native
-  def setProperty(property: dragMode, value: pan): Unit = js.native
-  def setProperty(property: dragMode, value: select): Unit = js.native
-  def setProperty(property: dragMode, value: user): Unit = js.native
-  def setProperty(property: dragMode, value: zoom): Unit = js.native
-  def setProperty(property: drilling, value: groupsOnly): Unit = js.native
-  def setProperty(property: drilling, value: off): Unit = js.native
-  def setProperty(property: drilling, value: on): Unit = js.native
-  def setProperty(property: drilling, value: seriesOnly): Unit = js.native
-  def setProperty(property: hideAndShowBehavior, value: none): Unit = js.native
-  def setProperty(property: hideAndShowBehavior, value: withRescale): Unit = js.native
-  def setProperty(property: hideAndShowBehavior, value: withoutRescale): Unit = js.native
-  def setProperty(property: highlightMatch, value: all): Unit = js.native
-  def setProperty(property: highlightMatch, value: any): Unit = js.native
-  def setProperty(property: hoverBehavior, value: dim): Unit = js.native
-  def setProperty(property: hoverBehavior, value: none): Unit = js.native
-  def setProperty(property: initialZooming, value: first): Unit = js.native
-  def setProperty(property: initialZooming, value: last): Unit = js.native
-  def setProperty(property: initialZooming, value: none): Unit = js.native
-  def setProperty(property: orientation, value: horizontal): Unit = js.native
-  def setProperty(property: orientation, value: vertical): Unit = js.native
-  def setProperty(property: polarGridShape, value: circle): Unit = js.native
-  def setProperty(property: polarGridShape, value: polygon): Unit = js.native
-  def setProperty(property: selectionMode, value: multiple): Unit = js.native
-  def setProperty(property: selectionMode, value: none): Unit = js.native
-  def setProperty(property: selectionMode, value: single): Unit = js.native
-  def setProperty(property: sorting, value: ascending): Unit = js.native
-  def setProperty(property: sorting, value: descending): Unit = js.native
-  def setProperty(property: sorting, value: off): Unit = js.native
-  def setProperty(property: splitDualY, value: auto): Unit = js.native
-  def setProperty(property: splitDualY, value: off): Unit = js.native
-  def setProperty(property: splitDualY, value: on): Unit = js.native
-  def setProperty(property: stackLabel, value: off): Unit = js.native
-  def setProperty(property: stackLabel, value: on): Unit = js.native
-  def setProperty(property: stack, value: off): Unit = js.native
-  def setProperty(property: stack, value: on): Unit = js.native
-  def setProperty(property: timeAxisType, value: auto): Unit = js.native
-  def setProperty(property: timeAxisType, value: disabled): Unit = js.native
-  def setProperty(property: timeAxisType, value: enabled): Unit = js.native
-  def setProperty(property: timeAxisType, value: mixedFrequency): Unit = js.native
-  def setProperty(property: timeAxisType, value: skipGaps): Unit = js.native
-  def setProperty(property: touchResponse, value: auto): Unit = js.native
-  def setProperty(property: touchResponse, value: touchStart): Unit = js.native
-  def setProperty(property: zoomAndScroll, value: delayed): Unit = js.native
-  def setProperty(property: zoomAndScroll, value: delayedScrollOnly): Unit = js.native
-  def setProperty(property: zoomAndScroll, value: live): Unit = js.native
-  def setProperty(property: zoomAndScroll, value: liveScrollOnly): Unit = js.native
-  def setProperty(property: zoomAndScroll, value: off): Unit = js.native
-  def setProperty(property: zoomDirection, value: auto): Unit = js.native
-  def setProperty(property: zoomDirection, value: x): Unit = js.native
-  def setProperty(property: zoomDirection, value: y): Unit = js.native
+  def setProperty(
+    property: `type`,
+    value: line | area | lineWithArea | stock | boxPlot | combo | pie | scatter | bubble | funnel | pyramid | bar
+  ): Unit = js.native
+  def setProperty(property: animationOnDataChange, value: auto | slideToLeft | slideToRight | none): Unit = js.native
+  def setProperty(property: animationOnDisplay, value: auto | alphaFade | zoom | none): Unit = js.native
+  def setProperty(property: coordinateSystem, value: polar | cartesian): Unit = js.native
+  def setProperty(property: dataCursorBehavior, value: smooth | snap | auto): Unit = js.native
+  def setProperty(property: dataCursor, value: off | on | auto): Unit = js.native
+  def setProperty(property: dragMode, value: pan | zoom | select | off | user): Unit = js.native
+  def setProperty(property: drilling, value: on | seriesOnly | groupsOnly | off): Unit = js.native
+  def setProperty(property: hideAndShowBehavior, value: withRescale | withoutRescale | none): Unit = js.native
+  def setProperty(property: highlightMatch, value: any | all): Unit = js.native
+  def setProperty(property: hoverBehavior, value: dim | none): Unit = js.native
+  def setProperty(property: initialZooming, value: first | last | none): Unit = js.native
+  def setProperty(property: orientation, value: horizontal | vertical): Unit = js.native
+  def setProperty(property: polarGridShape, value: polygon | circle): Unit = js.native
+  def setProperty(property: selectionMode, value: single | multiple | none): Unit = js.native
+  def setProperty(property: sorting, value: ascending | descending | off): Unit = js.native
+  def setProperty(property: splitDualY, value: on | off | auto): Unit = js.native
+  def setProperty(property: stackLabel, value: on | off): Unit = js.native
+  def setProperty(property: stack, value: on | off): Unit = js.native
+  def setProperty(property: timeAxisType, value: enabled | mixedFrequency | skipGaps | disabled | auto): Unit = js.native
+  def setProperty(property: touchResponse, value: touchStart | auto): Unit = js.native
+  def setProperty(property: zoomAndScroll, value: delayedScrollOnly | liveScrollOnly | delayed | live | off): Unit = js.native
+  def setProperty(property: zoomDirection, value: x | y | auto): Unit = js.native
   @JSName("setProperty")
   def setProperty_as(property: as, value: String): Unit = js.native
   @JSName("setProperty")
@@ -1347,7 +1280,7 @@ object ojChart {
     
     var high: Double
     
-    var id: js.Any
+    var id: Any
     
     var itemData: js.Object | Null
     
@@ -1382,7 +1315,7 @@ object ojChart {
       componentElement: Element,
       group: String | js.Array[String],
       high: Double,
-      id: js.Any,
+      id: Any,
       label: String,
       low: Double,
       open: Double,
@@ -1415,11 +1348,11 @@ object ojChart {
       
       inline def setGroupDataNull: Self = StObject.set(x, "groupData", null)
       
-      inline def setGroupVarargs(value: String*): Self = StObject.set(x, "group", js.Array(value :_*))
+      inline def setGroupVarargs(value: String*): Self = StObject.set(x, "group", js.Array(value*))
       
       inline def setHigh(value: Double): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
       
-      inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       inline def setItemData(value: js.Object): Self = StObject.set(x, "itemData", value.asInstanceOf[js.Any])
       
@@ -1456,22 +1389,22 @@ object ojChart {
   // tslint:disable-next-line interface-over-type-literal
   trait GroupContext extends StObject {
     
-    var indexPath: js.Array[js.Any]
+    var indexPath: js.Array[Any]
     
     var subId: String
   }
   object GroupContext {
     
-    inline def apply(indexPath: js.Array[js.Any], subId: String): GroupContext = {
+    inline def apply(indexPath: js.Array[Any], subId: String): GroupContext = {
       val __obj = js.Dynamic.literal(indexPath = indexPath.asInstanceOf[js.Any], subId = subId.asInstanceOf[js.Any])
       __obj.asInstanceOf[GroupContext]
     }
     
     extension [Self <: GroupContext](x: Self) {
       
-      inline def setIndexPath(value: js.Array[js.Any]): Self = StObject.set(x, "indexPath", value.asInstanceOf[js.Any])
+      inline def setIndexPath(value: js.Array[Any]): Self = StObject.set(x, "indexPath", value.asInstanceOf[js.Any])
       
-      inline def setIndexPathVarargs(value: js.Any*): Self = StObject.set(x, "indexPath", js.Array(value :_*))
+      inline def setIndexPathVarargs(value: Any*): Self = StObject.set(x, "indexPath", js.Array(value*))
       
       inline def setSubId(value: String): Self = StObject.set(x, "subId", value.asInstanceOf[js.Any])
     }
@@ -1508,13 +1441,13 @@ object ojChart {
     
     var itemIndex: Double
     
-    var sectionIndexPath: js.Array[js.Any]
+    var sectionIndexPath: js.Array[Any]
     
     var subId: String
   }
   object LegendItemContext {
     
-    inline def apply(itemIndex: Double, sectionIndexPath: js.Array[js.Any], subId: String): LegendItemContext = {
+    inline def apply(itemIndex: Double, sectionIndexPath: js.Array[Any], subId: String): LegendItemContext = {
       val __obj = js.Dynamic.literal(itemIndex = itemIndex.asInstanceOf[js.Any], sectionIndexPath = sectionIndexPath.asInstanceOf[js.Any], subId = subId.asInstanceOf[js.Any])
       __obj.asInstanceOf[LegendItemContext]
     }
@@ -1523,9 +1456,9 @@ object ojChart {
       
       inline def setItemIndex(value: Double): Self = StObject.set(x, "itemIndex", value.asInstanceOf[js.Any])
       
-      inline def setSectionIndexPath(value: js.Array[js.Any]): Self = StObject.set(x, "sectionIndexPath", value.asInstanceOf[js.Any])
+      inline def setSectionIndexPath(value: js.Array[Any]): Self = StObject.set(x, "sectionIndexPath", value.asInstanceOf[js.Any])
       
-      inline def setSectionIndexPathVarargs(value: js.Any*): Self = StObject.set(x, "sectionIndexPath", js.Array(value :_*))
+      inline def setSectionIndexPathVarargs(value: Any*): Self = StObject.set(x, "sectionIndexPath", js.Array(value*))
       
       inline def setSubId(value: String): Self = StObject.set(x, "subId", value.asInstanceOf[js.Any])
     }
@@ -1644,7 +1577,7 @@ object ojChart {
     
     var high: Double
     
-    var id: js.Any
+    var id: Any
     
     var itemData: js.Object | Null
     
@@ -1680,7 +1613,7 @@ object ojChart {
       componentElement: Element,
       group: String | js.Array[String],
       high: Double,
-      id: js.Any,
+      id: Any,
       label: String,
       low: Double,
       open: Double,
@@ -1715,11 +1648,11 @@ object ojChart {
       
       inline def setGroupDataNull: Self = StObject.set(x, "groupData", null)
       
-      inline def setGroupVarargs(value: String*): Self = StObject.set(x, "group", js.Array(value :_*))
+      inline def setGroupVarargs(value: String*): Self = StObject.set(x, "group", js.Array(value*))
       
       inline def setHigh(value: Double): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
       
-      inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       inline def setItemData(value: js.Object): Self = StObject.set(x, "itemData", value.asInstanceOf[js.Any])
       

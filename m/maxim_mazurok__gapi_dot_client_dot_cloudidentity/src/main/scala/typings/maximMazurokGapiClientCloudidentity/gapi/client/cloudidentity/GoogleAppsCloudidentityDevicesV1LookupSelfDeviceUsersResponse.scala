@@ -10,8 +10,8 @@ trait GoogleAppsCloudidentityDevicesV1LookupSelfDeviceUsersResponse extends StOb
   var customer: js.UndefOr[String] = js.undefined
   
   /**
-    * [Resource names](https://cloud.google.com/apis/design/resource_names) of the DeviceUsers in the format: `devices/{device_id}/deviceUsers/{user_resource_id}`, where device_id is the
-    * unique ID assigned to a Device and user_resource_id is the unique user ID
+    * [Resource names](https://cloud.google.com/apis/design/resource_names) of the DeviceUsers in the format: `devices/{device}/deviceUsers/{user_resource}`, where device is the unique ID
+    * assigned to a Device and user_resource is the unique user ID
     */
   var names: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -35,7 +35,7 @@ object GoogleAppsCloudidentityDevicesV1LookupSelfDeviceUsersResponse {
     
     inline def setNamesUndefined: Self = StObject.set(x, "names", js.undefined)
     
-    inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
+    inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

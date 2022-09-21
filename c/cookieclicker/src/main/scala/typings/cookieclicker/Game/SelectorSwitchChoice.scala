@@ -9,7 +9,7 @@ trait SelectorSwitchChoice extends StObject {
   /**
     * True to make a line
     */
-  var div: Boolean
+  var div: js.UndefOr[Boolean] = js.undefined
   
   var icon: Icon
   
@@ -23,14 +23,16 @@ trait SelectorSwitchChoice extends StObject {
 }
 object SelectorSwitchChoice {
   
-  inline def apply(div: Boolean, icon: Icon, name: String): SelectorSwitchChoice = {
-    val __obj = js.Dynamic.literal(div = div.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  inline def apply(icon: Icon, name: String): SelectorSwitchChoice = {
+    val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectorSwitchChoice]
   }
   
   extension [Self <: SelectorSwitchChoice](x: Self) {
     
     inline def setDiv(value: Boolean): Self = StObject.set(x, "div", value.asInstanceOf[js.Any])
+    
+    inline def setDivUndefined: Self = StObject.set(x, "div", js.undefined)
     
     inline def setIcon(value: Icon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     

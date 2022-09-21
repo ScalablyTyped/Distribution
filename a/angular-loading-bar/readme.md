@@ -9,15 +9,13 @@ An automatic loading bar for AngularJS
 | ------------------ | :-------------: |
 | Full name          | angular-loading-bar |
 | Keywords           | angular, angularjs, loading, loadingbar, progress, progressbar |
-| # releases         | 0 |
-| # dependents       | 27 |
-| # downloads        | 1440324 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 229583.66666666666 |
+| # stars            | 5239.0 |
 
 ## Links
 - [Homepage](https://chieffancypants.github.io/angular-loading-bar)
-- [Bugs](https://github.com/chieffancypants/angular-loading-bar/issues)
-- [Repository](https://github.com/chieffancypants/angular-loading-bar)
 - [Npm](https://www.npmjs.com/package/angular-loading-bar)
     
 

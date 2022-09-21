@@ -3,6 +3,7 @@ package typings.jupyterlabTerminal
 import typings.jupyterlabServices.terminalTerminalMod.ITerminalConnection
 import typings.jupyterlabTerminal.anon.PartialIOptions
 import typings.jupyterlabTerminal.tokensMod.ITerminal.IOptions
+import typings.jupyterlabTranslation.tokensMod.ITranslator
 import typings.luminoCoreutils.mod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -26,7 +27,7 @@ object mod {
   
   @JSImport("@jupyterlab/terminal", "Terminal")
   @js.native
-  class Terminal protected ()
+  open class Terminal protected ()
     extends typings.jupyterlabTerminal.widgetMod.Terminal {
     /**
       * Construct a new terminal widget.
@@ -34,8 +35,12 @@ object mod {
       * @param session - The terminal session object.
       *
       * @param options - The terminal configuration options.
+      *
+      * @param translator - The language translator.
       */
     def this(session: ITerminalConnection) = this()
     def this(session: ITerminalConnection, options: PartialIOptions) = this()
+    def this(session: ITerminalConnection, options: Unit, translator: ITranslator) = this()
+    def this(session: ITerminalConnection, options: PartialIOptions, translator: ITranslator) = this()
   }
 }

@@ -36,7 +36,7 @@ object ResetCacheParameterGroupMessage {
     
     inline def setParameterNameValuesUndefined: Self = StObject.set(x, "ParameterNameValues", js.undefined)
     
-    inline def setParameterNameValuesVarargs(value: ParameterNameValue*): Self = StObject.set(x, "ParameterNameValues", js.Array(value :_*))
+    inline def setParameterNameValuesVarargs(value: ParameterNameValue*): Self = StObject.set(x, "ParameterNameValues", js.Array(value*))
     
     inline def setResetAllParameters(value: Boolean): Self = StObject.set(x, "ResetAllParameters", value.asInstanceOf[js.Any])
     

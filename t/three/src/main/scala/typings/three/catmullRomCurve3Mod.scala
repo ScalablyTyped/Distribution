@@ -11,12 +11,12 @@ object catmullRomCurve3Mod {
   @JSImport("three/src/extras/curves/CatmullRomCurve3", "CatmullRomCurve3")
   @js.native
   /**
-  	 * @param [points=[]]
-  	 * @param [closed=false]
-  	 * @param [curveType='centripetal']
-  	 * @param [tension=0.5]
-  	 */
-  class CatmullRomCurve3 () extends Curve[Vector3] {
+    * @param [points=[]]
+    * @param [closed=false]
+    * @param [curveType='centripetal']
+    * @param [tension=0.5]
+    */
+  open class CatmullRomCurve3 () extends Curve[Vector3] {
     def this(points: js.Array[Vector3]) = this()
     def this(points: js.Array[Vector3], closed: Boolean) = this()
     def this(points: Unit, closed: Boolean) = this()
@@ -34,8 +34,8 @@ object catmullRomCurve3Mod {
     def this(points: Unit, closed: Unit, curveType: Unit, tension: Double) = this()
     
     /**
-    	 * @default []
-    	 */
+      * @default []
+      */
     var points: js.Array[Vector3] = js.native
   }
   

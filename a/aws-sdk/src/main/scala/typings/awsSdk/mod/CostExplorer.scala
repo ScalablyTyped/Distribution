@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class CostExplorer ()
+open class CostExplorer ()
   extends typings.awsSdk.allMod.CostExplorer {
   def this(options: ClientConfiguration) = this()
 }

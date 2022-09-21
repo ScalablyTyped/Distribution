@@ -12,22 +12,27 @@ trait RightsizingRecommendation extends StObject {
   var AccountId: js.UndefOr[GenericString] = js.undefined
   
   /**
-    *  Context regarding the current instance.
+    * Context regarding the current instance.
     */
   var CurrentInstance: js.UndefOr[typings.awsSdk.costexplorerMod.CurrentInstance] = js.undefined
   
   /**
-    *  Details for modification recommendations. 
+    * The list of possible reasons why the recommendation is generated, such as under- or over-utilization of specific metrics (for example, CPU, Memory, Network). 
+    */
+  var FindingReasonCodes: js.UndefOr[typings.awsSdk.costexplorerMod.FindingReasonCodes] = js.undefined
+  
+  /**
+    * The details for the modification recommendations. 
     */
   var ModifyRecommendationDetail: js.UndefOr[typings.awsSdk.costexplorerMod.ModifyRecommendationDetail] = js.undefined
   
   /**
-    * Recommendation to either terminate or modify the resource.
+    * A recommendation to either terminate or modify the resource.
     */
   var RightsizingType: js.UndefOr[typings.awsSdk.costexplorerMod.RightsizingType] = js.undefined
   
   /**
-    * Details for termination recommendations.
+    * The details for termination recommendations.
     */
   var TerminateRecommendationDetail: js.UndefOr[typings.awsSdk.costexplorerMod.TerminateRecommendationDetail] = js.undefined
 }
@@ -47,6 +52,12 @@ object RightsizingRecommendation {
     inline def setCurrentInstance(value: CurrentInstance): Self = StObject.set(x, "CurrentInstance", value.asInstanceOf[js.Any])
     
     inline def setCurrentInstanceUndefined: Self = StObject.set(x, "CurrentInstance", js.undefined)
+    
+    inline def setFindingReasonCodes(value: FindingReasonCodes): Self = StObject.set(x, "FindingReasonCodes", value.asInstanceOf[js.Any])
+    
+    inline def setFindingReasonCodesUndefined: Self = StObject.set(x, "FindingReasonCodes", js.undefined)
+    
+    inline def setFindingReasonCodesVarargs(value: FindingReasonCode*): Self = StObject.set(x, "FindingReasonCodes", js.Array(value*))
     
     inline def setModifyRecommendationDetail(value: ModifyRecommendationDetail): Self = StObject.set(x, "ModifyRecommendationDetail", value.asInstanceOf[js.Any])
     

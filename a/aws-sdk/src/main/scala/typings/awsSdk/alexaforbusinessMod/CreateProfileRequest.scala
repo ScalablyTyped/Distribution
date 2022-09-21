@@ -17,6 +17,11 @@ trait CreateProfileRequest extends StObject {
   var ClientRequestToken: js.UndefOr[typings.awsSdk.alexaforbusinessMod.ClientRequestToken] = js.undefined
   
   /**
+    * Whether data retention of the profile is enabled.
+    */
+  var DataRetentionOptIn: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * The distance unit to be used by devices in the profile.
     */
   var DistanceUnit: typings.awsSdk.alexaforbusinessMod.DistanceUnit
@@ -93,6 +98,10 @@ object CreateProfileRequest {
     
     inline def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
     
+    inline def setDataRetentionOptIn(value: Boolean): Self = StObject.set(x, "DataRetentionOptIn", value.asInstanceOf[js.Any])
+    
+    inline def setDataRetentionOptInUndefined: Self = StObject.set(x, "DataRetentionOptIn", js.undefined)
+    
     inline def setDistanceUnit(value: DistanceUnit): Self = StObject.set(x, "DistanceUnit", value.asInstanceOf[js.Any])
     
     inline def setLocale(value: DeviceLocale): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
@@ -121,7 +130,7 @@ object CreateProfileRequest {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setTemperatureUnit(value: TemperatureUnit): Self = StObject.set(x, "TemperatureUnit", value.asInstanceOf[js.Any])
     

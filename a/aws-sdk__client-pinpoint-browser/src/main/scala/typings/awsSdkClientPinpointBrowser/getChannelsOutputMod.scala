@@ -8,5 +8,5 @@ object getChannelsOutputMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/GetChannelsOutput", "GetChannelsOutput")
   @js.native
-  val GetChannelsOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GetChannelsOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

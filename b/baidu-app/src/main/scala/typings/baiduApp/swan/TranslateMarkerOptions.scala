@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TranslateMarkerOptions
   extends StObject
-     with BaseOptions[js.Any, js.Any] {
+     with BaseOptions[Any, Any] {
   
   // 动画持续时长，默认值1000ms，平移与旋转分别计算。
   var animationEnd: js.UndefOr[js.Function0[Unit]] = js.undefined

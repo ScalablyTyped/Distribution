@@ -41,7 +41,7 @@ object ImageEditorToolbar {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: ImageEditorToolbarItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ImageEditorToolbarItem*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setOpen(value: js.Function): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     

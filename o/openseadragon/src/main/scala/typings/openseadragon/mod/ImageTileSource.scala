@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("openseadragon", "ImageTileSource")
 @js.native
-class ImageTileSource protected () extends TileSource {
+open class ImageTileSource protected () extends TileSource {
   def this(options: AjaxWithCredentials) = this()
+  
+  def destroy(): Unit = js.native
 }

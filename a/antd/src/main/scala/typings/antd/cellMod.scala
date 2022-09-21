@@ -26,9 +26,13 @@ object cellMod extends Shortcut {
     
     var content: js.UndefOr[ReactNode] = js.undefined
     
+    var contentStyle: js.UndefOr[CSSProperties] = js.undefined
+    
     var itemPrefixCls: String
     
     var label: js.UndefOr[ReactNode] = js.undefined
+    
+    var labelStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var span: Double
     
@@ -59,11 +63,19 @@ object cellMod extends Shortcut {
       
       inline def setContent(value: ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
+      inline def setContentStyle(value: CSSProperties): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
+      
+      inline def setContentStyleUndefined: Self = StObject.set(x, "contentStyle", js.undefined)
+      
       inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setItemPrefixCls(value: String): Self = StObject.set(x, "itemPrefixCls", value.asInstanceOf[js.Any])
       
       inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      
+      inline def setLabelStyle(value: CSSProperties): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
+      
+      inline def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       

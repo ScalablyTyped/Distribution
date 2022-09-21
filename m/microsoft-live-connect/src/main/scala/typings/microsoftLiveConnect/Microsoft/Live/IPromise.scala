@@ -25,15 +25,15 @@ trait IPromise[T] extends StObject {
     *   making progress toward completion.
     */
   def `then`(onSuccess: js.Function1[/* response */ T, Unit]): IPromise[T] = js.native
-  def `then`(onSuccess: js.Function1[/* response */ T, Unit], onError: js.Function1[/* error */ js.Any, Unit]): IPromise[T] = js.native
+  def `then`(onSuccess: js.Function1[/* response */ T, Unit], onError: js.Function1[/* error */ Any, Unit]): IPromise[T] = js.native
   def `then`(
     onSuccess: js.Function1[/* response */ T, Unit],
-    onError: js.Function1[/* error */ js.Any, Unit],
-    onProgress: js.Function1[/* progress */ js.Any, Unit]
+    onError: js.Function1[/* error */ Any, Unit],
+    onProgress: js.Function1[/* progress */ Any, Unit]
   ): IPromise[T] = js.native
   def `then`(
     onSuccess: js.Function1[/* response */ T, Unit],
     onError: Unit,
-    onProgress: js.Function1[/* progress */ js.Any, Unit]
+    onProgress: js.Function1[/* progress */ Any, Unit]
   ): IPromise[T] = js.native
 }

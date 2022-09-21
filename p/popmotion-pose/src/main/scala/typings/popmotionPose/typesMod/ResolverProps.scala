@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ResolverProps
   extends StObject
      with TransitionProps
-     with /* key */ StringDictionary[js.Any]
+     with /* key */ StringDictionary[Any]
 object ResolverProps {
   
   inline def apply(

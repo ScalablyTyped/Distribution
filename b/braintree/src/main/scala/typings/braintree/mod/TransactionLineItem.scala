@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("braintree", "TransactionLineItem")
 @js.native
-class TransactionLineItem () extends StObject {
+open class TransactionLineItem () extends StObject {
   
   var commodityCode: js.UndefOr[String] = js.native
   

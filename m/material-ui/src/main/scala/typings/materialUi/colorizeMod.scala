@@ -10,10 +10,10 @@ object colorizeMod {
   
   @JSImport("material-ui/svg-icons/image/colorize", JSImport.Default)
   @js.native
-  class default () extends ImageColorize
+  open class default () extends ImageColorize
   
   @JSImport("material-ui/svg-icons/image/colorize", "ImageColorize")
   @js.native
-  class ImageColorize ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageColorize ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

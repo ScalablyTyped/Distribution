@@ -63,7 +63,7 @@ object AddressComponent {
     
     inline def setBusinessAreas(value: js.Array[BusinessArea]): Self = StObject.set(x, "businessAreas", value.asInstanceOf[js.Any])
     
-    inline def setBusinessAreasVarargs(value: BusinessArea*): Self = StObject.set(x, "businessAreas", js.Array(value :_*))
+    inline def setBusinessAreasVarargs(value: BusinessArea*): Self = StObject.set(x, "businessAreas", js.Array(value*))
     
     inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     

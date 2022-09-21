@@ -19,6 +19,6 @@ object TileAttrs {
     
     inline def setReps(value: js.Array[Double]): Self = StObject.set(x, "reps", value.asInstanceOf[js.Any])
     
-    inline def setRepsVarargs(value: Double*): Self = StObject.set(x, "reps", js.Array(value :_*))
+    inline def setRepsVarargs(value: Double*): Self = StObject.set(x, "reps", js.Array(value*))
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "Particle")
 @js.native
-class Particle protected ()
+open class Particle protected ()
   extends typings.babylonjs.indexMod.Particle {
   /**
     * Creates a new instance Particle
@@ -26,6 +26,6 @@ object Particle {
   
   @JSImport("babylonjs/Legacy/legacy", "Particle._Count")
   @js.native
-  def _Count: js.Any = js.native
-  inline def _Count_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Count")(x.asInstanceOf[js.Any])
+  def _Count: Any = js.native
+  inline def _Count_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Count")(x.asInstanceOf[js.Any])
 }

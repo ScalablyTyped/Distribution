@@ -11,7 +11,7 @@ trait SafariExtensionMessageEvent
   /**
     * The message data.
     */
-  var message: js.Any
+  var message: Any
   
   /**
     * The name of the message.
@@ -26,7 +26,7 @@ object SafariExtensionMessageEvent {
     currentTarget: SafariEventTarget,
     defaultPrevented: Boolean,
     eventPhase: Double,
-    message: js.Any,
+    message: Any,
     name: String,
     preventDefault: () => Unit,
     stopPropagation: () => Unit,
@@ -41,7 +41,7 @@ object SafariExtensionMessageEvent {
   
   extension [Self <: SafariExtensionMessageEvent](x: Self) {
     
-    inline def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

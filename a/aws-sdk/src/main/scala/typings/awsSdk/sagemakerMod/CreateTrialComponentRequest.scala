@@ -14,12 +14,14 @@ trait CreateTrialComponentRequest extends StObject {
   /**
     * When the component ended.
     */
-  var EndTime: js.UndefOr[Timestamp] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The input artifacts for the component. Examples of input artifacts are datasets, algorithms, hyperparameters, source code, and instance types.
     */
   var InputArtifacts: js.UndefOr[TrialComponentArtifacts] = js.undefined
+  
+  var MetadataProperties: js.UndefOr[typings.awsSdk.sagemakerMod.MetadataProperties] = js.undefined
   
   /**
     * The output artifacts for the component. Examples of output artifacts are metrics, snapshots, logs, and images.
@@ -34,7 +36,7 @@ trait CreateTrialComponentRequest extends StObject {
   /**
     * When the component started.
     */
-  var StartTime: js.UndefOr[Timestamp] = js.undefined
+  var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The status of the component. States include:   InProgress   Completed   Failed  
@@ -47,7 +49,7 @@ trait CreateTrialComponentRequest extends StObject {
   var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
-    * The name of the component. The name must be unique in your AWS account and is not case-sensitive.
+    * The name of the component. The name must be unique in your Amazon Web Services account and is not case-sensitive.
     */
   var TrialComponentName: ExperimentEntityName
 }
@@ -64,13 +66,17 @@ object CreateTrialComponentRequest {
     
     inline def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
     
-    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
     inline def setInputArtifacts(value: TrialComponentArtifacts): Self = StObject.set(x, "InputArtifacts", value.asInstanceOf[js.Any])
     
     inline def setInputArtifactsUndefined: Self = StObject.set(x, "InputArtifacts", js.undefined)
+    
+    inline def setMetadataProperties(value: MetadataProperties): Self = StObject.set(x, "MetadataProperties", value.asInstanceOf[js.Any])
+    
+    inline def setMetadataPropertiesUndefined: Self = StObject.set(x, "MetadataProperties", js.undefined)
     
     inline def setOutputArtifacts(value: TrialComponentArtifacts): Self = StObject.set(x, "OutputArtifacts", value.asInstanceOf[js.Any])
     
@@ -80,7 +86,7 @@ object CreateTrialComponentRequest {
     
     inline def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
-    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
     inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
     
@@ -92,7 +98,7 @@ object CreateTrialComponentRequest {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setTrialComponentName(value: ExperimentEntityName): Self = StObject.set(x, "TrialComponentName", value.asInstanceOf[js.Any])
   }

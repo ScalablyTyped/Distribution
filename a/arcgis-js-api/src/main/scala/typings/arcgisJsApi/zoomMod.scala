@@ -22,7 +22,7 @@ object zoomMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Zoom.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with Zoom {
     def this(properties: ZoomProperties) = this()

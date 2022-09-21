@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("io-ts", "RefinementType")
 @js.native
-class RefinementType[C /* <: Any_ */, A, O, I] protected () extends Type_[A, O, I] {
+open class RefinementType[C /* <: Any_ */, A, O, I] protected () extends Type_[A, O, I] {
   def this(
     name: String,
     is: Is[A],

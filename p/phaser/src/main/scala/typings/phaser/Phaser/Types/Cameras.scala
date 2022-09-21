@@ -2,7 +2,6 @@ package typings.phaser.Phaser.Types
 
 import typings.phaser.Phaser.Cameras.Scene2D.Camera
 import typings.phaser.Phaser.Input.Keyboard.Key
-import typings.phaser.integer
 import typings.phaser.phaserBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -28,6 +27,16 @@ object Cameras {
         * The Key to be pressed that will move the Camera left.
         */
       var left: js.UndefOr[Key] = js.undefined
+      
+      /**
+        * The largest zoom value the camera will reach when zoomed in.
+        */
+      var maxZoom: js.UndefOr[Double] = js.undefined
+      
+      /**
+        * The smallest zoom value the camera will reach when zoomed out.
+        */
+      var minZoom: js.UndefOr[Double] = js.undefined
       
       /**
         * The Key to be pressed that will move the Camera right.
@@ -79,6 +88,14 @@ object Cameras {
         inline def setLeft(value: Key): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
         
         inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+        
+        inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
+        
+        inline def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
+        
+        inline def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
+        
+        inline def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
         
         inline def setRight(value: Key): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
         
@@ -139,6 +156,16 @@ object Cameras {
       var maxSpeed: js.UndefOr[Double | js.Object] = js.undefined
       
       /**
+        * The largest zoom value the camera will reach when zoomed in.
+        */
+      var maxZoom: js.UndefOr[Double] = js.undefined
+      
+      /**
+        * The smallest zoom value the camera will reach when zoomed out.
+        */
+      var minZoom: js.UndefOr[Double] = js.undefined
+      
+      /**
         * The Key to be pressed that will move the Camera right.
         */
       var right: js.UndefOr[Key] = js.undefined
@@ -195,6 +222,14 @@ object Cameras {
         inline def setMaxSpeed(value: Double | js.Object): Self = StObject.set(x, "maxSpeed", value.asInstanceOf[js.Any])
         
         inline def setMaxSpeedUndefined: Self = StObject.set(x, "maxSpeed", js.undefined)
+        
+        inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
+        
+        inline def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
+        
+        inline def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
+        
+        inline def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
         
         inline def setRight(value: Key): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
         
@@ -260,7 +295,7 @@ object Cameras {
       /**
         * The height of the Camera viewport.
         */
-      var height: js.UndefOr[integer] = js.undefined
+      var height: js.UndefOr[Double] = js.undefined
       
       /**
         * The name of the Camera.
@@ -290,17 +325,17 @@ object Cameras {
       /**
         * The width of the Camera viewport.
         */
-      var width: js.UndefOr[integer] = js.undefined
+      var width: js.UndefOr[Double] = js.undefined
       
       /**
         * The horizontal position of the Camera viewport.
         */
-      var x: js.UndefOr[integer] = js.undefined
+      var x: js.UndefOr[Double] = js.undefined
       
       /**
         * The vertical position of the Camera viewport.
         */
-      var y: js.UndefOr[integer] = js.undefined
+      var y: js.UndefOr[Double] = js.undefined
       
       /**
         * The default zoom level of the Camera.
@@ -340,7 +375,7 @@ object Cameras {
         
         inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
         
-        inline def setHeight(value: integer): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+        inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
         
         inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
         
@@ -364,15 +399,15 @@ object Cameras {
         
         inline def setScrollYUndefined: Self = StObject.set(x, "scrollY", js.undefined)
         
-        inline def setWidth(value: integer): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+        inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
         
         inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
         
-        inline def setX(value: integer): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+        inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
         
         inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
         
-        inline def setY(value: integer): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+        inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
         
         inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
         

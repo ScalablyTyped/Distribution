@@ -2,8 +2,6 @@ package typings.awsSdkClientKinesisBrowser
 
 import typings.awsSdkClientKinesisBrowser.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkTypes.abortMod.AbortSignal
-import typings.std.ArrayBuffer
-import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +25,7 @@ object typesPutRecordInputMod {
       */
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ] = js.undefined
     
     /**
@@ -39,7 +37,7 @@ object typesPutRecordInputMod {
     /**
       * <p>The data blob to put into the record, which is base64-encoded when the blob is serialized. When the data blob (the payload before base64-encoding) is added to the partition key size, the total size must not exceed the maximum record size (1 MB).</p>
       */
-    var Data: ArrayBuffer | ArrayBufferView | String
+    var Data: js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | String
     
     /**
       * <p>The hash value used to explicitly determine the shard the data record is assigned to by overriding the partition key hash.</p>
@@ -63,7 +61,11 @@ object typesPutRecordInputMod {
   }
   object PutRecordInput {
     
-    inline def apply(Data: ArrayBuffer | ArrayBufferView | String, PartitionKey: String, StreamName: String): PutRecordInput = {
+    inline def apply(
+      Data: js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | String,
+      PartitionKey: String,
+      StreamName: String
+    ): PutRecordInput = {
       val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any], PartitionKey = PartitionKey.asInstanceOf[js.Any], StreamName = StreamName.asInstanceOf[js.Any])
       __obj.asInstanceOf[PutRecordInput]
     }
@@ -75,7 +77,7 @@ object typesPutRecordInputMod {
       inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
       inline def set$httpOptions(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
       inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
@@ -84,7 +86,7 @@ object typesPutRecordInputMod {
       
       inline def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
       
-      inline def setData(value: ArrayBuffer | ArrayBufferView | String): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | String): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       
       inline def setExplicitHashKey(value: String): Self = StObject.set(x, "ExplicitHashKey", value.asInstanceOf[js.Any])
       

@@ -32,7 +32,7 @@ object GoogleCloudMlV1Measurement {
     
     inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
-    inline def setMetricsVarargs(value: GoogleCloudMlV1MeasurementMetric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: GoogleCloudMlV1MeasurementMetric*): Self = StObject.set(x, "metrics", js.Array(value*))
     
     inline def setStepCount(value: String): Self = StObject.set(x, "stepCount", value.asInstanceOf[js.Any])
     

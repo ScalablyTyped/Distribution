@@ -11,9 +11,9 @@ eponymous functions from the SKI calculus
 | Full name          | ski |
 | Keywords           | identity, constant, SKI, combinator |
 | # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 59254 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3098.6666666666665 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/jden/ski#readme)

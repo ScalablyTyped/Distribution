@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * JSON template for an Analytics account tree response. The account tree
-  * response is used in the provisioning api to return the result of creating
-  * an account, property, and view (profile).
-  */
 trait SchemaAccountTreeResponse extends StObject {
   
   /**
@@ -19,7 +14,7 @@ trait SchemaAccountTreeResponse extends StObject {
   /**
     * Resource type for account ticket.
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
   
   /**
     * View (Profile) for the account.
@@ -45,6 +40,8 @@ object SchemaAccountTreeResponse {
     inline def setAccountUndefined: Self = StObject.set(x, "account", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     

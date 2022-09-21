@@ -1,7 +1,7 @@
 
 # Scala.js typings for wry__context
 
-Typings are for version 0.5.2
+Typings are for version 0.7.0
 
 ## Library description:
 Manage contextual information needed by (a)synchronous tasks without explicitly passing objects around
@@ -10,10 +10,10 @@ Manage contextual information needed by (a)synchronous tasks without explicitly 
 | ------------------ | :-------------: |
 | Full name          | @wry/context |
 | Keywords           | - |
-| # releases         | 23 |
-| # dependents       | 9 |
-| # downloads        | 71334838 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1.1866116E7 |
+| # stars            | 67.0 |
 
 ## Links
 - [Homepage](https://github.com/benjamn/wryware)

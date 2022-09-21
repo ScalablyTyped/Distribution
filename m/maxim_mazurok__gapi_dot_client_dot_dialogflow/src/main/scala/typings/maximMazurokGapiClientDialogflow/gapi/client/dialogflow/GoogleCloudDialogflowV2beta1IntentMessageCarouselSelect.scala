@@ -22,6 +22,6 @@ object GoogleCloudDialogflowV2beta1IntentMessageCarouselSelect {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: GoogleCloudDialogflowV2beta1IntentMessageCarouselSelectItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: GoogleCloudDialogflowV2beta1IntentMessageCarouselSelectItem*): Self = StObject.set(x, "items", js.Array(value*))
   }
 }

@@ -27,7 +27,7 @@ object ListMonitoringExecutionsResponse {
     
     inline def setMonitoringExecutionSummaries(value: MonitoringExecutionSummaryList): Self = StObject.set(x, "MonitoringExecutionSummaries", value.asInstanceOf[js.Any])
     
-    inline def setMonitoringExecutionSummariesVarargs(value: MonitoringExecutionSummary*): Self = StObject.set(x, "MonitoringExecutionSummaries", js.Array(value :_*))
+    inline def setMonitoringExecutionSummariesVarargs(value: MonitoringExecutionSummary*): Self = StObject.set(x, "MonitoringExecutionSummaries", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

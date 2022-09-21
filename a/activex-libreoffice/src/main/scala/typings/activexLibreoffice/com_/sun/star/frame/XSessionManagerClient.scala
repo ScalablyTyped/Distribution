@@ -62,7 +62,7 @@ object XSessionManagerClient {
     cancelShutdown: () => Boolean,
     interactionDone: XSessionManagerListener => Unit,
     queryInteraction: XSessionManagerListener => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeSessionManagerListener: XSessionManagerListener => Unit,
     saveDone: XSessionManagerListener => Unit

@@ -7,14 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ImagesConfig extends StObject {
   
   /**
-    * URL to use for the 'default' texture.
+    * A base64 encoded image file to use as the 'default' texture.
     */
   var default: js.UndefOr[String] = js.undefined
   
   /**
-    * URL to use for the 'missing' texture.
+    * A base64 encoded image file to use as the 'missing' texture.
     */
   var missing: js.UndefOr[String] = js.undefined
+  
+  /**
+    * A base64 encoded image file to use as the 'white' texture.
+    */
+  var white: js.UndefOr[String] = js.undefined
 }
 object ImagesConfig {
   
@@ -32,5 +37,9 @@ object ImagesConfig {
     inline def setMissing(value: String): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
     
     inline def setMissingUndefined: Self = StObject.set(x, "missing", js.undefined)
+    
+    inline def setWhite(value: String): Self = StObject.set(x, "white", value.asInstanceOf[js.Any])
+    
+    inline def setWhiteUndefined: Self = StObject.set(x, "white", js.undefined)
   }
 }

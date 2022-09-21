@@ -167,7 +167,7 @@ trait Rich extends StObject {
     * [0, '40%']
     * @see https://echarts.apache.org/en/option.html#series-gauge.detail.offsetCenter
     */
-  var offsetCenter: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var offsetCenter: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Padding of the text fregment, for example:
@@ -183,7 +183,7 @@ trait Rich extends StObject {
     *
     * @see https://echarts.apache.org/en/option.html#series-gauge.detail.padding
     */
-  var padding: js.UndefOr[js.Array[js.Any] | Double] = js.undefined
+  var padding: js.UndefOr[js.Array[Any] | Double] = js.undefined
   
   /**
     * "Rich text styles" can be defined in this `rich` property.
@@ -394,17 +394,17 @@ object Rich {
     
     inline def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
     
-    inline def setOffsetCenter(value: js.Array[js.Any]): Self = StObject.set(x, "offsetCenter", value.asInstanceOf[js.Any])
+    inline def setOffsetCenter(value: js.Array[Any]): Self = StObject.set(x, "offsetCenter", value.asInstanceOf[js.Any])
     
     inline def setOffsetCenterUndefined: Self = StObject.set(x, "offsetCenter", js.undefined)
     
-    inline def setOffsetCenterVarargs(value: js.Any*): Self = StObject.set(x, "offsetCenter", js.Array(value :_*))
+    inline def setOffsetCenterVarargs(value: Any*): Self = StObject.set(x, "offsetCenter", js.Array(value*))
     
-    inline def setPadding(value: js.Array[js.Any] | Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: js.Array[Any] | Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    inline def setPaddingVarargs(value: js.Any*): Self = StObject.set(x, "padding", js.Array(value :_*))
+    inline def setPaddingVarargs(value: Any*): Self = StObject.set(x, "padding", js.Array(value*))
     
     inline def setRich(
       value: /**

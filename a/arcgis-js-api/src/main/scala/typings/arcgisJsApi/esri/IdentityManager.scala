@@ -17,7 +17,7 @@ trait IdentityManager
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#checkAppAccess)
     */
-  def checkAppAccess(resUrl: String, appId: String): js.Promise[js.Any] = js.native
+  def checkAppAccess(resUrl: String, appId: String): js.Promise[Any] = js.native
   
   /**
     * Returns the [Credential](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-Credential.html) if the user has already signed in to access the given resource.
@@ -31,7 +31,7 @@ trait IdentityManager
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#destroyCredentials)
     */
-  def destroyCredentials(): Unit = js.native
+  def destroyCredentials(): scala.Unit = js.native
   
   /**
     * Dialog box widget used to challenge the user for their credentials when the application attempts to access a secure resource.
@@ -39,6 +39,21 @@ trait IdentityManager
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#dialog)
     */
   var dialog: Widget_ = js.native
+  
+  /**
+    * Disables the use of `window.postMessage` to serve authentication requests that were enabled by [enablePostMessageAuth](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#enablePostMessageAuth).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#disablePostMessageAuth)
+    */
+  def disablePostMessageAuth(): scala.Unit = js.native
+  
+  /**
+    * Enables the IdentityManager to serve authentication requests for the given resource from apps running in child iframes.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#enablePostMessageAuth)
+    */
+  def enablePostMessageAuth(): scala.Unit = js.native
+  def enablePostMessageAuth(resUrl: String): scala.Unit = js.native
   
   /**
     * Returns the [Credential](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-Credential.html) for the resource identified by the specified url.
@@ -67,8 +82,8 @@ trait IdentityManager
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#generateToken)
     */
-  def generateToken(serverInfo: ServerInfo, userInfo: js.Any): js.Promise[js.Any] = js.native
-  def generateToken(serverInfo: ServerInfo, userInfo: js.Any, options: IdentityManagerGenerateTokenOptions): js.Promise[js.Any] = js.native
+  def generateToken(serverInfo: ServerInfo, userInfo: Any): js.Promise[Any] = js.native
+  def generateToken(serverInfo: ServerInfo, userInfo: Any, options: IdentityManagerGenerateTokenOptions): js.Promise[Any] = js.native
   
   /**
     * Returns a [Credential](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-Credential.html) object that can be used to access the secured resource identified by the input URL.
@@ -83,7 +98,7 @@ trait IdentityManager
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#initialize)
     */
-  def initialize(json: js.Any): Unit = js.native
+  def initialize(json: Any): scala.Unit = js.native
   
   /**
     * Indicates if the IdentityManager is busy accepting user input.
@@ -102,68 +117,56 @@ trait IdentityManager
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#registerOAuthInfos)
     */
-  def registerOAuthInfos(oAuthInfos: js.Array[OAuthInfo]): Unit = js.native
+  def registerOAuthInfos(oAuthInfos: js.Array[OAuthInfo]): scala.Unit = js.native
   
   /**
     * Register secure servers and the token endpoints.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#registerServers)
     */
-  def registerServers(serverInfos: js.Array[ServerInfo]): Unit = js.native
+  def registerServers(serverInfos: js.Array[ServerInfo]): scala.Unit = js.native
   
   /**
     * Registers the given OAuth 2.0 access token or ArcGIS Server token with the IdentityManager.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#registerToken)
     */
-  def registerToken(properties: IdentityManagerRegisterTokenProperties): Unit = js.native
+  def registerToken(properties: IdentityManagerRegisterTokenProperties): scala.Unit = js.native
   
   /**
     * Once a user successfully logs in, they are redirected back to the application.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#setOAuthRedirectionHandler)
     */
-  def setOAuthRedirectionHandler(handlerFunction: HandlerCallback): Unit = js.native
+  def setOAuthRedirectionHandler(handlerFunction: HandlerCallback): scala.Unit = js.native
   
   /**
     * Use this method in the popup callback page to pass the token and other values back to the IdentityManager.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#setOAuthResponseHash)
     */
-  def setOAuthResponseHash(hash: String): Unit = js.native
+  def setOAuthResponseHash(hash: String): scala.Unit = js.native
   
   /**
     * When accessing secured resources, the IdentityManager may prompt for username and password and send them to the server using a secure connection.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#setProtocolErrorHandler)
     */
-  def setProtocolErrorHandler(handlerFunction: IdentityManagerSetProtocolErrorHandlerHandlerFunction): Unit = js.native
-  
-  /**
-    * If your application is on the same domain as *.arcgis.com or ArcGIS Enterprise Server, the IdentityManager will redirect the user to its sign-in page.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#setRedirectionHandler)
-    */
-  def setRedirectionHandler(handlerFunction: IdentityManagerSetRedirectionHandlerHandlerFunction): Unit = js.native
+  def setProtocolErrorHandler(handlerFunction: IdentityManagerSetProtocolErrorHandlerHandlerFunction): scala.Unit = js.native
   
   /**
     * Return properties of this object in JSON format.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#toJSON)
     */
-  def toJSON(): js.Any = js.native
+  def toJSON(): Any = js.native
   
   /**
     * The suggested lifetime of the token in minutes.
     *
+    * @default 60
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#tokenValidity)
     */
   var tokenValidity: Double = js.native
-  
-  /**
-    * If your application is on the same domain as *.arcgis.com or ArcGIS Enterprise Server, the IdentityManager will redirect the user to its sign-in page.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#useSignInPage)
-    */
-  var useSignInPage: Boolean = js.native
 }

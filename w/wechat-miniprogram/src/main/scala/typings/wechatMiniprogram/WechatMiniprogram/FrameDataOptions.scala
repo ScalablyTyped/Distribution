@@ -1,6 +1,5 @@
 package typings.wechatMiniprogram.WechatMiniprogram
 
-import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FrameDataOptions extends StObject {
   
   /** 帧数据 */
-  var data: ArrayBuffer
+  var data: js.typedarray.ArrayBuffer
   
   /** 帧数据高度 */
   var height: Double
@@ -25,14 +24,14 @@ trait FrameDataOptions extends StObject {
 }
 object FrameDataOptions {
   
-  inline def apply(data: ArrayBuffer, height: Double, pkDts: Double, pkPts: Double, width: Double): FrameDataOptions = {
+  inline def apply(data: js.typedarray.ArrayBuffer, height: Double, pkDts: Double, pkPts: Double, width: Double): FrameDataOptions = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], pkDts = pkDts.asInstanceOf[js.Any], pkPts = pkPts.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[FrameDataOptions]
   }
   
   extension [Self <: FrameDataOptions](x: Self) {
     
-    inline def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

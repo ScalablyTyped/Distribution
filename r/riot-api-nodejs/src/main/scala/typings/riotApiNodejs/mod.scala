@@ -39,12 +39,12 @@ object mod {
   
   @JSImport("riot-api-nodejs", "API")
   @js.native
-  class API protected () extends StObject {
+  open class API protected () extends StObject {
     def this(ApiKeys: js.Array[String]) = this()
     
-    /* private */ var ApiKey: js.Any = js.native
+    /* private */ var ApiKey: Any = js.native
     
-    /* private */ var ApiKeys: js.Any = js.native
+    /* private */ var ApiKeys: Any = js.native
     
     /**
       * get the API Key that is used for the requests
@@ -59,10 +59,10 @@ object mod {
       * @param     {[type]}    data        body parameters
       * @param     {(JSON}     callback    callback function with formatted JSON
       */
-    def getJSON(url: String, method: String, data: js.Any): js.Promise[js.Any] = js.native
+    def getJSON(url: String, method: String, data: Any): js.Promise[Any] = js.native
     
-    def request(url: String, method: String, data: js.Any): js.Promise[js.Any] = js.native
-    def request(url: String, method: String, data: js.Any, prop: String): js.Promise[js.Any] = js.native
+    def request(url: String, method: String, data: Any): js.Promise[Any] = js.native
+    def request(url: String, method: String, data: Any, prop: String): js.Promise[Any] = js.native
     
     /**
       * set the API Keys
@@ -73,7 +73,7 @@ object mod {
     /**
       * Change the Api Key for the next requests
       */
-    /* private */ def switchApiKey(): js.Any = js.native
+    /* private */ def switchApiKey(): Any = js.native
   }
   
   @JSImport("riot-api-nodejs", "BASE_URL")
@@ -82,7 +82,7 @@ object mod {
   
   @JSImport("riot-api-nodejs", "ClassicAPI")
   @js.native
-  class ClassicAPI protected () extends API {
+  open class ClassicAPI protected () extends API {
     /**
       * ClassicAPI Constructor
       * @param     {string[]}    ApiKeys    API Keys for the requests
@@ -330,7 +330,7 @@ object mod {
       * @param     {[type]}                                               summonerId    Summoner ID
       * @param     {[RiotGamesAPI.ChampionMastery.ChampionMasteryDto]}    callback      data callback
       */
-    def getTopChampionMastery(summonerId: js.Any): js.Promise[js.Array[ChampionMasteryDto]] = js.native
+    def getTopChampionMastery(summonerId: Any): js.Promise[js.Array[ChampionMasteryDto]] = js.native
     
     /**
       * Edit the consts for a valid url for the riot games api
@@ -339,7 +339,7 @@ object mod {
       */
     def parseURL(unparsedURL: String): String = js.native
     
-    /* private */ var region: js.Any = js.native
+    /* private */ var region: Any = js.native
     
     /**
       * set the region where you want to send requests
@@ -441,7 +441,7 @@ object mod {
   
   @JSImport("riot-api-nodejs", "TournamentAPI")
   @js.native
-  class TournamentAPI protected () extends API {
+  open class TournamentAPI protected () extends API {
     def this(apiKeys: String*) = this()
     
     /**

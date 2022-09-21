@@ -104,7 +104,7 @@ object Manifest {
     
     inline def setAddonCatalogsUndefined: Self = StObject.set(x, "addonCatalogs", js.undefined)
     
-    inline def setAddonCatalogsVarargs(value: ManifestCatalog*): Self = StObject.set(x, "addonCatalogs", js.Array(value :_*))
+    inline def setAddonCatalogsVarargs(value: ManifestCatalog*): Self = StObject.set(x, "addonCatalogs", js.Array(value*))
     
     inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
@@ -116,7 +116,7 @@ object Manifest {
     
     inline def setCatalogs(value: js.Array[ManifestCatalog]): Self = StObject.set(x, "catalogs", value.asInstanceOf[js.Any])
     
-    inline def setCatalogsVarargs(value: ManifestCatalog*): Self = StObject.set(x, "catalogs", js.Array(value :_*))
+    inline def setCatalogsVarargs(value: ManifestCatalog*): Self = StObject.set(x, "catalogs", js.Array(value*))
     
     inline def setContactEmail(value: String): Self = StObject.set(x, "contactEmail", value.asInstanceOf[js.Any])
     
@@ -130,7 +130,7 @@ object Manifest {
     
     inline def setIdPrefixesUndefined: Self = StObject.set(x, "idPrefixes", js.undefined)
     
-    inline def setIdPrefixesVarargs(value: String*): Self = StObject.set(x, "idPrefixes", js.Array(value :_*))
+    inline def setIdPrefixesVarargs(value: String*): Self = StObject.set(x, "idPrefixes", js.Array(value*))
     
     inline def setLogo(value: String): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
     
@@ -140,11 +140,11 @@ object Manifest {
     
     inline def setResources(value: js.Array[FullManifestResource | ShortManifestResource]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
-    inline def setResourcesVarargs(value: (FullManifestResource | ShortManifestResource)*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: (FullManifestResource | ShortManifestResource)*): Self = StObject.set(x, "resources", js.Array(value*))
     
     inline def setTypes(value: js.Array[ContentType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    inline def setTypesVarargs(value: ContentType*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: ContentType*): Self = StObject.set(x, "types", js.Array(value*))
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }

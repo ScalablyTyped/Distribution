@@ -20,7 +20,7 @@ trait DynamicTemplategcsPath extends StObject {
   /** JSONP */
   var callback: js.UndefOr[String] = js.undefined
   
-  /** Path to dynamic template spec file on GCS. The file must be a Json serialized DynamicTemplateFieSpec object. */
+  /** Path to dynamic template spec file on Cloud Storage. The file must be a Json serialized DynamicTemplateFieSpec object. */
   @JSName("dynamicTemplate.gcsPath")
   var dynamicTemplateDotgcsPath: js.UndefOr[String] = js.undefined
   

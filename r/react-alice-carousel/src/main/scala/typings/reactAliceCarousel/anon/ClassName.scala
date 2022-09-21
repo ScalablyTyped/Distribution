@@ -6,25 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ClassName extends StObject {
   
-  var className: js.Any
+  var className: Any
   
-  var item: js.Any
+  var item: Any
   
-  var styles: js.Any
+  var styles: Any
 }
 object ClassName {
   
-  inline def apply(className: js.Any, item: js.Any, styles: js.Any): ClassName = {
+  inline def apply(className: Any, item: Any, styles: Any): ClassName = {
     val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassName]
   }
   
   extension [Self <: ClassName](x: Self) {
     
-    inline def setClassName(value: js.Any): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: Any): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    inline def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
   }
 }

@@ -12,7 +12,7 @@ object resourceAccessRequestsMod {
   
   @JSImport("gitlab/dist/types/core/templates/ResourceAccessRequests", "ResourceAccessRequests")
   @js.native
-  class ResourceAccessRequests protected () extends BaseService {
+  open class ResourceAccessRequests protected () extends BaseService {
     def this(resourceType: String, options: BaseServiceOptions) = this()
     
     def all(resourceId: String): js.Promise[GetResponse] = js.native

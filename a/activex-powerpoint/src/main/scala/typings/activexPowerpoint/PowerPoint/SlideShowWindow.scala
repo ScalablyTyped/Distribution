@@ -19,7 +19,7 @@ trait SlideShowWindow extends StObject {
   
   var Left: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("PowerPoint.SlideShowWindow_typekey")
   var PowerPointDotSlideShowWindow_typekey: SlideShowWindow
@@ -41,7 +41,7 @@ object SlideShowWindow {
     Height: Double,
     IsFullScreen: MsoTriState,
     Left: Double,
-    Parent: js.Any,
+    Parent: Any,
     PowerPointDotSlideShowWindow_typekey: SlideShowWindow,
     Presentation: Presentation,
     Top: Double,
@@ -67,7 +67,7 @@ object SlideShowWindow {
     
     inline def setLeft(value: Double): Self = StObject.set(x, "Left", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPowerPointDotSlideShowWindow_typekey(value: SlideShowWindow): Self = StObject.set(x, "PowerPoint.SlideShowWindow_typekey", value.asInstanceOf[js.Any])
     

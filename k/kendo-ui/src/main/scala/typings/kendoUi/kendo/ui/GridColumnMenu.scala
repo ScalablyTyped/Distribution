@@ -6,7 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GridColumnMenu extends StObject {
   
-  var columns: js.UndefOr[Boolean] = js.undefined
+  var columns: js.UndefOr[Boolean | GridColumnMenuColumns] = js.undefined
+  
+  var componentType: js.UndefOr[String] = js.undefined
   
   var filterable: js.UndefOr[Boolean] = js.undefined
   
@@ -23,9 +25,13 @@ object GridColumnMenu {
   
   extension [Self <: GridColumnMenu](x: Self) {
     
-    inline def setColumns(value: Boolean): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: Boolean | GridColumnMenuColumns): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    
+    inline def setComponentType(value: String): Self = StObject.set(x, "componentType", value.asInstanceOf[js.Any])
+    
+    inline def setComponentTypeUndefined: Self = StObject.set(x, "componentType", js.undefined)
     
     inline def setFilterable(value: Boolean): Self = StObject.set(x, "filterable", value.asInstanceOf[js.Any])
     

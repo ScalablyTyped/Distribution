@@ -38,7 +38,7 @@ object IClientBatchStatus {
     
     inline def setInvalidTransactionsUndefined: Self = StObject.set(x, "invalidTransactions", js.undefined)
     
-    inline def setInvalidTransactionsVarargs(value: IInvalidTransaction*): Self = StObject.set(x, "invalidTransactions", js.Array(value :_*))
+    inline def setInvalidTransactionsVarargs(value: IInvalidTransaction*): Self = StObject.set(x, "invalidTransactions", js.Array(value*))
     
     inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

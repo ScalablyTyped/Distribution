@@ -15,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ReactPropTypes extends StObject {
   
-  var any: typings.propTypes.mod.Requireable[js.Any]
+  var any: typings.propTypes.mod.Requireable[Any]
   
-  var array: typings.propTypes.mod.Requireable[js.Array[js.Any]]
+  var array: typings.propTypes.mod.Requireable[js.Array[Any]]
   
   var arrayOf: FnCallType
   
@@ -27,7 +27,7 @@ trait ReactPropTypes extends StObject {
   
   var exact: Fn3
   
-  var func: typings.propTypes.mod.Requireable[js.Function1[/* repeated */ js.Any, js.Any]]
+  var func: typings.propTypes.mod.Requireable[js.Function1[/* repeated */ Any, Any]]
   
   var instanceOf: FnCall
   
@@ -50,13 +50,13 @@ trait ReactPropTypes extends StObject {
 object ReactPropTypes {
   
   inline def apply(
-    any: typings.propTypes.mod.Requireable[js.Any],
-    array: typings.propTypes.mod.Requireable[js.Array[js.Any]],
+    any: typings.propTypes.mod.Requireable[Any],
+    array: typings.propTypes.mod.Requireable[js.Array[Any]],
     arrayOf: FnCallType,
     bool: typings.propTypes.mod.Requireable[Boolean],
     element: typings.propTypes.mod.Requireable[ReactElementLike],
     exact: Fn3,
-    func: typings.propTypes.mod.Requireable[js.Function1[/* repeated */ js.Any, js.Any]],
+    func: typings.propTypes.mod.Requireable[js.Function1[/* repeated */ Any, Any]],
     instanceOf: FnCall,
     node: typings.propTypes.mod.Requireable[ReactNodeLike],
     number: typings.propTypes.mod.Requireable[Double],
@@ -74,9 +74,9 @@ object ReactPropTypes {
   
   extension [Self <: ReactPropTypes](x: Self) {
     
-    inline def setAny(value: typings.propTypes.mod.Requireable[js.Any]): Self = StObject.set(x, "any", value.asInstanceOf[js.Any])
+    inline def setAny(value: typings.propTypes.mod.Requireable[Any]): Self = StObject.set(x, "any", value.asInstanceOf[js.Any])
     
-    inline def setArray(value: typings.propTypes.mod.Requireable[js.Array[js.Any]]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
+    inline def setArray(value: typings.propTypes.mod.Requireable[js.Array[Any]]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     
     inline def setArrayOf(value: FnCallType): Self = StObject.set(x, "arrayOf", value.asInstanceOf[js.Any])
     
@@ -86,7 +86,7 @@ object ReactPropTypes {
     
     inline def setExact(value: Fn3): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     
-    inline def setFunc(value: typings.propTypes.mod.Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
+    inline def setFunc(value: typings.propTypes.mod.Requireable[js.Function1[/* repeated */ Any, Any]]): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
     
     inline def setInstanceOf(value: FnCall): Self = StObject.set(x, "instanceOf", value.asInstanceOf[js.Any])
     

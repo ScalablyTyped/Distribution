@@ -1,7 +1,7 @@
 
 # Scala.js typings for cheap-ruler
 
-Typings are for version 3.0.1
+Typings are for version 3.0.2
 
 ## Library description:
 A collection of fast approximations to common geographic measurements.
@@ -10,15 +10,12 @@ A collection of fast approximations to common geographic measurements.
 | ------------------ | :-------------: |
 | Full name          | cheap-ruler |
 | Keywords           | geospatial, measurement, approximation, distance |
-| # releases         | 3 |
-| # dependents       | 11 |
-| # downloads        | 212593 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 43481.333333333336 |
+| # stars            | 371.0 |
 
 ## Links
-- [Homepage](https://github.com/mapbox/cheap-ruler#readme)
-- [Bugs](https://github.com/mapbox/cheap-ruler/issues)
-- [Repository](https://github.com/mapbox/cheap-ruler)
 - [Npm](https://www.npmjs.com/package/cheap-ruler)
     
 

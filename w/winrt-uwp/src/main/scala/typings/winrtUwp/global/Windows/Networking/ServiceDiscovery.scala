@@ -14,7 +14,7 @@ object ServiceDiscovery {
     @JSGlobal("Windows.Networking.ServiceDiscovery.Dnssd.DnssdRegistrationResult")
     @js.native
     /** Constructor. */
-    class DnssdRegistrationResult ()
+    open class DnssdRegistrationResult ()
       extends StObject
          with typings.winrtUwp.Windows.Networking.ServiceDiscovery.Dnssd.DnssdRegistrationResult {
       
@@ -53,7 +53,7 @@ object ServiceDiscovery {
     /** Encapsulates an instance of a service that uses DNS Service Discovery (DNS-SD). */
     @JSGlobal("Windows.Networking.ServiceDiscovery.Dnssd.DnssdServiceInstance")
     @js.native
-    class DnssdServiceInstance protected ()
+    open class DnssdServiceInstance protected ()
       extends StObject
          with typings.winrtUwp.Windows.Networking.ServiceDiscovery.Dnssd.DnssdServiceInstance {
       /**

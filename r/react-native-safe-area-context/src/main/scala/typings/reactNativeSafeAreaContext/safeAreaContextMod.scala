@@ -5,11 +5,9 @@ import typings.react.mod.Consumer
 import typings.react.mod.Context
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.PropsWithoutRef
-import typings.react.mod.ReactNode
 import typings.react.mod.RefAttributes
 import typings.react.mod.global.JSX.Element
-import typings.reactNative.mod.StyleProp
-import typings.reactNative.mod.ViewStyle
+import typings.reactNative.mod.ViewProps
 import typings.reactNativeSafeAreaContext.safeAreaTypesMod.EdgeInsets
 import typings.reactNativeSafeAreaContext.safeAreaTypesMod.Metrics
 import typings.reactNativeSafeAreaContext.safeAreaTypesMod.Rect
@@ -19,27 +17,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object safeAreaContextMod {
   
-  @JSImport("react-native-safe-area-context/lib/typescript/src/SafeAreaContext", JSImport.Namespace)
+  @JSImport("react-native-safe-area-context/lib/typescript/SafeAreaContext", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("react-native-safe-area-context/lib/typescript/src/SafeAreaContext", "SafeAreaConsumer")
+  @JSImport("react-native-safe-area-context/lib/typescript/SafeAreaContext", "SafeAreaConsumer")
   @js.native
   val SafeAreaConsumer: Consumer[EdgeInsets | Null] = js.native
   
-  @JSImport("react-native-safe-area-context/lib/typescript/src/SafeAreaContext", "SafeAreaContext")
+  @JSImport("react-native-safe-area-context/lib/typescript/SafeAreaContext", "SafeAreaContext")
   @js.native
   val SafeAreaContext: Context[EdgeInsets | Null] = js.native
   
-  @JSImport("react-native-safe-area-context/lib/typescript/src/SafeAreaContext", "SafeAreaFrameContext")
+  @JSImport("react-native-safe-area-context/lib/typescript/SafeAreaContext", "SafeAreaFrameContext")
   @js.native
   val SafeAreaFrameContext: Context[Rect | Null] = js.native
   
-  @JSImport("react-native-safe-area-context/lib/typescript/src/SafeAreaContext", "SafeAreaInsetsContext")
+  @JSImport("react-native-safe-area-context/lib/typescript/SafeAreaContext", "SafeAreaInsetsContext")
   @js.native
   val SafeAreaInsetsContext: Context[EdgeInsets | Null] = js.native
   
-  inline def SafeAreaProvider(hasChildrenInitialMetricsInitialSafeAreaInsetsStyle: SafeAreaViewProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SafeAreaProvider")(hasChildrenInitialMetricsInitialSafeAreaInsetsStyle.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def SafeAreaProvider(hasChildrenInitialMetricsInitialSafeAreaInsetsStyleOthers: SafeAreaProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SafeAreaProvider")(hasChildrenInitialMetricsInitialSafeAreaInsetsStyleOthers.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   inline def useSafeArea(): EdgeInsets = ^.asInstanceOf[js.Dynamic].applyDynamic("useSafeArea")().asInstanceOf[EdgeInsets]
   
@@ -47,11 +45,11 @@ object safeAreaContextMod {
   
   inline def useSafeAreaInsets(): EdgeInsets = ^.asInstanceOf[js.Dynamic].applyDynamic("useSafeAreaInsets")().asInstanceOf[EdgeInsets]
   
-  inline def withSafeAreaInsets[T](WrappedComponent: ComponentType[T]): ForwardRefExoticComponent[PropsWithoutRef[T] & RefAttributes[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withSafeAreaInsets")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[T] & RefAttributes[T]]]
+  inline def withSafeAreaInsets[T](WrappedComponent: ComponentType[T & WithSafeAreaInsetsProps]): ForwardRefExoticComponent[PropsWithoutRef[T] & RefAttributes[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withSafeAreaInsets")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[T] & RefAttributes[Any]]]
   
-  trait SafeAreaViewProps extends StObject {
-    
-    var children: js.UndefOr[ReactNode] = js.undefined
+  trait SafeAreaProviderProps
+    extends StObject
+       with ViewProps {
     
     var initialMetrics: js.UndefOr[Metrics | Null] = js.undefined
     
@@ -59,21 +57,15 @@ object safeAreaContextMod {
       * @deprecated
       */
     var initialSafeAreaInsets: js.UndefOr[EdgeInsets | Null] = js.undefined
-    
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   }
-  object SafeAreaViewProps {
+  object SafeAreaProviderProps {
     
-    inline def apply(): SafeAreaViewProps = {
+    inline def apply(): SafeAreaProviderProps = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[SafeAreaViewProps]
+      __obj.asInstanceOf[SafeAreaProviderProps]
     }
     
-    extension [Self <: SafeAreaViewProps](x: Self) {
-      
-      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-      
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    extension [Self <: SafeAreaProviderProps](x: Self) {
       
       inline def setInitialMetrics(value: Metrics): Self = StObject.set(x, "initialMetrics", value.asInstanceOf[js.Any])
       
@@ -86,12 +78,23 @@ object safeAreaContextMod {
       inline def setInitialSafeAreaInsetsNull: Self = StObject.set(x, "initialSafeAreaInsets", null)
       
       inline def setInitialSafeAreaInsetsUndefined: Self = StObject.set(x, "initialSafeAreaInsets", js.undefined)
+    }
+  }
+  
+  trait WithSafeAreaInsetsProps extends StObject {
+    
+    var insets: EdgeInsets
+  }
+  object WithSafeAreaInsetsProps {
+    
+    inline def apply(insets: EdgeInsets): WithSafeAreaInsetsProps = {
+      val __obj = js.Dynamic.literal(insets = insets.asInstanceOf[js.Any])
+      __obj.asInstanceOf[WithSafeAreaInsetsProps]
+    }
+    
+    extension [Self <: WithSafeAreaInsetsProps](x: Self) {
       
-      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
-      
-      inline def setStyleNull: Self = StObject.set(x, "style", null)
-      
-      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setInsets(value: EdgeInsets): Self = StObject.set(x, "insets", value.asInstanceOf[js.Any])
     }
   }
 }

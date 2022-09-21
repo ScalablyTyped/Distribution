@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object optionstostringMod {
   
-  @JSImport("rrule/dist/esm/src/optionstostring", JSImport.Namespace)
+  @JSImport("rrule/dist/esm/optionstostring", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

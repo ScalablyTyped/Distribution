@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("aurelia-binding", "BindingBehaviorResource")
 @js.native
-class BindingBehaviorResource protected () extends StObject {
+open class BindingBehaviorResource protected () extends StObject {
   def this(name: String) = this()
   
-  def initialize(container: Container, target: js.Any): Unit = js.native
+  def initialize(container: Container, target: Any): Unit = js.native
   
-  def register(registry: js.Any, name: String): Unit = js.native
+  def register(registry: Any, name: String): Unit = js.native
 }
 /* static members */
 object BindingBehaviorResource {

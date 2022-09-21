@@ -1,6 +1,6 @@
 package typings.brotliWebpackPlugin
 
-import typings.std.RegExp
+import typings.webpack.mod.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Plugin * / any */ @JSImport("brotli-webpack-plugin", JSImport.Namespace)
+  - Dropped webpack.anon.Apply | (this : webpack.webpack.Resolver, arg1 : webpack.webpack.Resolver): void */ @JSImport("brotli-webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^ () extends StObject {
+  open class ^ () extends StObject {
     def this(options: Options) = this()
   }
   
-  type BrotliWebpackPlugin = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Plugin */ js.Any
+  type BrotliWebpackPlugin = Plugin
   
   trait Options extends StObject {
     
@@ -42,7 +42,7 @@ object mod {
     /**
       * All assets matching this RegExp are processed. Defaults to every asset.
       */
-    var test: js.UndefOr[RegExp] = js.undefined
+    var test: js.UndefOr[js.RegExp] = js.undefined
     
     /**
       * Only assets bigger than this size (in bytes) are processed. Defaults to `0`.
@@ -70,7 +70,7 @@ object mod {
       
       inline def setMinRatioUndefined: Self = StObject.set(x, "minRatio", js.undefined)
       
-      inline def setTest(value: RegExp): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+      inline def setTest(value: js.RegExp): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
       
       inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
       

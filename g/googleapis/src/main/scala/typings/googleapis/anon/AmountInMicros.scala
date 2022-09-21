@@ -9,6 +9,10 @@ trait AmountInMicros extends StObject {
   var amountInMicros: js.UndefOr[Double] = js.undefined
   
   var currencyCode: js.UndefOr[String] = js.undefined
+  
+  var releaseNumber: js.UndefOr[String] = js.undefined
+  
+  var releaseTime: js.UndefOr[String] = js.undefined
 }
 object AmountInMicros {
   
@@ -26,5 +30,13 @@ object AmountInMicros {
     inline def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     
     inline def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
+    
+    inline def setReleaseNumber(value: String): Self = StObject.set(x, "releaseNumber", value.asInstanceOf[js.Any])
+    
+    inline def setReleaseNumberUndefined: Self = StObject.set(x, "releaseNumber", js.undefined)
+    
+    inline def setReleaseTime(value: String): Self = StObject.set(x, "releaseTime", value.asInstanceOf[js.Any])
+    
+    inline def setReleaseTimeUndefined: Self = StObject.set(x, "releaseTime", js.undefined)
   }
 }

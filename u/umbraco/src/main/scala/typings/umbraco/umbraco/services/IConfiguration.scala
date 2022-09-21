@@ -37,10 +37,10 @@ object IConfiguration {
     
     inline def setStylesheets(value: js.Array[String]): Self = StObject.set(x, "stylesheets", value.asInstanceOf[js.Any])
     
-    inline def setStylesheetsVarargs(value: String*): Self = StObject.set(x, "stylesheets", js.Array(value :_*))
+    inline def setStylesheetsVarargs(value: String*): Self = StObject.set(x, "stylesheets", js.Array(value*))
     
     inline def setToolbar(value: js.Array[String]): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
     
-    inline def setToolbarVarargs(value: String*): Self = StObject.set(x, "toolbar", js.Array(value :_*))
+    inline def setToolbarVarargs(value: String*): Self = StObject.set(x, "toolbar", js.Array(value*))
   }
 }

@@ -10,8 +10,8 @@ object mod {
   
   @JSImport("@atlaskit/layer", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[Props, js.Object, js.Any]
+  open class default ()
+    extends Component[Props, js.Object, Any]
   
   /* Rewritten from type alias, can be one of: 
     - typings.atlaskitLayer.atlaskitLayerStrings.viewport
@@ -58,7 +58,7 @@ object mod {
     inline def top: typings.atlaskitLayer.atlaskitLayerStrings.top = "top".asInstanceOf[typings.atlaskitLayer.atlaskitLayerStrings.top]
   }
   
-  type Layer = Component[Props, js.Object, js.Any]
+  type Layer = Component[Props, js.Object, Any]
   
   /* Rewritten from type alias, can be one of: 
     - typings.atlaskitLayer.atlaskitLayerStrings.`top left`
@@ -169,7 +169,7 @@ object mod {
       
       inline def setAutoFlipUndefined: Self = StObject.set(x, "autoFlip", js.undefined)
       
-      inline def setAutoFlipVarargs(value: FlipPositionType*): Self = StObject.set(x, "autoFlip", js.Array(value :_*))
+      inline def setAutoFlipVarargs(value: FlipPositionType*): Self = StObject.set(x, "autoFlip", js.Array(value*))
       
       inline def setBoundariesElement(value: BoundariesElementType): Self = StObject.set(x, "boundariesElement", value.asInstanceOf[js.Any])
       

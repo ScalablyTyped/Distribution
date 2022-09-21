@@ -1,6 +1,5 @@
 package typings.igniteUi
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,7 +41,7 @@ trait IgTimePickerMethods extends StObject {
     * Gets selected date as a date object. This method can be used when dataMode is set as either displayModeText or editModeText.
     * In such cases the value() method will not return date object and getSelectedDate() can be used to replace that functionality.
     */
-  def getSelectedDate(): Date = js.native
+  def getSelectedDate(): js.Date = js.native
   
   /**
     * Gets the selected list item.

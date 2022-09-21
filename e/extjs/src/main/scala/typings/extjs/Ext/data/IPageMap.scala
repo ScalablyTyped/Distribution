@@ -14,18 +14,14 @@ trait IPageMap
     * @param scope Object The scope (this reference) in which the function is executed. Defaults to this PageMap.
     * @returns Object The first record in this page map which returned true from the selection function, or null if none was found.
     */
-  var findBy: js.UndefOr[
-    js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], js.Any]
-  ] = js.undefined
+  var findBy: js.UndefOr[js.Function2[/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], Any]] = js.undefined
   
   /** [Method] Returns the index in the whole dataset of the first record in this page map which elicits a true return value from th
     * @param fn Function The selection function to execute for each item.
     * @param scope Object The scope (this reference) in which the function is executed. Defaults to this PageMap.
     * @returns Number The index first record in this page map which returned true from the selection function, or -1 if none was found.
     */
-  var findIndexBy: js.UndefOr[
-    js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Double]
-  ] = js.undefined
+  var findIndexBy: js.UndefOr[js.Function2[/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], Double]] = js.undefined
   
   /** [Method] Remove an item from the hash
     * @returns Boolean True if the item was successfully removed.
@@ -42,11 +38,11 @@ object IPageMap {
   
   extension [Self <: IPageMap](x: Self) {
     
-    inline def setFindBy(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "findBy", js.Any.fromFunction2(value))
+    inline def setFindBy(value: (/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Any): Self = StObject.set(x, "findBy", js.Any.fromFunction2(value))
     
     inline def setFindByUndefined: Self = StObject.set(x, "findBy", js.undefined)
     
-    inline def setFindIndexBy(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Double): Self = StObject.set(x, "findIndexBy", js.Any.fromFunction2(value))
+    inline def setFindIndexBy(value: (/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Double): Self = StObject.set(x, "findIndexBy", js.Any.fromFunction2(value))
     
     inline def setFindIndexByUndefined: Self = StObject.set(x, "findIndexBy", js.undefined)
     

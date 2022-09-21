@@ -1,6 +1,5 @@
 package typings.vsoNodeApi.gitInterfacesMod
 
-import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GitConflict extends StObject {
   
-  var _links: js.Any
+  var _links: Any
   
   var conflictId: Double
   
@@ -30,14 +29,14 @@ trait GitConflict extends StObject {
   
   var resolvedBy: IdentityRef
   
-  var resolvedDate: Date
+  var resolvedDate: js.Date
   
   var url: String
 }
 object GitConflict {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     conflictId: Double,
     conflictPath: String,
     conflictType: GitConflictType,
@@ -48,7 +47,7 @@ object GitConflict {
     resolutionError: GitResolutionError,
     resolutionStatus: GitResolutionStatus,
     resolvedBy: IdentityRef,
-    resolvedDate: Date,
+    resolvedDate: js.Date,
     url: String
   ): GitConflict = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], conflictId = conflictId.asInstanceOf[js.Any], conflictPath = conflictPath.asInstanceOf[js.Any], conflictType = conflictType.asInstanceOf[js.Any], mergeBaseCommit = mergeBaseCommit.asInstanceOf[js.Any], mergeOrigin = mergeOrigin.asInstanceOf[js.Any], mergeSourceCommit = mergeSourceCommit.asInstanceOf[js.Any], mergeTargetCommit = mergeTargetCommit.asInstanceOf[js.Any], resolutionError = resolutionError.asInstanceOf[js.Any], resolutionStatus = resolutionStatus.asInstanceOf[js.Any], resolvedBy = resolvedBy.asInstanceOf[js.Any], resolvedDate = resolvedDate.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
@@ -77,10 +76,10 @@ object GitConflict {
     
     inline def setResolvedBy(value: IdentityRef): Self = StObject.set(x, "resolvedBy", value.asInstanceOf[js.Any])
     
-    inline def setResolvedDate(value: Date): Self = StObject.set(x, "resolvedDate", value.asInstanceOf[js.Any])
+    inline def setResolvedDate(value: js.Date): Self = StObject.set(x, "resolvedDate", value.asInstanceOf[js.Any])
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

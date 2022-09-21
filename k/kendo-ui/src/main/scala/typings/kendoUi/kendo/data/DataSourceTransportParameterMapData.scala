@@ -37,7 +37,7 @@ object DataSourceTransportParameterMapData {
     
     inline def setAggregateUndefined: Self = StObject.set(x, "aggregate", js.undefined)
     
-    inline def setAggregateVarargs(value: DataSourceParameterMapDataAggregate*): Self = StObject.set(x, "aggregate", js.Array(value :_*))
+    inline def setAggregateVarargs(value: DataSourceParameterMapDataAggregate*): Self = StObject.set(x, "aggregate", js.Array(value*))
     
     inline def setFilter(value: DataSourceParameterMapDataFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
@@ -47,13 +47,13 @@ object DataSourceTransportParameterMapData {
     
     inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
-    inline def setGroupVarargs(value: DataSourceParameterMapDataGroup*): Self = StObject.set(x, "group", js.Array(value :_*))
+    inline def setGroupVarargs(value: DataSourceParameterMapDataGroup*): Self = StObject.set(x, "group", js.Array(value*))
     
     inline def setModels(value: js.Array[Model]): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
     
     inline def setModelsUndefined: Self = StObject.set(x, "models", js.undefined)
     
-    inline def setModelsVarargs(value: Model*): Self = StObject.set(x, "models", js.Array(value :_*))
+    inline def setModelsVarargs(value: Model*): Self = StObject.set(x, "models", js.Array(value*))
     
     inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
@@ -71,7 +71,7 @@ object DataSourceTransportParameterMapData {
     
     inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
-    inline def setSortVarargs(value: DataSourceParameterMapDataSort*): Self = StObject.set(x, "sort", js.Array(value :_*))
+    inline def setSortVarargs(value: DataSourceParameterMapDataSort*): Self = StObject.set(x, "sort", js.Array(value*))
     
     inline def setTake(value: Double): Self = StObject.set(x, "take", value.asInstanceOf[js.Any])
     

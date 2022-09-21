@@ -6,8 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/router", "RouterState")
 @js.native
-class RouterState protected () extends ɵangularPackagesRouterRouterM[ActivatedRoute] {
-  def this(root: ɵangularPackagesRouterRouterN[ActivatedRoute]) = this()
+open class RouterState ()
+  extends StObject
+     with Tree[ActivatedRoute] {
   
   /** The current snapshot of the router state */
   var snapshot: RouterStateSnapshot = js.native

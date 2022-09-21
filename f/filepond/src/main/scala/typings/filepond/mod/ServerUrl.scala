@@ -26,13 +26,13 @@ trait ServerUrl extends StObject {
     * Called when server error is received, receives the response
     * body, useful to select the relevant error data.
     */
-  var onerror: js.UndefOr[js.Function1[/* responseBody */ js.Any, js.Any]] = js.undefined
+  var onerror: js.UndefOr[js.Function1[/* responseBody */ Any, Any]] = js.undefined
   
   /**
     * Called when server response is received, useful for getting
     * the unique file id from the server response.
     */
-  var onload: js.UndefOr[js.Function1[/* response */ js.Any, Double | String]] = js.undefined
+  var onload: js.UndefOr[js.Function1[/* response */ Any, Double | String]] = js.undefined
   
   var timeout: js.UndefOr[Double] = js.undefined
   
@@ -61,11 +61,11 @@ object ServerUrl {
     
     inline def setOndataUndefined: Self = StObject.set(x, "ondata", js.undefined)
     
-    inline def setOnerror(value: /* responseBody */ js.Any => js.Any): Self = StObject.set(x, "onerror", js.Any.fromFunction1(value))
+    inline def setOnerror(value: /* responseBody */ Any => Any): Self = StObject.set(x, "onerror", js.Any.fromFunction1(value))
     
     inline def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
     
-    inline def setOnload(value: /* response */ js.Any => Double | String): Self = StObject.set(x, "onload", js.Any.fromFunction1(value))
+    inline def setOnload(value: /* response */ Any => Double | String): Self = StObject.set(x, "onload", js.Any.fromFunction1(value))
     
     inline def setOnloadUndefined: Self = StObject.set(x, "onload", js.undefined)
     

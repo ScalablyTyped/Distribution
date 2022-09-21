@@ -42,6 +42,6 @@ object AddApplicationOutputResponse {
     
     inline def setOutputDescriptionsUndefined: Self = StObject.set(x, "OutputDescriptions", js.undefined)
     
-    inline def setOutputDescriptionsVarargs(value: OutputDescription*): Self = StObject.set(x, "OutputDescriptions", js.Array(value :_*))
+    inline def setOutputDescriptionsVarargs(value: OutputDescription*): Self = StObject.set(x, "OutputDescriptions", js.Array(value*))
   }
 }

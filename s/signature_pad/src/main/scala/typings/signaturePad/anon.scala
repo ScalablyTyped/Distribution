@@ -34,6 +34,10 @@ object anon {
     var ratio: js.UndefOr[Double] = js.undefined
     
     var width: js.UndefOr[Double] = js.undefined
+    
+    var xOffset: js.UndefOr[Double] = js.undefined
+    
+    var yOffset: js.UndefOr[Double] = js.undefined
   }
   object Height {
     
@@ -55,6 +59,14 @@ object anon {
       inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      
+      inline def setXOffset(value: Double): Self = StObject.set(x, "xOffset", value.asInstanceOf[js.Any])
+      
+      inline def setXOffsetUndefined: Self = StObject.set(x, "xOffset", js.undefined)
+      
+      inline def setYOffset(value: Double): Self = StObject.set(x, "yOffset", value.asInstanceOf[js.Any])
+      
+      inline def setYOffsetUndefined: Self = StObject.set(x, "yOffset", js.undefined)
     }
   }
 }

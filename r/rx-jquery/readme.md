@@ -10,9 +10,9 @@ Library for composing asynchronous and event-based operations in JavaScript exte
 | Full name          | rx-jquery |
 | Keywords           | Reactive, LINQ, Collections, jQuery, RxJS, Rx |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 3358 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 927.3333333333334 |
+| # stars            | 211.0 |
 
 ## Links
 - [Homepage](https://github.com/Reactive-Extensions/RxJS-jQuery)

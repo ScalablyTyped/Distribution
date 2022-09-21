@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GoogleDevtoolsRemotebuildbotCommandEvents extends StObject {
   
+  /** Indicates if and how Container Manager is being used for task execution. */
+  var cmUsage: js.UndefOr[String] = js.undefined
+  
   /** Indicates whether we are using a cached Docker image (true) or had to pull the Docker image (false) for this command. */
   var dockerCacheHit: js.UndefOr[Boolean] = js.undefined
   
@@ -20,6 +23,12 @@ trait GoogleDevtoolsRemotebuildbotCommandEvents extends StObject {
   
   /** The number of warnings reported. */
   var numWarnings: js.UndefOr[String] = js.undefined
+  
+  /** Indicates whether output files and/or output directories were found relative to the execution root or to the user provided work directory or both or none. */
+  var outputLocation: js.UndefOr[String] = js.undefined
+  
+  /** Indicates whether an asynchronous container was used for execution. */
+  var usedAsyncContainer: js.UndefOr[Boolean] = js.undefined
 }
 object GoogleDevtoolsRemotebuildbotCommandEvents {
   
@@ -29,6 +38,10 @@ object GoogleDevtoolsRemotebuildbotCommandEvents {
   }
   
   extension [Self <: GoogleDevtoolsRemotebuildbotCommandEvents](x: Self) {
+    
+    inline def setCmUsage(value: String): Self = StObject.set(x, "cmUsage", value.asInstanceOf[js.Any])
+    
+    inline def setCmUsageUndefined: Self = StObject.set(x, "cmUsage", js.undefined)
     
     inline def setDockerCacheHit(value: Boolean): Self = StObject.set(x, "dockerCacheHit", value.asInstanceOf[js.Any])
     
@@ -49,5 +62,13 @@ object GoogleDevtoolsRemotebuildbotCommandEvents {
     inline def setNumWarnings(value: String): Self = StObject.set(x, "numWarnings", value.asInstanceOf[js.Any])
     
     inline def setNumWarningsUndefined: Self = StObject.set(x, "numWarnings", js.undefined)
+    
+    inline def setOutputLocation(value: String): Self = StObject.set(x, "outputLocation", value.asInstanceOf[js.Any])
+    
+    inline def setOutputLocationUndefined: Self = StObject.set(x, "outputLocation", js.undefined)
+    
+    inline def setUsedAsyncContainer(value: Boolean): Self = StObject.set(x, "usedAsyncContainer", value.asInstanceOf[js.Any])
+    
+    inline def setUsedAsyncContainerUndefined: Self = StObject.set(x, "usedAsyncContainer", js.undefined)
   }
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Stores a DeferralCompletedHandler to be invoked upon completion of the deferral and manipulates the state of the deferral. */
 @JSGlobal("Windows.Foundation.Deferral")
 @js.native
-class Deferral protected ()
+open class Deferral protected ()
   extends StObject
      with typings.winrtUwp.Windows.Foundation.Deferral {
   /**

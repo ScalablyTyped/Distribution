@@ -10,13 +10,13 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("hashtable", JSImport.Namespace)
   @js.native
-  class ^[TKey, TValue] ()
+  open class ^[TKey, TValue] ()
     extends StObject
        with IHashtable[TKey, TValue] {
-    def this(hashCode: js.Function1[/* value */ TValue, js.Any]) = this()
+    def this(hashCode: js.Function1[/* value */ TValue, Any]) = this()
     def this(options: IHashtableOptions[TKey]) = this()
     def this(
-      hashCode: js.Function1[/* value */ TValue, js.Any],
+      hashCode: js.Function1[/* value */ TValue, Any],
       equals: js.Function2[/* value1 */ TValue, /* value2 */ TValue, Boolean]
     ) = this()
     def this(hashCode: Unit, equals: js.Function2[/* value1 */ TValue, /* value2 */ TValue, Boolean]) = this()

@@ -6,25 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Photo extends StObject {
   
-  /** Absolute time when the photo was captured. When the photo has no exif timestamp, this is used to set a timestamp in the photo metadata. */
+  /** Optional. Absolute time when the photo was captured. When the photo has no exif timestamp, this is used to set a timestamp in the photo metadata. */
   var captureTime: js.UndefOr[String] = js.undefined
   
-  /** Connections to other photos. A connection represents the link from this photo to another photo. */
+  /** Optional. Connections to other photos. A connection represents the link from this photo to another photo. */
   var connections: js.UndefOr[js.Array[Connection]] = js.undefined
   
   /** Output only. The download URL for the photo bytes. This field is set only when GetPhotoRequest.view is set to PhotoView.INCLUDE_DOWNLOAD_URL. */
   var downloadUrl: js.UndefOr[String] = js.undefined
   
-  /** Output only. Status in Google Maps, whether this photo was published or rejected. Not currently populated. */
+  /** Output only. Status in Google Maps, whether this photo was published or rejected. */
   var mapsPublishStatus: js.UndefOr[String] = js.undefined
   
-  /** Required when updating a photo. Output only when creating a photo. Identifier for the photo, which is unique among all photos in Google. */
+  /** Required. Output only. Required when updating a photo. Output only when creating a photo. Identifier for the photo, which is unique among all photos in Google. */
   var photoId: js.UndefOr[PhotoId] = js.undefined
   
-  /** Places where this photo belongs. */
+  /** Optional. Places where this photo belongs. */
   var places: js.UndefOr[js.Array[Place]] = js.undefined
   
-  /** Pose of the photo. */
+  /** Optional. Pose of the photo. */
   var pose: js.UndefOr[Pose] = js.undefined
   
   /** Output only. The share link for the photo. */
@@ -36,8 +36,11 @@ trait Photo extends StObject {
   /** Output only. Status of rights transfer on this photo. */
   var transferStatus: js.UndefOr[String] = js.undefined
   
-  /** Required when creating a photo. Input only. The resource URL where the photo bytes are uploaded to. */
+  /** Input only. Required when creating a photo. Input only. The resource URL where the photo bytes are uploaded to. */
   var uploadReference: js.UndefOr[UploadRef] = js.undefined
+  
+  /** Output only. Time when the image was uploaded. */
+  var uploadTime: js.UndefOr[String] = js.undefined
   
   /** Output only. View count of the photo. */
   var viewCount: js.UndefOr[String] = js.undefined
@@ -59,7 +62,7 @@ object Photo {
     
     inline def setConnectionsUndefined: Self = StObject.set(x, "connections", js.undefined)
     
-    inline def setConnectionsVarargs(value: Connection*): Self = StObject.set(x, "connections", js.Array(value :_*))
+    inline def setConnectionsVarargs(value: Connection*): Self = StObject.set(x, "connections", js.Array(value*))
     
     inline def setDownloadUrl(value: String): Self = StObject.set(x, "downloadUrl", value.asInstanceOf[js.Any])
     
@@ -77,7 +80,7 @@ object Photo {
     
     inline def setPlacesUndefined: Self = StObject.set(x, "places", js.undefined)
     
-    inline def setPlacesVarargs(value: Place*): Self = StObject.set(x, "places", js.Array(value :_*))
+    inline def setPlacesVarargs(value: Place*): Self = StObject.set(x, "places", js.Array(value*))
     
     inline def setPose(value: Pose): Self = StObject.set(x, "pose", value.asInstanceOf[js.Any])
     
@@ -98,6 +101,10 @@ object Photo {
     inline def setUploadReference(value: UploadRef): Self = StObject.set(x, "uploadReference", value.asInstanceOf[js.Any])
     
     inline def setUploadReferenceUndefined: Self = StObject.set(x, "uploadReference", js.undefined)
+    
+    inline def setUploadTime(value: String): Self = StObject.set(x, "uploadTime", value.asInstanceOf[js.Any])
+    
+    inline def setUploadTimeUndefined: Self = StObject.set(x, "uploadTime", js.undefined)
     
     inline def setViewCount(value: String): Self = StObject.set(x, "viewCount", value.asInstanceOf[js.Any])
     

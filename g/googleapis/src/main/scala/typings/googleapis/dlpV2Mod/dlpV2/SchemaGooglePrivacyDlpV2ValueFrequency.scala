@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A value of a field, including its frequency.
-  */
 trait SchemaGooglePrivacyDlpV2ValueFrequency extends StObject {
   
   /**
     * How many times the value is contained in the field.
     */
-  var count: js.UndefOr[String] = js.undefined
+  var count: js.UndefOr[String | Null] = js.undefined
   
   /**
     * A value contained in the field in question.
@@ -29,6 +26,8 @@ object SchemaGooglePrivacyDlpV2ValueFrequency {
   extension [Self <: SchemaGooglePrivacyDlpV2ValueFrequency](x: Self) {
     
     inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    
+    inline def setCountNull: Self = StObject.set(x, "count", null)
     
     inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     

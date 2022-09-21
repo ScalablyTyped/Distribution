@@ -10,12 +10,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.invityApi.invityApiStrings.SENDING
   - typings.invityApi.invityApiStrings.CONFIRMING
   - typings.invityApi.invityApiStrings.CONVERTING
+  - typings.invityApi.invityApiStrings.APPROVAL_REQ
+  - typings.invityApi.invityApiStrings.APPROVAL_PENDING
   - typings.invityApi.invityApiStrings.SUCCESS
   - typings.invityApi.invityApiStrings.ERROR
   - typings.invityApi.invityApiStrings.KYC
 */
 trait ExchangeTradeStatus extends StObject
 object ExchangeTradeStatus {
+  
+  inline def APPROVAL_PENDING: typings.invityApi.invityApiStrings.APPROVAL_PENDING = "APPROVAL_PENDING".asInstanceOf[typings.invityApi.invityApiStrings.APPROVAL_PENDING]
+  
+  inline def APPROVAL_REQ: typings.invityApi.invityApiStrings.APPROVAL_REQ = "APPROVAL_REQ".asInstanceOf[typings.invityApi.invityApiStrings.APPROVAL_REQ]
   
   inline def CONFIRM: typings.invityApi.invityApiStrings.CONFIRM = "CONFIRM".asInstanceOf[typings.invityApi.invityApiStrings.CONFIRM]
   

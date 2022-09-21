@@ -14,7 +14,7 @@ trait DescribeAccessPolicyResponse extends StObject {
   /**
     * The date the access policy was created, in Unix epoch time.
     */
-  var accessPolicyCreationDate: Timestamp
+  var accessPolicyCreationDate: js.Date
   
   /**
     * The ID of the access policy.
@@ -22,14 +22,14 @@ trait DescribeAccessPolicyResponse extends StObject {
   var accessPolicyId: ID
   
   /**
-    * The identity (AWS SSO user, AWS SSO group, or IAM user) to which this access policy applies.
+    * The identity (Amazon Web Services SSO user, Amazon Web Services SSO group, or IAM user) to which this access policy applies.
     */
   var accessPolicyIdentity: Identity
   
   /**
     * The date the access policy was last updated, in Unix epoch time.
     */
-  var accessPolicyLastUpdateDate: Timestamp
+  var accessPolicyLastUpdateDate: js.Date
   
   /**
     * The access policy permission. Note that a project ADMINISTRATOR is also known as a project owner.
@@ -37,7 +37,7 @@ trait DescribeAccessPolicyResponse extends StObject {
   var accessPolicyPermission: Permission
   
   /**
-    * The AWS IoT SiteWise Monitor resource (portal or project) to which this access policy provides access.
+    * The IoT SiteWise Monitor resource (portal or project) to which this access policy provides access.
     */
   var accessPolicyResource: Resource
 }
@@ -45,10 +45,10 @@ object DescribeAccessPolicyResponse {
   
   inline def apply(
     accessPolicyArn: ARN,
-    accessPolicyCreationDate: Timestamp,
+    accessPolicyCreationDate: js.Date,
     accessPolicyId: ID,
     accessPolicyIdentity: Identity,
-    accessPolicyLastUpdateDate: Timestamp,
+    accessPolicyLastUpdateDate: js.Date,
     accessPolicyPermission: Permission,
     accessPolicyResource: Resource
   ): DescribeAccessPolicyResponse = {
@@ -60,13 +60,13 @@ object DescribeAccessPolicyResponse {
     
     inline def setAccessPolicyArn(value: ARN): Self = StObject.set(x, "accessPolicyArn", value.asInstanceOf[js.Any])
     
-    inline def setAccessPolicyCreationDate(value: Timestamp): Self = StObject.set(x, "accessPolicyCreationDate", value.asInstanceOf[js.Any])
+    inline def setAccessPolicyCreationDate(value: js.Date): Self = StObject.set(x, "accessPolicyCreationDate", value.asInstanceOf[js.Any])
     
     inline def setAccessPolicyId(value: ID): Self = StObject.set(x, "accessPolicyId", value.asInstanceOf[js.Any])
     
     inline def setAccessPolicyIdentity(value: Identity): Self = StObject.set(x, "accessPolicyIdentity", value.asInstanceOf[js.Any])
     
-    inline def setAccessPolicyLastUpdateDate(value: Timestamp): Self = StObject.set(x, "accessPolicyLastUpdateDate", value.asInstanceOf[js.Any])
+    inline def setAccessPolicyLastUpdateDate(value: js.Date): Self = StObject.set(x, "accessPolicyLastUpdateDate", value.asInstanceOf[js.Any])
     
     inline def setAccessPolicyPermission(value: Permission): Self = StObject.set(x, "accessPolicyPermission", value.asInstanceOf[js.Any])
     

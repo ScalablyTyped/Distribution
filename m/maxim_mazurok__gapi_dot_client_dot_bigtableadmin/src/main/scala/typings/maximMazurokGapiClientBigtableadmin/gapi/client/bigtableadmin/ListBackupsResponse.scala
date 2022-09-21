@@ -25,7 +25,7 @@ object ListBackupsResponse {
     
     inline def setBackupsUndefined: Self = StObject.set(x, "backups", js.undefined)
     
-    inline def setBackupsVarargs(value: Backup*): Self = StObject.set(x, "backups", js.Array(value :_*))
+    inline def setBackupsVarargs(value: Backup*): Self = StObject.set(x, "backups", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

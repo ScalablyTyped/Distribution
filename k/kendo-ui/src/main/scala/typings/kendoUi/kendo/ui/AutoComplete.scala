@@ -14,9 +14,9 @@ trait AutoComplete
   
   def close(): Unit = js.native
   
-  def dataItem(index: Double): js.Any = js.native
-  def dataItem(index: JQuery): js.Any = js.native
-  def dataItem(index: Element): js.Any = js.native
+  def dataItem(index: Double): Any = js.native
+  def dataItem(index: JQuery): Any = js.native
+  def dataItem(index: Element): Any = js.native
   
   var dataSource: DataSource = js.native
   
@@ -24,7 +24,7 @@ trait AutoComplete
   
   def focus(): Unit = js.native
   
-  def items(): js.Any = js.native
+  def items(): Any = js.native
   
   var list: JQuery = js.native
   

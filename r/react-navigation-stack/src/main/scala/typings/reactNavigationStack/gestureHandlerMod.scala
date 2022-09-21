@@ -2,7 +2,7 @@ package typings.reactNavigationStack
 
 import typings.react.mod.ComponentType
 import typings.reactNative.mod.View
-import typings.reactNativeGestureHandler.mod.PanGestureHandlerProperties
+import typings.reactNativeGestureHandler.gestureHandlerTypesCompatMod.PanGestureHandlerProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +12,7 @@ object gestureHandlerMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-navigation-stack/lib/typescript/src/vendor/views/GestureHandler", "GestureHandlerRootView")
   @js.native
-  class GestureHandlerRootView () extends View
+  open class GestureHandlerRootView () extends View
   object GestureHandlerRootView {
     
     @JSImport("react-navigation-stack/lib/typescript/src/vendor/views/GestureHandler", "GestureHandlerRootView")

@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PullSymbol extends StObject {
   
-  /* private */ var _container: js.Any = js.native
+  /* private */ var _container: Any = js.native
   
-  /* private */ var _declarations: js.Any = js.native
+  /* private */ var _declarations: Any = js.native
   
-  /* private */ var _docComments: js.Any = js.native
+  /* private */ var _docComments: Any = js.native
   
-  /* private */ var _enclosingSignature: js.Any = js.native
+  /* private */ var _enclosingSignature: Any = js.native
   
   def _getResolver(): PullTypeResolver = js.native
   
@@ -25,24 +25,24 @@ trait PullSymbol extends StObject {
   
   def anyDeclHasFlag(flag: PullElementFlags): Boolean = js.native
   
-  /* private */ def cleanDocCommentLine(line: js.Any, jsDocStyleComment: js.Any, jsDocLineSpaceToRemove: js.Any): js.Any = js.native
+  /* private */ def cleanDocCommentLine(line: Any, jsDocStyleComment: Any, jsDocLineSpaceToRemove: Any): Any = js.native
   
-  /* private */ def cleanJSDocComment(content: js.Any, spacesToRemove: js.Any): js.Any = js.native
+  /* private */ def cleanJSDocComment(content: Any, spacesToRemove: Any): Any = js.native
   
-  /* private */ def consumeLeadingSpace(line: js.Any, startIndex: js.Any, maxSpacesToRemove: js.Any): js.Any = js.native
+  /* private */ def consumeLeadingSpace(line: Any, startIndex: Any, maxSpacesToRemove: Any): Any = js.native
   
   def docComments(): String = js.native
   def docComments(useConstructorAsClass: Boolean): String = js.native
   
   /* private */ def findAliasedTypeSymbols(
-    scopeSymbol: js.Any,
-    skipScopeSymbolAliasesLookIn: js.Any,
-    lookIntoOnlyExportedAlias: js.Any,
-    aliasSymbols: js.Any,
-    visitedScopeDeclarations: js.Any
-  ): js.Any = js.native
+    scopeSymbol: Any,
+    skipScopeSymbolAliasesLookIn: Any,
+    lookIntoOnlyExportedAlias: Any,
+    aliasSymbols: Any,
+    visitedScopeDeclarations: Any
+  ): Any = js.native
   
-  /* private */ def findQualifyingSymbolPathInScopeSymbol(scopeSymbol: js.Any): js.Any = js.native
+  /* private */ def findQualifyingSymbolPathInScopeSymbol(scopeSymbol: Any): Any = js.native
   
   def fullName(): String = js.native
   def fullName(scopeSymbol: PullSymbol): String = js.native
@@ -72,23 +72,23 @@ trait PullSymbol extends StObject {
   def getDisplayName(scopeSymbol: PullSymbol, useConstraintInName: Boolean, skipInternalAliasName: Boolean): String = js.native
   def getDisplayName(scopeSymbol: PullSymbol, useConstraintInName: Unit, skipInternalAliasName: Boolean): String = js.native
   
-  /* private */ def getDocCommentArray(symbol: js.Any): js.Any = js.native
+  /* private */ def getDocCommentArray(symbol: Any): Any = js.native
   
-  /* private */ def getDocCommentText(comments: js.Any): js.Any = js.native
+  /* private */ def getDocCommentText(comments: Any): Any = js.native
   
-  /* private */ def getDocCommentTextValue(comment: js.Any): js.Any = js.native
+  /* private */ def getDocCommentTextValue(comment: Any): Any = js.native
   
-  /* private */ def getDocCommentsOfDecl(decl: js.Any): js.Any = js.native
+  /* private */ def getDocCommentsOfDecl(decl: Any): Any = js.native
   
   def getEnclosingSignature(): PullSignatureSymbol = js.native
   
-  /* private */ def getExportedInternalAliasSymbol(scopeSymbol: js.Any): js.Any = js.native
+  /* private */ def getExportedInternalAliasSymbol(scopeSymbol: Any): Any = js.native
   
   def getExternalAliasedSymbols(scopeSymbol: PullSymbol): js.Array[PullTypeAliasSymbol] = js.native
   
   def getIsSpecialized(): Boolean = js.native
   
-  def getIsSynthesized(): js.Any = js.native
+  def getIsSynthesized(): Any = js.native
   
   def getName(): String = js.native
   def getName(scopeSymbol: Unit, useConstraintInName: Boolean): String = js.native
@@ -103,7 +103,7 @@ trait PullSymbol extends StObject {
   
   def getNamePartForFullName(): String = js.native
   
-  /* private */ def getParameterDocCommentText(param: js.Any, fncDocComments: js.Any): js.Any = js.native
+  /* private */ def getParameterDocCommentText(param: Any, fncDocComments: Any): Any = js.native
   
   def getRootSymbol(): PullSymbol = js.native
   
@@ -183,7 +183,7 @@ trait PullSymbol extends StObject {
   def getTypeNameEx(scopeSymbol: PullSymbol): MemberName = js.native
   def getTypeNameEx(scopeSymbol: PullSymbol, getPrettyTypeName: Boolean): MemberName = js.native
   
-  /* private */ def getTypeNameForFunctionSignature(prefix: js.Any, scopeSymbol: js.Any, getPrettyTypeName: js.Any): js.Any = js.native
+  /* private */ def getTypeNameForFunctionSignature(prefix: Any, scopeSymbol: Any, getPrettyTypeName: Any): Any = js.native
   
   def hasDeclaration(decl: PullDecl): Boolean = js.native
   
@@ -220,9 +220,9 @@ trait PullSymbol extends StObject {
   
   def isSignature(): Boolean = js.native
   
-  /* private */ def isSpaceChar(line: js.Any, index: js.Any): js.Any = js.native
+  /* private */ def isSpaceChar(line: Any, index: Any): Any = js.native
   
-  /* private */ var isSynthesized: js.Any = js.native
+  /* private */ var isSynthesized: Any = js.native
   
   def isType(): Boolean = js.native
   
@@ -238,7 +238,7 @@ trait PullSymbol extends StObject {
   
   var pullSymbolID: Double = js.native
   
-  /* private */ var rootSymbol: js.Any = js.native
+  /* private */ var rootSymbol: Any = js.native
   
   def setContainer(containerSymbol: PullTypeSymbol): Unit = js.native
   

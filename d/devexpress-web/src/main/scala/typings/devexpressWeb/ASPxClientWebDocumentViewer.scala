@@ -77,7 +77,7 @@ trait ASPxClientWebDocumentViewer
     * Enables navigation between drill-through reports on the client-side. A Deferred Promise object.
     * @param customData Provides access to custom client data associated with a currently previewed report.
     */
-  def DrillThrough(customData: String): JQueryPromise[js.Any] = js.native
+  def DrillThrough(customData: String): JQueryPromise[Any] = js.native
   
   /**
     * Occurs each time an editing field's value changes.
@@ -131,7 +131,7 @@ trait ASPxClientWebDocumentViewer
     * Opens the specified report on the Web Document Viewer's client side. Allows you to refresh preview for the loaded report. A Deferred Promise object.
     * @param url A string that specifies the report's URL.
     */
-  def OpenReport(url: String): JQueryPromise[js.Any] = js.native
+  def OpenReport(url: String): JQueryPromise[Any] = js.native
   
   /**
     * Occurs after report parameter values are reset to their default values.

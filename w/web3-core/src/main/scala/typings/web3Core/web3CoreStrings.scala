@@ -48,6 +48,12 @@ object web3CoreStrings {
   inline def error: error = "error".asInstanceOf[error]
   
   @js.native
+  sealed trait finalized
+    extends StObject
+       with _BlockNumber
+  inline def finalized: finalized = "finalized".asInstanceOf[finalized]
+  
+  @js.native
   sealed trait genesis
     extends StObject
        with _BlockNumber
@@ -116,6 +122,12 @@ object web3CoreStrings {
     extends StObject
        with chain
   inline def ropsten: ropsten = "ropsten".asInstanceOf[ropsten]
+  
+  @js.native
+  sealed trait safe
+    extends StObject
+       with _BlockNumber
+  inline def safe: safe = "safe".asInstanceOf[safe]
   
   @js.native
   sealed trait sending extends StObject

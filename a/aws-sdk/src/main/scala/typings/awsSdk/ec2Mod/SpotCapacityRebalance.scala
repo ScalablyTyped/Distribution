@@ -7,9 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SpotCapacityRebalance extends StObject {
   
   /**
-    * The replacement strategy to use. Only available for fleets of type maintain. You must specify a value, otherwise you get an error. To allow Spot Fleet to launch a replacement Spot Instance when an instance rebalance notification is emitted for a Spot Instance in the fleet, specify launch.  When a replacement instance is launched, the instance marked for rebalance is not automatically terminated. You can terminate it, or you can leave it running. You are charged for all instances while they are running. 
+    * The replacement strategy to use. Only available for fleets of type maintain.  launch - Spot Fleet launches a new replacement Spot Instance when a rebalance notification is emitted for an existing Spot Instance in the fleet. Spot Fleet does not terminate the instances that receive a rebalance notification. You can terminate the old instances, or you can leave them running. You are charged for all instances while they are running.   launch-before-terminate - Spot Fleet launches a new replacement Spot Instance when a rebalance notification is emitted for an existing Spot Instance in the fleet, and then, after a delay that you specify (in TerminationDelay), terminates the instances that received a rebalance notification.
     */
   var ReplacementStrategy: js.UndefOr[typings.awsSdk.ec2Mod.ReplacementStrategy] = js.undefined
+  
+  /**
+    * The amount of time (in seconds) that Amazon EC2 waits before terminating the old Spot Instance after launching a new replacement Spot Instance. Required when ReplacementStrategy is set to launch-before-terminate. Not valid when ReplacementStrategy is set to launch. Valid values: Minimum value of 120 seconds. Maximum value of 7200 seconds.
+    */
+  var TerminationDelay: js.UndefOr[Integer] = js.undefined
 }
 object SpotCapacityRebalance {
   
@@ -23,5 +28,9 @@ object SpotCapacityRebalance {
     inline def setReplacementStrategy(value: ReplacementStrategy): Self = StObject.set(x, "ReplacementStrategy", value.asInstanceOf[js.Any])
     
     inline def setReplacementStrategyUndefined: Self = StObject.set(x, "ReplacementStrategy", js.undefined)
+    
+    inline def setTerminationDelay(value: Integer): Self = StObject.set(x, "TerminationDelay", value.asInstanceOf[js.Any])
+    
+    inline def setTerminationDelayUndefined: Self = StObject.set(x, "TerminationDelay", js.undefined)
   }
 }

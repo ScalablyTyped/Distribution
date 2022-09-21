@@ -1,8 +1,7 @@
 package typings.epub
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,7 +35,7 @@ object mod {
   
   @JSImport("epub", JSImport.Namespace)
   @js.native
-  class ^ protected () extends EPub {
+  open class ^ protected () extends EPub {
     def this(epubfile: String) = this()
     def this(epubfile: String, imagewebroot: String) = this()
     def this(epubfile: String, imagewebroot: String, chapterwebroot: String) = this()
@@ -48,18 +47,18 @@ object mod {
     
     var flow: js.Array[js.Object] = js.native
     
-    def getChapter(chapterId: String, callback: js.Function2[/* error */ Error, /* text */ String, Unit]): Unit = js.native
+    def getChapter(chapterId: String, callback: js.Function2[/* error */ js.Error, /* text */ String, Unit]): Unit = js.native
     
-    def getChapterRaw(chapterId: String, callback: js.Function2[/* error */ Error, /* text */ String, Unit]): Unit = js.native
+    def getChapterRaw(chapterId: String, callback: js.Function2[/* error */ js.Error, /* text */ String, Unit]): Unit = js.native
     
     def getFile(
       id: String,
-      callback: js.Function3[/* error */ Error, /* data */ Buffer, /* mimeType */ String, Unit]
+      callback: js.Function3[/* error */ js.Error, /* data */ Buffer, /* mimeType */ String, Unit]
     ): Unit = js.native
     
     def getImage(
       id: String,
-      callback: js.Function3[/* error */ Error, /* data */ Buffer, /* mimeType */ String, Unit]
+      callback: js.Function3[/* error */ js.Error, /* data */ Buffer, /* mimeType */ String, Unit]
     ): Unit = js.native
     
     var manifest: js.Object = js.native

@@ -28,7 +28,7 @@ trait Component[D, P, B /* <: js.Array[(Behavior[js.Object, js.Object, js.Object
   /**
     * 组件数据，包括内部数据和属性值
     */
-  var data: D & UnboxBehaviorsData[B] & typings.weixinApp.weixinAppStrings.Component & TopLevel[js.Any] = js.native
+  var data: D & UnboxBehaviorsData[B] & typings.weixinApp.weixinAppStrings.Component & TopLevel[Any] = js.native
   
   /**
     * 节点dataset
@@ -38,13 +38,13 @@ trait Component[D, P, B /* <: js.Array[(Behavior[js.Object, js.Object, js.Object
   /**
     * 获取所有这个关系对应的所有关联节点，参见 [组件间关系](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/custom-component/relations.html)
     */
-  def getRelationNodes(relationKey: String): js.Array[ComponentRelation[js.Any, js.Any]] = js.native
+  def getRelationNodes(relationKey: String): js.Array[ComponentRelation[Any, Any]] = js.native
   
   /**
     * 检查组件是否具有 behavior
     * 检查时会递归检查被直接或间接引入的所有behavior
     */
-  def hasBehavior(behavior: js.Any): Boolean = js.native
+  def hasBehavior(behavior: Any): Boolean = js.native
   
   /**
     * 节点id
@@ -59,18 +59,18 @@ trait Component[D, P, B /* <: js.Array[(Behavior[js.Object, js.Object, js.Object
   /**
     * 组件数据，包括内部数据和属性值（与 data 一致）
     */
-  var properties: D & UnboxBehaviorsData[B] & typings.weixinApp.weixinAppStrings.Component & TopLevel[js.Any] = js.native
+  var properties: D & UnboxBehaviorsData[B] & typings.weixinApp.weixinAppStrings.Component & TopLevel[Any] = js.native
   
   /**
     * selector  使用选择器选择组件实例节点，返回匹配到的全部组件实例对象组成的数组
     */
-  def selectAllComponents(selector: String): js.Array[Component[js.Any, js.Any, js.Array[js.Any]]] = js.native
+  def selectAllComponents(selector: String): js.Array[Component[Any, Any, js.Array[Any]]] = js.native
   
   /**
     * 使用选择器选择组件实例节点
     * 返回匹配到的第一个组件实例对象
     */
-  def selectComponent(selector: String): Component[js.Any, js.Any, js.Array[js.Any]] = js.native
+  def selectComponent(selector: String): Component[Any, Any, js.Array[Any]] = js.native
   
   /**
     * 将数据从逻辑层发送到视图层，同时改变对应的 this.data 的值
@@ -83,12 +83,12 @@ trait Component[D, P, B /* <: js.Array[(Behavior[js.Object, js.Object, js.Object
   def setData(
     data: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof D ]:? string | number | boolean | symbol | object | null | std.Array<any>}
-    */ typings.weixinApp.weixinAppStrings.Component & TopLevel[js.Any]
+    */ typings.weixinApp.weixinAppStrings.Component & TopLevel[Any]
   ): Unit = js.native
   def setData(
     data: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof D ]:? string | number | boolean | symbol | object | null | std.Array<any>}
-    */ typings.weixinApp.weixinAppStrings.Component & TopLevel[js.Any],
+    */ typings.weixinApp.weixinAppStrings.Component & TopLevel[Any],
     callback: js.Function0[Unit]
   ): Unit = js.native
   
@@ -96,7 +96,7 @@ trait Component[D, P, B /* <: js.Array[(Behavior[js.Object, js.Object, js.Object
     * 触发事件，参见 [组件事件](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/custom-component/events.html)
     */
   def triggerEvent(name: String): Unit = js.native
-  def triggerEvent(name: String, details: js.Any): Unit = js.native
-  def triggerEvent(name: String, details: js.Any, options: Partialbubblesbooleancomp): Unit = js.native
+  def triggerEvent(name: String, details: Any): Unit = js.native
+  def triggerEvent(name: String, details: Any, options: Partialbubblesbooleancomp): Unit = js.native
   def triggerEvent(name: String, details: Unit, options: Partialbubblesbooleancomp): Unit = js.native
 }

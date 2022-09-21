@@ -7,20 +7,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ContactData extends StObject {
   
-  var ContactData: Attributes
+  var ContactData: Channel
   
   var Parameters: StringDictionary[String]
 }
 object ContactData {
   
-  inline def apply(ContactData: Attributes, Parameters: StringDictionary[String]): ContactData = {
+  inline def apply(ContactData: Channel, Parameters: StringDictionary[String]): ContactData = {
     val __obj = js.Dynamic.literal(ContactData = ContactData.asInstanceOf[js.Any], Parameters = Parameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContactData]
   }
   
   extension [Self <: ContactData](x: Self) {
     
-    inline def setContactData(value: Attributes): Self = StObject.set(x, "ContactData", value.asInstanceOf[js.Any])
+    inline def setContactData(value: Channel): Self = StObject.set(x, "ContactData", value.asInstanceOf[js.Any])
     
     inline def setParameters(value: StringDictionary[String]): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
   }

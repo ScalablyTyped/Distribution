@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ArrowFunctionExpression
   extends StObject
      with BaseFunction
-     with Expression
      with Function {
   
   var expression: Boolean

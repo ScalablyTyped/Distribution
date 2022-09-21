@@ -18,7 +18,7 @@ trait OrdersReturnRefundLineItemRequest extends StObject {
   /** The ID of the product to return. This is the REST ID used in the products service. Either lineItemId or productId is required. */
   var productId: js.UndefOr[String] = js.undefined
   
-  /** The quantity to return and refund. */
+  /** The quantity to return and refund. Quantity is required. */
   var quantity: js.UndefOr[Double] = js.undefined
   
   /**

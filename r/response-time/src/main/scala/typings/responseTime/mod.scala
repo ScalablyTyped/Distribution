@@ -3,10 +3,9 @@ package typings.responseTime
 import typings.express.mod.RequestHandler
 import typings.express.mod.Request_
 import typings.express.mod.Response_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,33 +18,51 @@ object mod {
     */
   inline def apply(): js.Function3[
     /* request */ IncomingMessage, 
-    /* response */ ServerResponse, 
-    /* callback */ js.Function1[/* err */ js.Any, Unit], 
-    js.Any
+    /* response */ ServerResponse[IncomingMessage], 
+    /* callback */ js.Function1[/* err */ Any, Unit], 
+    Any
   ] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function3[
     /* request */ IncomingMessage, 
-    /* response */ ServerResponse, 
-    /* callback */ js.Function1[/* err */ js.Any, Unit], 
-    js.Any
+    /* response */ ServerResponse[IncomingMessage], 
+    /* callback */ js.Function1[/* err */ Any, Unit], 
+    Any
   ]]
   inline def apply(
     fn: js.Function3[
-      /* request */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-      /* response */ Response_[js.Any], 
+      /* request */ Request_[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ], 
+      /* response */ Response_[Any, Record[String, Any]], 
       /* time */ Double, 
-      js.Any
+      Any
     ]
-  ): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  ): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
   inline def apply(options: ResponseTimeOptions): js.Function3[
     /* request */ IncomingMessage, 
-    /* response */ ServerResponse, 
-    /* callback */ js.Function1[/* err */ js.Any, Unit], 
-    js.Any
+    /* response */ ServerResponse[IncomingMessage], 
+    /* callback */ js.Function1[/* err */ Any, Unit], 
+    Any
   ] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
     /* request */ IncomingMessage, 
-    /* response */ ServerResponse, 
-    /* callback */ js.Function1[/* err */ js.Any, Unit], 
-    js.Any
+    /* response */ ServerResponse[IncomingMessage], 
+    /* callback */ js.Function1[/* err */ Any, Unit], 
+    Any
   ]]
   
   @JSImport("response-time", JSImport.Namespace)
@@ -54,9 +71,9 @@ object mod {
   
   type ResponseTimeFunction = js.Function3[
     /* request */ IncomingMessage, 
-    /* response */ ServerResponse, 
+    /* response */ ServerResponse[IncomingMessage], 
     /* time */ Double, 
-    js.Any
+    Any
   ]
   
   trait ResponseTimeOptions extends StObject {

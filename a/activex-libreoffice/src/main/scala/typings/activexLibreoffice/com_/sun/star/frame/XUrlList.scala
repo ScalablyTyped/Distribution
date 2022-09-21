@@ -16,12 +16,7 @@ trait XUrlList
 }
 object XUrlList {
   
-  inline def apply(
-    List: SafeArray[String],
-    acquire: () => Unit,
-    queryInterface: `type` => js.Any,
-    release: () => Unit
-  ): XUrlList = {
+  inline def apply(List: SafeArray[String], acquire: () => Unit, queryInterface: `type` => Any, release: () => Unit): XUrlList = {
     val __obj = js.Dynamic.literal(List = List.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[XUrlList]
   }

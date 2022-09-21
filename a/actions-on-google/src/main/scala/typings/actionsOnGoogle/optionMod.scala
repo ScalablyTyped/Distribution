@@ -17,7 +17,7 @@ object optionMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper/option", "Carousel")
   @js.native
-  class Carousel protected ()
+  open class Carousel protected ()
     extends typings.actionsOnGoogle.carouselMod.Carousel {
     /**
       * @param options Carousel option
@@ -28,7 +28,7 @@ object optionMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper/option", "List")
   @js.native
-  class List protected ()
+  open class List protected ()
     extends typings.actionsOnGoogle.listMod.List {
     /**
       * @param options List options
@@ -37,5 +37,5 @@ object optionMod {
     def this(options: ListOptions) = this()
   }
   
-  inline def convert(items: OptionItems[String | OptionItem]): js.Array[ApiOptionItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")(items.asInstanceOf[js.Any]).asInstanceOf[js.Array[ApiOptionItem]]
+  inline def convert(items: OptionItems[OptionItem | String]): js.Array[ApiOptionItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")(items.asInstanceOf[js.Any]).asInstanceOf[js.Array[ApiOptionItem]]
 }

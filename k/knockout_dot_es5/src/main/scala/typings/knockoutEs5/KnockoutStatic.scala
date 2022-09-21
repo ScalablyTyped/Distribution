@@ -12,13 +12,13 @@ trait KnockoutStatic extends StObject {
   
   var es5: KnockoutEs5 = js.native
   
-  def getObservable(obj: js.Any, propertyName: String): js.Any = js.native
+  def getObservable(obj: Any, propertyName: String): Any = js.native
   
   def track[T](obj: T): T = js.native
   def track[T](obj: T, propertyNames: Array[String]): T = js.native
   
-  def untrack(obj: js.Any): Unit = js.native
-  def untrack(obj: js.Any, propertyNames: Array[String]): Unit = js.native
+  def untrack(obj: Any): Unit = js.native
+  def untrack(obj: Any, propertyNames: Array[String]): Unit = js.native
   
-  def valueHasMutated(obj: js.Any, propertyName: String): Unit = js.native
+  def valueHasMutated(obj: Any, propertyName: String): Unit = js.native
 }

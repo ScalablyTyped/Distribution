@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Comments")
 @js.native
-/* private */ class Comments ()
+/* private */ open class Comments ()
   extends StObject
      with typings.activexWord.Word.Comments

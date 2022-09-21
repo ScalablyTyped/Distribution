@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-changed-files
 
-Typings are for version 26.6.2
+Typings are for version 29.0.0
 
 ## Library description:
 A module used internally by Jest to check which files have changed since you last committed in git or hg.
@@ -10,10 +10,10 @@ A module used internally by Jest to check which files have changed since you las
 | ------------------ | :-------------: |
 | Full name          | jest-changed-files |
 | Keywords           | - |
-| # releases         | 36 |
-| # dependents       | 68 |
-| # downloads        | 430500456 |
-| # stars            | 2 |
+| # releases         | 38 |
+| # dependents       | 0.0 |
+| # downloads        | 7.082136166666667E7 |
+| # stars            | 39951.0 |
 
 ## Links
 - [Homepage](https://github.com/facebook/jest#readme)

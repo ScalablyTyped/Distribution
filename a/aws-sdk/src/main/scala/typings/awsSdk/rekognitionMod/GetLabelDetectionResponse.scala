@@ -57,7 +57,7 @@ object GetLabelDetectionResponse {
     
     inline def setLabelsUndefined: Self = StObject.set(x, "Labels", js.undefined)
     
-    inline def setLabelsVarargs(value: LabelDetection*): Self = StObject.set(x, "Labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: LabelDetection*): Self = StObject.set(x, "Labels", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

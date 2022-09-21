@@ -38,7 +38,7 @@ object sessions {
       
       inline def setSessions(value: js.Array[Session]): Self = StObject.set(x, "sessions", value.asInstanceOf[js.Any])
       
-      inline def setSessionsVarargs(value: Session*): Self = StObject.set(x, "sessions", js.Array(value :_*))
+      inline def setSessionsVarargs(value: Session*): Self = StObject.set(x, "sessions", js.Array(value*))
     }
   }
   

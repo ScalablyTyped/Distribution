@@ -11,6 +11,6 @@ object operatorConcatMapToMod {
   val ^ : js.Any = js.native
   
   inline def concatMapTo[T, R](
-    innerObservable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ js.Any
-  ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("concatMapTo")(innerObservable.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    innerObservable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<R> */ Any
+  ): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("concatMapTo")(innerObservable.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

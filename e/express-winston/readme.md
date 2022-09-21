@@ -1,7 +1,7 @@
 
 # Scala.js typings for express-winston
 
-Typings are for version 4.0.5
+Typings are for version 4.2.0
 
 ## Library description:
 express.js middleware for winstonjs/winston
@@ -10,10 +10,10 @@ express.js middleware for winstonjs/winston
 | ------------------ | :-------------: |
 | Full name          | express-winston |
 | Keywords           | winston, logging, express, log, error, handler, middleware, colors |
-| # releases         | 10 |
-| # dependents       | 218 |
-| # downloads        | 9470401 |
-| # stars            | 20 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1341227.0 |
+| # stars            | 757.0 |
 
 ## Links
 - [Homepage](https://github.com/bithavoc/express-winston#readme)

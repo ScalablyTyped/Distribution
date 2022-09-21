@@ -20,7 +20,7 @@ object plainCardTypesMod {
     /**
       *  Render function to populate compact content area
       */
-    var onRenderPlainCard: js.UndefOr[IRenderFunction[js.Any]] = js.undefined
+    var onRenderPlainCard: js.UndefOr[IRenderFunction[Any]] = js.undefined
   }
   object IPlainCardProps {
     
@@ -32,7 +32,7 @@ object plainCardTypesMod {
     extension [Self <: IPlainCardProps](x: Self) {
       
       inline def setOnRenderPlainCard(
-        value: (/* props */ js.UndefOr[js.Any], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[js.Any], Element | Null]]) => Element | Null
+        value: (/* props */ js.UndefOr[Any], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[Any], Element | Null]]) => Element | Null
       ): Self = StObject.set(x, "onRenderPlainCard", js.Any.fromFunction2(value))
       
       inline def setOnRenderPlainCardUndefined: Self = StObject.set(x, "onRenderPlainCard", js.undefined)

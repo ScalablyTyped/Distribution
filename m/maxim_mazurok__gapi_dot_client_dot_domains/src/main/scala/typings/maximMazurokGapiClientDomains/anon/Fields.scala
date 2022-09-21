@@ -34,7 +34,7 @@ trait Fields extends StObject {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
-  /** Required. The name of the `Registration` whose authorization code is being retrieved, in the format `projects/∗/locations/∗/registrations/ *`. */
+  /** Required. The name of the `Registration` whose authorization code is being retrieved, in the format `projects/ *‍/locations/ *‍/registrations/ *`. */
   var registration: String
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */

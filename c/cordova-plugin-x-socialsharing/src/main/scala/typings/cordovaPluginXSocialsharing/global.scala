@@ -8,7 +8,7 @@ object global {
   
   @JSGlobal("SocialSharing")
   @js.native
-  class SocialSharing ()
+  open class SocialSharing ()
     extends StObject
        with typings.cordovaPluginXSocialsharing.SocialSharing
 }

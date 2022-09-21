@@ -8,7 +8,6 @@ import typings.std.ArrayConstructor
 import typings.std.BooleanConstructor
 import typings.std.CustomElementConstructor
 import typings.std.CustomEvent
-import typings.std.Date
 import typings.std.DateConstructor
 import typings.std.DocumentFragment
 import typings.std.Element
@@ -45,14 +44,14 @@ object mod {
       }
       object ArraySplice {
         
-        inline def apply(calculateSplices: (js.Array[js.Any], js.Array[js.Any]) => js.Array[PolymerSplice]): ArraySplice = {
+        inline def apply(calculateSplices: (js.Array[Any], js.Array[Any]) => js.Array[PolymerSplice]): ArraySplice = {
           val __obj = js.Dynamic.literal(calculateSplices = js.Any.fromFunction2(calculateSplices))
           __obj.asInstanceOf[ArraySplice]
         }
         
         extension [Self <: ArraySplice](x: Self) {
           
-          inline def setCalculateSplices(value: (js.Array[js.Any], js.Array[js.Any]) => js.Array[PolymerSplice]): Self = StObject.set(x, "calculateSplices", js.Any.fromFunction2(value))
+          inline def setCalculateSplices(value: (js.Array[Any], js.Array[Any]) => js.Array[PolymerSplice]): Self = StObject.set(x, "calculateSplices", js.Any.fromFunction2(value))
         }
       }
       
@@ -60,7 +59,7 @@ object mod {
         extends StObject
            with CommonBase
            with /** Need to allow all properties for callback methods. */
-      /* prop */ StringDictionary[js.Any] {
+      /* prop */ StringDictionary[Any] {
         
         // Has to live on Base because it is incompatible with
         // HTMLElement#toggleAttribute
@@ -76,7 +75,7 @@ object mod {
       object Base {
         
         inline def apply(
-          deserialize: (js.UndefOr[js.Function2[/* value */ String, /* type */ NumberConstructor, Double]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ BooleanConstructor, Boolean]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ ObjectConstructor, js.Object]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ ArrayConstructor, js.Array[js.Any]]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ DateConstructor, Date]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ StringConstructor, String]]),
+          deserialize: (js.UndefOr[js.Function2[/* value */ String, /* type */ NumberConstructor, Double]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ BooleanConstructor, Boolean]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ ObjectConstructor, js.Object]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ ArrayConstructor, js.Array[Any]]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ DateConstructor, js.Date]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ StringConstructor, String]]),
           is: String
         ): Base = {
           val __obj = js.Dynamic.literal(deserialize = deserialize.asInstanceOf[js.Any], is = is.asInstanceOf[js.Any])
@@ -98,15 +97,13 @@ object mod {
         /* polymer-standard */
         // Annotations
         @JSName("$")
-        var $: js.UndefOr[js.Any] = js.undefined
+        var $: js.UndefOr[Any] = js.undefined
         
         // Utils
         @JSName("$$")
         var DollarDollar: js.UndefOr[js.Function1[/* selector */ String, Element]] = js.undefined
         
-        var arrayDelete: js.UndefOr[
-                js.Function2[/* path */ String | js.Array[js.Any], /* item */ js.Any, js.Array[js.Any]]
-              ] = js.undefined
+        var arrayDelete: js.UndefOr[js.Function2[/* path */ String | js.Array[Any], /* item */ Any, js.Array[Any]]] = js.undefined
         
         var async: js.UndefOr[
                 js.Function2[/* callback */ js.Function0[Unit], /* waitTime */ js.UndefOr[Double], Double]
@@ -116,9 +113,7 @@ object mod {
         
         var attachedCallback: js.UndefOr[js.Function0[Unit]] = js.undefined
         
-        var attributeChanged: js.UndefOr[
-                js.Function3[/* name */ String, /* oldValue */ js.Any, /* newValue */ js.Any, Unit]
-              ] = js.undefined
+        var attributeChanged: js.UndefOr[js.Function3[/* name */ String, /* oldValue */ Any, /* newValue */ Any, Unit]] = js.undefined
         
         var attributeChangedCallback: js.UndefOr[
                 js.Function4[
@@ -162,7 +157,7 @@ object mod {
                 js.Function3[/* jobName */ String, /* callback */ js.Function, /* wait */ js.UndefOr[Double], Unit]
               ] = js.undefined
         
-        var deserialize: (js.UndefOr[js.Function2[/* value */ String, /* type */ NumberConstructor, Double]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ BooleanConstructor, Boolean]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ ObjectConstructor, js.Object]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ ArrayConstructor, js.Array[js.Any]]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ DateConstructor, Date]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ StringConstructor, String]])
+        var deserialize: (js.UndefOr[js.Function2[/* value */ String, /* type */ NumberConstructor, Double]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ BooleanConstructor, Boolean]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ ObjectConstructor, js.Object]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ ArrayConstructor, js.Array[Any]]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ DateConstructor, js.Date]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ StringConstructor, String]])
         
         var detached: js.UndefOr[js.Function0[Unit]] = js.undefined
         
@@ -181,14 +176,14 @@ object mod {
         var `extends`: js.UndefOr[String] = js.undefined
         
         // Constructors
-        var factoryImpl: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+        var factoryImpl: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
         
         var fire: js.UndefOr[
                 js.Function3[
                   /* type */ String, 
-                  /* detail */ js.UndefOr[js.Any], 
+                  /* detail */ js.UndefOr[Any], 
                   /* options */ js.UndefOr[js.Object], 
-                  CustomEvent[js.Any]
+                  CustomEvent[Any]
                 ]
               ] = js.undefined
         
@@ -198,7 +193,7 @@ object mod {
                 js.Function2[
                   /* path */ String | (js.Array[String | Double]), 
                   /* root */ js.UndefOr[js.Object], 
-                  js.Any
+                  Any
                 ]
               ] = js.undefined
         
@@ -216,7 +211,7 @@ object mod {
         
         /* polymer-micro */
         // Attributes
-        var hostAttributes: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+        var hostAttributes: js.UndefOr[StringDictionary[Any]] = js.undefined
         
         var importHref: js.UndefOr[
                 js.Function3[
@@ -251,20 +246,18 @@ object mod {
         var mixin: js.UndefOr[js.Function2[/* target */ js.Object, /* source */ js.Object, js.Object]] = js.undefined
         
         // NotifyPath
-        var notifyPath: js.UndefOr[
-                js.Function3[/* path */ String, /* value */ js.Any, /* fromAbove */ js.Any, Unit]
-              ] = js.undefined
+        var notifyPath: js.UndefOr[js.Function3[/* path */ String, /* value */ Any, /* fromAbove */ Any, Unit]] = js.undefined
         
         var notifySplices: js.UndefOr[js.Function2[/* path */ String, /* splices */ js.Array[PolymerSplice], Unit]] = js.undefined
         
         var observers: js.UndefOr[js.Array[String]] = js.undefined
         
-        var pop: js.UndefOr[js.Function1[/* path */ String, js.Any]] = js.undefined
+        var pop: js.UndefOr[js.Function1[/* path */ String, Any]] = js.undefined
         
         // Properties
         var properties: js.UndefOr[StringDictionary[PropConstructorType | PropObjectType]] = js.undefined
         
-        var push: js.UndefOr[js.Function2[/* path */ String, /* repeated */ js.Any, Double]] = js.undefined
+        var push: js.UndefOr[js.Function2[/* path */ String, /* repeated */ Any, Double]] = js.undefined
         
         /* polymer-mini */
         // Ready
@@ -283,16 +276,16 @@ object mod {
         // Styling
         var scopeSubtree: js.UndefOr[js.Function2[/* container */ Element, /* shouldObserve */ Boolean, Unit]] = js.undefined
         
-        var serialize: js.UndefOr[js.Function1[/* value */ js.Any, String]] = js.undefined
+        var serialize: js.UndefOr[js.Function1[/* value */ Any, String]] = js.undefined
         
         var serializeValueToAttribute: js.UndefOr[
-                js.Function3[/* value */ js.Any, /* attribute */ String, /* node */ js.UndefOr[Element], Unit]
+                js.Function3[/* value */ Any, /* attribute */ String, /* node */ js.UndefOr[Element], Unit]
               ] = js.undefined
         
         var set: js.UndefOr[
                 js.Function3[
                   /* path */ String | (js.Array[String | Double]), 
-                  /* value */ js.Any, 
+                  /* value */ Any, 
                   /* root */ js.UndefOr[js.Object], 
                   Unit
                 ]
@@ -301,14 +294,14 @@ object mod {
         // Gestures
         var setScrollDirection: js.UndefOr[js.Function2[/* direction */ String, /* node */ js.UndefOr[HTMLElement], Unit]] = js.undefined
         
-        var shift: js.UndefOr[js.Function1[/* path */ String, js.Any]] = js.undefined
+        var shift: js.UndefOr[js.Function1[/* path */ String, Any]] = js.undefined
         
         var splice: js.UndefOr[
                 js.Function4[
                   /* path */ String, 
                   /* index */ Double, 
                   /* removeCount */ Double, 
-                  /* repeated */ js.Any, 
+                  /* repeated */ Any, 
                   Double
                 ]
               ] = js.undefined
@@ -334,7 +327,7 @@ object mod {
                 js.Function3[/* node */ Element, /* eventName */ String, /* methodName */ String, Unit]
               ] = js.undefined
         
-        var unshift: js.UndefOr[js.Function2[/* path */ String, /* repeated */ js.Any, Double]] = js.undefined
+        var unshift: js.UndefOr[js.Function2[/* path */ String, /* repeated */ Any, Double]] = js.undefined
         
         // XStyling
         var updateStyles: js.UndefOr[js.Function1[/* styles */ js.UndefOr[StringDictionary[String]], Unit]] = js.undefined
@@ -342,7 +335,7 @@ object mod {
       object CommonBase {
         
         inline def apply(
-          deserialize: (js.UndefOr[js.Function2[/* value */ String, /* type */ NumberConstructor, Double]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ BooleanConstructor, Boolean]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ ObjectConstructor, js.Object]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ ArrayConstructor, js.Array[js.Any]]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ DateConstructor, Date]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ StringConstructor, String]]),
+          deserialize: (js.UndefOr[js.Function2[/* value */ String, /* type */ NumberConstructor, Double]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ BooleanConstructor, Boolean]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ ObjectConstructor, js.Object]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ ArrayConstructor, js.Array[Any]]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ DateConstructor, js.Date]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ StringConstructor, String]]),
           is: String
         ): CommonBase = {
           val __obj = js.Dynamic.literal(deserialize = deserialize.asInstanceOf[js.Any], is = is.asInstanceOf[js.Any])
@@ -351,11 +344,11 @@ object mod {
         
         extension [Self <: CommonBase](x: Self) {
           
-          inline def set$(value: js.Any): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
+          inline def set$(value: Any): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
           
           inline def set$Undefined: Self = StObject.set(x, "$", js.undefined)
           
-          inline def setArrayDelete(value: (/* path */ String | js.Array[js.Any], /* item */ js.Any) => js.Array[js.Any]): Self = StObject.set(x, "arrayDelete", js.Any.fromFunction2(value))
+          inline def setArrayDelete(value: (/* path */ String | js.Array[Any], /* item */ Any) => js.Array[Any]): Self = StObject.set(x, "arrayDelete", js.Any.fromFunction2(value))
           
           inline def setArrayDeleteUndefined: Self = StObject.set(x, "arrayDelete", js.undefined)
           
@@ -371,7 +364,7 @@ object mod {
           
           inline def setAttachedUndefined: Self = StObject.set(x, "attached", js.undefined)
           
-          inline def setAttributeChanged(value: (/* name */ String, /* oldValue */ js.Any, /* newValue */ js.Any) => Unit): Self = StObject.set(x, "attributeChanged", js.Any.fromFunction3(value))
+          inline def setAttributeChanged(value: (/* name */ String, /* oldValue */ Any, /* newValue */ Any) => Unit): Self = StObject.set(x, "attributeChanged", js.Any.fromFunction3(value))
           
           inline def setAttributeChangedCallback(
             value: (/* attributeName */ String, /* oldValue */ String | Null, /* newValue */ String | Null, /* namespace */ String | Null) => Unit
@@ -393,7 +386,7 @@ object mod {
           
           inline def setBehaviorsUndefined: Self = StObject.set(x, "behaviors", js.undefined)
           
-          inline def setBehaviorsVarargs(value: js.Object*): Self = StObject.set(x, "behaviors", js.Array(value :_*))
+          inline def setBehaviorsVarargs(value: js.Object*): Self = StObject.set(x, "behaviors", js.Array(value*))
           
           inline def setCancelAsync(value: /* handle */ Double => Unit): Self = StObject.set(x, "cancelAsync", js.Any.fromFunction1(value))
           
@@ -428,7 +421,7 @@ object mod {
           inline def setDebounceUndefined: Self = StObject.set(x, "debounce", js.undefined)
           
           inline def setDeserialize(
-            value: (js.UndefOr[js.Function2[/* value */ String, /* type */ NumberConstructor, Double]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ BooleanConstructor, Boolean]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ ObjectConstructor, js.Object]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ ArrayConstructor, js.Array[js.Any]]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ DateConstructor, Date]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ StringConstructor, String]])
+            value: (js.UndefOr[js.Function2[/* value */ String, /* type */ NumberConstructor, Double]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ BooleanConstructor, Boolean]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ ObjectConstructor, js.Object]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ ArrayConstructor, js.Array[Any]]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ DateConstructor, js.Date]]) & (js.UndefOr[js.Function2[/* value */ String, /* type */ StringConstructor, String]])
           ): Self = StObject.set(x, "deserialize", value.asInstanceOf[js.Any])
           
           inline def setDetached(value: () => Unit): Self = StObject.set(x, "detached", js.Any.fromFunction0(value))
@@ -463,12 +456,12 @@ object mod {
           
           inline def setExtendsUndefined: Self = StObject.set(x, "extends", js.undefined)
           
-          inline def setFactoryImpl(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "factoryImpl", js.Any.fromFunction1(value))
+          inline def setFactoryImpl(value: /* repeated */ Any => Unit): Self = StObject.set(x, "factoryImpl", js.Any.fromFunction1(value))
           
           inline def setFactoryImplUndefined: Self = StObject.set(x, "factoryImpl", js.undefined)
           
           inline def setFire(
-            value: (/* type */ String, /* detail */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Object]) => CustomEvent[js.Any]
+            value: (/* type */ String, /* detail */ js.UndefOr[Any], /* options */ js.UndefOr[js.Object]) => CustomEvent[Any]
           ): Self = StObject.set(x, "fire", js.Any.fromFunction3(value))
           
           inline def setFireUndefined: Self = StObject.set(x, "fire", js.undefined)
@@ -477,9 +470,7 @@ object mod {
           
           inline def setFlushDebouncerUndefined: Self = StObject.set(x, "flushDebouncer", js.undefined)
           
-          inline def setGet(
-            value: (/* path */ String | (js.Array[String | Double]), /* root */ js.UndefOr[js.Object]) => js.Any
-          ): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+          inline def setGet(value: (/* path */ String | (js.Array[String | Double]), /* root */ js.UndefOr[js.Object]) => Any): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
           
           inline def setGetContentChildNodes(value: /* selector */ String => js.Array[Node]): Self = StObject.set(x, "getContentChildNodes", js.Any.fromFunction1(value))
           
@@ -507,7 +498,7 @@ object mod {
           
           inline def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
           
-          inline def setHostAttributes(value: StringDictionary[js.Any]): Self = StObject.set(x, "hostAttributes", value.asInstanceOf[js.Any])
+          inline def setHostAttributes(value: StringDictionary[Any]): Self = StObject.set(x, "hostAttributes", value.asInstanceOf[js.Any])
           
           inline def setHostAttributesUndefined: Self = StObject.set(x, "hostAttributes", js.undefined)
           
@@ -551,7 +542,7 @@ object mod {
           
           inline def setMixinUndefined: Self = StObject.set(x, "mixin", js.undefined)
           
-          inline def setNotifyPath(value: (/* path */ String, /* value */ js.Any, /* fromAbove */ js.Any) => Unit): Self = StObject.set(x, "notifyPath", js.Any.fromFunction3(value))
+          inline def setNotifyPath(value: (/* path */ String, /* value */ Any, /* fromAbove */ Any) => Unit): Self = StObject.set(x, "notifyPath", js.Any.fromFunction3(value))
           
           inline def setNotifyPathUndefined: Self = StObject.set(x, "notifyPath", js.undefined)
           
@@ -563,9 +554,9 @@ object mod {
           
           inline def setObserversUndefined: Self = StObject.set(x, "observers", js.undefined)
           
-          inline def setObserversVarargs(value: String*): Self = StObject.set(x, "observers", js.Array(value :_*))
+          inline def setObserversVarargs(value: String*): Self = StObject.set(x, "observers", js.Array(value*))
           
-          inline def setPop(value: /* path */ String => js.Any): Self = StObject.set(x, "pop", js.Any.fromFunction1(value))
+          inline def setPop(value: /* path */ String => Any): Self = StObject.set(x, "pop", js.Any.fromFunction1(value))
           
           inline def setPopUndefined: Self = StObject.set(x, "pop", js.undefined)
           
@@ -573,7 +564,7 @@ object mod {
           
           inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
           
-          inline def setPush(value: (/* path */ String, /* repeated */ js.Any) => Double): Self = StObject.set(x, "push", js.Any.fromFunction2(value))
+          inline def setPush(value: (/* path */ String, /* repeated */ Any) => Double): Self = StObject.set(x, "push", js.Any.fromFunction2(value))
           
           inline def setPushUndefined: Self = StObject.set(x, "push", js.undefined)
           
@@ -601,16 +592,16 @@ object mod {
           
           inline def setScopeSubtreeUndefined: Self = StObject.set(x, "scopeSubtree", js.undefined)
           
-          inline def setSerialize(value: /* value */ js.Any => String): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
+          inline def setSerialize(value: /* value */ Any => String): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
           
           inline def setSerializeUndefined: Self = StObject.set(x, "serialize", js.undefined)
           
-          inline def setSerializeValueToAttribute(value: (/* value */ js.Any, /* attribute */ String, /* node */ js.UndefOr[Element]) => Unit): Self = StObject.set(x, "serializeValueToAttribute", js.Any.fromFunction3(value))
+          inline def setSerializeValueToAttribute(value: (/* value */ Any, /* attribute */ String, /* node */ js.UndefOr[Element]) => Unit): Self = StObject.set(x, "serializeValueToAttribute", js.Any.fromFunction3(value))
           
           inline def setSerializeValueToAttributeUndefined: Self = StObject.set(x, "serializeValueToAttribute", js.undefined)
           
           inline def setSet(
-            value: (/* path */ String | (js.Array[String | Double]), /* value */ js.Any, /* root */ js.UndefOr[js.Object]) => Unit
+            value: (/* path */ String | (js.Array[String | Double]), /* value */ Any, /* root */ js.UndefOr[js.Object]) => Unit
           ): Self = StObject.set(x, "set", js.Any.fromFunction3(value))
           
           inline def setSetScrollDirection(value: (/* direction */ String, /* node */ js.UndefOr[HTMLElement]) => Unit): Self = StObject.set(x, "setScrollDirection", js.Any.fromFunction2(value))
@@ -619,12 +610,12 @@ object mod {
           
           inline def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
           
-          inline def setShift(value: /* path */ String => js.Any): Self = StObject.set(x, "shift", js.Any.fromFunction1(value))
+          inline def setShift(value: /* path */ String => Any): Self = StObject.set(x, "shift", js.Any.fromFunction1(value))
           
           inline def setShiftUndefined: Self = StObject.set(x, "shift", js.undefined)
           
           inline def setSplice(
-            value: (/* path */ String, /* index */ Double, /* removeCount */ Double, /* repeated */ js.Any) => Double
+            value: (/* path */ String, /* index */ Double, /* removeCount */ Double, /* repeated */ Any) => Double
           ): Self = StObject.set(x, "splice", js.Any.fromFunction4(value))
           
           inline def setSpliceUndefined: Self = StObject.set(x, "splice", js.undefined)
@@ -653,7 +644,7 @@ object mod {
           
           inline def setUnlistenUndefined: Self = StObject.set(x, "unlisten", js.undefined)
           
-          inline def setUnshift(value: (/* path */ String, /* repeated */ js.Any) => Double): Self = StObject.set(x, "unshift", js.Any.fromFunction2(value))
+          inline def setUnshift(value: (/* path */ String, /* repeated */ Any) => Double): Self = StObject.set(x, "unshift", js.Any.fromFunction2(value))
           
           inline def setUnshiftUndefined: Self = StObject.set(x, "unshift", js.undefined)
           
@@ -717,7 +708,7 @@ object mod {
         
         def replaceChild(node: Node, refNode: Node): Node = js.native
         
-        def setAttribute(name: String, value: js.Any): Unit = js.native
+        def setAttribute(name: String, value: Any): Unit = js.native
         
         var textContent: String = js.native
         
@@ -755,7 +746,7 @@ object mod {
           
           inline def setPath(value: js.Array[Node]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
           
-          inline def setPathVarargs(value: Node*): Self = StObject.set(x, "path", js.Array(value :_*))
+          inline def setPathVarargs(value: Node*): Self = StObject.set(x, "path", js.Array(value*))
           
           inline def setRootTarget(value: EventTarget): Self = StObject.set(x, "rootTarget", value.asInstanceOf[js.Any])
         }
@@ -788,11 +779,11 @@ object mod {
           
           inline def setAddedNodes(value: js.Array[Node]): Self = StObject.set(x, "addedNodes", value.asInstanceOf[js.Any])
           
-          inline def setAddedNodesVarargs(value: Node*): Self = StObject.set(x, "addedNodes", js.Array(value :_*))
+          inline def setAddedNodesVarargs(value: Node*): Self = StObject.set(x, "addedNodes", js.Array(value*))
           
           inline def setRemovedNode(value: js.Array[Node]): Self = StObject.set(x, "removedNode", value.asInstanceOf[js.Any])
           
-          inline def setRemovedNodeVarargs(value: Node*): Self = StObject.set(x, "removedNode", js.Array(value :_*))
+          inline def setRemovedNodeVarargs(value: Node*): Self = StObject.set(x, "removedNode", js.Array(value*))
           
           inline def setTarget(value: Node): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
         }
@@ -807,11 +798,11 @@ object mod {
            with HTMLElement {
         
         /* InferMemberOverrides */
-        override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+        override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
         /* InferMemberOverrides */
-        override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+        override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
         /* InferMemberOverrides */
-        override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+        override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
         
         /* InferMemberOverrides */
         override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
@@ -856,11 +847,11 @@ object mod {
           
           inline def setObject(value: js.Array[js.Object]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
           
-          inline def setObjectVarargs(value: js.Object*): Self = StObject.set(x, "object", js.Array(value :_*))
+          inline def setObjectVarargs(value: js.Object*): Self = StObject.set(x, "object", js.Array(value*))
           
           inline def setRemoved(value: js.Array[js.Object]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
           
-          inline def setRemovedVarargs(value: js.Object*): Self = StObject.set(x, "removed", js.Array(value :_*))
+          inline def setRemovedVarargs(value: js.Object*): Self = StObject.set(x, "removed", js.Array(value*))
           
           inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         }
@@ -958,7 +949,7 @@ object mod {
       trait RenderStatus extends StObject {
         
         def afterNextRender(element: Element, fn: js.Function): Unit = js.native
-        def afterNextRender(element: Element, fn: js.Function, args: js.Any): Unit = js.native
+        def afterNextRender(element: Element, fn: js.Function, args: Any): Unit = js.native
         
         def hasRendered(): Boolean = js.native
         

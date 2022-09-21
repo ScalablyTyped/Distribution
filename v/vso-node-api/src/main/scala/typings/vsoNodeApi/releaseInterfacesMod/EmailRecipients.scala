@@ -21,10 +21,10 @@ object EmailRecipients {
     
     inline def setEmailAddresses(value: js.Array[String]): Self = StObject.set(x, "emailAddresses", value.asInstanceOf[js.Any])
     
-    inline def setEmailAddressesVarargs(value: String*): Self = StObject.set(x, "emailAddresses", js.Array(value :_*))
+    inline def setEmailAddressesVarargs(value: String*): Self = StObject.set(x, "emailAddresses", js.Array(value*))
     
     inline def setTfsIds(value: js.Array[String]): Self = StObject.set(x, "tfsIds", value.asInstanceOf[js.Any])
     
-    inline def setTfsIdsVarargs(value: String*): Self = StObject.set(x, "tfsIds", js.Array(value :_*))
+    inline def setTfsIdsVarargs(value: String*): Self = StObject.set(x, "tfsIds", js.Array(value*))
   }
 }

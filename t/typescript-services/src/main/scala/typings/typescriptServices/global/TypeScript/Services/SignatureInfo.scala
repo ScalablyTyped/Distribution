@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("TypeScript.Services.SignatureInfo")
 @js.native
-class SignatureInfo ()
+open class SignatureInfo ()
   extends StObject
      with typings.typescriptServices.TypeScript.Services.SignatureInfo {
   

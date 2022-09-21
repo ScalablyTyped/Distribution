@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.MultiThreadedCalculation")
 @js.native
-/* private */ class MultiThreadedCalculation ()
+/* private */ open class MultiThreadedCalculation ()
   extends StObject
      with typings.activexExcel.Excel.MultiThreadedCalculation {
   
@@ -26,7 +26,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var ExcelDotMultiThreadedCalculation_typekey: typings.activexExcel.Excel.MultiThreadedCalculation = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var ThreadCount: Double = js.native

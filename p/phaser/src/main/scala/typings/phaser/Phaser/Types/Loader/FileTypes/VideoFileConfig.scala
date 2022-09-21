@@ -28,9 +28,9 @@ trait VideoFileConfig extends StObject {
   var noAudio: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The absolute or relative URL to load this file from in a config object.
+    * The absolute or relative URLs to load the video files from.
     */
-  var urlConfig: js.UndefOr[js.Any] = js.undefined
+  var url: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
     * Extra XHR Settings specifically for this file.
@@ -60,9 +60,11 @@ object VideoFileConfig {
     
     inline def setNoAudioUndefined: Self = StObject.set(x, "noAudio", js.undefined)
     
-    inline def setUrlConfig(value: js.Any): Self = StObject.set(x, "urlConfig", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String | js.Array[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    inline def setUrlConfigUndefined: Self = StObject.set(x, "urlConfig", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    
+    inline def setUrlVarargs(value: String*): Self = StObject.set(x, "url", js.Array(value*))
     
     inline def setXhrSettings(value: XHRSettingsObject): Self = StObject.set(x, "xhrSettings", value.asInstanceOf[js.Any])
     

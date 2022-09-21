@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateAutoMLJobResponse extends StObject {
   
   /**
-    * When a job is created, it is assigned a unique ARN.
+    * The unique ARN assigned to the AutoML job when it is created.
     */
   var AutoMLJobArn: typings.awsSdk.sagemakerMod.AutoMLJobArn
 }

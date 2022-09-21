@@ -10,10 +10,10 @@ Easy and small template engine for the browser.
 | ------------------ | :-------------: |
 | Full name          | es6template |
 | Keywords           | easy, ecma, ecmascript, engine, es6, regex, simple, small, string, template, tpl |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 19740 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 26037.666666666668 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/zalmoxisus/es6-template)

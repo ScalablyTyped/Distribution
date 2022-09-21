@@ -9,7 +9,7 @@ object lineStringBuilderMod {
   
   @JSImport("ol/render/canvas/LineStringBuilder", JSImport.Default)
   @js.native
-  class default protected () extends CanvasLineStringBuilder {
+  open class default protected () extends CanvasLineStringBuilder {
     def this(tolerance: Double, maxExtent: Extent, resolution: Double, pixelRatio: Double) = this()
   }
   

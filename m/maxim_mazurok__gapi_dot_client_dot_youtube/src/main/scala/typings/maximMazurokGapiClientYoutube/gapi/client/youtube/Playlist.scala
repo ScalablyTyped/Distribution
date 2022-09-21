@@ -23,7 +23,7 @@ trait Playlist extends StObject {
   var localizations: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.youtube.gapi.client.youtube.PlaylistLocalization}
-    */ typings.maximMazurokGapiClientYoutube.maximMazurokGapiClientYoutubeStrings.Playlist & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientYoutube.maximMazurokGapiClientYoutubeStrings.Playlist & TopLevel[Any]
   ] = js.undefined
   
   /** The player object contains information that you would use to play the playlist in an embedded player. */
@@ -63,7 +63,7 @@ object Playlist {
     inline def setLocalizations(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.youtube.gapi.client.youtube.PlaylistLocalization}
-      */ typings.maximMazurokGapiClientYoutube.maximMazurokGapiClientYoutubeStrings.Playlist & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientYoutube.maximMazurokGapiClientYoutubeStrings.Playlist & TopLevel[Any]
     ): Self = StObject.set(x, "localizations", value.asInstanceOf[js.Any])
     
     inline def setLocalizationsUndefined: Self = StObject.set(x, "localizations", js.undefined)

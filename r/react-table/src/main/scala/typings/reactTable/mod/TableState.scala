@@ -21,6 +21,6 @@ object TableState {
     
     inline def setHiddenColumnsUndefined: Self = StObject.set(x, "hiddenColumns", js.undefined)
     
-    inline def setHiddenColumnsVarargs(value: IdType[D]*): Self = StObject.set(x, "hiddenColumns", js.Array(value :_*))
+    inline def setHiddenColumnsVarargs(value: IdType[D]*): Self = StObject.set(x, "hiddenColumns", js.Array(value*))
   }
 }

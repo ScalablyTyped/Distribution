@@ -10,10 +10,10 @@ object checkCircleMod {
   
   @JSImport("material-ui/svg-icons/action/check-circle", JSImport.Default)
   @js.native
-  class default () extends ActionCheckCircle
+  open class default () extends ActionCheckCircle
   
   @JSImport("material-ui/svg-icons/action/check-circle", "ActionCheckCircle")
   @js.native
-  class ActionCheckCircle ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionCheckCircle ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

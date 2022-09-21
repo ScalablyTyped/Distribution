@@ -1,304 +1,140 @@
 package typings.nivoScales
 
-import typings.nivoScales.nivoScalesStrings.auto
+import typings.d3Scale.mod.NumberValue
+import typings.d3Scale.mod.ScaleBand_
+import typings.d3Scale.mod.ScaleLinear_
+import typings.d3Scale.mod.ScalePoint_
+import typings.nivoScales.anon.All
+import typings.nivoScales.anon.Format
+import typings.nivoScales.anon.GetValue
+import typings.nivoScales.anon.Series
+import typings.nivoScales.anon.X
+import typings.nivoScales.computeMod.NestedSerie
+import typings.nivoScales.computeMod.Serie
+import typings.nivoScales.computeMod.SerieDatum
+import typings.nivoScales.computeMod.StackedXY
 import typings.nivoScales.nivoScalesStrings.day
 import typings.nivoScales.nivoScalesStrings.hour
-import typings.nivoScales.nivoScalesStrings.linear
-import typings.nivoScales.nivoScalesStrings.log
 import typings.nivoScales.nivoScalesStrings.millisecond
 import typings.nivoScales.nivoScalesStrings.minute
 import typings.nivoScales.nivoScalesStrings.month
-import typings.nivoScales.nivoScalesStrings.point
 import typings.nivoScales.nivoScalesStrings.second
-import typings.nivoScales.nivoScalesStrings.symlog
-import typings.nivoScales.nivoScalesStrings.time
 import typings.nivoScales.nivoScalesStrings.year
-import typings.std.Date
+import typings.nivoScales.timeHelpersMod.TIME_PRECISION
+import typings.nivoScales.typesMod.AnyScale
+import typings.nivoScales.typesMod.ComputedSerieAxis
+import typings.nivoScales.typesMod.ScaleAxis
+import typings.nivoScales.typesMod.ScaleBand
+import typings.nivoScales.typesMod.ScaleBandSpec
+import typings.nivoScales.typesMod.ScaleLinear
+import typings.nivoScales.typesMod.ScaleLinearSpec
+import typings.nivoScales.typesMod.ScaleLog
+import typings.nivoScales.typesMod.ScaleLogSpec
+import typings.nivoScales.typesMod.ScalePoint
+import typings.nivoScales.typesMod.ScalePointSpec
+import typings.nivoScales.typesMod.ScaleSpec
+import typings.nivoScales.typesMod.ScaleSymlog
+import typings.nivoScales.typesMod.ScaleSymlogSpec
+import typings.nivoScales.typesMod.ScaleTime
+import typings.nivoScales.typesMod.ScaleTimeSpec
+import typings.nivoScales.typesMod.ScaleValue
+import typings.nivoScales.typesMod.ScaleWithBandwidth
+import typings.nivoScales.typesMod.SerieAxis
+import typings.nivoScales.typesMod.StringValue
+import typings.nivoScales.typesMod.TicksSpec
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  trait LinearScale
-    extends StObject
-       with Scale {
-    
-    var max: js.UndefOr[auto | Double] = js.undefined
-    
-    var min: js.UndefOr[auto | Double] = js.undefined
-    
-    var reverse: js.UndefOr[Boolean] = js.undefined
-    
-    var stacked: js.UndefOr[Boolean] = js.undefined
-    
-    var `type`: linear
-  }
-  object LinearScale {
-    
-    inline def apply(): LinearScale = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")("linear")
-      __obj.asInstanceOf[LinearScale]
-    }
-    
-    extension [Self <: LinearScale](x: Self) {
-      
-      inline def setMax(value: auto | Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
-      
-      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
-      
-      inline def setMin(value: auto | Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
-      
-      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
-      
-      inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
-      
-      inline def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
-      
-      inline def setStacked(value: Boolean): Self = StObject.set(x, "stacked", value.asInstanceOf[js.Any])
-      
-      inline def setStackedUndefined: Self = StObject.set(x, "stacked", js.undefined)
-      
-      inline def setType(value: linear): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    }
-  }
+  @JSImport("@nivo/scales", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  trait LogScale
-    extends StObject
-       with Scale {
-    
-    var base: js.UndefOr[Double] = js.undefined
-    
-    var max: js.UndefOr[auto | Double] = js.undefined
-    
-    var min: js.UndefOr[auto | Double] = js.undefined
-    
-    var `type`: log
-  }
-  object LogScale {
-    
-    inline def apply(): LogScale = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")("log")
-      __obj.asInstanceOf[LogScale]
-    }
-    
-    extension [Self <: LogScale](x: Self) {
-      
-      inline def setBase(value: Double): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
-      
-      inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
-      
-      inline def setMax(value: auto | Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
-      
-      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
-      
-      inline def setMin(value: auto | Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
-      
-      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
-      
-      inline def setType(value: log): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    }
-  }
+  inline def castBandScale[Input](scale: ScaleBand_[Input]): ScaleBand[Input] = ^.asInstanceOf[js.Dynamic].applyDynamic("castBandScale")(scale.asInstanceOf[js.Any]).asInstanceOf[ScaleBand[Input]]
   
-  trait PointScale
-    extends StObject
-       with Scale {
-    
-    var `type`: point
-  }
-  object PointScale {
-    
-    inline def apply(): PointScale = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")("point")
-      __obj.asInstanceOf[PointScale]
-    }
-    
-    extension [Self <: PointScale](x: Self) {
-      
-      inline def setType(value: point): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    }
-  }
+  inline def castLinearScale[Range_1, Output](scale: ScaleLinear_[Range_1, Output, scala.Nothing]): ScaleLinear[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("castLinearScale")(scale.asInstanceOf[js.Any]).asInstanceOf[ScaleLinear[Double]]
+  inline def castLinearScale[Range_1, Output](scale: ScaleLinear_[Range_1, Output, scala.Nothing], stacked: Boolean): ScaleLinear[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("castLinearScale")(scale.asInstanceOf[js.Any], stacked.asInstanceOf[js.Any])).asInstanceOf[ScaleLinear[Double]]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.nivoScales.mod.LinearScale
-    - typings.nivoScales.mod.PointScale
-    - typings.nivoScales.mod.TimeScale
-    - typings.nivoScales.mod.TimeScaleFormatted
-    - typings.nivoScales.mod.LogScale
-    - typings.nivoScales.mod.SymlogScale
-  */
-  trait Scale extends StObject
-  object Scale {
-    
-    inline def LinearScale(): typings.nivoScales.mod.LinearScale = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")("linear")
-      __obj.asInstanceOf[typings.nivoScales.mod.LinearScale]
-    }
-    
-    inline def LogScale(): typings.nivoScales.mod.LogScale = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")("log")
-      __obj.asInstanceOf[typings.nivoScales.mod.LogScale]
-    }
-    
-    inline def PointScale(): typings.nivoScales.mod.PointScale = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")("point")
-      __obj.asInstanceOf[typings.nivoScales.mod.PointScale]
-    }
-    
-    inline def SymlogScale(): typings.nivoScales.mod.SymlogScale = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")("symlog")
-      __obj.asInstanceOf[typings.nivoScales.mod.SymlogScale]
-    }
-    
-    inline def TimeScale(): typings.nivoScales.mod.TimeScale = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")("time")
-      __obj.asInstanceOf[typings.nivoScales.mod.TimeScale]
-    }
-    
-    inline def TimeScaleFormatted(format: String): typings.nivoScales.mod.TimeScaleFormatted = {
-      val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("time")
-      __obj.asInstanceOf[typings.nivoScales.mod.TimeScaleFormatted]
-    }
-  }
+  inline def castPointScale[Input /* <: StringValue */](scale: ScalePoint_[Input]): ScalePoint[Input] = ^.asInstanceOf[js.Dynamic].applyDynamic("castPointScale")(scale.asInstanceOf[js.Any]).asInstanceOf[ScalePoint[Input]]
   
-  type ScaleFunc = js.Function1[/* value */ String | Double | Date, Double]
+  inline def centerScale[Value](scale: ScaleWithBandwidth): ScaleWithBandwidth | (js.Function1[/* d */ Value, Double]) = ^.asInstanceOf[js.Dynamic].applyDynamic("centerScale")(scale.asInstanceOf[js.Any]).asInstanceOf[ScaleWithBandwidth | (js.Function1[/* d */ Value, Double])]
   
-  trait SymlogScale
-    extends StObject
-       with Scale {
-    
-    var constant: js.UndefOr[Double] = js.undefined
-    
-    var max: js.UndefOr[auto | Double] = js.undefined
-    
-    var min: js.UndefOr[auto | Double] = js.undefined
-    
-    var `type`: symlog
-  }
-  object SymlogScale {
-    
-    inline def apply(): SymlogScale = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")("symlog")
-      __obj.asInstanceOf[SymlogScale]
-    }
-    
-    extension [Self <: SymlogScale](x: Self) {
-      
-      inline def setConstant(value: Double): Self = StObject.set(x, "constant", value.asInstanceOf[js.Any])
-      
-      inline def setConstantUndefined: Self = StObject.set(x, "constant", js.undefined)
-      
-      inline def setMax(value: auto | Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
-      
-      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
-      
-      inline def setMin(value: auto | Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
-      
-      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
-      
-      inline def setType(value: symlog): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    }
-  }
+  inline def compareDateValues(a: js.Date, b: js.Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareDateValues")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  trait TimeScale
-    extends StObject
-       with Scale {
-    
-    var max: js.UndefOr[auto | Date] = js.undefined
-    
-    var min: js.UndefOr[auto | Date] = js.undefined
-    
-    var precision: js.UndefOr[millisecond | second | minute | hour | month | year | day] = js.undefined
-    
-    var `type`: time
-    
-    var useUTC: js.UndefOr[Boolean] = js.undefined
-  }
-  object TimeScale {
-    
-    inline def apply(): TimeScale = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")("time")
-      __obj.asInstanceOf[TimeScale]
-    }
-    
-    extension [Self <: TimeScale](x: Self) {
-      
-      inline def setMax(value: auto | Date): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
-      
-      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
-      
-      inline def setMin(value: auto | Date): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
-      
-      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
-      
-      inline def setPrecision(value: millisecond | second | minute | hour | month | year | day): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
-      
-      inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
-      
-      inline def setType(value: time): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-      
-      inline def setUseUTC(value: Boolean): Self = StObject.set(x, "useUTC", value.asInstanceOf[js.Any])
-      
-      inline def setUseUTCUndefined: Self = StObject.set(x, "useUTC", js.undefined)
-    }
-  }
+  inline def compareValues(a: String, b: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareValues")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def compareValues(a: String, b: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareValues")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def compareValues(a: Double, b: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareValues")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def compareValues(a: Double, b: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareValues")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  trait TimeScaleFormatted
-    extends StObject
-       with Scale {
-    
-    var format: String
-    
-    var max: js.UndefOr[auto | String] = js.undefined
-    
-    var min: js.UndefOr[auto | String] = js.undefined
-    
-    var precision: js.UndefOr[millisecond | second | minute | hour | month | year | day] = js.undefined
-    
-    var `type`: time
-    
-    var useUTC: js.UndefOr[Boolean] = js.undefined
-  }
-  object TimeScaleFormatted {
-    
-    inline def apply(format: String): TimeScaleFormatted = {
-      val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("time")
-      __obj.asInstanceOf[TimeScaleFormatted]
-    }
-    
-    extension [Self <: TimeScaleFormatted](x: Self) {
-      
-      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
-      
-      inline def setMax(value: auto | String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
-      
-      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
-      
-      inline def setMin(value: auto | String): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
-      
-      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
-      
-      inline def setPrecision(value: millisecond | second | minute | hour | month | year | day): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
-      
-      inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
-      
-      inline def setType(value: time): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-      
-      inline def setUseUTC(value: Boolean): Self = StObject.set(x, "useUTC", value.asInstanceOf[js.Any])
-      
-      inline def setUseUTCUndefined: Self = StObject.set(x, "useUTC", js.undefined)
-    }
-  }
+  inline def computeScale[Input /* <: ScaleValue */](spec: ScaleSpec, data: ComputedSerieAxis[Any], size: Double, axis: ScaleAxis): ScaleLog | ScaleSymlog | ScaleLinear[Double] | ScalePoint[Input] | ScaleBand[Input] | (ScaleTime[js.Date | NumberValue]) = (^.asInstanceOf[js.Dynamic].applyDynamic("computeScale")(spec.asInstanceOf[js.Any], data.asInstanceOf[js.Any], size.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[ScaleLog | ScaleSymlog | ScaleLinear[Double] | ScalePoint[Input] | ScaleBand[Input] | (ScaleTime[js.Date | NumberValue])]
+  
+  inline def computeXYScalesForSeries[S, D /* <: SerieDatum */](
+    series: js.Array[Serie[S, D]],
+    xScaleSpec: ScaleSpec,
+    yScaleSpec: ScaleSpec,
+    width: Double,
+    height: Double
+  ): Series[S, D] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeXYScalesForSeries")(series.asInstanceOf[js.Any], xScaleSpec.asInstanceOf[js.Any], yScaleSpec.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Series[S, D]]
+  
+  inline def createBandScale[Input /* <: StringValue */](hasRound: ScaleBandSpec, data: ComputedSerieAxis[Input], size: Double, axis: ScaleAxis): ScaleBand[Input] = (^.asInstanceOf[js.Dynamic].applyDynamic("createBandScale")(hasRound.asInstanceOf[js.Any], data.asInstanceOf[js.Any], size.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[ScaleBand[Input]]
+  
+  inline def createDateNormalizer(hasFormatPrecisionUseUTC: Format): js.Function1[/* value */ js.UndefOr[js.Date | String], js.UndefOr[js.Date]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDateNormalizer")(hasFormatPrecisionUseUTC.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* value */ js.UndefOr[js.Date | String], js.UndefOr[js.Date]]]
+  
+  inline def createLinearScale[Output /* <: NumberValue */](
+    hasMinMaxStackedReverseClampNice: ScaleLinearSpec,
+    data: ComputedSerieAxis[Output],
+    size: Double,
+    axis: ScaleAxis
+  ): ScaleLinear[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("createLinearScale")(hasMinMaxStackedReverseClampNice.asInstanceOf[js.Any], data.asInstanceOf[js.Any], size.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[ScaleLinear[Double]]
+  
+  inline def createLogScale(hasBaseMinMax: ScaleLogSpec, data: ComputedSerieAxis[Double], size: Double, axis: ScaleAxis): ScaleLog = (^.asInstanceOf[js.Dynamic].applyDynamic("createLogScale")(hasBaseMinMax.asInstanceOf[js.Any], data.asInstanceOf[js.Any], size.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[ScaleLog]
+  
+  inline def createPointScale[Input /* <: StringValue */](_spec: ScalePointSpec, data: ComputedSerieAxis[Input], size: Double): ScalePoint[Input] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPointScale")(_spec.asInstanceOf[js.Any], data.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[ScalePoint[Input]]
+  
+  inline def createPrecisionMethod(precision: TIME_PRECISION): js.Function1[/* date */ js.Date, js.Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPrecisionMethod")(precision.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* date */ js.Date, js.Date]]
+  
+  inline def createSymlogScale(
+    hasConstantMinMaxReverse: ScaleSymlogSpec,
+    data: ComputedSerieAxis[Double],
+    size: Double,
+    axis: ScaleAxis
+  ): ScaleSymlog = (^.asInstanceOf[js.Dynamic].applyDynamic("createSymlogScale")(hasConstantMinMaxReverse.asInstanceOf[js.Any], data.asInstanceOf[js.Any], size.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[ScaleSymlog]
+  
+  inline def createTimeScale[Input /* <: js.Date | NumberValue */](
+    hasFormatPrecisionMinMaxUseUTCNice: ScaleTimeSpec,
+    data: ComputedSerieAxis[String | js.Date],
+    size: Double
+  ): ScaleTime[Input] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTimeScale")(hasFormatPrecisionMinMaxUseUTCNice.asInstanceOf[js.Any], data.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[ScaleTime[Input]]
+  
+  inline def generateSeriesAxis[Axis /* <: ScaleAxis */, Value /* <: ScaleValue */](series: SerieAxis[Axis, Value], axis: Axis, scaleSpec: ScaleSpec): All = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSeriesAxis")(series.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], scaleSpec.asInstanceOf[js.Any])).asInstanceOf[All]
+  inline def generateSeriesAxis[Axis /* <: ScaleAxis */, Value /* <: ScaleValue */](
+    series: SerieAxis[Axis, Value],
+    axis: Axis,
+    scaleSpec: ScaleSpec,
+    hasGetValueSetValue: GetValue[Axis, Value]
+  ): All = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSeriesAxis")(series.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], scaleSpec.asInstanceOf[js.Any], hasGetValueSetValue.asInstanceOf[js.Any])).asInstanceOf[All]
+  
+  inline def generateSeriesXY[S, D /* <: SerieDatum */](series: js.Array[NestedSerie[S, D]], xScaleSpec: ScaleSpec, yScaleSpec: ScaleSpec): X = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSeriesXY")(series.asInstanceOf[js.Any], xScaleSpec.asInstanceOf[js.Any], yScaleSpec.asInstanceOf[js.Any])).asInstanceOf[X]
+  
+  inline def getOtherAxis(axis: ScaleAxis): ScaleAxis = ^.asInstanceOf[js.Dynamic].applyDynamic("getOtherAxis")(axis.asInstanceOf[js.Any]).asInstanceOf[ScaleAxis]
+  
+  inline def getScaleTicks[Value /* <: ScaleValue */](scale: AnyScale): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getScaleTicks")(scale.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
+  inline def getScaleTicks[Value /* <: ScaleValue */](scale: AnyScale, spec: TicksSpec[Value]): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getScaleTicks")(scale.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+  
+  @JSImport("@nivo/scales", "precisionCutOffs")
+  @js.native
+  val precisionCutOffs: js.Array[js.Function1[/* date */ js.Date, Unit]] = js.native
+  
+  @JSImport("@nivo/scales", "precisionCutOffsByType")
+  @js.native
+  val precisionCutOffsByType: Record[TIME_PRECISION, js.Array[js.Function1[/* date */ js.Date, Unit]]] = js.native
+  
+  inline def stackAxis[S, D /* <: SerieDatum */](axis: ScaleAxis, xy: StackedXY, series: js.Array[NestedSerie[S, D]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stackAxis")(axis.asInstanceOf[js.Any], xy.asInstanceOf[js.Any], series.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @JSImport("@nivo/scales", "timePrecisions")
+  @js.native
+  val timePrecisions: js.Tuple7[millisecond, second, minute, hour, day, month, year] = js.native
 }

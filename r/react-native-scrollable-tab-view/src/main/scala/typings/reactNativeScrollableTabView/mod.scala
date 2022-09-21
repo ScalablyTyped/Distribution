@@ -1,7 +1,8 @@
 package typings.reactNativeScrollableTabView
 
 import typings.react.mod.Component
-import typings.react.mod.Props
+import typings.react.mod.LegacyRef
+import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import typings.reactNative.mod.LayoutChangeEvent
 import typings.reactNative.mod.ScrollViewProps
@@ -25,31 +26,31 @@ object mod {
   
   @JSImport("react-native-scrollable-tab-view", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ScrollableTabViewProperties, js.Object, js.Any]
+  open class default ()
+    extends Component[ScrollableTabViewProperties, js.Object, Any]
   
   @JSImport("react-native-scrollable-tab-view", "DefaultTabBar")
   @js.native
-  class DefaultTabBar protected ()
-    extends Component[TabBarPropsDefaultTabBarP, js.Object, js.Any] {
+  open class DefaultTabBar protected ()
+    extends Component[TabBarPropsDefaultTabBarP, js.Object, Any] {
     def this(props: TabBarPropsDefaultTabBarP) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: TabBarPropsDefaultTabBarP, context: js.Any) = this()
+    def this(props: TabBarPropsDefaultTabBarP, context: Any) = this()
   }
   
   @JSImport("react-native-scrollable-tab-view", "ScrollableTabBar")
   @js.native
-  class ScrollableTabBar protected ()
-    extends Component[TabBarPropsScrollableTabB, js.Object, js.Any] {
+  open class ScrollableTabBar protected ()
+    extends Component[TabBarPropsScrollableTabB, js.Object, Any] {
     def this(props: TabBarPropsScrollableTabB) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: TabBarPropsScrollableTabB, context: js.Any) = this()
+    def this(props: TabBarPropsScrollableTabB, context: Any) = this()
   }
   
   trait ChangeTabProperties extends StObject {
@@ -179,13 +180,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait ScrollableTabView
-    extends Component[ScrollableTabViewProperties, js.Object, js.Any]
+  type ScrollableTabView = Component[ScrollableTabViewProperties, js.Object, Any]
   
-  trait ScrollableTabViewProperties
-    extends StObject
-       with Props[ScrollableTabView] {
+  trait ScrollableTabViewProperties extends StObject {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * props that are applied to root ScrollView/ViewPagerAndroid.
@@ -227,6 +226,8 @@ object mod {
       * the siblings, default to 0 === render current page.
       */
     var prerenderingSiblingsNumber: js.UndefOr[Double] = js.undefined
+    
+    var ref: js.UndefOr[LegacyRef[ScrollableTabView]] = js.undefined
     
     /**
       * accept 1 argument props and should return a component
@@ -290,6 +291,10 @@ object mod {
     
     extension [Self <: ScrollableTabViewProperties](x: Self) {
       
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
       inline def setContentProps(value: ScrollViewProps): Self = StObject.set(x, "contentProps", value.asInstanceOf[js.Any])
       
       inline def setContentPropsUndefined: Self = StObject.set(x, "contentProps", js.undefined)
@@ -317,6 +322,14 @@ object mod {
       inline def setPrerenderingSiblingsNumber(value: Double): Self = StObject.set(x, "prerenderingSiblingsNumber", value.asInstanceOf[js.Any])
       
       inline def setPrerenderingSiblingsNumberUndefined: Self = StObject.set(x, "prerenderingSiblingsNumber", js.undefined)
+      
+      inline def setRef(value: LegacyRef[ScrollableTabView]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      
+      inline def setRefFunction1(value: /* instance */ ScrollableTabView | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       
       inline def setRenderTabBar(
         value: (js.Function1[/* props */ typings.reactNativeScrollableTabView.anon.TabBarProps, Element]) | `false`

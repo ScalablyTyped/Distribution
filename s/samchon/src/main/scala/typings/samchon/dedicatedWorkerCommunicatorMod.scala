@@ -25,6 +25,6 @@ object dedicatedWorkerCommunicatorMod {
     /**
       * @hidden
       */
-    /* protected */ def _Handle_message(event: MessageEvent[js.Any]): Unit = js.native
+    /* protected */ def _Handle_message(event: MessageEvent[Any]): Unit = js.native
   }
 }

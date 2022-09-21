@@ -19,7 +19,7 @@ trait WorkflowExecutionDetail extends StObject {
   /**
     * The time when the last activity task was scheduled for this workflow execution. You can use this information to determine if the workflow has not made progress for an unusually long period of time and might require a corrective action.
     */
-  var latestActivityTaskTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var latestActivityTaskTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The latest executionContext provided by the decider for this workflow execution. A decider can provide an executionContext (a free-form string) when closing a decision task using RespondDecisionTaskCompleted.
@@ -48,7 +48,7 @@ object WorkflowExecutionDetail {
     
     inline def setExecutionInfo(value: WorkflowExecutionInfo): Self = StObject.set(x, "executionInfo", value.asInstanceOf[js.Any])
     
-    inline def setLatestActivityTaskTimestamp(value: Timestamp): Self = StObject.set(x, "latestActivityTaskTimestamp", value.asInstanceOf[js.Any])
+    inline def setLatestActivityTaskTimestamp(value: js.Date): Self = StObject.set(x, "latestActivityTaskTimestamp", value.asInstanceOf[js.Any])
     
     inline def setLatestActivityTaskTimestampUndefined: Self = StObject.set(x, "latestActivityTaskTimestamp", js.undefined)
     

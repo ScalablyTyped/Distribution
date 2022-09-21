@@ -5,6 +5,8 @@ import typings.onfleetNodeOnfleet.anon.Entries
 import typings.onfleetNodeOnfleet.anon.Tasks
 import typings.onfleetNodeOnfleet.anon.Workers
 import typings.onfleetNodeOnfleet.destinationsMod.Location
+import typings.onfleetNodeOnfleet.metadataMod.MatchMetadata
+import typings.onfleetNodeOnfleet.metadataMod.MatchMetadataResult
 import typings.onfleetNodeOnfleet.metadataMod.OnfleetMetadata
 import typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.BICYCLE
 import typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.CAR
@@ -18,7 +20,7 @@ object workersMod {
   
   @JSImport("@onfleet/node-onfleet/Resources/Workers", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Worker
   
@@ -230,7 +232,7 @@ object workersMod {
       
       inline def setMetadata(value: js.Array[OnfleetMetadata]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      inline def setMetadataVarargs(value: OnfleetMetadata*): Self = StObject.set(x, "metadata", js.Array(value :_*))
+      inline def setMetadataVarargs(value: OnfleetMetadata*): Self = StObject.set(x, "metadata", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -242,11 +244,11 @@ object workersMod {
       
       inline def setTasks(value: js.Array[String]): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
       
-      inline def setTasksVarargs(value: String*): Self = StObject.set(x, "tasks", js.Array(value :_*))
+      inline def setTasksVarargs(value: String*): Self = StObject.set(x, "tasks", js.Array(value*))
       
       inline def setTeams(value: js.Array[String]): Self = StObject.set(x, "teams", value.asInstanceOf[js.Any])
       
-      inline def setTeamsVarargs(value: String*): Self = StObject.set(x, "teams", js.Array(value :_*))
+      inline def setTeamsVarargs(value: String*): Self = StObject.set(x, "teams", js.Array(value*))
       
       inline def setTimeCreated(value: Double): Self = StObject.set(x, "timeCreated", value.asInstanceOf[js.Any])
       
@@ -364,6 +366,10 @@ object workersMod {
     
     def insertTask(id: String, obj: Tasks): js.Promise[OnfleetWorker] = js.native
     
+    def matchMetadata(obj: js.Array[OnfleetMetadata]): js.Promise[js.Array[MatchMetadataResult]] = js.native
+    @JSName("matchMetadata")
+    var matchMetadata_Original: MatchMetadata[js.Array[OnfleetMetadata]] = js.native
+    
     def setSchedule(id: String, schedule: WorkerSchedule): js.Promise[Entries] = js.native
     
     def update(id: String, worker: UpdateWorkerProps): js.Promise[OnfleetWorker] = js.native
@@ -390,7 +396,7 @@ object workersMod {
       
       inline def setShifts(value: js.Array[js.Tuple2[Double, Double]]): Self = StObject.set(x, "shifts", value.asInstanceOf[js.Any])
       
-      inline def setShiftsVarargs(value: (js.Tuple2[Double, Double])*): Self = StObject.set(x, "shifts", js.Array(value :_*))
+      inline def setShiftsVarargs(value: (js.Tuple2[Double, Double])*): Self = StObject.set(x, "shifts", js.Array(value*))
       
       inline def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     }

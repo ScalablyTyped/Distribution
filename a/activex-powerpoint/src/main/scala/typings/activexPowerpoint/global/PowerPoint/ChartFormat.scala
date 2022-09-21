@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.ChartFormat")
 @js.native
-/* private */ class ChartFormat ()
+/* private */ open class ChartFormat ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.ChartFormat {
   
@@ -28,7 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val Line: typings.activexPowerpoint.PowerPoint.LineFormat = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override val PictureFormat: typings.activexPowerpoint.PowerPoint.PictureFormat = js.native

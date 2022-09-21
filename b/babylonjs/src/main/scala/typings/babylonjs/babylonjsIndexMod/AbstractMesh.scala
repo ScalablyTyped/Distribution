@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Meshes/index", "AbstractMesh")
 @js.native
-class AbstractMesh protected ()
+open class AbstractMesh protected ()
   extends typings.babylonjs.abstractMeshMod.AbstractMesh {
   /**
     * Creates a new AbstractMesh
@@ -71,7 +71,7 @@ object AbstractMesh {
   @js.native
   val CULLINGSTRATEGY_STANDARD: Double = js.native
   
-  /** Use an accurante occlusion algorithm */
+  /** Use an accurate occlusion algorithm */
   @JSImport("babylonjs/Meshes/index", "AbstractMesh.OCCLUSION_ALGORITHM_TYPE_ACCURATE")
   @js.native
   def OCCLUSION_ALGORITHM_TYPE_ACCURATE: Double = js.native
@@ -89,7 +89,7 @@ object AbstractMesh {
   def OCCLUSION_TYPE_NONE: Double = js.native
   inline def OCCLUSION_TYPE_NONE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OCCLUSION_TYPE_NONE")(x.asInstanceOf[js.Any])
   
-  /** Occlusion set to optimisitic */
+  /** Occlusion set to optimistic */
   @JSImport("babylonjs/Meshes/index", "AbstractMesh.OCCLUSION_TYPE_OPTIMISTIC")
   @js.native
   def OCCLUSION_TYPE_OPTIMISTIC: Double = js.native

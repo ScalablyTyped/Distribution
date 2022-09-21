@@ -11,7 +11,7 @@ trait IgGridGroupBy
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * This option has been removed as of 2017.2 Volume release.
@@ -109,7 +109,7 @@ trait IgGridGroupBy
     * All default summaries are defined under $.ig.util.defaultSummaryMethods
     *
     */
-  var groupSummaries: js.UndefOr[js.Any] = js.undefined
+  var groupSummaries: js.UndefOr[Any] = js.undefined
   
   /**
     * Specifies the groupSummaries postion inside each group.
@@ -472,7 +472,7 @@ object IgGridGroupBy {
     
     inline def setGroupByUrlKeyUndefined: Self = StObject.set(x, "groupByUrlKey", js.undefined)
     
-    inline def setGroupSummaries(value: js.Any): Self = StObject.set(x, "groupSummaries", value.asInstanceOf[js.Any])
+    inline def setGroupSummaries(value: Any): Self = StObject.set(x, "groupSummaries", value.asInstanceOf[js.Any])
     
     inline def setGroupSummariesPosition(value: String): Self = StObject.set(x, "groupSummariesPosition", value.asInstanceOf[js.Any])
     
@@ -492,7 +492,7 @@ object IgGridGroupBy {
     
     inline def setGroupedColumnsUndefined: Self = StObject.set(x, "groupedColumns", js.undefined)
     
-    inline def setGroupedColumnsVarargs(value: IgGridGroupByGroupedColumn*): Self = StObject.set(x, "groupedColumns", js.Array(value :_*))
+    inline def setGroupedColumnsVarargs(value: IgGridGroupByGroupedColumn*): Self = StObject.set(x, "groupedColumns", js.Array(value*))
     
     inline def setGroupedRowTextTemplate(value: String): Self = StObject.set(x, "groupedRowTextTemplate", value.asInstanceOf[js.Any])
     

@@ -16,10 +16,9 @@ object dimmerDimmableMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/modules/Dimmer/DimmerDimmable", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[DimmerDimmableProps, ComponentState, js.Any] {
+  open class default protected () extends Component[DimmerDimmableProps, ComponentState, Any] {
     def this(props: DimmerDimmableProps) = this()
-    def this(props: DimmerDimmableProps, context: js.Any) = this()
+    def this(props: DimmerDimmableProps, context: Any) = this()
   }
   @JSImport("semantic-ui-react/dist/commonjs/modules/Dimmer/DimmerDimmable", JSImport.Default)
   @js.native
@@ -28,7 +27,7 @@ object dimmerDimmableMod extends Shortcut {
   trait DimmerDimmableProps
     extends StObject
        with StrictDimmerDimmableProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object DimmerDimmableProps {
     
     inline def apply(): DimmerDimmableProps = {
@@ -40,7 +39,7 @@ object dimmerDimmableMod extends Shortcut {
   trait StrictDimmerDimmableProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** A dimmable element can blur its contents. */
     var blurring: js.UndefOr[Boolean] = js.undefined
@@ -66,7 +65,7 @@ object dimmerDimmableMod extends Shortcut {
     
     extension [Self <: StrictDimmerDimmableProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       

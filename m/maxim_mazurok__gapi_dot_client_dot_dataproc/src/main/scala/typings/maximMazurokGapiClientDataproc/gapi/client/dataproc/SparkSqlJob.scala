@@ -17,7 +17,7 @@ trait SparkSqlJob extends StObject {
   var properties: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.SparkSqlJob & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.SparkSqlJob & TopLevel[Any]
   ] = js.undefined
   
   /** The HCFS URI of the script that contains SQL queries. */
@@ -30,7 +30,7 @@ trait SparkSqlJob extends StObject {
   var scriptVariables: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.SparkSqlJob & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.SparkSqlJob & TopLevel[Any]
   ] = js.undefined
 }
 object SparkSqlJob {
@@ -46,7 +46,7 @@ object SparkSqlJob {
     
     inline def setJarFileUrisUndefined: Self = StObject.set(x, "jarFileUris", js.undefined)
     
-    inline def setJarFileUrisVarargs(value: String*): Self = StObject.set(x, "jarFileUris", js.Array(value :_*))
+    inline def setJarFileUrisVarargs(value: String*): Self = StObject.set(x, "jarFileUris", js.Array(value*))
     
     inline def setLoggingConfig(value: LoggingConfig): Self = StObject.set(x, "loggingConfig", value.asInstanceOf[js.Any])
     
@@ -55,7 +55,7 @@ object SparkSqlJob {
     inline def setProperties(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.SparkSqlJob & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.SparkSqlJob & TopLevel[Any]
     ): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
@@ -71,7 +71,7 @@ object SparkSqlJob {
     inline def setScriptVariables(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.SparkSqlJob & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.SparkSqlJob & TopLevel[Any]
     ): Self = StObject.set(x, "scriptVariables", value.asInstanceOf[js.Any])
     
     inline def setScriptVariablesUndefined: Self = StObject.set(x, "scriptVariables", js.undefined)

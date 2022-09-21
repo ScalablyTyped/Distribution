@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Barometer extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readingchanged(`type`: readingchanged, listener: TypedEventHandler[Barometer, BarometerReadingChangedEventArgs]): Unit = js.native
   
@@ -34,7 +34,7 @@ trait Barometer extends StObject {
   @JSName("onreadingchanged")
   var onreadingchanged_Original: TypedEventHandler[Barometer, BarometerReadingChangedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_readingchanged(`type`: readingchanged, listener: TypedEventHandler[Barometer, BarometerReadingChangedEventArgs]): Unit = js.native
   

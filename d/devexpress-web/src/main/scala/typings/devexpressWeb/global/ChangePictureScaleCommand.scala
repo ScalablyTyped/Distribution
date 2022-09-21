@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ChangePictureScaleCommand")
 @js.native
-class ChangePictureScaleCommand ()
+open class ChangePictureScaleCommand ()
   extends StObject
      with typings.devexpressWeb.ChangePictureScaleCommand

@@ -1,7 +1,7 @@
 
 # Scala.js typings for falafel
 
-Typings are for version 2.1
+Typings are for version 2.2
 
 ## Library description:
 transform the ast on a recursive walk
@@ -10,10 +10,10 @@ transform the ast on a recursive walk
 | ------------------ | :-------------: |
 | Full name          | falafel |
 | Keywords           | ast, burrito, source, syntax, traversal, tree |
-| # releases         | 6 |
-| # dependents       | 250 |
-| # downloads        | 39241976 |
-| # stars            | 17 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 2916859.6666666665 |
+| # stars            | 569.0 |
 
 ## Links
 - [Homepage](https://github.com/substack/node-falafel#readme)

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "CompilationSettings")
 @js.native
-class CompilationSettings ()
+open class CompilationSettings ()
   extends StObject
      with typings.typescriptServices.TypeScript.CompilationSettings {
   

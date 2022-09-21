@@ -10,10 +10,10 @@ object expandMoreMod {
   
   @JSImport("material-ui/svg-icons/navigation/expand-more", JSImport.Default)
   @js.native
-  class default () extends NavigationExpandMore
+  open class default () extends NavigationExpandMore
   
   @JSImport("material-ui/svg-icons/navigation/expand-more", "NavigationExpandMore")
   @js.native
-  class NavigationExpandMore ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class NavigationExpandMore ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ot", "Server")
 @js.native
-class Server protected () extends StObject {
+open class Server protected () extends StObject {
   /**
     * Constructor. Takes the current document as a string and optionally the array
     * of all operations.

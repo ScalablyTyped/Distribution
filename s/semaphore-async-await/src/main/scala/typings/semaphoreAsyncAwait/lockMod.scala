@@ -12,5 +12,5 @@ object lockMod {
   /**
     * Creates a lock.
     */
-  class Lock () extends default
+  open class Lock () extends default
 }

@@ -153,6 +153,27 @@ trait ActiveXObject extends StObject {
   
   def on(
     obj: InternetExplorerMedium,
+    event: PrintTemplateInstantiation | PrintTemplateTeardown | StatusTextChange | TitleChange,
+    argNames: js.Array[Text | pDisp],
+    handler: js.ThisFunction1[
+      /* this */ InternetExplorerMedium, 
+      (/* parameter */ PDispAny) | (/* parameter */ typings.activexShdocvw.anon.Text), 
+      Unit
+    ]
+  ): Unit = js.native
+  def on(
+    obj: InternetExplorerMedium,
+    event: DocumentComplete | NavigateComplete2,
+    argNames: js.Tuple2[pDisp, URL],
+    handler: js.ThisFunction1[/* this */ InternetExplorerMedium, /* parameter */ PDisp, Unit]
+  ): Unit = js.native
+  def on(
+    obj: InternetExplorerMedium,
+    event: DownloadBegin | DownloadComplete | OnQuit,
+    handler: js.ThisFunction1[/* this */ InternetExplorerMedium, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  def on(
+    obj: InternetExplorerMedium,
     event: BeforeScriptExecute,
     argNames: js.Array[pDispWindow],
     handler: js.ThisFunction1[/* this */ InternetExplorerMedium, /* parameter */ PDispWindow, Unit]
@@ -179,12 +200,6 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: InternetExplorerMedium,
-    event: DocumentComplete,
-    argNames: js.Tuple2[pDisp, URL],
-    handler: js.ThisFunction1[/* this */ InternetExplorerMedium, /* parameter */ PDisp, Unit]
-  ): Unit = js.native
-  def on(
-    obj: InternetExplorerMedium,
     event: FileDownload,
     argNames: js.Tuple2[ActiveDocument, Cancel],
     handler: js.ThisFunction1[
@@ -192,12 +207,6 @@ trait ActiveXObject extends StObject {
       /* parameter */ typings.activexShdocvw.anon.ActiveDocument, 
       Unit
     ]
-  ): Unit = js.native
-  def on(
-    obj: InternetExplorerMedium,
-    event: NavigateComplete2,
-    argNames: js.Tuple2[pDisp, URL],
-    handler: js.ThisFunction1[/* this */ InternetExplorerMedium, /* parameter */ PDisp, Unit]
   ): Unit = js.native
   def on(
     obj: InternetExplorerMedium,
@@ -289,18 +298,6 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: InternetExplorerMedium,
-    event: PrintTemplateInstantiation,
-    argNames: js.Array[pDisp],
-    handler: js.ThisFunction1[/* this */ InternetExplorerMedium, /* parameter */ PDispAny, Unit]
-  ): Unit = js.native
-  def on(
-    obj: InternetExplorerMedium,
-    event: PrintTemplateTeardown,
-    argNames: js.Array[pDisp],
-    handler: js.ThisFunction1[/* this */ InternetExplorerMedium, /* parameter */ PDispAny, Unit]
-  ): Unit = js.native
-  def on(
-    obj: InternetExplorerMedium,
     event: PrivacyImpactedStateChange,
     argNames: js.Array[bImpacted],
     handler: js.ThisFunction1[/* this */ InternetExplorerMedium, /* parameter */ BImpacted, Unit]
@@ -353,29 +350,9 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: InternetExplorerMedium,
-    event: StatusTextChange,
-    argNames: js.Array[Text],
-    handler: js.ThisFunction1[
-      /* this */ InternetExplorerMedium, 
-      /* parameter */ typings.activexShdocvw.anon.Text, 
-      Unit
-    ]
-  ): Unit = js.native
-  def on(
-    obj: InternetExplorerMedium,
     event: ThirdPartyUrlBlocked,
     argNames: js.Tuple2[URL, dwCount],
     handler: js.ThisFunction1[/* this */ InternetExplorerMedium, /* parameter */ DwCount, Unit]
-  ): Unit = js.native
-  def on(
-    obj: InternetExplorerMedium,
-    event: TitleChange,
-    argNames: js.Array[Text],
-    handler: js.ThisFunction1[
-      /* this */ InternetExplorerMedium, 
-      /* parameter */ typings.activexShdocvw.anon.Text, 
-      Unit
-    ]
   ): Unit = js.native
   def on(
     obj: InternetExplorerMedium,
@@ -463,6 +440,27 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: InternetExplorer,
+    event: PrintTemplateInstantiation | PrintTemplateTeardown | StatusTextChange | TitleChange,
+    argNames: js.Array[Text | pDisp],
+    handler: js.ThisFunction1[
+      /* this */ InternetExplorer, 
+      (/* parameter */ PDispAny) | (/* parameter */ typings.activexShdocvw.anon.Text), 
+      Unit
+    ]
+  ): Unit = js.native
+  def on(
+    obj: InternetExplorer,
+    event: DocumentComplete | NavigateComplete2,
+    argNames: js.Tuple2[pDisp, URL],
+    handler: js.ThisFunction1[/* this */ InternetExplorer, /* parameter */ PDisp, Unit]
+  ): Unit = js.native
+  def on(
+    obj: InternetExplorer,
+    event: DownloadBegin | DownloadComplete | OnQuit,
+    handler: js.ThisFunction1[/* this */ InternetExplorer, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  def on(
+    obj: InternetExplorer,
     event: BeforeScriptExecute,
     argNames: js.Array[pDispWindow],
     handler: js.ThisFunction1[/* this */ InternetExplorer, /* parameter */ PDispWindow, Unit]
@@ -485,12 +483,6 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: InternetExplorer,
-    event: DocumentComplete,
-    argNames: js.Tuple2[pDisp, URL],
-    handler: js.ThisFunction1[/* this */ InternetExplorer, /* parameter */ PDisp, Unit]
-  ): Unit = js.native
-  def on(
-    obj: InternetExplorer,
     event: FileDownload,
     argNames: js.Tuple2[ActiveDocument, Cancel],
     handler: js.ThisFunction1[
@@ -498,12 +490,6 @@ trait ActiveXObject extends StObject {
       /* parameter */ typings.activexShdocvw.anon.ActiveDocument, 
       Unit
     ]
-  ): Unit = js.native
-  def on(
-    obj: InternetExplorer,
-    event: NavigateComplete2,
-    argNames: js.Tuple2[pDisp, URL],
-    handler: js.ThisFunction1[/* this */ InternetExplorer, /* parameter */ PDisp, Unit]
   ): Unit = js.native
   def on(
     obj: InternetExplorer,
@@ -595,18 +581,6 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: InternetExplorer,
-    event: PrintTemplateInstantiation,
-    argNames: js.Array[pDisp],
-    handler: js.ThisFunction1[/* this */ InternetExplorer, /* parameter */ PDispAny, Unit]
-  ): Unit = js.native
-  def on(
-    obj: InternetExplorer,
-    event: PrintTemplateTeardown,
-    argNames: js.Array[pDisp],
-    handler: js.ThisFunction1[/* this */ InternetExplorer, /* parameter */ PDispAny, Unit]
-  ): Unit = js.native
-  def on(
-    obj: InternetExplorer,
     event: PrivacyImpactedStateChange,
     argNames: js.Array[bImpacted],
     handler: js.ThisFunction1[/* this */ InternetExplorer, /* parameter */ BImpacted, Unit]
@@ -655,21 +629,9 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: InternetExplorer,
-    event: StatusTextChange,
-    argNames: js.Array[Text],
-    handler: js.ThisFunction1[/* this */ InternetExplorer, /* parameter */ typings.activexShdocvw.anon.Text, Unit]
-  ): Unit = js.native
-  def on(
-    obj: InternetExplorer,
     event: ThirdPartyUrlBlocked,
     argNames: js.Tuple2[URL, dwCount],
     handler: js.ThisFunction1[/* this */ InternetExplorer, /* parameter */ DwCount, Unit]
-  ): Unit = js.native
-  def on(
-    obj: InternetExplorer,
-    event: TitleChange,
-    argNames: js.Array[Text],
-    handler: js.ThisFunction1[/* this */ InternetExplorer, /* parameter */ typings.activexShdocvw.anon.Text, Unit]
   ): Unit = js.native
   def on(
     obj: InternetExplorer,
@@ -745,6 +707,27 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: ShellBrowserWindow,
+    event: PrintTemplateInstantiation | PrintTemplateTeardown | StatusTextChange | TitleChange,
+    argNames: js.Array[Text | pDisp],
+    handler: js.ThisFunction1[
+      /* this */ ShellBrowserWindow, 
+      (/* parameter */ PDispAny) | (/* parameter */ typings.activexShdocvw.anon.Text), 
+      Unit
+    ]
+  ): Unit = js.native
+  def on(
+    obj: ShellBrowserWindow,
+    event: DocumentComplete | NavigateComplete2,
+    argNames: js.Tuple2[pDisp, URL],
+    handler: js.ThisFunction1[/* this */ ShellBrowserWindow, /* parameter */ PDisp, Unit]
+  ): Unit = js.native
+  def on(
+    obj: ShellBrowserWindow,
+    event: DownloadBegin | DownloadComplete | OnQuit,
+    handler: js.ThisFunction1[/* this */ ShellBrowserWindow, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  def on(
+    obj: ShellBrowserWindow,
     event: BeforeScriptExecute,
     argNames: js.Array[pDispWindow],
     handler: js.ThisFunction1[/* this */ ShellBrowserWindow, /* parameter */ PDispWindow, Unit]
@@ -767,12 +750,6 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: ShellBrowserWindow,
-    event: DocumentComplete,
-    argNames: js.Tuple2[pDisp, URL],
-    handler: js.ThisFunction1[/* this */ ShellBrowserWindow, /* parameter */ PDisp, Unit]
-  ): Unit = js.native
-  def on(
-    obj: ShellBrowserWindow,
     event: FileDownload,
     argNames: js.Tuple2[ActiveDocument, Cancel],
     handler: js.ThisFunction1[
@@ -780,12 +757,6 @@ trait ActiveXObject extends StObject {
       /* parameter */ typings.activexShdocvw.anon.ActiveDocument, 
       Unit
     ]
-  ): Unit = js.native
-  def on(
-    obj: ShellBrowserWindow,
-    event: NavigateComplete2,
-    argNames: js.Tuple2[pDisp, URL],
-    handler: js.ThisFunction1[/* this */ ShellBrowserWindow, /* parameter */ PDisp, Unit]
   ): Unit = js.native
   def on(
     obj: ShellBrowserWindow,
@@ -877,18 +848,6 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: ShellBrowserWindow,
-    event: PrintTemplateInstantiation,
-    argNames: js.Array[pDisp],
-    handler: js.ThisFunction1[/* this */ ShellBrowserWindow, /* parameter */ PDispAny, Unit]
-  ): Unit = js.native
-  def on(
-    obj: ShellBrowserWindow,
-    event: PrintTemplateTeardown,
-    argNames: js.Array[pDisp],
-    handler: js.ThisFunction1[/* this */ ShellBrowserWindow, /* parameter */ PDispAny, Unit]
-  ): Unit = js.native
-  def on(
-    obj: ShellBrowserWindow,
     event: PrivacyImpactedStateChange,
     argNames: js.Array[bImpacted],
     handler: js.ThisFunction1[/* this */ ShellBrowserWindow, /* parameter */ BImpacted, Unit]
@@ -941,29 +900,9 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: ShellBrowserWindow,
-    event: StatusTextChange,
-    argNames: js.Array[Text],
-    handler: js.ThisFunction1[
-      /* this */ ShellBrowserWindow, 
-      /* parameter */ typings.activexShdocvw.anon.Text, 
-      Unit
-    ]
-  ): Unit = js.native
-  def on(
-    obj: ShellBrowserWindow,
     event: ThirdPartyUrlBlocked,
     argNames: js.Tuple2[URL, dwCount],
     handler: js.ThisFunction1[/* this */ ShellBrowserWindow, /* parameter */ DwCount, Unit]
-  ): Unit = js.native
-  def on(
-    obj: ShellBrowserWindow,
-    event: TitleChange,
-    argNames: js.Array[Text],
-    handler: js.ThisFunction1[
-      /* this */ ShellBrowserWindow, 
-      /* parameter */ typings.activexShdocvw.anon.Text, 
-      Unit
-    ]
   ): Unit = js.native
   def on(
     obj: ShellBrowserWindow,
@@ -1046,34 +985,36 @@ trait ActiveXObject extends StObject {
     handler: js.ThisFunction1[/* this */ ShellBrowserWindow, /* parameter */ DwValidFlagsMask, Unit]
   ): Unit = js.native
   def on(
+    obj: ShellNameSpace,
+    event: DoubleClick | Initialized | SelectionChange,
+    handler: js.ThisFunction1[/* this */ ShellNameSpace, /* parameter */ js.Object, Unit]
+  ): Unit = js.native
+  def on(
     obj: ShellWindows,
-    event: WindowRegistered,
+    event: WindowRegistered | WindowRevoked,
     argNames: js.Array[lCookie],
     handler: js.ThisFunction1[/* this */ ShellWindows, /* parameter */ LCookie, Unit]
   ): Unit = js.native
   def on(
-    obj: ShellWindows,
-    event: WindowRevoked,
-    argNames: js.Array[lCookie],
-    handler: js.ThisFunction1[/* this */ ShellWindows, /* parameter */ LCookie, Unit]
+    obj: WebBrowserV1,
+    event: FrameNavigateComplete | NavigateComplete | StatusTextChange | TitleChange,
+    argNames: js.Array[Text | URL],
+    handler: js.ThisFunction1[
+      /* this */ WebBrowserV1, 
+      (/* parameter */ typings.activexShdocvw.anon.Text) | (/* parameter */ typings.activexShdocvw.anon.URL), 
+      Unit
+    ]
+  ): Unit = js.native
+  def on(
+    obj: WebBrowserV1,
+    event: DownloadBegin | DownloadComplete | WindowActivate | WindowMove | WindowResize,
+    handler: js.ThisFunction1[/* this */ WebBrowserV1, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: WebBrowserV1,
     event: CommandStateChange,
     argNames: js.Tuple2[Command, Enable],
     handler: js.ThisFunction1[/* this */ WebBrowserV1, /* parameter */ typings.activexShdocvw.anon.Command, Unit]
-  ): Unit = js.native
-  def on(
-    obj: WebBrowserV1,
-    event: FrameNavigateComplete,
-    argNames: js.Array[URL],
-    handler: js.ThisFunction1[/* this */ WebBrowserV1, /* parameter */ typings.activexShdocvw.anon.URL, Unit]
-  ): Unit = js.native
-  def on(
-    obj: WebBrowserV1,
-    event: NavigateComplete,
-    argNames: js.Array[URL],
-    handler: js.ThisFunction1[/* this */ WebBrowserV1, /* parameter */ typings.activexShdocvw.anon.URL, Unit]
   ): Unit = js.native
   def on(
     obj: WebBrowserV1,
@@ -1094,16 +1035,25 @@ trait ActiveXObject extends StObject {
     handler: js.ThisFunction1[/* this */ WebBrowserV1, /* parameter */ CancelBoolean, Unit]
   ): Unit = js.native
   def on(
-    obj: WebBrowserV1,
-    event: StatusTextChange,
-    argNames: js.Array[Text],
-    handler: js.ThisFunction1[/* this */ WebBrowserV1, /* parameter */ typings.activexShdocvw.anon.Text, Unit]
+    obj: WebBrowser,
+    event: PrintTemplateInstantiation | PrintTemplateTeardown | StatusTextChange | TitleChange,
+    argNames: js.Array[Text | pDisp],
+    handler: js.ThisFunction1[
+      /* this */ WebBrowser, 
+      (/* parameter */ PDispAny) | (/* parameter */ typings.activexShdocvw.anon.Text), 
+      Unit
+    ]
   ): Unit = js.native
   def on(
-    obj: WebBrowserV1,
-    event: TitleChange,
-    argNames: js.Array[Text],
-    handler: js.ThisFunction1[/* this */ WebBrowserV1, /* parameter */ typings.activexShdocvw.anon.Text, Unit]
+    obj: WebBrowser,
+    event: DocumentComplete | NavigateComplete2,
+    argNames: js.Tuple2[pDisp, URL],
+    handler: js.ThisFunction1[/* this */ WebBrowser, /* parameter */ PDisp, Unit]
+  ): Unit = js.native
+  def on(
+    obj: WebBrowser,
+    event: DownloadBegin | DownloadComplete | OnQuit,
+    handler: js.ThisFunction1[/* this */ WebBrowser, /* parameter */ js.Object, Unit]
   ): Unit = js.native
   def on(
     obj: WebBrowser,
@@ -1125,12 +1075,6 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: WebBrowser,
-    event: DocumentComplete,
-    argNames: js.Tuple2[pDisp, URL],
-    handler: js.ThisFunction1[/* this */ WebBrowser, /* parameter */ PDisp, Unit]
-  ): Unit = js.native
-  def on(
-    obj: WebBrowser,
     event: FileDownload,
     argNames: js.Tuple2[ActiveDocument, Cancel],
     handler: js.ThisFunction1[
@@ -1138,12 +1082,6 @@ trait ActiveXObject extends StObject {
       /* parameter */ typings.activexShdocvw.anon.ActiveDocument, 
       Unit
     ]
-  ): Unit = js.native
-  def on(
-    obj: WebBrowser,
-    event: NavigateComplete2,
-    argNames: js.Tuple2[pDisp, URL],
-    handler: js.ThisFunction1[/* this */ WebBrowser, /* parameter */ PDisp, Unit]
   ): Unit = js.native
   def on(
     obj: WebBrowser,
@@ -1207,18 +1145,6 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: WebBrowser,
-    event: PrintTemplateInstantiation,
-    argNames: js.Array[pDisp],
-    handler: js.ThisFunction1[/* this */ WebBrowser, /* parameter */ PDispAny, Unit]
-  ): Unit = js.native
-  def on(
-    obj: WebBrowser,
-    event: PrintTemplateTeardown,
-    argNames: js.Array[pDisp],
-    handler: js.ThisFunction1[/* this */ WebBrowser, /* parameter */ PDispAny, Unit]
-  ): Unit = js.native
-  def on(
-    obj: WebBrowser,
     event: PrivacyImpactedStateChange,
     argNames: js.Array[bImpacted],
     handler: js.ThisFunction1[/* this */ WebBrowser, /* parameter */ BImpacted, Unit]
@@ -1263,21 +1189,9 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   def on(
     obj: WebBrowser,
-    event: StatusTextChange,
-    argNames: js.Array[Text],
-    handler: js.ThisFunction1[/* this */ WebBrowser, /* parameter */ typings.activexShdocvw.anon.Text, Unit]
-  ): Unit = js.native
-  def on(
-    obj: WebBrowser,
     event: ThirdPartyUrlBlocked,
     argNames: js.Tuple2[URL, dwCount],
     handler: js.ThisFunction1[/* this */ WebBrowser, /* parameter */ DwCount, Unit]
-  ): Unit = js.native
-  def on(
-    obj: WebBrowser,
-    event: TitleChange,
-    argNames: js.Array[Text],
-    handler: js.ThisFunction1[/* this */ WebBrowser, /* parameter */ typings.activexShdocvw.anon.Text, Unit]
   ): Unit = js.native
   def on(
     obj: WebBrowser,
@@ -1391,72 +1305,6 @@ trait ActiveXObject extends StObject {
     handler: js.ThisFunction1[/* this */ WebBrowser, /* parameter */ WebBrowserBeforeNavigate2Parameter, Unit]
   ): Unit = js.native
   @JSName("on")
-  def on_DoubleClick(
-    obj: ShellNameSpace,
-    event: DoubleClick,
-    handler: js.ThisFunction1[/* this */ ShellNameSpace, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_DownloadBegin(
-    obj: InternetExplorerMedium,
-    event: DownloadBegin,
-    handler: js.ThisFunction1[/* this */ InternetExplorerMedium, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_DownloadBegin(
-    obj: InternetExplorer,
-    event: DownloadBegin,
-    handler: js.ThisFunction1[/* this */ InternetExplorer, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_DownloadBegin(
-    obj: ShellBrowserWindow,
-    event: DownloadBegin,
-    handler: js.ThisFunction1[/* this */ ShellBrowserWindow, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_DownloadBegin(
-    obj: WebBrowserV1,
-    event: DownloadBegin,
-    handler: js.ThisFunction1[/* this */ WebBrowserV1, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_DownloadBegin(
-    obj: WebBrowser,
-    event: DownloadBegin,
-    handler: js.ThisFunction1[/* this */ WebBrowser, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_DownloadComplete(
-    obj: InternetExplorerMedium,
-    event: DownloadComplete,
-    handler: js.ThisFunction1[/* this */ InternetExplorerMedium, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_DownloadComplete(
-    obj: InternetExplorer,
-    event: DownloadComplete,
-    handler: js.ThisFunction1[/* this */ InternetExplorer, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_DownloadComplete(
-    obj: ShellBrowserWindow,
-    event: DownloadComplete,
-    handler: js.ThisFunction1[/* this */ ShellBrowserWindow, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_DownloadComplete(
-    obj: WebBrowserV1,
-    event: DownloadComplete,
-    handler: js.ThisFunction1[/* this */ WebBrowserV1, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_DownloadComplete(
-    obj: WebBrowser,
-    event: DownloadComplete,
-    handler: js.ThisFunction1[/* this */ WebBrowser, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
   def on_FavoritesSelectionChange(
     obj: ShellNameSpace,
     event: FavoritesSelectionChange,
@@ -1486,64 +1334,10 @@ trait ActiveXObject extends StObject {
     handler: js.ThisFunction1[/* this */ WebBrowserV1, /* parameter */ WebBrowserV1FrameNewWindowParameter, Unit]
   ): Unit = js.native
   @JSName("on")
-  def on_Initialized(
-    obj: ShellNameSpace,
-    event: Initialized,
-    handler: js.ThisFunction1[/* this */ ShellNameSpace, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
   def on_NewWindow(
     obj: WebBrowserV1,
     event: NewWindow,
     argNames: WebBrowserV1NewWindowArgNames,
     handler: js.ThisFunction1[/* this */ WebBrowserV1, /* parameter */ WebBrowserV1NewWindowParameter, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_OnQuit(
-    obj: InternetExplorerMedium,
-    event: OnQuit,
-    handler: js.ThisFunction1[/* this */ InternetExplorerMedium, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_OnQuit(
-    obj: InternetExplorer,
-    event: OnQuit,
-    handler: js.ThisFunction1[/* this */ InternetExplorer, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_OnQuit(
-    obj: ShellBrowserWindow,
-    event: OnQuit,
-    handler: js.ThisFunction1[/* this */ ShellBrowserWindow, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_OnQuit(
-    obj: WebBrowser,
-    event: OnQuit,
-    handler: js.ThisFunction1[/* this */ WebBrowser, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_SelectionChange(
-    obj: ShellNameSpace,
-    event: SelectionChange,
-    handler: js.ThisFunction1[/* this */ ShellNameSpace, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_WindowActivate(
-    obj: WebBrowserV1,
-    event: WindowActivate,
-    handler: js.ThisFunction1[/* this */ WebBrowserV1, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_WindowMove(
-    obj: WebBrowserV1,
-    event: WindowMove,
-    handler: js.ThisFunction1[/* this */ WebBrowserV1, /* parameter */ js.Object, Unit]
-  ): Unit = js.native
-  @JSName("on")
-  def on_WindowResize(
-    obj: WebBrowserV1,
-    event: WindowResize,
-    handler: js.ThisFunction1[/* this */ WebBrowserV1, /* parameter */ js.Object, Unit]
   ): Unit = js.native
 }

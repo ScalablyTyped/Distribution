@@ -17,7 +17,7 @@ object mod {
   
   @JSImport("simple-oauth2", "AuthorizationCode")
   @js.native
-  class AuthorizationCode[ClientIdName /* <: String */] protected () extends StObject {
+  open class AuthorizationCode[ClientIdName /* <: String */] protected () extends StObject {
     def this(options: ModuleOptions[ClientIdName]) = this()
     
     /**
@@ -31,9 +31,7 @@ object mod {
       * @return the absolute authorization url
       */
     def authorizeURL(): String = js.native
-    def authorizeURL(
-      params: typings.simpleOauth2.simpleOauth2Strings.AuthorizationCode & TopLevel[js.Any] & Redirecturi
-    ): String = js.native
+    def authorizeURL(params: typings.simpleOauth2.simpleOauth2Strings.AuthorizationCode & TopLevel[Any] & Redirecturi): String = js.native
     
     /**
       * Creates a new access token by providing a token object as specified by RFC6750.
@@ -56,7 +54,7 @@ object mod {
   
   @JSImport("simple-oauth2", "ClientCredentials")
   @js.native
-  class ClientCredentials[ClientIdName /* <: String */] protected () extends StObject {
+  open class ClientCredentials[ClientIdName /* <: String */] protected () extends StObject {
     def this(options: ModuleOptions[ClientIdName]) = this()
     
     /**
@@ -79,7 +77,7 @@ object mod {
   
   @JSImport("simple-oauth2", "ResourceOwnerPassword")
   @js.native
-  class ResourceOwnerPassword[ClientIdName /* <: String */] protected () extends StObject {
+  open class ResourceOwnerPassword[ClientIdName /* <: String */] protected () extends StObject {
     def this(options: ModuleOptions[ClientIdName]) = this()
     
     /**
@@ -158,7 +156,7 @@ object mod {
       
       inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value*))
     }
   }
   
@@ -167,7 +165,7 @@ object mod {
        with /**
     * Additional options will be automatically serialized as params for the token request.
     */
-  /* key */ StringDictionary[js.Any] {
+  /* key */ StringDictionary[Any] {
     
     /** A string that represents the application privileges */
     var scope: js.UndefOr[String | js.Array[String]] = js.undefined
@@ -185,7 +183,7 @@ object mod {
       
       inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value*))
     }
   }
   
@@ -232,7 +230,7 @@ object mod {
        with /**
     * Additional options will be automatically serialized as params for the token request.
     */
-  /* key */ StringDictionary[js.Any] {
+  /* key */ StringDictionary[Any] {
     
     /** A string that represents the registered password. */
     var password: String
@@ -256,13 +254,13 @@ object mod {
       
       inline def setScope(value: String | js.Array[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value*))
       
       inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
   
-  type Token = StringDictionary[js.Any]
+  type Token = StringDictionary[Any]
   
   /* Rewritten from type alias, can be one of: 
     - typings.simpleOauth2.simpleOauth2Strings.access_token
@@ -278,7 +276,7 @@ object mod {
   
   trait WreckHttpOptions extends StObject {
     
-    var agent: js.UndefOr[js.Any] = js.undefined
+    var agent: js.UndefOr[Any] = js.undefined
     
     var baseUrl: js.UndefOr[String] = js.undefined
     
@@ -287,8 +285,8 @@ object mod {
           /* redirectMethod */ String, 
           /* statusCode */ Double, 
           /* location */ String, 
-          /* resHeaders */ StringDictionary[js.Any], 
-          /* redirectOptions */ js.Any, 
+          /* resHeaders */ StringDictionary[Any], 
+          /* redirectOptions */ Any, 
           /* next */ js.Function0[js.Object], 
           Unit
         ]
@@ -296,24 +294,24 @@ object mod {
     
     var ciphers: js.UndefOr[String] = js.undefined
     
-    var downstreamRes: js.UndefOr[js.Any] = js.undefined
+    var downstreamRes: js.UndefOr[Any] = js.undefined
     
     var events: js.UndefOr[Boolean] = js.undefined
     
     var gunzip: js.UndefOr[Boolean | force] = js.undefined
     
-    var headers: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var headers: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     var json: js.UndefOr[`true` | strict | force] = js.undefined
     
     var maxBytes: js.UndefOr[Double] = js.undefined
     
-    var payload: js.UndefOr[js.Any] = js.undefined
+    var payload: js.UndefOr[Any] = js.undefined
     
     var redirect303: js.UndefOr[Boolean] = js.undefined
     
     var redirected: js.UndefOr[
-        js.Function3[/* statusCode */ Double, /* location */ String, /* req */ js.Any, Unit]
+        js.Function3[/* statusCode */ Double, /* location */ String, /* req */ Any, Unit]
       ] = js.undefined
     
     var redirects: js.UndefOr[Double] = js.undefined
@@ -335,7 +333,7 @@ object mod {
     
     extension [Self <: WreckHttpOptions](x: Self) {
       
-      inline def setAgent(value: js.Any): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+      inline def setAgent(value: Any): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
       inline def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
       
@@ -344,7 +342,7 @@ object mod {
       inline def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
       
       inline def setBeforeRedirect(
-        value: (/* redirectMethod */ String, /* statusCode */ Double, /* location */ String, /* resHeaders */ StringDictionary[js.Any], /* redirectOptions */ js.Any, /* next */ js.Function0[js.Object]) => Unit
+        value: (/* redirectMethod */ String, /* statusCode */ Double, /* location */ String, /* resHeaders */ StringDictionary[Any], /* redirectOptions */ Any, /* next */ js.Function0[js.Object]) => Unit
       ): Self = StObject.set(x, "beforeRedirect", js.Any.fromFunction6(value))
       
       inline def setBeforeRedirectUndefined: Self = StObject.set(x, "beforeRedirect", js.undefined)
@@ -353,7 +351,7 @@ object mod {
       
       inline def setCiphersUndefined: Self = StObject.set(x, "ciphers", js.undefined)
       
-      inline def setDownstreamRes(value: js.Any): Self = StObject.set(x, "downstreamRes", value.asInstanceOf[js.Any])
+      inline def setDownstreamRes(value: Any): Self = StObject.set(x, "downstreamRes", value.asInstanceOf[js.Any])
       
       inline def setDownstreamResUndefined: Self = StObject.set(x, "downstreamRes", js.undefined)
       
@@ -365,7 +363,7 @@ object mod {
       
       inline def setGunzipUndefined: Self = StObject.set(x, "gunzip", js.undefined)
       
-      inline def setHeaders(value: StringDictionary[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
@@ -377,7 +375,7 @@ object mod {
       
       inline def setMaxBytesUndefined: Self = StObject.set(x, "maxBytes", js.undefined)
       
-      inline def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
       inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
       
@@ -385,7 +383,7 @@ object mod {
       
       inline def setRedirect303Undefined: Self = StObject.set(x, "redirect303", js.undefined)
       
-      inline def setRedirected(value: (/* statusCode */ Double, /* location */ String, /* req */ js.Any) => Unit): Self = StObject.set(x, "redirected", js.Any.fromFunction3(value))
+      inline def setRedirected(value: (/* statusCode */ Double, /* location */ String, /* req */ Any) => Unit): Self = StObject.set(x, "redirected", js.Any.fromFunction3(value))
       
       inline def setRedirectedUndefined: Self = StObject.set(x, "redirected", js.undefined)
       

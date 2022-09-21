@@ -12,27 +12,23 @@ trait CancellationToken extends StObject {
   var isCancellationRequested: Boolean
   
   /**
-    * An [event](#Event) which fires upon cancellation.
+    * An {@link Event} which fires upon cancellation.
     */
-  def onCancellationRequested(listener: js.Function1[/* e */ js.Any, js.Any]): Disposable
-  def onCancellationRequested(listener: js.Function1[/* e */ js.Any, js.Any], thisArgs: js.Any): Disposable
-  def onCancellationRequested(
-    listener: js.Function1[/* e */ js.Any, js.Any],
-    thisArgs: js.Any,
-    disposables: js.Array[Disposable]
-  ): Disposable
-  def onCancellationRequested(listener: js.Function1[/* e */ js.Any, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable
+  def onCancellationRequested(listener: js.Function1[/* e */ Any, Any]): Disposable
+  def onCancellationRequested(listener: js.Function1[/* e */ Any, Any], thisArgs: Any): Disposable
+  def onCancellationRequested(listener: js.Function1[/* e */ Any, Any], thisArgs: Any, disposables: js.Array[Disposable]): Disposable
+  def onCancellationRequested(listener: js.Function1[/* e */ Any, Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable
   /**
-    * An [event](#Event) which fires upon cancellation.
+    * An {@link Event} which fires upon cancellation.
     */
   @JSName("onCancellationRequested")
-  var onCancellationRequested_Original: Event[js.Any]
+  var onCancellationRequested_Original: Event[Any]
 }
 object CancellationToken {
   
   inline def apply(
     isCancellationRequested: Boolean,
-    onCancellationRequested: (/* listener */ js.Function1[js.Any, js.Any], /* thisArgs */ js.UndefOr[js.Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable
+    onCancellationRequested: (/* listener */ js.Function1[Any, Any], /* thisArgs */ js.UndefOr[Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable
   ): CancellationToken = {
     val __obj = js.Dynamic.literal(isCancellationRequested = isCancellationRequested.asInstanceOf[js.Any], onCancellationRequested = js.Any.fromFunction3(onCancellationRequested))
     __obj.asInstanceOf[CancellationToken]
@@ -43,7 +39,7 @@ object CancellationToken {
     inline def setIsCancellationRequested(value: Boolean): Self = StObject.set(x, "isCancellationRequested", value.asInstanceOf[js.Any])
     
     inline def setOnCancellationRequested(
-      value: (/* listener */ js.Function1[js.Any, js.Any], /* thisArgs */ js.UndefOr[js.Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable
+      value: (/* listener */ js.Function1[Any, Any], /* thisArgs */ js.UndefOr[Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable
     ): Self = StObject.set(x, "onCancellationRequested", js.Any.fromFunction3(value))
   }
 }

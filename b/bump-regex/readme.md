@@ -1,7 +1,7 @@
 
 # Scala.js typings for bump-regex
 
-Typings are for version 2.9
+Typings are for version 4.1
 
 ## Library description:
 bump RegEx with semver
@@ -10,10 +10,10 @@ bump RegEx with semver
 | ------------------ | :-------------: |
 | Full name          | bump-regex |
 | Keywords           | bump, regex, semver |
-| # releases         | 2 |
-| # dependents       | 8 |
-| # downloads        | 1053615 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 81662.0 |
+| # stars            | 13.0 |
 
 ## Links
 - [Homepage](https://github.com/stevelacy/bump-regex)

@@ -1,9 +1,5 @@
 package typings.googleapis.cloudidentityV1Mod.cloudidentityV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,9 +9,9 @@ trait ParamsResourceGroupsCreate
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
+    * Optional. The initial configuration option for the `Group`.
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
+  var initialGroupConfig: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
@@ -31,9 +27,9 @@ object ParamsResourceGroupsCreate {
   
   extension [Self <: ParamsResourceGroupsCreate](x: Self) {
     
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setInitialGroupConfig(value: String): Self = StObject.set(x, "initialGroupConfig", value.asInstanceOf[js.Any])
     
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setInitialGroupConfigUndefined: Self = StObject.set(x, "initialGroupConfig", js.undefined)
     
     inline def setRequestBody(value: SchemaGroup): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     

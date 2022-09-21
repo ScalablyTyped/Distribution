@@ -1,7 +1,6 @@
 package typings.neo4j
 
 import typings.request.mod.Request
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ object mod {
   
   @JSImport("neo4j", "GraphDatabase")
   @js.native
-  class GraphDatabase protected () extends StObject {
+  open class GraphDatabase protected () extends StObject {
     /**
       * Constructor.
       * @constructor
@@ -28,7 +27,7 @@ object mod {
       * Agent.
       * @type {any}
       */
-    var agent: js.Any = js.native
+    var agent: Any = js.native
     
     /**
       * Credentials.
@@ -53,7 +52,7 @@ object mod {
       * Checks if the password must be changed.
       * @param {Function} callback A callback.
       */
-    def checkPasswordChangeNeeded(callback: js.Function2[/* error */ js.Any, /* changed */ Boolean, Unit]): Unit = js.native
+    def checkPasswordChangeNeeded(callback: js.Function2[/* error */ Any, /* changed */ Boolean, Unit]): Unit = js.native
     
     /**
       * Creates a constraint.
@@ -127,14 +126,14 @@ object mod {
       * @param {ConstraintOptions}   options   Options.
       * @param {Function}            callback  A callback.
       */
-    def hasConstraint(options: ConstraintOptions, callback: js.Function2[/* error */ js.Any, /* exists */ Boolean, Unit]): Unit = js.native
+    def hasConstraint(options: ConstraintOptions, callback: js.Function2[/* error */ Any, /* exists */ Boolean, Unit]): Unit = js.native
     
     /**
       * Determines if an index exists.
       * @param {IndexOptions}    options   Options.
       * @param {Function}        callback  A callback.
       */
-    def hasIndex(options: IndexOptions, callback: js.Function2[/* error */ js.Any, /* exists */ Boolean, Unit]): Unit = js.native
+    def hasIndex(options: IndexOptions, callback: js.Function2[/* error */ Any, /* exists */ Boolean, Unit]): Unit = js.native
     
     /**
       * Makes arbitrary HTTP request to the REST API.
@@ -148,7 +147,7 @@ object mod {
       * Proxy.
       * @type {any}
       */
-    var proxy: js.Any = js.native
+    var proxy: Any = js.native
     
     /**
       * URL connection.
@@ -197,9 +196,9 @@ object mod {
   
   trait ConstraintOptions extends StObject {
     
-    var label: js.UndefOr[js.Any] = js.undefined
+    var label: js.UndefOr[Any] = js.undefined
     
-    var property: js.UndefOr[js.Any] = js.undefined
+    var property: js.UndefOr[Any] = js.undefined
   }
   object ConstraintOptions {
     
@@ -210,11 +209,11 @@ object mod {
     
     extension [Self <: ConstraintOptions](x: Self) {
       
-      inline def setLabel(value: js.Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      inline def setProperty(value: js.Any): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+      inline def setProperty(value: Any): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
       inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
     }
@@ -263,7 +262,7 @@ object mod {
     }
   }
   
-  type DoneCallback = js.Function1[/* error */ js.Any, Unit]
+  type DoneCallback = js.Function1[/* error */ Any, Unit]
   
   trait GraphDatabaseOptions extends StObject {
     
@@ -271,7 +270,7 @@ object mod {
       * HTTP agent.
       * @type {any}
       */
-    var agent: js.UndefOr[js.Any] = js.undefined
+    var agent: js.UndefOr[Any] = js.undefined
     
     /**
       * Authentication information.
@@ -306,7 +305,7 @@ object mod {
     
     extension [Self <: GraphDatabaseOptions](x: Self) {
       
-      inline def setAgent(value: js.Any): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+      inline def setAgent(value: Any): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
       inline def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
       
@@ -326,38 +325,38 @@ object mod {
   
   trait HttpOptions extends StObject {
     
-    var body: js.Any
+    var body: Any
     
     var method: String
     
     var path: String
     
-    var raw: js.Any
+    var raw: Any
   }
   object HttpOptions {
     
-    inline def apply(body: js.Any, method: String, path: String, raw: js.Any): HttpOptions = {
+    inline def apply(body: Any, method: String, path: String, raw: Any): HttpOptions = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any])
       __obj.asInstanceOf[HttpOptions]
     }
     
     extension [Self <: HttpOptions](x: Self) {
       
-      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      inline def setRaw(value: js.Any): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: Any): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     }
   }
   
   trait IndexOptions extends StObject {
     
-    var label: js.UndefOr[js.Any] = js.undefined
+    var label: js.UndefOr[Any] = js.undefined
     
-    var property: js.UndefOr[js.Any] = js.undefined
+    var property: js.UndefOr[Any] = js.undefined
   }
   object IndexOptions {
     
@@ -368,17 +367,17 @@ object mod {
     
     extension [Self <: IndexOptions](x: Self) {
       
-      inline def setLabel(value: js.Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      inline def setProperty(value: js.Any): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+      inline def setProperty(value: Any): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
       inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
     }
   }
   
-  type ResultCallback = js.Function2[/* error */ js.Any, /* result */ js.Any, Unit]
+  type ResultCallback = js.Function2[/* error */ Any, /* result */ Any, Unit]
   
   trait Transaction extends StObject {
     
@@ -386,9 +385,9 @@ object mod {
     
     def cypher(options: CypherOptions, callback: ResultCallback): Request
     
-    var expiresAt: Date
+    var expiresAt: js.Date
     
-    var expiresIn: Date | Double
+    var expiresIn: js.Date | Double
     
     def renew(callback: DoneCallback): Unit
     
@@ -401,8 +400,8 @@ object mod {
     inline def apply(
       commit: DoneCallback => Unit,
       cypher: (CypherOptions, ResultCallback) => Request,
-      expiresAt: Date,
-      expiresIn: Date | Double,
+      expiresAt: js.Date,
+      expiresIn: js.Date | Double,
       renew: DoneCallback => Unit,
       rollback: DoneCallback => Unit,
       state: String
@@ -417,9 +416,9 @@ object mod {
       
       inline def setCypher(value: (CypherOptions, ResultCallback) => Request): Self = StObject.set(x, "cypher", js.Any.fromFunction2(value))
       
-      inline def setExpiresAt(value: Date): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
+      inline def setExpiresAt(value: js.Date): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
       
-      inline def setExpiresIn(value: Date | Double): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
+      inline def setExpiresIn(value: js.Date | Double): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
       
       inline def setRenew(value: DoneCallback => Unit): Self = StObject.set(x, "renew", js.Any.fromFunction1(value))
       

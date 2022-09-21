@@ -6,7 +6,7 @@ import typings.ethereumjsTx.typesMod.FakeTxData
 import typings.ethereumjsTx.typesMod.PrefixedHexString
 import typings.ethereumjsTx.typesMod.TransactionOptions
 import typings.ethereumjsTx.typesMod.TxData
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ object mod {
   
   @JSImport("ethereumjs-tx", "FakeTransaction")
   @js.native
-  class FakeTransaction () extends default {
+  open class FakeTransaction () extends default {
     def this(data: js.Array[BufferLike]) = this()
     def this(data: FakeTxData) = this()
     def this(data: PrefixedHexString) = this()
@@ -58,7 +58,7 @@ object mod {
     * const tx = new Transaction(txData);
     * ```
     */
-  class Transaction ()
+  open class Transaction ()
     extends typings.ethereumjsTx.transactionMod.default {
     def this(data: js.Array[BufferLike]) = this()
     def this(data: PrefixedHexString) = this()

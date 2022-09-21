@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "vue-loader" : "15.9.5"
+      "vue-loader" : "17.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "vue-loader" : "15.9.5"
+      "vue-loader" : "17.0.0"
     }
   ],
   "compile-devDependencies" : [

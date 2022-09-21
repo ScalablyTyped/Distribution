@@ -10,13 +10,13 @@ Metascraper integration with Amazon
 | ------------------ | :-------------: |
 | Full name          | metascraper-amazon |
 | Keywords           | amazon, metascraper |
-| # releases         | 134 |
-| # dependents       | 5 |
-| # downloads        | 45677 |
-| # stars            | 0 |
+| # releases         | 98 |
+| # dependents       | 0.0 |
+| # downloads        | 3328.0 |
+| # stars            | 1802.0 |
 
 ## Links
-- [Homepage](https://nicedoc.io/microlinkhq/metascraper/packages/metascraper-amazon)
+- [Homepage](https://github.com/microlinkhq/metascraper#readme)
 - [Bugs](https://github.com/microlinkhq/metascraper/issues)
 - [Repository](https://github.com/microlinkhq/metascraper)
 - [Npm](https://www.npmjs.com/package/metascraper-amazon)

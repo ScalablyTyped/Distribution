@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.NavigationModule")
 @js.native
-/* private */ class NavigationModule ()
+/* private */ open class NavigationModule ()
   extends StObject
      with typings.activexOutlook.Outlook.NavigationModule {
   
@@ -29,7 +29,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OutlookDotNavigationModule_typekey: typings.activexOutlook.Outlook.NavigationModule = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var Position: Double = js.native

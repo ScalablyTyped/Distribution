@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object xmlTextMod {
   
-  @JSImport("@aws-sdk/xml-builder/dist/cjs/XmlText", "XmlText")
+  @JSImport("@aws-sdk/xml-builder/dist-types/XmlText", "XmlText")
   @js.native
-  class XmlText protected ()
+  open class XmlText protected ()
     extends StObject
        with Stringable {
     def this(value: String) = this()
     
-    /* private */ var value: js.Any = js.native
+    /* private */ var value: Any = js.native
   }
 }

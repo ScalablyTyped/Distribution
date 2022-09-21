@@ -8,7 +8,7 @@ object InformationPolicy {
   
   @JSGlobal("SP.InformationPolicy.ProjectPolicy")
   @js.native
-  class ProjectPolicy protected ()
+  open class ProjectPolicy protected ()
     extends StObject
        with typings.sharepoint.SP.InformationPolicy.ProjectPolicy {
     def this(context: typings.sharepoint.SP.ClientRuntimeContext, objectPath: typings.sharepoint.SP.ObjectPath) = this()

@@ -8,5 +8,5 @@ object activityResponseMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/_ActivityResponse", "_ActivityResponse")
   @js.native
-  val ActivityResponse: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val ActivityResponse: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

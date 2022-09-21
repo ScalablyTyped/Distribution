@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.ApplicationModel.Calls
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -60,7 +59,7 @@ trait PhoneCallHistoryEntry extends StObject {
   var sourceIdKind: PhoneCallHistorySourceIdKind
   
   /** Gets or sets the start time for this history entry. */
-  var startTime: Date
+  var startTime: js.Date
 }
 object PhoneCallHistoryEntry {
   
@@ -82,7 +81,7 @@ object PhoneCallHistoryEntry {
     sourceDisplayName: String,
     sourceId: String,
     sourceIdKind: PhoneCallHistorySourceIdKind,
-    startTime: Date
+    startTime: js.Date
   ): PhoneCallHistoryEntry = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isCallerIdBlocked = isCallerIdBlocked.asInstanceOf[js.Any], isEmergency = isEmergency.asInstanceOf[js.Any], isIncoming = isIncoming.asInstanceOf[js.Any], isMissed = isMissed.asInstanceOf[js.Any], isRinging = isRinging.asInstanceOf[js.Any], isSeen = isSeen.asInstanceOf[js.Any], isSuppressed = isSuppressed.asInstanceOf[js.Any], isVoicemail = isVoicemail.asInstanceOf[js.Any], media = media.asInstanceOf[js.Any], otherAppReadAccess = otherAppReadAccess.asInstanceOf[js.Any], remoteId = remoteId.asInstanceOf[js.Any], sourceDisplayName = sourceDisplayName.asInstanceOf[js.Any], sourceId = sourceId.asInstanceOf[js.Any], sourceIdKind = sourceIdKind.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhoneCallHistoryEntry]
@@ -124,6 +123,6 @@ object PhoneCallHistoryEntry {
     
     inline def setSourceIdKind(value: PhoneCallHistorySourceIdKind): Self = StObject.set(x, "sourceIdKind", value.asInstanceOf[js.Any])
     
-    inline def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
   }
 }

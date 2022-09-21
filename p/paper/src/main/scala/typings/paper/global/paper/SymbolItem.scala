@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("paper.SymbolItem")
 @js.native
-class SymbolItem protected ()
+open class SymbolItem protected ()
   extends StObject
      with typings.paper.paper.SymbolItem {
   def this(definition: typings.paper.paper.Item) = this()

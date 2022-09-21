@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LookupTransform
   extends StObject
-     with _Transforms {
+     with Transforms {
   
-  var default: js.UndefOr[js.Any] = js.undefined
+  var default: js.UndefOr[Any] = js.undefined
   
   var as: js.UndefOr[(js.Array[String | SignalRef]) | SignalRef] = js.undefined
   
@@ -38,15 +38,15 @@ object LookupTransform {
     
     inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
-    inline def setAsVarargs(value: (String | SignalRef)*): Self = StObject.set(x, "as", js.Array(value :_*))
+    inline def setAsVarargs(value: (String | SignalRef)*): Self = StObject.set(x, "as", js.Array(value*))
     
-    inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
     inline def setFields(value: js.Array[FieldRef] | SignalRef): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    inline def setFieldsVarargs(value: FieldRef*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: FieldRef*): Self = StObject.set(x, "fields", js.Array(value*))
     
     inline def setFrom(value: DataName): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
@@ -58,6 +58,6 @@ object LookupTransform {
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    inline def setValuesVarargs(value: FieldRef*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: FieldRef*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

@@ -26,6 +26,6 @@ object FrameMetricDatum {
     
     inline def setValues(value: FrameMetricValues): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: FrameMetricValue*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

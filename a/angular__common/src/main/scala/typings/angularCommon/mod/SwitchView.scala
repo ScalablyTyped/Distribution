@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SwitchView extends StObject {
   
-  /* private */ var _created: js.Any
+  /* private */ var _created: Any
   
-  /* private */ var _templateRef: js.Any
+  /* private */ var _templateRef: Any
   
-  /* private */ var _viewContainerRef: js.Any
+  /* private */ var _viewContainerRef: Any
   
   def create(): Unit
   
@@ -21,9 +21,9 @@ trait SwitchView extends StObject {
 object SwitchView {
   
   inline def apply(
-    _created: js.Any,
-    _templateRef: js.Any,
-    _viewContainerRef: js.Any,
+    _created: Any,
+    _templateRef: Any,
+    _viewContainerRef: Any,
     create: () => Unit,
     destroy: () => Unit,
     enforceState: Boolean => Unit
@@ -40,10 +40,10 @@ object SwitchView {
     
     inline def setEnforceState(value: Boolean => Unit): Self = StObject.set(x, "enforceState", js.Any.fromFunction1(value))
     
-    inline def set_created(value: js.Any): Self = StObject.set(x, "_created", value.asInstanceOf[js.Any])
+    inline def set_created(value: Any): Self = StObject.set(x, "_created", value.asInstanceOf[js.Any])
     
-    inline def set_templateRef(value: js.Any): Self = StObject.set(x, "_templateRef", value.asInstanceOf[js.Any])
+    inline def set_templateRef(value: Any): Self = StObject.set(x, "_templateRef", value.asInstanceOf[js.Any])
     
-    inline def set_viewContainerRef(value: js.Any): Self = StObject.set(x, "_viewContainerRef", value.asInstanceOf[js.Any])
+    inline def set_viewContainerRef(value: Any): Self = StObject.set(x, "_viewContainerRef", value.asInstanceOf[js.Any])
   }
 }

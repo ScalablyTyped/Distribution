@@ -19,11 +19,11 @@ object mod extends Shortcut {
   @js.native
   trait ReactMixin extends StObject {
     
-    def apply[S](clazz: js.Any, mixin: Mixin[js.Any, js.Any]): ComponentClass[S, ComponentState] = js.native
+    def apply[S](clazz: Any, mixin: Mixin[Any, Any]): ComponentClass[S, ComponentState] = js.native
     
-    def decorate(mixin: Mixin[js.Any, js.Any]): ClassDecorator = js.native
+    def decorate(mixin: Mixin[Any, Any]): ClassDecorator = js.native
     
-    def onClass[S](clazz: js.Any, mixin: Mixin[js.Any, js.Any]): ComponentClass[S, ComponentState] = js.native
+    def onClass[S](clazz: Any, mixin: Mixin[Any, Any]): ComponentClass[S, ComponentState] = js.native
   }
   
   type _To = ReactMixin

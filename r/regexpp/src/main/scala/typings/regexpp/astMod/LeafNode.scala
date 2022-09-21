@@ -75,6 +75,7 @@ object LeafNode {
     dotAll: Boolean,
     end: Double,
     global: Boolean,
+    hasIndices: Boolean,
     ignoreCase: Boolean,
     multiline: Boolean,
     raw: String,
@@ -82,7 +83,7 @@ object LeafNode {
     sticky: Boolean,
     unicode: Boolean
   ): typings.regexpp.astMod.Flags = {
-    val __obj = js.Dynamic.literal(dotAll = dotAll.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], global = global.asInstanceOf[js.Any], ignoreCase = ignoreCase.asInstanceOf[js.Any], multiline = multiline.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], sticky = sticky.asInstanceOf[js.Any], unicode = unicode.asInstanceOf[js.Any], parent = null)
+    val __obj = js.Dynamic.literal(dotAll = dotAll.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], global = global.asInstanceOf[js.Any], hasIndices = hasIndices.asInstanceOf[js.Any], ignoreCase = ignoreCase.asInstanceOf[js.Any], multiline = multiline.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], sticky = sticky.asInstanceOf[js.Any], unicode = unicode.asInstanceOf[js.Any], parent = null)
     __obj.updateDynamic("type")("Flags")
     __obj.asInstanceOf[typings.regexpp.astMod.Flags]
   }

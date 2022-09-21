@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-fullwidth-code-point
 
-Typings are for version 3.0.0
+Typings are for version 4.0.0
 
 ## Library description:
 Check if the character represented by a given Unicode code point is fullwidth
@@ -11,9 +11,9 @@ Check if the character represented by a given Unicode code point is fullwidth
 | Full name          | is-fullwidth-code-point |
 | Keywords           | fullwidth, full-width, full, width, unicode, character, string, codepoint, code, point, is, detect, check |
 | # releases         | 2 |
-| # dependents       | 141 |
-| # downloads        | 1641168245 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 3.260458883333333E8 |
+| # stars            | 43.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/is-fullwidth-code-point#readme)

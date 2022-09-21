@@ -3,7 +3,6 @@ package typings.phaser.Phaser.Types.Core
 import typings.phaser.Phaser.Scale.CenterType
 import typings.phaser.Phaser.Scale.ScaleModeType
 import typings.phaser.Phaser.Scale.ZoomType
-import typings.phaser.integer
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -34,7 +33,7 @@ trait ScaleConfig extends StObject {
   /**
     * The base height of your game. Can be an integer or a string: '100%'. If a string it will only work if you have set a parent element that has a size.
     */
-  var height: js.UndefOr[integer | String] = js.undefined
+  var height: js.UndefOr[Double | String] = js.undefined
   
   /**
     * The maximum width the canvas can be scaled up to.
@@ -59,22 +58,17 @@ trait ScaleConfig extends StObject {
   /**
     * How many ms should elapse before checking if the browser size has changed?
     */
-  var resizeInterval: js.UndefOr[integer] = js.undefined
-  
-  /**
-    * The rendering resolution of the canvas. This is reserved for future use and is currently ignored.
-    */
-  var resolution: js.UndefOr[Double] = js.undefined
+  var resizeInterval: js.UndefOr[Double] = js.undefined
   
   /**
     * The base width of your game. Can be an integer or a string: '100%'. If a string it will only work if you have set a parent element that has a size.
     */
-  var width: js.UndefOr[integer | String] = js.undefined
+  var width: js.UndefOr[Double | String] = js.undefined
   
   /**
     * The zoom value of the game canvas.
     */
-  var zoom: js.UndefOr[ZoomType | integer] = js.undefined
+  var zoom: js.UndefOr[ZoomType | Double] = js.undefined
 }
 object ScaleConfig {
   
@@ -101,7 +95,7 @@ object ScaleConfig {
     
     inline def setFullscreenTargetUndefined: Self = StObject.set(x, "fullscreenTarget", js.undefined)
     
-    inline def setHeight(value: integer | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
@@ -121,19 +115,15 @@ object ScaleConfig {
     
     inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
-    inline def setResizeInterval(value: integer): Self = StObject.set(x, "resizeInterval", value.asInstanceOf[js.Any])
+    inline def setResizeInterval(value: Double): Self = StObject.set(x, "resizeInterval", value.asInstanceOf[js.Any])
     
     inline def setResizeIntervalUndefined: Self = StObject.set(x, "resizeInterval", js.undefined)
     
-    inline def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
-    
-    inline def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
-    
-    inline def setWidth(value: integer | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
-    inline def setZoom(value: ZoomType | integer): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+    inline def setZoom(value: ZoomType | Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
     inline def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
   }

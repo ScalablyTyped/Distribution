@@ -10,10 +10,10 @@ use node builtins in browser with rollup
 | ------------------ | :-------------: |
 | Full name          | rollup-plugin-node-builtins |
 | Keywords           | rollup-plugin |
-| # releases         | 1 |
-| # dependents       | 160 |
-| # downloads        | 1653779 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 220509.0 |
+| # stars            | 128.0 |
 
 ## Links
 - [Homepage](https://github.com/calvinmetcalf/rollup-plugin-node-builtins#readme)

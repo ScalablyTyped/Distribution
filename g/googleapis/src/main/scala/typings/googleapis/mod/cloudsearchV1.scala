@@ -9,25 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object cloudsearchV1 {
   
-  /**
-    * Cloud Search API
-    *
-    * Cloud Search provides cloud-based search capabilities over G Suite data.
-    * The Cloud Search API allows indexing of non-G Suite data into Cloud Search.
-    *
-    * @example
-    * const {google} = require('googleapis');
-    * const cloudsearch = google.cloudsearch('v1');
-    *
-    * @namespace cloudsearch
-    * @type {Function}
-    * @version v1
-    * @variation v1
-    * @param {object=} options Options for Cloudsearch
-    */
   @JSImport("googleapis", "cloudsearch_v1.Cloudsearch")
   @js.native
-  class Cloudsearch protected ()
+  open class Cloudsearch protected ()
     extends typings.googleapis.cloudsearchV1Mod.cloudsearchV1.Cloudsearch {
     def this(options: GlobalOptions) = this()
     def this(options: GlobalOptions, google: GoogleConfigurable) = this()
@@ -35,141 +19,197 @@ object cloudsearchV1 {
   
   @JSImport("googleapis", "cloudsearch_v1.Resource$Debug")
   @js.native
-  class ResourceDebug protected ()
+  open class ResourceDebug protected ()
     extends typings.googleapis.cloudsearchV1Mod.cloudsearchV1.ResourceDebug {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "cloudsearch_v1.Resource$Debug$Datasources")
   @js.native
-  class ResourceDebugDatasources protected ()
+  open class ResourceDebugDatasources protected ()
     extends typings.googleapis.cloudsearchV1Mod.cloudsearchV1.ResourceDebugDatasources {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "cloudsearch_v1.Resource$Debug$Datasources$Items")
   @js.native
-  class ResourceDebugDatasourcesItems protected ()
+  open class ResourceDebugDatasourcesItems protected ()
     extends typings.googleapis.cloudsearchV1Mod.cloudsearchV1.ResourceDebugDatasourcesItems {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "cloudsearch_v1.Resource$Debug$Datasources$Items$Unmappedids")
   @js.native
-  class ResourceDebugDatasourcesItemsUnmappedids protected ()
+  open class ResourceDebugDatasourcesItemsUnmappedids protected ()
     extends typings.googleapis.cloudsearchV1Mod.cloudsearchV1.ResourceDebugDatasourcesItemsUnmappedids {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "cloudsearch_v1.Resource$Debug$Identitysources")
   @js.native
-  class ResourceDebugIdentitysources protected ()
+  open class ResourceDebugIdentitysources protected ()
     extends typings.googleapis.cloudsearchV1Mod.cloudsearchV1.ResourceDebugIdentitysources {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "cloudsearch_v1.Resource$Debug$Identitysources$Items")
   @js.native
-  class ResourceDebugIdentitysourcesItems protected ()
+  open class ResourceDebugIdentitysourcesItems protected ()
     extends typings.googleapis.cloudsearchV1Mod.cloudsearchV1.ResourceDebugIdentitysourcesItems {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "cloudsearch_v1.Resource$Debug$Identitysources$Unmappedids")
   @js.native
-  class ResourceDebugIdentitysourcesUnmappedids protected ()
+  open class ResourceDebugIdentitysourcesUnmappedids protected ()
     extends typings.googleapis.cloudsearchV1Mod.cloudsearchV1.ResourceDebugIdentitysourcesUnmappedids {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "cloudsearch_v1.Resource$Indexing")
   @js.native
-  class ResourceIndexing protected ()
+  open class ResourceIndexing protected ()
     extends typings.googleapis.cloudsearchV1Mod.cloudsearchV1.ResourceIndexing {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "cloudsearch_v1.Resource$Indexing$Datasources")
   @js.native
-  class ResourceIndexingDatasources protected ()
+  open class ResourceIndexingDatasources protected ()
     extends typings.googleapis.cloudsearchV1Mod.cloudsearchV1.ResourceIndexingDatasources {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "cloudsearch_v1.Resource$Indexing$Datasources$Items")
   @js.native
-  class ResourceIndexingDatasourcesItems protected ()
+  open class ResourceIndexingDatasourcesItems protected ()
     extends typings.googleapis.cloudsearchV1Mod.cloudsearchV1.ResourceIndexingDatasourcesItems {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "cloudsearch_v1.Resource$Media")
   @js.native
-  class ResourceMedia protected ()
+  open class ResourceMedia protected ()
     extends typings.googleapis.cloudsearchV1Mod.cloudsearchV1.ResourceMedia {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "cloudsearch_v1.Resource$Operations")
   @js.native
-  class ResourceOperations protected ()
+  open class ResourceOperations protected ()
     extends typings.googleapis.cloudsearchV1Mod.cloudsearchV1.ResourceOperations {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "cloudsearch_v1.Resource$Operations$Lro")
+  @js.native
+  open class ResourceOperationsLro protected ()
+    extends typings.googleapis.cloudsearchV1Mod.cloudsearchV1.ResourceOperationsLro {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "cloudsearch_v1.Resource$Query")
   @js.native
-  class ResourceQuery protected ()
+  open class ResourceQuery protected ()
     extends typings.googleapis.cloudsearchV1Mod.cloudsearchV1.ResourceQuery {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "cloudsearch_v1.Resource$Query$Sources")
   @js.native
-  class ResourceQuerySources protected ()
+  open class ResourceQuerySources protected ()
     extends typings.googleapis.cloudsearchV1Mod.cloudsearchV1.ResourceQuerySources {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "cloudsearch_v1.Resource$Settings")
   @js.native
-  class ResourceSettings protected ()
+  open class ResourceSettings protected ()
     extends typings.googleapis.cloudsearchV1Mod.cloudsearchV1.ResourceSettings {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "cloudsearch_v1.Resource$Settings$Datasources")
   @js.native
-  class ResourceSettingsDatasources protected ()
+  open class ResourceSettingsDatasources protected ()
     extends typings.googleapis.cloudsearchV1Mod.cloudsearchV1.ResourceSettingsDatasources {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "cloudsearch_v1.Resource$Settings$Searchapplications")
   @js.native
-  class ResourceSettingsSearchapplications protected ()
+  open class ResourceSettingsSearchapplications protected ()
     extends typings.googleapis.cloudsearchV1Mod.cloudsearchV1.ResourceSettingsSearchapplications {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "cloudsearch_v1.Resource$Stats")
   @js.native
-  class ResourceStats protected ()
+  open class ResourceStats protected ()
     extends typings.googleapis.cloudsearchV1Mod.cloudsearchV1.ResourceStats {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "cloudsearch_v1.Resource$Stats$Index")
   @js.native
-  class ResourceStatsIndex protected ()
+  open class ResourceStatsIndex protected ()
     extends typings.googleapis.cloudsearchV1Mod.cloudsearchV1.ResourceStatsIndex {
     def this(context: APIRequestContext) = this()
   }
   
   @JSImport("googleapis", "cloudsearch_v1.Resource$Stats$Index$Datasources")
   @js.native
-  class ResourceStatsIndexDatasources protected ()
+  open class ResourceStatsIndexDatasources protected ()
     extends typings.googleapis.cloudsearchV1Mod.cloudsearchV1.ResourceStatsIndexDatasources {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "cloudsearch_v1.Resource$Stats$Query")
+  @js.native
+  open class ResourceStatsQuery protected ()
+    extends typings.googleapis.cloudsearchV1Mod.cloudsearchV1.ResourceStatsQuery {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "cloudsearch_v1.Resource$Stats$Query$Searchapplications")
+  @js.native
+  open class ResourceStatsQuerySearchapplications protected ()
+    extends typings.googleapis.cloudsearchV1Mod.cloudsearchV1.ResourceStatsQuerySearchapplications {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "cloudsearch_v1.Resource$Stats$Session")
+  @js.native
+  open class ResourceStatsSession protected ()
+    extends typings.googleapis.cloudsearchV1Mod.cloudsearchV1.ResourceStatsSession {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "cloudsearch_v1.Resource$Stats$Session$Searchapplications")
+  @js.native
+  open class ResourceStatsSessionSearchapplications protected ()
+    extends typings.googleapis.cloudsearchV1Mod.cloudsearchV1.ResourceStatsSessionSearchapplications {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "cloudsearch_v1.Resource$Stats$User")
+  @js.native
+  open class ResourceStatsUser protected ()
+    extends typings.googleapis.cloudsearchV1Mod.cloudsearchV1.ResourceStatsUser {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "cloudsearch_v1.Resource$Stats$User$Searchapplications")
+  @js.native
+  open class ResourceStatsUserSearchapplications protected ()
+    extends typings.googleapis.cloudsearchV1Mod.cloudsearchV1.ResourceStatsUserSearchapplications {
+    def this(context: APIRequestContext) = this()
+  }
+  
+  @JSImport("googleapis", "cloudsearch_v1.Resource$V1")
+  @js.native
+  open class ResourceV1 protected ()
+    extends typings.googleapis.cloudsearchV1Mod.cloudsearchV1.ResourceV1 {
     def this(context: APIRequestContext) = this()
   }
 }

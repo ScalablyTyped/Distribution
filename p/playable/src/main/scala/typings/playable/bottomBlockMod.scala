@@ -24,7 +24,7 @@ object bottomBlockMod {
   
   @JSImport("playable/dist/src/modules/ui/bottom-block/bottom-block", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with BottomBlock {
     def this(dependencies: IDependencies) = this()
@@ -38,7 +38,7 @@ object bottomBlockMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("playable/dist/src/modules/ui/bottom-block/bottom-block", "default.View")
     @js.native
-    class View protected ()
+    open class View protected ()
       extends typings.playable.bottomBlockViewMod.default {
       def this(config: IBottomBlockViewConfig) = this()
     }
@@ -67,23 +67,23 @@ object bottomBlockMod {
     extends StObject
        with IBottomBlock {
     
-    /* private */ var _bindEvents: js.Any = js.native
+    /* private */ var _bindEvents: Any = js.native
     
-    /* private */ var _bindViewCallbacks: js.Any = js.native
+    /* private */ var _bindViewCallbacks: Any = js.native
     
-    /* private */ var _eventEmitter: js.Any = js.native
+    /* private */ var _eventEmitter: Any = js.native
     
-    /* private */ var _getControlElements: js.Any = js.native
+    /* private */ var _getControlElements: Any = js.native
     
-    /* private */ var _initUI: js.Any = js.native
+    /* private */ var _initUI: Any = js.native
     
-    /* private */ var _isBlockFocused: js.Any = js.native
+    /* private */ var _isBlockFocused: Any = js.native
     
-    /* private */ var _removeFocusState: js.Any = js.native
+    /* private */ var _removeFocusState: Any = js.native
     
-    /* private */ var _setFocusState: js.Any = js.native
+    /* private */ var _setFocusState: Any = js.native
     
-    /* private */ var _unbindEvents: js.Any = js.native
+    /* private */ var _unbindEvents: Any = js.native
     
     def addControl(key: String, element: HTMLElement, options: IAddControllOptions): Unit = js.native
     

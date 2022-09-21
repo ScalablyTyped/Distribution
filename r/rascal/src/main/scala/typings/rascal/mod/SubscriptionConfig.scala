@@ -26,7 +26,7 @@ trait SubscriptionConfig extends StObject {
   
   var queue: js.UndefOr[String] = js.undefined
   
-  var recovery: js.UndefOr[js.Any] = js.undefined
+  var recovery: js.UndefOr[Any] = js.undefined
   
   var redeliveries: js.UndefOr[Counter] = js.undefined
   
@@ -67,7 +67,7 @@ object SubscriptionConfig {
     
     inline def setHandlersUndefined: Self = StObject.set(x, "handlers", js.undefined)
     
-    inline def setHandlersVarargs(value: String*): Self = StObject.set(x, "handlers", js.Array(value :_*))
+    inline def setHandlersVarargs(value: String*): Self = StObject.set(x, "handlers", js.Array(value*))
     
     inline def setOptions(value: Consume): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
@@ -81,7 +81,7 @@ object SubscriptionConfig {
     
     inline def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
     
-    inline def setRecovery(value: js.Any): Self = StObject.set(x, "recovery", value.asInstanceOf[js.Any])
+    inline def setRecovery(value: Any): Self = StObject.set(x, "recovery", value.asInstanceOf[js.Any])
     
     inline def setRecoveryUndefined: Self = StObject.set(x, "recovery", js.undefined)
     

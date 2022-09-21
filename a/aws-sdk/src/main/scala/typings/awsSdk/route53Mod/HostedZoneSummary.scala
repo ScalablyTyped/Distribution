@@ -17,7 +17,7 @@ trait HostedZoneSummary extends StObject {
   var Name: DNSName
   
   /**
-    * The owner of a private hosted zone that the specified VPC is associated with. The owner can be either an AWS account or an AWS service.
+    * The owner of a private hosted zone that the specified VPC is associated with. The owner can be either an Amazon Web Services account or an Amazon Web Services service.
     */
   var Owner: HostedZoneOwner
 }

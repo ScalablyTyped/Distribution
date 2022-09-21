@@ -1,13 +1,12 @@
 package typings.reactNavigationCore.anon
 
-import typings.reactNavigationRouters.typesMod.PartialState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `0` extends StObject {
   
-  var state: js.UndefOr[js.Any | PartialState[js.Any]] = js.undefined
+  var params: js.UndefOr[js.Object] = js.undefined
 }
 object `0` {
   
@@ -18,8 +17,8 @@ object `0` {
   
   extension [Self <: `0`](x: Self) {
     
-    inline def setState(value: js.Any | PartialState[js.Any]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
   }
 }

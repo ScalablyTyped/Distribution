@@ -18,11 +18,11 @@ object When {
   @js.native
   trait Deferred[T] extends StObject {
     
-    def notify(update: js.Any): Unit = js.native
+    def notify(update: Any): Unit = js.native
     
     var promise: Promise[T] = js.native
     
-    def reject(reason: js.Any): Unit = js.native
+    def reject(reason: Any): Unit = js.native
     
     def resolve(): Unit = js.native
     def resolve(value: T): Unit = js.native
@@ -47,7 +47,7 @@ object When {
       __obj.asInstanceOf[typings.when.When.FulfilledDescriptor[T]]
     }
     
-    inline def RejectedDescriptor(reason: js.Any): typings.when.When.RejectedDescriptor = {
+    inline def RejectedDescriptor(reason: Any): typings.when.When.RejectedDescriptor = {
       val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], state = "rejected")
       __obj.asInstanceOf[typings.when.When.RejectedDescriptor]
     }
@@ -79,7 +79,7 @@ object When {
   
   trait PendingDescriptor
     extends StObject
-       with Snapshot[js.Any] {
+       with Snapshot[Any] {
     
     var state: pending
   }
@@ -102,23 +102,20 @@ object When {
     def `catch`[U](): Promise[U] = js.native
     // Make sure you test any usage of these overloads, exceptionType must
     // be a constructor with prototype set to an instance of Error.
-    def `catch`[U](exceptionType: js.Any): Promise[U] = js.native
-    def `catch`[U](exceptionType: js.Any, onRejected: js.Function1[/* reason */ js.Any, U | Promise[U]]): Promise[U] = js.native
+    def `catch`[U](exceptionType: Any): Promise[U] = js.native
+    def `catch`[U](exceptionType: Any, onRejected: js.Function1[/* reason */ Any, U | Promise[U]]): Promise[U] = js.native
     def `catch`[U](
-      filter: js.Function1[/* reason */ js.Any, Boolean],
-      onRejected: js.Function1[/* reason */ js.Any, U | Promise[U]]
+      filter: js.Function1[/* reason */ Any, Boolean],
+      onRejected: js.Function1[/* reason */ Any, U | Promise[U]]
     ): Promise[U] = js.native
-    def `catch`[U](onRejected: js.Function1[/* reason */ js.Any, Boolean | Promise[U] | U]): Promise[U] = js.native
+    def `catch`[U](onRejected: js.Function1[/* reason */ Any, Boolean | Promise[U] | U]): Promise[U] = js.native
     
     def delay(milliseconds: Double): Promise[T] = js.native
     
     def done[U](): Unit = js.native
     def done[U](onFulfilled: js.Function1[/* value */ T, Unit]): Unit = js.native
-    def done[U](
-      onFulfilled: js.Function1[/* value */ T, Unit],
-      onRejected: js.Function1[/* reason */ js.Any, Unit]
-    ): Unit = js.native
-    def done[U](onFulfilled: Unit, onRejected: js.Function1[/* reason */ js.Any, Unit]): Unit = js.native
+    def done[U](onFulfilled: js.Function1[/* value */ T, Unit], onRejected: js.Function1[/* reason */ Any, Unit]): Unit = js.native
+    def done[U](onFulfilled: Unit, onRejected: js.Function1[/* reason */ Any, Unit]): Unit = js.native
     
     def `else`(value: T): Promise[T] = js.native
     
@@ -136,12 +133,12 @@ object When {
     def otherwise[U](): Promise[U] = js.native
     // Make sure you test any usage of these overloads, exceptionType must
     // be a constructor with prototype set to an instance of Error.
-    def otherwise[U](exceptionType: js.Any): Promise[U] = js.native
-    def otherwise[U](exceptionType: js.Any, onRejected: js.Function1[/* reason */ js.Any, U | Promise[U]]): Promise[U] = js.native
-    def otherwise[U](onRejected: js.Function1[/* reason */ js.Any, Boolean | Promise[U] | U]): Promise[U] = js.native
+    def otherwise[U](exceptionType: Any): Promise[U] = js.native
+    def otherwise[U](exceptionType: Any, onRejected: js.Function1[/* reason */ Any, U | Promise[U]]): Promise[U] = js.native
+    def otherwise[U](onRejected: js.Function1[/* reason */ Any, Boolean | Promise[U] | U]): Promise[U] = js.native
     def otherwise[U](
-      predicate: js.Function1[/* reason */ js.Any, Boolean],
-      onRejected: js.Function1[/* reason */ js.Any, U | Promise[U]]
+      predicate: js.Function1[/* reason */ Any, Boolean],
+      onRejected: js.Function1[/* reason */ Any, U | Promise[U]]
     ): Promise[U] = js.native
     
     def spread[T](onFulfilled: Fn0[Promise[T] | T]): Promise[T] = js.native
@@ -157,98 +154,98 @@ object When {
     def `then`(onFulfilled: js.Function1[/* value */ T, T | Thenable[T]]): Promise[T] = js.native
     def `then`(
       onFulfilled: js.Function1[/* value */ T, T | Thenable[T]],
-      onRejected: js.Function1[/* reason */ js.Any, T | Thenable[T]]
+      onRejected: js.Function1[/* reason */ Any, T | Thenable[T]]
     ): Promise[T] = js.native
     def `then`(
       onFulfilled: js.Function1[/* value */ T, T | Thenable[T]],
-      onRejected: js.Function1[/* reason */ js.Any, T | Thenable[T]],
-      onProgress: js.Function1[/* update */ js.Any, Unit]
+      onRejected: js.Function1[/* reason */ Any, T | Thenable[T]],
+      onProgress: js.Function1[/* update */ Any, Unit]
     ): Promise[T] = js.native
     def `then`(
       onFulfilled: js.Function1[/* value */ T, T | Thenable[T]],
       onRejected: Null,
-      onProgress: js.Function1[/* update */ js.Any, Unit]
+      onProgress: js.Function1[/* update */ Any, Unit]
     ): Promise[T] = js.native
     def `then`(
       onFulfilled: js.Function1[/* value */ T, T | Thenable[T]],
       onRejected: Unit,
-      onProgress: js.Function1[/* update */ js.Any, Unit]
+      onProgress: js.Function1[/* update */ Any, Unit]
     ): Promise[T] = js.native
-    def `then`(onFulfilled: Null, onRejected: js.Function1[/* reason */ js.Any, T | Thenable[T]]): Promise[T] = js.native
+    def `then`(onFulfilled: Null, onRejected: js.Function1[/* reason */ Any, T | Thenable[T]]): Promise[T] = js.native
     def `then`(
       onFulfilled: Null,
-      onRejected: js.Function1[/* reason */ js.Any, T | Thenable[T]],
-      onProgress: js.Function1[/* update */ js.Any, Unit]
+      onRejected: js.Function1[/* reason */ Any, T | Thenable[T]],
+      onProgress: js.Function1[/* update */ Any, Unit]
     ): Promise[T] = js.native
-    def `then`(onFulfilled: Null, onRejected: Null, onProgress: js.Function1[/* update */ js.Any, Unit]): Promise[T] = js.native
-    def `then`(onFulfilled: Null, onRejected: Unit, onProgress: js.Function1[/* update */ js.Any, Unit]): Promise[T] = js.native
-    def `then`(onFulfilled: Unit, onRejected: js.Function1[/* reason */ js.Any, T | Thenable[T]]): Promise[T] = js.native
+    def `then`(onFulfilled: Null, onRejected: Null, onProgress: js.Function1[/* update */ Any, Unit]): Promise[T] = js.native
+    def `then`(onFulfilled: Null, onRejected: Unit, onProgress: js.Function1[/* update */ Any, Unit]): Promise[T] = js.native
+    def `then`(onFulfilled: Unit, onRejected: js.Function1[/* reason */ Any, T | Thenable[T]]): Promise[T] = js.native
     def `then`(
       onFulfilled: Unit,
-      onRejected: js.Function1[/* reason */ js.Any, T | Thenable[T]],
-      onProgress: js.Function1[/* update */ js.Any, Unit]
+      onRejected: js.Function1[/* reason */ Any, T | Thenable[T]],
+      onProgress: js.Function1[/* update */ Any, Unit]
     ): Promise[T] = js.native
-    def `then`(onFulfilled: Unit, onRejected: Null, onProgress: js.Function1[/* update */ js.Any, Unit]): Promise[T] = js.native
-    def `then`(onFulfilled: Unit, onRejected: Unit, onProgress: js.Function1[/* update */ js.Any, Unit]): Promise[T] = js.native
+    def `then`(onFulfilled: Unit, onRejected: Null, onProgress: js.Function1[/* update */ Any, Unit]): Promise[T] = js.native
+    def `then`(onFulfilled: Unit, onRejected: Unit, onProgress: js.Function1[/* update */ Any, Unit]): Promise[T] = js.native
     @JSName("then")
     def then_TResult[TResult](onFulfilled: js.Function1[/* value */ T, TResult | Thenable[TResult]]): Promise[TResult] = js.native
     @JSName("then")
     def then_TResult[TResult](
       onFulfilled: js.Function1[/* value */ T, T | TResult | (Thenable[T | TResult])],
-      onRejected: js.Function1[/* reason */ js.Any, TResult | Thenable[TResult]]
+      onRejected: js.Function1[/* reason */ Any, TResult | Thenable[TResult]]
     ): Promise[TResult] = js.native
     @JSName("then")
     def then_TResult[TResult](
       onFulfilled: js.Function1[/* value */ T, T | TResult | (Thenable[T | TResult])],
-      onRejected: js.Function1[/* reason */ js.Any, TResult | Thenable[TResult]],
-      onProgress: js.Function1[/* update */ js.Any, Unit]
+      onRejected: js.Function1[/* reason */ Any, TResult | Thenable[TResult]],
+      onProgress: js.Function1[/* update */ Any, Unit]
     ): Promise[TResult] = js.native
     @JSName("then")
     def then_TResult[TResult](
       onFulfilled: js.Function1[/* value */ T, TResult | Thenable[TResult]],
       onRejected: Null,
-      onProgress: js.Function1[/* update */ js.Any, Unit]
+      onProgress: js.Function1[/* update */ Any, Unit]
     ): Promise[TResult] = js.native
     @JSName("then")
     def then_TResult[TResult](
       onFulfilled: js.Function1[/* value */ T, TResult | Thenable[TResult]],
       onRejected: Unit,
-      onProgress: js.Function1[/* update */ js.Any, Unit]
+      onProgress: js.Function1[/* update */ Any, Unit]
     ): Promise[TResult] = js.native
     @JSName("then")
-    def then_TResult[TResult](onFulfilled: Null, onRejected: js.Function1[/* reason */ js.Any, TResult | Thenable[TResult]]): Promise[T | TResult] = js.native
+    def then_TResult[TResult](onFulfilled: Null, onRejected: js.Function1[/* reason */ Any, TResult | Thenable[TResult]]): Promise[T | TResult] = js.native
     @JSName("then")
     def then_TResult[TResult](
       onFulfilled: Null,
-      onRejected: js.Function1[/* reason */ js.Any, TResult | Thenable[TResult]],
-      onProgress: js.Function1[/* update */ js.Any, Unit]
+      onRejected: js.Function1[/* reason */ Any, TResult | Thenable[TResult]],
+      onProgress: js.Function1[/* update */ Any, Unit]
     ): Promise[T | TResult] = js.native
     @JSName("then")
-    def then_TResult[TResult](onFulfilled: Unit, onRejected: js.Function1[/* reason */ js.Any, TResult | Thenable[TResult]]): Promise[T | TResult] = js.native
+    def then_TResult[TResult](onFulfilled: Unit, onRejected: js.Function1[/* reason */ Any, TResult | Thenable[TResult]]): Promise[T | TResult] = js.native
     @JSName("then")
     def then_TResult[TResult](
       onFulfilled: Unit,
-      onRejected: js.Function1[/* reason */ js.Any, TResult | Thenable[TResult]],
-      onProgress: js.Function1[/* update */ js.Any, Unit]
+      onRejected: js.Function1[/* reason */ Any, TResult | Thenable[TResult]],
+      onProgress: js.Function1[/* update */ Any, Unit]
     ): Promise[T | TResult] = js.native
     @JSName("then")
     def then_TResult1TResult2[TResult1, TResult2](
       onFulfilled: js.Function1[/* value */ T, TResult1 | Thenable[TResult1]],
-      onRejected: js.Function1[/* reason */ js.Any, TResult2 | Thenable[TResult2]]
+      onRejected: js.Function1[/* reason */ Any, TResult2 | Thenable[TResult2]]
     ): Promise[TResult1 | TResult2] = js.native
     @JSName("then")
     def then_TResult1TResult2[TResult1, TResult2](
       onFulfilled: js.Function1[/* value */ T, TResult1 | Thenable[TResult1]],
-      onRejected: js.Function1[/* reason */ js.Any, TResult2 | Thenable[TResult2]],
-      onProgress: js.Function1[/* update */ js.Any, Unit]
+      onRejected: js.Function1[/* reason */ Any, TResult2 | Thenable[TResult2]],
+      onProgress: js.Function1[/* update */ Any, Unit]
     ): Promise[TResult1 | TResult2] = js.native
     
     def timeout(milliseconds: Double): Promise[T] = js.native
-    def timeout(milliseconds: Double, reason: js.Any): Promise[T] = js.native
+    def timeout(milliseconds: Double, reason: Any): Promise[T] = js.native
     
-    def `with`(thisArg: js.Any): Promise[T] = js.native
+    def `with`(thisArg: Any): Promise[T] = js.native
     
-    def withThis(thisArg: js.Any): Promise[T] = js.native
+    def withThis(thisArg: Any): Promise[T] = js.native
     
     def `yield`[U](value: U): Promise[U] = js.native
     def `yield`[U](value: Promise[U]): Promise[U] = js.native
@@ -256,23 +253,23 @@ object When {
   
   trait RejectedDescriptor
     extends StObject
-       with Descriptor[js.Any]
-       with Snapshot[js.Any] {
+       with Descriptor[Any]
+       with Snapshot[Any] {
     
-    var reason: js.Any
+    var reason: Any
     
     var state: rejected
   }
   object RejectedDescriptor {
     
-    inline def apply(reason: js.Any): RejectedDescriptor = {
+    inline def apply(reason: Any): RejectedDescriptor = {
       val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], state = "rejected")
       __obj.asInstanceOf[RejectedDescriptor]
     }
     
     extension [Self <: RejectedDescriptor](x: Self) {
       
-      inline def setReason(value: js.Any): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+      inline def setReason(value: Any): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       
       inline def setState(value: rejected): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
@@ -303,7 +300,7 @@ object When {
       __obj.asInstanceOf[typings.when.When.PendingDescriptor]
     }
     
-    inline def RejectedDescriptor(reason: js.Any): typings.when.When.RejectedDescriptor = {
+    inline def RejectedDescriptor(reason: Any): typings.when.When.RejectedDescriptor = {
       val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], state = "rejected")
       __obj.asInstanceOf[typings.when.When.RejectedDescriptor]
     }
@@ -314,8 +311,8 @@ object When {
     
     def `then`[U](): Thenable[U] = js.native
     def `then`[U](onFulfilled: js.Function1[/* value */ T, U]): Thenable[U] = js.native
-    def `then`[U](onFulfilled: js.Function1[/* value */ T, U], onRejected: js.Function1[/* reason */ js.Any, U]): Thenable[U] = js.native
-    def `then`[U](onFulfilled: Unit, onRejected: js.Function1[/* reason */ js.Any, U]): Thenable[U] = js.native
+    def `then`[U](onFulfilled: js.Function1[/* value */ T, U], onRejected: js.Function1[/* reason */ Any, U]): Thenable[U] = js.native
+    def `then`[U](onFulfilled: Unit, onRejected: js.Function1[/* reason */ Any, U]): Thenable[U] = js.native
   }
   
   // Helper interfaces
@@ -354,7 +351,7 @@ object When {
         Promise[T]
       ]
     
-    type NodeCallback[T] = js.Function2[/* err */ js.Any, /* result */ T, Unit]
+    type NodeCallback[T] = js.Function2[/* err */ Any, /* result */ T, Unit]
     
     type NodeFn0[T] = Fn1[NodeCallback[T], Unit]
     

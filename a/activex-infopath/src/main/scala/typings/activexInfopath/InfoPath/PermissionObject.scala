@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PermissionObject extends StObject {
   
   def Add(bstrUserId: String): UserPermissionObject = js.native
-  def Add(bstrUserId: String, varPermission: js.Any): UserPermissionObject = js.native
-  def Add(bstrUserId: String, varPermission: js.Any, varExpirationDate: js.Any): UserPermissionObject = js.native
-  def Add(bstrUserId: String, varPermission: Unit, varExpirationDate: js.Any): UserPermissionObject = js.native
+  def Add(bstrUserId: String, varPermission: Any): UserPermissionObject = js.native
+  def Add(bstrUserId: String, varPermission: Any, varExpirationDate: Any): UserPermissionObject = js.native
+  def Add(bstrUserId: String, varPermission: Unit, varExpirationDate: Any): UserPermissionObject = js.native
   
   def ApplyPolicy(bstrFileName: String): Unit = js.native
   
@@ -23,7 +23,7 @@ trait PermissionObject extends StObject {
   /* private */ @JSName("InfoPath.PermissionObject_typekey")
   var InfoPathDotPermissionObject_typekey: PermissionObject = js.native
   
-  def Item(varIndex: js.Any): UserPermissionObject = js.native
+  def Item(varIndex: Any): UserPermissionObject = js.native
   
   val PermissionFromPolicy: Boolean = js.native
   

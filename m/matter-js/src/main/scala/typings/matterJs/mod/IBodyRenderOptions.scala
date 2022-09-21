@@ -27,7 +27,7 @@ trait IBodyRenderOptions extends StObject {
     * An `Object` that defines the sprite properties to use when rendering, if any.
     *
     * @property render.sprite
-    * @type object
+    * @type {IBodyRenderOptionsSprite | undefined}
     */
   var sprite: js.UndefOr[IBodyRenderOptionsSprite] = js.undefined
   
@@ -41,7 +41,7 @@ trait IBodyRenderOptions extends StObject {
     * A flag that indicates if the body should be rendered.
     *
     * @property render.visible
-    * @type boolean
+    * @type {boolean | undefined}
     * @default true
     */
   var visible: js.UndefOr[Boolean] = js.undefined

@@ -16,7 +16,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent cadesplugin.CADES_Common.Async<cadesplugin.CAdESCOM.CPSigner> */
 trait CPSignerAsync
   extends StObject
-     with _Unpacked[js.Any] {
+     with _Unpacked[Any] {
+  
+  val AuthenticatedAttributes2: (// tslint:disable-line ban-types
+  js.Promise[Unpacked[CPAuthenticatedAttributes2]]) | PromisifiedFunction[CPAuthenticatedAttributes2]
   
   val Certificate: (// tslint:disable-line ban-types
   js.Promise[Unpacked[typings.cadesplugin.CAPICOM.Certificate]]) | PromisifiedFunction[typings.cadesplugin.CAPICOM.Certificate]
@@ -66,6 +69,8 @@ trait CPSignerAsync
 object CPSignerAsync {
   
   inline def apply(
+    AuthenticatedAttributes2: (// tslint:disable-line ban-types
+  js.Promise[Unpacked[CPAuthenticatedAttributes2]]) | PromisifiedFunction[CPAuthenticatedAttributes2],
     Certificate: (// tslint:disable-line ban-types
   js.Promise[Unpacked[Certificate]]) | PromisifiedFunction[Certificate],
     CheckCertificate: (// tslint:disable-line ban-types
@@ -98,11 +103,22 @@ object CPSignerAsync {
     propset_Options: ValuesOf[CAPICOM_CERTIFICATE_INCLUDE_OPTION] => js.Promise[Unit],
     propset_TSAAddress: String => js.Promise[Unit]
   ): CPSignerAsync = {
-    val __obj = js.Dynamic.literal(Certificate = Certificate.asInstanceOf[js.Any], CheckCertificate = CheckCertificate.asInstanceOf[js.Any], Display = Display.asInstanceOf[js.Any], KeyPin = KeyPin.asInstanceOf[js.Any], Load = Load.asInstanceOf[js.Any], Options = Options.asInstanceOf[js.Any], SignatureTimeStampTime = SignatureTimeStampTime.asInstanceOf[js.Any], SigningTime = SigningTime.asInstanceOf[js.Any], TSAAddress = TSAAddress.asInstanceOf[js.Any], propset_Certificate = js.Any.fromFunction1(propset_Certificate), propset_CheckCertificate = js.Any.fromFunction1(propset_CheckCertificate), propset_KeyPin = js.Any.fromFunction1(propset_KeyPin), propset_Options = js.Any.fromFunction1(propset_Options), propset_TSAAddress = js.Any.fromFunction1(propset_TSAAddress))
+    val __obj = js.Dynamic.literal(AuthenticatedAttributes2 = AuthenticatedAttributes2.asInstanceOf[js.Any], Certificate = Certificate.asInstanceOf[js.Any], CheckCertificate = CheckCertificate.asInstanceOf[js.Any], Display = Display.asInstanceOf[js.Any], KeyPin = KeyPin.asInstanceOf[js.Any], Load = Load.asInstanceOf[js.Any], Options = Options.asInstanceOf[js.Any], SignatureTimeStampTime = SignatureTimeStampTime.asInstanceOf[js.Any], SigningTime = SigningTime.asInstanceOf[js.Any], TSAAddress = TSAAddress.asInstanceOf[js.Any], propset_Certificate = js.Any.fromFunction1(propset_Certificate), propset_CheckCertificate = js.Any.fromFunction1(propset_CheckCertificate), propset_KeyPin = js.Any.fromFunction1(propset_KeyPin), propset_Options = js.Any.fromFunction1(propset_Options), propset_TSAAddress = js.Any.fromFunction1(propset_TSAAddress))
     __obj.asInstanceOf[CPSignerAsync]
   }
   
   extension [Self <: CPSignerAsync](x: Self) {
+    
+    inline def setAuthenticatedAttributes2(
+      value: (// tslint:disable-line ban-types
+    js.Promise[Unpacked[CPAuthenticatedAttributes2]]) | PromisifiedFunction[CPAuthenticatedAttributes2]
+    ): Self = StObject.set(x, "AuthenticatedAttributes2", value.asInstanceOf[js.Any])
+    
+    inline def setAuthenticatedAttributes2Function1(
+      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
+    ): Self = StObject.set(x, "AuthenticatedAttributes2", js.Any.fromFunction1(value))
     
     inline def setCertificate(
       value: (// tslint:disable-line ban-types
@@ -112,7 +128,7 @@ object CPSignerAsync {
     inline def setCertificateFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
     ): Self = StObject.set(x, "Certificate", js.Any.fromFunction1(value))
     
     inline def setCheckCertificate(
@@ -123,7 +139,7 @@ object CPSignerAsync {
     inline def setCheckCertificateFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
     ): Self = StObject.set(x, "CheckCertificate", js.Any.fromFunction1(value))
     
     inline def setDisplay(
@@ -140,7 +156,7 @@ object CPSignerAsync {
     inline def setDisplayFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
     ): Self = StObject.set(x, "Display", js.Any.fromFunction1(value))
     
     inline def setDisplayFunction2(value: (/* hwndParent */ js.UndefOr[Double], /* title */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "Display", js.Any.fromFunction2(value))
@@ -153,7 +169,7 @@ object CPSignerAsync {
     inline def setKeyPinFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
     ): Self = StObject.set(x, "KeyPin", js.Any.fromFunction1(value))
     
     inline def setLoad(
@@ -166,7 +182,7 @@ object CPSignerAsync {
     inline def setLoadFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
     ): Self = StObject.set(x, "Load", js.Any.fromFunction1(value))
     
     inline def setLoadFunction2(value: (/* fileName */ String, /* password */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "Load", js.Any.fromFunction2(value))
@@ -179,7 +195,7 @@ object CPSignerAsync {
     inline def setOptionsFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
     ): Self = StObject.set(x, "Options", js.Any.fromFunction1(value))
     
     inline def setPropset_Certificate(value: CertificateAsync => js.Promise[Unit]): Self = StObject.set(x, "propset_Certificate", js.Any.fromFunction1(value))
@@ -200,7 +216,7 @@ object CPSignerAsync {
     inline def setSignatureTimeStampTimeFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
     ): Self = StObject.set(x, "SignatureTimeStampTime", js.Any.fromFunction1(value))
     
     inline def setSigningTime(
@@ -211,7 +227,7 @@ object CPSignerAsync {
     inline def setSigningTimeFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
     ): Self = StObject.set(x, "SigningTime", js.Any.fromFunction1(value))
     
     inline def setTSAAddress(
@@ -222,7 +238,7 @@ object CPSignerAsync {
     inline def setTSAAddressFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[Any] => js.Promise[Unpacked[Any]]
     ): Self = StObject.set(x, "TSAAddress", js.Any.fromFunction1(value))
   }
 }

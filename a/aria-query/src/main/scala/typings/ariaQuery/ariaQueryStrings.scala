@@ -102,12 +102,6 @@ object ariaQueryStrings {
   inline def `aria-current`: `aria-current` = "aria-current".asInstanceOf[`aria-current`]
   
   @js.native
-  sealed trait `aria-describedat`
-    extends StObject
-       with ARIAProperty
-  inline def `aria-describedat`: `aria-describedat` = "aria-describedat".asInstanceOf[`aria-describedat`]
-  
-  @js.native
   sealed trait `aria-describedby`
     extends StObject
        with ARIAProperty

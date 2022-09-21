@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HtmlIframeProps
   extends StObject
      with StrictHtmlIframeProps
-     with /* key */ StringDictionary[js.Any]
+     with /* key */ StringDictionary[Any]
 object HtmlIframeProps {
   
   inline def apply(): HtmlIframeProps = {

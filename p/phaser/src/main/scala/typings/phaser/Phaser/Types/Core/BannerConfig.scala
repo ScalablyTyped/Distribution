@@ -34,7 +34,7 @@ object BannerConfig {
     
     inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    inline def setBackgroundVarargs(value: String*): Self = StObject.set(x, "background", js.Array(value :_*))
+    inline def setBackgroundVarargs(value: String*): Self = StObject.set(x, "background", js.Array(value*))
     
     inline def setHidePhaser(value: Boolean): Self = StObject.set(x, "hidePhaser", value.asInstanceOf[js.Any])
     

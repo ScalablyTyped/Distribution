@@ -25,6 +25,9 @@ trait Player extends StObject {
   /** The friend status of the given player, relative to the requester. This is unset if the player is not sharing their friends list with the game. */
   var friendStatus: js.UndefOr[String] = js.undefined
   
+  /** Per-application unique player identifier. */
+  var gamePlayerId: js.UndefOr[String] = js.undefined
+  
   /** Uniquely identifies the type of this resource. Value is always the fixed string `games#player` */
   var kind: js.UndefOr[String] = js.undefined
   
@@ -78,6 +81,10 @@ object Player {
     inline def setFriendStatus(value: String): Self = StObject.set(x, "friendStatus", value.asInstanceOf[js.Any])
     
     inline def setFriendStatusUndefined: Self = StObject.set(x, "friendStatus", js.undefined)
+    
+    inline def setGamePlayerId(value: String): Self = StObject.set(x, "gamePlayerId", value.asInstanceOf[js.Any])
+    
+    inline def setGamePlayerIdUndefined: Self = StObject.set(x, "gamePlayerId", js.undefined)
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,7 @@ object CustomGestureProps {
     
     inline def setConfig(value: js.Array[moves]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    inline def setConfigVarargs(value: moves*): Self = StObject.set(x, "config", js.Array(value :_*))
+    inline def setConfigVarargs(value: moves*): Self = StObject.set(x, "config", js.Array(value*))
     
     inline def setOnGesture(value: () => Unit): Self = StObject.set(x, "onGesture", js.Any.fromFunction0(value))
   }

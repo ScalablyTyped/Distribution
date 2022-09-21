@@ -24,6 +24,6 @@ object ImageInserter {
     
     inline def setInsertableImagesUndefined: Self = StObject.set(x, "InsertableImages", js.undefined)
     
-    inline def setInsertableImagesVarargs(value: InsertableImage*): Self = StObject.set(x, "InsertableImages", js.Array(value :_*))
+    inline def setInsertableImagesVarargs(value: InsertableImage*): Self = StObject.set(x, "InsertableImages", js.Array(value*))
   }
 }

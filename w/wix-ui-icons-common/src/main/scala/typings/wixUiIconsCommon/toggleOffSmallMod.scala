@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -12,13 +12,13 @@ object toggleOffSmallMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/dist/src/system/dist/components/ToggleOffSmall", JSImport.Default)
   @js.native
-  val default: SFC[ToggleOffSmallProps] = js.native
+  val default: FC[ToggleOffSmallProps] = js.native
   
   trait ToggleOffSmallProps
     extends StObject
        with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.undefined
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object ToggleOffSmallProps {
     
@@ -29,14 +29,14 @@ object toggleOffSmallMod extends Shortcut {
     
     extension [Self <: ToggleOffSmallProps](x: Self) {
       
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
-  type _To = SFC[ToggleOffSmallProps]
+  type _To = FC[ToggleOffSmallProps]
   
   /* This means you don't have to write `default`, but can instead just say `toggleOffSmallMod.foo` */
-  override def _to: SFC[ToggleOffSmallProps] = default
+  override def _to: FC[ToggleOffSmallProps] = default
 }

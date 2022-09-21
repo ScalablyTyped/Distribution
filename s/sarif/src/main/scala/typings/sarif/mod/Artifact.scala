@@ -132,7 +132,7 @@ object Artifact {
     
     inline def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
     
-    inline def setRolesVarargs(value: roles*): Self = StObject.set(x, "roles", js.Array(value :_*))
+    inline def setRolesVarargs(value: roles*): Self = StObject.set(x, "roles", js.Array(value*))
     
     inline def setSourceLanguage(value: String): Self = StObject.set(x, "sourceLanguage", value.asInstanceOf[js.Any])
     

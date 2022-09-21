@@ -1,6 +1,5 @@
 package typings.hlsParser.anon
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +12,7 @@ trait Attributes extends StObject {
   
   var duration: js.UndefOr[Double] = js.undefined
   
-  var end: js.UndefOr[Date] = js.undefined
+  var end: js.UndefOr[js.Date] = js.undefined
   
   var endOnNext: js.UndefOr[Boolean] = js.undefined
   
@@ -21,11 +20,11 @@ trait Attributes extends StObject {
   
   var plannedDuration: js.UndefOr[Double] = js.undefined
   
-  var start: Date
+  var start: js.Date
 }
 object Attributes {
   
-  inline def apply(id: String, start: Date): Attributes = {
+  inline def apply(id: String, start: js.Date): Attributes = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attributes]
   }
@@ -44,7 +43,7 @@ object Attributes {
     
     inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    inline def setEnd(value: Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: js.Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
     inline def setEndOnNext(value: Boolean): Self = StObject.set(x, "endOnNext", value.asInstanceOf[js.Any])
     
@@ -58,6 +57,6 @@ object Attributes {
     
     inline def setPlannedDurationUndefined: Self = StObject.set(x, "plannedDuration", js.undefined)
     
-    inline def setStart(value: Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: js.Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

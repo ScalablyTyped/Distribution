@@ -67,7 +67,7 @@ object IPatternOptions {
     
     inline def setPatternTransformUndefined: Self = StObject.set(x, "patternTransform", js.undefined)
     
-    inline def setPatternTransformVarargs(value: Double*): Self = StObject.set(x, "patternTransform", js.Array(value :_*))
+    inline def setPatternTransformVarargs(value: Double*): Self = StObject.set(x, "patternTransform", js.Array(value*))
     
     inline def setRepeat(value: String): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
     

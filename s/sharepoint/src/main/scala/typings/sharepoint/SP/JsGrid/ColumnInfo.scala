@@ -22,7 +22,7 @@ trait ColumnInfo extends StObject {
   
   /** this function should return id of the style for the given cell in the column
     styles and their ids are registered for a JsGridControl via jsGridParams.styleManager.RegisterCellStyle method */
-  def fnGetCellStyleId(record: IRecord, fieldKey: String, dataValue: js.Any): String
+  def fnGetCellStyleId(record: IRecord, fieldKey: String, dataValue: Any): String
   
   /** this function should return name of the display control for the given cell in the column
     the name should be previously associated with the display control via SP.JsGrid.PropertyType.Utils.RegisterDisplayControl method */
@@ -33,7 +33,7 @@ trait ColumnInfo extends StObject {
   def fnGetEditControlName(record: IRecord, fieldKey: String): String
   
   /** set custom tooltip for the given cell in the column. by default, localized value is displayed as the tooltip */
-  def fnGetSingleValueTooltip(record: IRecord, fieldKey: String, dataValue: js.Any, localizedValue: js.Any): String
+  def fnGetSingleValueTooltip(record: IRecord, fieldKey: String, dataValue: Any, localizedValue: Any): String
   
   /** set widget control names for a particular cell
     widgets are basically in-cell buttons with associated popup controls, e.g. date selector or address book button
@@ -44,10 +44,10 @@ trait ColumnInfo extends StObject {
   def fnGetWidgetControlNames(record: IRecord, fieldKey: String): js.Array[String]
   
   /** determine whether the cells in this column should be clickable */
-  def fnShouldLinkSingleValue(record: IRecord, fieldKey: String, dataValue: js.Any, localizedValue: js.Any): Boolean
+  def fnShouldLinkSingleValue(record: IRecord, fieldKey: String, dataValue: Any, localizedValue: Any): Boolean
   
   /** if a particular cell is determined as clickable by fnShouldLinkSingleValue, this function will be called when the cell is clicked */
-  def fnSingleValueClicked(record: IRecord, fieldKey: String, dataValue: js.Any, localizedValue: js.Any): Unit
+  def fnSingleValueClicked(record: IRecord, fieldKey: String, dataValue: Any, localizedValue: Any): Unit
   
   /** Custom image HTML.
     If you define this in addition to the imgSrc attribute, then instead of standard img tag
@@ -91,13 +91,13 @@ object ColumnInfo {
     columnKey: String,
     fieldKeys: js.Array[String],
     fnGetCellEditMode: (IRecord, String) => EditMode,
-    fnGetCellStyleId: (IRecord, String, js.Any) => String,
+    fnGetCellStyleId: (IRecord, String, Any) => String,
     fnGetDisplayControlName: (IRecord, String) => String,
     fnGetEditControlName: (IRecord, String) => String,
-    fnGetSingleValueTooltip: (IRecord, String, js.Any, js.Any) => String,
+    fnGetSingleValueTooltip: (IRecord, String, Any, Any) => String,
     fnGetWidgetControlNames: (IRecord, String) => js.Array[String],
-    fnShouldLinkSingleValue: (IRecord, String, js.Any, js.Any) => Boolean,
-    fnSingleValueClicked: (IRecord, String, js.Any, js.Any) => Unit,
+    fnShouldLinkSingleValue: (IRecord, String, Any, Any) => Boolean,
+    fnSingleValueClicked: (IRecord, String, Any, Any) => Unit,
     imgRawSrc: String,
     imgSrc: String,
     isAutoFilterable: Boolean,
@@ -123,23 +123,23 @@ object ColumnInfo {
     
     inline def setFieldKeys(value: js.Array[String]): Self = StObject.set(x, "fieldKeys", value.asInstanceOf[js.Any])
     
-    inline def setFieldKeysVarargs(value: String*): Self = StObject.set(x, "fieldKeys", js.Array(value :_*))
+    inline def setFieldKeysVarargs(value: String*): Self = StObject.set(x, "fieldKeys", js.Array(value*))
     
     inline def setFnGetCellEditMode(value: (IRecord, String) => EditMode): Self = StObject.set(x, "fnGetCellEditMode", js.Any.fromFunction2(value))
     
-    inline def setFnGetCellStyleId(value: (IRecord, String, js.Any) => String): Self = StObject.set(x, "fnGetCellStyleId", js.Any.fromFunction3(value))
+    inline def setFnGetCellStyleId(value: (IRecord, String, Any) => String): Self = StObject.set(x, "fnGetCellStyleId", js.Any.fromFunction3(value))
     
     inline def setFnGetDisplayControlName(value: (IRecord, String) => String): Self = StObject.set(x, "fnGetDisplayControlName", js.Any.fromFunction2(value))
     
     inline def setFnGetEditControlName(value: (IRecord, String) => String): Self = StObject.set(x, "fnGetEditControlName", js.Any.fromFunction2(value))
     
-    inline def setFnGetSingleValueTooltip(value: (IRecord, String, js.Any, js.Any) => String): Self = StObject.set(x, "fnGetSingleValueTooltip", js.Any.fromFunction4(value))
+    inline def setFnGetSingleValueTooltip(value: (IRecord, String, Any, Any) => String): Self = StObject.set(x, "fnGetSingleValueTooltip", js.Any.fromFunction4(value))
     
     inline def setFnGetWidgetControlNames(value: (IRecord, String) => js.Array[String]): Self = StObject.set(x, "fnGetWidgetControlNames", js.Any.fromFunction2(value))
     
-    inline def setFnShouldLinkSingleValue(value: (IRecord, String, js.Any, js.Any) => Boolean): Self = StObject.set(x, "fnShouldLinkSingleValue", js.Any.fromFunction4(value))
+    inline def setFnShouldLinkSingleValue(value: (IRecord, String, Any, Any) => Boolean): Self = StObject.set(x, "fnShouldLinkSingleValue", js.Any.fromFunction4(value))
     
-    inline def setFnSingleValueClicked(value: (IRecord, String, js.Any, js.Any) => Unit): Self = StObject.set(x, "fnSingleValueClicked", js.Any.fromFunction4(value))
+    inline def setFnSingleValueClicked(value: (IRecord, String, Any, Any) => Unit): Self = StObject.set(x, "fnSingleValueClicked", js.Any.fromFunction4(value))
     
     inline def setImgRawSrc(value: String): Self = StObject.set(x, "imgRawSrc", value.asInstanceOf[js.Any])
     

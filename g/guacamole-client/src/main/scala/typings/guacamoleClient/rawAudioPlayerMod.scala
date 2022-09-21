@@ -11,7 +11,7 @@ object rawAudioPlayerMod {
   
   @JSImport("guacamole-client/lib/RawAudioPlayer", "RawAudioPlayer")
   @js.native
-  class RawAudioPlayer protected () extends AudioPlayer {
+  open class RawAudioPlayer protected () extends AudioPlayer {
     /**
       * @param stream The Guacamole.InputStream to read audio data from.
       *

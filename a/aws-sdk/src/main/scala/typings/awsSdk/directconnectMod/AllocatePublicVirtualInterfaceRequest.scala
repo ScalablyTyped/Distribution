@@ -17,7 +17,7 @@ trait AllocatePublicVirtualInterfaceRequest extends StObject {
   var newPublicVirtualInterfaceAllocation: NewPublicVirtualInterfaceAllocation
   
   /**
-    * The ID of the AWS account that owns the public virtual interface.
+    * The ID of the Amazon Web Services account that owns the public virtual interface.
     */
   var ownerAccount: OwnerAccount
 }

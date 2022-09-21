@@ -10,17 +10,17 @@ trait KnockoutMemoization extends StObject {
   
   def parseMemoText(memoText: String): String
   
-  def unmemoize(memoId: String, callbackParams: js.Array[js.Any]): Boolean
+  def unmemoize(memoId: String, callbackParams: js.Array[Any]): Boolean
   
-  def unmemoizeDomNodeAndDescendants(domNode: js.Any, extraCallbackParamsArray: js.Array[js.Any]): Boolean
+  def unmemoizeDomNodeAndDescendants(domNode: Any, extraCallbackParamsArray: js.Array[Any]): Boolean
 }
 object KnockoutMemoization {
   
   inline def apply(
     memoize: js.Function0[String] => String,
     parseMemoText: String => String,
-    unmemoize: (String, js.Array[js.Any]) => Boolean,
-    unmemoizeDomNodeAndDescendants: (js.Any, js.Array[js.Any]) => Boolean
+    unmemoize: (String, js.Array[Any]) => Boolean,
+    unmemoizeDomNodeAndDescendants: (Any, js.Array[Any]) => Boolean
   ): KnockoutMemoization = {
     val __obj = js.Dynamic.literal(memoize = js.Any.fromFunction1(memoize), parseMemoText = js.Any.fromFunction1(parseMemoText), unmemoize = js.Any.fromFunction2(unmemoize), unmemoizeDomNodeAndDescendants = js.Any.fromFunction2(unmemoizeDomNodeAndDescendants))
     __obj.asInstanceOf[KnockoutMemoization]
@@ -32,8 +32,8 @@ object KnockoutMemoization {
     
     inline def setParseMemoText(value: String => String): Self = StObject.set(x, "parseMemoText", js.Any.fromFunction1(value))
     
-    inline def setUnmemoize(value: (String, js.Array[js.Any]) => Boolean): Self = StObject.set(x, "unmemoize", js.Any.fromFunction2(value))
+    inline def setUnmemoize(value: (String, js.Array[Any]) => Boolean): Self = StObject.set(x, "unmemoize", js.Any.fromFunction2(value))
     
-    inline def setUnmemoizeDomNodeAndDescendants(value: (js.Any, js.Array[js.Any]) => Boolean): Self = StObject.set(x, "unmemoizeDomNodeAndDescendants", js.Any.fromFunction2(value))
+    inline def setUnmemoizeDomNodeAndDescendants(value: (Any, js.Array[Any]) => Boolean): Self = StObject.set(x, "unmemoizeDomNodeAndDescendants", js.Any.fromFunction2(value))
   }
 }

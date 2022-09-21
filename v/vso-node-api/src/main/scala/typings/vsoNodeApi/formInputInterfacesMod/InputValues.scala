@@ -72,6 +72,6 @@ object InputValues {
     
     inline def setPossibleValues(value: js.Array[InputValue]): Self = StObject.set(x, "possibleValues", value.asInstanceOf[js.Any])
     
-    inline def setPossibleValuesVarargs(value: InputValue*): Self = StObject.set(x, "possibleValues", js.Array(value :_*))
+    inline def setPossibleValuesVarargs(value: InputValue*): Self = StObject.set(x, "possibleValues", js.Array(value*))
   }
 }

@@ -26,15 +26,15 @@ object Geometry3D {
     
     inline def setVertexColors(value: js.Array[Double]): Self = StObject.set(x, "vertexColors", value.asInstanceOf[js.Any])
     
-    inline def setVertexColorsVarargs(value: Double*): Self = StObject.set(x, "vertexColors", js.Array(value :_*))
+    inline def setVertexColorsVarargs(value: Double*): Self = StObject.set(x, "vertexColors", js.Array(value*))
     
     inline def setVertexUVs(value: js.Array[Double]): Self = StObject.set(x, "vertexUVs", value.asInstanceOf[js.Any])
     
-    inline def setVertexUVsVarargs(value: Double*): Self = StObject.set(x, "vertexUVs", js.Array(value :_*))
+    inline def setVertexUVsVarargs(value: Double*): Self = StObject.set(x, "vertexUVs", js.Array(value*))
     
     inline def setVertices(value: js.Array[Double]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
     
-    inline def setVerticesVarargs(value: Double*): Self = StObject.set(x, "vertices", js.Array(value :_*))
+    inline def setVerticesVarargs(value: Double*): Self = StObject.set(x, "vertices", js.Array(value*))
   }
   
   trait Line
@@ -65,11 +65,11 @@ object Geometry3D {
       
       inline def setSegments(value: js.Array[Double]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
       
-      inline def setSegmentsVarargs(value: Double*): Self = StObject.set(x, "segments", js.Array(value :_*))
+      inline def setSegmentsVarargs(value: Double*): Self = StObject.set(x, "segments", js.Array(value*))
       
       inline def setTextureIndices(value: js.Array[Double]): Self = StObject.set(x, "textureIndices", value.asInstanceOf[js.Any])
       
-      inline def setTextureIndicesVarargs(value: Double*): Self = StObject.set(x, "textureIndices", js.Array(value :_*))
+      inline def setTextureIndicesVarargs(value: Double*): Self = StObject.set(x, "textureIndices", js.Array(value*))
       
       inline def setType(value: line): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -103,11 +103,11 @@ object Geometry3D {
       
       inline def setFaces(value: js.Array[Double]): Self = StObject.set(x, "faces", value.asInstanceOf[js.Any])
       
-      inline def setFacesVarargs(value: Double*): Self = StObject.set(x, "faces", js.Array(value :_*))
+      inline def setFacesVarargs(value: Double*): Self = StObject.set(x, "faces", js.Array(value*))
       
       inline def setTextureIndices(value: js.Array[Double]): Self = StObject.set(x, "textureIndices", value.asInstanceOf[js.Any])
       
-      inline def setTextureIndicesVarargs(value: Double*): Self = StObject.set(x, "textureIndices", js.Array(value :_*))
+      inline def setTextureIndicesVarargs(value: Double*): Self = StObject.set(x, "textureIndices", js.Array(value*))
       
       inline def setType(value: mesh): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -144,15 +144,15 @@ object Geometry3D {
       
       inline def setPointAreas(value: js.Array[Double]): Self = StObject.set(x, "pointAreas", value.asInstanceOf[js.Any])
       
-      inline def setPointAreasVarargs(value: Double*): Self = StObject.set(x, "pointAreas", js.Array(value :_*))
+      inline def setPointAreasVarargs(value: Double*): Self = StObject.set(x, "pointAreas", js.Array(value*))
       
       inline def setPointSizes(value: js.Array[Double]): Self = StObject.set(x, "pointSizes", value.asInstanceOf[js.Any])
       
-      inline def setPointSizesVarargs(value: Double*): Self = StObject.set(x, "pointSizes", js.Array(value :_*))
+      inline def setPointSizesVarargs(value: Double*): Self = StObject.set(x, "pointSizes", js.Array(value*))
       
       inline def setTextureIndices(value: js.Array[Double]): Self = StObject.set(x, "textureIndices", value.asInstanceOf[js.Any])
       
-      inline def setTextureIndicesVarargs(value: Double*): Self = StObject.set(x, "textureIndices", js.Array(value :_*))
+      inline def setTextureIndicesVarargs(value: Double*): Self = StObject.set(x, "textureIndices", js.Array(value*))
       
       inline def setType(value: points): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

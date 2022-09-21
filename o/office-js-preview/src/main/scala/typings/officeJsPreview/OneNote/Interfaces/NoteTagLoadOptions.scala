@@ -5,36 +5,39 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * A container for the NoteTag in a paragraph.
   *
+  * @remarks
   * [Api set: OneNoteApi 1.1]
   */
 trait NoteTagLoadOptions extends StObject {
   
+  /**
+    Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+    */
   @JSName("$all")
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets the Id of the NoteTag object. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var id: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets the status of the NoteTag object. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var status: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Gets the type of the NoteTag object. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var `type`: js.UndefOr[Boolean] = js.undefined

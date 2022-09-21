@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_bigquery
 
-Typings are for version 2.0.20201103
+Typings are for version 2.0.20220806
 
 ## Library description:
 TypeScript typings for BigQuery API v2
@@ -10,10 +10,10 @@ TypeScript typings for BigQuery API v2
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.bigquery |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 1 |
-| # downloads        | 3767 |
-| # stars            | 0 |
+| # releases         | 76 |
+| # dependents       | 0.0 |
+| # downloads        | 6092.666666666667 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

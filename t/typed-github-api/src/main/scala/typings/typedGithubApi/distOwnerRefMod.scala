@@ -11,7 +11,7 @@ object distOwnerRefMod {
   
   @JSImport("typed-github-api/dist/owner-ref", "OwnerRefClass")
   @js.native
-  class OwnerRefClass protected ()
+  open class OwnerRefClass protected ()
     extends GitHubRef
        with OwnerRef {
     def this(login: String, options: OptionsOrRef) = this()

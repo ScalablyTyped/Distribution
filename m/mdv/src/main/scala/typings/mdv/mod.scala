@@ -158,29 +158,29 @@ object mod {
       
       inline def setAnchorsWithEmptyText(value: js.Array[Anchor]): Self = StObject.set(x, "anchorsWithEmptyText", value.asInstanceOf[js.Any])
       
-      inline def setAnchorsWithEmptyTextVarargs(value: Anchor*): Self = StObject.set(x, "anchorsWithEmptyText", js.Array(value :_*))
+      inline def setAnchorsWithEmptyTextVarargs(value: Anchor*): Self = StObject.set(x, "anchorsWithEmptyText", js.Array(value*))
       
       inline def setAnchorsWithHash(value: js.Array[Anchor]): Self = StObject.set(x, "anchorsWithHash", value.asInstanceOf[js.Any])
       
-      inline def setAnchorsWithHashVarargs(value: Anchor*): Self = StObject.set(x, "anchorsWithHash", js.Array(value :_*))
+      inline def setAnchorsWithHashVarargs(value: Anchor*): Self = StObject.set(x, "anchorsWithHash", js.Array(value*))
       
       inline def setDuplicatedAnchors(value: js.Array[Anchor]): Self = StObject.set(x, "duplicatedAnchors", value.asInstanceOf[js.Any])
       
-      inline def setDuplicatedAnchorsVarargs(value: Anchor*): Self = StObject.set(x, "duplicatedAnchors", js.Array(value :_*))
+      inline def setDuplicatedAnchorsVarargs(value: Anchor*): Self = StObject.set(x, "duplicatedAnchors", js.Array(value*))
       
       inline def setImagesWithMissingAlt(value: Double): Self = StObject.set(x, "imagesWithMissingAlt", value.asInstanceOf[js.Any])
       
       inline def setLocalRefNoHash(value: js.Array[Anchor]): Self = StObject.set(x, "localRefNoHash", value.asInstanceOf[js.Any])
       
-      inline def setLocalRefNoHashVarargs(value: Anchor*): Self = StObject.set(x, "localRefNoHash", js.Array(value :_*))
+      inline def setLocalRefNoHashVarargs(value: Anchor*): Self = StObject.set(x, "localRefNoHash", js.Array(value*))
       
       inline def setMissingAnchors(value: js.Array[Anchor]): Self = StObject.set(x, "missingAnchors", value.asInstanceOf[js.Any])
       
-      inline def setMissingAnchorsVarargs(value: Anchor*): Self = StObject.set(x, "missingAnchors", js.Array(value :_*))
+      inline def setMissingAnchorsVarargs(value: Anchor*): Self = StObject.set(x, "missingAnchors", js.Array(value*))
       
       inline def setNonParsingExamples(value: js.Array[NonParsedEntry]): Self = StObject.set(x, "nonParsingExamples", value.asInstanceOf[js.Any])
       
-      inline def setNonParsingExamplesVarargs(value: NonParsedEntry*): Self = StObject.set(x, "nonParsingExamples", js.Array(value :_*))
+      inline def setNonParsingExamplesVarargs(value: NonParsedEntry*): Self = StObject.set(x, "nonParsingExamples", js.Array(value*))
       
       inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
@@ -203,7 +203,7 @@ object mod {
       
       inline def setAnchorsWithNoLinks(value: js.Array[Anchor]): Self = StObject.set(x, "anchorsWithNoLinks", value.asInstanceOf[js.Any])
       
-      inline def setAnchorsWithNoLinksVarargs(value: Anchor*): Self = StObject.set(x, "anchorsWithNoLinks", js.Array(value :_*))
+      inline def setAnchorsWithNoLinksVarargs(value: Anchor*): Self = StObject.set(x, "anchorsWithNoLinks", js.Array(value*))
       
       inline def setCodeBlocksWithNoLanguage(value: Double): Self = StObject.set(x, "codeBlocksWithNoLanguage", value.asInstanceOf[js.Any])
     }

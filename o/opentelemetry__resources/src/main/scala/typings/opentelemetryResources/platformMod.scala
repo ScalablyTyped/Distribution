@@ -1,7 +1,8 @@
 package typings.opentelemetryResources
 
 import typings.opentelemetryResources.configMod.ResourceDetectionConfig
-import typings.opentelemetryResources.envDetectorMod.EnvDetector_
+import typings.opentelemetryResources.nodeHostDetectorMod.HostDetector_
+import typings.opentelemetryResources.nodeOsdetectorMod.OSDetector_
 import typings.opentelemetryResources.resourceMod.Resource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,10 +14,16 @@ object platformMod {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def defaultServiceName(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultServiceName")().asInstanceOf[String]
+  
   inline def detectResources(): js.Promise[Resource] = ^.asInstanceOf[js.Dynamic].applyDynamic("detectResources")().asInstanceOf[js.Promise[Resource]]
   inline def detectResources(config: ResourceDetectionConfig): js.Promise[Resource] = ^.asInstanceOf[js.Dynamic].applyDynamic("detectResources")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Resource]]
   
-  @JSImport("@opentelemetry/resources/build/src/platform", "envDetector")
+  @JSImport("@opentelemetry/resources/build/src/platform", "hostDetector")
   @js.native
-  val envDetector: EnvDetector_ = js.native
+  val hostDetector: HostDetector_ = js.native
+  
+  @JSImport("@opentelemetry/resources/build/src/platform", "osDetector")
+  @js.native
+  val osDetector: OSDetector_ = js.native
 }

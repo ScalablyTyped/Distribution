@@ -28,13 +28,13 @@ object IntentFilter {
     
     inline def setActionNamesUndefined: Self = StObject.set(x, "actionNames", js.undefined)
     
-    inline def setActionNamesVarargs(value: String*): Self = StObject.set(x, "actionNames", js.Array(value :_*))
+    inline def setActionNamesVarargs(value: String*): Self = StObject.set(x, "actionNames", js.Array(value*))
     
     inline def setCategoryNames(value: js.Array[String]): Self = StObject.set(x, "categoryNames", value.asInstanceOf[js.Any])
     
     inline def setCategoryNamesUndefined: Self = StObject.set(x, "categoryNames", js.undefined)
     
-    inline def setCategoryNamesVarargs(value: String*): Self = StObject.set(x, "categoryNames", js.Array(value :_*))
+    inline def setCategoryNamesVarargs(value: String*): Self = StObject.set(x, "categoryNames", js.Array(value*))
     
     inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     

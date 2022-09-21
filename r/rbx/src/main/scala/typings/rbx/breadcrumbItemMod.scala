@@ -53,7 +53,7 @@ object breadcrumbItemMod {
   
   @JSImport("rbx/components/breadcrumb/breadcrumb-item", "BreadcrumbItem")
   @js.native
-  val BreadcrumbItem: ForwardRefAsExoticComponent[BreadcrumbItemProps, ElementType[js.Any]] = js.native
+  val BreadcrumbItem: ForwardRefAsExoticComponent[BreadcrumbItemProps, ElementType[Any]] = js.native
   
   trait BreadcrumbItemModifierProps extends StObject {
     

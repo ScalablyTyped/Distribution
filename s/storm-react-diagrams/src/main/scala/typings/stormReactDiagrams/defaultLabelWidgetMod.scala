@@ -11,9 +11,8 @@ object defaultLabelWidgetMod {
   
   @JSImport("storm-react-diagrams/dist/src/defaults/widgets/DefaultLabelWidget", "DefaultLabelWidget")
   @js.native
-  class DefaultLabelWidget protected ()
-    extends BaseWidget[DefaultLabelWidgetProps, js.Any] {
-    def this(props: js.Any) = this()
+  open class DefaultLabelWidget protected () extends BaseWidget[DefaultLabelWidgetProps, Any] {
+    def this(props: Any) = this()
   }
   
   trait DefaultLabelWidgetProps

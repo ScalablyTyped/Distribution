@@ -33,6 +33,6 @@ object Warning {
     
     inline def setPagesUndefined: Self = StObject.set(x, "Pages", js.undefined)
     
-    inline def setPagesVarargs(value: UInteger*): Self = StObject.set(x, "Pages", js.Array(value :_*))
+    inline def setPagesVarargs(value: UInteger*): Self = StObject.set(x, "Pages", js.Array(value*))
   }
 }

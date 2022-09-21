@@ -14,11 +14,11 @@ object mersenneTwister19937Mod {
     * MersenneTwister19937 should not be instantiated directly.
     * Instead, use the static methods `seed`, `seedWithArray`, or `autoSeed`.
     */
-  /* private */ class MersenneTwister19937 ()
+  /* private */ open class MersenneTwister19937 ()
     extends StObject
        with Engine {
     
-    /* private */ val data: js.Any = js.native
+    /* private */ val data: Any = js.native
     
     /**
       * Discards one or more items from the engine
@@ -34,16 +34,16 @@ object mersenneTwister19937Mod {
       */
     def getUseCount(): Double = js.native
     
-    /* private */ var index: js.Any = js.native
+    /* private */ var index: Any = js.native
     
     /* CompleteClass */
     override def next(): Double = js.native
     
-    /* private */ var seed: js.Any = js.native
+    /* private */ var seed: Any = js.native
     
-    /* private */ var seedWithArray: js.Any = js.native
+    /* private */ var seedWithArray: Any = js.native
     
-    /* private */ var uses: js.Any = js.native
+    /* private */ var uses: Any = js.native
   }
   /* static members */
   object MersenneTwister19937 {

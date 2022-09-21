@@ -12,10 +12,10 @@ trait ActiveXObject extends StObject {
   
   /** Unregister all handlers, all handlers on a specific object, all handlers for a specific object's events, or a specific handler */
   def off(): Unit = js.native
-  def off(obj: js.Any): Unit = js.native
-  def off(obj: js.Any, eventName: String): Unit = js.native
-  def off(obj: js.Any, eventName: String, handler: js.Function): Unit = js.native
-  def off(obj: js.Any, eventName: Unit, handler: js.Function): Unit = js.native
+  def off(obj: Any): Unit = js.native
+  def off(obj: Any, eventName: String): Unit = js.native
+  def off(obj: Any, eventName: String, handler: js.Function): Unit = js.native
+  def off(obj: Any, eventName: Unit, handler: js.Function): Unit = js.native
   def off(obj: Unit, eventName: String): Unit = js.native
   def off(obj: Unit, eventName: String, handler: js.Function): Unit = js.native
   def off(obj: Unit, eventName: Unit, handler: js.Function): Unit = js.native
@@ -32,9 +32,9 @@ trait ActiveXObject extends StObject {
     obj: T,
     eventName: String,
     parameterNames: js.Array[K],
-    handler: js.ThisFunction1[/* this */ T, /* parameter */ Record[K, js.Any], Unit]
+    handler: js.ThisFunction1[/* this */ T, /* parameter */ Record[K, Any], Unit]
   ): Unit = js.native
   
   /** Call a parameterized setter on a given object with the specified parameters and the new value */
-  def set(obj: js.Any, propertyName: String, parameters: js.Array[js.Any], newValue: js.Any): Unit = js.native
+  def set(obj: Any, propertyName: String, parameters: js.Array[Any], newValue: Any): Unit = js.native
 }

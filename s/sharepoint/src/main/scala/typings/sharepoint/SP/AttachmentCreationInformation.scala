@@ -19,9 +19,9 @@ trait AttachmentCreationInformation
 object AttachmentCreationInformation {
   
   inline def apply(
-    customFromJson: js.Any => Boolean,
+    customFromJson: Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
-    fromJson: js.Any => Unit,
+    fromJson: Any => Unit,
     get_contentStream: () => Base64EncodedByteArray,
     get_fileName: () => String,
     get_typeId: () => String,

@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.DiagramNodeChildren")
 @js.native
-/* private */ class DiagramNodeChildren ()
+/* private */ open class DiagramNodeChildren ()
   extends StObject
      with typings.activexWord.Word.DiagramNodeChildren

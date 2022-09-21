@@ -12,7 +12,7 @@ trait Attribute extends StObject {
     * attribute name is a dynamic expression instead of a string literal, this will be the unknown
     * type.
     */
-  var attribute: js.UndefOr[String | js.Any] = js.undefined
+  var attribute: js.UndefOr[String | Any] = js.undefined
   
   /**
     * If `@Host` is used, this key is set to true.
@@ -43,7 +43,7 @@ object Attribute {
   
   extension [Self <: Attribute](x: Self) {
     
-    inline def setAttribute(value: String | js.Any): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+    inline def setAttribute(value: String | Any): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     
     inline def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
     

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "EmitState")
 @js.native
-class EmitState ()
+open class EmitState ()
   extends StObject
      with typings.typescriptServices.TypeScript.EmitState {
   

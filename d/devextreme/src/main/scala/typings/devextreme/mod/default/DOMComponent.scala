@@ -1,8 +1,8 @@
 package typings.devextreme.mod.default
 
-import typings.devextreme.anon.Device
-import typings.devextreme.mod.DevExpress.DOMComponentOptions
-import typings.devextreme.mod.global.JQuery
+import typings.devextreme.mod.DevExpress.DOMComponent.Properties
+import typings.devextreme.mod.DevExpress.core.DefaultOptionsRule
+import typings.devextreme.mod.DevExpress.core.UserDefinedElement
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,13 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("devextreme", "default.DOMComponent")
 @js.native
-class DOMComponent protected ()
+open class DOMComponent[TProperties] protected ()
   extends StObject
-     with typings.devextreme.mod.DevExpress.DOMComponent {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(element: JQuery, options: DOMComponentOptions[typings.devextreme.mod.DevExpress.DOMComponent]) = this()
-  def this(element: Element, options: DOMComponentOptions[typings.devextreme.mod.DevExpress.DOMComponent]) = this()
+     with typings.devextreme.mod.DevExpress.DOMComponent[TProperties] {
+  def this(element: UserDefinedElement[Element]) = this()
+  def this(element: UserDefinedElement[Element], options: TProperties) = this()
 }
 /* static members */
 object DOMComponent {
@@ -26,13 +24,12 @@ object DOMComponent {
   val ^ : js.Any = js.native
   
   /**
-    * [descr:DOMComponent.defaultOptions(rule)]
+    * Specifies the device-dependent default configuration properties for this component.
     */
-  inline def defaultOptions(rule: Device): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultOptions")(rule.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def defaultOptions[TProperties](rule: DefaultOptionsRule[TProperties]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultOptions")(rule.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def getInstance(element: JQuery): typings.devextreme.mod.DevExpress.DOMComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[typings.devextreme.mod.DevExpress.DOMComponent]
   /**
-    * [descr:DOMComponent.getInstance(element)]
+    * Gets the instance of a UI component found using its DOM node.
     */
-  inline def getInstance(element: Element): typings.devextreme.mod.DevExpress.DOMComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[typings.devextreme.mod.DevExpress.DOMComponent]
+  inline def getInstance(element: UserDefinedElement[Element]): typings.devextreme.mod.DevExpress.DOMComponent[Properties] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[typings.devextreme.mod.DevExpress.DOMComponent[Properties]]
 }

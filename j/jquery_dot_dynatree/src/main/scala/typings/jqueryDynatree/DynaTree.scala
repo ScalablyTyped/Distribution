@@ -21,7 +21,7 @@ trait DynaTree extends StObject {
   
   def getNodeByKey(key: String): DynaTreeNode = js.native
   
-  def getPersistData(): js.Any = js.native
+  def getPersistData(): Any = js.native
   
   def getRoot(): DynaTreeNode = js.native
   
@@ -47,10 +47,10 @@ trait DynaTree extends StObject {
   
   def selectKey(key: String, flag: String): DynaTreeNode = js.native
   
-  def serializeArray(stopOnParents: Boolean): js.Array[js.Any] = js.native
+  def serializeArray(stopOnParents: Boolean): js.Array[Any] = js.native
   
-  def toDict(): js.Any = js.native
-  def toDict(includeRoot: Boolean): js.Any = js.native
+  def toDict(): Any = js.native
+  def toDict(includeRoot: Boolean): Any = js.native
   
   def visit(fn: js.Function1[/* node */ DynaTreeNode, Boolean]): Unit = js.native
   def visit(fn: js.Function1[/* node */ DynaTreeNode, Boolean], includeRoot: Boolean): Unit = js.native

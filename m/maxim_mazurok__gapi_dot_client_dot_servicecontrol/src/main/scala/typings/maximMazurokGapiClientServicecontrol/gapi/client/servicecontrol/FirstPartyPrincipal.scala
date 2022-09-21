@@ -14,7 +14,7 @@ trait FirstPartyPrincipal extends StObject {
   var serviceMetadata: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.FirstPartyPrincipal & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.FirstPartyPrincipal & TopLevel[Any]
   ] = js.undefined
 }
 object FirstPartyPrincipal {
@@ -33,7 +33,7 @@ object FirstPartyPrincipal {
     inline def setServiceMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.FirstPartyPrincipal & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.FirstPartyPrincipal & TopLevel[Any]
     ): Self = StObject.set(x, "serviceMetadata", value.asInstanceOf[js.Any])
     
     inline def setServiceMetadataUndefined: Self = StObject.set(x, "serviceMetadata", js.undefined)

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Field")
 @js.native
-class Field ()
+open class Field ()
   extends StObject
      with typings.devexpressWeb.Field {
   

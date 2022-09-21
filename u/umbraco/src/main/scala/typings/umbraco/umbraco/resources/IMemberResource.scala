@@ -57,9 +57,9 @@ trait IMemberResource extends StObject {
     */
   def getByKey(key: String): IPromise[IResourcePromise]
   
-  def getListNode(listName: String): js.Any
+  def getListNode(listName: String): Any
   
-  def getPagedResults(memberTypeAlias: String, options: js.Any): js.Any
+  def getPagedResults(memberTypeAlias: String, options: Any): Any
   
   /**
     * @ngdoc method
@@ -121,17 +121,17 @@ trait IMemberResource extends StObject {
     * @returns {Promise} resourcePromise object containing the saved media item.
     *
     */
-  def save(member: js.Object, isNew: Boolean, files: js.Array[js.Any]): IPromise[IResourcePromise]
+  def save(member: js.Object, isNew: Boolean, files: js.Array[Any]): IPromise[IResourcePromise]
 }
 object IMemberResource {
   
   inline def apply(
     deleteByKey: String => IPromise[IResourcePromise],
     getByKey: String => IPromise[IResourcePromise],
-    getListNode: String => js.Any,
-    getPagedResults: (String, js.Any) => js.Any,
+    getListNode: String => Any,
+    getPagedResults: (String, Any) => Any,
     getScaffold: String => IPromise[IResourcePromise],
-    save: (js.Object, Boolean, js.Array[js.Any]) => IPromise[IResourcePromise]
+    save: (js.Object, Boolean, js.Array[Any]) => IPromise[IResourcePromise]
   ): IMemberResource = {
     val __obj = js.Dynamic.literal(deleteByKey = js.Any.fromFunction1(deleteByKey), getByKey = js.Any.fromFunction1(getByKey), getListNode = js.Any.fromFunction1(getListNode), getPagedResults = js.Any.fromFunction2(getPagedResults), getScaffold = js.Any.fromFunction1(getScaffold), save = js.Any.fromFunction3(save))
     __obj.asInstanceOf[IMemberResource]
@@ -143,12 +143,12 @@ object IMemberResource {
     
     inline def setGetByKey(value: String => IPromise[IResourcePromise]): Self = StObject.set(x, "getByKey", js.Any.fromFunction1(value))
     
-    inline def setGetListNode(value: String => js.Any): Self = StObject.set(x, "getListNode", js.Any.fromFunction1(value))
+    inline def setGetListNode(value: String => Any): Self = StObject.set(x, "getListNode", js.Any.fromFunction1(value))
     
-    inline def setGetPagedResults(value: (String, js.Any) => js.Any): Self = StObject.set(x, "getPagedResults", js.Any.fromFunction2(value))
+    inline def setGetPagedResults(value: (String, Any) => Any): Self = StObject.set(x, "getPagedResults", js.Any.fromFunction2(value))
     
     inline def setGetScaffold(value: String => IPromise[IResourcePromise]): Self = StObject.set(x, "getScaffold", js.Any.fromFunction1(value))
     
-    inline def setSave(value: (js.Object, Boolean, js.Array[js.Any]) => IPromise[IResourcePromise]): Self = StObject.set(x, "save", js.Any.fromFunction3(value))
+    inline def setSave(value: (js.Object, Boolean, js.Array[Any]) => IPromise[IResourcePromise]): Self = StObject.set(x, "save", js.Any.fromFunction3(value))
   }
 }

@@ -1,5 +1,6 @@
 package typings.tinyAsyncPool
 
+import typings.std.AsyncIterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +25,7 @@ object mod {
     poolLimit: Double,
     array: js.Array[IN],
     iteratorFn: js.Function1[/* generator */ IN, js.Promise[OUT]]
-  ): js.Promise[js.Array[OUT]] = (^.asInstanceOf[js.Dynamic].apply(poolLimit.asInstanceOf[js.Any], array.asInstanceOf[js.Any], iteratorFn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[OUT]]]
+  ): AsyncIterableIterator[OUT] = (^.asInstanceOf[js.Dynamic].apply(poolLimit.asInstanceOf[js.Any], array.asInstanceOf[js.Any], iteratorFn.asInstanceOf[js.Any])).asInstanceOf[AsyncIterableIterator[OUT]]
   
   @JSImport("tiny-async-pool", JSImport.Namespace)
   @js.native

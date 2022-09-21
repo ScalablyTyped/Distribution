@@ -1,0 +1,53 @@
+package typings.googleapis.storagetransferV1Mod.storagetransferV1
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait SchemaNotificationConfig extends StObject {
+  
+  /**
+    * Event types for which a notification is desired. If empty, send notifications for all event types.
+    */
+  var eventTypes: js.UndefOr[js.Array[String] | Null] = js.undefined
+  
+  /**
+    * Required. The desired format of the notification message payloads.
+    */
+  var payloadFormat: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * Required. The `Topic.name` of the Pub/Sub topic to which to publish notifications. Must be of the format: `projects/{project\}/topics/{topic\}`. Not matching this format results in an INVALID_ARGUMENT error.
+    */
+  var pubsubTopic: js.UndefOr[String | Null] = js.undefined
+}
+object SchemaNotificationConfig {
+  
+  inline def apply(): SchemaNotificationConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[SchemaNotificationConfig]
+  }
+  
+  extension [Self <: SchemaNotificationConfig](x: Self) {
+    
+    inline def setEventTypes(value: js.Array[String]): Self = StObject.set(x, "eventTypes", value.asInstanceOf[js.Any])
+    
+    inline def setEventTypesNull: Self = StObject.set(x, "eventTypes", null)
+    
+    inline def setEventTypesUndefined: Self = StObject.set(x, "eventTypes", js.undefined)
+    
+    inline def setEventTypesVarargs(value: String*): Self = StObject.set(x, "eventTypes", js.Array(value*))
+    
+    inline def setPayloadFormat(value: String): Self = StObject.set(x, "payloadFormat", value.asInstanceOf[js.Any])
+    
+    inline def setPayloadFormatNull: Self = StObject.set(x, "payloadFormat", null)
+    
+    inline def setPayloadFormatUndefined: Self = StObject.set(x, "payloadFormat", js.undefined)
+    
+    inline def setPubsubTopic(value: String): Self = StObject.set(x, "pubsubTopic", value.asInstanceOf[js.Any])
+    
+    inline def setPubsubTopicNull: Self = StObject.set(x, "pubsubTopic", null)
+    
+    inline def setPubsubTopicUndefined: Self = StObject.set(x, "pubsubTopic", js.undefined)
+  }
+}

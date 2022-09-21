@@ -14,11 +14,11 @@ trait OriginCustomHeader extends StObject {
   /**
     * The value for the header that you specified in the HeaderName field.
     */
-  var HeaderValue: String
+  var HeaderValue: sensitiveStringType
 }
 object OriginCustomHeader {
   
-  inline def apply(HeaderName: String, HeaderValue: String): OriginCustomHeader = {
+  inline def apply(HeaderName: String, HeaderValue: sensitiveStringType): OriginCustomHeader = {
     val __obj = js.Dynamic.literal(HeaderName = HeaderName.asInstanceOf[js.Any], HeaderValue = HeaderValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[OriginCustomHeader]
   }
@@ -27,6 +27,6 @@ object OriginCustomHeader {
     
     inline def setHeaderName(value: String): Self = StObject.set(x, "HeaderName", value.asInstanceOf[js.Any])
     
-    inline def setHeaderValue(value: String): Self = StObject.set(x, "HeaderValue", value.asInstanceOf[js.Any])
+    inline def setHeaderValue(value: sensitiveStringType): Self = StObject.set(x, "HeaderValue", value.asInstanceOf[js.Any])
   }
 }

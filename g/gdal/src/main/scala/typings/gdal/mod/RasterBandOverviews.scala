@@ -23,7 +23,7 @@ object RasterBandOverviews {
     forEach: js.Function2[/* overviewBand */ RasterBand, /* i */ Double, Unit] => Unit,
     get: Double => RasterBand,
     getBySampleCount: Double => RasterBand,
-    map: js.Function2[/* overviewBand */ RasterBand, /* i */ Double, js.Any] => js.Array[js.Any]
+    map: js.Function2[/* overviewBand */ RasterBand, /* i */ Double, Any] => js.Array[Any]
   ): RasterBandOverviews = {
     val __obj = js.Dynamic.literal(count = js.Any.fromFunction0(count), forEach = js.Any.fromFunction1(forEach), get = js.Any.fromFunction1(get), getBySampleCount = js.Any.fromFunction1(getBySampleCount), map = js.Any.fromFunction1(map))
     __obj.asInstanceOf[RasterBandOverviews]
@@ -39,6 +39,6 @@ object RasterBandOverviews {
     
     inline def setGetBySampleCount(value: Double => RasterBand): Self = StObject.set(x, "getBySampleCount", js.Any.fromFunction1(value))
     
-    inline def setMap(value: js.Function2[/* overviewBand */ RasterBand, /* i */ Double, js.Any] => js.Array[js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+    inline def setMap(value: js.Function2[/* overviewBand */ RasterBand, /* i */ Double, Any] => js.Array[Any]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
   }
 }

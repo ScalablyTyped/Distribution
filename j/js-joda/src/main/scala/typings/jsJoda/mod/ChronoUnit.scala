@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("js-joda", "ChronoUnit")
 @js.native
-/* private */ class ChronoUnit () extends TemporalUnit {
+/* private */ open class ChronoUnit () extends TemporalUnit {
   
   def compareTo(other: TemporalUnit): Double = js.native
 }

@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Terms for Preferred Deals. Note that Preferred Deals cannot be created via
-  * the API at this time, but can be returned in a get or list request.
-  */
 trait SchemaNonGuaranteedFixedPriceTerms extends StObject {
   
   /**
@@ -28,6 +24,6 @@ object SchemaNonGuaranteedFixedPriceTerms {
     
     inline def setFixedPricesUndefined: Self = StObject.set(x, "fixedPrices", js.undefined)
     
-    inline def setFixedPricesVarargs(value: SchemaPricePerBuyer*): Self = StObject.set(x, "fixedPrices", js.Array(value :_*))
+    inline def setFixedPricesVarargs(value: SchemaPricePerBuyer*): Self = StObject.set(x, "fixedPrices", js.Array(value*))
   }
 }

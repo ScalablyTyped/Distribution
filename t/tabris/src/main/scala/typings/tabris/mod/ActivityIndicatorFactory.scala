@@ -10,5 +10,5 @@ trait ActivityIndicatorFactory
   extends Factory[
       ActivityIndicatorConstructor, 
       InstanceType[ActivityIndicatorConstructor], 
-      js.Function1[/* repeated */ js.Any, InstanceType[ActivityIndicatorConstructor]]
+      js.Function1[/* repeated */ Any, Widget[Any]]
     ]

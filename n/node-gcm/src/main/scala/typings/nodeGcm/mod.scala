@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("node-gcm", "Message")
   @js.native
-  class Message () extends StObject {
+  open class Message () extends StObject {
     def this(options: IMessageOptions) = this()
     
     def addData(data: StringDictionary[String]): Unit = js.native
@@ -30,7 +30,7 @@ object mod {
   
   @JSImport("node-gcm", "Sender")
   @js.native
-  class Sender protected () extends StObject {
+  open class Sender protected () extends StObject {
     def this(key: String) = this()
     def this(key: String, options: ISenderOptions) = this()
     
@@ -41,69 +41,69 @@ object mod {
     def send(
       message: Message,
       registrationIds: String,
-      callback: js.Function2[/* err */ js.Any, /* resJson */ IResponseBody, Unit]
+      callback: js.Function2[/* err */ Any, /* resJson */ IResponseBody, Unit]
     ): Unit = js.native
     def send(
       message: Message,
       registrationIds: String,
       options: ISenderSendOptions,
-      callback: js.Function2[/* err */ js.Any, /* resJson */ IResponseBody, Unit]
+      callback: js.Function2[/* err */ Any, /* resJson */ IResponseBody, Unit]
     ): Unit = js.native
     def send(
       message: Message,
       registrationIds: String,
       retries: Double,
-      callback: js.Function2[/* err */ js.Any, /* resJson */ IResponseBody, Unit]
+      callback: js.Function2[/* err */ Any, /* resJson */ IResponseBody, Unit]
     ): Unit = js.native
     def send(
       message: Message,
       registrationIds: js.Array[String],
-      callback: js.Function2[/* err */ js.Any, /* resJson */ IResponseBody, Unit]
+      callback: js.Function2[/* err */ Any, /* resJson */ IResponseBody, Unit]
     ): Unit = js.native
     def send(
       message: Message,
       registrationIds: js.Array[String],
       options: ISenderSendOptions,
-      callback: js.Function2[/* err */ js.Any, /* resJson */ IResponseBody, Unit]
+      callback: js.Function2[/* err */ Any, /* resJson */ IResponseBody, Unit]
     ): Unit = js.native
     def send(
       message: Message,
       registrationIds: js.Array[String],
       retries: Double,
-      callback: js.Function2[/* err */ js.Any, /* resJson */ IResponseBody, Unit]
+      callback: js.Function2[/* err */ Any, /* resJson */ IResponseBody, Unit]
     ): Unit = js.native
     def send(
       message: Message,
       registrationIds: IRecipient,
-      callback: js.Function2[/* err */ js.Any, /* resJson */ IResponseBody, Unit]
+      callback: js.Function2[/* err */ Any, /* resJson */ IResponseBody, Unit]
     ): Unit = js.native
     def send(
       message: Message,
       registrationIds: IRecipient,
       options: ISenderSendOptions,
-      callback: js.Function2[/* err */ js.Any, /* resJson */ IResponseBody, Unit]
+      callback: js.Function2[/* err */ Any, /* resJson */ IResponseBody, Unit]
     ): Unit = js.native
     def send(
       message: Message,
       registrationIds: IRecipient,
       retries: Double,
-      callback: js.Function2[/* err */ js.Any, /* resJson */ IResponseBody, Unit]
+      callback: js.Function2[/* err */ Any, /* resJson */ IResponseBody, Unit]
     ): Unit = js.native
     
     def sendNoRetry(
       message: Message,
       registrationIds: String,
-      callback: js.Function2[/* err */ js.Any, /* resJson */ IResponseBody, Unit]
+      callback: js.Function2[/* err */ Any, /* resJson */ IResponseBody, Unit]
     ): Unit = js.native
     def sendNoRetry(
       message: Message,
       registrationIds: js.Array[String],
-      callback: js.Function2[/* err */ js.Any, /* resJson */ IResponseBody, Unit]
+      callback: js.Function2[/* err */ Any, /* resJson */ IResponseBody, Unit]
     ): Unit = js.native
     def sendNoRetry(
       message: Message,
       registrationIds: IRecipient,
-      callback: js.Function2[/* err */ js.Any, /* resJson */ IResponseBody, Unit]
+      callback: js.Function2[/* err */ Any, /* resJson */ IResponseBody, Unit]
     ): Unit = js.native
   }
   
@@ -296,13 +296,13 @@ object mod {
       
       inline def setRegistrationIdsUndefined: Self = StObject.set(x, "registrationIds", js.undefined)
       
-      inline def setRegistrationIdsVarargs(value: String*): Self = StObject.set(x, "registrationIds", js.Array(value :_*))
+      inline def setRegistrationIdsVarargs(value: String*): Self = StObject.set(x, "registrationIds", js.Array(value*))
       
       inline def setRegistrationTokens(value: js.Array[String]): Self = StObject.set(x, "registrationTokens", value.asInstanceOf[js.Any])
       
       inline def setRegistrationTokensUndefined: Self = StObject.set(x, "registrationTokens", js.undefined)
       
-      inline def setRegistrationTokensVarargs(value: String*): Self = StObject.set(x, "registrationTokens", js.Array(value :_*))
+      inline def setRegistrationTokensVarargs(value: String*): Self = StObject.set(x, "registrationTokens", js.Array(value*))
       
       inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
@@ -347,7 +347,7 @@ object mod {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      inline def setResultsVarargs(value: Error*): Self = StObject.set(x, "results", js.Array(value :_*))
+      inline def setResultsVarargs(value: Error*): Self = StObject.set(x, "results", js.Array(value*))
       
       inline def setSuccess(value: Double): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     }
@@ -357,7 +357,7 @@ object mod {
     
     var maxSockets: js.UndefOr[Double] = js.undefined
     
-    var proxy: js.UndefOr[js.Any] = js.undefined
+    var proxy: js.UndefOr[Any] = js.undefined
     
     var timeout: js.UndefOr[Double] = js.undefined
   }
@@ -374,7 +374,7 @@ object mod {
       
       inline def setMaxSocketsUndefined: Self = StObject.set(x, "maxSockets", js.undefined)
       
-      inline def setProxy(value: js.Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+      inline def setProxy(value: Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
       
       inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
       

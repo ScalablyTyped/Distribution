@@ -6,6 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("asn1js", "VisibleString")
 @js.native
-class VisibleString () extends LocalSimpleStringBlock {
-  def this(params: LocalSimpleStringBlockParams) = this()
+open class VisibleString ()
+  extends LocalSimpleStringBlock
+     with _AsnType {
+  def this(parameters: VisibleStringParams) = this()
+}
+object VisibleString {
+  
+  @JSImport("asn1js", "VisibleString")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("asn1js", "VisibleString.NAME")
+  @js.native
+  def NAME: String = js.native
+  inline def NAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAME")(x.asInstanceOf[js.Any])
 }

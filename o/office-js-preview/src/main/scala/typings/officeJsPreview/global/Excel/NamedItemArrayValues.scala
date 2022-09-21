@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents an object containing values and types of a named item.
   *
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 @JSGlobal("Excel.NamedItemArrayValues")
 @js.native
-class NamedItemArrayValues ()
+open class NamedItemArrayValues ()
   extends StObject
      with typings.officeJsPreview.Excel.NamedItemArrayValues {
   

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientHtmlEditorCommandStyleSettings")
 @js.native
-class ASPxClientHtmlEditorCommandStyleSettings ()
+open class ASPxClientHtmlEditorCommandStyleSettings ()
   extends StObject
      with typings.devexpressWeb.ASPxClientHtmlEditorCommandStyleSettings {
   

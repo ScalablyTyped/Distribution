@@ -1,9 +1,5 @@
 package typings.googleapis.v33Mod.dfareportingV33
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,11 +12,6 @@ trait ParamsResourceAdvertisersList
     * Select only advertisers with these advertiser group IDs.
     */
   var advertiserGroupIds: js.UndefOr[js.Array[String]] = js.undefined
-  
-  /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Select only advertisers with these floodlight configuration IDs.
@@ -43,8 +34,7 @@ trait ParamsResourceAdvertisersList
   var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
-    * Select only advertisers which use another advertiser's floodlight
-    * configuration.
+    * Select only advertisers which use another advertiser's floodlight configuration.
     */
   var onlyParent: js.UndefOr[Boolean] = js.undefined
   
@@ -59,13 +49,7 @@ trait ParamsResourceAdvertisersList
   var profileId: js.UndefOr[String] = js.undefined
   
   /**
-    * Allows searching for objects by name or ID. Wildcards (*) are allowed.
-    * For example, "advertiser*2015" will return objects with names like
-    * "advertiser June 2015", "advertiser April 2015", or simply "advertiser
-    * 2015". Most of the searches also add wildcards implicitly at the start
-    * and the end of the search string. For example, a search string of
-    * "advertiser" will match objects with name "my advertiser", "advertiser
-    * 2015", or simply "advertiser".
+    * Allows searching for objects by name or ID. Wildcards (*) are allowed. For example, "advertiser*2015" will return objects with names like "advertiser June 2015", "advertiser April 2015", or simply "advertiser 2015". Most of the searches also add wildcards implicitly at the start and the end of the search string. For example, a search string of "advertiser" will match objects with name "my advertiser", "advertiser 2015", or simply "advertiser" .
     */
   var searchString: js.UndefOr[String] = js.undefined
   
@@ -102,23 +86,19 @@ object ParamsResourceAdvertisersList {
     
     inline def setAdvertiserGroupIdsUndefined: Self = StObject.set(x, "advertiserGroupIds", js.undefined)
     
-    inline def setAdvertiserGroupIdsVarargs(value: String*): Self = StObject.set(x, "advertiserGroupIds", js.Array(value :_*))
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAdvertiserGroupIdsVarargs(value: String*): Self = StObject.set(x, "advertiserGroupIds", js.Array(value*))
     
     inline def setFloodlightConfigurationIds(value: js.Array[String]): Self = StObject.set(x, "floodlightConfigurationIds", value.asInstanceOf[js.Any])
     
     inline def setFloodlightConfigurationIdsUndefined: Self = StObject.set(x, "floodlightConfigurationIds", js.undefined)
     
-    inline def setFloodlightConfigurationIdsVarargs(value: String*): Self = StObject.set(x, "floodlightConfigurationIds", js.Array(value :_*))
+    inline def setFloodlightConfigurationIdsVarargs(value: String*): Self = StObject.set(x, "floodlightConfigurationIds", js.Array(value*))
     
     inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
     inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
-    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value*))
     
     inline def setIncludeAdvertisersWithoutGroupsOnly(value: Boolean): Self = StObject.set(x, "includeAdvertisersWithoutGroupsOnly", value.asInstanceOf[js.Any])
     

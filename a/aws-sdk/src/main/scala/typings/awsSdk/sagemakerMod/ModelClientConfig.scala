@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ModelClientConfig extends StObject {
   
   /**
-    * The maximum number of retries when invocation requests are failing.
+    * The maximum number of retries when invocation requests are failing. The default value is 3.
     */
   var InvocationsMaxRetries: js.UndefOr[typings.awsSdk.sagemakerMod.InvocationsMaxRetries] = js.undefined
   
   /**
-    * The timeout value in seconds for an invocation request.
+    * The timeout value in seconds for an invocation request. The default value is 600.
     */
   var InvocationsTimeoutInSeconds: js.UndefOr[typings.awsSdk.sagemakerMod.InvocationsTimeoutInSeconds] = js.undefined
 }

@@ -11,9 +11,9 @@ $(document).ready() for the 21st century
 | Full name          | when-dom-ready |
 | Keywords           | check, dom, loaded, ready, promise, async, asynchronous, pure |
 | # releases         | 0 |
-| # dependents       | 15 |
-| # downloads        | 385618 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 232909.66666666666 |
+| # stars            | 336.0 |
 
 ## Links
 - [Homepage](https://github.com/lukechilds/when-dom-ready)

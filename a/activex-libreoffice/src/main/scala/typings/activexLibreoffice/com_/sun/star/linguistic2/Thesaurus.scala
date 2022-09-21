@@ -30,8 +30,8 @@ object Thesaurus {
     getLocales: () => SafeArray[Locale],
     getServiceDisplayName: Locale => String,
     hasLocale: Locale => Boolean,
-    initialize: SeqEquiv[js.Any] => Unit,
-    queryInterface: `type` => js.Any,
+    initialize: SeqEquiv[Any] => Unit,
+    queryInterface: `type` => Any,
     queryMeanings: (String, Locale, PropertyValues) => SafeArray[XMeaning],
     release: () => Unit,
     removeEventListener: XEventListener => Unit

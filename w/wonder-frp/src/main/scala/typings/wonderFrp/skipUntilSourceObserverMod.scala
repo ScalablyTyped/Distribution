@@ -11,12 +11,12 @@ object skipUntilSourceObserverMod {
   
   @JSImport("wonder-frp/dist/commonjs/observer/SkipUntilSourceObserver", "SkipUntilSourceObserver")
   @js.native
-  class SkipUntilSourceObserver protected () extends Observer {
+  open class SkipUntilSourceObserver protected () extends Observer {
     def this(prevObserver: IObserver, skipUntilStream: SkipUntilStream) = this()
     
-    /* private */ var _prevObserver: js.Any = js.native
+    /* private */ var _prevObserver: Any = js.native
     
-    /* private */ var _skipUntilStream: js.Any = js.native
+    /* private */ var _skipUntilStream: Any = js.native
   }
   /* static members */
   object SkipUntilSourceObserver {

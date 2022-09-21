@@ -1,9 +1,5 @@
 package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,22 +9,17 @@ trait ParamsResourceMobiledevicesList
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * Immutable ID of the G Suite account
+    * The unique ID for the customer's Google Workspace account. As an account administrator, you can also use the `my_customer` alias to represent your account's `customerId`. The `customerId` is also returned as part of the [Users resource](/admin-sdk/directory/v1/reference/users).
     */
   var customerId: js.UndefOr[String] = js.undefined
   
   /**
-    * Maximum number of results to return. Default is 100
+    * Maximum number of results to return. Max allowed value is 100.
     */
   var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
-    * Column to use for sorting results
+    * Device property to use for sorting results.
     */
   var orderBy: js.UndefOr[String] = js.undefined
   
@@ -43,14 +34,12 @@ trait ParamsResourceMobiledevicesList
   var projection: js.UndefOr[String] = js.undefined
   
   /**
-    * Search string in the format given at
-    * http://support.google.com/a/bin/answer.py?answer=1408863#search
+    * Search string in the format given at https://developers.google.com/admin-sdk/directory/v1/search-operators
     */
   var query: js.UndefOr[String] = js.undefined
   
   /**
-    * Whether to return results in ascending or descending order. Only of use
-    * when orderBy is also used
+    * Whether to return results in ascending or descending order. Must be used with the `orderBy` parameter.
     */
   var sortOrder: js.UndefOr[String] = js.undefined
 }
@@ -62,10 +51,6 @@ object ParamsResourceMobiledevicesList {
   }
   
   extension [Self <: ParamsResourceMobiledevicesList](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
     

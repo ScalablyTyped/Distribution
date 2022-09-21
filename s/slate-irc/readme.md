@@ -9,10 +9,10 @@ General purpose IRC client
 | ------------------ | :-------------: |
 | Full name          | slate-irc |
 | Keywords           | irc, client, chat |
-| # releases         | 2 |
-| # dependents       | 12 |
-| # downloads        | 2879 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 282.0 |
+| # stars            | 203.0 |
 
 ## Links
 - [Homepage](https://github.com/slate/slate-irc)

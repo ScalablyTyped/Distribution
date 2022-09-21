@@ -8,11 +8,12 @@ import typings.vegaTypings.exprMod.Expr
 import typings.vegaTypings.layoutMod.Layout
 import typings.vegaTypings.layoutMod.LayoutBounds
 import typings.vegaTypings.layoutMod._LayoutOffset
+import typings.vegaTypings.onEventsMod.EventListener
 import typings.vegaTypings.onEventsMod.OnEvent
-import typings.vegaTypings.onEventsMod._EventListener
 import typings.vegaTypings.onEventsMod._Update
 import typings.vegaTypings.scaleMod.ScaleInterpolate
 import typings.vegaTypings.scaleMod.SortOrder
+import typings.vegaTypings.scaleMod._RangeBand
 import typings.vegaTypings.scaleMod._RangeScheme
 import typings.vegaTypings.scaleMod._ScaleBins
 import typings.vegaTypings.transformMod.TransformField
@@ -50,7 +51,7 @@ object signalMod {
       
       inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
       
-      inline def setOnVarargs(value: OnEvent*): Self = StObject.set(x, "on", js.Array(value :_*))
+      inline def setOnVarargs(value: OnEvent*): Self = StObject.set(x, "on", js.Array(value*))
     }
   }
   
@@ -172,15 +173,16 @@ object signalMod {
   
   trait SignalRef
     extends StObject
-       with BaseValueRef[js.Any]
+       with BaseValueRef[Any]
+       with EventListener
        with Layout
        with LayoutBounds
        with ScaleInterpolate
        with SortOrder
        with TransformField
-       with _EventListener
        with _Field
        with _LayoutOffset
+       with _RangeBand
        with _RangeScheme
        with _ScaleBins
        with _TickCount
@@ -201,5 +203,5 @@ object signalMod {
     }
   }
   
-  type SignalValue = js.Any
+  type SignalValue = Any
 }

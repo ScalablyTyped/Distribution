@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ndn-js", "ForwardingFlags")
 @js.native
-class ForwardingFlags ()
+open class ForwardingFlags ()
   extends typings.ndnJs.faceMod.ForwardingFlags

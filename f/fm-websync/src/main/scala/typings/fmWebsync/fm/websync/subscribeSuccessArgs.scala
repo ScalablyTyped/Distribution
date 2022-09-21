@@ -1,6 +1,5 @@
 package typings.fmWebsync.fm.websync
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,9 +36,9 @@ object subscribeSuccessArgs {
     client: client,
     clientId: String,
     isResubscribe: Boolean,
-    meta: js.Any,
+    meta: Any,
     subscribedClients: js.Array[subscribedClient],
-    timestamp: Date
+    timestamp: js.Date
   ): subscribeSuccessArgs = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], channels = channels.asInstanceOf[js.Any], client = client.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], isResubscribe = isResubscribe.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], subscribedClients = subscribedClients.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[subscribeSuccessArgs]
@@ -51,12 +50,12 @@ object subscribeSuccessArgs {
     
     inline def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
-    inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
+    inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value*))
     
     inline def setIsResubscribe(value: Boolean): Self = StObject.set(x, "isResubscribe", value.asInstanceOf[js.Any])
     
     inline def setSubscribedClients(value: js.Array[subscribedClient]): Self = StObject.set(x, "subscribedClients", value.asInstanceOf[js.Any])
     
-    inline def setSubscribedClientsVarargs(value: subscribedClient*): Self = StObject.set(x, "subscribedClients", js.Array(value :_*))
+    inline def setSubscribedClientsVarargs(value: subscribedClient*): Self = StObject.set(x, "subscribedClients", js.Array(value*))
   }
 }

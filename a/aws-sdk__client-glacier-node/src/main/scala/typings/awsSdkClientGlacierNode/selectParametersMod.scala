@@ -8,5 +8,5 @@ object selectParametersMod {
   
   @JSImport("@aws-sdk/client-glacier-node/model/_SelectParameters", "_SelectParameters")
   @js.native
-  val SelectParameters: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val SelectParameters: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

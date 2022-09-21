@@ -6,16 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FileReaderEventMap extends StObject {
   
+  /* standard dom */
   var abort: ProgressEvent[FileReader]
   
+  /* standard dom */
   var error: ProgressEvent[FileReader]
   
+  /* standard dom */
   var load: ProgressEvent[FileReader]
   
+  /* standard dom */
   var loadend: ProgressEvent[FileReader]
   
+  /* standard dom */
   var loadstart: ProgressEvent[FileReader]
   
+  /* standard dom */
   var progress: ProgressEvent[FileReader]
 }
 object FileReaderEventMap {

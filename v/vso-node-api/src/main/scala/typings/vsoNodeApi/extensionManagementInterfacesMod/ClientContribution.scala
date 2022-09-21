@@ -24,7 +24,7 @@ trait ClientContribution extends StObject {
   /**
     * Properties/attributes of this contribution
     */
-  var properties: js.Any
+  var properties: Any
   
   /**
     * The ids of the contribution(s) that this contribution targets. (parent contributions)
@@ -42,7 +42,7 @@ object ClientContribution {
     description: String,
     id: String,
     includes: js.Array[String],
-    properties: js.Any,
+    properties: Any,
     targets: js.Array[String],
     `type`: String
   ): ClientContribution = {
@@ -59,13 +59,13 @@ object ClientContribution {
     
     inline def setIncludes(value: js.Array[String]): Self = StObject.set(x, "includes", value.asInstanceOf[js.Any])
     
-    inline def setIncludesVarargs(value: String*): Self = StObject.set(x, "includes", js.Array(value :_*))
+    inline def setIncludesVarargs(value: String*): Self = StObject.set(x, "includes", js.Array(value*))
     
-    inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     inline def setTargets(value: js.Array[String]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
     
-    inline def setTargetsVarargs(value: String*): Self = StObject.set(x, "targets", js.Array(value :_*))
+    inline def setTargetsVarargs(value: String*): Self = StObject.set(x, "targets", js.Array(value*))
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

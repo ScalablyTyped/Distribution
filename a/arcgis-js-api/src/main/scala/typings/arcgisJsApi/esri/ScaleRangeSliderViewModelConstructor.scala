@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ScaleRangeSliderViewModelConstructor
   extends StObject
-     with Instantiable0[ScaleRangeSliderViewModel]
+     with /**
+  * Provides the logic for the [ScaleRangeSlider](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider.html) widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider-ScaleRangeSliderViewModel.html)
+  */
+Instantiable0[ScaleRangeSliderViewModel]
      with Instantiable1[/* properties */ ScaleRangeSliderViewModelProperties, ScaleRangeSliderViewModel]

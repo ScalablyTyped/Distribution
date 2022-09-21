@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("objects-to-csv", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with ObjectsToCsv {
     /**

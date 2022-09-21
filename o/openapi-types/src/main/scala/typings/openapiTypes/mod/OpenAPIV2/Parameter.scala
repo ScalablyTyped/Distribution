@@ -1,5 +1,6 @@
 package typings.openapiTypes.mod.OpenAPIV2
 
+import typings.openapiTypes.mod.OpenAPI._Parameter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 */
 trait Parameter
   extends StObject
-     with typings.openapiTypes.mod.OpenAPI.Parameter
+     with _Parameter
 object Parameter {
   
   inline def GeneralParameterObject(in: String, name: String, `type`: String): typings.openapiTypes.mod.OpenAPIV2.GeneralParameterObject = {

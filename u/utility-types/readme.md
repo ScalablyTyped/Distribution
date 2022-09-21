@@ -10,15 +10,12 @@ Utility Types Collection for TypeScript
 | ------------------ | :-------------: |
 | Full name          | utility-types |
 | Keywords           | typescript, utility, types, static-typing, mapped-types, flow, flow-typed |
-| # releases         | 8 |
-| # dependents       | 319 |
-| # downloads        | 14142651 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4828308.666666667 |
+| # stars            | 4293.0 |
 
 ## Links
-- [Homepage](https://github.com/piotrwitek/utility-types)
-- [Bugs](https://github.com/piotrwitek/utility-types/issues)
-- [Repository](https://github.com/piotrwitek/utility-types)
 - [Npm](https://www.npmjs.com/package/utility-types)
     
 

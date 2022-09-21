@@ -17,7 +17,7 @@ trait UpdateConnectorProfileRequest extends StObject {
   var connectorProfileConfig: ConnectorProfileConfig
   
   /**
-    *  The name of the connector profile and is unique for each ConnectorProfile in the AWS Account. 
+    *  The name of the connector profile and is unique for each ConnectorProfile in the Amazon Web Services account. 
     */
   var connectorProfileName: ConnectorProfileName
 }

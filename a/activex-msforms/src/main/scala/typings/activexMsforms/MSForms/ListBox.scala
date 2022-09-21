@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListBox extends StObject {
   
   def AddItem(): Unit = js.native
-  def AddItem(pvargItem: js.Any): Unit = js.native
-  def AddItem(pvargItem: js.Any, pvargIndex: js.Any): Unit = js.native
-  def AddItem(pvargItem: Unit, pvargIndex: js.Any): Unit = js.native
+  def AddItem(pvargItem: Any): Unit = js.native
+  def AddItem(pvargItem: Any, pvargIndex: Any): Unit = js.native
+  def AddItem(pvargItem: Unit, pvargIndex: Any): Unit = js.native
   
   var BackColor: Double = js.native
   
@@ -22,13 +22,13 @@ trait ListBox extends StObject {
   
   var BordersSuppress: Boolean = js.native
   
-  var BoundColumn: js.Any = js.native
+  var BoundColumn: Any = js.native
   
   def Clear(): Unit = js.native
   
-  def Column(): SafeArray[js.Any] = js.native
-  def Column(pvargColumn: Double): js.Any = js.native
-  def Column(pvargColumn: Double, pvargIndex: Double): js.Any = js.native
+  def Column(): SafeArray[Any] = js.native
+  def Column(pvargColumn: Double): Any = js.native
+  def Column(pvargColumn: Double, pvargIndex: Double): Any = js.native
   
   var ColumnCount: Double = js.native
   
@@ -62,19 +62,19 @@ trait ListBox extends StObject {
   
   var IntegralHeight: Boolean = js.native
   
-  def List(): SafeArray[js.Any] = js.native
-  def List(pvargIndex: Double): js.Any = js.native
-  def List(pvargIndex: Double, pvargColumn: Double): js.Any = js.native
+  def List(): SafeArray[Any] = js.native
+  def List(pvargIndex: Double): Any = js.native
+  def List(pvargIndex: Double, pvargColumn: Double): Any = js.native
   
   val ListCount: Double = js.native
   
-  var ListCursor: js.Any = js.native
+  var ListCursor: Any = js.native
   
-  var ListIndex: js.Any = js.native
+  var ListIndex: Any = js.native
   
   var ListStyle: fmListStyle = js.native
   
-  var ListWidth: js.Any = js.native
+  var ListWidth: Any = js.native
   
   var Locked: Boolean = js.native
   
@@ -89,9 +89,9 @@ trait ListBox extends StObject {
   
   var MultiSelect: fmMultiSelect = js.native
   
-  def RemoveItem(pvargIndex: js.Any): Unit = js.native
+  def RemoveItem(pvargIndex: Any): Unit = js.native
   
-  def Selected(pvargIndex: js.Any): Boolean = js.native
+  def Selected(pvargIndex: Any): Boolean = js.native
   
   var SpecialEffect: fmSpecialEffect = js.native
   
@@ -99,13 +99,13 @@ trait ListBox extends StObject {
   
   var TextAlign: fmTextAlign = js.native
   
-  var TextColumn: js.Any = js.native
+  var TextColumn: Any = js.native
   
-  var TopIndex: js.Any = js.native
+  var TopIndex: Any = js.native
   
   val Valid: Boolean = js.native
   
-  var Value: js.Any = js.native
+  var Value: Any = js.native
   
   val _Font_Reserved: NewFont = js.native
 }

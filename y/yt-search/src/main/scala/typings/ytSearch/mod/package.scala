@@ -1,82 +1,60 @@
 package typings.ytSearch.mod
 
+import typings.ytSearch.anon.FnCall
+import typings.ytSearch.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def apply(query: java.lang.String): js.Promise[typings.ytSearch.mod.SearchResult] = typings.ytSearch.mod.^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.ytSearch.mod.SearchResult]]
+inline def apply(query: String): js.Promise[SearchResult] = ^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SearchResult]]
 inline def apply(
-  query: java.lang.String,
-  callback: js.Function2[
-  /* err */ js.UndefOr[typings.std.Error | java.lang.String | scala.Null], 
-  /* data */ typings.ytSearch.mod.SearchResult, 
-  scala.Unit
-]
-): scala.Unit = (typings.ytSearch.mod.^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def apply(query: typings.ytSearch.mod.Options): js.Promise[typings.ytSearch.mod.SearchResult] = typings.ytSearch.mod.^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.ytSearch.mod.SearchResult]]
+  query: String,
+  callback: js.Function2[/* err */ js.UndefOr[js.Error | String | Null], /* data */ SearchResult, Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def apply(query: Options): js.Promise[SearchResult] = ^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SearchResult]]
 inline def apply(
-  query: typings.ytSearch.mod.Options,
-  callback: js.Function2[
-  /* err */ js.UndefOr[typings.std.Error | java.lang.String | scala.Null], 
-  /* data */ typings.ytSearch.mod.SearchResult, 
-  scala.Unit
-]
-): scala.Unit = (typings.ytSearch.mod.^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def apply(query: typings.ytSearch.mod.PlaylistMetadataOptions): js.Promise[typings.ytSearch.mod.PlaylistMetadataResult] = typings.ytSearch.mod.^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.ytSearch.mod.PlaylistMetadataResult]]
+  query: Options,
+  callback: js.Function2[/* err */ js.UndefOr[js.Error | String | Null], /* data */ SearchResult, Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def apply(query: PlaylistMetadataOptions): js.Promise[PlaylistMetadataResult] = ^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PlaylistMetadataResult]]
 inline def apply(
-  query: typings.ytSearch.mod.PlaylistMetadataOptions,
+  query: PlaylistMetadataOptions,
   callback: js.Function2[
-  /* err */ js.UndefOr[typings.std.Error | java.lang.String | scala.Null], 
-  /* data */ typings.ytSearch.mod.PlaylistMetadataResult, 
-  scala.Unit
+  /* err */ js.UndefOr[js.Error | String | Null], 
+  /* data */ PlaylistMetadataResult, 
+  Unit
 ]
-): scala.Unit = (typings.ytSearch.mod.^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def apply(query: typings.ytSearch.mod.VideoMetadataOptions): js.Promise[typings.ytSearch.mod.VideoMetadataResult] = typings.ytSearch.mod.^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.ytSearch.mod.VideoMetadataResult]]
+): Unit = (^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def apply(query: VideoMetadataOptions): js.Promise[VideoMetadataResult] = ^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[VideoMetadataResult]]
 inline def apply(
-  query: typings.ytSearch.mod.VideoMetadataOptions,
-  callback: js.Function2[
-  /* err */ js.UndefOr[typings.std.Error | java.lang.String | scala.Null], 
-  /* data */ typings.ytSearch.mod.VideoMetadataResult, 
-  scala.Unit
-]
-): scala.Unit = (typings.ytSearch.mod.^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+  query: VideoMetadataOptions,
+  callback: js.Function2[/* err */ js.UndefOr[js.Error | String | Null], /* data */ VideoMetadataResult, Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def search: typings.ytSearch.anon.FnCall = typings.ytSearch.mod.^.asInstanceOf[js.Dynamic].selectDynamic("search").asInstanceOf[typings.ytSearch.anon.FnCall]
-inline def search(query: java.lang.String): js.Promise[typings.ytSearch.mod.SearchResult] = typings.ytSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("search")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.ytSearch.mod.SearchResult]]
+inline def search: FnCall = ^.asInstanceOf[js.Dynamic].selectDynamic("search").asInstanceOf[FnCall]
+inline def search(query: String): js.Promise[SearchResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("search")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SearchResult]]
 inline def search(
-  query: java.lang.String,
-  callback: js.Function2[
-  /* err */ js.UndefOr[typings.std.Error | java.lang.String | scala.Null], 
-  /* data */ typings.ytSearch.mod.SearchResult, 
-  scala.Unit
-]
-): scala.Unit = (typings.ytSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("search")(query.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def search(query: typings.ytSearch.mod.Options): js.Promise[typings.ytSearch.mod.SearchResult] = typings.ytSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("search")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.ytSearch.mod.SearchResult]]
+  query: String,
+  callback: js.Function2[/* err */ js.UndefOr[js.Error | String | Null], /* data */ SearchResult, Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(query.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def search(query: Options): js.Promise[SearchResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("search")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SearchResult]]
 inline def search(
-  query: typings.ytSearch.mod.Options,
-  callback: js.Function2[
-  /* err */ js.UndefOr[typings.std.Error | java.lang.String | scala.Null], 
-  /* data */ typings.ytSearch.mod.SearchResult, 
-  scala.Unit
-]
-): scala.Unit = (typings.ytSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("search")(query.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def search(query: typings.ytSearch.mod.PlaylistMetadataOptions): js.Promise[typings.ytSearch.mod.PlaylistMetadataResult] = typings.ytSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("search")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.ytSearch.mod.PlaylistMetadataResult]]
+  query: Options,
+  callback: js.Function2[/* err */ js.UndefOr[js.Error | String | Null], /* data */ SearchResult, Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(query.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def search(query: PlaylistMetadataOptions): js.Promise[PlaylistMetadataResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("search")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PlaylistMetadataResult]]
 inline def search(
-  query: typings.ytSearch.mod.PlaylistMetadataOptions,
+  query: PlaylistMetadataOptions,
   callback: js.Function2[
-  /* err */ js.UndefOr[typings.std.Error | java.lang.String | scala.Null], 
-  /* data */ typings.ytSearch.mod.PlaylistMetadataResult, 
-  scala.Unit
+  /* err */ js.UndefOr[js.Error | String | Null], 
+  /* data */ PlaylistMetadataResult, 
+  Unit
 ]
-): scala.Unit = (typings.ytSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("search")(query.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def search(query: typings.ytSearch.mod.VideoMetadataOptions): js.Promise[typings.ytSearch.mod.VideoMetadataResult] = typings.ytSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("search")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.ytSearch.mod.VideoMetadataResult]]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(query.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def search(query: VideoMetadataOptions): js.Promise[VideoMetadataResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("search")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[VideoMetadataResult]]
 inline def search(
-  query: typings.ytSearch.mod.VideoMetadataOptions,
-  callback: js.Function2[
-  /* err */ js.UndefOr[typings.std.Error | java.lang.String | scala.Null], 
-  /* data */ typings.ytSearch.mod.VideoMetadataResult, 
-  scala.Unit
-]
-): scala.Unit = (typings.ytSearch.mod.^.asInstanceOf[js.Dynamic].applyDynamic("search")(query.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-inline def search_=(x: typings.ytSearch.anon.FnCall): scala.Unit = typings.ytSearch.mod.^.asInstanceOf[js.Dynamic].updateDynamic("search")(x.asInstanceOf[js.Any])
+  query: VideoMetadataOptions,
+  callback: js.Function2[/* err */ js.UndefOr[js.Error | String | Null], /* data */ VideoMetadataResult, Unit]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(query.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def search_=(x: FnCall): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("search")(x.asInstanceOf[js.Any])

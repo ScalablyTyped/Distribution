@@ -42,6 +42,6 @@ object EmailOptions {
     
     inline def setTldWhitelistUndefined: Self = StObject.set(x, "tldWhitelist", js.undefined)
     
-    inline def setTldWhitelistVarargs(value: String*): Self = StObject.set(x, "tldWhitelist", js.Array(value :_*))
+    inline def setTldWhitelistVarargs(value: String*): Self = StObject.set(x, "tldWhitelist", js.Array(value*))
   }
 }

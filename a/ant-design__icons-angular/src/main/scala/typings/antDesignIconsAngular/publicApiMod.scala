@@ -1595,6 +1595,10 @@ object publicApiMod {
   @js.native
   val HistoryOutline: IconDefinition = js.native
   
+  @JSImport("@ant-design/icons-angular/icons/public_api", "HolderOutline")
+  @js.native
+  val HolderOutline: IconDefinition = js.native
+  
   @JSImport("@ant-design/icons-angular/icons/public_api", "HomeFill")
   @js.native
   val HomeFill: IconDefinition = js.native

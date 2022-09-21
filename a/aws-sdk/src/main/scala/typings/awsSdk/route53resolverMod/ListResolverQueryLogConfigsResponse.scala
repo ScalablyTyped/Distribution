@@ -43,7 +43,7 @@ object ListResolverQueryLogConfigsResponse {
     
     inline def setResolverQueryLogConfigsUndefined: Self = StObject.set(x, "ResolverQueryLogConfigs", js.undefined)
     
-    inline def setResolverQueryLogConfigsVarargs(value: ResolverQueryLogConfig*): Self = StObject.set(x, "ResolverQueryLogConfigs", js.Array(value :_*))
+    inline def setResolverQueryLogConfigsVarargs(value: ResolverQueryLogConfig*): Self = StObject.set(x, "ResolverQueryLogConfigs", js.Array(value*))
     
     inline def setTotalCount(value: Count): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     

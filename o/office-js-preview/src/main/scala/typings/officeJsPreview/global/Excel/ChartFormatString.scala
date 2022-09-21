@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents the substring in chart related objects that contain text, like a `ChartTitle` object or `ChartAxisTitle` object.
   *
-  * Represents the substring in chart related objects that contains text, like ChartTitle object, ChartAxisTitle object, etc.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 @JSGlobal("Excel.ChartFormatString")
 @js.native
-class ChartFormatString ()
+open class ChartFormatString ()
   extends StObject
      with typings.officeJsPreview.Excel.ChartFormatString {
   

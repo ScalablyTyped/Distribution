@@ -174,21 +174,18 @@ trait RichEditSelection extends StObject {
     * @param extendSelection true to extend the selection; otherwise, false.
     */
   def selectTable(): Unit = js.native
-  def selectTable(extendSelection: Boolean): Unit = js.native
   
   /**
     * Selects the table cell in which the cursor is located and allows you to extend the entire selection with the currently existing selection.
     * @param extendSelection true to extend the selection; otherwise, false.
     */
   def selectTableCell(): Unit = js.native
-  def selectTableCell(extendSelection: Boolean): Unit = js.native
   
   /**
     * Selects the table row in which the cursor is located and allows you to extend the entire selection with the currently existing selection.
     * @param extendSelection true to extend the selection; otherwise, false.
     */
   def selectTableRow(): Unit = js.native
-  def selectTableRow(extendSelection: Boolean): Unit = js.native
   
   /**
     * Makes the specified sub-document active. true if the sub-document is made active; false if the sub-document with the specified id is not found.

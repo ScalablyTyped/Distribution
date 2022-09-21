@@ -2,7 +2,6 @@ package typings.openseadragon.mod
 
 import typings.std.CanvasGradient
 import typings.std.CanvasPattern
-import typings.std.Error
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,7 +23,7 @@ trait ImageOptions extends StObject {
   
   var degrees: js.UndefOr[Double] = js.undefined
   
-  var error: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
+  var error: js.UndefOr[js.Function1[/* error */ js.Error, Unit]] = js.undefined
   
   var fitBounds: js.UndefOr[Rect] = js.undefined
   
@@ -89,7 +88,7 @@ object ImageOptions {
     
     inline def setDegreesUndefined: Self = StObject.set(x, "degrees", js.undefined)
     
-    inline def setError(value: /* error */ Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    inline def setError(value: /* error */ js.Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     

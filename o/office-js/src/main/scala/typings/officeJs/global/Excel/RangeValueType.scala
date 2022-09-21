@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * [Api set: ExcelApi 1.1 for Unknown, Empty, String, Integer, Double, Boolean, Error. 1.7 for RichValue]
+  * @remarks
+  * [Api set: ExcelApi 1.1]
   */
 @JSGlobal("Excel.RangeValueType")
 @js.native

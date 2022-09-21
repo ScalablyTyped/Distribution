@@ -8,6 +8,7 @@ import typings.std.GainNode
 import typings.std.HTMLMediaElement
 import typings.std.MediaStream
 import typings.three.audioListenerMod.AudioListener
+import typings.three.eventDispatcherMod.Event
 import typings.three.object3DMod.Object3D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,12 +18,12 @@ object audioMod {
   
   @JSImport("three/src/audio/Audio", "Audio")
   @js.native
-  class Audio[NodeType /* <: AudioNode */] protected () extends Object3D {
+  open class Audio[NodeType /* <: AudioNode */] protected () extends Object3D[Event] {
     def this(listener: AudioListener) = this()
     
     /**
-    	 * @default false
-    	 */
+      * @default false
+      */
     var autoplay: Boolean = js.native
     
     var buffer: Null | AudioBuffer = js.native
@@ -32,29 +33,29 @@ object audioMod {
     var context: AudioContext = js.native
     
     /**
-    	 * @default 0
-    	 */
+      * @default 0
+      */
     var detune: Double = js.native
     
     def disconnect(): this.type = js.native
     
     /**
-    	 * @default undefined
-    	 */
+      * @default undefined
+      */
     var duration: js.UndefOr[Double] = js.native
     
     /**
-    	 * @default []
-    	 */
-    var filters: js.Array[js.Any] = js.native
+      * @default []
+      */
+    var filters: js.Array[AudioNode] = js.native
     
     var gain: GainNode = js.native
     
     def getDetune(): Double = js.native
     
-    def getFilter(): js.Any = js.native
+    def getFilter(): AudioNode = js.native
     
-    def getFilters(): js.Array[js.Any] = js.native
+    def getFilters(): js.Array[AudioNode] = js.native
     
     def getLoop(): Boolean = js.native
     
@@ -65,40 +66,40 @@ object audioMod {
     def getVolume(): Double = js.native
     
     /**
-    	 * @default true
-    	 */
+      * @default true
+      */
     var hasPlaybackControl: Boolean = js.native
     
     /**
-    	 * @default false
-    	 */
+      * @default false
+      */
     var isPlaying: Boolean = js.native
     
     var listener: AudioListener = js.native
     
     /**
-    	 * @deprecated Use {@link AudioLoader} instead.
-    	 */
+      * @deprecated Use {@link AudioLoader} instead.
+      */
     def load(file: String): Audio[GainNode] = js.native
     
     /**
-    	 * @default false
-    	 */
+      * @default false
+      */
     var loop: Boolean = js.native
     
     /**
-    	 * @default 0
-    	 */
+      * @default 0
+      */
     var loopEnd: Double = js.native
     
     /**
-    	 * @default 0
-    	 */
+      * @default 0
+      */
     var loopStart: Double = js.native
     
     /**
-    	 * @default 0
-    	 */
+      * @default 0
+      */
     var offset: Double = js.native
     
     def onEnded(): Unit = js.native
@@ -109,17 +110,17 @@ object audioMod {
     def play(delay: Double): this.type = js.native
     
     /**
-    	 * @default 1
-    	 */
+      * @default 1
+      */
     var playbackRate: Double = js.native
     
     def setBuffer(audioBuffer: AudioBuffer): this.type = js.native
     
     def setDetune(value: Double): this.type = js.native
     
-    def setFilter(filter: js.Any): this.type = js.native
+    def setFilter(filter: AudioNode): this.type = js.native
     
-    def setFilters(value: js.Array[js.Any]): this.type = js.native
+    def setFilters(value: js.Array[AudioNode]): this.type = js.native
     
     def setLoop(value: Boolean): this.type = js.native
     
@@ -140,8 +141,8 @@ object audioMod {
     var source: Null | AudioBufferSourceNode = js.native
     
     /**
-    	 * @default 'empty'
-    	 */
+      * @default 'empty'
+      */
     var sourceType: String = js.native
     
     def stop(): this.type = js.native

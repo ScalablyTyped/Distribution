@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -12,13 +12,13 @@ object cartMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/dist/src/general/dist/components/Cart", JSImport.Default)
   @js.native
-  val default: SFC[CartProps] = js.native
+  val default: FC[CartProps] = js.native
   
   trait CartProps
     extends StObject
        with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.undefined
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object CartProps {
     
@@ -29,14 +29,14 @@ object cartMod extends Shortcut {
     
     extension [Self <: CartProps](x: Self) {
       
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
-  type _To = SFC[CartProps]
+  type _To = FC[CartProps]
   
   /* This means you don't have to write `default`, but can instead just say `cartMod.foo` */
-  override def _to: SFC[CartProps] = default
+  override def _to: FC[CartProps] = default
 }

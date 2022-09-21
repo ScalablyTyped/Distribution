@@ -2,9 +2,9 @@ package typings.firebaseAnalytics
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.firebaseAnalytics.anon.GtagCore
-import typings.firebaseAnalyticsTypes.mod.DataLayer
-import typings.firebaseAnalyticsTypes.mod.DynamicConfig
-import typings.firebaseAnalyticsTypes.mod.MinimalDynamicConfig
+import typings.firebaseAnalytics.typesMod.DataLayer
+import typings.firebaseAnalytics.typesMod.DynamicConfig
+import typings.firebaseAnalytics.typesMod.MinimalDynamicConfig
 import typings.std.HTMLScriptElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object helpersMod {
   
-  @JSImport("@firebase/analytics/dist/src/helpers", JSImport.Namespace)
+  @JSImport("@firebase/analytics/dist/esm/src/helpers", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
@@ -20,7 +20,9 @@ object helpersMod {
   
   inline def getOrCreateDataLayer(dataLayerName: String): DataLayer = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrCreateDataLayer")(dataLayerName.asInstanceOf[js.Any]).asInstanceOf[DataLayer]
   
-  inline def insertScriptTag(dataLayerName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("insertScriptTag")(dataLayerName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def insertScriptTag(dataLayerName: String, measurementId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertScriptTag")(dataLayerName.asInstanceOf[js.Any], measurementId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def promiseAllSettled[T](promises: js.Array[js.Promise[T]]): js.Promise[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("promiseAllSettled")(promises.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[T]]]
   
   inline def wrapOrCreateGtag(
     initializationPromisesMap: StringDictionary[js.Promise[String]],

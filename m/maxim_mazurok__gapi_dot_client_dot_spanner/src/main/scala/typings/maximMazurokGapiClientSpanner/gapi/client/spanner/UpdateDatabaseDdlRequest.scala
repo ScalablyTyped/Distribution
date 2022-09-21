@@ -35,6 +35,6 @@ object UpdateDatabaseDdlRequest {
     
     inline def setStatementsUndefined: Self = StObject.set(x, "statements", js.undefined)
     
-    inline def setStatementsVarargs(value: String*): Self = StObject.set(x, "statements", js.Array(value :_*))
+    inline def setStatementsVarargs(value: String*): Self = StObject.set(x, "statements", js.Array(value*))
   }
 }

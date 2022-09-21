@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.ShapeNodes")
 @js.native
-/* private */ class ShapeNodes ()
+/* private */ open class ShapeNodes ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.ShapeNodes

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetAnomalyMonitorsResponse extends StObject {
   
   /**
-    *  A list of cost anomaly monitors that includes the detailed metadata for each monitor. 
+    * A list of cost anomaly monitors that includes the detailed metadata for each monitor. 
     */
   var AnomalyMonitors: typings.awsSdk.costexplorerMod.AnomalyMonitors
   
   /**
-    *  The token to retrieve the next set of results. AWS provides the token when the response from a previous call has more results than the maximum page size. 
+    * The token to retrieve the next set of results. Amazon Web Services provides the token when the response from a previous call has more results than the maximum page size. 
     */
   var NextPageToken: js.UndefOr[typings.awsSdk.costexplorerMod.NextPageToken] = js.undefined
 }
@@ -27,7 +27,7 @@ object GetAnomalyMonitorsResponse {
     
     inline def setAnomalyMonitors(value: AnomalyMonitors): Self = StObject.set(x, "AnomalyMonitors", value.asInstanceOf[js.Any])
     
-    inline def setAnomalyMonitorsVarargs(value: AnomalyMonitor*): Self = StObject.set(x, "AnomalyMonitors", js.Array(value :_*))
+    inline def setAnomalyMonitorsVarargs(value: AnomalyMonitor*): Self = StObject.set(x, "AnomalyMonitors", js.Array(value*))
     
     inline def setNextPageToken(value: NextPageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     

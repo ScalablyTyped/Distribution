@@ -11,7 +11,7 @@ trait ManagedConfigurationTemplate extends StObject {
   var configurationVariables: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientAndroidmanagement.maximMazurokGapiClientAndroidmanagementStrings.ManagedConfigurationTemplate & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientAndroidmanagement.maximMazurokGapiClientAndroidmanagementStrings.ManagedConfigurationTemplate & TopLevel[Any]
   ] = js.undefined
   
   /** The ID of the managed configurations template. */
@@ -29,7 +29,7 @@ object ManagedConfigurationTemplate {
     inline def setConfigurationVariables(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientAndroidmanagement.maximMazurokGapiClientAndroidmanagementStrings.ManagedConfigurationTemplate & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientAndroidmanagement.maximMazurokGapiClientAndroidmanagementStrings.ManagedConfigurationTemplate & TopLevel[Any]
     ): Self = StObject.set(x, "configurationVariables", value.asInstanceOf[js.Any])
     
     inline def setConfigurationVariablesUndefined: Self = StObject.set(x, "configurationVariables", js.undefined)

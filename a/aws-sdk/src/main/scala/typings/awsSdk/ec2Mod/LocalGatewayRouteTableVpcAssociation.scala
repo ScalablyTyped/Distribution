@@ -27,7 +27,7 @@ trait LocalGatewayRouteTableVpcAssociation extends StObject {
   var LocalGatewayRouteTableVpcAssociationId: js.UndefOr[typings.awsSdk.ec2Mod.LocalGatewayRouteTableVpcAssociationId] = js.undefined
   
   /**
-    * The AWS account ID that owns the local gateway route table for the association.
+    * The ID of the Amazon Web Services account that owns the local gateway route table for the association.
     */
   var OwnerId: js.UndefOr[String] = js.undefined
   
@@ -83,7 +83,7 @@ object LocalGatewayRouteTableVpcAssociation {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     

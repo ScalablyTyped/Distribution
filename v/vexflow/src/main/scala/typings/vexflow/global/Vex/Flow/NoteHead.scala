@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Vex.Flow.NoteHead")
 @js.native
-class NoteHead protected ()
+open class NoteHead protected ()
   extends StObject
      with typings.vexflow.Vex.Flow.NoteHead {
   def this(head_options: Customglyphcode) = this()

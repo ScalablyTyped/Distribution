@@ -19,13 +19,13 @@ object mod {
     */
   @JSImport("react-messenger-checkbox", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[ReactMessengerProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[ReactMessengerProps, js.Object, Any]
   
   /**
     * <MessengerCheckbox />
     */
-  type MessengerCheckbox = Component[ReactMessengerProps, js.Object, js.Any]
+  type MessengerCheckbox = Component[ReactMessengerProps, js.Object, Any]
   
   trait ReactMessengerProps extends StObject {
     
@@ -41,7 +41,7 @@ object mod {
     
     var language: js.UndefOr[String] = js.undefined
     
-    var onEvent: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.undefined
+    var onEvent: js.UndefOr[js.Function1[/* event */ Any, Unit]] = js.undefined
     
     var origin: String
     
@@ -90,7 +90,7 @@ object mod {
       
       inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
       
-      inline def setOnEvent(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onEvent", js.Any.fromFunction1(value))
+      inline def setOnEvent(value: /* event */ Any => Unit): Self = StObject.set(x, "onEvent", js.Any.fromFunction1(value))
       
       inline def setOnEventUndefined: Self = StObject.set(x, "onEvent", js.undefined)
       

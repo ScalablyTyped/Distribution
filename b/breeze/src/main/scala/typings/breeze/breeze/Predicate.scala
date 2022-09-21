@@ -9,18 +9,18 @@ trait Predicate extends StObject {
   def and(predicates: Predicate*): Predicate
   def and(predicates: js.Array[Predicate]): Predicate
   // for any/all clauses
-  def and(property: String, filterop: String, property2: String, filterop2: String, value: js.Any): Predicate
+  def and(property: String, filterop: String, property2: String, filterop2: String, value: Any): Predicate
   def and(
     property: String,
     filterop: FilterQueryOpSymbol,
     property2: String,
     filterop2: FilterQueryOpSymbol,
-    value: js.Any
+    value: Any
   ): Predicate
-  def and(property: String, operator: String, value: js.Any): Predicate
-  def and(property: String, operator: String, value: js.Any, valueIsLiteral: Boolean): Predicate
-  def and(property: String, operator: FilterQueryOpSymbol, value: js.Any): Predicate
-  def and(property: String, operator: FilterQueryOpSymbol, value: js.Any, valueIsLiteral: Boolean): Predicate
+  def and(property: String, operator: String, value: Any): Predicate
+  def and(property: String, operator: String, value: Any, valueIsLiteral: Boolean): Predicate
+  def and(property: String, operator: FilterQueryOpSymbol, value: Any): Predicate
+  def and(property: String, operator: FilterQueryOpSymbol, value: Any, valueIsLiteral: Boolean): Predicate
   @JSName("and")
   var and_Original: PredicateMethod
   
@@ -29,18 +29,18 @@ trait Predicate extends StObject {
   def or(predicates: Predicate*): Predicate
   def or(predicates: js.Array[Predicate]): Predicate
   // for any/all clauses
-  def or(property: String, filterop: String, property2: String, filterop2: String, value: js.Any): Predicate
+  def or(property: String, filterop: String, property2: String, filterop2: String, value: Any): Predicate
   def or(
     property: String,
     filterop: FilterQueryOpSymbol,
     property2: String,
     filterop2: FilterQueryOpSymbol,
-    value: js.Any
+    value: Any
   ): Predicate
-  def or(property: String, operator: String, value: js.Any): Predicate
-  def or(property: String, operator: String, value: js.Any, valueIsLiteral: Boolean): Predicate
-  def or(property: String, operator: FilterQueryOpSymbol, value: js.Any): Predicate
-  def or(property: String, operator: FilterQueryOpSymbol, value: js.Any, valueIsLiteral: Boolean): Predicate
+  def or(property: String, operator: String, value: Any): Predicate
+  def or(property: String, operator: String, value: Any, valueIsLiteral: Boolean): Predicate
+  def or(property: String, operator: FilterQueryOpSymbol, value: Any): Predicate
+  def or(property: String, operator: FilterQueryOpSymbol, value: Any, valueIsLiteral: Boolean): Predicate
   @JSName("or")
   var or_Original: PredicateMethod
   
@@ -48,7 +48,11 @@ trait Predicate extends StObject {
   
   def toJSON(): String
   
+  def toODataFragment(context: js.Object): String
+  
   def validate(entityType: EntityType): Unit
+  
+  def visit(context: js.Object, visitor: PredicateVisitor): Any
 }
 object Predicate {
   
@@ -58,9 +62,11 @@ object Predicate {
     or: PredicateMethod,
     toFunction: () => js.Function,
     toJSON: () => String,
-    validate: EntityType => Unit
+    toODataFragment: js.Object => String,
+    validate: EntityType => Unit,
+    visit: (js.Object, PredicateVisitor) => Any
   ): Predicate = {
-    val __obj = js.Dynamic.literal(and = and.asInstanceOf[js.Any], not = js.Any.fromFunction0(not), or = or.asInstanceOf[js.Any], toFunction = js.Any.fromFunction0(toFunction), toJSON = js.Any.fromFunction0(toJSON), validate = js.Any.fromFunction1(validate))
+    val __obj = js.Dynamic.literal(and = and.asInstanceOf[js.Any], not = js.Any.fromFunction0(not), or = or.asInstanceOf[js.Any], toFunction = js.Any.fromFunction0(toFunction), toJSON = js.Any.fromFunction0(toJSON), toODataFragment = js.Any.fromFunction1(toODataFragment), validate = js.Any.fromFunction1(validate), visit = js.Any.fromFunction2(visit))
     __obj.asInstanceOf[Predicate]
   }
   
@@ -76,6 +82,10 @@ object Predicate {
     
     inline def setToJSON(value: () => String): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
     
+    inline def setToODataFragment(value: js.Object => String): Self = StObject.set(x, "toODataFragment", js.Any.fromFunction1(value))
+    
     inline def setValidate(value: EntityType => Unit): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+    
+    inline def setVisit(value: (js.Object, PredicateVisitor) => Any): Self = StObject.set(x, "visit", js.Any.fromFunction2(value))
   }
 }

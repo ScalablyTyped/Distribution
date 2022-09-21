@@ -10,10 +10,10 @@ Highly customizable checkboxes and radio buttons (jQuery & Zepto)
 | ------------------ | :-------------: |
 | Full name          | icheck |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 32 |
-| # downloads        | 1083340 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 87012.0 |
+| # stars            | 7455.0 |
 
 ## Links
 - [Homepage](http://fronteed.com/iCheck/)

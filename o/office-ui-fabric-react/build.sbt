@@ -1,32 +1,33 @@
 organization := "org.scalablytyped"
 name := "office-ui-fabric-react"
-version := "7.152.1-87fe41"
-scalaVersion := "3.0.1"
+version := "7.197.6-7063d6"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "cheerio" % "v0.22.0-dt-20201002Z-4ba907",
-  "org.scalablytyped" %%% "csstype" % "2.6.14-dc2f99",
-  "org.scalablytyped" %%% "enzyme" % "3.10-dt-20201028Z-bcb701",
-  "org.scalablytyped" %%% "fluentui__date-time-utilities" % "7.9.0-7ae7ae",
-  "org.scalablytyped" %%% "fluentui__dom-utilities" % "1.1.1-7e3167",
-  "org.scalablytyped" %%% "fluentui__react-focus" % "7.16.18-317ba2",
-  "org.scalablytyped" %%% "fluentui__react-window-provider" % "1.0.1-2dffc6",
-  "org.scalablytyped" %%% "fluentui__theme" % "1.7.0-8a5d47",
-  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-11c649",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-3fbed9",
-  "org.scalablytyped" %%% "react" % "17.0-dt-20201121Z-4ff700",
-  "org.scalablytyped" %%% "react-dom" % "17.0-dt-20201120Z-f7391b",
-  "org.scalablytyped" %%% "react-test-renderer" % "17.0-dt-20201120Z-673318",
-  "org.scalablytyped" %%% "sinon" % "9.0-dt-20201003Z-252a0f",
-  "org.scalablytyped" %%% "sinonjs__fake-timers" % "6.0-dt-20200925Z-16986d",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab",
-  "org.scalablytyped" %%% "uifabric__foundation" % "7.9.20-6e45b6",
-  "org.scalablytyped" %%% "uifabric__icons" % "7.5.17-c87989",
-  "org.scalablytyped" %%% "uifabric__merge-styles" % "7.19.1-71d11e",
-  "org.scalablytyped" %%% "uifabric__react-hooks" % "7.13.9-3f6d7b",
-  "org.scalablytyped" %%% "uifabric__styling" % "7.16.18-e23c3e",
-  "org.scalablytyped" %%% "uifabric__utilities" % "7.33.2-5484fc")
+  "org.scalablytyped" %%% "csstype" % "3.1.1-7b6cf2",
+  "org.scalablytyped" %%% "enzyme" % "3.10-dt-20220818Z-04f4a7",
+  "org.scalablytyped" %%% "fluentui__date-time-utilities" % "8.5.2-017433",
+  "org.scalablytyped" %%% "fluentui__dom-utilities" % "2.2.2-1bc9d3",
+  "org.scalablytyped" %%% "fluentui__merge-styles" % "8.5.3-73eab6",
+  "org.scalablytyped" %%% "fluentui__react-focus" % "8.8.5-0bc2fb",
+  "org.scalablytyped" %%% "fluentui__react-window-provider" % "2.2.2-79a203",
+  "org.scalablytyped" %%% "fluentui__theme" % "2.6.16-dc9c02",
+  "org.scalablytyped" %%% "fluentui__utilities" % "8.13.1-f7fa9c",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-737217",
+  "org.scalablytyped" %%% "react" % "18.0-dt-20220913Z-bad9e4",
+  "org.scalablytyped" %%% "react-dom" % "18.0-dt-20220819Z-97775d",
+  "org.scalablytyped" %%% "react-test-renderer" % "18.0-dt-20220805Z-4fc7a3",
+  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-fce63f",
+  "org.scalablytyped" %%% "sinon" % "10.0-dt-20220720Z-a59c87",
+  "org.scalablytyped" %%% "sinonjs__fake-timers" % "8.1-dt-20220323Z-d2df15",
+  "org.scalablytyped" %%% "std" % "4.8-958c79",
+  "org.scalablytyped" %%% "uifabric__foundation" % "7.10.11-1d642f",
+  "org.scalablytyped" %%% "uifabric__icons" % "7.8.6-656a7f",
+  "org.scalablytyped" %%% "uifabric__merge-styles" % "7.20.0-50969e",
+  "org.scalablytyped" %%% "uifabric__react-hooks" % "7.16.2-e610ed",
+  "org.scalablytyped" %%% "uifabric__styling" % "7.22.3-090f0b",
+  "org.scalablytyped" %%% "uifabric__utilities" % "7.38.0-850d4c")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

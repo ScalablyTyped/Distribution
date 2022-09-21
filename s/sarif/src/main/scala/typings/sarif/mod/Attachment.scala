@@ -54,12 +54,12 @@ object Attachment {
     
     inline def setRectanglesUndefined: Self = StObject.set(x, "rectangles", js.undefined)
     
-    inline def setRectanglesVarargs(value: Rectangle*): Self = StObject.set(x, "rectangles", js.Array(value :_*))
+    inline def setRectanglesVarargs(value: Rectangle*): Self = StObject.set(x, "rectangles", js.Array(value*))
     
     inline def setRegions(value: js.Array[Region]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
     
     inline def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
     
-    inline def setRegionsVarargs(value: Region*): Self = StObject.set(x, "regions", js.Array(value :_*))
+    inline def setRegionsVarargs(value: Region*): Self = StObject.set(x, "regions", js.Array(value*))
   }
 }

@@ -9,7 +9,7 @@ trait InputConfiguration extends StObject {
   /**
     * The time the input was created.
     */
-  var creationTime: Timestamp
+  var creationTime: js.Date
   
   /**
     * The ARN of the input.
@@ -29,7 +29,7 @@ trait InputConfiguration extends StObject {
   /**
     * The last time the input was updated.
     */
-  var lastUpdateTime: Timestamp
+  var lastUpdateTime: js.Date
   
   /**
     * The status of the input.
@@ -39,10 +39,10 @@ trait InputConfiguration extends StObject {
 object InputConfiguration {
   
   inline def apply(
-    creationTime: Timestamp,
+    creationTime: js.Date,
     inputArn: InputArn,
     inputName: InputName,
-    lastUpdateTime: Timestamp,
+    lastUpdateTime: js.Date,
     status: InputStatus
   ): InputConfiguration = {
     val __obj = js.Dynamic.literal(creationTime = creationTime.asInstanceOf[js.Any], inputArn = inputArn.asInstanceOf[js.Any], inputName = inputName.asInstanceOf[js.Any], lastUpdateTime = lastUpdateTime.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
@@ -51,7 +51,7 @@ object InputConfiguration {
   
   extension [Self <: InputConfiguration](x: Self) {
     
-    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: js.Date): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
     inline def setInputArn(value: InputArn): Self = StObject.set(x, "inputArn", value.asInstanceOf[js.Any])
     
@@ -61,7 +61,7 @@ object InputConfiguration {
     
     inline def setInputName(value: InputName): Self = StObject.set(x, "inputName", value.asInstanceOf[js.Any])
     
-    inline def setLastUpdateTime(value: Timestamp): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdateTime(value: js.Date): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
     
     inline def setStatus(value: InputStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

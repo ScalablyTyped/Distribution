@@ -9,7 +9,7 @@ trait WebCLDevice extends StObject {
   
   def enableExtension(extensionName: String): Boolean
   
-  def getInfo(name: DeviceInfo): js.Any
+  def getInfo(name: DeviceInfo): Any
   
   def getSupportedExtensions(): js.Array[String]
 }
@@ -17,7 +17,7 @@ object WebCLDevice {
   
   inline def apply(
     enableExtension: String => Boolean,
-    getInfo: DeviceInfo => js.Any,
+    getInfo: DeviceInfo => Any,
     getSupportedExtensions: () => js.Array[String]
   ): WebCLDevice = {
     val __obj = js.Dynamic.literal(enableExtension = js.Any.fromFunction1(enableExtension), getInfo = js.Any.fromFunction1(getInfo), getSupportedExtensions = js.Any.fromFunction0(getSupportedExtensions))
@@ -28,7 +28,7 @@ object WebCLDevice {
     
     inline def setEnableExtension(value: String => Boolean): Self = StObject.set(x, "enableExtension", js.Any.fromFunction1(value))
     
-    inline def setGetInfo(value: DeviceInfo => js.Any): Self = StObject.set(x, "getInfo", js.Any.fromFunction1(value))
+    inline def setGetInfo(value: DeviceInfo => Any): Self = StObject.set(x, "getInfo", js.Any.fromFunction1(value))
     
     inline def setGetSupportedExtensions(value: () => js.Array[String]): Self = StObject.set(x, "getSupportedExtensions", js.Any.fromFunction0(value))
   }

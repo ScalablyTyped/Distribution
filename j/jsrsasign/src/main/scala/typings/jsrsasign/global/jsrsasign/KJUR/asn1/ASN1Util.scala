@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** ASN1 utilities class */
 @JSGlobal("jsrsasign.KJUR.asn1.ASN1Util")
 @js.native
-class ASN1Util ()
+open class ASN1Util ()
   extends typings.jsrsasign.mod.KJUR.asn1.ASN1Util
 object ASN1Util {
   

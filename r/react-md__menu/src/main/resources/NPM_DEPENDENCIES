@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@react-md/menu" : "2.4.3"
+      "@react-md/menu" : "5.1.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@react-md/menu" : "2.4.3"
+      "@react-md/menu" : "5.1.4"
     }
   ],
   "compile-devDependencies" : [

@@ -10,13 +10,13 @@ object anon {
     
     val CancelDefault: Boolean
     
-    val CommandBarControl: js.Any
+    val CommandBarControl: Any
     
     val handled: Boolean
   }
   object CancelDefault {
     
-    inline def apply(CancelDefault: Boolean, CommandBarControl: js.Any, handled: Boolean): CancelDefault = {
+    inline def apply(CancelDefault: Boolean, CommandBarControl: Any, handled: Boolean): CancelDefault = {
       val __obj = js.Dynamic.literal(CancelDefault = CancelDefault.asInstanceOf[js.Any], CommandBarControl = CommandBarControl.asInstanceOf[js.Any], handled = handled.asInstanceOf[js.Any])
       __obj.asInstanceOf[CancelDefault]
     }
@@ -25,7 +25,7 @@ object anon {
       
       inline def setCancelDefault(value: Boolean): Self = StObject.set(x, "CancelDefault", value.asInstanceOf[js.Any])
       
-      inline def setCommandBarControl(value: js.Any): Self = StObject.set(x, "CommandBarControl", value.asInstanceOf[js.Any])
+      inline def setCommandBarControl(value: Any): Self = StObject.set(x, "CommandBarControl", value.asInstanceOf[js.Any])
       
       inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
     }

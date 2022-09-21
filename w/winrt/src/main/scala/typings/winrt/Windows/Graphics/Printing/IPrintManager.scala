@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IPrintManager extends StObject {
   
-  var onprinttaskrequested: js.Any
+  var onprinttaskrequested: Any
 }
 object IPrintManager {
   
-  inline def apply(onprinttaskrequested: js.Any): IPrintManager = {
+  inline def apply(onprinttaskrequested: Any): IPrintManager = {
     val __obj = js.Dynamic.literal(onprinttaskrequested = onprinttaskrequested.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPrintManager]
   }
   
   extension [Self <: IPrintManager](x: Self) {
     
-    inline def setOnprinttaskrequested(value: js.Any): Self = StObject.set(x, "onprinttaskrequested", value.asInstanceOf[js.Any])
+    inline def setOnprinttaskrequested(value: Any): Self = StObject.set(x, "onprinttaskrequested", value.asInstanceOf[js.Any])
   }
 }

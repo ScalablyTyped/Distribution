@@ -5,7 +5,6 @@ import typings.react.mod.ReactNode
 import typings.reactMailchimpSubscribe.reactMailchimpSubscribeStrings.error
 import typings.reactMailchimpSubscribe.reactMailchimpSubscribeStrings.sending
 import typings.reactMailchimpSubscribe.reactMailchimpSubscribeStrings.success
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,8 +13,8 @@ object mod {
   
   @JSImport("react-mailchimp-subscribe", JSImport.Default)
   @js.native
-  class default[FormFields] ()
-    extends Component[Props[FormFields], js.Object, js.Any]
+  open class default[FormFields] ()
+    extends Component[Props[FormFields], js.Object, Any]
   
   trait ClassicFormFields
     extends StObject
@@ -65,28 +64,28 @@ object mod {
     extends StObject
        with ResponseArgs {
     
-    var message: String | Error
+    var message: String | js.Error
     
     var status: error
   }
   object ErrorResponseArgs {
     
-    inline def apply(message: String | Error): ErrorResponseArgs = {
+    inline def apply(message: String | js.Error): ErrorResponseArgs = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], status = "error")
       __obj.asInstanceOf[ErrorResponseArgs]
     }
     
     extension [Self <: ErrorResponseArgs](x: Self) {
       
-      inline def setMessage(value: String | Error): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String | js.Error): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
       inline def setStatus(value: error): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
-  type FormHooks[FormFields] = SubscribeArg[FormFields] & (ErrorResponseArgs | SuccessResponseArgs | PendingArgs)
+  type FormHooks[FormFields] = (ErrorResponseArgs & SubscribeArg[FormFields]) | (SuccessResponseArgs & SubscribeArg[FormFields]) | (PendingArgs & SubscribeArg[FormFields])
   
-  type MailchimpSubscribe[FormFields] = Component[Props[FormFields], js.Object, js.Any]
+  type MailchimpSubscribe[FormFields] = Component[Props[FormFields], js.Object, Any]
   
   trait NameFormFields
     extends StObject
@@ -164,7 +163,7 @@ object mod {
   trait ResponseArgs extends StObject
   object ResponseArgs {
     
-    inline def ErrorResponseArgs(message: String | Error): typings.reactMailchimpSubscribe.mod.ErrorResponseArgs = {
+    inline def ErrorResponseArgs(message: String | js.Error): typings.reactMailchimpSubscribe.mod.ErrorResponseArgs = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], status = "error")
       __obj.asInstanceOf[typings.reactMailchimpSubscribe.mod.ErrorResponseArgs]
     }

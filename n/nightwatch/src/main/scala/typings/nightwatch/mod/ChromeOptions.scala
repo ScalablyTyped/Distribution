@@ -70,11 +70,6 @@ trait ChromeOptions extends StObject {
   var prefs: js.UndefOr[Record[String, String]] = js.undefined
   
   /**
-    * Flag to activate W3C WebDriver API. Chromedriver (as of version 2.41 at least) simply does not support the W3C WebDriver API.
-    */
-  var w3c: js.UndefOr[Boolean] = js.undefined
-  
-  /**
     * A list of window types that will appear in the list of window handles. For access to <webview> elements, include "webview" in this list.
     */
   var windowTypes: js.UndefOr[js.Array[String]] = js.undefined
@@ -92,7 +87,7 @@ object ChromeOptions {
     
     inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
     
     inline def setBinary(value: String): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
     
@@ -110,13 +105,13 @@ object ChromeOptions {
     
     inline def setExcludeSwitchesUndefined: Self = StObject.set(x, "excludeSwitches", js.undefined)
     
-    inline def setExcludeSwitchesVarargs(value: String*): Self = StObject.set(x, "excludeSwitches", js.Array(value :_*))
+    inline def setExcludeSwitchesVarargs(value: String*): Self = StObject.set(x, "excludeSwitches", js.Array(value*))
     
     inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
     inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
-    inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+    inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value*))
     
     inline def setLocalState(value: Record[String, String]): Self = StObject.set(x, "localState", value.asInstanceOf[js.Any])
     
@@ -138,14 +133,10 @@ object ChromeOptions {
     
     inline def setPrefsUndefined: Self = StObject.set(x, "prefs", js.undefined)
     
-    inline def setW3c(value: Boolean): Self = StObject.set(x, "w3c", value.asInstanceOf[js.Any])
-    
-    inline def setW3cUndefined: Self = StObject.set(x, "w3c", js.undefined)
-    
     inline def setWindowTypes(value: js.Array[String]): Self = StObject.set(x, "windowTypes", value.asInstanceOf[js.Any])
     
     inline def setWindowTypesUndefined: Self = StObject.set(x, "windowTypes", js.undefined)
     
-    inline def setWindowTypesVarargs(value: String*): Self = StObject.set(x, "windowTypes", js.Array(value :_*))
+    inline def setWindowTypesVarargs(value: String*): Self = StObject.set(x, "windowTypes", js.Array(value*))
   }
 }

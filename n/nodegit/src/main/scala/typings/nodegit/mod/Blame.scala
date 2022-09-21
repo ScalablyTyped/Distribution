@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "Blame")
 @js.native
-class Blame ()
+open class Blame ()
   extends typings.nodegit.blameMod.Blame
 /* static members */
 object Blame {

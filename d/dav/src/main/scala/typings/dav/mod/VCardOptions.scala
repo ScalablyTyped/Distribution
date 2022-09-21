@@ -11,7 +11,7 @@ trait VCardOptions extends StObject {
   
   var addressData: js.UndefOr[String] = js.undefined
   
-  var constructor: js.UndefOr[js.Function1[/* options */ js.UndefOr[this.type], js.Any]] = js.undefined
+  var constructor: js.UndefOr[js.Function1[/* options */ js.UndefOr[this.type], Any]] = js.undefined
   
   var data: js.UndefOr[String] = js.undefined
   
@@ -36,7 +36,7 @@ object VCardOptions {
     
     inline def setAddressDataUndefined: Self = StObject.set(x, "addressData", js.undefined)
     
-    inline def setConstructor(value: /* options */ js.UndefOr[VCardOptions] => js.Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
+    inline def setConstructor(value: /* options */ js.UndefOr[VCardOptions] => Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
     
     inline def setConstructorUndefined: Self = StObject.set(x, "constructor", js.undefined)
     

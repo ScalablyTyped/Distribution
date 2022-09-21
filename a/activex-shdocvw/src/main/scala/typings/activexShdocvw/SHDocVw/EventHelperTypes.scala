@@ -27,28 +27,28 @@ object EventHelperTypes {
     
     var Cancel: Boolean
     
-    val Flags: js.Any
+    val Flags: Any
     
-    val Headers: js.Any
+    val Headers: Any
     
-    val PostData: js.Any
+    val PostData: Any
     
-    val TargetFrameName: js.Any
+    val TargetFrameName: Any
     
-    val URL: js.Any
+    val URL: Any
     
-    val pDisp: js.Any
+    val pDisp: Any
   }
   object InternetExplorerBeforeNavigate2Parameter {
     
     inline def apply(
       Cancel: Boolean,
-      Flags: js.Any,
-      Headers: js.Any,
-      PostData: js.Any,
-      TargetFrameName: js.Any,
-      URL: js.Any,
-      pDisp: js.Any
+      Flags: Any,
+      Headers: Any,
+      PostData: Any,
+      TargetFrameName: Any,
+      URL: Any,
+      pDisp: Any
     ): InternetExplorerBeforeNavigate2Parameter = {
       val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Flags = Flags.asInstanceOf[js.Any], Headers = Headers.asInstanceOf[js.Any], PostData = PostData.asInstanceOf[js.Any], TargetFrameName = TargetFrameName.asInstanceOf[js.Any], URL = URL.asInstanceOf[js.Any], pDisp = pDisp.asInstanceOf[js.Any])
       __obj.asInstanceOf[InternetExplorerBeforeNavigate2Parameter]
@@ -58,17 +58,17 @@ object EventHelperTypes {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
       
-      inline def setFlags(value: js.Any): Self = StObject.set(x, "Flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: Any): Self = StObject.set(x, "Flags", value.asInstanceOf[js.Any])
       
-      inline def setHeaders(value: js.Any): Self = StObject.set(x, "Headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Any): Self = StObject.set(x, "Headers", value.asInstanceOf[js.Any])
       
-      inline def setPDisp(value: js.Any): Self = StObject.set(x, "pDisp", value.asInstanceOf[js.Any])
+      inline def setPDisp(value: Any): Self = StObject.set(x, "pDisp", value.asInstanceOf[js.Any])
       
-      inline def setPostData(value: js.Any): Self = StObject.set(x, "PostData", value.asInstanceOf[js.Any])
+      inline def setPostData(value: Any): Self = StObject.set(x, "PostData", value.asInstanceOf[js.Any])
       
-      inline def setTargetFrameName(value: js.Any): Self = StObject.set(x, "TargetFrameName", value.asInstanceOf[js.Any])
+      inline def setTargetFrameName(value: Any): Self = StObject.set(x, "TargetFrameName", value.asInstanceOf[js.Any])
       
-      inline def setURL(value: js.Any): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
+      inline def setURL(value: Any): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
     }
   }
   
@@ -78,28 +78,28 @@ object EventHelperTypes {
     
     var Cancel: Boolean
     
-    val Flags: js.Any
+    val Flags: Any
     
-    val Headers: js.Any
+    val Headers: Any
     
-    val PostData: js.Any
+    val PostData: Any
     
-    val TargetFrameName: js.Any
+    val TargetFrameName: Any
     
-    val URL: js.Any
+    val URL: Any
     
-    val pDisp: js.Any
+    val pDisp: Any
   }
   object InternetExplorerMediumBeforeNavigate2Parameter {
     
     inline def apply(
       Cancel: Boolean,
-      Flags: js.Any,
-      Headers: js.Any,
-      PostData: js.Any,
-      TargetFrameName: js.Any,
-      URL: js.Any,
-      pDisp: js.Any
+      Flags: Any,
+      Headers: Any,
+      PostData: Any,
+      TargetFrameName: Any,
+      URL: Any,
+      pDisp: Any
     ): InternetExplorerMediumBeforeNavigate2Parameter = {
       val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Flags = Flags.asInstanceOf[js.Any], Headers = Headers.asInstanceOf[js.Any], PostData = PostData.asInstanceOf[js.Any], TargetFrameName = TargetFrameName.asInstanceOf[js.Any], URL = URL.asInstanceOf[js.Any], pDisp = pDisp.asInstanceOf[js.Any])
       __obj.asInstanceOf[InternetExplorerMediumBeforeNavigate2Parameter]
@@ -109,17 +109,17 @@ object EventHelperTypes {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
       
-      inline def setFlags(value: js.Any): Self = StObject.set(x, "Flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: Any): Self = StObject.set(x, "Flags", value.asInstanceOf[js.Any])
       
-      inline def setHeaders(value: js.Any): Self = StObject.set(x, "Headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Any): Self = StObject.set(x, "Headers", value.asInstanceOf[js.Any])
       
-      inline def setPDisp(value: js.Any): Self = StObject.set(x, "pDisp", value.asInstanceOf[js.Any])
+      inline def setPDisp(value: Any): Self = StObject.set(x, "pDisp", value.asInstanceOf[js.Any])
       
-      inline def setPostData(value: js.Any): Self = StObject.set(x, "PostData", value.asInstanceOf[js.Any])
+      inline def setPostData(value: Any): Self = StObject.set(x, "PostData", value.asInstanceOf[js.Any])
       
-      inline def setTargetFrameName(value: js.Any): Self = StObject.set(x, "TargetFrameName", value.asInstanceOf[js.Any])
+      inline def setTargetFrameName(value: Any): Self = StObject.set(x, "TargetFrameName", value.asInstanceOf[js.Any])
       
-      inline def setURL(value: js.Any): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
+      inline def setURL(value: Any): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
     }
   }
   
@@ -129,28 +129,28 @@ object EventHelperTypes {
     
     var Cancel: Boolean
     
-    val Flags: js.Any
+    val Flags: Any
     
-    val Headers: js.Any
+    val Headers: Any
     
-    val PostData: js.Any
+    val PostData: Any
     
-    val TargetFrameName: js.Any
+    val TargetFrameName: Any
     
-    val URL: js.Any
+    val URL: Any
     
-    val pDisp: js.Any
+    val pDisp: Any
   }
   object ShellBrowserWindowBeforeNavigate2Parameter {
     
     inline def apply(
       Cancel: Boolean,
-      Flags: js.Any,
-      Headers: js.Any,
-      PostData: js.Any,
-      TargetFrameName: js.Any,
-      URL: js.Any,
-      pDisp: js.Any
+      Flags: Any,
+      Headers: Any,
+      PostData: Any,
+      TargetFrameName: Any,
+      URL: Any,
+      pDisp: Any
     ): ShellBrowserWindowBeforeNavigate2Parameter = {
       val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Flags = Flags.asInstanceOf[js.Any], Headers = Headers.asInstanceOf[js.Any], PostData = PostData.asInstanceOf[js.Any], TargetFrameName = TargetFrameName.asInstanceOf[js.Any], URL = URL.asInstanceOf[js.Any], pDisp = pDisp.asInstanceOf[js.Any])
       __obj.asInstanceOf[ShellBrowserWindowBeforeNavigate2Parameter]
@@ -160,17 +160,17 @@ object EventHelperTypes {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
       
-      inline def setFlags(value: js.Any): Self = StObject.set(x, "Flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: Any): Self = StObject.set(x, "Flags", value.asInstanceOf[js.Any])
       
-      inline def setHeaders(value: js.Any): Self = StObject.set(x, "Headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Any): Self = StObject.set(x, "Headers", value.asInstanceOf[js.Any])
       
-      inline def setPDisp(value: js.Any): Self = StObject.set(x, "pDisp", value.asInstanceOf[js.Any])
+      inline def setPDisp(value: Any): Self = StObject.set(x, "pDisp", value.asInstanceOf[js.Any])
       
-      inline def setPostData(value: js.Any): Self = StObject.set(x, "PostData", value.asInstanceOf[js.Any])
+      inline def setPostData(value: Any): Self = StObject.set(x, "PostData", value.asInstanceOf[js.Any])
       
-      inline def setTargetFrameName(value: js.Any): Self = StObject.set(x, "TargetFrameName", value.asInstanceOf[js.Any])
+      inline def setTargetFrameName(value: Any): Self = StObject.set(x, "TargetFrameName", value.asInstanceOf[js.Any])
       
-      inline def setURL(value: js.Any): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
+      inline def setURL(value: Any): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
     }
   }
   
@@ -231,28 +231,28 @@ object EventHelperTypes {
     
     var Cancel: Boolean
     
-    val Flags: js.Any
+    val Flags: Any
     
-    val Headers: js.Any
+    val Headers: Any
     
-    val PostData: js.Any
+    val PostData: Any
     
-    val TargetFrameName: js.Any
+    val TargetFrameName: Any
     
-    val URL: js.Any
+    val URL: Any
     
-    val pDisp: js.Any
+    val pDisp: Any
   }
   object WebBrowserBeforeNavigate2Parameter {
     
     inline def apply(
       Cancel: Boolean,
-      Flags: js.Any,
-      Headers: js.Any,
-      PostData: js.Any,
-      TargetFrameName: js.Any,
-      URL: js.Any,
-      pDisp: js.Any
+      Flags: Any,
+      Headers: Any,
+      PostData: Any,
+      TargetFrameName: Any,
+      URL: Any,
+      pDisp: Any
     ): WebBrowserBeforeNavigate2Parameter = {
       val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Flags = Flags.asInstanceOf[js.Any], Headers = Headers.asInstanceOf[js.Any], PostData = PostData.asInstanceOf[js.Any], TargetFrameName = TargetFrameName.asInstanceOf[js.Any], URL = URL.asInstanceOf[js.Any], pDisp = pDisp.asInstanceOf[js.Any])
       __obj.asInstanceOf[WebBrowserBeforeNavigate2Parameter]
@@ -262,17 +262,17 @@ object EventHelperTypes {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
       
-      inline def setFlags(value: js.Any): Self = StObject.set(x, "Flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: Any): Self = StObject.set(x, "Flags", value.asInstanceOf[js.Any])
       
-      inline def setHeaders(value: js.Any): Self = StObject.set(x, "Headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Any): Self = StObject.set(x, "Headers", value.asInstanceOf[js.Any])
       
-      inline def setPDisp(value: js.Any): Self = StObject.set(x, "pDisp", value.asInstanceOf[js.Any])
+      inline def setPDisp(value: Any): Self = StObject.set(x, "pDisp", value.asInstanceOf[js.Any])
       
-      inline def setPostData(value: js.Any): Self = StObject.set(x, "PostData", value.asInstanceOf[js.Any])
+      inline def setPostData(value: Any): Self = StObject.set(x, "PostData", value.asInstanceOf[js.Any])
       
-      inline def setTargetFrameName(value: js.Any): Self = StObject.set(x, "TargetFrameName", value.asInstanceOf[js.Any])
+      inline def setTargetFrameName(value: Any): Self = StObject.set(x, "TargetFrameName", value.asInstanceOf[js.Any])
       
-      inline def setURL(value: js.Any): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
+      inline def setURL(value: Any): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
     }
   }
   
@@ -286,7 +286,7 @@ object EventHelperTypes {
     
     val Headers: String
     
-    val PostData: js.Any
+    val PostData: Any
     
     val TargetFrameName: String
     
@@ -298,7 +298,7 @@ object EventHelperTypes {
       Cancel: Boolean,
       Flags: Double,
       Headers: String,
-      PostData: js.Any,
+      PostData: Any,
       TargetFrameName: String,
       URL: String
     ): WebBrowserV1BeforeNavigateParameter = {
@@ -314,7 +314,7 @@ object EventHelperTypes {
       
       inline def setHeaders(value: String): Self = StObject.set(x, "Headers", value.asInstanceOf[js.Any])
       
-      inline def setPostData(value: js.Any): Self = StObject.set(x, "PostData", value.asInstanceOf[js.Any])
+      inline def setPostData(value: Any): Self = StObject.set(x, "PostData", value.asInstanceOf[js.Any])
       
       inline def setTargetFrameName(value: String): Self = StObject.set(x, "TargetFrameName", value.asInstanceOf[js.Any])
       
@@ -332,7 +332,7 @@ object EventHelperTypes {
     
     val Headers: String
     
-    val PostData: js.Any
+    val PostData: Any
     
     val TargetFrameName: String
     
@@ -344,7 +344,7 @@ object EventHelperTypes {
       Cancel: Boolean,
       Flags: Double,
       Headers: String,
-      PostData: js.Any,
+      PostData: Any,
       TargetFrameName: String,
       URL: String
     ): WebBrowserV1FrameBeforeNavigateParameter = {
@@ -360,7 +360,7 @@ object EventHelperTypes {
       
       inline def setHeaders(value: String): Self = StObject.set(x, "Headers", value.asInstanceOf[js.Any])
       
-      inline def setPostData(value: js.Any): Self = StObject.set(x, "PostData", value.asInstanceOf[js.Any])
+      inline def setPostData(value: Any): Self = StObject.set(x, "PostData", value.asInstanceOf[js.Any])
       
       inline def setTargetFrameName(value: String): Self = StObject.set(x, "TargetFrameName", value.asInstanceOf[js.Any])
       
@@ -376,7 +376,7 @@ object EventHelperTypes {
     
     val Headers: String
     
-    val PostData: js.Any
+    val PostData: Any
     
     var Processed: Boolean
     
@@ -389,7 +389,7 @@ object EventHelperTypes {
     inline def apply(
       Flags: Double,
       Headers: String,
-      PostData: js.Any,
+      PostData: Any,
       Processed: Boolean,
       TargetFrameName: String,
       URL: String
@@ -404,7 +404,7 @@ object EventHelperTypes {
       
       inline def setHeaders(value: String): Self = StObject.set(x, "Headers", value.asInstanceOf[js.Any])
       
-      inline def setPostData(value: js.Any): Self = StObject.set(x, "PostData", value.asInstanceOf[js.Any])
+      inline def setPostData(value: Any): Self = StObject.set(x, "PostData", value.asInstanceOf[js.Any])
       
       inline def setProcessed(value: Boolean): Self = StObject.set(x, "Processed", value.asInstanceOf[js.Any])
       
@@ -422,7 +422,7 @@ object EventHelperTypes {
     
     val Headers: String
     
-    val PostData: js.Any
+    val PostData: Any
     
     var Processed: Boolean
     
@@ -435,7 +435,7 @@ object EventHelperTypes {
     inline def apply(
       Flags: Double,
       Headers: String,
-      PostData: js.Any,
+      PostData: Any,
       Processed: Boolean,
       TargetFrameName: String,
       URL: String
@@ -450,7 +450,7 @@ object EventHelperTypes {
       
       inline def setHeaders(value: String): Self = StObject.set(x, "Headers", value.asInstanceOf[js.Any])
       
-      inline def setPostData(value: js.Any): Self = StObject.set(x, "PostData", value.asInstanceOf[js.Any])
+      inline def setPostData(value: Any): Self = StObject.set(x, "PostData", value.asInstanceOf[js.Any])
       
       inline def setProcessed(value: Boolean): Self = StObject.set(x, "Processed", value.asInstanceOf[js.Any])
       

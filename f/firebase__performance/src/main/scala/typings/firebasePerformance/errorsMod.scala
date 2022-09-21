@@ -2,6 +2,7 @@ package typings.firebasePerformance
 
 import typings.firebasePerformance.firebasePerformanceStrings.`FB not default`
 import typings.firebasePerformance.firebasePerformanceStrings.`RC response not ok`
+import typings.firebasePerformance.firebasePerformanceStrings.`already initialized`
 import typings.firebasePerformance.firebasePerformanceStrings.`invalid String merger input`
 import typings.firebasePerformance.firebasePerformanceStrings.`invalid attribute name`
 import typings.firebasePerformance.firebasePerformanceStrings.`invalid attribute value`
@@ -42,9 +43,12 @@ object errorsMod {
     - typings.firebasePerformance.firebasePerformanceStrings.`invalid attribute value`
     - typings.firebasePerformance.firebasePerformanceStrings.`invalid custom metric name`
     - typings.firebasePerformance.firebasePerformanceStrings.`invalid String merger input`
+    - typings.firebasePerformance.firebasePerformanceStrings.`already initialized`
   */
   trait ErrorCode extends StObject
   object ErrorCode {
+    
+    inline def ALREADY_INITIALIZED: `already initialized` = ("already initialized").asInstanceOf[`already initialized`]
     
     inline def FB_NOT_DEFAULT: `FB not default` = ("FB not default").asInstanceOf[`FB not default`]
     

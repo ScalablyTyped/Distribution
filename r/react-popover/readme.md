@@ -11,9 +11,9 @@ A specification backed popover for react
 | Full name          | react-popover |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 45 |
-| # downloads        | 1639131 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 152738.33333333334 |
+| # stars            | 598.0 |
 
 ## Links
 - [Homepage](https://github.com/littlebits/react-popover)

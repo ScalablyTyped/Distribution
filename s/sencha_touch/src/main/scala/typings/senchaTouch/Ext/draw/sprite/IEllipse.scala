@@ -28,7 +28,7 @@ trait IEllipse
     * @param attr Object
     */
   @JSName("updatePath")
-  var updatePath_IEllipse: js.UndefOr[js.Function2[/* path */ js.UndefOr[js.Any], /* attr */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var updatePath_IEllipse: js.UndefOr[js.Function2[/* path */ js.UndefOr[Any], /* attr */ js.UndefOr[Any], Unit]] = js.undefined
 }
 object IEllipse {
   
@@ -59,7 +59,7 @@ object IEllipse {
     
     inline def setRyUndefined: Self = StObject.set(x, "ry", js.undefined)
     
-    inline def setUpdatePath(value: (/* path */ js.UndefOr[js.Any], /* attr */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "updatePath", js.Any.fromFunction2(value))
+    inline def setUpdatePath(value: (/* path */ js.UndefOr[Any], /* attr */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "updatePath", js.Any.fromFunction2(value))
     
     inline def setUpdatePathUndefined: Self = StObject.set(x, "updatePath", js.undefined)
   }

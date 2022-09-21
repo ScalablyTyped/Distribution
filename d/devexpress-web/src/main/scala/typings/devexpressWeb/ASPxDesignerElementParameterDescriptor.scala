@@ -12,13 +12,13 @@ trait ASPxDesignerElementParameterDescriptor extends StObject {
   
   var `type`: String
   
-  var value: js.Any
+  var value: Any
   
   var visible: Boolean
 }
 object ASPxDesignerElementParameterDescriptor {
   
-  inline def apply(description: String, name: String, `type`: String, value: js.Any, visible: Boolean): ASPxDesignerElementParameterDescriptor = {
+  inline def apply(description: String, name: String, `type`: String, value: Any, visible: Boolean): ASPxDesignerElementParameterDescriptor = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxDesignerElementParameterDescriptor]
@@ -32,7 +32,7 @@ object ASPxDesignerElementParameterDescriptor {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }

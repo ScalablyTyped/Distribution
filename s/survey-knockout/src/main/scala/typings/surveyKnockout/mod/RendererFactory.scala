@@ -6,13 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("survey-knockout", "RendererFactory")
 @js.native
-class RendererFactory () extends StObject {
+open class RendererFactory () extends StObject {
   
-  def getRenderer(questionType: String, renderAs: String): js.Any = js.native
+  def clear(): Unit = js.native
   
-  def getRendererByQuestion(question: Question): js.Any = js.native
+  def getRenderer(questionType: String, renderAs: String): Any = js.native
   
-  def registerRenderer(questionType: String, renderAs: String, renderer: js.Any): Unit = js.native
+  def getRendererByQuestion(question: Question): Any = js.native
+  
+  def registerRenderer(questionType: String, renderAs: String, renderer: Any): Unit = js.native
+  
+  var renderersHash: Any = js.native
   
   def unregisterRenderer(questionType: String, rendererAs: String): Unit = js.native
 }

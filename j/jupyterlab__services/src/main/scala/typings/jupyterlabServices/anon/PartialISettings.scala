@@ -11,16 +11,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PartialISettings extends StObject {
   
   var Headers: js.UndefOr[
-    /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Headers */ js.Any
+    /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Headers */ Any
   ] = js.undefined
   
   var Request: js.UndefOr[
-    /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Request */ js.Any
+    /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Request */ Any
   ] = js.undefined
   
   var WebSocket: js.UndefOr[TypeofWebSocket] = js.undefined
   
   var appUrl: js.UndefOr[String] = js.undefined
+  
+  var appendToken: js.UndefOr[Boolean] = js.undefined
   
   var baseUrl: js.UndefOr[String] = js.undefined
   
@@ -47,6 +49,10 @@ object PartialISettings {
     
     inline def setAppUrlUndefined: Self = StObject.set(x, "appUrl", js.undefined)
     
+    inline def setAppendToken(value: Boolean): Self = StObject.set(x, "appendToken", value.asInstanceOf[js.Any])
+    
+    inline def setAppendTokenUndefined: Self = StObject.set(x, "appendToken", js.undefined)
+    
     inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
     
     inline def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
@@ -55,7 +61,7 @@ object PartialISettings {
     
     inline def setFetchUndefined: Self = StObject.set(x, "fetch", js.undefined)
     
-    inline def setHeaders(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Headers */ js.Any): Self = StObject.set(x, "Headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Headers */ Any): Self = StObject.set(x, "Headers", value.asInstanceOf[js.Any])
     
     inline def setHeadersUndefined: Self = StObject.set(x, "Headers", js.undefined)
     
@@ -63,7 +69,7 @@ object PartialISettings {
     
     inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
-    inline def setRequest(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Request */ js.Any): Self = StObject.set(x, "Request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Request */ Any): Self = StObject.set(x, "Request", value.asInstanceOf[js.Any])
     
     inline def setRequestUndefined: Self = StObject.set(x, "Request", js.undefined)
     

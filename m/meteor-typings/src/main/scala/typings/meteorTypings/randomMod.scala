@@ -13,7 +13,7 @@ object randomMod {
     val ^ : js.Any = js.native
     
     // @param array, @return a random element in array
-    inline def choice(array: js.Array[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("choice")(array.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def choice(array: js.Array[Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("choice")(array.asInstanceOf[js.Any]).asInstanceOf[String]
     // @param str, @return a random char in str
     inline def choice(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("choice")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     

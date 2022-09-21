@@ -12,15 +12,15 @@ trait IsUpdating extends StObject {
   
   var capture: Boolean
   
-  var container: js.Any
+  var container: Any
   
   var defaultCfg: TextBackground
   
-  var end: js.Any
+  var end: Any
   
-  var events: js.Any
+  var events: Any
   
-  var group: js.Any
+  var group: Any
   
   var id: String
   
@@ -38,9 +38,9 @@ trait IsUpdating extends StObject {
   
   var offsetY: Double
   
-  var start: js.Any
+  var start: Any
   
-  var text: js.Any
+  var text: Any
   
   var `type`: String
   
@@ -54,11 +54,11 @@ object IsUpdating {
     animate: Boolean,
     animateOption: Appear,
     capture: Boolean,
-    container: js.Any,
+    container: Any,
     defaultCfg: TextBackground,
-    end: js.Any,
-    events: js.Any,
-    group: js.Any,
+    end: Any,
+    events: Any,
+    group: Any,
     id: String,
     isInit: Boolean,
     isRegister: Boolean,
@@ -67,8 +67,8 @@ object IsUpdating {
     name: String,
     offsetX: Double,
     offsetY: Double,
-    start: js.Any,
-    text: js.Any,
+    start: Any,
+    text: Any,
     `type`: String,
     updateAutoRender: Boolean,
     visible: Boolean
@@ -86,15 +86,15 @@ object IsUpdating {
     
     inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
-    inline def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     inline def setDefaultCfg(value: TextBackground): Self = StObject.set(x, "defaultCfg", value.asInstanceOf[js.Any])
     
-    inline def setEnd(value: js.Any): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Any): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    inline def setGroup(value: js.Any): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: Any): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -112,9 +112,9 @@ object IsUpdating {
     
     inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
-    inline def setStart(value: js.Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    inline def setText(value: js.Any): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: Any): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

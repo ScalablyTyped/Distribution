@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface describing the data returned by calling "selection.toJSON()". */
+/** An interface describing the data returned by calling `selection.toJSON()`. */
 trait SelectionData extends StObject {
   
   /**
@@ -28,6 +28,6 @@ object SelectionData {
     
     inline def setShapesUndefined: Self = StObject.set(x, "shapes", js.undefined)
     
-    inline def setShapesVarargs(value: ShapeData*): Self = StObject.set(x, "shapes", js.Array(value :_*))
+    inline def setShapesVarargs(value: ShapeData*): Self = StObject.set(x, "shapes", js.Array(value*))
   }
 }

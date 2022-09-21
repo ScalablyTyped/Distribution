@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(pkg: Record[String, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].apply(pkg.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def apply(pkg: Record[String, js.Any], opts: PartialOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(pkg.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(pkg: Record[String, Any]): Unit = ^.asInstanceOf[js.Dynamic].apply(pkg.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(pkg: Record[String, Any], opts: PartialOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(pkg.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("please-upgrade-node", JSImport.Namespace)
   @js.native

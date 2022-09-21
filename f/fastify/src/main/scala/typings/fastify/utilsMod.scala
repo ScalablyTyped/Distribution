@@ -1,5 +1,6 @@
 package typings.fastify
 
+import org.scalablytyped.runtime.Instantiable1
 import typings.node.http2Mod.Http2SecureServer
 import typings.node.http2Mod.Http2Server
 import typings.node.http2Mod.Http2ServerRequest
@@ -7,13 +8,14 @@ import typings.node.http2Mod.Http2ServerResponse
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.Server
 import typings.node.httpMod.ServerResponse
+import typings.node.nodeNetMod.Socket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
-  type ContextConfigDefault = js.Any
+  type ContextConfigDefault = Any
   
   /* Rewritten from type alias, can be one of: 
     - typings.fastify.fastifyStrings.DELETE
@@ -23,9 +25,20 @@ object utilsMod {
     - typings.fastify.fastifyStrings.POST
     - typings.fastify.fastifyStrings.PUT
     - typings.fastify.fastifyStrings.OPTIONS
+    - typings.fastify.fastifyStrings.PROPFIND
+    - typings.fastify.fastifyStrings.PROPPATCH
+    - typings.fastify.fastifyStrings.MKCOL
+    - typings.fastify.fastifyStrings.COPY
+    - typings.fastify.fastifyStrings.MOVE
+    - typings.fastify.fastifyStrings.LOCK
+    - typings.fastify.fastifyStrings.UNLOCK
+    - typings.fastify.fastifyStrings.TRACE
+    - typings.fastify.fastifyStrings.SEARCH
   */
   trait HTTPMethods extends StObject
   object HTTPMethods {
+    
+    inline def COPY: typings.fastify.fastifyStrings.COPY = "COPY".asInstanceOf[typings.fastify.fastifyStrings.COPY]
     
     inline def DELETE: typings.fastify.fastifyStrings.DELETE = "DELETE".asInstanceOf[typings.fastify.fastifyStrings.DELETE]
     
@@ -33,30 +46,64 @@ object utilsMod {
     
     inline def HEAD: typings.fastify.fastifyStrings.HEAD = "HEAD".asInstanceOf[typings.fastify.fastifyStrings.HEAD]
     
+    inline def LOCK: typings.fastify.fastifyStrings.LOCK = "LOCK".asInstanceOf[typings.fastify.fastifyStrings.LOCK]
+    
+    inline def MKCOL: typings.fastify.fastifyStrings.MKCOL = "MKCOL".asInstanceOf[typings.fastify.fastifyStrings.MKCOL]
+    
+    inline def MOVE: typings.fastify.fastifyStrings.MOVE = "MOVE".asInstanceOf[typings.fastify.fastifyStrings.MOVE]
+    
     inline def OPTIONS: typings.fastify.fastifyStrings.OPTIONS = "OPTIONS".asInstanceOf[typings.fastify.fastifyStrings.OPTIONS]
     
     inline def PATCH: typings.fastify.fastifyStrings.PATCH = "PATCH".asInstanceOf[typings.fastify.fastifyStrings.PATCH]
     
     inline def POST: typings.fastify.fastifyStrings.POST = "POST".asInstanceOf[typings.fastify.fastifyStrings.POST]
     
+    inline def PROPFIND: typings.fastify.fastifyStrings.PROPFIND = "PROPFIND".asInstanceOf[typings.fastify.fastifyStrings.PROPFIND]
+    
+    inline def PROPPATCH: typings.fastify.fastifyStrings.PROPPATCH = "PROPPATCH".asInstanceOf[typings.fastify.fastifyStrings.PROPPATCH]
+    
     inline def PUT: typings.fastify.fastifyStrings.PUT = "PUT".asInstanceOf[typings.fastify.fastifyStrings.PUT]
+    
+    inline def SEARCH: typings.fastify.fastifyStrings.SEARCH = "SEARCH".asInstanceOf[typings.fastify.fastifyStrings.SEARCH]
+    
+    inline def TRACE: typings.fastify.fastifyStrings.TRACE = "TRACE".asInstanceOf[typings.fastify.fastifyStrings.TRACE]
+    
+    inline def UNLOCK: typings.fastify.fastifyStrings.UNLOCK = "UNLOCK".asInstanceOf[typings.fastify.fastifyStrings.UNLOCK]
   }
   
-  type RawReplyDefaultExpression[RawServer /* <: RawServerBase */] = Http2ServerResponse | ServerResponse
+  type RawReplyDefaultExpression[RawServer /* <: RawServerBase */] = Http2ServerResponse | ServerResponse[IncomingMessage]
   
   type RawRequestDefaultExpression[RawServer /* <: RawServerBase */] = Http2ServerRequest | IncomingMessage
   
-  type RawServerBase = Server | typings.node.httpsMod.Server | Http2Server | Http2SecureServer
+  type RawServerBase = (Server[
+    Instantiable1[/* socket */ Socket, IncomingMessage], 
+    Instantiable1[
+      /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+      ServerResponse[IncomingMessage]
+    ]
+  ]) | (typings.node.httpsMod.Server[
+    Instantiable1[/* socket */ Socket, typings.node.nodeHttpMod.IncomingMessage], 
+    Instantiable1[
+      /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+      typings.node.nodeHttpMod.ServerResponse[IncomingMessage]
+    ]
+  ]) | Http2Server | Http2SecureServer
   
-  type RawServerDefault = Server
+  type RawServerDefault = Server[
+    Instantiable1[/* socket */ Socket, IncomingMessage], 
+    Instantiable1[
+      /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+      ServerResponse[IncomingMessage]
+    ]
+  ]
   
-  type ReplyDefault = js.Any
+  type ReplyDefault = Any
   
-  type RequestBodyDefault = js.Any
+  type RequestBodyDefault = Any
   
-  type RequestHeadersDefault = js.Any
+  type RequestHeadersDefault = Any
   
-  type RequestParamsDefault = js.Any
+  type RequestParamsDefault = Any
   
-  type RequestQuerystringDefault = js.Any
+  type RequestQuerystringDefault = Any
 }

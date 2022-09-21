@@ -33,6 +33,6 @@ object DescribeTestCasesOutput {
     
     inline def setTestCasesUndefined: Self = StObject.set(x, "testCases", js.undefined)
     
-    inline def setTestCasesVarargs(value: TestCase*): Self = StObject.set(x, "testCases", js.Array(value :_*))
+    inline def setTestCasesVarargs(value: TestCase*): Self = StObject.set(x, "testCases", js.Array(value*))
   }
 }

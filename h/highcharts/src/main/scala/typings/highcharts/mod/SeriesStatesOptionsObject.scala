@@ -10,7 +10,7 @@ trait SeriesStatesOptionsObject extends StObject {
     * (Highstock) Options for the hovered series. These settings override the
     * normal state options when a series is moused over or touched.
     */
-  var hover: js.UndefOr[SeriesStatesHoverOptionsObject] = js.undefined
+  var hover: js.UndefOr[Double | SeriesStatesHoverOptionsObject] = js.undefined
   
   /**
     * (Highstock) The opposite state of a hover for series.
@@ -39,7 +39,7 @@ object SeriesStatesOptionsObject {
   
   extension [Self <: SeriesStatesOptionsObject](x: Self) {
     
-    inline def setHover(value: SeriesStatesHoverOptionsObject): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
+    inline def setHover(value: Double | SeriesStatesHoverOptionsObject): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
     inline def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
     

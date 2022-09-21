@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientHtmlEditorTableColumnPropertiesCommandArguments")
 @js.native
-class ASPxClientHtmlEditorTableColumnPropertiesCommandArguments protected ()
+open class ASPxClientHtmlEditorTableColumnPropertiesCommandArguments protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientHtmlEditorTableColumnPropertiesCommandArguments {
   /**
@@ -17,13 +17,13 @@ class ASPxClientHtmlEditorTableColumnPropertiesCommandArguments protected ()
     * @param htmlEditor The HTML editor executing a command.
     * @param selectedElement An object containing the currently selected element in the HTML editor.
     */
-  def this(htmlEditor: typings.devexpressWeb.ASPxClientHtmlEditor, selectedElement: js.Any) = this()
+  def this(htmlEditor: typings.devexpressWeb.ASPxClientHtmlEditor, selectedElement: Any) = this()
   
   /**
     * Gets the currently selected element in the ASPxHtmlEditor.
     */
   /* CompleteClass */
-  var selectedElement: js.Any = js.native
+  var selectedElement: Any = js.native
   
   /**
     * Contains the style settings defining the appearance of the target column element.

@@ -10,15 +10,12 @@ A preconditions package based on Google's Preconditions library
 | ------------------ | :-------------: |
 | Full name          | conditional |
 | Keywords           | coffee-script, grunt, preconditions, conditional, coverage, browser, bower |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 22966 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5165.0 |
+| # stars            | 5.0 |
 
 ## Links
-- [Homepage](https://github.com/anshulverma/conditional)
-- [Bugs](https://github.com/anshulverma/conditional/issues)
-- [Repository](https://github.com/anshulverma/conditional)
 - [Npm](https://www.npmjs.com/package/conditional)
     
 

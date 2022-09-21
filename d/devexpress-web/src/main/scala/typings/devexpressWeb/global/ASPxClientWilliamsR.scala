@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientWilliamsR")
 @js.native
-class ASPxClientWilliamsR ()
+open class ASPxClientWilliamsR ()
   extends StObject
      with typings.devexpressWeb.ASPxClientWilliamsR {
   

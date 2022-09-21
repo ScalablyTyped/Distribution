@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Class_SandBox")
 @js.native
-class ClassSandBox protected ()
+open class ClassSandBox protected ()
   extends StObject
      with typings.fibjs.ClassSandBox {
   /**

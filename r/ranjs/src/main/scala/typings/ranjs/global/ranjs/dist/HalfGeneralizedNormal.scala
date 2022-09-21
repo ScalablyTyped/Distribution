@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("ranjs.dist.HalfGeneralizedNormal")
 @js.native
-class HalfGeneralizedNormal ()
+open class HalfGeneralizedNormal ()
   extends typings.ranjs.mod.dist.HalfGeneralizedNormal {
   def this(alpha: Double) = this()
   def this(alpha: Double, beta: Double) = this()

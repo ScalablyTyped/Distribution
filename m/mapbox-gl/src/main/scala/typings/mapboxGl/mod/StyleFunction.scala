@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait StyleFunction extends StObject {
   
-  var default: js.UndefOr[js.Any] = js.undefined
+  var default: js.UndefOr[Any] = js.undefined
   
   var base: js.UndefOr[Double] = js.undefined
   
@@ -21,7 +21,7 @@ trait StyleFunction extends StObject {
   
   var property: js.UndefOr[String] = js.undefined
   
-  var stops: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
+  var stops: js.UndefOr[js.Array[js.Array[Any]]] = js.undefined
   
   var `type`: js.UndefOr[identity | exponential | interval | categorical] = js.undefined
 }
@@ -42,7 +42,7 @@ object StyleFunction {
     
     inline def setColorSpaceUndefined: Self = StObject.set(x, "colorSpace", js.undefined)
     
-    inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
@@ -50,11 +50,11 @@ object StyleFunction {
     
     inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
     
-    inline def setStops(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
+    inline def setStops(value: js.Array[js.Array[Any]]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     
     inline def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
     
-    inline def setStopsVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "stops", js.Array(value :_*))
+    inline def setStopsVarargs(value: js.Array[Any]*): Self = StObject.set(x, "stops", js.Array(value*))
     
     inline def setType(value: identity | exponential | interval | categorical): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

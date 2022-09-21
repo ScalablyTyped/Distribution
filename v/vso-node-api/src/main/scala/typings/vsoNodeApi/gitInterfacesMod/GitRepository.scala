@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GitRepository extends StObject {
   
-  var _links: js.Any
+  var _links: Any
   
   var defaultBranch: String
   
@@ -35,7 +35,7 @@ trait GitRepository extends StObject {
 object GitRepository {
   
   inline def apply(
-    _links: js.Any,
+    _links: Any,
     defaultBranch: String,
     id: String,
     isFork: Boolean,
@@ -73,8 +73,8 @@ object GitRepository {
     
     inline def setValidRemoteUrls(value: js.Array[String]): Self = StObject.set(x, "validRemoteUrls", value.asInstanceOf[js.Any])
     
-    inline def setValidRemoteUrlsVarargs(value: String*): Self = StObject.set(x, "validRemoteUrls", js.Array(value :_*))
+    inline def setValidRemoteUrlsVarargs(value: String*): Self = StObject.set(x, "validRemoteUrls", js.Array(value*))
     
-    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

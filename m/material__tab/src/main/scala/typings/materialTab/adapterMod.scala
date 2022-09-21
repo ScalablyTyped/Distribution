@@ -1,6 +1,6 @@
 package typings.materialTab
 
-import typings.std.ClientRect
+import typings.std.DOMRect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +15,7 @@ object adapterMod {
       * @param previousIndicatorClientRect The client rect of the previously activated indicator
       */
     def activateIndicator(): Unit = js.native
-    def activateIndicator(previousIndicatorClientRect: ClientRect): Unit = js.native
+    def activateIndicator(previousIndicatorClientRect: DOMRect): Unit = js.native
     
     /**
       * Adds the given className to the root element.

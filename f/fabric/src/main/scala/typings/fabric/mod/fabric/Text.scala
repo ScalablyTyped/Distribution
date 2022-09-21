@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("fabric", "fabric.Text")
 @js.native
-class Text protected ()
+open class Text protected ()
   extends typings.fabric.fabricImplMod.Text {
   /**
     * Constructor
@@ -50,6 +50,6 @@ object Text {
     * @param {Object} object Object to create an instance from
     * @param {Function} [callback] Callback to invoke when an fabric.Text instance is created
     */
-  inline def fromObject(`object`: js.Any): typings.fabric.fabricImplMod.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.fabric.fabricImplMod.Text]
-  inline def fromObject(`object`: js.Any, callback: js.Function): typings.fabric.fabricImplMod.Text = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Text]
+  inline def fromObject(`object`: Any): typings.fabric.fabricImplMod.Text = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.fabric.fabricImplMod.Text]
+  inline def fromObject(`object`: Any, callback: js.Function): typings.fabric.fabricImplMod.Text = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Text]
 }

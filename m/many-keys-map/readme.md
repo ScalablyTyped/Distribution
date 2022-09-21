@@ -1,7 +1,7 @@
 
 # Scala.js typings for many-keys-map
 
-Typings are for version 1.0.3
+Typings are for version 2.0.0
 
 ## Library description:
 A `Map` subclass with support for multiple keys for one entry.
@@ -10,10 +10,10 @@ A `Map` subclass with support for multiple keys for one entry.
 | ------------------ | :-------------: |
 | Full name          | many-keys-map |
 | Keywords           | any, key, keys, many, map, multi, multimap, multiple |
-| # releases         | 6 |
-| # dependents       | 2 |
-| # downloads        | 49729 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 8175.0 |
+| # stars            | 80.0 |
 
 ## Links
 - [Homepage](https://github.com/fregante/many-keys-map#readme)

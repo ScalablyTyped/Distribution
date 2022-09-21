@@ -1,6 +1,7 @@
 package typings.naverWhale.whale
 
 import typings.chrome.chrome.events.Event
+import typings.naverWhale.naverWhaleStrings.managed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -239,7 +240,7 @@ object bookmarks {
       
       inline def setChildIds(value: js.Array[String]): Self = StObject.set(x, "childIds", value.asInstanceOf[js.Any])
       
-      inline def setChildIdsVarargs(value: String*): Self = StObject.set(x, "childIds", js.Array(value :_*))
+      inline def setChildIdsVarargs(value: String*): Self = StObject.set(x, "childIds", js.Array(value*))
     }
   }
   
@@ -302,7 +303,7 @@ object bookmarks {
       * Since Chrome 37.
       * Indicates the reason why this node is unmodifiable. The managed value indicates that this node was configured by the system administrator or by the custodian of a supervised user. Omitted if the node can be modified by the user and the extension (default).
       */
-    var unmodifiable: js.UndefOr[js.Any] = js.undefined
+    var unmodifiable: js.UndefOr[managed] = js.undefined
     
     /** Optional. The URL navigated to when a user clicks the bookmark. Omitted for folders.   */
     var url: js.UndefOr[String] = js.undefined
@@ -320,7 +321,7 @@ object bookmarks {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setChildrenVarargs(value: typings.chrome.chrome.bookmarks.BookmarkTreeNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: typings.chrome.chrome.bookmarks.BookmarkTreeNode*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setDateAdded(value: Double): Self = StObject.set(x, "dateAdded", value.asInstanceOf[js.Any])
       
@@ -342,7 +343,7 @@ object bookmarks {
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      inline def setUnmodifiable(value: js.Any): Self = StObject.set(x, "unmodifiable", value.asInstanceOf[js.Any])
+      inline def setUnmodifiable(value: managed): Self = StObject.set(x, "unmodifiable", value.asInstanceOf[js.Any])
       
       inline def setUnmodifiableUndefined: Self = StObject.set(x, "unmodifiable", js.undefined)
       

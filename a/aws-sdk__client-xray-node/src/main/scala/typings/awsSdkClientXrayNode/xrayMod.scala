@@ -38,7 +38,7 @@ object xrayMod {
   
   @JSImport("@aws-sdk/client-xray-node/XRay", "XRay")
   @js.native
-  class XRay protected () extends XRayClient {
+  open class XRay protected () extends XRayClient {
     def this(configuration: XRayConfiguration) = this()
     
     /**
@@ -52,7 +52,7 @@ object xrayMod {
     def batchGetTraces(args: BatchGetTracesInput): js.Promise[BatchGetTracesOutput] = js.native
     def batchGetTraces(
       args: BatchGetTracesInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[BatchGetTracesOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[BatchGetTracesOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -67,7 +67,7 @@ object xrayMod {
     def createSamplingRule(args: CreateSamplingRuleInput): js.Promise[CreateSamplingRuleOutput] = js.native
     def createSamplingRule(
       args: CreateSamplingRuleInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[CreateSamplingRuleOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[CreateSamplingRuleOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -81,7 +81,7 @@ object xrayMod {
     def deleteSamplingRule(args: DeleteSamplingRuleInput): js.Promise[DeleteSamplingRuleOutput] = js.native
     def deleteSamplingRule(
       args: DeleteSamplingRuleInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[DeleteSamplingRuleOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[DeleteSamplingRuleOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -95,7 +95,7 @@ object xrayMod {
     def getEncryptionConfig(args: GetEncryptionConfigInput): js.Promise[GetEncryptionConfigOutput] = js.native
     def getEncryptionConfig(
       args: GetEncryptionConfigInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetEncryptionConfigOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetEncryptionConfigOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -109,7 +109,7 @@ object xrayMod {
     def getSamplingRules(args: GetSamplingRulesInput): js.Promise[GetSamplingRulesOutput] = js.native
     def getSamplingRules(
       args: GetSamplingRulesInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetSamplingRulesOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetSamplingRulesOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -123,7 +123,7 @@ object xrayMod {
     def getSamplingStatisticSummaries(args: GetSamplingStatisticSummariesInput): js.Promise[GetSamplingStatisticSummariesOutput] = js.native
     def getSamplingStatisticSummaries(
       args: GetSamplingStatisticSummariesInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetSamplingStatisticSummariesOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetSamplingStatisticSummariesOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -137,7 +137,7 @@ object xrayMod {
     def getSamplingTargets(args: GetSamplingTargetsInput): js.Promise[GetSamplingTargetsOutput] = js.native
     def getSamplingTargets(
       args: GetSamplingTargetsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetSamplingTargetsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetSamplingTargetsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -151,7 +151,7 @@ object xrayMod {
     def getServiceGraph(args: GetServiceGraphInput): js.Promise[GetServiceGraphOutput] = js.native
     def getServiceGraph(
       args: GetServiceGraphInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetServiceGraphOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetServiceGraphOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -165,7 +165,7 @@ object xrayMod {
     def getTraceGraph(args: GetTraceGraphInput): js.Promise[GetTraceGraphOutput] = js.native
     def getTraceGraph(
       args: GetTraceGraphInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetTraceGraphOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetTraceGraphOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -179,7 +179,7 @@ object xrayMod {
     def getTraceSummaries(args: GetTraceSummariesInput): js.Promise[GetTraceSummariesOutput] = js.native
     def getTraceSummaries(
       args: GetTraceSummariesInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[GetTraceSummariesOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[GetTraceSummariesOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -193,7 +193,7 @@ object xrayMod {
     def putEncryptionConfig(args: PutEncryptionConfigInput): js.Promise[PutEncryptionConfigOutput] = js.native
     def putEncryptionConfig(
       args: PutEncryptionConfigInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutEncryptionConfigOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[PutEncryptionConfigOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -207,7 +207,7 @@ object xrayMod {
     def putTelemetryRecords(args: PutTelemetryRecordsInput): js.Promise[PutTelemetryRecordsOutput] = js.native
     def putTelemetryRecords(
       args: PutTelemetryRecordsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutTelemetryRecordsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[PutTelemetryRecordsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -221,7 +221,7 @@ object xrayMod {
     def putTraceSegments(args: PutTraceSegmentsInput): js.Promise[PutTraceSegmentsOutput] = js.native
     def putTraceSegments(
       args: PutTraceSegmentsInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[PutTraceSegmentsOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[PutTraceSegmentsOutput], Unit]
     ): Unit = js.native
     
     /**
@@ -235,7 +235,7 @@ object xrayMod {
     def updateSamplingRule(args: UpdateSamplingRuleInput): js.Promise[UpdateSamplingRuleOutput] = js.native
     def updateSamplingRule(
       args: UpdateSamplingRuleInput,
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[UpdateSamplingRuleOutput], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[UpdateSamplingRuleOutput], Unit]
     ): Unit = js.native
   }
 }

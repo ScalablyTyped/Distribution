@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined @blueprintjs/core.@blueprintjs/core/lib/esm/components/hotkeys/hotkeysTypes.IHotkeysProps & {  children :react.react.ReactNode} */
 trait IHotkeysPropschildrenReac extends StObject {
   
-  var children: ReactNode
+  /** Hotkey elements. */
+  var children: js.UndefOr[ReactNode] & ReactNode
   
   /** A space-delimited list of class names to pass along to a child element. */
   var className: js.UndefOr[String] = js.undefined
@@ -32,7 +33,7 @@ object IHotkeysPropschildrenReac {
   
   extension [Self <: IHotkeysPropschildrenReac](x: Self) {
     
-    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.UndefOr[ReactNode] & ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     

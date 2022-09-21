@@ -34,16 +34,7 @@ trait VideoContext extends StObject {
   /**
     *  设置倍速播放，支持的倍率有 0.5/0.8/1.0/1.25/1.5
     */
-  @JSName("playbackRate")
-  def playbackRate_05(rate: `0.5`): Unit = js.native
-  @JSName("playbackRate")
-  def playbackRate_08(rate: `0.8`): Unit = js.native
-  @JSName("playbackRate")
-  def playbackRate_10(rate: `1.0`): Unit = js.native
-  @JSName("playbackRate")
-  def playbackRate_125(rate: `1.25`): Unit = js.native
-  @JSName("playbackRate")
-  def playbackRate_15(rate: `1.5`): Unit = js.native
+  def playbackRate(rate: `0.5` | `0.8` | `1.0` | `1.25` | `1.5`): Unit = js.native
   
   /**
     *  进入全屏

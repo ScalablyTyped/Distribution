@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@maxim_mazurok/gapi.client.cloudsearch" : "1.0.20201110"
+      "@maxim_mazurok/gapi.client.cloudsearch" : "1.0.20220801"
     }
   ],
   "test-dependencies" : [
     {
-      "@maxim_mazurok/gapi.client.cloudsearch" : "1.0.20201110"
+      "@maxim_mazurok/gapi.client.cloudsearch" : "1.0.20220801"
     }
   ],
   "compile-devDependencies" : [

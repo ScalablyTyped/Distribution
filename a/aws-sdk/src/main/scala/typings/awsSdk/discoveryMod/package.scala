@@ -1,17 +1,19 @@
 package typings.awsSdk.discoveryMod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.AGENT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AgentConfigurationStatusList = js.Array[typings.awsSdk.discoveryMod.AgentConfigurationStatus]
+type AgentConfigurationStatusList = js.Array[AgentConfigurationStatus]
 
 type AgentId = java.lang.String
 
-type AgentIds = js.Array[typings.awsSdk.discoveryMod.AgentId]
+type AgentIds = js.Array[AgentId]
 
-type AgentNetworkInfoList = js.Array[typings.awsSdk.discoveryMod.AgentNetworkInfo]
+type AgentNetworkInfoList = js.Array[AgentNetworkInfo]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.HEALTHY
@@ -22,13 +24,17 @@ type AgentNetworkInfoList = js.Array[typings.awsSdk.discoveryMod.AgentNetworkInf
   - typings.awsSdk.awsSdkStrings.SHUTDOWN
   - java.lang.String
 */
-type AgentStatus = typings.awsSdk.discoveryMod._AgentStatus | java.lang.String
+type AgentStatus = _AgentStatus | java.lang.String
 
-type AgentsInfo = js.Array[typings.awsSdk.discoveryMod.AgentInfo]
+type AgentsInfo = js.Array[AgentInfo]
+
+type ApplicationDescription = java.lang.String
 
 type ApplicationId = java.lang.String
 
-type ApplicationIdsList = js.Array[typings.awsSdk.discoveryMod.ApplicationId]
+type ApplicationIdsList = js.Array[ApplicationId]
+
+type ApplicationName = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NOT_FOUND
@@ -36,25 +42,25 @@ type ApplicationIdsList = js.Array[typings.awsSdk.discoveryMod.ApplicationId]
   - typings.awsSdk.awsSdkStrings.OVER_LIMIT
   - java.lang.String
 */
-type BatchDeleteImportDataErrorCode = typings.awsSdk.discoveryMod._BatchDeleteImportDataErrorCode | java.lang.String
+type BatchDeleteImportDataErrorCode = _BatchDeleteImportDataErrorCode | java.lang.String
 
 type BatchDeleteImportDataErrorDescription = java.lang.String
 
-type BatchDeleteImportDataErrorList = js.Array[typings.awsSdk.discoveryMod.BatchDeleteImportDataError]
+type BatchDeleteImportDataErrorList = js.Array[BatchDeleteImportDataError]
 
 type Boolean = scala.Boolean
 
-type BoxedInteger = scala.Double
+type BoxedInteger = Double
 
 type ClientRequestToken = java.lang.String
 
 type Condition = java.lang.String
 
-type Configuration = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.discoveryMod.String]
+type Configuration = StringDictionary[String]
 
 type ConfigurationId = java.lang.String
 
-type ConfigurationIdList = js.Array[typings.awsSdk.discoveryMod.ConfigurationId]
+type ConfigurationIdList = js.Array[ConfigurationId]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SERVER
@@ -63,19 +69,19 @@ type ConfigurationIdList = js.Array[typings.awsSdk.discoveryMod.ConfigurationId]
   - typings.awsSdk.awsSdkStrings.APPLICATION
   - java.lang.String
 */
-type ConfigurationItemType = typings.awsSdk.discoveryMod._ConfigurationItemType | java.lang.String
+type ConfigurationItemType = _ConfigurationItemType | java.lang.String
 
-type ConfigurationTagSet = js.Array[typings.awsSdk.discoveryMod.ConfigurationTag]
+type ConfigurationTagSet = js.Array[ConfigurationTag]
 
-type Configurations = js.Array[typings.awsSdk.discoveryMod.Configuration]
+type Configurations = js.Array[Configuration]
 
 type ConfigurationsDownloadUrl = java.lang.String
 
 type ConfigurationsExportId = java.lang.String
 
-type ContinuousExportDescriptions = js.Array[typings.awsSdk.discoveryMod.ContinuousExportDescription]
+type ContinuousExportDescriptions = js.Array[ContinuousExportDescription]
 
-type ContinuousExportIds = js.Array[typings.awsSdk.discoveryMod.ConfigurationsExportId]
+type ContinuousExportIds = js.Array[ConfigurationsExportId]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.START_IN_PROGRESS
@@ -87,36 +93,36 @@ type ContinuousExportIds = js.Array[typings.awsSdk.discoveryMod.ConfigurationsEx
   - typings.awsSdk.awsSdkStrings.INACTIVE
   - java.lang.String
 */
-type ContinuousExportStatus = typings.awsSdk.discoveryMod._ContinuousExportStatus | java.lang.String
+type ContinuousExportStatus = _ContinuousExportStatus | java.lang.String
 
-type DataSource = typings.awsSdk.awsSdkStrings.AGENT | java.lang.String
+type DataSource = AGENT | java.lang.String
 
 type DatabaseName = java.lang.String
 
-type DescribeConfigurationsAttribute = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.discoveryMod.String]
+type DescribeConfigurationsAttribute = StringDictionary[String]
 
-type DescribeConfigurationsAttributes = js.Array[typings.awsSdk.discoveryMod.DescribeConfigurationsAttribute]
+type DescribeConfigurationsAttributes = js.Array[DescribeConfigurationsAttribute]
 
-type DescribeContinuousExportsMaxResults = scala.Double
+type DescribeContinuousExportsMaxResults = Double
 
-type DescribeImportTasksFilterList = js.Array[typings.awsSdk.discoveryMod.ImportTaskFilter]
+type DescribeImportTasksFilterList = js.Array[ImportTaskFilter]
 
-type DescribeImportTasksMaxResults = scala.Double
+type DescribeImportTasksMaxResults = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CSV
   - typings.awsSdk.awsSdkStrings.GRAPHML
   - java.lang.String
 */
-type ExportDataFormat = typings.awsSdk.discoveryMod._ExportDataFormat | java.lang.String
+type ExportDataFormat = _ExportDataFormat | java.lang.String
 
-type ExportDataFormats = js.Array[typings.awsSdk.discoveryMod.ExportDataFormat]
+type ExportDataFormats = js.Array[ExportDataFormat]
 
-type ExportFilters = js.Array[typings.awsSdk.discoveryMod.ExportFilter]
+type ExportFilters = js.Array[ExportFilter]
 
-type ExportIds = js.Array[typings.awsSdk.discoveryMod.ConfigurationsExportId]
+type ExportIds = js.Array[ConfigurationsExportId]
 
-type ExportRequestTime = typings.std.Date
+type ExportRequestTime = js.Date
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FAILED
@@ -124,19 +130,19 @@ type ExportRequestTime = typings.std.Date
   - typings.awsSdk.awsSdkStrings.IN_PROGRESS
   - java.lang.String
 */
-type ExportStatus = typings.awsSdk.discoveryMod._ExportStatus | java.lang.String
+type ExportStatus = _ExportStatus | java.lang.String
 
 type ExportStatusMessage = java.lang.String
 
-type ExportsInfo = js.Array[typings.awsSdk.discoveryMod.ExportInfo]
+type ExportsInfo = js.Array[ExportInfo]
 
 type FilterName = java.lang.String
 
 type FilterValue = java.lang.String
 
-type FilterValues = js.Array[typings.awsSdk.discoveryMod.FilterValue]
+type FilterValues = js.Array[FilterValue]
 
-type Filters = js.Array[typings.awsSdk.discoveryMod.Filter]
+type Filters = js.Array[Filter]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.IMPORT_IN_PROGRESS
@@ -152,7 +158,7 @@ type Filters = js.Array[typings.awsSdk.discoveryMod.Filter]
   - typings.awsSdk.awsSdkStrings.INTERNAL_ERROR
   - java.lang.String
 */
-type ImportStatus = typings.awsSdk.discoveryMod._ImportStatus | java.lang.String
+type ImportStatus = _ImportStatus | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.IMPORT_TASK_ID
@@ -160,62 +166,64 @@ type ImportStatus = typings.awsSdk.discoveryMod._ImportStatus | java.lang.String
   - typings.awsSdk.awsSdkStrings.NAME
   - java.lang.String
 */
-type ImportTaskFilterName = typings.awsSdk.discoveryMod._ImportTaskFilterName | java.lang.String
+type ImportTaskFilterName = _ImportTaskFilterName | java.lang.String
 
 type ImportTaskFilterValue = java.lang.String
 
-type ImportTaskFilterValueList = js.Array[typings.awsSdk.discoveryMod.ImportTaskFilterValue]
+type ImportTaskFilterValueList = js.Array[ImportTaskFilterValue]
 
 type ImportTaskIdentifier = java.lang.String
 
-type ImportTaskList = js.Array[typings.awsSdk.discoveryMod.ImportTask]
+type ImportTaskList = js.Array[ImportTask]
 
 type ImportTaskName = java.lang.String
 
 type ImportURL = java.lang.String
 
-type Integer = scala.Double
+type Integer = Double
 
-type Long = scala.Double
+type Long = Double
 
-type NeighborDetailsList = js.Array[typings.awsSdk.discoveryMod.NeighborConnectionDetail]
+type NeighborDetailsList = js.Array[NeighborConnectionDetail]
 
 type NextToken = java.lang.String
 
-type OrderByList = js.Array[typings.awsSdk.discoveryMod.OrderByElement]
+type OrderByElementFieldName = java.lang.String
+
+type OrderByList = js.Array[OrderByElement]
 
 type S3Bucket = java.lang.String
 
 type S3PresignedUrl = java.lang.String
 
-type SchemaStorageConfig = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.discoveryMod.String]
+type SchemaStorageConfig = StringDictionary[String]
 
 type String = java.lang.String
 
 type StringMax255 = java.lang.String
 
-type TagFilters = js.Array[typings.awsSdk.discoveryMod.TagFilter]
+type TagFilters = js.Array[TagFilter]
 
 type TagKey = java.lang.String
 
-type TagSet = js.Array[typings.awsSdk.discoveryMod.Tag]
+type TagSet = js.Array[Tag]
 
 type TagValue = java.lang.String
 
-type TimeStamp = typings.std.Date
+type TimeStamp = js.Date
 
-type ToDeleteIdentifierList = js.Array[typings.awsSdk.discoveryMod.ImportTaskIdentifier]
+type ToDeleteIdentifierList = js.Array[ImportTaskIdentifier]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2015-11-01`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.discoveryMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ASC
   - typings.awsSdk.awsSdkStrings.DESC
   - java.lang.String
 */
-type orderString = typings.awsSdk.discoveryMod._orderString | java.lang.String
+type orderString = _orderString | java.lang.String

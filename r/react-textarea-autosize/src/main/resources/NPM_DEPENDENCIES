@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-textarea-autosize" : "8.3.0"
+      "react-textarea-autosize" : "8.3.4"
     }
   ],
   "test-dependencies" : [
     {
-      "react-textarea-autosize" : "8.3.0"
+      "react-textarea-autosize" : "8.3.4"
     }
   ],
   "compile-devDependencies" : [

@@ -27,9 +27,14 @@ trait ServiceDetail extends StObject {
   var ManagesVpcEndpoints: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The AWS account ID of the service owner.
+    * The Amazon Web Services account ID of the service owner.
     */
   var Owner: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The payer responsibility.
+    */
+  var PayerResponsibility: js.UndefOr[typings.awsSdk.ec2Mod.PayerResponsibility] = js.undefined
   
   /**
     * The private DNS name for the service.
@@ -42,12 +47,17 @@ trait ServiceDetail extends StObject {
   var PrivateDnsNameVerificationState: js.UndefOr[DnsNameState] = js.undefined
   
   /**
+    * The private DNS names assigned to the VPC endpoint service.
+    */
+  var PrivateDnsNames: js.UndefOr[PrivateDnsDetailsSet] = js.undefined
+  
+  /**
     * The ID of the endpoint service.
     */
   var ServiceId: js.UndefOr[String] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the service.
+    * The name of the service.
     */
   var ServiceName: js.UndefOr[String] = js.undefined
   
@@ -55,6 +65,11 @@ trait ServiceDetail extends StObject {
     * The type of service.
     */
   var ServiceType: js.UndefOr[ServiceTypeDetailSet] = js.undefined
+  
+  /**
+    * The supported IP address types.
+    */
+  var SupportedIpAddressTypes: js.UndefOr[typings.awsSdk.ec2Mod.SupportedIpAddressTypes] = js.undefined
   
   /**
     * Any tags assigned to the service.
@@ -83,13 +98,13 @@ object ServiceDetail {
     
     inline def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
     
-    inline def setAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
+    inline def setAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "AvailabilityZones", js.Array(value*))
     
     inline def setBaseEndpointDnsNames(value: ValueStringList): Self = StObject.set(x, "BaseEndpointDnsNames", value.asInstanceOf[js.Any])
     
     inline def setBaseEndpointDnsNamesUndefined: Self = StObject.set(x, "BaseEndpointDnsNames", js.undefined)
     
-    inline def setBaseEndpointDnsNamesVarargs(value: String*): Self = StObject.set(x, "BaseEndpointDnsNames", js.Array(value :_*))
+    inline def setBaseEndpointDnsNamesVarargs(value: String*): Self = StObject.set(x, "BaseEndpointDnsNames", js.Array(value*))
     
     inline def setManagesVpcEndpoints(value: Boolean): Self = StObject.set(x, "ManagesVpcEndpoints", value.asInstanceOf[js.Any])
     
@@ -99,6 +114,10 @@ object ServiceDetail {
     
     inline def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
     
+    inline def setPayerResponsibility(value: PayerResponsibility): Self = StObject.set(x, "PayerResponsibility", value.asInstanceOf[js.Any])
+    
+    inline def setPayerResponsibilityUndefined: Self = StObject.set(x, "PayerResponsibility", js.undefined)
+    
     inline def setPrivateDnsName(value: String): Self = StObject.set(x, "PrivateDnsName", value.asInstanceOf[js.Any])
     
     inline def setPrivateDnsNameUndefined: Self = StObject.set(x, "PrivateDnsName", js.undefined)
@@ -106,6 +125,12 @@ object ServiceDetail {
     inline def setPrivateDnsNameVerificationState(value: DnsNameState): Self = StObject.set(x, "PrivateDnsNameVerificationState", value.asInstanceOf[js.Any])
     
     inline def setPrivateDnsNameVerificationStateUndefined: Self = StObject.set(x, "PrivateDnsNameVerificationState", js.undefined)
+    
+    inline def setPrivateDnsNames(value: PrivateDnsDetailsSet): Self = StObject.set(x, "PrivateDnsNames", value.asInstanceOf[js.Any])
+    
+    inline def setPrivateDnsNamesUndefined: Self = StObject.set(x, "PrivateDnsNames", js.undefined)
+    
+    inline def setPrivateDnsNamesVarargs(value: PrivateDnsDetails*): Self = StObject.set(x, "PrivateDnsNames", js.Array(value*))
     
     inline def setServiceId(value: String): Self = StObject.set(x, "ServiceId", value.asInstanceOf[js.Any])
     
@@ -119,13 +144,19 @@ object ServiceDetail {
     
     inline def setServiceTypeUndefined: Self = StObject.set(x, "ServiceType", js.undefined)
     
-    inline def setServiceTypeVarargs(value: ServiceTypeDetail*): Self = StObject.set(x, "ServiceType", js.Array(value :_*))
+    inline def setServiceTypeVarargs(value: ServiceTypeDetail*): Self = StObject.set(x, "ServiceType", js.Array(value*))
+    
+    inline def setSupportedIpAddressTypes(value: SupportedIpAddressTypes): Self = StObject.set(x, "SupportedIpAddressTypes", value.asInstanceOf[js.Any])
+    
+    inline def setSupportedIpAddressTypesUndefined: Self = StObject.set(x, "SupportedIpAddressTypes", js.undefined)
+    
+    inline def setSupportedIpAddressTypesVarargs(value: ServiceConnectivityType*): Self = StObject.set(x, "SupportedIpAddressTypes", js.Array(value*))
     
     inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setVpcEndpointPolicySupported(value: Boolean): Self = StObject.set(x, "VpcEndpointPolicySupported", value.asInstanceOf[js.Any])
     

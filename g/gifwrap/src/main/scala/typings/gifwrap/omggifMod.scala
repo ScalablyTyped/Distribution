@@ -3,15 +3,14 @@ package typings.gifwrap
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable4
-import typings.node.Buffer
-import typings.std.Uint8Array
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object omggifMod {
   
-  type ByteArray = Uint8Array | Buffer
+  type ByteArray = js.typedarray.Uint8Array | Buffer
   
   trait FrameInfo extends StObject {
     
@@ -122,7 +121,7 @@ object omggifMod {
       
       inline def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
       
-      inline def setPaletteVarargs(value: Double*): Self = StObject.set(x, "palette", js.Array(value :_*))
+      inline def setPaletteVarargs(value: Double*): Self = StObject.set(x, "palette", js.Array(value*))
       
       inline def setTransparent(value: Double): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
       
@@ -215,7 +214,7 @@ object omggifMod {
       
       inline def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
       
-      inline def setPaletteVarargs(value: Double*): Self = StObject.set(x, "palette", js.Array(value :_*))
+      inline def setPaletteVarargs(value: Double*): Self = StObject.set(x, "palette", js.Array(value*))
     }
   }
   

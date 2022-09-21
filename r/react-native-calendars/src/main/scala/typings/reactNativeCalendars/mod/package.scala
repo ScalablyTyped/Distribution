@@ -1,11 +1,19 @@
 package typings.reactNativeCalendars.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.Context
+import typings.reactNative.mod.TextStyle
+import typings.reactNative.mod.ViewStyle
+import typings.reactNativeCalendars.anon.EnableSwipeMonths
+import typings.reactNativeCalendars.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AgendaItemsMap[TItem] = org.scalablytyped.runtime.StringDictionary[js.Array[TItem]]
+inline def CalendarContext: Context[ProviderContextValue] = ^.asInstanceOf[js.Dynamic].selectDynamic("CalendarContext").asInstanceOf[Context[ProviderContextValue]]
+
+type AgendaItemsMap[TItem] = StringDictionary[js.Array[TItem]]
 
 /* Rewritten from type alias, can be one of: 
   - typings.reactNativeCalendars.mod.MultiDotMarkingProps
@@ -15,12 +23,12 @@ type AgendaItemsMap[TItem] = org.scalablytyped.runtime.StringDictionary[js.Array
   - typings.reactNativeCalendars.mod.CustomMarkingProps
   - js.Object
 */
-type CalendarMarkingProps = typings.reactNativeCalendars.mod._CalendarMarkingProps | js.Object
+type CalendarMarkingProps = _CalendarMarkingProps | js.Object
 
-type CalendarProps = typings.reactNativeCalendars.mod.CalendarMarkingProps & typings.reactNativeCalendars.mod.CalendarBaseProps & typings.reactNativeCalendars.anon.EnableSwipeMonths
+type CalendarProps = CalendarMarkingProps & CalendarBaseProps & EnableSwipeMonths
 
-type CalendarThemeIdStyle = org.scalablytyped.runtime.StringDictionary[typings.reactNative.mod.ViewStyle | typings.reactNative.mod.TextStyle]
+type CalendarThemeIdStyle = StringDictionary[ViewStyle | TextStyle]
 
-type DateCallbackHandler = js.Function1[/* date */ typings.reactNativeCalendars.mod.DateObject, scala.Unit]
+type DateCallbackHandler = js.Function1[/* date */ DateObject, Unit]
 
-type TCalendarDate = typings.std.Date | typings.reactNativeCalendars.mod.DateObject | scala.Double | java.lang.String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XDate */ js.Any)
+type TCalendarDate = js.Date | DateObject | Double | String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XDate */ Any)

@@ -1,6 +1,5 @@
 package typings.fibjs
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +23,7 @@ trait ClassStat
     * @readonly
     * @type Date
     */
-  var atime: Date = js.native
+  var atime: js.Date = js.native
   
   /**
     * class prop 
@@ -35,7 +34,7 @@ trait ClassStat
     * @readonly
     * @type Date
     */
-  var ctime: Date = js.native
+  var ctime: js.Date = js.native
   
   /**
     * class prop 
@@ -158,7 +157,7 @@ trait ClassStat
     * @readonly
     * @type Date
     */
-  var mtime: Date = js.native
+  var mtime: js.Date = js.native
   
   /**
     * class prop 

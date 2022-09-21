@@ -7,14 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaMarketplaceDealParty extends StObject {
   
   /**
-    * The buyer/seller associated with the deal. One of buyer/seller is
-    * specified for a deal-party.
+    * The buyer/seller associated with the deal. One of buyer/seller is specified for a deal-party.
     */
   var buyer: js.UndefOr[SchemaBuyer] = js.undefined
   
   /**
-    * The buyer/seller associated with the deal. One of buyer/seller is
-    * specified for a deal party.
+    * The buyer/seller associated with the deal. One of buyer/seller is specified for a deal party.
     */
   var seller: js.UndefOr[SchemaSeller] = js.undefined
 }

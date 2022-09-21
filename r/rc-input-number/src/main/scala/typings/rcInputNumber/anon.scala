@@ -1,10 +1,10 @@
 package typings.rcInputNumber
 
-import typings.rcInputNumber.interfaceMod.ISize
-import typings.react.mod.CSSProperties
-import typings.react.mod.KeyboardEvent
-import typings.react.mod.KeyboardEventHandler
-import typings.react.mod.ReactElement
+import typings.rcInputNumber.miniDecimalMod.ValueType
+import typings.rcInputNumber.rcInputNumberStrings.down
+import typings.rcInputNumber.rcInputNumberStrings.up
+import typings.react.mod.ReactNode
+import typings.react.mod.Ref
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,215 +12,138 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  /* Inlined std.Partial<rc-input-number.rc-input-number/es/interface.InputNumberProps> */
-  trait PartialInputNumberProps extends StObject {
+  trait Children extends StObject {
     
-    var autoComplete: js.UndefOr[String] = js.undefined
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var autoFocus: js.UndefOr[Boolean] = js.undefined
-    
-    var className: js.UndefOr[String] = js.undefined
-    
-    var decimalSeparator: js.UndefOr[String] = js.undefined
-    
-    var defaultValue: js.UndefOr[Double] = js.undefined
-    
-    var disabled: js.UndefOr[Boolean] = js.undefined
-    
-    var downHandler: js.UndefOr[ReactElement] = js.undefined
-    
-    var focusOnUpDown: js.UndefOr[Boolean] = js.undefined
-    
-    var formatter: js.UndefOr[js.Function1[/* value */ js.UndefOr[Double | String], String]] = js.undefined
-    
-    var id: js.UndefOr[String] = js.undefined
-    
-    var max: js.UndefOr[Double] = js.undefined
-    
-    var min: js.UndefOr[Double] = js.undefined
-    
-    var name: js.UndefOr[String] = js.undefined
-    
-    var onBlur: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
-    
-    var onChange: js.UndefOr[js.Function1[/* value */ js.UndefOr[Double | String], Unit]] = js.undefined
-    
-    var onFocus: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
-    
-    var onKeyDown: js.UndefOr[js.Function2[/* e */ js.Any, /* repeated */ js.Any, Unit]] = js.undefined
-    
-    var onKeyUp: js.UndefOr[js.Function2[/* e */ js.Any, /* repeated */ js.Any, Unit]] = js.undefined
-    
-    var onMouseUp: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
-    
-    var onPressEnter: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.undefined
-    
-    var parser: js.UndefOr[js.Function1[/* displayValue */ js.UndefOr[String], Double | String]] = js.undefined
-    
-    var placeholder: js.UndefOr[String] = js.undefined
-    
-    var precision: js.UndefOr[Double] = js.undefined
-    
-    var prefixCls: js.UndefOr[String] = js.undefined
-    
-    var required: js.UndefOr[Boolean] = js.undefined
-    
-    var size: js.UndefOr[ISize] = js.undefined
-    
-    var step: js.UndefOr[Double | String] = js.undefined
-    
-    var style: js.UndefOr[CSSProperties] = js.undefined
-    
-    var tabIndex: js.UndefOr[Double] = js.undefined
-    
-    var title: js.UndefOr[String] = js.undefined
-    
-    var upHandler: js.UndefOr[ReactElement] = js.undefined
-    
-    var useTouch: js.UndefOr[Boolean] = js.undefined
-    
-    var value: js.UndefOr[Double] = js.undefined
+    var ref: js.UndefOr[Ref[HTMLInputElement]] = js.undefined
   }
-  object PartialInputNumberProps {
+  object Children {
     
-    inline def apply(): PartialInputNumberProps = {
+    inline def apply(): Children = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[PartialInputNumberProps]
+      __obj.asInstanceOf[Children]
     }
     
-    extension [Self <: PartialInputNumberProps](x: Self) {
-      
-      inline def setAutoComplete(value: String): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
-      
-      inline def setAutoCompleteUndefined: Self = StObject.set(x, "autoComplete", js.undefined)
-      
-      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
-      
-      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
-      
-      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
-      
-      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
-      
-      inline def setDecimalSeparator(value: String): Self = StObject.set(x, "decimalSeparator", value.asInstanceOf[js.Any])
-      
-      inline def setDecimalSeparatorUndefined: Self = StObject.set(x, "decimalSeparator", js.undefined)
-      
-      inline def setDefaultValue(value: Double): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
-      
-      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
-      
-      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
-      
-      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
-      
-      inline def setDownHandler(value: ReactElement): Self = StObject.set(x, "downHandler", value.asInstanceOf[js.Any])
-      
-      inline def setDownHandlerUndefined: Self = StObject.set(x, "downHandler", js.undefined)
-      
-      inline def setFocusOnUpDown(value: Boolean): Self = StObject.set(x, "focusOnUpDown", value.asInstanceOf[js.Any])
-      
-      inline def setFocusOnUpDownUndefined: Self = StObject.set(x, "focusOnUpDown", js.undefined)
-      
-      inline def setFormatter(value: /* value */ js.UndefOr[Double | String] => String): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
-      
-      inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
-      
-      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-      
-      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
-      
-      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
-      
-      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
-      
-      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
-      
-      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
-      
-      inline def setOnBlur(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
-      
-      inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
-      
-      inline def setOnChange(value: /* value */ js.UndefOr[Double | String] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
-      
-      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
-      
-      inline def setOnFocus(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
-      
-      inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
-      
-      inline def setOnKeyDown(value: (/* e */ js.Any, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction2(value))
-      
-      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
-      
-      inline def setOnKeyUp(value: (/* e */ js.Any, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction2(value))
-      
-      inline def setOnKeyUpUndefined: Self = StObject.set(x, "onKeyUp", js.undefined)
-      
-      inline def setOnMouseUp(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1(value))
-      
-      inline def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
-      
-      inline def setOnPressEnter(value: KeyboardEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onPressEnter", js.Any.fromFunction1(value))
-      
-      inline def setOnPressEnterUndefined: Self = StObject.set(x, "onPressEnter", js.undefined)
-      
-      inline def setParser(value: /* displayValue */ js.UndefOr[String] => Double | String): Self = StObject.set(x, "parser", js.Any.fromFunction1(value))
-      
-      inline def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
-      
-      inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
-      
-      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
-      
-      inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
-      
-      inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
-      
-      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
-      
-      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
-      
-      inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
-      
-      inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
-      
-      inline def setSize(value: ISize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-      
-      inline def setStep(value: Double | String): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
-      
-      inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
-      
-      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
-      
-      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
-      
-      inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
-      
-      inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
-      
-      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
-      
-      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
-      
-      inline def setUpHandler(value: ReactElement): Self = StObject.set(x, "upHandler", value.asInstanceOf[js.Any])
-      
-      inline def setUpHandlerUndefined: Self = StObject.set(x, "upHandler", js.undefined)
-      
-      inline def setUseTouch(value: Boolean): Self = StObject.set(x, "useTouch", value.asInstanceOf[js.Any])
-      
-      inline def setUseTouchUndefined: Self = StObject.set(x, "useTouch", js.undefined)
-      
-      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-      
-      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    extension [Self <: Children](x: Self) {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setRef(value: Ref[HTMLInputElement]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      
+      inline def setRefFunction1(value: /* instance */ HTMLInputElement | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
+      
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+    }
+  }
+  
+  trait DecimalStr extends StObject {
+    
+    var decimalStr: String
+    
+    var fullStr: String
+    
+    var integerStr: String
+    
+    var negative: Boolean
+    
+    var negativeStr: String
+    
+    var trimStr: String
+  }
+  object DecimalStr {
+    
+    inline def apply(
+      decimalStr: String,
+      fullStr: String,
+      integerStr: String,
+      negative: Boolean,
+      negativeStr: String,
+      trimStr: String
+    ): DecimalStr = {
+      val __obj = js.Dynamic.literal(decimalStr = decimalStr.asInstanceOf[js.Any], fullStr = fullStr.asInstanceOf[js.Any], integerStr = integerStr.asInstanceOf[js.Any], negative = negative.asInstanceOf[js.Any], negativeStr = negativeStr.asInstanceOf[js.Any], trimStr = trimStr.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DecimalStr]
+    }
+    
+    extension [Self <: DecimalStr](x: Self) {
+      
+      inline def setDecimalStr(value: String): Self = StObject.set(x, "decimalStr", value.asInstanceOf[js.Any])
+      
+      inline def setFullStr(value: String): Self = StObject.set(x, "fullStr", value.asInstanceOf[js.Any])
+      
+      inline def setIntegerStr(value: String): Self = StObject.set(x, "integerStr", value.asInstanceOf[js.Any])
+      
+      inline def setNegative(value: Boolean): Self = StObject.set(x, "negative", value.asInstanceOf[js.Any])
+      
+      inline def setNegativeStr(value: String): Self = StObject.set(x, "negativeStr", value.asInstanceOf[js.Any])
+      
+      inline def setTrimStr(value: String): Self = StObject.set(x, "trimStr", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait DisplayName extends StObject {
+    
+    var displayName: js.UndefOr[String] = js.undefined
+  }
+  object DisplayName {
+    
+    inline def apply(): DisplayName = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[DisplayName]
+    }
+    
+    extension [Self <: DisplayName](x: Self) {
+      
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      
+      inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    }
+  }
+  
+  trait Input extends StObject {
+    
+    var input: String
+    
+    var userTyping: Boolean
+  }
+  object Input {
+    
+    inline def apply(input: String, userTyping: Boolean): Input = {
+      val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any], userTyping = userTyping.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Input]
+    }
+    
+    extension [Self <: Input](x: Self) {
+      
+      inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      
+      inline def setUserTyping(value: Boolean): Self = StObject.set(x, "userTyping", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Offset extends StObject {
+    
+    var offset: ValueType
+    
+    var `type`: up | down
+  }
+  object Offset {
+    
+    inline def apply(offset: ValueType, `type`: up | down): Offset = {
+      val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Offset]
+    }
+    
+    extension [Self <: Offset](x: Self) {
+      
+      inline def setOffset(value: ValueType): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      
+      inline def setType(value: up | down): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

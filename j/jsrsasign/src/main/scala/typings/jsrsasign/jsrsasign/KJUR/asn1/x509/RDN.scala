@@ -75,7 +75,7 @@ object RDN {
     hV: String,
     isModified: String
   ): RDN = {
-    val __obj = js.Dynamic.literal(addByMultiValuedString = js.Any.fromFunction1(addByMultiValuedString), addByString = js.Any.fromFunction1(addByString), getEncodedHex = js.Any.fromFunction0(getEncodedHex), getFreshValueHex = js.Any.fromFunction0(getFreshValueHex), getLengthHexFromValue = js.Any.fromFunction0(getLengthHexFromValue), getValueHex = js.Any.fromFunction0(getValueHex), hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(addByMultiValuedString = js.Any.fromFunction1(addByMultiValuedString), addByString = js.Any.fromFunction1(addByString), getEncodedHex = js.Any.fromFunction0(getEncodedHex), getFreshValueHex = js.Any.fromFunction0(getFreshValueHex), getLengthHexFromValue = js.Any.fromFunction0(getLengthHexFromValue), getValueHex = js.Any.fromFunction0(getValueHex), hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], params = null)
     __obj.asInstanceOf[RDN]
   }
   

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ToggleTableCellInsideHorizontalBordersCommand")
 @js.native
-class ToggleTableCellInsideHorizontalBordersCommand ()
+open class ToggleTableCellInsideHorizontalBordersCommand ()
   extends StObject
      with typings.devexpressWeb.ToggleTableCellInsideHorizontalBordersCommand {
   

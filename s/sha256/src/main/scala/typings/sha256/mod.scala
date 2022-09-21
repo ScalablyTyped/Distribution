@@ -1,7 +1,7 @@
 package typings.sha256
 
 import org.scalablytyped.runtime.Shortcut
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.sha256.anon.AsBytes
 import typings.sha256.anon.AsString
 import org.scalablytyped.runtime.StObject

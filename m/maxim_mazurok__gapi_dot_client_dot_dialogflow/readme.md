@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_dialogflow
 
-Typings are for version 2.0.20201119
+Typings are for version 3.0.20220811
 
 ## Library description:
 TypeScript typings for Dialogflow API v3
@@ -10,10 +10,10 @@ TypeScript typings for Dialogflow API v3
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.dialogflow |
 | Keywords           | - |
-| # releases         | 19 |
-| # dependents       | 1 |
-| # downloads        | 1541 |
-| # stars            | 0 |
+| # releases         | 99 |
+| # dependents       | 0.0 |
+| # downloads        | 1071.6666666666667 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

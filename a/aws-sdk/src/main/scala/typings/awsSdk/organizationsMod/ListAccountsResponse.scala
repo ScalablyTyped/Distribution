@@ -29,7 +29,7 @@ object ListAccountsResponse {
     
     inline def setAccountsUndefined: Self = StObject.set(x, "Accounts", js.undefined)
     
-    inline def setAccountsVarargs(value: Account*): Self = StObject.set(x, "Accounts", js.Array(value :_*))
+    inline def setAccountsVarargs(value: Account*): Self = StObject.set(x, "Accounts", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

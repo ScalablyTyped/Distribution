@@ -8,7 +8,7 @@ trait GroupData extends StObject {
   
   var data: js.Object
   
-  var groupData: js.Array[js.Any]
+  var groupData: js.Array[Any]
   
   var itemData: js.Object
   
@@ -16,7 +16,7 @@ trait GroupData extends StObject {
 }
 object GroupData {
   
-  inline def apply(data: js.Object, groupData: js.Array[js.Any], itemData: js.Object, seriesData: js.Object): GroupData = {
+  inline def apply(data: js.Object, groupData: js.Array[Any], itemData: js.Object, seriesData: js.Object): GroupData = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], groupData = groupData.asInstanceOf[js.Any], itemData = itemData.asInstanceOf[js.Any], seriesData = seriesData.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupData]
   }
@@ -25,9 +25,9 @@ object GroupData {
     
     inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setGroupData(value: js.Array[js.Any]): Self = StObject.set(x, "groupData", value.asInstanceOf[js.Any])
+    inline def setGroupData(value: js.Array[Any]): Self = StObject.set(x, "groupData", value.asInstanceOf[js.Any])
     
-    inline def setGroupDataVarargs(value: js.Any*): Self = StObject.set(x, "groupData", js.Array(value :_*))
+    inline def setGroupDataVarargs(value: Any*): Self = StObject.set(x, "groupData", js.Array(value*))
     
     inline def setItemData(value: js.Object): Self = StObject.set(x, "itemData", value.asInstanceOf[js.Any])
     

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("wonder-frp/dist/commonjs", "RepeatStream")
 @js.native
-class RepeatStream protected ()
+open class RepeatStream protected ()
   extends typings.wonderFrp.repeatStreamMod.RepeatStream {
   def this(source: typings.wonderFrp.streamMod.Stream, count: Double) = this()
 }

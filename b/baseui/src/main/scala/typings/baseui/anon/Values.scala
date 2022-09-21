@@ -1,30 +1,24 @@
 package typings.baseui.anon
 
-import typings.react.mod.FormEvent
-import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Values extends StObject {
   
-  var event: FormEvent[HTMLInputElement]
-  
   var values: js.Array[String]
 }
 object Values {
   
-  inline def apply(event: FormEvent[HTMLInputElement], values: js.Array[String]): Values = {
-    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
+  inline def apply(values: js.Array[String]): Values = {
+    val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[Values]
   }
   
   extension [Self <: Values](x: Self) {
     
-    inline def setEvent(value: FormEvent[HTMLInputElement]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
-    
     inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value*))
   }
 }

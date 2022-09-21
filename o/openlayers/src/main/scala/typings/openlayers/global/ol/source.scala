@@ -44,7 +44,7 @@ object source {
     */
   @JSGlobal("ol.source.BingMaps")
   @js.native
-  class BingMaps protected ()
+  open class BingMaps protected ()
     extends typings.openlayers.mod.source.BingMaps {
     /**
       * @classdesc
@@ -83,7 +83,7 @@ object source {
     */
   @JSGlobal("ol.source.CartoDB")
   @js.native
-  class CartoDB protected ()
+  open class CartoDB protected ()
     extends typings.openlayers.mod.source.CartoDB {
     /**
       * @classdesc
@@ -106,7 +106,7 @@ object source {
     */
   @JSGlobal("ol.source.Cluster")
   @js.native
-  class Cluster protected ()
+  open class Cluster protected ()
     extends typings.openlayers.mod.source.Cluster {
     /**
       * @classdesc
@@ -131,7 +131,7 @@ object source {
     */
   @JSGlobal("ol.source.Image")
   @js.native
-  class Image protected ()
+  open class Image protected ()
     extends typings.openlayers.mod.source.Image {
     /**
       * @classdesc
@@ -173,7 +173,7 @@ object source {
     * @param opt_options Image ArcGIS Rest Options.
     * @api
     */
-  class ImageArcGISRest ()
+  open class ImageArcGISRest ()
     extends typings.openlayers.mod.source.ImageArcGISRest {
     def this(opt_options: ImageArcGISRestOptions) = this()
   }
@@ -187,7 +187,7 @@ object source {
     */
   @JSGlobal("ol.source.ImageCanvas")
   @js.native
-  class ImageCanvas protected ()
+  open class ImageCanvas protected ()
     extends typings.openlayers.mod.source.ImageCanvas {
     /**
       * @classdesc
@@ -209,7 +209,7 @@ object source {
     */
   @JSGlobal("ol.source.ImageEvent")
   @js.native
-  class ImageEvent protected ()
+  open class ImageEvent protected ()
     extends typings.openlayers.mod.source.ImageEvent {
     /**
       * @classdesc
@@ -232,7 +232,7 @@ object source {
     */
   @JSGlobal("ol.source.ImageMapGuide")
   @js.native
-  class ImageMapGuide protected ()
+  open class ImageMapGuide protected ()
     extends typings.openlayers.mod.source.ImageMapGuide {
     /**
       * @classdesc
@@ -254,7 +254,7 @@ object source {
     */
   @JSGlobal("ol.source.ImageStatic")
   @js.native
-  class ImageStatic protected ()
+  open class ImageStatic protected ()
     extends typings.openlayers.mod.source.ImageStatic {
     /**
       * @classdesc
@@ -283,7 +283,7 @@ object source {
     */
   @JSGlobal("ol.source.ImageVector")
   @js.native
-  class ImageVector protected ()
+  open class ImageVector protected ()
     extends typings.openlayers.mod.source.ImageVector {
     /**
       * @classdesc
@@ -321,7 +321,7 @@ object source {
     * @param opt_options Options.
     * @api stable
     */
-  class ImageWMS ()
+  open class ImageWMS ()
     extends typings.openlayers.mod.source.ImageWMS {
     def this(opt_options: ImageWMSOptions) = this()
   }
@@ -342,7 +342,7 @@ object source {
     * @param opt_options Open Street Map options.
     * @api stable
     */
-  class OSM ()
+  open class OSM ()
     extends typings.openlayers.mod.source.OSM {
     def this(opt_options: OSMOptions) = this()
   }
@@ -377,7 +377,7 @@ object source {
     */
   @JSGlobal("ol.source.Raster")
   @js.native
-  class Raster protected ()
+  open class Raster protected ()
     extends typings.openlayers.mod.source.Raster {
     /**
       * @classdesc
@@ -403,7 +403,7 @@ object source {
     */
   @JSGlobal("ol.source.RasterEvent")
   @js.native
-  class RasterEvent protected ()
+  open class RasterEvent protected ()
     extends typings.openlayers.mod.source.RasterEvent {
     /**
       * @classdesc
@@ -430,7 +430,7 @@ object source {
     */
   @JSGlobal("ol.source.Source")
   @js.native
-  class Source protected ()
+  open class Source protected ()
     extends typings.openlayers.mod.source.Source {
     /**
       * @classdesc
@@ -455,7 +455,7 @@ object source {
     */
   @JSGlobal("ol.source.Stamen")
   @js.native
-  class Stamen protected ()
+  open class Stamen protected ()
     extends typings.openlayers.mod.source.Stamen {
     /**
       * @classdesc
@@ -478,7 +478,7 @@ object source {
     */
   @JSGlobal("ol.source.Tile")
   @js.native
-  class Tile protected ()
+  open class Tile protected ()
     extends typings.openlayers.mod.source.Tile {
     /**
       * @classdesc
@@ -518,7 +518,7 @@ object source {
     *     options.
     * @api
     */
-  class TileArcGISRest ()
+  open class TileArcGISRest ()
     extends typings.openlayers.mod.source.TileArcGISRest {
     def this(opt_options: TileArcGISRestOptions) = this()
   }
@@ -536,7 +536,7 @@ object source {
     */
   @JSGlobal("ol.source.TileDebug")
   @js.native
-  class TileDebug protected ()
+  open class TileDebug protected ()
     extends typings.openlayers.mod.source.TileDebug {
     /**
       * @classdesc
@@ -562,7 +562,7 @@ object source {
     */
   @JSGlobal("ol.source.TileEvent")
   @js.native
-  class TileEvent protected ()
+  open class TileEvent protected ()
     extends typings.openlayers.mod.source.TileEvent {
     /**
       * @classdesc
@@ -585,7 +585,7 @@ object source {
     */
   @JSGlobal("ol.source.TileImage")
   @js.native
-  class TileImage protected ()
+  open class TileImage protected ()
     extends typings.openlayers.mod.source.TileImage {
     /**
       * @classdesc
@@ -607,7 +607,7 @@ object source {
     */
   @JSGlobal("ol.source.TileJSON")
   @js.native
-  class TileJSON protected ()
+  open class TileJSON protected ()
     extends typings.openlayers.mod.source.TileJSON {
     /**
       * @classdesc
@@ -628,7 +628,7 @@ object source {
     */
   @JSGlobal("ol.source.TileUTFGrid")
   @js.native
-  class TileUTFGrid protected ()
+  open class TileUTFGrid protected ()
     extends typings.openlayers.mod.source.TileUTFGrid {
     /**
       * @classdesc
@@ -656,7 +656,7 @@ object source {
     * @param opt_options Tile WMS options.
     * @api stable
     */
-  class TileWMS ()
+  open class TileWMS ()
     extends typings.openlayers.mod.source.TileWMS {
     def this(opt_options: TileWMSOptions) = this()
   }
@@ -670,7 +670,7 @@ object source {
     */
   @JSGlobal("ol.source.UrlTile")
   @js.native
-  class UrlTile protected ()
+  open class UrlTile protected ()
     extends typings.openlayers.mod.source.UrlTile {
     /**
       * @classdesc
@@ -704,7 +704,7 @@ object source {
     * @param opt_options Vector source options.
     * @api stable
     */
-  class Vector ()
+  open class Vector ()
     extends typings.openlayers.mod.source.Vector {
     def this(opt_options: VectorOptions) = this()
   }
@@ -719,7 +719,7 @@ object source {
     */
   @JSGlobal("ol.source.VectorEvent")
   @js.native
-  class VectorEvent protected ()
+  open class VectorEvent protected ()
     extends typings.openlayers.mod.source.VectorEvent {
     /**
       * @classdesc
@@ -749,7 +749,7 @@ object source {
     */
   @JSGlobal("ol.source.VectorTile")
   @js.native
-  class VectorTile protected ()
+  open class VectorTile protected ()
     extends typings.openlayers.mod.source.VectorTile {
     /**
       * @classdesc
@@ -777,7 +777,7 @@ object source {
     */
   @JSGlobal("ol.source.WMTS")
   @js.native
-  class WMTS protected ()
+  open class WMTS protected ()
     extends typings.openlayers.mod.source.WMTS {
     /**
       * @classdesc
@@ -863,7 +863,7 @@ object source {
     * @param opt_options XYZ options.
     * @api stable
     */
-  class XYZ ()
+  open class XYZ ()
     extends typings.openlayers.mod.source.XYZ {
     def this(opt_options: XYZOptions) = this()
   }
@@ -884,7 +884,7 @@ object source {
     * @param opt_options Options.
     * @api stable
     */
-  class Zoomify ()
+  open class Zoomify ()
     extends typings.openlayers.mod.source.Zoomify {
     def this(opt_options: ZoomifyOptions) = this()
   }

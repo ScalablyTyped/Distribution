@@ -34,7 +34,7 @@ object XLoadable {
     acquire: () => Unit,
     initNew: () => Unit,
     load: SeqEquiv[PropertyValue] => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XLoadable = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), initNew = js.Any.fromFunction0(initNew), load = js.Any.fromFunction1(load), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

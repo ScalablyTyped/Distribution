@@ -1,7 +1,7 @@
 
 # Scala.js typings for scrivito
 
-Typings are for version 1.16
+Typings are for version 1.22
 
 ## Library description:
 Scrivito is a professional, yet easy to use SaaS Enterprise Content Management Service, built for digital agencies and medium to large businesses. It is completely maintenance-free, cost-effective, and has unprecedented performance and security.
@@ -10,12 +10,15 @@ Scrivito is a professional, yet easy to use SaaS Enterprise Content Management S
 | ------------------ | :-------------: |
 | Full name          | scrivito |
 | Keywords           | scrivito, saas, cms, react |
-| # releases         | 54 |
-| # dependents       | 0 |
-| # downloads        | 63927 |
-| # stars            | 0 |
+| # releases         | 46 |
+| # dependents       | 0.0 |
+| # downloads        | 13537.666666666666 |
+| # stars            | 2.0 |
 
 ## Links
+- [Homepage](https://scrivito.com)
+- [Bugs](https://github.com/Scrivito/scrivito_sdk_js/issues)
+- [Repository](https://github.com/Scrivito/scrivito_sdk_js)
 - [Npm](https://www.npmjs.com/package/scrivito)
     
 

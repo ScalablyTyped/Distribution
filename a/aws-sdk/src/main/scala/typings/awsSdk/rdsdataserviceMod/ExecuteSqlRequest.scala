@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExecuteSqlRequest extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the secret that enables access to the DB cluster.
+    * The Amazon Resource Name (ARN) of the secret that enables access to the DB cluster. Enter the database user name and password for the credentials in the secret. For information about creating the secret, see Create a database secret.
     */
   var awsSecretStoreArn: Arn
   

@@ -1,6 +1,5 @@
 package typings.playcanvas.anon
 
-import typings.playcanvas.pc.ScriptAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,22 +7,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TypeofScriptType extends StObject {
   
   /**
-    * The interface to define attributes for Script Types. Refer to {@link pc.ScriptAttributes}.
-    * @example
-    * var PlayerController = pc.createScript('playerController');
-    *
-    * PlayerController.attributes.add('speed', {
-    *     type: 'number',
-    *     title: 'Speed',
-    *     placeholder: 'km/h',
-    *     default: 22.2
-    * });
+    * @param {*} constructorFn - The constructor function of the script type.
+    * @returns {string} The script name.
+    * @private
     */
   /* static member */
-  val attributes: ScriptAttributes
+  var __getScriptName: Any
+  
+  /**
+    * Name of a Script Type.
+    *
+    * @type {string}
+    * @private
+    */
+  /* static member */
+  var __name: Any
   
   /**
     * Shorthand function to extend Script Type prototype with list of methods.
+    *
+    * @param {object} methods - Object with methods, where key - is name of method, and value - is function.
     * @example
     * var PlayerController = pc.createScript('playerController');
     *
@@ -35,32 +38,23 @@ trait TypeofScriptType extends StObject {
     *         // called each tick
     *     }
     * });
-    * @param methods - Object with methods, where key - is name of method, and value - is function.
     */
   /* static member */
-  def extend(methods: js.Any): Unit
-  
-  /**
-    * Name of a Script Type
-    */
-  /* static member */
-  val scriptName: String | Null
+  def extend(methods: js.Object): Unit
 }
 object TypeofScriptType {
   
-  inline def apply(attributes: ScriptAttributes, extend: js.Any => Unit): TypeofScriptType = {
-    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], extend = js.Any.fromFunction1(extend), scriptName = null)
+  inline def apply(__getScriptName: Any, __name: Any, extend: js.Object => Unit): TypeofScriptType = {
+    val __obj = js.Dynamic.literal(__getScriptName = __getScriptName.asInstanceOf[js.Any], __name = __name.asInstanceOf[js.Any], extend = js.Any.fromFunction1(extend))
     __obj.asInstanceOf[TypeofScriptType]
   }
   
   extension [Self <: TypeofScriptType](x: Self) {
     
-    inline def setAttributes(value: ScriptAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setExtend(value: js.Object => Unit): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    inline def setExtend(value: js.Any => Unit): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def set__getScriptName(value: Any): Self = StObject.set(x, "__getScriptName", value.asInstanceOf[js.Any])
     
-    inline def setScriptName(value: String): Self = StObject.set(x, "scriptName", value.asInstanceOf[js.Any])
-    
-    inline def setScriptNameNull: Self = StObject.set(x, "scriptName", null)
+    inline def set__name(value: Any): Self = StObject.set(x, "__name", value.asInstanceOf[js.Any])
   }
 }

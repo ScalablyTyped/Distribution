@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "skia-canvas" : "1.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "skia-canvas" : "1.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

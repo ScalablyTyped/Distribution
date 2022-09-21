@@ -11,7 +11,7 @@ object blobReaderMod {
   
   @JSImport("guacamole-client/lib/BlobReader", "BlobReader")
   @js.native
-  class BlobReader protected () extends StObject {
+  open class BlobReader protected () extends StObject {
     /**
       * @param stream The stream that data will be read from.
       * @param mimetype The mimetype of the blob being built.

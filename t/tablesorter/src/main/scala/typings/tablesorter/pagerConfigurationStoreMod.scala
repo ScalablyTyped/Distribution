@@ -3,7 +3,6 @@ package typings.tablesorter
 import typings.jquery.JQuery.Ajax.SuccessCallback
 import typings.jquery.JQuery.Ajax.SuccessTextStatus
 import typings.jquery.JQuery.jqXHR
-import typings.std.RegExp
 import typings.tablesorter.mod.global.HTMLElement
 import typings.tablesorter.mod.global.JQuery
 import typings.tablesorter.pagerConfigurationMod.PagerConfiguration
@@ -51,11 +50,7 @@ object pagerConfigurationStoreMod {
     /**
       * The result of the ajax-request.
       */
-    var ajaxData: PagerDataPart[TElement] | js.Array[Double] | (js.Tuple3[
-        Double, 
-        JQuery[HTMLElement] | js.Array[js.Array[js.Any]], 
-        js.UndefOr[js.Array[String]]
-      ])
+    var ajaxData: PagerDataPart[TElement] | js.Array[Double] | (js.Tuple3[Double, JQuery[HTMLElement] | js.Array[js.Array[Any]], js.UndefOr[js.Array[String]]])
     
     /**
       * The url to query data from.
@@ -111,12 +106,12 @@ object pagerConfigurationStoreMod {
     /**
       * The old success-callback of the ajax-settings.
       */
-    def oldAjaxSuccess(data: js.Any, textStatus: SuccessTextStatus, jqXHR: jqXHR[js.Any]): Unit
+    def oldAjaxSuccess(data: Any, textStatus: SuccessTextStatus, jqXHR: jqXHR[Any]): Unit
     /**
       * The old success-callback of the ajax-settings.
       */
     @JSName("oldAjaxSuccess")
-    var oldAjaxSuccess_Original: SuccessCallback[js.Any]
+    var oldAjaxSuccess_Original: SuccessCallback[Any]
     
     /**
       * The optional url to query data from.
@@ -129,12 +124,12 @@ object pagerConfigurationStoreMod {
     /**
       * The regex for identifying filtered rows.
       */
-    var regexFiltered: RegExp
+    var regexFiltered: js.RegExp
     
     /**
       * The regex for identifying rows.
       */
-    var regexRows: RegExp
+    var regexRows: js.RegExp
     
     /**
       * The initial settings of the pager.
@@ -172,11 +167,7 @@ object pagerConfigurationStoreMod {
       $size: JQuery[HTMLElement],
       ajax: Boolean,
       ajaxCounter: Double,
-      ajaxData: PagerDataPart[TElement] | js.Array[Double] | (js.Tuple3[
-          Double, 
-          JQuery[HTMLElement] | js.Array[js.Array[js.Any]], 
-          js.UndefOr[js.Array[String]]
-        ]),
+      ajaxData: PagerDataPart[TElement] | js.Array[Double] | (js.Tuple3[Double, JQuery[HTMLElement] | js.Array[js.Array[Any]], js.UndefOr[js.Array[String]]]),
       ajaxUrl: String,
       cachedIndex: js.Array[Double],
       currentFilters: js.Array[String],
@@ -187,11 +178,11 @@ object pagerConfigurationStoreMod {
       initializing: Boolean,
       isDisabled: Boolean,
       last: PagerMemory,
-      oldAjaxSuccess: SuccessCallback[js.Any],
+      oldAjaxSuccess: SuccessCallback[Any],
       optAjaxUrl: String,
       page: Double,
-      regexFiltered: RegExp,
-      regexRows: RegExp,
+      regexFiltered: js.RegExp,
+      regexRows: js.RegExp,
       settings: PagerConfiguration[TElement],
       size: Double,
       sortList: js.Array[SortDefinition],
@@ -216,24 +207,20 @@ object pagerConfigurationStoreMod {
       inline def setAjaxCounter(value: Double): Self = StObject.set(x, "ajaxCounter", value.asInstanceOf[js.Any])
       
       inline def setAjaxData(
-        value: PagerDataPart[TElement] | js.Array[Double] | (js.Tuple3[
-              Double, 
-              JQuery[HTMLElement] | js.Array[js.Array[js.Any]], 
-              js.UndefOr[js.Array[String]]
-            ])
+        value: PagerDataPart[TElement] | js.Array[Double] | (js.Tuple3[Double, JQuery[HTMLElement] | js.Array[js.Array[Any]], js.UndefOr[js.Array[String]]])
       ): Self = StObject.set(x, "ajaxData", value.asInstanceOf[js.Any])
       
-      inline def setAjaxDataVarargs(value: Double*): Self = StObject.set(x, "ajaxData", js.Array(value :_*))
+      inline def setAjaxDataVarargs(value: Double*): Self = StObject.set(x, "ajaxData", js.Array(value*))
       
       inline def setAjaxUrl(value: String): Self = StObject.set(x, "ajaxUrl", value.asInstanceOf[js.Any])
       
       inline def setCachedIndex(value: js.Array[Double]): Self = StObject.set(x, "cachedIndex", value.asInstanceOf[js.Any])
       
-      inline def setCachedIndexVarargs(value: Double*): Self = StObject.set(x, "cachedIndex", js.Array(value :_*))
+      inline def setCachedIndexVarargs(value: Double*): Self = StObject.set(x, "cachedIndex", js.Array(value*))
       
       inline def setCurrentFilters(value: js.Array[String]): Self = StObject.set(x, "currentFilters", value.asInstanceOf[js.Any])
       
-      inline def setCurrentFiltersVarargs(value: String*): Self = StObject.set(x, "currentFilters", js.Array(value :_*))
+      inline def setCurrentFiltersVarargs(value: String*): Self = StObject.set(x, "currentFilters", js.Array(value*))
       
       inline def setEndRow(value: Double): Self = StObject.set(x, "endRow", value.asInstanceOf[js.Any])
       
@@ -249,15 +236,15 @@ object pagerConfigurationStoreMod {
       
       inline def setLast(value: PagerMemory): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
       
-      inline def setOldAjaxSuccess(value: SuccessCallback[js.Any]): Self = StObject.set(x, "oldAjaxSuccess", value.asInstanceOf[js.Any])
+      inline def setOldAjaxSuccess(value: SuccessCallback[Any]): Self = StObject.set(x, "oldAjaxSuccess", value.asInstanceOf[js.Any])
       
       inline def setOptAjaxUrl(value: String): Self = StObject.set(x, "optAjaxUrl", value.asInstanceOf[js.Any])
       
       inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
-      inline def setRegexFiltered(value: RegExp): Self = StObject.set(x, "regexFiltered", value.asInstanceOf[js.Any])
+      inline def setRegexFiltered(value: js.RegExp): Self = StObject.set(x, "regexFiltered", value.asInstanceOf[js.Any])
       
-      inline def setRegexRows(value: RegExp): Self = StObject.set(x, "regexRows", value.asInstanceOf[js.Any])
+      inline def setRegexRows(value: js.RegExp): Self = StObject.set(x, "regexRows", value.asInstanceOf[js.Any])
       
       inline def setSettings(value: PagerConfiguration[TElement]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
       
@@ -265,7 +252,7 @@ object pagerConfigurationStoreMod {
       
       inline def setSortList(value: js.Array[SortDefinition]): Self = StObject.set(x, "sortList", value.asInstanceOf[js.Any])
       
-      inline def setSortListVarargs(value: SortDefinition*): Self = StObject.set(x, "sortList", js.Array(value :_*))
+      inline def setSortListVarargs(value: SortDefinition*): Self = StObject.set(x, "sortList", js.Array(value*))
       
       inline def setStartRow(value: Double): Self = StObject.set(x, "startRow", value.asInstanceOf[js.Any])
       

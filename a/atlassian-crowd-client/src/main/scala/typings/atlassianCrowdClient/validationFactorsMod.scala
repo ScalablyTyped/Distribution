@@ -8,16 +8,16 @@ object validationFactorsMod {
   
   @JSImport("atlassian-crowd-client/lib/models/validation-factors", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with ValidationFactors {
-    def this(validationFactorPairs: js.Any) = this()
+    def this(validationFactorPairs: Any) = this()
     
     /* CompleteClass */
     override def toCrowd(): ValidationFactorsObj = js.native
     
     /* CompleteClass */
-    override val validationFactors: js.Any = js.native
+    override val validationFactors: Any = js.native
   }
   @JSImport("atlassian-crowd-client/lib/models/validation-factors", JSImport.Namespace)
   @js.native
@@ -30,11 +30,11 @@ object validationFactorsMod {
     
     def toCrowd(): ValidationFactorsObj
     
-    val validationFactors: js.Any
+    val validationFactors: Any
   }
   object ValidationFactors {
     
-    inline def apply(toCrowd: () => ValidationFactorsObj, validationFactors: js.Any): ValidationFactors = {
+    inline def apply(toCrowd: () => ValidationFactorsObj, validationFactors: Any): ValidationFactors = {
       val __obj = js.Dynamic.literal(toCrowd = js.Any.fromFunction0(toCrowd), validationFactors = validationFactors.asInstanceOf[js.Any])
       __obj.asInstanceOf[ValidationFactors]
     }
@@ -43,26 +43,26 @@ object validationFactorsMod {
       
       inline def setToCrowd(value: () => ValidationFactorsObj): Self = StObject.set(x, "toCrowd", js.Any.fromFunction0(value))
       
-      inline def setValidationFactors(value: js.Any): Self = StObject.set(x, "validationFactors", value.asInstanceOf[js.Any])
+      inline def setValidationFactors(value: Any): Self = StObject.set(x, "validationFactors", value.asInstanceOf[js.Any])
     }
   }
   
   trait ValidationFactorsObj extends StObject {
     
-    var validationFactors: js.Array[js.Any]
+    var validationFactors: js.Array[Any]
   }
   object ValidationFactorsObj {
     
-    inline def apply(validationFactors: js.Array[js.Any]): ValidationFactorsObj = {
+    inline def apply(validationFactors: js.Array[Any]): ValidationFactorsObj = {
       val __obj = js.Dynamic.literal(validationFactors = validationFactors.asInstanceOf[js.Any])
       __obj.asInstanceOf[ValidationFactorsObj]
     }
     
     extension [Self <: ValidationFactorsObj](x: Self) {
       
-      inline def setValidationFactors(value: js.Array[js.Any]): Self = StObject.set(x, "validationFactors", value.asInstanceOf[js.Any])
+      inline def setValidationFactors(value: js.Array[Any]): Self = StObject.set(x, "validationFactors", value.asInstanceOf[js.Any])
       
-      inline def setValidationFactorsVarargs(value: js.Any*): Self = StObject.set(x, "validationFactors", js.Array(value :_*))
+      inline def setValidationFactorsVarargs(value: Any*): Self = StObject.set(x, "validationFactors", js.Array(value*))
     }
   }
 }

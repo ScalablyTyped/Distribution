@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientVerticalGridBatchEditRecordRecoveringEventArgs")
 @js.native
-class ASPxClientVerticalGridBatchEditRecordRecoveringEventArgs protected ()
+open class ASPxClientVerticalGridBatchEditRecordRecoveringEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientVerticalGridBatchEditRecordRecoveringEventArgs {
   /**
@@ -17,10 +17,10 @@ class ASPxClientVerticalGridBatchEditRecordRecoveringEventArgs protected ()
     * @param visibleIndex An integer value specifying a record's visible index.
     * @param recordValues An object representing record values.
     */
-  def this(visibleIndex: Double, recordValues: js.Any) = this()
+  def this(visibleIndex: Double, recordValues: Any) = this()
   
   /**
-    * Gets or sets a value indicating whether the action which raised the event should be canceled.
+    * Specifies whether to cancel the related action (for example, row edit, export).
     */
   /* CompleteClass */
   var cancel: Boolean = js.native
@@ -29,7 +29,7 @@ class ASPxClientVerticalGridBatchEditRecordRecoveringEventArgs protected ()
     * Gets a hashtable that maintains information about recovered cells.
     */
   /* CompleteClass */
-  var recordValues: js.Any = js.native
+  var recordValues: Any = js.native
   
   /**
     * Gets the processed record's visible index.

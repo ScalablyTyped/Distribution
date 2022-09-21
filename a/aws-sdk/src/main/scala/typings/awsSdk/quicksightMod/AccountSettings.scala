@@ -7,24 +7,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AccountSettings extends StObject {
   
   /**
-    * The "account name" you provided for the QuickSight subscription in your AWS account. You create this name when you sign up for QuickSight. It is unique in all of AWS and it appears only in the console when users sign in.
+    * The "account name" you provided for the Amazon QuickSight subscription in your Amazon Web Services account. You create this name when you sign up for Amazon QuickSight. It is unique in all of Amazon Web Services and it appears only when users sign in.
     */
   var AccountName: js.UndefOr[String] = js.undefined
   
   /**
-    * The default QuickSight namespace for your AWS account. 
+    * The default Amazon QuickSight namespace for your Amazon Web Services account. 
     */
   var DefaultNamespace: js.UndefOr[Namespace] = js.undefined
   
   /**
-    * The edition of QuickSight that you're currently subscribed to: Enterprise edition or Standard edition.
+    * The edition of Amazon QuickSight that you're currently subscribed to: Enterprise edition or Standard edition.
     */
   var Edition: js.UndefOr[typings.awsSdk.quicksightMod.Edition] = js.undefined
   
   /**
-    * The main notification email for your QuickSight subscription.
+    * The main notification email for your Amazon QuickSight subscription.
     */
   var NotificationEmail: js.UndefOr[String] = js.undefined
+  
+  /**
+    * A Boolean value that indicates whether public sharing is turned on for an Amazon QuickSight account. For more information about turning on public sharing, see UpdatePublicSharingSettings.
+    */
+  var PublicSharingEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object AccountSettings {
   
@@ -50,5 +55,9 @@ object AccountSettings {
     inline def setNotificationEmail(value: String): Self = StObject.set(x, "NotificationEmail", value.asInstanceOf[js.Any])
     
     inline def setNotificationEmailUndefined: Self = StObject.set(x, "NotificationEmail", js.undefined)
+    
+    inline def setPublicSharingEnabled(value: Boolean): Self = StObject.set(x, "PublicSharingEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setPublicSharingEnabledUndefined: Self = StObject.set(x, "PublicSharingEnabled", js.undefined)
   }
 }

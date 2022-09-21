@@ -31,13 +31,13 @@ object GenerateConfigReportResponse {
     
     inline def setChangeReportsUndefined: Self = StObject.set(x, "changeReports", js.undefined)
     
-    inline def setChangeReportsVarargs(value: ChangeReport*): Self = StObject.set(x, "changeReports", js.Array(value :_*))
+    inline def setChangeReportsVarargs(value: ChangeReport*): Self = StObject.set(x, "changeReports", js.Array(value*))
     
     inline def setDiagnostics(value: js.Array[Diagnostic]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
     
     inline def setDiagnosticsUndefined: Self = StObject.set(x, "diagnostics", js.undefined)
     
-    inline def setDiagnosticsVarargs(value: Diagnostic*): Self = StObject.set(x, "diagnostics", js.Array(value :_*))
+    inline def setDiagnosticsVarargs(value: Diagnostic*): Self = StObject.set(x, "diagnostics", js.Array(value*))
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

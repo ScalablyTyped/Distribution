@@ -14,9 +14,7 @@ trait ICompositeElementLite
     * @param root HTMLElement/String The root element of the query or id of the root.
     * @returns Ext.dom.CompositeElementLite This Composite object.
     */
-  var add: js.UndefOr[
-    js.Function2[/* els */ js.UndefOr[js.Any], /* root */ js.UndefOr[js.Any], this.type]
-  ] = js.undefined
+  var add: js.UndefOr[js.Function2[/* els */ js.UndefOr[Any], /* root */ js.UndefOr[Any], this.type]] = js.undefined
   
   /** [Method] Adds the given CSS class es to this Element
     * @param names String The CSS class(es) to add to this element.
@@ -44,10 +42,10 @@ trait ICompositeElementLite
   @JSName("addListener")
   var addListener_ICompositeElementLite: js.UndefOr[
     js.Function4[
-      /* eventName */ js.UndefOr[js.Any], 
-      /* handler */ js.UndefOr[js.Any], 
-      /* scope */ js.UndefOr[js.Any], 
-      /* opt */ js.UndefOr[js.Any], 
+      /* eventName */ js.UndefOr[Any], 
+      /* handler */ js.UndefOr[Any], 
+      /* scope */ js.UndefOr[Any], 
+      /* opt */ js.UndefOr[Any], 
       this.type
     ]
   ] = js.undefined
@@ -58,7 +56,7 @@ trait ICompositeElementLite
     */
   @JSName("appendChild")
   var appendChild_ICompositeElementLite: js.UndefOr[
-    js.Function1[/* element */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
+    js.Function1[/* element */ js.UndefOr[Any], typings.senchaTouch.Ext.dom.IElement]
   ] = js.undefined
   
   /** [Method] Appends this element to the passed element
@@ -66,16 +64,14 @@ trait ICompositeElementLite
     * @returns Ext.dom.Element This element.
     */
   @JSName("appendTo")
-  var appendTo_ICompositeElementLite: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
+  var appendTo_ICompositeElementLite: js.UndefOr[js.Function1[/* el */ js.UndefOr[Any], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
   
   /** [Method] More flexible version of setStyle for setting style properties
     * @param styles String/Object/Function A style specification string, e.g. "width:100px", or object in the form {width:"100px"}, or a function which returns such a specification.
     * @returns Ext.dom.Element this
     */
   @JSName("applyStyles")
-  var applyStyles_ICompositeElementLite: js.UndefOr[
-    js.Function1[/* styles */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
-  ] = js.undefined
+  var applyStyles_ICompositeElementLite: js.UndefOr[js.Function1[/* styles */ js.UndefOr[Any], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
   
   /** [Method] Removes all elements  */
   var clear: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -89,7 +85,7 @@ trait ICompositeElementLite
   @JSName("createChild")
   var createChild_ICompositeElementLite: js.UndefOr[
     js.Function3[
-      /* config */ js.UndefOr[js.Any], 
+      /* config */ js.UndefOr[Any], 
       /* insertBefore */ js.UndefOr[HTMLElement], 
       /* returnDom */ js.UndefOr[Boolean], 
       typings.senchaTouch.Ext.dom.IElement
@@ -101,9 +97,7 @@ trait ICompositeElementLite
     * @param scope Object The scope (this reference) in which the function is executed. Defaults to the Element.
     * @returns Ext.dom.CompositeElementLite this
     */
-  var each: js.UndefOr[
-    js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], this.type]
-  ] = js.undefined
+  var each: js.UndefOr[js.Function2[/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], this.type]] = js.undefined
   
   /** [Property] (HTMLElement[]) */
   var elements: js.UndefOr[Array] = js.undefined
@@ -112,13 +106,13 @@ trait ICompositeElementLite
     * @param els HTMLElement[]/Ext.dom.CompositeElementLite Either an array of DOM elements, or another Composite from which to fill this Composite.
     * @returns Ext.dom.CompositeElementLite this
     */
-  var fill: js.UndefOr[js.Function1[/* els */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var fill: js.UndefOr[js.Function1[/* els */ js.UndefOr[Any], this.type]] = js.undefined
   
   /** [Method] Filters this composite to only elements that match the passed selector
     * @param selector String/Function A string CSS selector or a comparison function. The comparison function will be called with the following arguments:
     * @returns Ext.dom.CompositeElementLite this
     */
-  var filter: js.UndefOr[js.Function1[/* selector */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var filter: js.UndefOr[js.Function1[/* selector */ js.UndefOr[Any], this.type]] = js.undefined
   
   /** [Method] Returns the number of elements in this Composite
     * @returns Number
@@ -129,21 +123,21 @@ trait ICompositeElementLite
     * @param el String/HTMLElement/Ext.Element/Number The id of an element, or an Ext.dom.Element, or an HtmlElement to find within the composite collection.
     * @returns Number The index of the passed Ext.dom.Element in the composite collection, or -1 if not found.
     */
-  var indexOf: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], Double]] = js.undefined
+  var indexOf: js.UndefOr[js.Function1[/* el */ js.UndefOr[Any], Double]] = js.undefined
   
   /** [Method] Inserts this element after the passed element in the DOM
     * @param el String/HTMLElement/Ext.dom.Element The element to insert after. The id of the node, a DOM Node or an existing Element.
     * @returns Ext.dom.Element This element.
     */
   @JSName("insertAfter")
-  var insertAfter_ICompositeElementLite: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
+  var insertAfter_ICompositeElementLite: js.UndefOr[js.Function1[/* el */ js.UndefOr[Any], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
   
   /** [Method] Inserts this element before the passed element in the DOM
     * @param el String/HTMLElement/Ext.dom.Element The element before which this element will be inserted. The id of the node, a DOM Node or an existing Element.
     * @returns Ext.dom.Element This element.
     */
   @JSName("insertBefore")
-  var insertBefore_ICompositeElementLite: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
+  var insertBefore_ICompositeElementLite: js.UndefOr[js.Function1[/* el */ js.UndefOr[Any], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
   
   /** [Method] Inserts an element as the first child of this element
     * @param element String/HTMLElement/Ext.dom.Element The id or element to insert.
@@ -151,7 +145,7 @@ trait ICompositeElementLite
     */
   @JSName("insertFirst")
   var insertFirst_ICompositeElementLite: js.UndefOr[
-    js.Function1[/* element */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
+    js.Function1[/* element */ js.UndefOr[Any], typings.senchaTouch.Ext.dom.IElement]
   ] = js.undefined
   
   /** [Method] Inserts or creates the passed element or DomHelper config as a sibling of this element
@@ -163,7 +157,7 @@ trait ICompositeElementLite
   @JSName("insertSibling")
   var insertSibling_ICompositeElementLite: js.UndefOr[
     js.Function3[
-      /* el */ js.UndefOr[js.Any], 
+      /* el */ js.UndefOr[Any], 
       /* where */ js.UndefOr[java.lang.String], 
       /* returnDom */ js.UndefOr[Boolean], 
       typings.senchaTouch.Ext.dom.IElement
@@ -184,7 +178,7 @@ trait ICompositeElementLite
     */
   @JSName("radioCls")
   var radioCls_ICompositeElementLite: js.UndefOr[
-    js.Function1[/* className */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
+    js.Function1[/* className */ js.UndefOr[Any], typings.senchaTouch.Ext.dom.IElement]
   ] = js.undefined
   
   /** [Method] Removes the given CSS class es from this Element
@@ -209,7 +203,7 @@ trait ICompositeElementLite
     * @returns Ext.dom.CompositeElementLite this
     */
   var removeElement: js.UndefOr[
-    js.Function2[/* el */ js.UndefOr[js.Any], /* removeDom */ js.UndefOr[Boolean], this.type]
+    js.Function2[/* el */ js.UndefOr[Any], /* removeDom */ js.UndefOr[Boolean], this.type]
   ] = js.undefined
   
   /** [Method] Forces the browser to repaint this element
@@ -244,8 +238,8 @@ trait ICompositeElementLite
     */
   var replaceElement: js.UndefOr[
     js.Function3[
-      /* el */ js.UndefOr[js.Any], 
-      /* replacement */ js.UndefOr[js.Any], 
+      /* el */ js.UndefOr[Any], 
+      /* replacement */ js.UndefOr[Any], 
       /* domReplace */ js.UndefOr[Boolean], 
       this.type
     ]
@@ -256,7 +250,7 @@ trait ICompositeElementLite
     * @returns Ext.dom.Element This element.
     */
   @JSName("replaceWith")
-  var replaceWith_ICompositeElementLite: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
+  var replaceWith_ICompositeElementLite: js.UndefOr[js.Function1[/* el */ js.UndefOr[Any], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
   
   /** [Method] Replaces the passed element with this element
     * @param element String/HTMLElement/Ext.dom.Element The element to replace. The id of the node, a DOM Node or an existing Element.
@@ -264,7 +258,7 @@ trait ICompositeElementLite
     */
   @JSName("replace")
   var replace_ICompositeElementLite: js.UndefOr[
-    js.Function1[/* element */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
+    js.Function1[/* element */ js.UndefOr[Any], typings.senchaTouch.Ext.dom.IElement]
   ] = js.undefined
   
   /** [Method] Selects elements based on the passed CSS selector to enable Element methods to be applied to many related elements in
@@ -273,7 +267,7 @@ trait ICompositeElementLite
     * @returns Ext.dom.CompositeElementLite/Ext.dom.CompositeElement
     */
   var select: js.UndefOr[
-    js.Function2[/* selector */ js.UndefOr[js.Any], /* composite */ js.UndefOr[Boolean], this.type]
+    js.Function2[/* selector */ js.UndefOr[Any], /* composite */ js.UndefOr[Boolean], this.type]
   ] = js.undefined
   
   /** [Method] Sets the element s CSS bottom style
@@ -290,16 +284,14 @@ trait ICompositeElementLite
     * @returns Ext.dom.Element this
     */
   @JSName("setBox")
-  var setBox_ICompositeElementLite: js.UndefOr[js.Function1[/* box */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
+  var setBox_ICompositeElementLite: js.UndefOr[js.Function1[/* box */ js.UndefOr[Any], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
   
   /** [Method] Set the height of this Element
     * @param height Number/String The new height.
     * @returns Ext.dom.Element this
     */
   @JSName("setHeight")
-  var setHeight_ICompositeElementLite: js.UndefOr[
-    js.Function1[/* height */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
-  ] = js.undefined
+  var setHeight_ICompositeElementLite: js.UndefOr[js.Function1[/* height */ js.UndefOr[Any], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
   
   /** [Method] Sets the element s left position directly using CSS style instead of setX
     * @param left String The left CSS property value.
@@ -315,36 +307,28 @@ trait ICompositeElementLite
     * @returns Ext.dom.Element this
     */
   @JSName("setMaxHeight")
-  var setMaxHeight_ICompositeElementLite: js.UndefOr[
-    js.Function1[/* height */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
-  ] = js.undefined
+  var setMaxHeight_ICompositeElementLite: js.UndefOr[js.Function1[/* height */ js.UndefOr[Any], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
   
   /** [Method] Set the maximum width of this Element
     * @param width Number/String The new maximum width.
     * @returns Ext.dom.Element this
     */
   @JSName("setMaxWidth")
-  var setMaxWidth_ICompositeElementLite: js.UndefOr[
-    js.Function1[/* width */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
-  ] = js.undefined
+  var setMaxWidth_ICompositeElementLite: js.UndefOr[js.Function1[/* width */ js.UndefOr[Any], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
   
   /** [Method] Set the minimum height of this Element
     * @param height Number/String The new minimum height.
     * @returns Ext.dom.Element this
     */
   @JSName("setMinHeight")
-  var setMinHeight_ICompositeElementLite: js.UndefOr[
-    js.Function1[/* height */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
-  ] = js.undefined
+  var setMinHeight_ICompositeElementLite: js.UndefOr[js.Function1[/* height */ js.UndefOr[Any], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
   
   /** [Method] Set the minimum width of this Element
     * @param width Number/String The new minimum width.
     * @returns Ext.dom.Element this
     */
   @JSName("setMinWidth")
-  var setMinWidth_ICompositeElementLite: js.UndefOr[
-    js.Function1[/* width */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
-  ] = js.undefined
+  var setMinWidth_ICompositeElementLite: js.UndefOr[js.Function1[/* width */ js.UndefOr[Any], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
   
   /** [Method] Sets the element s CSS right style
     * @param right String The right CSS property value.
@@ -363,8 +347,8 @@ trait ICompositeElementLite
   @JSName("setSize")
   var setSize_ICompositeElementLite: js.UndefOr[
     js.Function2[
-      /* width */ js.UndefOr[js.Any], 
-      /* height */ js.UndefOr[js.Any], 
+      /* width */ js.UndefOr[Any], 
+      /* height */ js.UndefOr[Any], 
       typings.senchaTouch.Ext.dom.IElement
     ]
   ] = js.undefined
@@ -377,7 +361,7 @@ trait ICompositeElementLite
   @JSName("setStyle")
   var setStyle_ICompositeElementLite: js.UndefOr[
     js.Function2[
-      /* property */ js.UndefOr[js.Any], 
+      /* property */ js.UndefOr[Any], 
       /* value */ js.UndefOr[java.lang.String], 
       typings.senchaTouch.Ext.dom.IElement
     ]
@@ -397,9 +381,7 @@ trait ICompositeElementLite
     * @returns Ext.dom.Element this
     */
   @JSName("setVisibilityMode")
-  var setVisibilityMode_ICompositeElementLite: js.UndefOr[
-    js.Function1[/* mode */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
-  ] = js.undefined
+  var setVisibilityMode_ICompositeElementLite: js.UndefOr[js.Function1[/* mode */ js.UndefOr[Any], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
   
   /** [Method] Sets the visibility of the element see details
     * @param visible Boolean Whether the element is visible.
@@ -413,9 +395,7 @@ trait ICompositeElementLite
     * @returns Ext.dom.Element this
     */
   @JSName("setWidth")
-  var setWidth_ICompositeElementLite: js.UndefOr[
-    js.Function1[/* width */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
-  ] = js.undefined
+  var setWidth_ICompositeElementLite: js.UndefOr[js.Function1[/* width */ js.UndefOr[Any], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
   
   /** [Method] Sets the position of the element in page coordinates regardless of how the element is positioned
     * @param pos Number[] Contains X &amp; Y [x, y] values for new position (coordinates are page-based).
@@ -446,7 +426,7 @@ trait ICompositeElementLite
   @JSName("set")
   var set_ICompositeElementLite: js.UndefOr[
     js.Function2[
-      /* attributes */ js.UndefOr[js.Any], 
+      /* attributes */ js.UndefOr[Any], 
       /* useSet */ js.UndefOr[Boolean], 
       typings.senchaTouch.Ext.dom.IElement
     ]
@@ -470,7 +450,7 @@ object ICompositeElementLite {
   
   extension [Self <: ICompositeElementLite](x: Self) {
     
-    inline def setAdd(value: (/* els */ js.UndefOr[js.Any], /* root */ js.UndefOr[js.Any]) => ICompositeElementLite): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (/* els */ js.UndefOr[Any], /* root */ js.UndefOr[Any]) => ICompositeElementLite): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     
     inline def setAddCls(
       value: (/* names */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String], /* suffix */ js.UndefOr[java.lang.String]) => typings.senchaTouch.Ext.dom.IElement
@@ -479,22 +459,22 @@ object ICompositeElementLite {
     inline def setAddClsUndefined: Self = StObject.set(x, "addCls", js.undefined)
     
     inline def setAddListener(
-      value: (/* eventName */ js.UndefOr[js.Any], /* handler */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* opt */ js.UndefOr[js.Any]) => ICompositeElementLite
+      value: (/* eventName */ js.UndefOr[Any], /* handler */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* opt */ js.UndefOr[Any]) => ICompositeElementLite
     ): Self = StObject.set(x, "addListener", js.Any.fromFunction4(value))
     
     inline def setAddListenerUndefined: Self = StObject.set(x, "addListener", js.undefined)
     
     inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     
-    inline def setAppendChild(value: /* element */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
+    inline def setAppendChild(value: /* element */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
     
     inline def setAppendChildUndefined: Self = StObject.set(x, "appendChild", js.undefined)
     
-    inline def setAppendTo(value: /* el */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "appendTo", js.Any.fromFunction1(value))
+    inline def setAppendTo(value: /* el */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "appendTo", js.Any.fromFunction1(value))
     
     inline def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
     
-    inline def setApplyStyles(value: /* styles */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "applyStyles", js.Any.fromFunction1(value))
+    inline def setApplyStyles(value: /* styles */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "applyStyles", js.Any.fromFunction1(value))
     
     inline def setApplyStylesUndefined: Self = StObject.set(x, "applyStyles", js.undefined)
     
@@ -503,12 +483,12 @@ object ICompositeElementLite {
     inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
     inline def setCreateChild(
-      value: (/* config */ js.UndefOr[js.Any], /* insertBefore */ js.UndefOr[HTMLElement], /* returnDom */ js.UndefOr[Boolean]) => typings.senchaTouch.Ext.dom.IElement
+      value: (/* config */ js.UndefOr[Any], /* insertBefore */ js.UndefOr[HTMLElement], /* returnDom */ js.UndefOr[Boolean]) => typings.senchaTouch.Ext.dom.IElement
     ): Self = StObject.set(x, "createChild", js.Any.fromFunction3(value))
     
     inline def setCreateChildUndefined: Self = StObject.set(x, "createChild", js.undefined)
     
-    inline def setEach(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => ICompositeElementLite): Self = StObject.set(x, "each", js.Any.fromFunction2(value))
+    inline def setEach(value: (/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => ICompositeElementLite): Self = StObject.set(x, "each", js.Any.fromFunction2(value))
     
     inline def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
     
@@ -516,11 +496,11 @@ object ICompositeElementLite {
     
     inline def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
     
-    inline def setFill(value: /* els */ js.UndefOr[js.Any] => ICompositeElementLite): Self = StObject.set(x, "fill", js.Any.fromFunction1(value))
+    inline def setFill(value: /* els */ js.UndefOr[Any] => ICompositeElementLite): Self = StObject.set(x, "fill", js.Any.fromFunction1(value))
     
     inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
-    inline def setFilter(value: /* selector */ js.UndefOr[js.Any] => ICompositeElementLite): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+    inline def setFilter(value: /* selector */ js.UndefOr[Any] => ICompositeElementLite): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
     
     inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
@@ -528,24 +508,24 @@ object ICompositeElementLite {
     
     inline def setGetCountUndefined: Self = StObject.set(x, "getCount", js.undefined)
     
-    inline def setIndexOf(value: /* el */ js.UndefOr[js.Any] => Double): Self = StObject.set(x, "indexOf", js.Any.fromFunction1(value))
+    inline def setIndexOf(value: /* el */ js.UndefOr[Any] => Double): Self = StObject.set(x, "indexOf", js.Any.fromFunction1(value))
     
     inline def setIndexOfUndefined: Self = StObject.set(x, "indexOf", js.undefined)
     
-    inline def setInsertAfter(value: /* el */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "insertAfter", js.Any.fromFunction1(value))
+    inline def setInsertAfter(value: /* el */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "insertAfter", js.Any.fromFunction1(value))
     
     inline def setInsertAfterUndefined: Self = StObject.set(x, "insertAfter", js.undefined)
     
-    inline def setInsertBefore(value: /* el */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "insertBefore", js.Any.fromFunction1(value))
+    inline def setInsertBefore(value: /* el */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "insertBefore", js.Any.fromFunction1(value))
     
     inline def setInsertBeforeUndefined: Self = StObject.set(x, "insertBefore", js.undefined)
     
-    inline def setInsertFirst(value: /* element */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "insertFirst", js.Any.fromFunction1(value))
+    inline def setInsertFirst(value: /* element */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "insertFirst", js.Any.fromFunction1(value))
     
     inline def setInsertFirstUndefined: Self = StObject.set(x, "insertFirst", js.undefined)
     
     inline def setInsertSibling(
-      value: (/* el */ js.UndefOr[js.Any], /* where */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => typings.senchaTouch.Ext.dom.IElement
+      value: (/* el */ js.UndefOr[Any], /* where */ js.UndefOr[java.lang.String], /* returnDom */ js.UndefOr[Boolean]) => typings.senchaTouch.Ext.dom.IElement
     ): Self = StObject.set(x, "insertSibling", js.Any.fromFunction3(value))
     
     inline def setInsertSiblingUndefined: Self = StObject.set(x, "insertSibling", js.undefined)
@@ -554,7 +534,7 @@ object ICompositeElementLite {
     
     inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
-    inline def setRadioCls(value: /* className */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "radioCls", js.Any.fromFunction1(value))
+    inline def setRadioCls(value: /* className */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "radioCls", js.Any.fromFunction1(value))
     
     inline def setRadioClsUndefined: Self = StObject.set(x, "radioCls", js.undefined)
     
@@ -564,7 +544,7 @@ object ICompositeElementLite {
     
     inline def setRemoveClsUndefined: Self = StObject.set(x, "removeCls", js.undefined)
     
-    inline def setRemoveElement(value: (/* el */ js.UndefOr[js.Any], /* removeDom */ js.UndefOr[Boolean]) => ICompositeElementLite): Self = StObject.set(x, "removeElement", js.Any.fromFunction2(value))
+    inline def setRemoveElement(value: (/* el */ js.UndefOr[Any], /* removeDom */ js.UndefOr[Boolean]) => ICompositeElementLite): Self = StObject.set(x, "removeElement", js.Any.fromFunction2(value))
     
     inline def setRemoveElementUndefined: Self = StObject.set(x, "removeElement", js.undefined)
     
@@ -572,7 +552,7 @@ object ICompositeElementLite {
     
     inline def setRepaintUndefined: Self = StObject.set(x, "repaint", js.undefined)
     
-    inline def setReplace(value: /* element */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "replace", js.Any.fromFunction1(value))
+    inline def setReplace(value: /* element */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "replace", js.Any.fromFunction1(value))
     
     inline def setReplaceCls(
       value: (/* oldName */ js.UndefOr[java.lang.String], /* newName */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String], /* suffix */ js.UndefOr[java.lang.String]) => typings.senchaTouch.Ext.dom.IElement
@@ -581,36 +561,36 @@ object ICompositeElementLite {
     inline def setReplaceClsUndefined: Self = StObject.set(x, "replaceCls", js.undefined)
     
     inline def setReplaceElement(
-      value: (/* el */ js.UndefOr[js.Any], /* replacement */ js.UndefOr[js.Any], /* domReplace */ js.UndefOr[Boolean]) => ICompositeElementLite
+      value: (/* el */ js.UndefOr[Any], /* replacement */ js.UndefOr[Any], /* domReplace */ js.UndefOr[Boolean]) => ICompositeElementLite
     ): Self = StObject.set(x, "replaceElement", js.Any.fromFunction3(value))
     
     inline def setReplaceElementUndefined: Self = StObject.set(x, "replaceElement", js.undefined)
     
     inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
     
-    inline def setReplaceWith(value: /* el */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "replaceWith", js.Any.fromFunction1(value))
+    inline def setReplaceWith(value: /* el */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "replaceWith", js.Any.fromFunction1(value))
     
     inline def setReplaceWithUndefined: Self = StObject.set(x, "replaceWith", js.undefined)
     
     inline def setSelect(
-      value: (/* selector */ js.UndefOr[js.Any], /* composite */ js.UndefOr[Boolean]) => ICompositeElementLite
+      value: (/* selector */ js.UndefOr[Any], /* composite */ js.UndefOr[Boolean]) => ICompositeElementLite
     ): Self = StObject.set(x, "select", js.Any.fromFunction2(value))
     
     inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     
     inline def setSet(
-      value: (/* attributes */ js.UndefOr[js.Any], /* useSet */ js.UndefOr[Boolean]) => typings.senchaTouch.Ext.dom.IElement
+      value: (/* attributes */ js.UndefOr[Any], /* useSet */ js.UndefOr[Boolean]) => typings.senchaTouch.Ext.dom.IElement
     ): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     
     inline def setSetBottom(value: /* bottom */ js.UndefOr[java.lang.String] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setBottom", js.Any.fromFunction1(value))
     
     inline def setSetBottomUndefined: Self = StObject.set(x, "setBottom", js.undefined)
     
-    inline def setSetBox(value: /* box */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setBox", js.Any.fromFunction1(value))
+    inline def setSetBox(value: /* box */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setBox", js.Any.fromFunction1(value))
     
     inline def setSetBoxUndefined: Self = StObject.set(x, "setBox", js.undefined)
     
-    inline def setSetHeight(value: /* height */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setHeight", js.Any.fromFunction1(value))
+    inline def setSetHeight(value: /* height */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setHeight", js.Any.fromFunction1(value))
     
     inline def setSetHeightUndefined: Self = StObject.set(x, "setHeight", js.undefined)
     
@@ -618,19 +598,19 @@ object ICompositeElementLite {
     
     inline def setSetLeftUndefined: Self = StObject.set(x, "setLeft", js.undefined)
     
-    inline def setSetMaxHeight(value: /* height */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setMaxHeight", js.Any.fromFunction1(value))
+    inline def setSetMaxHeight(value: /* height */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setMaxHeight", js.Any.fromFunction1(value))
     
     inline def setSetMaxHeightUndefined: Self = StObject.set(x, "setMaxHeight", js.undefined)
     
-    inline def setSetMaxWidth(value: /* width */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setMaxWidth", js.Any.fromFunction1(value))
+    inline def setSetMaxWidth(value: /* width */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setMaxWidth", js.Any.fromFunction1(value))
     
     inline def setSetMaxWidthUndefined: Self = StObject.set(x, "setMaxWidth", js.undefined)
     
-    inline def setSetMinHeight(value: /* height */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setMinHeight", js.Any.fromFunction1(value))
+    inline def setSetMinHeight(value: /* height */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setMinHeight", js.Any.fromFunction1(value))
     
     inline def setSetMinHeightUndefined: Self = StObject.set(x, "setMinHeight", js.undefined)
     
-    inline def setSetMinWidth(value: /* width */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setMinWidth", js.Any.fromFunction1(value))
+    inline def setSetMinWidth(value: /* width */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setMinWidth", js.Any.fromFunction1(value))
     
     inline def setSetMinWidthUndefined: Self = StObject.set(x, "setMinWidth", js.undefined)
     
@@ -639,13 +619,13 @@ object ICompositeElementLite {
     inline def setSetRightUndefined: Self = StObject.set(x, "setRight", js.undefined)
     
     inline def setSetSize(
-      value: (/* width */ js.UndefOr[js.Any], /* height */ js.UndefOr[js.Any]) => typings.senchaTouch.Ext.dom.IElement
+      value: (/* width */ js.UndefOr[Any], /* height */ js.UndefOr[Any]) => typings.senchaTouch.Ext.dom.IElement
     ): Self = StObject.set(x, "setSize", js.Any.fromFunction2(value))
     
     inline def setSetSizeUndefined: Self = StObject.set(x, "setSize", js.undefined)
     
     inline def setSetStyle(
-      value: (/* property */ js.UndefOr[js.Any], /* value */ js.UndefOr[java.lang.String]) => typings.senchaTouch.Ext.dom.IElement
+      value: (/* property */ js.UndefOr[Any], /* value */ js.UndefOr[java.lang.String]) => typings.senchaTouch.Ext.dom.IElement
     ): Self = StObject.set(x, "setStyle", js.Any.fromFunction2(value))
     
     inline def setSetStyleUndefined: Self = StObject.set(x, "setStyle", js.undefined)
@@ -656,7 +636,7 @@ object ICompositeElementLite {
     
     inline def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
     
-    inline def setSetVisibilityMode(value: /* mode */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setVisibilityMode", js.Any.fromFunction1(value))
+    inline def setSetVisibilityMode(value: /* mode */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setVisibilityMode", js.Any.fromFunction1(value))
     
     inline def setSetVisibilityModeUndefined: Self = StObject.set(x, "setVisibilityMode", js.undefined)
     
@@ -664,7 +644,7 @@ object ICompositeElementLite {
     
     inline def setSetVisibleUndefined: Self = StObject.set(x, "setVisible", js.undefined)
     
-    inline def setSetWidth(value: /* width */ js.UndefOr[js.Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setWidth", js.Any.fromFunction1(value))
+    inline def setSetWidth(value: /* width */ js.UndefOr[Any] => typings.senchaTouch.Ext.dom.IElement): Self = StObject.set(x, "setWidth", js.Any.fromFunction1(value))
     
     inline def setSetWidthUndefined: Self = StObject.set(x, "setWidth", js.undefined)
     

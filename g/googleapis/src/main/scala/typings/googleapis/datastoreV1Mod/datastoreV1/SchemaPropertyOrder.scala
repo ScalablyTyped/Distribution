@@ -4,15 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The desired order for a specific property.
-  */
 trait SchemaPropertyOrder extends StObject {
   
   /**
     * The direction to order by. Defaults to `ASCENDING`.
     */
-  var direction: js.UndefOr[String] = js.undefined
+  var direction: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The property to order by.
@@ -29,6 +26,8 @@ object SchemaPropertyOrder {
   extension [Self <: SchemaPropertyOrder](x: Self) {
     
     inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    
+    inline def setDirectionNull: Self = StObject.set(x, "direction", null)
     
     inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     

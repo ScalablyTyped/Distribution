@@ -1,26 +1,14 @@
 package typings.csvStringify
 
-import typings.csvStringify.anon.Date
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Transform
-import typings.std.Error
+import typings.node.streamMod.TransformOptions
 import typings.std.Record
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
-  
-  inline def apply(): Stringifier = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Stringifier]
-  inline def apply(callback: Callback): Stringifier = ^.asInstanceOf[js.Dynamic].apply(callback.asInstanceOf[js.Any]).asInstanceOf[Stringifier]
-  inline def apply(input: Input): Stringifier = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[Stringifier]
-  inline def apply(input: Input, callback: Callback): Stringifier = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Stringifier]
-  inline def apply(input: Input, options: Unit, callback: Callback): Stringifier = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Stringifier]
-  inline def apply(input: Input, options: Options): Stringifier = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Stringifier]
-  inline def apply(input: Input, options: Options, callback: Callback): Stringifier = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Stringifier]
-  inline def apply(options: Options): Stringifier = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Stringifier]
-  inline def apply(options: Options, callback: Callback): Stringifier = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Stringifier]
   
   @JSImport("csv-stringify", JSImport.Namespace)
   @js.native
@@ -28,15 +16,91 @@ object mod {
   
   @JSImport("csv-stringify", "Stringifier")
   @js.native
-  class Stringifier protected () extends Transform {
+  open class Stringifier protected () extends Transform {
     def this(options: Options) = this()
     
     val options: Options = js.native
   }
   
-  type Callback = js.Function2[/* err */ js.UndefOr[Error], /* output */ String, Unit]
+  inline def stringify(): Stringifier = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")().asInstanceOf[Stringifier]
+  inline def stringify(callback: Callback): Stringifier = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(callback.asInstanceOf[js.Any]).asInstanceOf[Stringifier]
+  inline def stringify(input: Input): Stringifier = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(input.asInstanceOf[js.Any]).asInstanceOf[Stringifier]
+  inline def stringify(input: Input, callback: Callback): Stringifier = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(input.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Stringifier]
+  inline def stringify(input: Input, options: Unit, callback: Callback): Stringifier = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Stringifier]
+  inline def stringify(input: Input, options: Options): Stringifier = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Stringifier]
+  inline def stringify(input: Input, options: Options, callback: Callback): Stringifier = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Stringifier]
+  inline def stringify(options: Options): Stringifier = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(options.asInstanceOf[js.Any]).asInstanceOf[Stringifier]
+  inline def stringify(options: Options, callback: Callback): Stringifier = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Stringifier]
   
-  type Cast[T] = js.Function2[/* value */ T, /* context */ CastingContext, String]
+  type Callback = js.Function2[/* err */ js.UndefOr[js.Error], /* output */ String, Unit]
+  
+  type Cast[T] = js.Function2[/* value */ T, /* context */ CastingContext, String | CastReturnObject]
+  
+  /* Inlined {  value :string} & std.Pick<csv-stringify.csv-stringify.Options, 'delimiter' | 'escape' | 'quote' | 'quoted' | 'quoted_empty' | 'quoted_string' | 'quoted_match' | 'record_delimiter'> */
+  trait CastReturnObject extends StObject {
+    
+    var delimiter: js.UndefOr[String | Buffer] = js.undefined
+    
+    var escape: js.UndefOr[String | Buffer] = js.undefined
+    
+    var quote: js.UndefOr[String | Buffer | Boolean] = js.undefined
+    
+    var quoted: js.UndefOr[Boolean] = js.undefined
+    
+    var quoted_empty: js.UndefOr[Boolean] = js.undefined
+    
+    var quoted_match: js.UndefOr[String | js.RegExp] = js.undefined
+    
+    var quoted_string: js.UndefOr[Boolean] = js.undefined
+    
+    var record_delimiter: js.UndefOr[RecordDelimiter] = js.undefined
+    
+    var value: String
+  }
+  object CastReturnObject {
+    
+    inline def apply(value: String): CastReturnObject = {
+      val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CastReturnObject]
+    }
+    
+    extension [Self <: CastReturnObject](x: Self) {
+      
+      inline def setDelimiter(value: String | Buffer): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+      
+      inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+      
+      inline def setEscape(value: String | Buffer): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
+      
+      inline def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
+      
+      inline def setQuote(value: String | Buffer | Boolean): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
+      
+      inline def setQuoteUndefined: Self = StObject.set(x, "quote", js.undefined)
+      
+      inline def setQuoted(value: Boolean): Self = StObject.set(x, "quoted", value.asInstanceOf[js.Any])
+      
+      inline def setQuotedUndefined: Self = StObject.set(x, "quoted", js.undefined)
+      
+      inline def setQuoted_empty(value: Boolean): Self = StObject.set(x, "quoted_empty", value.asInstanceOf[js.Any])
+      
+      inline def setQuoted_emptyUndefined: Self = StObject.set(x, "quoted_empty", js.undefined)
+      
+      inline def setQuoted_match(value: String | js.RegExp): Self = StObject.set(x, "quoted_match", value.asInstanceOf[js.Any])
+      
+      inline def setQuoted_matchUndefined: Self = StObject.set(x, "quoted_match", js.undefined)
+      
+      inline def setQuoted_string(value: Boolean): Self = StObject.set(x, "quoted_string", value.asInstanceOf[js.Any])
+      
+      inline def setQuoted_stringUndefined: Self = StObject.set(x, "quoted_string", js.undefined)
+      
+      inline def setRecord_delimiter(value: RecordDelimiter): Self = StObject.set(x, "record_delimiter", value.asInstanceOf[js.Any])
+      
+      inline def setRecord_delimiterUndefined: Self = StObject.set(x, "record_delimiter", js.undefined)
+      
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    }
+  }
   
   trait CastingContext extends StObject {
     
@@ -92,9 +156,11 @@ object mod {
     }
   }
   
-  type Input = js.Array[js.Any]
+  type Input = js.Array[Any]
   
-  trait Options extends StObject {
+  trait Options
+    extends StObject
+       with TransformOptions {
     
     /**
       * Prepend the byte order mark (BOM) to the output stream.
@@ -104,7 +170,7 @@ object mod {
     /**
       * Key-value object which defines custom cast for certain data types
       */
-    var cast: js.UndefOr[Date] = js.undefined
+    var cast: js.UndefOr[typings.csvStringify.anon.Boolean] = js.undefined
     
     /**
       * List of fields, applied when `transform` returns an object
@@ -154,7 +220,7 @@ object mod {
     /**
       * String or RegExp, no default, quote all fields matching a regular expression.
       */
-    var quoted_match: js.UndefOr[String | RegExp] = js.undefined
+    var quoted_match: js.UndefOr[String | js.RegExp] = js.undefined
     
     /**
       * Boolean, default to false, quote all fields of type string even if not required.
@@ -181,7 +247,7 @@ object mod {
       
       inline def setBomUndefined: Self = StObject.set(x, "bom", js.undefined)
       
-      inline def setCast(value: Date): Self = StObject.set(x, "cast", value.asInstanceOf[js.Any])
+      inline def setCast(value: typings.csvStringify.anon.Boolean): Self = StObject.set(x, "cast", value.asInstanceOf[js.Any])
       
       inline def setCastUndefined: Self = StObject.set(x, "cast", js.undefined)
       
@@ -189,7 +255,7 @@ object mod {
       
       inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      inline def setColumnsVarargs(value: (ColumnOption | String)*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: (ColumnOption | String)*): Self = StObject.set(x, "columns", js.Array(value*))
       
       inline def setDelimiter(value: String | Buffer): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       
@@ -219,7 +285,7 @@ object mod {
       
       inline def setQuoted_emptyUndefined: Self = StObject.set(x, "quoted_empty", js.undefined)
       
-      inline def setQuoted_match(value: String | RegExp): Self = StObject.set(x, "quoted_match", value.asInstanceOf[js.Any])
+      inline def setQuoted_match(value: String | js.RegExp): Self = StObject.set(x, "quoted_match", value.asInstanceOf[js.Any])
       
       inline def setQuoted_matchUndefined: Self = StObject.set(x, "quoted_match", js.undefined)
       
@@ -237,7 +303,7 @@ object mod {
   
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
-    - typings.node.Buffer
+    - typings.node.bufferMod.global.Buffer
     - typings.csvStringify.csvStringifyStrings.auto
     - typings.csvStringify.csvStringifyStrings.unix
     - typings.csvStringify.csvStringifyStrings.mac

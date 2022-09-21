@@ -33,6 +33,10 @@ trait ACCESSIBILITYFOCUSZOOM extends StObject {
     * expected value TvInfoMenuValue
     * unsigned long OFF = 0;
     * unsigned long ON = 1;
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var ACCESSIBILITY_FOCUS_ZOOM: `12`
   
@@ -41,6 +45,10 @@ trait ACCESSIBILITYFOCUSZOOM extends StObject {
     * expected value TvInfoMenuValue
     * unsigned long OFF = 0;
     * unsigned long ON = 1;
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var ACCESSIBILITY_HIGH_CONTRAST: `13`
   
@@ -51,7 +59,11 @@ trait ACCESSIBILITYFOCUSZOOM extends StObject {
     * DOMString VOICEGUIDE_SPEED_FAST = "FAST";
     * DOMString VOICEGUIDE_SPEED_NORMAL= "NORMAL";
     * DOMString VOICEGUIDE_SPEED_SLOW = "SLOW";
-    * DOMString VOICEGUIDE_SPEED_VERY_SLOW  = "VERY_SLOW";
+    * DOMString VOICEGUIDE_SPEED_VERY_SLOW= "VERY_SLOW";
+    *
+    * @version 3.3
+    *
+    * @since 2.3
     */
   var ACCESSIBILITY_VOICE_GUIDE_SPEED: `20`
   
@@ -67,6 +79,10 @@ trait ACCESSIBILITYFOCUSZOOM extends StObject {
     * unsigned long CAPTION_COLOR_YELLOW = 6;
     * unsigned long CAPTION_COLOR_MAGENTA = 7;
     * unsigned long CAPTION_COLOR_CYAN = 8;
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_BG_COLOR_KEY: `6`
   
@@ -80,6 +96,10 @@ trait ACCESSIBILITYFOCUSZOOM extends StObject {
     * unsigned long CAPTION_OPACITY_DEFAULT = 4;
     * unsigned long CAPTION_OPACITY_HIGHLY_TRANSLUCENT = 5;
     * unsigned long CAPTION_OPACITY_SLIGHTLY_TRANSLUCENT = 6;
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_BG_OPACITY_KEY: `7`
   
@@ -95,6 +115,10 @@ trait ACCESSIBILITYFOCUSZOOM extends StObject {
     * unsigned long CAPTION_COLOR_YELLOW = 6;
     * unsigned long CAPTION_COLOR_MAGENTA = 7;
     * unsigned long CAPTION_COLOR_CYAN = 8;
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_EDGE_COLOR_KEY: `9`
   
@@ -106,6 +130,10 @@ trait ACCESSIBILITYFOCUSZOOM extends StObject {
     * unsigned long CAPTION_EDGE_DEPRESSED = 2;
     * unsigned long CAPTION_EDGE_UNIFORM = 3;
     * unsigned long CAPTION_EDGE_DROP_SHADOWED = 4;
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_EDGE_TYPE_KEY: `8`
   
@@ -121,6 +149,10 @@ trait ACCESSIBILITYFOCUSZOOM extends StObject {
     * unsigned long CAPTION_COLOR_YELLOW = 6;
     * unsigned long CAPTION_COLOR_MAGENTA = 7;
     * unsigned long CAPTION_COLOR_CYAN = 8;
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_FG_COLOR_KEY: `4`
   
@@ -134,16 +166,25 @@ trait ACCESSIBILITYFOCUSZOOM extends StObject {
     * unsigned long CAPTION_OPACITY_DEFAULT = 4;
     * unsigned long CAPTION_OPACITY_HIGHLY_TRANSLUCENT = 5;
     * unsigned long CAPTION_OPACITY_SLIGHTLY_TRANSLUCENT = 6;
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_FG_OPACITY_KEY: `5`
   
   /**
+    * Caption font size
     * expected value TvInfoMenuValue
     * unsigned long CAPTION_SIZE_DEFAULT = 0;
     * unsigned long CAPTION_SIZE_SMALL = 1;
     * unsigned long CAPTION_SIZE_STANDARD = 2;
     * unsigned long CAPTION_SIZE_LARGE = 3;
     * unsigned long CAPTION_SIZE_EXTRA_LARGE = 4;
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_FONT_SIZE_KEY: `2`
   
@@ -158,6 +199,10 @@ trait ACCESSIBILITYFOCUSZOOM extends StObject {
     * unsigned long CAPTION_FONT_STYLE4 = 5;
     * unsigned long CAPTION_FONT_STYLE5 = 6;
     * unsigned long CAPTION_FONT_STYLE6 = 7;
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_FONT_STYLE_KEY: `3`
   
@@ -179,6 +224,10 @@ trait ACCESSIBILITYFOCUSZOOM extends StObject {
     * unsigned long CAPTION_MODE_TEXT2 = 12;
     * unsigned long CAPTION_MODE_TEXT3 = 13;
     * unsigned long CAPTION_MODE_TEXT4 = 14;
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_MODE_KEY: `1`
   
@@ -187,6 +236,10 @@ trait ACCESSIBILITYFOCUSZOOM extends StObject {
     * expected value TvInfoMenuValue
     * unsigned long CAPTION_OFF = 0;
     * unsigned long CAPTION_ON = 1;
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_ONOFF_KEY: `0`
   
@@ -196,6 +249,10 @@ trait ACCESSIBILITYFOCUSZOOM extends StObject {
     * unsigned long CAPTION_STYLE_DEFAULT = 0;
     * unsigned long CAPTION_STYLE_BOLD = 1;
     * unsigned long CAPTION_STYLE_ITALIC = 2;
+    *
+    * @version 3.4
+    *
+    * @since 2.3
     */
   var CAPTION_STYLE_KEY: `21`
   
@@ -211,6 +268,10 @@ trait ACCESSIBILITYFOCUSZOOM extends StObject {
     * unsigned long CAPTION_COLOR_YELLOW = 6;
     * unsigned long CAPTION_COLOR_MAGENTA = 7;
     * unsigned long CAPTION_COLOR_CYAN = 8;
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_WINDOW_COLOR_KEY: `10`
   
@@ -224,6 +285,10 @@ trait ACCESSIBILITYFOCUSZOOM extends StObject {
     * unsigned long CAPTION_OPACITY_DEFAULT = 4;
     * unsigned long CAPTION_OPACITY_HIGHLY_TRANSLUCENT = 5;
     * unsigned long CAPTION_OPACITY_SLIGHTLY_TRANSLUCENT = 6;
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var CAPTION_WINDOW_OPACITY_KEY: `11`
   
@@ -316,6 +381,10 @@ trait ACCESSIBILITYFOCUSZOOM extends StObject {
     * DOMString AUDIO_LANGUAGE_CODE_ZHO = "ZHO";
     * DOMString AUDIO_LANGUAGE_CODE_ZUL = "ZUL";
     * Only the values that can be set in the menu can be set to webapi
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var PRIMARY_AUDIO_LANGUAGE_KEY: `18`
   
@@ -408,6 +477,10 @@ trait ACCESSIBILITYFOCUSZOOM extends StObject {
     * DOMString AUDIO_LANGUAGE_CODE_ZHO = "ZHO";
     * DOMString AUDIO_LANGUAGE_CODE_ZUL = "ZUL";
     * Only the values that can be set in the menu can be set to webapi
+    *
+    * @version 3.1
+    *
+    * @since 2.3
     */
   var SECONDARY_AUDIO_LANGUAGE_KEY: `19`
   
@@ -415,8 +488,11 @@ trait ACCESSIBILITYFOCUSZOOM extends StObject {
     * Channel-bound apps ticker menu value
     * expected value DOMString
     * "OFF", "ON"
+    *
     * @since 2.3
-    * @note `deprecated` 3.0
+    *
+    * @version 1.0
+    *
     */
   var SMARTHUB_CHANNEL_BOUND_APPS_TICKER: `14`
   
@@ -425,6 +501,10 @@ trait ACCESSIBILITYFOCUSZOOM extends StObject {
     * expected value TvInfoMenuValue
     * unsigned long SUBTITLE_NORMAL = 0;
     * unsigned long SUBTITLE_HEARING_IMMPEARED = 1;
+    *
+    * @version 1.2
+    *
+    * @since 2.3
     */
   var SUBTITLE_MODE_KEY: `17`
   
@@ -433,6 +513,10 @@ trait ACCESSIBILITYFOCUSZOOM extends StObject {
     * expected value TvInfoMenuValue
     * unsigned long OFF = 0;
     * unsigned long ON = 1;
+    *
+    * @version 1.2
+    *
+    * @since 2.3
     */
   var SUBTITLE_ONOFF_KEY: `16`
   
@@ -441,6 +525,10 @@ trait ACCESSIBILITYFOCUSZOOM extends StObject {
     * expected value TvInfoMenuValue
     * unsigned long OFF = 0;
     * unsigned long ON = 1;
+    *
+    * @version 1.0
+    *
+    * @since 2.3
     */
   var VOICE_GUIDE_KEY: `15`
 }

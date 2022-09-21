@@ -1,7 +1,7 @@
 
 # Scala.js typings for elegant-spinner
 
-Typings are for version 2.0.0
+Typings are for version 3.0.0
 
 ## Library description:
 Elegant spinner for interactive CLI apps
@@ -11,9 +11,9 @@ Elegant spinner for interactive CLI apps
 | Full name          | elegant-spinner |
 | Keywords           | ansi, terminal, console, cli, string, log, logging, spinner, busy, indicator, loading, loader, progress, elegant, loiter, interactive |
 | # releases         | 2 |
-| # dependents       | 138 |
-| # downloads        | 156749368 |
-| # stars            | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1.5897512E7 |
+| # stars            | 225.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/elegant-spinner#readme)

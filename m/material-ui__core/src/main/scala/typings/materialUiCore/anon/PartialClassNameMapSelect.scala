@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/Select/Select.SelectClassKey>> */
+/* Inlined std.Partial<@material-ui/styles.@material-ui/styles/withStyles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/Select/Select.SelectClassKey>> */
 trait PartialClassNameMapSelect extends StObject {
   
   var disabled: js.UndefOr[String] = js.undefined
@@ -12,6 +12,12 @@ trait PartialClassNameMapSelect extends StObject {
   var filled: js.UndefOr[String] = js.undefined
   
   var icon: js.UndefOr[String] = js.undefined
+  
+  var iconFilled: js.UndefOr[String] = js.undefined
+  
+  var iconOpen: js.UndefOr[String] = js.undefined
+  
+  var iconOutlined: js.UndefOr[String] = js.undefined
   
   var outlined: js.UndefOr[String] = js.undefined
   
@@ -39,6 +45,18 @@ object PartialClassNameMapSelect {
     inline def setFilledUndefined: Self = StObject.set(x, "filled", js.undefined)
     
     inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    
+    inline def setIconFilled(value: String): Self = StObject.set(x, "iconFilled", value.asInstanceOf[js.Any])
+    
+    inline def setIconFilledUndefined: Self = StObject.set(x, "iconFilled", js.undefined)
+    
+    inline def setIconOpen(value: String): Self = StObject.set(x, "iconOpen", value.asInstanceOf[js.Any])
+    
+    inline def setIconOpenUndefined: Self = StObject.set(x, "iconOpen", js.undefined)
+    
+    inline def setIconOutlined(value: String): Self = StObject.set(x, "iconOutlined", value.asInstanceOf[js.Any])
+    
+    inline def setIconOutlinedUndefined: Self = StObject.set(x, "iconOutlined", js.undefined)
     
     inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     

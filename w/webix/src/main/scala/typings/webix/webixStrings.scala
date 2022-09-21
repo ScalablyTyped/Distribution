@@ -16,10 +16,12 @@ import typings.webix.mod.ui.buttonEventName
 import typings.webix.mod.ui.calendarEventName
 import typings.webix.mod.ui.carouselEventName
 import typings.webix.mod.ui.chartEventName
+import typings.webix.mod.ui.chatEventName
 import typings.webix.mod.ui.checkboxEventName
 import typings.webix.mod.ui.checksuggestEventName
 import typings.webix.mod.ui.colorboardEventName
 import typings.webix.mod.ui.colorpickerEventName
+import typings.webix.mod.ui.colorselectEventName
 import typings.webix.mod.ui.comboEventName
 import typings.webix.mod.ui.commentsEventName
 import typings.webix.mod.ui.contextEventName
@@ -35,12 +37,15 @@ import typings.webix.mod.ui.daterangeEventName
 import typings.webix.mod.ui.daterangepickerEventName
 import typings.webix.mod.ui.daterangesuggestEventName
 import typings.webix.mod.ui.dbllistEventName
+import typings.webix.mod.ui.docmanagerEventName
 import typings.webix.mod.ui.excelviewerEventName
 import typings.webix.mod.ui.fieldsetEventName
 import typings.webix.mod.ui.filemanagerEventName
+import typings.webix.mod.ui.filterEventName
 import typings.webix.mod.ui.formEventName
 import typings.webix.mod.ui.forminputEventName
 import typings.webix.mod.ui.gageEventName
+import typings.webix.mod.ui.ganttEventName
 import typings.webix.mod.ui.geochartEventName
 import typings.webix.mod.ui.googleMapEventName
 import typings.webix.mod.ui.gridlayoutEventName
@@ -51,17 +56,18 @@ import typings.webix.mod.ui.hintEventName
 import typings.webix.mod.ui.htmlformEventName
 import typings.webix.mod.ui.iconEventName
 import typings.webix.mod.ui.iframeEventName
+import typings.webix.mod.ui.jetappEventName
 import typings.webix.mod.ui.kanbanEventName
 import typings.webix.mod.ui.labelEventName
 import typings.webix.mod.ui.layoutEventName
 import typings.webix.mod.ui.listEventName
+import typings.webix.mod.ui.mentionsuggestEventName
 import typings.webix.mod.ui.menuEventName
 import typings.webix.mod.ui.multicomboEventName
 import typings.webix.mod.ui.multiselectEventName
 import typings.webix.mod.ui.multisuggestEventName
 import typings.webix.mod.ui.multitextEventName
 import typings.webix.mod.ui.multiviewEventName
-import typings.webix.mod.ui.organogramEventName
 import typings.webix.mod.ui.pagerEventName
 import typings.webix.mod.ui.panelEventName
 import typings.webix.mod.ui.pdfviewerEventName
@@ -71,13 +77,15 @@ import typings.webix.mod.ui.portletEventName
 import typings.webix.mod.ui.propertyEventName
 import typings.webix.mod.ui.protoEventName
 import typings.webix.mod.ui.proxyEventName
-import typings.webix.mod.ui.querybuilderEventName
+import typings.webix.mod.ui.queryEventName
 import typings.webix.mod.ui.radioEventName
 import typings.webix.mod.ui.rangechartEventName
 import typings.webix.mod.ui.rangesliderEventName
+import typings.webix.mod.ui.reportsEventName
 import typings.webix.mod.ui.resizeareaEventName
 import typings.webix.mod.ui.richselectEventName
 import typings.webix.mod.ui.richtextEventName
+import typings.webix.mod.ui.schedulerEventName
 import typings.webix.mod.ui.scrollviewEventName
 import typings.webix.mod.ui.searchEventName
 import typings.webix.mod.ui.segmentedEventName
@@ -95,6 +103,8 @@ import typings.webix.mod.ui.tabviewEventName
 import typings.webix.mod.ui.templateEventName
 import typings.webix.mod.ui.textEventName
 import typings.webix.mod.ui.textareaEventName
+import typings.webix.mod.ui.texthighlightEventName
+import typings.webix.mod.ui.timeboardEventName
 import typings.webix.mod.ui.timelineEventName
 import typings.webix.mod.ui.toggleEventName
 import typings.webix.mod.ui.toolbarEventName
@@ -104,6 +114,7 @@ import typings.webix.mod.ui.treemapEventName
 import typings.webix.mod.ui.treetableEventName
 import typings.webix.mod.ui.unitlistEventName
 import typings.webix.mod.ui.uploaderEventName
+import typings.webix.mod.ui.usermanagerEventName
 import typings.webix.mod.ui.videoEventName
 import typings.webix.mod.ui.viewEventName
 import typings.webix.mod.ui.windowEventName
@@ -134,8 +145,6 @@ object webixStrings {
        with typings.webix.webix.ui.dataviewEventName
        with excelviewerEventName
        with typings.webix.webix.ui.excelviewerEventName
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
        with geochartEventName
        with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -148,8 +157,6 @@ object webixStrings {
        with typings.webix.webix.ui.listEventName
        with menuEventName
        with typings.webix.webix.ui.menuEventName
-       with organogramEventName
-       with typings.webix.webix.ui.organogramEventName
        with pivotEventName
        with typings.webix.webix.ui.pivotEventName
        with protoEventName
@@ -195,13 +202,6 @@ object webixStrings {
   inline def onAfterAreaRemove: onAfterAreaRemove = "onAfterAreaRemove".asInstanceOf[onAfterAreaRemove]
   
   @js.native
-  sealed trait onAfterBack
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onAfterBack: onAfterBack = "onAfterBack".asInstanceOf[onAfterBack]
-  
-  @js.native
   sealed trait onAfterBlockSelect
     extends StObject
        with datatableEventName
@@ -215,8 +215,6 @@ object webixStrings {
   @js.native
   sealed trait onAfterClose
     extends StObject
-       with organogramEventName
-       with typings.webix.webix.ui.organogramEventName
        with sidebarEventName
        with typings.webix.webix.ui.sidebarEventName
        with treeEventName
@@ -312,8 +310,6 @@ object webixStrings {
        with typings.webix.webix.ui.listEventName
        with menuEventName
        with typings.webix.webix.ui.menuEventName
-       with organogramEventName
-       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
        with typings.webix.webix.ui.pagerEventName
        with propertyEventName
@@ -342,13 +338,6 @@ object webixStrings {
        with kanbanEventName
        with typings.webix.webix.ui.kanbanEventName
   inline def onAfterCopy: onAfterCopy = "onAfterCopy".asInstanceOf[onAfterCopy]
-  
-  @js.native
-  sealed trait onAfterCreateFolder
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onAfterCreateFolder: onAfterCreateFolder = "onAfterCreateFolder".asInstanceOf[onAfterCreateFolder]
   
   @js.native
   sealed trait onAfterCursorChange
@@ -389,8 +378,6 @@ object webixStrings {
        with typings.webix.webix.ui.dataviewEventName
        with excelviewerEventName
        with typings.webix.webix.ui.excelviewerEventName
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
        with geochartEventName
        with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -403,8 +390,6 @@ object webixStrings {
        with typings.webix.webix.ui.listEventName
        with menuEventName
        with typings.webix.webix.ui.menuEventName
-       with organogramEventName
-       with typings.webix.webix.ui.organogramEventName
        with pivotEventName
        with typings.webix.webix.ui.pivotEventName
        with protoEventName
@@ -428,13 +413,6 @@ object webixStrings {
   inline def onAfterDelete: onAfterDelete = "onAfterDelete".asInstanceOf[onAfterDelete]
   
   @js.native
-  sealed trait onAfterDeleteFile
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onAfterDeleteFile: onAfterDeleteFile = "onAfterDeleteFile".asInstanceOf[onAfterDeleteFile]
-  
-  @js.native
   sealed trait onAfterDrop
     extends StObject
        with contextmenuEventName
@@ -447,8 +425,6 @@ object webixStrings {
        with typings.webix.webix.ui.dataviewEventName
        with excelviewerEventName
        with typings.webix.webix.ui.excelviewerEventName
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
        with grouplistEventName
        with typings.webix.webix.ui.grouplistEventName
        with listEventName
@@ -466,20 +442,6 @@ object webixStrings {
        with unitlistEventName
        with typings.webix.webix.ui.unitlistEventName
   inline def onAfterDrop: onAfterDrop = "onAfterDrop".asInstanceOf[onAfterDrop]
-  
-  @js.native
-  sealed trait onAfterDynParse
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onAfterDynParse: onAfterDynParse = "onAfterDynParse".asInstanceOf[onAfterDynParse]
-  
-  @js.native
-  sealed trait onAfterEditFile
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onAfterEditFile: onAfterEditFile = "onAfterEditFile".asInstanceOf[onAfterEditFile]
   
   @js.native
   sealed trait onAfterEditStart
@@ -503,8 +465,6 @@ object webixStrings {
        with typings.webix.webix.ui.datatableEventName
        with excelviewerEventName
        with typings.webix.webix.ui.excelviewerEventName
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
        with propertyEventName
        with typings.webix.webix.ui.propertyEventName
        with treetableEventName
@@ -537,13 +497,6 @@ object webixStrings {
   inline def onAfterFileAdd: onAfterFileAdd = "onAfterFileAdd".asInstanceOf[onAfterFileAdd]
   
   @js.native
-  sealed trait onAfterFileUpload
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onAfterFileUpload: onAfterFileUpload = "onAfterFileUpload".asInstanceOf[onAfterFileUpload]
-  
-  @js.native
   sealed trait onAfterFilter
     extends StObject
        with datatableEventName
@@ -553,27 +506,6 @@ object webixStrings {
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
   inline def onAfterFilter: onAfterFilter = "onAfterFilter".asInstanceOf[onAfterFilter]
-  
-  @js.native
-  sealed trait onAfterHideTree
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onAfterHideTree: onAfterHideTree = "onAfterHideTree".asInstanceOf[onAfterHideTree]
-  
-  @js.native
-  sealed trait onAfterLevelDown
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onAfterLevelDown: onAfterLevelDown = "onAfterLevelDown".asInstanceOf[onAfterLevelDown]
-  
-  @js.native
-  sealed trait onAfterLevelUp
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onAfterLevelUp: onAfterLevelUp = "onAfterLevelUp".asInstanceOf[onAfterLevelUp]
   
   @js.native
   sealed trait onAfterLoad
@@ -600,8 +532,8 @@ object webixStrings {
        with typings.webix.webix.ui.dbllistEventName
        with excelviewerEventName
        with typings.webix.webix.ui.excelviewerEventName
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
+       with filterEventName
+       with typings.webix.webix.ui.filterEventName
        with formEventName
        with typings.webix.webix.ui.formEventName
        with geochartEventName
@@ -620,8 +552,6 @@ object webixStrings {
        with typings.webix.webix.ui.listEventName
        with menuEventName
        with typings.webix.webix.ui.menuEventName
-       with organogramEventName
-       with typings.webix.webix.ui.organogramEventName
        with pdfviewerEventName
        with typings.webix.webix.ui.pdfviewerEventName
        with pivotEventName
@@ -655,34 +585,6 @@ object webixStrings {
   inline def onAfterLoad: onAfterLoad = "onAfterLoad".asInstanceOf[onAfterLoad]
   
   @js.native
-  sealed trait onAfterMarkCopy
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onAfterMarkCopy: onAfterMarkCopy = "onAfterMarkCopy".asInstanceOf[onAfterMarkCopy]
-  
-  @js.native
-  sealed trait onAfterMarkCut
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onAfterMarkCut: onAfterMarkCut = "onAfterMarkCut".asInstanceOf[onAfterMarkCut]
-  
-  @js.native
-  sealed trait onAfterMenu
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onAfterMenu: onAfterMenu = "onAfterMenu".asInstanceOf[onAfterMenu]
-  
-  @js.native
-  sealed trait onAfterModeChange
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onAfterModeChange: onAfterModeChange = "onAfterModeChange".asInstanceOf[onAfterModeChange]
-  
-  @js.native
   sealed trait onAfterMonthChange
     extends StObject
        with calendarEventName
@@ -692,8 +594,6 @@ object webixStrings {
   @js.native
   sealed trait onAfterOpen
     extends StObject
-       with organogramEventName
-       with typings.webix.webix.ui.organogramEventName
        with sidebarEventName
        with typings.webix.webix.ui.sidebarEventName
        with treeEventName
@@ -710,20 +610,6 @@ object webixStrings {
        with pagerEventName
        with typings.webix.webix.ui.pagerEventName
   inline def onAfterPageChange: onAfterPageChange = "onAfterPageChange".asInstanceOf[onAfterPageChange]
-  
-  @js.native
-  sealed trait onAfterPasteFile
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onAfterPasteFile: onAfterPasteFile = "onAfterPasteFile".asInstanceOf[onAfterPasteFile]
-  
-  @js.native
-  sealed trait onAfterPathClick
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onAfterPathClick: onAfterPathClick = "onAfterPathClick".asInstanceOf[onAfterPathClick]
   
   @js.native
   sealed trait onAfterPortletMove
@@ -761,6 +647,8 @@ object webixStrings {
        with typings.webix.webix.ui.colorboardEventName
        with colorpickerEventName
        with typings.webix.webix.ui.colorpickerEventName
+       with colorselectEventName
+       with typings.webix.webix.ui.colorselectEventName
        with comboEventName
        with typings.webix.webix.ui.comboEventName
        with contextmenuEventName
@@ -795,8 +683,6 @@ object webixStrings {
        with typings.webix.webix.ui.multiselectEventName
        with multitextEventName
        with typings.webix.webix.ui.multitextEventName
-       with organogramEventName
-       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
        with typings.webix.webix.ui.pagerEventName
        with propertyEventName
@@ -833,6 +719,8 @@ object webixStrings {
        with typings.webix.webix.ui.textEventName
        with textareaEventName
        with typings.webix.webix.ui.textareaEventName
+       with texthighlightEventName
+       with typings.webix.webix.ui.texthighlightEventName
        with timelineEventName
        with typings.webix.webix.ui.timelineEventName
        with toggleEventName
@@ -850,13 +738,6 @@ object webixStrings {
        with uploaderEventName
        with typings.webix.webix.ui.uploaderEventName
   inline def onAfterRender: onAfterRender = "onAfterRender".asInstanceOf[onAfterRender]
-  
-  @js.native
-  sealed trait onAfterRun
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onAfterRun: onAfterRun = "onAfterRun".asInstanceOf[onAfterRun]
   
   @js.native
   sealed trait onAfterScroll
@@ -877,6 +758,8 @@ object webixStrings {
        with typings.webix.webix.ui.carouselEventName
        with chartEventName
        with typings.webix.webix.ui.chartEventName
+       with chatEventName
+       with typings.webix.webix.ui.chatEventName
        with checkboxEventName
        with typings.webix.webix.ui.checkboxEventName
        with checksuggestEventName
@@ -885,6 +768,8 @@ object webixStrings {
        with typings.webix.webix.ui.colorboardEventName
        with colorpickerEventName
        with typings.webix.webix.ui.colorpickerEventName
+       with colorselectEventName
+       with typings.webix.webix.ui.colorselectEventName
        with comboEventName
        with typings.webix.webix.ui.comboEventName
        with contextEventName
@@ -905,16 +790,22 @@ object webixStrings {
        with typings.webix.webix.ui.daterangepickerEventName
        with daterangesuggestEventName
        with typings.webix.webix.ui.daterangesuggestEventName
+       with docmanagerEventName
+       with typings.webix.webix.ui.docmanagerEventName
        with excelviewerEventName
        with typings.webix.webix.ui.excelviewerEventName
        with fieldsetEventName
        with typings.webix.webix.ui.fieldsetEventName
+       with filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
        with formEventName
        with typings.webix.webix.ui.formEventName
        with forminputEventName
        with typings.webix.webix.ui.forminputEventName
        with gageEventName
        with typings.webix.webix.ui.gageEventName
+       with ganttEventName
+       with typings.webix.webix.ui.ganttEventName
        with geochartEventName
        with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -931,10 +822,14 @@ object webixStrings {
        with typings.webix.webix.ui.iconEventName
        with iframeEventName
        with typings.webix.webix.ui.iframeEventName
+       with jetappEventName
+       with typings.webix.webix.ui.jetappEventName
        with labelEventName
        with typings.webix.webix.ui.labelEventName
        with listEventName
        with typings.webix.webix.ui.listEventName
+       with mentionsuggestEventName
+       with typings.webix.webix.ui.mentionsuggestEventName
        with menuEventName
        with typings.webix.webix.ui.menuEventName
        with multicomboEventName
@@ -945,8 +840,6 @@ object webixStrings {
        with typings.webix.webix.ui.multisuggestEventName
        with multitextEventName
        with typings.webix.webix.ui.multitextEventName
-       with organogramEventName
-       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
        with typings.webix.webix.ui.pagerEventName
        with pdfviewerEventName
@@ -959,14 +852,20 @@ object webixStrings {
        with typings.webix.webix.ui.protoEventName
        with proxyEventName
        with typings.webix.webix.ui.proxyEventName
+       with queryEventName
+       with typings.webix.webix.ui.queryEventName
        with radioEventName
        with typings.webix.webix.ui.radioEventName
        with rangechartEventName
        with typings.webix.webix.ui.rangechartEventName
        with rangesliderEventName
        with typings.webix.webix.ui.rangesliderEventName
+       with reportsEventName
+       with typings.webix.webix.ui.reportsEventName
        with richselectEventName
        with typings.webix.webix.ui.richselectEventName
+       with schedulerEventName
+       with typings.webix.webix.ui.schedulerEventName
        with scrollviewEventName
        with typings.webix.webix.ui.scrollviewEventName
        with searchEventName
@@ -997,6 +896,8 @@ object webixStrings {
        with typings.webix.webix.ui.textEventName
        with textareaEventName
        with typings.webix.webix.ui.textareaEventName
+       with texthighlightEventName
+       with typings.webix.webix.ui.texthighlightEventName
        with timelineEventName
        with typings.webix.webix.ui.timelineEventName
        with toggleEventName
@@ -1015,6 +916,8 @@ object webixStrings {
        with typings.webix.webix.ui.unitlistEventName
        with uploaderEventName
        with typings.webix.webix.ui.uploaderEventName
+       with usermanagerEventName
+       with typings.webix.webix.ui.usermanagerEventName
        with videoEventName
        with typings.webix.webix.ui.videoEventName
        with viewEventName
@@ -1022,13 +925,6 @@ object webixStrings {
        with windowEventName
        with typings.webix.webix.ui.windowEventName
   inline def onAfterScroll: onAfterScroll = "onAfterScroll".asInstanceOf[onAfterScroll]
-  
-  @js.native
-  sealed trait onAfterSearch
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onAfterSearch: onAfterSearch = "onAfterSearch".asInstanceOf[onAfterSearch]
   
   @js.native
   sealed trait onAfterSelect
@@ -1047,8 +943,6 @@ object webixStrings {
        with typings.webix.webix.ui.listEventName
        with menuEventName
        with typings.webix.webix.ui.menuEventName
-       with organogramEventName
-       with typings.webix.webix.ui.organogramEventName
        with sidebarEventName
        with typings.webix.webix.ui.sidebarEventName
        with spreadsheetEventName
@@ -1073,13 +967,6 @@ object webixStrings {
   inline def onAfterSheetShow: onAfterSheetShow = "onAfterSheetShow".asInstanceOf[onAfterSheetShow]
   
   @js.native
-  sealed trait onAfterShowTree
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onAfterShowTree: onAfterShowTree = "onAfterShowTree".asInstanceOf[onAfterShowTree]
-  
-  @js.native
   sealed trait onAfterSort
     extends StObject
        with DataCollectionEventName
@@ -1098,8 +985,6 @@ object webixStrings {
        with typings.webix.webix.ui.dataviewEventName
        with excelviewerEventName
        with typings.webix.webix.ui.excelviewerEventName
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
        with geochartEventName
        with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -1112,8 +997,6 @@ object webixStrings {
        with typings.webix.webix.ui.listEventName
        with menuEventName
        with typings.webix.webix.ui.menuEventName
-       with organogramEventName
-       with typings.webix.webix.ui.organogramEventName
        with pivotEventName
        with typings.webix.webix.ui.pivotEventName
        with protoEventName
@@ -1185,13 +1068,6 @@ object webixStrings {
   inline def onAfterUnSelect: onAfterUnSelect = "onAfterUnSelect".asInstanceOf[onAfterUnSelect]
   
   @js.native
-  sealed trait onAfterUploadDialog
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onAfterUploadDialog: onAfterUploadDialog = "onAfterUploadDialog".asInstanceOf[onAfterUploadDialog]
-  
-  @js.native
   sealed trait onAfterValidation
     extends StObject
        with formEventName
@@ -1246,8 +1122,6 @@ object webixStrings {
        with typings.webix.webix.ui.dataviewEventName
        with excelviewerEventName
        with typings.webix.webix.ui.excelviewerEventName
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
        with geochartEventName
        with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -1260,8 +1134,6 @@ object webixStrings {
        with typings.webix.webix.ui.listEventName
        with menuEventName
        with typings.webix.webix.ui.menuEventName
-       with organogramEventName
-       with typings.webix.webix.ui.organogramEventName
        with pivotEventName
        with typings.webix.webix.ui.pivotEventName
        with protoEventName
@@ -1316,8 +1188,6 @@ object webixStrings {
   @js.native
   sealed trait onBeforeBack
     extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
        with multiviewEventName
        with typings.webix.webix.ui.multiviewEventName
   inline def onBeforeBack: onBeforeBack = "onBeforeBack".asInstanceOf[onBeforeBack]
@@ -1343,8 +1213,6 @@ object webixStrings {
   @js.native
   sealed trait onBeforeClose
     extends StObject
-       with organogramEventName
-       with typings.webix.webix.ui.organogramEventName
        with sidebarEventName
        with typings.webix.webix.ui.sidebarEventName
        with treeEventName
@@ -1440,8 +1308,6 @@ object webixStrings {
        with typings.webix.webix.ui.listEventName
        with menuEventName
        with typings.webix.webix.ui.menuEventName
-       with organogramEventName
-       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
        with typings.webix.webix.ui.pagerEventName
        with propertyEventName
@@ -1470,13 +1336,6 @@ object webixStrings {
        with kanbanEventName
        with typings.webix.webix.ui.kanbanEventName
   inline def onBeforeCopy: onBeforeCopy = "onBeforeCopy".asInstanceOf[onBeforeCopy]
-  
-  @js.native
-  sealed trait onBeforeCreateFolder
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onBeforeCreateFolder: onBeforeCreateFolder = "onBeforeCreateFolder".asInstanceOf[onBeforeCreateFolder]
   
   @js.native
   sealed trait onBeforeCursorChange
@@ -1517,8 +1376,6 @@ object webixStrings {
        with typings.webix.webix.ui.dataviewEventName
        with excelviewerEventName
        with typings.webix.webix.ui.excelviewerEventName
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
        with geochartEventName
        with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -1531,8 +1388,6 @@ object webixStrings {
        with typings.webix.webix.ui.listEventName
        with menuEventName
        with typings.webix.webix.ui.menuEventName
-       with organogramEventName
-       with typings.webix.webix.ui.organogramEventName
        with pivotEventName
        with typings.webix.webix.ui.pivotEventName
        with protoEventName
@@ -1556,13 +1411,6 @@ object webixStrings {
   inline def onBeforeDelete: onBeforeDelete = "onBeforeDelete".asInstanceOf[onBeforeDelete]
   
   @js.native
-  sealed trait onBeforeDeleteFile
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onBeforeDeleteFile: onBeforeDeleteFile = "onBeforeDeleteFile".asInstanceOf[onBeforeDeleteFile]
-  
-  @js.native
   sealed trait onBeforeDrag
     extends StObject
        with contextmenuEventName
@@ -1575,8 +1423,6 @@ object webixStrings {
        with typings.webix.webix.ui.dataviewEventName
        with excelviewerEventName
        with typings.webix.webix.ui.excelviewerEventName
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
        with grouplistEventName
        with typings.webix.webix.ui.grouplistEventName
        with listEventName
@@ -1608,8 +1454,6 @@ object webixStrings {
        with typings.webix.webix.ui.dataviewEventName
        with excelviewerEventName
        with typings.webix.webix.ui.excelviewerEventName
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
        with grouplistEventName
        with typings.webix.webix.ui.grouplistEventName
        with listEventName
@@ -1641,8 +1485,6 @@ object webixStrings {
        with typings.webix.webix.ui.dataviewEventName
        with excelviewerEventName
        with typings.webix.webix.ui.excelviewerEventName
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
        with grouplistEventName
        with typings.webix.webix.ui.grouplistEventName
        with listEventName
@@ -1691,27 +1533,6 @@ object webixStrings {
   inline def onBeforeDropOut: onBeforeDropOut = "onBeforeDropOut".asInstanceOf[onBeforeDropOut]
   
   @js.native
-  sealed trait onBeforeDynLoad
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onBeforeDynLoad: onBeforeDynLoad = "onBeforeDynLoad".asInstanceOf[onBeforeDynLoad]
-  
-  @js.native
-  sealed trait onBeforeDynParse
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onBeforeDynParse: onBeforeDynParse = "onBeforeDynParse".asInstanceOf[onBeforeDynParse]
-  
-  @js.native
-  sealed trait onBeforeEditFile
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onBeforeEditFile: onBeforeEditFile = "onBeforeEditFile".asInstanceOf[onBeforeEditFile]
-  
-  @js.native
   sealed trait onBeforeEditStart
     extends StObject
        with commentsEventName
@@ -1733,8 +1554,6 @@ object webixStrings {
        with typings.webix.webix.ui.datatableEventName
        with excelviewerEventName
        with typings.webix.webix.ui.excelviewerEventName
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
        with propertyEventName
        with typings.webix.webix.ui.propertyEventName
        with treetableEventName
@@ -1763,13 +1582,6 @@ object webixStrings {
   inline def onBeforeFileAdd: onBeforeFileAdd = "onBeforeFileAdd".asInstanceOf[onBeforeFileAdd]
   
   @js.native
-  sealed trait onBeforeFileUpload
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onBeforeFileUpload: onBeforeFileUpload = "onBeforeFileUpload".asInstanceOf[onBeforeFileUpload]
-  
-  @js.native
   sealed trait onBeforeFilter
     extends StObject
        with datatableEventName
@@ -1779,27 +1591,6 @@ object webixStrings {
        with treetableEventName
        with typings.webix.webix.ui.treetableEventName
   inline def onBeforeFilter: onBeforeFilter = "onBeforeFilter".asInstanceOf[onBeforeFilter]
-  
-  @js.native
-  sealed trait onBeforeHideTree
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onBeforeHideTree: onBeforeHideTree = "onBeforeHideTree".asInstanceOf[onBeforeHideTree]
-  
-  @js.native
-  sealed trait onBeforeLevelDown
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onBeforeLevelDown: onBeforeLevelDown = "onBeforeLevelDown".asInstanceOf[onBeforeLevelDown]
-  
-  @js.native
-  sealed trait onBeforeLevelUp
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onBeforeLevelUp: onBeforeLevelUp = "onBeforeLevelUp".asInstanceOf[onBeforeLevelUp]
   
   @js.native
   sealed trait onBeforeLoad
@@ -1826,8 +1617,8 @@ object webixStrings {
        with typings.webix.webix.ui.dbllistEventName
        with excelviewerEventName
        with typings.webix.webix.ui.excelviewerEventName
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
+       with filterEventName
+       with typings.webix.webix.ui.filterEventName
        with formEventName
        with typings.webix.webix.ui.formEventName
        with geochartEventName
@@ -1846,8 +1637,6 @@ object webixStrings {
        with typings.webix.webix.ui.listEventName
        with menuEventName
        with typings.webix.webix.ui.menuEventName
-       with organogramEventName
-       with typings.webix.webix.ui.organogramEventName
        with pdfviewerEventName
        with typings.webix.webix.ui.pdfviewerEventName
        with pivotEventName
@@ -1881,39 +1670,11 @@ object webixStrings {
   inline def onBeforeLoad: onBeforeLoad = "onBeforeLoad".asInstanceOf[onBeforeLoad]
   
   @js.native
-  sealed trait onBeforeMarkCopy
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onBeforeMarkCopy: onBeforeMarkCopy = "onBeforeMarkCopy".asInstanceOf[onBeforeMarkCopy]
-  
-  @js.native
-  sealed trait onBeforeMarkCut
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onBeforeMarkCut: onBeforeMarkCut = "onBeforeMarkCut".asInstanceOf[onBeforeMarkCut]
-  
-  @js.native
-  sealed trait onBeforeMenu
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onBeforeMenu: onBeforeMenu = "onBeforeMenu".asInstanceOf[onBeforeMenu]
-  
-  @js.native
   sealed trait onBeforeMenuAction
     extends StObject
        with commentsEventName
        with typings.webix.webix.ui.commentsEventName
   inline def onBeforeMenuAction: onBeforeMenuAction = "onBeforeMenuAction".asInstanceOf[onBeforeMenuAction]
-  
-  @js.native
-  sealed trait onBeforeModeChange
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onBeforeModeChange: onBeforeModeChange = "onBeforeModeChange".asInstanceOf[onBeforeModeChange]
   
   @js.native
   sealed trait onBeforeMonthChange
@@ -1925,8 +1686,6 @@ object webixStrings {
   @js.native
   sealed trait onBeforeOpen
     extends StObject
-       with organogramEventName
-       with typings.webix.webix.ui.organogramEventName
        with sidebarEventName
        with typings.webix.webix.ui.sidebarEventName
        with treeEventName
@@ -1943,13 +1702,6 @@ object webixStrings {
        with pagerEventName
        with typings.webix.webix.ui.pagerEventName
   inline def onBeforePageChange: onBeforePageChange = "onBeforePageChange".asInstanceOf[onBeforePageChange]
-  
-  @js.native
-  sealed trait onBeforePasteFile
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onBeforePasteFile: onBeforePasteFile = "onBeforePasteFile".asInstanceOf[onBeforePasteFile]
   
   @js.native
   sealed trait onBeforePortletMove
@@ -1973,6 +1725,8 @@ object webixStrings {
        with typings.webix.webix.ui.colorboardEventName
        with colorpickerEventName
        with typings.webix.webix.ui.colorpickerEventName
+       with colorselectEventName
+       with typings.webix.webix.ui.colorselectEventName
        with comboEventName
        with typings.webix.webix.ui.comboEventName
        with contextmenuEventName
@@ -2007,8 +1761,6 @@ object webixStrings {
        with typings.webix.webix.ui.multiselectEventName
        with multitextEventName
        with typings.webix.webix.ui.multitextEventName
-       with organogramEventName
-       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
        with typings.webix.webix.ui.pagerEventName
        with pivotEventName
@@ -2047,6 +1799,8 @@ object webixStrings {
        with typings.webix.webix.ui.textEventName
        with textareaEventName
        with typings.webix.webix.ui.textareaEventName
+       with texthighlightEventName
+       with typings.webix.webix.ui.texthighlightEventName
        with timelineEventName
        with typings.webix.webix.ui.timelineEventName
        with toggleEventName
@@ -2066,34 +1820,6 @@ object webixStrings {
   inline def onBeforeRender: onBeforeRender = "onBeforeRender".asInstanceOf[onBeforeRender]
   
   @js.native
-  sealed trait onBeforeRequest
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onBeforeRequest: onBeforeRequest = "onBeforeRequest".asInstanceOf[onBeforeRequest]
-  
-  @js.native
-  sealed trait onBeforeRun
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onBeforeRun: onBeforeRun = "onBeforeRun".asInstanceOf[onBeforeRun]
-  
-  @js.native
-  sealed trait onBeforeSearch
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onBeforeSearch: onBeforeSearch = "onBeforeSearch".asInstanceOf[onBeforeSearch]
-  
-  @js.native
-  sealed trait onBeforeSearchRequest
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onBeforeSearchRequest: onBeforeSearchRequest = "onBeforeSearchRequest".asInstanceOf[onBeforeSearchRequest]
-  
-  @js.native
   sealed trait onBeforeSelect
     extends StObject
        with contextmenuEventName
@@ -2110,8 +1836,6 @@ object webixStrings {
        with typings.webix.webix.ui.listEventName
        with menuEventName
        with typings.webix.webix.ui.menuEventName
-       with organogramEventName
-       with typings.webix.webix.ui.organogramEventName
        with sidebarEventName
        with typings.webix.webix.ui.sidebarEventName
        with submenuEventName
@@ -2148,6 +1872,8 @@ object webixStrings {
        with typings.webix.webix.ui.daterangesuggestEventName
        with gridsuggestEventName
        with typings.webix.webix.ui.gridsuggestEventName
+       with mentionsuggestEventName
+       with typings.webix.webix.ui.mentionsuggestEventName
        with multisuggestEventName
        with typings.webix.webix.ui.multisuggestEventName
        with popupEventName
@@ -2161,13 +1887,6 @@ object webixStrings {
        with windowEventName
        with typings.webix.webix.ui.windowEventName
   inline def onBeforeShow: onBeforeShow = "onBeforeShow".asInstanceOf[onBeforeShow]
-  
-  @js.native
-  sealed trait onBeforeShowTree
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onBeforeShowTree: onBeforeShowTree = "onBeforeShowTree".asInstanceOf[onBeforeShowTree]
   
   @js.native
   sealed trait onBeforeSort
@@ -2188,8 +1907,6 @@ object webixStrings {
        with typings.webix.webix.ui.dataviewEventName
        with excelviewerEventName
        with typings.webix.webix.ui.excelviewerEventName
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
        with geochartEventName
        with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -2202,8 +1919,6 @@ object webixStrings {
        with typings.webix.webix.ui.listEventName
        with menuEventName
        with typings.webix.webix.ui.menuEventName
-       with organogramEventName
-       with typings.webix.webix.ui.organogramEventName
        with pivotEventName
        with typings.webix.webix.ui.pivotEventName
        with protoEventName
@@ -2282,13 +1997,6 @@ object webixStrings {
   inline def onBeforeUnSelect: onBeforeUnSelect = "onBeforeUnSelect".asInstanceOf[onBeforeUnSelect]
   
   @js.native
-  sealed trait onBeforeUploadDialog
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onBeforeUploadDialog: onBeforeUploadDialog = "onBeforeUploadDialog".asInstanceOf[onBeforeUploadDialog]
-  
-  @js.native
   sealed trait onBeforeValidate
     extends StObject
        with formEventName
@@ -2346,6 +2054,8 @@ object webixStrings {
        with typings.webix.webix.ui.carouselEventName
        with chartEventName
        with typings.webix.webix.ui.chartEventName
+       with chatEventName
+       with typings.webix.webix.ui.chatEventName
        with checkboxEventName
        with typings.webix.webix.ui.checkboxEventName
        with checksuggestEventName
@@ -2354,6 +2064,8 @@ object webixStrings {
        with typings.webix.webix.ui.colorboardEventName
        with colorpickerEventName
        with typings.webix.webix.ui.colorpickerEventName
+       with colorselectEventName
+       with typings.webix.webix.ui.colorselectEventName
        with comboEventName
        with typings.webix.webix.ui.comboEventName
        with commentsEventName
@@ -2388,14 +2100,16 @@ object webixStrings {
        with typings.webix.webix.ui.excelviewerEventName
        with fieldsetEventName
        with typings.webix.webix.ui.fieldsetEventName
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
+       with filterEventName
+       with typings.webix.webix.ui.filterEventName
        with formEventName
        with typings.webix.webix.ui.formEventName
        with forminputEventName
        with typings.webix.webix.ui.forminputEventName
        with gageEventName
        with typings.webix.webix.ui.gageEventName
+       with ganttEventName
+       with typings.webix.webix.ui.ganttEventName
        with geochartEventName
        with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -2424,6 +2138,8 @@ object webixStrings {
        with typings.webix.webix.ui.layoutEventName
        with listEventName
        with typings.webix.webix.ui.listEventName
+       with mentionsuggestEventName
+       with typings.webix.webix.ui.mentionsuggestEventName
        with menuEventName
        with typings.webix.webix.ui.menuEventName
        with multicomboEventName
@@ -2436,8 +2152,6 @@ object webixStrings {
        with typings.webix.webix.ui.multitextEventName
        with multiviewEventName
        with typings.webix.webix.ui.multiviewEventName
-       with organogramEventName
-       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
        with typings.webix.webix.ui.pagerEventName
        with panelEventName
@@ -2456,18 +2170,20 @@ object webixStrings {
        with typings.webix.webix.ui.protoEventName
        with proxyEventName
        with typings.webix.webix.ui.proxyEventName
-       with querybuilderEventName
-       with typings.webix.webix.ui.querybuilderEventName
        with radioEventName
        with typings.webix.webix.ui.radioEventName
        with rangechartEventName
        with typings.webix.webix.ui.rangechartEventName
        with rangesliderEventName
        with typings.webix.webix.ui.rangesliderEventName
+       with reportsEventName
+       with typings.webix.webix.ui.reportsEventName
        with richselectEventName
        with typings.webix.webix.ui.richselectEventName
        with richtextEventName
        with typings.webix.webix.ui.richtextEventName
+       with schedulerEventName
+       with typings.webix.webix.ui.schedulerEventName
        with scrollviewEventName
        with typings.webix.webix.ui.scrollviewEventName
        with searchEventName
@@ -2502,6 +2218,10 @@ object webixStrings {
        with typings.webix.webix.ui.textEventName
        with textareaEventName
        with typings.webix.webix.ui.textareaEventName
+       with texthighlightEventName
+       with typings.webix.webix.ui.texthighlightEventName
+       with timeboardEventName
+       with typings.webix.webix.ui.timeboardEventName
        with timelineEventName
        with typings.webix.webix.ui.timelineEventName
        with toggleEventName
@@ -2556,6 +2276,8 @@ object webixStrings {
        with typings.webix.webix.ui.carouselEventName
        with chartEventName
        with typings.webix.webix.ui.chartEventName
+       with chatEventName
+       with typings.webix.webix.ui.chatEventName
        with checkboxEventName
        with typings.webix.webix.ui.checkboxEventName
        with checksuggestEventName
@@ -2564,6 +2286,8 @@ object webixStrings {
        with typings.webix.webix.ui.colorboardEventName
        with colorpickerEventName
        with typings.webix.webix.ui.colorpickerEventName
+       with colorselectEventName
+       with typings.webix.webix.ui.colorselectEventName
        with comboEventName
        with typings.webix.webix.ui.comboEventName
        with contextEventName
@@ -2584,14 +2308,20 @@ object webixStrings {
        with typings.webix.webix.ui.daterangepickerEventName
        with daterangesuggestEventName
        with typings.webix.webix.ui.daterangesuggestEventName
+       with docmanagerEventName
+       with typings.webix.webix.ui.docmanagerEventName
        with excelviewerEventName
        with typings.webix.webix.ui.excelviewerEventName
        with fieldsetEventName
        with typings.webix.webix.ui.fieldsetEventName
+       with filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
        with forminputEventName
        with typings.webix.webix.ui.forminputEventName
        with gageEventName
        with typings.webix.webix.ui.gageEventName
+       with ganttEventName
+       with typings.webix.webix.ui.ganttEventName
        with geochartEventName
        with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -2608,10 +2338,14 @@ object webixStrings {
        with typings.webix.webix.ui.iconEventName
        with iframeEventName
        with typings.webix.webix.ui.iframeEventName
+       with jetappEventName
+       with typings.webix.webix.ui.jetappEventName
        with labelEventName
        with typings.webix.webix.ui.labelEventName
        with listEventName
        with typings.webix.webix.ui.listEventName
+       with mentionsuggestEventName
+       with typings.webix.webix.ui.mentionsuggestEventName
        with menuEventName
        with typings.webix.webix.ui.menuEventName
        with multicomboEventName
@@ -2622,8 +2356,6 @@ object webixStrings {
        with typings.webix.webix.ui.multisuggestEventName
        with multitextEventName
        with typings.webix.webix.ui.multitextEventName
-       with organogramEventName
-       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
        with typings.webix.webix.ui.pagerEventName
        with pdfviewerEventName
@@ -2636,14 +2368,20 @@ object webixStrings {
        with typings.webix.webix.ui.protoEventName
        with proxyEventName
        with typings.webix.webix.ui.proxyEventName
+       with queryEventName
+       with typings.webix.webix.ui.queryEventName
        with radioEventName
        with typings.webix.webix.ui.radioEventName
        with rangechartEventName
        with typings.webix.webix.ui.rangechartEventName
        with rangesliderEventName
        with typings.webix.webix.ui.rangesliderEventName
+       with reportsEventName
+       with typings.webix.webix.ui.reportsEventName
        with richselectEventName
        with typings.webix.webix.ui.richselectEventName
+       with schedulerEventName
+       with typings.webix.webix.ui.schedulerEventName
        with scrollviewEventName
        with typings.webix.webix.ui.scrollviewEventName
        with searchEventName
@@ -2674,6 +2412,8 @@ object webixStrings {
        with typings.webix.webix.ui.textEventName
        with textareaEventName
        with typings.webix.webix.ui.textareaEventName
+       with texthighlightEventName
+       with typings.webix.webix.ui.texthighlightEventName
        with toggleEventName
        with typings.webix.webix.ui.toggleEventName
        with tooltipEventName
@@ -2688,6 +2428,8 @@ object webixStrings {
        with typings.webix.webix.ui.unitlistEventName
        with uploaderEventName
        with typings.webix.webix.ui.uploaderEventName
+       with usermanagerEventName
+       with typings.webix.webix.ui.usermanagerEventName
        with videoEventName
        with typings.webix.webix.ui.videoEventName
        with viewEventName
@@ -2725,6 +2467,8 @@ object webixStrings {
        with typings.webix.webix.ui.checkboxEventName
        with colorpickerEventName
        with typings.webix.webix.ui.colorpickerEventName
+       with colorselectEventName
+       with typings.webix.webix.ui.colorselectEventName
        with comboEventName
        with typings.webix.webix.ui.comboEventName
        with counterEventName
@@ -2739,6 +2483,8 @@ object webixStrings {
        with typings.webix.webix.ui.daterangepickerEventName
        with dbllistEventName
        with typings.webix.webix.ui.dbllistEventName
+       with filterEventName
+       with typings.webix.webix.ui.filterEventName
        with formEventName
        with typings.webix.webix.ui.formEventName
        with gridlayoutEventName
@@ -2755,6 +2501,8 @@ object webixStrings {
        with typings.webix.webix.ui.multiselectEventName
        with multitextEventName
        with typings.webix.webix.ui.multitextEventName
+       with queryEventName
+       with typings.webix.webix.ui.queryEventName
        with radioEventName
        with typings.webix.webix.ui.radioEventName
        with rangesliderEventName
@@ -2763,6 +2511,8 @@ object webixStrings {
        with typings.webix.webix.ui.richselectEventName
        with richtextEventName
        with typings.webix.webix.ui.richtextEventName
+       with schedulerEventName
+       with typings.webix.webix.ui.schedulerEventName
        with searchEventName
        with typings.webix.webix.ui.searchEventName
        with segmentedEventName
@@ -2781,6 +2531,10 @@ object webixStrings {
        with typings.webix.webix.ui.textEventName
        with textareaEventName
        with typings.webix.webix.ui.textareaEventName
+       with texthighlightEventName
+       with typings.webix.webix.ui.texthighlightEventName
+       with timeboardEventName
+       with typings.webix.webix.ui.timeboardEventName
        with toggleEventName
        with typings.webix.webix.ui.toggleEventName
        with toolbarEventName
@@ -2812,6 +2566,13 @@ object webixStrings {
   inline def onCollectValues: onCollectValues = "onCollectValues".asInstanceOf[onCollectValues]
   
   @js.native
+  sealed trait onColorSelect
+    extends StObject
+       with colorselectEventName
+       with typings.webix.webix.ui.colorselectEventName
+  inline def onColorSelect: onColorSelect = "onColorSelect".asInstanceOf[onColorSelect]
+  
+  @js.native
   sealed trait onColumnGroupCollapse
     extends StObject
        with datatableEventName
@@ -2841,18 +2602,9 @@ object webixStrings {
   @js.native
   sealed trait onComponentInit
     extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
        with spreadsheetEventName
        with typings.webix.webix.ui.spreadsheetEventName
   inline def onComponentInit: onComponentInit = "onComponentInit".asInstanceOf[onComponentInit]
-  
-  @js.native
-  sealed trait onCopyError
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onCopyError: onCopyError = "onCopyError".asInstanceOf[onCopyError]
   
   @js.native
   sealed trait onDataParse
@@ -2880,8 +2632,6 @@ object webixStrings {
        with typings.webix.webix.ui.dataviewEventName
        with excelviewerEventName
        with typings.webix.webix.ui.excelviewerEventName
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
        with geochartEventName
        with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -2894,8 +2644,6 @@ object webixStrings {
        with typings.webix.webix.ui.listEventName
        with menuEventName
        with typings.webix.webix.ui.menuEventName
-       with organogramEventName
-       with typings.webix.webix.ui.organogramEventName
        with pivotEventName
        with typings.webix.webix.ui.pivotEventName
        with protoEventName
@@ -2944,8 +2692,6 @@ object webixStrings {
        with typings.webix.webix.ui.dataviewEventName
        with excelviewerEventName
        with typings.webix.webix.ui.excelviewerEventName
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
        with geochartEventName
        with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -2958,8 +2704,6 @@ object webixStrings {
        with typings.webix.webix.ui.listEventName
        with menuEventName
        with typings.webix.webix.ui.menuEventName
-       with organogramEventName
-       with typings.webix.webix.ui.organogramEventName
        with pivotEventName
        with typings.webix.webix.ui.pivotEventName
        with protoEventName
@@ -2992,13 +2736,6 @@ object webixStrings {
   inline def onDateClear: onDateClear = "onDateClear".asInstanceOf[onDateClear]
   
   @js.native
-  sealed trait onDateSelect
-    extends StObject
-       with calendarEventName
-       with typings.webix.webix.ui.calendarEventName
-  inline def onDateSelect: onDateSelect = "onDateSelect".asInstanceOf[onDateSelect]
-  
-  @js.native
   sealed trait onDestruct
     extends StObject
        with DataCollectionEventName
@@ -3029,6 +2766,8 @@ object webixStrings {
        with typings.webix.webix.ui.carouselEventName
        with chartEventName
        with typings.webix.webix.ui.chartEventName
+       with chatEventName
+       with typings.webix.webix.ui.chatEventName
        with checkboxEventName
        with typings.webix.webix.ui.checkboxEventName
        with checksuggestEventName
@@ -3037,6 +2776,8 @@ object webixStrings {
        with typings.webix.webix.ui.colorboardEventName
        with colorpickerEventName
        with typings.webix.webix.ui.colorpickerEventName
+       with colorselectEventName
+       with typings.webix.webix.ui.colorselectEventName
        with comboEventName
        with typings.webix.webix.ui.comboEventName
        with commentsEventName
@@ -3067,18 +2808,24 @@ object webixStrings {
        with typings.webix.webix.ui.daterangesuggestEventName
        with dbllistEventName
        with typings.webix.webix.ui.dbllistEventName
+       with docmanagerEventName
+       with typings.webix.webix.ui.docmanagerEventName
        with excelviewerEventName
        with typings.webix.webix.ui.excelviewerEventName
        with fieldsetEventName
        with typings.webix.webix.ui.fieldsetEventName
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
+       with filterEventName
+       with typings.webix.webix.ui.filterEventName
        with formEventName
        with typings.webix.webix.ui.formEventName
        with forminputEventName
        with typings.webix.webix.ui.forminputEventName
        with gageEventName
        with typings.webix.webix.ui.gageEventName
+       with ganttEventName
+       with typings.webix.webix.ui.ganttEventName
        with geochartEventName
        with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -3099,6 +2846,8 @@ object webixStrings {
        with typings.webix.webix.ui.iconEventName
        with iframeEventName
        with typings.webix.webix.ui.iframeEventName
+       with jetappEventName
+       with typings.webix.webix.ui.jetappEventName
        with kanbanEventName
        with typings.webix.webix.ui.kanbanEventName
        with labelEventName
@@ -3107,6 +2856,8 @@ object webixStrings {
        with typings.webix.webix.ui.layoutEventName
        with listEventName
        with typings.webix.webix.ui.listEventName
+       with mentionsuggestEventName
+       with typings.webix.webix.ui.mentionsuggestEventName
        with menuEventName
        with typings.webix.webix.ui.menuEventName
        with multicomboEventName
@@ -3119,8 +2870,6 @@ object webixStrings {
        with typings.webix.webix.ui.multitextEventName
        with multiviewEventName
        with typings.webix.webix.ui.multiviewEventName
-       with organogramEventName
-       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
        with typings.webix.webix.ui.pagerEventName
        with panelEventName
@@ -3139,18 +2888,22 @@ object webixStrings {
        with typings.webix.webix.ui.protoEventName
        with proxyEventName
        with typings.webix.webix.ui.proxyEventName
-       with querybuilderEventName
-       with typings.webix.webix.ui.querybuilderEventName
+       with queryEventName
+       with typings.webix.webix.ui.queryEventName
        with radioEventName
        with typings.webix.webix.ui.radioEventName
        with rangechartEventName
        with typings.webix.webix.ui.rangechartEventName
        with rangesliderEventName
        with typings.webix.webix.ui.rangesliderEventName
+       with reportsEventName
+       with typings.webix.webix.ui.reportsEventName
        with richselectEventName
        with typings.webix.webix.ui.richselectEventName
        with richtextEventName
        with typings.webix.webix.ui.richtextEventName
+       with schedulerEventName
+       with typings.webix.webix.ui.schedulerEventName
        with scrollviewEventName
        with typings.webix.webix.ui.scrollviewEventName
        with searchEventName
@@ -3185,6 +2938,10 @@ object webixStrings {
        with typings.webix.webix.ui.textEventName
        with textareaEventName
        with typings.webix.webix.ui.textareaEventName
+       with texthighlightEventName
+       with typings.webix.webix.ui.texthighlightEventName
+       with timeboardEventName
+       with typings.webix.webix.ui.timeboardEventName
        with timelineEventName
        with typings.webix.webix.ui.timelineEventName
        with toggleEventName
@@ -3203,6 +2960,8 @@ object webixStrings {
        with typings.webix.webix.ui.unitlistEventName
        with uploaderEventName
        with typings.webix.webix.ui.uploaderEventName
+       with usermanagerEventName
+       with typings.webix.webix.ui.usermanagerEventName
        with videoEventName
        with typings.webix.webix.ui.videoEventName
        with viewEventName
@@ -3250,13 +3009,6 @@ object webixStrings {
   inline def onDragOut: onDragOut = "onDragOut".asInstanceOf[onDragOut]
   
   @js.native
-  sealed trait onDynLoadError
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onDynLoadError: onDynLoadError = "onDynLoadError".asInstanceOf[onDynLoadError]
-  
-  @js.native
   sealed trait onEditorChange
     extends StObject
        with datatableEventName
@@ -3293,6 +3045,8 @@ object webixStrings {
        with typings.webix.webix.ui.carouselEventName
        with chartEventName
        with typings.webix.webix.ui.chartEventName
+       with chatEventName
+       with typings.webix.webix.ui.chatEventName
        with checkboxEventName
        with typings.webix.webix.ui.checkboxEventName
        with checksuggestEventName
@@ -3301,6 +3055,8 @@ object webixStrings {
        with typings.webix.webix.ui.colorboardEventName
        with colorpickerEventName
        with typings.webix.webix.ui.colorpickerEventName
+       with colorselectEventName
+       with typings.webix.webix.ui.colorselectEventName
        with comboEventName
        with typings.webix.webix.ui.comboEventName
        with contextEventName
@@ -3321,14 +3077,20 @@ object webixStrings {
        with typings.webix.webix.ui.daterangepickerEventName
        with daterangesuggestEventName
        with typings.webix.webix.ui.daterangesuggestEventName
+       with docmanagerEventName
+       with typings.webix.webix.ui.docmanagerEventName
        with excelviewerEventName
        with typings.webix.webix.ui.excelviewerEventName
        with fieldsetEventName
        with typings.webix.webix.ui.fieldsetEventName
+       with filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
        with forminputEventName
        with typings.webix.webix.ui.forminputEventName
        with gageEventName
        with typings.webix.webix.ui.gageEventName
+       with ganttEventName
+       with typings.webix.webix.ui.ganttEventName
        with geochartEventName
        with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -3345,10 +3107,14 @@ object webixStrings {
        with typings.webix.webix.ui.iconEventName
        with iframeEventName
        with typings.webix.webix.ui.iframeEventName
+       with jetappEventName
+       with typings.webix.webix.ui.jetappEventName
        with labelEventName
        with typings.webix.webix.ui.labelEventName
        with listEventName
        with typings.webix.webix.ui.listEventName
+       with mentionsuggestEventName
+       with typings.webix.webix.ui.mentionsuggestEventName
        with menuEventName
        with typings.webix.webix.ui.menuEventName
        with multicomboEventName
@@ -3359,8 +3125,6 @@ object webixStrings {
        with typings.webix.webix.ui.multisuggestEventName
        with multitextEventName
        with typings.webix.webix.ui.multitextEventName
-       with organogramEventName
-       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
        with typings.webix.webix.ui.pagerEventName
        with pdfviewerEventName
@@ -3373,14 +3137,20 @@ object webixStrings {
        with typings.webix.webix.ui.protoEventName
        with proxyEventName
        with typings.webix.webix.ui.proxyEventName
+       with queryEventName
+       with typings.webix.webix.ui.queryEventName
        with radioEventName
        with typings.webix.webix.ui.radioEventName
        with rangechartEventName
        with typings.webix.webix.ui.rangechartEventName
        with rangesliderEventName
        with typings.webix.webix.ui.rangesliderEventName
+       with reportsEventName
+       with typings.webix.webix.ui.reportsEventName
        with richselectEventName
        with typings.webix.webix.ui.richselectEventName
+       with schedulerEventName
+       with typings.webix.webix.ui.schedulerEventName
        with scrollviewEventName
        with typings.webix.webix.ui.scrollviewEventName
        with searchEventName
@@ -3411,6 +3181,8 @@ object webixStrings {
        with typings.webix.webix.ui.textEventName
        with textareaEventName
        with typings.webix.webix.ui.textareaEventName
+       with texthighlightEventName
+       with typings.webix.webix.ui.texthighlightEventName
        with toggleEventName
        with typings.webix.webix.ui.toggleEventName
        with tooltipEventName
@@ -3425,6 +3197,8 @@ object webixStrings {
        with typings.webix.webix.ui.unitlistEventName
        with uploaderEventName
        with typings.webix.webix.ui.uploaderEventName
+       with usermanagerEventName
+       with typings.webix.webix.ui.usermanagerEventName
        with videoEventName
        with typings.webix.webix.ui.videoEventName
        with viewEventName
@@ -3432,13 +3206,6 @@ object webixStrings {
        with windowEventName
        with typings.webix.webix.ui.windowEventName
   inline def onEnter: onEnter = "onEnter".asInstanceOf[onEnter]
-  
-  @js.native
-  sealed trait onErrorResponse
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onErrorResponse: onErrorResponse = "onErrorResponse".asInstanceOf[onErrorResponse]
   
   @js.native
   sealed trait onFileUpload
@@ -3487,6 +3254,8 @@ object webixStrings {
        with typings.webix.webix.ui.carouselEventName
        with chartEventName
        with typings.webix.webix.ui.chartEventName
+       with chatEventName
+       with typings.webix.webix.ui.chatEventName
        with checkboxEventName
        with typings.webix.webix.ui.checkboxEventName
        with checksuggestEventName
@@ -3495,6 +3264,8 @@ object webixStrings {
        with typings.webix.webix.ui.colorboardEventName
        with colorpickerEventName
        with typings.webix.webix.ui.colorpickerEventName
+       with colorselectEventName
+       with typings.webix.webix.ui.colorselectEventName
        with comboEventName
        with typings.webix.webix.ui.comboEventName
        with contextEventName
@@ -3515,14 +3286,20 @@ object webixStrings {
        with typings.webix.webix.ui.daterangepickerEventName
        with daterangesuggestEventName
        with typings.webix.webix.ui.daterangesuggestEventName
+       with docmanagerEventName
+       with typings.webix.webix.ui.docmanagerEventName
        with excelviewerEventName
        with typings.webix.webix.ui.excelviewerEventName
        with fieldsetEventName
        with typings.webix.webix.ui.fieldsetEventName
+       with filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
        with forminputEventName
        with typings.webix.webix.ui.forminputEventName
        with gageEventName
        with typings.webix.webix.ui.gageEventName
+       with ganttEventName
+       with typings.webix.webix.ui.ganttEventName
        with geochartEventName
        with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -3539,10 +3316,14 @@ object webixStrings {
        with typings.webix.webix.ui.iconEventName
        with iframeEventName
        with typings.webix.webix.ui.iframeEventName
+       with jetappEventName
+       with typings.webix.webix.ui.jetappEventName
        with labelEventName
        with typings.webix.webix.ui.labelEventName
        with listEventName
        with typings.webix.webix.ui.listEventName
+       with mentionsuggestEventName
+       with typings.webix.webix.ui.mentionsuggestEventName
        with menuEventName
        with typings.webix.webix.ui.menuEventName
        with multicomboEventName
@@ -3553,8 +3334,6 @@ object webixStrings {
        with typings.webix.webix.ui.multisuggestEventName
        with multitextEventName
        with typings.webix.webix.ui.multitextEventName
-       with organogramEventName
-       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
        with typings.webix.webix.ui.pagerEventName
        with pdfviewerEventName
@@ -3567,14 +3346,20 @@ object webixStrings {
        with typings.webix.webix.ui.protoEventName
        with proxyEventName
        with typings.webix.webix.ui.proxyEventName
+       with queryEventName
+       with typings.webix.webix.ui.queryEventName
        with radioEventName
        with typings.webix.webix.ui.radioEventName
        with rangechartEventName
        with typings.webix.webix.ui.rangechartEventName
        with rangesliderEventName
        with typings.webix.webix.ui.rangesliderEventName
+       with reportsEventName
+       with typings.webix.webix.ui.reportsEventName
        with richselectEventName
        with typings.webix.webix.ui.richselectEventName
+       with schedulerEventName
+       with typings.webix.webix.ui.schedulerEventName
        with scrollviewEventName
        with typings.webix.webix.ui.scrollviewEventName
        with searchEventName
@@ -3605,6 +3390,8 @@ object webixStrings {
        with typings.webix.webix.ui.textEventName
        with textareaEventName
        with typings.webix.webix.ui.textareaEventName
+       with texthighlightEventName
+       with typings.webix.webix.ui.texthighlightEventName
        with toggleEventName
        with typings.webix.webix.ui.toggleEventName
        with tooltipEventName
@@ -3619,6 +3406,8 @@ object webixStrings {
        with typings.webix.webix.ui.unitlistEventName
        with uploaderEventName
        with typings.webix.webix.ui.uploaderEventName
+       with usermanagerEventName
+       with typings.webix.webix.ui.usermanagerEventName
        with videoEventName
        with typings.webix.webix.ui.videoEventName
        with viewEventName
@@ -3626,13 +3415,6 @@ object webixStrings {
        with windowEventName
        with typings.webix.webix.ui.windowEventName
   inline def onFocus: onFocus = "onFocus".asInstanceOf[onFocus]
-  
-  @js.native
-  sealed trait onFolderSelect
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onFolderSelect: onFolderSelect = "onFolderSelect".asInstanceOf[onFolderSelect]
   
   @js.native
   sealed trait onHeaderClick
@@ -3674,6 +3456,8 @@ object webixStrings {
        with typings.webix.webix.ui.daterangesuggestEventName
        with gridsuggestEventName
        with typings.webix.webix.ui.gridsuggestEventName
+       with mentionsuggestEventName
+       with typings.webix.webix.ui.mentionsuggestEventName
        with multisuggestEventName
        with typings.webix.webix.ui.multisuggestEventName
        with popupEventName
@@ -3689,24 +3473,31 @@ object webixStrings {
   inline def onHide: onHide = "onHide".asInstanceOf[onHide]
   
   @js.native
-  sealed trait onHideSearchResults
+  sealed trait onInit
     extends StObject
+       with chatEventName
+       with typings.webix.webix.ui.chatEventName
+       with docmanagerEventName
+       with typings.webix.webix.ui.docmanagerEventName
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
-  inline def onHideSearchResults: onHideSearchResults = "onHideSearchResults".asInstanceOf[onHideSearchResults]
-  
-  @js.native
-  sealed trait onHistoryChange
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onHistoryChange: onHistoryChange = "onHistoryChange".asInstanceOf[onHistoryChange]
+       with ganttEventName
+       with typings.webix.webix.ui.ganttEventName
+       with jetappEventName
+       with typings.webix.webix.ui.jetappEventName
+       with queryEventName
+       with typings.webix.webix.ui.queryEventName
+       with reportsEventName
+       with typings.webix.webix.ui.reportsEventName
+       with schedulerEventName
+       with typings.webix.webix.ui.schedulerEventName
+       with usermanagerEventName
+       with typings.webix.webix.ui.usermanagerEventName
+  inline def onInit: onInit = "onInit".asInstanceOf[onInit]
   
   @js.native
   sealed trait onItemCheck
     extends StObject
-       with organogramEventName
-       with typings.webix.webix.ui.organogramEventName
        with sidebarEventName
        with typings.webix.webix.ui.sidebarEventName
        with treeEventName
@@ -3766,8 +3557,6 @@ object webixStrings {
        with typings.webix.webix.ui.multiselectEventName
        with multitextEventName
        with typings.webix.webix.ui.multitextEventName
-       with organogramEventName
-       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
        with typings.webix.webix.ui.pagerEventName
        with pivotEventName
@@ -3802,6 +3591,8 @@ object webixStrings {
        with typings.webix.webix.ui.textEventName
        with textareaEventName
        with typings.webix.webix.ui.textareaEventName
+       with texthighlightEventName
+       with typings.webix.webix.ui.texthighlightEventName
        with timelineEventName
        with typings.webix.webix.ui.timelineEventName
        with toggleEventName
@@ -3841,8 +3632,6 @@ object webixStrings {
        with typings.webix.webix.ui.listEventName
        with menuEventName
        with typings.webix.webix.ui.menuEventName
-       with organogramEventName
-       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
        with typings.webix.webix.ui.pagerEventName
        with propertyEventName
@@ -3866,13 +3655,6 @@ object webixStrings {
   inline def onItemDblClick: onItemDblClick = "onItemDblClick".asInstanceOf[onItemDblClick]
   
   @js.native
-  sealed trait onItemRename
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onItemRename: onItemRename = "onItemRename".asInstanceOf[onItemRename]
-  
-  @js.native
   sealed trait onItemRender
     extends StObject
        with contextmenuEventName
@@ -3885,8 +3667,6 @@ object webixStrings {
        with typings.webix.webix.ui.listEventName
        with menuEventName
        with typings.webix.webix.ui.menuEventName
-       with organogramEventName
-       with typings.webix.webix.ui.organogramEventName
        with protoEventName
        with typings.webix.webix.ui.protoEventName
        with sidebarEventName
@@ -3902,13 +3682,6 @@ object webixStrings {
        with unitlistEventName
        with typings.webix.webix.ui.unitlistEventName
   inline def onItemRender: onItemRender = "onItemRender".asInstanceOf[onItemRender]
-  
-  @js.native
-  sealed trait onItemSelect
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onItemSelect: onItemSelect = "onItemSelect".asInstanceOf[onItemSelect]
   
   @js.native
   sealed trait onKeyPress
@@ -3929,6 +3702,8 @@ object webixStrings {
        with typings.webix.webix.ui.carouselEventName
        with chartEventName
        with typings.webix.webix.ui.chartEventName
+       with chatEventName
+       with typings.webix.webix.ui.chatEventName
        with checkboxEventName
        with typings.webix.webix.ui.checkboxEventName
        with checksuggestEventName
@@ -3937,6 +3712,8 @@ object webixStrings {
        with typings.webix.webix.ui.colorboardEventName
        with colorpickerEventName
        with typings.webix.webix.ui.colorpickerEventName
+       with colorselectEventName
+       with typings.webix.webix.ui.colorselectEventName
        with comboEventName
        with typings.webix.webix.ui.comboEventName
        with contextEventName
@@ -3965,6 +3742,8 @@ object webixStrings {
        with typings.webix.webix.ui.forminputEventName
        with gageEventName
        with typings.webix.webix.ui.gageEventName
+       with ganttEventName
+       with typings.webix.webix.ui.ganttEventName
        with geochartEventName
        with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -3985,6 +3764,8 @@ object webixStrings {
        with typings.webix.webix.ui.labelEventName
        with listEventName
        with typings.webix.webix.ui.listEventName
+       with mentionsuggestEventName
+       with typings.webix.webix.ui.mentionsuggestEventName
        with menuEventName
        with typings.webix.webix.ui.menuEventName
        with multicomboEventName
@@ -3995,8 +3776,6 @@ object webixStrings {
        with typings.webix.webix.ui.multisuggestEventName
        with multitextEventName
        with typings.webix.webix.ui.multitextEventName
-       with organogramEventName
-       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
        with typings.webix.webix.ui.pagerEventName
        with pdfviewerEventName
@@ -4015,8 +3794,12 @@ object webixStrings {
        with typings.webix.webix.ui.rangechartEventName
        with rangesliderEventName
        with typings.webix.webix.ui.rangesliderEventName
+       with reportsEventName
+       with typings.webix.webix.ui.reportsEventName
        with richselectEventName
        with typings.webix.webix.ui.richselectEventName
+       with schedulerEventName
+       with typings.webix.webix.ui.schedulerEventName
        with scrollviewEventName
        with typings.webix.webix.ui.scrollviewEventName
        with searchEventName
@@ -4047,6 +3830,8 @@ object webixStrings {
        with typings.webix.webix.ui.textEventName
        with textareaEventName
        with typings.webix.webix.ui.textareaEventName
+       with texthighlightEventName
+       with typings.webix.webix.ui.texthighlightEventName
        with toggleEventName
        with typings.webix.webix.ui.toggleEventName
        with tooltipEventName
@@ -4068,13 +3853,6 @@ object webixStrings {
        with windowEventName
        with typings.webix.webix.ui.windowEventName
   inline def onKeyPress: onKeyPress = "onKeyPress".asInstanceOf[onKeyPress]
-  
-  @js.native
-  sealed trait onKeySelect
-    extends StObject
-       with querybuilderEventName
-       with typings.webix.webix.ui.querybuilderEventName
-  inline def onKeySelect: onKeySelect = "onKeySelect".asInstanceOf[onKeySelect]
   
   @js.native
   sealed trait onLegendClick
@@ -4200,8 +3978,8 @@ object webixStrings {
        with typings.webix.webix.ui.dbllistEventName
        with excelviewerEventName
        with typings.webix.webix.ui.excelviewerEventName
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
+       with filterEventName
+       with typings.webix.webix.ui.filterEventName
        with formEventName
        with typings.webix.webix.ui.formEventName
        with geochartEventName
@@ -4218,8 +3996,6 @@ object webixStrings {
        with typings.webix.webix.ui.listEventName
        with menuEventName
        with typings.webix.webix.ui.menuEventName
-       with organogramEventName
-       with typings.webix.webix.ui.organogramEventName
        with pdfviewerEventName
        with typings.webix.webix.ui.pdfviewerEventName
        with pivotEventName
@@ -4271,6 +4047,8 @@ object webixStrings {
        with typings.webix.webix.ui.carouselEventName
        with chartEventName
        with typings.webix.webix.ui.chartEventName
+       with chatEventName
+       with typings.webix.webix.ui.chatEventName
        with checkboxEventName
        with typings.webix.webix.ui.checkboxEventName
        with checksuggestEventName
@@ -4279,6 +4057,8 @@ object webixStrings {
        with typings.webix.webix.ui.colorboardEventName
        with colorpickerEventName
        with typings.webix.webix.ui.colorpickerEventName
+       with colorselectEventName
+       with typings.webix.webix.ui.colorselectEventName
        with comboEventName
        with typings.webix.webix.ui.comboEventName
        with contextEventName
@@ -4299,14 +4079,20 @@ object webixStrings {
        with typings.webix.webix.ui.daterangepickerEventName
        with daterangesuggestEventName
        with typings.webix.webix.ui.daterangesuggestEventName
+       with docmanagerEventName
+       with typings.webix.webix.ui.docmanagerEventName
        with excelviewerEventName
        with typings.webix.webix.ui.excelviewerEventName
        with fieldsetEventName
        with typings.webix.webix.ui.fieldsetEventName
+       with filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
        with forminputEventName
        with typings.webix.webix.ui.forminputEventName
        with gageEventName
        with typings.webix.webix.ui.gageEventName
+       with ganttEventName
+       with typings.webix.webix.ui.ganttEventName
        with geochartEventName
        with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -4323,10 +4109,14 @@ object webixStrings {
        with typings.webix.webix.ui.iconEventName
        with iframeEventName
        with typings.webix.webix.ui.iframeEventName
+       with jetappEventName
+       with typings.webix.webix.ui.jetappEventName
        with labelEventName
        with typings.webix.webix.ui.labelEventName
        with listEventName
        with typings.webix.webix.ui.listEventName
+       with mentionsuggestEventName
+       with typings.webix.webix.ui.mentionsuggestEventName
        with menuEventName
        with typings.webix.webix.ui.menuEventName
        with multicomboEventName
@@ -4337,8 +4127,6 @@ object webixStrings {
        with typings.webix.webix.ui.multisuggestEventName
        with multitextEventName
        with typings.webix.webix.ui.multitextEventName
-       with organogramEventName
-       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
        with typings.webix.webix.ui.pagerEventName
        with pdfviewerEventName
@@ -4351,14 +4139,20 @@ object webixStrings {
        with typings.webix.webix.ui.protoEventName
        with proxyEventName
        with typings.webix.webix.ui.proxyEventName
+       with queryEventName
+       with typings.webix.webix.ui.queryEventName
        with radioEventName
        with typings.webix.webix.ui.radioEventName
        with rangechartEventName
        with typings.webix.webix.ui.rangechartEventName
        with rangesliderEventName
        with typings.webix.webix.ui.rangesliderEventName
+       with reportsEventName
+       with typings.webix.webix.ui.reportsEventName
        with richselectEventName
        with typings.webix.webix.ui.richselectEventName
+       with schedulerEventName
+       with typings.webix.webix.ui.schedulerEventName
        with scrollviewEventName
        with typings.webix.webix.ui.scrollviewEventName
        with searchEventName
@@ -4389,6 +4183,8 @@ object webixStrings {
        with typings.webix.webix.ui.textEventName
        with textareaEventName
        with typings.webix.webix.ui.textareaEventName
+       with texthighlightEventName
+       with typings.webix.webix.ui.texthighlightEventName
        with toggleEventName
        with typings.webix.webix.ui.toggleEventName
        with tooltipEventName
@@ -4403,6 +4199,8 @@ object webixStrings {
        with typings.webix.webix.ui.unitlistEventName
        with uploaderEventName
        with typings.webix.webix.ui.uploaderEventName
+       with usermanagerEventName
+       with typings.webix.webix.ui.usermanagerEventName
        with videoEventName
        with typings.webix.webix.ui.videoEventName
        with viewEventName
@@ -4466,8 +4264,6 @@ object webixStrings {
        with typings.webix.webix.ui.listEventName
        with menuEventName
        with typings.webix.webix.ui.menuEventName
-       with organogramEventName
-       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
        with typings.webix.webix.ui.pagerEventName
        with propertyEventName
@@ -4513,8 +4309,6 @@ object webixStrings {
        with typings.webix.webix.ui.listEventName
        with menuEventName
        with typings.webix.webix.ui.menuEventName
-       with organogramEventName
-       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
        with typings.webix.webix.ui.pagerEventName
        with propertyEventName
@@ -4560,8 +4354,6 @@ object webixStrings {
        with typings.webix.webix.ui.listEventName
        with menuEventName
        with typings.webix.webix.ui.menuEventName
-       with organogramEventName
-       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
        with typings.webix.webix.ui.pagerEventName
        with propertyEventName
@@ -4583,13 +4375,6 @@ object webixStrings {
        with unitlistEventName
        with typings.webix.webix.ui.unitlistEventName
   inline def onMouseOut: onMouseOut = "onMouseOut".asInstanceOf[onMouseOut]
-  
-  @js.native
-  sealed trait onMoveError
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onMoveError: onMoveError = "onMoveError".asInstanceOf[onMoveError]
   
   @js.native
   sealed trait onNext
@@ -4666,20 +4451,6 @@ object webixStrings {
        with unitlistEventName
        with typings.webix.webix.ui.unitlistEventName
   inline def onPaste: onPaste = "onPaste".asInstanceOf[onPaste]
-  
-  @js.native
-  sealed trait onPathComplete
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onPathComplete: onPathComplete = "onPathComplete".asInstanceOf[onPathComplete]
-  
-  @js.native
-  sealed trait onPathLevel
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onPathLevel: onPathLevel = "onPathLevel".asInstanceOf[onPathLevel]
   
   @js.native
   sealed trait onPopup
@@ -4818,8 +4589,6 @@ object webixStrings {
        with typings.webix.webix.ui.listEventName
        with menuEventName
        with typings.webix.webix.ui.menuEventName
-       with organogramEventName
-       with typings.webix.webix.ui.organogramEventName
        with sidebarEventName
        with typings.webix.webix.ui.sidebarEventName
        with submenuEventName
@@ -4872,6 +4641,8 @@ object webixStrings {
        with typings.webix.webix.ui.daterangesuggestEventName
        with gridsuggestEventName
        with typings.webix.webix.ui.gridsuggestEventName
+       with mentionsuggestEventName
+       with typings.webix.webix.ui.mentionsuggestEventName
        with multisuggestEventName
        with typings.webix.webix.ui.multisuggestEventName
        with popupEventName
@@ -4885,13 +4656,6 @@ object webixStrings {
        with windowEventName
        with typings.webix.webix.ui.windowEventName
   inline def onShow: onShow = "onShow".asInstanceOf[onShow]
-  
-  @js.native
-  sealed trait onShowSearchResults
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onShowSearchResults: onShowSearchResults = "onShowSearchResults".asInstanceOf[onShowSearchResults]
   
   @js.native
   sealed trait onSkip
@@ -4990,13 +4754,6 @@ object webixStrings {
   inline def onSubmit: onSubmit = "onSubmit".asInstanceOf[onSubmit]
   
   @js.native
-  sealed trait onSuccessResponse
-    extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
-  inline def onSuccessResponse: onSuccessResponse = "onSuccessResponse".asInstanceOf[onSuccessResponse]
-  
-  @js.native
   sealed trait onSwipeX
     extends StObject
        with accordionitemEventName
@@ -5015,6 +4772,8 @@ object webixStrings {
        with typings.webix.webix.ui.carouselEventName
        with chartEventName
        with typings.webix.webix.ui.chartEventName
+       with chatEventName
+       with typings.webix.webix.ui.chatEventName
        with checkboxEventName
        with typings.webix.webix.ui.checkboxEventName
        with checksuggestEventName
@@ -5023,6 +4782,8 @@ object webixStrings {
        with typings.webix.webix.ui.colorboardEventName
        with colorpickerEventName
        with typings.webix.webix.ui.colorpickerEventName
+       with colorselectEventName
+       with typings.webix.webix.ui.colorselectEventName
        with comboEventName
        with typings.webix.webix.ui.comboEventName
        with contextEventName
@@ -5043,14 +4804,20 @@ object webixStrings {
        with typings.webix.webix.ui.daterangepickerEventName
        with daterangesuggestEventName
        with typings.webix.webix.ui.daterangesuggestEventName
+       with docmanagerEventName
+       with typings.webix.webix.ui.docmanagerEventName
        with excelviewerEventName
        with typings.webix.webix.ui.excelviewerEventName
        with fieldsetEventName
        with typings.webix.webix.ui.fieldsetEventName
+       with filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
        with forminputEventName
        with typings.webix.webix.ui.forminputEventName
        with gageEventName
        with typings.webix.webix.ui.gageEventName
+       with ganttEventName
+       with typings.webix.webix.ui.ganttEventName
        with geochartEventName
        with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -5067,10 +4834,14 @@ object webixStrings {
        with typings.webix.webix.ui.iconEventName
        with iframeEventName
        with typings.webix.webix.ui.iframeEventName
+       with jetappEventName
+       with typings.webix.webix.ui.jetappEventName
        with labelEventName
        with typings.webix.webix.ui.labelEventName
        with listEventName
        with typings.webix.webix.ui.listEventName
+       with mentionsuggestEventName
+       with typings.webix.webix.ui.mentionsuggestEventName
        with menuEventName
        with typings.webix.webix.ui.menuEventName
        with multicomboEventName
@@ -5081,8 +4852,6 @@ object webixStrings {
        with typings.webix.webix.ui.multisuggestEventName
        with multitextEventName
        with typings.webix.webix.ui.multitextEventName
-       with organogramEventName
-       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
        with typings.webix.webix.ui.pagerEventName
        with pdfviewerEventName
@@ -5095,14 +4864,20 @@ object webixStrings {
        with typings.webix.webix.ui.protoEventName
        with proxyEventName
        with typings.webix.webix.ui.proxyEventName
+       with queryEventName
+       with typings.webix.webix.ui.queryEventName
        with radioEventName
        with typings.webix.webix.ui.radioEventName
        with rangechartEventName
        with typings.webix.webix.ui.rangechartEventName
        with rangesliderEventName
        with typings.webix.webix.ui.rangesliderEventName
+       with reportsEventName
+       with typings.webix.webix.ui.reportsEventName
        with richselectEventName
        with typings.webix.webix.ui.richselectEventName
+       with schedulerEventName
+       with typings.webix.webix.ui.schedulerEventName
        with scrollviewEventName
        with typings.webix.webix.ui.scrollviewEventName
        with searchEventName
@@ -5133,6 +4908,8 @@ object webixStrings {
        with typings.webix.webix.ui.textEventName
        with textareaEventName
        with typings.webix.webix.ui.textareaEventName
+       with texthighlightEventName
+       with typings.webix.webix.ui.texthighlightEventName
        with toggleEventName
        with typings.webix.webix.ui.toggleEventName
        with tooltipEventName
@@ -5147,6 +4924,8 @@ object webixStrings {
        with typings.webix.webix.ui.unitlistEventName
        with uploaderEventName
        with typings.webix.webix.ui.uploaderEventName
+       with usermanagerEventName
+       with typings.webix.webix.ui.usermanagerEventName
        with videoEventName
        with typings.webix.webix.ui.videoEventName
        with viewEventName
@@ -5174,6 +4953,8 @@ object webixStrings {
        with typings.webix.webix.ui.carouselEventName
        with chartEventName
        with typings.webix.webix.ui.chartEventName
+       with chatEventName
+       with typings.webix.webix.ui.chatEventName
        with checkboxEventName
        with typings.webix.webix.ui.checkboxEventName
        with checksuggestEventName
@@ -5182,6 +4963,8 @@ object webixStrings {
        with typings.webix.webix.ui.colorboardEventName
        with colorpickerEventName
        with typings.webix.webix.ui.colorpickerEventName
+       with colorselectEventName
+       with typings.webix.webix.ui.colorselectEventName
        with comboEventName
        with typings.webix.webix.ui.comboEventName
        with contextEventName
@@ -5202,14 +4985,20 @@ object webixStrings {
        with typings.webix.webix.ui.daterangepickerEventName
        with daterangesuggestEventName
        with typings.webix.webix.ui.daterangesuggestEventName
+       with docmanagerEventName
+       with typings.webix.webix.ui.docmanagerEventName
        with excelviewerEventName
        with typings.webix.webix.ui.excelviewerEventName
        with fieldsetEventName
        with typings.webix.webix.ui.fieldsetEventName
+       with filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
        with forminputEventName
        with typings.webix.webix.ui.forminputEventName
        with gageEventName
        with typings.webix.webix.ui.gageEventName
+       with ganttEventName
+       with typings.webix.webix.ui.ganttEventName
        with geochartEventName
        with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -5226,10 +5015,14 @@ object webixStrings {
        with typings.webix.webix.ui.iconEventName
        with iframeEventName
        with typings.webix.webix.ui.iframeEventName
+       with jetappEventName
+       with typings.webix.webix.ui.jetappEventName
        with labelEventName
        with typings.webix.webix.ui.labelEventName
        with listEventName
        with typings.webix.webix.ui.listEventName
+       with mentionsuggestEventName
+       with typings.webix.webix.ui.mentionsuggestEventName
        with menuEventName
        with typings.webix.webix.ui.menuEventName
        with multicomboEventName
@@ -5240,8 +5033,6 @@ object webixStrings {
        with typings.webix.webix.ui.multisuggestEventName
        with multitextEventName
        with typings.webix.webix.ui.multitextEventName
-       with organogramEventName
-       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
        with typings.webix.webix.ui.pagerEventName
        with pdfviewerEventName
@@ -5254,14 +5045,20 @@ object webixStrings {
        with typings.webix.webix.ui.protoEventName
        with proxyEventName
        with typings.webix.webix.ui.proxyEventName
+       with queryEventName
+       with typings.webix.webix.ui.queryEventName
        with radioEventName
        with typings.webix.webix.ui.radioEventName
        with rangechartEventName
        with typings.webix.webix.ui.rangechartEventName
        with rangesliderEventName
        with typings.webix.webix.ui.rangesliderEventName
+       with reportsEventName
+       with typings.webix.webix.ui.reportsEventName
        with richselectEventName
        with typings.webix.webix.ui.richselectEventName
+       with schedulerEventName
+       with typings.webix.webix.ui.schedulerEventName
        with scrollviewEventName
        with typings.webix.webix.ui.scrollviewEventName
        with searchEventName
@@ -5292,6 +5089,8 @@ object webixStrings {
        with typings.webix.webix.ui.textEventName
        with textareaEventName
        with typings.webix.webix.ui.textareaEventName
+       with texthighlightEventName
+       with typings.webix.webix.ui.texthighlightEventName
        with toggleEventName
        with typings.webix.webix.ui.toggleEventName
        with tooltipEventName
@@ -5306,6 +5105,8 @@ object webixStrings {
        with typings.webix.webix.ui.unitlistEventName
        with uploaderEventName
        with typings.webix.webix.ui.uploaderEventName
+       with usermanagerEventName
+       with typings.webix.webix.ui.usermanagerEventName
        with videoEventName
        with typings.webix.webix.ui.videoEventName
        with viewEventName
@@ -5319,6 +5120,10 @@ object webixStrings {
     extends StObject
        with chartEventName
        with typings.webix.webix.ui.chartEventName
+       with chatEventName
+       with typings.webix.webix.ui.chatEventName
+       with colorselectEventName
+       with typings.webix.webix.ui.colorselectEventName
        with contextmenuEventName
        with typings.webix.webix.ui.contextmenuEventName
        with datatableEventName
@@ -5327,6 +5132,8 @@ object webixStrings {
        with typings.webix.webix.ui.dataviewEventName
        with excelviewerEventName
        with typings.webix.webix.ui.excelviewerEventName
+       with ganttEventName
+       with typings.webix.webix.ui.ganttEventName
        with geochartEventName
        with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -5335,20 +5142,26 @@ object webixStrings {
        with typings.webix.webix.ui.grouplistEventName
        with listEventName
        with typings.webix.webix.ui.listEventName
+       with mentionsuggestEventName
+       with typings.webix.webix.ui.mentionsuggestEventName
        with menuEventName
        with typings.webix.webix.ui.menuEventName
-       with organogramEventName
-       with typings.webix.webix.ui.organogramEventName
        with protoEventName
        with typings.webix.webix.ui.protoEventName
        with rangechartEventName
        with typings.webix.webix.ui.rangechartEventName
+       with reportsEventName
+       with typings.webix.webix.ui.reportsEventName
+       with schedulerEventName
+       with typings.webix.webix.ui.schedulerEventName
        with sidebarEventName
        with typings.webix.webix.ui.sidebarEventName
        with sidemenuEventName
        with typings.webix.webix.ui.sidemenuEventName
        with submenuEventName
        with typings.webix.webix.ui.submenuEventName
+       with texthighlightEventName
+       with typings.webix.webix.ui.texthighlightEventName
        with treeEventName
        with typings.webix.webix.ui.treeEventName
        with treemapEventName
@@ -5360,6 +5173,13 @@ object webixStrings {
        with viewEventName
        with typings.webix.webix.ui.viewEventName
   inline def onTabFocus: onTabFocus = "onTabFocus".asInstanceOf[onTabFocus]
+  
+  @js.native
+  sealed trait onTimeSelect
+    extends StObject
+       with timeboardEventName
+       with typings.webix.webix.ui.timeboardEventName
+  inline def onTimeSelect: onTimeSelect = "onTimeSelect".asInstanceOf[onTimeSelect]
   
   @js.native
   sealed trait onTimedKeyPress
@@ -5380,6 +5200,8 @@ object webixStrings {
        with typings.webix.webix.ui.carouselEventName
        with chartEventName
        with typings.webix.webix.ui.chartEventName
+       with chatEventName
+       with typings.webix.webix.ui.chatEventName
        with checkboxEventName
        with typings.webix.webix.ui.checkboxEventName
        with checksuggestEventName
@@ -5388,6 +5210,8 @@ object webixStrings {
        with typings.webix.webix.ui.colorboardEventName
        with colorpickerEventName
        with typings.webix.webix.ui.colorpickerEventName
+       with colorselectEventName
+       with typings.webix.webix.ui.colorselectEventName
        with comboEventName
        with typings.webix.webix.ui.comboEventName
        with contextEventName
@@ -5416,6 +5240,8 @@ object webixStrings {
        with typings.webix.webix.ui.forminputEventName
        with gageEventName
        with typings.webix.webix.ui.gageEventName
+       with ganttEventName
+       with typings.webix.webix.ui.ganttEventName
        with geochartEventName
        with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -5436,6 +5262,8 @@ object webixStrings {
        with typings.webix.webix.ui.labelEventName
        with listEventName
        with typings.webix.webix.ui.listEventName
+       with mentionsuggestEventName
+       with typings.webix.webix.ui.mentionsuggestEventName
        with menuEventName
        with typings.webix.webix.ui.menuEventName
        with multicomboEventName
@@ -5446,8 +5274,6 @@ object webixStrings {
        with typings.webix.webix.ui.multisuggestEventName
        with multitextEventName
        with typings.webix.webix.ui.multitextEventName
-       with organogramEventName
-       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
        with typings.webix.webix.ui.pagerEventName
        with pdfviewerEventName
@@ -5466,8 +5292,12 @@ object webixStrings {
        with typings.webix.webix.ui.rangechartEventName
        with rangesliderEventName
        with typings.webix.webix.ui.rangesliderEventName
+       with reportsEventName
+       with typings.webix.webix.ui.reportsEventName
        with richselectEventName
        with typings.webix.webix.ui.richselectEventName
+       with schedulerEventName
+       with typings.webix.webix.ui.schedulerEventName
        with scrollviewEventName
        with typings.webix.webix.ui.scrollviewEventName
        with searchEventName
@@ -5498,6 +5328,8 @@ object webixStrings {
        with typings.webix.webix.ui.textEventName
        with textareaEventName
        with typings.webix.webix.ui.textareaEventName
+       with texthighlightEventName
+       with typings.webix.webix.ui.texthighlightEventName
        with toggleEventName
        with typings.webix.webix.ui.toggleEventName
        with tooltipEventName
@@ -5548,6 +5380,8 @@ object webixStrings {
        with typings.webix.webix.ui.carouselEventName
        with chartEventName
        with typings.webix.webix.ui.chartEventName
+       with chatEventName
+       with typings.webix.webix.ui.chatEventName
        with checkboxEventName
        with typings.webix.webix.ui.checkboxEventName
        with checksuggestEventName
@@ -5556,6 +5390,8 @@ object webixStrings {
        with typings.webix.webix.ui.colorboardEventName
        with colorpickerEventName
        with typings.webix.webix.ui.colorpickerEventName
+       with colorselectEventName
+       with typings.webix.webix.ui.colorselectEventName
        with comboEventName
        with typings.webix.webix.ui.comboEventName
        with contextEventName
@@ -5576,14 +5412,20 @@ object webixStrings {
        with typings.webix.webix.ui.daterangepickerEventName
        with daterangesuggestEventName
        with typings.webix.webix.ui.daterangesuggestEventName
+       with docmanagerEventName
+       with typings.webix.webix.ui.docmanagerEventName
        with excelviewerEventName
        with typings.webix.webix.ui.excelviewerEventName
        with fieldsetEventName
        with typings.webix.webix.ui.fieldsetEventName
+       with filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
        with forminputEventName
        with typings.webix.webix.ui.forminputEventName
        with gageEventName
        with typings.webix.webix.ui.gageEventName
+       with ganttEventName
+       with typings.webix.webix.ui.ganttEventName
        with geochartEventName
        with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -5600,10 +5442,14 @@ object webixStrings {
        with typings.webix.webix.ui.iconEventName
        with iframeEventName
        with typings.webix.webix.ui.iframeEventName
+       with jetappEventName
+       with typings.webix.webix.ui.jetappEventName
        with labelEventName
        with typings.webix.webix.ui.labelEventName
        with listEventName
        with typings.webix.webix.ui.listEventName
+       with mentionsuggestEventName
+       with typings.webix.webix.ui.mentionsuggestEventName
        with menuEventName
        with typings.webix.webix.ui.menuEventName
        with multicomboEventName
@@ -5614,8 +5460,6 @@ object webixStrings {
        with typings.webix.webix.ui.multisuggestEventName
        with multitextEventName
        with typings.webix.webix.ui.multitextEventName
-       with organogramEventName
-       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
        with typings.webix.webix.ui.pagerEventName
        with pdfviewerEventName
@@ -5628,14 +5472,20 @@ object webixStrings {
        with typings.webix.webix.ui.protoEventName
        with proxyEventName
        with typings.webix.webix.ui.proxyEventName
+       with queryEventName
+       with typings.webix.webix.ui.queryEventName
        with radioEventName
        with typings.webix.webix.ui.radioEventName
        with rangechartEventName
        with typings.webix.webix.ui.rangechartEventName
        with rangesliderEventName
        with typings.webix.webix.ui.rangesliderEventName
+       with reportsEventName
+       with typings.webix.webix.ui.reportsEventName
        with richselectEventName
        with typings.webix.webix.ui.richselectEventName
+       with schedulerEventName
+       with typings.webix.webix.ui.schedulerEventName
        with scrollviewEventName
        with typings.webix.webix.ui.scrollviewEventName
        with searchEventName
@@ -5666,6 +5516,8 @@ object webixStrings {
        with typings.webix.webix.ui.textEventName
        with textareaEventName
        with typings.webix.webix.ui.textareaEventName
+       with texthighlightEventName
+       with typings.webix.webix.ui.texthighlightEventName
        with toggleEventName
        with typings.webix.webix.ui.toggleEventName
        with tooltipEventName
@@ -5680,6 +5532,8 @@ object webixStrings {
        with typings.webix.webix.ui.unitlistEventName
        with uploaderEventName
        with typings.webix.webix.ui.uploaderEventName
+       with usermanagerEventName
+       with typings.webix.webix.ui.usermanagerEventName
        with videoEventName
        with typings.webix.webix.ui.videoEventName
        with viewEventName
@@ -5707,6 +5561,8 @@ object webixStrings {
        with typings.webix.webix.ui.carouselEventName
        with chartEventName
        with typings.webix.webix.ui.chartEventName
+       with chatEventName
+       with typings.webix.webix.ui.chatEventName
        with checkboxEventName
        with typings.webix.webix.ui.checkboxEventName
        with checksuggestEventName
@@ -5715,6 +5571,8 @@ object webixStrings {
        with typings.webix.webix.ui.colorboardEventName
        with colorpickerEventName
        with typings.webix.webix.ui.colorpickerEventName
+       with colorselectEventName
+       with typings.webix.webix.ui.colorselectEventName
        with comboEventName
        with typings.webix.webix.ui.comboEventName
        with contextEventName
@@ -5735,14 +5593,20 @@ object webixStrings {
        with typings.webix.webix.ui.daterangepickerEventName
        with daterangesuggestEventName
        with typings.webix.webix.ui.daterangesuggestEventName
+       with docmanagerEventName
+       with typings.webix.webix.ui.docmanagerEventName
        with excelviewerEventName
        with typings.webix.webix.ui.excelviewerEventName
        with fieldsetEventName
        with typings.webix.webix.ui.fieldsetEventName
+       with filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
        with forminputEventName
        with typings.webix.webix.ui.forminputEventName
        with gageEventName
        with typings.webix.webix.ui.gageEventName
+       with ganttEventName
+       with typings.webix.webix.ui.ganttEventName
        with geochartEventName
        with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -5759,10 +5623,14 @@ object webixStrings {
        with typings.webix.webix.ui.iconEventName
        with iframeEventName
        with typings.webix.webix.ui.iframeEventName
+       with jetappEventName
+       with typings.webix.webix.ui.jetappEventName
        with labelEventName
        with typings.webix.webix.ui.labelEventName
        with listEventName
        with typings.webix.webix.ui.listEventName
+       with mentionsuggestEventName
+       with typings.webix.webix.ui.mentionsuggestEventName
        with menuEventName
        with typings.webix.webix.ui.menuEventName
        with multicomboEventName
@@ -5773,8 +5641,6 @@ object webixStrings {
        with typings.webix.webix.ui.multisuggestEventName
        with multitextEventName
        with typings.webix.webix.ui.multitextEventName
-       with organogramEventName
-       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
        with typings.webix.webix.ui.pagerEventName
        with pdfviewerEventName
@@ -5787,14 +5653,20 @@ object webixStrings {
        with typings.webix.webix.ui.protoEventName
        with proxyEventName
        with typings.webix.webix.ui.proxyEventName
+       with queryEventName
+       with typings.webix.webix.ui.queryEventName
        with radioEventName
        with typings.webix.webix.ui.radioEventName
        with rangechartEventName
        with typings.webix.webix.ui.rangechartEventName
        with rangesliderEventName
        with typings.webix.webix.ui.rangesliderEventName
+       with reportsEventName
+       with typings.webix.webix.ui.reportsEventName
        with richselectEventName
        with typings.webix.webix.ui.richselectEventName
+       with schedulerEventName
+       with typings.webix.webix.ui.schedulerEventName
        with scrollviewEventName
        with typings.webix.webix.ui.scrollviewEventName
        with searchEventName
@@ -5825,6 +5697,8 @@ object webixStrings {
        with typings.webix.webix.ui.textEventName
        with textareaEventName
        with typings.webix.webix.ui.textareaEventName
+       with texthighlightEventName
+       with typings.webix.webix.ui.texthighlightEventName
        with toggleEventName
        with typings.webix.webix.ui.toggleEventName
        with tooltipEventName
@@ -5839,6 +5713,8 @@ object webixStrings {
        with typings.webix.webix.ui.unitlistEventName
        with uploaderEventName
        with typings.webix.webix.ui.uploaderEventName
+       with usermanagerEventName
+       with typings.webix.webix.ui.usermanagerEventName
        with videoEventName
        with typings.webix.webix.ui.videoEventName
        with viewEventName
@@ -5866,6 +5742,8 @@ object webixStrings {
        with typings.webix.webix.ui.carouselEventName
        with chartEventName
        with typings.webix.webix.ui.chartEventName
+       with chatEventName
+       with typings.webix.webix.ui.chatEventName
        with checkboxEventName
        with typings.webix.webix.ui.checkboxEventName
        with checksuggestEventName
@@ -5874,6 +5752,8 @@ object webixStrings {
        with typings.webix.webix.ui.colorboardEventName
        with colorpickerEventName
        with typings.webix.webix.ui.colorpickerEventName
+       with colorselectEventName
+       with typings.webix.webix.ui.colorselectEventName
        with comboEventName
        with typings.webix.webix.ui.comboEventName
        with contextEventName
@@ -5894,14 +5774,20 @@ object webixStrings {
        with typings.webix.webix.ui.daterangepickerEventName
        with daterangesuggestEventName
        with typings.webix.webix.ui.daterangesuggestEventName
+       with docmanagerEventName
+       with typings.webix.webix.ui.docmanagerEventName
        with excelviewerEventName
        with typings.webix.webix.ui.excelviewerEventName
        with fieldsetEventName
        with typings.webix.webix.ui.fieldsetEventName
+       with filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
        with forminputEventName
        with typings.webix.webix.ui.forminputEventName
        with gageEventName
        with typings.webix.webix.ui.gageEventName
+       with ganttEventName
+       with typings.webix.webix.ui.ganttEventName
        with geochartEventName
        with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -5918,10 +5804,14 @@ object webixStrings {
        with typings.webix.webix.ui.iconEventName
        with iframeEventName
        with typings.webix.webix.ui.iframeEventName
+       with jetappEventName
+       with typings.webix.webix.ui.jetappEventName
        with labelEventName
        with typings.webix.webix.ui.labelEventName
        with listEventName
        with typings.webix.webix.ui.listEventName
+       with mentionsuggestEventName
+       with typings.webix.webix.ui.mentionsuggestEventName
        with menuEventName
        with typings.webix.webix.ui.menuEventName
        with multicomboEventName
@@ -5932,8 +5822,6 @@ object webixStrings {
        with typings.webix.webix.ui.multisuggestEventName
        with multitextEventName
        with typings.webix.webix.ui.multitextEventName
-       with organogramEventName
-       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
        with typings.webix.webix.ui.pagerEventName
        with pdfviewerEventName
@@ -5946,14 +5834,20 @@ object webixStrings {
        with typings.webix.webix.ui.protoEventName
        with proxyEventName
        with typings.webix.webix.ui.proxyEventName
+       with queryEventName
+       with typings.webix.webix.ui.queryEventName
        with radioEventName
        with typings.webix.webix.ui.radioEventName
        with rangechartEventName
        with typings.webix.webix.ui.rangechartEventName
        with rangesliderEventName
        with typings.webix.webix.ui.rangesliderEventName
+       with reportsEventName
+       with typings.webix.webix.ui.reportsEventName
        with richselectEventName
        with typings.webix.webix.ui.richselectEventName
+       with schedulerEventName
+       with typings.webix.webix.ui.schedulerEventName
        with scrollviewEventName
        with typings.webix.webix.ui.scrollviewEventName
        with searchEventName
@@ -5984,6 +5878,8 @@ object webixStrings {
        with typings.webix.webix.ui.textEventName
        with textareaEventName
        with typings.webix.webix.ui.textareaEventName
+       with texthighlightEventName
+       with typings.webix.webix.ui.texthighlightEventName
        with toggleEventName
        with typings.webix.webix.ui.toggleEventName
        with tooltipEventName
@@ -5998,6 +5894,8 @@ object webixStrings {
        with typings.webix.webix.ui.unitlistEventName
        with uploaderEventName
        with typings.webix.webix.ui.uploaderEventName
+       with usermanagerEventName
+       with typings.webix.webix.ui.usermanagerEventName
        with videoEventName
        with typings.webix.webix.ui.videoEventName
        with viewEventName
@@ -6005,6 +5903,27 @@ object webixStrings {
        with windowEventName
        with typings.webix.webix.ui.windowEventName
   inline def onTouchStart: onTouchStart = "onTouchStart".asInstanceOf[onTouchStart]
+  
+  @js.native
+  sealed trait onUIEditStart
+    extends StObject
+       with spreadsheetEventName
+       with typings.webix.webix.ui.spreadsheetEventName
+  inline def onUIEditStart: onUIEditStart = "onUIEditStart".asInstanceOf[onUIEditStart]
+  
+  @js.native
+  sealed trait onUIEditStop
+    extends StObject
+       with spreadsheetEventName
+       with typings.webix.webix.ui.spreadsheetEventName
+  inline def onUIEditStop: onUIEditStop = "onUIEditStop".asInstanceOf[onUIEditStop]
+  
+  @js.native
+  sealed trait onUnits
+    extends StObject
+       with unitlistEventName
+       with typings.webix.webix.ui.unitlistEventName
+  inline def onUnits: onUnits = "onUnits".asInstanceOf[onUnits]
   
   @js.native
   sealed trait onUploadComplete
@@ -6113,6 +6032,8 @@ object webixStrings {
        with typings.webix.webix.ui.daterangesuggestEventName
        with gridsuggestEventName
        with typings.webix.webix.ui.gridsuggestEventName
+       with mentionsuggestEventName
+       with typings.webix.webix.ui.mentionsuggestEventName
        with multisuggestEventName
        with typings.webix.webix.ui.multisuggestEventName
        with suggestEventName
@@ -6140,8 +6061,6 @@ object webixStrings {
   @js.native
   sealed trait onViewInit
     extends StObject
-       with filemanagerEventName
-       with typings.webix.webix.ui.filemanagerEventName
        with pivotEventName
        with typings.webix.webix.ui.pivotEventName
        with spreadsheetEventName
@@ -6163,6 +6082,8 @@ object webixStrings {
        with typings.webix.webix.ui.daterangesuggestEventName
        with gridsuggestEventName
        with typings.webix.webix.ui.gridsuggestEventName
+       with mentionsuggestEventName
+       with typings.webix.webix.ui.mentionsuggestEventName
        with multisuggestEventName
        with typings.webix.webix.ui.multisuggestEventName
        with popupEventName
@@ -6192,6 +6113,8 @@ object webixStrings {
        with typings.webix.webix.ui.daterangesuggestEventName
        with gridsuggestEventName
        with typings.webix.webix.ui.gridsuggestEventName
+       with mentionsuggestEventName
+       with typings.webix.webix.ui.mentionsuggestEventName
        with multisuggestEventName
        with typings.webix.webix.ui.multisuggestEventName
        with popupEventName
@@ -6225,6 +6148,8 @@ object webixStrings {
        with typings.webix.webix.ui.carouselEventName
        with chartEventName
        with typings.webix.webix.ui.chartEventName
+       with chatEventName
+       with typings.webix.webix.ui.chatEventName
        with checkboxEventName
        with typings.webix.webix.ui.checkboxEventName
        with checksuggestEventName
@@ -6233,6 +6158,8 @@ object webixStrings {
        with typings.webix.webix.ui.colorboardEventName
        with colorpickerEventName
        with typings.webix.webix.ui.colorpickerEventName
+       with colorselectEventName
+       with typings.webix.webix.ui.colorselectEventName
        with comboEventName
        with typings.webix.webix.ui.comboEventName
        with contextEventName
@@ -6253,14 +6180,20 @@ object webixStrings {
        with typings.webix.webix.ui.daterangepickerEventName
        with daterangesuggestEventName
        with typings.webix.webix.ui.daterangesuggestEventName
+       with docmanagerEventName
+       with typings.webix.webix.ui.docmanagerEventName
        with excelviewerEventName
        with typings.webix.webix.ui.excelviewerEventName
        with fieldsetEventName
        with typings.webix.webix.ui.fieldsetEventName
+       with filemanagerEventName
+       with typings.webix.webix.ui.filemanagerEventName
        with forminputEventName
        with typings.webix.webix.ui.forminputEventName
        with gageEventName
        with typings.webix.webix.ui.gageEventName
+       with ganttEventName
+       with typings.webix.webix.ui.ganttEventName
        with geochartEventName
        with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -6277,10 +6210,14 @@ object webixStrings {
        with typings.webix.webix.ui.iconEventName
        with iframeEventName
        with typings.webix.webix.ui.iframeEventName
+       with jetappEventName
+       with typings.webix.webix.ui.jetappEventName
        with labelEventName
        with typings.webix.webix.ui.labelEventName
        with listEventName
        with typings.webix.webix.ui.listEventName
+       with mentionsuggestEventName
+       with typings.webix.webix.ui.mentionsuggestEventName
        with menuEventName
        with typings.webix.webix.ui.menuEventName
        with multicomboEventName
@@ -6291,8 +6228,6 @@ object webixStrings {
        with typings.webix.webix.ui.multisuggestEventName
        with multitextEventName
        with typings.webix.webix.ui.multitextEventName
-       with organogramEventName
-       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
        with typings.webix.webix.ui.pagerEventName
        with panelEventName
@@ -6307,14 +6242,20 @@ object webixStrings {
        with typings.webix.webix.ui.protoEventName
        with proxyEventName
        with typings.webix.webix.ui.proxyEventName
+       with queryEventName
+       with typings.webix.webix.ui.queryEventName
        with radioEventName
        with typings.webix.webix.ui.radioEventName
        with rangechartEventName
        with typings.webix.webix.ui.rangechartEventName
        with rangesliderEventName
        with typings.webix.webix.ui.rangesliderEventName
+       with reportsEventName
+       with typings.webix.webix.ui.reportsEventName
        with richselectEventName
        with typings.webix.webix.ui.richselectEventName
+       with schedulerEventName
+       with typings.webix.webix.ui.schedulerEventName
        with scrollviewEventName
        with typings.webix.webix.ui.scrollviewEventName
        with searchEventName
@@ -6345,6 +6286,8 @@ object webixStrings {
        with typings.webix.webix.ui.textEventName
        with textareaEventName
        with typings.webix.webix.ui.textareaEventName
+       with texthighlightEventName
+       with typings.webix.webix.ui.texthighlightEventName
        with toggleEventName
        with typings.webix.webix.ui.toggleEventName
        with tooltipEventName
@@ -6359,6 +6302,8 @@ object webixStrings {
        with typings.webix.webix.ui.unitlistEventName
        with uploaderEventName
        with typings.webix.webix.ui.uploaderEventName
+       with usermanagerEventName
+       with typings.webix.webix.ui.usermanagerEventName
        with videoEventName
        with typings.webix.webix.ui.videoEventName
        with viewEventName
@@ -6394,6 +6339,8 @@ object webixStrings {
        with typings.webix.webix.ui.carouselEventName
        with chartEventName
        with typings.webix.webix.ui.chartEventName
+       with chatEventName
+       with typings.webix.webix.ui.chatEventName
        with checkboxEventName
        with typings.webix.webix.ui.checkboxEventName
        with checksuggestEventName
@@ -6402,6 +6349,8 @@ object webixStrings {
        with typings.webix.webix.ui.colorboardEventName
        with colorpickerEventName
        with typings.webix.webix.ui.colorpickerEventName
+       with colorselectEventName
+       with typings.webix.webix.ui.colorselectEventName
        with comboEventName
        with typings.webix.webix.ui.comboEventName
        with commentsEventName
@@ -6432,18 +6381,24 @@ object webixStrings {
        with typings.webix.webix.ui.daterangesuggestEventName
        with dbllistEventName
        with typings.webix.webix.ui.dbllistEventName
+       with docmanagerEventName
+       with typings.webix.webix.ui.docmanagerEventName
        with excelviewerEventName
        with typings.webix.webix.ui.excelviewerEventName
        with fieldsetEventName
        with typings.webix.webix.ui.fieldsetEventName
        with filemanagerEventName
        with typings.webix.webix.ui.filemanagerEventName
+       with filterEventName
+       with typings.webix.webix.ui.filterEventName
        with formEventName
        with typings.webix.webix.ui.formEventName
        with forminputEventName
        with typings.webix.webix.ui.forminputEventName
        with gageEventName
        with typings.webix.webix.ui.gageEventName
+       with ganttEventName
+       with typings.webix.webix.ui.ganttEventName
        with geochartEventName
        with typings.webix.webix.ui.geochartEventName
        with googleMapEventName
@@ -6464,6 +6419,8 @@ object webixStrings {
        with typings.webix.webix.ui.iconEventName
        with iframeEventName
        with typings.webix.webix.ui.iframeEventName
+       with jetappEventName
+       with typings.webix.webix.ui.jetappEventName
        with kanbanEventName
        with typings.webix.webix.ui.kanbanEventName
        with labelEventName
@@ -6472,6 +6429,8 @@ object webixStrings {
        with typings.webix.webix.ui.layoutEventName
        with listEventName
        with typings.webix.webix.ui.listEventName
+       with mentionsuggestEventName
+       with typings.webix.webix.ui.mentionsuggestEventName
        with menuEventName
        with typings.webix.webix.ui.menuEventName
        with multicomboEventName
@@ -6484,8 +6443,6 @@ object webixStrings {
        with typings.webix.webix.ui.multitextEventName
        with multiviewEventName
        with typings.webix.webix.ui.multiviewEventName
-       with organogramEventName
-       with typings.webix.webix.ui.organogramEventName
        with pagerEventName
        with typings.webix.webix.ui.pagerEventName
        with panelEventName
@@ -6504,18 +6461,22 @@ object webixStrings {
        with typings.webix.webix.ui.protoEventName
        with proxyEventName
        with typings.webix.webix.ui.proxyEventName
-       with querybuilderEventName
-       with typings.webix.webix.ui.querybuilderEventName
+       with queryEventName
+       with typings.webix.webix.ui.queryEventName
        with radioEventName
        with typings.webix.webix.ui.radioEventName
        with rangechartEventName
        with typings.webix.webix.ui.rangechartEventName
        with rangesliderEventName
        with typings.webix.webix.ui.rangesliderEventName
+       with reportsEventName
+       with typings.webix.webix.ui.reportsEventName
        with richselectEventName
        with typings.webix.webix.ui.richselectEventName
        with richtextEventName
        with typings.webix.webix.ui.richtextEventName
+       with schedulerEventName
+       with typings.webix.webix.ui.schedulerEventName
        with scrollviewEventName
        with typings.webix.webix.ui.scrollviewEventName
        with searchEventName
@@ -6550,6 +6511,10 @@ object webixStrings {
        with typings.webix.webix.ui.textEventName
        with textareaEventName
        with typings.webix.webix.ui.textareaEventName
+       with texthighlightEventName
+       with typings.webix.webix.ui.texthighlightEventName
+       with timeboardEventName
+       with typings.webix.webix.ui.timeboardEventName
        with timelineEventName
        with typings.webix.webix.ui.timelineEventName
        with toggleEventName
@@ -6568,6 +6533,8 @@ object webixStrings {
        with typings.webix.webix.ui.unitlistEventName
        with uploaderEventName
        with typings.webix.webix.ui.uploaderEventName
+       with usermanagerEventName
+       with typings.webix.webix.ui.usermanagerEventName
        with videoEventName
        with typings.webix.webix.ui.videoEventName
        with viewEventName

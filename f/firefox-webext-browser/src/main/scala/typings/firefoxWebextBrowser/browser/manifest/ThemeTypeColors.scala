@@ -27,6 +27,8 @@ trait ThemeTypeColors extends StObject {
   
   var ntp_background: js.UndefOr[ThemeColor] = js.undefined
   
+  var ntp_card_background: js.UndefOr[ThemeColor] = js.undefined
+  
   var ntp_text: js.UndefOr[ThemeColor] = js.undefined
   
   var popup: js.UndefOr[ThemeColor] = js.undefined
@@ -82,6 +84,7 @@ trait ThemeTypeColors extends StObject {
   
   var toolbar_field_highlight_text: js.UndefOr[ThemeColor] = js.undefined
   
+  /** @deprecated This color property is ignored in Firefox >= 89. */
   var toolbar_field_separator: js.UndefOr[ThemeColor] = js.undefined
   
   var toolbar_field_text: js.UndefOr[ThemeColor] = js.undefined
@@ -139,6 +142,10 @@ object ThemeTypeColors {
     inline def setNtp_background(value: ThemeColor): Self = StObject.set(x, "ntp_background", value.asInstanceOf[js.Any])
     
     inline def setNtp_backgroundUndefined: Self = StObject.set(x, "ntp_background", js.undefined)
+    
+    inline def setNtp_card_background(value: ThemeColor): Self = StObject.set(x, "ntp_card_background", value.asInstanceOf[js.Any])
+    
+    inline def setNtp_card_backgroundUndefined: Self = StObject.set(x, "ntp_card_background", js.undefined)
     
     inline def setNtp_text(value: ThemeColor): Self = StObject.set(x, "ntp_text", value.asInstanceOf[js.Any])
     

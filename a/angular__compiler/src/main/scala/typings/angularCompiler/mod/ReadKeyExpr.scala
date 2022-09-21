@@ -6,33 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "ReadKeyExpr")
 @js.native
-class ReadKeyExpr protected ()
-  extends typings.angularCompiler.compilerMod.ReadKeyExpr {
-  def this(
-    receiver: typings.angularCompiler.outputAstMod.Expression,
-    index: typings.angularCompiler.outputAstMod.Expression
-  ) = this()
-  def this(
-    receiver: typings.angularCompiler.outputAstMod.Expression,
-    index: typings.angularCompiler.outputAstMod.Expression,
-    `type`: typings.angularCompiler.outputAstMod.Type
-  ) = this()
-  def this(
-    receiver: typings.angularCompiler.outputAstMod.Expression,
-    index: typings.angularCompiler.outputAstMod.Expression,
-    `type`: Null,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
-  def this(
-    receiver: typings.angularCompiler.outputAstMod.Expression,
-    index: typings.angularCompiler.outputAstMod.Expression,
-    `type`: Unit,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
-  def this(
-    receiver: typings.angularCompiler.outputAstMod.Expression,
-    index: typings.angularCompiler.outputAstMod.Expression,
-    `type`: typings.angularCompiler.outputAstMod.Type,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
+open class ReadKeyExpr protected () extends Expression {
+  def this(receiver: Expression, index: Expression) = this()
+  def this(receiver: Expression, index: Expression, `type`: Type) = this()
+  def this(receiver: Expression, index: Expression, `type`: Null, sourceSpan: ParseSourceSpan) = this()
+  def this(receiver: Expression, index: Expression, `type`: Unit, sourceSpan: ParseSourceSpan) = this()
+  def this(receiver: Expression, index: Expression, `type`: Type, sourceSpan: ParseSourceSpan) = this()
+  
+  var index: Expression = js.native
+  
+  var receiver: Expression = js.native
+  
+  def set(value: Expression): WriteKeyExpr = js.native
 }

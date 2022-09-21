@@ -15,7 +15,7 @@ trait SharedResource extends StObject {
   
   var Name: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Type: AcResourceType
 }
@@ -26,7 +26,7 @@ object SharedResource {
     Delete: () => Unit,
     IsMemberSafe: Double => Boolean,
     Name: String,
-    Parent: js.Any,
+    Parent: Any,
     Type: AcResourceType
   ): SharedResource = {
     val __obj = js.Dynamic.literal(Delete = js.Any.fromFunction0(Delete), IsMemberSafe = js.Any.fromFunction1(IsMemberSafe), Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
@@ -44,7 +44,7 @@ object SharedResource {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setType(value: AcResourceType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }

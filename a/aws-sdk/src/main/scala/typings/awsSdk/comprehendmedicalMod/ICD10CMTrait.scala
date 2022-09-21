@@ -12,7 +12,7 @@ trait ICD10CMTrait extends StObject {
   var Name: js.UndefOr[ICD10CMTraitName] = js.undefined
   
   /**
-    * The level of confidence that Amazon Comprehend Medical has that the segment of text is correctly recognized as a trait.
+    * The level of confidence that Comprehend Medical; has that the segment of text is correctly recognized as a trait.
     */
   var Score: js.UndefOr[Float] = js.undefined
 }

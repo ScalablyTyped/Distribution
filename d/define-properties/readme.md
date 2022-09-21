@@ -10,15 +10,12 @@ Define multiple non-enumerable properties at once. Uses `Object.defineProperty` 
 | ------------------ | :-------------: |
 | Full name          | define-properties |
 | Keywords           | Object.defineProperty, Object.defineProperties, object, property descriptor, descriptor, define, ES5 |
-| # releases         | 0 |
-| # dependents       | 182 |
-| # downloads        | 767194207 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1.1655425766666667E8 |
+| # stars            | 17.0 |
 
 ## Links
-- [Homepage](https://github.com/ljharb/define-properties#readme)
-- [Bugs](https://github.com/ljharb/define-properties/issues)
-- [Repository](https://github.com/ljharb/define-properties)
 - [Npm](https://www.npmjs.com/package/define-properties)
     
 

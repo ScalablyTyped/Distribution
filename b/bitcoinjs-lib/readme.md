@@ -1,7 +1,7 @@
 
 # Scala.js typings for bitcoinjs-lib
 
-Typings are for version 5.2.0
+Typings are for version 6.0.2
 
 ## Library description:
 Client-side Bitcoin JavaScript library
@@ -10,10 +10,10 @@ Client-side Bitcoin JavaScript library
 | ------------------ | :-------------: |
 | Full name          | bitcoinjs-lib |
 | Keywords           | bitcoinjs, bitcoin, browserify, javascript, bitcoinjs |
-| # releases         | 21 |
-| # dependents       | 523 |
-| # downloads        | 1518853 |
-| # stars            | 20 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 189260.66666666666 |
+| # stars            | 4658.0 |
 
 ## Links
 - [Homepage](https://github.com/bitcoinjs/bitcoinjs-lib#readme)

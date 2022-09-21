@@ -12,8 +12,9 @@ object global {
   object cytoscape {
     
     inline def apply(): Core = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Core]
-    inline def apply(extensionName: String, foo: String, bar: js.Any): Core = (^.asInstanceOf[js.Dynamic].apply(extensionName.asInstanceOf[js.Any], foo.asInstanceOf[js.Any], bar.asInstanceOf[js.Any])).asInstanceOf[Core]
     inline def apply(options: CytoscapeOptions): Core = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Core]
+    inline def apply(`type`: String, name: String): Any = (^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def apply(`type`: String, name: String, registrant: Any): Unit = (^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], registrant.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSGlobal("cytoscape")
     @js.native

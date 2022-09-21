@@ -1,6 +1,5 @@
 package typings.cordovaPluginMsAdal
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -77,7 +76,7 @@ object Microsoft {
         */
       def createAuthorizationHeader(): String
       
-      var expiresOn: Date
+      var expiresOn: js.Date
       
       var idToken: String
       
@@ -97,7 +96,7 @@ object Microsoft {
         accessToken: String,
         accessTokenType: String,
         createAuthorizationHeader: () => String,
-        expiresOn: Date,
+        expiresOn: js.Date,
         idToken: String,
         isMultipleResourceRefreshToken: Boolean,
         status: String,
@@ -117,7 +116,7 @@ object Microsoft {
         
         inline def setCreateAuthorizationHeader(value: () => String): Self = StObject.set(x, "createAuthorizationHeader", js.Any.fromFunction0(value))
         
-        inline def setExpiresOn(value: Date): Self = StObject.set(x, "expiresOn", value.asInstanceOf[js.Any])
+        inline def setExpiresOn(value: js.Date): Self = StObject.set(x, "expiresOn", value.asInstanceOf[js.Any])
         
         inline def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
         
@@ -136,38 +135,38 @@ object Microsoft {
     @js.native
     trait Promise extends StObject {
       
-      def `then`(doneCallBack: js.Function0[js.Any]): js.Any = js.native
-      def `then`(doneCallBack: js.Function0[js.Any], failCallBack: js.Function1[/* message */ String, js.Any]): js.Any = js.native
+      def `then`(doneCallBack: js.Function0[Any]): Any = js.native
+      def `then`(doneCallBack: js.Function0[Any], failCallBack: js.Function1[/* message */ String, Any]): Any = js.native
     }
     
     @js.native
     trait PromiseAuthenticationContext extends StObject {
       
-      def `then`(doneCallBack: js.Function1[/* context */ AuthenticationContext, js.Any]): js.Any = js.native
+      def `then`(doneCallBack: js.Function1[/* context */ AuthenticationContext, Any]): Any = js.native
       def `then`(
-        doneCallBack: js.Function1[/* context */ AuthenticationContext, js.Any],
-        failCallBack: js.Function1[/* message */ String, js.Any]
-      ): js.Any = js.native
+        doneCallBack: js.Function1[/* context */ AuthenticationContext, Any],
+        failCallBack: js.Function1[/* message */ String, Any]
+      ): Any = js.native
     }
     
     @js.native
     trait PromiseAuthenticationResult extends StObject {
       
-      def `then`(doneCallBack: js.Function1[/* context */ AuthenticationResult, js.Any]): js.Any = js.native
+      def `then`(doneCallBack: js.Function1[/* context */ AuthenticationResult, Any]): Any = js.native
       def `then`(
-        doneCallBack: js.Function1[/* context */ AuthenticationResult, js.Any],
-        failCallBack: js.Function1[/* message */ String, js.Any]
-      ): js.Any = js.native
+        doneCallBack: js.Function1[/* context */ AuthenticationResult, Any],
+        failCallBack: js.Function1[/* message */ String, Any]
+      ): Any = js.native
     }
     
     @js.native
     trait PromiseTokenCacheItems extends StObject {
       
-      def `then`(doneCallBack: js.Function1[/* tokenCacheItems */ js.Array[TokenCacheItem], js.Any]): js.Any = js.native
+      def `then`(doneCallBack: js.Function1[/* tokenCacheItems */ js.Array[TokenCacheItem], Any]): Any = js.native
       def `then`(
-        doneCallBack: js.Function1[/* tokenCacheItems */ js.Array[TokenCacheItem], js.Any],
-        failCallBack: js.Function1[/* message */ String, js.Any]
-      ): js.Any = js.native
+        doneCallBack: js.Function1[/* tokenCacheItems */ js.Array[TokenCacheItem], Any],
+        failCallBack: js.Function1[/* message */ String, Any]
+      ): Any = js.native
     }
     
     trait TokenCache extends StObject {
@@ -231,7 +230,7 @@ object Microsoft {
       
       var displayableId: String
       
-      var expiresOn: Date
+      var expiresOn: js.Date
       
       var isMultipleResourceRefreshToken: Boolean
       
@@ -248,7 +247,7 @@ object Microsoft {
         authority: String,
         clientId: String,
         displayableId: String,
-        expiresOn: Date,
+        expiresOn: js.Date,
         isMultipleResourceRefreshToken: Boolean,
         resource: String,
         tenantId: String,
@@ -268,7 +267,7 @@ object Microsoft {
         
         inline def setDisplayableId(value: String): Self = StObject.set(x, "displayableId", value.asInstanceOf[js.Any])
         
-        inline def setExpiresOn(value: Date): Self = StObject.set(x, "expiresOn", value.asInstanceOf[js.Any])
+        inline def setExpiresOn(value: js.Date): Self = StObject.set(x, "expiresOn", value.asInstanceOf[js.Any])
         
         inline def setIsMultipleResourceRefreshToken(value: Boolean): Self = StObject.set(x, "isMultipleResourceRefreshToken", value.asInstanceOf[js.Any])
         
@@ -292,7 +291,7 @@ object Microsoft {
       
       var passwordChangeUrl: String
       
-      var passwordExpiresOn: Date
+      var passwordExpiresOn: js.Date
       
       var uniqueId: String
       
@@ -306,7 +305,7 @@ object Microsoft {
         givenName: String,
         identityProvider: String,
         passwordChangeUrl: String,
-        passwordExpiresOn: Date,
+        passwordExpiresOn: js.Date,
         uniqueId: String,
         userId: String
       ): UserInfo = {
@@ -326,7 +325,7 @@ object Microsoft {
         
         inline def setPasswordChangeUrl(value: String): Self = StObject.set(x, "passwordChangeUrl", value.asInstanceOf[js.Any])
         
-        inline def setPasswordExpiresOn(value: Date): Self = StObject.set(x, "passwordExpiresOn", value.asInstanceOf[js.Any])
+        inline def setPasswordExpiresOn(value: js.Date): Self = StObject.set(x, "passwordExpiresOn", value.asInstanceOf[js.Any])
         
         inline def setUniqueId(value: String): Self = StObject.set(x, "uniqueId", value.asInstanceOf[js.Any])
         

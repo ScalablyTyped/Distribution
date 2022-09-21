@@ -11,7 +11,7 @@ object mod {
   /**
     * Creates an instance of TaskQueue.
     */
-  class TaskQueue () extends StObject {
+  open class TaskQueue () extends StObject {
     
     /**
       * Immediately flushes the micro task queue.
@@ -26,15 +26,15 @@ object mod {
     /**
       * Whether the queue is in the process of flushing.
       */
-    var flushing: js.Any = js.native
+    var flushing: Any = js.native
     
     /**
       * Enables long stack traces for queued tasks.
       */
-    var longStacks: js.Any = js.native
+    var longStacks: Any = js.native
     
-    def prepareQueueStack(): js.Any = js.native
-    def prepareQueueStack(separator: js.Any): js.Any = js.native
+    def prepareQueueStack(): Any = js.native
+    def prepareQueueStack(separator: Any): Any = js.native
     
     def queueMicroTask(task: js.Function): Unit = js.native
     /**

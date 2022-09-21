@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientPivotCustomization")
 @js.native
-class ASPxClientPivotCustomization ()
+open class ASPxClientPivotCustomization ()
   extends StObject
      with typings.devexpressWeb.ASPxClientPivotCustomization {
   
@@ -37,19 +37,19 @@ class ASPxClientPivotCustomization ()
     * Returns an HTML element that represents the root of the control's hierarchy.
     */
   /* CompleteClass */
-  override def GetMainContainer(): js.Any = js.native
+  override def GetMainContainer(): Any = js.native
   
   /**
     * Returns an HTML element that is the root of the control's hierarchy.
     */
   /* CompleteClass */
-  override def GetMainElement(): js.Any = js.native
+  override def GetMainElement(): Any = js.native
   
   /**
     * Returns a client instance of the control that is the parent for a specified control.
     */
   /* CompleteClass */
-  override def GetParentControl(): js.Any = js.native
+  override def GetParentControl(): Any = js.native
   
   /**
     * Returns a client-side equivalent of the owner Pivot Grid Control.

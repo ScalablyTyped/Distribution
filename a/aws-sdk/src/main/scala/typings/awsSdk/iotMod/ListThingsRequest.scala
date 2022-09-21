@@ -30,6 +30,11 @@ trait ListThingsRequest extends StObject {
     * The name of the thing type used to search for things.
     */
   var thingTypeName: js.UndefOr[ThingTypeName] = js.undefined
+  
+  /**
+    * When true, the action returns the thing resources with attribute values that start with the attributeValue provided. When false, or not present, the action returns only the thing resources with attribute values that match the entire attributeValue provided. 
+    */
+  var usePrefixAttributeValue: js.UndefOr[typings.awsSdk.iotMod.usePrefixAttributeValue] = js.undefined
 }
 object ListThingsRequest {
   
@@ -59,5 +64,9 @@ object ListThingsRequest {
     inline def setThingTypeName(value: ThingTypeName): Self = StObject.set(x, "thingTypeName", value.asInstanceOf[js.Any])
     
     inline def setThingTypeNameUndefined: Self = StObject.set(x, "thingTypeName", js.undefined)
+    
+    inline def setUsePrefixAttributeValue(value: usePrefixAttributeValue): Self = StObject.set(x, "usePrefixAttributeValue", value.asInstanceOf[js.Any])
+    
+    inline def setUsePrefixAttributeValueUndefined: Self = StObject.set(x, "usePrefixAttributeValue", js.undefined)
   }
 }

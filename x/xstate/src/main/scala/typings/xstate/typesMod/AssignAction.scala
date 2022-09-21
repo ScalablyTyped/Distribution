@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AssignAction[TContext, TEvent /* <: EventObject */]
   extends StObject
-     with ActionObject[TContext, TEvent] {
+     with ActionObject[TContext, TEvent]
+     with _BaseAction[TContext, TEvent, Any] {
   
   var assignment: (Assigner[TContext, TEvent]) | (PropertyAssigner[TContext, TEvent])
   

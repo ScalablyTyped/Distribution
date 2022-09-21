@@ -14,7 +14,7 @@ object hermesProfileMod {
     
     var stackFrames: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in string ]: hermes-profile-transformer.hermes-profile-transformer/dist/types/HermesProfile.HermesStackFrame}
-      */ typings.hermesProfileTransformer.hermesProfileTransformerStrings.HermesCPUProfile & TopLevel[js.Any]
+      */ typings.hermesProfileTransformer.hermesProfileTransformerStrings.HermesCPUProfile & TopLevel[Any]
     
     var traceEvents: js.Array[SharedEventProperties]
   }
@@ -24,7 +24,7 @@ object hermesProfileMod {
       samples: js.Array[HermesSample],
       stackFrames: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in string ]: hermes-profile-transformer.hermes-profile-transformer/dist/types/HermesProfile.HermesStackFrame}
-      */ typings.hermesProfileTransformer.hermesProfileTransformerStrings.HermesCPUProfile & TopLevel[js.Any],
+      */ typings.hermesProfileTransformer.hermesProfileTransformerStrings.HermesCPUProfile & TopLevel[Any],
       traceEvents: js.Array[SharedEventProperties]
     ): HermesCPUProfile = {
       val __obj = js.Dynamic.literal(samples = samples.asInstanceOf[js.Any], stackFrames = stackFrames.asInstanceOf[js.Any], traceEvents = traceEvents.asInstanceOf[js.Any])
@@ -35,17 +35,17 @@ object hermesProfileMod {
       
       inline def setSamples(value: js.Array[HermesSample]): Self = StObject.set(x, "samples", value.asInstanceOf[js.Any])
       
-      inline def setSamplesVarargs(value: HermesSample*): Self = StObject.set(x, "samples", js.Array(value :_*))
+      inline def setSamplesVarargs(value: HermesSample*): Self = StObject.set(x, "samples", js.Array(value*))
       
       inline def setStackFrames(
         value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ key in string ]: hermes-profile-transformer.hermes-profile-transformer/dist/types/HermesProfile.HermesStackFrame}
-        */ typings.hermesProfileTransformer.hermesProfileTransformerStrings.HermesCPUProfile & TopLevel[js.Any]
+        */ typings.hermesProfileTransformer.hermesProfileTransformerStrings.HermesCPUProfile & TopLevel[Any]
       ): Self = StObject.set(x, "stackFrames", value.asInstanceOf[js.Any])
       
       inline def setTraceEvents(value: js.Array[SharedEventProperties]): Self = StObject.set(x, "traceEvents", value.asInstanceOf[js.Any])
       
-      inline def setTraceEventsVarargs(value: SharedEventProperties*): Self = StObject.set(x, "traceEvents", js.Array(value :_*))
+      inline def setTraceEventsVarargs(value: SharedEventProperties*): Self = StObject.set(x, "traceEvents", js.Array(value*))
     }
   }
   

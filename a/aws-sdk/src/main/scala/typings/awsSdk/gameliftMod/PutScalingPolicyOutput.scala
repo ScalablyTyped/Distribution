@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PutScalingPolicyOutput extends StObject {
   
   /**
-    * A descriptive label that is associated with a scaling policy. Policy names do not need to be unique.
+    * A descriptive label that is associated with a fleet's scaling policy. Policy names do not need to be unique.
     */
   var Name: js.UndefOr[NonZeroAndMaxString] = js.undefined
 }

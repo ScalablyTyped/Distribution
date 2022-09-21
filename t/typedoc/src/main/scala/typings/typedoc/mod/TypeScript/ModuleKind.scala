@@ -19,7 +19,13 @@ object ModuleKind extends StObject {
   
   /* 6 */ val ES2020: typings.typescript.mod.ModuleKind.ES2020 & Double = js.native
   
+  /* 7 */ val ES2022: typings.typescript.mod.ModuleKind.ES2022 & Double = js.native
+  
   /* 99 */ val ESNext: typings.typescript.mod.ModuleKind.ESNext & Double = js.native
+  
+  /* 100 */ val Node16: typings.typescript.mod.ModuleKind.Node16 & Double = js.native
+  
+  /* 199 */ val NodeNext: typings.typescript.mod.ModuleKind.NodeNext & Double = js.native
   
   /* 0 */ val None: typings.typescript.mod.ModuleKind.None & Double = js.native
   

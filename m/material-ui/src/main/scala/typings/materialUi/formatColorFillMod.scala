@@ -10,10 +10,10 @@ object formatColorFillMod {
   
   @JSImport("material-ui/svg-icons/editor/format-color-fill", JSImport.Default)
   @js.native
-  class default () extends EditorFormatColorFill
+  open class default () extends EditorFormatColorFill
   
   @JSImport("material-ui/svg-icons/editor/format-color-fill", "EditorFormatColorFill")
   @js.native
-  class EditorFormatColorFill ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class EditorFormatColorFill ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

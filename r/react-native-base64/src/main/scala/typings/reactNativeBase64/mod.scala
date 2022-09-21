@@ -16,11 +16,17 @@ object mod extends Shortcut {
     def decode(input: String): String
     
     def encode(input: String): String
+    
+    def encodeFromByteArray(byteArray: js.typedarray.Uint8Array): String
   }
   object Base64 {
     
-    inline def apply(decode: String => String, encode: String => String): Base64 = {
-      val __obj = js.Dynamic.literal(decode = js.Any.fromFunction1(decode), encode = js.Any.fromFunction1(encode))
+    inline def apply(
+      decode: String => String,
+      encode: String => String,
+      encodeFromByteArray: js.typedarray.Uint8Array => String
+    ): Base64 = {
+      val __obj = js.Dynamic.literal(decode = js.Any.fromFunction1(decode), encode = js.Any.fromFunction1(encode), encodeFromByteArray = js.Any.fromFunction1(encodeFromByteArray))
       __obj.asInstanceOf[Base64]
     }
     
@@ -29,6 +35,8 @@ object mod extends Shortcut {
       inline def setDecode(value: String => String): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
       
       inline def setEncode(value: String => String): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
+      
+      inline def setEncodeFromByteArray(value: js.typedarray.Uint8Array => String): Self = StObject.set(x, "encodeFromByteArray", js.Any.fromFunction1(value))
     }
   }
   

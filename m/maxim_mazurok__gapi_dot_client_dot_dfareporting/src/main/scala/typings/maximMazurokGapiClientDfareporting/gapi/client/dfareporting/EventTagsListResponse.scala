@@ -25,7 +25,7 @@ object EventTagsListResponse {
     
     inline def setEventTagsUndefined: Self = StObject.set(x, "eventTags", js.undefined)
     
-    inline def setEventTagsVarargs(value: EventTag*): Self = StObject.set(x, "eventTags", js.Array(value :_*))
+    inline def setEventTagsVarargs(value: EventTag*): Self = StObject.set(x, "eventTags", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

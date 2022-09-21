@@ -28,7 +28,7 @@ object EntityState {
     Detached: EntityStateSymbol,
     Modified: EntityStateSymbol,
     Unchanged: EntityStateSymbol,
-    contains: js.Any => Boolean,
+    contains: Any => Boolean,
     fromName: String => EnumSymbol,
     getNames: () => js.Array[String],
     getSymbols: () => js.Array[EnumSymbol]

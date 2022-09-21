@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("spine.TransformConstraintData")
 @js.native
-class TransformConstraintData protected ()
+open class TransformConstraintData protected ()
   extends StObject
      with typings.phaser.spine.TransformConstraintData {
   def this(name: String) = this()

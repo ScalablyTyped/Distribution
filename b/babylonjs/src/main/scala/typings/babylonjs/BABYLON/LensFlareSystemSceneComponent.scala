@@ -9,5 +9,5 @@ trait LensFlareSystemSceneComponent
   extends StObject
      with ISceneSerializableComponent {
   
-  /* private */ var _draw: js.Any = js.native
+  /* private */ var _draw: Any = js.native
 }

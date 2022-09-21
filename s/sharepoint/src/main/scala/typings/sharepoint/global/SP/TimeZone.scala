@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.TimeZone")
 @js.native
-class TimeZone ()
+open class TimeZone ()
   extends StObject
      with typings.sharepoint.SP.TimeZone

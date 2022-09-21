@@ -2,7 +2,6 @@ package typings.reactMdDivider
 
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.HTMLAttributes
-import typings.react.mod.Ref
 import typings.react.mod.RefAttributes
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
@@ -11,38 +10,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object verticalDividerMod {
   
-  @JSImport("@react-md/divider/types/VerticalDivider", JSImport.Namespace)
-  @js.native
-  val ^ : js.Any = js.native
-  
   @JSImport("@react-md/divider/types/VerticalDivider", "VerticalDivider")
   @js.native
   val VerticalDivider: ForwardRefExoticComponent[VerticalDividerProps & RefAttributes[HTMLDivElement]] = js.native
-  
-  inline def useVerticalDividerHeight(maxHeight: Double): VerticalDividerHeight = ^.asInstanceOf[js.Dynamic].applyDynamic("useVerticalDividerHeight")(maxHeight.asInstanceOf[js.Any]).asInstanceOf[VerticalDividerHeight]
-  inline def useVerticalDividerHeight(maxHeight: Double, forwardedRef: Ref[HTMLDivElement | Null]): VerticalDividerHeight = (^.asInstanceOf[js.Dynamic].applyDynamic("useVerticalDividerHeight")(maxHeight.asInstanceOf[js.Any], forwardedRef.asInstanceOf[js.Any])).asInstanceOf[VerticalDividerHeight]
-  
-  @js.native
-  trait VerticalDividerHeight extends StObject {
-    
-    var height: js.UndefOr[Double] = js.native
-    
-    def ref(): Unit = js.native
-    def ref(instance: HTMLDivElement): Unit = js.native
-  }
   
   trait VerticalDividerProps
     extends StObject
        with HTMLAttributes[HTMLDivElement] {
     
-    /**
-      * The max height for the vertical divider. This number **must** be greater
-      * than 0 to work correctly.
-      *
-      * When the value is between 0 and 1, it will be used as a multiplier with the
-      * parent element's height. When the value is greater than 1, it will be used
-      * in `Math.min(parentElementHeight, maxHeight)`.
-      */
+    /** {@inheritDoc VerticalDividerHookOptions.maxHeight} */
     var maxHeight: js.UndefOr[Double] = js.undefined
   }
   object VerticalDividerProps {

@@ -2,8 +2,6 @@ package typings.chenfengyuanVueQrcode
 
 import org.scalablytyped.runtime.Shortcut
 import typings.chenfengyuanVueQrcode.anon.Color
-import typings.vue.vueMod.Vue
-import typings.vue.vueMod.VueConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,16 +12,30 @@ object mod extends Shortcut {
   @js.native
   val ^ : QrCodeConstructor = js.native
   
-  @js.native
-  trait QrCodeConstructor
-    extends StObject
-       with VueConstructor[Vue] {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VueConstructor * / any */ trait QrCodeConstructor extends StObject {
     
-    var methods: QrCodeMethods = js.native
+    var methods: QrCodeMethods
     
-    var props: QrCodePorps = js.native
+    var props: QrCodePorps
     
-    var watch: QrCodeWatch = js.native
+    var watch: QrCodeWatch
+  }
+  object QrCodeConstructor {
+    
+    inline def apply(methods: QrCodeMethods, props: QrCodePorps, watch: QrCodeWatch): QrCodeConstructor = {
+      val __obj = js.Dynamic.literal(methods = methods.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], watch = watch.asInstanceOf[js.Any])
+      __obj.asInstanceOf[QrCodeConstructor]
+    }
+    
+    extension [Self <: QrCodeConstructor](x: Self) {
+      
+      inline def setMethods(value: QrCodeMethods): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+      
+      inline def setProps(value: QrCodePorps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      
+      inline def setWatch(value: QrCodeWatch): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
+    }
   }
   
   trait QrCodeMethods extends StObject {
@@ -77,18 +89,18 @@ object mod extends Shortcut {
   trait QrCodeWatch extends StObject {
     
     @JSName("$props")
-    def $props(`val`: js.Any): Unit
+    def $props(`val`: Any): Unit
   }
   object QrCodeWatch {
     
-    inline def apply($props: js.Any => Unit): QrCodeWatch = {
+    inline def apply($props: Any => Unit): QrCodeWatch = {
       val __obj = js.Dynamic.literal($props = js.Any.fromFunction1($props))
       __obj.asInstanceOf[QrCodeWatch]
     }
     
     extension [Self <: QrCodeWatch](x: Self) {
       
-      inline def set$props(value: js.Any => Unit): Self = StObject.set(x, "$props", js.Any.fromFunction1(value))
+      inline def set$props(value: Any => Unit): Self = StObject.set(x, "$props", js.Any.fromFunction1(value))
     }
   }
   

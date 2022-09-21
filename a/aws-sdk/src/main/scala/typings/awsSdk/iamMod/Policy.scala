@@ -16,7 +16,7 @@ trait Policy extends StObject {
   /**
     * The date and time, in ISO 8601 date-time format, when the policy was created.
     */
-  var CreateDate: js.UndefOr[dateType] = js.undefined
+  var CreateDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The identifier for the version of the policy that is set as the default version.
@@ -34,17 +34,17 @@ trait Policy extends StObject {
   var IsAttachable: js.UndefOr[booleanType] = js.undefined
   
   /**
-    * The path to the policy. For more information about paths, see IAM Identifiers in the IAM User Guide.
+    * The path to the policy. For more information about paths, see IAM identifiers in the IAM User Guide.
     */
   var Path: js.UndefOr[policyPathType] = js.undefined
   
   /**
-    * The number of entities (users and roles) for which the policy is used to set the permissions boundary.  For more information about permissions boundaries, see Permissions Boundaries for IAM Identities  in the IAM User Guide.
+    * The number of entities (users and roles) for which the policy is used to set the permissions boundary.  For more information about permissions boundaries, see Permissions boundaries for IAM identities  in the IAM User Guide.
     */
   var PermissionsBoundaryUsageCount: js.UndefOr[attachmentCountType] = js.undefined
   
   /**
-    * The stable and unique string identifying the policy. For more information about IDs, see IAM Identifiers in the IAM User Guide.
+    * The stable and unique string identifying the policy. For more information about IDs, see IAM identifiers in the IAM User Guide.
     */
   var PolicyId: js.UndefOr[idType] = js.undefined
   
@@ -54,9 +54,14 @@ trait Policy extends StObject {
   var PolicyName: js.UndefOr[policyNameType] = js.undefined
   
   /**
+    * A list of tags that are attached to the instance profile. For more information about tagging, see Tagging IAM resources in the IAM User Guide.
+    */
+  var Tags: js.UndefOr[tagListType] = js.undefined
+  
+  /**
     * The date and time, in ISO 8601 date-time format, when the policy was last updated. When a policy has only one version, this field contains the date and time when the policy was created. When a policy has more than one version, this field contains the date and time when the most recent policy version was created.
     */
-  var UpdateDate: js.UndefOr[dateType] = js.undefined
+  var UpdateDate: js.UndefOr[js.Date] = js.undefined
 }
 object Policy {
   
@@ -75,7 +80,7 @@ object Policy {
     
     inline def setAttachmentCountUndefined: Self = StObject.set(x, "AttachmentCount", js.undefined)
     
-    inline def setCreateDate(value: dateType): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
+    inline def setCreateDate(value: js.Date): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
     inline def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
     
@@ -107,7 +112,13 @@ object Policy {
     
     inline def setPolicyNameUndefined: Self = StObject.set(x, "PolicyName", js.undefined)
     
-    inline def setUpdateDate(value: dateType): Self = StObject.set(x, "UpdateDate", value.asInstanceOf[js.Any])
+    inline def setTags(value: tagListType): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
+    
+    inline def setUpdateDate(value: js.Date): Self = StObject.set(x, "UpdateDate", value.asInstanceOf[js.Any])
     
     inline def setUpdateDateUndefined: Self = StObject.set(x, "UpdateDate", js.undefined)
   }

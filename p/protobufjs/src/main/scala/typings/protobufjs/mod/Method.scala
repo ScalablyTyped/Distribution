@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("protobufjs", "Method")
 @js.native
-class Method protected () extends ReflectionObject {
+open class Method protected () extends ReflectionObject {
   /**
     * Constructs a new service method instance.
     * @param name Method name
@@ -18,16 +18,18 @@ class Method protected () extends ReflectionObject {
     * @param [responseStream] Whether the response is streamed
     * @param [options] Declared options
     * @param [comment] The comment for this method
+    * @param [parsedOptions] Declared options, properly parsed into an object
     */
   def this(
     name: String,
     `type`: js.UndefOr[String],
     requestType: String,
     responseType: String,
-    requestStream: js.UndefOr[Boolean | StringDictionary[js.Any]],
-    responseStream: js.UndefOr[Boolean | StringDictionary[js.Any]],
-    options: js.UndefOr[StringDictionary[js.Any]],
-    comment: js.UndefOr[String]
+    requestStream: js.UndefOr[Boolean | StringDictionary[Any]],
+    responseStream: js.UndefOr[Boolean | StringDictionary[Any]],
+    options: js.UndefOr[StringDictionary[Any]],
+    comment: js.UndefOr[String],
+    parsedOptions: js.UndefOr[StringDictionary[Any]]
   ) = this()
   
   /** Whether requests are streamed or not. */

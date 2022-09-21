@@ -14,17 +14,17 @@ trait ASPxClientUploadControlDropZoneEnterEventArgs
   /**
     * Gets a drop zone object related to the processed event.
     */
-  var dropZone: js.Any
+  var dropZone: Any
 }
 object ASPxClientUploadControlDropZoneEnterEventArgs {
   
-  inline def apply(dropZone: js.Any): ASPxClientUploadControlDropZoneEnterEventArgs = {
+  inline def apply(dropZone: Any): ASPxClientUploadControlDropZoneEnterEventArgs = {
     val __obj = js.Dynamic.literal(dropZone = dropZone.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientUploadControlDropZoneEnterEventArgs]
   }
   
   extension [Self <: ASPxClientUploadControlDropZoneEnterEventArgs](x: Self) {
     
-    inline def setDropZone(value: js.Any): Self = StObject.set(x, "dropZone", value.asInstanceOf[js.Any])
+    inline def setDropZone(value: Any): Self = StObject.set(x, "dropZone", value.asInstanceOf[js.Any])
   }
 }

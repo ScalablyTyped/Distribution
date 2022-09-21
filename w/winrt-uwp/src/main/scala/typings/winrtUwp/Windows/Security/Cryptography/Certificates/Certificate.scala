@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Security.Cryptography.Certificates
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Foundation.Collections.IIterable
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
@@ -85,8 +84,8 @@ trait Certificate extends StObject {
   var subjectAlternativeName: SubjectAlternativeNameInfo = js.native
   
   /** Gets the date and time after which the certificate is valid. */
-  var validFrom: Date = js.native
+  var validFrom: js.Date = js.native
   
   /** Gets the date and time after which the certificate is no longer valid. */
-  var validTo: Date = js.native
+  var validTo: js.Date = js.native
 }

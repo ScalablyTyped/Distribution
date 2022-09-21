@@ -9,7 +9,6 @@ import typings.nextServer.renderMod.ManifestItem
 import typings.nextServer.routerMod.NextRouter
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
-import typings.node.querystringMod.ParsedUrlQuery
 import typings.node.urlMod.URLFormatOptions
 import typings.node.urlMod.UrlObject
 import typings.react.mod.ComponentType
@@ -34,18 +33,18 @@ object libUtilsMod {
   @js.native
   val SUPPORTS_PERFORMANCE_USER_TIMING: Boolean = js.native
   
-  inline def execOnce(fn: js.Function1[/* args */ js.Any, js.Any]): js.Function1[/* args */ js.Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("execOnce")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* args */ js.Any, Unit]]
+  inline def execOnce(fn: js.Function1[/* args */ Any, Any]): js.Function1[/* args */ Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("execOnce")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* args */ Any, Unit]]
   
   inline def formatWithValidation(url: UrlObject): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatWithValidation")(url.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def formatWithValidation(url: UrlObject, options: URLFormatOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatWithValidation")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def getDisplayName(Component: ComponentType[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDisplayName")(Component.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getDisplayName(Component: ComponentType[Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDisplayName")(Component.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def getLocationOrigin(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocationOrigin")().asInstanceOf[String]
   
   inline def getURL(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getURL")().asInstanceOf[String]
   
-  inline def isResSent(res: ServerResponse): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isResSent")(res.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isResSent(res: ServerResponse[IncomingMessage]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isResSent")(res.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def loadGetInitialProps[C /* <: BaseContext */, IP, P](Component: NextComponentType[C, IP, P], ctx: C): js.Promise[IP] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadGetInitialProps")(Component.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IP]]
   
@@ -89,18 +88,18 @@ object libUtilsMod {
   
   trait AppInitialProps extends StObject {
     
-    var pageProps: js.Any
+    var pageProps: Any
   }
   object AppInitialProps {
     
-    inline def apply(pageProps: js.Any): AppInitialProps = {
+    inline def apply(pageProps: Any): AppInitialProps = {
       val __obj = js.Dynamic.literal(pageProps = pageProps.asInstanceOf[js.Any])
       __obj.asInstanceOf[AppInitialProps]
     }
     
     extension [Self <: AppInitialProps](x: Self) {
       
-      inline def setPageProps(value: js.Any): Self = StObject.set(x, "pageProps", value.asInstanceOf[js.Any])
+      inline def setPageProps(value: Any): Self = StObject.set(x, "pageProps", value.asInstanceOf[js.Any])
     }
   }
   
@@ -108,20 +107,20 @@ object libUtilsMod {
     extends StObject
        with AppInitialProps {
     
-    var Component: NextComponentType[NextPageContext, js.Any, P]
+    var Component: NextComponentType[NextPageContext, Any, P]
     
     var router: R
   }
   object AppPropsType {
     
-    inline def apply[R /* <: NextRouter */, P](Component: NextComponentType[NextPageContext, js.Any, P], pageProps: js.Any, router: R): AppPropsType[R, P] = {
+    inline def apply[R /* <: NextRouter */, P](Component: NextComponentType[NextPageContext, Any, P], pageProps: Any, router: R): AppPropsType[R, P] = {
       val __obj = js.Dynamic.literal(Component = Component.asInstanceOf[js.Any], pageProps = pageProps.asInstanceOf[js.Any], router = router.asInstanceOf[js.Any])
       __obj.asInstanceOf[AppPropsType[R, P]]
     }
     
     extension [Self <: AppPropsType[?, ?], R /* <: NextRouter */, P](x: Self & (AppPropsType[R, P])) {
       
-      inline def setComponent(value: NextComponentType[NextPageContext, js.Any, P]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: NextComponentType[NextPageContext, Any, P]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
       
       inline def setRouter(value: R): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
     }
@@ -131,9 +130,9 @@ object libUtilsMod {
   
   trait BaseContext
     extends StObject
-       with /* k */ StringDictionary[js.Any] {
+       with /* k */ StringDictionary[Any] {
     
-    var res: js.UndefOr[ServerResponse] = js.undefined
+    var res: js.UndefOr[ServerResponse[IncomingMessage]] = js.undefined
   }
   object BaseContext {
     
@@ -144,7 +143,7 @@ object libUtilsMod {
     
     extension [Self <: BaseContext](x: Self) {
       
-      inline def setRes(value: ServerResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+      inline def setRes(value: ServerResponse[IncomingMessage]): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
       
       inline def setResUndefined: Self = StObject.set(x, "res", js.undefined)
     }
@@ -163,7 +162,7 @@ object libUtilsMod {
     inline def apply(
       AppTree: AppType,
       pathname: String,
-      query: ParsedUrlQuery,
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ParsedUrlQuery */ Any,
       renderPage: /* options */ js.UndefOr[ComponentsEnhancer] => RenderPageResult | js.Promise[RenderPageResult]
     ): DocumentContext = {
       val __obj = js.Dynamic.literal(AppTree = AppTree.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], renderPage = js.Any.fromFunction1(renderPage))
@@ -197,7 +196,7 @@ object libUtilsMod {
       
       inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      inline def setStylesVarargs(value: ReactElement*): Self = StObject.set(x, "styles", js.Array(value :_*))
+      inline def setStylesVarargs(value: ReactElement*): Self = StObject.set(x, "styles", js.Array(value*))
     }
   }
   
@@ -260,15 +259,15 @@ object libUtilsMod {
       
       inline def setDevFiles(value: js.Array[String]): Self = StObject.set(x, "devFiles", value.asInstanceOf[js.Any])
       
-      inline def setDevFilesVarargs(value: String*): Self = StObject.set(x, "devFiles", js.Array(value :_*))
+      inline def setDevFilesVarargs(value: String*): Self = StObject.set(x, "devFiles", js.Array(value*))
       
       inline def setDynamicImports(value: js.Array[ManifestItem]): Self = StObject.set(x, "dynamicImports", value.asInstanceOf[js.Any])
       
-      inline def setDynamicImportsVarargs(value: ManifestItem*): Self = StObject.set(x, "dynamicImports", js.Array(value :_*))
+      inline def setDynamicImportsVarargs(value: ManifestItem*): Self = StObject.set(x, "dynamicImports", js.Array(value*))
       
       inline def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value*))
       
       inline def setHybridAmp(value: Boolean): Self = StObject.set(x, "hybridAmp", value.asInstanceOf[js.Any])
       
@@ -300,17 +299,23 @@ object libUtilsMod {
     
     var page: String
     
-    var props: js.Any
+    var props: Any
     
-    var query: ParsedUrlQuery
+    var query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ParsedUrlQuery */ Any
     
-    var runtimeConfig: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var runtimeConfig: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     var skeleton: js.UndefOr[Boolean] = js.undefined
   }
   object NEXT_DATA {
     
-    inline def apply(buildId: String, dataManager: String, page: String, props: js.Any, query: ParsedUrlQuery): NEXT_DATA = {
+    inline def apply(
+      buildId: String,
+      dataManager: String,
+      page: String,
+      props: Any,
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ParsedUrlQuery */ Any
+    ): NEXT_DATA = {
       val __obj = js.Dynamic.literal(buildId = buildId.asInstanceOf[js.Any], dataManager = dataManager.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
       __obj.asInstanceOf[NEXT_DATA]
     }
@@ -329,7 +334,7 @@ object libUtilsMod {
       
       inline def setDynamicIdsUndefined: Self = StObject.set(x, "dynamicIds", js.undefined)
       
-      inline def setDynamicIdsVarargs(value: String*): Self = StObject.set(x, "dynamicIds", js.Array(value :_*))
+      inline def setDynamicIdsVarargs(value: String*): Self = StObject.set(x, "dynamicIds", js.Array(value*))
       
       inline def setErr(value: ErrorstatusCodenumberunde): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
       
@@ -341,11 +346,13 @@ object libUtilsMod {
       
       inline def setPage(value: String): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
-      inline def setProps(value: js.Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      inline def setQuery(value: ParsedUrlQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ParsedUrlQuery */ Any
+      ): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      inline def setRuntimeConfig(value: StringDictionary[js.Any]): Self = StObject.set(x, "runtimeConfig", value.asInstanceOf[js.Any])
+      inline def setRuntimeConfig(value: StringDictionary[Any]): Self = StObject.set(x, "runtimeConfig", value.asInstanceOf[js.Any])
       
       inline def setRuntimeConfigUndefined: Self = StObject.set(x, "runtimeConfig", js.undefined)
       
@@ -358,7 +365,7 @@ object libUtilsMod {
   @js.native
   trait NextApiRequest extends IncomingMessage {
     
-    var body: js.Any = js.native
+    var body: Any = js.native
     
     /**
       * Object of `cookies` from header
@@ -372,7 +379,7 @@ object libUtilsMod {
   }
   
   @js.native
-  trait NextApiResponse[T] extends ServerResponse {
+  trait NextApiResponse[T] extends ServerResponse[IncomingMessage] {
     
     /**
       * Send data `json` data in response
@@ -414,7 +421,7 @@ object libUtilsMod {
     /**
       * Query string section of `URL` parsed as an object.
       */
-    var query: ParsedUrlQuery
+    var query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ParsedUrlQuery */ Any
     
     /**
       * `HTTP` request object.
@@ -424,11 +431,15 @@ object libUtilsMod {
     /**
       * `HTTP` response object.
       */
-    var res: js.UndefOr[ServerResponse] = js.undefined
+    var res: js.UndefOr[ServerResponse[IncomingMessage]] = js.undefined
   }
   object NextPageContext {
     
-    inline def apply(AppTree: AppType, pathname: String, query: ParsedUrlQuery): NextPageContext = {
+    inline def apply(
+      AppTree: AppType,
+      pathname: String,
+      query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ParsedUrlQuery */ Any
+    ): NextPageContext = {
       val __obj = js.Dynamic.literal(AppTree = AppTree.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
       __obj.asInstanceOf[NextPageContext]
     }
@@ -449,13 +460,15 @@ object libUtilsMod {
       
       inline def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
       
-      inline def setQuery(value: ParsedUrlQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ParsedUrlQuery */ Any
+      ): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       inline def setReq(value: IncomingMessage): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
       
       inline def setReqUndefined: Self = StObject.set(x, "req", js.undefined)
       
-      inline def setRes(value: ServerResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+      inline def setRes(value: ServerResponse[IncomingMessage]): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
       
       inline def setResUndefined: Self = StObject.set(x, "res", js.undefined)
     }
@@ -491,7 +504,7 @@ object libUtilsMod {
       
       inline def setHeadUndefined: Self = StObject.set(x, "head", js.undefined)
       
-      inline def setHeadVarargs(value: (Element | Null)*): Self = StObject.set(x, "head", js.Array(value :_*))
+      inline def setHeadVarargs(value: (Element | Null)*): Self = StObject.set(x, "head", js.Array(value*))
       
       inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     }

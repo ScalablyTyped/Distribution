@@ -94,7 +94,7 @@ object identifier {
     /** [Method] Returns the value of id
       * @returns Object
       */
-    var getId: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var getId: js.UndefOr[js.Function0[Any]] = js.undefined
     
     /** [Method] Returns the value of version
       * @returns Number
@@ -102,20 +102,20 @@ object identifier {
     var getVersion: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Config Option] (Object) */
-    var id: js.UndefOr[js.Any] = js.undefined
+    var id: js.UndefOr[Any] = js.undefined
     
     /** [Method] Reconfigures this generator given new config properties
       * @param config Object
       */
-    var reconfigure: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var reconfigure: js.UndefOr[js.Function1[/* config */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Property] (Number/Object) */
-    var salt: js.UndefOr[js.Any] = js.undefined
+    var salt: js.UndefOr[Any] = js.undefined
     
     /** [Method] Sets the value of id
       * @param id Object The new value.
       */
-    var setId: js.UndefOr[js.Function1[/* id */ js.UndefOr[js.Any], Unit]] = js.undefined
+    var setId: js.UndefOr[js.Function1[/* id */ js.UndefOr[Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of version
       * @param version Number The new value.
@@ -123,7 +123,7 @@ object identifier {
     var setVersion: js.UndefOr[js.Function1[/* version */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Property] (Number/Object) */
-    var timestamp: js.UndefOr[js.Any] = js.undefined
+    var timestamp: js.UndefOr[Any] = js.undefined
     
     /** [Config Option] (Number) */
     var version: js.UndefOr[Double] = js.undefined
@@ -137,7 +137,7 @@ object identifier {
     
     extension [Self <: IUuid](x: Self) {
       
-      inline def setGetId(value: () => js.Any): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+      inline def setGetId(value: () => Any): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
       
       inline def setGetIdUndefined: Self = StObject.set(x, "getId", js.undefined)
       
@@ -145,19 +145,19 @@ object identifier {
       
       inline def setGetVersionUndefined: Self = StObject.set(x, "getVersion", js.undefined)
       
-      inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setReconfigure(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "reconfigure", js.Any.fromFunction1(value))
+      inline def setReconfigure(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "reconfigure", js.Any.fromFunction1(value))
       
       inline def setReconfigureUndefined: Self = StObject.set(x, "reconfigure", js.undefined)
       
-      inline def setSalt(value: js.Any): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
+      inline def setSalt(value: Any): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
       
       inline def setSaltUndefined: Self = StObject.set(x, "salt", js.undefined)
       
-      inline def setSetId(value: /* id */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setId", js.Any.fromFunction1(value))
+      inline def setSetId(value: /* id */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setId", js.Any.fromFunction1(value))
       
       inline def setSetIdUndefined: Self = StObject.set(x, "setId", js.undefined)
       
@@ -165,7 +165,7 @@ object identifier {
       
       inline def setSetVersionUndefined: Self = StObject.set(x, "setVersion", js.undefined)
       
-      inline def setTimestamp(value: js.Any): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Any): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
       inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
       

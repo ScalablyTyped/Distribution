@@ -1,7 +1,6 @@
 package typings.uuid
 
 import typings.std.ArrayLike
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -160,7 +159,7 @@ object mod {
     
     var clockseq: js.UndefOr[Double] = js.undefined
     
-    var msecs: js.UndefOr[Double | Date] = js.undefined
+    var msecs: js.UndefOr[Double | js.Date] = js.undefined
     
     var node: js.UndefOr[InputBuffer] = js.undefined
     
@@ -179,7 +178,7 @@ object mod {
       
       inline def setClockseqUndefined: Self = StObject.set(x, "clockseq", js.undefined)
       
-      inline def setMsecs(value: Double | Date): Self = StObject.set(x, "msecs", value.asInstanceOf[js.Any])
+      inline def setMsecs(value: Double | js.Date): Self = StObject.set(x, "msecs", value.asInstanceOf[js.Any])
       
       inline def setMsecsUndefined: Self = StObject.set(x, "msecs", js.undefined)
       

@@ -12,6 +12,8 @@ trait ButtonMenuItem
   /**
     * Indicates whether to automatically close the menu's item.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-support-ButtonMenuItem.html#autoCloseMenu)
     */
   var autoCloseMenu: Boolean = js.native
@@ -21,7 +23,7 @@ trait ButtonMenuItem
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-support-ButtonMenuItem.html#clickFunction)
     */
-  def clickFunction(event: js.Any): Unit = js.native
+  def clickFunction(event: Any): scala.Unit = js.native
   /**
     * A function that executes on the ButtonMenuItem's `click` event.
     *
@@ -54,6 +56,8 @@ trait ButtonMenuItem
   /**
     * Indicates if the menu content is visible.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-support-ButtonMenuItem.html#open)
     */
   var open: Boolean = js.native
@@ -61,12 +65,16 @@ trait ButtonMenuItem
   /**
     * Indicates whether the menu item is selected.
     *
+    * @default false
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-support-ButtonMenuItem.html#selected)
     */
   var selected: Boolean = js.native
   
   /**
     * Indicates whether a toggled state should be applied to individual menu items.
+    *
+    * @default false
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-support-ButtonMenuItem.html#selectionEnabled)
     */

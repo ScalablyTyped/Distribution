@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Sends PlayReady-ND messages and challenges using the TCP network protocol. */
 @JSGlobal("Windows.Media.Protection.PlayReady.NDTCPMessenger")
 @js.native
-class NDTCPMessenger protected ()
+open class NDTCPMessenger protected ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Protection.PlayReady.NDTCPMessenger {
   /**

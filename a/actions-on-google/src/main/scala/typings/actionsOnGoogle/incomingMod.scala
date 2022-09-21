@@ -15,7 +15,7 @@ object incomingMod {
   @JSImport("actions-on-google/dist/service/dialogflow/incoming", "Incoming")
   @js.native
   /** @hidden */
-  class Incoming () extends StObject {
+  open class Incoming () extends StObject {
     def this(fulfillment: js.Array[GoogleCloudDialogflowV2IntentMessage]) = this()
     def this(fulfillment: DialogflowV1Fulfillment) = this()
     
@@ -76,7 +76,7 @@ object incomingMod {
       * @param type A string checking for the typeof message or a class checking for instanceof message
       * @public
       */
-    def get[TMessage /* <: IncomingMessage */](`type`: Instantiable1[/* args (repeated) */ js.Any, TMessage]): TMessage = js.native
+    def get[TMessage /* <: IncomingMessage */](`type`: Instantiable1[/* args (repeated) */ Any, TMessage]): TMessage = js.native
     /** @public */
     @JSName("get")
     def get_string(`type`: string): String = js.native

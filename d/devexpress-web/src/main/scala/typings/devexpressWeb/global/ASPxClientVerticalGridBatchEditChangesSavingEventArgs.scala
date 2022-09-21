@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientVerticalGridBatchEditChangesSavingEventArgs")
 @js.native
-class ASPxClientVerticalGridBatchEditChangesSavingEventArgs protected ()
+open class ASPxClientVerticalGridBatchEditChangesSavingEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientVerticalGridBatchEditChangesSavingEventArgs {
   /**
@@ -18,10 +18,10 @@ class ASPxClientVerticalGridBatchEditChangesSavingEventArgs protected ()
     * @param deletedValues A hashtable that stores information about deleted cells.
     * @param updatedValues A hashtable that stores information about updated cells.
     */
-  def this(insertedValues: js.Any, deletedValues: js.Any, updatedValues: js.Any) = this()
+  def this(insertedValues: Any, deletedValues: Any, updatedValues: Any) = this()
   
   /**
-    * Gets or sets a value indicating whether the action which raised the event should be canceled.
+    * Specifies whether to cancel the related action (for example, row edit, export).
     */
   /* CompleteClass */
   var cancel: Boolean = js.native
@@ -30,17 +30,17 @@ class ASPxClientVerticalGridBatchEditChangesSavingEventArgs protected ()
     * Gets a hashtable that maintains information about deleted cells.
     */
   /* CompleteClass */
-  var deletedValues: js.Any = js.native
+  var deletedValues: Any = js.native
   
   /**
     * Gets a hashtable that maintains information about inserted cells.
     */
   /* CompleteClass */
-  var insertedValues: js.Any = js.native
+  var insertedValues: Any = js.native
   
   /**
     * Gets a hashtable that maintains information about updated cells.
     */
   /* CompleteClass */
-  var updatedValues: js.Any = js.native
+  var updatedValues: Any = js.native
 }

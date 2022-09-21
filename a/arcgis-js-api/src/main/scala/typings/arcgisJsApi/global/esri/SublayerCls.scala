@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html)
   */
-class SublayerCls ()
+open class SublayerCls ()
   extends StObject
      with typings.arcgisJsApi.esri.Sublayer {
   def this(properties: SublayerProperties) = this()

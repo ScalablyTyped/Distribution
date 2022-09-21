@@ -8,7 +8,7 @@ trait SchemaApiDimensionFilterGroup extends StObject {
   
   var filters: js.UndefOr[js.Array[SchemaApiDimensionFilter]] = js.undefined
   
-  var groupType: js.UndefOr[String] = js.undefined
+  var groupType: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaApiDimensionFilterGroup {
   
@@ -23,9 +23,11 @@ object SchemaApiDimensionFilterGroup {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    inline def setFiltersVarargs(value: SchemaApiDimensionFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: SchemaApiDimensionFilter*): Self = StObject.set(x, "filters", js.Array(value*))
     
     inline def setGroupType(value: String): Self = StObject.set(x, "groupType", value.asInstanceOf[js.Any])
+    
+    inline def setGroupTypeNull: Self = StObject.set(x, "groupType", null)
     
     inline def setGroupTypeUndefined: Self = StObject.set(x, "groupType", js.undefined)
   }

@@ -322,7 +322,7 @@ object XPackage {
     isBundle: () => Boolean,
     isRegistered: (XAbortChannel, XCommandEnvironment) => Optional[Ambiguous[Boolean]],
     isRemoved: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     registerPackage: (Boolean, XAbortChannel, XCommandEnvironment) => Unit,
     release: () => Unit,
     removeEventListener: XEventListener => Unit,

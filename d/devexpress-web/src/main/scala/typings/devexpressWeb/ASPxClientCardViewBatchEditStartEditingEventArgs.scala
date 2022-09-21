@@ -14,7 +14,7 @@ trait ASPxClientCardViewBatchEditStartEditingEventArgs
   /**
     * Gets a hashtable that maintains information about editable cells.
     */
-  var cardValues: js.Any
+  var cardValues: Any
   
   /**
     * Gets the CardView column that owns a cell that is about to be edited.
@@ -28,14 +28,14 @@ trait ASPxClientCardViewBatchEditStartEditingEventArgs
 }
 object ASPxClientCardViewBatchEditStartEditingEventArgs {
   
-  inline def apply(cancel: Boolean, cardValues: js.Any, focusedColumn: ASPxClientCardViewColumn, visibleIndex: Double): ASPxClientCardViewBatchEditStartEditingEventArgs = {
+  inline def apply(cancel: Boolean, cardValues: Any, focusedColumn: ASPxClientCardViewColumn, visibleIndex: Double): ASPxClientCardViewBatchEditStartEditingEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], cardValues = cardValues.asInstanceOf[js.Any], focusedColumn = focusedColumn.asInstanceOf[js.Any], visibleIndex = visibleIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientCardViewBatchEditStartEditingEventArgs]
   }
   
   extension [Self <: ASPxClientCardViewBatchEditStartEditingEventArgs](x: Self) {
     
-    inline def setCardValues(value: js.Any): Self = StObject.set(x, "cardValues", value.asInstanceOf[js.Any])
+    inline def setCardValues(value: Any): Self = StObject.set(x, "cardValues", value.asInstanceOf[js.Any])
     
     inline def setFocusedColumn(value: ASPxClientCardViewColumn): Self = StObject.set(x, "focusedColumn", value.asInstanceOf[js.Any])
     

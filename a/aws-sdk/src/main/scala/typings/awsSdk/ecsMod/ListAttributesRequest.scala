@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListAttributesRequest extends StObject {
   
   /**
-    * The name of the attribute with which to filter the results. 
+    * The name of the attribute to filter the results with. 
     */
   var attributeName: js.UndefOr[String] = js.undefined
   
   /**
-    * The value of the attribute with which to filter results. You must also specify an attribute name to use this parameter.
+    * The value of the attribute to filter results with. You must also specify an attribute name to use this parameter.
     */
   var attributeValue: js.UndefOr[String] = js.undefined
   
@@ -22,17 +22,17 @@ trait ListAttributesRequest extends StObject {
   var cluster: js.UndefOr[String] = js.undefined
   
   /**
-    * The maximum number of cluster results returned by ListAttributes in paginated output. When this parameter is used, ListAttributes only returns maxResults results in a single page along with a nextToken response element. The remaining results of the initial request can be seen by sending another ListAttributes request with the returned nextToken value. This value can be between 1 and 100. If this parameter is not used, then ListAttributes returns up to 100 results and a nextToken value if applicable.
+    * The maximum number of cluster results that ListAttributes returned in paginated output. When this parameter is used, ListAttributes only returns maxResults results in a single page along with a nextToken response element. The remaining results of the initial request can be seen by sending another ListAttributes request with the returned nextToken value. This value can be between 1 and 100. If this parameter isn't used, then ListAttributes returns up to 100 results and a nextToken value if applicable.
     */
   var maxResults: js.UndefOr[BoxedInteger] = js.undefined
   
   /**
-    * The nextToken value returned from a ListAttributes request indicating that more results are available to fulfill the request and further calls will be needed. If maxResults was provided, it is possible the number of results to be fewer than maxResults.  This token should be treated as an opaque identifier that is only used to retrieve the next items in a list and not for other programmatic purposes. 
+    * The nextToken value returned from a ListAttributes request indicating that more results are available to fulfill the request and further calls are needed. If maxResults was provided, it's possible the number of results to be fewer than maxResults.  This token should be treated as an opaque identifier that is only used to retrieve the next items in a list and not for other programmatic purposes. 
     */
   var nextToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The type of the target with which to list attributes.
+    * The type of the target to list attributes with.
     */
   var targetType: TargetType
 }

@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaObject
   extends StObject
      with IJsonSchema
-     with /* index */ StringDictionary[js.Any] {
+     with /* index */ StringDictionary[Any] {
   
   var discriminator: js.UndefOr[String] = js.undefined
   
-  var example: js.UndefOr[js.Any] = js.undefined
+  var example: js.UndefOr[Any] = js.undefined
   
   var externalDocs: js.UndefOr[ExternalDocumentationObject] = js.undefined
   
@@ -33,7 +33,7 @@ object SchemaObject {
     
     inline def setDiscriminatorUndefined: Self = StObject.set(x, "discriminator", js.undefined)
     
-    inline def setExample(value: js.Any): Self = StObject.set(x, "example", value.asInstanceOf[js.Any])
+    inline def setExample(value: Any): Self = StObject.set(x, "example", value.asInstanceOf[js.Any])
     
     inline def setExampleUndefined: Self = StObject.set(x, "example", js.undefined)
     

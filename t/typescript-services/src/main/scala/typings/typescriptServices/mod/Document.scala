@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "Document")
 @js.native
-class Document protected ()
+open class Document protected ()
   extends StObject
      with typings.typescriptServices.TypeScript.Document {
   def this(
@@ -24,25 +24,25 @@ class Document protected ()
   ) = this()
   
   /* private */ /* CompleteClass */
-  var _amdDependencies: js.Any = js.native
+  var _amdDependencies: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _astDeclMap: js.Any = js.native
+  var _astDeclMap: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _bloomFilter: js.Any = js.native
+  var _bloomFilter: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _compiler: js.Any = js.native
+  var _compiler: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _declASTMap: js.Any = js.native
+  var _declASTMap: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _diagnostics: js.Any = js.native
+  var _diagnostics: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _externalModuleIndicatorSpan: js.Any = js.native
+  var _externalModuleIndicatorSpan: Any = js.native
   
   /* CompleteClass */
   override def _getASTForDecl(decl: typings.typescriptServices.TypeScript.PullDecl): typings.typescriptServices.TypeScript.AST = js.native
@@ -51,13 +51,13 @@ class Document protected ()
   override def _getDeclForAST(ast: typings.typescriptServices.TypeScript.AST): typings.typescriptServices.TypeScript.PullDecl = js.native
   
   /* private */ /* CompleteClass */
-  var _lineMap: js.Any = js.native
+  var _lineMap: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _scriptSnapshot: js.Any = js.native
+  var _scriptSnapshot: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _semanticInfoChain: js.Any = js.native
+  var _semanticInfoChain: Any = js.native
   
   /* CompleteClass */
   override def _setASTForDecl(
@@ -72,13 +72,13 @@ class Document protected ()
   ): Unit = js.native
   
   /* private */ /* CompleteClass */
-  var _sourceUnit: js.Any = js.native
+  var _sourceUnit: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _syntaxTree: js.Any = js.native
+  var _syntaxTree: Any = js.native
   
   /* private */ /* CompleteClass */
-  var _topLevelDecl: js.Any = js.native
+  var _topLevelDecl: Any = js.native
   
   /* CompleteClass */
   override def amdDependencies(): js.Array[String] = js.native
@@ -90,7 +90,7 @@ class Document protected ()
   var byteOrderMark: typings.typescriptServices.TypeScript.ByteOrderMark = js.native
   
   /* private */ /* CompleteClass */
-  override def cacheSyntaxTreeInfo(syntaxTree: js.Any): js.Any = js.native
+  override def cacheSyntaxTreeInfo(syntaxTree: Any): Any = js.native
   
   /* CompleteClass */
   override def diagnostics(): js.Array[typings.typescriptServices.TypeScript.Diagnostic] = js.native
@@ -105,19 +105,19 @@ class Document protected ()
   var fileName: String = js.native
   
   /* private */ /* CompleteClass */
-  override def getAmdDependency(comment: js.Any): js.Any = js.native
+  override def getAmdDependency(comment: Any): Any = js.native
   
   /* CompleteClass */
   override def getEnclosingDecl(ast: typings.typescriptServices.TypeScript.AST): typings.typescriptServices.TypeScript.PullDecl = js.native
   
   /* private */ /* CompleteClass */
-  override def getImplicitImportSpan(sourceUnitLeadingTrivia: js.Any): js.Any = js.native
+  override def getImplicitImportSpan(sourceUnitLeadingTrivia: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def getImplicitImportSpanWorker(trivia: js.Any, position: js.Any): js.Any = js.native
+  override def getImplicitImportSpanWorker(trivia: Any, position: Any): Any = js.native
   
   /* private */ /* CompleteClass */
-  override def getTopLevelImportOrExportSpan(node: js.Any): js.Any = js.native
+  override def getTopLevelImportOrExportSpan(node: Any): Any = js.native
   
   /* CompleteClass */
   override def invalidate(): Unit = js.native

@@ -10,15 +10,12 @@ A simple string template function based on named or indexed arguments
 | ------------------ | :-------------: |
 | Full name          | string-template |
 | Keywords           | template, string, format, replace, arguments |
-| # releases         | 1 |
-| # dependents       | 307 |
-| # downloads        | 51304189 |
-| # stars            | 23 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 5918667.333333333 |
+| # stars            | 262.0 |
 
 ## Links
-- [Homepage](https://github.com/Matt-Esch/string-template)
-- [Bugs](https://github.com/Matt-Esch/string-template/issues)
-- [Repository](https://github.com/Matt-Esch/string-template)
 - [Npm](https://www.npmjs.com/package/string-template)
     
 

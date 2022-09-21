@@ -1,6 +1,6 @@
 package typings.eggCookies
 
-import typings.std.Date
+import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,12 +9,27 @@ object mod {
   
   @JSImport("egg-cookies", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with EggCookies {
-    def this(ctx: js.Any) = this()
-    def this(ctx: js.Any, keys: js.Any) = this()
-    def this(ctx: Unit, keys: js.Any) = this()
+    def this(ctx: Any) = this()
+    def this(ctx: Any, keys: Any) = this()
+    def this(ctx: Unit, keys: Any) = this()
+  }
+  
+  @JSImport("egg-cookies", "CookieError")
+  @js.native
+  open class CookieError ()
+    extends StObject
+       with Error {
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   trait CookieGetOptions extends StObject {
@@ -63,7 +78,7 @@ object mod {
     /**
       * Expire time
       */
-    var expires: js.UndefOr[Date] = js.undefined
+    var expires: js.UndefOr[js.Date] = js.undefined
     
     /**
       * Is for http only
@@ -117,7 +132,7 @@ object mod {
       
       inline def setEncryptUndefined: Self = StObject.set(x, "encrypt", js.undefined)
       
-      inline def setExpires(value: Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: js.Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
       inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
       

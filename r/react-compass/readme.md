@@ -11,14 +11,11 @@ A carefully crafted Compass component for React.
 | Full name          | react-compass |
 | Keywords           | react, react-component, compass, ui |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 1498 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 223.0 |
+| # stars            | 8.0 |
 
 ## Links
-- [Homepage](https://github.com/virtyaluk/react-compass)
-- [Bugs](https://github.com/virtyaluk/react-compass/issues)
-- [Repository](https://github.com/virtyaluk/react-compass)
 - [Npm](https://www.npmjs.com/package/react-compass)
     
 

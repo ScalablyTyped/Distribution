@@ -7,16 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaCreateConferenceRequest extends StObject {
   
   /**
-    * The conference solution, such as Hangouts or Hangouts Meet.
+    * The conference solution, such as Hangouts or Google Meet.
     */
   var conferenceSolutionKey: js.UndefOr[SchemaConferenceSolutionKey] = js.undefined
   
   /**
-    * The client-generated unique ID for this request. Clients should
-    * regenerate this ID for every new request. If an ID provided is the same
-    * as for the previous request, the request is ignored.
+    * The client-generated unique ID for this request.
+    * Clients should regenerate this ID for every new request. If an ID provided is the same as for the previous request, the request is ignored.
     */
-  var requestId: js.UndefOr[String] = js.undefined
+  var requestId: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The status of the conference create request.
@@ -37,6 +36,8 @@ object SchemaCreateConferenceRequest {
     inline def setConferenceSolutionKeyUndefined: Self = StObject.set(x, "conferenceSolutionKey", js.undefined)
     
     inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    
+    inline def setRequestIdNull: Self = StObject.set(x, "requestId", null)
     
     inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
     

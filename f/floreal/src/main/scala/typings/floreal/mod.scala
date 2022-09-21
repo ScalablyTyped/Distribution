@@ -9,8 +9,9 @@ object mod {
   
   @JSImport("floreal", "Date")
   @js.native
-  class Date () extends ^ {
+  open class Date () extends ^ {
     def this(value: String) = this()
+    def this(value: js.Date) = this()
     def this(value: Double) = this()
   }
   object Date {
@@ -27,6 +28,6 @@ object mod {
     inline def dayNames_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("day_names")(x.asInstanceOf[js.Any])
     
     /* static member */
-    inline def firstDayOfYear(year: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("first_day_of_year")(year.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def firstDayOfYear(year: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("first_day_of_year")(year.asInstanceOf[js.Any]).asInstanceOf[Any]
   }
 }

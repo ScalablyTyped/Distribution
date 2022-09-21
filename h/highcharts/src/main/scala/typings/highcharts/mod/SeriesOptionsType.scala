@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Inlined highcharts.highcharts.SeriesOptionsRegistry[keyof highcharts.highcharts.SeriesOptionsRegistry] */
 /* Rewritten from type alias, can be one of: 
+  - typings.highcharts.highchartsStrings.nodePadding
+  - typings.highcharts.highchartsStrings.centerInCategory
   - typings.highcharts.highchartsStrings.lineWidth
   - typings.highcharts.highchartsStrings.connectEnds
   - typings.highcharts.highchartsStrings.linecap
@@ -25,7 +27,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.highcharts.highchartsStrings.dataParser
   - typings.highcharts.highchartsStrings.startAngle
   - typings.highcharts.highchartsStrings.allAreas
+  - typings.highcharts.highchartsStrings.linkRadius
   - typings.highcharts.highchartsStrings.gapUnit
+  - typings.highcharts.highchartsStrings.offset
   - typings.highcharts.highchartsStrings.mapData
   - typings.highcharts.highchartsStrings.wrap
   - typings.highcharts.highchartsStrings.step
@@ -33,18 +37,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.highcharts.highchartsStrings.groupPadding
   - typings.highcharts.highchartsStrings.aroonDown
   - typings.highcharts.highchartsStrings.compareBase
+  - typings.highcharts.highchartsStrings.curveFactor
   - typings.highcharts.highchartsStrings.stack
   - typings.highcharts.highchartsStrings.colorByPoint
   - typings.highcharts.highchartsStrings.ignoreHiddenPoint
   - typings.highcharts.highchartsStrings.edgeWidth
   - typings.highcharts.highchartsStrings.xAxis
   - typings.highcharts.highchartsStrings.dial
+  - typings.highcharts.highchartsStrings.thickness
   - typings.highcharts.highchartsStrings.fillColor
   - typings.highcharts.highchartsStrings.`type`
   - typings.highcharts.highchartsStrings.borderRadius
   - typings.highcharts.highchartsStrings.colorAxis
   - typings.highcharts.highchartsStrings.edgeColor
   - typings.highcharts.highchartsStrings.dataSorting
+  - typings.highcharts.highchartsStrings.linkWeight
   - typings.highcharts.highchartsStrings.nodes
   - typings.highcharts.highchartsStrings.marker
   - typings.highcharts.highchartsStrings.useOhlcData
@@ -70,6 +77,8 @@ object SeriesOptionsType {
   
   inline def center: typings.highcharts.highchartsStrings.center = "center".asInstanceOf[typings.highcharts.highchartsStrings.center]
   
+  inline def centerInCategory: typings.highcharts.highchartsStrings.centerInCategory = "centerInCategory".asInstanceOf[typings.highcharts.highchartsStrings.centerInCategory]
+  
   inline def colorAxis: typings.highcharts.highchartsStrings.colorAxis = "colorAxis".asInstanceOf[typings.highcharts.highchartsStrings.colorAxis]
   
   inline def colorByPoint: typings.highcharts.highchartsStrings.colorByPoint = "colorByPoint".asInstanceOf[typings.highcharts.highchartsStrings.colorByPoint]
@@ -81,6 +90,8 @@ object SeriesOptionsType {
   inline def connectEnds: typings.highcharts.highchartsStrings.connectEnds = "connectEnds".asInstanceOf[typings.highcharts.highchartsStrings.connectEnds]
   
   inline def connectNulls: typings.highcharts.highchartsStrings.connectNulls = "connectNulls".asInstanceOf[typings.highcharts.highchartsStrings.connectNulls]
+  
+  inline def curveFactor: typings.highcharts.highchartsStrings.curveFactor = "curveFactor".asInstanceOf[typings.highcharts.highchartsStrings.curveFactor]
   
   inline def data: typings.highcharts.highchartsStrings.data = "data".asInstanceOf[typings.highcharts.highchartsStrings.data]
   
@@ -118,6 +129,10 @@ object SeriesOptionsType {
   
   inline def linecap: typings.highcharts.highchartsStrings.linecap = "linecap".asInstanceOf[typings.highcharts.highchartsStrings.linecap]
   
+  inline def linkRadius: typings.highcharts.highchartsStrings.linkRadius = "linkRadius".asInstanceOf[typings.highcharts.highchartsStrings.linkRadius]
+  
+  inline def linkWeight: typings.highcharts.highchartsStrings.linkWeight = "linkWeight".asInstanceOf[typings.highcharts.highchartsStrings.linkWeight]
+  
   inline def mapData: typings.highcharts.highchartsStrings.mapData = "mapData".asInstanceOf[typings.highcharts.highchartsStrings.mapData]
   
   inline def marker: typings.highcharts.highchartsStrings.marker = "marker".asInstanceOf[typings.highcharts.highchartsStrings.marker]
@@ -126,7 +141,11 @@ object SeriesOptionsType {
   
   inline def minSize: typings.highcharts.highchartsStrings.minSize = "minSize".asInstanceOf[typings.highcharts.highchartsStrings.minSize]
   
+  inline def nodePadding: typings.highcharts.highchartsStrings.nodePadding = "nodePadding".asInstanceOf[typings.highcharts.highchartsStrings.nodePadding]
+  
   inline def nodes: typings.highcharts.highchartsStrings.nodes = "nodes".asInstanceOf[typings.highcharts.highchartsStrings.nodes]
+  
+  inline def offset: typings.highcharts.highchartsStrings.offset = "offset".asInstanceOf[typings.highcharts.highchartsStrings.offset]
   
   inline def pivot: typings.highcharts.highchartsStrings.pivot = "pivot".asInstanceOf[typings.highcharts.highchartsStrings.pivot]
   
@@ -143,6 +162,8 @@ object SeriesOptionsType {
   inline def step: typings.highcharts.highchartsStrings.step = "step".asInstanceOf[typings.highcharts.highchartsStrings.step]
   
   inline def steps: typings.highcharts.highchartsStrings.steps = "steps".asInstanceOf[typings.highcharts.highchartsStrings.steps]
+  
+  inline def thickness: typings.highcharts.highchartsStrings.thickness = "thickness".asInstanceOf[typings.highcharts.highchartsStrings.thickness]
   
   inline def `type`: typings.highcharts.highchartsStrings.`type` = "type".asInstanceOf[typings.highcharts.highchartsStrings.`type`]
   

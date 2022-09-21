@@ -8,11 +8,11 @@ trait Match extends StObject {
   
   var `match`: String
   
-  var options: js.Any
+  var options: Any
 }
 object Match {
   
-  inline def apply(`match`: String, options: js.Any): Match = {
+  inline def apply(`match`: String, options: Any): Match = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
     __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Match]
@@ -22,6 +22,6 @@ object Match {
     
     inline def setMatch(value: String): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
-    inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

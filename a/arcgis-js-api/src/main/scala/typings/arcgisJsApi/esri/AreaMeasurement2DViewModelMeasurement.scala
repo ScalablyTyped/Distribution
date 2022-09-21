@@ -22,7 +22,7 @@ trait AreaMeasurement2DViewModelMeasurement
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html#measurement)
     */
-  var geometry: js.Any
+  var geometry: Any
   
   /**
     * The perimeter (m).
@@ -36,7 +36,7 @@ object AreaMeasurement2DViewModelMeasurement {
   inline def apply(
     area: Double,
     constructor: js.Function,
-    geometry: js.Any,
+    geometry: Any,
     hasOwnProperty: PropertyKey => Boolean,
     perimeter: Double,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -49,7 +49,7 @@ object AreaMeasurement2DViewModelMeasurement {
     
     inline def setArea(value: Double): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     
-    inline def setGeometry(value: js.Any): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+    inline def setGeometry(value: Any): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
     inline def setPerimeter(value: Double): Self = StObject.set(x, "perimeter", value.asInstanceOf[js.Any])
   }

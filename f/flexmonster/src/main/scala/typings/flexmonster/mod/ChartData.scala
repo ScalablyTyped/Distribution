@@ -8,7 +8,7 @@ trait ChartData extends StObject {
   
   var columns: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var element: js.Any
+  var element: Any
   
   var id: js.UndefOr[String] = js.undefined
   
@@ -22,7 +22,7 @@ trait ChartData extends StObject {
 }
 object ChartData {
   
-  inline def apply(element: js.Any): ChartData = {
+  inline def apply(element: Any): ChartData = {
     val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartData]
   }
@@ -33,9 +33,9 @@ object ChartData {
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    inline def setColumnsVarargs(value: js.Object*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: js.Object*): Self = StObject.set(x, "columns", js.Array(value*))
     
-    inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -53,7 +53,7 @@ object ChartData {
     
     inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    inline def setRowsVarargs(value: js.Object*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: js.Object*): Self = StObject.set(x, "rows", js.Array(value*))
     
     inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

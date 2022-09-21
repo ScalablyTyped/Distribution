@@ -24,7 +24,7 @@ trait IHasOneAssociation
   /** [Method] Returns the value of instanceName
     * @returns Object
     */
-  var getInstanceName: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getInstanceName: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the value of setterName
     * @returns String
@@ -47,7 +47,7 @@ trait IHasOneAssociation
   /** [Method] Sets the value of instanceName
     * @param instanceName Object The new value.
     */
-  var setInstanceName: js.UndefOr[js.Function1[/* instanceName */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setInstanceName: js.UndefOr[js.Function1[/* instanceName */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of setterName
     * @param setterName String The new value.
@@ -78,7 +78,7 @@ object IHasOneAssociation {
     
     inline def setGetGetterNameUndefined: Self = StObject.set(x, "getGetterName", js.undefined)
     
-    inline def setGetInstanceName(value: () => js.Any): Self = StObject.set(x, "getInstanceName", js.Any.fromFunction0(value))
+    inline def setGetInstanceName(value: () => Any): Self = StObject.set(x, "getInstanceName", js.Any.fromFunction0(value))
     
     inline def setGetInstanceNameUndefined: Self = StObject.set(x, "getInstanceName", js.undefined)
     
@@ -98,7 +98,7 @@ object IHasOneAssociation {
     
     inline def setSetGetterNameUndefined: Self = StObject.set(x, "setGetterName", js.undefined)
     
-    inline def setSetInstanceName(value: /* instanceName */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setInstanceName", js.Any.fromFunction1(value))
+    inline def setSetInstanceName(value: /* instanceName */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setInstanceName", js.Any.fromFunction1(value))
     
     inline def setSetInstanceNameUndefined: Self = StObject.set(x, "setInstanceName", js.undefined)
     

@@ -11,7 +11,7 @@ object global {
     
     @JSGlobal("AceDiff")
     @js.native
-    class ^ protected ()
+    open class ^ protected ()
       extends typings.aceDiff.mod.^ {
       def this(opts: AceDiffConstructorOpts) = this()
     }

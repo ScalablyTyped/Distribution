@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("cannon", "Shape")
 @js.native
-class Shape ()
+open class Shape ()
   extends StObject
      with typings.cannon.CANNON.Shape {
   
@@ -19,6 +19,9 @@ class Shape ()
   
   /* CompleteClass */
   var collisionResponse: Boolean = js.native
+  
+  /* CompleteClass */
+  var id: Double = js.native
   
   /* CompleteClass */
   var `type`: Double = js.native

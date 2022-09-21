@@ -4,21 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Basic details about an i18n language, such as language code and
-  * human-readable name.
-  */
 trait SchemaI18nLanguageSnippet extends StObject {
   
   /**
     * A short BCP-47 code that uniquely identifies a language.
     */
-  var hl: js.UndefOr[String] = js.undefined
+  var hl: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The human-readable name of the language in the language itself.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaI18nLanguageSnippet {
   
@@ -31,9 +27,13 @@ object SchemaI18nLanguageSnippet {
     
     inline def setHl(value: String): Self = StObject.set(x, "hl", value.asInstanceOf[js.Any])
     
+    inline def setHlNull: Self = StObject.set(x, "hl", null)
+    
     inline def setHlUndefined: Self = StObject.set(x, "hl", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }

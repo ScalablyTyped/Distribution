@@ -83,7 +83,7 @@ object typesMod {
   
   @JSImport("tuya-panel-kit/@react-navigation/core/types", "PrivateValueStore")
   @js.native
-  class PrivateValueStore[A, B, C] () extends StObject {
+  open class PrivateValueStore[A, B, C] () extends StObject {
     
     /**
       * UGLY HACK! DO NOT USE THE TYPE!!!
@@ -99,10 +99,10 @@ object typesMod {
     var _empty: js.UndefOr[AB[A, B, C]] = js.native
   }
   
-  type CompositeNavigationProp[A /* <: NavigationProp[ParamListBase, String, js.Any, js.Any, js.Object] */, B /* <: NavigationHelpersCommon[ParamListBase, js.Any] */] = (Omit[
+  type CompositeNavigationProp[A /* <: NavigationProp[ParamListBase, String, Any, Any, js.Object] */, B /* <: NavigationHelpersCommon[ParamListBase, Any] */] = (Omit[
     A & B, 
     /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/core/types.NavigationProp<any, string, tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.NavigationState<any>, {}, {}> */ dispatch | navigate_ | reset_ | goBack | isFocused | canGoBack | dangerouslyGetParent | dangerouslyGetState | _empty | setParams | setOptions | addListener | removeListener
-  ]) & (NavigationProp[js.Any, String, NavigationState[ParamListBase], js.Object, js.Object])
+  ]) & (NavigationProp[Any, String, NavigationState[ParamListBase], js.Object, js.Object])
   
   trait DefaultNavigatorOptions[ScreenOptions /* <: js.Object */, ParamList /* <: ParamListBase */]
     extends StObject
@@ -195,8 +195,8 @@ object typesMod {
   object EventConsumer {
     
     inline def apply[EventMap /* <: EventMapBase */](
-      addListener: (js.Any, EventListenerCallback[EventMap, js.Any]) => js.Function0[Unit],
-      removeListener: (js.Any, EventListenerCallback[EventMap, js.Any]) => Unit
+      addListener: (Any, EventListenerCallback[EventMap, Any]) => js.Function0[Unit],
+      removeListener: (Any, EventListenerCallback[EventMap, Any]) => Unit
     ): EventConsumer[EventMap] = {
       val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction2(addListener), removeListener = js.Any.fromFunction2(removeListener))
       __obj.asInstanceOf[EventConsumer[EventMap]]
@@ -204,9 +204,9 @@ object typesMod {
     
     extension [Self <: EventConsumer[?], EventMap /* <: EventMapBase */](x: Self & EventConsumer[EventMap]) {
       
-      inline def setAddListener(value: (js.Any, EventListenerCallback[EventMap, js.Any]) => js.Function0[Unit]): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
+      inline def setAddListener(value: (Any, EventListenerCallback[EventMap, Any]) => js.Function0[Unit]): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       
-      inline def setRemoveListener(value: (js.Any, EventListenerCallback[EventMap, js.Any]) => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction2(value))
+      inline def setRemoveListener(value: (Any, EventListenerCallback[EventMap, Any]) => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction2(value))
     }
   }
   
@@ -231,8 +231,8 @@ object typesMod {
   object EventEmitter {
     
     inline def apply[EventMap /* <: EventMapBase */](
-      emit: (TargetTypeEventName[js.Any, EventMap]) & (js.Object | `3`) & ((`5`[EventMap, js.Any]) | (`4`[EventMap, js.Any])) => EventArg[
-          js.Any, 
+      emit: (TargetTypeEventName[Any, EventMap]) & (js.Object | `3`) & ((`5`[EventMap, Any]) | (`4`[EventMap, Any])) => EventArg[
+          Any, 
           /* import warning: importer.ImportType#apply Failed type conversion: EventMap[EventName]['canPreventDefault'] */ js.Any, 
           /* import warning: importer.ImportType#apply Failed type conversion: EventMap[EventName]['data'] */ js.Any
         ]
@@ -244,8 +244,8 @@ object typesMod {
     extension [Self <: EventEmitter[?], EventMap /* <: EventMapBase */](x: Self & EventEmitter[EventMap]) {
       
       inline def setEmit(
-        value: (TargetTypeEventName[js.Any, EventMap]) & (js.Object | `3`) & ((`5`[EventMap, js.Any]) | (`4`[EventMap, js.Any])) => EventArg[
-              js.Any, 
+        value: (TargetTypeEventName[Any, EventMap]) & (js.Object | `3`) & ((`5`[EventMap, Any]) | (`4`[EventMap, Any])) => EventArg[
+              Any, 
               /* import warning: importer.ImportType#apply Failed type conversion: EventMap[EventName]['canPreventDefault'] */ js.Any, 
               /* import warning: importer.ImportType#apply Failed type conversion: EventMap[EventName]['data'] */ js.Any
             ]
@@ -873,13 +873,13 @@ object typesMod {
     
     var initialRouteName: js.UndefOr[String] = js.undefined
     
-    var parse: js.UndefOr[Record[String, js.Function1[/* value */ String, js.Any]]] = js.undefined
+    var parse: js.UndefOr[Record[String, js.Function1[/* value */ String, Any]]] = js.undefined
     
     var path: js.UndefOr[String] = js.undefined
     
     var screens: js.UndefOr[PathConfigMap] = js.undefined
     
-    var stringify: js.UndefOr[Record[String, js.Function1[/* value */ js.Any, String]]] = js.undefined
+    var stringify: js.UndefOr[Record[String, js.Function1[/* value */ Any, String]]] = js.undefined
   }
   object PathConfig {
     
@@ -898,7 +898,7 @@ object typesMod {
       
       inline def setInitialRouteNameUndefined: Self = StObject.set(x, "initialRouteName", js.undefined)
       
-      inline def setParse(value: Record[String, js.Function1[/* value */ String, js.Any]]): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
+      inline def setParse(value: Record[String, js.Function1[/* value */ String, Any]]): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
       
       inline def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
       
@@ -910,24 +910,15 @@ object typesMod {
       
       inline def setScreensUndefined: Self = StObject.set(x, "screens", js.undefined)
       
-      inline def setStringify(value: Record[String, js.Function1[/* value */ js.Any, String]]): Self = StObject.set(x, "stringify", value.asInstanceOf[js.Any])
+      inline def setStringify(value: Record[String, js.Function1[/* value */ Any, String]]): Self = StObject.set(x, "stringify", value.asInstanceOf[js.Any])
       
       inline def setStringifyUndefined: Self = StObject.set(x, "stringify", js.undefined)
     }
   }
   
-  trait PathConfigMap
-    extends StObject
-       with /* routeName */ StringDictionary[String | PathConfig]
-  object PathConfigMap {
-    
-    inline def apply(): PathConfigMap = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[PathConfigMap]
-    }
-  }
+  type PathConfigMap = StringDictionary[String | PathConfig]
   
-  type RouteConfig[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */, State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */] = (InitialParams[RouteName, ScreenOptions, ParamList, State, EventMap]) & (Children | Component | (GetComponent[ParamList, RouteName]))
+  type RouteConfig[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */, State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */] = (Children & (InitialParams[RouteName, ScreenOptions, ParamList, State, EventMap])) | (Component & (InitialParams[RouteName, ScreenOptions, ParamList, State, EventMap])) | ((GetComponent[ParamList, RouteName]) & (InitialParams[RouteName, ScreenOptions, ParamList, State, EventMap]))
   
   type RouteProp[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */] = Route[
     Extract[RouteName, String], 
@@ -937,10 +928,10 @@ object typesMod {
   type ScreenListeners[State /* <: NavigationState[ParamListBase] */, EventMap /* <: EventMapBase */] = Partial[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ EventName in keyof EventMap & tuya-panel-kit.tuya-panel-kit/@react-navigation/core/types.EventMapCore<State> ]: tuya-panel-kit.tuya-panel-kit/@react-navigation/core/types.EventListenerCallback<EventMap, EventName>}
-    */ typings.tuyaPanelKit.tuyaPanelKitStrings.ScreenListeners & TopLevel[js.Any]
+    */ typings.tuyaPanelKit.tuyaPanelKitStrings.ScreenListeners & TopLevel[Any]
   ]
   
-  trait TypedNavigator[ParamList /* <: ParamListBase */, State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */, Navigator /* <: ComponentType[js.Any] */] extends StObject {
+  trait TypedNavigator[ParamList /* <: ParamListBase */, State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */, Navigator /* <: ComponentType[Any] */] extends StObject {
     
     /**
       * Navigator component which manages the child screens.
@@ -960,20 +951,20 @@ object typesMod {
   }
   object TypedNavigator {
     
-    inline def apply[ParamList /* <: ParamListBase */, State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */, Navigator /* <: ComponentType[js.Any] */](
+    inline def apply[ParamList /* <: ParamListBase */, State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */, Navigator /* <: ComponentType[Any] */](
       Navigator: ComponentType[
           (Omit[
             ComponentProps[Navigator], 
             /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/core/types.DefaultNavigatorOptions<any, any> */ children | screenOptions | initialRouteName
           ]) & (DefaultNavigatorOptions[ScreenOptions, ParamList])
         ],
-      Screen: RouteConfig[ParamList, js.Any, State, ScreenOptions, EventMap] => Null
+      Screen: RouteConfig[ParamList, Any, State, ScreenOptions, EventMap] => Null
     ): TypedNavigator[ParamList, State, ScreenOptions, EventMap, Navigator] = {
       val __obj = js.Dynamic.literal(Navigator = Navigator.asInstanceOf[js.Any], Screen = js.Any.fromFunction1(Screen))
       __obj.asInstanceOf[TypedNavigator[ParamList, State, ScreenOptions, EventMap, Navigator]]
     }
     
-    extension [Self <: TypedNavigator[?, ?, ?, ?, ?], ParamList /* <: ParamListBase */, State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */, Navigator /* <: ComponentType[js.Any] */](x: Self & (TypedNavigator[ParamList, State, ScreenOptions, EventMap, Navigator])) {
+    extension [Self <: TypedNavigator[?, ?, ?, ?, ?], ParamList /* <: ParamListBase */, State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */, Navigator /* <: ComponentType[Any] */](x: Self & (TypedNavigator[ParamList, State, ScreenOptions, EventMap, Navigator])) {
       
       inline def setNavigator(
         value: ComponentType[
@@ -984,7 +975,7 @@ object typesMod {
             ]
       ): Self = StObject.set(x, "Navigator", value.asInstanceOf[js.Any])
       
-      inline def setScreen(value: RouteConfig[ParamList, js.Any, State, ScreenOptions, EventMap] => Null): Self = StObject.set(x, "Screen", js.Any.fromFunction1(value))
+      inline def setScreen(value: RouteConfig[ParamList, Any, State, ScreenOptions, EventMap] => Null): Self = StObject.set(x, "Screen", js.Any.fromFunction1(value))
     }
   }
 }

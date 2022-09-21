@@ -25,6 +25,11 @@ trait Note extends StObject {
   var quick: Double
   
   var title: String
+  
+  /**
+    * The function string to be called to get the tooltip string
+    */
+  var tooltip: String | PseudoNull
 }
 object Note {
   
@@ -37,9 +42,10 @@ object Note {
     life: Double,
     pic: Icon | _empty,
     quick: Double,
-    title: String
+    title: String,
+    tooltip: String | PseudoNull
   ): Note = {
-    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], desc = desc.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], l = l.asInstanceOf[js.Any], life = life.asInstanceOf[js.Any], pic = pic.asInstanceOf[js.Any], quick = quick.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], desc = desc.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], l = l.asInstanceOf[js.Any], life = life.asInstanceOf[js.Any], pic = pic.asInstanceOf[js.Any], quick = quick.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], tooltip = tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[Note]
   }
   
@@ -62,5 +68,7 @@ object Note {
     inline def setQuick(value: Double): Self = StObject.set(x, "quick", value.asInstanceOf[js.Any])
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTooltip(value: String | PseudoNull): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
   }
 }

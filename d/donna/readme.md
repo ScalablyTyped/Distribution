@@ -10,14 +10,11 @@ A CoffeeScript documentation generator.
 | Full name          | donna |
 | Keywords           | coffeescript, doc, api |
 | # releases         | 1 |
-| # dependents       | 3 |
-| # downloads        | 22878 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 8307.666666666666 |
+| # stars            | 12.0 |
 
 ## Links
-- [Homepage](https://github.com/atom/donna)
-- [Bugs](https://github.com/atom/donna/issues)
-- [Repository](https://github.com/atom/donna)
 - [Npm](https://www.npmjs.com/package/donna)
     
 

@@ -1,7 +1,6 @@
 package typings.posterus
 
 import typings.posterus.mod.Future
-import typings.std.Error
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,5 +12,5 @@ object fiberMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fiber(iterator: IterableIterator[js.Any]): Future[js.Any, Error] = ^.asInstanceOf[js.Dynamic].applyDynamic("fiber")(iterator.asInstanceOf[js.Any]).asInstanceOf[Future[js.Any, Error]]
+  inline def fiber(iterator: IterableIterator[Any]): Future[Any, js.Error] = ^.asInstanceOf[js.Dynamic].applyDynamic("fiber")(iterator.asInstanceOf[js.Any]).asInstanceOf[Future[Any, js.Error]]
 }

@@ -8,7 +8,7 @@ trait StartupOptions extends StObject {
   
   /**
     * Shuts down a running database using oracledb.SHUTDOWN_MODE_ABORT before restarting the database. The database start up may require instance recovery. The default for force is false.
-    * 
+    *
     * @default false
     */
   var force: js.UndefOr[Boolean] = js.undefined
@@ -20,7 +20,7 @@ trait StartupOptions extends StObject {
   
   /**
     * After the database is started, access is restricted to users who have the CREATE_SESSION and RESTRICTED SESSION privileges. The default is false.
-    * 
+    *
     * @default false
     */
   var restrict: js.UndefOr[Boolean] = js.undefined

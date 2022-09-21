@@ -21,6 +21,14 @@ object PointerInput extends StObject {
   
   /* 3 */ val MiddleClick: typings.babylonjs.BABYLON.PointerInput.MiddleClick & Double = js.native
   
+  /* 7 */ val MouseWheelX: typings.babylonjs.BABYLON.PointerInput.MouseWheelX & Double = js.native
+  
+  /* 8 */ val MouseWheelY: typings.babylonjs.BABYLON.PointerInput.MouseWheelY & Double = js.native
+  
+  /* 9 */ val MouseWheelZ: typings.babylonjs.BABYLON.PointerInput.MouseWheelZ & Double = js.native
+  
+  /* 12 */ val Move: typings.babylonjs.BABYLON.PointerInput.Move & Double = js.native
+  
   /* 4 */ val RightClick: typings.babylonjs.BABYLON.PointerInput.RightClick & Double = js.native
   
   /* 1 */ val Vertical: typings.babylonjs.BABYLON.PointerInput.Vertical & Double = js.native

@@ -8,5 +8,5 @@ object topicConfigurationMod {
   
   @JSImport("@aws-sdk/client-s3-node/model/_TopicConfiguration", "_TopicConfiguration")
   @js.native
-  val TopicConfiguration: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val TopicConfiguration: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -17,7 +17,7 @@ trait RegisterResourceRequest extends StObject {
   var RoleArn: js.UndefOr[IAMRoleArn] = js.undefined
   
   /**
-    * Designates an AWS Identity and Access Management (IAM) service-linked role by registering this role with the Data Catalog. A service-linked role is a unique type of IAM role that is linked directly to Lake Formation. For more information, see Using Service-Linked Roles for Lake Formation.
+    * Designates an Identity and Access Management (IAM) service-linked role by registering this role with the Data Catalog. A service-linked role is a unique type of IAM role that is linked directly to Lake Formation. For more information, see Using Service-Linked Roles for Lake Formation.
     */
   var UseServiceLinkedRole: js.UndefOr[NullableBoolean] = js.undefined
 }

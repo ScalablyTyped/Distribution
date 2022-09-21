@@ -4,7 +4,6 @@ import typings.ol.extentMod.Extent
 import typings.ol.formatTypeMod.FormatType
 import typings.ol.olFeatureMod.FeatureLike
 import typings.ol.projMod.ProjectionLike
-import typings.std.ArrayBuffer
 import typings.std.Document
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
@@ -75,8 +74,8 @@ object featureMod {
     def readFeatures(source: String, opt_options: ReadOptions): js.Array[FeatureLike] = js.native
     def readFeatures(source: js.Object): js.Array[FeatureLike] = js.native
     def readFeatures(source: js.Object, opt_options: ReadOptions): js.Array[FeatureLike] = js.native
-    def readFeatures(source: ArrayBuffer): js.Array[FeatureLike] = js.native
-    def readFeatures(source: ArrayBuffer, opt_options: ReadOptions): js.Array[FeatureLike] = js.native
+    def readFeatures(source: js.typedarray.ArrayBuffer): js.Array[FeatureLike] = js.native
+    def readFeatures(source: js.typedarray.ArrayBuffer, opt_options: ReadOptions): js.Array[FeatureLike] = js.native
     /**
       * Read all features from a source.
       */

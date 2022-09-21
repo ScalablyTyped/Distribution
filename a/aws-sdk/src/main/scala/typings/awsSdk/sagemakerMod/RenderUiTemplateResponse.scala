@@ -27,7 +27,7 @@ object RenderUiTemplateResponse {
     
     inline def setErrors(value: RenderingErrorList): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
     
-    inline def setErrorsVarargs(value: RenderingError*): Self = StObject.set(x, "Errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: RenderingError*): Self = StObject.set(x, "Errors", js.Array(value*))
     
     inline def setRenderedContent(value: String): Self = StObject.set(x, "RenderedContent", value.asInstanceOf[js.Any])
   }

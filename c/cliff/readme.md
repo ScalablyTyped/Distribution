@@ -10,10 +10,10 @@ Your CLI formatting friend.
 | ------------------ | :-------------: |
 | Full name          | cliff |
 | Keywords           | cli, logging, tools, winston |
-| # releases         | 0 |
-| # dependents       | 143 |
-| # downloads        | 20631930 |
-| # stars            | 10 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2670670.0 |
+| # stars            | 193.0 |
 
 ## Links
 - [Homepage](https://github.com/flatiron/cliff)

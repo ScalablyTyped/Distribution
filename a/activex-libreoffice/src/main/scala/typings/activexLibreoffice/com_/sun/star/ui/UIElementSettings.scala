@@ -36,13 +36,13 @@ object UIElementSettings {
     ElementType: `type`,
     UIName: String,
     acquire: () => Unit,
-    createInstanceWithArgumentsAndContext: (SeqEquiv[js.Any], XComponentContext) => XInterface,
+    createInstanceWithArgumentsAndContext: (SeqEquiv[Any], XComponentContext) => XInterface,
     createInstanceWithContext: XComponentContext => XInterface,
-    getByIndex: Double => js.Any,
+    getByIndex: Double => Any,
     getCount: () => Double,
     getElementType: () => `type`,
     hasElements: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): UIElementSettings = {
     val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], ElementType = ElementType.asInstanceOf[js.Any], UIName = UIName.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), createInstanceWithArgumentsAndContext = js.Any.fromFunction2(createInstanceWithArgumentsAndContext), createInstanceWithContext = js.Any.fromFunction1(createInstanceWithContext), getByIndex = js.Any.fromFunction1(getByIndex), getCount = js.Any.fromFunction0(getCount), getElementType = js.Any.fromFunction0(getElementType), hasElements = js.Any.fromFunction0(hasElements), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the Excel application that manages the workbook.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @JSGlobal("Excel.Application")
 @js.native
-class Application ()
+open class Application ()
   extends StObject
      with typings.officeJsPreview.Excel.Application {
   

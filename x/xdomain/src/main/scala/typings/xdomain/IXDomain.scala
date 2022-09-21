@@ -7,15 +7,14 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IXDomain extends StObject {
   
-  var cookies: XDomainCookies = js.native
+  var cookies: XDomainCookies
   
   /**
     * When true, XDomain will log actions to console
     */
-  var debug: Boolean = js.native
+  var debug: Boolean
   
   /**
     * Will initialize as a slave
@@ -27,7 +26,7 @@ trait IXDomain extends StObject {
     * Requests that do not match both the origin and the path regular expressions will be blocked.
     * @param masterObj
     */
-  def masters(masterObj: js.Object): Unit = js.native
+  def masters(masterObj: js.Object): Unit
   
   /**
     * event may be log, warn or timeout. When listening for log and warn events, handler with contain the message as
@@ -35,14 +34,9 @@ trait IXDomain extends StObject {
     * @param event
     * @param handler
     */
-  @JSName("on")
-  def on_log(event: log, handler: js.Function1[/* message */ js.UndefOr[String], js.Any]): Unit = js.native
-  @JSName("on")
-  def on_timeout(event: timeout, handler: js.Function1[/* message */ js.UndefOr[String], js.Any]): Unit = js.native
-  @JSName("on")
-  def on_warn(event: warn, handler: js.Function1[/* message */ js.UndefOr[String], js.Any]): Unit = js.native
+  def on(event: log | warn | timeout, handler: js.Function1[/* message */ js.UndefOr[String], Any]): Unit
   
-  var origin: String = js.native
+  var origin: String
   
   /**
     * Will initialize as a master
@@ -52,5 +46,34 @@ trait IXDomain extends StObject {
     * The slaves object is used as a list slaves to force one proxy file per origin.
     * @param slaveObj
     */
-  def slaves(slaveObj: js.Object): Unit = js.native
+  def slaves(slaveObj: js.Object): Unit
+}
+object IXDomain {
+  
+  inline def apply(
+    cookies: XDomainCookies,
+    debug: Boolean,
+    masters: js.Object => Unit,
+    on: (log | warn | timeout, js.Function1[/* message */ js.UndefOr[String], Any]) => Unit,
+    origin: String,
+    slaves: js.Object => Unit
+  ): IXDomain = {
+    val __obj = js.Dynamic.literal(cookies = cookies.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], masters = js.Any.fromFunction1(masters), on = js.Any.fromFunction2(on), origin = origin.asInstanceOf[js.Any], slaves = js.Any.fromFunction1(slaves))
+    __obj.asInstanceOf[IXDomain]
+  }
+  
+  extension [Self <: IXDomain](x: Self) {
+    
+    inline def setCookies(value: XDomainCookies): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
+    
+    inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    
+    inline def setMasters(value: js.Object => Unit): Self = StObject.set(x, "masters", js.Any.fromFunction1(value))
+    
+    inline def setOn(value: (log | warn | timeout, js.Function1[/* message */ js.UndefOr[String], Any]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+    
+    inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    
+    inline def setSlaves(value: js.Object => Unit): Self = StObject.set(x, "slaves", js.Any.fromFunction1(value))
+  }
 }

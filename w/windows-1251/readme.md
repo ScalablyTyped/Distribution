@@ -10,10 +10,10 @@ A robust windows-1251 encoder/decoder written in JavaScript.
 | ------------------ | :-------------: |
 | Full name          | windows-1251 |
 | Keywords           | codec, decoder, decoding, encoder, encoding, legacy, legacy-encoding, cp1251, windows-1251, x-cp1251 |
-| # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 51476 |
-| # stars            | 1 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 9237.666666666666 |
+| # stars            | 22.0 |
 
 ## Links
 - [Homepage](https://mths.be/windows-1251)

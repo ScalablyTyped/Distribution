@@ -10,10 +10,10 @@ Create a vinyl file from an actual file
 | ------------------ | :-------------: |
 | Full name          | vinyl-file |
 | Keywords           | vinyl, fs, file, read, virtual, format, gulp, gulpfriendly |
-| # releases         | 0 |
-| # dependents       | 176 |
-| # downloads        | 31027433 |
-| # stars            | 3 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 3507424.0 |
+| # stars            | 38.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/vinyl-file#readme)

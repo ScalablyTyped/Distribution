@@ -66,16 +66,11 @@ object TorrentStream {
     
     def listen(port: Double, callback: js.Function0[Unit]): Unit = js.native
     
+    // Events
+    def on(event: ready | torrent | idle, callback: js.Function): Unit = js.native
     def on(event: String, callback: js.Function): Unit = js.native
     @JSName("on")
     def on_download(event: download, callback: js.Function1[/* pieceIndex */ Double, Unit]): Unit = js.native
-    @JSName("on")
-    def on_idle(event: idle, callback: js.Function): Unit = js.native
-    // Events
-    @JSName("on")
-    def on_ready(event: ready, callback: js.Function): Unit = js.native
-    @JSName("on")
-    def on_torrent(event: torrent, callback: js.Function): Unit = js.native
     @JSName("on")
     def on_upload(
       event: upload,
@@ -98,7 +93,7 @@ object TorrentStream {
     var path: js.UndefOr[String] = js.undefined
     
     // Allows to declare additional custom trackers to use.
-    var storage: js.UndefOr[js.Any] = js.undefined
+    var storage: js.UndefOr[Any] = js.undefined
     
     // Number of upload slots.
     var tmp: js.UndefOr[String] = js.undefined
@@ -136,7 +131,7 @@ object TorrentStream {
       
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      inline def setStorage(value: js.Any): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+      inline def setStorage(value: Any): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
       
       inline def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
       
@@ -152,7 +147,7 @@ object TorrentStream {
       
       inline def setTrackersUndefined: Self = StObject.set(x, "trackers", js.undefined)
       
-      inline def setTrackersVarargs(value: String*): Self = StObject.set(x, "trackers", js.Array(value :_*))
+      inline def setTrackersVarargs(value: String*): Self = StObject.set(x, "trackers", js.Array(value*))
       
       inline def setUploads(value: Double): Self = StObject.set(x, "uploads", value.asInstanceOf[js.Any])
       
@@ -167,8 +162,8 @@ object TorrentStream {
   @js.native
   trait TorrentFile extends StObject {
     
-    def createReadStream(): js.Any = js.native
-    def createReadStream(options: ReadStreamOptions): js.Any = js.native
+    def createReadStream(): Any = js.native
+    def createReadStream(options: ReadStreamOptions): Any = js.native
     
     def deselect(): Unit = js.native
     

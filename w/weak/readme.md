@@ -11,14 +11,11 @@ Make weak references to JavaScript Objects.
 | Full name          | weak |
 | Keywords           | weak, reference, js, javascript, object, function, callback |
 | # releases         | 0 |
-| # dependents       | 32 |
-| # downloads        | 764786 |
-| # stars            | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 24001.333333333332 |
+| # stars            | 238.0 |
 
 ## Links
-- [Homepage](https://github.com/TooTallNate/node-weak#readme)
-- [Bugs](https://github.com/TooTallNate/node-weak/issues)
-- [Repository](https://github.com/TooTallNate/node-weak)
 - [Npm](https://www.npmjs.com/package/weak)
     
 

@@ -194,7 +194,7 @@ object Credentials {
   @JSGlobal("Windows.Security.Credentials.PasswordCredential")
   @js.native
   /** Creates and initializes a new, empty instance of the PasswordCredential object. */
-  class PasswordCredential ()
+  open class PasswordCredential ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Credentials.PasswordCredential {
     /**
@@ -230,7 +230,7 @@ object Credentials {
   @JSGlobal("Windows.Security.Credentials.PasswordCredentialPropertyStore")
   @js.native
   /** This method is reserved for internal use and is not intended to be used in your code. */
-  class PasswordCredentialPropertyStore ()
+  open class PasswordCredentialPropertyStore ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Credentials.PasswordCredentialPropertyStore
   
@@ -238,7 +238,7 @@ object Credentials {
   @JSGlobal("Windows.Security.Credentials.PasswordVault")
   @js.native
   /** Creates and initializes a new instance of the PasswordVault object. */
-  class PasswordVault ()
+  open class PasswordVault ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Credentials.PasswordVault {
     
@@ -357,7 +357,7 @@ object Credentials {
     @JSGlobal("Windows.Security.Credentials.UI.CredentialPickerOptions")
     @js.native
     /** Creates and initializes a new, empty instance of the CredentialPickerOptions object. */
-    class CredentialPickerOptions ()
+    open class CredentialPickerOptions ()
       extends StObject
          with typings.winrtUwp.Windows.Security.Credentials.UI.CredentialPickerOptions {
       
@@ -531,7 +531,7 @@ object Credentials {
   /** Identifies an account from a web account provider. */
   @JSGlobal("Windows.Security.Credentials.WebAccount")
   @js.native
-  class WebAccount protected ()
+  open class WebAccount protected ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Credentials.WebAccount {
     /**
@@ -567,7 +567,7 @@ object Credentials {
   /** Represents a web account authentication provider. */
   @JSGlobal("Windows.Security.Credentials.WebAccountProvider")
   @js.native
-  class WebAccountProvider protected ()
+  open class WebAccountProvider protected ()
     extends StObject
        with typings.winrtUwp.Windows.Security.Credentials.WebAccountProvider {
     /**

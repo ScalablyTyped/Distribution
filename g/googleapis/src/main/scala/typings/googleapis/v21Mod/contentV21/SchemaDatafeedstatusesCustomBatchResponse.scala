@@ -12,10 +12,9 @@ trait SchemaDatafeedstatusesCustomBatchResponse extends StObject {
   var entries: js.UndefOr[js.Array[SchemaDatafeedstatusesCustomBatchResponseEntry]] = js.undefined
   
   /**
-    * Identifies what kind of resource this is. Value: the fixed string
-    * &quot;content#datafeedstatusesCustomBatchResponse&quot;.
+    * Identifies what kind of resource this is. Value: the fixed string "`content#datafeedstatusesCustomBatchResponse`".
     */
-  var kind: js.UndefOr[String] = js.undefined
+  var kind: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaDatafeedstatusesCustomBatchResponse {
   
@@ -30,9 +29,11 @@ object SchemaDatafeedstatusesCustomBatchResponse {
     
     inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
-    inline def setEntriesVarargs(value: SchemaDatafeedstatusesCustomBatchResponseEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: SchemaDatafeedstatusesCustomBatchResponseEntry*): Self = StObject.set(x, "entries", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setKindNull: Self = StObject.set(x, "kind", null)
     
     inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }

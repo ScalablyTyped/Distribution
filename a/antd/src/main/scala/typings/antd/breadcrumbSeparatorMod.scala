@@ -1,6 +1,7 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
+import typings.antd.anon.`0`
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,7 +16,7 @@ object breadcrumbSeparatorMod extends Shortcut {
   @js.native
   trait BreadcrumbSeparatorInterface
     extends StObject
-       with FunctionComponent[js.Object] {
+       with FunctionComponent[`0`] {
     
     var __ANT_BREADCRUMB_SEPARATOR: Boolean = js.native
   }

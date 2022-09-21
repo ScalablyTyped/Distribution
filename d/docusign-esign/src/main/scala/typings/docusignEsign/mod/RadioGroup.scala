@@ -193,7 +193,7 @@ object RadioGroup {
     
     inline def setRadiosUndefined: Self = StObject.set(x, "radios", js.undefined)
     
-    inline def setRadiosVarargs(value: Radio*): Self = StObject.set(x, "radios", js.Array(value :_*))
+    inline def setRadiosVarargs(value: Radio*): Self = StObject.set(x, "radios", js.Array(value*))
     
     inline def setRecipientId(value: String): Self = StObject.set(x, "recipientId", value.asInstanceOf[js.Any])
     

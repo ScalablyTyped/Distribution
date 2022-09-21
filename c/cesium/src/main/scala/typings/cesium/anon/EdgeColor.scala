@@ -49,7 +49,7 @@ object EdgeColor {
     
     inline def setPlanesUndefined: Self = StObject.set(x, "planes", js.undefined)
     
-    inline def setPlanesVarargs(value: ClippingPlane*): Self = StObject.set(x, "planes", js.Array(value :_*))
+    inline def setPlanesVarargs(value: ClippingPlane*): Self = StObject.set(x, "planes", js.Array(value*))
     
     inline def setUnionClippingRegions(value: Boolean): Self = StObject.set(x, "unionClippingRegions", value.asInstanceOf[js.Any])
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FieldLevelEncryptionProfileSummary extends StObject {
   
   /**
-    * An optional comment for the field-level encryption profile summary.
+    * An optional comment for the field-level encryption profile summary. The comment cannot be longer than 128 characters.
     */
   var Comment: js.UndefOr[String] = js.undefined
   
@@ -24,7 +24,7 @@ trait FieldLevelEncryptionProfileSummary extends StObject {
   /**
     * The time when the the field-level encryption profile summary was last updated.
     */
-  var LastModifiedTime: timestamp
+  var LastModifiedTime: js.Date
   
   /**
     * Name for the field-level encryption profile summary.
@@ -33,7 +33,7 @@ trait FieldLevelEncryptionProfileSummary extends StObject {
 }
 object FieldLevelEncryptionProfileSummary {
   
-  inline def apply(EncryptionEntities: EncryptionEntities, Id: String, LastModifiedTime: timestamp, Name: String): FieldLevelEncryptionProfileSummary = {
+  inline def apply(EncryptionEntities: EncryptionEntities, Id: String, LastModifiedTime: js.Date, Name: String): FieldLevelEncryptionProfileSummary = {
     val __obj = js.Dynamic.literal(EncryptionEntities = EncryptionEntities.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], LastModifiedTime = LastModifiedTime.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldLevelEncryptionProfileSummary]
   }
@@ -48,7 +48,7 @@ object FieldLevelEncryptionProfileSummary {
     
     inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    inline def setLastModifiedTime(value: timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

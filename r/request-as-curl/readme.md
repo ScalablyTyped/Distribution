@@ -11,9 +11,9 @@ Serializes http.ClientRequest as curl(1) command string
 | Full name          | request-as-curl |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 174526 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6502.333333333333 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/request-as-curl)

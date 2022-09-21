@@ -12,7 +12,7 @@ trait AddTagsInput extends StObject {
   var ResourceId: EntityId
   
   /**
-    * The type of the ML object to tag. 
+    * The type of the ML object to tag.
     */
   var ResourceType: TaggableResourceType
   
@@ -36,6 +36,6 @@ object AddTagsInput {
     
     inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

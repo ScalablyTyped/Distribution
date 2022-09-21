@@ -20,12 +20,12 @@ object utilsMod {
   trait Bundle[T /* <: StringDictionary[Constructor] */, P /* <: /* keyof T */ String */]
     extends StObject
        with Instantiable0[Mapper[T, P]]
-       with Instantiable1[/* options */ js.Any, Mapper[T, P]]
+       with Instantiable1[/* options */ Any, Mapper[T, P]]
   
   @js.native
   trait Constructor
     extends StObject
-       with Instantiable1[/* args */ js.Any, js.Any]
+       with Instantiable1[/* args */ Any, Any]
   
   type Mapper[T /* <: StringDictionary[Constructor] */, P /* <: /* keyof T */ String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ name in P ]: std.InstanceType<T[name]>}

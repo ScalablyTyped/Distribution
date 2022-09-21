@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "dashjs" : "2.9.3"
+      "dashjs" : "4.4.1"
     }
   ],
   "test-dependencies" : [
     {
-      "dashjs" : "2.9.3"
+      "dashjs" : "4.4.1"
     }
   ],
   "compile-devDependencies" : [

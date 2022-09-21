@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("material-ui", "RefreshIndicator")
 @js.native
-class RefreshIndicator ()
-  extends Component[RefreshIndicatorProps, js.Object, js.Any]
+open class RefreshIndicator ()
+  extends Component[RefreshIndicatorProps, js.Object, Any]

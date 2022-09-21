@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListComponentsResponse extends StObject {
   
   /**
-    * The list of component semantic versions. 
+    * The list of component semantic versions.  The semantic version has four nodes: &lt;major&gt;.&lt;minor&gt;.&lt;patch&gt;/&lt;build&gt;. You can assign values for the first three, and can filter on all of them. 
     */
   var componentVersionList: js.UndefOr[ComponentVersionList] = js.undefined
   
   /**
-    * The next token used for paginated responses. When this is not empty, there are additional elements that the service has not included in this request. Use this token with the next request to retrieve additional objects. 
+    * The next token used for paginated responses. When this is not empty, there are additional elements that the service has not included in this request. Use this token with the next request to retrieve additional objects.
     */
   var nextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
-    * The request ID that uniquely identifies this request. 
+    * The request ID that uniquely identifies this request.
     */
   var requestId: js.UndefOr[NonEmptyString] = js.undefined
 }
@@ -34,7 +34,7 @@ object ListComponentsResponse {
     
     inline def setComponentVersionListUndefined: Self = StObject.set(x, "componentVersionList", js.undefined)
     
-    inline def setComponentVersionListVarargs(value: ComponentVersion*): Self = StObject.set(x, "componentVersionList", js.Array(value :_*))
+    inline def setComponentVersionListVarargs(value: ComponentVersion*): Self = StObject.set(x, "componentVersionList", js.Array(value*))
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

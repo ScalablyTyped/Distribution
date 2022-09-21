@@ -39,7 +39,7 @@ object UpdateFacetRequest {
     
     inline def setAttributeUpdatesUndefined: Self = StObject.set(x, "AttributeUpdates", js.undefined)
     
-    inline def setAttributeUpdatesVarargs(value: FacetAttributeUpdate*): Self = StObject.set(x, "AttributeUpdates", js.Array(value :_*))
+    inline def setAttributeUpdatesVarargs(value: FacetAttributeUpdate*): Self = StObject.set(x, "AttributeUpdates", js.Array(value*))
     
     inline def setName(value: FacetName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

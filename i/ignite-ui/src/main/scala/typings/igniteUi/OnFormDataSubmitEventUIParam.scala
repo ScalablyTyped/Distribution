@@ -14,22 +14,22 @@ trait OnFormDataSubmitEventUIParam extends StObject {
   /**
     * Gets reference to the fileInfo object - containing information for  fileName, fileSize, serverMessage(if returned from the server-side), etc.
     */
-  var fileInfo: js.UndefOr[js.Any] = js.undefined
+  var fileInfo: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets reference to FormData object(if the browser supports HTML5 file API) OR reference to jQuery representation of <form>.
     */
-  var formData: js.UndefOr[js.Any] = js.undefined
+  var formData: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets the igUpload widget object.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets reference to the original XMLHttpRequest object(if the browser supports HTML 5 file API - if not it is undefined).
     */
-  var xhr: js.UndefOr[js.Any] = js.undefined
+  var xhr: js.UndefOr[Any] = js.undefined
 }
 object OnFormDataSubmitEventUIParam {
   
@@ -44,19 +44,19 @@ object OnFormDataSubmitEventUIParam {
     
     inline def setFileIdUndefined: Self = StObject.set(x, "fileId", js.undefined)
     
-    inline def setFileInfo(value: js.Any): Self = StObject.set(x, "fileInfo", value.asInstanceOf[js.Any])
+    inline def setFileInfo(value: Any): Self = StObject.set(x, "fileInfo", value.asInstanceOf[js.Any])
     
     inline def setFileInfoUndefined: Self = StObject.set(x, "fileInfo", js.undefined)
     
-    inline def setFormData(value: js.Any): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
+    inline def setFormData(value: Any): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
     
     inline def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    inline def setXhr(value: js.Any): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+    inline def setXhr(value: Any): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
     
     inline def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
   }

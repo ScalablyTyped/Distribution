@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "SetParentAction")
 @js.native
-class SetParentAction protected ()
+open class SetParentAction protected ()
   extends typings.babylonjs.legacyMod.SetParentAction {
   /**
     * Instantiate the action
@@ -15,11 +15,6 @@ class SetParentAction protected ()
     * @param parent defines from where the animation should start (animation frame)
     * @param condition defines the trigger related conditions
     */
-  def this(triggerOptions: js.Any, target: js.Any, parent: js.Any) = this()
-  def this(
-    triggerOptions: js.Any,
-    target: js.Any,
-    parent: js.Any,
-    condition: typings.babylonjs.conditionMod.Condition
-  ) = this()
+  def this(triggerOptions: Any, target: Any, parent: Any) = this()
+  def this(triggerOptions: Any, target: Any, parent: Any, condition: typings.babylonjs.conditionMod.Condition) = this()
 }

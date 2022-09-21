@@ -10,10 +10,10 @@ Typings are for version 1.4
 | ------------------ | :-------------: |
 | Full name          | signale |
 | Keywords           | hackable, colorful, console, logger |
-| # releases         | 2 |
-| # dependents       | 600 |
-| # downloads        | 21627908 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4186425.3333333335 |
+| # stars            | 8663.0 |
 
 ## Links
 - [Homepage](https://github.com/klaussinani/signale#readme)

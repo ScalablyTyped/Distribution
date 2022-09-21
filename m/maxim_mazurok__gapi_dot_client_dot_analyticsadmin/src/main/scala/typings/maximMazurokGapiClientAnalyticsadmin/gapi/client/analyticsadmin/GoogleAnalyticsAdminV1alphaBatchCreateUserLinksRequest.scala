@@ -32,6 +32,6 @@ object GoogleAnalyticsAdminV1alphaBatchCreateUserLinksRequest {
     
     inline def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
     
-    inline def setRequestsVarargs(value: GoogleAnalyticsAdminV1alphaCreateUserLinkRequest*): Self = StObject.set(x, "requests", js.Array(value :_*))
+    inline def setRequestsVarargs(value: GoogleAnalyticsAdminV1alphaCreateUserLinkRequest*): Self = StObject.set(x, "requests", js.Array(value*))
   }
 }

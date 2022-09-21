@@ -16,7 +16,7 @@ object global {
     
     @JSGlobal("createjs.Event")
     @js.native
-    class Event protected ()
+    open class Event protected ()
       extends StObject
          with typings.createjsLib.createjs.Event {
       def this(`type`: String, bubbles: Boolean, cancelable: Boolean) = this()
@@ -29,11 +29,11 @@ object global {
       var cancelable: Boolean = js.native
       
       /* CompleteClass */
-      var currentTarget: js.Any = js.native
+      var currentTarget: Any = js.native
       
       // other event payloads
       /* CompleteClass */
-      var data: js.Any = js.native
+      var data: Any = js.native
       
       // It is 'Object' type officially, but 'any' is easier to use.
       /* CompleteClass */
@@ -55,7 +55,7 @@ object global {
       var immediatePropagationStopped: Boolean = js.native
       
       /* CompleteClass */
-      var item: js.Any = js.native
+      var item: Any = js.native
       
       /* CompleteClass */
       var loaded: Double = js.native
@@ -67,7 +67,7 @@ object global {
       var next: String = js.native
       
       /* CompleteClass */
-      var params: js.Any = js.native
+      var params: Any = js.native
       
       /* CompleteClass */
       var paused: Boolean = js.native
@@ -82,7 +82,7 @@ object global {
       var propagationStopped: Boolean = js.native
       
       /* CompleteClass */
-      var rawResult: js.Any = js.native
+      var rawResult: Any = js.native
       
       /* CompleteClass */
       override def remove(): Unit = js.native
@@ -91,7 +91,7 @@ object global {
       var removed: Boolean = js.native
       
       /* CompleteClass */
-      var result: js.Any = js.native
+      var result: Any = js.native
       
       /* CompleteClass */
       var runTime: Double = js.native
@@ -109,7 +109,7 @@ object global {
       override def stopPropagation(): Unit = js.native
       
       /* CompleteClass */
-      var target: js.Any = js.native
+      var target: Any = js.native
       
       /* CompleteClass */
       var time: Double = js.native
@@ -127,7 +127,7 @@ object global {
     
     @JSGlobal("createjs.EventDispatcher")
     @js.native
-    class EventDispatcher ()
+    open class EventDispatcher ()
       extends StObject
          with typings.createjsLib.createjs.EventDispatcher
     /* static members */
@@ -140,14 +140,14 @@ object global {
       inline def initialize(target: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
     }
     
-    inline def extend(subclass: js.Function0[js.Any], superclass: js.Function0[js.Any]): js.Function0[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(subclass.asInstanceOf[js.Any], superclass.asInstanceOf[js.Any])).asInstanceOf[js.Function0[js.Any]]
+    inline def extend(subclass: js.Function0[Any], superclass: js.Function0[Any]): js.Function0[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(subclass.asInstanceOf[js.Any], superclass.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Any]]
     
-    inline def indexOf(array: js.Array[js.Any], searchElement: js.Object): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")(array.asInstanceOf[js.Any], searchElement.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def indexOf(array: js.Array[Any], searchElement: js.Object): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")(array.asInstanceOf[js.Any], searchElement.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    inline def promote(subclass: js.Function0[js.Any], prefix: String): js.Function0[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("promote")(subclass.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[js.Function0[js.Any]]
+    inline def promote(subclass: js.Function0[Any], prefix: String): js.Function0[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("promote")(subclass.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Any]]
     
-    inline def proxy(method: js.Function1[/* eventObj */ js.Object, Boolean | Unit], scope: js.Object, arg: js.Any*): js.Function1[/* eventObj */ js.Object, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("proxy")(method.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* eventObj */ js.Object, js.Any]]
-    inline def proxy(method: HandleEvent, scope: js.Object, arg: js.Any*): js.Function1[/* eventObj */ js.Object, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("proxy")(method.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* eventObj */ js.Object, js.Any]]
-    inline def proxy(method: `0`, scope: js.Object, arg: js.Any*): js.Function1[/* eventObj */ js.Object, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("proxy")(method.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* eventObj */ js.Object, js.Any]]
+    inline def proxy(method: js.Function1[/* eventObj */ js.Object, Boolean | Unit], scope: js.Object, arg: Any*): js.Function1[/* eventObj */ js.Object, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("proxy")((List(method.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).`++`(arg.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Function1[/* eventObj */ js.Object, Any]]
+    inline def proxy(method: HandleEvent, scope: js.Object, arg: Any*): js.Function1[/* eventObj */ js.Object, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("proxy")((List(method.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).`++`(arg.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Function1[/* eventObj */ js.Object, Any]]
+    inline def proxy(method: `0`, scope: js.Object, arg: Any*): js.Function1[/* eventObj */ js.Object, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("proxy")((List(method.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).`++`(arg.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Function1[/* eventObj */ js.Object, Any]]
   }
 }

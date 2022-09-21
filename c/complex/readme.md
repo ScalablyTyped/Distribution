@@ -10,10 +10,10 @@ Do calculations with Complex numbers
 | ------------------ | :-------------: |
 | Full name          | complex |
 | Keywords           | Complex Numbers, Numbers, Math, Calculus |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 5017 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 406.3333333333333 |
+| # stars            | 25.0 |
 
 ## Links
 - [Homepage](http://github.com/arian/Complex)

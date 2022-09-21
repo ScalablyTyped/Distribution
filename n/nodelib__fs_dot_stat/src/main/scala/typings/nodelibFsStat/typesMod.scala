@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object typesMod {
   
-  type ErrnoException = typings.node.NodeJS.ErrnoException
+  type ErrnoException = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ErrnoException */ Any
   
   type Stats = typings.node.fsMod.Stats
 }

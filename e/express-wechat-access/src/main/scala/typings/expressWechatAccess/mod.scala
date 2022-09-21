@@ -3,6 +3,7 @@ package typings.expressWechatAccess
 import typings.express.mod.NextFunction
 import typings.expressWechatAccess.anon.AccessTokenUrl
 import typings.node.eventsMod.global.NodeJS.EventEmitter
+import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import typings.std.Response
 import org.scalablytyped.runtime.StObject
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   inline def apply(options: AccessTokenUrl): WeMiddleware = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[WeMiddleware]
-  inline def apply(options: AccessTokenUrl, errorHandler: js.Function1[/* e */ js.Any, js.Any]): WeMiddleware = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any])).asInstanceOf[WeMiddleware]
+  inline def apply(options: AccessTokenUrl, errorHandler: js.Function1[/* e */ Any, Any]): WeMiddleware = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any])).asInstanceOf[WeMiddleware]
   
   @JSImport("express-wechat-access", JSImport.Namespace)
   @js.native
@@ -64,8 +65,17 @@ object mod {
        with EventEmitter {
     
     /* InferMemberOverrides */
-    override def apply(arg1: /* req */ js.Any, arg2: /* res */ Response | ServerResponse, arg3: /* next */ NextFunction): js.Any = js.native
+    override def apply(
+      arg1: /* req */ Any,
+      arg2: /* res */ Response | ServerResponse[IncomingMessage],
+      arg3: /* next */ NextFunction
+    ): Any = js.native
   }
   
-  type WeMiddleware = js.Function3[/* req */ js.Any, /* res */ Response | ServerResponse, /* next */ NextFunction, js.Any]
+  type WeMiddleware = js.Function3[
+    /* req */ Any, 
+    /* res */ Response | ServerResponse[IncomingMessage], 
+    /* next */ NextFunction, 
+    Any
+  ]
 }

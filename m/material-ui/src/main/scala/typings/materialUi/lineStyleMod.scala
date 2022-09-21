@@ -10,10 +10,10 @@ object lineStyleMod {
   
   @JSImport("material-ui/svg-icons/action/line-style", JSImport.Default)
   @js.native
-  class default () extends ActionLineStyle
+  open class default () extends ActionLineStyle
   
   @JSImport("material-ui/svg-icons/action/line-style", "ActionLineStyle")
   @js.native
-  class ActionLineStyle ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionLineStyle ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

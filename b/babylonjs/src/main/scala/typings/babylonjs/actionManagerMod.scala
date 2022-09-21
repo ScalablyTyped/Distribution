@@ -12,20 +12,27 @@ object actionManagerMod {
   
   @JSImport("babylonjs/Actions/actionManager", "ActionManager")
   @js.native
-  class ActionManager protected () extends AbstractActionManager {
+  /**
+    * Creates a new action manager
+    * @param scene defines the hosting scene
+    */
+  open class ActionManager () extends AbstractActionManager {
+    def this(scene: Nullable[Scene]) = this()
+    
     /**
-      * Creates a new action manager
-      * @param scene defines the hosting scene
+      * @param target
+      * @param propertyPath
+      * @hidden
       */
-    def this(scene: Scene) = this()
+    def _getEffectiveTarget(target: Any, propertyPath: String): Any = js.native
     
-    /** @hidden */
-    def _getEffectiveTarget(target: js.Any, propertyPath: String): js.Any = js.native
-    
-    /** @hidden */
+    /**
+      * @param propertyPath
+      * @hidden
+      */
     def _getProperty(propertyPath: String): String = js.native
     
-    /* private */ var _scene: js.Any = js.native
+    /* private */ var _scene: Any = js.native
     
     /**
       * Gets hosting scene
@@ -190,6 +197,6 @@ object actionManagerMod {
       * @param object defines the hosting mesh
       * @param scene defines the hosting scene
       */
-    inline def Parse(parsedActions: js.Any, `object`: Nullable[AbstractMesh], scene: Scene): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedActions.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Parse(parsedActions: Any, `object`: Nullable[AbstractMesh], scene: Scene): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedActions.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

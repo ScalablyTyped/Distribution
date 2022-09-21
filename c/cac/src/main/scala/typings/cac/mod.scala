@@ -24,7 +24,7 @@ object mod {
   /**
     * @param name The program name to display in help and version message
     */
-  class CAC_ () extends EventEmitter {
+  open class CAC_ () extends EventEmitter {
     def this(name: String) = this()
     
     /**
@@ -62,7 +62,7 @@ object mod {
     
     var matchedCommandName: js.UndefOr[String] = js.native
     
-    /* private */ var mri: js.Any = js.native
+    /* private */ var mri: Any = js.native
     
     /** The program name to display in help and version message */
     var name: String = js.native
@@ -78,7 +78,7 @@ object mod {
     /**
       * Parsed CLI options, camelCased
       */
-    var options: StringDictionary[js.Any] = js.native
+    var options: StringDictionary[Any] = js.native
     
     /**
       * Output the corresponding help message
@@ -107,13 +107,13 @@ object mod {
       */
     var rawArgs: js.Array[String] = js.native
     
-    def runMatchedCommand(): js.Any = js.native
+    def runMatchedCommand(): Any = js.native
     
-    /* private */ var setParsedInfo: js.Any = js.native
+    /* private */ var setParsedInfo: Any = js.native
     
-    var showHelpOnExit: Boolean = js.native
+    var showHelpOnExit: js.UndefOr[Boolean] = js.native
     
-    var showVersionOnExit: Boolean = js.native
+    var showVersionOnExit: js.UndefOr[Boolean] = js.native
     
     def unsetMatchedCommand(): Unit = js.native
     
@@ -134,10 +134,10 @@ object mod {
   
   @JSImport("cac", "Command")
   @js.native
-  class Command protected () extends StObject {
+  open class Command protected () extends StObject {
     def this(rawName: String, description: String, config: CommandConfig, cli: CAC_) = this()
     
-    def action(callback: js.Function1[/* repeated */ js.Any, js.Any]): this.type = js.native
+    def action(callback: js.Function1[/* repeated */ Any, Any]): this.type = js.native
     
     def alias(name: String): this.type = js.native
     
@@ -163,7 +163,7 @@ object mod {
     
     var cli: CAC_ = js.native
     
-    var commandAction: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
+    var commandAction: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.native
     
     var config: CommandConfig = js.native
     
@@ -357,7 +357,7 @@ object mod {
       
       inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
       
-      inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
+      inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value*))
       
       inline def setNegated(value: Boolean): Self = StObject.set(x, "negated", value.asInstanceOf[js.Any])
       
@@ -371,9 +371,9 @@ object mod {
   
   trait OptionConfig extends StObject {
     
-    var default: js.UndefOr[js.Any] = js.undefined
+    var default: js.UndefOr[Any] = js.undefined
     
-    var `type`: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var `type`: js.UndefOr[js.Array[Any]] = js.undefined
   }
   object OptionConfig {
     
@@ -384,15 +384,15 @@ object mod {
     
     extension [Self <: OptionConfig](x: Self) {
       
-      inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
       inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      inline def setType(value: js.Array[js.Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: js.Array[Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      inline def setTypeVarargs(value: js.Any*): Self = StObject.set(x, "type", js.Array(value :_*))
+      inline def setTypeVarargs(value: Any*): Self = StObject.set(x, "type", js.Array(value*))
     }
   }
   
@@ -400,11 +400,11 @@ object mod {
     
     var args: js.Array[String]
     
-    var options: StringDictionary[js.Any]
+    var options: StringDictionary[Any]
   }
   object ParsedArgv {
     
-    inline def apply(args: js.Array[String], options: StringDictionary[js.Any]): ParsedArgv = {
+    inline def apply(args: js.Array[String], options: StringDictionary[Any]): ParsedArgv = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParsedArgv]
     }
@@ -413,9 +413,9 @@ object mod {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
       
-      inline def setOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: StringDictionary[Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -12,10 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("semantic-ui-react", "ModalActions")
 @js.native
-class ModalActions protected ()
-  extends Component[ModalActionsProps, ComponentState, js.Any] {
+open class ModalActions protected () extends Component[ModalActionsProps, ComponentState, Any] {
   def this(props: ModalActionsProps) = this()
-  def this(props: ModalActionsProps, context: js.Any) = this()
+  def this(props: ModalActionsProps, context: Any) = this()
 }
 object ModalActions {
   

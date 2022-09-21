@@ -33,7 +33,7 @@ trait ZAxisOptions
   /**
     * (Highcharts) Whether to allow decimals in this axis' ticks. When counting
     * integers, like persons or hits on a web page, decimals should be avoided
-    * in the labels.
+    * in the labels. By default, decimals are allowed on small scale axes.
     */
   var allowDecimals: js.UndefOr[Boolean] = js.undefined
   
@@ -81,7 +81,7 @@ trait ZAxisOptions
     * (Gantt) Show an indicator on the axis for the current date and time. Can
     * be a boolean or a configuration object similar to xAxis.plotLines.
     */
-  var currentDateIndicator: js.UndefOr[Boolean | AxisCurrentDateIndicatorOptions] = js.undefined
+  var currentDateIndicator: js.UndefOr[Boolean | CurrentDateIndicatorOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) For a datetime axis, the scale will
@@ -143,7 +143,8 @@ trait ZAxisOptions
   
   /**
     * (Highcharts) The width of the grid lines extending the ticks across the
-    * plot area.
+    * plot area. Defaults to 1 on the Y axis and 0 on the X axis, except for 3d
+    * charts.
     *
     * In styled mode, the stroke width is given in the `.highcharts-grid-line`
     * class.
@@ -362,6 +363,9 @@ trait ZAxisOptions
     * In stock charts the X axis is ordinal by default, unless the boost module
     * is used and at least one of the series' data length exceeds the
     * boostThreshold.
+    *
+    * For an ordinal axis, `minPadding` and `maxPadding` are ignored. Use
+    * overscroll instead.
     */
   var ordinal: js.UndefOr[Boolean] = js.undefined
   
@@ -378,6 +382,12 @@ trait ZAxisOptions
     * be used.
     */
   var pane: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * (Highcharts) Whether to pan axis. If `chart.panning` is enabled, the
+    * option allows to disable panning on an individual axis.
+    */
+  var panningEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) An array of colored bands stretching
@@ -605,6 +615,11 @@ trait ZAxisOptions
   var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * (Highcharts) The Z index for the axis group.
+    */
+  var zIndex: js.UndefOr[Double] = js.undefined
+  
+  /**
     * (Highcharts) Whether to zoom axis. If `chart.zoomType` is set, the option
     * allows to disable zooming on an individual axis.
     */
@@ -643,7 +658,7 @@ object ZAxisOptions {
     
     inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value*))
     
     inline def setCeiling(value: Double): Self = StObject.set(x, "ceiling", value.asInstanceOf[js.Any])
     
@@ -653,7 +668,7 @@ object ZAxisOptions {
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    inline def setCurrentDateIndicator(value: Boolean | AxisCurrentDateIndicatorOptions): Self = StObject.set(x, "currentDateIndicator", value.asInstanceOf[js.Any])
+    inline def setCurrentDateIndicator(value: Boolean | CurrentDateIndicatorOptions): Self = StObject.set(x, "currentDateIndicator", value.asInstanceOf[js.Any])
     
     inline def setCurrentDateIndicatorUndefined: Self = StObject.set(x, "currentDateIndicator", js.undefined)
     
@@ -803,17 +818,21 @@ object ZAxisOptions {
     
     inline def setPaneUndefined: Self = StObject.set(x, "pane", js.undefined)
     
+    inline def setPanningEnabled(value: Boolean): Self = StObject.set(x, "panningEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setPanningEnabledUndefined: Self = StObject.set(x, "panningEnabled", js.undefined)
+    
     inline def setPlotBands(value: js.Array[ZAxisPlotBandsOptions]): Self = StObject.set(x, "plotBands", value.asInstanceOf[js.Any])
     
     inline def setPlotBandsUndefined: Self = StObject.set(x, "plotBands", js.undefined)
     
-    inline def setPlotBandsVarargs(value: ZAxisPlotBandsOptions*): Self = StObject.set(x, "plotBands", js.Array(value :_*))
+    inline def setPlotBandsVarargs(value: ZAxisPlotBandsOptions*): Self = StObject.set(x, "plotBands", js.Array(value*))
     
     inline def setPlotLines(value: js.Array[ZAxisPlotLinesOptions]): Self = StObject.set(x, "plotLines", value.asInstanceOf[js.Any])
     
     inline def setPlotLinesUndefined: Self = StObject.set(x, "plotLines", js.undefined)
     
-    inline def setPlotLinesVarargs(value: ZAxisPlotLinesOptions*): Self = StObject.set(x, "plotLines", js.Array(value :_*))
+    inline def setPlotLinesVarargs(value: ZAxisPlotLinesOptions*): Self = StObject.set(x, "plotLines", js.Array(value*))
     
     inline def setRange(value: Double): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
@@ -887,7 +906,7 @@ object ZAxisOptions {
     
     inline def setTickPositionsUndefined: Self = StObject.set(x, "tickPositions", js.undefined)
     
-    inline def setTickPositionsVarargs(value: Double*): Self = StObject.set(x, "tickPositions", js.Array(value :_*))
+    inline def setTickPositionsVarargs(value: Double*): Self = StObject.set(x, "tickPositions", js.Array(value*))
     
     inline def setTickWidth(value: Double): Self = StObject.set(x, "tickWidth", value.asInstanceOf[js.Any])
     
@@ -913,11 +932,15 @@ object ZAxisOptions {
     
     inline def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
     
-    inline def setUnitsVarargs(value: (js.Tuple2[String, js.Array[Double] | Null])*): Self = StObject.set(x, "units", js.Array(value :_*))
+    inline def setUnitsVarargs(value: (js.Tuple2[String, js.Array[Double] | Null])*): Self = StObject.set(x, "units", js.Array(value*))
     
     inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    
+    inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
     
     inline def setZoomEnabled(value: Boolean): Self = StObject.set(x, "zoomEnabled", value.asInstanceOf[js.Any])
     

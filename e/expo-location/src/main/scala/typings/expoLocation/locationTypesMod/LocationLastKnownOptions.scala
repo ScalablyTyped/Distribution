@@ -7,12 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LocationLastKnownOptions extends StObject {
   
   /**
-    * Maximum age of the location in miliseconds.
+    * A number of milliseconds after which the last known location starts to be invalid and thus
+    * `null` is returned.
     */
   var maxAge: js.UndefOr[Double] = js.undefined
   
   /**
-    * Maximum radius of horizontal accuracy in meters.
+    * The maximum radius of uncertainty for the location, measured in meters. If the last known
+    * location's accuracy radius is bigger (less accurate) then `null` is returned.
     */
   var requiredAccuracy: js.UndefOr[Double] = js.undefined
 }

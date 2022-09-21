@@ -19,7 +19,7 @@ trait ContactsModule extends StObject {
   /* private */ @JSName("Outlook.ContactsModule_typekey")
   var OutlookDotContactsModule_typekey: ContactsModule
   
-  val Parent: js.Any
+  val Parent: Any
   
   var Position: Double
   
@@ -36,7 +36,7 @@ object ContactsModule {
     NavigationGroups: NavigationGroups,
     NavigationModuleType: OlNavigationModuleType,
     OutlookDotContactsModule_typekey: ContactsModule,
-    Parent: js.Any,
+    Parent: Any,
     Position: Double,
     Session: NameSpace,
     Visible: Boolean
@@ -60,7 +60,7 @@ object ContactsModule {
     
     inline def setOutlookDotContactsModule_typekey(value: ContactsModule): Self = StObject.set(x, "Outlook.ContactsModule_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     

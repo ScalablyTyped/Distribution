@@ -23,7 +23,7 @@ object GetMessageActionsResponse {
     
     inline def setData(value: js.Array[MessageAction]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: MessageAction*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: MessageAction*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

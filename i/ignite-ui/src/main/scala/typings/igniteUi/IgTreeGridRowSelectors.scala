@@ -11,7 +11,7 @@ trait IgTreeGridRowSelectors
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * Gets the type of checkboxes rendered in the row selector. Can be set only at initialization.

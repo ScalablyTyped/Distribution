@@ -10,10 +10,10 @@ Download an array of objects as a CSV file in the browser
 | ------------------ | :-------------: |
 | Full name          | save-csv |
 | Keywords           | csv, save, excel, export, locale-aware, download, browser, json |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 33650 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5515.666666666667 |
+| # stars            | 12.0 |
 
 ## Links
 - [Homepage](https://github.com/silverwind/save-csv#readme)

@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Overview of the modifications that occurred.
-  */
 trait SchemaGooglePrivacyDlpV2TransformationOverview extends StObject {
   
   /**
@@ -17,7 +14,7 @@ trait SchemaGooglePrivacyDlpV2TransformationOverview extends StObject {
   /**
     * Total size in bytes that were transformed in some way.
     */
-  var transformedBytes: js.UndefOr[String] = js.undefined
+  var transformedBytes: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2TransformationOverview {
   
@@ -32,9 +29,11 @@ object SchemaGooglePrivacyDlpV2TransformationOverview {
     
     inline def setTransformationSummariesUndefined: Self = StObject.set(x, "transformationSummaries", js.undefined)
     
-    inline def setTransformationSummariesVarargs(value: SchemaGooglePrivacyDlpV2TransformationSummary*): Self = StObject.set(x, "transformationSummaries", js.Array(value :_*))
+    inline def setTransformationSummariesVarargs(value: SchemaGooglePrivacyDlpV2TransformationSummary*): Self = StObject.set(x, "transformationSummaries", js.Array(value*))
     
     inline def setTransformedBytes(value: String): Self = StObject.set(x, "transformedBytes", value.asInstanceOf[js.Any])
+    
+    inline def setTransformedBytesNull: Self = StObject.set(x, "transformedBytes", null)
     
     inline def setTransformedBytesUndefined: Self = StObject.set(x, "transformedBytes", js.undefined)
   }

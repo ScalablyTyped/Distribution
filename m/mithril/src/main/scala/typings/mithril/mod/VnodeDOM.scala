@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 // In some lifecycle methods, Vnode will have a dom property
 // and possibly a domSize property.
-trait VnodeDOM[Attrs, State /* <: Lifecycle[Attrs, State] */]
+trait VnodeDOM[Attrs, State]
   extends StObject
      with Vnode[Attrs, State] {
   
@@ -19,12 +19,12 @@ trait VnodeDOM[Attrs, State /* <: Lifecycle[Attrs, State] */]
 }
 object VnodeDOM {
   
-  inline def apply[Attrs, State /* <: Lifecycle[Attrs, State] */](attrs: Attrs, dom: Element, state: State, tag: String | (ComponentTypes[Attrs, State])): VnodeDOM[Attrs, State] = {
+  inline def apply[Attrs, State](attrs: Attrs, dom: Element, state: State, tag: String | (ComponentTypes[Attrs, State])): VnodeDOM[Attrs, State] = {
     val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], dom = dom.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[VnodeDOM[Attrs, State]]
   }
   
-  extension [Self <: VnodeDOM[?, ?], Attrs, State /* <: Lifecycle[Attrs, State] */](x: Self & (VnodeDOM[Attrs, State])) {
+  extension [Self <: VnodeDOM[?, ?], Attrs, State](x: Self & (VnodeDOM[Attrs, State])) {
     
     inline def setDom(value: Element): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
     

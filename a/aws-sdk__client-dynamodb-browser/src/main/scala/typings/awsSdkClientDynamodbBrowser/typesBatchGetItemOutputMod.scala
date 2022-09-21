@@ -52,7 +52,7 @@ object typesBatchGetItemOutputMod {
       
       inline def setConsumedCapacityUndefined: Self = StObject.set(x, "ConsumedCapacity", js.undefined)
       
-      inline def setConsumedCapacityVarargs(value: UnmarshalledConsumedCapacity*): Self = StObject.set(x, "ConsumedCapacity", js.Array(value :_*))
+      inline def setConsumedCapacityVarargs(value: UnmarshalledConsumedCapacity*): Self = StObject.set(x, "ConsumedCapacity", js.Array(value*))
       
       inline def setResponses(value: StringDictionary[js.Array[StringDictionary[UnmarshalledAttributeValue]]]): Self = StObject.set(x, "Responses", value.asInstanceOf[js.Any])
       

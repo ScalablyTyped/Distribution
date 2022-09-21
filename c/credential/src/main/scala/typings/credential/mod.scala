@@ -1,7 +1,6 @@
 package typings.credential
 
 import typings.credential.anon.Expired
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,9 +14,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  type HashCallback = js.Function2[/* err */ Error, /* hash */ String, Unit]
+  type HashCallback = js.Function2[/* err */ js.Error, /* hash */ String, Unit]
   
-  type VerifyCallback = js.Function2[/* err */ Error, /* isValid */ Boolean, Unit]
+  type VerifyCallback = js.Function2[/* err */ js.Error, /* isValid */ Boolean, Unit]
   
   trait defaultOptions extends StObject {
     

@@ -9,6 +9,9 @@ trait Network extends StObject {
   /** List of ports, or port pairs, to forward from the virtual machine to the application container. Only applicable in the App Engine flexible environment. */
   var forwardedPorts: js.UndefOr[js.Array[String]] = js.undefined
   
+  /** The IP mode for instances. Only applicable in the App Engine flexible environment. */
+  var instanceIpMode: js.UndefOr[String] = js.undefined
+  
   /** Tag to apply to the instance during creation. Only applicable in the App Engine flexible environment. */
   var instanceTag: js.UndefOr[String] = js.undefined
   
@@ -41,7 +44,11 @@ object Network {
     
     inline def setForwardedPortsUndefined: Self = StObject.set(x, "forwardedPorts", js.undefined)
     
-    inline def setForwardedPortsVarargs(value: String*): Self = StObject.set(x, "forwardedPorts", js.Array(value :_*))
+    inline def setForwardedPortsVarargs(value: String*): Self = StObject.set(x, "forwardedPorts", js.Array(value*))
+    
+    inline def setInstanceIpMode(value: String): Self = StObject.set(x, "instanceIpMode", value.asInstanceOf[js.Any])
+    
+    inline def setInstanceIpModeUndefined: Self = StObject.set(x, "instanceIpMode", js.undefined)
     
     inline def setInstanceTag(value: String): Self = StObject.set(x, "instanceTag", value.asInstanceOf[js.Any])
     

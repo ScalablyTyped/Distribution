@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("actions-on-google/dist/service/actionssdk", "MediaResponse")
 @js.native
-class MediaResponse protected ()
+open class MediaResponse protected ()
   extends typings.actionsOnGoogle.conversationMod.MediaResponse {
   /**
     * @param objects MediaObjects

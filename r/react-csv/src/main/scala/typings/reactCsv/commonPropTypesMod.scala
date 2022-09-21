@@ -18,7 +18,7 @@ object commonPropTypesMod {
     
     var asyncOnClick: js.UndefOr[Boolean] = js.undefined
     
-    var data: String | Data
+    var data: String | Data | (js.Function0[String | Data])
     
     var enclosingCharacter: js.UndefOr[String] = js.undefined
     
@@ -34,7 +34,7 @@ object commonPropTypesMod {
   }
   object CommonPropTypes {
     
-    inline def apply(data: String | Data): CommonPropTypes = {
+    inline def apply(data: String | Data | (js.Function0[String | Data])): CommonPropTypes = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[CommonPropTypes]
     }
@@ -45,9 +45,11 @@ object commonPropTypesMod {
       
       inline def setAsyncOnClickUndefined: Self = StObject.set(x, "asyncOnClick", js.undefined)
       
-      inline def setData(value: String | Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String | Data | (js.Function0[String | Data])): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: js.Object*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataFunction0(value: () => String | Data): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
+      
+      inline def setDataVarargs(value: js.Object*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setEnclosingCharacter(value: String): Self = StObject.set(x, "enclosingCharacter", value.asInstanceOf[js.Any])
       
@@ -61,7 +63,7 @@ object commonPropTypesMod {
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      inline def setHeadersVarargs(value: (LabelKeyObject | String)*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: (LabelKeyObject | String)*): Self = StObject.set(x, "headers", js.Array(value*))
       
       inline def setOnClick(value: SyncClickHandler | AsyncClickHandler): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
       

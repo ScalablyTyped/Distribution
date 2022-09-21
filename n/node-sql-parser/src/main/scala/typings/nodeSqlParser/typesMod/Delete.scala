@@ -11,15 +11,15 @@ trait Delete
   
   var from: js.Array[From | Dual]
   
-  var table: js.Any
+  var table: Any
   
   var `type`: delete
   
-  var where: js.Any
+  var where: Any
 }
 object Delete {
   
-  inline def apply(from: js.Array[From | Dual], table: js.Any, where: js.Any): Delete = {
+  inline def apply(from: js.Array[From | Dual], table: Any, where: Any): Delete = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any], where = where.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("delete")
     __obj.asInstanceOf[Delete]
@@ -29,12 +29,12 @@ object Delete {
     
     inline def setFrom(value: js.Array[From | Dual]): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    inline def setFromVarargs(value: (From | Dual)*): Self = StObject.set(x, "from", js.Array(value :_*))
+    inline def setFromVarargs(value: (From | Dual)*): Self = StObject.set(x, "from", js.Array(value*))
     
-    inline def setTable(value: js.Any): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+    inline def setTable(value: Any): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
     inline def setType(value: delete): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setWhere(value: js.Any): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
+    inline def setWhere(value: Any): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
   }
 }

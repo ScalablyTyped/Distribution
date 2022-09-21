@@ -46,7 +46,7 @@ object TableChangeState {
     
     inline def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setFilters(value: StringDictionary[Comparator]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     

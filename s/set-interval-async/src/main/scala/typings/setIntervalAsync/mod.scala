@@ -13,13 +13,15 @@ object mod {
   
   @JSImport("set-interval-async", "SetIntervalAsyncError")
   @js.native
-  class SetIntervalAsyncError ()
+  open class SetIntervalAsyncError ()
     extends StObject
        with Error {
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
@@ -43,7 +45,7 @@ object mod {
       * @param interval - Interval in milliseconds. Must be at least 10 ms.
       * @param args - Any number of arguments to pass on to the handler.
       */
-    inline def setIntervalAsync(handler: js.Function1[/* repeated */ js.Any, js.Any], interval: Double, args: js.Any*): SetIntervalAsyncTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("setIntervalAsync")(handler.asInstanceOf[js.Any], interval.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[SetIntervalAsyncTimer]
+    inline def setIntervalAsync(handler: js.Function1[/* repeated */ Any, Any], interval: Double, args: Any*): SetIntervalAsyncTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("setIntervalAsync")((List(handler.asInstanceOf[js.Any], interval.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[SetIntervalAsyncTimer]
   }
   
   object fixed {
@@ -63,7 +65,7 @@ object mod {
       * @param interval - Interval in milliseconds. Must be at least 10 ms.
       * @param args - Any number of arguments to pass on to the handler.
       */
-    inline def setIntervalAsync(handler: js.Function1[/* repeated */ js.Any, js.Any], interval: Double, args: js.Any*): SetIntervalAsyncTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("setIntervalAsync")(handler.asInstanceOf[js.Any], interval.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[SetIntervalAsyncTimer]
+    inline def setIntervalAsync(handler: js.Function1[/* repeated */ Any, Any], interval: Double, args: Any*): SetIntervalAsyncTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("setIntervalAsync")((List(handler.asInstanceOf[js.Any], interval.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[SetIntervalAsyncTimer]
   }
   
   object legacy {
@@ -85,7 +87,7 @@ object mod {
       * @param interval - Interval in milliseconds. Must be at least 10 ms.
       * @param args - Any number of arguments to pass on to the handler.
       */
-    inline def setIntervalAsync(handler: js.Function1[/* repeated */ js.Any, js.Any], interval: Double, args: js.Any*): SetIntervalAsyncTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("setIntervalAsync")(handler.asInstanceOf[js.Any], interval.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[SetIntervalAsyncTimer]
+    inline def setIntervalAsync(handler: js.Function1[/* repeated */ Any, Any], interval: Double, args: Any*): SetIntervalAsyncTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("setIntervalAsync")((List(handler.asInstanceOf[js.Any], interval.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[SetIntervalAsyncTimer]
   }
   
   trait SetIntervalAsyncTimer extends StObject {

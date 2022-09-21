@@ -29,7 +29,7 @@ object SourceProvider {
     
     inline def setTitles(value: js.Array[typings.divaJs.anon.Dimensions]): Self = StObject.set(x, "titles", value.asInstanceOf[js.Any])
     
-    inline def setTitlesVarargs(value: typings.divaJs.anon.Dimensions*): Self = StObject.set(x, "titles", js.Array(value :_*))
+    inline def setTitlesVarargs(value: typings.divaJs.anon.Dimensions*): Self = StObject.set(x, "titles", js.Array(value*))
     
     inline def setZoomLevel(value: Double): Self = StObject.set(x, "zoomLevel", value.asInstanceOf[js.Any])
   }

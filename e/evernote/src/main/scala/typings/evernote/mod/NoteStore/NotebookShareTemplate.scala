@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("evernote", "NoteStore.NotebookShareTemplate")
 @js.native
-class NotebookShareTemplate () extends StObject {
+open class NotebookShareTemplate () extends StObject {
   def this(args: NotebookGuid) = this()
   
   var notebookGuid: js.UndefOr[Guid] = js.native

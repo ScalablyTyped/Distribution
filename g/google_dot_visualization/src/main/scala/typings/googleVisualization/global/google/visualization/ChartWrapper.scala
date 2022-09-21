@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("google.visualization.ChartWrapper")
 @js.native
-class ChartWrapper ()
+open class ChartWrapper ()
   extends StObject
      with typings.googleVisualization.google.visualization.ChartWrapper {
   def this(spec: ChartSpecs) = this()

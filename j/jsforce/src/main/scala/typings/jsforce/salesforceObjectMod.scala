@@ -19,7 +19,6 @@ import typings.jsforce.recordMod.RecordReference
 import typings.jsforce.recordResultMod.RecordResult
 import typings.jsforce.salesforceIdMod.SalesforceId
 import typings.node.streamMod.Stream
-import typings.std.Date
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -29,22 +28,22 @@ object salesforceObjectMod {
   
   @JSImport("jsforce/salesforce-object", "ListView")
   @js.native
-  class ListView protected () extends StObject {
+  open class ListView protected () extends StObject {
     def this(connection: Connection, `type`: String, id: SalesforceId) = this()
   }
   
   @JSImport("jsforce/salesforce-object", "ListViewsInfo")
   @js.native
-  class ListViewsInfo () extends StObject
+  open class ListViewsInfo () extends StObject
   
   @JSImport("jsforce/salesforce-object", "QuickAction")
   @js.native
-  class QuickAction ()
+  open class QuickAction ()
     extends typings.jsforce.quickActionMod.QuickAction
   
   @JSImport("jsforce/salesforce-object", "SObject")
   @js.native
-  class SObject[T] () extends StObject {
+  open class SObject[T] () extends StObject {
     
     def approvalLayouts(): js.Promise[ApprovalLayoutInfo] = js.native
     def approvalLayouts(callback: Callback[ApprovalLayoutInfo]): js.Promise[ApprovalLayoutInfo] = js.native
@@ -152,12 +151,12 @@ object salesforceObjectMod {
     
     def deleted(start: String, end: String): js.Promise[DeletedRecordsInfo] = js.native
     def deleted(start: String, end: String, callback: Callback[DeletedRecordsInfo]): js.Promise[DeletedRecordsInfo] = js.native
-    def deleted(start: String, end: Date): js.Promise[DeletedRecordsInfo] = js.native
-    def deleted(start: String, end: Date, callback: Callback[DeletedRecordsInfo]): js.Promise[DeletedRecordsInfo] = js.native
-    def deleted(start: Date, end: String): js.Promise[DeletedRecordsInfo] = js.native
-    def deleted(start: Date, end: String, callback: Callback[DeletedRecordsInfo]): js.Promise[DeletedRecordsInfo] = js.native
-    def deleted(start: Date, end: Date): js.Promise[DeletedRecordsInfo] = js.native
-    def deleted(start: Date, end: Date, callback: Callback[DeletedRecordsInfo]): js.Promise[DeletedRecordsInfo] = js.native
+    def deleted(start: String, end: js.Date): js.Promise[DeletedRecordsInfo] = js.native
+    def deleted(start: String, end: js.Date, callback: Callback[DeletedRecordsInfo]): js.Promise[DeletedRecordsInfo] = js.native
+    def deleted(start: js.Date, end: String): js.Promise[DeletedRecordsInfo] = js.native
+    def deleted(start: js.Date, end: String, callback: Callback[DeletedRecordsInfo]): js.Promise[DeletedRecordsInfo] = js.native
+    def deleted(start: js.Date, end: js.Date): js.Promise[DeletedRecordsInfo] = js.native
+    def deleted(start: js.Date, end: js.Date, callback: Callback[DeletedRecordsInfo]): js.Promise[DeletedRecordsInfo] = js.native
     
     def describe(): js.Promise[DescribeSObjectResult] = js.native
     def describe(callback: Callback[DescribeSObjectResult]): js.Promise[DescribeSObjectResult] = js.native
@@ -272,69 +271,69 @@ object salesforceObjectMod {
     def find[T](query: Unit, fields: Unit, options: FindOptions): Query[js.Array[Record[T]]] = js.native
     def find[T](query: Unit, fields: Unit, options: FindOptions, callback: Callback[js.Array[Record[T]]]): Query[js.Array[Record[T]]] = js.native
     
-    def findOne[T](): Query[Record[T]] = js.native
-    def findOne[T](query: String): Query[Record[T]] = js.native
-    def findOne[T](query: String, callback: Callback[Record[T]]): Query[Record[T]] = js.native
-    def findOne[T](query: String, fields: String): Query[Record[T]] = js.native
-    def findOne[T](query: String, fields: String, callback: Callback[Record[T]]): Query[Record[T]] = js.native
-    def findOne[T](query: String, fields: String, options: Unit, callback: Callback[Record[T]]): Query[Record[T]] = js.native
-    def findOne[T](query: String, fields: String, options: FindOptions): Query[Record[T]] = js.native
-    def findOne[T](query: String, fields: String, options: FindOptions, callback: Callback[Record[T]]): Query[Record[T]] = js.native
-    def findOne[T](query: String, fields: js.Array[String]): Query[Record[T]] = js.native
-    def findOne[T](query: String, fields: js.Array[String], callback: Callback[Record[T]]): Query[Record[T]] = js.native
-    def findOne[T](query: String, fields: js.Array[String], options: Unit, callback: Callback[Record[T]]): Query[Record[T]] = js.native
-    def findOne[T](query: String, fields: js.Array[String], options: FindOptions): Query[Record[T]] = js.native
-    def findOne[T](query: String, fields: js.Array[String], options: FindOptions, callback: Callback[Record[T]]): Query[Record[T]] = js.native
-    def findOne[T](query: String, fields: js.Object): Query[Record[T]] = js.native
-    def findOne[T](query: String, fields: js.Object, callback: Callback[Record[T]]): Query[Record[T]] = js.native
-    def findOne[T](query: String, fields: js.Object, options: Unit, callback: Callback[Record[T]]): Query[Record[T]] = js.native
-    def findOne[T](query: String, fields: js.Object, options: FindOptions): Query[Record[T]] = js.native
-    def findOne[T](query: String, fields: js.Object, options: FindOptions, callback: Callback[Record[T]]): Query[Record[T]] = js.native
-    def findOne[T](query: String, fields: Unit, callback: Callback[Record[T]]): Query[Record[T]] = js.native
-    def findOne[T](query: String, fields: Unit, options: Unit, callback: Callback[Record[T]]): Query[Record[T]] = js.native
-    def findOne[T](query: String, fields: Unit, options: FindOptions): Query[Record[T]] = js.native
-    def findOne[T](query: String, fields: Unit, options: FindOptions, callback: Callback[Record[T]]): Query[Record[T]] = js.native
-    def findOne[T](query: js.Object): Query[Record[T]] = js.native
-    def findOne[T](query: js.Object, callback: Callback[Record[T]]): Query[Record[T]] = js.native
-    def findOne[T](query: js.Object, fields: String): Query[Record[T]] = js.native
-    def findOne[T](query: js.Object, fields: String, callback: Callback[Record[T]]): Query[Record[T]] = js.native
-    def findOne[T](query: js.Object, fields: String, options: Unit, callback: Callback[Record[T]]): Query[Record[T]] = js.native
-    def findOne[T](query: js.Object, fields: String, options: FindOptions): Query[Record[T]] = js.native
-    def findOne[T](query: js.Object, fields: String, options: FindOptions, callback: Callback[Record[T]]): Query[Record[T]] = js.native
-    def findOne[T](query: js.Object, fields: js.Array[String]): Query[Record[T]] = js.native
-    def findOne[T](query: js.Object, fields: js.Array[String], callback: Callback[Record[T]]): Query[Record[T]] = js.native
-    def findOne[T](query: js.Object, fields: js.Array[String], options: Unit, callback: Callback[Record[T]]): Query[Record[T]] = js.native
-    def findOne[T](query: js.Object, fields: js.Array[String], options: FindOptions): Query[Record[T]] = js.native
-    def findOne[T](query: js.Object, fields: js.Array[String], options: FindOptions, callback: Callback[Record[T]]): Query[Record[T]] = js.native
-    def findOne[T](query: js.Object, fields: js.Object): Query[Record[T]] = js.native
-    def findOne[T](query: js.Object, fields: js.Object, callback: Callback[Record[T]]): Query[Record[T]] = js.native
-    def findOne[T](query: js.Object, fields: js.Object, options: Unit, callback: Callback[Record[T]]): Query[Record[T]] = js.native
-    def findOne[T](query: js.Object, fields: js.Object, options: FindOptions): Query[Record[T]] = js.native
-    def findOne[T](query: js.Object, fields: js.Object, options: FindOptions, callback: Callback[Record[T]]): Query[Record[T]] = js.native
-    def findOne[T](query: js.Object, fields: Unit, callback: Callback[Record[T]]): Query[Record[T]] = js.native
-    def findOne[T](query: js.Object, fields: Unit, options: Unit, callback: Callback[Record[T]]): Query[Record[T]] = js.native
-    def findOne[T](query: js.Object, fields: Unit, options: FindOptions): Query[Record[T]] = js.native
-    def findOne[T](query: js.Object, fields: Unit, options: FindOptions, callback: Callback[Record[T]]): Query[Record[T]] = js.native
-    def findOne[T](query: Unit, callback: Callback[Record[T]]): Query[Record[T]] = js.native
-    def findOne[T](query: Unit, fields: String): Query[Record[T]] = js.native
-    def findOne[T](query: Unit, fields: String, callback: Callback[Record[T]]): Query[Record[T]] = js.native
-    def findOne[T](query: Unit, fields: String, options: Unit, callback: Callback[Record[T]]): Query[Record[T]] = js.native
-    def findOne[T](query: Unit, fields: String, options: FindOptions): Query[Record[T]] = js.native
-    def findOne[T](query: Unit, fields: String, options: FindOptions, callback: Callback[Record[T]]): Query[Record[T]] = js.native
-    def findOne[T](query: Unit, fields: js.Array[String]): Query[Record[T]] = js.native
-    def findOne[T](query: Unit, fields: js.Array[String], callback: Callback[Record[T]]): Query[Record[T]] = js.native
-    def findOne[T](query: Unit, fields: js.Array[String], options: Unit, callback: Callback[Record[T]]): Query[Record[T]] = js.native
-    def findOne[T](query: Unit, fields: js.Array[String], options: FindOptions): Query[Record[T]] = js.native
-    def findOne[T](query: Unit, fields: js.Array[String], options: FindOptions, callback: Callback[Record[T]]): Query[Record[T]] = js.native
-    def findOne[T](query: Unit, fields: js.Object): Query[Record[T]] = js.native
-    def findOne[T](query: Unit, fields: js.Object, callback: Callback[Record[T]]): Query[Record[T]] = js.native
-    def findOne[T](query: Unit, fields: js.Object, options: Unit, callback: Callback[Record[T]]): Query[Record[T]] = js.native
-    def findOne[T](query: Unit, fields: js.Object, options: FindOptions): Query[Record[T]] = js.native
-    def findOne[T](query: Unit, fields: js.Object, options: FindOptions, callback: Callback[Record[T]]): Query[Record[T]] = js.native
-    def findOne[T](query: Unit, fields: Unit, callback: Callback[Record[T]]): Query[Record[T]] = js.native
-    def findOne[T](query: Unit, fields: Unit, options: Unit, callback: Callback[Record[T]]): Query[Record[T]] = js.native
-    def findOne[T](query: Unit, fields: Unit, options: FindOptions): Query[Record[T]] = js.native
-    def findOne[T](query: Unit, fields: Unit, options: FindOptions, callback: Callback[Record[T]]): Query[Record[T]] = js.native
+    def findOne[T](): Query[Record[T] | Null] = js.native
+    def findOne[T](query: String): Query[Record[T] | Null] = js.native
+    def findOne[T](query: String, callback: Callback[Record[T]]): Query[Record[T] | Null] = js.native
+    def findOne[T](query: String, fields: String): Query[Record[T] | Null] = js.native
+    def findOne[T](query: String, fields: String, callback: Callback[Record[T]]): Query[Record[T] | Null] = js.native
+    def findOne[T](query: String, fields: String, options: Unit, callback: Callback[Record[T]]): Query[Record[T] | Null] = js.native
+    def findOne[T](query: String, fields: String, options: FindOptions): Query[Record[T] | Null] = js.native
+    def findOne[T](query: String, fields: String, options: FindOptions, callback: Callback[Record[T]]): Query[Record[T] | Null] = js.native
+    def findOne[T](query: String, fields: js.Array[String]): Query[Record[T] | Null] = js.native
+    def findOne[T](query: String, fields: js.Array[String], callback: Callback[Record[T]]): Query[Record[T] | Null] = js.native
+    def findOne[T](query: String, fields: js.Array[String], options: Unit, callback: Callback[Record[T]]): Query[Record[T] | Null] = js.native
+    def findOne[T](query: String, fields: js.Array[String], options: FindOptions): Query[Record[T] | Null] = js.native
+    def findOne[T](query: String, fields: js.Array[String], options: FindOptions, callback: Callback[Record[T]]): Query[Record[T] | Null] = js.native
+    def findOne[T](query: String, fields: js.Object): Query[Record[T] | Null] = js.native
+    def findOne[T](query: String, fields: js.Object, callback: Callback[Record[T]]): Query[Record[T] | Null] = js.native
+    def findOne[T](query: String, fields: js.Object, options: Unit, callback: Callback[Record[T]]): Query[Record[T] | Null] = js.native
+    def findOne[T](query: String, fields: js.Object, options: FindOptions): Query[Record[T] | Null] = js.native
+    def findOne[T](query: String, fields: js.Object, options: FindOptions, callback: Callback[Record[T]]): Query[Record[T] | Null] = js.native
+    def findOne[T](query: String, fields: Unit, callback: Callback[Record[T]]): Query[Record[T] | Null] = js.native
+    def findOne[T](query: String, fields: Unit, options: Unit, callback: Callback[Record[T]]): Query[Record[T] | Null] = js.native
+    def findOne[T](query: String, fields: Unit, options: FindOptions): Query[Record[T] | Null] = js.native
+    def findOne[T](query: String, fields: Unit, options: FindOptions, callback: Callback[Record[T]]): Query[Record[T] | Null] = js.native
+    def findOne[T](query: js.Object): Query[Record[T] | Null] = js.native
+    def findOne[T](query: js.Object, callback: Callback[Record[T]]): Query[Record[T] | Null] = js.native
+    def findOne[T](query: js.Object, fields: String): Query[Record[T] | Null] = js.native
+    def findOne[T](query: js.Object, fields: String, callback: Callback[Record[T]]): Query[Record[T] | Null] = js.native
+    def findOne[T](query: js.Object, fields: String, options: Unit, callback: Callback[Record[T]]): Query[Record[T] | Null] = js.native
+    def findOne[T](query: js.Object, fields: String, options: FindOptions): Query[Record[T] | Null] = js.native
+    def findOne[T](query: js.Object, fields: String, options: FindOptions, callback: Callback[Record[T]]): Query[Record[T] | Null] = js.native
+    def findOne[T](query: js.Object, fields: js.Array[String]): Query[Record[T] | Null] = js.native
+    def findOne[T](query: js.Object, fields: js.Array[String], callback: Callback[Record[T]]): Query[Record[T] | Null] = js.native
+    def findOne[T](query: js.Object, fields: js.Array[String], options: Unit, callback: Callback[Record[T]]): Query[Record[T] | Null] = js.native
+    def findOne[T](query: js.Object, fields: js.Array[String], options: FindOptions): Query[Record[T] | Null] = js.native
+    def findOne[T](query: js.Object, fields: js.Array[String], options: FindOptions, callback: Callback[Record[T]]): Query[Record[T] | Null] = js.native
+    def findOne[T](query: js.Object, fields: js.Object): Query[Record[T] | Null] = js.native
+    def findOne[T](query: js.Object, fields: js.Object, callback: Callback[Record[T]]): Query[Record[T] | Null] = js.native
+    def findOne[T](query: js.Object, fields: js.Object, options: Unit, callback: Callback[Record[T]]): Query[Record[T] | Null] = js.native
+    def findOne[T](query: js.Object, fields: js.Object, options: FindOptions): Query[Record[T] | Null] = js.native
+    def findOne[T](query: js.Object, fields: js.Object, options: FindOptions, callback: Callback[Record[T]]): Query[Record[T] | Null] = js.native
+    def findOne[T](query: js.Object, fields: Unit, callback: Callback[Record[T]]): Query[Record[T] | Null] = js.native
+    def findOne[T](query: js.Object, fields: Unit, options: Unit, callback: Callback[Record[T]]): Query[Record[T] | Null] = js.native
+    def findOne[T](query: js.Object, fields: Unit, options: FindOptions): Query[Record[T] | Null] = js.native
+    def findOne[T](query: js.Object, fields: Unit, options: FindOptions, callback: Callback[Record[T]]): Query[Record[T] | Null] = js.native
+    def findOne[T](query: Unit, callback: Callback[Record[T]]): Query[Record[T] | Null] = js.native
+    def findOne[T](query: Unit, fields: String): Query[Record[T] | Null] = js.native
+    def findOne[T](query: Unit, fields: String, callback: Callback[Record[T]]): Query[Record[T] | Null] = js.native
+    def findOne[T](query: Unit, fields: String, options: Unit, callback: Callback[Record[T]]): Query[Record[T] | Null] = js.native
+    def findOne[T](query: Unit, fields: String, options: FindOptions): Query[Record[T] | Null] = js.native
+    def findOne[T](query: Unit, fields: String, options: FindOptions, callback: Callback[Record[T]]): Query[Record[T] | Null] = js.native
+    def findOne[T](query: Unit, fields: js.Array[String]): Query[Record[T] | Null] = js.native
+    def findOne[T](query: Unit, fields: js.Array[String], callback: Callback[Record[T]]): Query[Record[T] | Null] = js.native
+    def findOne[T](query: Unit, fields: js.Array[String], options: Unit, callback: Callback[Record[T]]): Query[Record[T] | Null] = js.native
+    def findOne[T](query: Unit, fields: js.Array[String], options: FindOptions): Query[Record[T] | Null] = js.native
+    def findOne[T](query: Unit, fields: js.Array[String], options: FindOptions, callback: Callback[Record[T]]): Query[Record[T] | Null] = js.native
+    def findOne[T](query: Unit, fields: js.Object): Query[Record[T] | Null] = js.native
+    def findOne[T](query: Unit, fields: js.Object, callback: Callback[Record[T]]): Query[Record[T] | Null] = js.native
+    def findOne[T](query: Unit, fields: js.Object, options: Unit, callback: Callback[Record[T]]): Query[Record[T] | Null] = js.native
+    def findOne[T](query: Unit, fields: js.Object, options: FindOptions): Query[Record[T] | Null] = js.native
+    def findOne[T](query: Unit, fields: js.Object, options: FindOptions, callback: Callback[Record[T]]): Query[Record[T] | Null] = js.native
+    def findOne[T](query: Unit, fields: Unit, callback: Callback[Record[T]]): Query[Record[T] | Null] = js.native
+    def findOne[T](query: Unit, fields: Unit, options: Unit, callback: Callback[Record[T]]): Query[Record[T] | Null] = js.native
+    def findOne[T](query: Unit, fields: Unit, options: FindOptions): Query[Record[T] | Null] = js.native
+    def findOne[T](query: Unit, fields: Unit, options: FindOptions, callback: Callback[Record[T]]): Query[Record[T] | Null] = js.native
     
     def insert(records: js.Array[Record[T]]): js.Promise[js.Array[RecordResult]] = js.native
     def insert(records: js.Array[Record[T]], callback: Callback[js.Array[RecordResult]]): js.Promise[js.Array[RecordResult]] = js.native
@@ -400,12 +399,12 @@ object salesforceObjectMod {
     def select(
       fields: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof T ]: boolean}
-      */ typings.jsforce.jsforceStrings.SObject & TopLevel[js.Any]
+      */ typings.jsforce.jsforceStrings.SObject & TopLevel[Any]
     ): Query[js.Array[Partial[T]]] = js.native
     def select(
       fields: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof T ]: boolean}
-      */ typings.jsforce.jsforceStrings.SObject & TopLevel[js.Any],
+      */ typings.jsforce.jsforceStrings.SObject & TopLevel[Any],
       callback: Callback[js.Array[Partial[T]]]
     ): Query[js.Array[Partial[T]]] = js.native
     def select(fields: /* keyof T */ String): Query[js.Array[Partial[T]]] = js.native
@@ -430,20 +429,20 @@ object salesforceObjectMod {
     def updateBulk(): Batch = js.native
     def updateBulk(input: String): Batch = js.native
     def updateBulk(input: String, callback: Callback[js.Array[RecordResult]]): Batch = js.native
-    def updateBulk(input: js.Array[Record[js.Any]]): Batch = js.native
-    def updateBulk(input: js.Array[Record[js.Any]], callback: Callback[js.Array[RecordResult]]): Batch = js.native
+    def updateBulk(input: js.Array[Record[Any]]): Batch = js.native
+    def updateBulk(input: js.Array[Record[Any]], callback: Callback[js.Array[RecordResult]]): Batch = js.native
     def updateBulk(input: Unit, callback: Callback[js.Array[RecordResult]]): Batch = js.native
     def updateBulk(input: Stream): Batch = js.native
     def updateBulk(input: Stream, callback: Callback[js.Array[RecordResult]]): Batch = js.native
     
     def updated(start: String, end: String): js.Promise[UpdatedRecordsInfo] = js.native
     def updated(start: String, end: String, callback: Callback[UpdatedRecordsInfo]): js.Promise[UpdatedRecordsInfo] = js.native
-    def updated(start: String, end: Date): js.Promise[UpdatedRecordsInfo] = js.native
-    def updated(start: String, end: Date, callback: Callback[UpdatedRecordsInfo]): js.Promise[UpdatedRecordsInfo] = js.native
-    def updated(start: Date, end: String): js.Promise[UpdatedRecordsInfo] = js.native
-    def updated(start: Date, end: String, callback: Callback[UpdatedRecordsInfo]): js.Promise[UpdatedRecordsInfo] = js.native
-    def updated(start: Date, end: Date): js.Promise[UpdatedRecordsInfo] = js.native
-    def updated(start: Date, end: Date, callback: Callback[UpdatedRecordsInfo]): js.Promise[UpdatedRecordsInfo] = js.native
+    def updated(start: String, end: js.Date): js.Promise[UpdatedRecordsInfo] = js.native
+    def updated(start: String, end: js.Date, callback: Callback[UpdatedRecordsInfo]): js.Promise[UpdatedRecordsInfo] = js.native
+    def updated(start: js.Date, end: String): js.Promise[UpdatedRecordsInfo] = js.native
+    def updated(start: js.Date, end: String, callback: Callback[UpdatedRecordsInfo]): js.Promise[UpdatedRecordsInfo] = js.native
+    def updated(start: js.Date, end: js.Date): js.Promise[UpdatedRecordsInfo] = js.native
+    def updated(start: js.Date, end: js.Date, callback: Callback[UpdatedRecordsInfo]): js.Promise[UpdatedRecordsInfo] = js.native
     
     def upsert(records: js.Array[Record[T]], extIdField: String): js.Promise[js.Array[RecordResult]] = js.native
     def upsert(records: js.Array[Record[T]], extIdField: String, callback: Callback[js.Array[RecordResult]]): js.Promise[js.Array[RecordResult]] = js.native
@@ -491,7 +490,7 @@ object salesforceObjectMod {
       
       inline def setApprovalLayouts(value: js.Array[js.Object]): Self = StObject.set(x, "approvalLayouts", value.asInstanceOf[js.Any])
       
-      inline def setApprovalLayoutsVarargs(value: js.Object*): Self = StObject.set(x, "approvalLayouts", js.Array(value :_*))
+      inline def setApprovalLayoutsVarargs(value: js.Object*): Self = StObject.set(x, "approvalLayouts", js.Array(value*))
     }
   }
   
@@ -518,13 +517,13 @@ object salesforceObjectMod {
       
       inline def setCompactLayouts(value: js.Array[js.Object]): Self = StObject.set(x, "compactLayouts", value.asInstanceOf[js.Any])
       
-      inline def setCompactLayoutsVarargs(value: js.Object*): Self = StObject.set(x, "compactLayouts", js.Array(value :_*))
+      inline def setCompactLayoutsVarargs(value: js.Object*): Self = StObject.set(x, "compactLayouts", js.Array(value*))
       
       inline def setDefaultCompactLayoutId(value: String): Self = StObject.set(x, "defaultCompactLayoutId", value.asInstanceOf[js.Any])
       
       inline def setRecordTypeCompactLayoutMappings(value: js.Array[js.Object]): Self = StObject.set(x, "recordTypeCompactLayoutMappings", value.asInstanceOf[js.Any])
       
-      inline def setRecordTypeCompactLayoutMappingsVarargs(value: js.Object*): Self = StObject.set(x, "recordTypeCompactLayoutMappings", js.Array(value :_*))
+      inline def setRecordTypeCompactLayoutMappingsVarargs(value: js.Object*): Self = StObject.set(x, "recordTypeCompactLayoutMappings", js.Array(value*))
     }
   }
   
@@ -568,7 +567,7 @@ object salesforceObjectMod {
       
       inline def setDeletedRecords(value: js.Array[DeletedRecord]): Self = StObject.set(x, "deletedRecords", value.asInstanceOf[js.Any])
       
-      inline def setDeletedRecordsVarargs(value: DeletedRecord*): Self = StObject.set(x, "deletedRecords", js.Array(value :_*))
+      inline def setDeletedRecordsVarargs(value: DeletedRecord*): Self = StObject.set(x, "deletedRecords", js.Array(value*))
       
       inline def setEarliestDateAvailable(value: String): Self = StObject.set(x, "earliestDateAvailable", value.asInstanceOf[js.Any])
       
@@ -624,11 +623,11 @@ object salesforceObjectMod {
       
       inline def setLayouts(value: js.Array[js.Object]): Self = StObject.set(x, "layouts", value.asInstanceOf[js.Any])
       
-      inline def setLayoutsVarargs(value: js.Object*): Self = StObject.set(x, "layouts", js.Array(value :_*))
+      inline def setLayoutsVarargs(value: js.Object*): Self = StObject.set(x, "layouts", js.Array(value*))
       
       inline def setRecordTypeMappings(value: js.Array[js.Object]): Self = StObject.set(x, "recordTypeMappings", value.asInstanceOf[js.Any])
       
-      inline def setRecordTypeMappingsVarargs(value: js.Object*): Self = StObject.set(x, "recordTypeMappings", js.Array(value :_*))
+      inline def setRecordTypeMappingsVarargs(value: js.Object*): Self = StObject.set(x, "recordTypeMappings", js.Array(value*))
     }
   }
   
@@ -649,7 +648,7 @@ object salesforceObjectMod {
       
       inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
       
-      inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+      inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value*))
       
       inline def setLatestDateCovered(value: String): Self = StObject.set(x, "latestDateCovered", value.asInstanceOf[js.Any])
     }

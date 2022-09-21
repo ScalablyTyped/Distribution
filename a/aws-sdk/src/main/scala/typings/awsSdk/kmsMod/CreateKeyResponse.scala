@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateKeyResponse extends StObject {
   
   /**
-    * Metadata associated with the CMK.
+    * Metadata associated with the KMS key.
     */
   var KeyMetadata: js.UndefOr[typings.awsSdk.kmsMod.KeyMetadata] = js.undefined
 }

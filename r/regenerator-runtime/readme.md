@@ -10,10 +10,10 @@ Runtime for Regenerator-compiled generator and async functions.
 | ------------------ | :-------------: |
 | Full name          | regenerator-runtime |
 | Keywords           | regenerator, runtime, generator, async |
-| # releases         | 9 |
-| # dependents       | 1648 |
-| # downloads        | 1206306819 |
-| # stars            | 5 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1.645583E8 |
+| # stars            | 3659.0 |
 
 ## Links
 - [Homepage](https://github.com/facebook/regenerator#readme)

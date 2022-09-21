@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("fast-stats", "Stats")
   @js.native
-  class Stats () extends StObject {
+  open class Stats () extends StObject {
     def this(opts: StatsOpts) = this()
     
     /**
@@ -192,7 +192,7 @@ object mod {
       
       inline def setRange(value: js.Array[Double]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
-      inline def setRangeVarargs(value: Double*): Self = StObject.set(x, "range", js.Array(value :_*))
+      inline def setRangeVarargs(value: Double*): Self = StObject.set(x, "range", js.Array(value*))
     }
   }
   
@@ -255,7 +255,7 @@ object mod {
       
       inline def setBucketsUndefined: Self = StObject.set(x, "buckets", js.undefined)
       
-      inline def setBucketsVarargs(value: Double*): Self = StObject.set(x, "buckets", js.Array(value :_*))
+      inline def setBucketsVarargs(value: Double*): Self = StObject.set(x, "buckets", js.Array(value*))
       
       inline def setSampling(value: Boolean): Self = StObject.set(x, "sampling", value.asInstanceOf[js.Any])
       

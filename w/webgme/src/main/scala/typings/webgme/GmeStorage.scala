@@ -1,6 +1,5 @@
 package typings.webgme
 
-import typings.std.Error
 import typings.webgme.Core.ObjectHash
 import typings.webgme.webgmeStrings.CANCELED
 import typings.webgme.webgmeStrings.FORKED
@@ -13,7 +12,7 @@ object GmeStorage {
   
   type CommitHash = String
   
-  type CommitHashCallback = js.Function2[/* err */ Error | Null, /* result */ CommitHash, Unit]
+  type CommitHashCallback = js.Function2[/* err */ js.Error | Null, /* result */ CommitHash, Unit]
   
   trait CommitObject extends StObject {
     
@@ -74,7 +73,7 @@ object GmeStorage {
       
       inline def setParents(value: js.Array[CommitHash]): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
       
-      inline def setParentsVarargs(value: CommitHash*): Self = StObject.set(x, "parents", js.Array(value :_*))
+      inline def setParentsVarargs(value: CommitHash*): Self = StObject.set(x, "parents", js.Array(value*))
       
       inline def setRoot(value: ObjectHash): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
@@ -84,7 +83,7 @@ object GmeStorage {
       
       inline def setUpdater(value: js.Array[String]): Self = StObject.set(x, "updater", value.asInstanceOf[js.Any])
       
-      inline def setUpdaterVarargs(value: String*): Self = StObject.set(x, "updater", js.Array(value :_*))
+      inline def setUpdaterVarargs(value: String*): Self = StObject.set(x, "updater", js.Array(value*))
       
       inline def set_id(value: CommitHash): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
     }
@@ -114,5 +113,5 @@ object GmeStorage {
     }
   }
   
-  type ErrorOnlyCallback = js.Function1[/* err */ Error | Null, Unit]
+  type ErrorOnlyCallback = js.Function1[/* err */ js.Error | Null, Unit]
 }

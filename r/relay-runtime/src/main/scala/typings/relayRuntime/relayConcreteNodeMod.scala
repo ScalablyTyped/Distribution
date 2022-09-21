@@ -1,16 +1,25 @@
 package typings.relayRuntime
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.relayRuntime.anon.Get
 import typings.relayRuntime.normalizationNodeMod.NormalizationOperation
+import typings.relayRuntime.normalizationNodeMod.NormalizationRootNode
 import typings.relayRuntime.normalizationNodeMod.NormalizationSelection
 import typings.relayRuntime.readerNodeMod.ReaderArgumentDefinition
 import typings.relayRuntime.readerNodeMod.ReaderFragment
 import typings.relayRuntime.readerNodeMod.ReaderSelection
 import typings.relayRuntime.relayModernGraphQLTagMod._GraphQLTaggedNode
+import typings.relayRuntime.relayRuntimeStrings.ActorChange
+import typings.relayRuntime.relayRuntimeStrings.AliasedFragmentSpread
+import typings.relayRuntime.relayRuntimeStrings.AliasedInlineFragmentSpread
+import typings.relayRuntime.relayRuntimeStrings.ClientComponent
+import typings.relayRuntime.relayRuntimeStrings.ClientEdgeToClientObject
+import typings.relayRuntime.relayRuntimeStrings.ClientEdgeToServerObject
 import typings.relayRuntime.relayRuntimeStrings.ClientExtension
 import typings.relayRuntime.relayRuntimeStrings.Condition
 import typings.relayRuntime.relayRuntimeStrings.Connection
 import typings.relayRuntime.relayRuntimeStrings.Defer
+import typings.relayRuntime.relayRuntimeStrings.FlightField
 import typings.relayRuntime.relayRuntimeStrings.Fragment
 import typings.relayRuntime.relayRuntimeStrings.FragmentSpread
 import typings.relayRuntime.relayRuntimeStrings.InlineDataFragment
@@ -24,13 +33,17 @@ import typings.relayRuntime.relayRuntimeStrings.LocalArgument
 import typings.relayRuntime.relayRuntimeStrings.ModuleImport
 import typings.relayRuntime.relayRuntimeStrings.ObjectValue
 import typings.relayRuntime.relayRuntimeStrings.Operation
+import typings.relayRuntime.relayRuntimeStrings.RelayLiveResolver
+import typings.relayRuntime.relayRuntimeStrings.RelayResolver
 import typings.relayRuntime.relayRuntimeStrings.Request
+import typings.relayRuntime.relayRuntimeStrings.RequiredField
 import typings.relayRuntime.relayRuntimeStrings.RootArgument
 import typings.relayRuntime.relayRuntimeStrings.ScalarField
 import typings.relayRuntime.relayRuntimeStrings.ScalarHandle
 import typings.relayRuntime.relayRuntimeStrings.SplitOperation
 import typings.relayRuntime.relayRuntimeStrings.Stream
 import typings.relayRuntime.relayRuntimeStrings.TypeDiscriminator
+import typings.relayRuntime.relayRuntimeStrings.UpdatableQuery
 import typings.relayRuntime.relayRuntimeStrings.Variable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -43,6 +56,36 @@ object relayConcreteNodeMod {
     @JSImport("relay-runtime/lib/util/RelayConcreteNode", "RelayConcreteNode")
     @js.native
     val ^ : js.Any = js.native
+    
+    @JSImport("relay-runtime/lib/util/RelayConcreteNode", "RelayConcreteNode.ACTOR_CHANGE")
+    @js.native
+    def ACTOR_CHANGE: ActorChange = js.native
+    inline def ACTOR_CHANGE_=(x: ActorChange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ACTOR_CHANGE")(x.asInstanceOf[js.Any])
+    
+    @JSImport("relay-runtime/lib/util/RelayConcreteNode", "RelayConcreteNode.ALIASED_FRAGMENT_SPREAD")
+    @js.native
+    def ALIASED_FRAGMENT_SPREAD: AliasedFragmentSpread = js.native
+    inline def ALIASED_FRAGMENT_SPREAD_=(x: AliasedFragmentSpread): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALIASED_FRAGMENT_SPREAD")(x.asInstanceOf[js.Any])
+    
+    @JSImport("relay-runtime/lib/util/RelayConcreteNode", "RelayConcreteNode.ALIASED_INLINE_FRAGMENT_SPREAD")
+    @js.native
+    def ALIASED_INLINE_FRAGMENT_SPREAD: AliasedInlineFragmentSpread = js.native
+    inline def ALIASED_INLINE_FRAGMENT_SPREAD_=(x: AliasedInlineFragmentSpread): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ALIASED_INLINE_FRAGMENT_SPREAD")(x.asInstanceOf[js.Any])
+    
+    @JSImport("relay-runtime/lib/util/RelayConcreteNode", "RelayConcreteNode.CLIENT_COMPONENT")
+    @js.native
+    def CLIENT_COMPONENT: ClientComponent = js.native
+    inline def CLIENT_COMPONENT_=(x: ClientComponent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLIENT_COMPONENT")(x.asInstanceOf[js.Any])
+    
+    @JSImport("relay-runtime/lib/util/RelayConcreteNode", "RelayConcreteNode.CLIENT_EDGE_TO_CLIENT_OBJECT")
+    @js.native
+    def CLIENT_EDGE_TO_CLIENT_OBJECT: ClientEdgeToClientObject = js.native
+    inline def CLIENT_EDGE_TO_CLIENT_OBJECT_=(x: ClientEdgeToClientObject): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLIENT_EDGE_TO_CLIENT_OBJECT")(x.asInstanceOf[js.Any])
+    
+    @JSImport("relay-runtime/lib/util/RelayConcreteNode", "RelayConcreteNode.CLIENT_EDGE_TO_SERVER_OBJECT")
+    @js.native
+    def CLIENT_EDGE_TO_SERVER_OBJECT: ClientEdgeToServerObject = js.native
+    inline def CLIENT_EDGE_TO_SERVER_OBJECT_=(x: ClientEdgeToServerObject): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLIENT_EDGE_TO_SERVER_OBJECT")(x.asInstanceOf[js.Any])
     
     @JSImport("relay-runtime/lib/util/RelayConcreteNode", "RelayConcreteNode.CLIENT_EXTENSION")
     @js.native
@@ -63,6 +106,11 @@ object relayConcreteNodeMod {
     @js.native
     def DEFER: Defer = js.native
     inline def DEFER_=(x: Defer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFER")(x.asInstanceOf[js.Any])
+    
+    @JSImport("relay-runtime/lib/util/RelayConcreteNode", "RelayConcreteNode.FLIGHT_FIELD")
+    @js.native
+    def FLIGHT_FIELD: FlightField = js.native
+    inline def FLIGHT_FIELD_=(x: FlightField): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FLIGHT_FIELD")(x.asInstanceOf[js.Any])
     
     @JSImport("relay-runtime/lib/util/RelayConcreteNode", "RelayConcreteNode.FRAGMENT")
     @js.native
@@ -129,10 +177,25 @@ object relayConcreteNodeMod {
     def OPERATION: Operation = js.native
     inline def OPERATION_=(x: Operation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPERATION")(x.asInstanceOf[js.Any])
     
+    @JSImport("relay-runtime/lib/util/RelayConcreteNode", "RelayConcreteNode.RELAY_LIVE_RESOLVER")
+    @js.native
+    def RELAY_LIVE_RESOLVER: RelayLiveResolver = js.native
+    inline def RELAY_LIVE_RESOLVER_=(x: RelayLiveResolver): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RELAY_LIVE_RESOLVER")(x.asInstanceOf[js.Any])
+    
+    @JSImport("relay-runtime/lib/util/RelayConcreteNode", "RelayConcreteNode.RELAY_RESOLVER")
+    @js.native
+    def RELAY_RESOLVER: RelayResolver = js.native
+    inline def RELAY_RESOLVER_=(x: RelayResolver): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RELAY_RESOLVER")(x.asInstanceOf[js.Any])
+    
     @JSImport("relay-runtime/lib/util/RelayConcreteNode", "RelayConcreteNode.REQUEST")
     @js.native
     def REQUEST: Request = js.native
     inline def REQUEST_=(x: Request): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REQUEST")(x.asInstanceOf[js.Any])
+    
+    @JSImport("relay-runtime/lib/util/RelayConcreteNode", "RelayConcreteNode.REQUIRED_FIELD")
+    @js.native
+    def REQUIRED_FIELD: RequiredField = js.native
+    inline def REQUIRED_FIELD_=(x: RequiredField): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REQUIRED_FIELD")(x.asInstanceOf[js.Any])
     
     @JSImport("relay-runtime/lib/util/RelayConcreteNode", "RelayConcreteNode.ROOT_ARGUMENT")
     @js.native
@@ -164,6 +227,11 @@ object relayConcreteNodeMod {
     def TYPE_DISCRIMINATOR: TypeDiscriminator = js.native
     inline def TYPE_DISCRIMINATOR_=(x: TypeDiscriminator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TYPE_DISCRIMINATOR")(x.asInstanceOf[js.Any])
     
+    @JSImport("relay-runtime/lib/util/RelayConcreteNode", "RelayConcreteNode.UPDATABLE_QUERY")
+    @js.native
+    def UPDATABLE_QUERY: UpdatableQuery = js.native
+    inline def UPDATABLE_QUERY_=(x: UpdatableQuery): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UPDATABLE_QUERY")(x.asInstanceOf[js.Any])
+    
     @JSImport("relay-runtime/lib/util/RelayConcreteNode", "RelayConcreteNode.VARIABLE")
     @js.native
     def VARIABLE: Variable = js.native
@@ -173,6 +241,7 @@ object relayConcreteNodeMod {
   trait ConcreteRequest
     extends StObject
        with GeneratedNode
+       with NormalizationRootNode
        with _GraphQLTaggedNode {
     
     // 'Request';
@@ -208,11 +277,36 @@ object relayConcreteNodeMod {
     }
   }
   
+  trait ConcreteUpdatableQuery
+    extends StObject
+       with GeneratedNode {
+    
+    // 'UpdatableQuery';
+    val fragment: ReaderFragment
+    
+    val kind: String
+  }
+  object ConcreteUpdatableQuery {
+    
+    inline def apply(fragment: ReaderFragment, kind: String): ConcreteUpdatableQuery = {
+      val __obj = js.Dynamic.literal(fragment = fragment.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ConcreteUpdatableQuery]
+    }
+    
+    extension [Self <: ConcreteUpdatableQuery](x: Self) {
+      
+      inline def setFragment(value: ReaderFragment): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
+      
+      inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    }
+  }
+  
   /* Rewritten from type alias, can be one of: 
     - typings.relayRuntime.relayConcreteNodeMod.ConcreteRequest
     - typings.relayRuntime.readerNodeMod.ReaderFragment
     - typings.relayRuntime.readerNodeMod.ReaderInlineDataFragment
     - typings.relayRuntime.normalizationNodeMod.NormalizationSplitOperation
+    - typings.relayRuntime.relayConcreteNodeMod.ConcreteUpdatableQuery
   */
   trait GeneratedNode extends StObject
   object GeneratedNode {
@@ -225,6 +319,11 @@ object relayConcreteNodeMod {
     ): typings.relayRuntime.relayConcreteNodeMod.ConcreteRequest = {
       val __obj = js.Dynamic.literal(fragment = fragment.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.relayRuntime.relayConcreteNodeMod.ConcreteRequest]
+    }
+    
+    inline def ConcreteUpdatableQuery(fragment: ReaderFragment, kind: String): typings.relayRuntime.relayConcreteNodeMod.ConcreteUpdatableQuery = {
+      val __obj = js.Dynamic.literal(fragment = fragment.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.relayRuntime.relayConcreteNodeMod.ConcreteUpdatableQuery]
     }
     
     inline def NormalizationSplitOperation(kind: String, name: String, selections: js.Array[NormalizationSelection]): typings.relayRuntime.normalizationNodeMod.NormalizationSplitOperation = {
@@ -244,59 +343,29 @@ object relayConcreteNodeMod {
       __obj.asInstanceOf[typings.relayRuntime.readerNodeMod.ReaderFragment]
     }
     
-    inline def ReaderInlineDataFragment(name: String): typings.relayRuntime.readerNodeMod.ReaderInlineDataFragment = {
-      val __obj = js.Dynamic.literal(kind = "InlineDataFragment", name = name.asInstanceOf[js.Any])
+    inline def ReaderInlineDataFragment(kind: String, name: String): typings.relayRuntime.readerNodeMod.ReaderInlineDataFragment = {
+      val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.relayRuntime.readerNodeMod.ReaderInlineDataFragment]
     }
   }
   
-  trait RequestParameters extends StObject {
-    
-    val cacheID: js.UndefOr[String | Null] = js.undefined
-    
-    // 'mutation' | 'query' | 'subscription';
-    val id: js.UndefOr[String | Null] = js.undefined
-    
-    val metadata: StringDictionary[js.Any]
-    
-    val name: String
-    
-    val operationKind: String
-    
-    val text: js.UndefOr[String | Null] = js.undefined
-  }
+  type ProvidedVariablesType = StringDictionary[Get]
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.relayRuntime.anon.Id
+    - typings.relayRuntime.anon.CacheID
+  */
+  trait RequestParameters extends StObject
   object RequestParameters {
     
-    inline def apply(metadata: StringDictionary[js.Any], name: String, operationKind: String): RequestParameters = {
-      val __obj = js.Dynamic.literal(metadata = metadata.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], operationKind = operationKind.asInstanceOf[js.Any])
-      __obj.asInstanceOf[RequestParameters]
+    inline def CacheID(cacheID: String, id: Null, metadata: StringDictionary[Any], name: String, operationKind: String): typings.relayRuntime.anon.CacheID = {
+      val __obj = js.Dynamic.literal(cacheID = cacheID.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], operationKind = operationKind.asInstanceOf[js.Any], text = null)
+      __obj.asInstanceOf[typings.relayRuntime.anon.CacheID]
     }
     
-    extension [Self <: RequestParameters](x: Self) {
-      
-      inline def setCacheID(value: String): Self = StObject.set(x, "cacheID", value.asInstanceOf[js.Any])
-      
-      inline def setCacheIDNull: Self = StObject.set(x, "cacheID", null)
-      
-      inline def setCacheIDUndefined: Self = StObject.set(x, "cacheID", js.undefined)
-      
-      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-      
-      inline def setIdNull: Self = StObject.set(x, "id", null)
-      
-      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
-      
-      inline def setMetadata(value: StringDictionary[js.Any]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setOperationKind(value: String): Self = StObject.set(x, "operationKind", value.asInstanceOf[js.Any])
-      
-      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
-      
-      inline def setTextNull: Self = StObject.set(x, "text", null)
-      
-      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def Id(id: String, metadata: StringDictionary[Any], name: String, operationKind: String, text: Null): typings.relayRuntime.anon.Id = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], operationKind = operationKind.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.relayRuntime.anon.Id]
     }
   }
 }

@@ -14,7 +14,7 @@ trait Rules[P /* <: js.Object */] extends StObject {
   var params: js.UndefOr[
     ObjectSchema | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof P ]: react-native-joi.react-native-joi.SchemaLike}
-    */ typings.reactNativeJoi.reactNativeJoiStrings.Rules & TopLevel[js.Any])
+    */ typings.reactNativeJoi.reactNativeJoiStrings.Rules & TopLevel[Any])
   ] = js.undefined
   
   var setup: js.UndefOr[js.ThisFunction1[/* this */ ExtensionBoundSchema, /* params */ P, Schema | Unit]] = js.undefined
@@ -23,10 +23,10 @@ trait Rules[P /* <: js.Object */] extends StObject {
     js.ThisFunction4[
       /* this */ ExtensionBoundSchema, 
       /* params */ P, 
-      /* value */ js.Any, 
+      /* value */ Any, 
       /* state */ State, 
       /* options */ ValidationOptions, 
-      js.Any
+      Any
     ]
   ] = js.undefined
 }
@@ -50,7 +50,7 @@ object Rules {
     inline def setParams(
       value: ObjectSchema | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in keyof P ]: react-native-joi.react-native-joi.SchemaLike}
-      */ typings.reactNativeJoi.reactNativeJoiStrings.Rules & TopLevel[js.Any])
+      */ typings.reactNativeJoi.reactNativeJoiStrings.Rules & TopLevel[Any])
     ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
@@ -63,10 +63,10 @@ object Rules {
       value: js.ThisFunction4[
           /* this */ ExtensionBoundSchema, 
           /* params */ P, 
-          /* value */ js.Any, 
+          /* value */ Any, 
           /* state */ State, 
           /* options */ ValidationOptions, 
-          js.Any
+          Any
         ]
     ): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
     

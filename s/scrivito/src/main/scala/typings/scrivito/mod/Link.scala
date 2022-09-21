@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("scrivito", "Link")
 @js.native
-class Link protected ()
+open class Link protected ()
   extends StObject
      with _Link {
   def this(attributes: ExternalLinkAttributes) = this()

@@ -33,6 +33,6 @@ object ListReceiptRuleSetsResponse {
     
     inline def setRuleSetsUndefined: Self = StObject.set(x, "RuleSets", js.undefined)
     
-    inline def setRuleSetsVarargs(value: ReceiptRuleSetMetadata*): Self = StObject.set(x, "RuleSets", js.Array(value :_*))
+    inline def setRuleSetsVarargs(value: ReceiptRuleSetMetadata*): Self = StObject.set(x, "RuleSets", js.Array(value*))
   }
 }

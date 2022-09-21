@@ -10,7 +10,7 @@ object multiPointMod {
   
   @JSImport("ol/geom/MultiPoint", JSImport.Default)
   @js.native
-  class default protected () extends MultiPoint {
+  open class default protected () extends MultiPoint {
     def this(coordinates: js.Array[Coordinate | Double]) = this()
     def this(coordinates: js.Array[Coordinate | Double], opt_layout: GeometryLayout) = this()
   }

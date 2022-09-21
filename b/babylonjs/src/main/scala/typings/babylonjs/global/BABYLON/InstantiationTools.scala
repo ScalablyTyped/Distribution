@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.InstantiationTools")
 @js.native
-class InstantiationTools ()
+open class InstantiationTools ()
   extends StObject
      with typings.babylonjs.BABYLON.InstantiationTools
 /* static members */
@@ -21,11 +21,11 @@ object InstantiationTools {
     * @param className defines the class name to instantiate
     * @returns the new object or null if the system was not able to do the instantiation
     */
-  inline def Instantiate(className: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Instantiate")(className.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def Instantiate(className: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Instantiate")(className.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /**
     * Use this object to register external classes like custom textures or material
-    * to allow the laoders to instantiate them
+    * to allow the loaders to instantiate them
     */
   @JSGlobal("BABYLON.InstantiationTools.RegisteredExternalClasses")
   @js.native

@@ -10,10 +10,10 @@ The lodash method `_.isWeakSet` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.isweakset |
 | Keywords           | lodash-modularized, isweakset |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 757 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 28.0 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

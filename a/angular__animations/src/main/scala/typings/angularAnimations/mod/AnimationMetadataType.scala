@@ -91,7 +91,7 @@ object AnimationMetadataType {
   
   /**
     * Associates a named animation state with a set of CSS styles.
-    * See `state()`
+    * See [`state()`](api/animations/state)
     */
   inline def State: `0` = 0.asInstanceOf[`0`]
   

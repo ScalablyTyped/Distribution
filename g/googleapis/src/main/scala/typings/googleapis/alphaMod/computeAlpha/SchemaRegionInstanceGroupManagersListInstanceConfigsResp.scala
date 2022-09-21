@@ -13,18 +13,14 @@ trait SchemaRegionInstanceGroupManagersListInstanceConfigsResp extends StObject 
   var items: js.UndefOr[js.Array[SchemaPerInstanceConfig]] = js.undefined
   
   /**
-    * [Output Only] This token allows you to get the next page of results for
-    * list requests. If the number of results is larger than maxResults, use
-    * the nextPageToken as a value for the query parameter pageToken in the
-    * next list request. Subsequent list requests will have their own
-    * nextPageToken to continue paging through the results.
+    * [Output Only] This token allows you to get the next page of results for list requests. If the number of results is larger than maxResults, use the nextPageToken as a value for the query parameter pageToken in the next list request. Subsequent list requests will have their own nextPageToken to continue paging through the results.
     */
-  var nextPageToken: js.UndefOr[String] = js.undefined
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
   
   /**
     * [Output Only] Informational warning message.
     */
-  var warning: js.UndefOr[Code] = js.undefined
+  var warning: js.UndefOr[Code | Null] = js.undefined
 }
 object SchemaRegionInstanceGroupManagersListInstanceConfigsResp {
   
@@ -39,13 +35,17 @@ object SchemaRegionInstanceGroupManagersListInstanceConfigsResp {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: SchemaPerInstanceConfig*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: SchemaPerInstanceConfig*): Self = StObject.set(x, "items", js.Array(value*))
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
     inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
     inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    
+    inline def setWarningNull: Self = StObject.set(x, "warning", null)
     
     inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }

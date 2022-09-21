@@ -1,7 +1,7 @@
 package typings.nReadlines
 
 import typings.nReadlines.nReadlinesBooleans.`false`
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.fsMod.PathLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +11,7 @@ object mod {
   
   @JSImport("n-readlines", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with LineByLine {
     def this(file: Double) = this()

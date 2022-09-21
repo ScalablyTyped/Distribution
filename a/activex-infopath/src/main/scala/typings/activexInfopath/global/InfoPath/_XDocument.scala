@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath._XDocument")
 @js.native
-/* private */ class _XDocument ()
+/* private */ open class _XDocument ()
   extends StObject
      with typings.activexInfopath.InfoPath._XDocument {
   
@@ -20,13 +20,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val DataObjects: typings.activexInfopath.InfoPath.DataObjectsCollection = js.native
   
   /* CompleteClass */
-  override def Errors(Index: js.Any): Error = js.native
+  override def Errors(Index: Any): Error = js.native
   /* CompleteClass */
   @JSName("Errors")
   override val Errors_Original: Errors = js.native
   
   /* CompleteClass */
-  override val Extension: js.Any = js.native
+  override val Extension: Any = js.native
   
   /* CompleteClass */
   override def GetDOM(bstrName: String): IXMLDOMDocument = js.native
@@ -66,7 +66,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def Query(): Unit = js.native
   
   /* CompleteClass */
-  override val QueryAdapter: js.Any = js.native
+  override val QueryAdapter: Any = js.native
   
   /* CompleteClass */
   override def Save(): Unit = js.native

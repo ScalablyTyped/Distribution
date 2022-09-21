@@ -13,7 +13,7 @@ object BMapGLLib {
   
   @JSGlobal("BMapGLLib.DistanceTool")
   @js.native
-  class DistanceTool protected ()
+  open class DistanceTool protected ()
     extends StObject
        with typings.bmapgl.BMapGLLib.DistanceTool {
     def this(map: Map) = this()
@@ -34,7 +34,7 @@ object BMapGLLib {
   
   @JSGlobal("BMapGLLib.DrawingManager")
   @js.native
-  class DrawingManager protected ()
+  open class DrawingManager protected ()
     extends StObject
        with typings.bmapgl.BMapGLLib.DrawingManager {
     def this(map: Map) = this()

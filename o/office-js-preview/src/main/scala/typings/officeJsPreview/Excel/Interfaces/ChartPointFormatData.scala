@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChartPointFormatData extends StObject {
   
   /**
-    *
     * Represents the border format of a chart data point, which includes color, style, and weight information.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var border: js.UndefOr[ChartBorderData] = js.undefined

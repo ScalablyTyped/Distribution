@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("gitana", "Base")
 @js.native
-class Base () extends StObject {
+open class Base () extends StObject {
   
-  def extend(): js.Any = js.native
+  def extend(): Any = js.native
   
   def `then`(callback: gitanaCallback[this.type]): this.type = js.native
 }

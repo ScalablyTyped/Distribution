@@ -103,7 +103,7 @@ object MapOptions {
     
     inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
-    inline def setFeaturesVarargs(value: String*): Self = StObject.set(x, "features", js.Array(value :_*))
+    inline def setFeaturesVarargs(value: String*): Self = StObject.set(x, "features", js.Array(value*))
     
     inline def setIndoorMap(value: IndoorMap): Self = StObject.set(x, "indoorMap", value.asInstanceOf[js.Any])
     
@@ -133,7 +133,7 @@ object MapOptions {
     
     inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
-    inline def setLayersVarargs(value: TileLayer*): Self = StObject.set(x, "layers", js.Array(value :_*))
+    inline def setLayersVarargs(value: TileLayer*): Self = StObject.set(x, "layers", js.Array(value*))
     
     inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
@@ -175,6 +175,6 @@ object MapOptions {
     
     inline def setZoomsUndefined: Self = StObject.set(x, "zooms", js.undefined)
     
-    inline def setZoomsVarargs(value: Double*): Self = StObject.set(x, "zooms", js.Array(value :_*))
+    inline def setZoomsVarargs(value: Double*): Self = StObject.set(x, "zooms", js.Array(value*))
   }
 }

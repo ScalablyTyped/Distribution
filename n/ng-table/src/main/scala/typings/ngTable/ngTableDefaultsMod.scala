@@ -19,9 +19,9 @@ object ngTableDefaultsMod {
   
   trait IDefaults extends StObject {
     
-    var params: js.UndefOr[IParamValues[js.Any]] = js.undefined
+    var params: js.UndefOr[IParamValues[Any]] = js.undefined
     
-    var settings: js.UndefOr[ISettings[js.Any]] = js.undefined
+    var settings: js.UndefOr[ISettings[Any]] = js.undefined
   }
   object IDefaults {
     
@@ -32,11 +32,11 @@ object ngTableDefaultsMod {
     
     extension [Self <: IDefaults](x: Self) {
       
-      inline def setParams(value: IParamValues[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: IParamValues[Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      inline def setSettings(value: ISettings[js.Any]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+      inline def setSettings(value: ISettings[Any]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
       
       inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
     }

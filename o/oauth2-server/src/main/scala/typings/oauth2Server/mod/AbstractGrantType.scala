@@ -1,6 +1,5 @@
 package typings.oauth2Server.mod
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,13 +31,13 @@ abstract class AbstractGrantType protected () extends StObject {
     * Get access token expiration date.
     *
     */
-  def getAccessTokenExpiresAt(): Date = js.native
+  def getAccessTokenExpiresAt(): js.Date = js.native
   
   /**
     * Get refresh token expiration date.
     *
     */
-  def getRefreshTokenExpiresAt(): Date = js.native
+  def getRefreshTokenExpiresAt(): js.Date = js.native
   
   /**
     * Get scope from the request body.

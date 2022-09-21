@@ -19,7 +19,7 @@ trait DeleteMarkerEntry extends StObject {
   /**
     * Date and time the object was last modified.
     */
-  var LastModified: js.UndefOr[typings.awsSdk.s3Mod.LastModified] = js.undefined
+  var LastModified: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The account that created the delete marker.&gt;
@@ -48,7 +48,7 @@ object DeleteMarkerEntry {
     
     inline def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
     
-    inline def setLastModified(value: LastModified): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
+    inline def setLastModified(value: js.Date): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
     

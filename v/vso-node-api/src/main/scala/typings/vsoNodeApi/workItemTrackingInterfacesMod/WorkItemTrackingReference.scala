@@ -20,7 +20,7 @@ trait WorkItemTrackingReference
 }
 object WorkItemTrackingReference {
   
-  inline def apply(_links: js.Any, name: String, referenceName: String, url: String): WorkItemTrackingReference = {
+  inline def apply(_links: Any, name: String, referenceName: String, url: String): WorkItemTrackingReference = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], referenceName = referenceName.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkItemTrackingReference]
   }

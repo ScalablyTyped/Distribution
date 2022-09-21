@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientCrosshairFreePosition")
 @js.native
-class ASPxClientCrosshairFreePosition ()
+open class ASPxClientCrosshairFreePosition ()
   extends StObject
      with typings.devexpressWeb.ASPxClientCrosshairFreePosition {
   

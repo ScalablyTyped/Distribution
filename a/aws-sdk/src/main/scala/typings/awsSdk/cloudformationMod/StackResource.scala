@@ -22,7 +22,12 @@ trait StackResource extends StObject {
   var LogicalResourceId: typings.awsSdk.cloudformationMod.LogicalResourceId
   
   /**
-    * The name or unique identifier that corresponds to a physical instance ID of a resource supported by AWS CloudFormation.
+    * Contains information about the module from which the resource was created, if the resource was created from a module included in the stack template.
+    */
+  var ModuleInfo: js.UndefOr[typings.awsSdk.cloudformationMod.ModuleInfo] = js.undefined
+  
+  /**
+    * The name or unique identifier that corresponds to a physical instance ID of a resource supported by CloudFormation.
     */
   var PhysicalResourceId: js.UndefOr[typings.awsSdk.cloudformationMod.PhysicalResourceId] = js.undefined
   
@@ -37,7 +42,7 @@ trait StackResource extends StObject {
   var ResourceStatusReason: js.UndefOr[typings.awsSdk.cloudformationMod.ResourceStatusReason] = js.undefined
   
   /**
-    * Type of resource. (For more information, go to  AWS Resource Types Reference in the AWS CloudFormation User Guide.)
+    * Type of resource. For more information, go to Amazon Web Services Resource Types Reference in the CloudFormation User Guide.
     */
   var ResourceType: typings.awsSdk.cloudformationMod.ResourceType
   
@@ -54,7 +59,7 @@ trait StackResource extends StObject {
   /**
     * Time the status was updated.
     */
-  var Timestamp: typings.awsSdk.cloudformationMod.Timestamp
+  var Timestamp: js.Date
 }
 object StackResource {
   
@@ -62,7 +67,7 @@ object StackResource {
     LogicalResourceId: LogicalResourceId,
     ResourceStatus: ResourceStatus,
     ResourceType: ResourceType,
-    Timestamp: Timestamp
+    Timestamp: js.Date
   ): StackResource = {
     val __obj = js.Dynamic.literal(LogicalResourceId = LogicalResourceId.asInstanceOf[js.Any], ResourceStatus = ResourceStatus.asInstanceOf[js.Any], ResourceType = ResourceType.asInstanceOf[js.Any], Timestamp = Timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackResource]
@@ -79,6 +84,10 @@ object StackResource {
     inline def setDriftInformationUndefined: Self = StObject.set(x, "DriftInformation", js.undefined)
     
     inline def setLogicalResourceId(value: LogicalResourceId): Self = StObject.set(x, "LogicalResourceId", value.asInstanceOf[js.Any])
+    
+    inline def setModuleInfo(value: ModuleInfo): Self = StObject.set(x, "ModuleInfo", value.asInstanceOf[js.Any])
+    
+    inline def setModuleInfoUndefined: Self = StObject.set(x, "ModuleInfo", js.undefined)
     
     inline def setPhysicalResourceId(value: PhysicalResourceId): Self = StObject.set(x, "PhysicalResourceId", value.asInstanceOf[js.Any])
     
@@ -100,6 +109,6 @@ object StackResource {
     
     inline def setStackNameUndefined: Self = StObject.set(x, "StackName", js.undefined)
     
-    inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: js.Date): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
   }
 }

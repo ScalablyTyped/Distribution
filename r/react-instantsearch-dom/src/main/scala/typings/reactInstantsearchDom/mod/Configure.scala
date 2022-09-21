@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-instantsearch-dom", "Configure")
 @js.native
-class Configure protected ()
+open class Configure protected ()
   extends typings.reactInstantsearchCore.mod.Configure {
-  def this(props: js.Any) = this()
+  def this(props: Any) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: js.Any, context: js.Any) = this()
+  def this(props: Any, context: Any) = this()
 }

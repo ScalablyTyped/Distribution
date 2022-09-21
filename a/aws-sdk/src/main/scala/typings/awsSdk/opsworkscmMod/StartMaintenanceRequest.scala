@@ -29,7 +29,7 @@ object StartMaintenanceRequest {
     
     inline def setEngineAttributesUndefined: Self = StObject.set(x, "EngineAttributes", js.undefined)
     
-    inline def setEngineAttributesVarargs(value: EngineAttribute*): Self = StObject.set(x, "EngineAttributes", js.Array(value :_*))
+    inline def setEngineAttributesVarargs(value: EngineAttribute*): Self = StObject.set(x, "EngineAttributes", js.Array(value*))
     
     inline def setServerName(value: ServerName): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
   }

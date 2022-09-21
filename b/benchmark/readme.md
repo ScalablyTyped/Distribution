@@ -10,10 +10,10 @@ A benchmarking library that supports high-resolution timers & returns statistica
 | ------------------ | :-------------: |
 | Full name          | benchmark |
 | Keywords           | benchmark, performance, speed |
-| # releases         | 0 |
-| # dependents       | 171 |
-| # downloads        | 7727480 |
-| # stars            | 89 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 713258.0 |
+| # stars            | 5175.0 |
 
 ## Links
 - [Homepage](https://benchmarkjs.com/)

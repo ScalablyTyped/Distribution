@@ -27,12 +27,12 @@ object ReleaseDefinitionSummary {
     
     inline def setEnvironments(value: js.Array[ReleaseDefinitionEnvironmentSummary]): Self = StObject.set(x, "environments", value.asInstanceOf[js.Any])
     
-    inline def setEnvironmentsVarargs(value: ReleaseDefinitionEnvironmentSummary*): Self = StObject.set(x, "environments", js.Array(value :_*))
+    inline def setEnvironmentsVarargs(value: ReleaseDefinitionEnvironmentSummary*): Self = StObject.set(x, "environments", js.Array(value*))
     
     inline def setReleaseDefinition(value: ReleaseDefinitionShallowReference): Self = StObject.set(x, "releaseDefinition", value.asInstanceOf[js.Any])
     
     inline def setReleases(value: js.Array[Release]): Self = StObject.set(x, "releases", value.asInstanceOf[js.Any])
     
-    inline def setReleasesVarargs(value: Release*): Self = StObject.set(x, "releases", js.Array(value :_*))
+    inline def setReleasesVarargs(value: Release*): Self = StObject.set(x, "releases", js.Array(value*))
   }
 }

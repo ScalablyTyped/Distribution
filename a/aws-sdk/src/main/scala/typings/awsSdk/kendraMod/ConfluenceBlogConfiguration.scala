@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConfluenceBlogConfiguration extends StObject {
   
   /**
-    * Defines how blog metadata fields should be mapped to index fields. Before you can map a field, you must first create an index field with a matching type using the console or the UpdateIndex operation. If you specify the BlogFieldMappings parameter, you must specify at least one field mapping.
+    * Maps attributes or field names of Confluence blogs to Amazon Kendra index field names. To create custom fields, use the UpdateIndex API before you map to Confluence fields. For more information, see Mapping data source fields. The Confluence data source field names must exist in your Confluence custom metadata. If you specify the BlogFieldMappings parameter, you must specify at least one field mapping.
     */
   var BlogFieldMappings: js.UndefOr[ConfluenceBlogFieldMappingsList] = js.undefined
 }
@@ -24,6 +24,6 @@ object ConfluenceBlogConfiguration {
     
     inline def setBlogFieldMappingsUndefined: Self = StObject.set(x, "BlogFieldMappings", js.undefined)
     
-    inline def setBlogFieldMappingsVarargs(value: ConfluenceBlogToIndexFieldMapping*): Self = StObject.set(x, "BlogFieldMappings", js.Array(value :_*))
+    inline def setBlogFieldMappingsVarargs(value: ConfluenceBlogToIndexFieldMapping*): Self = StObject.set(x, "BlogFieldMappings", js.Array(value*))
   }
 }

@@ -1,6 +1,5 @@
 package typings.winrtUwp.Windows.Services.Store
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StoreLicense extends StObject {
   
   /** Gets the expiration date and time for the add-on license. */
-  var expirationDate: Date
+  var expirationDate: js.Date
   
   /** Gets complete license data in JSON format. */
   var extendedJsonData: String
@@ -26,7 +25,7 @@ trait StoreLicense extends StObject {
 object StoreLicense {
   
   inline def apply(
-    expirationDate: Date,
+    expirationDate: js.Date,
     extendedJsonData: String,
     inAppOfferToken: String,
     isActive: Boolean,
@@ -38,7 +37,7 @@ object StoreLicense {
   
   extension [Self <: StoreLicense](x: Self) {
     
-    inline def setExpirationDate(value: Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
+    inline def setExpirationDate(value: js.Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
     
     inline def setExtendedJsonData(value: String): Self = StObject.set(x, "extendedJsonData", value.asInstanceOf[js.Any])
     

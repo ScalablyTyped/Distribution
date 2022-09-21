@@ -14,7 +14,7 @@ trait Certificate extends StObject {
   /**
     * The date that the certificate was created.
     */
-  var CertificateCreationDate: js.UndefOr[TStamp] = js.undefined
+  var CertificateCreationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A customer-assigned name for the certificate. Identifiers must begin with a letter and must contain only ASCII letters, digits, and hyphens. They can't end with a hyphen or contain two consecutive hyphens.
@@ -32,7 +32,7 @@ trait Certificate extends StObject {
   var CertificatePem: js.UndefOr[String] = js.undefined
   
   /**
-    * The location of an imported Oracle Wallet certificate for use with SSL.
+    * The location of an imported Oracle Wallet certificate for use with SSL. Example: filebase64("${path.root}/rds-ca-2019-root.sso") 
     */
   var CertificateWallet: js.UndefOr[typings.awsSdk.dmsMod.CertificateWallet] = js.undefined
   
@@ -49,12 +49,12 @@ trait Certificate extends StObject {
   /**
     * The beginning date that the certificate is valid.
     */
-  var ValidFromDate: js.UndefOr[TStamp] = js.undefined
+  var ValidFromDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The final date that the certificate is valid.
     */
-  var ValidToDate: js.UndefOr[TStamp] = js.undefined
+  var ValidToDate: js.UndefOr[js.Date] = js.undefined
 }
 object Certificate {
   
@@ -69,7 +69,7 @@ object Certificate {
     
     inline def setCertificateArnUndefined: Self = StObject.set(x, "CertificateArn", js.undefined)
     
-    inline def setCertificateCreationDate(value: TStamp): Self = StObject.set(x, "CertificateCreationDate", value.asInstanceOf[js.Any])
+    inline def setCertificateCreationDate(value: js.Date): Self = StObject.set(x, "CertificateCreationDate", value.asInstanceOf[js.Any])
     
     inline def setCertificateCreationDateUndefined: Self = StObject.set(x, "CertificateCreationDate", js.undefined)
     
@@ -97,11 +97,11 @@ object Certificate {
     
     inline def setSigningAlgorithmUndefined: Self = StObject.set(x, "SigningAlgorithm", js.undefined)
     
-    inline def setValidFromDate(value: TStamp): Self = StObject.set(x, "ValidFromDate", value.asInstanceOf[js.Any])
+    inline def setValidFromDate(value: js.Date): Self = StObject.set(x, "ValidFromDate", value.asInstanceOf[js.Any])
     
     inline def setValidFromDateUndefined: Self = StObject.set(x, "ValidFromDate", js.undefined)
     
-    inline def setValidToDate(value: TStamp): Self = StObject.set(x, "ValidToDate", value.asInstanceOf[js.Any])
+    inline def setValidToDate(value: js.Date): Self = StObject.set(x, "ValidToDate", value.asInstanceOf[js.Any])
     
     inline def setValidToDateUndefined: Self = StObject.set(x, "ValidToDate", js.undefined)
   }

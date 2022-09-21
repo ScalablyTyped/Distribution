@@ -4,28 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A class of notifications that an application can register to receive. For
-  * example: &quot;all roster changes for a domain&quot;.
-  */
 trait SchemaFeed extends StObject {
   
   /**
-    * Information about a `Feed` with a `feed_type` of `COURSE_ROSTER_CHANGES`.
-    * This field must be specified if `feed_type` is `COURSE_ROSTER_CHANGES`.
+    * Information about a `Feed` with a `feed_type` of `COURSE_ROSTER_CHANGES`. This field must be specified if `feed_type` is `COURSE_ROSTER_CHANGES`.
     */
   var courseRosterChangesInfo: js.UndefOr[SchemaCourseRosterChangesInfo] = js.undefined
   
   /**
-    * Information about a `Feed` with a `feed_type` of `COURSE_WORK_CHANGES`.
-    * This field must be specified if `feed_type` is `COURSE_WORK_CHANGES`.
+    * Information about a `Feed` with a `feed_type` of `COURSE_WORK_CHANGES`. This field must be specified if `feed_type` is `COURSE_WORK_CHANGES`.
     */
   var courseWorkChangesInfo: js.UndefOr[SchemaCourseWorkChangesInfo] = js.undefined
   
   /**
     * The type of feed.
     */
-  var feedType: js.UndefOr[String] = js.undefined
+  var feedType: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaFeed {
   
@@ -45,6 +39,8 @@ object SchemaFeed {
     inline def setCourseWorkChangesInfoUndefined: Self = StObject.set(x, "courseWorkChangesInfo", js.undefined)
     
     inline def setFeedType(value: String): Self = StObject.set(x, "feedType", value.asInstanceOf[js.Any])
+    
+    inline def setFeedTypeNull: Self = StObject.set(x, "feedType", null)
     
     inline def setFeedTypeUndefined: Self = StObject.set(x, "feedType", js.undefined)
   }

@@ -56,7 +56,7 @@ object RtmpGroupSettings {
     
     inline def setAdMarkersUndefined: Self = StObject.set(x, "AdMarkers", js.undefined)
     
-    inline def setAdMarkersVarargs(value: RtmpAdMarkers*): Self = StObject.set(x, "AdMarkers", js.Array(value :_*))
+    inline def setAdMarkersVarargs(value: RtmpAdMarkers*): Self = StObject.set(x, "AdMarkers", js.Array(value*))
     
     inline def setAuthenticationScheme(value: AuthenticationScheme): Self = StObject.set(x, "AuthenticationScheme", value.asInstanceOf[js.Any])
     

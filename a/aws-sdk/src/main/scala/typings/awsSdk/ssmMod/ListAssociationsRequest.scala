@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListAssociationsRequest extends StObject {
   
   /**
-    * One or more filters. Use a filter to return a more specific list of results.  Filtering associations using the InstanceID attribute only returns legacy associations created using the InstanceID attribute. Associations targeting the instance that are part of the Target Attributes ResourceGroup or Tags are not returned. 
+    * One or more filters. Use a filter to return a more specific list of results.  Filtering associations using the InstanceID attribute only returns legacy associations created using the InstanceID attribute. Associations targeting the managed node that are part of the Target Attributes ResourceGroup or Tags aren't returned. 
     */
   var AssociationFilterList: js.UndefOr[typings.awsSdk.ssmMod.AssociationFilterList] = js.undefined
   
@@ -34,7 +34,7 @@ object ListAssociationsRequest {
     
     inline def setAssociationFilterListUndefined: Self = StObject.set(x, "AssociationFilterList", js.undefined)
     
-    inline def setAssociationFilterListVarargs(value: AssociationFilter*): Self = StObject.set(x, "AssociationFilterList", js.Array(value :_*))
+    inline def setAssociationFilterListVarargs(value: AssociationFilter*): Self = StObject.set(x, "AssociationFilterList", js.Array(value*))
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

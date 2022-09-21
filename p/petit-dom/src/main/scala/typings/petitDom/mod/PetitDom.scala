@@ -4,12 +4,10 @@ import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.TopLevel
 import typings.std.Element
 import typings.std.HTMLAnchorElement
-import typings.std.HTMLAppletElement
 import typings.std.HTMLAreaElement
 import typings.std.HTMLAudioElement
 import typings.std.HTMLBRElement
 import typings.std.HTMLBaseElement
-import typings.std.HTMLBaseFontElement
 import typings.std.HTMLBodyElement
 import typings.std.HTMLButtonElement
 import typings.std.HTMLCanvasElement
@@ -18,15 +16,11 @@ import typings.std.HTMLDataElement
 import typings.std.HTMLDataListElement
 import typings.std.HTMLDetailsElement
 import typings.std.HTMLDialogElement
-import typings.std.HTMLDirectoryElement
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLEmbedElement
 import typings.std.HTMLFieldSetElement
-import typings.std.HTMLFontElement
 import typings.std.HTMLFormElement
-import typings.std.HTMLFrameElement
-import typings.std.HTMLFrameSetElement
 import typings.std.HTMLHRElement
 import typings.std.HTMLHeadElement
 import typings.std.HTMLHeadingElement
@@ -39,7 +33,6 @@ import typings.std.HTMLLabelElement
 import typings.std.HTMLLegendElement
 import typings.std.HTMLLinkElement
 import typings.std.HTMLMapElement
-import typings.std.HTMLMarqueeElement
 import typings.std.HTMLMenuElement
 import typings.std.HTMLMetaElement
 import typings.std.HTMLMeterElement
@@ -50,7 +43,6 @@ import typings.std.HTMLOptGroupElement
 import typings.std.HTMLOptionElement
 import typings.std.HTMLOutputElement
 import typings.std.HTMLParagraphElement
-import typings.std.HTMLParamElement
 import typings.std.HTMLPictureElement
 import typings.std.HTMLPreElement
 import typings.std.HTMLProgressElement
@@ -62,10 +54,9 @@ import typings.std.HTMLSourceElement
 import typings.std.HTMLSpanElement
 import typings.std.HTMLStyleElement
 import typings.std.HTMLTableCaptionElement
+import typings.std.HTMLTableCellElement
 import typings.std.HTMLTableColElement
-import typings.std.HTMLTableDataCellElement
 import typings.std.HTMLTableElement
-import typings.std.HTMLTableHeaderCellElement
 import typings.std.HTMLTableRowElement
 import typings.std.HTMLTableSectionElement
 import typings.std.HTMLTemplateElement
@@ -75,6 +66,9 @@ import typings.std.HTMLTitleElement
 import typings.std.HTMLTrackElement
 import typings.std.HTMLUListElement
 import typings.std.HTMLVideoElement
+import typings.std.SVGAnimateElement
+import typings.std.SVGAnimateMotionElement
+import typings.std.SVGAnimateTransformElement
 import typings.std.SVGCircleElement
 import typings.std.SVGClipPathElement
 import typings.std.SVGDefsElement
@@ -88,6 +82,7 @@ import typings.std.SVGFEConvolveMatrixElement
 import typings.std.SVGFEDiffuseLightingElement
 import typings.std.SVGFEDisplacementMapElement
 import typings.std.SVGFEDistantLightElement
+import typings.std.SVGFEDropShadowElement
 import typings.std.SVGFEFloodElement
 import typings.std.SVGFEFuncAElement
 import typings.std.SVGFEFuncBElement
@@ -110,6 +105,7 @@ import typings.std.SVGGElement
 import typings.std.SVGImageElement
 import typings.std.SVGLineElement
 import typings.std.SVGLinearGradientElement
+import typings.std.SVGMPathElement
 import typings.std.SVGMarkerElement
 import typings.std.SVGMaskElement
 import typings.std.SVGMetadataElement
@@ -120,6 +116,7 @@ import typings.std.SVGPolylineElement
 import typings.std.SVGRadialGradientElement
 import typings.std.SVGRectElement
 import typings.std.SVGSVGElement
+import typings.std.SVGSetElement
 import typings.std.SVGStopElement
 import typings.std.SVGSwitchElement
 import typings.std.SVGSymbolElement
@@ -238,86 +235,119 @@ object PetitDom {
   /* Inlined parent std.Pick<std.SVGElementTagNameMap, std.Exclude<keyof std.SVGElementTagNameMap, 'a' | 'script' | 'style' | 'title'>> */
   trait DomElements extends StObject {
     
+    /* standard dom */
     var a: HTMLAnchorElement
     
+    /* standard dom */
     var abbr: HTMLElement
     
+    /* standard dom */
     var address: HTMLElement
     
-    var applet: HTMLAppletElement
+    var animate: SVGAnimateElement
     
+    var animateMotion: SVGAnimateMotionElement
+    
+    var animateTransform: SVGAnimateTransformElement
+    
+    /* standard dom */
     var area: HTMLAreaElement
     
+    /* standard dom */
     var article: HTMLElement
     
+    /* standard dom */
     var aside: HTMLElement
     
+    /* standard dom */
     var audio: HTMLAudioElement
     
+    /* standard dom */
     var b: HTMLElement
     
+    /* standard dom */
     var base: HTMLBaseElement
     
-    var basefont: HTMLBaseFontElement
-    
+    /* standard dom */
     var bdi: HTMLElement
     
+    /* standard dom */
     var bdo: HTMLElement
     
+    /* standard dom */
     var blockquote: HTMLQuoteElement
     
+    /* standard dom */
     var body: HTMLBodyElement
     
+    /* standard dom */
     var br: HTMLBRElement
     
+    /* standard dom */
     var button: HTMLButtonElement
     
+    /* standard dom */
     var canvas: HTMLCanvasElement
     
+    /* standard dom */
     var caption: HTMLTableCaptionElement
     
     var circle: SVGCircleElement
     
+    /* standard dom */
     var cite: HTMLElement
     
     var clipPath: SVGClipPathElement
     
+    /* standard dom */
     var code: HTMLElement
     
+    /* standard dom */
     var col: HTMLTableColElement
     
+    /* standard dom */
     var colgroup: HTMLTableColElement
     
+    /* standard dom */
     var data: HTMLDataElement
     
+    /* standard dom */
     var datalist: HTMLDataListElement
     
+    /* standard dom */
     var dd: HTMLElement
     
     var defs: SVGDefsElement
     
+    /* standard dom */
     var del: HTMLModElement
     
     var desc: SVGDescElement
     
+    /* standard dom */
     var details: HTMLDetailsElement
     
+    /* standard dom */
     var dfn: HTMLElement
     
+    /* standard dom */
     var dialog: HTMLDialogElement
     
-    var dir: HTMLDirectoryElement
-    
+    /* standard dom */
     var div: HTMLDivElement
     
+    /* standard dom */
     var dl: HTMLDListElement
     
+    /* standard dom */
     var dt: HTMLElement
     
     var ellipse: SVGEllipseElement
     
+    /* standard dom */
     var em: HTMLElement
     
+    /* standard dom */
     var embed: HTMLEmbedElement
     
     var feBlend: SVGFEBlendElement
@@ -335,6 +365,8 @@ object PetitDom {
     var feDisplacementMap: SVGFEDisplacementMapElement
     
     var feDistantLight: SVGFEDistantLightElement
+    
+    var feDropShadow: SVGFEDropShadowElement
     
     var feFlood: SVGFEFloodElement
     
@@ -368,168 +400,222 @@ object PetitDom {
     
     var feTurbulence: SVGFETurbulenceElement
     
+    /* standard dom */
     var fieldset: HTMLFieldSetElement
     
+    /* standard dom */
     var figcaption: HTMLElement
     
+    /* standard dom */
     var figure: HTMLElement
     
     var filter: SVGFilterElement
     
-    var font: HTMLFontElement
-    
+    /* standard dom */
     var footer: HTMLElement
     
     var foreignObject: SVGForeignObjectElement
     
+    /* standard dom */
     var form: HTMLFormElement
-    
-    var frame: HTMLFrameElement
-    
-    var frameset: HTMLFrameSetElement
     
     var g: SVGGElement
     
+    /* standard dom */
     var h1: HTMLHeadingElement
     
+    /* standard dom */
     var h2: HTMLHeadingElement
     
+    /* standard dom */
     var h3: HTMLHeadingElement
     
+    /* standard dom */
     var h4: HTMLHeadingElement
     
+    /* standard dom */
     var h5: HTMLHeadingElement
     
+    /* standard dom */
     var h6: HTMLHeadingElement
     
+    /* standard dom */
     var head: HTMLHeadElement
     
+    /* standard dom */
     var header: HTMLElement
     
+    /* standard dom */
     var hgroup: HTMLElement
     
+    /* standard dom */
     var hr: HTMLHRElement
     
+    /* standard dom */
     var html: HTMLHtmlElement
     
+    /* standard dom */
     var i: HTMLElement
     
+    /* standard dom */
     var iframe: HTMLIFrameElement
     
     var image: SVGImageElement
     
+    /* standard dom */
     var img: HTMLImageElement
     
+    /* standard dom */
     var input: HTMLInputElement
     
+    /* standard dom */
     var ins: HTMLModElement
     
+    /* standard dom */
     var kbd: HTMLElement
     
+    /* standard dom */
     var label: HTMLLabelElement
     
+    /* standard dom */
     var legend: HTMLLegendElement
     
+    /* standard dom */
     var li: HTMLLIElement
     
     var line: SVGLineElement
     
     var linearGradient: SVGLinearGradientElement
     
+    /* standard dom */
     var link: HTMLLinkElement
     
     var main: HTMLElement
     
+    /* standard dom */
     var map: HTMLMapElement
     
+    /* standard dom */
     var mark: HTMLElement
     
     var marker: SVGMarkerElement
     
-    var marquee: HTMLMarqueeElement
-    
     var mask: SVGMaskElement
     
+    /* standard dom */
     var menu: HTMLMenuElement
     
+    /* standard dom */
     var meta: HTMLMetaElement
     
     var metadata: SVGMetadataElement
     
+    /* standard dom */
     var meter: HTMLMeterElement
     
+    var mpath: SVGMPathElement
+    
+    /* standard dom */
     var nav: HTMLElement
     
+    /* standard dom */
     var noscript: HTMLElement
     
+    /* standard dom */
     var `object`: HTMLObjectElement
     
+    /* standard dom */
     var ol: HTMLOListElement
     
+    /* standard dom */
     var optgroup: HTMLOptGroupElement
     
+    /* standard dom */
     var option: HTMLOptionElement
     
+    /* standard dom */
     var output: HTMLOutputElement
     
+    /* standard dom */
     var p: HTMLParagraphElement
-    
-    var param: HTMLParamElement
     
     var path: SVGPathElement
     
     var pattern: SVGPatternElement
     
+    /* standard dom */
     var picture: HTMLPictureElement
     
     var polygon: SVGPolygonElement
     
     var polyline: SVGPolylineElement
     
+    /* standard dom */
     var pre: HTMLPreElement
     
+    /* standard dom */
     var progress: HTMLProgressElement
     
+    /* standard dom */
     var q: HTMLQuoteElement
     
     var radialGradient: SVGRadialGradientElement
     
     var rect: SVGRectElement
     
+    /* standard dom */
     var rp: HTMLElement
     
+    /* standard dom */
     var rt: HTMLElement
     
+    /* standard dom */
     var ruby: HTMLElement
     
+    /* standard dom */
     var s: HTMLElement
     
+    /* standard dom */
     var samp: HTMLElement
     
+    /* standard dom */
     var script: HTMLScriptElement
     
+    /* standard dom */
     var section: HTMLElement
     
+    /* standard dom */
     var select: HTMLSelectElement
     
+    var set: SVGSetElement
+    
+    /* standard dom */
     var slot: HTMLSlotElement
     
+    /* standard dom */
     var small: HTMLElement
     
+    /* standard dom */
     var source: HTMLSourceElement
     
+    /* standard dom */
     var span: HTMLSpanElement
     
     var stop: SVGStopElement
     
+    /* standard dom */
     var strong: HTMLElement
     
+    /* standard dom */
     var style: HTMLStyleElement
     
+    /* standard dom */
     var sub: HTMLElement
     
+    /* standard dom */
     var summary: HTMLElement
     
+    /* standard dom */
     var sup: HTMLElement
     
     var svg: SVGSVGElement
@@ -538,48 +624,65 @@ object PetitDom {
     
     var symbol: SVGSymbolElement
     
+    /* standard dom */
     var table: HTMLTableElement
     
+    /* standard dom */
     var tbody: HTMLTableSectionElement
     
-    var td: HTMLTableDataCellElement
+    /* standard dom */
+    var td: HTMLTableCellElement
     
+    /* standard dom */
     var template: HTMLTemplateElement
     
     var text: SVGTextElement
     
     var textPath: SVGTextPathElement
     
+    /* standard dom */
     var textarea: HTMLTextAreaElement
     
+    /* standard dom */
     var tfoot: HTMLTableSectionElement
     
-    var th: HTMLTableHeaderCellElement
+    /* standard dom */
+    var th: HTMLTableCellElement
     
+    /* standard dom */
     var thead: HTMLTableSectionElement
     
+    /* standard dom */
     var time: HTMLTimeElement
     
+    /* standard dom */
     var title: HTMLTitleElement
     
+    /* standard dom */
     var tr: HTMLTableRowElement
     
+    /* standard dom */
     var track: HTMLTrackElement
     
     var tspan: SVGTSpanElement
     
+    /* standard dom */
     var u: HTMLElement
     
+    /* standard dom */
     var ul: HTMLUListElement
     
     var use: SVGUseElement
     
+    /* standard dom */
     var `var`: HTMLElement
     
+    /* standard dom */
     var video: HTMLVideoElement
     
     var view: SVGViewElement
     
+    /* standard dom */
     var wbr: HTMLElement
   }
   object DomElements {
@@ -588,14 +691,15 @@ object PetitDom {
       a: HTMLAnchorElement,
       abbr: HTMLElement,
       address: HTMLElement,
-      applet: HTMLAppletElement,
+      animate: SVGAnimateElement,
+      animateMotion: SVGAnimateMotionElement,
+      animateTransform: SVGAnimateTransformElement,
       area: HTMLAreaElement,
       article: HTMLElement,
       aside: HTMLElement,
       audio: HTMLAudioElement,
       b: HTMLElement,
       base: HTMLBaseElement,
-      basefont: HTMLBaseFontElement,
       bdi: HTMLElement,
       bdo: HTMLElement,
       blockquote: HTMLQuoteElement,
@@ -619,7 +723,6 @@ object PetitDom {
       details: HTMLDetailsElement,
       dfn: HTMLElement,
       dialog: HTMLDialogElement,
-      dir: HTMLDirectoryElement,
       div: HTMLDivElement,
       dl: HTMLDListElement,
       dt: HTMLElement,
@@ -634,6 +737,7 @@ object PetitDom {
       feDiffuseLighting: SVGFEDiffuseLightingElement,
       feDisplacementMap: SVGFEDisplacementMapElement,
       feDistantLight: SVGFEDistantLightElement,
+      feDropShadow: SVGFEDropShadowElement,
       feFlood: SVGFEFloodElement,
       feFuncA: SVGFEFuncAElement,
       feFuncB: SVGFEFuncBElement,
@@ -654,12 +758,9 @@ object PetitDom {
       figcaption: HTMLElement,
       figure: HTMLElement,
       filter: SVGFilterElement,
-      font: HTMLFontElement,
       footer: HTMLElement,
       foreignObject: SVGForeignObjectElement,
       form: HTMLFormElement,
-      frame: HTMLFrameElement,
-      frameset: HTMLFrameSetElement,
       g: SVGGElement,
       h1: HTMLHeadingElement,
       h2: HTMLHeadingElement,
@@ -689,12 +790,12 @@ object PetitDom {
       map: HTMLMapElement,
       mark: HTMLElement,
       marker: SVGMarkerElement,
-      marquee: HTMLMarqueeElement,
       mask: SVGMaskElement,
       menu: HTMLMenuElement,
       meta: HTMLMetaElement,
       metadata: SVGMetadataElement,
       meter: HTMLMeterElement,
+      mpath: SVGMPathElement,
       nav: HTMLElement,
       noscript: HTMLElement,
       `object`: HTMLObjectElement,
@@ -703,7 +804,6 @@ object PetitDom {
       option: HTMLOptionElement,
       output: HTMLOutputElement,
       p: HTMLParagraphElement,
-      param: HTMLParamElement,
       path: SVGPathElement,
       pattern: SVGPatternElement,
       picture: HTMLPictureElement,
@@ -722,6 +822,7 @@ object PetitDom {
       script: HTMLScriptElement,
       section: HTMLElement,
       select: HTMLSelectElement,
+      set: SVGSetElement,
       slot: HTMLSlotElement,
       small: HTMLElement,
       source: HTMLSourceElement,
@@ -737,13 +838,13 @@ object PetitDom {
       symbol: SVGSymbolElement,
       table: HTMLTableElement,
       tbody: HTMLTableSectionElement,
-      td: HTMLTableDataCellElement,
+      td: HTMLTableCellElement,
       template: HTMLTemplateElement,
       text: SVGTextElement,
       textPath: SVGTextPathElement,
       textarea: HTMLTextAreaElement,
       tfoot: HTMLTableSectionElement,
-      th: HTMLTableHeaderCellElement,
+      th: HTMLTableCellElement,
       thead: HTMLTableSectionElement,
       time: HTMLTimeElement,
       title: HTMLTitleElement,
@@ -758,7 +859,7 @@ object PetitDom {
       view: SVGViewElement,
       wbr: HTMLElement
     ): DomElements = {
-      val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], abbr = abbr.asInstanceOf[js.Any], address = address.asInstanceOf[js.Any], applet = applet.asInstanceOf[js.Any], area = area.asInstanceOf[js.Any], article = article.asInstanceOf[js.Any], aside = aside.asInstanceOf[js.Any], audio = audio.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], basefont = basefont.asInstanceOf[js.Any], bdi = bdi.asInstanceOf[js.Any], bdo = bdo.asInstanceOf[js.Any], blockquote = blockquote.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], br = br.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], canvas = canvas.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], circle = circle.asInstanceOf[js.Any], cite = cite.asInstanceOf[js.Any], clipPath = clipPath.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], col = col.asInstanceOf[js.Any], colgroup = colgroup.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], datalist = datalist.asInstanceOf[js.Any], dd = dd.asInstanceOf[js.Any], defs = defs.asInstanceOf[js.Any], del = del.asInstanceOf[js.Any], desc = desc.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], dfn = dfn.asInstanceOf[js.Any], dialog = dialog.asInstanceOf[js.Any], dir = dir.asInstanceOf[js.Any], div = div.asInstanceOf[js.Any], dl = dl.asInstanceOf[js.Any], dt = dt.asInstanceOf[js.Any], ellipse = ellipse.asInstanceOf[js.Any], em = em.asInstanceOf[js.Any], embed = embed.asInstanceOf[js.Any], feBlend = feBlend.asInstanceOf[js.Any], feColorMatrix = feColorMatrix.asInstanceOf[js.Any], feComponentTransfer = feComponentTransfer.asInstanceOf[js.Any], feComposite = feComposite.asInstanceOf[js.Any], feConvolveMatrix = feConvolveMatrix.asInstanceOf[js.Any], feDiffuseLighting = feDiffuseLighting.asInstanceOf[js.Any], feDisplacementMap = feDisplacementMap.asInstanceOf[js.Any], feDistantLight = feDistantLight.asInstanceOf[js.Any], feFlood = feFlood.asInstanceOf[js.Any], feFuncA = feFuncA.asInstanceOf[js.Any], feFuncB = feFuncB.asInstanceOf[js.Any], feFuncG = feFuncG.asInstanceOf[js.Any], feFuncR = feFuncR.asInstanceOf[js.Any], feGaussianBlur = feGaussianBlur.asInstanceOf[js.Any], feImage = feImage.asInstanceOf[js.Any], feMerge = feMerge.asInstanceOf[js.Any], feMergeNode = feMergeNode.asInstanceOf[js.Any], feMorphology = feMorphology.asInstanceOf[js.Any], feOffset = feOffset.asInstanceOf[js.Any], fePointLight = fePointLight.asInstanceOf[js.Any], feSpecularLighting = feSpecularLighting.asInstanceOf[js.Any], feSpotLight = feSpotLight.asInstanceOf[js.Any], feTile = feTile.asInstanceOf[js.Any], feTurbulence = feTurbulence.asInstanceOf[js.Any], fieldset = fieldset.asInstanceOf[js.Any], figcaption = figcaption.asInstanceOf[js.Any], figure = figure.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], font = font.asInstanceOf[js.Any], footer = footer.asInstanceOf[js.Any], foreignObject = foreignObject.asInstanceOf[js.Any], form = form.asInstanceOf[js.Any], frame = frame.asInstanceOf[js.Any], frameset = frameset.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], h1 = h1.asInstanceOf[js.Any], h2 = h2.asInstanceOf[js.Any], h3 = h3.asInstanceOf[js.Any], h4 = h4.asInstanceOf[js.Any], h5 = h5.asInstanceOf[js.Any], h6 = h6.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], hgroup = hgroup.asInstanceOf[js.Any], hr = hr.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], i = i.asInstanceOf[js.Any], iframe = iframe.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], img = img.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], ins = ins.asInstanceOf[js.Any], kbd = kbd.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], legend = legend.asInstanceOf[js.Any], li = li.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], linearGradient = linearGradient.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], main = main.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], mark = mark.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any], marquee = marquee.asInstanceOf[js.Any], mask = mask.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], meter = meter.asInstanceOf[js.Any], nav = nav.asInstanceOf[js.Any], noscript = noscript.asInstanceOf[js.Any], ol = ol.asInstanceOf[js.Any], optgroup = optgroup.asInstanceOf[js.Any], option = option.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], param = param.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], picture = picture.asInstanceOf[js.Any], polygon = polygon.asInstanceOf[js.Any], polyline = polyline.asInstanceOf[js.Any], pre = pre.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], q = q.asInstanceOf[js.Any], radialGradient = radialGradient.asInstanceOf[js.Any], rect = rect.asInstanceOf[js.Any], rp = rp.asInstanceOf[js.Any], rt = rt.asInstanceOf[js.Any], ruby = ruby.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], samp = samp.asInstanceOf[js.Any], script = script.asInstanceOf[js.Any], section = section.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], slot = slot.asInstanceOf[js.Any], small = small.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any], strong = strong.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], sub = sub.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any], sup = sup.asInstanceOf[js.Any], svg = svg.asInstanceOf[js.Any], switch = switch.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any], tbody = tbody.asInstanceOf[js.Any], td = td.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textPath = textPath.asInstanceOf[js.Any], textarea = textarea.asInstanceOf[js.Any], tfoot = tfoot.asInstanceOf[js.Any], th = th.asInstanceOf[js.Any], thead = thead.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], tr = tr.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any], tspan = tspan.asInstanceOf[js.Any], u = u.asInstanceOf[js.Any], ul = ul.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], wbr = wbr.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], abbr = abbr.asInstanceOf[js.Any], address = address.asInstanceOf[js.Any], animate = animate.asInstanceOf[js.Any], animateMotion = animateMotion.asInstanceOf[js.Any], animateTransform = animateTransform.asInstanceOf[js.Any], area = area.asInstanceOf[js.Any], article = article.asInstanceOf[js.Any], aside = aside.asInstanceOf[js.Any], audio = audio.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], bdi = bdi.asInstanceOf[js.Any], bdo = bdo.asInstanceOf[js.Any], blockquote = blockquote.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], br = br.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], canvas = canvas.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], circle = circle.asInstanceOf[js.Any], cite = cite.asInstanceOf[js.Any], clipPath = clipPath.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], col = col.asInstanceOf[js.Any], colgroup = colgroup.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], datalist = datalist.asInstanceOf[js.Any], dd = dd.asInstanceOf[js.Any], defs = defs.asInstanceOf[js.Any], del = del.asInstanceOf[js.Any], desc = desc.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], dfn = dfn.asInstanceOf[js.Any], dialog = dialog.asInstanceOf[js.Any], div = div.asInstanceOf[js.Any], dl = dl.asInstanceOf[js.Any], dt = dt.asInstanceOf[js.Any], ellipse = ellipse.asInstanceOf[js.Any], em = em.asInstanceOf[js.Any], embed = embed.asInstanceOf[js.Any], feBlend = feBlend.asInstanceOf[js.Any], feColorMatrix = feColorMatrix.asInstanceOf[js.Any], feComponentTransfer = feComponentTransfer.asInstanceOf[js.Any], feComposite = feComposite.asInstanceOf[js.Any], feConvolveMatrix = feConvolveMatrix.asInstanceOf[js.Any], feDiffuseLighting = feDiffuseLighting.asInstanceOf[js.Any], feDisplacementMap = feDisplacementMap.asInstanceOf[js.Any], feDistantLight = feDistantLight.asInstanceOf[js.Any], feDropShadow = feDropShadow.asInstanceOf[js.Any], feFlood = feFlood.asInstanceOf[js.Any], feFuncA = feFuncA.asInstanceOf[js.Any], feFuncB = feFuncB.asInstanceOf[js.Any], feFuncG = feFuncG.asInstanceOf[js.Any], feFuncR = feFuncR.asInstanceOf[js.Any], feGaussianBlur = feGaussianBlur.asInstanceOf[js.Any], feImage = feImage.asInstanceOf[js.Any], feMerge = feMerge.asInstanceOf[js.Any], feMergeNode = feMergeNode.asInstanceOf[js.Any], feMorphology = feMorphology.asInstanceOf[js.Any], feOffset = feOffset.asInstanceOf[js.Any], fePointLight = fePointLight.asInstanceOf[js.Any], feSpecularLighting = feSpecularLighting.asInstanceOf[js.Any], feSpotLight = feSpotLight.asInstanceOf[js.Any], feTile = feTile.asInstanceOf[js.Any], feTurbulence = feTurbulence.asInstanceOf[js.Any], fieldset = fieldset.asInstanceOf[js.Any], figcaption = figcaption.asInstanceOf[js.Any], figure = figure.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], footer = footer.asInstanceOf[js.Any], foreignObject = foreignObject.asInstanceOf[js.Any], form = form.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], h1 = h1.asInstanceOf[js.Any], h2 = h2.asInstanceOf[js.Any], h3 = h3.asInstanceOf[js.Any], h4 = h4.asInstanceOf[js.Any], h5 = h5.asInstanceOf[js.Any], h6 = h6.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], hgroup = hgroup.asInstanceOf[js.Any], hr = hr.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], i = i.asInstanceOf[js.Any], iframe = iframe.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], img = img.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], ins = ins.asInstanceOf[js.Any], kbd = kbd.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], legend = legend.asInstanceOf[js.Any], li = li.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], linearGradient = linearGradient.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], main = main.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], mark = mark.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any], mask = mask.asInstanceOf[js.Any], menu = menu.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], meter = meter.asInstanceOf[js.Any], mpath = mpath.asInstanceOf[js.Any], nav = nav.asInstanceOf[js.Any], noscript = noscript.asInstanceOf[js.Any], ol = ol.asInstanceOf[js.Any], optgroup = optgroup.asInstanceOf[js.Any], option = option.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], picture = picture.asInstanceOf[js.Any], polygon = polygon.asInstanceOf[js.Any], polyline = polyline.asInstanceOf[js.Any], pre = pre.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], q = q.asInstanceOf[js.Any], radialGradient = radialGradient.asInstanceOf[js.Any], rect = rect.asInstanceOf[js.Any], rp = rp.asInstanceOf[js.Any], rt = rt.asInstanceOf[js.Any], ruby = ruby.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], samp = samp.asInstanceOf[js.Any], script = script.asInstanceOf[js.Any], section = section.asInstanceOf[js.Any], select = select.asInstanceOf[js.Any], set = set.asInstanceOf[js.Any], slot = slot.asInstanceOf[js.Any], small = small.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any], strong = strong.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], sub = sub.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any], sup = sup.asInstanceOf[js.Any], svg = svg.asInstanceOf[js.Any], switch = switch.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any], tbody = tbody.asInstanceOf[js.Any], td = td.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textPath = textPath.asInstanceOf[js.Any], textarea = textarea.asInstanceOf[js.Any], tfoot = tfoot.asInstanceOf[js.Any], th = th.asInstanceOf[js.Any], thead = thead.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], tr = tr.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any], tspan = tspan.asInstanceOf[js.Any], u = u.asInstanceOf[js.Any], ul = ul.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], wbr = wbr.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.updateDynamic("var")(`var`.asInstanceOf[js.Any])
       __obj.asInstanceOf[DomElements]
@@ -772,7 +873,11 @@ object PetitDom {
       
       inline def setAddress(value: HTMLElement): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      inline def setApplet(value: HTMLAppletElement): Self = StObject.set(x, "applet", value.asInstanceOf[js.Any])
+      inline def setAnimate(value: SVGAnimateElement): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+      
+      inline def setAnimateMotion(value: SVGAnimateMotionElement): Self = StObject.set(x, "animateMotion", value.asInstanceOf[js.Any])
+      
+      inline def setAnimateTransform(value: SVGAnimateTransformElement): Self = StObject.set(x, "animateTransform", value.asInstanceOf[js.Any])
       
       inline def setArea(value: HTMLAreaElement): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
       
@@ -785,8 +890,6 @@ object PetitDom {
       inline def setB(value: HTMLElement): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
       inline def setBase(value: HTMLBaseElement): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
-      
-      inline def setBasefont(value: HTMLBaseFontElement): Self = StObject.set(x, "basefont", value.asInstanceOf[js.Any])
       
       inline def setBdi(value: HTMLElement): Self = StObject.set(x, "bdi", value.asInstanceOf[js.Any])
       
@@ -834,8 +937,6 @@ object PetitDom {
       
       inline def setDialog(value: HTMLDialogElement): Self = StObject.set(x, "dialog", value.asInstanceOf[js.Any])
       
-      inline def setDir(value: HTMLDirectoryElement): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
-      
       inline def setDiv(value: HTMLDivElement): Self = StObject.set(x, "div", value.asInstanceOf[js.Any])
       
       inline def setDl(value: HTMLDListElement): Self = StObject.set(x, "dl", value.asInstanceOf[js.Any])
@@ -863,6 +964,8 @@ object PetitDom {
       inline def setFeDisplacementMap(value: SVGFEDisplacementMapElement): Self = StObject.set(x, "feDisplacementMap", value.asInstanceOf[js.Any])
       
       inline def setFeDistantLight(value: SVGFEDistantLightElement): Self = StObject.set(x, "feDistantLight", value.asInstanceOf[js.Any])
+      
+      inline def setFeDropShadow(value: SVGFEDropShadowElement): Self = StObject.set(x, "feDropShadow", value.asInstanceOf[js.Any])
       
       inline def setFeFlood(value: SVGFEFloodElement): Self = StObject.set(x, "feFlood", value.asInstanceOf[js.Any])
       
@@ -904,17 +1007,11 @@ object PetitDom {
       
       inline def setFilter(value: SVGFilterElement): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      inline def setFont(value: HTMLFontElement): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
-      
       inline def setFooter(value: HTMLElement): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
       
       inline def setForeignObject(value: SVGForeignObjectElement): Self = StObject.set(x, "foreignObject", value.asInstanceOf[js.Any])
       
       inline def setForm(value: HTMLFormElement): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
-      
-      inline def setFrame(value: HTMLFrameElement): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
-      
-      inline def setFrameset(value: HTMLFrameSetElement): Self = StObject.set(x, "frameset", value.asInstanceOf[js.Any])
       
       inline def setG(value: SVGGElement): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
       
@@ -974,8 +1071,6 @@ object PetitDom {
       
       inline def setMarker(value: SVGMarkerElement): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
       
-      inline def setMarquee(value: HTMLMarqueeElement): Self = StObject.set(x, "marquee", value.asInstanceOf[js.Any])
-      
       inline def setMask(value: SVGMaskElement): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
       
       inline def setMenu(value: HTMLMenuElement): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
@@ -985,6 +1080,8 @@ object PetitDom {
       inline def setMetadata(value: SVGMetadataElement): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
       inline def setMeter(value: HTMLMeterElement): Self = StObject.set(x, "meter", value.asInstanceOf[js.Any])
+      
+      inline def setMpath(value: SVGMPathElement): Self = StObject.set(x, "mpath", value.asInstanceOf[js.Any])
       
       inline def setNav(value: HTMLElement): Self = StObject.set(x, "nav", value.asInstanceOf[js.Any])
       
@@ -1001,8 +1098,6 @@ object PetitDom {
       inline def setOutput(value: HTMLOutputElement): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
       inline def setP(value: HTMLParagraphElement): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
-      
-      inline def setParam(value: HTMLParamElement): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
       
       inline def setPath(value: SVGPathElement): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -1040,6 +1135,8 @@ object PetitDom {
       
       inline def setSelect(value: HTMLSelectElement): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
       
+      inline def setSet(value: SVGSetElement): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
+      
       inline def setSlot(value: HTMLSlotElement): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
       
       inline def setSmall(value: HTMLElement): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
@@ -1070,7 +1167,7 @@ object PetitDom {
       
       inline def setTbody(value: HTMLTableSectionElement): Self = StObject.set(x, "tbody", value.asInstanceOf[js.Any])
       
-      inline def setTd(value: HTMLTableDataCellElement): Self = StObject.set(x, "td", value.asInstanceOf[js.Any])
+      inline def setTd(value: HTMLTableCellElement): Self = StObject.set(x, "td", value.asInstanceOf[js.Any])
       
       inline def setTemplate(value: HTMLTemplateElement): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
@@ -1082,7 +1179,7 @@ object PetitDom {
       
       inline def setTfoot(value: HTMLTableSectionElement): Self = StObject.set(x, "tfoot", value.asInstanceOf[js.Any])
       
-      inline def setTh(value: HTMLTableHeaderCellElement): Self = StObject.set(x, "th", value.asInstanceOf[js.Any])
+      inline def setTh(value: HTMLTableCellElement): Self = StObject.set(x, "th", value.asInstanceOf[js.Any])
       
       inline def setThead(value: HTMLTableSectionElement): Self = StObject.set(x, "thead", value.asInstanceOf[js.Any])
       
@@ -1112,7 +1209,7 @@ object PetitDom {
     }
   }
   
-  trait ElementNode[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */, E /* <: /* import warning: importer.ImportType#apply Failed type conversion: petit-dom.petit-dom.PetitDom.DomElements[T] */ js.Any */]
+  trait ElementNode[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170 */ Any */, E /* <: /* import warning: importer.ImportType#apply Failed type conversion: petit-dom.petit-dom.PetitDom.DomElements[T] */ js.Any */]
     extends StObject
        with VNode {
     
@@ -1124,13 +1221,13 @@ object PetitDom {
   }
   object ElementNode {
     
-    inline def apply[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */, E /* <: /* import warning: importer.ImportType#apply Failed type conversion: petit-dom.petit-dom.PetitDom.DomElements[T] */ js.Any */](content: js.Array[VNode], isSVG: Boolean, props: Props[E], `type`: T): ElementNode[T, E] = {
+    inline def apply[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170 */ Any */, E /* <: /* import warning: importer.ImportType#apply Failed type conversion: petit-dom.petit-dom.PetitDom.DomElements[T] */ js.Any */](content: js.Array[VNode], isSVG: Boolean, props: Props[E], `type`: T): ElementNode[T, E] = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], isSVG = isSVG.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], key = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ElementNode[T, E]]
     }
     
-    extension [Self <: ElementNode[?, ?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */, E /* <: /* import warning: importer.ImportType#apply Failed type conversion: petit-dom.petit-dom.PetitDom.DomElements[T] */ js.Any */](x: Self & (ElementNode[T, E])) {
+    extension [Self <: ElementNode[?, ?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170 */ Any */, E /* <: /* import warning: importer.ImportType#apply Failed type conversion: petit-dom.petit-dom.PetitDom.DomElements[T] */ js.Any */](x: Self & (ElementNode[T, E])) {
       
       inline def setProps(value: Props[E]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
@@ -1193,7 +1290,7 @@ object PetitDom {
       
       inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      inline def setContentVarargs(value: Content*): Self = StObject.set(x, "content", js.Array(value :_*))
+      inline def setContentVarargs(value: Content*): Self = StObject.set(x, "content", js.Array(value*))
       
       inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -1221,13 +1318,13 @@ object PetitDom {
     
     val key: Key | Null
     
-    val props: js.Any
+    val props: Any
     
-    val `type`: js.Any
+    val `type`: Any
   }
   object VNode {
     
-    inline def apply(content: js.Array[VNode], isSVG: Boolean, props: js.Any, `type`: js.Any): VNode = {
+    inline def apply(content: js.Array[VNode], isSVG: Boolean, props: Any, `type`: Any): VNode = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], isSVG = isSVG.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], key = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[VNode]
@@ -1237,7 +1334,7 @@ object PetitDom {
       
       inline def setContent(value: js.Array[VNode]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      inline def setContentVarargs(value: VNode*): Self = StObject.set(x, "content", js.Array(value :_*))
+      inline def setContentVarargs(value: VNode*): Self = StObject.set(x, "content", js.Array(value*))
       
       inline def setIsSVG(value: Boolean): Self = StObject.set(x, "isSVG", value.asInstanceOf[js.Any])
       
@@ -1245,9 +1342,9 @@ object PetitDom {
       
       inline def setKeyNull: Self = StObject.set(x, "key", null)
       
-      inline def setProps(value: js.Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

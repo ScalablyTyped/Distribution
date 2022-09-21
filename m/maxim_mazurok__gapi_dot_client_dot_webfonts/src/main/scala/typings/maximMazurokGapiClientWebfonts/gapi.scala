@@ -25,7 +25,7 @@ object gapi {
         var files: js.UndefOr[
                 /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in string ]: string}
-          */ typings.maximMazurokGapiClientWebfonts.maximMazurokGapiClientWebfontsStrings.Webfont & TopLevel[js.Any]
+          */ typings.maximMazurokGapiClientWebfonts.maximMazurokGapiClientWebfontsStrings.Webfont & TopLevel[Any]
               ] = js.undefined
         
         /** This kind represents a webfont object in the webfonts service. */
@@ -63,7 +63,7 @@ object gapi {
           inline def setFiles(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: string}
-            */ typings.maximMazurokGapiClientWebfonts.maximMazurokGapiClientWebfontsStrings.Webfont & TopLevel[js.Any]
+            */ typings.maximMazurokGapiClientWebfonts.maximMazurokGapiClientWebfontsStrings.Webfont & TopLevel[Any]
           ): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
           
           inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
@@ -80,13 +80,13 @@ object gapi {
           
           inline def setSubsetsUndefined: Self = StObject.set(x, "subsets", js.undefined)
           
-          inline def setSubsetsVarargs(value: String*): Self = StObject.set(x, "subsets", js.Array(value :_*))
+          inline def setSubsetsVarargs(value: String*): Self = StObject.set(x, "subsets", js.Array(value*))
           
           inline def setVariants(value: js.Array[String]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
           
           inline def setVariantsUndefined: Self = StObject.set(x, "variants", js.undefined)
           
-          inline def setVariantsVarargs(value: String*): Self = StObject.set(x, "variants", js.Array(value :_*))
+          inline def setVariantsVarargs(value: String*): Self = StObject.set(x, "variants", js.Array(value*))
           
           inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
           
@@ -115,7 +115,7 @@ object gapi {
           
           inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
           
-          inline def setItemsVarargs(value: Webfont*): Self = StObject.set(x, "items", js.Array(value :_*))
+          inline def setItemsVarargs(value: Webfont*): Self = StObject.set(x, "items", js.Array(value*))
           
           inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
           

@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents a collection of legend entries.
   *
-  * Represents a collection of legendEntries.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 @js.native
@@ -26,18 +26,20 @@ trait ChartLegendEntryCollection
   var context_ChartLegendEntryCollection: RequestContext = js.native
   
   /**
-    * Returns the number of legendEntry in the collection.
+    * Returns the number of legend entries in the collection.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   def getCount(): ClientResult[Double] = js.native
   
   /**
-    * Returns a legendEntry at the given index.
+    * Returns a legend entry at the given index.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     *
-    * @param index Index of the legendEntry to be retrieved.
+    * @param index Index of the legend entry to be retrieved.
     */
   def getItemAt(index: Double): ChartLegendEntry = js.native
   

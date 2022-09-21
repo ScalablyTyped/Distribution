@@ -17,7 +17,7 @@ trait CreateStreamRequest extends StObject {
   var files: StreamFiles
   
   /**
-    * An IAM role that allows the IoT service principal assumes to access your S3 files.
+    * An IAM role that allows the IoT service principal to access your S3 files.
     */
   var roleArn: RoleArn
   
@@ -46,7 +46,7 @@ object CreateStreamRequest {
     
     inline def setFiles(value: StreamFiles): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    inline def setFilesVarargs(value: StreamFile*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: StreamFile*): Self = StObject.set(x, "files", js.Array(value*))
     
     inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
@@ -56,6 +56,6 @@ object CreateStreamRequest {
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
   }
 }

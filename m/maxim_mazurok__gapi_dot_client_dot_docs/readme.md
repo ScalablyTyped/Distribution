@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_docs
 
-Typings are for version 1.0.20201116
+Typings are for version 1.0.20220802
 
 ## Library description:
 TypeScript typings for Google Docs API v1
@@ -10,10 +10,10 @@ TypeScript typings for Google Docs API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.docs |
 | Keywords           | - |
-| # releases         | 15 |
-| # dependents       | 1 |
-| # downloads        | 1531 |
-| # stars            | 0 |
+| # releases         | 96 |
+| # dependents       | 0.0 |
+| # downloads        | 1997.3333333333333 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

@@ -12,5 +12,5 @@ object pureMod {
   val ^ : js.Any = js.native
   
   // prettier-ignore
-  inline def default[T /* <: ComponentType[js.Any] */](component: T): ComponentType[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[js.Any]]
+  inline def default[T /* <: ComponentType[Any] */](component: T): ComponentType[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Any]]
 }

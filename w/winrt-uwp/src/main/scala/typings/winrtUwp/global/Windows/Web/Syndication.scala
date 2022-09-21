@@ -1,6 +1,5 @@
 package typings.winrtUwp.global.Windows.Web
 
-import typings.std.Date
 import typings.winrtUwp.Windows.Data.Xml.Dom.XmlDocument
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperationWithProgress
@@ -23,7 +22,7 @@ object Syndication {
   @JSGlobal("Windows.Web.Syndication.SyndicationAttribute")
   @js.native
   /** Creates a new SyndicationAttribute object. */
-  class SyndicationAttribute ()
+  open class SyndicationAttribute ()
     extends StObject
        with typings.winrtUwp.Windows.Web.Syndication.SyndicationAttribute {
     /**
@@ -51,7 +50,7 @@ object Syndication {
   @JSGlobal("Windows.Web.Syndication.SyndicationCategory")
   @js.native
   /** Creates a SyndicationCategory object. */
-  class SyndicationCategory ()
+  open class SyndicationCategory ()
     extends StObject
        with typings.winrtUwp.Windows.Web.Syndication.SyndicationCategory {
     /**
@@ -120,7 +119,7 @@ object Syndication {
   @JSGlobal("Windows.Web.Syndication.SyndicationClient")
   @js.native
   /** Creates a new SyndicationClient object. */
-  class SyndicationClient ()
+  open class SyndicationClient ()
     extends StObject
        with typings.winrtUwp.Windows.Web.Syndication.SyndicationClient {
     /**
@@ -170,7 +169,7 @@ object Syndication {
   @JSGlobal("Windows.Web.Syndication.SyndicationContent")
   @js.native
   /** Creates a new SyndicationContent object. */
-  class SyndicationContent ()
+  open class SyndicationContent ()
     extends StObject
        with typings.winrtUwp.Windows.Web.Syndication.SyndicationContent {
     /**
@@ -284,7 +283,7 @@ object Syndication {
   @JSGlobal("Windows.Web.Syndication.SyndicationFeed")
   @js.native
   /** Creates a new SyndicationFeed object. */
-  class SyndicationFeed ()
+  open class SyndicationFeed ()
     extends StObject
        with typings.winrtUwp.Windows.Web.Syndication.SyndicationFeed {
     /**
@@ -357,7 +356,7 @@ object Syndication {
     
     /** Gets or sets the time the feed was last modified. This property represents the /rss/channel/lastBuildDate or atom:updated element. */
     /* CompleteClass */
-    var lastUpdatedTime: Date = js.native
+    var lastUpdatedTime: js.Date = js.native
     
     /** Gets the last Uniform Resource Identifier (URI) in the sequence. This property represents the atom:link element with attribute rel=”last”. */
     /* CompleteClass */
@@ -443,7 +442,7 @@ object Syndication {
   @JSGlobal("Windows.Web.Syndication.SyndicationGenerator")
   @js.native
   /** Creates a new SyndicationGenerator object. */
-  class SyndicationGenerator ()
+  open class SyndicationGenerator ()
     extends StObject
        with typings.winrtUwp.Windows.Web.Syndication.SyndicationGenerator {
     /**
@@ -505,7 +504,7 @@ object Syndication {
   @JSGlobal("Windows.Web.Syndication.SyndicationItem")
   @js.native
   /** Creates a new SyndicationItem object. */
-  class SyndicationItem ()
+  open class SyndicationItem ()
     extends StObject
        with typings.winrtUwp.Windows.Web.Syndication.SyndicationItem {
     /**
@@ -582,7 +581,7 @@ object Syndication {
     
     /** Gets or sets the most recent time the item was modified. This property represents the atom:updated element. */
     /* CompleteClass */
-    var lastUpdatedTime: Date = js.native
+    var lastUpdatedTime: js.Date = js.native
     
     /** Gets the links contained in the item. */
     /* CompleteClass */
@@ -616,7 +615,7 @@ object Syndication {
     
     /** Gets or sets the date the item was published. */
     /* CompleteClass */
-    var publishedDate: Date = js.native
+    var publishedDate: js.Date = js.native
     
     /** Gets or sets information about the rights of an item. This property represents the atom:rights element. */
     /* CompleteClass */
@@ -639,7 +638,7 @@ object Syndication {
   @JSGlobal("Windows.Web.Syndication.SyndicationLink")
   @js.native
   /** Creates a new SyndicationLink object. */
-  class SyndicationLink ()
+  open class SyndicationLink ()
     extends StObject
        with typings.winrtUwp.Windows.Web.Syndication.SyndicationLink {
     /**
@@ -722,7 +721,7 @@ object Syndication {
   @JSGlobal("Windows.Web.Syndication.SyndicationNode")
   @js.native
   /** Creates a new SyndicationNode object. */
-  class SyndicationNode ()
+  open class SyndicationNode ()
     extends StObject
        with typings.winrtUwp.Windows.Web.Syndication.SyndicationNode {
     /**
@@ -774,7 +773,7 @@ object Syndication {
   @JSGlobal("Windows.Web.Syndication.SyndicationPerson")
   @js.native
   /** Creates a SyndicationPerson object. */
-  class SyndicationPerson ()
+  open class SyndicationPerson ()
     extends StObject
        with typings.winrtUwp.Windows.Web.Syndication.SyndicationPerson {
     /**
@@ -843,7 +842,7 @@ object Syndication {
   @JSGlobal("Windows.Web.Syndication.SyndicationText")
   @js.native
   /** Creates a new SyndicationText object. */
-  class SyndicationText ()
+  open class SyndicationText ()
     extends StObject
        with typings.winrtUwp.Windows.Web.Syndication.SyndicationText {
     /**

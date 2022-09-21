@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("guacamole-client", "ArrayBufferReader")
 @js.native
-class ArrayBufferReader protected ()
+open class ArrayBufferReader protected ()
   extends typings.guacamoleClient.arrayBufferReaderMod.ArrayBufferReader {
   /**
     * @param stream The stream that data will be read from.

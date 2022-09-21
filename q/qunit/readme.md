@@ -1,7 +1,7 @@
 
 # Scala.js typings for qunit
 
-Typings are for version v2.9.2
+Typings are for version v2.19.0
 
 ## Library description:
 The powerful, easy-to-use testing framework.
@@ -10,10 +10,10 @@ The powerful, easy-to-use testing framework.
 | ------------------ | :-------------: |
 | Full name          | qunit |
 | Keywords           | testing, unit, assert, assertion, tap, tape, karma, jquery |
-| # releases         | 12 |
-| # dependents       | 48 |
-| # downloads        | 7219196 |
-| # stars            | 11 |
+| # releases         | 19 |
+| # dependents       | 0.0 |
+| # downloads        | 988240.6666666666 |
+| # stars            | 3964.0 |
 
 ## Links
 - [Homepage](https://qunitjs.com)

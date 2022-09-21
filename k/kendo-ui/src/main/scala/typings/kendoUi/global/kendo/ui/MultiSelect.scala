@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.MultiSelect")
 @js.native
-class MultiSelect protected ()
+open class MultiSelect protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.MultiSelect {
   def this(element: Element) = this()

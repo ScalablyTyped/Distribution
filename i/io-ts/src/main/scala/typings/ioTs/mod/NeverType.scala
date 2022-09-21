@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("io-ts", "NeverType")
 @js.native
-class NeverType ()
-  extends Type_[scala.Nothing, scala.Nothing, js.Any] {
+open class NeverType ()
+  extends Type_[scala.Nothing, scala.Nothing, Any] {
   
   /**
     * @since 1.0.0

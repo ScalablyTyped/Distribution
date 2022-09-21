@@ -19,7 +19,7 @@ object themeTypesMod {
     }
   }
   
-  type ICSSRuleFunction = js.Function1[/* data */ js.Any, String]
+  type ICSSRuleFunction = js.Function1[/* data */ Any, String]
   
   type ICSSRules = StringDictionary[ICSSRule]
   

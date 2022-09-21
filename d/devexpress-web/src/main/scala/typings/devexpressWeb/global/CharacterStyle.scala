@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("CharacterStyle")
 @js.native
-class CharacterStyle ()
+open class CharacterStyle ()
   extends StObject
      with typings.devexpressWeb.CharacterStyle {
   

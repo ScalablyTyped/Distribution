@@ -1,8 +1,7 @@
 package typings.promptly
 
-import typings.node.NodeJS.ReadableStream
-import typings.node.NodeJS.WritableStream
-import typings.std.Error
+import typings.std.ReadableStream
+import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,35 +12,35 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def choose(message: String, choices: js.Array[String]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("choose")(message.asInstanceOf[js.Any], choices.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def choose(message: String, choices: js.Array[String], fn: Callback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("choose")(message.asInstanceOf[js.Any], choices.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def choose(message: String, choices: js.Array[String], opts: Options): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("choose")(message.asInstanceOf[js.Any], choices.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def choose(message: String, choices: js.Array[String], opts: Options, fn: Callback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("choose")(message.asInstanceOf[js.Any], choices.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def choose(message: String, choices: js.Array[String]): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("choose")(message.asInstanceOf[js.Any], choices.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def choose(message: String, choices: js.Array[String], fn: Callback): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("choose")(message.asInstanceOf[js.Any], choices.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def choose(message: String, choices: js.Array[String], opts: Options): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("choose")(message.asInstanceOf[js.Any], choices.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def choose(message: String, choices: js.Array[String], opts: Options, fn: Callback): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("choose")(message.asInstanceOf[js.Any], choices.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  inline def confirm(message: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(message.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def confirm(message: String, fn: Callback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(message.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def confirm(message: String, opts: Options): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(message.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def confirm(message: String, opts: Options, fn: Callback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(message.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def confirm(message: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(message.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  inline def confirm(message: String, fn: Callback): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(message.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  inline def confirm(message: String, opts: Options): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(message.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  inline def confirm(message: String, opts: Options, fn: Callback): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(message.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
   
-  inline def password(message: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("password")(message.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def password(message: String, fn: Callback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("password")(message.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def password(message: String, opts: Options): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("password")(message.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def password(message: String, opts: Options, fn: Callback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("password")(message.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def password(message: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("password")(message.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def password(message: String, fn: Callback): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("password")(message.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def password(message: String, opts: Options): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("password")(message.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def password(message: String, opts: Options, fn: Callback): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("password")(message.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  inline def prompt(message: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(message.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def prompt(message: String, fn: Callback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(message.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def prompt(message: String, opts: Options): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(message.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def prompt(message: String, opts: Options, fn: Callback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(message.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def prompt(message: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(message.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def prompt(message: String, fn: Callback): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(message.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def prompt(message: String, opts: Options): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(message.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def prompt(message: String, opts: Options, fn: Callback): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(message.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  type Callback = js.Function2[/* err */ Error, /* value */ String, Unit]
+  type Callback = js.Function2[/* err */ js.Error, /* value */ String, Unit]
   
   trait Options extends StObject {
     
     var default: js.UndefOr[String] = js.undefined
     
-    var input: js.UndefOr[ReadableStream] = js.undefined
+    var input: js.UndefOr[ReadableStream[Any]] = js.undefined
     
-    var output: js.UndefOr[WritableStream] = js.undefined
+    var output: js.UndefOr[WritableStream[Any]] = js.undefined
     
     var replace: js.UndefOr[String] = js.undefined
     
@@ -51,7 +50,7 @@ object mod {
     
     var trim: js.UndefOr[Boolean] = js.undefined
     
-    var validator: js.UndefOr[js.Any] = js.undefined
+    var validator: js.UndefOr[Any] = js.undefined
   }
   object Options {
     
@@ -66,11 +65,11 @@ object mod {
       
       inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      inline def setInput(value: ReadableStream): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: ReadableStream[Any]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
       inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
       
-      inline def setOutput(value: WritableStream): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: WritableStream[Any]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
       inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
       
@@ -90,7 +89,7 @@ object mod {
       
       inline def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
       
-      inline def setValidator(value: js.Any): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
+      inline def setValidator(value: Any): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
       
       inline def setValidatorUndefined: Self = StObject.set(x, "validator", js.undefined)
     }

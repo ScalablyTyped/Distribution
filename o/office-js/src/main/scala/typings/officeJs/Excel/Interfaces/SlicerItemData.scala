@@ -8,35 +8,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SlicerItemData extends StObject {
   
   /**
+    * Value is `true` if the slicer item has data.
     *
-    * True if the slicer item has data.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var hasData: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
-    * True if the slicer item is selected.
-    Setting this value will not clear other SlicerItems' selected state.
+    * Value is `true` if the slicer item is selected.
+    Setting this value will not clear the selected state of other slicer items.
     By default, if the slicer item is the only one selected, when it is deselected, all items will be selected.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var isSelected: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Represents the unique value representing the slicer item.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var key: js.UndefOr[String] = js.undefined
   
   /**
+    * Represents the title displayed in the Excel UI.
     *
-    * Represents the title displayed in the UI.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var name: js.UndefOr[String] = js.undefined

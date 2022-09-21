@@ -24,8 +24,8 @@ trait BubbleMixin[T]
   @JSName("r")
   var r_Original: IGetSet[Scale[Double], T] = js.native
   
-  def radiusValueAccessor(): Accessor[js.Any, Double] = js.native
-  def radiusValueAccessor(t: Accessor[js.Any, Double]): T = js.native
+  def radiusValueAccessor(): Accessor[Any, Double] = js.native
+  def radiusValueAccessor(t: Accessor[Any, Double]): T = js.native
   @JSName("radiusValueAccessor")
-  var radiusValueAccessor_Original: IGetSet[Accessor[js.Any, Double], T] = js.native
+  var radiusValueAccessor_Original: IGetSet[Accessor[Any, Double], T] = js.native
 }

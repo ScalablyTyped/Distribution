@@ -10,10 +10,10 @@ Middleware for logging request/responses in Express apps
 | ------------------ | :-------------: |
 | Full name          | express-requests-logger |
 | Keywords           | logs, requests, audit, express |
-| # releases         | 12 |
-| # dependents       | 1 |
-| # downloads        | 31848 |
-| # stars            | 1 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 11944.0 |
+| # stars            | 23.0 |
 
 ## Links
 - [Homepage](https://github.com/ugolas/express-request-logger#readme)

@@ -29,6 +29,6 @@ object SizesListResponse {
     
     inline def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
     
-    inline def setSizesVarargs(value: Size*): Self = StObject.set(x, "sizes", js.Array(value :_*))
+    inline def setSizesVarargs(value: Size*): Self = StObject.set(x, "sizes", js.Array(value*))
   }
 }

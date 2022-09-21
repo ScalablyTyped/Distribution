@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait BindingContext[T]
   extends StObject
-     with /* option */ StringDictionary[js.Any] {
+     with /* option */ StringDictionary[Any] {
   
   @JSName("$component")
-  var $component: js.UndefOr[js.Any] = js.native
+  var $component: js.UndefOr[Any] = js.native
   
   @JSName("$data")
   var $data: T = js.native
@@ -20,19 +20,19 @@ trait BindingContext[T]
   var $index: js.UndefOr[Observable_[Double]] = js.native
   
   @JSName("$parent")
-  var $parent: js.UndefOr[js.Any] = js.native
+  var $parent: js.UndefOr[Any] = js.native
   
   @JSName("$parentContext")
-  var $parentContext: js.UndefOr[BindingContext[js.Any]] = js.native
+  var $parentContext: js.UndefOr[BindingContext[Any]] = js.native
   
   @JSName("$parents")
-  var $parents: js.Array[js.Any] = js.native
+  var $parents: js.Array[Any] = js.native
   
   @JSName("$rawData")
   var $rawData: T | Observable_[T] = js.native
   
   @JSName("$root")
-  var $root: js.Any = js.native
+  var $root: Any = js.native
   
   def createChildContext[X](accessor: js.Function0[T | Observable_[T]]): BindingContext[X] = js.native
   def createChildContext[X](accessor: js.Function0[T | Observable_[T]], dataItemAlias: String): BindingContext[X] = js.native
@@ -61,5 +61,5 @@ trait BindingContext[T]
   def extend(properties: js.Function1[/* self */ BindingContext[T], js.Object]): BindingContext[T] = js.native
   def extend(properties: js.Object): BindingContext[T] = js.native
   
-  var ko: js.Any = js.native
+  var ko: Any = js.native
 }

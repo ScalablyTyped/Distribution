@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.ui.Switch")
 @js.native
-class Switch protected ()
+open class Switch protected ()
   extends StObject
      with typings.kendoUi.kendo.ui.Switch {
   def this(element: Element) = this()

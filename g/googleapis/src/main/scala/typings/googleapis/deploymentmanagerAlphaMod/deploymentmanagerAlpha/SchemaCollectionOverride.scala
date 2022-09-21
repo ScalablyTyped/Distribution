@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * CollectionOverride allows resource handling overrides for specific
-  * resources within a BaseType
-  */
 trait SchemaCollectionOverride extends StObject {
   
   /**
     * The collection that identifies this resource within its service.
     */
-  var collection: js.UndefOr[String] = js.undefined
+  var collection: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Custom verb method mappings to support unordered list API mappings.
@@ -35,6 +31,8 @@ object SchemaCollectionOverride {
   extension [Self <: SchemaCollectionOverride](x: Self) {
     
     inline def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+    
+    inline def setCollectionNull: Self = StObject.set(x, "collection", null)
     
     inline def setCollectionUndefined: Self = StObject.set(x, "collection", js.undefined)
     

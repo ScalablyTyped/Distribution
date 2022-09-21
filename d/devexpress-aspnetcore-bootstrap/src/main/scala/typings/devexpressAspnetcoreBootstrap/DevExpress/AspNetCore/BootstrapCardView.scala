@@ -46,7 +46,7 @@ trait BootstrapCardView
   
   def deleteCard(visibleIndex: Double): Unit = js.native
   
-  def deleteCardByKey(key: js.Any): Unit = js.native
+  def deleteCardByKey(key: Any): Unit = js.native
   
   def focus(): Unit = js.native
   
@@ -90,7 +90,7 @@ trait BootstrapCardView
   
   def getSelectedCardCount(): Double = js.native
   
-  def getSelectedKeysOnPage(): js.Array[js.Any] = js.native
+  def getSelectedKeysOnPage(): js.Array[Any] = js.native
   
   def getTopVisibleIndex(): Double = js.native
   
@@ -610,8 +610,8 @@ trait BootstrapCardView
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[CardViewSelectionEventArgs], Unit]
   ): this.type = js.native
   
-  def performCallback(data: js.Any): js.Promise[Unit] = js.native
-  def performCallback(data: js.Any, onSuccess: js.Function0[Unit]): Unit = js.native
+  def performCallback(data: Any): js.Promise[Unit] = js.native
+  def performCallback(data: Any, onSuccess: js.Function0[Unit]): Unit = js.native
   
   def prevPage(): Unit = js.native
   
@@ -625,12 +625,12 @@ trait BootstrapCardView
   // tslint:disable-line:unified-signatures
   def selectCards(): Unit = js.native
   
-  def selectCardsByKey(key: js.Any): Unit = js.native
+  def selectCardsByKey(key: Any): Unit = js.native
   // tslint:disable-line:unified-signatures
-  def selectCardsByKey(key: js.Any, selected: Boolean): Unit = js.native
-  def selectCardsByKey(keys: js.Array[js.Any]): Unit = js.native
+  def selectCardsByKey(key: Any, selected: Boolean): Unit = js.native
+  def selectCardsByKey(keys: js.Array[Any]): Unit = js.native
   // tslint:disable-line:unified-signatures
-  def selectCardsByKey(keys: js.Array[js.Any], selected: Boolean): Unit = js.native
+  def selectCardsByKey(keys: js.Array[Any], selected: Boolean): Unit = js.native
   
   // tslint:disable-line:unified-signatures
   def setEditValue(columnFieldNameOrId: String, value: String): Unit = js.native
@@ -679,7 +679,7 @@ trait BootstrapCardView
   // tslint:disable-line:unified-signatures unified-signatures unified-signatures
   def startEditCard(visibleIndex: Double): Unit = js.native
   
-  def startEditCardByKey(key: js.Any): Unit = js.native
+  def startEditCardByKey(key: Any): Unit = js.native
   
   def unselectAllCardsOnPage(): Unit = js.native
   
@@ -687,8 +687,8 @@ trait BootstrapCardView
   
   def unselectCards(): Unit = js.native
   
-  def unselectCardsByKey(key: js.Any): Unit = js.native
-  def unselectCardsByKey(keys: js.Array[js.Any]): Unit = js.native
+  def unselectCardsByKey(key: Any): Unit = js.native
+  def unselectCardsByKey(keys: js.Array[Any]): Unit = js.native
   
   // tslint:disable-line:unified-signatures
   def unselectFilteredCards(): Unit = js.native

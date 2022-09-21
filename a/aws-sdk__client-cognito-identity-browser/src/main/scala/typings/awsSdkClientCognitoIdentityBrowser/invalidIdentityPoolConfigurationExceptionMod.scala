@@ -8,5 +8,5 @@ object invalidIdentityPoolConfigurationExceptionMod {
   
   @JSImport("@aws-sdk/client-cognito-identity-browser/model/InvalidIdentityPoolConfigurationException", "InvalidIdentityPoolConfigurationException")
   @js.native
-  val InvalidIdentityPoolConfigurationException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val InvalidIdentityPoolConfigurationException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

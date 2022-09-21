@@ -6,43 +6,51 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait Grant extends StObject {
+  trait Admin extends StObject {
     
-    var grant: js.UndefOr[typings.keycloakConnect.mod.Grant] = js.undefined
+    var admin: js.UndefOr[String] = js.undefined
+    
+    var logout: js.UndefOr[String] = js.undefined
   }
-  object Grant {
+  object Admin {
     
-    inline def apply(): Grant = {
+    inline def apply(): Admin = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Grant]
+      __obj.asInstanceOf[Admin]
     }
     
-    extension [Self <: Grant](x: Self) {
+    extension [Self <: Admin](x: Self) {
       
-      inline def setGrant(value: typings.keycloakConnect.mod.Grant): Self = StObject.set(x, "grant", value.asInstanceOf[js.Any])
+      inline def setAdmin(value: String): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
       
-      inline def setGrantUndefined: Self = StObject.set(x, "grant", js.undefined)
+      inline def setAdminUndefined: Self = StObject.set(x, "admin", js.undefined)
+      
+      inline def setLogout(value: String): Self = StObject.set(x, "logout", value.asInstanceOf[js.Any])
+      
+      inline def setLogoutUndefined: Self = StObject.set(x, "logout", js.undefined)
     }
   }
   
-  trait Roles extends StObject {
+  trait Id extends StObject {
     
-    var roles: js.UndefOr[js.Array[String]] = js.undefined
+    var id: String
+    
+    var scopes: js.Array[String]
   }
-  object Roles {
+  object Id {
     
-    inline def apply(): Roles = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Roles]
+    inline def apply(id: String, scopes: js.Array[String]): Id = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], scopes = scopes.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Roles](x: Self) {
+    extension [Self <: Id](x: Self) {
       
-      inline def setRoles(value: js.Array[String]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      inline def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
+      inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
       
-      inline def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value :_*))
+      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value*))
     }
   }
 }

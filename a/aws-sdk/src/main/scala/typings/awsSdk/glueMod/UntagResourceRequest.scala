@@ -29,6 +29,6 @@ object UntagResourceRequest {
     
     inline def setTagsToRemove(value: TagKeysList): Self = StObject.set(x, "TagsToRemove", value.asInstanceOf[js.Any])
     
-    inline def setTagsToRemoveVarargs(value: TagKey*): Self = StObject.set(x, "TagsToRemove", js.Array(value :_*))
+    inline def setTagsToRemoveVarargs(value: TagKey*): Self = StObject.set(x, "TagsToRemove", js.Array(value*))
   }
 }

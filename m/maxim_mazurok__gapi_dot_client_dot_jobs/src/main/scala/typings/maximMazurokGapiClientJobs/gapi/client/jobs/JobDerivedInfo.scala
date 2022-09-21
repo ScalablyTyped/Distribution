@@ -25,12 +25,12 @@ object JobDerivedInfo {
     
     inline def setJobCategoriesUndefined: Self = StObject.set(x, "jobCategories", js.undefined)
     
-    inline def setJobCategoriesVarargs(value: String*): Self = StObject.set(x, "jobCategories", js.Array(value :_*))
+    inline def setJobCategoriesVarargs(value: String*): Self = StObject.set(x, "jobCategories", js.Array(value*))
     
     inline def setLocations(value: js.Array[Location]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
     inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
     
-    inline def setLocationsVarargs(value: Location*): Self = StObject.set(x, "locations", js.Array(value :_*))
+    inline def setLocationsVarargs(value: Location*): Self = StObject.set(x, "locations", js.Array(value*))
   }
 }

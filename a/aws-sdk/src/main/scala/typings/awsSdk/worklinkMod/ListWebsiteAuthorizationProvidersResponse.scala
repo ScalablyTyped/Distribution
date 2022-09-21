@@ -33,6 +33,6 @@ object ListWebsiteAuthorizationProvidersResponse {
     
     inline def setWebsiteAuthorizationProvidersUndefined: Self = StObject.set(x, "WebsiteAuthorizationProviders", js.undefined)
     
-    inline def setWebsiteAuthorizationProvidersVarargs(value: WebsiteAuthorizationProviderSummary*): Self = StObject.set(x, "WebsiteAuthorizationProviders", js.Array(value :_*))
+    inline def setWebsiteAuthorizationProvidersVarargs(value: WebsiteAuthorizationProviderSummary*): Self = StObject.set(x, "WebsiteAuthorizationProviders", js.Array(value*))
   }
 }

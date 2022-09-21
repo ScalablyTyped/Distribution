@@ -14,8 +14,8 @@ object mod {
   /** A performant and comprehensive React sticky component. */
   @JSImport("react-stickynode", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[Props, js.Object, js.Any]
+  open class ^ ()
+    extends Component[Props, js.Object, Any]
   @JSImport("react-stickynode", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
@@ -108,6 +108,12 @@ object mod {
     var enabled: js.UndefOr[Boolean] = js.undefined
     
     /**
+      * Class name to be applied to the inner element when the sticky
+      * state is active ('' by default).
+      */
+    var innerActiveClass: js.UndefOr[String] = js.undefined
+    
+    /**
       * Class name to be applied to the inner element ('' by default).
       */
     var innerClass: js.UndefOr[String] = js.undefined
@@ -173,6 +179,10 @@ object mod {
       
       inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
+      inline def setInnerActiveClass(value: String): Self = StObject.set(x, "innerActiveClass", value.asInstanceOf[js.Any])
+      
+      inline def setInnerActiveClassUndefined: Self = StObject.set(x, "innerActiveClass", js.undefined)
+      
       inline def setInnerClass(value: String): Self = StObject.set(x, "innerClass", value.asInstanceOf[js.Any])
       
       inline def setInnerClassUndefined: Self = StObject.set(x, "innerClass", js.undefined)
@@ -217,5 +227,5 @@ object mod {
   }
   
   /** A performant and comprehensive React sticky component. */
-  type Sticky = Component[Props, js.Object, js.Any]
+  type Sticky = Component[Props, js.Object, Any]
 }

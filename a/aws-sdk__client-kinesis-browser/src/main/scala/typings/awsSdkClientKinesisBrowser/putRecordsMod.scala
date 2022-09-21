@@ -8,5 +8,5 @@ object putRecordsMod {
   
   @JSImport("@aws-sdk/client-kinesis-browser/model/PutRecords", "PutRecords")
   @js.native
-  val PutRecords: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val PutRecords: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

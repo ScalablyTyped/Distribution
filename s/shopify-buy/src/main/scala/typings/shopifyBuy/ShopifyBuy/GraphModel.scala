@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GraphModel extends StObject {
   
-  var attrs: js.UndefOr[js.Any] = js.undefined
+  var attrs: js.UndefOr[Any] = js.undefined
   
   var onlineStoreUrl: js.UndefOr[String] = js.undefined
 }
@@ -19,7 +19,7 @@ object GraphModel {
   
   extension [Self <: GraphModel](x: Self) {
     
-    inline def setAttrs(value: js.Any): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+    inline def setAttrs(value: Any): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     
     inline def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
     

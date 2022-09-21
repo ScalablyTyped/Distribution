@@ -33,6 +33,6 @@ object ListThingRegistrationTasksResponse {
     
     inline def setTaskIdsUndefined: Self = StObject.set(x, "taskIds", js.undefined)
     
-    inline def setTaskIdsVarargs(value: TaskId*): Self = StObject.set(x, "taskIds", js.Array(value :_*))
+    inline def setTaskIdsVarargs(value: TaskId*): Self = StObject.set(x, "taskIds", js.Array(value*))
   }
 }

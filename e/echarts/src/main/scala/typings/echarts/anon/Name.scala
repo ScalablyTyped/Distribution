@@ -17,7 +17,7 @@ trait Name extends StObject {
     *
     * @see https://echarts.apache.org/en/option.html#series-scatter.markArea.data.1.coord
     */
-  var coord: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var coord: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * Style of the item.
@@ -124,11 +124,11 @@ object Name {
   
   extension [Self <: Name](x: Self) {
     
-    inline def setCoord(value: js.Array[js.Any]): Self = StObject.set(x, "coord", value.asInstanceOf[js.Any])
+    inline def setCoord(value: js.Array[Any]): Self = StObject.set(x, "coord", value.asInstanceOf[js.Any])
     
     inline def setCoordUndefined: Self = StObject.set(x, "coord", js.undefined)
     
-    inline def setCoordVarargs(value: js.Any*): Self = StObject.set(x, "coord", js.Array(value :_*))
+    inline def setCoordVarargs(value: Any*): Self = StObject.set(x, "coord", js.Array(value*))
     
     inline def setItemStyle(value: Emphasis): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
     

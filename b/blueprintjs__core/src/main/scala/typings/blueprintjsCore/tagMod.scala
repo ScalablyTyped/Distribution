@@ -5,8 +5,9 @@ import typings.blueprintjsCore.propsMod.IElementRefProps
 import typings.blueprintjsCore.propsMod.IIntentProps
 import typings.blueprintjsCore.propsMod.IProps
 import typings.blueprintjsCore.propsMod.MaybeElement
-import typings.blueprintjsIcons.iconNameMod.IconName
+import typings.blueprintjsIcons.blueprintIcons16Mod.BlueprintIcons16Id
 import typings.react.mod.AriaAttributes
+import typings.react.mod.AriaRole
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.DOMAttributes
@@ -36,12 +37,12 @@ object tagMod {
   
   @JSImport("@blueprintjs/core/lib/esm/components/tag/tag", "Tag")
   @js.native
-  class Tag protected ()
-    extends AbstractPureComponent2[ITagProps, js.Object, js.Object] {
-    def this(props: ITagProps) = this()
-    def this(props: ITagProps, context: js.Any) = this()
+  open class Tag protected ()
+    extends AbstractPureComponent2[TagProps, js.Object, js.Object] {
+    def this(props: TagProps) = this()
+    def this(props: TagProps, context: Any) = this()
     
-    /* private */ var onRemoveClick: js.Any = js.native
+    /* private */ var onRemoveClick: Any = js.native
   }
   /* static members */
   object Tag {
@@ -73,6 +74,7 @@ object tagMod {
     
     /**
       * Whether the tag should appear in an active state.
+      *
       * @default false
       */
     var active: js.UndefOr[Boolean] = js.undefined
@@ -103,6 +105,7 @@ object tagMod {
     
     /**
       * Whether the tag should take up the full width of its container.
+      *
       * @default false
       */
     var fill: js.UndefOr[Boolean] = js.undefined
@@ -115,11 +118,11 @@ object tagMod {
     var htmlTitle: js.UndefOr[String] = js.undefined
     
     /** Name of a Blueprint UI icon (or an icon element) to render before the children. */
-    var icon: js.UndefOr[IconName | MaybeElement] = js.undefined
+    var icon: js.UndefOr[BlueprintIcons16Id | MaybeElement] = js.undefined
     
     var id: js.UndefOr[String] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.undefined
+    var inlist: js.UndefOr[Any] = js.undefined
     
     // Living Standard
     /**
@@ -158,12 +161,14 @@ object tagMod {
     
     /**
       * Whether this tag should use large styles.
+      *
       * @default false
       */
     var large: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether this tag should use minimal styles.
+      *
       * @default false
       */
     var minimal: js.UndefOr[Boolean] = js.undefined
@@ -173,6 +178,7 @@ object tagMod {
       * If false, a single line of text will be truncated with an ellipsis if
       * it overflows. Note that icons will be vertically centered relative to
       * multiline text.
+      *
       * @default false
       */
     var multiline: js.UndefOr[Boolean] = js.undefined
@@ -191,7 +197,7 @@ object tagMod {
     var onRemove: js.UndefOr[
         js.Function2[
           /* e */ MouseEvent[HTMLButtonElement, NativeMouseEvent], 
-          /* tagProps */ this.type, 
+          /* tagProps */ TagProps, 
           Unit
         ]
       ] = js.undefined
@@ -210,14 +216,15 @@ object tagMod {
     var results: js.UndefOr[Double] = js.undefined
     
     /** Name of a Blueprint UI icon (or an icon element) to render after the children. */
-    var rightIcon: js.UndefOr[IconName | MaybeElement] = js.undefined
+    var rightIcon: js.UndefOr[BlueprintIcons16Id | MaybeElement] = js.undefined
     
     // <command>, <menuitem>
     // WAI-ARIA
-    var role: js.UndefOr[String] = js.undefined
+    var role: js.UndefOr[AriaRole] = js.undefined
     
     /**
       * Whether this tag should have rounded ends.
+      *
       * @default false
       */
     var round: js.UndefOr[Boolean] = js.undefined
@@ -303,7 +310,7 @@ object tagMod {
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value*))
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -325,7 +332,7 @@ object tagMod {
       
       inline def setHtmlTitleUndefined: Self = StObject.set(x, "htmlTitle", js.undefined)
       
-      inline def setIcon(value: IconName | MaybeElement): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: BlueprintIcons16Id | MaybeElement): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
       inline def setIconNull: Self = StObject.set(x, "icon", null)
       
@@ -335,7 +342,7 @@ object tagMod {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setInlist(value: js.Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
+      inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
       
@@ -391,7 +398,7 @@ object tagMod {
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      inline def setOnRemove(value: (/* e */ MouseEvent[HTMLButtonElement, NativeMouseEvent], ITagProps) => Unit): Self = StObject.set(x, "onRemove", js.Any.fromFunction2(value))
+      inline def setOnRemove(value: (/* e */ MouseEvent[HTMLButtonElement, NativeMouseEvent], /* tagProps */ TagProps) => Unit): Self = StObject.set(x, "onRemove", js.Any.fromFunction2(value))
       
       inline def setOnRemoveUndefined: Self = StObject.set(x, "onRemove", js.undefined)
       
@@ -419,13 +426,13 @@ object tagMod {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
-      inline def setRightIcon(value: IconName | MaybeElement): Self = StObject.set(x, "rightIcon", value.asInstanceOf[js.Any])
+      inline def setRightIcon(value: BlueprintIcons16Id | MaybeElement): Self = StObject.set(x, "rightIcon", value.asInstanceOf[js.Any])
       
       inline def setRightIconNull: Self = StObject.set(x, "rightIcon", null)
       
       inline def setRightIconUndefined: Self = StObject.set(x, "rightIcon", js.undefined)
       
-      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
@@ -482,4 +489,6 @@ object tagMod {
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
     }
   }
+  
+  type TagProps = ITagProps
 }

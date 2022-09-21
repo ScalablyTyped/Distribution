@@ -13,10 +13,9 @@ trait SchemaReservationsScopedList extends StObject {
   var reservations: js.UndefOr[js.Array[SchemaReservation]] = js.undefined
   
   /**
-    * Informational warning which replaces the list of reservations when the
-    * list is empty.
+    * Informational warning which replaces the list of reservations when the list is empty.
     */
-  var warning: js.UndefOr[Code] = js.undefined
+  var warning: js.UndefOr[Code | Null] = js.undefined
 }
 object SchemaReservationsScopedList {
   
@@ -31,9 +30,11 @@ object SchemaReservationsScopedList {
     
     inline def setReservationsUndefined: Self = StObject.set(x, "reservations", js.undefined)
     
-    inline def setReservationsVarargs(value: SchemaReservation*): Self = StObject.set(x, "reservations", js.Array(value :_*))
+    inline def setReservationsVarargs(value: SchemaReservation*): Self = StObject.set(x, "reservations", js.Array(value*))
     
     inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    
+    inline def setWarningNull: Self = StObject.set(x, "warning", null)
     
     inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }

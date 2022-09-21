@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Filter extends StObject {
   
-  def isFiltered(value: js.Any): Boolean
+  def isFiltered(value: Any): Boolean
 }
 object Filter {
   
-  inline def apply(isFiltered: js.Any => Boolean): Filter = {
+  inline def apply(isFiltered: Any => Boolean): Filter = {
     val __obj = js.Dynamic.literal(isFiltered = js.Any.fromFunction1(isFiltered))
     __obj.asInstanceOf[Filter]
   }
   
   extension [Self <: Filter](x: Self) {
     
-    inline def setIsFiltered(value: js.Any => Boolean): Self = StObject.set(x, "isFiltered", js.Any.fromFunction1(value))
+    inline def setIsFiltered(value: Any => Boolean): Self = StObject.set(x, "isFiltered", js.Any.fromFunction1(value))
   }
 }

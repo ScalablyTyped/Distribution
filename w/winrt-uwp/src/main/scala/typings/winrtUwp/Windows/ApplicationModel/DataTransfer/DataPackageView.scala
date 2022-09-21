@@ -41,7 +41,7 @@ trait DataPackageView extends StObject {
     * @param formatId Specifies the format of the data. We recommend that you set this value by using the StandardDataFormats class.
     * @return The data.
     */
-  def getDataAsync(formatId: String): IPromiseWithIAsyncOperation[js.Any] = js.native
+  def getDataAsync(formatId: String): IPromiseWithIAsyncOperation[Any] = js.native
   
   /**
     * Gets the HTML stored in the DataPackageView object.
@@ -53,7 +53,7 @@ trait DataPackageView extends StObject {
     * Gets the data (such as an image) referenced in HTML content.
     * @return The data referenced in the HTML content.
     */
-  def getResourceMapAsync(): IPromiseWithIAsyncOperation[IMapView[js.Any, js.Any]] = js.native
+  def getResourceMapAsync(): IPromiseWithIAsyncOperation[IMapView[Any, Any]] = js.native
   
   /**
     * Gets the rich text formatted (RTF) content contained in a DataPackageView .
@@ -65,7 +65,7 @@ trait DataPackageView extends StObject {
     * Gets the files and folders stored in a DataPackageView object.
     * @return An array of files and folders stored in a DataPackageView .
     */
-  def getStorageItemsAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
+  def getStorageItemsAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
   
   /**
     * Gets the text in the DataPackageView object.

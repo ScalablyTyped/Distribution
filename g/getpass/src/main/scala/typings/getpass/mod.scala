@@ -1,6 +1,5 @@
 package typings.getpass
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ object mod {
   inline def getPass(cb: Callback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getPass")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def getPass(options: Options, cb: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getPass")(options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  type Callback = js.Function2[/* error */ Error | Null, /* password */ String, Unit]
+  type Callback = js.Function2[/* error */ js.Error | Null, /* password */ String, Unit]
   
   trait Options extends StObject {
     

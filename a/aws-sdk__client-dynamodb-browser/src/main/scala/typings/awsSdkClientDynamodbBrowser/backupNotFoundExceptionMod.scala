@@ -8,5 +8,5 @@ object backupNotFoundExceptionMod {
   
   @JSImport("@aws-sdk/client-dynamodb-browser/model/BackupNotFoundException", "BackupNotFoundException")
   @js.native
-  val BackupNotFoundException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val BackupNotFoundException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -10,10 +10,10 @@ object flipMod {
   
   @JSImport("material-ui/svg-icons/image/flip", JSImport.Default)
   @js.native
-  class default () extends ImageFlip
+  open class default () extends ImageFlip
   
   @JSImport("material-ui/svg-icons/image/flip", "ImageFlip")
   @js.native
-  class ImageFlip ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ImageFlip ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

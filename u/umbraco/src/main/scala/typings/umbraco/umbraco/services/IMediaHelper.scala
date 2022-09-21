@@ -134,7 +134,7 @@ trait IMediaHelper extends StObject {
     * @param {number} width Current width
     * @param {number} height Current height
     */
-  def scaleToMaxSize(maxSize: Double, width: Double, height: Double): js.Any
+  def scaleToMaxSize(maxSize: Double, width: Double, height: Double): Any
 }
 object IMediaHelper {
   
@@ -147,7 +147,7 @@ object IMediaHelper {
     getThumbnailFromPath: String => String,
     resolveFile: (IMediaEntity, Boolean) => String,
     resolveFileFromEntity: (IMediaEntity, Boolean) => String,
-    scaleToMaxSize: (Double, Double, Double) => js.Any
+    scaleToMaxSize: (Double, Double, Double) => Any
   ): IMediaHelper = {
     val __obj = js.Dynamic.literal(detectIfImageByExtension = js.Any.fromFunction1(detectIfImageByExtension), formatFileTypes = js.Any.fromFunction1(formatFileTypes), getImagePropertyValue = js.Any.fromFunction1(getImagePropertyValue), getMediaPropertyValue = js.Any.fromFunction1(getMediaPropertyValue), getThumbnail = js.Any.fromFunction1(getThumbnail), getThumbnailFromPath = js.Any.fromFunction1(getThumbnailFromPath), resolveFile = js.Any.fromFunction2(resolveFile), resolveFileFromEntity = js.Any.fromFunction2(resolveFileFromEntity), scaleToMaxSize = js.Any.fromFunction3(scaleToMaxSize))
     __obj.asInstanceOf[IMediaHelper]
@@ -171,6 +171,6 @@ object IMediaHelper {
     
     inline def setResolveFileFromEntity(value: (IMediaEntity, Boolean) => String): Self = StObject.set(x, "resolveFileFromEntity", js.Any.fromFunction2(value))
     
-    inline def setScaleToMaxSize(value: (Double, Double, Double) => js.Any): Self = StObject.set(x, "scaleToMaxSize", js.Any.fromFunction3(value))
+    inline def setScaleToMaxSize(value: (Double, Double, Double) => Any): Self = StObject.set(x, "scaleToMaxSize", js.Any.fromFunction3(value))
   }
 }

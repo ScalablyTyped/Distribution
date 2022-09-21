@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "pkg-up" : "3.1.0"
+      "pkg-up" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "pkg-up" : "3.1.0"
+      "pkg-up" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

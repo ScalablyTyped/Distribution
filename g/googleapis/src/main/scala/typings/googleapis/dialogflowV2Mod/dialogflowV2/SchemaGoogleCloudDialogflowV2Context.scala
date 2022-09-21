@@ -5,35 +5,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Represents a context.
-  */
 trait SchemaGoogleCloudDialogflowV2Context extends StObject {
   
   /**
-    * Optional. The number of conversational query requests after which the
-    * context expires. If set to `0` (the default) the context expires
-    * immediately. Contexts expire automatically after 20 minutes if there are
-    * no matching queries.
+    * Optional. The number of conversational query requests after which the context expires. The default is `0`. If set to `0`, the context expires immediately. Contexts expire automatically after 20 minutes if there are no matching queries.
     */
-  var lifespanCount: js.UndefOr[Double] = js.undefined
+  var lifespanCount: js.UndefOr[Double | Null] = js.undefined
   
   /**
-    * Required. The unique identifier of the context. Format:
-    * `projects/&lt;Project ID&gt;/agent/sessions/&lt;Session
-    * ID&gt;/contexts/&lt;Context ID&gt;`.  The `Context ID` is always
-    * converted to lowercase, may only contain characters in [a-zA-Z0-9_-%] and
-    * may be at most 250 bytes long.
+    * Required. The unique identifier of the context. Format: `projects//agent/sessions//contexts/`, or `projects//agent/environments//users//sessions//contexts/`. The `Context ID` is always converted to lowercase, may only contain characters in a-zA-Z0-9_-% and may be at most 250 bytes long. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user. The following context names are reserved for internal use by Dialogflow. You should not use these contexts or create contexts with these names: * `__system_counters__` * `*_id_dialog_context` * `*_dialog_params_size`
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Optional. The collection of parameters associated with this context.
-    * Refer to [this
-    * doc](https://cloud.google.com/dialogflow-enterprise/docs/intents-actions-parameters)
-    * for syntax.
+    * Optional. The collection of parameters associated with this context. Depending on your protocol or client library language, this is a map, associative array, symbol table, dictionary, or JSON object composed of a collection of (MapKey, MapValue) pairs: - MapKey type: string - MapKey value: parameter name - MapValue type: - If parameter's entity type is a composite entity: map - Else: depending on parameter value type, could be one of string, number, boolean, null, list or map - MapValue value: - If parameter's entity type is a composite entity: map from composite entity property names to property values - Else: parameter value
     */
-  var parameters: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var parameters: js.UndefOr[StringDictionary[Any] | Null] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2Context {
   
@@ -46,13 +33,19 @@ object SchemaGoogleCloudDialogflowV2Context {
     
     inline def setLifespanCount(value: Double): Self = StObject.set(x, "lifespanCount", value.asInstanceOf[js.Any])
     
+    inline def setLifespanCountNull: Self = StObject.set(x, "lifespanCount", null)
+    
     inline def setLifespanCountUndefined: Self = StObject.set(x, "lifespanCount", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setParameters(value: StringDictionary[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: StringDictionary[Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    
+    inline def setParametersNull: Self = StObject.set(x, "parameters", null)
     
     inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
   }

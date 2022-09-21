@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("openlayers", "Kinetic")
 @js.native
-class Kinetic protected () extends StObject {
+open class Kinetic protected () extends StObject {
   /**
     * @classdesc
     * Implementation of inertial deceleration for map movement.

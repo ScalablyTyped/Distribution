@@ -4,15 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * l-diversity metric, used for analysis of reidentification risk.
-  */
 trait SchemaGooglePrivacyDlpV2LDiversityConfig extends StObject {
   
   /**
-    * Set of quasi-identifiers indicating how equivalence classes are defined
-    * for the l-diversity computation. When multiple fields are specified, they
-    * are considered a single composite key.
+    * Set of quasi-identifiers indicating how equivalence classes are defined for the l-diversity computation. When multiple fields are specified, they are considered a single composite key.
     */
   var quasiIds: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2FieldId]] = js.undefined
   
@@ -34,7 +29,7 @@ object SchemaGooglePrivacyDlpV2LDiversityConfig {
     
     inline def setQuasiIdsUndefined: Self = StObject.set(x, "quasiIds", js.undefined)
     
-    inline def setQuasiIdsVarargs(value: SchemaGooglePrivacyDlpV2FieldId*): Self = StObject.set(x, "quasiIds", js.Array(value :_*))
+    inline def setQuasiIdsVarargs(value: SchemaGooglePrivacyDlpV2FieldId*): Self = StObject.set(x, "quasiIds", js.Array(value*))
     
     inline def setSensitiveAttribute(value: SchemaGooglePrivacyDlpV2FieldId): Self = StObject.set(x, "sensitiveAttribute", value.asInstanceOf[js.Any])
     

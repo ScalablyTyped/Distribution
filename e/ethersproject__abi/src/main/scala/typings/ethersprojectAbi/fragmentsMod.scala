@@ -9,8 +9,8 @@ object fragmentsMod {
   
   @JSImport("@ethersproject/abi/lib/fragments", "ConstructorFragment")
   @js.native
-  class ConstructorFragment protected () extends Fragment {
-    def this(constructorGuard: js.Any, params: js.Any) = this()
+  open class ConstructorFragment protected () extends Fragment {
+    def this(constructorGuard: Any, params: Any) = this()
     
     var gas: js.UndefOr[BigNumber] = js.native
     
@@ -34,13 +34,37 @@ object fragmentsMod {
     
     inline def fromString(value: String): ConstructorFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[ConstructorFragment]
     
-    inline def isConstructorFragment(value: js.Any): /* is @ethersproject/abi.@ethersproject/abi/lib/fragments.ConstructorFragment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isConstructorFragment")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abi.@ethersproject/abi/lib/fragments.ConstructorFragment */ Boolean]
+    inline def isConstructorFragment(value: Any): /* is @ethersproject/abi.@ethersproject/abi/lib/fragments.ConstructorFragment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isConstructorFragment")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abi.@ethersproject/abi/lib/fragments.ConstructorFragment */ Boolean]
+  }
+  
+  @JSImport("@ethersproject/abi/lib/fragments", "ErrorFragment")
+  @js.native
+  open class ErrorFragment protected () extends Fragment {
+    def this(constructorGuard: Any, params: Any) = this()
+  }
+  /* static members */
+  object ErrorFragment {
+    
+    @JSImport("@ethersproject/abi/lib/fragments", "ErrorFragment")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def from(value: String): ErrorFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[ErrorFragment]
+    inline def from(value: ErrorFragment): ErrorFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[ErrorFragment]
+    inline def from(value: JsonFragment): ErrorFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[ErrorFragment]
+    
+    inline def fromObject(value: ErrorFragment): ErrorFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(value.asInstanceOf[js.Any]).asInstanceOf[ErrorFragment]
+    inline def fromObject(value: JsonFragment): ErrorFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(value.asInstanceOf[js.Any]).asInstanceOf[ErrorFragment]
+    
+    inline def fromString(value: String): ErrorFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[ErrorFragment]
+    
+    inline def isErrorFragment(value: Any): /* is @ethersproject/abi.@ethersproject/abi/lib/fragments.ErrorFragment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isErrorFragment")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abi.@ethersproject/abi/lib/fragments.ErrorFragment */ Boolean]
   }
   
   @JSImport("@ethersproject/abi/lib/fragments", "EventFragment")
   @js.native
-  class EventFragment protected () extends Fragment {
-    def this(constructorGuard: js.Any, params: js.Any) = this()
+  open class EventFragment protected () extends Fragment {
+    def this(constructorGuard: Any, params: Any) = this()
     
     val anonymous: Boolean = js.native
   }
@@ -60,13 +84,13 @@ object fragmentsMod {
     
     inline def fromString(value: String): EventFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[EventFragment]
     
-    inline def isEventFragment(value: js.Any): /* is @ethersproject/abi.@ethersproject/abi/lib/fragments.EventFragment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEventFragment")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abi.@ethersproject/abi/lib/fragments.EventFragment */ Boolean]
+    inline def isEventFragment(value: Any): /* is @ethersproject/abi.@ethersproject/abi/lib/fragments.EventFragment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEventFragment")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abi.@ethersproject/abi/lib/fragments.EventFragment */ Boolean]
   }
   
   @JSImport("@ethersproject/abi/lib/fragments", "Fragment")
   @js.native
   abstract class Fragment protected () extends StObject {
-    def this(constructorGuard: js.Any, params: js.Any) = this()
+    def this(constructorGuard: Any, params: Any) = this()
     
     val _isFragment: Boolean = js.native
     
@@ -95,13 +119,13 @@ object fragmentsMod {
     
     inline def fromString(value: String): Fragment = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[Fragment]
     
-    inline def isFragment(value: js.Any): /* is @ethersproject/abi.@ethersproject/abi/lib/fragments.Fragment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFragment")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abi.@ethersproject/abi/lib/fragments.Fragment */ Boolean]
+    inline def isFragment(value: Any): /* is @ethersproject/abi.@ethersproject/abi/lib/fragments.Fragment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFragment")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abi.@ethersproject/abi/lib/fragments.Fragment */ Boolean]
   }
   
   @JSImport("@ethersproject/abi/lib/fragments", "FunctionFragment")
   @js.native
-  class FunctionFragment protected () extends ConstructorFragment {
-    def this(constructorGuard: js.Any, params: js.Any) = this()
+  open class FunctionFragment protected () extends ConstructorFragment {
+    def this(constructorGuard: Any, params: Any) = this()
     
     var constant: Boolean = js.native
     
@@ -123,13 +147,13 @@ object fragmentsMod {
     
     inline def fromString(value: String): FunctionFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[FunctionFragment]
     
-    inline def isFunctionFragment(value: js.Any): /* is @ethersproject/abi.@ethersproject/abi/lib/fragments.FunctionFragment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunctionFragment")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abi.@ethersproject/abi/lib/fragments.FunctionFragment */ Boolean]
+    inline def isFunctionFragment(value: Any): /* is @ethersproject/abi.@ethersproject/abi/lib/fragments.FunctionFragment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunctionFragment")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abi.@ethersproject/abi/lib/fragments.FunctionFragment */ Boolean]
   }
   
   @JSImport("@ethersproject/abi/lib/fragments", "ParamType")
   @js.native
-  class ParamType protected () extends StObject {
-    def this(constructorGuard: js.Any, params: js.Any) = this()
+  open class ParamType protected () extends StObject {
+    def this(constructorGuard: Any, params: Any) = this()
     
     val _isParamType: Boolean = js.native
     
@@ -170,28 +194,28 @@ object fragmentsMod {
     inline def fromString(value: String): ParamType = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[ParamType]
     inline def fromString(value: String, allowIndexed: Boolean): ParamType = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any], allowIndexed.asInstanceOf[js.Any])).asInstanceOf[ParamType]
     
-    inline def isParamType(value: js.Any): /* is @ethersproject/abi.@ethersproject/abi/lib/fragments.ParamType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isParamType")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abi.@ethersproject/abi/lib/fragments.ParamType */ Boolean]
+    inline def isParamType(value: Any): /* is @ethersproject/abi.@ethersproject/abi/lib/fragments.ParamType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isParamType")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abi.@ethersproject/abi/lib/fragments.ParamType */ Boolean]
   }
   
   trait JsonFragment extends StObject {
     
-    var anonymous: js.UndefOr[Boolean] = js.undefined
+    val anonymous: js.UndefOr[Boolean] = js.undefined
     
-    var constant: js.UndefOr[Boolean] = js.undefined
+    val constant: js.UndefOr[Boolean] = js.undefined
     
-    var gas: js.UndefOr[String] = js.undefined
+    val gas: js.UndefOr[String] = js.undefined
     
-    var inputs: js.UndefOr[js.Array[JsonFragmentType]] = js.undefined
+    val inputs: js.UndefOr[js.Array[JsonFragmentType]] = js.undefined
     
-    var name: js.UndefOr[String] = js.undefined
+    val name: js.UndefOr[String] = js.undefined
     
-    var outputs: js.UndefOr[js.Array[JsonFragmentType]] = js.undefined
+    val outputs: js.UndefOr[js.Array[JsonFragmentType]] = js.undefined
     
-    var payable: js.UndefOr[Boolean] = js.undefined
+    val payable: js.UndefOr[Boolean] = js.undefined
     
-    var stateMutability: js.UndefOr[String] = js.undefined
+    val stateMutability: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.undefined
+    val `type`: js.UndefOr[String] = js.undefined
   }
   object JsonFragment {
     
@@ -218,7 +242,7 @@ object fragmentsMod {
       
       inline def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
       
-      inline def setInputsVarargs(value: JsonFragmentType*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+      inline def setInputsVarargs(value: JsonFragmentType*): Self = StObject.set(x, "inputs", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -228,7 +252,7 @@ object fragmentsMod {
       
       inline def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
       
-      inline def setOutputsVarargs(value: JsonFragmentType*): Self = StObject.set(x, "outputs", js.Array(value :_*))
+      inline def setOutputsVarargs(value: JsonFragmentType*): Self = StObject.set(x, "outputs", js.Array(value*))
       
       inline def setPayable(value: Boolean): Self = StObject.set(x, "payable", value.asInstanceOf[js.Any])
       
@@ -246,13 +270,15 @@ object fragmentsMod {
   
   trait JsonFragmentType extends StObject {
     
-    var components: js.UndefOr[js.Array[JsonFragmentType]] = js.undefined
+    val components: js.UndefOr[js.Array[JsonFragmentType]] = js.undefined
     
-    var indexed: js.UndefOr[Boolean] = js.undefined
+    val indexed: js.UndefOr[Boolean] = js.undefined
     
-    var name: js.UndefOr[String] = js.undefined
+    val internalType: js.UndefOr[Any] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.undefined
+    val name: js.UndefOr[String] = js.undefined
+    
+    val `type`: js.UndefOr[String] = js.undefined
   }
   object JsonFragmentType {
     
@@ -267,11 +293,15 @@ object fragmentsMod {
       
       inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
       
-      inline def setComponentsVarargs(value: JsonFragmentType*): Self = StObject.set(x, "components", js.Array(value :_*))
+      inline def setComponentsVarargs(value: JsonFragmentType*): Self = StObject.set(x, "components", js.Array(value*))
       
       inline def setIndexed(value: Boolean): Self = StObject.set(x, "indexed", value.asInstanceOf[js.Any])
       
       inline def setIndexedUndefined: Self = StObject.set(x, "indexed", js.undefined)
+      
+      inline def setInternalType(value: Any): Self = StObject.set(x, "internalType", value.asInstanceOf[js.Any])
+      
+      inline def setInternalTypeUndefined: Self = StObject.set(x, "internalType", js.undefined)
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

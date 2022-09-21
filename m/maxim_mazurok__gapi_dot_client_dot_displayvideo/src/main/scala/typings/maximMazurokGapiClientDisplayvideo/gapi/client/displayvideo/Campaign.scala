@@ -9,6 +9,9 @@ trait Campaign extends StObject {
   /** Output only. The unique ID of the advertiser the campaign belongs to. */
   var advertiserId: js.UndefOr[String] = js.undefined
   
+  /** The list of budgets available to this campaign. If this field is not set, the campaign uses an unlimited budget. */
+  var campaignBudgets: js.UndefOr[js.Array[CampaignBudget]] = js.undefined
+  
   /** Required. The planned spend and duration of the campaign. */
   var campaignFlight: js.UndefOr[CampaignFlight] = js.undefined
   
@@ -48,6 +51,12 @@ object Campaign {
     inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     
     inline def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
+    
+    inline def setCampaignBudgets(value: js.Array[CampaignBudget]): Self = StObject.set(x, "campaignBudgets", value.asInstanceOf[js.Any])
+    
+    inline def setCampaignBudgetsUndefined: Self = StObject.set(x, "campaignBudgets", js.undefined)
+    
+    inline def setCampaignBudgetsVarargs(value: CampaignBudget*): Self = StObject.set(x, "campaignBudgets", js.Array(value*))
     
     inline def setCampaignFlight(value: CampaignFlight): Self = StObject.set(x, "campaignFlight", value.asInstanceOf[js.Any])
     

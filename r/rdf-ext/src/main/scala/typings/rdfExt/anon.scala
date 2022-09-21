@@ -10,11 +10,11 @@ import typings.rdfExt.rdfExtStrings.subject
 import typings.rdfExt.rdfExtStrings.termType
 import typings.rdfExt.rdfExtStrings.toJSON
 import typings.rdfExt.rdfExtStrings.value
-import typings.rdfJs.mod.BlankNode
-import typings.rdfJs.mod.DefaultGraph
-import typings.rdfJs.mod.Literal
-import typings.rdfJs.mod.NamedNode
-import typings.rdfJs.mod.Variable
+import typings.rdfjsTypes.dataModelMod.BlankNode
+import typings.rdfjsTypes.dataModelMod.DefaultGraph
+import typings.rdfjsTypes.dataModelMod.Literal
+import typings.rdfjsTypes.dataModelMod.NamedNode
+import typings.rdfjsTypes.dataModelMod.Variable
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

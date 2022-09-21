@@ -1,7 +1,7 @@
 
 # Scala.js typings for bcp-47-match
 
-Typings are for version 1.0
+Typings are for version 2.0.2
 
 ## Library description:
 Match BCP 47 language tags with language ranges per RFC 4647
@@ -10,10 +10,10 @@ Match BCP 47 language tags with language ranges per RFC 4647
 | ------------------ | :-------------: |
 | Full name          | bcp-47-match |
 | Keywords           | bcp, 47, bcp47, bcp-47, language, tag, match, matching, check, rfc, 4647 |
-| # releases         | 4 |
-| # dependents       | 3 |
-| # downloads        | 118538 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 363254.6666666667 |
+| # stars            | 18.0 |
 
 ## Links
 - [Homepage](https://github.com/wooorm/bcp-47-match#readme)
@@ -24,7 +24,7 @@ Match BCP 47 language tags with language ranges per RFC 4647
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

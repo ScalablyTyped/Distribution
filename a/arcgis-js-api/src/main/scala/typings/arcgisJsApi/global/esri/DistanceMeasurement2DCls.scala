@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D.html)
   */
-class DistanceMeasurement2DCls ()
+open class DistanceMeasurement2DCls ()
   extends StObject
      with typings.arcgisJsApi.esri.DistanceMeasurement2D {
   def this(properties: DistanceMeasurement2DProperties) = this()

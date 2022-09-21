@@ -8,6 +8,8 @@ trait CellTextDisabled extends StObject {
   
   var cell: String
   
+  var cellResponsiveTitle: String
+  
   var cellText: String
   
   var cellTextDisabled: String
@@ -23,6 +25,8 @@ trait CellTextDisabled extends StObject {
   var itemDisabled: String
   
   var itemHover: String
+  
+  var itemSvgIconId: String
   
   var itemValue: String
   
@@ -40,6 +44,7 @@ object CellTextDisabled {
   
   inline def apply(
     cell: String,
+    cellResponsiveTitle: String,
     cellText: String,
     cellTextDisabled: String,
     cellTextSelected: String,
@@ -48,6 +53,7 @@ object CellTextDisabled {
     itemDecorator: String,
     itemDisabled: String,
     itemHover: String,
+    itemSvgIconId: String,
     itemValue: String,
     label: String,
     materialDecorator: String,
@@ -55,13 +61,15 @@ object CellTextDisabled {
     rowError: String,
     tableWrapper: String
   ): CellTextDisabled = {
-    val __obj = js.Dynamic.literal(cell = cell.asInstanceOf[js.Any], cellText = cellText.asInstanceOf[js.Any], cellTextDisabled = cellTextDisabled.asInstanceOf[js.Any], cellTextSelected = cellTextSelected.asInstanceOf[js.Any], headerCell = headerCell.asInstanceOf[js.Any], itemChecked = itemChecked.asInstanceOf[js.Any], itemDecorator = itemDecorator.asInstanceOf[js.Any], itemDisabled = itemDisabled.asInstanceOf[js.Any], itemHover = itemHover.asInstanceOf[js.Any], itemValue = itemValue.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], materialDecorator = materialDecorator.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], rowError = rowError.asInstanceOf[js.Any], tableWrapper = tableWrapper.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(cell = cell.asInstanceOf[js.Any], cellResponsiveTitle = cellResponsiveTitle.asInstanceOf[js.Any], cellText = cellText.asInstanceOf[js.Any], cellTextDisabled = cellTextDisabled.asInstanceOf[js.Any], cellTextSelected = cellTextSelected.asInstanceOf[js.Any], headerCell = headerCell.asInstanceOf[js.Any], itemChecked = itemChecked.asInstanceOf[js.Any], itemDecorator = itemDecorator.asInstanceOf[js.Any], itemDisabled = itemDisabled.asInstanceOf[js.Any], itemHover = itemHover.asInstanceOf[js.Any], itemSvgIconId = itemSvgIconId.asInstanceOf[js.Any], itemValue = itemValue.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], materialDecorator = materialDecorator.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], rowError = rowError.asInstanceOf[js.Any], tableWrapper = tableWrapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellTextDisabled]
   }
   
   extension [Self <: CellTextDisabled](x: Self) {
     
     inline def setCell(value: String): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+    
+    inline def setCellResponsiveTitle(value: String): Self = StObject.set(x, "cellResponsiveTitle", value.asInstanceOf[js.Any])
     
     inline def setCellText(value: String): Self = StObject.set(x, "cellText", value.asInstanceOf[js.Any])
     
@@ -78,6 +86,8 @@ object CellTextDisabled {
     inline def setItemDisabled(value: String): Self = StObject.set(x, "itemDisabled", value.asInstanceOf[js.Any])
     
     inline def setItemHover(value: String): Self = StObject.set(x, "itemHover", value.asInstanceOf[js.Any])
+    
+    inline def setItemSvgIconId(value: String): Self = StObject.set(x, "itemSvgIconId", value.asInstanceOf[js.Any])
     
     inline def setItemValue(value: String): Self = StObject.set(x, "itemValue", value.asInstanceOf[js.Any])
     

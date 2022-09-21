@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Pick<@tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/kernel_registry.NamedTensorInfoMap, 'params' | 'indices'> */
 trait GatherNdInputs extends StObject {
   
-  var indices: js.UndefOr[js.Any] = js.undefined
+  var indices: js.UndefOr[scala.Any] = js.undefined
   
-  var params: js.UndefOr[js.Any] = js.undefined
+  var params: js.UndefOr[scala.Any] = js.undefined
 }
 object GatherNdInputs {
   
@@ -20,11 +20,11 @@ object GatherNdInputs {
   
   extension [Self <: GatherNdInputs](x: Self) {
     
-    inline def setIndices(value: js.Any): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
+    inline def setIndices(value: scala.Any): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     
     inline def setIndicesUndefined: Self = StObject.set(x, "indices", js.undefined)
     
-    inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: scala.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
   }

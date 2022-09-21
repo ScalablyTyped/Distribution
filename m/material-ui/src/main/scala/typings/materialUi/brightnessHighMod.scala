@@ -10,10 +10,10 @@ object brightnessHighMod {
   
   @JSImport("material-ui/svg-icons/device/brightness-high", JSImport.Default)
   @js.native
-  class default () extends DeviceBrightnessHigh
+  open class default () extends DeviceBrightnessHigh
   
   @JSImport("material-ui/svg-icons/device/brightness-high", "DeviceBrightnessHigh")
   @js.native
-  class DeviceBrightnessHigh ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class DeviceBrightnessHigh ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

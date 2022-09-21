@@ -16,6 +16,7 @@ import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
+import typings.std.Element
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,7 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object Menus {
   
-  type DropDownMenu = Component[DropDownMenuProps, js.Object, js.Any]
+  type DropDownMenu = Component[DropDownMenuProps, js.Object, Any]
   
   trait DropDownMenuProps extends StObject {
     
@@ -33,6 +34,8 @@ object Menus {
     var animated: js.UndefOr[Boolean] = js.undefined
     
     var animation: js.UndefOr[ComponentClass[PopoverAnimationProps, ComponentState]] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -58,7 +61,7 @@ object Menus {
         js.Function3[
           /* e */ SyntheticEvent[js.Object, Event], 
           /* index */ Double, 
-          /* menuItemValue */ js.Any, 
+          /* menuItemValue */ Any, 
           Unit
         ]
       ] = js.undefined
@@ -69,7 +72,7 @@ object Menus {
     
     var selectedMenuItemStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var selectionRenderer: js.UndefOr[js.Function2[/* value */ js.Any, /* menuItem */ js.Any, Unit]] = js.undefined
+    var selectionRenderer: js.UndefOr[js.Function2[/* value */ Any, /* menuItem */ Any, Unit]] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
     
@@ -77,7 +80,7 @@ object Menus {
     
     var underlineStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var value: js.UndefOr[js.Any] = js.undefined
+    var value: js.UndefOr[Any] = js.undefined
   }
   object DropDownMenuProps {
     
@@ -99,6 +102,10 @@ object Menus {
       inline def setAnimation(value: ComponentClass[PopoverAnimationProps, ComponentState]): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
       inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -141,7 +148,7 @@ object Menus {
       inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
       
       inline def setOnChange(
-        value: (/* e */ SyntheticEvent[js.Object, Event], /* index */ Double, /* menuItemValue */ js.Any) => Unit
+        value: (/* e */ SyntheticEvent[js.Object, Event], /* index */ Double, /* menuItemValue */ Any) => Unit
       ): Self = StObject.set(x, "onChange", js.Any.fromFunction3(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
@@ -158,7 +165,7 @@ object Menus {
       
       inline def setSelectedMenuItemStyleUndefined: Self = StObject.set(x, "selectedMenuItemStyle", js.undefined)
       
-      inline def setSelectionRenderer(value: (/* value */ js.Any, /* menuItem */ js.Any) => Unit): Self = StObject.set(x, "selectionRenderer", js.Any.fromFunction2(value))
+      inline def setSelectionRenderer(value: (/* value */ Any, /* menuItem */ Any) => Unit): Self = StObject.set(x, "selectionRenderer", js.Any.fromFunction2(value))
       
       inline def setSelectionRendererUndefined: Self = StObject.set(x, "selectionRenderer", js.undefined)
       
@@ -174,13 +181,13 @@ object Menus {
       
       inline def setUnderlineStyleUndefined: Self = StObject.set(x, "underlineStyle", js.undefined)
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
-  type IconMenu = Component[IconMenuProps, js.Object, js.Any]
+  type IconMenu = Component[IconMenuProps, js.Object, Any]
   
   trait IconMenuProps extends StObject {
     
@@ -193,6 +200,8 @@ object Menus {
     
     // Other properties from <Menu/>
     var autoWidth: js.UndefOr[Boolean] = js.undefined
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -217,11 +226,7 @@ object Menus {
     var multiple: js.UndefOr[Boolean] = js.undefined
     
     var onChange: js.UndefOr[
-        js.Function2[
-          /* e */ SyntheticEvent[js.Object, Event], 
-          /* itemValue */ js.Any | js.Array[js.Any], 
-          Unit
-        ]
+        js.Function2[/* e */ SyntheticEvent[js.Object, Event], /* itemValue */ Any | js.Array[Any], Unit]
       ] = js.undefined
     
     var onClick: js.UndefOr[js.Function1[/* e */ SyntheticEvent[js.Object, Event], Unit]] = js.undefined
@@ -231,7 +236,7 @@ object Menus {
       ] = js.undefined
     
     var onKeyboardFocus: js.UndefOr[
-        js.Function2[/* e */ FocusEvent[js.Object], /* isKeyboardFocused */ Boolean, Unit]
+        js.Function2[/* e */ FocusEvent[js.Object, Element], /* isKeyboardFocused */ Boolean, Unit]
       ] = js.undefined
     
     var onMouseDown: js.UndefOr[MouseEventHandler[js.Object]] = js.undefined
@@ -252,7 +257,7 @@ object Menus {
     
     var useLayerForClickAway: js.UndefOr[Boolean] = js.undefined
     
-    var value: js.UndefOr[js.Any | js.Array[js.Any]] = js.undefined
+    var value: js.UndefOr[Any | js.Array[Any]] = js.undefined
   }
   object IconMenuProps {
     
@@ -278,6 +283,10 @@ object Menus {
       inline def setAutoWidth(value: Boolean): Self = StObject.set(x, "autoWidth", value.asInstanceOf[js.Any])
       
       inline def setAutoWidthUndefined: Self = StObject.set(x, "autoWidth", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -321,9 +330,7 @@ object Menus {
       
       inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
       
-      inline def setOnChange(
-        value: (/* e */ SyntheticEvent[js.Object, Event], /* itemValue */ js.Any | js.Array[js.Any]) => Unit
-      ): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      inline def setOnChange(value: (/* e */ SyntheticEvent[js.Object, Event], /* itemValue */ Any | js.Array[Any]) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -335,7 +342,7 @@ object Menus {
       
       inline def setOnItemClickUndefined: Self = StObject.set(x, "onItemClick", js.undefined)
       
-      inline def setOnKeyboardFocus(value: (/* e */ FocusEvent[js.Object], /* isKeyboardFocused */ Boolean) => Unit): Self = StObject.set(x, "onKeyboardFocus", js.Any.fromFunction2(value))
+      inline def setOnKeyboardFocus(value: (/* e */ FocusEvent[js.Object, Element], /* isKeyboardFocused */ Boolean) => Unit): Self = StObject.set(x, "onKeyboardFocus", js.Any.fromFunction2(value))
       
       inline def setOnKeyboardFocusUndefined: Self = StObject.set(x, "onKeyboardFocus", js.undefined)
       
@@ -375,17 +382,17 @@ object Menus {
       
       inline def setUseLayerForClickAwayUndefined: Self = StObject.set(x, "useLayerForClickAway", js.undefined)
       
-      inline def setValue(value: js.Any | js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any | js.Array[Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: Any*): Self = StObject.set(x, "value", js.Array(value*))
     }
   }
   
-  type Menu = Component[MenuProps, js.Object, js.Any]
+  type Menu = Component[MenuProps, js.Object, Any]
   
-  type MenuItem = Component[MenuItemProps, js.Object, js.Any]
+  type MenuItem = Component[MenuItemProps, js.Object, Any]
   
   trait MenuItemProps
     extends StObject
@@ -451,6 +458,8 @@ object Menus {
     // <List/> is the element that get the 'other' properties
     var autoWidth: js.UndefOr[Boolean] = js.undefined
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var desktop: js.UndefOr[Boolean] = js.undefined
     
     var disableAutoFocus: js.UndefOr[Boolean] = js.undefined
@@ -464,11 +473,7 @@ object Menus {
     var multiple: js.UndefOr[Boolean] = js.undefined
     
     var onChange: js.UndefOr[
-        js.Function2[
-          /* e */ SyntheticEvent[js.Object, Event], 
-          /* itemValue */ js.Any | js.Array[js.Any], 
-          Unit
-        ]
+        js.Function2[/* e */ SyntheticEvent[js.Object, Event], /* itemValue */ Any | js.Array[Any], Unit]
       ] = js.undefined
     
     var onEscKeyDown: js.UndefOr[KeyboardEventHandler[js.Object]] = js.undefined
@@ -483,9 +488,9 @@ object Menus {
     
     var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var value: js.UndefOr[js.Any | js.Array[js.Any]] = js.undefined
+    var value: js.UndefOr[Any | js.Array[Any]] = js.undefined
     
-    var valueLink: js.UndefOr[ReactLink[js.Any | js.Array[js.Any]]] = js.undefined
+    var valueLink: js.UndefOr[ReactLink[Any | js.Array[Any]]] = js.undefined
     
     var width: js.UndefOr[String | Double] = js.undefined
   }
@@ -501,6 +506,10 @@ object Menus {
       inline def setAutoWidth(value: Boolean): Self = StObject.set(x, "autoWidth", value.asInstanceOf[js.Any])
       
       inline def setAutoWidthUndefined: Self = StObject.set(x, "autoWidth", js.undefined)
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setDesktop(value: Boolean): Self = StObject.set(x, "desktop", value.asInstanceOf[js.Any])
       
@@ -526,9 +535,7 @@ object Menus {
       
       inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
       
-      inline def setOnChange(
-        value: (/* e */ SyntheticEvent[js.Object, Event], /* itemValue */ js.Any | js.Array[js.Any]) => Unit
-      ): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      inline def setOnChange(value: (/* e */ SyntheticEvent[js.Object, Event], /* itemValue */ Any | js.Array[Any]) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -552,15 +559,15 @@ object Menus {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      inline def setValue(value: js.Any | js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any | js.Array[Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      inline def setValueLink(value: ReactLink[js.Any | js.Array[js.Any]]): Self = StObject.set(x, "valueLink", value.asInstanceOf[js.Any])
+      inline def setValueLink(value: ReactLink[Any | js.Array[Any]]): Self = StObject.set(x, "valueLink", value.asInstanceOf[js.Any])
       
       inline def setValueLinkUndefined: Self = StObject.set(x, "valueLink", js.undefined)
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      inline def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: Any*): Self = StObject.set(x, "value", js.Array(value*))
       
       inline def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       

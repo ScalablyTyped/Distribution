@@ -10,10 +10,10 @@ A small functional reactive programming lib for JavaScript.
 | ------------------ | :-------------: |
 | Full name          | baconjs |
 | Keywords           | bacon.js, bacon, frp, functional, reactive, programming, stream, streams, EventStream, Rx, RxJs, Observable |
-| # releases         | 22 |
-| # dependents       | 130 |
-| # downloads        | 490432 |
-| # stars            | 19 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 54273.333333333336 |
+| # stars            | 6404.0 |
 
 ## Links
 - [Homepage](https://github.com/baconjs/bacon.js)

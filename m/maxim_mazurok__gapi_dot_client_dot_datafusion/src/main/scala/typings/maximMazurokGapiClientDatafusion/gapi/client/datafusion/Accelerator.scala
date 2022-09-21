@@ -8,6 +8,9 @@ trait Accelerator extends StObject {
   
   /** The type of an accelator for a CDF instance. */
   var acceleratorType: js.UndefOr[String] = js.undefined
+  
+  /** The state of the accelerator */
+  var state: js.UndefOr[String] = js.undefined
 }
 object Accelerator {
   
@@ -21,5 +24,9 @@ object Accelerator {
     inline def setAcceleratorType(value: String): Self = StObject.set(x, "acceleratorType", value.asInstanceOf[js.Any])
     
     inline def setAcceleratorTypeUndefined: Self = StObject.set(x, "acceleratorType", js.undefined)
+    
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

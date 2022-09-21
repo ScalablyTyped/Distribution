@@ -11,6 +11,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @js.native
@@ -22,6 +23,7 @@ trait PageBreakCollection
   /**
     * Adds a page break before the top-left cell of the range specified.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     *
     * @param pageBreakRange The range immediately after the page break to be added.
@@ -35,6 +37,7 @@ trait PageBreakCollection
   /**
     * Gets the number of page breaks in the collection.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   def getCount(): ClientResult[Double] = js.native
@@ -42,6 +45,7 @@ trait PageBreakCollection
   /**
     * Gets a page break object via the index.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     *
     * @param index Index of the page break.
@@ -65,6 +69,7 @@ trait PageBreakCollection
   /**
     * Resets all manual page breaks in the collection.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   def removePageBreaks(): Unit = js.native

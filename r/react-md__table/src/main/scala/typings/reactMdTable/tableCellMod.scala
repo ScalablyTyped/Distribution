@@ -17,8 +17,7 @@ import typings.reactMdTable.reactMdTableStrings.row
 import typings.reactMdTable.reactMdTableStrings.rowgroup
 import typings.reactMdTable.reactMdTableStrings.scope
 import typings.reactMdTable.tableCellContentMod.SortOrder
-import typings.std.HTMLTableDataCellElement
-import typings.std.HTMLTableHeaderCellElement
+import typings.std.HTMLTableCellElement
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -28,14 +27,12 @@ object tableCellMod {
   
   @JSImport("@react-md/table/types/TableCell", "TableCell")
   @js.native
-  val TableCell: ForwardRefExoticComponent[TableCellProps & RefAttributes[TableCellElement]] = js.native
+  val TableCell: ForwardRefExoticComponent[TableCellProps & RefAttributes[HTMLTableCellElement]] = js.native
   
   type TableCellAttributes = Omit[
-    TdHTMLAttributes[HTMLTableDataCellElement] | ThHTMLAttributes[HTMLTableHeaderCellElement], 
+    TdHTMLAttributes[HTMLTableCellElement] | ThHTMLAttributes[HTMLTableCellElement], 
     colSpan | scope
   ]
-  
-  type TableCellElement = HTMLTableDataCellElement | HTMLTableHeaderCellElement
   
   trait TableCellOptions
     extends StObject
@@ -108,7 +105,7 @@ object tableCellMod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in std.Exclude<keyof react.react.TdHTMLAttributes<std.HTMLTableDataCellElement> | react.react.ThHTMLAttributes<std.HTMLTableHeaderCellElement>, 'colSpan' | 'scope'> ]: react.react.TdHTMLAttributes<std.HTMLTableDataCellElement> | react.react.ThHTMLAttributes<std.HTMLTableHeaderCellElement>[P]} */ trait TableCellProps
+  - Dropped {[ P in std.Exclude<keyof react.react.TdHTMLAttributes<std.HTMLTableCellElement> | react.react.ThHTMLAttributes<std.HTMLTableCellElement>, 'colSpan' | 'scope'> ]: react.react.TdHTMLAttributes<std.HTMLTableCellElement> | react.react.ThHTMLAttributes<std.HTMLTableCellElement>[P]} */ trait TableCellProps
     extends StObject
        with TableCellOptions {
     

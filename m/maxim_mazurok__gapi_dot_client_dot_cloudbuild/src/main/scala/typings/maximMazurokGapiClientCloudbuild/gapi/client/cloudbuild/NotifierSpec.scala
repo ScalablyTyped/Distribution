@@ -29,6 +29,6 @@ object NotifierSpec {
     
     inline def setSecretsUndefined: Self = StObject.set(x, "secrets", js.undefined)
     
-    inline def setSecretsVarargs(value: NotifierSecret*): Self = StObject.set(x, "secrets", js.Array(value :_*))
+    inline def setSecretsVarargs(value: NotifierSecret*): Self = StObject.set(x, "secrets", js.Array(value*))
   }
 }

@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents a conditional format for the negative side of the data bar.
   *
-  * Represents a conditional format DataBar Format for the negative side of the data bar.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 @js.native
@@ -22,10 +22,10 @@ trait ConditionalDataBarNegativeFormat
      with ClientObject {
   
   /**
+    * HTML color code representing the color of the border line, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
+    Value is "" (an empty string) if no border is present or set.
     *
-    * HTML color code representing the color of the border line, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
-    "Empty String" if no border is present or set.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var borderColor: String = js.native
@@ -35,9 +35,9 @@ trait ConditionalDataBarNegativeFormat
   var context_ConditionalDataBarNegativeFormat: RequestContext = js.native
   
   /**
+    * HTML color code representing the fill color, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
     *
-    * HTML color code representing the fill color, of the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var fillColor: String = js.native
@@ -54,31 +54,25 @@ trait ConditionalDataBarNegativeFormat
   def load(propertyNames: js.Array[String]): ConditionalDataBarNegativeFormat = js.native
   
   /**
+    * Specifies if the negative data bar has the same border color as the positive data bar.
     *
-    * Specifies if the negative DataBar has the same border color as the positive DataBar.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var matchPositiveBorderColor: Boolean = js.native
   
   /**
+    * Specifies if the negative data bar has the same fill color as the positive data bar.
     *
-    * Specifies if the negative DataBar has the same fill color as the positive DataBar.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var matchPositiveFillColor: Boolean = js.native
   
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ConditionalDataBarNegativeFormat): Unit = js.native
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.ConditionalDataBarNegativeFormat): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */

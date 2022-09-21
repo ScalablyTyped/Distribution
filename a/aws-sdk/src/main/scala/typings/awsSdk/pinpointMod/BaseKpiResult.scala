@@ -22,6 +22,6 @@ object BaseKpiResult {
     
     inline def setRows(value: ListOfResultRow): Self = StObject.set(x, "Rows", value.asInstanceOf[js.Any])
     
-    inline def setRowsVarargs(value: ResultRow*): Self = StObject.set(x, "Rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: ResultRow*): Self = StObject.set(x, "Rows", js.Array(value*))
   }
 }

@@ -34,7 +34,7 @@ object SearchForFacetValuesResponse {
     
     inline def setFacetHits(value: js.Array[FacetHit]): Self = StObject.set(x, "facetHits", value.asInstanceOf[js.Any])
     
-    inline def setFacetHitsVarargs(value: FacetHit*): Self = StObject.set(x, "facetHits", js.Array(value :_*))
+    inline def setFacetHitsVarargs(value: FacetHit*): Self = StObject.set(x, "facetHits", js.Array(value*))
     
     inline def setProcessingTimeMS(value: Double): Self = StObject.set(x, "processingTimeMS", value.asInstanceOf[js.Any])
     

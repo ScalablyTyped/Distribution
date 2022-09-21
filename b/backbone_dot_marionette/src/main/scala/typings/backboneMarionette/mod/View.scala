@@ -15,21 +15,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.backboneMarionette.mod.ViewMixin because var conflicts: delegateEvents. Inlined supportsRenderLifecycle, supportsDestroyLifecycle, isDestroyed, isRendered, isAttached, getTriggers, delegateEntityEvents, undelegateEntityEvents, destroy, bindUIElements, unbindUIElements, childViewEventPrefix, triggerMethod */ @JSImport("backbone.marionette", "View")
 @js.native
-class View[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */] ()
-  extends typings.backbone.mod.View[TModel]
+open class View[TModel /* <: Model[Any, ModelSetOptions, Any] */] ()
+  extends typings.backbone.mod.View[TModel, HTMLElement]
      with RegionsMixin
      with DomMixin
      with CommonMixin {
   def this(options: ViewOptions[TModel]) = this()
   
   /* CompleteClass */
-  var addRegion: js.Any = js.native
+  var addRegion: Any = js.native
   
   /* CompleteClass */
-  var addRegions: js.Any = js.native
+  var addRegions: Any = js.native
   
   /* CompleteClass */
-  var appendChildren: js.Any = js.native
+  var appendChildren: Any = js.native
   
   /**
     * Used to attached the rendered template to this View's element.
@@ -37,30 +37,30 @@ class View[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */] ()
   def attachElContent(html: String): View[TModel] = js.native
   
   /* CompleteClass */
-  var beforeEl: js.Any = js.native
+  var beforeEl: Any = js.native
   
   /**
     * Behavior objects to assign to this View.
     */
-  var behaviors: (js.Array[Behavior | Dictindex]) | (StringDictionary[Instantiable1[/* options */ js.UndefOr[js.Any], Behavior]]) = js.native
+  var behaviors: (js.Array[Behavior | Dictindex]) | (StringDictionary[Instantiable1[/* options */ js.UndefOr[Any], Behavior]]) = js.native
   
   /* CompleteClass */
-  var bindEvents: js.Any = js.native
+  var bindEvents: Any = js.native
   
   /**
     * Bind UI elements to this view. By default this is called in the
     * render method. (undocumented)
     */
-  def bindUIElements(): js.Any = js.native
+  def bindUIElements(): Any = js.native
   
   /**
     * Customize the event prefix for events that are forwarded through the
     * collection view.
     */
-  var childViewEventPrefix: js.Any | String | `false` = js.native
+  var childViewEventPrefix: Any | String | `false` = js.native
   
   /* CompleteClass */
-  var createBuffer: js.Any = js.native
+  var createBuffer: Any = js.native
   
   /**
     * Delegate entity events. (undocumented)
@@ -71,48 +71,48 @@ class View[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */] ()
     * Overrides Backbone.View.delegateEvents. By default Marionette uses
     * this to add handlers for events and triggers. (undocumented)
     */
-  def delegateEvents(eventsArg: js.Any): View[TModel] = js.native
+  def delegateEvents(eventsArg: Any): this.type = js.native
   
-  var destroy: js.Any = js.native
+  var destroy: Any = js.native
   /**
     * Manually destroy a view by calling the destroy method. The method
     * unbinds the UI elements, removes the view and its children from the
     * DOM and unbinds the listeners. It also triggers lifecycle events.
     */
-  def destroy(args: js.Any*): View[TModel] = js.native
+  def destroy(args: Any*): View[TModel] = js.native
   
   /* CompleteClass */
-  var detachChildView: js.Any = js.native
+  var detachChildView: Any = js.native
   
   /* CompleteClass */
-  var detachContents: js.Any = js.native
+  var detachContents: Any = js.native
   
   /* CompleteClass */
-  var detachEl: js.Any = js.native
+  var detachEl: Any = js.native
   
   /* CompleteClass */
-  var emptyRegions: js.Any = js.native
+  var emptyRegions: Any = js.native
   
   /* CompleteClass */
-  var findEls: js.Any = js.native
+  var findEls: Any = js.native
   
   /* CompleteClass */
-  var getChildView: js.Any = js.native
+  var getChildView: Any = js.native
   
   /* CompleteClass */
-  var getOption: js.Any = js.native
+  var getOption: Any = js.native
   
   /* CompleteClass */
-  var getRegion: js.Any = js.native
+  var getRegion: Any = js.native
   
   /* CompleteClass */
-  var getRegions: js.Any = js.native
+  var getRegions: Any = js.native
   
   /**
     * Used to determine which template to use. Override this method to add
     * logic for using multiple templates.
     */
-  def getTemplate(): js.Any = js.native
+  def getTemplate(): Any = js.native
   
   /**
     * Get the triggers that are currently attached to this view.
@@ -126,7 +126,7 @@ class View[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */] ()
   def getUI(ui: String): JQuery[HTMLElement] = js.native
   
   /* CompleteClass */
-  var hasRegion: js.Any = js.native
+  var hasRegion: Any = js.native
   
   /**
     * Check if this View is attached to the DOM.
@@ -144,7 +144,7 @@ class View[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */] ()
   def isRendered(): Boolean = js.native
   
   /* CompleteClass */
-  var mergeOptions: js.Any = js.native
+  var mergeOptions: Any = js.native
   
   /**
     * Mix in template context methods. Looks for a templateContext
@@ -152,7 +152,7 @@ class View[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */] ()
     * returns an object literal. All methods and attributes from this
     * object are copies to the object passed in. (undocumented)
     */
-  def mixinTemplateContext(args: js.Any*): js.Any = js.native
+  def mixinTemplateContext(args: Any*): Any = js.native
   
   /**
     * Bind to events that occur on attached models.
@@ -160,7 +160,7 @@ class View[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */] ()
   var modelEvents: EventsHash = js.native
   
   /* CompleteClass */
-  var normalizeMethods: js.Any = js.native
+  var normalizeMethods: Any = js.native
   
   /**
     * Event that is triggered after a Region has been added.
@@ -186,7 +186,7 @@ class View[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */] ()
   /**
     * Event that is triggered before this View is destroyed.
     */
-  def onBeforeDestroy(view: View[TModel], args: js.Any*): Unit = js.native
+  def onBeforeDestroy(view: View[TModel], args: Any*): Unit = js.native
   
   /**
     * Event that is triggered before this View's element is removed from
@@ -207,7 +207,7 @@ class View[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */] ()
   /**
     * Event that is triggered after this View is destroyed.
     */
-  def onDestroy(view: View[TModel], args: js.Any*): Unit = js.native
+  def onDestroy(view: View[TModel], args: Any*): Unit = js.native
   
   /**
     * Event that is triggered after this View's element has been removed
@@ -238,70 +238,77 @@ class View[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */] ()
   def onRender(view: View[TModel]): Unit = js.native
   
   /* CompleteClass */
-  var regionClass: js.Any = js.native
+  var regionClass: Any = js.native
   
   /* CompleteClass */
-  var removeEl: js.Any = js.native
+  var removeEl: Any = js.native
   
   /* CompleteClass */
-  var removeRegion: js.Any = js.native
+  var removeRegion: Any = js.native
   
   /* CompleteClass */
-  var removeRegions: js.Any = js.native
+  var removeRegions: Any = js.native
   
   /* CompleteClass */
-  var replaceEl: js.Any = js.native
+  var replaceEl: Any = js.native
   
   /**
     * Method used by this.serializeData to serialize this View's collection
     * data.
     */
-  def serializeCollection(): js.Any = js.native
+  def serializeCollection(): Any = js.native
   
   /**
     * The results of this method ared passed to this View's template. By
     * default Marionette will attempt to pass either an attached model or
     * collection which has been converted to JSON.
     */
-  def serializeData(): js.Any = js.native
+  def serializeData(): Any = js.native
   
   /**
     * Method used by this.serializeData to serialize this View's model
     * data.
     */
-  def serializeModel(): js.Any = js.native
+  def serializeModel(): Any = js.native
+  
+  /**
+    * Rebind this View to a new element. Overriding Backbone.View’s
+    * setElement to handle if an element was previously defined.
+    * (undocumented)
+    */
+  def setElement(element: Any): this.type = js.native
   
   /* CompleteClass */
-  var setInnerContent: js.Any = js.native
+  var setInnerContent: Any = js.native
   
   /**
     * Used to set the renderer for this View. The rendere function is
     * passed the template and the data and is expected to return an html
     * string. By default this is set to use Renderer.
     */
-  def setRenderer(renderer: js.Function2[/* template */ js.Any, /* data */ js.Any, String]): Unit = js.native
+  def setRenderer(renderer: js.Function2[/* template */ Any, /* data */ Any, String]): Unit = js.native
   
   /* CompleteClass */
-  var showChildView: js.Any = js.native
+  var showChildView: Any = js.native
   
   /**
     * Internal property. (undocumented)
     */
-  var supportsDestroyLifecycle: js.Any | Boolean = js.native
+  var supportsDestroyLifecycle: Any | Boolean = js.native
   
   /**
     * Internal property. (undocumented)
     */
-  var supportsRenderLifecycle: js.Any | Boolean = js.native
+  var supportsRenderLifecycle: Any | Boolean = js.native
   
-  var triggerMethod: js.Any = js.native
+  var triggerMethod: Any = js.native
   /**
     * Trigger an event and a corresponding method on the target object.
     * All arguments that are passed to the triggerMethod call are passed
     * along to both the event and the method, with the exception of the
     * event name not being passed to the corresponding method.
     */
-  def triggerMethod(name: String, args: js.Any*): js.Any = js.native
+  def triggerMethod(name: String, args: Any*): Any = js.native
   
   /**
     * The view triggers attribute binds DOM events to Marionette View events
@@ -313,15 +320,15 @@ class View[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */] ()
     * Name parts of your template to be used
     * throughout the view with the ui attribute.
     */
-  var ui: js.Any = js.native
+  var ui: Any = js.native
   
   /* CompleteClass */
-  var unbindEvents: js.Any = js.native
+  var unbindEvents: Any = js.native
   
   /**
     * Bind UI elements from this view. (undocumented)
     */
-  def unbindUIElements(): js.Any = js.native
+  def unbindUIElements(): Any = js.native
   
   /**
     * Undelegate entity events. (undocumented)

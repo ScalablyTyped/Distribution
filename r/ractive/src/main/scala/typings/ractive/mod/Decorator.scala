@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Decorator[T /* <: Ractive[T] */] extends StObject {
   
-  def apply(node: HTMLElement, args: js.Any*): DecoratorHandle = js.native
+  def apply(node: HTMLElement, args: Any*): DecoratorHandle = js.native
 }

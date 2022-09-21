@@ -29,6 +29,6 @@ object ListRegistrationsResponse {
     
     inline def setRegistrationsUndefined: Self = StObject.set(x, "registrations", js.undefined)
     
-    inline def setRegistrationsVarargs(value: Registration*): Self = StObject.set(x, "registrations", js.Array(value :_*))
+    inline def setRegistrationsVarargs(value: Registration*): Self = StObject.set(x, "registrations", js.Array(value*))
   }
 }

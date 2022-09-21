@@ -12,7 +12,7 @@ object composedModalMod {
   
   @JSImport("carbon-components-react/lib/components/ComposedModal", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends typings.carbonComponentsReact.composedModalComposedModalMod.default
   
   @JSImport("carbon-components-react/lib/components/ComposedModal", "ModalBody")
@@ -21,25 +21,25 @@ object composedModalMod {
   
   @JSImport("carbon-components-react/lib/components/ComposedModal", "ModalFooter")
   @js.native
-  class ModalFooter protected ()
+  open class ModalFooter protected ()
     extends typings.carbonComponentsReact.composedModalComposedModalMod.ModalFooter {
     def this(props: ModalFooterProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ModalFooterProps, context: js.Any) = this()
+    def this(props: ModalFooterProps, context: Any) = this()
   }
   
   @JSImport("carbon-components-react/lib/components/ComposedModal", "ModalHeader")
   @js.native
-  class ModalHeader protected ()
+  open class ModalHeader protected ()
     extends typings.carbonComponentsReact.composedModalComposedModalMod.ModalHeader {
     def this(props: ModalHeaderProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ModalHeaderProps, context: js.Any) = this()
+    def this(props: ModalHeaderProps, context: Any) = this()
   }
 }

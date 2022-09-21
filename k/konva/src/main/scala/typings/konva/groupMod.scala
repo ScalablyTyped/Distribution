@@ -10,9 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object groupMod {
   
-  @JSImport("konva/types/Group", "Group")
+  @JSImport("konva/lib/Group", "Group")
   @js.native
-  class Group () extends Container[Group | Shape[ShapeConfig]] {
+  open class Group () extends Container[Group | Shape[ShapeConfig]] {
     def this(config: ContainerConfig) = this()
   }
+  
+  type GroupConfig = ContainerConfig
 }

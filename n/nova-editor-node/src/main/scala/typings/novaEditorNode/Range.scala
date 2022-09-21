@@ -4,8 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/// https://novadocs.panic.com/api-reference/range/
-trait Range extends StObject {
+/// https://docs.nova.app/api-reference/range/
+trait Range
+  extends StObject
+     with _Transferrable {
   
   def compare(other: Range): Double
   

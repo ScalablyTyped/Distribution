@@ -21,7 +21,7 @@ trait V1Beta1QuotaOverride extends StObject {
   var dimensions: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientServiceconsumermanagement.maximMazurokGapiClientServiceconsumermanagementStrings.V1Beta1QuotaOverride & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientServiceconsumermanagement.maximMazurokGapiClientServiceconsumermanagementStrings.V1Beta1QuotaOverride & TopLevel[Any]
   ] = js.undefined
   
   /** The name of the metric to which this override applies. An example name would be: `compute.googleapis.com/cpus` */
@@ -58,7 +58,7 @@ object V1Beta1QuotaOverride {
     inline def setDimensions(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientServiceconsumermanagement.maximMazurokGapiClientServiceconsumermanagementStrings.V1Beta1QuotaOverride & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientServiceconsumermanagement.maximMazurokGapiClientServiceconsumermanagementStrings.V1Beta1QuotaOverride & TopLevel[Any]
     ): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
     inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)

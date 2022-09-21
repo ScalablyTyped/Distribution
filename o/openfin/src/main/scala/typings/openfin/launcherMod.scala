@@ -10,7 +10,7 @@ object launcherMod {
   
   @JSImport("openfin/_v2/launcher/launcher", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with Launcher {
     
@@ -27,13 +27,13 @@ object launcherMod {
     override def launch(config: ConfigWithRuntime, manifestLocation: String, namedPipeName: String): js.Promise[ChildProcess] = js.native
     
     /* private */ /* CompleteClass */
-    var macLaunch: js.Any = js.native
+    var macLaunch: Any = js.native
     
     /* private */ /* CompleteClass */
-    var os: js.Any = js.native
+    var os: Any = js.native
     
     /* private */ /* CompleteClass */
-    var winLaunch: js.Any = js.native
+    var winLaunch: Any = js.native
   }
   /* static members */
   object default {
@@ -55,13 +55,13 @@ object launcherMod {
     
     def launch(config: ConfigWithRuntime, manifestLocation: String, namedPipeName: String): js.Promise[ChildProcess]
     
-    /* private */ var macLaunch: js.Any
+    /* private */ var macLaunch: Any
     
-    var nixConfig: js.UndefOr[js.Any] = js.undefined
+    var nixConfig: js.UndefOr[Any] = js.undefined
     
-    /* private */ var os: js.Any
+    /* private */ var os: Any
     
-    /* private */ var winLaunch: js.Any
+    /* private */ var winLaunch: Any
   }
   object Launcher {
     
@@ -70,9 +70,9 @@ object launcherMod {
       OpenFin_Installer: String,
       Security_Realm_Config_Key: String,
       launch: (ConfigWithRuntime, String, String) => js.Promise[ChildProcess],
-      macLaunch: js.Any,
-      os: js.Any,
-      winLaunch: js.Any
+      macLaunch: Any,
+      os: Any,
+      winLaunch: Any
     ): Launcher = {
       val __obj = js.Dynamic.literal(Installer_Work_Dir = Installer_Work_Dir.asInstanceOf[js.Any], OpenFin_Installer = OpenFin_Installer.asInstanceOf[js.Any], Security_Realm_Config_Key = Security_Realm_Config_Key.asInstanceOf[js.Any], launch = js.Any.fromFunction3(launch), macLaunch = macLaunch.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any], winLaunch = winLaunch.asInstanceOf[js.Any])
       __obj.asInstanceOf[Launcher]
@@ -84,19 +84,19 @@ object launcherMod {
       
       inline def setLaunch(value: (ConfigWithRuntime, String, String) => js.Promise[ChildProcess]): Self = StObject.set(x, "launch", js.Any.fromFunction3(value))
       
-      inline def setMacLaunch(value: js.Any): Self = StObject.set(x, "macLaunch", value.asInstanceOf[js.Any])
+      inline def setMacLaunch(value: Any): Self = StObject.set(x, "macLaunch", value.asInstanceOf[js.Any])
       
-      inline def setNixConfig(value: js.Any): Self = StObject.set(x, "nixConfig", value.asInstanceOf[js.Any])
+      inline def setNixConfig(value: Any): Self = StObject.set(x, "nixConfig", value.asInstanceOf[js.Any])
       
       inline def setNixConfigUndefined: Self = StObject.set(x, "nixConfig", js.undefined)
       
       inline def setOpenFin_Installer(value: String): Self = StObject.set(x, "OpenFin_Installer", value.asInstanceOf[js.Any])
       
-      inline def setOs(value: js.Any): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
+      inline def setOs(value: Any): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
       
       inline def setSecurity_Realm_Config_Key(value: String): Self = StObject.set(x, "Security_Realm_Config_Key", value.asInstanceOf[js.Any])
       
-      inline def setWinLaunch(value: js.Any): Self = StObject.set(x, "winLaunch", value.asInstanceOf[js.Any])
+      inline def setWinLaunch(value: Any): Self = StObject.set(x, "winLaunch", value.asInstanceOf[js.Any])
     }
   }
 }

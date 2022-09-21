@@ -2,7 +2,6 @@ package typings.phaser.Phaser.GameObjects
 
 import typings.phaser.Phaser.Types.GameObjects.Text.TextMetrics
 import typings.phaser.TextStyleWordWrapCallback
-import typings.phaser.integer
 import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
@@ -86,7 +85,7 @@ trait TextStyle extends StObject {
   /**
     * The maximum number of lines to draw.
     */
-  var maxLines: integer = js.native
+  var maxLines: Double = js.native
   
   /**
     * The Text object that this TextStyle is styling.
@@ -181,7 +180,7 @@ trait TextStyle extends StObject {
     * @param max The maximum number of lines to draw. Default 0.
     */
   def setMaxLines(): Text = js.native
-  def setMaxLines(max: integer): Text = js.native
+  def setMaxLines(max: Double): Text = js.native
   
   /**
     * Set the resolution used by the Text object.

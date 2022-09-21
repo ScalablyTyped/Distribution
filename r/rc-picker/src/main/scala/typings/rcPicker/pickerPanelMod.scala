@@ -287,11 +287,21 @@ object pickerPanelMod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.rcPicker.timePanelMod.SharedTimeProps because var conflicts: defaultValue. Inlined format, showNow, showHour, showMinute, showSecond, use12Hours, hourStep, minuteStep, secondStep, hideDisabledOptions */ trait PickerPanelTimeProps[DateType]
+  - typings.rcPicker.timePanelMod.SharedTimeProps because var conflicts: defaultValue. Inlined format, showNow, showHour, showMinute, showSecond, use12Hours, hourStep, minuteStep, secondStep, hideDisabledOptions, disabledHours, disabledMinutes, disabledSeconds, disabledTime */ trait PickerPanelTimeProps[DateType]
     extends StObject
        with PickerPanelSharedProps[DateType]
-       with PickerPanelProps[DateType]
-       with DisabledTimes {
+       with PickerPanelProps[DateType] {
+    
+    /** @deprecated Please use `disabledTime` instead. */
+    var disabledHours: js.UndefOr[js.Function0[js.Array[Double]]] = js.undefined
+    
+    /** @deprecated Please use `disabledTime` instead. */
+    var disabledMinutes: js.UndefOr[js.Function1[/* hour */ Double, js.Array[Double]]] = js.undefined
+    
+    /** @deprecated Please use `disabledTime` instead. */
+    var disabledSeconds: js.UndefOr[js.Function2[/* hour */ Double, /* minute */ Double, js.Array[Double]]] = js.undefined
+    
+    var disabledTime: js.UndefOr[js.Function1[DateType, DisabledTimes]] = js.undefined
     
     var format: js.UndefOr[String] = js.undefined
     
@@ -323,6 +333,22 @@ object pickerPanelMod {
     }
     
     extension [Self <: PickerPanelTimeProps[?], DateType](x: Self & PickerPanelTimeProps[DateType]) {
+      
+      inline def setDisabledHours(value: () => js.Array[Double]): Self = StObject.set(x, "disabledHours", js.Any.fromFunction0(value))
+      
+      inline def setDisabledHoursUndefined: Self = StObject.set(x, "disabledHours", js.undefined)
+      
+      inline def setDisabledMinutes(value: /* hour */ Double => js.Array[Double]): Self = StObject.set(x, "disabledMinutes", js.Any.fromFunction1(value))
+      
+      inline def setDisabledMinutesUndefined: Self = StObject.set(x, "disabledMinutes", js.undefined)
+      
+      inline def setDisabledSeconds(value: (/* hour */ Double, /* minute */ Double) => js.Array[Double]): Self = StObject.set(x, "disabledSeconds", js.Any.fromFunction2(value))
+      
+      inline def setDisabledSecondsUndefined: Self = StObject.set(x, "disabledSeconds", js.undefined)
+      
+      inline def setDisabledTime(value: DateType => DisabledTimes): Self = StObject.set(x, "disabledTime", js.Any.fromFunction1(value))
+      
+      inline def setDisabledTimeUndefined: Self = StObject.set(x, "disabledTime", js.undefined)
       
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       

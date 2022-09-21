@@ -98,19 +98,19 @@ object ICompositeDefinition {
     
     inline def setBodiesUndefined: Self = StObject.set(x, "bodies", js.undefined)
     
-    inline def setBodiesVarargs(value: BodyType*): Self = StObject.set(x, "bodies", js.Array(value :_*))
+    inline def setBodiesVarargs(value: BodyType*): Self = StObject.set(x, "bodies", js.Array(value*))
     
     inline def setComposites(value: js.Array[CompositeType]): Self = StObject.set(x, "composites", value.asInstanceOf[js.Any])
     
     inline def setCompositesUndefined: Self = StObject.set(x, "composites", js.undefined)
     
-    inline def setCompositesVarargs(value: CompositeType*): Self = StObject.set(x, "composites", js.Array(value :_*))
+    inline def setCompositesVarargs(value: CompositeType*): Self = StObject.set(x, "composites", js.Array(value*))
     
     inline def setConstraints(value: js.Array[ConstraintType]): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
     
     inline def setConstraintsUndefined: Self = StObject.set(x, "constraints", js.undefined)
     
-    inline def setConstraintsVarargs(value: ConstraintType*): Self = StObject.set(x, "constraints", js.Array(value :_*))
+    inline def setConstraintsVarargs(value: ConstraintType*): Self = StObject.set(x, "constraints", js.Array(value*))
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

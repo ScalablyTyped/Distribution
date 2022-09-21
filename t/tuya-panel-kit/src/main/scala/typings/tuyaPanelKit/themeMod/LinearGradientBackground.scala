@@ -9,14 +9,64 @@ trait LinearGradientBackground
   extends StObject
      with _BackgroundProps {
   
+  /**
+    * @language zh-CN
+    * @description 渐变梯度停点
+    * @defaultValue { '0%': 'rgb(255, 255, 255)', '100%': 'rgb(0, 0, 0)' }
+    */
+  /**
+    * @language en-US
+    * @description The stop point of gradient
+    * @defaultValue { '0%': 'rgb(255, 255, 255)', '100%': 'rgb(0, 0, 0)' }
+    */
   var stops: js.UndefOr[Record[String, String]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 起始点的x轴坐标
+    * @defaultValue '0%'
+    */
+  /**
+    * @language en-US
+    * @description The x-axis coordinate of the starting point
+    * @defaultValue '0%'
+    */
   var x1: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 终点的x轴坐标
+    * @defaultValue '0%'
+    */
+  /**
+    * @language en-US
+    * @description The x-axis coordinate of the ending point
+    * @defaultValue '0%'
+    */
   var x2: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 起始点的y轴坐标
+    * @defaultValue '0%'
+    */
+  /**
+    * @language en-US
+    * @description The y-axis coordinate of the starting point
+    * @defaultValue '0%'
+    */
   var y1: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 终点的y轴坐标
+    * @defaultValue '100%'
+    */
+  /**
+    * @language en-US
+    * @description The y-axis coordinate of the ending point
+    * @defaultValue '0%'
+    */
   var y2: js.UndefOr[String] = js.undefined
 }
 object LinearGradientBackground {

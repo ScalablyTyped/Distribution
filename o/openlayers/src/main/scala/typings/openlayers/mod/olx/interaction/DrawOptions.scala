@@ -121,7 +121,7 @@ object DrawOptions {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setStyleVarargs(value: Style*): Self = StObject.set(x, "style", js.Array(value :_*))
+    inline def setStyleVarargs(value: Style*): Self = StObject.set(x, "style", js.Array(value*))
     
     inline def setType(value: GeometryType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

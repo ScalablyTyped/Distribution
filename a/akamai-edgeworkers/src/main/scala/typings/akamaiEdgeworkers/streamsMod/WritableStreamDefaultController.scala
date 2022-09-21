@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WritableStreamDefaultController extends StObject {
   
   def error(): Unit = js.native
-  def error(error: js.Any): Unit = js.native
+  def error(error: Any): Unit = js.native
 }

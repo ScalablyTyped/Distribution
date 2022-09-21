@@ -1,42 +1,59 @@
 package typings.reactRelay
 
-import org.scalablytyped.runtime.TopLevel
-import typings.react.mod.Component
-import typings.react.mod.ComponentType
+import typings.react.mod.ComponentClass
+import typings.react.mod.ComponentProps
+import typings.react.mod.ComponentState
 import typings.react.mod.Context
-import typings.react.mod.ReactNode
-import typings.reactRelay.anon.CacheConfig
-import typings.reactRelay.anon.ComponentRef
-import typings.reactRelay.anon.Count
-import typings.reactRelay.anon.PartialPageInfo
+import typings.react.mod.FunctionComponent
+import typings.react.mod.ReactElement
+import typings.reactRelay.anon.EntryPointReference
+import typings.reactRelay.anon.FetchKey
+import typings.reactRelay.anon.FnCall
 import typings.reactRelay.anon.Relay
 import typings.reactRelay.anon.RelayRelayPaginationProp
 import typings.reactRelay.anon.RelayRelayRefetchProp
-import typings.reactRelay.reactRelayStrings.`network-only`
-import typings.reactRelay.reactRelayStrings.`store-or-network`
-import typings.reactRelay.reactRelayStrings.backward
-import typings.reactRelay.reactRelayStrings.forward
-import typings.reactRelay.reactRelayStrings.relay
+import typings.reactRelay.anon.UNSTABLErenderPolicy
+import typings.reactRelay.entryPointTypesMod.EnvironmentProviderOptions
+import typings.reactRelay.entryPointTypesMod.IEnvironmentProvider
+import typings.reactRelay.entryPointTypesMod.LoadQueryOptions
+import typings.reactRelay.entryPointTypesMod.PreloadableConcreteRequest
+import typings.reactRelay.entryPointTypesMod.PreloadedEntryPoint
+import typings.reactRelay.entryPointTypesMod.PreloadedQuery
+import typings.reactRelay.helpersMod.ArrayKeyType
+import typings.reactRelay.helpersMod.ArrayKeyTypeData
+import typings.reactRelay.helpersMod.GetEntryPointComponentFromEntryPoint
+import typings.reactRelay.helpersMod.GetEntryPointParamsFromEntryPoint
+import typings.reactRelay.legacyMod.ConnectionConfig
+import typings.reactRelay.legacyMod.Container
+import typings.reactRelay.legacyMod.PropsWithoutRelay
+import typings.reactRelay.relayEnvironmentProviderReactMod.Props
+import typings.reactRelay.useEntryPointLoaderMod.UseEntryPointLoaderHookType
+import typings.reactRelay.useMutationMod.UseMutationConfig
+import typings.reactRelay.usePaginationFragmentMod.usePaginationFragmentHookType
+import typings.reactRelay.useQueryLoaderMod.useQueryLoaderHookType
+import typings.reactRelay.useRefetchableFragmentMod.useRefetchableFragmentHookType
+import typings.relayRuntime.anon.FetchPolicy
 import typings.relayRuntime.applyOptimisticMutationMod.OptimisticMutationConfig
 import typings.relayRuntime.commitMutationMod.MutationConfig
 import typings.relayRuntime.commitMutationMod.MutationParameters
-import typings.relayRuntime.mod.FragmentRef
-import typings.relayRuntime.mod.RefType
-import typings.relayRuntime.mod._FragmentRefs
-import typings.relayRuntime.readerNodeMod.ReaderFragment
-import typings.relayRuntime.relayConcreteNodeMod.ConcreteRequest
-import typings.relayRuntime.relayModernEnvironmentMod.EnvironmentConfig
+import typings.relayRuntime.readInlineDataMod.KeyType
+import typings.relayRuntime.readInlineDataMod.KeyTypeData
 import typings.relayRuntime.relayModernGraphQLTagMod.GraphQLTaggedNode
-import typings.relayRuntime.relayObservableMod.Observer
+import typings.relayRuntime.relayObservableMod.RelayObservable
+import typings.relayRuntime.relayRuntimeTypesMod.CacheConfig
+import typings.relayRuntime.relayRuntimeTypesMod.DataID
 import typings.relayRuntime.relayRuntimeTypesMod.Disposable
 import typings.relayRuntime.relayRuntimeTypesMod.OperationType
 import typings.relayRuntime.relayRuntimeTypesMod.Variables
+import typings.relayRuntime.relayRuntimeTypesMod.VariablesOf
+import typings.relayRuntime.relayStoreTypesMod.Environment
+import typings.relayRuntime.relayStoreTypesMod.HandleFieldPayload
+import typings.relayRuntime.relayStoreTypesMod.ReadOnlyRecordProxy
+import typings.relayRuntime.relayStoreTypesMod.RecordProxy
+import typings.relayRuntime.relayStoreTypesMod.RecordSourceProxy
 import typings.relayRuntime.relayStoreTypesMod.RelayContext
 import typings.relayRuntime.relayStoreTypesMod.StoreUpdater
 import typings.relayRuntime.requestSubscriptionMod.GraphQLSubscriptionConfig
-import typings.std.Error
-import typings.std.Exclude
-import typings.std.Pick
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -48,439 +65,300 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("react-relay", "Environment")
-  @js.native
-  class Environment protected ()
-    extends typings.relayRuntime.mod.Environment {
-    def this(config: EnvironmentConfig) = this()
+  object ConnectionHandler {
+    
+    @JSImport("react-relay", "ConnectionHandler")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def buildConnectionEdge(store: RecordSourceProxy, connection: RecordProxy[js.Object]): js.UndefOr[RecordProxy[js.Object] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildConnectionEdge")(store.asInstanceOf[js.Any], connection.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[RecordProxy[js.Object] | Null]]
+    inline def buildConnectionEdge(store: RecordSourceProxy, connection: RecordProxy[js.Object], edge: RecordProxy[js.Object]): js.UndefOr[RecordProxy[js.Object] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildConnectionEdge")(store.asInstanceOf[js.Any], connection.asInstanceOf[js.Any], edge.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[RecordProxy[js.Object] | Null]]
+    
+    inline def createEdge(
+      store: RecordSourceProxy,
+      record: RecordProxy[js.Object],
+      node: RecordProxy[js.Object],
+      edgeType: String
+    ): RecordProxy[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEdge")(store.asInstanceOf[js.Any], record.asInstanceOf[js.Any], node.asInstanceOf[js.Any], edgeType.asInstanceOf[js.Any])).asInstanceOf[RecordProxy[js.Object]]
+    
+    inline def deleteNode(record: RecordProxy[js.Object], nodeID: DataID): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteNode")(record.asInstanceOf[js.Any], nodeID.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def getConnection(record: ReadOnlyRecordProxy, key: String): js.UndefOr[RecordProxy[js.Object] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("getConnection")(record.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[RecordProxy[js.Object] | Null]]
+    inline def getConnection(record: ReadOnlyRecordProxy, key: String, filters: Variables): js.UndefOr[RecordProxy[js.Object] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("getConnection")(record.asInstanceOf[js.Any], key.asInstanceOf[js.Any], filters.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[RecordProxy[js.Object] | Null]]
+    
+    inline def getConnectionID(recordID: DataID, key: String): DataID = (^.asInstanceOf[js.Dynamic].applyDynamic("getConnectionID")(recordID.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[DataID]
+    inline def getConnectionID(recordID: DataID, key: String, filters: Variables): DataID = (^.asInstanceOf[js.Dynamic].applyDynamic("getConnectionID")(recordID.asInstanceOf[js.Any], key.asInstanceOf[js.Any], filters.asInstanceOf[js.Any])).asInstanceOf[DataID]
+    
+    inline def insertEdgeAfter(record: RecordProxy[js.Object], newEdge: RecordProxy[js.Object]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertEdgeAfter")(record.asInstanceOf[js.Any], newEdge.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def insertEdgeAfter(record: RecordProxy[js.Object], newEdge: RecordProxy[js.Object], cursor: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertEdgeAfter")(record.asInstanceOf[js.Any], newEdge.asInstanceOf[js.Any], cursor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def insertEdgeBefore(record: RecordProxy[js.Object], newEdge: RecordProxy[js.Object]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertEdgeBefore")(record.asInstanceOf[js.Any], newEdge.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def insertEdgeBefore(record: RecordProxy[js.Object], newEdge: RecordProxy[js.Object], cursor: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertEdgeBefore")(record.asInstanceOf[js.Any], newEdge.asInstanceOf[js.Any], cursor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def update(store: RecordSourceProxy, payload: HandleFieldPayload): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(store.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
+  
+  inline def EntryPointContainer[TPreloadedEntryPoint /* <: PreloadedEntryPoint[Any] */](hasEntryPointReferenceProps: EntryPointReference[TPreloadedEntryPoint]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("EntryPointContainer")(hasEntryPointReferenceProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   @JSImport("react-relay", "LocalQueryRenderer")
   @js.native
-  class LocalQueryRenderer[TOperation /* <: OperationType */] ()
-    extends Component[QueryRendererProps[TOperation], js.Object, js.Any]
+  open class LocalQueryRenderer[TOperation /* <: OperationType */] ()
+    extends typings.reactRelay.legacyMod.LocalQueryRenderer[TOperation]
   
   @JSImport("react-relay", "QueryRenderer")
   @js.native
-  class QueryRenderer[TOperation /* <: OperationType */] ()
-    extends Component[CacheConfig & QueryRendererProps[TOperation], js.Object, js.Any]
+  open class QueryRenderer[TOperation /* <: OperationType */] ()
+    extends typings.reactRelay.legacyMod.QueryRenderer[TOperation]
   
   @JSImport("react-relay", "ReactRelayContext")
   @js.native
   val ReactRelayContext: Context[RelayContext | Null] = js.native
   
-  inline def applyOptimisticMutation(environment: typings.relayRuntime.relayStoreTypesMod.Environment, config: OptimisticMutationConfig): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOptimisticMutation")(environment.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Disposable]
+  inline def RelayEnvironmentProvider(props: Props): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("RelayEnvironmentProvider")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  inline def commitLocalUpdate(environment: typings.relayRuntime.relayStoreTypesMod.Environment, updater: StoreUpdater): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("commitLocalUpdate")(environment.asInstanceOf[js.Any], updater.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def applyOptimisticMutation(environment: Environment, config: OptimisticMutationConfig): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOptimisticMutation")(environment.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Disposable]
+  
+  inline def commitLocalUpdate(environment: Environment, updater: StoreUpdater): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("commitLocalUpdate")(environment.asInstanceOf[js.Any], updater.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def commitMutation[TOperation /* <: MutationParameters */](
-    environment: typings.relayRuntime.relayStoreTypesMod.Environment,
+    environment: Environment,
     // tslint:disable-next-line no-unnecessary-generics
   config: MutationConfig[TOperation]
   ): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("commitMutation")(environment.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
-  inline def createFragmentContainer[Props](Component: ComponentType[Props & Relay], fragmentSpec: Record[String, GraphQLTaggedNode]): Container[Props] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFragmentContainer")(Component.asInstanceOf[js.Any], fragmentSpec.asInstanceOf[js.Any])).asInstanceOf[Container[Props]]
+  inline def createFragmentContainer(
+    Component: ComponentClass[ComponentProps[Any] & Relay, ComponentState],
+    fragmentSpec: Record[String, GraphQLTaggedNode]
+  ): Container[PropsWithoutRelay[ComponentClass[ComponentProps[Any] & Relay, ComponentState]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFragmentContainer")(Component.asInstanceOf[js.Any], fragmentSpec.asInstanceOf[js.Any])).asInstanceOf[Container[PropsWithoutRelay[ComponentClass[ComponentProps[Any] & Relay, ComponentState]]]]
+  inline def createFragmentContainer(
+    Component: FunctionComponent[ComponentProps[Any] & Relay],
+    fragmentSpec: Record[String, GraphQLTaggedNode]
+  ): Container[PropsWithoutRelay[FunctionComponent[ComponentProps[Any] & Relay]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFragmentContainer")(Component.asInstanceOf[js.Any], fragmentSpec.asInstanceOf[js.Any])).asInstanceOf[Container[PropsWithoutRelay[FunctionComponent[ComponentProps[Any] & Relay]]]]
   
-  inline def createPaginationContainer[Props](
-    Component: ComponentType[Props & RelayRelayPaginationProp],
+  inline def createPaginationContainer(
+    Component: ComponentClass[ComponentProps[Any] & RelayRelayPaginationProp, ComponentState],
     fragmentSpec: Record[String, GraphQLTaggedNode],
-    connectionConfig: ConnectionConfig[Props]
-  ): Container[Props] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPaginationContainer")(Component.asInstanceOf[js.Any], fragmentSpec.asInstanceOf[js.Any], connectionConfig.asInstanceOf[js.Any])).asInstanceOf[Container[Props]]
+    connectionConfig: ConnectionConfig[
+      PropsWithoutRelay[ComponentClass[ComponentProps[Any] & RelayRelayPaginationProp, ComponentState]]
+    ]
+  ): Container[
+    PropsWithoutRelay[ComponentClass[ComponentProps[Any] & RelayRelayPaginationProp, ComponentState]]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPaginationContainer")(Component.asInstanceOf[js.Any], fragmentSpec.asInstanceOf[js.Any], connectionConfig.asInstanceOf[js.Any])).asInstanceOf[Container[
+    PropsWithoutRelay[ComponentClass[ComponentProps[Any] & RelayRelayPaginationProp, ComponentState]]
+  ]]
+  inline def createPaginationContainer(
+    Component: FunctionComponent[ComponentProps[Any] & RelayRelayPaginationProp],
+    fragmentSpec: Record[String, GraphQLTaggedNode],
+    connectionConfig: ConnectionConfig[
+      PropsWithoutRelay[FunctionComponent[ComponentProps[Any] & RelayRelayPaginationProp]]
+    ]
+  ): Container[
+    PropsWithoutRelay[FunctionComponent[ComponentProps[Any] & RelayRelayPaginationProp]]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPaginationContainer")(Component.asInstanceOf[js.Any], fragmentSpec.asInstanceOf[js.Any], connectionConfig.asInstanceOf[js.Any])).asInstanceOf[Container[
+    PropsWithoutRelay[FunctionComponent[ComponentProps[Any] & RelayRelayPaginationProp]]
+  ]]
   
-  inline def createRefetchContainer[Props](
-    Component: ComponentType[Props & RelayRelayRefetchProp],
+  inline def createRefetchContainer(
+    Component: ComponentClass[ComponentProps[Any] & RelayRelayRefetchProp, ComponentState],
     fragmentSpec: Record[String, GraphQLTaggedNode],
     refetchQuery: GraphQLTaggedNode
-  ): Container[Props] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRefetchContainer")(Component.asInstanceOf[js.Any], fragmentSpec.asInstanceOf[js.Any], refetchQuery.asInstanceOf[js.Any])).asInstanceOf[Container[Props]]
+  ): Container[
+    PropsWithoutRelay[ComponentClass[ComponentProps[Any] & RelayRelayRefetchProp, ComponentState]]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRefetchContainer")(Component.asInstanceOf[js.Any], fragmentSpec.asInstanceOf[js.Any], refetchQuery.asInstanceOf[js.Any])).asInstanceOf[Container[
+    PropsWithoutRelay[ComponentClass[ComponentProps[Any] & RelayRelayRefetchProp, ComponentState]]
+  ]]
+  inline def createRefetchContainer(
+    Component: FunctionComponent[ComponentProps[Any] & RelayRelayRefetchProp],
+    fragmentSpec: Record[String, GraphQLTaggedNode],
+    refetchQuery: GraphQLTaggedNode
+  ): Container[
+    PropsWithoutRelay[FunctionComponent[ComponentProps[Any] & RelayRelayRefetchProp]]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRefetchContainer")(Component.asInstanceOf[js.Any], fragmentSpec.asInstanceOf[js.Any], refetchQuery.asInstanceOf[js.Any])).asInstanceOf[Container[
+    PropsWithoutRelay[FunctionComponent[ComponentProps[Any] & RelayRelayRefetchProp]]
+  ]]
   
-  inline def fetchQuery_variables[T /* <: OperationType */](
-    environment: typings.relayRuntime.relayStoreTypesMod.Environment,
+  inline def fetchQueryDEPRECATED_variables[T /* <: OperationType */](
+    environment: Environment,
     taggedNode: GraphQLTaggedNode,
     variables: /* import warning: importer.ImportType#apply Failed type conversion: T['variables'] */ js.Any
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: T['response'] */ js.Any
-  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchQuery")(environment.asInstanceOf[js.Any], taggedNode.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchQuery_DEPRECATED")(environment.asInstanceOf[js.Any], taggedNode.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: T['response'] */ js.Any
+  ]]
+  inline def fetchQueryDEPRECATED_variables[T /* <: OperationType */](
+    environment: Environment,
+    taggedNode: GraphQLTaggedNode,
+    variables: /* import warning: importer.ImportType#apply Failed type conversion: T['variables'] */ js.Any,
+    cacheConfig: CacheConfig
+  ): js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: T['response'] */ js.Any
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchQuery_DEPRECATED")(environment.asInstanceOf[js.Any], taggedNode.asInstanceOf[js.Any], variables.asInstanceOf[js.Any], cacheConfig.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: T['response'] */ js.Any
+  ]]
+  
+  inline def fetchQuery_variables[T /* <: OperationType */](
+    environment: Environment,
+    taggedNode: GraphQLTaggedNode,
+    variables: /* import warning: importer.ImportType#apply Failed type conversion: T['variables'] */ js.Any
+  ): RelayObservable[
+    /* import warning: importer.ImportType#apply Failed type conversion: T['response'] */ js.Any
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchQuery")(environment.asInstanceOf[js.Any], taggedNode.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[RelayObservable[
     /* import warning: importer.ImportType#apply Failed type conversion: T['response'] */ js.Any
   ]]
   inline def fetchQuery_variables[T /* <: OperationType */](
-    environment: typings.relayRuntime.relayStoreTypesMod.Environment,
+    environment: Environment,
     taggedNode: GraphQLTaggedNode,
     variables: /* import warning: importer.ImportType#apply Failed type conversion: T['variables'] */ js.Any,
-    cacheConfig: typings.relayRuntime.relayRuntimeTypesMod.CacheConfig
-  ): js.Promise[
+    cacheConfig: FetchPolicy
+  ): RelayObservable[
     /* import warning: importer.ImportType#apply Failed type conversion: T['response'] */ js.Any
-  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchQuery")(environment.asInstanceOf[js.Any], taggedNode.asInstanceOf[js.Any], variables.asInstanceOf[js.Any], cacheConfig.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchQuery")(environment.asInstanceOf[js.Any], taggedNode.asInstanceOf[js.Any], variables.asInstanceOf[js.Any], cacheConfig.asInstanceOf[js.Any])).asInstanceOf[RelayObservable[
     /* import warning: importer.ImportType#apply Failed type conversion: T['response'] */ js.Any
   ]]
   
-  inline def graphql(strings: js.Any): GraphQLTaggedNode = ^.asInstanceOf[js.Dynamic].applyDynamic("graphql")(strings.asInstanceOf[js.Any]).asInstanceOf[GraphQLTaggedNode]
+  inline def graphql(strings: Any): GraphQLTaggedNode = ^.asInstanceOf[js.Dynamic].applyDynamic("graphql")(strings.asInstanceOf[js.Any]).asInstanceOf[GraphQLTaggedNode]
   
-  inline def readInlineData[T /* <: RefType[js.Any] */](fragment: GraphQLTaggedNode): js.UndefOr[T | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("readInlineData")(fragment.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T | Null]]
-  inline def readInlineData[T /* <: RefType[js.Any] */](fragment: GraphQLTaggedNode, ref: FragmentRef[T]): js.UndefOr[T | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("readInlineData")(fragment.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T | Null]]
+  inline def loadEntryPoint[TEntryPoint](
+    environmentProvider: IEnvironmentProvider[EnvironmentProviderOptions[Record[String, Any]]],
+    entryPoint: TEntryPoint,
+    entryPointParams: GetEntryPointParamsFromEntryPoint[TEntryPoint]
+  ): PreloadedEntryPoint[GetEntryPointComponentFromEntryPoint[TEntryPoint]] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadEntryPoint")(environmentProvider.asInstanceOf[js.Any], entryPoint.asInstanceOf[js.Any], entryPointParams.asInstanceOf[js.Any])).asInstanceOf[PreloadedEntryPoint[GetEntryPointComponentFromEntryPoint[TEntryPoint]]]
   
-  inline def readInlineData_T_RefTypeAny_T[T /* <: RefType[js.Any] */](fragment: GraphQLTaggedNode, ref: FragmentRef[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("readInlineData")(fragment.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def loadQuery[TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, Any]] */](
+    environment: Environment,
+    preloadableRequest: PreloadableConcreteRequest[TQuery],
+    variables: VariablesOf[TQuery]
+  ): PreloadedQuery[TQuery, TEnvironmentProviderOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadQuery")(environment.asInstanceOf[js.Any], preloadableRequest.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[PreloadedQuery[TQuery, TEnvironmentProviderOptions]]
+  inline def loadQuery[TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, Any]] */](
+    environment: Environment,
+    preloadableRequest: PreloadableConcreteRequest[TQuery],
+    variables: VariablesOf[TQuery],
+    options: Unit,
+    environmentProviderOptions: TEnvironmentProviderOptions
+  ): PreloadedQuery[TQuery, TEnvironmentProviderOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadQuery")(environment.asInstanceOf[js.Any], preloadableRequest.asInstanceOf[js.Any], variables.asInstanceOf[js.Any], options.asInstanceOf[js.Any], environmentProviderOptions.asInstanceOf[js.Any])).asInstanceOf[PreloadedQuery[TQuery, TEnvironmentProviderOptions]]
+  inline def loadQuery[TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, Any]] */](
+    environment: Environment,
+    preloadableRequest: PreloadableConcreteRequest[TQuery],
+    variables: VariablesOf[TQuery],
+    options: LoadQueryOptions
+  ): PreloadedQuery[TQuery, TEnvironmentProviderOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadQuery")(environment.asInstanceOf[js.Any], preloadableRequest.asInstanceOf[js.Any], variables.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PreloadedQuery[TQuery, TEnvironmentProviderOptions]]
+  inline def loadQuery[TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, Any]] */](
+    environment: Environment,
+    preloadableRequest: PreloadableConcreteRequest[TQuery],
+    variables: VariablesOf[TQuery],
+    options: LoadQueryOptions,
+    environmentProviderOptions: TEnvironmentProviderOptions
+  ): PreloadedQuery[TQuery, TEnvironmentProviderOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadQuery")(environment.asInstanceOf[js.Any], preloadableRequest.asInstanceOf[js.Any], variables.asInstanceOf[js.Any], options.asInstanceOf[js.Any], environmentProviderOptions.asInstanceOf[js.Any])).asInstanceOf[PreloadedQuery[TQuery, TEnvironmentProviderOptions]]
+  inline def loadQuery[TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, Any]] */](environment: Environment, preloadableRequest: GraphQLTaggedNode, variables: VariablesOf[TQuery]): PreloadedQuery[TQuery, TEnvironmentProviderOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadQuery")(environment.asInstanceOf[js.Any], preloadableRequest.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[PreloadedQuery[TQuery, TEnvironmentProviderOptions]]
+  inline def loadQuery[TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, Any]] */](
+    environment: Environment,
+    preloadableRequest: GraphQLTaggedNode,
+    variables: VariablesOf[TQuery],
+    options: Unit,
+    environmentProviderOptions: TEnvironmentProviderOptions
+  ): PreloadedQuery[TQuery, TEnvironmentProviderOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadQuery")(environment.asInstanceOf[js.Any], preloadableRequest.asInstanceOf[js.Any], variables.asInstanceOf[js.Any], options.asInstanceOf[js.Any], environmentProviderOptions.asInstanceOf[js.Any])).asInstanceOf[PreloadedQuery[TQuery, TEnvironmentProviderOptions]]
+  inline def loadQuery[TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, Any]] */](
+    environment: Environment,
+    preloadableRequest: GraphQLTaggedNode,
+    variables: VariablesOf[TQuery],
+    options: LoadQueryOptions
+  ): PreloadedQuery[TQuery, TEnvironmentProviderOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadQuery")(environment.asInstanceOf[js.Any], preloadableRequest.asInstanceOf[js.Any], variables.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PreloadedQuery[TQuery, TEnvironmentProviderOptions]]
+  inline def loadQuery[TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, Any]] */](
+    environment: Environment,
+    preloadableRequest: GraphQLTaggedNode,
+    variables: VariablesOf[TQuery],
+    options: LoadQueryOptions,
+    environmentProviderOptions: TEnvironmentProviderOptions
+  ): PreloadedQuery[TQuery, TEnvironmentProviderOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadQuery")(environment.asInstanceOf[js.Any], preloadableRequest.asInstanceOf[js.Any], variables.asInstanceOf[js.Any], options.asInstanceOf[js.Any], environmentProviderOptions.asInstanceOf[js.Any])).asInstanceOf[PreloadedQuery[TQuery, TEnvironmentProviderOptions]]
+  
+  inline def readInlineData[TKey /* <: KeyType[Any] */](fragmentInput: GraphQLTaggedNode): (KeyTypeData[TKey, Any]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("readInlineData")(fragmentInput.asInstanceOf[js.Any]).asInstanceOf[(KeyTypeData[TKey, Any]) | Null]
+  inline def readInlineData[TKey /* <: KeyType[Any] */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): KeyTypeData[TKey, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("readInlineData")(fragmentInput.asInstanceOf[js.Any], fragmentRef.asInstanceOf[js.Any])).asInstanceOf[KeyTypeData[TKey, Any]]
+  
+  inline def readInlineData_TKey_KeyTypeAny_Union[TKey /* <: KeyType[Any] */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): (KeyTypeData[TKey, Any]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("readInlineData")(fragmentInput.asInstanceOf[js.Any], fragmentRef.asInstanceOf[js.Any])).asInstanceOf[(KeyTypeData[TKey, Any]) | Null]
   
   inline def requestSubscription[TSubscription /* <: OperationType */](
-    environment: typings.relayRuntime.relayStoreTypesMod.Environment,
+    environment: Environment,
     // tslint:disable-next-line no-unnecessary-generics
   config: GraphQLSubscriptionConfig[TSubscription]
   ): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("requestSubscription")(environment.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
-  trait ConnectionConfig[Props] extends StObject {
-    
-    var direction: js.UndefOr[backward | forward] = js.undefined
-    
-    var getConnectionFromProps: js.UndefOr[js.Function1[/* props */ Props, js.UndefOr[ConnectionData | Null]]] = js.undefined
-    
-    var getFragmentVariables: js.UndefOr[js.Function2[/* prevVars */ Variables, /* totalCount */ Double, Variables]] = js.undefined
-    
-    def getVariables(props: Props, paginationInfo: Count, fragmentVariables: Variables): Variables
-    
-    var query: GraphQLTaggedNode
-  }
-  object ConnectionConfig {
-    
-    inline def apply[Props](getVariables: (Props, Count, Variables) => Variables, query: GraphQLTaggedNode): ConnectionConfig[Props] = {
-      val __obj = js.Dynamic.literal(getVariables = js.Any.fromFunction3(getVariables), query = query.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ConnectionConfig[Props]]
-    }
-    
-    extension [Self <: ConnectionConfig[?], Props](x: Self & ConnectionConfig[Props]) {
-      
-      inline def setDirection(value: backward | forward): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
-      
-      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
-      
-      inline def setGetConnectionFromProps(value: /* props */ Props => js.UndefOr[ConnectionData | Null]): Self = StObject.set(x, "getConnectionFromProps", js.Any.fromFunction1(value))
-      
-      inline def setGetConnectionFromPropsUndefined: Self = StObject.set(x, "getConnectionFromProps", js.undefined)
-      
-      inline def setGetFragmentVariables(value: (/* prevVars */ Variables, /* totalCount */ Double) => Variables): Self = StObject.set(x, "getFragmentVariables", js.Any.fromFunction2(value))
-      
-      inline def setGetFragmentVariablesUndefined: Self = StObject.set(x, "getFragmentVariables", js.undefined)
-      
-      inline def setGetVariables(value: (Props, Count, Variables) => Variables): Self = StObject.set(x, "getVariables", js.Any.fromFunction3(value))
-      
-      inline def setQuery(value: GraphQLTaggedNode): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
-      
-      inline def setQueryFunction0(value: () => ReaderFragment | ConcreteRequest): Self = StObject.set(x, "query", js.Any.fromFunction0(value))
-    }
-  }
+  inline def useClientQuery[TQuery /* <: OperationType */](gqlQuery: GraphQLTaggedNode, variables: VariablesOf[TQuery]): /* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("useClientQuery")(gqlQuery.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any]
+  inline def useClientQuery[TQuery /* <: OperationType */](gqlQuery: GraphQLTaggedNode, variables: VariablesOf[TQuery], options: UNSTABLErenderPolicy): /* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("useClientQuery")(gqlQuery.asInstanceOf[js.Any], variables.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any]
   
-  trait ConnectionData extends StObject {
-    
-    var edges: js.UndefOr[js.Array[js.Any] | Null] = js.undefined
-    
-    var pageInfo: js.UndefOr[PartialPageInfo | Null] = js.undefined
-  }
-  object ConnectionData {
-    
-    inline def apply(): ConnectionData = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ConnectionData]
-    }
-    
-    extension [Self <: ConnectionData](x: Self) {
-      
-      inline def setEdges(value: js.Array[js.Any]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
-      
-      inline def setEdgesNull: Self = StObject.set(x, "edges", null)
-      
-      inline def setEdgesUndefined: Self = StObject.set(x, "edges", js.undefined)
-      
-      inline def setEdgesVarargs(value: js.Any*): Self = StObject.set(x, "edges", js.Array(value :_*))
-      
-      inline def setPageInfo(value: PartialPageInfo): Self = StObject.set(x, "pageInfo", value.asInstanceOf[js.Any])
-      
-      inline def setPageInfoNull: Self = StObject.set(x, "pageInfo", null)
-      
-      inline def setPageInfoUndefined: Self = StObject.set(x, "pageInfo", js.undefined)
-    }
-  }
+  inline def useEntryPointLoader[TEntryPoint](
+    environmentProvider: IEnvironmentProvider[EnvironmentProviderOptions[Record[String, Any]]],
+    entryPoint: TEntryPoint
+  ): UseEntryPointLoaderHookType[TEntryPoint] = (^.asInstanceOf[js.Dynamic].applyDynamic("useEntryPointLoader")(environmentProvider.asInstanceOf[js.Any], entryPoint.asInstanceOf[js.Any])).asInstanceOf[UseEntryPointLoaderHookType[TEntryPoint]]
   
-  type Container[Props] = ComponentType[ContainerProps[Props] & ComponentRef]
+  inline def useFragment[TKey /* <: ArrayKeyType[Any] */](fragmentInput: GraphQLTaggedNode): (ArrayKeyTypeData[TKey, Any]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("useFragment")(fragmentInput.asInstanceOf[js.Any]).asInstanceOf[(ArrayKeyTypeData[TKey, Any]) | Null]
+  inline def useFragment[TKey /* <: typings.reactRelay.helpersMod.KeyType[Any] */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): typings.reactRelay.helpersMod.KeyTypeData[TKey, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("useFragment")(fragmentInput.asInstanceOf[js.Any], fragmentRef.asInstanceOf[js.Any])).asInstanceOf[typings.reactRelay.helpersMod.KeyTypeData[TKey, Any]]
   
-  type ContainerProps[Props] = MappedFragmentProps[Pick[Props, Exclude[/* keyof Props */ String, relay]]]
+  inline def useFragment_TKey_ArrayKeyTypeAny_ArrayKeyTypeData[TKey /* <: ArrayKeyType[Any] */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): ArrayKeyTypeData[TKey, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("useFragment")(fragmentInput.asInstanceOf[js.Any], fragmentRef.asInstanceOf[js.Any])).asInstanceOf[ArrayKeyTypeData[TKey, Any]]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.reactRelay.reactRelayStrings.`store-and-network`
-    - typings.reactRelay.reactRelayStrings.`network-only`
-  */
-  trait FetchPolicy extends StObject
-  object FetchPolicy {
-    
-    inline def `network-only`: typings.reactRelay.reactRelayStrings.`network-only` = "network-only".asInstanceOf[typings.reactRelay.reactRelayStrings.`network-only`]
-    
-    inline def `store-and-network`: typings.reactRelay.reactRelayStrings.`store-and-network` = "store-and-network".asInstanceOf[typings.reactRelay.reactRelayStrings.`store-and-network`]
-  }
+  inline def useFragment_TKey_ArrayKeyTypeAny_Union[TKey /* <: ArrayKeyType[Any] */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): (ArrayKeyTypeData[TKey, Any]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("useFragment")(fragmentInput.asInstanceOf[js.Any], fragmentRef.asInstanceOf[js.Any])).asInstanceOf[(ArrayKeyTypeData[TKey, Any]) | Null]
   
-  type FragmentOrRegularProp[T] = T | js.Array[_FragmentRefs[js.Any]] | _FragmentRefs[js.Any]
+  inline def useFragment_TKey_KeyTypeAny[TKey /* <: typings.reactRelay.helpersMod.KeyType[Any] */](fragmentInput: GraphQLTaggedNode): (typings.reactRelay.helpersMod.KeyTypeData[TKey, Any]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("useFragment")(fragmentInput.asInstanceOf[js.Any]).asInstanceOf[(typings.reactRelay.helpersMod.KeyTypeData[TKey, Any]) | Null]
   
-  type MappedFragmentProps[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]: react-relay.react-relay.FragmentOrRegularProp<T[K]>}
-    */ typings.reactRelay.reactRelayStrings.MappedFragmentProps & TopLevel[T]
+  inline def useFragment_TKey_KeyTypeAny_Union[TKey /* <: typings.reactRelay.helpersMod.KeyType[Any] */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): (typings.reactRelay.helpersMod.KeyTypeData[TKey, Any]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("useFragment")(fragmentInput.asInstanceOf[js.Any], fragmentRef.asInstanceOf[js.Any])).asInstanceOf[(typings.reactRelay.helpersMod.KeyTypeData[TKey, Any]) | Null]
   
-  type ObserverOrCallback = Observer[Unit] | (js.Function1[/* error */ js.UndefOr[Error | Null], Unit])
+  inline def useLazyLoadQuery[TQuery /* <: OperationType */](gqlQuery: GraphQLTaggedNode, variables: VariablesOf[TQuery]): /* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("useLazyLoadQuery")(gqlQuery.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any]
+  inline def useLazyLoadQuery[TQuery /* <: OperationType */](gqlQuery: GraphQLTaggedNode, variables: VariablesOf[TQuery], options: FetchKey): /* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("useLazyLoadQuery")(gqlQuery.asInstanceOf[js.Any], variables.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any]
   
-  trait QueryRendererProps[TOperation /* <: OperationType */] extends StObject {
-    
-    var environment: typings.relayRuntime.relayStoreTypesMod.Environment
-    
-    var query: js.UndefOr[GraphQLTaggedNode | Null] = js.undefined
-    
-    def render(renderProps: typings.reactRelay.anon.Error[TOperation]): ReactNode
-    
-    var variables: /* import warning: importer.ImportType#apply Failed type conversion: TOperation['variables'] */ js.Any
-  }
-  object QueryRendererProps {
-    
-    inline def apply[TOperation /* <: OperationType */](
-      environment: typings.relayRuntime.relayStoreTypesMod.Environment,
-      render: typings.reactRelay.anon.Error[TOperation] => ReactNode,
-      variables: /* import warning: importer.ImportType#apply Failed type conversion: TOperation['variables'] */ js.Any
-    ): QueryRendererProps[TOperation] = {
-      val __obj = js.Dynamic.literal(environment = environment.asInstanceOf[js.Any], render = js.Any.fromFunction1(render), variables = variables.asInstanceOf[js.Any])
-      __obj.asInstanceOf[QueryRendererProps[TOperation]]
-    }
-    
-    extension [Self <: QueryRendererProps[?], TOperation /* <: OperationType */](x: Self & QueryRendererProps[TOperation]) {
-      
-      inline def setEnvironment(value: typings.relayRuntime.relayStoreTypesMod.Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
-      
-      inline def setQuery(value: GraphQLTaggedNode): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
-      
-      inline def setQueryFunction0(value: () => ReaderFragment | ConcreteRequest): Self = StObject.set(x, "query", js.Any.fromFunction0(value))
-      
-      inline def setQueryNull: Self = StObject.set(x, "query", null)
-      
-      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
-      
-      inline def setRender(value: typings.reactRelay.anon.Error[TOperation] => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
-      
-      inline def setVariables(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: TOperation['variables'] */ js.Any
-      ): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
-    }
-  }
+  inline def useMutation[TMutation /* <: MutationParameters */](mutation: GraphQLTaggedNode): js.Tuple2[js.Function1[/* config */ UseMutationConfig[TMutation], Disposable], Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useMutation")(mutation.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Function1[/* config */ UseMutationConfig[TMutation], Disposable], Boolean]]
+  inline def useMutation[TMutation /* <: MutationParameters */](
+    mutation: GraphQLTaggedNode,
+    commitMutationFn: js.Function2[/* environment */ Environment, /* config */ MutationConfig[TMutation], Disposable]
+  ): js.Tuple2[js.Function1[/* config */ UseMutationConfig[TMutation], Disposable], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useMutation")(mutation.asInstanceOf[js.Any], commitMutationFn.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Function1[/* config */ UseMutationConfig[TMutation], Disposable], Boolean]]
   
-  type ReactRelayLocalQueryRenderer[TOperation /* <: OperationType */] = Component[QueryRendererProps[TOperation], js.Object, js.Any]
+  inline def usePaginationFragment[TQuery /* <: OperationType */, TKey /* <: typings.reactRelay.helpersMod.KeyType[Any] */](fragmentInput: GraphQLTaggedNode): // tslint:disable-next-line no-unnecessary-generics
+  usePaginationFragmentHookType[TQuery, TKey | Null, (typings.reactRelay.helpersMod.KeyTypeData[TKey, Any]) | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("usePaginationFragment")(fragmentInput.asInstanceOf[js.Any]).asInstanceOf[// tslint:disable-next-line no-unnecessary-generics
+  usePaginationFragmentHookType[TQuery, TKey | Null, (typings.reactRelay.helpersMod.KeyTypeData[TKey, Any]) | Null]]
+  inline def usePaginationFragment[TQuery /* <: OperationType */, TKey /* <: typings.reactRelay.helpersMod.KeyType[Any] */](fragmentInput: GraphQLTaggedNode, parentFragmentRef: TKey): // tslint:disable-next-line no-unnecessary-generics
+  usePaginationFragmentHookType[TQuery, TKey | Null, (typings.reactRelay.helpersMod.KeyTypeData[TKey, Any]) | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("usePaginationFragment")(fragmentInput.asInstanceOf[js.Any], parentFragmentRef.asInstanceOf[js.Any])).asInstanceOf[// tslint:disable-next-line no-unnecessary-generics
+  usePaginationFragmentHookType[TQuery, TKey | Null, (typings.reactRelay.helpersMod.KeyTypeData[TKey, Any]) | Null]]
   
-  type ReactRelayQueryRenderer[TOperation /* <: OperationType */] = Component[CacheConfig & QueryRendererProps[TOperation], js.Object, js.Any]
+  inline def usePreloadedQuery[TQuery /* <: OperationType */](
+    gqlQuery: GraphQLTaggedNode,
+    preloadedQuery: PreloadedQuery[TQuery, EnvironmentProviderOptions[Record[String, Any]]]
+  ): /* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("usePreloadedQuery")(gqlQuery.asInstanceOf[js.Any], preloadedQuery.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any]
+  inline def usePreloadedQuery[TQuery /* <: OperationType */](
+    gqlQuery: GraphQLTaggedNode,
+    preloadedQuery: PreloadedQuery[TQuery, EnvironmentProviderOptions[Record[String, Any]]],
+    options: UNSTABLErenderPolicy
+  ): /* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("usePreloadedQuery")(gqlQuery.asInstanceOf[js.Any], preloadedQuery.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any]
   
-  trait RefetchOptions extends StObject {
-    
-    var fetchPolicy: js.UndefOr[`store-or-network` | `network-only`] = js.undefined
-    
-    var force: js.UndefOr[Boolean] = js.undefined
-  }
-  object RefetchOptions {
-    
-    inline def apply(): RefetchOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[RefetchOptions]
-    }
-    
-    extension [Self <: RefetchOptions](x: Self) {
-      
-      inline def setFetchPolicy(value: `store-or-network` | `network-only`): Self = StObject.set(x, "fetchPolicy", value.asInstanceOf[js.Any])
-      
-      inline def setFetchPolicyUndefined: Self = StObject.set(x, "fetchPolicy", js.undefined)
-      
-      inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
-      
-      inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
-    }
-  }
+  inline def useQueryLoader[TQuery /* <: OperationType */](preloadableRequest: PreloadableConcreteRequest[TQuery]): useQueryLoaderHookType[TQuery] = ^.asInstanceOf[js.Dynamic].applyDynamic("useQueryLoader")(preloadableRequest.asInstanceOf[js.Any]).asInstanceOf[useQueryLoaderHookType[TQuery]]
+  inline def useQueryLoader[TQuery /* <: OperationType */](
+    preloadableRequest: PreloadableConcreteRequest[TQuery],
+    initialQueryReference: PreloadedQuery[TQuery, EnvironmentProviderOptions[Record[String, Any]]]
+  ): useQueryLoaderHookType[TQuery] = (^.asInstanceOf[js.Dynamic].applyDynamic("useQueryLoader")(preloadableRequest.asInstanceOf[js.Any], initialQueryReference.asInstanceOf[js.Any])).asInstanceOf[useQueryLoaderHookType[TQuery]]
+  inline def useQueryLoader[TQuery /* <: OperationType */](preloadableRequest: GraphQLTaggedNode): useQueryLoaderHookType[TQuery] = ^.asInstanceOf[js.Dynamic].applyDynamic("useQueryLoader")(preloadableRequest.asInstanceOf[js.Any]).asInstanceOf[useQueryLoaderHookType[TQuery]]
+  inline def useQueryLoader[TQuery /* <: OperationType */](
+    preloadableRequest: GraphQLTaggedNode,
+    initialQueryReference: PreloadedQuery[TQuery, EnvironmentProviderOptions[Record[String, Any]]]
+  ): useQueryLoaderHookType[TQuery] = (^.asInstanceOf[js.Dynamic].applyDynamic("useQueryLoader")(preloadableRequest.asInstanceOf[js.Any], initialQueryReference.asInstanceOf[js.Any])).asInstanceOf[useQueryLoaderHookType[TQuery]]
   
-  @js.native
-  trait RelayPaginationProp extends StObject {
-    
-    val environment: typings.relayRuntime.mod.Environment = js.native
-    
-    def hasMore(): Boolean = js.native
-    
-    def isLoading(): Boolean = js.native
-    
-    def loadMore(pageSize: Double): js.UndefOr[Disposable | Null] = js.native
-    def loadMore(pageSize: Double, observerOrCallback: Null, options: RefetchOptions): js.UndefOr[Disposable | Null] = js.native
-    def loadMore(pageSize: Double, observerOrCallback: Unit, options: RefetchOptions): js.UndefOr[Disposable | Null] = js.native
-    def loadMore(pageSize: Double, observerOrCallback: ObserverOrCallback): js.UndefOr[Disposable | Null] = js.native
-    def loadMore(pageSize: Double, observerOrCallback: ObserverOrCallback, options: RefetchOptions): js.UndefOr[Disposable | Null] = js.native
-    
-    var refetch: Unit = js.native
-    
-    def refetchConnection(totalCount: Double): js.UndefOr[Disposable | Null] = js.native
-    def refetchConnection(totalCount: Double, observerOrCallback: Null, refetchVariables: Variables): js.UndefOr[Disposable | Null] = js.native
-    def refetchConnection(totalCount: Double, observerOrCallback: Unit, refetchVariables: Variables): js.UndefOr[Disposable | Null] = js.native
-    def refetchConnection(totalCount: Double, observerOrCallback: ObserverOrCallback): js.UndefOr[Disposable | Null] = js.native
-    def refetchConnection(totalCount: Double, observerOrCallback: ObserverOrCallback, refetchVariables: Variables): js.UndefOr[Disposable | Null] = js.native
-  }
+  inline def useRefetchableFragment[TQuery /* <: OperationType */, TKey /* <: typings.reactRelay.helpersMod.KeyType[Any] */](fragmentInput: GraphQLTaggedNode): // tslint:disable-next-line no-unnecessary-generics
+  useRefetchableFragmentHookType[TQuery, TKey, (typings.reactRelay.helpersMod.KeyTypeData[TKey, Any]) | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRefetchableFragment")(fragmentInput.asInstanceOf[js.Any]).asInstanceOf[// tslint:disable-next-line no-unnecessary-generics
+  useRefetchableFragmentHookType[TQuery, TKey, (typings.reactRelay.helpersMod.KeyTypeData[TKey, Any]) | Null]]
+  inline def useRefetchableFragment[TQuery /* <: OperationType */, TKey /* <: typings.reactRelay.helpersMod.KeyType[Any] */](fragmentInput: GraphQLTaggedNode, fragmentRef: TKey): // tslint:disable-next-line no-unnecessary-generics
+  useRefetchableFragmentHookType[TQuery, TKey, (typings.reactRelay.helpersMod.KeyTypeData[TKey, Any]) | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("useRefetchableFragment")(fragmentInput.asInstanceOf[js.Any], fragmentRef.asInstanceOf[js.Any])).asInstanceOf[// tslint:disable-next-line no-unnecessary-generics
+  useRefetchableFragmentHookType[TQuery, TKey, (typings.reactRelay.helpersMod.KeyTypeData[TKey, Any]) | Null]]
   
-  trait RelayProp extends StObject {
-    
-    var environment: typings.relayRuntime.mod.Environment
-    
-    // ensures no RelayRefetchProp is used with a fragment container
-    var hasMore: Unit
-    
-    var refetch: Unit
-  }
-  object RelayProp {
-    
-    inline def apply(environment: typings.relayRuntime.mod.Environment, hasMore: Unit, refetch: Unit): RelayProp = {
-      val __obj = js.Dynamic.literal(environment = environment.asInstanceOf[js.Any], hasMore = hasMore.asInstanceOf[js.Any], refetch = refetch.asInstanceOf[js.Any])
-      __obj.asInstanceOf[RelayProp]
-    }
-    
-    extension [Self <: RelayProp](x: Self) {
-      
-      inline def setEnvironment(value: typings.relayRuntime.mod.Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
-      
-      inline def setHasMore(value: Unit): Self = StObject.set(x, "hasMore", value.asInstanceOf[js.Any])
-      
-      inline def setRefetch(value: Unit): Self = StObject.set(x, "refetch", value.asInstanceOf[js.Any])
-    }
-  }
+  inline def useRelayEnvironment(): typings.relayRuntime.mod.Environment = ^.asInstanceOf[js.Dynamic].applyDynamic("useRelayEnvironment")().asInstanceOf[typings.relayRuntime.mod.Environment]
   
-  @js.native
-  trait RelayRefetchProp extends StObject {
-    
-    var environment: typings.relayRuntime.mod.Environment = js.native
-    
-    var hasMore: Unit = js.native
-    
-    def refetch(refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables]): Disposable = js.native
-    def refetch(
-      refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables],
-      renderVariables: Null,
-      observerOrCallback: Null,
-      options: RefetchOptions
-    ): Disposable = js.native
-    def refetch(
-      refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables],
-      renderVariables: Null,
-      observerOrCallback: Unit,
-      options: RefetchOptions
-    ): Disposable = js.native
-    def refetch(
-      refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables],
-      renderVariables: Null,
-      observerOrCallback: ObserverOrCallback
-    ): Disposable = js.native
-    def refetch(
-      refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables],
-      renderVariables: Null,
-      observerOrCallback: ObserverOrCallback,
-      options: RefetchOptions
-    ): Disposable = js.native
-    def refetch(
-      refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables],
-      renderVariables: Unit,
-      observerOrCallback: Null,
-      options: RefetchOptions
-    ): Disposable = js.native
-    def refetch(
-      refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables],
-      renderVariables: Unit,
-      observerOrCallback: Unit,
-      options: RefetchOptions
-    ): Disposable = js.native
-    def refetch(
-      refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables],
-      renderVariables: Unit,
-      observerOrCallback: ObserverOrCallback
-    ): Disposable = js.native
-    def refetch(
-      refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables],
-      renderVariables: Unit,
-      observerOrCallback: ObserverOrCallback,
-      options: RefetchOptions
-    ): Disposable = js.native
-    def refetch(
-      refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables],
-      renderVariables: Variables
-    ): Disposable = js.native
-    def refetch(
-      refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables],
-      renderVariables: Variables,
-      observerOrCallback: Null,
-      options: RefetchOptions
-    ): Disposable = js.native
-    def refetch(
-      refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables],
-      renderVariables: Variables,
-      observerOrCallback: Unit,
-      options: RefetchOptions
-    ): Disposable = js.native
-    def refetch(
-      refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables],
-      renderVariables: Variables,
-      observerOrCallback: ObserverOrCallback
-    ): Disposable = js.native
-    def refetch(
-      refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables],
-      renderVariables: Variables,
-      observerOrCallback: ObserverOrCallback,
-      options: RefetchOptions
-    ): Disposable = js.native
-    def refetch(refetchVariables: Variables): Disposable = js.native
-    def refetch(
-      refetchVariables: Variables,
-      renderVariables: Null,
-      observerOrCallback: Null,
-      options: RefetchOptions
-    ): Disposable = js.native
-    def refetch(
-      refetchVariables: Variables,
-      renderVariables: Null,
-      observerOrCallback: Unit,
-      options: RefetchOptions
-    ): Disposable = js.native
-    def refetch(refetchVariables: Variables, renderVariables: Null, observerOrCallback: ObserverOrCallback): Disposable = js.native
-    def refetch(
-      refetchVariables: Variables,
-      renderVariables: Null,
-      observerOrCallback: ObserverOrCallback,
-      options: RefetchOptions
-    ): Disposable = js.native
-    def refetch(
-      refetchVariables: Variables,
-      renderVariables: Unit,
-      observerOrCallback: Null,
-      options: RefetchOptions
-    ): Disposable = js.native
-    def refetch(
-      refetchVariables: Variables,
-      renderVariables: Unit,
-      observerOrCallback: Unit,
-      options: RefetchOptions
-    ): Disposable = js.native
-    def refetch(refetchVariables: Variables, renderVariables: Unit, observerOrCallback: ObserverOrCallback): Disposable = js.native
-    def refetch(
-      refetchVariables: Variables,
-      renderVariables: Unit,
-      observerOrCallback: ObserverOrCallback,
-      options: RefetchOptions
-    ): Disposable = js.native
-    def refetch(refetchVariables: Variables, renderVariables: Variables): Disposable = js.native
-    def refetch(
-      refetchVariables: Variables,
-      renderVariables: Variables,
-      observerOrCallback: Null,
-      options: RefetchOptions
-    ): Disposable = js.native
-    def refetch(
-      refetchVariables: Variables,
-      renderVariables: Variables,
-      observerOrCallback: Unit,
-      options: RefetchOptions
-    ): Disposable = js.native
-    def refetch(refetchVariables: Variables, renderVariables: Variables, observerOrCallback: ObserverOrCallback): Disposable = js.native
-    def refetch(
-      refetchVariables: Variables,
-      renderVariables: Variables,
-      observerOrCallback: ObserverOrCallback,
-      options: RefetchOptions
-    ): Disposable = js.native
-  }
+  inline def useSubscribeToInvalidationState(dataIDs: js.Array[DataID], callback: js.Function0[Unit]): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("useSubscribeToInvalidationState")(dataIDs.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Disposable]
+  
+  inline def useSubscription[TSubscriptionPayload /* <: OperationType */](
+    // The actual subtype of OperationType is required to allow for type inference inside GraphQLSubscriptionConfig.s
+  // tslint:disable-next-line no-unnecessary-generics
+  config: GraphQLSubscriptionConfig[TSubscriptionPayload]
+  ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useSubscription")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def useSubscription[TSubscriptionPayload /* <: OperationType */](
+    // The actual subtype of OperationType is required to allow for type inference inside GraphQLSubscriptionConfig.s
+  // tslint:disable-next-line no-unnecessary-generics
+  config: GraphQLSubscriptionConfig[TSubscriptionPayload],
+    requestSubscriptionFn: FnCall
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useSubscription")(config.asInstanceOf[js.Any], requestSubscriptionFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

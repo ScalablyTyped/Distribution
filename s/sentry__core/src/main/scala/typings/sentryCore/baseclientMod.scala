@@ -1,34 +1,37 @@
 package typings.sentryCore
 
-import typings.sentryCore.basebackendMod.Backend
-import typings.sentryCore.basebackendMod.BackendClass
 import typings.sentryCore.integrationMod.IntegrationIndex
 import typings.sentryHub.mod.Scope
-import typings.sentryHub.mod.Session
 import typings.sentryTypes.clientMod.Client
+import typings.sentryTypes.clientreportMod.Outcome
+import typings.sentryTypes.dsnMod.DsnComponents
+import typings.sentryTypes.envelopeMod.Envelope
 import typings.sentryTypes.eventMod.Event
 import typings.sentryTypes.eventMod.EventHint
-import typings.sentryTypes.optionsMod.Options
+import typings.sentryTypes.integrationMod.Integration
+import typings.sentryTypes.optionsMod.ClientOptions
+import typings.sentryTypes.sessionMod.Session
 import typings.sentryTypes.severityMod.Severity
-import typings.sentryUtils.mod.Dsn
+import typings.sentryTypes.severityMod.SeverityLevel
+import typings.sentryTypes.transportMod.BaseTransportOptions
+import typings.sentryTypes.transportMod.Transport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseclientMod {
   
-  @JSImport("@sentry/core/dist/baseclient", "BaseClient")
+  @JSImport("@sentry/core/types/baseclient", "BaseClient")
   @js.native
-  abstract class BaseClient[B /* <: Backend */, O /* <: Options */] protected ()
+  abstract class BaseClient[O /* <: ClientOptions[BaseTransportOptions] */] protected ()
     extends StObject
        with Client[O] {
     /**
       * Initializes this client instance.
       *
-      * @param backendClass A constructor function to create the backend.
       * @param options Options for the client.
       */
-    /* protected */ def this(backendClass: BackendClass[B, O], options: O) = this()
+    /* protected */ def this(options: O) = this()
     
     /**
       *  Enhances event using the client configuration.
@@ -40,16 +43,9 @@ object baseclientMod {
     
     /**
       * This function adds all used integrations to the SDK info in the event.
-      * @param sdkInfo The sdkInfo of the event that will be filled with all integrations.
+      * @param event The event that will be filled with all integrations.
       */
     /* protected */ def _applyIntegrationsMetadata(event: Event): Unit = js.native
-    
-    /**
-      * The backend used to physically interact in the environment. Usually, this
-      * will correspond to the client. When composing SDKs, however, the Backend
-      * from the root SDK will be used.
-      */
-    /* protected */ val _backend: B = js.native
     
     /**
       * Processes the event and logs an error in case of rejection
@@ -62,23 +58,37 @@ object baseclientMod {
     /* protected */ def _captureEvent(event: Event, hint: EventHint): js.Thenable[js.UndefOr[String]] = js.native
     /* protected */ def _captureEvent(event: Event, hint: EventHint, scope: Scope): js.Thenable[js.UndefOr[String]] = js.native
     
+    /**
+      * Clears outcomes on this client and returns them.
+      */
+    /* protected */ def _clearOutcomes(): js.Array[Outcome] = js.native
+    
     /** The client Dsn, if specified in options. Without this Dsn, the SDK will be disabled. */
-    /* protected */ val _dsn: js.UndefOr[Dsn] = js.native
+    /* protected */ val _dsn: js.UndefOr[DsnComponents] = js.native
     
-    /** Returns the current backend. */
-    /* protected */ def _getBackend(): B = js.native
-    
-    /** Array of used integrations. */
+    /** Array of set up integrations. */
     /* protected */ var _integrations: IntegrationIndex = js.native
     
-    /** Waits for the client to be done with processing. */
-    /* protected */ def _isClientProcessing(): js.Thenable[Boolean] = js.native
-    /* protected */ def _isClientProcessing(timeout: Double): js.Thenable[Boolean] = js.native
+    /** Indicates whether this client's integrations have been set up. */
+    /* protected */ var _integrationsInitialized: Boolean = js.native
+    
+    /**
+      * Determine if the client is finished processing. Returns a promise because it will wait `timeout` ms before saying
+      * "no" (resolving to `false`) in order to give the client a chance to potentially finish first.
+      *
+      * @param timeout The time, in ms, after which to resolve to `false` if the client is still busy. Passing `0` (or not
+      * passing anything) will make the promise wait as long as it takes for processing to finish before resolving to
+      * `true`.
+      * @returns A promise which will resolve to `true` if processing is already done or finishes before the timeout, and
+      * `false` otherwise
+      */
+    /* protected */ def _isClientDoneProcessing(): js.Thenable[Boolean] = js.native
+    /* protected */ def _isClientDoneProcessing(timeout: Double): js.Thenable[Boolean] = js.native
     
     /** Determines whether this SDK is enabled and a valid Dsn is present. */
     /* protected */ def _isEnabled(): Boolean = js.native
     
-    /* protected */ def _normalizeEvent(event: Null, depth: Double): Event | Null = js.native
+    /* protected */ def _normalizeEvent(event: Null, depth: Double, maxBreadth: Double): Event | Null = js.native
     /**
       * Applies `normalize` function on necessary `Event` attributes to make them safe for serialization.
       * Normalized keys:
@@ -89,10 +99,16 @@ object baseclientMod {
       * @param event Event
       * @returns Normalized event
       */
-    /* protected */ def _normalizeEvent(event: Event, depth: Double): Event | Null = js.native
+    /* protected */ def _normalizeEvent(event: Event, depth: Double, maxBreadth: Double): Event | Null = js.native
+    
+    /** Number of calls being processed */
+    /* protected */ var _numProcessing: Double = js.native
     
     /** Options passed to the SDK. */
     /* protected */ val _options: O = js.native
+    
+    /** Holds flushable  */
+    /* private */ var _outcomes: Any = js.native
     
     /**
       * Adds common information to events.
@@ -108,10 +124,8 @@ object baseclientMod {
       * @param scope A scope containing event metadata.
       * @returns A new event with more information.
       */
-    /* protected */ def _prepareEvent(event: Event): js.Thenable[Event | Null] = js.native
-    /* protected */ def _prepareEvent(event: Event, scope: Unit, hint: EventHint): js.Thenable[Event | Null] = js.native
-    /* protected */ def _prepareEvent(event: Event, scope: Scope): js.Thenable[Event | Null] = js.native
-    /* protected */ def _prepareEvent(event: Event, scope: Scope, hint: EventHint): js.Thenable[Event | Null] = js.native
+    /* protected */ def _prepareEvent(event: Event, hint: EventHint): js.Thenable[Event | Null] = js.native
+    /* protected */ def _prepareEvent(event: Event, hint: EventHint, scope: Scope): js.Thenable[Event | Null] = js.native
     
     /**
       * Occupies the client with processing and event
@@ -131,22 +145,15 @@ object baseclientMod {
       * @param scope A scope containing event metadata.
       * @returns A SyncPromise that resolves with the event or rejects in case event was/will not be send.
       */
-    /* protected */ def _processEvent(event: Event): js.Thenable[Event] = js.native
-    /* protected */ def _processEvent(event: Event, hint: Unit, scope: Scope): js.Thenable[Event] = js.native
     /* protected */ def _processEvent(event: Event, hint: EventHint): js.Thenable[Event] = js.native
     /* protected */ def _processEvent(event: Event, hint: EventHint, scope: Scope): js.Thenable[Event] = js.native
     
-    /** Number of call being processed */
-    /* protected */ var _processing: Double = js.native
-    
     /**
-      * Tells the backend to send this event
-      * @param event The Sentry event to send
+      * @inheritdoc
       */
-    /* protected */ def _sendEvent(event: Event): Unit = js.native
+    /* protected */ def _sendEnvelope(envelope: Envelope): Unit = js.native
     
-    /** Deliver captured session to Sentry */
-    /* protected */ def _sendSession(session: Session): Unit = js.native
+    /* protected */ val _transport: js.UndefOr[Transport] = js.native
     
     /** Updates existing session based on the provided event */
     /* protected */ def _updateSessionFromEvent(session: Session, event: Event): Unit = js.native
@@ -154,11 +161,13 @@ object baseclientMod {
     def captureEvent(event: Event, hint: Unit, scope: Scope): js.UndefOr[String] = js.native
     def captureEvent(event: Event, hint: EventHint, scope: Scope): js.UndefOr[String] = js.native
     
-    def captureException(exception: js.Any, hint: Unit, scope: Scope): js.UndefOr[String] = js.native
-    def captureException(exception: js.Any, hint: EventHint, scope: Scope): js.UndefOr[String] = js.native
+    def captureException(exception: Any, hint: Unit, scope: Scope): js.UndefOr[String] = js.native
+    def captureException(exception: Any, hint: EventHint, scope: Scope): js.UndefOr[String] = js.native
     
     def captureMessage(message: String, level: Unit, hint: Unit, scope: Scope): js.UndefOr[String] = js.native
     def captureMessage(message: String, level: Unit, hint: EventHint, scope: Scope): js.UndefOr[String] = js.native
+    def captureMessage(message: String, level: SeverityLevel, hint: Unit, scope: Scope): js.UndefOr[String] = js.native
+    def captureMessage(message: String, level: SeverityLevel, hint: EventHint, scope: Scope): js.UndefOr[String] = js.native
     def captureMessage(message: String, level: Severity, hint: Unit, scope: Scope): js.UndefOr[String] = js.native
     def captureMessage(message: String, level: Severity, hint: EventHint, scope: Scope): js.UndefOr[String] = js.native
     
@@ -167,5 +176,12 @@ object baseclientMod {
       */
     @JSName("captureSession")
     def captureSession_MBaseClient(session: Session): Unit = js.native
+    
+    /**
+      * Gets an installed integration by its `id`.
+      *
+      * @returns The installed integration or `undefined` if no integration with that `id` was installed.
+      */
+    def getIntegrationById(integrationId: String): js.UndefOr[Integration] = js.native
   }
 }

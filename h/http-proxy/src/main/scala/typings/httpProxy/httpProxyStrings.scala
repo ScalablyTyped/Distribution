@@ -23,6 +23,10 @@ object httpProxyStrings {
   inline def error: error = "error".asInstanceOf[error]
   
   @js.native
+  sealed trait open extends StObject
+  inline def open: open = "open".asInstanceOf[open]
+  
+  @js.native
   sealed trait proxyReq extends StObject
   inline def proxyReq: proxyReq = "proxyReq".asInstanceOf[proxyReq]
   

@@ -1,30 +1,26 @@
 package typings.googleapis.monitoringV3Mod.monitoringV3
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * This message configures which resources and services to monitor for
-  * availability.
-  */
 trait SchemaUptimeCheckConfig extends StObject {
   
   /**
-    * The expected content on the page the check is run against. Currently,
-    * only the first entry in the list is supported, and other entries will be
-    * ignored. The server will look for an exact match of the string in the
-    * page response&#39;s content. This field is optional and should only be
-    * specified if a content match is required.
+    * The type of checkers to use to execute the Uptime check.
+    */
+  var checkerType: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * The content that is expected to appear in the data returned by the target server against which the check is run. Currently, only the first entry in the content_matchers list is supported, and additional entries will be ignored. This field is optional and should only be specified if a content match is required as part of the/ Uptime check.
     */
   var contentMatchers: js.UndefOr[js.Array[SchemaContentMatcher]] = js.undefined
   
   /**
-    * A human-friendly name for the uptime check configuration. The display
-    * name should be unique within a Stackdriver Workspace in order to make it
-    * easier to identify; however, uniqueness is not enforced. Required.
+    * A human-friendly name for the Uptime check configuration. The display name should be unique within a Cloud Monitoring Workspace in order to make it easier to identify; however, uniqueness is not enforced. Required.
     */
-  var displayName: js.UndefOr[String] = js.undefined
+  var displayName: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Contains information needed to make an HTTP or HTTPS check.
@@ -32,36 +28,29 @@ trait SchemaUptimeCheckConfig extends StObject {
   var httpCheck: js.UndefOr[SchemaHttpCheck] = js.undefined
   
   /**
-    * The internal checkers that this check will egress from. If is_internal is
-    * true and this list is empty, the check will egress from all the
-    * InternalCheckers configured for the project that owns this CheckConfig.
+    * The internal checkers that this check will egress from. If is_internal is true and this list is empty, the check will egress from all the InternalCheckers configured for the project that owns this UptimeCheckConfig.
     */
   var internalCheckers: js.UndefOr[js.Array[SchemaInternalChecker]] = js.undefined
   
   /**
-    * The monitored resource
-    * (https://cloud.google.com/monitoring/api/resources) associated with the
-    * configuration. The following monitored resource types are supported for
-    * uptime checks:  uptime_url  gce_instance  gae_app  aws_ec2_instance
-    * aws_elb_load_balancer
+    * If this is true, then checks are made only from the 'internal_checkers'. If it is false, then checks are made only from the 'selected_regions'. It is an error to provide 'selected_regions' when is_internal is true, or to provide 'internal_checkers' when is_internal is false.
+    */
+  var isInternal: js.UndefOr[Boolean | Null] = js.undefined
+  
+  /**
+    * The monitored resource (https://cloud.google.com/monitoring/api/resources) associated with the configuration. The following monitored resource types are valid for this field: uptime_url, gce_instance, gae_app, aws_ec2_instance, aws_elb_load_balancer k8s_service servicedirectory_service cloud_run_revision
     */
   var monitoredResource: js.UndefOr[SchemaMonitoredResource] = js.undefined
   
   /**
-    * A unique resource name for this UptimeCheckConfig. The format
-    * is:projects/[PROJECT_ID]/uptimeCheckConfigs/[UPTIME_CHECK_ID].This field
-    * should be omitted when creating the uptime check configuration; on
-    * create, the resource name is assigned by the server and included in the
-    * response.
+    * A unique resource name for this Uptime check configuration. The format is: projects/[PROJECT_ID_OR_NUMBER]/uptimeCheckConfigs/[UPTIME_CHECK_ID] [PROJECT_ID_OR_NUMBER] is the Workspace host project associated with the Uptime check.This field should be omitted when creating the Uptime check configuration; on create, the resource name is assigned by the server and included in the response.
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * How often, in seconds, the uptime check is performed. Currently, the only
-    * supported values are 60s (1 minute), 300s (5 minutes), 600s (10 minutes),
-    * and 900s (15 minutes). Optional, defaults to 60s.
+    * How often, in seconds, the Uptime check is performed. Currently, the only supported values are 60s (1 minute), 300s (5 minutes), 600s (10 minutes), and 900s (15 minutes). Optional, defaults to 60s.
     */
-  var period: js.UndefOr[String] = js.undefined
+  var period: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The group resource associated with the configuration.
@@ -69,13 +58,9 @@ trait SchemaUptimeCheckConfig extends StObject {
   var resourceGroup: js.UndefOr[SchemaResourceGroup] = js.undefined
   
   /**
-    * The list of regions from which the check will be run. Some regions
-    * contain one location, and others contain more than one. If this field is
-    * specified, enough regions to include a minimum of 3 locations must be
-    * provided, or an error message is returned. Not specifying this field will
-    * result in uptime checks running from all regions.
+    * The list of regions from which the check will be run. Some regions contain one location, and others contain more than one. If this field is specified, enough regions must be provided to include a minimum of 3 locations. Not specifying this field will result in Uptime checks running from all available regions.
     */
-  var selectedRegions: js.UndefOr[js.Array[String]] = js.undefined
+  var selectedRegions: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /**
     * Contains information needed to make a TCP check.
@@ -83,10 +68,14 @@ trait SchemaUptimeCheckConfig extends StObject {
   var tcpCheck: js.UndefOr[SchemaTcpCheck] = js.undefined
   
   /**
-    * The maximum amount of time to wait for the request to complete (must be
-    * between 1 and 60 seconds). Required.
+    * The maximum amount of time to wait for the request to complete (must be between 1 and 60 seconds). Required.
     */
-  var timeout: js.UndefOr[String] = js.undefined
+  var timeout: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * User-supplied key/value data to be used for organizing and identifying the UptimeCheckConfig objects.The field can contain up to 64 entries. Each key and value is limited to 63 Unicode characters or 128 bytes, whichever is smaller. Labels and values can contain only lowercase letters, numerals, underscores, and dashes. Keys must begin with a letter.
+    */
+  var userLabels: js.UndefOr[StringDictionary[String] | Null] = js.undefined
 }
 object SchemaUptimeCheckConfig {
   
@@ -97,13 +86,21 @@ object SchemaUptimeCheckConfig {
   
   extension [Self <: SchemaUptimeCheckConfig](x: Self) {
     
+    inline def setCheckerType(value: String): Self = StObject.set(x, "checkerType", value.asInstanceOf[js.Any])
+    
+    inline def setCheckerTypeNull: Self = StObject.set(x, "checkerType", null)
+    
+    inline def setCheckerTypeUndefined: Self = StObject.set(x, "checkerType", js.undefined)
+    
     inline def setContentMatchers(value: js.Array[SchemaContentMatcher]): Self = StObject.set(x, "contentMatchers", value.asInstanceOf[js.Any])
     
     inline def setContentMatchersUndefined: Self = StObject.set(x, "contentMatchers", js.undefined)
     
-    inline def setContentMatchersVarargs(value: SchemaContentMatcher*): Self = StObject.set(x, "contentMatchers", js.Array(value :_*))
+    inline def setContentMatchersVarargs(value: SchemaContentMatcher*): Self = StObject.set(x, "contentMatchers", js.Array(value*))
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
     inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
@@ -115,7 +112,13 @@ object SchemaUptimeCheckConfig {
     
     inline def setInternalCheckersUndefined: Self = StObject.set(x, "internalCheckers", js.undefined)
     
-    inline def setInternalCheckersVarargs(value: SchemaInternalChecker*): Self = StObject.set(x, "internalCheckers", js.Array(value :_*))
+    inline def setInternalCheckersVarargs(value: SchemaInternalChecker*): Self = StObject.set(x, "internalCheckers", js.Array(value*))
+    
+    inline def setIsInternal(value: Boolean): Self = StObject.set(x, "isInternal", value.asInstanceOf[js.Any])
+    
+    inline def setIsInternalNull: Self = StObject.set(x, "isInternal", null)
+    
+    inline def setIsInternalUndefined: Self = StObject.set(x, "isInternal", js.undefined)
     
     inline def setMonitoredResource(value: SchemaMonitoredResource): Self = StObject.set(x, "monitoredResource", value.asInstanceOf[js.Any])
     
@@ -123,9 +126,13 @@ object SchemaUptimeCheckConfig {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setPeriod(value: String): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    
+    inline def setPeriodNull: Self = StObject.set(x, "period", null)
     
     inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
@@ -135,9 +142,11 @@ object SchemaUptimeCheckConfig {
     
     inline def setSelectedRegions(value: js.Array[String]): Self = StObject.set(x, "selectedRegions", value.asInstanceOf[js.Any])
     
+    inline def setSelectedRegionsNull: Self = StObject.set(x, "selectedRegions", null)
+    
     inline def setSelectedRegionsUndefined: Self = StObject.set(x, "selectedRegions", js.undefined)
     
-    inline def setSelectedRegionsVarargs(value: String*): Self = StObject.set(x, "selectedRegions", js.Array(value :_*))
+    inline def setSelectedRegionsVarargs(value: String*): Self = StObject.set(x, "selectedRegions", js.Array(value*))
     
     inline def setTcpCheck(value: SchemaTcpCheck): Self = StObject.set(x, "tcpCheck", value.asInstanceOf[js.Any])
     
@@ -145,6 +154,14 @@ object SchemaUptimeCheckConfig {
     
     inline def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
+    inline def setTimeoutNull: Self = StObject.set(x, "timeout", null)
+    
     inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    
+    inline def setUserLabels(value: StringDictionary[String]): Self = StObject.set(x, "userLabels", value.asInstanceOf[js.Any])
+    
+    inline def setUserLabelsNull: Self = StObject.set(x, "userLabels", null)
+    
+    inline def setUserLabelsUndefined: Self = StObject.set(x, "userLabels", js.undefined)
   }
 }

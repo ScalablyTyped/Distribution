@@ -21,10 +21,10 @@ object Light {
     
     inline def setDark(value: String | js.Array[String]): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
     
-    inline def setDarkVarargs(value: String*): Self = StObject.set(x, "dark", js.Array(value :_*))
+    inline def setDarkVarargs(value: String*): Self = StObject.set(x, "dark", js.Array(value*))
     
     inline def setLight(value: String | js.Array[String]): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
     
-    inline def setLightVarargs(value: String*): Self = StObject.set(x, "light", js.Array(value :_*))
+    inline def setLightVarargs(value: String*): Self = StObject.set(x, "light", js.Array(value*))
   }
 }

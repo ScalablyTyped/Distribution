@@ -14,10 +14,14 @@ import typings.phaser.Phaser.Loader.LoaderPlugin
 import typings.phaser.Phaser.Physics.Arcade.ArcadePhysics
 import typings.phaser.Phaser.Physics.Matter.MatterPhysics
 import typings.phaser.Phaser.Plugins.PluginManager
+import typings.phaser.Phaser.Renderer.Canvas.CanvasRenderer
+import typings.phaser.Phaser.Renderer.WebGL.WebGLRenderer
 import typings.phaser.Phaser.Scale.ScaleManager
 import typings.phaser.Phaser.Scenes.ScenePlugin
 import typings.phaser.Phaser.Scenes.Systems
-import typings.phaser.Phaser.Sound.BaseSoundManager
+import typings.phaser.Phaser.Sound.HTML5AudioSoundManager
+import typings.phaser.Phaser.Sound.NoAudioSoundManager
+import typings.phaser.Phaser.Sound.WebAudioSoundManager
 import typings.phaser.Phaser.Textures.TextureManager
 import typings.phaser.Phaser.Time.Clock
 import typings.phaser.Phaser.Tweens.TweenManager
@@ -33,97 +37,114 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Scene extends StObject {
   
   /**
-    * A scene level Game Object Factory.
+    * The Scene Game Object Factory.
+    * 
     * This property will only be available if defined in the Scene Injection Map.
     */
   var add: GameObjectFactory
   
   /**
     * A reference to the global Animation Manager.
+    * 
     * This property will only be available if defined in the Scene Injection Map.
     */
   var anims: AnimationManager
   
   /**
     * A reference to the global Cache.
+    * 
     * This property will only be available if defined in the Scene Injection Map.
     */
   var cache: CacheManager
   
   /**
-    * A scene level Camera System.
+    * The Scene Camera Manager.
+    * 
     * This property will only be available if defined in the Scene Injection Map.
     */
   var cameras: CameraManager
   
   /**
-    * A scene level Game Object Display List.
+    * The Game Object Display List belonging to this Scene.
+    * 
     * This property will only be available if defined in the Scene Injection Map.
     */
   var children: DisplayList
   
   /**
-    * A scene level Data Manager Plugin.
+    * A Scene specific Data Manager Plugin.
+    * 
+    * See the `registry` property for the global Data Manager.
+    * 
     * This property will only be available if defined in the Scene Injection Map and the plugin is installed.
     */
   var data: DataManager
   
   /**
-    * A scene level Event Emitter.
+    * A Scene specific Event Emitter.
+    * 
     * This property will only be available if defined in the Scene Injection Map.
     */
   var events: EventEmitter
   
   /**
-    * A scene level Facebook Instant Games Plugin.
+    * The Facebook Instant Games Plugin.
+    * 
     * This property will only be available if defined in the Scene Injection Map, the plugin is installed and configured.
     */
   var facebook: FacebookInstantGamesPlugin
   
   /**
     * A reference to the Phaser.Game instance.
+    * 
     * This property will only be available if defined in the Scene Injection Map.
     */
   var game: Game
   
   /**
-    * A scene level Input Manager Plugin.
+    * The Scene Input Manager Plugin.
+    * 
     * This property will only be available if defined in the Scene Injection Map and the plugin is installed.
     */
   var input: InputPlugin
   
   /**
-    * A scene level Lights Manager Plugin.
+    * The Scene Lights Manager Plugin.
+    * 
     * This property will only be available if defined in the Scene Injection Map and the plugin is installed.
     */
   var lights: LightsManager
   
   /**
-    * A scene level Loader Plugin.
+    * The Scene Loader Plugin.
+    * 
     * This property will only be available if defined in the Scene Injection Map and the plugin is installed.
     */
   var load: LoaderPlugin
   
   /**
-    * A scene level Game Object Creator.
+    * The Scene Game Object Creator.
+    * 
     * This property will only be available if defined in the Scene Injection Map.
     */
   var make: GameObjectCreator
   
   /**
-    * A scene level Matter Physics Plugin.
+    * The Scene Matter Physics Plugin.
+    * 
     * This property will only be available if defined in the Scene Injection Map, the plugin is installed and configured.
     */
   var matter: MatterPhysics
   
   /**
-    * A scene level Arcade Physics Plugin.
+    * The Scene Arcade Physics Plugin.
+    * 
     * This property will only be available if defined in the Scene Injection Map, the plugin is installed and configured.
     */
   var physics: ArcadePhysics
   
   /**
-    * A reference to the Plugin Manager.
+    * A reference to the global Plugin Manager.
     * 
     * The Plugin Manager is a global system that allows plugins to register themselves with it, and can then install
     * those plugins into Scenes as required.
@@ -131,28 +152,37 @@ trait Scene extends StObject {
   var plugins: PluginManager
   
   /**
-    * A reference to the game level Data Manager.
+    * A reference to the global Data Manager.
+    * 
     * This property will only be available if defined in the Scene Injection Map.
     */
   var registry: DataManager
   
   /**
+    * A reference to the renderer instance Phaser is using, either Canvas Renderer or WebGL Renderer.
+    */
+  var renderer: CanvasRenderer | WebGLRenderer
+  
+  /**
     * A reference to the global Scale Manager.
+    * 
     * This property will only be available if defined in the Scene Injection Map.
     */
   var scale: ScaleManager
   
   /**
     * A reference to the Scene Manager Plugin.
+    * 
     * This property will only be available if defined in the Scene Injection Map.
     */
   var scene: ScenePlugin
   
   /**
     * A reference to the Sound Manager.
+    * 
     * This property will only be available if defined in the Scene Injection Map and the plugin is installed.
     */
-  var sound: BaseSoundManager
+  var sound: NoAudioSoundManager | HTML5AudioSoundManager | WebAudioSoundManager
   
   /**
     * The Scene Systems. You must never overwrite this property, or all hell will break lose.
@@ -161,24 +191,28 @@ trait Scene extends StObject {
   
   /**
     * A reference to the Texture Manager.
+    * 
     * This property will only be available if defined in the Scene Injection Map.
     */
   var textures: TextureManager
   
   /**
-    * A scene level Time and Clock Plugin.
+    * The Scene Time and Clock Plugin.
+    * 
     * This property will only be available if defined in the Scene Injection Map and the plugin is installed.
     */
   var time: Clock
   
   /**
-    * A scene level Tween Manager Plugin.
+    * The Scene Tween Manager Plugin.
+    * 
     * This property will only be available if defined in the Scene Injection Map and the plugin is installed.
     */
   var tweens: TweenManager
   
   /**
-    * Should be overridden by your own Scenes.
+    * This method should be overridden by your own Scenes.
+    * 
     * This method is called once per game step while the scene is running.
     * @param time The current time. Either a High Resolution Timer value if it comes from Request Animation Frame, or Date.now if using SetTimeout.
     * @param delta The delta time in ms since the last frame. This is a smoothed and capped value based on the FPS rate.
@@ -205,16 +239,17 @@ object Scene {
     physics: ArcadePhysics,
     plugins: PluginManager,
     registry: DataManager,
+    renderer: CanvasRenderer | WebGLRenderer,
     scale: ScaleManager,
     scene: ScenePlugin,
-    sound: BaseSoundManager,
+    sound: NoAudioSoundManager | HTML5AudioSoundManager | WebAudioSoundManager,
     sys: Systems,
     textures: TextureManager,
     time: Clock,
     tweens: TweenManager,
     update: (Double, Double) => Unit
   ): Scene = {
-    val __obj = js.Dynamic.literal(add = add.asInstanceOf[js.Any], anims = anims.asInstanceOf[js.Any], cache = cache.asInstanceOf[js.Any], cameras = cameras.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], facebook = facebook.asInstanceOf[js.Any], game = game.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], lights = lights.asInstanceOf[js.Any], load = load.asInstanceOf[js.Any], make = make.asInstanceOf[js.Any], matter = matter.asInstanceOf[js.Any], physics = physics.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any], registry = registry.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], scene = scene.asInstanceOf[js.Any], sound = sound.asInstanceOf[js.Any], sys = sys.asInstanceOf[js.Any], textures = textures.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], tweens = tweens.asInstanceOf[js.Any], update = js.Any.fromFunction2(update))
+    val __obj = js.Dynamic.literal(add = add.asInstanceOf[js.Any], anims = anims.asInstanceOf[js.Any], cache = cache.asInstanceOf[js.Any], cameras = cameras.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], facebook = facebook.asInstanceOf[js.Any], game = game.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], lights = lights.asInstanceOf[js.Any], load = load.asInstanceOf[js.Any], make = make.asInstanceOf[js.Any], matter = matter.asInstanceOf[js.Any], physics = physics.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any], registry = registry.asInstanceOf[js.Any], renderer = renderer.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], scene = scene.asInstanceOf[js.Any], sound = sound.asInstanceOf[js.Any], sys = sys.asInstanceOf[js.Any], textures = textures.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], tweens = tweens.asInstanceOf[js.Any], update = js.Any.fromFunction2(update))
     __obj.asInstanceOf[Scene]
   }
   
@@ -254,11 +289,13 @@ object Scene {
     
     inline def setRegistry(value: DataManager): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
     
+    inline def setRenderer(value: CanvasRenderer | WebGLRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+    
     inline def setScale(value: ScaleManager): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     inline def setScene(value: ScenePlugin): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
     
-    inline def setSound(value: BaseSoundManager): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
+    inline def setSound(value: NoAudioSoundManager | HTML5AudioSoundManager | WebAudioSoundManager): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
     
     inline def setSys(value: Systems): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
     

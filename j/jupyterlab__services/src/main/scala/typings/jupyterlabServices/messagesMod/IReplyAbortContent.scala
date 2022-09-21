@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IReplyAbortContent
   extends StObject
-     with _ReplyContent[js.Any] {
+     with _ReplyContent[Any] {
   
   var status: abort
 }

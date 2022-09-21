@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("square-connect", "InvoiceQuery")
 @js.native
-class InvoiceQuery () extends StObject {
+open class InvoiceQuery () extends StObject {
   
   /**
     * Query filters to apply in searching invoices.

@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * The constructor creates a picture that shows nothing until the .source or .element is specified.
   */
-class Picture ()
+open class Picture ()
   extends typings.go.mod.Picture
 object Picture {
   

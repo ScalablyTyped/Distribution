@@ -81,7 +81,7 @@ object facepileTypesMod {
       * Extra data - not used directly but can be handy for passing additional data to custom event
       * handlers.
       */
-    var data: js.UndefOr[js.Any] = js.undefined
+    var data: js.UndefOr[Any] = js.undefined
     
     /**
       * The user's initials to display in the image area when there is no image.
@@ -160,7 +160,7 @@ object facepileTypesMod {
       
       inline def setAllowPhoneInitialsUndefined: Self = StObject.set(x, "allowPhoneInitials", js.undefined)
       
-      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
@@ -272,6 +272,13 @@ object facepileTypesMod {
     var showAddButton: js.UndefOr[Boolean] = js.undefined
     
     /**
+      * Whether the default tooltip (the persona name) is shown using the `title` prop.
+      * Set this to false if you'd like to display a custom tooltip, for example using a custom renderer and TooltipHost
+      * @defaultvalue true
+      */
+    var showTooltip: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * Call to provide customized styling that will layer on top of the variant rules.
       */
     var styles: js.UndefOr[IStyleFunctionOrObject[IFacepileStyleProps, IFacepileStyles]] = js.undefined
@@ -348,7 +355,7 @@ object facepileTypesMod {
       
       inline def setOverflowPersonasUndefined: Self = StObject.set(x, "overflowPersonas", js.undefined)
       
-      inline def setOverflowPersonasVarargs(value: IFacepilePersona*): Self = StObject.set(x, "overflowPersonas", js.Array(value :_*))
+      inline def setOverflowPersonasVarargs(value: IFacepilePersona*): Self = StObject.set(x, "overflowPersonas", js.Array(value*))
       
       inline def setPersonaSize(value: PersonaSize): Self = StObject.set(x, "personaSize", value.asInstanceOf[js.Any])
       
@@ -356,11 +363,15 @@ object facepileTypesMod {
       
       inline def setPersonas(value: js.Array[IFacepilePersona]): Self = StObject.set(x, "personas", value.asInstanceOf[js.Any])
       
-      inline def setPersonasVarargs(value: IFacepilePersona*): Self = StObject.set(x, "personas", js.Array(value :_*))
+      inline def setPersonasVarargs(value: IFacepilePersona*): Self = StObject.set(x, "personas", js.Array(value*))
       
       inline def setShowAddButton(value: Boolean): Self = StObject.set(x, "showAddButton", value.asInstanceOf[js.Any])
       
       inline def setShowAddButtonUndefined: Self = StObject.set(x, "showAddButton", js.undefined)
+      
+      inline def setShowTooltip(value: Boolean): Self = StObject.set(x, "showTooltip", value.asInstanceOf[js.Any])
+      
+      inline def setShowTooltipUndefined: Self = StObject.set(x, "showTooltip", js.undefined)
       
       inline def setStyles(value: IStyleFunctionOrObject[IFacepileStyleProps, IFacepileStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       

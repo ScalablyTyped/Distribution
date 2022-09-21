@@ -16,7 +16,7 @@ trait IModalProvider
 }
 object IModalProvider {
   
-  inline def apply($get: js.Any, options: IModalSettings): IModalProvider = {
+  inline def apply($get: Any, options: IModalSettings): IModalProvider = {
     val __obj = js.Dynamic.literal($get = $get.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[IModalProvider]
   }

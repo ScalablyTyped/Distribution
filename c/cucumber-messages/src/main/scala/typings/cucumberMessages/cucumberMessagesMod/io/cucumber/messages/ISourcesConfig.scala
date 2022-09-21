@@ -34,7 +34,7 @@ object ISourcesConfig {
     
     inline def setAbsolutePathsUndefined: Self = StObject.set(x, "absolutePaths", js.undefined)
     
-    inline def setAbsolutePathsVarargs(value: String*): Self = StObject.set(x, "absolutePaths", js.Array(value :_*))
+    inline def setAbsolutePathsVarargs(value: String*): Self = StObject.set(x, "absolutePaths", js.Array(value*))
     
     inline def setFilters(value: ISourcesFilterConfig): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     

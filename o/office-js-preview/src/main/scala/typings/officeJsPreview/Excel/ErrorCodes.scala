@@ -26,7 +26,17 @@ object ErrorCodes extends StObject {
        with ErrorCodes
   
   @js.native
+  sealed trait emptyChartSeries
+    extends StObject
+       with ErrorCodes
+  
+  @js.native
   sealed trait filteredRangeConflict
+    extends StObject
+       with ErrorCodes
+  
+  @js.native
+  sealed trait formulaLengthExceedsLimit
     extends StObject
        with ErrorCodes
   
@@ -86,12 +96,27 @@ object ErrorCodes extends StObject {
        with ErrorCodes
   
   @js.native
+  sealed trait mergedRangeConflict
+    extends StObject
+       with ErrorCodes
+  
+  @js.native
   sealed trait nonBlankCellOffSheet
     extends StObject
        with ErrorCodes
   
   @js.native
   sealed trait notImplemented
+    extends StObject
+       with ErrorCodes
+  
+  @js.native
+  sealed trait openWorkbookLinksBlocked
+    extends StObject
+       with ErrorCodes
+  
+  @js.native
+  sealed trait operationCellsExceedLimit
     extends StObject
        with ErrorCodes
   
@@ -106,7 +131,27 @@ object ErrorCodes extends StObject {
        with ErrorCodes
   
   @js.native
+  sealed trait refreshWorkbookLinksBlocked
+    extends StObject
+       with ErrorCodes
+  
+  @js.native
   sealed trait requestAborted
+    extends StObject
+       with ErrorCodes
+  
+  @js.native
+  sealed trait responsePayloadSizeLimitExceeded
+    extends StObject
+       with ErrorCodes
+  
+  @js.native
+  sealed trait unsupportedFeature
+    extends StObject
+       with ErrorCodes
+  
+  @js.native
+  sealed trait unsupportedFillType
     extends StObject
        with ErrorCodes
   

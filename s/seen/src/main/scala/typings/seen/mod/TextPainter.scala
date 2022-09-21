@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("seen", "TextPainter")
 @js.native
-class TextPainter () extends Painter
+open class TextPainter () extends Painter

@@ -32,7 +32,7 @@ object Commands {
     
     inline def setLifecycleEventsUndefined: Self = StObject.set(x, "lifecycleEvents", js.undefined)
     
-    inline def setLifecycleEventsVarargs(value: String*): Self = StObject.set(x, "lifecycleEvents", js.Array(value :_*))
+    inline def setLifecycleEventsVarargs(value: String*): Self = StObject.set(x, "lifecycleEvents", js.Array(value*))
     
     inline def setOptions(value: StringDictionary[Required]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

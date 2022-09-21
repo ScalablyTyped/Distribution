@@ -12,7 +12,7 @@ trait MultipartFileStream extends Readable {
   
   var fieldname: String = js.native
   
-  var fields: js.Any = js.native
+  var fields: Any = js.native
   
   var filename: String = js.native
   

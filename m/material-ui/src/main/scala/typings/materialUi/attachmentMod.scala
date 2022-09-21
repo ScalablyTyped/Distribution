@@ -10,10 +10,10 @@ object attachmentMod {
   
   @JSImport("material-ui/svg-icons/file/attachment", JSImport.Default)
   @js.native
-  class default () extends FileAttachment
+  open class default () extends FileAttachment
   
   @JSImport("material-ui/svg-icons/file/attachment", "FileAttachment")
   @js.native
-  class FileAttachment ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class FileAttachment ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

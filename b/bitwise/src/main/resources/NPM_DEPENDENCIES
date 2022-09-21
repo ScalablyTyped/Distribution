@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "bitwise" : "2.0.4"
+      "bitwise" : "2.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "bitwise" : "2.0.4"
+      "bitwise" : "2.1.0"
     }
   ],
   "compile-devDependencies" : [

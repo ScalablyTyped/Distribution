@@ -14,7 +14,7 @@ object resizableTextAreaMod {
   
   @JSImport("rc-textarea/es/ResizableTextArea", JSImport.Default)
   @js.native
-  class default protected () extends ResizableTextArea {
+  open class default protected () extends ResizableTextArea {
     def this(props: TextAreaProps) = this()
   }
   
@@ -66,11 +66,7 @@ object resizableTextAreaMod {
   }
   
   @js.native
-  trait ResizableTextArea
-    extends Component[TextAreaProps, TextAreaState, js.Any] {
-    
-    @JSName("componentDidMount")
-    def componentDidMount_MResizableTextArea(): Unit = js.native
+  trait ResizableTextArea extends Component[TextAreaProps, TextAreaState, Any] {
     
     @JSName("componentDidUpdate")
     def componentDidUpdate_MResizableTextArea(prevProps: TextAreaProps): Unit = js.native

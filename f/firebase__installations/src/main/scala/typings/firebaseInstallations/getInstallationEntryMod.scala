@@ -1,19 +1,19 @@
 package typings.firebaseInstallations
 
-import typings.firebaseInstallations.appConfigMod.AppConfig
 import typings.firebaseInstallations.installationEntryMod.InstallationEntry
 import typings.firebaseInstallations.installationEntryMod.RegisteredInstallationEntry
+import typings.firebaseInstallations.installationImplMod.FirebaseInstallationsImpl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getInstallationEntryMod {
   
-  @JSImport("@firebase/installations/dist/src/helpers/get-installation-entry", JSImport.Namespace)
+  @JSImport("@firebase/installations/dist/esm/src/helpers/get-installation-entry", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getInstallationEntry(appConfig: AppConfig): js.Promise[InstallationEntryWithRegistrationPromise] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstallationEntry")(appConfig.asInstanceOf[js.Any]).asInstanceOf[js.Promise[InstallationEntryWithRegistrationPromise]]
+  inline def getInstallationEntry(installations: FirebaseInstallationsImpl): js.Promise[InstallationEntryWithRegistrationPromise] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstallationEntry")(installations.asInstanceOf[js.Any]).asInstanceOf[js.Promise[InstallationEntryWithRegistrationPromise]]
   
   trait InstallationEntryWithRegistrationPromise extends StObject {
     

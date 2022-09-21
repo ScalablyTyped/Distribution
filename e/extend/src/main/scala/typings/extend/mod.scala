@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(deep: Boolean, target: js.Any, sources: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].apply(deep.asInstanceOf[js.Any], target.asInstanceOf[js.Any], sources.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(target: js.Any, sources: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], sources.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(deep: Boolean, target: Any, sources: Any*): Any = (^.asInstanceOf[js.Dynamic].apply((List(deep.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).`++`(sources.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
+  inline def apply(target: Any, sources: Any*): Any = ^.asInstanceOf[js.Dynamic].apply(List(target.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   inline def apply[T, U](deep: Boolean, target: T, source: U): T & U = (^.asInstanceOf[js.Dynamic].apply(deep.asInstanceOf[js.Any], target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[T & U]
   inline def apply[T, U](target: T, source: U): T & U = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[T & U]
   inline def apply[T, U, V](deep: Boolean, target: T, source1: U, source2: V): T & U & V = (^.asInstanceOf[js.Dynamic].apply(deep.asInstanceOf[js.Any], target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any])).asInstanceOf[T & U & V]

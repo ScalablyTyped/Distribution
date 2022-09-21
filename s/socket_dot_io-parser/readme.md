@@ -1,7 +1,7 @@
 
 # Scala.js typings for socket_dot_io-parser
 
-Typings are for version 2.2
+Typings are for version 4.2.1
 
 ## Library description:
 socket.io protocol parser
@@ -10,10 +10,10 @@ socket.io protocol parser
 | ------------------ | :-------------: |
 | Full name          | socket.io-parser |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 90 |
-| # downloads        | 289778573 |
-| # stars            | 6 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 3.1772674E7 |
+| # stars            | 110.0 |
 
 ## Links
 - [Homepage](https://github.com/socketio/socket.io-parser#readme)
@@ -24,7 +24,7 @@ socket.io protocol parser
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object sceneMapMod {
   
-  @JSImport("react-native-tab-view/lib/typescript/src/SceneMap", JSImport.Namespace)
+  @JSImport("react-native-tab-view/lib/typescript/SceneMap", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[T /* <: js.Any */](scenes: StringDictionary[ComponentType[T]]): js.Function1[/* hasRouteJumpToPosition */ SceneRendererPropsroutean, Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(scenes.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* hasRouteJumpToPosition */ SceneRendererPropsroutean, Element]]
+  inline def default[T /* <: Any */](scenes: StringDictionary[ComponentType[T]]): js.Function1[/* hasRouteJumpToPosition */ SceneRendererPropsroutean, Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(scenes.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* hasRouteJumpToPosition */ SceneRendererPropsroutean, Element]]
 }

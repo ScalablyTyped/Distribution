@@ -13,7 +13,7 @@ trait Distance extends StObject {
   
   var polylines: js.Array[Polyline]
   
-  var target: js.Any
+  var target: Any
   
   var `type`: String
 }
@@ -23,7 +23,7 @@ object Distance {
     distance: Double,
     points: js.Array[typings.baidumapWebSdk.BMap.Point],
     polylines: js.Array[Polyline],
-    target: js.Any,
+    target: Any,
     `type`: String
   ): Distance = {
     val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], points = points.asInstanceOf[js.Any], polylines = polylines.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
@@ -37,13 +37,13 @@ object Distance {
     
     inline def setPoints(value: js.Array[typings.baidumapWebSdk.BMap.Point]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    inline def setPointsVarargs(value: typings.baidumapWebSdk.BMap.Point*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: typings.baidumapWebSdk.BMap.Point*): Self = StObject.set(x, "points", js.Array(value*))
     
     inline def setPolylines(value: js.Array[Polyline]): Self = StObject.set(x, "polylines", value.asInstanceOf[js.Any])
     
-    inline def setPolylinesVarargs(value: Polyline*): Self = StObject.set(x, "polylines", js.Array(value :_*))
+    inline def setPolylinesVarargs(value: Polyline*): Self = StObject.set(x, "polylines", js.Array(value*))
     
-    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

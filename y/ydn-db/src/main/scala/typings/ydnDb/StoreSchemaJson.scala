@@ -39,7 +39,7 @@ object StoreSchemaJson {
     
     inline def setIndexesUndefined: Self = StObject.set(x, "indexes", js.undefined)
     
-    inline def setIndexesVarargs(value: IndexSchemaJson*): Self = StObject.set(x, "indexes", js.Array(value :_*))
+    inline def setIndexesVarargs(value: IndexSchemaJson*): Self = StObject.set(x, "indexes", js.Array(value*))
     
     inline def setKeyPath(value: String): Self = StObject.set(x, "keyPath", value.asInstanceOf[js.Any])
     

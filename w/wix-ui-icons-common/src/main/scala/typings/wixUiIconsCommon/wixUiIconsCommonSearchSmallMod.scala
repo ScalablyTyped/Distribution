@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.wixUiIconsCommon.searchSmallMod.SearchSmallProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,10 +11,10 @@ object wixUiIconsCommonSearchSmallMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/SearchSmall", JSImport.Default)
   @js.native
-  val default: SFC[SearchSmallProps] = js.native
+  val default: FC[SearchSmallProps] = js.native
   
-  type _To = SFC[SearchSmallProps]
+  type _To = FC[SearchSmallProps]
   
   /* This means you don't have to write `default`, but can instead just say `wixUiIconsCommonSearchSmallMod.foo` */
-  override def _to: SFC[SearchSmallProps] = default
+  override def _to: FC[SearchSmallProps] = default
 }

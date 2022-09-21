@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Result of the l-diversity computation.
-  */
 trait SchemaGooglePrivacyDlpV2LDiversityResult extends StObject {
   
   /**
@@ -27,6 +24,6 @@ object SchemaGooglePrivacyDlpV2LDiversityResult {
     
     inline def setSensitiveValueFrequencyHistogramBucketsUndefined: Self = StObject.set(x, "sensitiveValueFrequencyHistogramBuckets", js.undefined)
     
-    inline def setSensitiveValueFrequencyHistogramBucketsVarargs(value: SchemaGooglePrivacyDlpV2LDiversityHistogramBucket*): Self = StObject.set(x, "sensitiveValueFrequencyHistogramBuckets", js.Array(value :_*))
+    inline def setSensitiveValueFrequencyHistogramBucketsVarargs(value: SchemaGooglePrivacyDlpV2LDiversityHistogramBucket*): Self = StObject.set(x, "sensitiveValueFrequencyHistogramBuckets", js.Array(value*))
   }
 }

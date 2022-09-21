@@ -12,7 +12,7 @@ trait SchemaAttribute extends StObject {
   var AttributeName: js.UndefOr[Name] = js.undefined
   
   /**
-    * The data type of the field.
+    * The data type of the field. For a related time series dataset, other than date, item_id, and forecast dimensions attributes, all attributes should be of numerical type (integer/float).
     */
   var AttributeType: js.UndefOr[typings.awsSdk.forecastserviceMod.AttributeType] = js.undefined
 }

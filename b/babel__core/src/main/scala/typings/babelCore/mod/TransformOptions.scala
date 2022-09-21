@@ -58,12 +58,38 @@ trait TransformOptions extends StObject {
   var babelrcRoots: js.UndefOr[Boolean | MatchPattern | js.Array[MatchPattern] | Null] = js.undefined
   
   /**
+    * Toggles whether or not browserslist config sources are used, which includes searching for any browserslist files or referencing the browserslist key inside package.json.
+    * This is useful for projects that use a browserslist config for files that won't be compiled with Babel.
+    *
+    * If a string is specified, it must represent the path of a browserslist configuration file. Relative paths are resolved relative to the configuration file which specifies
+    * this option, or to `cwd` when it's passed as part of the programmatic options.
+    *
+    * Default: `true`
+    */
+  var browserslistConfigFile: js.UndefOr[Boolean | Null] = js.undefined
+  
+  /**
+    * The Browserslist environment to use.
+    *
+    * Default: `undefined`
+    */
+  var browserslistEnv: js.UndefOr[String | Null] = js.undefined
+  
+  /**
     * Utilities may pass a caller object to identify themselves to Babel and
     * pass capability-related flags for use by configs, presets and plugins.
     *
     * @see https://babeljs.io/docs/en/next/options#caller
     */
   var caller: js.UndefOr[TransformCaller] = js.undefined
+  
+  /**
+    * By default `babel.transformFromAst` will clone the input AST to avoid mutations.
+    * Specifying `cloneInputAst: false` can improve parsing performance if the input AST is not used elsewhere.
+    *
+    * Default: `true`
+    */
+  var cloneInputAst: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * Enable code generation
@@ -179,7 +205,7 @@ trait TransformOptions extends StObject {
     *
     * Default: `null`
     */
-  var inputSourceMap: js.UndefOr[js.Object | Null] = js.undefined
+  var inputSourceMap: js.UndefOr[InputSourceMap | Null] = js.undefined
   
   /**
     * Should the output be minified (not printing last semicolons in blocks, printing literal string values instead of escaped ones, stripping `()` from `new` when safe)
@@ -319,12 +345,12 @@ trait TransformOptions extends StObject {
       /* visitorType */ enter | exit, 
       /* callback */ js.Function2[
         /* path */ typings.babelTraverse.mod.NodePath[typings.babelTypes.mod.Node], 
-        /* state */ js.Any, 
+        /* state */ Any, 
         Unit
       ], 
       js.Function2[
         /* path */ typings.babelTraverse.mod.NodePath[typings.babelTypes.mod.Node], 
-        /* state */ js.Any, 
+        /* state */ Any, 
         Unit
       ]
     ]) | Null
@@ -369,13 +395,31 @@ object TransformOptions {
     
     inline def setBabelrcRootsUndefined: Self = StObject.set(x, "babelrcRoots", js.undefined)
     
-    inline def setBabelrcRootsVarargs(value: MatchPattern*): Self = StObject.set(x, "babelrcRoots", js.Array(value :_*))
+    inline def setBabelrcRootsVarargs(value: MatchPattern*): Self = StObject.set(x, "babelrcRoots", js.Array(value*))
     
     inline def setBabelrcUndefined: Self = StObject.set(x, "babelrc", js.undefined)
+    
+    inline def setBrowserslistConfigFile(value: Boolean): Self = StObject.set(x, "browserslistConfigFile", value.asInstanceOf[js.Any])
+    
+    inline def setBrowserslistConfigFileNull: Self = StObject.set(x, "browserslistConfigFile", null)
+    
+    inline def setBrowserslistConfigFileUndefined: Self = StObject.set(x, "browserslistConfigFile", js.undefined)
+    
+    inline def setBrowserslistEnv(value: String): Self = StObject.set(x, "browserslistEnv", value.asInstanceOf[js.Any])
+    
+    inline def setBrowserslistEnvNull: Self = StObject.set(x, "browserslistEnv", null)
+    
+    inline def setBrowserslistEnvUndefined: Self = StObject.set(x, "browserslistEnv", js.undefined)
     
     inline def setCaller(value: TransformCaller): Self = StObject.set(x, "caller", value.asInstanceOf[js.Any])
     
     inline def setCallerUndefined: Self = StObject.set(x, "caller", js.undefined)
+    
+    inline def setCloneInputAst(value: Boolean): Self = StObject.set(x, "cloneInputAst", value.asInstanceOf[js.Any])
+    
+    inline def setCloneInputAstNull: Self = StObject.set(x, "cloneInputAst", null)
+    
+    inline def setCloneInputAstUndefined: Self = StObject.set(x, "cloneInputAst", js.undefined)
     
     inline def setCode(value: Boolean): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
@@ -423,7 +467,7 @@ object TransformOptions {
     
     inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
-    inline def setExcludeVarargs(value: MatchPattern*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+    inline def setExcludeVarargs(value: MatchPattern*): Self = StObject.set(x, "exclude", js.Array(value*))
     
     inline def setExtends(value: String): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
     
@@ -467,7 +511,7 @@ object TransformOptions {
     
     inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
     
-    inline def setIgnoreVarargs(value: MatchPattern*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+    inline def setIgnoreVarargs(value: MatchPattern*): Self = StObject.set(x, "ignore", js.Array(value*))
     
     inline def setInclude(value: MatchPattern | js.Array[MatchPattern]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
@@ -475,9 +519,9 @@ object TransformOptions {
     
     inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
-    inline def setIncludeVarargs(value: MatchPattern*): Self = StObject.set(x, "include", js.Array(value :_*))
+    inline def setIncludeVarargs(value: MatchPattern*): Self = StObject.set(x, "include", js.Array(value*))
     
-    inline def setInputSourceMap(value: js.Object): Self = StObject.set(x, "inputSourceMap", value.asInstanceOf[js.Any])
+    inline def setInputSourceMap(value: InputSourceMap): Self = StObject.set(x, "inputSourceMap", value.asInstanceOf[js.Any])
     
     inline def setInputSourceMapNull: Self = StObject.set(x, "inputSourceMap", null)
     
@@ -513,13 +557,13 @@ object TransformOptions {
     
     inline def setOnlyUndefined: Self = StObject.set(x, "only", js.undefined)
     
-    inline def setOnlyVarargs(value: MatchPattern*): Self = StObject.set(x, "only", js.Array(value :_*))
+    inline def setOnlyVarargs(value: MatchPattern*): Self = StObject.set(x, "only", js.Array(value*))
     
     inline def setOverrides(value: js.Array[TransformOptions]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
     
     inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     
-    inline def setOverridesVarargs(value: TransformOptions*): Self = StObject.set(x, "overrides", js.Array(value :_*))
+    inline def setOverridesVarargs(value: TransformOptions*): Self = StObject.set(x, "overrides", js.Array(value*))
     
     inline def setParserOpts(value: ParserOptions): Self = StObject.set(x, "parserOpts", value.asInstanceOf[js.Any])
     
@@ -533,7 +577,7 @@ object TransformOptions {
     
     inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
     
-    inline def setPluginsVarargs(value: PluginItem*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+    inline def setPluginsVarargs(value: PluginItem*): Self = StObject.set(x, "plugins", js.Array(value*))
     
     inline def setPresets(value: js.Array[PluginItem]): Self = StObject.set(x, "presets", value.asInstanceOf[js.Any])
     
@@ -541,7 +585,7 @@ object TransformOptions {
     
     inline def setPresetsUndefined: Self = StObject.set(x, "presets", js.undefined)
     
-    inline def setPresetsVarargs(value: PluginItem*): Self = StObject.set(x, "presets", js.Array(value :_*))
+    inline def setPresetsVarargs(value: PluginItem*): Self = StObject.set(x, "presets", js.Array(value*))
     
     inline def setRetainLines(value: Boolean): Self = StObject.set(x, "retainLines", value.asInstanceOf[js.Any])
     
@@ -595,16 +639,16 @@ object TransformOptions {
     
     inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
     
-    inline def setTestVarargs(value: MatchPattern*): Self = StObject.set(x, "test", js.Array(value :_*))
+    inline def setTestVarargs(value: MatchPattern*): Self = StObject.set(x, "test", js.Array(value*))
     
     inline def setWrapPluginVisitorMethod(
       value: (/* pluginAlias */ String, /* visitorType */ enter | exit, /* callback */ js.Function2[
           /* path */ typings.babelTraverse.mod.NodePath[typings.babelTypes.mod.Node], 
-          /* state */ js.Any, 
+          /* state */ Any, 
           Unit
         ]) => js.Function2[
           /* path */ typings.babelTraverse.mod.NodePath[typings.babelTypes.mod.Node], 
-          /* state */ js.Any, 
+          /* state */ Any, 
           Unit
         ]
     ): Self = StObject.set(x, "wrapPluginVisitorMethod", js.Any.fromFunction3(value))

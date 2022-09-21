@@ -4,22 +4,20 @@ import typings.bumpRegex.bumpRegexStrings.major
 import typings.bumpRegex.bumpRegexStrings.minor
 import typings.bumpRegex.bumpRegexStrings.patch
 import typings.bumpRegex.bumpRegexStrings.prerelease
-import typings.std.Error
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(opts: String, cb: Callback): js.Any = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def apply(opts: Options, cb: Callback): js.Any = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(opts: String, cb: Callback): Any = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(opts: Options, cb: Callback): Any = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("bump-regex", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  type Callback = js.Function2[/* err */ String | Error | Null, /* opts */ js.UndefOr[Result], Unit]
+  type Callback = js.Function2[/* err */ String | js.Error | Null, /* opts */ js.UndefOr[Result], Unit]
   
   trait Options extends StObject {
     
@@ -27,13 +25,19 @@ object mod {
     
     var global: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Keep the metadata of the old version after bumping
+      * @default false
+      */
+    var keepmetadata: js.UndefOr[Boolean] = js.undefined
+    
     var key: js.UndefOr[String] = js.undefined
     
     var keys: js.UndefOr[js.Array[String]] = js.undefined
     
     var preid: js.UndefOr[String] = js.undefined
     
-    var regex: js.UndefOr[RegExp] = js.undefined
+    var regex: js.UndefOr[js.RegExp] = js.undefined
     
     var str: js.UndefOr[String] = js.undefined
     
@@ -58,6 +62,10 @@ object mod {
       
       inline def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
       
+      inline def setKeepmetadata(value: Boolean): Self = StObject.set(x, "keepmetadata", value.asInstanceOf[js.Any])
+      
+      inline def setKeepmetadataUndefined: Self = StObject.set(x, "keepmetadata", js.undefined)
+      
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
       inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
@@ -66,13 +74,13 @@ object mod {
       
       inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
       
-      inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
+      inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value*))
       
       inline def setPreid(value: String): Self = StObject.set(x, "preid", value.asInstanceOf[js.Any])
       
       inline def setPreidUndefined: Self = StObject.set(x, "preid", js.undefined)
       
-      inline def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+      inline def setRegex(value: js.RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
       
       inline def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
       

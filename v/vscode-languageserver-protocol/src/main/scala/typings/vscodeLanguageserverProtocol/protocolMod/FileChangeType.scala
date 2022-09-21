@@ -15,21 +15,21 @@ object FileChangeType {
   /**
     * The file got changed.
     */
-  @JSImport("vscode-languageserver-protocol/lib/protocol", "FileChangeType.Changed")
+  @JSImport("vscode-languageserver-protocol/lib/common/protocol", "FileChangeType.Changed")
   @js.native
   val Changed: /* 2 */ Double = js.native
   
   /**
     * The file got created.
     */
-  @JSImport("vscode-languageserver-protocol/lib/protocol", "FileChangeType.Created")
+  @JSImport("vscode-languageserver-protocol/lib/common/protocol", "FileChangeType.Created")
   @js.native
   val Created: /* 1 */ Double = js.native
   
   /**
     * The file got deleted.
     */
-  @JSImport("vscode-languageserver-protocol/lib/protocol", "FileChangeType.Deleted")
+  @JSImport("vscode-languageserver-protocol/lib/common/protocol", "FileChangeType.Deleted")
   @js.native
   val Deleted: /* 3 */ Double = js.native
 }

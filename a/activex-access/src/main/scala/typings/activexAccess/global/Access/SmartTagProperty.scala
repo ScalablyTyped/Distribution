@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.SmartTagProperty")
 @js.native
-/* private */ class SmartTagProperty ()
+/* private */ open class SmartTagProperty ()
   extends StObject
      with typings.activexAccess.Access.SmartTagProperty {
   

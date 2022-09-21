@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * All the findings for a single scanned item.
-  */
 trait SchemaGooglePrivacyDlpV2InspectResult extends StObject {
   
   /**
@@ -15,14 +12,9 @@ trait SchemaGooglePrivacyDlpV2InspectResult extends StObject {
   var findings: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2Finding]] = js.undefined
   
   /**
-    * If true, then this item might have more findings than were returned, and
-    * the findings returned are an arbitrary subset of all findings. The
-    * findings list might be truncated because the input items were too large,
-    * or because the server reached the maximum amount of resources allowed for
-    * a single API call. For best results, divide the input into smaller
-    * batches.
+    * If true, then this item might have more findings than were returned, and the findings returned are an arbitrary subset of all findings. The findings list might be truncated because the input items were too large, or because the server reached the maximum amount of resources allowed for a single API call. For best results, divide the input into smaller batches.
     */
-  var findingsTruncated: js.UndefOr[Boolean] = js.undefined
+  var findingsTruncated: js.UndefOr[Boolean | Null] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2InspectResult {
   
@@ -37,10 +29,12 @@ object SchemaGooglePrivacyDlpV2InspectResult {
     
     inline def setFindingsTruncated(value: Boolean): Self = StObject.set(x, "findingsTruncated", value.asInstanceOf[js.Any])
     
+    inline def setFindingsTruncatedNull: Self = StObject.set(x, "findingsTruncated", null)
+    
     inline def setFindingsTruncatedUndefined: Self = StObject.set(x, "findingsTruncated", js.undefined)
     
     inline def setFindingsUndefined: Self = StObject.set(x, "findings", js.undefined)
     
-    inline def setFindingsVarargs(value: SchemaGooglePrivacyDlpV2Finding*): Self = StObject.set(x, "findings", js.Array(value :_*))
+    inline def setFindingsVarargs(value: SchemaGooglePrivacyDlpV2Finding*): Self = StObject.set(x, "findings", js.Array(value*))
   }
 }

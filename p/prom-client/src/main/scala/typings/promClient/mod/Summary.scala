@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("prom-client", "Summary")
 @js.native
-class Summary[T /* <: String */] protected ()
+open class Summary[T /* <: String */] protected ()
   extends StObject
      with Metric_[T] {
   /**
@@ -15,6 +15,12 @@ class Summary[T /* <: String */] protected ()
   	 */
   def this(configuration: SummaryConfiguration[T]) = this()
   
+  /**
+  	 * Return the child for given labels
+  	 * @param labels Object with label keys and values
+  	 * @return Configured counter with given labels
+  	 */
+  def labels(labels: LabelValues[T]): Internal[T] = js.native
   /**
   	 * Return the child for given labels
   	 * @param values Label values
@@ -36,6 +42,11 @@ class Summary[T /* <: String */] protected ()
   
   /**
   	 * Remove metrics for the given label values
+  	 * @param labels Object with label keys and values
+  	 */
+  def remove(labels: LabelValues[T]): Unit = js.native
+  /**
+  	 * Remove metrics for the given label values
   	 * @param values Label values
   	 */
   def remove(values: String*): Unit = js.native
@@ -46,12 +57,13 @@ class Summary[T /* <: String */] protected ()
   def reset(): Unit = js.native
   
   /**
-  	 * Start a timer where the value in seconds will observed
+  	 * Start a timer. Calling the returned function will observe the duration in
+  	 * seconds in the summary.
   	 * @param labels Object with label keys and values
   	 * @return Function to invoke when timer should be stopped
   	 */
-  def startTimer(): js.Function1[/* labels */ js.UndefOr[LabelValues[T]], Unit] = js.native
-  def startTimer(labels: LabelValues[T]): js.Function1[/* labels */ js.UndefOr[LabelValues[T]], Unit] = js.native
+  def startTimer(): js.Function1[/* labels */ js.UndefOr[LabelValues[T]], Double] = js.native
+  def startTimer(labels: LabelValues[T]): js.Function1[/* labels */ js.UndefOr[LabelValues[T]], Double] = js.native
 }
 object Summary {
   
@@ -75,7 +87,7 @@ object Summary {
       
       inline def setPercentilesUndefined: Self = StObject.set(x, "percentiles", js.undefined)
       
-      inline def setPercentilesVarargs(value: Double*): Self = StObject.set(x, "percentiles", js.Array(value :_*))
+      inline def setPercentilesVarargs(value: Double*): Self = StObject.set(x, "percentiles", js.Array(value*))
     }
   }
   
@@ -88,17 +100,19 @@ object Summary {
     def observe(value: Double): Unit
     
     /**
-    		 * Start a timer where the value in seconds will observed
+    		 * Start a timer. Calling the returned function will observe the
+    		 * duration in seconds in the summary.
     		 * @param labels Object with label keys and values
-    		 * @return Function to invoke when timer should be stopped
+    		 * @return Function to invoke when timer should be stopped. The value it
+    		 * returns is the timed duration.
     		 */
-    def startTimer(): js.Function1[/* labels */ js.UndefOr[LabelValues[T]], Unit]
+    def startTimer(): js.Function1[/* labels */ js.UndefOr[LabelValues[T]], Double]
   }
   object Internal {
     
     inline def apply[T /* <: String */](
       observe: Double => Unit,
-      startTimer: () => js.Function1[/* labels */ js.UndefOr[LabelValues[T]], Unit]
+      startTimer: () => js.Function1[/* labels */ js.UndefOr[LabelValues[T]], Double]
     ): Internal[T] = {
       val __obj = js.Dynamic.literal(observe = js.Any.fromFunction1(observe), startTimer = js.Any.fromFunction0(startTimer))
       __obj.asInstanceOf[Internal[T]]
@@ -108,7 +122,7 @@ object Summary {
       
       inline def setObserve(value: Double => Unit): Self = StObject.set(x, "observe", js.Any.fromFunction1(value))
       
-      inline def setStartTimer(value: () => js.Function1[/* labels */ js.UndefOr[LabelValues[T]], Unit]): Self = StObject.set(x, "startTimer", js.Any.fromFunction0(value))
+      inline def setStartTimer(value: () => js.Function1[/* labels */ js.UndefOr[LabelValues[T]], Double]): Self = StObject.set(x, "startTimer", js.Any.fromFunction0(value))
     }
   }
 }

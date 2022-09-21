@@ -4,32 +4,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * `KeySet` defines a collection of Cloud Spanner keys and/or key ranges. All
-  * the keys are expected to be in the same table or index. The keys need not
-  * be sorted in any particular way.  If the same key is specified multiple
-  * times in the set (for example if two ranges, two keys, or a key and a range
-  * overlap), Cloud Spanner behaves as if the key were only specified once.
-  */
 trait SchemaKeySet extends StObject {
   
   /**
-    * For convenience `all` can be set to `true` to indicate that this `KeySet`
-    * matches all keys in the table or index. Note that any keys specified in
-    * `keys` or `ranges` are only yielded once.
+    * For convenience `all` can be set to `true` to indicate that this `KeySet` matches all keys in the table or index. Note that any keys specified in `keys` or `ranges` are only yielded once.
     */
-  var all: js.UndefOr[Boolean] = js.undefined
+  var all: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * A list of specific keys. Entries in `keys` should have exactly as many
-    * elements as there are columns in the primary or index key with which this
-    * `KeySet` is used.  Individual key values are encoded as described here.
+    * A list of specific keys. Entries in `keys` should have exactly as many elements as there are columns in the primary or index key with which this `KeySet` is used. Individual key values are encoded as described here.
     */
-  var keys: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
+  var keys: js.UndefOr[js.Array[js.Array[Any]] | Null] = js.undefined
   
   /**
-    * A list of key ranges. See KeyRange for more information about key range
-    * specifications.
+    * A list of key ranges. See KeyRange for more information about key range specifications.
     */
   var ranges: js.UndefOr[js.Array[SchemaKeyRange]] = js.undefined
 }
@@ -44,18 +32,22 @@ object SchemaKeySet {
     
     inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
+    inline def setAllNull: Self = StObject.set(x, "all", null)
+    
     inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
     
-    inline def setKeys(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: js.Array[js.Array[Any]]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    
+    inline def setKeysNull: Self = StObject.set(x, "keys", null)
     
     inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
-    inline def setKeysVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: js.Array[Any]*): Self = StObject.set(x, "keys", js.Array(value*))
     
     inline def setRanges(value: js.Array[SchemaKeyRange]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
     
     inline def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
     
-    inline def setRangesVarargs(value: SchemaKeyRange*): Self = StObject.set(x, "ranges", js.Array(value :_*))
+    inline def setRangesVarargs(value: SchemaKeyRange*): Self = StObject.set(x, "ranges", js.Array(value*))
   }
 }

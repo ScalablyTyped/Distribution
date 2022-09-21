@@ -33,6 +33,6 @@ object ListProjectsResult {
     
     inline def setProjectsUndefined: Self = StObject.set(x, "projects", js.undefined)
     
-    inline def setProjectsVarargs(value: Project*): Self = StObject.set(x, "projects", js.Array(value :_*))
+    inline def setProjectsVarargs(value: Project*): Self = StObject.set(x, "projects", js.Array(value*))
   }
 }

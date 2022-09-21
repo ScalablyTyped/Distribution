@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SPClientAutoFill")
 @js.native
-class SPClientAutoFill protected ()
+open class SPClientAutoFill protected ()
   extends StObject
      with typings.sharepoint.SPClientAutoFill {
   def this(

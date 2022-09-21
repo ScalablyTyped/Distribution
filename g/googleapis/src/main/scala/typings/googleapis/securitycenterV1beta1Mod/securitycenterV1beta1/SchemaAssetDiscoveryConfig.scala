@@ -4,20 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The configuration used for Asset Discovery runs.
-  */
 trait SchemaAssetDiscoveryConfig extends StObject {
   
   /**
     * The mode to use for filtering asset discovery.
     */
-  var inclusionMode: js.UndefOr[String] = js.undefined
+  var inclusionMode: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The project ids to use for filtering asset discovery.
     */
-  var projectIds: js.UndefOr[js.Array[String]] = js.undefined
+  var projectIds: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaAssetDiscoveryConfig {
   
@@ -30,12 +27,16 @@ object SchemaAssetDiscoveryConfig {
     
     inline def setInclusionMode(value: String): Self = StObject.set(x, "inclusionMode", value.asInstanceOf[js.Any])
     
+    inline def setInclusionModeNull: Self = StObject.set(x, "inclusionMode", null)
+    
     inline def setInclusionModeUndefined: Self = StObject.set(x, "inclusionMode", js.undefined)
     
     inline def setProjectIds(value: js.Array[String]): Self = StObject.set(x, "projectIds", value.asInstanceOf[js.Any])
     
+    inline def setProjectIdsNull: Self = StObject.set(x, "projectIds", null)
+    
     inline def setProjectIdsUndefined: Self = StObject.set(x, "projectIds", js.undefined)
     
-    inline def setProjectIdsVarargs(value: String*): Self = StObject.set(x, "projectIds", js.Array(value :_*))
+    inline def setProjectIdsVarargs(value: String*): Self = StObject.set(x, "projectIds", js.Array(value*))
   }
 }

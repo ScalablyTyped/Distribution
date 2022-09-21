@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("akumina-core", "Digispace.PageBuilderManager")
 @js.native
-class PageBuilderManager () extends StObject {
+open class PageBuilderManager () extends StObject {
   
-  def GetDataForAddWidget(): JQueryDeferred[js.Any] = js.native
+  def GetDataForAddWidget(): JQueryDeferred[Any] = js.native
 }

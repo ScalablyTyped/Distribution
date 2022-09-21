@@ -19,6 +19,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var kind: init | get | set
   
+  var method: Boolean
+  
   var optional: Boolean
   
   var proto: Boolean
@@ -37,12 +39,13 @@ object ObjectTypeProperty_ {
   inline def apply(
     key: Identifier_ | StringLiteral_,
     kind: init | get | set,
+    method: Boolean,
     optional: Boolean,
     proto: Boolean,
     static: Boolean,
     value: FlowType
   ): ObjectTypeProperty_ = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], proto = proto.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, variance = null)
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], proto = proto.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, variance = null)
     __obj.updateDynamic("type")("ObjectTypeProperty")
     __obj.asInstanceOf[ObjectTypeProperty_]
   }
@@ -52,6 +55,8 @@ object ObjectTypeProperty_ {
     inline def setKey(value: Identifier_ | StringLiteral_): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKind(value: init | get | set): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setMethod(value: Boolean): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     

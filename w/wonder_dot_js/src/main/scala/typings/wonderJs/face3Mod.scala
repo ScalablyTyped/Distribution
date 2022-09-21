@@ -9,13 +9,13 @@ object face3Mod {
   
   @JSImport("wonder.js/dist/es2015/structure/Face3", "Face3")
   @js.native
-  class Face3 protected () extends StObject {
+  open class Face3 protected () extends StObject {
     def this(
       aIndex: Double,
       bIndex: Double,
       cIndex: Double,
       faceNormal: Vector3,
-      vertexNormals: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<Vector3> */ js.Any
+      vertexNormals: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<Vector3> */ Any
     ) = this()
     
     var aIndex: Double = js.native
@@ -30,7 +30,7 @@ object face3Mod {
     
     def hasVertexNormal(): Boolean = js.native
     
-    var vertexNormals: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<Vector3> */ js.Any = js.native
+    var vertexNormals: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<Vector3> */ Any = js.native
   }
   /* static members */
   object Face3 {
@@ -45,7 +45,7 @@ object face3Mod {
       bIndex: Double,
       cIndex: Double,
       faceNormal: Unit,
-      vertexNormals: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<Vector3> */ js.Any
+      vertexNormals: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<Vector3> */ Any
     ): Face3 = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(aIndex.asInstanceOf[js.Any], bIndex.asInstanceOf[js.Any], cIndex.asInstanceOf[js.Any], faceNormal.asInstanceOf[js.Any], vertexNormals.asInstanceOf[js.Any])).asInstanceOf[Face3]
     inline def create(aIndex: Double, bIndex: Double, cIndex: Double, faceNormal: Vector3): Face3 = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(aIndex.asInstanceOf[js.Any], bIndex.asInstanceOf[js.Any], cIndex.asInstanceOf[js.Any], faceNormal.asInstanceOf[js.Any])).asInstanceOf[Face3]
     inline def create(
@@ -53,7 +53,7 @@ object face3Mod {
       bIndex: Double,
       cIndex: Double,
       faceNormal: Vector3,
-      vertexNormals: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<Vector3> */ js.Any
+      vertexNormals: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Collection<Vector3> */ Any
     ): Face3 = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(aIndex.asInstanceOf[js.Any], bIndex.asInstanceOf[js.Any], cIndex.asInstanceOf[js.Any], faceNormal.asInstanceOf[js.Any], vertexNormals.asInstanceOf[js.Any])).asInstanceOf[Face3]
   }
 }

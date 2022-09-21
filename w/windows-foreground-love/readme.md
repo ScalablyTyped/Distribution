@@ -1,7 +1,7 @@
 
 # Scala.js typings for windows-foreground-love
 
-Typings are for version 0.3
+Typings are for version 0.4.0
 
 ## Library description:
 API wrapper for AllowSetForegroundWindow
@@ -10,10 +10,10 @@ API wrapper for AllowSetForegroundWindow
 | ------------------ | :-------------: |
 | Full name          | windows-foreground-love |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 1 |
-| # downloads        | 444388 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 27928.0 |
+| # stars            | 14.0 |
 
 ## Links
 - [Homepage](https://github.com/the-ress/node-windows-foreground-love#readme)
@@ -24,7 +24,7 @@ API wrapper for AllowSetForegroundWindow
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

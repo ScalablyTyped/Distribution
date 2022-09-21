@@ -8,5 +8,5 @@ object invalidSubnetIDExceptionMod {
   
   @JSImport("@aws-sdk/client-lambda-node/model/InvalidSubnetIDException", "InvalidSubnetIDException")
   @js.native
-  val InvalidSubnetIDException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val InvalidSubnetIDException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

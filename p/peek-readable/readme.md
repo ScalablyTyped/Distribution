@@ -1,7 +1,7 @@
 
 # Scala.js typings for peek-readable
 
-Typings are for version 3.1.0
+Typings are for version 5.0.0
 
 ## Library description:
 Read and peek from a readable stream
@@ -10,10 +10,10 @@ Read and peek from a readable stream
 | ------------------ | :-------------: |
 | Full name          | peek-readable |
 | Keywords           | readable, buffer, stream, read |
-| # releases         | 6 |
-| # dependents       | 1 |
-| # downloads        | 6531724 |
-| # stars            | 0 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 7199079.333333333 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/Borewit/peek-readable#readme)

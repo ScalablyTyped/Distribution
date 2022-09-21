@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxim_mazurok__gapi_dot_client_dot_streetviewpublish
 
-Typings are for version 1.0.20201119
+Typings are for version 1.0.20220811
 
 ## Library description:
 TypeScript typings for Street View Publish API v1
@@ -10,10 +10,10 @@ TypeScript typings for Street View Publish API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.streetviewpublish |
 | Keywords           | - |
-| # releases         | 53 |
-| # dependents       | 1 |
-| # downloads        | 3519 |
-| # stars            | 0 |
+| # releases         | 388 |
+| # dependents       | 0.0 |
+| # downloads        | 2889.3333333333335 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)

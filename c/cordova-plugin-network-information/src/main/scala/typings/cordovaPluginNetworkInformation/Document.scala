@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Document extends StObject {
   
   @JSName("addEventListener")
-  def addEventListener_offline(`type`: offline, connectionStateCallback: js.Function0[js.Any]): Unit = js.native
+  def addEventListener_offline(`type`: offline, connectionStateCallback: js.Function0[Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_offline(`type`: offline, connectionStateCallback: js.Function0[js.Any], useCapture: Boolean): Unit = js.native
+  def addEventListener_offline(`type`: offline, connectionStateCallback: js.Function0[Any], useCapture: Boolean): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_online(`type`: online, connectionStateCallback: js.Function0[js.Any]): Unit = js.native
+  def addEventListener_online(`type`: online, connectionStateCallback: js.Function0[Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_online(`type`: online, connectionStateCallback: js.Function0[js.Any], useCapture: Boolean): Unit = js.native
+  def addEventListener_online(`type`: online, connectionStateCallback: js.Function0[Any], useCapture: Boolean): Unit = js.native
 }

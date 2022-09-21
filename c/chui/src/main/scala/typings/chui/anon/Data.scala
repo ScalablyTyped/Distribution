@@ -38,5 +38,5 @@ trait Data extends StObject {
     * @param data The iterable data the template will consume.
     * @return void.
     */
-  def repeater(element: JQuery, template: String, data: js.Any): Unit = js.native
+  def repeater(element: JQuery, template: String, data: Any): Unit = js.native
 }

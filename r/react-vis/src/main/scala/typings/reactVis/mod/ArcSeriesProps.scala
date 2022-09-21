@@ -76,13 +76,13 @@ object ArcSeriesProps {
     
     inline def setAngleDomainUndefined: Self = StObject.set(x, "angleDomain", js.undefined)
     
-    inline def setAngleDomainVarargs(value: Double*): Self = StObject.set(x, "angleDomain", js.Array(value :_*))
+    inline def setAngleDomainVarargs(value: Double*): Self = StObject.set(x, "angleDomain", js.Array(value*))
     
     inline def setAngleRange(value: js.Array[Double]): Self = StObject.set(x, "angleRange", value.asInstanceOf[js.Any])
     
     inline def setAngleRangeUndefined: Self = StObject.set(x, "angleRange", js.undefined)
     
-    inline def setAngleRangeVarargs(value: Double*): Self = StObject.set(x, "angleRange", js.Array(value :_*))
+    inline def setAngleRangeVarargs(value: Double*): Self = StObject.set(x, "angleRange", js.Array(value*))
     
     inline def setAngleType(value: Scale): Self = StObject.set(x, "angleType", value.asInstanceOf[js.Any])
     
@@ -132,13 +132,13 @@ object ArcSeriesProps {
     
     inline def setRadiusDomainUndefined: Self = StObject.set(x, "radiusDomain", js.undefined)
     
-    inline def setRadiusDomainVarargs(value: Double*): Self = StObject.set(x, "radiusDomain", js.Array(value :_*))
+    inline def setRadiusDomainVarargs(value: Double*): Self = StObject.set(x, "radiusDomain", js.Array(value*))
     
     inline def setRadiusRange(value: js.Array[Double]): Self = StObject.set(x, "radiusRange", value.asInstanceOf[js.Any])
     
     inline def setRadiusRangeUndefined: Self = StObject.set(x, "radiusRange", js.undefined)
     
-    inline def setRadiusRangeVarargs(value: Double*): Self = StObject.set(x, "radiusRange", js.Array(value :_*))
+    inline def setRadiusRangeVarargs(value: Double*): Self = StObject.set(x, "radiusRange", js.Array(value*))
     
     inline def setRadiusType(value: Scale): Self = StObject.set(x, "radiusType", value.asInstanceOf[js.Any])
     

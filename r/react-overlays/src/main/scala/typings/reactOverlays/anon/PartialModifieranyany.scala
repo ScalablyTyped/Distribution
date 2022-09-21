@@ -4,25 +4,30 @@ import typings.popperjsCore.enumsMod.ModifierPhases_
 import typings.popperjsCore.typesMod.ModifierArguments
 import typings.popperjsCore.typesMod.Obj
 import typings.popperjsCore.typesMod.State
+import typings.reactOverlays.usePopperMod.OptionsWithUndefined
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<react-overlays.react-overlays/esm/usePopper.Modifier<any, any>> */
+/* Inlined std.Partial<react-overlays.react-overlays/cjs/usePopper.Modifier<any, any>> */
 trait PartialModifieranyany extends StObject {
   
   var data: js.UndefOr[Obj] = js.undefined
   
-  var effect: js.UndefOr[js.Function1[/* arg0 */ ModifierArguments[js.Any], js.Function0[Unit] | Unit]] = js.undefined
+  var effect: js.UndefOr[
+    js.Function1[/* arg0 */ ModifierArguments[OptionsWithUndefined[Any]], js.Function0[Unit] | Unit]
+  ] = js.undefined
   
   var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var fn: js.UndefOr[js.Function1[/* arg0 */ ModifierArguments[js.Any], State | Unit]] = js.undefined
+  var fn: js.UndefOr[
+    js.Function1[/* arg0 */ ModifierArguments[OptionsWithUndefined[Any]], State | Unit]
+  ] = js.undefined
   
-  var name: js.UndefOr[js.Any] = js.undefined
+  var name: js.UndefOr[Any] = js.undefined
   
-  var options: js.UndefOr[Partial[js.Any]] = js.undefined
+  var options: js.UndefOr[Partial[OptionsWithUndefined[Any]]] = js.undefined
   
   var phase: js.UndefOr[ModifierPhases_] = js.undefined
   
@@ -43,7 +48,7 @@ object PartialModifieranyany {
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    inline def setEffect(value: /* arg0 */ ModifierArguments[js.Any] => js.Function0[Unit] | Unit): Self = StObject.set(x, "effect", js.Any.fromFunction1(value))
+    inline def setEffect(value: /* arg0 */ ModifierArguments[OptionsWithUndefined[Any]] => js.Function0[Unit] | Unit): Self = StObject.set(x, "effect", js.Any.fromFunction1(value))
     
     inline def setEffectUndefined: Self = StObject.set(x, "effect", js.undefined)
     
@@ -51,15 +56,15 @@ object PartialModifieranyany {
     
     inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    inline def setFn(value: /* arg0 */ ModifierArguments[js.Any] => State | Unit): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
+    inline def setFn(value: /* arg0 */ ModifierArguments[OptionsWithUndefined[Any]] => State | Unit): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
     
     inline def setFnUndefined: Self = StObject.set(x, "fn", js.undefined)
     
-    inline def setName(value: js.Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setOptions(value: Partial[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Partial[OptionsWithUndefined[Any]]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
@@ -73,10 +78,10 @@ object PartialModifieranyany {
     
     inline def setRequiresIfExistsUndefined: Self = StObject.set(x, "requiresIfExists", js.undefined)
     
-    inline def setRequiresIfExistsVarargs(value: String*): Self = StObject.set(x, "requiresIfExists", js.Array(value :_*))
+    inline def setRequiresIfExistsVarargs(value: String*): Self = StObject.set(x, "requiresIfExists", js.Array(value*))
     
     inline def setRequiresUndefined: Self = StObject.set(x, "requires", js.undefined)
     
-    inline def setRequiresVarargs(value: String*): Self = StObject.set(x, "requires", js.Array(value :_*))
+    inline def setRequiresVarargs(value: String*): Self = StObject.set(x, "requires", js.Array(value*))
   }
 }

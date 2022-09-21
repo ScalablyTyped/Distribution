@@ -88,8 +88,8 @@ trait JdbcResultSet extends StObject {
   def getNString(columnIndex: Integer): String = js.native
   def getNString(columnLabel: String): String = js.native
   
-  def getObject(columnIndex: Integer): js.Any = js.native
-  def getObject(columnLabel: String): js.Any = js.native
+  def getObject(columnIndex: Integer): Any = js.native
+  def getObject(columnLabel: String): Any = js.native
   
   def getRef(columnIndex: Integer): JdbcRef = js.native
   def getRef(columnLabel: String): JdbcRef = js.native
@@ -208,10 +208,10 @@ trait JdbcResultSet extends StObject {
   def updateNull(columnIndex: Integer): Unit = js.native
   def updateNull(columnLabel: String): Unit = js.native
   
-  def updateObject(columnIndex: Integer, x: js.Any): Unit = js.native
-  def updateObject(columnIndex: Integer, x: js.Any, scaleOrLength: Integer): Unit = js.native
-  def updateObject(columnLabel: String, x: js.Any): Unit = js.native
-  def updateObject(columnLabel: String, x: js.Any, scaleOrLength: Integer): Unit = js.native
+  def updateObject(columnIndex: Integer, x: Any): Unit = js.native
+  def updateObject(columnIndex: Integer, x: Any, scaleOrLength: Integer): Unit = js.native
+  def updateObject(columnLabel: String, x: Any): Unit = js.native
+  def updateObject(columnLabel: String, x: Any, scaleOrLength: Integer): Unit = js.native
   
   def updateRef(columnIndex: Integer, x: JdbcRef): Unit = js.native
   def updateRef(columnLabel: String, x: JdbcRef): Unit = js.native

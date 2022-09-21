@@ -37,7 +37,7 @@ trait AccessPointDescription extends StObject {
   var Name: js.UndefOr[typings.awsSdk.efsMod.Name] = js.undefined
   
   /**
-    * Identified the AWS account that owns the access point resource.
+    * Identified the Amazon Web Services account that owns the access point resource.
     */
   var OwnerId: js.UndefOr[AwsAccountId] = js.undefined
   
@@ -105,6 +105,6 @@ object AccessPointDescription {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

@@ -24,6 +24,6 @@ object SchemaGetOrdersResponse {
     
     inline def setProposalsUndefined: Self = StObject.set(x, "proposals", js.undefined)
     
-    inline def setProposalsVarargs(value: SchemaProposal*): Self = StObject.set(x, "proposals", js.Array(value :_*))
+    inline def setProposalsVarargs(value: SchemaProposal*): Self = StObject.set(x, "proposals", js.Array(value*))
   }
 }

@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait SlicerSortType extends StObject
 /**
+  * Specifies the slicer sort behavior for `Slicer.sortBy`.
   *
-  * Specifies the slicer sort behavior for Slicer.sortBy API.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.10]
   */
 @JSGlobal("Excel.SlicerSortType")
@@ -18,7 +18,8 @@ object SlicerSortType extends StObject {
   
   /**
     * Sort slicer items in ascending order by item captions.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.10]
     */
   @js.native
   sealed trait ascending
@@ -27,7 +28,8 @@ object SlicerSortType extends StObject {
   
   /**
     * Sort slicer items in the order provided by the data source.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.10]
     */
   @js.native
   sealed trait dataSourceOrder
@@ -36,7 +38,8 @@ object SlicerSortType extends StObject {
   
   /**
     * Sort slicer items in descending order by item captions.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.10]
     */
   @js.native
   sealed trait descending

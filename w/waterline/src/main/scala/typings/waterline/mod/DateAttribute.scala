@@ -1,6 +1,5 @@
 package typings.waterline.mod
 
-import typings.std.Date
 import typings.waterline.waterlineStrings.date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DateAttribute
   extends StObject
-     with BaseAttribute[Date]
+     with BaseAttribute[js.Date]
      with _Attribute {
   
   @JSName("type")

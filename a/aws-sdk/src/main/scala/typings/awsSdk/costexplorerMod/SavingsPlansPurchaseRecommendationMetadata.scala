@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SavingsPlansPurchaseRecommendationMetadata extends StObject {
   
   /**
-    * Additional metadata that may be applicable to the recommendation.
+    * Additional metadata that might be applicable to the recommendation.
     */
   var AdditionalMetadata: js.UndefOr[GenericString] = js.undefined
   
   /**
-    * The timestamp showing when the recommendations were generated.
+    * The timestamp that shows when the recommendations were generated.
     */
   var GenerationTimestamp: js.UndefOr[GenericString] = js.undefined
   

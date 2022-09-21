@@ -22,6 +22,6 @@ object ProfileSnapshotResponse {
     
     inline def setTimings(value: js.Array[PaintProfile]): Self = StObject.set(x, "timings", value.asInstanceOf[js.Any])
     
-    inline def setTimingsVarargs(value: PaintProfile*): Self = StObject.set(x, "timings", js.Array(value :_*))
+    inline def setTimingsVarargs(value: PaintProfile*): Self = StObject.set(x, "timings", js.Array(value*))
   }
 }

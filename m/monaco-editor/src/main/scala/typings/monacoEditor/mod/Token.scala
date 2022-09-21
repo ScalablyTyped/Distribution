@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("monaco-editor", "Token")
 @js.native
-class Token protected () extends StObject {
+open class Token protected () extends StObject {
   def this(offset: Double, `type`: String, language: String) = this()
   
   var _tokenBrand: Unit = js.native

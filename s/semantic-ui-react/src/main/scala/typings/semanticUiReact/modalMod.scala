@@ -15,10 +15,9 @@ object modalMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("semantic-ui-react/dist/commonjs/modules/Modal", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[ModalProps, ComponentState, js.Any] {
+  open class default protected () extends Component[ModalProps, ComponentState, Any] {
     def this(props: ModalProps) = this()
-    def this(props: ModalProps, context: js.Any) = this()
+    def this(props: ModalProps, context: Any) = this()
   }
   object default extends Shortcut {
     
@@ -29,10 +28,9 @@ object modalMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("semantic-ui-react/dist/commonjs/modules/Modal", "default.Actions")
     @js.native
-    class Actions protected ()
-      extends Component[ModalActionsProps, ComponentState, js.Any] {
+    open class Actions protected () extends Component[ModalActionsProps, ComponentState, Any] {
       def this(props: ModalActionsProps) = this()
-      def this(props: ModalActionsProps, context: js.Any) = this()
+      def this(props: ModalActionsProps, context: Any) = this()
     }
     
     type _To = ModalComponent

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ChangeFontItalicCommand")
 @js.native
-class ChangeFontItalicCommand ()
+open class ChangeFontItalicCommand ()
   extends StObject
      with typings.devexpressWeb.ChangeFontItalicCommand {
   

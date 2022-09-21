@@ -10,15 +10,12 @@ Control Raspberry Pi GPIO pins with node.js
 | ------------------ | :-------------: |
 | Full name          | rpi-gpio |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 52 |
-| # downloads        | 48794 |
-| # stars            | 36 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2508.0 |
+| # stars            | 624.0 |
 
 ## Links
-- [Homepage](https://github.com/JamesBarwell/rpi-gpio.js#readme)
-- [Bugs](https://github.com/JamesBarwell/rpi-gpio.js/issues)
-- [Repository](https://github.com/JamesBarwell/rpi-gpio.js)
 - [Npm](https://www.npmjs.com/package/rpi-gpio)
     
 

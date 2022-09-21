@@ -4,26 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A public key in the PkixPublicKey format (see
-  * https://tools.ietf.org/html/rfc5280#section-4.1.2.7 for details). Public
-  * keys of this type are typically textually encoded using the PEM format.
-  */
 trait SchemaPkixPublicKey extends StObject {
   
   /**
-    * A PEM-encoded public key, as described in
-    * https://tools.ietf.org/html/rfc7468#section-13
+    * A PEM-encoded public key, as described in https://tools.ietf.org/html/rfc7468#section-13
     */
-  var publicKeyPem: js.UndefOr[String] = js.undefined
+  var publicKeyPem: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The signature algorithm used to verify a message against a signature
-    * using this key. These signature algorithm must match the structure and
-    * any object identifiers encoded in `public_key_pem` (i.e. this algorithm
-    * must match that of the public key).
+    * The signature algorithm used to verify a message against a signature using this key. These signature algorithm must match the structure and any object identifiers encoded in `public_key_pem` (i.e. this algorithm must match that of the public key).
     */
-  var signatureAlgorithm: js.UndefOr[String] = js.undefined
+  var signatureAlgorithm: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaPkixPublicKey {
   
@@ -36,9 +27,13 @@ object SchemaPkixPublicKey {
     
     inline def setPublicKeyPem(value: String): Self = StObject.set(x, "publicKeyPem", value.asInstanceOf[js.Any])
     
+    inline def setPublicKeyPemNull: Self = StObject.set(x, "publicKeyPem", null)
+    
     inline def setPublicKeyPemUndefined: Self = StObject.set(x, "publicKeyPem", js.undefined)
     
     inline def setSignatureAlgorithm(value: String): Self = StObject.set(x, "signatureAlgorithm", value.asInstanceOf[js.Any])
+    
+    inline def setSignatureAlgorithmNull: Self = StObject.set(x, "signatureAlgorithm", null)
     
     inline def setSignatureAlgorithmUndefined: Self = StObject.set(x, "signatureAlgorithm", js.undefined)
   }

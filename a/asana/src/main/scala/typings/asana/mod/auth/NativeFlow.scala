@@ -24,7 +24,7 @@ trait NativeFlow
     * @param url
     * @return
     */
-  def promptForCode(url: String): js.Any
+  def promptForCode(url: String): Any
 }
 object NativeFlow {
   
@@ -36,6 +36,6 @@ object NativeFlow {
     
     inline def setAccessToken(value: String => Unit): Self = StObject.set(x, "accessToken", js.Any.fromFunction1(value))
     
-    inline def setPromptForCode(value: String => js.Any): Self = StObject.set(x, "promptForCode", js.Any.fromFunction1(value))
+    inline def setPromptForCode(value: String => Any): Self = StObject.set(x, "promptForCode", js.Any.fromFunction1(value))
   }
 }

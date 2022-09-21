@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@libp2p/peer-id-factory" : "1.0.18"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@libp2p/peer-id-factory" : "1.0.18"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

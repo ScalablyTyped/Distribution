@@ -20,7 +20,7 @@ trait JSTree
     * @param {function} callback function which takes boolean flag executes after append (AP: originally lack of comment)
     * @trigger model.jstree, changed.jstree
     */
-  def _append_html_data(dom: js.Any, data: String, cb: js.Function1[/* flag */ Boolean, Unit]): Unit = js.native
+  def _append_html_data(dom: Any, data: String, cb: js.Function1[/* flag */ Boolean, Unit]): Unit = js.native
   
   /**
     * appends JSON content to the tree. Used internally.
@@ -32,7 +32,7 @@ trait JSTree
     * @param  {Boolean} force_processing internal param - do not set
     * @trigger model.jstree, changed.jstree
     */
-  def _append_json_data(dom: js.Any, data: String, cb: js.Function1[/* flag */ Boolean, Unit], force_processing: Boolean): Unit = js.native
+  def _append_json_data(dom: Any, data: String, cb: js.Function1[/* flag */ Boolean, Unit], force_processing: Boolean): Unit = js.native
   
   /**
     * Cascades checked state to a node and all its descendants. This function does NOT affect hidden and disabled nodes (or their descendants).
@@ -70,8 +70,8 @@ trait JSTree
     * @param  {function} callback a function to be executed once loading is complete, the function is executed in the instance's scope and receives one argument - a boolean status
     * @return {Boolean}
     */
-  def _load_node(obj: js.Any): Boolean = js.native
-  def _load_node(obj: js.Any, callback: js.Function1[/* status */ Boolean, Unit]): Boolean = js.native
+  def _load_node(obj: Any): Boolean = js.native
+  def _load_node(obj: Any, callback: js.Function1[/* status */ Boolean, Unit]): Boolean = js.native
   
   /**
     * load an array of nodes (will also load unavailable nodes as soon as they appear in the structure). Used internally.
@@ -82,28 +82,28 @@ trait JSTree
     * @param  {Boolean} is_callback - if false reloads node (AP - original comment missing in source code)
     * @param  {Boolean} force_reload - if true force reloads node (AP - original comment missing in source code)
     */
-  def _load_nodes(nodes: js.Array[js.Any]): Unit = js.native
-  def _load_nodes(nodes: js.Array[js.Any], callback: js.Function1[/* nodes */ js.Array[js.Any], Unit]): Unit = js.native
+  def _load_nodes(nodes: js.Array[Any]): Unit = js.native
+  def _load_nodes(nodes: js.Array[Any], callback: js.Function1[/* nodes */ js.Array[Any], Unit]): Unit = js.native
   def _load_nodes(
-    nodes: js.Array[js.Any],
-    callback: js.Function1[/* nodes */ js.Array[js.Any], Unit],
+    nodes: js.Array[Any],
+    callback: js.Function1[/* nodes */ js.Array[Any], Unit],
     is_callback: Boolean
   ): Unit = js.native
   def _load_nodes(
-    nodes: js.Array[js.Any],
-    callback: js.Function1[/* nodes */ js.Array[js.Any], Unit],
+    nodes: js.Array[Any],
+    callback: js.Function1[/* nodes */ js.Array[Any], Unit],
     is_callback: Boolean,
     force_reload: Boolean
   ): Unit = js.native
   def _load_nodes(
-    nodes: js.Array[js.Any],
-    callback: js.Function1[/* nodes */ js.Array[js.Any], Unit],
+    nodes: js.Array[Any],
+    callback: js.Function1[/* nodes */ js.Array[Any], Unit],
     is_callback: Unit,
     force_reload: Boolean
   ): Unit = js.native
-  def _load_nodes(nodes: js.Array[js.Any], callback: Unit, is_callback: Boolean): Unit = js.native
-  def _load_nodes(nodes: js.Array[js.Any], callback: Unit, is_callback: Boolean, force_reload: Boolean): Unit = js.native
-  def _load_nodes(nodes: js.Array[js.Any], callback: Unit, is_callback: Unit, force_reload: Boolean): Unit = js.native
+  def _load_nodes(nodes: js.Array[Any], callback: Unit, is_callback: Boolean): Unit = js.native
+  def _load_nodes(nodes: js.Array[Any], callback: Unit, is_callback: Boolean, force_reload: Boolean): Unit = js.native
+  def _load_nodes(nodes: js.Array[Any], callback: Unit, is_callback: Unit, force_reload: Boolean): Unit = js.native
   
   /**
     * gets the next sibling of a DOM node. Used internally.
@@ -120,7 +120,7 @@ trait JSTree
     * @name _node_changed(obj)
     * @param  {mixed} obj
     */
-  def _node_changed(obj: js.Any): Unit = js.native
+  def _node_changed(obj: Any): Unit = js.native
   
   /**
     * opens every parent of a node (node should be loaded)
@@ -128,7 +128,7 @@ trait JSTree
     * @param {mixed} obj the node to reveal
     * @private
     */
-  def _open_to(obj: js.Any): Unit = js.native
+  def _open_to(obj: Any): Unit = js.native
   
   /**
     * parses a node from a JSON object (used when dealing with flat data, which has no nesting of children,
@@ -140,10 +140,10 @@ trait JSTree
     * @param  {Array} ps list of all parents
     * @return {String} the ID of the object added to the model
     */
-  def _parse_model_from_flat_json(d: js.Any): String = js.native
-  def _parse_model_from_flat_json(d: js.Any, p: String): String = js.native
-  def _parse_model_from_flat_json(d: js.Any, p: String, ps: js.Array[js.Any]): String = js.native
-  def _parse_model_from_flat_json(d: js.Any, p: Unit, ps: js.Array[js.Any]): String = js.native
+  def _parse_model_from_flat_json(d: Any): String = js.native
+  def _parse_model_from_flat_json(d: Any, p: String): String = js.native
+  def _parse_model_from_flat_json(d: Any, p: String, ps: js.Array[Any]): String = js.native
+  def _parse_model_from_flat_json(d: Any, p: Unit, ps: js.Array[Any]): String = js.native
   
   /**
     * parses a node from a jQuery object and appends them to the in memory tree model. Used internally.
@@ -156,8 +156,8 @@ trait JSTree
     */
   def _parse_model_from_html(d: JQuery): String = js.native
   def _parse_model_from_html(d: JQuery, p: String): String = js.native
-  def _parse_model_from_html(d: JQuery, p: String, ps: js.Array[js.Any]): String = js.native
-  def _parse_model_from_html(d: JQuery, p: Unit, ps: js.Array[js.Any]): String = js.native
+  def _parse_model_from_html(d: JQuery, p: String, ps: js.Array[Any]): String = js.native
+  def _parse_model_from_html(d: JQuery, p: Unit, ps: js.Array[Any]): String = js.native
   
   /**
     * parses a node from a JSON object and appends it to the in memory tree model. Used internally.
@@ -168,10 +168,10 @@ trait JSTree
     * @param  {Array} ps list of all parents
     * @return {String} the ID of the object added to the model
     */
-  def _parse_model_from_json(d: js.Any): String = js.native
-  def _parse_model_from_json(d: js.Any, p: String): String = js.native
-  def _parse_model_from_json(d: js.Any, p: String, ps: js.Array[js.Any]): String = js.native
-  def _parse_model_from_json(d: js.Any, p: Unit, ps: js.Array[js.Any]): String = js.native
+  def _parse_model_from_json(d: Any): String = js.native
+  def _parse_model_from_json(d: Any, p: String): String = js.native
+  def _parse_model_from_json(d: Any, p: String, ps: js.Array[Any]): String = js.native
+  def _parse_model_from_json(d: Any, p: Unit, ps: js.Array[Any]): String = js.native
   
   /**
     * gets the previous sibling of a DOM node. Used internally.
@@ -210,7 +210,7 @@ trait JSTree
     * @trigger show_contextmenu.jstree
     * @private
     */
-  def _show_contextmenu(obj: js.Any, x: Double, y: Double, i: Double): Unit = js.native
+  def _show_contextmenu(obj: Any, x: Double, y: Double, i: Double): Unit = js.native
   
   /**
     * set the undetermined state where and if necessary. Used internally.
@@ -228,14 +228,14 @@ trait JSTree
     * @param {Object} e the related event
     * @trigger activate_node.jstree, changed.jstree
     */
-  def activate_node(obj: js.Any, e: js.Any): Unit = js.native
+  def activate_node(obj: Any, e: Any): Unit = js.native
   
   /**
     * bind all events. Used internally.
     * @private
     * @name bind()
     */
-  def bind(): js.Any = js.native
+  def bind(): Any = js.native
   
   /**
     * check if there is something in the buffer to paste
@@ -255,7 +255,7 @@ trait JSTree
     * @param  {mixed} more some various additional information, for example if a "move_node" operations is triggered by DND this will be the hovered node
     * @return {Boolean}
     */
-  def check(chk: String, obj: js.Any, par: js.Any, pos: js.Any, more: js.Any): Boolean = js.native
+  def check(chk: String, obj: Any, par: Any, pos: Any, more: Any): Boolean = js.native
   
   /**
     * checks all nodes in the tree (only if tie_selection in checkbox settings is false, otherwise select_all will be called internally)
@@ -263,7 +263,7 @@ trait JSTree
     * @trigger check_all.jstree, changed.jstree
     * @plugin checkbox
     */
-  def check_all(): js.Any = js.native
+  def check_all(): Any = js.native
   
   /**
     * check a node (only if tie_selection in checkbox settings is false, otherwise select_node will be called internally)
@@ -272,7 +272,7 @@ trait JSTree
     * @trigger check_node.jstree
     * @plugin checkbox
     */
-  def check_node(obj: js.Any, e: js.Any): js.Any = js.native
+  def check_node(obj: Any, e: Any): Any = js.native
   
   /**
     * clear the buffer of previously copied or cut nodes
@@ -304,8 +304,8 @@ trait JSTree
     * @trigger close_all.jstree
     */
   def close_all(): Unit = js.native
-  def close_all(obj: js.Any): Unit = js.native
-  def close_all(obj: js.Any, animation: Double): Unit = js.native
+  def close_all(obj: Any): Unit = js.native
+  def close_all(obj: Any, animation: Double): Unit = js.native
   def close_all(obj: Unit, animation: Double): Unit = js.native
   
   /**
@@ -316,22 +316,22 @@ trait JSTree
     * when closing the node (overrides the `core.animation` setting). Use `false` for no animation.
     * @trigger close_node.jstree, after_close.jstree
     */
-  def close_node(obj: js.Any): Unit = js.native
-  def close_node(obj: js.Any, animation: js.Any): Unit = js.native
+  def close_node(obj: Any): Unit = js.native
+  def close_node(obj: Any, animation: Any): Unit = js.native
   
   /**
     * ### Conditionalclose plugin
     *
     * This plugin allows defining a callback to allow or deny node close by user input (close node method).
     */
-  def conditionalclose(options: js.Any, parent: js.Any): js.Any = js.native
+  def conditionalclose(options: Any, parent: Any): Any = js.native
   
   /**
     * ### Conditionalselect plugin
     *
     * This plugin allows defining a callback to allow or deny node selection by user input (activate node method).
     */
-  def conditionalselect(options: js.Any, parent: js.Any): js.Any = js.native
+  def conditionalselect(options: Any, parent: Any): Any = js.native
   
   /**
     * copy a node (a later call to `paste(obj)` would copy the node)
@@ -339,7 +339,7 @@ trait JSTree
     * @param  {mixed} obj multiple objects can be passed using an array
     * @trigger copy.jstre
     */
-  def copy(obj: js.Any): Unit = js.native
+  def copy(obj: Any): Unit = js.native
   
   /**
     * copy a node to a new parent
@@ -353,182 +353,174 @@ trait JSTree
     * @param  {Boolean} instance internal parameter indicating if the node comes from another instance
     * @trigger model.jstree copy_node.jstree
     */
-  def copy_node(obj: js.Any, par: js.Any): Unit = js.native
-  def copy_node(obj: js.Any, par: js.Any, pos: js.Any): Unit = js.native
+  def copy_node(obj: Any, par: Any): Unit = js.native
+  def copy_node(obj: Any, par: Any, pos: Any): Unit = js.native
   def copy_node(
-    obj: js.Any,
-    par: js.Any,
-    pos: js.Any,
-    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit]
+    obj: Any,
+    par: Any,
+    pos: Any,
+    callback: js.Function3[/* node */ Any, /* new_par */ Any, /* pos */ Any, Unit]
   ): Unit = js.native
   def copy_node(
-    obj: js.Any,
-    par: js.Any,
-    pos: js.Any,
-    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    obj: Any,
+    par: Any,
+    pos: Any,
+    callback: js.Function3[/* node */ Any, /* new_par */ Any, /* pos */ Any, Unit],
     is_loaded: Boolean
   ): Unit = js.native
   def copy_node(
-    obj: js.Any,
-    par: js.Any,
-    pos: js.Any,
-    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    obj: Any,
+    par: Any,
+    pos: Any,
+    callback: js.Function3[/* node */ Any, /* new_par */ Any, /* pos */ Any, Unit],
     is_loaded: Boolean,
     skip_redraw: Boolean
   ): Unit = js.native
   def copy_node(
-    obj: js.Any,
-    par: js.Any,
-    pos: js.Any,
-    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    obj: Any,
+    par: Any,
+    pos: Any,
+    callback: js.Function3[/* node */ Any, /* new_par */ Any, /* pos */ Any, Unit],
     is_loaded: Boolean,
     skip_redraw: Boolean,
     origin: Boolean
   ): Unit = js.native
   def copy_node(
-    obj: js.Any,
-    par: js.Any,
-    pos: js.Any,
-    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    obj: Any,
+    par: Any,
+    pos: Any,
+    callback: js.Function3[/* node */ Any, /* new_par */ Any, /* pos */ Any, Unit],
     is_loaded: Boolean,
     skip_redraw: Unit,
     origin: Boolean
   ): Unit = js.native
   def copy_node(
-    obj: js.Any,
-    par: js.Any,
-    pos: js.Any,
-    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    obj: Any,
+    par: Any,
+    pos: Any,
+    callback: js.Function3[/* node */ Any, /* new_par */ Any, /* pos */ Any, Unit],
     is_loaded: Unit,
     skip_redraw: Boolean
   ): Unit = js.native
   def copy_node(
-    obj: js.Any,
-    par: js.Any,
-    pos: js.Any,
-    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    obj: Any,
+    par: Any,
+    pos: Any,
+    callback: js.Function3[/* node */ Any, /* new_par */ Any, /* pos */ Any, Unit],
     is_loaded: Unit,
     skip_redraw: Boolean,
     origin: Boolean
   ): Unit = js.native
   def copy_node(
-    obj: js.Any,
-    par: js.Any,
-    pos: js.Any,
-    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    obj: Any,
+    par: Any,
+    pos: Any,
+    callback: js.Function3[/* node */ Any, /* new_par */ Any, /* pos */ Any, Unit],
     is_loaded: Unit,
     skip_redraw: Unit,
     origin: Boolean
   ): Unit = js.native
-  def copy_node(obj: js.Any, par: js.Any, pos: js.Any, callback: Unit, is_loaded: Boolean): Unit = js.native
-  def copy_node(obj: js.Any, par: js.Any, pos: js.Any, callback: Unit, is_loaded: Boolean, skip_redraw: Boolean): Unit = js.native
+  def copy_node(obj: Any, par: Any, pos: Any, callback: Unit, is_loaded: Boolean): Unit = js.native
+  def copy_node(obj: Any, par: Any, pos: Any, callback: Unit, is_loaded: Boolean, skip_redraw: Boolean): Unit = js.native
   def copy_node(
-    obj: js.Any,
-    par: js.Any,
-    pos: js.Any,
+    obj: Any,
+    par: Any,
+    pos: Any,
     callback: Unit,
     is_loaded: Boolean,
     skip_redraw: Boolean,
     origin: Boolean
   ): Unit = js.native
   def copy_node(
-    obj: js.Any,
-    par: js.Any,
-    pos: js.Any,
+    obj: Any,
+    par: Any,
+    pos: Any,
     callback: Unit,
     is_loaded: Boolean,
     skip_redraw: Unit,
     origin: Boolean
   ): Unit = js.native
-  def copy_node(obj: js.Any, par: js.Any, pos: js.Any, callback: Unit, is_loaded: Unit, skip_redraw: Boolean): Unit = js.native
+  def copy_node(obj: Any, par: Any, pos: Any, callback: Unit, is_loaded: Unit, skip_redraw: Boolean): Unit = js.native
   def copy_node(
-    obj: js.Any,
-    par: js.Any,
-    pos: js.Any,
+    obj: Any,
+    par: Any,
+    pos: Any,
     callback: Unit,
     is_loaded: Unit,
     skip_redraw: Boolean,
     origin: Boolean
   ): Unit = js.native
+  def copy_node(obj: Any, par: Any, pos: Any, callback: Unit, is_loaded: Unit, skip_redraw: Unit, origin: Boolean): Unit = js.native
   def copy_node(
-    obj: js.Any,
-    par: js.Any,
-    pos: js.Any,
-    callback: Unit,
-    is_loaded: Unit,
-    skip_redraw: Unit,
-    origin: Boolean
+    obj: Any,
+    par: Any,
+    pos: Unit,
+    callback: js.Function3[/* node */ Any, /* new_par */ Any, /* pos */ Any, Unit]
   ): Unit = js.native
   def copy_node(
-    obj: js.Any,
-    par: js.Any,
+    obj: Any,
+    par: Any,
     pos: Unit,
-    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit]
-  ): Unit = js.native
-  def copy_node(
-    obj: js.Any,
-    par: js.Any,
-    pos: Unit,
-    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    callback: js.Function3[/* node */ Any, /* new_par */ Any, /* pos */ Any, Unit],
     is_loaded: Boolean
   ): Unit = js.native
   def copy_node(
-    obj: js.Any,
-    par: js.Any,
+    obj: Any,
+    par: Any,
     pos: Unit,
-    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    callback: js.Function3[/* node */ Any, /* new_par */ Any, /* pos */ Any, Unit],
     is_loaded: Boolean,
     skip_redraw: Boolean
   ): Unit = js.native
   def copy_node(
-    obj: js.Any,
-    par: js.Any,
+    obj: Any,
+    par: Any,
     pos: Unit,
-    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    callback: js.Function3[/* node */ Any, /* new_par */ Any, /* pos */ Any, Unit],
     is_loaded: Boolean,
     skip_redraw: Boolean,
     origin: Boolean
   ): Unit = js.native
   def copy_node(
-    obj: js.Any,
-    par: js.Any,
+    obj: Any,
+    par: Any,
     pos: Unit,
-    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    callback: js.Function3[/* node */ Any, /* new_par */ Any, /* pos */ Any, Unit],
     is_loaded: Boolean,
     skip_redraw: Unit,
     origin: Boolean
   ): Unit = js.native
   def copy_node(
-    obj: js.Any,
-    par: js.Any,
+    obj: Any,
+    par: Any,
     pos: Unit,
-    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    callback: js.Function3[/* node */ Any, /* new_par */ Any, /* pos */ Any, Unit],
     is_loaded: Unit,
     skip_redraw: Boolean
   ): Unit = js.native
   def copy_node(
-    obj: js.Any,
-    par: js.Any,
+    obj: Any,
+    par: Any,
     pos: Unit,
-    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    callback: js.Function3[/* node */ Any, /* new_par */ Any, /* pos */ Any, Unit],
     is_loaded: Unit,
     skip_redraw: Boolean,
     origin: Boolean
   ): Unit = js.native
   def copy_node(
-    obj: js.Any,
-    par: js.Any,
+    obj: Any,
+    par: Any,
     pos: Unit,
-    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    callback: js.Function3[/* node */ Any, /* new_par */ Any, /* pos */ Any, Unit],
     is_loaded: Unit,
     skip_redraw: Unit,
     origin: Boolean
   ): Unit = js.native
-  def copy_node(obj: js.Any, par: js.Any, pos: Unit, callback: Unit, is_loaded: Boolean): Unit = js.native
-  def copy_node(obj: js.Any, par: js.Any, pos: Unit, callback: Unit, is_loaded: Boolean, skip_redraw: Boolean): Unit = js.native
+  def copy_node(obj: Any, par: Any, pos: Unit, callback: Unit, is_loaded: Boolean): Unit = js.native
+  def copy_node(obj: Any, par: Any, pos: Unit, callback: Unit, is_loaded: Boolean, skip_redraw: Boolean): Unit = js.native
   def copy_node(
-    obj: js.Any,
-    par: js.Any,
+    obj: Any,
+    par: Any,
     pos: Unit,
     callback: Unit,
     is_loaded: Boolean,
@@ -536,33 +528,25 @@ trait JSTree
     origin: Boolean
   ): Unit = js.native
   def copy_node(
-    obj: js.Any,
-    par: js.Any,
+    obj: Any,
+    par: Any,
     pos: Unit,
     callback: Unit,
     is_loaded: Boolean,
     skip_redraw: Unit,
     origin: Boolean
   ): Unit = js.native
-  def copy_node(obj: js.Any, par: js.Any, pos: Unit, callback: Unit, is_loaded: Unit, skip_redraw: Boolean): Unit = js.native
+  def copy_node(obj: Any, par: Any, pos: Unit, callback: Unit, is_loaded: Unit, skip_redraw: Boolean): Unit = js.native
   def copy_node(
-    obj: js.Any,
-    par: js.Any,
+    obj: Any,
+    par: Any,
     pos: Unit,
     callback: Unit,
     is_loaded: Unit,
     skip_redraw: Boolean,
     origin: Boolean
   ): Unit = js.native
-  def copy_node(
-    obj: js.Any,
-    par: js.Any,
-    pos: Unit,
-    callback: Unit,
-    is_loaded: Unit,
-    skip_redraw: Unit,
-    origin: Boolean
-  ): Unit = js.native
+  def copy_node(obj: Any, par: Any, pos: Unit, callback: Unit, is_loaded: Unit, skip_redraw: Unit, origin: Boolean): Unit = js.native
   
   /**
     * create a new node (do not confuse with load_node)
@@ -576,36 +560,36 @@ trait JSTree
     * @trigger model.jstree, create_node.jstree
     */
   def create_node(): String = js.native
-  def create_node(par: js.Any): String = js.native
-  def create_node(par: js.Any, node: js.Any): String = js.native
-  def create_node(par: js.Any, node: js.Any, pos: js.Any): String = js.native
-  def create_node(par: js.Any, node: js.Any, pos: js.Any, callback: js.Any): String = js.native
-  def create_node(par: js.Any, node: js.Any, pos: js.Any, callback: js.Any, is_loaded: Boolean): String = js.native
-  def create_node(par: js.Any, node: js.Any, pos: js.Any, callback: Unit, is_loaded: Boolean): String = js.native
-  def create_node(par: js.Any, node: js.Any, pos: Unit, callback: js.Any): String = js.native
-  def create_node(par: js.Any, node: js.Any, pos: Unit, callback: js.Any, is_loaded: Boolean): String = js.native
-  def create_node(par: js.Any, node: js.Any, pos: Unit, callback: Unit, is_loaded: Boolean): String = js.native
-  def create_node(par: js.Any, node: Unit, pos: js.Any): String = js.native
-  def create_node(par: js.Any, node: Unit, pos: js.Any, callback: js.Any): String = js.native
-  def create_node(par: js.Any, node: Unit, pos: js.Any, callback: js.Any, is_loaded: Boolean): String = js.native
-  def create_node(par: js.Any, node: Unit, pos: js.Any, callback: Unit, is_loaded: Boolean): String = js.native
-  def create_node(par: js.Any, node: Unit, pos: Unit, callback: js.Any): String = js.native
-  def create_node(par: js.Any, node: Unit, pos: Unit, callback: js.Any, is_loaded: Boolean): String = js.native
-  def create_node(par: js.Any, node: Unit, pos: Unit, callback: Unit, is_loaded: Boolean): String = js.native
-  def create_node(par: Unit, node: js.Any): String = js.native
-  def create_node(par: Unit, node: js.Any, pos: js.Any): String = js.native
-  def create_node(par: Unit, node: js.Any, pos: js.Any, callback: js.Any): String = js.native
-  def create_node(par: Unit, node: js.Any, pos: js.Any, callback: js.Any, is_loaded: Boolean): String = js.native
-  def create_node(par: Unit, node: js.Any, pos: js.Any, callback: Unit, is_loaded: Boolean): String = js.native
-  def create_node(par: Unit, node: js.Any, pos: Unit, callback: js.Any): String = js.native
-  def create_node(par: Unit, node: js.Any, pos: Unit, callback: js.Any, is_loaded: Boolean): String = js.native
-  def create_node(par: Unit, node: js.Any, pos: Unit, callback: Unit, is_loaded: Boolean): String = js.native
-  def create_node(par: Unit, node: Unit, pos: js.Any): String = js.native
-  def create_node(par: Unit, node: Unit, pos: js.Any, callback: js.Any): String = js.native
-  def create_node(par: Unit, node: Unit, pos: js.Any, callback: js.Any, is_loaded: Boolean): String = js.native
-  def create_node(par: Unit, node: Unit, pos: js.Any, callback: Unit, is_loaded: Boolean): String = js.native
-  def create_node(par: Unit, node: Unit, pos: Unit, callback: js.Any): String = js.native
-  def create_node(par: Unit, node: Unit, pos: Unit, callback: js.Any, is_loaded: Boolean): String = js.native
+  def create_node(par: Any): String = js.native
+  def create_node(par: Any, node: Any): String = js.native
+  def create_node(par: Any, node: Any, pos: Any): String = js.native
+  def create_node(par: Any, node: Any, pos: Any, callback: Any): String = js.native
+  def create_node(par: Any, node: Any, pos: Any, callback: Any, is_loaded: Boolean): String = js.native
+  def create_node(par: Any, node: Any, pos: Any, callback: Unit, is_loaded: Boolean): String = js.native
+  def create_node(par: Any, node: Any, pos: Unit, callback: Any): String = js.native
+  def create_node(par: Any, node: Any, pos: Unit, callback: Any, is_loaded: Boolean): String = js.native
+  def create_node(par: Any, node: Any, pos: Unit, callback: Unit, is_loaded: Boolean): String = js.native
+  def create_node(par: Any, node: Unit, pos: Any): String = js.native
+  def create_node(par: Any, node: Unit, pos: Any, callback: Any): String = js.native
+  def create_node(par: Any, node: Unit, pos: Any, callback: Any, is_loaded: Boolean): String = js.native
+  def create_node(par: Any, node: Unit, pos: Any, callback: Unit, is_loaded: Boolean): String = js.native
+  def create_node(par: Any, node: Unit, pos: Unit, callback: Any): String = js.native
+  def create_node(par: Any, node: Unit, pos: Unit, callback: Any, is_loaded: Boolean): String = js.native
+  def create_node(par: Any, node: Unit, pos: Unit, callback: Unit, is_loaded: Boolean): String = js.native
+  def create_node(par: Unit, node: Any): String = js.native
+  def create_node(par: Unit, node: Any, pos: Any): String = js.native
+  def create_node(par: Unit, node: Any, pos: Any, callback: Any): String = js.native
+  def create_node(par: Unit, node: Any, pos: Any, callback: Any, is_loaded: Boolean): String = js.native
+  def create_node(par: Unit, node: Any, pos: Any, callback: Unit, is_loaded: Boolean): String = js.native
+  def create_node(par: Unit, node: Any, pos: Unit, callback: Any): String = js.native
+  def create_node(par: Unit, node: Any, pos: Unit, callback: Any, is_loaded: Boolean): String = js.native
+  def create_node(par: Unit, node: Any, pos: Unit, callback: Unit, is_loaded: Boolean): String = js.native
+  def create_node(par: Unit, node: Unit, pos: Any): String = js.native
+  def create_node(par: Unit, node: Unit, pos: Any, callback: Any): String = js.native
+  def create_node(par: Unit, node: Unit, pos: Any, callback: Any, is_loaded: Boolean): String = js.native
+  def create_node(par: Unit, node: Unit, pos: Any, callback: Unit, is_loaded: Boolean): String = js.native
+  def create_node(par: Unit, node: Unit, pos: Unit, callback: Any): String = js.native
+  def create_node(par: Unit, node: Unit, pos: Unit, callback: Any, is_loaded: Boolean): String = js.native
   def create_node(par: Unit, node: Unit, pos: Unit, callback: Unit, is_loaded: Boolean): String = js.native
   
   /**
@@ -614,7 +598,7 @@ trait JSTree
     * @param  {mixed} obj multiple objects can be passed using an array
     * @trigger cut.jstree
     */
-  def cut(obj: js.Any): Unit = js.native
+  def cut(obj: Any): Unit = js.native
   
   /**
     * removes the hover state from a nodecalled when a node is no longer hovered by the user. Used internally.
@@ -623,7 +607,7 @@ trait JSTree
     * @param {mixed} obj
     * @trigger dehover_node.jstree
     */
-  def dehover_node(obj: js.Any): Unit = js.native
+  def dehover_node(obj: Any): Unit = js.native
   
   /**
     * remove a node
@@ -632,7 +616,7 @@ trait JSTree
     * @return {Boolean}
     * @trigger delete_node.jstree, changed.jstree
     */
-  def delete_node(obj: js.Any): Boolean = js.native
+  def delete_node(obj: Any): Boolean = js.native
   
   /**
     * deselect all selected nodes
@@ -650,10 +634,10 @@ trait JSTree
     * @param {Boolean} supress_event if set to `true` the `changed.jstree` event won't be triggered
     * @trigger deselect_node.jstree, changed.jstree
     */
-  def deselect_node(obj: js.Any): Unit = js.native
-  def deselect_node(obj: js.Any, supress_event: Boolean): Unit = js.native
-  def deselect_node(obj: js.Any, supress_event: Boolean, e: js.Any): Unit = js.native
-  def deselect_node(obj: js.Any, supress_event: Unit, e: js.Any): Unit = js.native
+  def deselect_node(obj: Any): Unit = js.native
+  def deselect_node(obj: Any, supress_event: Boolean): Unit = js.native
+  def deselect_node(obj: Any, supress_event: Boolean, e: Any): Unit = js.native
+  def deselect_node(obj: Any, supress_event: Unit, e: Any): Unit = js.native
   
   /**
     * destroy an instance
@@ -670,7 +654,7 @@ trait JSTree
     * @trigger disable_checkbox.jstree
     * @plugin checkbox
     */
-  def disable_checkbox(obj: js.Any): Boolean = js.native
+  def disable_checkbox(obj: Any): Boolean = js.native
   
   /**
     * disables a node - so that it can not be selected
@@ -678,7 +662,7 @@ trait JSTree
     * @param {mixed} obj the node to disable
     * @trigger disable_node.jstree
     */
-  def disable_node(obj: js.Any): Boolean = js.native
+  def disable_node(obj: Any): Boolean = js.native
   
   /**
     * redraws a single node's children. Used internally.
@@ -686,7 +670,7 @@ trait JSTree
     * @name draw_children(node)
     * @param {mixed} node the node whose children will be redrawn
     */
-  def draw_children(node: js.Any): Unit = js.native
+  def draw_children(node: Any): Unit = js.native
   
   /**
     * put a node in edit mode (input field to rename the node)
@@ -697,17 +681,17 @@ trait JSTree
     * it is called in the instance's scope and receives the node, a status parameter (true if the rename is successful, false otherwise)
     * and a boolean indicating if the user cancelled the edit. You can access the node's title using .text
     */
-  def edit(obj: js.Any): Unit = js.native
-  def edit(obj: js.Any, default_text: String): Unit = js.native
+  def edit(obj: Any): Unit = js.native
+  def edit(obj: Any, default_text: String): Unit = js.native
   def edit(
-    obj: js.Any,
+    obj: Any,
     default_text: String,
-    callback: js.Function3[/* node */ js.Any, /* status */ Boolean, /* canceled */ Boolean, Unit]
+    callback: js.Function3[/* node */ Any, /* status */ Boolean, /* canceled */ Boolean, Unit]
   ): Unit = js.native
   def edit(
-    obj: js.Any,
+    obj: Any,
     default_text: Unit,
-    callback: js.Function3[/* node */ js.Any, /* status */ Boolean, /* canceled */ Boolean, Unit]
+    callback: js.Function3[/* node */ Any, /* status */ Boolean, /* canceled */ Boolean, Unit]
   ): Unit = js.native
   
   /**
@@ -717,7 +701,7 @@ trait JSTree
     * @trigger enable_checkbox.jstree
     * @plugin checkbox
     */
-  def enable_checkbox(obj: js.Any): Boolean = js.native
+  def enable_checkbox(obj: Any): Boolean = js.native
   
   /**
     * enables a node - so that it can be selected
@@ -725,7 +709,7 @@ trait JSTree
     * @param {mixed} obj the node to enable
     * @trigger enable_node.jstree
     */
-  def enable_node(obj: js.Any): Boolean = js.native
+  def enable_node(obj: Any): Boolean = js.native
   
   /**
     * get an array of all bottom level checked nodes (ignoring selected parents) (if tie_selection is on in the settings this function will return the same as get_bottom_selected)
@@ -734,7 +718,7 @@ trait JSTree
     * @return {Array}
     * @plugin checkbox
     */
-  def get_bottom_checked(full: js.Any): js.Array[js.Any] = js.native
+  def get_bottom_checked(full: Any): js.Array[Any] = js.native
   
   /**
     * get an array of all bottom level selected nodes (ignoring selected parents)
@@ -742,8 +726,8 @@ trait JSTree
     * @param  {mixed}  full if set to `true` the returned array will consist of the full node objects, otherwise - only IDs will be returned
     * @return {Array}
     */
-  def get_bottom_selected(): js.Array[js.Any] = js.native
-  def get_bottom_selected(full: js.Any): js.Array[js.Any] = js.native
+  def get_bottom_selected(): js.Array[Any] = js.native
+  def get_bottom_selected(full: Any): js.Array[Any] = js.native
   
   /**
     * get the current buffer (any nodes that are waiting for a paste operation)
@@ -759,7 +743,7 @@ trait JSTree
     * @return {Array}
     * @plugin checkbox
     */
-  def get_checked(full: js.Any): js.Array[js.Any] = js.native
+  def get_checked(full: Any): js.Array[Any] = js.native
   
   /**
     * Gets ids of nodes selected in branch (of tree) specified by id (does not include the node specified by id)
@@ -776,7 +760,7 @@ trait JSTree
     * @param  {mixed} obj
     * @return {jQuery}
     */
-  def get_children_dom(obj: js.Any): JQuery | Boolean = js.native
+  def get_children_dom(obj: Any): JQuery | Boolean = js.native
   
   /**
     * trigger an event. Used internally.
@@ -810,7 +794,7 @@ trait JSTree
     * @param {mixed} obj
     * @return {String}
     */
-  def get_icon(obj: js.Any): String = js.native
+  def get_icon(obj: Any): String = js.native
   
   /**
     * gets a JSON representation of a node (or the whole tree)
@@ -826,14 +810,14 @@ trait JSTree
     * @param  {Boolean} options.flat return flat JSON instead of nested
     * @return {Object}
     */
-  def get_json(): js.Any = js.native
-  def get_json(obj: js.Any): js.Any = js.native
-  def get_json(obj: js.Any, options: Unit, flat: Boolean): js.Any = js.native
-  def get_json(obj: js.Any, options: JSTreeGetJsonOptions): js.Any = js.native
-  def get_json(obj: js.Any, options: JSTreeGetJsonOptions, flat: Boolean): js.Any = js.native
-  def get_json(obj: Unit, options: Unit, flat: Boolean): js.Any = js.native
-  def get_json(obj: Unit, options: JSTreeGetJsonOptions): js.Any = js.native
-  def get_json(obj: Unit, options: JSTreeGetJsonOptions, flat: Boolean): js.Any = js.native
+  def get_json(): Any = js.native
+  def get_json(obj: Any): Any = js.native
+  def get_json(obj: Any, options: Unit, flat: Boolean): Any = js.native
+  def get_json(obj: Any, options: JSTreeGetJsonOptions): Any = js.native
+  def get_json(obj: Any, options: JSTreeGetJsonOptions, flat: Boolean): Any = js.native
+  def get_json(obj: Unit, options: Unit, flat: Boolean): Any = js.native
+  def get_json(obj: Unit, options: JSTreeGetJsonOptions): Any = js.native
+  def get_json(obj: Unit, options: JSTreeGetJsonOptions, flat: Boolean): Any = js.native
   
   /**
     * get the next visible node that is below the `obj` node. If `strict` is set to `true` only sibling nodes are returned.
@@ -842,8 +826,8 @@ trait JSTree
     * @param  {Boolean} strict
     * @return {jQuery}
     */
-  def get_next_dom(obj: js.Any): JQuery = js.native
-  def get_next_dom(obj: js.Any, strict: Boolean): JQuery = js.native
+  def get_next_dom(obj: Any): JQuery = js.native
+  def get_next_dom(obj: Any, strict: Boolean): JQuery = js.native
   
   /**
     * get the JSON representation of a node (or the actual jQuery extended DOM node) by using any input (child DOM element, ID string, selector, etc)
@@ -852,8 +836,8 @@ trait JSTree
     * @param  {Boolean} as_dom
     * @return {Object|jQuery}
     */
-  def get_node(obj: js.Any): js.Any = js.native
-  def get_node(obj: js.Any, as_dom: Boolean): js.Any = js.native
+  def get_node(obj: Any): Any = js.native
+  def get_node(obj: Any, as_dom: Boolean): Any = js.native
   
   /**
     * get the parent ID of a node
@@ -861,7 +845,7 @@ trait JSTree
     * @param  {mixed} obj
     * @return {String}
     */
-  def get_parent(obj: js.Any): String = js.native
+  def get_parent(obj: Any): String = js.native
   
   /**
     * get the path to a node, either consisting of node texts, or of node IDs, optionally glued together (otherwise an array)
@@ -871,10 +855,10 @@ trait JSTree
     * @param  {Boolean} ids if set to true build the path using ID, otherwise node text is used
     * @return {mixed}
     */
-  def get_path(obj: js.Any): js.Any = js.native
-  def get_path(obj: js.Any, glue: String): js.Any = js.native
-  def get_path(obj: js.Any, glue: String, ids: Boolean): js.Any = js.native
-  def get_path(obj: js.Any, glue: Unit, ids: Boolean): js.Any = js.native
+  def get_path(obj: Any): Any = js.native
+  def get_path(obj: Any, glue: String): Any = js.native
+  def get_path(obj: Any, glue: String, ids: Boolean): Any = js.native
+  def get_path(obj: Any, glue: Unit, ids: Boolean): Any = js.native
   
   /**
     * get the previous visible node that is above the `obj` node. If `strict` is set to `true` only sibling nodes are returned.
@@ -883,8 +867,8 @@ trait JSTree
     * @param  {Boolean} strict
     * @return {jQuery}
     */
-  def get_prev_dom(obj: js.Any): JQuery = js.native
-  def get_prev_dom(obj: js.Any, strict: Boolean): JQuery = js.native
+  def get_prev_dom(obj: Any): JQuery = js.native
+  def get_prev_dom(obj: Any, strict: Boolean): JQuery = js.native
   
   /**
     * types plugin
@@ -896,7 +880,7 @@ trait JSTree
     * @return {Object}
     * @plugin types
     */
-  def get_rules(obj: js.Any): js.Any = js.native
+  def get_rules(obj: Any): Any = js.native
   
   /**
     * get an array of all selected nodes
@@ -904,8 +888,8 @@ trait JSTree
     * @param  {mixed}  full if set to `true` the returned array will consist of the full node objects, otherwise - only IDs will be returned
     * @return {Array}
     */
-  def get_selected(): js.Array[js.Any] = js.native
-  def get_selected(full: js.Any): js.Array[js.Any] = js.native
+  def get_selected(): js.Array[Any] = js.native
+  def get_selected(full: Any): js.Array[Any] = js.native
   
   /**
     * gets the current state of the tree so that it can be restored later with `set_state(state)`. Used internally.
@@ -913,7 +897,7 @@ trait JSTree
     * @private
     * @return {Object}
     */
-  def get_state(): js.Any = js.native
+  def get_state(): Any = js.native
   
   /**
     * gets string replacements (localization). Used internally.
@@ -930,7 +914,7 @@ trait JSTree
     * @param  {mixed} obj the node
     * @return {String}
     */
-  def get_text(obj: js.Any): String = js.native
+  def get_text(obj: Any): String = js.native
   
   /**
     * gets the name of the currently applied theme name
@@ -953,7 +937,7 @@ trait JSTree
     * @return {Array}
     * @plugin checkbox
     */
-  def get_top_checked(full: js.Any): js.Array[js.Any] = js.native
+  def get_top_checked(full: Any): js.Array[Any] = js.native
   
   /**
     * get an array of all top level selected nodes (ignoring children of selected nodes)
@@ -961,8 +945,8 @@ trait JSTree
     * @param  {mixed}  full if set to `true` the returned array will consist of the full node objects, otherwise - only IDs will be returned
     * @return {Array}
     */
-  def get_top_selected(): js.Array[js.Any] = js.native
-  def get_top_selected(full: js.Any): js.Array[js.Any] = js.native
+  def get_top_selected(): js.Array[Any] = js.native
+  def get_top_selected(full: Any): js.Array[Any] = js.native
   
   /**
     * used to retrieve the type string or settings object for a node
@@ -972,8 +956,8 @@ trait JSTree
     * @return {String|Object}
     * @plugin types
     */
-  def get_type(obj: js.Any): js.Any = js.native
-  def get_type(obj: js.Any, rules: js.Any): js.Any = js.native
+  def get_type(obj: Any): Any = js.native
+  def get_type(obj: Any, rules: Any): Any = js.native
   
   /**
     * checkbox plugin
@@ -985,7 +969,7 @@ trait JSTree
     * @return {Array}
     * @plugin checkbox
     */
-  def get_undetermined(full: Boolean): js.Array[js.Any] = js.native
+  def get_undetermined(full: Boolean): js.Array[Any] = js.native
   
   /**
     * hides all nodes
@@ -1018,7 +1002,7 @@ trait JSTree
     * @name hide_icon(obj)
     * @param {mixed} obj
     */
-  def hide_icon(obj: js.Any): Unit = js.native
+  def hide_icon(obj: Any): Unit = js.native
   
   /**
     * hide the node icons
@@ -1033,7 +1017,7 @@ trait JSTree
     * @param {Boolean} skip_redraw internal parameter controlling if redraw is called
     * @trigger hide_node.jstree
     */
-  def hide_node(obj: js.Any, skip_redraw: Boolean): Boolean = js.native
+  def hide_node(obj: Any, skip_redraw: Boolean): Boolean = js.native
   
   /**
     * hides the striped background on the container
@@ -1048,10 +1032,10 @@ trait JSTree
     * @param {mixed} obj
     * @trigger hover_node.jstree
     */
-  def hover_node(obj: js.Any): Unit = js.native
+  def hover_node(obj: Any): Unit = js.native
   
-  def init(el: String, options: js.Any): Unit = js.native
-  def init(el: JQuery, options: js.Any): Unit = js.native
+  def init(el: String, options: Any): Unit = js.native
+  def init(el: JQuery, options: Any): Unit = js.native
   /**
     * used to decorate an instance with a plugin. Used internally.
     * @private
@@ -1060,7 +1044,7 @@ trait JSTree
     * @param {Object} options options for this instance
     * @trigger init.jstree, loading.jstree, loaded.jstree, ready.jstree, changed.jstree
     */
-  def init(el: HTMLElement, options: js.Any): Unit = js.native
+  def init(el: HTMLElement, options: Any): Unit = js.native
   
   /**
     * checks if a node is checked (if tie_selection is on in the settings this function will return the same as is_selected)
@@ -1069,7 +1053,7 @@ trait JSTree
     * @return {Boolean}
     * @plugin checkbox
     */
-  def is_checked(obj: js.Any): Boolean = js.native
+  def is_checked(obj: Any): Boolean = js.native
   
   /**
     * check if a node is in a closed state
@@ -1077,7 +1061,7 @@ trait JSTree
     * @param  {mixed} obj
     * @return {Boolean}
     */
-  def is_closed(obj: js.Any): Boolean = js.native
+  def is_closed(obj: Any): Boolean = js.native
   
   /**
     * checks if a node is disabled (not selectable)
@@ -1085,14 +1069,14 @@ trait JSTree
     * @param  {mixed} obj
     * @return {Boolean}
     */
-  def is_disabled(obj: js.Any): Boolean = js.native
+  def is_disabled(obj: Any): Boolean = js.native
   
   /**
     * determines if a node is hidden
     * @name is_hidden(obj)
     * @param {mixed} obj the node
     */
-  def is_hidden(obj: js.Any): Boolean = js.native
+  def is_hidden(obj: Any): Boolean = js.native
   
   /**
     * check if a node has no children
@@ -1100,7 +1084,7 @@ trait JSTree
     * @param  {mixed} obj
     * @return {Boolean}
     */
-  def is_leaf(obj: js.Any): Boolean = js.native
+  def is_leaf(obj: Any): Boolean = js.native
   
   /**
     * checks if a node is loaded (its children are available)
@@ -1108,7 +1092,7 @@ trait JSTree
     * @param  {mixed} obj
     * @return {Boolean}
     */
-  def is_loaded(obj: js.Any): Boolean = js.native
+  def is_loaded(obj: Any): Boolean = js.native
   
   /**
     * check if a node is currently loading (fetching children)
@@ -1116,7 +1100,7 @@ trait JSTree
     * @param  {mixed} obj
     * @return {Boolean}
     */
-  def is_loading(obj: js.Any): Boolean = js.native
+  def is_loading(obj: Any): Boolean = js.native
   
   /**
     * check if a node is opened
@@ -1124,7 +1108,7 @@ trait JSTree
     * @param  {mixed} obj
     * @return {Boolean}
     */
-  def is_open(obj: js.Any): Boolean = js.native
+  def is_open(obj: Any): Boolean = js.native
   
   /**
     * checks if a node has children
@@ -1132,7 +1116,7 @@ trait JSTree
     * @param  {mixed} obj
     * @return {Boolean}
     */
-  def is_parent(obj: js.Any): Boolean = js.native
+  def is_parent(obj: Any): Boolean = js.native
   
   /**
     * checks if a node is selected
@@ -1140,7 +1124,7 @@ trait JSTree
     * @param  {mixed}  obj
     * @return {Boolean}
     */
-  def is_selected(obj: js.Any): Boolean = js.native
+  def is_selected(obj: Any): Boolean = js.native
   
   /**
     * checks if a node is in an undetermined state
@@ -1148,14 +1132,14 @@ trait JSTree
     * @param  {mixed} obj
     * @return {Boolean}
     */
-  def is_undetermined(obj: js.Any): Boolean = js.native
+  def is_undetermined(obj: Any): Boolean = js.native
   
   /**
     * get the last error
     * @name last_error()
     * @return {Object}
     */
-  def last_error(): js.Any = js.native
+  def last_error(): Any = js.native
   
   /**
     * loads all unloaded nodes
@@ -1164,7 +1148,7 @@ trait JSTree
     * @param {function} callback a function to be executed once loading all the nodes is complete,
     * @trigger load_all.jstree
     */
-  def load_all(obj: js.Any, callback: js.Function0[Unit]): Unit = js.native
+  def load_all(obj: Any, callback: js.Function0[Unit]): Unit = js.native
   
   /**
     * loads a node (fetches its children using the `core.data` setting). Multiple nodes can be passed to by using an array.
@@ -1175,7 +1159,7 @@ trait JSTree
     * @return {Boolean}
     * @trigger load_node.jstree
     */
-  def load_node(obj: js.Any, callback: js.Function2[/* node */ js.Any, /* status */ Boolean, Unit]): Boolean = js.native
+  def load_node(obj: Any, callback: js.Function2[/* node */ Any, /* status */ Boolean, Unit]): Boolean = js.native
   
   /**
     * move a node to a new parent
@@ -1189,182 +1173,174 @@ trait JSTree
     * @param  {Boolean} instance internal parameter indicating if the node comes from another instance
     * @trigger move_node.jstree
     */
-  def move_node(obj: js.Any, par: js.Any): Unit = js.native
-  def move_node(obj: js.Any, par: js.Any, pos: js.Any): Unit = js.native
+  def move_node(obj: Any, par: Any): Unit = js.native
+  def move_node(obj: Any, par: Any, pos: Any): Unit = js.native
   def move_node(
-    obj: js.Any,
-    par: js.Any,
-    pos: js.Any,
-    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit]
+    obj: Any,
+    par: Any,
+    pos: Any,
+    callback: js.Function3[/* node */ Any, /* new_par */ Any, /* pos */ Any, Unit]
   ): Unit = js.native
   def move_node(
-    obj: js.Any,
-    par: js.Any,
-    pos: js.Any,
-    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    obj: Any,
+    par: Any,
+    pos: Any,
+    callback: js.Function3[/* node */ Any, /* new_par */ Any, /* pos */ Any, Unit],
     is_loaded: Boolean
   ): Unit = js.native
   def move_node(
-    obj: js.Any,
-    par: js.Any,
-    pos: js.Any,
-    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    obj: Any,
+    par: Any,
+    pos: Any,
+    callback: js.Function3[/* node */ Any, /* new_par */ Any, /* pos */ Any, Unit],
     is_loaded: Boolean,
     skip_redraw: Boolean
   ): Unit = js.native
   def move_node(
-    obj: js.Any,
-    par: js.Any,
-    pos: js.Any,
-    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    obj: Any,
+    par: Any,
+    pos: Any,
+    callback: js.Function3[/* node */ Any, /* new_par */ Any, /* pos */ Any, Unit],
     is_loaded: Boolean,
     skip_redraw: Boolean,
     origin: Boolean
   ): Unit = js.native
   def move_node(
-    obj: js.Any,
-    par: js.Any,
-    pos: js.Any,
-    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    obj: Any,
+    par: Any,
+    pos: Any,
+    callback: js.Function3[/* node */ Any, /* new_par */ Any, /* pos */ Any, Unit],
     is_loaded: Boolean,
     skip_redraw: Unit,
     origin: Boolean
   ): Unit = js.native
   def move_node(
-    obj: js.Any,
-    par: js.Any,
-    pos: js.Any,
-    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    obj: Any,
+    par: Any,
+    pos: Any,
+    callback: js.Function3[/* node */ Any, /* new_par */ Any, /* pos */ Any, Unit],
     is_loaded: Unit,
     skip_redraw: Boolean
   ): Unit = js.native
   def move_node(
-    obj: js.Any,
-    par: js.Any,
-    pos: js.Any,
-    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    obj: Any,
+    par: Any,
+    pos: Any,
+    callback: js.Function3[/* node */ Any, /* new_par */ Any, /* pos */ Any, Unit],
     is_loaded: Unit,
     skip_redraw: Boolean,
     origin: Boolean
   ): Unit = js.native
   def move_node(
-    obj: js.Any,
-    par: js.Any,
-    pos: js.Any,
-    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    obj: Any,
+    par: Any,
+    pos: Any,
+    callback: js.Function3[/* node */ Any, /* new_par */ Any, /* pos */ Any, Unit],
     is_loaded: Unit,
     skip_redraw: Unit,
     origin: Boolean
   ): Unit = js.native
-  def move_node(obj: js.Any, par: js.Any, pos: js.Any, callback: Unit, is_loaded: Boolean): Unit = js.native
-  def move_node(obj: js.Any, par: js.Any, pos: js.Any, callback: Unit, is_loaded: Boolean, skip_redraw: Boolean): Unit = js.native
+  def move_node(obj: Any, par: Any, pos: Any, callback: Unit, is_loaded: Boolean): Unit = js.native
+  def move_node(obj: Any, par: Any, pos: Any, callback: Unit, is_loaded: Boolean, skip_redraw: Boolean): Unit = js.native
   def move_node(
-    obj: js.Any,
-    par: js.Any,
-    pos: js.Any,
+    obj: Any,
+    par: Any,
+    pos: Any,
     callback: Unit,
     is_loaded: Boolean,
     skip_redraw: Boolean,
     origin: Boolean
   ): Unit = js.native
   def move_node(
-    obj: js.Any,
-    par: js.Any,
-    pos: js.Any,
+    obj: Any,
+    par: Any,
+    pos: Any,
     callback: Unit,
     is_loaded: Boolean,
     skip_redraw: Unit,
     origin: Boolean
   ): Unit = js.native
-  def move_node(obj: js.Any, par: js.Any, pos: js.Any, callback: Unit, is_loaded: Unit, skip_redraw: Boolean): Unit = js.native
+  def move_node(obj: Any, par: Any, pos: Any, callback: Unit, is_loaded: Unit, skip_redraw: Boolean): Unit = js.native
   def move_node(
-    obj: js.Any,
-    par: js.Any,
-    pos: js.Any,
+    obj: Any,
+    par: Any,
+    pos: Any,
     callback: Unit,
     is_loaded: Unit,
     skip_redraw: Boolean,
     origin: Boolean
   ): Unit = js.native
+  def move_node(obj: Any, par: Any, pos: Any, callback: Unit, is_loaded: Unit, skip_redraw: Unit, origin: Boolean): Unit = js.native
   def move_node(
-    obj: js.Any,
-    par: js.Any,
-    pos: js.Any,
-    callback: Unit,
-    is_loaded: Unit,
-    skip_redraw: Unit,
-    origin: Boolean
+    obj: Any,
+    par: Any,
+    pos: Unit,
+    callback: js.Function3[/* node */ Any, /* new_par */ Any, /* pos */ Any, Unit]
   ): Unit = js.native
   def move_node(
-    obj: js.Any,
-    par: js.Any,
+    obj: Any,
+    par: Any,
     pos: Unit,
-    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit]
-  ): Unit = js.native
-  def move_node(
-    obj: js.Any,
-    par: js.Any,
-    pos: Unit,
-    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    callback: js.Function3[/* node */ Any, /* new_par */ Any, /* pos */ Any, Unit],
     is_loaded: Boolean
   ): Unit = js.native
   def move_node(
-    obj: js.Any,
-    par: js.Any,
+    obj: Any,
+    par: Any,
     pos: Unit,
-    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    callback: js.Function3[/* node */ Any, /* new_par */ Any, /* pos */ Any, Unit],
     is_loaded: Boolean,
     skip_redraw: Boolean
   ): Unit = js.native
   def move_node(
-    obj: js.Any,
-    par: js.Any,
+    obj: Any,
+    par: Any,
     pos: Unit,
-    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    callback: js.Function3[/* node */ Any, /* new_par */ Any, /* pos */ Any, Unit],
     is_loaded: Boolean,
     skip_redraw: Boolean,
     origin: Boolean
   ): Unit = js.native
   def move_node(
-    obj: js.Any,
-    par: js.Any,
+    obj: Any,
+    par: Any,
     pos: Unit,
-    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    callback: js.Function3[/* node */ Any, /* new_par */ Any, /* pos */ Any, Unit],
     is_loaded: Boolean,
     skip_redraw: Unit,
     origin: Boolean
   ): Unit = js.native
   def move_node(
-    obj: js.Any,
-    par: js.Any,
+    obj: Any,
+    par: Any,
     pos: Unit,
-    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    callback: js.Function3[/* node */ Any, /* new_par */ Any, /* pos */ Any, Unit],
     is_loaded: Unit,
     skip_redraw: Boolean
   ): Unit = js.native
   def move_node(
-    obj: js.Any,
-    par: js.Any,
+    obj: Any,
+    par: Any,
     pos: Unit,
-    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    callback: js.Function3[/* node */ Any, /* new_par */ Any, /* pos */ Any, Unit],
     is_loaded: Unit,
     skip_redraw: Boolean,
     origin: Boolean
   ): Unit = js.native
   def move_node(
-    obj: js.Any,
-    par: js.Any,
+    obj: Any,
+    par: Any,
     pos: Unit,
-    callback: js.Function3[/* node */ js.Any, /* new_par */ js.Any, /* pos */ js.Any, Unit],
+    callback: js.Function3[/* node */ Any, /* new_par */ Any, /* pos */ Any, Unit],
     is_loaded: Unit,
     skip_redraw: Unit,
     origin: Boolean
   ): Unit = js.native
-  def move_node(obj: js.Any, par: js.Any, pos: Unit, callback: Unit, is_loaded: Boolean): Unit = js.native
-  def move_node(obj: js.Any, par: js.Any, pos: Unit, callback: Unit, is_loaded: Boolean, skip_redraw: Boolean): Unit = js.native
+  def move_node(obj: Any, par: Any, pos: Unit, callback: Unit, is_loaded: Boolean): Unit = js.native
+  def move_node(obj: Any, par: Any, pos: Unit, callback: Unit, is_loaded: Boolean, skip_redraw: Boolean): Unit = js.native
   def move_node(
-    obj: js.Any,
-    par: js.Any,
+    obj: Any,
+    par: Any,
     pos: Unit,
     callback: Unit,
     is_loaded: Boolean,
@@ -1372,33 +1348,25 @@ trait JSTree
     origin: Boolean
   ): Unit = js.native
   def move_node(
-    obj: js.Any,
-    par: js.Any,
+    obj: Any,
+    par: Any,
     pos: Unit,
     callback: Unit,
     is_loaded: Boolean,
     skip_redraw: Unit,
     origin: Boolean
   ): Unit = js.native
-  def move_node(obj: js.Any, par: js.Any, pos: Unit, callback: Unit, is_loaded: Unit, skip_redraw: Boolean): Unit = js.native
+  def move_node(obj: Any, par: Any, pos: Unit, callback: Unit, is_loaded: Unit, skip_redraw: Boolean): Unit = js.native
   def move_node(
-    obj: js.Any,
-    par: js.Any,
+    obj: Any,
+    par: Any,
     pos: Unit,
     callback: Unit,
     is_loaded: Unit,
     skip_redraw: Boolean,
     origin: Boolean
   ): Unit = js.native
-  def move_node(
-    obj: js.Any,
-    par: js.Any,
-    pos: Unit,
-    callback: Unit,
-    is_loaded: Unit,
-    skip_redraw: Unit,
-    origin: Boolean
-  ): Unit = js.native
+  def move_node(obj: Any, par: Any, pos: Unit, callback: Unit, is_loaded: Unit, skip_redraw: Unit, origin: Boolean): Unit = js.native
   
   /**
     * opens all nodes within a node (or the tree), revealing their children. If the node is not loaded it will be loaded and opened once ready.
@@ -1409,13 +1377,13 @@ trait JSTree
     * @trigger open_all.jstree
     */
   def open_all(): Unit = js.native
-  def open_all(obj: js.Any): Unit = js.native
-  def open_all(obj: js.Any, animation: Double): Unit = js.native
-  def open_all(obj: js.Any, animation: Double, original_obj: js.Any): Unit = js.native
-  def open_all(obj: js.Any, animation: Unit, original_obj: js.Any): Unit = js.native
+  def open_all(obj: Any): Unit = js.native
+  def open_all(obj: Any, animation: Double): Unit = js.native
+  def open_all(obj: Any, animation: Double, original_obj: Any): Unit = js.native
+  def open_all(obj: Any, animation: Unit, original_obj: Any): Unit = js.native
   def open_all(obj: Unit, animation: Double): Unit = js.native
-  def open_all(obj: Unit, animation: Double, original_obj: js.Any): Unit = js.native
-  def open_all(obj: Unit, animation: Unit, original_obj: js.Any): Unit = js.native
+  def open_all(obj: Unit, animation: Double, original_obj: Any): Unit = js.native
+  def open_all(obj: Unit, animation: Unit, original_obj: Any): Unit = js.native
   
   /**
     * opens a node, revealing its children. If the node is not loaded it will be loaded and opened once ready.
@@ -1426,10 +1394,10 @@ trait JSTree
     * when opening the node (overrides the `core.animation` setting). Use `false` for no animation.
     * @trigger open_node.jstree, after_open.jstree, before_open.jstree
     */
-  def open_node(obj: js.Any): Unit = js.native
-  def open_node(obj: js.Any, callback: js.Any): Unit = js.native
-  def open_node(obj: js.Any, callback: js.Any, animation: js.Any): Unit = js.native
-  def open_node(obj: js.Any, callback: Unit, animation: js.Any): Unit = js.native
+  def open_node(obj: Any): Unit = js.native
+  def open_node(obj: Any, callback: Any): Unit = js.native
+  def open_node(obj: Any, callback: Any, animation: Any): Unit = js.native
+  def open_node(obj: Any, callback: Unit, animation: Any): Unit = js.native
   
   /**
     * copy or move the previously cut or copied nodes to a new parent
@@ -1438,7 +1406,7 @@ trait JSTree
     * @param  {mixed} pos the position to insert at (besides integer, "first" and "last" are supported), defaults to integer `0`
     * @trigger paste.jstree
     */
-  def paste(obj: js.Any, pos: js.Any): Unit = js.native
+  def paste(obj: Any, pos: Any): Unit = js.native
   
   /**
     * used to decorate an instance with a plugin. Used internally.
@@ -1449,7 +1417,7 @@ trait JSTree
     * @return {jsTree}
     */
   def plugin(deco: String): JSTree = js.native
-  def plugin(deco: String, opts: js.Any): JSTree = js.native
+  def plugin(deco: String, opts: Any): JSTree = js.native
   
   /**
     * redraws all nodes that need to be redrawn or optionally - the whole tree
@@ -1468,7 +1436,7 @@ trait JSTree
     * @param {Boolean} is_callback is this a recursion call
     * @param {Boolean} force_render should children of closed parents be drawn anyway
     */
-  def redraw_node(node: js.Any, deep: Boolean, is_callback: Boolean, force_render: Boolean): Unit = js.native
+  def redraw_node(node: Any, deep: Boolean, is_callback: Boolean, force_render: Boolean): Unit = js.native
   
   /**
     * refreshes the tree - all nodes are reloaded with calls to `load_node`.
@@ -1480,8 +1448,8 @@ trait JSTree
     */
   def refresh(): Unit = js.native
   def refresh(skip_loading: Boolean): Unit = js.native
-  def refresh(skip_loading: Boolean, forget_state: js.Any): Unit = js.native
-  def refresh(skip_loading: Unit, forget_state: js.Any): Unit = js.native
+  def refresh(skip_loading: Boolean, forget_state: Any): Unit = js.native
+  def refresh(skip_loading: Unit, forget_state: Any): Unit = js.native
   
   /**
     * refreshes a node in the tree (reload its children) all opened nodes inside that node are reloaded with calls to `load_node`.
@@ -1489,7 +1457,7 @@ trait JSTree
     * @param  {mixed} obj the node
     * @trigger refresh_node.jstree
     */
-  def refresh_node(obj: js.Any): Unit = js.native
+  def refresh_node(obj: Any): Unit = js.native
   
   /**
     * set the text value of a node
@@ -1499,7 +1467,7 @@ trait JSTree
     * @return {Boolean}
     * @trigger rename_node.jstree
     */
-  def rename_node(obj: js.Any, `val`: String): Boolean = js.native
+  def rename_node(obj: Any, `val`: String): Boolean = js.native
   
   /**
     * restore the state from the user's computer
@@ -1536,13 +1504,13 @@ trait JSTree
   def search(str: String): Unit = js.native
   def search(str: String, skip_async: Boolean): Unit = js.native
   def search(str: String, skip_async: Boolean, show_only_matches: Boolean): Unit = js.native
-  def search(str: String, skip_async: Boolean, show_only_matches: Boolean, inside: js.Any): Unit = js.native
-  def search(str: String, skip_async: Boolean, show_only_matches: Boolean, inside: js.Any, append: Boolean): Unit = js.native
+  def search(str: String, skip_async: Boolean, show_only_matches: Boolean, inside: Any): Unit = js.native
+  def search(str: String, skip_async: Boolean, show_only_matches: Boolean, inside: Any, append: Boolean): Unit = js.native
   def search(
     str: String,
     skip_async: Boolean,
     show_only_matches: Boolean,
-    inside: js.Any,
+    inside: Any,
     append: Boolean,
     show_only_matches_children: Boolean
   ): Unit = js.native
@@ -1550,7 +1518,7 @@ trait JSTree
     str: String,
     skip_async: Boolean,
     show_only_matches: Boolean,
-    inside: js.Any,
+    inside: Any,
     append: Unit,
     show_only_matches_children: Boolean
   ): Unit = js.native
@@ -1571,13 +1539,13 @@ trait JSTree
     append: Unit,
     show_only_matches_children: Boolean
   ): Unit = js.native
-  def search(str: String, skip_async: Boolean, show_only_matches: Unit, inside: js.Any): Unit = js.native
-  def search(str: String, skip_async: Boolean, show_only_matches: Unit, inside: js.Any, append: Boolean): Unit = js.native
+  def search(str: String, skip_async: Boolean, show_only_matches: Unit, inside: Any): Unit = js.native
+  def search(str: String, skip_async: Boolean, show_only_matches: Unit, inside: Any, append: Boolean): Unit = js.native
   def search(
     str: String,
     skip_async: Boolean,
     show_only_matches: Unit,
-    inside: js.Any,
+    inside: Any,
     append: Boolean,
     show_only_matches_children: Boolean
   ): Unit = js.native
@@ -1585,7 +1553,7 @@ trait JSTree
     str: String,
     skip_async: Boolean,
     show_only_matches: Unit,
-    inside: js.Any,
+    inside: Any,
     append: Unit,
     show_only_matches_children: Boolean
   ): Unit = js.native
@@ -1607,13 +1575,13 @@ trait JSTree
     show_only_matches_children: Boolean
   ): Unit = js.native
   def search(str: String, skip_async: Unit, show_only_matches: Boolean): Unit = js.native
-  def search(str: String, skip_async: Unit, show_only_matches: Boolean, inside: js.Any): Unit = js.native
-  def search(str: String, skip_async: Unit, show_only_matches: Boolean, inside: js.Any, append: Boolean): Unit = js.native
+  def search(str: String, skip_async: Unit, show_only_matches: Boolean, inside: Any): Unit = js.native
+  def search(str: String, skip_async: Unit, show_only_matches: Boolean, inside: Any, append: Boolean): Unit = js.native
   def search(
     str: String,
     skip_async: Unit,
     show_only_matches: Boolean,
-    inside: js.Any,
+    inside: Any,
     append: Boolean,
     show_only_matches_children: Boolean
   ): Unit = js.native
@@ -1621,7 +1589,7 @@ trait JSTree
     str: String,
     skip_async: Unit,
     show_only_matches: Boolean,
-    inside: js.Any,
+    inside: Any,
     append: Unit,
     show_only_matches_children: Boolean
   ): Unit = js.native
@@ -1642,13 +1610,13 @@ trait JSTree
     append: Unit,
     show_only_matches_children: Boolean
   ): Unit = js.native
-  def search(str: String, skip_async: Unit, show_only_matches: Unit, inside: js.Any): Unit = js.native
-  def search(str: String, skip_async: Unit, show_only_matches: Unit, inside: js.Any, append: Boolean): Unit = js.native
+  def search(str: String, skip_async: Unit, show_only_matches: Unit, inside: Any): Unit = js.native
+  def search(str: String, skip_async: Unit, show_only_matches: Unit, inside: Any, append: Boolean): Unit = js.native
   def search(
     str: String,
     skip_async: Unit,
     show_only_matches: Unit,
-    inside: js.Any,
+    inside: Any,
     append: Boolean,
     show_only_matches_children: Boolean
   ): Unit = js.native
@@ -1656,7 +1624,7 @@ trait JSTree
     str: String,
     skip_async: Unit,
     show_only_matches: Unit,
-    inside: js.Any,
+    inside: Any,
     append: Unit,
     show_only_matches_children: Boolean
   ): Unit = js.native
@@ -1695,14 +1663,14 @@ trait JSTree
     * @param {Boolean} prevent_open if set to `true` parents of the selected node won't be opened
     * @trigger select_node.jstree, changed.jstree
     */
-  def select_node(obj: js.Any): js.Any = js.native
-  def select_node(obj: js.Any, supress_event: Boolean): js.Any = js.native
-  def select_node(obj: js.Any, supress_event: Boolean, prevent_open: Boolean): js.Any = js.native
-  def select_node(obj: js.Any, supress_event: Boolean, prevent_open: Boolean, e: js.Any): js.Any = js.native
-  def select_node(obj: js.Any, supress_event: Boolean, prevent_open: Unit, e: js.Any): js.Any = js.native
-  def select_node(obj: js.Any, supress_event: Unit, prevent_open: Boolean): js.Any = js.native
-  def select_node(obj: js.Any, supress_event: Unit, prevent_open: Boolean, e: js.Any): js.Any = js.native
-  def select_node(obj: js.Any, supress_event: Unit, prevent_open: Unit, e: js.Any): js.Any = js.native
+  def select_node(obj: Any): Any = js.native
+  def select_node(obj: Any, supress_event: Boolean): Any = js.native
+  def select_node(obj: Any, supress_event: Boolean, prevent_open: Boolean): Any = js.native
+  def select_node(obj: Any, supress_event: Boolean, prevent_open: Boolean, e: Any): Any = js.native
+  def select_node(obj: Any, supress_event: Boolean, prevent_open: Unit, e: Any): Any = js.native
+  def select_node(obj: Any, supress_event: Unit, prevent_open: Boolean): Any = js.native
+  def select_node(obj: Any, supress_event: Unit, prevent_open: Boolean, e: Any): Any = js.native
+  def select_node(obj: Any, supress_event: Unit, prevent_open: Unit, e: Any): Any = js.native
   
   /**
     * set the node icon for a node
@@ -1711,7 +1679,7 @@ trait JSTree
     * @param {String} icon the new icon - can be a path to an icon or a className,
     * if using an image that is in the current directory use a `./` prefix, otherwise it will be detected as a class
     */
-  def set_icon(obj: js.Any, icon: String): Unit = js.native
+  def set_icon(obj: Any, icon: String): Unit = js.native
   
   /**
     * set (change) the ID of a node
@@ -1720,7 +1688,7 @@ trait JSTree
     * @param  {String} id the new ID
     * @return {Boolean}
     */
-  def set_id(obj: js.Any, id: String): Boolean = js.native
+  def set_id(obj: Any, id: String): Boolean = js.native
   
   /**
     * sets the state of the tree. Used internally.
@@ -1730,7 +1698,7 @@ trait JSTree
     * @param {Function} callback an optional function to execute once the state is restored.
     * @trigger set_state.jstree
     */
-  def set_state(state: js.Any, callback: js.Function0[Unit]): Unit = js.native
+  def set_state(state: Any, callback: js.Function0[Unit]): Unit = js.native
   
   /**
     * set the text value of a node. Used internally, please use `rename_node(obj, val)`.
@@ -1741,7 +1709,7 @@ trait JSTree
     * @return {Boolean}
     * @trigger set_text.jstree
     */
-  def set_text(obj: js.Any, `val`: String): Boolean = js.native
+  def set_text(obj: Any, `val`: String): Boolean = js.native
   
   /**
     * changes the theme
@@ -1752,14 +1720,14 @@ trait JSTree
     * @trigger set_theme.jstree
     */
   def set_theme(theme_name: String): Unit = js.native
-  def set_theme(theme_name: String, theme_url: js.Any): Unit = js.native
+  def set_theme(theme_name: String, theme_url: Any): Unit = js.native
   
   /**
     * changes the theme variant (if the theme has variants)
     * @name set_theme_variant(variant_name)
     * @param {String|Boolean} variant_name the variant to apply (if `false` is used the current variant is removed)
     */
-  def set_theme_variant(variant_name: js.Any): Unit = js.native
+  def set_theme_variant(variant_name: Any): Unit = js.native
   
   /**
     * used to change a node's type
@@ -1768,7 +1736,7 @@ trait JSTree
     * @param {String} type the new type
     * @plugin types
     */
-  def set_type(obj: js.Any, `type`: String): js.Any = js.native
+  def set_type(obj: Any, `type`: String): Any = js.native
   
   /**
     * example usage in angular:
@@ -1806,14 +1774,14 @@ trait JSTree
     * @plugin contextmenu
     * @trigger show_contextmenu.jstree
     */
-  def show_contextmenu(obj: js.Any): Unit = js.native
-  def show_contextmenu(obj: js.Any, x: Double): Unit = js.native
-  def show_contextmenu(obj: js.Any, x: Double, y: Double): Unit = js.native
-  def show_contextmenu(obj: js.Any, x: Double, y: Double, e: js.Any): Unit = js.native
-  def show_contextmenu(obj: js.Any, x: Double, y: Unit, e: js.Any): Unit = js.native
-  def show_contextmenu(obj: js.Any, x: Unit, y: Double): Unit = js.native
-  def show_contextmenu(obj: js.Any, x: Unit, y: Double, e: js.Any): Unit = js.native
-  def show_contextmenu(obj: js.Any, x: Unit, y: Unit, e: js.Any): Unit = js.native
+  def show_contextmenu(obj: Any): Unit = js.native
+  def show_contextmenu(obj: Any, x: Double): Unit = js.native
+  def show_contextmenu(obj: Any, x: Double, y: Double): Unit = js.native
+  def show_contextmenu(obj: Any, x: Double, y: Double, e: Any): Unit = js.native
+  def show_contextmenu(obj: Any, x: Double, y: Unit, e: Any): Unit = js.native
+  def show_contextmenu(obj: Any, x: Unit, y: Double): Unit = js.native
+  def show_contextmenu(obj: Any, x: Unit, y: Double, e: Any): Unit = js.native
+  def show_contextmenu(obj: Any, x: Unit, y: Unit, e: Any): Unit = js.native
   
   /**
     * shows the connecting dots (if the theme supports it)
@@ -1832,7 +1800,7 @@ trait JSTree
     * @name show_icon(obj)
     * @param {mixed} obj
     */
-  def show_icon(obj: js.Any): Unit = js.native
+  def show_icon(obj: Any): Unit = js.native
   
   /**
     * show the node icons
@@ -1847,7 +1815,7 @@ trait JSTree
     * @param {Boolean} skip_redraw internal parameter controlling if redraw is called
     * @trigger show_node.jstree
     */
-  def show_node(obj: js.Any, skip_redraw: Boolean): Boolean = js.native
+  def show_node(obj: Any, skip_redraw: Boolean): Boolean = js.native
   
   /**
     * shows a striped background on the container (if the theme supports it)
@@ -1867,8 +1835,8 @@ trait JSTree
     * @plugin sort
     * @trigger search.jstree
     */
-  def sort(obj: js.Any): Unit = js.native
-  def sort(obj: js.Any, deep: Boolean): Unit = js.native
+  def sort(obj: Any): Unit = js.native
+  def sort(obj: Any, deep: Boolean): Unit = js.native
   
   /**
     * part of the destroying of an instance. Used internally.
@@ -1907,7 +1875,7 @@ trait JSTree
     * @name toggle_node(obj)
     * @param {mixed} obj the node to toggle
     */
-  def toggle_node(obj: js.Any): Unit = js.native
+  def toggle_node(obj: Any): Unit = js.native
   
   /**
     * toggles the striped background on the container
@@ -1920,7 +1888,7 @@ trait JSTree
     * @private
     * @name unbind()
     */
-  def unbind(): js.Any = js.native
+  def unbind(): Any = js.native
   
   /**
     * uncheck all checked nodes (only if tie_selection in checkbox settings is false, otherwise deselect_all will be called internally)
@@ -1928,7 +1896,7 @@ trait JSTree
     * @trigger uncheck_all.jstree
     * @plugin checkbox
     */
-  def uncheck_all(): js.Any = js.native
+  def uncheck_all(): Any = js.native
   
   /**
     * uncheck a node (only if tie_selection in checkbox settings is false, otherwise deselect_node will be called internally)
@@ -1937,5 +1905,5 @@ trait JSTree
     * @trigger uncheck_node.jstree
     * @plugin checkbox
     */
-  def uncheck_node(obj: js.Any, e: js.Any): js.Any = js.native
+  def uncheck_node(obj: Any, e: Any): Any = js.native
 }

@@ -13,55 +13,55 @@ object playMod {
   
   @JSImport("playable/dist/src/modules/ui/controls/play/play", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with PlayControl {
     def this(hasEngineEventEmitterTextMapTheme: Theme) = this()
     
     /* private */ /* CompleteClass */
-    var _bindCallbacks: js.Any = js.native
+    var _bindCallbacks: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _bindEvents: js.Any = js.native
+    var _bindEvents: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _destroyInterceptor: js.Any = js.native
+    var _destroyInterceptor: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _engine: js.Any = js.native
+    var _engine: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _eventEmitter: js.Any = js.native
+    var _eventEmitter: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _initInterceptor: js.Any = js.native
+    var _initInterceptor: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _initUI: js.Any = js.native
+    var _initUI: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _interceptor: js.Any = js.native
+    var _interceptor: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _pauseVideo: js.Any = js.native
+    var _pauseVideo: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _playVideo: js.Any = js.native
+    var _playVideo: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _textMap: js.Any = js.native
+    var _textMap: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _theme: js.Any = js.native
+    var _theme: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _togglePlayback: js.Any = js.native
+    var _togglePlayback: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _unbindEvents: js.Any = js.native
+    var _unbindEvents: Any = js.native
     
     /* private */ /* CompleteClass */
-    var _updatePlayingState: js.Any = js.native
+    var _updatePlayingState: Any = js.native
     
     /* CompleteClass */
     override def destroy(): Unit = js.native
@@ -99,56 +99,56 @@ object playMod {
     extends StObject
        with IPlayControl {
     
-    /* private */ var _bindCallbacks: js.Any
+    /* private */ var _bindCallbacks: Any
     
-    /* private */ var _bindEvents: js.Any
+    /* private */ var _bindEvents: Any
     
-    /* private */ var _destroyInterceptor: js.Any
+    /* private */ var _destroyInterceptor: Any
     
-    /* private */ var _engine: js.Any
+    /* private */ var _engine: Any
     
-    /* private */ var _eventEmitter: js.Any
+    /* private */ var _eventEmitter: Any
     
-    /* private */ var _initInterceptor: js.Any
+    /* private */ var _initInterceptor: Any
     
-    /* private */ var _initUI: js.Any
+    /* private */ var _initUI: Any
     
-    /* private */ var _interceptor: js.Any
+    /* private */ var _interceptor: Any
     
-    /* private */ var _pauseVideo: js.Any
+    /* private */ var _pauseVideo: Any
     
-    /* private */ var _playVideo: js.Any
+    /* private */ var _playVideo: Any
     
-    /* private */ var _textMap: js.Any
+    /* private */ var _textMap: Any
     
-    /* private */ var _theme: js.Any
+    /* private */ var _theme: Any
     
-    /* private */ var _togglePlayback: js.Any
+    /* private */ var _togglePlayback: Any
     
-    /* private */ var _unbindEvents: js.Any
+    /* private */ var _unbindEvents: Any
     
-    /* private */ var _updatePlayingState: js.Any
+    /* private */ var _updatePlayingState: Any
     
     var view: typings.playable.playViewMod.default
   }
   object PlayControl {
     
     inline def apply(
-      _bindCallbacks: js.Any,
-      _bindEvents: js.Any,
-      _destroyInterceptor: js.Any,
-      _engine: js.Any,
-      _eventEmitter: js.Any,
-      _initInterceptor: js.Any,
-      _initUI: js.Any,
-      _interceptor: js.Any,
-      _pauseVideo: js.Any,
-      _playVideo: js.Any,
-      _textMap: js.Any,
-      _theme: js.Any,
-      _togglePlayback: js.Any,
-      _unbindEvents: js.Any,
-      _updatePlayingState: js.Any,
+      _bindCallbacks: Any,
+      _bindEvents: Any,
+      _destroyInterceptor: Any,
+      _engine: Any,
+      _eventEmitter: Any,
+      _initInterceptor: Any,
+      _initUI: Any,
+      _interceptor: Any,
+      _pauseVideo: Any,
+      _playVideo: Any,
+      _textMap: Any,
+      _theme: Any,
+      _togglePlayback: Any,
+      _unbindEvents: Any,
+      _updatePlayingState: Any,
       destroy: () => Unit,
       getElement: () => HTMLElement,
       view: typings.playable.playViewMod.default
@@ -161,35 +161,35 @@ object playMod {
       
       inline def setView(value: typings.playable.playViewMod.default): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
       
-      inline def set_bindCallbacks(value: js.Any): Self = StObject.set(x, "_bindCallbacks", value.asInstanceOf[js.Any])
+      inline def set_bindCallbacks(value: Any): Self = StObject.set(x, "_bindCallbacks", value.asInstanceOf[js.Any])
       
-      inline def set_bindEvents(value: js.Any): Self = StObject.set(x, "_bindEvents", value.asInstanceOf[js.Any])
+      inline def set_bindEvents(value: Any): Self = StObject.set(x, "_bindEvents", value.asInstanceOf[js.Any])
       
-      inline def set_destroyInterceptor(value: js.Any): Self = StObject.set(x, "_destroyInterceptor", value.asInstanceOf[js.Any])
+      inline def set_destroyInterceptor(value: Any): Self = StObject.set(x, "_destroyInterceptor", value.asInstanceOf[js.Any])
       
-      inline def set_engine(value: js.Any): Self = StObject.set(x, "_engine", value.asInstanceOf[js.Any])
+      inline def set_engine(value: Any): Self = StObject.set(x, "_engine", value.asInstanceOf[js.Any])
       
-      inline def set_eventEmitter(value: js.Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
+      inline def set_eventEmitter(value: Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
       
-      inline def set_initInterceptor(value: js.Any): Self = StObject.set(x, "_initInterceptor", value.asInstanceOf[js.Any])
+      inline def set_initInterceptor(value: Any): Self = StObject.set(x, "_initInterceptor", value.asInstanceOf[js.Any])
       
-      inline def set_initUI(value: js.Any): Self = StObject.set(x, "_initUI", value.asInstanceOf[js.Any])
+      inline def set_initUI(value: Any): Self = StObject.set(x, "_initUI", value.asInstanceOf[js.Any])
       
-      inline def set_interceptor(value: js.Any): Self = StObject.set(x, "_interceptor", value.asInstanceOf[js.Any])
+      inline def set_interceptor(value: Any): Self = StObject.set(x, "_interceptor", value.asInstanceOf[js.Any])
       
-      inline def set_pauseVideo(value: js.Any): Self = StObject.set(x, "_pauseVideo", value.asInstanceOf[js.Any])
+      inline def set_pauseVideo(value: Any): Self = StObject.set(x, "_pauseVideo", value.asInstanceOf[js.Any])
       
-      inline def set_playVideo(value: js.Any): Self = StObject.set(x, "_playVideo", value.asInstanceOf[js.Any])
+      inline def set_playVideo(value: Any): Self = StObject.set(x, "_playVideo", value.asInstanceOf[js.Any])
       
-      inline def set_textMap(value: js.Any): Self = StObject.set(x, "_textMap", value.asInstanceOf[js.Any])
+      inline def set_textMap(value: Any): Self = StObject.set(x, "_textMap", value.asInstanceOf[js.Any])
       
-      inline def set_theme(value: js.Any): Self = StObject.set(x, "_theme", value.asInstanceOf[js.Any])
+      inline def set_theme(value: Any): Self = StObject.set(x, "_theme", value.asInstanceOf[js.Any])
       
-      inline def set_togglePlayback(value: js.Any): Self = StObject.set(x, "_togglePlayback", value.asInstanceOf[js.Any])
+      inline def set_togglePlayback(value: Any): Self = StObject.set(x, "_togglePlayback", value.asInstanceOf[js.Any])
       
-      inline def set_unbindEvents(value: js.Any): Self = StObject.set(x, "_unbindEvents", value.asInstanceOf[js.Any])
+      inline def set_unbindEvents(value: Any): Self = StObject.set(x, "_unbindEvents", value.asInstanceOf[js.Any])
       
-      inline def set_updatePlayingState(value: js.Any): Self = StObject.set(x, "_updatePlayingState", value.asInstanceOf[js.Any])
+      inline def set_updatePlayingState(value: Any): Self = StObject.set(x, "_updatePlayingState", value.asInstanceOf[js.Any])
     }
   }
 }

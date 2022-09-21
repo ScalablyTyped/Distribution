@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TypeofEmscripten
   extends StObject
-     with Instantiable1[/* _FS */ js.Any, default] {
+     with Instantiable1[/* _FS */ Any, default] {
   
   /**
     * Create an EmscriptenFileSystem instance with the given options.

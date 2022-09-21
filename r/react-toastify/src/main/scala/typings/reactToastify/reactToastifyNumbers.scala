@@ -1,6 +1,6 @@
 package typings.reactToastify
 
-import typings.reactToastify.constantMod.DEFAULT
+import typings.reactToastify.constantMod.Default
 import typings.reactToastify.eventManagerMod.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -35,7 +35,7 @@ object reactToastifyNumbers {
   @js.native
   sealed trait `300`
     extends StObject
-       with DEFAULT
+       with Default
   inline def `300`: `300` = 300.asInstanceOf[`300`]
   
   @js.native
@@ -53,6 +53,12 @@ object reactToastifyNumbers {
   @js.native
   sealed trait `50`
     extends StObject
-       with DEFAULT
+       with Default
   inline def `50`: `50` = 50.asInstanceOf[`50`]
+  
+  @js.native
+  sealed trait `80`
+    extends StObject
+       with Default
+  inline def `80`: `80` = 80.asInstanceOf[`80`]
 }

@@ -3,18 +3,17 @@ package typings.reactNative.mod
 import typings.reactNative.reactNativeStrings.calendar
 import typings.reactNative.reactNativeStrings.default
 import typings.reactNative.reactNativeStrings.spinner
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait DatePickerAndroidOpenOptions extends StObject {
   
-  var date: js.UndefOr[Date | Double] = js.undefined
+  var date: js.UndefOr[js.Date | Double] = js.undefined
   
-  var maxDate: js.UndefOr[Date | Double] = js.undefined
+  var maxDate: js.UndefOr[js.Date | Double] = js.undefined
   
-  var minDate: js.UndefOr[Date | Double] = js.undefined
+  var minDate: js.UndefOr[js.Date | Double] = js.undefined
   
   var mode: js.UndefOr[calendar | spinner | default] = js.undefined
 }
@@ -27,15 +26,15 @@ object DatePickerAndroidOpenOptions {
   
   extension [Self <: DatePickerAndroidOpenOptions](x: Self) {
     
-    inline def setDate(value: Date | Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: js.Date | Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    inline def setMaxDate(value: Date | Double): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+    inline def setMaxDate(value: js.Date | Double): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
     
     inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
     
-    inline def setMinDate(value: Date | Double): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+    inline def setMinDate(value: js.Date | Double): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
     
     inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
     

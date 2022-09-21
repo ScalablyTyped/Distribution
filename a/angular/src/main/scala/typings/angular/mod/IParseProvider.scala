@@ -13,7 +13,7 @@ trait IParseProvider extends StObject {
     * @param literalName Token for the literal value. The literal name value must be a valid literal name.
     * @param literalValue Value for this literal. All literal values must be primitives or `undefined`.
     **/
-  def addLiteral(literalName: String, literalValue: js.Any): Unit = js.native
+  def addLiteral(literalName: String, literalValue: Any): Unit = js.native
   
   def logPromiseWarnings(): Boolean = js.native
   def logPromiseWarnings(value: Boolean): IParseProvider = js.native

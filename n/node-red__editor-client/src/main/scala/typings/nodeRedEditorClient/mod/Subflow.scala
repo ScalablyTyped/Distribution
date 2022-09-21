@@ -4,7 +4,6 @@ import typings.nodeRedEditorClient.anon.Instances
 import typings.nodeRedEditorClient.anon.LinksArray
 import typings.nodeRedEditorClient.anon.SubflowInputs
 import typings.nodeRedEditorClient.anon.SubflowOutputs
-import typings.nodeRedEditorClient.anon.Subflows
 import typings.nodeRedEditorClient.mod.global.JQuery
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -39,5 +38,5 @@ trait Subflow extends StObject {
   
   def removeStatus(): LinksArray = js.native
   
-  def removeSubflow(id: String): Subflows = js.native
+  def removeSubflow(id: String): typings.nodeRedEditorClient.anon.Nodes = js.native
 }

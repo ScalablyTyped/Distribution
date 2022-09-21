@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetPolicyResponse extends StObject {
   
   /**
-    * Information about the specified AWS Firewall Manager policy.
+    * Information about the specified Firewall Manager policy.
     */
   var Policy: js.UndefOr[typings.awsSdk.fmsMod.Policy] = js.undefined
   

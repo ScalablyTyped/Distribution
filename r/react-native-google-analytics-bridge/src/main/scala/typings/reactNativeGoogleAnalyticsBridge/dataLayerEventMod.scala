@@ -9,7 +9,7 @@ object dataLayerEventMod {
   
   trait DataLayerEvent
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var event: String
   }

@@ -63,6 +63,6 @@ object LocationSchemes {
     
     inline def setSecondarySchemes(value: js.Array[LocationScheme]): Self = StObject.set(x, "secondarySchemes", value.asInstanceOf[js.Any])
     
-    inline def setSecondarySchemesVarargs(value: LocationScheme*): Self = StObject.set(x, "secondarySchemes", js.Array(value :_*))
+    inline def setSecondarySchemesVarargs(value: LocationScheme*): Self = StObject.set(x, "secondarySchemes", js.Array(value*))
   }
 }

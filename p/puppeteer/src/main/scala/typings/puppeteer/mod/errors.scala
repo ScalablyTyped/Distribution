@@ -1,22 +1,28 @@
 package typings.puppeteer.mod
 
+import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object errors {
+object errors extends Shortcut {
   
   @JSImport("puppeteer", "errors")
   @js.native
-  val ^ : js.Any = js.native
+  val ^ : PuppeteerErrors = js.native
   
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("puppeteer", "errors.ProtocolError")
+  @js.native
+  open class ProtocolErrorCls () extends ProtocolError
+  
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("puppeteer", "errors.TimeoutError")
   @js.native
-  def TimeoutError: typings.puppeteer.mod.TimeoutError = js.native
-  inline def TimeoutError_=(x: TimeoutError): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TimeoutError")(x.asInstanceOf[js.Any])
+  open class TimeoutErrorCls () extends TimeoutError
   
-  @JSImport("puppeteer", "errors.puppeteerErrors")
-  @js.native
-  def puppeteerErrors: typings.puppeteer.anon.TimeoutError = js.native
-  inline def puppeteerErrors_=(x: typings.puppeteer.anon.TimeoutError): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("puppeteerErrors")(x.asInstanceOf[js.Any])
+  type _To = PuppeteerErrors
+  
+  /* This means you don't have to write `^`, but can instead just say `errors.foo` */
+  override def _to: PuppeteerErrors = ^
 }

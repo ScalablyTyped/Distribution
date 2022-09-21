@@ -15,6 +15,11 @@ trait MetadataInfo extends StObject {
     * The metadata key’s corresponding value.
     */
   var MetadataValue: js.UndefOr[MetadataValueString] = js.undefined
+  
+  /**
+    * Other metadata belonging to the same metadata key.
+    */
+  var OtherMetadataValueList: js.UndefOr[typings.awsSdk.glueMod.OtherMetadataValueList] = js.undefined
 }
 object MetadataInfo {
   
@@ -32,5 +37,11 @@ object MetadataInfo {
     inline def setMetadataValue(value: MetadataValueString): Self = StObject.set(x, "MetadataValue", value.asInstanceOf[js.Any])
     
     inline def setMetadataValueUndefined: Self = StObject.set(x, "MetadataValue", js.undefined)
+    
+    inline def setOtherMetadataValueList(value: OtherMetadataValueList): Self = StObject.set(x, "OtherMetadataValueList", value.asInstanceOf[js.Any])
+    
+    inline def setOtherMetadataValueListUndefined: Self = StObject.set(x, "OtherMetadataValueList", js.undefined)
+    
+    inline def setOtherMetadataValueListVarargs(value: OtherMetadataValueListItem*): Self = StObject.set(x, "OtherMetadataValueList", js.Array(value*))
   }
 }

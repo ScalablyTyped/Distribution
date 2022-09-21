@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HouseholdIncomeAssignedTargetingOptionDetails extends StObject {
   
-  /** Output only. The household income of the audience. */
+  /** The household income of the audience. Output only in v1. Required in v2. */
   var householdIncome: js.UndefOr[String] = js.undefined
   
   /** Required. The targeting_option_id of a TargetingOption of type `TARGETING_TYPE_HOUSEHOLD_INCOME`. */

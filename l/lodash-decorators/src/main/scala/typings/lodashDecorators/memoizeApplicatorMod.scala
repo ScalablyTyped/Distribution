@@ -9,5 +9,5 @@ object memoizeApplicatorMod {
   
   @JSImport("lodash-decorators/applicators/MemoizeApplicator", "MemoizeApplicator")
   @js.native
-  class MemoizeApplicator () extends Applicator
+  open class MemoizeApplicator () extends Applicator
 }

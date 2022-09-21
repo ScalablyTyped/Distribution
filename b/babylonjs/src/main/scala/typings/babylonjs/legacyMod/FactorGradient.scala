@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/Legacy/legacy", "FactorGradient")
 @js.native
-class FactorGradient protected ()
+open class FactorGradient protected ()
   extends typings.babylonjs.indexMod.FactorGradient {
   /**
     * Creates a new factor gradient

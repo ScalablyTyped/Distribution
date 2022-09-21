@@ -1,7 +1,7 @@
 
 # Scala.js typings for rockset
 
-Typings are for version 1.0
+Typings are for version 3.3.0
 
 ## Library description:
 Client for querying Rockset and interacting with the Rockset API.
@@ -10,21 +10,18 @@ Client for querying Rockset and interacting with the Rockset API.
 | ------------------ | :-------------: |
 | Full name          | rockset |
 | Keywords           | rockset, database, REST, information analysis |
-| # releases         | 11 |
-| # dependents       | 0 |
-| # downloads        | 19258 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 564.0 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/rockset/rockset-node-client#readme)
-- [Bugs](https://github.com/rockset/rockset-node-client/issues)
-- [Repository](https://github.com/rockset/rockset-node-client)
 - [Npm](https://www.npmjs.com/package/rockset)
     
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -1,7 +1,7 @@
 package typings.antd
 
 import org.scalablytyped.runtime.Shortcut
-import typings.antd.dropdownDropdownMod.DropDownProps
+import typings.antd.dropdownDropdownMod.DropdownProps
 import typings.antd.dropdownDropdownMod.OverlayFunc
 import typings.react.mod.FunctionComponent
 import typings.react.mod.MouseEvent
@@ -31,7 +31,11 @@ object breadcrumbItemMod extends Shortcut {
   
   trait BreadcrumbItemProps extends StObject {
     
-    var dropdownProps: js.UndefOr[DropDownProps] = js.undefined
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
+    var className: js.UndefOr[String] = js.undefined
+    
+    var dropdownProps: js.UndefOr[DropdownProps] = js.undefined
     
     var href: js.UndefOr[String] = js.undefined
     
@@ -52,7 +56,15 @@ object breadcrumbItemMod extends Shortcut {
     
     extension [Self <: BreadcrumbItemProps](x: Self) {
       
-      inline def setDropdownProps(value: DropDownProps): Self = StObject.set(x, "dropdownProps", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      
+      inline def setDropdownProps(value: DropdownProps): Self = StObject.set(x, "dropdownProps", value.asInstanceOf[js.Any])
       
       inline def setDropdownPropsUndefined: Self = StObject.set(x, "dropdownProps", js.undefined)
       

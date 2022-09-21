@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@react-native-windows/find-repo-root" : "0.70.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@react-native-windows/find-repo-root" : "0.70.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

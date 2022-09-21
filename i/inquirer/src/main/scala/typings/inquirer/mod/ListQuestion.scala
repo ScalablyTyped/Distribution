@@ -5,15 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Provides options for a question for the `ListPrompt`.
-  *
-  * @template T
-  * The type of the answers.
-  */
 trait ListQuestion[T /* <: Answers */]
   extends StObject
-     with ListQuestionOptions[T] {
+     with LoopableListQuestionOptionsBase[T, ListChoiceMap[T]] {
   
   /**
     * @inheritdoc

@@ -80,7 +80,7 @@ object global {
     
     inline def credits(callback: js.Function2[/* err */ BranchError, /* data */ Record[String, Double], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("credits")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    inline def crossPlatformIds(callback: js.Function2[/* err */ BranchError, /* data */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("crossPlatformIds")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def crossPlatformIds(callback: js.Function2[/* err */ BranchError, /* data */ Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("crossPlatformIds")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     inline def data(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("data")().asInstanceOf[Unit]
     inline def data(callback: js.Function2[/* err */ BranchError, /* data */ SessionData | Null, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("data")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -118,7 +118,7 @@ object global {
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(branch_key.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def lastAttributedTouchData(attribution_window: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("lastAttributedTouchData")(attribution_window.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    inline def lastAttributedTouchData(attribution_window: Double, callback: js.Function2[/* err */ BranchError, /* data */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lastAttributedTouchData")(attribution_window.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def lastAttributedTouchData(attribution_window: Double, callback: js.Function2[/* err */ BranchError, /* data */ Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lastAttributedTouchData")(attribution_window.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def link(
       link_data: DeepLinkData,

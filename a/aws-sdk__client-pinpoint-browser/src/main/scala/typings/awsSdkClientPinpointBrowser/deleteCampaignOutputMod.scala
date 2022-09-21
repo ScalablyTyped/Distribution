@@ -8,5 +8,5 @@ object deleteCampaignOutputMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/DeleteCampaignOutput", "DeleteCampaignOutput")
   @js.native
-  val DeleteCampaignOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val DeleteCampaignOutput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

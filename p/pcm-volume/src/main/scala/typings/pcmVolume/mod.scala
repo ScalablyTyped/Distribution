@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("pcm-volume", JSImport.Namespace)
   @js.native
-  class ^ () extends Volume
+  open class ^ () extends Volume
   
   @js.native
   trait Volume extends Transform {

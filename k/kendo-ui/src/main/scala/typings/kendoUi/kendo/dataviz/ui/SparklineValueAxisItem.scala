@@ -1,13 +1,12 @@
 package typings.kendoUi.kendo.dataviz.ui
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait SparklineValueAxisItem extends StObject {
   
-  var axisCrossingValue: js.UndefOr[js.Any | Date] = js.undefined
+  var axisCrossingValue: js.UndefOr[Any | js.Date] = js.undefined
   
   var color: js.UndefOr[String] = js.undefined
   
@@ -33,7 +32,7 @@ trait SparklineValueAxisItem extends StObject {
   
   var minorUnit: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[js.Any] = js.undefined
+  var name: js.UndefOr[Any] = js.undefined
   
   var narrowRange: js.UndefOr[Boolean] = js.undefined
   
@@ -56,7 +55,7 @@ object SparklineValueAxisItem {
   
   extension [Self <: SparklineValueAxisItem](x: Self) {
     
-    inline def setAxisCrossingValue(value: js.Any | Date): Self = StObject.set(x, "axisCrossingValue", value.asInstanceOf[js.Any])
+    inline def setAxisCrossingValue(value: Any | js.Date): Self = StObject.set(x, "axisCrossingValue", value.asInstanceOf[js.Any])
     
     inline def setAxisCrossingValueUndefined: Self = StObject.set(x, "axisCrossingValue", js.undefined)
     
@@ -108,7 +107,7 @@ object SparklineValueAxisItem {
     
     inline def setMinorUnitUndefined: Self = StObject.set(x, "minorUnit", js.undefined)
     
-    inline def setName(value: js.Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
@@ -124,7 +123,7 @@ object SparklineValueAxisItem {
     
     inline def setPlotBandsUndefined: Self = StObject.set(x, "plotBands", js.undefined)
     
-    inline def setPlotBandsVarargs(value: SparklineValueAxisItemPlotBand*): Self = StObject.set(x, "plotBands", js.Array(value :_*))
+    inline def setPlotBandsVarargs(value: SparklineValueAxisItemPlotBand*): Self = StObject.set(x, "plotBands", js.Array(value*))
     
     inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
     

@@ -79,7 +79,7 @@ object GoogleActionsOrdersV3VerticalsTicketTicketEvent {
     
     inline def setEventCharactersUndefined: Self = StObject.set(x, "eventCharacters", js.undefined)
     
-    inline def setEventCharactersVarargs(value: GoogleActionsOrdersV3VerticalsTicketEventCharacter*): Self = StObject.set(x, "eventCharacters", js.Array(value :_*))
+    inline def setEventCharactersVarargs(value: GoogleActionsOrdersV3VerticalsTicketEventCharacter*): Self = StObject.set(x, "eventCharacters", js.Array(value*))
     
     inline def setLocation(value: GoogleActionsV2Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

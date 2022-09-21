@@ -29,7 +29,7 @@ object ListDatastoresResponse {
     
     inline def setDatastoreSummariesUndefined: Self = StObject.set(x, "datastoreSummaries", js.undefined)
     
-    inline def setDatastoreSummariesVarargs(value: DatastoreSummary*): Self = StObject.set(x, "datastoreSummaries", js.Array(value :_*))
+    inline def setDatastoreSummariesVarargs(value: DatastoreSummary*): Self = StObject.set(x, "datastoreSummaries", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

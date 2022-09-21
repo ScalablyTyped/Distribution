@@ -7,14 +7,13 @@ import typings.googleProtobuf.mod.BinaryWriter
 import typings.googleProtobuf.mod.ExtensionFieldBinaryInfo
 import typings.googleProtobuf.mod.ExtensionFieldInfo
 import typings.googleProtobuf.mod.Message
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-protobuf/google/protobuf/descriptor_pb", "SourceCodeInfo")
 @js.native
-class SourceCodeInfo () extends Message {
+open class SourceCodeInfo () extends Message {
   
   def addLocation(): Location = js.native
   def addLocation(value: Unit, index: Double): Location = js.native
@@ -36,7 +35,7 @@ object SourceCodeInfo {
   
   @JSImport("google-protobuf/google/protobuf/descriptor_pb", "SourceCodeInfo.Location")
   @js.native
-  class Location () extends Message {
+  open class Location () extends Message {
     
     def addLeadingDetachedComments(value: String): String = js.native
     def addLeadingDetachedComments(value: String, index: Double): String = js.native
@@ -88,7 +87,7 @@ object SourceCodeInfo {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def deserializeBinary(bytes: Uint8Array): Location = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Location]
+    inline def deserializeBinary(bytes: js.typedarray.Uint8Array): Location = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Location]
     
     inline def deserializeBinaryFromReader(message: Location, reader: BinaryReader): Location = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Location]
     
@@ -138,15 +137,15 @@ object SourceCodeInfo {
         
         inline def setLeadingDetachedCommentsList(value: js.Array[String]): Self = StObject.set(x, "leadingDetachedCommentsList", value.asInstanceOf[js.Any])
         
-        inline def setLeadingDetachedCommentsListVarargs(value: String*): Self = StObject.set(x, "leadingDetachedCommentsList", js.Array(value :_*))
+        inline def setLeadingDetachedCommentsListVarargs(value: String*): Self = StObject.set(x, "leadingDetachedCommentsList", js.Array(value*))
         
         inline def setPathList(value: js.Array[Double]): Self = StObject.set(x, "pathList", value.asInstanceOf[js.Any])
         
-        inline def setPathListVarargs(value: Double*): Self = StObject.set(x, "pathList", js.Array(value :_*))
+        inline def setPathListVarargs(value: Double*): Self = StObject.set(x, "pathList", js.Array(value*))
         
         inline def setSpanList(value: js.Array[Double]): Self = StObject.set(x, "spanList", value.asInstanceOf[js.Any])
         
-        inline def setSpanListVarargs(value: Double*): Self = StObject.set(x, "spanList", js.Array(value :_*))
+        inline def setSpanListVarargs(value: Double*): Self = StObject.set(x, "spanList", js.Array(value*))
         
         inline def setTrailingComments(value: String): Self = StObject.set(x, "trailingComments", value.asInstanceOf[js.Any])
         
@@ -155,7 +154,7 @@ object SourceCodeInfo {
     }
   }
   
-  inline def deserializeBinary(bytes: Uint8Array): SourceCodeInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[SourceCodeInfo]
+  inline def deserializeBinary(bytes: js.typedarray.Uint8Array): SourceCodeInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[SourceCodeInfo]
   
   inline def deserializeBinaryFromReader(message: SourceCodeInfo, reader: BinaryReader): SourceCodeInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[SourceCodeInfo]
   
@@ -189,7 +188,7 @@ object SourceCodeInfo {
       
       inline def setLocationList(value: js.Array[typings.googleProtobuf.descriptorPbMod.SourceCodeInfo.Location.AsObject]): Self = StObject.set(x, "locationList", value.asInstanceOf[js.Any])
       
-      inline def setLocationListVarargs(value: typings.googleProtobuf.descriptorPbMod.SourceCodeInfo.Location.AsObject*): Self = StObject.set(x, "locationList", js.Array(value :_*))
+      inline def setLocationListVarargs(value: typings.googleProtobuf.descriptorPbMod.SourceCodeInfo.Location.AsObject*): Self = StObject.set(x, "locationList", js.Array(value*))
     }
   }
 }

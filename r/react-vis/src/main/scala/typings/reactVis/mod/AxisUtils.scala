@@ -22,15 +22,15 @@ object AxisUtils {
   def ORIENTATION: BOTTOM_ = js.native
   inline def ORIENTATION_=(x: BOTTOM_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ORIENTATION")(x.asInstanceOf[js.Any])
   
-  inline def getTickValues(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getTickValues")().asInstanceOf[js.Any]
-  inline def getTickValues(scale: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getTickValues")(scale.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  inline def getTickValues(scale: js.Any, tickTotal: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getTickValues")(scale.asInstanceOf[js.Any], tickTotal.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def getTickValues(scale: js.Any, tickTotal: js.Any, tickValues: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getTickValues")(scale.asInstanceOf[js.Any], tickTotal.asInstanceOf[js.Any], tickValues.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def getTickValues(scale: js.Any, tickTotal: Unit, tickValues: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getTickValues")(scale.asInstanceOf[js.Any], tickTotal.asInstanceOf[js.Any], tickValues.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def getTickValues(scale: Unit, tickTotal: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getTickValues")(scale.asInstanceOf[js.Any], tickTotal.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def getTickValues(scale: Unit, tickTotal: js.Any, tickValues: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getTickValues")(scale.asInstanceOf[js.Any], tickTotal.asInstanceOf[js.Any], tickValues.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  inline def getTickValues(scale: Unit, tickTotal: Unit, tickValues: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getTickValues")(scale.asInstanceOf[js.Any], tickTotal.asInstanceOf[js.Any], tickValues.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getTickValues(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getTickValues")().asInstanceOf[Any]
+  inline def getTickValues(scale: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getTickValues")(scale.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def getTickValues(scale: Any, tickTotal: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getTickValues")(scale.asInstanceOf[js.Any], tickTotal.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def getTickValues(scale: Any, tickTotal: Any, tickValues: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getTickValues")(scale.asInstanceOf[js.Any], tickTotal.asInstanceOf[js.Any], tickValues.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def getTickValues(scale: Any, tickTotal: Unit, tickValues: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getTickValues")(scale.asInstanceOf[js.Any], tickTotal.asInstanceOf[js.Any], tickValues.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def getTickValues(scale: Unit, tickTotal: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getTickValues")(scale.asInstanceOf[js.Any], tickTotal.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def getTickValues(scale: Unit, tickTotal: Any, tickValues: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getTickValues")(scale.asInstanceOf[js.Any], tickTotal.asInstanceOf[js.Any], tickValues.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def getTickValues(scale: Unit, tickTotal: Unit, tickValues: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getTickValues")(scale.asInstanceOf[js.Any], tickTotal.asInstanceOf[js.Any], tickValues.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def getTicksTotalFromSize(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getTicksTotalFromSize")().asInstanceOf[js.Any]
-  inline def getTicksTotalFromSize(size: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getTicksTotalFromSize")(size.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getTicksTotalFromSize(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getTicksTotalFromSize")().asInstanceOf[Any]
+  inline def getTicksTotalFromSize(size: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getTicksTotalFromSize")(size.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

@@ -12,12 +12,12 @@ trait UpdateProvisioningTemplateRequest extends StObject {
   var defaultVersionId: js.UndefOr[TemplateVersionId] = js.undefined
   
   /**
-    * The description of the fleet provisioning template.
+    * The description of the provisioning template.
     */
   var description: js.UndefOr[TemplateDescription] = js.undefined
   
   /**
-    * True to enable the fleet provisioning template, otherwise false.
+    * True to enable the provisioning template, otherwise false.
     */
   var enabled: js.UndefOr[Enabled] = js.undefined
   
@@ -37,7 +37,7 @@ trait UpdateProvisioningTemplateRequest extends StObject {
   var removePreProvisioningHook: js.UndefOr[RemoveHook] = js.undefined
   
   /**
-    * The name of the fleet provisioning template.
+    * The name of the provisioning template.
     */
   var templateName: TemplateName
 }

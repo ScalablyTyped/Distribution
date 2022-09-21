@@ -19,7 +19,12 @@ trait Session extends StObject {
   /**
     * The date and time, in ISO-8601 Extended format, when the session was terminated.
     */
-  var EndDate: js.UndefOr[DateTime] = js.undefined
+  var EndDate: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * The maximum duration of a session before it terminates.
+    */
+  var MaxSessionDuration: js.UndefOr[typings.awsSdk.ssmMod.MaxSessionDuration] = js.undefined
   
   /**
     * Reserved for future use.
@@ -27,9 +32,14 @@ trait Session extends StObject {
   var OutputUrl: js.UndefOr[SessionManagerOutputUrl] = js.undefined
   
   /**
-    * The ID of the AWS user account that started the session.
+    * The ID of the Amazon Web Services user account that started the session.
     */
   var Owner: js.UndefOr[SessionOwner] = js.undefined
+  
+  /**
+    * The reason for connecting to the instance.
+    */
+  var Reason: js.UndefOr[SessionReason] = js.undefined
   
   /**
     * The ID of the session.
@@ -39,7 +49,7 @@ trait Session extends StObject {
   /**
     * The date and time, in ISO-8601 Extended format, when the session began.
     */
-  var StartDate: js.UndefOr[DateTime] = js.undefined
+  var StartDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The status of the session. For example, "Connected" or "Terminated".
@@ -47,7 +57,7 @@ trait Session extends StObject {
   var Status: js.UndefOr[SessionStatus] = js.undefined
   
   /**
-    * The instance that the Session Manager session connected to.
+    * The managed node that the Session Manager session connected to.
     */
   var Target: js.UndefOr[SessionTarget] = js.undefined
 }
@@ -68,9 +78,13 @@ object Session {
     
     inline def setDocumentNameUndefined: Self = StObject.set(x, "DocumentName", js.undefined)
     
-    inline def setEndDate(value: DateTime): Self = StObject.set(x, "EndDate", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: js.Date): Self = StObject.set(x, "EndDate", value.asInstanceOf[js.Any])
     
     inline def setEndDateUndefined: Self = StObject.set(x, "EndDate", js.undefined)
+    
+    inline def setMaxSessionDuration(value: MaxSessionDuration): Self = StObject.set(x, "MaxSessionDuration", value.asInstanceOf[js.Any])
+    
+    inline def setMaxSessionDurationUndefined: Self = StObject.set(x, "MaxSessionDuration", js.undefined)
     
     inline def setOutputUrl(value: SessionManagerOutputUrl): Self = StObject.set(x, "OutputUrl", value.asInstanceOf[js.Any])
     
@@ -80,11 +94,15 @@ object Session {
     
     inline def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
     
+    inline def setReason(value: SessionReason): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
+    
+    inline def setReasonUndefined: Self = StObject.set(x, "Reason", js.undefined)
+    
     inline def setSessionId(value: SessionId): Self = StObject.set(x, "SessionId", value.asInstanceOf[js.Any])
     
     inline def setSessionIdUndefined: Self = StObject.set(x, "SessionId", js.undefined)
     
-    inline def setStartDate(value: DateTime): Self = StObject.set(x, "StartDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: js.Date): Self = StObject.set(x, "StartDate", value.asInstanceOf[js.Any])
     
     inline def setStartDateUndefined: Self = StObject.set(x, "StartDate", js.undefined)
     

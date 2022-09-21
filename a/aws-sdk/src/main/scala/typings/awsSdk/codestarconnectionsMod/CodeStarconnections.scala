@@ -164,4 +164,18 @@ trait CodeStarconnections extends Service {
     params: UntagResourceInput,
     callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceOutput, Unit]
   ): Request[UntagResourceOutput, AWSError] = js.native
+  
+  /**
+    * Updates a specified host with the provided configurations.
+    */
+  def updateHost(): Request[UpdateHostOutput, AWSError] = js.native
+  def updateHost(callback: js.Function2[/* err */ AWSError, /* data */ UpdateHostOutput, Unit]): Request[UpdateHostOutput, AWSError] = js.native
+  /**
+    * Updates a specified host with the provided configurations.
+    */
+  def updateHost(params: UpdateHostInput): Request[UpdateHostOutput, AWSError] = js.native
+  def updateHost(
+    params: UpdateHostInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateHostOutput, Unit]
+  ): Request[UpdateHostOutput, AWSError] = js.native
 }

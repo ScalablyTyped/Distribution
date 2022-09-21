@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "hibp" : "9.0.0"
+      "hibp" : "11.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "hibp" : "9.0.0"
+      "hibp" : "11.1.0"
     }
   ],
   "compile-devDependencies" : [

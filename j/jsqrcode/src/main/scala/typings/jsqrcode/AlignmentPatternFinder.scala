@@ -1,6 +1,5 @@
 package typings.jsqrcode
 
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +18,7 @@ trait AlignmentPatternFinder extends StObject {
   
   var height: Double
   
-  var image: Uint8Array
+  var image: js.typedarray.Uint8Array
   
   var moduleSize: Double
   
@@ -42,7 +41,7 @@ object AlignmentPatternFinder {
     foundPatternCross: Double => Boolean,
     handlePossibleCenter: (Double, Double, Double) => AlignmentPattern,
     height: Double,
-    image: Uint8Array,
+    image: js.typedarray.Uint8Array,
     moduleSize: Double,
     possibleCenters: js.Array[AlignmentPattern],
     resultPointCallback: ResultPointCallback,
@@ -68,13 +67,13 @@ object AlignmentPatternFinder {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    inline def setImage(value: Uint8Array): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: js.typedarray.Uint8Array): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     inline def setModuleSize(value: Double): Self = StObject.set(x, "moduleSize", value.asInstanceOf[js.Any])
     
     inline def setPossibleCenters(value: js.Array[AlignmentPattern]): Self = StObject.set(x, "possibleCenters", value.asInstanceOf[js.Any])
     
-    inline def setPossibleCentersVarargs(value: AlignmentPattern*): Self = StObject.set(x, "possibleCenters", js.Array(value :_*))
+    inline def setPossibleCentersVarargs(value: AlignmentPattern*): Self = StObject.set(x, "possibleCenters", js.Array(value*))
     
     inline def setResultPointCallback(value: ResultPointCallback): Self = StObject.set(x, "resultPointCallback", value.asInstanceOf[js.Any])
     

@@ -15,14 +15,14 @@ trait StatisticDefinitionStatisticParameters
   /**
     * Specify `ASC` (ascending) or `DESC` (descending) to control the order of the data.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-StatisticDefinition.html#statisticParameters)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-StatisticDefinition.html#statisticParameters)
     */
   var orderBy: js.UndefOr[ASC | DESC] = js.undefined
   
   /**
     * Percentile value.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-StatisticDefinition.html#statisticParameters)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-StatisticDefinition.html#statisticParameters)
     */
   var value: Double
 }

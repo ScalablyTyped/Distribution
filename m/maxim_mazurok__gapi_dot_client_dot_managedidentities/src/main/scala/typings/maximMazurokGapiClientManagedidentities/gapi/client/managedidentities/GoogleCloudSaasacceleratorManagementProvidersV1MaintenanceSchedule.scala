@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSchedule extends StObject {
   
-  /** Can this scheduled update be rescheduled? By default, it's true and API needs to do explicitly check whether it's set, if it's set as false explicitly, it's false */
+  /**
+    * This field is deprecated, and will be always set to true since reschedule can happen multiple times now. This field should not be removed until all service producers remove this for
+    * their customers.
+    */
   var canReschedule: js.UndefOr[Boolean] = js.undefined
   
   /** The scheduled end time for the maintenance. */
@@ -14,6 +17,12 @@ trait GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSchedule extends
   
   /** The rollout management policy this maintenance schedule is associated with. When doing reschedule update request, the reschedule should be against this given policy. */
   var rolloutManagementPolicy: js.UndefOr[String] = js.undefined
+  
+  /**
+    * schedule_deadline_time is the time deadline any schedule start time cannot go beyond, including reschedule. It's normally the initial schedule start time plus maintenance window
+    * length (1 day or 1 week). Maintenance cannot be scheduled to start beyond this deadline.
+    */
+  var scheduleDeadlineTime: js.UndefOr[String] = js.undefined
   
   /** The scheduled start time for the maintenance. */
   var startTime: js.UndefOr[String] = js.undefined
@@ -38,6 +47,10 @@ object GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSchedule {
     inline def setRolloutManagementPolicy(value: String): Self = StObject.set(x, "rolloutManagementPolicy", value.asInstanceOf[js.Any])
     
     inline def setRolloutManagementPolicyUndefined: Self = StObject.set(x, "rolloutManagementPolicy", js.undefined)
+    
+    inline def setScheduleDeadlineTime(value: String): Self = StObject.set(x, "scheduleDeadlineTime", value.asInstanceOf[js.Any])
+    
+    inline def setScheduleDeadlineTimeUndefined: Self = StObject.set(x, "scheduleDeadlineTime", js.undefined)
     
     inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     

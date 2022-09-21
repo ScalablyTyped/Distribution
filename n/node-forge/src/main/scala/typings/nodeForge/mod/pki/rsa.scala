@@ -4,7 +4,6 @@ import typings.nodeForge.mod.Bytes
 import typings.nodeForge.mod.jsbn.BigInteger
 import typings.nodeForge.mod.md.MessageDigest
 import typings.nodeForge.mod.pss.PSS
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,32 +20,32 @@ object rsa {
   inline def generateKeyPair(
     bits: Double,
     e: Double,
-    callback: js.Function2[/* err */ Error, /* keypair */ typings.nodeForge.mod.pki.rsa.KeyPair, Unit]
+    callback: js.Function2[/* err */ js.Error, /* keypair */ typings.nodeForge.mod.pki.rsa.KeyPair, Unit]
   ): typings.nodeForge.mod.pki.rsa.KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(bits.asInstanceOf[js.Any], e.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.rsa.KeyPair]
   inline def generateKeyPair(
     bits: Double,
     e: Unit,
-    callback: js.Function2[/* err */ Error, /* keypair */ typings.nodeForge.mod.pki.rsa.KeyPair, Unit]
+    callback: js.Function2[/* err */ js.Error, /* keypair */ typings.nodeForge.mod.pki.rsa.KeyPair, Unit]
   ): typings.nodeForge.mod.pki.rsa.KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(bits.asInstanceOf[js.Any], e.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.rsa.KeyPair]
   inline def generateKeyPair(bits: Unit, e: Double): typings.nodeForge.mod.pki.rsa.KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(bits.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.rsa.KeyPair]
   inline def generateKeyPair(
     bits: Unit,
     e: Double,
-    callback: js.Function2[/* err */ Error, /* keypair */ typings.nodeForge.mod.pki.rsa.KeyPair, Unit]
+    callback: js.Function2[/* err */ js.Error, /* keypair */ typings.nodeForge.mod.pki.rsa.KeyPair, Unit]
   ): typings.nodeForge.mod.pki.rsa.KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(bits.asInstanceOf[js.Any], e.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.rsa.KeyPair]
   inline def generateKeyPair(
     bits: Unit,
     e: Unit,
-    callback: js.Function2[/* err */ Error, /* keypair */ typings.nodeForge.mod.pki.rsa.KeyPair, Unit]
+    callback: js.Function2[/* err */ js.Error, /* keypair */ typings.nodeForge.mod.pki.rsa.KeyPair, Unit]
   ): typings.nodeForge.mod.pki.rsa.KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(bits.asInstanceOf[js.Any], e.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.rsa.KeyPair]
   inline def generateKeyPair(
     options: Unit,
-    callback: js.Function2[/* err */ Error, /* keypair */ typings.nodeForge.mod.pki.rsa.KeyPair, Unit]
+    callback: js.Function2[/* err */ js.Error, /* keypair */ typings.nodeForge.mod.pki.rsa.KeyPair, Unit]
   ): typings.nodeForge.mod.pki.rsa.KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.rsa.KeyPair]
   inline def generateKeyPair(options: GenerateKeyPairOptions): typings.nodeForge.mod.pki.rsa.KeyPair = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(options.asInstanceOf[js.Any]).asInstanceOf[typings.nodeForge.mod.pki.rsa.KeyPair]
   inline def generateKeyPair(
     options: GenerateKeyPairOptions,
-    callback: js.Function2[/* err */ Error, /* keypair */ typings.nodeForge.mod.pki.rsa.KeyPair, Unit]
+    callback: js.Function2[/* err */ js.Error, /* keypair */ typings.nodeForge.mod.pki.rsa.KeyPair, Unit]
   ): typings.nodeForge.mod.pki.rsa.KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.rsa.KeyPair]
   
   inline def setPublicKey(n: BigInteger, e: BigInteger): typings.nodeForge.mod.pki.rsa.PublicKey = (^.asInstanceOf[js.Dynamic].applyDynamic("setPublicKey")(n.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.rsa.PublicKey]
@@ -68,7 +67,7 @@ object rsa {
     
     var e: js.UndefOr[Double] = js.undefined
     
-    var prng: js.UndefOr[js.Any] = js.undefined
+    var prng: js.UndefOr[Any] = js.undefined
     
     var workLoad: js.UndefOr[Double] = js.undefined
     
@@ -97,7 +96,7 @@ object rsa {
       
       inline def setEUndefined: Self = StObject.set(x, "e", js.undefined)
       
-      inline def setPrng(value: js.Any): Self = StObject.set(x, "prng", value.asInstanceOf[js.Any])
+      inline def setPrng(value: Any): Self = StObject.set(x, "prng", value.asInstanceOf[js.Any])
       
       inline def setPrngUndefined: Self = StObject.set(x, "prng", js.undefined)
       
@@ -149,9 +148,9 @@ object rsa {
     var dQ: BigInteger = js.native
     
     def decrypt(data: Bytes): Bytes = js.native
-    def decrypt(data: Bytes, scheme: Unit, schemeOptions: js.Any): Bytes = js.native
+    def decrypt(data: Bytes, scheme: Unit, schemeOptions: Any): Bytes = js.native
     def decrypt(data: Bytes, scheme: EncryptionScheme): Bytes = js.native
-    def decrypt(data: Bytes, scheme: EncryptionScheme, schemeOptions: js.Any): Bytes = js.native
+    def decrypt(data: Bytes, scheme: EncryptionScheme, schemeOptions: Any): Bytes = js.native
     
     var e: BigInteger = js.native
     
@@ -163,6 +162,8 @@ object rsa {
     
     var qInv: BigInteger = js.native
     
+    def sign(md: Bytes): Bytes = js.native
+    def sign(md: Bytes, scheme: SignatureScheme): Bytes = js.native
     def sign(md: MessageDigest): Bytes = js.native
     def sign(md: MessageDigest, scheme: SignatureScheme): Bytes = js.native
   }
@@ -173,9 +174,9 @@ object rsa {
     var e: BigInteger = js.native
     
     def encrypt(data: Bytes): Bytes = js.native
-    def encrypt(data: Bytes, scheme: Unit, schemeOptions: js.Any): Bytes = js.native
+    def encrypt(data: Bytes, scheme: Unit, schemeOptions: Any): Bytes = js.native
     def encrypt(data: Bytes, scheme: EncryptionScheme): Bytes = js.native
-    def encrypt(data: Bytes, scheme: EncryptionScheme, schemeOptions: js.Any): Bytes = js.native
+    def encrypt(data: Bytes, scheme: EncryptionScheme, schemeOptions: Any): Bytes = js.native
     
     var n: BigInteger = js.native
     

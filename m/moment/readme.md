@@ -1,7 +1,7 @@
 
 # Scala.js typings for moment
 
-Typings are for version 2.29.1
+Typings are for version 2.29.4
 
 ## Library description:
 Parse, validate, manipulate, and display dates
@@ -10,10 +10,10 @@ Parse, validate, manipulate, and display dates
 | ------------------ | :-------------: |
 | Full name          | moment |
 | Keywords           | moment, date, time, parse, format, validate, i18n, l10n, ender |
-| # releases         | 12 |
-| # dependents       | 29158 |
-| # downloads        | 621434092 |
-| # stars            | 1032 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 8.3502163E7 |
+| # stars            | 46828.0 |
 
 ## Links
 - [Homepage](https://momentjs.com)

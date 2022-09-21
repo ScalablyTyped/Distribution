@@ -35,7 +35,7 @@ object mod {
       
       inline def setChildrenFunction1(value: T => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      inline def setChildrenVarargs(value: RenderFn[T]*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: RenderFn[T]*): Self = StObject.set(x, "children", js.Array(value*))
       
       inline def setObservedBits(value: Double): Self = StObject.set(x, "observedBits", value.asInstanceOf[js.Any])
       

@@ -40,7 +40,7 @@ trait PlusMapsRoute extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  var pointList: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var pointList: js.UndefOr[js.Array[Any]] = js.undefined
   
   /**
     * 线路的提示信息
@@ -78,11 +78,11 @@ object PlusMapsRoute {
     
     inline def setPointCountUndefined: Self = StObject.set(x, "pointCount", js.undefined)
     
-    inline def setPointList(value: js.Array[js.Any]): Self = StObject.set(x, "pointList", value.asInstanceOf[js.Any])
+    inline def setPointList(value: js.Array[Any]): Self = StObject.set(x, "pointList", value.asInstanceOf[js.Any])
     
     inline def setPointListUndefined: Self = StObject.set(x, "pointList", js.undefined)
     
-    inline def setPointListVarargs(value: js.Any*): Self = StObject.set(x, "pointList", js.Array(value :_*))
+    inline def setPointListVarargs(value: Any*): Self = StObject.set(x, "pointList", js.Array(value*))
     
     inline def setRouteTip(value: String): Self = StObject.set(x, "routeTip", value.asInstanceOf[js.Any])
     

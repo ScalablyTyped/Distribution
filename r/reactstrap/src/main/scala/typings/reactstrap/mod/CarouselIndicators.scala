@@ -5,6 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reactstrap/lib", "CarouselIndicators")
+@JSImport("reactstrap", "CarouselIndicators")
 @js.native
-class CarouselIndicators () extends default
+open class CarouselIndicators () extends default

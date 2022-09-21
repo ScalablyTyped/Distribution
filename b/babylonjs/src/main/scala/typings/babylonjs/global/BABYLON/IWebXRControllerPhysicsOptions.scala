@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.IWebXRControllerPhysicsOptions")
 @js.native
-class IWebXRControllerPhysicsOptions ()
+open class IWebXRControllerPhysicsOptions ()
   extends StObject
      with typings.babylonjs.BABYLON.IWebXRControllerPhysicsOptions {
   

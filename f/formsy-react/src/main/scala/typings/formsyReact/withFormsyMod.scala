@@ -54,8 +54,8 @@ object withFormsyMod {
     
     @JSImport("formsy-react/dist/withFormsy", "propTypes.innerRef")
     @js.native
-    def innerRef: Requireable[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
-    inline def innerRef_=(x: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("innerRef")(x.asInstanceOf[js.Any])
+    def innerRef: Requireable[js.Function1[/* repeated */ Any, Any]] = js.native
+    inline def innerRef_=(x: Requireable[js.Function1[/* repeated */ Any, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("innerRef")(x.asInstanceOf[js.Any])
     
     @JSImport("formsy-react/dist/withFormsy", "propTypes.name")
     @js.native
@@ -74,8 +74,8 @@ object withFormsyMod {
     
     @JSImport("formsy-react/dist/withFormsy", "propTypes.value")
     @js.native
-    def value: Requireable[js.Any] = js.native
-    inline def value_=(x: Requireable[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("value")(x.asInstanceOf[js.Any])
+    def value: Requireable[Any] = js.native
+    inline def value_=(x: Requireable[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("value")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -99,7 +99,7 @@ object withFormsyMod {
     
     def isValidValue(value: V): Boolean = js.native
     
-    var ref: js.UndefOr[Ref[js.Any]] = js.native
+    var ref: js.UndefOr[Ref[Any]] = js.native
     
     def resetValue(): Unit = js.native
     
@@ -142,7 +142,7 @@ object withFormsyMod {
   
   trait WrapperProps[V] extends StObject {
     
-    var innerRef: js.UndefOr[js.Function1[/* ref */ Ref[js.Any], Unit]] = js.undefined
+    var innerRef: js.UndefOr[js.Function1[/* ref */ Ref[Any], Unit]] = js.undefined
     
     var name: String
     
@@ -165,7 +165,7 @@ object withFormsyMod {
     
     extension [Self <: WrapperProps[?], V](x: Self & WrapperProps[V]) {
       
-      inline def setInnerRef(value: /* ref */ Ref[js.Any] => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      inline def setInnerRef(value: /* ref */ Ref[Any] => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
       inline def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
       
@@ -195,7 +195,7 @@ object withFormsyMod {
   
   trait WrapperState[V]
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var formSubmitted: Boolean
     
@@ -240,7 +240,7 @@ object withFormsyMod {
       
       inline def setValidationError(value: js.Array[ValidationError]): Self = StObject.set(x, "validationError", value.asInstanceOf[js.Any])
       
-      inline def setValidationErrorVarargs(value: ValidationError*): Self = StObject.set(x, "validationError", js.Array(value :_*))
+      inline def setValidationErrorVarargs(value: ValidationError*): Self = StObject.set(x, "validationError", js.Array(value*))
       
       inline def setValue(value: V): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }

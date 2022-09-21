@@ -22,7 +22,7 @@ object FieldSchemaInFormGeolocation {
     Direction: String,
     FieldType: String,
     Hidden: Boolean,
-    IMEMode: js.Any,
+    IMEMode: Any,
     Id: String,
     IsBingMapBlockedInCurrentRegion: Boolean,
     Name: String,

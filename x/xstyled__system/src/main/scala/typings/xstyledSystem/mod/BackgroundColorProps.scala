@@ -1,22 +1,15 @@
 package typings.xstyledSystem.mod
 
+import typings.csstype.mod.Property.Background
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait BackgroundColorProps[TLength] extends StObject {
   
-  val backgroundColor: js.UndefOr[
-    ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Background<TLength> */ js.Any
-    ]
-  ] = js.undefined
+  val backgroundColor: js.UndefOr[ResponsiveValue[Background[TLength]]] = js.undefined
   
-  val bg: js.UndefOr[
-    ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Background<TLength> */ js.Any
-    ]
-  ] = js.undefined
+  val bg: js.UndefOr[ResponsiveValue[Background[TLength]]] = js.undefined
 }
 object BackgroundColorProps {
   
@@ -27,28 +20,16 @@ object BackgroundColorProps {
   
   extension [Self <: BackgroundColorProps[?], TLength](x: Self & BackgroundColorProps[TLength]) {
     
-    inline def setBackgroundColor(
-      value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Background<TLength> */ js.Any
-        ]
-    ): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: ResponsiveValue[Background[TLength]]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    inline def setBackgroundColorVarargs(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Background<TLength> */ js.Any)*
-    ): Self = StObject.set(x, "backgroundColor", js.Array(value :_*))
+    inline def setBackgroundColorVarargs(value: Background[TLength]*): Self = StObject.set(x, "backgroundColor", js.Array(value*))
     
-    inline def setBg(
-      value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Background<TLength> */ js.Any
-        ]
-    ): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
+    inline def setBg(value: ResponsiveValue[Background[TLength]]): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
     
     inline def setBgUndefined: Self = StObject.set(x, "bg", js.undefined)
     
-    inline def setBgVarargs(
-      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Background<TLength> */ js.Any)*
-    ): Self = StObject.set(x, "bg", js.Array(value :_*))
+    inline def setBgVarargs(value: Background[TLength]*): Self = StObject.set(x, "bg", js.Array(value*))
   }
 }

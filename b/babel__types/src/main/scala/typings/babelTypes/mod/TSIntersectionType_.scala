@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.babelTypes.mod._Node because Already inherited */ trait TSIntersectionType_
   extends StObject
      with BaseNode
-     with TSType {
+     with TSType
+     with TypeScript {
   
   @JSName("type")
   var type_TSIntersectionType_ : TSIntersectionType
@@ -30,6 +31,6 @@ object TSIntersectionType_ {
     
     inline def setTypes(value: js.Array[TSType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    inline def setTypesVarargs(value: TSType*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: TSType*): Self = StObject.set(x, "types", js.Array(value*))
   }
 }

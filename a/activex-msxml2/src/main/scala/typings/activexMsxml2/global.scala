@@ -9,6 +9,14 @@ import typings.activexMsxml2.MSXML2.IXMLDOMSchemaCollection
 import typings.activexMsxml2.MSXML2.SOMITEMTYPE
 import typings.activexMsxml2.MSXML2.XHR_PROPERTY
 import typings.activexMsxml2.MSXML2.tagXHRCOOKIE
+import typings.activexMsxml2.activexMsxml2Numbers.`11`
+import typings.activexMsxml2.activexMsxml2Numbers.`1`
+import typings.activexMsxml2.activexMsxml2Numbers.`2`
+import typings.activexMsxml2.activexMsxml2Numbers.`3`
+import typings.activexMsxml2.activexMsxml2Numbers.`4`
+import typings.activexMsxml2.activexMsxml2Numbers.`5`
+import typings.activexMsxml2.activexMsxml2Numbers.`7`
+import typings.activexMsxml2.activexMsxml2Numbers.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,14 +28,303 @@ object global {
     /** W3C-DOM XML Document 6.0 (Apartment) */
     @JSGlobal("MSXML2.DOMDocument60")
     @js.native
-    /* private */ class DOMDocument60 ()
+    /* private */ open class DOMDocument60 ()
       extends StObject
-         with typings.activexMsxml2.MSXML2.DOMDocument60
+         with typings.activexMsxml2.MSXML2.DOMDocument60 {
+      
+      /* private */ /* CompleteClass */
+      @JSName("MSXML2.DOMDocument60_typekey")
+      var MSXML2DotDOMDocument60_typekey: typings.activexMsxml2.MSXML2.DOMDocument60 = js.native
+      
+      /** abort an asynchronous download */
+      /* CompleteClass */
+      override def abort(): Unit = js.native
+      
+      /** append a child node */
+      /* CompleteClass */
+      override def appendChild(newChild: typings.activexMsxml2.MSXML2.IXMLDOMNode): typings.activexMsxml2.MSXML2.IXMLDOMNode = js.native
+      
+      /** flag for asynchronous download */
+      /* CompleteClass */
+      var async: Boolean = js.native
+      
+      /** collection of nodes */
+      /** the collection of the node's attributes */
+      /* CompleteClass */
+      override def attributes(index: Double): typings.activexMsxml2.MSXML2.IXMLDOMNode = js.native
+      /** the collection of the node's attributes */
+      /* CompleteClass */
+      @JSName("attributes")
+      override val attributes_Original: IXMLDOMNamedNodeMap = js.native
+      
+      /** the base name of the node (nodename with the prefix stripped off) */
+      /* CompleteClass */
+      override val baseName: String = js.native
+      
+      /** collection of nodes */
+      /** the collection of the node's children */
+      /* CompleteClass */
+      override def childNodes(index: Double): typings.activexMsxml2.MSXML2.IXMLDOMNode = js.native
+      /** the collection of the node's children */
+      /* CompleteClass */
+      @JSName("childNodes")
+      override val childNodes_Original: IXMLDOMNodeList = js.native
+      
+      /* CompleteClass */
+      override def cloneNode(deep: Boolean): typings.activexMsxml2.MSXML2.IXMLDOMNode = js.native
+      
+      /** create an attribute node */
+      /* CompleteClass */
+      override def createAttribute(name: String): typings.activexMsxml2.MSXML2.IXMLDOMAttribute = js.native
+      
+      /** create a CDATA section node */
+      /* CompleteClass */
+      override def createCDATASection(data: String): typings.activexMsxml2.MSXML2.IXMLDOMCDATASection = js.native
+      
+      /** create a comment node */
+      /* CompleteClass */
+      override def createComment(data: String): typings.activexMsxml2.MSXML2.IXMLDOMComment = js.native
+      
+      /** create a DocumentFragment node */
+      /* CompleteClass */
+      override def createDocumentFragment(): typings.activexMsxml2.MSXML2.IXMLDOMDocumentFragment = js.native
+      
+      /** create an Element node */
+      /* CompleteClass */
+      override def createElement(tagName: String): typings.activexMsxml2.MSXML2.IXMLDOMElement = js.native
+      
+      /** create an entity reference node */
+      /* CompleteClass */
+      override def createEntityReference(name: String): typings.activexMsxml2.MSXML2.IXMLDOMEntityReference = js.native
+      
+      /** create a node of the specified node type and name */
+      /* CompleteClass */
+      override def createNode(`type`: `2` | `4` | `8` | `11` | `3` | `1` | `5` | `7`, name: String, namespaceURI: String): typings.activexMsxml2.MSXML2.IXMLDOMNode = js.native
+      
+      /** create a processing instruction node */
+      /* CompleteClass */
+      override def createProcessingInstruction(target: String, data: String): typings.activexMsxml2.MSXML2.IXMLDOMProcessingInstruction = js.native
+      
+      /** create a text node */
+      /* CompleteClass */
+      override def createTextNode(data: String): typings.activexMsxml2.MSXML2.IXMLDOMText = js.native
+      
+      /** the data type of the node */
+      /* CompleteClass */
+      var dataType: String | Null = js.native
+      
+      /** pointer to the definition of the node in the DTD or schema */
+      /* CompleteClass */
+      override val definition: typings.activexMsxml2.MSXML2.IXMLDOMNode = js.native
+      
+      /** node corresponding to the DOCTYPE */
+      /* CompleteClass */
+      override val doctype: typings.activexMsxml2.MSXML2.IXMLDOMDocumentType = js.native
+      
+      /** the root of the tree */
+      /* CompleteClass */
+      var documentElement: typings.activexMsxml2.MSXML2.IXMLDOMElement = js.native
+      
+      /** first child of the node */
+      /* CompleteClass */
+      override val firstChild: typings.activexMsxml2.MSXML2.IXMLDOMNode = js.native
+      
+      /** build a list of elements by name */
+      /* CompleteClass */
+      override def getElementsByTagName(tagName: String): IXMLDOMNodeList = js.native
+      
+      /** get the value of the named property */
+      /* CompleteClass */
+      override def getProperty(name: String): Any = js.native
+      
+      /* CompleteClass */
+      override def hasChildNodes(): Boolean = js.native
+      
+      /** info on this DOM implementation */
+      /* CompleteClass */
+      override val implementation: typings.activexMsxml2.MSXML2.IXMLDOMImplementation = js.native
+      
+      /** clone node such that clones ownerDocument is this document */
+      /* CompleteClass */
+      override def importNode(node: typings.activexMsxml2.MSXML2.IXMLDOMNode, deep: Boolean): typings.activexMsxml2.MSXML2.IXMLDOMNode = js.native
+      
+      /** insert a child node */
+      /* CompleteClass */
+      override def insertBefore(newChild: typings.activexMsxml2.MSXML2.IXMLDOMNode, refChild: Any): typings.activexMsxml2.MSXML2.IXMLDOMNode = js.native
+      
+      /** last child of the node */
+      /* CompleteClass */
+      override val lastChild: typings.activexMsxml2.MSXML2.IXMLDOMNode = js.native
+      
+      /** load document from the specified XML source */
+      /* CompleteClass */
+      override def load(xmlSource: Any): Boolean = js.native
+      
+      /** load the document from a string */
+      /* CompleteClass */
+      override def loadXML(bstrXML: String): Boolean = js.native
+      
+      /** the URI for the namespace applying to the node */
+      /* CompleteClass */
+      override val namespaceURI: String = js.native
+      
+      /** Get namespaceURI for schema by index */
+      /** A collection of all namespaces for this document */
+      /* CompleteClass */
+      override def namespaces(index: Double): String = js.native
+      /** A collection of all namespaces for this document */
+      /* CompleteClass */
+      @JSName("namespaces")
+      override val namespaces_Original: IXMLDOMSchemaCollection = js.native
+      
+      /** right sibling of the node */
+      /* CompleteClass */
+      override val nextSibling: typings.activexMsxml2.MSXML2.IXMLDOMNode = js.native
+      
+      /** retrieve node from it's ID */
+      /* CompleteClass */
+      override def nodeFromID(idString: String): typings.activexMsxml2.MSXML2.IXMLDOMNode = js.native
+      
+      /** name of the node */
+      /* CompleteClass */
+      override val nodeName: String = js.native
+      
+      /** the node's type */
+      /* CompleteClass */
+      override val nodeType: DOMNodeType = js.native
+      
+      /** the type of node in string form */
+      /* CompleteClass */
+      override val nodeTypeString: String = js.native
+      
+      /** get the strongly typed value of the node */
+      /* CompleteClass */
+      var nodeTypedValue: Any = js.native
+      
+      /** value stored in the node */
+      /* CompleteClass */
+      var nodeValue: String | Null = js.native
+      
+      /** register an ondataavailable event handler */
+      /* CompleteClass */
+      override val ondataavailable: Any = js.native
+      
+      /** register a readystatechange event handler */
+      /* CompleteClass */
+      override val onreadystatechange: Any = js.native
+      
+      /** register an ontransformnode event handler */
+      /* CompleteClass */
+      override val ontransformnode: Any = js.native
+      
+      /** document that contains the node */
+      /* CompleteClass */
+      override val ownerDocument: typings.activexMsxml2.MSXML2.IXMLDOMDocument = js.native
+      
+      /** parent of the node */
+      /* CompleteClass */
+      override val parentNode: typings.activexMsxml2.MSXML2.IXMLDOMNode = js.native
+      
+      /** get the last parser error */
+      /* CompleteClass */
+      override val parseError: typings.activexMsxml2.MSXML2.IXMLDOMParseError = js.native
+      
+      /** has sub-tree been completely parsed */
+      /* CompleteClass */
+      override val parsed: Boolean = js.native
+      
+      /** the prefix for the namespace applying to the node */
+      /* CompleteClass */
+      override val prefix: String = js.native
+      
+      /** indicates whether the parser preserves whitespace */
+      /* CompleteClass */
+      var preserveWhiteSpace: Boolean = js.native
+      
+      /** left sibling of the node */
+      /* CompleteClass */
+      override val previousSibling: typings.activexMsxml2.MSXML2.IXMLDOMNode = js.native
+      
+      /** get the state of the XML document */
+      /* CompleteClass */
+      override val readyState: Double = js.native
+      
+      /** remove a child node */
+      /* CompleteClass */
+      override def removeChild(childNode: typings.activexMsxml2.MSXML2.IXMLDOMNode): typings.activexMsxml2.MSXML2.IXMLDOMNode = js.native
+      
+      /** replace a child node */
+      /* CompleteClass */
+      override def replaceChild(
+        newChild: typings.activexMsxml2.MSXML2.IXMLDOMNode,
+        oldChild: typings.activexMsxml2.MSXML2.IXMLDOMNode
+      ): typings.activexMsxml2.MSXML2.IXMLDOMNode = js.native
+      
+      /** indicates whether the parser resolves references to external DTD/Entities/Schema */
+      /* CompleteClass */
+      var resolveExternals: Boolean = js.native
+      
+      /** save the document to a specified destination */
+      /* CompleteClass */
+      override def save(destination: Any): Unit = js.native
+      
+      /** The associated schema cache */
+      /* CompleteClass */
+      var schemas: Any = js.native
+      
+      /** execute query on the subtree */
+      /* CompleteClass */
+      override def selectNodes(queryString: String): IXMLDOMNodeList = js.native
+      
+      /** execute query on the subtree */
+      /* CompleteClass */
+      override def selectSingleNode(queryString: String): typings.activexMsxml2.MSXML2.IXMLDOMNode = js.native
+      
+      /** set the value of the named property */
+      /* CompleteClass */
+      override def setProperty(name: String, value: Any): Unit = js.native
+      
+      /** indicates whether node is a default value */
+      /* CompleteClass */
+      override val specified: Boolean = js.native
+      
+      /** text content of the node and subtree */
+      /* CompleteClass */
+      var text: String = js.native
+      
+      /** apply the stylesheet to the subtree */
+      /* CompleteClass */
+      override def transformNode(stylesheet: typings.activexMsxml2.MSXML2.IXMLDOMNode): String = js.native
+      
+      /** apply the stylesheet to the subtree, returning the result through a document or a stream */
+      /* CompleteClass */
+      override def transformNodeToObject(stylesheet: typings.activexMsxml2.MSXML2.IXMLDOMNode, outputObject: Any): Unit = js.native
+      
+      /** get the URL for the loaded XML document */
+      /* CompleteClass */
+      override val url: String = js.native
+      
+      /** perform runtime validation on the currently loaded XML document */
+      /* CompleteClass */
+      override def validate(): typings.activexMsxml2.MSXML2.IXMLDOMParseError = js.native
+      
+      /** perform runtime validation on the currently loaded XML document node */
+      /* CompleteClass */
+      override def validateNode(node: typings.activexMsxml2.MSXML2.IXMLDOMNode): typings.activexMsxml2.MSXML2.IXMLDOMParseError = js.native
+      
+      /** indicates whether the parser performs validation */
+      /* CompleteClass */
+      var validateOnParse: Boolean = js.native
+      
+      /** return the XML source for the node and each of its descendants */
+      /* CompleteClass */
+      override val xml: String = js.native
+    }
     
     /** W3C-DOM XML Document 6.0 (Free threaded) */
     @JSGlobal("MSXML2.FreeThreadedDOMDocument60")
     @js.native
-    /* private */ class FreeThreadedDOMDocument60 ()
+    /* private */ open class FreeThreadedDOMDocument60 ()
       extends StObject
          with typings.activexMsxml2.MSXML2.FreeThreadedDOMDocument60 {
       
@@ -98,7 +395,7 @@ object global {
       
       /** create a node of the specified node type and name */
       /* CompleteClass */
-      override def createNode(`type`: js.Any, name: String, namespaceURI: String): typings.activexMsxml2.MSXML2.IXMLDOMNode = js.native
+      override def createNode(`type`: Any, name: String, namespaceURI: String): typings.activexMsxml2.MSXML2.IXMLDOMNode = js.native
       
       /** create a processing instruction node */
       /* CompleteClass */
@@ -110,7 +407,7 @@ object global {
       
       /** the data type of the node */
       /* CompleteClass */
-      var dataType: js.Any = js.native
+      var dataType: Any = js.native
       
       /** pointer to the definition of the node in the DTD or schema */
       /* CompleteClass */
@@ -134,7 +431,7 @@ object global {
       
       /** get the value of the named property */
       /* CompleteClass */
-      override def getProperty(name: String): js.Any = js.native
+      override def getProperty(name: String): Any = js.native
       
       /* CompleteClass */
       override def hasChildNodes(): Boolean = js.native
@@ -149,7 +446,7 @@ object global {
       
       /** insert a child node */
       /* CompleteClass */
-      override def insertBefore(newChild: typings.activexMsxml2.MSXML2.IXMLDOMNode, refChild: js.Any): typings.activexMsxml2.MSXML2.IXMLDOMNode = js.native
+      override def insertBefore(newChild: typings.activexMsxml2.MSXML2.IXMLDOMNode, refChild: Any): typings.activexMsxml2.MSXML2.IXMLDOMNode = js.native
       
       /** last child of the node */
       /* CompleteClass */
@@ -157,7 +454,7 @@ object global {
       
       /** load document from the specified XML source */
       /* CompleteClass */
-      override def load(xmlSource: js.Any): Boolean = js.native
+      override def load(xmlSource: Any): Boolean = js.native
       
       /** load the document from a string */
       /* CompleteClass */
@@ -198,23 +495,23 @@ object global {
       
       /** get the strongly typed value of the node */
       /* CompleteClass */
-      var nodeTypedValue: js.Any = js.native
+      var nodeTypedValue: Any = js.native
       
       /** value stored in the node */
       /* CompleteClass */
-      var nodeValue: js.Any = js.native
+      var nodeValue: Any = js.native
       
       /** register an ondataavailable event handler */
       /* CompleteClass */
-      override val ondataavailable: js.Any = js.native
+      override val ondataavailable: Any = js.native
       
       /** register a readystatechange event handler */
       /* CompleteClass */
-      override val onreadystatechange: js.Any = js.native
+      override val onreadystatechange: Any = js.native
       
       /** register an ontransformnode event handler */
       /* CompleteClass */
-      override val ontransformnode: js.Any = js.native
+      override val ontransformnode: Any = js.native
       
       /** document that contains the node */
       /* CompleteClass */
@@ -265,11 +562,11 @@ object global {
       
       /** save the document to a specified destination */
       /* CompleteClass */
-      override def save(destination: js.Any): Unit = js.native
+      override def save(destination: Any): Unit = js.native
       
       /** The associated schema cache */
       /* CompleteClass */
-      var schemas: js.Any = js.native
+      var schemas: Any = js.native
       
       /** execute query on the subtree */
       /* CompleteClass */
@@ -281,7 +578,7 @@ object global {
       
       /** set the value of the named property */
       /* CompleteClass */
-      override def setProperty(name: String, value: js.Any): Unit = js.native
+      override def setProperty(name: String, value: Any): Unit = js.native
       
       /** indicates whether node is a default value */
       /* CompleteClass */
@@ -297,7 +594,7 @@ object global {
       
       /** apply the stylesheet to the subtree, returning the result through a document or a stream */
       /* CompleteClass */
-      override def transformNodeToObject(stylesheet: typings.activexMsxml2.MSXML2.IXMLDOMNode, outputObject: js.Any): Unit = js.native
+      override def transformNodeToObject(stylesheet: typings.activexMsxml2.MSXML2.IXMLDOMNode, outputObject: Any): Unit = js.native
       
       /** get the URL for the loaded XML document */
       /* CompleteClass */
@@ -323,7 +620,7 @@ object global {
     /** Free Threaded XML HTTP Request class 6.0 */
     @JSGlobal("MSXML2.FreeThreadedXMLHTTP60")
     @js.native
-    /* private */ class FreeThreadedXMLHTTP60 ()
+    /* private */ open class FreeThreadedXMLHTTP60 ()
       extends StObject
          with typings.activexMsxml2.MSXML2.FreeThreadedXMLHTTP60 {
       
@@ -373,7 +670,7 @@ object global {
     /** XML Schema */
     @JSGlobal("MSXML2.ISchema")
     @js.native
-    /* private */ class ISchema ()
+    /* private */ open class ISchema ()
       extends StObject
          with typings.activexMsxml2.MSXML2.ISchema {
       
@@ -448,13 +745,13 @@ object global {
       override val version: String = js.native
       
       /* CompleteClass */
-      override def writeAnnotation(annotationSink: js.Any): Boolean = js.native
+      override def writeAnnotation(annotationSink: Any): Boolean = js.native
     }
     
     /** XML Schema Item */
     @JSGlobal("MSXML2.ISchemaItem")
     @js.native
-    /* private */ class ISchemaItem ()
+    /* private */ open class ISchemaItem ()
       extends StObject
          with typings.activexMsxml2.MSXML2.ISchemaItem {
       
@@ -481,12 +778,12 @@ object global {
       override val unhandledAttributes: typings.activexMsxml2.MSXML2.IVBSAXAttributes = js.native
       
       /* CompleteClass */
-      override def writeAnnotation(annotationSink: js.Any): Boolean = js.native
+      override def writeAnnotation(annotationSink: Any): Boolean = js.native
     }
     
     @JSGlobal("MSXML2.ISequentialStream")
     @js.native
-    /* private */ class ISequentialStream ()
+    /* private */ open class ISequentialStream ()
       extends StObject
          with typings.activexMsxml2.MSXML2.ISequentialStream {
       
@@ -504,7 +801,7 @@ object global {
     /** IVBSAXAttributes interface */
     @JSGlobal("MSXML2.IVBSAXAttributes")
     @js.native
-    /* private */ class IVBSAXAttributes ()
+    /* private */ open class IVBSAXAttributes ()
       extends StObject
          with typings.activexMsxml2.MSXML2.IVBSAXAttributes {
       
@@ -564,7 +861,7 @@ object global {
     /** IVBSAXContentHandler interface */
     @JSGlobal("MSXML2.IVBSAXContentHandler")
     @js.native
-    /* private */ class IVBSAXContentHandler ()
+    /* private */ open class IVBSAXContentHandler ()
       extends StObject
          with typings.activexMsxml2.MSXML2.IVBSAXContentHandler {
       
@@ -625,7 +922,7 @@ object global {
     /** IVBSAXDTDHandler interface */
     @JSGlobal("MSXML2.IVBSAXDTDHandler")
     @js.native
-    /* private */ class IVBSAXDTDHandler ()
+    /* private */ open class IVBSAXDTDHandler ()
       extends StObject
          with typings.activexMsxml2.MSXML2.IVBSAXDTDHandler {
       
@@ -645,7 +942,7 @@ object global {
     /** IVBSAXEntityResolver interface */
     @JSGlobal("MSXML2.IVBSAXEntityResolver")
     @js.native
-    /* private */ class IVBSAXEntityResolver ()
+    /* private */ open class IVBSAXEntityResolver ()
       extends StObject
          with typings.activexMsxml2.MSXML2.IVBSAXEntityResolver {
       
@@ -655,13 +952,13 @@ object global {
       
       /** Allow the application to resolve external entities. */
       /* CompleteClass */
-      override def resolveEntity(strPublicId: String, strSystemId: String): js.Any = js.native
+      override def resolveEntity(strPublicId: String, strSystemId: String): Any = js.native
     }
     
     /** IVBSAXErrorHandler interface */
     @JSGlobal("MSXML2.IVBSAXErrorHandler")
     @js.native
-    /* private */ class IVBSAXErrorHandler ()
+    /* private */ open class IVBSAXErrorHandler ()
       extends StObject
          with typings.activexMsxml2.MSXML2.IVBSAXErrorHandler {
       
@@ -685,7 +982,7 @@ object global {
     /** IVBSAXLocator interface */
     @JSGlobal("MSXML2.IVBSAXLocator")
     @js.native
-    /* private */ class IVBSAXLocator ()
+    /* private */ open class IVBSAXLocator ()
       extends StObject
          with typings.activexMsxml2.MSXML2.IVBSAXLocator {
       
@@ -712,7 +1009,7 @@ object global {
     
     @JSGlobal("MSXML2.IXMLDOMAttribute")
     @js.native
-    /* private */ class IXMLDOMAttribute ()
+    /* private */ open class IXMLDOMAttribute ()
       extends StObject
          with typings.activexMsxml2.MSXML2.IXMLDOMAttribute {
       
@@ -751,7 +1048,7 @@ object global {
       
       /** the data type of the node */
       /* CompleteClass */
-      var dataType: js.Any = js.native
+      var dataType: Any = js.native
       
       /** pointer to the definition of the node in the DTD or schema */
       /* CompleteClass */
@@ -766,7 +1063,7 @@ object global {
       
       /** insert a child node */
       /* CompleteClass */
-      override def insertBefore(newChild: typings.activexMsxml2.MSXML2.IXMLDOMNode, refChild: js.Any): typings.activexMsxml2.MSXML2.IXMLDOMNode = js.native
+      override def insertBefore(newChild: typings.activexMsxml2.MSXML2.IXMLDOMNode, refChild: Any): typings.activexMsxml2.MSXML2.IXMLDOMNode = js.native
       
       /** last child of the node */
       /* CompleteClass */
@@ -798,11 +1095,11 @@ object global {
       
       /** get the strongly typed value of the node */
       /* CompleteClass */
-      var nodeTypedValue: js.Any = js.native
+      var nodeTypedValue: Any = js.native
       
       /** value stored in the node */
       /* CompleteClass */
-      var nodeValue: js.Any = js.native
+      var nodeValue: Any = js.native
       
       /** document that contains the node */
       /* CompleteClass */
@@ -857,11 +1154,11 @@ object global {
       
       /** apply the stylesheet to the subtree, returning the result through a document or a stream */
       /* CompleteClass */
-      override def transformNodeToObject(stylesheet: typings.activexMsxml2.MSXML2.IXMLDOMNode, outputObject: js.Any): Unit = js.native
+      override def transformNodeToObject(stylesheet: typings.activexMsxml2.MSXML2.IXMLDOMNode, outputObject: Any): Unit = js.native
       
       /** string value of the attribute */
       /* CompleteClass */
-      var value: js.Any = js.native
+      var value: Any = js.native
       
       /** return the XML source for the node and each of its descendants */
       /* CompleteClass */
@@ -870,7 +1167,7 @@ object global {
     
     @JSGlobal("MSXML2.IXMLDOMCDATASection")
     @js.native
-    /* private */ class IXMLDOMCDATASection ()
+    /* private */ open class IXMLDOMCDATASection ()
       extends StObject
          with typings.activexMsxml2.MSXML2.IXMLDOMCDATASection {
       
@@ -917,7 +1214,7 @@ object global {
       
       /** the data type of the node */
       /* CompleteClass */
-      var dataType: js.Any = js.native
+      var dataType: Any = js.native
       
       /** pointer to the definition of the node in the DTD or schema */
       /* CompleteClass */
@@ -936,7 +1233,7 @@ object global {
       
       /** insert a child node */
       /* CompleteClass */
-      override def insertBefore(newChild: typings.activexMsxml2.MSXML2.IXMLDOMNode, refChild: js.Any): typings.activexMsxml2.MSXML2.IXMLDOMNode = js.native
+      override def insertBefore(newChild: typings.activexMsxml2.MSXML2.IXMLDOMNode, refChild: Any): typings.activexMsxml2.MSXML2.IXMLDOMNode = js.native
       
       /** insert string into value */
       /* CompleteClass */
@@ -972,11 +1269,11 @@ object global {
       
       /** get the strongly typed value of the node */
       /* CompleteClass */
-      var nodeTypedValue: js.Any = js.native
+      var nodeTypedValue: Any = js.native
       
       /** value stored in the node */
       /* CompleteClass */
-      var nodeValue: js.Any = js.native
+      var nodeValue: Any = js.native
       
       /** document that contains the node */
       /* CompleteClass */
@@ -1043,7 +1340,7 @@ object global {
       
       /** apply the stylesheet to the subtree, returning the result through a document or a stream */
       /* CompleteClass */
-      override def transformNodeToObject(stylesheet: typings.activexMsxml2.MSXML2.IXMLDOMNode, outputObject: js.Any): Unit = js.native
+      override def transformNodeToObject(stylesheet: typings.activexMsxml2.MSXML2.IXMLDOMNode, outputObject: Any): Unit = js.native
       
       /** return the XML source for the node and each of its descendants */
       /* CompleteClass */
@@ -1052,7 +1349,7 @@ object global {
     
     @JSGlobal("MSXML2.IXMLDOMComment")
     @js.native
-    /* private */ class IXMLDOMComment ()
+    /* private */ open class IXMLDOMComment ()
       extends StObject
          with typings.activexMsxml2.MSXML2.IXMLDOMComment {
       
@@ -1099,7 +1396,7 @@ object global {
       
       /** the data type of the node */
       /* CompleteClass */
-      var dataType: js.Any = js.native
+      var dataType: Any = js.native
       
       /** pointer to the definition of the node in the DTD or schema */
       /* CompleteClass */
@@ -1118,7 +1415,7 @@ object global {
       
       /** insert a child node */
       /* CompleteClass */
-      override def insertBefore(newChild: typings.activexMsxml2.MSXML2.IXMLDOMNode, refChild: js.Any): typings.activexMsxml2.MSXML2.IXMLDOMNode = js.native
+      override def insertBefore(newChild: typings.activexMsxml2.MSXML2.IXMLDOMNode, refChild: Any): typings.activexMsxml2.MSXML2.IXMLDOMNode = js.native
       
       /** insert string into value */
       /* CompleteClass */
@@ -1154,11 +1451,11 @@ object global {
       
       /** get the strongly typed value of the node */
       /* CompleteClass */
-      var nodeTypedValue: js.Any = js.native
+      var nodeTypedValue: Any = js.native
       
       /** value stored in the node */
       /* CompleteClass */
-      var nodeValue: js.Any = js.native
+      var nodeValue: Any = js.native
       
       /** document that contains the node */
       /* CompleteClass */
@@ -1221,7 +1518,7 @@ object global {
       
       /** apply the stylesheet to the subtree, returning the result through a document or a stream */
       /* CompleteClass */
-      override def transformNodeToObject(stylesheet: typings.activexMsxml2.MSXML2.IXMLDOMNode, outputObject: js.Any): Unit = js.native
+      override def transformNodeToObject(stylesheet: typings.activexMsxml2.MSXML2.IXMLDOMNode, outputObject: Any): Unit = js.native
       
       /** return the XML source for the node and each of its descendants */
       /* CompleteClass */
@@ -1230,7 +1527,7 @@ object global {
     
     @JSGlobal("MSXML2.IXMLDOMDocument")
     @js.native
-    /* private */ class IXMLDOMDocument ()
+    /* private */ open class IXMLDOMDocument ()
       extends StObject
          with typings.activexMsxml2.MSXML2.IXMLDOMDocument {
       
@@ -1301,7 +1598,7 @@ object global {
       
       /** create a node of the specified node type and name */
       /* CompleteClass */
-      override def createNode(`type`: js.Any, name: String, namespaceURI: String): typings.activexMsxml2.MSXML2.IXMLDOMNode = js.native
+      override def createNode(`type`: Any, name: String, namespaceURI: String): typings.activexMsxml2.MSXML2.IXMLDOMNode = js.native
       
       /** create a processing instruction node */
       /* CompleteClass */
@@ -1313,7 +1610,7 @@ object global {
       
       /** the data type of the node */
       /* CompleteClass */
-      var dataType: js.Any = js.native
+      var dataType: Any = js.native
       
       /** pointer to the definition of the node in the DTD or schema */
       /* CompleteClass */
@@ -1344,7 +1641,7 @@ object global {
       
       /** insert a child node */
       /* CompleteClass */
-      override def insertBefore(newChild: typings.activexMsxml2.MSXML2.IXMLDOMNode, refChild: js.Any): typings.activexMsxml2.MSXML2.IXMLDOMNode = js.native
+      override def insertBefore(newChild: typings.activexMsxml2.MSXML2.IXMLDOMNode, refChild: Any): typings.activexMsxml2.MSXML2.IXMLDOMNode = js.native
       
       /** last child of the node */
       /* CompleteClass */
@@ -1352,7 +1649,7 @@ object global {
       
       /** load document from the specified XML source */
       /* CompleteClass */
-      override def load(xmlSource: js.Any): Boolean = js.native
+      override def load(xmlSource: Any): Boolean = js.native
       
       /** load the document from a string */
       /* CompleteClass */
@@ -1384,23 +1681,23 @@ object global {
       
       /** get the strongly typed value of the node */
       /* CompleteClass */
-      var nodeTypedValue: js.Any = js.native
+      var nodeTypedValue: Any = js.native
       
       /** value stored in the node */
       /* CompleteClass */
-      var nodeValue: js.Any = js.native
+      var nodeValue: Any = js.native
       
       /** register an ondataavailable event handler */
       /* CompleteClass */
-      override val ondataavailable: js.Any = js.native
+      override val ondataavailable: Any = js.native
       
       /** register a readystatechange event handler */
       /* CompleteClass */
-      override val onreadystatechange: js.Any = js.native
+      override val onreadystatechange: Any = js.native
       
       /** register an ontransformnode event handler */
       /* CompleteClass */
-      override val ontransformnode: js.Any = js.native
+      override val ontransformnode: Any = js.native
       
       /** document that contains the node */
       /* CompleteClass */
@@ -1451,7 +1748,7 @@ object global {
       
       /** save the document to a specified destination */
       /* CompleteClass */
-      override def save(destination: js.Any): Unit = js.native
+      override def save(destination: Any): Unit = js.native
       
       /** execute query on the subtree */
       /* CompleteClass */
@@ -1475,7 +1772,7 @@ object global {
       
       /** apply the stylesheet to the subtree, returning the result through a document or a stream */
       /* CompleteClass */
-      override def transformNodeToObject(stylesheet: typings.activexMsxml2.MSXML2.IXMLDOMNode, outputObject: js.Any): Unit = js.native
+      override def transformNodeToObject(stylesheet: typings.activexMsxml2.MSXML2.IXMLDOMNode, outputObject: Any): Unit = js.native
       
       /** get the URL for the loaded XML document */
       /* CompleteClass */
@@ -1492,7 +1789,7 @@ object global {
     
     @JSGlobal("MSXML2.IXMLDOMDocumentFragment")
     @js.native
-    /* private */ class IXMLDOMDocumentFragment ()
+    /* private */ open class IXMLDOMDocumentFragment ()
       extends StObject
          with typings.activexMsxml2.MSXML2.IXMLDOMDocumentFragment {
       
@@ -1531,7 +1828,7 @@ object global {
       
       /** the data type of the node */
       /* CompleteClass */
-      var dataType: js.Any = js.native
+      var dataType: Any = js.native
       
       /** pointer to the definition of the node in the DTD or schema */
       /* CompleteClass */
@@ -1546,7 +1843,7 @@ object global {
       
       /** insert a child node */
       /* CompleteClass */
-      override def insertBefore(newChild: typings.activexMsxml2.MSXML2.IXMLDOMNode, refChild: js.Any): typings.activexMsxml2.MSXML2.IXMLDOMNode = js.native
+      override def insertBefore(newChild: typings.activexMsxml2.MSXML2.IXMLDOMNode, refChild: Any): typings.activexMsxml2.MSXML2.IXMLDOMNode = js.native
       
       /** last child of the node */
       /* CompleteClass */
@@ -1574,11 +1871,11 @@ object global {
       
       /** get the strongly typed value of the node */
       /* CompleteClass */
-      var nodeTypedValue: js.Any = js.native
+      var nodeTypedValue: Any = js.native
       
       /** value stored in the node */
       /* CompleteClass */
-      var nodeValue: js.Any = js.native
+      var nodeValue: Any = js.native
       
       /** document that contains the node */
       /* CompleteClass */
@@ -1633,7 +1930,7 @@ object global {
       
       /** apply the stylesheet to the subtree, returning the result through a document or a stream */
       /* CompleteClass */
-      override def transformNodeToObject(stylesheet: typings.activexMsxml2.MSXML2.IXMLDOMNode, outputObject: js.Any): Unit = js.native
+      override def transformNodeToObject(stylesheet: typings.activexMsxml2.MSXML2.IXMLDOMNode, outputObject: Any): Unit = js.native
       
       /** return the XML source for the node and each of its descendants */
       /* CompleteClass */
@@ -1642,7 +1939,7 @@ object global {
     
     @JSGlobal("MSXML2.IXMLDOMDocumentType")
     @js.native
-    /* private */ class IXMLDOMDocumentType ()
+    /* private */ open class IXMLDOMDocumentType ()
       extends StObject
          with typings.activexMsxml2.MSXML2.IXMLDOMDocumentType {
       
@@ -1681,7 +1978,7 @@ object global {
       
       /** the data type of the node */
       /* CompleteClass */
-      var dataType: js.Any = js.native
+      var dataType: Any = js.native
       
       /** pointer to the definition of the node in the DTD or schema */
       /* CompleteClass */
@@ -1705,7 +2002,7 @@ object global {
       
       /** insert a child node */
       /* CompleteClass */
-      override def insertBefore(newChild: typings.activexMsxml2.MSXML2.IXMLDOMNode, refChild: js.Any): typings.activexMsxml2.MSXML2.IXMLDOMNode = js.native
+      override def insertBefore(newChild: typings.activexMsxml2.MSXML2.IXMLDOMNode, refChild: Any): typings.activexMsxml2.MSXML2.IXMLDOMNode = js.native
       
       /** last child of the node */
       /* CompleteClass */
@@ -1737,11 +2034,11 @@ object global {
       
       /** get the strongly typed value of the node */
       /* CompleteClass */
-      var nodeTypedValue: js.Any = js.native
+      var nodeTypedValue: Any = js.native
       
       /** value stored in the node */
       /* CompleteClass */
-      var nodeValue: js.Any = js.native
+      var nodeValue: Any = js.native
       
       /** collection of nodes */
       /** a list of notations in the document */
@@ -1805,7 +2102,7 @@ object global {
       
       /** apply the stylesheet to the subtree, returning the result through a document or a stream */
       /* CompleteClass */
-      override def transformNodeToObject(stylesheet: typings.activexMsxml2.MSXML2.IXMLDOMNode, outputObject: js.Any): Unit = js.native
+      override def transformNodeToObject(stylesheet: typings.activexMsxml2.MSXML2.IXMLDOMNode, outputObject: Any): Unit = js.native
       
       /** return the XML source for the node and each of its descendants */
       /* CompleteClass */
@@ -1814,7 +2111,7 @@ object global {
     
     @JSGlobal("MSXML2.IXMLDOMElement")
     @js.native
-    /* private */ class IXMLDOMElement ()
+    /* private */ open class IXMLDOMElement ()
       extends StObject
          with typings.activexMsxml2.MSXML2.IXMLDOMElement {
       
@@ -1853,7 +2150,7 @@ object global {
       
       /** the data type of the node */
       /* CompleteClass */
-      var dataType: js.Any = js.native
+      var dataType: Any = js.native
       
       /** pointer to the definition of the node in the DTD or schema */
       /* CompleteClass */
@@ -1865,7 +2162,7 @@ object global {
       
       /** look up the string value of an attribute by name */
       /* CompleteClass */
-      override def getAttribute(name: String): js.Any = js.native
+      override def getAttribute(name: String): Any = js.native
       
       /** look up the attribute node by name */
       /* CompleteClass */
@@ -1880,7 +2177,7 @@ object global {
       
       /** insert a child node */
       /* CompleteClass */
-      override def insertBefore(newChild: typings.activexMsxml2.MSXML2.IXMLDOMNode, refChild: js.Any): typings.activexMsxml2.MSXML2.IXMLDOMNode = js.native
+      override def insertBefore(newChild: typings.activexMsxml2.MSXML2.IXMLDOMNode, refChild: Any): typings.activexMsxml2.MSXML2.IXMLDOMNode = js.native
       
       /** last child of the node */
       /* CompleteClass */
@@ -1908,11 +2205,11 @@ object global {
       
       /** get the strongly typed value of the node */
       /* CompleteClass */
-      var nodeTypedValue: js.Any = js.native
+      var nodeTypedValue: Any = js.native
       
       /** value stored in the node */
       /* CompleteClass */
-      var nodeValue: js.Any = js.native
+      var nodeValue: Any = js.native
       
       /** collapse all adjacent text nodes in sub-tree */
       /* CompleteClass */
@@ -1967,7 +2264,7 @@ object global {
       
       /** set the string value of an attribute by name */
       /* CompleteClass */
-      override def setAttribute(name: String, value: js.Any): Unit = js.native
+      override def setAttribute(name: String, value: Any): Unit = js.native
       
       /** set the specified attribute on the element */
       /* CompleteClass */
@@ -1991,7 +2288,7 @@ object global {
       
       /** apply the stylesheet to the subtree, returning the result through a document or a stream */
       /* CompleteClass */
-      override def transformNodeToObject(stylesheet: typings.activexMsxml2.MSXML2.IXMLDOMNode, outputObject: js.Any): Unit = js.native
+      override def transformNodeToObject(stylesheet: typings.activexMsxml2.MSXML2.IXMLDOMNode, outputObject: Any): Unit = js.native
       
       /** return the XML source for the node and each of its descendants */
       /* CompleteClass */
@@ -2000,7 +2297,7 @@ object global {
     
     @JSGlobal("MSXML2.IXMLDOMEntityReference")
     @js.native
-    /* private */ class IXMLDOMEntityReference ()
+    /* private */ open class IXMLDOMEntityReference ()
       extends StObject
          with typings.activexMsxml2.MSXML2.IXMLDOMEntityReference {
       
@@ -2039,7 +2336,7 @@ object global {
       
       /** the data type of the node */
       /* CompleteClass */
-      var dataType: js.Any = js.native
+      var dataType: Any = js.native
       
       /** pointer to the definition of the node in the DTD or schema */
       /* CompleteClass */
@@ -2054,7 +2351,7 @@ object global {
       
       /** insert a child node */
       /* CompleteClass */
-      override def insertBefore(newChild: typings.activexMsxml2.MSXML2.IXMLDOMNode, refChild: js.Any): typings.activexMsxml2.MSXML2.IXMLDOMNode = js.native
+      override def insertBefore(newChild: typings.activexMsxml2.MSXML2.IXMLDOMNode, refChild: Any): typings.activexMsxml2.MSXML2.IXMLDOMNode = js.native
       
       /** last child of the node */
       /* CompleteClass */
@@ -2082,11 +2379,11 @@ object global {
       
       /** get the strongly typed value of the node */
       /* CompleteClass */
-      var nodeTypedValue: js.Any = js.native
+      var nodeTypedValue: Any = js.native
       
       /** value stored in the node */
       /* CompleteClass */
-      var nodeValue: js.Any = js.native
+      var nodeValue: Any = js.native
       
       /** document that contains the node */
       /* CompleteClass */
@@ -2141,7 +2438,7 @@ object global {
       
       /** apply the stylesheet to the subtree, returning the result through a document or a stream */
       /* CompleteClass */
-      override def transformNodeToObject(stylesheet: typings.activexMsxml2.MSXML2.IXMLDOMNode, outputObject: js.Any): Unit = js.native
+      override def transformNodeToObject(stylesheet: typings.activexMsxml2.MSXML2.IXMLDOMNode, outputObject: Any): Unit = js.native
       
       /** return the XML source for the node and each of its descendants */
       /* CompleteClass */
@@ -2150,7 +2447,7 @@ object global {
     
     @JSGlobal("MSXML2.IXMLDOMImplementation")
     @js.native
-    /* private */ class IXMLDOMImplementation ()
+    /* private */ open class IXMLDOMImplementation ()
       extends StObject
          with typings.activexMsxml2.MSXML2.IXMLDOMImplementation {
       
@@ -2165,7 +2462,7 @@ object global {
     /** Core DOM node interface */
     @JSGlobal("MSXML2.IXMLDOMNode")
     @js.native
-    /* private */ class IXMLDOMNode ()
+    /* private */ open class IXMLDOMNode ()
       extends StObject
          with typings.activexMsxml2.MSXML2.IXMLDOMNode {
       
@@ -2204,7 +2501,7 @@ object global {
       
       /** the data type of the node */
       /* CompleteClass */
-      var dataType: js.Any = js.native
+      var dataType: Any = js.native
       
       /** pointer to the definition of the node in the DTD or schema */
       /* CompleteClass */
@@ -2219,7 +2516,7 @@ object global {
       
       /** insert a child node */
       /* CompleteClass */
-      override def insertBefore(newChild: typings.activexMsxml2.MSXML2.IXMLDOMNode, refChild: js.Any): typings.activexMsxml2.MSXML2.IXMLDOMNode = js.native
+      override def insertBefore(newChild: typings.activexMsxml2.MSXML2.IXMLDOMNode, refChild: Any): typings.activexMsxml2.MSXML2.IXMLDOMNode = js.native
       
       /** last child of the node */
       /* CompleteClass */
@@ -2247,11 +2544,11 @@ object global {
       
       /** get the strongly typed value of the node */
       /* CompleteClass */
-      var nodeTypedValue: js.Any = js.native
+      var nodeTypedValue: Any = js.native
       
       /** value stored in the node */
       /* CompleteClass */
-      var nodeValue: js.Any = js.native
+      var nodeValue: Any = js.native
       
       /** document that contains the node */
       /* CompleteClass */
@@ -2306,7 +2603,7 @@ object global {
       
       /** apply the stylesheet to the subtree, returning the result through a document or a stream */
       /* CompleteClass */
-      override def transformNodeToObject(stylesheet: typings.activexMsxml2.MSXML2.IXMLDOMNode, outputObject: js.Any): Unit = js.native
+      override def transformNodeToObject(stylesheet: typings.activexMsxml2.MSXML2.IXMLDOMNode, outputObject: Any): Unit = js.native
       
       /** return the XML source for the node and each of its descendants */
       /* CompleteClass */
@@ -2316,7 +2613,7 @@ object global {
     /** structure for reporting parser errors */
     @JSGlobal("MSXML2.IXMLDOMParseError")
     @js.native
-    /* private */ class IXMLDOMParseError ()
+    /* private */ open class IXMLDOMParseError ()
       extends StObject
          with typings.activexMsxml2.MSXML2.IXMLDOMParseError {
       
@@ -2355,7 +2652,7 @@ object global {
     
     @JSGlobal("MSXML2.IXMLDOMProcessingInstruction")
     @js.native
-    /* private */ class IXMLDOMProcessingInstruction ()
+    /* private */ open class IXMLDOMProcessingInstruction ()
       extends StObject
          with typings.activexMsxml2.MSXML2.IXMLDOMProcessingInstruction {
       
@@ -2398,7 +2695,7 @@ object global {
       
       /** the data type of the node */
       /* CompleteClass */
-      var dataType: js.Any = js.native
+      var dataType: Any = js.native
       
       /** pointer to the definition of the node in the DTD or schema */
       /* CompleteClass */
@@ -2413,7 +2710,7 @@ object global {
       
       /** insert a child node */
       /* CompleteClass */
-      override def insertBefore(newChild: typings.activexMsxml2.MSXML2.IXMLDOMNode, refChild: js.Any): typings.activexMsxml2.MSXML2.IXMLDOMNode = js.native
+      override def insertBefore(newChild: typings.activexMsxml2.MSXML2.IXMLDOMNode, refChild: Any): typings.activexMsxml2.MSXML2.IXMLDOMNode = js.native
       
       /** last child of the node */
       /* CompleteClass */
@@ -2441,11 +2738,11 @@ object global {
       
       /** get the strongly typed value of the node */
       /* CompleteClass */
-      var nodeTypedValue: js.Any = js.native
+      var nodeTypedValue: Any = js.native
       
       /** value stored in the node */
       /* CompleteClass */
-      var nodeValue: js.Any = js.native
+      var nodeValue: Any = js.native
       
       /** document that contains the node */
       /* CompleteClass */
@@ -2504,7 +2801,7 @@ object global {
       
       /** apply the stylesheet to the subtree, returning the result through a document or a stream */
       /* CompleteClass */
-      override def transformNodeToObject(stylesheet: typings.activexMsxml2.MSXML2.IXMLDOMNode, outputObject: js.Any): Unit = js.native
+      override def transformNodeToObject(stylesheet: typings.activexMsxml2.MSXML2.IXMLDOMNode, outputObject: Any): Unit = js.native
       
       /** return the XML source for the node and each of its descendants */
       /* CompleteClass */
@@ -2513,7 +2810,7 @@ object global {
     
     @JSGlobal("MSXML2.IXMLDOMText")
     @js.native
-    /* private */ class IXMLDOMText ()
+    /* private */ open class IXMLDOMText ()
       extends StObject
          with typings.activexMsxml2.MSXML2.IXMLDOMText {
       
@@ -2560,7 +2857,7 @@ object global {
       
       /** the data type of the node */
       /* CompleteClass */
-      var dataType: js.Any = js.native
+      var dataType: Any = js.native
       
       /** pointer to the definition of the node in the DTD or schema */
       /* CompleteClass */
@@ -2579,7 +2876,7 @@ object global {
       
       /** insert a child node */
       /* CompleteClass */
-      override def insertBefore(newChild: typings.activexMsxml2.MSXML2.IXMLDOMNode, refChild: js.Any): typings.activexMsxml2.MSXML2.IXMLDOMNode = js.native
+      override def insertBefore(newChild: typings.activexMsxml2.MSXML2.IXMLDOMNode, refChild: Any): typings.activexMsxml2.MSXML2.IXMLDOMNode = js.native
       
       /** insert string into value */
       /* CompleteClass */
@@ -2615,11 +2912,11 @@ object global {
       
       /** get the strongly typed value of the node */
       /* CompleteClass */
-      var nodeTypedValue: js.Any = js.native
+      var nodeTypedValue: Any = js.native
       
       /** value stored in the node */
       /* CompleteClass */
-      var nodeValue: js.Any = js.native
+      var nodeValue: Any = js.native
       
       /** document that contains the node */
       /* CompleteClass */
@@ -2686,7 +2983,7 @@ object global {
       
       /** apply the stylesheet to the subtree, returning the result through a document or a stream */
       /* CompleteClass */
-      override def transformNodeToObject(stylesheet: typings.activexMsxml2.MSXML2.IXMLDOMNode, outputObject: js.Any): Unit = js.native
+      override def transformNodeToObject(stylesheet: typings.activexMsxml2.MSXML2.IXMLDOMNode, outputObject: Any): Unit = js.native
       
       /** return the XML source for the node and each of its descendants */
       /* CompleteClass */
@@ -2696,7 +2993,7 @@ object global {
     /** IXMLHTTPRequest2Callback Interface */
     @JSGlobal("MSXML2.IXMLHTTPRequest2Callback")
     @js.native
-    /* private */ class IXMLHTTPRequest2Callback ()
+    /* private */ open class IXMLHTTPRequest2Callback ()
       extends StObject
          with typings.activexMsxml2.MSXML2.IXMLHTTPRequest2Callback {
       
@@ -2729,14 +3026,14 @@ object global {
     /** IXSLProcessor Interface */
     @JSGlobal("MSXML2.IXSLProcessor")
     @js.native
-    /* private */ class IXSLProcessor ()
+    /* private */ open class IXSLProcessor ()
       extends StObject
          with typings.activexMsxml2.MSXML2.IXSLProcessor
     
     /** Microsoft HTML Writer 6.0 */
     @JSGlobal("MSXML2.MXHTMLWriter60")
     @js.native
-    /* private */ class MXHTMLWriter60 ()
+    /* private */ open class MXHTMLWriter60 ()
       extends StObject
          with typings.activexMsxml2.MSXML2.MXHTMLWriter60 {
       
@@ -2770,7 +3067,7 @@ object global {
       
       /** Set or get the output. */
       /* CompleteClass */
-      var output: js.Any = js.native
+      var output: Any = js.native
       
       /** Set or get the standalone document declaration. */
       /* CompleteClass */
@@ -2784,14 +3081,14 @@ object global {
     /** MX Namespace Manager 6.0 */
     @JSGlobal("MSXML2.MXNamespaceManager60")
     @js.native
-    /* private */ class MXNamespaceManager60 ()
+    /* private */ open class MXNamespaceManager60 ()
       extends StObject
          with typings.activexMsxml2.MSXML2.MXNamespaceManager60
     
     /** Microsoft XML Writer 6.0 */
     @JSGlobal("MSXML2.MXXMLWriter60")
     @js.native
-    /* private */ class MXXMLWriter60 ()
+    /* private */ open class MXXMLWriter60 ()
       extends StObject
          with typings.activexMsxml2.MSXML2.MXXMLWriter60 {
       
@@ -2825,7 +3122,7 @@ object global {
       
       /** Set or get the output. */
       /* CompleteClass */
-      var output: js.Any = js.native
+      var output: Any = js.native
       
       /** Set or get the standalone document declaration. */
       /* CompleteClass */
@@ -2839,7 +3136,7 @@ object global {
     /** SAX Attributes 6.0 */
     @JSGlobal("MSXML2.SAXAttributes60")
     @js.native
-    /* private */ class SAXAttributes60 ()
+    /* private */ open class SAXAttributes60 ()
       extends StObject
          with typings.activexMsxml2.MSXML2.SAXAttributes60 {
       
@@ -2853,7 +3150,7 @@ object global {
       
       /** Add an attribute, whose value is equal to the indexed attribute in the input attributes object, to the end of the list. */
       /* CompleteClass */
-      override def addAttributeFromIndex(varAtts: js.Any, nIndex: Double): Unit = js.native
+      override def addAttributeFromIndex(varAtts: Any, nIndex: Double): Unit = js.native
       
       /** Clear the attribute list for reuse. */
       /* CompleteClass */
@@ -2876,7 +3173,7 @@ object global {
       
       /** Copy an entire Attributes object. */
       /* CompleteClass */
-      override def setAttributes(varAtts: js.Any): Unit = js.native
+      override def setAttributes(varAtts: Any): Unit = js.native
       
       /** Set the local name of a specific attribute. */
       /* CompleteClass */
@@ -2902,28 +3199,28 @@ object global {
     /** SAX XML Reader 6.0 */
     @JSGlobal("MSXML2.SAXXMLReader60")
     @js.native
-    /* private */ class SAXXMLReader60 ()
+    /* private */ open class SAXXMLReader60 ()
       extends StObject
          with typings.activexMsxml2.MSXML2.SAXXMLReader60
     
     /** Server XML HTTP Request 6.0  */
     @JSGlobal("MSXML2.ServerXMLHTTP60")
     @js.native
-    /* private */ class ServerXMLHTTP60 ()
+    /* private */ open class ServerXMLHTTP60 ()
       extends StObject
          with typings.activexMsxml2.MSXML2.ServerXMLHTTP60
     
     /** XML HTTP Request class 6.0 */
     @JSGlobal("MSXML2.XMLHTTP60")
     @js.native
-    /* private */ class XMLHTTP60 ()
+    /* private */ open class XMLHTTP60 ()
       extends StObject
          with typings.activexMsxml2.MSXML2.XMLHTTP60
     
     /** XSL Stylesheet Cache 6.0 */
     @JSGlobal("MSXML2.XSLTemplate60")
     @js.native
-    /* private */ class XSLTemplate60 ()
+    /* private */ open class XSLTemplate60 ()
       extends StObject
          with typings.activexMsxml2.MSXML2.XSLTemplate60 {
       

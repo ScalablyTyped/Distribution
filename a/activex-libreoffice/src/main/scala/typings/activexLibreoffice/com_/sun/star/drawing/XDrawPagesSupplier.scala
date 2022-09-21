@@ -23,7 +23,7 @@ object XDrawPagesSupplier {
     DrawPages: XDrawPages,
     acquire: () => Unit,
     getDrawPages: () => XDrawPages,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XDrawPagesSupplier = {
     val __obj = js.Dynamic.literal(DrawPages = DrawPages.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getDrawPages = js.Any.fromFunction0(getDrawPages), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

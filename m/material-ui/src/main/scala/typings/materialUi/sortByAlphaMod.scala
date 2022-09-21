@@ -10,10 +10,10 @@ object sortByAlphaMod {
   
   @JSImport("material-ui/svg-icons/av/sort-by-alpha", JSImport.Default)
   @js.native
-  class default () extends AvSortByAlpha
+  open class default () extends AvSortByAlpha
   
   @JSImport("material-ui/svg-icons/av/sort-by-alpha", "AvSortByAlpha")
   @js.native
-  class AvSortByAlpha ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvSortByAlpha ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

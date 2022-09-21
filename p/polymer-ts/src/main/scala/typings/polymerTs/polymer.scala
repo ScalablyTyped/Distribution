@@ -20,11 +20,11 @@ object polymer {
        with Element {
     
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
     
     var is: String = js.native
     
@@ -40,9 +40,7 @@ object polymer {
     
     var attached: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var attributeChanged: js.UndefOr[
-        js.Function3[/* attrName */ String, /* oldVal */ js.Any, /* newVal */ js.Any, Unit]
-      ] = js.undefined
+    var attributeChanged: js.UndefOr[js.Function3[/* attrName */ String, /* oldVal */ Any, /* newVal */ Any, Unit]] = js.undefined
     
     var behaviors: js.UndefOr[js.Array[js.Object]] = js.undefined
     
@@ -50,7 +48,7 @@ object polymer {
     
     var detached: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var factoryImpl: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+    var factoryImpl: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
     
     var listeners: js.UndefOr[js.Object] = js.undefined
     
@@ -73,7 +71,7 @@ object polymer {
       
       inline def setAttachedUndefined: Self = StObject.set(x, "attached", js.undefined)
       
-      inline def setAttributeChanged(value: (/* attrName */ String, /* oldVal */ js.Any, /* newVal */ js.Any) => Unit): Self = StObject.set(x, "attributeChanged", js.Any.fromFunction3(value))
+      inline def setAttributeChanged(value: (/* attrName */ String, /* oldVal */ Any, /* newVal */ Any) => Unit): Self = StObject.set(x, "attributeChanged", js.Any.fromFunction3(value))
       
       inline def setAttributeChangedUndefined: Self = StObject.set(x, "attributeChanged", js.undefined)
       
@@ -81,7 +79,7 @@ object polymer {
       
       inline def setBehaviorsUndefined: Self = StObject.set(x, "behaviors", js.undefined)
       
-      inline def setBehaviorsVarargs(value: js.Object*): Self = StObject.set(x, "behaviors", js.Array(value :_*))
+      inline def setBehaviorsVarargs(value: js.Object*): Self = StObject.set(x, "behaviors", js.Array(value*))
       
       inline def setCreated(value: () => Unit): Self = StObject.set(x, "created", js.Any.fromFunction0(value))
       
@@ -91,7 +89,7 @@ object polymer {
       
       inline def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
       
-      inline def setFactoryImpl(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "factoryImpl", js.Any.fromFunction1(value))
+      inline def setFactoryImpl(value: /* repeated */ Any => Unit): Self = StObject.set(x, "factoryImpl", js.Any.fromFunction1(value))
       
       inline def setFactoryImplUndefined: Self = StObject.set(x, "factoryImpl", js.undefined)
       
@@ -103,7 +101,7 @@ object polymer {
       
       inline def setObserversUndefined: Self = StObject.set(x, "observers", js.undefined)
       
-      inline def setObserversVarargs(value: String*): Self = StObject.set(x, "observers", js.Array(value :_*))
+      inline def setObserversVarargs(value: String*): Self = StObject.set(x, "observers", js.Array(value*))
       
       inline def setProperties(value: js.Object): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
@@ -152,23 +150,23 @@ object polymer {
        with HTMLElement {
     
     @JSName("$")
-    var $: js.Any = js.native
+    var $: Any = js.native
     
     @JSName("$$")
-    var DollarDollar: js.Any = js.native
+    var DollarDollar: Any = js.native
     
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
     /* InferMemberOverrides */
-    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
     
-    def arrayDelete(path: String, item: String): js.Any = js.native
-    def arrayDelete(path: String, item: js.Any): js.Any = js.native
+    def arrayDelete(path: String, item: String): Any = js.native
+    def arrayDelete(path: String, item: Any): Any = js.native
     
-    def async(callback: js.Function): js.Any = js.native
-    def async(callback: js.Function, waitTime: Double): js.Any = js.native
+    def async(callback: js.Function): Any = js.native
+    def async(callback: js.Function, waitTime: Double): Any = js.native
     
     def attachedCallback(): Unit = js.native
     
@@ -188,44 +186,44 @@ object polymer {
     def debounce(jobName: String, callback: js.Function): Unit = js.native
     def debounce(jobName: String, callback: js.Function, wait: Double): Unit = js.native
     
-    def deserialize(value: String, `type`: js.Any): js.Any = js.native
+    def deserialize(value: String, `type`: Any): Any = js.native
     
     def distributeContent(): Unit = js.native
     
     def domHost(): Unit = js.native
     
-    def elementMatches(selector: String, node: Element): js.Any = js.native
+    def elementMatches(selector: String, node: Element): Any = js.native
     
-    def fire(`type`: String): js.Any = js.native
-    def fire(`type`: String, detail: js.Object): js.Any = js.native
-    def fire(`type`: String, detail: js.Object, options: FireOptions): js.Any = js.native
-    def fire(`type`: String, detail: Unit, options: FireOptions): js.Any = js.native
+    def fire(`type`: String): Any = js.native
+    def fire(`type`: String, detail: js.Object): Any = js.native
+    def fire(`type`: String, detail: js.Object, options: FireOptions): Any = js.native
+    def fire(`type`: String, detail: Unit, options: FireOptions): Any = js.native
     
     def flushDebouncer(jobName: String): Unit = js.native
     
-    def get(path: String): js.Any = js.native
-    def get(path: js.Array[String | Double]): js.Any = js.native
+    def get(path: String): Any = js.native
+    def get(path: js.Array[String | Double]): Any = js.native
     
-    def getContentChildNodes(slctr: String): js.Any = js.native
+    def getContentChildNodes(slctr: String): Any = js.native
     
-    def getContentChildren(slctr: String): js.Any = js.native
+    def getContentChildren(slctr: String): Any = js.native
     
-    def getNativePrototype(tag: String): js.Any = js.native
+    def getNativePrototype(tag: String): Any = js.native
     
-    def getPropertyInfo(property: String): js.Any = js.native
+    def getPropertyInfo(property: String): Any = js.native
     
-    def importHref(href: String): js.Any = js.native
-    def importHref(href: String, onload: js.Function): js.Any = js.native
-    def importHref(href: String, onload: js.Function, onerror: js.Function): js.Any = js.native
-    def importHref(href: String, onload: js.Function, onerror: js.Function, optAsync: Boolean): js.Any = js.native
-    def importHref(href: String, onload: js.Function, onerror: Unit, optAsync: Boolean): js.Any = js.native
-    def importHref(href: String, onload: Unit, onerror: js.Function): js.Any = js.native
-    def importHref(href: String, onload: Unit, onerror: js.Function, optAsync: Boolean): js.Any = js.native
-    def importHref(href: String, onload: Unit, onerror: Unit, optAsync: Boolean): js.Any = js.native
+    def importHref(href: String): Any = js.native
+    def importHref(href: String, onload: js.Function): Any = js.native
+    def importHref(href: String, onload: js.Function, onerror: js.Function): Any = js.native
+    def importHref(href: String, onload: js.Function, onerror: js.Function, optAsync: Boolean): Any = js.native
+    def importHref(href: String, onload: js.Function, onerror: Unit, optAsync: Boolean): Any = js.native
+    def importHref(href: String, onload: Unit, onerror: js.Function): Any = js.native
+    def importHref(href: String, onload: Unit, onerror: js.Function, optAsync: Boolean): Any = js.native
+    def importHref(href: String, onload: Unit, onerror: Unit, optAsync: Boolean): Any = js.native
     
-    def instanceTemplate(template: js.Any): js.Any = js.native
+    def instanceTemplate(template: Any): Any = js.native
     
-    def isDebouncerActive(jobName: String): js.Any = js.native
+    def isDebouncerActive(jobName: String): Any = js.native
     
     def linkPaths(to: String, from: String): Unit = js.native
     
@@ -233,14 +231,14 @@ object polymer {
     
     def mixin(target: js.Object, source: js.Object): Unit = js.native
     
-    def notifyPath(path: String, value: js.Any): Unit = js.native
-    def notifyPath(path: String, value: js.Any, fromAbove: js.Any): Unit = js.native
+    def notifyPath(path: String, value: Any): Unit = js.native
+    def notifyPath(path: String, value: Any, fromAbove: Any): Unit = js.native
     
     def notifySplices(path: String, splices: AddedCount): Unit = js.native
     
-    def pop(path: String): js.Any = js.native
+    def pop(path: String): Any = js.native
     
-    def push(path: String, value: js.Any): js.Any = js.native
+    def push(path: String, value: Any): Any = js.native
     
     def reflectPropertyToAttribute(name: String): Unit = js.native
     
@@ -251,28 +249,28 @@ object polymer {
     /* InferMemberOverrides */
     override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
     
-    def resolveUrl(url: String): js.Any = js.native
+    def resolveUrl(url: String): Any = js.native
     
     var root: HTMLElement = js.native
     
     def scopeSubtree(container: Element, shouldObserve: Boolean): Unit = js.native
     
-    def serialize(value: String): js.Any = js.native
+    def serialize(value: String): Any = js.native
     
-    def serializeValueToAttribute(value: js.Any, attribute: String, node: Element): Unit = js.native
+    def serializeValueToAttribute(value: Any, attribute: String, node: Element): Unit = js.native
     
-    def set(path: String, value: js.Any): js.Any = js.native
-    def set(path: String, value: js.Any, root: js.Object): js.Any = js.native
-    def set(path: js.Array[String | Double], value: js.Any): js.Any = js.native
-    def set(path: js.Array[String | Double], value: js.Any, root: js.Object): js.Any = js.native
+    def set(path: String, value: Any): Any = js.native
+    def set(path: String, value: Any, root: js.Object): Any = js.native
+    def set(path: js.Array[String | Double], value: Any): Any = js.native
+    def set(path: js.Array[String | Double], value: Any, root: js.Object): Any = js.native
     
     def setScrollDirection(direction: String, node: HTMLElement): Unit = js.native
     
     var shadyRoot: HTMLElement = js.native
     
-    def shift(path: String, value: js.Any): js.Any = js.native
+    def shift(path: String, value: Any): Any = js.native
     
-    def splice(path: String, start: Double, deleteCount: Double, items: js.Any*): js.Any = js.native
+    def splice(path: String, start: Double, deleteCount: Double, items: Any*): Any = js.native
     
     def toggleAttribute(name: String, force: Boolean, node: HTMLElement): Boolean = js.native
     def toggleAttribute(name: String, force: Unit, node: HTMLElement): Boolean = js.native
@@ -283,12 +281,12 @@ object polymer {
     def transform(transform: String): Unit = js.native
     def transform(transform: String, node: HTMLElement): Unit = js.native
     
-    def translate3d(x: js.Any, y: js.Any, z: js.Any): Unit = js.native
-    def translate3d(x: js.Any, y: js.Any, z: js.Any, node: HTMLElement): Unit = js.native
+    def translate3d(x: Any, y: Any, z: Any): Unit = js.native
+    def translate3d(x: Any, y: Any, z: Any, node: HTMLElement): Unit = js.native
     
     def unlinkPaths(path: String): Unit = js.native
     
-    def unshift(path: String, value: js.Any): js.Any = js.native
+    def unshift(path: String, value: Any): Any = js.native
     
     def updateStyles(): Unit = js.native
   }
@@ -299,7 +297,7 @@ object polymer {
     var $custom_cons: js.UndefOr[FunctionConstructor] = js.undefined
     
     @JSName("$custom_cons_args")
-    var $custom_cons_args: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var $custom_cons_args: js.UndefOr[js.Array[Any]] = js.undefined
     
     var style: js.UndefOr[String] = js.undefined
     
@@ -318,11 +316,11 @@ object polymer {
       
       inline def set$custom_consUndefined: Self = StObject.set(x, "$custom_cons", js.undefined)
       
-      inline def set$custom_cons_args(value: js.Array[js.Any]): Self = StObject.set(x, "$custom_cons_args", value.asInstanceOf[js.Any])
+      inline def set$custom_cons_args(value: js.Array[Any]): Self = StObject.set(x, "$custom_cons_args", value.asInstanceOf[js.Any])
       
       inline def set$custom_cons_argsUndefined: Self = StObject.set(x, "$custom_cons_args", js.undefined)
       
-      inline def set$custom_cons_argsVarargs(value: js.Any*): Self = StObject.set(x, "$custom_cons_args", js.Array(value :_*))
+      inline def set$custom_cons_argsVarargs(value: Any*): Self = StObject.set(x, "$custom_cons_args", js.Array(value*))
       
       inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
@@ -349,9 +347,9 @@ object polymer {
     
     var reflectToAttribute: js.UndefOr[Boolean] = js.undefined
     
-    var `type`: js.UndefOr[js.Any] = js.undefined
+    var `type`: js.UndefOr[Any] = js.undefined
     
-    var value: js.UndefOr[js.Any] = js.undefined
+    var value: js.UndefOr[Any] = js.undefined
   }
   object Property {
     
@@ -386,11 +384,11 @@ object polymer {
       
       inline def setReflectToAttributeUndefined: Self = StObject.set(x, "reflectToAttribute", js.undefined)
       
-      inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
@@ -402,6 +400,6 @@ object polymer {
     def apply(node: Base): HTMLElement = js.native
     def apply(node: HTMLElement): HTMLElement = js.native
     
-    def flush(): js.Any = js.native
+    def flush(): Any = js.native
   }
 }

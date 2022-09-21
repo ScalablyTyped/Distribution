@@ -8,5 +8,5 @@ object aliasRoutingConfigurationMod {
   
   @JSImport("@aws-sdk/client-lambda-node/model/_AliasRoutingConfiguration", "_AliasRoutingConfiguration")
   @js.native
-  val AliasRoutingConfiguration: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val AliasRoutingConfiguration: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

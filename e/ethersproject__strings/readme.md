@@ -1,7 +1,7 @@
 
 # Scala.js typings for ethersproject__strings
 
-Typings are for version 5.0.6
+Typings are for version 5.7.0
 
 ## Library description:
 String utility functions.
@@ -10,10 +10,10 @@ String utility functions.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/strings |
 | Keywords           | Ethereum, ethers, strings, utf8 |
-| # releases         | 31 |
-| # dependents       | 44 |
-| # downloads        | 2859064 |
-| # stars            | 0 |
+| # releases         | 17 |
+| # dependents       | 0.0 |
+| # downloads        | 3536622.6666666665 |
+| # stars            | 5503.0 |
 
 ## Links
 - [Homepage](https://github.com/ethers-io/ethers.js#readme)

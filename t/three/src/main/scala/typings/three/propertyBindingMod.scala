@@ -9,31 +9,31 @@ object propertyBindingMod {
   
   @JSImport("three/src/animation/PropertyBinding", "PropertyBinding")
   @js.native
-  class PropertyBinding protected () extends StObject {
-    def this(rootNode: js.Any, path: String) = this()
-    def this(rootNode: js.Any, path: String, parsedPath: js.Any) = this()
+  open class PropertyBinding protected () extends StObject {
+    def this(rootNode: Any, path: String) = this()
+    def this(rootNode: Any, path: String, parsedPath: Any) = this()
     
     var BindingType: StringDictionary[Double] = js.native
     
-    var GetterByBindingType: js.Array[js.Function] = js.native
+    var GetterByBindingType: js.Array[js.Function0[Unit]] = js.native
     
-    var SetterByBindingTypeAndVersioning: js.Array[js.Array[js.Function]] = js.native
+    var SetterByBindingTypeAndVersioning: js.Array[js.Array[js.Function0[Unit]]] = js.native
     
     var Versioning: StringDictionary[Double] = js.native
     
     def bind(): Unit = js.native
     
-    def getValue(targetArray: js.Any, offset: Double): js.Any = js.native
+    def getValue(targetArray: Any, offset: Double): Any = js.native
     
-    var node: js.Any = js.native
+    var node: Any = js.native
     
-    var parsedPath: js.Any = js.native
+    var parsedPath: Any = js.native
     
     var path: String = js.native
     
-    var rootNode: js.Any = js.native
+    var rootNode: Any = js.native
     
-    def setValue(sourceArray: js.Any, offset: Double): Unit = js.native
+    def setValue(sourceArray: Any, offset: Double): Unit = js.native
     
     def unbind(): Unit = js.native
   }
@@ -46,23 +46,23 @@ object propertyBindingMod {
     
     @JSImport("three/src/animation/PropertyBinding", "PropertyBinding.Composite")
     @js.native
-    class Composite protected () extends StObject {
-      def this(targetGroup: js.Any, path: js.Any) = this()
-      def this(targetGroup: js.Any, path: js.Any, parsedPath: js.Any) = this()
+    open class Composite protected () extends StObject {
+      def this(targetGroup: Any, path: Any) = this()
+      def this(targetGroup: Any, path: Any, parsedPath: Any) = this()
       
       def bind(): Unit = js.native
       
-      def getValue(array: js.Any, offset: Double): js.Any = js.native
+      def getValue(array: Any, offset: Double): Any = js.native
       
-      def setValue(array: js.Any, offset: Double): Unit = js.native
+      def setValue(array: Any, offset: Double): Unit = js.native
       
       def unbind(): Unit = js.native
     }
     
-    inline def create(root: js.Any, path: js.Any): PropertyBinding | Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(root.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[PropertyBinding | Composite]
-    inline def create(root: js.Any, path: js.Any, parsedPath: js.Any): PropertyBinding | Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(root.asInstanceOf[js.Any], path.asInstanceOf[js.Any], parsedPath.asInstanceOf[js.Any])).asInstanceOf[PropertyBinding | Composite]
+    inline def create(root: Any, path: Any): PropertyBinding | Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(root.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[PropertyBinding | Composite]
+    inline def create(root: Any, path: Any, parsedPath: Any): PropertyBinding | Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(root.asInstanceOf[js.Any], path.asInstanceOf[js.Any], parsedPath.asInstanceOf[js.Any])).asInstanceOf[PropertyBinding | Composite]
     
-    inline def findNode(root: js.Any, nodeName: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("findNode")(root.asInstanceOf[js.Any], nodeName.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def findNode(root: Any, nodeName: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("findNode")(root.asInstanceOf[js.Any], nodeName.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     inline def parseTrackName(trackName: String): ParseTrackNameResults = ^.asInstanceOf[js.Dynamic].applyDynamic("parseTrackName")(trackName.asInstanceOf[js.Any]).asInstanceOf[ParseTrackNameResults]
     

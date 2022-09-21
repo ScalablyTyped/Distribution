@@ -12,7 +12,7 @@ trait ListSharedReportGroupsOutput extends StObject {
   var nextToken: js.UndefOr[String] = js.undefined
   
   /**
-    *  The list of ARNs for the report groups shared with the current AWS account or user. 
+    *  The list of ARNs for the report groups shared with the current Amazon Web Services account or user. 
     */
   var reportGroups: js.UndefOr[ReportGroupArns] = js.undefined
 }
@@ -33,6 +33,6 @@ object ListSharedReportGroupsOutput {
     
     inline def setReportGroupsUndefined: Self = StObject.set(x, "reportGroups", js.undefined)
     
-    inline def setReportGroupsVarargs(value: NonEmptyString*): Self = StObject.set(x, "reportGroups", js.Array(value :_*))
+    inline def setReportGroupsVarargs(value: NonEmptyString*): Self = StObject.set(x, "reportGroups", js.Array(value*))
   }
 }

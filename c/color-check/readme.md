@@ -10,10 +10,10 @@ Color Check is a very tine library for checking your foreground and backgorunds 
 | ------------------ | :-------------: |
 | Full name          | color-check |
 | Keywords           | WCAG, WCAG2, color, wcag, wcag2, snook, contrast, legibility |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 37831 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 13329.0 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/motleydev/color-check#readme)

@@ -1,22 +1,31 @@
 package typings.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces
 
 import typings.firebaseFirestore.firestoreProtoApiMod.OrderDirection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Order extends js.Object {
+trait Order extends StObject {
+  
   var direction: js.UndefOr[OrderDirection] = js.undefined
+  
   var field: js.UndefOr[FieldReference] = js.undefined
 }
-
 object Order {
-  @scala.inline
-  def apply(direction: OrderDirection = null, field: FieldReference = null): Order = {
+  
+  inline def apply(): Order = {
     val __obj = js.Dynamic.literal()
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     __obj.asInstanceOf[Order]
   }
+  
+  extension [Self <: Order](x: Self) {
+    
+    inline def setDirection(value: OrderDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    
+    inline def setField(value: FieldReference): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+  }
 }
-

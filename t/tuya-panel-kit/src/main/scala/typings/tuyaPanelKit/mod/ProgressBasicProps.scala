@@ -8,26 +8,136 @@ trait ProgressBasicProps
   extends StObject
      with ProgressProps {
   
+  /**
+    * @language zh-CN
+    * @description 轨道不满 360 度开始的圆环颜色
+    * @defaultValue "#E5E5E5"
+    */
+  /**
+    * @language en-US
+    * @description The color of the ring at the ending point when the track is less than 360 degrees.
+    * @defaultValue "#E5E5E5"
+    */
   var endColor: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 是否需要最大值的 thumb
+    * @defaultValue false
+    */
+  /**
+    * @language en-US
+    * @description Whether to set the progress thumb of the maximum value.
+    * @defaultValue false
+    */
   var needMaxCircle: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 是否需要最小值的 thumb
+    * @defaultValue false
+    */
+  /**
+    * @language en-US
+    * @description Whether to set the progress thumb of the minimum value.
+    * @defaultValue false
+    */
   var needMinCircle: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 滑动结束回调
+    * @defaultValue () => {}
+    */
+  /**
+    * @language en-US
+    * @description Callback of ending the slide.
+    * @defaultValue () => {}
+    */
   var onSlidingComplete: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 值改变的回调
+    * @defaultValue () => {}
+    */
+  /**
+    * @language en-US
+    * @description Callback of value change
+    * @defaultValue () => {}
+    */
   var onValueChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 轨道不满 360 度开始的圆环颜色
+    * @defaultValue "#FF4800"
+    */
+  /**
+    * @language en-US
+    * @description The color of the ring at the starting point when the track is less than 360 degrees.
+    * @defaultValue "#FF4800"
+    */
   var startColor: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description thumb 小圆球的填充色
+    * @defaultValue "#fff"
+    */
+  /**
+    * @language en-US
+    * @description Filling color of thumb ball
+    * @defaultValue "#fff"
+    */
   var thumbFill: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description thumb小圆球的半径
+    * @defaultValue 2
+    */
+  /**
+    * @language en-US
+    * @description Radius of thumb ball
+    * @defaultValue 2
+    */
   var thumbRadius: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description thumb 小圆球的边框色
+    * @defaultValue "#fff"
+    */
+  /**
+    * @language en-US
+    * @description The border color of thumb ball
+    * @defaultValue "#fff"
+    */
   var thumbStroke: js.UndefOr[String] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description thumb 小圆球边框宽度
+    * @defaultValue 2
+    */
+  /**
+    * @language en-US
+    * @description Border width of thumb ball
+    * @defaultValue 2
+    */
   var thumbStrokeWidth: js.UndefOr[Double] = js.undefined
   
+  /**
+    * @language zh-CN
+    * @description 具体值
+    * @defaultValue 50
+    */
+  /**
+    * @language en-US
+    * @description value
+    * @defaultValue 50
+    */
   var value: js.UndefOr[Double] = js.undefined
 }
 object ProgressBasicProps {

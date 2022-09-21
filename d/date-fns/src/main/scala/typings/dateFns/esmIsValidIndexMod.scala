@@ -8,7 +8,7 @@ object esmIsValidIndexMod {
   
   object default {
     
-    inline def apply(date: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def apply(date: Any): Boolean = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     @JSImport("date-fns/esm/isValid/index", JSImport.Default)
     @js.native

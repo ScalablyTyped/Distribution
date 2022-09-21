@@ -1,21 +1,24 @@
 
 # Scala.js typings for nivo__stream
 
-Typings are for version 0.62.0
+Typings are for version 0.80.0
 
 ## Library description:
-[![version](https://img.shields.io/npm/v/@nivo/stream.svg?style=flat-square)](https://www.npmjs.com/package/@nivo/stream)
+<a href="https://nivo.rocks"><img alt="nivo" src="https://raw.githubusercontent.com/plouc/nivo/master/nivo.png" width="216" height="68"/></a>
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @nivo/stream |
 | Keywords           | nivo, dataviz, react, d3, charts, stream-chart |
-| # releases         | 34 |
-| # dependents       | 2 |
-| # downloads        | 46062 |
-| # stars            | 0 |
+| # releases         | 25 |
+| # dependents       | 0.0 |
+| # downloads        | 14259.333333333334 |
+| # stars            | 10446.0 |
 
 ## Links
+- [Homepage](https://github.com/plouc/nivo#readme)
+- [Bugs](https://github.com/plouc/nivo/issues)
+- [Repository](https://github.com/plouc/nivo)
 - [Npm](https://www.npmjs.com/package/%40nivo%2Fstream)
     
 

@@ -3,7 +3,6 @@ package typings.awsSdkClientPinpointBrowser
 import org.scalablytyped.runtime.StringDictionary
 import typings.awsSdkClientPinpointBrowser.typesEventsBatchMod.EventsBatch
 import typings.awsSdkClientPinpointBrowser.typesEventsBatchMod.UnmarshalledEventsBatch
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ object typesEventsRequestMod {
     /**
       * A batch of events to process. Each BatchItem consists of an endpoint ID as the key, and an EventsBatch object as the value.
       */
-    var BatchItem: js.UndefOr[StringDictionary[EventsBatch] | (Iterable[js.Tuple2[String, EventsBatch]])] = js.undefined
+    var BatchItem: js.UndefOr[StringDictionary[EventsBatch] | (js.Iterable[js.Tuple2[String, EventsBatch]])] = js.undefined
   }
   object EventsRequest {
     
@@ -26,7 +25,7 @@ object typesEventsRequestMod {
     
     extension [Self <: EventsRequest](x: Self) {
       
-      inline def setBatchItem(value: StringDictionary[EventsBatch] | (Iterable[js.Tuple2[String, EventsBatch]])): Self = StObject.set(x, "BatchItem", value.asInstanceOf[js.Any])
+      inline def setBatchItem(value: StringDictionary[EventsBatch] | (js.Iterable[js.Tuple2[String, EventsBatch]])): Self = StObject.set(x, "BatchItem", value.asInstanceOf[js.Any])
       
       inline def setBatchItemUndefined: Self = StObject.set(x, "BatchItem", js.undefined)
     }

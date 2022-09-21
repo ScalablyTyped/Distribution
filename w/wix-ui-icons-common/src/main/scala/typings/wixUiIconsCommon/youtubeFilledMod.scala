@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -12,13 +12,13 @@ object youtubeFilledMod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/dist/src/general/dist/components/YoutubeFilled", JSImport.Default)
   @js.native
-  val default: SFC[YoutubeFilledProps] = js.native
+  val default: FC[YoutubeFilledProps] = js.native
   
   trait YoutubeFilledProps
     extends StObject
        with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.undefined
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object YoutubeFilledProps {
     
@@ -29,14 +29,14 @@ object youtubeFilledMod extends Shortcut {
     
     extension [Self <: YoutubeFilledProps](x: Self) {
       
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
-  type _To = SFC[YoutubeFilledProps]
+  type _To = FC[YoutubeFilledProps]
   
   /* This means you don't have to write `default`, but can instead just say `youtubeFilledMod.foo` */
-  override def _to: SFC[YoutubeFilledProps] = default
+  override def _to: FC[YoutubeFilledProps] = default
 }

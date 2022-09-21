@@ -4,13 +4,13 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface for updating data on the InkAnalysisWord object, for use in "inkAnalysisWord.set({ ... })". */
+/** An interface for updating data on the InkAnalysisWord object, for use in `inkAnalysisWord.set({ ... })`. */
 trait InkAnalysisWordUpdateData extends StObject {
   
   /**
-    *
     * Reference to the parent InkAnalysisLine.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var line: js.UndefOr[InkAnalysisLineUpdateData] = js.undefined

@@ -14,12 +14,10 @@ object menuItemMod {
   
   @JSImport("react-bootstrap/lib/MenuItem", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[MenuItemProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[MenuItemProps, js.Object, Any]
   
-  @js.native
-  trait MenuItem
-    extends Component[MenuItemProps, js.Object, js.Any]
+  type MenuItem = Component[MenuItemProps, js.Object, Any]
   
   trait MenuItemProps
     extends StObject
@@ -31,7 +29,7 @@ object menuItemMod {
     
     var divider: js.UndefOr[Boolean] = js.undefined
     
-    var eventKey: js.UndefOr[js.Any] = js.undefined
+    var eventKey: js.UndefOr[Any] = js.undefined
     
     var header: js.UndefOr[Boolean] = js.undefined
     
@@ -62,7 +60,7 @@ object menuItemMod {
       
       inline def setDividerUndefined: Self = StObject.set(x, "divider", js.undefined)
       
-      inline def setEventKey(value: js.Any): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
+      inline def setEventKey(value: Any): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
       
       inline def setEventKeyUndefined: Self = StObject.set(x, "eventKey", js.undefined)
       

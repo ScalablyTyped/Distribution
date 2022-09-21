@@ -108,28 +108,6 @@ object constantsMod {
     /* 4 */ val RIGHT: typings.materialMenuSurface.constantsMod.CornerBit.RIGHT & Double = js.native
   }
   
-  /**
-    * @license
-    * Copyright 2018 Google Inc.
-    *
-    * Permission is hereby granted, free of charge, to any person obtaining a copy
-    * of this software and associated documentation files (the "Software"), to deal
-    * in the Software without restriction, including without limitation the rights
-    * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-    * copies of the Software, and to permit persons to whom the Software is
-    * furnished to do so, subject to the following conditions:
-    *
-    * The above copyright notice and this permission notice shall be included in
-    * all copies or substantial portions of the Software.
-    *
-    * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-    * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-    * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-    * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-    * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-    * THE SOFTWARE.
-    */
   object cssClasses {
     
     @JSImport("@material/menu-surface/constants", "cssClasses")
@@ -178,17 +156,34 @@ object constantsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    /** Ratio of anchor width to menu-surface width for switching from corner positioning to center positioning. */
+    /**
+      * Ratio of anchor width to menu-surface width for switching from corner
+      * positioning to center positioning.
+      */
     @JSImport("@material/menu-surface/constants", "numbers.ANCHOR_TO_MENU_SURFACE_WIDTH_RATIO")
     @js.native
     def ANCHOR_TO_MENU_SURFACE_WIDTH_RATIO: Double = js.native
     inline def ANCHOR_TO_MENU_SURFACE_WIDTH_RATIO_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ANCHOR_TO_MENU_SURFACE_WIDTH_RATIO")(x.asInstanceOf[js.Any])
     
-    /** Margin left to the edge of the viewport when menu-surface is at maximum possible height. Also used as a viewport margin. */
+    /**
+      * Margin left to the edge of the viewport when menu-surface is at maximum
+      * possible height. Also used as a viewport margin.
+      */
     @JSImport("@material/menu-surface/constants", "numbers.MARGIN_TO_EDGE")
     @js.native
     def MARGIN_TO_EDGE: Double = js.native
     inline def MARGIN_TO_EDGE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MARGIN_TO_EDGE")(x.asInstanceOf[js.Any])
+    
+    /**
+      * Amount of time to wait before restoring focus when closing the menu
+      * surface. This is important because if a touch event triggered the menu
+      * close, and the subsequent mouse event occurs after focus is restored, then
+      * the restored focus would be lost.
+      */
+    @JSImport("@material/menu-surface/constants", "numbers.TOUCH_EVENT_WAIT_MS")
+    @js.native
+    def TOUCH_EVENT_WAIT_MS: Double = js.native
+    inline def TOUCH_EVENT_WAIT_MS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOUCH_EVENT_WAIT_MS")(x.asInstanceOf[js.Any])
     
     /** Total duration of menu-surface close animation. */
     @JSImport("@material/menu-surface/constants", "numbers.TRANSITION_CLOSE_DURATION")
@@ -214,6 +209,11 @@ object constantsMod {
     def CLOSED_EVENT: String = js.native
     inline def CLOSED_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSED_EVENT")(x.asInstanceOf[js.Any])
     
+    @JSImport("@material/menu-surface/constants", "strings.CLOSING_EVENT")
+    @js.native
+    def CLOSING_EVENT: String = js.native
+    inline def CLOSING_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSING_EVENT")(x.asInstanceOf[js.Any])
+    
     @JSImport("@material/menu-surface/constants", "strings.FOCUSABLE_ELEMENTS")
     @js.native
     def FOCUSABLE_ELEMENTS: String = js.native
@@ -223,5 +223,10 @@ object constantsMod {
     @js.native
     def OPENED_EVENT: String = js.native
     inline def OPENED_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPENED_EVENT")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/menu-surface/constants", "strings.OPENING_EVENT")
+    @js.native
+    def OPENING_EVENT: String = js.native
+    inline def OPENING_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPENING_EVENT")(x.asInstanceOf[js.Any])
   }
 }

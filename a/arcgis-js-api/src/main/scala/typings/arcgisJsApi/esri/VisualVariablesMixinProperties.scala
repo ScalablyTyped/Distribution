@@ -26,6 +26,6 @@ object VisualVariablesMixinProperties {
     
     inline def setVisualVariablesUndefined: Self = StObject.set(x, "visualVariables", js.undefined)
     
-    inline def setVisualVariablesVarargs(value: VisualVariableProperties*): Self = StObject.set(x, "visualVariables", js.Array(value :_*))
+    inline def setVisualVariablesVarargs(value: VisualVariableProperties*): Self = StObject.set(x, "visualVariables", js.Array(value*))
   }
 }

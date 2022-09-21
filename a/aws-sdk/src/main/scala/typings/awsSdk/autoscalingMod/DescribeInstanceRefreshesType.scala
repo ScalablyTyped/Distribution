@@ -41,7 +41,7 @@ object DescribeInstanceRefreshesType {
     
     inline def setInstanceRefreshIdsUndefined: Self = StObject.set(x, "InstanceRefreshIds", js.undefined)
     
-    inline def setInstanceRefreshIdsVarargs(value: XmlStringMaxLen255*): Self = StObject.set(x, "InstanceRefreshIds", js.Array(value :_*))
+    inline def setInstanceRefreshIdsVarargs(value: XmlStringMaxLen255*): Self = StObject.set(x, "InstanceRefreshIds", js.Array(value*))
     
     inline def setMaxRecords(value: MaxRecords): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     

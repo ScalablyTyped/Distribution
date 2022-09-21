@@ -10,10 +10,10 @@ object settingsCellMod {
   
   @JSImport("material-ui/svg-icons/action/settings-cell", JSImport.Default)
   @js.native
-  class default () extends ActionSettingsCell
+  open class default () extends ActionSettingsCell
   
   @JSImport("material-ui/svg-icons/action/settings-cell", "ActionSettingsCell")
   @js.native
-  class ActionSettingsCell ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionSettingsCell ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("openlayers", "source.Raster")
 @js.native
-class Raster protected () extends Image {
+open class Raster protected () extends Image {
   /**
     * @classdesc
     * A source that transforms data from any number of input sources using an array

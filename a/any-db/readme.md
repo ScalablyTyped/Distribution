@@ -10,10 +10,10 @@ Database-agnostic connection pooling, querying, and result sets
 | ------------------ | :-------------: |
 | Full name          | any-db |
 | Keywords           | mysql, postgres, pg, sqlite, sqlite3 |
-| # releases         | 0 |
-| # dependents       | 24 |
-| # downloads        | 103910 |
-| # stars            | 8 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4955.333333333333 |
+| # stars            | 210.0 |
 
 ## Links
 - [Homepage](https://github.com/grncdr/node-any-db#readme)

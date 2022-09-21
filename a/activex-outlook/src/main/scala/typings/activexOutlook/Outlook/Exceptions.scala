@@ -12,12 +12,12 @@ trait Exceptions extends StObject {
   
   val Count: Double
   
-  def Item(Index: js.Any): Exception
+  def Item(Index: Any): Exception
   
   /* private */ @JSName("Outlook.Exceptions_typekey")
   var OutlookDotExceptions_typekey: Exceptions
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Session: NameSpace
 }
@@ -27,9 +27,9 @@ object Exceptions {
     Application: Application,
     Class: OlObjectClass,
     Count: Double,
-    Item: js.Any => Exception,
+    Item: Any => Exception,
     OutlookDotExceptions_typekey: Exceptions,
-    Parent: js.Any,
+    Parent: Any,
     Session: NameSpace
   ): Exceptions = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Class = Class.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any], Session = Session.asInstanceOf[js.Any])
@@ -45,11 +45,11 @@ object Exceptions {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => Exception): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => Exception): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
     inline def setOutlookDotExceptions_typekey(value: Exceptions): Self = StObject.set(x, "Outlook.Exceptions_typekey", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }

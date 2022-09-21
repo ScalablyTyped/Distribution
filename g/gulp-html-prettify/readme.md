@@ -10,10 +10,10 @@ HTML Prettify Plugin for Gulp
 | ------------------ | :-------------: |
 | Full name          | gulp-html-prettify |
 | Keywords           | gulpplugin |
-| # releases         | 0 |
-| # dependents       | 33 |
-| # downloads        | 151106 |
-| # stars            | 8 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3562.3333333333335 |
+| # stars            | 13.0 |
 
 ## Links
 - [Homepage](https://github.com/colynb/gulp-html-prettify#readme)

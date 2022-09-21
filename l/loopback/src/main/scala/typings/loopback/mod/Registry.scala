@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("loopback", "Registry")
 @js.native
-class Registry () extends StObject {
+open class Registry () extends StObject {
   
   /**
     * Alter an existing Model class.
@@ -87,7 +87,7 @@ class Registry () extends StObject {
     * @param {any} options (optional
     * @header loopback.createMode
     */
-  def createModel(name: String, properties: js.Any, options: js.Any): Unit = js.native
+  def createModel(name: String, properties: Any, options: Any): Unit = js.native
   
   /**
     * Look up a model class by name from all models created by
@@ -132,5 +132,5 @@ object Registry {
   val ^ : js.Any = js.native
   
   /* static member */
-  inline def addACL(acls: js.Array[js.Any], acl: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addACL")(acls.asInstanceOf[js.Any], acl.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addACL(acls: js.Array[Any], acl: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addACL")(acls.asInstanceOf[js.Any], acl.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

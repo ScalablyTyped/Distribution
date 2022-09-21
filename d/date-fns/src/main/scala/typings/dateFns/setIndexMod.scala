@@ -12,11 +12,11 @@ object setIndexMod {
     
     @JSImport("date-fns/esm/fp/set/index", JSImport.Default)
     @js.native
-    val ^ : CurriedFn2[Date, typings.std.Date | Double, typings.std.Date] = js.native
+    val ^ : CurriedFn2[Date, js.Date | Double, js.Date] = js.native
     
-    type _To = CurriedFn2[Date, typings.std.Date | Double, typings.std.Date]
+    type _To = CurriedFn2[Date, js.Date | Double, js.Date]
     
     /* This means you don't have to write `^`, but can instead just say `default.foo` */
-    override def _to: CurriedFn2[Date, typings.std.Date | Double, typings.std.Date] = ^
+    override def _to: CurriedFn2[Date, js.Date | Double, js.Date] = ^
   }
 }

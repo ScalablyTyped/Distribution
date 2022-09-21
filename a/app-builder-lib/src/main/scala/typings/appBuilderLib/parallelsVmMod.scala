@@ -1,6 +1,7 @@
 package typings.appBuilderLib
 
 import typings.appBuilderLib.appBuilderLibStrings.`win-10`
+import typings.appBuilderLib.appBuilderLibStrings.`win-11`
 import typings.appBuilderLib.appBuilderLibStrings.elementary
 import typings.appBuilderLib.appBuilderLibStrings.running
 import typings.appBuilderLib.appBuilderLibStrings.stopped
@@ -24,13 +25,18 @@ object parallelsVmMod {
     
     var name: String
     
-    var os: `win-10` | ubuntu | elementary
+    var os: `win-10` | `win-11` | ubuntu | elementary
     
     var state: running | suspended | stopped
   }
   object ParallelsVm {
     
-    inline def apply(id: String, name: String, os: `win-10` | ubuntu | elementary, state: running | suspended | stopped): ParallelsVm = {
+    inline def apply(
+      id: String,
+      name: String,
+      os: `win-10` | `win-11` | ubuntu | elementary,
+      state: running | suspended | stopped
+    ): ParallelsVm = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParallelsVm]
     }
@@ -41,7 +47,7 @@ object parallelsVmMod {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      inline def setOs(value: `win-10` | ubuntu | elementary): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
+      inline def setOs(value: `win-10` | `win-11` | ubuntu | elementary): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
       
       inline def setState(value: running | suspended | stopped): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }

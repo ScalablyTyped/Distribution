@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class Firehose ()
+open class Firehose ()
   extends typings.awsSdk.allMod.Firehose {
   def this(options: ClientConfiguration) = this()
 }

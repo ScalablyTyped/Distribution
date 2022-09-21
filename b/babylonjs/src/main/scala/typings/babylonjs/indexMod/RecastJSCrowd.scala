@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "RecastJSCrowd")
 @js.native
-class RecastJSCrowd protected ()
+open class RecastJSCrowd protected ()
   extends typings.babylonjs.navigationIndexMod.RecastJSCrowd {
   /**
     * Constructor

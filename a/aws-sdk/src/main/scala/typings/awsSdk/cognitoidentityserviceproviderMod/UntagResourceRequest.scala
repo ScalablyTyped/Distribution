@@ -29,6 +29,6 @@ object UntagResourceRequest {
     
     inline def setTagKeys(value: UserPoolTagsListType): Self = StObject.set(x, "TagKeys", value.asInstanceOf[js.Any])
     
-    inline def setTagKeysVarargs(value: TagKeysType*): Self = StObject.set(x, "TagKeys", js.Array(value :_*))
+    inline def setTagKeysVarargs(value: TagKeysType*): Self = StObject.set(x, "TagKeys", js.Array(value*))
   }
 }

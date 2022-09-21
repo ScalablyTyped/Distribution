@@ -99,11 +99,11 @@ object Version {
     
     inline def setParameterDefinitions(value: listOfParameterDefinition): Self = StObject.set(x, "ParameterDefinitions", value.asInstanceOf[js.Any])
     
-    inline def setParameterDefinitionsVarargs(value: ParameterDefinition*): Self = StObject.set(x, "ParameterDefinitions", js.Array(value :_*))
+    inline def setParameterDefinitionsVarargs(value: ParameterDefinition*): Self = StObject.set(x, "ParameterDefinitions", js.Array(value*))
     
     inline def setRequiredCapabilities(value: listOfCapability): Self = StObject.set(x, "RequiredCapabilities", value.asInstanceOf[js.Any])
     
-    inline def setRequiredCapabilitiesVarargs(value: Capability*): Self = StObject.set(x, "RequiredCapabilities", js.Array(value :_*))
+    inline def setRequiredCapabilitiesVarargs(value: Capability*): Self = StObject.set(x, "RequiredCapabilities", js.Array(value*))
     
     inline def setResourcesSupported(value: boolean): Self = StObject.set(x, "ResourcesSupported", value.asInstanceOf[js.Any])
     

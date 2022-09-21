@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/// https://novadocs.panic.com/api-reference/symbol/
+/// https://docs.nova.app/api-reference/symbol/
 /* Rewritten from type alias, can be one of: 
   - typings.novaEditorNode.novaEditorNodeStrings.`type`
   - typings.novaEditorNode.novaEditorNodeStrings.`class`

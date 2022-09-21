@@ -35,7 +35,7 @@ trait GoogleAppsCloudidentityDevicesV1ClientState extends StObject {
   var keyValuePairs: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.cloudidentity.gapi.client.cloudidentity.GoogleAppsCloudidentityDevicesV1CustomAttributeValue}
-    */ typings.maximMazurokGapiClientCloudidentity.maximMazurokGapiClientCloudidentityStrings.GoogleAppsCloudidentityDevicesV1ClientState & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientCloudidentity.maximMazurokGapiClientCloudidentityStrings.GoogleAppsCloudidentityDevicesV1ClientState & TopLevel[Any]
   ] = js.undefined
   
   /** Output only. The time the client state data was last updated. */
@@ -45,12 +45,12 @@ trait GoogleAppsCloudidentityDevicesV1ClientState extends StObject {
   var managed: js.UndefOr[String] = js.undefined
   
   /**
-    * Output only. [Resource name](https://cloud.google.com/apis/design/resource_names) of the ClientState in format:
-    * `devices/{device_id}/deviceUsers/{device_user_id}/clientState/{partner_id}`, where partner_id corresponds to the partner storing the data. For partners belonging to the "BeyondCorp
-    * Alliance", this is the partner ID specified to you by Google. For all other callers, this is a string of the form: `{customer_id}-suffix`, where `customer_id` is your customer ID.
-    * The *suffix* is any string the caller specifies. This string will be displayed verbatim in the administration console. This suffix is used in setting up Custom Access Levels in
-    * Context-Aware Access. Your organization's customer ID can be obtained from the URL: `GET https://www.googleapis.com/admin/directory/v1/customers/my_customer` The `id` field in the
-    * response contains the customer ID starting with the letter 'C'. The customer ID to be used in this API is the string after the letter 'C' (not including 'C')
+    * Output only. [Resource name](https://cloud.google.com/apis/design/resource_names) of the ClientState in format: `devices/{device}/deviceUsers/{device_user}/clientState/{partner}`,
+    * where partner corresponds to the partner storing the data. For partners belonging to the "BeyondCorp Alliance", this is the partner ID specified to you by Google. For all other
+    * callers, this is a string of the form: `{customer}-suffix`, where `customer` is your customer ID. The *suffix* is any string the caller specifies. This string will be displayed
+    * verbatim in the administration console. This suffix is used in setting up Custom Access Levels in Context-Aware Access. Your organization's customer ID can be obtained from the URL:
+    * `GET https://www.googleapis.com/admin/directory/v1/customers/my_customer` The `id` field in the response contains the customer ID starting with the letter 'C'. The customer ID to be
+    * used in this API is the string after the letter 'C' (not including 'C')
     */
   var name: js.UndefOr[String] = js.undefined
   
@@ -73,7 +73,7 @@ object GoogleAppsCloudidentityDevicesV1ClientState {
     
     inline def setAssetTagsUndefined: Self = StObject.set(x, "assetTags", js.undefined)
     
-    inline def setAssetTagsVarargs(value: String*): Self = StObject.set(x, "assetTags", js.Array(value :_*))
+    inline def setAssetTagsVarargs(value: String*): Self = StObject.set(x, "assetTags", js.Array(value*))
     
     inline def setComplianceState(value: String): Self = StObject.set(x, "complianceState", value.asInstanceOf[js.Any])
     
@@ -98,7 +98,7 @@ object GoogleAppsCloudidentityDevicesV1ClientState {
     inline def setKeyValuePairs(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.cloudidentity.gapi.client.cloudidentity.GoogleAppsCloudidentityDevicesV1CustomAttributeValue}
-      */ typings.maximMazurokGapiClientCloudidentity.maximMazurokGapiClientCloudidentityStrings.GoogleAppsCloudidentityDevicesV1ClientState & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCloudidentity.maximMazurokGapiClientCloudidentityStrings.GoogleAppsCloudidentityDevicesV1ClientState & TopLevel[Any]
     ): Self = StObject.set(x, "keyValuePairs", value.asInstanceOf[js.Any])
     
     inline def setKeyValuePairsUndefined: Self = StObject.set(x, "keyValuePairs", js.undefined)

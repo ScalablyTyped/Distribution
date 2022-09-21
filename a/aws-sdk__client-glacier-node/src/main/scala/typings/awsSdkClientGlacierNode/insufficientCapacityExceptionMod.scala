@@ -8,5 +8,5 @@ object insufficientCapacityExceptionMod {
   
   @JSImport("@aws-sdk/client-glacier-node/model/InsufficientCapacityException", "InsufficientCapacityException")
   @js.native
-  val InsufficientCapacityException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val InsufficientCapacityException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

@@ -43,7 +43,7 @@ object Ipv6Pool {
     
     inline def setPoolCidrBlocksUndefined: Self = StObject.set(x, "PoolCidrBlocks", js.undefined)
     
-    inline def setPoolCidrBlocksVarargs(value: PoolCidrBlock*): Self = StObject.set(x, "PoolCidrBlocks", js.Array(value :_*))
+    inline def setPoolCidrBlocksVarargs(value: PoolCidrBlock*): Self = StObject.set(x, "PoolCidrBlocks", js.Array(value*))
     
     inline def setPoolId(value: String): Self = StObject.set(x, "PoolId", value.asInstanceOf[js.Any])
     
@@ -53,6 +53,6 @@ object Ipv6Pool {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

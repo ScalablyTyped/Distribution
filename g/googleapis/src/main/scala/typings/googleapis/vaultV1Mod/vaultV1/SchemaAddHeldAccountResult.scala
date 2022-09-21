@@ -4,19 +4,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A status detailing the status of each account creation, and the
-  * HeldAccount, if successful.
-  */
 trait SchemaAddHeldAccountResult extends StObject {
   
   /**
-    * If present, this account was successfully created.
+    * Returned when the account was successfully created.
     */
   var account: js.UndefOr[SchemaHeldAccount] = js.undefined
   
   /**
-    * This represents the success status. If failed, check message.
+    * Reports the request status. If it failed, returns an error message.
     */
   var status: js.UndefOr[SchemaStatus] = js.undefined
 }

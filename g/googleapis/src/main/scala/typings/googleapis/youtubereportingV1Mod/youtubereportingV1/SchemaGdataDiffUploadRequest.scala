@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * gdata
-  */
 trait SchemaGdataDiffUploadRequest extends StObject {
   
   /**
@@ -22,7 +19,7 @@ trait SchemaGdataDiffUploadRequest extends StObject {
   /**
     * gdata
     */
-  var objectVersion: js.UndefOr[String] = js.undefined
+  var objectVersion: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaGdataDiffUploadRequest {
   
@@ -42,6 +39,8 @@ object SchemaGdataDiffUploadRequest {
     inline def setObjectInfoUndefined: Self = StObject.set(x, "objectInfo", js.undefined)
     
     inline def setObjectVersion(value: String): Self = StObject.set(x, "objectVersion", value.asInstanceOf[js.Any])
+    
+    inline def setObjectVersionNull: Self = StObject.set(x, "objectVersion", null)
     
     inline def setObjectVersionUndefined: Self = StObject.set(x, "objectVersion", js.undefined)
   }

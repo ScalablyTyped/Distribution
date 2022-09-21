@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("typescript-services", "Hash")
 @js.native
-class Hash ()
+open class Hash ()
   extends StObject
      with typings.typescriptServices.TypeScript.Hash
 object Hash {
@@ -18,20 +18,20 @@ object Hash {
   /* static member */
   @JSImport("typescript-services", "Hash.FNV_BASE")
   @js.native
-  def FNV_BASE: js.Any = js.native
-  inline def FNV_BASE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FNV_BASE")(x.asInstanceOf[js.Any])
+  def FNV_BASE: Any = js.native
+  inline def FNV_BASE_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FNV_BASE")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("typescript-services", "Hash.FNV_PRIME")
   @js.native
-  def FNV_PRIME: js.Any = js.native
-  inline def FNV_PRIME_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FNV_PRIME")(x.asInstanceOf[js.Any])
+  def FNV_PRIME: Any = js.native
+  inline def FNV_PRIME_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FNV_PRIME")(x.asInstanceOf[js.Any])
   
   /* static member */
   inline def combine(value: Double, currentHash: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("combine")(value.asInstanceOf[js.Any], currentHash.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /* static member */
-  inline def computeFnv1aCharArrayHashCode(text: js.Any, start: js.Any, len: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("computeFnv1aCharArrayHashCode")(text.asInstanceOf[js.Any], start.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def computeFnv1aCharArrayHashCode(text: Any, start: Any, len: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("computeFnv1aCharArrayHashCode")(text.asInstanceOf[js.Any], start.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /* static member */
   inline def computeMurmur2StringHashCode(key: String, seed: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("computeMurmur2StringHashCode")(key.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Double]
@@ -51,6 +51,6 @@ object Hash {
   /* static member */
   @JSImport("typescript-services", "Hash.primes")
   @js.native
-  def primes: js.Any = js.native
-  inline def primes_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("primes")(x.asInstanceOf[js.Any])
+  def primes: Any = js.native
+  inline def primes_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("primes")(x.asInstanceOf[js.Any])
 }

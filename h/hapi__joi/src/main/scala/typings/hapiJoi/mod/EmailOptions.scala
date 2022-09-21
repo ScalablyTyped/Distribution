@@ -78,7 +78,7 @@ object EmailOptions {
     
     inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
     
-    inline def setSeparatorVarargs(value: String*): Self = StObject.set(x, "separator", js.Array(value :_*))
+    inline def setSeparatorVarargs(value: String*): Self = StObject.set(x, "separator", js.Array(value*))
     
     inline def setTlds(value: TopLevelDomainOptions | `false`): Self = StObject.set(x, "tlds", value.asInstanceOf[js.Any])
     

@@ -14,30 +14,30 @@ trait User extends StObject {
   /**
     * The date and time, in ISO 8601 date-time format, when the user was created.
     */
-  var CreateDate: dateType
+  var CreateDate: js.Date
   
   /**
-    * The date and time, in ISO 8601 date-time format, when the user's password was last used to sign in to an AWS website. For a list of AWS websites that capture a user's last sign-in time, see the Credential Reports topic in the IAM User Guide. If a password is used more than once in a five-minute span, only the first use is returned in this field. If the field is null (no value), then it indicates that they never signed in with a password. This can be because:   The user never had a password.   A password exists but has not been used since IAM started tracking this information on October 20, 2014.   A null value does not mean that the user never had a password. Also, if the user does not currently have a password but had one in the past, then this field contains the date and time the most recent password was used. This value is returned only in the GetUser and ListUsers operations. 
+    * The date and time, in ISO 8601 date-time format, when the user's password was last used to sign in to an Amazon Web Services website. For a list of Amazon Web Services websites that capture a user's last sign-in time, see the Credential reports topic in the IAM User Guide. If a password is used more than once in a five-minute span, only the first use is returned in this field. If the field is null (no value), then it indicates that they never signed in with a password. This can be because:   The user never had a password.   A password exists but has not been used since IAM started tracking this information on October 20, 2014.   A null value does not mean that the user never had a password. Also, if the user does not currently have a password but had one in the past, then this field contains the date and time the most recent password was used. This value is returned only in the GetUser and ListUsers operations. 
     */
-  var PasswordLastUsed: js.UndefOr[dateType] = js.undefined
+  var PasswordLastUsed: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The path to the user. For more information about paths, see IAM Identifiers in the IAM User Guide.
+    * The path to the user. For more information about paths, see IAM identifiers in the IAM User Guide. The ARN of the policy used to set the permissions boundary for the user.
     */
   var Path: pathType
   
   /**
-    * The ARN of the policy used to set the permissions boundary for the user. For more information about permissions boundaries, see Permissions Boundaries for IAM Identities  in the IAM User Guide.
+    * For more information about permissions boundaries, see Permissions boundaries for IAM identities  in the IAM User Guide.
     */
   var PermissionsBoundary: js.UndefOr[AttachedPermissionsBoundary] = js.undefined
   
   /**
-    * A list of tags that are associated with the specified user. For more information about tagging, see Tagging IAM Identities in the IAM User Guide.
+    * A list of tags that are associated with the user. For more information about tagging, see Tagging IAM resources in the IAM User Guide.
     */
   var Tags: js.UndefOr[tagListType] = js.undefined
   
   /**
-    * The stable and unique string identifying the user. For more information about IDs, see IAM Identifiers in the IAM User Guide.
+    * The stable and unique string identifying the user. For more information about IDs, see IAM identifiers in the IAM User Guide.
     */
   var UserId: idType
   
@@ -48,7 +48,7 @@ trait User extends StObject {
 }
 object User {
   
-  inline def apply(Arn: arnType, CreateDate: dateType, Path: pathType, UserId: idType, UserName: userNameType): User = {
+  inline def apply(Arn: arnType, CreateDate: js.Date, Path: pathType, UserId: idType, UserName: userNameType): User = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any], CreateDate = CreateDate.asInstanceOf[js.Any], Path = Path.asInstanceOf[js.Any], UserId = UserId.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
     __obj.asInstanceOf[User]
   }
@@ -57,9 +57,9 @@ object User {
     
     inline def setArn(value: arnType): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    inline def setCreateDate(value: dateType): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
+    inline def setCreateDate(value: js.Date): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
-    inline def setPasswordLastUsed(value: dateType): Self = StObject.set(x, "PasswordLastUsed", value.asInstanceOf[js.Any])
+    inline def setPasswordLastUsed(value: js.Date): Self = StObject.set(x, "PasswordLastUsed", value.asInstanceOf[js.Any])
     
     inline def setPasswordLastUsedUndefined: Self = StObject.set(x, "PasswordLastUsed", js.undefined)
     
@@ -73,7 +73,7 @@ object User {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setUserId(value: idType): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
     

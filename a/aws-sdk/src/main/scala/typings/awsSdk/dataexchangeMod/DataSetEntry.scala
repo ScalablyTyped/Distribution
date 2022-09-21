@@ -12,14 +12,14 @@ trait DataSetEntry extends StObject {
   var Arn: typings.awsSdk.dataexchangeMod.Arn
   
   /**
-    * The type of file your data is stored in. Currently, the supported asset type is S3_SNAPSHOT.
+    * The type of asset that is added to a data set.
     */
   var AssetType: typings.awsSdk.dataexchangeMod.AssetType
   
   /**
     * The date and time that the data set was created, in ISO 8601 format.
     */
-  var CreatedAt: Timestamp
+  var CreatedAt: js.Date
   
   /**
     * The description for the data set.
@@ -54,19 +54,19 @@ trait DataSetEntry extends StObject {
   /**
     * The date and time that the data set was last updated, in ISO 8601 format.
     */
-  var UpdatedAt: Timestamp
+  var UpdatedAt: js.Date
 }
 object DataSetEntry {
   
   inline def apply(
     Arn: Arn,
     AssetType: AssetType,
-    CreatedAt: Timestamp,
+    CreatedAt: js.Date,
     Description: Description,
     Id: Id,
     Name: Name,
     Origin: Origin,
-    UpdatedAt: Timestamp
+    UpdatedAt: js.Date
   ): DataSetEntry = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any], AssetType = AssetType.asInstanceOf[js.Any], CreatedAt = CreatedAt.asInstanceOf[js.Any], Description = Description.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Origin = Origin.asInstanceOf[js.Any], UpdatedAt = UpdatedAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSetEntry]
@@ -78,7 +78,7 @@ object DataSetEntry {
     
     inline def setAssetType(value: AssetType): Self = StObject.set(x, "AssetType", value.asInstanceOf[js.Any])
     
-    inline def setCreatedAt(value: Timestamp): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
@@ -96,6 +96,6 @@ object DataSetEntry {
     
     inline def setSourceIdUndefined: Self = StObject.set(x, "SourceId", js.undefined)
     
-    inline def setUpdatedAt(value: Timestamp): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
+    inline def setUpdatedAt(value: js.Date): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
   }
 }

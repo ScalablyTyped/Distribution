@@ -10,11 +10,11 @@ object checkstyleFormatterMod {
   
   @JSImport("tslint/lib/formatters/checkstyleFormatter", "Formatter")
   @js.native
-  class Formatter () extends AbstractFormatter {
+  open class Formatter () extends AbstractFormatter {
     
-    /* private */ var escapeXml: js.Any = js.native
+    /* private */ var escapeXml: Any = js.native
     
-    /* private */ var formatFailure: js.Any = js.native
+    /* private */ var formatFailure: Any = js.native
   }
   /* static members */
   object Formatter {

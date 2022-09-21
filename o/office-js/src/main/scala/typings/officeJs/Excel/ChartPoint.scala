@@ -24,9 +24,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a point of a series in a chart.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @js.native
@@ -39,25 +39,25 @@ trait ChartPoint
   var context_ChartPoint: RequestContext = js.native
   
   /**
-    *
     * Returns the data label of a chart point.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   val dataLabel: ChartDataLabel = js.native
   
   /**
-    *
     * Encapsulates the format properties chart point.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   val format: ChartPointFormat = js.native
   
   /**
-    *
     * Represents whether a data point has a data label. Not applicable for surface charts.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var hasDataLabel: Boolean = js.native
@@ -74,47 +74,41 @@ trait ChartPoint
   def load(propertyNames: js.Array[String]): ChartPoint = js.native
   
   /**
+    * HTML color code representation of the marker background color of a data point (e.g., #FF0000 represents Red).
     *
-    * HTML color code representation of the marker background color of data point (e.g., #FF0000 represents Red).
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var markerBackgroundColor: String = js.native
   
   /**
+    * HTML color code representation of the marker foreground color of a data point (e.g., #FF0000 represents Red).
     *
-    * HTML color code representation of the marker foreground color of data point (e.g., #FF0000 represents Red).
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var markerForegroundColor: String = js.native
   
   /**
+    * Represents marker size of a data point.
     *
-    * Represents marker size of data point.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var markerSize: Double = js.native
   
   /**
+    * Represents marker style of a chart data point. See `Excel.ChartMarkerStyle` for details.
     *
-    * Represents marker style of a chart data point. See Excel.ChartMarkerStyle for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var markerStyle: ChartMarkerStyle | Invalid | Automatic | None | Square | Diamond | Triangle | X | Star | Dot | Dash | Circle | Plus | Picture = js.native
   
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ChartPoint): Unit = js.native
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.ChartPoint): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */
@@ -128,10 +122,10 @@ trait ChartPoint
   def toJSON(): ChartPointData = js.native
   
   /**
-    *
     * Returns the value of a chart point.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
-  val value: js.Any = js.native
+  val value: Any = js.native
 }

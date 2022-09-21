@@ -13,7 +13,7 @@ object attrMod {
   
   @JSImport("nodegit/attr", "Attr")
   @js.native
-  class Attr () extends StObject
+  open class Attr () extends StObject
   /* static members */
   object Attr {
     
@@ -43,7 +43,7 @@ object attrMod {
       * @param numAttr - The number of attributes being looked up
       * @param names - An array of num_attr strings containing attribute names.
       */
-    inline def getMany(repo: Repository, flags: Double, path: String, numAttr: Double, names: String): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getMany")(repo.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], path.asInstanceOf[js.Any], numAttr.asInstanceOf[js.Any], names.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def getMany(repo: Repository, flags: Double, path: String, numAttr: Double, names: String): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getMany")(repo.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], path.asInstanceOf[js.Any], numAttr.asInstanceOf[js.Any], names.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
     
     /**
       * @param attr - The attribute

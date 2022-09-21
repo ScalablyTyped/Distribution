@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@fluentui/utilities" : "8.13.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@fluentui/utilities" : "8.13.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

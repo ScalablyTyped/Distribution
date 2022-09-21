@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("docusign-esign", "TrustServiceProvidersApi")
 @js.native
-class TrustServiceProvidersApi protected () extends StObject {
+open class TrustServiceProvidersApi () extends StObject {
   def this(apiClient: ApiClient) = this()
   
   def getSealProviders(accountId: String): js.Promise[AccountSeals] = js.native

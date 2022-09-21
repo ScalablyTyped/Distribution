@@ -31,7 +31,7 @@ object VoiceCommands {
     
     /** Gets a dictionary containing the semantic properties of the recognized phrase in the voice command. */
     /* CompleteClass */
-    var properties: IMapView[String, IVectorView[js.Any]] = js.native
+    var properties: IMapView[String, IVectorView[Any]] = js.native
     
     /** Gets the SpeechRecognitionResult object representing the results returned by the voice command. */
     /* CompleteClass */
@@ -91,13 +91,13 @@ object VoiceCommands {
   @JSGlobal("Windows.ApplicationModel.VoiceCommands.VoiceCommandContentTile")
   @js.native
   /** Creates an instance of the VoiceCommandContentTile class. */
-  class VoiceCommandContentTile ()
+  open class VoiceCommandContentTile ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandContentTile {
     
     /** Gets or sets supplementary information the background app service can associate with the content tile. This information is not used by Cortana. */
     /* CompleteClass */
-    var appContext: js.Any = js.native
+    var appContext: Any = js.native
     
     /** Gets or sets a string as a launch parameter that can be associated with the response by the background app service. */
     /* CompleteClass */
@@ -334,7 +334,7 @@ object VoiceCommands {
   @JSGlobal("Windows.ApplicationModel.VoiceCommands.VoiceCommandUserMessage")
   @js.native
   /** Creates an instance of the VoiceCommandUserMessage class. */
-  class VoiceCommandUserMessage ()
+  open class VoiceCommandUserMessage ()
     extends StObject
        with typings.winrtUwp.Windows.ApplicationModel.VoiceCommands.VoiceCommandUserMessage {
     

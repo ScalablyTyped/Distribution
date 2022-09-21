@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "img-diff-js" : "0.5.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "img-diff-js" : "0.5.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

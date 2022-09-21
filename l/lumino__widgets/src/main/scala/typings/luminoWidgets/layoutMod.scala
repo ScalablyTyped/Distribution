@@ -28,11 +28,11 @@ object layoutMod {
        with IDisposable {
     def this(options: IOptions) = this()
     
-    /* private */ var _disposed: js.Any = js.native
+    /* private */ var _disposed: Any = js.native
     
-    /* private */ var _fitPolicy: js.Any = js.native
+    /* private */ var _fitPolicy: Any = js.native
     
-    /* private */ var _parent: js.Any = js.native
+    /* private */ var _parent: Any = js.native
     
     /**
       * Dispose of the resources held by the object.
@@ -485,7 +485,7 @@ object layoutMod {
   
   @JSImport("@lumino/widgets/types/layout", "LayoutItem")
   @js.native
-  class LayoutItem protected ()
+  open class LayoutItem protected ()
     extends StObject
        with IDisposable {
     /**
@@ -498,23 +498,23 @@ object layoutMod {
       */
     def this(widget: Widget) = this()
     
-    /* private */ var _disposed: js.Any = js.native
+    /* private */ var _disposed: Any = js.native
     
-    /* private */ var _height: js.Any = js.native
+    /* private */ var _height: Any = js.native
     
-    /* private */ var _left: js.Any = js.native
+    /* private */ var _left: Any = js.native
     
-    /* private */ var _maxHeight: js.Any = js.native
+    /* private */ var _maxHeight: Any = js.native
     
-    /* private */ var _maxWidth: js.Any = js.native
+    /* private */ var _maxWidth: Any = js.native
     
-    /* private */ var _minHeight: js.Any = js.native
+    /* private */ var _minHeight: Any = js.native
     
-    /* private */ var _minWidth: js.Any = js.native
+    /* private */ var _minWidth: Any = js.native
     
-    /* private */ var _top: js.Any = js.native
+    /* private */ var _top: Any = js.native
     
-    /* private */ var _width: js.Any = js.native
+    /* private */ var _width: Any = js.native
     
     /**
       * Dispose of the resources held by the object.

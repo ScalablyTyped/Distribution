@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@csstools/postcss-cascade-layers" : "1.1.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@csstools/postcss-cascade-layers" : "1.1.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

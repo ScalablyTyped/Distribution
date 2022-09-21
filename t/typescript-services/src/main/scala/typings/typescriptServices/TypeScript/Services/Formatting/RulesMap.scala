@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RulesMap extends StObject {
   
-  /* private */ def FillRule(rule: js.Any, rulesBucketConstructionStateList: js.Any): js.Any
+  /* private */ def FillRule(rule: Any, rulesBucketConstructionStateList: Any): Any
   
   def FillRules(rules: js.Array[Rule], rulesBucketConstructionStateList: js.Array[RulesBucketConstructionState]): Unit
   
   def GetRule(context: FormattingContext): Rule
   
-  /* private */ def GetRuleBucketIndex(row: js.Any, column: js.Any): js.Any
+  /* private */ def GetRuleBucketIndex(row: Any, column: Any): Any
   
   def Initialize(rules: js.Array[Rule]): js.Array[RulesBucket]
   
@@ -23,10 +23,10 @@ trait RulesMap extends StObject {
 object RulesMap {
   
   inline def apply(
-    FillRule: (js.Any, js.Any) => js.Any,
+    FillRule: (Any, Any) => Any,
     FillRules: (js.Array[Rule], js.Array[RulesBucketConstructionState]) => Unit,
     GetRule: FormattingContext => Rule,
-    GetRuleBucketIndex: (js.Any, js.Any) => js.Any,
+    GetRuleBucketIndex: (Any, Any) => Any,
     Initialize: js.Array[Rule] => js.Array[RulesBucket],
     map: js.Array[RulesBucket],
     mapRowLength: Double
@@ -37,13 +37,13 @@ object RulesMap {
   
   extension [Self <: RulesMap](x: Self) {
     
-    inline def setFillRule(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "FillRule", js.Any.fromFunction2(value))
+    inline def setFillRule(value: (Any, Any) => Any): Self = StObject.set(x, "FillRule", js.Any.fromFunction2(value))
     
     inline def setFillRules(value: (js.Array[Rule], js.Array[RulesBucketConstructionState]) => Unit): Self = StObject.set(x, "FillRules", js.Any.fromFunction2(value))
     
     inline def setGetRule(value: FormattingContext => Rule): Self = StObject.set(x, "GetRule", js.Any.fromFunction1(value))
     
-    inline def setGetRuleBucketIndex(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "GetRuleBucketIndex", js.Any.fromFunction2(value))
+    inline def setGetRuleBucketIndex(value: (Any, Any) => Any): Self = StObject.set(x, "GetRuleBucketIndex", js.Any.fromFunction2(value))
     
     inline def setInitialize(value: js.Array[Rule] => js.Array[RulesBucket]): Self = StObject.set(x, "Initialize", js.Any.fromFunction1(value))
     
@@ -51,6 +51,6 @@ object RulesMap {
     
     inline def setMapRowLength(value: Double): Self = StObject.set(x, "mapRowLength", value.asInstanceOf[js.Any])
     
-    inline def setMapVarargs(value: RulesBucket*): Self = StObject.set(x, "map", js.Array(value :_*))
+    inline def setMapVarargs(value: RulesBucket*): Self = StObject.set(x, "map", js.Array(value*))
   }
 }

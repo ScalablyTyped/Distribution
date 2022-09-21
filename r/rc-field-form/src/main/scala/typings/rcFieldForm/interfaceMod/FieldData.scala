@@ -16,6 +16,8 @@ trait FieldData extends StObject {
   var validating: js.UndefOr[Boolean] = js.undefined
   
   var value: js.UndefOr[StoreValue] = js.undefined
+  
+  var warnings: js.UndefOr[js.Array[String]] = js.undefined
 }
 object FieldData {
   
@@ -30,11 +32,11 @@ object FieldData {
     
     inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    inline def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value*))
     
     inline def setName(value: NamePath): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setNameVarargs(value: (String | Double)*): Self = StObject.set(x, "name", js.Array(value :_*))
+    inline def setNameVarargs(value: (String | Double)*): Self = StObject.set(x, "name", js.Array(value*))
     
     inline def setTouched(value: Boolean): Self = StObject.set(x, "touched", value.asInstanceOf[js.Any])
     
@@ -47,5 +49,11 @@ object FieldData {
     inline def setValue(value: StoreValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    
+    inline def setWarnings(value: js.Array[String]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+    
+    inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
+    
+    inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value*))
   }
 }

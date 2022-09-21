@@ -16,8 +16,7 @@ trait GoogleCloudMlV1Version extends StObject {
   
   /**
     * Automatically scale the number of nodes used to serve the model in response to increases and decreases in traffic. Care should be taken to ramp up traffic according to the model's
-    * ability to scale or you will start seeing increases in latency and 429 response codes. Note that you cannot use AutoScaling if your version uses
-    * [GPUs](#Version.FIELDS.accelerator_config). Instead, you must use specify `manual_scaling`.
+    * ability to scale or you will start seeing increases in latency and 429 response codes.
     */
   var autoScaling: js.UndefOr[GoogleCloudMlV1AutoScaling] = js.undefined
   
@@ -71,22 +70,34 @@ trait GoogleCloudMlV1Version extends StObject {
   
   /**
     * Optional. One or more labels that you can add, to organize your model versions. Each label is a key-value pair, where both the key and the value are arbitrary strings that you
-    * supply. For more information, see the documentation on using labels.
+    * supply. For more information, see the documentation on using labels. Note that this field is not updatable for mls1* models.
     */
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ GoogleCloudMlV1__Version & TopLevel[js.Any]
+    */ GoogleCloudMlV1__Version & TopLevel[Any]
   ] = js.undefined
+  
+  /**
+    * Output only. The [AI Platform (Unified) `Model`](https://cloud.google.com/ai-platform-unified/docs/reference/rest/v1beta1/projects.locations.models) ID for the last [model
+    * migration](https://cloud.google.com/ai-platform-unified/docs/start/migrating-to-ai-platform-unified).
+    */
+  var lastMigrationModelId: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Output only. The last time this version was successfully [migrated to AI Platform
+    * (Unified)](https://cloud.google.com/ai-platform-unified/docs/start/migrating-to-ai-platform-unified).
+    */
+  var lastMigrationTime: js.UndefOr[String] = js.undefined
   
   /** Output only. The time the version was last used for prediction. */
   var lastUseTime: js.UndefOr[String] = js.undefined
   
   /**
-    * Optional. The type of machine on which to serve the model. Currently only applies to online prediction service. If this field is not specified, it defaults to `mls1-c1-m2`. Online
-    * prediction supports the following machine types: * `mls1-c1-m2` * `mls1-c4-m2` * `n1-standard-2` * `n1-standard-4` * `n1-standard-8` * `n1-standard-16` * `n1-standard-32` *
-    * `n1-highmem-2` * `n1-highmem-4` * `n1-highmem-8` * `n1-highmem-16` * `n1-highmem-32` * `n1-highcpu-2` * `n1-highcpu-4` * `n1-highcpu-8` * `n1-highcpu-16` * `n1-highcpu-32`
-    * `mls1-c4-m2` is in beta. All other machine types are generally available. Learn more about the [differences between machine types](/ml-engine/docs/machine-types-online-prediction).
+    * Optional. The type of machine on which to serve the model. Currently only applies to online prediction service. To learn about valid values for this field, read [Choosing a machine
+    * type for online prediction](/ai-platform/prediction/docs/machine-types-online-prediction). If this field is not specified and you are using a [regional
+    * endpoint](/ai-platform/prediction/docs/regional-endpoints), then the machine type defaults to `n1-standard-2`. If this field is not specified and you are using the global endpoint
+    * (`ml.googleapis.com`), then the machine type defaults to `mls1-c1-m2`.
     */
   var machineType: js.UndefOr[String] = js.undefined
   
@@ -116,7 +127,7 @@ trait GoogleCloudMlV1Version extends StObject {
     * must set `machineType` to a [legacy (MLS1) machine type](/ml-engine/docs/machine-types-online-prediction). The following code sample provides the Predictor interface: class
     * Predictor(object): """Interface for constructing custom predictors.""" def predict(self, instances, **kwargs): """Performs custom prediction. Instances are the decoded values from
     * the request. They have already been deserialized from JSON. Args: instances: A list of prediction input instances. **kwargs: A dictionary of keyword args provided as additional
-    * fields on the predict request body. Returns: A list of outputs containing the prediction results. This list must be JSON serializable. """ raise NotImplementedError() @classmethod
+    * fields on the predict request body. Returns: A list of outputs containing the prediction results. This list must be JSON serializable. """ raise NotImplementedError() @‍classmethod
     * def from_path(cls, model_dir): """Creates an instance of Predictor using the given path. Loading of the predictor should be done in this method. Args: model_dir: The local directory
     * that contains the exported model file along with any additional files uploaded when creating the version resource. Returns: An instance implementing this Predictor class. """ raise
     * NotImplementedError() Learn more about [the Predictor interface and custom prediction routines](/ml-engine/docs/tensorflow/custom-prediction-routines).
@@ -214,10 +225,18 @@ object GoogleCloudMlV1Version {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ GoogleCloudMlV1__Version & TopLevel[js.Any]
+      */ GoogleCloudMlV1__Version & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    
+    inline def setLastMigrationModelId(value: String): Self = StObject.set(x, "lastMigrationModelId", value.asInstanceOf[js.Any])
+    
+    inline def setLastMigrationModelIdUndefined: Self = StObject.set(x, "lastMigrationModelId", js.undefined)
+    
+    inline def setLastMigrationTime(value: String): Self = StObject.set(x, "lastMigrationTime", value.asInstanceOf[js.Any])
+    
+    inline def setLastMigrationTimeUndefined: Self = StObject.set(x, "lastMigrationTime", js.undefined)
     
     inline def setLastUseTime(value: String): Self = StObject.set(x, "lastUseTime", value.asInstanceOf[js.Any])
     
@@ -239,7 +258,7 @@ object GoogleCloudMlV1Version {
     
     inline def setPackageUrisUndefined: Self = StObject.set(x, "packageUris", js.undefined)
     
-    inline def setPackageUrisVarargs(value: String*): Self = StObject.set(x, "packageUris", js.Array(value :_*))
+    inline def setPackageUrisVarargs(value: String*): Self = StObject.set(x, "packageUris", js.Array(value*))
     
     inline def setPredictionClass(value: String): Self = StObject.set(x, "predictionClass", value.asInstanceOf[js.Any])
     

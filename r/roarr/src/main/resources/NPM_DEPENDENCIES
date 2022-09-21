@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "roarr" : "7.12.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "roarr" : "7.12.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

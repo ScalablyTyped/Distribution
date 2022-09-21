@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "mdast-builder" : "1.1.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "mdast-builder" : "1.1.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

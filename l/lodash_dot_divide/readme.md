@@ -10,10 +10,10 @@ The lodash method `_.divide` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.divide |
 | Keywords           | lodash-modularized, divide |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 1849 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 210.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

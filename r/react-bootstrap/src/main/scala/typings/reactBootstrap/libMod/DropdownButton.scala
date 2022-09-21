@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-bootstrap/lib", "DropdownButton")
 @js.native
-class DropdownButton () extends ^
+open class DropdownButton () extends ^

@@ -7,9 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AutoScalingGroupNamesType extends StObject {
   
   /**
-    * The names of the Auto Scaling groups. By default, you can only specify up to 50 names. You can optionally increase this limit using the MaxRecords parameter. If you omit this parameter, all Auto Scaling groups are described.
+    * The names of the Auto Scaling groups. By default, you can only specify up to 50 names. You can optionally increase this limit using the MaxRecords property. If you omit this property, all Auto Scaling groups are described.
     */
   var AutoScalingGroupNames: js.UndefOr[typings.awsSdk.autoscalingMod.AutoScalingGroupNames] = js.undefined
+  
+  /**
+    * One or more filters to limit the results based on specific tags. 
+    */
+  var Filters: js.UndefOr[typings.awsSdk.autoscalingMod.Filters] = js.undefined
   
   /**
     * The maximum number of items to return with this call. The default value is 50 and the maximum value is 100.
@@ -34,7 +39,13 @@ object AutoScalingGroupNamesType {
     
     inline def setAutoScalingGroupNamesUndefined: Self = StObject.set(x, "AutoScalingGroupNames", js.undefined)
     
-    inline def setAutoScalingGroupNamesVarargs(value: ResourceName*): Self = StObject.set(x, "AutoScalingGroupNames", js.Array(value :_*))
+    inline def setAutoScalingGroupNamesVarargs(value: XmlStringMaxLen255*): Self = StObject.set(x, "AutoScalingGroupNames", js.Array(value*))
+    
+    inline def setFilters(value: Filters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setMaxRecords(value: MaxRecords): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     

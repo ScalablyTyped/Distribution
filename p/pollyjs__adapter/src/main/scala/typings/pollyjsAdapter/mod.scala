@@ -11,7 +11,7 @@ object mod {
   
   @JSImport("@pollyjs/adapter", JSImport.Default)
   @js.native
-  class default ()
+  open class default ()
     extends StObject
        with Adapter {
     
@@ -22,7 +22,7 @@ object mod {
     override def disconnect(): Unit = js.native
     
     /* CompleteClass */
-    override val options: StringDictionary[js.Any] = js.native
+    override val options: StringDictionary[Any] = js.native
     
     /* CompleteClass */
     override def passthroughRequest(pollyRequest: Request): js.Promise[Body] = js.native
@@ -45,7 +45,7 @@ object mod {
     
     def disconnect(): Unit
     
-    val options: StringDictionary[js.Any]
+    val options: StringDictionary[Any]
     
     def passthroughRequest(pollyRequest: Request): js.Promise[Body]
   }
@@ -54,7 +54,7 @@ object mod {
     inline def apply(
       connect: () => Unit,
       disconnect: () => Unit,
-      options: StringDictionary[js.Any],
+      options: StringDictionary[Any],
       passthroughRequest: Request => js.Promise[Body]
     ): Adapter = {
       val __obj = js.Dynamic.literal(connect = js.Any.fromFunction0(connect), disconnect = js.Any.fromFunction0(disconnect), options = options.asInstanceOf[js.Any], passthroughRequest = js.Any.fromFunction1(passthroughRequest))
@@ -67,7 +67,7 @@ object mod {
       
       inline def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
       
-      inline def setOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: StringDictionary[Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       inline def setPassthroughRequest(value: Request => js.Promise[Body]): Self = StObject.set(x, "passthroughRequest", js.Any.fromFunction1(value))
     }

@@ -16,7 +16,7 @@ trait CliThemeConfig extends StObject {
   @JSName("delimiter.text")
   var delimiterDottext: js.UndefOr[String] = js.undefined
   
-  var styles: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var styles: js.UndefOr[StringDictionary[Any]] = js.undefined
 }
 object CliThemeConfig {
   
@@ -39,7 +39,7 @@ object CliThemeConfig {
     
     inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
     
-    inline def setStyles(value: StringDictionary[js.Any]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: StringDictionary[Any]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
     inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
   }

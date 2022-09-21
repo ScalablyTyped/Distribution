@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "socket.io-parser" : "4.2.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "socket.io-parser" : "4.2.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

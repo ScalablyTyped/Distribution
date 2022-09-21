@@ -25,17 +25,8 @@ trait Fields extends StObject {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[String] = js.undefined
   
-  /** Unique identifier an image within the set of images attached to this edit. */
-  var imageId: String
-  
-  /** Type of the Image. */
-  var imageType: String
-  
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[String] = js.undefined
-  
-  /** Language localization code (a BCP-47 language tag; for example, "de-AT" for Austrian German). */
-  var language: String
   
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[String] = js.undefined
@@ -57,8 +48,8 @@ trait Fields extends StObject {
 }
 object Fields {
   
-  inline def apply(editId: String, imageId: String, imageType: String, language: String, packageName: String): Fields = {
-    val __obj = js.Dynamic.literal(editId = editId.asInstanceOf[js.Any], imageId = imageId.asInstanceOf[js.Any], imageType = imageType.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], packageName = packageName.asInstanceOf[js.Any])
+  inline def apply(editId: String, packageName: String): Fields = {
+    val __obj = js.Dynamic.literal(editId = editId.asInstanceOf[js.Any], packageName = packageName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fields]
   }
   
@@ -86,15 +77,9 @@ object Fields {
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setImageId(value: String): Self = StObject.set(x, "imageId", value.asInstanceOf[js.Any])
-    
-    inline def setImageType(value: String): Self = StObject.set(x, "imageType", value.asInstanceOf[js.Any])
-    
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
-    
-    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
     inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     

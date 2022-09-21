@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GooglePrivacyDlpV2CryptoKey extends StObject {
   
-  /** Kms wrapped key */
+  /** Key wrapped using Cloud KMS */
   var kmsWrapped: js.UndefOr[GooglePrivacyDlpV2KmsWrappedCryptoKey] = js.undefined
   
   /** Transient crypto key */

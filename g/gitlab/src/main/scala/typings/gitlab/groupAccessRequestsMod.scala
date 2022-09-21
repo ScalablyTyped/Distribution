@@ -10,7 +10,7 @@ object groupAccessRequestsMod {
   
   @JSImport("gitlab/dist/types/core/services/GroupAccessRequests", "GroupAccessRequests")
   @js.native
-  class GroupAccessRequests protected () extends ResourceAccessRequests {
+  open class GroupAccessRequests protected () extends ResourceAccessRequests {
     def this(options: BaseServiceOptions) = this()
   }
 }

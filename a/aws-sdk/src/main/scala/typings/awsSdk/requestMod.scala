@@ -13,7 +13,7 @@ import typings.awsSdk.awsSdkStrings.httpError
 import typings.awsSdk.awsSdkStrings.httpHeaders
 import typings.awsSdk.awsSdkStrings.httpUploadProgress
 import typings.awsSdk.awsSdkStrings.retry_
-import typings.awsSdk.awsSdkStrings.send_
+import typings.awsSdk.awsSdkStrings.send__
 import typings.awsSdk.awsSdkStrings.sign__
 import typings.awsSdk.awsSdkStrings.success__
 import typings.awsSdk.awsSdkStrings.validate_
@@ -21,11 +21,8 @@ import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.httpRequestMod.HttpRequest
 import typings.awsSdk.responseMod.Response
 import typings.awsSdk.serviceMod.Service
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Readable
-import typings.std.Date
-import typings.std.Error
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,7 +31,7 @@ object requestMod {
   
   @JSImport("aws-sdk/lib/request", "Request")
   @js.native
-  class Request[D, E] protected () extends StObject {
+  open class Request[D, E] protected () extends StObject {
     /**
       * Creates a request for an operation on a given service with a set of input parameters.
       *
@@ -43,7 +40,7 @@ object requestMod {
       * @param {object} params - Parameters to send to the operation.
       */
     def this(service: Service, operation: String) = this()
-    def this(service: Service, operation: String, params: js.Any) = this()
+    def this(service: Service, operation: String, params: Any) = this()
     
     /**
       * Aborts a request, emitting the error and complete events.
@@ -166,12 +163,12 @@ object requestMod {
     @JSName("onAsync")
     def onAsync_httpData(
       event: httpData,
-      listener: js.Function2[/* chunk */ Buffer | Uint8Array, /* response */ Response[D, E], Unit]
+      listener: js.Function2[/* chunk */ Buffer | js.typedarray.Uint8Array, /* response */ Response[D, E], Unit]
     ): Request[D, E] = js.native
     @JSName("onAsync")
     def onAsync_httpData(
       event: httpData,
-      listener: js.Function2[/* chunk */ Buffer | Uint8Array, /* response */ Response[D, E], Unit],
+      listener: js.Function2[/* chunk */ Buffer | js.typedarray.Uint8Array, /* response */ Response[D, E], Unit],
       prepend: Boolean
     ): Request[D, E] = js.native
     /**
@@ -211,11 +208,11 @@ object requestMod {
       * @param {boolean} prepend - If set, prepends listener instead of appending.
       */
     @JSName("onAsync")
-    def onAsync_httpError(event: httpError, listener: js.Function2[/* err */ Error, /* response */ Response[D, E], Unit]): Request[D, E] = js.native
+    def onAsync_httpError(event: httpError, listener: js.Function2[/* err */ js.Error, /* response */ Response[D, E], Unit]): Request[D, E] = js.native
     @JSName("onAsync")
     def onAsync_httpError(
       event: httpError,
-      listener: js.Function2[/* err */ Error, /* response */ Response[D, E], Unit],
+      listener: js.Function2[/* err */ js.Error, /* response */ Response[D, E], Unit],
       prepend: Boolean
     ): Request[D, E] = js.native
     /**
@@ -285,9 +282,9 @@ object requestMod {
       * @param {boolean} prepend - If set, prepends listener instead of appending.
       */
     @JSName("onAsync")
-    def onAsync_send(event: send_, listener: js.Function1[/* response */ Response[D, E], Unit]): Request[D, E] = js.native
+    def onAsync_send(event: send__, listener: js.Function1[/* response */ Response[D, E], Unit]): Request[D, E] = js.native
     @JSName("onAsync")
-    def onAsync_send(event: send_, listener: js.Function1[/* response */ Response[D, E], Unit], prepend: Boolean): Request[D, E] = js.native
+    def onAsync_send(event: send__, listener: js.Function1[/* response */ Response[D, E], Unit], prepend: Boolean): Request[D, E] = js.native
     /**
       * Adds a listener that is triggered when a request is being signed.
       *
@@ -391,12 +388,12 @@ object requestMod {
     @JSName("on")
     def on_httpData(
       event: httpData,
-      listener: js.Function2[/* chunk */ Buffer | Uint8Array, /* response */ Response[D, E], Unit]
+      listener: js.Function2[/* chunk */ Buffer | js.typedarray.Uint8Array, /* response */ Response[D, E], Unit]
     ): Request[D, E] = js.native
     @JSName("on")
     def on_httpData(
       event: httpData,
-      listener: js.Function2[/* chunk */ Buffer | Uint8Array, /* response */ Response[D, E], Unit],
+      listener: js.Function2[/* chunk */ Buffer | js.typedarray.Uint8Array, /* response */ Response[D, E], Unit],
       prepend: Boolean
     ): Request[D, E] = js.native
     /**
@@ -436,11 +433,11 @@ object requestMod {
       * @param {boolean} prepend - If set, prepends listener instead of appending.
       */
     @JSName("on")
-    def on_httpError(event: httpError, listener: js.Function2[/* err */ Error, /* response */ Response[D, E], Unit]): Request[D, E] = js.native
+    def on_httpError(event: httpError, listener: js.Function2[/* err */ js.Error, /* response */ Response[D, E], Unit]): Request[D, E] = js.native
     @JSName("on")
     def on_httpError(
       event: httpError,
-      listener: js.Function2[/* err */ Error, /* response */ Response[D, E], Unit],
+      listener: js.Function2[/* err */ js.Error, /* response */ Response[D, E], Unit],
       prepend: Boolean
     ): Request[D, E] = js.native
     /**
@@ -510,9 +507,9 @@ object requestMod {
       * @param {boolean} prepend - If set, prepends listener instead of appending.
       */
     @JSName("on")
-    def on_send(event: send_, listener: js.Function1[/* response */ Response[D, E], Unit]): Request[D, E] = js.native
+    def on_send(event: send__, listener: js.Function1[/* response */ Response[D, E], Unit]): Request[D, E] = js.native
     @JSName("on")
-    def on_send(event: send_, listener: js.Function1[/* response */ Response[D, E], Unit], prepend: Boolean): Request[D, E] = js.native
+    def on_send(event: send__, listener: js.Function1[/* response */ Response[D, E], Unit], prepend: Boolean): Request[D, E] = js.native
     /**
       * Adds a listener that is triggered when a request is being signed.
       *
@@ -562,7 +559,7 @@ object requestMod {
     /**
       * The time that the request started.
       */
-    var startTime: Date = js.native
+    var startTime: js.Date = js.native
   }
   
   trait Progress extends StObject {

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "linked-list" : "3.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "linked-list" : "3.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

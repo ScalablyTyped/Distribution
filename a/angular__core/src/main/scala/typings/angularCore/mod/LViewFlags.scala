@@ -39,7 +39,7 @@ trait LViewFlags extends StObject
 object LViewFlags {
   
   /** Whether or not this view is currently attached to change detection tree. */
-  inline def Attached: `128` = 128.asInstanceOf[`128`]
+  inline def Attached: `64` = 64.asInstanceOf[`64`]
   
   /** Whether this view has default change detection strategy (checks always) or onPush */
   inline def CheckAlways: `16` = 16.asInstanceOf[`16`]
@@ -55,10 +55,10 @@ object LViewFlags {
   inline def CreationMode: `4` = 4.asInstanceOf[`4`]
   
   /** Whether or not this view is destroyed. */
-  inline def Destroyed: `256` = 256.asInstanceOf[`256`]
+  inline def Destroyed: `128` = 128.asInstanceOf[`128`]
   
   /** Whether or not this view is currently dirty (needing check) */
-  inline def Dirty: `64` = 64.asInstanceOf[`64`]
+  inline def Dirty: `32` = 32.asInstanceOf[`32`]
   
   /**
     * Whether or not this LView instance is on its first processing pass.
@@ -68,6 +68,9 @@ object LViewFlags {
     * time, the flag is turned off.
     */
   inline def FirstLViewPass: `8` = 8.asInstanceOf[`8`]
+  
+  /** Indicates that the view **or any of its ancestors** have an embedded view injector. */
+  inline def HasEmbeddedViewInjector: `1024` = 1024.asInstanceOf[`1024`]
   
   /**
     * Index of the current init phase on last 21 bits
@@ -84,28 +87,11 @@ object LViewFlags {
   inline def InitPhaseStateMask: `3` = 3.asInstanceOf[`3`]
   
   /** Whether or not this view is the root view */
-  inline def IsRoot: `512` = 512.asInstanceOf[`512`]
-  
-  /**
-    * Whether or not manual change detection is turned on for onPush components.
-    *
-    * This is a special mode that only marks components dirty in two cases:
-    * 1) There has been a change to an @Input property
-    * 2) `markDirty()` has been called manually by the user
-    *
-    * Note that in this mode, the firing of events does NOT mark components
-    * dirty automatically.
-    *
-    * Manual mode is turned off by default for backwards compatibility, as events
-    * automatically mark OnPush components dirty in View Engine.
-    *
-    * TODO: Add a public API to ChangeDetectionStrategy to turn this mode on
-    */
-  inline def ManualOnPush: `32` = 32.asInstanceOf[`32`]
+  inline def IsRoot: `256` = 256.asInstanceOf[`256`]
   
   /**
     * Whether this moved LView was needs to be refreshed at the insertion location because the
     * declaration was dirty.
     */
-  inline def RefreshTransplantedView: `1024` = 1024.asInstanceOf[`1024`]
+  inline def RefreshTransplantedView: `512` = 512.asInstanceOf[`512`]
 }

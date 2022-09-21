@@ -1,0 +1,23 @@
+package typings.mauron85ReactNativeBackgroundGeolocation.mod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* Rewritten from type alias, can be one of: 
+  - typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.AutomotiveNavigation
+  - typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.OtherNavigation
+  - typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.Fitness
+  - typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.Other
+*/
+trait iOSActivityType extends StObject
+object iOSActivityType {
+  
+  inline def AutomotiveNavigation: typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.AutomotiveNavigation = "AutomotiveNavigation".asInstanceOf[typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.AutomotiveNavigation]
+  
+  inline def Fitness: typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.Fitness = "Fitness".asInstanceOf[typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.Fitness]
+  
+  inline def Other: typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.Other = "Other".asInstanceOf[typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.Other]
+  
+  inline def OtherNavigation: typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.OtherNavigation = "OtherNavigation".asInstanceOf[typings.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.OtherNavigation]
+}

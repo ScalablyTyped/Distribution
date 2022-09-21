@@ -66,6 +66,9 @@ object gapi {
         /** Total cost of the account in current specified period in the account's specified currency. */
         var currentPeriodTotalCost: js.UndefOr[Double] = js.undefined
         
+        /** Number of impressions that customers have had in the past 2 days. */
+        var impressionsLastTwoDays: js.UndefOr[String] = js.undefined
+        
         /**
           * Phone lead responsiveness of the account for the past 90 days from current date. This is computed by taking the total number of connected calls from charged phone leads and dividing
           * by the total number of calls received.
@@ -136,6 +139,10 @@ object gapi {
           
           inline def setCurrentPeriodTotalCostUndefined: Self = StObject.set(x, "currentPeriodTotalCost", js.undefined)
           
+          inline def setImpressionsLastTwoDays(value: String): Self = StObject.set(x, "impressionsLastTwoDays", value.asInstanceOf[js.Any])
+          
+          inline def setImpressionsLastTwoDaysUndefined: Self = StObject.set(x, "impressionsLastTwoDays", js.undefined)
+          
           inline def setPhoneLeadResponsiveness(value: Double): Self = StObject.set(x, "phoneLeadResponsiveness", value.asInstanceOf[js.Any])
           
           inline def setPhoneLeadResponsivenessUndefined: Self = StObject.set(x, "phoneLeadResponsiveness", js.undefined)
@@ -182,6 +189,54 @@ object gapi {
         }
       }
       
+      trait GoogleAdsHomeservicesLocalservicesV1BookingLead extends StObject {
+        
+        /** Timestamp of when service is provided by advertiser. */
+        var bookingAppointmentTimestamp: js.UndefOr[String] = js.undefined
+        
+        /** Consumer email associated with the booking lead. */
+        var consumerEmail: js.UndefOr[String] = js.undefined
+        
+        /** Consumer phone number associated with the booking lead. */
+        var consumerPhoneNumber: js.UndefOr[String] = js.undefined
+        
+        /** Name of the customer who created the lead. */
+        var customerName: js.UndefOr[String] = js.undefined
+        
+        /** The job type of the specified lead. */
+        var jobType: js.UndefOr[String] = js.undefined
+      }
+      object GoogleAdsHomeservicesLocalservicesV1BookingLead {
+        
+        inline def apply(): GoogleAdsHomeservicesLocalservicesV1BookingLead = {
+          val __obj = js.Dynamic.literal()
+          __obj.asInstanceOf[GoogleAdsHomeservicesLocalservicesV1BookingLead]
+        }
+        
+        extension [Self <: GoogleAdsHomeservicesLocalservicesV1BookingLead](x: Self) {
+          
+          inline def setBookingAppointmentTimestamp(value: String): Self = StObject.set(x, "bookingAppointmentTimestamp", value.asInstanceOf[js.Any])
+          
+          inline def setBookingAppointmentTimestampUndefined: Self = StObject.set(x, "bookingAppointmentTimestamp", js.undefined)
+          
+          inline def setConsumerEmail(value: String): Self = StObject.set(x, "consumerEmail", value.asInstanceOf[js.Any])
+          
+          inline def setConsumerEmailUndefined: Self = StObject.set(x, "consumerEmail", js.undefined)
+          
+          inline def setConsumerPhoneNumber(value: String): Self = StObject.set(x, "consumerPhoneNumber", value.asInstanceOf[js.Any])
+          
+          inline def setConsumerPhoneNumberUndefined: Self = StObject.set(x, "consumerPhoneNumber", js.undefined)
+          
+          inline def setCustomerName(value: String): Self = StObject.set(x, "customerName", value.asInstanceOf[js.Any])
+          
+          inline def setCustomerNameUndefined: Self = StObject.set(x, "customerName", js.undefined)
+          
+          inline def setJobType(value: String): Self = StObject.set(x, "jobType", value.asInstanceOf[js.Any])
+          
+          inline def setJobTypeUndefined: Self = StObject.set(x, "jobType", js.undefined)
+        }
+      }
+      
       trait GoogleAdsHomeservicesLocalservicesV1DetailedLeadReport extends StObject {
         
         /** Identifies account that received the lead. */
@@ -189,6 +244,9 @@ object gapi {
         
         /** Aggregator specific information related to the lead. */
         var aggregatorInfo: js.UndefOr[GoogleAdsHomeservicesLocalservicesV1AggregatorInfo] = js.undefined
+        
+        /** More information associated to only booking leads. */
+        var bookingLead: js.UndefOr[GoogleAdsHomeservicesLocalservicesV1BookingLead] = js.undefined
         
         /** Business name associated to the account. */
         var businessName: js.UndefOr[String] = js.undefined
@@ -245,6 +303,10 @@ object gapi {
           inline def setAggregatorInfo(value: GoogleAdsHomeservicesLocalservicesV1AggregatorInfo): Self = StObject.set(x, "aggregatorInfo", value.asInstanceOf[js.Any])
           
           inline def setAggregatorInfoUndefined: Self = StObject.set(x, "aggregatorInfo", js.undefined)
+          
+          inline def setBookingLead(value: GoogleAdsHomeservicesLocalservicesV1BookingLead): Self = StObject.set(x, "bookingLead", value.asInstanceOf[js.Any])
+          
+          inline def setBookingLeadUndefined: Self = StObject.set(x, "bookingLead", js.undefined)
           
           inline def setBusinessName(value: String): Self = StObject.set(x, "businessName", value.asInstanceOf[js.Any])
           
@@ -396,7 +458,7 @@ object gapi {
           
           inline def setAccountReportsUndefined: Self = StObject.set(x, "accountReports", js.undefined)
           
-          inline def setAccountReportsVarargs(value: GoogleAdsHomeservicesLocalservicesV1AccountReport*): Self = StObject.set(x, "accountReports", js.Array(value :_*))
+          inline def setAccountReportsVarargs(value: GoogleAdsHomeservicesLocalservicesV1AccountReport*): Self = StObject.set(x, "accountReports", js.Array(value*))
           
           inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
           
@@ -425,7 +487,7 @@ object gapi {
           
           inline def setDetailedLeadReportsUndefined: Self = StObject.set(x, "detailedLeadReports", js.undefined)
           
-          inline def setDetailedLeadReportsVarargs(value: GoogleAdsHomeservicesLocalservicesV1DetailedLeadReport*): Self = StObject.set(x, "detailedLeadReports", js.Array(value :_*))
+          inline def setDetailedLeadReportsVarargs(value: GoogleAdsHomeservicesLocalservicesV1DetailedLeadReport*): Self = StObject.set(x, "detailedLeadReports", js.Array(value*))
           
           inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
           

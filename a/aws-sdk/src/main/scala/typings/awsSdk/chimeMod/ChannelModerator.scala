@@ -12,14 +12,14 @@ trait ChannelModerator extends StObject {
   var ChannelArn: js.UndefOr[ChimeArn] = js.undefined
   
   /**
-    * The member who created the moderator.
+    * The AppInstanceUser who created the moderator.
     */
   var CreatedBy: js.UndefOr[Identity] = js.undefined
   
   /**
     * The time at which the moderator was created.
     */
-  var CreatedTimestamp: js.UndefOr[Timestamp] = js.undefined
+  var CreatedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The moderator's data.
@@ -43,7 +43,7 @@ object ChannelModerator {
     
     inline def setCreatedByUndefined: Self = StObject.set(x, "CreatedBy", js.undefined)
     
-    inline def setCreatedTimestamp(value: Timestamp): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreatedTimestamp(value: js.Date): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     

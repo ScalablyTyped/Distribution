@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteProvisioningTemplateVersionRequest extends StObject {
   
   /**
-    * The name of the fleet provisioning template version to delete.
+    * The name of the provisioning template version to delete.
     */
   var templateName: TemplateName
   
   /**
-    * The fleet provisioning template version ID to delete.
+    * The provisioning template version ID to delete.
     */
   var versionId: TemplateVersionId
 }

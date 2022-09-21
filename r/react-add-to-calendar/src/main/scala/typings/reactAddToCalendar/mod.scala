@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,10 +13,9 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-add-to-calendar", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[AddToCalendarProps, ComponentState, js.Any] {
+  open class default protected () extends Component[AddToCalendarProps, ComponentState, Any] {
     def this(props: AddToCalendarProps) = this()
-    def this(props: AddToCalendarProps, context: js.Any) = this()
+    def this(props: AddToCalendarProps, context: Any) = this()
   }
   @JSImport("react-add-to-calendar", JSImport.Default)
   @js.native
@@ -27,11 +25,11 @@ object mod extends Shortcut {
     
     var description: js.UndefOr[String] = js.undefined
     
-    var endTime: js.UndefOr[String | Date] = js.undefined
+    var endTime: js.UndefOr[String | js.Date] = js.undefined
     
     var location: js.UndefOr[String] = js.undefined
     
-    var startTime: js.UndefOr[String | Date] = js.undefined
+    var startTime: js.UndefOr[String | js.Date] = js.undefined
     
     var title: js.UndefOr[String] = js.undefined
   }
@@ -48,7 +46,7 @@ object mod extends Shortcut {
       
       inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      inline def setEndTime(value: String | Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+      inline def setEndTime(value: String | js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
       
       inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
       
@@ -56,7 +54,7 @@ object mod extends Shortcut {
       
       inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
       
-      inline def setStartTime(value: String | Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: String | js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       
       inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
       
@@ -76,7 +74,7 @@ object mod extends Shortcut {
     
     var buttonLabel: js.UndefOr[String] = js.undefined
     
-    var buttonTemplate: js.UndefOr[js.Any] = js.undefined
+    var buttonTemplate: js.UndefOr[Any] = js.undefined
     
     var buttonWrapperClass: js.UndefOr[String] = js.undefined
     
@@ -86,7 +84,7 @@ object mod extends Shortcut {
     
     var event: AddToCalendarEvent
     
-    var listItems: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var listItems: js.UndefOr[js.Array[Any]] = js.undefined
     
     var optionsOpen: js.UndefOr[Boolean] = js.undefined
     
@@ -119,7 +117,7 @@ object mod extends Shortcut {
       
       inline def setButtonLabelUndefined: Self = StObject.set(x, "buttonLabel", js.undefined)
       
-      inline def setButtonTemplate(value: js.Any): Self = StObject.set(x, "buttonTemplate", value.asInstanceOf[js.Any])
+      inline def setButtonTemplate(value: Any): Self = StObject.set(x, "buttonTemplate", value.asInstanceOf[js.Any])
       
       inline def setButtonTemplateUndefined: Self = StObject.set(x, "buttonTemplate", js.undefined)
       
@@ -137,11 +135,11 @@ object mod extends Shortcut {
       
       inline def setEvent(value: AddToCalendarEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      inline def setListItems(value: js.Array[js.Any]): Self = StObject.set(x, "listItems", value.asInstanceOf[js.Any])
+      inline def setListItems(value: js.Array[Any]): Self = StObject.set(x, "listItems", value.asInstanceOf[js.Any])
       
       inline def setListItemsUndefined: Self = StObject.set(x, "listItems", js.undefined)
       
-      inline def setListItemsVarargs(value: js.Any*): Self = StObject.set(x, "listItems", js.Array(value :_*))
+      inline def setListItemsVarargs(value: Any*): Self = StObject.set(x, "listItems", js.Array(value*))
       
       inline def setOptionsOpen(value: Boolean): Self = StObject.set(x, "optionsOpen", value.asInstanceOf[js.Any])
       

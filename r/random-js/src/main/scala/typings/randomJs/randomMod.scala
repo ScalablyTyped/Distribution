@@ -2,7 +2,6 @@ package typings.randomJs
 
 import typings.randomJs.typesMod.Engine
 import typings.std.ArrayLike
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ object randomMod {
     * Creates a new Random wrapper
     * @param engine The engine to use (defaults to a `Math.random`-based implementation)
     */
-  class Random () extends StObject {
+  open class Random () extends StObject {
     def this(engine: Engine) = this()
     
     /**
@@ -39,7 +38,7 @@ object randomMod {
       * @param start The minimum `Date`
       * @param end The maximum `Date`
       */
-    def date(start: Date, end: Date): Date = js.native
+    def date(start: js.Date, end: js.Date): js.Date = js.native
     
     /**
       * Returns an array of length `dieCount` of values within [1, sideCount]
@@ -54,7 +53,7 @@ object randomMod {
       */
     def die(sideCount: Double): Double = js.native
     
-    /* private */ val engine: js.Any = js.native
+    /* private */ val engine: Any = js.native
     
     /**
       * Returns a random string comprised of numbers or the characters `abcdef`

@@ -7,9 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ImportImageRequest extends StObject {
   
   /**
-    * The architecture of the virtual machine. Valid values: i386 | x86_64 | arm64 
+    * The architecture of the virtual machine. Valid values: i386 | x86_64 
     */
   var Architecture: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The boot mode of the virtual machine.
+    */
+  var BootMode: js.UndefOr[BootModeValues] = js.undefined
   
   /**
     * The client-specific data.
@@ -37,7 +42,7 @@ trait ImportImageRequest extends StObject {
   var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specifies whether the destination AMI of the imported image should be encrypted. The default CMK for EBS is used unless you specify a non-default AWS Key Management Service (AWS KMS) CMK using KmsKeyId. For more information, see Amazon EBS Encryption in the Amazon Elastic Compute Cloud User Guide.
+    * Specifies whether the destination AMI of the imported image should be encrypted. The default KMS key for EBS is used unless you specify a non-default KMS key using KmsKeyId. For more information, see Amazon EBS Encryption in the Amazon Elastic Compute Cloud User Guide.
     */
   var Encrypted: js.UndefOr[Boolean] = js.undefined
   
@@ -47,7 +52,7 @@ trait ImportImageRequest extends StObject {
   var Hypervisor: js.UndefOr[String] = js.undefined
   
   /**
-    * An identifier for the symmetric AWS Key Management Service (AWS KMS) customer master key (CMK) to use when creating the encrypted AMI. This parameter is only required if you want to use a non-default CMK; if this parameter is not specified, the default CMK for EBS is used. If a KmsKeyId is specified, the Encrypted flag must also be set.  The CMK identifier may be provided in any of the following formats:    Key ID   Key alias. The alias ARN contains the arn:aws:kms namespace, followed by the Region of the CMK, the AWS account ID of the CMK owner, the alias namespace, and then the CMK alias. For example, arn:aws:kms:us-east-1:012345678910:alias/ExampleAlias.   ARN using key ID. The ID ARN contains the arn:aws:kms namespace, followed by the Region of the CMK, the AWS account ID of the CMK owner, the key namespace, and then the CMK ID. For example, arn:aws:kms:us-east-1:012345678910:key/abcd1234-a123-456a-a12b-a123b4cd56ef.   ARN using key alias. The alias ARN contains the arn:aws:kms namespace, followed by the Region of the CMK, the AWS account ID of the CMK owner, the alias namespace, and then the CMK alias. For example, arn:aws:kms:us-east-1:012345678910:alias/ExampleAlias.    AWS parses KmsKeyId asynchronously, meaning that the action you call may appear to complete even though you provided an invalid identifier. This action will eventually report failure.  The specified CMK must exist in the Region that the AMI is being copied to. Amazon EBS does not support asymmetric CMKs.
+    * An identifier for the symmetric KMS key to use when creating the encrypted AMI. This parameter is only required if you want to use a non-default KMS key; if this parameter is not specified, the default KMS key for EBS is used. If a KmsKeyId is specified, the Encrypted flag must also be set.  The KMS key identifier may be provided in any of the following formats:    Key ID   Key alias. The alias ARN contains the arn:aws:kms namespace, followed by the Region of the key, the Amazon Web Services account ID of the key owner, the alias namespace, and then the key alias. For example, arn:aws:kms:us-east-1:012345678910:alias/ExampleAlias.   ARN using key ID. The ID ARN contains the arn:aws:kms namespace, followed by the Region of the key, the Amazon Web Services account ID of the key owner, the key namespace, and then the key ID. For example, arn:aws:kms:us-east-1:012345678910:key/abcd1234-a123-456a-a12b-a123b4cd56ef.   ARN using key alias. The alias ARN contains the arn:aws:kms namespace, followed by the Region of the key, the Amazon Web Services account ID of the key owner, the alias namespace, and then the key alias. For example, arn:aws:kms:us-east-1:012345678910:alias/ExampleAlias.    Amazon Web Services parses KmsKeyId asynchronously, meaning that the action you call may appear to complete even though you provided an invalid identifier. This action will eventually report failure.  The specified KMS key must exist in the Region that the AMI is being copied to. Amazon EBS does not support asymmetric KMS keys.
     */
   var KmsKeyId: js.UndefOr[typings.awsSdk.ec2Mod.KmsKeyId] = js.undefined
   
@@ -57,7 +62,7 @@ trait ImportImageRequest extends StObject {
   var LicenseSpecifications: js.UndefOr[ImportImageLicenseSpecificationListRequest] = js.undefined
   
   /**
-    * The license type to be used for the Amazon Machine Image (AMI) after importing. By default, we detect the source-system operating system (OS) and apply the appropriate license. Specify AWS to replace the source-system license with an AWS license, if appropriate. Specify BYOL to retain the source-system license, if appropriate. To use BYOL, you must have existing licenses with rights to use these licenses in a third party cloud, such as AWS. For more information, see Prerequisites in the VM Import/Export User Guide.
+    * The license type to be used for the Amazon Machine Image (AMI) after importing. By default, we detect the source-system operating system (OS) and apply the appropriate license. Specify AWS to replace the source-system license with an Amazon Web Services license, if appropriate. Specify BYOL to retain the source-system license, if appropriate. To use BYOL, you must have existing licenses with rights to use these licenses in a third party cloud, such as Amazon Web Services. For more information, see Prerequisites in the VM Import/Export User Guide.
     */
   var LicenseType: js.UndefOr[String] = js.undefined
   
@@ -72,9 +77,14 @@ trait ImportImageRequest extends StObject {
   var RoleName: js.UndefOr[String] = js.undefined
   
   /**
-    * The tags to apply to the image being imported.
+    * The tags to apply to the import image task during creation.
     */
   var TagSpecifications: js.UndefOr[TagSpecificationList] = js.undefined
+  
+  /**
+    * The usage operation value. For more information, see Licensing options in the VM Import/Export User Guide.
+    */
+  var UsageOperation: js.UndefOr[String] = js.undefined
 }
 object ImportImageRequest {
   
@@ -88,6 +98,10 @@ object ImportImageRequest {
     inline def setArchitecture(value: String): Self = StObject.set(x, "Architecture", value.asInstanceOf[js.Any])
     
     inline def setArchitectureUndefined: Self = StObject.set(x, "Architecture", js.undefined)
+    
+    inline def setBootMode(value: BootModeValues): Self = StObject.set(x, "BootMode", value.asInstanceOf[js.Any])
+    
+    inline def setBootModeUndefined: Self = StObject.set(x, "BootMode", js.undefined)
     
     inline def setClientData(value: ClientData): Self = StObject.set(x, "ClientData", value.asInstanceOf[js.Any])
     
@@ -105,7 +119,7 @@ object ImportImageRequest {
     
     inline def setDiskContainersUndefined: Self = StObject.set(x, "DiskContainers", js.undefined)
     
-    inline def setDiskContainersVarargs(value: ImageDiskContainer*): Self = StObject.set(x, "DiskContainers", js.Array(value :_*))
+    inline def setDiskContainersVarargs(value: ImageDiskContainer*): Self = StObject.set(x, "DiskContainers", js.Array(value*))
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
@@ -127,7 +141,7 @@ object ImportImageRequest {
     
     inline def setLicenseSpecificationsUndefined: Self = StObject.set(x, "LicenseSpecifications", js.undefined)
     
-    inline def setLicenseSpecificationsVarargs(value: ImportImageLicenseConfigurationRequest*): Self = StObject.set(x, "LicenseSpecifications", js.Array(value :_*))
+    inline def setLicenseSpecificationsVarargs(value: ImportImageLicenseConfigurationRequest*): Self = StObject.set(x, "LicenseSpecifications", js.Array(value*))
     
     inline def setLicenseType(value: String): Self = StObject.set(x, "LicenseType", value.asInstanceOf[js.Any])
     
@@ -145,6 +159,10 @@ object ImportImageRequest {
     
     inline def setTagSpecificationsUndefined: Self = StObject.set(x, "TagSpecifications", js.undefined)
     
-    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value :_*))
+    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value*))
+    
+    inline def setUsageOperation(value: String): Self = StObject.set(x, "UsageOperation", value.asInstanceOf[js.Any])
+    
+    inline def setUsageOperationUndefined: Self = StObject.set(x, "UsageOperation", js.undefined)
   }
 }

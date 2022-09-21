@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vscode", "DebugAdapterInlineImplementation")
 @js.native
-class DebugAdapterInlineImplementation protected ()
+open class DebugAdapterInlineImplementation protected ()
   extends StObject
      with DebugAdapterDescriptor {
   /**

@@ -15,7 +15,7 @@ trait RestorePlanResponse extends StObject {
   
   var dbFiles: js.Array[RestoreDatabaseFileInfo]
   
-  var errorMessage: String
+  var errorMessage: js.UndefOr[String] = js.undefined
   
   var planDetails: StringDictionary[RestorePlanDetailInfo]
   
@@ -28,11 +28,10 @@ object RestorePlanResponse {
     canRestore: Boolean,
     databaseNamesFromBackupSets: js.Array[String],
     dbFiles: js.Array[RestoreDatabaseFileInfo],
-    errorMessage: String,
     planDetails: StringDictionary[RestorePlanDetailInfo],
     sessionId: String
   ): RestorePlanResponse = {
-    val __obj = js.Dynamic.literal(backupSetsToRestore = backupSetsToRestore.asInstanceOf[js.Any], canRestore = canRestore.asInstanceOf[js.Any], databaseNamesFromBackupSets = databaseNamesFromBackupSets.asInstanceOf[js.Any], dbFiles = dbFiles.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], planDetails = planDetails.asInstanceOf[js.Any], sessionId = sessionId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(backupSetsToRestore = backupSetsToRestore.asInstanceOf[js.Any], canRestore = canRestore.asInstanceOf[js.Any], databaseNamesFromBackupSets = databaseNamesFromBackupSets.asInstanceOf[js.Any], dbFiles = dbFiles.asInstanceOf[js.Any], planDetails = planDetails.asInstanceOf[js.Any], sessionId = sessionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestorePlanResponse]
   }
   
@@ -40,19 +39,21 @@ object RestorePlanResponse {
     
     inline def setBackupSetsToRestore(value: js.Array[DatabaseFileInfo]): Self = StObject.set(x, "backupSetsToRestore", value.asInstanceOf[js.Any])
     
-    inline def setBackupSetsToRestoreVarargs(value: DatabaseFileInfo*): Self = StObject.set(x, "backupSetsToRestore", js.Array(value :_*))
+    inline def setBackupSetsToRestoreVarargs(value: DatabaseFileInfo*): Self = StObject.set(x, "backupSetsToRestore", js.Array(value*))
     
     inline def setCanRestore(value: Boolean): Self = StObject.set(x, "canRestore", value.asInstanceOf[js.Any])
     
     inline def setDatabaseNamesFromBackupSets(value: js.Array[String]): Self = StObject.set(x, "databaseNamesFromBackupSets", value.asInstanceOf[js.Any])
     
-    inline def setDatabaseNamesFromBackupSetsVarargs(value: String*): Self = StObject.set(x, "databaseNamesFromBackupSets", js.Array(value :_*))
+    inline def setDatabaseNamesFromBackupSetsVarargs(value: String*): Self = StObject.set(x, "databaseNamesFromBackupSets", js.Array(value*))
     
     inline def setDbFiles(value: js.Array[RestoreDatabaseFileInfo]): Self = StObject.set(x, "dbFiles", value.asInstanceOf[js.Any])
     
-    inline def setDbFilesVarargs(value: RestoreDatabaseFileInfo*): Self = StObject.set(x, "dbFiles", js.Array(value :_*))
+    inline def setDbFilesVarargs(value: RestoreDatabaseFileInfo*): Self = StObject.set(x, "dbFiles", js.Array(value*))
     
     inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
     inline def setPlanDetails(value: StringDictionary[RestorePlanDetailInfo]): Self = StObject.set(x, "planDetails", value.asInstanceOf[js.Any])
     

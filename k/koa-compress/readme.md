@@ -10,10 +10,10 @@ Compress middleware for koa
 | ------------------ | :-------------: |
 | Full name          | koa-compress |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 376 |
-| # downloads        | 6650526 |
-| # stars            | 10 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1121249.3333333333 |
+| # stars            | 415.0 |
 
 ## Links
 - [Homepage](https://github.com/koajs/compress#readme)

@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("auth0-js", "Popup")
 @js.native
-class Popup protected () extends StObject {
-  def this(client: js.Any, options: js.Any) = this()
+open class Popup protected () extends StObject {
+  def this(client: Any, options: Any) = this()
   
   /**
     * Shows inside a new window the hosted login page (`/authorize`) in order to start a new authN/authZ transaction and post its result using `postMessage`.
@@ -23,7 +23,7 @@ class Popup protected () extends StObject {
   /**
     * Returns a new instance of the popup handler
     */
-  /* private */ def buildPopupHandler(): js.Any = js.native
+  /* private */ def buildPopupHandler(): Any = js.native
   
   /**
     * Handles the popup logic for the callback page.
@@ -37,19 +37,19 @@ class Popup protected () extends StObject {
     * This method is not compatible with API Auth so if you need to fetch API tokens with audience
     * you should use {@link authorize} or {@link login}.
     */
-  def loginWithCredentials(options: ResponseMode, callback: Auth0Callback[js.Any, Auth0Error]): Unit = js.native
+  def loginWithCredentials(options: ResponseMode, callback: Auth0Callback[Any, Auth0Error]): Unit = js.native
   
   /**
     * Verifies the passwordless TOTP and returns the requested token
     */
-  def passwordlessVerify(options: Email, callback: Auth0Callback[js.Any, Auth0Error]): Unit = js.native
+  def passwordlessVerify(options: Connection, callback: Auth0Callback[Any, Auth0Error]): Unit = js.native
   
   /**
     * Initializes the popup window and returns the instance to be used later in order to avoid being blocked by the browser.
     *
     * @param options: receives the window height and width and any other window feature to be sent to window.open
     */
-  def preload(options: js.Any): js.Any = js.native
+  def preload(options: Any): Any = js.native
   
   /**
     * Signs up a new user and automatically logs the user in after the signup.
@@ -57,5 +57,5 @@ class Popup protected () extends StObject {
     * This method is not compatible with API Auth so if you need to fetch API tokens with audience
     * you should use {@link authorize} or {@link signupAndAuthorize}.
     */
-  def signupAndLogin(options: Connection, callback: Auth0Callback[js.Any, Auth0Error]): Unit = js.native
+  def signupAndLogin(options: Email, callback: Auth0Callback[Any, Auth0Error]): Unit = js.native
 }

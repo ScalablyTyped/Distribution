@@ -9,7 +9,7 @@ object bounceFilteringParametersMod {
   
   @JSImport("postmark/dist/client/models/bounces/BounceFilteringParameters", "BounceFilteringParameters")
   @js.native
-  class BounceFilteringParameters protected () extends FilteringParameters {
+  open class BounceFilteringParameters protected () extends FilteringParameters {
     def this(
       count: js.UndefOr[Double],
       offset: js.UndefOr[Double],

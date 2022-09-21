@@ -22,7 +22,7 @@ object imageryLayerViewMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-ImageryLayerView.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with ImageryLayerView {
     def this(properties: ImageryLayerViewProperties) = this()

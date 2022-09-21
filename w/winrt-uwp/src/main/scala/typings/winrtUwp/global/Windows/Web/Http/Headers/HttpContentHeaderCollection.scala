@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.Web.Http.Headers.HttpContentHeaderCollection")
 @js.native
 /** Initializes a new instance of the HttpContentHeaderCollection class. */
-class HttpContentHeaderCollection ()
+open class HttpContentHeaderCollection ()
   extends StObject
      with typings.winrtUwp.Windows.Web.Http.Headers.HttpContentHeaderCollection

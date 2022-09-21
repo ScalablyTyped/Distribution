@@ -28,7 +28,7 @@ object createStoreMod {
   
   trait StoreOptions extends StObject {
     
-    var dehydrate: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var dehydrate: js.UndefOr[js.Function0[Any]] = js.undefined
     
     var handlers: StringDictionary[String]
     
@@ -36,9 +36,9 @@ object createStoreMod {
     
     var mixins: js.UndefOr[js.Array[js.Object]] = js.undefined
     
-    var rehydrate: js.UndefOr[js.Function1[/* state */ js.Any, Unit]] = js.undefined
+    var rehydrate: js.UndefOr[js.Function1[/* state */ Any, Unit]] = js.undefined
     
-    var statics: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+    var statics: js.UndefOr[StringDictionary[Any]] = js.undefined
     
     var storeName: String
   }
@@ -51,7 +51,7 @@ object createStoreMod {
     
     extension [Self <: StoreOptions](x: Self) {
       
-      inline def setDehydrate(value: () => js.Any): Self = StObject.set(x, "dehydrate", js.Any.fromFunction0(value))
+      inline def setDehydrate(value: () => Any): Self = StObject.set(x, "dehydrate", js.Any.fromFunction0(value))
       
       inline def setDehydrateUndefined: Self = StObject.set(x, "dehydrate", js.undefined)
       
@@ -65,13 +65,13 @@ object createStoreMod {
       
       inline def setMixinsUndefined: Self = StObject.set(x, "mixins", js.undefined)
       
-      inline def setMixinsVarargs(value: js.Object*): Self = StObject.set(x, "mixins", js.Array(value :_*))
+      inline def setMixinsVarargs(value: js.Object*): Self = StObject.set(x, "mixins", js.Array(value*))
       
-      inline def setRehydrate(value: /* state */ js.Any => Unit): Self = StObject.set(x, "rehydrate", js.Any.fromFunction1(value))
+      inline def setRehydrate(value: /* state */ Any => Unit): Self = StObject.set(x, "rehydrate", js.Any.fromFunction1(value))
       
       inline def setRehydrateUndefined: Self = StObject.set(x, "rehydrate", js.undefined)
       
-      inline def setStatics(value: StringDictionary[js.Any]): Self = StObject.set(x, "statics", value.asInstanceOf[js.Any])
+      inline def setStatics(value: StringDictionary[Any]): Self = StObject.set(x, "statics", value.asInstanceOf[js.Any])
       
       inline def setStaticsUndefined: Self = StObject.set(x, "statics", js.undefined)
       

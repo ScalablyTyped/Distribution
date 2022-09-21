@@ -10,10 +10,10 @@ A red hot validation library for React
 | ------------------ | :-------------: |
 | Full name          | calidation |
 | Keywords           | validation, react, react validation |
-| # releases         | 17 |
-| # dependents       | 0 |
-| # downloads        | 21148 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 684.3333333333334 |
+| # stars            | 244.0 |
 
 ## Links
 - [Homepage](https://github.com/selbekk/calidation#readme)

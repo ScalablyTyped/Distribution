@@ -22,5 +22,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * The DiagramEvent class constructor produces an empty DiagramEvent.
   */
-class DiagramEvent ()
+open class DiagramEvent ()
   extends typings.go.mod.DiagramEvent

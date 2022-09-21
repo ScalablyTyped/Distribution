@@ -10,10 +10,10 @@ object screenLockLandscapeMod {
   
   @JSImport("material-ui/svg-icons/device/screen-lock-landscape", JSImport.Default)
   @js.native
-  class default () extends DeviceScreenLockLandscape
+  open class default () extends DeviceScreenLockLandscape
   
   @JSImport("material-ui/svg-icons/device/screen-lock-landscape", "DeviceScreenLockLandscape")
   @js.native
-  class DeviceScreenLockLandscape ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class DeviceScreenLockLandscape ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -35,10 +35,10 @@ object NullableObjectSchema {
     
     inline def setRequired(value: js.Array[Required]): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
-    inline def setRequiredVarargs(value: Required*): Self = StObject.set(x, "required", js.Array(value :_*))
+    inline def setRequiredVarargs(value: Required*): Self = StObject.set(x, "required", js.Array(value*))
     
     inline def setType(value: js.Array[`object` | `null`]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setTypeVarargs(value: (`object` | `null`)*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: (`object` | `null`)*): Self = StObject.set(x, "type", js.Array(value*))
   }
 }

@@ -105,4 +105,27 @@ object typesMod {
       inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
+  
+  trait VideoSrc extends StObject {
+    
+    var src: String
+    
+    var `type`: js.UndefOr[String] = js.undefined
+  }
+  object VideoSrc {
+    
+    inline def apply(src: String): VideoSrc = {
+      val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
+      __obj.asInstanceOf[VideoSrc]
+    }
+    
+    extension [Self <: VideoSrc](x: Self) {
+      
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    }
+  }
 }

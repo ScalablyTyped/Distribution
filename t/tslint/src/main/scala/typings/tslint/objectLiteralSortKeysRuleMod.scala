@@ -11,7 +11,7 @@ object objectLiteralSortKeysRuleMod {
   
   @JSImport("tslint/lib/rules/objectLiteralSortKeysRule", "Rule")
   @js.native
-  class Rule protected () extends OptionallyTypedRule {
+  open class Rule protected () extends OptionallyTypedRule {
     def this(options: IOptions) = this()
   }
   /* static members */

@@ -35,7 +35,7 @@ object mod {
     *      take a string and return the result of the custom decoding of
     *      that string.
     */
-  class Cookies () extends StObject {
+  open class Cookies () extends StObject {
     def this(header: String) = this()
     def this(header: js.Array[String]) = this()
     def this(header: String, options: js.Object) = this()
@@ -92,7 +92,7 @@ object mod {
     * Constructor for a new "SetCookie" struct to hold a specific Set-Cookie
     * header representation.
     */
-  class SetCookie () extends StObject {
+  open class SetCookie () extends StObject {
     def this(opts: Domain) = this()
     
     var domain: String = js.native

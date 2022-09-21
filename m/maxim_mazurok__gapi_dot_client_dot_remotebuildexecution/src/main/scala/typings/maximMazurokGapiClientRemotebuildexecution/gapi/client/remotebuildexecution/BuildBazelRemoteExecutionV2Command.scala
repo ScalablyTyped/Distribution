@@ -43,6 +43,14 @@ trait BuildBazelRemoteExecutionV2Command extends StObject {
   var outputFiles: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
+    * A list of keys for node properties the client expects to retrieve for output files and directories. Keys are either names of string-based NodeProperty or names of fields in
+    * NodeProperties. In order to ensure that equivalent `Action`s always hash to the same value, the node properties MUST be lexicographically sorted by name. Sorting of strings is done
+    * by code point, equivalently, by the UTF-8 bytes. The interpretation of string-based properties is server-dependent. If a property is not recognized by the server, the server will
+    * return an `INVALID_ARGUMENT`.
+    */
+  var outputNodeProperties: js.UndefOr[js.Array[String]] = js.undefined
+  
+  /**
     * A list of the output paths that the client expects to retrieve from the action. Only the listed paths will be returned to the client as output. The type of the output (file or
     * directory) is not specified, and will be determined by the server after action execution. If the resulting path is a file, it will be returned in an OutputFile) typed field. If the
     * path is a directory, the entire directory structure will be returned as a Tree message digest, see OutputDirectory) Other files or directories that may be created during command
@@ -56,7 +64,8 @@ trait BuildBazelRemoteExecutionV2Command extends StObject {
   
   /**
     * The platform requirements for the execution environment. The server MAY choose to execute the action on any worker satisfying the requirements, so the client SHOULD ensure that
-    * running the action on any such worker will have the same result. A detailed lexicon for this can be found in the accompanying platform.md.
+    * running the action on any such worker will have the same result. A detailed lexicon for this can be found in the accompanying platform.md. DEPRECATED as of v2.2: platform properties
+    * are now specified directly in the action. See documentation note in the Action for migration.
     */
   var platform: js.UndefOr[BuildBazelRemoteExecutionV2Platform] = js.undefined
   
@@ -79,31 +88,37 @@ object BuildBazelRemoteExecutionV2Command {
     
     inline def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
     
-    inline def setArgumentsVarargs(value: String*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+    inline def setArgumentsVarargs(value: String*): Self = StObject.set(x, "arguments", js.Array(value*))
     
     inline def setEnvironmentVariables(value: js.Array[BuildBazelRemoteExecutionV2CommandEnvironmentVariable]): Self = StObject.set(x, "environmentVariables", value.asInstanceOf[js.Any])
     
     inline def setEnvironmentVariablesUndefined: Self = StObject.set(x, "environmentVariables", js.undefined)
     
-    inline def setEnvironmentVariablesVarargs(value: BuildBazelRemoteExecutionV2CommandEnvironmentVariable*): Self = StObject.set(x, "environmentVariables", js.Array(value :_*))
+    inline def setEnvironmentVariablesVarargs(value: BuildBazelRemoteExecutionV2CommandEnvironmentVariable*): Self = StObject.set(x, "environmentVariables", js.Array(value*))
     
     inline def setOutputDirectories(value: js.Array[String]): Self = StObject.set(x, "outputDirectories", value.asInstanceOf[js.Any])
     
     inline def setOutputDirectoriesUndefined: Self = StObject.set(x, "outputDirectories", js.undefined)
     
-    inline def setOutputDirectoriesVarargs(value: String*): Self = StObject.set(x, "outputDirectories", js.Array(value :_*))
+    inline def setOutputDirectoriesVarargs(value: String*): Self = StObject.set(x, "outputDirectories", js.Array(value*))
     
     inline def setOutputFiles(value: js.Array[String]): Self = StObject.set(x, "outputFiles", value.asInstanceOf[js.Any])
     
     inline def setOutputFilesUndefined: Self = StObject.set(x, "outputFiles", js.undefined)
     
-    inline def setOutputFilesVarargs(value: String*): Self = StObject.set(x, "outputFiles", js.Array(value :_*))
+    inline def setOutputFilesVarargs(value: String*): Self = StObject.set(x, "outputFiles", js.Array(value*))
+    
+    inline def setOutputNodeProperties(value: js.Array[String]): Self = StObject.set(x, "outputNodeProperties", value.asInstanceOf[js.Any])
+    
+    inline def setOutputNodePropertiesUndefined: Self = StObject.set(x, "outputNodeProperties", js.undefined)
+    
+    inline def setOutputNodePropertiesVarargs(value: String*): Self = StObject.set(x, "outputNodeProperties", js.Array(value*))
     
     inline def setOutputPaths(value: js.Array[String]): Self = StObject.set(x, "outputPaths", value.asInstanceOf[js.Any])
     
     inline def setOutputPathsUndefined: Self = StObject.set(x, "outputPaths", js.undefined)
     
-    inline def setOutputPathsVarargs(value: String*): Self = StObject.set(x, "outputPaths", js.Array(value :_*))
+    inline def setOutputPathsVarargs(value: String*): Self = StObject.set(x, "outputPaths", js.Array(value*))
     
     inline def setPlatform(value: BuildBazelRemoteExecutionV2Platform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     

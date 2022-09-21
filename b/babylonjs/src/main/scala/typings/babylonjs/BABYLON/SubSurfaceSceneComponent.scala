@@ -7,4 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait SubSurfaceSceneComponent
   extends StObject
-     with ISceneSerializableComponent
+     with ISceneSerializableComponent {
+  
+  /**
+    * Adds all the elements from the container to the scene
+    */
+  def addFromContainer(): Unit = js.native
+  
+  /**
+    * Removes all the elements in the container from the scene
+    */
+  def removeFromContainer(): Unit = js.native
+}

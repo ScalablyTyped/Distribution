@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Please do not use the singleton without communication with source owner!
   * @since OOo 3.2
   */
-type DocumentIOLogRing = typings.activexLibreoffice.com_.sun.star.logging.XSimpleLogRing
+type DocumentIOLogRing = XSimpleLogRing
 
 /**
   * the global pool of named {@link XLogger} instances
@@ -23,4 +23,4 @@ type DocumentIOLogRing = typings.activexLibreoffice.com_.sun.star.logging.XSimpl
   * The one and only `LoggerPool` instance is available at a component context as value with the key `/singletons/com.sun.star.logging.LoggerPool` .
   * @since OOo 2.3
   */
-type LoggerPool = typings.activexLibreoffice.com_.sun.star.logging.XLoggerPool
+type LoggerPool = XLoggerPool

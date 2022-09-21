@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientGridViewBatchEditRowDeletingEventArgs")
 @js.native
-class ASPxClientGridViewBatchEditRowDeletingEventArgs protected ()
+open class ASPxClientGridViewBatchEditRowDeletingEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientGridViewBatchEditRowDeletingEventArgs {
   /**
@@ -18,10 +18,10 @@ class ASPxClientGridViewBatchEditRowDeletingEventArgs protected ()
     * @param rowValues An object that provides row values.
     * @param key An object that is the row's key.
     */
-  def this(visibleIndex: Double, rowValues: js.Any, key: js.Any) = this()
+  def this(visibleIndex: Double, rowValues: Any, key: Any) = this()
   
   /**
-    * Gets or sets a value indicating whether the action which raised the event should be canceled.
+    * Specifies whether to cancel the related action (for example, row edit, export).
     */
   /* CompleteClass */
   var cancel: Boolean = js.native
@@ -30,13 +30,13 @@ class ASPxClientGridViewBatchEditRowDeletingEventArgs protected ()
     * Gets the row's key.
     */
   /* CompleteClass */
-  var key: js.Any = js.native
+  var key: Any = js.native
   
   /**
     * Gets a hashtable that maintains information about deleted cells.
     */
   /* CompleteClass */
-  var rowValues: js.Any = js.native
+  var rowValues: Any = js.native
   
   /**
     * Gets the processed row's visible index.

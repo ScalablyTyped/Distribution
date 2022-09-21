@@ -10,7 +10,7 @@ object global {
     
     @JSGlobal("FitGaea._")
     @js.native
-    class _underscore ()
+    open class _underscore ()
       extends StObject
          with typings.gaeaModel.FitGaea._underscore
   }

@@ -27,9 +27,14 @@ trait InfrastructureConfiguration extends StObject {
   var description: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
+    * The instance metadata option settings for the infrastructure configuration.
+    */
+  var instanceMetadataOptions: js.UndefOr[InstanceMetadataOptions] = js.undefined
+  
+  /**
     * The instance profile of the infrastructure configuration.
     */
-  var instanceProfileName: js.UndefOr[NonEmptyString] = js.undefined
+  var instanceProfileName: js.UndefOr[InstanceProfileNameType] = js.undefined
   
   /**
     * The instance types of the infrastructure configuration.
@@ -37,7 +42,7 @@ trait InfrastructureConfiguration extends StObject {
   var instanceTypes: js.UndefOr[InstanceTypeList] = js.undefined
   
   /**
-    * The EC2 key pair of the infrastructure configuration.
+    * The Amazon EC2 key pair of the infrastructure configuration.
     */
   var keyPair: js.UndefOr[NonEmptyString] = js.undefined
   
@@ -62,7 +67,7 @@ trait InfrastructureConfiguration extends StObject {
   var securityGroupIds: js.UndefOr[SecurityGroupIds] = js.undefined
   
   /**
-    * The SNS topic Amazon Resource Name (ARN) of the infrastructure configuration.
+    * The Amazon Resource Name (ARN) for the SNS topic to which we send image build event notifications.  EC2 Image Builder is unable to send notifications to SNS topics that are encrypted using keys from other accounts. The key that is used to encrypt the SNS topic must reside in the account that the Image Builder service runs under. 
     */
   var snsTopicArn: js.UndefOr[NonEmptyString] = js.undefined
   
@@ -106,7 +111,11 @@ object InfrastructureConfiguration {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setInstanceProfileName(value: NonEmptyString): Self = StObject.set(x, "instanceProfileName", value.asInstanceOf[js.Any])
+    inline def setInstanceMetadataOptions(value: InstanceMetadataOptions): Self = StObject.set(x, "instanceMetadataOptions", value.asInstanceOf[js.Any])
+    
+    inline def setInstanceMetadataOptionsUndefined: Self = StObject.set(x, "instanceMetadataOptions", js.undefined)
+    
+    inline def setInstanceProfileName(value: InstanceProfileNameType): Self = StObject.set(x, "instanceProfileName", value.asInstanceOf[js.Any])
     
     inline def setInstanceProfileNameUndefined: Self = StObject.set(x, "instanceProfileName", js.undefined)
     
@@ -114,7 +123,7 @@ object InfrastructureConfiguration {
     
     inline def setInstanceTypesUndefined: Self = StObject.set(x, "instanceTypes", js.undefined)
     
-    inline def setInstanceTypesVarargs(value: InstanceType*): Self = StObject.set(x, "instanceTypes", js.Array(value :_*))
+    inline def setInstanceTypesVarargs(value: InstanceType*): Self = StObject.set(x, "instanceTypes", js.Array(value*))
     
     inline def setKeyPair(value: NonEmptyString): Self = StObject.set(x, "keyPair", value.asInstanceOf[js.Any])
     
@@ -136,7 +145,7 @@ object InfrastructureConfiguration {
     
     inline def setSecurityGroupIdsUndefined: Self = StObject.set(x, "securityGroupIds", js.undefined)
     
-    inline def setSecurityGroupIdsVarargs(value: NonEmptyString*): Self = StObject.set(x, "securityGroupIds", js.Array(value :_*))
+    inline def setSecurityGroupIdsVarargs(value: NonEmptyString*): Self = StObject.set(x, "securityGroupIds", js.Array(value*))
     
     inline def setSnsTopicArn(value: NonEmptyString): Self = StObject.set(x, "snsTopicArn", value.asInstanceOf[js.Any])
     

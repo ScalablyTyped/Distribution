@@ -10,10 +10,10 @@ Use webpack with karma
 | ------------------ | :-------------: |
 | Full name          | karma-webpack |
 | Keywords           | webpack |
-| # releases         | 8 |
-| # dependents       | 340 |
-| # downloads        | 20343715 |
-| # stars            | 13 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 1748273.6666666667 |
+| # stars            | 825.0 |
 
 ## Links
 - [Homepage](https://github.com/webpack-contrib/karma-webpack)

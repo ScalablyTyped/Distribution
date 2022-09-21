@@ -21,7 +21,7 @@ trait LiasettingsCustomBatchRequestEntry extends StObject {
   /** The country code. Required only for RequestInventoryVerification. */
   var country: js.UndefOr[String] = js.undefined
   
-  /** The GMB account. Required only for RequestGmbAccess. */
+  /** The Business Profile. Required only for RequestGmbAccess. */
   var gmbEmail: js.UndefOr[String] = js.undefined
   
   /** The account Lia settings to update. Only defined if the method is `update`. */

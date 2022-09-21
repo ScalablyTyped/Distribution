@@ -9,7 +9,7 @@ object factorialMod {
   
   @JSImport("samchon/library/case_generators/Factorial", "Factorial")
   @js.native
-  class Factorial protected () extends Permutation {
+  open class Factorial protected () extends Permutation {
     /**
       * Construct from factorial size N.
       *

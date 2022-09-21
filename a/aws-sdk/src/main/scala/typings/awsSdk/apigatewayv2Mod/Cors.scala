@@ -53,25 +53,25 @@ object Cors {
     
     inline def setAllowHeadersUndefined: Self = StObject.set(x, "AllowHeaders", js.undefined)
     
-    inline def setAllowHeadersVarargs(value: string*): Self = StObject.set(x, "AllowHeaders", js.Array(value :_*))
+    inline def setAllowHeadersVarargs(value: string*): Self = StObject.set(x, "AllowHeaders", js.Array(value*))
     
     inline def setAllowMethods(value: CorsMethodList): Self = StObject.set(x, "AllowMethods", value.asInstanceOf[js.Any])
     
     inline def setAllowMethodsUndefined: Self = StObject.set(x, "AllowMethods", js.undefined)
     
-    inline def setAllowMethodsVarargs(value: StringWithLengthBetween1And64*): Self = StObject.set(x, "AllowMethods", js.Array(value :_*))
+    inline def setAllowMethodsVarargs(value: StringWithLengthBetween1And64*): Self = StObject.set(x, "AllowMethods", js.Array(value*))
     
     inline def setAllowOrigins(value: CorsOriginList): Self = StObject.set(x, "AllowOrigins", value.asInstanceOf[js.Any])
     
     inline def setAllowOriginsUndefined: Self = StObject.set(x, "AllowOrigins", js.undefined)
     
-    inline def setAllowOriginsVarargs(value: string*): Self = StObject.set(x, "AllowOrigins", js.Array(value :_*))
+    inline def setAllowOriginsVarargs(value: string*): Self = StObject.set(x, "AllowOrigins", js.Array(value*))
     
     inline def setExposeHeaders(value: CorsHeaderList): Self = StObject.set(x, "ExposeHeaders", value.asInstanceOf[js.Any])
     
     inline def setExposeHeadersUndefined: Self = StObject.set(x, "ExposeHeaders", js.undefined)
     
-    inline def setExposeHeadersVarargs(value: string*): Self = StObject.set(x, "ExposeHeaders", js.Array(value :_*))
+    inline def setExposeHeadersVarargs(value: string*): Self = StObject.set(x, "ExposeHeaders", js.Array(value*))
     
     inline def setMaxAge(value: IntegerWithLengthBetweenMinus1And86400): Self = StObject.set(x, "MaxAge", value.asInstanceOf[js.Any])
     

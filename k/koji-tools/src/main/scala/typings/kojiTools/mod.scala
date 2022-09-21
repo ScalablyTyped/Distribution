@@ -21,12 +21,12 @@ object mod {
   
   @JSImport("koji-tools", "pwa")
   @js.native
-  val pwa: js.Any = js.native
+  val pwa: Any = js.native
   
-  inline def pwaPrompt(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("pwaPrompt")().asInstanceOf[js.Any]
+  inline def pwaPrompt(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("pwaPrompt")().asInstanceOf[Any]
   
-  inline def request(route: js.Object): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(route.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
-  inline def request(route: js.Object, params: js.Object): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(route.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def request(route: js.Object): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(route.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+  inline def request(route: js.Object, params: js.Object): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(route.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
   
   inline def resolveSecret(key: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveSecret")(key.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   

@@ -11,7 +11,7 @@ object cliCliMod {
   
   @JSImport("webdriver-manager/built/lib/cli/cli", "Cli")
   @js.native
-  class Cli () extends StObject {
+  open class Cli () extends StObject {
     
     /**
       * Get the options used by the programs and create the minimist options

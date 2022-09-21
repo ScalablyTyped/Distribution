@@ -77,7 +77,7 @@ object panelPropsMod {
   }
   object IPanelProps {
     
-    inline def apply(closePanel: () => Unit, openPanel: IPanel[js.Any] => Unit): IPanelProps = {
+    inline def apply(closePanel: () => Unit, openPanel: IPanel[Any] => Unit): IPanelProps = {
       val __obj = js.Dynamic.literal(closePanel = js.Any.fromFunction0(closePanel), openPanel = js.Any.fromFunction1(openPanel))
       __obj.asInstanceOf[IPanelProps]
     }
@@ -86,7 +86,7 @@ object panelPropsMod {
       
       inline def setClosePanel(value: () => Unit): Self = StObject.set(x, "closePanel", js.Any.fromFunction0(value))
       
-      inline def setOpenPanel(value: IPanel[js.Any] => Unit): Self = StObject.set(x, "openPanel", js.Any.fromFunction1(value))
+      inline def setOpenPanel(value: IPanel[Any] => Unit): Self = StObject.set(x, "openPanel", js.Any.fromFunction1(value))
     }
   }
 }

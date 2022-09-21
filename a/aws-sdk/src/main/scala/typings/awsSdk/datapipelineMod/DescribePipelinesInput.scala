@@ -22,6 +22,6 @@ object DescribePipelinesInput {
     
     inline def setPipelineIds(value: idList): Self = StObject.set(x, "pipelineIds", value.asInstanceOf[js.Any])
     
-    inline def setPipelineIdsVarargs(value: id*): Self = StObject.set(x, "pipelineIds", js.Array(value :_*))
+    inline def setPipelineIdsVarargs(value: id*): Self = StObject.set(x, "pipelineIds", js.Array(value*))
   }
 }

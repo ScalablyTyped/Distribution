@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ContextEntry extends StObject {
   
   /** the input data */
-  val actual: js.UndefOr[js.Any] = js.undefined
+  val actual: js.UndefOr[Any] = js.undefined
   
   val key: String
   
-  val `type`: Decoder[js.Any, js.Any]
+  val `type`: Decoder[Any, Any]
 }
 object ContextEntry {
   
-  inline def apply(key: String, `type`: Decoder[js.Any, js.Any]): ContextEntry = {
+  inline def apply(key: String, `type`: Decoder[Any, Any]): ContextEntry = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextEntry]
@@ -23,12 +23,12 @@ object ContextEntry {
   
   extension [Self <: ContextEntry](x: Self) {
     
-    inline def setActual(value: js.Any): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
+    inline def setActual(value: Any): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
     
     inline def setActualUndefined: Self = StObject.set(x, "actual", js.undefined)
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    inline def setType(value: Decoder[js.Any, js.Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Decoder[Any, Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

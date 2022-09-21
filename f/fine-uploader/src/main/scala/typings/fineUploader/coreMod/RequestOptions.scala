@@ -9,7 +9,7 @@ trait RequestOptions extends StObject {
   /**
     * Additional headers sent along with each upload request
     */
-  var customHeaders: js.UndefOr[js.Any] = js.undefined
+  var customHeaders: js.UndefOr[Any] = js.undefined
   
   /**
     * The endpoint to send upload requests to
@@ -58,7 +58,7 @@ trait RequestOptions extends StObject {
   /**
     * The parameters that shall be sent with each upload request
     */
-  var params: js.UndefOr[js.Any] = js.undefined
+  var params: js.UndefOr[Any] = js.undefined
   
   /**
     * Enable or disable sending parameters in the request body.
@@ -102,7 +102,7 @@ object RequestOptions {
   
   extension [Self <: RequestOptions](x: Self) {
     
-    inline def setCustomHeaders(value: js.Any): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
+    inline def setCustomHeaders(value: Any): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
     
     inline def setCustomHeadersUndefined: Self = StObject.set(x, "customHeaders", js.undefined)
     
@@ -130,7 +130,7 @@ object RequestOptions {
     
     inline def setOmitDefaultParamsUndefined: Self = StObject.set(x, "omitDefaultParams", js.undefined)
     
-    inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setParamsInBody(value: Boolean): Self = StObject.set(x, "paramsInBody", value.asInstanceOf[js.Any])
     

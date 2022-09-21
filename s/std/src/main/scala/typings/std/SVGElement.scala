@@ -12,20 +12,20 @@ trait SVGElement
      with DocumentAndElementEventHandlers
      with ElementCSSInlineStyle
      with GlobalEventHandlers
-     with HTMLOrSVGElement
-     with SVGElementInstance {
+     with HTMLOrSVGElement {
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(
     `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
+    callback: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
   
+  /* standard dom */
   val ownerSVGElement: SVGSVGElement | Null = js.native
   
   /* InferMemberOverrides */
@@ -39,5 +39,6 @@ trait SVGElement
     options: EventListenerOptions
   ): Unit = js.native
   
+  /* standard dom */
   val viewportElement: SVGElement | Null = js.native
 }

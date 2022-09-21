@@ -16,7 +16,7 @@ object batchWriteItemCommandMod {
   
   @JSImport("@aws-sdk/client-dynamodb-node/commands/BatchWriteItemCommand", "BatchWriteItemCommand")
   @js.native
-  class BatchWriteItemCommand protected ()
+  open class BatchWriteItemCommand protected ()
     extends StObject
        with Command[
           InputTypesUnion, 
@@ -34,14 +34,14 @@ object batchWriteItemCommandMod {
     override val middlewareStack: MiddlewareStack[BatchWriteItemInput, BatchWriteItemOutput] = js.native
     
     def resolveMiddleware(
-      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
       configuration: DynamoDBResolvedConfiguration
     ): Handler[BatchWriteItemInput, BatchWriteItemOutput] = js.native
     /* CompleteClass */
     override def resolveMiddleware(
       stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
       configuration: DynamoDBResolvedConfiguration,
-      options: js.Any
+      options: Any
     ): Handler[BatchWriteItemInput, BatchWriteItemOutput] = js.native
   }
 }

@@ -16,9 +16,9 @@ trait ISmsDevice extends StObject {
   
   var messageStore: SmsDeviceMessageStore
   
-  var onsmsdevicestatuschanged: js.Any
+  var onsmsdevicestatuschanged: Any
   
-  var onsmsmessagereceived: js.Any
+  var onsmsmessagereceived: Any
   
   def sendMessageAsync(message: ISmsMessage): SendSmsMessageOperation
 }
@@ -30,8 +30,8 @@ object ISmsDevice {
     cellularClass: CellularClass,
     deviceStatus: SmsDeviceStatus,
     messageStore: SmsDeviceMessageStore,
-    onsmsdevicestatuschanged: js.Any,
-    onsmsmessagereceived: js.Any,
+    onsmsdevicestatuschanged: Any,
+    onsmsmessagereceived: Any,
     sendMessageAsync: ISmsMessage => SendSmsMessageOperation
   ): ISmsDevice = {
     val __obj = js.Dynamic.literal(accountPhoneNumber = accountPhoneNumber.asInstanceOf[js.Any], calculateLength = js.Any.fromFunction1(calculateLength), cellularClass = cellularClass.asInstanceOf[js.Any], deviceStatus = deviceStatus.asInstanceOf[js.Any], messageStore = messageStore.asInstanceOf[js.Any], onsmsdevicestatuschanged = onsmsdevicestatuschanged.asInstanceOf[js.Any], onsmsmessagereceived = onsmsmessagereceived.asInstanceOf[js.Any], sendMessageAsync = js.Any.fromFunction1(sendMessageAsync))
@@ -50,9 +50,9 @@ object ISmsDevice {
     
     inline def setMessageStore(value: SmsDeviceMessageStore): Self = StObject.set(x, "messageStore", value.asInstanceOf[js.Any])
     
-    inline def setOnsmsdevicestatuschanged(value: js.Any): Self = StObject.set(x, "onsmsdevicestatuschanged", value.asInstanceOf[js.Any])
+    inline def setOnsmsdevicestatuschanged(value: Any): Self = StObject.set(x, "onsmsdevicestatuschanged", value.asInstanceOf[js.Any])
     
-    inline def setOnsmsmessagereceived(value: js.Any): Self = StObject.set(x, "onsmsmessagereceived", value.asInstanceOf[js.Any])
+    inline def setOnsmsmessagereceived(value: Any): Self = StObject.set(x, "onsmsmessagereceived", value.asInstanceOf[js.Any])
     
     inline def setSendMessageAsync(value: ISmsMessage => SendSmsMessageOperation): Self = StObject.set(x, "sendMessageAsync", js.Any.fromFunction1(value))
   }

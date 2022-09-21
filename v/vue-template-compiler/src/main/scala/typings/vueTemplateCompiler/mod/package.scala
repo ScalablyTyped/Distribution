@@ -1,39 +1,31 @@
 package typings.vueTemplateCompiler.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.vueTemplateCompiler.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def compile(template: java.lang.String): typings.vueTemplateCompiler.mod.CompiledResult[java.lang.String] = typings.vueTemplateCompiler.mod.^.asInstanceOf[js.Dynamic].applyDynamic("compile")(template.asInstanceOf[js.Any]).asInstanceOf[typings.vueTemplateCompiler.mod.CompiledResult[java.lang.String]]
-inline def compile(template: java.lang.String, options: typings.vueTemplateCompiler.mod.CompilerOptions): typings.vueTemplateCompiler.mod.CompiledResult[java.lang.String] = (typings.vueTemplateCompiler.mod.^.asInstanceOf[js.Dynamic].applyDynamic("compile")(template.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.vueTemplateCompiler.mod.CompiledResult[java.lang.String]]
-inline def compile(
-  template: java.lang.String,
-  options: typings.vueTemplateCompiler.mod.CompilerOptionsWithSourceRange
-): typings.vueTemplateCompiler.mod.CompiledResult[typings.vueTemplateCompiler.mod.ErrorWithRange] = (typings.vueTemplateCompiler.mod.^.asInstanceOf[js.Dynamic].applyDynamic("compile")(template.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.vueTemplateCompiler.mod.CompiledResult[typings.vueTemplateCompiler.mod.ErrorWithRange]]
+inline def compile(template: String): CompiledResult[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(template.asInstanceOf[js.Any]).asInstanceOf[CompiledResult[String]]
+inline def compile(template: String, options: CompilerOptions): CompiledResult[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(template.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CompiledResult[String]]
+inline def compile(template: String, options: CompilerOptionsWithSourceRange): CompiledResult[ErrorWithRange] = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(template.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CompiledResult[ErrorWithRange]]
 
-inline def compileToFunctions(template: java.lang.String): typings.vueTemplateCompiler.mod.CompiledResultFunctions = typings.vueTemplateCompiler.mod.^.asInstanceOf[js.Dynamic].applyDynamic("compileToFunctions")(template.asInstanceOf[js.Any]).asInstanceOf[typings.vueTemplateCompiler.mod.CompiledResultFunctions]
+inline def compileToFunctions(template: String): CompiledResultFunctions = ^.asInstanceOf[js.Dynamic].applyDynamic("compileToFunctions")(template.asInstanceOf[js.Any]).asInstanceOf[CompiledResultFunctions]
 
-inline def generateCodeFrame(template: java.lang.String, start: scala.Double, end: scala.Double): java.lang.String = (typings.vueTemplateCompiler.mod.^.asInstanceOf[js.Dynamic].applyDynamic("generateCodeFrame")(template.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def generateCodeFrame(template: String, start: Double, end: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateCodeFrame")(template.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[String]
 
-inline def parseComponent(file: java.lang.String): typings.vueTemplateCompiler.mod.SFCDescriptor = typings.vueTemplateCompiler.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseComponent")(file.asInstanceOf[js.Any]).asInstanceOf[typings.vueTemplateCompiler.mod.SFCDescriptor]
-inline def parseComponent(file: java.lang.String, options: typings.vueTemplateCompiler.mod.SFCParserOptions): typings.vueTemplateCompiler.mod.SFCDescriptor = (typings.vueTemplateCompiler.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseComponent")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.vueTemplateCompiler.mod.SFCDescriptor]
+inline def parseComponent(file: String): SFCDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("parseComponent")(file.asInstanceOf[js.Any]).asInstanceOf[SFCDescriptor]
+inline def parseComponent(file: String, options: SFCParserOptions): SFCDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("parseComponent")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SFCDescriptor]
 
-inline def ssrCompile(template: java.lang.String): typings.vueTemplateCompiler.mod.CompiledResult[java.lang.String] = typings.vueTemplateCompiler.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ssrCompile")(template.asInstanceOf[js.Any]).asInstanceOf[typings.vueTemplateCompiler.mod.CompiledResult[java.lang.String]]
-inline def ssrCompile(template: java.lang.String, options: typings.vueTemplateCompiler.mod.CompilerOptions): typings.vueTemplateCompiler.mod.CompiledResult[java.lang.String] = (typings.vueTemplateCompiler.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ssrCompile")(template.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.vueTemplateCompiler.mod.CompiledResult[java.lang.String]]
-inline def ssrCompile(
-  template: java.lang.String,
-  options: typings.vueTemplateCompiler.mod.CompilerOptionsWithSourceRange
-): typings.vueTemplateCompiler.mod.CompiledResult[typings.vueTemplateCompiler.mod.ErrorWithRange] = (typings.vueTemplateCompiler.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ssrCompile")(template.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.vueTemplateCompiler.mod.CompiledResult[typings.vueTemplateCompiler.mod.ErrorWithRange]]
+inline def ssrCompile(template: String): CompiledResult[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("ssrCompile")(template.asInstanceOf[js.Any]).asInstanceOf[CompiledResult[String]]
+inline def ssrCompile(template: String, options: CompilerOptions): CompiledResult[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("ssrCompile")(template.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CompiledResult[String]]
+inline def ssrCompile(template: String, options: CompilerOptionsWithSourceRange): CompiledResult[ErrorWithRange] = (^.asInstanceOf[js.Dynamic].applyDynamic("ssrCompile")(template.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CompiledResult[ErrorWithRange]]
 
-inline def ssrCompileToFunctions(template: java.lang.String): typings.vueTemplateCompiler.mod.CompiledResultFunctions = typings.vueTemplateCompiler.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ssrCompileToFunctions")(template.asInstanceOf[js.Any]).asInstanceOf[typings.vueTemplateCompiler.mod.CompiledResultFunctions]
+inline def ssrCompileToFunctions(template: String): CompiledResultFunctions = ^.asInstanceOf[js.Dynamic].applyDynamic("ssrCompileToFunctions")(template.asInstanceOf[js.Any]).asInstanceOf[CompiledResultFunctions]
 
-type ASTElementHandlers = org.scalablytyped.runtime.StringDictionary[
-typings.vueTemplateCompiler.mod.ASTElementHandler | js.Array[typings.vueTemplateCompiler.mod.ASTElementHandler]]
+type ASTElementHandlers = StringDictionary[ASTElementHandler | js.Array[ASTElementHandler]]
 
-type ASTModifiers = org.scalablytyped.runtime.StringDictionary[scala.Boolean]
+type ASTModifiers = StringDictionary[Boolean]
 
-type DirectiveFunction = js.Function2[
-/* node */ typings.vueTemplateCompiler.mod.ASTElement, 
-/* directiveMeta */ typings.vueTemplateCompiler.mod.ASTDirective, 
-scala.Unit]
+type DirectiveFunction = js.Function2[/* node */ ASTElement, /* directiveMeta */ ASTDirective, Unit]

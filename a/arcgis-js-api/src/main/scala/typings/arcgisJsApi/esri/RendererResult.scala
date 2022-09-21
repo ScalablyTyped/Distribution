@@ -25,7 +25,7 @@ trait RendererResult
   var basemapTheme: String
   
   /**
-    * The dot density scheme used by the renderer based on the given basemap.
+    * The dot density scheme used by the renderer based on the view's background.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-dotDensity.html#RendererResult)
     */

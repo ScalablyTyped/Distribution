@@ -16,7 +16,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("d3pie")
     @js.native
-    class ^ protected ()
+    open class ^ protected ()
       extends StObject
          with ID3PieChart {
       def this(id: String, options: ID3PieOptions) = this()
@@ -29,7 +29,7 @@ object global {
       override def destroy(): Unit = js.native
       
       /* CompleteClass */
-      override def getOpenSegment(): js.Any = js.native
+      override def getOpenSegment(): Any = js.native
       
       /* CompleteClass */
       override def openSegment(index: Double): Unit = js.native
@@ -38,7 +38,7 @@ object global {
       override def redraw(): Unit = js.native
       
       /* CompleteClass */
-      override def updateProp(propKey: String, value: js.Any): Unit = js.native
+      override def updateProp(propKey: String, value: Any): Unit = js.native
     }
     
     @JSGlobal("d3pie")

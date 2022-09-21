@@ -32,8 +32,8 @@ object commandDefinitionsMod {
   
   @JSImport("webdriver-js-extender/built/lib/command_definitions", "getAppiumSettings")
   @js.native
-  def getAppiumSettings: CommandDefinition[StringDictionary[js.Any]] = js.native
-  inline def getAppiumSettings_=(x: CommandDefinition[StringDictionary[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getAppiumSettings")(x.asInstanceOf[js.Any])
+  def getAppiumSettings: CommandDefinition[StringDictionary[Any]] = js.native
+  inline def getAppiumSettings_=(x: CommandDefinition[StringDictionary[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getAppiumSettings")(x.asInstanceOf[js.Any])
   
   @JSImport("webdriver-js-extender/built/lib/command_definitions", "getCurrentContext")
   @js.native
@@ -112,8 +112,8 @@ object commandDefinitionsMod {
   
   @JSImport("webdriver-js-extender/built/lib/command_definitions", "pullFolderFromDevice")
   @js.native
-  def pullFolderFromDevice: CommandDefinition[js.Any] = js.native
-  inline def pullFolderFromDevice_=(x: CommandDefinition[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pullFolderFromDevice")(x.asInstanceOf[js.Any])
+  def pullFolderFromDevice: CommandDefinition[Any] = js.native
+  inline def pullFolderFromDevice_=(x: CommandDefinition[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pullFolderFromDevice")(x.asInstanceOf[js.Any])
   
   @JSImport("webdriver-js-extender/built/lib/command_definitions", "pushFileToDevice")
   @js.native

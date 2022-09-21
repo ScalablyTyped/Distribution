@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PickupServicesPickupService extends StObject {
   
-  /** The name of the carrier (e.g., `"UPS"`). Always present. */
+  /** The name of the carrier (for example, `"UPS"`). Always present. */
   var carrierName: js.UndefOr[String] = js.undefined
   
-  /** The CLDR country code of the carrier (e.g., "US"). Always present. */
+  /** The CLDR country code of the carrier (for example, "US"). Always present. */
   var country: js.UndefOr[String] = js.undefined
   
-  /** The name of the pickup service (e.g., `"Access point"`). Always present. */
+  /** The name of the pickup service (for example, `"Access point"`). Always present. */
   var serviceName: js.UndefOr[String] = js.undefined
 }
 object PickupServicesPickupService {

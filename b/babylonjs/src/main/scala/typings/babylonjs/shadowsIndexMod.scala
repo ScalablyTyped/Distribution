@@ -11,7 +11,7 @@ object shadowsIndexMod {
   
   @JSImport("babylonjs/Lights/Shadows/index", "CascadedShadowGenerator")
   @js.native
-  class CascadedShadowGenerator protected ()
+  open class CascadedShadowGenerator protected ()
     extends typings.babylonjs.cascadedShadowGeneratorMod.CascadedShadowGenerator {
     /**
       * Creates a Cascaded Shadow Generator object.
@@ -67,19 +67,22 @@ object shadowsIndexMod {
       * @param scene The scene to create the shadow map for
       * @returns The parsed shadow generator
       */
-    inline def Parse(parsedShadowGenerator: js.Any, scene: Scene): typings.babylonjs.shadowGeneratorMod.ShadowGenerator = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedShadowGenerator.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.shadowGeneratorMod.ShadowGenerator]
+    inline def Parse(parsedShadowGenerator: Any, scene: Scene): typings.babylonjs.shadowGeneratorMod.ShadowGenerator = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedShadowGenerator.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.shadowGeneratorMod.ShadowGenerator]
     
-    /** @hidden */
-    inline def _SceneComponentInitialization(scene: Scene): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_SceneComponentInitialization")(scene.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    
-    @JSImport("babylonjs/Lights/Shadows/index", "CascadedShadowGenerator.frustumCornersNDCSpace")
+    @JSImport("babylonjs/Lights/Shadows/index", "CascadedShadowGenerator._FrustumCornersNDCSpace")
     @js.native
-    val frustumCornersNDCSpace: js.Any = js.native
+    val _FrustumCornersNDCSpace: Any = js.native
+    
+    /**
+      * @param _
+      * @hidden
+      */
+    inline def _SceneComponentInitialization(scene: Scene): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_SceneComponentInitialization")(scene.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("babylonjs/Lights/Shadows/index", "ShadowGenerator")
   @js.native
-  class ShadowGenerator protected ()
+  open class ShadowGenerator protected ()
     extends typings.babylonjs.shadowGeneratorMod.ShadowGenerator {
     /**
       * Creates a ShadowGenerator object.
@@ -88,10 +91,10 @@ object shadowsIndexMod {
       * Documentation : https://doc.babylonjs.com/babylon101/shadows
       * @param mapSize The size of the texture what stores the shadows. Example : 1024.
       * @param light The light object generating the shadows.
-      * @param usefulFloatFirst By default the generator will try to use half float textures but if you need precision (for self shadowing for instance), you can use this option to enforce full float texture.
+      * @param usefullFloatFirst By default the generator will try to use half float textures but if you need precision (for self shadowing for instance), you can use this option to enforce full float texture.
       */
     def this(mapSize: Double, light: IShadowLight) = this()
-    def this(mapSize: Double, light: IShadowLight, usefulFloatFirst: Boolean) = this()
+    def this(mapSize: Double, light: IShadowLight, usefullFloatFirst: Boolean) = this()
   }
   /* static members */
   object ShadowGenerator {
@@ -107,6 +110,14 @@ object shadowsIndexMod {
     @js.native
     def CLASSNAME: String = js.native
     inline def CLASSNAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLASSNAME")(x.asInstanceOf[js.Any])
+    
+    /**
+      * Defines the default alpha cutoff value used for transparent alpha tested materials.
+      */
+    @JSImport("babylonjs/Lights/Shadows/index", "ShadowGenerator.DEFAULT_ALPHA_CUTOFF")
+    @js.native
+    def DEFAULT_ALPHA_CUTOFF: Double = js.native
+    inline def DEFAULT_ALPHA_CUTOFF_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_ALPHA_CUTOFF")(x.asInstanceOf[js.Any])
     
     /**
       * Shadow generator mode ESM: Blurred Exponential Shadow Mapping using the inverse of the exponential preventing
@@ -182,9 +193,9 @@ object shadowsIndexMod {
       * @param constr A function that builds a shadow generator or undefined to create an instance of the default shadow generator
       * @returns The parsed shadow generator
       */
-    inline def Parse(parsedShadowGenerator: js.Any, scene: Scene): typings.babylonjs.shadowGeneratorMod.ShadowGenerator = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedShadowGenerator.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.shadowGeneratorMod.ShadowGenerator]
+    inline def Parse(parsedShadowGenerator: Any, scene: Scene): typings.babylonjs.shadowGeneratorMod.ShadowGenerator = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedShadowGenerator.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.shadowGeneratorMod.ShadowGenerator]
     inline def Parse(
-      parsedShadowGenerator: js.Any,
+      parsedShadowGenerator: Any,
       scene: Scene,
       constr: js.Function2[/* mapSize */ Double, /* light */ IShadowLight, this.type]
     ): typings.babylonjs.shadowGeneratorMod.ShadowGenerator = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedShadowGenerator.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], constr.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.shadowGeneratorMod.ShadowGenerator]
@@ -225,13 +236,16 @@ object shadowsIndexMod {
     @js.native
     val QUALITY_MEDIUM: Double = js.native
     
-    /** @hidden */
+    /**
+      * @param _
+      * @hidden
+      */
     inline def _SceneComponentInitialization(scene: Scene): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_SceneComponentInitialization")(scene.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("babylonjs/Lights/Shadows/index", "ShadowGeneratorSceneComponent")
   @js.native
-  class ShadowGeneratorSceneComponent protected ()
+  open class ShadowGeneratorSceneComponent protected ()
     extends typings.babylonjs.shadowGeneratorSceneComponentMod.ShadowGeneratorSceneComponent {
     /**
       * Creates a new instance of the component for the given scene

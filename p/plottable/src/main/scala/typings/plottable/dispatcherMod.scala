@@ -11,19 +11,19 @@ object dispatcherMod {
   
   @JSImport("plottable/build/src/dispatchers/dispatcher", "Dispatcher")
   @js.native
-  class Dispatcher () extends StObject {
+  open class Dispatcher () extends StObject {
     
     /* protected */ def _addCallbackForEvent(eventName: String, callback: js.Function): Unit = js.native
     
-    /* protected */ def _callCallbacksForEvent(eventName: String, args: js.Any*): Unit = js.native
+    /* protected */ def _callCallbacksForEvent(eventName: String, args: Any*): Unit = js.native
     
-    /* private */ def _connect(): js.Any = js.native
+    /* private */ var _connect: Any = js.native
     
-    /* private */ var _connected: js.Any = js.native
+    /* private */ var _connected: Any = js.native
     
-    /* private */ def _disconnect(): js.Any = js.native
+    /* private */ var _disconnect: Any = js.native
     
-    /* private */ var _eventNameToCallbackSet: js.Any = js.native
+    /* private */ var _eventNameToCallbackSet: Any = js.native
     
     /**
       * All listeners are registered to this `EventTarget` and events are then
@@ -40,9 +40,9 @@ object dispatcherMod {
       * eventname is a DOM event name like "mouseup", "touchstart", etc. The
       * callback is simply registered to the event callback with bubbling.
       */
-    /* protected */ var _eventToProcessingFunction: StringDictionary[js.Function1[/* e */ Event, js.Any]] = js.native
+    /* protected */ var _eventToProcessingFunction: StringDictionary[js.Function1[/* e */ Event, Any]] = js.native
     
-    /* private */ def _hasNoCallbacks(): js.Any = js.native
+    /* private */ var _hasNoCallbacks: Any = js.native
     
     /* protected */ def _removeCallbackForEvent(eventName: String, callback: js.Function): Unit = js.native
   }

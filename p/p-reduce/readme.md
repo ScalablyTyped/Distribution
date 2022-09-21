@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-reduce
 
-Typings are for version 2.1.0
+Typings are for version 3.0.0
 
 ## Library description:
 Reduce a list of values using promises into a promise for a value
@@ -10,10 +10,10 @@ Reduce a list of values using promises into a promise for a value
 | ------------------ | :-------------: |
 | Full name          | p-reduce |
 | Keywords           | promise, reduce, collection, iterable, iterator, async, await, promises, accumulate, bluebird |
-| # releases         | 3 |
-| # dependents       | 106 |
-| # downloads        | 255105062 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1.9081806333333332E7 |
+| # stars            | 63.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/p-reduce#readme)

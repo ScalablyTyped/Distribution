@@ -1,6 +1,6 @@
 package typings.crossSpawn
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.childProcessMod.ChildProcess
 import typings.node.childProcessMod.ChildProcessByStdio
 import typings.node.childProcessMod.ChildProcessWithoutNullStreams
@@ -90,17 +90,17 @@ object mod {
     * The `spawn.sync()` method spawns a new process using the given `command`, with
     * command line arguments in `args`. If omitted, `args` defaults to an empty array.
     */
-  inline def sync(command: String): SpawnSyncReturns[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(command.asInstanceOf[js.Any]).asInstanceOf[SpawnSyncReturns[Buffer]]
+  inline def sync(command: String): SpawnSyncReturns[String | Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(command.asInstanceOf[js.Any]).asInstanceOf[SpawnSyncReturns[String | Buffer]]
   /**
     * The `spawn.sync()` method spawns a new process using the given `command`, with
     * command line arguments in `args`. If omitted, `args` defaults to an empty array.
     */
-  inline def sync(command: String, args: js.Array[String]): SpawnSyncReturns[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[SpawnSyncReturns[Buffer]]
+  inline def sync(command: String, args: js.Array[String]): SpawnSyncReturns[String | Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[SpawnSyncReturns[String | Buffer]]
   /**
     * The `spawn.sync()` method spawns a new process using the given `command`, with
     * command line arguments in `args`. If omitted, `args` defaults to an empty array.
     */
-  inline def sync(command: String, args: js.Array[String], options: SpawnSyncOptions): SpawnSyncReturns[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SpawnSyncReturns[Buffer]]
+  inline def sync(command: String, args: js.Array[String], options: SpawnSyncOptions): SpawnSyncReturns[String | Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SpawnSyncReturns[String | Buffer]]
   /**
     * The `spawn.sync()` method spawns a new process using the given `command`, with
     * command line arguments in `args`. If omitted, `args` defaults to an empty array.
@@ -115,22 +115,12 @@ object mod {
     * The `spawn.sync()` method spawns a new process using the given `command`, with
     * command line arguments in `args`. If omitted, `args` defaults to an empty array.
     */
-  inline def sync(command: String, args: Unit, options: SpawnSyncOptions): SpawnSyncReturns[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SpawnSyncReturns[Buffer]]
+  inline def sync(command: String, args: Unit, options: SpawnSyncOptions): SpawnSyncReturns[String | Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SpawnSyncReturns[String | Buffer]]
   /**
     * The `spawn.sync()` method spawns a new process using the given `command`, with
     * command line arguments in `args`. If omitted, `args` defaults to an empty array.
     */
-  inline def sync(command: String, args: Unit, options: SpawnSyncOptionsWithBufferEncoding): SpawnSyncReturns[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SpawnSyncReturns[Buffer]]
-  /**
-    * The `spawn.sync()` method spawns a new process using the given `command`, with
-    * command line arguments in `args`. If omitted, `args` defaults to an empty array.
-    */
-  inline def sync(command: String, args: Unit, options: SpawnSyncOptionsWithStringEncoding): SpawnSyncReturns[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SpawnSyncReturns[String]]
-  /**
-    * The `spawn.sync()` method spawns a new process using the given `command`, with
-    * command line arguments in `args`. If omitted, `args` defaults to an empty array.
-    */
-  inline def sync(command: String, options: SpawnSyncOptions): SpawnSyncReturns[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(command.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SpawnSyncReturns[Buffer]]
+  inline def sync(command: String, options: SpawnSyncOptions): SpawnSyncReturns[String | Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(command.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SpawnSyncReturns[String | Buffer]]
   /**
     * The `spawn.sync()` method spawns a new process using the given `command`, with
     * command line arguments in `args`. If omitted, `args` defaults to an empty array.

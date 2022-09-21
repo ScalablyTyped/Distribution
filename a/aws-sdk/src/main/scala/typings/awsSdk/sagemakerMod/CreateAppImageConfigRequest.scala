@@ -12,7 +12,7 @@ trait CreateAppImageConfigRequest extends StObject {
   var AppImageConfigName: typings.awsSdk.sagemakerMod.AppImageConfigName
   
   /**
-    * The KernelGatewayImageConfig.
+    * The KernelGatewayImageConfig. You can only specify one image kernel in the AppImageConfig API. This kernel will be shown to users before the image starts. Once the image runs, all kernels are visible in JupyterLab.
     */
   var KernelGatewayImageConfig: js.UndefOr[typings.awsSdk.sagemakerMod.KernelGatewayImageConfig] = js.undefined
   
@@ -40,6 +40,6 @@ object CreateAppImageConfigRequest {
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for imagemin-upng
 
-Typings are for version 2.0
+Typings are for version 3.0
 
 ## Library description:
 upng imagemin plugin
@@ -10,10 +10,10 @@ upng imagemin plugin
 | ------------------ | :-------------: |
 | Full name          | imagemin-upng |
 | Keywords           | apng, compress, image, imageminplugin, img, minify, optimize, png, upng, upng-js |
-| # releases         | 12 |
-| # dependents       | 8 |
-| # downloads        | 24390 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1344.6666666666667 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](https://github.com/fisker/imagemin-upng#readme)

@@ -18,18 +18,18 @@ object observablelistMod {
   /**
     * Construct a new observable map.
     */
-  class ObservableList[T] ()
+  open class ObservableList[T] ()
     extends StObject
        with IObservableList[T] {
     def this(options: IOptions[T]) = this()
     
-    /* private */ var _array: js.Any = js.native
+    /* private */ var _array: Any = js.native
     
-    /* private */ var _changed: js.Any = js.native
+    /* private */ var _changed: Any = js.native
     
-    /* private */ var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: Any = js.native
     
-    /* private */ var _itemCmp: js.Any = js.native
+    /* private */ var _itemCmp: Any = js.native
     
     /**
       * A signal emitted when the list has changed.
@@ -670,13 +670,13 @@ object observablelistMod {
         
         inline def setNewValues(value: js.Array[T]): Self = StObject.set(x, "newValues", value.asInstanceOf[js.Any])
         
-        inline def setNewValuesVarargs(value: T*): Self = StObject.set(x, "newValues", js.Array(value :_*))
+        inline def setNewValuesVarargs(value: T*): Self = StObject.set(x, "newValues", js.Array(value*))
         
         inline def setOldIndex(value: Double): Self = StObject.set(x, "oldIndex", value.asInstanceOf[js.Any])
         
         inline def setOldValues(value: js.Array[T]): Self = StObject.set(x, "oldValues", value.asInstanceOf[js.Any])
         
-        inline def setOldValuesVarargs(value: T*): Self = StObject.set(x, "oldValues", js.Array(value :_*))
+        inline def setOldValuesVarargs(value: T*): Self = StObject.set(x, "oldValues", js.Array(value*))
         
         inline def setType(value: ChangeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }

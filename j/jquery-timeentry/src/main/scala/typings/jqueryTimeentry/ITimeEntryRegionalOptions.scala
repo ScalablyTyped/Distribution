@@ -54,7 +54,7 @@ object ITimeEntryRegionalOptions {
     
     inline def setAmpmNamesUndefined: Self = StObject.set(x, "ampmNames", js.undefined)
     
-    inline def setAmpmNamesVarargs(value: String*): Self = StObject.set(x, "ampmNames", js.Array(value :_*))
+    inline def setAmpmNamesVarargs(value: String*): Self = StObject.set(x, "ampmNames", js.Array(value*))
     
     inline def setAmpmPrefix(value: String): Self = StObject.set(x, "ampmPrefix", value.asInstanceOf[js.Any])
     
@@ -72,6 +72,6 @@ object ITimeEntryRegionalOptions {
     
     inline def setSpinnerTextsUndefined: Self = StObject.set(x, "spinnerTexts", js.undefined)
     
-    inline def setSpinnerTextsVarargs(value: String*): Self = StObject.set(x, "spinnerTexts", js.Array(value :_*))
+    inline def setSpinnerTextsVarargs(value: String*): Self = StObject.set(x, "spinnerTexts", js.Array(value*))
   }
 }

@@ -11,7 +11,7 @@ trait IgTreeGrid
      with /**
   * Option for JSONPDataSourceSettings
   */
-/* optionName */ StringDictionary[js.Any] {
+/* optionName */ StringDictionary[Any] {
   
   /**
     * If this option is set to true, the height of the grid row will be calculated automatically based on the [avgRowHeight](ui.iggrid#options:avgRowHeight) and the visible virtual records. If no [avgRowHeight](ui.iggrid#options:avgRowHeight) is specified, it will be calculated automatically at runtime.
@@ -78,7 +78,7 @@ trait IgTreeGrid
   /**
     * This option is inherited from a parent widget and it's not applicable for the igTreeGrid.
     */
-  var avgColumnWidth: js.UndefOr[js.Any] = js.undefined
+  var avgColumnWidth: js.UndefOr[Any] = js.undefined
   
   /**
     * This option is inherited from a parent widget and it's not applicable for the igTreeGrid.
@@ -128,7 +128,7 @@ trait IgTreeGrid
   /**
     * This option is inherited from a parent widget and it's not applicable for the igTreeGrid.
     */
-  var columnVirtualization: js.UndefOr[js.Any] = js.undefined
+  var columnVirtualization: js.UndefOr[Any] = js.undefined
   
   /**
     * An array of column objects. Checkout the [Columns and Layout](http://www.igniteui.com/help/iggrid-columns-and-layout#defining-columns) topic for details on configuring the columns array.
@@ -178,7 +178,7 @@ trait IgTreeGrid
     * "object" ddataSource as an object
     * "string" dataSource as a string
     */
-  var dataSource: js.UndefOr[js.Array[js.Any] | js.Object | String] = js.undefined
+  var dataSource: js.UndefOr[js.Array[Any] | js.Object | String] = js.undefined
   
   /**
     * Options object to configure data source-specific settings
@@ -611,7 +611,7 @@ object IgTreeGrid {
     
     inline def setAutofitLastColumnUndefined: Self = StObject.set(x, "autofitLastColumn", js.undefined)
     
-    inline def setAvgColumnWidth(value: js.Any): Self = StObject.set(x, "avgColumnWidth", value.asInstanceOf[js.Any])
+    inline def setAvgColumnWidth(value: Any): Self = StObject.set(x, "avgColumnWidth", value.asInstanceOf[js.Any])
     
     inline def setAvgColumnWidthUndefined: Self = StObject.set(x, "avgColumnWidth", js.undefined)
     
@@ -647,7 +647,7 @@ object IgTreeGrid {
     
     inline def setCollapseTooltipTextUndefined: Self = StObject.set(x, "collapseTooltipText", js.undefined)
     
-    inline def setColumnVirtualization(value: js.Any): Self = StObject.set(x, "columnVirtualization", value.asInstanceOf[js.Any])
+    inline def setColumnVirtualization(value: Any): Self = StObject.set(x, "columnVirtualization", value.asInstanceOf[js.Any])
     
     inline def setColumnVirtualizationUndefined: Self = StObject.set(x, "columnVirtualization", js.undefined)
     
@@ -659,7 +659,7 @@ object IgTreeGrid {
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    inline def setColumnsVarargs(value: IgGridColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: IgGridColumn*): Self = StObject.set(x, "columns", js.Array(value*))
     
     inline def setCreated(value: (/* event */ Event, /* ui */ CreatedEventUIParam) => Unit): Self = StObject.set(x, "created", js.Any.fromFunction2(value))
     
@@ -681,7 +681,7 @@ object IgTreeGrid {
     
     inline def setDataRenderingUndefined: Self = StObject.set(x, "dataRendering", js.undefined)
     
-    inline def setDataSource(value: js.Array[js.Any] | js.Object | String): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: js.Array[Any] | js.Object | String): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceSettings(value: IgTreeGridDataSourceSettings): Self = StObject.set(x, "dataSourceSettings", value.asInstanceOf[js.Any])
     
@@ -697,7 +697,7 @@ object IgTreeGrid {
     
     inline def setDataSourceUrlUndefined: Self = StObject.set(x, "dataSourceUrl", js.undefined)
     
-    inline def setDataSourceVarargs(value: js.Any*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
+    inline def setDataSourceVarargs(value: Any*): Self = StObject.set(x, "dataSource", js.Array(value*))
     
     inline def setDefaultColumnWidth(value: String | Double): Self = StObject.set(x, "defaultColumnWidth", value.asInstanceOf[js.Any])
     
@@ -735,7 +735,7 @@ object IgTreeGrid {
     
     inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
-    inline def setFeaturesVarargs(value: IgGridFeature*): Self = StObject.set(x, "features", js.Array(value :_*))
+    inline def setFeaturesVarargs(value: IgGridFeature*): Self = StObject.set(x, "features", js.Array(value*))
     
     inline def setFixedFooters(value: Boolean): Self = StObject.set(x, "fixedFooters", value.asInstanceOf[js.Any])
     

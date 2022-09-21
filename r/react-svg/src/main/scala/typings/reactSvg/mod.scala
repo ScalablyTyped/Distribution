@@ -11,14 +11,14 @@ object mod {
   
   @JSImport("react-svg", "ReactSVG")
   @js.native
-  class ReactSVG protected ()
+  open class ReactSVG protected ()
     extends typings.reactSvg.reactSVGMod.ReactSVG {
     def this(props: Props) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: Props, context: js.Any) = this()
+    def this(props: Props, context: Any) = this()
   }
   /* static members */
   object ReactSVG {

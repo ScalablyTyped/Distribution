@@ -1,7 +1,7 @@
 
 # Scala.js typings for use-memo-one
 
-Typings are for version 1.1.1
+Typings are for version 1.1.3
 
 ## Library description:
 useMemo and useCallback but with a stable cache
@@ -10,10 +10,10 @@ useMemo and useCallback but with a stable cache
 | ------------------ | :-------------: |
 | Full name          | use-memo-one |
 | Keywords           | memoization, react, useMemo, useCallback, memoize-one |
-| # releases         | 14 |
-| # dependents       | 59 |
-| # downloads        | 24909597 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 5229472.666666667 |
+| # stars            | 417.0 |
 
 ## Links
 - [Homepage](https://github.com/alexreardon/use-memo-one#readme)

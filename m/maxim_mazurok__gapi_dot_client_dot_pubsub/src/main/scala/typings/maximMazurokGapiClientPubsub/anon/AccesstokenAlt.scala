@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientPubsub.anon
 
-import typings.maximMazurokGapiClientPubsub.gapi.client.pubsub.SeekRequest
+import typings.maximMazurokGapiClientPubsub.gapi.client.pubsub.ModifyAckDeadlineRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,9 +36,9 @@ trait AccesstokenAlt extends StObject {
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: SeekRequest
+  var resource: ModifyAckDeadlineRequest
   
-  /** Required. The subscription to affect. */
+  /** Required. The name of the subscription. Format is `projects/{project}/subscriptions/{sub}`. */
   var subscription: String
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
@@ -49,7 +49,7 @@ trait AccesstokenAlt extends StObject {
 }
 object AccesstokenAlt {
   
-  inline def apply(resource: SeekRequest, subscription: String): AccesstokenAlt = {
+  inline def apply(resource: ModifyAckDeadlineRequest, subscription: String): AccesstokenAlt = {
     val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any], subscription = subscription.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccesstokenAlt]
   }
@@ -92,7 +92,7 @@ object AccesstokenAlt {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: SeekRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: ModifyAckDeadlineRequest): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     

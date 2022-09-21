@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Possible result values from the function mock invocation.
-  */
 trait SchemaResult extends StObject {
   
   /**
@@ -15,10 +12,9 @@ trait SchemaResult extends StObject {
   var undefined: js.UndefOr[SchemaEmpty] = js.undefined
   
   /**
-    * The result is an actual value. The type of the value must match that of
-    * the type declared by the service.
+    * The result is an actual value. The type of the value must match that of the type declared by the service.
     */
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[Any | Null] = js.undefined
 }
 object SchemaResult {
   
@@ -33,7 +29,9 @@ object SchemaResult {
     
     inline def setUndefinedUndefined: Self = StObject.set(x, "undefined", js.undefined)
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueNull: Self = StObject.set(x, "value", null)
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

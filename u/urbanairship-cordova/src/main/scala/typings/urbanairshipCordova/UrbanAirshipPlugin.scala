@@ -90,7 +90,7 @@ object UrbanAirshipPlugin {
     extends StObject
        with Event {
     
-    var extras: StringDictionary[js.Any] = js.native
+    var extras: StringDictionary[Any] = js.native
     
     var message: String = js.native
   }
@@ -157,11 +157,11 @@ object UrbanAirshipPlugin {
     
     var error: String
     
-    var value: js.Any
+    var value: Any
   }
   object RunActionResult {
     
-    inline def apply(error: String, value: js.Any): RunActionResult = {
+    inline def apply(error: String, value: Any): RunActionResult = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[RunActionResult]
     }
@@ -170,7 +170,7 @@ object UrbanAirshipPlugin {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

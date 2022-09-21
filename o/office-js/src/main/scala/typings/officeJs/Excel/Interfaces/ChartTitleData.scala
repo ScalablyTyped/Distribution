@@ -19,105 +19,105 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChartTitleData extends StObject {
   
   /**
-    *
     * Represents the formatting of a chart title, which includes fill and font formatting.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var format: js.UndefOr[ChartTitleFormatData] = js.undefined
   
   /**
+    * Returns the height, in points, of the chart title. Value is `null` if the chart title is not visible.
     *
-    * Returns the height, in points, of the chart title. Null if chart title is not visible.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var height: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Specifies the horizontal alignment for chart title.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var horizontalAlignment: js.UndefOr[ChartTextHorizontalAlignment | Center | Left | Right | Justify | Distributed] = js.undefined
   
   /**
+    * Specifies the distance, in points, from the left edge of chart title to the left edge of chart area. Value is `null` if the chart title is not visible.
     *
-    * Specifies the distance, in points, from the left edge of chart title to the left edge of chart area. Null if chart title is not visible.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var left: js.UndefOr[Double] = js.undefined
   
   /**
-    *
     * Specifies if the chart title will overlay the chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var overlay: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Represents the position of chart title. See `Excel.ChartTitlePosition` for details.
     *
-    * Represents the position of chart title. See Excel.ChartTitlePosition for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var position: js.UndefOr[ChartTitlePosition | Automatic | Top | Bottom | Left | Right] = js.undefined
   
   /**
-    *
     * Represents a boolean value that determines if the chart title has a shadow.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var showShadow: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * Specifies the chart's title text.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var text: js.UndefOr[String] = js.undefined
   
   /**
-    *
     * Specifies the angle to which the text is oriented for the chart title. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var textOrientation: js.UndefOr[Double] = js.undefined
   
   /**
+    * Specifies the distance, in points, from the top edge of chart title to the top of chart area. Value is `null` if the chart title is not visible.
     *
-    * Specifies the distance, in points, from the top edge of chart title to the top of chart area. Null if chart title is not visible.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var top: js.UndefOr[Double] = js.undefined
   
   /**
+    * Specifies the vertical alignment of chart title. See `Excel.ChartTextVerticalAlignment` for details.
     *
-    * Specifies the vertical alignment of chart title. See Excel.ChartTextVerticalAlignment for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var verticalAlignment: js.UndefOr[ChartTextVerticalAlignment | Center | Bottom | Top | Justify | Distributed] = js.undefined
   
   /**
-    *
     * Specifies if the chart title is visibile.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies the width, in points, of the chart title. Value is `null` if the chart title is not visible.
     *
-    * Specifies the width, in points, of the chart title. Null if chart title is not visible.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var width: js.UndefOr[Double] = js.undefined

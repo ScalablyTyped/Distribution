@@ -1,7 +1,7 @@
 
 # Scala.js typings for serverless
 
-Typings are for version 1.78
+Typings are for version 3.12
 
 ## Library description:
 Serverless Framework - Build web, mobile and IoT applications with serverless architectures using AWS Lambda, Azure Functions, Google CloudFunctions & more
@@ -10,10 +10,10 @@ Serverless Framework - Build web, mobile and IoT applications with serverless ar
 | ------------------ | :-------------: |
 | Full name          | serverless |
 | Keywords           | serverless, lambda, aws, amazon, azure, google-cloud, apache-open-whisk, iot |
-| # releases         | 521 |
-| # dependents       | 131 |
-| # downloads        | 24129959 |
-| # stars            | 70 |
+| # releases         | 1621 |
+| # dependents       | 0.0 |
+| # downloads        | 4273526.0 |
+| # stars            | 43460.0 |
 
 ## Links
 - [Homepage](https://serverless.com/framework/docs/)

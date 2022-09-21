@@ -1,19 +1,25 @@
 package typings.refractor
 
-import org.scalablytyped.runtime.Shortcut
-import typings.refractor.coreMod.RefractorSyntax
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object zigMod extends Shortcut {
+object zigMod {
   
-  @JSImport("refractor/lang/zig", JSImport.Namespace)
-  @js.native
-  val ^ : RefractorSyntax = js.native
-  
-  type _To = RefractorSyntax
-  
-  /* This means you don't have to write `^`, but can instead just say `zigMod.foo` */
-  override def _to: RefractorSyntax = ^
+  object default {
+    
+    inline def apply(Prism: Any): Unit = ^.asInstanceOf[js.Dynamic].apply(Prism.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    @JSImport("refractor/lang/zig", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("refractor/lang/zig", "default.aliases")
+    @js.native
+    val aliases: js.Array[Any] = js.native
+    
+    @JSImport("refractor/lang/zig", "default.displayName")
+    @js.native
+    val displayName: String = js.native
+  }
 }

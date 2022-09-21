@@ -10,10 +10,10 @@ get detailed information (more than ps, top etc) about running process on linux 
 | ------------------ | :-------------: |
 | Full name          | procfs-stats |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 14 |
-| # downloads        | 169676 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 10641.333333333334 |
+| # stars            | 65.0 |
 
 ## Links
 - [Homepage](https://github.com/soldair/node-procfs-stats#readme)

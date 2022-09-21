@@ -9,7 +9,7 @@ trait DialogflowV1WebhookResponse extends StObject {
   
   var contextOut: js.UndefOr[js.Array[DialogflowV1Context]] = js.undefined
   
-  var data: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
+  var data: js.UndefOr[ApiClientObjectMap[Any]] = js.undefined
   
   var displayText: js.UndefOr[String] = js.undefined
   
@@ -34,9 +34,9 @@ object DialogflowV1WebhookResponse {
     
     inline def setContextOutUndefined: Self = StObject.set(x, "contextOut", js.undefined)
     
-    inline def setContextOutVarargs(value: DialogflowV1Context*): Self = StObject.set(x, "contextOut", js.Array(value :_*))
+    inline def setContextOutVarargs(value: DialogflowV1Context*): Self = StObject.set(x, "contextOut", js.Array(value*))
     
-    inline def setData(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: ApiClientObjectMap[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -52,7 +52,7 @@ object DialogflowV1WebhookResponse {
     
     inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
-    inline def setMessagesVarargs(value: DialogflowV1Message*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: DialogflowV1Message*): Self = StObject.set(x, "messages", js.Array(value*))
     
     inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

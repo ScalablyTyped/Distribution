@@ -1,7 +1,7 @@
 
 # Scala.js typings for aggregate-error
 
-Typings are for version 3.1.0
+Typings are for version 4.0.1
 
 ## Library description:
 Create an error from multiple errors
@@ -10,10 +10,10 @@ Create an error from multiple errors
 | ------------------ | :-------------: |
 | Full name          | aggregate-error |
 | Keywords           | aggregate, error, combine, multiple, many, collection, iterable, iterator |
-| # releases         | 6 |
-| # dependents       | 138 |
-| # downloads        | 376262045 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 7.279671533333333E7 |
+| # stars            | 224.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/aggregate-error#readme)

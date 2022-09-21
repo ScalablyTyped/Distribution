@@ -10,15 +10,12 @@ SDK for sending events to debessmann
 | ------------------ | :-------------: |
 | Full name          | debessmann |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 553 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 12.0 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/fs535/debessmann#readme)
-- [Bugs](https://github.com/fs535/debessmann/issues)
-- [Repository](https://github.com/fs535/debessmann)
 - [Npm](https://www.npmjs.com/package/debessmann)
     
 

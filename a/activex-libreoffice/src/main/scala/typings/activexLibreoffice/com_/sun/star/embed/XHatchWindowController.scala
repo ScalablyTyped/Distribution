@@ -40,7 +40,7 @@ object XHatchWindowController {
     activated: () => Unit,
     calcAdjustedRectangle: Rectangle => Rectangle,
     deactivated: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     requestPositioning: Rectangle => Unit
   ): XHatchWindowController = {

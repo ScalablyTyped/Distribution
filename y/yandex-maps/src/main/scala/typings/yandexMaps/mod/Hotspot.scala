@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("yandex-maps", "Hotspot")
 @js.native
-class Hotspot protected ()
+open class Hotspot protected ()
   extends StObject
      with IHotspot {
   def this(shape: IShape) = this()

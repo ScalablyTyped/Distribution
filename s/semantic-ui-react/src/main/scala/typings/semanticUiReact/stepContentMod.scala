@@ -3,10 +3,10 @@ package typings.semanticUiReact
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ElementType
+import typings.react.mod.FC
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.ReactNodeArray
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import typings.semanticUiReact.genericMod.SemanticShorthandItem
 import typings.semanticUiReact.stepDescriptionMod.StepDescriptionProps
@@ -19,12 +19,12 @@ object stepContentMod extends Shortcut {
   
   @JSImport("semantic-ui-react/dist/commonjs/elements/Step/StepContent", JSImport.Default)
   @js.native
-  val default: StatelessComponent[StepContentProps] = js.native
+  val default: FC[StepContentProps] = js.native
   
   trait StepContentProps
     extends StObject
        with StrictStepContentProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object StepContentProps {
     
     inline def apply(): StepContentProps = {
@@ -36,7 +36,7 @@ object stepContentMod extends Shortcut {
   trait StrictStepContentProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -62,7 +62,7 @@ object stepContentMod extends Shortcut {
     
     extension [Self <: StrictStepContentProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -96,8 +96,8 @@ object stepContentMod extends Shortcut {
     }
   }
   
-  type _To = StatelessComponent[StepContentProps]
+  type _To = FC[StepContentProps]
   
   /* This means you don't have to write `default`, but can instead just say `stepContentMod.foo` */
-  override def _to: StatelessComponent[StepContentProps] = default
+  override def _to: FC[StepContentProps] = default
 }

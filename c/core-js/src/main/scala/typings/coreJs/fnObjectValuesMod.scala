@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object fnObjectValuesMod {
   
   /* was `typeof core.Object.values` */
-  inline def apply(`object`: js.Any): Array[js.Any] = ^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any]).asInstanceOf[Array[js.Any]]
+  inline def apply(`object`: Any): Array[Any] = ^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any]).asInstanceOf[Array[Any]]
   
   @JSImport("core-js/library/fn/object/values", JSImport.Namespace)
   @js.native

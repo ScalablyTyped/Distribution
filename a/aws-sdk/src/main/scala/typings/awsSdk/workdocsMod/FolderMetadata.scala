@@ -9,7 +9,7 @@ trait FolderMetadata extends StObject {
   /**
     * The time when the folder was created.
     */
-  var CreatedTimestamp: js.UndefOr[TimestampType] = js.undefined
+  var CreatedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The ID of the creator.
@@ -34,7 +34,7 @@ trait FolderMetadata extends StObject {
   /**
     * The time when the folder was updated.
     */
-  var ModifiedTimestamp: js.UndefOr[TimestampType] = js.undefined
+  var ModifiedTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the folder.
@@ -70,7 +70,7 @@ object FolderMetadata {
   
   extension [Self <: FolderMetadata](x: Self) {
     
-    inline def setCreatedTimestamp(value: TimestampType): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreatedTimestamp(value: js.Date): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     
@@ -86,13 +86,13 @@ object FolderMetadata {
     
     inline def setLabelsUndefined: Self = StObject.set(x, "Labels", js.undefined)
     
-    inline def setLabelsVarargs(value: SharedLabel*): Self = StObject.set(x, "Labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: SharedLabel*): Self = StObject.set(x, "Labels", js.Array(value*))
     
     inline def setLatestVersionSize(value: SizeType): Self = StObject.set(x, "LatestVersionSize", value.asInstanceOf[js.Any])
     
     inline def setLatestVersionSizeUndefined: Self = StObject.set(x, "LatestVersionSize", js.undefined)
     
-    inline def setModifiedTimestamp(value: TimestampType): Self = StObject.set(x, "ModifiedTimestamp", value.asInstanceOf[js.Any])
+    inline def setModifiedTimestamp(value: js.Date): Self = StObject.set(x, "ModifiedTimestamp", value.asInstanceOf[js.Any])
     
     inline def setModifiedTimestampUndefined: Self = StObject.set(x, "ModifiedTimestamp", js.undefined)
     

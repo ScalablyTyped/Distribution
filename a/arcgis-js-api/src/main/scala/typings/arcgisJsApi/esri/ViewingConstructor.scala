@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ViewingConstructor
   extends StObject
-     with Instantiable0[Viewing]
+     with /**
+  * Represents view-specific properties of application and UI elements for the web map or web scene.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-Viewing.html)
+  */
+Instantiable0[Viewing]
      with Instantiable1[/* properties */ ViewingProperties, Viewing]

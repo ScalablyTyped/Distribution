@@ -10,10 +10,10 @@ create lexicographic string keys for positive integers without zero-padding
 | ------------------ | :-------------: |
 | Full name          | lexicographic-integer |
 | Keywords           | lexicographic, encoding, pack, padding, integer |
-| # releases         | 0 |
-| # dependents       | 51 |
-| # downloads        | 17181 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7923.666666666667 |
+| # stars            | 43.0 |
 
 ## Links
 - [Homepage](https://github.com/substack/lexicographic-integer)

@@ -9,12 +9,12 @@ trait Checkpoint extends StObject {
   
   var doneParts: js.Array[Etag]
   
-  var file: js.Any
+  /** The file object selected by the user, if the browser is restarted, it needs the user to manually trigger the settings */
+  var file: Any
   
-  //  object key
   var fileSize: Double
   
-  // The file object selected by the user, if the browser is restarted, it needs the user to manually trigger the settings
+  /** object key */
   var name: String
   
   var partSize: Double
@@ -25,7 +25,7 @@ object Checkpoint {
   
   inline def apply(
     doneParts: js.Array[Etag],
-    file: js.Any,
+    file: Any,
     fileSize: Double,
     name: String,
     partSize: Double,
@@ -39,9 +39,9 @@ object Checkpoint {
     
     inline def setDoneParts(value: js.Array[Etag]): Self = StObject.set(x, "doneParts", value.asInstanceOf[js.Any])
     
-    inline def setDonePartsVarargs(value: Etag*): Self = StObject.set(x, "doneParts", js.Array(value :_*))
+    inline def setDonePartsVarargs(value: Etag*): Self = StObject.set(x, "doneParts", js.Array(value*))
     
-    inline def setFile(value: js.Any): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: Any): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
     inline def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
     

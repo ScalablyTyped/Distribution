@@ -11,14 +11,14 @@ trait IDragZone
      with IDragSource {
   
   /** [Config Option] (Object/Boolean) */
-  var containerScroll: js.UndefOr[js.Any] = js.undefined
+  var containerScroll: js.UndefOr[Any] = js.undefined
   
   /** [Method] Called when a mousedown occurs in this container
     * @param e Event The mouse down event
     * @returns Object The dragData
     */
   @JSName("getDragData")
-  var getDragData_IDragZone: js.UndefOr[js.Function1[/* e */ js.UndefOr[Event], js.Any]] = js.undefined
+  var getDragData_IDragZone: js.UndefOr[js.Function1[/* e */ js.UndefOr[Event], Any]] = js.undefined
   
   /** [Method] Called before a repair of an invalid drop to get the XY to animate to
     * @param e Event The mouse up event
@@ -34,7 +34,7 @@ trait IDragZone
   var onInitDrag: js.UndefOr[js.Function2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], Boolean]] = js.undefined
   
   /** [Config Option] (String/HTMLElement/Ext.dom.Element) */
-  var scrollEl: js.UndefOr[js.Any] = js.undefined
+  var scrollEl: js.UndefOr[Any] = js.undefined
 }
 object IDragZone {
   
@@ -45,11 +45,11 @@ object IDragZone {
   
   extension [Self <: IDragZone](x: Self) {
     
-    inline def setContainerScroll(value: js.Any): Self = StObject.set(x, "containerScroll", value.asInstanceOf[js.Any])
+    inline def setContainerScroll(value: Any): Self = StObject.set(x, "containerScroll", value.asInstanceOf[js.Any])
     
     inline def setContainerScrollUndefined: Self = StObject.set(x, "containerScroll", js.undefined)
     
-    inline def setGetDragData(value: /* e */ js.UndefOr[Event] => js.Any): Self = StObject.set(x, "getDragData", js.Any.fromFunction1(value))
+    inline def setGetDragData(value: /* e */ js.UndefOr[Event] => Any): Self = StObject.set(x, "getDragData", js.Any.fromFunction1(value))
     
     inline def setGetDragDataUndefined: Self = StObject.set(x, "getDragData", js.undefined)
     
@@ -61,7 +61,7 @@ object IDragZone {
     
     inline def setOnInitDragUndefined: Self = StObject.set(x, "onInitDrag", js.undefined)
     
-    inline def setScrollEl(value: js.Any): Self = StObject.set(x, "scrollEl", value.asInstanceOf[js.Any])
+    inline def setScrollEl(value: Any): Self = StObject.set(x, "scrollEl", value.asInstanceOf[js.Any])
     
     inline def setScrollElUndefined: Self = StObject.set(x, "scrollEl", js.undefined)
   }

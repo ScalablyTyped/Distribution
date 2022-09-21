@@ -21,6 +21,6 @@ object ScheduleTrigger {
     
     inline def setSchedules(value: js.Array[Schedule]): Self = StObject.set(x, "schedules", value.asInstanceOf[js.Any])
     
-    inline def setSchedulesVarargs(value: Schedule*): Self = StObject.set(x, "schedules", js.Array(value :_*))
+    inline def setSchedulesVarargs(value: Schedule*): Self = StObject.set(x, "schedules", js.Array(value*))
   }
 }

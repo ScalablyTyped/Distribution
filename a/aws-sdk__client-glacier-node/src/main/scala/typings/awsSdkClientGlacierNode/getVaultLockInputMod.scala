@@ -8,5 +8,5 @@ object getVaultLockInputMod {
   
   @JSImport("@aws-sdk/client-glacier-node/model/GetVaultLockInput", "GetVaultLockInput")
   @js.native
-  val GetVaultLockInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val GetVaultLockInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

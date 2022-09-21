@@ -10,10 +10,10 @@ object permDeviceInformationMod {
   
   @JSImport("material-ui/svg-icons/action/perm-device-information", JSImport.Default)
   @js.native
-  class default () extends ActionPermDeviceInformation
+  open class default () extends ActionPermDeviceInformation
   
   @JSImport("material-ui/svg-icons/action/perm-device-information", "ActionPermDeviceInformation")
   @js.native
-  class ActionPermDeviceInformation ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionPermDeviceInformation ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

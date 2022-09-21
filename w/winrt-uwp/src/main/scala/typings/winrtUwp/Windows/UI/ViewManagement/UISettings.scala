@@ -15,11 +15,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait UISettings extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_colorvalueschanged(`type`: colorvalueschanged, listener: TypedEventHandler[UISettings, js.Any]): Unit = js.native
+  def addEventListener_colorvalueschanged(`type`: colorvalueschanged, listener: TypedEventHandler[UISettings, Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_textscalefactorchanged(`type`: textscalefactorchanged, listener: TypedEventHandler[UISettings, js.Any]): Unit = js.native
+  def addEventListener_textscalefactorchanged(`type`: textscalefactorchanged, listener: TypedEventHandler[UISettings, Any]): Unit = js.native
   
   /** Gets whether animations are enabled for the user interface. */
   var animationsEnabled: Boolean = js.native
@@ -56,22 +56,22 @@ trait UISettings extends StObject {
   var mouseHoverTime: Double = js.native
   
   /** Occurs when color values have changed. */
-  def oncolorvalueschanged(ev: js.Any & WinRTEvent[UISettings]): Unit = js.native
+  def oncolorvalueschanged(ev: Any & WinRTEvent[UISettings]): Unit = js.native
   /** Occurs when color values have changed. */
   @JSName("oncolorvalueschanged")
-  var oncolorvalueschanged_Original: TypedEventHandler[UISettings, js.Any] = js.native
+  var oncolorvalueschanged_Original: TypedEventHandler[UISettings, Any] = js.native
   
   /** Occurs when the system text size setting is changed. */
-  def ontextscalefactorchanged(ev: js.Any & WinRTEvent[UISettings]): Unit = js.native
+  def ontextscalefactorchanged(ev: Any & WinRTEvent[UISettings]): Unit = js.native
   /** Occurs when the system text size setting is changed. */
   @JSName("ontextscalefactorchanged")
-  var ontextscalefactorchanged_Original: TypedEventHandler[UISettings, js.Any] = js.native
+  var ontextscalefactorchanged_Original: TypedEventHandler[UISettings, Any] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_colorvalueschanged(`type`: colorvalueschanged, listener: TypedEventHandler[UISettings, js.Any]): Unit = js.native
+  def removeEventListener_colorvalueschanged(`type`: colorvalueschanged, listener: TypedEventHandler[UISettings, Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_textscalefactorchanged(`type`: textscalefactorchanged, listener: TypedEventHandler[UISettings, js.Any]): Unit = js.native
+  def removeEventListener_textscalefactorchanged(`type`: textscalefactorchanged, listener: TypedEventHandler[UISettings, Any]): Unit = js.native
   
   /** Gets the size of a scroll bar arrow for windows associated with the app view. */
   var scrollBarArrowSize: Size = js.native

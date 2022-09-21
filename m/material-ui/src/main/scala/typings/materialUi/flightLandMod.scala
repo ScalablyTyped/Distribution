@@ -10,10 +10,10 @@ object flightLandMod {
   
   @JSImport("material-ui/svg-icons/action/flight-land", JSImport.Default)
   @js.native
-  class default () extends ActionFlightLand
+  open class default () extends ActionFlightLand
   
   @JSImport("material-ui/svg-icons/action/flight-land", "ActionFlightLand")
   @js.native
-  class ActionFlightLand ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionFlightLand ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

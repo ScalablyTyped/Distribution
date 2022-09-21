@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "simplebar" : "5.3.8"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "simplebar" : "5.3.8"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

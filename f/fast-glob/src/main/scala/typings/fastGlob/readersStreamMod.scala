@@ -12,15 +12,15 @@ object readersStreamMod {
   
   @JSImport("fast-glob/out/readers/stream", JSImport.Default)
   @js.native
-  class default () extends ReaderStream
+  open class default () extends ReaderStream
   
   @js.native
   trait ReaderStream
     extends typings.fastGlob.readerMod.default[Readable] {
     
-    /* private */ var _getEntry: js.Any = js.native
+    /* private */ var _getEntry: Any = js.native
     
-    /* private */ var _getStat: js.Any = js.native
+    /* private */ var _getStat: Any = js.native
     
     /* protected */ var _stat: Typeofstat = js.native
     

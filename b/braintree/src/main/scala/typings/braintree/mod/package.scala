@@ -1,45 +1,70 @@
 package typings.braintree.mod
 
+import typings.braintree.anon.Amount
+import typings.braintree.anon.Between
+import typings.braintree.anon.Contains
+import typings.braintree.anon.EndsWith
+import typings.braintree.anon.In
+import typings.braintree.anon.Is
+import typings.braintree.anon.`0`
+import typings.braintree.braintreeStrings.account_updater_daily_report
+import typings.braintree.braintreeStrings.payment_method_revoked_by_customer
+import typings.braintree.braintreeStrings.sub_merchant_account_approved
+import typings.braintree.braintreeStrings.sub_merchant_account_declined
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def connect(config: typings.braintree.mod.GatewayConfig): typings.braintree.mod.BraintreeGateway = typings.braintree.mod.^.asInstanceOf[js.Dynamic].applyDynamic("connect")(config.asInstanceOf[js.Any]).asInstanceOf[typings.braintree.mod.BraintreeGateway]
+type AccountUpdaterNotificationKind = account_updater_daily_report
 
-type AccountUpdaterNotificationKind = typings.braintree.braintreeStrings.account_updater_daily_report
+type AuthenticationError = js.Error
 
-type AuthenticationError = typings.std.Error
+type AuthorizationError = js.Error
 
-type AuthorizationError = typings.std.Error
+type EqualitySearchFn[T] = js.Function0[Is[T]]
 
-type DownForMaintenanceError = typings.std.Error
+type GatewayTimeoutError = js.Error
 
-type InvalidChallengeError = typings.std.Error
+type InvalidChallengeError = js.Error
 
-type InvalidKeysError = typings.std.Error
+type InvalidKeysError = js.Error
 
-type InvalidSignatureError = typings.std.Error
+type InvalidSignatureError = js.Error
 
-type InvalidTransparentRedirectHashError = typings.std.Error
+type KeyValueSearchFn[T] = js.Function0[`0`[T]]
 
-type NotFoundError = typings.std.Error
+type MultiValueSearchFn[T] = js.Function0[In[T]]
 
-type PaymentMethodNotificationKind = typings.braintree.braintreeStrings.payment_method_revoked_by_customer
+type NotFoundError = js.Error
 
-type ServerError = typings.std.Error
+type PartialMatchSearchFn[T] = js.Function0[EndsWith[T]]
 
-type SubMerchantAccountApprovedNotificationKind = typings.braintree.braintreeStrings.sub_merchant_account_approved
+type PaymentMethodNotificationKind = payment_method_revoked_by_customer
 
-type SubMerchantAccountDeclinedNotificationKind = typings.braintree.braintreeStrings.sub_merchant_account_declined
+type RangeFieldSearchFn[T] = js.Function0[Between[T]]
 
-type TestOperationPerformedInProductionError = typings.std.Error
+type RequestTimeoutError = js.Error
 
-type TooManyRequestsError = typings.std.Error
+type ServerError = js.Error
 
-type UnexpectedError = typings.std.Error
+type ServiceUnavailableError = js.Error
 
-type UpgradeRequired = typings.std.Error
+type SubMerchantAccountApprovedNotificationKind = sub_merchant_account_approved
+
+type SubMerchantAccountDeclinedNotificationKind = sub_merchant_account_declined
+
+type TestOperationPerformedInProductionError = js.Error
+
+type TextFieldSearchFn = js.Function0[Contains]
+
+type TooManyRequestsError = js.Error
+
+type TransactionSearchFn = js.Function1[/* search */ Amount, Unit]
+
+type UnexpectedError = js.Error
+
+type UpgradeRequired = js.Error
 
 /* Rewritten from type alias, can be one of: 
   - typings.braintree.mod.AccountUpdaterNotificationKind
@@ -49,11 +74,10 @@ type UpgradeRequired = typings.std.Error
   - typings.braintree.mod.SubMerchantAccountDeclinedNotificationKind
   - typings.braintree.mod.TransactionNotificationKind
   - typings.braintree.mod.PaymentMethodNotificationKind
+  - typings.braintree.mod.DisbursementNotificationKind
   - typings.braintree.braintreeStrings.check
   - typings.braintree.braintreeStrings.connected_merchant_paypal_status_changed
   - typings.braintree.braintreeStrings.connected_merchant_status_transitioned
-  - typings.braintree.braintreeStrings.disbursement
-  - typings.braintree.braintreeStrings.disbursement_exception
   - typings.braintree.braintreeStrings.grantor_updated_granted_payment_method
   - typings.braintree.braintreeStrings.granted_payment_method_revoked
   - typings.braintree.braintreeStrings.local_payment_completed
@@ -63,4 +87,4 @@ type UpgradeRequired = typings.std.Error
   - typings.braintree.braintreeStrings.oauth_access_revoked
   - typings.braintree.braintreeStrings.recipient_updated_granted_payment_method
 */
-type WebhookNotificationKind = typings.braintree.mod._WebhookNotificationKind | typings.braintree.mod.AccountUpdaterNotificationKind | typings.braintree.mod.SubMerchantAccountApprovedNotificationKind | typings.braintree.mod.SubMerchantAccountDeclinedNotificationKind | typings.braintree.mod.PaymentMethodNotificationKind
+type WebhookNotificationKind = _WebhookNotificationKind | AccountUpdaterNotificationKind | SubMerchantAccountApprovedNotificationKind | SubMerchantAccountDeclinedNotificationKind | PaymentMethodNotificationKind

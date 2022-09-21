@@ -11,6 +11,8 @@ trait QueueConfig extends StObject {
   
   var check: js.UndefOr[Boolean] = js.undefined
   
+  var name: js.UndefOr[String] = js.undefined
+  
   var options: js.UndefOr[AssertQueue] = js.undefined
 }
 object QueueConfig {
@@ -29,6 +31,10 @@ object QueueConfig {
     inline def setCheck(value: Boolean): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
     
     inline def setCheckUndefined: Self = StObject.set(x, "check", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setOptions(value: AssertQueue): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

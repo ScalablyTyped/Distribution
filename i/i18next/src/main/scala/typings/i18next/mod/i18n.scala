@@ -1,9 +1,13 @@
 package typings.i18next.mod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.i18next.anon.InterpolationOptionskeyst
 import typings.i18next.anon.KeySeparator
-import typings.i18next.anon.Silent
-import typings.i18next.anon.Translation
+import typings.i18next.anon.PickInitOptionsfallbackLn
+import typings.i18next.anon.PickInitOptionskeySeparat
+import typings.i18next.anon.ReturnDetails
+import typings.i18next.anon.ReturnObjects
+import typings.i18next.anon.`0`
 import typings.i18next.i18nextStrings.added
 import typings.i18next.i18nextStrings.failedLoading
 import typings.i18next.i18nextStrings.initialized
@@ -24,29 +28,31 @@ trait i18n extends StObject {
     * Adds one key/value.
     */
   def addResource(lng: String, ns: String, key: String, value: String): i18n = js.native
-  def addResource(lng: String, ns: String, key: String, value: String, options: Silent): i18n = js.native
+  def addResource(lng: String, ns: String, key: String, value: String, options: KeySeparator): i18n = js.native
   
   /**
     * Adds a complete bundle.
     * Setting deep param to true will extend existing translations in that file.
     * Setting overwrite to true it will overwrite existing translations in that file.
     */
-  def addResourceBundle(lng: String, ns: String, resources: js.Any): i18n = js.native
-  def addResourceBundle(lng: String, ns: String, resources: js.Any, deep: Boolean): i18n = js.native
-  def addResourceBundle(lng: String, ns: String, resources: js.Any, deep: Boolean, overwrite: Boolean): i18n = js.native
-  def addResourceBundle(lng: String, ns: String, resources: js.Any, deep: Unit, overwrite: Boolean): i18n = js.native
+  def addResourceBundle(lng: String, ns: String, resources: Any): i18n = js.native
+  def addResourceBundle(lng: String, ns: String, resources: Any, deep: Boolean): i18n = js.native
+  def addResourceBundle(lng: String, ns: String, resources: Any, deep: Boolean, overwrite: Boolean): i18n = js.native
+  def addResourceBundle(lng: String, ns: String, resources: Any, deep: Unit, overwrite: Boolean): i18n = js.native
   
   /**
     * Adds multiple key/values.
     */
-  def addResources(lng: String, ns: String, resources: js.Any): i18n = js.native
+  def addResources(lng: String, ns: String, resources: Any): i18n = js.native
   
   /**
     * Changes the language. The callback will be called as soon translations were loaded or an error occurs while loading.
     * HINT: For easy testing - setting lng to 'cimode' will set t function to always return the key.
     */
+  def changeLanguage(): js.Promise[TFunction] = js.native
   def changeLanguage(lng: String): js.Promise[TFunction] = js.native
   def changeLanguage(lng: String, callback: Callback): js.Promise[TFunction] = js.native
+  def changeLanguage(lng: Unit, callback: Callback): js.Promise[TFunction] = js.native
   
   /**
     * Creates a clone of the current instance. Shares store, plugins and initial configuration.
@@ -95,14 +101,14 @@ trait i18n extends StObject {
   /**
     * Exposes interpolation.format function added on init.
     */
-  def format(value: js.Any): String = js.native
-  def format(value: js.Any, format: String): String = js.native
-  def format(value: js.Any, format: String, lng: String): String = js.native
-  def format(value: js.Any, format: String, lng: String, options: InterpolationOptionskeyst): String = js.native
-  def format(value: js.Any, format: String, lng: Unit, options: InterpolationOptionskeyst): String = js.native
-  def format(value: js.Any, format: Unit, lng: String): String = js.native
-  def format(value: js.Any, format: Unit, lng: String, options: InterpolationOptionskeyst): String = js.native
-  def format(value: js.Any, format: Unit, lng: Unit, options: InterpolationOptionskeyst): String = js.native
+  def format(value: Any): String = js.native
+  def format(value: Any, format: String): String = js.native
+  def format(value: Any, format: String, lng: String): String = js.native
+  def format(value: Any, format: String, lng: String, options: InterpolationOptionskeyst): String = js.native
+  def format(value: Any, format: String, lng: Unit, options: InterpolationOptionskeyst): String = js.native
+  def format(value: Any, format: Unit, lng: String): String = js.native
+  def format(value: Any, format: Unit, lng: String, options: InterpolationOptionskeyst): String = js.native
+  def format(value: Any, format: Unit, lng: Unit, options: InterpolationOptionskeyst): String = js.native
   /**
     * Exposes interpolation.format function added on init.
     */
@@ -112,32 +118,50 @@ trait i18n extends StObject {
   /**
     * Returns a resource data by language.
     */
-  def getDataByLanguage(lng: String): js.UndefOr[Translation] = js.native
+  def getDataByLanguage(lng: String): js.UndefOr[StringDictionary[StringDictionary[String]]] = js.native
   
+  def getFixedT(): TFunction = js.native
   /**
     * Returns a t function that defaults to given language or namespace.
     * Both params could be arrays of languages or namespaces and will be treated as fallbacks in that case.
     * On the returned function you can like in the t function override the languages or namespaces by passing them in options or by prepending namespace.
+    *
+    * Accepts optional keyPrefix that will be automatically applied to returned t function.
     */
   def getFixedT(lng: String): TFunction = js.native
   def getFixedT(lng: String, ns: String): TFunction = js.native
+  def getFixedT(lng: String, ns: String, keyPrefix: String): TFunction = js.native
   def getFixedT(lng: String, ns: js.Array[String]): TFunction = js.native
+  def getFixedT(lng: String, ns: js.Array[String], keyPrefix: String): TFunction = js.native
+  def getFixedT(lng: String, ns: Unit, keyPrefix: String): TFunction = js.native
   def getFixedT(lng: js.Array[String]): TFunction = js.native
   def getFixedT(lng: js.Array[String], ns: String): TFunction = js.native
+  def getFixedT(lng: js.Array[String], ns: String, keyPrefix: String): TFunction = js.native
   def getFixedT(lng: js.Array[String], ns: js.Array[String]): TFunction = js.native
+  def getFixedT(lng: js.Array[String], ns: js.Array[String], keyPrefix: String): TFunction = js.native
+  def getFixedT(lng: js.Array[String], ns: Unit, keyPrefix: String): TFunction = js.native
   def getFixedT(lng: Null, ns: String): TFunction = js.native
+  def getFixedT(lng: Null, ns: String, keyPrefix: String): TFunction = js.native
   def getFixedT(lng: Null, ns: js.Array[String]): TFunction = js.native
+  def getFixedT(lng: Null, ns: js.Array[String], keyPrefix: String): TFunction = js.native
+  def getFixedT(lng: Null, ns: Null, keyPrefix: String): TFunction = js.native
   
   /**
     * Gets one value by given key.
     */
-  def getResource(lng: String, ns: String, key: String): js.Any = js.native
-  def getResource(lng: String, ns: String, key: String, options: KeySeparator): js.Any = js.native
+  def getResource(lng: String, ns: String, key: String): Any = js.native
+  def getResource(lng: String, ns: String, key: String, options: PickInitOptionskeySeparat): Any = js.native
   
   /**
     * Returns a resource bundle.
     */
-  def getResourceBundle(lng: String, ns: String): js.Any = js.native
+  def getResourceBundle(lng: String, ns: String): Any = js.native
+  
+  /**
+    * Checks if a namespace has been loaded.
+    */
+  def hasLoadedNamespace(ns: String): Boolean = js.native
+  def hasLoadedNamespace(ns: String, options: PickInitOptionsfallbackLn): Boolean = js.native
   
   /**
     * Checks if a resource bundle exists.
@@ -189,7 +213,7 @@ trait i18n extends StObject {
   def loadNamespaces(ns: js.Array[String], callback: Callback): js.Promise[Unit] = js.native
   
   def loadResources(): Unit = js.native
-  def loadResources(callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+  def loadResources(callback: js.Function1[/* err */ Any, Unit]): Unit = js.native
   
   /**
     * List of modules used
@@ -201,17 +225,16 @@ trait i18n extends StObject {
     * removes all callback when callback not specified
     */
   def off(event: String): Unit = js.native
-  def off(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+  def off(event: String, listener: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
   
-  /**
-    * Event listener
-    */
-  def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
   /**
     * Gets fired when resources got added or removed.
     */
-  @JSName("on")
-  def on_added(event: added, callback: js.Function2[/* lng */ String, /* ns */ String, Unit]): Unit = js.native
+  def on(event: added | removed, callback: js.Function2[/* lng */ String, /* ns */ String, Unit]): Unit = js.native
+  /**
+    * Event listener
+    */
+  def on(event: String, listener: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
   /**
     * Gets fired if loading resources failed.
     */
@@ -234,7 +257,10 @@ trait i18n extends StObject {
     * Gets fired on loaded resources.
     */
   @JSName("on")
-  def on_loaded(event: loaded, callback: js.Function1[/* loaded */ Boolean, Unit]): Unit = js.native
+  def on_loaded(
+    event: loaded,
+    callback: js.Function1[/* loaded */ StringDictionary[StringDictionary[Boolean]], Unit]
+  ): Unit = js.native
   /**
     * Gets fired on accessing a key not existing.
     */
@@ -249,8 +275,6 @@ trait i18n extends StObject {
       Unit
     ]
   ): Unit = js.native
-  @JSName("on")
-  def on_removed(event: removed, callback: js.Function2[/* lng */ String, /* ns */ String, Unit]): Unit = js.native
   
   /**
     * Current options
@@ -289,6 +313,12 @@ trait i18n extends StObject {
   def removeResourceBundle(lng: String, ns: String): i18n = js.native
   
   /**
+    * Is set to the current resolved language.
+    * It can be used as primary used language, for example in a language switcher.
+    */
+  var resolvedLanguage: String = js.native
+  
+  /**
     * Internal container for all used plugins and implementation details like languageUtils, pluralResolvers, etc.
     */
   var services: Services = js.native
@@ -310,15 +340,21 @@ trait i18n extends StObject {
   def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: TKeys, defaultValue: String, options: TOptions[TInterpolationMap]): TResult = js.native
   def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: TKeys, defaultValue: Unit, options: String): TResult = js.native
   def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: TKeys, defaultValue: Unit, options: TOptions[TInterpolationMap]): TResult = js.native
+  def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](
+    key: TKeys,
+    options: (TOptions[TInterpolationMap] & ReturnDetails & `0` & ReturnObjects) | TOptions[TInterpolationMap]
+  ): TResult = js.native
   def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: TKeys, options: String): TResult = js.native
-  def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: TKeys, options: TOptions[TInterpolationMap]): TResult = js.native
   def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: js.Array[TKeys]): TResult = js.native
   def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: js.Array[TKeys], defaultValue: String, options: String): TResult = js.native
   def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: js.Array[TKeys], defaultValue: String, options: TOptions[TInterpolationMap]): TResult = js.native
   def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: js.Array[TKeys], defaultValue: Unit, options: String): TResult = js.native
   def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: js.Array[TKeys], defaultValue: Unit, options: TOptions[TInterpolationMap]): TResult = js.native
+  def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](
+    key: js.Array[TKeys],
+    options: (TOptions[TInterpolationMap] & ReturnDetails & `0` & ReturnObjects) | TOptions[TInterpolationMap]
+  ): TResult = js.native
   def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: js.Array[TKeys], options: String): TResult = js.native
-  def t[TResult /* <: TFunctionResult */, TKeys /* <: TFunctionKeys */, TInterpolationMap /* <: js.Object */](key: js.Array[TKeys], options: TOptions[TInterpolationMap]): TResult = js.native
   // Expose parameterized t in the i18next interface hierarchy
   @JSName("t")
   var t_Original: TFunction = js.native
@@ -327,9 +363,9 @@ trait i18n extends StObject {
     * The use function is there to load additional plugins to i18next.
     * For available module see the plugins page and don't forget to read the documentation of the plugin.
     *
-    * Accepts a class or object
+    * @param module Accepts a class or object
     */
-  def use[T /* <: Module */](module: T): i18n = js.native
-  def use[T /* <: Module */](module: js.Array[Newable[ThirdPartyModule] | ThirdPartyModule]): i18n = js.native
-  def use[T /* <: Module */](module: Newable[T]): i18n = js.native
+  def use[T /* <: Module */](module: T): this.type = js.native
+  def use[T /* <: Module */](module: Newable[T]): this.type = js.native
+  def use[T /* <: Module */](module: NewableModule[T]): this.type = js.native
 }

@@ -25,12 +25,12 @@ trait IntersectionObserver extends StObject {
     */
   def relativeTo(): Unit = js.native
   def relativeTo(selector: String): Unit = js.native
-  def relativeTo(selector: String, margins: js.Array[js.Any]): Unit = js.native
-  def relativeTo(selector: Unit, margins: js.Array[js.Any]): Unit = js.native
+  def relativeTo(selector: String, margins: js.Array[Any]): Unit = js.native
+  def relativeTo(selector: Unit, margins: js.Array[Any]): Unit = js.native
   
   /**
     * 指定页面显示区域作为参照区域之一
     */
   def relativeToViewport(): Unit = js.native
-  def relativeToViewport(margins: js.Array[js.Any]): Unit = js.native
+  def relativeToViewport(margins: js.Array[Any]): Unit = js.native
 }

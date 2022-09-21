@@ -27,6 +27,6 @@ object ManagedAppConfiguration {
     
     inline def setCustomSettingsUndefined: Self = StObject.set(x, "customSettings", js.undefined)
     
-    inline def setCustomSettingsVarargs(value: KeyValuePair*): Self = StObject.set(x, "customSettings", js.Array(value :_*))
+    inline def setCustomSettingsVarargs(value: KeyValuePair*): Self = StObject.set(x, "customSettings", js.Array(value*))
   }
 }

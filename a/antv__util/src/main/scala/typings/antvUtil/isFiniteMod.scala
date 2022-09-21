@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object isFiniteMod {
   
-  @JSImport("@antv/util/lib/is-finite", JSImport.Namespace)
+  @JSImport("@antv/util/lib/lodash/is-finite", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(value: js.Any): /* is number */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[/* is number */ Boolean]
+  inline def default(value: Any): /* is number */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[/* is number */ Boolean]
 }

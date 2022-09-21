@@ -12,7 +12,7 @@ trait ICoreWindow extends StObject {
   
   def activate(): Unit
   
-  var automationHostProvider: js.Any
+  var automationHostProvider: Any
   
   var bounds: Rect
   
@@ -30,39 +30,39 @@ trait ICoreWindow extends StObject {
   
   var isInputEnabled: Boolean
   
-  var onactivated: js.Any
+  var onactivated: Any
   
-  var onautomationproviderrequested: js.Any
+  var onautomationproviderrequested: Any
   
-  var oncharacterreceived: js.Any
+  var oncharacterreceived: Any
   
-  var onclosed: js.Any
+  var onclosed: Any
   
-  var oninputenabled: js.Any
+  var oninputenabled: Any
   
-  var onkeydown: js.Any
+  var onkeydown: Any
   
-  var onkeyup: js.Any
+  var onkeyup: Any
   
-  var onpointercapturelost: js.Any
+  var onpointercapturelost: Any
   
-  var onpointerentered: js.Any
+  var onpointerentered: Any
   
-  var onpointerexited: js.Any
+  var onpointerexited: Any
   
-  var onpointermoved: js.Any
+  var onpointermoved: Any
   
-  var onpointerpressed: js.Any
+  var onpointerpressed: Any
   
-  var onpointerreleased: js.Any
+  var onpointerreleased: Any
   
-  var onpointerwheelchanged: js.Any
+  var onpointerwheelchanged: Any
   
-  var onsizechanged: js.Any
+  var onsizechanged: Any
   
-  var ontouchhittesting: js.Any
+  var ontouchhittesting: Any
   
-  var onvisibilitychanged: js.Any
+  var onvisibilitychanged: Any
   
   var pointerCursor: CoreCursor
   
@@ -78,7 +78,7 @@ object ICoreWindow {
   
   inline def apply(
     activate: () => Unit,
-    automationHostProvider: js.Any,
+    automationHostProvider: Any,
     bounds: Rect,
     close: () => Unit,
     customProperties: IPropertySet,
@@ -87,23 +87,23 @@ object ICoreWindow {
     getAsyncKeyState: VirtualKey => CoreVirtualKeyStates,
     getKeyState: VirtualKey => CoreVirtualKeyStates,
     isInputEnabled: Boolean,
-    onactivated: js.Any,
-    onautomationproviderrequested: js.Any,
-    oncharacterreceived: js.Any,
-    onclosed: js.Any,
-    oninputenabled: js.Any,
-    onkeydown: js.Any,
-    onkeyup: js.Any,
-    onpointercapturelost: js.Any,
-    onpointerentered: js.Any,
-    onpointerexited: js.Any,
-    onpointermoved: js.Any,
-    onpointerpressed: js.Any,
-    onpointerreleased: js.Any,
-    onpointerwheelchanged: js.Any,
-    onsizechanged: js.Any,
-    ontouchhittesting: js.Any,
-    onvisibilitychanged: js.Any,
+    onactivated: Any,
+    onautomationproviderrequested: Any,
+    oncharacterreceived: Any,
+    onclosed: Any,
+    oninputenabled: Any,
+    onkeydown: Any,
+    onkeyup: Any,
+    onpointercapturelost: Any,
+    onpointerentered: Any,
+    onpointerexited: Any,
+    onpointermoved: Any,
+    onpointerpressed: Any,
+    onpointerreleased: Any,
+    onpointerwheelchanged: Any,
+    onsizechanged: Any,
+    ontouchhittesting: Any,
+    onvisibilitychanged: Any,
     pointerCursor: CoreCursor,
     pointerPosition: Point,
     releasePointerCapture: () => Unit,
@@ -118,7 +118,7 @@ object ICoreWindow {
     
     inline def setActivate(value: () => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction0(value))
     
-    inline def setAutomationHostProvider(value: js.Any): Self = StObject.set(x, "automationHostProvider", value.asInstanceOf[js.Any])
+    inline def setAutomationHostProvider(value: Any): Self = StObject.set(x, "automationHostProvider", value.asInstanceOf[js.Any])
     
     inline def setBounds(value: Rect): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
@@ -136,39 +136,39 @@ object ICoreWindow {
     
     inline def setIsInputEnabled(value: Boolean): Self = StObject.set(x, "isInputEnabled", value.asInstanceOf[js.Any])
     
-    inline def setOnactivated(value: js.Any): Self = StObject.set(x, "onactivated", value.asInstanceOf[js.Any])
+    inline def setOnactivated(value: Any): Self = StObject.set(x, "onactivated", value.asInstanceOf[js.Any])
     
-    inline def setOnautomationproviderrequested(value: js.Any): Self = StObject.set(x, "onautomationproviderrequested", value.asInstanceOf[js.Any])
+    inline def setOnautomationproviderrequested(value: Any): Self = StObject.set(x, "onautomationproviderrequested", value.asInstanceOf[js.Any])
     
-    inline def setOncharacterreceived(value: js.Any): Self = StObject.set(x, "oncharacterreceived", value.asInstanceOf[js.Any])
+    inline def setOncharacterreceived(value: Any): Self = StObject.set(x, "oncharacterreceived", value.asInstanceOf[js.Any])
     
-    inline def setOnclosed(value: js.Any): Self = StObject.set(x, "onclosed", value.asInstanceOf[js.Any])
+    inline def setOnclosed(value: Any): Self = StObject.set(x, "onclosed", value.asInstanceOf[js.Any])
     
-    inline def setOninputenabled(value: js.Any): Self = StObject.set(x, "oninputenabled", value.asInstanceOf[js.Any])
+    inline def setOninputenabled(value: Any): Self = StObject.set(x, "oninputenabled", value.asInstanceOf[js.Any])
     
-    inline def setOnkeydown(value: js.Any): Self = StObject.set(x, "onkeydown", value.asInstanceOf[js.Any])
+    inline def setOnkeydown(value: Any): Self = StObject.set(x, "onkeydown", value.asInstanceOf[js.Any])
     
-    inline def setOnkeyup(value: js.Any): Self = StObject.set(x, "onkeyup", value.asInstanceOf[js.Any])
+    inline def setOnkeyup(value: Any): Self = StObject.set(x, "onkeyup", value.asInstanceOf[js.Any])
     
-    inline def setOnpointercapturelost(value: js.Any): Self = StObject.set(x, "onpointercapturelost", value.asInstanceOf[js.Any])
+    inline def setOnpointercapturelost(value: Any): Self = StObject.set(x, "onpointercapturelost", value.asInstanceOf[js.Any])
     
-    inline def setOnpointerentered(value: js.Any): Self = StObject.set(x, "onpointerentered", value.asInstanceOf[js.Any])
+    inline def setOnpointerentered(value: Any): Self = StObject.set(x, "onpointerentered", value.asInstanceOf[js.Any])
     
-    inline def setOnpointerexited(value: js.Any): Self = StObject.set(x, "onpointerexited", value.asInstanceOf[js.Any])
+    inline def setOnpointerexited(value: Any): Self = StObject.set(x, "onpointerexited", value.asInstanceOf[js.Any])
     
-    inline def setOnpointermoved(value: js.Any): Self = StObject.set(x, "onpointermoved", value.asInstanceOf[js.Any])
+    inline def setOnpointermoved(value: Any): Self = StObject.set(x, "onpointermoved", value.asInstanceOf[js.Any])
     
-    inline def setOnpointerpressed(value: js.Any): Self = StObject.set(x, "onpointerpressed", value.asInstanceOf[js.Any])
+    inline def setOnpointerpressed(value: Any): Self = StObject.set(x, "onpointerpressed", value.asInstanceOf[js.Any])
     
-    inline def setOnpointerreleased(value: js.Any): Self = StObject.set(x, "onpointerreleased", value.asInstanceOf[js.Any])
+    inline def setOnpointerreleased(value: Any): Self = StObject.set(x, "onpointerreleased", value.asInstanceOf[js.Any])
     
-    inline def setOnpointerwheelchanged(value: js.Any): Self = StObject.set(x, "onpointerwheelchanged", value.asInstanceOf[js.Any])
+    inline def setOnpointerwheelchanged(value: Any): Self = StObject.set(x, "onpointerwheelchanged", value.asInstanceOf[js.Any])
     
-    inline def setOnsizechanged(value: js.Any): Self = StObject.set(x, "onsizechanged", value.asInstanceOf[js.Any])
+    inline def setOnsizechanged(value: Any): Self = StObject.set(x, "onsizechanged", value.asInstanceOf[js.Any])
     
-    inline def setOntouchhittesting(value: js.Any): Self = StObject.set(x, "ontouchhittesting", value.asInstanceOf[js.Any])
+    inline def setOntouchhittesting(value: Any): Self = StObject.set(x, "ontouchhittesting", value.asInstanceOf[js.Any])
     
-    inline def setOnvisibilitychanged(value: js.Any): Self = StObject.set(x, "onvisibilitychanged", value.asInstanceOf[js.Any])
+    inline def setOnvisibilitychanged(value: Any): Self = StObject.set(x, "onvisibilitychanged", value.asInstanceOf[js.Any])
     
     inline def setPointerCursor(value: CoreCursor): Self = StObject.set(x, "pointerCursor", value.asInstanceOf[js.Any])
     

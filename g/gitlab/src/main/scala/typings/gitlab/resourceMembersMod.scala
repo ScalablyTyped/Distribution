@@ -15,7 +15,7 @@ object resourceMembersMod {
   
   @JSImport("gitlab/dist/types/core/templates/ResourceMembers", "ResourceMembers")
   @js.native
-  class ResourceMembers protected () extends BaseService {
+  open class ResourceMembers protected () extends BaseService {
     def this(resourceType: String, options: BaseServiceOptions) = this()
     
     def add(resourceId: String, userId: Double, accessLevel: AccessLevel): js.Promise[js.Object] = js.native

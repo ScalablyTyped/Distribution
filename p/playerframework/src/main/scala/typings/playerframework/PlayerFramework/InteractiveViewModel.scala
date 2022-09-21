@@ -484,31 +484,31 @@ trait InteractiveViewModel extends StObject {
     **/
   var muteTooltip: String = js.native
   
-  def onTimelineSliderComplete(e: js.Any): Unit = js.native
+  def onTimelineSliderComplete(e: Any): Unit = js.native
   
-  def onTimelineSliderSkipToMarker(e: js.Any): Unit = js.native
+  def onTimelineSliderSkipToMarker(e: Any): Unit = js.native
   
-  def onTimelineSliderStart(e: js.Any): Unit = js.native
+  def onTimelineSliderStart(e: Any): Unit = js.native
   
-  def onTimelineSliderUpdate(e: js.Any): Unit = js.native
+  def onTimelineSliderUpdate(e: Any): Unit = js.native
   
-  def onVolumeMuteClick(e: js.Any): Unit = js.native
+  def onVolumeMuteClick(e: Any): Unit = js.native
   
-  def onVolumeMuteFocus(e: js.Any): Unit = js.native
+  def onVolumeMuteFocus(e: Any): Unit = js.native
   
-  def onVolumeMuteSliderFocusIn(e: js.Any): Unit = js.native
+  def onVolumeMuteSliderFocusIn(e: Any): Unit = js.native
   
-  def onVolumeMuteSliderFocusOut(e: js.Any): Unit = js.native
+  def onVolumeMuteSliderFocusOut(e: Any): Unit = js.native
   
-  def onVolumeMuteSliderMSPointerOut(e: js.Any): Unit = js.native
+  def onVolumeMuteSliderMSPointerOut(e: Any): Unit = js.native
   
-  def onVolumeMuteSliderMSPointerOver(e: js.Any): Unit = js.native
+  def onVolumeMuteSliderMSPointerOver(e: Any): Unit = js.native
   
-  def onVolumeMuteSliderTransitionEnd(e: js.Any): Unit = js.native
+  def onVolumeMuteSliderTransitionEnd(e: Any): Unit = js.native
   
-  def onVolumeMuteSliderUpdate(e: js.Any): Unit = js.native
+  def onVolumeMuteSliderUpdate(e: Any): Unit = js.native
   
-  def onVolumeSliderUpdate(e: js.Any): Unit = js.native
+  def onVolumeSliderUpdate(e: Any): Unit = js.native
   
   def pause(): Unit = js.native
   
@@ -528,7 +528,7 @@ trait InteractiveViewModel extends StObject {
   var pauseTooltip: String = js.native
   
   def playPause(): Unit = js.native
-  def playPause(e: js.Any): Unit = js.native
+  def playPause(e: Any): Unit = js.native
   
   /**
     * TODO
@@ -795,7 +795,7 @@ trait InteractiveViewModel extends StObject {
   /**
     * TODO
     **/
-  var visualMarkers: js.Array[js.Any] = js.native
+  var visualMarkers: js.Array[Any] = js.native
   
   /**
     * TODO

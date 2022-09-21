@@ -24,6 +24,6 @@ object IndexDocumentsResponse {
     
     inline def setFieldNamesUndefined: Self = StObject.set(x, "FieldNames", js.undefined)
     
-    inline def setFieldNamesVarargs(value: FieldName*): Self = StObject.set(x, "FieldNames", js.Array(value :_*))
+    inline def setFieldNamesVarargs(value: FieldName*): Self = StObject.set(x, "FieldNames", js.Array(value*))
   }
 }

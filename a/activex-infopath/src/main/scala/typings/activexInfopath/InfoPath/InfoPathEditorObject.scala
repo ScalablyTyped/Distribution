@@ -12,7 +12,7 @@ trait InfoPathEditorObject extends StObject {
   
   def FlushDocument(): Unit
   
-  var Host: js.Any
+  var Host: Any
   
   var HostName: String
   
@@ -21,11 +21,11 @@ trait InfoPathEditorObject extends StObject {
   
   def Load(bstrURL: String): Unit
   
-  def LoadFromStream(punkStream: js.Any): Unit
+  def LoadFromStream(punkStream: Any): Unit
   
   def NewFromSolution(bstrSolutionURI: String): Unit
   
-  def NewFromSolutionWithData(bstrURLXSN: String, punkStream: js.Any, dwBehavior: Double): Unit
+  def NewFromSolutionWithData(bstrURLXSN: String, punkStream: Any, dwBehavior: Double): Unit
   
   def SetInitEventHandler(handler: IInitEventHandler): Unit
   
@@ -41,13 +41,13 @@ object InfoPathEditorObject {
     CloseDocument: () => Unit,
     DataConnectionBaseUrl: String,
     FlushDocument: () => Unit,
-    Host: js.Any,
+    Host: Any,
     HostName: String,
     InfoPathDotInfoPathEditorObject_typekey: InfoPathEditorObject,
     Load: String => Unit,
-    LoadFromStream: js.Any => Unit,
+    LoadFromStream: Any => Unit,
     NewFromSolution: String => Unit,
-    NewFromSolutionWithData: (String, js.Any, Double) => Unit,
+    NewFromSolutionWithData: (String, Any, Double) => Unit,
     SetInitEventHandler: IInitEventHandler => Unit,
     SetNotifyHostEventHandler: INotifyHostEventHandler => Unit,
     SetSubmitToHostEventHandler: ISubmitToHostEventHandler => Unit,
@@ -66,7 +66,7 @@ object InfoPathEditorObject {
     
     inline def setFlushDocument(value: () => Unit): Self = StObject.set(x, "FlushDocument", js.Any.fromFunction0(value))
     
-    inline def setHost(value: js.Any): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
+    inline def setHost(value: Any): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
     
     inline def setHostName(value: String): Self = StObject.set(x, "HostName", value.asInstanceOf[js.Any])
     
@@ -74,11 +74,11 @@ object InfoPathEditorObject {
     
     inline def setLoad(value: String => Unit): Self = StObject.set(x, "Load", js.Any.fromFunction1(value))
     
-    inline def setLoadFromStream(value: js.Any => Unit): Self = StObject.set(x, "LoadFromStream", js.Any.fromFunction1(value))
+    inline def setLoadFromStream(value: Any => Unit): Self = StObject.set(x, "LoadFromStream", js.Any.fromFunction1(value))
     
     inline def setNewFromSolution(value: String => Unit): Self = StObject.set(x, "NewFromSolution", js.Any.fromFunction1(value))
     
-    inline def setNewFromSolutionWithData(value: (String, js.Any, Double) => Unit): Self = StObject.set(x, "NewFromSolutionWithData", js.Any.fromFunction3(value))
+    inline def setNewFromSolutionWithData(value: (String, Any, Double) => Unit): Self = StObject.set(x, "NewFromSolutionWithData", js.Any.fromFunction3(value))
     
     inline def setSetInitEventHandler(value: IInitEventHandler => Unit): Self = StObject.set(x, "SetInitEventHandler", js.Any.fromFunction1(value))
     

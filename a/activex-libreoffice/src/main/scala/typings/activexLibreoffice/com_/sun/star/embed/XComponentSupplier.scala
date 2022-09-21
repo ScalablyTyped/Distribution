@@ -34,7 +34,7 @@ object XComponentSupplier {
     Component: XCloseable,
     acquire: () => Unit,
     getComponent: () => XCloseable,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XComponentSupplier = {
     val __obj = js.Dynamic.literal(Component = Component.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), getComponent = js.Any.fromFunction0(getComponent), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

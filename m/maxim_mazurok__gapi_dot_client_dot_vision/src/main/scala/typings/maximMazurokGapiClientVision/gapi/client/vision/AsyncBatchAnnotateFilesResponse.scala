@@ -22,6 +22,6 @@ object AsyncBatchAnnotateFilesResponse {
     
     inline def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
     
-    inline def setResponsesVarargs(value: AsyncAnnotateFileResponse*): Self = StObject.set(x, "responses", js.Array(value :_*))
+    inline def setResponsesVarargs(value: AsyncAnnotateFileResponse*): Self = StObject.set(x, "responses", js.Array(value*))
   }
 }

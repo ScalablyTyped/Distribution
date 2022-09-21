@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ServerCertificateMetadata extends StObject {
   
   /**
-    *  The Amazon Resource Name (ARN) specifying the server certificate. For more information about ARNs and how to use them in policies, see IAM Identifiers in the IAM User Guide. 
+    *  The Amazon Resource Name (ARN) specifying the server certificate. For more information about ARNs and how to use them in policies, see IAM identifiers in the IAM User Guide. 
     */
   var Arn: arnType
   
   /**
     * The date on which the certificate is set to expire.
     */
-  var Expiration: js.UndefOr[dateType] = js.undefined
+  var Expiration: js.UndefOr[js.Date] = js.undefined
   
   /**
-    *  The path to the server certificate. For more information about paths, see IAM Identifiers in the IAM User Guide. 
+    *  The path to the server certificate. For more information about paths, see IAM identifiers in the IAM User Guide. 
     */
   var Path: pathType
   
   /**
-    *  The stable and unique string identifying the server certificate. For more information about IDs, see IAM Identifiers in the IAM User Guide. 
+    *  The stable and unique string identifying the server certificate. For more information about IDs, see IAM identifiers in the IAM User Guide. 
     */
   var ServerCertificateId: idType
   
@@ -34,7 +34,7 @@ trait ServerCertificateMetadata extends StObject {
   /**
     * The date when the server certificate was uploaded.
     */
-  var UploadDate: js.UndefOr[dateType] = js.undefined
+  var UploadDate: js.UndefOr[js.Date] = js.undefined
 }
 object ServerCertificateMetadata {
   
@@ -52,7 +52,7 @@ object ServerCertificateMetadata {
     
     inline def setArn(value: arnType): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    inline def setExpiration(value: dateType): Self = StObject.set(x, "Expiration", value.asInstanceOf[js.Any])
+    inline def setExpiration(value: js.Date): Self = StObject.set(x, "Expiration", value.asInstanceOf[js.Any])
     
     inline def setExpirationUndefined: Self = StObject.set(x, "Expiration", js.undefined)
     
@@ -62,7 +62,7 @@ object ServerCertificateMetadata {
     
     inline def setServerCertificateName(value: serverCertificateNameType): Self = StObject.set(x, "ServerCertificateName", value.asInstanceOf[js.Any])
     
-    inline def setUploadDate(value: dateType): Self = StObject.set(x, "UploadDate", value.asInstanceOf[js.Any])
+    inline def setUploadDate(value: js.Date): Self = StObject.set(x, "UploadDate", value.asInstanceOf[js.Any])
     
     inline def setUploadDateUndefined: Self = StObject.set(x, "UploadDate", js.undefined)
   }

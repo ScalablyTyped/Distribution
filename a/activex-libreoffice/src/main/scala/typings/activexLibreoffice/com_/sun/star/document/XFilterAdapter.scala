@@ -30,7 +30,7 @@ object XFilterAdapter {
   inline def apply(
     acquire: () => Unit,
     convert: (XInputStream, XOutputStream, Boolean, String, String) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XFilterAdapter = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), convert = js.Any.fromFunction5(convert), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

@@ -10,11 +10,11 @@ trait MapTypeStyle extends StObject {
   
   var featureType: js.UndefOr[String] = js.undefined
   
-  var stylers: js.Array[js.Any]
+  var stylers: js.Array[Any]
 }
 object MapTypeStyle {
   
-  inline def apply(stylers: js.Array[js.Any]): MapTypeStyle = {
+  inline def apply(stylers: js.Array[Any]): MapTypeStyle = {
     val __obj = js.Dynamic.literal(stylers = stylers.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapTypeStyle]
   }
@@ -29,8 +29,8 @@ object MapTypeStyle {
     
     inline def setFeatureTypeUndefined: Self = StObject.set(x, "featureType", js.undefined)
     
-    inline def setStylers(value: js.Array[js.Any]): Self = StObject.set(x, "stylers", value.asInstanceOf[js.Any])
+    inline def setStylers(value: js.Array[Any]): Self = StObject.set(x, "stylers", value.asInstanceOf[js.Any])
     
-    inline def setStylersVarargs(value: js.Any*): Self = StObject.set(x, "stylers", js.Array(value :_*))
+    inline def setStylersVarargs(value: Any*): Self = StObject.set(x, "stylers", js.Array(value*))
   }
 }

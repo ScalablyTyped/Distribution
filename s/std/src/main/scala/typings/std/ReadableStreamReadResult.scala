@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Rewritten from type alias, can be one of: 
   - typings.std.ReadableStreamReadValueResult[T]
-  - typings.std.ReadableStreamReadDoneResult[T]
+  - typings.std.ReadableStreamReadDoneResult
 */
 trait ReadableStreamReadResult[T] extends StObject
 object ReadableStreamReadResult {
   
-  inline def ReadableStreamReadDoneResult[T](): typings.std.ReadableStreamReadDoneResult[T] = {
-    val __obj = js.Dynamic.literal(done = true)
-    __obj.asInstanceOf[typings.std.ReadableStreamReadDoneResult[T]]
+  inline def ReadableStreamReadDoneResult(value: Unit): typings.std.ReadableStreamReadDoneResult = {
+    val __obj = js.Dynamic.literal(done = true, value = value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typings.std.ReadableStreamReadDoneResult]
   }
   
   inline def ReadableStreamReadValueResult[T](value: T): typings.std.ReadableStreamReadValueResult[T] = {

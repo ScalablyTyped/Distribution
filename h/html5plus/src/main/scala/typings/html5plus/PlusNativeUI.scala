@@ -99,11 +99,11 @@ trait PlusNativeUI extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
   def actionSheet(): PlusNativeUINativeUIObj = js.native
-  def actionSheet(actionsheetStyle: Unit, actionsheetCallback: js.Function1[/* result */ js.Any, Unit]): PlusNativeUINativeUIObj = js.native
+  def actionSheet(actionsheetStyle: Unit, actionsheetCallback: js.Function1[/* result */ Any, Unit]): PlusNativeUINativeUIObj = js.native
   def actionSheet(actionsheetStyle: PlusNativeUIActionSheetStyles): PlusNativeUINativeUIObj = js.native
   def actionSheet(
     actionsheetStyle: PlusNativeUIActionSheetStyles,
-    actionsheetCallback: js.Function1[/* result */ js.Any, Unit]
+    actionsheetCallback: js.Function1[/* result */ Any, Unit]
   ): PlusNativeUINativeUIObj = js.native
   
   /**
@@ -115,37 +115,22 @@ trait PlusNativeUI extends StObject {
     */
   def alert(): Unit = js.native
   def alert(message: String): Unit = js.native
-  def alert(message: String, alertCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def alert(message: String, alertCB: js.Function1[/* result */ js.Any, Unit], title: String): Unit = js.native
+  def alert(message: String, alertCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
+  def alert(message: String, alertCB: js.Function1[/* result */ Any, Unit], title: String): Unit = js.native
   def alert(
     message: String,
-    alertCB: js.Function1[/* result */ js.Any, Unit],
+    alertCB: js.Function1[/* result */ Any, Unit],
     title: String,
     buttonCapture: String
   ): Unit = js.native
-  def alert(
-    message: String,
-    alertCB: js.Function1[/* result */ js.Any, Unit],
-    title: Unit,
-    buttonCapture: String
-  ): Unit = js.native
+  def alert(message: String, alertCB: js.Function1[/* result */ Any, Unit], title: Unit, buttonCapture: String): Unit = js.native
   def alert(message: String, alertCB: Unit, title: String): Unit = js.native
   def alert(message: String, alertCB: Unit, title: String, buttonCapture: String): Unit = js.native
   def alert(message: String, alertCB: Unit, title: Unit, buttonCapture: String): Unit = js.native
-  def alert(message: Unit, alertCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def alert(message: Unit, alertCB: js.Function1[/* result */ js.Any, Unit], title: String): Unit = js.native
-  def alert(
-    message: Unit,
-    alertCB: js.Function1[/* result */ js.Any, Unit],
-    title: String,
-    buttonCapture: String
-  ): Unit = js.native
-  def alert(
-    message: Unit,
-    alertCB: js.Function1[/* result */ js.Any, Unit],
-    title: Unit,
-    buttonCapture: String
-  ): Unit = js.native
+  def alert(message: Unit, alertCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
+  def alert(message: Unit, alertCB: js.Function1[/* result */ Any, Unit], title: String): Unit = js.native
+  def alert(message: Unit, alertCB: js.Function1[/* result */ Any, Unit], title: String, buttonCapture: String): Unit = js.native
+  def alert(message: Unit, alertCB: js.Function1[/* result */ Any, Unit], title: Unit, buttonCapture: String): Unit = js.native
   def alert(message: Unit, alertCB: Unit, title: String): Unit = js.native
   def alert(message: Unit, alertCB: Unit, title: String, buttonCapture: String): Unit = js.native
   def alert(message: Unit, alertCB: Unit, title: Unit, buttonCapture: String): Unit = js.native
@@ -175,48 +160,48 @@ trait PlusNativeUI extends StObject {
     */
   def confirm(): Unit = js.native
   def confirm(message: String): Unit = js.native
-  def confirm(message: String, confirmCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def confirm(message: String, confirmCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def confirm(
     message: String,
-    confirmCB: js.Function1[/* result */ js.Any, Unit],
+    confirmCB: js.Function1[/* result */ Any, Unit],
     options: Unit,
-    buttons: js.Array[js.Any]
+    buttons: js.Array[Any]
   ): Unit = js.native
   def confirm(
     message: String,
-    confirmCB: js.Function1[/* result */ js.Any, Unit],
+    confirmCB: js.Function1[/* result */ Any, Unit],
     options: PlusNativeUIConfirmOptions
   ): Unit = js.native
   def confirm(
     message: String,
-    confirmCB: js.Function1[/* result */ js.Any, Unit],
+    confirmCB: js.Function1[/* result */ Any, Unit],
     options: PlusNativeUIConfirmOptions,
-    buttons: js.Array[js.Any]
+    buttons: js.Array[Any]
   ): Unit = js.native
-  def confirm(message: String, confirmCB: Unit, options: Unit, buttons: js.Array[js.Any]): Unit = js.native
+  def confirm(message: String, confirmCB: Unit, options: Unit, buttons: js.Array[Any]): Unit = js.native
   def confirm(message: String, confirmCB: Unit, options: PlusNativeUIConfirmOptions): Unit = js.native
-  def confirm(message: String, confirmCB: Unit, options: PlusNativeUIConfirmOptions, buttons: js.Array[js.Any]): Unit = js.native
-  def confirm(message: Unit, confirmCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def confirm(message: String, confirmCB: Unit, options: PlusNativeUIConfirmOptions, buttons: js.Array[Any]): Unit = js.native
+  def confirm(message: Unit, confirmCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def confirm(
     message: Unit,
-    confirmCB: js.Function1[/* result */ js.Any, Unit],
+    confirmCB: js.Function1[/* result */ Any, Unit],
     options: Unit,
-    buttons: js.Array[js.Any]
+    buttons: js.Array[Any]
   ): Unit = js.native
   def confirm(
     message: Unit,
-    confirmCB: js.Function1[/* result */ js.Any, Unit],
+    confirmCB: js.Function1[/* result */ Any, Unit],
     options: PlusNativeUIConfirmOptions
   ): Unit = js.native
   def confirm(
     message: Unit,
-    confirmCB: js.Function1[/* result */ js.Any, Unit],
+    confirmCB: js.Function1[/* result */ Any, Unit],
     options: PlusNativeUIConfirmOptions,
-    buttons: js.Array[js.Any]
+    buttons: js.Array[Any]
   ): Unit = js.native
-  def confirm(message: Unit, confirmCB: Unit, options: Unit, buttons: js.Array[js.Any]): Unit = js.native
+  def confirm(message: Unit, confirmCB: Unit, options: Unit, buttons: js.Array[Any]): Unit = js.native
   def confirm(message: Unit, confirmCB: Unit, options: PlusNativeUIConfirmOptions): Unit = js.native
-  def confirm(message: Unit, confirmCB: Unit, options: PlusNativeUIConfirmOptions, buttons: js.Array[js.Any]): Unit = js.native
+  def confirm(message: Unit, confirmCB: Unit, options: PlusNativeUIConfirmOptions, buttons: js.Array[Any]): Unit = js.native
   
   /**
     * 弹出系统日期选择对话框
@@ -226,25 +211,22 @@ trait PlusNativeUI extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
   def pickDate(): Unit = js.native
-  def pickDate(successCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def pickDate(successCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
+  def pickDate(successCB: js.Function1[/* result */ Any, Unit], errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def pickDate(
-    successCB: js.Function1[/* result */ js.Any, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def pickDate(
-    successCB: js.Function1[/* result */ js.Any, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit],
+    successCB: js.Function1[/* result */ Any, Unit],
+    errorCB: js.Function1[/* result */ Any, Unit],
     options: PlusNativeUIPickDateOption
   ): Unit = js.native
   def pickDate(
-    successCB: js.Function1[/* result */ js.Any, Unit],
+    successCB: js.Function1[/* result */ Any, Unit],
     errorCB: Unit,
     options: PlusNativeUIPickDateOption
   ): Unit = js.native
-  def pickDate(successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def pickDate(successCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def pickDate(
     successCB: Unit,
-    errorCB: js.Function1[/* result */ js.Any, Unit],
+    errorCB: js.Function1[/* result */ Any, Unit],
     options: PlusNativeUIPickDateOption
   ): Unit = js.native
   def pickDate(successCB: Unit, errorCB: Unit, options: PlusNativeUIPickDateOption): Unit = js.native
@@ -257,25 +239,22 @@ trait PlusNativeUI extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
   def pickTime(): Unit = js.native
-  def pickTime(successCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def pickTime(successCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
+  def pickTime(successCB: js.Function1[/* result */ Any, Unit], errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def pickTime(
-    successCB: js.Function1[/* result */ js.Any, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def pickTime(
-    successCB: js.Function1[/* result */ js.Any, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit],
+    successCB: js.Function1[/* result */ Any, Unit],
+    errorCB: js.Function1[/* result */ Any, Unit],
     options: PlusNativeUIPickTimeOption
   ): Unit = js.native
   def pickTime(
-    successCB: js.Function1[/* result */ js.Any, Unit],
+    successCB: js.Function1[/* result */ Any, Unit],
     errorCB: Unit,
     options: PlusNativeUIPickTimeOption
   ): Unit = js.native
-  def pickTime(successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def pickTime(successCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def pickTime(
     successCB: Unit,
-    errorCB: js.Function1[/* result */ js.Any, Unit],
+    errorCB: js.Function1[/* result */ Any, Unit],
     options: PlusNativeUIPickTimeOption
   ): Unit = js.native
   def pickTime(successCB: Unit, errorCB: Unit, options: PlusNativeUIPickTimeOption): Unit = js.native
@@ -287,8 +266,8 @@ trait PlusNativeUI extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
   def previewImage(): Unit = js.native
-  def previewImage(urls: js.Array[js.Any]): Unit = js.native
-  def previewImage(urls: js.Array[js.Any], options: PlusNativeUIPreviewImageOptions): Unit = js.native
+  def previewImage(urls: js.Array[Any]): Unit = js.native
+  def previewImage(urls: js.Array[Any], options: PlusNativeUIPreviewImageOptions): Unit = js.native
   def previewImage(urls: Unit, options: PlusNativeUIPreviewImageOptions): Unit = js.native
   
   /**
@@ -300,84 +279,84 @@ trait PlusNativeUI extends StObject {
     */
   def prompt(): Unit = js.native
   def prompt(message: String): Unit = js.native
-  def prompt(message: String, promptCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def prompt(message: String, promptCB: js.Function1[/* result */ js.Any, Unit], title: String): Unit = js.native
-  def prompt(message: String, promptCB: js.Function1[/* result */ js.Any, Unit], title: String, tip: String): Unit = js.native
+  def prompt(message: String, promptCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
+  def prompt(message: String, promptCB: js.Function1[/* result */ Any, Unit], title: String): Unit = js.native
+  def prompt(message: String, promptCB: js.Function1[/* result */ Any, Unit], title: String, tip: String): Unit = js.native
   def prompt(
     message: String,
-    promptCB: js.Function1[/* result */ js.Any, Unit],
+    promptCB: js.Function1[/* result */ Any, Unit],
     title: String,
     tip: String,
-    buttons: js.Array[js.Any]
+    buttons: js.Array[Any]
   ): Unit = js.native
   def prompt(
     message: String,
-    promptCB: js.Function1[/* result */ js.Any, Unit],
+    promptCB: js.Function1[/* result */ Any, Unit],
     title: String,
     tip: Unit,
-    buttons: js.Array[js.Any]
+    buttons: js.Array[Any]
   ): Unit = js.native
-  def prompt(message: String, promptCB: js.Function1[/* result */ js.Any, Unit], title: Unit, tip: String): Unit = js.native
+  def prompt(message: String, promptCB: js.Function1[/* result */ Any, Unit], title: Unit, tip: String): Unit = js.native
   def prompt(
     message: String,
-    promptCB: js.Function1[/* result */ js.Any, Unit],
+    promptCB: js.Function1[/* result */ Any, Unit],
     title: Unit,
     tip: String,
-    buttons: js.Array[js.Any]
+    buttons: js.Array[Any]
   ): Unit = js.native
   def prompt(
     message: String,
-    promptCB: js.Function1[/* result */ js.Any, Unit],
+    promptCB: js.Function1[/* result */ Any, Unit],
     title: Unit,
     tip: Unit,
-    buttons: js.Array[js.Any]
+    buttons: js.Array[Any]
   ): Unit = js.native
   def prompt(message: String, promptCB: Unit, title: String): Unit = js.native
   def prompt(message: String, promptCB: Unit, title: String, tip: String): Unit = js.native
-  def prompt(message: String, promptCB: Unit, title: String, tip: String, buttons: js.Array[js.Any]): Unit = js.native
-  def prompt(message: String, promptCB: Unit, title: String, tip: Unit, buttons: js.Array[js.Any]): Unit = js.native
+  def prompt(message: String, promptCB: Unit, title: String, tip: String, buttons: js.Array[Any]): Unit = js.native
+  def prompt(message: String, promptCB: Unit, title: String, tip: Unit, buttons: js.Array[Any]): Unit = js.native
   def prompt(message: String, promptCB: Unit, title: Unit, tip: String): Unit = js.native
-  def prompt(message: String, promptCB: Unit, title: Unit, tip: String, buttons: js.Array[js.Any]): Unit = js.native
-  def prompt(message: String, promptCB: Unit, title: Unit, tip: Unit, buttons: js.Array[js.Any]): Unit = js.native
-  def prompt(message: Unit, promptCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def prompt(message: Unit, promptCB: js.Function1[/* result */ js.Any, Unit], title: String): Unit = js.native
-  def prompt(message: Unit, promptCB: js.Function1[/* result */ js.Any, Unit], title: String, tip: String): Unit = js.native
+  def prompt(message: String, promptCB: Unit, title: Unit, tip: String, buttons: js.Array[Any]): Unit = js.native
+  def prompt(message: String, promptCB: Unit, title: Unit, tip: Unit, buttons: js.Array[Any]): Unit = js.native
+  def prompt(message: Unit, promptCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
+  def prompt(message: Unit, promptCB: js.Function1[/* result */ Any, Unit], title: String): Unit = js.native
+  def prompt(message: Unit, promptCB: js.Function1[/* result */ Any, Unit], title: String, tip: String): Unit = js.native
   def prompt(
     message: Unit,
-    promptCB: js.Function1[/* result */ js.Any, Unit],
+    promptCB: js.Function1[/* result */ Any, Unit],
     title: String,
     tip: String,
-    buttons: js.Array[js.Any]
+    buttons: js.Array[Any]
   ): Unit = js.native
   def prompt(
     message: Unit,
-    promptCB: js.Function1[/* result */ js.Any, Unit],
+    promptCB: js.Function1[/* result */ Any, Unit],
     title: String,
     tip: Unit,
-    buttons: js.Array[js.Any]
+    buttons: js.Array[Any]
   ): Unit = js.native
-  def prompt(message: Unit, promptCB: js.Function1[/* result */ js.Any, Unit], title: Unit, tip: String): Unit = js.native
+  def prompt(message: Unit, promptCB: js.Function1[/* result */ Any, Unit], title: Unit, tip: String): Unit = js.native
   def prompt(
     message: Unit,
-    promptCB: js.Function1[/* result */ js.Any, Unit],
+    promptCB: js.Function1[/* result */ Any, Unit],
     title: Unit,
     tip: String,
-    buttons: js.Array[js.Any]
+    buttons: js.Array[Any]
   ): Unit = js.native
   def prompt(
     message: Unit,
-    promptCB: js.Function1[/* result */ js.Any, Unit],
+    promptCB: js.Function1[/* result */ Any, Unit],
     title: Unit,
     tip: Unit,
-    buttons: js.Array[js.Any]
+    buttons: js.Array[Any]
   ): Unit = js.native
   def prompt(message: Unit, promptCB: Unit, title: String): Unit = js.native
   def prompt(message: Unit, promptCB: Unit, title: String, tip: String): Unit = js.native
-  def prompt(message: Unit, promptCB: Unit, title: String, tip: String, buttons: js.Array[js.Any]): Unit = js.native
-  def prompt(message: Unit, promptCB: Unit, title: String, tip: Unit, buttons: js.Array[js.Any]): Unit = js.native
+  def prompt(message: Unit, promptCB: Unit, title: String, tip: String, buttons: js.Array[Any]): Unit = js.native
+  def prompt(message: Unit, promptCB: Unit, title: String, tip: Unit, buttons: js.Array[Any]): Unit = js.native
   def prompt(message: Unit, promptCB: Unit, title: Unit, tip: String): Unit = js.native
-  def prompt(message: Unit, promptCB: Unit, title: Unit, tip: String, buttons: js.Array[js.Any]): Unit = js.native
-  def prompt(message: Unit, promptCB: Unit, title: Unit, tip: Unit, buttons: js.Array[js.Any]): Unit = js.native
+  def prompt(message: Unit, promptCB: Unit, title: Unit, tip: String, buttons: js.Array[Any]): Unit = js.native
+  def prompt(message: Unit, promptCB: Unit, title: Unit, tip: Unit, buttons: js.Array[Any]): Unit = js.native
   
   /**
     * 显示系统等待对话框

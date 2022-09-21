@@ -14,7 +14,7 @@ object multiRouter {
   
   @JSImport("yandex-maps", "multiRouter.EditorAddon")
   @js.native
-  class EditorAddon ()
+  open class EditorAddon ()
     extends StObject
        with ICustomizable {
     
@@ -35,7 +35,7 @@ object multiRouter {
   
   @JSImport("yandex-maps", "multiRouter.MultiRoute")
   @js.native
-  class MultiRoute protected ()
+  open class MultiRoute protected ()
     extends StObject
        with IGeoObject[IGeometry] {
     def this(model: IMultiRouteModelJson) = this()
@@ -72,7 +72,7 @@ object multiRouter {
   
   @JSImport("yandex-maps", "multiRouter.MultiRouteModel")
   @js.native
-  class MultiRouteModel protected ()
+  open class MultiRouteModel protected ()
     extends StObject
        with IEventEmitter {
     def this(referencePoints: js.Array[IMultiRouteReferencePoint]) = this()
@@ -120,7 +120,7 @@ object multiRouter {
   
   @JSImport("yandex-maps", "multiRouter.ViaPoint")
   @js.native
-  class ViaPoint ()
+  open class ViaPoint ()
     extends StObject
        with IGeoObject[IGeometry] {
     
@@ -136,7 +136,7 @@ object multiRouter {
   
   @JSImport("yandex-maps", "multiRouter.ViaPointModel")
   @js.native
-  class ViaPointModel ()
+  open class ViaPointModel ()
     extends StObject
        with IEventEmitter {
     
@@ -162,7 +162,7 @@ object multiRouter {
   
   @JSImport("yandex-maps", "multiRouter.WayPoint")
   @js.native
-  class WayPoint ()
+  open class WayPoint ()
     extends StObject
        with IGeoObject[IGeometry] {
     
@@ -180,7 +180,7 @@ object multiRouter {
   
   @JSImport("yandex-maps", "multiRouter.WayPointModel")
   @js.native
-  class WayPointModel ()
+  open class WayPointModel ()
     extends StObject
        with IEventEmitter {
     
@@ -208,7 +208,7 @@ object multiRouter {
     
     @JSImport("yandex-maps", "multiRouter.driving.Path")
     @js.native
-    class Path ()
+    open class Path ()
       extends StObject
          with IGeoObject[IGeometry] {
       
@@ -228,7 +228,7 @@ object multiRouter {
     
     @JSImport("yandex-maps", "multiRouter.driving.PathModel")
     @js.native
-    class PathModel ()
+    open class PathModel ()
       extends StObject
          with IEventEmitter {
       
@@ -250,7 +250,7 @@ object multiRouter {
     
     @JSImport("yandex-maps", "multiRouter.driving.Route")
     @js.native
-    class Route ()
+    open class Route ()
       extends StObject
          with IGeoObject[IGeometry] {
       
@@ -265,7 +265,7 @@ object multiRouter {
     
     @JSImport("yandex-maps", "multiRouter.driving.RouteModel")
     @js.native
-    class RouteModel ()
+    open class RouteModel ()
       extends StObject
          with IEventEmitter {
       
@@ -287,7 +287,7 @@ object multiRouter {
     
     @JSImport("yandex-maps", "multiRouter.driving.Segment")
     @js.native
-    class Segment ()
+    open class Segment ()
       extends StObject
          with IGeoObject[IGeometry] {
       
@@ -303,7 +303,7 @@ object multiRouter {
     
     @JSImport("yandex-maps", "multiRouter.driving.SegmentModel")
     @js.native
-    class SegmentModel ()
+    open class SegmentModel ()
       extends StObject
          with IEventEmitter {
       
@@ -328,7 +328,7 @@ object multiRouter {
     
     @JSImport("yandex-maps", "multiRouter.masstransit.Path")
     @js.native
-    class Path ()
+    open class Path ()
       extends StObject
          with IGeoObject[IGeometry] {
       
@@ -350,7 +350,7 @@ object multiRouter {
     
     @JSImport("yandex-maps", "multiRouter.masstransit.PathModel")
     @js.native
-    class PathModel ()
+    open class PathModel ()
       extends StObject
          with IEventEmitter {
       
@@ -372,7 +372,7 @@ object multiRouter {
     
     @JSImport("yandex-maps", "multiRouter.masstransit.Route")
     @js.native
-    class Route ()
+    open class Route ()
       extends StObject
          with IGeoObject[IGeometry] {
       
@@ -392,7 +392,7 @@ object multiRouter {
     
     @JSImport("yandex-maps", "multiRouter.masstransit.RouteModel")
     @js.native
-    class RouteModel ()
+    open class RouteModel ()
       extends StObject
          with IEventEmitter {
       
@@ -414,7 +414,7 @@ object multiRouter {
     
     @JSImport("yandex-maps", "multiRouter.masstransit.StopModel")
     @js.native
-    class StopModel ()
+    open class StopModel ()
       extends StObject
          with IEventEmitter {
       
@@ -432,7 +432,7 @@ object multiRouter {
     
     @JSImport("yandex-maps", "multiRouter.masstransit.TransferSegment")
     @js.native
-    class TransferSegment ()
+    open class TransferSegment ()
       extends StObject
          with IGeoObject[IGeometry] {
       
@@ -450,7 +450,7 @@ object multiRouter {
     
     @JSImport("yandex-maps", "multiRouter.masstransit.TransferSegmentModel")
     @js.native
-    class TransferSegmentModel ()
+    open class TransferSegmentModel ()
       extends StObject
          with IEventEmitter {
       
@@ -470,7 +470,7 @@ object multiRouter {
     
     @JSImport("yandex-maps", "multiRouter.masstransit.TransportSegment")
     @js.native
-    class TransportSegment ()
+    open class TransportSegment ()
       extends StObject
          with IGeoObject[IGeometry] {
       
@@ -488,7 +488,7 @@ object multiRouter {
     
     @JSImport("yandex-maps", "multiRouter.masstransit.TransportSegmentModel")
     @js.native
-    class TransportSegmentModel ()
+    open class TransportSegmentModel ()
       extends StObject
          with IEventEmitter {
       
@@ -512,7 +512,7 @@ object multiRouter {
     
     @JSImport("yandex-maps", "multiRouter.masstransit.WalkSegment")
     @js.native
-    class WalkSegment ()
+    open class WalkSegment ()
       extends StObject
          with IGeoObject[IGeometry] {
       
@@ -530,7 +530,7 @@ object multiRouter {
     
     @JSImport("yandex-maps", "multiRouter.masstransit.WalkSegmentModel")
     @js.native
-    class WalkSegmentModel ()
+    open class WalkSegmentModel ()
       extends StObject
          with IEventEmitter {
       

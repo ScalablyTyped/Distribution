@@ -30,7 +30,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Tee.Area")
     @js.native
-    class Area ()
+    open class Area ()
       extends StObject
          with IArea {
       def this(values: js.Array[Double]) = this()
@@ -39,7 +39,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Tee.Bar")
     @js.native
-    class Bar ()
+    open class Bar ()
       extends StObject
          with ICustomBar {
       def this(values: js.Array[Double]) = this()
@@ -48,7 +48,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Tee.Bubble")
     @js.native
-    class Bubble ()
+    open class Bubble ()
       extends StObject
          with IBubble {
       def this(values: js.Array[Double]) = this()
@@ -57,7 +57,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Tee.Candle")
     @js.native
-    class Candle ()
+    open class Candle ()
       extends StObject
          with ICandle {
       def this(values: js.Array[Double]) = this()
@@ -65,7 +65,7 @@ object global {
     
     @JSGlobal("Tee.Chart")
     @js.native
-    class Chart protected ()
+    open class Chart protected ()
       extends StObject
          with typings.teechart.Tee.Chart {
       def this(canvas: String) = this()
@@ -74,7 +74,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Tee.CursorTool")
     @js.native
-    class CursorTool ()
+    open class CursorTool ()
       extends StObject
          with ICursorTool {
       def this(chart: typings.teechart.Tee.Chart) = this()
@@ -107,10 +107,10 @@ object global {
       var horizAxis: IAxis = js.native
       
       /* CompleteClass */
-      override def mousedown(event: js.Any): Boolean = js.native
+      override def mousedown(event: Any): Boolean = js.native
       
       /* CompleteClass */
-      override def mousemove(event: js.Any): Boolean = js.native
+      override def mousemove(event: Any): Boolean = js.native
       
       /* CompleteClass */
       override def over(point: IPoint): Boolean = js.native
@@ -131,7 +131,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Tee.Donut")
     @js.native
-    class Donut ()
+    open class Donut ()
       extends StObject
          with IPie {
       def this(values: js.Array[Double]) = this()
@@ -140,7 +140,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Tee.DragTool")
     @js.native
-    class DragTool ()
+    open class DragTool ()
       extends StObject
          with IDragTool {
       def this(chart: typings.teechart.Tee.Chart) = this()
@@ -158,10 +158,10 @@ object global {
       override def draw(): Unit = js.native
       
       /* CompleteClass */
-      override def mousedown(event: js.Any): Boolean = js.native
+      override def mousedown(event: Any): Boolean = js.native
       
       /* CompleteClass */
-      override def mousemove(event: js.Any): Boolean = js.native
+      override def mousemove(event: Any): Boolean = js.native
       
       /* CompleteClass */
       var series: ISeries = js.native
@@ -170,7 +170,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Tee.Gantt")
     @js.native
-    class Gantt ()
+    open class Gantt ()
       extends StObject
          with IGantt {
       def this(values: js.Array[Double]) = this()
@@ -179,7 +179,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Tee.HorizArea")
     @js.native
-    class HorizArea ()
+    open class HorizArea ()
       extends StObject
          with IArea {
       def this(values: js.Array[Double]) = this()
@@ -188,7 +188,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Tee.HorizBar")
     @js.native
-    class HorizBar ()
+    open class HorizBar ()
       extends StObject
          with ICustomBar {
       def this(values: js.Array[Double]) = this()
@@ -197,7 +197,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Tee.Line")
     @js.native
-    class Line ()
+    open class Line ()
       extends StObject
          with ILine {
       def this(values: js.Array[Double]) = this()
@@ -206,7 +206,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Tee.Pie")
     @js.native
-    class Pie ()
+    open class Pie ()
       extends StObject
          with IPie {
       def this(values: js.Array[Double]) = this()
@@ -214,7 +214,7 @@ object global {
     
     @JSGlobal("Tee.Point")
     @js.native
-    class Point ()
+    open class Point ()
       extends StObject
          with typings.teechart.Tee.Point {
       
@@ -228,7 +228,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Tee.PointXY")
     @js.native
-    class PointXY ()
+    open class PointXY ()
       extends StObject
          with ICustomSeries {
       def this(values: js.Array[Double]) = this()
@@ -237,7 +237,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Tee.ToolTip")
     @js.native
-    class ToolTip ()
+    open class ToolTip ()
       extends StObject
          with IToolTip {
       def this(chart: typings.teechart.Tee.Chart) = this()
@@ -291,10 +291,10 @@ object global {
       var margins: IMargins = js.native
       
       /* CompleteClass */
-      override def mousedown(event: js.Any): Boolean = js.native
+      override def mousedown(event: Any): Boolean = js.native
       
       /* CompleteClass */
-      override def mousemove(event: js.Any): Boolean = js.native
+      override def mousemove(event: Any): Boolean = js.native
       
       /* CompleteClass */
       var position: IPoint = js.native
@@ -318,7 +318,7 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Tee.Volume")
     @js.native
-    class Volume ()
+    open class Volume ()
       extends StObject
          with ICustomBar {
       def this(values: js.Array[Double]) = this()

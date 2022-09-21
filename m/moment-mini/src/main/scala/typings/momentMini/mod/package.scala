@@ -1,315 +1,207 @@
 package typings.momentMini.mod
 
+import typings.momentMini.mod.^
+import typings.momentMini.mod.unitOfTime.All
+import typings.momentMini.mod.unitOfTime.DurationConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def apply(): typings.momentMini.mod.Moment = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.momentMini.mod.Moment]
-inline def apply(inp: scala.Unit, format: scala.Unit, language: java.lang.String): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def apply(inp: scala.Unit, format: scala.Unit, language: java.lang.String, strict: scala.Boolean): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def apply(inp: scala.Unit, format: scala.Unit, language: scala.Unit, strict: scala.Boolean): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def apply(inp: scala.Unit, format: scala.Unit, strict: scala.Boolean): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def apply(inp: scala.Unit, format: typings.momentMini.mod.MomentFormatSpecification): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def apply(
-  inp: scala.Unit,
-  format: typings.momentMini.mod.MomentFormatSpecification,
-  language: java.lang.String
-): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def apply(
-  inp: scala.Unit,
-  format: typings.momentMini.mod.MomentFormatSpecification,
-  language: java.lang.String,
-  strict: scala.Boolean
-): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def apply(
-  inp: scala.Unit,
-  format: typings.momentMini.mod.MomentFormatSpecification,
-  language: scala.Unit,
-  strict: scala.Boolean
-): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def apply(inp: scala.Unit, format: typings.momentMini.mod.MomentFormatSpecification, strict: scala.Boolean): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def apply(inp: typings.momentMini.mod.MomentInput): typings.momentMini.mod.Moment = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any]).asInstanceOf[typings.momentMini.mod.Moment]
-inline def apply(inp: typings.momentMini.mod.MomentInput, format: scala.Unit, language: java.lang.String): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def apply(
-  inp: typings.momentMini.mod.MomentInput,
-  format: scala.Unit,
-  language: java.lang.String,
-  strict: scala.Boolean
-): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def apply(
-  inp: typings.momentMini.mod.MomentInput,
-  format: scala.Unit,
-  language: scala.Unit,
-  strict: scala.Boolean
-): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def apply(inp: typings.momentMini.mod.MomentInput, format: scala.Unit, strict: scala.Boolean): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def apply(inp: typings.momentMini.mod.MomentInput, format: typings.momentMini.mod.MomentFormatSpecification): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def apply(
-  inp: typings.momentMini.mod.MomentInput,
-  format: typings.momentMini.mod.MomentFormatSpecification,
-  language: java.lang.String
-): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def apply(
-  inp: typings.momentMini.mod.MomentInput,
-  format: typings.momentMini.mod.MomentFormatSpecification,
-  language: java.lang.String,
-  strict: scala.Boolean
-): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def apply(
-  inp: typings.momentMini.mod.MomentInput,
-  format: typings.momentMini.mod.MomentFormatSpecification,
-  language: scala.Unit,
-  strict: scala.Boolean
-): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def apply(
-  inp: typings.momentMini.mod.MomentInput,
-  format: typings.momentMini.mod.MomentFormatSpecification,
-  strict: scala.Boolean
-): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
+/**
+  * @param strict Strict parsing requires that the format and input match exactly, including delimiters.
+  * Strict parsing is frequently the best parsing option. For more information about choosing strict vs
+  * forgiving parsing, see the [parsing guide](https://momentjs.com/guides/#/parsing/).
+  */
+inline def apply(): Moment = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Moment]
+inline def apply(inp: Unit, format: Unit, language: String): Moment = (^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def apply(inp: Unit, format: Unit, language: String, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def apply(inp: Unit, format: Unit, language: Unit, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def apply(inp: Unit, format: Unit, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def apply(inp: Unit, format: MomentFormatSpecification): Moment = (^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def apply(inp: Unit, format: MomentFormatSpecification, language: String): Moment = (^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def apply(inp: Unit, format: MomentFormatSpecification, language: String, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def apply(inp: Unit, format: MomentFormatSpecification, language: Unit, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def apply(inp: Unit, format: MomentFormatSpecification, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def apply(inp: Unit, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def apply(inp: MomentInput): Moment = ^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any]).asInstanceOf[Moment]
+inline def apply(inp: MomentInput, format: Unit, language: String): Moment = (^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def apply(inp: MomentInput, format: Unit, language: String, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def apply(inp: MomentInput, format: Unit, language: Unit, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def apply(inp: MomentInput, format: Unit, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def apply(inp: MomentInput, format: MomentFormatSpecification): Moment = (^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def apply(inp: MomentInput, format: MomentFormatSpecification, language: String): Moment = (^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def apply(inp: MomentInput, format: MomentFormatSpecification, language: String, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def apply(inp: MomentInput, format: MomentFormatSpecification, language: Unit, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def apply(inp: MomentInput, format: MomentFormatSpecification, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def apply(inp: MomentInput, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
 
-inline def ISO_8601: typings.momentMini.mod.MomentBuiltinFormat = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].selectDynamic("ISO_8601").asInstanceOf[typings.momentMini.mod.MomentBuiltinFormat]
-inline def ISO_8601_=(x: typings.momentMini.mod.MomentBuiltinFormat): scala.Unit = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].updateDynamic("ISO_8601")(x.asInstanceOf[js.Any])
+inline def ISO_8601: MomentBuiltinFormat = ^.asInstanceOf[js.Dynamic].selectDynamic("ISO_8601").asInstanceOf[MomentBuiltinFormat]
+inline def ISO_8601_=(x: MomentBuiltinFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ISO_8601")(x.asInstanceOf[js.Any])
 
-inline def RFC_2822: typings.momentMini.mod.MomentBuiltinFormat = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].selectDynamic("RFC_2822").asInstanceOf[typings.momentMini.mod.MomentBuiltinFormat]
-inline def RFC_2822_=(x: typings.momentMini.mod.MomentBuiltinFormat): scala.Unit = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].updateDynamic("RFC_2822")(x.asInstanceOf[js.Any])
+inline def RFC_2822: MomentBuiltinFormat = ^.asInstanceOf[js.Dynamic].selectDynamic("RFC_2822").asInstanceOf[MomentBuiltinFormat]
+inline def RFC_2822_=(x: MomentBuiltinFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RFC_2822")(x.asInstanceOf[js.Any])
 
-inline def calendarFormat(m: typings.momentMini.mod.Moment, now: typings.momentMini.mod.Moment): java.lang.String = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("calendarFormat")(m.asInstanceOf[js.Any], now.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def calendarFormat(m: Moment, now: Moment): String = (^.asInstanceOf[js.Dynamic].applyDynamic("calendarFormat")(m.asInstanceOf[js.Any], now.asInstanceOf[js.Any])).asInstanceOf[String]
 
-inline def defaultFormat: java.lang.String = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].selectDynamic("defaultFormat").asInstanceOf[java.lang.String]
+inline def defaultFormat: String = ^.asInstanceOf[js.Dynamic].selectDynamic("defaultFormat").asInstanceOf[String]
 
-inline def defaultFormatUtc: java.lang.String = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].selectDynamic("defaultFormatUtc").asInstanceOf[java.lang.String]
-inline def defaultFormatUtc_=(x: java.lang.String): scala.Unit = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].updateDynamic("defaultFormatUtc")(x.asInstanceOf[js.Any])
+inline def defaultFormatUtc: String = ^.asInstanceOf[js.Dynamic].selectDynamic("defaultFormatUtc").asInstanceOf[String]
+inline def defaultFormatUtc_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultFormatUtc")(x.asInstanceOf[js.Any])
 
-inline def defaultFormat_=(x: java.lang.String): scala.Unit = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].updateDynamic("defaultFormat")(x.asInstanceOf[js.Any])
+inline def defaultFormat_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultFormat")(x.asInstanceOf[js.Any])
 
-inline def defineLocale(language: java.lang.String, localeSpec: scala.Unit): typings.momentMini.mod.Locale_ = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("defineLocale")(language.asInstanceOf[js.Any], localeSpec.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Locale_]
-inline def defineLocale(language: java.lang.String, localeSpec: typings.momentMini.mod.LocaleSpecification): typings.momentMini.mod.Locale_ = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("defineLocale")(language.asInstanceOf[js.Any], localeSpec.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Locale_]
+inline def defineLocale(language: String, localeSpec: Unit): Locale_ = (^.asInstanceOf[js.Dynamic].applyDynamic("defineLocale")(language.asInstanceOf[js.Any], localeSpec.asInstanceOf[js.Any])).asInstanceOf[Locale_]
+inline def defineLocale(language: String, localeSpec: LocaleSpecification): Locale_ = (^.asInstanceOf[js.Dynamic].applyDynamic("defineLocale")(language.asInstanceOf[js.Any], localeSpec.asInstanceOf[js.Any])).asInstanceOf[Locale_]
 
-inline def duration(): typings.momentMini.mod.Duration_ = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("duration")().asInstanceOf[typings.momentMini.mod.Duration_]
-inline def duration(inp: scala.Unit, unit: typings.momentMini.mod.DurationInputArg2): typings.momentMini.mod.Duration_ = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("duration")(inp.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Duration_]
-inline def duration(inp: typings.momentMini.mod.DurationInputArg1): typings.momentMini.mod.Duration_ = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("duration")(inp.asInstanceOf[js.Any]).asInstanceOf[typings.momentMini.mod.Duration_]
-inline def duration(inp: typings.momentMini.mod.DurationInputArg1, unit: typings.momentMini.mod.DurationInputArg2): typings.momentMini.mod.Duration_ = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("duration")(inp.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Duration_]
+inline def deprecationHandler: (js.Function2[/* name */ String | Unit, /* msg */ String, Unit]) | Unit = ^.asInstanceOf[js.Dynamic].selectDynamic("deprecationHandler").asInstanceOf[(js.Function2[/* name */ String | Unit, /* msg */ String, Unit]) | Unit]
+inline def deprecationHandler_=(x: (js.Function2[/* name */ String | Unit, /* msg */ String, Unit]) | Unit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deprecationHandler")(x.asInstanceOf[js.Any])
 
-inline def fn: typings.momentMini.mod.Moment = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].selectDynamic("fn").asInstanceOf[typings.momentMini.mod.Moment]
-inline def fn_=(x: typings.momentMini.mod.Moment): scala.Unit = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+inline def duration(): Duration_ = ^.asInstanceOf[js.Dynamic].applyDynamic("duration")().asInstanceOf[Duration_]
+inline def duration(inp: Unit, unit: DurationInputArg2): Duration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("duration")(inp.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[Duration_]
+inline def duration(inp: DurationInputArg1): Duration_ = ^.asInstanceOf[js.Dynamic].applyDynamic("duration")(inp.asInstanceOf[js.Any]).asInstanceOf[Duration_]
+inline def duration(inp: DurationInputArg1, unit: DurationInputArg2): Duration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("duration")(inp.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[Duration_]
 
-inline def invalid(): typings.momentMini.mod.Moment = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("invalid")().asInstanceOf[typings.momentMini.mod.Moment]
-inline def invalid(flags: typings.momentMini.mod.MomentParsingFlagsOpt): typings.momentMini.mod.Moment = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("invalid")(flags.asInstanceOf[js.Any]).asInstanceOf[typings.momentMini.mod.Moment]
+inline def fn: Moment = ^.asInstanceOf[js.Dynamic].selectDynamic("fn").asInstanceOf[Moment]
+inline def fn_=(x: Moment): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 
-inline def isDate(m: js.Any): /* is std.Date */ scala.Boolean = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isDate")(m.asInstanceOf[js.Any]).asInstanceOf[/* is std.Date */ scala.Boolean]
+inline def invalid(): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")().asInstanceOf[Moment]
+inline def invalid(flags: MomentParsingFlagsOpt): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")(flags.asInstanceOf[js.Any]).asInstanceOf[Moment]
 
-inline def isDuration(d: js.Any): /* is moment-mini.moment-mini.Duration */ scala.Boolean = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isDuration")(d.asInstanceOf[js.Any]).asInstanceOf[/* is moment-mini.moment-mini.Duration */ scala.Boolean]
+inline def isDate(m: Any): /* is std.Date */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDate")(m.asInstanceOf[js.Any]).asInstanceOf[/* is std.Date */ Boolean]
 
-inline def isMoment(m: js.Any): /* is moment-mini.moment-mini.Moment */ scala.Boolean = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isMoment")(m.asInstanceOf[js.Any]).asInstanceOf[/* is moment-mini.moment-mini.Moment */ scala.Boolean]
+inline def isDuration(d: Any): /* is moment-mini.moment-mini.Duration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDuration")(d.asInstanceOf[js.Any]).asInstanceOf[/* is moment-mini.moment-mini.Duration */ Boolean]
 
-inline def lang(): java.lang.String = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("lang")().asInstanceOf[java.lang.String]
-inline def lang(language: java.lang.String): java.lang.String = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("lang")(language.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
-inline def lang(language: java.lang.String, definition: typings.momentMini.mod.Locale_): java.lang.String = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("lang")(language.asInstanceOf[js.Any], definition.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def lang(language: scala.Unit, definition: typings.momentMini.mod.Locale_): java.lang.String = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("lang")(language.asInstanceOf[js.Any], definition.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def isMoment(m: Any): /* is moment-mini.moment-mini.Moment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMoment")(m.asInstanceOf[js.Any]).asInstanceOf[/* is moment-mini.moment-mini.Moment */ Boolean]
 
-inline def locale(): java.lang.String = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("locale")().asInstanceOf[java.lang.String]
-inline def locale(language: java.lang.String): java.lang.String = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("locale")(language.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
-inline def locale(language: java.lang.String, definition: scala.Unit): java.lang.String = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("locale")(language.asInstanceOf[js.Any], definition.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def locale(language: java.lang.String, definition: typings.momentMini.mod.LocaleSpecification): java.lang.String = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("locale")(language.asInstanceOf[js.Any], definition.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def locale(language: js.Array[java.lang.String]): java.lang.String = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("locale")(language.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
-inline def locale(language: scala.Unit, definition: scala.Unit): java.lang.String = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("locale")(language.asInstanceOf[js.Any], definition.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def locale(language: scala.Unit, definition: typings.momentMini.mod.LocaleSpecification): java.lang.String = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("locale")(language.asInstanceOf[js.Any], definition.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def lang(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("lang")().asInstanceOf[String]
+inline def lang(language: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("lang")(language.asInstanceOf[js.Any]).asInstanceOf[String]
+inline def lang(language: String, definition: Locale_): String = (^.asInstanceOf[js.Dynamic].applyDynamic("lang")(language.asInstanceOf[js.Any], definition.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def lang(language: Unit, definition: Locale_): String = (^.asInstanceOf[js.Dynamic].applyDynamic("lang")(language.asInstanceOf[js.Any], definition.asInstanceOf[js.Any])).asInstanceOf[String]
 
-inline def localeData(): typings.momentMini.mod.Locale_ = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("localeData")().asInstanceOf[typings.momentMini.mod.Locale_]
-inline def localeData(key: java.lang.String): typings.momentMini.mod.Locale_ = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("localeData")(key.asInstanceOf[js.Any]).asInstanceOf[typings.momentMini.mod.Locale_]
-inline def localeData(key: js.Array[java.lang.String]): typings.momentMini.mod.Locale_ = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("localeData")(key.asInstanceOf[js.Any]).asInstanceOf[typings.momentMini.mod.Locale_]
+inline def locale(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("locale")().asInstanceOf[String]
+inline def locale(language: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("locale")(language.asInstanceOf[js.Any]).asInstanceOf[String]
+inline def locale(language: String, definition: Unit): String = (^.asInstanceOf[js.Dynamic].applyDynamic("locale")(language.asInstanceOf[js.Any], definition.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def locale(language: String, definition: LocaleSpecification): String = (^.asInstanceOf[js.Dynamic].applyDynamic("locale")(language.asInstanceOf[js.Any], definition.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def locale(language: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("locale")(language.asInstanceOf[js.Any]).asInstanceOf[String]
+inline def locale(language: Unit, definition: Unit): String = (^.asInstanceOf[js.Dynamic].applyDynamic("locale")(language.asInstanceOf[js.Any], definition.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def locale(language: Unit, definition: LocaleSpecification): String = (^.asInstanceOf[js.Dynamic].applyDynamic("locale")(language.asInstanceOf[js.Any], definition.asInstanceOf[js.Any])).asInstanceOf[String]
 
-inline def locales(): js.Array[java.lang.String] = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("locales")().asInstanceOf[js.Array[java.lang.String]]
+inline def localeData(): Locale_ = ^.asInstanceOf[js.Dynamic].applyDynamic("localeData")().asInstanceOf[Locale_]
+inline def localeData(key: String): Locale_ = ^.asInstanceOf[js.Dynamic].applyDynamic("localeData")(key.asInstanceOf[js.Any]).asInstanceOf[Locale_]
+inline def localeData(key: js.Array[String]): Locale_ = ^.asInstanceOf[js.Dynamic].applyDynamic("localeData")(key.asInstanceOf[js.Any]).asInstanceOf[Locale_]
 
-inline def max(moments: typings.momentMini.mod.Moment*): typings.momentMini.mod.Moment = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("max")(moments.asInstanceOf[js.Any]).asInstanceOf[typings.momentMini.mod.Moment]
-inline def max(moments: js.Array[typings.momentMini.mod.Moment]): typings.momentMini.mod.Moment = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("max")(moments.asInstanceOf[js.Any]).asInstanceOf[typings.momentMini.mod.Moment]
+inline def locales(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("locales")().asInstanceOf[js.Array[String]]
 
-inline def min(moments: typings.momentMini.mod.Moment*): typings.momentMini.mod.Moment = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("min")(moments.asInstanceOf[js.Any]).asInstanceOf[typings.momentMini.mod.Moment]
-inline def min(moments: js.Array[typings.momentMini.mod.Moment]): typings.momentMini.mod.Moment = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("min")(moments.asInstanceOf[js.Any]).asInstanceOf[typings.momentMini.mod.Moment]
+inline def max(moments: Moment*): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(moments.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Moment]
+inline def max(moments: js.Array[Moment]): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(moments.asInstanceOf[js.Any]).asInstanceOf[Moment]
 
-inline def months(): js.Array[java.lang.String] = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("months")().asInstanceOf[js.Array[java.lang.String]]
-inline def months(format: java.lang.String): js.Array[java.lang.String] = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("months")(format.asInstanceOf[js.Any]).asInstanceOf[js.Array[java.lang.String]]
-inline def months(format: java.lang.String, index: scala.Double): java.lang.String = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("months")(format.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def months(index: scala.Double): java.lang.String = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("months")(index.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def min(moments: Moment*): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(moments.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Moment]
+inline def min(moments: js.Array[Moment]): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(moments.asInstanceOf[js.Any]).asInstanceOf[Moment]
 
-inline def monthsShort(): js.Array[java.lang.String] = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("monthsShort")().asInstanceOf[js.Array[java.lang.String]]
-inline def monthsShort(format: java.lang.String): js.Array[java.lang.String] = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("monthsShort")(format.asInstanceOf[js.Any]).asInstanceOf[js.Array[java.lang.String]]
-inline def monthsShort(format: java.lang.String, index: scala.Double): java.lang.String = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("monthsShort")(format.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def monthsShort(index: scala.Double): java.lang.String = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("monthsShort")(index.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def months(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("months")().asInstanceOf[js.Array[String]]
+inline def months(format: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("months")(format.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+inline def months(format: String, index: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("months")(format.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def months(index: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("months")(index.asInstanceOf[js.Any]).asInstanceOf[String]
 
-inline def normalizeUnits(unit: typings.momentMini.mod.unitOfTime.All): java.lang.String = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("normalizeUnits")(unit.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+inline def monthsShort(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("monthsShort")().asInstanceOf[js.Array[String]]
+inline def monthsShort(format: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("monthsShort")(format.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+inline def monthsShort(format: String, index: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("monthsShort")(format.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def monthsShort(index: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("monthsShort")(index.asInstanceOf[js.Any]).asInstanceOf[String]
 
-inline def now(): scala.Double = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[scala.Double]
+inline def normalizeUnits(unit: All): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeUnits")(unit.asInstanceOf[js.Any]).asInstanceOf[String]
 
-inline def parseTwoDigitYear(input: java.lang.String): scala.Double = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseTwoDigitYear")(input.asInstanceOf[js.Any]).asInstanceOf[scala.Double]
+inline def now(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[Double]
 
-inline def parseZone(): typings.momentMini.mod.Moment = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")().asInstanceOf[typings.momentMini.mod.Moment]
-inline def parseZone(inp: scala.Unit, format: scala.Unit, language: java.lang.String): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def parseZone(inp: scala.Unit, format: scala.Unit, language: java.lang.String, strict: scala.Boolean): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def parseZone(inp: scala.Unit, format: scala.Unit, language: scala.Unit, strict: scala.Boolean): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def parseZone(inp: scala.Unit, format: scala.Unit, strict: scala.Boolean): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def parseZone(inp: scala.Unit, format: typings.momentMini.mod.MomentFormatSpecification): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def parseZone(
-  inp: scala.Unit,
-  format: typings.momentMini.mod.MomentFormatSpecification,
-  language: java.lang.String
-): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def parseZone(
-  inp: scala.Unit,
-  format: typings.momentMini.mod.MomentFormatSpecification,
-  language: java.lang.String,
-  strict: scala.Boolean
-): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def parseZone(
-  inp: scala.Unit,
-  format: typings.momentMini.mod.MomentFormatSpecification,
-  language: scala.Unit,
-  strict: scala.Boolean
-): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def parseZone(inp: scala.Unit, format: typings.momentMini.mod.MomentFormatSpecification, strict: scala.Boolean): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def parseZone(inp: typings.momentMini.mod.MomentInput): typings.momentMini.mod.Moment = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any]).asInstanceOf[typings.momentMini.mod.Moment]
-inline def parseZone(inp: typings.momentMini.mod.MomentInput, format: scala.Unit, language: java.lang.String): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def parseZone(
-  inp: typings.momentMini.mod.MomentInput,
-  format: scala.Unit,
-  language: java.lang.String,
-  strict: scala.Boolean
-): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def parseZone(
-  inp: typings.momentMini.mod.MomentInput,
-  format: scala.Unit,
-  language: scala.Unit,
-  strict: scala.Boolean
-): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def parseZone(inp: typings.momentMini.mod.MomentInput, format: scala.Unit, strict: scala.Boolean): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def parseZone(inp: typings.momentMini.mod.MomentInput, format: typings.momentMini.mod.MomentFormatSpecification): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def parseZone(
-  inp: typings.momentMini.mod.MomentInput,
-  format: typings.momentMini.mod.MomentFormatSpecification,
-  language: java.lang.String
-): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def parseZone(
-  inp: typings.momentMini.mod.MomentInput,
-  format: typings.momentMini.mod.MomentFormatSpecification,
-  language: java.lang.String,
-  strict: scala.Boolean
-): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def parseZone(
-  inp: typings.momentMini.mod.MomentInput,
-  format: typings.momentMini.mod.MomentFormatSpecification,
-  language: scala.Unit,
-  strict: scala.Boolean
-): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def parseZone(
-  inp: typings.momentMini.mod.MomentInput,
-  format: typings.momentMini.mod.MomentFormatSpecification,
-  strict: scala.Boolean
-): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
+inline def parseTwoDigitYear(input: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parseTwoDigitYear")(input.asInstanceOf[js.Any]).asInstanceOf[Double]
 
-inline def relativeTimeRounding(): js.Function1[/* num */ scala.Double, scala.Double] = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("relativeTimeRounding")().asInstanceOf[js.Function1[/* num */ scala.Double, scala.Double]]
-inline def relativeTimeRounding(fn: js.Function1[/* num */ scala.Double, scala.Double]): scala.Boolean = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("relativeTimeRounding")(fn.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+inline def parseZone(): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")().asInstanceOf[Moment]
+inline def parseZone(inp: Unit, format: Unit, language: String): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def parseZone(inp: Unit, format: Unit, language: String, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def parseZone(inp: Unit, format: Unit, language: Unit, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def parseZone(inp: Unit, format: Unit, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def parseZone(inp: Unit, format: MomentFormatSpecification): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def parseZone(inp: Unit, format: MomentFormatSpecification, language: String): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def parseZone(inp: Unit, format: MomentFormatSpecification, language: String, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def parseZone(inp: Unit, format: MomentFormatSpecification, language: Unit, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def parseZone(inp: Unit, format: MomentFormatSpecification, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def parseZone(inp: MomentInput): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any]).asInstanceOf[Moment]
+inline def parseZone(inp: MomentInput, format: Unit, language: String): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def parseZone(inp: MomentInput, format: Unit, language: String, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def parseZone(inp: MomentInput, format: Unit, language: Unit, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def parseZone(inp: MomentInput, format: Unit, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def parseZone(inp: MomentInput, format: MomentFormatSpecification): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def parseZone(inp: MomentInput, format: MomentFormatSpecification, language: String): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def parseZone(inp: MomentInput, format: MomentFormatSpecification, language: String, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def parseZone(inp: MomentInput, format: MomentFormatSpecification, language: Unit, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def parseZone(inp: MomentInput, format: MomentFormatSpecification, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
 
-inline def relativeTimeThreshold(threshold: java.lang.String): scala.Double | scala.Boolean = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("relativeTimeThreshold")(threshold.asInstanceOf[js.Any]).asInstanceOf[scala.Double | scala.Boolean]
-inline def relativeTimeThreshold(threshold: java.lang.String, limit: scala.Double): scala.Boolean = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("relativeTimeThreshold")(threshold.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[scala.Boolean]
+inline def relativeTimeRounding(): js.Function1[/* num */ Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("relativeTimeRounding")().asInstanceOf[js.Function1[/* num */ Double, Double]]
+inline def relativeTimeRounding(fn: js.Function1[/* num */ Double, Double]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("relativeTimeRounding")(fn.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
-inline def unix(timestamp: scala.Double): typings.momentMini.mod.Moment = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("unix")(timestamp.asInstanceOf[js.Any]).asInstanceOf[typings.momentMini.mod.Moment]
+inline def relativeTimeThreshold(threshold: String): Double | Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("relativeTimeThreshold")(threshold.asInstanceOf[js.Any]).asInstanceOf[Double | Boolean]
+inline def relativeTimeThreshold(threshold: String, limit: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("relativeTimeThreshold")(threshold.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 
-inline def updateLocale(language: java.lang.String, localeSpec: scala.Unit): typings.momentMini.mod.Locale_ = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("updateLocale")(language.asInstanceOf[js.Any], localeSpec.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Locale_]
-inline def updateLocale(language: java.lang.String, localeSpec: typings.momentMini.mod.LocaleSpecification): typings.momentMini.mod.Locale_ = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("updateLocale")(language.asInstanceOf[js.Any], localeSpec.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Locale_]
+inline def suppressDeprecationWarnings: Boolean = ^.asInstanceOf[js.Dynamic].selectDynamic("suppressDeprecationWarnings").asInstanceOf[Boolean]
+inline def suppressDeprecationWarnings_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("suppressDeprecationWarnings")(x.asInstanceOf[js.Any])
 
-inline def utc(): typings.momentMini.mod.Moment = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("utc")().asInstanceOf[typings.momentMini.mod.Moment]
-inline def utc(inp: scala.Unit, format: scala.Unit, language: java.lang.String): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def utc(inp: scala.Unit, format: scala.Unit, language: java.lang.String, strict: scala.Boolean): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def utc(inp: scala.Unit, format: scala.Unit, language: scala.Unit, strict: scala.Boolean): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def utc(inp: scala.Unit, format: scala.Unit, strict: scala.Boolean): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def utc(inp: scala.Unit, format: typings.momentMini.mod.MomentFormatSpecification): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def utc(
-  inp: scala.Unit,
-  format: typings.momentMini.mod.MomentFormatSpecification,
-  language: java.lang.String
-): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def utc(
-  inp: scala.Unit,
-  format: typings.momentMini.mod.MomentFormatSpecification,
-  language: java.lang.String,
-  strict: scala.Boolean
-): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def utc(
-  inp: scala.Unit,
-  format: typings.momentMini.mod.MomentFormatSpecification,
-  language: scala.Unit,
-  strict: scala.Boolean
-): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def utc(inp: scala.Unit, format: typings.momentMini.mod.MomentFormatSpecification, strict: scala.Boolean): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def utc(inp: typings.momentMini.mod.MomentInput): typings.momentMini.mod.Moment = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any]).asInstanceOf[typings.momentMini.mod.Moment]
-inline def utc(inp: typings.momentMini.mod.MomentInput, format: scala.Unit, language: java.lang.String): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def utc(
-  inp: typings.momentMini.mod.MomentInput,
-  format: scala.Unit,
-  language: java.lang.String,
-  strict: scala.Boolean
-): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def utc(
-  inp: typings.momentMini.mod.MomentInput,
-  format: scala.Unit,
-  language: scala.Unit,
-  strict: scala.Boolean
-): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def utc(inp: typings.momentMini.mod.MomentInput, format: scala.Unit, strict: scala.Boolean): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def utc(inp: typings.momentMini.mod.MomentInput, format: typings.momentMini.mod.MomentFormatSpecification): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def utc(
-  inp: typings.momentMini.mod.MomentInput,
-  format: typings.momentMini.mod.MomentFormatSpecification,
-  language: java.lang.String
-): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def utc(
-  inp: typings.momentMini.mod.MomentInput,
-  format: typings.momentMini.mod.MomentFormatSpecification,
-  language: java.lang.String,
-  strict: scala.Boolean
-): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def utc(
-  inp: typings.momentMini.mod.MomentInput,
-  format: typings.momentMini.mod.MomentFormatSpecification,
-  language: scala.Unit,
-  strict: scala.Boolean
-): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
-inline def utc(
-  inp: typings.momentMini.mod.MomentInput,
-  format: typings.momentMini.mod.MomentFormatSpecification,
-  strict: scala.Boolean
-): typings.momentMini.mod.Moment = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.momentMini.mod.Moment]
+inline def unix(timestamp: Double): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("unix")(timestamp.asInstanceOf[js.Any]).asInstanceOf[Moment]
 
-inline def version: java.lang.String = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[java.lang.String]
-inline def version_=(x: java.lang.String): scala.Unit = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
+inline def updateLocale(language: String, localeSpec: Unit): Locale_ = (^.asInstanceOf[js.Dynamic].applyDynamic("updateLocale")(language.asInstanceOf[js.Any], localeSpec.asInstanceOf[js.Any])).asInstanceOf[Locale_]
+inline def updateLocale(language: String, localeSpec: LocaleSpecification): Locale_ = (^.asInstanceOf[js.Dynamic].applyDynamic("updateLocale")(language.asInstanceOf[js.Any], localeSpec.asInstanceOf[js.Any])).asInstanceOf[Locale_]
 
-inline def weekdays(): js.Array[java.lang.String] = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("weekdays")().asInstanceOf[js.Array[java.lang.String]]
-inline def weekdays(format: java.lang.String): js.Array[java.lang.String] = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("weekdays")(format.asInstanceOf[js.Any]).asInstanceOf[js.Array[java.lang.String]]
-inline def weekdays(format: java.lang.String, index: scala.Double): java.lang.String = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("weekdays")(format.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def weekdays(index: scala.Double): java.lang.String = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("weekdays")(index.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
-inline def weekdays(localeSorted: scala.Boolean): js.Array[java.lang.String] = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("weekdays")(localeSorted.asInstanceOf[js.Any]).asInstanceOf[js.Array[java.lang.String]]
-inline def weekdays(localeSorted: scala.Boolean, format: java.lang.String): js.Array[java.lang.String] = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("weekdays")(localeSorted.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Array[java.lang.String]]
-inline def weekdays(localeSorted: scala.Boolean, format: java.lang.String, index: scala.Double): java.lang.String = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("weekdays")(localeSorted.asInstanceOf[js.Any], format.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def weekdays(localeSorted: scala.Boolean, index: scala.Double): java.lang.String = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("weekdays")(localeSorted.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def utc(): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("utc")().asInstanceOf[Moment]
+inline def utc(inp: Unit, format: Unit, language: String): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def utc(inp: Unit, format: Unit, language: String, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def utc(inp: Unit, format: Unit, language: Unit, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def utc(inp: Unit, format: Unit, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def utc(inp: Unit, format: MomentFormatSpecification): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def utc(inp: Unit, format: MomentFormatSpecification, language: String): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def utc(inp: Unit, format: MomentFormatSpecification, language: String, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def utc(inp: Unit, format: MomentFormatSpecification, language: Unit, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def utc(inp: Unit, format: MomentFormatSpecification, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def utc(inp: Unit, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def utc(inp: MomentInput): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any]).asInstanceOf[Moment]
+inline def utc(inp: MomentInput, format: Unit, language: String): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def utc(inp: MomentInput, format: Unit, language: String, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def utc(inp: MomentInput, format: Unit, language: Unit, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def utc(inp: MomentInput, format: Unit, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def utc(inp: MomentInput, format: MomentFormatSpecification): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def utc(inp: MomentInput, format: MomentFormatSpecification, language: String): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def utc(inp: MomentInput, format: MomentFormatSpecification, language: String, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def utc(inp: MomentInput, format: MomentFormatSpecification, language: Unit, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def utc(inp: MomentInput, format: MomentFormatSpecification, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+inline def utc(inp: MomentInput, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
 
-inline def weekdaysMin(): js.Array[java.lang.String] = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysMin")().asInstanceOf[js.Array[java.lang.String]]
-inline def weekdaysMin(format: java.lang.String): js.Array[java.lang.String] = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysMin")(format.asInstanceOf[js.Any]).asInstanceOf[js.Array[java.lang.String]]
-inline def weekdaysMin(format: java.lang.String, index: scala.Double): java.lang.String = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysMin")(format.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def weekdaysMin(index: scala.Double): java.lang.String = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysMin")(index.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
-inline def weekdaysMin(localeSorted: scala.Boolean): js.Array[java.lang.String] = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysMin")(localeSorted.asInstanceOf[js.Any]).asInstanceOf[js.Array[java.lang.String]]
-inline def weekdaysMin(localeSorted: scala.Boolean, format: java.lang.String): js.Array[java.lang.String] = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysMin")(localeSorted.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Array[java.lang.String]]
-inline def weekdaysMin(localeSorted: scala.Boolean, format: java.lang.String, index: scala.Double): java.lang.String = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysMin")(localeSorted.asInstanceOf[js.Any], format.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def weekdaysMin(localeSorted: scala.Boolean, index: scala.Double): java.lang.String = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysMin")(localeSorted.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def version: String = ^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[String]
+inline def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
 
-inline def weekdaysShort(): js.Array[java.lang.String] = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysShort")().asInstanceOf[js.Array[java.lang.String]]
-inline def weekdaysShort(format: java.lang.String): js.Array[java.lang.String] = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysShort")(format.asInstanceOf[js.Any]).asInstanceOf[js.Array[java.lang.String]]
-inline def weekdaysShort(format: java.lang.String, index: scala.Double): java.lang.String = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysShort")(format.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def weekdaysShort(index: scala.Double): java.lang.String = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysShort")(index.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
-inline def weekdaysShort(localeSorted: scala.Boolean): js.Array[java.lang.String] = typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysShort")(localeSorted.asInstanceOf[js.Any]).asInstanceOf[js.Array[java.lang.String]]
-inline def weekdaysShort(localeSorted: scala.Boolean, format: java.lang.String): js.Array[java.lang.String] = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysShort")(localeSorted.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Array[java.lang.String]]
-inline def weekdaysShort(localeSorted: scala.Boolean, format: java.lang.String, index: scala.Double): java.lang.String = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysShort")(localeSorted.asInstanceOf[js.Any], format.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-inline def weekdaysShort(localeSorted: scala.Boolean, index: scala.Double): java.lang.String = (typings.momentMini.mod.^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysShort")(localeSorted.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+inline def weekdays(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdays")().asInstanceOf[js.Array[String]]
+inline def weekdays(format: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdays")(format.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+inline def weekdays(format: String, index: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("weekdays")(format.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def weekdays(index: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdays")(index.asInstanceOf[js.Any]).asInstanceOf[String]
+inline def weekdays(localeSorted: Boolean): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdays")(localeSorted.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+inline def weekdays(localeSorted: Boolean, format: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("weekdays")(localeSorted.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+inline def weekdays(localeSorted: Boolean, format: String, index: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("weekdays")(localeSorted.asInstanceOf[js.Any], format.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def weekdays(localeSorted: Boolean, index: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("weekdays")(localeSorted.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[String]
+
+inline def weekdaysMin(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysMin")().asInstanceOf[js.Array[String]]
+inline def weekdaysMin(format: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysMin")(format.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+inline def weekdaysMin(format: String, index: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysMin")(format.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def weekdaysMin(index: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysMin")(index.asInstanceOf[js.Any]).asInstanceOf[String]
+inline def weekdaysMin(localeSorted: Boolean): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysMin")(localeSorted.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+inline def weekdaysMin(localeSorted: Boolean, format: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysMin")(localeSorted.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+inline def weekdaysMin(localeSorted: Boolean, format: String, index: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysMin")(localeSorted.asInstanceOf[js.Any], format.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def weekdaysMin(localeSorted: Boolean, index: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysMin")(localeSorted.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[String]
+
+inline def weekdaysShort(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysShort")().asInstanceOf[js.Array[String]]
+inline def weekdaysShort(format: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysShort")(format.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+inline def weekdaysShort(format: String, index: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysShort")(format.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def weekdaysShort(index: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysShort")(index.asInstanceOf[js.Any]).asInstanceOf[String]
+inline def weekdaysShort(localeSorted: Boolean): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysShort")(localeSorted.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+inline def weekdaysShort(localeSorted: Boolean, format: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysShort")(localeSorted.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+inline def weekdaysShort(localeSorted: Boolean, format: String, index: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysShort")(localeSorted.asInstanceOf[js.Any], format.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def weekdaysShort(localeSorted: Boolean, index: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysShort")(localeSorted.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[String]
 
 /* Rewritten from type alias, can be one of: 
   - typings.momentMini.momentMiniStrings.sameDay
@@ -320,12 +212,9 @@ inline def weekdaysShort(localeSorted: scala.Boolean, index: scala.Double): java
   - typings.momentMini.momentMiniStrings.sameElse
   - java.lang.String
 */
-type CalendarKey = typings.momentMini.mod._CalendarKey | java.lang.String
+type CalendarKey = _CalendarKey | String
 
-type CalendarSpecVal = java.lang.String | (js.Function2[
-/* m */ js.UndefOr[typings.momentMini.mod.MomentInput], 
-/* now */ js.UndefOr[typings.momentMini.mod.Moment], 
-java.lang.String])
+type CalendarSpecVal = String | (js.Function2[/* m */ js.UndefOr[MomentInput], /* now */ js.UndefOr[Moment], String])
 
 // null | undefined
 /* Rewritten from type alias, can be one of: 
@@ -336,10 +225,10 @@ java.lang.String])
   - typings.momentMini.mod.DurationInputObject
   - scala.Unit
 */
-type DurationInputArg1 = typings.momentMini.mod._DurationInputArg1 | scala.Double | java.lang.String | scala.Unit
+type DurationInputArg1 = _DurationInputArg1 | Double | String | Unit
 
 // null | undefined
-type DurationInputArg2 = typings.momentMini.mod.unitOfTime.DurationConstructor
+type DurationInputArg2 = DurationConstructor
 
 /* Rewritten from type alias, can be one of: 
   - java.lang.String
@@ -348,33 +237,32 @@ type DurationInputArg2 = typings.momentMini.mod.unitOfTime.DurationConstructor
   - js.Array[java.lang.String]
   - scala.Boolean
 */
-type LocaleSpecifier = typings.momentMini.mod._LocaleSpecifier | js.Array[java.lang.String] | java.lang.String | scala.Boolean
+type LocaleSpecifier = _LocaleSpecifier | js.Array[String] | String | Boolean
 
-type MomentFormatSpecification = java.lang.String | typings.momentMini.mod.MomentBuiltinFormat | (js.Array[java.lang.String | typings.momentMini.mod.MomentBuiltinFormat])
+type MomentFormatSpecification = String | MomentBuiltinFormat | (js.Array[String | MomentBuiltinFormat])
 
 /* Rewritten from type alias, can be one of: 
   - typings.momentMini.mod.Moment
-  - typings.std.Date
+  - js.Date
   - java.lang.String
   - scala.Double
   - js.Array[scala.Double | java.lang.String]
   - typings.momentMini.mod.MomentInputObject
   - scala.Unit
 */
-type MomentInput = typings.momentMini.mod._MomentInput | (js.Array[scala.Double | java.lang.String]) | typings.std.Date | java.lang.String | scala.Double | scala.Unit
+type MomentInput = _MomentInput | (js.Array[Double | String]) | js.Date | String | Double | Unit
 
-type MonthWeekdayFn = js.Function2[
-/* momentToFormat */ typings.momentMini.mod.Moment, 
-/* format */ js.UndefOr[java.lang.String], 
-java.lang.String]
+type MonthWeekdayFn = js.Function2[/* momentToFormat */ Moment, /* format */ js.UndefOr[String], String]
 
-type RelativeTimeFuturePastVal = java.lang.String | (js.Function1[/* relTime */ java.lang.String, java.lang.String])
+type RelativeTimeFuturePastVal = String | (js.Function1[/* relTime */ String, String])
 
-type RelativeTimeSpecVal = java.lang.String | (js.Function4[
-/* n */ scala.Double, 
-/* withoutSuffix */ scala.Boolean, 
-/* key */ typings.momentMini.mod.RelativeTimeKey, 
-/* isFuture */ scala.Boolean, 
-java.lang.String])
+type RelativeTimeSpecVal = String | (js.Function4[
+/* n */ Double, 
+/* withoutSuffix */ Boolean, 
+/* key */ RelativeTimeKey, 
+/* isFuture */ Boolean, 
+String])
 
-type WeekdaySimpleFn = js.Function1[/* momentToFormat */ typings.momentMini.mod.Moment, java.lang.String]
+type WeekdaySimpleFn = js.Function1[/* momentToFormat */ Moment, String]
+
+type numberlike = Double | String

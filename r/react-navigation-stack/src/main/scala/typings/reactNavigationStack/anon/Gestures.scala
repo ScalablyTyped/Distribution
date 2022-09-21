@@ -45,10 +45,10 @@ object Gestures {
     
     inline def setRoutes(value: js.Array[NavigationRoute[NavigationParams]]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     
-    inline def setRoutesVarargs(value: NavigationRoute[NavigationParams]*): Self = StObject.set(x, "routes", js.Array(value :_*))
+    inline def setRoutesVarargs(value: NavigationRoute[NavigationParams]*): Self = StObject.set(x, "routes", js.Array(value*))
     
     inline def setScenes(value: js.Array[Scene[NavigationRoute[NavigationParams]]]): Self = StObject.set(x, "scenes", value.asInstanceOf[js.Any])
     
-    inline def setScenesVarargs(value: Scene[NavigationRoute[NavigationParams]]*): Self = StObject.set(x, "scenes", js.Array(value :_*))
+    inline def setScenesVarargs(value: Scene[NavigationRoute[NavigationParams]]*): Self = StObject.set(x, "scenes", js.Array(value*))
   }
 }

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FnCallObservable extends StObject {
   
-  def apply[T, S](observable: js.Any): Stream_[T, S] = js.native
+  def apply[T, S](observable: Any): Stream_[T, S] = js.native
 }

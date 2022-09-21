@@ -3,6 +3,7 @@ package typings.ngDialog
 import org.scalablytyped.runtime.StringDictionary
 import typings.angular.mod.IPromise
 import typings.angular.mod.IRootScopeService
+import typings.angular.mod.IScope
 import typings.angular.mod.IServiceProvider
 import typings.angular.mod.global.Function
 import org.scalablytyped.runtime.StObject
@@ -38,11 +39,11 @@ object mod {
         
         var id: String
         
-        var value: js.Any
+        var value: Any
       }
       object IDialogClosePromise {
         
-        inline def apply(id: String, value: js.Any): typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogClosePromise = {
+        inline def apply(id: String, value: Any): typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogClosePromise = {
           val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogClosePromise]
         }
@@ -51,7 +52,7 @@ object mod {
           
           inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
           
-          inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+          inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         }
       }
       
@@ -67,7 +68,7 @@ object mod {
           * @param {any} [value] - The value with which the promise will resolve
           */
         def confirm(): Unit = js.native
-        def confirm(value: js.Any): Unit = js.native
+        def confirm(value: Any): Unit = js.native
       }
       
       trait IDialogOpenConfirmOptions
@@ -101,7 +102,7 @@ object mod {
         
         var bindToController: js.UndefOr[Boolean] = js.undefined
         
-        var controller: js.UndefOr[String | js.Array[js.Any] | js.Any] = js.undefined
+        var controller: js.UndefOr[String | js.Array[Any] | Any] = js.undefined
         
         var controllerAs: js.UndefOr[String] = js.undefined
         
@@ -109,7 +110,7 @@ object mod {
           * Any serializable data that you want to be stored in the controller's dialog scope. ($scope.ngDialogData).
           * From version 0.3.6 $scope.ngDialogData keeps references to the objects instead of copying them.
           */
-        var data: js.UndefOr[String | js.Object | js.Array[js.Any]] = js.undefined
+        var data: js.UndefOr[String | js.Object | js.Array[Any]] = js.undefined
         
         /**
           * An optional map of dependencies which should be injected into the controller. If any of these dependencies
@@ -121,7 +122,7 @@ object mod {
         /**
           * Scope object that will be passed to dialog. If you use controller with separate $scope service this object will be passed to $scope.$parent param.
           */
-        var scope: js.UndefOr[typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogScope] = js.undefined
+        var scope: js.UndefOr[IScope] = js.undefined
         
         var template: String
       }
@@ -138,7 +139,7 @@ object mod {
           
           inline def setBindToControllerUndefined: Self = StObject.set(x, "bindToController", js.undefined)
           
-          inline def setController(value: String | js.Array[js.Any] | js.Any): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+          inline def setController(value: String | js.Array[Any] | Any): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
           
           inline def setControllerAs(value: String): Self = StObject.set(x, "controllerAs", value.asInstanceOf[js.Any])
           
@@ -146,19 +147,19 @@ object mod {
           
           inline def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
           
-          inline def setControllerVarargs(value: js.Any*): Self = StObject.set(x, "controller", js.Array(value :_*))
+          inline def setControllerVarargs(value: Any*): Self = StObject.set(x, "controller", js.Array(value*))
           
-          inline def setData(value: String | js.Object | js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+          inline def setData(value: String | js.Object | js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
           
           inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
           
-          inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+          inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
           
           inline def setResolve(value: StringDictionary[String | Function]): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
           
           inline def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
           
-          inline def setScope(value: typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+          inline def setScope(value: IScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
           
           inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
           
@@ -170,7 +171,7 @@ object mod {
       trait IDialogOpenResult extends StObject {
         
         def close(): Unit = js.native
-        def close(value: js.Any): Unit = js.native
+        def close(value: Any): Unit = js.native
         
         var closePromise: IPromise[typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogClosePromise] = js.native
         
@@ -445,7 +446,7 @@ object mod {
       object IDialogProvider {
         
         inline def apply(
-          $get: js.Any,
+          $get: Any,
           setDefaults: typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogOptions => Unit,
           setForceBodyReload: Boolean => Unit,
           setForceHtmlReload: Boolean => Unit
@@ -478,13 +479,13 @@ object mod {
           * For dialogs opened with the openConfirm() method the value is used as the reject reason.
           */
         def closeThisDialog(): Unit = js.native
-        def closeThisDialog(value: js.Any): Unit = js.native
+        def closeThisDialog(value: Any): Unit = js.native
         
         /**
           * Any serializable data that you want to be stored in the controller's dialog scope.
           * From version 0.3.6 $scope.ngDialogData keeps references to the objects instead of copying them.
           */
-        var ngDialogData: String | js.Object | js.Array[js.Any] = js.native
+        var ngDialogData: String | js.Object | js.Array[Any] = js.native
         
         /**
           * The id of the dialog. If you you ngDialogData, it'll be also available under ngDialogData.ngDialogId
@@ -496,10 +497,10 @@ object mod {
       trait IDialogService extends StObject {
         
         def close(id: String): Unit = js.native
-        def close(id: String, value: js.Any): Unit = js.native
+        def close(id: String, value: Any): Unit = js.native
         
         def closeAll(): Unit = js.native
-        def closeAll(value: js.Any): Unit = js.native
+        def closeAll(value: Any): Unit = js.native
         
         def getDefaults(): typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogOptions = js.native
         
@@ -514,7 +515,7 @@ object mod {
         
         def open(options: typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogOpenOptions): typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogOpenResult = js.native
         
-        def openConfirm(options: typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogOpenConfirmOptions): IPromise[js.Any] = js.native
+        def openConfirm(options: typings.ngDialog.mod.angularAugmentingMod.dialog.IDialogOpenConfirmOptions): IPromise[Any] = js.native
       }
     }
   }

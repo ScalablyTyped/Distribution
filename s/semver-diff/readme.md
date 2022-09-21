@@ -1,7 +1,7 @@
 
 # Scala.js typings for semver-diff
 
-Typings are for version 3.1.1
+Typings are for version 4.0.0
 
 ## Library description:
 Get the diff type of two semver versions: 0.0.1 0.0.2 → patch
@@ -10,10 +10,10 @@ Get the diff type of two semver versions: 0.0.1 0.0.2 → patch
 | ------------------ | :-------------: |
 | Full name          | semver-diff |
 | Keywords           | semver, version, semantic, diff, difference |
-| # releases         | 4 |
-| # dependents       | 100 |
-| # downloads        | 312316939 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4.2184071E7 |
+| # stars            | 65.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/semver-diff#readme)

@@ -9,6 +9,6 @@ trait KnockoutTemplateAnonymous
   extends StObject
      with KnockoutTemplateSourcesDomElement {
   
-  def nodes(): js.Any = js.native
-  def nodes(value: js.Any): Unit = js.native
+  def nodes(): Any = js.native
+  def nodes(value: Any): Unit = js.native
 }

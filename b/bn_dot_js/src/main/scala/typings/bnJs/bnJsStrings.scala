@@ -15,6 +15,10 @@ object bnJsStrings {
   inline def be: be = "be".asInstanceOf[be]
   
   @js.native
+  sealed trait div extends StObject
+  inline def div: div = "div".asInstanceOf[div]
+  
+  @js.native
   sealed trait hex extends StObject
   inline def hex: hex = "hex".asInstanceOf[hex]
   
@@ -29,6 +33,10 @@ object bnJsStrings {
     extends StObject
        with Endianness
   inline def le: le = "le".asInstanceOf[le]
+  
+  @js.native
+  sealed trait mod extends StObject
+  inline def mod: mod = "mod".asInstanceOf[mod]
   
   @js.native
   sealed trait p192

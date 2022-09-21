@@ -13,7 +13,7 @@ trait Entry
      with /**
   * Making this interface extendable since this is not a complete type definition of FHIR Resource
   */
-/* propName */ StringDictionary[js.Any] {
+/* propName */ StringDictionary[Any] {
   
   /**
     * FHIR Resource

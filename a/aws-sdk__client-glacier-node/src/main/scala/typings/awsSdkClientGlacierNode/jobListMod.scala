@@ -8,5 +8,5 @@ object jobListMod {
   
   @JSImport("@aws-sdk/client-glacier-node/model/_JobList", "_JobList")
   @js.native
-  val JobList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ js.Any = js.native
+  val JobList: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _List_ */ Any = js.native
 }

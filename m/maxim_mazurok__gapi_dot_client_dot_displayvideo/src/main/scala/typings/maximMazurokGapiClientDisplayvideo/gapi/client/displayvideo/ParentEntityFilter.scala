@@ -28,13 +28,13 @@ object ParentEntityFilter {
     
     inline def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
     
-    inline def setFileTypeVarargs(value: String*): Self = StObject.set(x, "fileType", js.Array(value :_*))
+    inline def setFileTypeVarargs(value: String*): Self = StObject.set(x, "fileType", js.Array(value*))
     
     inline def setFilterIds(value: js.Array[String]): Self = StObject.set(x, "filterIds", value.asInstanceOf[js.Any])
     
     inline def setFilterIdsUndefined: Self = StObject.set(x, "filterIds", js.undefined)
     
-    inline def setFilterIdsVarargs(value: String*): Self = StObject.set(x, "filterIds", js.Array(value :_*))
+    inline def setFilterIdsVarargs(value: String*): Self = StObject.set(x, "filterIds", js.Array(value*))
     
     inline def setFilterType(value: String): Self = StObject.set(x, "filterType", value.asInstanceOf[js.Any])
     

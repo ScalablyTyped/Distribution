@@ -12,7 +12,7 @@ import typings.bip174.interfacesMod.PsbtOutputExtended
 import typings.bip174.interfacesMod.PsbtOutputUpdate
 import typings.bip174.interfacesMod.Transaction
 import typings.bip174.interfacesMod.TransactionFromBuffer
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.std.InstanceType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,7 +22,7 @@ object mod {
   
   @JSImport("bip174", "Psbt")
   @js.native
-  class Psbt protected () extends StObject {
+  open class Psbt protected () extends StObject {
     def this(tx: Transaction) = this()
     
     def addInput(inputData: PsbtInputExtended): this.type = js.native

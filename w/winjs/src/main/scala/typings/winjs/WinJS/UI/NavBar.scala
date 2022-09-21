@@ -46,7 +46,7 @@ trait NavBar extends StObject {
     * @param eventProperties The set of additional properties to be attached to the event object when the event is raised.
     * @returns true if preventDefault was called on the event, otherwise false.
     **/
-  def dispatchEvent(`type`: String, eventProperties: js.Any): Boolean = js.native
+  def dispatchEvent(`type`: String, eventProperties: Any): Boolean = js.native
   
   /**
     * Releases resources held by this NavBar. Call this method when the NavBar is no longer needed. After calling this method, the NavBar becomes unusable.
@@ -75,8 +75,8 @@ trait NavBar extends StObject {
     * @param commands The commands to hide. The array elements may be NavBarCommand objects, or the string identifiers (IDs) of commands.
     * @param immediate The parameter immediate is not supported and may be altered or unavailable in the future. true to hide the commands immediately, without animating them; otherwise, false.
     **/
-  def hideCommands(commands: js.Array[js.Any]): Unit = js.native
-  def hideCommands(commands: js.Array[js.Any], immediate: Boolean): Unit = js.native
+  def hideCommands(commands: js.Array[Any]): Unit = js.native
+  def hideCommands(commands: js.Array[Any], immediate: Boolean): Unit = js.native
   
   //#endregion Constructors
   //#region Events
@@ -139,14 +139,14 @@ trait NavBar extends StObject {
     * @param commands The commands to show. The array elements may be NavBarCommand objects, or the string identifiers (IDs) of commands.
     * @param immediate The parameter immediate is not supported and may be altered or unavailable in the future. true to show the commands immediately, without animating them; otherwise, false.
     **/
-  def showCommands(commands: js.Array[js.Any]): Unit = js.native
-  def showCommands(commands: js.Array[js.Any], immediate: Boolean): Unit = js.native
+  def showCommands(commands: js.Array[Any]): Unit = js.native
+  def showCommands(commands: js.Array[Any], immediate: Boolean): Unit = js.native
   
   /**
     * Shows the specified commands of the NavBar while hiding all other commands.
     * @param commands The commands to show. The array elements may be NavBarCommand objects, or the string identifiers (IDs) of commands.
     * @param immediate The parameter immediate is not supported and may be altered or unavailable in the future. true to show the specified commands (and hide the others) immediately, without animating them; otherwise, false.
     **/
-  def showOnlyCommands(commands: js.Array[js.Any]): Unit = js.native
-  def showOnlyCommands(commands: js.Array[js.Any], immediate: Boolean): Unit = js.native
+  def showOnlyCommands(commands: js.Array[Any]): Unit = js.native
+  def showOnlyCommands(commands: js.Array[Any], immediate: Boolean): Unit = js.native
 }

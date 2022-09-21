@@ -85,14 +85,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JQuery extends StObject {
   
   def qtip(): JQuery
-  def qtip(methodName: String): js.Any
-  def qtip(methodName: String, p1: js.Any): js.Any
-  def qtip(methodName: String, p1: js.Any, p2: js.Any): js.Any
-  def qtip(methodName: String, p1: js.Any, p2: js.Any, p3: js.Any): js.Any
-  def qtip(methodName: String, p1: js.Any, p2: Unit, p3: js.Any): js.Any
-  def qtip(methodName: String, p1: Unit, p2: js.Any): js.Any
-  def qtip(methodName: String, p1: Unit, p2: js.Any, p3: js.Any): js.Any
-  def qtip(methodName: String, p1: Unit, p2: Unit, p3: js.Any): js.Any
+  def qtip(methodName: String): Any
+  def qtip(methodName: String, p1: Any): Any
+  def qtip(methodName: String, p1: Any, p2: Any): Any
+  def qtip(methodName: String, p1: Any, p2: Any, p3: Any): Any
+  def qtip(methodName: String, p1: Any, p2: Unit, p3: Any): Any
+  def qtip(methodName: String, p1: Unit, p2: Any): Any
+  def qtip(methodName: String, p1: Unit, p2: Any, p3: Any): Any
+  def qtip(methodName: String, p1: Unit, p2: Unit, p3: Any): Any
   def qtip(methodName: option, propertyName: content): Content
   def qtip(methodName: option, propertyName: contentDotattr): String
   def qtip(methodName: option, propertyName: contentDotattr, value: String): Api
@@ -132,8 +132,8 @@ trait JQuery extends StObject {
   def qtip(methodName: option, propertyName: hideDotdistance): Double | Boolean
   def qtip(methodName: option, propertyName: hideDotdistance, value: Boolean): Api
   def qtip(methodName: option, propertyName: hideDotdistance, value: Double): Api
-  def qtip(methodName: option, propertyName: hideDoteffect): Boolean | (js.Function1[/* offset */ js.Any, Unit])
-  def qtip(methodName: option, propertyName: hideDoteffect, value: js.Function1[/* offset */ js.Any, Unit]): Api
+  def qtip(methodName: option, propertyName: hideDoteffect): Boolean | (js.Function1[/* offset */ Any, Unit])
+  def qtip(methodName: option, propertyName: hideDoteffect, value: js.Function1[/* offset */ Any, Unit]): Api
   def qtip(methodName: option, propertyName: hideDoteffect, value: Boolean): Api
   def qtip(methodName: option, propertyName: hideDotevent): String | Boolean
   def qtip(methodName: option, propertyName: hideDotevent, value: String): Api
@@ -151,8 +151,8 @@ trait JQuery extends StObject {
   def qtip(methodName: option, propertyName: id): String | Boolean
   def qtip(methodName: option, propertyName: id, value: String): Api
   def qtip(methodName: option, propertyName: id, value: Boolean): Api
-  def qtip(methodName: option, propertyName: metadata): js.Any
-  def qtip(methodName: option, propertyName: metadata, value: js.Any): Api
+  def qtip(methodName: option, propertyName: metadata): Any
+  def qtip(methodName: option, propertyName: metadata, value: Any): Api
   def qtip(methodName: option, propertyName: overwrite): Boolean
   def qtip(methodName: option, propertyName: overwrite, value: Boolean): Api
   def qtip(methodName: option, propertyName: position): Position
@@ -164,11 +164,11 @@ trait JQuery extends StObject {
   def qtip(methodName: option, propertyName: positionDotcontainer): JQuery | Boolean
   def qtip(methodName: option, propertyName: positionDotcontainer, value: Boolean): Api
   def qtip(methodName: option, propertyName: positionDotcontainer, value: JQuery): Api
-  def qtip(methodName: option, propertyName: positionDoteffect): Boolean | (js.Function3[/* api */ Api, /* pos */ js.Any, /* viewport */ js.Any, Unit])
+  def qtip(methodName: option, propertyName: positionDoteffect): Boolean | (js.Function3[/* api */ Api, /* pos */ Any, /* viewport */ Any, Unit])
   def qtip(
     methodName: option,
     propertyName: positionDoteffect,
-    value: js.Function3[/* api */ Api, /* pos */ js.Any, /* viewport */ js.Any, Unit]
+    value: js.Function3[/* api */ Api, /* pos */ Any, /* viewport */ Any, Unit]
   ): Api
   def qtip(methodName: option, propertyName: positionDoteffect, value: Boolean): Api
   def qtip(methodName: option, propertyName: positionDotmy): String | Boolean
@@ -186,8 +186,8 @@ trait JQuery extends StObject {
   def qtip(methodName: option, propertyName: show): Show
   def qtip(methodName: option, propertyName: showDotdelay): Double
   def qtip(methodName: option, propertyName: showDotdelay, value: Double): Api
-  def qtip(methodName: option, propertyName: showDoteffect): Boolean | (js.Function1[/* offset */ js.Any, Unit])
-  def qtip(methodName: option, propertyName: showDoteffect, value: js.Function1[/* offset */ js.Any, Unit]): Api
+  def qtip(methodName: option, propertyName: showDoteffect): Boolean | (js.Function1[/* offset */ Any, Unit])
+  def qtip(methodName: option, propertyName: showDoteffect, value: js.Function1[/* offset */ Any, Unit]): Api
   def qtip(methodName: option, propertyName: showDoteffect, value: Boolean): Api
   def qtip(methodName: option, propertyName: showDotevent): String | Boolean
   def qtip(methodName: option, propertyName: showDotevent, value: String): Api

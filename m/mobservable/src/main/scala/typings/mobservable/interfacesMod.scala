@@ -75,7 +75,7 @@ object interfacesMod {
       
       inline def setRemoved(value: js.Array[T]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
       
-      inline def setRemovedVarargs(value: T*): Self = StObject.set(x, "removed", js.Array(value :_*))
+      inline def setRemovedVarargs(value: T*): Self = StObject.set(x, "removed", js.Array(value*))
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -107,7 +107,7 @@ object interfacesMod {
   
   trait IDependencyTree extends StObject {
     
-    var context: js.Any
+    var context: Any
     
     var dependencies: js.UndefOr[js.Array[IDependencyTree]] = js.undefined
     
@@ -117,20 +117,20 @@ object interfacesMod {
   }
   object IDependencyTree {
     
-    inline def apply(context: js.Any, id: Double, name: String): IDependencyTree = {
+    inline def apply(context: Any, id: Double, name: String): IDependencyTree = {
       val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDependencyTree]
     }
     
     extension [Self <: IDependencyTree](x: Self) {
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setDependencies(value: js.Array[IDependencyTree]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
       inline def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
       
-      inline def setDependenciesVarargs(value: IDependencyTree*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
+      inline def setDependenciesVarargs(value: IDependencyTree*): Self = StObject.set(x, "dependencies", js.Array(value*))
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -174,8 +174,8 @@ object interfacesMod {
   @js.native
   trait IObservable extends StObject {
     
-    def observe(callback: js.Function1[/* repeated */ js.Any, Unit]): Lambda = js.native
-    def observe(callback: js.Function1[/* repeated */ js.Any, Unit], fireImmediately: Boolean): Lambda = js.native
+    def observe(callback: js.Function1[/* repeated */ Any, Unit]): Lambda = js.native
+    def observe(callback: js.Function1[/* repeated */ Any, Unit], fireImmediately: Boolean): Lambda = js.native
   }
   
   @js.native
@@ -188,7 +188,7 @@ object interfacesMod {
     
     def find(
       predicate: js.Function3[/* item */ T, /* index */ Double, /* array */ IObservableArray[T], Boolean],
-      thisArg: js.Any,
+      thisArg: Any,
       fromIndex: Double
     ): T = js.native
     def find(
@@ -223,7 +223,7 @@ object interfacesMod {
   
   trait IObserverTree extends StObject {
     
-    var context: js.Any
+    var context: Any
     
     var id: Double
     
@@ -235,14 +235,14 @@ object interfacesMod {
   }
   object IObserverTree {
     
-    inline def apply(context: js.Any, id: Double, name: String): IObserverTree = {
+    inline def apply(context: Any, id: Double, name: String): IObserverTree = {
       val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[IObserverTree]
     }
     
     extension [Self <: IObserverTree](x: Self) {
       
-      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -256,7 +256,7 @@ object interfacesMod {
       
       inline def setObserversUndefined: Self = StObject.set(x, "observers", js.undefined)
       
-      inline def setObserversVarargs(value: IObserverTree*): Self = StObject.set(x, "observers", js.Array(value :_*))
+      inline def setObserversVarargs(value: IObserverTree*): Self = StObject.set(x, "observers", js.Array(value*))
     }
   }
   

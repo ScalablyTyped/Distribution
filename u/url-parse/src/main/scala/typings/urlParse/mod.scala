@@ -1,25 +1,31 @@
 package typings.urlParse
 
-import org.scalablytyped.runtime.StringDictionary
+import typings.std.Record
 import typings.urlParse.anon.Parse
 import typings.urlParse.anon.Protocol
+import typings.urlParse.urlParseBooleans.`false`
+import typings.urlParse.urlParseBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(address: String): URLParse = ^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any]).asInstanceOf[URLParse]
-  inline def apply(address: String, location: String): URLParse = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], location.asInstanceOf[js.Any])).asInstanceOf[URLParse]
-  inline def apply(address: String, location: String, parser: Boolean): URLParse = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], location.asInstanceOf[js.Any], parser.asInstanceOf[js.Any])).asInstanceOf[URLParse]
-  inline def apply(address: String, location: String, parser: QueryParser): URLParse = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], location.asInstanceOf[js.Any], parser.asInstanceOf[js.Any])).asInstanceOf[URLParse]
-  inline def apply(address: String, location: js.Object): URLParse = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], location.asInstanceOf[js.Any])).asInstanceOf[URLParse]
-  inline def apply(address: String, location: js.Object, parser: Boolean): URLParse = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], location.asInstanceOf[js.Any], parser.asInstanceOf[js.Any])).asInstanceOf[URLParse]
-  inline def apply(address: String, location: js.Object, parser: QueryParser): URLParse = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], location.asInstanceOf[js.Any], parser.asInstanceOf[js.Any])).asInstanceOf[URLParse]
-  inline def apply(address: String, location: Unit, parser: Boolean): URLParse = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], location.asInstanceOf[js.Any], parser.asInstanceOf[js.Any])).asInstanceOf[URLParse]
-  inline def apply(address: String, location: Unit, parser: QueryParser): URLParse = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], location.asInstanceOf[js.Any], parser.asInstanceOf[js.Any])).asInstanceOf[URLParse]
-  inline def apply(address: String, parser: Boolean): URLParse = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], parser.asInstanceOf[js.Any])).asInstanceOf[URLParse]
-  inline def apply(address: String, parser: QueryParser): URLParse = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], parser.asInstanceOf[js.Any])).asInstanceOf[URLParse]
+  inline def apply(address: String): URLParse[String] = ^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any]).asInstanceOf[URLParse[String]]
+  inline def apply(address: String, location: String): URLParse[String] = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], location.asInstanceOf[js.Any])).asInstanceOf[URLParse[String]]
+  inline def apply(address: String, location: String, parser: `false`): URLParse[String] = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], location.asInstanceOf[js.Any], parser.asInstanceOf[js.Any])).asInstanceOf[URLParse[String]]
+  inline def apply(address: String, location: String, parser: `true`): URLParse[Record[String, js.UndefOr[String]]] = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], location.asInstanceOf[js.Any], parser.asInstanceOf[js.Any])).asInstanceOf[URLParse[Record[String, js.UndefOr[String]]]]
+  inline def apply(address: String, location: js.Object): URLParse[String] = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], location.asInstanceOf[js.Any])).asInstanceOf[URLParse[String]]
+  inline def apply(address: String, location: js.Object, parser: `false`): URLParse[String] = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], location.asInstanceOf[js.Any], parser.asInstanceOf[js.Any])).asInstanceOf[URLParse[String]]
+  inline def apply(address: String, location: js.Object, parser: `true`): URLParse[Record[String, js.UndefOr[String]]] = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], location.asInstanceOf[js.Any], parser.asInstanceOf[js.Any])).asInstanceOf[URLParse[Record[String, js.UndefOr[String]]]]
+  inline def apply(address: String, location: Unit, parser: `false`): URLParse[String] = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], location.asInstanceOf[js.Any], parser.asInstanceOf[js.Any])).asInstanceOf[URLParse[String]]
+  inline def apply(address: String, location: Unit, parser: `true`): URLParse[Record[String, js.UndefOr[String]]] = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], location.asInstanceOf[js.Any], parser.asInstanceOf[js.Any])).asInstanceOf[URLParse[Record[String, js.UndefOr[String]]]]
+  inline def apply(address: String, parser: `false`): URLParse[String] = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], parser.asInstanceOf[js.Any])).asInstanceOf[URLParse[String]]
+  inline def apply(address: String, parser: `true`): URLParse[Record[String, js.UndefOr[String]]] = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], parser.asInstanceOf[js.Any])).asInstanceOf[URLParse[Record[String, js.UndefOr[String]]]]
+  inline def apply[T](address: String, location: String, parser: QueryParser[T]): URLParse[T] = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], location.asInstanceOf[js.Any], parser.asInstanceOf[js.Any])).asInstanceOf[URLParse[T]]
+  inline def apply[T](address: String, location: js.Object, parser: QueryParser[T]): URLParse[T] = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], location.asInstanceOf[js.Any], parser.asInstanceOf[js.Any])).asInstanceOf[URLParse[T]]
+  inline def apply[T](address: String, location: Unit, parser: QueryParser[T]): URLParse[T] = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], location.asInstanceOf[js.Any], parser.asInstanceOf[js.Any])).asInstanceOf[URLParse[T]]
+  inline def apply[T](address: String, parser: QueryParser[T]): URLParse[T] = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], parser.asInstanceOf[js.Any])).asInstanceOf[URLParse[T]]
   
   @JSImport("url-parse", JSImport.Namespace)
   @js.native
@@ -28,20 +34,14 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("url-parse", JSImport.Namespace)
   @js.native
-  class Class protected ()
+  open class Class[T] protected ()
     extends StObject
-       with URLParse {
+       with URLParse[T] {
     def this(address: String) = this()
-    def this(address: String, location: String) = this()
-    def this(address: String, location: js.Object) = this()
-    def this(address: String, parser: Boolean) = this()
-    def this(address: String, parser: QueryParser) = this()
-    def this(address: String, location: String, parser: Boolean) = this()
-    def this(address: String, location: String, parser: QueryParser) = this()
-    def this(address: String, location: js.Object, parser: Boolean) = this()
-    def this(address: String, location: js.Object, parser: QueryParser) = this()
-    def this(address: String, location: Unit, parser: Boolean) = this()
-    def this(address: String, location: Unit, parser: QueryParser) = this()
+    def this(address: String, parser: QueryParser[T]) = this()
+    def this(address: String, location: String, parser: QueryParser[T]) = this()
+    def this(address: String, location: js.Object, parser: QueryParser[T]) = this()
+    def this(address: String, location: Unit, parser: QueryParser[T]) = this()
   }
   
   inline def extractProtocol(url: String): Protocol = ^.asInstanceOf[js.Dynamic].applyDynamic("extractProtocol")(url.asInstanceOf[js.Any]).asInstanceOf[Protocol]
@@ -53,12 +53,14 @@ object mod {
   def qs: Parse = js.native
   inline def qs_=(x: Parse): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("qs")(x.asInstanceOf[js.Any])
   
-  type QueryParser = js.Function1[/* query */ String, js.Object]
+  inline def trimLeft(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("trimLeft")(url.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  type QueryParser[T] = js.Function1[/* query */ String, T]
   
   type StringifyQuery = js.Function1[/* query */ js.Object, String]
   
   @js.native
-  trait URLParse extends StObject {
+  trait URLParse[Query] extends StObject {
     
     val auth: String = js.native
     
@@ -80,20 +82,34 @@ object mod {
     
     val protocol: String = js.native
     
-    val query: StringDictionary[js.UndefOr[String]] = js.native
+    val query: Query = js.native
     
-    def set(part: URLPart): URLParse = js.native
-    def set(part: URLPart, value: String): URLParse = js.native
-    def set(part: URLPart, value: String, fn: Boolean): URLParse = js.native
-    def set(part: URLPart, value: String, fn: QueryParser): URLParse = js.native
-    def set(part: URLPart, value: js.Object): URLParse = js.native
-    def set(part: URLPart, value: js.Object, fn: Boolean): URLParse = js.native
-    def set(part: URLPart, value: js.Object, fn: QueryParser): URLParse = js.native
-    def set(part: URLPart, value: Double): URLParse = js.native
-    def set(part: URLPart, value: Double, fn: Boolean): URLParse = js.native
-    def set(part: URLPart, value: Double, fn: QueryParser): URLParse = js.native
-    def set(part: URLPart, value: Unit, fn: Boolean): URLParse = js.native
-    def set(part: URLPart, value: Unit, fn: QueryParser): URLParse = js.native
+    def set[Part /* <: URLPart */](part: Part): URLParse[Query] = js.native
+    def set[Part /* <: URLPart */](
+      part: Part,
+      value: /* import warning: importer.ImportType#apply Failed type conversion: url-parse.url-parse.URLParse<Query>[Part] */ js.Any
+    ): URLParse[Query] = js.native
+    def set[Part /* <: URLPart */, T](
+      part: Part,
+      value: /* import warning: importer.ImportType#apply Failed type conversion: url-parse.url-parse.URLParse<T>[Part] */ js.Any,
+      fn: QueryParser[T]
+    ): URLParse[T] = js.native
+    def set[Part /* <: URLPart */, T](part: Part, value: Unit, fn: QueryParser[T]): URLParse[T] = js.native
+    @JSName("set")
+    def set_Part_URLPartT[Part /* <: URLPart */, T](part: Part): URLParse[T] = js.native
+    @JSName("set")
+    def set_Part_URLPartT[Part /* <: URLPart */, T](
+      part: Part,
+      value: /* import warning: importer.ImportType#apply Failed type conversion: url-parse.url-parse.URLParse<T>[Part] */ js.Any
+    ): URLParse[T] = js.native
+    @JSName("set")
+    def set_false[Part /* <: URLPart */](
+      part: Part,
+      value: /* import warning: importer.ImportType#apply Failed type conversion: url-parse.url-parse.URLParse<Query>[Part] */ js.Any,
+      fn: `false`
+    ): URLParse[Query] = js.native
+    @JSName("set")
+    def set_false[Part /* <: URLPart */](part: Part, value: Unit, fn: `false`): URLParse[Query] = js.native
     
     val slashes: Boolean = js.native
     

@@ -51,7 +51,7 @@ object mod {
     var pedantic: js.UndefOr[Boolean] = js.undefined
     
     /** Plugins configs */
-    var plugins: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var plugins: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Pass default options to the plugin generating tableOfContents
@@ -88,11 +88,11 @@ object mod {
       
       inline def setPedanticUndefined: Self = StObject.set(x, "pedantic", js.undefined)
       
-      inline def setPlugins(value: js.Array[js.Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: js.Array[Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
       inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      inline def setPluginsVarargs(value: js.Any*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: Any*): Self = StObject.set(x, "plugins", js.Array(value*))
       
       inline def setTableOfContents(value: Absolute): Self = StObject.set(x, "tableOfContents", value.asInstanceOf[js.Any])
       

@@ -4,25 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response for listing breakpoints.
-  */
 trait SchemaListBreakpointsResponse extends StObject {
   
   /**
-    * List of breakpoints matching the request. The fields `id` and `location`
-    * are guaranteed to be set on each breakpoint. The fields: `stack_frames`,
-    * `evaluated_expressions` and `variable_table` are cleared on each
-    * breakpoint regardless of its status.
+    * List of breakpoints matching the request. The fields `id` and `location` are guaranteed to be set on each breakpoint. The fields: `stack_frames`, `evaluated_expressions` and `variable_table` are cleared on each breakpoint regardless of its status.
     */
   var breakpoints: js.UndefOr[js.Array[SchemaBreakpoint]] = js.undefined
   
   /**
-    * A wait token that can be used in the next call to `list` (REST) or
-    * `ListBreakpoints` (RPC) to block until the list of breakpoints has
-    * changes.
+    * A wait token that can be used in the next call to `list` (REST) or `ListBreakpoints` (RPC) to block until the list of breakpoints has changes.
     */
-  var nextWaitToken: js.UndefOr[String] = js.undefined
+  var nextWaitToken: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaListBreakpointsResponse {
   
@@ -37,9 +29,11 @@ object SchemaListBreakpointsResponse {
     
     inline def setBreakpointsUndefined: Self = StObject.set(x, "breakpoints", js.undefined)
     
-    inline def setBreakpointsVarargs(value: SchemaBreakpoint*): Self = StObject.set(x, "breakpoints", js.Array(value :_*))
+    inline def setBreakpointsVarargs(value: SchemaBreakpoint*): Self = StObject.set(x, "breakpoints", js.Array(value*))
     
     inline def setNextWaitToken(value: String): Self = StObject.set(x, "nextWaitToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextWaitTokenNull: Self = StObject.set(x, "nextWaitToken", null)
     
     inline def setNextWaitTokenUndefined: Self = StObject.set(x, "nextWaitToken", js.undefined)
   }

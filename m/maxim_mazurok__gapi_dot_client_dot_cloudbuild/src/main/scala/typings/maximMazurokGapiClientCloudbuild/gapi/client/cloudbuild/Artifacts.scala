@@ -32,7 +32,7 @@ object Artifacts {
     
     inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
     
-    inline def setImagesVarargs(value: String*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: String*): Self = StObject.set(x, "images", js.Array(value*))
     
     inline def setObjects(value: ArtifactObjects): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
     

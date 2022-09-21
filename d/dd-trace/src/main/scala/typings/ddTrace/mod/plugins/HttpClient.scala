@@ -16,6 +16,13 @@ trait HttpClient
   var hooks: js.UndefOr[`0`] = js.undefined
   
   /**
+    * List of urls to which propagation headers should not be injected
+    */
+  var propagationBlocklist: js.UndefOr[
+    String | js.RegExp | (js.Function1[/* url */ String, Boolean]) | (js.Array[String | js.RegExp | (js.Function1[/* url */ String, Boolean])])
+  ] = js.undefined
+  
+  /**
     * Use the remote endpoint host as the service name instead of the default.
     *
     * @default false
@@ -34,6 +41,16 @@ object HttpClient {
     inline def setHooks(value: `0`): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
     
     inline def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
+    
+    inline def setPropagationBlocklist(
+      value: String | js.RegExp | (js.Function1[/* url */ String, Boolean]) | (js.Array[String | js.RegExp | (js.Function1[/* url */ String, Boolean])])
+    ): Self = StObject.set(x, "propagationBlocklist", value.asInstanceOf[js.Any])
+    
+    inline def setPropagationBlocklistFunction1(value: /* url */ String => Boolean): Self = StObject.set(x, "propagationBlocklist", js.Any.fromFunction1(value))
+    
+    inline def setPropagationBlocklistUndefined: Self = StObject.set(x, "propagationBlocklist", js.undefined)
+    
+    inline def setPropagationBlocklistVarargs(value: (String | js.RegExp | (js.Function1[/* url */ String, Boolean]))*): Self = StObject.set(x, "propagationBlocklist", js.Array(value*))
     
     inline def setSplitByDomain(value: Boolean): Self = StObject.set(x, "splitByDomain", value.asInstanceOf[js.Any])
     

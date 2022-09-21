@@ -9,7 +9,7 @@ trait TemplateVersion extends StObject {
   /**
     * The time that this template version was created.
     */
-  var CreatedTime: js.UndefOr[Timestamp_] = js.undefined
+  var CreatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Schema of the dataset identified by the placeholder. Any dashboard created from this template should be bound to new datasets matching the same schema described through this API operation.
@@ -60,7 +60,7 @@ object TemplateVersion {
   
   extension [Self <: TemplateVersion](x: Self) {
     
-    inline def setCreatedTime(value: Timestamp_): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
     inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
@@ -68,7 +68,7 @@ object TemplateVersion {
     
     inline def setDataSetConfigurationsUndefined: Self = StObject.set(x, "DataSetConfigurations", js.undefined)
     
-    inline def setDataSetConfigurationsVarargs(value: DataSetConfiguration*): Self = StObject.set(x, "DataSetConfigurations", js.Array(value :_*))
+    inline def setDataSetConfigurationsVarargs(value: DataSetConfiguration*): Self = StObject.set(x, "DataSetConfigurations", js.Array(value*))
     
     inline def setDescription(value: VersionDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
@@ -78,13 +78,13 @@ object TemplateVersion {
     
     inline def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
     
-    inline def setErrorsVarargs(value: TemplateError*): Self = StObject.set(x, "Errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: TemplateError*): Self = StObject.set(x, "Errors", js.Array(value*))
     
     inline def setSheets(value: SheetList): Self = StObject.set(x, "Sheets", value.asInstanceOf[js.Any])
     
     inline def setSheetsUndefined: Self = StObject.set(x, "Sheets", js.undefined)
     
-    inline def setSheetsVarargs(value: Sheet*): Self = StObject.set(x, "Sheets", js.Array(value :_*))
+    inline def setSheetsVarargs(value: Sheet*): Self = StObject.set(x, "Sheets", js.Array(value*))
     
     inline def setSourceEntityArn(value: Arn): Self = StObject.set(x, "SourceEntityArn", value.asInstanceOf[js.Any])
     

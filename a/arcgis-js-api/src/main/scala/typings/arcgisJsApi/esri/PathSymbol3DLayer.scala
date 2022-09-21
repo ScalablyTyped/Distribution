@@ -1,19 +1,19 @@
 package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.all
-import typings.arcgisJsApi.arcgisJsApiStrings.bevel
-import typings.arcgisJsApi.arcgisJsApiStrings.bottom
-import typings.arcgisJsApi.arcgisJsApiStrings.butt
-import typings.arcgisJsApi.arcgisJsApiStrings.center
+import typings.arcgisJsApi.arcgisJsApiStrings.bevel_
+import typings.arcgisJsApi.arcgisJsApiStrings.bottom_
+import typings.arcgisJsApi.arcgisJsApiStrings.butt_
+import typings.arcgisJsApi.arcgisJsApiStrings.center_
 import typings.arcgisJsApi.arcgisJsApiStrings.circle
 import typings.arcgisJsApi.arcgisJsApiStrings.heading
-import typings.arcgisJsApi.arcgisJsApiStrings.miter
-import typings.arcgisJsApi.arcgisJsApiStrings.none
+import typings.arcgisJsApi.arcgisJsApiStrings.miter_
+import typings.arcgisJsApi.arcgisJsApiStrings.none_
 import typings.arcgisJsApi.arcgisJsApiStrings.path
 import typings.arcgisJsApi.arcgisJsApiStrings.quad
-import typings.arcgisJsApi.arcgisJsApiStrings.round
-import typings.arcgisJsApi.arcgisJsApiStrings.square
-import typings.arcgisJsApi.arcgisJsApiStrings.top
+import typings.arcgisJsApi.arcgisJsApiStrings.round_
+import typings.arcgisJsApi.arcgisJsApiStrings.square_
+import typings.arcgisJsApi.arcgisJsApiStrings.top_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,19 +28,25 @@ trait PathSymbol3DLayer
   /**
     * Defines offset of the path cross section relative to the [Polyline](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polyline.html) geometry.
     *
+    * @default "center"
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#anchor)
     */
-  var anchor: center | bottom | top = js.native
+  var anchor: center_ | bottom_ | top_ = js.native
   
   /**
     * Controls the shape at the start and end point of the path.
     *
+    * @default "butt"
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#cap)
     */
-  var cap: none | butt | square | round = js.native
+  var cap: none_ | butt_ | square_ | round_ = js.native
   
   /**
     * Indicates whether the symbol layer geometry casts shadows in the scene.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#castShadows)
     */
@@ -56,9 +62,11 @@ trait PathSymbol3DLayer
   /**
     * Controls the shape of the connection between two segments of the path.
     *
+    * @default "miter"
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#join)
     */
-  var join: miter | bevel | round = js.native
+  var join: miter_ | bevel_ | round_ = js.native
   
   /**
     * The material used to shade the path.
@@ -70,6 +78,8 @@ trait PathSymbol3DLayer
   /**
     * Cross-section profile of the path geometry.
     *
+    * @default "circle"
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#profile)
     */
   var profile: circle | quad = js.native
@@ -77,16 +87,11 @@ trait PathSymbol3DLayer
   /**
     * Defines how the [profile](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#profile) is rotated as it is extruded along the [Polyline](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polyline.html) geometry.
     *
+    * @default "all"
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#profileRotation)
     */
   var profileRotation: heading | all = js.native
-  
-  /**
-    * Sets the width and height of the path in meters.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html#size)
-    */
-  var size: Double = js.native
   
   /**
     * The symbol type.

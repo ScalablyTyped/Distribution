@@ -32,7 +32,7 @@ object PouchDB {
     /** Create an index if it doesn't exist, or do nothing if it already exists. */
     def createIndex(
       index: CreateIndexOptions,
-      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Core.Callback<Find.CreateIndexResponse<Content>> */ js.Any
+      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Core.Callback<Find.CreateIndexResponse<Content>> */ Any
     ): Unit = js.native
     
     def deleteIndex(): js.Promise[DeleteIndexResponse[Content]] = js.native
@@ -40,7 +40,7 @@ object PouchDB {
     /** Delete an index and clean up any leftover data on the disk. */
     def deleteIndex(
       index: DeleteIndexOptions,
-      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Core.Callback<Find.DeleteIndexResponse<Content>> */ js.Any
+      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Core.Callback<Find.DeleteIndexResponse<Content>> */ Any
     ): Unit = js.native
     
     def find(): js.Promise[FindResponse[Content]] = js.native
@@ -48,13 +48,13 @@ object PouchDB {
     /** Query the API to find some documents. */
     def find(
       request: FindRequest[Content],
-      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Core.Callback<Find.FindResponse<Content>> */ js.Any
+      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Core.Callback<Find.FindResponse<Content>> */ Any
     ): Unit = js.native
     
     def getIndexes(): js.Promise[GetIndexesResponse[Content]] = js.native
     /** Get a list of all the indexes you've created. Also tells you about the special _all_docs index, i.e. the default index on the _id field. */
     def getIndexes(
-      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Core.Callback<Find.GetIndexesResponse<Content>> */ js.Any
+      callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Core.Callback<Find.GetIndexesResponse<Content>> */ Any
     ): Unit = js.native
   }
   
@@ -91,13 +91,13 @@ object PouchDB {
         
         inline def set$andUndefined: Self = StObject.set(x, "$and", js.undefined)
         
-        inline def set$andVarargs(value: Selector*): Self = StObject.set(x, "$and", js.Array(value :_*))
+        inline def set$andVarargs(value: Selector*): Self = StObject.set(x, "$and", js.Array(value*))
         
         inline def set$nor(value: js.Array[Selector]): Self = StObject.set(x, "$nor", value.asInstanceOf[js.Any])
         
         inline def set$norUndefined: Self = StObject.set(x, "$nor", js.undefined)
         
-        inline def set$norVarargs(value: Selector*): Self = StObject.set(x, "$nor", js.Array(value :_*))
+        inline def set$norVarargs(value: Selector*): Self = StObject.set(x, "$nor", js.Array(value*))
         
         inline def set$not(value: Selector): Self = StObject.set(x, "$not", value.asInstanceOf[js.Any])
         
@@ -107,7 +107,7 @@ object PouchDB {
         
         inline def set$orUndefined: Self = StObject.set(x, "$or", js.undefined)
         
-        inline def set$orVarargs(value: Selector*): Self = StObject.set(x, "$or", js.Array(value :_*))
+        inline def set$orVarargs(value: Selector*): Self = StObject.set(x, "$or", js.Array(value*))
       }
     }
     
@@ -115,14 +115,14 @@ object PouchDB {
       
       /** Matches an array value if it contains all the elements of the argument array. */
       @JSName("$all")
-      var $all: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var $all: js.UndefOr[js.Array[Any]] = js.undefined
       
       @JSName("$elemMatch")
       var $elemMatch: js.UndefOr[ConditionOperators] = js.undefined
       
       /** Match fields equal to this one. */
       @JSName("$eq")
-      var $eq: js.UndefOr[js.Any] = js.undefined
+      var $eq: js.UndefOr[Any] = js.undefined
       
       /** True if the field should exist, false otherwise. */
       @JSName("$exists")
@@ -130,23 +130,23 @@ object PouchDB {
       
       /** Match fields "greater than" this one. */
       @JSName("$gt")
-      var $gt: js.UndefOr[js.Any] = js.undefined
+      var $gt: js.UndefOr[Any] = js.undefined
       
       /** Match fields "greater than or equal to" this one. */
       @JSName("$gte")
-      var $gte: js.UndefOr[js.Any] = js.undefined
+      var $gte: js.UndefOr[Any] = js.undefined
       
       /** The document field must exist in the list provided. */
       @JSName("$in")
-      var $in: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var $in: js.UndefOr[js.Array[Any]] = js.undefined
       
       /** Match fields "less than" this one. */
       @JSName("$lt")
-      var $lt: js.UndefOr[js.Any] = js.undefined
+      var $lt: js.UndefOr[Any] = js.undefined
       
       /** Match fields "less than or equal to" this one. */
       @JSName("$lte")
-      var $lte: js.UndefOr[js.Any] = js.undefined
+      var $lte: js.UndefOr[Any] = js.undefined
       
       /**
         * Divisor and Remainder are both positive or negative integers.
@@ -159,11 +159,11 @@ object PouchDB {
       
       /** Match fields not equal to this one. */
       @JSName("$ne")
-      var $ne: js.UndefOr[js.Any] = js.undefined
+      var $ne: js.UndefOr[Any] = js.undefined
       
       /** The document field must not exist in the list provided. */
       @JSName("$nin")
-      var $nin: js.UndefOr[js.Array[js.Any]] = js.undefined
+      var $nin: js.UndefOr[js.Array[Any]] = js.undefined
       
       /** A regular expression pattern to match against the document field. Only matches when the field is a string value and matches the supplied regular expression. */
       @JSName("$regex")
@@ -186,17 +186,17 @@ object PouchDB {
       
       extension [Self <: ConditionOperators](x: Self) {
         
-        inline def set$all(value: js.Array[js.Any]): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+        inline def set$all(value: js.Array[Any]): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
         
         inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
         
-        inline def set$allVarargs(value: js.Any*): Self = StObject.set(x, "$all", js.Array(value :_*))
+        inline def set$allVarargs(value: Any*): Self = StObject.set(x, "$all", js.Array(value*))
         
         inline def set$elemMatch(value: ConditionOperators): Self = StObject.set(x, "$elemMatch", value.asInstanceOf[js.Any])
         
         inline def set$elemMatchUndefined: Self = StObject.set(x, "$elemMatch", js.undefined)
         
-        inline def set$eq(value: js.Any): Self = StObject.set(x, "$eq", value.asInstanceOf[js.Any])
+        inline def set$eq(value: Any): Self = StObject.set(x, "$eq", value.asInstanceOf[js.Any])
         
         inline def set$eqUndefined: Self = StObject.set(x, "$eq", js.undefined)
         
@@ -204,25 +204,25 @@ object PouchDB {
         
         inline def set$existsUndefined: Self = StObject.set(x, "$exists", js.undefined)
         
-        inline def set$gt(value: js.Any): Self = StObject.set(x, "$gt", value.asInstanceOf[js.Any])
+        inline def set$gt(value: Any): Self = StObject.set(x, "$gt", value.asInstanceOf[js.Any])
         
         inline def set$gtUndefined: Self = StObject.set(x, "$gt", js.undefined)
         
-        inline def set$gte(value: js.Any): Self = StObject.set(x, "$gte", value.asInstanceOf[js.Any])
+        inline def set$gte(value: Any): Self = StObject.set(x, "$gte", value.asInstanceOf[js.Any])
         
         inline def set$gteUndefined: Self = StObject.set(x, "$gte", js.undefined)
         
-        inline def set$in(value: js.Array[js.Any]): Self = StObject.set(x, "$in", value.asInstanceOf[js.Any])
+        inline def set$in(value: js.Array[Any]): Self = StObject.set(x, "$in", value.asInstanceOf[js.Any])
         
         inline def set$inUndefined: Self = StObject.set(x, "$in", js.undefined)
         
-        inline def set$inVarargs(value: js.Any*): Self = StObject.set(x, "$in", js.Array(value :_*))
+        inline def set$inVarargs(value: Any*): Self = StObject.set(x, "$in", js.Array(value*))
         
-        inline def set$lt(value: js.Any): Self = StObject.set(x, "$lt", value.asInstanceOf[js.Any])
+        inline def set$lt(value: Any): Self = StObject.set(x, "$lt", value.asInstanceOf[js.Any])
         
         inline def set$ltUndefined: Self = StObject.set(x, "$lt", js.undefined)
         
-        inline def set$lte(value: js.Any): Self = StObject.set(x, "$lte", value.asInstanceOf[js.Any])
+        inline def set$lte(value: Any): Self = StObject.set(x, "$lte", value.asInstanceOf[js.Any])
         
         inline def set$lteUndefined: Self = StObject.set(x, "$lte", js.undefined)
         
@@ -230,15 +230,15 @@ object PouchDB {
         
         inline def set$modUndefined: Self = StObject.set(x, "$mod", js.undefined)
         
-        inline def set$ne(value: js.Any): Self = StObject.set(x, "$ne", value.asInstanceOf[js.Any])
+        inline def set$ne(value: Any): Self = StObject.set(x, "$ne", value.asInstanceOf[js.Any])
         
         inline def set$neUndefined: Self = StObject.set(x, "$ne", js.undefined)
         
-        inline def set$nin(value: js.Array[js.Any]): Self = StObject.set(x, "$nin", value.asInstanceOf[js.Any])
+        inline def set$nin(value: js.Array[Any]): Self = StObject.set(x, "$nin", value.asInstanceOf[js.Any])
         
         inline def set$ninUndefined: Self = StObject.set(x, "$nin", js.undefined)
         
-        inline def set$ninVarargs(value: js.Any*): Self = StObject.set(x, "$nin", js.Array(value :_*))
+        inline def set$ninVarargs(value: Any*): Self = StObject.set(x, "$nin", js.Array(value*))
         
         inline def set$regex(value: String): Self = StObject.set(x, "$regex", value.asInstanceOf[js.Any])
         
@@ -318,7 +318,7 @@ object PouchDB {
       }
     }
     
-    type DeleteIndexResponse[Content /* <: js.Object */] = StringDictionary[js.Any]
+    type DeleteIndexResponse[Content /* <: js.Object */] = StringDictionary[Any]
     
     trait FindRequest[Content /* <: js.Object */] extends StObject {
       
@@ -353,7 +353,7 @@ object PouchDB {
         
         inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
         
-        inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+        inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value*))
         
         inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
         
@@ -369,7 +369,7 @@ object PouchDB {
         
         inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
         
-        inline def setSortVarargs(value: (String | (StringDictionary[asc | desc]))*): Self = StObject.set(x, "sort", js.Array(value :_*))
+        inline def setSortVarargs(value: (String | (StringDictionary[asc | desc]))*): Self = StObject.set(x, "sort", js.Array(value*))
         
         inline def setUse_index(value: String | (js.Tuple2[String, String])): Self = StObject.set(x, "use_index", value.asInstanceOf[js.Any])
         
@@ -380,7 +380,7 @@ object PouchDB {
     trait FindResponse[Content /* <: js.Object */] extends StObject {
       
       var docs: js.Array[
-            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Core.ExistingDocument<Content> */ js.Any
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Core.ExistingDocument<Content> */ Any
           ]
       
       var warning: js.UndefOr[String] = js.undefined
@@ -389,7 +389,7 @@ object PouchDB {
       
       inline def apply[Content /* <: js.Object */](
         docs: js.Array[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Core.ExistingDocument<Content> */ js.Any
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Core.ExistingDocument<Content> */ Any
             ]
       ): FindResponse[Content] = {
         val __obj = js.Dynamic.literal(docs = docs.asInstanceOf[js.Any])
@@ -400,13 +400,13 @@ object PouchDB {
         
         inline def setDocs(
           value: js.Array[
-                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Core.ExistingDocument<Content> */ js.Any
+                  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Core.ExistingDocument<Content> */ Any
                 ]
         ): Self = StObject.set(x, "docs", value.asInstanceOf[js.Any])
         
         inline def setDocsVarargs(
-          value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Core.ExistingDocument<Content> */ js.Any)*
-        ): Self = StObject.set(x, "docs", js.Array(value :_*))
+          value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Core.ExistingDocument<Content> */ Any)*
+        ): Self = StObject.set(x, "docs", js.Array(value*))
         
         inline def setWarning(value: String): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
         
@@ -429,7 +429,7 @@ object PouchDB {
         
         inline def setIndexes(value: js.Array[Index]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
         
-        inline def setIndexesVarargs(value: Index*): Self = StObject.set(x, "indexes", js.Array(value :_*))
+        inline def setIndexesVarargs(value: Index*): Self = StObject.set(x, "indexes", js.Array(value*))
       }
     }
     
@@ -472,7 +472,7 @@ object PouchDB {
     trait Selector
       extends StObject
          with CombinationOperators
-         with /* field */ StringDictionary[Selector | js.Array[Selector] | ConditionOperators | js.Any] {
+         with /* field */ StringDictionary[Selector | js.Array[Selector] | ConditionOperators | Any] {
       
       var _id: js.UndefOr[String | ConditionOperators] = js.undefined
     }

@@ -6,26 +6,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("git", "GitIndex")
 @js.native
-class GitIndex protected () extends StObject {
-  def this(repo: js.Any) = this()
+open class GitIndex protected () extends StObject {
+  def this(repo: Any) = this()
   
-  def add(filePath: js.Any, data: js.Any): Unit = js.native
+  def add(filePath: Any, data: Any): Unit = js.native
   
-  def commit(message: js.Any, callback: js.Function): Unit = js.native
-  def commit(message: js.Any, parents: js.Any, actor: js.Any, callback: js.Function): Unit = js.native
-  def commit(message: js.Any, parents: js.Any, actor: js.Any, lastTree: js.Any, callback: js.Function): Unit = js.native
-  def commit(message: js.Any, parents: js.Any, callback: js.Function): Unit = js.native
+  def commit(message: Any, callback: js.Function): Unit = js.native
+  def commit(message: Any, parents: Any, actor: Any, callback: js.Function): Unit = js.native
+  def commit(message: Any, parents: Any, actor: Any, lastTree: Any, callback: js.Function): Unit = js.native
+  def commit(message: Any, parents: Any, callback: js.Function): Unit = js.native
   
-  var current_tree: js.Any = js.native
+  var current_tree: Any = js.native
   
-  def read_tree(tree: js.Any, callback: js.Function): Unit = js.native
+  def read_tree(tree: Any, callback: js.Function): Unit = js.native
   
-  var repo: js.Any = js.native
+  var repo: Any = js.native
   
-  var tree: js.Any = js.native
+  var tree: Any = js.native
   
-  def write_blob(data: js.Any): js.Any = js.native
+  def write_blob(data: Any): Any = js.native
   
-  def write_tree(tree: js.Any, callback: js.Function): js.Any = js.native
-  def write_tree(tree: js.Any, nowTree: js.Any, callback: js.Function): js.Any = js.native
+  def write_tree(tree: Any, callback: js.Function): Any = js.native
+  def write_tree(tree: Any, nowTree: Any, callback: js.Function): Any = js.native
 }

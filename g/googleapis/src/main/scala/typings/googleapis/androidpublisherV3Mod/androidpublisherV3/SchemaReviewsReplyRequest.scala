@@ -7,10 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaReviewsReplyRequest extends StObject {
   
   /**
-    * The text to set as the reply. Replies of more than approximately 350
-    * characters will be rejected. HTML tags will be stripped.
+    * The text to set as the reply. Replies of more than approximately 350 characters will be rejected. HTML tags will be stripped.
     */
-  var replyText: js.UndefOr[String] = js.undefined
+  var replyText: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaReviewsReplyRequest {
   
@@ -22,6 +21,8 @@ object SchemaReviewsReplyRequest {
   extension [Self <: SchemaReviewsReplyRequest](x: Self) {
     
     inline def setReplyText(value: String): Self = StObject.set(x, "replyText", value.asInstanceOf[js.Any])
+    
+    inline def setReplyTextNull: Self = StObject.set(x, "replyText", null)
     
     inline def setReplyTextUndefined: Self = StObject.set(x, "replyText", js.undefined)
   }

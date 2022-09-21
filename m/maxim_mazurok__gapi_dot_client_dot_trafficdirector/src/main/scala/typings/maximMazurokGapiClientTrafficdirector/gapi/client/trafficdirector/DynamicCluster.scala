@@ -11,7 +11,7 @@ trait DynamicCluster extends StObject {
   var cluster: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.DynamicCluster & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.DynamicCluster & TopLevel[Any]
   ] = js.undefined
   
   /** The timestamp when the Cluster was last updated. */
@@ -35,7 +35,7 @@ object DynamicCluster {
     inline def setCluster(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.DynamicCluster & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.DynamicCluster & TopLevel[Any]
     ): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
     inline def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)

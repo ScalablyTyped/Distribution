@@ -32,9 +32,9 @@ object schedulerMod {
   
   trait Scheduler extends StObject {
     
-    def clearInterval(id: Double): js.Any
+    def clearInterval(id: Double): Any
     
-    def clearTimeout(id: Double): js.Any
+    def clearTimeout(id: Double): Any
     
     def now(): Double
     
@@ -45,8 +45,8 @@ object schedulerMod {
   object Scheduler {
     
     inline def apply(
-      clearInterval: Double => js.Any,
-      clearTimeout: Double => js.Any,
+      clearInterval: Double => Any,
+      clearTimeout: Double => Any,
       now: () => Double,
       setInterval: (js.Function, Double) => Double,
       setTimeout: (js.Function, Double) => Double
@@ -57,9 +57,9 @@ object schedulerMod {
     
     extension [Self <: Scheduler](x: Self) {
       
-      inline def setClearInterval(value: Double => js.Any): Self = StObject.set(x, "clearInterval", js.Any.fromFunction1(value))
+      inline def setClearInterval(value: Double => Any): Self = StObject.set(x, "clearInterval", js.Any.fromFunction1(value))
       
-      inline def setClearTimeout(value: Double => js.Any): Self = StObject.set(x, "clearTimeout", js.Any.fromFunction1(value))
+      inline def setClearTimeout(value: Double => Any): Self = StObject.set(x, "clearTimeout", js.Any.fromFunction1(value))
       
       inline def setNow(value: () => Double): Self = StObject.set(x, "now", js.Any.fromFunction0(value))
       

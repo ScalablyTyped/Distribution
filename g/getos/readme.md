@@ -10,10 +10,10 @@ Get the OS/Distribution name of the environment you are working on
 | ------------------ | :-------------: |
 | Full name          | getos |
 | Keywords           | OS, Distribution, Platform, Version |
-| # releases         | 8 |
-| # dependents       | 69 |
-| # downloads        | 55843777 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.5177282E7 |
+| # stars            | 74.0 |
 
 ## Links
 - [Homepage](https://github.com/retrohacker/getos)

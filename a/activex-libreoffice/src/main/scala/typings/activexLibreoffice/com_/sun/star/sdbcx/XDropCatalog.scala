@@ -29,7 +29,7 @@ object XDropCatalog {
   inline def apply(
     acquire: () => Unit,
     dropCatalog: (String, SeqEquiv[PropertyValue]) => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XDropCatalog = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), dropCatalog = js.Any.fromFunction2(dropCatalog), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

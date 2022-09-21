@@ -5,7 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ComboBoxOptions extends StObject {
+trait ComboBoxOptions
+  extends StObject
+     with AllEditorOptions {
   
   var animation: js.UndefOr[ComboBoxAnimation] = js.undefined
   
@@ -27,7 +29,7 @@ trait ComboBoxOptions extends StObject {
   
   var dataBound: js.UndefOr[js.Function1[/* e */ ComboBoxDataBoundEvent, Unit]] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any | DataSource] = js.undefined
+  var dataSource: js.UndefOr[Any | DataSource] = js.undefined
   
   var dataTextField: js.UndefOr[String] = js.undefined
   
@@ -38,6 +40,8 @@ trait ComboBoxOptions extends StObject {
   var enable: js.UndefOr[Boolean] = js.undefined
   
   var enforceMinLength: js.UndefOr[Boolean] = js.undefined
+  
+  var fillMode: js.UndefOr[String] = js.undefined
   
   var filter: js.UndefOr[String] = js.undefined
   
@@ -71,7 +75,11 @@ trait ComboBoxOptions extends StObject {
   
   var popup: js.UndefOr[ComboBoxPopup] = js.undefined
   
+  var rounded: js.UndefOr[String] = js.undefined
+  
   var select: js.UndefOr[js.Function1[/* e */ ComboBoxSelectEvent, Unit]] = js.undefined
+  
+  var size: js.UndefOr[String] = js.undefined
   
   var suggest: js.UndefOr[Boolean] = js.undefined
   
@@ -136,7 +144,7 @@ object ComboBoxOptions {
     
     inline def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
-    inline def setDataSource(value: js.Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
@@ -159,6 +167,10 @@ object ComboBoxOptions {
     inline def setEnforceMinLength(value: Boolean): Self = StObject.set(x, "enforceMinLength", value.asInstanceOf[js.Any])
     
     inline def setEnforceMinLengthUndefined: Self = StObject.set(x, "enforceMinLength", js.undefined)
+    
+    inline def setFillMode(value: String): Self = StObject.set(x, "fillMode", value.asInstanceOf[js.Any])
+    
+    inline def setFillModeUndefined: Self = StObject.set(x, "fillMode", js.undefined)
     
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
@@ -224,9 +236,17 @@ object ComboBoxOptions {
     
     inline def setPopupUndefined: Self = StObject.set(x, "popup", js.undefined)
     
+    inline def setRounded(value: String): Self = StObject.set(x, "rounded", value.asInstanceOf[js.Any])
+    
+    inline def setRoundedUndefined: Self = StObject.set(x, "rounded", js.undefined)
+    
     inline def setSelect(value: /* e */ ComboBoxSelectEvent => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
     
     inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+    
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     inline def setSuggest(value: Boolean): Self = StObject.set(x, "suggest", value.asInstanceOf[js.Any])
     

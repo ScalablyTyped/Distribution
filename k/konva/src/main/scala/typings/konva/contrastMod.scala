@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object contrastMod {
   
-  @JSImport("konva/types/filters/Contrast", "Contrast")
+  @JSImport("konva/lib/filters/Contrast", "Contrast")
   @js.native
   val Contrast: Filter = js.native
 }

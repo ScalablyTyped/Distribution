@@ -61,7 +61,7 @@ object ServerEventCriteria {
     
     inline def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
     
-    inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
+    inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value*))
     
     inline def setClone_(value: Boolean): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
     
@@ -75,7 +75,7 @@ object ServerEventCriteria {
     
     inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    inline def setFilterVarargs(value: String*): Self = StObject.set(x, "filter", js.Array(value :_*))
+    inline def setFilterVarargs(value: String*): Self = StObject.set(x, "filter", js.Array(value*))
     
     inline def setName(value: T): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

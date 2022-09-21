@@ -16,7 +16,7 @@ object mod {
   /**
     * Constructor for the `ModelDB`.
     */
-  class ModelDB ()
+  open class ModelDB ()
     extends typings.jupyterlabObservables.modeldbMod.ModelDB {
     def this(options: ICreateOptions) = this()
   }
@@ -26,7 +26,7 @@ object mod {
   /**
     * Construct a new observable JSON object.
     */
-  class ObservableJSON ()
+  open class ObservableJSON ()
     extends typings.jupyterlabObservables.observablejsonMod.ObservableJSON {
     def this(options: IOptions) = this()
   }
@@ -37,7 +37,7 @@ object mod {
       */
     @JSImport("@jupyterlab/observables", "ObservableJSON.ChangeMessage")
     @js.native
-    class ChangeMessage protected ()
+    open class ChangeMessage protected ()
       extends typings.jupyterlabObservables.observablejsonMod.ObservableJSON.ChangeMessage {
       /**
         * Create a new metadata changed message.
@@ -51,7 +51,7 @@ object mod {
   /**
     * Construct a new observable map.
     */
-  class ObservableList[T] ()
+  open class ObservableList[T] ()
     extends typings.jupyterlabObservables.observablelistMod.ObservableList[T] {
     def this(options: typings.jupyterlabObservables.observablelistMod.ObservableList.IOptions[T]) = this()
   }
@@ -61,7 +61,7 @@ object mod {
   /**
     * Construct a new observable map.
     */
-  class ObservableMap[T] ()
+  open class ObservableMap[T] ()
     extends typings.jupyterlabObservables.observablemapMod.ObservableMap[T] {
     def this(options: typings.jupyterlabObservables.observablemapMod.ObservableMap.IOptions[T]) = this()
   }
@@ -71,14 +71,14 @@ object mod {
   /**
     * Construct a new observable string.
     */
-  class ObservableString ()
+  open class ObservableString ()
     extends typings.jupyterlabObservables.observablestringMod.ObservableString {
     def this(initialText: String) = this()
   }
   
   @JSImport("@jupyterlab/observables", "ObservableUndoableList")
   @js.native
-  class ObservableUndoableList[T] protected ()
+  open class ObservableUndoableList[T] protected ()
     extends typings.jupyterlabObservables.undoablelistMod.ObservableUndoableList[T] {
     /**
       * Construct a new undoable observable list.
@@ -92,7 +92,7 @@ object mod {
       */
     @JSImport("@jupyterlab/observables", "ObservableUndoableList.IdentitySerializer")
     @js.native
-    class IdentitySerializer[T /* <: JSONValue */] ()
+    open class IdentitySerializer[T /* <: JSONValue */] ()
       extends typings.jupyterlabObservables.undoablelistMod.ObservableUndoableList.IdentitySerializer[T]
   }
   
@@ -103,7 +103,7 @@ object mod {
     *
     * @param initialValue: the starting value for the `ObservableValue`.
     */
-  class ObservableValue ()
+  open class ObservableValue ()
     extends typings.jupyterlabObservables.modeldbMod.ObservableValue {
     def this(initialValue: JSONValue) = this()
   }
@@ -114,7 +114,7 @@ object mod {
       */
     @JSImport("@jupyterlab/observables", "ObservableValue.IChangedArgs")
     @js.native
-    class IChangedArgs ()
+    open class IChangedArgs ()
       extends typings.jupyterlabObservables.modeldbMod.ObservableValue.IChangedArgs
   }
 }

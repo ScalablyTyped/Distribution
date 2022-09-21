@@ -12,7 +12,7 @@ trait DescribeComputeEnvironmentsResponse extends StObject {
   var computeEnvironments: js.UndefOr[ComputeEnvironmentDetailList] = js.undefined
   
   /**
-    * The nextToken value to include in a future DescribeComputeEnvironments request. When the results of a DescribeJobDefinitions request exceed maxResults, this value can be used to retrieve the next page of results. This value is null when there are no more results to return.
+    * The nextToken value to include in a future DescribeComputeEnvironments request. When the results of a DescribeComputeEnvironments request exceed maxResults, this value can be used to retrieve the next page of results. This value is null when there are no more results to return.
     */
   var nextToken: js.UndefOr[String] = js.undefined
 }
@@ -29,7 +29,7 @@ object DescribeComputeEnvironmentsResponse {
     
     inline def setComputeEnvironmentsUndefined: Self = StObject.set(x, "computeEnvironments", js.undefined)
     
-    inline def setComputeEnvironmentsVarargs(value: ComputeEnvironmentDetail*): Self = StObject.set(x, "computeEnvironments", js.Array(value :_*))
+    inline def setComputeEnvironmentsVarargs(value: ComputeEnvironmentDetail*): Self = StObject.set(x, "computeEnvironments", js.Array(value*))
     
     inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

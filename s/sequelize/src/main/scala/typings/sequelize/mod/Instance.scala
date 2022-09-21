@@ -86,12 +86,12 @@ trait Instance[TAttributes] extends StObject {
   /**
     * Check whether all values of this and `other` Instance are the same
     */
-  def equals(other: Instance[js.Any]): Boolean = js.native
+  def equals(other: Instance[Any]): Boolean = js.native
   
   /**
     * Check if this is eqaul to one of `others` by calling equals
     */
-  def equalsOneOf(others: js.Array[Instance[js.Any]]): Boolean = js.native
+  def equalsOneOf(others: js.Array[Instance[Any]]): Boolean = js.native
   
   def get(): TAttributes = js.native
   /**
@@ -102,14 +102,14 @@ trait Instance[TAttributes] extends StObject {
     *
     * @param options.plain If set to true, included instances will be returned as plain objects
     */
-  def get(key: /* keyof TAttributes */ String): js.Any = js.native
-  def get(key: /* keyof TAttributes */ String, options: Clone): js.Any = js.native
+  def get(key: /* keyof TAttributes */ String): Any = js.native
+  def get(key: /* keyof TAttributes */ String, options: Clone): Any = js.native
   def get(options: Clone): TAttributes = js.native
   
   /**
     * Get the value of the underlying data value
     */
-  def getDataValue(key: /* keyof TAttributes */ String): js.Any = js.native
+  def getDataValue(key: /* keyof TAttributes */ String): Any = js.native
   
   def increment(fields: /* keyof TAttributes */ String): typings.bluebird.mod.^[this.type] = js.native
   def increment(fields: /* keyof TAttributes */ String, options: InstanceIncrementDecrementOptions): typings.bluebird.mod.^[this.type] = js.native
@@ -149,7 +149,7 @@ trait Instance[TAttributes] extends StObject {
     *
     * If previous is called without an argument, it will return an object containing the previous keys and values that have changed.
     */
-  def previous(key: /* keyof TAttributes */ String): js.Any = js.native
+  def previous(key: /* keyof TAttributes */ String): Any = js.native
   
   /**
     * Refresh the current instance in-place, i.e. update the object with current data from the DB and return

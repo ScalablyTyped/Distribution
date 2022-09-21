@@ -1,6 +1,7 @@
 package typings.scriptableIos.global
 
-import org.scalablytyped.runtime.StringDictionary
+import typings.scriptableIos.Location.CurrentLocation
+import typings.scriptableIos.Location.GeocodeSummary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +23,7 @@ object Location {
     * vertical accuracy measured in meters.
     * @see https://docs.scriptable.app/location/#current
     */
-  inline def current(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("current")().asInstanceOf[js.Promise[js.Any]]
+  inline def current(): js.Promise[CurrentLocation] = ^.asInstanceOf[js.Dynamic].applyDynamic("current")().asInstanceOf[js.Promise[CurrentLocation]]
   
   /**
     * _Performs reverse-geocoding for a location._
@@ -33,8 +34,8 @@ object Location {
     * @param locale - Optional. Preferred locale to fetch information in. Uses the default locale of the device if null.
     * @see https://docs.scriptable.app/location/#reversegeocode
     */
-  inline def reverseGeocode(latitude: Double, longitude: Double): js.Array[StringDictionary[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("reverseGeocode")(latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any])).asInstanceOf[js.Array[StringDictionary[js.Any]]]
-  inline def reverseGeocode(latitude: Double, longitude: Double, locale: String): js.Array[StringDictionary[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("reverseGeocode")(latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[js.Array[StringDictionary[js.Any]]]
+  inline def reverseGeocode(latitude: Double, longitude: Double): js.Promise[js.Array[GeocodeSummary]] = (^.asInstanceOf[js.Dynamic].applyDynamic("reverseGeocode")(latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[GeocodeSummary]]]
+  inline def reverseGeocode(latitude: Double, longitude: Double, locale: String): js.Promise[js.Array[GeocodeSummary]] = (^.asInstanceOf[js.Dynamic].applyDynamic("reverseGeocode")(latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[GeocodeSummary]]]
   
   /**
     * _Uses best accuracy. This is default._

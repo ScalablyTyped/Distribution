@@ -11,7 +11,7 @@ trait CreateSnapshotRequest extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientPubsub.maximMazurokGapiClientPubsubStrings.CreateSnapshotRequest & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientPubsub.maximMazurokGapiClientPubsubStrings.CreateSnapshotRequest & TopLevel[Any]
   ] = js.undefined
   
   /**
@@ -33,7 +33,7 @@ object CreateSnapshotRequest {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientPubsub.maximMazurokGapiClientPubsubStrings.CreateSnapshotRequest & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientPubsub.maximMazurokGapiClientPubsubStrings.CreateSnapshotRequest & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)

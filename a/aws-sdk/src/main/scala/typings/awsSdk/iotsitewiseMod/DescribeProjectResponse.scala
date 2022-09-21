@@ -19,7 +19,7 @@ trait DescribeProjectResponse extends StObject {
   /**
     * The date the project was created, in Unix epoch time.
     */
-  var projectCreationDate: Timestamp
+  var projectCreationDate: js.Date
   
   /**
     * The project's description.
@@ -34,7 +34,7 @@ trait DescribeProjectResponse extends StObject {
   /**
     * The date the project was last updated, in Unix epoch time.
     */
-  var projectLastUpdateDate: Timestamp
+  var projectLastUpdateDate: js.Date
   
   /**
     * The name of the project.
@@ -46,9 +46,9 @@ object DescribeProjectResponse {
   inline def apply(
     portalId: ID,
     projectArn: ARN,
-    projectCreationDate: Timestamp,
+    projectCreationDate: js.Date,
     projectId: ID,
-    projectLastUpdateDate: Timestamp,
+    projectLastUpdateDate: js.Date,
     projectName: Name
   ): DescribeProjectResponse = {
     val __obj = js.Dynamic.literal(portalId = portalId.asInstanceOf[js.Any], projectArn = projectArn.asInstanceOf[js.Any], projectCreationDate = projectCreationDate.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], projectLastUpdateDate = projectLastUpdateDate.asInstanceOf[js.Any], projectName = projectName.asInstanceOf[js.Any])
@@ -61,7 +61,7 @@ object DescribeProjectResponse {
     
     inline def setProjectArn(value: ARN): Self = StObject.set(x, "projectArn", value.asInstanceOf[js.Any])
     
-    inline def setProjectCreationDate(value: Timestamp): Self = StObject.set(x, "projectCreationDate", value.asInstanceOf[js.Any])
+    inline def setProjectCreationDate(value: js.Date): Self = StObject.set(x, "projectCreationDate", value.asInstanceOf[js.Any])
     
     inline def setProjectDescription(value: Description): Self = StObject.set(x, "projectDescription", value.asInstanceOf[js.Any])
     
@@ -69,7 +69,7 @@ object DescribeProjectResponse {
     
     inline def setProjectId(value: ID): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    inline def setProjectLastUpdateDate(value: Timestamp): Self = StObject.set(x, "projectLastUpdateDate", value.asInstanceOf[js.Any])
+    inline def setProjectLastUpdateDate(value: js.Date): Self = StObject.set(x, "projectLastUpdateDate", value.asInstanceOf[js.Any])
     
     inline def setProjectName(value: Name): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
   }

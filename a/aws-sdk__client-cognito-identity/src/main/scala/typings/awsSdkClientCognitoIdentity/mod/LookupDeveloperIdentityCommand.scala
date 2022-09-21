@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-cognito-identity", "LookupDeveloperIdentityCommand")
 @js.native
-class LookupDeveloperIdentityCommand protected ()
-  extends typings.awsSdkClientCognitoIdentity.lookupDeveloperIdentityCommandMod.LookupDeveloperIdentityCommand {
+open class LookupDeveloperIdentityCommand protected ()
+  extends typings.awsSdkClientCognitoIdentity.commandsMod.LookupDeveloperIdentityCommand {
   def this(input: LookupDeveloperIdentityCommandInput) = this()
 }

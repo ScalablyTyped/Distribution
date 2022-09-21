@@ -11,31 +11,31 @@ object directAudioActionsMod {
   
   @JSImport("babylonjs/Actions/directAudioActions", "PlaySoundAction")
   @js.native
-  class PlaySoundAction protected () extends Action {
+  open class PlaySoundAction protected () extends Action {
     /**
       * Instantiate the action
       * @param triggerOptions defines the trigger options
       * @param sound defines the sound to play
       * @param condition defines the trigger related conditions
       */
-    def this(triggerOptions: js.Any, sound: Sound) = this()
-    def this(triggerOptions: js.Any, sound: Sound, condition: Condition) = this()
+    def this(triggerOptions: Any, sound: Sound) = this()
+    def this(triggerOptions: Any, sound: Sound, condition: Condition) = this()
     
-    /* private */ var _sound: js.Any = js.native
+    /* private */ var _sound: Any = js.native
   }
   
   @JSImport("babylonjs/Actions/directAudioActions", "StopSoundAction")
   @js.native
-  class StopSoundAction protected () extends Action {
+  open class StopSoundAction protected () extends Action {
     /**
       * Instantiate the action
       * @param triggerOptions defines the trigger options
       * @param sound defines the sound to stop
       * @param condition defines the trigger related conditions
       */
-    def this(triggerOptions: js.Any, sound: Sound) = this()
-    def this(triggerOptions: js.Any, sound: Sound, condition: Condition) = this()
+    def this(triggerOptions: Any, sound: Sound) = this()
+    def this(triggerOptions: Any, sound: Sound, condition: Condition) = this()
     
-    /* private */ var _sound: js.Any = js.native
+    /* private */ var _sound: Any = js.native
   }
 }

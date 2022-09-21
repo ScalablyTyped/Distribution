@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("orientjs", "BasePool")
 @js.native
-class BasePool[T] protected () extends EventEmitter {
+open class BasePool[T] protected () extends EventEmitter {
   def this(config: BasePoolConfig) = this()
-  def this(config: BasePoolConfig, params: js.Any) = this()
+  def this(config: BasePoolConfig, params: Any) = this()
   
   def acquire(): js.Promise[ODatabaseSession] = js.native
   
@@ -23,7 +23,7 @@ class BasePool[T] protected () extends EventEmitter {
   
   def pending(): Boolean = js.native
   
-  def release(resource: js.Any): Boolean = js.native
+  def release(resource: Any): Boolean = js.native
   
   def size(): Double = js.native
 }

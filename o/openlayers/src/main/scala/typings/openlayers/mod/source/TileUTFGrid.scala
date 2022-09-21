@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("openlayers", "source.TileUTFGrid")
 @js.native
-class TileUTFGrid protected () extends Tile {
+open class TileUTFGrid protected () extends Tile {
   /**
     * @classdesc
     * Layer source for UTFGrid interaction data loaded from TileJSON format.
@@ -38,24 +38,24 @@ class TileUTFGrid protected () extends Tile {
     * @template T
     * @api
     */
-  def forDataAtCoordinateAndResolution(coordinate: Coordinate_, resolution: Double, callback: js.Function1[/* d */ js.Any, js.Any]): Unit = js.native
+  def forDataAtCoordinateAndResolution(coordinate: Coordinate_, resolution: Double, callback: js.Function1[/* d */ Any, Any]): Unit = js.native
   def forDataAtCoordinateAndResolution(
     coordinate: Coordinate_,
     resolution: Double,
-    callback: js.Function1[/* d */ js.Any, js.Any],
-    opt_this: js.Any
+    callback: js.Function1[/* d */ Any, Any],
+    opt_this: Any
   ): Unit = js.native
   def forDataAtCoordinateAndResolution(
     coordinate: Coordinate_,
     resolution: Double,
-    callback: js.Function1[/* d */ js.Any, js.Any],
-    opt_this: js.Any,
+    callback: js.Function1[/* d */ Any, Any],
+    opt_this: Any,
     opt_request: Boolean
   ): Unit = js.native
   def forDataAtCoordinateAndResolution(
     coordinate: Coordinate_,
     resolution: Double,
-    callback: js.Function1[/* d */ js.Any, js.Any],
+    callback: js.Function1[/* d */ Any, Any],
     opt_this: Unit,
     opt_request: Boolean
   ): Unit = js.native

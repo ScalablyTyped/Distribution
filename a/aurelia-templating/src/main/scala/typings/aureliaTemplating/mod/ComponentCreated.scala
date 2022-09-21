@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ComponentCreated extends StObject {
   
   /**
-    * Implement this hook if you want to perform custom logic after the constructor has been called.
-    * At this point in time, the view has also been created and both the view-model and the view
-    * are connected to their controller. The hook will recieve the instance of the "owningView".
-    * This is the view that the component is declared inside of. If the component itself has a view,
-    * this will be passed second.
-    */
+  	* Implement this hook if you want to perform custom logic after the constructor has been called.
+  	* At this point in time, the view has also been created and both the view-model and the view
+  	* are connected to their controller. The hook will recieve the instance of the "owningView".
+  	* This is the view that the component is declared inside of. If the component itself has a view,
+  	* this will be passed second.
+  	*/
   def created(owningView: View_, myView: View_): Unit
 }
 object ComponentCreated {

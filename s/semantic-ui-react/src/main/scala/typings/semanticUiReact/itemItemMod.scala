@@ -6,11 +6,11 @@ import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.ElementType
+import typings.react.mod.FC
 import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.ReactNodeArray
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import typings.semanticUiReact.genericMod.SemanticShorthandItem
 import typings.semanticUiReact.itemContentMod.ItemContentProps
@@ -35,10 +35,9 @@ object itemItemMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("semantic-ui-react/dist/commonjs/views/Item/Item", "default.Content")
     @js.native
-    class Content protected ()
-      extends Component[ItemContentProps, ComponentState, js.Any] {
+    open class Content protected () extends Component[ItemContentProps, ComponentState, Any] {
       def this(props: ItemContentProps) = this()
-      def this(props: ItemContentProps, context: js.Any) = this()
+      def this(props: ItemContentProps, context: Any) = this()
     }
     
     type _To = ItemComponent
@@ -54,23 +53,23 @@ object itemItemMod {
     
     var Content: ComponentClass[ItemContentProps, ComponentState] = js.native
     
-    var Description: StatelessComponent[ItemDescriptionProps] = js.native
+    var Description: FC[ItemDescriptionProps] = js.native
     
-    var Extra: StatelessComponent[ItemExtraProps] = js.native
+    var Extra: FC[ItemExtraProps] = js.native
     
-    var Group: StatelessComponent[ItemGroupProps] = js.native
+    var Group: FC[ItemGroupProps] = js.native
     
-    var Header: StatelessComponent[ItemHeaderProps] = js.native
+    var Header: FC[ItemHeaderProps] = js.native
     
-    var Image: StatelessComponent[ItemImageProps] = js.native
+    var Image: FC[ItemImageProps] = js.native
     
-    var Meta: StatelessComponent[ItemMetaProps] = js.native
+    var Meta: FC[ItemMetaProps] = js.native
   }
   
   trait ItemProps
     extends StObject
        with StrictItemProps
-       with /* key */ StringDictionary[js.Any]
+       with /* key */ StringDictionary[Any]
   object ItemProps {
     
     inline def apply(): ItemProps = {
@@ -82,7 +81,7 @@ object itemItemMod {
   trait StrictItemProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** Primary content. */
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -117,7 +116,7 @@ object itemItemMod {
     
     extension [Self <: StrictItemProps](x: Self) {
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       

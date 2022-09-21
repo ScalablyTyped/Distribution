@@ -43,5 +43,5 @@ object createAuthChallengeMod {
     }
   }
   
-  type CreateAuthChallengeTriggerHandler = Handler[CreateAuthChallengeTriggerEvent, js.Any]
+  type CreateAuthChallengeTriggerHandler = Handler[CreateAuthChallengeTriggerEvent, Any]
 }

@@ -42,6 +42,12 @@ trait QueryInfo extends StObject {
     */
   var discarded: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Optional. The ID of the group that the tabs are in, or chrome.tabGroups.TAB_GROUP_ID_NONE for ungrouped tabs.
+    * @since Chrome 88
+    */
+  var groupId: js.UndefOr[Double] = js.undefined
+  
   /** Optional. Whether the tabs are highlighted. */
   var highlighted: js.UndefOr[Boolean] = js.undefined
   
@@ -116,6 +122,10 @@ object QueryInfo {
     
     inline def setDiscardedUndefined: Self = StObject.set(x, "discarded", js.undefined)
     
+    inline def setGroupId(value: Double): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
+    
+    inline def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
+    
     inline def setHighlighted(value: Boolean): Self = StObject.set(x, "highlighted", value.asInstanceOf[js.Any])
     
     inline def setHighlightedUndefined: Self = StObject.set(x, "highlighted", js.undefined)
@@ -148,7 +158,7 @@ object QueryInfo {
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    inline def setUrlVarargs(value: String*): Self = StObject.set(x, "url", js.Array(value :_*))
+    inline def setUrlVarargs(value: String*): Self = StObject.set(x, "url", js.Array(value*))
     
     inline def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
     

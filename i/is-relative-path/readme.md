@@ -10,10 +10,10 @@ Whether or not a given path is relative
 | ------------------ | :-------------: |
 | Full name          | is-relative-path |
 | Keywords           | relative, path |
-| # releases         | 0 |
-| # dependents       | 14 |
-| # downloads        | 11935621 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1432860.0 |
+| # stars            | 8.0 |
 
 ## Links
 - [Homepage](https://github.com/mrjoelkemp/is-relative-path)

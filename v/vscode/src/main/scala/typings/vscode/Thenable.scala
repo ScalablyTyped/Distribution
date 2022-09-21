@@ -23,10 +23,7 @@ trait Thenable[T] extends StObject {
   def `then`[TResult](onfulfilled: js.Function1[/* value */ T, TResult | Thenable[TResult]]): Thenable[TResult] = js.native
   def `then`[TResult](
     onfulfilled: js.Function1[/* value */ T, TResult | Thenable[TResult]],
-    onrejected: js.Function1[/* reason */ js.Any, TResult | Thenable[TResult] | Unit]
+    onrejected: js.Function1[/* reason */ Any, TResult | Thenable[TResult] | Unit]
   ): Thenable[TResult] = js.native
-  def `then`[TResult](
-    onfulfilled: Unit,
-    onrejected: js.Function1[/* reason */ js.Any, TResult | Thenable[TResult] | Unit]
-  ): Thenable[TResult] = js.native
+  def `then`[TResult](onfulfilled: Unit, onrejected: js.Function1[/* reason */ Any, TResult | Thenable[TResult] | Unit]): Thenable[TResult] = js.native
 }

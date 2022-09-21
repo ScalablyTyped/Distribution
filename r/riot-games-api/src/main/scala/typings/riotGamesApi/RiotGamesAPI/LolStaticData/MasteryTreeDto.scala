@@ -27,14 +27,14 @@ object MasteryTreeDto {
     
     inline def setDefense(value: js.Array[MasteryTreeListDto]): Self = StObject.set(x, "Defense", value.asInstanceOf[js.Any])
     
-    inline def setDefenseVarargs(value: MasteryTreeListDto*): Self = StObject.set(x, "Defense", js.Array(value :_*))
+    inline def setDefenseVarargs(value: MasteryTreeListDto*): Self = StObject.set(x, "Defense", js.Array(value*))
     
     inline def setOffense(value: js.Array[MasteryTreeListDto]): Self = StObject.set(x, "Offense", value.asInstanceOf[js.Any])
     
-    inline def setOffenseVarargs(value: MasteryTreeListDto*): Self = StObject.set(x, "Offense", js.Array(value :_*))
+    inline def setOffenseVarargs(value: MasteryTreeListDto*): Self = StObject.set(x, "Offense", js.Array(value*))
     
     inline def setUtility(value: js.Array[MasteryTreeListDto]): Self = StObject.set(x, "Utility", value.asInstanceOf[js.Any])
     
-    inline def setUtilityVarargs(value: MasteryTreeListDto*): Self = StObject.set(x, "Utility", js.Array(value :_*))
+    inline def setUtilityVarargs(value: MasteryTreeListDto*): Self = StObject.set(x, "Utility", js.Array(value*))
   }
 }

@@ -26,14 +26,17 @@ trait ConnectionProfile extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDatamigration.maximMazurokGapiClientDatamigrationStrings.ConnectionProfile & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDatamigration.maximMazurokGapiClientDatamigrationStrings.ConnectionProfile & TopLevel[Any]
   ] = js.undefined
   
   /** A MySQL database connection profile. */
   var mysql: js.UndefOr[MySqlConnectionProfile] = js.undefined
   
-  /** The name of this connection profile resource in the form of projects/{project}/locations/{location}/instances/{instance}. */
+  /** The name of this connection profile resource in the form of projects/{project}/locations/{location}/connectionProfiles/{connectionProfile}. */
   var name: js.UndefOr[String] = js.undefined
+  
+  /** A PostgreSQL database connection profile. */
+  var postgresql: js.UndefOr[PostgreSqlConnectionProfile] = js.undefined
   
   /** The database provider. */
   var provider: js.UndefOr[String] = js.undefined
@@ -72,7 +75,7 @@ object ConnectionProfile {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDatamigration.maximMazurokGapiClientDatamigrationStrings.ConnectionProfile & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDatamigration.maximMazurokGapiClientDatamigrationStrings.ConnectionProfile & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -84,6 +87,10 @@ object ConnectionProfile {
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setPostgresql(value: PostgreSqlConnectionProfile): Self = StObject.set(x, "postgresql", value.asInstanceOf[js.Any])
+    
+    inline def setPostgresqlUndefined: Self = StObject.set(x, "postgresql", js.undefined)
     
     inline def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,7 @@ object UnoControlButton {
     getView: () => XView,
     isDesignMode: () => Boolean,
     isTransparent: () => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeActionListener: XActionListener => Unit,
     removeEventListener: XEventListener => Unit,

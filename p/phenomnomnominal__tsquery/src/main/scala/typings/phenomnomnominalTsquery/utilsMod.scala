@@ -11,7 +11,7 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getPath(obj: js.Any, path: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getPath(obj: Any, path: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def inPath(node: Node, ancestor: Node, path: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("inPath")(node.asInstanceOf[js.Any], ancestor.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

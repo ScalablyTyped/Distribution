@@ -12,14 +12,14 @@ trait EvaluationResult extends StObject {
   var Annotation: js.UndefOr[StringWithCharLimit256] = js.undefined
   
   /**
-    * Indicates whether the AWS resource complies with the AWS Config rule that evaluated it. For the EvaluationResult data type, AWS Config supports only the COMPLIANT, NON_COMPLIANT, and NOT_APPLICABLE values. AWS Config does not support the INSUFFICIENT_DATA value for the EvaluationResult data type.
+    * Indicates whether the Amazon Web Services resource complies with the Config rule that evaluated it. For the EvaluationResult data type, Config supports only the COMPLIANT, NON_COMPLIANT, and NOT_APPLICABLE values. Config does not support the INSUFFICIENT_DATA value for the EvaluationResult data type.
     */
   var ComplianceType: js.UndefOr[typings.awsSdk.configserviceMod.ComplianceType] = js.undefined
   
   /**
-    * The time when the AWS Config rule evaluated the AWS resource.
+    * The time when the Config rule evaluated the Amazon Web Services resource.
     */
-  var ConfigRuleInvokedTime: js.UndefOr[Date] = js.undefined
+  var ConfigRuleInvokedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Uniquely identifies the evaluation result.
@@ -27,12 +27,12 @@ trait EvaluationResult extends StObject {
   var EvaluationResultIdentifier: js.UndefOr[typings.awsSdk.configserviceMod.EvaluationResultIdentifier] = js.undefined
   
   /**
-    * The time when AWS Config recorded the evaluation result.
+    * The time when Config recorded the evaluation result.
     */
-  var ResultRecordedTime: js.UndefOr[Date] = js.undefined
+  var ResultRecordedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * An encrypted token that associates an evaluation with an AWS Config rule. The token identifies the rule, the AWS resource being evaluated, and the event that triggered the evaluation.
+    * An encrypted token that associates an evaluation with an Config rule. The token identifies the rule, the Amazon Web Services resource being evaluated, and the event that triggered the evaluation.
     */
   var ResultToken: js.UndefOr[String] = js.undefined
 }
@@ -53,7 +53,7 @@ object EvaluationResult {
     
     inline def setComplianceTypeUndefined: Self = StObject.set(x, "ComplianceType", js.undefined)
     
-    inline def setConfigRuleInvokedTime(value: Date): Self = StObject.set(x, "ConfigRuleInvokedTime", value.asInstanceOf[js.Any])
+    inline def setConfigRuleInvokedTime(value: js.Date): Self = StObject.set(x, "ConfigRuleInvokedTime", value.asInstanceOf[js.Any])
     
     inline def setConfigRuleInvokedTimeUndefined: Self = StObject.set(x, "ConfigRuleInvokedTime", js.undefined)
     
@@ -61,7 +61,7 @@ object EvaluationResult {
     
     inline def setEvaluationResultIdentifierUndefined: Self = StObject.set(x, "EvaluationResultIdentifier", js.undefined)
     
-    inline def setResultRecordedTime(value: Date): Self = StObject.set(x, "ResultRecordedTime", value.asInstanceOf[js.Any])
+    inline def setResultRecordedTime(value: js.Date): Self = StObject.set(x, "ResultRecordedTime", value.asInstanceOf[js.Any])
     
     inline def setResultRecordedTimeUndefined: Self = StObject.set(x, "ResultRecordedTime", js.undefined)
     

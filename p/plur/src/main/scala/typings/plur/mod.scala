@@ -6,10 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(word: String, count: Double): String = (^.asInstanceOf[js.Dynamic].apply(word.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(word: String, plural: String, count: Double): String = (^.asInstanceOf[js.Dynamic].apply(word.asInstanceOf[js.Any], plural.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[String]
-  
   @JSImport("plur", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def default(word: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(word.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(word: String, count: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(word.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(word: String, plural: String, count: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(word.asInstanceOf[js.Any], plural.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[String]
 }

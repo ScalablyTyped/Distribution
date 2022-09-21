@@ -2,8 +2,10 @@ package typings.maximMazurokGapiClientStorage.gapi.client.storage
 
 import org.scalablytyped.runtime.TopLevel
 import typings.maximMazurokGapiClientStorage.anon.BucketPolicyOnly
+import typings.maximMazurokGapiClientStorage.anon.DataLocations
 import typings.maximMazurokGapiClientStorage.anon.DefaultKmsKeyName
 import typings.maximMazurokGapiClientStorage.anon.EffectiveTime
+import typings.maximMazurokGapiClientStorage.anon.Enabled
 import typings.maximMazurokGapiClientStorage.anon.Entity
 import typings.maximMazurokGapiClientStorage.anon.LogBucket
 import typings.maximMazurokGapiClientStorage.anon.MainPageSuffix
@@ -20,11 +22,17 @@ trait Bucket extends StObject {
   /** Access controls on the bucket. */
   var acl: js.UndefOr[js.Array[BucketAccessControl]] = js.undefined
   
+  /** The bucket's Autoclass configuration. */
+  var autoclass: js.UndefOr[Enabled] = js.undefined
+  
   /** The bucket's billing configuration. */
   var billing: js.UndefOr[RequesterPays] = js.undefined
   
   /** The bucket's Cross-Origin Resource Sharing (CORS) configuration. */
   var cors: js.UndefOr[js.Array[MaxAgeSeconds]] = js.undefined
+  
+  /** The bucket's custom placement configuration for Custom Dual Regions. */
+  var customPlacementConfig: js.UndefOr[DataLocations] = js.undefined
   
   /**
     * The default value for event-based hold on newly created objects in this bucket. Event-based hold is a way to retain objects indefinitely until an event occurs, signified by the
@@ -57,7 +65,7 @@ trait Bucket extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientStorage.maximMazurokGapiClientStorageStrings.Bucket & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientStorage.maximMazurokGapiClientStorageStrings.Bucket & TopLevel[Any]
   ] = js.undefined
   
   /** The bucket's lifecycle configuration. See lifecycle management for more information. */
@@ -95,6 +103,12 @@ trait Bucket extends StObject {
     */
   var retentionPolicy: js.UndefOr[EffectiveTime] = js.undefined
   
+  /** The Recovery Point Objective (RPO) of this bucket. Set to ASYNC_TURBO to turn on Turbo Replication on a bucket. */
+  var rpo: js.UndefOr[String] = js.undefined
+  
+  /** Reserved for future use. */
+  var satisfiesPZS: js.UndefOr[Boolean] = js.undefined
+  
   /** The URI of this bucket. */
   var selfLink: js.UndefOr[String] = js.undefined
   
@@ -116,12 +130,6 @@ trait Bucket extends StObject {
   
   /** The bucket's website configuration, controlling how the service behaves when accessing bucket contents as a web site. See the Static Website Examples for more information. */
   var website: js.UndefOr[MainPageSuffix] = js.undefined
-  
-  /**
-    * The zone or zones from which the bucket is intended to use zonal quota. Requests for data from outside the specified affinities are still allowed but won't be able to use zonal
-    * quota. The zone or zones need to be within the bucket location otherwise the requests will fail with a 400 Bad Request response.
-    */
-  var zoneAffinity: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Bucket {
   
@@ -136,7 +144,11 @@ object Bucket {
     
     inline def setAclUndefined: Self = StObject.set(x, "acl", js.undefined)
     
-    inline def setAclVarargs(value: BucketAccessControl*): Self = StObject.set(x, "acl", js.Array(value :_*))
+    inline def setAclVarargs(value: BucketAccessControl*): Self = StObject.set(x, "acl", js.Array(value*))
+    
+    inline def setAutoclass(value: Enabled): Self = StObject.set(x, "autoclass", value.asInstanceOf[js.Any])
+    
+    inline def setAutoclassUndefined: Self = StObject.set(x, "autoclass", js.undefined)
     
     inline def setBilling(value: RequesterPays): Self = StObject.set(x, "billing", value.asInstanceOf[js.Any])
     
@@ -146,7 +158,11 @@ object Bucket {
     
     inline def setCorsUndefined: Self = StObject.set(x, "cors", js.undefined)
     
-    inline def setCorsVarargs(value: MaxAgeSeconds*): Self = StObject.set(x, "cors", js.Array(value :_*))
+    inline def setCorsVarargs(value: MaxAgeSeconds*): Self = StObject.set(x, "cors", js.Array(value*))
+    
+    inline def setCustomPlacementConfig(value: DataLocations): Self = StObject.set(x, "customPlacementConfig", value.asInstanceOf[js.Any])
+    
+    inline def setCustomPlacementConfigUndefined: Self = StObject.set(x, "customPlacementConfig", js.undefined)
     
     inline def setDefaultEventBasedHold(value: Boolean): Self = StObject.set(x, "defaultEventBasedHold", value.asInstanceOf[js.Any])
     
@@ -156,7 +172,7 @@ object Bucket {
     
     inline def setDefaultObjectAclUndefined: Self = StObject.set(x, "defaultObjectAcl", js.undefined)
     
-    inline def setDefaultObjectAclVarargs(value: ObjectAccessControl*): Self = StObject.set(x, "defaultObjectAcl", js.Array(value :_*))
+    inline def setDefaultObjectAclVarargs(value: ObjectAccessControl*): Self = StObject.set(x, "defaultObjectAcl", js.Array(value*))
     
     inline def setEncryption(value: DefaultKmsKeyName): Self = StObject.set(x, "encryption", value.asInstanceOf[js.Any])
     
@@ -181,7 +197,7 @@ object Bucket {
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientStorage.maximMazurokGapiClientStorageStrings.Bucket & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientStorage.maximMazurokGapiClientStorageStrings.Bucket & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -222,6 +238,14 @@ object Bucket {
     
     inline def setRetentionPolicyUndefined: Self = StObject.set(x, "retentionPolicy", js.undefined)
     
+    inline def setRpo(value: String): Self = StObject.set(x, "rpo", value.asInstanceOf[js.Any])
+    
+    inline def setRpoUndefined: Self = StObject.set(x, "rpo", js.undefined)
+    
+    inline def setSatisfiesPZS(value: Boolean): Self = StObject.set(x, "satisfiesPZS", value.asInstanceOf[js.Any])
+    
+    inline def setSatisfiesPZSUndefined: Self = StObject.set(x, "satisfiesPZS", js.undefined)
+    
     inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
     inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
@@ -245,11 +269,5 @@ object Bucket {
     inline def setWebsite(value: MainPageSuffix): Self = StObject.set(x, "website", value.asInstanceOf[js.Any])
     
     inline def setWebsiteUndefined: Self = StObject.set(x, "website", js.undefined)
-    
-    inline def setZoneAffinity(value: js.Array[String]): Self = StObject.set(x, "zoneAffinity", value.asInstanceOf[js.Any])
-    
-    inline def setZoneAffinityUndefined: Self = StObject.set(x, "zoneAffinity", js.undefined)
-    
-    inline def setZoneAffinityVarargs(value: String*): Self = StObject.set(x, "zoneAffinity", js.Array(value :_*))
   }
 }

@@ -17,7 +17,7 @@ trait CustomView extends StObject {
   
   val Name: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   val PrintSettings: Boolean
   
@@ -33,7 +33,7 @@ object CustomView {
     Delete: () => Unit,
     ExcelDotCustomView_typekey: CustomView,
     Name: String,
-    Parent: js.Any,
+    Parent: Any,
     PrintSettings: Boolean,
     RowColSettings: Boolean,
     Show: () => Unit
@@ -55,7 +55,7 @@ object CustomView {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setPrintSettings(value: Boolean): Self = StObject.set(x, "PrintSettings", value.asInstanceOf[js.Any])
     

@@ -11,8 +11,8 @@ object mod {
   
   @JSImport("react-credit-cards", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ReactCreditCardProps, scala.Nothing, js.Any]
+  open class default ()
+    extends Component[ReactCreditCardProps, scala.Nothing, Any]
   
   trait CallbackArgument extends StObject {
     
@@ -53,7 +53,7 @@ object mod {
     inline def number: typings.reactCreditCards.reactCreditCardsStrings.number = "number".asInstanceOf[typings.reactCreditCards.reactCreditCardsStrings.number]
   }
   
-  type ReactCreditCard = Component[ReactCreditCardProps, scala.Nothing, js.Any]
+  type ReactCreditCard = Component[ReactCreditCardProps, scala.Nothing, Any]
   
   trait ReactCreditCardProps extends StObject {
     
@@ -92,7 +92,7 @@ object mod {
       
       inline def setAcceptedCardsUndefined: Self = StObject.set(x, "acceptedCards", js.undefined)
       
-      inline def setAcceptedCardsVarargs(value: String*): Self = StObject.set(x, "acceptedCards", js.Array(value :_*))
+      inline def setAcceptedCardsVarargs(value: String*): Self = StObject.set(x, "acceptedCards", js.Array(value*))
       
       inline def setCallback(value: (/* type */ CallbackArgument, /* isValid */ Boolean) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       

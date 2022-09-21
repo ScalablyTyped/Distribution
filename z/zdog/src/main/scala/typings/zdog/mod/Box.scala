@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("zdog", "Box")
 @js.native
-class Box () extends Rect {
+open class Box () extends Rect {
   def this(options: BoxOptions) = this()
   
   /** @see {@link BoxOptions#bottomFace} */

@@ -33,6 +33,6 @@ object ListPortalsResponse {
     
     inline def setPortalSummariesUndefined: Self = StObject.set(x, "portalSummaries", js.undefined)
     
-    inline def setPortalSummariesVarargs(value: PortalSummary*): Self = StObject.set(x, "portalSummaries", js.Array(value :_*))
+    inline def setPortalSummariesVarargs(value: PortalSummary*): Self = StObject.set(x, "portalSummaries", js.Array(value*))
   }
 }

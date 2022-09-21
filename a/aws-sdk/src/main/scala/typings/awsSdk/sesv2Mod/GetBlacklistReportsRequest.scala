@@ -22,6 +22,6 @@ object GetBlacklistReportsRequest {
     
     inline def setBlacklistItemNames(value: BlacklistItemNames): Self = StObject.set(x, "BlacklistItemNames", value.asInstanceOf[js.Any])
     
-    inline def setBlacklistItemNamesVarargs(value: BlacklistItemName*): Self = StObject.set(x, "BlacklistItemNames", js.Array(value :_*))
+    inline def setBlacklistItemNamesVarargs(value: BlacklistItemName*): Self = StObject.set(x, "BlacklistItemNames", js.Array(value*))
   }
 }

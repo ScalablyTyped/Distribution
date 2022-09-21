@@ -15,7 +15,7 @@ trait XUnnamedDatabaseRanges
   extends StObject
      with XInterface {
   
-  def getByTable(nTab: Double): js.Any
+  def getByTable(nTab: Double): Any
   
   def hasByTable(nTab: Double): Boolean
   
@@ -25,9 +25,9 @@ object XUnnamedDatabaseRanges {
   
   inline def apply(
     acquire: () => Unit,
-    getByTable: Double => js.Any,
+    getByTable: Double => Any,
     hasByTable: Double => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setByTable: CellRangeAddress => Unit
   ): XUnnamedDatabaseRanges = {
@@ -37,7 +37,7 @@ object XUnnamedDatabaseRanges {
   
   extension [Self <: XUnnamedDatabaseRanges](x: Self) {
     
-    inline def setGetByTable(value: Double => js.Any): Self = StObject.set(x, "getByTable", js.Any.fromFunction1(value))
+    inline def setGetByTable(value: Double => Any): Self = StObject.set(x, "getByTable", js.Any.fromFunction1(value))
     
     inline def setHasByTable(value: Double => Boolean): Self = StObject.set(x, "hasByTable", js.Any.fromFunction1(value))
     

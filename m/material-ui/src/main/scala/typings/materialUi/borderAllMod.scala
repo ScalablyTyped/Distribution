@@ -10,10 +10,10 @@ object borderAllMod {
   
   @JSImport("material-ui/svg-icons/editor/border-all", JSImport.Default)
   @js.native
-  class default () extends EditorBorderAll
+  open class default () extends EditorBorderAll
   
   @JSImport("material-ui/svg-icons/editor/border-all", "EditorBorderAll")
   @js.native
-  class EditorBorderAll ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class EditorBorderAll ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

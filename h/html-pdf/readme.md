@@ -1,7 +1,7 @@
 
 # Scala.js typings for html-pdf
 
-Typings are for version v2.2.0
+Typings are for version v3.0.1
 
 ## Library description:
 HTML to PDF converter that uses phantomjs
@@ -10,10 +10,10 @@ HTML to PDF converter that uses phantomjs
 | ------------------ | :-------------: |
 | Full name          | html-pdf |
 | Keywords           | html, pdf, phantom, phantomjs, nodejs |
-| # releases         | 0 |
-| # dependents       | 179 |
-| # downloads        | 4243617 |
-| # stars            | 109 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 644785.3333333334 |
+| # stars            | 3476.0 |
 
 ## Links
 - [Homepage](https://github.com/marcbachmann/node-html-pdf)

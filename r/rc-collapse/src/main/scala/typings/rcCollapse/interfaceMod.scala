@@ -1,16 +1,19 @@
 package typings.rcCollapse
 
-import typings.rcCollapse.rcCollapseStrings.header
 import typings.rcMotion.cssmotionMod.CSSMotionProps
+import typings.react.mod.DOMAttributes
 import typings.react.mod.Key
 import typings.react.mod.ReactNode
+import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfaceMod {
   
-  trait CollapsePanelProps extends StObject {
+  trait CollapsePanelProps
+    extends StObject
+       with DOMAttributes[HTMLDivElement] {
     
     var accordion: js.UndefOr[Boolean] = js.undefined
     
@@ -137,6 +140,8 @@ object interfaceMod {
     
     var activeKey: js.UndefOr[Key | js.Array[Key]] = js.undefined
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     var className: js.UndefOr[String] = js.undefined
     
     var collapsible: js.UndefOr[CollapsibleType] = js.undefined
@@ -172,7 +177,11 @@ object interfaceMod {
       
       inline def setActiveKeyUndefined: Self = StObject.set(x, "activeKey", js.undefined)
       
-      inline def setActiveKeyVarargs(value: Key*): Self = StObject.set(x, "activeKey", js.Array(value :_*))
+      inline def setActiveKeyVarargs(value: Key*): Self = StObject.set(x, "activeKey", js.Array(value*))
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -186,7 +195,7 @@ object interfaceMod {
       
       inline def setDefaultActiveKeyUndefined: Self = StObject.set(x, "defaultActiveKey", js.undefined)
       
-      inline def setDefaultActiveKeyVarargs(value: Key*): Self = StObject.set(x, "defaultActiveKey", js.Array(value :_*))
+      inline def setDefaultActiveKeyVarargs(value: Key*): Self = StObject.set(x, "defaultActiveKey", js.Array(value*))
       
       inline def setDestroyInactivePanel(value: Boolean): Self = StObject.set(x, "destroyInactivePanel", value.asInstanceOf[js.Any])
       
@@ -214,5 +223,18 @@ object interfaceMod {
     }
   }
   
-  type CollapsibleType = Boolean | header
+  /* Rewritten from type alias, can be one of: 
+    - typings.rcCollapse.rcCollapseStrings.header
+    - typings.rcCollapse.rcCollapseStrings.icon
+    - typings.rcCollapse.rcCollapseStrings.disabled
+  */
+  trait CollapsibleType extends StObject
+  object CollapsibleType {
+    
+    inline def disabled: typings.rcCollapse.rcCollapseStrings.disabled = "disabled".asInstanceOf[typings.rcCollapse.rcCollapseStrings.disabled]
+    
+    inline def header: typings.rcCollapse.rcCollapseStrings.header = "header".asInstanceOf[typings.rcCollapse.rcCollapseStrings.header]
+    
+    inline def icon: typings.rcCollapse.rcCollapseStrings.icon = "icon".asInstanceOf[typings.rcCollapse.rcCollapseStrings.icon]
+  }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateDeviceCertificateParams extends StObject {
   
   /**
-    * The action that you want to apply to the device cerrtificate. The only supported value is DEACTIVATE.
+    * The action that you want to apply to the device certificate. The only supported value is DEACTIVATE.
     */
   var action: DeviceCertificateUpdateAction
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("relay-runtime/lib/store/RelayStoreTypes", "Handler")
 @js.native
-class Handler () extends StObject {
+open class Handler () extends StObject {
   
   def update(store: RecordSourceProxy, fieldPayload: HandleFieldPayload): Unit = js.native
 }

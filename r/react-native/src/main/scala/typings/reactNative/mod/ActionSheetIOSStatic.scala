@@ -1,6 +1,5 @@
 package typings.reactNative.mod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,7 +33,7 @@ trait ActionSheetIOSStatic extends StObject {
     */
   def showShareActionSheetWithOptions(
     options: ShareActionSheetIOSOptions,
-    failureCallback: js.Function1[/* error */ Error, Unit],
+    failureCallback: js.Function1[/* error */ js.Error, Unit],
     successCallback: js.Function2[/* success */ Boolean, /* method */ String, Unit]
   ): Unit
 }
@@ -42,7 +41,7 @@ object ActionSheetIOSStatic {
   
   inline def apply(
     showActionSheetWithOptions: (ActionSheetIOSOptions, js.Function1[/* buttonIndex */ Double, Unit]) => Unit,
-    showShareActionSheetWithOptions: (ShareActionSheetIOSOptions, js.Function1[/* error */ Error, Unit], js.Function2[/* success */ Boolean, /* method */ String, Unit]) => Unit
+    showShareActionSheetWithOptions: (ShareActionSheetIOSOptions, js.Function1[/* error */ js.Error, Unit], js.Function2[/* success */ Boolean, /* method */ String, Unit]) => Unit
   ): ActionSheetIOSStatic = {
     val __obj = js.Dynamic.literal(showActionSheetWithOptions = js.Any.fromFunction2(showActionSheetWithOptions), showShareActionSheetWithOptions = js.Any.fromFunction3(showShareActionSheetWithOptions))
     __obj.asInstanceOf[ActionSheetIOSStatic]
@@ -53,7 +52,7 @@ object ActionSheetIOSStatic {
     inline def setShowActionSheetWithOptions(value: (ActionSheetIOSOptions, js.Function1[/* buttonIndex */ Double, Unit]) => Unit): Self = StObject.set(x, "showActionSheetWithOptions", js.Any.fromFunction2(value))
     
     inline def setShowShareActionSheetWithOptions(
-      value: (ShareActionSheetIOSOptions, js.Function1[/* error */ Error, Unit], js.Function2[/* success */ Boolean, /* method */ String, Unit]) => Unit
+      value: (ShareActionSheetIOSOptions, js.Function1[/* error */ js.Error, Unit], js.Function2[/* success */ Boolean, /* method */ String, Unit]) => Unit
     ): Self = StObject.set(x, "showShareActionSheetWithOptions", js.Any.fromFunction3(value))
   }
 }

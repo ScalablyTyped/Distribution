@@ -12,5 +12,5 @@ object modifyCssMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(dom: HTMLElement, css: StringDictionary[js.Any]): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(dom.asInstanceOf[js.Any], css.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  inline def default(dom: HTMLElement, css: StringDictionary[Any]): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(dom.asInstanceOf[js.Any], css.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
 }

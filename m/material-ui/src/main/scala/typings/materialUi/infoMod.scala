@@ -10,10 +10,10 @@ object infoMod {
   
   @JSImport("material-ui/svg-icons/action/info", JSImport.Default)
   @js.native
-  class default () extends ActionInfo
+  open class default () extends ActionInfo
   
   @JSImport("material-ui/svg-icons/action/info", "ActionInfo")
   @js.native
-  class ActionInfo ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ActionInfo ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

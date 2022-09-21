@@ -32,7 +32,7 @@ object ApplePayShippingMethodUpdate {
     
     inline def setNewLineItemsUndefined: Self = StObject.set(x, "newLineItems", js.undefined)
     
-    inline def setNewLineItemsVarargs(value: ApplePayLineItem*): Self = StObject.set(x, "newLineItems", js.Array(value :_*))
+    inline def setNewLineItemsVarargs(value: ApplePayLineItem*): Self = StObject.set(x, "newLineItems", js.Array(value*))
     
     inline def setNewTotal(value: ApplePayLineItem): Self = StObject.set(x, "newTotal", value.asInstanceOf[js.Any])
   }

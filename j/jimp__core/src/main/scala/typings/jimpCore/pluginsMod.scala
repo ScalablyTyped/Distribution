@@ -16,9 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object pluginsMod {
   
-  type ClassOrConstantPlugin[T /* <: Image */] = WellFormedPlugin[T] & (Required[Pick[WellFormedPlugin[T], `class` | constants]])
+  type ClassOrConstantPlugin[T /* <: Image */] = ((Required[Pick[WellFormedPlugin[T], `class`]]) & WellFormedPlugin[T]) | ((Required[Pick[WellFormedPlugin[T], constants]]) & WellFormedPlugin[T])
   
-  type IllformedPlugin = (Omit[js.Any, `class` | constants]) & Class
+  type IllformedPlugin = (Omit[Any, `class` | constants]) & Class
   
   type JimpPlugin[T /* <: Image */] = ClassOrConstantPlugin[T] | IllformedPlugin
   
@@ -26,10 +26,10 @@ object pluginsMod {
   trait JimpType[T /* <: Image */] extends StObject {
     
     // Extend the Jimp class with the following constants, etc
-    var `class`: js.UndefOr[js.Any] = js.undefined
+    var `class`: js.UndefOr[Any] = js.undefined
     
     var constants: js.UndefOr[// Contants to assign to the Jimp instance
-    StringDictionary[js.Any]] = js.undefined
+    StringDictionary[Any]] = js.undefined
     
     var decoders: js.UndefOr[StringDictionary[DecoderFn]] = js.undefined
     
@@ -49,12 +49,12 @@ object pluginsMod {
     
     extension [Self <: JimpType[?], T /* <: Image */](x: Self & JimpType[T]) {
       
-      inline def setClass(value: js.Any): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+      inline def setClass(value: Any): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       
       inline def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
       
       inline def setConstants(value: // Contants to assign to the Jimp instance
-      StringDictionary[js.Any]): Self = StObject.set(x, "constants", value.asInstanceOf[js.Any])
+      StringDictionary[Any]): Self = StObject.set(x, "constants", value.asInstanceOf[js.Any])
       
       inline def setConstantsUndefined: Self = StObject.set(x, "constants", js.undefined)
       
@@ -78,10 +78,10 @@ object pluginsMod {
   trait WellFormedPlugin[ImageType /* <: Image */] extends StObject {
     
     // Extend the Jimp class with the following constants, etc
-    var `class`: js.UndefOr[js.Any] = js.undefined
+    var `class`: js.UndefOr[Any] = js.undefined
     
     var constants: js.UndefOr[// Contants to assign to the Jimp instance
-    StringDictionary[js.Any]] = js.undefined
+    StringDictionary[Any]] = js.undefined
     
     var decoders: js.UndefOr[StringDictionary[DecoderFn]] = js.undefined
     
@@ -101,12 +101,12 @@ object pluginsMod {
     
     extension [Self <: WellFormedPlugin[?], ImageType /* <: Image */](x: Self & WellFormedPlugin[ImageType]) {
       
-      inline def setClass(value: js.Any): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+      inline def setClass(value: Any): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       
       inline def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
       
       inline def setConstants(value: // Contants to assign to the Jimp instance
-      StringDictionary[js.Any]): Self = StObject.set(x, "constants", value.asInstanceOf[js.Any])
+      StringDictionary[Any]): Self = StObject.set(x, "constants", value.asInstanceOf[js.Any])
       
       inline def setConstantsUndefined: Self = StObject.set(x, "constants", js.undefined)
       

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("blessed", "Widgets.TextboxElement")
 @js.native
-class TextboxElement protected () extends TextareaElement {
+open class TextboxElement protected () extends TextareaElement {
   def this(opts: TextboxOptions) = this()
   
   /**

@@ -1,6 +1,5 @@
 package typings.dhtmlxscheduler
 
-import typings.std.Date
 import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -14,26 +13,26 @@ trait SchedulerStatic extends StObject {
     * adds a new event
     * @param event the event object
     */
-  def addEvent(event: js.Any): String = js.native
+  def addEvent(event: Any): String = js.native
   
   /**
     * adds a new event and opens the lightbox to confirm
     * @param event the event object
     */
-  def addEventNow(event: js.Any): String = js.native
+  def addEventNow(event: Any): String = js.native
   
   /**
     * marks dates, but with certain settings makes blocking (unlike blockTime() allows setting custom styling for the limit)
     * @param config the configuration object of the timespan to mark/block
     */
-  def addMarkedTimespan(config: js.Any): Double = js.native
+  def addMarkedTimespan(config: Any): Double = js.native
   
   /**
     * adds a section to the currently active view (if the opened view isn't Timeline in the 'Tree' mode - the method will be ignored)
     * @param section the object of the section to add
     * @param parent_id the id of the parent section. Pass 'null' if you are adding a section to the root
     */
-  def addSection(section: js.Any, parent_id: String): Boolean = js.native
+  def addSection(section: Any, parent_id: String): Boolean = js.native
   
   /**
     * adds a new keyboard shortcut
@@ -42,7 +41,7 @@ trait SchedulerStatic extends StObject {
     * @param scope the name of the context element to attach the handler function to (list of scopes)
     */
   def addShortcut(shortcut: String, handler: js.Function0[Unit]): Unit = js.native
-  def addShortcut(shortcut: String, handler: js.Function0[Unit], scope: js.Any): Unit = js.native
+  def addShortcut(shortcut: String, handler: js.Function0[Unit], scope: Any): Unit = js.native
   
   /**
     * attaches the handler to an inner event of dhtmlxScheduler
@@ -55,25 +54,25 @@ trait SchedulerStatic extends StObject {
     * makes the scheduler reflect all data changes in the Backbone model and vice versa
     * @param events the Backbone data collection
     */
-  def backbone(events: js.Any): Unit = js.native
+  def backbone(events: Any): Unit = js.native
   
-  def blockTime(date: Double, time_points: js.Array[js.Any]): Unit = js.native
-  def blockTime(date: Double, time_points: js.Array[js.Any], items: js.Any): Unit = js.native
   /**
     * blocks the specified date and applies the default 'dimmed' style to it.
     * @param date a date to block ( if a number is provided, the parameter will be treated as a week <br> day: '0' index refers to Sunday,'6' - to Saturday )
     * @param time_points an array <b>[start_minute,end_minute,..,start_minute_N,end_minute_N]</b>, <br> where each pair sets a certain limit range. The array can have any number of <br> such pairs
     * @param items defines specific items of  view(s) to block
     */
-  def blockTime(date: Date, time_points: js.Array[js.Any]): Unit = js.native
-  def blockTime(date: Date, time_points: js.Array[js.Any], items: js.Any): Unit = js.native
+  def blockTime(date: js.Date, time_points: js.Array[Any]): Unit = js.native
+  def blockTime(date: js.Date, time_points: js.Array[Any], items: Any): Unit = js.native
+  def blockTime(date: Double, time_points: js.Array[Any]): Unit = js.native
+  def blockTime(date: Double, time_points: js.Array[Any], items: Any): Unit = js.native
   
   /**
     * calls an inner event
     * @param name the event's name, case-insensitive
     * @param params an array of the event-related data
     */
-  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[Any]): Boolean = js.native
   
   /**
     * changes the event's id
@@ -86,7 +85,7 @@ trait SchedulerStatic extends StObject {
     * checks whether the specified event occurs at the time that has already been occupied by another event(s)
     * @param event the event object
     */
-  def checkCollision(event: js.Any): Boolean = js.native
+  def checkCollision(event: Any): Boolean = js.native
   
   /**
     * checks whether an event has some handler(s) specified
@@ -99,13 +98,13 @@ trait SchedulerStatic extends StObject {
     * @param event the event object
     * @param timespan the timespan's type
     */
-  def checkInMarkedTimespan(event: js.Any, timespan: String): Boolean = js.native
+  def checkInMarkedTimespan(event: Any, timespan: String): Boolean = js.native
   
   /**
     * checks whether the specified event takes place at the blocked time period
     * @param event the event object
     */
-  def checkLimitViolation(event: js.Any): Boolean = js.native
+  def checkLimitViolation(event: Any): Boolean = js.native
   
   /**
     * removes all events from the scheduler
@@ -134,19 +133,19 @@ trait SchedulerStatic extends StObject {
     * creates the Grid view in the scheduler
     * @param config the configuration object of the Grid view
     */
-  def createGridView(config: js.Any): Unit = js.native
+  def createGridView(config: Any): Unit = js.native
   
   /**
     * creates the Timeline view in the scheduler
     * @param config the configuration object of the Timeline view
     */
-  def createTimelineView(config: js.Any): Unit = js.native
+  def createTimelineView(config: Any): Unit = js.native
   
   /**
     * creates the Units view in the scheduler
     * @param config the configuration object of the Units view
     */
-  def createUnitsView(config: js.Any): Unit = js.native
+  def createUnitsView(config: Any): Unit = js.native
   
   var date: SchedulerDateHelpers = js.native
   
@@ -165,12 +164,12 @@ trait SchedulerStatic extends StObject {
   /**
     * removes all blocking sets from the scheduler
     */
-  def deleteMarkedTimespan(): js.Any = js.native
+  def deleteMarkedTimespan(): Any = js.native
   /**
     * removes marking/blocking set by the addMarkedTimespan() and blockTime() methods
     * @param configuration for deleting
     */
-  def deleteMarkedTimespan(config: js.Any): js.Any = js.native
+  def deleteMarkedTimespan(config: Any): Any = js.native
   /**
     * removes marking/blocking set by the addMarkedTimespan() and blockTime() methods
     * @param id the timespan's id
@@ -188,7 +187,7 @@ trait SchedulerStatic extends StObject {
     * @param name the mini-calendar's object (if not specified, the scheduler attempts <br> to destroy the last created mini calendar)
     */
   def destroyCalendar(): Unit = js.native
-  def destroyCalendar(name: js.Any): Unit = js.native
+  def destroyCalendar(name: Any): Unit = js.native
   
   /**
     * detaches a handler from an event (which was attached before by the attachEvent method)
@@ -224,8 +223,8 @@ trait SchedulerStatic extends StObject {
   /**
     * filter events that will be displayed on the agenda view
     */
-  def filter_agenda(id: String, event: js.Any): Boolean = js.native
-  def filter_agenda(id: Double, event: js.Any): Boolean = js.native
+  def filter_agenda(id: String, event: Any): Boolean = js.native
+  def filter_agenda(id: Double, event: Any): Boolean = js.native
   /**
     * filter events that will be displayed on the agenda view
     */
@@ -235,8 +234,8 @@ trait SchedulerStatic extends StObject {
   /**
     * filter events that will be displayed on the day view
     */
-  def filter_day(id: String, event: js.Any): Boolean = js.native
-  def filter_day(id: Double, event: js.Any): Boolean = js.native
+  def filter_day(id: String, event: Any): Boolean = js.native
+  def filter_day(id: Double, event: Any): Boolean = js.native
   /**
     * filter events that will be displayed on the day view
     */
@@ -246,8 +245,8 @@ trait SchedulerStatic extends StObject {
   /**
     * filter events that will be displayed on the grid view
     */
-  def filter_grid(id: String, event: js.Any): Boolean = js.native
-  def filter_grid(id: Double, event: js.Any): Boolean = js.native
+  def filter_grid(id: String, event: Any): Boolean = js.native
+  def filter_grid(id: Double, event: Any): Boolean = js.native
   /**
     * filter events that will be displayed on the grid view
     */
@@ -257,8 +256,8 @@ trait SchedulerStatic extends StObject {
   /**
     * filter events that will be displayed on the month view
     */
-  def filter_month(id: String, event: js.Any): Boolean = js.native
-  def filter_month(id: Double, event: js.Any): Boolean = js.native
+  def filter_month(id: String, event: Any): Boolean = js.native
+  def filter_month(id: Double, event: Any): Boolean = js.native
   /**
     * filter events that will be displayed on the month view
     */
@@ -268,8 +267,8 @@ trait SchedulerStatic extends StObject {
   /**
     * filter events that will be displayed on the timeline view
     */
-  def filter_timeline(id: String, event: js.Any): Boolean = js.native
-  def filter_timeline(id: Double, event: js.Any): Boolean = js.native
+  def filter_timeline(id: String, event: Any): Boolean = js.native
+  def filter_timeline(id: Double, event: Any): Boolean = js.native
   /**
     * filter events that will be displayed on the timeline view
     */
@@ -279,8 +278,8 @@ trait SchedulerStatic extends StObject {
   /**
     * filter events that will be displayed on the units view
     */
-  def filter_units(id: String, event: js.Any): Boolean = js.native
-  def filter_units(id: Double, event: js.Any): Boolean = js.native
+  def filter_units(id: String, event: Any): Boolean = js.native
+  def filter_units(id: Double, event: Any): Boolean = js.native
   /**
     * filter events that will be displayed on the units view
     */
@@ -290,8 +289,8 @@ trait SchedulerStatic extends StObject {
   /**
     * filter events that will be displayed on the week view
     */
-  def filter_week(id: String, event: js.Any): Boolean = js.native
-  def filter_week(id: Double, event: js.Any): Boolean = js.native
+  def filter_week(id: String, event: Any): Boolean = js.native
+  def filter_week(id: Double, event: Any): Boolean = js.native
   /**
     * filter events that will be displayed on the week view
     */
@@ -301,8 +300,8 @@ trait SchedulerStatic extends StObject {
   /**
     * filter events that will be displayed on the year view
     */
-  def filter_year(id: String, event: js.Any): Boolean = js.native
-  def filter_year(id: Double, event: js.Any): Boolean = js.native
+  def filter_year(id: String, event: Any): Boolean = js.native
+  def filter_year(id: Double, event: Any): Boolean = js.native
   /**
     * filter events that will be displayed on the year view
     */
@@ -313,34 +312,34 @@ trait SchedulerStatic extends StObject {
     * gives access to the objects of lightbox's sections
     * @param name the name of a lightbox section
     */
-  def formSection(name: String): js.Any = js.native
+  def formSection(name: String): Any = js.native
   
   /**
     * returns the current cursor-pointed date and section (if defined)
     * @param e a native event object
     */
-  def getActionData(e: Event): js.Any = js.native
+  def getActionData(e: Event): Any = js.native
   
   /**
     * returns the event object by its id
     * @param event_id the  event's id
     */
-  def getEvent(event_id: String): js.Any = js.native
-  def getEvent(event_id: Double): js.Any = js.native
+  def getEvent(event_id: String): Any = js.native
+  def getEvent(event_id: Double): Any = js.native
   
   /**
     * gets the event's end date
     * @param id the event's id
     */
-  def getEventEndDate(id: String): Date = js.native
-  def getEventEndDate(id: Double): Date = js.native
+  def getEventEndDate(id: String): js.Date = js.native
+  def getEventEndDate(id: Double): js.Date = js.native
   
   /**
     * gets the event's start date
     * @param id the event's id
     */
-  def getEventStartDate(id: String): Date = js.native
-  def getEventStartDate(id: Double): Date = js.native
+  def getEventStartDate(id: String): js.Date = js.native
+  def getEventStartDate(id: Double): js.Date = js.native
   
   /**
     * gets the event's text
@@ -354,18 +353,18 @@ trait SchedulerStatic extends StObject {
     * @param from the start date of the period
     * @param to the end date of the period
     */
-  def getEvents(): js.Any = js.native
-  def getEvents(from: Unit, to: Date): js.Any = js.native
-  def getEvents(from: Date): js.Any = js.native
-  def getEvents(from: Date, to: Date): js.Any = js.native
+  def getEvents(): Any = js.native
+  def getEvents(from: js.Date): Any = js.native
+  def getEvents(from: js.Date, to: js.Date): Any = js.native
+  def getEvents(from: Unit, to: js.Date): Any = js.native
   
   /**
     * gets the label of a select control in the lightbox
     * @param property the name of a data property that the control is mapped to
     * @param key the option's id. This parameter is compared with the event's data property <br> to assign the select's option to an event
     */
-  def getLabel(property: String, key: String): js.Any = js.native
-  def getLabel(property: String, key: Double): js.Any = js.native
+  def getLabel(property: String, key: String): Any = js.native
+  def getLabel(property: String, key: Double): Any = js.native
   
   /**
     * gets the lightbox's HTML object element
@@ -377,7 +376,7 @@ trait SchedulerStatic extends StObject {
     * @param id the id of a recurring event
     * @param number the maximum number of occurrences to return (by default, 100)
     */
-  def getRecDates(id: String, number: Double): js.Any = js.native
+  def getRecDates(id: String, number: Double): Any = js.native
   
   /**
     * gets the object of the currently displayed event
@@ -389,19 +388,19 @@ trait SchedulerStatic extends StObject {
     * gets the object of the specified section in the currently active view (if the opened view isn't Timeline in the 'Tree' mode - the method will be ignored)
     * @param section_id the section's id
     */
-  def getSection(section_id: String): js.Any = js.native
+  def getSection(section_id: String): Any = js.native
   
   /**
     * gets the current state of the scheduler
     */
-  def getState(): js.Any = js.native
+  def getState(): Any = js.native
   
   /**
     * gets the user data associated with the specified event
     * @param id the event's id
     * @param name the user data name
     */
-  def getUserData(id: String, name: String): js.Any = js.native
+  def getUserData(id: String, name: String): Any = js.native
   
   /**
     * hides the lightbox modal overlay that blocks interactions with the remaining screen
@@ -419,7 +418,7 @@ trait SchedulerStatic extends StObject {
     * highlights the event's duration on the time scale
     * @param event the event object
     */
-  def highlightEventPosition(event: js.Any): Unit = js.native
+  def highlightEventPosition(event: Any): Unit = js.native
   
   /**
     * constructor. Initializes a dhtmlxScheduler object
@@ -428,19 +427,19 @@ trait SchedulerStatic extends StObject {
     * @param view the name of the initial view (by default, "week")
     */
   def init(container: String): Unit = js.native
+  def init(container: String, date: js.Date): Unit = js.native
+  def init(container: String, date: js.Date, view: String): Unit = js.native
   def init(container: String, date: Unit, view: String): Unit = js.native
-  def init(container: String, date: Date): Unit = js.native
-  def init(container: String, date: Date, view: String): Unit = js.native
   def init(container: HTMLElement): Unit = js.native
+  def init(container: HTMLElement, date: js.Date): Unit = js.native
+  def init(container: HTMLElement, date: js.Date, view: String): Unit = js.native
   def init(container: HTMLElement, date: Unit, view: String): Unit = js.native
-  def init(container: HTMLElement, date: Date): Unit = js.native
-  def init(container: HTMLElement, date: Date, view: String): Unit = js.native
   
   /**
     * inverts the specified time zones
     * @param zones an array **[start_minute,end_minute,..,start_minute_N,end_minute_N]** <br >where each pair sets a certain limit range (in minutes). The array can have any <br> number of such pairs
     */
-  def invertZones(zones: js.Array[js.Any]): Unit = js.native
+  def invertZones(zones: js.Array[Any]): Unit = js.native
   
   /**
     * checks whether the calendar is currently opened in the scheduler
@@ -451,7 +450,7 @@ trait SchedulerStatic extends StObject {
     * checks whether the specified event one-day or multi-day
     * @param event the event object
     */
-  def isOneDayEvent(event: js.Any): Boolean = js.native
+  def isOneDayEvent(event: Any): Boolean = js.native
   
   /**
     * checks whether a view with the specified name exists
@@ -466,7 +465,7 @@ trait SchedulerStatic extends StObject {
     * @param calendar the mini calendar object
     * @param shift a function that defines the difference between active dates in the mini-calendar <br> and the scheduler. The function takes the scheduler's date as a parameter and <br> returns the date that should be displayed in the mini calendar
     */
-  def linkCalendar(calendar: js.Any, shift: SchedulerCallback): Unit = js.native
+  def linkCalendar(calendar: Any, shift: SchedulerCallback): Unit = js.native
   
   /**
     * loads data to the scheduler from an external data source
@@ -487,13 +486,13 @@ trait SchedulerStatic extends StObject {
     * @param date the date to mark
     * @param css the name of a css class
     */
-  def markCalendar(calendar: js.Any, date: Date, css: String): Unit = js.native
+  def markCalendar(calendar: Any, date: js.Date, css: String): Unit = js.native
   
   /**
     * marks and/or blocks date(s) by applying the default or a custom style to them. Marking is cancelled right after any internal update in the app. Can be used for highlighting
     * @param config the configuration object of the timespan to mark/block
     */
-  def markTimespan(config: js.Any): Unit = js.native
+  def markTimespan(config: Any): Unit = js.native
   
   /**
     * opens all sections in the currently active view (if the opened view isn't Timeline in the 'Tree' mode - the method will be ignored)
@@ -511,28 +510,28 @@ trait SchedulerStatic extends StObject {
     * @param data a string or object which represents data
     * @param type (<i>'json', 'xml', 'ical'</i>) the data type. The default value - <i>'xml'</i>
     */
-  def parse(data: js.Any): Unit = js.native
-  def parse(data: js.Any, `type`: String): Unit = js.native
+  def parse(data: Any): Unit = js.native
+  def parse(data: Any, `type`: String): Unit = js.native
   
   /**
     * removes a keyboard shortcut
     * @param shortcut the key name or the name of keys combination for a shortcut (shortcut syntax)
     * @param scope the element to which the shortcut is attached (list of scopes)
     */
-  def removeShortcut(shortcut: String, scope: js.Any): Unit = js.native
+  def removeShortcut(shortcut: String, scope: Any): Unit = js.native
   
   /**
     * creates a mini calendar
     * @param config the calendar configuration object
     */
-  def renderCalendar(config: js.Any): Unit = js.native
+  def renderCalendar(config: Any): Unit = js.native
   
   /**
     * generates HTML content for a custom event's box
     * @param container the event container
     * @param event the event object
     */
-  def renderEvent(container: HTMLElement, event: js.Any): Boolean = js.native
+  def renderEvent(container: HTMLElement, event: Any): Boolean = js.native
   
   /**
     * removes the current lightbox's HTML object element
@@ -557,7 +556,7 @@ trait SchedulerStatic extends StObject {
     * @param options an array of options
     */
   def serverList(list_name: String): Unit = js.native
-  def serverList(list_name: String, options: js.Array[js.Any]): Unit = js.native
+  def serverList(list_name: String, options: js.Array[Any]): Unit = js.native
   
   /**
     * displays the specified view and date
@@ -565,31 +564,31 @@ trait SchedulerStatic extends StObject {
     * @param view the name of a view to display
     */
   def setCurrentView(): Unit = js.native
+  def setCurrentView(date: js.Date): Unit = js.native
+  def setCurrentView(date: js.Date, view: String): Unit = js.native
   def setCurrentView(date: Unit, view: String): Unit = js.native
-  def setCurrentView(date: Date): Unit = js.native
-  def setCurrentView(date: Date, view: String): Unit = js.native
   
   /**
     * adds a new event to the scheduler's data pool
     * @param id the event's id
     * @param event the event object
     */
-  def setEvent(id: String, event: js.Any): Unit = js.native
-  def setEvent(id: Double, event: js.Any): Unit = js.native
+  def setEvent(id: String, event: Any): Unit = js.native
+  def setEvent(id: Double, event: Any): Unit = js.native
   
   /**
     * sets the event's end date
     * @param id the event's id
     * @param date the new end date of the event
     */
-  def setEventEndDate(id: String, date: Date): Unit = js.native
+  def setEventEndDate(id: String, date: js.Date): Unit = js.native
   
   /**
     * sets the event's start date
     * @param id the event's id
     * @param date the new start date of the event
     */
-  def setEventStartDate(id: String, date: Date): Unit = js.native
+  def setEventStartDate(id: String, date: js.Date): Unit = js.native
   
   /**
     * sets the event's text
@@ -615,7 +614,7 @@ trait SchedulerStatic extends StObject {
     * @param name the user data name
     * @param value the user data value
     */
-  def setUserData(id: String, name: String, value: js.Any): Unit = js.native
+  def setUserData(id: String, name: String, value: Any): Unit = js.native
   
   /**
     * shows the lightbox modal overlay that blocks interactions with the remaining screen
@@ -683,7 +682,7 @@ trait SchedulerStatic extends StObject {
     * @param path the path to the php file which generates a PDF file (<a href="pdf.md#configuringservice">details</a>)
     * @param color the color map in use
     */
-  def toPDFRange(from: Date, to: Date, view: String, path: String, color: String): Unit = js.native
+  def toPDFRange(from: js.Date, to: js.Date, view: String, path: String, color: String): Unit = js.native
   
   /**
     * converts scheduler's data into the XML format
@@ -701,10 +700,10 @@ trait SchedulerStatic extends StObject {
     * @param zones the period in minutes that should be limited. Can be set to 'fullday' value <br> to limit the entire day
     * @param sections allows blocking date(s) just for specific items of specific views. BTW, the specified date(s) will be blocked just in the related view(s)
     */
-  def unblockTime(days: js.Any): Unit = js.native
-  def unblockTime(days: js.Any, zones: js.Array[js.Any]): Unit = js.native
-  def unblockTime(days: js.Any, zones: js.Array[js.Any], sections: js.Any): Unit = js.native
-  def unblockTime(days: js.Any, zones: Unit, sections: js.Any): Unit = js.native
+  def unblockTime(days: Any): Unit = js.native
+  def unblockTime(days: Any, zones: js.Array[Any]): Unit = js.native
+  def unblockTime(days: Any, zones: js.Array[Any], sections: Any): Unit = js.native
+  def unblockTime(days: Any, zones: Unit, sections: Any): Unit = js.native
   
   /**
     * removes a css class from the specified date
@@ -712,9 +711,9 @@ trait SchedulerStatic extends StObject {
     * @param date the date to unmark
     * @param css the name of a css class to remove
     */
-  def unmarkCalendar(calendar: js.Any, date: Date, css: String): Unit = js.native
+  def unmarkCalendar(calendar: Any, date: js.Date, css: String): Unit = js.native
   
-  def unmarkTimespan(divs: js.Array[js.Any]): Unit = js.native
+  def unmarkTimespan(divs: js.Array[Any]): Unit = js.native
   /**
     * removes marking/blocking set by the markTimespan() method
     * @param divs a timespan to remove marking/blocking from (or an array of timespans)
@@ -733,14 +732,14 @@ trait SchedulerStatic extends StObject {
     * @param calendar the mini calendar object
     * @param new_date a new date to display in the mini calendar
     */
-  def updateCalendar(calendar: js.Any, new_date: Date): Unit = js.native
+  def updateCalendar(calendar: Any, new_date: js.Date): Unit = js.native
   
   /**
     * updates the specified collection with new options
     * @param collection the name of the collection to update
     * @param options the new values of the collection
     */
-  def updateCollection(collection: String, options: js.Array[js.Any]): Boolean = js.native
+  def updateCollection(collection: String, options: js.Array[Any]): Boolean = js.native
   
   /**
     * updates the specified event
@@ -755,9 +754,9 @@ trait SchedulerStatic extends StObject {
     * @param view the view name
     */
   def updateView(): Unit = js.native
+  def updateView(date: js.Date): Unit = js.native
+  def updateView(date: js.Date, view: String): Unit = js.native
   def updateView(date: Unit, view: String): Unit = js.native
-  def updateView(date: Date): Unit = js.native
-  def updateView(date: Date, view: String): Unit = js.native
   
   var version: String = js.native
   

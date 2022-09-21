@@ -10,7 +10,7 @@ object Controls {
   
   @JSGlobal("SP.UI.Controls.ControlManager")
   @js.native
-  class ControlManager ()
+  open class ControlManager ()
     extends StObject
        with typings.sharepoint.SP.UI.Controls.ControlManager
   object ControlManager {
@@ -20,12 +20,12 @@ object Controls {
     val ^ : js.Any = js.native
     
     /* static member */
-    inline def getControl(placeHolderId: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getControl")(placeHolderId.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def getControl(placeHolderId: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getControl")(placeHolderId.asInstanceOf[js.Any]).asInstanceOf[Any]
   }
   
   @JSGlobal("SP.UI.Controls.Navigation")
   @js.native
-  class Navigation protected ()
+  open class Navigation protected ()
     extends StObject
        with typings.sharepoint.SP.UI.Controls.Navigation {
     def this(placeholderDOMElementId: String, options: INavigationOptions) = this()
@@ -111,13 +111,13 @@ object Controls {
   
   @JSGlobal("SP.UI.Controls.NavigationOptions")
   @js.native
-  class NavigationOptions ()
+  open class NavigationOptions ()
     extends StObject
        with INavigationOptions
   
   @JSGlobal("SP.UI.Controls.SettingsLink")
   @js.native
-  class SettingsLink ()
+  open class SettingsLink ()
     extends StObject
        with typings.sharepoint.SP.UI.Controls.SettingsLink {
     

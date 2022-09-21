@@ -1,7 +1,7 @@
 
 # Scala.js typings for harmony-reflect
 
-Typings are for version 1.6.1
+Typings are for version 1.6.2
 
 ## Library description:
 ES5 shim for ES6 (ECMAScript 6) Reflect and Proxy objects
@@ -11,14 +11,11 @@ ES5 shim for ES6 (ECMAScript 6) Reflect and Proxy objects
 | Full name          | harmony-reflect |
 | Keywords           | reflection, proxies, proxy, reflect, harmony, es6 |
 | # releases         | 2 |
-| # dependents       | 103 |
-| # downloads        | 84165325 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 2.2514187333333332E7 |
+| # stars            | 444.0 |
 
 ## Links
-- [Homepage](https://github.com/tvcutsem/harmony-reflect)
-- [Bugs](https://github.com/tvcutsem/harmony-reflect/issues)
-- [Repository](https://github.com/tvcutsem/harmony-reflect)
 - [Npm](https://www.npmjs.com/package/harmony-reflect)
     
 

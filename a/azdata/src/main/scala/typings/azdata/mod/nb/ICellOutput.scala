@@ -1,13 +1,12 @@
 package typings.azdata.mod.nb
 
-import typings.azdata.anon.AzdatachartOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ICellOutput extends StObject {
   
-  var metadata: js.UndefOr[AzdatachartOptions] = js.undefined
+  var metadata: js.UndefOr[ICellOutputMetadata] = js.undefined
   
   var output_type: OutputTypeName
 }
@@ -20,7 +19,7 @@ object ICellOutput {
   
   extension [Self <: ICellOutput](x: Self) {
     
-    inline def setMetadata(value: AzdatachartOptions): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: ICellOutputMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     

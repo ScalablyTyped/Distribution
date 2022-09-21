@@ -57,7 +57,7 @@ object modal {
     
     var contentTemplate: js.UndefOr[String] = js.undefined
     
-    var controller: js.UndefOr[js.Any] = js.undefined
+    var controller: js.UndefOr[Any] = js.undefined
     
     var controllerAs: js.UndefOr[String] = js.undefined
     
@@ -67,7 +67,7 @@ object modal {
     
     var keyboard: js.UndefOr[Boolean] = js.undefined
     
-    var locals: js.UndefOr[js.Any] = js.undefined
+    var locals: js.UndefOr[Any] = js.undefined
     
     var onBeforeHide: js.UndefOr[js.Function1[/* modal */ IModal, Unit]] = js.undefined
     
@@ -81,7 +81,7 @@ object modal {
     
     var prefixEvent: js.UndefOr[String] = js.undefined
     
-    var resolve: js.UndefOr[js.Any] = js.undefined
+    var resolve: js.UndefOr[Any] = js.undefined
     
     var scope: js.UndefOr[IScope] = js.undefined
     
@@ -126,7 +126,7 @@ object modal {
       
       inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      inline def setController(value: js.Any): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+      inline def setController(value: Any): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
       
       inline def setControllerAs(value: String): Self = StObject.set(x, "controllerAs", value.asInstanceOf[js.Any])
       
@@ -146,7 +146,7 @@ object modal {
       
       inline def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
       
-      inline def setLocals(value: js.Any): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
+      inline def setLocals(value: Any): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
       
       inline def setLocalsUndefined: Self = StObject.set(x, "locals", js.undefined)
       
@@ -174,7 +174,7 @@ object modal {
       
       inline def setPrefixEventUndefined: Self = StObject.set(x, "prefixEvent", js.undefined)
       
-      inline def setResolve(value: js.Any): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
+      inline def setResolve(value: Any): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
       
       inline def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
       

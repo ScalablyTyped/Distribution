@@ -19,7 +19,7 @@ trait IDataPackageView extends StObject {
   
   def getBitmapAsync(): IAsyncOperation[RandomAccessStreamReference] = js.native
   
-  def getDataAsync(formatId: String): IAsyncOperation[js.Any] = js.native
+  def getDataAsync(formatId: String): IAsyncOperation[Any] = js.native
   
   def getHtmlFormatAsync(): IAsyncOperation[String] = js.native
   

@@ -9,7 +9,7 @@ object binaryopComplexGpuMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/binaryop_complex_gpu", "BinaryOpComplexProgram")
   @js.native
-  class BinaryOpComplexProgram protected ()
+  open class BinaryOpComplexProgram protected ()
     extends StObject
        with GPGPUProgram {
     def this(op: String, aShape: js.Array[Double], bShape: js.Array[Double]) = this()

@@ -1,6 +1,6 @@
 package typings.maximMazurokGapiClientContent.anon
 
-import typings.maximMazurokGapiClientContent.gapi.client.content.RegionalInventory
+import typings.maximMazurokGapiClientContent.gapi.client.content.Product
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,14 +35,21 @@ trait ProductIdQuotaUser extends StObject {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
-  /** The REST ID of the product for which to update the regional inventory. */
+  /** The REST ID of the product for which to update. */
   var productId: String
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Request body */
-  var resource: RegionalInventory
+  var resource: Product
+  
+  /**
+    * The comma-separated list of product attributes to be updated. Example: `"title,salePrice"`. Attributes specified in the update mask without a value specified in the body will be
+    * deleted from the product. Only top-level product attributes can be updated. If not defined, product attributes with set values will be updated and other attributes will stay
+    * unchanged.
+    */
+  var updateMask: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[String] = js.undefined
@@ -52,7 +59,7 @@ trait ProductIdQuotaUser extends StObject {
 }
 object ProductIdQuotaUser {
   
-  inline def apply(merchantId: String, productId: String, resource: RegionalInventory): ProductIdQuotaUser = {
+  inline def apply(merchantId: String, productId: String, resource: Product): ProductIdQuotaUser = {
     val __obj = js.Dynamic.literal(merchantId = merchantId.asInstanceOf[js.Any], productId = productId.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProductIdQuotaUser]
   }
@@ -99,7 +106,11 @@ object ProductIdQuotaUser {
     
     inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    inline def setResource(value: RegionalInventory): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: Product): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

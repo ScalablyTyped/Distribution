@@ -35,7 +35,7 @@ object ARIARoleRelationConcept {
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    inline def setAttributesVarargs(value: ARIARoleRelationConceptAttribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: ARIARoleRelationConceptAttribute*): Self = StObject.set(x, "attributes", js.Array(value*))
     
     inline def setConstraints(
       value: js.Array[
@@ -47,7 +47,7 @@ object ARIARoleRelationConcept {
     
     inline def setConstraintsVarargs(
       value: ((`direct descendant of document`) | (`direct descendant of olComma ul or menu`) | (`direct descendant of details element with the open attribute defined`) | (`descendant of table`))*
-    ): Self = StObject.set(x, "constraints", js.Array(value :_*))
+    ): Self = StObject.set(x, "constraints", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

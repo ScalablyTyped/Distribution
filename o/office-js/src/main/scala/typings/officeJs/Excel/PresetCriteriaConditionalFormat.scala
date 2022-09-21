@@ -11,9 +11,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents the preset criteria conditional format such as above average, below average, unique values, contains blank, nonblank, error, and noerror.
   *
-  * Represents the the preset criteria conditional format such as above average, below average, unique values, contains blank, nonblank, error, and noerror.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 @js.native
@@ -26,9 +26,9 @@ trait PresetCriteriaConditionalFormat
   var context_PresetCriteriaConditionalFormat: RequestContext = js.native
   
   /**
-    *
     * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   val format: ConditionalRangeFormat = js.native
@@ -45,21 +45,15 @@ trait PresetCriteriaConditionalFormat
   def load(propertyNames: js.Array[String]): PresetCriteriaConditionalFormat = js.native
   
   /**
-    *
     * The rule of the conditional format.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var rule: ConditionalPresetCriteriaRule = js.native
   
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.PresetCriteriaConditionalFormat): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */

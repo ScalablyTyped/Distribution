@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ChatMessages extends StObject {
   
+  var messageListLabel: js.UndefOr[String] = js.undefined
+  
   var placeholder: js.UndefOr[String] = js.undefined
   
   var sendButton: js.UndefOr[String] = js.undefined
@@ -20,6 +22,10 @@ object ChatMessages {
   }
   
   extension [Self <: ChatMessages](x: Self) {
+    
+    inline def setMessageListLabel(value: String): Self = StObject.set(x, "messageListLabel", value.asInstanceOf[js.Any])
+    
+    inline def setMessageListLabelUndefined: Self = StObject.set(x, "messageListLabel", js.undefined)
     
     inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     

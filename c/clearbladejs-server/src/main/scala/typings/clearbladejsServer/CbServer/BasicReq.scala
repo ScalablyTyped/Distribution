@@ -9,7 +9,7 @@ trait BasicReq extends StObject {
   
   val isLogging: Boolean
   
-  val params: StringDictionary[js.Any]
+  val params: StringDictionary[Any]
   
   val systemKey: String
   
@@ -25,7 +25,7 @@ object BasicReq {
   
   inline def apply(
     isLogging: Boolean,
-    params: StringDictionary[js.Any],
+    params: StringDictionary[Any],
     systemKey: String,
     systemSecret: String,
     userEmail: String,
@@ -40,7 +40,7 @@ object BasicReq {
     
     inline def setIsLogging(value: Boolean): Self = StObject.set(x, "isLogging", value.asInstanceOf[js.Any])
     
-    inline def setParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: StringDictionary[Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     inline def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
     

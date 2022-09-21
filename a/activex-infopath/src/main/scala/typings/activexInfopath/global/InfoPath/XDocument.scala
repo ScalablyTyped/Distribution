@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.XDocument")
 @js.native
-/* private */ class XDocument ()
+/* private */ open class XDocument ()
   extends StObject
      with typings.activexInfopath.InfoPath.XDocument {
   
@@ -27,13 +27,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val DataObjects: typings.activexInfopath.InfoPath.DataObjectsCollection = js.native
   
   /* CompleteClass */
-  override def Errors(Index: js.Any): Error = js.native
+  override def Errors(Index: Any): Error = js.native
   /* CompleteClass */
   @JSName("Errors")
   override val Errors_Original: Errors = js.native
   
   /* CompleteClass */
-  override val Extension: js.Any = js.native
+  override val Extension: Any = js.native
   
   /* CompleteClass */
   override def GetDOM(bstrName: String): IXMLDOMDocument = js.native
@@ -42,7 +42,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def GetDataVariable(lVariableNumber: Double): String = js.native
   
   /* CompleteClass */
-  override def GetNamedNodeProperty(varMainDOMNode: js.Any, bstrPropertyName: String, bstrDefaultValue: String): String = js.native
+  override def GetNamedNodeProperty(varMainDOMNode: Any, bstrPropertyName: String, bstrDefaultValue: String): String = js.native
   
   /* CompleteClass */
   override def ImportDOM(pxDoc: IXMLDOMDocument): Unit = js.native
@@ -82,7 +82,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def Query(): Unit = js.native
   
   /* CompleteClass */
-  override val QueryAdapter: js.Any = js.native
+  override val QueryAdapter: Any = js.native
   
   /* CompleteClass */
   var Role: String = js.native

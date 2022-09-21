@@ -18,7 +18,7 @@ trait WeightedGraph extends StObject {
   
   def node(v: Double): Node
   
-  /* private */ var nodeInfo: js.Any
+  /* private */ var nodeInfo: Any
 }
 object WeightedGraph {
   
@@ -29,7 +29,7 @@ object WeightedGraph {
     adjList: js.Array[js.Array[Edge]],
     edge: (Double, Double) => Edge | Null,
     node: Double => Node,
-    nodeInfo: js.Any
+    nodeInfo: Any
   ): WeightedGraph = {
     val __obj = js.Dynamic.literal(V = V.asInstanceOf[js.Any], addEdge = js.Any.fromFunction1(addEdge), adj = js.Any.fromFunction1(adj), adjList = adjList.asInstanceOf[js.Any], edge = js.Any.fromFunction2(edge), node = js.Any.fromFunction1(node), nodeInfo = nodeInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[WeightedGraph]
@@ -43,13 +43,13 @@ object WeightedGraph {
     
     inline def setAdjList(value: js.Array[js.Array[Edge]]): Self = StObject.set(x, "adjList", value.asInstanceOf[js.Any])
     
-    inline def setAdjListVarargs(value: js.Array[Edge]*): Self = StObject.set(x, "adjList", js.Array(value :_*))
+    inline def setAdjListVarargs(value: js.Array[Edge]*): Self = StObject.set(x, "adjList", js.Array(value*))
     
     inline def setEdge(value: (Double, Double) => Edge | Null): Self = StObject.set(x, "edge", js.Any.fromFunction2(value))
     
     inline def setNode(value: Double => Node): Self = StObject.set(x, "node", js.Any.fromFunction1(value))
     
-    inline def setNodeInfo(value: js.Any): Self = StObject.set(x, "nodeInfo", value.asInstanceOf[js.Any])
+    inline def setNodeInfo(value: Any): Self = StObject.set(x, "nodeInfo", value.asInstanceOf[js.Any])
     
     inline def setV(value: Double): Self = StObject.set(x, "V", value.asInstanceOf[js.Any])
   }

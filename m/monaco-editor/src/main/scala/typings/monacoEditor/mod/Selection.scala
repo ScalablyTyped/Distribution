@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("monaco-editor", "Selection")
 @js.native
-class Selection protected () extends Range {
+open class Selection protected () extends Range {
   def this(
     selectionStartLineNumber: Double,
     selectionStartColumn: Double,
@@ -28,6 +28,11 @@ class Selection protected () extends Range {
     * Get the position at `positionLineNumber` and `positionColumn`.
     */
   def getPosition(): Position = js.native
+  
+  /**
+    * Get the position at the start of the selection.
+    */
+  def getSelectionStart(): Position = js.native
   
   /**
     * The column on `positionLineNumber` where the selection has ended.
@@ -74,9 +79,14 @@ object Selection {
   inline def fromPositions(start: IPosition, end: IPosition): Selection = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPositions")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Selection]
   
   /**
+    * Creates a `Selection` from a range, given a direction.
+    */
+  inline def fromRange(range: Range, direction: SelectionDirection): Selection = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRange")(range.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[Selection]
+  
+  /**
     * Test if `obj` is an `ISelection`.
     */
-  inline def isISelection(obj: js.Any): /* is monaco-editor.monaco-editor.ISelection */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isISelection")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is monaco-editor.monaco-editor.ISelection */ Boolean]
+  inline def isISelection(obj: Any): /* is monaco-editor.monaco-editor.ISelection */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isISelection")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is monaco-editor.monaco-editor.ISelection */ Boolean]
   
   /**
     * Create a `Selection` from an `ISelection`.

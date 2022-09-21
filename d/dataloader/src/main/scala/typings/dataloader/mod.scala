@@ -1,7 +1,6 @@
 package typings.dataloader
 
 import typings.std.ArrayLike
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,41 +9,41 @@ object mod {
   
   @JSImport("dataloader", JSImport.Namespace)
   @js.native
-  class ^[K, V, C] protected ()
+  open class ^[K, V, C] protected ()
     extends StObject
        with DataLoader[K, V, C] {
     def this(batchLoadFn: BatchLoadFn[K, V]) = this()
     def this(batchLoadFn: BatchLoadFn[K, V], options: Options[K, V, C]) = this()
   }
   
-  type BatchLoadFn[K, V] = js.Function1[/* keys */ js.Array[K], js.Thenable[ArrayLike[V | Error]]]
+  type BatchLoadFn[K, V] = js.Function1[/* keys */ js.Array[K], js.Thenable[ArrayLike[V | js.Error]]]
   
   trait CacheMap[K, V] extends StObject {
     
-    def clear(): js.Any
+    def clear(): Any
     
-    def delete(key: K): js.Any
+    def delete(key: K): Any
     
     def get(key: K): V | Unit
     
-    def set(key: K, value: V): js.Any
+    def set(key: K, value: V): Any
   }
   object CacheMap {
     
-    inline def apply[K, V](clear: () => js.Any, delete: K => js.Any, get: K => V | Unit, set: (K, V) => js.Any): CacheMap[K, V] = {
+    inline def apply[K, V](clear: () => Any, delete: K => Any, get: K => V | Unit, set: (K, V) => Any): CacheMap[K, V] = {
       val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), delete = js.Any.fromFunction1(delete), get = js.Any.fromFunction1(get), set = js.Any.fromFunction2(set))
       __obj.asInstanceOf[CacheMap[K, V]]
     }
     
     extension [Self <: CacheMap[?, ?], K, V](x: Self & (CacheMap[K, V])) {
       
-      inline def setClear(value: () => js.Any): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Any): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      inline def setDelete(value: K => js.Any): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
+      inline def setDelete(value: K => Any): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
       
       inline def setGet(value: K => V | Unit): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      inline def setSet(value: (K, V) => js.Any): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (K, V) => Any): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     }
   }
   
@@ -82,14 +81,14 @@ object mod {
       *     ]);
       *
       */
-    def loadMany(keys: ArrayLike[K]): js.Promise[js.Array[V | Error]] = js.native
+    def loadMany(keys: ArrayLike[K]): js.Promise[js.Array[V | js.Error]] = js.native
     
     /**
-      * Adds the provied key and value to the cache. If the key already exists, no
+      * Adds the provided key and value to the cache. If the key already exists, no
       * change is made. Returns itself for method chaining.
       */
     def prime(key: K, value: V): this.type = js.native
-    def prime(key: K, value: Error): this.type = js.native
+    def prime(key: K, value: js.Error): this.type = js.native
   }
   
   trait Options[K, V, C] extends StObject {
@@ -117,7 +116,7 @@ object mod {
     
     /**
       * Default `key => key`. Produces cache key for a given load key. Useful
-      * when objects are keys and two objects should be considered equivalent.
+      * when keys are objects and two objects should be considered equivalent.
       */
     var cacheKeyFn: js.UndefOr[js.Function1[/* key */ K, C]] = js.undefined
     

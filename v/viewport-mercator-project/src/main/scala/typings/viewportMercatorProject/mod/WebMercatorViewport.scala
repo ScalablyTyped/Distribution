@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("viewport-mercator-project", "WebMercatorViewport")
 @js.native
-class WebMercatorViewport () extends Viewport {
+open class WebMercatorViewport () extends Viewport {
   def this(opts: WebMercatorViewportOptions) = this()
   
   var altitude: Double = js.native

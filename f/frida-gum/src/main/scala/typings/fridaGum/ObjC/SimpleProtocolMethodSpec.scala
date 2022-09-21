@@ -34,7 +34,7 @@ object SimpleProtocolMethodSpec {
     
     inline def setArgTypes(value: js.Array[String]): Self = StObject.set(x, "argTypes", value.asInstanceOf[js.Any])
     
-    inline def setArgTypesVarargs(value: String*): Self = StObject.set(x, "argTypes", js.Array(value :_*))
+    inline def setArgTypesVarargs(value: String*): Self = StObject.set(x, "argTypes", js.Array(value*))
     
     inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     

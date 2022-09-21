@@ -9,8 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("tabris.Constraint")
 @js.native
-class Constraint protected ()
+open class Constraint protected ()
   extends typings.tabris.mod.Constraint {
+  /**
+    * Represents a constraint on the layout of a widget that the parent uses to determine the position of
+    * one of its edges. See also ${doc:ConstraintValue}
+    */
   def this(reference: typings.tabris.mod.Percent, offset: Offset) = this()
   def this(reference: SiblingReference, offset: Offset) = this()
 }
@@ -23,25 +27,23 @@ object Constraint {
   
   /**
     * Creates a new instance of Constraint using [any valid constraint
-    * expression](../types.md#constraintvalue). For any other value, including `null` and `'auto'`, the
+    * expression](${doc:ConstraintValueUrl}). For any other value, including `null` and `'auto'`, the
     * method throws.
     * @param constraintValue The value to create an Constraint instance from.
     */
   inline def from(constraintValue: ConstraintValue): typings.tabris.mod.Constraint = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(constraintValue.asInstanceOf[js.Any]).asInstanceOf[typings.tabris.mod.Constraint]
   
   /**
-    * A [SiblingReference](../types.md#siblingreference) indicating the next widget in the list of children
-    * attached to the same parent. Used by the [`reference`](#reference) property. Also available as
-    * `LayoutData.next`.
+    * A ${doc:SiblingReference} indicating the next widget in the list of children attached to the same
+    * parent. Used by the [`reference`](#reference) property. Also available as `LayoutData.next`.
     */
   @JSGlobal("tabris.Constraint.next")
   @js.native
   val next: js.Symbol = js.native
   
   /**
-    * A [SiblingReference](../types.md#siblingreference) indicating the previous widget in the list of
-    * children attached to the same parent. Used by the [`reference`](#reference) property. Also available
-    * as `LayoutData.prev`.
+    * A ${doc:SiblingReference} indicating the previous widget in the list of children attached to the same
+    * parent. Used by the [`reference`](#reference) property. Also available as `LayoutData.prev`.
     */
   @JSGlobal("tabris.Constraint.prev")
   @js.native

@@ -36,6 +36,6 @@ object OpsItemFilter {
     
     inline def setValues(value: OpsItemFilterValues): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    inline def setValuesVarargs(value: OpsItemFilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: OpsItemFilterValue*): Self = StObject.set(x, "Values", js.Array(value*))
   }
 }

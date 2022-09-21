@@ -30,6 +30,6 @@ object ListVolumeRecoveryPointsOutput {
     
     inline def setVolumeRecoveryPointInfosUndefined: Self = StObject.set(x, "VolumeRecoveryPointInfos", js.undefined)
     
-    inline def setVolumeRecoveryPointInfosVarargs(value: VolumeRecoveryPointInfo*): Self = StObject.set(x, "VolumeRecoveryPointInfos", js.Array(value :_*))
+    inline def setVolumeRecoveryPointInfosVarargs(value: VolumeRecoveryPointInfo*): Self = StObject.set(x, "VolumeRecoveryPointInfos", js.Array(value*))
   }
 }

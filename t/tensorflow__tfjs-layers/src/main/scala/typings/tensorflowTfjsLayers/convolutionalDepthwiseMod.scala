@@ -23,18 +23,18 @@ object convolutionalDepthwiseMod {
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/convolutional_depthwise", "DepthwiseConv2D")
   @js.native
-  class DepthwiseConv2D_ protected () extends BaseConv {
+  open class DepthwiseConv2D_ protected () extends BaseConv {
     def this(args: DepthwiseConv2DLayerArgs) = this()
     
-    /* private */ val depthMultiplier: js.Any = js.native
+    /* private */ val depthMultiplier: Any = js.native
     
-    /* private */ val depthwiseConstraint: js.Any = js.native
+    /* private */ val depthwiseConstraint: Any = js.native
     
-    /* private */ val depthwiseInitializer: js.Any = js.native
+    /* private */ val depthwiseInitializer: Any = js.native
     
-    /* private */ var depthwiseKernel: js.Any = js.native
+    /* private */ var depthwiseKernel: Any = js.native
     
-    /* private */ val depthwiseRegularizer: js.Any = js.native
+    /* private */ val depthwiseRegularizer: Any = js.native
   }
   /* static members */
   object DepthwiseConv2D_ {

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access._PageHdrFtrInReport")
 @js.native
-/* private */ class PageHdrFtrInReport ()
+/* private */ open class PageHdrFtrInReport ()
   extends StObject
      with typings.activexAccess.Access.PageHdrFtrInReport {
   
@@ -146,7 +146,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OnRetreatMacro: String = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   override def Properties(Index: String): typings.activexAccess.Access.AccessProperty = js.native

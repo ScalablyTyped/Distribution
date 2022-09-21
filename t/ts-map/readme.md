@@ -10,10 +10,10 @@ A typescript Map structure like ES6 Map
 | ------------------ | :-------------: |
 | Full name          | ts-map |
 | Keywords           | typescript, Map, ts, ts-map |
-| # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 10312757 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1265266.6666666667 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/lavyun/ts-map)

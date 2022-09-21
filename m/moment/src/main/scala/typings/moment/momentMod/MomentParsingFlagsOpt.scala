@@ -22,7 +22,7 @@ trait MomentParsingFlagsOpt extends StObject {
   
   var overflow: js.UndefOr[Double] = js.undefined
   
-  var parsedDateParts: js.UndefOr[js.Array[js.Any]] = js.undefined
+  var parsedDateParts: js.UndefOr[js.Array[Any]] = js.undefined
   
   var unusedInput: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -73,23 +73,23 @@ object MomentParsingFlagsOpt {
     
     inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
     
-    inline def setParsedDateParts(value: js.Array[js.Any]): Self = StObject.set(x, "parsedDateParts", value.asInstanceOf[js.Any])
+    inline def setParsedDateParts(value: js.Array[Any]): Self = StObject.set(x, "parsedDateParts", value.asInstanceOf[js.Any])
     
     inline def setParsedDatePartsUndefined: Self = StObject.set(x, "parsedDateParts", js.undefined)
     
-    inline def setParsedDatePartsVarargs(value: js.Any*): Self = StObject.set(x, "parsedDateParts", js.Array(value :_*))
+    inline def setParsedDatePartsVarargs(value: Any*): Self = StObject.set(x, "parsedDateParts", js.Array(value*))
     
     inline def setUnusedInput(value: js.Array[String]): Self = StObject.set(x, "unusedInput", value.asInstanceOf[js.Any])
     
     inline def setUnusedInputUndefined: Self = StObject.set(x, "unusedInput", js.undefined)
     
-    inline def setUnusedInputVarargs(value: String*): Self = StObject.set(x, "unusedInput", js.Array(value :_*))
+    inline def setUnusedInputVarargs(value: String*): Self = StObject.set(x, "unusedInput", js.Array(value*))
     
     inline def setUnusedTokens(value: js.Array[String]): Self = StObject.set(x, "unusedTokens", value.asInstanceOf[js.Any])
     
     inline def setUnusedTokensUndefined: Self = StObject.set(x, "unusedTokens", js.undefined)
     
-    inline def setUnusedTokensVarargs(value: String*): Self = StObject.set(x, "unusedTokens", js.Array(value :_*))
+    inline def setUnusedTokensVarargs(value: String*): Self = StObject.set(x, "unusedTokens", js.Array(value*))
     
     inline def setUserInvalidated(value: Boolean): Self = StObject.set(x, "userInvalidated", value.asInstanceOf[js.Any])
     

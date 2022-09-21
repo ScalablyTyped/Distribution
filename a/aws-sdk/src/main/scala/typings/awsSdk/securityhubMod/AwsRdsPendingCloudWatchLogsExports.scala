@@ -29,12 +29,12 @@ object AwsRdsPendingCloudWatchLogsExports {
     
     inline def setLogTypesToDisableUndefined: Self = StObject.set(x, "LogTypesToDisable", js.undefined)
     
-    inline def setLogTypesToDisableVarargs(value: NonEmptyString*): Self = StObject.set(x, "LogTypesToDisable", js.Array(value :_*))
+    inline def setLogTypesToDisableVarargs(value: NonEmptyString*): Self = StObject.set(x, "LogTypesToDisable", js.Array(value*))
     
     inline def setLogTypesToEnable(value: StringList): Self = StObject.set(x, "LogTypesToEnable", value.asInstanceOf[js.Any])
     
     inline def setLogTypesToEnableUndefined: Self = StObject.set(x, "LogTypesToEnable", js.undefined)
     
-    inline def setLogTypesToEnableVarargs(value: NonEmptyString*): Self = StObject.set(x, "LogTypesToEnable", js.Array(value :_*))
+    inline def setLogTypesToEnableVarargs(value: NonEmptyString*): Self = StObject.set(x, "LogTypesToEnable", js.Array(value*))
   }
 }

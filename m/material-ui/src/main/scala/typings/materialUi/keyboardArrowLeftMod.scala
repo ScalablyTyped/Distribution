@@ -10,10 +10,10 @@ object keyboardArrowLeftMod {
   
   @JSImport("material-ui/svg-icons/hardware/keyboard-arrow-left", JSImport.Default)
   @js.native
-  class default () extends HardwareKeyboardArrowLeft
+  open class default () extends HardwareKeyboardArrowLeft
   
   @JSImport("material-ui/svg-icons/hardware/keyboard-arrow-left", "HardwareKeyboardArrowLeft")
   @js.native
-  class HardwareKeyboardArrowLeft ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class HardwareKeyboardArrowLeft ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

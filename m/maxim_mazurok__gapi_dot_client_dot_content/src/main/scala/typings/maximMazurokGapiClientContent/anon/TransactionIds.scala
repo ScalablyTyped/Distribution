@@ -119,7 +119,7 @@ object TransactionIds {
     
     inline def setTransactionIdsUndefined: Self = StObject.set(x, "transactionIds", js.undefined)
     
-    inline def setTransactionIdsVarargs(value: String*): Self = StObject.set(x, "transactionIds", js.Array(value :_*))
+    inline def setTransactionIdsVarargs(value: String*): Self = StObject.set(x, "transactionIds", js.Array(value*))
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

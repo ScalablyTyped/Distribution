@@ -1,6 +1,5 @@
 package typings.awsSdkClientPinpointBrowser
 
-import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,7 +29,7 @@ object typesUpdateAttributesRequestMod {
       
       inline def setBlacklistUndefined: Self = StObject.set(x, "Blacklist", js.undefined)
       
-      inline def setBlacklistVarargs(value: String*): Self = StObject.set(x, "Blacklist", js.Array(value :_*))
+      inline def setBlacklistVarargs(value: String*): Self = StObject.set(x, "Blacklist", js.Array(value*))
     }
   }
   
@@ -39,7 +38,7 @@ object typesUpdateAttributesRequestMod {
     /**
       * The GLOB wildcard for removing the attributes in the application
       */
-    var Blacklist: js.UndefOr[js.Array[String] | Iterable[String]] = js.undefined
+    var Blacklist: js.UndefOr[js.Array[String] | js.Iterable[String]] = js.undefined
   }
   object UpdateAttributesRequest {
     
@@ -50,11 +49,11 @@ object typesUpdateAttributesRequestMod {
     
     extension [Self <: UpdateAttributesRequest](x: Self) {
       
-      inline def setBlacklist(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "Blacklist", value.asInstanceOf[js.Any])
+      inline def setBlacklist(value: js.Array[String] | js.Iterable[String]): Self = StObject.set(x, "Blacklist", value.asInstanceOf[js.Any])
       
       inline def setBlacklistUndefined: Self = StObject.set(x, "Blacklist", js.undefined)
       
-      inline def setBlacklistVarargs(value: String*): Self = StObject.set(x, "Blacklist", js.Array(value :_*))
+      inline def setBlacklistVarargs(value: String*): Self = StObject.set(x, "Blacklist", js.Array(value*))
     }
   }
 }

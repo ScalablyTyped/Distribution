@@ -13,13 +13,15 @@ object mod {
   
   @JSImport("promise-timeout", "TimeoutError")
   @js.native
-  class TimeoutError ()
+  open class TimeoutError ()
     extends StObject
        with Error {
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }

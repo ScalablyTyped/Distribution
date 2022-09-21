@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object httpResponseMod {
   
-  @JSImport("@aws-sdk/protocol-http/dist/cjs/httpResponse", "HttpResponse")
+  @JSImport("@aws-sdk/protocol-http/dist-types/httpResponse", "HttpResponse")
   @js.native
-  class HttpResponse protected ()
+  open class HttpResponse protected ()
     extends StObject
        with typings.awsSdkTypes.httpMod.HttpResponse {
     def this(options: HttpResponseOptions) = this()
@@ -23,17 +23,17 @@ object httpResponseMod {
   /* static members */
   object HttpResponse {
     
-    @JSImport("@aws-sdk/protocol-http/dist/cjs/httpResponse", "HttpResponse")
+    @JSImport("@aws-sdk/protocol-http/dist-types/httpResponse", "HttpResponse")
     @js.native
     val ^ : js.Any = js.native
     
-    inline def isInstance(response: js.Any): /* is @aws-sdk/protocol-http.@aws-sdk/protocol-http/dist/cjs/httpResponse.HttpResponse */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(response.asInstanceOf[js.Any]).asInstanceOf[/* is @aws-sdk/protocol-http.@aws-sdk/protocol-http/dist/cjs/httpResponse.HttpResponse */ Boolean]
+    inline def isInstance(response: Any): /* is @aws-sdk/protocol-http.@aws-sdk/protocol-http/dist-types/httpResponse.HttpResponse */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(response.asInstanceOf[js.Any]).asInstanceOf[/* is @aws-sdk/protocol-http.@aws-sdk/protocol-http/dist-types/httpResponse.HttpResponse */ Boolean]
   }
   
   /* Inlined std.Partial<@aws-sdk/types.@aws-sdk/types.HttpMessage> & {  statusCode :number} */
   trait HttpResponseOptions extends StObject {
     
-    var body: js.UndefOr[js.Any] = js.undefined
+    var body: js.UndefOr[Any] = js.undefined
     
     var headers: js.UndefOr[HeaderBag] = js.undefined
     
@@ -48,7 +48,7 @@ object httpResponseMod {
     
     extension [Self <: HttpResponseOptions](x: Self) {
       
-      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       

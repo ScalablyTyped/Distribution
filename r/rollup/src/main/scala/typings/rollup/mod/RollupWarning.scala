@@ -49,7 +49,7 @@ object RollupWarning {
     
     inline def setCycleUndefined: Self = StObject.set(x, "cycle", js.undefined)
     
-    inline def setCycleVarargs(value: String*): Self = StObject.set(x, "cycle", js.Array(value :_*))
+    inline def setCycleVarargs(value: String*): Self = StObject.set(x, "cycle", js.Array(value*))
     
     inline def setExportName(value: String): Self = StObject.set(x, "exportName", value.asInstanceOf[js.Any])
     
@@ -75,13 +75,13 @@ object RollupWarning {
     
     inline def setModulesUndefined: Self = StObject.set(x, "modules", js.undefined)
     
-    inline def setModulesVarargs(value: String*): Self = StObject.set(x, "modules", js.Array(value :_*))
+    inline def setModulesVarargs(value: String*): Self = StObject.set(x, "modules", js.Array(value*))
     
     inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
     inline def setNamesUndefined: Self = StObject.set(x, "names", js.undefined)
     
-    inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
+    inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value*))
     
     inline def setReexporter(value: String): Self = StObject.set(x, "reexporter", value.asInstanceOf[js.Any])
     
@@ -95,6 +95,6 @@ object RollupWarning {
     
     inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
-    inline def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value*))
   }
 }

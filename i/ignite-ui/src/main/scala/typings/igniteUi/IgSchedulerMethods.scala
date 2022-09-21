@@ -1,6 +1,5 @@
 package typings.igniteUi
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,7 +60,7 @@ trait IgSchedulerMethods extends StObject {
     * @param start Start date.
     * @param end End date.
     */
-  def getAppointmentsInRange(start: Date, end: Date): js.Object
+  def getAppointmentsInRange(start: js.Date, end: js.Date): js.Object
   
   /**
     * Gets reference to the jQuery calendar UI control.
@@ -94,7 +93,7 @@ object IgSchedulerMethods {
     deleteAppointment: js.Object => js.Object,
     destroy: () => Unit,
     editAppointment: (js.Object, js.Object) => js.Object,
-    getAppointmentsInRange: (Date, Date) => js.Object,
+    getAppointmentsInRange: (js.Date, js.Date) => js.Object,
     getCalendar: () => String,
     nextButton: () => String,
     previousButton: () => String,
@@ -122,7 +121,7 @@ object IgSchedulerMethods {
     
     inline def setEditAppointment(value: (js.Object, js.Object) => js.Object): Self = StObject.set(x, "editAppointment", js.Any.fromFunction2(value))
     
-    inline def setGetAppointmentsInRange(value: (Date, Date) => js.Object): Self = StObject.set(x, "getAppointmentsInRange", js.Any.fromFunction2(value))
+    inline def setGetAppointmentsInRange(value: (js.Date, js.Date) => js.Object): Self = StObject.set(x, "getAppointmentsInRange", js.Any.fromFunction2(value))
     
     inline def setGetCalendar(value: () => String): Self = StObject.set(x, "getCalendar", js.Any.fromFunction0(value))
     

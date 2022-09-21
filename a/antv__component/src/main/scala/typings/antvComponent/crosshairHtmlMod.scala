@@ -10,20 +10,20 @@ object crosshairHtmlMod {
   
   @JSImport("@antv/component/lib/crosshair/html", JSImport.Default)
   @js.native
-  class default[T /* <: HtmlCrossHairCfg */] () extends HtmlCrosshair[T]
+  open class default[T /* <: HtmlCrossHairCfg */] () extends HtmlCrosshair[T]
   
   @js.native
   trait HtmlCrosshair[T /* <: HtmlCrossHairCfg */]
     extends typings.antvComponent.htmlComponentMod.default[HtmlComponentCfg] {
     
-    /* private */ var alignText: js.Any = js.native
+    /* private */ var alignText: Any = js.native
     
-    /* private */ var getTextPoint: js.Any = js.native
+    /* private */ var getTextPoint: Any = js.native
     
-    /* private */ var initCrossHair: js.Any = js.native
+    /* private */ var initCrossHair: Any = js.native
     
-    /* private */ var isVertical: js.Any = js.native
+    /* private */ var isVertical: Any = js.native
     
-    /* private */ var resetText: js.Any = js.native
+    /* private */ var resetText: Any = js.native
   }
 }

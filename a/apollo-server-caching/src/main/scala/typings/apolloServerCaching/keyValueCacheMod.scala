@@ -37,14 +37,4 @@ object keyValueCacheMod {
       inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
     }
   }
-  
-  @js.native
-  trait TestableKeyValueCache[V]
-    extends StObject
-       with KeyValueCache[V] {
-    
-    var close: js.UndefOr[js.Function0[js.Promise[Unit]]] = js.native
-    
-    var flush: js.UndefOr[js.Function0[js.Promise[Unit]]] = js.native
-  }
 }

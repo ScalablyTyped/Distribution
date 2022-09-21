@@ -60,7 +60,7 @@ object QueryFilter {
     
     inline def setCriteria(value: js.Array[FilterCriteria]): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     
-    inline def setCriteriaVarargs(value: FilterCriteria*): Self = StObject.set(x, "criteria", js.Array(value :_*))
+    inline def setCriteriaVarargs(value: FilterCriteria*): Self = StObject.set(x, "criteria", js.Array(value*))
     
     inline def setDirection(value: PagingDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

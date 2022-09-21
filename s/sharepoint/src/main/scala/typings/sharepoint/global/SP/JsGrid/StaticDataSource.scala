@@ -8,17 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("SP.JsGrid.StaticDataSource")
 @js.native
-class StaticDataSource protected ()
+open class StaticDataSource protected ()
   extends StObject
      with typings.sharepoint.SP.JsGrid.StaticDataSource {
   def this(jsGridData: IGridData) = this()
   def this(
     jsGridData: IGridData,
-    optFnGetPropType: js.Function3[
-        /* recordKey */ String, 
-        /* key */ String, 
-        /* dataPropMap */ StringDictionary[js.Any], 
-        js.Any
-      ]
+    optFnGetPropType: js.Function3[/* recordKey */ String, /* key */ String, /* dataPropMap */ StringDictionary[Any], Any]
   ) = this()
 }

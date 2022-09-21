@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MessagePropertyHeaders
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   var `x-death`: js.UndefOr[js.Array[XDeath]] = js.undefined
   
@@ -30,7 +30,7 @@ object MessagePropertyHeaders {
     
     inline def `setX-deathUndefined`: Self = StObject.set(x, "x-death", js.undefined)
     
-    inline def `setX-deathVarargs`(value: XDeath*): Self = StObject.set(x, "x-death", js.Array(value :_*))
+    inline def `setX-deathVarargs`(value: XDeath*): Self = StObject.set(x, "x-death", js.Array(value*))
     
     inline def `setX-first-death-exchange`(value: String): Self = StObject.set(x, "x-first-death-exchange", value.asInstanceOf[js.Any])
     

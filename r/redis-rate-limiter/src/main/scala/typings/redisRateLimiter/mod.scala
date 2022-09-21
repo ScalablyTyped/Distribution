@@ -2,11 +2,8 @@ package typings.redisRateLimiter
 
 import typings.express.mod.RequestHandler
 import typings.express.mod.Request_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
-import typings.redis.mod.RedisClient
 import typings.redisRateLimiter.redisRateLimiterStrings.ip
-import typings.std.Error
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +12,7 @@ object mod {
   
   @JSImport("redis-rate-limiter", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with RedisRateLimiter
   @JSImport("redis-rate-limiter", JSImport.Namespace)
@@ -24,23 +21,56 @@ object mod {
   
   /* static member */
   inline def create(options: Options): js.Function2[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-    /* callback */ js.Function2[/* err */ Error, /* res */ Response, Unit], 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
+    /* callback */ js.Function2[/* err */ js.Error, /* res */ Response, Unit], 
     Unit
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-    /* callback */ js.Function2[/* err */ Error, /* res */ Response, Unit], 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
+    /* callback */ js.Function2[/* err */ js.Error, /* res */ Response, Unit], 
     Unit
   ]]
   
   /* static member */
-  inline def middleware(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def middleware(options: Options): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
   
   trait Options extends StObject {
     
     var deleteImmediatelyIfRaceCondition: js.UndefOr[Boolean] = js.undefined
     
-    var key: ip | (js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], String])
+    var key: ip | (js.Function1[
+        /* req */ Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ], 
+        String
+      ])
     
     var limit: js.UndefOr[Double] = js.undefined
     
@@ -48,15 +78,24 @@ object mod {
     
     var rate: js.UndefOr[String] = js.undefined
     
-    var redis: RedisClient
+    var redis: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify redis.RedisClient */ Any
     
     var window: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
     inline def apply(
-      key: ip | (js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], String]),
-      redis: RedisClient
+      key: ip | (js.Function1[
+          /* req */ Request_[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+            Any, 
+            Any, 
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+            Record[String, Any]
+          ], 
+          String
+        ]),
+      redis: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify redis.RedisClient */ Any
     ): Options = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], redis = redis.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
@@ -68,9 +107,28 @@ object mod {
       
       inline def setDeleteImmediatelyIfRaceConditionUndefined: Self = StObject.set(x, "deleteImmediatelyIfRaceCondition", js.undefined)
       
-      inline def setKey(value: ip | (js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], String])): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(
+        value: ip | (js.Function1[
+              /* req */ Request_[
+                /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+                Any, 
+                Any, 
+                /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+                Record[String, Any]
+              ], 
+              String
+            ])
+      ): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      inline def setKeyFunction1(value: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => String): Self = StObject.set(x, "key", js.Any.fromFunction1(value))
+      inline def setKeyFunction1(
+        value: /* req */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ] => String
+      ): Self = StObject.set(x, "key", js.Any.fromFunction1(value))
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
@@ -84,7 +142,9 @@ object mod {
       
       inline def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
       
-      inline def setRedis(value: RedisClient): Self = StObject.set(x, "redis", value.asInstanceOf[js.Any])
+      inline def setRedis(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify redis.RedisClient */ Any
+      ): Self = StObject.set(x, "redis", value.asInstanceOf[js.Any])
       
       inline def setWindow(value: Double): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
       

@@ -12,7 +12,7 @@ trait ModifyVpnTunnelCertificateRequest extends StObject {
   var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The ID of the AWS Site-to-Site VPN connection.
+    * The ID of the Amazon Web Services Site-to-Site VPN connection.
     */
   var VpnConnectionId: typings.awsSdk.ec2Mod.VpnConnectionId
   

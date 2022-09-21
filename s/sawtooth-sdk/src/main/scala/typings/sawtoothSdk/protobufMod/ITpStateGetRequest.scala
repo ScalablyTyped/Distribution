@@ -27,7 +27,7 @@ object ITpStateGetRequest {
     
     inline def setAddressesUndefined: Self = StObject.set(x, "addresses", js.undefined)
     
-    inline def setAddressesVarargs(value: String*): Self = StObject.set(x, "addresses", js.Array(value :_*))
+    inline def setAddressesVarargs(value: String*): Self = StObject.set(x, "addresses", js.Array(value*))
     
     inline def setContextId(value: String): Self = StObject.set(x, "contextId", value.asInstanceOf[js.Any])
     

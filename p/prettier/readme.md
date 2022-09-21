@@ -1,7 +1,7 @@
 
 # Scala.js typings for prettier
 
-Typings are for version 2.1
+Typings are for version 2.7
 
 ## Library description:
 Prettier is an opinionated code formatter
@@ -10,10 +10,10 @@ Prettier is an opinionated code formatter
 | ------------------ | :-------------: |
 | Full name          | prettier |
 | Keywords           | - |
-| # releases         | 24 |
-| # dependents       | 5364 |
-| # downloads        | 468134905 |
-| # stars            | 63 |
+| # releases         | 17 |
+| # dependents       | 0.0 |
+| # downloads        | 9.736769733333333E7 |
+| # stars            | 43601.0 |
 
 ## Links
 - [Homepage](https://prettier.io)

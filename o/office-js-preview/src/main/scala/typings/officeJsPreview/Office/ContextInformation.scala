@@ -6,6 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * Provides information about the environment in which the add-in is running.
+  * 
+  * @remarks
+  * **Important**: In Outlook, this object is available from Mailbox requirement set 1.5. 
+  * For all Mailbox requirement sets, you can use the 
+  * {@link https://learn.microsoft.com/javascript/api/outlook/office.mailbox?view=outlook-js-preview&preserve-view=true#outlook-office-mailbox-diagnostics-member | Office.context.mailbox.diagnostics} 
+  * property to get similar information.
   */
 trait ContextInformation extends StObject {
   

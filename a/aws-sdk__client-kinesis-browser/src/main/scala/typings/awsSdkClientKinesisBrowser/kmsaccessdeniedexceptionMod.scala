@@ -8,5 +8,5 @@ object kmsaccessdeniedexceptionMod {
   
   @JSImport("@aws-sdk/client-kinesis-browser/model/KMSAccessDeniedException", "KMSAccessDeniedException")
   @js.native
-  val KMSAccessDeniedException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val KMSAccessDeniedException: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

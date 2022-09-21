@@ -8,5 +8,5 @@ object batchResultErrorEntryMod {
   
   @JSImport("@aws-sdk/client-sqs-node/model/_BatchResultErrorEntry", "_BatchResultErrorEntry")
   @js.native
-  val BatchResultErrorEntry: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ js.Any = js.native
+  val BatchResultErrorEntry: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Structure_ */ Any = js.native
 }

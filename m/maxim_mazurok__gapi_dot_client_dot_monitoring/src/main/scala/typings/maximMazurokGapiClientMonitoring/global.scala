@@ -1,5 +1,7 @@
 package typings.maximMazurokGapiClientMonitoring
 
+import typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring.FoldersResource
+import typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring.OrganizationsResource
 import typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring.ProjectsResource
 import typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring.ServicesResource
 import typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring.UptimeCheckIpsResource
@@ -21,9 +23,17 @@ object global {
       
       /** Load Cloud Monitoring API v3 */
       inline def load(name: monitoring, version: v3): js.Thenable[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Unit]]
-      inline def load(name: monitoring, version: v3, callback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def load(name: monitoring, version: v3, callback: js.Function0[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       object monitoring {
+        
+        @JSGlobal("gapi.client.monitoring.folders")
+        @js.native
+        val folders: FoldersResource = js.native
+        
+        @JSGlobal("gapi.client.monitoring.organizations")
+        @js.native
+        val organizations: OrganizationsResource = js.native
         
         @JSGlobal("gapi.client.monitoring.projects")
         @js.native

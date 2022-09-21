@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LineAndCharacter extends StObject {
   
-  /* private */ var _character: js.Any
+  /* private */ var _character: Any
   
-  /* private */ var _line: js.Any
+  /* private */ var _line: Any
   
   def character(): Double
   
@@ -16,7 +16,7 @@ trait LineAndCharacter extends StObject {
 }
 object LineAndCharacter {
   
-  inline def apply(_character: js.Any, _line: js.Any, character: () => Double, line: () => Double): LineAndCharacter = {
+  inline def apply(_character: Any, _line: Any, character: () => Double, line: () => Double): LineAndCharacter = {
     val __obj = js.Dynamic.literal(_character = _character.asInstanceOf[js.Any], _line = _line.asInstanceOf[js.Any], character = js.Any.fromFunction0(character), line = js.Any.fromFunction0(line))
     __obj.asInstanceOf[LineAndCharacter]
   }
@@ -27,8 +27,8 @@ object LineAndCharacter {
     
     inline def setLine(value: () => Double): Self = StObject.set(x, "line", js.Any.fromFunction0(value))
     
-    inline def set_character(value: js.Any): Self = StObject.set(x, "_character", value.asInstanceOf[js.Any])
+    inline def set_character(value: Any): Self = StObject.set(x, "_character", value.asInstanceOf[js.Any])
     
-    inline def set_line(value: js.Any): Self = StObject.set(x, "_line", value.asInstanceOf[js.Any])
+    inline def set_line(value: Any): Self = StObject.set(x, "_line", value.asInstanceOf[js.Any])
   }
 }

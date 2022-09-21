@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mocha", JSImport.Namespace)
 @js.native
-class ^ ()
+open class ^ ()
   extends StObject
      with Mocha {
   def this(options: MochaOptions) = this()

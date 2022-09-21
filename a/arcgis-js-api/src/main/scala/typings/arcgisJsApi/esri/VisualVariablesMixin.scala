@@ -24,6 +24,6 @@ object VisualVariablesMixin {
     
     inline def setVisualVariables(value: js.Array[VisualVariable]): Self = StObject.set(x, "visualVariables", value.asInstanceOf[js.Any])
     
-    inline def setVisualVariablesVarargs(value: VisualVariable*): Self = StObject.set(x, "visualVariables", js.Array(value :_*))
+    inline def setVisualVariablesVarargs(value: VisualVariable*): Self = StObject.set(x, "visualVariables", js.Array(value*))
   }
 }

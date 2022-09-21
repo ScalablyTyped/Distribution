@@ -39,6 +39,6 @@ object ReplyList {
     
     inline def setRepliesUndefined: Self = StObject.set(x, "replies", js.undefined)
     
-    inline def setRepliesVarargs(value: Reply*): Self = StObject.set(x, "replies", js.Array(value :_*))
+    inline def setRepliesVarargs(value: Reply*): Self = StObject.set(x, "replies", js.Array(value*))
   }
 }

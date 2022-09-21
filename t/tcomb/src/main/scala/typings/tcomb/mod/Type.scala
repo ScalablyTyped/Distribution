@@ -13,7 +13,7 @@ trait Type[T]
   
   var displayName: java.lang.String = js.native
   
-  def is(x: js.Any): /* is T */ scala.Boolean = js.native
+  def is(x: scala.Any): /* is T */ scala.Boolean = js.native
   @JSName("is")
   var is_Original: TypeGuardPredicate[T] = js.native
   

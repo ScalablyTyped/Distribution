@@ -8,7 +8,6 @@ import typings.sipJs.referralMod.Referral
 import typings.sipJs.registerMod.IncomingRegisterRequest
 import typings.sipJs.subscribeMod.IncomingSubscribeRequest
 import typings.sipJs.subscriptionMod.Subscription
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +25,7 @@ object userAgentDelegateMod {
       * Called upon transport transitioning from connected state.
       * @param error - An error if disconnect triggered by transport. Otherwise undefined.
       */
-    var onDisconnect: js.UndefOr[js.Function1[/* error */ js.UndefOr[Error], Unit]] = js.undefined
+    var onDisconnect: js.UndefOr[js.Function1[/* error */ js.UndefOr[js.Error], Unit]] = js.undefined
     
     /**
       * Called upon receipt of an invitation.
@@ -75,7 +74,7 @@ object userAgentDelegateMod {
       * Handler for incoming out of dialog REGISTER requests.
       * @param registration - The registration.
       */
-    var onRegister: js.UndefOr[js.Function1[/* registration */ js.Any, Unit]] = js.undefined
+    var onRegister: js.UndefOr[js.Function1[/* registration */ Any, Unit]] = js.undefined
     
     /**
       * @internal
@@ -113,7 +112,7 @@ object userAgentDelegateMod {
       
       inline def setOnConnectUndefined: Self = StObject.set(x, "onConnect", js.undefined)
       
-      inline def setOnDisconnect(value: /* error */ js.UndefOr[Error] => Unit): Self = StObject.set(x, "onDisconnect", js.Any.fromFunction1(value))
+      inline def setOnDisconnect(value: /* error */ js.UndefOr[js.Error] => Unit): Self = StObject.set(x, "onDisconnect", js.Any.fromFunction1(value))
       
       inline def setOnDisconnectUndefined: Self = StObject.set(x, "onDisconnect", js.undefined)
       
@@ -137,7 +136,7 @@ object userAgentDelegateMod {
       
       inline def setOnReferUndefined: Self = StObject.set(x, "onRefer", js.undefined)
       
-      inline def setOnRegister(value: /* registration */ js.Any => Unit): Self = StObject.set(x, "onRegister", js.Any.fromFunction1(value))
+      inline def setOnRegister(value: /* registration */ Any => Unit): Self = StObject.set(x, "onRegister", js.Any.fromFunction1(value))
       
       inline def setOnRegisterRequest(value: /* request */ IncomingRegisterRequest => Unit): Self = StObject.set(x, "onRegisterRequest", js.Any.fromFunction1(value))
       

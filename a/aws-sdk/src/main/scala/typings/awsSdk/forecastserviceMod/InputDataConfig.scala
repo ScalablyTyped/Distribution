@@ -31,6 +31,6 @@ object InputDataConfig {
     
     inline def setSupplementaryFeaturesUndefined: Self = StObject.set(x, "SupplementaryFeatures", js.undefined)
     
-    inline def setSupplementaryFeaturesVarargs(value: SupplementaryFeature*): Self = StObject.set(x, "SupplementaryFeatures", js.Array(value :_*))
+    inline def setSupplementaryFeaturesVarargs(value: SupplementaryFeature*): Self = StObject.set(x, "SupplementaryFeatures", js.Array(value*))
   }
 }

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IGenericProperties
   extends StObject
      with // ?Dynamic properties?
-/* qMetaDef */ StringDictionary[js.Any] {
+/* qMetaDef */ StringDictionary[Any] {
   
   /**
     * Identifier and type of the object.

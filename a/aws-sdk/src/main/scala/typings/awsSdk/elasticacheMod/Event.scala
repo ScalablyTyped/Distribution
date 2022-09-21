@@ -9,7 +9,7 @@ trait Event extends StObject {
   /**
     * The date and time when the event occurred.
     */
-  var Date: js.UndefOr[TStamp] = js.undefined
+  var Date: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The text of the event.
@@ -35,7 +35,7 @@ object Event {
   
   extension [Self <: Event](x: Self) {
     
-    inline def setDate(value: TStamp): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
+    inline def setDate(value: js.Date): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
     
     inline def setDateUndefined: Self = StObject.set(x, "Date", js.undefined)
     

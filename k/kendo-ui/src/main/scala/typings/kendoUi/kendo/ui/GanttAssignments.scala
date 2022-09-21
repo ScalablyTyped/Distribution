@@ -9,7 +9,7 @@ trait GanttAssignments extends StObject {
   
   var dataResourceIdField: js.UndefOr[String] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any | DataSource] = js.undefined
+  var dataSource: js.UndefOr[Any | DataSource] = js.undefined
   
   var dataTaskIdField: js.UndefOr[String] = js.undefined
   
@@ -28,7 +28,7 @@ object GanttAssignments {
     
     inline def setDataResourceIdFieldUndefined: Self = StObject.set(x, "dataResourceIdField", js.undefined)
     
-    inline def setDataSource(value: js.Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     

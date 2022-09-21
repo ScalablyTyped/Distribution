@@ -1,6 +1,5 @@
 package typings.ngkookies
 
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,11 +65,11 @@ object angular {
     @js.native
     trait IKookiesService extends StObject {
       
-      def get(): js.Any = js.native
-      def get(name: String): js.Any = js.native
-      def get(name: String, converter: js.Any): js.Any = js.native
+      def get(): Any = js.native
+      def get(name: String): Any = js.native
+      def get(name: String, converter: Any): Any = js.native
       @JSName("get")
-      def get_T_T[T](name: String, converter: js.Any): T = js.native
+      def get_T_T[T](name: String, converter: Any): T = js.native
       
       def remove(name: String): Boolean = js.native
       def remove(name: String, options: Options): Boolean = js.native
@@ -83,7 +82,7 @@ object angular {
       
       var domain: js.UndefOr[String] = js.undefined
       
-      var expires: js.UndefOr[Double | Date] = js.undefined
+      var expires: js.UndefOr[Double | js.Date] = js.undefined
       
       var path: js.UndefOr[String] = js.undefined
       
@@ -102,7 +101,7 @@ object angular {
         
         inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
         
-        inline def setExpires(value: Double | Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+        inline def setExpires(value: Double | js.Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
         
         inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
         

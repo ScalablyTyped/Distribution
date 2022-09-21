@@ -27,6 +27,9 @@ trait GoogleCloudMlV1Job extends StObject {
   /** Required. The user-specified id of the job. */
   var jobId: js.UndefOr[String] = js.undefined
   
+  /** Output only. It's only effect when the job is in QUEUED state. If it's positive, it indicates the job's position in the job scheduler. It's 0 when the job is already scheduled. */
+  var jobPosition: js.UndefOr[String] = js.undefined
+  
   /**
     * Optional. One or more labels that you can add, to organize your jobs. Each label is a key-value pair, where both the key and the value are arbitrary strings that you supply. For
     * more information, see the documentation on using labels.
@@ -34,7 +37,7 @@ trait GoogleCloudMlV1Job extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ GoogleCloudMlV1__Job & TopLevel[js.Any]
+    */ GoogleCloudMlV1__Job & TopLevel[Any]
   ] = js.undefined
   
   /** Input parameters to create a prediction job. */
@@ -84,10 +87,14 @@ object GoogleCloudMlV1Job {
     
     inline def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
     
+    inline def setJobPosition(value: String): Self = StObject.set(x, "jobPosition", value.asInstanceOf[js.Any])
+    
+    inline def setJobPositionUndefined: Self = StObject.set(x, "jobPosition", js.undefined)
+    
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ GoogleCloudMlV1__Job & TopLevel[js.Any]
+      */ GoogleCloudMlV1__Job & TopLevel[Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)

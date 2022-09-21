@@ -41,7 +41,7 @@ trait DevInfo[S] extends StObject {
   
   var codeIds: Record[String, String]
   
-  var communication: Record[String, js.Any]
+  var communication: Record[String, Any]
   
   var devAttribute: Double
   
@@ -54,9 +54,9 @@ trait DevInfo[S] extends StObject {
   
   var deviceType: Double
   
-  var displayDps: js.Array[js.Any]
+  var displayDps: js.Array[Any]
   
-  var displayMsgs: Record[String, js.Any]
+  var displayMsgs: Record[String, Any]
   
   var displayOrder: Double
   
@@ -68,9 +68,11 @@ trait DevInfo[S] extends StObject {
   
   var errorCode: Double
   
-  var faultDps: js.Array[js.Any]
+  var faultDps: js.Array[Any]
   
   var gatewayVerCAD: String
+  
+  var groupId: js.UndefOr[String] = js.undefined
   
   var gwType: String
   
@@ -119,9 +121,11 @@ trait DevInfo[S] extends StObject {
   
   var networkType: NetworkType
   
-  var originJson: Record[String, js.Any]
+  var originJson: Record[String, Any]
   
   var panelConfig: Bic
+  
+  var parentId: js.UndefOr[String] = js.undefined
   
   var pcc: String
   
@@ -131,7 +135,7 @@ trait DevInfo[S] extends StObject {
   
   var pv: Double
   
-  var quickOpDps: js.Array[js.Any]
+  var quickOpDps: js.Array[Any]
   
   var rnFind: Boolean
   
@@ -141,7 +145,7 @@ trait DevInfo[S] extends StObject {
   
   var schema: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof S ]: tuya-panel-kit.tuya-panel-kit.DpSchema}
-    */ typings.tuyaPanelKit.tuyaPanelKitStrings.DevInfo & TopLevel[js.Any]
+    */ typings.tuyaPanelKit.tuyaPanelKitStrings.DevInfo & TopLevel[Any]
   
   var schemaExt: String
   
@@ -149,7 +153,7 @@ trait DevInfo[S] extends StObject {
   
   var sigmeshId: String
   
-  var standSchemaModel: Record[String, js.Any]
+  var standSchemaModel: Record[String, Any]
   
   var standard: Boolean
   
@@ -197,19 +201,19 @@ object DevInfo {
     categoryCode: String,
     cloudOnline: Boolean,
     codeIds: Record[String, String],
-    communication: Record[String, js.Any],
+    communication: Record[String, Any],
     devAttribute: Double,
     devId: String,
     deviceOnline: Boolean,
     deviceType: Double,
-    displayDps: js.Array[js.Any],
-    displayMsgs: Record[String, js.Any],
+    displayDps: js.Array[Any],
+    displayMsgs: Record[String, Any],
     displayOrder: Double,
     dpMaxTime: Double,
     dpName: Record[String | Double, String],
     dps: Record[Double, String],
     errorCode: Double,
-    faultDps: js.Array[js.Any],
+    faultDps: js.Array[Any],
     gatewayVerCAD: String,
     gwType: String,
     homeDisplayOrder: Double,
@@ -233,23 +237,23 @@ object DevInfo {
     meshId: String,
     name: String,
     networkType: NetworkType,
-    originJson: Record[String, js.Any],
+    originJson: Record[String, Any],
     panelConfig: Bic,
     pcc: String,
     productId: String,
     protocolAttribute: Double,
     pv: Double,
-    quickOpDps: js.Array[js.Any],
+    quickOpDps: js.Array[Any],
     rnFind: Boolean,
     roomId: Double,
     runtimeEnv: String,
     schema: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof S ]: tuya-panel-kit.tuya-panel-kit.DpSchema}
-    */ typings.tuyaPanelKit.tuyaPanelKitStrings.DevInfo & TopLevel[js.Any],
+    */ typings.tuyaPanelKit.tuyaPanelKitStrings.DevInfo & TopLevel[Any],
     schemaExt: String,
     sharedTime: Double,
     sigmeshId: String,
-    standSchemaModel: Record[String, js.Any],
+    standSchemaModel: Record[String, Any],
     standard: Boolean,
     state: S,
     supportGroup: Boolean,
@@ -298,7 +302,7 @@ object DevInfo {
     
     inline def setCodeIds(value: Record[String, String]): Self = StObject.set(x, "codeIds", value.asInstanceOf[js.Any])
     
-    inline def setCommunication(value: Record[String, js.Any]): Self = StObject.set(x, "communication", value.asInstanceOf[js.Any])
+    inline def setCommunication(value: Record[String, Any]): Self = StObject.set(x, "communication", value.asInstanceOf[js.Any])
     
     inline def setDevAttribute(value: Double): Self = StObject.set(x, "devAttribute", value.asInstanceOf[js.Any])
     
@@ -308,11 +312,11 @@ object DevInfo {
     
     inline def setDeviceType(value: Double): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
     
-    inline def setDisplayDps(value: js.Array[js.Any]): Self = StObject.set(x, "displayDps", value.asInstanceOf[js.Any])
+    inline def setDisplayDps(value: js.Array[Any]): Self = StObject.set(x, "displayDps", value.asInstanceOf[js.Any])
     
-    inline def setDisplayDpsVarargs(value: js.Any*): Self = StObject.set(x, "displayDps", js.Array(value :_*))
+    inline def setDisplayDpsVarargs(value: Any*): Self = StObject.set(x, "displayDps", js.Array(value*))
     
-    inline def setDisplayMsgs(value: Record[String, js.Any]): Self = StObject.set(x, "displayMsgs", value.asInstanceOf[js.Any])
+    inline def setDisplayMsgs(value: Record[String, Any]): Self = StObject.set(x, "displayMsgs", value.asInstanceOf[js.Any])
     
     inline def setDisplayOrder(value: Double): Self = StObject.set(x, "displayOrder", value.asInstanceOf[js.Any])
     
@@ -324,11 +328,15 @@ object DevInfo {
     
     inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
-    inline def setFaultDps(value: js.Array[js.Any]): Self = StObject.set(x, "faultDps", value.asInstanceOf[js.Any])
+    inline def setFaultDps(value: js.Array[Any]): Self = StObject.set(x, "faultDps", value.asInstanceOf[js.Any])
     
-    inline def setFaultDpsVarargs(value: js.Any*): Self = StObject.set(x, "faultDps", js.Array(value :_*))
+    inline def setFaultDpsVarargs(value: Any*): Self = StObject.set(x, "faultDps", js.Array(value*))
     
     inline def setGatewayVerCAD(value: String): Self = StObject.set(x, "gatewayVerCAD", value.asInstanceOf[js.Any])
+    
+    inline def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
+    
+    inline def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
     
     inline def setGwType(value: String): Self = StObject.set(x, "gwType", value.asInstanceOf[js.Any])
     
@@ -374,9 +382,13 @@ object DevInfo {
     
     inline def setNetworkType(value: NetworkType): Self = StObject.set(x, "networkType", value.asInstanceOf[js.Any])
     
-    inline def setOriginJson(value: Record[String, js.Any]): Self = StObject.set(x, "originJson", value.asInstanceOf[js.Any])
+    inline def setOriginJson(value: Record[String, Any]): Self = StObject.set(x, "originJson", value.asInstanceOf[js.Any])
     
     inline def setPanelConfig(value: Bic): Self = StObject.set(x, "panelConfig", value.asInstanceOf[js.Any])
+    
+    inline def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
+    
+    inline def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
     
     inline def setPcc(value: String): Self = StObject.set(x, "pcc", value.asInstanceOf[js.Any])
     
@@ -386,9 +398,9 @@ object DevInfo {
     
     inline def setPv(value: Double): Self = StObject.set(x, "pv", value.asInstanceOf[js.Any])
     
-    inline def setQuickOpDps(value: js.Array[js.Any]): Self = StObject.set(x, "quickOpDps", value.asInstanceOf[js.Any])
+    inline def setQuickOpDps(value: js.Array[Any]): Self = StObject.set(x, "quickOpDps", value.asInstanceOf[js.Any])
     
-    inline def setQuickOpDpsVarargs(value: js.Any*): Self = StObject.set(x, "quickOpDps", js.Array(value :_*))
+    inline def setQuickOpDpsVarargs(value: Any*): Self = StObject.set(x, "quickOpDps", js.Array(value*))
     
     inline def setRnFind(value: Boolean): Self = StObject.set(x, "rnFind", value.asInstanceOf[js.Any])
     
@@ -399,7 +411,7 @@ object DevInfo {
     inline def setSchema(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof S ]: tuya-panel-kit.tuya-panel-kit.DpSchema}
-      */ typings.tuyaPanelKit.tuyaPanelKitStrings.DevInfo & TopLevel[js.Any]
+      */ typings.tuyaPanelKit.tuyaPanelKitStrings.DevInfo & TopLevel[Any]
     ): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     inline def setSchemaExt(value: String): Self = StObject.set(x, "schemaExt", value.asInstanceOf[js.Any])
@@ -408,7 +420,7 @@ object DevInfo {
     
     inline def setSigmeshId(value: String): Self = StObject.set(x, "sigmeshId", value.asInstanceOf[js.Any])
     
-    inline def setStandSchemaModel(value: Record[String, js.Any]): Self = StObject.set(x, "standSchemaModel", value.asInstanceOf[js.Any])
+    inline def setStandSchemaModel(value: Record[String, Any]): Self = StObject.set(x, "standSchemaModel", value.asInstanceOf[js.Any])
     
     inline def setStandard(value: Boolean): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])
     

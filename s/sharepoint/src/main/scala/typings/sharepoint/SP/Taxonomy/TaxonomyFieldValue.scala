@@ -27,9 +27,9 @@ trait TaxonomyFieldValue
 object TaxonomyFieldValue {
   
   inline def apply(
-    customFromJson: js.Any => Boolean,
+    customFromJson: Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
-    fromJson: js.Any => Unit,
+    fromJson: Any => Unit,
     get_label: () => String,
     get_termGuid: () => Guid,
     get_typeId: () => String,

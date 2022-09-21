@@ -15,13 +15,13 @@ object strictEventEmitterTypesMod {
     FValue
   ])
   
-  type EmitEventNames[TEmitter /* <: TypeRecord[js.Any, js.Any, js.Any] */, TEventRecord /* <: NoUndefined[
+  type EmitEventNames[TEmitter /* <: TypeRecord[Any, Any, Any] */, TEventRecord /* <: NoUndefined[
     /* import warning: importer.ImportType#apply Failed type conversion: TEmitter[' _eventsType'] */ js.Any
   ] */, TEmitRecord /* <: NoUndefined[
     /* import warning: importer.ImportType#apply Failed type conversion: TEmitter[' _emitType'] */ js.Any
   ] */] = /* keyof TEmitRecord */ String
   
-  type EventNames[TEmitter /* <: TypeRecord[js.Any, js.Any, js.Any] */, TEventRecord /* <: NoUndefined[
+  type EventNames[TEmitter /* <: TypeRecord[Any, Any, Any] */, TEventRecord /* <: NoUndefined[
     /* import warning: importer.ImportType#apply Failed type conversion: TEmitter[' _eventsType'] */ js.Any
   ] */, TEmitRecord /* <: NoUndefined[
     /* import warning: importer.ImportType#apply Failed type conversion: TEmitter[' _emitType'] */ js.Any
@@ -29,13 +29,13 @@ object strictEventEmitterTypesMod {
   
   type InnerEEMethodReturnType[T, TValue, FValue] = FValue | TValue
   
-  type ListenerType[T] = js.Array[js.Any | T]
+  type ListenerType[T] = js.Array[Any | T]
   
   type MatchingKeys[TRecord, TMatch, K /* <: /* keyof TRecord */ String */] = K
   
   type NoUndefined[T] = T
   
-  type OnEventNames[TEmitter /* <: TypeRecord[js.Any, js.Any, js.Any] */, TEventRecord /* <: NoUndefined[
+  type OnEventNames[TEmitter /* <: TypeRecord[Any, Any, Any] */, TEventRecord /* <: NoUndefined[
     /* import warning: importer.ImportType#apply Failed type conversion: TEmitter[' _eventsType'] */ js.Any
   ] */, TEmitRecord /* <: NoUndefined[
     /* import warning: importer.ImportType#apply Failed type conversion: TEmitter[' _emitType'] */ js.Any
@@ -55,7 +55,7 @@ object strictEventEmitterTypesMod {
   @js.native
   trait OverriddenMethods[TEmitter, TEventRecord, TEmitRecord] extends StObject {
     
-    def addEventListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
+    def addEventListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Any]): Unit = js.native
     def addEventListener[P /* <: /* keyof TEventRecord */ String */, T](
       event: P,
       listener: js.Function1[
@@ -66,7 +66,7 @@ object strictEventEmitterTypesMod {
         ]
     ): EEMethodReturnType[TEmitter, typings.tmiJs.tmiJsStrings.addEventListener, T, Unit] = js.native
     
-    def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
+    def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Any]): Unit = js.native
     def addListener[P /* <: /* keyof TEventRecord */ String */, T](
       event: P,
       listener: js.Function1[
@@ -77,7 +77,7 @@ object strictEventEmitterTypesMod {
         ]
     ): EEMethodReturnType[TEmitter, typings.tmiJs.tmiJsStrings.addListener, T, Unit] = js.native
     
-    def emit(event: js.Symbol, args: js.Any*): Unit = js.native
+    def emit(event: js.Symbol, args: Any*): Unit = js.native
     def emit[P /* <: /* keyof TEmitRecord */ String */, T](
       event: P,
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type ListenerType<TEmitRecord[P]> is not an array type */ args: ListenerType[
@@ -85,7 +85,7 @@ object strictEventEmitterTypesMod {
         ]
     ): EEMethodReturnType[TEmitter, typings.tmiJs.tmiJsStrings.emit, T, Unit] = js.native
     
-    def on(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
+    def on(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Any]): Unit = js.native
     def on[P /* <: /* keyof TEventRecord */ String */, T](
       event: P,
       listener: js.Function1[
@@ -96,7 +96,7 @@ object strictEventEmitterTypesMod {
         ]
     ): EEMethodReturnType[TEmitter, typings.tmiJs.tmiJsStrings.on, T, Unit] = js.native
     
-    def once(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
+    def once(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Any]): Unit = js.native
     def once[P /* <: /* keyof TEventRecord */ String */, T](
       event: P,
       listener: js.Function1[
@@ -107,11 +107,11 @@ object strictEventEmitterTypesMod {
         ]
     ): EEMethodReturnType[TEmitter, typings.tmiJs.tmiJsStrings.once, T, Unit] = js.native
     
-    def removeEventListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
-    def removeEventListener[T](event: /* keyof TEventRecord */ String, listener: js.Function1[/* repeated */ js.Any, js.Any]): EEMethodReturnType[TEmitter, typings.tmiJs.tmiJsStrings.removeEventListener, T, Unit] = js.native
+    def removeEventListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Any]): Unit = js.native
+    def removeEventListener[T](event: /* keyof TEventRecord */ String, listener: js.Function1[/* repeated */ Any, Any]): EEMethodReturnType[TEmitter, typings.tmiJs.tmiJsStrings.removeEventListener, T, Unit] = js.native
     
-    def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
-    def removeListener[T](event: /* keyof TEventRecord */ String, listener: js.Function1[/* repeated */ js.Any, js.Any]): EEMethodReturnType[TEmitter, typings.tmiJs.tmiJsStrings.removeListener, T, Unit] = js.native
+    def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ Any, Any]): Unit = js.native
+    def removeListener[T](event: /* keyof TEventRecord */ String, listener: js.Function1[/* repeated */ Any, Any]): EEMethodReturnType[TEmitter, typings.tmiJs.tmiJsStrings.removeListener, T, Unit] = js.native
   }
   
   type ReturnTypeOfMethod[T] = ReturnType[T]
@@ -121,15 +121,15 @@ object strictEventEmitterTypesMod {
   ]
   
   @js.native
-  trait StrictBroadcast[TEmitter /* <: TypeRecord[js.Any, js.Any, js.Any] */, TEmitRecord /* <: NoUndefined[
+  trait StrictBroadcast[TEmitter /* <: TypeRecord[Any, Any, Any] */, TEmitRecord /* <: NoUndefined[
     /* import warning: importer.ImportType#apply Failed type conversion: TEmitter[' _emitType'] */ js.Any
   ] */, VK /* <: VoidKeys[TEmitRecord] */, NVK /* <: Exclude[/* keyof TEmitRecord */ String, VK] */] extends StObject {
     
-    def apply(event: VK): js.Any = js.native
+    def apply(event: VK): Any = js.native
     def apply[E /* <: NVK */](
       event: E,
       request: /* import warning: importer.ImportType#apply Failed type conversion: TEmitRecord[E] */ js.Any
-    ): js.Any = js.native
+    ): Any = js.native
   }
   
   type StrictEventEmitter[TEmitterType, TEventRecord, TEmitRecord, UnneededMethods /* <: Exclude[OverriddenKeys, /* keyof TEmitterType */ String] */, NeededMethods /* <: Exclude[OverriddenKeys, UnneededMethods] */] = (TypeRecord[TEmitterType, TEventRecord, TEmitRecord]) & (Pick[TEmitterType, Exclude[/* keyof TEmitterType */ String, OverriddenKeys]]) & (Pick[OverriddenMethods[TEmitterType, TEventRecord, TEmitRecord], NeededMethods])

@@ -16,28 +16,58 @@ object entypoMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("@expo/vector-icons/build/Entypo", JSImport.Default)
   @js.native
-  class default protected ()
-    extends Component[IconProps[String], js.Object, js.Any] {
-    def this(props: IconProps[String]) = this()
+  open class default protected ()
+    extends Component[
+          IconProps[
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298 */ Any
+          ], 
+          js.Object, 
+          Any
+        ] {
+    def this(props: IconProps[
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 411 */ Any
+          ]) = this()
   }
   object default extends Shortcut {
     
     @JSImport("@expo/vector-icons/build/Entypo", JSImport.Default)
     @js.native
-    val ^ : Icon[String, entypo] = js.native
+    val ^ : Icon[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 411 */ Any, 
+        entypo
+      ] = js.native
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("@expo/vector-icons/build/Entypo", "default.Button")
     @js.native
-    class Button protected ()
-      extends Component[IconButtonProps[String], ComponentState, js.Any] {
-      def this(props: IconButtonProps[String]) = this()
-      def this(props: IconButtonProps[String], context: js.Any) = this()
+    open class Button protected ()
+      extends Component[
+              IconButtonProps[
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 298 */ Any
+              ], 
+              ComponentState, 
+              Any
+            ] {
+      def this(props: IconButtonProps[
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 411 */ Any
+              ]) = this()
+      def this(
+        props: IconButtonProps[
+                /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 411 */ Any
+              ],
+        context: Any
+      ) = this()
     }
     
-    type _To = Icon[String, entypo]
+    type _To = Icon[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 411 */ Any, 
+        entypo
+      ]
     
     /* This means you don't have to write `^`, but can instead just say `default.foo` */
-    override def _to: Icon[String, entypo] = ^
+    override def _to: Icon[
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 411 */ Any, 
+        entypo
+      ] = ^
   }
 }

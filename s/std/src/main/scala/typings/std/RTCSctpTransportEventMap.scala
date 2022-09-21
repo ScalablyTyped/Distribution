@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RTCSctpTransportEventMap extends StObject {
   
+  /* standard dom */
   var statechange: Event
 }
 object RTCSctpTransportEventMap {

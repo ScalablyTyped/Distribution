@@ -79,7 +79,7 @@ object indexesTypesMod {
       
       inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      inline def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value*))
       
       inline def setMethod(value: btree | hash | gist | spgist | gin): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -117,6 +117,8 @@ object indexesTypesMod {
     var concurrently: js.UndefOr[Boolean] = js.undefined
     
     var name: js.UndefOr[String] = js.undefined
+    
+    var unique: js.UndefOr[Boolean] = js.undefined
   }
   object DropIndexOptions {
     
@@ -134,6 +136,10 @@ object indexesTypesMod {
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      
+      inline def setUnique(value: Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
+      
+      inline def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
     }
   }
   

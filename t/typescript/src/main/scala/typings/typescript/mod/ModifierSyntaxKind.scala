@@ -11,10 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.typescript.mod.SyntaxKind.DeclareKeyword
   - typings.typescript.mod.SyntaxKind.DefaultKeyword
   - typings.typescript.mod.SyntaxKind.ExportKeyword
+  - typings.typescript.mod.SyntaxKind.InKeyword
   - typings.typescript.mod.SyntaxKind.PrivateKeyword
   - typings.typescript.mod.SyntaxKind.ProtectedKeyword
   - typings.typescript.mod.SyntaxKind.PublicKeyword
   - typings.typescript.mod.SyntaxKind.ReadonlyKeyword
+  - typings.typescript.mod.SyntaxKind.OutKeyword
+  - typings.typescript.mod.SyntaxKind.OverrideKeyword
   - typings.typescript.mod.SyntaxKind.StaticKeyword
 */
 trait ModifierSyntaxKind extends StObject

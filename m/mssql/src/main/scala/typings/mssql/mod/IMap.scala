@@ -11,5 +11,5 @@ trait IMap
   extends StObject
      with Array[Js] {
   
-  def register(jstype: js.Any, sql: js.Any): Unit = js.native
+  def register(jstype: Any, sql: Any): Unit = js.native
 }

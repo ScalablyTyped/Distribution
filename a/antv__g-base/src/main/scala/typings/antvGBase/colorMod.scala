@@ -10,7 +10,7 @@ object colorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isColorProp(prop: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isColorProp")(prop.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isColorProp(prop: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isColorProp")(prop.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def isGradientColor(`val`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGradientColor")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isGradientColor(`val`: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGradientColor")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

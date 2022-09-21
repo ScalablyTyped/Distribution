@@ -33,6 +33,6 @@ object ListPublicKeysResponse {
     
     inline def setPublicKeyListUndefined: Self = StObject.set(x, "PublicKeyList", js.undefined)
     
-    inline def setPublicKeyListVarargs(value: PublicKey*): Self = StObject.set(x, "PublicKeyList", js.Array(value :_*))
+    inline def setPublicKeyListVarargs(value: PublicKey*): Self = StObject.set(x, "PublicKeyList", js.Array(value*))
   }
 }

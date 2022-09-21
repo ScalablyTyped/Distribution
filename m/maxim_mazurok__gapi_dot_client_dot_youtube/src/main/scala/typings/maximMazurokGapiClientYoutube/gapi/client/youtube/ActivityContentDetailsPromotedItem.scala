@@ -77,13 +77,13 @@ object ActivityContentDetailsPromotedItem {
     
     inline def setForecastingUrlUndefined: Self = StObject.set(x, "forecastingUrl", js.undefined)
     
-    inline def setForecastingUrlVarargs(value: String*): Self = StObject.set(x, "forecastingUrl", js.Array(value :_*))
+    inline def setForecastingUrlVarargs(value: String*): Self = StObject.set(x, "forecastingUrl", js.Array(value*))
     
     inline def setImpressionUrl(value: js.Array[String]): Self = StObject.set(x, "impressionUrl", value.asInstanceOf[js.Any])
     
     inline def setImpressionUrlUndefined: Self = StObject.set(x, "impressionUrl", js.undefined)
     
-    inline def setImpressionUrlVarargs(value: String*): Self = StObject.set(x, "impressionUrl", js.Array(value :_*))
+    inline def setImpressionUrlVarargs(value: String*): Self = StObject.set(x, "impressionUrl", js.Array(value*))
     
     inline def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
     

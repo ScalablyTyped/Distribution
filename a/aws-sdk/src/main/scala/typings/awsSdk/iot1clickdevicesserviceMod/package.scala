@@ -1,39 +1,40 @@
 package typings.awsSdk.iot1clickdevicesserviceMod
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type DeviceAttributes = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.iot1clickdevicesserviceMod.string]
+type DeviceAttributes = StringDictionary[string]
 
-type MaxResults = scala.Double
+type MaxResults = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2018-05-14`
   - typings.awsSdk.awsSdkStrings.latest_
   - java.lang.String
 */
-type apiVersion = typings.awsSdk.iot1clickdevicesserviceMod._apiVersion | java.lang.String
+type apiVersion = _apiVersion | String
 
-type boolean = scala.Boolean
+type boolean = Boolean
 
-type doubleMin0Max100 = scala.Double
+type doubleMin0Max100 = Double
 
-type integer = scala.Double
+type integer = Double
 
-type listOfDeviceDescription = js.Array[typings.awsSdk.iot1clickdevicesserviceMod.DeviceDescription]
+type listOfDeviceDescription = js.Array[DeviceDescription]
 
-type listOfDeviceEvent = js.Array[typings.awsSdk.iot1clickdevicesserviceMod.DeviceEvent]
+type listOfDeviceEvent = js.Array[DeviceEvent]
 
-type listOfDeviceMethod = js.Array[typings.awsSdk.iot1clickdevicesserviceMod.DeviceMethod]
+type listOfDeviceMethod = js.Array[DeviceMethod]
 
-type listOfString = js.Array[typings.awsSdk.iot1clickdevicesserviceMod.string]
+type listOfString = js.Array[string]
 
-type mapOfString = org.scalablytyped.runtime.StringDictionary[typings.awsSdk.iot1clickdevicesserviceMod.string]
+type mapOfString = StringDictionary[string]
 
-type string = java.lang.String
+type string = String
 
-type stringMin12Max40 = java.lang.String
+type stringMin12Max40 = String
 
-type timestampIso8601 = typings.std.Date
+type timestampIso8601 = js.Date

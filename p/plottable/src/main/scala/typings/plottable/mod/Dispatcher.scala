@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("plottable", "Dispatcher")
 @js.native
-class Dispatcher ()
+open class Dispatcher ()
   extends typings.plottable.dispatcherMod.Dispatcher

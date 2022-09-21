@@ -21,7 +21,7 @@ trait MUIDataTableColumnOptions extends StObject {
     */
   var customBodyRender: js.UndefOr[
     js.Function3[
-      /* value */ js.Any, 
+      /* value */ Any, 
       /* tableMeta */ MUIDataTableMeta, 
       /* updateValue */ js.Function1[/* value */ String, Unit], 
       String | ReactNode
@@ -44,14 +44,14 @@ trait MUIDataTableColumnOptions extends StObject {
   var customFilterListOptions: js.UndefOr[MUIDataTableCustomFilterListOptions] = js.undefined
   
   /** @deprecated use customFilterListOptions.render */
-  var customFilterListRender: js.UndefOr[js.Function1[/* value */ js.Any, String]] = js.undefined
+  var customFilterListRender: js.UndefOr[js.Function1[/* value */ Any, String]] = js.undefined
   
   /**
     * Function that returns a string or React component.
     * Used for creating a custom header to a column.
     * This method only affects the display in the table's header, other areas of the table (such as the View Columns popover), will use the column's label.
     */
-  var customHeadLabelRender: js.UndefOr[js.Function2[/* dataIndex */ Double, /* rowIndex */ Double, String | ReactNode]] = js.undefined
+  var customHeadLabelRender: js.UndefOr[js.Function1[/* options */ CustomHeadLabelRenderOptions, String | ReactNode]] = js.undefined
   
   /** Function that returns a string or React component. Used as display for column header. */
   var customHeadRender: js.UndefOr[
@@ -207,7 +207,7 @@ object MUIDataTableColumnOptions {
   extension [Self <: MUIDataTableColumnOptions](x: Self) {
     
     inline def setCustomBodyRender(
-      value: (/* value */ js.Any, /* tableMeta */ MUIDataTableMeta, /* updateValue */ js.Function1[/* value */ String, Unit]) => String | ReactNode
+      value: (/* value */ Any, /* tableMeta */ MUIDataTableMeta, /* updateValue */ js.Function1[/* value */ String, Unit]) => String | ReactNode
     ): Self = StObject.set(x, "customBodyRender", js.Any.fromFunction3(value))
     
     inline def setCustomBodyRenderLite(value: (/* dataIndex */ Double, /* rowIndex */ Double) => String | ReactNode): Self = StObject.set(x, "customBodyRenderLite", js.Any.fromFunction2(value))
@@ -220,11 +220,11 @@ object MUIDataTableColumnOptions {
     
     inline def setCustomFilterListOptionsUndefined: Self = StObject.set(x, "customFilterListOptions", js.undefined)
     
-    inline def setCustomFilterListRender(value: /* value */ js.Any => String): Self = StObject.set(x, "customFilterListRender", js.Any.fromFunction1(value))
+    inline def setCustomFilterListRender(value: /* value */ Any => String): Self = StObject.set(x, "customFilterListRender", js.Any.fromFunction1(value))
     
     inline def setCustomFilterListRenderUndefined: Self = StObject.set(x, "customFilterListRender", js.undefined)
     
-    inline def setCustomHeadLabelRender(value: (/* dataIndex */ Double, /* rowIndex */ Double) => String | ReactNode): Self = StObject.set(x, "customHeadLabelRender", js.Any.fromFunction2(value))
+    inline def setCustomHeadLabelRender(value: /* options */ CustomHeadLabelRenderOptions => String | ReactNode): Self = StObject.set(x, "customHeadLabelRender", js.Any.fromFunction1(value))
     
     inline def setCustomHeadLabelRenderUndefined: Self = StObject.set(x, "customHeadLabelRender", js.undefined)
     
@@ -256,7 +256,7 @@ object MUIDataTableColumnOptions {
     
     inline def setFilterListUndefined: Self = StObject.set(x, "filterList", js.undefined)
     
-    inline def setFilterListVarargs(value: String*): Self = StObject.set(x, "filterList", js.Array(value :_*))
+    inline def setFilterListVarargs(value: String*): Self = StObject.set(x, "filterList", js.Array(value*))
     
     inline def setFilterOptions(value: MUIDataTableFilterOptions): Self = StObject.set(x, "filterOptions", value.asInstanceOf[js.Any])
     

@@ -303,19 +303,19 @@ object movementTypesMod {
       
       inline def setDecrementKeys(value: js.Array[IncrementMovementKey]): Self = StObject.set(x, "decrementKeys", value.asInstanceOf[js.Any])
       
-      inline def setDecrementKeysVarargs(value: IncrementMovementKey*): Self = StObject.set(x, "decrementKeys", js.Array(value :_*))
+      inline def setDecrementKeysVarargs(value: IncrementMovementKey*): Self = StObject.set(x, "decrementKeys", js.Array(value*))
       
       inline def setIncrementKeys(value: js.Array[IncrementMovementKey]): Self = StObject.set(x, "incrementKeys", value.asInstanceOf[js.Any])
       
-      inline def setIncrementKeysVarargs(value: IncrementMovementKey*): Self = StObject.set(x, "incrementKeys", js.Array(value :_*))
+      inline def setIncrementKeysVarargs(value: IncrementMovementKey*): Self = StObject.set(x, "incrementKeys", js.Array(value*))
       
       inline def setJumpToFirstKeys(value: js.Array[JumpMovementKey]): Self = StObject.set(x, "jumpToFirstKeys", value.asInstanceOf[js.Any])
       
-      inline def setJumpToFirstKeysVarargs(value: JumpMovementKey*): Self = StObject.set(x, "jumpToFirstKeys", js.Array(value :_*))
+      inline def setJumpToFirstKeysVarargs(value: JumpMovementKey*): Self = StObject.set(x, "jumpToFirstKeys", js.Array(value*))
       
       inline def setJumpToLastKeys(value: js.Array[JumpMovementKey]): Self = StObject.set(x, "jumpToLastKeys", value.asInstanceOf[js.Any])
       
-      inline def setJumpToLastKeysVarargs(value: JumpMovementKey*): Self = StObject.set(x, "jumpToLastKeys", js.Array(value :_*))
+      inline def setJumpToLastKeysVarargs(value: JumpMovementKey*): Self = StObject.set(x, "jumpToLastKeys", js.Array(value*))
       
       inline def setLoopable(value: Boolean): Self = StObject.set(x, "loopable", value.asInstanceOf[js.Any])
       

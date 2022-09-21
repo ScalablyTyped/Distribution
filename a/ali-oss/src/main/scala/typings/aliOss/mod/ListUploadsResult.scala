@@ -10,9 +10,9 @@ trait ListUploadsResult extends StObject {
   
   var isTruncated: Boolean
   
-  var nextKeyMarker: js.Any
+  var nextKeyMarker: Any
   
-  var nextUploadIdMarker: js.Any
+  var nextUploadIdMarker: Any
   
   var res: NormalSuccessResponse
   
@@ -23,8 +23,8 @@ object ListUploadsResult {
   inline def apply(
     bucket: String,
     isTruncated: Boolean,
-    nextKeyMarker: js.Any,
-    nextUploadIdMarker: js.Any,
+    nextKeyMarker: Any,
+    nextUploadIdMarker: Any,
     res: NormalSuccessResponse,
     uploads: js.Array[Upload]
   ): ListUploadsResult = {
@@ -38,14 +38,14 @@ object ListUploadsResult {
     
     inline def setIsTruncated(value: Boolean): Self = StObject.set(x, "isTruncated", value.asInstanceOf[js.Any])
     
-    inline def setNextKeyMarker(value: js.Any): Self = StObject.set(x, "nextKeyMarker", value.asInstanceOf[js.Any])
+    inline def setNextKeyMarker(value: Any): Self = StObject.set(x, "nextKeyMarker", value.asInstanceOf[js.Any])
     
-    inline def setNextUploadIdMarker(value: js.Any): Self = StObject.set(x, "nextUploadIdMarker", value.asInstanceOf[js.Any])
+    inline def setNextUploadIdMarker(value: Any): Self = StObject.set(x, "nextUploadIdMarker", value.asInstanceOf[js.Any])
     
     inline def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
     
     inline def setUploads(value: js.Array[Upload]): Self = StObject.set(x, "uploads", value.asInstanceOf[js.Any])
     
-    inline def setUploadsVarargs(value: Upload*): Self = StObject.set(x, "uploads", js.Array(value :_*))
+    inline def setUploadsVarargs(value: Upload*): Self = StObject.set(x, "uploads", js.Array(value*))
   }
 }

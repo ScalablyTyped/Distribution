@@ -27,7 +27,7 @@ object ISavedModel {
     
     inline def setMetaGraphsUndefined: Self = StObject.set(x, "metaGraphs", js.undefined)
     
-    inline def setMetaGraphsVarargs(value: IMetaGraphDef*): Self = StObject.set(x, "metaGraphs", js.Array(value :_*))
+    inline def setMetaGraphsVarargs(value: IMetaGraphDef*): Self = StObject.set(x, "metaGraphs", js.Array(value*))
     
     inline def setSavedModelSchemaVersion(value: Double | String): Self = StObject.set(x, "savedModelSchemaVersion", value.asInstanceOf[js.Any])
     

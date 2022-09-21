@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-burger-menu
 
-Typings are for version 2.6
+Typings are for version 2.8
 
 ## Library description:
 An off-canvas sidebar component with a collection of effects and styles using CSS transitions and SVG path animations
@@ -10,10 +10,10 @@ An off-canvas sidebar component with a collection of effects and styles using CS
 | ------------------ | :-------------: |
 | Full name          | react-burger-menu |
 | Keywords           | component, hamburger, menu, react, react-component |
-| # releases         | 28 |
-| # dependents       | 67 |
-| # downloads        | 1907246 |
-| # stars            | 13 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 189714.66666666666 |
+| # stars            | 4686.0 |
 
 ## Links
 - [Homepage](https://github.com/negomi/react-burger-menu)

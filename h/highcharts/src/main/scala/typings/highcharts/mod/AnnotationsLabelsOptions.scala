@@ -106,7 +106,7 @@ trait AnnotationsLabelsOptions extends StObject {
     * exists in the series - it is referenced by the point's id - or a new
     * point with defined x, y properties and optionally axes.
     */
-  var point: js.UndefOr[String | AnnotationMockPointOptionsObject] = js.undefined
+  var point: js.UndefOr[String | AnnotationMockPointFunction | AnnotationMockPointOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The shadow of the box. The
@@ -228,7 +228,9 @@ object AnnotationsLabelsOptions {
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    inline def setPoint(value: String | AnnotationMockPointOptionsObject): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+    inline def setPoint(value: String | AnnotationMockPointFunction | AnnotationMockPointOptionsObject): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+    
+    inline def setPointFunction1(value: /* annotation */ Annotation => AnnotationMockPointOptionsObject): Self = StObject.set(x, "point", js.Any.fromFunction1(value))
     
     inline def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
     

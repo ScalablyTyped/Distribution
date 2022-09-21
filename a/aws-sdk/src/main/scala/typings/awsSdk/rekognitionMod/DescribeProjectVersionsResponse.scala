@@ -33,6 +33,6 @@ object DescribeProjectVersionsResponse {
     
     inline def setProjectVersionDescriptionsUndefined: Self = StObject.set(x, "ProjectVersionDescriptions", js.undefined)
     
-    inline def setProjectVersionDescriptionsVarargs(value: ProjectVersionDescription*): Self = StObject.set(x, "ProjectVersionDescriptions", js.Array(value :_*))
+    inline def setProjectVersionDescriptionsVarargs(value: ProjectVersionDescription*): Self = StObject.set(x, "ProjectVersionDescriptions", js.Array(value*))
   }
 }

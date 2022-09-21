@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IEditorHoverOptions extends StObject {
   
   /**
+    * Should the hover be shown above the line if possible?
+    * Defaults to false.
+    */
+  var above: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Delay for showing the hover.
     * Defaults to 300.
     */
@@ -32,6 +38,10 @@ object IEditorHoverOptions {
   }
   
   extension [Self <: IEditorHoverOptions](x: Self) {
+    
+    inline def setAbove(value: Boolean): Self = StObject.set(x, "above", value.asInstanceOf[js.Any])
+    
+    inline def setAboveUndefined: Self = StObject.set(x, "above", js.undefined)
     
     inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     

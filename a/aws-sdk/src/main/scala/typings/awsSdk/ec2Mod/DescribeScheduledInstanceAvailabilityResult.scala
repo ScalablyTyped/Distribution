@@ -33,6 +33,6 @@ object DescribeScheduledInstanceAvailabilityResult {
     
     inline def setScheduledInstanceAvailabilitySetUndefined: Self = StObject.set(x, "ScheduledInstanceAvailabilitySet", js.undefined)
     
-    inline def setScheduledInstanceAvailabilitySetVarargs(value: ScheduledInstanceAvailability*): Self = StObject.set(x, "ScheduledInstanceAvailabilitySet", js.Array(value :_*))
+    inline def setScheduledInstanceAvailabilitySetVarargs(value: ScheduledInstanceAvailability*): Self = StObject.set(x, "ScheduledInstanceAvailabilitySet", js.Array(value*))
   }
 }

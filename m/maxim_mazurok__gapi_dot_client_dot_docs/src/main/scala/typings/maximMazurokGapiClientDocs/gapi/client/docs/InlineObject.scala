@@ -10,7 +10,7 @@ trait InlineObject extends StObject {
   /** The properties of this inline object. */
   var inlineObjectProperties: js.UndefOr[InlineObjectProperties] = js.undefined
   
-  /** The ID of this inline object. */
+  /** The ID of this inline object. Can be used to update an object’s properties. */
   var objectId: js.UndefOr[String] = js.undefined
   
   /** The suggested deletion IDs. If empty, then there are no suggested deletions of this content. */
@@ -20,7 +20,7 @@ trait InlineObject extends StObject {
   var suggestedInlineObjectPropertiesChanges: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedInlineObjectProperties}
-    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.InlineObject & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.InlineObject & TopLevel[Any]
   ] = js.undefined
   
   /** The suggested insertion ID. If empty, then this is not a suggested insertion. */
@@ -47,12 +47,12 @@ object InlineObject {
     
     inline def setSuggestedDeletionIdsUndefined: Self = StObject.set(x, "suggestedDeletionIds", js.undefined)
     
-    inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value :_*))
+    inline def setSuggestedDeletionIdsVarargs(value: String*): Self = StObject.set(x, "suggestedDeletionIds", js.Array(value*))
     
     inline def setSuggestedInlineObjectPropertiesChanges(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.docs.gapi.client.docs.SuggestedInlineObjectProperties}
-      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.InlineObject & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDocs.maximMazurokGapiClientDocsStrings.InlineObject & TopLevel[Any]
     ): Self = StObject.set(x, "suggestedInlineObjectPropertiesChanges", value.asInstanceOf[js.Any])
     
     inline def setSuggestedInlineObjectPropertiesChangesUndefined: Self = StObject.set(x, "suggestedInlineObjectPropertiesChanges", js.undefined)

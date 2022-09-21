@@ -17,7 +17,7 @@ object utilsMod {
   
   inline def cloneMap[T](map: GenericMap[T]): GenericMap[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneMap")(map.asInstanceOf[js.Any]).asInstanceOf[GenericMap[T]]
   
-  inline def isRefObject[T](ref: js.Any): /* is react.react.RefObject<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRefObject")(ref.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.RefObject<T> */ Boolean]
+  inline def isRefObject[T](ref: Any): /* is react.react.RefObject<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRefObject")(ref.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.RefObject<T> */ Boolean]
   
   inline def normalizeHandlers(handlers: InputEventListener): EventListeners = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeHandlers")(handlers.asInstanceOf[js.Any]).asInstanceOf[EventListeners]
   

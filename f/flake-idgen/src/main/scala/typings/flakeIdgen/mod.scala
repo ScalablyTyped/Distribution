@@ -1,7 +1,6 @@
 package typings.flakeIdgen
 
-import typings.node.Buffer
-import typings.std.Error
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ object mod {
   
   @JSImport("flake-idgen", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with FlakeId {
     def this(options: ConstructorOptions) = this()
@@ -63,6 +62,6 @@ object mod {
   trait FlakeId extends StObject {
     
     def next(): Buffer = js.native
-    def next(callback: js.Function2[/* err */ Error, /* id */ Buffer, Unit]): Buffer = js.native
+    def next(callback: js.Function2[/* err */ js.Error, /* id */ Buffer, Unit]): Buffer = js.native
   }
 }

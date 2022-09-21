@@ -6,12 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("chrome.cast.SenderApplication")
 @js.native
-class SenderApplication protected ()
+open class SenderApplication protected ()
   extends StObject
      with typings.chrome.chrome.cast.SenderApplication {
   /**
-    * @param {!chrome.cast.SenderPlatform} platform
-    * @constructor
+    * @param platform
     * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.SenderApplication
     */
   def this(platform: typings.chrome.chrome.cast.SenderPlatform) = this()

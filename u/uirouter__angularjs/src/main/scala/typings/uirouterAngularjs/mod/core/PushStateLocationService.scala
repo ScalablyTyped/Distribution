@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@uirouter/angularjs", "core.PushStateLocationService")
 @js.native
-class PushStateLocationService protected ()
+open class PushStateLocationService protected ()
   extends typings.uirouterCore.mod.PushStateLocationService {
   def this(router: typings.uirouterCore.routerMod.UIRouter) = this()
 }

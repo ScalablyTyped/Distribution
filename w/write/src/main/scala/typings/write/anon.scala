@@ -1,8 +1,9 @@
 package typings.write
 
-import typings.node.anon.EmitClose
+import typings.node.bufferMod.global.BufferEncoding
 import typings.node.fsMod.Mode
 import typings.node.fsMod.PathLike
+import typings.node.fsMod.StreamOptions
 import typings.node.fsMod.WriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,8 +15,8 @@ object anon {
   trait FnCall extends StObject {
     
     def apply(path: PathLike): WriteStream = js.native
-    def apply(path: PathLike, options: String): WriteStream = js.native
-    def apply(path: PathLike, options: EmitClose): WriteStream = js.native
+    def apply(path: PathLike, options: BufferEncoding): WriteStream = js.native
+    def apply(path: PathLike, options: StreamOptions): WriteStream = js.native
   }
   
   /* Inlined std.Omit<node.fs.MakeDirectoryOptions, 'recursive'> */

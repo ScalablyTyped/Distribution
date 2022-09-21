@@ -2,8 +2,7 @@ package typings.gitDiffParser
 
 import typings.gitDiffParser.gitDiffParserBooleans.`false`
 import typings.gitDiffParser.gitDiffParserBooleans.`true`
-import typings.node.Buffer
-import typings.std.Date
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,7 +31,7 @@ object mod {
       
       inline def setFiles(value: js.Array[File]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      inline def setFilesVarargs(value: File*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: File*): Self = StObject.set(x, "files", js.Array(value*))
     }
   }
   
@@ -42,7 +41,7 @@ object mod {
     
     var author: js.UndefOr[String] = js.undefined
     
-    var date: js.UndefOr[Date] = js.undefined
+    var date: js.UndefOr[js.Date] = js.undefined
     
     var email: js.UndefOr[String] = js.undefined
     
@@ -63,7 +62,7 @@ object mod {
       
       inline def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
       
-      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
       inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
@@ -102,7 +101,7 @@ object mod {
       
       inline def setCommits(value: js.Array[DetailedCommit]): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
       
-      inline def setCommitsVarargs(value: DetailedCommit*): Self = StObject.set(x, "commits", js.Array(value :_*))
+      inline def setCommitsVarargs(value: DetailedCommit*): Self = StObject.set(x, "commits", js.Array(value*))
       
       inline def setDetailed(value: `true`): Self = StObject.set(x, "detailed", value.asInstanceOf[js.Any])
     }
@@ -172,11 +171,11 @@ object mod {
       
       inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
+      inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value*))
       
       inline def setLines(value: js.Array[Line]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
       
-      inline def setLinesVarargs(value: Line*): Self = StObject.set(x, "lines", js.Array(value :_*))
+      inline def setLinesVarargs(value: Line*): Self = StObject.set(x, "lines", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -261,7 +260,7 @@ object mod {
       
       inline def setCommits(value: js.Array[Commit]): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
       
-      inline def setCommitsVarargs(value: Commit*): Self = StObject.set(x, "commits", js.Array(value :_*))
+      inline def setCommitsVarargs(value: Commit*): Self = StObject.set(x, "commits", js.Array(value*))
       
       inline def setDetailed(value: Boolean): Self = StObject.set(x, "detailed", value.asInstanceOf[js.Any])
     }

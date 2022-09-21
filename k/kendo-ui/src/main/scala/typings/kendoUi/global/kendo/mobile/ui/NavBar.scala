@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("kendo.mobile.ui.NavBar")
 @js.native
-class NavBar protected ()
+open class NavBar protected ()
   extends StObject
      with typings.kendoUi.kendo.mobile.ui.NavBar {
   def this(element: Element) = this()

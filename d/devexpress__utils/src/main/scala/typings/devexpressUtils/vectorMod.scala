@@ -10,16 +10,12 @@ object vectorMod {
   
   @JSImport("@devexpress/utils/lib/geometry/vector", "Vector")
   @js.native
-  class Vector () extends StObject {
+  open class Vector () extends StObject {
     def this(x: Double) = this()
     def this(x: Double, y: Double) = this()
     def this(x: Unit, y: Double) = this()
     
-    val axisX: Vector = js.native
-    
-    val axisY: Vector = js.native
-    
-    val length: Double = js.native
+    def length: Double = js.native
     
     def negative(): this.type = js.native
     

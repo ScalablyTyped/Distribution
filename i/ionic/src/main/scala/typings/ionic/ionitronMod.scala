@@ -10,7 +10,7 @@ object ionitronMod {
   
   @JSImport("ionic/commands/ionitron", "IonitronCommand")
   @js.native
-  class IonitronCommand protected () extends Command {
+  open class IonitronCommand protected () extends Command {
     def this(namespace: INamespace) = this()
   }
 }

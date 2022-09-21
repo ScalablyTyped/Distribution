@@ -17,7 +17,7 @@ object staleWhileRevalidateMod {
   
   @JSImport("workbox-strategies/StaleWhileRevalidate", "StaleWhileRevalidate")
   @js.native
-  class StaleWhileRevalidate ()
+  open class StaleWhileRevalidate ()
     extends StObject
        with RouteHandlerObject {
     def this(options: StaleWhileRevalidateOptions) = this()
@@ -68,7 +68,7 @@ object staleWhileRevalidateMod {
       
       inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      inline def setPluginsVarargs(value: WorkboxPlugin*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: WorkboxPlugin*): Self = StObject.set(x, "plugins", js.Array(value*))
     }
   }
 }

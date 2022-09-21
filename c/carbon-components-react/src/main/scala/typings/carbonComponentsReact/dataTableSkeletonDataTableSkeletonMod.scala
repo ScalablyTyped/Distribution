@@ -14,6 +14,25 @@ object dataTableSkeletonDataTableSkeletonMod extends Shortcut {
   @js.native
   val default: FC[DataTableSkeletonProps] = js.native
   
+  trait DataTableSkeletonHeader extends StObject {
+    
+    var header: js.UndefOr[String] = js.undefined
+  }
+  object DataTableSkeletonHeader {
+    
+    inline def apply(): DataTableSkeletonHeader = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[DataTableSkeletonHeader]
+    }
+    
+    extension [Self <: DataTableSkeletonHeader](x: Self) {
+      
+      inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    }
+  }
+  
   trait DataTableSkeletonProps
     extends StObject
        with TableHTMLAttributes[HTMLTableElement] {
@@ -22,7 +41,8 @@ object dataTableSkeletonDataTableSkeletonMod extends Shortcut {
     
     var compact: js.UndefOr[Boolean] = js.undefined
     
-    // headers?: ReadonlyArray<string> | ReadonlyArray<ShapeOf<HeaderType>>; // doesn't seem to be used anymore but prop type is still there so leaving this commented out.
+    var headers: js.UndefOr[js.Array[DataTableSkeletonHeader]] = js.undefined
+    
     var rowCount: js.UndefOr[Double] = js.undefined
     
     var showHeader: js.UndefOr[Boolean] = js.undefined
@@ -47,6 +67,12 @@ object dataTableSkeletonDataTableSkeletonMod extends Shortcut {
       inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       
       inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
+      
+      inline def setHeaders(value: js.Array[DataTableSkeletonHeader]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      
+      inline def setHeadersVarargs(value: DataTableSkeletonHeader*): Self = StObject.set(x, "headers", js.Array(value*))
       
       inline def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
       

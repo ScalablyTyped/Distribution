@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("office-ui-fabric-react/lib/index.bundle", "SuggestionsCore")
 @js.native
-class SuggestionsCore[T] protected ()
+open class SuggestionsCore[T] protected ()
   extends typings.officeUiFabricReact.mod.SuggestionsCore[T] {
   def this(suggestionsProps: ISuggestionsCoreProps[T]) = this()
 }

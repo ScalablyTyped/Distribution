@@ -21,7 +21,7 @@ object XUpdateModel {
   
   inline def apply(
     acquire: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     updateModel: XModel => Unit
   ): XUpdateModel = {

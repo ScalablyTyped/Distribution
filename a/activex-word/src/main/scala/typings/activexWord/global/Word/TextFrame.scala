@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.TextFrame")
 @js.native
-/* private */ class TextFrame ()
+/* private */ open class TextFrame ()
   extends StObject
      with typings.activexWord.Word.TextFrame {
   

@@ -17,7 +17,7 @@ object XTextSearch2 {
   
   inline def apply(
     acquire: () => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     searchBackward: (String, Double, Double) => SearchResult,
     searchForward: (String, Double, Double) => SearchResult,

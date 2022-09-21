@@ -1,7 +1,6 @@
 package typings.phaser.spine
 
 import typings.std.HTMLImageElement
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,11 +10,11 @@ trait AssetManager
   extends StObject
      with Disposable {
   
-  /* private */ var assets: js.Any = js.native
+  /* private */ var assets: Any = js.native
   
-  /* private */ var errors: js.Any = js.native
+  /* private */ var errors: Any = js.native
   
-  def get(path: String): js.Any = js.native
+  def get(path: String): Any = js.native
   
   def getErrors(): Map[String] = js.native
   
@@ -28,10 +27,13 @@ trait AssetManager
   def isLoadingComplete(): Boolean = js.native
   
   def loadBinary(path: String): Unit = js.native
-  def loadBinary(path: String, success: js.Function2[/* path */ String, /* binary */ Uint8Array, Unit]): Unit = js.native
   def loadBinary(
     path: String,
-    success: js.Function2[/* path */ String, /* binary */ Uint8Array, Unit],
+    success: js.Function2[/* path */ String, /* binary */ js.typedarray.Uint8Array, Unit]
+  ): Unit = js.native
+  def loadBinary(
+    path: String,
+    success: js.Function2[/* path */ String, /* binary */ js.typedarray.Uint8Array, Unit],
     error: js.Function2[/* path */ String, /* error */ String, Unit]
   ): Unit = js.native
   def loadBinary(path: String, success: Unit, error: js.Function2[/* path */ String, /* error */ String, Unit]): Unit = js.native
@@ -82,15 +84,15 @@ trait AssetManager
     error: js.Function2[/* path */ String, /* error */ String, Unit]
   ): Unit = js.native
   
-  /* private */ var loaded: js.Any = js.native
+  /* private */ var loaded: Any = js.native
   
-  /* private */ var pathPrefix: js.Any = js.native
+  /* private */ var pathPrefix: Any = js.native
   
   def remove(path: String): Unit = js.native
   
   def removeAll(): Unit = js.native
   
-  /* private */ var textureLoader: js.Any = js.native
+  /* private */ var textureLoader: Any = js.native
   
-  /* private */ var toLoad: js.Any = js.native
+  /* private */ var toLoad: Any = js.native
 }

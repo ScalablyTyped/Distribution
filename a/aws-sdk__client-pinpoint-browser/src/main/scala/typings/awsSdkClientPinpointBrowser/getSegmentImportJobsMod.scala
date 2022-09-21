@@ -8,5 +8,5 @@ object getSegmentImportJobsMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/model/GetSegmentImportJobs", "GetSegmentImportJobs")
   @js.native
-  val GetSegmentImportJobs: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ js.Any = js.native
+  val GetSegmentImportJobs: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _Operation_ */ Any = js.native
 }

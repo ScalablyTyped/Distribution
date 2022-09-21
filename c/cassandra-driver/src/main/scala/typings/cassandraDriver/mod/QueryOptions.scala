@@ -2,7 +2,7 @@ package typings.cassandraDriver.mod
 
 import typings.cassandraDriver.policiesMod.policies.retry.RetryPolicy
 import typings.cassandraDriver.typesMod.types.Long
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ trait QueryOptions extends StObject {
   
   var counter: js.UndefOr[Boolean] = js.undefined
   
-  var customPayload: js.UndefOr[js.Any] = js.undefined
+  var customPayload: js.UndefOr[Any] = js.undefined
   
   var executionProfile: js.UndefOr[String | ExecutionProfile] = js.undefined
   
@@ -78,7 +78,7 @@ object QueryOptions {
     
     inline def setCounterUndefined: Self = StObject.set(x, "counter", js.undefined)
     
-    inline def setCustomPayload(value: js.Any): Self = StObject.set(x, "customPayload", value.asInstanceOf[js.Any])
+    inline def setCustomPayload(value: Any): Self = StObject.set(x, "customPayload", value.asInstanceOf[js.Any])
     
     inline def setCustomPayloadUndefined: Self = StObject.set(x, "customPayload", js.undefined)
     
@@ -94,7 +94,7 @@ object QueryOptions {
     
     inline def setHintsUndefined: Self = StObject.set(x, "hints", js.undefined)
     
-    inline def setHintsVarargs(value: (js.Array[String] | String)*): Self = StObject.set(x, "hints", js.Array(value :_*))
+    inline def setHintsVarargs(value: (js.Array[String] | String)*): Self = StObject.set(x, "hints", js.Array(value*))
     
     inline def setHost(value: Host): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
@@ -132,19 +132,19 @@ object QueryOptions {
     
     inline def setRoutingIndexesUndefined: Self = StObject.set(x, "routingIndexes", js.undefined)
     
-    inline def setRoutingIndexesVarargs(value: Double*): Self = StObject.set(x, "routingIndexes", js.Array(value :_*))
+    inline def setRoutingIndexesVarargs(value: Double*): Self = StObject.set(x, "routingIndexes", js.Array(value*))
     
     inline def setRoutingKey(value: Buffer | js.Array[Buffer]): Self = StObject.set(x, "routingKey", value.asInstanceOf[js.Any])
     
     inline def setRoutingKeyUndefined: Self = StObject.set(x, "routingKey", js.undefined)
     
-    inline def setRoutingKeyVarargs(value: Buffer*): Self = StObject.set(x, "routingKey", js.Array(value :_*))
+    inline def setRoutingKeyVarargs(value: Buffer*): Self = StObject.set(x, "routingKey", js.Array(value*))
     
     inline def setRoutingNames(value: js.Array[String]): Self = StObject.set(x, "routingNames", value.asInstanceOf[js.Any])
     
     inline def setRoutingNamesUndefined: Self = StObject.set(x, "routingNames", js.undefined)
     
-    inline def setRoutingNamesVarargs(value: String*): Self = StObject.set(x, "routingNames", js.Array(value :_*))
+    inline def setRoutingNamesVarargs(value: String*): Self = StObject.set(x, "routingNames", js.Array(value*))
     
     inline def setSerialConsistency(value: Double): Self = StObject.set(x, "serialConsistency", value.asInstanceOf[js.Any])
     

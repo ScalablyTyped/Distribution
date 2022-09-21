@@ -35,23 +35,23 @@ object selectionBoxLayerMod {
   
   @JSImport("plottable/build/src/components/selectionBoxLayer", "SelectionBoxLayer")
   @js.native
-  class SelectionBoxLayer () extends Component {
+  open class SelectionBoxLayer () extends Component {
     
-    /* private */ var _adjustBoundsCallback: js.Any = js.native
+    /* private */ var _adjustBoundsCallback: Any = js.native
     
     /* protected */ var _box: SimpleSelection[Unit] = js.native
     
-    /* private */ var _boxArea: js.Any = js.native
+    /* private */ var _boxArea: Any = js.native
     
-    /* private */ var _boxBounds: js.Any = js.native
+    /* private */ var _boxBounds: Any = js.native
     
-    /* private */ var _boxVisible: js.Any = js.native
+    /* private */ var _boxVisible: Any = js.native
     
-    /* private */ def _getBounds(): js.Any = js.native
+    /* private */ var _getBounds: Any = js.native
     
-    /* private */ def _getXExtent(): js.Any = js.native
+    /* private */ var _getXExtent: Any = js.native
     
-    /* private */ def _getYExtent(): js.Any = js.native
+    /* private */ var _getYExtent: Any = js.native
     
     /* protected */ def _setBounds(newBounds: Bounds): Unit = js.native
     
@@ -61,15 +61,15 @@ object selectionBoxLayerMod {
     
     /* protected */ var _xBoundsMode: PropertyMode = js.native
     
-    /* private */ var _xExtent: js.Any = js.native
+    /* private */ var _xExtent: Any = js.native
     
-    /* private */ var _xScale: js.Any = js.native
+    /* private */ var _xScale: Any = js.native
     
     /* protected */ var _yBoundsMode: PropertyMode = js.native
     
-    /* private */ var _yExtent: js.Any = js.native
+    /* private */ var _yExtent: Any = js.native
     
-    /* private */ var _yScale: js.Any = js.native
+    /* private */ var _yScale: Any = js.native
     
     /**
       * Sets the Bounds of the box.

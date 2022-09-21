@@ -14,7 +14,7 @@ trait DetectorVersionSummary extends StObject {
   /**
     * The detector version ID. 
     */
-  var detectorVersionId: js.UndefOr[nonEmptyString] = js.undefined
+  var detectorVersionId: js.UndefOr[wholeNumberVersionString] = js.undefined
   
   /**
     * Timestamp of when the detector version was last updated.
@@ -39,7 +39,7 @@ object DetectorVersionSummary {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setDetectorVersionId(value: nonEmptyString): Self = StObject.set(x, "detectorVersionId", value.asInstanceOf[js.Any])
+    inline def setDetectorVersionId(value: wholeNumberVersionString): Self = StObject.set(x, "detectorVersionId", value.asInstanceOf[js.Any])
     
     inline def setDetectorVersionIdUndefined: Self = StObject.set(x, "detectorVersionId", js.undefined)
     

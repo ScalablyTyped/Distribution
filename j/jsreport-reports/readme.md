@@ -10,15 +10,12 @@ jsreport extension adding support for storing rendering outputs for later use
 | ------------------ | :-------------: |
 | Full name          | jsreport-reports |
 | Keywords           | jsreport |
-| # releases         | 7 |
-| # dependents       | 3 |
-| # downloads        | 96303 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 4394.0 |
+| # stars            | 4.0 |
 
 ## Links
-- [Homepage](https://github.com/jsreport/jsreport-reports)
-- [Bugs](https://github.com/jsreport/jsreport-reports/issues)
-- [Repository](https://github.com/jsreport/jsreport-reports)
 - [Npm](https://www.npmjs.com/package/jsreport-reports)
     
 

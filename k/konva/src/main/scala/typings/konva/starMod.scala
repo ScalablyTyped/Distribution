@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object starMod {
   
-  @JSImport("konva/types/shapes/Star", "Star")
+  @JSImport("konva/lib/shapes/Star", "Star")
   @js.native
-  class Star () extends Shape[StarConfig] {
+  open class Star () extends Shape[StarConfig] {
     def this(config: StarConfig) = this()
     
-    def _sceneFunc(context: js.Any): Unit = js.native
+    def _sceneFunc(context: Any): Unit = js.native
     
     def getHeight(): Double = js.native
     
@@ -35,9 +35,9 @@ object starMod {
     @JSName("outerRadius")
     var outerRadius_Original: GetSet[Double, this.type] = js.native
     
-    def setHeight(height: js.Any): Unit = js.native
+    def setHeight(height: Any): Unit = js.native
     
-    def setWidth(width: js.Any): Unit = js.native
+    def setWidth(width: Any): Unit = js.native
   }
   
   trait StarConfig

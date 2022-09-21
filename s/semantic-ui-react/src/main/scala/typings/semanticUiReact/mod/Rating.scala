@@ -13,10 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("semantic-ui-react", "Rating")
 @js.native
-class Rating protected ()
-  extends Component[RatingProps, ComponentState, js.Any] {
+open class Rating protected () extends Component[RatingProps, ComponentState, Any] {
   def this(props: RatingProps) = this()
-  def this(props: RatingProps, context: js.Any) = this()
+  def this(props: RatingProps, context: Any) = this()
 }
 object Rating extends Shortcut {
   
@@ -27,10 +26,9 @@ object Rating extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("semantic-ui-react", "Rating.Icon")
   @js.native
-  class IconCls protected ()
-    extends Component[RatingIconProps, ComponentState, js.Any] {
+  open class IconCls protected () extends Component[RatingIconProps, ComponentState, Any] {
     def this(props: RatingIconProps) = this()
-    def this(props: RatingIconProps, context: js.Any) = this()
+    def this(props: RatingIconProps, context: Any) = this()
   }
   
   type _To = RatingComponent

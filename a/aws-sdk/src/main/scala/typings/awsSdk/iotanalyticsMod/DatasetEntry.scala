@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DatasetEntry extends StObject {
   
   /**
-    * The presigned URI of the data set item.
+    * The presigned URI of the dataset item.
     */
   var dataURI: js.UndefOr[PresignedURI] = js.undefined
   
   /**
-    * The name of the data set item.
+    * The name of the dataset item.
     */
   var entryName: js.UndefOr[EntryName] = js.undefined
 }

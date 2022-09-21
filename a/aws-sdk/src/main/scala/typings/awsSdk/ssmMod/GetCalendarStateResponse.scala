@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetCalendarStateResponse extends StObject {
   
   /**
-    * The time, as an ISO 8601 string, that you specified in your command. If you did not specify a time, GetCalendarState uses the current time.
+    * The time, as an ISO 8601 string, that you specified in your command. If you don't specify a time, GetCalendarState uses the current time.
     */
   var AtTime: js.UndefOr[ISO8601String] = js.undefined
   
@@ -17,7 +17,7 @@ trait GetCalendarStateResponse extends StObject {
   var NextTransitionTime: js.UndefOr[ISO8601String] = js.undefined
   
   /**
-    * The state of the calendar. An OPEN calendar indicates that actions are allowed to proceed, and a CLOSED calendar indicates that actions are not allowed to proceed.
+    * The state of the calendar. An OPEN calendar indicates that actions are allowed to proceed, and a CLOSED calendar indicates that actions aren't allowed to proceed.
     */
   var State: js.UndefOr[CalendarState] = js.undefined
 }

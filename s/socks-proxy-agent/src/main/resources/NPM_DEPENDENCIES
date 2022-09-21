@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "socks-proxy-agent" : "5.0.0"
+      "socks-proxy-agent" : "7.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "socks-proxy-agent" : "5.0.0"
+      "socks-proxy-agent" : "7.0.0"
     }
   ],
   "compile-devDependencies" : [

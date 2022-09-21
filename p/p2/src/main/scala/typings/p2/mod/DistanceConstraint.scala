@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("p2", "DistanceConstraint")
 @js.native
-class DistanceConstraint protected () extends Constraint {
+open class DistanceConstraint protected () extends Constraint {
   def this(bodyA: Body, bodyB: Body) = this()
   def this(bodyA: Body, bodyB: Body, options: DistanceConstraintOptions) = this()
   

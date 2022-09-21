@@ -27,10 +27,10 @@ object ChangeMessageVisibilityBatchResult {
     
     inline def setFailed(value: BatchResultErrorEntryList): Self = StObject.set(x, "Failed", value.asInstanceOf[js.Any])
     
-    inline def setFailedVarargs(value: BatchResultErrorEntry*): Self = StObject.set(x, "Failed", js.Array(value :_*))
+    inline def setFailedVarargs(value: BatchResultErrorEntry*): Self = StObject.set(x, "Failed", js.Array(value*))
     
     inline def setSuccessful(value: ChangeMessageVisibilityBatchResultEntryList): Self = StObject.set(x, "Successful", value.asInstanceOf[js.Any])
     
-    inline def setSuccessfulVarargs(value: ChangeMessageVisibilityBatchResultEntry*): Self = StObject.set(x, "Successful", js.Array(value :_*))
+    inline def setSuccessfulVarargs(value: ChangeMessageVisibilityBatchResultEntry*): Self = StObject.set(x, "Successful", js.Array(value*))
   }
 }

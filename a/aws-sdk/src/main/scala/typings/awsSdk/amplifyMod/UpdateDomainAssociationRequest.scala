@@ -34,12 +34,12 @@ trait UpdateDomainAssociationRequest extends StObject {
   /**
     *  Describes the settings for the subdomain. 
     */
-  var subDomainSettings: SubDomainSettings
+  var subDomainSettings: js.UndefOr[SubDomainSettings] = js.undefined
 }
 object UpdateDomainAssociationRequest {
   
-  inline def apply(appId: AppId, domainName: DomainName, subDomainSettings: SubDomainSettings): UpdateDomainAssociationRequest = {
-    val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], domainName = domainName.asInstanceOf[js.Any], subDomainSettings = subDomainSettings.asInstanceOf[js.Any])
+  inline def apply(appId: AppId, domainName: DomainName): UpdateDomainAssociationRequest = {
+    val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], domainName = domainName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDomainAssociationRequest]
   }
   
@@ -51,7 +51,7 @@ object UpdateDomainAssociationRequest {
     
     inline def setAutoSubDomainCreationPatternsUndefined: Self = StObject.set(x, "autoSubDomainCreationPatterns", js.undefined)
     
-    inline def setAutoSubDomainCreationPatternsVarargs(value: AutoSubDomainCreationPattern*): Self = StObject.set(x, "autoSubDomainCreationPatterns", js.Array(value :_*))
+    inline def setAutoSubDomainCreationPatternsVarargs(value: AutoSubDomainCreationPattern*): Self = StObject.set(x, "autoSubDomainCreationPatterns", js.Array(value*))
     
     inline def setAutoSubDomainIAMRole(value: AutoSubDomainIAMRole): Self = StObject.set(x, "autoSubDomainIAMRole", value.asInstanceOf[js.Any])
     
@@ -65,6 +65,8 @@ object UpdateDomainAssociationRequest {
     
     inline def setSubDomainSettings(value: SubDomainSettings): Self = StObject.set(x, "subDomainSettings", value.asInstanceOf[js.Any])
     
-    inline def setSubDomainSettingsVarargs(value: SubDomainSetting*): Self = StObject.set(x, "subDomainSettings", js.Array(value :_*))
+    inline def setSubDomainSettingsUndefined: Self = StObject.set(x, "subDomainSettings", js.undefined)
+    
+    inline def setSubDomainSettingsVarargs(value: SubDomainSetting*): Self = StObject.set(x, "subDomainSettings", js.Array(value*))
   }
 }

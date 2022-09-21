@@ -22,6 +22,6 @@ object ListFeedsResponse {
     
     inline def setFeedsUndefined: Self = StObject.set(x, "feeds", js.undefined)
     
-    inline def setFeedsVarargs(value: Feed*): Self = StObject.set(x, "feeds", js.Array(value :_*))
+    inline def setFeedsVarargs(value: Feed*): Self = StObject.set(x, "feeds", js.Array(value*))
   }
 }

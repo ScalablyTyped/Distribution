@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GenerateDataKeyPairWithoutPlaintextResponse extends StObject {
   
   /**
-    * The Amazon Resource Name (key ARN) of the CMK that encrypted the private key.
+    * The Amazon Resource Name (key ARN) of the KMS key that encrypted the private key.
     */
   var KeyId: js.UndefOr[KeyIdType] = js.undefined
   
@@ -17,12 +17,12 @@ trait GenerateDataKeyPairWithoutPlaintextResponse extends StObject {
   var KeyPairSpec: js.UndefOr[DataKeyPairSpec] = js.undefined
   
   /**
-    * The encrypted copy of the private key. When you use the HTTP API or the AWS CLI, the value is Base64-encoded. Otherwise, it is not Base64-encoded.
+    * The encrypted copy of the private key. When you use the HTTP API or the Amazon Web Services CLI, the value is Base64-encoded. Otherwise, it is not Base64-encoded.
     */
   var PrivateKeyCiphertextBlob: js.UndefOr[CiphertextType] = js.undefined
   
   /**
-    * The public key (in plaintext).
+    * The public key (in plaintext). When you use the HTTP API or the Amazon Web Services CLI, the value is Base64-encoded. Otherwise, it is not Base64-encoded.
     */
   var PublicKey: js.UndefOr[PublicKeyType] = js.undefined
 }

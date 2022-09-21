@@ -1,7 +1,7 @@
 
 # Scala.js typings for mangopay2-nodejs-sdk
 
-Typings are for version 1.9
+Typings are for version 1.31.0
 
 ## Library description:
 Mangopay Node.js SDK
@@ -10,10 +10,10 @@ Mangopay Node.js SDK
 | ------------------ | :-------------: |
 | Full name          | mangopay2-nodejs-sdk |
 | Keywords           | mangopay, nodejs, sdk, credit cards, api |
-| # releases         | 10 |
-| # dependents       | 0 |
-| # downloads        | 119624 |
-| # stars            | 1 |
+| # releases         | 33 |
+| # dependents       | 0.0 |
+| # downloads        | 8737.0 |
+| # stars            | 43.0 |
 
 ## Links
 - [Homepage](https://github.com/Mangopay/mangopay2-nodejs-sdk#readme)
@@ -24,7 +24,7 @@ Mangopay Node.js SDK
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

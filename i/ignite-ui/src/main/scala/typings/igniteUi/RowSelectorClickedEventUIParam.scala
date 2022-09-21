@@ -14,12 +14,12 @@ trait RowSelectorClickedEventUIParam extends StObject {
   /**
     * Gets a reference to the grid the RowSelectors are initialized for.
     */
-  var grid: js.UndefOr[js.Any] = js.undefined
+  var grid: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets reference to RowSelectors.
     */
-  var owner: js.UndefOr[js.Any] = js.undefined
+  var owner: js.UndefOr[Any] = js.undefined
   
   /**
     * Gets reference to the row the clicked row selector resides in.
@@ -54,11 +54,11 @@ object RowSelectorClickedEventUIParam {
     
     inline def setFixedRowUndefined: Self = StObject.set(x, "fixedRow", js.undefined)
     
-    inline def setGrid(value: js.Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+    inline def setGrid(value: Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     
     inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
     
-    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     

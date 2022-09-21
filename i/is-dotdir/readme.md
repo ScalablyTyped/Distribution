@@ -10,10 +10,10 @@ Returns true if a path is a dot-directory.
 | ------------------ | :-------------: |
 | Full name          | is-dotdir |
 | Keywords           | dotdir, is |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 645140 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 42345.333333333336 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/jonschlinkert/is-dotdir)

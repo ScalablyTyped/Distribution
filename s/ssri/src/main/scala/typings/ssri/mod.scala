@@ -1,8 +1,7 @@
 package typings.ssri
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.node.Buffer
-import typings.node.NodeJS.TypedArray
+import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Readable
 import typings.node.streamMod.Transform
 import typings.ssri.anon.Algorithms
@@ -21,7 +20,6 @@ import typings.ssri.anon.Strict
 import typings.ssri.anon.`0`
 import typings.ssri.anon.`1`
 import typings.ssri.ssriBooleans.`false`
-import typings.std.DataView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,7 +32,7 @@ object mod {
   
   @JSImport("ssri", "Hash")
   @js.native
-  class Hash protected ()
+  open class Hash protected ()
     extends StObject
        with HashLike {
     def this(hash: String) = this()
@@ -59,7 +57,7 @@ object mod {
   
   @JSImport("ssri", "Integrity")
   @js.native
-  class Integrity () extends StObject {
+  open class Integrity () extends StObject {
     
     def concat(integrity: String): IntegrityMap = js.native
     def concat(integrity: String, opts: Strict): IntegrityMap = js.native
@@ -105,18 +103,39 @@ object mod {
   inline def checkData(data: String, sri: HashLike, opts: Error): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
   inline def checkData(data: String, sri: IntegrityLike): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
   inline def checkData(data: String, sri: IntegrityLike, opts: Error): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
+  inline def checkData(
+    data: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.TypedArray */ Any,
+    sri: String
+  ): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
+  inline def checkData(
+    data: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.TypedArray */ Any,
+    sri: String,
+    opts: Error
+  ): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
+  inline def checkData(
+    data: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.TypedArray */ Any,
+    sri: HashLike
+  ): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
+  inline def checkData(
+    data: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.TypedArray */ Any,
+    sri: HashLike,
+    opts: Error
+  ): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
+  inline def checkData(
+    data: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.TypedArray */ Any,
+    sri: IntegrityLike
+  ): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
+  inline def checkData(
+    data: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.TypedArray */ Any,
+    sri: IntegrityLike,
+    opts: Error
+  ): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
   inline def checkData(data: Buffer, sri: String): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
   inline def checkData(data: Buffer, sri: String, opts: Error): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
   inline def checkData(data: Buffer, sri: HashLike): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
   inline def checkData(data: Buffer, sri: HashLike, opts: Error): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
   inline def checkData(data: Buffer, sri: IntegrityLike): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
   inline def checkData(data: Buffer, sri: IntegrityLike, opts: Error): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
-  inline def checkData(data: TypedArray, sri: String): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
-  inline def checkData(data: TypedArray, sri: String, opts: Error): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
-  inline def checkData(data: TypedArray, sri: HashLike): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
-  inline def checkData(data: TypedArray, sri: HashLike, opts: Error): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
-  inline def checkData(data: TypedArray, sri: IntegrityLike): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
-  inline def checkData(data: TypedArray, sri: IntegrityLike, opts: Error): Hash | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("checkData")(data.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Hash | `false`]
   
   inline def checkStream(stream: Readable, sri: String): js.Thenable[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Hash]]
   inline def checkStream(stream: Readable, sri: String, opts: OptionsPickAlgorithm): js.Thenable[Hash] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkStream")(stream.asInstanceOf[js.Any], sri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Hash]]
@@ -137,12 +156,17 @@ object mod {
   
   inline def fromData(data: String): IntegrityMap = ^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(data.asInstanceOf[js.Any]).asInstanceOf[IntegrityMap]
   inline def fromData(data: String, opts: Algorithms): IntegrityMap = (^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap]
+  inline def fromData(data: js.typedarray.DataView): IntegrityMap = ^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(data.asInstanceOf[js.Any]).asInstanceOf[IntegrityMap]
+  inline def fromData(data: js.typedarray.DataView, opts: Algorithms): IntegrityMap = (^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap]
+  inline def fromData(
+    data: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.TypedArray */ Any
+  ): IntegrityMap = ^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(data.asInstanceOf[js.Any]).asInstanceOf[IntegrityMap]
+  inline def fromData(
+    data: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.TypedArray */ Any,
+    opts: Algorithms
+  ): IntegrityMap = (^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap]
   inline def fromData(data: Buffer): IntegrityMap = ^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(data.asInstanceOf[js.Any]).asInstanceOf[IntegrityMap]
   inline def fromData(data: Buffer, opts: Algorithms): IntegrityMap = (^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap]
-  inline def fromData(data: TypedArray): IntegrityMap = ^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(data.asInstanceOf[js.Any]).asInstanceOf[IntegrityMap]
-  inline def fromData(data: TypedArray, opts: Algorithms): IntegrityMap = (^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap]
-  inline def fromData(data: DataView): IntegrityMap = ^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(data.asInstanceOf[js.Any]).asInstanceOf[IntegrityMap]
-  inline def fromData(data: DataView, opts: Algorithms): IntegrityMap = (^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap]
   
   inline def fromHex(hexDigest: String, algorithm: String): IntegrityMap = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hexDigest.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap]
   inline def fromHex(hexDigest: String, algorithm: String, opts: Options): IntegrityMap = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hexDigest.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrityMap]
@@ -215,7 +239,7 @@ object mod {
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      inline def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value*))
     }
   }
   

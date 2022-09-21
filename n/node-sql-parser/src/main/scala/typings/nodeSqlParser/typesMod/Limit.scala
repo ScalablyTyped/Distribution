@@ -23,6 +23,6 @@ object Limit {
     
     inline def setValue(value: js.Array[LimitValue]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    inline def setValueVarargs(value: LimitValue*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: LimitValue*): Self = StObject.set(x, "value", js.Array(value*))
   }
 }

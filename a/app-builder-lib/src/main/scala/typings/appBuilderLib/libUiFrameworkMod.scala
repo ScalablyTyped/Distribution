@@ -12,7 +12,7 @@ object libUiFrameworkMod {
   
   @JSImport("app-builder-lib/out/frameworks/LibUiFramework", "LibUiFramework")
   @js.native
-  class LibUiFramework protected ()
+  open class LibUiFramework protected ()
     extends StObject
        with Framework {
     def this(version: String, distMacOsAppName: String, isUseLaunchUi: Boolean) = this()
@@ -40,7 +40,7 @@ object libUiFrameworkMod {
     
     /* protected */ val isUseLaunchUi: Boolean = js.native
     
-    /* private */ var isUseLaunchUiForPlatform: js.Any = js.native
+    /* private */ var isUseLaunchUiForPlatform: Any = js.native
     
     /* CompleteClass */
     override val macOsDefaultTargets: js.Array[String] = js.native
@@ -49,11 +49,11 @@ object libUiFrameworkMod {
     override val name: String = js.native
     
     /* CompleteClass */
-    override def prepareApplicationStageDirectory(options: PrepareApplicationStageDirectoryOptions): js.Promise[js.Any] = js.native
+    override def prepareApplicationStageDirectory(options: PrepareApplicationStageDirectoryOptions): js.Promise[Any] = js.native
     
-    /* private */ var prepareLinuxApplicationStageDirectory: js.Any = js.native
+    /* private */ var prepareLinuxApplicationStageDirectory: Any = js.native
     
-    /* private */ var prepareMacosApplicationStageDirectory: js.Any = js.native
+    /* private */ var prepareMacosApplicationStageDirectory: Any = js.native
     
     /* CompleteClass */
     override val version: String = js.native

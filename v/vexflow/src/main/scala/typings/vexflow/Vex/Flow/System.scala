@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait System extends StObject {
   
-  def addConnector(): js.Any = js.native
-  def addConnector(`type`: String): js.Any = js.native
+  def addConnector(): Any = js.native
+  def addConnector(`type`: String): Any = js.native
   
-  def addStave(params: js.Any): Stave = js.native
+  def addStave(params: Any): Stave = js.native
   
-  def draw(): js.Any = js.native
+  def draw(): Any = js.native
   
-  def format(): js.Any = js.native
+  def format(): Any = js.native
   
   def setOptions(): Unit = js.native
-  def setOptions(options: js.Any): Unit = js.native
+  def setOptions(options: Any): Unit = js.native
 }

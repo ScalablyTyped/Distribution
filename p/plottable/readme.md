@@ -1,7 +1,7 @@
 
 # Scala.js typings for plottable
 
-Typings are for version 3.9.0
+Typings are for version 3.13.0
 
 ## Library description:
 A modular charting library built on D3
@@ -10,10 +10,10 @@ A modular charting library built on D3
 | ------------------ | :-------------: |
 | Full name          | plottable |
 | Keywords           | - |
-| # releases         | 32 |
-| # dependents       | 3 |
-| # downloads        | 120361 |
-| # stars            | 0 |
+| # releases         | 19 |
+| # dependents       | 0.0 |
+| # downloads        | 18233.0 |
+| # stars            | 2871.0 |
 
 ## Links
 - [Homepage](https://github.com/palantir/plottable#readme)

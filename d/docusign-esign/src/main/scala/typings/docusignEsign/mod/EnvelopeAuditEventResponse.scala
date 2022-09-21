@@ -24,6 +24,6 @@ object EnvelopeAuditEventResponse {
     
     inline def setAuditEventsUndefined: Self = StObject.set(x, "auditEvents", js.undefined)
     
-    inline def setAuditEventsVarargs(value: EnvelopeAuditEvent*): Self = StObject.set(x, "auditEvents", js.Array(value :_*))
+    inline def setAuditEventsVarargs(value: EnvelopeAuditEvent*): Self = StObject.set(x, "auditEvents", js.Array(value*))
   }
 }

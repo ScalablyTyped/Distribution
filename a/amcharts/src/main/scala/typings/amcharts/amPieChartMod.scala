@@ -8,7 +8,7 @@ object amPieChartMod {
   
   @JSImport("amcharts/AmPieChart", JSImport.Default)
   @js.native
-  class default () extends AmPieChart
+  open class default () extends AmPieChart
   
   @js.native
   trait AmPieChart
@@ -38,7 +38,7 @@ object amPieChartMod {
     /**
       * Read-only. Array of Slice objects.
       */
-    var chartData: js.Array[js.Any] = js.native
+    var chartData: js.Array[Any] = js.native
     
     /**
       * You can trigger the click on a slice from outside. index - the number of a slice or Slice object.
@@ -59,7 +59,7 @@ object amPieChartMod {
       * "#000000", "#57032A", "#CA9726", "#990000", "#4B0C25"
       * ]
       */
-    var colors: js.Array[js.Any] = js.native
+    var colors: js.Array[Any] = js.native
     
     /**
       * Depth of the pie (for 3D effect).
@@ -131,7 +131,7 @@ object amPieChartMod {
     /**
       * Inner radius of the pie, in pixels or percents.
       */
-    var innerRadius: js.Any = js.native
+    var innerRadius: Any = js.native
     
     /**
       * The distance between the label and the slice, in pixels.
@@ -233,12 +233,12 @@ object amPieChartMod {
     /**
       * You can set fixed position of a pie center, in pixels or in percents.
       */
-    var pieX: js.Any = js.native
+    var pieX: Any = js.native
     
     /**
       * You can set fixed position of a pie center, in pixels or in percents.
       */
-    var pieY: js.Any = js.native
+    var pieY: Any = js.native
     
     /**
       * Pull out duration, in seconds.
@@ -260,7 +260,7 @@ object amPieChartMod {
     /**
       * Pull out radius, in pixels or percents 0.2
       */
-    var pullOutRadius: js.Any = js.native
+    var pullOutRadius: Any = js.native
     
     /**
       * Name of the field in chart's dataProvider which holds a boolean value
@@ -271,7 +271,7 @@ object amPieChartMod {
     /**
       * Radius of a pie, in pixels or percents. By default, radius is calculated automatically.
       */
-    var radius: js.Any = js.native
+    var radius: Any = js.native
     
     /**
       * You can simulate roll-out of a slice from outside. index - the number of a slice or Slice object.
@@ -321,7 +321,7 @@ object amPieChartMod {
       * Radius of the positions from which the slices will fly in.
       * @default 5
       */
-    var startRadius: js.Any = js.native
+    var startRadius: Any = js.native
     
     /**
       * Name of the field in chart's dataProvider which holds slice's title.

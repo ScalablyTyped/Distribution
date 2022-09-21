@@ -9,7 +9,7 @@ trait DashboardSummary extends StObject {
   /**
     * The date the dashboard was created, in Unix epoch time.
     */
-  var creationDate: js.UndefOr[Timestamp] = js.undefined
+  var creationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The dashboard's description.
@@ -24,7 +24,7 @@ trait DashboardSummary extends StObject {
   /**
     * The date the dashboard was last updated, in Unix epoch time.
     */
-  var lastUpdateDate: js.UndefOr[Timestamp] = js.undefined
+  var lastUpdateDate: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The name of the dashboard
@@ -40,7 +40,7 @@ object DashboardSummary {
   
   extension [Self <: DashboardSummary](x: Self) {
     
-    inline def setCreationDate(value: Timestamp): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
     inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
@@ -50,7 +50,7 @@ object DashboardSummary {
     
     inline def setId(value: ID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setLastUpdateDate(value: Timestamp): Self = StObject.set(x, "lastUpdateDate", value.asInstanceOf[js.Any])
+    inline def setLastUpdateDate(value: js.Date): Self = StObject.set(x, "lastUpdateDate", value.asInstanceOf[js.Any])
     
     inline def setLastUpdateDateUndefined: Self = StObject.set(x, "lastUpdateDate", js.undefined)
     

@@ -5,6 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type CollectionAdsDialogResponse = typings.facebookJsSdk.facebook.InstantExperiencesAdsDialogResponse
+type CollectionAdsDialogResponse = InstantExperiencesAdsDialogResponse
 
-type FacebookEventCallback[TEvent /* <: typings.facebookJsSdk.facebook.FacebookEventType */] = (js.Function1[/* response */ typings.facebookJsSdk.facebook.StatusResponse, scala.Unit]) | js.Function0[scala.Unit]
+type EducationExperience = Any
+
+type Experience = Any
+
+type FacebookEventCallback[TEvent /* <: FacebookEventType */] = (js.Function1[/* response */ StatusResponse, Unit]) | js.Function0[Unit]
+
+type Page = Any
+
+type PaymentPricepoints = Any
+
+type User = Any
+
+type VideoUploadLimits = Any

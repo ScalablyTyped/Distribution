@@ -34,7 +34,7 @@ object Segments {
     
     inline def setSegments(value: js.Array[Node]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     
-    inline def setSegmentsVarargs(value: Node*): Self = StObject.set(x, "segments", js.Array(value :_*))
+    inline def setSegmentsVarargs(value: Node*): Self = StObject.set(x, "segments", js.Array(value*))
     
     inline def set__type(value: String): Self = StObject.set(x, "__type", value.asInstanceOf[js.Any])
   }

@@ -174,7 +174,7 @@ object Bone {
     
     inline def setChildren(value: js.Array[Bone]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setChildrenVarargs(value: Bone*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: Bone*): Self = StObject.set(x, "children", js.Array(value*))
     
     inline def setD(value: Double): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     

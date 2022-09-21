@@ -48,13 +48,10 @@ trait PlusGallery extends StObject {
     */
   def pick(): Unit = js.native
   def pick(succesCB: js.Function1[/* result */ String, Unit]): Unit = js.native
+  def pick(succesCB: js.Function1[/* result */ String, Unit], errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def pick(
     succesCB: js.Function1[/* result */ String, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def pick(
-    succesCB: js.Function1[/* result */ String, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit],
+    errorCB: js.Function1[/* result */ Any, Unit],
     options: PlusGalleryGalleryOptions
   ): Unit = js.native
   def pick(
@@ -62,12 +59,8 @@ trait PlusGallery extends StObject {
     errorCB: Unit,
     options: PlusGalleryGalleryOptions
   ): Unit = js.native
-  def pick(succesCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def pick(
-    succesCB: Unit,
-    errorCB: js.Function1[/* result */ js.Any, Unit],
-    options: PlusGalleryGalleryOptions
-  ): Unit = js.native
+  def pick(succesCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
+  def pick(succesCB: Unit, errorCB: js.Function1[/* result */ Any, Unit], options: PlusGalleryGalleryOptions): Unit = js.native
   def pick(succesCB: Unit, errorCB: Unit, options: PlusGalleryGalleryOptions): Unit = js.native
   
   /**
@@ -84,14 +77,14 @@ trait PlusGallery extends StObject {
   def save(
     path: String,
     succesCB: js.Function1[/* result */ PlusGalleryGallerySaveEvent, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def save(path: String, succesCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def save(path: String, succesCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
   def save(path: Unit, succesCB: js.Function1[/* result */ PlusGalleryGallerySaveEvent, Unit]): Unit = js.native
   def save(
     path: Unit,
     succesCB: js.Function1[/* result */ PlusGalleryGallerySaveEvent, Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
+    errorCB: js.Function1[/* result */ Any, Unit]
   ): Unit = js.native
-  def save(path: Unit, succesCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def save(path: Unit, succesCB: Unit, errorCB: js.Function1[/* result */ Any, Unit]): Unit = js.native
 }

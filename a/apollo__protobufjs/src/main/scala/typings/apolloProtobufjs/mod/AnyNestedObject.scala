@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AnyNestedObject extends StObject
 object AnyNestedObject {
   
-  inline def IEnum(values: StringDictionary[js.UndefOr[Double]]): typings.apolloProtobufjs.mod.IEnum = {
+  inline def IEnum(values: StringDictionary[Double]): typings.apolloProtobufjs.mod.IEnum = {
     val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.apolloProtobufjs.mod.IEnum]
   }
@@ -38,12 +38,12 @@ object AnyNestedObject {
     __obj.asInstanceOf[typings.apolloProtobufjs.mod.INamespace]
   }
   
-  inline def IService(methods: StringDictionary[js.UndefOr[IMethod]]): typings.apolloProtobufjs.mod.IService = {
+  inline def IService(methods: StringDictionary[IMethod]): typings.apolloProtobufjs.mod.IService = {
     val __obj = js.Dynamic.literal(methods = methods.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.apolloProtobufjs.mod.IService]
   }
   
-  inline def IType(fields: StringDictionary[js.UndefOr[IField]]): typings.apolloProtobufjs.mod.IType = {
+  inline def IType(fields: StringDictionary[IField]): typings.apolloProtobufjs.mod.IType = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.apolloProtobufjs.mod.IType]
   }

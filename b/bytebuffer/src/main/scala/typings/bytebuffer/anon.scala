@@ -1,6 +1,6 @@
 package typings.bytebuffer
 
-import typings.long.mod.Long
+import typings.long.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,11 +32,11 @@ object anon {
     
     var length: Double
     
-    var value: Long
+    var value: ^
   }
   object LengthValue {
     
-    inline def apply(length: Double, value: Long): LengthValue = {
+    inline def apply(length: Double, value: ^): LengthValue = {
       val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[LengthValue]
     }
@@ -45,7 +45,7 @@ object anon {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: Long): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: ^): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

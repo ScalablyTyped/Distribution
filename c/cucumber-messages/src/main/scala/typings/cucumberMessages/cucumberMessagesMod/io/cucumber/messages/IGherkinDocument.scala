@@ -36,7 +36,7 @@ object IGherkinDocument {
     
     inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
-    inline def setCommentsVarargs(value: IComment*): Self = StObject.set(x, "comments", js.Array(value :_*))
+    inline def setCommentsVarargs(value: IComment*): Self = StObject.set(x, "comments", js.Array(value*))
     
     inline def setFeature(value: IFeature): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     

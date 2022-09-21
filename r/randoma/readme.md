@@ -1,7 +1,7 @@
 
 # Scala.js typings for randoma
 
-Typings are for version 1.3.0
+Typings are for version 2.0.0
 
 ## Library description:
 User-friendly pseudorandom number generator (PRNG)
@@ -11,9 +11,9 @@ User-friendly pseudorandom number generator (PRNG)
 | Full name          | randoma |
 | Keywords           | pseudorandom, number, generator, algorithm, random, integer, int, float, boolean, date, seed, seeded, prng, rng |
 | # releases         | 2 |
-| # dependents       | 4 |
-| # downloads        | 53443 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 8041.333333333333 |
+| # stars            | 103.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/randoma#readme)

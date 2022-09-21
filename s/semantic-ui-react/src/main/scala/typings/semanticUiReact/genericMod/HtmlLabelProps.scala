@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HtmlLabelProps
   extends StObject
      with StrictHtmlLabelProps
-     with /* key */ StringDictionary[js.Any]
+     with /* key */ StringDictionary[Any]
 object HtmlLabelProps {
   
   inline def apply(): HtmlLabelProps = {

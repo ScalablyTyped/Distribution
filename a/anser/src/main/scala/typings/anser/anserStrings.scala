@@ -1,5 +1,6 @@
 package typings.anser
 
+import typings.anser.mod.DecorationName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,34 +8,50 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object anserStrings {
   
   @js.native
-  sealed trait blink extends StObject
+  sealed trait blink
+    extends StObject
+       with DecorationName
   inline def blink: blink = "blink".asInstanceOf[blink]
   
   @js.native
-  sealed trait bold extends StObject
+  sealed trait bold
+    extends StObject
+       with DecorationName
   inline def bold: bold = "bold".asInstanceOf[bold]
   
   @js.native
-  sealed trait dim extends StObject
+  sealed trait dim
+    extends StObject
+       with DecorationName
   inline def dim: dim = "dim".asInstanceOf[dim]
   
   @js.native
-  sealed trait hidden extends StObject
+  sealed trait hidden
+    extends StObject
+       with DecorationName
   inline def hidden: hidden = "hidden".asInstanceOf[hidden]
   
   @js.native
-  sealed trait italic extends StObject
+  sealed trait italic
+    extends StObject
+       with DecorationName
   inline def italic: italic = "italic".asInstanceOf[italic]
   
   @js.native
-  sealed trait reverse extends StObject
+  sealed trait reverse
+    extends StObject
+       with DecorationName
   inline def reverse: reverse = "reverse".asInstanceOf[reverse]
   
   @js.native
-  sealed trait strikethrough extends StObject
+  sealed trait strikethrough
+    extends StObject
+       with DecorationName
   inline def strikethrough: strikethrough = "strikethrough".asInstanceOf[strikethrough]
   
   @js.native
-  sealed trait underline extends StObject
+  sealed trait underline
+    extends StObject
+       with DecorationName
   inline def underline: underline = "underline".asInstanceOf[underline]
 }

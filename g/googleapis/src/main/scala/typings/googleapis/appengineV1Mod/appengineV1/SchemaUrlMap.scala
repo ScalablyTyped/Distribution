@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * URL pattern and description of how the URL should be handled. App Engine
-  * can handle URLs by executing application code or by serving static files
-  * uploaded with the version, such as images, CSS, or JavaScript.
-  */
 trait SchemaUrlMap extends StObject {
   
   /**
@@ -17,34 +12,29 @@ trait SchemaUrlMap extends StObject {
   var apiEndpoint: js.UndefOr[SchemaApiEndpointHandler] = js.undefined
   
   /**
-    * Action to take when users access resources that require authentication.
-    * Defaults to redirect.
+    * Action to take when users access resources that require authentication. Defaults to redirect.
     */
-  var authFailAction: js.UndefOr[String] = js.undefined
+  var authFailAction: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Level of login required to access this resource. Not supported for
-    * Node.js in the App Engine standard environment.
+    * Level of login required to access this resource. Not supported for Node.js in the App Engine standard environment.
     */
-  var login: js.UndefOr[String] = js.undefined
+  var login: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * 30x code to use when performing redirects for the secure field. Defaults
-    * to 302.
+    * 30x code to use when performing redirects for the secure field. Defaults to 302.
     */
-  var redirectHttpResponseCode: js.UndefOr[String] = js.undefined
+  var redirectHttpResponseCode: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Executes a script to handle the requests that match this URL pattern.
-    * Only the auto value is supported for Node.js in the App Engine standard
-    * environment, for example &quot;script&quot;: &quot;auto&quot;.
+    * Executes a script to handle the requests that match this URL pattern. Only the auto value is supported for Node.js in the App Engine standard environment, for example "script": "auto".
     */
   var script: js.UndefOr[SchemaScriptHandler] = js.undefined
   
   /**
     * Security (HTTPS) enforcement for this URL.
     */
-  var securityLevel: js.UndefOr[String] = js.undefined
+  var securityLevel: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Returns the contents of a file, such as an image, as the response.
@@ -52,12 +42,9 @@ trait SchemaUrlMap extends StObject {
   var staticFiles: js.UndefOr[SchemaStaticFilesHandler] = js.undefined
   
   /**
-    * URL prefix. Uses regular expression syntax, which means regexp special
-    * characters must be escaped, but should not contain groupings. All URLs
-    * that begin with this prefix are handled by this handler, using the
-    * portion of the URL after the prefix as part of the file path.
+    * URL prefix. Uses regular expression syntax, which means regexp special characters must be escaped, but should not contain groupings. All URLs that begin with this prefix are handled by this handler, using the portion of the URL after the prefix as part of the file path.
     */
-  var urlRegex: js.UndefOr[String] = js.undefined
+  var urlRegex: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaUrlMap {
   
@@ -74,13 +61,19 @@ object SchemaUrlMap {
     
     inline def setAuthFailAction(value: String): Self = StObject.set(x, "authFailAction", value.asInstanceOf[js.Any])
     
+    inline def setAuthFailActionNull: Self = StObject.set(x, "authFailAction", null)
+    
     inline def setAuthFailActionUndefined: Self = StObject.set(x, "authFailAction", js.undefined)
     
     inline def setLogin(value: String): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
     
+    inline def setLoginNull: Self = StObject.set(x, "login", null)
+    
     inline def setLoginUndefined: Self = StObject.set(x, "login", js.undefined)
     
     inline def setRedirectHttpResponseCode(value: String): Self = StObject.set(x, "redirectHttpResponseCode", value.asInstanceOf[js.Any])
+    
+    inline def setRedirectHttpResponseCodeNull: Self = StObject.set(x, "redirectHttpResponseCode", null)
     
     inline def setRedirectHttpResponseCodeUndefined: Self = StObject.set(x, "redirectHttpResponseCode", js.undefined)
     
@@ -90,6 +83,8 @@ object SchemaUrlMap {
     
     inline def setSecurityLevel(value: String): Self = StObject.set(x, "securityLevel", value.asInstanceOf[js.Any])
     
+    inline def setSecurityLevelNull: Self = StObject.set(x, "securityLevel", null)
+    
     inline def setSecurityLevelUndefined: Self = StObject.set(x, "securityLevel", js.undefined)
     
     inline def setStaticFiles(value: SchemaStaticFilesHandler): Self = StObject.set(x, "staticFiles", value.asInstanceOf[js.Any])
@@ -97,6 +92,8 @@ object SchemaUrlMap {
     inline def setStaticFilesUndefined: Self = StObject.set(x, "staticFiles", js.undefined)
     
     inline def setUrlRegex(value: String): Self = StObject.set(x, "urlRegex", value.asInstanceOf[js.Any])
+    
+    inline def setUrlRegexNull: Self = StObject.set(x, "urlRegex", null)
     
     inline def setUrlRegexUndefined: Self = StObject.set(x, "urlRegex", js.undefined)
   }

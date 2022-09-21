@@ -17,8 +17,8 @@ trait Tile
   
   def destroy(): Unit = js.native
   
-  def fadeIn(callback: js.Function0[js.Any]): Unit = js.native
-  def fadeIn(callback: js.Function0[js.Any], startOpacity: Double): Unit = js.native
+  def fadeIn(callback: js.Function0[Any]): Unit = js.native
+  def fadeIn(callback: js.Function0[Any], startOpacity: Double): Unit = js.native
   
   def getElement(): HTMLElement = js.native
   

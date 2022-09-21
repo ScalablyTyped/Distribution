@@ -12,11 +12,11 @@ trait Templates extends StObject {
   
   val Creator: Double
   
-  def Item(Index: js.Any): Template
+  def Item(Index: Any): Template
   
   def LoadBuildingBlocks(): Unit
   
-  val Parent: js.Any
+  val Parent: Any
   
   /* private */ @JSName("Word.Templates_typekey")
   var WordDotTemplates_typekey: Templates
@@ -27,9 +27,9 @@ object Templates {
     Application: Application,
     Count: Double,
     Creator: Double,
-    Item: js.Any => Template,
+    Item: Any => Template,
     LoadBuildingBlocks: () => Unit,
-    Parent: js.Any,
+    Parent: Any,
     WordDotTemplates_typekey: Templates
   ): Templates = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), LoadBuildingBlocks = js.Any.fromFunction0(LoadBuildingBlocks), Parent = Parent.asInstanceOf[js.Any])
@@ -45,11 +45,11 @@ object Templates {
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setItem(value: js.Any => Template): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Any => Template): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
     inline def setLoadBuildingBlocks(value: () => Unit): Self = StObject.set(x, "LoadBuildingBlocks", js.Any.fromFunction0(value))
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setWordDotTemplates_typekey(value: Templates): Self = StObject.set(x, "Word.Templates_typekey", value.asInstanceOf[js.Any])
   }

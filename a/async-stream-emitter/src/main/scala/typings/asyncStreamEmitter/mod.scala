@@ -9,7 +9,7 @@ object mod {
   
   @JSImport("async-stream-emitter", JSImport.Namespace)
   @js.native
-  class ^[T] ()
+  open class ^[T] ()
     extends StObject
        with AsyncStreamEmitter[T] {
     

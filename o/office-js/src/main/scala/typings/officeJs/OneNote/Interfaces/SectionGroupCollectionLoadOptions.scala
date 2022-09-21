@@ -5,76 +5,79 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a collection of section groups.
   *
+  * @remarks
   * [Api set: OneNoteApi 1.1]
   */
 trait SectionGroupCollectionLoadOptions extends StObject {
   
+  /**
+    Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
+    */
   @JSName("$all")
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: The client url of the section group. Read only
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var clientUrl: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Gets the ID of the section group. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var id: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Gets the name of the section group. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var name: js.UndefOr[Boolean] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Gets the notebook that contains the section group.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var notebook: js.UndefOr[NotebookLoadOptions] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Gets the section group that contains the section group. Throws ItemNotFound if the section group is a direct child of the notebook.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var parentSectionGroup: js.UndefOr[SectionGroupLoadOptions] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: Gets the section group that contains the section group. Returns null if the section group is a direct child of the notebook.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var parentSectionGroupOrNull: js.UndefOr[SectionGroupLoadOptions] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: The collection of section groups in the section group. Read only
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var sectionGroups: js.UndefOr[SectionGroupCollectionLoadOptions] = js.undefined
   
   /**
-    *
     * For EACH ITEM in the collection: The collection of sections in the section group. Read only
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var sections: js.UndefOr[SectionCollectionLoadOptions] = js.undefined

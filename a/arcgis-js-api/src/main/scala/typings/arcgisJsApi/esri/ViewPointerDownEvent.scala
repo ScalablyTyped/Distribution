@@ -13,7 +13,7 @@ trait ViewPointerDownEvent extends StObject {
   
   var buttons: Double
   
-  var native: js.Any
+  var native: Any
   
   var pointerId: Double
   
@@ -34,7 +34,7 @@ object ViewPointerDownEvent {
   inline def apply(
     button: Double,
     buttons: Double,
-    native: js.Any,
+    native: Any,
     pointerId: Double,
     pointerType: mouse | touch,
     stopPropagation: js.Function,
@@ -53,7 +53,7 @@ object ViewPointerDownEvent {
     
     inline def setButtons(value: Double): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
-    inline def setNative(value: js.Any): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
+    inline def setNative(value: Any): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
     
     inline def setPointerId(value: Double): Self = StObject.set(x, "pointerId", value.asInstanceOf[js.Any])
     

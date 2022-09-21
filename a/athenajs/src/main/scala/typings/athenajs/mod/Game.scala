@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("athenajs", "Game")
 @js.native
-class Game protected () extends StObject {
+open class Game protected () extends StObject {
   def this(options: GameOptions) = this()
   
   def bindEvents(eventList: String): Unit = js.native

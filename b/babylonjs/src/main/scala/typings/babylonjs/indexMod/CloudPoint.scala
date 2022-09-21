@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs/index", "CloudPoint")
 @js.native
-class CloudPoint protected ()
+open class CloudPoint protected ()
   extends typings.babylonjs.particlesIndexMod.CloudPoint {
   /**
     * Creates a Point Cloud object.

@@ -16,7 +16,7 @@ object nbconvertMod {
   /**
     * Create a new nbconvert manager.
     */
-  class NbConvertManager () extends StObject {
+  open class NbConvertManager () extends StObject {
     def this(options: IOptions) = this()
     
     /**

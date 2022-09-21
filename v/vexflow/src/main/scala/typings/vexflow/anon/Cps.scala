@@ -33,7 +33,7 @@ object Cps {
     
     inline def setCpsUndefined: Self = StObject.set(x, "cps", js.undefined)
     
-    inline def setCpsVarargs(value: X*): Self = StObject.set(x, "cps", js.Array(value :_*))
+    inline def setCpsVarargs(value: X*): Self = StObject.set(x, "cps", js.Array(value*))
     
     inline def setInvert(value: Boolean): Self = StObject.set(x, "invert", value.asInstanceOf[js.Any])
     

@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Windows.Media.Protection.PlayReady.PlayReadyDomainJoinServiceRequest")
 @js.native
 /** Initializes a new instance of the PlayReadyDomainJoinServiceRequest class. */
-class PlayReadyDomainJoinServiceRequest ()
+open class PlayReadyDomainJoinServiceRequest ()
   extends StObject
      with typings.winrtUwp.Windows.Media.Protection.PlayReady.PlayReadyDomainJoinServiceRequest {
   

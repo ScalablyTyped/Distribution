@@ -13,7 +13,7 @@ object global {
     
     @JSGlobal("Obsolete")
     @js.native
-    class ^ ()
+    open class ^ ()
       extends typings.obsoleteWeb.mod.^ {
       def this(options: Options) = this()
     }

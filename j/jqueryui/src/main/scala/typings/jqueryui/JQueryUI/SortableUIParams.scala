@@ -11,13 +11,13 @@ trait SortableUIParams extends StObject {
   
   var item: JQuery
   
-  var offset: js.Any
+  var offset: Any
   
-  var originalPosition: js.Any
+  var originalPosition: Any
   
   var placeholder: JQuery
   
-  var position: js.Any
+  var position: Any
   
   var sender: JQuery
 }
@@ -26,10 +26,10 @@ object SortableUIParams {
   inline def apply(
     helper: JQuery,
     item: JQuery,
-    offset: js.Any,
-    originalPosition: js.Any,
+    offset: Any,
+    originalPosition: Any,
     placeholder: JQuery,
-    position: js.Any,
+    position: Any,
     sender: JQuery
   ): SortableUIParams = {
     val __obj = js.Dynamic.literal(helper = helper.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], originalPosition = originalPosition.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
@@ -42,13 +42,13 @@ object SortableUIParams {
     
     inline def setItem(value: JQuery): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    inline def setOffset(value: js.Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    inline def setOriginalPosition(value: js.Any): Self = StObject.set(x, "originalPosition", value.asInstanceOf[js.Any])
+    inline def setOriginalPosition(value: Any): Self = StObject.set(x, "originalPosition", value.asInstanceOf[js.Any])
     
     inline def setPlaceholder(value: JQuery): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
-    inline def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     inline def setSender(value: JQuery): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
   }

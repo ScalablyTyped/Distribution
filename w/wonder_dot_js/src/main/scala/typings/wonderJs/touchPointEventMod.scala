@@ -12,8 +12,8 @@ object touchPointEventMod {
   
   @JSImport("wonder.js/dist/es2015/event/object/TouchPointEvent", "TouchPointEvent")
   @js.native
-  class TouchPointEvent protected () extends PointEvent {
-    def this(event: js.Any, eventName: EEventName) = this()
+  open class TouchPointEvent protected () extends PointEvent {
+    def this(event: Any, eventName: EEventName) = this()
     
     @JSName("button")
     var button_TouchPointEvent: Double = js.native

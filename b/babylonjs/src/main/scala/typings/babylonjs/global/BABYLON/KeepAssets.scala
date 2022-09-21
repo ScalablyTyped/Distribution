@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BABYLON.KeepAssets")
 @js.native
-class KeepAssets ()
+open class KeepAssets ()
   extends StObject
      with typings.babylonjs.BABYLON.AbstractScene

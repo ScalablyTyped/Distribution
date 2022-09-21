@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-dock" : "0.6.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-dock" : "0.6.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

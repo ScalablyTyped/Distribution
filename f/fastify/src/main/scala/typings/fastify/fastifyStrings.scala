@@ -1,12 +1,20 @@
 package typings.fastify
 
-import typings.fastify.loggerMod.LogLevel
+import typings.fastify.contentTypeParserMod.ConstructorAction
+import typings.fastify.contentTypeParserMod.ProtoAction
+import typings.fastify.requestMod.HTTPRequestPart
 import typings.fastify.utilsMod.HTTPMethods
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fastifyStrings {
+  
+  @js.native
+  sealed trait COPY
+    extends StObject
+       with HTTPMethods
+  inline def COPY: COPY = "COPY".asInstanceOf[COPY]
   
   @js.native
   sealed trait DELETE
@@ -27,6 +35,24 @@ object fastifyStrings {
   inline def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
   
   @js.native
+  sealed trait LOCK
+    extends StObject
+       with HTTPMethods
+  inline def LOCK: LOCK = "LOCK".asInstanceOf[LOCK]
+  
+  @js.native
+  sealed trait MKCOL
+    extends StObject
+       with HTTPMethods
+  inline def MKCOL: MKCOL = "MKCOL".asInstanceOf[MKCOL]
+  
+  @js.native
+  sealed trait MOVE
+    extends StObject
+       with HTTPMethods
+  inline def MOVE: MOVE = "MOVE".asInstanceOf[MOVE]
+  
+  @js.native
   sealed trait OPTIONS
     extends StObject
        with HTTPMethods
@@ -45,10 +71,46 @@ object fastifyStrings {
   inline def POST: POST = "POST".asInstanceOf[POST]
   
   @js.native
+  sealed trait PROPFIND
+    extends StObject
+       with HTTPMethods
+  inline def PROPFIND: PROPFIND = "PROPFIND".asInstanceOf[PROPFIND]
+  
+  @js.native
+  sealed trait PROPPATCH
+    extends StObject
+       with HTTPMethods
+  inline def PROPPATCH: PROPPATCH = "PROPPATCH".asInstanceOf[PROPPATCH]
+  
+  @js.native
   sealed trait PUT
     extends StObject
        with HTTPMethods
   inline def PUT: PUT = "PUT".asInstanceOf[PUT]
+  
+  @js.native
+  sealed trait SEARCH
+    extends StObject
+       with HTTPMethods
+  inline def SEARCH: SEARCH = "SEARCH".asInstanceOf[SEARCH]
+  
+  @js.native
+  sealed trait TRACE
+    extends StObject
+       with HTTPMethods
+  inline def TRACE: TRACE = "TRACE".asInstanceOf[TRACE]
+  
+  @js.native
+  sealed trait UNLOCK
+    extends StObject
+       with HTTPMethods
+  inline def UNLOCK: UNLOCK = "UNLOCK".asInstanceOf[UNLOCK]
+  
+  @js.native
+  sealed trait body
+    extends StObject
+       with HTTPRequestPart
+  inline def body: body = "body".asInstanceOf[body]
   
   @js.native
   sealed trait both extends StObject
@@ -59,22 +121,21 @@ object fastifyStrings {
   inline def buffer: buffer = "buffer".asInstanceOf[buffer]
   
   @js.native
-  sealed trait debug
-    extends StObject
-       with LogLevel
-  inline def debug: debug = "debug".asInstanceOf[debug]
+  sealed trait constraints extends StObject
+  inline def constraints: constraints = "constraints".asInstanceOf[constraints]
   
   @js.native
   sealed trait error
     extends StObject
-       with LogLevel
+       with ConstructorAction
+       with ProtoAction
   inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait fatal
+  sealed trait headers
     extends StObject
-       with LogLevel
-  inline def fatal: fatal = "fatal".asInstanceOf[fatal]
+       with HTTPRequestPart
+  inline def headers: headers = "headers".asInstanceOf[headers]
   
   @js.native
   sealed trait http extends StObject
@@ -85,14 +146,19 @@ object fastifyStrings {
   inline def https: https = "https".asInstanceOf[https]
   
   @js.native
-  sealed trait ignore extends StObject
+  sealed trait idle extends StObject
+  inline def idle: idle = "idle".asInstanceOf[idle]
+  
+  @js.native
+  sealed trait ignore
+    extends StObject
+       with ConstructorAction
+       with ProtoAction
   inline def ignore: ignore = "ignore".asInstanceOf[ignore]
   
   @js.native
-  sealed trait info
-    extends StObject
-       with LogLevel
-  inline def info: info = "info".asInstanceOf[info]
+  sealed trait method extends StObject
+  inline def method: method = "method".asInstanceOf[method]
   
   @js.native
   sealed trait `no-slash` extends StObject
@@ -135,6 +201,12 @@ object fastifyStrings {
   inline def onTimeout: onTimeout = "onTimeout".asInstanceOf[onTimeout]
   
   @js.native
+  sealed trait params
+    extends StObject
+       with HTTPRequestPart
+  inline def params: params = "params".asInstanceOf[params]
+  
+  @js.native
   sealed trait preHandler extends StObject
   inline def preHandler: preHandler = "preHandler".asInstanceOf[preHandler]
   
@@ -151,7 +223,22 @@ object fastifyStrings {
   inline def preValidation: preValidation = "preValidation".asInstanceOf[preValidation]
   
   @js.native
-  sealed trait remove extends StObject
+  sealed trait query
+    extends StObject
+       with HTTPRequestPart
+  inline def query: query = "query".asInstanceOf[query]
+  
+  @js.native
+  sealed trait querystring
+    extends StObject
+       with HTTPRequestPart
+  inline def querystring: querystring = "querystring".asInstanceOf[querystring]
+  
+  @js.native
+  sealed trait remove
+    extends StObject
+       with ConstructorAction
+       with ProtoAction
   inline def remove: remove = "remove".asInstanceOf[remove]
   
   @js.native
@@ -163,14 +250,6 @@ object fastifyStrings {
   inline def string: string = "string".asInstanceOf[string]
   
   @js.native
-  sealed trait trace
-    extends StObject
-       with LogLevel
-  inline def trace: trace = "trace".asInstanceOf[trace]
-  
-  @js.native
-  sealed trait warn
-    extends StObject
-       with LogLevel
-  inline def warn: warn = "warn".asInstanceOf[warn]
+  sealed trait url extends StObject
+  inline def url: url = "url".asInstanceOf[url]
 }

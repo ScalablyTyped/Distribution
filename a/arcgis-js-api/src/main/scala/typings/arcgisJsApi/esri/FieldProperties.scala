@@ -1,5 +1,7 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.anon.CodedValueDomainPropertie
+import typings.arcgisJsApi.anon.RangeDomainPropertiestype
 import typings.arcgisJsApi.arcgisJsApiStrings.`count-or-amount`
 import typings.arcgisJsApi.arcgisJsApiStrings.`date-and-time`
 import typings.arcgisJsApi.arcgisJsApiStrings.`global-id`
@@ -20,11 +22,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.guid
 import typings.arcgisJsApi.arcgisJsApiStrings.integer
 import typings.arcgisJsApi.arcgisJsApiStrings.long
 import typings.arcgisJsApi.arcgisJsApiStrings.measurement
-import typings.arcgisJsApi.arcgisJsApiStrings.none
+import typings.arcgisJsApi.arcgisJsApiStrings.none_
 import typings.arcgisJsApi.arcgisJsApiStrings.oid
 import typings.arcgisJsApi.arcgisJsApiStrings.raster
 import typings.arcgisJsApi.arcgisJsApiStrings.single
-import typings.arcgisJsApi.arcgisJsApiStrings.string
+import typings.arcgisJsApi.arcgisJsApiStrings.string_
 import typings.arcgisJsApi.arcgisJsApiStrings.xml
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -35,6 +37,8 @@ trait FieldProperties extends StObject {
   /**
     * The display name for the field.
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#alias)
     */
   var alias: js.UndefOr[String] = js.undefined
@@ -42,9 +46,11 @@ trait FieldProperties extends StObject {
   /**
     * The default value set for the field.
     *
+    * @default undefined
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#defaultValue)
     */
-  var defaultValue: js.UndefOr[Double | String | js.Any] = js.undefined
+  var defaultValue: js.UndefOr[Double | String | Any] = js.undefined
   
   /**
     * Contains information describing the purpose of each field.
@@ -56,12 +62,18 @@ trait FieldProperties extends StObject {
   /**
     * The domain associated with the field.
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#domain)
     */
-  var domain: js.UndefOr[DomainProperties] = js.undefined
+  var domain: js.UndefOr[
+    CodedValueDomainPropertie | RangeDomainPropertiestype | typings.arcgisJsApi.anon.InheritedDomainProperties
+  ] = js.undefined
   
   /**
     * Indicates whether the field is editable.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#editable)
     */
@@ -70,12 +82,16 @@ trait FieldProperties extends StObject {
   /**
     * The field length.
     *
+    * @default -1
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#length)
     */
   var length: js.UndefOr[Double] = js.undefined
   
   /**
     * The name of the field.
+    *
+    * @default null
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#name)
     */
@@ -84,6 +100,8 @@ trait FieldProperties extends StObject {
   /**
     * Indicates if the field can accept `null` values.
     *
+    * @default true
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#nullable)
     */
   var nullable: js.UndefOr[Boolean] = js.undefined
@@ -91,10 +109,12 @@ trait FieldProperties extends StObject {
   /**
     * The data type of the field.
     *
+    * @default null
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#type)
     */
   var `type`: js.UndefOr[
-    `small-integer` | integer | single | double | long | string | date | oid | typings.arcgisJsApi.arcgisJsApiStrings.geometry | blob | raster | guid | `global-id` | xml
+    `small-integer` | integer | single | double | long | string_ | date | oid | typings.arcgisJsApi.arcgisJsApiStrings.geometry | blob | raster | guid | `global-id` | xml
   ] = js.undefined
   
   /**
@@ -103,7 +123,7 @@ trait FieldProperties extends StObject {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#valueType)
     */
   var valueType: js.UndefOr[
-    binary | coordinate | `count-or-amount` | `date-and-time` | description | `location-or-place-name` | measurement | `name-or-title` | none | `ordered-or-ranked` | `percentage-or-ratio` | `type-or-category` | `unique-identifier`
+    binary | coordinate | `count-or-amount` | `date-and-time` | description | `location-or-place-name` | measurement | `name-or-title` | none_ | `ordered-or-ranked` | `percentage-or-ratio` | `type-or-category` | `unique-identifier`
   ] = js.undefined
 }
 object FieldProperties {
@@ -119,7 +139,7 @@ object FieldProperties {
     
     inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
     
-    inline def setDefaultValue(value: Double | String | js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: Double | String | Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
@@ -127,7 +147,9 @@ object FieldProperties {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setDomain(value: DomainProperties): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(
+      value: CodedValueDomainPropertie | RangeDomainPropertiestype | typings.arcgisJsApi.anon.InheritedDomainProperties
+    ): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
@@ -148,13 +170,13 @@ object FieldProperties {
     inline def setNullableUndefined: Self = StObject.set(x, "nullable", js.undefined)
     
     inline def setType(
-      value: `small-integer` | integer | single | double | long | string | date | oid | typings.arcgisJsApi.arcgisJsApiStrings.geometry | blob | raster | guid | `global-id` | xml
+      value: `small-integer` | integer | single | double | long | string_ | date | oid | typings.arcgisJsApi.arcgisJsApiStrings.geometry | blob | raster | guid | `global-id` | xml
     ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     inline def setValueType(
-      value: binary | coordinate | `count-or-amount` | `date-and-time` | description | `location-or-place-name` | measurement | `name-or-title` | none | `ordered-or-ranked` | `percentage-or-ratio` | `type-or-category` | `unique-identifier`
+      value: binary | coordinate | `count-or-amount` | `date-and-time` | description | `location-or-place-name` | measurement | `name-or-title` | none_ | `ordered-or-ranked` | `percentage-or-ratio` | `type-or-category` | `unique-identifier`
     ): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
     
     inline def setValueTypeUndefined: Self = StObject.set(x, "valueType", js.undefined)

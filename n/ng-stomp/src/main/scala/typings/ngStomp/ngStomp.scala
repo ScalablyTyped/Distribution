@@ -9,48 +9,48 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ngStomp extends StObject {
   
-  def connect(endpoint: String): js.Any = js.native
-  def connect(endpoint: String, headers: Headers): js.Any = js.native
+  def connect(endpoint: String): Any = js.native
+  def connect(endpoint: String, headers: Headers): Any = js.native
   
-  var debug: js.Any = js.native
+  var debug: Any = js.native
   
-  def disconnect(callback: js.Function0[Unit]): js.Any = js.native
+  def disconnect(callback: js.Function0[Unit]): Any = js.native
   
-  var off: js.Any = js.native
+  var off: Any = js.native
   
-  def send(destination: String, body: js.Any, headers: Headers): js.Any = js.native
+  def send(destination: String, body: Any, headers: Headers): Any = js.native
   
   def setDebug(callback: js.Function): Unit = js.native
   
-  var sock: js.Any = js.native
+  var sock: Any = js.native
   
-  var stomp: js.Any = js.native
+  var stomp: Any = js.native
   
   def subscribe(
     destination: String,
     callback: js.Function3[/* payload */ String, /* headers */ Headers, /* res */ js.Function, Unit]
-  ): js.Any = js.native
+  ): Any = js.native
   def subscribe(
     destination: String,
     callback: js.Function3[/* payload */ String, /* headers */ Headers, /* res */ js.Function, Unit],
     headers: Unit,
-    scope: js.Any
-  ): js.Any = js.native
+    scope: Any
+  ): Any = js.native
   def subscribe(
     destination: String,
     callback: js.Function3[/* payload */ String, /* headers */ Headers, /* res */ js.Function, Unit],
     headers: Headers
-  ): js.Any = js.native
+  ): Any = js.native
   def subscribe(
     destination: String,
     callback: js.Function3[/* payload */ String, /* headers */ Headers, /* res */ js.Function, Unit],
     headers: Headers,
-    scope: js.Any
-  ): js.Any = js.native
+    scope: Any
+  ): Any = js.native
   
-  def unsubscribe(): js.Any = js.native
+  def unsubscribe(): Any = js.native
 }
 object ngStomp {
   
-  type Headers = StringDictionary[js.Any]
+  type Headers = StringDictionary[Any]
 }

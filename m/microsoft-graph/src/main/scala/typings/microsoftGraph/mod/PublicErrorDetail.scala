@@ -6,10 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PublicErrorDetail extends StObject {
   
+  // The error code.
   var code: js.UndefOr[NullableOption[String]] = js.undefined
   
+  // The error message.
   var message: js.UndefOr[NullableOption[String]] = js.undefined
   
+  // The target of the error.
   var target: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object PublicErrorDetail {

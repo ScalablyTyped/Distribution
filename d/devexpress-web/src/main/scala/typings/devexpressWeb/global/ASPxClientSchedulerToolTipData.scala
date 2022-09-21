@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientSchedulerToolTipData")
 @js.native
-class ASPxClientSchedulerToolTipData ()
+open class ASPxClientSchedulerToolTipData ()
   extends StObject
      with typings.devexpressWeb.ASPxClientSchedulerToolTipData {
   

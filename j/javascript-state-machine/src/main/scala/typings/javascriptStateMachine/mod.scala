@@ -1,7 +1,6 @@
 package typings.javascriptStateMachine
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -86,10 +85,10 @@ object mod {
       eventName: js.UndefOr[String],
       from: js.UndefOr[String],
       to: js.UndefOr[String],
-      args: js.UndefOr[js.Array[js.Any]],
+      args: js.UndefOr[js.Array[Any]],
       errorCode: js.UndefOr[Double],
       errorMessage: js.UndefOr[String],
-      ex: js.UndefOr[Error]
+      ex: js.UndefOr[js.Error]
     ): Unit
     @JSName("error")
     var error_Original: StateMachineErrorCallback
@@ -125,7 +124,7 @@ object mod {
       can: /* evt */ String => Boolean,
       cannot: /* evt */ String => Boolean,
       current: String,
-      error: (/* eventName */ js.UndefOr[String], /* from */ js.UndefOr[String], /* to */ js.UndefOr[String], /* args */ js.UndefOr[js.Array[js.Any]], /* errorCode */ js.UndefOr[Double], /* errorMessage */ js.UndefOr[String], /* ex */ js.UndefOr[Error]) => Unit,
+      error: (/* eventName */ js.UndefOr[String], /* from */ js.UndefOr[String], /* to */ js.UndefOr[String], /* args */ js.UndefOr[js.Array[Any]], /* errorCode */ js.UndefOr[Double], /* errorMessage */ js.UndefOr[String], /* ex */ js.UndefOr[js.Error]) => Unit,
       is: /* state */ String => Boolean,
       isFinished: /* state */ String => Boolean,
       transition: StateMachineTransition,
@@ -220,7 +219,7 @@ object mod {
       inline def setCurrent(value: String): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
       inline def setError(
-        value: (/* eventName */ js.UndefOr[String], /* from */ js.UndefOr[String], /* to */ js.UndefOr[String], /* args */ js.UndefOr[js.Array[js.Any]], /* errorCode */ js.UndefOr[Double], /* errorMessage */ js.UndefOr[String], /* ex */ js.UndefOr[Error]) => Unit
+        value: (/* eventName */ js.UndefOr[String], /* from */ js.UndefOr[String], /* to */ js.UndefOr[String], /* args */ js.UndefOr[js.Array[Any]], /* errorCode */ js.UndefOr[Double], /* errorMessage */ js.UndefOr[String], /* ex */ js.UndefOr[js.Error]) => Unit
       ): Self = StObject.set(x, "error", js.Any.fromFunction7(value))
       
       inline def setIs(value: /* state */ String => Boolean): Self = StObject.set(x, "is", js.Any.fromFunction1(value))
@@ -254,8 +253,8 @@ object mod {
             /* event */ js.UndefOr[String], 
             /* from */ js.UndefOr[String], 
             /* to */ js.UndefOr[String], 
-            /* repeated */ js.Any, 
-            js.Any
+            /* repeated */ Any, 
+            Any
           ]
         ]
       ] = js.undefined
@@ -265,7 +264,7 @@ object mod {
     // string or { state: 'foo', event: 'setup', defer: true|false }
     var events: js.UndefOr[js.Array[StateMachineEventDef]] = js.undefined
     
-    var initial: js.UndefOr[js.Any] = js.undefined
+    var initial: js.UndefOr[Any] = js.undefined
     
     var target: js.UndefOr[StateMachine] = js.undefined
   }
@@ -284,8 +283,8 @@ object mod {
                 /* event */ js.UndefOr[String], 
                 /* from */ js.UndefOr[String], 
                 /* to */ js.UndefOr[String], 
-                /* repeated */ js.Any, 
-                js.Any
+                /* repeated */ Any, 
+                Any
               ]
             ]
       ): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
@@ -293,7 +292,7 @@ object mod {
       inline def setCallbacksUndefined: Self = StObject.set(x, "callbacks", js.undefined)
       
       inline def setError(
-        value: (/* eventName */ js.UndefOr[String], /* from */ js.UndefOr[String], /* to */ js.UndefOr[String], /* args */ js.UndefOr[js.Array[js.Any]], /* errorCode */ js.UndefOr[Double], /* errorMessage */ js.UndefOr[String], /* ex */ js.UndefOr[Error]) => Unit
+        value: (/* eventName */ js.UndefOr[String], /* from */ js.UndefOr[String], /* to */ js.UndefOr[String], /* args */ js.UndefOr[js.Array[Any]], /* errorCode */ js.UndefOr[Double], /* errorMessage */ js.UndefOr[String], /* ex */ js.UndefOr[js.Error]) => Unit
       ): Self = StObject.set(x, "error", js.Any.fromFunction7(value))
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
@@ -302,9 +301,9 @@ object mod {
       
       inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
       
-      inline def setEventsVarargs(value: StateMachineEventDef*): Self = StObject.set(x, "events", js.Array(value :_*))
+      inline def setEventsVarargs(value: StateMachineEventDef*): Self = StObject.set(x, "events", js.Array(value*))
       
-      inline def setInitial(value: js.Any): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
+      inline def setInitial(value: Any): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
       
       inline def setInitialUndefined: Self = StObject.set(x, "initial", js.undefined)
       
@@ -318,22 +317,22 @@ object mod {
     /* eventName */ js.UndefOr[String], 
     /* from */ js.UndefOr[String], 
     /* to */ js.UndefOr[String], 
-    /* args */ js.UndefOr[js.Array[js.Any]], 
+    /* args */ js.UndefOr[js.Array[Any]], 
     /* errorCode */ js.UndefOr[Double], 
     /* errorMessage */ js.UndefOr[String], 
-    /* ex */ js.UndefOr[Error], 
+    /* ex */ js.UndefOr[js.Error], 
     Unit
   ]
   
   @js.native
   trait StateMachineEvent extends StObject {
     
-    def apply(args: js.Any*): Unit = js.native
+    def apply(args: Any*): Unit = js.native
   }
   
   trait StateMachineEventDef extends StObject {
     
-    var from: js.Any
+    var from: Any
     
     var name: String
     
@@ -342,14 +341,14 @@ object mod {
   }
   object StateMachineEventDef {
     
-    inline def apply(from: js.Any, name: String, to: String): StateMachineEventDef = {
+    inline def apply(from: Any, name: String, to: String): StateMachineEventDef = {
       val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[StateMachineEventDef]
     }
     
     extension [Self <: StateMachineEventDef](x: Self) {
       
-      inline def setFrom(value: js.Any): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: Any): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

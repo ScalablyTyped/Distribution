@@ -8,7 +8,7 @@ trait SetStorageParams extends StObject {
   
   var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var data: js.Any
+  var data: Any
   
   var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
   
@@ -18,7 +18,7 @@ trait SetStorageParams extends StObject {
 }
 object SetStorageParams {
   
-  inline def apply(data: js.Any, key: String): SetStorageParams = {
+  inline def apply(data: Any, key: String): SetStorageParams = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetStorageParams]
   }
@@ -29,7 +29,7 @@ object SetStorageParams {
     
     inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
     

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("matter-js", "Sleeping")
 @js.native
-class Sleeping () extends StObject
+open class Sleeping () extends StObject
 /* static members */
 object Sleeping {
   

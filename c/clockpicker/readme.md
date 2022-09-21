@@ -10,10 +10,10 @@ A clock-style timepicker for Bootstrap (or jQuery)
 | ------------------ | :-------------: |
 | Full name          | clockpicker |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 231478 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 21042.0 |
+| # stars            | 1990.0 |
 
 ## Links
 - [Homepage](http://weareoutman.github.io/clockpicker/)

@@ -33,7 +33,7 @@ object HeightfieldOptions {
     
     inline def setHeightsUndefined: Self = StObject.set(x, "heights", js.undefined)
     
-    inline def setHeightsVarargs(value: Double*): Self = StObject.set(x, "heights", js.Array(value :_*))
+    inline def setHeightsVarargs(value: Double*): Self = StObject.set(x, "heights", js.Array(value*))
     
     inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     

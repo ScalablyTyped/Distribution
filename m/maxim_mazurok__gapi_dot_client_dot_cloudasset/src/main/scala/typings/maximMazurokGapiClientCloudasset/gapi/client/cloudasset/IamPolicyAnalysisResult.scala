@@ -34,7 +34,7 @@ object IamPolicyAnalysisResult {
     
     inline def setAccessControlListsUndefined: Self = StObject.set(x, "accessControlLists", js.undefined)
     
-    inline def setAccessControlListsVarargs(value: GoogleCloudAssetV1AccessControlList*): Self = StObject.set(x, "accessControlLists", js.Array(value :_*))
+    inline def setAccessControlListsVarargs(value: GoogleCloudAssetV1AccessControlList*): Self = StObject.set(x, "accessControlLists", js.Array(value*))
     
     inline def setAttachedResourceFullName(value: String): Self = StObject.set(x, "attachedResourceFullName", value.asInstanceOf[js.Any])
     

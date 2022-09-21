@@ -7,7 +7,6 @@ import typings.cordovaPluginGlobalization.anon.Type
 import typings.cordovaPluginGlobalization.anon.Value
 import typings.cordovaPluginGlobalization.anon.ValueArray
 import typings.cordovaPluginGlobalization.anon.ValueNumber
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,12 +27,12 @@ trait Globalization extends StObject {
     *                      - 'selector' can be "date", "time", or "date and time".
     */
   def dateToString(
-    date: Date,
+    date: js.Date,
     onSuccess: js.Function1[/* date */ Value, Unit],
     onError: js.Function1[/* error */ GlobalizationError, Unit]
   ): Unit = js.native
   def dateToString(
-    date: Date,
+    date: js.Date,
     onSuccess: js.Function1[/* date */ Value, Unit],
     onError: js.Function1[/* error */ GlobalizationError, Unit],
     options: FormatLength
@@ -150,7 +149,7 @@ trait Globalization extends StObject {
     *                  The error's expected code is GlobalizationError.UNKNOWN_ERROR.
     */
   def isDaylightSavingsTime(
-    date: Date,
+    date: js.Date,
     onSuccess: js.Function1[/* result */ Dst, Unit],
     onError: js.Function1[/* error */ GlobalizationError, Unit]
   ): Unit = js.native

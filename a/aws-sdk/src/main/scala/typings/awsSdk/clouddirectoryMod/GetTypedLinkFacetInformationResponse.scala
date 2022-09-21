@@ -24,6 +24,6 @@ object GetTypedLinkFacetInformationResponse {
     
     inline def setIdentityAttributeOrderUndefined: Self = StObject.set(x, "IdentityAttributeOrder", js.undefined)
     
-    inline def setIdentityAttributeOrderVarargs(value: AttributeName*): Self = StObject.set(x, "IdentityAttributeOrder", js.Array(value :_*))
+    inline def setIdentityAttributeOrderVarargs(value: AttributeName*): Self = StObject.set(x, "IdentityAttributeOrder", js.Array(value*))
   }
 }

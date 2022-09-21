@@ -10,10 +10,10 @@ Asynchronous, persistent, key-value storage system for React Native.
 | ------------------ | :-------------: |
 | Full name          | @react-native-community/async-storage |
 | Keywords           | react-native, react native, async storage, asyncstorage, storage |
-| # releases         | 41 |
-| # dependents       | 193 |
-| # downloads        | 10198305 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 642772.0 |
+| # stars            | 3488.0 |
 
 ## Links
 - [Homepage](https://github.com/react-native-community/react-native-async-storage#readme)

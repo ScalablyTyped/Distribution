@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-firebase", "RNFirebase.notifications.Android.Progress")
 @js.native
-class Progress () extends StObject {
+open class Progress () extends StObject {
   
   var indeterminate: Boolean = js.native
   

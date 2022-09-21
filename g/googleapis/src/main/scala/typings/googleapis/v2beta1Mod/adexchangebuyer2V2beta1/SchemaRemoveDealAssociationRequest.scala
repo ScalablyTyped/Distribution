@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A request for removing the association between a deal and a creative.
-  */
 trait SchemaRemoveDealAssociationRequest extends StObject {
   
   /**

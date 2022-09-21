@@ -6,12 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "ParseError")
 @js.native
-class ParseError protected ()
-  extends typings.angularCompiler.compilerMod.ParseError {
-  def this(span: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan, msg: String) = this()
-  def this(
-    span: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    msg: String,
-    level: typings.angularCompiler.srcParseUtilMod.ParseErrorLevel
-  ) = this()
+open class ParseError protected () extends StObject {
+  def this(span: ParseSourceSpan, msg: String) = this()
+  def this(span: ParseSourceSpan, msg: String, level: ParseErrorLevel) = this()
+  
+  def contextualMessage(): String = js.native
+  
+  var level: ParseErrorLevel = js.native
+  
+  var msg: String = js.native
+  
+  var span: ParseSourceSpan = js.native
 }

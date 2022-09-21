@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AwsLambdaFunctionLayer extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the function layer.
+    * The ARN of the function layer.
     */
   var Arn: js.UndefOr[NonEmptyString] = js.undefined
   

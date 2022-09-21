@@ -1,6 +1,5 @@
 package typings.antDesignProLayout
 
-import org.scalablytyped.runtime.Shortcut
 import typings.antDesignProLayout.anon.BlankTarget
 import typings.antDesignProLayout.typingsMod.WithFalse
 import typings.react.mod.CSSProperties
@@ -9,11 +8,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object footerMod extends Shortcut {
+object footerMod {
   
-  @JSImport("@ant-design/pro-layout/lib/Footer", JSImport.Default)
+  @JSImport("@ant-design/pro-layout/es/components/Footer", "DefaultFooter")
   @js.native
-  val default: FC[FooterProps] = js.native
+  val DefaultFooter: FC[FooterProps] = js.native
   
   trait FooterProps extends StObject {
     
@@ -22,6 +21,8 @@ object footerMod extends Shortcut {
     var copyright: js.UndefOr[WithFalse[String]] = js.undefined
     
     var links: js.UndefOr[WithFalse[js.Array[BlankTarget]]] = js.undefined
+    
+    var prefixCls: js.UndefOr[String] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
   }
@@ -46,16 +47,15 @@ object footerMod extends Shortcut {
       
       inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
       
-      inline def setLinksVarargs(value: BlankTarget*): Self = StObject.set(x, "links", js.Array(value :_*))
+      inline def setLinksVarargs(value: BlankTarget*): Self = StObject.set(x, "links", js.Array(value*))
+      
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
-  
-  type _To = FC[FooterProps]
-  
-  /* This means you don't have to write `default`, but can instead just say `footerMod.foo` */
-  override def _to: FC[FooterProps] = default
 }

@@ -10,13 +10,13 @@ trait Data extends StObject {
   
   var id: js.UndefOr[String] = js.undefined
   
-  var mouse: js.Any
+  var mouse: Any
   
   var x: js.UndefOr[Double] = js.undefined
 }
 object Data {
   
-  inline def apply(mouse: js.Any): Data = {
+  inline def apply(mouse: Any): Data = {
     val __obj = js.Dynamic.literal(mouse = mouse.asInstanceOf[js.Any])
     __obj.asInstanceOf[Data]
   }
@@ -31,7 +31,7 @@ object Data {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setMouse(value: js.Any): Self = StObject.set(x, "mouse", value.asInstanceOf[js.Any])
+    inline def setMouse(value: Any): Self = StObject.set(x, "mouse", value.asInstanceOf[js.Any])
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

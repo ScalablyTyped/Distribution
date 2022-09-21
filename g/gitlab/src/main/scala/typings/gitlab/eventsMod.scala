@@ -30,7 +30,7 @@ object eventsMod {
   
   @JSImport("gitlab/dist/types/core/services/Events", "Events")
   @js.native
-  class Events () extends BaseService {
+  open class Events () extends BaseService {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def all(): js.Promise[GetResponse] = js.native

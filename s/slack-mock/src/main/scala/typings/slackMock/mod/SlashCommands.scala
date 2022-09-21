@@ -32,7 +32,7 @@ object SlashCommands {
     
     inline def setCalls(value: js.Array[SlashCommandCall[T]]): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
     
-    inline def setCallsVarargs(value: SlashCommandCall[T]*): Self = StObject.set(x, "calls", js.Array(value :_*))
+    inline def setCallsVarargs(value: SlashCommandCall[T]*): Self = StObject.set(x, "calls", js.Array(value*))
     
     inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     

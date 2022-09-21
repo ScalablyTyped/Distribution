@@ -1,13 +1,12 @@
 package typings.squareConnect.mod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "SearchLoyaltyEventsResponse")
 @js.native
-class SearchLoyaltyEventsResponse () extends StObject {
+open class SearchLoyaltyEventsResponse () extends StObject {
   
   /**
     * The pagination cursor to be used in a subsequent request. If empty, this is the final response.
@@ -18,7 +17,7 @@ class SearchLoyaltyEventsResponse () extends StObject {
   /**
     * Any errors that occurred during the request.
     */
-  var errors: js.UndefOr[js.Array[Error]] = js.native
+  var errors: js.UndefOr[js.Array[js.Error]] = js.native
   
   /**
     * The loyalty events that satisfy the search criteria.

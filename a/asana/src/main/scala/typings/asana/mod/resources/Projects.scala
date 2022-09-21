@@ -9,6 +9,7 @@ import typings.asana.mod.resources.Projects.FindByParams
 import typings.asana.mod.resources.Projects.FollowersParams
 import typings.asana.mod.resources.Projects.MembersParams
 import typings.asana.mod.resources.Projects.Type
+import typings.bluebird.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,7 +29,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Projects
   extends StObject
-     with Resource {
+     with TopLevelResource {
   
   /**
     * * Adds the specified list of users as followers to the project. Followers are a subset of members, therefore if
@@ -44,10 +45,10 @@ trait Projects
     * @param dispatchOptions?
     * @return
     */
-  def addFollowers(project: String, data: FollowersParams): typings.bluebird.mod.^[Type] = js.native
-  def addFollowers(project: String, data: FollowersParams, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
-  def addFollowers(project: Double, data: FollowersParams): typings.bluebird.mod.^[Type] = js.native
-  def addFollowers(project: Double, data: FollowersParams, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
+  def addFollowers(project: String, data: FollowersParams): ^[Type] = js.native
+  def addFollowers(project: String, data: FollowersParams, dispatchOptions: Any): ^[Type] = js.native
+  def addFollowers(project: Double, data: FollowersParams): ^[Type] = js.native
+  def addFollowers(project: Double, data: FollowersParams, dispatchOptions: Any): ^[Type] = js.native
   
   /**
     * * Adds the specified list of users as members of the project. Returns the updated project record.
@@ -61,10 +62,10 @@ trait Projects
     * @param dispatchOptions?
     * @return
     */
-  def addMembers(project: String, data: MembersParams): typings.bluebird.mod.^[Type] = js.native
-  def addMembers(project: String, data: MembersParams, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
-  def addMembers(project: Double, data: MembersParams): typings.bluebird.mod.^[Type] = js.native
-  def addMembers(project: Double, data: MembersParams, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
+  def addMembers(project: String, data: MembersParams): ^[Type] = js.native
+  def addMembers(project: String, data: MembersParams, dispatchOptions: Any): ^[Type] = js.native
+  def addMembers(project: Double, data: MembersParams): ^[Type] = js.native
+  def addMembers(project: Double, data: MembersParams, dispatchOptions: Any): ^[Type] = js.native
   
   /**
     * * Creates a new project in a workspace or team.
@@ -88,8 +89,8 @@ trait Projects
     * @param dispatchOptions?
     * @return
     */
-  def create(data: CreateParamsworkspacestri): typings.bluebird.mod.^[Type] = js.native
-  def create(data: CreateParamsworkspacestri, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
+  def create(data: CreateParamsworkspacestri): ^[Type] = js.native
+  def create(data: CreateParamsworkspacestri, dispatchOptions: Any): ^[Type] = js.native
   
   /**
     * * Creates a project shared with the given team.
@@ -104,10 +105,10 @@ trait Projects
     * @param dispatchOptions?
     * @return
     */
-  def createInTeam(team: String, data: CreateParams): typings.bluebird.mod.^[Type] = js.native
-  def createInTeam(team: String, data: CreateParams, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
-  def createInTeam(team: Double, data: CreateParams): typings.bluebird.mod.^[Type] = js.native
-  def createInTeam(team: Double, data: CreateParams, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
+  def createInTeam(team: String, data: CreateParams): ^[Type] = js.native
+  def createInTeam(team: String, data: CreateParams, dispatchOptions: Any): ^[Type] = js.native
+  def createInTeam(team: Double, data: CreateParams): ^[Type] = js.native
+  def createInTeam(team: Double, data: CreateParams, dispatchOptions: Any): ^[Type] = js.native
   
   /**
     * * If the workspace for your project _is_ an organization, you must also
@@ -123,10 +124,10 @@ trait Projects
     * @param dispatchOptions?
     * @return
     */
-  def createInWorkspace(workspace: String, data: CreateParams): typings.bluebird.mod.^[Type] = js.native
-  def createInWorkspace(workspace: String, data: CreateParams, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
-  def createInWorkspace(workspace: Double, data: CreateParams): typings.bluebird.mod.^[Type] = js.native
-  def createInWorkspace(workspace: Double, data: CreateParams, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
+  def createInWorkspace(workspace: String, data: CreateParams): ^[Type] = js.native
+  def createInWorkspace(workspace: String, data: CreateParams, dispatchOptions: Any): ^[Type] = js.native
+  def createInWorkspace(workspace: Double, data: CreateParams): ^[Type] = js.native
+  def createInWorkspace(workspace: Double, data: CreateParams, dispatchOptions: Any): ^[Type] = js.native
   
   /**
     * * A specific, existing project can be deleted by making a DELETE request
@@ -140,10 +141,10 @@ trait Projects
     * @param dispatchOptions?
     * @return
     */
-  def delete(project: String): typings.bluebird.mod.^[Unit] = js.native
-  def delete(project: String, dispatchOptions: js.Any): typings.bluebird.mod.^[Unit] = js.native
-  def delete(project: Double): typings.bluebird.mod.^[Unit] = js.native
-  def delete(project: Double, dispatchOptions: js.Any): typings.bluebird.mod.^[Unit] = js.native
+  def delete(project: String): ^[Unit] = js.native
+  def delete(project: String, dispatchOptions: Any): ^[Unit] = js.native
+  def delete(project: Double): ^[Unit] = js.native
+  def delete(project: Double, dispatchOptions: Any): ^[Unit] = js.native
   
   /**
     * * Returns the compact project records for some filtered set of projects.
@@ -159,10 +160,10 @@ trait Projects
     * @param dispatchOptions?
     * @return
     */
-  def findAll(): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def findAll(params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def findAll(params: FindAllParams): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def findAll(params: FindAllParams, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
+  def findAll(): ^[ResourceList[Type]] = js.native
+  def findAll(params: Unit, dispatchOptions: Any): ^[ResourceList[Type]] = js.native
+  def findAll(params: FindAllParams): ^[ResourceList[Type]] = js.native
+  def findAll(params: FindAllParams, dispatchOptions: Any): ^[ResourceList[Type]] = js.native
   
   /**
     * * Returns the complete project record for a single project.
@@ -175,14 +176,14 @@ trait Projects
     * @param dispatchOptions?
     * @return
     */
-  def findById(project: String): typings.bluebird.mod.^[Type] = js.native
-  def findById(project: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
-  def findById(project: String, params: Params): typings.bluebird.mod.^[Type] = js.native
-  def findById(project: String, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
-  def findById(project: Double): typings.bluebird.mod.^[Type] = js.native
-  def findById(project: Double, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
-  def findById(project: Double, params: Params): typings.bluebird.mod.^[Type] = js.native
-  def findById(project: Double, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
+  def findById(project: String): ^[Type] = js.native
+  def findById(project: String, params: Unit, dispatchOptions: Any): ^[Type] = js.native
+  def findById(project: String, params: Params): ^[Type] = js.native
+  def findById(project: String, params: Params, dispatchOptions: Any): ^[Type] = js.native
+  def findById(project: Double): ^[Type] = js.native
+  def findById(project: Double, params: Unit, dispatchOptions: Any): ^[Type] = js.native
+  def findById(project: Double, params: Params): ^[Type] = js.native
+  def findById(project: Double, params: Params, dispatchOptions: Any): ^[Type] = js.native
   
   /**
     * * Returns the compact project records for all projects in the team.
@@ -197,14 +198,14 @@ trait Projects
     * @param dispatchOptions?
     * @return
     */
-  def findByTeam(team: String): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def findByTeam(team: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def findByTeam(team: String, params: FindByParams): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def findByTeam(team: String, params: FindByParams, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def findByTeam(team: Double): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def findByTeam(team: Double, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def findByTeam(team: Double, params: FindByParams): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def findByTeam(team: Double, params: FindByParams, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
+  def findByTeam(team: String): ^[ResourceList[Type]] = js.native
+  def findByTeam(team: String, params: Unit, dispatchOptions: Any): ^[ResourceList[Type]] = js.native
+  def findByTeam(team: String, params: FindByParams): ^[ResourceList[Type]] = js.native
+  def findByTeam(team: String, params: FindByParams, dispatchOptions: Any): ^[ResourceList[Type]] = js.native
+  def findByTeam(team: Double): ^[ResourceList[Type]] = js.native
+  def findByTeam(team: Double, params: Unit, dispatchOptions: Any): ^[ResourceList[Type]] = js.native
+  def findByTeam(team: Double, params: FindByParams): ^[ResourceList[Type]] = js.native
+  def findByTeam(team: Double, params: FindByParams, dispatchOptions: Any): ^[ResourceList[Type]] = js.native
   
   /**
     * * Returns the compact project records for all projects in the workspace.
@@ -219,14 +220,14 @@ trait Projects
     * @param dispatchOptions?
     * @return
     */
-  def findByWorkspace(workspace: String): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def findByWorkspace(workspace: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def findByWorkspace(workspace: String, params: FindByParams): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def findByWorkspace(workspace: String, params: FindByParams, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def findByWorkspace(workspace: Double): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def findByWorkspace(workspace: Double, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def findByWorkspace(workspace: Double, params: FindByParams): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def findByWorkspace(workspace: Double, params: FindByParams, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
+  def findByWorkspace(workspace: String): ^[ResourceList[Type]] = js.native
+  def findByWorkspace(workspace: String, params: Unit, dispatchOptions: Any): ^[ResourceList[Type]] = js.native
+  def findByWorkspace(workspace: String, params: FindByParams): ^[ResourceList[Type]] = js.native
+  def findByWorkspace(workspace: String, params: FindByParams, dispatchOptions: Any): ^[ResourceList[Type]] = js.native
+  def findByWorkspace(workspace: Double): ^[ResourceList[Type]] = js.native
+  def findByWorkspace(workspace: Double, params: Unit, dispatchOptions: Any): ^[ResourceList[Type]] = js.native
+  def findByWorkspace(workspace: Double, params: FindByParams): ^[ResourceList[Type]] = js.native
+  def findByWorkspace(workspace: Double, params: FindByParams, dispatchOptions: Any): ^[ResourceList[Type]] = js.native
   
   /**
     * * Removes the specified list of users from following the project, this will not affect project membership status.
@@ -241,10 +242,10 @@ trait Projects
     * @param dispatchOptions?
     * @return
     */
-  def removeFollowers(project: String, data: FollowersParams): typings.bluebird.mod.^[Type] = js.native
-  def removeFollowers(project: String, data: FollowersParams, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
-  def removeFollowers(project: Double, data: FollowersParams): typings.bluebird.mod.^[Type] = js.native
-  def removeFollowers(project: Double, data: FollowersParams, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
+  def removeFollowers(project: String, data: FollowersParams): ^[Type] = js.native
+  def removeFollowers(project: String, data: FollowersParams, dispatchOptions: Any): ^[Type] = js.native
+  def removeFollowers(project: Double, data: FollowersParams): ^[Type] = js.native
+  def removeFollowers(project: Double, data: FollowersParams, dispatchOptions: Any): ^[Type] = js.native
   
   /**
     * * Removes the specified list of members from the project. Returns the updated project record.
@@ -258,10 +259,10 @@ trait Projects
     * @param dispatchOptions?
     * @return
     */
-  def removeMembers(project: String, data: MembersParams): typings.bluebird.mod.^[Type] = js.native
-  def removeMembers(project: String, data: MembersParams, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
-  def removeMembers(project: Double, data: MembersParams): typings.bluebird.mod.^[Type] = js.native
-  def removeMembers(project: Double, data: MembersParams, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
+  def removeMembers(project: String, data: MembersParams): ^[Type] = js.native
+  def removeMembers(project: String, data: MembersParams, dispatchOptions: Any): ^[Type] = js.native
+  def removeMembers(project: Double, data: MembersParams): ^[Type] = js.native
+  def removeMembers(project: Double, data: MembersParams, dispatchOptions: Any): ^[Type] = js.native
   
   /**
     * * Returns compact records for all sections in the specified project.
@@ -274,14 +275,14 @@ trait Projects
     * @param dispatchOptions?
     * @return
     */
-  def sections(project: String): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Sections.Type]] = js.native
-  def sections(project: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Sections.Type]] = js.native
-  def sections(project: String, params: PaginationParams): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Sections.Type]] = js.native
-  def sections(project: String, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Sections.Type]] = js.native
-  def sections(project: Double): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Sections.Type]] = js.native
-  def sections(project: Double, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Sections.Type]] = js.native
-  def sections(project: Double, params: PaginationParams): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Sections.Type]] = js.native
-  def sections(project: Double, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Sections.Type]] = js.native
+  def sections(project: String): ^[ResourceList[typings.asana.mod.resources.Sections.Type]] = js.native
+  def sections(project: String, params: Unit, dispatchOptions: Any): ^[ResourceList[typings.asana.mod.resources.Sections.Type]] = js.native
+  def sections(project: String, params: PaginationParams): ^[ResourceList[typings.asana.mod.resources.Sections.Type]] = js.native
+  def sections(project: String, params: PaginationParams, dispatchOptions: Any): ^[ResourceList[typings.asana.mod.resources.Sections.Type]] = js.native
+  def sections(project: Double): ^[ResourceList[typings.asana.mod.resources.Sections.Type]] = js.native
+  def sections(project: Double, params: Unit, dispatchOptions: Any): ^[ResourceList[typings.asana.mod.resources.Sections.Type]] = js.native
+  def sections(project: Double, params: PaginationParams): ^[ResourceList[typings.asana.mod.resources.Sections.Type]] = js.native
+  def sections(project: Double, params: PaginationParams, dispatchOptions: Any): ^[ResourceList[typings.asana.mod.resources.Sections.Type]] = js.native
   
   /**
     * * Returns the compact task records for all tasks within the given project,
@@ -295,14 +296,14 @@ trait Projects
     * @param dispatchOptions?
     * @return
     */
-  def tasks(project: String): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
-  def tasks(project: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
-  def tasks(project: String, params: PaginationParams): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
-  def tasks(project: String, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
-  def tasks(project: Double): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
-  def tasks(project: Double, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
-  def tasks(project: Double, params: PaginationParams): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
-  def tasks(project: Double, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def tasks(project: String): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def tasks(project: String, params: Unit, dispatchOptions: Any): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def tasks(project: String, params: PaginationParams): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def tasks(project: String, params: PaginationParams, dispatchOptions: Any): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def tasks(project: Double): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def tasks(project: Double, params: Unit, dispatchOptions: Any): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def tasks(project: Double, params: PaginationParams): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def tasks(project: Double, params: PaginationParams, dispatchOptions: Any): ^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
   
   /**
     * * A specific, existing project can be updated by making a PUT request on the
@@ -323,17 +324,17 @@ trait Projects
     * @param dispatchOptions?
     * @return
     */
-  def update(project: String, data: CreateParams): typings.bluebird.mod.^[Type] = js.native
-  def update(project: String, data: CreateParams, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
-  def update(project: Double, data: CreateParams): typings.bluebird.mod.^[Type] = js.native
-  def update(project: Double, data: CreateParams, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
+  def update(project: String, data: CreateParams): ^[Type] = js.native
+  def update(project: String, data: CreateParams, dispatchOptions: Any): ^[Type] = js.native
+  def update(project: Double, data: CreateParams): ^[Type] = js.native
+  def update(project: Double, data: CreateParams, dispatchOptions: Any): ^[Type] = js.native
 }
 object Projects extends Shortcut {
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("asana", "resources.Projects")
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with Projects {
     /**
@@ -464,7 +465,7 @@ object Projects extends Shortcut {
       
       inline def setFollowers(value: js.Array[Double | String]): Self = StObject.set(x, "followers", value.asInstanceOf[js.Any])
       
-      inline def setFollowersVarargs(value: (Double | String)*): Self = StObject.set(x, "followers", js.Array(value :_*))
+      inline def setFollowersVarargs(value: (Double | String)*): Self = StObject.set(x, "followers", js.Array(value*))
     }
   }
   
@@ -483,7 +484,7 @@ object Projects extends Shortcut {
       
       inline def setMembers(value: js.Array[Double | String]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
       
-      inline def setMembersVarargs(value: (Double | String)*): Self = StObject.set(x, "members", js.Array(value :_*))
+      inline def setMembersVarargs(value: (Double | String)*): Self = StObject.set(x, "members", js.Array(value*))
     }
   }
   
@@ -520,34 +521,87 @@ object Projects extends Shortcut {
     }
   }
   
-  @js.native
   trait Type
     extends StObject
        with Resource {
     
-    var archived: Boolean = js.native
+    var archived: Boolean
     
-    var color: String = js.native
+    var color: String
     
-    var created_at: String = js.native
+    var created_at: String
     
-    var current_status: Status = js.native
+    var current_status: Status
     
-    var due_date: String = js.native
+    var due_date: String
     
-    var followers: js.Array[Resource] = js.native
+    var followers: js.Array[Resource]
     
-    var members: js.Array[Resource] = js.native
+    var members: js.Array[Resource]
     
-    var modified_at: String = js.native
+    var modified_at: String
     
-    var notes: String = js.native
+    var notes: String
     
-    var public: Boolean = js.native
+    var public: Boolean
     
-    var team: Resource = js.native
+    var team: Resource
     
-    var workspace: Resource = js.native
+    var workspace: Resource
+  }
+  object Type {
+    
+    inline def apply(
+      archived: Boolean,
+      color: String,
+      created_at: String,
+      current_status: Status,
+      due_date: String,
+      followers: js.Array[Resource],
+      gid: String,
+      members: js.Array[Resource],
+      modified_at: String,
+      name: String,
+      notes: String,
+      public: Boolean,
+      resource_type: String,
+      team: Resource,
+      workspace: Resource
+    ): Type = {
+      val __obj = js.Dynamic.literal(archived = archived.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], current_status = current_status.asInstanceOf[js.Any], due_date = due_date.asInstanceOf[js.Any], followers = followers.asInstanceOf[js.Any], gid = gid.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], modified_at = modified_at.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], notes = notes.asInstanceOf[js.Any], public = public.asInstanceOf[js.Any], resource_type = resource_type.asInstanceOf[js.Any], team = team.asInstanceOf[js.Any], workspace = workspace.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Type]
+    }
+    
+    extension [Self <: Type](x: Self) {
+      
+      inline def setArchived(value: Boolean): Self = StObject.set(x, "archived", value.asInstanceOf[js.Any])
+      
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      
+      inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+      
+      inline def setCurrent_status(value: Status): Self = StObject.set(x, "current_status", value.asInstanceOf[js.Any])
+      
+      inline def setDue_date(value: String): Self = StObject.set(x, "due_date", value.asInstanceOf[js.Any])
+      
+      inline def setFollowers(value: js.Array[Resource]): Self = StObject.set(x, "followers", value.asInstanceOf[js.Any])
+      
+      inline def setFollowersVarargs(value: Resource*): Self = StObject.set(x, "followers", js.Array(value*))
+      
+      inline def setMembers(value: js.Array[Resource]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+      
+      inline def setMembersVarargs(value: Resource*): Self = StObject.set(x, "members", js.Array(value*))
+      
+      inline def setModified_at(value: String): Self = StObject.set(x, "modified_at", value.asInstanceOf[js.Any])
+      
+      inline def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+      
+      inline def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
+      
+      inline def setTeam(value: Resource): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
+      
+      inline def setWorkspace(value: Resource): Self = StObject.set(x, "workspace", value.asInstanceOf[js.Any])
+    }
   }
   
   type _To = ProjectsStatic

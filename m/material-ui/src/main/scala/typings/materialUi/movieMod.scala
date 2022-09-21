@@ -10,10 +10,10 @@ object movieMod {
   
   @JSImport("material-ui/svg-icons/av/movie", JSImport.Default)
   @js.native
-  class default () extends AvMovie
+  open class default () extends AvMovie
   
   @JSImport("material-ui/svg-icons/av/movie", "AvMovie")
   @js.native
-  class AvMovie ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class AvMovie ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

@@ -11,7 +11,7 @@ trait GoogleCloudDialogflowCxV3beta1ResponseMessageLiveAgentHandoff extends StOb
   var metadata: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowCxV3beta1ResponseMessageLiveAgentHandoff & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowCxV3beta1ResponseMessageLiveAgentHandoff & TopLevel[Any]
   ] = js.undefined
 }
 object GoogleCloudDialogflowCxV3beta1ResponseMessageLiveAgentHandoff {
@@ -26,7 +26,7 @@ object GoogleCloudDialogflowCxV3beta1ResponseMessageLiveAgentHandoff {
     inline def setMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowCxV3beta1ResponseMessageLiveAgentHandoff & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowCxV3beta1ResponseMessageLiveAgentHandoff & TopLevel[Any]
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)

@@ -10,10 +10,10 @@ Assert utility from yeoman
 | ------------------ | :-------------: |
 | Full name          | yeoman-assert |
 | Keywords           | assert, assertion, test, testing, utility, helper, yeoman |
-| # releases         | 1 |
-| # dependents       | 123 |
-| # downloads        | 2499443 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 140047.0 |
+| # stars            | 52.0 |
 
 ## Links
 - [Homepage](http://yeoman.io)

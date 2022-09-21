@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("AWS.SAMLCredentials")
 @js.native
-class SAMLCredentials protected ()
+open class SAMLCredentials protected ()
   extends typings.awsSdk.mod.SAMLCredentials {
   /**
   		 * Creates a new credentials object.

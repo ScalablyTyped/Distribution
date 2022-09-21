@@ -1,6 +1,8 @@
 package typings.viewerjs
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.std.CustomEvent
+import typings.std.FullscreenOptions
 import typings.std.HTMLElement
 import typings.std.MouseEvent
 import typings.std.PointerEvent
@@ -33,6 +35,7 @@ trait Viewer extends StObject {
   
   def play(): Viewer = js.native
   def play(fullscreen: Boolean): Viewer = js.native
+  def play(fullscreen: FullscreenOptions): Viewer = js.native
   
   def prev(): Viewer = js.native
   def prev(loop: Boolean): Viewer = js.native
@@ -73,57 +76,56 @@ trait Viewer extends StObject {
 object Viewer {
   
   @js.native
-  sealed trait ToolbarButtonSize extends StObject
-  @JSGlobal("Viewer.ToolbarButtonSize")
-  @js.native
-  object ToolbarButtonSize extends StObject {
+  trait MoveEvent
+    extends StObject
+       with CustomEvent[Any] {
     
-    @js.native
-    sealed trait Large
-      extends StObject
-         with ToolbarButtonSize
+    @JSName("detail")
+    var detail_MoveEvent: MoveEventData = js.native
+  }
+  
+  trait MoveEventData extends StObject {
     
-    @js.native
-    sealed trait Medium
-      extends StObject
-         with ToolbarButtonSize
+    var oldX: Double
     
-    @js.native
-    sealed trait Small
-      extends StObject
-         with ToolbarButtonSize
+    var oldY: Double
+    
+    var originalEvent: PointerEvent | TouchEvent | MouseEvent | Null
+    
+    var x: Double
+    
+    var y: Double
+  }
+  object MoveEventData {
+    
+    inline def apply(oldX: Double, oldY: Double, x: Double, y: Double): MoveEventData = {
+      val __obj = js.Dynamic.literal(oldX = oldX.asInstanceOf[js.Any], oldY = oldY.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], originalEvent = null)
+      __obj.asInstanceOf[MoveEventData]
+    }
+    
+    extension [Self <: MoveEventData](x: Self) {
+      
+      inline def setOldX(value: Double): Self = StObject.set(x, "oldX", value.asInstanceOf[js.Any])
+      
+      inline def setOldY(value: Double): Self = StObject.set(x, "oldY", value.asInstanceOf[js.Any])
+      
+      inline def setOriginalEvent(value: PointerEvent | TouchEvent | MouseEvent): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      
+      inline def setOriginalEventNull: Self = StObject.set(x, "originalEvent", null)
+      
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    }
   }
   
   @js.native
-  sealed trait Visibility extends StObject
-  @JSGlobal("Viewer.Visibility")
-  @js.native
-  object Visibility extends StObject {
+  trait MovedEvent
+    extends StObject
+       with CustomEvent[Any] {
     
-    @js.native
-    sealed trait Hidden
-      extends StObject
-         with Visibility
-    
-    @js.native
-    sealed trait Visible
-      extends StObject
-         with Visibility
-    
-    @js.native
-    sealed trait VisibleOnExtraLargeOrWiderScreen
-      extends StObject
-         with Visibility
-    
-    @js.native
-    sealed trait VisibleOnLargeOrWiderScreen
-      extends StObject
-         with Visibility
-    
-    @js.native
-    sealed trait VisibleOnMediumOrWiderScreen
-      extends StObject
-         with Visibility
+    @JSName("detail")
+    var detail_MovedEvent: MoveEventData = js.native
   }
   
   trait Options extends StObject {
@@ -138,11 +140,13 @@ object Viewer {
     
     var filter: js.UndefOr[js.Function] = js.undefined
     
-    var fullscreen: js.UndefOr[Boolean] = js.undefined
+    var focus: js.UndefOr[Boolean] = js.undefined
     
-    var hidden: js.UndefOr[js.Function1[/* event */ CustomEvent[js.Any], Unit]] = js.undefined
+    var fullscreen: js.UndefOr[Boolean | FullscreenOptions] = js.undefined
     
-    var hide: js.UndefOr[js.Function1[/* event */ CustomEvent[js.Any], Unit]] = js.undefined
+    var hidden: js.UndefOr[js.Function1[/* event */ CustomEvent[Any], Unit]] = js.undefined
+    
+    var hide: js.UndefOr[js.Function1[/* event */ CustomEvent[Any], Unit]] = js.undefined
     
     var inheritedAttributes: js.UndefOr[js.Array[String]] = js.undefined
     
@@ -168,23 +172,35 @@ object Viewer {
     
     var movable: js.UndefOr[Boolean] = js.undefined
     
+    var move: js.UndefOr[js.Function1[/* event */ MoveEvent, Unit]] = js.undefined
+    
+    var moved: js.UndefOr[js.Function1[/* event */ MovedEvent, Unit]] = js.undefined
+    
     var navbar: js.UndefOr[Boolean | Visibility] = js.undefined
     
-    var play: js.UndefOr[js.Function1[/* event */ CustomEvent[js.Any], Unit]] = js.undefined
+    var play: js.UndefOr[js.Function1[/* event */ CustomEvent[Any], Unit]] = js.undefined
     
-    var ready: js.UndefOr[js.Function1[/* event */ CustomEvent[js.Any], Unit]] = js.undefined
+    var ready: js.UndefOr[js.Function1[/* event */ CustomEvent[Any], Unit]] = js.undefined
     
     var rotatable: js.UndefOr[Boolean] = js.undefined
     
+    var rotate: js.UndefOr[js.Function1[/* event */ RotateEvent, Unit]] = js.undefined
+    
+    var rotated: js.UndefOr[js.Function1[/* event */ RotatedEvent, Unit]] = js.undefined
+    
     var scalable: js.UndefOr[Boolean] = js.undefined
     
-    var show: js.UndefOr[js.Function1[/* event */ CustomEvent[js.Any], Unit]] = js.undefined
+    var scale: js.UndefOr[js.Function1[/* event */ ScaleEvent, Unit]] = js.undefined
     
-    var shown: js.UndefOr[js.Function1[/* event */ CustomEvent[js.Any], Unit]] = js.undefined
+    var scaled: js.UndefOr[js.Function1[/* event */ ScaledEvent, Unit]] = js.undefined
+    
+    var show: js.UndefOr[js.Function1[/* event */ CustomEvent[Any], Unit]] = js.undefined
+    
+    var shown: js.UndefOr[js.Function1[/* event */ CustomEvent[Any], Unit]] = js.undefined
     
     var slideOnTouch: js.UndefOr[Boolean] = js.undefined
     
-    var stop: js.UndefOr[js.Function1[/* event */ CustomEvent[js.Any], Unit]] = js.undefined
+    var stop: js.UndefOr[js.Function1[/* event */ CustomEvent[Any], Unit]] = js.undefined
     
     var title: js.UndefOr[Boolean | Visibility | js.Function | (js.Tuple2[Visibility, js.Function])] = js.undefined
     
@@ -198,9 +214,9 @@ object Viewer {
     
     var url: js.UndefOr[String | js.Function] = js.undefined
     
-    var view: js.UndefOr[js.Function1[/* event */ CustomEvent[js.Any], Unit]] = js.undefined
+    var view: js.UndefOr[js.Function1[/* event */ CustomEvent[Any], Unit]] = js.undefined
     
-    var viewed: js.UndefOr[js.Function1[/* event */ CustomEvent[js.Any], Unit]] = js.undefined
+    var viewed: js.UndefOr[js.Function1[/* event */ CustomEvent[Any], Unit]] = js.undefined
     
     var zIndex: js.UndefOr[Double] = js.undefined
     
@@ -247,15 +263,19 @@ object Viewer {
       
       inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      inline def setFullscreen(value: Boolean): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
+      inline def setFocus(value: Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+      
+      inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
+      
+      inline def setFullscreen(value: Boolean | FullscreenOptions): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
       
       inline def setFullscreenUndefined: Self = StObject.set(x, "fullscreen", js.undefined)
       
-      inline def setHidden(value: /* event */ CustomEvent[js.Any] => Unit): Self = StObject.set(x, "hidden", js.Any.fromFunction1(value))
+      inline def setHidden(value: /* event */ CustomEvent[Any] => Unit): Self = StObject.set(x, "hidden", js.Any.fromFunction1(value))
       
       inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
       
-      inline def setHide(value: /* event */ CustomEvent[js.Any] => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction1(value))
+      inline def setHide(value: /* event */ CustomEvent[Any] => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction1(value))
       
       inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
       
@@ -263,7 +283,7 @@ object Viewer {
       
       inline def setInheritedAttributesUndefined: Self = StObject.set(x, "inheritedAttributes", js.undefined)
       
-      inline def setInheritedAttributesVarargs(value: String*): Self = StObject.set(x, "inheritedAttributes", js.Array(value :_*))
+      inline def setInheritedAttributesVarargs(value: String*): Self = StObject.set(x, "inheritedAttributes", js.Array(value*))
       
       inline def setInitialViewIndex(value: Double): Self = StObject.set(x, "initialViewIndex", value.asInstanceOf[js.Any])
       
@@ -309,15 +329,23 @@ object Viewer {
       
       inline def setMovableUndefined: Self = StObject.set(x, "movable", js.undefined)
       
+      inline def setMove(value: /* event */ MoveEvent => Unit): Self = StObject.set(x, "move", js.Any.fromFunction1(value))
+      
+      inline def setMoveUndefined: Self = StObject.set(x, "move", js.undefined)
+      
+      inline def setMoved(value: /* event */ MovedEvent => Unit): Self = StObject.set(x, "moved", js.Any.fromFunction1(value))
+      
+      inline def setMovedUndefined: Self = StObject.set(x, "moved", js.undefined)
+      
       inline def setNavbar(value: Boolean | Visibility): Self = StObject.set(x, "navbar", value.asInstanceOf[js.Any])
       
       inline def setNavbarUndefined: Self = StObject.set(x, "navbar", js.undefined)
       
-      inline def setPlay(value: /* event */ CustomEvent[js.Any] => Unit): Self = StObject.set(x, "play", js.Any.fromFunction1(value))
+      inline def setPlay(value: /* event */ CustomEvent[Any] => Unit): Self = StObject.set(x, "play", js.Any.fromFunction1(value))
       
       inline def setPlayUndefined: Self = StObject.set(x, "play", js.undefined)
       
-      inline def setReady(value: /* event */ CustomEvent[js.Any] => Unit): Self = StObject.set(x, "ready", js.Any.fromFunction1(value))
+      inline def setReady(value: /* event */ CustomEvent[Any] => Unit): Self = StObject.set(x, "ready", js.Any.fromFunction1(value))
       
       inline def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
       
@@ -325,15 +353,31 @@ object Viewer {
       
       inline def setRotatableUndefined: Self = StObject.set(x, "rotatable", js.undefined)
       
+      inline def setRotate(value: /* event */ RotateEvent => Unit): Self = StObject.set(x, "rotate", js.Any.fromFunction1(value))
+      
+      inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
+      
+      inline def setRotated(value: /* event */ RotatedEvent => Unit): Self = StObject.set(x, "rotated", js.Any.fromFunction1(value))
+      
+      inline def setRotatedUndefined: Self = StObject.set(x, "rotated", js.undefined)
+      
       inline def setScalable(value: Boolean): Self = StObject.set(x, "scalable", value.asInstanceOf[js.Any])
       
       inline def setScalableUndefined: Self = StObject.set(x, "scalable", js.undefined)
       
-      inline def setShow(value: /* event */ CustomEvent[js.Any] => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
+      inline def setScale(value: /* event */ ScaleEvent => Unit): Self = StObject.set(x, "scale", js.Any.fromFunction1(value))
+      
+      inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+      
+      inline def setScaled(value: /* event */ ScaledEvent => Unit): Self = StObject.set(x, "scaled", js.Any.fromFunction1(value))
+      
+      inline def setScaledUndefined: Self = StObject.set(x, "scaled", js.undefined)
+      
+      inline def setShow(value: /* event */ CustomEvent[Any] => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
       
       inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
       
-      inline def setShown(value: /* event */ CustomEvent[js.Any] => Unit): Self = StObject.set(x, "shown", js.Any.fromFunction1(value))
+      inline def setShown(value: /* event */ CustomEvent[Any] => Unit): Self = StObject.set(x, "shown", js.Any.fromFunction1(value))
       
       inline def setShownUndefined: Self = StObject.set(x, "shown", js.undefined)
       
@@ -341,7 +385,7 @@ object Viewer {
       
       inline def setSlideOnTouchUndefined: Self = StObject.set(x, "slideOnTouch", js.undefined)
       
-      inline def setStop(value: /* event */ CustomEvent[js.Any] => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction1(value))
+      inline def setStop(value: /* event */ CustomEvent[Any] => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction1(value))
       
       inline def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
       
@@ -369,11 +413,11 @@ object Viewer {
       
       inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
-      inline def setView(value: /* event */ CustomEvent[js.Any] => Unit): Self = StObject.set(x, "view", js.Any.fromFunction1(value))
+      inline def setView(value: /* event */ CustomEvent[Any] => Unit): Self = StObject.set(x, "view", js.Any.fromFunction1(value))
       
       inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
       
-      inline def setViewed(value: /* event */ CustomEvent[js.Any] => Unit): Self = StObject.set(x, "viewed", js.Any.fromFunction1(value))
+      inline def setViewed(value: /* event */ CustomEvent[Any] => Unit): Self = StObject.set(x, "viewed", js.Any.fromFunction1(value))
       
       inline def setViewedUndefined: Self = StObject.set(x, "viewed", js.undefined)
       
@@ -411,7 +455,95 @@ object Viewer {
     }
   }
   
-  trait ToolbarButtonOptions extends StObject {
+  @js.native
+  trait RotateEvent
+    extends StObject
+       with CustomEvent[Any] {
+    
+    @JSName("detail")
+    var detail_RotateEvent: RotateEventData = js.native
+  }
+  
+  trait RotateEventData extends StObject {
+    
+    var degree: Double
+    
+    var oldDegree: Double
+  }
+  object RotateEventData {
+    
+    inline def apply(degree: Double, oldDegree: Double): RotateEventData = {
+      val __obj = js.Dynamic.literal(degree = degree.asInstanceOf[js.Any], oldDegree = oldDegree.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RotateEventData]
+    }
+    
+    extension [Self <: RotateEventData](x: Self) {
+      
+      inline def setDegree(value: Double): Self = StObject.set(x, "degree", value.asInstanceOf[js.Any])
+      
+      inline def setOldDegree(value: Double): Self = StObject.set(x, "oldDegree", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  @js.native
+  trait RotatedEvent
+    extends StObject
+       with CustomEvent[Any] {
+    
+    @JSName("detail")
+    var detail_RotatedEvent: RotateEventData = js.native
+  }
+  
+  @js.native
+  trait ScaleEvent
+    extends StObject
+       with CustomEvent[Any] {
+    
+    @JSName("detail")
+    var detail_ScaleEvent: ScaleEventData = js.native
+  }
+  
+  trait ScaleEventData extends StObject {
+    
+    var oldScaleX: Double
+    
+    var oldScaleY: Double
+    
+    var scaleX: Double
+    
+    var scaleY: Double
+  }
+  object ScaleEventData {
+    
+    inline def apply(oldScaleX: Double, oldScaleY: Double, scaleX: Double, scaleY: Double): ScaleEventData = {
+      val __obj = js.Dynamic.literal(oldScaleX = oldScaleX.asInstanceOf[js.Any], oldScaleY = oldScaleY.asInstanceOf[js.Any], scaleX = scaleX.asInstanceOf[js.Any], scaleY = scaleY.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ScaleEventData]
+    }
+    
+    extension [Self <: ScaleEventData](x: Self) {
+      
+      inline def setOldScaleX(value: Double): Self = StObject.set(x, "oldScaleX", value.asInstanceOf[js.Any])
+      
+      inline def setOldScaleY(value: Double): Self = StObject.set(x, "oldScaleY", value.asInstanceOf[js.Any])
+      
+      inline def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
+      
+      inline def setScaleY(value: Double): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  @js.native
+  trait ScaledEvent
+    extends StObject
+       with CustomEvent[Any] {
+    
+    @JSName("detail")
+    var detail_ScaledEvent: ScaleEventData = js.native
+  }
+  
+  trait ToolbarButtonOptions
+    extends StObject
+       with _ToolbarOption {
     
     var click: js.UndefOr[js.Function] = js.undefined
     
@@ -442,29 +574,58 @@ object Viewer {
     }
   }
   
-  trait ToolbarOptions extends StObject {
+  /* Rewritten from type alias, can be one of: 
+    - typings.viewerjs.viewerjsStrings.small
+    - typings.viewerjs.viewerjsStrings.medium
+    - typings.viewerjs.viewerjsStrings.large
+  */
+  trait ToolbarButtonSize
+    extends StObject
+       with _ToolbarOption
+  object ToolbarButtonSize {
     
-    var flipHorizontal: js.UndefOr[Boolean | Visibility | ToolbarButtonSize | js.Function | ToolbarButtonOptions] = js.undefined
+    inline def large: typings.viewerjs.viewerjsStrings.large = "large".asInstanceOf[typings.viewerjs.viewerjsStrings.large]
     
-    var flipVertical: js.UndefOr[Boolean | Visibility | ToolbarButtonSize | js.Function | ToolbarButtonOptions] = js.undefined
+    inline def medium: typings.viewerjs.viewerjsStrings.medium = "medium".asInstanceOf[typings.viewerjs.viewerjsStrings.medium]
     
-    var next: js.UndefOr[Boolean | Visibility | ToolbarButtonSize | js.Function | ToolbarButtonOptions] = js.undefined
+    inline def small: typings.viewerjs.viewerjsStrings.small = "small".asInstanceOf[typings.viewerjs.viewerjsStrings.small]
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - scala.Boolean
+    - typings.viewerjs.Viewer.Visibility
+    - typings.viewerjs.Viewer.ToolbarButtonSize
+    - js.Function
+    - typings.viewerjs.Viewer.ToolbarButtonOptions
+    - scala.Unit
+  */
+  type ToolbarOption = js.UndefOr[_ToolbarOption | Boolean | js.Function]
+  
+  trait ToolbarOptions
+    extends StObject
+       with /* x */ StringDictionary[ToolbarOption] {
     
-    var oneToOne: js.UndefOr[Boolean | Visibility | ToolbarButtonSize | js.Function | ToolbarButtonOptions] = js.undefined
+    var flipHorizontal: js.UndefOr[ToolbarOption] = js.undefined
     
-    var play: js.UndefOr[Boolean | Visibility | ToolbarButtonSize | js.Function | ToolbarButtonOptions] = js.undefined
+    var flipVertical: js.UndefOr[ToolbarOption] = js.undefined
     
-    var prev: js.UndefOr[Boolean | Visibility | ToolbarButtonSize | js.Function | ToolbarButtonOptions] = js.undefined
+    var next: js.UndefOr[ToolbarOption] = js.undefined
     
-    var reset: js.UndefOr[Boolean | Visibility | ToolbarButtonSize | js.Function | ToolbarButtonOptions] = js.undefined
+    var oneToOne: js.UndefOr[ToolbarOption] = js.undefined
     
-    var rotateLeft: js.UndefOr[Boolean | Visibility | ToolbarButtonSize | js.Function | ToolbarButtonOptions] = js.undefined
+    var play: js.UndefOr[ToolbarOption] = js.undefined
     
-    var rotateRight: js.UndefOr[Boolean | Visibility | ToolbarButtonSize | js.Function | ToolbarButtonOptions] = js.undefined
+    var prev: js.UndefOr[ToolbarOption] = js.undefined
     
-    var zoomIn: js.UndefOr[Boolean | Visibility | ToolbarButtonSize | js.Function | ToolbarButtonOptions] = js.undefined
+    var reset: js.UndefOr[ToolbarOption] = js.undefined
     
-    var zoomOut: js.UndefOr[Boolean | Visibility | ToolbarButtonSize | js.Function | ToolbarButtonOptions] = js.undefined
+    var rotateLeft: js.UndefOr[ToolbarOption] = js.undefined
+    
+    var rotateRight: js.UndefOr[ToolbarOption] = js.undefined
+    
+    var zoomIn: js.UndefOr[ToolbarOption] = js.undefined
+    
+    var zoomOut: js.UndefOr[ToolbarOption] = js.undefined
   }
   object ToolbarOptions {
     
@@ -475,56 +636,79 @@ object Viewer {
     
     extension [Self <: ToolbarOptions](x: Self) {
       
-      inline def setFlipHorizontal(value: Boolean | Visibility | ToolbarButtonSize | js.Function | ToolbarButtonOptions): Self = StObject.set(x, "flipHorizontal", value.asInstanceOf[js.Any])
+      inline def setFlipHorizontal(value: ToolbarOption): Self = StObject.set(x, "flipHorizontal", value.asInstanceOf[js.Any])
       
       inline def setFlipHorizontalUndefined: Self = StObject.set(x, "flipHorizontal", js.undefined)
       
-      inline def setFlipVertical(value: Boolean | Visibility | ToolbarButtonSize | js.Function | ToolbarButtonOptions): Self = StObject.set(x, "flipVertical", value.asInstanceOf[js.Any])
+      inline def setFlipVertical(value: ToolbarOption): Self = StObject.set(x, "flipVertical", value.asInstanceOf[js.Any])
       
       inline def setFlipVerticalUndefined: Self = StObject.set(x, "flipVertical", js.undefined)
       
-      inline def setNext(value: Boolean | Visibility | ToolbarButtonSize | js.Function | ToolbarButtonOptions): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+      inline def setNext(value: ToolbarOption): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
       inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
       
-      inline def setOneToOne(value: Boolean | Visibility | ToolbarButtonSize | js.Function | ToolbarButtonOptions): Self = StObject.set(x, "oneToOne", value.asInstanceOf[js.Any])
+      inline def setOneToOne(value: ToolbarOption): Self = StObject.set(x, "oneToOne", value.asInstanceOf[js.Any])
       
       inline def setOneToOneUndefined: Self = StObject.set(x, "oneToOne", js.undefined)
       
-      inline def setPlay(value: Boolean | Visibility | ToolbarButtonSize | js.Function | ToolbarButtonOptions): Self = StObject.set(x, "play", value.asInstanceOf[js.Any])
+      inline def setPlay(value: ToolbarOption): Self = StObject.set(x, "play", value.asInstanceOf[js.Any])
       
       inline def setPlayUndefined: Self = StObject.set(x, "play", js.undefined)
       
-      inline def setPrev(value: Boolean | Visibility | ToolbarButtonSize | js.Function | ToolbarButtonOptions): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
+      inline def setPrev(value: ToolbarOption): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
       
       inline def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
       
-      inline def setReset(value: Boolean | Visibility | ToolbarButtonSize | js.Function | ToolbarButtonOptions): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
+      inline def setReset(value: ToolbarOption): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
       
       inline def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
       
-      inline def setRotateLeft(value: Boolean | Visibility | ToolbarButtonSize | js.Function | ToolbarButtonOptions): Self = StObject.set(x, "rotateLeft", value.asInstanceOf[js.Any])
+      inline def setRotateLeft(value: ToolbarOption): Self = StObject.set(x, "rotateLeft", value.asInstanceOf[js.Any])
       
       inline def setRotateLeftUndefined: Self = StObject.set(x, "rotateLeft", js.undefined)
       
-      inline def setRotateRight(value: Boolean | Visibility | ToolbarButtonSize | js.Function | ToolbarButtonOptions): Self = StObject.set(x, "rotateRight", value.asInstanceOf[js.Any])
+      inline def setRotateRight(value: ToolbarOption): Self = StObject.set(x, "rotateRight", value.asInstanceOf[js.Any])
       
       inline def setRotateRightUndefined: Self = StObject.set(x, "rotateRight", js.undefined)
       
-      inline def setZoomIn(value: Boolean | Visibility | ToolbarButtonSize | js.Function | ToolbarButtonOptions): Self = StObject.set(x, "zoomIn", value.asInstanceOf[js.Any])
+      inline def setZoomIn(value: ToolbarOption): Self = StObject.set(x, "zoomIn", value.asInstanceOf[js.Any])
       
       inline def setZoomInUndefined: Self = StObject.set(x, "zoomIn", js.undefined)
       
-      inline def setZoomOut(value: Boolean | Visibility | ToolbarButtonSize | js.Function | ToolbarButtonOptions): Self = StObject.set(x, "zoomOut", value.asInstanceOf[js.Any])
+      inline def setZoomOut(value: ToolbarOption): Self = StObject.set(x, "zoomOut", value.asInstanceOf[js.Any])
       
       inline def setZoomOutUndefined: Self = StObject.set(x, "zoomOut", js.undefined)
     }
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - typings.viewerjs.viewerjsNumbers.`0`
+    - typings.viewerjs.viewerjsNumbers.`1`
+    - typings.viewerjs.viewerjsNumbers.`2`
+    - typings.viewerjs.viewerjsNumbers.`3`
+    - typings.viewerjs.viewerjsNumbers.`4`
+  */
+  trait Visibility
+    extends StObject
+       with _ToolbarOption
+  object Visibility {
+    
+    inline def `0`: typings.viewerjs.viewerjsNumbers.`0` = 0.asInstanceOf[typings.viewerjs.viewerjsNumbers.`0`]
+    
+    inline def `1`: typings.viewerjs.viewerjsNumbers.`1` = 1.asInstanceOf[typings.viewerjs.viewerjsNumbers.`1`]
+    
+    inline def `2`: typings.viewerjs.viewerjsNumbers.`2` = 2.asInstanceOf[typings.viewerjs.viewerjsNumbers.`2`]
+    
+    inline def `3`: typings.viewerjs.viewerjsNumbers.`3` = 3.asInstanceOf[typings.viewerjs.viewerjsNumbers.`3`]
+    
+    inline def `4`: typings.viewerjs.viewerjsNumbers.`4` = 4.asInstanceOf[typings.viewerjs.viewerjsNumbers.`4`]
+  }
+  
   @js.native
   trait ZoomEvent
     extends StObject
-       with CustomEvent[js.Any] {
+       with CustomEvent[Any] {
     
     @JSName("detail")
     var detail_ZoomEvent: ZoomEventData = js.native
@@ -534,18 +718,14 @@ object Viewer {
     
     var oldRatio: Double
     
-    var originalEvent: WheelEvent | PointerEvent | TouchEvent | MouseEvent
+    var originalEvent: WheelEvent | PointerEvent | TouchEvent | MouseEvent | Null
     
     var ratio: Double
   }
   object ZoomEventData {
     
-    inline def apply(
-      oldRatio: Double,
-      originalEvent: WheelEvent | PointerEvent | TouchEvent | MouseEvent,
-      ratio: Double
-    ): ZoomEventData = {
-      val __obj = js.Dynamic.literal(oldRatio = oldRatio.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any], ratio = ratio.asInstanceOf[js.Any])
+    inline def apply(oldRatio: Double, ratio: Double): ZoomEventData = {
+      val __obj = js.Dynamic.literal(oldRatio = oldRatio.asInstanceOf[js.Any], ratio = ratio.asInstanceOf[js.Any], originalEvent = null)
       __obj.asInstanceOf[ZoomEventData]
     }
     
@@ -555,6 +735,8 @@ object Viewer {
       
       inline def setOriginalEvent(value: WheelEvent | PointerEvent | TouchEvent | MouseEvent): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
+      inline def setOriginalEventNull: Self = StObject.set(x, "originalEvent", null)
+      
       inline def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
     }
   }
@@ -562,9 +744,11 @@ object Viewer {
   @js.native
   trait ZoomedEvent
     extends StObject
-       with CustomEvent[js.Any] {
+       with CustomEvent[Any] {
     
     @JSName("detail")
     var detail_ZoomedEvent: ZoomEventData = js.native
   }
+  
+  trait _ToolbarOption extends StObject
 }

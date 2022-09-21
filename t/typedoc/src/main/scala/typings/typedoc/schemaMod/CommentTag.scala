@@ -1,37 +1,45 @@
 package typings.typedoc.schemaMod
 
+import typings.typedoc.typedocStrings.`@$LeftcurlybracketstringRightcurlybracket`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.S<typedoc.typedoc/dist/lib/models.CommentTag, 'text'> */
+/* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.S<typedoc.typedoc/dist/lib/models.CommentTag, 'tag' | 'name'> */
 trait CommentTag
   extends StObject
-     with __ModelToObject[js.Any] {
+     with __ModelToObject[Any] {
   
-  var param: js.UndefOr[String] = js.undefined
+  var content: js.Array[CommentDisplayPart]
   
-  var tag: String
+  var name: ToSerialized[js.UndefOr[String]]
   
-  var text: ModelToObject[String] | String
+  var tag: ToSerialized[`@$LeftcurlybracketstringRightcurlybracket`]
 }
 object CommentTag {
   
-  inline def apply(tag: String, text: ModelToObject[String] | String): CommentTag = {
-    val __obj = js.Dynamic.literal(tag = tag.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+  inline def apply(
+    content: js.Array[CommentDisplayPart],
+    tag: ToSerialized[`@$LeftcurlybracketstringRightcurlybracket`]
+  ): CommentTag = {
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentTag]
   }
   
   extension [Self <: CommentTag](x: Self) {
     
-    inline def setParam(value: String): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
+    inline def setContent(value: js.Array[CommentDisplayPart]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    inline def setParamUndefined: Self = StObject.set(x, "param", js.undefined)
+    inline def setContentVarargs(value: CommentDisplayPart*): Self = StObject.set(x, "content", js.Array(value*))
     
-    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setName(value: ToSerialized[js.UndefOr[String]]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setText(value: ModelToObject[String] | String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setTextVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "text", js.Array(value :_*))
+    inline def setNameVarargs(value: _ModelToObject[Any]*): Self = StObject.set(x, "name", js.Array(value*))
+    
+    inline def setTag(value: ToSerialized[`@$LeftcurlybracketstringRightcurlybracket`]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    
+    inline def setTagVarargs(value: _ModelToObject[Any]*): Self = StObject.set(x, "tag", js.Array(value*))
   }
 }

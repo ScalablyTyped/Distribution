@@ -14,10 +14,12 @@ object yarnMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getGypEnv(frameworkInfo: DesktopFrameworkInfo, platform: Platform, arch: String, buildFromSource: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getGypEnv")(frameworkInfo.asInstanceOf[js.Any], platform.asInstanceOf[js.Any], arch.asInstanceOf[js.Any], buildFromSource.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getGypEnv(frameworkInfo: DesktopFrameworkInfo, platform: Platform, arch: String, buildFromSource: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getGypEnv")(frameworkInfo.asInstanceOf[js.Any], platform.asInstanceOf[js.Any], arch.asInstanceOf[js.Any], buildFromSource.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def installOrRebuild(config: Configuration, appDir: String, options: RebuildOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("installOrRebuild")(config.asInstanceOf[js.Any], appDir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def installOrRebuild(config: Configuration, appDir: String, options: RebuildOptions, forceInstall: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("installOrRebuild")(config.asInstanceOf[js.Any], appDir.asInstanceOf[js.Any], options.asInstanceOf[js.Any], forceInstall.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
+  inline def nodeGypRebuild(platform: Platform, arch: String, frameworkInfo: DesktopFrameworkInfo): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("nodeGypRebuild")(platform.asInstanceOf[js.Any], arch.asInstanceOf[js.Any], frameworkInfo.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   trait DesktopFrameworkInfo extends StObject {
     
@@ -69,7 +71,7 @@ object yarnMod {
       
       inline def setAdditionalArgsUndefined: Self = StObject.set(x, "additionalArgs", js.undefined)
       
-      inline def setAdditionalArgsVarargs(value: String*): Self = StObject.set(x, "additionalArgs", js.Array(value :_*))
+      inline def setAdditionalArgsVarargs(value: String*): Self = StObject.set(x, "additionalArgs", js.Array(value*))
       
       inline def setArch(value: String): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
       

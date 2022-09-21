@@ -11,9 +11,9 @@ Create custom SMTP servers on the fly
 | Full name          | smtp-server |
 | Keywords           | SMTP |
 | # releases         | 4 |
-| # dependents       | 64 |
-| # downloads        | 2119851 |
-| # stars            | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 306657.6666666667 |
+| # stars            | 737.0 |
 
 ## Links
 - [Homepage](https://github.com/andris9/smtp-server#readme)

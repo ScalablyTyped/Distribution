@@ -8,6 +8,7 @@ import typings.maximMazurokGapiClientAssuredworkloads.anon.ExternalId
 import typings.maximMazurokGapiClientAssuredworkloads.anon.Fields
 import typings.maximMazurokGapiClientAssuredworkloads.anon.Key
 import typings.maximMazurokGapiClientAssuredworkloads.anon.Name
+import typings.maximMazurokGapiClientAssuredworkloads.anon.Oauthtoken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,4 +38,12 @@ trait WorkloadsResource extends StObject {
     */
   def patch(request: Key): Request[GoogleCloudAssuredworkloadsV1Workload] = js.native
   def patch(request: Name, body: GoogleCloudAssuredworkloadsV1Workload): Request[GoogleCloudAssuredworkloadsV1Workload] = js.native
+  
+  def restrictAllowedResources(request: Accesstoken, body: GoogleCloudAssuredworkloadsV1RestrictAllowedResourcesRequest): Request[js.Object] = js.native
+  /**
+    * Restrict the list of resources allowed in the Workload environment. The current list of allowed products can be found at
+    * https://cloud.google.com/assured-workloads/docs/supported-products In addition to assuredworkloads.workload.update permission, the user should also have orgpolicy.policy.set
+    * permission on the folder resource to use this functionality.
+    */
+  def restrictAllowedResources(request: Oauthtoken): Request[js.Object] = js.native
 }

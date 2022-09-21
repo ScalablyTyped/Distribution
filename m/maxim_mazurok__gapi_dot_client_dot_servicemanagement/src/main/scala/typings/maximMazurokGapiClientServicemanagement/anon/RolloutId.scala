@@ -37,7 +37,7 @@ trait RolloutId extends StObject {
   /** Required. The id of the rollout resource. */
   var rolloutId: String
   
-  /** Required. The name of the service. See the [overview](/service-management/overview) for naming requirements. For example: `example.googleapis.com`. */
+  /** Required. The name of the service. See the [overview](https://cloud.google.com/service-management/overview) for naming requirements. For example: `example.googleapis.com`. */
   var serviceName: String
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */

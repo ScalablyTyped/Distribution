@@ -33,24 +33,24 @@ object KnockoutComponentTypes {
   
   trait ComponentConfig extends StObject {
     
-    var createViewModel: js.UndefOr[js.Any] = js.undefined
+    var createViewModel: js.UndefOr[Any] = js.undefined
     
-    var template: js.Any
+    var template: Any
   }
   object ComponentConfig {
     
-    inline def apply(template: js.Any): ComponentConfig = {
+    inline def apply(template: Any): ComponentConfig = {
       val __obj = js.Dynamic.literal(template = template.asInstanceOf[js.Any])
       __obj.asInstanceOf[ComponentConfig]
     }
     
     extension [Self <: ComponentConfig](x: Self) {
       
-      inline def setCreateViewModel(value: js.Any): Self = StObject.set(x, "createViewModel", value.asInstanceOf[js.Any])
+      inline def setCreateViewModel(value: Any): Self = StObject.set(x, "createViewModel", value.asInstanceOf[js.Any])
       
       inline def setCreateViewModelUndefined: Self = StObject.set(x, "createViewModel", js.undefined)
       
-      inline def setTemplate(value: js.Any): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+      inline def setTemplate(value: Any): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     }
   }
   
@@ -73,7 +73,7 @@ object KnockoutComponentTypes {
       
       inline def setTemplateNodes(value: js.Array[Node]): Self = StObject.set(x, "templateNodes", value.asInstanceOf[js.Any])
       
-      inline def setTemplateNodesVarargs(value: Node*): Self = StObject.set(x, "templateNodes", js.Array(value :_*))
+      inline def setTemplateNodesVarargs(value: Node*): Self = StObject.set(x, "templateNodes", js.Array(value*))
     }
   }
   
@@ -102,11 +102,11 @@ object KnockoutComponentTypes {
       
       inline def setTemplate(value: String | js.Array[Node] | DocumentFragment | TemplateElement | AMDModule): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
-      inline def setTemplateVarargs(value: Node*): Self = StObject.set(x, "template", js.Array(value :_*))
+      inline def setTemplateVarargs(value: Node*): Self = StObject.set(x, "template", js.Array(value*))
       
       inline def setViewModel(value: ViewModelFunction | ViewModelSharedInstance | ViewModelFactoryFunction | AMDModule): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
       
-      inline def setViewModelFunction1(value: /* params */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "viewModel", js.Any.fromFunction1(value))
+      inline def setViewModelFunction1(value: /* params */ js.UndefOr[Any] => Any): Self = StObject.set(x, "viewModel", js.Any.fromFunction1(value))
       
       inline def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
     }
@@ -114,7 +114,7 @@ object KnockoutComponentTypes {
   
   trait Definition extends StObject {
     
-    var createViewModel: js.UndefOr[js.Function2[/* params */ js.Any, /* options */ Element, js.Any]] = js.undefined
+    var createViewModel: js.UndefOr[js.Function2[/* params */ Any, /* options */ Element, Any]] = js.undefined
     
     var template: js.Array[Node]
   }
@@ -127,13 +127,13 @@ object KnockoutComponentTypes {
     
     extension [Self <: Definition](x: Self) {
       
-      inline def setCreateViewModel(value: (/* params */ js.Any, /* options */ Element) => js.Any): Self = StObject.set(x, "createViewModel", js.Any.fromFunction2(value))
+      inline def setCreateViewModel(value: (/* params */ Any, /* options */ Element) => Any): Self = StObject.set(x, "createViewModel", js.Any.fromFunction2(value))
       
       inline def setCreateViewModelUndefined: Self = StObject.set(x, "createViewModel", js.undefined)
       
       inline def setTemplate(value: js.Array[Node]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
-      inline def setTemplateVarargs(value: Node*): Self = StObject.set(x, "template", js.Array(value :_*))
+      inline def setTemplateVarargs(value: Node*): Self = StObject.set(x, "template", js.Array(value*))
     }
   }
   
@@ -161,7 +161,7 @@ object KnockoutComponentTypes {
     var loadTemplate: js.UndefOr[
         js.Function3[
           /* componentName */ String, 
-          /* templateConfig */ js.Any, 
+          /* templateConfig */ Any, 
           /* callback */ js.Function1[/* result */ js.Array[Node], Unit], 
           Unit
         ]
@@ -170,8 +170,8 @@ object KnockoutComponentTypes {
     var loadViewModel: js.UndefOr[
         js.Function3[
           /* componentName */ String, 
-          /* viewModelConfig */ js.Any, 
-          /* callback */ js.Function1[/* result */ js.Any, Unit], 
+          /* viewModelConfig */ Any, 
+          /* callback */ js.Function1[/* result */ Any, Unit], 
           Unit
         ]
       ] = js.undefined
@@ -200,13 +200,13 @@ object KnockoutComponentTypes {
       inline def setLoadComponentUndefined: Self = StObject.set(x, "loadComponent", js.undefined)
       
       inline def setLoadTemplate(
-        value: (/* componentName */ String, /* templateConfig */ js.Any, /* callback */ js.Function1[/* result */ js.Array[Node], Unit]) => Unit
+        value: (/* componentName */ String, /* templateConfig */ Any, /* callback */ js.Function1[/* result */ js.Array[Node], Unit]) => Unit
       ): Self = StObject.set(x, "loadTemplate", js.Any.fromFunction3(value))
       
       inline def setLoadTemplateUndefined: Self = StObject.set(x, "loadTemplate", js.undefined)
       
       inline def setLoadViewModel(
-        value: (/* componentName */ String, /* viewModelConfig */ js.Any, /* callback */ js.Function1[/* result */ js.Any, Unit]) => Unit
+        value: (/* componentName */ String, /* viewModelConfig */ Any, /* callback */ js.Function1[/* result */ Any, Unit]) => Unit
       ): Self = StObject.set(x, "loadViewModel", js.Any.fromFunction3(value))
       
       inline def setLoadViewModelUndefined: Self = StObject.set(x, "loadViewModel", js.undefined)
@@ -237,29 +237,29 @@ object KnockoutComponentTypes {
   @js.native
   trait ViewModelFactoryFunction extends StObject {
     
-    def createViewModel(): js.Any = js.native
-    def createViewModel(params: js.Any): js.Any = js.native
-    def createViewModel(params: js.Any, componentInfo: ComponentInfo): js.Any = js.native
-    def createViewModel(params: Unit, componentInfo: ComponentInfo): js.Any = js.native
+    def createViewModel(): Any = js.native
+    def createViewModel(params: Any): Any = js.native
+    def createViewModel(params: Any, componentInfo: ComponentInfo): Any = js.native
+    def createViewModel(params: Unit, componentInfo: ComponentInfo): Any = js.native
   }
   
   // viewmodel types
-  type ViewModelFunction = js.Function1[/* params */ js.UndefOr[js.Any], js.Any]
+  type ViewModelFunction = js.Function1[/* params */ js.UndefOr[Any], Any]
   
   trait ViewModelSharedInstance extends StObject {
     
-    var instance: js.Any
+    var instance: Any
   }
   object ViewModelSharedInstance {
     
-    inline def apply(instance: js.Any): ViewModelSharedInstance = {
+    inline def apply(instance: Any): ViewModelSharedInstance = {
       val __obj = js.Dynamic.literal(instance = instance.asInstanceOf[js.Any])
       __obj.asInstanceOf[ViewModelSharedInstance]
     }
     
     extension [Self <: ViewModelSharedInstance](x: Self) {
       
-      inline def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+      inline def setInstance(value: Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     }
   }
 }

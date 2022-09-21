@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("matter", "CompositeFactory")
 @js.native
-class CompositeFactory ()
+open class CompositeFactory ()
   extends StObject
      with typings.phaser.MatterJS.CompositeFactory

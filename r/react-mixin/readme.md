@@ -11,14 +11,11 @@ Typings are for version 2.0.2
 | Full name          | react-mixin |
 | Keywords           | react, mixin, es6, class, smart-mixin |
 | # releases         | 0 |
-| # dependents       | 201 |
-| # downloads        | 1044728 |
-| # stars            | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 80359.0 |
+| # stars            | 1132.0 |
 
 ## Links
-- [Homepage](https://github.com/brigand/react-mixin)
-- [Bugs](https://github.com/brigand/react-mixin/issues)
-- [Repository](https://github.com/brigand/react-mixin)
 - [Npm](https://www.npmjs.com/package/react-mixin)
     
 

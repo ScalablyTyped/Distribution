@@ -49,7 +49,7 @@ object XUrlContainer {
     addUrl: (String, Boolean) => Unit,
     findUrl: String => String,
     getUrls: Boolean => SafeArray[String],
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeUrl: String => Unit
   ): XUrlContainer = {

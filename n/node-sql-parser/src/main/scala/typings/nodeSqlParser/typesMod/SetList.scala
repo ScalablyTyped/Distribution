@@ -10,11 +10,11 @@ trait SetList extends StObject {
   
   var table: String | Null
   
-  var value: js.Any
+  var value: Any
 }
 object SetList {
   
-  inline def apply(column: String, value: js.Any): SetList = {
+  inline def apply(column: String, value: Any): SetList = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], table = null)
     __obj.asInstanceOf[SetList]
   }
@@ -27,6 +27,6 @@ object SetList {
     
     inline def setTableNull: Self = StObject.set(x, "table", null)
     
-    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

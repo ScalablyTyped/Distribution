@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LodashIteratee extends StObject {
   
-  def apply(func: String): js.Function1[/* repeated */ js.Any, js.Any] = js.native
-  def apply(func: js.Object): js.Function1[/* repeated */ js.Any, js.Any] = js.native
-  def apply[TFunction /* <: js.Function1[/* repeated */ js.Any, js.Any] */](func: TFunction): TFunction = js.native
+  def apply(func: String): js.Function1[/* repeated */ Any, Any] = js.native
+  def apply(func: js.Object): js.Function1[/* repeated */ Any, Any] = js.native
+  def apply[TFunction /* <: js.Function1[/* repeated */ Any, Any] */](func: TFunction): TFunction = js.native
 }

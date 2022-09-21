@@ -90,7 +90,7 @@ object Seriesid {
     
     inline def setSeries_id(value: String | js.Array[String]): Self = StObject.set(x, "series_id", value.asInstanceOf[js.Any])
     
-    inline def setSeries_idVarargs(value: String*): Self = StObject.set(x, "series_id", js.Array(value :_*))
+    inline def setSeries_idVarargs(value: String*): Self = StObject.set(x, "series_id", js.Array(value*))
     
     inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     

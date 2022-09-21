@@ -12,6 +12,7 @@ import typings.hammerjs.RecognizerTuple
 import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
+import typings.react.mod.ReactElement
 import typings.reactHammerjs.reactHammerjsStrings.DIRECTION_ALL
 import typings.reactHammerjs.reactHammerjsStrings.DIRECTION_DOWN
 import typings.reactHammerjs.reactHammerjsStrings.DIRECTION_HORIZONTAL
@@ -32,10 +33,9 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-hammerjs", JSImport.Namespace)
   @js.native
-  class ^ protected ()
-    extends Component[ReactHammerProps, ComponentState, js.Any] {
+  open class ^ protected () extends Component[ReactHammerProps, ComponentState, Any] {
     def this(props: ReactHammerProps) = this()
-    def this(props: ReactHammerProps, context: js.Any) = this()
+    def this(props: ReactHammerProps, context: Any) = this()
   }
   @JSImport("react-hammerjs", JSImport.Namespace)
   @js.native
@@ -95,7 +95,7 @@ object mod extends Shortcut {
       
       inline def setPresetUndefined: Self = StObject.set(x, "preset", js.undefined)
       
-      inline def setPresetVarargs(value: RecognizerTuple*): Self = StObject.set(x, "preset", js.Array(value :_*))
+      inline def setPresetVarargs(value: RecognizerTuple*): Self = StObject.set(x, "preset", js.Array(value*))
       
       inline def setRecognizers(value: StringDictionary[RecognizerOptions]): Self = StObject.set(x, "recognizers", value.asInstanceOf[js.Any])
       
@@ -112,6 +112,8 @@ object mod extends Shortcut {
   trait ReactHammerProps extends StObject {
     
     var action: js.UndefOr[HammerListener] = js.undefined
+    
+    var children: ReactElement
     
     var direction: js.UndefOr[
         DIRECTION_NONE | DIRECTION_LEFT | DIRECTION_RIGHT | DIRECTION_UP | DIRECTION_DOWN | DIRECTION_HORIZONTAL | DIRECTION_VERTICAL | DIRECTION_ALL
@@ -155,6 +157,14 @@ object mod extends Shortcut {
     
     var onSwipe: js.UndefOr[HammerListener] = js.undefined
     
+    var onSwipeDown: js.UndefOr[HammerListener] = js.undefined
+    
+    var onSwipeLeft: js.UndefOr[HammerListener] = js.undefined
+    
+    var onSwipeRight: js.UndefOr[HammerListener] = js.undefined
+    
+    var onSwipeUp: js.UndefOr[HammerListener] = js.undefined
+    
     var onTap: js.UndefOr[HammerListener] = js.undefined
     
     var options: js.UndefOr[HammerOptionsWithRecognizers] = js.undefined
@@ -165,8 +175,8 @@ object mod extends Shortcut {
   }
   object ReactHammerProps {
     
-    inline def apply(): ReactHammerProps = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(children: ReactElement): ReactHammerProps = {
+      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactHammerProps]
     }
     
@@ -175,6 +185,8 @@ object mod extends Shortcut {
       inline def setAction(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
       
       inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+      
+      inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setDirection(
         value: DIRECTION_NONE | DIRECTION_LEFT | DIRECTION_RIGHT | DIRECTION_UP | DIRECTION_DOWN | DIRECTION_HORIZONTAL | DIRECTION_VERTICAL | DIRECTION_ALL
@@ -256,7 +268,23 @@ object mod extends Shortcut {
       
       inline def setOnSwipe(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "onSwipe", js.Any.fromFunction1(value))
       
+      inline def setOnSwipeDown(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "onSwipeDown", js.Any.fromFunction1(value))
+      
+      inline def setOnSwipeDownUndefined: Self = StObject.set(x, "onSwipeDown", js.undefined)
+      
+      inline def setOnSwipeLeft(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "onSwipeLeft", js.Any.fromFunction1(value))
+      
+      inline def setOnSwipeLeftUndefined: Self = StObject.set(x, "onSwipeLeft", js.undefined)
+      
+      inline def setOnSwipeRight(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "onSwipeRight", js.Any.fromFunction1(value))
+      
+      inline def setOnSwipeRightUndefined: Self = StObject.set(x, "onSwipeRight", js.undefined)
+      
       inline def setOnSwipeUndefined: Self = StObject.set(x, "onSwipe", js.undefined)
+      
+      inline def setOnSwipeUp(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "onSwipeUp", js.Any.fromFunction1(value))
+      
+      inline def setOnSwipeUpUndefined: Self = StObject.set(x, "onSwipeUp", js.undefined)
       
       inline def setOnTap(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "onTap", js.Any.fromFunction1(value))
       

@@ -4,32 +4,27 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Input only.  Filter on job compensation type and amount.
-  */
 trait SchemaCompensationFilter extends StObject {
   
   /**
-    * Optional.  Whether to include jobs whose compensation range is
-    * unspecified.
+    * Optional. Whether to include jobs whose compensation range is unspecified.
     */
-  var includeJobsWithUnspecifiedCompensationRange: js.UndefOr[Boolean] = js.undefined
+  var includeJobsWithUnspecifiedCompensationRange: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * Optional.  Compensation range.
+    * Optional. Compensation range.
     */
   var range: js.UndefOr[SchemaCompensationRange] = js.undefined
   
   /**
-    * Required.  Type of filter.
+    * Required. Type of filter.
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * Required.  Specify desired `base compensation entry&#39;s`
-    * CompensationInfo.CompensationUnit.
+    * Required. Specify desired `base compensation entry's` CompensationInfo.CompensationUnit.
     */
-  var units: js.UndefOr[js.Array[String]] = js.undefined
+  var units: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object SchemaCompensationFilter {
   
@@ -42,6 +37,8 @@ object SchemaCompensationFilter {
     
     inline def setIncludeJobsWithUnspecifiedCompensationRange(value: Boolean): Self = StObject.set(x, "includeJobsWithUnspecifiedCompensationRange", value.asInstanceOf[js.Any])
     
+    inline def setIncludeJobsWithUnspecifiedCompensationRangeNull: Self = StObject.set(x, "includeJobsWithUnspecifiedCompensationRange", null)
+    
     inline def setIncludeJobsWithUnspecifiedCompensationRangeUndefined: Self = StObject.set(x, "includeJobsWithUnspecifiedCompensationRange", js.undefined)
     
     inline def setRange(value: SchemaCompensationRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
@@ -50,12 +47,16 @@ object SchemaCompensationFilter {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
+    
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     inline def setUnits(value: js.Array[String]): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
     
+    inline def setUnitsNull: Self = StObject.set(x, "units", null)
+    
     inline def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
     
-    inline def setUnitsVarargs(value: String*): Self = StObject.set(x, "units", js.Array(value :_*))
+    inline def setUnitsVarargs(value: String*): Self = StObject.set(x, "units", js.Array(value*))
   }
 }

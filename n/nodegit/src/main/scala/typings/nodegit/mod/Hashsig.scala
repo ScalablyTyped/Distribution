@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("nodegit", "Hashsig")
 @js.native
-class Hashsig ()
+open class Hashsig ()
   extends typings.nodegit.hashSigMod.Hashsig
 /* static members */
 object Hashsig {

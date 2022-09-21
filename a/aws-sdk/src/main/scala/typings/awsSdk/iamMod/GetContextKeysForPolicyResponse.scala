@@ -24,6 +24,6 @@ object GetContextKeysForPolicyResponse {
     
     inline def setContextKeyNamesUndefined: Self = StObject.set(x, "ContextKeyNames", js.undefined)
     
-    inline def setContextKeyNamesVarargs(value: ContextKeyNameType*): Self = StObject.set(x, "ContextKeyNames", js.Array(value :_*))
+    inline def setContextKeyNamesVarargs(value: ContextKeyNameType*): Self = StObject.set(x, "ContextKeyNames", js.Array(value*))
   }
 }

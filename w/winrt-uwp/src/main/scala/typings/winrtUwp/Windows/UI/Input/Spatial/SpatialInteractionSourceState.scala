@@ -6,43 +6,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SpatialInteractionSourceState extends StObject {
   
-  var isPressed: js.Any
+  var isPressed: Any
   
   /* unmapped type */
-  var properties: js.Any
+  var properties: Any
   
   /* unmapped type */
-  var source: js.Any
+  var source: Any
   
   /* unmapped type */
-  var timestamp: js.Any
+  var timestamp: Any
   
   /* unmapped type */
-  var tryGetPointerPose: js.Any
+  var tryGetPointerPose: Any
 }
 object SpatialInteractionSourceState {
   
-  inline def apply(
-    isPressed: js.Any,
-    properties: js.Any,
-    source: js.Any,
-    timestamp: js.Any,
-    tryGetPointerPose: js.Any
-  ): SpatialInteractionSourceState = {
+  inline def apply(isPressed: Any, properties: Any, source: Any, timestamp: Any, tryGetPointerPose: Any): SpatialInteractionSourceState = {
     val __obj = js.Dynamic.literal(isPressed = isPressed.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], tryGetPointerPose = tryGetPointerPose.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpatialInteractionSourceState]
   }
   
   extension [Self <: SpatialInteractionSourceState](x: Self) {
     
-    inline def setIsPressed(value: js.Any): Self = StObject.set(x, "isPressed", value.asInstanceOf[js.Any])
+    inline def setIsPressed(value: Any): Self = StObject.set(x, "isPressed", value.asInstanceOf[js.Any])
     
-    inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    inline def setTimestamp(value: js.Any): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Any): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    inline def setTryGetPointerPose(value: js.Any): Self = StObject.set(x, "tryGetPointerPose", value.asInstanceOf[js.Any])
+    inline def setTryGetPointerPose(value: Any): Self = StObject.set(x, "tryGetPointerPose", value.asInstanceOf[js.Any])
   }
 }

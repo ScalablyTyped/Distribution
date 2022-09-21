@@ -22,7 +22,7 @@ object XXMLBasicExporter {
     acquire: () => Unit,
     cancel: () => Unit,
     filter: SeqEquiv[PropertyValue] => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     setSourceDocument: XComponent => Unit
   ): XXMLBasicExporter = {

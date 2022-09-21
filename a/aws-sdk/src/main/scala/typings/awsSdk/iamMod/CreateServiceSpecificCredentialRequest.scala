@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateServiceSpecificCredentialRequest extends StObject {
   
   /**
-    * The name of the AWS service that is to be associated with the credentials. The service you specify here is the only service that can be accessed using these credentials.
+    * The name of the Amazon Web Services service that is to be associated with the credentials. The service you specify here is the only service that can be accessed using these credentials.
     */
   var ServiceName: serviceName
   

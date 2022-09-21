@@ -6,14 +6,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Encapsulates the format properties for chart gridlines.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @JSGlobal("Excel.ChartGridlinesFormat")
 @js.native
-class ChartGridlinesFormat ()
+open class ChartGridlinesFormat ()
   extends StObject
      with typings.officeJsPreview.Excel.ChartGridlinesFormat {
   

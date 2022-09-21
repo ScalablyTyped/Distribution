@@ -25,7 +25,7 @@ trait CouchbaseError
   /**
     * Possible response body included with the error.
     */
-  var responseBody: js.UndefOr[js.Any] = js.undefined
+  var responseBody: js.UndefOr[Any] = js.undefined
 }
 object CouchbaseError {
   
@@ -44,7 +44,7 @@ object CouchbaseError {
     
     inline def setInnerErrorUndefined: Self = StObject.set(x, "innerError", js.undefined)
     
-    inline def setResponseBody(value: js.Any): Self = StObject.set(x, "responseBody", value.asInstanceOf[js.Any])
+    inline def setResponseBody(value: Any): Self = StObject.set(x, "responseBody", value.asInstanceOf[js.Any])
     
     inline def setResponseBodyUndefined: Self = StObject.set(x, "responseBody", js.undefined)
   }

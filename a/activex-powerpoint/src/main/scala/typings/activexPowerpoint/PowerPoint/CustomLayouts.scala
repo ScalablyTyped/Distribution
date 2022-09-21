@@ -13,9 +13,9 @@ trait CustomLayouts extends StObject {
   
   val Count: Double = js.native
   
-  def Item(Index: js.Any): CustomLayout = js.native
+  def Item(Index: Any): CustomLayout = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   /** @param number [Index=-1] */
   def Paste(): CustomLayout = js.native

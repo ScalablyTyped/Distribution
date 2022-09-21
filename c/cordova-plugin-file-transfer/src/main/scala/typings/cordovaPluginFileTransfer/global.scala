@@ -9,14 +9,14 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("FileTransfer")
   @js.native
-  class FileTransfer ()
+  open class FileTransfer ()
     extends StObject
        with typings.cordovaPluginFileTransfer.FileTransfer
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("FileTransferError")
   @js.native
-  class FileTransferError protected ()
+  open class FileTransferError protected ()
     extends StObject
        with typings.cordovaPluginFileTransfer.FileTransferError {
     /** Constructor for FileTransferError object */
@@ -25,8 +25,8 @@ object global {
       source: js.UndefOr[String],
       target: js.UndefOr[String],
       status: js.UndefOr[Double],
-      body: js.UndefOr[js.Any],
-      exception: js.UndefOr[js.Any]
+      body: js.UndefOr[Any],
+      exception: js.UndefOr[Any]
     ) = this()
     
     /* Response body. This attribute is only available when a response is received from the HTTP connection. */
@@ -46,7 +46,7 @@ object global {
     
     /* Exception that is thrown by native code */
     /* CompleteClass */
-    var exception: js.Any = js.native
+    var exception: Any = js.native
     
     /** HTTP status code. This attribute is only available when a response code is received from the HTTP connection. */
     /* CompleteClass */

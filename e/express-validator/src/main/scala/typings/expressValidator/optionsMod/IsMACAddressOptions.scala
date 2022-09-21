@@ -6,7 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IsMACAddressOptions extends StObject {
   
+  /**
+    * @deprecated use `no_separators` instead
+    */
   var no_colons: js.UndefOr[Boolean] = js.undefined
+  
+  var no_separators: js.UndefOr[Boolean] = js.undefined
 }
 object IsMACAddressOptions {
   
@@ -20,5 +25,9 @@ object IsMACAddressOptions {
     inline def setNo_colons(value: Boolean): Self = StObject.set(x, "no_colons", value.asInstanceOf[js.Any])
     
     inline def setNo_colonsUndefined: Self = StObject.set(x, "no_colons", js.undefined)
+    
+    inline def setNo_separators(value: Boolean): Self = StObject.set(x, "no_separators", value.asInstanceOf[js.Any])
+    
+    inline def setNo_separatorsUndefined: Self = StObject.set(x, "no_separators", js.undefined)
   }
 }

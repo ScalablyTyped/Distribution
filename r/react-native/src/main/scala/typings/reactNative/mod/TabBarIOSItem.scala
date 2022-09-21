@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native", "TabBarIOSItem")
 @js.native
-class TabBarIOSItem protected ()
-  extends Component[TabBarIOSItemProps, js.Object, js.Any] {
+open class TabBarIOSItem protected ()
+  extends Component[TabBarIOSItemProps, js.Object, Any] {
   def this(props: TabBarIOSItemProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: TabBarIOSItemProps, context: js.Any) = this()
+  def this(props: TabBarIOSItemProps, context: Any) = this()
 }

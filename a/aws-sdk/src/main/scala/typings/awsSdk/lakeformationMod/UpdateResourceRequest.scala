@@ -12,7 +12,7 @@ trait UpdateResourceRequest extends StObject {
   var ResourceArn: ResourceArnString
   
   /**
-    * The new role to use for the given resource registered in AWS Lake Formation.
+    * The new role to use for the given resource registered in Lake Formation.
     */
   var RoleArn: IAMRoleArn
 }

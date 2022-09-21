@@ -10,10 +10,10 @@ object sortMod {
   
   @JSImport("material-ui/svg-icons/content/sort", JSImport.Default)
   @js.native
-  class default () extends ContentSort
+  open class default () extends ContentSort
   
   @JSImport("material-ui/svg-icons/content/sort", "ContentSort")
   @js.native
-  class ContentSort ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class ContentSort ()
+    extends Component[SvgIconProps, js.Object, Any]
 }

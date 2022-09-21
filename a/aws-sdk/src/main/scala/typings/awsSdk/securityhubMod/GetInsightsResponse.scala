@@ -27,7 +27,7 @@ object GetInsightsResponse {
     
     inline def setInsights(value: InsightList): Self = StObject.set(x, "Insights", value.asInstanceOf[js.Any])
     
-    inline def setInsightsVarargs(value: Insight*): Self = StObject.set(x, "Insights", js.Array(value :_*))
+    inline def setInsightsVarargs(value: Insight*): Self = StObject.set(x, "Insights", js.Array(value*))
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

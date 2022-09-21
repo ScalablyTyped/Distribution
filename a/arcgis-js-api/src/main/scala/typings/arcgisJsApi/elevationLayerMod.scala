@@ -25,7 +25,7 @@ object elevationLayerMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ElevationLayer.html)
     */
-  class Class ()
+  open class Class ()
     extends StObject
        with ElevationLayer {
     def this(properties: ElevationLayerProperties) = this()

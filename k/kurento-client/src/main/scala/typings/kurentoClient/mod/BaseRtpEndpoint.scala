@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait BaseRtpEndpoint
   extends StObject
-     with MediaElement {
+     with SdpEndpoint {
   
   def getConnectionState(): js.Promise[ConnectionState] = js.native
   def getConnectionState(callback: Callback[ConnectionState]): js.Promise[ConnectionState] = js.native

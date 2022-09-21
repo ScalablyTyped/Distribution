@@ -1,14 +1,13 @@
 package typings.highcharts.mod
 
 import typings.highcharts.anon.PartialAnimationOptionsOb
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts", "SVGElement")
 @js.native
-class SVGElement () extends StObject {
+open class SVGElement () extends StObject {
   
   /**
     * Add the element to the DOM. All elements must be added this way.
@@ -293,14 +292,9 @@ class SVGElement () extends StObject {
     * Hide the element, similar to setting the `visibility` attribute to
     * `hidden`.
     *
-    * @param hideByTranslation
-    *        The flag to determine if element should be hidden by moving out of
-    *        the viewport. Used for example for dataLabels.
-    *
     * @return Returns the SVGElement for chaining.
     */
   def hide(): SVGElement = js.native
-  def hide(hideByTranslation: Boolean): SVGElement = js.native
   
   /**
     * Initialize the SVG element. This function only exists to make the
@@ -328,13 +322,12 @@ class SVGElement () extends StObject {
   def invert(inverted: Boolean): SVGElement = js.native
   
   /**
-    * Add an event listener. This is a simple setter that replaces all other
-    * events of the same type, opposed to the Highcharts#addEvent function.
+    * Add an event listener. This is a simple setter that replaces the previous
+    * event of the same type added by this function, as opposed to the
+    * Highcharts#addEvent function.
     *
     * @param eventType
-    *        The event type. If the type is `click`, Highcharts will internally
-    *        translate it to a `touchstart` event on touch devices, to prevent
-    *        the browser from waiting for a click event from firing.
+    *        The event type.
     *
     * @param handler
     *        The handler callback.
@@ -352,7 +345,7 @@ class SVGElement () extends StObject {
     * @return Returns the SVG element for chainability.
     */
   def removeClass(className: String): SVGElement = js.native
-  def removeClass(className: RegExp): SVGElement = js.native
+  def removeClass(className: js.RegExp): SVGElement = js.native
   
   /**
     * The renderer that the SVGElement belongs to.
@@ -371,6 +364,25 @@ class SVGElement () extends StObject {
     * @return Returns the SVGElement for chaining.
     */
   def setRadialReference(coordinates: js.Array[Double]): SVGElement = js.native
+  
+  def setTextPath(path: Unit, textPathOptions: DataLabelsTextPathOptionsObject): SVGElement = js.native
+  /**
+    * Set a text path for a `text` or `label` element, allowing the text to
+    * flow along a path.
+    *
+    * In order to unset the path for an existing element, call `setTextPath`
+    * with `{ enabled: false }` as the second argument.
+    *
+    * @param path
+    *        Path to follow. If undefined, it allows changing options for the
+    *        existing path.
+    *
+    * @param textPathOptions
+    *        Options.
+    *
+    * @return Returns the SVGElement for chaining.
+    */
+  def setTextPath(path: SVGElement, textPathOptions: DataLabelsTextPathOptionsObject): SVGElement = js.native
   
   /**
     * Add a shadow to the element. Must be called after the element is added to
@@ -457,6 +469,8 @@ class SVGElement () extends StObject {
     *
     * @param y
     *        The y value.
+    *
+    * @return Translated element.
     */
   def translate(x: Double, y: Double): SVGElement = js.native
 }

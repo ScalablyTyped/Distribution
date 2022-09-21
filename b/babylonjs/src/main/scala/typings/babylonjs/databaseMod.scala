@@ -9,7 +9,7 @@ object databaseMod {
   
   @JSImport("babylonjs/Offline/database", "Database")
   @js.native
-  class Database protected ()
+  open class Database protected ()
     extends StObject
        with IOfflineProvider {
     /**
@@ -18,48 +18,46 @@ object databaseMod {
       * @param callbackManifestChecked defines the callback to use when manifest is checked
       * @param disableManifestCheck defines a boolean indicating that we want to skip the manifest validation (it will be considered validated and up to date)
       */
-    def this(urlToScene: String, callbackManifestChecked: js.Function1[/* checked */ Boolean, js.Any]) = this()
+    def this(urlToScene: String, callbackManifestChecked: js.Function1[/* checked */ Boolean, Any]) = this()
     def this(
       urlToScene: String,
-      callbackManifestChecked: js.Function1[/* checked */ Boolean, js.Any],
+      callbackManifestChecked: js.Function1[/* checked */ Boolean, Any],
       disableManifestCheck: Boolean
     ) = this()
     
-    /* private */ var _callbackManifestChecked: js.Any = js.native
+    /* private */ var _checkManifestFile: Any = js.native
     
-    /* private */ var _checkManifestFile: js.Any = js.native
+    /* private */ var _checkVersionFromDB: Any = js.native
     
-    /* private */ var _checkVersionFromDB: js.Any = js.native
+    /* private */ var _currentSceneUrl: Any = js.native
     
-    /* private */ var _currentSceneUrl: js.Any = js.native
+    /* private */ var _db: Any = js.native
     
-    /* private */ var _db: js.Any = js.native
+    /* private */ var _enableSceneOffline: Any = js.native
     
-    /* private */ var _enableSceneOffline: js.Any = js.native
+    /* private */ var _enableTexturesOffline: Any = js.native
     
-    /* private */ var _enableTexturesOffline: js.Any = js.native
+    /* private */ var _hasReachedQuota: Any = js.native
     
-    /* private */ var _hasReachedQuota: js.Any = js.native
+    /* private */ var _idbFactory: Any = js.native
     
-    /* private */ var _idbFactory: js.Any = js.native
+    /* private */ var _isSupported: Any = js.native
     
-    /* private */ var _isSupported: js.Any = js.native
+    /* private */ var _loadFileAsync: Any = js.native
     
-    /* private */ var _loadFileAsync: js.Any = js.native
+    /* private */ var _loadImageFromDBAsync: Any = js.native
     
-    /* private */ var _loadImageFromDBAsync: js.Any = js.native
+    /* private */ var _loadVersionFromDBAsync: Any = js.native
     
-    /* private */ var _loadVersionFromDBAsync: js.Any = js.native
+    /* private */ var _manifestVersionFound: Any = js.native
     
-    /* private */ var _manifestVersionFound: js.Any = js.native
+    /* private */ var _mustUpdateRessources: Any = js.native
     
-    /* private */ var _mustUpdateRessources: js.Any = js.native
+    /* private */ var _saveFileAsync: Any = js.native
     
-    /* private */ var _saveFileAsync: js.Any = js.native
+    /* private */ var _saveImageIntoDBAsync: Any = js.native
     
-    /* private */ var _saveImageIntoDBAsync: js.Any = js.native
-    
-    /* private */ var _saveVersionIntoDBAsync: js.Any = js.native
+    /* private */ var _saveVersionIntoDBAsync: Any = js.native
     
     /**
       * Gets a boolean indicating if scene must be saved in the database
@@ -81,7 +79,7 @@ object databaseMod {
     val ^ : js.Any = js.native
     
     /**
-      * Gets a boolean indicating if Database storate is enabled (off by default)
+      * Gets a boolean indicating if Database storage is enabled (off by default)
       */
     @JSImport("babylonjs/Offline/database", "Database.IDBStorageEnabled")
     @js.native
@@ -89,20 +87,20 @@ object databaseMod {
     inline def IDBStorageEnabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IDBStorageEnabled")(x.asInstanceOf[js.Any])
     
     /** Gets a boolean indicating if the user agent supports blob storage (this value will be updated after creating the first Database object) */
-    @JSImport("babylonjs/Offline/database", "Database.IsUASupportingBlobStorage")
+    @JSImport("babylonjs/Offline/database", "Database._IsUASupportingBlobStorage")
     @js.native
-    def IsUASupportingBlobStorage: js.Any = js.native
-    inline def IsUASupportingBlobStorage_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IsUASupportingBlobStorage")(x.asInstanceOf[js.Any])
+    def _IsUASupportingBlobStorage: Any = js.native
+    inline def _IsUASupportingBlobStorage_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsUASupportingBlobStorage")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Offline/database", "Database._ParseURL")
     @js.native
-    def _ParseURL: js.Any = js.native
-    inline def _ParseURL_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ParseURL")(x.asInstanceOf[js.Any])
+    def _ParseURL: Any = js.native
+    inline def _ParseURL_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ParseURL")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Offline/database", "Database._ReturnFullUrlLocation")
     @js.native
-    def _ReturnFullUrlLocation: js.Any = js.native
-    inline def _ReturnFullUrlLocation_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ReturnFullUrlLocation")(x.asInstanceOf[js.Any])
+    def _ReturnFullUrlLocation: Any = js.native
+    inline def _ReturnFullUrlLocation_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ReturnFullUrlLocation")(x.asInstanceOf[js.Any])
     
     /**
       * Validates if xhr data is correct
@@ -112,7 +110,7 @@ object databaseMod {
       */
     @JSImport("babylonjs/Offline/database", "Database._ValidateXHRData")
     @js.native
-    def _ValidateXHRData: js.Any = js.native
-    inline def _ValidateXHRData_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ValidateXHRData")(x.asInstanceOf[js.Any])
+    def _ValidateXHRData: Any = js.native
+    inline def _ValidateXHRData_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ValidateXHRData")(x.asInstanceOf[js.Any])
   }
 }

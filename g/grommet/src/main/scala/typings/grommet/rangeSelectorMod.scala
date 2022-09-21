@@ -15,10 +15,8 @@ import typings.grommet.grommetStrings.xsmall
 import typings.grommet.grommetStrings.xxsmall
 import typings.grommet.utilsMod.ColorType
 import typings.grommet.utilsMod.Omit
-import typings.react.mod.Component
-import typings.react.mod.ComponentClass
-import typings.react.mod.ComponentState
 import typings.react.mod.DetailedHTMLProps
+import typings.react.mod.FC
 import typings.react.mod.HTMLAttributes
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
@@ -27,27 +25,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object rangeSelectorMod {
   
-  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("grommet/components/RangeSelector", "RangeSelector")
   @js.native
-  class RangeSelector protected ()
-    extends Component[
-          RangeSelectorProps & (Omit[DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], color]), 
-          ComponentState, 
-          js.Any
-        ] {
-    def this(props: RangeSelectorProps & (Omit[DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], color])) = this()
-    def this(
-      props: RangeSelectorProps & (Omit[DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], color]),
-      context: js.Any
-    ) = this()
-  }
-  @JSImport("grommet/components/RangeSelector", "RangeSelector")
-  @js.native
-  val RangeSelector: ComponentClass[
-    RangeSelectorProps & (Omit[DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], color]), 
-    ComponentState
+  val RangeSelector: FC[
+    RangeSelectorProps & (Omit[DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], color])
   ] = js.native
+  
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped {[ P in std.Exclude<keyof react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'color' | 'onChange'> ]: react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>[P]} */ trait RangeSelectorExtendedProps
+    extends StObject
+       with RangeSelectorProps
+  object RangeSelectorExtendedProps {
+    
+    inline def apply(values: js.Array[Double]): RangeSelectorExtendedProps = {
+      val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RangeSelectorExtendedProps]
+    }
+  }
   
   trait RangeSelectorProps extends StObject {
     
@@ -63,7 +57,7 @@ object rangeSelectorMod {
     
     var min: js.UndefOr[Double] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
+    var onChange: js.UndefOr[js.Function1[/* repeated */ Any, Unit]] = js.undefined
     
     var opacity: js.UndefOr[weak | medium | strong | String | Boolean] = js.undefined
     
@@ -108,7 +102,7 @@ object rangeSelectorMod {
       
       inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      inline def setOnChange(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* repeated */ Any => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -130,7 +124,7 @@ object rangeSelectorMod {
       
       inline def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value*))
     }
   }
 }

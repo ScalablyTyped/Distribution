@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.SmartArtNode")
 @js.native
-/* private */ class SmartArtNode ()
+/* private */ open class SmartArtNode ()
   extends StObject
      with typings.activexOffice.Office.SmartArtNode

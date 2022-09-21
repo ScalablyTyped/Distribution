@@ -26,7 +26,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.recharts.rechartsStrings.fontStretch
   - typings.recharts.rechartsStrings.fontStyle
   - typings.recharts.rechartsStrings.fontVariant
-  - typings.recharts.rechartsStrings.glyphOrientationVertical
   - typings.recharts.rechartsStrings.letterSpacing
   - typings.recharts.rechartsStrings.lightingColor
   - typings.recharts.rechartsStrings.markerEnd
@@ -90,8 +89,6 @@ object PickedCSSStyleDeclarationKeys {
   inline def fontStyle: typings.recharts.rechartsStrings.fontStyle = "fontStyle".asInstanceOf[typings.recharts.rechartsStrings.fontStyle]
   
   inline def fontVariant: typings.recharts.rechartsStrings.fontVariant = "fontVariant".asInstanceOf[typings.recharts.rechartsStrings.fontVariant]
-  
-  inline def glyphOrientationVertical: typings.recharts.rechartsStrings.glyphOrientationVertical = "glyphOrientationVertical".asInstanceOf[typings.recharts.rechartsStrings.glyphOrientationVertical]
   
   inline def letterSpacing: typings.recharts.rechartsStrings.letterSpacing = "letterSpacing".asInstanceOf[typings.recharts.rechartsStrings.letterSpacing]
   

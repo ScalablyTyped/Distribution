@@ -1,7 +1,7 @@
 
 # Scala.js typings for filter-console
 
-Typings are for version 0.1.1
+Typings are for version 1.0.0
 
 ## Library description:
 Filter out unwanted `console.log()` output
@@ -11,9 +11,9 @@ Filter out unwanted `console.log()` output
 | Full name          | filter-console |
 | Keywords           | filter, console, console-log, log, logging, exclude, exclusion, devtools, pattern, patterns, test, testing, mock, electron, react, proptypes |
 | # releases         | 2 |
-| # dependents       | 5 |
-| # downloads        | 636552 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1487704.6666666667 |
+| # stars            | 235.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/filter-console#readme)

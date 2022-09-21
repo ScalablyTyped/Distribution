@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@aws-sdk/client-s3-browser", "ListPartsCommand")
 @js.native
-class ListPartsCommand protected ()
+open class ListPartsCommand protected ()
   extends typings.awsSdkClientS3Browser.listPartsCommandMod.ListPartsCommand {
   def this(input: ListPartsInput) = this()
 }

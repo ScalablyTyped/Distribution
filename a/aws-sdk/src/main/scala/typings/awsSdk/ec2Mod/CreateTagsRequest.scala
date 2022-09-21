@@ -36,10 +36,10 @@ object CreateTagsRequest {
     
     inline def setResources(value: ResourceIdList): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
     
-    inline def setResourcesVarargs(value: TaggableResourceId*): Self = StObject.set(x, "Resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: TaggableResourceId*): Self = StObject.set(x, "Resources", js.Array(value*))
     
     inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
   }
 }

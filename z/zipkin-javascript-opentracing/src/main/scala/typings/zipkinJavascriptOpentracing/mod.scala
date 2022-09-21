@@ -8,19 +8,19 @@ object mod {
   
   @JSImport("zipkin-javascript-opentracing", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with typings.zipkinJavascriptOpentracing.mod.zipkinJavascriptOpentracing {
-    def this(args: js.Any*) = this()
+    def this(args: Any*) = this()
     
     /* CompleteClass */
-    override def extract(format: js.Any, carrier: js.Any): js.Any = js.native
+    override def extract(format: Any, carrier: Any): Any = js.native
     
     /* CompleteClass */
-    override def inject(span: js.Any, format: js.Any, carrier: js.Any): Unit = js.native
+    override def inject(span: Any, format: Any, carrier: Any): Unit = js.native
     
     /* CompleteClass */
-    override def startSpan(name: js.Any, args: js.Any*): js.Any = js.native
+    override def startSpan(name: Any, args: Any*): Any = js.native
   }
   @JSImport("zipkin-javascript-opentracing", JSImport.Namespace)
   @js.native
@@ -45,7 +45,7 @@ object mod {
   inline def FORMAT_TEXT_MAP_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FORMAT_TEXT_MAP")(x.asInstanceOf[js.Any])
   
   /* static member */
-  inline def makeOptional(`val`: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("makeOptional")(`val`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def makeOptional(`val`: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("makeOptional")(`val`.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   object prototypeNamespace {
     
@@ -53,27 +53,27 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def extract(format: js.Any, carrier: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(format.asInstanceOf[js.Any], carrier.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def extract(format: Any, carrier: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(format.asInstanceOf[js.Any], carrier.asInstanceOf[js.Any])).asInstanceOf[Any]
     
-    inline def inject(span: js.Any, format: js.Any, carrier: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(span.asInstanceOf[js.Any], format.asInstanceOf[js.Any], carrier.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def inject(span: Any, format: Any, carrier: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(span.asInstanceOf[js.Any], format.asInstanceOf[js.Any], carrier.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def startSpan(name: js.Any, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("startSpan")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def startSpan(name: Any, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("startSpan")(List(name.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
   }
   
   trait zipkinJavascriptOpentracing extends StObject {
     
-    def extract(format: js.Any, carrier: js.Any): js.Any
+    def extract(format: Any, carrier: Any): Any
     
-    def inject(span: js.Any, format: js.Any, carrier: js.Any): Unit
+    def inject(span: Any, format: Any, carrier: Any): Unit
     
-    def startSpan(name: js.Any, args: js.Any*): js.Any
+    def startSpan(name: Any, args: Any*): Any
   }
   object zipkinJavascriptOpentracing {
     
     inline def apply(
-      extract: (js.Any, js.Any) => js.Any,
-      inject: (js.Any, js.Any, js.Any) => Unit,
-      startSpan: (js.Any, /* repeated */ js.Any) => js.Any
+      extract: (Any, Any) => Any,
+      inject: (Any, Any, Any) => Unit,
+      startSpan: (Any, /* repeated */ Any) => Any
     ): typings.zipkinJavascriptOpentracing.mod.zipkinJavascriptOpentracing = {
       val __obj = js.Dynamic.literal(extract = js.Any.fromFunction2(extract), inject = js.Any.fromFunction3(inject), startSpan = js.Any.fromFunction2(startSpan))
       __obj.asInstanceOf[typings.zipkinJavascriptOpentracing.mod.zipkinJavascriptOpentracing]
@@ -81,11 +81,11 @@ object mod {
     
     extension [Self <: typings.zipkinJavascriptOpentracing.mod.zipkinJavascriptOpentracing](x: Self) {
       
-      inline def setExtract(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "extract", js.Any.fromFunction2(value))
+      inline def setExtract(value: (Any, Any) => Any): Self = StObject.set(x, "extract", js.Any.fromFunction2(value))
       
-      inline def setInject(value: (js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "inject", js.Any.fromFunction3(value))
+      inline def setInject(value: (Any, Any, Any) => Unit): Self = StObject.set(x, "inject", js.Any.fromFunction3(value))
       
-      inline def setStartSpan(value: (js.Any, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "startSpan", js.Any.fromFunction2(value))
+      inline def setStartSpan(value: (Any, /* repeated */ Any) => Any): Self = StObject.set(x, "startSpan", js.Any.fromFunction2(value))
     }
   }
 }

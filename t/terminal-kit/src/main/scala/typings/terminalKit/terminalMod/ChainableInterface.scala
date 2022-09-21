@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ChainableInterface[T] extends StObject {
   
-  def apply(args: js.Any*): T = js.native
-  def apply(str: String, args: js.Any*): T = js.native
+  def apply(args: Any*): T = js.native
+  def apply(str: String, args: Any*): T = js.native
 }

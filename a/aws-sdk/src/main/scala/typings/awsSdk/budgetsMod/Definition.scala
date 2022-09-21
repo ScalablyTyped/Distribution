@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Definition extends StObject {
   
   /**
-    *  The AWS Identity and Access Management (IAM) action definition details. 
+    * The Identity and Access Management (IAM) action definition details. 
     */
   var IamActionDefinition: js.UndefOr[typings.awsSdk.budgetsMod.IamActionDefinition] = js.undefined
   
   /**
-    *  The service control policies (SCPs) action definition details. 
+    * The service control policies (SCPs) action definition details. 
     */
   var ScpActionDefinition: js.UndefOr[typings.awsSdk.budgetsMod.ScpActionDefinition] = js.undefined
   
   /**
-    *  The AWS Systems Manager (SSM) action definition details. 
+    * The Amazon Web Services Systems Manager (SSM) action definition details. 
     */
   var SsmActionDefinition: js.UndefOr[typings.awsSdk.budgetsMod.SsmActionDefinition] = js.undefined
 }

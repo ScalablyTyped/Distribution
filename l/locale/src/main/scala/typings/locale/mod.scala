@@ -13,14 +13,14 @@ object mod {
     * `locale` property to incoming HTTP requests, reflecting the most appropriate
     * locale determined using the `best` method described below.
     */
-  inline def apply(): js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit]]
-  inline def apply(supported: String): js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit] = ^.asInstanceOf[js.Dynamic].apply(supported.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit]]
-  inline def apply(supported: String, `def`: String): js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit] = (^.asInstanceOf[js.Dynamic].apply(supported.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit]]
-  inline def apply(supported: js.Array[String | Locale]): js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit] = ^.asInstanceOf[js.Dynamic].apply(supported.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit]]
-  inline def apply(supported: js.Array[String | Locale], `def`: String): js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit] = (^.asInstanceOf[js.Dynamic].apply(supported.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit]]
-  inline def apply(supported: Unit, `def`: String): js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit] = (^.asInstanceOf[js.Dynamic].apply(supported.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit]]
-  inline def apply(supported: Locales): js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit] = ^.asInstanceOf[js.Dynamic].apply(supported.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit]]
-  inline def apply(supported: Locales, `def`: String): js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit] = (^.asInstanceOf[js.Dynamic].apply(supported.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* req */ js.Object, /* res */ js.Any, /* next */ js.Function0[Unit], Unit]]
+  inline def apply(): js.Function3[/* req */ js.Object, /* res */ Any, /* next */ js.Function0[Unit], Unit] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function3[/* req */ js.Object, /* res */ Any, /* next */ js.Function0[Unit], Unit]]
+  inline def apply(supported: String): js.Function3[/* req */ js.Object, /* res */ Any, /* next */ js.Function0[Unit], Unit] = ^.asInstanceOf[js.Dynamic].apply(supported.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* req */ js.Object, /* res */ Any, /* next */ js.Function0[Unit], Unit]]
+  inline def apply(supported: String, `def`: String): js.Function3[/* req */ js.Object, /* res */ Any, /* next */ js.Function0[Unit], Unit] = (^.asInstanceOf[js.Dynamic].apply(supported.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* req */ js.Object, /* res */ Any, /* next */ js.Function0[Unit], Unit]]
+  inline def apply(supported: js.Array[String | Locale]): js.Function3[/* req */ js.Object, /* res */ Any, /* next */ js.Function0[Unit], Unit] = ^.asInstanceOf[js.Dynamic].apply(supported.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* req */ js.Object, /* res */ Any, /* next */ js.Function0[Unit], Unit]]
+  inline def apply(supported: js.Array[String | Locale], `def`: String): js.Function3[/* req */ js.Object, /* res */ Any, /* next */ js.Function0[Unit], Unit] = (^.asInstanceOf[js.Dynamic].apply(supported.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* req */ js.Object, /* res */ Any, /* next */ js.Function0[Unit], Unit]]
+  inline def apply(supported: Unit, `def`: String): js.Function3[/* req */ js.Object, /* res */ Any, /* next */ js.Function0[Unit], Unit] = (^.asInstanceOf[js.Dynamic].apply(supported.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* req */ js.Object, /* res */ Any, /* next */ js.Function0[Unit], Unit]]
+  inline def apply(supported: Locales): js.Function3[/* req */ js.Object, /* res */ Any, /* next */ js.Function0[Unit], Unit] = ^.asInstanceOf[js.Dynamic].apply(supported.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* req */ js.Object, /* res */ Any, /* next */ js.Function0[Unit], Unit]]
+  inline def apply(supported: Locales, `def`: String): js.Function3[/* req */ js.Object, /* res */ Any, /* next */ js.Function0[Unit], Unit] = (^.asInstanceOf[js.Dynamic].apply(supported.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* req */ js.Object, /* res */ Any, /* next */ js.Function0[Unit], Unit]]
   
   @JSImport("locale", JSImport.Namespace)
   @js.native
@@ -28,7 +28,7 @@ object mod {
   
   @JSImport("locale", "Locale")
   @js.native
-  class Locale protected () extends StObject {
+  open class Locale protected () extends StObject {
     /**
       * The Locale constructor takes a
       * [language tag](http://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.10)
@@ -90,7 +90,7 @@ object mod {
     * default value used as the fallback when the best language is
     * calculated. Otherwise `locale.Locale["default"]` is used as fallback.
     */
-  class Locales () extends StObject {
+  open class Locales () extends StObject {
     def this(str: String) = this()
     def this(str: js.Array[String | Locale]) = this()
     def this(str: Locale) = this()

@@ -1,7 +1,7 @@
 package typings.sshKeyDecrypt
 
-import typings.node.Buffer
-import typings.node.BufferEncoding
+import typings.node.bufferMod.global.Buffer
+import typings.node.bufferMod.global.BufferEncoding
 import typings.sshKeyDecrypt.sshKeyDecryptStrings.buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

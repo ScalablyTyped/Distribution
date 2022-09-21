@@ -640,12 +640,12 @@ trait KiiUser
     *     );
     */
   def putIdentity(identityData: identityData, password: String): js.Promise[KiiUser] = js.native
-  def putIdentity(identityData: identityData, password: String, callbacks: Unit, userFields: js.Any): js.Promise[KiiUser] = js.native
+  def putIdentity(identityData: identityData, password: String, callbacks: Unit, userFields: Any): js.Promise[KiiUser] = js.native
   def putIdentity(
     identityData: identityData,
     password: String,
     callbacks: Unit,
-    userFields: js.Any,
+    userFields: Any,
     removeFields: js.Array[String]
   ): js.Promise[KiiUser] = js.native
   def putIdentity(
@@ -656,12 +656,12 @@ trait KiiUser
     removeFields: js.Array[String]
   ): js.Promise[KiiUser] = js.native
   def putIdentity(identityData: identityData, password: String, callbacks: `32`): js.Promise[KiiUser] = js.native
-  def putIdentity(identityData: identityData, password: String, callbacks: `32`, userFields: js.Any): js.Promise[KiiUser] = js.native
+  def putIdentity(identityData: identityData, password: String, callbacks: `32`, userFields: Any): js.Promise[KiiUser] = js.native
   def putIdentity(
     identityData: identityData,
     password: String,
     callbacks: `32`,
-    userFields: js.Any,
+    userFields: Any,
     removeFields: js.Array[String]
   ): js.Promise[KiiUser] = js.native
   def putIdentity(
@@ -909,7 +909,7 @@ trait KiiUser
     *     var user = . . .; // a KiiUser
     *     user.set("score", 4298);
     */
-  def set(key: String, value: js.Any): Unit = js.native
+  def set(key: String, value: Any): Unit = js.native
   
   /**
     * Set the country code associated with this user
@@ -1010,12 +1010,12 @@ trait KiiUser
     *     );
     */
   def update(identityData: identityData): js.Promise[KiiUser] = js.native
-  def update(identityData: identityData, callbacks: Unit, userFields: js.Any): js.Promise[KiiUser] = js.native
-  def update(identityData: identityData, callbacks: Unit, userFields: js.Any, removeFields: js.Array[String]): js.Promise[KiiUser] = js.native
+  def update(identityData: identityData, callbacks: Unit, userFields: Any): js.Promise[KiiUser] = js.native
+  def update(identityData: identityData, callbacks: Unit, userFields: Any, removeFields: js.Array[String]): js.Promise[KiiUser] = js.native
   def update(identityData: identityData, callbacks: Unit, userFields: Unit, removeFields: js.Array[String]): js.Promise[KiiUser] = js.native
   def update(identityData: identityData, callbacks: `32`): js.Promise[KiiUser] = js.native
-  def update(identityData: identityData, callbacks: `32`, userFields: js.Any): js.Promise[KiiUser] = js.native
-  def update(identityData: identityData, callbacks: `32`, userFields: js.Any, removeFields: js.Array[String]): js.Promise[KiiUser] = js.native
+  def update(identityData: identityData, callbacks: `32`, userFields: Any): js.Promise[KiiUser] = js.native
+  def update(identityData: identityData, callbacks: `32`, userFields: Any, removeFields: js.Array[String]): js.Promise[KiiUser] = js.native
   def update(identityData: identityData, callbacks: `32`, userFields: Unit, removeFields: js.Array[String]): js.Promise[KiiUser] = js.native
   
   /**

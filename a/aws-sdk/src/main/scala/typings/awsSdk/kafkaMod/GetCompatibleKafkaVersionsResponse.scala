@@ -26,6 +26,6 @@ object GetCompatibleKafkaVersionsResponse {
     
     inline def setCompatibleKafkaVersionsUndefined: Self = StObject.set(x, "CompatibleKafkaVersions", js.undefined)
     
-    inline def setCompatibleKafkaVersionsVarargs(value: CompatibleKafkaVersion*): Self = StObject.set(x, "CompatibleKafkaVersions", js.Array(value :_*))
+    inline def setCompatibleKafkaVersionsVarargs(value: CompatibleKafkaVersion*): Self = StObject.set(x, "CompatibleKafkaVersions", js.Array(value*))
   }
 }

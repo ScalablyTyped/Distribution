@@ -11,12 +11,10 @@ object alertMod {
   
   @JSImport("react-bootstrap/lib/Alert", JSImport.Namespace)
   @js.native
-  class ^ ()
-    extends Component[AlertProps, js.Object, js.Any]
+  open class ^ ()
+    extends Component[AlertProps, js.Object, Any]
   
-  @js.native
-  trait Alert
-    extends Component[AlertProps, js.Object, js.Any]
+  type Alert = Component[AlertProps, js.Object, Any]
   
   trait AlertProps
     extends StObject

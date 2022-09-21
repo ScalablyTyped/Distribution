@@ -14,17 +14,17 @@ trait DBClusterBacktrack extends StObject {
   /**
     * The timestamp of the time at which the backtrack was requested.
     */
-  var BacktrackRequestCreationTime: js.UndefOr[TStamp] = js.undefined
+  var BacktrackRequestCreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The timestamp of the time to which the DB cluster was backtracked.
     */
-  var BacktrackTo: js.UndefOr[TStamp] = js.undefined
+  var BacktrackTo: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The timestamp of the time from which the DB cluster was backtracked.
     */
-  var BacktrackedFrom: js.UndefOr[TStamp] = js.undefined
+  var BacktrackedFrom: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Contains a user-supplied DB cluster identifier. This identifier is the unique key that identifies a DB cluster.
@@ -49,15 +49,15 @@ object DBClusterBacktrack {
     
     inline def setBacktrackIdentifierUndefined: Self = StObject.set(x, "BacktrackIdentifier", js.undefined)
     
-    inline def setBacktrackRequestCreationTime(value: TStamp): Self = StObject.set(x, "BacktrackRequestCreationTime", value.asInstanceOf[js.Any])
+    inline def setBacktrackRequestCreationTime(value: js.Date): Self = StObject.set(x, "BacktrackRequestCreationTime", value.asInstanceOf[js.Any])
     
     inline def setBacktrackRequestCreationTimeUndefined: Self = StObject.set(x, "BacktrackRequestCreationTime", js.undefined)
     
-    inline def setBacktrackTo(value: TStamp): Self = StObject.set(x, "BacktrackTo", value.asInstanceOf[js.Any])
+    inline def setBacktrackTo(value: js.Date): Self = StObject.set(x, "BacktrackTo", value.asInstanceOf[js.Any])
     
     inline def setBacktrackToUndefined: Self = StObject.set(x, "BacktrackTo", js.undefined)
     
-    inline def setBacktrackedFrom(value: TStamp): Self = StObject.set(x, "BacktrackedFrom", value.asInstanceOf[js.Any])
+    inline def setBacktrackedFrom(value: js.Date): Self = StObject.set(x, "BacktrackedFrom", value.asInstanceOf[js.Any])
     
     inline def setBacktrackedFromUndefined: Self = StObject.set(x, "BacktrackedFrom", js.undefined)
     

@@ -2,8 +2,7 @@ package typings.superstruct
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Error
-import typings.std.Iterable
-import typings.std.IterableIterator
+import typings.std.Generator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,78 +11,72 @@ object errorMod {
   
   @JSImport("superstruct/lib/error", "StructError")
   @js.native
-  class StructError protected ()
+  open class StructError protected ()
     extends StObject
        with Error
-       with /* key */ StringDictionary[js.Any] {
-    def this(failure: Failure, iterable: Iterable[Failure]) = this()
+       with /* x */ StringDictionary[Any] {
+    def this(failure: Failure, failures: js.Function0[Generator[Failure, Any, Any]]) = this()
     
-    var branch: js.Array[js.Any] = js.native
+    var branch: js.Array[Any] = js.native
     
-    def failures(): IterableIterator[Failure] = js.native
+    def failures(): js.Array[Failure] = js.native
     
-    var key: js.UndefOr[String | Double] = js.native
+    var key: Any = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     
-    var path: js.Array[Double | String] = js.native
+    var path: js.Array[Any] = js.native
     
     var refinement: js.UndefOr[String] = js.native
     
     var `type`: String = js.native
     
-    var value: js.Any = js.native
+    var value: Any = js.native
   }
   
   trait Failure extends StObject {
     
-    var branch: js.Array[js.Any]
+    var branch: js.Array[Any]
     
-    var key: js.UndefOr[String | Double] = js.undefined
+    var key: Any
     
     var message: String
     
-    var path: js.Array[String | Double]
+    var path: js.Array[Any]
     
     var refinement: js.UndefOr[String] = js.undefined
     
     var `type`: String
     
-    var value: js.Any
+    var value: Any
   }
   object Failure {
     
-    inline def apply(
-      branch: js.Array[js.Any],
-      message: String,
-      path: js.Array[String | Double],
-      `type`: String,
-      value: js.Any
-    ): Failure = {
-      val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    inline def apply(branch: js.Array[Any], key: Any, message: String, path: js.Array[Any], `type`: String, value: Any): Failure = {
+      val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Failure]
     }
     
     extension [Self <: Failure](x: Self) {
       
-      inline def setBranch(value: js.Array[js.Any]): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
+      inline def setBranch(value: js.Array[Any]): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
       
-      inline def setBranchVarargs(value: js.Any*): Self = StObject.set(x, "branch", js.Array(value :_*))
+      inline def setBranchVarargs(value: Any*): Self = StObject.set(x, "branch", js.Array(value*))
       
-      inline def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
-      
-      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      inline def setPath(value: js.Array[String | Double]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: js.Array[Any]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      inline def setPathVarargs(value: (String | Double)*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: Any*): Self = StObject.set(x, "path", js.Array(value*))
       
       inline def setRefinement(value: String): Self = StObject.set(x, "refinement", value.asInstanceOf[js.Any])
       
@@ -91,7 +84,7 @@ object errorMod {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

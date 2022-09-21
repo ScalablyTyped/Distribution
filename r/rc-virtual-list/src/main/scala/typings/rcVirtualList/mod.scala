@@ -1,6 +1,6 @@
 package typings.rcVirtualList
 
-import typings.rcVirtualList.anon.Children
+import typings.rcVirtualList.anon.Ref
 import typings.rcVirtualList.listMod.ListProps
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
@@ -13,5 +13,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[Item](props: Children & ListProps[Item]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def default[Item](props: ListProps[Item] & Ref): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
 }

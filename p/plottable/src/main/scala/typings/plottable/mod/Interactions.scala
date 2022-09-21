@@ -15,7 +15,7 @@ object Interactions {
   
   @JSImport("plottable", "Interactions.Click")
   @js.native
-  class Click ()
+  open class Click ()
     extends typings.plottable.interactionsMod.Click
   /* static members */
   object Click {
@@ -24,12 +24,15 @@ object Interactions {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def _pointsEqual(p1: js.Any, p2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_pointsEqual")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @JSImport("plottable", "Interactions.Click._pointsEqual")
+    @js.native
+    def _pointsEqual: Any = js.native
+    inline def _pointsEqual_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_pointsEqual")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("plottable", "Interactions.Drag")
   @js.native
-  class Drag ()
+  open class Drag ()
     extends typings.plottable.interactionsMod.Drag {
     def this(mouseButton: Double) = this()
   }
@@ -42,13 +45,13 @@ object Interactions {
     
     @JSImport("plottable", "Interactions.Drag._DEFAULT_MOUSE_FILTER")
     @js.native
-    def _DEFAULT_MOUSE_FILTER: js.Any = js.native
-    inline def _DEFAULT_MOUSE_FILTER_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_MOUSE_FILTER")(x.asInstanceOf[js.Any])
+    def _DEFAULT_MOUSE_FILTER: Any = js.native
+    inline def _DEFAULT_MOUSE_FILTER_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_MOUSE_FILTER")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("plottable", "Interactions.Key")
   @js.native
-  class Key ()
+  open class Key ()
     extends typings.plottable.interactionsMod.Key
   
   @JSImport("plottable", "Interactions.PanZoom")
@@ -61,11 +64,11 @@ object Interactions {
     * @param {TransformableScale} [xScale] The x-scale to update on panning/zooming.
     * @param {TransformableScale} [yScale] The y-scale to update on panning/zooming.
     */
-  class PanZoom ()
+  open class PanZoom ()
     extends typings.plottable.interactionsMod.PanZoom {
-    def this(xScale: TransformableScale[js.Any, Double]) = this()
-    def this(xScale: Unit, yScale: TransformableScale[js.Any, Double]) = this()
-    def this(xScale: TransformableScale[js.Any, Double], yScale: TransformableScale[js.Any, Double]) = this()
+    def this(xScale: TransformableScale[Any, Double]) = this()
+    def this(xScale: Unit, yScale: TransformableScale[Any, Double]) = this()
+    def this(xScale: TransformableScale[Any, Double], yScale: TransformableScale[Any, Double]) = this()
   }
   /* static members */
   object PanZoom {
@@ -79,17 +82,20 @@ object Interactions {
       */
     @JSImport("plottable", "Interactions.PanZoom._PIXELS_PER_LINE")
     @js.native
-    def _PIXELS_PER_LINE: js.Any = js.native
-    inline def _PIXELS_PER_LINE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_PIXELS_PER_LINE")(x.asInstanceOf[js.Any])
+    def _PIXELS_PER_LINE: Any = js.native
+    inline def _PIXELS_PER_LINE_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_PIXELS_PER_LINE")(x.asInstanceOf[js.Any])
     
-    inline def _pointDistance(point1: js.Any, point2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_pointDistance")(point1.asInstanceOf[js.Any], point2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @JSImport("plottable", "Interactions.PanZoom._pointDistance")
+    @js.native
+    def _pointDistance: Any = js.native
+    inline def _pointDistance_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_pointDistance")(x.asInstanceOf[js.Any])
     
     inline def centerPoint(point1: Point, point2: Point): X = (^.asInstanceOf[js.Dynamic].applyDynamic("centerPoint")(point1.asInstanceOf[js.Any], point2.asInstanceOf[js.Any])).asInstanceOf[X]
   }
   
   @JSImport("plottable", "Interactions.Pointer")
   @js.native
-  class Pointer ()
+  open class Pointer ()
     extends typings.plottable.interactionsMod.Pointer
   
   inline def zoomOut(value: Double, zoom: Double, center: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("zoomOut")(value.asInstanceOf[js.Any], zoom.asInstanceOf[js.Any], center.asInstanceOf[js.Any])).asInstanceOf[Double]

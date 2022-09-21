@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-NavigationToggle.html)
   */
-class NavigationToggleCls ()
+open class NavigationToggleCls ()
   extends StObject
      with typings.arcgisJsApi.esri.NavigationToggle {
   def this(properties: NavigationToggleProperties) = this()

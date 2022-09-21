@@ -10,10 +10,10 @@ truncate html text and keep tag safe
 | ------------------ | :-------------: |
 | Full name          | html-truncate |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 905144 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 133267.0 |
+| # stars            | 73.0 |
 
 ## Links
 - [Homepage](https://github.com/huang47/nodejs-html-truncate#readme)

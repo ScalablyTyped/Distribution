@@ -14,18 +14,18 @@ object contentScripts {
   trait RegisteredContentScript extends StObject {
     
     /** Unregister a content script registered programmatically */
-    def unregister(): js.Promise[js.Any]
+    def unregister(): js.Promise[Any]
   }
   object RegisteredContentScript {
     
-    inline def apply(unregister: () => js.Promise[js.Any]): RegisteredContentScript = {
+    inline def apply(unregister: () => js.Promise[Any]): RegisteredContentScript = {
       val __obj = js.Dynamic.literal(unregister = js.Any.fromFunction0(unregister))
       __obj.asInstanceOf[RegisteredContentScript]
     }
     
     extension [Self <: RegisteredContentScript](x: Self) {
       
-      inline def setUnregister(value: () => js.Promise[js.Any]): Self = StObject.set(x, "unregister", js.Any.fromFunction0(value))
+      inline def setUnregister(value: () => js.Promise[Any]): Self = StObject.set(x, "unregister", js.Any.fromFunction0(value))
     }
   }
   
@@ -78,31 +78,31 @@ object contentScripts {
       
       inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
       
-      inline def setCssVarargs(value: ExtensionFileOrCode*): Self = StObject.set(x, "css", js.Array(value :_*))
+      inline def setCssVarargs(value: ExtensionFileOrCode*): Self = StObject.set(x, "css", js.Array(value*))
       
       inline def setExcludeGlobs(value: js.Array[String]): Self = StObject.set(x, "excludeGlobs", value.asInstanceOf[js.Any])
       
       inline def setExcludeGlobsUndefined: Self = StObject.set(x, "excludeGlobs", js.undefined)
       
-      inline def setExcludeGlobsVarargs(value: String*): Self = StObject.set(x, "excludeGlobs", js.Array(value :_*))
+      inline def setExcludeGlobsVarargs(value: String*): Self = StObject.set(x, "excludeGlobs", js.Array(value*))
       
       inline def setExcludeMatches(value: js.Array[MatchPattern]): Self = StObject.set(x, "excludeMatches", value.asInstanceOf[js.Any])
       
       inline def setExcludeMatchesUndefined: Self = StObject.set(x, "excludeMatches", js.undefined)
       
-      inline def setExcludeMatchesVarargs(value: MatchPattern*): Self = StObject.set(x, "excludeMatches", js.Array(value :_*))
+      inline def setExcludeMatchesVarargs(value: MatchPattern*): Self = StObject.set(x, "excludeMatches", js.Array(value*))
       
       inline def setIncludeGlobs(value: js.Array[String]): Self = StObject.set(x, "includeGlobs", value.asInstanceOf[js.Any])
       
       inline def setIncludeGlobsUndefined: Self = StObject.set(x, "includeGlobs", js.undefined)
       
-      inline def setIncludeGlobsVarargs(value: String*): Self = StObject.set(x, "includeGlobs", js.Array(value :_*))
+      inline def setIncludeGlobsVarargs(value: String*): Self = StObject.set(x, "includeGlobs", js.Array(value*))
       
       inline def setJs_(value: js.Array[ExtensionFileOrCode]): Self = StObject.set(x, "js", value.asInstanceOf[js.Any])
       
       inline def setJs_Undefined: Self = StObject.set(x, "js", js.undefined)
       
-      inline def setJs_Varargs(value: ExtensionFileOrCode*): Self = StObject.set(x, "js", js.Array(value :_*))
+      inline def setJs_Varargs(value: ExtensionFileOrCode*): Self = StObject.set(x, "js", js.Array(value*))
       
       inline def setMatchAboutBlank(value: Boolean): Self = StObject.set(x, "matchAboutBlank", value.asInstanceOf[js.Any])
       
@@ -110,7 +110,7 @@ object contentScripts {
       
       inline def setMatches(value: js.Array[MatchPattern]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
       
-      inline def setMatchesVarargs(value: MatchPattern*): Self = StObject.set(x, "matches", js.Array(value :_*))
+      inline def setMatchesVarargs(value: MatchPattern*): Self = StObject.set(x, "matches", js.Array(value*))
       
       inline def setRunAt(value: RunAt): Self = StObject.set(x, "runAt", value.asInstanceOf[js.Any])
       

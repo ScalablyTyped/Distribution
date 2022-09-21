@@ -13,6 +13,8 @@ trait TextSymbol3DLayerMaterial
   /**
     * The color of the text.
     *
+    * @default white
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol3DLayer.html#material)
     */
   var color: js.UndefOr[Color_] = js.undefined
@@ -24,8 +26,8 @@ object TextSymbol3DLayerMaterial {
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
     set: (js.UndefOr[
-      js.Function2[/* propertyName */ String, /* value */ js.Any, TextSymbol3DLayerMaterial]
-    ]) & (js.UndefOr[js.Function1[/* props */ HashMap[js.Any], TextSymbol3DLayerMaterial]])
+      js.Function2[/* propertyName */ String, /* value */ Any, TextSymbol3DLayerMaterial]
+    ]) & (js.UndefOr[js.Function1[/* props */ HashMap[Any], TextSymbol3DLayerMaterial]])
   ): TextSymbol3DLayerMaterial = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), set = set.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextSymbol3DLayerMaterial]

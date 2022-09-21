@@ -15,7 +15,7 @@ trait FileManagerOptions extends StObject {
   
   var dataBound: js.UndefOr[js.Function1[/* e */ FileManagerEvent, Unit]] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any | FileManagerDataSource] = js.undefined
+  var dataSource: js.UndefOr[Any | FileManagerDataSource] = js.undefined
   
   var dialogs: js.UndefOr[FileManagerDialogs] = js.undefined
   
@@ -47,7 +47,7 @@ trait FileManagerOptions extends StObject {
   
   var toolbar: js.UndefOr[Boolean | FileManagerToolbar] = js.undefined
   
-  var upload: js.UndefOr[js.Any] = js.undefined
+  var upload: js.UndefOr[Any] = js.undefined
   
   var uploadUrl: js.UndefOr[String] = js.undefined
   
@@ -80,7 +80,7 @@ object FileManagerOptions {
     
     inline def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
-    inline def setDataSource(value: js.Any | FileManagerDataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: Any | FileManagerDataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
@@ -144,7 +144,7 @@ object FileManagerOptions {
     
     inline def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
     
-    inline def setUpload(value: js.Any): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
+    inline def setUpload(value: Any): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
     
     inline def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)
     

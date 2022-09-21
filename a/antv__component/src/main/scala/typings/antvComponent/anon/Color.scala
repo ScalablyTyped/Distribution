@@ -12,15 +12,15 @@ trait Color extends StObject {
   
   var capture: Boolean
   
-  var color: js.Any
+  var color: Any
   
-  var container: js.Any
+  var container: Any
   
-  var end: js.Any
+  var end: Any
   
-  var events: js.Any
+  var events: Any
   
-  var group: js.Any
+  var group: Any
   
   var id: String
   
@@ -38,9 +38,9 @@ trait Color extends StObject {
   
   var offsetY: Double
   
-  var shape: js.Array[js.Any]
+  var shape: js.Array[Any]
   
-  var start: js.Any
+  var start: Any
   
   var `type`: String
   
@@ -54,11 +54,11 @@ object Color {
     animate: Boolean,
     animateOption: Appear,
     capture: Boolean,
-    color: js.Any,
-    container: js.Any,
-    end: js.Any,
-    events: js.Any,
-    group: js.Any,
+    color: Any,
+    container: Any,
+    end: Any,
+    events: Any,
+    group: Any,
     id: String,
     isInit: Boolean,
     isRegister: Boolean,
@@ -67,8 +67,8 @@ object Color {
     name: String,
     offsetX: Double,
     offsetY: Double,
-    shape: js.Array[js.Any],
-    start: js.Any,
+    shape: js.Array[Any],
+    start: Any,
     `type`: String,
     updateAutoRender: Boolean,
     visible: Boolean
@@ -86,15 +86,15 @@ object Color {
     
     inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
-    inline def setColor(value: js.Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    inline def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    inline def setEnd(value: js.Any): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Any): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    inline def setGroup(value: js.Any): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: Any): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -112,11 +112,11 @@ object Color {
     
     inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
-    inline def setShape(value: js.Array[js.Any]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    inline def setShape(value: js.Array[Any]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
-    inline def setShapeVarargs(value: js.Any*): Self = StObject.set(x, "shape", js.Array(value :_*))
+    inline def setShapeVarargs(value: Any*): Self = StObject.set(x, "shape", js.Array(value*))
     
-    inline def setStart(value: js.Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -3,12 +3,12 @@ package typings.semanticUiReact
 import typings.react.mod.ButtonHTMLAttributes
 import typings.react.mod.Component
 import typings.react.mod.ElementType
+import typings.react.mod.FC
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.ReactNodeArray
-import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.buttonContentMod.ButtonContentProps
 import typings.semanticUiReact.buttonGroupMod.ButtonGroupProps
 import typings.semanticUiReact.buttonOrMod.ButtonOrProps
@@ -21,12 +21,15 @@ import typings.semanticUiReact.iconIconMod.IconProps
 import typings.semanticUiReact.labelLabelMod.LabelProps
 import typings.semanticUiReact.semanticUiReactStrings.`google plus`
 import typings.semanticUiReact.semanticUiReactStrings.bottom
+import typings.semanticUiReact.semanticUiReactStrings.button
 import typings.semanticUiReact.semanticUiReactStrings.facebook
 import typings.semanticUiReact.semanticUiReactStrings.fade
 import typings.semanticUiReact.semanticUiReactStrings.instagram
 import typings.semanticUiReact.semanticUiReactStrings.left
 import typings.semanticUiReact.semanticUiReactStrings.linkedin
+import typings.semanticUiReact.semanticUiReactStrings.reset
 import typings.semanticUiReact.semanticUiReactStrings.right
+import typings.semanticUiReact.semanticUiReactStrings.submit
 import typings.semanticUiReact.semanticUiReactStrings.top
 import typings.semanticUiReact.semanticUiReactStrings.twitter
 import typings.semanticUiReact.semanticUiReactStrings.vertical
@@ -41,28 +44,28 @@ object buttonButtonMod {
   
   @JSImport("semantic-ui-react/dist/commonjs/elements/Button/Button", JSImport.Default)
   @js.native
-  class default () extends Button
+  open class default () extends Button
   object default {
     
     /* was `typeof ButtonContent` */
     @JSImport("semantic-ui-react/dist/commonjs/elements/Button/Button", "default.Content")
     @js.native
-    val Content: StatelessComponent[ButtonContentProps] = js.native
+    val Content: FC[ButtonContentProps] = js.native
     
     /* was `typeof ButtonGroup` */
     @JSImport("semantic-ui-react/dist/commonjs/elements/Button/Button", "default.Group")
     @js.native
-    val Group: StatelessComponent[ButtonGroupProps] = js.native
+    val Group: FC[ButtonGroupProps] = js.native
     
     /* was `typeof ButtonOr` */
     @JSImport("semantic-ui-react/dist/commonjs/elements/Button/Button", "default.Or")
     @js.native
-    val Or: StatelessComponent[ButtonOrProps] = js.native
+    val Or: FC[ButtonOrProps] = js.native
   }
   
   @js.native
   trait Button
-    extends Component[ButtonProps, js.Object, js.Any] {
+    extends Component[ButtonProps, js.Object, Any] {
     
     def focus(): Unit = js.native
   }
@@ -80,7 +83,7 @@ object buttonButtonMod {
     var animated: js.UndefOr[Boolean | fade | vertical] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.undefined
+    var as: js.UndefOr[Any] = js.undefined
     
     /** A button can be attached to other content. */
     var attached: js.UndefOr[Boolean | left | right | top | bottom] = js.undefined
@@ -147,6 +150,10 @@ object buttonButtonMod {
     /** A button can be formatted to show different levels of emphasis. */
     var primary: js.UndefOr[Boolean] = js.undefined
     
+    /** The role of the HTML element. */
+    @JSName("role")
+    var role_StrictButtonProps: js.UndefOr[String] = js.undefined
+    
     /** A button can be formatted to show different levels of emphasis. */
     var secondary: js.UndefOr[Boolean] = js.undefined
     
@@ -159,6 +166,10 @@ object buttonButtonMod {
     
     /** A button can be formatted to toggle on and off. */
     var toggle: js.UndefOr[Boolean] = js.undefined
+    
+    /** The type of the HTML element. */
+    @JSName("type")
+    var type_StrictButtonProps: js.UndefOr[submit | reset | button] = js.undefined
   }
   object StrictButtonProps {
     
@@ -177,7 +188,7 @@ object buttonButtonMod {
       
       inline def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
       
-      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
@@ -259,6 +270,10 @@ object buttonButtonMod {
       
       inline def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
       
+      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+      
       inline def setSecondary(value: Boolean): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
       
       inline def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
@@ -274,6 +289,10 @@ object buttonButtonMod {
       inline def setToggle(value: Boolean): Self = StObject.set(x, "toggle", value.asInstanceOf[js.Any])
       
       inline def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
+      
+      inline def setType(value: submit | reset | button): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

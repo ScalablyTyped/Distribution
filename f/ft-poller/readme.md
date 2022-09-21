@@ -10,10 +10,10 @@ An http client to periodically fetch and cache data from web services
 | ------------------ | :-------------: |
 | Full name          | ft-poller |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 51822 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 6584.333333333333 |
+| # stars            | 11.0 |
 
 ## Links
 - [Homepage](https://github.com/Financial-Times/ft-poller#readme)

@@ -11,11 +11,11 @@ object inputMod {
   
   @JSImport("muicss/lib/react/input", JSImport.Default)
   @js.native
-  class default () extends Input
+  open class default () extends Input
   
   @js.native
   trait Input
-    extends Component[InputProps, js.Object, js.Any] {
+    extends Component[InputProps, js.Object, Any] {
     
     var controlEl: js.UndefOr[HTMLInputElement] = js.native
   }

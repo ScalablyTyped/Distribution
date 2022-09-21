@@ -8,25 +8,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait VideoRecorder extends StObject {
   
-  /* private */ var _canvas: js.Any = js.native
+  /* private */ var _canvas: Any = js.native
   
-  /* private */ var _fileName: js.Any = js.native
+  /* private */ var _fileName: Any = js.native
   
-  /* private */ var _handleDataAvailable: js.Any = js.native
+  /* private */ var _handleDataAvailable: Any = js.native
   
-  /* private */ var _handleError: js.Any = js.native
+  /* private */ var _handleError: Any = js.native
   
-  /* private */ var _handleStop: js.Any = js.native
+  /* private */ var _handleStop: Any = js.native
   
-  /* private */ var _mediaRecorder: js.Any = js.native
+  /* private */ var _mediaRecorder: Any = js.native
   
-  /* private */ val _options: js.Any = js.native
+  /* private */ val _options: Any = js.native
   
-  /* private */ var _recordedChunks: js.Any = js.native
+  /* private */ var _recordedChunks: Any = js.native
   
-  /* private */ var _reject: js.Any = js.native
+  /* private */ var _reject: Any = js.native
   
-  /* private */ var _resolve: js.Any = js.native
+  /* private */ var _resolve: Any = js.native
   
   /**
     * Releases internal resources used during the recording.
@@ -44,7 +44,7 @@ trait VideoRecorder extends StObject {
     * If null no automatic download will start and you can rely on the promise to get the data back.
     * @param maxDuration Defines the maximum recording time in seconds.
     * It defaults to 7 seconds. A value of zero will not stop automatically, you would need to call stopRecording manually.
-    * @return A promise callback at the end of the recording with the video data in Blob.
+    * @returns A promise callback at the end of the recording with the video data in Blob.
     */
   def startRecording(): js.Promise[Blob] = js.native
   def startRecording(fileName: Unit, maxDuration: Double): js.Promise[Blob] = js.native

@@ -29,7 +29,7 @@ object PutPartnerEventsResponse {
     
     inline def setEntriesUndefined: Self = StObject.set(x, "Entries", js.undefined)
     
-    inline def setEntriesVarargs(value: PutPartnerEventsResultEntry*): Self = StObject.set(x, "Entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: PutPartnerEventsResultEntry*): Self = StObject.set(x, "Entries", js.Array(value*))
     
     inline def setFailedEntryCount(value: Integer): Self = StObject.set(x, "FailedEntryCount", value.asInstanceOf[js.Any])
     

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("MailMergeSettings")
 @js.native
-class MailMergeSettings ()
+open class MailMergeSettings ()
   extends StObject
      with typings.devexpressWeb.MailMergeSettings {
   

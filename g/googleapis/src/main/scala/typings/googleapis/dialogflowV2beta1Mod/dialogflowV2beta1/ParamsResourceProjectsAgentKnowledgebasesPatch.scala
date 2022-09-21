@@ -1,9 +1,5 @@
 package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 
-import typings.googleAuthLibrary.mod.Compute
-import typings.googleAuthLibrary.mod.JWT
-import typings.googleAuthLibrary.mod.OAuth2Client
-import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,14 +9,7 @@ trait ParamsResourceProjectsAgentKnowledgebasesPatch
      with StandardParameters {
   
   /**
-    * Auth client or API Key for the request
-    */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
-  
-  /**
-    * The knowledge base resource name. The name must be empty when creating a
-    * knowledge base. Format: `projects/<Project ID>/knowledgeBases/<Knowledge
-    * Base ID>`.
+    * The knowledge base resource name. The name must be empty when creating a knowledge base. Format: `projects//locations//knowledgeBases/`.
     */
   var name: js.UndefOr[String] = js.undefined
   
@@ -30,9 +19,7 @@ trait ParamsResourceProjectsAgentKnowledgebasesPatch
   var requestBody: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1KnowledgeBase] = js.undefined
   
   /**
-    * Optional. Not specified means `update all`. Currently, only
-    * `display_name` can be updated, an InvalidArgument will be returned for
-    * attempting to update other fields.
+    * Optional. Not specified means `update all`. Currently, only `display_name` can be updated, an InvalidArgument will be returned for attempting to update other fields.
     */
   var updateMask: js.UndefOr[String] = js.undefined
 }
@@ -44,10 +31,6 @@ object ParamsResourceProjectsAgentKnowledgebasesPatch {
   }
   
   extension [Self <: ParamsResourceProjectsAgentKnowledgebasesPatch](x: Self) {
-    
-    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-    
-    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

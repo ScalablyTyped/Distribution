@@ -20,7 +20,7 @@ trait StaticFilesHandler extends StObject {
   var httpHeaders: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientAppengine.maximMazurokGapiClientAppengineStrings.StaticFilesHandler & TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientAppengine.maximMazurokGapiClientAppengineStrings.StaticFilesHandler & TopLevel[Any]
   ] = js.undefined
   
   /** MIME type used to serve all files served by this handler.Defaults to file-specific MIME types, which are derived from each file's filename extension. */
@@ -55,7 +55,7 @@ object StaticFilesHandler {
     inline def setHttpHeaders(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientAppengine.maximMazurokGapiClientAppengineStrings.StaticFilesHandler & TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientAppengine.maximMazurokGapiClientAppengineStrings.StaticFilesHandler & TopLevel[Any]
     ): Self = StObject.set(x, "httpHeaders", value.asInstanceOf[js.Any])
     
     inline def setHttpHeadersUndefined: Self = StObject.set(x, "httpHeaders", js.undefined)

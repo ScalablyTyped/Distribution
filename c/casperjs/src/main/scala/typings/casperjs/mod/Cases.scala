@@ -21,7 +21,7 @@ object Cases {
     
     inline def setCases(value: js.Array[Case]): Self = StObject.set(x, "cases", value.asInstanceOf[js.Any])
     
-    inline def setCasesVarargs(value: Case*): Self = StObject.set(x, "cases", js.Array(value :_*))
+    inline def setCasesVarargs(value: Case*): Self = StObject.set(x, "cases", js.Array(value*))
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
   }

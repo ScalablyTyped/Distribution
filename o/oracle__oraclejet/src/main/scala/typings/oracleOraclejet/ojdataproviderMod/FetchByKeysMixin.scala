@@ -11,5 +11,5 @@ object FetchByKeysMixin {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def applyMixin(derivedCtor: Instantiable): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("applyMixin")(derivedCtor.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def applyMixin(derivedCtor: Instantiable): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("applyMixin")(derivedCtor.asInstanceOf[js.Any]).asInstanceOf[Any]
 }

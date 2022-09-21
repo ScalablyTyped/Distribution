@@ -16,12 +16,21 @@ trait OnsCarouselElement
   extends StObject
      with HTMLElement {
   
+  var activeIndex: Double = js.native
+  
   /* InferMemberOverrides */
-  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+  override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+  override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+  
+  var animationOptions: js.Object = js.native
+  
+  /**
+    * @description When this property is set the carousel will automatically refresh when the number of child nodes change.
+    **/
+  var autoRefresh: Boolean = js.native
   
   /**
     * @description true if auto scroll is enabled.
@@ -48,6 +57,11 @@ trait OnsCarouselElement
     * @Resolves to the carousel element
     */
   def first(): js.Promise[HTMLElement] = js.native
+  
+  /**
+    * @description If this property is set the carousel will cover the whole screen.
+    **/
+  var fullscreen: Boolean = js.native
   
   /**
     * @description Returns the index of the currently visible `<ons-carousel-item>`.

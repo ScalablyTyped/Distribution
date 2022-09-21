@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.MenuItem")
 @js.native
-/* private */ class MenuItem ()
+/* private */ open class MenuItem ()
   extends StObject
      with typings.activexExcel.Excel.MenuItem {
   
@@ -46,7 +46,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var OnAction: String = js.native
   
   /* CompleteClass */
-  override val Parent: js.Any = js.native
+  override val Parent: Any = js.native
   
   /* CompleteClass */
   var StatusBar: String = js.native

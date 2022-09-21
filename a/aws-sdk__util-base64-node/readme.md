@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__util-base64-node
 
-Typings are for version 1.0.0-rc.3
+Typings are for version 3.170.0
 
 ## Library description:
 A Node.JS Base64 <-> UInt8Array converter
@@ -10,10 +10,10 @@ A Node.JS Base64 <-> UInt8Array converter
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/util-base64-node |
 | Keywords           | - |
-| # releases         | 26 |
-| # dependents       | 248 |
-| # downloads        | 7035267 |
-| # stars            | 0 |
+| # releases         | 33 |
+| # dependents       | 0.0 |
+| # downloads        | 1.3691006333333334E7 |
+| # stars            | 1851.0 |
 
 ## Links
 - [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/util-base64-node)

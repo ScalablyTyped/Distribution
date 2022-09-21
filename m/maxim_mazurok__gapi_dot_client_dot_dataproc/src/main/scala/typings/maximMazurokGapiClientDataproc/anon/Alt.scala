@@ -29,7 +29,7 @@ trait Alt extends StObject {
   var oauth_token: js.UndefOr[String] = js.undefined
   
   /**
-    * Required. The resource name of the region or location, as described in https://cloud.google.com/apis/design/resource_names. For projects.regions.workflowTemplates,create, the
+    * Required. The resource name of the region or location, as described in https://cloud.google.com/apis/design/resource_names. For projects.regions.workflowTemplates.create, the
     * resource name of the region has the following format: projects/{project_id}/regions/{region} For projects.locations.workflowTemplates.create, the resource name of the location
     * has the following format: projects/{project_id}/locations/{location}
     */

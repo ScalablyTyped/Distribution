@@ -3,7 +3,6 @@ package typings.oracleOraclejet
 import typings.oracleOraclejet.anon.Description
 import typings.oracleOraclejet.anon.DescriptionId
 import typings.std.Element
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ object ojcontextMod {
   
   @JSImport("@oracle/oraclejet/ojcontext", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with Context {
     
@@ -30,7 +29,7 @@ object ojcontextMod {
   inline def getPageContext(): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("getPageContext")().asInstanceOf[Context]
   
   /* static member */
-  inline def setBusyContextDefaultTimeout(timeout: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("setBusyContextDefaultTimeout")(timeout.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def setBusyContextDefaultTimeout(timeout: Double): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("setBusyContextDefaultTimeout")(timeout.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @js.native
   trait BusyContext extends StObject {
@@ -48,8 +47,8 @@ object ojcontextMod {
     
     def isReady(): Boolean = js.native
     
-    def whenReady(): js.Promise[Boolean | Error] = js.native
-    def whenReady(timeout: Double): js.Promise[Boolean | Error] = js.native
+    def whenReady(): js.Promise[Boolean | js.Error] = js.native
+    def whenReady(timeout: Double): js.Promise[Boolean | js.Error] = js.native
   }
   
   trait Context extends StObject {

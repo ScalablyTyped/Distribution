@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Infragistics.RemoteDataSource")
 @js.native
-class RemoteDataSource protected ()
+open class RemoteDataSource protected ()
   extends StObject
      with typings.igniteUi.Infragistics.RemoteDataSource {
   def this(settings: DataSourceSettings) = this()

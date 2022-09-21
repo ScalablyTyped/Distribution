@@ -28,7 +28,7 @@ object XEnhancedMouseClickHandler {
     disposing: EventObject => Unit,
     mousePressed: EnhancedMouseEvent => Boolean,
     mouseReleased: EnhancedMouseEvent => Boolean,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit
   ): XEnhancedMouseClickHandler = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), disposing = js.Any.fromFunction1(disposing), mousePressed = js.Any.fromFunction1(mousePressed), mouseReleased = js.Any.fromFunction1(mouseReleased), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release))

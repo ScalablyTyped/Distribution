@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("easy-rbac", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with RBAC {
     def this(opts: Options) = this()

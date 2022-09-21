@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EventTypeFilter extends StObject {
   
   /**
-    * A list of event type category codes (issue, scheduledChange, or accountNotification).
+    * A list of event type category codes. Possible values are issue, accountNotification, or scheduledChange. Currently, the investigation value isn't supported at this time.
     */
   var eventTypeCategories: js.UndefOr[EventTypeCategoryList_] = js.undefined
   
@@ -17,7 +17,7 @@ trait EventTypeFilter extends StObject {
   var eventTypeCodes: js.UndefOr[EventTypeCodeList] = js.undefined
   
   /**
-    * The AWS services associated with the event. For example, EC2, RDS.
+    * The Amazon Web Services services associated with the event. For example, EC2, RDS.
     */
   var services: js.UndefOr[serviceList] = js.undefined
 }
@@ -34,18 +34,18 @@ object EventTypeFilter {
     
     inline def setEventTypeCategoriesUndefined: Self = StObject.set(x, "eventTypeCategories", js.undefined)
     
-    inline def setEventTypeCategoriesVarargs(value: eventTypeCategory*): Self = StObject.set(x, "eventTypeCategories", js.Array(value :_*))
+    inline def setEventTypeCategoriesVarargs(value: eventTypeCategory*): Self = StObject.set(x, "eventTypeCategories", js.Array(value*))
     
     inline def setEventTypeCodes(value: EventTypeCodeList): Self = StObject.set(x, "eventTypeCodes", value.asInstanceOf[js.Any])
     
     inline def setEventTypeCodesUndefined: Self = StObject.set(x, "eventTypeCodes", js.undefined)
     
-    inline def setEventTypeCodesVarargs(value: eventTypeCode*): Self = StObject.set(x, "eventTypeCodes", js.Array(value :_*))
+    inline def setEventTypeCodesVarargs(value: eventTypeCode*): Self = StObject.set(x, "eventTypeCodes", js.Array(value*))
     
     inline def setServices(value: serviceList): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     
     inline def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
     
-    inline def setServicesVarargs(value: service*): Self = StObject.set(x, "services", js.Array(value :_*))
+    inline def setServicesVarargs(value: service*): Self = StObject.set(x, "services", js.Array(value*))
   }
 }

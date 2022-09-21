@@ -38,7 +38,7 @@ trait ASPxClientTokenBox
     * Returns an HTML span element that corresponds to the specified token. An object that is the HTML span element that corresponds to the specified token.
     * @param index An integer value that is the token index.
     */
-  def GetTokenHtmlElement(index: Double): js.Any = js.native
+  def GetTokenHtmlElement(index: Double): Any = js.native
   
   /**
     * Returns the index of a token specified by its text. An integer value that is the token index
@@ -50,13 +50,13 @@ trait ASPxClientTokenBox
     * Returns an HTML span element that corresponds to the specified token's remove button. An object that is the HTML span element that corresponds to the specified token's remove button.
     * @param index An integer value that is the token index.
     */
-  def GetTokenRemoveButtonHtmlElement(index: Double): js.Any = js.native
+  def GetTokenRemoveButtonHtmlElement(index: Double): Any = js.native
   
   /**
     * Returns an HTML span element that corresponds to the specified token's text. An object that is the HTML span element that corresponds to the specified token's text.
     * @param index An integer value that is the token index.
     */
-  def GetTokenTextHtmlElement(index: Double): js.Any = js.native
+  def GetTokenTextHtmlElement(index: Double): Any = js.native
   
   /**
     * Returns a value that indicates if the specified token (string) is a custom token. true, if the token is not contained in the predefined ASPxAutoCompleteBoxBase.Items collection; otherwise, false.
@@ -90,7 +90,7 @@ trait ASPxClientTokenBox
   def SetValue(value: String): Unit = js.native
   
   /**
-    * Fires on the client side after the token collection has been changed.
+    * Occurs on the client after a user changes the token collection.
     */
   var TokensChanged: ASPxClientEvent[ASPxClientEventHandler[ASPxClientTokenBox]] = js.native
 }

@@ -24,6 +24,6 @@ object mod {
   
   object slugify {
     
-    type ExtendArgs = StringDictionary[js.Any]
+    type ExtendArgs = StringDictionary[Any]
   }
 }

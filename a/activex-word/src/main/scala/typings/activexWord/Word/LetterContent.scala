@@ -38,7 +38,7 @@ trait LetterContent extends StObject {
   
   var PageDesign: String
   
-  val Parent: js.Any
+  val Parent: Any
   
   var RecipientAddress: String
   
@@ -98,7 +98,7 @@ object LetterContent {
     LetterheadSize: Double,
     MailingInstructions: String,
     PageDesign: String,
-    Parent: js.Any,
+    Parent: Any,
     RecipientAddress: String,
     RecipientCode: String,
     RecipientGender: WdSalutationGender,
@@ -158,7 +158,7 @@ object LetterContent {
     
     inline def setPageDesign(value: String): Self = StObject.set(x, "PageDesign", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRecipientAddress(value: String): Self = StObject.set(x, "RecipientAddress", value.asInstanceOf[js.Any])
     

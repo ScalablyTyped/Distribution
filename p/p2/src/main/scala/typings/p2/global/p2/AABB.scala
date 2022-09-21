@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("p2.AABB")
 @js.native
-class AABB ()
+open class AABB ()
   extends typings.p2.mod.AABB {
   def this(options: AABBOptions) = this()
 }

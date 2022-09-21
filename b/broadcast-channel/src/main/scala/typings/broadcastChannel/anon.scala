@@ -37,20 +37,31 @@ object anon {
     }
   }
   
-  trait Ttl extends StObject {
+  trait MaxParallelWrites extends StObject {
+    
+    /**
+      * Opening too many write files will throw an error.
+      * So we ensure we throttle to have a max limit on writes.
+      * @link https://stackoverflow.com/questions/8965606/node-and-error-emfile-too-many-open-files
+      */
+    var maxParallelWrites: js.UndefOr[Double] = js.undefined
     
     var ttl: js.UndefOr[Double] = js.undefined
     
     var useFastPath: js.UndefOr[Boolean] = js.undefined
   }
-  object Ttl {
+  object MaxParallelWrites {
     
-    inline def apply(): Ttl = {
+    inline def apply(): MaxParallelWrites = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Ttl]
+      __obj.asInstanceOf[MaxParallelWrites]
     }
     
-    extension [Self <: Ttl](x: Self) {
+    extension [Self <: MaxParallelWrites](x: Self) {
+      
+      inline def setMaxParallelWrites(value: Double): Self = StObject.set(x, "maxParallelWrites", value.asInstanceOf[js.Any])
+      
+      inline def setMaxParallelWritesUndefined: Self = StObject.set(x, "maxParallelWrites", js.undefined)
       
       inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
       

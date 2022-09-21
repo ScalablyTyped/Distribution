@@ -36,7 +36,7 @@ object XDragGestureRecognizer {
   inline def apply(
     acquire: () => Unit,
     addDragGestureListener: XDragGestureListener => Unit,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeDragGestureListener: XDragGestureListener => Unit,
     resetRecognizer: () => Unit

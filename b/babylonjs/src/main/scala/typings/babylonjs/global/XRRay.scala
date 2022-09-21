@@ -2,7 +2,6 @@ package typings.babylonjs.global
 
 import typings.std.DOMPointInit
 import typings.std.DOMPointReadOnly
-import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Experimental/Draft features
 @JSGlobal("XRRay")
 @js.native
-class XRRay protected ()
+open class XRRay protected ()
   extends StObject
      with typings.babylonjs.XRRay {
   def this(transformOrOrigin: typings.babylonjs.XRRigidTransform) = this()
@@ -22,7 +21,7 @@ class XRRay protected ()
   var direction: DOMPointReadOnly = js.native
   
   /* CompleteClass */
-  var matrix: Float32Array = js.native
+  var matrix: js.typedarray.Float32Array = js.native
   
   /* CompleteClass */
   var origin: DOMPointReadOnly = js.native

@@ -2,6 +2,7 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.vscodeLanguageserverProtocol.anon.Name
+import typings.vscodeLanguageserverTypes.mod.LSPAny
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ trait InitializeResult[T]
      with /**
   * Custom initialization results.
   */
-/* custom */ StringDictionary[js.Any] {
+/* custom */ StringDictionary[js.UndefOr[LSPAny | ServerCapabilities[T]]] {
   
   /**
     * The capabilities the language server provides.

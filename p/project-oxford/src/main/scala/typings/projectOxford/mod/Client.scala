@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("project-oxford", "Client")
 @js.native
-class Client protected () extends StObject {
+open class Client protected () extends StObject {
   def this(apiKey: String) = this()
   
   /* private */ var _key: String = js.native

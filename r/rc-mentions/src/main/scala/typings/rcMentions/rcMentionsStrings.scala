@@ -9,10 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object rcMentionsStrings {
   
   @js.native
-  sealed trait OmitFunc extends StObject
-  inline def OmitFunc: OmitFunc = "OmitFunc".asInstanceOf[OmitFunc]
-  
-  @js.native
   sealed trait additions extends StObject
   inline def additions: additions = "additions".asInstanceOf[additions]
   

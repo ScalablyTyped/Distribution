@@ -12,7 +12,7 @@ trait GetOrganizationConformancePackDetailedStatusRequest extends StObject {
   var Filters: js.UndefOr[OrganizationResourceDetailedStatusFilters] = js.undefined
   
   /**
-    * The maximum number of OrganizationConformancePackDetailedStatuses returned on each page. If you do not specify a number, AWS Config uses the default. The default is 100. 
+    * The maximum number of OrganizationConformancePackDetailedStatuses returned on each page. If you do not specify a number, Config uses the default. The default is 100. 
     */
   var Limit: js.UndefOr[CosmosPageLimit] = js.undefined
   

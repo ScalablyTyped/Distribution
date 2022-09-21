@@ -8,21 +8,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object objectUnsubscribedErrorMod {
   
-  @JSImport("rxjs/internal/util/ObjectUnsubscribedError", "ObjectUnsubscribedError")
+  @JSImport("rxjs/dist/types/internal/util/ObjectUnsubscribedError", "ObjectUnsubscribedError")
   @js.native
   val ObjectUnsubscribedError: ObjectUnsubscribedErrorCtor = js.native
-  type ObjectUnsubscribedError = Error
+  type ObjectUnsubscribedError = js.Error
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-  @JSImport("rxjs/internal/util/ObjectUnsubscribedError", "ObjectUnsubscribedError")
+  @JSImport("rxjs/dist/types/internal/util/ObjectUnsubscribedError", "ObjectUnsubscribedError")
   @js.native
-  class ObjectUnsubscribedErrorCls ()
+  /**
+    * @deprecated Internal implementation detail. Do not construct error instances.
+    * Cannot be tagged as internal: https://github.com/ReactiveX/rxjs/issues/6269
+    */
+  open class ObjectUnsubscribedErrorCls ()
     extends StObject
        with Error {
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
   }
@@ -30,5 +36,9 @@ object objectUnsubscribedErrorMod {
   @js.native
   trait ObjectUnsubscribedErrorCtor
     extends StObject
-       with Instantiable0[typings.rxjs.objectUnsubscribedErrorMod.ObjectUnsubscribedError]
+       with /**
+    * @deprecated Internal implementation detail. Do not construct error instances.
+    * Cannot be tagged as internal: https://github.com/ReactiveX/rxjs/issues/6269
+    */
+  Instantiable0[js.Error]
 }

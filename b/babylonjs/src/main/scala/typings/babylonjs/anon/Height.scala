@@ -8,8 +8,6 @@ trait Height extends StObject {
   
   var height: Double
   
-  var layers: js.UndefOr[Double] = js.undefined
-  
   var width: Double
 }
 object Height {
@@ -22,10 +20,6 @@ object Height {
   extension [Self <: Height](x: Self) {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
-    
-    inline def setLayers(value: Double): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
-    
-    inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }

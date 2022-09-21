@@ -13,7 +13,7 @@ object eventMod {
   
   @JSImport("ol/events/Event", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends StObject
        with BaseEvent {
     def this(`type`: String) = this()
@@ -34,7 +34,7 @@ object eventMod {
       * The event target.
       */
     /* CompleteClass */
-    var target: js.Any = js.native
+    var target: Any = js.native
     
     /**
       * The event type.
@@ -64,7 +64,7 @@ object eventMod {
     /**
       * The event target.
       */
-    var target: js.Any
+    var target: Any
     
     /**
       * The event type.
@@ -73,7 +73,7 @@ object eventMod {
   }
   object BaseEvent {
     
-    inline def apply(preventDefault: () => Unit, stopPropagation: () => Unit, target: js.Any, `type`: String): BaseEvent = {
+    inline def apply(preventDefault: () => Unit, stopPropagation: () => Unit, target: Any, `type`: String): BaseEvent = {
       val __obj = js.Dynamic.literal(preventDefault = js.Any.fromFunction0(preventDefault), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseEvent]
@@ -85,7 +85,7 @@ object eventMod {
       
       inline def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

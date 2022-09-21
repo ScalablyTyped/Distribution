@@ -15,6 +15,11 @@ trait DescribeProjectsRequest extends StObject {
     * If the previous response was incomplete (because there is more results to retrieve), Amazon Rekognition Custom Labels returns a pagination token in the response. You can use this pagination token to retrieve the next set of results. 
     */
   var NextToken: js.UndefOr[ExtendedPaginationToken] = js.undefined
+  
+  /**
+    * A list of the projects that you want Amazon Rekognition Custom Labels to describe. If you don't specify a value, the response includes descriptions for all the projects in your AWS account.
+    */
+  var ProjectNames: js.UndefOr[typings.awsSdk.rekognitionMod.ProjectNames] = js.undefined
 }
 object DescribeProjectsRequest {
   
@@ -32,5 +37,11 @@ object DescribeProjectsRequest {
     inline def setNextToken(value: ExtendedPaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    
+    inline def setProjectNames(value: ProjectNames): Self = StObject.set(x, "ProjectNames", value.asInstanceOf[js.Any])
+    
+    inline def setProjectNamesUndefined: Self = StObject.set(x, "ProjectNames", js.undefined)
+    
+    inline def setProjectNamesVarargs(value: ProjectName*): Self = StObject.set(x, "ProjectNames", js.Array(value*))
   }
 }

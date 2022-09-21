@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Sdk.RelatedEntitiesCollection")
 @js.native
-class RelatedEntitiesCollection () extends StObject
+open class RelatedEntitiesCollection () extends StObject

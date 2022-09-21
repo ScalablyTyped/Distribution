@@ -376,26 +376,12 @@ trait CanvasContext extends StObject {
   y1: Double
   ): CanvasGradient = js.native
   
-  @JSName("createPattern")
-  def createPattern_norepeat(
-    /** 重复的图像源，支持代码包路径和本地临时路径 (本地路径) */
-  image: String,
-    /** 如何重复图像
-    *
-    * 参数 repetition 可选值：
-    * - 'repeat': 水平竖直方向都重复;
-    * - 'repeat-x': 水平方向重复;
-    * - 'repeat-y': 竖直方向重复;
-    * - 'no-repeat': 不重复; */
-  repetition: `no-repeat`
-  ): Unit = js.native
   /** [CanvasContext.createPattern(string image, string repetition)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.createPattern.html)
     *
     * 对指定的图像创建模式的方法，可在指定的方向上重复元图像
     *
     * 最低基础库： `1.9.90` */
-  @JSName("createPattern")
-  def createPattern_repeat(
+  def createPattern(
     /** 重复的图像源，支持代码包路径和本地临时路径 (本地路径) */
   image: String,
     /** 如何重复图像
@@ -405,33 +391,7 @@ trait CanvasContext extends StObject {
     * - 'repeat-x': 水平方向重复;
     * - 'repeat-y': 竖直方向重复;
     * - 'no-repeat': 不重复; */
-  repetition: repeat
-  ): Unit = js.native
-  @JSName("createPattern")
-  def createPattern_repeatx(
-    /** 重复的图像源，支持代码包路径和本地临时路径 (本地路径) */
-  image: String,
-    /** 如何重复图像
-    *
-    * 参数 repetition 可选值：
-    * - 'repeat': 水平竖直方向都重复;
-    * - 'repeat-x': 水平方向重复;
-    * - 'repeat-y': 竖直方向重复;
-    * - 'no-repeat': 不重复; */
-  repetition: `repeat-x`
-  ): Unit = js.native
-  @JSName("createPattern")
-  def createPattern_repeaty(
-    /** 重复的图像源，支持代码包路径和本地临时路径 (本地路径) */
-  image: String,
-    /** 如何重复图像
-    *
-    * 参数 repetition 可选值：
-    * - 'repeat': 水平竖直方向都重复;
-    * - 'repeat-x': 水平方向重复;
-    * - 'repeat-y': 竖直方向重复;
-    * - 'no-repeat': 不重复; */
-  repetition: `repeat-y`
+  repetition: repeat | `repeat-x` | `repeat-y` | `no-repeat`
   ): Unit = js.native
   
   /** [CanvasContext.draw(boolean reserve, function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.draw.html)
@@ -476,13 +436,13 @@ trait CanvasContext extends StObject {
     /** 本次绘制是否接着上一次绘制。即 reserve 参数为 false，则在本次调用绘制之前 native 层会先清空画布再继续绘制；若 reserve 参数为 true，则保留当前画布上的内容，本次调用 drawCanvas 绘制的内容覆盖在上面，默认 false。 */
   reserve: Boolean,
     /** 绘制完成后执行的回调函数 */
-  callback: js.Function1[/* repeated */ js.Any, js.Any]
+  callback: js.Function1[/* repeated */ Any, Any]
   ): Unit = js.native
   def draw(
     /** 本次绘制是否接着上一次绘制。即 reserve 参数为 false，则在本次调用绘制之前 native 层会先清空画布再继续绘制；若 reserve 参数为 true，则保留当前画布上的内容，本次调用 drawCanvas 绘制的内容覆盖在上面，默认 false。 */
   reserve: Unit,
     /** 绘制完成后执行的回调函数 */
-  callback: js.Function1[/* repeated */ js.Any, js.Any]
+  callback: js.Function1[/* repeated */ Any, Any]
   ): Unit = js.native
   
   /** [CanvasContext.drawImage(string imageResource, number sx, number sy, number sWidth, number sHeight, number dx, number dy, number dWidth, number dHeight)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.drawImage.html)
@@ -1075,35 +1035,14 @@ trait CanvasContext extends StObject {
   * ![](@program/dev/image/canvas/line-cap.png)
   * @deprecated 基础库版本 [1.9.90](https://developers.weixin.qq.com/miniprogram/dev/framework/compatibility.html) 起已废弃，请使用 [CanvasContext.lineCap](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.html) 替换
   *  */
-  @JSName("setLineCap")
-  def setLineCap_butt(
+  def setLineCap(
     /** 线条的结束端点样式
     *
     * 参数 lineCap 可选值：
     * - 'butt': 向线条的每个末端添加平直的边缘。;
     * - 'round': 向线条的每个末端添加圆形线帽。;
     * - 'square': 向线条的每个末端添加正方形线帽。; */
-  lineCap: butt
-  ): Unit = js.native
-  @JSName("setLineCap")
-  def setLineCap_round(
-    /** 线条的结束端点样式
-    *
-    * 参数 lineCap 可选值：
-    * - 'butt': 向线条的每个末端添加平直的边缘。;
-    * - 'round': 向线条的每个末端添加圆形线帽。;
-    * - 'square': 向线条的每个末端添加正方形线帽。; */
-  lineCap: round
-  ): Unit = js.native
-  @JSName("setLineCap")
-  def setLineCap_square(
-    /** 线条的结束端点样式
-    *
-    * 参数 lineCap 可选值：
-    * - 'butt': 向线条的每个末端添加平直的边缘。;
-    * - 'round': 向线条的每个末端添加圆形线帽。;
-    * - 'square': 向线条的每个末端添加正方形线帽。; */
-  lineCap: square
+  lineCap: butt | round | square
   ): Unit = js.native
   
   /** [CanvasContext.setLineDash(Array.&lt;number&gt; pattern, number offset)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.setLineDash.html)
@@ -1171,35 +1110,14 @@ trait CanvasContext extends StObject {
   * ![](@program/dev/image/canvas/line-join.png)
   * @deprecated 基础库版本 [1.9.90](https://developers.weixin.qq.com/miniprogram/dev/framework/compatibility.html) 起已废弃，请使用 [CanvasContext.lineJoin](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.html) 替换
   *  */
-  @JSName("setLineJoin")
-  def setLineJoin_bevel(
+  def setLineJoin(
     /** 线条的结束交点样式
     *
     * 参数 lineJoin 可选值：
     * - 'bevel': 斜角;
     * - 'round': 圆角;
     * - 'miter': 尖角; */
-  lineJoin: bevel
-  ): Unit = js.native
-  @JSName("setLineJoin")
-  def setLineJoin_miter(
-    /** 线条的结束交点样式
-    *
-    * 参数 lineJoin 可选值：
-    * - 'bevel': 斜角;
-    * - 'round': 圆角;
-    * - 'miter': 尖角; */
-  lineJoin: miter
-  ): Unit = js.native
-  @JSName("setLineJoin")
-  def setLineJoin_round(
-    /** 线条的结束交点样式
-    *
-    * 参数 lineJoin 可选值：
-    * - 'bevel': 斜角;
-    * - 'round': 圆角;
-    * - 'miter': 尖角; */
-  lineJoin: round
+  lineJoin: bevel | round | miter
   ): Unit = js.native
   
   /** [CanvasContext.setLineWidth(number lineWidth)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.setLineWidth.html)
@@ -1337,16 +1255,6 @@ trait CanvasContext extends StObject {
   def setStrokeStyle(/** 描边的颜色，默认颜色为 black。 */
   color: CanvasGradient): Unit = js.native
   
-  @JSName("setTextAlign")
-  def setTextAlign_center(
-    /** 文字的对齐方式
-    *
-    * 参数 align 可选值：
-    * - 'left': 左对齐;
-    * - 'center': 居中对齐;
-    * - 'right': 右对齐; */
-  align: center
-  ): Unit = js.native
   /** [CanvasContext.setTextAlign(string align)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.setTextAlign.html)
   *
   * 设置文字的对齐
@@ -1374,60 +1282,16 @@ trait CanvasContext extends StObject {
   * ![](@program/dev/image/canvas/set-text-align.png)
   *
   * 最低基础库： `1.1.0` */
-  @JSName("setTextAlign")
-  def setTextAlign_left(
+  def setTextAlign(
     /** 文字的对齐方式
     *
     * 参数 align 可选值：
     * - 'left': 左对齐;
     * - 'center': 居中对齐;
     * - 'right': 右对齐; */
-  align: left
-  ): Unit = js.native
-  @JSName("setTextAlign")
-  def setTextAlign_right(
-    /** 文字的对齐方式
-    *
-    * 参数 align 可选值：
-    * - 'left': 左对齐;
-    * - 'center': 居中对齐;
-    * - 'right': 右对齐; */
-  align: right
+  align: left | center | right
   ): Unit = js.native
   
-  @JSName("setTextBaseline")
-  def setTextBaseline_bottom(
-    /** 文字的竖直对齐方式
-    *
-    * 参数 textBaseline 可选值：
-    * - 'top': 顶部对齐;
-    * - 'bottom': 底部对齐;
-    * - 'middle': 居中对齐;
-    * - 'normal': ; */
-  textBaseline: bottom
-  ): Unit = js.native
-  @JSName("setTextBaseline")
-  def setTextBaseline_middle(
-    /** 文字的竖直对齐方式
-    *
-    * 参数 textBaseline 可选值：
-    * - 'top': 顶部对齐;
-    * - 'bottom': 底部对齐;
-    * - 'middle': 居中对齐;
-    * - 'normal': ; */
-  textBaseline: middle
-  ): Unit = js.native
-  @JSName("setTextBaseline")
-  def setTextBaseline_normal(
-    /** 文字的竖直对齐方式
-    *
-    * 参数 textBaseline 可选值：
-    * - 'top': 顶部对齐;
-    * - 'bottom': 底部对齐;
-    * - 'middle': 居中对齐;
-    * - 'normal': ; */
-  textBaseline: normal
-  ): Unit = js.native
   /** [CanvasContext.setTextBaseline(string textBaseline)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.setTextBaseline.html)
   *
   * 设置文字的竖直对齐
@@ -1455,8 +1319,7 @@ trait CanvasContext extends StObject {
   * ![](@program/dev/image/canvas/set-text-baseline.png)
   *
   * 最低基础库： `1.4.0` */
-  @JSName("setTextBaseline")
-  def setTextBaseline_top(
+  def setTextBaseline(
     /** 文字的竖直对齐方式
     *
     * 参数 textBaseline 可选值：
@@ -1464,7 +1327,7 @@ trait CanvasContext extends StObject {
     * - 'bottom': 底部对齐;
     * - 'middle': 居中对齐;
     * - 'normal': ; */
-  textBaseline: top
+  textBaseline: top | bottom | middle | normal
   ): Unit = js.native
   
   /** [CanvasContext.setTransform(number scaleX, number skewX, number skewY, number scaleY, number translateX, number translateY)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.setTransform.html)

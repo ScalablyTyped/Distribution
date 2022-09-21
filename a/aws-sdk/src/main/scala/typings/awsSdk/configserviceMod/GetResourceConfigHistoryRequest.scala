@@ -14,15 +14,15 @@ trait GetResourceConfigHistoryRequest extends StObject {
   /**
     * The time stamp that indicates an earlier time. If not specified, the action returns paginated results that contain configuration items that start when the first configuration item was recorded.
     */
-  var earlierTime: js.UndefOr[EarlierTime] = js.undefined
+  var earlierTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The time stamp that indicates a later time. If not specified, current time is taken.
     */
-  var laterTime: js.UndefOr[LaterTime] = js.undefined
+  var laterTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The maximum number of configuration items returned on each page. The default is 10. You cannot specify a number greater than 100. If you specify 0, AWS Config uses the default.
+    * The maximum number of configuration items returned on each page. The default is 10. You cannot specify a number greater than 100. If you specify 0, Config uses the default.
     */
   var limit: js.UndefOr[Limit] = js.undefined
   
@@ -54,11 +54,11 @@ object GetResourceConfigHistoryRequest {
     
     inline def setChronologicalOrderUndefined: Self = StObject.set(x, "chronologicalOrder", js.undefined)
     
-    inline def setEarlierTime(value: EarlierTime): Self = StObject.set(x, "earlierTime", value.asInstanceOf[js.Any])
+    inline def setEarlierTime(value: js.Date): Self = StObject.set(x, "earlierTime", value.asInstanceOf[js.Any])
     
     inline def setEarlierTimeUndefined: Self = StObject.set(x, "earlierTime", js.undefined)
     
-    inline def setLaterTime(value: LaterTime): Self = StObject.set(x, "laterTime", value.asInstanceOf[js.Any])
+    inline def setLaterTime(value: js.Date): Self = StObject.set(x, "laterTime", value.asInstanceOf[js.Any])
     
     inline def setLaterTimeUndefined: Self = StObject.set(x, "laterTime", js.undefined)
     

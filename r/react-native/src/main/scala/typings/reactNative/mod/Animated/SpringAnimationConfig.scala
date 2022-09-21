@@ -31,13 +31,16 @@ trait SpringAnimationConfig
   
   var tension: js.UndefOr[Double] = js.undefined
   
-  var toValue: Double | AnimatedValue | X | AnimatedValueXY
+  var toValue: Double | AnimatedValue | X | AnimatedValueXY | RgbaValue | AnimatedColor | AnimatedInterpolation[Double]
   
   var velocity: js.UndefOr[Double | X] = js.undefined
 }
 object SpringAnimationConfig {
   
-  inline def apply(toValue: Double | AnimatedValue | X | AnimatedValueXY, useNativeDriver: Boolean): SpringAnimationConfig = {
+  inline def apply(
+    toValue: Double | AnimatedValue | X | AnimatedValueXY | RgbaValue | AnimatedColor | AnimatedInterpolation[Double],
+    useNativeDriver: Boolean
+  ): SpringAnimationConfig = {
     val __obj = js.Dynamic.literal(toValue = toValue.asInstanceOf[js.Any], useNativeDriver = useNativeDriver.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpringAnimationConfig]
   }
@@ -88,7 +91,9 @@ object SpringAnimationConfig {
     
     inline def setTensionUndefined: Self = StObject.set(x, "tension", js.undefined)
     
-    inline def setToValue(value: Double | AnimatedValue | X | AnimatedValueXY): Self = StObject.set(x, "toValue", value.asInstanceOf[js.Any])
+    inline def setToValue(
+      value: Double | AnimatedValue | X | AnimatedValueXY | RgbaValue | AnimatedColor | AnimatedInterpolation[Double]
+    ): Self = StObject.set(x, "toValue", value.asInstanceOf[js.Any])
     
     inline def setVelocity(value: Double | X): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
     

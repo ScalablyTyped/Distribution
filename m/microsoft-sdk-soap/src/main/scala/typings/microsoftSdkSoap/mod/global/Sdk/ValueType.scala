@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Sdk.ValueType")
 @js.native
-class ValueType () extends StObject
+open class ValueType () extends StObject

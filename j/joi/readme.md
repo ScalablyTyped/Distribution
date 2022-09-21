@@ -1,7 +1,7 @@
 
 # Scala.js typings for joi
 
-Typings are for version 17.3.0
+Typings are for version 17.6.0
 
 ## Library description:
 Object schema validation
@@ -10,10 +10,10 @@ Object schema validation
 | ------------------ | :-------------: |
 | Full name          | joi |
 | Keywords           | schema, validation |
-| # releases         | 4 |
-| # dependents       | 3779 |
-| # downloads        | 107506291 |
-| # stars            | 281 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 2.6956821666666668E7 |
+| # stars            | 19076.0 |
 
 ## Links
 - [Homepage](https://github.com/sideway/joi#readme)

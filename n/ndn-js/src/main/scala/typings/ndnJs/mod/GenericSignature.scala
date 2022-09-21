@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("ndn-js", "GenericSignature")
 @js.native
-class GenericSignature ()
+open class GenericSignature ()
   extends typings.ndnJs.signatureMod.GenericSignature

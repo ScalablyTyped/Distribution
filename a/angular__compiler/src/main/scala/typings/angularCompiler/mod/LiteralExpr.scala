@@ -6,49 +6,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/compiler", "LiteralExpr")
 @js.native
-class LiteralExpr ()
-  extends typings.angularCompiler.compilerMod.LiteralExpr {
+open class LiteralExpr () extends Expression {
   def this(value: String) = this()
   def this(value: Boolean) = this()
   def this(value: Double) = this()
-  def this(value: String, `type`: typings.angularCompiler.outputAstMod.Type) = this()
-  def this(value: Boolean, `type`: typings.angularCompiler.outputAstMod.Type) = this()
-  def this(value: Double, `type`: typings.angularCompiler.outputAstMod.Type) = this()
-  def this(value: Null, `type`: typings.angularCompiler.outputAstMod.Type) = this()
-  def this(value: Unit, `type`: typings.angularCompiler.outputAstMod.Type) = this()
-  def this(value: String, `type`: Null, sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan) = this()
-  def this(value: String, `type`: Unit, sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan) = this()
-  def this(
-    value: String,
-    `type`: typings.angularCompiler.outputAstMod.Type,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
-  def this(value: Boolean, `type`: Null, sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan) = this()
-  def this(value: Boolean, `type`: Unit, sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan) = this()
-  def this(
-    value: Boolean,
-    `type`: typings.angularCompiler.outputAstMod.Type,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
-  def this(value: Double, `type`: Null, sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan) = this()
-  def this(value: Double, `type`: Unit, sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan) = this()
-  def this(
-    value: Double,
-    `type`: typings.angularCompiler.outputAstMod.Type,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
-  def this(value: Null, `type`: Null, sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan) = this()
-  def this(value: Null, `type`: Unit, sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan) = this()
-  def this(
-    value: Null,
-    `type`: typings.angularCompiler.outputAstMod.Type,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
-  def this(value: Unit, `type`: Null, sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan) = this()
-  def this(value: Unit, `type`: Unit, sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan) = this()
-  def this(
-    value: Unit,
-    `type`: typings.angularCompiler.outputAstMod.Type,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
+  def this(value: String, `type`: Type) = this()
+  def this(value: Boolean, `type`: Type) = this()
+  def this(value: Double, `type`: Type) = this()
+  def this(value: Null, `type`: Type) = this()
+  def this(value: Unit, `type`: Type) = this()
+  def this(value: String, `type`: Null, sourceSpan: ParseSourceSpan) = this()
+  def this(value: String, `type`: Unit, sourceSpan: ParseSourceSpan) = this()
+  def this(value: String, `type`: Type, sourceSpan: ParseSourceSpan) = this()
+  def this(value: Boolean, `type`: Null, sourceSpan: ParseSourceSpan) = this()
+  def this(value: Boolean, `type`: Unit, sourceSpan: ParseSourceSpan) = this()
+  def this(value: Boolean, `type`: Type, sourceSpan: ParseSourceSpan) = this()
+  def this(value: Double, `type`: Null, sourceSpan: ParseSourceSpan) = this()
+  def this(value: Double, `type`: Unit, sourceSpan: ParseSourceSpan) = this()
+  def this(value: Double, `type`: Type, sourceSpan: ParseSourceSpan) = this()
+  def this(value: Null, `type`: Null, sourceSpan: ParseSourceSpan) = this()
+  def this(value: Null, `type`: Unit, sourceSpan: ParseSourceSpan) = this()
+  def this(value: Null, `type`: Type, sourceSpan: ParseSourceSpan) = this()
+  def this(value: Unit, `type`: Null, sourceSpan: ParseSourceSpan) = this()
+  def this(value: Unit, `type`: Unit, sourceSpan: ParseSourceSpan) = this()
+  def this(value: Unit, `type`: Type, sourceSpan: ParseSourceSpan) = this()
+  
+  var value: js.UndefOr[Double | String | Boolean | Null] = js.native
 }

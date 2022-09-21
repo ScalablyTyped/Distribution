@@ -54,7 +54,7 @@ trait RadialChartProps extends StObject {
   
   var style: js.UndefOr[CSSProperties] = js.undefined
   
-  var subLabel: js.UndefOr[js.Function1[/* row */ js.Any, String]] = js.undefined
+  var subLabel: js.UndefOr[js.Function1[/* row */ Any, String]] = js.undefined
   
   var width: Double
 }
@@ -81,7 +81,7 @@ object RadialChartProps {
     
     inline def setData(value: js.Array[Angle]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setDataVarargs(value: Angle*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Angle*): Self = StObject.set(x, "data", js.Array(value*))
     
     inline def setGetAngle(
       value: RadialChartPoint => /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
@@ -147,7 +147,7 @@ object RadialChartProps {
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    inline def setSubLabel(value: /* row */ js.Any => String): Self = StObject.set(x, "subLabel", js.Any.fromFunction1(value))
+    inline def setSubLabel(value: /* row */ Any => String): Self = StObject.set(x, "subLabel", js.Any.fromFunction1(value))
     
     inline def setSubLabelUndefined: Self = StObject.set(x, "subLabel", js.undefined)
     

@@ -10,5 +10,5 @@ object defaultPortFactoryMod {
   
   @JSImport("storm-react-diagrams/dist/src/defaults/factories/DefaultPortFactory", "DefaultPortFactory")
   @js.native
-  class DefaultPortFactory () extends AbstractPortFactory[DefaultPortModel]
+  open class DefaultPortFactory () extends AbstractPortFactory[DefaultPortModel]
 }

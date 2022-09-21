@@ -5,13 +5,12 @@ import typings.anyproxy.anyproxyStrings.error
 import typings.anyproxy.anyproxyStrings.http
 import typings.anyproxy.anyproxyStrings.https
 import typings.anyproxy.anyproxyStrings.ready
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.RequestOptions
 import typings.node.httpMod.ServerResponse
 import typings.node.netMod.Socket
-import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -25,7 +24,7 @@ object mod {
     * Creates an instance of ProxyCore.
     * @param config - configs
     */
-  class ProxyCore () extends EventEmitter {
+  open class ProxyCore () extends EventEmitter {
     def this(config: ProxyOptions) = this()
     
     /** Close the proxy server */
@@ -48,7 +47,7 @@ object mod {
   @JSImport("anyproxy", "ProxyRecorder")
   @js.native
   // TypeScript Version: 2.2
-  class ProxyRecorder () extends EventEmitter {
+  open class ProxyRecorder () extends EventEmitter {
     def this(config: js.Object) = this()
     
     def appendRecord(info: RecorderInfo): Double = js.native
@@ -58,28 +57,28 @@ object mod {
     def emitUpdate(id: Double): Unit = js.native
     def emitUpdate(id: Double, info: RecorderInfo): Unit = js.native
     
-    def emitUpdateLatestWsMessage(id: Double, message: js.Any): Unit = js.native
+    def emitUpdateLatestWsMessage(id: Double, message: Any): Unit = js.native
     
     def getBody(id: Double): Unit = js.native
-    def getBody(id: Double, cb: js.Function2[/* err */ Error, /* body */ Buffer, Unit]): Unit = js.native
+    def getBody(id: Double, cb: js.Function2[/* err */ js.Error, /* body */ Buffer, Unit]): Unit = js.native
     
-    def getCacheFile(fileName: String, cb: js.Function2[/* err */ Error, /* filePath */ String, Unit]): Unit = js.native
+    def getCacheFile(fileName: String, cb: js.Function2[/* err */ js.Error, /* filePath */ String, Unit]): Unit = js.native
     
     def getDecodedBody(id: Double): Unit = js.native
-    def getDecodedBody(id: Double, cb: js.Function2[/* err */ Error, /* content */ js.Any, Unit]): Unit = js.native
+    def getDecodedBody(id: Double, cb: js.Function2[/* err */ js.Error, /* content */ Any, Unit]): Unit = js.native
     
     def getDecodedWsMessage(id: Double): Unit = js.native
-    def getDecodedWsMessage(id: Double, cb: js.Function2[/* err */ Error, /* content */ js.Any, Unit]): Unit = js.native
+    def getDecodedWsMessage(id: Double, cb: js.Function2[/* err */ js.Error, /* content */ Any, Unit]): Unit = js.native
     
     def getRecords(
       idStart: Double,
       limit: Double,
-      cb: js.Function2[/* err */ Error, /* records */ js.Array[RecorderInfo], Unit]
+      cb: js.Function2[/* err */ js.Error, /* records */ js.Array[RecorderInfo], Unit]
     ): Unit = js.native
     
-    def getSingleRecord(id: Double, cb: js.Function2[/* err */ Error, /* record */ RecorderInfo, Unit]): Unit = js.native
+    def getSingleRecord(id: Double, cb: js.Function2[/* err */ js.Error, /* record */ RecorderInfo, Unit]): Unit = js.native
     
-    def getSummaryList(cb: js.Function2[/* err */ Error, /* records */ js.Array[RecorderInfo], Unit]): Unit = js.native
+    def getSummaryList(cb: js.Function2[/* err */ js.Error, /* records */ js.Array[RecorderInfo], Unit]): Unit = js.native
     
     // TypeScript Version: 2.2
     def updateExtInfo(id: Double, extInfo: js.Object): Unit = js.native
@@ -88,17 +87,17 @@ object mod {
     
     def updateRecordBody(id: Double, info: RecorderInfo): Unit = js.native
     
-    def updateRecordWsMessage(id: Double, message: js.Any): Unit = js.native
+    def updateRecordWsMessage(id: Double, message: Any): Unit = js.native
   }
   
   @JSImport("anyproxy", "ProxyServer")
   @js.native
-  class ProxyServer () extends ProxyCore {
+  open class ProxyServer () extends ProxyCore {
     def this(config: ProxyOptions) = this()
     
     /** Emit when error happened inside proxy server */
     @JSName("on")
-    def on_error(eventName: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def on_error(eventName: error, listener: js.Function1[/* err */ js.Error, Unit]): this.type = js.native
     /** Emit when proxy server is ready */
     @JSName("on")
     def on_ready(eventName: ready, listener: js.Function0[Unit]): this.type = js.native
@@ -106,7 +105,7 @@ object mod {
   
   @JSImport("anyproxy", "ProxyWebServer")
   @js.native
-  class ProxyWebServer protected () extends EventEmitter {
+  open class ProxyWebServer protected () extends EventEmitter {
     /**
       * Creates an instance of webInterface.
       *
@@ -121,7 +120,7 @@ object mod {
     /**
       * get the express server
       */
-    def getServer(): js.Any = js.native
+    def getServer(): Any = js.native
     
     def start(): js.Promise[Unit] = js.native
   }
@@ -136,7 +135,7 @@ object mod {
       val ^ : js.Any = js.native
       
       /** Generate a rootCA */
-      inline def generateRootCA(callback: js.Function2[/* err */ Error, /* keyPath */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("generateRootCA")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def generateRootCA(callback: js.Function2[/* err */ js.Error, /* keyPath */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("generateRootCA")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /** Detect if AnyProx rootCA exists */
       inline def ifRootCAFileExists(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("ifRootCAFileExists")().asInstanceOf[Boolean]
@@ -189,7 +188,7 @@ object mod {
     
     var protocol: js.UndefOr[String] = js.undefined
     
-    var requestData: js.UndefOr[js.Any] = js.undefined
+    var requestData: js.UndefOr[Any] = js.undefined
     
     var requestOptions: js.UndefOr[RequestOptions] = js.undefined
     
@@ -210,7 +209,7 @@ object mod {
       
       inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
       
-      inline def setRequestData(value: js.Any): Self = StObject.set(x, "requestData", value.asInstanceOf[js.Any])
+      inline def setRequestData(value: Any): Self = StObject.set(x, "requestData", value.asInstanceOf[js.Any])
       
       inline def setRequestDataUndefined: Self = StObject.set(x, "requestData", js.undefined)
       
@@ -373,7 +372,7 @@ object mod {
     
     var protocol: String
     
-    var reqBody: js.Any
+    var reqBody: Any
     
     // req
     var reqHeader: Record[String, String]
@@ -400,7 +399,7 @@ object mod {
       mime: String,
       path: String,
       protocol: String,
-      reqBody: js.Any,
+      reqBody: Any,
       reqHeader: Record[String, String],
       resHeader: (Record[String, String]) | String,
       startTime: Double,
@@ -431,7 +430,7 @@ object mod {
       
       inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      inline def setReqBody(value: js.Any): Self = StObject.set(x, "reqBody", value.asInstanceOf[js.Any])
+      inline def setReqBody(value: Any): Self = StObject.set(x, "reqBody", value.asInstanceOf[js.Any])
       
       inline def setReqHeader(value: Record[String, String]): Self = StObject.set(x, "reqHeader", value.asInstanceOf[js.Any])
       
@@ -453,7 +452,7 @@ object mod {
     
     var protocol: String
     
-    var requestData: js.Any
+    var requestData: Any
     
     var requestOptions: RequestOptions
     
@@ -464,7 +463,7 @@ object mod {
     inline def apply(
       _req: IncomingMessage,
       protocol: String,
-      requestData: js.Any,
+      requestData: Any,
       requestOptions: RequestOptions,
       url: String
     ): RequestDetail = {
@@ -476,7 +475,7 @@ object mod {
       
       inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      inline def setRequestData(value: js.Any): Self = StObject.set(x, "requestData", value.asInstanceOf[js.Any])
+      inline def setRequestData(value: Any): Self = StObject.set(x, "requestData", value.asInstanceOf[js.Any])
       
       inline def setRequestOptions(value: RequestOptions): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
       
@@ -488,7 +487,7 @@ object mod {
   
   trait Response extends StObject {
     
-    var body: js.Any
+    var body: Any
     
     var header: Record[String, String]
     
@@ -496,14 +495,14 @@ object mod {
   }
   object Response {
     
-    inline def apply(body: js.Any, header: Record[String, String], statusCode: Double): Response = {
+    inline def apply(body: Any, header: Record[String, String], statusCode: Double): Response = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[Response]
     }
     
     extension [Self <: Response](x: Self) {
       
-      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       inline def setHeader(value: Record[String, String]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
@@ -513,13 +512,13 @@ object mod {
   
   trait ResponseDetail extends StObject {
     
-    var _res: ServerResponse
+    var _res: ServerResponse[IncomingMessage]
     
     var response: Response
   }
   object ResponseDetail {
     
-    inline def apply(_res: ServerResponse, response: Response): ResponseDetail = {
+    inline def apply(_res: ServerResponse[IncomingMessage], response: Response): ResponseDetail = {
       val __obj = js.Dynamic.literal(_res = _res.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResponseDetail]
     }
@@ -528,7 +527,7 @@ object mod {
       
       inline def setResponse(value: Response): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       
-      inline def set_res(value: ServerResponse): Self = StObject.set(x, "_res", value.asInstanceOf[js.Any])
+      inline def set_res(value: ServerResponse[IncomingMessage]): Self = StObject.set(x, "_res", value.asInstanceOf[js.Any])
     }
   }
   
@@ -564,7 +563,7 @@ object mod {
     var onConnectError: js.UndefOr[
         js.Function2[
           /* requestDetail */ RequestDetail, 
-          /* err */ Error, 
+          /* err */ js.Error, 
           MaybePromise[js.UndefOr[BeforeSendResponseResult | Null]]
         ]
       ] = js.undefined
@@ -576,7 +575,7 @@ object mod {
     var onError: js.UndefOr[
         js.Function2[
           /* requestDetail */ RequestDetail, 
-          /* err */ Error, 
+          /* err */ js.Error, 
           MaybePromise[js.UndefOr[BeforeSendResponseResult | Null]]
         ]
       ] = js.undefined
@@ -610,13 +609,13 @@ object mod {
       inline def setBeforeSendResponseUndefined: Self = StObject.set(x, "beforeSendResponse", js.undefined)
       
       inline def setOnConnectError(
-        value: (/* requestDetail */ RequestDetail, /* err */ Error) => MaybePromise[js.UndefOr[BeforeSendResponseResult | Null]]
+        value: (/* requestDetail */ RequestDetail, /* err */ js.Error) => MaybePromise[js.UndefOr[BeforeSendResponseResult | Null]]
       ): Self = StObject.set(x, "onConnectError", js.Any.fromFunction2(value))
       
       inline def setOnConnectErrorUndefined: Self = StObject.set(x, "onConnectError", js.undefined)
       
       inline def setOnError(
-        value: (/* requestDetail */ RequestDetail, /* err */ Error) => MaybePromise[js.UndefOr[BeforeSendResponseResult | Null]]
+        value: (/* requestDetail */ RequestDetail, /* err */ js.Error) => MaybePromise[js.UndefOr[BeforeSendResponseResult | Null]]
       ): Self = StObject.set(x, "onError", js.Any.fromFunction2(value))
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)

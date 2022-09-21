@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Retrieves standard HTTP methods such as GET and POST and creates new HTTP methods. */
 @JSGlobal("Windows.Web.Http.HttpMethod")
 @js.native
-class HttpMethod protected ()
+open class HttpMethod protected ()
   extends StObject
      with typings.winrtUwp.Windows.Web.Http.HttpMethod {
   /**

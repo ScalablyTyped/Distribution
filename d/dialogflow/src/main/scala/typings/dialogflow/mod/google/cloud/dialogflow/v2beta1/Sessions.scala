@@ -4,7 +4,6 @@ import typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Sessions.DetectInt
 import typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Sessions.StreamingDetectIntentCallback
 import typings.protobufjs.mod.RPCImpl
 import typings.protobufjs.mod.rpc.Service
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Represents a Sessions */
 @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Sessions")
 @js.native
-class Sessions protected () extends Service {
+open class Sessions protected () extends Service {
   /**
     * Constructs a new Sessions service.
     * @param rpcImpl RPC implementation
@@ -74,7 +73,7 @@ object Sessions {
     * @param error Error, if any
     * @param [response] DetectIntentResponse
     */
-  type DetectIntentCallback = js.Function2[/* error */ Error | Null, /* response */ js.UndefOr[DetectIntentResponse], Unit]
+  type DetectIntentCallback = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[DetectIntentResponse], Unit]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2beta1.Sessions#streamingDetectIntent}.
@@ -82,7 +81,7 @@ object Sessions {
     * @param [response] StreamingDetectIntentResponse
     */
   type StreamingDetectIntentCallback = js.Function2[
-    /* error */ Error | Null, 
+    /* error */ js.Error | Null, 
     /* response */ js.UndefOr[StreamingDetectIntentResponse], 
     Unit
   ]

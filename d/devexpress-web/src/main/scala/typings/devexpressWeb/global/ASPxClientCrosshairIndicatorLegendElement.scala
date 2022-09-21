@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientCrosshairIndicatorLegendElement")
 @js.native
-class ASPxClientCrosshairIndicatorLegendElement ()
+open class ASPxClientCrosshairIndicatorLegendElement ()
   extends StObject
      with typings.devexpressWeb.ASPxClientCrosshairIndicatorLegendElement {
   

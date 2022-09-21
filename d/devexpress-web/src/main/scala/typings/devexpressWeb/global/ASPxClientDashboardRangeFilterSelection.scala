@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientDashboardRangeFilterSelection")
 @js.native
-class ASPxClientDashboardRangeFilterSelection ()
+open class ASPxClientDashboardRangeFilterSelection ()
   extends StObject
      with typings.devexpressWeb.ASPxClientDashboardRangeFilterSelection {
   
@@ -17,11 +17,11 @@ class ASPxClientDashboardRangeFilterSelection ()
     * Gets or sets a maximum value in the range of the Range Filter dashboard item.
     */
   /* CompleteClass */
-  var Maximum: js.Any = js.native
+  var Maximum: Any = js.native
   
   /**
     * Gets or sets a minimum value in the range of the Range Filter dashboard item.
     */
   /* CompleteClass */
-  var Minimum: js.Any = js.native
+  var Minimum: Any = js.native
 }

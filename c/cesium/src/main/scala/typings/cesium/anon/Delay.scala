@@ -1,6 +1,7 @@
 package typings.cesium.anon
 
 import typings.cesium.mod.JulianDate
+import typings.cesium.mod.ModelAnimation.AnimationTimeCallback
 import typings.cesium.mod.ModelAnimationLoop
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,17 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Delay extends StObject {
   
+  var animationTime: js.UndefOr[AnimationTimeCallback] = js.undefined
+  
   var delay: js.UndefOr[Double] = js.undefined
   
   var loop: js.UndefOr[ModelAnimationLoop] = js.undefined
   
-  var name: String
+  var multiplier: js.UndefOr[Double] = js.undefined
   
   var removeOnStop: js.UndefOr[Boolean] = js.undefined
   
   var reverse: js.UndefOr[Boolean] = js.undefined
-  
-  var speedup: js.UndefOr[Double] = js.undefined
   
   var startTime: js.UndefOr[JulianDate] = js.undefined
   
@@ -26,12 +27,16 @@ trait Delay extends StObject {
 }
 object Delay {
   
-  inline def apply(name: String): Delay = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  inline def apply(): Delay = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Delay]
   }
   
   extension [Self <: Delay](x: Self) {
+    
+    inline def setAnimationTime(value: (/* duration */ Double, /* seconds */ Double) => Double): Self = StObject.set(x, "animationTime", js.Any.fromFunction2(value))
+    
+    inline def setAnimationTimeUndefined: Self = StObject.set(x, "animationTime", js.undefined)
     
     inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
@@ -41,7 +46,9 @@ object Delay {
     
     inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
     
-    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setMultiplier(value: Double): Self = StObject.set(x, "multiplier", value.asInstanceOf[js.Any])
+    
+    inline def setMultiplierUndefined: Self = StObject.set(x, "multiplier", js.undefined)
     
     inline def setRemoveOnStop(value: Boolean): Self = StObject.set(x, "removeOnStop", value.asInstanceOf[js.Any])
     
@@ -50,10 +57,6 @@ object Delay {
     inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
     
     inline def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
-    
-    inline def setSpeedup(value: Double): Self = StObject.set(x, "speedup", value.asInstanceOf[js.Any])
-    
-    inline def setSpeedupUndefined: Self = StObject.set(x, "speedup", js.undefined)
     
     inline def setStartTime(value: JulianDate): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     

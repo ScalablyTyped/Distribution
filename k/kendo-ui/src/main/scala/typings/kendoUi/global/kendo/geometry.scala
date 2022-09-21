@@ -9,27 +9,27 @@ object geometry {
   
   @JSGlobal("kendo.geometry.Arc")
   @js.native
-  class Arc protected ()
+  open class Arc protected ()
     extends StObject
        with typings.kendoUi.kendo.geometry.Arc {
-    def this(center: js.Any) = this()
+    def this(center: Any) = this()
     def this(center: typings.kendoUi.kendo.geometry.Point) = this()
-    def this(center: js.Any, options: ArcOptions) = this()
+    def this(center: Any, options: ArcOptions) = this()
     def this(center: typings.kendoUi.kendo.geometry.Point, options: ArcOptions) = this()
   }
   
   @JSGlobal("kendo.geometry.Circle")
   @js.native
-  class Circle protected ()
+  open class Circle protected ()
     extends StObject
        with typings.kendoUi.kendo.geometry.Circle {
-    def this(center: js.Any, radius: Double) = this()
+    def this(center: Any, radius: Double) = this()
     def this(center: typings.kendoUi.kendo.geometry.Point, radius: Double) = this()
   }
   
   @JSGlobal("kendo.geometry.Matrix")
   @js.native
-  class Matrix ()
+  open class Matrix ()
     extends StObject
        with typings.kendoUi.kendo.geometry.Matrix
   object Matrix {
@@ -53,7 +53,7 @@ object geometry {
   
   @JSGlobal("kendo.geometry.Point")
   @js.native
-  class Point protected ()
+  open class Point protected ()
     extends StObject
        with typings.kendoUi.kendo.geometry.Point {
     def this(x: Double, y: Double) = this()
@@ -65,7 +65,7 @@ object geometry {
     val ^ : js.Any = js.native
     
     /* static member */
-    inline def create(x: js.Any, y: Double): typings.kendoUi.kendo.geometry.Point = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.geometry.Point]
+    inline def create(x: Any, y: Double): typings.kendoUi.kendo.geometry.Point = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.geometry.Point]
     /* static member */
     inline def create(x: Double, y: Double): typings.kendoUi.kendo.geometry.Point = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.geometry.Point]
     /* static member */
@@ -86,12 +86,12 @@ object geometry {
   
   @JSGlobal("kendo.geometry.Rect")
   @js.native
-  class Rect protected ()
+  open class Rect protected ()
     extends StObject
        with typings.kendoUi.kendo.geometry.Rect {
-    def this(origin: js.Any, size: js.Any) = this()
-    def this(origin: js.Any, size: typings.kendoUi.kendo.geometry.Size) = this()
-    def this(origin: typings.kendoUi.kendo.geometry.Point, size: js.Any) = this()
+    def this(origin: Any, size: Any) = this()
+    def this(origin: Any, size: typings.kendoUi.kendo.geometry.Size) = this()
+    def this(origin: typings.kendoUi.kendo.geometry.Point, size: Any) = this()
     def this(origin: typings.kendoUi.kendo.geometry.Point, size: typings.kendoUi.kendo.geometry.Size) = this()
   }
   object Rect {
@@ -109,7 +109,7 @@ object geometry {
   
   @JSGlobal("kendo.geometry.Size")
   @js.native
-  class Size ()
+  open class Size ()
     extends StObject
        with typings.kendoUi.kendo.geometry.Size
   object Size {
@@ -119,7 +119,7 @@ object geometry {
     val ^ : js.Any = js.native
     
     /* static member */
-    inline def create(width: js.Any, height: Double): typings.kendoUi.kendo.geometry.Size = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.geometry.Size]
+    inline def create(width: Any, height: Double): typings.kendoUi.kendo.geometry.Size = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.geometry.Size]
     /* static member */
     inline def create(width: Double, height: Double): typings.kendoUi.kendo.geometry.Size = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typings.kendoUi.kendo.geometry.Size]
     /* static member */
@@ -128,7 +128,7 @@ object geometry {
   
   @JSGlobal("kendo.geometry.Transformation")
   @js.native
-  class Transformation ()
+  open class Transformation ()
     extends StObject
        with typings.kendoUi.kendo.geometry.Transformation
 }

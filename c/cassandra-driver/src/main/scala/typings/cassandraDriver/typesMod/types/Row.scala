@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Row
   extends StObject
-     with /* key */ StringDictionary[js.Any] {
+     with /* key */ StringDictionary[Any] {
   
   def forEach(callback: js.Function1[/* row */ this.type, Unit]): Unit = js.native
   
-  def get(columnName: String): js.Any = js.native
-  def get(columnName: Double): js.Any = js.native
+  def get(columnName: String): Any = js.native
+  def get(columnName: Double): Any = js.native
   
   def keys(): js.Array[String] = js.native
   
-  def values(): js.Array[js.Any] = js.native
+  def values(): js.Array[Any] = js.native
 }

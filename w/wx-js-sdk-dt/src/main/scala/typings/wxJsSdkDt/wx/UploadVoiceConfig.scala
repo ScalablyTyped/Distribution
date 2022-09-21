@@ -13,11 +13,11 @@ trait UploadVoiceConfig
   var localId: String
   
   @JSName("success")
-  def success_MUploadVoiceConfig(res: js.Any): Unit
+  def success_MUploadVoiceConfig(res: Any): Unit
 }
 object UploadVoiceConfig {
   
-  inline def apply(localId: String, success: js.Any => Unit): UploadVoiceConfig = {
+  inline def apply(localId: String, success: Any => Unit): UploadVoiceConfig = {
     val __obj = js.Dynamic.literal(localId = localId.asInstanceOf[js.Any], success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[UploadVoiceConfig]
   }
@@ -30,6 +30,6 @@ object UploadVoiceConfig {
     
     inline def setLocalId(value: String): Self = StObject.set(x, "localId", value.asInstanceOf[js.Any])
     
-    inline def setSuccess(value: js.Any => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: Any => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

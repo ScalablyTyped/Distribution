@@ -22,6 +22,6 @@ object WebAppsListResponse {
     
     inline def setWebAppUndefined: Self = StObject.set(x, "webApp", js.undefined)
     
-    inline def setWebAppVarargs(value: WebApp*): Self = StObject.set(x, "webApp", js.Array(value :_*))
+    inline def setWebAppVarargs(value: WebApp*): Self = StObject.set(x, "webApp", js.Array(value*))
   }
 }

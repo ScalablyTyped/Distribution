@@ -96,7 +96,7 @@ object XCharacterClassification {
     getType: (String, Double) => Double,
     parseAnyToken: (String, Double, Locale, Double, String, Double, String) => ParseResult,
     parsePredefinedToken: (Double, String, Double, Locale, Double, String, Double, String) => ParseResult,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     toLower: (String, Double, Double, Locale) => String,
     toTitle: (String, Double, Double, Locale) => String,

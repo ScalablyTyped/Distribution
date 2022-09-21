@@ -13,6 +13,9 @@ trait FieldsFilterKey extends StObject {
   /** OAuth access token. */
   var access_token: js.UndefOr[String] = js.undefined
   
+  /** The ID of the DV360 advertiser that has access to the fetched custom lists. */
+  var advertiserId: js.UndefOr[String] = js.undefined
+  
   /** Data format for response. */
   var alt: js.UndefOr[String] = js.undefined
   
@@ -23,15 +26,9 @@ trait FieldsFilterKey extends StObject {
   var fields: js.UndefOr[String] = js.undefined
   
   /**
-    * Allows filtering by user properties. Supported syntax: * Filter expressions are made up of one or more restrictions. * Restrictions can be combined by the logical operator
-    * `AND`. * A restriction has the form of `{field} {operator} {value}`. * The operator must be `CONTAINS (:)` or `EQUALS (=)`. * The operator must be `CONTAINS (:)` for the
-    * following fields: - `displayName` - `email` * The operator must be `EQUALS (=)` for the following fields: - `assignedUserRole.userRole` - `assignedUserRole.partnerId` -
-    * `assignedUserRole.advertiserId` - `assignedUserRole.entityType`: A synthetic field of AssignedUserRole used for filtering. Identifies the type of entity to which the user role
-    * is assigned. Valid values are `Partner` and `Advertiser`. - `assignedUserRole.parentPartnerId`: A synthetic field of AssignedUserRole used for filtering. Identifies the parent
-    * partner of the entity to which the user role is assigned." Examples: * The user with displayName containing `foo`: `displayName:"foo"` * The user with email containing `bar`:
-    * `email:"bar"` * All users with standard user roles: `assignedUserRole.userRole="STANDARD"` * All users with user roles for partner 123: `assignedUserRole.partnerId="123"` * All
-    * users with user roles for advertiser 123: `assignedUserRole.advertiserId="123"` * All users with partner level user roles: `entityType="PARTNER"` * All users with user roles for
-    * partner 123 and advertisers under partner 123: `parentPartnerId="123"` The length of this field should be no more than 500 characters.
+    * Allows filtering by custom list fields. Supported syntax: * Filter expressions for custom lists currently can only contain at most one restriction. * A restriction has the form
+    * of `{field} {operator} {value}`. * The operator must be `CONTAINS (:)`. * Supported fields: - `displayName` Examples: * All custom lists for which the display name contains
+    * "Google": `displayName : "Google"`. The length of this field should be no more than 500 characters.
     */
   var filter: js.UndefOr[String] = js.undefined
   
@@ -42,17 +39,17 @@ trait FieldsFilterKey extends StObject {
   var oauth_token: js.UndefOr[String] = js.undefined
   
   /**
-    * Field by which to sort the list. Acceptable values are: * `displayName` (default) The default sorting order is ascending. To specify descending order for a field, a suffix
-    * "desc" should be added to the field name. For example, `displayName desc`.
+    * Field by which to sort the list. Acceptable values are: * `customListId` (default) * `displayName` The default sorting order is ascending. To specify descending order for a
+    * field, a suffix "desc" should be added to the field name. Example: `displayName desc`.
     */
   var orderBy: js.UndefOr[String] = js.undefined
   
-  /** Requested page size. Must be between `1` and `100`. If unspecified will default to `100`. */
+  /** Requested page size. Must be between `1` and `100`. If unspecified will default to `100`. Returns error code `INVALID_ARGUMENT` if an invalid value is specified. */
   var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
-    * A token identifying a page of results the server should return. Typically, this is the value of next_page_token returned from the previous call to `ListUsers` method. If not
-    * specified, the first page of results will be returned.
+    * A token identifying a page of results the server should return. Typically, this is the value of next_page_token returned from the previous call to `ListCustomLists` method. If
+    * not specified, the first page of results will be returned.
     */
   var pageToken: js.UndefOr[String] = js.undefined
   
@@ -84,6 +81,10 @@ object FieldsFilterKey {
     inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
     
     inline def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
+    
+    inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
+    
+    inline def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

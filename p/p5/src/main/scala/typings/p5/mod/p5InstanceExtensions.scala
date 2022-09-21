@@ -52,6 +52,8 @@ trait p5InstanceExtensions extends StObject {
   
   val CENTER: typings.p5.mod.CENTER = js.native
   
+  val CHAR: typings.p5.mod.CHAR = js.native
+  
   val CHORD: typings.p5.mod.CHORD = js.native
   
   val CLAMP: typings.p5.mod.CLAMP = js.native
@@ -72,8 +74,8 @@ trait p5InstanceExtensions extends StObject {
   
   /**
     *   Constant to be used with angleMode() function, to
-    *   set the mode which p5.js interprates and
-    *   calculates angles (either DEGREES or RADIANS).
+    *   set the mode which p5.js interprets and calculates
+    *   angles (either DEGREES or RADIANS).
     */
   val DEGREES: typings.p5.mod.DEGREES = js.native
   
@@ -95,6 +97,8 @@ trait p5InstanceExtensions extends StObject {
   
   val EXCLUSION: typings.p5.mod.EXCLUSION = js.native
   
+  val FALLBACK: typings.p5.mod.FALLBACK = js.native
+  
   val FILL: typings.p5.mod.FILL = js.native
   
   val GRAY: typings.p5.mod.GRAY = js.native
@@ -114,6 +118,10 @@ trait p5InstanceExtensions extends StObject {
   
   val HARD_LIGHT: typings.p5.mod.HARD_LIGHT = js.native
   
+  /**
+    *   HSB (hue, saturation, brightness) is a type of
+    *   color model. You can learn more about it at HSB.
+    */
   val HSB: typings.p5.mod.HSB = js.native
   
   val HSL: typings.p5.mod.HSL = js.native
@@ -125,6 +133,8 @@ trait p5InstanceExtensions extends StObject {
   val INVERT: typings.p5.mod.INVERT = js.native
   
   val ITALIC: typings.p5.mod.ITALIC = js.native
+  
+  val LABEL: typings.p5.mod.LABEL = js.native
   
   val LANDSCAPE: typings.p5.mod.LANDSCAPE = js.native
   
@@ -203,12 +213,14 @@ trait p5InstanceExtensions extends StObject {
   
   /**
     *   Constant to be used with angleMode() function, to
-    *   set the mode which p5.js interprates and
-    *   calculates angles (either RADIANS or DEGREES).
+    *   set the mode which p5.js interprets and calculates
+    *   angles (either RADIANS or DEGREES).
     */
   val RADIANS: typings.p5.mod.RADIANS = js.native
   
   val RADIUS: typings.p5.mod.RADIUS = js.native
+  
+  val REMOVE: typings.p5.mod.REMOVE = js.native
   
   val REPEAT: typings.p5.mod.REPEAT = js.native
   
@@ -248,6 +260,8 @@ trait p5InstanceExtensions extends StObject {
     */
   val TAU: Double = js.native
   
+  val TESS: typings.p5.mod.TESS = js.native
+  
   val TEXT: typings.p5.mod.TEXT = js.native
   
   val TEXTURE: typings.p5.mod.TEXTURE = js.native
@@ -273,6 +287,11 @@ trait p5InstanceExtensions extends StObject {
   
   val UP_ARROW: Double = js.native
   
+  /**
+    *   Version of this p5.js.
+    */
+  val VERSION: typings.p5.mod.VERSION = js.native
+  
   val VIDEO: typings.p5.mod.VIDEO = js.native
   
   val WAIT: typings.p5.mod.WAIT = js.native
@@ -283,6 +302,8 @@ trait p5InstanceExtensions extends StObject {
     *   introducing the third dimension: Z
     */
   val WEBGL: typings.p5.mod.WEBGL = js.native
+  
+  val WORD: typings.p5.mod.WORD = js.native
   
   /**
     *   Calculates the absolute value (magnitude) of a
@@ -318,7 +339,8 @@ trait p5InstanceExtensions extends StObject {
     *   The inverse of cos(), returns the arc cosine of a
     *   value. This function expects the values in the
     *   range of -1 to 1 and values are returned in the
-    *   range 0 to PI (3.1415927).
+    *   range 0 to PI (3.1415927) if the angleMode is
+    *   RADIANS or 0 to 180 if the angle mode is DEGREES.
     *   @param value the value whose arc cosine is to be
     *   returned
     *   @return the arc cosine of the given value
@@ -337,13 +359,17 @@ trait p5InstanceExtensions extends StObject {
   def alpha(color: Color): Double = js.native
   
   /**
-    *   Creates an ambient light with a color
+    *   Creates an ambient light with a color. Ambient
+    *   light is light that comes from everywhere on the
+    *   canvas. It has no particular source.
     *   @param color the ambient light color
     *   @chainable
     */
   def ambientLight(color: Color): p5 = js.native
   /**
-    *   Creates an ambient light with a color
+    *   Creates an ambient light with a color. Ambient
+    *   light is light that comes from everywhere on the
+    *   canvas. It has no particular source.
     *   @param gray a gray value
     *   @param [alpha] the alpha value
     *   @chainable
@@ -351,7 +377,9 @@ trait p5InstanceExtensions extends StObject {
   def ambientLight(gray: Double): p5 = js.native
   def ambientLight(gray: Double, alpha: Double): p5 = js.native
   /**
-    *   Creates an ambient light with a color
+    *   Creates an ambient light with a color. Ambient
+    *   light is light that comes from everywhere on the
+    *   canvas. It has no particular source.
     *   @param v1 red or hue value relative to the current
     *   color range
     *   @param v2 green or saturation value relative to
@@ -364,13 +392,17 @@ trait p5InstanceExtensions extends StObject {
   def ambientLight(v1: Double, v2: Double, v3: Double): p5 = js.native
   def ambientLight(v1: Double, v2: Double, v3: Double, alpha: Double): p5 = js.native
   /**
-    *   Creates an ambient light with a color
+    *   Creates an ambient light with a color. Ambient
+    *   light is light that comes from everywhere on the
+    *   canvas. It has no particular source.
     *   @param value a color string
     *   @chainable
     */
   def ambientLight(value: String): p5 = js.native
   /**
-    *   Creates an ambient light with a color
+    *   Creates an ambient light with a color. Ambient
+    *   light is light that comes from everywhere on the
+    *   canvas. It has no particular source.
     *   @param values an array containing the
     *   red,green,blue & and alpha components of the color
     *   @chainable
@@ -380,8 +412,12 @@ trait p5InstanceExtensions extends StObject {
   def ambientMaterial(color: String): p5 = js.native
   /**
     *   Ambient material for geometry with a given color.
-    *   You can view all possible materials in this
-    *   example.
+    *   Ambient material defines the color the object
+    *   reflects under any lighting. For example, if the
+    *   ambient material of an object is pure red, but the
+    *   ambient lighting only contains green, the object
+    *   will not reflect any light. Here's an example
+    *   containing all possible materials.
     *   @param color color, color Array, or CSS color
     *   string
     *   @chainable
@@ -390,23 +426,22 @@ trait p5InstanceExtensions extends StObject {
   def ambientMaterial(color: Color): p5 = js.native
   /**
     *   Ambient material for geometry with a given color.
-    *   You can view all possible materials in this
-    *   example.
+    *   Ambient material defines the color the object
+    *   reflects under any lighting. For example, if the
+    *   ambient material of an object is pure red, but the
+    *   ambient lighting only contains green, the object
+    *   will not reflect any light. Here's an example
+    *   containing all possible materials.
     *   @param v1 gray value, red or hue value (depending
     *   on the current color mode),
     *   @param [v2] green or saturation value
     *   @param [v3] blue or brightness value
-    *   @param [a] opacity
     *   @chainable
     */
   def ambientMaterial(v1: Double): p5 = js.native
   def ambientMaterial(v1: Double, v2: Double): p5 = js.native
   def ambientMaterial(v1: Double, v2: Double, v3: Double): p5 = js.native
-  def ambientMaterial(v1: Double, v2: Double, v3: Double, a: Double): p5 = js.native
-  def ambientMaterial(v1: Double, v2: Double, v3: Unit, a: Double): p5 = js.native
   def ambientMaterial(v1: Double, v2: Unit, v3: Double): p5 = js.native
-  def ambientMaterial(v1: Double, v2: Unit, v3: Double, a: Double): p5 = js.native
-  def ambientMaterial(v1: Double, v2: Unit, v3: Unit, a: Double): p5 = js.native
   
   /**
     *   Sets the current mode of p5 to given mode. Default
@@ -422,8 +457,9 @@ trait p5InstanceExtensions extends StObject {
     *   @param value to be added to the Array
     *   @return the array that was appended to
     */
-  def append(array: js.Array[js.Any], value: js.Any): js.Array[js.Any] = js.native
+  def append(array: js.Array[Any], value: Any): js.Array[Any] = js.native
   
+  def applyMatrix(a: js.Array[Any], b: Double, c: Double, d: Double, e: Double, f: Double): p5 = js.native
   /**
     *   Multiplies the current matrix by the one specified
     *   through the parameters. This is a powerful
@@ -434,17 +470,17 @@ trait p5InstanceExtensions extends StObject {
     *   follows the naming of the  WHATWG specification
     *   and corresponds to a transformation matrix of the
     *   form:
-    *   @param a numbers which define the 2x3 matrix to be
+    *   @param a numbers which define the 2×3 matrix to be
+    *   multiplied, or an array of numbers
+    *   @param b numbers which define the 2×3 matrix to be
     *   multiplied
-    *   @param b numbers which define the 2x3 matrix to be
+    *   @param c numbers which define the 2×3 matrix to be
     *   multiplied
-    *   @param c numbers which define the 2x3 matrix to be
+    *   @param d numbers which define the 2×3 matrix to be
     *   multiplied
-    *   @param d numbers which define the 2x3 matrix to be
+    *   @param e numbers which define the 2×3 matrix to be
     *   multiplied
-    *   @param e numbers which define the 2x3 matrix to be
-    *   multiplied
-    *   @param f numbers which define the 2x3 matrix to be
+    *   @param f numbers which define the 2×3 matrix to be
     *   multiplied
     *   @chainable
     */
@@ -452,20 +488,21 @@ trait p5InstanceExtensions extends StObject {
   
   /**
     *   Draw an arc to the screen. If called with only x,
-    *   y, w, h, start, and stop, the arc will be drawn
-    *   and filled as an open pie segment. If a mode
-    *   parameter is provided, the arc will be filled like
-    *   an open semi-circle (OPEN) , a closed semi-circle
-    *   (CHORD), or as a closed pie segment (PIE). The
-    *   origin may be changed with the ellipseMode()
-    *   function. The arc is always drawn clockwise from
-    *   wherever start falls to wherever stop falls on the
-    *   ellipse. Adding or subtracting TWO_PI to either
-    *   angle does not change where they fall. If both
-    *   start and stop fall at the same place, a full
-    *   ellipse will be drawn. Be aware that the the
-    *   y-axis increases in the downward direction
-    *   therefore the values of PI is counter clockwise.
+    *   y, w, h, start and stop, the arc will be drawn and
+    *   filled as an open pie segment. If a mode parameter
+    *   is provided, the arc will be filled like an open
+    *   semi-circle (OPEN), a closed semi-circle (CHORD),
+    *   or as a closed pie segment (PIE). The origin may
+    *   be changed with the ellipseMode() function. The
+    *   arc is always drawn clockwise from wherever start
+    *   falls to wherever stop falls on the ellipse.
+    *   Adding or subtracting TWO_PI to either angle does
+    *   not change where they fall. If both start and stop
+    *   fall at the same place, a full ellipse will be
+    *   drawn. Be aware that the y-axis increases in the
+    *   downward direction, therefore angles are measured
+    *   clockwise from the positive x-direction ("3
+    *   o'clock").
     *   @param x x-coordinate of the arc's ellipse
     *   @param y y-coordinate of the arc's ellipse
     *   @param w width of the arc's ellipse by default
@@ -479,7 +516,8 @@ trait p5InstanceExtensions extends StObject {
     *   @param [detail] optional parameter for WebGL mode
     *   only. This is to specify the number of vertices
     *   that makes up the perimeter of the arc. Default
-    *   value is 25.
+    *   value is 25. Won't draw a stroke for a detail of
+    *   more than 50.
     *   @chainable
     */
   def arc(x: Double, y: Double, w: Double, h: Double, start: Double, stop: Double): p5 = js.native
@@ -514,12 +552,11 @@ trait p5InstanceExtensions extends StObject {
     *   length. Note that copying values overwrites
     *   existing values in the destination array. To
     *   append values instead of overwriting them, use
-    *   concat().  The simplified version with only two
+    *   concat(). The simplified version with only two
     *   arguments, arrayCopy(src, dst), copies an entire
     *   array to another of the same size. It is
     *   equivalent to arrayCopy(src, 0, dst, 0,
     *   src.length).
-    *
     *
     *   Using this function is far more efficient for
     *   copying array data than iterating through a for()
@@ -529,8 +566,8 @@ trait p5InstanceExtensions extends StObject {
     *   @param [length] number of Array elements to be
     *   copied
     */
-  def arrayCopy(src: js.Array[js.Any], dst: js.Array[js.Any]): Unit = js.native
-  def arrayCopy(src: js.Array[js.Any], dst: js.Array[js.Any], length: Double): Unit = js.native
+  def arrayCopy(src: js.Array[Any], dst: js.Array[Any]): Unit = js.native
+  def arrayCopy(src: js.Array[Any], dst: js.Array[Any], length: Double): Unit = js.native
   /**
     *   Copies an array (or part of an array) to another
     *   array. The src array is copied to the dst array,
@@ -540,12 +577,11 @@ trait p5InstanceExtensions extends StObject {
     *   length. Note that copying values overwrites
     *   existing values in the destination array. To
     *   append values instead of overwriting them, use
-    *   concat().  The simplified version with only two
+    *   concat(). The simplified version with only two
     *   arguments, arrayCopy(src, dst), copies an entire
     *   array to another of the same size. It is
     *   equivalent to arrayCopy(src, 0, dst, 0,
     *   src.length).
-    *
     *
     *   Using this function is far more efficient for
     *   copying array data than iterating through a for()
@@ -559,19 +595,14 @@ trait p5InstanceExtensions extends StObject {
     *   @param length number of Array elements to be
     *   copied
     */
-  def arrayCopy(
-    src: js.Array[js.Any],
-    srcPosition: Double,
-    dst: js.Array[js.Any],
-    dstPosition: Double,
-    length: Double
-  ): Unit = js.native
+  def arrayCopy(src: js.Array[Any], srcPosition: Double, dst: js.Array[Any], dstPosition: Double, length: Double): Unit = js.native
   
   /**
     *   The inverse of sin(), returns the arc sine of a
     *   value. This function expects the values in the
     *   range of -1 to 1 and values are returned in the
-    *   range -PI/2 to PI/2.
+    *   range -PI/2 to PI/2 if the angleMode is RADIANS or
+    *   -90 to 90 if the angle mode is DEGREES.
     *   @param value the value whose arc sine is to be
     *   returned
     *   @return the arc sine of the given value
@@ -582,7 +613,9 @@ trait p5InstanceExtensions extends StObject {
     *   The inverse of tan(), returns the arc tangent of a
     *   value. This function expects the values in the
     *   range of -Infinity to Infinity (exclusive) and
-    *   values are returned in the range -PI/2 to PI/2.
+    *   values are returned in the range -PI/2 to PI/2 if
+    *   the angleMode is RADIANS or -90 to 90 if the angle
+    *   mode is DEGREES.
     *   @param value the value whose arc tangent is to be
     *   returned
     *   @return the arc tangent of the given value
@@ -593,12 +626,14 @@ trait p5InstanceExtensions extends StObject {
     *   Calculates the angle (in radians) from a specified
     *   point to the coordinate origin as measured from
     *   the positive x-axis. Values are returned as a
-    *   float in the range from PI to -PI. The atan2()
-    *   function is most often used for orienting geometry
-    *   to the position of the cursor.  Note: The
-    *   y-coordinate of the point is the first parameter,
-    *   and the x-coordinate is the second parameter, due
-    *   the the structure of calculating the tangent.
+    *   float in the range from PI to -PI if the angleMode
+    *   is RADIANS or 180 to -180 if the angleMode is
+    *   DEGREES. The atan2() function is most often used
+    *   for orienting geometry to the position of the
+    *   cursor. Note: The y-coordinate of the point is the
+    *   first parameter, and the x-coordinate is the
+    *   second parameter, due the the structure of
+    *   calculating the tangent.
     *   @param y y-coordinate of the point
     *   @param x x-coordinate of the point
     *   @return the arc tangent of the given point
@@ -613,12 +648,13 @@ trait p5InstanceExtensions extends StObject {
     *   window at the beginning of each frame, but it can
     *   be used inside setup() to set the background on
     *   the first frame of animation or if the background
-    *   need only be set once.  The color is either
+    *   need only be set once. The color is either
     *   specified in terms of the RGB, HSB, or HSL color
     *   depending on the current colorMode. (The default
     *   color space is RGB, with each value in the range
     *   from 0 to 255). The alpha range by default is also
     *   0 to 255.
+    *
     *
     *
     *   If a single string argument is provided, RGB, RGBA
@@ -627,10 +663,8 @@ trait p5InstanceExtensions extends StObject {
     *   number value as a second argument is not
     *   supported, the RGBA form should be used.
     *
-    *
     *   A p5.Color object can also be provided to set the
     *   background color.
-    *
     *
     *   A p5.Image can also be provided to set the
     *   background image.
@@ -651,12 +685,13 @@ trait p5InstanceExtensions extends StObject {
     *   window at the beginning of each frame, but it can
     *   be used inside setup() to set the background on
     *   the first frame of animation or if the background
-    *   need only be set once.  The color is either
+    *   need only be set once. The color is either
     *   specified in terms of the RGB, HSB, or HSL color
     *   depending on the current colorMode. (The default
     *   color space is RGB, with each value in the range
     *   from 0 to 255). The alpha range by default is also
     *   0 to 255.
+    *
     *
     *
     *   If a single string argument is provided, RGB, RGBA
@@ -665,10 +700,8 @@ trait p5InstanceExtensions extends StObject {
     *   number value as a second argument is not
     *   supported, the RGBA form should be used.
     *
-    *
     *   A p5.Color object can also be provided to set the
     *   background color.
-    *
     *
     *   A p5.Image can also be provided to set the
     *   background image.
@@ -685,12 +718,13 @@ trait p5InstanceExtensions extends StObject {
     *   window at the beginning of each frame, but it can
     *   be used inside setup() to set the background on
     *   the first frame of animation or if the background
-    *   need only be set once.  The color is either
+    *   need only be set once. The color is either
     *   specified in terms of the RGB, HSB, or HSL color
     *   depending on the current colorMode. (The default
     *   color space is RGB, with each value in the range
     *   from 0 to 255). The alpha range by default is also
     *   0 to 255.
+    *
     *
     *
     *   If a single string argument is provided, RGB, RGBA
@@ -699,10 +733,8 @@ trait p5InstanceExtensions extends StObject {
     *   number value as a second argument is not
     *   supported, the RGBA form should be used.
     *
-    *
     *   A p5.Color object can also be provided to set the
     *   background color.
-    *
     *
     *   A p5.Image can also be provided to set the
     *   background image.
@@ -722,12 +754,13 @@ trait p5InstanceExtensions extends StObject {
     *   window at the beginning of each frame, but it can
     *   be used inside setup() to set the background on
     *   the first frame of animation or if the background
-    *   need only be set once.  The color is either
+    *   need only be set once. The color is either
     *   specified in terms of the RGB, HSB, or HSL color
     *   depending on the current colorMode. (The default
     *   color space is RGB, with each value in the range
     *   from 0 to 255). The alpha range by default is also
     *   0 to 255.
+    *
     *
     *
     *   If a single string argument is provided, RGB, RGBA
@@ -736,10 +769,8 @@ trait p5InstanceExtensions extends StObject {
     *   number value as a second argument is not
     *   supported, the RGBA form should be used.
     *
-    *
     *   A p5.Color object can also be provided to set the
     *   background color.
-    *
     *
     *   A p5.Image can also be provided to set the
     *   background image.
@@ -760,12 +791,13 @@ trait p5InstanceExtensions extends StObject {
     *   window at the beginning of each frame, but it can
     *   be used inside setup() to set the background on
     *   the first frame of animation or if the background
-    *   need only be set once.  The color is either
+    *   need only be set once. The color is either
     *   specified in terms of the RGB, HSB, or HSL color
     *   depending on the current colorMode. (The default
     *   color space is RGB, with each value in the range
     *   from 0 to 255). The alpha range by default is also
     *   0 to 255.
+    *
     *
     *
     *   If a single string argument is provided, RGB, RGBA
@@ -774,10 +806,8 @@ trait p5InstanceExtensions extends StObject {
     *   number value as a second argument is not
     *   supported, the RGBA form should be used.
     *
-    *
     *   A p5.Color object can also be provided to set the
     *   background color.
-    *
     *
     *   A p5.Image can also be provided to set the
     *   background image.
@@ -801,12 +831,13 @@ trait p5InstanceExtensions extends StObject {
     *   window at the beginning of each frame, but it can
     *   be used inside setup() to set the background on
     *   the first frame of animation or if the background
-    *   need only be set once.  The color is either
+    *   need only be set once. The color is either
     *   specified in terms of the RGB, HSB, or HSL color
     *   depending on the current colorMode. (The default
     *   color space is RGB, with each value in the range
     *   from 0 to 255). The alpha range by default is also
     *   0 to 255.
+    *
     *
     *
     *   If a single string argument is provided, RGB, RGBA
@@ -815,10 +846,8 @@ trait p5InstanceExtensions extends StObject {
     *   number value as a second argument is not
     *   supported, the RGBA form should be used.
     *
-    *
     *   A p5.Color object can also be provided to set the
     *   background color.
-    *
     *
     *   A p5.Image can also be provided to set the
     *   background image.
@@ -838,7 +867,7 @@ trait p5InstanceExtensions extends StObject {
     *   opposite direction from the exterior shape. First
     *   draw vertices for the exterior clockwise order,
     *   then for internal shapes, draw vertices shape in
-    *   counter-clockwise.  These functions can only be
+    *   counter-clockwise. These functions can only be
     *   used within a beginShape()/endShape() pair and
     *   transformations such as translate(), rotate(), and
     *   scale() do not work within a
@@ -857,22 +886,42 @@ trait p5InstanceExtensions extends StObject {
     *   parameter tells it which types of shapes to create
     *   from the provided vertices. With no mode
     *   specified, the shape can be any irregular polygon.
-    *   The parameters available for beginShape() are
-    *   POINTS, LINES, TRIANGLES, TRIANGLE_FAN,
-    *   TRIANGLE_STRIP, QUADS, and QUAD_STRIP. After
-    *   calling the beginShape() function, a series of
-    *   vertex() commands must follow. To stop drawing the
-    *   shape, call endShape(). Each shape will be
+    *   The parameters available for beginShape() are:
+    *
+    *   POINTS Draw a series of points
+    *
+    *   LINES Draw a series of unconnected line segments
+    *   (individual lines)
+    *
+    *   TRIANGLES Draw a series of separate triangles
+    *
+    *   TRIANGLE_FAN Draw a series of connected triangles
+    *   sharing the first vertex in a fan-like fashion
+    *
+    *   TRIANGLE_STRIP Draw a series of connected
+    *   triangles in strip fashion
+    *
+    *   QUADS Draw a series of separate quad
+    *
+    *   QUAD_STRIP Draw quad strip using adjacent edges to
+    *   form the next quad
+    *
+    *   TESS (WebGl only) Handle irregular polygon for
+    *   filling curve by explicit tessellation
+    *
+    *   After calling the beginShape() function, a series
+    *   of vertex() commands must follow. To stop drawing
+    *   the shape, call endShape(). Each shape will be
     *   outlined with the current stroke color and filled
     *   with the fill color.
-    *
     *
     *   Transformations such as translate(), rotate(), and
     *   scale() do not work within beginShape(). It is
     *   also not possible to use other shapes, such as
     *   ellipse() or rect() within beginShape().
     *   @param [kind] either POINTS, LINES, TRIANGLES,
-    *   TRIANGLE_FAN TRIANGLE_STRIP, QUADS, or QUAD_STRIP
+    *   TRIANGLE_FAN TRIANGLE_STRIP, QUADS, QUAD_STRIP or
+    *   TESS
     *   @chainable
     */
   def beginShape(): p5 = js.native
@@ -888,7 +937,7 @@ trait p5InstanceExtensions extends StObject {
     *   parameters specify the two control points which
     *   define the shape of the curve. Approximately
     *   speaking, control points "pull" the curve towards
-    *   them.Bezier curves were developed by French
+    *   them. Bezier curves were developed by French
     *   automotive engineer Pierre Bezier, and are
     *   commonly used in computer graphics to define
     *   gently sloping curves. See also curve().
@@ -915,7 +964,7 @@ trait p5InstanceExtensions extends StObject {
     *   parameters specify the two control points which
     *   define the shape of the curve. Approximately
     *   speaking, control points "pull" the curve towards
-    *   them.Bezier curves were developed by French
+    *   them. Bezier curves were developed by French
     *   automotive engineer Pierre Bezier, and are
     *   commonly used in computer graphics to define
     *   gently sloping curves. See also curve().
@@ -952,10 +1001,9 @@ trait p5InstanceExtensions extends StObject {
   ): p5 = js.native
   
   /**
-    *   Sets the resolution at which Beziers display. The
-    *   default value is 20.
-    *
-    *   This function is only useful when using the WEBGL
+    *   Sets the resolution at which Bezier's curve is
+    *   displayed. The default value is 20. Note, This
+    *   function is only useful when using the WEBGL
     *   renderer as the default canvas renderer does not
     *   use this information.
     *   @param detail resolution of the curves
@@ -964,10 +1012,13 @@ trait p5InstanceExtensions extends StObject {
   def bezierDetail(detail: Double): p5 = js.native
   
   /**
-    *   Evaluates the Bezier at position t for points a,
-    *   b, c, d. The parameters a and d are the first and
-    *   last points on the curve, and b and c are the
-    *   control points. The final parameter t varies
+    *   Given the x or y co-ordinate values of control and
+    *   anchor points of a bezier curve, it evaluates the
+    *   x or y coordinate of the bezier at position t. The
+    *   parameters a and d are the x or y coordinates of
+    *   first and last points on the curve while b and c
+    *   are of the control points.The final parameter t is
+    *   the position of the resultant point which is given
     *   between 0 and 1. This can be done once with the x
     *   coordinates and a second time with the y
     *   coordinates to get the location of a bezier curve
@@ -1004,7 +1055,7 @@ trait p5InstanceExtensions extends StObject {
     *   shape. For WebGL mode bezierVertex() can be used
     *   in 2D as well as 3D mode. 2D mode expects 6
     *   parameters, while 3D mode expects 9 parameters
-    *   (including z coordinates).  The first time
+    *   (including z coordinates). The first time
     *   bezierVertex() is used within a beginShape() call,
     *   it must be prefaced with a call to vertex() to set
     *   the first anchor point. This function must be used
@@ -1030,7 +1081,7 @@ trait p5InstanceExtensions extends StObject {
     *   shape. For WebGL mode bezierVertex() can be used
     *   in 2D as well as 3D mode. 2D mode expects 6
     *   parameters, while 3D mode expects 9 parameters
-    *   (including z coordinates).  The first time
+    *   (including z coordinates). The first time
     *   bezierVertex() is used within a beginShape() call,
     *   it must be prefaced with a call to vertex() to set
     *   the first anchor point. This function must be used
@@ -1155,6 +1206,8 @@ trait p5InstanceExtensions extends StObject {
     *   of the colors.
     *   - REPLACE - the pixels entirely replace the others
     *   and don't utilize alpha (transparency) values.
+    *   - REMOVE - removes pixels from B with the alpha
+    *   strength of A.
     *   - OVERLAY - mix of MULTIPLY and SCREEN .
     *   Multiplies dark values, and screens light values.
     *   (2D)
@@ -1168,7 +1221,6 @@ trait p5InstanceExtensions extends StObject {
     *   contrast, ignores lights. (2D)
     *   - SUBTRACT - remainder of A and B (3D)
     *
-    *
     *   (2D) indicates that this blend mode only works in
     *   the 2D renderer.
     *
@@ -1177,7 +1229,7 @@ trait p5InstanceExtensions extends StObject {
     *   @param mode blend mode to set for canvas. either
     *   BLEND, DARKEST, LIGHTEST, DIFFERENCE, MULTIPLY,
     *   EXCLUSION, SCREEN, REPLACE, OVERLAY, HARD_LIGHT,
-    *   SOFT_LIGHT, DODGE, BURN, ADD, or SUBTRACT
+    *   SOFT_LIGHT, DODGE, BURN, ADD, REMOVE or SUBTRACT
     */
   def blendMode(mode: BLEND_MODE): Unit = js.native
   
@@ -1205,7 +1257,7 @@ trait p5InstanceExtensions extends StObject {
     *   @return boolean representation of value
     */
   def boolean(n: String): Boolean = js.native
-  def boolean(n: js.Array[js.Any]): Boolean = js.native
+  def boolean(n: js.Array[Any]): Boolean = js.native
   def boolean(n: Boolean): Boolean = js.native
   def boolean(n: Double): Boolean = js.native
   
@@ -1291,17 +1343,28 @@ trait p5InstanceExtensions extends StObject {
     *   @param ns values to parse
     *   @return array of byte representation of values
     */
-  def byte(ns: js.Array[js.Any]): js.Array[Double] = js.native
+  def byte(ns: js.Array[Any]): js.Array[Double] = js.native
   
   /**
-    *   Sets the camera position for a 3D sketch.
-    *   Parameters for this function define the position
-    *   for the camera, the center of the sketch (where
+    *   Sets the position of the current camera in a 3D
+    *   sketch. Parameters for this function define the
+    *   camera's position, the center of the sketch (where
     *   the camera is pointing), and an up direction (the
-    *   orientation of the camera). When called with no
-    *   arguments, this function creates a default camera
-    *   equivalent to camera(0, 0, (height/2.0) /
-    *   tan(PI*30.0 / 180.0), 0, 0, 0, 0, 1, 0);
+    *   orientation of the camera). This function
+    *   simulates the movements of the camera, allowing
+    *   objects to be viewed from various angles.
+    *   Remember, it does not move the objects themselves
+    *   but the camera instead. For example when the
+    *   centerX value is positive, and the camera is
+    *   rotating to the right side of the sketch, the
+    *   object will seem like it's moving to the left.
+    *
+    *   See this example to view the position of your
+    *   camera.
+    *
+    *   If no parameters are given, the following default
+    *   is used: camera(0, 0, (height/2) / tan(PI/6), 0,
+    *   0, 0, 0, 1, 0)
     *   @param [x] camera position value on x axis
     *   @param [y] camera position value on y axis
     *   @param [z] camera position value on z axis
@@ -1351,7 +1414,7 @@ trait p5InstanceExtensions extends StObject {
     *   fire.
     *   @chainable
     */
-  def changed(fxn: js.Function1[/* repeated */ js.Any, js.Any]): p5 = js.native
+  def changed(fxn: js.Function1[/* repeated */ Any, Any]): p5 = js.native
   def changed(fxn: Boolean): p5 = js.native
   
   /**
@@ -1380,7 +1443,7 @@ trait p5InstanceExtensions extends StObject {
     *   @param ns values to parse
     *   @return array of string representation of values
     */
-  def char(ns: js.Array[js.Any]): js.Array[String] = js.native
+  def char(ns: js.Array[Any]): js.Array[String] = js.native
   
   /**
     *   Draws a circle to the screen. A circle is a simple
@@ -1408,10 +1471,20 @@ trait p5InstanceExtensions extends StObject {
     *   pixels in additional graphics areas created with
     *   createGraphics() can be entirely or partially
     *   transparent. This function clears everything to
-    *   make all of the pixels 100% transparent.
+    *   make all of the pixels 100% transparent. Note: In
+    *   WebGL mode, this function can be passed normalized
+    *   RGBA color values in order to clear the screen to
+    *   a specific color. In addition to color, it will
+    *   also clear the depth buffer. If you are not using
+    *   the webGL renderer these color values will have no
+    *   effect.
+    *   @param r normalized red val.
+    *   @param g normalized green val.
+    *   @param b normalized blue val.
+    *   @param a normalized alpha val.
     *   @chainable
     */
-  def clear(): p5 = js.native
+  def clear(r: Double, g: Double, b: Double, a: Double): p5 = js.native
   
   /**
     *   Clears all local storage items set with
@@ -1426,14 +1499,13 @@ trait p5InstanceExtensions extends StObject {
     *   colorMode(). The default mode is RGB values from 0
     *   to 255 and, therefore, the function call
     *   color(255, 204, 0) will return a bright yellow
-    *   color.  Note that if only one value is provided to
+    *   color. Note that if only one value is provided to
     *   color(), it will be interpreted as a grayscale
     *   value. Add a second value, and it will be used for
     *   alpha transparency. When three values are
     *   specified, they are interpreted as either RGB or
     *   HSB values. Adding a fourth value applies alpha
     *   transparency.
-    *
     *
     *   If a single string argument is provided, RGB, RGBA
     *   and Hex CSS color strings and all named color
@@ -1449,14 +1521,13 @@ trait p5InstanceExtensions extends StObject {
     *   colorMode(). The default mode is RGB values from 0
     *   to 255 and, therefore, the function call
     *   color(255, 204, 0) will return a bright yellow
-    *   color.  Note that if only one value is provided to
+    *   color. Note that if only one value is provided to
     *   color(), it will be interpreted as a grayscale
     *   value. Add a second value, and it will be used for
     *   alpha transparency. When three values are
     *   specified, they are interpreted as either RGB or
     *   HSB values. Adding a fourth value applies alpha
     *   transparency.
-    *
     *
     *   If a single string argument is provided, RGB, RGBA
     *   and Hex CSS color strings and all named color
@@ -1478,14 +1549,13 @@ trait p5InstanceExtensions extends StObject {
     *   colorMode(). The default mode is RGB values from 0
     *   to 255 and, therefore, the function call
     *   color(255, 204, 0) will return a bright yellow
-    *   color.  Note that if only one value is provided to
+    *   color. Note that if only one value is provided to
     *   color(), it will be interpreted as a grayscale
     *   value. Add a second value, and it will be used for
     *   alpha transparency. When three values are
     *   specified, they are interpreted as either RGB or
     *   HSB values. Adding a fourth value applies alpha
     *   transparency.
-    *
     *
     *   If a single string argument is provided, RGB, RGBA
     *   and Hex CSS color strings and all named color
@@ -1510,14 +1580,13 @@ trait p5InstanceExtensions extends StObject {
     *   colorMode(). The default mode is RGB values from 0
     *   to 255 and, therefore, the function call
     *   color(255, 204, 0) will return a bright yellow
-    *   color.  Note that if only one value is provided to
+    *   color. Note that if only one value is provided to
     *   color(), it will be interpreted as a grayscale
     *   value. Add a second value, and it will be used for
     *   alpha transparency. When three values are
     *   specified, they are interpreted as either RGB or
     *   HSB values. Adding a fourth value applies alpha
     *   transparency.
-    *
     *
     *   If a single string argument is provided, RGB, RGBA
     *   and Hex CSS color strings and all named color
@@ -1534,14 +1603,13 @@ trait p5InstanceExtensions extends StObject {
     *   colorMode(). The default mode is RGB values from 0
     *   to 255 and, therefore, the function call
     *   color(255, 204, 0) will return a bright yellow
-    *   color.  Note that if only one value is provided to
+    *   color. Note that if only one value is provided to
     *   color(), it will be interpreted as a grayscale
     *   value. Add a second value, and it will be used for
     *   alpha transparency. When three values are
     *   specified, they are interpreted as either RGB or
     *   HSB values. Adding a fourth value applies alpha
     *   transparency.
-    *
     *
     *   If a single string argument is provided, RGB, RGBA
     *   and Hex CSS color strings and all named color
@@ -1562,9 +1630,9 @@ trait p5InstanceExtensions extends StObject {
     *   colorMode(RGB, 255). Setting colorMode(HSB) lets
     *   you use the HSB system instead. By default, this
     *   is colorMode(HSB, 360, 100, 100, 1). You can also
-    *   use HSL.  Note: existing color objects remember
-    *   the mode that they were created in, so you can
-    *   change modes as you like without affecting their
+    *   use HSL. Note: existing color objects remember the
+    *   mode that they were created in, so you can change
+    *   modes as you like without affecting their
     *   appearance.
     *   @param mode either RGB, HSB or HSL, corresponding
     *   to Red/Green/Blue and Hue/Saturation/Brightness
@@ -1583,9 +1651,9 @@ trait p5InstanceExtensions extends StObject {
     *   colorMode(RGB, 255). Setting colorMode(HSB) lets
     *   you use the HSB system instead. By default, this
     *   is colorMode(HSB, 360, 100, 100, 1). You can also
-    *   use HSL.  Note: existing color objects remember
-    *   the mode that they were created in, so you can
-    *   change modes as you like without affecting their
+    *   use HSL. Note: existing color objects remember the
+    *   mode that they were created in, so you can change
+    *   modes as you like without affecting their
     *   appearance.
     *   @param mode either RGB, HSB or HSL, corresponding
     *   to Red/Green/Blue and Hue/Saturation/Brightness
@@ -1610,10 +1678,16 @@ trait p5InstanceExtensions extends StObject {
     *   @param b second Array to concatenate
     *   @return concatenated array
     */
-  def concat(a: js.Array[js.Any], b: js.Array[js.Any]): js.Array[js.Any] = js.native
+  def concat(a: js.Array[Any], b: js.Array[Any]): js.Array[Any] = js.native
   
   /**
-    *   Draw a cone with given radius and height
+    *   Draw a cone with given radius and height DetailX
+    *   and detailY determine the number of subdivisions
+    *   in the x-dimension and the y-dimension of a cone.
+    *   More subdivisions make the cone seem smoother. The
+    *   recommended maximum value for detailX is 24. Using
+    *   a value greater than 24 may cause a warning or
+    *   slow down the browser.
     *   @param [radius] radius of the bottom surface
     *   @param [height] height of the cone
     *   @param [detailX] number of segments, the more
@@ -1744,9 +1818,7 @@ trait p5InstanceExtensions extends StObject {
   
   /**
     *   Creates an <a></a> element in the DOM for
-    *   including a hyperlink. Appends to the container
-    *   node if one is specified, otherwise appends to
-    *   body.
+    *   including a hyperlink.
     *   @param href url of page to link to
     *   @param html inner html of link element to display
     *   @param [target] target where new link should open,
@@ -1758,14 +1830,12 @@ trait p5InstanceExtensions extends StObject {
   
   /**
     *   Creates a hidden HTML5 <audio> element in the DOM
-    *   for simple audio playback. Appends to the
-    *   container node if one is specified, otherwise
-    *   appends to body. The first parameter can be either
-    *   a single string path to a audio file, or an array
-    *   of string paths to different formats of the same
-    *   audio. This is useful for ensuring that your audio
-    *   can play across different browsers, as each
-    *   supports different formats. See this page for
+    *   for simple audio playback. The first parameter can
+    *   be either a single string path to a audio file, or
+    *   an array of string paths to different formats of
+    *   the same audio. This is useful for ensuring that
+    *   your audio can play across different browsers, as
+    *   each supports different formats. See this page for
     *   further information about supported formats.
     *   @param [src] path to an audio file, or array of
     *   paths for supporting different browsers
@@ -1775,21 +1845,19 @@ trait p5InstanceExtensions extends StObject {
     *   enough data has been loaded to play the media up
     *   to its end without having to stop for further
     *   buffering of content
-    *   @return pointer to audio p5.Element
+    *   @return pointer to audio p5.MediaElement
     */
   def createAudio(): MediaElement = js.native
   def createAudio(src: String): MediaElement = js.native
-  def createAudio(src: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): MediaElement = js.native
+  def createAudio(src: String, callback: js.Function1[/* repeated */ Any, Any]): MediaElement = js.native
   def createAudio(src: js.Array[String]): MediaElement = js.native
-  def createAudio(src: js.Array[String], callback: js.Function1[/* repeated */ js.Any, js.Any]): MediaElement = js.native
-  def createAudio(src: Unit, callback: js.Function1[/* repeated */ js.Any, js.Any]): MediaElement = js.native
+  def createAudio(src: js.Array[String], callback: js.Function1[/* repeated */ Any, Any]): MediaElement = js.native
+  def createAudio(src: Unit, callback: js.Function1[/* repeated */ Any, Any]): MediaElement = js.native
   
   /**
     *   Creates a <button></button> element in the DOM.
     *   Use .size() to set the display size of the button.
     *   Use .mousePressed() to specify behavior on press.
-    *   Appends to the container node if one is specified,
-    *   otherwise appends to body.
     *   @param label label displayed on the button
     *   @param [value] value of the button
     *   @return pointer to p5.Element holding created node
@@ -1798,9 +1866,18 @@ trait p5InstanceExtensions extends StObject {
   def createButton(label: String, value: String): Element = js.native
   
   /**
-    *   Creates a new p5.Camera object and tells the
-    *   renderer to use that camera. Returns the p5.Camera
-    *   object.
+    *   Creates a new p5.Camera object and sets it as the
+    *   current (active) camera. The new camera is
+    *   initialized with a default position (see camera())
+    *   and a default perspective projection (see
+    *   perspective()). Its properties can be controlled
+    *   with the p5.Camera methods.
+    *
+    *   Note: Every 3D sketch starts with a default camera
+    *   initialized. This camera can be controlled with
+    *   the global methods camera(), perspective(),
+    *   ortho(), and frustum() if it is the only camera in
+    *   the scene.
     *   @return The newly created camera object.
     */
   def createCamera(): Camera = js.native
@@ -1813,11 +1890,17 @@ trait p5InstanceExtensions extends StObject {
     *   result in very unpredictable behavior. If you want
     *   more than one drawing canvas you could use
     *   createGraphics (hidden by default but it can be
-    *   shown).  The system variables width and height are
-    *   set by the parameters passed to this function. If
-    *   createCanvas() is not used, the window will be
-    *   given a default size of 100x100 pixels.
+    *   shown). Important note: in 2D mode (i.e. when
+    *   p5.Renderer is not set) the origin (0,0) is
+    *   positioned at the top left of the screen. In 3D
+    *   mode (i.e. when p5.Renderer is set to WEBGL), the
+    *   origin is positioned at the center of the canvas.
+    *   See this issue for more information.
     *
+    *   The system variables width and height are set by
+    *   the parameters passed to this function. If
+    *   createCanvas() is not used, the window will be
+    *   given a default size of 100×100 pixels.
     *
     *   For more ways to position the canvas, see the
     *   positioning the canvas wiki page.
@@ -1854,11 +1937,11 @@ trait p5InstanceExtensions extends StObject {
     *   @return capture video p5.Element
     */
   def createCapture(`type`: String): Element = js.native
-  def createCapture(`type`: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): Element = js.native
+  def createCapture(`type`: String, callback: js.Function1[/* repeated */ Any, Any]): Element = js.native
   def createCapture(`type`: js.Object): Element = js.native
-  def createCapture(`type`: js.Object, callback: js.Function1[/* repeated */ js.Any, js.Any]): Element = js.native
+  def createCapture(`type`: js.Object, callback: js.Function1[/* repeated */ Any, Any]): Element = js.native
   def createCapture(`type`: TYPE): Element = js.native
-  def createCapture(`type`: TYPE, callback: js.Function1[/* repeated */ js.Any, js.Any]): Element = js.native
+  def createCapture(`type`: TYPE, callback: js.Function1[/* repeated */ Any, Any]): Element = js.native
   
   /**
     *   Creates a checkbox <input></input> element in the
@@ -1888,9 +1971,29 @@ trait p5InstanceExtensions extends StObject {
   def createColorPicker(value: Color): Element = js.native
   
   /**
+    *   Create a p5.Convolver. Accepts a path to a
+    *   soundfile that will be used to generate an impulse
+    *   response.
+    *   @param path path to a sound file
+    *   @param [callback] function to call if loading is
+    *   successful. The object will be passed in as the
+    *   argument to the callback function.
+    *   @param [errorCallback] function to call if loading
+    *   is not successful. A custom error will be passed
+    *   in as the argument to the callback function.
+    */
+  def createConvolver(path: String): Convolver = js.native
+  def createConvolver(path: String, callback: js.Function1[/* repeated */ Any, Any]): Convolver = js.native
+  def createConvolver(
+    path: String,
+    callback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): Convolver = js.native
+  def createConvolver(path: String, callback: Unit, errorCallback: js.Function1[/* repeated */ Any, Any]): Convolver = js.native
+  
+  /**
     *   Creates a <div></div> element in the DOM with
-    *   given inner HTML. Appends to the container node if
-    *   one is specified, otherwise appends to body.
+    *   given inner HTML.
     *   @param [html] inner HTML for element created
     *   @return pointer to p5.Element holding created node
     */
@@ -1899,8 +2002,7 @@ trait p5InstanceExtensions extends StObject {
   
   /**
     *   Creates element with given tag in the DOM with
-    *   given content. Appends to the container node if
-    *   one is specified, otherwise appends to body.
+    *   given content.
     *   @param tag tag for the new element
     *   @param [content] html content to be inserted into
     *   the element
@@ -1913,17 +2015,15 @@ trait p5InstanceExtensions extends StObject {
     *   Creates an <input></input> element in the DOM of
     *   type 'file'. This allows users to select local
     *   files for use in a sketch.
-    *   @param [callback] callback function for when a
-    *   file loaded
-    *   @param [multiple] optional to allow multiple files
-    *   selected
+    *   @param callback callback function for when a file
+    *   is loaded
+    *   @param [multiple] optional, to allow multiple
+    *   files to be selected
     *   @return pointer to p5.Element holding created DOM
     *   element
     */
-  def createFileInput(): Element = js.native
-  def createFileInput(callback: js.Function1[/* repeated */ js.Any, js.Any]): Element = js.native
-  def createFileInput(callback: js.Function1[/* repeated */ js.Any, js.Any], multiple: String): Element = js.native
-  def createFileInput(callback: Unit, multiple: String): Element = js.native
+  def createFileInput(callback: js.Function1[/* repeated */ Any, Any]): Element = js.native
+  def createFileInput(callback: js.Function1[/* repeated */ Any, Any], multiple: Boolean): Element = js.native
   
   /**
     *   Creates and returns a new p5.Renderer object. Use
@@ -1943,7 +2043,7 @@ trait p5InstanceExtensions extends StObject {
     *   Creates a new p5.Image (the datatype for storing
     *   images). This provides a fresh buffer of pixels to
     *   play with. Set the size of the buffer with the
-    *   width and height parameters.  .pixels gives access
+    *   width and height parameters. .pixels gives access
     *   to an array containing the values for all the
     *   pixels in the display window. These values are
     *   numbers. This array is the size (including an
@@ -1953,7 +2053,6 @@ trait p5InstanceExtensions extends StObject {
     *   to right across each row, then down each column.
     *   See .pixels for more info. It may also be simpler
     *   to use set() or get().
-    *
     *
     *   Before accessing the pixels of an image, the data
     *   must loaded with the loadPixels() function. After
@@ -1968,43 +2067,58 @@ trait p5InstanceExtensions extends StObject {
   
   /**
     *   Creates an <img> element in the DOM with given src
-    *   and alternate text. Appends to the container node
-    *   if one is specified, otherwise appends to body.
+    *   and alternate text.
     *   @param src src path or url for image
-    *   @param [alt] alternate text to be used if image
-    *   does not load
-    *   @param [successCallback] callback to be called
-    *   once image data is loaded
+    *   @param alt alternate text to be used if image does
+    *   not load. You can use also an empty string ("") if
+    *   that an image is not intended to be viewed.
     *   @return pointer to p5.Element holding created node
     */
-  def createImg(src: String): Element = js.native
   def createImg(src: String, alt: String): Element = js.native
-  def createImg(src: String, alt: String, successCallback: js.Function1[/* repeated */ js.Any, js.Any]): Element = js.native
-  def createImg(src: String, alt: Unit, successCallback: js.Function1[/* repeated */ js.Any, js.Any]): Element = js.native
   /**
     *   Creates an <img> element in the DOM with given src
-    *   and alternate text. Appends to the container node
-    *   if one is specified, otherwise appends to body.
+    *   and alternate text.
     *   @param src src path or url for image
-    *   @param successCallback callback to be called once
-    *   image data is loaded
+    *   @param alt alternate text to be used if image does
+    *   not load. You can use also an empty string ("") if
+    *   that an image is not intended to be viewed.
+    *   @param crossOrigin crossOrigin property of the img
+    *   element; use either 'anonymous' or
+    *   'use-credentials' to retrieve the image with
+    *   cross-origin access (for later use with canvas. if
+    *   an empty string("") is passed, CORS is not used
+    *   @param [successCallback] callback to be called
+    *   once image data is loaded with the p5.Element as
+    *   argument
+    *   @return pointer to p5.Element holding created node
     */
-  def createImg(src: String, successCallback: js.Function1[/* repeated */ js.Any, js.Any]): js.Object | Element = js.native
+  def createImg(src: String, alt: String, crossOrigin: String): Element = js.native
+  def createImg(
+    src: String,
+    alt: String,
+    crossOrigin: String,
+    successCallback: js.Function1[/* repeated */ Any, Any]
+  ): Element = js.native
   
   /**
     *   Creates an <input></input> element in the DOM for
     *   text input. Use .size() to set the display length
-    *   of the box. Appends to the container node if one
-    *   is specified, otherwise appends to body.
+    *   of the box.
     *   @param [value] default value of the input box
-    *   @param [type] type of text, ie text, password etc.
-    *   Defaults to text
-    *   @return pointer to p5.Element holding created node
     */
   def createInput(): Element = js.native
+  /**
+    *   Creates an <input></input> element in the DOM for
+    *   text input. Use .size() to set the display length
+    *   of the box.
+    *   @param value default value of the input box
+    *   @param [type] type of text, ie text, password etc.
+    *   Defaults to text. Needs a value to be specified
+    *   first.
+    *   @return pointer to p5.Element holding created node
+    */
   def createInput(value: String): Element = js.native
   def createInput(value: String, `type`: String): Element = js.native
-  def createInput(value: Unit, `type`: String): Element = js.native
   
   /**
     *   Creates a new instance of p5.NumberDict using the
@@ -2021,8 +2135,6 @@ trait p5InstanceExtensions extends StObject {
   /**
     *   Creates a <p></p> element in the DOM with given
     *   inner HTML. Used for paragraph length text.
-    *   Appends to the container node if one is specified,
-    *   otherwise appends to body.
     *   @param [html] inner HTML for element created
     *   @return pointer to p5.Element holding created node
     */
@@ -2030,23 +2142,102 @@ trait p5InstanceExtensions extends StObject {
   def createP(html: String): Element = js.native
   
   /**
-    *   Creates a radio button <input></input> element in
-    *   the DOM. The .option() method can be used to set
-    *   options for the radio after it is created. The
-    *   .value() method will return the currently selected
-    *   option.
-    *   @param [divId] the id and name of the created div
-    *   and input field respectively
+    *   Creates a radio button element in the DOM.It also
+    *   helps existing radio buttons assign methods of
+    *   p5.Element. - .option(value, [label]) can be used
+    *   to create a new option for the element. If an
+    *   option with a value already exists, it will be
+    *   returned. It is recommended to use string values
+    *   as input for value. Optionally, a label can be
+    *   provided as second argument for the option.
+    *   - .remove(value) can be used to remove an option
+    *   for the element. String values recommended as
+    *   input for value.
+    *   - .value() method will return the currently
+    *   selected value.
+    *   - .selected() method will return the currently
+    *   selected input element.
+    *   - .selected(value) method will select the option
+    *   and return it. String values recommended as input
+    *   for value.
+    *   - .disable(Boolean) method will enable/disable the
+    *   whole radio button element.
     *   @return pointer to p5.Element holding created node
     */
   def createRadio(): Element = js.native
-  def createRadio(divId: String): Element = js.native
+  /**
+    *   Creates a radio button element in the DOM.It also
+    *   helps existing radio buttons assign methods of
+    *   p5.Element. - .option(value, [label]) can be used
+    *   to create a new option for the element. If an
+    *   option with a value already exists, it will be
+    *   returned. It is recommended to use string values
+    *   as input for value. Optionally, a label can be
+    *   provided as second argument for the option.
+    *   - .remove(value) can be used to remove an option
+    *   for the element. String values recommended as
+    *   input for value.
+    *   - .value() method will return the currently
+    *   selected value.
+    *   - .selected() method will return the currently
+    *   selected input element.
+    *   - .selected(value) method will select the option
+    *   and return it. String values recommended as input
+    *   for value.
+    *   - .disable(Boolean) method will enable/disable the
+    *   whole radio button element.
+    *   @param containerElement An container HTML Element
+    *   either a div or span inside which all existing
+    *   radio inputs will be considered as options.
+    *   @param [name] A name parameter for each Input
+    *   Element.
+    *   @return pointer to p5.Element holding created node
+    */
+  def createRadio(containerElement: js.Object): Element = js.native
+  def createRadio(containerElement: js.Object, name: String): Element = js.native
+  /**
+    *   Creates a radio button element in the DOM.It also
+    *   helps existing radio buttons assign methods of
+    *   p5.Element. - .option(value, [label]) can be used
+    *   to create a new option for the element. If an
+    *   option with a value already exists, it will be
+    *   returned. It is recommended to use string values
+    *   as input for value. Optionally, a label can be
+    *   provided as second argument for the option.
+    *   - .remove(value) can be used to remove an option
+    *   for the element. String values recommended as
+    *   input for value.
+    *   - .value() method will return the currently
+    *   selected value.
+    *   - .selected() method will return the currently
+    *   selected input element.
+    *   - .selected(value) method will select the option
+    *   and return it. String values recommended as input
+    *   for value.
+    *   - .disable(Boolean) method will enable/disable the
+    *   whole radio button element.
+    *   @param name A name parameter for each Input
+    *   Element.
+    *   @return pointer to p5.Element holding created node
+    */
+  def createRadio(name: String): Element = js.native
   
   /**
     *   Creates a dropdown menu <select></select> element
     *   in the DOM. It also helps to assign select-box
     *   methods to p5.Element when selecting existing
-    *   select box
+    *   select box. - .option(name, [value]) can be used
+    *   to set options for the select after it is created.
+    *   - .value() will return the currently selected
+    *   option.
+    *   - .selected() will return current dropdown element
+    *   which is an instance of p5.Element
+    *   - .selected(value) can be used to make given
+    *   option selected by default when the page first
+    *   loads.
+    *   - .disable() marks whole of dropdown element as
+    *   disabled.
+    *   - .disable(value) marks given option as disabled
     *   @param [multiple] true if dropdown should support
     *   multiple selections
     */
@@ -2055,19 +2246,38 @@ trait p5InstanceExtensions extends StObject {
     *   Creates a dropdown menu <select></select> element
     *   in the DOM. It also helps to assign select-box
     *   methods to p5.Element when selecting existing
-    *   select box
+    *   select box. - .option(name, [value]) can be used
+    *   to set options for the select after it is created.
+    *   - .value() will return the currently selected
+    *   option.
+    *   - .selected() will return current dropdown element
+    *   which is an instance of p5.Element
+    *   - .selected(value) can be used to make given
+    *   option selected by default when the page first
+    *   loads.
+    *   - .disable() marks whole of dropdown element as
+    *   disabled.
+    *   - .disable(value) marks given option as disabled
     *   @param existing DOM select element
     */
   def createSelect(existing: js.Object): Element = js.native
   def createSelect(multiple: Boolean): Element = js.native
   
+  /**
+    *   Creates a new p5.Shader object from the provided
+    *   vertex and fragment shader code. Note, shaders can
+    *   only be used in WEBGL mode.
+    *   @param vertSrc source code for the vertex shader
+    *   @param fragSrc source code for the fragment shader
+    *   @return a shader object created from the provided
+    *   vertex and fragment shaders.
+    */
   def createShader(vertSrc: String, fragSrc: String): Shader = js.native
   
   /**
     *   Creates a slider <input></input> element in the
     *   DOM. Use .size() to set the display length of the
-    *   slider. Appends to the container node if one is
-    *   specified, otherwise appends to body.
+    *   slider.
     *   @param min minimum value of the slider
     *   @param max maximum value of the slider
     *   @param [value] default value of the slider
@@ -2084,8 +2294,7 @@ trait p5InstanceExtensions extends StObject {
   
   /**
     *   Creates a <span></span> element in the DOM with
-    *   given inner HTML. Appends to the container node if
-    *   one is specified, otherwise appends to body.
+    *   given inner HTML.
     *   @param [html] inner HTML for element created
     *   @return pointer to p5.Element holding created node
     */
@@ -2127,15 +2336,13 @@ trait p5InstanceExtensions extends StObject {
     *   Creates an HTML5 <video> element in the DOM for
     *   simple playback of audio/video. Shown by default,
     *   can be hidden with .hide() and drawn into canvas
-    *   using video(). Appends to the container node if
-    *   one is specified, otherwise appends to body. The
-    *   first parameter can be either a single string path
-    *   to a video file, or an array of string paths to
-    *   different formats of the same video. This is
-    *   useful for ensuring that your video can play
-    *   across different browsers, as each supports
-    *   different formats. See this page for further
-    *   information about supported formats.
+    *   using image(). The first parameter can be either a
+    *   single string path to a video file, or an array of
+    *   string paths to different formats of the same
+    *   video. This is useful for ensuring that your video
+    *   can play across different browsers, as each
+    *   supports different formats. See this page for
+    *   further information about supported formats.
     *   @param src path to a video file, or array of paths
     *   for supporting different browsers
     *   @param [callback] callback function to be called
@@ -2144,12 +2351,12 @@ trait p5InstanceExtensions extends StObject {
     *   enough data has been loaded to play the media up
     *   to its end without having to stop for further
     *   buffering of content
-    *   @return pointer to video p5.Element
+    *   @return pointer to video p5.MediaElement
     */
   def createVideo(src: String): MediaElement = js.native
-  def createVideo(src: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): MediaElement = js.native
+  def createVideo(src: String, callback: js.Function1[/* repeated */ Any, Any]): MediaElement = js.native
   def createVideo(src: js.Array[String]): MediaElement = js.native
-  def createVideo(src: js.Array[String], callback: js.Function1[/* repeated */ js.Any, js.Any]): MediaElement = js.native
+  def createVideo(src: js.Array[String], callback: js.Function1[/* repeated */ Any, Any]): MediaElement = js.native
   
   def createWriter(name: String): PrintWriter = js.native
   def createWriter(name: String, `extension`: String): PrintWriter = js.native
@@ -2158,7 +2365,7 @@ trait p5InstanceExtensions extends StObject {
     *   Sets the cursor to a predefined symbol or an
     *   image, or makes it visible if already hidden. If
     *   you are trying to set an image as the cursor, the
-    *   recommended size is 16x16 or 32x32 pixels. The
+    *   recommended size is 16×16 or 32×32 pixels. The
     *   values for parameters x and y must be less than
     *   the dimensions of the image.
     *   @param type Built-In: either ARROW, CROSS, HAND,
@@ -2261,7 +2468,6 @@ trait p5InstanceExtensions extends StObject {
   /**
     *   Sets the resolution at which curves display. The
     *   default value is 20 while the minimum value is 3.
-    *
     *   This function is only useful when using the WEBGL
     *   renderer as the default canvas renderer does not
     *   use this information.
@@ -2293,10 +2499,10 @@ trait p5InstanceExtensions extends StObject {
     *   for points a, b, c, d. The parameter t varies
     *   between 0 and 1, a and d are points on the curve,
     *   and b and c are the control points.
-    *   @param a coordinate of first point on the curve
-    *   @param b coordinate of first control point
-    *   @param c coordinate of second control point
-    *   @param d coordinate of second point on the curve
+    *   @param a coordinate of first control point
+    *   @param b coordinate of first point on the curve
+    *   @param c coordinate of second point on the curve
+    *   @param d coordinate of second conrol point
     *   @param t value between 0 and 1
     *   @return the tangent at position t
     */
@@ -2304,7 +2510,7 @@ trait p5InstanceExtensions extends StObject {
   
   /**
     *   Modifies the quality of forms created with curve()
-    *   and curveVertex(). The parameter tightness
+    *   and curveVertex().The parameter tightness
     *   determines how the curve fits to the vertex
     *   points. The value 0.0 is the default value for
     *   tightness (this value defines the curves to be
@@ -2327,9 +2533,9 @@ trait p5InstanceExtensions extends StObject {
     *   parameter specified to beginShape(). For WebGL
     *   mode curveVertex() can be used in 2D as well as 3D
     *   mode. 2D mode expects 2 parameters, while 3D mode
-    *   expects 3 parameters.  The first and last points
-    *   in a series of curveVertex() lines will be used to
-    *   guide the beginning and end of a the curve. A
+    *   expects 3 parameters. The first and last points in
+    *   a series of curveVertex() lines will be used to
+    *   guide the beginning and end of the curve. A
     *   minimum of four points is required to draw a tiny
     *   curve between the second and third points. Adding
     *   a fifth point with curveVertex() will draw the
@@ -2345,13 +2551,19 @@ trait p5InstanceExtensions extends StObject {
   
   /**
     *   Draw a cylinder with given radius and height
+    *   DetailX and detailY determines the number of
+    *   subdivisions in the x-dimension and the
+    *   y-dimension of a cylinder. More subdivisions make
+    *   the cylinder seem smoother. The recommended
+    *   maximum value for detailX is 24. Using a value
+    *   greater than 24 may cause a warning or slow down
+    *   the browser.
     *   @param [radius] radius of the surface
     *   @param [height] height of the cylinder
-    *   @param [detailX] number of segments, the more
-    *   segments the smoother geometry default is 24
-    *   @param [detailY] number of segments in
-    *   y-dimension, the more segments the smoother
-    *   geometry default is 1
+    *   @param [detailX] number of subdivisions in
+    *   x-dimension; default is 24
+    *   @param [detailY] number of subdivisions in
+    *   y-dimension; default is 1
     *   @param [bottomCap] whether to draw the bottom of
     *   the cylinder
     *   @param [topCap] whether to draw the top of the
@@ -2650,12 +2862,63 @@ trait p5InstanceExtensions extends StObject {
     *   The system variable deltaTime contains the time
     *   difference between the beginning of the previous
     *   frame and the beginning of the current frame in
-    *   milliseconds.  This variable is useful for
-    *   creating time sensitive animation or physics
-    *   calculation that should stay constant regardless
-    *   of frame rate.
+    *   milliseconds. This variable is useful for creating
+    *   time sensitive animation or physics calculation
+    *   that should stay constant regardless of frame
+    *   rate.
     */
   var deltaTime: Double = js.native
+  
+  /**
+    *   Creates a screen reader accessible description for
+    *   the canvas. The first parameter should be a string
+    *   with a description of the canvas. The second
+    *   parameter is optional. If specified, it determines
+    *   how the description is displayed. describe(text,
+    *   LABEL) displays the description to all users as a
+    *   tombstone or exhibit label/caption in a div
+    *   adjacent to the canvas. You can style it as you
+    *   wish in your CSS.
+    *
+    *   describe(text, FALLBACK) makes the description
+    *   accessible to screen-reader users only, in  a sub
+    *   DOM inside the canvas element. If a second
+    *   parameter is not specified, by default, the
+    *   description will only be available to
+    *   screen-reader users.
+    *   @param text description of the canvas
+    *   @param [display] either LABEL or FALLBACK
+    */
+  def describe(text: String): Unit = js.native
+  def describe(text: String, display: DESCRIBE_DISPLAY): Unit = js.native
+  
+  /**
+    *   This function creates a screen-reader accessible
+    *   description for elements —shapes or groups of
+    *   shapes that create meaning together— in the
+    *   canvas. The first paramater should be the name of
+    *   the element. The second parameter should be a
+    *   string with a description of the element. The
+    *   third parameter is optional. If specified, it
+    *   determines how the element description is
+    *   displayed. describeElement(name, text, LABEL)
+    *   displays the element description to all users as a
+    *   tombstone or exhibit label/caption in a div
+    *   adjacent to the canvas. You can style it as you
+    *   wish in your CSS.
+    *
+    *   describeElement(name, text, FALLBACK) makes the
+    *   element description accessible to screen-reader
+    *   users only, in  a sub DOM inside the canvas
+    *   element. If a second parameter is not specified,
+    *   by default, the element description will only be
+    *   available to screen-reader users.
+    *   @param name name of the element
+    *   @param text description of the element
+    *   @param [display] either LABEL or FALLBACK
+    */
+  def describeElement(name: String, text: String): Unit = js.native
+  def describeElement(name: String, text: String, display: DESCRIBE_DISPLAY): Unit = js.native
   
   /**
     *   The deviceMoved() function is called when the
@@ -2688,7 +2951,7 @@ trait p5InstanceExtensions extends StObject {
   /**
     *   The deviceTurned() function is called when the
     *   device rotates by more than 90 degrees
-    *   continuously.  The axis that triggers the
+    *   continuously. The axis that triggers the
     *   deviceTurned() method is stored in the turnAxis
     *   variable. The deviceTurned() method can be locked
     *   to trigger on any axis: X, Y or Z by comparing the
@@ -2700,7 +2963,8 @@ trait p5InstanceExtensions extends StObject {
   def directionalLight(color: String, x: Double, y: Double, z: Double): p5 = js.native
   /**
     *   Creates a directional light with a color and a
-    *   direction
+    *   direction A maximum of 5 directionalLight can be
+    *   active at one time
     *   @param color color Array, CSS color string, or
     *   p5.Color value
     *   @param position the direction of the light
@@ -2709,7 +2973,8 @@ trait p5InstanceExtensions extends StObject {
   def directionalLight(color: js.Array[Double], position: Vector): p5 = js.native
   /**
     *   Creates a directional light with a color and a
-    *   direction
+    *   direction A maximum of 5 directionalLight can be
+    *   active at one time
     *   @param color color Array, CSS color string, or
     *   p5.Color value
     *   @param x x axis direction
@@ -2722,7 +2987,8 @@ trait p5InstanceExtensions extends StObject {
   def directionalLight(color: Color, x: Double, y: Double, z: Double): p5 = js.native
   /**
     *   Creates a directional light with a color and a
-    *   direction
+    *   direction A maximum of 5 directionalLight can be
+    *   active at one time
     *   @param v1 red or hue value (depending on the
     *   current color mode),
     *   @param v2 green or saturation value
@@ -2733,7 +2999,8 @@ trait p5InstanceExtensions extends StObject {
   def directionalLight(v1: Double, v2: Double, v3: Double, position: Vector): p5 = js.native
   /**
     *   Creates a directional light with a color and a
-    *   direction
+    *   direction A maximum of 5 directionalLight can be
+    *   active at one time
     *   @param v1 red or hue value (depending on the
     *   current color mode),
     *   @param v2 green or saturation value
@@ -2772,7 +3039,8 @@ trait p5InstanceExtensions extends StObject {
   
   /**
     *   Calculates the distance between two points, in
-    *   either two or three dimensions.
+    *   either two or three dimensions. If you looking for
+    *   distance between two vectors see dist()
     *   @param x1 x-coordinate of the first point
     *   @param y1 y-coordinate of the first point
     *   @param x2 x-coordinate of the second point
@@ -2782,7 +3050,8 @@ trait p5InstanceExtensions extends StObject {
   def dist(x1: Double, y1: Double, x2: Double, y2: Double): Double = js.native
   /**
     *   Calculates the distance between two points, in
-    *   either two or three dimensions.
+    *   either two or three dimensions. If you looking for
+    *   distance between two vectors see dist()
     *   @param x1 x-coordinate of the first point
     *   @param y1 y-coordinate of the first point
     *   @param z1 z-coordinate of the first point
@@ -2810,73 +3079,69 @@ trait p5InstanceExtensions extends StObject {
   def doubleClicked(event: js.Object): Unit = js.native
   
   /**
-    *   Draws an ellipse (oval) to the screen. An ellipse
-    *   with equal width and height is a circle. By
-    *   default, the first two parameters set the
-    *   location, and the third and fourth parameters set
-    *   the shape's width and height. If no height is
-    *   specified, the value of width is used for both the
-    *   width and height. If a negative height or width is
-    *   specified, the absolute value is taken. The origin
-    *   may be changed with the ellipseMode() function.
-    *   @param x x-coordinate of the ellipse.
-    *   @param y y-coordinate of the ellipse.
+    *   The p5.js API provides a lot of functionality for
+    *   creating graphics, but there is some native HTML5
+    *   Canvas functionality that is not exposed by p5.
+    *   You can still call it directly using the variable
+    *   drawingContext, as in the example shown. This is
+    *   the equivalent of calling canvas.getContext('2d');
+    *   or canvas.getContext('webgl');. See this
+    *   reference for the native canvas API for possible
+    *   drawing functions you can call.
+    */
+  var drawingContext: Any = js.native
+  
+  /**
+    *   Draws an ellipse (oval) to the screen. By default,
+    *   the first two parameters set the location of the
+    *   center of the ellipse, and the third and fourth
+    *   parameters set the shape's width and height. If no
+    *   height is specified, the value of width is used
+    *   for both the width and height. If a negative
+    *   height or width is specified, the absolute value
+    *   is taken. An ellipse with equal width and height
+    *   is a circle. The origin may be changed with the
+    *   ellipseMode() function.
+    *   @param x x-coordinate of the center of ellipse.
+    *   @param y y-coordinate of the center of ellipse.
     *   @param w width of the ellipse.
     *   @param [h] height of the ellipse.
     *   @chainable
     */
   def ellipse(x: Double, y: Double, w: Double): p5 = js.native
   def ellipse(x: Double, y: Double, w: Double, h: Double): p5 = js.native
-  /**
-    *   Draws an ellipse (oval) to the screen. An ellipse
-    *   with equal width and height is a circle. By
-    *   default, the first two parameters set the
-    *   location, and the third and fourth parameters set
-    *   the shape's width and height. If no height is
-    *   specified, the value of width is used for both the
-    *   width and height. If a negative height or width is
-    *   specified, the absolute value is taken. The origin
-    *   may be changed with the ellipseMode() function.
-    *   @param x x-coordinate of the ellipse.
-    *   @param y y-coordinate of the ellipse.
-    *   @param w width of the ellipse.
-    *   @param h height of the ellipse.
-    *   @param detail number of radial sectors to draw
-    *   (for WebGL mode)
-    */
   def ellipse(x: Double, y: Double, w: Double, h: Double, detail: Double): Unit = js.native
   
   /**
     *   Modifies the location from which ellipses are
     *   drawn by changing the way in which parameters
-    *   given to ellipse() are interpreted.  The default
-    *   mode is ellipseMode(CENTER), which interprets the
-    *   first two parameters of ellipse() as the shape's
-    *   center point, while the third and fourth
+    *   given to ellipse(), circle() and arc() are
+    *   interpreted. The default mode is CENTER, in which
+    *   the first two parameters are interpreted as the
+    *   shape's center point's x and y coordinates
+    *   respectively, while the third and fourth
     *   parameters are its width and height.
-    *
     *
     *   ellipseMode(RADIUS) also uses the first two
-    *   parameters of ellipse() as the shape's center
-    *   point, but uses the third and fourth parameters to
-    *   specify half of the shapes's width and height.
-    *
+    *   parameters as the shape's center point's x and y
+    *   coordinates, but uses the third and fourth
+    *   parameters to specify half of the shapes's width
+    *   and height.
     *
     *   ellipseMode(CORNER) interprets the first two
-    *   parameters of ellipse() as the upper-left corner
-    *   of the shape, while the third and fourth
-    *   parameters are its width and height.
-    *
+    *   parameters as the upper-left corner of the shape,
+    *   while the third and fourth parameters are its
+    *   width and height.
     *
     *   ellipseMode(CORNERS) interprets the first two
-    *   parameters of ellipse() as the location of one
-    *   corner of the ellipse's bounding box, and the
-    *   third and fourth parameters as the location of the
-    *   opposite corner.
+    *   parameters as the location of one corner of the
+    *   ellipse's bounding box, and the third and fourth
+    *   parameters as the location of the opposite corner.
     *
-    *
-    *   The parameter must be written in ALL CAPS because
-    *   Javascript is a case-sensitive language.
+    *   The parameter to this method must be written in
+    *   ALL CAPS because they are predefined as constants
+    *   in ALL CAPS and Javascript is a case-sensitive
+    *   language.
     *   @param mode either CENTER, RADIUS, CORNER, or
     *   CORNERS
     *   @chainable
@@ -2884,7 +3149,36 @@ trait p5InstanceExtensions extends StObject {
   def ellipseMode(mode: ELLIPSE_MODE): p5 = js.native
   
   /**
-    *   Draw an ellipsoid with given radius
+    *   Draws an ellipse (oval) to the screen. By default,
+    *   the first two parameters set the location of the
+    *   center of the ellipse, and the third and fourth
+    *   parameters set the shape's width and height. If no
+    *   height is specified, the value of width is used
+    *   for both the width and height. If a negative
+    *   height or width is specified, the absolute value
+    *   is taken. An ellipse with equal width and height
+    *   is a circle. The origin may be changed with the
+    *   ellipseMode() function.
+    *   @param x x-coordinate of the center of ellipse.
+    *   @param y y-coordinate of the center of ellipse.
+    *   @param w width of the ellipse.
+    *   @param h height of the ellipse.
+    *   @param [detail] optional parameter for WebGL mode
+    *   only. This is to specify the number of vertices
+    *   that makes up the perimeter of the ellipse.
+    *   Default value is 25. Won't draw a stroke for a
+    *   detail of more than 50.
+    */
+  @JSName("ellipse")
+  def ellipse_Unit(x: Double, y: Double, w: Double, h: Double): Unit = js.native
+  
+  /**
+    *   Draw an ellipsoid with given radius DetailX and
+    *   detailY determine the number of subdivisions in
+    *   the x-dimension and the y-dimension of a cone.
+    *   More subdivisions make the ellipsoid appear to be
+    *   smoother. Avoid detail number above 150, it may
+    *   crash the browser.
     *   @param [radiusx] x-radius of ellipsoid
     *   @param [radiusy] y-radius of ellipsoid
     *   @param [radiusz] z-radius of ellipsoid
@@ -2931,6 +3225,47 @@ trait p5InstanceExtensions extends StObject {
   def ellipsoid(radiusx: Unit, radiusy: Unit, radiusz: Unit, detailX: Double, detailY: Double): p5 = js.native
   def ellipsoid(radiusx: Unit, radiusy: Unit, radiusz: Unit, detailX: Unit, detailY: Double): p5 = js.native
   
+  def emissiveMaterial(color: String): p5 = js.native
+  /**
+    *   Sets the emissive color of the material used for
+    *   geometry drawn to the screen. This is a misnomer
+    *   in the sense that the material does not actually
+    *   emit light that effects surrounding polygons.
+    *   Instead, it gives the appearance that the object
+    *   is glowing. An emissive material will display at
+    *   full strength even if there is no light for it to
+    *   reflect.
+    *   @param color color, color Array, or CSS color
+    *   string
+    *   @chainable
+    */
+  def emissiveMaterial(color: js.Array[Double]): p5 = js.native
+  def emissiveMaterial(color: Color): p5 = js.native
+  /**
+    *   Sets the emissive color of the material used for
+    *   geometry drawn to the screen. This is a misnomer
+    *   in the sense that the material does not actually
+    *   emit light that effects surrounding polygons.
+    *   Instead, it gives the appearance that the object
+    *   is glowing. An emissive material will display at
+    *   full strength even if there is no light for it to
+    *   reflect.
+    *   @param v1 gray value, red or hue value (depending
+    *   on the current color mode),
+    *   @param [v2] green or saturation value
+    *   @param [v3] blue or brightness value
+    *   @param [a] opacity
+    *   @chainable
+    */
+  def emissiveMaterial(v1: Double): p5 = js.native
+  def emissiveMaterial(v1: Double, v2: Double): p5 = js.native
+  def emissiveMaterial(v1: Double, v2: Double, v3: Double): p5 = js.native
+  def emissiveMaterial(v1: Double, v2: Double, v3: Double, a: Double): p5 = js.native
+  def emissiveMaterial(v1: Double, v2: Double, v3: Unit, a: Double): p5 = js.native
+  def emissiveMaterial(v1: Double, v2: Unit, v3: Double): p5 = js.native
+  def emissiveMaterial(v1: Double, v2: Unit, v3: Double, a: Double): p5 = js.native
+  def emissiveMaterial(v1: Double, v2: Unit, v3: Unit, a: Double): p5 = js.native
+  
   /**
     *   Use the beginContour() and endContour() functions
     *   to create negative shapes within shapes such as
@@ -2941,7 +3276,7 @@ trait p5InstanceExtensions extends StObject {
     *   opposite direction from the exterior shape. First
     *   draw vertices for the exterior clockwise order,
     *   then for internal shapes, draw vertices shape in
-    *   counter-clockwise.  These functions can only be
+    *   counter-clockwise. These functions can only be
     *   used within a beginShape()/endShape() pair and
     *   transformations such as translate(), rotate(), and
     *   scale() do not work within a
@@ -2955,7 +3290,7 @@ trait p5InstanceExtensions extends StObject {
   /**
     *   The endShape() function is the companion to
     *   beginShape() and may only be called after
-    *   beginShape(). When endshape() is called, all of
+    *   beginShape(). When endShape() is called, all of
     *   image data defined since the previous call to
     *   beginShape() is written into the image buffer. The
     *   constant CLOSE as the value for the MODE parameter
@@ -2966,6 +3301,35 @@ trait p5InstanceExtensions extends StObject {
     */
   def endShape(): p5 = js.native
   def endShape(mode: END_MODE): p5 = js.native
+  
+  /**
+    *   All drawing that follows erase() will subtract
+    *   from the canvas.Erased areas will reveal the web
+    *   page underneath the canvas.Erasing can be canceled
+    *   with noErase(). Drawing done with image() and
+    *   background() in between erase() and noErase() will
+    *   not erase the canvas but works as usual.
+    *   @param [strengthFill] A number (0-255) for the
+    *   strength of erasing for a shape's fill. This will
+    *   default to 255 when no argument is given, which is
+    *   full strength.
+    *   @param [strengthStroke] A number (0-255) for the
+    *   strength of erasing for a shape's stroke. This
+    *   will default to 255 when no argument is given,
+    *   which is full strength.
+    *   @chainable
+    */
+  def erase(): p5 = js.native
+  def erase(strengthFill: Double): p5 = js.native
+  def erase(strengthFill: Double, strengthStroke: Double): p5 = js.native
+  def erase(strengthFill: Unit, strengthStroke: Double): p5 = js.native
+  
+  /**
+    *   The function exitPointerLock() exits a previously
+    *   triggered pointer Lock for example to make ui
+    *   elements usable etc
+    */
+  def exitPointerLock(): Unit = js.native
   
   /**
     *   Returns Euler's number e (2.71828...) raised to
@@ -2983,13 +3347,12 @@ trait p5InstanceExtensions extends StObject {
     *   terms of the RGB or HSB color depending on the
     *   current colorMode(). (The default color space is
     *   RGB, with each value in the range from 0 to 255).
-    *   The alpha range by default is also 0 to 255.  If a
+    *   The alpha range by default is also 0 to 255. If a
     *   single string argument is provided, RGB, RGBA and
     *   Hex CSS color strings and all named color strings
     *   are supported. In this case, an alpha number value
     *   as a second argument is not supported, the RGBA
     *   form should be used.
-    *
     *
     *   A p5 Color object can also be provided to set the
     *   fill color.
@@ -3005,13 +3368,12 @@ trait p5InstanceExtensions extends StObject {
     *   terms of the RGB or HSB color depending on the
     *   current colorMode(). (The default color space is
     *   RGB, with each value in the range from 0 to 255).
-    *   The alpha range by default is also 0 to 255.  If a
+    *   The alpha range by default is also 0 to 255. If a
     *   single string argument is provided, RGB, RGBA and
     *   Hex CSS color strings and all named color strings
     *   are supported. In this case, an alpha number value
     *   as a second argument is not supported, the RGBA
     *   form should be used.
-    *
     *
     *   A p5 Color object can also be provided to set the
     *   fill color.
@@ -3028,13 +3390,12 @@ trait p5InstanceExtensions extends StObject {
     *   terms of the RGB or HSB color depending on the
     *   current colorMode(). (The default color space is
     *   RGB, with each value in the range from 0 to 255).
-    *   The alpha range by default is also 0 to 255.  If a
+    *   The alpha range by default is also 0 to 255. If a
     *   single string argument is provided, RGB, RGBA and
     *   Hex CSS color strings and all named color strings
     *   are supported. In this case, an alpha number value
     *   as a second argument is not supported, the RGBA
     *   form should be used.
-    *
     *
     *   A p5 Color object can also be provided to set the
     *   fill color.
@@ -3056,13 +3417,12 @@ trait p5InstanceExtensions extends StObject {
     *   terms of the RGB or HSB color depending on the
     *   current colorMode(). (The default color space is
     *   RGB, with each value in the range from 0 to 255).
-    *   The alpha range by default is also 0 to 255.  If a
+    *   The alpha range by default is also 0 to 255. If a
     *   single string argument is provided, RGB, RGBA and
     *   Hex CSS color strings and all named color strings
     *   are supported. In this case, an alpha number value
     *   as a second argument is not supported, the RGBA
     *   form should be used.
-    *
     *
     *   A p5 Color object can also be provided to set the
     *   fill color.
@@ -3078,13 +3438,12 @@ trait p5InstanceExtensions extends StObject {
     *   terms of the RGB or HSB color depending on the
     *   current colorMode(). (The default color space is
     *   RGB, with each value in the range from 0 to 255).
-    *   The alpha range by default is also 0 to 255.  If a
+    *   The alpha range by default is also 0 to 255. If a
     *   single string argument is provided, RGB, RGBA and
     *   Hex CSS color strings and all named color strings
     *   are supported. In this case, an alpha number value
     *   as a second argument is not supported, the RGBA
     *   form should be used.
-    *
     *
     *   A p5 Color object can also be provided to set the
     *   fill color.
@@ -3095,34 +3454,22 @@ trait p5InstanceExtensions extends StObject {
   def fill(values: js.Array[Double]): p5 = js.native
   
   /**
-    *   Applies a filter to the canvas.
-    *
-    *   The presets options are:
-    *
-    *
-    *
-    *   THRESHOLD Converts the image to black and white
-    *   pixels depending if they are above or below the
-    *   threshold defined by the level parameter. The
-    *   parameter must be between 0.0 (black) and 1.0
-    *   (white). If no level is specified, 0.5 is used.
-    *
-    *
+    *   Applies a filter to the canvas. The presets
+    *   options are: THRESHOLD Converts the image to black
+    *   and white pixels depending if they are above or
+    *   below the threshold defined by the level
+    *   parameter. The parameter must be between 0.0
+    *   (black) and 1.0 (white). If no level is specified,
+    *   0.5 is used.
     *
     *   GRAY Converts any colors in the image to grayscale
     *   equivalents. No parameter is used.
     *
-    *
-    *
     *   OPAQUE Sets the alpha channel to entirely opaque.
     *   No parameter is used.
     *
-    *
-    *
     *   INVERT Sets each pixel to its inverse value. No
     *   parameter is used.
-    *
-    *
     *
     *   POSTERIZE Limits each channel of the image to the
     *   number of colors specified as the parameter. The
@@ -3130,23 +3477,23 @@ trait p5InstanceExtensions extends StObject {
     *   but results are most noticeable in the lower
     *   ranges.
     *
-    *
-    *
     *   BLUR Executes a Gaussian blur with the level
     *   parameter specifying the extent of the blurring.
     *   If no parameter is used, the blur is equivalent to
     *   Gaussian blur of radius 1. Larger values increase
     *   the blur.
     *
-    *
-    *
     *   ERODE Reduces the light areas. No parameter is
     *   used.
     *
-    *
-    *
     *   DILATE Increases the light areas. No parameter is
     *   used.
+    *
+    *   filter() does not work in WEBGL mode. A similar
+    *   effect can be achieved in WEBGL mode using custom
+    *   shaders. Adam Ferriss has written a selection of
+    *   shader examples that contains many of the effects
+    *   present in the filter examples.
     *   @param filterType either THRESHOLD, GRAY, OPAQUE,
     *   INVERT, POSTERIZE, BLUR, ERODE, DILATE or BLUR.
     *   See Filters.js for docs on each available filter
@@ -3187,6 +3534,14 @@ trait p5InstanceExtensions extends StObject {
   var focused: Boolean = js.native
   
   /**
+    *   Calculates the fractional part of a number.
+    *   @param num Number whose fractional part needs to
+    *   be found out
+    *   @return fractional part of x, i.e, {x}
+    */
+  def fract(num: Double): Double = js.native
+  
+  /**
     *   The system variable frameCount contains the number
     *   of frames that have been displayed since the
     *   program started. Inside setup() the value is 0,
@@ -3206,13 +3561,12 @@ trait p5InstanceExtensions extends StObject {
     *   called "refresh rate"), which is set to 60 frames
     *   per second on most computers. A frame rate of 24
     *   frames per second (usual for movies) or above will
-    *   be enough for smooth animations This is the same
-    *   as setFrameRate(val).  Calling frameRate() with no
+    *   be enough for smooth animations. This is the same
+    *   as setFrameRate(val). Calling frameRate() with no
     *   arguments returns the current framerate. The draw
     *   function must run at least once before it will
     *   return a value. This is the same as
     *   getFrameRate().
-    *
     *
     *   Calling frameRate() with arguments that are not of
     *   the type numbers or are non positive also returns
@@ -3232,13 +3586,12 @@ trait p5InstanceExtensions extends StObject {
     *   called "refresh rate"), which is set to 60 frames
     *   per second on most computers. A frame rate of 24
     *   frames per second (usual for movies) or above will
-    *   be enough for smooth animations This is the same
-    *   as setFrameRate(val).  Calling frameRate() with no
+    *   be enough for smooth animations. This is the same
+    *   as setFrameRate(val). Calling frameRate() with no
     *   arguments returns the current framerate. The draw
     *   function must run at least once before it will
     *   return a value. This is the same as
     *   getFrameRate().
-    *
     *
     *   Calling frameRate() with arguments that are not of
     *   the type numbers or are non positive also returns
@@ -3257,6 +3610,40 @@ trait p5InstanceExtensions extends StObject {
     *   @return MIDI note value
     */
   def freqToMidi(frequency: Double): Double = js.native
+  
+  /**
+    *   Sets the frustum of the current camera as defined
+    *   by the parameters. A frustum is a geometric form:
+    *   a pyramid with its top cut off. With the viewer's
+    *   eye at the imaginary top of the pyramid, the six
+    *   planes of the frustum act as clipping planes when
+    *   rendering a 3D view. Thus, any form inside the
+    *   clipping planes is visible; anything outside those
+    *   planes is not visible.
+    *
+    *   Setting the frustum changes the perspective of the
+    *   scene being rendered. This can be achieved more
+    *   simply in many cases by using perspective().
+    *
+    *   If no parameters are given, the following default
+    *   is used: frustum(-width/2, width/2, -height/2,
+    *   height/2, 0, max(width, height)).
+    *   @param [left] camera frustum left plane
+    *   @param [right] camera frustum right plane
+    *   @param [bottom] camera frustum bottom plane
+    *   @param [top] camera frustum top plane
+    *   @param [near] camera frustum near plane
+    *   @param [far] camera frustum far plane
+    *   @chainable
+    */
+  def frustum(
+    left: js.UndefOr[Double],
+    right: js.UndefOr[Double],
+    bottom: js.UndefOr[Double],
+    top: js.UndefOr[Double],
+    near: js.UndefOr[Double],
+    far: js.UndefOr[Double]
+  ): p5 = js.native
   
   /**
     *   If argument is given, sets the sketch to
@@ -3286,7 +3673,6 @@ trait p5InstanceExtensions extends StObject {
     *   upper-left corner of the image, regardless of the
     *   current imageMode().
     *
-    *
     *   Getting the color of a single pixel with get(x, y)
     *   is easy, but not as fast as grabbing the data
     *   directly from pixels[]. The equivalent statement
@@ -3297,10 +3683,6 @@ trait p5InstanceExtensions extends StObject {
     *   off = (y * width + x) * d * 4; let components = [
     *   pixels[off], pixels[off + 1], pixels[off + 2],
     *   pixels[off + 3] ]; print(components);
-    *
-    *
-    *
-    *
     *
     *   See the reference for pixels[] for more
     *   information.
@@ -3324,7 +3706,6 @@ trait p5InstanceExtensions extends StObject {
     *   upper-left corner of the image, regardless of the
     *   current imageMode().
     *
-    *
     *   Getting the color of a single pixel with get(x, y)
     *   is easy, but not as fast as grabbing the data
     *   directly from pixels[]. The equivalent statement
@@ -3335,10 +3716,6 @@ trait p5InstanceExtensions extends StObject {
     *   off = (y * width + x) * d * 4; let components = [
     *   pixels[off], pixels[off + 1], pixels[off + 2],
     *   pixels[off + 3] ]; print(components);
-    *
-    *
-    *
-    *
     *
     *   See the reference for pixels[] for more
     *   information.
@@ -3365,7 +3742,6 @@ trait p5InstanceExtensions extends StObject {
     *   upper-left corner of the image, regardless of the
     *   current imageMode().
     *
-    *
     *   Getting the color of a single pixel with get(x, y)
     *   is easy, but not as fast as grabbing the data
     *   directly from pixels[]. The equivalent statement
@@ -3376,10 +3752,6 @@ trait p5InstanceExtensions extends StObject {
     *   off = (y * width + x) * d * 4; let components = [
     *   pixels[off], pixels[off + 1], pixels[off + 2],
     *   pixels[off + 3] ]; print(components);
-    *
-    *
-    *
-    *
     *
     *   See the reference for pixels[] for more
     *   information.
@@ -3396,28 +3768,63 @@ trait p5InstanceExtensions extends StObject {
   def get(x: Double, y: Double, w: Double, h: Double): Image = js.native
   
   /**
+    *   Returns the Audio Context for this sketch. Useful
+    *   for users who would like to dig deeper into the
+    *   Web Audio API . Some browsers require users to
+    *   startAudioContext with a user gesture, such as
+    *   touchStarted in the example below.
+    *   @return AudioContext for this sketch
+    */
+  def getAudioContext(): js.Object = js.native
+  
+  /**
     *   Returns the value of an item that was stored in
     *   local storage using storeItem()
     *   @param key name that you wish to use to store in
     *   local storage
     *   @return Value of stored item
     */
-  def getItem(key: String): Double | js.Object | String | Boolean | Color = js.native
+  def getItem(key: String): Double | js.Object | String | Boolean | Color | Vector = js.native
+  
+  // TODO: Fix userStartAudio() errors in lib/addons/p5.sound.js, line 198:
+  //
+  //    param "element(s)" is not a valid JS symbol name
+  //
+  // userStartAudio(element(s)?: Element|any[], callback?: (...args: any[]) => any): Promise<any>
+  /**
+    *   Returns a number representing the output volume
+    *   for sound in this sketch.
+    *   @return Output volume for sound in this sketch.
+    *   Should be between 0.0 (silence) and 1.0.
+    */
+  def getOutputVolume(): Double = js.native
   
   /**
-    *   Gets the current URL.
+    *   Gets the current URL. Note: when using the p5
+    *   Editor, this will return an empty object because
+    *   the sketch is embedded in an iframe. It will work
+    *   correctly if you view the sketch using the
+    *   editor's present or share URLs.
     *   @return url
     */
   def getURL(): String = js.native
   
   /**
-    *   Gets the current URL params as an Object.
+    *   Gets the current URL params as an Object. Note:
+    *   when using the p5 Editor, this will return an
+    *   empty object because the sketch is embedded in an
+    *   iframe. It will work correctly if you view the
+    *   sketch using the editor's present or share URLs.
     *   @return URL params
     */
   def getURLParams(): js.Object = js.native
   
   /**
-    *   Gets the current URL path as an array.
+    *   Gets the current URL path as an array. Note: when
+    *   using the p5 Editor, this will return an empty
+    *   object because the sketch is embedded in an
+    *   iframe. It will work correctly if you view the
+    *   sketch using the editor's present or share URLs.
     *   @return path components
     */
   def getURLPath(): js.Array[String] = js.native
@@ -3432,6 +3839,43 @@ trait p5InstanceExtensions extends StObject {
     *   @return the green value
     */
   def green(color: Color): Double = js.native
+  
+  /**
+    *   gridOutput() lays out the content of the canvas in
+    *   the form of a grid (html table) based on the
+    *   spatial location of each shape. A brief
+    *   description of the canvas is available before the
+    *   table output. This description includes: color of
+    *   the background, size of the canvas, number of
+    *   objects, and object types (example: "lavender blue
+    *   canvas is 200 by 200 and contains 4 objects - 3
+    *   ellipses 1 rectangle"). The grid describes the
+    *   content spatially, each element is placed on a
+    *   cell of the table depending on its position.
+    *   Within each cell an element the color and type of
+    *   shape of that element are available (example:
+    *   "orange ellipse"). These descriptions can be
+    *   selected individually to get more details. A list
+    *   of elements where shape, color, location, and area
+    *   are described (example: "orange ellipse
+    *   location=top left area=1%") is also available.
+    *   gridOutput() and gridOutput(FALLBACK) make the
+    *   output available in  a sub DOM inside the canvas
+    *   element which is accessible to screen readers.
+    *   gridOutput(LABEL) creates an additional div with
+    *   the output adjacent to the canvas, this is useful
+    *   for non-screen reader users that might want to
+    *   display the output outside of the canvas' sub DOM
+    *   as they code. However, using LABEL will create
+    *   unnecessary redundancy for screen reader users. We
+    *   recommend using LABEL only as part of the
+    *   development process of a sketch and removing it
+    *   before publishing or sharing with screen reader
+    *   users.
+    *   @param [display] either FALLBACK or LABEL
+    */
+  def gridOutput(): Unit = js.native
+  def gridOutput(display: GRID_DISPLAY): Unit = js.native
   
   /**
     *   System variable that stores the height of the
@@ -3506,198 +3950,198 @@ trait p5InstanceExtensions extends StObject {
     *   the operation completes successfully or rejects
     *   with the error after one occurs.
     */
-  def httpDo(path: String): js.Promise[js.Any] = js.native
-  def httpDo(path: String, method: String): js.Promise[js.Any] = js.native
-  def httpDo(path: String, method: String, datatype: String): js.Promise[js.Any] = js.native
-  def httpDo(path: String, method: String, datatype: String, data: js.Object): js.Promise[js.Any] = js.native
+  def httpDo(path: String): js.Promise[Any] = js.native
+  def httpDo(path: String, method: String): js.Promise[Any] = js.native
+  def httpDo(path: String, method: String, datatype: String): js.Promise[Any] = js.native
+  def httpDo(path: String, method: String, datatype: String, data: js.Object): js.Promise[Any] = js.native
   def httpDo(
     path: String,
     method: String,
     datatype: String,
     data: js.Object,
-    callback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
+    callback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
   def httpDo(
     path: String,
     method: String,
     datatype: String,
     data: js.Object,
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
+    callback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
   def httpDo(
     path: String,
     method: String,
     datatype: String,
     data: js.Object,
     callback: Unit,
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
   def httpDo(
     path: String,
     method: String,
     datatype: String,
     data: Unit,
-    callback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
+    callback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
   def httpDo(
     path: String,
     method: String,
     datatype: String,
     data: Unit,
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
+    callback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
   def httpDo(
     path: String,
     method: String,
     datatype: String,
     data: Unit,
     callback: Unit,
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
-  def httpDo(path: String, method: String, datatype: Unit, data: js.Object): js.Promise[js.Any] = js.native
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
+  def httpDo(path: String, method: String, datatype: Unit, data: js.Object): js.Promise[Any] = js.native
   def httpDo(
     path: String,
     method: String,
     datatype: Unit,
     data: js.Object,
-    callback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
+    callback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
   def httpDo(
     path: String,
     method: String,
     datatype: Unit,
     data: js.Object,
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
+    callback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
   def httpDo(
     path: String,
     method: String,
     datatype: Unit,
     data: js.Object,
     callback: Unit,
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
   def httpDo(
     path: String,
     method: String,
     datatype: Unit,
     data: Unit,
-    callback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
+    callback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
   def httpDo(
     path: String,
     method: String,
     datatype: Unit,
     data: Unit,
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
+    callback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
   def httpDo(
     path: String,
     method: String,
     datatype: Unit,
     data: Unit,
     callback: Unit,
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
-  def httpDo(path: String, method: Unit, datatype: String): js.Promise[js.Any] = js.native
-  def httpDo(path: String, method: Unit, datatype: String, data: js.Object): js.Promise[js.Any] = js.native
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
+  def httpDo(path: String, method: Unit, datatype: String): js.Promise[Any] = js.native
+  def httpDo(path: String, method: Unit, datatype: String, data: js.Object): js.Promise[Any] = js.native
   def httpDo(
     path: String,
     method: Unit,
     datatype: String,
     data: js.Object,
-    callback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
+    callback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
   def httpDo(
     path: String,
     method: Unit,
     datatype: String,
     data: js.Object,
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
+    callback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
   def httpDo(
     path: String,
     method: Unit,
     datatype: String,
     data: js.Object,
     callback: Unit,
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
   def httpDo(
     path: String,
     method: Unit,
     datatype: String,
     data: Unit,
-    callback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
+    callback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
   def httpDo(
     path: String,
     method: Unit,
     datatype: String,
     data: Unit,
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
+    callback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
   def httpDo(
     path: String,
     method: Unit,
     datatype: String,
     data: Unit,
     callback: Unit,
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
-  def httpDo(path: String, method: Unit, datatype: Unit, data: js.Object): js.Promise[js.Any] = js.native
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
+  def httpDo(path: String, method: Unit, datatype: Unit, data: js.Object): js.Promise[Any] = js.native
   def httpDo(
     path: String,
     method: Unit,
     datatype: Unit,
     data: js.Object,
-    callback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
+    callback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
   def httpDo(
     path: String,
     method: Unit,
     datatype: Unit,
     data: js.Object,
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
+    callback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
   def httpDo(
     path: String,
     method: Unit,
     datatype: Unit,
     data: js.Object,
     callback: Unit,
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
   def httpDo(
     path: String,
     method: Unit,
     datatype: Unit,
     data: Unit,
-    callback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
+    callback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
   def httpDo(
     path: String,
     method: Unit,
     datatype: Unit,
     data: Unit,
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
+    callback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
   def httpDo(
     path: String,
     method: Unit,
     datatype: Unit,
     data: Unit,
     callback: Unit,
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
   /**
     *   Method for executing an HTTP request. If data type
     *   is not specified, p5 will try to guess based on
@@ -3718,20 +4162,20 @@ trait p5InstanceExtensions extends StObject {
     *   there is an error, response is passed in as first
     *   argument
     */
-  def httpDo(path: String, options: js.Object): js.Promise[js.Any] = js.native
-  def httpDo(path: String, options: js.Object, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = js.native
+  def httpDo(path: String, options: js.Object): js.Promise[Any] = js.native
+  def httpDo(path: String, options: js.Object, callback: js.Function1[/* repeated */ Any, Any]): js.Promise[Any] = js.native
   def httpDo(
     path: String,
     options: js.Object,
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
+    callback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
   def httpDo(
     path: String,
     options: js.Object,
     callback: Unit,
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
   
   /**
     *   Method for executing an HTTP GET request. If data
@@ -3756,7 +4200,7 @@ trait p5InstanceExtensions extends StObject {
     *   the operation completes successfully or rejects
     *   with the error after one occurs.
     */
-  def httpGet(path: String): js.Promise[js.Any] = js.native
+  def httpGet(path: String): js.Promise[Any] = js.native
   /**
     *   Method for executing an HTTP GET request. If data
     *   type is not specified, p5 will try to guess based
@@ -3774,12 +4218,12 @@ trait p5InstanceExtensions extends StObject {
     *   there is an error, response is passed in as first
     *   argument
     */
-  def httpGet(path: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = js.native
+  def httpGet(path: String, callback: js.Function1[/* repeated */ Any, Any]): js.Promise[Any] = js.native
   def httpGet(
     path: String,
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
+    callback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
   /**
     *   Method for executing an HTTP GET request. If data
     *   type is not specified, p5 will try to guess based
@@ -3798,144 +4242,124 @@ trait p5InstanceExtensions extends StObject {
     *   there is an error, response is passed in as first
     *   argument
     */
-  def httpGet(path: String, data: js.Object): js.Promise[js.Any] = js.native
-  def httpGet(path: String, data: js.Object, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = js.native
+  def httpGet(path: String, data: js.Object): js.Promise[Any] = js.native
+  def httpGet(path: String, data: js.Object, callback: js.Function1[/* repeated */ Any, Any]): js.Promise[Any] = js.native
   def httpGet(
     path: String,
     data: js.Object,
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
+    callback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
   def httpGet(
     path: String,
     data: js.Object,
     callback: Unit,
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
-  def httpGet(path: String, data: Boolean): js.Promise[js.Any] = js.native
-  def httpGet(path: String, data: Boolean, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = js.native
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
+  def httpGet(path: String, data: Boolean): js.Promise[Any] = js.native
+  def httpGet(path: String, data: Boolean, callback: js.Function1[/* repeated */ Any, Any]): js.Promise[Any] = js.native
   def httpGet(
     path: String,
     data: Boolean,
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
-  def httpGet(
-    path: String,
-    data: Boolean,
-    callback: Unit,
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
-  def httpGet(path: String, datatype: String): js.Promise[js.Any] = js.native
-  def httpGet(path: String, datatype: String, data: js.Object): js.Promise[js.Any] = js.native
+    callback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
+  def httpGet(path: String, data: Boolean, callback: Unit, errorCallback: js.Function1[/* repeated */ Any, Any]): js.Promise[Any] = js.native
+  def httpGet(path: String, datatype: String): js.Promise[Any] = js.native
+  def httpGet(path: String, datatype: String, data: js.Object): js.Promise[Any] = js.native
+  def httpGet(path: String, datatype: String, data: js.Object, callback: js.Function1[/* repeated */ Any, Any]): js.Promise[Any] = js.native
   def httpGet(
     path: String,
     datatype: String,
     data: js.Object,
-    callback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
-  def httpGet(
-    path: String,
-    datatype: String,
-    data: js.Object,
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
+    callback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
   def httpGet(
     path: String,
     datatype: String,
     data: js.Object,
     callback: Unit,
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
-  def httpGet(path: String, datatype: String, data: Boolean): js.Promise[js.Any] = js.native
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
+  def httpGet(path: String, datatype: String, data: Boolean): js.Promise[Any] = js.native
+  def httpGet(path: String, datatype: String, data: Boolean, callback: js.Function1[/* repeated */ Any, Any]): js.Promise[Any] = js.native
   def httpGet(
     path: String,
     datatype: String,
     data: Boolean,
-    callback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
-  def httpGet(
-    path: String,
-    datatype: String,
-    data: Boolean,
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
+    callback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
   def httpGet(
     path: String,
     datatype: String,
     data: Boolean,
     callback: Unit,
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
-  def httpGet(path: String, datatype: String, data: Unit, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = js.native
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
+  def httpGet(path: String, datatype: String, data: Unit, callback: js.Function1[/* repeated */ Any, Any]): js.Promise[Any] = js.native
   def httpGet(
     path: String,
     datatype: String,
     data: Unit,
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
+    callback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
   def httpGet(
     path: String,
     datatype: String,
     data: Unit,
     callback: Unit,
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
-  def httpGet(path: String, datatype: Unit, data: js.Object): js.Promise[js.Any] = js.native
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
+  def httpGet(path: String, datatype: Unit, data: js.Object): js.Promise[Any] = js.native
+  def httpGet(path: String, datatype: Unit, data: js.Object, callback: js.Function1[/* repeated */ Any, Any]): js.Promise[Any] = js.native
   def httpGet(
     path: String,
     datatype: Unit,
     data: js.Object,
-    callback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
-  def httpGet(
-    path: String,
-    datatype: Unit,
-    data: js.Object,
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
+    callback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
   def httpGet(
     path: String,
     datatype: Unit,
     data: js.Object,
     callback: Unit,
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
-  def httpGet(path: String, datatype: Unit, data: Boolean): js.Promise[js.Any] = js.native
-  def httpGet(path: String, datatype: Unit, data: Boolean, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = js.native
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
+  def httpGet(path: String, datatype: Unit, data: Boolean): js.Promise[Any] = js.native
+  def httpGet(path: String, datatype: Unit, data: Boolean, callback: js.Function1[/* repeated */ Any, Any]): js.Promise[Any] = js.native
   def httpGet(
     path: String,
     datatype: Unit,
     data: Boolean,
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
+    callback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
   def httpGet(
     path: String,
     datatype: Unit,
     data: Boolean,
     callback: Unit,
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
-  def httpGet(path: String, datatype: Unit, data: Unit, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = js.native
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
+  def httpGet(path: String, datatype: Unit, data: Unit, callback: js.Function1[/* repeated */ Any, Any]): js.Promise[Any] = js.native
   def httpGet(
     path: String,
     datatype: Unit,
     data: Unit,
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
+    callback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
   def httpGet(
     path: String,
     datatype: Unit,
     data: Unit,
     callback: Unit,
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
   
   /**
     *   Method for executing an HTTP POST request. If data
@@ -3956,7 +4380,7 @@ trait p5InstanceExtensions extends StObject {
     *   the operation completes successfully or rejects
     *   with the error after one occurs.
     */
-  def httpPost(path: String): js.Promise[js.Any] = js.native
+  def httpPost(path: String): js.Promise[Any] = js.native
   /**
     *   Method for executing an HTTP POST request. If data
     *   type is not specified, p5 will try to guess based
@@ -3970,12 +4394,12 @@ trait p5InstanceExtensions extends StObject {
     *   there is an error, response is passed in as first
     *   argument
     */
-  def httpPost(path: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = js.native
+  def httpPost(path: String, callback: js.Function1[/* repeated */ Any, Any]): js.Promise[Any] = js.native
   def httpPost(
     path: String,
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
+    callback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
   /**
     *   Method for executing an HTTP POST request. If data
     *   type is not specified, p5 will try to guess based
@@ -3990,144 +4414,124 @@ trait p5InstanceExtensions extends StObject {
     *   there is an error, response is passed in as first
     *   argument
     */
-  def httpPost(path: String, data: js.Object): js.Promise[js.Any] = js.native
-  def httpPost(path: String, data: js.Object, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = js.native
+  def httpPost(path: String, data: js.Object): js.Promise[Any] = js.native
+  def httpPost(path: String, data: js.Object, callback: js.Function1[/* repeated */ Any, Any]): js.Promise[Any] = js.native
   def httpPost(
     path: String,
     data: js.Object,
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
+    callback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
   def httpPost(
     path: String,
     data: js.Object,
     callback: Unit,
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
-  def httpPost(path: String, data: Boolean): js.Promise[js.Any] = js.native
-  def httpPost(path: String, data: Boolean, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = js.native
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
+  def httpPost(path: String, data: Boolean): js.Promise[Any] = js.native
+  def httpPost(path: String, data: Boolean, callback: js.Function1[/* repeated */ Any, Any]): js.Promise[Any] = js.native
   def httpPost(
     path: String,
     data: Boolean,
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
-  def httpPost(
-    path: String,
-    data: Boolean,
-    callback: Unit,
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
-  def httpPost(path: String, datatype: String): js.Promise[js.Any] = js.native
-  def httpPost(path: String, datatype: String, data: js.Object): js.Promise[js.Any] = js.native
+    callback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
+  def httpPost(path: String, data: Boolean, callback: Unit, errorCallback: js.Function1[/* repeated */ Any, Any]): js.Promise[Any] = js.native
+  def httpPost(path: String, datatype: String): js.Promise[Any] = js.native
+  def httpPost(path: String, datatype: String, data: js.Object): js.Promise[Any] = js.native
+  def httpPost(path: String, datatype: String, data: js.Object, callback: js.Function1[/* repeated */ Any, Any]): js.Promise[Any] = js.native
   def httpPost(
     path: String,
     datatype: String,
     data: js.Object,
-    callback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
-  def httpPost(
-    path: String,
-    datatype: String,
-    data: js.Object,
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
+    callback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
   def httpPost(
     path: String,
     datatype: String,
     data: js.Object,
     callback: Unit,
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
-  def httpPost(path: String, datatype: String, data: Boolean): js.Promise[js.Any] = js.native
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
+  def httpPost(path: String, datatype: String, data: Boolean): js.Promise[Any] = js.native
+  def httpPost(path: String, datatype: String, data: Boolean, callback: js.Function1[/* repeated */ Any, Any]): js.Promise[Any] = js.native
   def httpPost(
     path: String,
     datatype: String,
     data: Boolean,
-    callback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
-  def httpPost(
-    path: String,
-    datatype: String,
-    data: Boolean,
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
+    callback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
   def httpPost(
     path: String,
     datatype: String,
     data: Boolean,
     callback: Unit,
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
-  def httpPost(path: String, datatype: String, data: Unit, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = js.native
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
+  def httpPost(path: String, datatype: String, data: Unit, callback: js.Function1[/* repeated */ Any, Any]): js.Promise[Any] = js.native
   def httpPost(
     path: String,
     datatype: String,
     data: Unit,
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
+    callback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
   def httpPost(
     path: String,
     datatype: String,
     data: Unit,
     callback: Unit,
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
-  def httpPost(path: String, datatype: Unit, data: js.Object): js.Promise[js.Any] = js.native
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
+  def httpPost(path: String, datatype: Unit, data: js.Object): js.Promise[Any] = js.native
+  def httpPost(path: String, datatype: Unit, data: js.Object, callback: js.Function1[/* repeated */ Any, Any]): js.Promise[Any] = js.native
   def httpPost(
     path: String,
     datatype: Unit,
     data: js.Object,
-    callback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
-  def httpPost(
-    path: String,
-    datatype: Unit,
-    data: js.Object,
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
+    callback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
   def httpPost(
     path: String,
     datatype: Unit,
     data: js.Object,
     callback: Unit,
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
-  def httpPost(path: String, datatype: Unit, data: Boolean): js.Promise[js.Any] = js.native
-  def httpPost(path: String, datatype: Unit, data: Boolean, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = js.native
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
+  def httpPost(path: String, datatype: Unit, data: Boolean): js.Promise[Any] = js.native
+  def httpPost(path: String, datatype: Unit, data: Boolean, callback: js.Function1[/* repeated */ Any, Any]): js.Promise[Any] = js.native
   def httpPost(
     path: String,
     datatype: Unit,
     data: Boolean,
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
+    callback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
   def httpPost(
     path: String,
     datatype: Unit,
     data: Boolean,
     callback: Unit,
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
-  def httpPost(path: String, datatype: Unit, data: Unit, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = js.native
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
+  def httpPost(path: String, datatype: Unit, data: Unit, callback: js.Function1[/* repeated */ Any, Any]): js.Promise[Any] = js.native
   def httpPost(
     path: String,
     datatype: Unit,
     data: Unit,
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
+    callback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
   def httpPost(
     path: String,
     datatype: Unit,
     data: Unit,
     callback: Unit,
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Promise[js.Any] = js.native
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
   
   def hue(color: String): Double = js.native
   def hue(color: js.Array[Double]): Double = js.native
@@ -4302,7 +4706,6 @@ trait p5InstanceExtensions extends StObject {
     *   corner, and the fourth and fifth parameters as the
     *   opposite corner.
     *
-    *
     *   imageMode(CENTER) interprets the second and third
     *   parameters of image() as the image's center point.
     *   If two additional parameters are specified, they
@@ -4324,7 +4727,7 @@ trait p5InstanceExtensions extends StObject {
     *   will no longer fire.
     *   @chainable
     */
-  def input(fxn: js.Function1[/* repeated */ js.Any, js.Any]): p5 = js.native
+  def input(fxn: js.Function1[/* repeated */ Any, Any]): p5 = js.native
   def input(fxn: Boolean): p5 = js.native
   
   /**
@@ -4349,9 +4752,21 @@ trait p5InstanceExtensions extends StObject {
     *   passed in, then an int array of the same length is
     *   returned.
     *   @param ns values to parse
+    *   @param [radix] the radix to convert to (default:
+    *   10)
     *   @return integer representation of values
     */
-  def int(ns: js.Array[js.Any]): js.Array[Double] = js.native
+  def int(ns: js.Array[Any]): js.Array[Double] = js.native
+  def int(ns: js.Array[Any], radix: Double): js.Array[Double] = js.native
+  
+  /**
+    *   By default, p5.js loops through draw()
+    *   continuously, executing the code within it. If the
+    *   sketch is stopped with noLoop() or resumed with
+    *   loop(), isLooping() returns the current state for
+    *   use within custom event handlers.
+    */
+  def isLooping(): Boolean = js.native
   
   /**
     *   Combines an array of Strings into one String, each
@@ -4364,7 +4779,7 @@ trait p5InstanceExtensions extends StObject {
     *   item
     *   @return joined String
     */
-  def join(list: js.Array[js.Any], separator: String): String = js.native
+  def join(list: js.Array[Any], separator: String): String = js.native
   
   /**
     *   The system variable key always contains the value
@@ -4411,12 +4826,11 @@ trait p5InstanceExtensions extends StObject {
     *   The keyPressed() function is called once every
     *   time a key is pressed. The keyCode for the key
     *   that was pressed is stored in the keyCode
-    *   variable.  For non-ASCII keys, use the keyCode
+    *   variable. For non-ASCII keys, use the keyCode
     *   variable. You can check if the keyCode equals
     *   BACKSPACE, DELETE, ENTER, RETURN, TAB, ESCAPE,
     *   SHIFT, CONTROL, OPTION, ALT, UP_ARROW, DOWN_ARROW,
     *   LEFT_ARROW, RIGHT_ARROW.
-    *
     *
     *   For ASCII keys, the key that was pressed is stored
     *   in the key variable. However, it does not
@@ -4424,7 +4838,6 @@ trait p5InstanceExtensions extends StObject {
     *   this reason, it is recommended to use keyTyped()
     *   to read the key variable, in which the case of the
     *   variable will be distinguished.
-    *
     *
     *   Because of how operating systems handle key
     *   repeats, holding down a key may cause multiple
@@ -4437,8 +4850,11 @@ trait p5InstanceExtensions extends StObject {
     *   attached to various key events. To prevent any
     *   default behavior for this event, add "return
     *   false" to the end of the method.
+    *   @param [event] optional KeyboardEvent callback
+    *   argument.
     */
   def keyPressed(): Unit = js.native
+  def keyPressed(event: js.Object): Unit = js.native
   
   /**
     *   The keyReleased() function is called once every
@@ -4447,8 +4863,11 @@ trait p5InstanceExtensions extends StObject {
     *   default behaviors attached to various key events.
     *   To prevent any default behavior for this event,
     *   add "return false" to the end of the method.
+    *   @param [event] optional KeyboardEvent callback
+    *   argument.
     */
   def keyReleased(): Unit = js.native
+  def keyReleased(event: js.Object): Unit = js.native
   
   /**
     *   The keyTyped() function is called once every time
@@ -4457,7 +4876,7 @@ trait p5InstanceExtensions extends StObject {
     *   ignored. If you are trying to detect a keyCode for
     *   one of these keys, use the keyPressed() function
     *   instead. The most recent key typed will be stored
-    *   in the key variable.  Because of how operating
+    *   in the key variable. Because of how operating
     *   systems handle key repeats, holding down a key
     *   will cause multiple calls to keyTyped() (and
     *   keyReleased() as well). The rate of repeat is set
@@ -4469,8 +4888,11 @@ trait p5InstanceExtensions extends StObject {
     *   attached to various key events. To prevent any
     *   default behavior for this event, add "return
     *   false" to the end of the method.
+    *   @param [event] optional KeyboardEvent callback
+    *   argument.
     */
   def keyTyped(): Unit = js.native
+  def keyTyped(event: js.Object): Unit = js.native
   
   /**
     *   Calculates a number between two numbers at a
@@ -4494,16 +4916,16 @@ trait p5InstanceExtensions extends StObject {
   /**
     *   Blends two colors to find a third color somewhere
     *   between them. The amt parameter is the amount to
-    *   interpolate between the two values where 0.0 equal
-    *   to the first color, 0.1 is very near the first
-    *   color, 0.5 is halfway in between, etc. An amount
-    *   below 0 will be treated as 0. Likewise, amounts
-    *   above 1 will be capped at 1. This is different
-    *   from the behavior of lerp(), but necessary because
-    *   otherwise numbers outside the range will produce
-    *   strange and unexpected colors.  The way that
-    *   colours are interpolated depends on the current
-    *   color mode.
+    *   interpolate between the two values where 0.0 is
+    *   equal to the first color, 0.1 is very near the
+    *   first color, 0.5 is halfway in between, etc. An
+    *   amount below 0 will be treated as 0. Likewise,
+    *   amounts above 1 will be capped at 1. This is
+    *   different from the behavior of lerp(), but
+    *   necessary because otherwise numbers outside the
+    *   range will produce strange and unexpected colors.
+    *   The way that colors are interpolated depends on
+    *   the current color mode.
     *   @param c1 interpolate from this color
     *   @param c2 interpolate to this color
     *   @param amt number between 0 and 1
@@ -4557,13 +4979,13 @@ trait p5InstanceExtensions extends StObject {
   
   /**
     *   Draws a line (a direct path between two points) to
-    *   the screen. The version of line() with four
-    *   parameters draws the line in 2D. To color a line,
-    *   use the stroke() function. A line cannot be
-    *   filled, therefore the fill() function will not
-    *   affect the color of a line. 2D lines are drawn
-    *   with a width of one pixel by default, but this can
-    *   be changed with the strokeWeight() function.
+    *   the screen. If called with only 4 parameters, it
+    *   will draw a line in 2D with a default width of 1
+    *   pixel. This width can be modified by using the
+    *   strokeWeight() function. A line cannot be filled,
+    *   therefore the fill() function will not affect the
+    *   color of a line. So to color a line, use the
+    *   stroke() function.
     *   @param x1 the x-coordinate of the first point
     *   @param y1 the y-coordinate of the first point
     *   @param x2 the x-coordinate of the second point
@@ -4573,13 +4995,13 @@ trait p5InstanceExtensions extends StObject {
   def line(x1: Double, y1: Double, x2: Double, y2: Double): p5 = js.native
   /**
     *   Draws a line (a direct path between two points) to
-    *   the screen. The version of line() with four
-    *   parameters draws the line in 2D. To color a line,
-    *   use the stroke() function. A line cannot be
-    *   filled, therefore the fill() function will not
-    *   affect the color of a line. 2D lines are drawn
-    *   with a width of one pixel by default, but this can
-    *   be changed with the strokeWeight() function.
+    *   the screen. If called with only 4 parameters, it
+    *   will draw a line in 2D with a default width of 1
+    *   pixel. This width can be modified by using the
+    *   strokeWeight() function. A line cannot be filled,
+    *   therefore the fill() function will not affect the
+    *   color of a line. So to color a line, use the
+    *   stroke() function.
     *   @param x1 the x-coordinate of the first point
     *   @param y1 the y-coordinate of the first point
     *   @param z1 the z-coordinate of the first point
@@ -4602,13 +5024,13 @@ trait p5InstanceExtensions extends StObject {
     *   the loaded buffer
     */
   def loadBytes(file: String): js.Object = js.native
-  def loadBytes(file: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Object = js.native
+  def loadBytes(file: String, callback: js.Function1[/* repeated */ Any, Any]): js.Object = js.native
   def loadBytes(
     file: String,
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    callback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
   ): js.Object = js.native
-  def loadBytes(file: String, callback: Unit, errorCallback: js.Function1[/* repeated */ js.Any, js.Any]): js.Object = js.native
+  def loadBytes(file: String, callback: Unit, errorCallback: js.Function1[/* repeated */ Any, Any]): js.Object = js.native
   
   /**
     *   Loads an opentype font file (.otf, .ttf) from a
@@ -4627,28 +5049,32 @@ trait p5InstanceExtensions extends StObject {
     *   @return p5.Font object
     */
   def loadFont(path: String): Font = js.native
-  def loadFont(path: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): Font = js.native
+  def loadFont(path: String, callback: js.Function1[/* repeated */ Any, Any]): Font = js.native
   def loadFont(
     path: String,
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
-    onError: js.Function1[/* repeated */ js.Any, js.Any]
+    callback: js.Function1[/* repeated */ Any, Any],
+    onError: js.Function1[/* repeated */ Any, Any]
   ): Font = js.native
-  def loadFont(path: String, callback: Unit, onError: js.Function1[/* repeated */ js.Any, js.Any]): Font = js.native
+  def loadFont(path: String, callback: Unit, onError: js.Function1[/* repeated */ Any, Any]): Font = js.native
   
   /**
     *   Loads an image from a path and creates a p5.Image
-    *   from it.  The image may not be immediately
-    *   available for rendering If you want to ensure that
-    *   the image is ready before doing anything with it,
-    *   place the loadImage() call in preload(). You may
-    *   also supply a callback function to handle the
+    *   from it. The image may not be immediately
+    *   available for rendering. If you want to ensure
+    *   that the image is ready before doing anything with
+    *   it, place the loadImage() call in preload(). You
+    *   may also supply a callback function to handle the
     *   image when it's ready.
-    *
     *
     *   The path to the image should be relative to the
     *   HTML file that links in your sketch. Loading an
     *   image from a URL or other remote location may be
     *   blocked due to your browser's built-in security.
+    *
+    *   You can also pass in a string of a base64 encoded
+    *   image as an alternative to the file path. Remember
+    *   to add "data:image/png;base64," in front of the
+    *   string.
     *   @param path Path of the image to be loaded
     *   @param [successCallback] Function to be called
     *   once the image is loaded. Will be passed the
@@ -4658,13 +5084,13 @@ trait p5InstanceExtensions extends StObject {
     *   @return the p5.Image object
     */
   def loadImage(path: String): Image = js.native
-  def loadImage(path: String, successCallback: js.Function1[/* p1 */ Image, js.Any]): Image = js.native
+  def loadImage(path: String, successCallback: js.Function1[/* p1 */ Image, Any]): Image = js.native
   def loadImage(
     path: String,
-    successCallback: js.Function1[/* p1 */ Image, js.Any],
-    failureCallback: js.Function1[/* p1 */ Event, js.Any]
+    successCallback: js.Function1[/* p1 */ Image, Any],
+    failureCallback: js.Function1[/* p1 */ Event, Any]
   ): Image = js.native
-  def loadImage(path: String, successCallback: Unit, failureCallback: js.Function1[/* p1 */ Event, js.Any]): Image = js.native
+  def loadImage(path: String, successCallback: Unit, failureCallback: js.Function1[/* p1 */ Event, Any]): Image = js.native
   
   /**
     *   Loads a JSON file from a file or a URL, and
@@ -4692,7 +5118,7 @@ trait p5InstanceExtensions extends StObject {
     *   argument
     *   @return JSON data
     */
-  def loadJSON(path: String): js.Object | js.Array[js.Any] = js.native
+  def loadJSON(path: String): js.Object | js.Array[Any] = js.native
   /**
     *   Loads a JSON file from a file or a URL, and
     *   returns an Object. Note that even if the JSON file
@@ -4715,12 +5141,12 @@ trait p5InstanceExtensions extends StObject {
     *   there is an error, response is passed in as first
     *   argument
     */
-  def loadJSON(path: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Object | js.Array[js.Any] = js.native
+  def loadJSON(path: String, callback: js.Function1[/* repeated */ Any, Any]): js.Object | js.Array[Any] = js.native
   def loadJSON(
     path: String,
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Object | js.Array[js.Any] = js.native
+    callback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Object | js.Array[Any] = js.native
   /**
     *   Loads a JSON file from a file or a URL, and
     *   returns an Object. Note that even if the JSON file
@@ -4744,115 +5170,115 @@ trait p5InstanceExtensions extends StObject {
     *   there is an error, response is passed in as first
     *   argument
     */
-  def loadJSON(path: String, datatype: String): js.Object | js.Array[js.Any] = js.native
-  def loadJSON(path: String, datatype: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Object | js.Array[js.Any] = js.native
+  def loadJSON(path: String, datatype: String): js.Object | js.Array[Any] = js.native
+  def loadJSON(path: String, datatype: String, callback: js.Function1[/* repeated */ Any, Any]): js.Object | js.Array[Any] = js.native
   def loadJSON(
     path: String,
     datatype: String,
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Object | js.Array[js.Any] = js.native
+    callback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Object | js.Array[Any] = js.native
   def loadJSON(
     path: String,
-    datatype: String,
-    callback: Unit,
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Object | js.Array[js.Any] = js.native
-  def loadJSON(path: String, jsonpOptions: js.Object): js.Object | js.Array[js.Any] = js.native
-  def loadJSON(path: String, jsonpOptions: js.Object, datatype: String): js.Object | js.Array[js.Any] = js.native
-  def loadJSON(
-    path: String,
-    jsonpOptions: js.Object,
-    datatype: String,
-    callback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Object | js.Array[js.Any] = js.native
-  def loadJSON(
-    path: String,
-    jsonpOptions: js.Object,
-    datatype: String,
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Object | js.Array[js.Any] = js.native
-  def loadJSON(
-    path: String,
-    jsonpOptions: js.Object,
     datatype: String,
     callback: Unit,
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Object | js.Array[js.Any] = js.native
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Object | js.Array[Any] = js.native
+  def loadJSON(path: String, jsonpOptions: js.Object): js.Object | js.Array[Any] = js.native
+  def loadJSON(path: String, jsonpOptions: js.Object, datatype: String): js.Object | js.Array[Any] = js.native
+  def loadJSON(
+    path: String,
+    jsonpOptions: js.Object,
+    datatype: String,
+    callback: js.Function1[/* repeated */ Any, Any]
+  ): js.Object | js.Array[Any] = js.native
+  def loadJSON(
+    path: String,
+    jsonpOptions: js.Object,
+    datatype: String,
+    callback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Object | js.Array[Any] = js.native
+  def loadJSON(
+    path: String,
+    jsonpOptions: js.Object,
+    datatype: String,
+    callback: Unit,
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Object | js.Array[Any] = js.native
   def loadJSON(
     path: String,
     jsonpOptions: js.Object,
     datatype: Unit,
-    callback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Object | js.Array[js.Any] = js.native
+    callback: js.Function1[/* repeated */ Any, Any]
+  ): js.Object | js.Array[Any] = js.native
   def loadJSON(
     path: String,
     jsonpOptions: js.Object,
     datatype: Unit,
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Object | js.Array[js.Any] = js.native
+    callback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Object | js.Array[Any] = js.native
   def loadJSON(
     path: String,
     jsonpOptions: js.Object,
     datatype: Unit,
     callback: Unit,
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Object | js.Array[js.Any] = js.native
-  def loadJSON(path: String, jsonpOptions: Unit, datatype: String): js.Object | js.Array[js.Any] = js.native
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Object | js.Array[Any] = js.native
+  def loadJSON(path: String, jsonpOptions: Unit, datatype: String): js.Object | js.Array[Any] = js.native
   def loadJSON(
     path: String,
     jsonpOptions: Unit,
     datatype: String,
-    callback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Object | js.Array[js.Any] = js.native
+    callback: js.Function1[/* repeated */ Any, Any]
+  ): js.Object | js.Array[Any] = js.native
   def loadJSON(
     path: String,
     jsonpOptions: Unit,
     datatype: String,
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Object | js.Array[js.Any] = js.native
+    callback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Object | js.Array[Any] = js.native
   def loadJSON(
     path: String,
     jsonpOptions: Unit,
     datatype: String,
     callback: Unit,
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Object | js.Array[js.Any] = js.native
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Object | js.Array[Any] = js.native
+  def loadJSON(path: String, jsonpOptions: Unit, datatype: Unit, callback: js.Function1[/* repeated */ Any, Any]): js.Object | js.Array[Any] = js.native
   def loadJSON(
     path: String,
     jsonpOptions: Unit,
     datatype: Unit,
-    callback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Object | js.Array[js.Any] = js.native
-  def loadJSON(
-    path: String,
-    jsonpOptions: Unit,
-    datatype: Unit,
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Object | js.Array[js.Any] = js.native
+    callback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Object | js.Array[Any] = js.native
   def loadJSON(
     path: String,
     jsonpOptions: Unit,
     datatype: Unit,
     callback: Unit,
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Object | js.Array[js.Any] = js.native
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Object | js.Array[Any] = js.native
   
   /**
-    *   Load a 3d model from an OBJ or STL file.  One of
-    *   the limitations of the OBJ and STL format is that
-    *   it doesn't have a built-in sense of scale. This
-    *   means that models exported from different programs
-    *   might be very different sizes. If your model isn't
-    *   displaying, try calling loadModel() with the
-    *   normalized parameter set to true. This will resize
-    *   the model to a scale appropriate for p5. You can
-    *   also make additional changes to the final size of
-    *   your model with the scale() function.
+    *   Load a 3d model from an OBJ or STL file.
+    *   loadModel() should be placed inside of preload().
+    *   This allows the model to load fully before the
+    *   rest of your code is run.
+    *
+    *   One of the limitations of the OBJ and STL format
+    *   is that it doesn't have a built-in sense of scale.
+    *   This means that models exported from different
+    *   programs might be very different sizes. If your
+    *   model isn't displaying, try calling loadModel()
+    *   with the normalized parameter set to true. This
+    *   will resize the model to a scale appropriate for
+    *   p5. You can also make additional changes to the
+    *   final size of your model with the scale()
+    *   function.
     *
     *   Also, the support for colored STL files is not
     *   present. STL files with color will be rendered
@@ -4863,20 +5289,27 @@ trait p5InstanceExtensions extends StObject {
     *   model object.
     *   @param [failureCallback] called with event error
     *   if the model fails to load.
+    *   @param [fileType] The file extension of the model
+    *   (.stl, .obj).
     *   @return the p5.Geometry object
     */
   def loadModel(path: String): Geometry = js.native
   /**
-    *   Load a 3d model from an OBJ or STL file.  One of
-    *   the limitations of the OBJ and STL format is that
-    *   it doesn't have a built-in sense of scale. This
-    *   means that models exported from different programs
-    *   might be very different sizes. If your model isn't
-    *   displaying, try calling loadModel() with the
-    *   normalized parameter set to true. This will resize
-    *   the model to a scale appropriate for p5. You can
-    *   also make additional changes to the final size of
-    *   your model with the scale() function.
+    *   Load a 3d model from an OBJ or STL file.
+    *   loadModel() should be placed inside of preload().
+    *   This allows the model to load fully before the
+    *   rest of your code is run.
+    *
+    *   One of the limitations of the OBJ and STL format
+    *   is that it doesn't have a built-in sense of scale.
+    *   This means that models exported from different
+    *   programs might be very different sizes. If your
+    *   model isn't displaying, try calling loadModel()
+    *   with the normalized parameter set to true. This
+    *   will resize the model to a scale appropriate for
+    *   p5. You can also make additional changes to the
+    *   final size of your model with the scale()
+    *   function.
     *
     *   Also, the support for colored STL files is not
     *   present. STL files with color will be rendered
@@ -4889,29 +5322,72 @@ trait p5InstanceExtensions extends StObject {
     *   model object.
     *   @param [failureCallback] called with event error
     *   if the model fails to load.
+    *   @param [fileType] The file extension of the model
+    *   (.stl, .obj).
     *   @return the p5.Geometry object
     */
   def loadModel(path: String, normalize: Boolean): Geometry = js.native
-  def loadModel(path: String, normalize: Boolean, successCallback: js.Function1[/* p1 */ Geometry, js.Any]): Geometry = js.native
+  def loadModel(path: String, normalize: Boolean, successCallback: js.Function1[/* p1 */ Geometry, Any]): Geometry = js.native
   def loadModel(
     path: String,
     normalize: Boolean,
-    successCallback: js.Function1[/* p1 */ Geometry, js.Any],
-    failureCallback: js.Function1[/* p1 */ Event, js.Any]
+    successCallback: js.Function1[/* p1 */ Geometry, Any],
+    failureCallback: js.Function1[/* p1 */ Event, Any]
+  ): Geometry = js.native
+  def loadModel(
+    path: String,
+    normalize: Boolean,
+    successCallback: js.Function1[/* p1 */ Geometry, Any],
+    failureCallback: js.Function1[/* p1 */ Event, Any],
+    fileType: String
+  ): Geometry = js.native
+  def loadModel(
+    path: String,
+    normalize: Boolean,
+    successCallback: js.Function1[/* p1 */ Geometry, Any],
+    failureCallback: Unit,
+    fileType: String
   ): Geometry = js.native
   def loadModel(
     path: String,
     normalize: Boolean,
     successCallback: Unit,
-    failureCallback: js.Function1[/* p1 */ Event, js.Any]
+    failureCallback: js.Function1[/* p1 */ Event, Any]
   ): Geometry = js.native
-  def loadModel(path: String, successCallback: js.Function1[/* p1 */ Geometry, js.Any]): Geometry = js.native
   def loadModel(
     path: String,
-    successCallback: js.Function1[/* p1 */ Geometry, js.Any],
-    failureCallback: js.Function1[/* p1 */ Event, js.Any]
+    normalize: Boolean,
+    successCallback: Unit,
+    failureCallback: js.Function1[/* p1 */ Event, Any],
+    fileType: String
   ): Geometry = js.native
-  def loadModel(path: String, successCallback: Unit, failureCallback: js.Function1[/* p1 */ Event, js.Any]): Geometry = js.native
+  def loadModel(path: String, normalize: Boolean, successCallback: Unit, failureCallback: Unit, fileType: String): Geometry = js.native
+  def loadModel(path: String, successCallback: js.Function1[/* p1 */ Geometry, Any]): Geometry = js.native
+  def loadModel(
+    path: String,
+    successCallback: js.Function1[/* p1 */ Geometry, Any],
+    failureCallback: js.Function1[/* p1 */ Event, Any]
+  ): Geometry = js.native
+  def loadModel(
+    path: String,
+    successCallback: js.Function1[/* p1 */ Geometry, Any],
+    failureCallback: js.Function1[/* p1 */ Event, Any],
+    fileType: String
+  ): Geometry = js.native
+  def loadModel(
+    path: String,
+    successCallback: js.Function1[/* p1 */ Geometry, Any],
+    failureCallback: Unit,
+    fileType: String
+  ): Geometry = js.native
+  def loadModel(path: String, successCallback: Unit, failureCallback: js.Function1[/* p1 */ Event, Any]): Geometry = js.native
+  def loadModel(
+    path: String,
+    successCallback: Unit,
+    failureCallback: js.Function1[/* p1 */ Event, Any],
+    fileType: String
+  ): Geometry = js.native
+  def loadModel(path: String, successCallback: Unit, failureCallback: Unit, fileType: String): Geometry = js.native
   
   /**
     *   Loads the pixel data for the display window into
@@ -4923,20 +5399,18 @@ trait p5InstanceExtensions extends StObject {
   def loadPixels(): Unit = js.native
   
   /**
-    *   Loads a custom shader from the provided vertex and
-    *   fragment shader paths. The shader files are loaded
-    *   asynchronously in the background, so this method
-    *   should be used in preload(). For now, there are
-    *   three main types of shaders. p5 will automatically
-    *   supply appropriate vertices, normals, colors, and
-    *   lighting attributes if the parameters defined in
-    *   the shader match the names.
+    *   Creates a new p5.Shader object from the provided
+    *   vertex and fragment shader files. The shader files
+    *   are loaded asynchronously in the background, so
+    *   this method should be used in preload().
+    *
+    *   Note, shaders can only be used in WEBGL mode.
     *   @param vertFilename path to file containing vertex
     *   shader source code
     *   @param fragFilename path to file containing
     *   fragment shader source code
     *   @param [callback] callback to be executed after
-    *   loadShader completes. On success, the Shader
+    *   loadShader completes. On success, the p5.Shader
     *   object is passed as the first argument.
     *   @param [errorCallback] callback to be executed
     *   when an error occurs inside loadShader. On error,
@@ -4945,32 +5419,119 @@ trait p5InstanceExtensions extends StObject {
     *   vertex and fragment shader files.
     */
   def loadShader(vertFilename: String, fragFilename: String): Shader = js.native
-  def loadShader(vertFilename: String, fragFilename: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): Shader = js.native
+  def loadShader(vertFilename: String, fragFilename: String, callback: js.Function1[/* repeated */ Any, Any]): Shader = js.native
   def loadShader(
     vertFilename: String,
     fragFilename: String,
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    callback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
   ): Shader = js.native
   def loadShader(
     vertFilename: String,
     fragFilename: String,
     callback: Unit,
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    errorCallback: js.Function1[/* repeated */ Any, Any]
   ): Shader = js.native
+  
+  /**
+    *   loadSound() returns a new p5.SoundFile from a
+    *   specified path. If called during preload(), the
+    *   p5.SoundFile will be ready to play in time for
+    *   setup() and draw(). If called outside of preload,
+    *   the p5.SoundFile will not be ready immediately, so
+    *   loadSound accepts a callback as the second
+    *   parameter. Using a  local server is recommended
+    *   when loading external files.
+    *   @param path Path to the sound file, or an array
+    *   with paths to soundfiles in multiple formats i.e.
+    *   ['sound.ogg', 'sound.mp3']. Alternately, accepts
+    *   an object: either from the HTML5 File API, or a
+    *   p5.File.
+    *   @param [successCallback] Name of a function to
+    *   call once file loads
+    *   @param [errorCallback] Name of a function to call
+    *   if there is an error loading the file.
+    *   @param [whileLoading] Name of a function to call
+    *   while file is loading. This function will receive
+    *   the percentage loaded so far, from 0.0 to 1.0.
+    *   @return Returns a p5.SoundFile
+    */
+  def loadSound(path: String): SoundFile = js.native
+  def loadSound(path: String, successCallback: js.Function1[/* repeated */ Any, Any]): SoundFile = js.native
+  def loadSound(
+    path: String,
+    successCallback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): SoundFile = js.native
+  def loadSound(
+    path: String,
+    successCallback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any],
+    whileLoading: js.Function1[/* repeated */ Any, Any]
+  ): SoundFile = js.native
+  def loadSound(
+    path: String,
+    successCallback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: Unit,
+    whileLoading: js.Function1[/* repeated */ Any, Any]
+  ): SoundFile = js.native
+  def loadSound(path: String, successCallback: Unit, errorCallback: js.Function1[/* repeated */ Any, Any]): SoundFile = js.native
+  def loadSound(
+    path: String,
+    successCallback: Unit,
+    errorCallback: js.Function1[/* repeated */ Any, Any],
+    whileLoading: js.Function1[/* repeated */ Any, Any]
+  ): SoundFile = js.native
+  def loadSound(
+    path: String,
+    successCallback: Unit,
+    errorCallback: Unit,
+    whileLoading: js.Function1[/* repeated */ Any, Any]
+  ): SoundFile = js.native
+  def loadSound(path: js.Array[Any]): SoundFile = js.native
+  def loadSound(path: js.Array[Any], successCallback: js.Function1[/* repeated */ Any, Any]): SoundFile = js.native
+  def loadSound(
+    path: js.Array[Any],
+    successCallback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): SoundFile = js.native
+  def loadSound(
+    path: js.Array[Any],
+    successCallback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any],
+    whileLoading: js.Function1[/* repeated */ Any, Any]
+  ): SoundFile = js.native
+  def loadSound(
+    path: js.Array[Any],
+    successCallback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: Unit,
+    whileLoading: js.Function1[/* repeated */ Any, Any]
+  ): SoundFile = js.native
+  def loadSound(path: js.Array[Any], successCallback: Unit, errorCallback: js.Function1[/* repeated */ Any, Any]): SoundFile = js.native
+  def loadSound(
+    path: js.Array[Any],
+    successCallback: Unit,
+    errorCallback: js.Function1[/* repeated */ Any, Any],
+    whileLoading: js.Function1[/* repeated */ Any, Any]
+  ): SoundFile = js.native
+  def loadSound(
+    path: js.Array[Any],
+    successCallback: Unit,
+    errorCallback: Unit,
+    whileLoading: js.Function1[/* repeated */ Any, Any]
+  ): SoundFile = js.native
   
   /**
     *   Reads the contents of a file and creates a String
     *   array of its individual lines. If the name of the
     *   file is used as the parameter, as in the above
     *   example, the file must be located in the sketch
-    *   directory/folder.  Alternatively, the file maybe
-    *   be loaded from anywhere on the local computer
-    *   using an absolute path (something that starts with
-    *   / on Unix and Linux, or a drive letter on
-    *   Windows), or the filename parameter can be a URL
-    *   for a file found on a network.
-    *
+    *   directory/folder. Alternatively, the file maybe be
+    *   loaded from anywhere on the local computer using
+    *   an absolute path (something that starts with / on
+    *   Unix and Linux, or a drive letter on Windows), or
+    *   the filename parameter can be a URL for a file
+    *   found on a network.
     *
     *   This method is asynchronous, meaning it may not
     *   finish before the next line in your sketch is
@@ -4988,13 +5549,13 @@ trait p5InstanceExtensions extends StObject {
     *   @return Array of Strings
     */
   def loadStrings(filename: String): js.Array[String] = js.native
-  def loadStrings(filename: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Array[String] = js.native
+  def loadStrings(filename: String, callback: js.Function1[/* repeated */ Any, Any]): js.Array[String] = js.native
   def loadStrings(
     filename: String,
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    callback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
   ): js.Array[String] = js.native
-  def loadStrings(filename: String, callback: Unit, errorCallback: js.Function1[/* repeated */ js.Any, js.Any]): js.Array[String] = js.native
+  def loadStrings(filename: String, callback: Unit, errorCallback: js.Function1[/* repeated */ Any, Any]): js.Array[String] = js.native
   
   /**
     *   Reads the contents of a file or URL and creates a
@@ -5004,94 +5565,23 @@ trait p5InstanceExtensions extends StObject {
     *   a URL to a file found online. By default, the file
     *   is assumed to be comma-separated (in CSV format).
     *   Table only looks for a header row if the 'header'
-    *   option is included. Possible options include:
-    *
-    *   - csv - parse the table as comma-separated values
-    *   - tsv - parse the table as tab-separated values
-    *   - header - this table has a header (title) row
-    *
-    *
-    *
-    *   When passing in multiple options, pass them in as
-    *   separate parameters, seperated by commas. For
-    *   example:
-    *
-    *
-    *   loadTable('my_csv_file.csv', 'csv', 'header');
-    *
-    *
-    *   All files loaded and saved use UTF-8 encoding.
-    *
-    *   This method is asynchronous, meaning it may not
-    *   finish before the next line in your sketch is
-    *   executed. Calling loadTable() inside preload()
-    *   guarantees to complete the operation before
-    *   setup() and draw() are called.
-    *
+    *   option is included. This method is asynchronous,
+    *   meaning it may not finish before the next line in
+    *   your sketch is executed. Calling loadTable()
+    *   inside preload() guarantees to complete the
+    *   operation before setup() and draw() are called.
     *   Outside of preload(), you may supply a callback
     *   function to handle the object:
     *
-    *
-    *
-    *   This method is suitable for fetching files up to
-    *   size of 64MB.
-    *   @param filename name of the file or URL to load
-    *   @param [callback] function to be executed after
-    *   loadTable() completes. On success, the Table
-    *   object is passed in as the first argument.
-    *   @param [errorCallback] function to be executed if
-    *   there is an error, response is passed in as first
-    *   argument
-    */
-  def loadTable(filename: String): js.Object = js.native
-  def loadTable(filename: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Object = js.native
-  def loadTable(
-    filename: String,
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
-  ): js.Object = js.native
-  def loadTable(filename: String, callback: Unit, errorCallback: js.Function1[/* repeated */ js.Any, js.Any]): js.Object = js.native
-  /**
-    *   Reads the contents of a file or URL and creates a
-    *   p5.Table object with its values. If a file is
-    *   specified, it must be located in the sketch's
-    *   "data" folder. The filename parameter can also be
-    *   a URL to a file found online. By default, the file
-    *   is assumed to be comma-separated (in CSV format).
-    *   Table only looks for a header row if the 'header'
-    *   option is included. Possible options include:
-    *
-    *   - csv - parse the table as comma-separated values
-    *   - tsv - parse the table as tab-separated values
-    *   - header - this table has a header (title) row
-    *
-    *
-    *
-    *   When passing in multiple options, pass them in as
-    *   separate parameters, seperated by commas. For
-    *   example:
-    *
-    *
-    *   loadTable('my_csv_file.csv', 'csv', 'header');
-    *
-    *
     *   All files loaded and saved use UTF-8 encoding.
-    *
-    *   This method is asynchronous, meaning it may not
-    *   finish before the next line in your sketch is
-    *   executed. Calling loadTable() inside preload()
-    *   guarantees to complete the operation before
-    *   setup() and draw() are called.
-    *
-    *   Outside of preload(), you may supply a callback
-    *   function to handle the object:
-    *
-    *
-    *
     *   This method is suitable for fetching files up to
     *   size of 64MB.
     *   @param filename name of the file or URL to load
-    *   @param options "header" "csv" "tsv"
+    *   @param [extension] parse the table by
+    *   comma-separated values "csv", semicolon-separated
+    *   values "ssv", or tab-separated values "tsv"
+    *   @param [header] "header" to indicate table has
+    *   header row
     *   @param [callback] function to be executed after
     *   loadTable() completes. On success, the Table
     *   object is passed in as the first argument.
@@ -5100,19 +5590,84 @@ trait p5InstanceExtensions extends StObject {
     *   argument
     *   @return Table object containing data
     */
-  def loadTable(filename: String, options: String): js.Object = js.native
-  def loadTable(filename: String, options: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Object = js.native
+  def loadTable(filename: String): js.Object = js.native
+  def loadTable(filename: String, `extension`: String): js.Object = js.native
+  def loadTable(filename: String, `extension`: String, header: String): js.Object = js.native
   def loadTable(
     filename: String,
-    options: String,
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    `extension`: String,
+    header: String,
+    callback: js.Function1[/* repeated */ Any, Any]
   ): js.Object = js.native
   def loadTable(
     filename: String,
-    options: String,
+    `extension`: String,
+    header: String,
+    callback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Object = js.native
+  def loadTable(
+    filename: String,
+    `extension`: String,
+    header: String,
     callback: Unit,
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Object = js.native
+  def loadTable(
+    filename: String,
+    `extension`: String,
+    header: Unit,
+    callback: js.Function1[/* repeated */ Any, Any]
+  ): js.Object = js.native
+  def loadTable(
+    filename: String,
+    `extension`: String,
+    header: Unit,
+    callback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Object = js.native
+  def loadTable(
+    filename: String,
+    `extension`: String,
+    header: Unit,
+    callback: Unit,
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Object = js.native
+  def loadTable(filename: String, `extension`: Unit, header: String): js.Object = js.native
+  def loadTable(
+    filename: String,
+    `extension`: Unit,
+    header: String,
+    callback: js.Function1[/* repeated */ Any, Any]
+  ): js.Object = js.native
+  def loadTable(
+    filename: String,
+    `extension`: Unit,
+    header: String,
+    callback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Object = js.native
+  def loadTable(
+    filename: String,
+    `extension`: Unit,
+    header: String,
+    callback: Unit,
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Object = js.native
+  def loadTable(filename: String, `extension`: Unit, header: Unit, callback: js.Function1[/* repeated */ Any, Any]): js.Object = js.native
+  def loadTable(
+    filename: String,
+    `extension`: Unit,
+    header: Unit,
+    callback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Object = js.native
+  def loadTable(
+    filename: String,
+    `extension`: Unit,
+    header: Unit,
+    callback: Unit,
+    errorCallback: js.Function1[/* repeated */ Any, Any]
   ): js.Object = js.native
   
   /**
@@ -5148,13 +5703,13 @@ trait p5InstanceExtensions extends StObject {
     *   @return XML object containing data
     */
   def loadXML(filename: String): js.Object = js.native
-  def loadXML(filename: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Object = js.native
+  def loadXML(filename: String, callback: js.Function1[/* repeated */ Any, Any]): js.Object = js.native
   def loadXML(
     filename: String,
-    callback: js.Function1[/* repeated */ js.Any, js.Any],
-    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    callback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
   ): js.Object = js.native
-  def loadXML(filename: String, callback: Unit, errorCallback: js.Function1[/* repeated */ js.Any, js.Any]): js.Object = js.native
+  def loadXML(filename: String, callback: Unit, errorCallback: js.Function1[/* repeated */ Any, Any]): js.Object = js.native
   
   /**
     *   Calculates the natural logarithm (the base-e
@@ -5173,6 +5728,8 @@ trait p5InstanceExtensions extends StObject {
     *   noLoop(). In that case, the draw() loop can be
     *   resumed with loop(). Avoid calling loop() from
     *   inside setup().
+    *
+    *   Use isLooping() to check current state of loop().
     */
   def loop(): Unit = js.native
   
@@ -5191,11 +5748,11 @@ trait p5InstanceExtensions extends StObject {
   def mag(a: Double, b: Double): Double = js.native
   
   /**
-    *   Re-maps a number from one range to another.  In
-    *   the first example above, the number 25 is
-    *   converted from a value in the range of 0 to 100
-    *   into a value that ranges from the left edge of the
-    *   window (0) to the right edge (width).
+    *   Re-maps a number from one range to another. In the
+    *   first example above, the number 25 is converted
+    *   from a value in the range of 0 to 100 into a value
+    *   that ranges from the left edge of the window (0)
+    *   to the right edge (width).
     *   @param value the incoming value to be converted
     *   @param start1 lower bound of the value's current
     *   range
@@ -5221,11 +5778,10 @@ trait p5InstanceExtensions extends StObject {
     *   in the regular expression, but the sequence
     *   matches, an array of length 1 (with the matched
     *   text as the first element of the array) will be
-    *   returned.  To use the function, first check to see
+    *   returned. To use the function, first check to see
     *   if the result is null. If the result is null, then
     *   the sequence did not match at all. If the sequence
     *   did match, an array is returned.
-    *
     *
     *   If there are groups (specified by sets of
     *   parentheses) in the regular expression, then the
@@ -5249,12 +5805,11 @@ trait p5InstanceExtensions extends StObject {
     *   returned. If no groups are specified in the
     *   regular expression, but the sequence matches, a
     *   two dimensional array is still returned, but the
-    *   second dimension is only of length one.  To use
-    *   the function, first check to see if the result is
+    *   second dimension is only of length one. To use the
+    *   function, first check to see if the result is
     *   null. If the result is null, then the sequence did
     *   not match at all. If the sequence did match, a 2D
     *   array is returned.
-    *
     *
     *   If there are groups (specified by sets of
     *   parentheses) in the regular expression, then the
@@ -5301,11 +5856,11 @@ trait p5InstanceExtensions extends StObject {
   
   /**
     *   Returns the number of milliseconds (thousandths of
-    *   a second) since starting the program. This
-    *   information is often used for timing events and
-    *   animation sequences.
+    *   a second) since starting the sketch (when setup()
+    *   is called). This information is often used for
+    *   timing events and animation sequences.
     *   @return the number of milliseconds since starting
-    *   the program
+    *   the sketch
     */
   def millis(): Double = js.native
   
@@ -5351,11 +5906,11 @@ trait p5InstanceExtensions extends StObject {
   def month(): Double = js.native
   
   /**
-    *   Processing automatically tracks if the mouse
-    *   button is pressed and which button is pressed. The
-    *   value of the system variable mouseButton is either
-    *   LEFT, RIGHT, or CENTER depending on which button
-    *   was pressed last. Warning: different browsers may
+    *   p5 automatically tracks if the mouse button is
+    *   pressed and which button is pressed. The value of
+    *   the system variable mouseButton is either LEFT,
+    *   RIGHT, or CENTER depending on which button was
+    *   pressed last. Warning: different browsers may
     *   track mouseButton differently.
     */
   var mouseButton: UNKNOWN_P5_CONSTANT = js.native
@@ -5496,6 +6051,18 @@ trait p5InstanceExtensions extends StObject {
     */
   var mouseY: Double = js.native
   
+  /**
+    *   The variable movedX contains the horizontal
+    *   movement of the mouse since the last frame
+    */
+  var movedX: Double = js.native
+  
+  /**
+    *   The variable movedY contains the vertical movement
+    *   of the mouse since the last frame
+    */
+  var movedY: Double = js.native
+  
   def nf(num: String): String = js.native
   def nf(num: String, left: String): String = js.native
   def nf(num: String, left: String, right: String): String = js.native
@@ -5511,14 +6078,17 @@ trait p5InstanceExtensions extends StObject {
     *   formatting floats, and one for formatting ints.
     *   The values for the digits, left, and right
     *   parameters should always be positive integers.
+    *
     *   (NOTE): Be cautious when using left and right
     *   parameters as it prepends numbers of 0's if the
     *   parameter if greater than the current length of
-    *   the number. For example if number is 123.2 and
-    *   left parameter passed is 4 which is greater than
-    *   length of 123 (integer part) i.e 3 than result
-    *   will be 0123.2. Same case for right parameter i.e.
-    *   if right is 3 than the result will be 123.200.
+    *   the number.
+    *
+    *   For example if number is 123.2 and left parameter
+    *   passed is 4 which is greater than length of 123
+    *   (integer part) i.e 3 than result will be 0123.2.
+    *   Same case for right parameter i.e. if right is 3
+    *   than the result will be 123.200.
     *   @param num the Number to format
     *   @param [left] number of digits to the left of the
     *   decimal point
@@ -5541,14 +6111,17 @@ trait p5InstanceExtensions extends StObject {
     *   formatting floats, and one for formatting ints.
     *   The values for the digits, left, and right
     *   parameters should always be positive integers.
+    *
     *   (NOTE): Be cautious when using left and right
     *   parameters as it prepends numbers of 0's if the
     *   parameter if greater than the current length of
-    *   the number. For example if number is 123.2 and
-    *   left parameter passed is 4 which is greater than
-    *   length of 123 (integer part) i.e 3 than result
-    *   will be 0123.2. Same case for right parameter i.e.
-    *   if right is 3 than the result will be 123.200.
+    *   the number.
+    *
+    *   For example if number is 123.2 and left parameter
+    *   passed is 4 which is greater than length of 123
+    *   (integer part) i.e 3 than result will be 0123.2.
+    *   Same case for right parameter i.e. if right is 3
+    *   than the result will be 123.200.
     *   @param nums the Numbers to format
     *   @param [left] number of digits to the left of the
     *   decimal point
@@ -5556,15 +6129,15 @@ trait p5InstanceExtensions extends StObject {
     *   the decimal point
     *   @return formatted Strings
     */
-  def nf(nums: js.Array[js.Any]): js.Array[String] = js.native
-  def nf(nums: js.Array[js.Any], left: String): js.Array[String] = js.native
-  def nf(nums: js.Array[js.Any], left: String, right: String): js.Array[String] = js.native
-  def nf(nums: js.Array[js.Any], left: String, right: Double): js.Array[String] = js.native
-  def nf(nums: js.Array[js.Any], left: Double): js.Array[String] = js.native
-  def nf(nums: js.Array[js.Any], left: Double, right: String): js.Array[String] = js.native
-  def nf(nums: js.Array[js.Any], left: Double, right: Double): js.Array[String] = js.native
-  def nf(nums: js.Array[js.Any], left: Unit, right: String): js.Array[String] = js.native
-  def nf(nums: js.Array[js.Any], left: Unit, right: Double): js.Array[String] = js.native
+  def nf(nums: js.Array[Any]): js.Array[String] = js.native
+  def nf(nums: js.Array[Any], left: String): js.Array[String] = js.native
+  def nf(nums: js.Array[Any], left: String, right: String): js.Array[String] = js.native
+  def nf(nums: js.Array[Any], left: String, right: Double): js.Array[String] = js.native
+  def nf(nums: js.Array[Any], left: Double): js.Array[String] = js.native
+  def nf(nums: js.Array[Any], left: Double, right: String): js.Array[String] = js.native
+  def nf(nums: js.Array[Any], left: Double, right: Double): js.Array[String] = js.native
+  def nf(nums: js.Array[Any], left: Unit, right: String): js.Array[String] = js.native
+  def nf(nums: js.Array[Any], left: Unit, right: Double): js.Array[String] = js.native
   
   def nfc(num: String): String = js.native
   def nfc(num: String, right: String): String = js.native
@@ -5596,9 +6169,9 @@ trait p5InstanceExtensions extends StObject {
     *   the decimal point
     *   @return formatted Strings
     */
-  def nfc(nums: js.Array[js.Any]): js.Array[String] = js.native
-  def nfc(nums: js.Array[js.Any], right: String): js.Array[String] = js.native
-  def nfc(nums: js.Array[js.Any], right: Double): js.Array[String] = js.native
+  def nfc(nums: js.Array[Any]): js.Array[String] = js.native
+  def nfc(nums: js.Array[Any], right: String): js.Array[String] = js.native
+  def nfc(nums: js.Array[Any], right: Double): js.Array[String] = js.native
   
   /**
     *   Utility function for formatting numbers into
@@ -5649,19 +6222,25 @@ trait p5InstanceExtensions extends StObject {
     *   digits (place values) of a non-negative number
     *   with some negative number (See the example to get
     *   a clear picture). There are two versions: one for
-    *   formatting float, and one for formatting int. The
-    *   values for the digits, left, and right parameters
-    *   should always be positive integers. (IMP): The
-    *   result on the canvas basically the expected
-    *   alignment can vary based on the typeface you are
-    *   using. (NOTE): Be cautious when using left and
-    *   right parameters as it prepends numbers of 0's if
-    *   the parameter if greater than the current length
-    *   of the number. For example if number is 123.2 and
-    *   left parameter passed is 4 which is greater than
-    *   length of 123 (integer part) i.e 3 than result
-    *   will be 0123.2. Same case for right parameter i.e.
-    *   if right is 3 than the result will be 123.200.
+    *   formatting float, and one for formatting int.
+    *
+    *   The values for the digits, left, and right
+    *   parameters should always be positive integers.
+    *
+    *   (IMP): The result on the canvas basically the
+    *   expected alignment can vary based on the typeface
+    *   you are using.
+    *
+    *   (NOTE): Be cautious when using left and right
+    *   parameters as it prepends numbers of 0's if the
+    *   parameter if greater than the current length of
+    *   the number.
+    *
+    *   For example if number is 123.2 and left parameter
+    *   passed is 4 which is greater than length of 123
+    *   (integer part) i.e 3 than result will be 0123.2.
+    *   Same case for right parameter i.e. if right is 3
+    *   than the result will be 123.200.
     *   @param num the Number to format
     *   @param [left] number of digits to the left of the
     *   decimal point
@@ -5683,19 +6262,25 @@ trait p5InstanceExtensions extends StObject {
     *   digits (place values) of a non-negative number
     *   with some negative number (See the example to get
     *   a clear picture). There are two versions: one for
-    *   formatting float, and one for formatting int. The
-    *   values for the digits, left, and right parameters
-    *   should always be positive integers. (IMP): The
-    *   result on the canvas basically the expected
-    *   alignment can vary based on the typeface you are
-    *   using. (NOTE): Be cautious when using left and
-    *   right parameters as it prepends numbers of 0's if
-    *   the parameter if greater than the current length
-    *   of the number. For example if number is 123.2 and
-    *   left parameter passed is 4 which is greater than
-    *   length of 123 (integer part) i.e 3 than result
-    *   will be 0123.2. Same case for right parameter i.e.
-    *   if right is 3 than the result will be 123.200.
+    *   formatting float, and one for formatting int.
+    *
+    *   The values for the digits, left, and right
+    *   parameters should always be positive integers.
+    *
+    *   (IMP): The result on the canvas basically the
+    *   expected alignment can vary based on the typeface
+    *   you are using.
+    *
+    *   (NOTE): Be cautious when using left and right
+    *   parameters as it prepends numbers of 0's if the
+    *   parameter if greater than the current length of
+    *   the number.
+    *
+    *   For example if number is 123.2 and left parameter
+    *   passed is 4 which is greater than length of 123
+    *   (integer part) i.e 3 than result will be 0123.2.
+    *   Same case for right parameter i.e. if right is 3
+    *   than the result will be 123.200.
     *   @param nums the Numbers to format
     *   @param [left] number of digits to the left of the
     *   decimal point
@@ -5703,10 +6288,10 @@ trait p5InstanceExtensions extends StObject {
     *   the decimal point
     *   @return formatted Strings
     */
-  def nfs(nums: js.Array[js.Any]): js.Array[String] = js.native
-  def nfs(nums: js.Array[js.Any], left: Double): js.Array[String] = js.native
-  def nfs(nums: js.Array[js.Any], left: Double, right: Double): js.Array[String] = js.native
-  def nfs(nums: js.Array[js.Any], left: Unit, right: Double): js.Array[String] = js.native
+  def nfs(nums: js.Array[Any]): js.Array[String] = js.native
+  def nfs(nums: js.Array[Any], left: Double): js.Array[String] = js.native
+  def nfs(nums: js.Array[Any], left: Double, right: Double): js.Array[String] = js.native
+  def nfs(nums: js.Array[Any], left: Unit, right: Double): js.Array[String] = js.native
   
   /**
     *   Removes the default canvas for a p5 sketch that
@@ -5725,6 +6310,14 @@ trait p5InstanceExtensions extends StObject {
   def noDebugMode(): Unit = js.native
   
   /**
+    *   Ends erasing that was started with erase(). The
+    *   fill(), stroke(), and blendMode() settings will
+    *   return to what they were prior to calling erase().
+    *   @chainable
+    */
+  def noErase(): p5 = js.native
+  
+  /**
     *   Disables filling geometry. If both noStroke() and
     *   noFill() are called, nothing will be drawn to the
     *   screen.
@@ -5733,25 +6326,36 @@ trait p5InstanceExtensions extends StObject {
   def noFill(): p5 = js.native
   
   /**
+    *   This function will remove all the lights from the
+    *   sketch for the subsequent materials rendered. It
+    *   affects all the subsequent methods. Calls to
+    *   lighting methods made after noLights() will
+    *   re-enable lights in the sketch.
+    *   @chainable
+    */
+  def noLights(): p5 = js.native
+  
+  /**
     *   Stops p5.js from continuously executing the code
     *   within draw(). If loop() is called, the code in
     *   draw() begins to run continuously again. If using
     *   noLoop() in setup(), it should be the last line
-    *   inside the block.  When noLoop() is used, it's not
+    *   inside the block. When noLoop() is used, it's not
     *   possible to manipulate or access the screen inside
     *   event handling functions such as mousePressed() or
     *   keyPressed(). Instead, use those functions to call
     *   redraw() or loop(), which will run draw(), which
     *   can update the screen properly. This means that
     *   when noLoop() has been called, no drawing can
-    *   happen, and functions like saveFrame() or
+    *   happen, and functions like saveFrames() or
     *   loadPixels() may not be used.
-    *
     *
     *   Note that if the sketch is resized, redraw() will
     *   be called to update the sketch, even after
     *   noLoop() has been specified. Otherwise, the sketch
     *   would enter an odd state until loop() was called.
+    *
+    *   Use isLooping() to check current state of loop().
     */
   def noLoop(): Unit = js.native
   
@@ -5785,7 +6389,7 @@ trait p5InstanceExtensions extends StObject {
   /**
     *   Returns the Perlin noise value at specified
     *   coordinates. Perlin noise is a random sequence
-    *   generator producing a more natural ordered,
+    *   generator producing a more naturally ordered,
     *   harmonic succession of numbers compared to the
     *   standard random() function. It was invented by Ken
     *   Perlin in the 1980s and been used since in
@@ -5842,7 +6446,7 @@ trait p5InstanceExtensions extends StObject {
     *   output signal and as such define the overall
     *   intensity of the noise, whereas higher octaves
     *   create finer grained details in the noise
-    *   sequence.  By default, noise is computed over 4
+    *   sequence. By default, noise is computed over 4
     *   octaves with each octave contributing exactly half
     *   than its predecessor, starting at 50% strength for
     *   the 1st octave. This falloff amount can be changed
@@ -5852,12 +6456,9 @@ trait p5InstanceExtensions extends StObject {
     *   octave. Any value between 0.0 and 1.0 is valid,
     *   however note that values greater than 0.5 might
     *   result in greater than 1.0 values returned by
-    *   noise().
-    *
-    *
-    *   By changing these parameters, the signal created
-    *   by the noise() function can be adapted to fit very
-    *   specific needs and characteristics.
+    *   noise(). By changing these parameters, the signal
+    *   created by the noise() function can be adapted to
+    *   fit very specific needs and characteristics.
     *   @param lod number of octaves to be used by the
     *   noise
     *   @param falloff falloff factor for each octave
@@ -5890,9 +6491,44 @@ trait p5InstanceExtensions extends StObject {
     */
   def norm(value: Double, start: Double, stop: Double): Double = js.native
   
+  // TODO: Fix vertex() errors in src/core/shape/vertex.js, line 965:
+  //
+  //    required param "u" follows an optional param
+  //    required param "v" follows an optional param
+  //
+  // vertex(x: number, y: number, z?: number, u: number, v: number): p5
   /**
-    *   Normal material for geometry. You can view all
-    *   possible materials in this example.
+    *   Sets the 3d vertex normal to use for subsequent
+    *   vertices drawn with vertex(). A normal is a vector
+    *   that is generally nearly perpendicular to a
+    *   shape's surface which controls how much light will
+    *   be reflected from that part of the surface.
+    *   @param vector A p5.Vector representing the vertex
+    *   normal.
+    *   @chainable
+    */
+  def normal(vector: Vector): p5 = js.native
+  /**
+    *   Sets the 3d vertex normal to use for subsequent
+    *   vertices drawn with vertex(). A normal is a vector
+    *   that is generally nearly perpendicular to a
+    *   shape's surface which controls how much light will
+    *   be reflected from that part of the surface.
+    *   @param x The x component of the vertex normal.
+    *   @param y The y component of the vertex normal.
+    *   @param z The z component of the vertex normal.
+    *   @chainable
+    */
+  def normal(x: Double, y: Double, z: Double): p5 = js.native
+  
+  /**
+    *   Normal material for geometry is a material that is
+    *   not affected by light. It is not reflective and is
+    *   a placeholder material often used for debugging.
+    *   Surfaces facing the X-axis, become red, those
+    *   facing the Y-axis, become green and those facing
+    *   the Z-axis, become blue. You can view all possible
+    *   materials in this example.
     *   @chainable
     */
   def normalMaterial(): p5 = js.native
@@ -5916,27 +6552,35 @@ trait p5InstanceExtensions extends StObject {
     *   movement along X axis
     *   @param [sensitivityY] sensitivity to mouse
     *   movement along Y axis
+    *   @param [sensitivityZ] sensitivity to scroll
+    *   movement along Z axis
     *   @chainable
     */
   def orbitControl(): p5 = js.native
   def orbitControl(sensitivityX: Double): p5 = js.native
   def orbitControl(sensitivityX: Double, sensitivityY: Double): p5 = js.native
+  def orbitControl(sensitivityX: Double, sensitivityY: Double, sensitivityZ: Double): p5 = js.native
+  def orbitControl(sensitivityX: Double, sensitivityY: Unit, sensitivityZ: Double): p5 = js.native
   def orbitControl(sensitivityX: Unit, sensitivityY: Double): p5 = js.native
+  def orbitControl(sensitivityX: Unit, sensitivityY: Double, sensitivityZ: Double): p5 = js.native
+  def orbitControl(sensitivityX: Unit, sensitivityY: Unit, sensitivityZ: Double): p5 = js.native
   
   /**
-    *   Sets an orthographic projection for the camera in
-    *   a 3D sketch and defines a box-shaped viewing
-    *   frustum within which objects are seen. In this
-    *   projection, all objects with the same dimension
-    *   appear the same size, regardless of whether they
-    *   are near or far from the camera. The parameters to
-    *   this function specify the viewing frustum where
-    *   left and right are the minimum and maximum x
-    *   values, top and bottom are the minimum and maximum
-    *   y values, and near and far are the minimum and
-    *   maximum z values. If no parameters are given, the
-    *   default is used: ortho(-width/2, width/2,
-    *   -height/2, height/2).
+    *   Sets an orthographic projection for the current
+    *   camera in a 3D sketch and defines a box-shaped
+    *   viewing frustum within which objects are seen. In
+    *   this projection, all objects with the same
+    *   dimension appear the same size, regardless of
+    *   whether they are near or far from the camera. The
+    *   parameters to this function specify the viewing
+    *   frustum where left and right are the minimum and
+    *   maximum x values, top and bottom are the minimum
+    *   and maximum y values, and near and far are the
+    *   minimum and maximum z values.
+    *
+    *   If no parameters are given, the following default
+    *   is used: ortho(-width/2, width/2, -height/2,
+    *   height/2).
     *   @param [left] camera frustum left plane
     *   @param [right] camera frustum right plane
     *   @param [bottom] camera frustum bottom plane
@@ -5953,6 +6597,77 @@ trait p5InstanceExtensions extends StObject {
     near: js.UndefOr[Double],
     far: js.UndefOr[Double]
   ): p5 = js.native
+  
+  def outputVolume(volume: js.Object): Unit = js.native
+  def outputVolume(volume: js.Object, rampTime: Double): Unit = js.native
+  def outputVolume(volume: js.Object, rampTime: Double, timeFromNow: Double): Unit = js.native
+  def outputVolume(volume: js.Object, rampTime: Unit, timeFromNow: Double): Unit = js.native
+  /**
+    *   Scale the output of all sound in this sketch
+    *   Scaled between 0.0 (silence) and 1.0 (full
+    *   volume). 1.0 is the maximum amplitude of a digital
+    *   sound, so multiplying by greater than 1.0 may
+    *   cause digital distortion. To fade, provide a
+    *   rampTime parameter. For more complex fades, see
+    *   the Envelope class. Alternately, you can pass in a
+    *   signal source such as an oscillator to modulate
+    *   the amplitude with an audio signal.
+    *
+    *   How This Works: When you load the p5.sound module,
+    *   it creates a single instance of p5sound. All sound
+    *   objects in this module output to p5sound before
+    *   reaching your computer's output. So if you change
+    *   the amplitude of p5sound, it impacts all of the
+    *   sound in this module.
+    *
+    *   If no value is provided, returns a Web Audio API
+    *   Gain Node
+    *   @param volume Volume (amplitude) between 0.0 and
+    *   1.0 or modulating signal/oscillator
+    *   @param [rampTime] Fade for t seconds
+    *   @param [timeFromNow] Schedule this event to happen
+    *   at t seconds in the future
+    */
+  def outputVolume(volume: Double): Unit = js.native
+  def outputVolume(volume: Double, rampTime: Double): Unit = js.native
+  def outputVolume(volume: Double, rampTime: Double, timeFromNow: Double): Unit = js.native
+  def outputVolume(volume: Double, rampTime: Unit, timeFromNow: Double): Unit = js.native
+  
+  /**
+    *   The p5() constructor enables you to activate
+    *   "instance mode" instead of normal "global mode".
+    *   This is an advanced topic. A short description and
+    *   example is included below. Please see  Dan
+    *   Shiffman's Coding Train video tutorial or this
+    *   tutorial page for more info. By default, all p5.js
+    *   functions are in the global namespace (i.e. bound
+    *   to the window object), meaning you can call them
+    *   simply ellipse(), fill(), etc. However, this might
+    *   be inconvenient if you are mixing with other JS
+    *   libraries (synchronously or asynchronously) or
+    *   writing long programs of your own. p5.js currently
+    *   supports a way around this problem called
+    *   "instance mode". In instance mode, all p5
+    *   functions are bound up in a single variable
+    *   instead of polluting your global namespace.
+    *
+    *   Optionally, you can specify a default container
+    *   for the canvas and any other elements to append to
+    *   with a second argument. You can give the ID of an
+    *   element in your html, or an html node itself.
+    *
+    *   Note that creating instances like this also allows
+    *   you to have more than one p5 sketch on a single
+    *   web page, as they will each be wrapped up with
+    *   their own set up variables. Of course, you could
+    *   also use iframes to have multiple sketches in
+    *   global mode.
+    *   @param sketch a function containing a p5.js sketch
+    *   @param node ID or pointer to HTML DOM node to
+    *   contain sketch in
+    */
+  def p5(sketch: js.Object, node: String): Unit = js.native
+  def p5(sketch: js.Object, node: js.Object): Unit = js.native
   
   /**
     *   The system variable pAccelerationX always contains
@@ -5981,48 +6696,55 @@ trait p5InstanceExtensions extends StObject {
   /**
     *   The system variable pRotationX always contains the
     *   rotation of the device along the x axis in the
-    *   frame previous to the current frame. Value is
-    *   represented as 0 to +/-180 degrees.  pRotationX
-    *   can also be used with rotationX to determine the
-    *   rotate direction of the device along the X-axis.
+    *   frame previous to the current frame. If the sketch
+    *   angleMode() is set to DEGREES, the value will be
+    *   -180 to 180. If it is set to RADIANS, the value
+    *   will be -PI to PI. pRotationX can also be used
+    *   with rotationX to determine the rotate direction
+    *   of the device along the X-axis.
     */
   var pRotationX: Double = js.native
   
   /**
     *   The system variable pRotationY always contains the
     *   rotation of the device along the y axis in the
-    *   frame previous to the current frame. Value is
-    *   represented as 0 to +/-90 degrees.  pRotationY can
-    *   also be used with rotationY to determine the
-    *   rotate direction of the device along the Y-axis.
+    *   frame previous to the current frame. If the sketch
+    *   angleMode() is set to DEGREES, the value will be
+    *   -90 to 90. If it is set to RADIANS, the value will
+    *   be -PI/2 to PI/2. pRotationY can also be used with
+    *   rotationY to determine the rotate direction of the
+    *   device along the Y-axis.
     */
   var pRotationY: Double = js.native
   
   /**
     *   The system variable pRotationZ always contains the
     *   rotation of the device along the z axis in the
-    *   frame previous to the current frame. Value is
-    *   represented as 0 to 359 degrees.  pRotationZ can
-    *   also be used with rotationZ to determine the
-    *   rotate direction of the device along the Z-axis.
+    *   frame previous to the current frame. If the sketch
+    *   angleMode() is set to DEGREES, the value will be 0
+    *   to 360. If it is set to RADIANS, the value will be
+    *   0 to 2*PI. pRotationZ can also be used with
+    *   rotationZ to determine the rotate direction of the
+    *   device along the Z-axis.
     */
   var pRotationZ: Double = js.native
   
   /**
-    *   Sets a perspective projection for the camera in a
-    *   3D sketch. This projection represents depth
-    *   through foreshortening: objects that are close to
-    *   the camera appear their actual size while those
-    *   that are further away from the camera appear
+    *   Sets a perspective projection for the current
+    *   camera in a 3D sketch. This projection represents
+    *   depth through foreshortening: objects that are
+    *   close to the camera appear their actual size while
+    *   those that are further away from the camera appear
     *   smaller. The parameters to this function define
     *   the viewing frustum (the truncated pyramid within
     *   which objects are seen by the camera) through
     *   vertical field of view, aspect ratio (usually
     *   width/height), and near and far clipping planes.
-    *   When called with no arguments, the defaults
-    *   provided are equivalent to perspective(PI/3.0,
-    *   width/height, eyeZ/10.0, eyeZ10.0), where eyeZ is
-    *   equal to ((height/2.0) / tan(PI60.0/360.0));
+    *
+    *   If no parameters are given, the following default
+    *   is used: perspective(PI/3, width/height, eyeZ/10,
+    *   eyeZ*10), where eyeZ is equal to ((height/2) /
+    *   tan(PI/6)).
     *   @param [fovy] camera frustum vertical field of
     *   view, from bottom to top of view, in angleMode
     *   units
@@ -6079,9 +6801,9 @@ trait p5InstanceExtensions extends StObject {
     *   to right across each row, then down each column.
     *   Retina and other high density displays will have
     *   more pixels[] (by a factor of pixelDensity^2). For
-    *   example, if the image is 100x100 pixels, there
+    *   example, if the image is 100×100 pixels, there
     *   will be 40,000. On a retina display, there will be
-    *   160,000.  The first four values (indices 0-3) in
+    *   160,000. The first four values (indices 0-3) in
     *   the array will be the R, G, B, A values of the
     *   pixel at (0, 0). The second four values (indices
     *   4-7) will contain the R, G, B, A values of the
@@ -6102,12 +6824,10 @@ trait p5InstanceExtensions extends StObject {
     *   not be as fast when lots of modifications are made
     *   to the pixel array.
     *
-    *
     *   Before accessing this array, the data must loaded
     *   with the loadPixels() function. After the array
     *   data has been modified, the updatePixels()
     *   function must be run to update the changes.
-    *
     *
     *   Note that this is not a standard javascript array.
     *   This means that standard javascript functions such
@@ -6169,9 +6889,23 @@ trait p5InstanceExtensions extends StObject {
   /**
     *   Draws a point, a coordinate in space at the
     *   dimension of one pixel. The first parameter is the
-    *   horizontal value for the point, the second value
+    *   horizontal value for the point, the second param
     *   is the vertical value for the point. The color of
-    *   the point is determined by the current stroke.
+    *   the point is changed with the stroke() function.
+    *   The size of the point can be changed with the
+    *   strokeWeight() function.
+    *   @param coordinate_vector the coordinate vector
+    *   @chainable
+    */
+  def point(coordinate_vector: Vector): p5 = js.native
+  /**
+    *   Draws a point, a coordinate in space at the
+    *   dimension of one pixel. The first parameter is the
+    *   horizontal value for the point, the second param
+    *   is the vertical value for the point. The color of
+    *   the point is changed with the stroke() function.
+    *   The size of the point can be changed with the
+    *   strokeWeight() function.
     *   @param x the x-coordinate
     *   @param y the y-coordinate
     *   @param [z] the z-coordinate (for WebGL mode)
@@ -6184,7 +6918,8 @@ trait p5InstanceExtensions extends StObject {
   def pointLight(color: String, x: Double, y: Double, z: Double): p5 = js.native
   /**
     *   Creates a point light with a color and a light
-    *   position
+    *   position A maximum of 5 pointLight can be active
+    *   at one time
     *   @param color color Array, CSS color string, or
     *   p5.Color value
     *   @param position the position of the light
@@ -6193,7 +6928,8 @@ trait p5InstanceExtensions extends StObject {
   def pointLight(color: js.Array[Double], position: Vector): p5 = js.native
   /**
     *   Creates a point light with a color and a light
-    *   position
+    *   position A maximum of 5 pointLight can be active
+    *   at one time
     *   @param color color Array, CSS color string, or
     *   p5.Color value
     *   @param x x axis position
@@ -6206,7 +6942,8 @@ trait p5InstanceExtensions extends StObject {
   def pointLight(color: Color, x: Double, y: Double, z: Double): p5 = js.native
   /**
     *   Creates a point light with a color and a light
-    *   position
+    *   position A maximum of 5 pointLight can be active
+    *   at one time
     *   @param v1 red or hue value (depending on the
     *   current color mode),
     *   @param v2 green or saturation value
@@ -6217,7 +6954,8 @@ trait p5InstanceExtensions extends StObject {
   def pointLight(v1: Double, v2: Double, v3: Double, position: Vector): p5 = js.native
   /**
     *   Creates a point light with a color and a light
-    *   position
+    *   position A maximum of 5 pointLight can be active
+    *   at one time
     *   @param v1 red or hue value (depending on the
     *   current color mode),
     *   @param v2 green or saturation value
@@ -6240,15 +6978,16 @@ trait p5InstanceExtensions extends StObject {
     *   style and transform information. The push() and
     *   pop() functions can be embedded to provide more
     *   control. (See the second example for a
-    *   demonstration.)  push() stores information related
+    *   demonstration.) push() stores information related
     *   to the current transformation state and style
     *   settings controlled by the following functions:
-    *   fill(), stroke(), tint(), strokeWeight(),
-    *   strokeCap(), strokeJoin(), imageMode(),
-    *   rectMode(), ellipseMode(), colorMode(),
-    *   textAlign(), textFont(), textSize(),
-    *   textLeading().
-    *
+    *   fill(), noFill(), noStroke(), stroke(), tint(),
+    *   noTint(), strokeWeight(), strokeCap(),
+    *   strokeJoin(), imageMode(), rectMode(),
+    *   ellipseMode(), colorMode(), textAlign(),
+    *   textFont(), textSize(), textLeading(),
+    *   applyMatrix(), resetMatrix(), rotate(), scale(),
+    *   shearX(), shearY(), translate(), noiseSeed().
     *
     *   In WEBGL mode additional style settings are
     *   stored. These are controlled by the following
@@ -6264,8 +7003,9 @@ trait p5InstanceExtensions extends StObject {
     *   function is an efficient way of multiplying
     *   numbers by themselves (or their reciprocals) in
     *   large quantities. For example, pow(3, 5) is
-    *   equivalent to the expression 33333 and pow(3, -5)
-    *   is equivalent to 1 / 33333. Maps to Math.pow().
+    *   equivalent to the expression 3 × 3 × 3 × 3 × 3 and
+    *   pow(3, -5) is equivalent to 1 / 3 × 3 × 3 × 3 × 3.
+    *   Maps to Math.pow().
     *   @param n base of the exponential expression
     *   @param e power by which to raise the base
     *   @return n^e
@@ -6287,7 +7027,7 @@ trait p5InstanceExtensions extends StObject {
     *   @param contents any combination of Number, String,
     *   Object, Boolean, Array to print
     */
-  def print(contents: js.Any): Unit = js.native
+  def print(contents: Any): Unit = js.native
   
   /**
     *   The push() function saves the current drawing
@@ -6300,15 +7040,16 @@ trait p5InstanceExtensions extends StObject {
     *   style and transform information. The push() and
     *   pop() functions can be embedded to provide more
     *   control. (See the second example for a
-    *   demonstration.)  push() stores information related
+    *   demonstration.) push() stores information related
     *   to the current transformation state and style
     *   settings controlled by the following functions:
-    *   fill(), stroke(), tint(), strokeWeight(),
-    *   strokeCap(), strokeJoin(), imageMode(),
-    *   rectMode(), ellipseMode(), colorMode(),
-    *   textAlign(), textFont(), textSize(),
-    *   textLeading().
-    *
+    *   fill(), noFill(), noStroke(), stroke(), tint(),
+    *   noTint(), strokeWeight(), strokeCap(),
+    *   strokeJoin(), imageMode(), rectMode(),
+    *   ellipseMode(), colorMode(), textAlign(),
+    *   textFont(), textSize(), textLeading(),
+    *   applyMatrix(), resetMatrix(), rotate(), scale(),
+    *   shearX(), shearY(), translate(), noiseSeed().
     *
     *   In WEBGL mode additional style settings are
     *   stored. These are controlled by the following
@@ -6340,13 +7081,13 @@ trait p5InstanceExtensions extends StObject {
   var pwinMouseY: Double = js.native
   
   /**
-    *   Draw a quad. A quad is a quadrilateral, a four
-    *   sided polygon. It is similar to a rectangle, but
-    *   the angles between its edges are not constrained
-    *   to ninety degrees. The first pair of parameters
-    *   (x1,y1) sets the first vertex and the subsequent
-    *   pairs should proceed clockwise or
-    *   counter-clockwise around the defined shape.
+    *   Draws a quad on the canvas. A quad is a
+    *   quadrilateral, a four sided polygon. It is similar
+    *   to a rectangle, but the angles between its edges
+    *   are not constrained to ninety degrees. The first
+    *   pair of parameters (x1,y1) sets the first vertex
+    *   and the subsequent pairs should proceed clockwise
+    *   or counter-clockwise around the defined shape.
     *   z-arguments only work when quad() is used in WEBGL
     *   mode.
     *   @param x1 the x-coordinate of the first point
@@ -6357,17 +7098,56 @@ trait p5InstanceExtensions extends StObject {
     *   @param y3 the y-coordinate of the third point
     *   @param x4 the x-coordinate of the fourth point
     *   @param y4 the y-coordinate of the fourth point
+    *   @param [detailX] number of segments in the
+    *   x-direction
+    *   @param [detailY] number of segments in the
+    *   y-direction
     *   @chainable
     */
   def quad(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double, x4: Double, y4: Double): p5 = js.native
+  def quad(
+    x1: Double,
+    y1: Double,
+    x2: Double,
+    y2: Double,
+    x3: Double,
+    y3: Double,
+    x4: Double,
+    y4: Double,
+    detailX: Double
+  ): p5 = js.native
+  def quad(
+    x1: Double,
+    y1: Double,
+    x2: Double,
+    y2: Double,
+    x3: Double,
+    y3: Double,
+    x4: Double,
+    y4: Double,
+    detailX: Double,
+    detailY: Double
+  ): p5 = js.native
+  def quad(
+    x1: Double,
+    y1: Double,
+    x2: Double,
+    y2: Double,
+    x3: Double,
+    y3: Double,
+    x4: Double,
+    y4: Double,
+    detailX: Unit,
+    detailY: Double
+  ): p5 = js.native
   /**
-    *   Draw a quad. A quad is a quadrilateral, a four
-    *   sided polygon. It is similar to a rectangle, but
-    *   the angles between its edges are not constrained
-    *   to ninety degrees. The first pair of parameters
-    *   (x1,y1) sets the first vertex and the subsequent
-    *   pairs should proceed clockwise or
-    *   counter-clockwise around the defined shape.
+    *   Draws a quad on the canvas. A quad is a
+    *   quadrilateral, a four sided polygon. It is similar
+    *   to a rectangle, but the angles between its edges
+    *   are not constrained to ninety degrees. The first
+    *   pair of parameters (x1,y1) sets the first vertex
+    *   and the subsequent pairs should proceed clockwise
+    *   or counter-clockwise around the defined shape.
     *   z-arguments only work when quad() is used in WEBGL
     *   mode.
     *   @param x1 the x-coordinate of the first point
@@ -6382,6 +7162,10 @@ trait p5InstanceExtensions extends StObject {
     *   @param x4 the x-coordinate of the fourth point
     *   @param y4 the y-coordinate of the fourth point
     *   @param z4 the z-coordinate of the fourth point
+    *   @param [detailX] number of segments in the
+    *   x-direction
+    *   @param [detailY] number of segments in the
+    *   y-direction
     *   @chainable
     */
   def quad(
@@ -6398,6 +7182,53 @@ trait p5InstanceExtensions extends StObject {
     y4: Double,
     z4: Double
   ): p5 = js.native
+  def quad(
+    x1: Double,
+    y1: Double,
+    z1: Double,
+    x2: Double,
+    y2: Double,
+    z2: Double,
+    x3: Double,
+    y3: Double,
+    z3: Double,
+    x4: Double,
+    y4: Double,
+    z4: Double,
+    detailX: Double
+  ): p5 = js.native
+  def quad(
+    x1: Double,
+    y1: Double,
+    z1: Double,
+    x2: Double,
+    y2: Double,
+    z2: Double,
+    x3: Double,
+    y3: Double,
+    z3: Double,
+    x4: Double,
+    y4: Double,
+    z4: Double,
+    detailX: Double,
+    detailY: Double
+  ): p5 = js.native
+  def quad(
+    x1: Double,
+    y1: Double,
+    z1: Double,
+    x2: Double,
+    y2: Double,
+    z2: Double,
+    x3: Double,
+    y3: Double,
+    z3: Double,
+    x4: Double,
+    y4: Double,
+    z4: Double,
+    detailX: Unit,
+    detailY: Double
+  ): p5 = js.native
   
   /**
     *   Specifies vertex coordinates for quadratic Bezier
@@ -6410,7 +7241,7 @@ trait p5InstanceExtensions extends StObject {
     *   anchor point. For WebGL mode quadraticVertex() can
     *   be used in 2D as well as 3D mode. 2D mode expects
     *   4 parameters, while 3D mode expects 6 parameters
-    *   (including z coordinates).  This function must be
+    *   (including z coordinates). This function must be
     *   used between beginShape() and endShape() and only
     *   when there is no MODE or POINTS parameter
     *   specified to beginShape().
@@ -6436,7 +7267,7 @@ trait p5InstanceExtensions extends StObject {
     *   anchor point. For WebGL mode quadraticVertex() can
     *   be used in 2D as well as 3D mode. 2D mode expects
     *   4 parameters, while 3D mode expects 6 parameters
-    *   (including z coordinates).  This function must be
+    *   (including z coordinates). This function must be
     *   used between beginShape() and endShape() and only
     *   when there is no MODE or POINTS parameter
     *   specified to beginShape().
@@ -6503,7 +7334,7 @@ trait p5InstanceExtensions extends StObject {
     *   @param choices the array to choose from
     *   @return the random element from the array
     */
-  def random(choices: js.Array[js.Any]): js.Any = js.native
+  def random(choices: js.Array[Any]): Any = js.native
   def random(min: Double): Double = js.native
   def random(min: Double, max: Double): Double = js.native
   def random(min: Unit, max: Double): Double = js.native
@@ -6515,22 +7346,23 @@ trait p5InstanceExtensions extends StObject {
     *   might return. Rather, there is just a very low
     *   probability that values far from the mean will be
     *   returned; and a higher probability that numbers
-    *   near the mean will be returned.  Takes either 0, 1
-    *   or 2 arguments.
-    *
-    *   If no args, returns a mean of 0 and standard
-    *   deviation of 1.
+    *   near the mean will be returned. Takes either 0, 1
+    *   or 2 arguments. If no args, returns a mean of 0
+    *   and standard deviation of 1.
     *
     *   If one arg, that arg is the mean (standard
     *   deviation is 1).
     *
     *   If two args, first is mean, second is standard
     *   deviation.
-    *   @param mean the mean
-    *   @param sd the standard deviation
+    *   @param [mean] the mean
+    *   @param [sd] the standard deviation
     *   @return the random number
     */
+  def randomGaussian(): Double = js.native
+  def randomGaussian(mean: Double): Double = js.native
   def randomGaussian(mean: Double, sd: Double): Double = js.native
+  def randomGaussian(mean: Unit, sd: Double): Double = js.native
   
   /**
     *   Sets the seed value for random(). By default,
@@ -6543,14 +7375,14 @@ trait p5InstanceExtensions extends StObject {
   def randomSeed(seed: Double): Unit = js.native
   
   /**
-    *   Draws a rectangle to the screen. A rectangle is a
-    *   four-sided shape with every angle at ninety
+    *   Draws a rectangle on the canvas. A rectangle is a
+    *   four-sided closed shape with every angle at ninety
     *   degrees. By default, the first two parameters set
     *   the location of the upper-left corner, the third
     *   sets the width, and the fourth sets the height.
-    *   The way these parameters are interpreted, however,
-    *   may be changed with the rectMode() function.  The
-    *   fifth, sixth, seventh and eighth parameters, if
+    *   The way these parameters are interpreted, may be
+    *   changed with the rectMode() function. The fifth,
+    *   sixth, seventh and eighth parameters, if
     *   specified, determine corner radius for the
     *   top-left, top-right, lower-right and lower-left
     *   corners, respectively. An omitted corner radius
@@ -6559,7 +7391,7 @@ trait p5InstanceExtensions extends StObject {
     *   @param x x-coordinate of the rectangle.
     *   @param y y-coordinate of the rectangle.
     *   @param w width of the rectangle.
-    *   @param h height of the rectangle.
+    *   @param [h] height of the rectangle.
     *   @param [tl] optional radius of top-left corner.
     *   @param [tr] optional radius of top-right corner.
     *   @param [br] optional radius of bottom-right
@@ -6567,6 +7399,7 @@ trait p5InstanceExtensions extends StObject {
     *   @param [bl] optional radius of bottom-left corner.
     *   @chainable
     */
+  def rect(x: Double, y: Double, w: Double): p5 = js.native
   def rect(x: Double, y: Double, w: Double, h: Double): p5 = js.native
   def rect(x: Double, y: Double, w: Double, h: Double, tl: Double): p5 = js.native
   def rect(x: Double, y: Double, w: Double, h: Double, tl: Double, tr: Double): p5 = js.native
@@ -6583,37 +7416,53 @@ trait p5InstanceExtensions extends StObject {
   def rect(x: Double, y: Double, w: Double, h: Double, tl: Unit, tr: Unit, br: Double): p5 = js.native
   def rect(x: Double, y: Double, w: Double, h: Double, tl: Unit, tr: Unit, br: Double, bl: Double): p5 = js.native
   def rect(x: Double, y: Double, w: Double, h: Double, tl: Unit, tr: Unit, br: Unit, bl: Double): p5 = js.native
+  def rect(x: Double, y: Double, w: Double, h: Unit, tl: Double): p5 = js.native
+  def rect(x: Double, y: Double, w: Double, h: Unit, tl: Double, tr: Double): p5 = js.native
+  def rect(x: Double, y: Double, w: Double, h: Unit, tl: Double, tr: Double, br: Double): p5 = js.native
+  def rect(x: Double, y: Double, w: Double, h: Unit, tl: Double, tr: Double, br: Double, bl: Double): p5 = js.native
+  def rect(x: Double, y: Double, w: Double, h: Unit, tl: Double, tr: Double, br: Unit, bl: Double): p5 = js.native
+  def rect(x: Double, y: Double, w: Double, h: Unit, tl: Double, tr: Unit, br: Double): p5 = js.native
+  def rect(x: Double, y: Double, w: Double, h: Unit, tl: Double, tr: Unit, br: Double, bl: Double): p5 = js.native
+  def rect(x: Double, y: Double, w: Double, h: Unit, tl: Double, tr: Unit, br: Unit, bl: Double): p5 = js.native
+  def rect(x: Double, y: Double, w: Double, h: Unit, tl: Unit, tr: Double): p5 = js.native
+  def rect(x: Double, y: Double, w: Double, h: Unit, tl: Unit, tr: Double, br: Double): p5 = js.native
+  def rect(x: Double, y: Double, w: Double, h: Unit, tl: Unit, tr: Double, br: Double, bl: Double): p5 = js.native
+  def rect(x: Double, y: Double, w: Double, h: Unit, tl: Unit, tr: Double, br: Unit, bl: Double): p5 = js.native
+  def rect(x: Double, y: Double, w: Double, h: Unit, tl: Unit, tr: Unit, br: Double): p5 = js.native
+  def rect(x: Double, y: Double, w: Double, h: Unit, tl: Unit, tr: Unit, br: Double, bl: Double): p5 = js.native
+  def rect(x: Double, y: Double, w: Double, h: Unit, tl: Unit, tr: Unit, br: Unit, bl: Double): p5 = js.native
   
   /**
     *   Modifies the location from which rectangles are
     *   drawn by changing the way in which parameters
-    *   given to rect() are interpreted.  The default mode
-    *   is rectMode(CORNER), which interprets the first
-    *   two parameters of rect() as the upper-left corner
-    *   of the shape, while the third and fourth
-    *   parameters are its width and height.
-    *
-    *
-    *   rectMode(CORNERS) interprets the first two
-    *   parameters of rect() as the location of one
-    *   corner, and the third and fourth parameters as the
-    *   location of the opposite corner.
-    *
-    *
-    *   rectMode(CENTER) interprets the first two
-    *   parameters of rect() as the shape's center point,
+    *   given to rect() are interpreted. The default mode
+    *   is CORNER, which interprets the first two
+    *   parameters as the upper-left corner of the shape,
     *   while the third and fourth parameters are its
     *   width and height.
     *
+    *   rectMode(CORNERS) interprets the first two
+    *   parameters as the location of one of the corners,
+    *   and the third and fourth parameters as the
+    *   location of the diagonally opposite corner. Note,
+    *   the rectangle is drawn between the coordinates, so
+    *   it is not neccesary that the first corner be the
+    *   upper left corner.
+    *
+    *   rectMode(CENTER) interprets the first two
+    *   parameters as the shape's center point, while the
+    *   third and fourth parameters are its width and
+    *   height.
     *
     *   rectMode(RADIUS) also uses the first two
-    *   parameters of rect() as the shape's center point,
-    *   but uses the third and fourth parameters to
-    *   specify half of the shapes's width and height.
+    *   parameters as the shape's center point, but uses
+    *   the third and fourth parameters to specify half of
+    *   the shape's width and height respectively.
     *
-    *
-    *   The parameter must be written in ALL CAPS because
-    *   Javascript is a case-sensitive language.
+    *   The parameter to this method must be written in
+    *   ALL CAPS because they are predefined as constants
+    *   in ALL CAPS and Javascript is a case-sensitive
+    *   language.
     *   @param mode either CORNER, CORNERS, CENTER, or
     *   RADIUS
     *   @chainable
@@ -6633,20 +7482,18 @@ trait p5InstanceExtensions extends StObject {
   
   /**
     *   Executes the code within draw() one time. This
-    *   functions allows the program to update the display
+    *   function allows the program to update the display
     *   window only when necessary, for example when an
     *   event registered by mousePressed() or keyPressed()
-    *   occurs.  In structuring a program, it only makes
+    *   occurs. In structuring a program, it only makes
     *   sense to call redraw() within events such as
     *   mousePressed(). This is because redraw() does not
     *   run draw() immediately (it only sets a flag that
     *   indicates an update is needed).
     *
-    *
     *   The redraw() function does not work properly when
-    *   called inside draw(). To enable/disable
-    *   animations, use loop() and noLoop().
-    *
+    *   called inside draw().To enable/disable animations,
+    *   use loop() and noLoop().
     *
     *   In addition you can set the number of redraws per
     *   method call. Just add an integer as single
@@ -6671,6 +7518,20 @@ trait p5InstanceExtensions extends StObject {
   def removeItem(key: String): Unit = js.native
   
   /**
+    *   The function requestPointerLock() locks the
+    *   pointer to its current position and makes it
+    *   invisible. Use movedX and movedY to get the
+    *   difference the mouse was moved since the last call
+    *   of draw. Note that not all browsers support this
+    *   feature. This enables you to create experiences
+    *   that aren't limited by the mouse moving out of the
+    *   screen even if it is repeatedly moved into one
+    *   direction. For example, a first person perspective
+    *   experience.
+    */
+  def requestPointerLock(): Unit = js.native
+  
+  /**
     *   Replaces the current matrix with the identity
     *   matrix.
     *   @chainable
@@ -6678,10 +7539,9 @@ trait p5InstanceExtensions extends StObject {
   def resetMatrix(): p5 = js.native
   
   /**
-    *   This function restores the default shaders in
-    *   WEBGL mode. Code that runs after resetShader()
-    *   will not be affected by previously defined
-    *   shaders. Should be run after shader().
+    *   Restores the default shaders. Code that runs after
+    *   resetShader() will not be affected by the shader
+    *   previously set by shader()
     *   @chainable
     */
   def resetShader(): p5 = js.native
@@ -6705,22 +7565,21 @@ trait p5InstanceExtensions extends StObject {
     *   @param list Array to reverse
     *   @return the reversed list
     */
-  def reverse(list: js.Array[js.Any]): js.Array[js.Any] = js.native
+  def reverse(list: js.Array[Any]): js.Array[Any] = js.native
   
   /**
-    *   Rotates a shape the amount specified by the angle
-    *   parameter. This function accounts for angleMode,
-    *   so angles can be entered in either RADIANS or
-    *   DEGREES.  Objects are always rotated around their
-    *   relative position to the origin and positive
-    *   numbers rotate objects in a clockwise direction.
-    *   Transformations apply to everything that happens
-    *   after and subsequent calls to the function
-    *   accumulates the effect. For example, calling
-    *   rotate(HALF_PI) and then rotate(HALF_PI) is the
-    *   same as rotate(PI). All tranformations are reset
-    *   when draw() begins again.
-    *
+    *   Rotates a shape by the amount specified by the
+    *   angle parameter. This function accounts for
+    *   angleMode, so angles can be entered in either
+    *   RADIANS or DEGREES. Objects are always rotated
+    *   around their relative position to the origin and
+    *   positive numbers rotate objects in a clockwise
+    *   direction. Transformations apply to everything
+    *   that happens after and subsequent calls to the
+    *   function accumulates the effect. For example,
+    *   calling rotate(HALF_PI) and then rotate(HALF_PI)
+    *   is the same as rotate(PI). All transformations are
+    *   reset when draw() begins again.
     *
     *   Technically, rotate() multiplies the current
     *   transformation matrix by a rotation matrix. This
@@ -6736,7 +7595,13 @@ trait p5InstanceExtensions extends StObject {
   def rotate(angle: Double, axis: Vector): p5 = js.native
   
   /**
-    *   Rotates around X axis.
+    *   Rotates a shape around X axis by the amount
+    *   specified in angle parameter. The angles can be
+    *   entered in either RADIANS or DEGREES. Objects are
+    *   always rotated around their relative position to
+    *   the origin and positive numbers rotate objects in
+    *   a clockwise direction. All transformations are
+    *   reset when draw() begins again.
     *   @param angle the angle of rotation, specified in
     *   radians or degrees, depending on current angleMode
     *   @chainable
@@ -6744,7 +7609,13 @@ trait p5InstanceExtensions extends StObject {
   def rotateX(angle: Double): p5 = js.native
   
   /**
-    *   Rotates around Y axis.
+    *   Rotates a shape around Y axis by the amount
+    *   specified in angle parameter. The angles can be
+    *   entered in either RADIANS or DEGREES. Objects are
+    *   always rotated around their relative position to
+    *   the origin and positive numbers rotate objects in
+    *   a clockwise direction. All transformations are
+    *   reset when draw() begins again.
     *   @param angle the angle of rotation, specified in
     *   radians or degrees, depending on current angleMode
     *   @chainable
@@ -6752,7 +7623,16 @@ trait p5InstanceExtensions extends StObject {
   def rotateY(angle: Double): p5 = js.native
   
   /**
-    *   Rotates around Z axis. Webgl mode only.
+    *   Rotates a shape around Z axis by the amount
+    *   specified in angle parameter. The angles can be
+    *   entered in either RADIANS or DEGREES. This method
+    *   works in WEBGL mode only.
+    *
+    *   Objects are always rotated around their relative
+    *   position to the origin and positive numbers rotate
+    *   objects in a clockwise direction. All
+    *   transformations are reset when draw() begins
+    *   again.
     *   @param angle the angle of rotation, specified in
     *   radians or degrees, depending on current angleMode
     *   @chainable
@@ -6761,31 +7641,36 @@ trait p5InstanceExtensions extends StObject {
   
   /**
     *   The system variable rotationX always contains the
-    *   rotation of the device along the x axis. Value is
-    *   represented as 0 to +/-180 degrees.  Note: The
-    *   order the rotations are called is important, ie.
-    *   if used together, it must be called in the order
-    *   Z-X-Y or there might be unexpected behaviour.
+    *   rotation of the device along the x axis. If the
+    *   sketch  angleMode() is set to DEGREES, the value
+    *   will be -180 to 180. If it is set to RADIANS, the
+    *   value will be -PI to PI. Note: The order the
+    *   rotations are called is important, ie. if used
+    *   together, it must be called in the order Z-X-Y or
+    *   there might be unexpected behaviour.
     */
   var rotationX: Double = js.native
   
   /**
     *   The system variable rotationY always contains the
-    *   rotation of the device along the y axis. Value is
-    *   represented as 0 to +/-90 degrees.  Note: The
-    *   order the rotations are called is important, ie.
-    *   if used together, it must be called in the order
-    *   Z-X-Y or there might be unexpected behaviour.
+    *   rotation of the device along the y axis. If the
+    *   sketch  angleMode() is set to DEGREES, the value
+    *   will be -90 to 90. If it is set to RADIANS, the
+    *   value will be -PI/2 to PI/2. Note: The order the
+    *   rotations are called is important, ie. if used
+    *   together, it must be called in the order Z-X-Y or
+    *   there might be unexpected behaviour.
     */
   var rotationY: Double = js.native
   
   /**
     *   The system variable rotationZ always contains the
-    *   rotation of the device along the z axis. Value is
-    *   represented as 0 to 359 degrees.  Unlike rotationX
-    *   and rotationY, this variable is available for
-    *   devices with a built-in compass only.
-    *
+    *   rotation of the device along the z axis. If the
+    *   sketch  angleMode() is set to DEGREES, the value
+    *   will be 0 to 360. If it is set to RADIANS, the
+    *   value will be 0 to 2*PI. Unlike rotationX and
+    *   rotationY, this variable is available for devices
+    *   with a built-in compass only.
     *
     *   Note: The order the rotations are called is
     *   important, ie. if used together, it must be called
@@ -6799,9 +7684,12 @@ trait p5InstanceExtensions extends StObject {
     *   For example, round(133.8) returns the value 134.
     *   Maps to Math.round().
     *   @param n number to round
+    *   @param [decimals] number of decimal places to
+    *   round to, default is 0
     *   @return rounded number
     */
   def round(n: Double): Double = js.native
+  def round(n: Double, decimals: Double): Double = js.native
   
   /**
     *   Returns a number representing the sample rate, in
@@ -6831,47 +7719,23 @@ trait p5InstanceExtensions extends StObject {
   def saturation(color: Color): Double = js.native
   
   /**
-    *   Save an image, text, json, csv, wav, or html.
-    *   Prompts download to the client's computer. Note
-    *   that it is not recommended to call save() within
-    *   draw if it's looping, as the save() function will
-    *   open a new save dialog every frame. The default
-    *   behavior is to save the canvas as an image. You
-    *   can optionally specify a filename. For example:
-    *
-    *
-    *   save(); save('myCanvas.jpg'); // save a specific
-    *   canvas with a filename
-    *
-    *   Alternately, the first parameter can be a pointer
-    *   to a canvas p5.Element, an Array of Strings, an
-    *   Array of JSON, a JSON object, a p5.Table, a
-    *   p5.Image, or a p5.SoundFile (requires p5.sound).
-    *   The second parameter is a filename (including
-    *   extension). The third parameter is for options
-    *   specific to this type of object. This method will
-    *   save a file that fits the given parameters. For
-    *   example:
-    *
-    *
-    *   // Saves canvas as an image save('myCanvas.jpg');
-    *   // Saves pImage as a png image let img =
-    *   createImage(10, 10); save(img, 'my.png'); // Saves
-    *   canvas as an image let cnv = createCanvas(100,
-    *   100); save(cnv, 'myCanvas.jpg'); // Saves
-    *   p5.Renderer object as an image let gb =
-    *   createGraphics(100, 100); save(gb,
-    *   'myGraphics.jpg'); let myTable = new p5.Table();
-    *   // Saves table as html file save(myTable,
-    *   'myTable.html'); // Comma Separated Values
-    *   save(myTable, 'myTable.csv'); // Tab Separated
-    *   Values save(myTable, 'myTable.tsv'); let myJSON =
-    *   { a: 1, b: true }; // Saves pretty JSON
-    *   save(myJSON, 'my.json'); // Optimizes JSON
-    *   filesize save(myJSON, 'my.json', true); // Saves
-    *   array of strings to a text file with line breaks
-    *   after each item let arrayOfStrings = ['a', 'b'];
-    *   save(arrayOfStrings, 'my.txt');
+    *   Saves a given element(image, text, json, csv, wav,
+    *   or html) to the client's computer. The first
+    *   parameter can be a pointer to element we want to
+    *   save. The element can be one of p5.Element,an
+    *   Array of Strings, an Array of JSON, a JSON object,
+    *   a p5.Table , a p5.Image, or a p5.SoundFile
+    *   (requires p5.sound). The second parameter is a
+    *   filename (including extension).The third parameter
+    *   is for options specific to this type of object.
+    *   This method will save a file that fits the given
+    *   parameters. If it is called without specifying an
+    *   element, by default it will save the whole canvas
+    *   as an image file. You can optionally specify a
+    *   filename as the first parameter in such a case.
+    *   Note that it is not recommended to call this
+    *   method within draw, as it will open a new save
+    *   dialog on every render.
     *   @param [objectOrFilename] If filename is provided,
     *   will save canvas as an image with either png or
     *   jpg extension depending on the filename. If object
@@ -6965,7 +7829,7 @@ trait p5InstanceExtensions extends StObject {
     `extension`: String,
     duration: Double,
     framerate: Double,
-    callback: js.Function1[/* p1 */ js.Array[js.Any], js.Any]
+    callback: js.Function1[/* p1 */ js.Array[Any], Any]
   ): Unit = js.native
   
   /**
@@ -6977,8 +7841,8 @@ trait p5InstanceExtensions extends StObject {
     *   spaces from the output file to optimize filesize
     *   (but not readability).
     */
-  def saveJSON(json: js.Array[js.Any], filename: String): Unit = js.native
-  def saveJSON(json: js.Array[js.Any], filename: String, optimize: Boolean): Unit = js.native
+  def saveJSON(json: js.Array[Any], filename: String): Unit = js.native
+  def saveJSON(json: js.Array[Any], filename: String, optimize: Boolean): Unit = js.native
   def saveJSON(json: js.Object, filename: String): Unit = js.native
   def saveJSON(json: js.Object, filename: String, optimize: Boolean): Unit = js.native
   
@@ -7001,9 +7865,12 @@ trait p5InstanceExtensions extends StObject {
     *   @param list string array to be written
     *   @param filename filename for output
     *   @param [extension] the filename's extension
+    *   @param [isCRLF] if true, change line-break to CRLF
     */
   def saveStrings(list: js.Array[String], filename: String): Unit = js.native
   def saveStrings(list: js.Array[String], filename: String, `extension`: String): Unit = js.native
+  def saveStrings(list: js.Array[String], filename: String, `extension`: String, isCRLF: Boolean): Unit = js.native
+  def saveStrings(list: js.Array[String], filename: String, `extension`: Unit, isCRLF: Boolean): Unit = js.native
   
   /**
     *   Writes the contents of a Table object to a file.
@@ -7027,19 +7894,18 @@ trait p5InstanceExtensions extends StObject {
   def scale(s: js.Array[Double], y: Unit, z: Double): p5 = js.native
   /**
     *   Increases or decreases the size of a shape by
-    *   expanding and contracting vertices. Objects always
+    *   expanding or contracting vertices. Objects always
     *   scale from their relative origin to the coordinate
     *   system. Scale values are specified as decimal
     *   percentages. For example, the function call
     *   scale(2.0) increases the dimension of a shape by
-    *   200%.  Transformations apply to everything that
+    *   200%. Transformations apply to everything that
     *   happens after and subsequent calls to the function
     *   multiply the effect. For example, calling
     *   scale(2.0) and then scale(1.5) is the same as
     *   scale(3.0). If scale() is called within draw(),
     *   the transformation is reset when the loop begins
     *   again.
-    *
     *
     *   Using this function with the z parameter is only
     *   available in WEBGL mode. This function can be
@@ -7059,19 +7925,18 @@ trait p5InstanceExtensions extends StObject {
   def scale(s: Double, y: Unit, z: Double): p5 = js.native
   /**
     *   Increases or decreases the size of a shape by
-    *   expanding and contracting vertices. Objects always
+    *   expanding or contracting vertices. Objects always
     *   scale from their relative origin to the coordinate
     *   system. Scale values are specified as decimal
     *   percentages. For example, the function call
     *   scale(2.0) increases the dimension of a shape by
-    *   200%.  Transformations apply to everything that
+    *   200%. Transformations apply to everything that
     *   happens after and subsequent calls to the function
     *   multiply the effect. For example, calling
     *   scale(2.0) and then scale(1.5) is the same as
     *   scale(3.0). If scale() is called within draw(),
     *   the transformation is reset when the loop begins
     *   again.
-    *
     *
     *   Using this function with the z parameter is only
     *   available in WEBGL mode. This function can be
@@ -7094,43 +7959,42 @@ trait p5InstanceExtensions extends StObject {
   def second(): Double = js.native
   
   /**
-    *   Searches the page for an element with the given
-    *   ID, class, or tag name (using the '#' or '.'
-    *   prefixes to specify an ID or class respectively,
-    *   and none for a tag) and returns it as a
-    *   p5.Element. If a class or tag name is given with
-    *   more than 1 element, only the first element will
-    *   be returned. The DOM node itself can be accessed
-    *   with .elt. Returns null if none found. You can
-    *   also specify a container to search within.
-    *   @param name id, class, or tag name of element to
+    *   Searches the page for the first element that
+    *   matches the given CSS selector string (can be an
+    *   ID, class, tag name or a combination) and returns
+    *   it as a p5.Element. The DOM node itself can be
+    *   accessed with .elt. Returns null if none found.
+    *   You can also specify a container to search within.
+    *   @param selectors CSS selector string of element to
     *   search for
-    *   @param [container] id, p5.Element, or HTML element
-    *   to search within
+    *   @param [container] CSS selector string,
+    *   p5.Element, or HTML element to search within
     *   @return p5.Element containing node found
     */
-  def select(name: String): Element | Null = js.native
-  def select(name: String, container: String): Element | Null = js.native
-  def select(name: String, container: Element): Element | Null = js.native
-  def select(name: String, container: HTMLElement): Element | Null = js.native
+  def select(selectors: String): Element | Null = js.native
+  def select(selectors: String, container: String): Element | Null = js.native
+  def select(selectors: String, container: Element): Element | Null = js.native
+  def select(selectors: String, container: HTMLElement): Element | Null = js.native
   
   /**
-    *   Searches the page for elements with the given
-    *   class or tag name (using the '.' prefix to specify
-    *   a class and no prefix for a tag) and returns them
-    *   as p5.Elements in an array. The DOM node itself
-    *   can be accessed with .elt. Returns an empty array
-    *   if none found. You can also specify a container to
+    *   Searches the page for elements that match the
+    *   given CSS selector string (can be an ID a class,
+    *   tag name or a combination) and returns them as
+    *   p5.Elements in an array. The DOM node itself can
+    *   be accessed with .elt. Returns an empty array if
+    *   none found. You can also specify a container to
     *   search within.
-    *   @param name class or tag name of elements to
-    *   search for
-    *   @param [container] id, p5.Element, or HTML element
-    *   to search within
+    *   @param selectors CSS selector string of elements
+    *   to search for
+    *   @param [container] CSS selector string, p5.Element
+    *   , or HTML element to search within
     *   @return Array of p5.Elements containing nodes
     *   found
     */
-  def selectAll(name: String): js.Array[Element] = js.native
-  def selectAll(name: String, container: String): js.Array[Element] = js.native
+  def selectAll(selectors: String): js.Array[Element] = js.native
+  def selectAll(selectors: String, container: String): js.Array[Element] = js.native
+  def selectAll(selectors: String, container: Element): js.Array[Element] = js.native
+  def selectAll(selectors: String, container: HTMLElement): js.Array[Element] = js.native
   
   def set(x: Double, y: Double, c: js.Array[Double]): Unit = js.native
   def set(x: Double, y: Double, c: js.Object): Unit = js.native
@@ -7144,8 +8008,6 @@ trait p5InstanceExtensions extends StObject {
     *   an image, the x and y parameters define the
     *   coordinates for the upper-left corner of the
     *   image, regardless of the current imageMode().
-    *
-    *
     *   After using set(), you must call updatePixels()
     *   for your changes to appear. This should be called
     *   once all pixels have been set, and must be called
@@ -7157,10 +8019,8 @@ trait p5InstanceExtensions extends StObject {
     *   values directly may be complicated when working
     *   with a retina display, but will perform better
     *   when lots of pixels need to be set directly on
-    *   every loop.
-    *
-    *   See the reference for pixels[] for more
-    *   information.
+    *   every loop. See the reference for pixels[] for
+    *   more information.
     *   @param x x-coordinate of the pixel
     *   @param y y-coordinate of the pixel
     *   @param c insert a grayscale value | a pixel array
@@ -7171,38 +8031,31 @@ trait p5InstanceExtensions extends StObject {
   /**
     *   Set attributes for the WebGL Drawing context. This
     *   is a way of adjusting how the WebGL renderer works
-    *   to fine-tune the display and performance.  Note
+    *   to fine-tune the display and performance. Note
     *   that this will reinitialize the drawing context if
     *   called after the WebGL canvas is made.
-    *
     *
     *   If an object is passed as the parameter, all
     *   attributes not declared in the object will be set
     *   to defaults.
-    *
     *
     *   The available attributes are:
     *
     *   alpha - indicates if the canvas contains an alpha
     *   buffer default is true
     *
-    *
     *   depth - indicates whether the drawing buffer has a
     *   depth buffer of at least 16 bits - default is true
-    *
     *
     *   stencil - indicates whether the drawing buffer has
     *   a stencil buffer of at least 8 bits
     *
-    *
     *   antialias - indicates whether or not to perform
-    *   anti-aliasing default is false
-    *
+    *   anti-aliasing default is false (true in Safari)
     *
     *   premultipliedAlpha - indicates that the page
     *   compositor will assume the drawing buffer contains
     *   colors with pre-multiplied alpha default is false
-    *
     *
     *   preserveDrawingBuffer - if true the buffers will
     *   not be cleared and and will preserve their values
@@ -7210,10 +8063,9 @@ trait p5InstanceExtensions extends StObject {
     *   p5 clears automatically on draw loop) default is
     *   true
     *
-    *
     *   perPixelLighting - if true, per-pixel lighting
-    *   will be used in the lighting shader. default is
-    *   false
+    *   will be used in the lighting shader otherwise
+    *   per-vertex lighting is used. default is true.
     *   @param key Name of attribute
     *   @param value New value of named attribute
     */
@@ -7221,38 +8073,31 @@ trait p5InstanceExtensions extends StObject {
   /**
     *   Set attributes for the WebGL Drawing context. This
     *   is a way of adjusting how the WebGL renderer works
-    *   to fine-tune the display and performance.  Note
+    *   to fine-tune the display and performance. Note
     *   that this will reinitialize the drawing context if
     *   called after the WebGL canvas is made.
-    *
     *
     *   If an object is passed as the parameter, all
     *   attributes not declared in the object will be set
     *   to defaults.
-    *
     *
     *   The available attributes are:
     *
     *   alpha - indicates if the canvas contains an alpha
     *   buffer default is true
     *
-    *
     *   depth - indicates whether the drawing buffer has a
     *   depth buffer of at least 16 bits - default is true
-    *
     *
     *   stencil - indicates whether the drawing buffer has
     *   a stencil buffer of at least 8 bits
     *
-    *
     *   antialias - indicates whether or not to perform
-    *   anti-aliasing default is false
-    *
+    *   anti-aliasing default is false (true in Safari)
     *
     *   premultipliedAlpha - indicates that the page
     *   compositor will assume the drawing buffer contains
     *   colors with pre-multiplied alpha default is false
-    *
     *
     *   preserveDrawingBuffer - if true the buffers will
     *   not be cleared and and will preserve their values
@@ -7260,17 +8105,25 @@ trait p5InstanceExtensions extends StObject {
     *   p5 clears automatically on draw loop) default is
     *   true
     *
-    *
     *   perPixelLighting - if true, per-pixel lighting
-    *   will be used in the lighting shader. default is
-    *   false
+    *   will be used in the lighting shader otherwise
+    *   per-vertex lighting is used. default is true.
     *   @param obj object with key-value pairs
     */
   def setAttributes(obj: js.Object): Unit = js.native
   
   /**
-    *   Sets rendererGL's current camera to a p5.Camera
-    *   object. Allows switching between multiple cameras.
+    *   Set the global tempo, in beats per minute, for all
+    *   p5.Parts. This method will impact all active
+    *   p5.Parts.
+    *   @param BPM Beats Per Minute
+    *   @param rampTime Seconds from now
+    */
+  def setBPM(BPM: Double, rampTime: Double): Unit = js.native
+  
+  /**
+    *   Sets the current (active) camera of a 3D sketch.
+    *   Allows for switching between multiple cameras.
     *   @param cam p5.Camera object
     */
   def setCamera(cam: Camera): Unit = js.native
@@ -7292,24 +8145,27 @@ trait p5InstanceExtensions extends StObject {
   def setShakeThreshold(value: Double): Unit = js.native
   
   /**
-    *   The shader() function lets the user provide a
-    *   custom shader to fill in shapes in WEBGL mode.
-    *   Users can create their own shaders by loading
-    *   vertex and fragment shaders with loadShader().
-    *   @param [s] the desired p5.Shader to use for
-    *   rendering shapes.
+    *   Sets the p5.Shader object to be used to render
+    *   subsequent shapes. Custom shaders can be created
+    *   using the createShader() and loadShader()
+    *   functions.
+    *
+    *   Use resetShader() to restore the default shaders.
+    *
+    *   Note, shaders can only be used in WEBGL mode.
+    *   @param s the p5.Shader object to use for rendering
+    *   shapes.
     *   @chainable
     */
-  def shader(): p5 = js.native
   def shader(s: Shader): p5 = js.native
   
   /**
-    *   Shears a shape around the x-axis the amount
+    *   Shears a shape around the x-axis by the amount
     *   specified by the angle parameter. Angles should be
     *   specified in the current angleMode. Objects are
     *   always sheared around their relative position to
     *   the origin and positive numbers shear objects in a
-    *   clockwise direction.  Transformations apply to
+    *   clockwise direction. Transformations apply to
     *   everything that happens after and subsequent calls
     *   to the function accumulates the effect. For
     *   example, calling shearX(PI/2) and then
@@ -7317,7 +8173,6 @@ trait p5InstanceExtensions extends StObject {
     *   shearX() is called within the draw(), the
     *   transformation is reset when the loop begins
     *   again.
-    *
     *
     *   Technically, shearX() multiplies the current
     *   transformation matrix by a rotation matrix. This
@@ -7335,7 +8190,7 @@ trait p5InstanceExtensions extends StObject {
     *   specified in the current angleMode. Objects are
     *   always sheared around their relative position to
     *   the origin and positive numbers shear objects in a
-    *   clockwise direction.  Transformations apply to
+    *   clockwise direction. Transformations apply to
     *   everything that happens after and subsequent calls
     *   to the function accumulates the effect. For
     *   example, calling shearY(PI/2) and then
@@ -7343,7 +8198,6 @@ trait p5InstanceExtensions extends StObject {
     *   shearY() is called within the draw(), the
     *   transformation is reset when the loop begins
     *   again.
-    *
     *
     *   Technically, shearY() multiplies the current
     *   transformation matrix by a rotation matrix. This
@@ -7371,7 +8225,7 @@ trait p5InstanceExtensions extends StObject {
     *   @param list Array to shorten
     *   @return shortened Array
     */
-  def shorten(list: js.Array[js.Any]): js.Array[js.Any] = js.native
+  def shorten(list: js.Array[Any]): js.Array[Any] = js.native
   
   /**
     *   Randomizes the order of the elements of an array.
@@ -7380,8 +8234,8 @@ trait p5InstanceExtensions extends StObject {
     *   @param [bool] modify passed array
     *   @return shuffled Array
     */
-  def shuffle(array: js.Array[js.Any]): js.Array[js.Any] = js.native
-  def shuffle(array: js.Array[js.Any], bool: Boolean): js.Array[js.Any] = js.native
+  def shuffle(array: js.Array[Any]): js.Array[Any] = js.native
+  def shuffle(array: js.Array[Any], bool: Boolean): js.Array[Any] = js.native
   
   /**
     *   Calculates the sine of an angle. This function
@@ -7419,8 +8273,8 @@ trait p5InstanceExtensions extends StObject {
     *   starting from 0
     *   @return the sorted list
     */
-  def sort(list: js.Array[js.Any]): js.Array[js.Any] = js.native
-  def sort(list: js.Array[js.Any], count: Double): js.Array[js.Any] = js.native
+  def sort(list: js.Array[Any]): js.Array[Any] = js.native
+  def sort(list: js.Array[Any], count: Double): js.Array[Any] = js.native
   
   /**
     *   List the SoundFile formats that you will include.
@@ -7433,11 +8287,121 @@ trait p5InstanceExtensions extends StObject {
   def soundFormats(): Unit = js.native
   def soundFormats(formats: String): Unit = js.native
   
+  /**
+    *   p5.soundOut is the p5.sound final output bus. It
+    *   sends output to the destination of this window's
+    *   web audio context. It contains Web Audio API nodes
+    *   including a dyanmicsCompressor (.limiter), and
+    *   Gain Nodes for .input and .output.
+    */
+  var soundOut: js.Object = js.native
+  
+  /**
+    *   Set's the color of the specular highlight when
+    *   using a specular material and specular light. This
+    *   method can be combined with specularMaterial() and
+    *   shininess() functions to set specular highlights.
+    *   The default color is white, ie (255, 255, 255),
+    *   which is used if this method is not called before
+    *   specularMaterial(). If this method is called
+    *   without specularMaterial(), There will be no
+    *   effect.
+    *
+    *   Note: specularColor is equivalent to the
+    *   processing function lightSpecular.
+    *   @param color the ambient light color
+    *   @chainable
+    */
+  def specularColor(color: Color): p5 = js.native
+  /**
+    *   Set's the color of the specular highlight when
+    *   using a specular material and specular light. This
+    *   method can be combined with specularMaterial() and
+    *   shininess() functions to set specular highlights.
+    *   The default color is white, ie (255, 255, 255),
+    *   which is used if this method is not called before
+    *   specularMaterial(). If this method is called
+    *   without specularMaterial(), There will be no
+    *   effect.
+    *
+    *   Note: specularColor is equivalent to the
+    *   processing function lightSpecular.
+    *   @param gray a gray value
+    *   @chainable
+    */
+  def specularColor(gray: Double): p5 = js.native
+  /**
+    *   Set's the color of the specular highlight when
+    *   using a specular material and specular light. This
+    *   method can be combined with specularMaterial() and
+    *   shininess() functions to set specular highlights.
+    *   The default color is white, ie (255, 255, 255),
+    *   which is used if this method is not called before
+    *   specularMaterial(). If this method is called
+    *   without specularMaterial(), There will be no
+    *   effect.
+    *
+    *   Note: specularColor is equivalent to the
+    *   processing function lightSpecular.
+    *   @param v1 red or hue value relative to the current
+    *   color range
+    *   @param v2 green or saturation value relative to
+    *   the current color range
+    *   @param v3 blue or brightness value relative to the
+    *   current color range
+    *   @chainable
+    */
+  def specularColor(v1: Double, v2: Double, v3: Double): p5 = js.native
+  /**
+    *   Set's the color of the specular highlight when
+    *   using a specular material and specular light. This
+    *   method can be combined with specularMaterial() and
+    *   shininess() functions to set specular highlights.
+    *   The default color is white, ie (255, 255, 255),
+    *   which is used if this method is not called before
+    *   specularMaterial(). If this method is called
+    *   without specularMaterial(), There will be no
+    *   effect.
+    *
+    *   Note: specularColor is equivalent to the
+    *   processing function lightSpecular.
+    *   @param value a color string
+    *   @chainable
+    */
+  def specularColor(value: String): p5 = js.native
+  /**
+    *   Set's the color of the specular highlight when
+    *   using a specular material and specular light. This
+    *   method can be combined with specularMaterial() and
+    *   shininess() functions to set specular highlights.
+    *   The default color is white, ie (255, 255, 255),
+    *   which is used if this method is not called before
+    *   specularMaterial(). If this method is called
+    *   without specularMaterial(), There will be no
+    *   effect.
+    *
+    *   Note: specularColor is equivalent to the
+    *   processing function lightSpecular.
+    *   @param values an array containing the
+    *   red,green,blue & and alpha components of the color
+    *   @chainable
+    */
+  def specularColor(values: js.Array[Double]): p5 = js.native
+  
   def specularMaterial(color: String): p5 = js.native
   /**
     *   Specular material for geometry with a given color.
-    *   You can view all possible materials in this
-    *   example.
+    *   Specular material is a shiny reflective material.
+    *   Like ambient material it also defines the color
+    *   the object reflects under ambient lighting. For
+    *   example, if the specular material of an object is
+    *   pure red, but the ambient lighting only contains
+    *   green, the object will not reflect any light. For
+    *   all other types of light like point and
+    *   directional light, a specular material will
+    *   reflect the color of the light source to the
+    *   viewer. Here's an example containing all possible
+    *   materials.
     *   @param color color Array, or CSS color string
     *   @chainable
     */
@@ -7445,31 +8409,64 @@ trait p5InstanceExtensions extends StObject {
   def specularMaterial(color: Color): p5 = js.native
   /**
     *   Specular material for geometry with a given color.
-    *   You can view all possible materials in this
-    *   example.
-    *   @param v1 gray value, red or hue value (depending
-    *   on the current color mode),
-    *   @param [v2] green or saturation value
-    *   @param [v3] blue or brightness value
-    *   @param [a] opacity
+    *   Specular material is a shiny reflective material.
+    *   Like ambient material it also defines the color
+    *   the object reflects under ambient lighting. For
+    *   example, if the specular material of an object is
+    *   pure red, but the ambient lighting only contains
+    *   green, the object will not reflect any light. For
+    *   all other types of light like point and
+    *   directional light, a specular material will
+    *   reflect the color of the light source to the
+    *   viewer. Here's an example containing all possible
+    *   materials.
+    *   @param gray number specifying value between white
+    *   and black.
+    *   @param [alpha] alpha value relative to current
+    *   color range (default is 0-255)
     *   @chainable
     */
-  def specularMaterial(v1: Double): p5 = js.native
-  def specularMaterial(v1: Double, v2: Double): p5 = js.native
+  def specularMaterial(gray: Double): p5 = js.native
+  def specularMaterial(gray: Double, alpha: Double): p5 = js.native
+  /**
+    *   Specular material for geometry with a given color.
+    *   Specular material is a shiny reflective material.
+    *   Like ambient material it also defines the color
+    *   the object reflects under ambient lighting. For
+    *   example, if the specular material of an object is
+    *   pure red, but the ambient lighting only contains
+    *   green, the object will not reflect any light. For
+    *   all other types of light like point and
+    *   directional light, a specular material will
+    *   reflect the color of the light source to the
+    *   viewer. Here's an example containing all possible
+    *   materials.
+    *   @param v1 red or hue value relative to the current
+    *   color range
+    *   @param v2 green or saturation value relative to
+    *   the current color range
+    *   @param v3 blue or brightness value relative to the
+    *   current color range
+    *   @param [alpha] alpha value relative to current
+    *   color range (default is 0-255)
+    *   @chainable
+    */
   def specularMaterial(v1: Double, v2: Double, v3: Double): p5 = js.native
-  def specularMaterial(v1: Double, v2: Double, v3: Double, a: Double): p5 = js.native
-  def specularMaterial(v1: Double, v2: Double, v3: Unit, a: Double): p5 = js.native
-  def specularMaterial(v1: Double, v2: Unit, v3: Double): p5 = js.native
-  def specularMaterial(v1: Double, v2: Unit, v3: Double, a: Double): p5 = js.native
-  def specularMaterial(v1: Double, v2: Unit, v3: Unit, a: Double): p5 = js.native
+  def specularMaterial(v1: Double, v2: Double, v3: Double, alpha: Double): p5 = js.native
   
   /**
-    *   Draw a sphere with given radius
+    *   Draw a sphere with given radius. DetailX and
+    *   detailY determines the number of subdivisions in
+    *   the x-dimension and the y-dimension of a sphere.
+    *   More subdivisions make the sphere seem smoother.
+    *   The recommended maximum values are both 24. Using
+    *   a value greater than 24 may cause a warning or
+    *   slow down the browser.
     *   @param [radius] radius of circle
-    *   @param [detailX] number of segments, the more
-    *   segments the smoother geometry default is 24
-    *   @param [detailY] number of segments, the more
-    *   segments the smoother geometry default is 16
+    *   @param [detailX] optional number of subdivisions
+    *   in x-dimension
+    *   @param [detailY] optional number of subdivisions
+    *   in y-dimension
     *   @chainable
     */
   def sphere(): p5 = js.native
@@ -7497,7 +8494,7 @@ trait p5InstanceExtensions extends StObject {
     *   data
     *   @return the list
     */
-  def splice(list: js.Array[js.Any], value: js.Any, position: Double): js.Array[js.Any] = js.native
+  def splice(list: js.Array[Any], value: Any, position: Double): js.Array[Any] = js.native
   
   /**
     *   The split() function maps to String.split(), it
@@ -7520,7 +8517,7 @@ trait p5InstanceExtensions extends StObject {
     *   The splitTokens() function splits a String at one
     *   or many character delimiters or "tokens." The
     *   delim parameter specifies the character or
-    *   characters to be used as a boundary.  If no delim
+    *   characters to be used as a boundary. If no delim
     *   characters are specified, any whitespace character
     *   is used to split. Whitespace characters include
     *   tab (\t), line feed (\n), carriage return (\r),
@@ -7532,6 +8529,460 @@ trait p5InstanceExtensions extends StObject {
     */
   def splitTokens(value: String): js.Array[String] = js.native
   def splitTokens(value: String, delim: String): js.Array[String] = js.native
+  
+  def spotLight(color: String, position: Vector, direction: Vector): Unit = js.native
+  def spotLight(color: String, position: Vector, direction: Vector, angle: Double): Unit = js.native
+  def spotLight(color: String, position: Vector, direction: Vector, angle: Double, conc: Double): Unit = js.native
+  def spotLight(color: String, position: Vector, direction: Vector, angle: Unit, conc: Double): Unit = js.native
+  def spotLight(color: String, position: Vector, rx: Double, ry: Double, rz: Double): Unit = js.native
+  def spotLight(color: String, position: Vector, rx: Double, ry: Double, rz: Double, angle: Double): Unit = js.native
+  def spotLight(color: String, position: Vector, rx: Double, ry: Double, rz: Double, angle: Double, conc: Double): Unit = js.native
+  def spotLight(color: String, position: Vector, rx: Double, ry: Double, rz: Double, angle: Unit, conc: Double): Unit = js.native
+  def spotLight(color: String, x: Double, y: Double, z: Double, direction: Vector): Unit = js.native
+  def spotLight(color: String, x: Double, y: Double, z: Double, direction: Vector, angle: Double): Unit = js.native
+  def spotLight(color: String, x: Double, y: Double, z: Double, direction: Vector, angle: Double, conc: Double): Unit = js.native
+  def spotLight(color: String, x: Double, y: Double, z: Double, direction: Vector, angle: Unit, conc: Double): Unit = js.native
+  def spotLight(color: String, x: Double, y: Double, z: Double, rx: Double, ry: Double, rz: Double): Unit = js.native
+  def spotLight(color: String, x: Double, y: Double, z: Double, rx: Double, ry: Double, rz: Double, angle: Double): Unit = js.native
+  def spotLight(
+    color: String,
+    x: Double,
+    y: Double,
+    z: Double,
+    rx: Double,
+    ry: Double,
+    rz: Double,
+    angle: Double,
+    conc: Double
+  ): Unit = js.native
+  def spotLight(
+    color: String,
+    x: Double,
+    y: Double,
+    z: Double,
+    rx: Double,
+    ry: Double,
+    rz: Double,
+    angle: Unit,
+    conc: Double
+  ): Unit = js.native
+  /**
+    *   Creates a spotlight with a given color, position,
+    *   direction of light, angle and concentration. Here,
+    *   angle refers to the opening or aperture of the
+    *   cone of the spotlight, and concentration is used
+    *   to focus the light towards the center. Both angle
+    *   and concentration are optional, but if you want to
+    *   provide concentration, you will also have to
+    *   specify the angle. A maximum of 5 spotLight can be
+    *   active at one time
+    *   @param color color Array, CSS color string, or
+    *   p5.Color value
+    *   @param position the position of the light
+    *   @param direction the direction of the light
+    *   @param [angle] optional parameter for angle.
+    *   Defaults to PI/3
+    *   @param [conc] optional parameter for
+    *   concentration. Defaults to 100
+    */
+  def spotLight(color: js.Array[Double], position: Vector, direction: Vector): Unit = js.native
+  def spotLight(color: js.Array[Double], position: Vector, direction: Vector, angle: Double): Unit = js.native
+  def spotLight(color: js.Array[Double], position: Vector, direction: Vector, angle: Double, conc: Double): Unit = js.native
+  def spotLight(color: js.Array[Double], position: Vector, direction: Vector, angle: Unit, conc: Double): Unit = js.native
+  /**
+    *   Creates a spotlight with a given color, position,
+    *   direction of light, angle and concentration. Here,
+    *   angle refers to the opening or aperture of the
+    *   cone of the spotlight, and concentration is used
+    *   to focus the light towards the center. Both angle
+    *   and concentration are optional, but if you want to
+    *   provide concentration, you will also have to
+    *   specify the angle. A maximum of 5 spotLight can be
+    *   active at one time
+    *   @param color color Array, CSS color string, or
+    *   p5.Color value
+    *   @param position the position of the light
+    *   @param rx x axis direction of light
+    *   @param ry y axis direction of light
+    *   @param rz z axis direction of light
+    *   @param [angle] optional parameter for angle.
+    *   Defaults to PI/3
+    *   @param [conc] optional parameter for
+    *   concentration. Defaults to 100
+    */
+  def spotLight(color: js.Array[Double], position: Vector, rx: Double, ry: Double, rz: Double): Unit = js.native
+  def spotLight(color: js.Array[Double], position: Vector, rx: Double, ry: Double, rz: Double, angle: Double): Unit = js.native
+  def spotLight(
+    color: js.Array[Double],
+    position: Vector,
+    rx: Double,
+    ry: Double,
+    rz: Double,
+    angle: Double,
+    conc: Double
+  ): Unit = js.native
+  def spotLight(
+    color: js.Array[Double],
+    position: Vector,
+    rx: Double,
+    ry: Double,
+    rz: Double,
+    angle: Unit,
+    conc: Double
+  ): Unit = js.native
+  /**
+    *   Creates a spotlight with a given color, position,
+    *   direction of light, angle and concentration. Here,
+    *   angle refers to the opening or aperture of the
+    *   cone of the spotlight, and concentration is used
+    *   to focus the light towards the center. Both angle
+    *   and concentration are optional, but if you want to
+    *   provide concentration, you will also have to
+    *   specify the angle. A maximum of 5 spotLight can be
+    *   active at one time
+    *   @param color color Array, CSS color string, or
+    *   p5.Color value
+    *   @param x x axis position
+    *   @param y y axis position
+    *   @param z z axis position
+    *   @param direction the direction of the light
+    *   @param [angle] optional parameter for angle.
+    *   Defaults to PI/3
+    *   @param [conc] optional parameter for
+    *   concentration. Defaults to 100
+    */
+  def spotLight(color: js.Array[Double], x: Double, y: Double, z: Double, direction: Vector): Unit = js.native
+  def spotLight(color: js.Array[Double], x: Double, y: Double, z: Double, direction: Vector, angle: Double): Unit = js.native
+  def spotLight(
+    color: js.Array[Double],
+    x: Double,
+    y: Double,
+    z: Double,
+    direction: Vector,
+    angle: Double,
+    conc: Double
+  ): Unit = js.native
+  def spotLight(
+    color: js.Array[Double],
+    x: Double,
+    y: Double,
+    z: Double,
+    direction: Vector,
+    angle: Unit,
+    conc: Double
+  ): Unit = js.native
+  /**
+    *   Creates a spotlight with a given color, position,
+    *   direction of light, angle and concentration. Here,
+    *   angle refers to the opening or aperture of the
+    *   cone of the spotlight, and concentration is used
+    *   to focus the light towards the center. Both angle
+    *   and concentration are optional, but if you want to
+    *   provide concentration, you will also have to
+    *   specify the angle. A maximum of 5 spotLight can be
+    *   active at one time
+    *   @param color color Array, CSS color string, or
+    *   p5.Color value
+    *   @param x x axis position
+    *   @param y y axis position
+    *   @param z z axis position
+    *   @param rx x axis direction of light
+    *   @param ry y axis direction of light
+    *   @param rz z axis direction of light
+    *   @param [angle] optional parameter for angle.
+    *   Defaults to PI/3
+    *   @param [conc] optional parameter for
+    *   concentration. Defaults to 100
+    */
+  def spotLight(color: js.Array[Double], x: Double, y: Double, z: Double, rx: Double, ry: Double, rz: Double): Unit = js.native
+  def spotLight(
+    color: js.Array[Double],
+    x: Double,
+    y: Double,
+    z: Double,
+    rx: Double,
+    ry: Double,
+    rz: Double,
+    angle: Double
+  ): Unit = js.native
+  def spotLight(
+    color: js.Array[Double],
+    x: Double,
+    y: Double,
+    z: Double,
+    rx: Double,
+    ry: Double,
+    rz: Double,
+    angle: Double,
+    conc: Double
+  ): Unit = js.native
+  def spotLight(
+    color: js.Array[Double],
+    x: Double,
+    y: Double,
+    z: Double,
+    rx: Double,
+    ry: Double,
+    rz: Double,
+    angle: Unit,
+    conc: Double
+  ): Unit = js.native
+  def spotLight(color: Color, position: Vector, direction: Vector): Unit = js.native
+  def spotLight(color: Color, position: Vector, direction: Vector, angle: Double): Unit = js.native
+  def spotLight(color: Color, position: Vector, direction: Vector, angle: Double, conc: Double): Unit = js.native
+  def spotLight(color: Color, position: Vector, direction: Vector, angle: Unit, conc: Double): Unit = js.native
+  def spotLight(color: Color, position: Vector, rx: Double, ry: Double, rz: Double): Unit = js.native
+  def spotLight(color: Color, position: Vector, rx: Double, ry: Double, rz: Double, angle: Double): Unit = js.native
+  def spotLight(color: Color, position: Vector, rx: Double, ry: Double, rz: Double, angle: Double, conc: Double): Unit = js.native
+  def spotLight(color: Color, position: Vector, rx: Double, ry: Double, rz: Double, angle: Unit, conc: Double): Unit = js.native
+  def spotLight(color: Color, x: Double, y: Double, z: Double, direction: Vector): Unit = js.native
+  def spotLight(color: Color, x: Double, y: Double, z: Double, direction: Vector, angle: Double): Unit = js.native
+  def spotLight(color: Color, x: Double, y: Double, z: Double, direction: Vector, angle: Double, conc: Double): Unit = js.native
+  def spotLight(color: Color, x: Double, y: Double, z: Double, direction: Vector, angle: Unit, conc: Double): Unit = js.native
+  def spotLight(color: Color, x: Double, y: Double, z: Double, rx: Double, ry: Double, rz: Double): Unit = js.native
+  def spotLight(color: Color, x: Double, y: Double, z: Double, rx: Double, ry: Double, rz: Double, angle: Double): Unit = js.native
+  def spotLight(
+    color: Color,
+    x: Double,
+    y: Double,
+    z: Double,
+    rx: Double,
+    ry: Double,
+    rz: Double,
+    angle: Double,
+    conc: Double
+  ): Unit = js.native
+  def spotLight(
+    color: Color,
+    x: Double,
+    y: Double,
+    z: Double,
+    rx: Double,
+    ry: Double,
+    rz: Double,
+    angle: Unit,
+    conc: Double
+  ): Unit = js.native
+  /**
+    *   Creates a spotlight with a given color, position,
+    *   direction of light, angle and concentration. Here,
+    *   angle refers to the opening or aperture of the
+    *   cone of the spotlight, and concentration is used
+    *   to focus the light towards the center. Both angle
+    *   and concentration are optional, but if you want to
+    *   provide concentration, you will also have to
+    *   specify the angle. A maximum of 5 spotLight can be
+    *   active at one time
+    *   @param v1 red or hue value (depending on the
+    *   current color mode),
+    *   @param v2 green or saturation value
+    *   @param v3 blue or brightness value
+    *   @param position the position of the light
+    *   @param direction the direction of the light
+    *   @param [angle] optional parameter for angle.
+    *   Defaults to PI/3
+    *   @param [conc] optional parameter for
+    *   concentration. Defaults to 100
+    */
+  def spotLight(v1: Double, v2: Double, v3: Double, position: Vector, direction: Vector): Unit = js.native
+  def spotLight(v1: Double, v2: Double, v3: Double, position: Vector, direction: Vector, angle: Double): Unit = js.native
+  def spotLight(
+    v1: Double,
+    v2: Double,
+    v3: Double,
+    position: Vector,
+    direction: Vector,
+    angle: Double,
+    conc: Double
+  ): Unit = js.native
+  def spotLight(v1: Double, v2: Double, v3: Double, position: Vector, direction: Vector, angle: Unit, conc: Double): Unit = js.native
+  /**
+    *   Creates a spotlight with a given color, position,
+    *   direction of light, angle and concentration. Here,
+    *   angle refers to the opening or aperture of the
+    *   cone of the spotlight, and concentration is used
+    *   to focus the light towards the center. Both angle
+    *   and concentration are optional, but if you want to
+    *   provide concentration, you will also have to
+    *   specify the angle. A maximum of 5 spotLight can be
+    *   active at one time
+    *   @param v1 red or hue value (depending on the
+    *   current color mode),
+    *   @param v2 green or saturation value
+    *   @param v3 blue or brightness value
+    *   @param position the position of the light
+    *   @param rx x axis direction of light
+    *   @param ry y axis direction of light
+    *   @param rz z axis direction of light
+    *   @param [angle] optional parameter for angle.
+    *   Defaults to PI/3
+    *   @param [conc] optional parameter for
+    *   concentration. Defaults to 100
+    */
+  def spotLight(v1: Double, v2: Double, v3: Double, position: Vector, rx: Double, ry: Double, rz: Double): Unit = js.native
+  def spotLight(
+    v1: Double,
+    v2: Double,
+    v3: Double,
+    position: Vector,
+    rx: Double,
+    ry: Double,
+    rz: Double,
+    angle: Double
+  ): Unit = js.native
+  def spotLight(
+    v1: Double,
+    v2: Double,
+    v3: Double,
+    position: Vector,
+    rx: Double,
+    ry: Double,
+    rz: Double,
+    angle: Double,
+    conc: Double
+  ): Unit = js.native
+  def spotLight(
+    v1: Double,
+    v2: Double,
+    v3: Double,
+    position: Vector,
+    rx: Double,
+    ry: Double,
+    rz: Double,
+    angle: Unit,
+    conc: Double
+  ): Unit = js.native
+  /**
+    *   Creates a spotlight with a given color, position,
+    *   direction of light, angle and concentration. Here,
+    *   angle refers to the opening or aperture of the
+    *   cone of the spotlight, and concentration is used
+    *   to focus the light towards the center. Both angle
+    *   and concentration are optional, but if you want to
+    *   provide concentration, you will also have to
+    *   specify the angle. A maximum of 5 spotLight can be
+    *   active at one time
+    *   @param v1 red or hue value (depending on the
+    *   current color mode),
+    *   @param v2 green or saturation value
+    *   @param v3 blue or brightness value
+    *   @param x x axis position
+    *   @param y y axis position
+    *   @param z z axis position
+    *   @param direction the direction of the light
+    *   @param [angle] optional parameter for angle.
+    *   Defaults to PI/3
+    *   @param [conc] optional parameter for
+    *   concentration. Defaults to 100
+    */
+  def spotLight(v1: Double, v2: Double, v3: Double, x: Double, y: Double, z: Double, direction: Vector): Unit = js.native
+  def spotLight(
+    v1: Double,
+    v2: Double,
+    v3: Double,
+    x: Double,
+    y: Double,
+    z: Double,
+    direction: Vector,
+    angle: Double
+  ): Unit = js.native
+  def spotLight(
+    v1: Double,
+    v2: Double,
+    v3: Double,
+    x: Double,
+    y: Double,
+    z: Double,
+    direction: Vector,
+    angle: Double,
+    conc: Double
+  ): Unit = js.native
+  def spotLight(
+    v1: Double,
+    v2: Double,
+    v3: Double,
+    x: Double,
+    y: Double,
+    z: Double,
+    direction: Vector,
+    angle: Unit,
+    conc: Double
+  ): Unit = js.native
+  /**
+    *   Creates a spotlight with a given color, position,
+    *   direction of light, angle and concentration. Here,
+    *   angle refers to the opening or aperture of the
+    *   cone of the spotlight, and concentration is used
+    *   to focus the light towards the center. Both angle
+    *   and concentration are optional, but if you want to
+    *   provide concentration, you will also have to
+    *   specify the angle. A maximum of 5 spotLight can be
+    *   active at one time
+    *   @param v1 red or hue value (depending on the
+    *   current color mode),
+    *   @param v2 green or saturation value
+    *   @param v3 blue or brightness value
+    *   @param x x axis position
+    *   @param y y axis position
+    *   @param z z axis position
+    *   @param rx x axis direction of light
+    *   @param ry y axis direction of light
+    *   @param rz z axis direction of light
+    *   @param [angle] optional parameter for angle.
+    *   Defaults to PI/3
+    *   @param [conc] optional parameter for
+    *   concentration. Defaults to 100
+    *   @chainable
+    */
+  def spotLight(
+    v1: Double,
+    v2: Double,
+    v3: Double,
+    x: Double,
+    y: Double,
+    z: Double,
+    rx: Double,
+    ry: Double,
+    rz: Double
+  ): p5 = js.native
+  def spotLight(
+    v1: Double,
+    v2: Double,
+    v3: Double,
+    x: Double,
+    y: Double,
+    z: Double,
+    rx: Double,
+    ry: Double,
+    rz: Double,
+    angle: Double
+  ): p5 = js.native
+  def spotLight(
+    v1: Double,
+    v2: Double,
+    v3: Double,
+    x: Double,
+    y: Double,
+    z: Double,
+    rx: Double,
+    ry: Double,
+    rz: Double,
+    angle: Double,
+    conc: Double
+  ): p5 = js.native
+  def spotLight(
+    v1: Double,
+    v2: Double,
+    v3: Double,
+    x: Double,
+    y: Double,
+    z: Double,
+    rx: Double,
+    ry: Double,
+    rz: Double,
+    angle: Unit,
+    conc: Double
+  ): p5 = js.native
   
   /**
     *   Squares a number (multiplies a number by itself).
@@ -7564,14 +9015,13 @@ trait p5InstanceExtensions extends StObject {
     *   two parameters set the location of the upper-left
     *   corner, the third sets the side size of the
     *   square. The way these parameters are interpreted,
-    *   however, may be changed with the rectMode()
-    *   function.  The fourth, fifth, sixth and seventh
-    *   parameters, if specified, determine corner radius
-    *   for the top-left, top-right, lower-right and
-    *   lower-left corners, respectively. An omitted
-    *   corner radius parameter is set to the value of the
-    *   previously specified radius value in the parameter
-    *   list.
+    *   may be changed with the rectMode() function. The
+    *   fourth, fifth, sixth and seventh parameters, if
+    *   specified, determine corner radius for the
+    *   top-left, top-right, lower-right and lower-left
+    *   corners, respectively. An omitted corner radius
+    *   parameter is set to the value of the previously
+    *   specified radius value in the parameter list.
     *   @param x x-coordinate of the square.
     *   @param y y-coordinate of the square.
     *   @param s side size of the square.
@@ -7605,7 +9055,7 @@ trait p5InstanceExtensions extends StObject {
     *   persists between browsing sessions and page
     *   reloads. The key can be the name of the variable
     *   but doesn't have to be. To retrieve stored items
-    *   see getItem.  Sensitive data such as passwords or
+    *   see getItem. Sensitive data such as passwords or
     *   personal information should not be stored in local
     *   storage.
     */
@@ -7614,6 +9064,7 @@ trait p5InstanceExtensions extends StObject {
   def storeItem(key: String, value: Boolean): Unit = js.native
   def storeItem(key: String, value: Double): Unit = js.native
   def storeItem(key: String, value: Color): Unit = js.native
+  def storeItem(key: String, value: Vector): Unit = js.native
   
   /**
     *   Converts a boolean, string or number to its string
@@ -7624,7 +9075,7 @@ trait p5InstanceExtensions extends StObject {
     *   @return string representation of value
     */
   def str(n: String): String = js.native
-  def str(n: js.Array[js.Any]): String = js.native
+  def str(n: js.Array[Any]): String = js.native
   def str(n: Boolean): String = js.native
   def str(n: Double): String = js.native
   
@@ -7634,13 +9085,12 @@ trait p5InstanceExtensions extends StObject {
     *   terms of the RGB or HSB color depending on the
     *   current colorMode() (the default color space is
     *   RGB, with each value in the range from 0 to 255).
-    *   The alpha range by default is also 0 to 255.  If a
+    *   The alpha range by default is also 0 to 255. If a
     *   single string argument is provided, RGB, RGBA and
     *   Hex CSS color strings and all named color strings
     *   are supported. In this case, an alpha number value
     *   as a second argument is not supported, the RGBA
     *   form should be used.
-    *
     *
     *   A p5 Color object can also be provided to set the
     *   stroke color.
@@ -7654,13 +9104,12 @@ trait p5InstanceExtensions extends StObject {
     *   terms of the RGB or HSB color depending on the
     *   current colorMode() (the default color space is
     *   RGB, with each value in the range from 0 to 255).
-    *   The alpha range by default is also 0 to 255.  If a
+    *   The alpha range by default is also 0 to 255. If a
     *   single string argument is provided, RGB, RGBA and
     *   Hex CSS color strings and all named color strings
     *   are supported. In this case, an alpha number value
     *   as a second argument is not supported, the RGBA
     *   form should be used.
-    *
     *
     *   A p5 Color object can also be provided to set the
     *   stroke color.
@@ -7675,13 +9124,12 @@ trait p5InstanceExtensions extends StObject {
     *   terms of the RGB or HSB color depending on the
     *   current colorMode() (the default color space is
     *   RGB, with each value in the range from 0 to 255).
-    *   The alpha range by default is also 0 to 255.  If a
+    *   The alpha range by default is also 0 to 255. If a
     *   single string argument is provided, RGB, RGBA and
     *   Hex CSS color strings and all named color strings
     *   are supported. In this case, an alpha number value
     *   as a second argument is not supported, the RGBA
     *   form should be used.
-    *
     *
     *   A p5 Color object can also be provided to set the
     *   stroke color.
@@ -7701,13 +9149,12 @@ trait p5InstanceExtensions extends StObject {
     *   terms of the RGB or HSB color depending on the
     *   current colorMode() (the default color space is
     *   RGB, with each value in the range from 0 to 255).
-    *   The alpha range by default is also 0 to 255.  If a
+    *   The alpha range by default is also 0 to 255. If a
     *   single string argument is provided, RGB, RGBA and
     *   Hex CSS color strings and all named color strings
     *   are supported. In this case, an alpha number value
     *   as a second argument is not supported, the RGBA
     *   form should be used.
-    *
     *
     *   A p5 Color object can also be provided to set the
     *   stroke color.
@@ -7721,13 +9168,12 @@ trait p5InstanceExtensions extends StObject {
     *   terms of the RGB or HSB color depending on the
     *   current colorMode() (the default color space is
     *   RGB, with each value in the range from 0 to 255).
-    *   The alpha range by default is also 0 to 255.  If a
+    *   The alpha range by default is also 0 to 255. If a
     *   single string argument is provided, RGB, RGBA and
     *   Hex CSS color strings and all named color strings
     *   are supported. In this case, an alpha number value
     *   as a second argument is not supported, the RGBA
     *   form should be used.
-    *
     *
     *   A p5 Color object can also be provided to set the
     *   stroke color.
@@ -7739,21 +9185,27 @@ trait p5InstanceExtensions extends StObject {
   
   /**
     *   Sets the style for rendering line endings. These
-    *   ends are either squared, extended, or rounded,
-    *   each of which specified with the corresponding
-    *   parameters: SQUARE, PROJECT, and ROUND. The
-    *   default cap is ROUND.
-    *   @param cap either SQUARE, PROJECT, or ROUND
+    *   ends are either rounded, squared or extended, each
+    *   of which specified with the corresponding
+    *   parameters: ROUND, SQUARE and PROJECT. The default
+    *   cap is ROUND. The parameter to this method must be
+    *   written in ALL CAPS because they are predefined as
+    *   constants in ALL CAPS and Javascript is a
+    *   case-sensitive language.
+    *   @param cap either ROUND, SQUARE or PROJECT
     *   @chainable
     */
   def strokeCap(cap: STROKE_CAP): p5 = js.native
   
   /**
     *   Sets the style of the joints which connect line
-    *   segments. These joints are either mitered,
-    *   beveled, or rounded and specified with the
-    *   corresponding parameters MITER, BEVEL, and ROUND.
-    *   The default joint is MITER.
+    *   segments. These joints are either mitered, beveled
+    *   or rounded and specified with the corresponding
+    *   parameters MITER, BEVEL and ROUND. The default
+    *   joint is MITER. The parameter to this method must
+    *   be written in ALL CAPS because they are predefined
+    *   as constants in ALL CAPS and Javascript is a
+    *   case-sensitive language.
     *   @param join either MITER, BEVEL, ROUND
     *   @chainable
     */
@@ -7761,9 +9213,11 @@ trait p5InstanceExtensions extends StObject {
   
   /**
     *   Sets the width of the stroke used for lines,
-    *   points, and the border around shapes. All widths
-    *   are set in units of pixels.
-    *   @param weight the weight (in pixels) of the stroke
+    *   points and the border around shapes. All widths
+    *   are set in units of pixels. Note that it is
+    *   affected by any transformation or scaling that has
+    *   been applied previously.
+    *   @param weight the weight of the stroke (in pixels)
     *   @chainable
     */
   def strokeWeight(weight: Double): p5 = js.native
@@ -7783,13 +9237,13 @@ trait p5InstanceExtensions extends StObject {
     *   @param [count] number of values to extract
     *   @return Array of extracted elements
     */
-  def subset(list: js.Array[js.Any], start: Double): js.Array[js.Any] = js.native
-  def subset(list: js.Array[js.Any], start: Double, count: Double): js.Array[js.Any] = js.native
+  def subset(list: js.Array[Any], start: Double): js.Array[Any] = js.native
+  def subset(list: js.Array[Any], start: Double, count: Double): js.Array[Any] = js.native
   
   /**
     *   Calculates the tangent of an angle. This function
     *   takes into account the current angleMode. Values
-    *   are returned in the range -1 to 1.
+    *   are returned in the range of all real numbers.
     *   @param angle the angle
     *   @return the tangent of the angle
     */
@@ -7805,11 +9259,10 @@ trait p5InstanceExtensions extends StObject {
     *   with textSize(). Change the color of the text with
     *   the fill() function. Change the outline of the
     *   text with the stroke() and strokeWeight()
-    *   functions.  The text displays in relation to the
+    *   functions. The text displays in relation to the
     *   textAlign() function, which gives the option to
     *   draw to the left, right, and center of the
     *   coordinates.
-    *
     *
     *   The x2 and y2 parameters define a rectangular area
     *   to display within and may only be used with string
@@ -7821,11 +9274,11 @@ trait p5InstanceExtensions extends StObject {
     *   baseline alignment is the default, which means
     *   that the text will be drawn upwards from x and y.
     *
-    *
     *   WEBGL: Only opentype/truetype fonts are supported.
     *   You must load a font using the loadFont() method
     *   (see the example above). stroke() currently has no
-    *   effect in webgl mode.
+    *   effect in webgl mode. Learn more about working
+    *   with text in webgl mode on the wiki.
     *   @param str the alphanumeric symbols to be
     *   displayed
     *   @param x x-coordinate of text
@@ -7840,10 +9293,10 @@ trait p5InstanceExtensions extends StObject {
   def text(str: String, x: Double, y: Double, x2: Double): p5 = js.native
   def text(str: String, x: Double, y: Double, x2: Double, y2: Double): p5 = js.native
   def text(str: String, x: Double, y: Double, x2: Unit, y2: Double): p5 = js.native
-  def text(str: js.Array[js.Any], x: Double, y: Double): p5 = js.native
-  def text(str: js.Array[js.Any], x: Double, y: Double, x2: Double): p5 = js.native
-  def text(str: js.Array[js.Any], x: Double, y: Double, x2: Double, y2: Double): p5 = js.native
-  def text(str: js.Array[js.Any], x: Double, y: Double, x2: Unit, y2: Double): p5 = js.native
+  def text(str: js.Array[Any], x: Double, y: Double): p5 = js.native
+  def text(str: js.Array[Any], x: Double, y: Double, x2: Double): p5 = js.native
+  def text(str: js.Array[Any], x: Double, y: Double, x2: Double, y2: Double): p5 = js.native
+  def text(str: js.Array[Any], x: Double, y: Double, x2: Unit, y2: Double): p5 = js.native
   def text(str: js.Object, x: Double, y: Double): p5 = js.native
   def text(str: js.Object, x: Double, y: Double, x2: Double): p5 = js.native
   def text(str: js.Object, x: Double, y: Double, x2: Double, y2: Double): p5 = js.native
@@ -7916,16 +9369,26 @@ trait p5InstanceExtensions extends StObject {
   
   /**
     *   Sets the current font that will be drawn with the
-    *   text() function.  WEBGL: Only fonts loaded via
+    *   text() function. If textFont() is called without
+    *   any argument, it will return the current font if
+    *   one has been set already. If not, it will return
+    *   the name of the default font as a string. If
+    *   textFont() is called with a font to use, it will
+    *   return the p5 object. WEBGL: Only fonts loaded via
     *   loadFont() are supported.
-    *   @return the current font
+    *   @return the current font / p5 Object
     */
   def textFont(): js.Object = js.native
   def textFont(font: String): p5 = js.native
   def textFont(font: String, size: Double): p5 = js.native
   /**
     *   Sets the current font that will be drawn with the
-    *   text() function.  WEBGL: Only fonts loaded via
+    *   text() function. If textFont() is called without
+    *   any argument, it will return the current font if
+    *   one has been set already. If not, it will return
+    *   the name of the default font as a string. If
+    *   textFont() is called with a font to use, it will
+    *   return the p5 object. WEBGL: Only fonts loaded via
     *   loadFont() are supported.
     *   @param font a font loaded via loadFont(), or a
     *   String representing a web safe font (a font that
@@ -7951,6 +9414,40 @@ trait p5InstanceExtensions extends StObject {
     *   @chainable
     */
   def textLeading(leading: Double): p5 = js.native
+  
+  /**
+    *   textOutput() creates a screenreader accessible
+    *   output that describes the shapes present on the
+    *   canvas. The general description of the canvas
+    *   includes canvas size, canvas color, and number of
+    *   elements in the canvas (example: 'Your output is
+    *   a, 400 by 400 pixels, lavender blue canvas
+    *   containing the following 4 shapes:'). This
+    *   description is followed by a list of shapes where
+    *   the color, position, and area of each shape are
+    *   described (example: "orange ellipse at top left
+    *   covering 1% of the canvas"). Each element can be
+    *   selected to get more details. A table of elements
+    *   is also provided. In this table, shape, color,
+    *   location, coordinates and area are described
+    *   (example: "orange ellipse location=top left
+    *   area=2"). textOutput() and textOutput(FALLBACK)
+    *   make the output available in  a sub DOM inside the
+    *   canvas element which is accessible to screen
+    *   readers. textOutput(LABEL) creates an additional
+    *   div with the output adjacent to the canvas, this
+    *   is useful for non-screen reader users that might
+    *   want to display the output outside of the canvas'
+    *   sub DOM as they code. However, using LABEL will
+    *   create unnecessary redundancy for screen reader
+    *   users. We recommend using LABEL only as part of
+    *   the development process of a sketch and removing
+    *   it before publishing or sharing with screen reader
+    *   users.
+    *   @param [display] either FALLBACK or LABEL
+    */
+  def textOutput(): Unit = js.native
+  def textOutput(display: TEXT_DISPLAY): Unit = js.native
   
   /**
     *   Sets/gets the current font size. This size will be
@@ -7992,15 +9489,51 @@ trait p5InstanceExtensions extends StObject {
     *   Calculates and returns the width of any character
     *   or text string.
     *   @param theText the String of characters to measure
+    *   @return the calculated width
     */
   def textWidth(theText: String): Double = js.native
   
+  /**
+    *   Specifies how lines of text are wrapped within a
+    *   text box. This requires a max-width set on the
+    *   text area, specified in text() as parameter x2.
+    *   WORD wrap style only breaks lines at spaces. A
+    *   single string without spaces that exceeds the
+    *   boundaries of the canvas or text area is not
+    *   truncated, and will overflow the desired area,
+    *   disappearing at the canvas edge.
+    *
+    *   CHAR wrap style breaks lines wherever needed to
+    *   stay within the text box.
+    *
+    *   WORD is the default wrap style, and both styles
+    *   will still break lines at any line breaks (\n)
+    *   specified in the original text. The text area
+    *   max-height parameter (y2) also still applies to
+    *   wrapped text in both styles, lines of text that do
+    *   not fit within the text area will not be drawn to
+    *   the screen.
+    *   @param wrapStyle text wrapping style, either WORD
+    *   or CHAR
+    *   @return wrapStyle
+    */
+  def textWrap(wrapStyle: WRAP_STYLE): String = js.native
+  
   def texture(tex: Graphics): p5 = js.native
   /**
-    *   Texture for geometry. You can view other possible
-    *   materials in this example.
-    *   @param tex 2-dimensional graphics to render as
-    *   texture
+    *   Sets the texture that will be used to render
+    *   subsequent shapes. A texture is like a "skin" that
+    *   wraps around a 3D geometry. Currently supported
+    *   textures are images, video, and offscreen renders.
+    *
+    *   To texture a geometry created with beginShape(),
+    *   you will need to specify uv coordinates in
+    *   vertex().
+    *
+    *   Note, texture() can only be used in WEBGL mode.
+    *
+    *   You can view more materials in this example.
+    *   @param tex image to use as texture
     *   @chainable
     */
   def texture(tex: Image): p5 = js.native
@@ -8011,8 +9544,7 @@ trait p5InstanceExtensions extends StObject {
     *   default mode is IMAGE which refers to the actual
     *   coordinates of the image. NORMAL refers to a
     *   normalized space of values ranging from 0 to 1.
-    *   This function only works in WEBGL mode. With
-    *   IMAGE, if an image is 100 x 200 pixels, mapping
+    *   With IMAGE, if an image is 100×200 pixels, mapping
     *   the image onto the entire size of a quad would
     *   require the points (0,0) (100, 0) (100,200)
     *   (0,200). The same mapping in NORMAL is (0,0) (1,0)
@@ -8024,20 +9556,20 @@ trait p5InstanceExtensions extends StObject {
   /**
     *   Sets the global texture wrapping mode. This
     *   controls how textures behave when their uv's go
-    *   outside of the 0 - 1 range. There are three
+    *   outside of the 0 to 1 range. There are three
     *   options: CLAMP, REPEAT, and MIRROR. CLAMP causes
     *   the pixels at the edge of the texture to extend to
-    *   the bounds REPEAT causes the texture to tile
-    *   repeatedly until reaching the bounds MIRROR works
+    *   the bounds. REPEAT causes the texture to tile
+    *   repeatedly until reaching the bounds. MIRROR works
     *   similarly to REPEAT but it flips the texture with
-    *   every new tile
+    *   every new tile.
     *
     *   REPEAT & MIRROR are only available if the texture
     *   is a power of two size (128, 256, 512, 1024,
     *   etc.).
     *
     *   This method will affect all textures in your
-    *   sketch until a subsequent textureWrap call is
+    *   sketch until a subsequent textureWrap() call is
     *   made.
     *
     *   If only one argument is provided, it will be
@@ -8051,14 +9583,13 @@ trait p5InstanceExtensions extends StObject {
   /**
     *   Sets the fill value for displaying images. Images
     *   can be tinted to specified colors or made
-    *   transparent by including an alpha value.  To apply
+    *   transparent by including an alpha value. To apply
     *   transparency to an image without affecting its
     *   color, use white as the tint color and specify an
     *   alpha value. For instance, tint(255, 128) will
     *   make an image 50% transparent (assuming the
     *   default alpha range of 0-255, which can be changed
     *   with colorMode()).
-    *
     *
     *   The value for the gray parameter must be less than
     *   or equal to the current maximum value as specified
@@ -8069,14 +9600,13 @@ trait p5InstanceExtensions extends StObject {
   /**
     *   Sets the fill value for displaying images. Images
     *   can be tinted to specified colors or made
-    *   transparent by including an alpha value.  To apply
+    *   transparent by including an alpha value. To apply
     *   transparency to an image without affecting its
     *   color, use white as the tint color and specify an
     *   alpha value. For instance, tint(255, 128) will
     *   make an image 50% transparent (assuming the
     *   default alpha range of 0-255, which can be changed
     *   with colorMode()).
-    *
     *
     *   The value for the gray parameter must be less than
     *   or equal to the current maximum value as specified
@@ -8088,14 +9618,13 @@ trait p5InstanceExtensions extends StObject {
   /**
     *   Sets the fill value for displaying images. Images
     *   can be tinted to specified colors or made
-    *   transparent by including an alpha value.  To apply
+    *   transparent by including an alpha value. To apply
     *   transparency to an image without affecting its
     *   color, use white as the tint color and specify an
     *   alpha value. For instance, tint(255, 128) will
     *   make an image 50% transparent (assuming the
     *   default alpha range of 0-255, which can be changed
     *   with colorMode()).
-    *
     *
     *   The value for the gray parameter must be less than
     *   or equal to the current maximum value as specified
@@ -8112,14 +9641,13 @@ trait p5InstanceExtensions extends StObject {
   /**
     *   Sets the fill value for displaying images. Images
     *   can be tinted to specified colors or made
-    *   transparent by including an alpha value.  To apply
+    *   transparent by including an alpha value. To apply
     *   transparency to an image without affecting its
     *   color, use white as the tint color and specify an
     *   alpha value. For instance, tint(255, 128) will
     *   make an image 50% transparent (assuming the
     *   default alpha range of 0-255, which can be changed
     *   with colorMode()).
-    *
     *
     *   The value for the gray parameter must be less than
     *   or equal to the current maximum value as specified
@@ -8130,14 +9658,13 @@ trait p5InstanceExtensions extends StObject {
   /**
     *   Sets the fill value for displaying images. Images
     *   can be tinted to specified colors or made
-    *   transparent by including an alpha value.  To apply
+    *   transparent by including an alpha value. To apply
     *   transparency to an image without affecting its
     *   color, use white as the tint color and specify an
     *   alpha value. For instance, tint(255, 128) will
     *   make an image 50% transparent (assuming the
     *   default alpha range of 0-255, which can be changed
     *   with colorMode()).
-    *
     *
     *   The value for the gray parameter must be less than
     *   or equal to the current maximum value as specified
@@ -8149,6 +9676,14 @@ trait p5InstanceExtensions extends StObject {
   
   /**
     *   Draw a torus with given radius and tube radius
+    *   DetailX and detailY determine the number of
+    *   subdivisions in the x-dimension and the
+    *   y-dimension of a torus. More subdivisions make the
+    *   torus appear to be smoother. The default and
+    *   maximum values for detailX and detailY are 24 and
+    *   16, respectively. Setting them to relatively small
+    *   values like 4 and 6 allows you to create new
+    *   shapes other than a torus.
     *   @param [radius] radius of the whole ring
     *   @param [tubeRadius] radius of the tube
     *   @param [detailX] number of segments in
@@ -8237,7 +9772,7 @@ trait p5InstanceExtensions extends StObject {
     *   Specifies an amount to displace objects within the
     *   display window. The x parameter specifies
     *   left/right translation, the y parameter specifies
-    *   up/down translation.  Transformations are
+    *   up/down translation. Transformations are
     *   cumulative and apply to everything that happens
     *   after and subsequent calls to the function
     *   accumulates the effect. For example, calling
@@ -8254,7 +9789,7 @@ trait p5InstanceExtensions extends StObject {
     *   Specifies an amount to displace objects within the
     *   display window. The x parameter specifies
     *   left/right translation, the y parameter specifies
-    *   up/down translation.  Transformations are
+    *   up/down translation. Transformations are
     *   cumulative and apply to everything that happens
     *   after and subsequent calls to the function
     *   accumulates the effect. For example, calling
@@ -8273,11 +9808,11 @@ trait p5InstanceExtensions extends StObject {
   def translate(x: Double, y: Double, z: Double): p5 = js.native
   
   /**
-    *   A triangle is a plane created by connecting three
-    *   points. The first two arguments specify the first
-    *   point, the middle two arguments specify the second
-    *   point, and the last two arguments specify the
-    *   third point.
+    *   Draws a triangle to the canvas. A triangle is a
+    *   plane created by connecting three points. The
+    *   first two arguments specify the first point, the
+    *   middle two arguments specify the second point, and
+    *   the last two arguments specify the third point.
     *   @param x1 x-coordinate of the first point
     *   @param y1 y-coordinate of the first point
     *   @param x2 x-coordinate of the second point
@@ -8307,7 +9842,7 @@ trait p5InstanceExtensions extends StObject {
     *   @param strs an Array of Strings to be trimmed
     *   @return an Array of trimmed Strings
     */
-  def trim(strs: js.Array[js.Any]): js.Array[String] = js.native
+  def trim(strs: js.Array[Any]): js.Array[String] = js.native
   
   /**
     *   When a device is rotated, the axis that triggers
@@ -8336,7 +9871,7 @@ trait p5InstanceExtensions extends StObject {
     *   @param ns values to parse
     *   @return integer representation of values
     */
-  def unchar(ns: js.Array[js.Any]): js.Array[Double] = js.native
+  def unchar(ns: js.Array[Any]): js.Array[Double] = js.native
   
   /**
     *   Converts a string representation of a hexadecimal
@@ -8359,7 +9894,7 @@ trait p5InstanceExtensions extends StObject {
     *   @return integer representations of hexadecimal
     *   value
     */
-  def unhex(ns: js.Array[js.Any]): js.Array[Double] = js.native
+  def unhex(ns: js.Array[Any]): js.Array[Double] = js.native
   
   /**
     *   Updates the display window with the data in the
@@ -8414,15 +9949,11 @@ trait p5InstanceExtensions extends StObject {
     *   the beginShape() and endShape() functions.
     *   @param x x-coordinate of the vertex
     *   @param y y-coordinate of the vertex
-    *   @param z z-coordinate of the vertex
-    *   @param [u] the vertex's texture u-coordinate
-    *   @param [v] the vertex's texture v-coordinate
+    *   @param z z-coordinate of the vertex. Defaults to 0
+    *   if not specified.
     *   @chainable
     */
   def vertex(x: Double, y: Double, z: Double): p5 = js.native
-  def vertex(x: Double, y: Double, z: Double, u: Double): p5 = js.native
-  def vertex(x: Double, y: Double, z: Double, u: Double, v: Double): p5 = js.native
-  def vertex(x: Double, y: Double, z: Double, u: Unit, v: Double): p5 = js.native
   
   /**
     *   System variable that stores the width of the
@@ -8460,8 +9991,10 @@ trait p5InstanceExtensions extends StObject {
     *   time the browser window is resized. This is a good
     *   place to resize the canvas or do any other
     *   adjustments to accommodate the new window size.
+    *   @param [event] optional Event callback argument.
     */
   def windowResized(): Unit = js.native
+  def windowResized(event: js.Object): Unit = js.native
   
   /**
     *   System variable that stores the width of the inner

@@ -10,15 +10,12 @@ Convert Excel to JSON
 | ------------------ | :-------------: |
 | Full name          | convert-excel-to-json |
 | Keywords           | excel to json, converts excel |
-| # releases         | 3 |
-| # dependents       | 27 |
-| # downloads        | 539475 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 121296.0 |
+| # stars            | 247.0 |
 
 ## Links
-- [Homepage](https://github.com/DiegoZoracKy/convert-excel-to-json/)
-- [Bugs](https://github.com/DiegoZoracKy/convert-excel-to-json/issues)
-- [Repository](https://github.com/DiegoZoracKy/convert-excel-to-json)
 - [Npm](https://www.npmjs.com/package/convert-excel-to-json)
     
 

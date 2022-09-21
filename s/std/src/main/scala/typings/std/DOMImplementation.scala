@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait DOMImplementation extends StObject {
   
+  /* standard dom */
   def createDocument(): XMLDocument = js.native
   def createDocument(namespace: java.lang.String): XMLDocument = js.native
   def createDocument(namespace: java.lang.String, qualifiedName: java.lang.String): XMLDocument = js.native
@@ -18,11 +19,14 @@ trait DOMImplementation extends StObject {
   def createDocument(namespace: Null, qualifiedName: java.lang.String, doctype: DocumentType): XMLDocument = js.native
   def createDocument(namespace: Null, qualifiedName: Null, doctype: DocumentType): XMLDocument = js.native
   
+  /* standard dom */
   def createDocumentType(qualifiedName: java.lang.String, publicId: java.lang.String, systemId: java.lang.String): DocumentType = js.native
   
+  /* standard dom */
   def createHTMLDocument(): Document = js.native
   def createHTMLDocument(title: java.lang.String): Document = js.native
   
   /** @deprecated */
-  def hasFeature(args: js.Any*): `true` = js.native
+  /* standard dom */
+  def hasFeature(args: Any*): `true` = js.native
 }

@@ -19,7 +19,7 @@ trait LoginRes extends StObject {
   /**
     * 支付宝小程序登录失败的授权类型，key是授权失败的 scope，value 是对应的错误码
     */
-  var authErrorScope: js.UndefOr[js.Any] = js.undefined
+  var authErrorScope: js.UndefOr[Any] = js.undefined
   
   /**
     * 登录服务商提供的登录信息，服务商不同返回的结果不完全相同
@@ -58,7 +58,7 @@ object LoginRes {
     
     inline def setAuthCodeUndefined: Self = StObject.set(x, "authCode", js.undefined)
     
-    inline def setAuthErrorScope(value: js.Any): Self = StObject.set(x, "authErrorScope", value.asInstanceOf[js.Any])
+    inline def setAuthErrorScope(value: Any): Self = StObject.set(x, "authErrorScope", value.asInstanceOf[js.Any])
     
     inline def setAuthErrorScopeUndefined: Self = StObject.set(x, "authErrorScope", js.undefined)
     
@@ -70,7 +70,7 @@ object LoginRes {
     
     inline def setAuthSucessScopeUndefined: Self = StObject.set(x, "authSucessScope", js.undefined)
     
-    inline def setAuthSucessScopeVarargs(value: String*): Self = StObject.set(x, "authSucessScope", js.Array(value :_*))
+    inline def setAuthSucessScopeVarargs(value: String*): Self = StObject.set(x, "authSucessScope", js.Array(value*))
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

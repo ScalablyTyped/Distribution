@@ -16,8 +16,8 @@ trait Arm64BarrierOperand
 }
 object Arm64BarrierOperand {
   
-  inline def apply(value: Double): Arm64BarrierOperand = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+  inline def apply(access: OperandAccess, value: Double): Arm64BarrierOperand = {
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("barrier")
     __obj.asInstanceOf[Arm64BarrierOperand]
   }

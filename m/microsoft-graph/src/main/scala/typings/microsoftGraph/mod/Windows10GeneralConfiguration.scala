@@ -533,7 +533,10 @@ trait Windows10GeneralConfiguration
   // Indicates whether or not users can override the SmartScreen Filter warnings about downloading unverified files
   var smartScreenBlockPromptOverrideForFiles: js.UndefOr[Boolean] = js.undefined
   
-  // Allows IT Admins to control whether users are allowed to install apps from places other than the Store.
+  /**
+    * This property will be deprecated in July 2019 and will be replaced by property SmartScreenAppInstallControl. Allows IT
+    * Admins to control whether users are allowed to install apps from places other than the Store.
+    */
   var smartScreenEnableAppInstallControl: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block the user from unpinning apps from taskbar.
@@ -599,13 +602,13 @@ trait Windows10GeneralConfiguration
     * Edge secondary tile to appear empty in this case. This policy only gets applied when startMenuLayoutXml policy is
     * modified. The value should be a UTF-8 Base64 encoded byte array.
     */
-  var startMenuLayoutEdgeAssetsXml: js.UndefOr[NullableOption[Double]] = js.undefined
+  var startMenuLayoutEdgeAssetsXml: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Allows admins to override the default Start menu layout and prevents the user from changing it. The layout is modified
     * by specifying an XML file based on a layout modification schema. XML needs to be in a UTF8 encoded byte array format.
     */
-  var startMenuLayoutXml: js.UndefOr[NullableOption[Double]] = js.undefined
+  var startMenuLayoutXml: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Allows admins to decide how the Start menu is displayed. Possible values are: userDefined, fullScreen, nonFullScreen.
   var startMenuMode: js.UndefOr[WindowsStartMenuModeType] = js.undefined
@@ -788,7 +791,7 @@ object Windows10GeneralConfiguration {
     
     inline def setBluetoothAllowedServicesUndefined: Self = StObject.set(x, "bluetoothAllowedServices", js.undefined)
     
-    inline def setBluetoothAllowedServicesVarargs(value: String*): Self = StObject.set(x, "bluetoothAllowedServices", js.Array(value :_*))
+    inline def setBluetoothAllowedServicesVarargs(value: String*): Self = StObject.set(x, "bluetoothAllowedServices", js.Array(value*))
     
     inline def setBluetoothBlockAdvertising(value: Boolean): Self = StObject.set(x, "bluetoothBlockAdvertising", value.asInstanceOf[js.Any])
     
@@ -864,7 +867,7 @@ object Windows10GeneralConfiguration {
     
     inline def setDefenderFileExtensionsToExcludeUndefined: Self = StObject.set(x, "defenderFileExtensionsToExclude", js.undefined)
     
-    inline def setDefenderFileExtensionsToExcludeVarargs(value: String*): Self = StObject.set(x, "defenderFileExtensionsToExclude", js.Array(value :_*))
+    inline def setDefenderFileExtensionsToExcludeVarargs(value: String*): Self = StObject.set(x, "defenderFileExtensionsToExclude", js.Array(value*))
     
     inline def setDefenderFilesAndFoldersToExclude(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "defenderFilesAndFoldersToExclude", value.asInstanceOf[js.Any])
     
@@ -872,7 +875,7 @@ object Windows10GeneralConfiguration {
     
     inline def setDefenderFilesAndFoldersToExcludeUndefined: Self = StObject.set(x, "defenderFilesAndFoldersToExclude", js.undefined)
     
-    inline def setDefenderFilesAndFoldersToExcludeVarargs(value: String*): Self = StObject.set(x, "defenderFilesAndFoldersToExclude", js.Array(value :_*))
+    inline def setDefenderFilesAndFoldersToExcludeVarargs(value: String*): Self = StObject.set(x, "defenderFilesAndFoldersToExclude", js.Array(value*))
     
     inline def setDefenderMonitorFileActivity(value: DefenderMonitorFileActivity): Self = StObject.set(x, "defenderMonitorFileActivity", value.asInstanceOf[js.Any])
     
@@ -884,7 +887,7 @@ object Windows10GeneralConfiguration {
     
     inline def setDefenderProcessesToExcludeUndefined: Self = StObject.set(x, "defenderProcessesToExclude", js.undefined)
     
-    inline def setDefenderProcessesToExcludeVarargs(value: String*): Self = StObject.set(x, "defenderProcessesToExclude", js.Array(value :_*))
+    inline def setDefenderProcessesToExcludeVarargs(value: String*): Self = StObject.set(x, "defenderProcessesToExclude", js.Array(value*))
     
     inline def setDefenderPromptForSampleSubmission(value: DefenderPromptForSampleSubmission): Self = StObject.set(x, "defenderPromptForSampleSubmission", value.asInstanceOf[js.Any])
     
@@ -1076,7 +1079,7 @@ object Windows10GeneralConfiguration {
     
     inline def setEdgeHomepageUrlsUndefined: Self = StObject.set(x, "edgeHomepageUrls", js.undefined)
     
-    inline def setEdgeHomepageUrlsVarargs(value: String*): Self = StObject.set(x, "edgeHomepageUrls", js.Array(value :_*))
+    inline def setEdgeHomepageUrlsVarargs(value: String*): Self = StObject.set(x, "edgeHomepageUrls", js.Array(value*))
     
     inline def setEdgeRequireSmartScreen(value: Boolean): Self = StObject.set(x, "edgeRequireSmartScreen", value.asInstanceOf[js.Any])
     
@@ -1486,13 +1489,13 @@ object Windows10GeneralConfiguration {
     
     inline def setStartMenuHideUserTileUndefined: Self = StObject.set(x, "startMenuHideUserTile", js.undefined)
     
-    inline def setStartMenuLayoutEdgeAssetsXml(value: NullableOption[Double]): Self = StObject.set(x, "startMenuLayoutEdgeAssetsXml", value.asInstanceOf[js.Any])
+    inline def setStartMenuLayoutEdgeAssetsXml(value: NullableOption[String]): Self = StObject.set(x, "startMenuLayoutEdgeAssetsXml", value.asInstanceOf[js.Any])
     
     inline def setStartMenuLayoutEdgeAssetsXmlNull: Self = StObject.set(x, "startMenuLayoutEdgeAssetsXml", null)
     
     inline def setStartMenuLayoutEdgeAssetsXmlUndefined: Self = StObject.set(x, "startMenuLayoutEdgeAssetsXml", js.undefined)
     
-    inline def setStartMenuLayoutXml(value: NullableOption[Double]): Self = StObject.set(x, "startMenuLayoutXml", value.asInstanceOf[js.Any])
+    inline def setStartMenuLayoutXml(value: NullableOption[String]): Self = StObject.set(x, "startMenuLayoutXml", value.asInstanceOf[js.Any])
     
     inline def setStartMenuLayoutXmlNull: Self = StObject.set(x, "startMenuLayoutXml", null)
     

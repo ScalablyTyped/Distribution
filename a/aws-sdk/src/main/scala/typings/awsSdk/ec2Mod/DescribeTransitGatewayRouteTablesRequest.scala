@@ -48,7 +48,7 @@ object DescribeTransitGatewayRouteTablesRequest {
     
     inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value*))
     
     inline def setMaxResults(value: TransitGatewayMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
@@ -62,6 +62,6 @@ object DescribeTransitGatewayRouteTablesRequest {
     
     inline def setTransitGatewayRouteTableIdsUndefined: Self = StObject.set(x, "TransitGatewayRouteTableIds", js.undefined)
     
-    inline def setTransitGatewayRouteTableIdsVarargs(value: TransitGatewayRouteTableId*): Self = StObject.set(x, "TransitGatewayRouteTableIds", js.Array(value :_*))
+    inline def setTransitGatewayRouteTableIdsVarargs(value: TransitGatewayRouteTableId*): Self = StObject.set(x, "TransitGatewayRouteTableIds", js.Array(value*))
   }
 }

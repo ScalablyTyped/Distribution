@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Int64")
 @js.native
-class Int64_ protected ()
+open class Int64_ protected ()
   extends StObject
      with Int64 {
   /**

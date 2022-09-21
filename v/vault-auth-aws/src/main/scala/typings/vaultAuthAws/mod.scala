@@ -1,6 +1,6 @@
 package typings.vaultAuthAws
 
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,13 +9,13 @@ object mod {
   
   @JSImport("vault-auth-aws", JSImport.Namespace)
   @js.native
-  class ^ ()
+  open class ^ ()
     extends StObject
        with typings.vaultAuthAws.mod.vaultAuthAws {
     def this(config: Config) = this()
     
     /* CompleteClass */
-    override def authenticate(): js.Promise[js.Any] = js.native
+    override def authenticate(): js.Promise[Any] = js.native
     
     /* CompleteClass */
     override def getOptions(creds: Creds): Options = js.native
@@ -152,20 +152,20 @@ object mod {
   
   trait vaultAuthAws extends StObject {
     
-    def authenticate(): js.Promise[js.Any]
+    def authenticate(): js.Promise[Any]
     
     def getOptions(creds: Creds): Options
   }
   object vaultAuthAws {
     
-    inline def apply(authenticate: () => js.Promise[js.Any], getOptions: Creds => Options): typings.vaultAuthAws.mod.vaultAuthAws = {
+    inline def apply(authenticate: () => js.Promise[Any], getOptions: Creds => Options): typings.vaultAuthAws.mod.vaultAuthAws = {
       val __obj = js.Dynamic.literal(authenticate = js.Any.fromFunction0(authenticate), getOptions = js.Any.fromFunction1(getOptions))
       __obj.asInstanceOf[typings.vaultAuthAws.mod.vaultAuthAws]
     }
     
     extension [Self <: typings.vaultAuthAws.mod.vaultAuthAws](x: Self) {
       
-      inline def setAuthenticate(value: () => js.Promise[js.Any]): Self = StObject.set(x, "authenticate", js.Any.fromFunction0(value))
+      inline def setAuthenticate(value: () => js.Promise[Any]): Self = StObject.set(x, "authenticate", js.Any.fromFunction0(value))
       
       inline def setGetOptions(value: Creds => Options): Self = StObject.set(x, "getOptions", js.Any.fromFunction1(value))
     }

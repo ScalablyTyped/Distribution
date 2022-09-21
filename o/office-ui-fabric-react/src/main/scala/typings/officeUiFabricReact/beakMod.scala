@@ -18,8 +18,8 @@ object beakMod {
   
   @JSImport("office-ui-fabric-react/lib/components/Coachmark/Beak/Beak", "Beak")
   @js.native
-  class Beak protected ()
-    extends Component[IBeakProps, js.Object, js.Any] {
+  open class Beak protected ()
+    extends Component[IBeakProps, js.Object, Any] {
     def this(props: IBeakProps) = this()
   }
 }

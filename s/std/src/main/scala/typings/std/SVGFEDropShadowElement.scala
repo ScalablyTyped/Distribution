@@ -11,20 +11,23 @@ trait SVGFEDropShadowElement
      with SVGFilterPrimitiveStandardAttributes {
   
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(
     `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
+    callback: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
   
+  /* standard dom */
   val dx: SVGAnimatedNumber = js.native
   
+  /* standard dom */
   val dy: SVGAnimatedNumber = js.native
   
+  /* standard dom */
   val in1: SVGAnimatedString = js.native
   
   /* InferMemberOverrides */
@@ -38,9 +41,12 @@ trait SVGFEDropShadowElement
     options: EventListenerOptions
   ): Unit = js.native
   
+  /* standard dom */
   def setStdDeviation(stdDeviationX: Double, stdDeviationY: Double): Unit = js.native
   
+  /* standard dom */
   val stdDeviationX: SVGAnimatedNumber = js.native
   
+  /* standard dom */
   val stdDeviationY: SVGAnimatedNumber = js.native
 }

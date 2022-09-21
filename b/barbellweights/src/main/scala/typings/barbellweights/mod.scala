@@ -8,11 +8,11 @@ object mod {
   
   @JSImport("barbellweights", "BarbellWeight")
   @js.native
-  class BarbellWeight protected () extends StObject {
+  open class BarbellWeight protected () extends StObject {
     def this(workingWeight: Double, lift: String) = this()
     def this(workingWeight: Double, lift: String, options: typings.barbellweights.mod.options) = this()
     
-    def getResults(): js.Any = js.native
+    def getResults(): Any = js.native
   }
   object BarbellWeight {
     
@@ -53,7 +53,7 @@ object mod {
       
       inline def setPlatesUndefined: Self = StObject.set(x, "plates", js.undefined)
       
-      inline def setPlatesVarargs(value: Double*): Self = StObject.set(x, "plates", js.Array(value :_*))
+      inline def setPlatesVarargs(value: Double*): Self = StObject.set(x, "plates", js.Array(value*))
       
       inline def setProgram(value: String): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
       

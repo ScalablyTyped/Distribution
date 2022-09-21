@@ -8,18 +8,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@google-cloud/common/build/src/util", "PartialFailureError")
 @js.native
-class PartialFailureError protected ()
+open class PartialFailureError protected ()
   extends StObject
      with Error {
   def this(b: GoogleErrorBody) = this()
   
   var errors: js.UndefOr[js.Array[GoogleInnerError]] = js.native
   
+  /* standard es5 */
   /* CompleteClass */
   var message: String = js.native
   
+  /* standard es5 */
   /* CompleteClass */
   var name: String = js.native
   
-  var response: js.UndefOr[Response[js.Any]] = js.native
+  var response: js.UndefOr[Response[Any]] = js.native
 }

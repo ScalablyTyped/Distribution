@@ -14,7 +14,7 @@ trait Queue extends StObject {
   /**
     * The timestamp in epoch seconds for when you created the queue.
     */
-  var CreatedAt: js.UndefOr[timestampUnix] = js.undefined
+  var CreatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
     * An optional description that you create for each queue.
@@ -24,7 +24,7 @@ trait Queue extends StObject {
   /**
     * The timestamp in epoch seconds for when you most recently updated the queue.
     */
-  var LastUpdated: js.UndefOr[timestampUnix] = js.undefined
+  var LastUpdated: js.UndefOr[js.Date] = js.undefined
   
   /**
     * A name that you create for each queue. Each name must be unique within your account.
@@ -74,7 +74,7 @@ object Queue {
     
     inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    inline def setCreatedAt(value: timestampUnix): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
@@ -82,7 +82,7 @@ object Queue {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    inline def setLastUpdated(value: timestampUnix): Self = StObject.set(x, "LastUpdated", value.asInstanceOf[js.Any])
+    inline def setLastUpdated(value: js.Date): Self = StObject.set(x, "LastUpdated", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedUndefined: Self = StObject.set(x, "LastUpdated", js.undefined)
     

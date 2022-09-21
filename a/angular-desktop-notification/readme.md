@@ -10,10 +10,10 @@ A simple HTML5 notification for Angular 1
 | ------------------ | :-------------: |
 | Full name          | angular-desktop-notification |
 | Keywords           | angular, html5, notification |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 24779 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2358.0 |
+| # stars            | 22.0 |
 
 ## Links
 - [Homepage](https://github.com/jmsanpascual/angular-desktop-notification#readme)

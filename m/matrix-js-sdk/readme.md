@@ -1,7 +1,7 @@
 
 # Scala.js typings for matrix-js-sdk
 
-Typings are for version 8.5.0
+Typings are for version 11.0
 
 ## Library description:
 Matrix Client-Server SDK for Javascript
@@ -10,10 +10,10 @@ Matrix Client-Server SDK for Javascript
 | ------------------ | :-------------: |
 | Full name          | matrix-js-sdk |
 | Keywords           | matrix-org |
-| # releases         | 106 |
-| # dependents       | 50 |
-| # downloads        | 361914 |
-| # stars            | 0 |
+| # releases         | 121 |
+| # dependents       | 0.0 |
+| # downloads        | 32228.0 |
+| # stars            | 1106.0 |
 
 ## Links
 - [Homepage](https://github.com/matrix-org/matrix-js-sdk#readme)
@@ -24,7 +24,7 @@ Matrix Client-Server SDK for Javascript
 
 
 ## Note
-This library has been generated from typescript code from first party type definitions.
+This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

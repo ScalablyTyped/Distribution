@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object widget {
   
-  inline def apply(pluginName: String, className: String, proto: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(pluginName.asInstanceOf[js.Any], className.asInstanceOf[js.Any], proto.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(pluginName: String, className: String, proto: Any): Any = (^.asInstanceOf[js.Dynamic].apply(pluginName.asInstanceOf[js.Any], className.asInstanceOf[js.Any], proto.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSGlobal("ej.widget")
   @js.native
@@ -21,15 +21,15 @@ object widget {
   
   inline def init(element: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def register(pluginName: String, className: String, prototype: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(pluginName.asInstanceOf[js.Any], className.asInstanceOf[js.Any], prototype.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def register(pluginName: String, className: String, prototype: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(pluginName.asInstanceOf[js.Any], className.asInstanceOf[js.Any], prototype.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def registerInstance(element: Element, pluginName: String, className: String, prototype: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerInstance")(element.asInstanceOf[js.Any], pluginName.asInstanceOf[js.Any], className.asInstanceOf[js.Any], prototype.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerInstance(element: Element, pluginName: String, className: String, prototype: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerInstance")(element.asInstanceOf[js.Any], pluginName.asInstanceOf[js.Any], className.asInstanceOf[js.Any], prototype.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSGlobal("ej.widget.registeredInstances")
   @js.native
-  val registeredInstances: js.Array[js.Any] = js.native
+  val registeredInstances: js.Array[Any] = js.native
   
   @JSGlobal("ej.widget.registeredWidgets")
   @js.native
-  val registeredWidgets: js.Array[js.Any] = js.native
+  val registeredWidgets: js.Array[Any] = js.native
 }

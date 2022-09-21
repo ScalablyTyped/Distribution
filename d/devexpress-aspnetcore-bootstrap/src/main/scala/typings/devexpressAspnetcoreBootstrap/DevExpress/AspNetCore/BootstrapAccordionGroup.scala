@@ -26,7 +26,7 @@ trait BootstrapAccordionGroup extends StObject {
   
   val index: Double
   
-  /* protected */ val instance: js.Any
+  /* protected */ val instance: Any
   
   val name: String
   
@@ -55,7 +55,7 @@ object BootstrapAccordionGroup {
     getText: () => String,
     getVisible: () => Boolean,
     index: Double,
-    instance: js.Any,
+    instance: Any,
     name: String,
     setExpanded: Boolean => Unit,
     setHeaderBadgeIconCssClass: String => Unit,
@@ -89,7 +89,7 @@ object BootstrapAccordionGroup {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    inline def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

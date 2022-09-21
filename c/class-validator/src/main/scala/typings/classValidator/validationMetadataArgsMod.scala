@@ -17,7 +17,7 @@ object validationMetadataArgsMod {
     /**
       * Array of constraints of this validation.
       */
-    var constraints: js.UndefOr[js.Array[js.Any]] = js.undefined
+    var constraints: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
       * Property of the object to be validated.
@@ -42,7 +42,7 @@ object validationMetadataArgsMod {
     /**
       * Extra options specific to validation type.
       */
-    var validationTypeOptions: js.UndefOr[js.Any] = js.undefined
+    var validationTypeOptions: js.UndefOr[Any] = js.undefined
   }
   object ValidationMetadataArgs {
     
@@ -58,11 +58,11 @@ object validationMetadataArgsMod {
       
       inline def setConstraintClsUndefined: Self = StObject.set(x, "constraintCls", js.undefined)
       
-      inline def setConstraints(value: js.Array[js.Any]): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
+      inline def setConstraints(value: js.Array[Any]): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
       
       inline def setConstraintsUndefined: Self = StObject.set(x, "constraints", js.undefined)
       
-      inline def setConstraintsVarargs(value: js.Any*): Self = StObject.set(x, "constraints", js.Array(value :_*))
+      inline def setConstraintsVarargs(value: Any*): Self = StObject.set(x, "constraints", js.Array(value*))
       
       inline def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
       
@@ -74,7 +74,7 @@ object validationMetadataArgsMod {
       
       inline def setValidationOptionsUndefined: Self = StObject.set(x, "validationOptions", js.undefined)
       
-      inline def setValidationTypeOptions(value: js.Any): Self = StObject.set(x, "validationTypeOptions", value.asInstanceOf[js.Any])
+      inline def setValidationTypeOptions(value: Any): Self = StObject.set(x, "validationTypeOptions", value.asInstanceOf[js.Any])
       
       inline def setValidationTypeOptionsUndefined: Self = StObject.set(x, "validationTypeOptions", js.undefined)
     }

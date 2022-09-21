@@ -1,6 +1,7 @@
 package typings.mocha.mod
 
 import typings.mocha.Mocha.RunnerConstants
+import typings.mocha.Mocha.RunnerOptions
 import typings.mocha.Mocha.Suite
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -38,10 +39,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("mocha", "Runner")
 @js.native
-class Runner protected ()
+open class Runner protected ()
   extends StObject
      with typings.mocha.Mocha.Runner {
-  def this(suite: Suite, delay: Boolean) = this()
+  /**
+    * Initialize a `Runner` at the Root Suite, which represents a hierarchy of Suites and Tests.
+    *
+    * @param suite Root suite
+    * @param optionsOrDelay Options. If boolean (deprecated), whether or not to delay execution of root suite until ready.
+    */
+  def this(suite: Suite) = this()
+  def this(suite: Suite, optionsOrDelay: Boolean) = this()
+  def this(suite: Suite, optionsOrDelay: RunnerOptions) = this()
 }
 object Runner {
   

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("matrix-appservice-bridge", "AppService")
 @js.native
-class AppService protected ()
+open class AppService protected ()
   extends typings.matrixAppservice.mod.AppService {
   /**
     * Construct a new application service.

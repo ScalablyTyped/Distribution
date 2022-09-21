@@ -42,9 +42,10 @@ trait SignedCertificateTimestamp extends StObject {
   var status: String
   
   /**
-    * Issuance date.
+    * Issuance date. Unlike TimeSinceEpoch, this contains the number of
+    * milliseconds since January 1, 1970, UTC, not the number of seconds.
     */
-  var timestamp: TimeSinceEpoch
+  var timestamp: Double
 }
 object SignedCertificateTimestamp {
   
@@ -56,7 +57,7 @@ object SignedCertificateTimestamp {
     signatureAlgorithm: String,
     signatureData: String,
     status: String,
-    timestamp: TimeSinceEpoch
+    timestamp: Double
   ): SignedCertificateTimestamp = {
     val __obj = js.Dynamic.literal(hashAlgorithm = hashAlgorithm.asInstanceOf[js.Any], logDescription = logDescription.asInstanceOf[js.Any], logId = logId.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], signatureAlgorithm = signatureAlgorithm.asInstanceOf[js.Any], signatureData = signatureData.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignedCertificateTimestamp]
@@ -78,6 +79,6 @@ object SignedCertificateTimestamp {
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    inline def setTimestamp(value: TimeSinceEpoch): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

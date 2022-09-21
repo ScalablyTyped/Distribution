@@ -30,20 +30,20 @@ trait PerceptionColorFrameSource extends StObject {
   /** Gets a boolean value indicating whether or not the source is active. */
   var active: Boolean = js.native
   
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_activechanged(`type`: activechanged, listener: TypedEventHandler[PerceptionColorFrameSource, js.Any]): Unit = js.native
+  def addEventListener_activechanged(`type`: activechanged, listener: TypedEventHandler[PerceptionColorFrameSource, Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_availablechanged(`type`: availablechanged, listener: TypedEventHandler[PerceptionColorFrameSource, js.Any]): Unit = js.native
+  def addEventListener_availablechanged(`type`: availablechanged, listener: TypedEventHandler[PerceptionColorFrameSource, Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_cameraintrinsicschanged(`type`: cameraintrinsicschanged, listener: TypedEventHandler[PerceptionColorFrameSource, js.Any]): Unit = js.native
+  def addEventListener_cameraintrinsicschanged(`type`: cameraintrinsicschanged, listener: TypedEventHandler[PerceptionColorFrameSource, Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_propertieschanged(
     `type`: propertieschanged,
     listener: TypedEventHandler[PerceptionColorFrameSource, PerceptionFrameSourcePropertiesChangedEventArgs]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_videoprofilechanged(`type`: videoprofilechanged, listener: TypedEventHandler[PerceptionColorFrameSource, js.Any]): Unit = js.native
+  def addEventListener_videoprofilechanged(`type`: videoprofilechanged, listener: TypedEventHandler[PerceptionColorFrameSource, Any]): Unit = js.native
   
   /** Gets a boolean value indicating whether or not the source is available. */
   var available: Boolean = js.native
@@ -61,7 +61,7 @@ trait PerceptionColorFrameSource extends StObject {
     */
   def canControlIndependentlyFrom(targetId: String): Boolean = js.native
   
-  var deviceId: js.Any = js.native
+  var deviceId: Any = js.native
   
   /* unmapped type */
   /** Gets a string value indicating the kind of physical device that generates the color frames for this source. */
@@ -84,22 +84,22 @@ trait PerceptionColorFrameSource extends StObject {
   def isCorrelatedWith(targetId: String): Boolean = js.native
   
   /** Subscribes to the ActiveChanged event. */
-  def onactivechanged(ev: js.Any & WinRTEvent[PerceptionColorFrameSource]): Unit = js.native
+  def onactivechanged(ev: Any & WinRTEvent[PerceptionColorFrameSource]): Unit = js.native
   /** Subscribes to the ActiveChanged event. */
   @JSName("onactivechanged")
-  var onactivechanged_Original: TypedEventHandler[PerceptionColorFrameSource, js.Any] = js.native
+  var onactivechanged_Original: TypedEventHandler[PerceptionColorFrameSource, Any] = js.native
   
   /** Subscribes to the AvailableChanged event. */
-  def onavailablechanged(ev: js.Any & WinRTEvent[PerceptionColorFrameSource]): Unit = js.native
+  def onavailablechanged(ev: Any & WinRTEvent[PerceptionColorFrameSource]): Unit = js.native
   /** Subscribes to the AvailableChanged event. */
   @JSName("onavailablechanged")
-  var onavailablechanged_Original: TypedEventHandler[PerceptionColorFrameSource, js.Any] = js.native
+  var onavailablechanged_Original: TypedEventHandler[PerceptionColorFrameSource, Any] = js.native
   
   /** Subscribes to the CameraIntrinsicsChanged event. */
-  def oncameraintrinsicschanged(ev: js.Any & WinRTEvent[PerceptionColorFrameSource]): Unit = js.native
+  def oncameraintrinsicschanged(ev: Any & WinRTEvent[PerceptionColorFrameSource]): Unit = js.native
   /** Subscribes to the CameraIntrinsicsChanged event. */
   @JSName("oncameraintrinsicschanged")
-  var oncameraintrinsicschanged_Original: TypedEventHandler[PerceptionColorFrameSource, js.Any] = js.native
+  var oncameraintrinsicschanged_Original: TypedEventHandler[PerceptionColorFrameSource, Any] = js.native
   
   /** Subscribes to the PropertiesChanged event. */
   def onpropertieschanged(ev: PerceptionFrameSourcePropertiesChangedEventArgs & WinRTEvent[PerceptionColorFrameSource]): Unit = js.native
@@ -108,10 +108,10 @@ trait PerceptionColorFrameSource extends StObject {
   var onpropertieschanged_Original: TypedEventHandler[PerceptionColorFrameSource, PerceptionFrameSourcePropertiesChangedEventArgs] = js.native
   
   /** Subscribes to the VideoProfileChanged event. */
-  def onvideoprofilechanged(ev: js.Any & WinRTEvent[PerceptionColorFrameSource]): Unit = js.native
+  def onvideoprofilechanged(ev: Any & WinRTEvent[PerceptionColorFrameSource]): Unit = js.native
   /** Subscribes to the VideoProfileChanged event. */
   @JSName("onvideoprofilechanged")
-  var onvideoprofilechanged_Original: TypedEventHandler[PerceptionColorFrameSource, js.Any] = js.native
+  var onvideoprofilechanged_Original: TypedEventHandler[PerceptionColorFrameSource, Any] = js.native
   
   /**
     * Gets a frame reader that reads frames from this color frame source.
@@ -120,22 +120,22 @@ trait PerceptionColorFrameSource extends StObject {
   def openReader(): PerceptionColorFrameReader = js.native
   
   /** Gets a read-only collection of frame source properties. */
-  var properties: IMapView[String, js.Any] = js.native
+  var properties: IMapView[String, Any] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_activechanged(`type`: activechanged, listener: TypedEventHandler[PerceptionColorFrameSource, js.Any]): Unit = js.native
+  def removeEventListener_activechanged(`type`: activechanged, listener: TypedEventHandler[PerceptionColorFrameSource, Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_availablechanged(`type`: availablechanged, listener: TypedEventHandler[PerceptionColorFrameSource, js.Any]): Unit = js.native
+  def removeEventListener_availablechanged(`type`: availablechanged, listener: TypedEventHandler[PerceptionColorFrameSource, Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_cameraintrinsicschanged(`type`: cameraintrinsicschanged, listener: TypedEventHandler[PerceptionColorFrameSource, js.Any]): Unit = js.native
+  def removeEventListener_cameraintrinsicschanged(`type`: cameraintrinsicschanged, listener: TypedEventHandler[PerceptionColorFrameSource, Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_propertieschanged(
     `type`: propertieschanged,
     listener: TypedEventHandler[PerceptionColorFrameSource, PerceptionFrameSourcePropertiesChangedEventArgs]
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_videoprofilechanged(`type`: videoprofilechanged, listener: TypedEventHandler[PerceptionColorFrameSource, js.Any]): Unit = js.native
+  def removeEventListener_videoprofilechanged(`type`: videoprofilechanged, listener: TypedEventHandler[PerceptionColorFrameSource, Any]): Unit = js.native
   
   /** Gets a read-only collection of video profiles that are supported by the color frame source. */
   var supportedVideoProfiles: IVectorView[PerceptionVideoProfile] = js.native

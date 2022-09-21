@@ -6,16 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AudioConferencing extends StObject {
   
+  // The conference id of the online meeting.
   var conferenceId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // A URL to the externally-accessible web page that contains dial-in information.
   var dialinUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // The toll-free number that connects to the Audio Conference Provider.
   var tollFreeNumber: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // The toll number that connects to the Audio Conference Provider.
+  // List of toll-free numbers that are displayed in the meeting invite.
+  var tollFreeNumbers: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
+  
   var tollNumber: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  // List of toll numbers that are displayed in the meeting invite.
+  var tollNumbers: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
 }
 object AudioConferencing {
   
@@ -44,10 +49,26 @@ object AudioConferencing {
     
     inline def setTollFreeNumberUndefined: Self = StObject.set(x, "tollFreeNumber", js.undefined)
     
+    inline def setTollFreeNumbers(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "tollFreeNumbers", value.asInstanceOf[js.Any])
+    
+    inline def setTollFreeNumbersNull: Self = StObject.set(x, "tollFreeNumbers", null)
+    
+    inline def setTollFreeNumbersUndefined: Self = StObject.set(x, "tollFreeNumbers", js.undefined)
+    
+    inline def setTollFreeNumbersVarargs(value: String*): Self = StObject.set(x, "tollFreeNumbers", js.Array(value*))
+    
     inline def setTollNumber(value: NullableOption[String]): Self = StObject.set(x, "tollNumber", value.asInstanceOf[js.Any])
     
     inline def setTollNumberNull: Self = StObject.set(x, "tollNumber", null)
     
     inline def setTollNumberUndefined: Self = StObject.set(x, "tollNumber", js.undefined)
+    
+    inline def setTollNumbers(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "tollNumbers", value.asInstanceOf[js.Any])
+    
+    inline def setTollNumbersNull: Self = StObject.set(x, "tollNumbers", null)
+    
+    inline def setTollNumbersUndefined: Self = StObject.set(x, "tollNumbers", js.undefined)
+    
+    inline def setTollNumbersVarargs(value: String*): Self = StObject.set(x, "tollNumbers", js.Array(value*))
   }
 }

@@ -10,7 +10,7 @@ object rawShaderMaterialMod {
   
   @JSImport("three/src/materials/RawShaderMaterial", "RawShaderMaterial")
   @js.native
-  class RawShaderMaterial () extends ShaderMaterial {
+  open class RawShaderMaterial () extends ShaderMaterial {
     def this(parameters: ShaderMaterialParameters) = this()
   }
 }

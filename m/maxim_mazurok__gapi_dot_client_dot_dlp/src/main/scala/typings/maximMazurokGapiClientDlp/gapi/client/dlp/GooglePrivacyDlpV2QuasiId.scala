@@ -16,7 +16,7 @@ trait GooglePrivacyDlpV2QuasiId extends StObject {
   var field: js.UndefOr[GooglePrivacyDlpV2FieldId] = js.undefined
   
   /** If no semantic tag is indicated, we infer the statistical model from the distribution of values in the input data */
-  var inferred: js.UndefOr[js.Any] = js.undefined
+  var inferred: js.UndefOr[Any] = js.undefined
   
   /**
     * A column can be tagged with a InfoType to use the relevant public dataset as a statistical model of population, if available. We currently support US ZIP codes, region codes, ages
@@ -41,7 +41,7 @@ object GooglePrivacyDlpV2QuasiId {
     
     inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    inline def setInferred(value: js.Any): Self = StObject.set(x, "inferred", value.asInstanceOf[js.Any])
+    inline def setInferred(value: Any): Self = StObject.set(x, "inferred", value.asInstanceOf[js.Any])
     
     inline def setInferredUndefined: Self = StObject.set(x, "inferred", js.undefined)
     

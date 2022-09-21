@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Class_WebView")
 @js.native
-class ClassWebView ()
+open class ClassWebView ()
   extends StObject
      with typings.fibjs.ClassWebView

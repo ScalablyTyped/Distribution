@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  /* augmented module */
   object wordpressDataAugmentingMod {
     
     @JSImport("@wordpress/data", JSImport.Namespace)
@@ -22,7 +21,7 @@ object mod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped 'edit' extends 'embed' ? std.Pick<@wordpress/api-fetch.@wordpress/api-fetch.Schema.BasePostRevision<'edit'>, @wordpress/api-fetch.@wordpress/api-fetch.Schema.EmbedKeys.PostRevision> : 'edit' extends 'view' ? std.Pick<@wordpress/api-fetch.@wordpress/api-fetch.Schema.BasePostRevision<'edit'>, @wordpress/api-fetch.@wordpress/api-fetch.Schema.ViewKeys.PostRevision> : @wordpress/api-fetch.@wordpress/api-fetch.Schema.BasePostRevision<'edit'> */ trait Autosave extends StObject {
+  - Dropped 'edit' extends 'embed' ? std.Pick<@wordpress/core-data.@wordpress/core-data/schema.Schema.BasePostRevision<'edit'>, @wordpress/core-data.@wordpress/core-data/schema.Schema.EmbedKeys.PostRevision> : 'edit' extends 'view' ? std.Pick<@wordpress/core-data.@wordpress/core-data/schema.Schema.BasePostRevision<'edit'>, @wordpress/core-data.@wordpress/core-data/schema.Schema.ViewKeys.PostRevision> : @wordpress/core-data.@wordpress/core-data/schema.Schema.BasePostRevision<'edit'> */ trait Autosave extends StObject {
     
     var preview_link: String
   }

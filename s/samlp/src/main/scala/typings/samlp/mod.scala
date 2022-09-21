@@ -2,11 +2,10 @@ package typings.samlp
 
 import typings.express.mod.Handler
 import typings.express.mod.Request_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
-import typings.node.Buffer
+import typings.node.bufferMod.global.Buffer
 import typings.passport.mod.Profile
 import typings.samlp.anon.Post
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,8 +25,8 @@ object mod {
   
   inline def getSamlResponse(
     options: IdPOptions,
-    user: js.Any,
-    callback: js.Function2[/* err */ js.Any, /* samlResponse */ String, Unit]
+    user: Any,
+    callback: js.Function2[/* err */ Any, /* samlResponse */ String, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getSamlResponse")(options.asInstanceOf[js.Any], user.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def logout(options: IdPOptions): Handler = ^.asInstanceOf[js.Dynamic].applyDynamic("logout")(options.asInstanceOf[js.Any]).asInstanceOf[Handler]
@@ -35,8 +34,14 @@ object mod {
   inline def metadata(options: IdPMetadataOptions): Handler = ^.asInstanceOf[js.Dynamic].applyDynamic("metadata")(options.asInstanceOf[js.Any]).asInstanceOf[Handler]
   
   inline def parseRequest(
-    req: Request_[ParamsDictionary, js.Any, js.Any, Query],
-    callback: js.Function2[/* err */ js.Any, /* data */ SamlRequest, Unit]
+    req: Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ],
+    callback: js.Function2[/* err */ Any, /* data */ SamlRequest, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parseRequest")(req.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def sendError(options: IdPOptions): Handler = ^.asInstanceOf[js.Dynamic].applyDynamic("sendError")(options.asInstanceOf[js.Any]).asInstanceOf[Handler]
@@ -88,7 +93,7 @@ object mod {
       
       inline def setPostEndpointPathUndefined: Self = StObject.set(x, "postEndpointPath", js.undefined)
       
-      inline def setProfileMapper(value: ProfileMapperConstructor): Self = StObject.set(x, "profileMapper", value.asInstanceOf[js.Any])
+      inline def setProfileMapper(value: /* pu */ Profile => ProfileMapper): Self = StObject.set(x, "profileMapper", js.Any.fromFunction1(value))
       
       inline def setProfileMapperUndefined: Self = StObject.set(x, "profileMapper", js.undefined)
       
@@ -120,13 +125,28 @@ object mod {
     
     def getPostURL(
       audience: String,
-      authnRequestDom: js.Any,
-      req: Request_[ParamsDictionary, js.Any, js.Any, Query],
-      callback: js.Function2[/* err */ js.Any, /* url */ String, Unit]
+      authnRequestDom: Any,
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ],
+      callback: js.Function2[/* err */ Any, /* url */ String, Unit]
     ): Unit
     
     var getUserFromRequest: js.UndefOr[
-        js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], js.Any]
+        js.Function1[
+          /* req */ Request_[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+            Any, 
+            Any, 
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+            Record[String, Any]
+          ], 
+          Any
+        ]
       ] = js.undefined
     
     var inResponseTo: js.UndefOr[String] = js.undefined
@@ -151,7 +171,13 @@ object mod {
     
     inline def apply(
       cert: String | Buffer,
-      getPostURL: (String, js.Any, Request_[ParamsDictionary, js.Any, js.Any, Query], js.Function2[/* err */ js.Any, /* url */ String, Unit]) => Unit,
+      getPostURL: (String, Any, Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ], js.Function2[/* err */ Any, /* url */ String, Unit]) => Unit,
       issuer: String,
       key: String | Buffer
     ): IdPOptions = {
@@ -192,10 +218,24 @@ object mod {
       inline def setEncryptionPublicKeyUndefined: Self = StObject.set(x, "encryptionPublicKey", js.undefined)
       
       inline def setGetPostURL(
-        value: (String, js.Any, Request_[ParamsDictionary, js.Any, js.Any, Query], js.Function2[/* err */ js.Any, /* url */ String, Unit]) => Unit
+        value: (String, Any, Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ], js.Function2[/* err */ Any, /* url */ String, Unit]) => Unit
       ): Self = StObject.set(x, "getPostURL", js.Any.fromFunction4(value))
       
-      inline def setGetUserFromRequest(value: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => js.Any): Self = StObject.set(x, "getUserFromRequest", js.Any.fromFunction1(value))
+      inline def setGetUserFromRequest(
+        value: /* req */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ] => Any
+      ): Self = StObject.set(x, "getUserFromRequest", js.Any.fromFunction1(value))
       
       inline def setGetUserFromRequestUndefined: Self = StObject.set(x, "getUserFromRequest", js.undefined)
       
@@ -215,7 +255,7 @@ object mod {
       
       inline def setLifetimeInSecondsUndefined: Self = StObject.set(x, "lifetimeInSeconds", js.undefined)
       
-      inline def setProfileMapper(value: ProfileMapperConstructor): Self = StObject.set(x, "profileMapper", value.asInstanceOf[js.Any])
+      inline def setProfileMapper(value: /* pu */ Profile => ProfileMapper): Self = StObject.set(x, "profileMapper", js.Any.fromFunction1(value))
       
       inline def setProfileMapperUndefined: Self = StObject.set(x, "profileMapper", js.undefined)
       
@@ -268,36 +308,32 @@ object mod {
   
   trait ProfileMapper extends StObject {
     
-    def getClaims(): js.Any
+    def getClaims(): Any
     
-    def getNameIdentifier(): js.Any
+    def getNameIdentifier(): Any
     
     var metadata: js.Array[MetadataItem]
   }
   object ProfileMapper {
     
-    inline def apply(getClaims: () => js.Any, getNameIdentifier: () => js.Any, metadata: js.Array[MetadataItem]): ProfileMapper = {
+    inline def apply(getClaims: () => Any, getNameIdentifier: () => Any, metadata: js.Array[MetadataItem]): ProfileMapper = {
       val __obj = js.Dynamic.literal(getClaims = js.Any.fromFunction0(getClaims), getNameIdentifier = js.Any.fromFunction0(getNameIdentifier), metadata = metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProfileMapper]
     }
     
     extension [Self <: ProfileMapper](x: Self) {
       
-      inline def setGetClaims(value: () => js.Any): Self = StObject.set(x, "getClaims", js.Any.fromFunction0(value))
+      inline def setGetClaims(value: () => Any): Self = StObject.set(x, "getClaims", js.Any.fromFunction0(value))
       
-      inline def setGetNameIdentifier(value: () => js.Any): Self = StObject.set(x, "getNameIdentifier", js.Any.fromFunction0(value))
+      inline def setGetNameIdentifier(value: () => Any): Self = StObject.set(x, "getNameIdentifier", js.Any.fromFunction0(value))
       
       inline def setMetadata(value: js.Array[MetadataItem]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      inline def setMetadataVarargs(value: MetadataItem*): Self = StObject.set(x, "metadata", js.Array(value :_*))
+      inline def setMetadataVarargs(value: MetadataItem*): Self = StObject.set(x, "metadata", js.Array(value*))
     }
   }
   
-  @js.native
-  trait ProfileMapperConstructor extends StObject {
-    
-    def apply(pu: Profile): ProfileMapper = js.native
-  }
+  type ProfileMapperConstructor = js.Function1[/* pu */ Profile, ProfileMapper]
   
   trait SamlRequest extends StObject {
     

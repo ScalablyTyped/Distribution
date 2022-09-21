@@ -7,12 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("react-native-material-ui", "ListItem")
 @js.native
-class ListItem protected ()
-  extends Component[ListItemProps, js.Any, js.Any] {
+open class ListItem protected () extends Component[ListItemProps, Any, Any] {
   def this(props: ListItemProps) = this()
   /**
     * @deprecated
     * @see https://reactjs.org/docs/legacy-context.html
     */
-  def this(props: ListItemProps, context: js.Any) = this()
+  def this(props: ListItemProps, context: Any) = this()
 }

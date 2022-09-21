@@ -1,7 +1,7 @@
 
 # Scala.js typings for umijs__route-utils
 
-Typings are for version 1.0.34
+Typings are for version 3.0.0
 
 ## Library description:
 Quickly process the routing of umi
@@ -10,10 +10,10 @@ Quickly process the routing of umi
 | ------------------ | :-------------: |
 | Full name          | @umijs/route-utils |
 | Keywords           | - |
-| # releases         | 36 |
-| # dependents       | 18 |
-| # downloads        | 370172 |
-| # stars            | 0 |
+| # releases         | 20 |
+| # dependents       | 0.0 |
+| # downloads        | 137132.66666666666 |
+| # stars            | 33.0 |
 
 ## Links
 - [Homepage](https://github.com/umijs/route-utils#readme)

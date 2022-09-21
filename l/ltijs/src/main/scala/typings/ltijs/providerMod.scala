@@ -4,10 +4,7 @@ import typings.express.mod.Express
 import typings.express.mod.NextFunction
 import typings.express.mod.Request_
 import typings.express.mod.Response_
-import typings.expressServeStaticCore.mod.ParamsDictionary
-import typings.expressServeStaticCore.mod.Query
-import typings.expressServeStaticCore.mod.Request
-import typings.expressServeStaticCore.mod.Response
+import typings.expressServeStaticCore.mod.Application
 import typings.ltijs.anon.Cert
 import typings.ltijs.anon.Method
 import typings.ltijs.anon.SameSite
@@ -20,9 +17,7 @@ import typings.ltijs.ltijsBooleans.`true`
 import typings.ltijs.namesAndRolesMod.NamesAndRolesService
 import typings.ltijs.platformMod.Platform
 import typings.ltijs.platformMod.PlatformConfig
-import typings.node.httpMod.IncomingMessage
-import typings.node.httpMod.ServerResponse
-import typings.qs.mod.ParsedQs
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,7 +26,7 @@ object providerMod {
   
   @JSImport("ltijs/lib/Provider/Provider", "Provider")
   @js.native
-  class Provider protected () extends StObject {
+  open class Provider protected () extends StObject {
     def this(encryptionKey: String, database: DatabaseOptions) = this()
     def this(encryptionKey: String, database: DatabaseOptions, options: ProviderOptions) = this()
     
@@ -43,14 +38,7 @@ object providerMod {
     
     var NamesAndRoles: NamesAndRolesService = js.native
     
-    /**
-      * Express instance itself is a request handler, which could be invoked without
-      * third argument.
-      */
-    def app(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: Response[js.Any, Double]): js.Any = js.native
-    def app(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: ServerResponse): js.Any = js.native
-    def app(req: IncomingMessage, res: Response[js.Any, Double]): js.Any = js.native
-    def app(req: IncomingMessage, res: ServerResponse): js.Any = js.native
+    def app(): Application = js.native
     
     def appUrl(): String = js.native
     
@@ -80,8 +68,8 @@ object providerMod {
     def onDeepLinking(_connectCallback: OnConnectCallback): `true` = js.native
     def onDeepLinking(_connectCallback: OnConnectCallback, options: OnConnectOptions): `true` = js.native
     
-    def redirect(response: Response_[js.Any], path: String): Unit = js.native
-    def redirect(response: Response_[js.Any], path: String, options: RedirectOptions): Unit = js.native
+    def redirect(response: Response_[Any, Record[String, Any]], path: String): Unit = js.native
+    def redirect(response: Response_[Any, Record[String, Any]], path: String, options: RedirectOptions): Unit = js.native
     
     def registerPlatform(config: PlatformConfig): js.Promise[Platform | `false`] = js.native
     
@@ -123,27 +111,45 @@ object providerMod {
   
   type OnConnectCallback = js.Function4[
     /* connection */ IdToken, 
-    /* request */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-    /* response */ Response_[js.Any], 
+    /* request */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
+    /* response */ Response_[Any, Record[String, Any]], 
     /* next */ NextFunction, 
-    Response_[js.Any] | Unit
+    (Response_[Any, Record[String, Any]]) | Unit
   ]
   
   trait OnConnectOptions extends StObject {
     
     var invalidToken: js.UndefOr[
         js.Function2[
-          /* request */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-          /* response */ Response_[js.Any], 
-          Response_[js.Any]
+          /* request */ Request_[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+            Any, 
+            Any, 
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+            Record[String, Any]
+          ], 
+          /* response */ Response_[Any, Record[String, Any]], 
+          Response_[Any, Record[String, Any]]
         ]
       ] = js.undefined
     
     var sessionTimeout: js.UndefOr[
         js.Function2[
-          /* request */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
-          /* response */ Response_[js.Any], 
-          Response_[js.Any]
+          /* request */ Request_[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+            Any, 
+            Any, 
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+            Record[String, Any]
+          ], 
+          /* response */ Response_[Any, Record[String, Any]], 
+          Response_[Any, Record[String, Any]]
         ]
       ] = js.undefined
   }
@@ -157,13 +163,25 @@ object providerMod {
     extension [Self <: OnConnectOptions](x: Self) {
       
       inline def setInvalidToken(
-        value: (/* request */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* response */ Response_[js.Any]) => Response_[js.Any]
+        value: (/* request */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ], /* response */ Response_[Any, Record[String, Any]]) => Response_[Any, Record[String, Any]]
       ): Self = StObject.set(x, "invalidToken", js.Any.fromFunction2(value))
       
       inline def setInvalidTokenUndefined: Self = StObject.set(x, "invalidToken", js.undefined)
       
       inline def setSessionTimeout(
-        value: (/* request */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* response */ Response_[js.Any]) => Response_[js.Any]
+        value: (/* request */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ], /* response */ Response_[Any, Record[String, Any]]) => Response_[Any, Record[String, Any]]
       ): Self = StObject.set(x, "sessionTimeout", js.Any.fromFunction2(value))
       
       inline def setSessionTimeoutUndefined: Self = StObject.set(x, "sessionTimeout", js.undefined)

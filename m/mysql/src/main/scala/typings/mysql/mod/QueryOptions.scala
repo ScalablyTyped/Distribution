@@ -11,7 +11,7 @@ trait QueryOptions extends StObject {
     * Either a boolean or string. If true, tables will be nested objects. If string (e.g. '_'), tables will be
     * nested as tableName_fieldName
     */
-  var nestTables: js.UndefOr[js.Any] = js.undefined
+  var nestTables: js.UndefOr[Any] = js.undefined
   
   /**
     * The SQL for the query
@@ -51,7 +51,7 @@ trait QueryOptions extends StObject {
   /**
     * Values for template query
     */
-  var values: js.UndefOr[js.Any] = js.undefined
+  var values: js.UndefOr[Any] = js.undefined
 }
 object QueryOptions {
   
@@ -62,7 +62,7 @@ object QueryOptions {
   
   extension [Self <: QueryOptions](x: Self) {
     
-    inline def setNestTables(value: js.Any): Self = StObject.set(x, "nestTables", value.asInstanceOf[js.Any])
+    inline def setNestTables(value: Any): Self = StObject.set(x, "nestTables", value.asInstanceOf[js.Any])
     
     inline def setNestTablesUndefined: Self = StObject.set(x, "nestTables", js.undefined)
     
@@ -74,11 +74,11 @@ object QueryOptions {
     
     inline def setTypeCast(value: TypeCast): Self = StObject.set(x, "typeCast", value.asInstanceOf[js.Any])
     
-    inline def setTypeCastFunction2(value: (/* field */ UntypedFieldInfotypestrin, /* next */ js.Function0[Unit]) => js.Any): Self = StObject.set(x, "typeCast", js.Any.fromFunction2(value))
+    inline def setTypeCastFunction2(value: (/* field */ UntypedFieldInfotypestrin, /* next */ js.Function0[Unit]) => Any): Self = StObject.set(x, "typeCast", js.Any.fromFunction2(value))
     
     inline def setTypeCastUndefined: Self = StObject.set(x, "typeCast", js.undefined)
     
-    inline def setValues(value: js.Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
   }

@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ZoomViewModelConstructor
   extends StObject
-     with Instantiable0[ZoomViewModel]
+     with /**
+  * Provides the logic for the [Zoom](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Zoom.html) widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Zoom-ZoomViewModel.html)
+  */
+Instantiable0[ZoomViewModel]
      with Instantiable1[/* properties */ ZoomViewModelProperties, ZoomViewModel]

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait Content[S /* <: Schema[js.Any, js.Any] */] extends StObject {
+  trait Content[S /* <: Schema[Any, Any] */] extends StObject {
     
     var content: js.Array[js.Array[MenuElement[S]]]
     
@@ -19,16 +19,16 @@ object anon {
   }
   object Content {
     
-    inline def apply[S /* <: Schema[js.Any, js.Any] */](content: js.Array[js.Array[MenuElement[S]]]): Content[S] = {
+    inline def apply[S /* <: Schema[Any, Any] */](content: js.Array[js.Array[MenuElement[S]]]): Content[S] = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
       __obj.asInstanceOf[Content[S]]
     }
     
-    extension [Self <: Content[?], S /* <: Schema[js.Any, js.Any] */](x: Self & Content[S]) {
+    extension [Self <: Content[?], S /* <: Schema[Any, Any] */](x: Self & Content[S]) {
       
       inline def setContent(value: js.Array[js.Array[MenuElement[S]]]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      inline def setContentVarargs(value: js.Array[MenuElement[S]]*): Self = StObject.set(x, "content", js.Array(value :_*))
+      inline def setContentVarargs(value: js.Array[MenuElement[S]]*): Self = StObject.set(x, "content", js.Array(value*))
       
       inline def setFloating(value: Boolean): Self = StObject.set(x, "floating", value.asInstanceOf[js.Any])
       
@@ -38,70 +38,66 @@ object anon {
     }
   }
   
-  trait Dom[S /* <: Schema[js.Any, js.Any] */] extends StObject {
+  trait Dom extends StObject {
     
     var dom: Node
     
-    def update(p: EditorState[S]): Boolean
+    def update(p: EditorState): Boolean
   }
   object Dom {
     
-    inline def apply[S /* <: Schema[js.Any, js.Any] */](dom: Node, update: EditorState[S] => Boolean): Dom[S] = {
+    inline def apply(dom: Node, update: EditorState => Boolean): Dom = {
       val __obj = js.Dynamic.literal(dom = dom.asInstanceOf[js.Any], update = js.Any.fromFunction1(update))
-      __obj.asInstanceOf[Dom[S]]
+      __obj.asInstanceOf[Dom]
     }
     
-    extension [Self <: Dom[?], S /* <: Schema[js.Any, js.Any] */](x: Self & Dom[S]) {
+    extension [Self <: Dom](x: Self) {
       
       inline def setDom(value: Node): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
       
-      inline def setUpdate(value: EditorState[S] => Boolean): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+      inline def setUpdate(value: EditorState => Boolean): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     }
   }
   
-  trait DomUpdate[S /* <: Schema[js.Any, js.Any] */] extends StObject {
+  trait DomUpdate extends StObject {
     
-    var dom: js.UndefOr[DocumentFragment | Null] = js.undefined
+    var dom: DocumentFragment
     
-    def update(p: EditorState[S]): Boolean
+    def update(p: EditorState): Boolean
   }
   object DomUpdate {
     
-    inline def apply[S /* <: Schema[js.Any, js.Any] */](update: EditorState[S] => Boolean): DomUpdate[S] = {
-      val __obj = js.Dynamic.literal(update = js.Any.fromFunction1(update))
-      __obj.asInstanceOf[DomUpdate[S]]
+    inline def apply(dom: DocumentFragment, update: EditorState => Boolean): DomUpdate = {
+      val __obj = js.Dynamic.literal(dom = dom.asInstanceOf[js.Any], update = js.Any.fromFunction1(update))
+      __obj.asInstanceOf[DomUpdate]
     }
     
-    extension [Self <: DomUpdate[?], S /* <: Schema[js.Any, js.Any] */](x: Self & DomUpdate[S]) {
+    extension [Self <: DomUpdate](x: Self) {
       
       inline def setDom(value: DocumentFragment): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
       
-      inline def setDomNull: Self = StObject.set(x, "dom", null)
-      
-      inline def setDomUndefined: Self = StObject.set(x, "dom", js.undefined)
-      
-      inline def setUpdate(value: EditorState[S] => Boolean): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+      inline def setUpdate(value: EditorState => Boolean): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     }
   }
   
-  trait Update[S /* <: Schema[js.Any, js.Any] */] extends StObject {
+  trait Update extends StObject {
     
     var dom: Node
     
-    def update(p: EditorState[S]): Unit
+    def update(p: EditorState): Unit
   }
   object Update {
     
-    inline def apply[S /* <: Schema[js.Any, js.Any] */](dom: Node, update: EditorState[S] => Unit): Update[S] = {
+    inline def apply(dom: Node, update: EditorState => Unit): Update = {
       val __obj = js.Dynamic.literal(dom = dom.asInstanceOf[js.Any], update = js.Any.fromFunction1(update))
-      __obj.asInstanceOf[Update[S]]
+      __obj.asInstanceOf[Update]
     }
     
-    extension [Self <: Update[?], S /* <: Schema[js.Any, js.Any] */](x: Self & Update[S]) {
+    extension [Self <: Update](x: Self) {
       
       inline def setDom(value: Node): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
       
-      inline def setUpdate(value: EditorState[S] => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+      inline def setUpdate(value: EditorState => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     }
   }
 }

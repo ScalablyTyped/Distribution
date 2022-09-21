@@ -31,7 +31,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("BootstrapClientChart")
 @js.native
-class BootstrapClientChart ()
+open class BootstrapClientChart ()
   extends StObject
      with typings.devexpressWeb.BootstrapClientChart {
   
@@ -114,7 +114,7 @@ class BootstrapClientChart ()
     * Gets the client data source instance.
     */
   /* CompleteClass */
-  override def GetDataSource(): js.Any = js.native
+  override def GetDataSource(): Any = js.native
   
   /* CompleteClass */
   override def GetEnabled(): Boolean = js.native
@@ -129,19 +129,19 @@ class BootstrapClientChart ()
     * Gets an instance of the widget.
     */
   /* CompleteClass */
-  override def GetInstance(): js.Any = js.native
+  override def GetInstance(): Any = js.native
   
   /**
     * Returns an HTML element that is the root of the control's hierarchy.
     */
   /* CompleteClass */
-  override def GetMainElement(): js.Any = js.native
+  override def GetMainElement(): Any = js.native
   
   /**
     * Returns a client instance of the control that is the parent for a specified control.
     */
   /* CompleteClass */
-  override def GetParentControl(): js.Any = js.native
+  override def GetParentControl(): Any = js.native
   
   /**
     * Returns a value specifying whether a control is displayed.
@@ -270,7 +270,7 @@ class BootstrapClientChart ()
     * @param dataSource A DevExtreme DataSource object.
     */
   /* CompleteClass */
-  override def SetDataSource(dataSource: js.Any): Unit = js.native
+  override def SetDataSource(dataSource: Any): Unit = js.native
   
   /* CompleteClass */
   override def SetEnabled(enabled: Boolean): Unit = js.native
@@ -287,7 +287,7 @@ class BootstrapClientChart ()
     * @param options An object containing key-value pairs specifying new option values.
     */
   /* CompleteClass */
-  override def SetOptions(options: js.Any): Unit = js.native
+  override def SetOptions(options: Any): Unit = js.native
   
   /**
     * Specifies whether a control is displayed.

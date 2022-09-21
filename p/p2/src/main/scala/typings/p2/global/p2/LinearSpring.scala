@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("p2.LinearSpring")
 @js.native
-class LinearSpring protected ()
+open class LinearSpring protected ()
   extends typings.p2.mod.LinearSpring {
   def this(bodyA: typings.p2.mod.Body, bodyB: typings.p2.mod.Body) = this()
   def this(bodyA: typings.p2.mod.Body, bodyB: typings.p2.mod.Body, options: LinearSpringOptions) = this()

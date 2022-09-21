@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("vscode", "CallHierarchyIncomingCall")
 @js.native
-class CallHierarchyIncomingCall protected () extends StObject {
+open class CallHierarchyIncomingCall protected () extends StObject {
   /**
     * Create a new call object.
     *
@@ -22,7 +22,7 @@ class CallHierarchyIncomingCall protected () extends StObject {
   
   /**
     * The range at which at which the calls appears. This is relative to the caller
-    * denoted by [`this.from`](#CallHierarchyIncomingCall.from).
+    * denoted by {@linkcode CallHierarchyIncomingCall.from this.from}.
     */
   var fromRanges: js.Array[Range] = js.native
 }

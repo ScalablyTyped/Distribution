@@ -47,7 +47,7 @@ trait ServiceEndpoint extends StObject {
   /**
     * Error message during creation/deletion of endpoint
     */
-  var operationStatus: js.Any
+  var operationStatus: Any
   
   var readersGroup: IdentityRef
   
@@ -73,7 +73,7 @@ object ServiceEndpoint {
     id: String,
     isReady: Boolean,
     name: String,
-    operationStatus: js.Any,
+    operationStatus: Any,
     readersGroup: IdentityRef,
     `type`: String,
     url: String
@@ -103,7 +103,7 @@ object ServiceEndpoint {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setOperationStatus(value: js.Any): Self = StObject.set(x, "operationStatus", value.asInstanceOf[js.Any])
+    inline def setOperationStatus(value: Any): Self = StObject.set(x, "operationStatus", value.asInstanceOf[js.Any])
     
     inline def setReadersGroup(value: IdentityRef): Self = StObject.set(x, "readersGroup", value.asInstanceOf[js.Any])
     

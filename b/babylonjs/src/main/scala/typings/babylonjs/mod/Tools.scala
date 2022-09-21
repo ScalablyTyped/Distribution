@@ -1,7 +1,6 @@
 package typings.babylonjs.mod
 
 import typings.babylonjs.HTMLCanvasElement
-import typings.babylonjs.ImageBitmap
 import typings.babylonjs.Window
 import typings.babylonjs.anon.CrossOrigin
 import typings.babylonjs.anon.Handler
@@ -10,21 +9,23 @@ import typings.babylonjs.iofflineproviderMod.IOfflineProvider
 import typings.babylonjs.screenshotSizeMod.IScreenshotSize
 import typings.babylonjs.toolsMod.IColor4Like
 import typings.babylonjs.typesMod.Nullable
-import typings.std.ArrayBuffer
 import typings.std.Blob
 import typings.std.EventTarget
 import typings.std.File
+import typings.std.HTMLElement
 import typings.std.HTMLImageElement
 import typings.std.IArguments
+import typings.std.ImageBitmap
+import typings.std.ImageBitmapOptions
 import typings.std.ProgressEvent
-import typings.std.Uint8Array
+import typings.std.ReferrerPolicy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("babylonjs", "Tools")
 @js.native
-class Tools ()
+open class Tools ()
   extends typings.babylonjs.legacyMod.Tools
 /* static members */
 object Tools {
@@ -484,10 +485,11 @@ object Tools {
   
   /**
     * Decode the given base64 uri.
+    * @deprecated Please use FileTools.DecodeBase64UrlToBinary instead.
     * @param uri The uri to decode
-    * @return The decoded base64 data.
+    * @returns The decoded base64 data.
     */
-  inline def DecodeBase64(uri: String): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("DecodeBase64")(uri.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
+  inline def DecodeBase64(uri: String): js.typedarray.ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("DecodeBase64")(uri.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.ArrayBuffer]
   
   /**
     * Tries to copy an object by duplicating every property
@@ -496,15 +498,10 @@ object Tools {
     * @param doNotCopyList defines a list of properties to avoid
     * @param mustCopyList defines a list of properties to copy (even if they start with _)
     */
-  inline def DeepCopy(source: js.Any, destination: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("DeepCopy")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def DeepCopy(source: js.Any, destination: js.Any, doNotCopyList: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("DeepCopy")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], doNotCopyList.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def DeepCopy(
-    source: js.Any,
-    destination: js.Any,
-    doNotCopyList: js.Array[String],
-    mustCopyList: js.Array[String]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("DeepCopy")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], doNotCopyList.asInstanceOf[js.Any], mustCopyList.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def DeepCopy(source: js.Any, destination: js.Any, doNotCopyList: Unit, mustCopyList: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("DeepCopy")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], doNotCopyList.asInstanceOf[js.Any], mustCopyList.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def DeepCopy(source: Any, destination: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("DeepCopy")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def DeepCopy(source: Any, destination: Any, doNotCopyList: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("DeepCopy")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], doNotCopyList.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def DeepCopy(source: Any, destination: Any, doNotCopyList: js.Array[String], mustCopyList: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("DeepCopy")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], doNotCopyList.asInstanceOf[js.Any], mustCopyList.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def DeepCopy(source: Any, destination: Any, doNotCopyList: Unit, mustCopyList: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("DeepCopy")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], doNotCopyList.asInstanceOf[js.Any], mustCopyList.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Returns a promise that resolves after the given amount of time.
@@ -521,6 +518,332 @@ object Tools {
   inline def Download(blob: Blob, fileName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Download")(blob.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
+    * Download a Blob object
+    * @param blob the Blob object
+    * @param fileName the file name to download
+    * @returns
+    */
+  inline def DownloadBlob(blob: Blob): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("DownloadBlob")(blob.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def DownloadBlob(blob: Blob, fileName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("DownloadBlob")(blob.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  /**
+    * Dumps an array buffer
+    * @param width defines the rendering width
+    * @param height defines the rendering height
+    * @param data the data array
+    * @param successCallback defines the callback triggered once the data are available
+    * @param mimeType defines the mime type of the result
+    * @param fileName defines the filename to download. If present, the result will automatically be downloaded
+    * @param invertY true to invert the picture in the Y dimension
+    * @param toArrayBuffer true to convert the data to an ArrayBuffer (encoded as `mimeType`) instead of a base64 string
+    * @param quality defines the quality of the result
+    */
+  inline def DumpData(
+    width: Double,
+    height: Double,
+    data: js.typedarray.ArrayBufferView,
+    successCallback: js.UndefOr[js.Function1[/* data */ String | js.typedarray.ArrayBuffer, Unit]],
+    mimeType: js.UndefOr[String],
+    fileName: js.UndefOr[String],
+    invertY: js.UndefOr[Boolean],
+    toArrayBuffer: js.UndefOr[Boolean],
+    quality: js.UndefOr[Double]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpData")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], data.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], toArrayBuffer.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  /**
+    * Dumps an array buffer
+    * @param width defines the rendering width
+    * @param height defines the rendering height
+    * @param data the data array
+    * @param mimeType defines the mime type of the result
+    * @param fileName defines the filename to download. If present, the result will automatically be downloaded
+    * @param invertY true to invert the picture in the Y dimension
+    * @param toArrayBuffer true to convert the data to an ArrayBuffer (encoded as `mimeType`) instead of a base64 string
+    * @param quality defines the quality of the result
+    * @returns a promise that resolve to the final data
+    */
+  inline def DumpDataAsync(width: Double, height: Double, data: js.typedarray.ArrayBufferView): js.Promise[String | js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpDataAsync")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | js.typedarray.ArrayBuffer]]
+  inline def DumpDataAsync(width: Double, height: Double, data: js.typedarray.ArrayBufferView, mimeType: String): js.Promise[String | js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpDataAsync")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], data.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | js.typedarray.ArrayBuffer]]
+  inline def DumpDataAsync(
+    width: Double,
+    height: Double,
+    data: js.typedarray.ArrayBufferView,
+    mimeType: String,
+    fileName: String
+  ): js.Promise[String | js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpDataAsync")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], data.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | js.typedarray.ArrayBuffer]]
+  inline def DumpDataAsync(
+    width: Double,
+    height: Double,
+    data: js.typedarray.ArrayBufferView,
+    mimeType: String,
+    fileName: String,
+    invertY: Boolean
+  ): js.Promise[String | js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpDataAsync")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], data.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | js.typedarray.ArrayBuffer]]
+  inline def DumpDataAsync(
+    width: Double,
+    height: Double,
+    data: js.typedarray.ArrayBufferView,
+    mimeType: String,
+    fileName: String,
+    invertY: Boolean,
+    toArrayBuffer: Boolean
+  ): js.Promise[String | js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpDataAsync")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], data.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], toArrayBuffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | js.typedarray.ArrayBuffer]]
+  inline def DumpDataAsync(
+    width: Double,
+    height: Double,
+    data: js.typedarray.ArrayBufferView,
+    mimeType: String,
+    fileName: String,
+    invertY: Boolean,
+    toArrayBuffer: Boolean,
+    quality: Double
+  ): js.Promise[String | js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpDataAsync")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], data.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], toArrayBuffer.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | js.typedarray.ArrayBuffer]]
+  inline def DumpDataAsync(
+    width: Double,
+    height: Double,
+    data: js.typedarray.ArrayBufferView,
+    mimeType: String,
+    fileName: String,
+    invertY: Boolean,
+    toArrayBuffer: Unit,
+    quality: Double
+  ): js.Promise[String | js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpDataAsync")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], data.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], toArrayBuffer.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | js.typedarray.ArrayBuffer]]
+  inline def DumpDataAsync(
+    width: Double,
+    height: Double,
+    data: js.typedarray.ArrayBufferView,
+    mimeType: String,
+    fileName: String,
+    invertY: Unit,
+    toArrayBuffer: Boolean
+  ): js.Promise[String | js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpDataAsync")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], data.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], toArrayBuffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | js.typedarray.ArrayBuffer]]
+  inline def DumpDataAsync(
+    width: Double,
+    height: Double,
+    data: js.typedarray.ArrayBufferView,
+    mimeType: String,
+    fileName: String,
+    invertY: Unit,
+    toArrayBuffer: Boolean,
+    quality: Double
+  ): js.Promise[String | js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpDataAsync")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], data.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], toArrayBuffer.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | js.typedarray.ArrayBuffer]]
+  inline def DumpDataAsync(
+    width: Double,
+    height: Double,
+    data: js.typedarray.ArrayBufferView,
+    mimeType: String,
+    fileName: String,
+    invertY: Unit,
+    toArrayBuffer: Unit,
+    quality: Double
+  ): js.Promise[String | js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpDataAsync")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], data.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], toArrayBuffer.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | js.typedarray.ArrayBuffer]]
+  inline def DumpDataAsync(
+    width: Double,
+    height: Double,
+    data: js.typedarray.ArrayBufferView,
+    mimeType: String,
+    fileName: Unit,
+    invertY: Boolean
+  ): js.Promise[String | js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpDataAsync")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], data.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | js.typedarray.ArrayBuffer]]
+  inline def DumpDataAsync(
+    width: Double,
+    height: Double,
+    data: js.typedarray.ArrayBufferView,
+    mimeType: String,
+    fileName: Unit,
+    invertY: Boolean,
+    toArrayBuffer: Boolean
+  ): js.Promise[String | js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpDataAsync")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], data.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], toArrayBuffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | js.typedarray.ArrayBuffer]]
+  inline def DumpDataAsync(
+    width: Double,
+    height: Double,
+    data: js.typedarray.ArrayBufferView,
+    mimeType: String,
+    fileName: Unit,
+    invertY: Boolean,
+    toArrayBuffer: Boolean,
+    quality: Double
+  ): js.Promise[String | js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpDataAsync")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], data.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], toArrayBuffer.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | js.typedarray.ArrayBuffer]]
+  inline def DumpDataAsync(
+    width: Double,
+    height: Double,
+    data: js.typedarray.ArrayBufferView,
+    mimeType: String,
+    fileName: Unit,
+    invertY: Boolean,
+    toArrayBuffer: Unit,
+    quality: Double
+  ): js.Promise[String | js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpDataAsync")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], data.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], toArrayBuffer.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | js.typedarray.ArrayBuffer]]
+  inline def DumpDataAsync(
+    width: Double,
+    height: Double,
+    data: js.typedarray.ArrayBufferView,
+    mimeType: String,
+    fileName: Unit,
+    invertY: Unit,
+    toArrayBuffer: Boolean
+  ): js.Promise[String | js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpDataAsync")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], data.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], toArrayBuffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | js.typedarray.ArrayBuffer]]
+  inline def DumpDataAsync(
+    width: Double,
+    height: Double,
+    data: js.typedarray.ArrayBufferView,
+    mimeType: String,
+    fileName: Unit,
+    invertY: Unit,
+    toArrayBuffer: Boolean,
+    quality: Double
+  ): js.Promise[String | js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpDataAsync")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], data.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], toArrayBuffer.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | js.typedarray.ArrayBuffer]]
+  inline def DumpDataAsync(
+    width: Double,
+    height: Double,
+    data: js.typedarray.ArrayBufferView,
+    mimeType: String,
+    fileName: Unit,
+    invertY: Unit,
+    toArrayBuffer: Unit,
+    quality: Double
+  ): js.Promise[String | js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpDataAsync")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], data.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], toArrayBuffer.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | js.typedarray.ArrayBuffer]]
+  inline def DumpDataAsync(
+    width: Double,
+    height: Double,
+    data: js.typedarray.ArrayBufferView,
+    mimeType: Unit,
+    fileName: String
+  ): js.Promise[String | js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpDataAsync")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], data.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | js.typedarray.ArrayBuffer]]
+  inline def DumpDataAsync(
+    width: Double,
+    height: Double,
+    data: js.typedarray.ArrayBufferView,
+    mimeType: Unit,
+    fileName: String,
+    invertY: Boolean
+  ): js.Promise[String | js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpDataAsync")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], data.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | js.typedarray.ArrayBuffer]]
+  inline def DumpDataAsync(
+    width: Double,
+    height: Double,
+    data: js.typedarray.ArrayBufferView,
+    mimeType: Unit,
+    fileName: String,
+    invertY: Boolean,
+    toArrayBuffer: Boolean
+  ): js.Promise[String | js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpDataAsync")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], data.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], toArrayBuffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | js.typedarray.ArrayBuffer]]
+  inline def DumpDataAsync(
+    width: Double,
+    height: Double,
+    data: js.typedarray.ArrayBufferView,
+    mimeType: Unit,
+    fileName: String,
+    invertY: Boolean,
+    toArrayBuffer: Boolean,
+    quality: Double
+  ): js.Promise[String | js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpDataAsync")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], data.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], toArrayBuffer.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | js.typedarray.ArrayBuffer]]
+  inline def DumpDataAsync(
+    width: Double,
+    height: Double,
+    data: js.typedarray.ArrayBufferView,
+    mimeType: Unit,
+    fileName: String,
+    invertY: Boolean,
+    toArrayBuffer: Unit,
+    quality: Double
+  ): js.Promise[String | js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpDataAsync")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], data.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], toArrayBuffer.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | js.typedarray.ArrayBuffer]]
+  inline def DumpDataAsync(
+    width: Double,
+    height: Double,
+    data: js.typedarray.ArrayBufferView,
+    mimeType: Unit,
+    fileName: String,
+    invertY: Unit,
+    toArrayBuffer: Boolean
+  ): js.Promise[String | js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpDataAsync")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], data.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], toArrayBuffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | js.typedarray.ArrayBuffer]]
+  inline def DumpDataAsync(
+    width: Double,
+    height: Double,
+    data: js.typedarray.ArrayBufferView,
+    mimeType: Unit,
+    fileName: String,
+    invertY: Unit,
+    toArrayBuffer: Boolean,
+    quality: Double
+  ): js.Promise[String | js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpDataAsync")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], data.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], toArrayBuffer.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | js.typedarray.ArrayBuffer]]
+  inline def DumpDataAsync(
+    width: Double,
+    height: Double,
+    data: js.typedarray.ArrayBufferView,
+    mimeType: Unit,
+    fileName: String,
+    invertY: Unit,
+    toArrayBuffer: Unit,
+    quality: Double
+  ): js.Promise[String | js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpDataAsync")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], data.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], toArrayBuffer.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | js.typedarray.ArrayBuffer]]
+  inline def DumpDataAsync(
+    width: Double,
+    height: Double,
+    data: js.typedarray.ArrayBufferView,
+    mimeType: Unit,
+    fileName: Unit,
+    invertY: Boolean
+  ): js.Promise[String | js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpDataAsync")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], data.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | js.typedarray.ArrayBuffer]]
+  inline def DumpDataAsync(
+    width: Double,
+    height: Double,
+    data: js.typedarray.ArrayBufferView,
+    mimeType: Unit,
+    fileName: Unit,
+    invertY: Boolean,
+    toArrayBuffer: Boolean
+  ): js.Promise[String | js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpDataAsync")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], data.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], toArrayBuffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | js.typedarray.ArrayBuffer]]
+  inline def DumpDataAsync(
+    width: Double,
+    height: Double,
+    data: js.typedarray.ArrayBufferView,
+    mimeType: Unit,
+    fileName: Unit,
+    invertY: Boolean,
+    toArrayBuffer: Boolean,
+    quality: Double
+  ): js.Promise[String | js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpDataAsync")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], data.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], toArrayBuffer.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | js.typedarray.ArrayBuffer]]
+  inline def DumpDataAsync(
+    width: Double,
+    height: Double,
+    data: js.typedarray.ArrayBufferView,
+    mimeType: Unit,
+    fileName: Unit,
+    invertY: Boolean,
+    toArrayBuffer: Unit,
+    quality: Double
+  ): js.Promise[String | js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpDataAsync")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], data.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], toArrayBuffer.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | js.typedarray.ArrayBuffer]]
+  inline def DumpDataAsync(
+    width: Double,
+    height: Double,
+    data: js.typedarray.ArrayBufferView,
+    mimeType: Unit,
+    fileName: Unit,
+    invertY: Unit,
+    toArrayBuffer: Boolean
+  ): js.Promise[String | js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpDataAsync")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], data.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], toArrayBuffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | js.typedarray.ArrayBuffer]]
+  inline def DumpDataAsync(
+    width: Double,
+    height: Double,
+    data: js.typedarray.ArrayBufferView,
+    mimeType: Unit,
+    fileName: Unit,
+    invertY: Unit,
+    toArrayBuffer: Boolean,
+    quality: Double
+  ): js.Promise[String | js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpDataAsync")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], data.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], toArrayBuffer.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | js.typedarray.ArrayBuffer]]
+  inline def DumpDataAsync(
+    width: Double,
+    height: Double,
+    data: js.typedarray.ArrayBufferView,
+    mimeType: Unit,
+    fileName: Unit,
+    invertY: Unit,
+    toArrayBuffer: Unit,
+    quality: Double
+  ): js.Promise[String | js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpDataAsync")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], data.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], invertY.asInstanceOf[js.Any], toArrayBuffer.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | js.typedarray.ArrayBuffer]]
+  
+  /**
     * Dumps the current bound framebuffer
     * @param width defines the rendering width
     * @param height defines the rendering height
@@ -528,21 +851,22 @@ object Tools {
     * @param successCallback defines the callback triggered once the data are available
     * @param mimeType defines the mime type of the result
     * @param fileName defines the filename to download. If present, the result will automatically be downloaded
+    * @returns a void promise
     */
-  inline def DumpFramebuffer(width: Double, height: Double, engine: typings.babylonjs.engineMod.Engine): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpFramebuffer")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], engine.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def DumpFramebuffer(width: Double, height: Double, engine: typings.babylonjs.engineMod.Engine): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpFramebuffer")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], engine.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def DumpFramebuffer(
     width: Double,
     height: Double,
     engine: typings.babylonjs.engineMod.Engine,
     successCallback: js.Function1[/* data */ String, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpFramebuffer")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpFramebuffer")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def DumpFramebuffer(
     width: Double,
     height: Double,
     engine: typings.babylonjs.engineMod.Engine,
     successCallback: js.Function1[/* data */ String, Unit],
     mimeType: String
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpFramebuffer")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpFramebuffer")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def DumpFramebuffer(
     width: Double,
     height: Double,
@@ -550,7 +874,7 @@ object Tools {
     successCallback: js.Function1[/* data */ String, Unit],
     mimeType: String,
     fileName: String
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpFramebuffer")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpFramebuffer")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def DumpFramebuffer(
     width: Double,
     height: Double,
@@ -558,14 +882,14 @@ object Tools {
     successCallback: js.Function1[/* data */ String, Unit],
     mimeType: Unit,
     fileName: String
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpFramebuffer")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpFramebuffer")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def DumpFramebuffer(
     width: Double,
     height: Double,
     engine: typings.babylonjs.engineMod.Engine,
     successCallback: Unit,
     mimeType: String
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpFramebuffer")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpFramebuffer")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def DumpFramebuffer(
     width: Double,
     height: Double,
@@ -573,7 +897,7 @@ object Tools {
     successCallback: Unit,
     mimeType: String,
     fileName: String
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpFramebuffer")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpFramebuffer")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def DumpFramebuffer(
     width: Double,
     height: Double,
@@ -581,25 +905,137 @@ object Tools {
     successCallback: Unit,
     mimeType: Unit,
     fileName: String
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpFramebuffer")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpFramebuffer")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /**
     * Encodes the canvas data to base 64 or automatically download the result if filename is defined
     * @param successCallback defines the callback triggered once the data are available
     * @param mimeType defines the mime type of the result
     * @param fileName defines he filename to download. If present, the result will automatically be downloaded
+    * @param canvas canvas to get the data from. If not provided, use the default screenshot canvas
+    * @param quality defines the quality of the result
     */
   inline def EncodeScreenshotCanvasData(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")().asInstanceOf[Unit]
   inline def EncodeScreenshotCanvasData(successCallback: js.Function1[/* data */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def EncodeScreenshotCanvasData(successCallback: js.Function1[/* data */ String, Unit], mimeType: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def EncodeScreenshotCanvasData(successCallback: js.Function1[/* data */ String, Unit], mimeType: String, fileName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(
+    successCallback: js.Function1[/* data */ String, Unit],
+    mimeType: String,
+    fileName: String,
+    canvas: Unit,
+    quality: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(
+    successCallback: js.Function1[/* data */ String, Unit],
+    mimeType: String,
+    fileName: String,
+    canvas: HTMLCanvasElement
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(
+    successCallback: js.Function1[/* data */ String, Unit],
+    mimeType: String,
+    fileName: String,
+    canvas: HTMLCanvasElement,
+    quality: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(
+    successCallback: js.Function1[/* data */ String, Unit],
+    mimeType: String,
+    fileName: Unit,
+    canvas: Unit,
+    quality: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(
+    successCallback: js.Function1[/* data */ String, Unit],
+    mimeType: String,
+    fileName: Unit,
+    canvas: HTMLCanvasElement
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(
+    successCallback: js.Function1[/* data */ String, Unit],
+    mimeType: String,
+    fileName: Unit,
+    canvas: HTMLCanvasElement,
+    quality: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def EncodeScreenshotCanvasData(successCallback: js.Function1[/* data */ String, Unit], mimeType: Unit, fileName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(
+    successCallback: js.Function1[/* data */ String, Unit],
+    mimeType: Unit,
+    fileName: String,
+    canvas: Unit,
+    quality: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(
+    successCallback: js.Function1[/* data */ String, Unit],
+    mimeType: Unit,
+    fileName: String,
+    canvas: HTMLCanvasElement
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(
+    successCallback: js.Function1[/* data */ String, Unit],
+    mimeType: Unit,
+    fileName: String,
+    canvas: HTMLCanvasElement,
+    quality: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(
+    successCallback: js.Function1[/* data */ String, Unit],
+    mimeType: Unit,
+    fileName: Unit,
+    canvas: Unit,
+    quality: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(
+    successCallback: js.Function1[/* data */ String, Unit],
+    mimeType: Unit,
+    fileName: Unit,
+    canvas: HTMLCanvasElement
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(
+    successCallback: js.Function1[/* data */ String, Unit],
+    mimeType: Unit,
+    fileName: Unit,
+    canvas: HTMLCanvasElement,
+    quality: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def EncodeScreenshotCanvasData(successCallback: Unit, mimeType: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def EncodeScreenshotCanvasData(successCallback: Unit, mimeType: String, fileName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(successCallback: Unit, mimeType: String, fileName: String, canvas: Unit, quality: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(successCallback: Unit, mimeType: String, fileName: String, canvas: HTMLCanvasElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(
+    successCallback: Unit,
+    mimeType: String,
+    fileName: String,
+    canvas: HTMLCanvasElement,
+    quality: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(successCallback: Unit, mimeType: String, fileName: Unit, canvas: Unit, quality: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(successCallback: Unit, mimeType: String, fileName: Unit, canvas: HTMLCanvasElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(
+    successCallback: Unit,
+    mimeType: String,
+    fileName: Unit,
+    canvas: HTMLCanvasElement,
+    quality: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def EncodeScreenshotCanvasData(successCallback: Unit, mimeType: Unit, fileName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(successCallback: Unit, mimeType: Unit, fileName: String, canvas: Unit, quality: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(successCallback: Unit, mimeType: Unit, fileName: String, canvas: HTMLCanvasElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(
+    successCallback: Unit,
+    mimeType: Unit,
+    fileName: String,
+    canvas: HTMLCanvasElement,
+    quality: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(successCallback: Unit, mimeType: Unit, fileName: Unit, canvas: Unit, quality: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(successCallback: Unit, mimeType: Unit, fileName: Unit, canvas: HTMLCanvasElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(successCallback: Unit, mimeType: Unit, fileName: Unit, canvas: HTMLCanvasElement, quality: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
-    * Ends a specific performance coutner
+    * Ends a specific performance counter
     */
   inline def EndPerformanceCounter(counterName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("EndPerformanceCounter")(counterName.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def EndPerformanceCounter(counterName: String, condition: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EndPerformanceCounter")(counterName.asInstanceOf[js.Any], condition.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -626,7 +1062,14 @@ object Tools {
     * @param pixels defines the source byte array
     * @param color defines the output color
     */
-  inline def FetchToRef(u: Double, v: Double, width: Double, height: Double, pixels: Uint8Array, color: IColor4Like): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FetchToRef")(u.asInstanceOf[js.Any], v.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], pixels.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def FetchToRef(
+    u: Double,
+    v: Double,
+    width: Double,
+    height: Double,
+    pixels: js.typedarray.Uint8Array,
+    color: IColor4Like
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FetchToRef")(u.asInstanceOf[js.Any], v.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], pixels.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Creates a data url from a given string content
@@ -660,11 +1103,6 @@ object Tools {
   inline def Format(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("Format")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def Format(value: Double, decimals: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("Format")(value.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  /**
-    * Gets the absolute url.
-    * @param url the input url
-    * @return the absolute url
-    */
   inline def GetAbsoluteUrl(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("GetAbsoluteUrl")(url.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
@@ -674,19 +1112,22 @@ object Tools {
     * @param isType defines if the object is actually a type
     * @returns the name of the class, will be "object" for a custom data type not using the @className decorator
     */
-  inline def GetClassName(`object`: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("GetClassName")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def GetClassName(`object`: js.Any, isType: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("GetClassName")(`object`.asInstanceOf[js.Any], isType.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def GetClassName(`object`: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("GetClassName")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def GetClassName(`object`: Any, isType: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("GetClassName")(`object`.asInstanceOf[js.Any], isType.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Extracts text content from a DOM element hierarchy
-    * Back Compat only, please use DomManagement.GetDOMTextContent instead.
+    * Back Compat only, please use GetDOMTextContent instead.
     */
   @JSImport("babylonjs", "Tools.GetDOMTextContent")
   @js.native
-  def GetDOMTextContent: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DomManagement.GetDOMTextContent */ js.Any = js.native
-  inline def GetDOMTextContent_=(
-    x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DomManagement.GetDOMTextContent */ js.Any
-  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GetDOMTextContent")(x.asInstanceOf[js.Any])
+  def GetDOMTextContent: js.Function1[/* element */ HTMLElement, String] = js.native
+  /**
+    * Extracts text content from a DOM element hierarchy
+    * Back Compat only, please use GetDOMTextContent instead.
+    */
+  inline def GetDOMTextContent(element: HTMLElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("GetDOMTextContent")(element.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def GetDOMTextContent_=(x: js.Function1[/* element */ HTMLElement, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GetDOMTextContent")(x.asInstanceOf[js.Any])
   
   /**
     * Extracts the filename from a path
@@ -716,12 +1157,13 @@ object Tools {
     * @param className defines the class name to instantiate
     * @returns the new object or null if the system was not able to do the instantiation
     */
-  inline def Instantiate(className: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Instantiate")(className.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def Instantiate(className: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Instantiate")(className.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   /**
     * Test if the given uri is a base64 string
+    * @deprecated Please use FileTools.IsBase64DataUrl instead.
     * @param uri The uri to test
-    * @return True if the uri is a base64 string or false otherwise
+    * @returns True if the uri is a base64 string or false otherwise
     */
   inline def IsBase64(uri: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsBase64")(uri.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
@@ -730,7 +1172,7 @@ object Tools {
     * @param obj defines the object to test
     * @returns true if object has no own property
     */
-  inline def IsEmpty(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsEmpty")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def IsEmpty(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsEmpty")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Function indicating if a number is an exponent of 2
@@ -747,14 +1189,18 @@ object Tools {
   
   /**
     * Checks if the window object exists
-    * Back Compat only, please use DomManagement.IsWindowObjectExist instead.
+    * Back Compat only, please use IsWindowObjectExist instead.
+    */
+  inline def IsWindowObjectExist(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsWindowObjectExist")().asInstanceOf[Boolean]
+  /**
+    * Checks if the window object exists
+    * Back Compat only, please use IsWindowObjectExist instead.
     */
   @JSImport("babylonjs", "Tools.IsWindowObjectExist")
   @js.native
-  def IsWindowObjectExist: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DomManagement.IsWindowObjectExist */ js.Any = js.native
-  inline def IsWindowObjectExist_=(
-    x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DomManagement.IsWindowObjectExist */ js.Any
-  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IsWindowObjectExist")(x.asInstanceOf[js.Any])
+  def IsWindowObjectExist_FTools: js.Function0[Boolean] = js.native
+  
+  inline def IsWindowObjectExist_FTools_=(x: js.Function0[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IsWindowObjectExist")(x.asInstanceOf[js.Any])
   
   /**
     * Loads a file from a url
@@ -768,146 +1214,210 @@ object Tools {
     */
   inline def LoadFile(
     url: String,
-    onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit]
+    onSuccess: js.Function2[
+      /* data */ String | js.typedarray.ArrayBuffer, 
+      /* responseURL */ js.UndefOr[String], 
+      Unit
+    ]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def LoadFile(
     url: String,
-    onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-    onProgress: js.Function1[/* data */ js.Any, Unit]
+    onSuccess: js.Function2[
+      /* data */ String | js.typedarray.ArrayBuffer, 
+      /* responseURL */ js.UndefOr[String], 
+      Unit
+    ],
+    onProgress: js.Function1[/* data */ Any, Unit]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def LoadFile(
     url: String,
-    onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-    onProgress: js.Function1[/* data */ js.Any, Unit],
+    onSuccess: js.Function2[
+      /* data */ String | js.typedarray.ArrayBuffer, 
+      /* responseURL */ js.UndefOr[String], 
+      Unit
+    ],
+    onProgress: js.Function1[/* data */ Any, Unit],
     offlineProvider: Unit,
     useArrayBuffer: Boolean
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def LoadFile(
     url: String,
-    onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-    onProgress: js.Function1[/* data */ js.Any, Unit],
+    onSuccess: js.Function2[
+      /* data */ String | js.typedarray.ArrayBuffer, 
+      /* responseURL */ js.UndefOr[String], 
+      Unit
+    ],
+    onProgress: js.Function1[/* data */ Any, Unit],
     offlineProvider: Unit,
     useArrayBuffer: Boolean,
     onError: js.Function2[
       /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
-      /* exception */ js.UndefOr[js.Any], 
+      /* exception */ js.UndefOr[Any], 
       Unit
     ]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def LoadFile(
     url: String,
-    onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-    onProgress: js.Function1[/* data */ js.Any, Unit],
+    onSuccess: js.Function2[
+      /* data */ String | js.typedarray.ArrayBuffer, 
+      /* responseURL */ js.UndefOr[String], 
+      Unit
+    ],
+    onProgress: js.Function1[/* data */ Any, Unit],
     offlineProvider: Unit,
     useArrayBuffer: Unit,
     onError: js.Function2[
       /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
-      /* exception */ js.UndefOr[js.Any], 
+      /* exception */ js.UndefOr[Any], 
       Unit
     ]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def LoadFile(
     url: String,
-    onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-    onProgress: js.Function1[/* data */ js.Any, Unit],
+    onSuccess: js.Function2[
+      /* data */ String | js.typedarray.ArrayBuffer, 
+      /* responseURL */ js.UndefOr[String], 
+      Unit
+    ],
+    onProgress: js.Function1[/* data */ Any, Unit],
     offlineProvider: IOfflineProvider
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def LoadFile(
     url: String,
-    onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-    onProgress: js.Function1[/* data */ js.Any, Unit],
+    onSuccess: js.Function2[
+      /* data */ String | js.typedarray.ArrayBuffer, 
+      /* responseURL */ js.UndefOr[String], 
+      Unit
+    ],
+    onProgress: js.Function1[/* data */ Any, Unit],
     offlineProvider: IOfflineProvider,
     useArrayBuffer: Boolean
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def LoadFile(
     url: String,
-    onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-    onProgress: js.Function1[/* data */ js.Any, Unit],
+    onSuccess: js.Function2[
+      /* data */ String | js.typedarray.ArrayBuffer, 
+      /* responseURL */ js.UndefOr[String], 
+      Unit
+    ],
+    onProgress: js.Function1[/* data */ Any, Unit],
     offlineProvider: IOfflineProvider,
     useArrayBuffer: Boolean,
     onError: js.Function2[
       /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
-      /* exception */ js.UndefOr[js.Any], 
+      /* exception */ js.UndefOr[Any], 
       Unit
     ]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def LoadFile(
     url: String,
-    onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
-    onProgress: js.Function1[/* data */ js.Any, Unit],
+    onSuccess: js.Function2[
+      /* data */ String | js.typedarray.ArrayBuffer, 
+      /* responseURL */ js.UndefOr[String], 
+      Unit
+    ],
+    onProgress: js.Function1[/* data */ Any, Unit],
     offlineProvider: IOfflineProvider,
     useArrayBuffer: Unit,
     onError: js.Function2[
       /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
-      /* exception */ js.UndefOr[js.Any], 
+      /* exception */ js.UndefOr[Any], 
       Unit
     ]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def LoadFile(
     url: String,
-    onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+    onSuccess: js.Function2[
+      /* data */ String | js.typedarray.ArrayBuffer, 
+      /* responseURL */ js.UndefOr[String], 
+      Unit
+    ],
     onProgress: Unit,
     offlineProvider: Unit,
     useArrayBuffer: Boolean
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def LoadFile(
     url: String,
-    onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+    onSuccess: js.Function2[
+      /* data */ String | js.typedarray.ArrayBuffer, 
+      /* responseURL */ js.UndefOr[String], 
+      Unit
+    ],
     onProgress: Unit,
     offlineProvider: Unit,
     useArrayBuffer: Boolean,
     onError: js.Function2[
       /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
-      /* exception */ js.UndefOr[js.Any], 
+      /* exception */ js.UndefOr[Any], 
       Unit
     ]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def LoadFile(
     url: String,
-    onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+    onSuccess: js.Function2[
+      /* data */ String | js.typedarray.ArrayBuffer, 
+      /* responseURL */ js.UndefOr[String], 
+      Unit
+    ],
     onProgress: Unit,
     offlineProvider: Unit,
     useArrayBuffer: Unit,
     onError: js.Function2[
       /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
-      /* exception */ js.UndefOr[js.Any], 
+      /* exception */ js.UndefOr[Any], 
       Unit
     ]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def LoadFile(
     url: String,
-    onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+    onSuccess: js.Function2[
+      /* data */ String | js.typedarray.ArrayBuffer, 
+      /* responseURL */ js.UndefOr[String], 
+      Unit
+    ],
     onProgress: Unit,
     offlineProvider: IOfflineProvider
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def LoadFile(
     url: String,
-    onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+    onSuccess: js.Function2[
+      /* data */ String | js.typedarray.ArrayBuffer, 
+      /* responseURL */ js.UndefOr[String], 
+      Unit
+    ],
     onProgress: Unit,
     offlineProvider: IOfflineProvider,
     useArrayBuffer: Boolean
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def LoadFile(
     url: String,
-    onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+    onSuccess: js.Function2[
+      /* data */ String | js.typedarray.ArrayBuffer, 
+      /* responseURL */ js.UndefOr[String], 
+      Unit
+    ],
     onProgress: Unit,
     offlineProvider: IOfflineProvider,
     useArrayBuffer: Boolean,
     onError: js.Function2[
       /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
-      /* exception */ js.UndefOr[js.Any], 
+      /* exception */ js.UndefOr[Any], 
       Unit
     ]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def LoadFile(
     url: String,
-    onSuccess: js.Function2[/* data */ String | ArrayBuffer, /* responseURL */ js.UndefOr[String], Unit],
+    onSuccess: js.Function2[
+      /* data */ String | js.typedarray.ArrayBuffer, 
+      /* responseURL */ js.UndefOr[String], 
+      Unit
+    ],
     onProgress: Unit,
     offlineProvider: IOfflineProvider,
     useArrayBuffer: Unit,
     onError: js.Function2[
       /* request */ js.UndefOr[typings.babylonjs.webRequestMod.WebRequest], 
-      /* exception */ js.UndefOr[js.Any], 
+      /* exception */ js.UndefOr[Any], 
       Unit
     ]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadFile")(url.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
@@ -918,8 +1428,8 @@ object Tools {
     * @param useArrayBuffer defines a boolean indicating that date must be returned as ArrayBuffer
     * @returns a promise containing an ArrayBuffer corresponding to the loaded file
     */
-  inline def LoadFileAsync(url: String): js.Promise[ArrayBuffer | String] = ^.asInstanceOf[js.Dynamic].applyDynamic("LoadFileAsync")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ArrayBuffer | String]]
-  inline def LoadFileAsync(url: String, useArrayBuffer: Boolean): js.Promise[ArrayBuffer | String] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadFileAsync")(url.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ArrayBuffer | String]]
+  inline def LoadFileAsync(url: String): js.Promise[js.typedarray.ArrayBuffer | String] = ^.asInstanceOf[js.Dynamic].applyDynamic("LoadFileAsync")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.typedarray.ArrayBuffer | String]]
+  inline def LoadFileAsync(url: String, useArrayBuffer: Boolean): js.Promise[js.typedarray.ArrayBuffer | String] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadFileAsync")(url.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.typedarray.ArrayBuffer | String]]
   
   /**
     * Loads an image as an HTMLImageElement.
@@ -928,47 +1438,96 @@ object Tools {
     * @param onError callback called when the image fails to load
     * @param offlineProvider offline provider for caching
     * @param mimeType optional mime type
+    * @param imageBitmapOptions optional the options to use when creating an ImageBitmap
     * @returns the HTMLImageElement of the loaded image
     */
   inline def LoadImage(
     input: String,
     onLoad: js.Function1[/* img */ HTMLImageElement | ImageBitmap, Unit],
-    onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit],
+    onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit],
     offlineProvider: Nullable[IOfflineProvider]
   ): Nullable[HTMLImageElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadImage")(input.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any])).asInstanceOf[Nullable[HTMLImageElement]]
   inline def LoadImage(
     input: String,
     onLoad: js.Function1[/* img */ HTMLImageElement | ImageBitmap, Unit],
-    onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit],
+    onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit],
     offlineProvider: Nullable[IOfflineProvider],
     mimeType: String
   ): Nullable[HTMLImageElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadImage")(input.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[Nullable[HTMLImageElement]]
   inline def LoadImage(
-    input: ArrayBuffer,
+    input: String,
     onLoad: js.Function1[/* img */ HTMLImageElement | ImageBitmap, Unit],
-    onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit],
+    onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit],
+    offlineProvider: Nullable[IOfflineProvider],
+    mimeType: String,
+    imageBitmapOptions: ImageBitmapOptions
+  ): Nullable[HTMLImageElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadImage")(input.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], imageBitmapOptions.asInstanceOf[js.Any])).asInstanceOf[Nullable[HTMLImageElement]]
+  inline def LoadImage(
+    input: String,
+    onLoad: js.Function1[/* img */ HTMLImageElement | ImageBitmap, Unit],
+    onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit],
+    offlineProvider: Nullable[IOfflineProvider],
+    mimeType: Unit,
+    imageBitmapOptions: ImageBitmapOptions
+  ): Nullable[HTMLImageElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadImage")(input.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], imageBitmapOptions.asInstanceOf[js.Any])).asInstanceOf[Nullable[HTMLImageElement]]
+  inline def LoadImage(
+    input: js.typedarray.ArrayBuffer,
+    onLoad: js.Function1[/* img */ HTMLImageElement | ImageBitmap, Unit],
+    onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit],
     offlineProvider: Nullable[IOfflineProvider]
   ): Nullable[HTMLImageElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadImage")(input.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any])).asInstanceOf[Nullable[HTMLImageElement]]
   inline def LoadImage(
-    input: ArrayBuffer,
+    input: js.typedarray.ArrayBuffer,
     onLoad: js.Function1[/* img */ HTMLImageElement | ImageBitmap, Unit],
-    onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit],
+    onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit],
+    offlineProvider: Nullable[IOfflineProvider],
+    mimeType: String
+  ): Nullable[HTMLImageElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadImage")(input.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[Nullable[HTMLImageElement]]
+  inline def LoadImage(
+    input: js.typedarray.ArrayBuffer,
+    onLoad: js.Function1[/* img */ HTMLImageElement | ImageBitmap, Unit],
+    onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit],
+    offlineProvider: Nullable[IOfflineProvider],
+    mimeType: String,
+    imageBitmapOptions: ImageBitmapOptions
+  ): Nullable[HTMLImageElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadImage")(input.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], imageBitmapOptions.asInstanceOf[js.Any])).asInstanceOf[Nullable[HTMLImageElement]]
+  inline def LoadImage(
+    input: js.typedarray.ArrayBuffer,
+    onLoad: js.Function1[/* img */ HTMLImageElement | ImageBitmap, Unit],
+    onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit],
+    offlineProvider: Nullable[IOfflineProvider],
+    mimeType: Unit,
+    imageBitmapOptions: ImageBitmapOptions
+  ): Nullable[HTMLImageElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadImage")(input.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], imageBitmapOptions.asInstanceOf[js.Any])).asInstanceOf[Nullable[HTMLImageElement]]
+  inline def LoadImage(
+    input: Blob,
+    onLoad: js.Function1[/* img */ HTMLImageElement | ImageBitmap, Unit],
+    onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit],
+    offlineProvider: Nullable[IOfflineProvider]
+  ): Nullable[HTMLImageElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadImage")(input.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any])).asInstanceOf[Nullable[HTMLImageElement]]
+  inline def LoadImage(
+    input: Blob,
+    onLoad: js.Function1[/* img */ HTMLImageElement | ImageBitmap, Unit],
+    onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit],
     offlineProvider: Nullable[IOfflineProvider],
     mimeType: String
   ): Nullable[HTMLImageElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadImage")(input.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[Nullable[HTMLImageElement]]
   inline def LoadImage(
     input: Blob,
     onLoad: js.Function1[/* img */ HTMLImageElement | ImageBitmap, Unit],
-    onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit],
-    offlineProvider: Nullable[IOfflineProvider]
-  ): Nullable[HTMLImageElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadImage")(input.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any])).asInstanceOf[Nullable[HTMLImageElement]]
+    onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit],
+    offlineProvider: Nullable[IOfflineProvider],
+    mimeType: String,
+    imageBitmapOptions: ImageBitmapOptions
+  ): Nullable[HTMLImageElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadImage")(input.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], imageBitmapOptions.asInstanceOf[js.Any])).asInstanceOf[Nullable[HTMLImageElement]]
   inline def LoadImage(
     input: Blob,
     onLoad: js.Function1[/* img */ HTMLImageElement | ImageBitmap, Unit],
-    onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit],
+    onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit],
     offlineProvider: Nullable[IOfflineProvider],
-    mimeType: String
-  ): Nullable[HTMLImageElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadImage")(input.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[Nullable[HTMLImageElement]]
+    mimeType: Unit,
+    imageBitmapOptions: ImageBitmapOptions
+  ): Nullable[HTMLImageElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadImage")(input.asInstanceOf[js.Any], onLoad.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], offlineProvider.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], imageBitmapOptions.asInstanceOf[js.Any])).asInstanceOf[Nullable[HTMLImageElement]]
   
   /**
     * Load a script (identified by an url). When the url returns, the
@@ -982,12 +1541,12 @@ object Tools {
   inline def LoadScript(
     scriptUrl: String,
     onSuccess: js.Function0[Unit],
-    onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit]
+    onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadScript")(scriptUrl.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def LoadScript(
     scriptUrl: String,
     onSuccess: js.Function0[Unit],
-    onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[js.Any], Unit],
+    onError: js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit],
     scriptId: String
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadScript")(scriptUrl.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], scriptId.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def LoadScript(scriptUrl: String, onSuccess: js.Function0[Unit], onError: Unit, scriptId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadScript")(scriptUrl.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], scriptId.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -996,11 +1555,9 @@ object Tools {
     * Load an asynchronous script (identified by an url). When the url returns, the
     * content of this file is added into a new script element, attached to the DOM (body element)
     * @param scriptUrl defines the url of the script to laod
-    * @param scriptId defines the id of the script element
     * @returns a promise request object
     */
   inline def LoadScriptAsync(scriptUrl: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("LoadScriptAsync")(scriptUrl.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  inline def LoadScriptAsync(scriptUrl: String, scriptId: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("LoadScriptAsync")(scriptUrl.asInstanceOf[js.Any], scriptId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /**
     * Log a message to the console
@@ -1014,8 +1571,8 @@ object Tools {
     * @param allowsNullUndefined defines a boolean indicating if obj is allowed to be null or undefined
     * @returns either obj directly if obj is an array or a new array containing obj
     */
-  inline def MakeArray(obj: js.Any): Nullable[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("MakeArray")(obj.asInstanceOf[js.Any]).asInstanceOf[Nullable[js.Array[js.Any]]]
-  inline def MakeArray(obj: js.Any, allowsNullUndefined: Boolean): Nullable[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeArray")(obj.asInstanceOf[js.Any], allowsNullUndefined.asInstanceOf[js.Any])).asInstanceOf[Nullable[js.Array[js.Any]]]
+  inline def MakeArray(obj: Any): Nullable[js.Array[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("MakeArray")(obj.asInstanceOf[js.Any]).asInstanceOf[Nullable[js.Array[Any]]]
+  inline def MakeArray(obj: Any, allowsNullUndefined: Boolean): Nullable[js.Array[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MakeArray")(obj.asInstanceOf[js.Any], allowsNullUndefined.asInstanceOf[js.Any])).asInstanceOf[Nullable[js.Array[Any]]]
   
   /**
     * Only message logs
@@ -1029,7 +1586,7 @@ object Tools {
     * @param a The lower value (returned when alpha = 0)
     * @param b The upper value (returned when alpha = 1)
     * @param alpha The interpolation-factor
-    * @return The mixed value
+    * @returns The mixed value
     */
   inline def Mix(a: Double, b: Double, alpha: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Mix")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Double]
   
@@ -1083,48 +1640,48 @@ object Tools {
     * @param onError defines the callback to call when an error occurs
     * @returns a file request object
     */
-  inline def ReadFile(file: File, onSuccess: js.Function1[/* data */ js.Any, Unit]): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("ReadFile")(file.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
+  inline def ReadFile(file: File, onSuccess: js.Function1[/* data */ Any, Unit]): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("ReadFile")(file.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def ReadFile(
     file: File,
-    onSuccess: js.Function1[/* data */ js.Any, Unit],
-    onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], js.Any]
+    onSuccess: js.Function1[/* data */ Any, Unit],
+    onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Any]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("ReadFile")(file.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def ReadFile(
     file: File,
-    onSuccess: js.Function1[/* data */ js.Any, Unit],
-    onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], js.Any],
+    onSuccess: js.Function1[/* data */ Any, Unit],
+    onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Any],
     useArrayBuffer: Boolean
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("ReadFile")(file.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def ReadFile(
     file: File,
-    onSuccess: js.Function1[/* data */ js.Any, Unit],
-    onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], js.Any],
+    onSuccess: js.Function1[/* data */ Any, Unit],
+    onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Any],
     useArrayBuffer: Boolean,
     onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.ReadFileError, Unit]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("ReadFile")(file.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def ReadFile(
     file: File,
-    onSuccess: js.Function1[/* data */ js.Any, Unit],
-    onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], js.Any],
+    onSuccess: js.Function1[/* data */ Any, Unit],
+    onProgress: js.Function1[/* ev */ ProgressEvent[EventTarget], Any],
     useArrayBuffer: Unit,
     onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.ReadFileError, Unit]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("ReadFile")(file.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def ReadFile(
     file: File,
-    onSuccess: js.Function1[/* data */ js.Any, Unit],
+    onSuccess: js.Function1[/* data */ Any, Unit],
     onProgress: Unit,
     useArrayBuffer: Boolean
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("ReadFile")(file.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def ReadFile(
     file: File,
-    onSuccess: js.Function1[/* data */ js.Any, Unit],
+    onSuccess: js.Function1[/* data */ Any, Unit],
     onProgress: Unit,
     useArrayBuffer: Boolean,
     onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.ReadFileError, Unit]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("ReadFile")(file.asInstanceOf[js.Any], onSuccess.asInstanceOf[js.Any], onProgress.asInstanceOf[js.Any], useArrayBuffer.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   inline def ReadFile(
     file: File,
-    onSuccess: js.Function1[/* data */ js.Any, Unit],
+    onSuccess: js.Function1[/* data */ Any, Unit],
     onProgress: Unit,
     useArrayBuffer: Unit,
     onError: js.Function1[/* error */ typings.babylonjs.fileToolsMod.ReadFileError, Unit]
@@ -1139,8 +1696,8 @@ object Tools {
     */
   inline def ReadFileAsDataURL(
     fileToLoad: Blob,
-    callback: js.Function1[/* data */ js.Any, Unit],
-    progressCallback: js.Function1[/* ev */ ProgressEvent[EventTarget], js.Any]
+    callback: js.Function1[/* data */ Any, Unit],
+    progressCallback: js.Function1[/* ev */ ProgressEvent[EventTarget], Any]
   ): IFileRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("ReadFileAsDataURL")(fileToLoad.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], progressCallback.asInstanceOf[js.Any])).asInstanceOf[IFileRequest]
   
   /**
@@ -1154,6 +1711,7 @@ object Tools {
     * Sets the cors behavior on a dom element. This will add the required Tools.CorsBehavior to the element.
     * @param url define the url we are trying
     * @param element define the dom element where to configure the cors policy
+    * @param element.crossOrigin
     */
   inline def SetCorsBehavior(url: String, element: CrossOrigin): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("SetCorsBehavior")(url.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def SetCorsBehavior(url: js.Array[String], element: CrossOrigin): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("SetCorsBehavior")(url.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -1165,29 +1723,12 @@ object Tools {
   inline def SetImmediate(action: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("SetImmediate")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
-    * Provides a slice function that will work even on IE
-    * @param data defines the array to slice
-    * @param start defines the start of the data (optional)
-    * @param end defines the end of the data (optional)
-    * @returns the new sliced array
+    * Sets the referrerPolicy behavior on a dom element.
+    * @param referrerPolicy define the referrer policy to use
+    * @param element define the dom element where to configure the referrer policy
+    * @param element.referrerPolicy
     */
-  inline def Slice[T](data: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("Slice")(data.asInstanceOf[js.Any]).asInstanceOf[T]
-  inline def Slice[T](data: T, start: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("Slice")(data.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[T]
-  inline def Slice[T](data: T, start: Double, end: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("Slice")(data.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[T]
-  inline def Slice[T](data: T, start: Unit, end: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("Slice")(data.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[T]
-  
-  /**
-    * Provides a slice function that will work even on IE
-    * The difference between this and Slice is that this will force-convert to array
-    * @param data defines the array to slice
-    * @param start defines the start of the data (optional)
-    * @param end defines the end of the data (optional)
-    * @returns the new sliced array
-    */
-  inline def SliceToArray[T, P](data: T): js.Array[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("SliceToArray")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[P]]
-  inline def SliceToArray[T, P](data: T, start: Double): js.Array[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("SliceToArray")(data.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Array[P]]
-  inline def SliceToArray[T, P](data: T, start: Double, end: Double): js.Array[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("SliceToArray")(data.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[js.Array[P]]
-  inline def SliceToArray[T, P](data: T, start: Unit, end: Double): js.Array[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("SliceToArray")(data.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[js.Array[P]]
+  inline def SetReferrerPolicyBehavior(referrerPolicy: Nullable[ReferrerPolicy], element: typings.babylonjs.anon.ReferrerPolicy): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("SetReferrerPolicyBehavior")(referrerPolicy.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Starts a performance counter
@@ -1201,6 +1742,7 @@ object Tools {
     * @param canvas Defines the canvas to extract the data from
     * @param successCallback Defines the callback triggered once the data are available
     * @param mimeType Defines the mime type of the result
+    * @param quality defines the quality of the result
     */
   inline def ToBlob(canvas: HTMLCanvasElement, successCallback: js.Function1[/* blob */ Nullable[Blob], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ToBlob")(canvas.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def ToBlob(
@@ -1208,6 +1750,18 @@ object Tools {
     successCallback: js.Function1[/* blob */ Nullable[Blob], Unit],
     mimeType: String
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ToBlob")(canvas.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ToBlob(
+    canvas: HTMLCanvasElement,
+    successCallback: js.Function1[/* blob */ Nullable[Blob], Unit],
+    mimeType: String,
+    quality: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ToBlob")(canvas.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ToBlob(
+    canvas: HTMLCanvasElement,
+    successCallback: js.Function1[/* blob */ Nullable[Blob], Unit],
+    mimeType: Unit,
+    quality: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ToBlob")(canvas.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Convert an angle in radians to degrees
@@ -1255,18 +1809,23 @@ object Tools {
   
   @JSImport("babylonjs", "Tools._EndPerformanceConsole")
   @js.native
-  def _EndPerformanceConsole: js.Any = js.native
-  inline def _EndPerformanceConsole_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_EndPerformanceConsole")(x.asInstanceOf[js.Any])
+  def _EndPerformanceConsole: Any = js.native
+  inline def _EndPerformanceConsole_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_EndPerformanceConsole")(x.asInstanceOf[js.Any])
   
   @JSImport("babylonjs", "Tools._EndPerformanceCounterDisabled")
   @js.native
-  def _EndPerformanceCounterDisabled: js.Any = js.native
-  inline def _EndPerformanceCounterDisabled_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_EndPerformanceCounterDisabled")(x.asInstanceOf[js.Any])
+  def _EndPerformanceCounterDisabled: Any = js.native
+  inline def _EndPerformanceCounterDisabled_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_EndPerformanceCounterDisabled")(x.asInstanceOf[js.Any])
   
   @JSImport("babylonjs", "Tools._EndUserMark")
   @js.native
-  def _EndUserMark: js.Any = js.native
-  inline def _EndUserMark_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_EndUserMark")(x.asInstanceOf[js.Any])
+  def _EndUserMark: Any = js.native
+  inline def _EndUserMark_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_EndUserMark")(x.asInstanceOf[js.Any])
+  
+  @JSImport("babylonjs", "Tools._Performance")
+  @js.native
+  def _Performance: Any = js.native
+  inline def _Performance_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Performance")(x.asInstanceOf[js.Any])
   
   /**
     * @ignore
@@ -1278,37 +1837,32 @@ object Tools {
   
   @JSImport("babylonjs", "Tools._StartPerformanceConsole")
   @js.native
-  def _StartPerformanceConsole: js.Any = js.native
-  inline def _StartPerformanceConsole_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_StartPerformanceConsole")(x.asInstanceOf[js.Any])
+  def _StartPerformanceConsole: Any = js.native
+  inline def _StartPerformanceConsole_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_StartPerformanceConsole")(x.asInstanceOf[js.Any])
   
   @JSImport("babylonjs", "Tools._StartPerformanceCounterDisabled")
   @js.native
-  def _StartPerformanceCounterDisabled: js.Any = js.native
-  inline def _StartPerformanceCounterDisabled_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_StartPerformanceCounterDisabled")(x.asInstanceOf[js.Any])
+  def _StartPerformanceCounterDisabled: Any = js.native
+  inline def _StartPerformanceCounterDisabled_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_StartPerformanceCounterDisabled")(x.asInstanceOf[js.Any])
   
   @JSImport("babylonjs", "Tools._StartUserMark")
   @js.native
-  def _StartUserMark: js.Any = js.native
-  inline def _StartUserMark_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_StartUserMark")(x.asInstanceOf[js.Any])
+  def _StartUserMark: Any = js.native
+  inline def _StartUserMark_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_StartUserMark")(x.asInstanceOf[js.Any])
   
-  @JSImport("babylonjs", "Tools._performance")
+  @JSImport("babylonjs", "Tools._TmpFloatArray")
   @js.native
-  def _performance: js.Any = js.native
-  inline def _performance_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_performance")(x.asInstanceOf[js.Any])
-  
-  @JSImport("babylonjs", "Tools._tmpFloatArray")
-  @js.native
-  def _tmpFloatArray: js.Any = js.native
-  inline def _tmpFloatArray_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_tmpFloatArray")(x.asInstanceOf[js.Any])
+  def _TmpFloatArray: Any = js.native
+  inline def _TmpFloatArray_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TmpFloatArray")(x.asInstanceOf[js.Any])
   
   /**
     * This method will return the name of the full name of the class, including its owning module (if any).
     * It will works only on Javascript basic data types (number, string, ...) and instance of class declared with the @className decorator or implementing a method getClassName():string (in which case the module won't be specified).
     * @param object the object to get the class name from
     * @param isType defines if the object is actually a type
-    * @return a string that can have two forms: "moduleName.className" if module was specified when the class' Name was registered or "className" if there was not module specified.
+    * @returns a string that can have two forms: "moduleName.className" if module was specified when the class' Name was registered or "className" if there was not module specified.
     * @ignorenaming
     */
-  inline def getFullClassName(`object`: js.Any): Nullable[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFullClassName")(`object`.asInstanceOf[js.Any]).asInstanceOf[Nullable[String]]
-  inline def getFullClassName(`object`: js.Any, isType: Boolean): Nullable[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFullClassName")(`object`.asInstanceOf[js.Any], isType.asInstanceOf[js.Any])).asInstanceOf[Nullable[String]]
+  inline def getFullClassName(`object`: Any): Nullable[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFullClassName")(`object`.asInstanceOf[js.Any]).asInstanceOf[Nullable[String]]
+  inline def getFullClassName(`object`: Any, isType: Boolean): Nullable[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFullClassName")(`object`.asInstanceOf[js.Any], isType.asInstanceOf[js.Any])).asInstanceOf[Nullable[String]]
 }

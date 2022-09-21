@@ -26,7 +26,7 @@ object TableDataInsertAllResponse {
     
     inline def setInsertErrorsUndefined: Self = StObject.set(x, "insertErrors", js.undefined)
     
-    inline def setInsertErrorsVarargs(value: Errors*): Self = StObject.set(x, "insertErrors", js.Array(value :_*))
+    inline def setInsertErrorsVarargs(value: Errors*): Self = StObject.set(x, "insertErrors", js.Array(value*))
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

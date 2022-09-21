@@ -10,10 +10,10 @@ request the caniuse data to check browsers compatibilities
 | ------------------ | :-------------: |
 | Full name          | caniuse-api |
 | Keywords           | caniuse, browserslist |
-| # releases         | 0 |
-| # dependents       | 72 |
-| # downloads        | 340319127 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4.2528634666666664E7 |
+| # stars            | 335.0 |
 
 ## Links
 - [Homepage](https://github.com/nyalab/caniuse-api#readme)

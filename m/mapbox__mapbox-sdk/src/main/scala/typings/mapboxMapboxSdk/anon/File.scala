@@ -1,6 +1,5 @@
 package typings.mapboxMapboxSdk.anon
 
-import typings.std.ArrayBuffer
 import typings.std.Blob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait File extends StObject {
   
-  var file: Blob | ArrayBuffer | String
+  var file: Blob | js.typedarray.ArrayBuffer | String
   
   var iconId: String
   
@@ -18,14 +17,14 @@ trait File extends StObject {
 }
 object File {
   
-  inline def apply(file: Blob | ArrayBuffer | String, iconId: String, styleId: String): File = {
+  inline def apply(file: Blob | js.typedarray.ArrayBuffer | String, iconId: String, styleId: String): File = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], iconId = iconId.asInstanceOf[js.Any], styleId = styleId.asInstanceOf[js.Any])
     __obj.asInstanceOf[File]
   }
   
   extension [Self <: File](x: Self) {
     
-    inline def setFile(value: Blob | ArrayBuffer | String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: Blob | js.typedarray.ArrayBuffer | String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
     inline def setIconId(value: String): Self = StObject.set(x, "iconId", value.asInstanceOf[js.Any])
     

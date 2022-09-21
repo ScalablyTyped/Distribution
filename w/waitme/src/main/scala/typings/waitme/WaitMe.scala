@@ -116,7 +116,7 @@ object WaitMe {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setColorVarargs(value: String*): Self = StObject.set(x, "color", js.Array(value :_*))
+      inline def setColorVarargs(value: String*): Self = StObject.set(x, "color", js.Array(value*))
       
       inline def setEffect(
         value: none | bounce | rotateplane | stretch | orbit | roundBounce | win8 | win8_linear | ios | facebook | rotation | timer | pulse | progressBar | bouncePulse | img

@@ -54,7 +54,7 @@ object navbarDividerMod {
   
   @JSImport("rbx/components/navbar/navbar-divider", "NavbarDivider")
   @js.native
-  val NavbarDivider: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
+  val NavbarDivider: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[Any]] = js.native
   
   /* Inlined rbx.rbx/base/helpers.HelpersProps */
   trait NavbarDividerProps extends StObject {

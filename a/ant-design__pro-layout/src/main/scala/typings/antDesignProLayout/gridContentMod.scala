@@ -1,6 +1,5 @@
 package typings.antDesignProLayout
 
-import org.scalablytyped.runtime.Shortcut
 import typings.antDesignProLayout.defaultSettingsMod.ContentWidth
 import typings.react.mod.CSSProperties
 import typings.react.mod.FC
@@ -9,16 +8,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object gridContentMod extends Shortcut {
+object gridContentMod {
   
   /**
     * This component can support contentWidth so you don't need to calculate the width
     * contentWidth=Fixed, width will is 1200
+    *
     * @param props
     */
-  @JSImport("@ant-design/pro-layout/lib/GridContent", JSImport.Default)
+  @JSImport("@ant-design/pro-layout/es/components/GridContent", "GridContent")
   @js.native
-  val default: FC[GridContentProps] = js.native
+  val GridContent: FC[GridContentProps] = js.native
   
   trait GridContentProps extends StObject {
     
@@ -62,9 +62,4 @@ object gridContentMod extends Shortcut {
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
-  
-  type _To = FC[GridContentProps]
-  
-  /* This means you don't have to write `default`, but can instead just say `gridContentMod.foo` */
-  override def _to: FC[GridContentProps] = default
 }

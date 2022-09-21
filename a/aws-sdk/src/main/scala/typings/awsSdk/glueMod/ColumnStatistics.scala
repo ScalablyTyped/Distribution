@@ -9,7 +9,7 @@ trait ColumnStatistics extends StObject {
   /**
     * The timestamp of when column statistics were generated.
     */
-  var AnalyzedTime: Timestamp
+  var AnalyzedTime: js.Date
   
   /**
     * Name of column which statistics belong to.
@@ -29,7 +29,7 @@ trait ColumnStatistics extends StObject {
 object ColumnStatistics {
   
   inline def apply(
-    AnalyzedTime: Timestamp,
+    AnalyzedTime: js.Date,
     ColumnName: NameString,
     ColumnType: TypeString,
     StatisticsData: ColumnStatisticsData
@@ -40,7 +40,7 @@ object ColumnStatistics {
   
   extension [Self <: ColumnStatistics](x: Self) {
     
-    inline def setAnalyzedTime(value: Timestamp): Self = StObject.set(x, "AnalyzedTime", value.asInstanceOf[js.Any])
+    inline def setAnalyzedTime(value: js.Date): Self = StObject.set(x, "AnalyzedTime", value.asInstanceOf[js.Any])
     
     inline def setColumnName(value: NameString): Self = StObject.set(x, "ColumnName", value.asInstanceOf[js.Any])
     

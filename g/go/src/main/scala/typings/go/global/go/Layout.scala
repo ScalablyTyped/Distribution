@@ -14,5 +14,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Create a minimal layout that only positions Nodes that do not have a location.
   */
-class Layout ()
+open class Layout ()
   extends typings.go.mod.Layout

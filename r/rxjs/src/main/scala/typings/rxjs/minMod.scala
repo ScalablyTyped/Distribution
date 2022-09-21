@@ -1,13 +1,13 @@
 package typings.rxjs
 
-import typings.rxjs.typesMod.MonoTypeOperatorFunction
+import typings.rxjs.internalTypesMod.MonoTypeOperatorFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object minMod {
   
-  @JSImport("rxjs/internal/operators/min", JSImport.Namespace)
+  @JSImport("rxjs/dist/types/internal/operators/min", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

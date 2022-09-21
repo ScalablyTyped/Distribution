@@ -1,6 +1,5 @@
 package typings.pullStream
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +10,7 @@ object mod {
     * Pipe data through a number of `pull-stream`s
     */
   inline def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
-  inline def apply(pullStreams: (PossibleSource[js.Any] | PossibleSink[js.Any] | (PossibleThrough[js.Any, js.Any]))*): Source[js.Any] | Sink[js.Any] | (Through_[js.Any, js.Any]) | Unit = ^.asInstanceOf[js.Dynamic].apply(pullStreams.asInstanceOf[js.Any]).asInstanceOf[Source[js.Any] | Sink[js.Any] | (Through_[js.Any, js.Any]) | Unit]
+  inline def apply(pullStreams: (PossibleSource[Any] | PossibleSink[Any] | (PossibleThrough[Any, Any]))*): Source[Any] | Sink[Any] | (Through_[Any, Any]) | Unit = ^.asInstanceOf[js.Dynamic].apply(pullStreams.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Source[Any] | Sink[Any] | (Through_[Any, Any]) | Unit]
   inline def apply[In](sink: PossibleSink[In]): Sink[In] = ^.asInstanceOf[js.Dynamic].apply(sink.asInstanceOf[js.Any]).asInstanceOf[Sink[In]]
   inline def apply[InOut](source: PossibleSource[InOut], sink: PossibleSink[InOut]): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], sink.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def apply[In, Out](source: PossibleSource[In], t1: PossibleThrough[In, Out], sink: PossibleSink[Out]): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], sink.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -76,97 +75,97 @@ object mod {
   
   @JSImport("pull-stream", "asyncMap")
   @js.native
-  val asyncMap: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof asyncMapImport */ js.Any = js.native
+  val asyncMap: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof asyncMapImport */ Any = js.native
   
   @JSImport("pull-stream", "collect")
   @js.native
-  val collect: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof collectImport */ js.Any = js.native
+  val collect: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof collectImport */ Any = js.native
   
   @JSImport("pull-stream", "concat")
   @js.native
-  val concat: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof concatImport */ js.Any = js.native
+  val concat: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof concatImport */ Any = js.native
   
   @JSImport("pull-stream", "count")
   @js.native
-  val count: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof countImport */ js.Any = js.native
+  val count: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof countImport */ Any = js.native
   
   @JSImport("pull-stream", "drain")
   @js.native
-  val drain: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof drainImport */ js.Any = js.native
+  val drain: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof drainImport */ Any = js.native
   
   @JSImport("pull-stream", "empty")
   @js.native
-  val empty: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof emptyImport */ js.Any = js.native
+  val empty: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof emptyImport */ Any = js.native
   
   @JSImport("pull-stream", "error")
   @js.native
-  val error: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof errorImport */ js.Any = js.native
+  val error: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof errorImport */ Any = js.native
   
   @JSImport("pull-stream", "filter")
   @js.native
-  val filter: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof filterImport */ js.Any = js.native
+  val filter: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof filterImport */ Any = js.native
   
   @JSImport("pull-stream", "filterNot")
   @js.native
-  val filterNot: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof filterNotImport */ js.Any = js.native
+  val filterNot: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof filterNotImport */ Any = js.native
   
   @JSImport("pull-stream", "find")
   @js.native
-  val find: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof findImport */ js.Any = js.native
+  val find: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof findImport */ Any = js.native
   
   @JSImport("pull-stream", "flatten")
   @js.native
-  val flatten: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof flattenImport */ js.Any = js.native
+  val flatten: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof flattenImport */ Any = js.native
   
   @JSImport("pull-stream", "infinite")
   @js.native
-  val infinite: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof infiniteImport */ js.Any = js.native
+  val infinite: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof infiniteImport */ Any = js.native
   
   @JSImport("pull-stream", "keys")
   @js.native
-  val keys: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof keysImport */ js.Any = js.native
+  val keys: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof keysImport */ Any = js.native
   
   @JSImport("pull-stream", "log")
   @js.native
-  val log: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof logImport */ js.Any = js.native
+  val log: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof logImport */ Any = js.native
   
   @JSImport("pull-stream", "map")
   @js.native
-  val map: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof mapImport */ js.Any = js.native
+  val map: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof mapImport */ Any = js.native
   
   @JSImport("pull-stream", "nonUnique")
   @js.native
-  val nonUnique: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof nonUniqueImport */ js.Any = js.native
+  val nonUnique: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof nonUniqueImport */ Any = js.native
   
   @JSImport("pull-stream", "onEnd")
   @js.native
-  val onEnd: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof onEndImport */ js.Any = js.native
+  val onEnd: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof onEndImport */ Any = js.native
   
   @JSImport("pull-stream", "once")
   @js.native
-  val once: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof onceImport */ js.Any = js.native
+  val once: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof onceImport */ Any = js.native
   
   @JSImport("pull-stream", "reduce")
   @js.native
-  val reduce: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof reduceImport */ js.Any = js.native
+  val reduce: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof reduceImport */ Any = js.native
   
   @JSImport("pull-stream", "take")
   @js.native
-  val take: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof takeImport */ js.Any = js.native
+  val take: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof takeImport */ Any = js.native
   
   @JSImport("pull-stream", "through")
   @js.native
-  val through: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof throughImport */ js.Any = js.native
+  val through: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof throughImport */ Any = js.native
   
   @JSImport("pull-stream", "unique")
   @js.native
-  val unique: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof uniqueImport */ js.Any = js.native
+  val unique: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof uniqueImport */ Any = js.native
   
   @JSImport("pull-stream", "values")
   @js.native
-  val values: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof valuesImport */ js.Any = js.native
+  val values: /* import warning: ResolveTypeQueries.resolve Loop while resolving typeof valuesImport */ Any = js.native
   
-  type Abort = Error | Boolean | Null
+  type Abort = js.Error | Boolean | Null
   
   trait Duplex[In, Out]
     extends StObject

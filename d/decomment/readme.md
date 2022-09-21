@@ -10,10 +10,10 @@ Removes comments from JSON/JavaScript, CSS/HTML, CPP/H, etc.
 | ------------------ | :-------------: |
 | Full name          | decomment |
 | Keywords           | remove comments, JavaScript, JSON, CSS, HTML, CPP, C++, Text |
-| # releases         | 2 |
-| # dependents       | 41 |
-| # downloads        | 11777108 |
-| # stars            | 5 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 835672.3333333334 |
+| # stars            | 61.0 |
 
 ## Links
 - [Homepage](https://github.com/vitaly-t/decomment)

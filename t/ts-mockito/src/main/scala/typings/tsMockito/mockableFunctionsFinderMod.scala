@@ -8,16 +8,16 @@ object mockableFunctionsFinderMod {
   
   @JSImport("ts-mockito/lib/utils/MockableFunctionsFinder", "MockableFunctionsFinder")
   @js.native
-  class MockableFunctionsFinder () extends StObject {
+  open class MockableFunctionsFinder () extends StObject {
     
-    /* private */ var cleanFunctionNameRegex: js.Any = js.native
+    /* private */ var cleanFunctionNameRegex: Any = js.native
     
-    /* private */ var excludedFunctionNames: js.Any = js.native
+    /* private */ var excludedFunctionNames: Any = js.native
     
     def find(code: String): js.Array[String] = js.native
     
-    /* private */ var functionNameRegex: js.Any = js.native
+    /* private */ var functionNameRegex: Any = js.native
     
-    /* private */ var isMockable: js.Any = js.native
+    /* private */ var isMockable: Any = js.native
   }
 }

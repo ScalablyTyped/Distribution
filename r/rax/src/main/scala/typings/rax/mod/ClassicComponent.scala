@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClassicComponent[P, S]
-  extends Component[P, S, js.Any] {
+trait ClassicComponent[P, S] extends Component[P, S, Any] {
   
   var getInitialState: js.UndefOr[js.Function0[S]] = js.native
   

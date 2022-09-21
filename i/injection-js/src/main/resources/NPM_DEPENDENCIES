@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "injection-js" : "2.4.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "injection-js" : "2.4.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -30,7 +30,7 @@ object XProgressMonitor {
     acquire: () => Unit,
     addText: (String, String, Boolean) => Unit,
     getValue: () => Double,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     removeText: (String, Boolean) => Unit,
     setBackgroundColor: Color => Unit,

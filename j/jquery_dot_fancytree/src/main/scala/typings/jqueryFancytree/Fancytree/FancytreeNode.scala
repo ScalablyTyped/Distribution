@@ -50,13 +50,13 @@ trait FancytreeNode extends StObject {
   def addNode(node: NodeData, mode: String): FancytreeNode = js.native
   
   /** Modify existing child nodes. */
-  def applyPatch(patch: NodePatch): JQueryPromise[js.Any] = js.native
+  def applyPatch(patch: NodePatch): JQueryPromise[Any] = js.native
   
   /** Array of child nodes. For lazy nodes, null or undefined means 'not yet loaded'. Use an empty array to define a node that has no children. */
   var children: js.Array[FancytreeNode] = js.native
   
   /** Collapse all sibling nodes. */
-  def collapseSiblings(): JQueryPromise[js.Any] = js.native
+  def collapseSiblings(): JQueryPromise[Any] = js.native
   
   /** Copy this node as sibling or child of `node`.
     *
@@ -78,10 +78,10 @@ trait FancytreeNode extends StObject {
   def countChildren(deep: Boolean): Double = js.native
   
   /** Contains all extra data that was passed on node creation */
-  var data: js.Any = js.native
+  var data: Any = js.native
   
   /** Write to browser console if debugLevel >= 2 (prepending node info) */
-  def debug(msg: js.Any): Unit = js.native
+  def debug(msg: Any): Unit = js.native
   
   /** [ext-edit] Create a new child or sibling node and start edit mode.
     *
@@ -259,15 +259,15 @@ trait FancytreeNode extends StObject {
     *
     * @param forceReload Pass true to discard any existing nodes before.
     */
-  def load(): JQueryPromise[js.Any] = js.native
-  def load(forceReload: Boolean): JQueryPromise[js.Any] = js.native
+  def load(): JQueryPromise[Any] = js.native
+  def load(forceReload: Boolean): JQueryPromise[Any] = js.native
   
   /** Expand all parents and optionally scroll into visible area as neccessary. Promise is resolved, when lazy loading and animations are done.
     *
     * @param opts passed to `setExpanded()`. Defaults to {noAnimation: false, noEvents: false, scrollIntoView: true}
     */
-  def makeVisible(): JQueryPromise[js.Any] = js.native
-  def makeVisible(opts: js.Object): JQueryPromise[js.Any] = js.native
+  def makeVisible(): JQueryPromise[Any] = js.native
+  def makeVisible(opts: js.Object): JQueryPromise[Any] = js.native
   
   /** Move this node to targetNode.
     *
@@ -287,8 +287,8 @@ trait FancytreeNode extends StObject {
     * @param where The keyCode that would normally trigger this move, e.g. `$.ui.keyCode.LEFT` would collapse the node if it is expanded or move to the parent oterwise.
     * @param activate (default=true)
     */
-  def navigate(where: Double): JQueryPromise[js.Any] = js.native
-  def navigate(where: Double, activate: Boolean): JQueryPromise[js.Any] = js.native
+  def navigate(where: Double): JQueryPromise[Any] = js.native
+  def navigate(where: Double, activate: Boolean): JQueryPromise[Any] = js.native
   
   /** The parent node */
   var parent: FancytreeNode = js.native
@@ -338,30 +338,30 @@ trait FancytreeNode extends StObject {
     * @param effects animation options.
     * @param options {topNode: null, effects: ..., parent: ...} this node will remain visible in any case, even if `this` is outside the scroll pane.
     */
-  def scrollIntoView(): JQueryPromise[js.Any] = js.native
-  def scrollIntoView(effects: js.Object): JQueryPromise[js.Any] = js.native
-  def scrollIntoView(effects: js.Object, options: js.Object): JQueryPromise[js.Any] = js.native
-  def scrollIntoView(effects: Boolean): JQueryPromise[js.Any] = js.native
-  def scrollIntoView(effects: Boolean, options: js.Object): JQueryPromise[js.Any] = js.native
-  def scrollIntoView(effects: Unit, options: js.Object): JQueryPromise[js.Any] = js.native
+  def scrollIntoView(): JQueryPromise[Any] = js.native
+  def scrollIntoView(effects: js.Object): JQueryPromise[Any] = js.native
+  def scrollIntoView(effects: js.Object, options: js.Object): JQueryPromise[Any] = js.native
+  def scrollIntoView(effects: Boolean): JQueryPromise[Any] = js.native
+  def scrollIntoView(effects: Boolean, options: js.Object): JQueryPromise[Any] = js.native
+  def scrollIntoView(effects: Unit, options: js.Object): JQueryPromise[Any] = js.native
   
   /**
     * @param flag pass false to deactivate
     * @param opts additional options. Defaults to {noEvents: false}
     */
-  def setActive(): JQueryPromise[js.Any] = js.native
-  def setActive(flag: Boolean): JQueryPromise[js.Any] = js.native
-  def setActive(flag: Boolean, opts: js.Object): JQueryPromise[js.Any] = js.native
-  def setActive(flag: Unit, opts: js.Object): JQueryPromise[js.Any] = js.native
+  def setActive(): JQueryPromise[Any] = js.native
+  def setActive(flag: Boolean): JQueryPromise[Any] = js.native
+  def setActive(flag: Boolean, opts: js.Object): JQueryPromise[Any] = js.native
+  def setActive(flag: Unit, opts: js.Object): JQueryPromise[Any] = js.native
   
   /**
     * @param flag pass false to collapse.
     * @param opts additional options. Defaults to {noAnimation:false, noEvents:false}
     */
-  def setExpanded(): JQueryPromise[js.Any] = js.native
-  def setExpanded(flag: Boolean): JQueryPromise[js.Any] = js.native
-  def setExpanded(flag: Boolean, opts: js.Object): JQueryPromise[js.Any] = js.native
-  def setExpanded(flag: Unit, opts: js.Object): JQueryPromise[js.Any] = js.native
+  def setExpanded(): JQueryPromise[Any] = js.native
+  def setExpanded(flag: Boolean): JQueryPromise[Any] = js.native
+  def setExpanded(flag: Boolean, opts: js.Object): JQueryPromise[Any] = js.native
+  def setExpanded(flag: Unit, opts: js.Object): JQueryPromise[Any] = js.native
   
   /**
     * Set keyboard focus to this node.
@@ -461,8 +461,8 @@ trait FancytreeNode extends StObject {
     * @param fn the callback function. Return false to stop iteration, return "skip" to skip this node and its children only.
     * @param includeSelf (default=false)
     */
-  def visit(fn: js.Function1[/* node */ this.type, js.Any]): Boolean = js.native
-  def visit(fn: js.Function1[/* node */ this.type, js.Any], includeSelf: Boolean): Boolean = js.native
+  def visit(fn: js.Function1[/* node */ this.type, Any]): Boolean = js.native
+  def visit(fn: js.Function1[/* node */ this.type, Any], includeSelf: Boolean): Boolean = js.native
   
   /**
     * Call fn(node) for all child nodes and recursively load lazy children.
@@ -472,8 +472,8 @@ trait FancytreeNode extends StObject {
     * @param fn the callback function. Return false to stop iteration, return "skip" to skip this node and its children only.
     * @param includeSelf (default=false)
     */
-  def visitAndLoad(fn: js.Function1[/* node */ this.type, js.Any]): JQueryPromise[js.Any] = js.native
-  def visitAndLoad(fn: js.Function1[/* node */ this.type, js.Any], includeSelf: Boolean): JQueryPromise[js.Any] = js.native
+  def visitAndLoad(fn: js.Function1[/* node */ this.type, Any]): JQueryPromise[Any] = js.native
+  def visitAndLoad(fn: js.Function1[/* node */ this.type, Any], includeSelf: Boolean): JQueryPromise[Any] = js.native
   
   /**
     * Call fn(node) for all parent nodes, bottom-up, including invisible system root.
@@ -483,11 +483,11 @@ trait FancytreeNode extends StObject {
     * @param fn the callback function. Return false to stop iteration, return "skip" to skip this node and its children only.
     * @param includeSelf (default=false)
     */
-  def visitParents(fn: js.Function1[/* node */ this.type, js.Any]): Boolean = js.native
-  def visitParents(fn: js.Function1[/* node */ this.type, js.Any], includeSelf: Boolean): Boolean = js.native
+  def visitParents(fn: js.Function1[/* node */ this.type, Any]): Boolean = js.native
+  def visitParents(fn: js.Function1[/* node */ this.type, Any], includeSelf: Boolean): Boolean = js.native
   
   /**
     * Write warning to browser console (prepending node info)
     */
-  def warn(msg: js.Any): Unit = js.native
+  def warn(msg: Any): Unit = js.native
 }

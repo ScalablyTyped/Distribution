@@ -22,6 +22,6 @@ object BindingCollectionData {
     
     inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    inline def setItemsVarargs(value: BindingData*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: BindingData*): Self = StObject.set(x, "items", js.Array(value*))
   }
 }

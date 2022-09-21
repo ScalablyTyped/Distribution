@@ -42,7 +42,7 @@ object XInteractionFilterSelect {
     Filter: String,
     acquire: () => Unit,
     getFilter: () => String,
-    queryInterface: `type` => js.Any,
+    queryInterface: `type` => Any,
     release: () => Unit,
     select: () => Unit,
     setFilter: String => Unit

@@ -1,12 +1,10 @@
 package typings.gulpUtil
 
 import org.scalablytyped.runtime.Shortcut
+import typings.chalk.mod.ChalkInstance
 import typings.gulpUtil.anon.File
-import typings.gulpUtil.anon.Typeof
-import typings.node.NodeJS.ReadWriteStream
 import typings.node.streamMod.DuplexOptions
 import typings.node.streamMod.Transform
-import typings.std.Date
 import typings.std.Error
 import typings.through2.mod.FlushCallback
 import typings.through2.mod.TransformFunction
@@ -28,7 +26,7 @@ object mod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("gulp-util", "File")
     @js.native
-    class ^ protected ()
+    open class ^ protected ()
       extends StObject
          with NullFile {
       def this(options: ConstructorOptionscontent) = this()
@@ -41,7 +39,7 @@ object mod {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("gulp-util", "File.Class")
     @js.native
-    class Class protected ()
+    open class Class protected ()
       extends typings.vinyl.mod.Class {
       def this(options: ConstructorOptionscontent) = this()
     }
@@ -55,26 +53,28 @@ object mod {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.gulpUtil.mod.PluginErrorOptions because var conflicts: message, name, stack. Inlined fileName, lineNumber, showStack, showProperties, plugin, error */ @JSImport("gulp-util", "PluginError")
   @js.native
-  class PluginError ()
+  open class PluginError ()
     extends StObject
        with Error {
     def this(options: PluginErrorOptions) = this()
     def this(pluginName: String) = this()
     def this(pluginName: String, message: String) = this()
-    def this(pluginName: String, message: Error) = this()
+    def this(pluginName: String, message: js.Error) = this()
     def this(pluginName: String, options: PluginErrorOptions) = this()
     def this(pluginName: String, message: String, options: PluginErrorOptions) = this()
-    def this(pluginName: String, message: Error, options: PluginErrorOptions) = this()
+    def this(pluginName: String, message: js.Error, options: PluginErrorOptions) = this()
     
-    var error: js.UndefOr[Error] = js.native
+    var error: js.UndefOr[js.Error] = js.native
     
     var fileName: js.UndefOr[String] = js.native
     
     var lineNumber: js.UndefOr[Double] = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var message: String = js.native
     
+    /* standard es5 */
     /* CompleteClass */
     var name: String = js.native
     
@@ -103,30 +103,44 @@ object mod {
   
   inline def beep(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beep")().asInstanceOf[Unit]
   
-  inline def buffer(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer")().asInstanceOf[ReadWriteStream]
-  inline def buffer(cb: js.Function2[/* err */ Error, /* data */ js.Array[js.Any], Unit]): ReadWriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(cb.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def buffer(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer")().asInstanceOf[Any]
+  inline def buffer(cb: js.Function2[/* err */ js.Error, /* data */ js.Array[Any], Unit]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(cb.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @JSImport("gulp-util", "colors")
   @js.native
-  val colors: Typeof = js.native
+  val colors: ChalkInstance = js.native
   
-  inline def combine(streams: ReadWriteStream*): js.Function0[ReadWriteStream] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(streams.asInstanceOf[js.Any]).asInstanceOf[js.Function0[ReadWriteStream]]
-  inline def combine(streams: js.Array[ReadWriteStream]): js.Function0[ReadWriteStream] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(streams.asInstanceOf[js.Any]).asInstanceOf[js.Function0[ReadWriteStream]]
+  inline def combine(
+    streams: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any)*
+  ): js.Function0[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(streams.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Function0[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
+  ]]
+  inline def combine(
+    streams: js.Array[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
+    ]
+  ): js.Function0[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(streams.asInstanceOf[js.Any]).asInstanceOf[js.Function0[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodeJS.ReadWriteStream */ Any
+  ]]
   
   object date {
     
-    inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-    inline def apply(now: String): js.Any = ^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def apply(now: String, mask: String): js.Any = (^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def apply(now: String, mask: String, convertLocalTimeToUTC: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], convertLocalTimeToUTC.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def apply(now: String, mask: Unit, convertLocalTimeToUTC: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], convertLocalTimeToUTC.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def apply(now: Unit, mask: String): js.Any = (^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def apply(now: Unit, mask: String, convertLocalTimeToUTC: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], convertLocalTimeToUTC.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def apply(now: Unit, mask: Unit, convertLocalTimeToUTC: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], convertLocalTimeToUTC.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def apply(now: Date): js.Any = ^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    inline def apply(now: Date, mask: String): js.Any = (^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def apply(now: Date, mask: String, convertLocalTimeToUTC: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], convertLocalTimeToUTC.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    inline def apply(now: Date, mask: Unit, convertLocalTimeToUTC: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], convertLocalTimeToUTC.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+    inline def apply(now: String): Any = ^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def apply(now: String, mask: String): Any = (^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def apply(now: String, mask: String, convertLocalTimeToUTC: Boolean): Any = (^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], convertLocalTimeToUTC.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def apply(now: String, mask: Unit, convertLocalTimeToUTC: Boolean): Any = (^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], convertLocalTimeToUTC.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def apply(now: js.Date): Any = ^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any]).asInstanceOf[Any]
+    inline def apply(now: js.Date, mask: String): Any = (^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def apply(now: js.Date, mask: String, convertLocalTimeToUTC: Boolean): Any = (^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], convertLocalTimeToUTC.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def apply(now: js.Date, mask: Unit, convertLocalTimeToUTC: Boolean): Any = (^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], convertLocalTimeToUTC.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def apply(now: Unit, mask: String): Any = (^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def apply(now: Unit, mask: String, convertLocalTimeToUTC: Boolean): Any = (^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], convertLocalTimeToUTC.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def apply(now: Unit, mask: Unit, convertLocalTimeToUTC: Boolean): Any = (^.asInstanceOf[js.Dynamic].apply(now.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], convertLocalTimeToUTC.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     @JSImport("gulp-util", "date")
     @js.native
@@ -134,26 +148,26 @@ object mod {
     
     @JSImport("gulp-util", "date.masks")
     @js.native
-    def masks: js.Any = js.native
-    inline def masks_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("masks")(x.asInstanceOf[js.Any])
+    def masks: Any = js.native
+    inline def masks_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("masks")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("gulp-util", "env")
   @js.native
-  val env: js.Any = js.native
+  val env: Any = js.native
   
-  inline def isBuffer(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBuffer")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isBuffer(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBuffer")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def isNull(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNull")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isNull(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNull")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def isStream(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStream")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isStream(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStream")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("gulp-util", "linefeed")
   @js.native
   val linefeed: String = js.native
   
-  inline def log(message: js.Any, optionalParams: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(message.asInstanceOf[js.Any], optionalParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def log(message: Unit, optionalParams: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(message.asInstanceOf[js.Any], optionalParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def log(message: Any, optionalParams: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(List(message.asInstanceOf[js.Any]).`++`(optionalParams.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+  inline def log(message: Unit, optionalParams: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(List(message.asInstanceOf[js.Any]).`++`(optionalParams.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
   
   inline def noop(): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")().asInstanceOf[Transform]
   inline def noop(opts: Unit, transform: Unit, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].applyDynamic("noop")(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
@@ -174,7 +188,7 @@ object mod {
   
   trait PluginErrorOptions extends StObject {
     
-    var error: js.UndefOr[Error] = js.undefined
+    var error: js.UndefOr[js.Error] = js.undefined
     
     var fileName: js.UndefOr[String] = js.undefined
     
@@ -183,7 +197,7 @@ object mod {
     /**
       * Can be a string or an existing error.
       */
-    var message: js.UndefOr[js.Any] = js.undefined
+    var message: js.UndefOr[Any] = js.undefined
     
     /**
       * The module name of your plugin.
@@ -220,7 +234,7 @@ object mod {
     
     extension [Self <: PluginErrorOptions](x: Self) {
       
-      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
@@ -232,7 +246,7 @@ object mod {
       
       inline def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
       
-      inline def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
       inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       

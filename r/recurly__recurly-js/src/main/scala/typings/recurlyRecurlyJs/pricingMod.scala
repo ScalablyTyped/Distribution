@@ -88,7 +88,7 @@ object pricingMod {
     extends StObject
        with Emitter[PricingEvent] {
     
-    def remove(opts: js.Any, done: VoidFunction): PricingPromise = js.native
+    def remove(opts: Any, done: VoidFunction): PricingPromise = js.native
     
     def reprice(done: VoidFunction): PricingPromise = js.native
     

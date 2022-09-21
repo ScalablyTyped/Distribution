@@ -3,7 +3,6 @@ package typings.three
 import org.scalablytyped.runtime.StringDictionary
 import typings.three.bufferGeometryMod.BufferGeometry
 import typings.three.cameraMod.Camera
-import typings.three.geometryMod.Geometry
 import typings.three.lineSegmentsMod.LineSegments
 import typings.three.materialMod.Material
 import org.scalablytyped.runtime.StObject
@@ -14,11 +13,13 @@ object cameraHelperMod {
   
   @JSImport("three/src/helpers/CameraHelper", "CameraHelper")
   @js.native
-  class CameraHelper protected ()
-    extends LineSegments[Geometry | BufferGeometry, Material | js.Array[Material]] {
+  open class CameraHelper protected ()
+    extends LineSegments[BufferGeometry, Material | js.Array[Material]] {
     def this(camera: Camera) = this()
     
     var camera: Camera = js.native
+    
+    def dispose(): Unit = js.native
     
     var pointMap: StringDictionary[js.Array[Double]] = js.native
     

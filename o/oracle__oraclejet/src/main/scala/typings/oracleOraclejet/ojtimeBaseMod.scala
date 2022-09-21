@@ -28,7 +28,7 @@ object ojtimeBaseMod {
   /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojtime-base.dvtTimeComponentSettableProperties> */
   trait dvtTimeComponentSettablePropertiesLenient
     extends StObject
-       with /* key */ StringDictionary[js.Any] {
+       with /* key */ StringDictionary[Any] {
     
     var trackResize: js.UndefOr[on | off] = js.undefined
     

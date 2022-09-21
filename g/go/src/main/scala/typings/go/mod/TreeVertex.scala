@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * This constructs a vertex that does not know about any Node.
   */
-class TreeVertex () extends LayoutVertex {
+open class TreeVertex () extends LayoutVertex {
   
   /**Gets or sets how this parent node should be aligned relative to its children.*/
   var alignment: EnumValue = js.native

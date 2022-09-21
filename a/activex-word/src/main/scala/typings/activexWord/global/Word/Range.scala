@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Range")
 @js.native
-/* private */ class Range ()
+/* private */ open class Range ()
   extends StObject
      with typings.activexWord.Word.Range

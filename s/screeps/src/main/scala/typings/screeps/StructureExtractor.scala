@@ -11,7 +11,7 @@ trait StructureExtractor
   extends StObject
      with OwnedStructure[STRUCTURE_EXTRACTOR]
      with AnyOwnedStructure
-     with ConcreteStructure[js.Any] {
+     with ConcreteStructure[Any] {
   
   /**
     * The amount of game ticks until the next harvest action is possible.

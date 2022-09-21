@@ -39,12 +39,6 @@ object MergeDeveloperIdentitiesInput {
     __obj.asInstanceOf[MergeDeveloperIdentitiesInput]
   }
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "MergeDeveloperIdentitiesInput")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  inline def filterSensitiveLog(obj: MergeDeveloperIdentitiesInput): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  
   extension [Self <: MergeDeveloperIdentitiesInput](x: Self) {
     
     inline def setDestinationUserIdentifier(value: String): Self = StObject.set(x, "DestinationUserIdentifier", value.asInstanceOf[js.Any])

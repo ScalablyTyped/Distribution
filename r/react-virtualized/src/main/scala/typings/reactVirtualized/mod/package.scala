@@ -1,38 +1,51 @@
 package typings.reactVirtualized.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.react.mod.FunctionComponent
+import typings.react.mod.ReactElement
+import typings.reactVirtualized.anon.SortBy
+import typings.reactVirtualized.esGridMod.GridCellRangeRenderer
+import typings.reactVirtualized.esGridMod.OverscanIndicesGetter
+import typings.reactVirtualized.esMasonryMod.Positioner
+import typings.reactVirtualized.esMasonryMod.createCellPositionerParams
+import typings.reactVirtualized.esTableMod.MultiSortOptions
+import typings.reactVirtualized.esTableMod.MultiSortReturn
+import typings.reactVirtualized.esTableMod.SortDirectionStatic
+import typings.reactVirtualized.esTableMod.TableCellDataGetter
+import typings.reactVirtualized.esTableMod.TableCellRenderer
+import typings.reactVirtualized.esTableMod.TableHeaderRowRenderer
+import typings.reactVirtualized.esTableMod.TableRowRenderer
+import typings.reactVirtualized.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def IS_SCROLLING_TIMEOUT: /* 150 */ scala.Double = typings.reactVirtualized.mod.^.asInstanceOf[js.Dynamic].selectDynamic("IS_SCROLLING_TIMEOUT").asInstanceOf[/* 150 */ scala.Double]
+inline def IS_SCROLLING_TIMEOUT: /* 150 */ Double = ^.asInstanceOf[js.Dynamic].selectDynamic("IS_SCROLLING_TIMEOUT").asInstanceOf[/* 150 */ Double]
 
-inline def SortDirection: typings.reactVirtualized.esTableMod.SortDirectionStatic = typings.reactVirtualized.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SortDirection").asInstanceOf[typings.reactVirtualized.esTableMod.SortDirectionStatic]
+inline def SortDirection: SortDirectionStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("SortDirection").asInstanceOf[SortDirectionStatic]
 
-inline def SortIndicator: typings.react.mod.StatelessComponent[typings.reactVirtualized.anon.SortDirection] = typings.reactVirtualized.mod.^.asInstanceOf[js.Dynamic].selectDynamic("SortIndicator").asInstanceOf[typings.react.mod.StatelessComponent[typings.reactVirtualized.anon.SortDirection]]
+inline def SortIndicator: FunctionComponent[typings.reactVirtualized.anon.SortDirection] = ^.asInstanceOf[js.Dynamic].selectDynamic("SortIndicator").asInstanceOf[FunctionComponent[typings.reactVirtualized.anon.SortDirection]]
 
-inline def accessibilityOverscanIndicesGetter: typings.reactVirtualized.esGridMod.OverscanIndicesGetter = typings.reactVirtualized.mod.^.asInstanceOf[js.Dynamic].selectDynamic("accessibilityOverscanIndicesGetter").asInstanceOf[typings.reactVirtualized.esGridMod.OverscanIndicesGetter]
+inline def accessibilityOverscanIndicesGetter: OverscanIndicesGetter = ^.asInstanceOf[js.Dynamic].selectDynamic("accessibilityOverscanIndicesGetter").asInstanceOf[OverscanIndicesGetter]
 
-inline def createMasonryCellPositioner(params: typings.reactVirtualized.esMasonryMod.createCellPositionerParams): typings.reactVirtualized.esMasonryMod.Positioner = typings.reactVirtualized.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createMasonryCellPositioner")(params.asInstanceOf[js.Any]).asInstanceOf[typings.reactVirtualized.esMasonryMod.Positioner]
+inline def createMasonryCellPositioner(params: createCellPositionerParams): Positioner = ^.asInstanceOf[js.Dynamic].applyDynamic("createMasonryCellPositioner")(params.asInstanceOf[js.Any]).asInstanceOf[Positioner]
 
-inline def createTableMultiSort(sortCallback: js.Function1[/* params */ typings.reactVirtualized.anon.SortBy, scala.Unit]): typings.reactVirtualized.esTableMod.MultiSortReturn = typings.reactVirtualized.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createTableMultiSort")(sortCallback.asInstanceOf[js.Any]).asInstanceOf[typings.reactVirtualized.esTableMod.MultiSortReturn]
-inline def createTableMultiSort(
-  sortCallback: js.Function1[/* params */ typings.reactVirtualized.anon.SortBy, scala.Unit],
-  options: typings.reactVirtualized.esTableMod.MultiSortOptions
-): typings.reactVirtualized.esTableMod.MultiSortReturn = (typings.reactVirtualized.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createTableMultiSort")(sortCallback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.reactVirtualized.esTableMod.MultiSortReturn]
+inline def createTableMultiSort(sortCallback: js.Function1[/* params */ SortBy, Unit]): MultiSortReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("createTableMultiSort")(sortCallback.asInstanceOf[js.Any]).asInstanceOf[MultiSortReturn]
+inline def createTableMultiSort(sortCallback: js.Function1[/* params */ SortBy, Unit], options: MultiSortOptions): MultiSortReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("createTableMultiSort")(sortCallback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MultiSortReturn]
 
-inline def defaultCellRangeRenderer: typings.reactVirtualized.esGridMod.GridCellRangeRenderer = typings.reactVirtualized.mod.^.asInstanceOf[js.Dynamic].selectDynamic("defaultCellRangeRenderer").asInstanceOf[typings.reactVirtualized.esGridMod.GridCellRangeRenderer]
+inline def defaultCellRangeRenderer: GridCellRangeRenderer = ^.asInstanceOf[js.Dynamic].selectDynamic("defaultCellRangeRenderer").asInstanceOf[GridCellRangeRenderer]
 
-inline def defaultOverscanIndicesGetter: typings.reactVirtualized.esGridMod.OverscanIndicesGetter = typings.reactVirtualized.mod.^.asInstanceOf[js.Dynamic].selectDynamic("defaultOverscanIndicesGetter").asInstanceOf[typings.reactVirtualized.esGridMod.OverscanIndicesGetter]
+inline def defaultOverscanIndicesGetter: OverscanIndicesGetter = ^.asInstanceOf[js.Dynamic].selectDynamic("defaultOverscanIndicesGetter").asInstanceOf[OverscanIndicesGetter]
 
-inline def defaultTableCellDataGetter: typings.reactVirtualized.esTableMod.TableCellDataGetter = typings.reactVirtualized.mod.^.asInstanceOf[js.Dynamic].selectDynamic("defaultTableCellDataGetter").asInstanceOf[typings.reactVirtualized.esTableMod.TableCellDataGetter]
+inline def defaultTableCellDataGetter: TableCellDataGetter = ^.asInstanceOf[js.Dynamic].selectDynamic("defaultTableCellDataGetter").asInstanceOf[TableCellDataGetter]
 
-inline def defaultTableCellRenderer: typings.reactVirtualized.esTableMod.TableCellRenderer = typings.reactVirtualized.mod.^.asInstanceOf[js.Dynamic].selectDynamic("defaultTableCellRenderer").asInstanceOf[typings.reactVirtualized.esTableMod.TableCellRenderer]
+inline def defaultTableCellRenderer: TableCellRenderer = ^.asInstanceOf[js.Dynamic].selectDynamic("defaultTableCellRenderer").asInstanceOf[TableCellRenderer]
 
-inline def defaultTableHeaderRenderer(): js.Array[typings.react.mod.ReactElement] = typings.reactVirtualized.mod.^.asInstanceOf[js.Dynamic].applyDynamic("defaultTableHeaderRenderer")().asInstanceOf[js.Array[typings.react.mod.ReactElement]]
+inline def defaultTableHeaderRenderer(): js.Array[ReactElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultTableHeaderRenderer")().asInstanceOf[js.Array[ReactElement]]
 
-inline def defaultTableHeaderRowRenderer: typings.reactVirtualized.esTableMod.TableHeaderRowRenderer = typings.reactVirtualized.mod.^.asInstanceOf[js.Dynamic].selectDynamic("defaultTableHeaderRowRenderer").asInstanceOf[typings.reactVirtualized.esTableMod.TableHeaderRowRenderer]
+inline def defaultTableHeaderRowRenderer: TableHeaderRowRenderer = ^.asInstanceOf[js.Dynamic].selectDynamic("defaultTableHeaderRowRenderer").asInstanceOf[TableHeaderRowRenderer]
 
-inline def defaultTableRowRenderer: typings.reactVirtualized.esTableMod.TableRowRenderer = typings.reactVirtualized.mod.^.asInstanceOf[js.Dynamic].selectDynamic("defaultTableRowRenderer").asInstanceOf[typings.reactVirtualized.esTableMod.TableRowRenderer]
+inline def defaultTableRowRenderer: TableRowRenderer = ^.asInstanceOf[js.Dynamic].selectDynamic("defaultTableRowRenderer").asInstanceOf[TableRowRenderer]
 
-type Map[T] = org.scalablytyped.runtime.StringDictionary[T]
+type Map[T] = StringDictionary[T]

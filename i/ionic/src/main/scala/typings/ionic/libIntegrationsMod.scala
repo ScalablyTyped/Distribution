@@ -53,9 +53,9 @@ object libIntegrationsMod {
   
   @JSImport("ionic/lib/integrations", "IntegrationConfig")
   @js.native
-  class IntegrationConfig protected () extends BaseConfig[ProjectIntegration] {
+  open class IntegrationConfig protected () extends BaseConfig[ProjectIntegration] {
     def this(p: String) = this()
-    def this(p: String, hasPathPrefix: BaseConfigOptions) = this()
+    def this(p: String, hasSpacesPathPrefix: BaseConfigOptions) = this()
     
     def provideDefaults(c: PartialReadonlyProjectInt): ProjectIntegration = js.native
   }

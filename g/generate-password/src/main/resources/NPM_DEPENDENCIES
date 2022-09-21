@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "generate-password" : "1.5.1"
+      "generate-password" : "1.7.0"
     }
   ],
   "test-dependencies" : [
     {
-      "generate-password" : "1.5.1"
+      "generate-password" : "1.7.0"
     }
   ],
   "compile-devDependencies" : [

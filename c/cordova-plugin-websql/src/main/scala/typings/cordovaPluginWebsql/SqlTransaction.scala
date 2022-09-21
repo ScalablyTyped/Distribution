@@ -15,23 +15,23 @@ trait SqlTransaction extends StObject {
     * @param errorCallback   Called, when query fails. Return false to continue transaction; true or no return to rollback.
     */
   def executeSql(sql: String): Unit = js.native
-  def executeSql(sql: String, arguments: js.Array[js.Any]): Unit = js.native
+  def executeSql(sql: String, arguments: js.Array[Any]): Unit = js.native
   def executeSql(
     sql: String,
-    arguments: js.Array[js.Any],
+    arguments: js.Array[Any],
     successCallback: js.Function2[/* transaction */ this.type, /* resultSet */ SqlResultSet, Unit]
   ): Unit = js.native
   def executeSql(
     sql: String,
-    arguments: js.Array[js.Any],
+    arguments: js.Array[Any],
     successCallback: js.Function2[/* transaction */ this.type, /* resultSet */ SqlResultSet, Unit],
-    errorCallback: js.Function2[/* transaction */ this.type, /* error */ SqlError, js.Any]
+    errorCallback: js.Function2[/* transaction */ this.type, /* error */ SqlError, Any]
   ): Unit = js.native
   def executeSql(
     sql: String,
-    arguments: js.Array[js.Any],
+    arguments: js.Array[Any],
     successCallback: Unit,
-    errorCallback: js.Function2[/* transaction */ this.type, /* error */ SqlError, js.Any]
+    errorCallback: js.Function2[/* transaction */ this.type, /* error */ SqlError, Any]
   ): Unit = js.native
   def executeSql(
     sql: String,
@@ -42,12 +42,12 @@ trait SqlTransaction extends StObject {
     sql: String,
     arguments: Unit,
     successCallback: js.Function2[/* transaction */ this.type, /* resultSet */ SqlResultSet, Unit],
-    errorCallback: js.Function2[/* transaction */ this.type, /* error */ SqlError, js.Any]
+    errorCallback: js.Function2[/* transaction */ this.type, /* error */ SqlError, Any]
   ): Unit = js.native
   def executeSql(
     sql: String,
     arguments: Unit,
     successCallback: Unit,
-    errorCallback: js.Function2[/* transaction */ this.type, /* error */ SqlError, js.Any]
+    errorCallback: js.Function2[/* transaction */ this.type, /* error */ SqlError, Any]
   ): Unit = js.native
 }

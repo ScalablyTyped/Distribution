@@ -14,7 +14,7 @@ trait ASPxClientVerticalGridRecordClickEventArgs
   /**
     * Provides access to the parameters associated with the ASPxClientVerticalGrid.RecordClick event.
     */
-  var htmlEvent: js.Any
+  var htmlEvent: Any
   
   /**
     * Gets the processed record's visible index.
@@ -23,14 +23,14 @@ trait ASPxClientVerticalGridRecordClickEventArgs
 }
 object ASPxClientVerticalGridRecordClickEventArgs {
   
-  inline def apply(cancel: Boolean, htmlEvent: js.Any, visibleIndex: Double): ASPxClientVerticalGridRecordClickEventArgs = {
+  inline def apply(cancel: Boolean, htmlEvent: Any, visibleIndex: Double): ASPxClientVerticalGridRecordClickEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], htmlEvent = htmlEvent.asInstanceOf[js.Any], visibleIndex = visibleIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientVerticalGridRecordClickEventArgs]
   }
   
   extension [Self <: ASPxClientVerticalGridRecordClickEventArgs](x: Self) {
     
-    inline def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+    inline def setHtmlEvent(value: Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
     
     inline def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
   }

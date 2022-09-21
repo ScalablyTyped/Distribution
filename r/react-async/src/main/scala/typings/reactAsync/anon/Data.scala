@@ -3,7 +3,6 @@ package typings.reactAsync.anon
 import typings.reactAsync.reactAsyncBooleans.`false`
 import typings.reactAsync.reactAsyncBooleans.`true`
 import typings.reactAsync.reactAsyncStrings.fulfilled
-import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +13,7 @@ trait Data[T] extends StObject {
   
   var error: Unit
   
-  var finishedAt: Date
+  var finishedAt: js.Date
   
   var isFulfilled: `true`
   
@@ -30,7 +29,7 @@ trait Data[T] extends StObject {
   
   var isSettled: `true`
   
-  var startedAt: Date
+  var startedAt: js.Date
   
   var status: fulfilled
   
@@ -38,7 +37,7 @@ trait Data[T] extends StObject {
 }
 object Data {
   
-  inline def apply[T](data: T, error: Unit, finishedAt: Date, startedAt: Date, value: T): Data[T] = {
+  inline def apply[T](data: T, error: Unit, finishedAt: js.Date, startedAt: js.Date, value: T): Data[T] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], finishedAt = finishedAt.asInstanceOf[js.Any], isFulfilled = true, isInitial = false, isLoading = false, isPending = false, isRejected = false, isResolved = true, isSettled = true, startedAt = startedAt.asInstanceOf[js.Any], status = "fulfilled", value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Data[T]]
   }
@@ -49,7 +48,7 @@ object Data {
     
     inline def setError(value: Unit): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    inline def setFinishedAt(value: Date): Self = StObject.set(x, "finishedAt", value.asInstanceOf[js.Any])
+    inline def setFinishedAt(value: js.Date): Self = StObject.set(x, "finishedAt", value.asInstanceOf[js.Any])
     
     inline def setIsFulfilled(value: `true`): Self = StObject.set(x, "isFulfilled", value.asInstanceOf[js.Any])
     
@@ -65,7 +64,7 @@ object Data {
     
     inline def setIsSettled(value: `true`): Self = StObject.set(x, "isSettled", value.asInstanceOf[js.Any])
     
-    inline def setStartedAt(value: Date): Self = StObject.set(x, "startedAt", value.asInstanceOf[js.Any])
+    inline def setStartedAt(value: js.Date): Self = StObject.set(x, "startedAt", value.asInstanceOf[js.Any])
     
     inline def setStatus(value: fulfilled): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

@@ -5,15 +5,14 @@ import typings.koa.mod.DefaultContext
 import typings.koa.mod.DefaultState
 import typings.koa.mod.Middleware
 import typings.koa.mod.Request
-import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Middleware[DefaultState, DefaultContext]]
-  inline def apply(options: Options): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def apply(): Middleware[DefaultState, DefaultContext, Any] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Middleware[DefaultState, DefaultContext, Any]]
+  inline def apply(options: Options): Middleware[DefaultState, DefaultContext, Any] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext, Any]]
   
   @JSImport("koa-proxy", JSImport.Namespace)
   @js.native
@@ -25,6 +24,8 @@ object mod {
   
   trait Options extends StObject {
     
+    var encoding: js.UndefOr[String | Null] = js.undefined
+    
     var followRedirect: js.UndefOr[Boolean] = js.undefined
     
     var host: js.UndefOr[String] = js.undefined
@@ -33,10 +34,10 @@ object mod {
     
     var map: js.UndefOr[IndexedObject | MapFunction] = js.undefined
     
-    var `match`: js.UndefOr[RegExp] = js.undefined
+    var `match`: js.UndefOr[js.RegExp] = js.undefined
     
     // case-insensitive
-    var overrideResponseHeaders: js.UndefOr[js.Any] = js.undefined
+    var overrideResponseHeaders: js.UndefOr[Any] = js.undefined
     
     var requestOptions: js.UndefOr[RequestOptionFunc | IndexedObject] = js.undefined
     
@@ -58,6 +59,12 @@ object mod {
     
     extension [Self <: Options](x: Self) {
       
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      
+      inline def setEncodingNull: Self = StObject.set(x, "encoding", null)
+      
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      
       inline def setFollowRedirect(value: Boolean): Self = StObject.set(x, "followRedirect", value.asInstanceOf[js.Any])
       
       inline def setFollowRedirectUndefined: Self = StObject.set(x, "followRedirect", js.undefined)
@@ -76,17 +83,17 @@ object mod {
       
       inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
       
-      inline def setMatch(value: RegExp): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+      inline def setMatch(value: js.RegExp): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
       inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
       
-      inline def setOverrideResponseHeaders(value: js.Any): Self = StObject.set(x, "overrideResponseHeaders", value.asInstanceOf[js.Any])
+      inline def setOverrideResponseHeaders(value: Any): Self = StObject.set(x, "overrideResponseHeaders", value.asInstanceOf[js.Any])
       
       inline def setOverrideResponseHeadersUndefined: Self = StObject.set(x, "overrideResponseHeaders", js.undefined)
       
       inline def setRequestOptions(value: RequestOptionFunc | IndexedObject): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
       
-      inline def setRequestOptionsFunction2(value: (/* request */ Request, /* opts */ js.Any) => js.Any): Self = StObject.set(x, "requestOptions", js.Any.fromFunction2(value))
+      inline def setRequestOptionsFunction2(value: (/* request */ Request, /* opts */ Any) => Any): Self = StObject.set(x, "requestOptions", js.Any.fromFunction2(value))
       
       inline def setRequestOptionsUndefined: Self = StObject.set(x, "requestOptions", js.undefined)
       
@@ -94,13 +101,13 @@ object mod {
       
       inline def setSuppressRequestHeadersUndefined: Self = StObject.set(x, "suppressRequestHeaders", js.undefined)
       
-      inline def setSuppressRequestHeadersVarargs(value: String*): Self = StObject.set(x, "suppressRequestHeaders", js.Array(value :_*))
+      inline def setSuppressRequestHeadersVarargs(value: String*): Self = StObject.set(x, "suppressRequestHeaders", js.Array(value*))
       
       inline def setSuppressResponseHeaders(value: js.Array[String]): Self = StObject.set(x, "suppressResponseHeaders", value.asInstanceOf[js.Any])
       
       inline def setSuppressResponseHeadersUndefined: Self = StObject.set(x, "suppressResponseHeaders", js.undefined)
       
-      inline def setSuppressResponseHeadersVarargs(value: String*): Self = StObject.set(x, "suppressResponseHeaders", js.Array(value :_*))
+      inline def setSuppressResponseHeadersVarargs(value: String*): Self = StObject.set(x, "suppressResponseHeaders", js.Array(value*))
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
@@ -112,5 +119,5 @@ object mod {
     }
   }
   
-  type RequestOptionFunc = js.Function2[/* request */ Request, /* opts */ js.Any, js.Any]
+  type RequestOptionFunc = js.Function2[/* request */ Request, /* opts */ Any, Any]
 }

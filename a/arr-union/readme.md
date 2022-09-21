@@ -10,10 +10,10 @@ Combines a list of arrays, returning a single array with unique values, using st
 | ------------------ | :-------------: |
 | Full name          | arr-union |
 | Keywords           | add, append, array, arrays, combine, concat, extend, union, uniq, unique, util, utility, utils |
-| # releases         | 0 |
-| # dependents       | 144 |
-| # downloads        | 706344532 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7.632813166666667E7 |
+| # stars            | 24.0 |
 
 ## Links
 - [Homepage](https://github.com/jonschlinkert/arr-union)

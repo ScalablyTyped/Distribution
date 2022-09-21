@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HoverClientCapabilities extends StObject {
   
   /**
-    * Client supports the follow content formats for the content
+    * Client supports the following content formats for the content
     * property. The order describes the preferred format of the client.
     */
   var contentFormat: js.UndefOr[js.Array[MarkupKind]] = js.undefined
@@ -31,7 +31,7 @@ object HoverClientCapabilities {
     
     inline def setContentFormatUndefined: Self = StObject.set(x, "contentFormat", js.undefined)
     
-    inline def setContentFormatVarargs(value: MarkupKind*): Self = StObject.set(x, "contentFormat", js.Array(value :_*))
+    inline def setContentFormatVarargs(value: MarkupKind*): Self = StObject.set(x, "contentFormat", js.Array(value*))
     
     inline def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
     

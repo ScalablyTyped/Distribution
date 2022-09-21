@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("CUI.RibbonBuildOptions")
 @js.native
-class RibbonBuildOptions ()
+open class RibbonBuildOptions ()
   extends StObject
      with typings.sharepoint.CUI.BuildOptions {
   
@@ -17,7 +17,7 @@ class RibbonBuildOptions ()
   var clientID: String = js.native
   
   /* CompleteClass */
-  var dataExtensions: js.Array[js.Any] = js.native
+  var dataExtensions: js.Array[Any] = js.native
   
   /* CompleteClass */
   var fixedPositioningEnabled: Boolean = js.native

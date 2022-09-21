@@ -14,5 +14,5 @@ trait DetailEvent[D]
   var detail: D = js.native
   
   @JSName("target")
-  var target_DetailEvent: EventTarget & (Entity[ObjectMap[Component[js.Any, System[js.Any]]]]) = js.native
+  var target_DetailEvent: EventTarget & (Entity[ObjectMap[Component[Any, System[Any]]]]) = js.native
 }

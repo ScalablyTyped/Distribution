@@ -28,7 +28,7 @@ object DeleteOrderDealsRequest {
     
     inline def setDealIdsUndefined: Self = StObject.set(x, "dealIds", js.undefined)
     
-    inline def setDealIdsVarargs(value: String*): Self = StObject.set(x, "dealIds", js.Array(value :_*))
+    inline def setDealIdsVarargs(value: String*): Self = StObject.set(x, "dealIds", js.Array(value*))
     
     inline def setProposalRevisionNumber(value: String): Self = StObject.set(x, "proposalRevisionNumber", value.asInstanceOf[js.Any])
     

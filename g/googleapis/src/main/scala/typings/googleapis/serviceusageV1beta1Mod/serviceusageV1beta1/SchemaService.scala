@@ -4,34 +4,27 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A service that is available for use by the consumer.
-  */
 trait SchemaService extends StObject {
   
   /**
-    * The service configuration of the available service. Some fields may be
-    * filtered out of the configuration in responses to the `ListServices`
-    * method. These fields are present only in responses to the `GetService`
-    * method.
+    * The service configuration of the available service. Some fields may be filtered out of the configuration in responses to the `ListServices` method. These fields are present only in responses to the `GetService` method.
     */
   var config: js.UndefOr[SchemaServiceConfig] = js.undefined
   
   /**
-    * The resource name of the consumer and service.  A valid name would be: -
-    * projects/123/services/serviceusage.googleapis.com
+    * The resource name of the consumer and service. A valid name would be: - `projects/123/services/serviceusage.googleapis.com`
     */
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /**
-    * The resource name of the consumer.  A valid name would be: - projects/123
+    * The resource name of the consumer. A valid name would be: - `projects/123`
     */
-  var parent: js.UndefOr[String] = js.undefined
+  var parent: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Whether or not the service has been enabled for use by the consumer.
     */
-  var state: js.UndefOr[String] = js.undefined
+  var state: js.UndefOr[String | Null] = js.undefined
 }
 object SchemaService {
   
@@ -48,13 +41,19 @@ object SchemaService {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
+    inline def setParentNull: Self = StObject.set(x, "parent", null)
+    
     inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateNull: Self = StObject.set(x, "state", null)
     
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }

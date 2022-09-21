@@ -5,6 +5,7 @@ import typings.rcPicker.interfaceMod.CustomFormat
 import typings.rcPicker.interfaceMod.PanelMode
 import typings.rcPicker.interfaceMod.PickerMode
 import typings.react.mod.KeyboardEvent
+import typings.std.Event
 import typings.std.HTMLElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
@@ -147,6 +148,8 @@ object uiUtilMod {
   inline def getInputSize[DateType](picker: Unit, format: CustomFormat[DateType], generateConfig: GenerateConfig[DateType]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputSize")(picker.asInstanceOf[js.Any], format.asInstanceOf[js.Any], generateConfig.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def getInputSize[DateType](picker: PickerMode, format: String, generateConfig: GenerateConfig[DateType]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputSize")(picker.asInstanceOf[js.Any], format.asInstanceOf[js.Any], generateConfig.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def getInputSize[DateType](picker: PickerMode, format: CustomFormat[DateType], generateConfig: GenerateConfig[DateType]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputSize")(picker.asInstanceOf[js.Any], format.asInstanceOf[js.Any], generateConfig.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  inline def getTargetFromEvent(e: Event): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("getTargetFromEvent")(e.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
   
   inline def scrollTo(element: HTMLElement, to: Double, duration: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollTo")(element.asInstanceOf[js.Any], to.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Unit]
   

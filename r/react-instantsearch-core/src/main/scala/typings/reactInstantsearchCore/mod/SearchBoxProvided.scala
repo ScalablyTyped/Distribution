@@ -13,11 +13,11 @@ trait SearchBoxProvided extends StObject {
   var isSearchStalled: Boolean
   
   /** a function to change the current query */
-  def refine(args: js.Any*): js.Any
+  def refine(args: Any*): Any
 }
 object SearchBoxProvided {
   
-  inline def apply(currentRefinement: String, isSearchStalled: Boolean, refine: /* repeated */ js.Any => js.Any): SearchBoxProvided = {
+  inline def apply(currentRefinement: String, isSearchStalled: Boolean, refine: /* repeated */ Any => Any): SearchBoxProvided = {
     val __obj = js.Dynamic.literal(currentRefinement = currentRefinement.asInstanceOf[js.Any], isSearchStalled = isSearchStalled.asInstanceOf[js.Any], refine = js.Any.fromFunction1(refine))
     __obj.asInstanceOf[SearchBoxProvided]
   }
@@ -28,6 +28,6 @@ object SearchBoxProvided {
     
     inline def setIsSearchStalled(value: Boolean): Self = StObject.set(x, "isSearchStalled", value.asInstanceOf[js.Any])
     
-    inline def setRefine(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "refine", js.Any.fromFunction1(value))
+    inline def setRefine(value: /* repeated */ Any => Any): Self = StObject.set(x, "refine", js.Any.fromFunction1(value))
   }
 }

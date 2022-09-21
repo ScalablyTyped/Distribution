@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Event extends StObject {
   
   /**
-    * The AWS access key ID that was used to sign the request. If the request was made with temporary security credentials, this is the access key ID of the temporary credentials.
+    * The Amazon Web Services access key ID that was used to sign the request. If the request was made with temporary security credentials, this is the access key ID of the temporary credentials.
     */
   var AccessKeyId: js.UndefOr[String] = js.undefined
   
@@ -27,14 +27,14 @@ trait Event extends StObject {
   var EventName: js.UndefOr[String] = js.undefined
   
   /**
-    * The AWS service that the request was made to.
+    * The Amazon Web Services service to which the request was made.
     */
   var EventSource: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time of the event returned.
     */
-  var EventTime: js.UndefOr[Date] = js.undefined
+  var EventTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Information about whether the event is a write event or a read event. 
@@ -80,7 +80,7 @@ object Event {
     
     inline def setEventSourceUndefined: Self = StObject.set(x, "EventSource", js.undefined)
     
-    inline def setEventTime(value: Date): Self = StObject.set(x, "EventTime", value.asInstanceOf[js.Any])
+    inline def setEventTime(value: js.Date): Self = StObject.set(x, "EventTime", value.asInstanceOf[js.Any])
     
     inline def setEventTimeUndefined: Self = StObject.set(x, "EventTime", js.undefined)
     
@@ -92,7 +92,7 @@ object Event {
     
     inline def setResourcesUndefined: Self = StObject.set(x, "Resources", js.undefined)
     
-    inline def setResourcesVarargs(value: Resource*): Self = StObject.set(x, "Resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: Resource*): Self = StObject.set(x, "Resources", js.Array(value*))
     
     inline def setUsername(value: String): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
     

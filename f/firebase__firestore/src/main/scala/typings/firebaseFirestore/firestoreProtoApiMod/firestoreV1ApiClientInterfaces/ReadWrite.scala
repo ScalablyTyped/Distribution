@@ -1,19 +1,24 @@
 package typings.firebaseFirestore.firestoreProtoApiMod.firestoreV1ApiClientInterfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ReadWrite extends js.Object {
+trait ReadWrite extends StObject {
+  
   var retryTransaction: js.UndefOr[String] = js.undefined
 }
-
 object ReadWrite {
-  @scala.inline
-  def apply(retryTransaction: String = null): ReadWrite = {
+  
+  inline def apply(): ReadWrite = {
     val __obj = js.Dynamic.literal()
-    if (retryTransaction != null) __obj.updateDynamic("retryTransaction")(retryTransaction.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadWrite]
   }
+  
+  extension [Self <: ReadWrite](x: Self) {
+    
+    inline def setRetryTransaction(value: String): Self = StObject.set(x, "retryTransaction", value.asInstanceOf[js.Any])
+    
+    inline def setRetryTransactionUndefined: Self = StObject.set(x, "retryTransaction", js.undefined)
+  }
 }
-

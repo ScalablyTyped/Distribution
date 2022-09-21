@@ -34,6 +34,6 @@ object StateVariableDeclaration {
     
     inline def setVariables(value: js.Array[VariableDeclaration]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     
-    inline def setVariablesVarargs(value: VariableDeclaration*): Self = StObject.set(x, "variables", js.Array(value :_*))
+    inline def setVariablesVarargs(value: VariableDeclaration*): Self = StObject.set(x, "variables", js.Array(value*))
   }
 }

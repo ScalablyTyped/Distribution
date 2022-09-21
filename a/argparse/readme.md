@@ -10,10 +10,10 @@ CLI arguments parser. Native port of python's argparse.
 | ------------------ | :-------------: |
 | Full name          | argparse |
 | Keywords           | cli, parser, argparse, option, args |
-| # releases         | 1 |
-| # dependents       | 1002 |
-| # downloads        | 647436599 |
-| # stars            | 21 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1.7831620033333334E8 |
+| # stars            | 445.0 |
 
 ## Links
 - [Homepage](https://github.com/nodeca/argparse#readme)

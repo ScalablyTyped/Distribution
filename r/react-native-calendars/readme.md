@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-calendars
 
-Typings are for version 1.20
+Typings are for version 1.1264
 
 ## Library description:
 React Native Calendar Components
@@ -10,10 +10,10 @@ React Native Calendar Components
 | ------------------ | :-------------: |
 | Full name          | react-native-calendars |
 | Keywords           | - |
-| # releases         | 1230 |
-| # dependents       | 41 |
-| # downloads        | 2149005 |
-| # stars            | 5 |
+| # releases         | 1089 |
+| # dependents       | 0.0 |
+| # downloads        | 385186.6666666667 |
+| # stars            | 7996.0 |
 
 ## Links
 - [Homepage](https://github.com/wix/react-native-calendars#readme)

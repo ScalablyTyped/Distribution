@@ -12,7 +12,7 @@ trait IAuto
     * @param ownerContext Object
     */
   @JSName("calculate")
-  var calculate_IAuto: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var calculate_IAuto: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
   var setHeightInDom: js.UndefOr[Boolean] = js.undefined
@@ -29,7 +29,7 @@ object IAuto {
   
   extension [Self <: IAuto](x: Self) {
     
-    inline def setCalculate(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "calculate", js.Any.fromFunction1(value))
+    inline def setCalculate(value: /* ownerContext */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "calculate", js.Any.fromFunction1(value))
     
     inline def setCalculateUndefined: Self = StObject.set(x, "calculate", js.undefined)
     

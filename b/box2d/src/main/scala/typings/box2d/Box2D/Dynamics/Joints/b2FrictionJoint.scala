@@ -58,11 +58,11 @@ object b2FrictionJoint {
     GetReactionForce: Double => b2Vec2,
     GetReactionTorque: Double => Double,
     GetType: () => Double,
-    GetUserData: () => js.Any,
+    GetUserData: () => Any,
     IsActive: () => Boolean,
     SetMaxForce: Double => Unit,
     SetMaxTorque: Double => Unit,
-    SetUserData: js.Any => Unit,
+    SetUserData: Any => Unit,
     m_angularMass: Double,
     m_linearMass: b2Mat22
   ): b2FrictionJoint = {

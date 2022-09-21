@@ -11,9 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait BigUint64ArrayConstructor
   extends StObject
-     with Instantiable0[BigUint64Array]
-     with Instantiable1[
-      (/* buffer */ ArrayBufferLike) | (/* length */ Double) | (/* array */ Iterable[js.BigInt]), 
+     with /* standard es2020.bigint */
+Instantiable0[BigUint64Array]
+     with /* standard es2020.bigint */
+Instantiable1[
+      (/* buffer */ ArrayBufferLike) | (/* length */ Double) | (/* array */ js.Iterable[js.BigInt]), 
       BigUint64Array
     ]
      with Instantiable2[/* buffer */ ArrayBufferLike, /* byteOffset */ Double, BigUint64Array]
@@ -25,6 +27,7 @@ trait BigUint64ArrayConstructor
     ] {
   
   /** The size in bytes of each element in the array. */
+  /* standard es2020.bigint */
   val BYTES_PER_ELEMENT: Double = js.native
   
   /**
@@ -33,17 +36,16 @@ trait BigUint64ArrayConstructor
     * @param mapfn A mapping function to call on every element of the array.
     * @param thisArg Value of 'this' used to invoke the mapfn.
     */
+  /* standard es2020.bigint */
   def from(arrayLike: ArrayLike[js.BigInt]): BigUint64Array = js.native
+  /* standard es2020.bigint */
   def from[U](arrayLike: ArrayLike[U], mapfn: js.Function2[/* v */ U, /* k */ Double, js.BigInt]): BigUint64Array = js.native
-  def from[U](
-    arrayLike: ArrayLike[U],
-    mapfn: js.Function2[/* v */ U, /* k */ Double, js.BigInt],
-    thisArg: js.Any
-  ): BigUint64Array = js.native
+  def from[U](arrayLike: ArrayLike[U], mapfn: js.Function2[/* v */ U, /* k */ Double, js.BigInt], thisArg: Any): BigUint64Array = js.native
   
   /**
     * Returns a new array from a set of elements.
     * @param items A set of elements to include in the new array object.
     */
+  /* standard es2020.bigint */
   def of(items: js.BigInt*): BigUint64Array = js.native
 }

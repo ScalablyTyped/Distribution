@@ -10,10 +10,10 @@ Integrate a system of ODEs using the Second Order Runge-Kutta (Midpoint) method
 | ------------------ | :-------------: |
 | Full name          | integrate-adaptive-simpson |
 | Keywords           | scijs, integral, definite-integral, integration, calculus, adaptive, romberg |
-| # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 47283 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 825.6666666666666 |
+| # stars            | 22.0 |
 
 ## Links
 - [Homepage](https://github.com/scijs/integrate-adaptive-simpson#readme)

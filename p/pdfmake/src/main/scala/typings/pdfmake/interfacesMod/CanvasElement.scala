@@ -1,6 +1,5 @@
 package typings.pdfmake.interfacesMod
 
-import typings.pdfmake.anon.X
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +25,7 @@ object CanvasElement {
     __obj.asInstanceOf[typings.pdfmake.interfacesMod.CanvasLine]
   }
   
-  inline def CanvasPolyline(points: js.Array[X]): typings.pdfmake.interfacesMod.CanvasPolyline = {
+  inline def CanvasPolyline(points: js.Array[Point]): typings.pdfmake.interfacesMod.CanvasPolyline = {
     val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("polyline")
     __obj.asInstanceOf[typings.pdfmake.interfacesMod.CanvasPolyline]

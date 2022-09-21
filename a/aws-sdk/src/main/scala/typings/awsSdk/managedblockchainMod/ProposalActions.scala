@@ -29,12 +29,12 @@ object ProposalActions {
     
     inline def setInvitationsUndefined: Self = StObject.set(x, "Invitations", js.undefined)
     
-    inline def setInvitationsVarargs(value: InviteAction*): Self = StObject.set(x, "Invitations", js.Array(value :_*))
+    inline def setInvitationsVarargs(value: InviteAction*): Self = StObject.set(x, "Invitations", js.Array(value*))
     
     inline def setRemovals(value: RemoveActionList): Self = StObject.set(x, "Removals", value.asInstanceOf[js.Any])
     
     inline def setRemovalsUndefined: Self = StObject.set(x, "Removals", js.undefined)
     
-    inline def setRemovalsVarargs(value: RemoveAction*): Self = StObject.set(x, "Removals", js.Array(value :_*))
+    inline def setRemovalsVarargs(value: RemoveAction*): Self = StObject.set(x, "Removals", js.Array(value*))
   }
 }

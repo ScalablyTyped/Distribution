@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("babylonjs", "_TimeToken")
 @js.native
-class TimeToken ()
+open class TimeToken ()
   extends typings.babylonjs.legacyMod.TimeToken

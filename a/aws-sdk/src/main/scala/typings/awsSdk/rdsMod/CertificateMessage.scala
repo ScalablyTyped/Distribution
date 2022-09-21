@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CertificateMessage extends StObject {
   
   /**
-    * The list of Certificate objects for the AWS account.
+    * The list of Certificate objects for the Amazon Web Services account.
     */
   var Certificates: js.UndefOr[CertificateList] = js.undefined
   
   /**
-    *  An optional pagination token provided by a previous DescribeCertificates request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords . 
+    * An optional pagination token provided by a previous DescribeCertificates request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords .
     */
   var Marker: js.UndefOr[String] = js.undefined
 }
@@ -29,7 +29,7 @@ object CertificateMessage {
     
     inline def setCertificatesUndefined: Self = StObject.set(x, "Certificates", js.undefined)
     
-    inline def setCertificatesVarargs(value: Certificate*): Self = StObject.set(x, "Certificates", js.Array(value :_*))
+    inline def setCertificatesVarargs(value: Certificate*): Self = StObject.set(x, "Certificates", js.Array(value*))
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

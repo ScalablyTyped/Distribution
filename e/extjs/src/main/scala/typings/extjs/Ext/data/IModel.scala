@@ -26,7 +26,7 @@ trait IModel
   var beginEdit: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (String/Object/String[]/Object[]) */
-  var belongsTo: js.UndefOr[js.Any] = js.undefined
+  var belongsTo: js.UndefOr[Any] = js.undefined
   
   /** [Method] Cancels all changes made in the current edit operation  */
   var cancelEdit: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -55,7 +55,7 @@ trait IModel
     * @param options Object Options to pass to the proxy. Config object for Ext.data.Operation.
     * @returns Ext.data.Model The Model instance
     */
-  var destroy: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var destroy: js.UndefOr[js.Function1[/* options */ js.UndefOr[Any], this.type]] = js.undefined
   
   /** [Property] (Boolean) */
   var dirty: js.UndefOr[Boolean] = js.undefined
@@ -72,34 +72,34 @@ trait IModel
   ] = js.undefined
   
   /** [Config Option] (Object[]/String[]) */
-  var fields: js.UndefOr[js.Any] = js.undefined
+  var fields: js.UndefOr[Any] = js.undefined
   
   /** [Method] Returns the value of the given field
     * @param fieldName String The field to fetch the value for
     * @returns Object The value
     */
-  var get: js.UndefOr[js.Function1[/* fieldName */ js.UndefOr[String], js.Any]] = js.undefined
+  var get: js.UndefOr[js.Function1[/* fieldName */ js.UndefOr[String], Any]] = js.undefined
   
   /** [Method] Gets all of the data from this Models loaded associations
     * @returns Object The nested data set for the Model's loaded associations
     */
-  var getAssociatedData: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getAssociatedData: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Gets a hash of only the fields that have been modified since this Model was created or commited
     * @returns Object
     */
-  var getChanges: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getChanges: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Gets all values for each field in this model and returns an object containing the current data
     * @param includeAssociated Boolean True to also include associated data. Defaults to false.
     * @returns Object An object hash containing all the values in this model
     */
-  var getData: js.UndefOr[js.Function1[/* includeAssociated */ js.UndefOr[Boolean], js.Any]] = js.undefined
+  var getData: js.UndefOr[js.Function1[/* includeAssociated */ js.UndefOr[Boolean], Any]] = js.undefined
   
   /** [Method] Returns the unique ID allocated to this model instance as defined by idProperty
     * @returns Number/String The id
     */
-  var getId: js.UndefOr[js.Function0[js.Any]] = js.undefined
+  var getId: js.UndefOr[js.Function0[Any]] = js.undefined
   
   /** [Method] Returns the configured Proxy for this Model
     * @returns Ext.data.proxy.Proxy The proxy
@@ -107,13 +107,13 @@ trait IModel
   var getProxy: js.UndefOr[js.Function0[typings.extjs.Ext.data.proxy.IProxy]] = js.undefined
   
   /** [Config Option] (String/Object/String[]/Object[]) */
-  var hasMany: js.UndefOr[js.Any] = js.undefined
+  var hasMany: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String/Object/Ext.data.Field) */
-  var idProperty: js.UndefOr[js.Any] = js.undefined
+  var idProperty: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String/Object) */
-  var idgen: js.UndefOr[js.Any] = js.undefined
+  var idgen: js.UndefOr[Any] = js.undefined
   
   /** [Property] (Boolean) */
   var isModel: js.UndefOr[Boolean] = js.undefined
@@ -135,7 +135,7 @@ trait IModel
   var join: js.UndefOr[js.Function1[/* store */ js.UndefOr[IStore], Unit]] = js.undefined
   
   /** [Property] (Object) */
-  var modified: js.UndefOr[js.Any] = js.undefined
+  var modified: js.UndefOr[Any] = js.undefined
   
   /** [Config Option] (String) */
   var persistenceProperty: js.UndefOr[String] = js.undefined
@@ -144,10 +144,10 @@ trait IModel
   var phantom: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String/Object/Ext.data.proxy.Proxy) */
-  var proxy: js.UndefOr[js.Any] = js.undefined
+  var proxy: js.UndefOr[Any] = js.undefined
   
   /** [Property] (Object) */
-  var raw: js.UndefOr[js.Any] = js.undefined
+  var raw: js.UndefOr[Any] = js.undefined
   
   /** [Method] Usually called by the Ext data Store to which this model instance has been joined
     * @param silent Boolean True to skip notification of the owning store of the change. Defaults to false.
@@ -158,7 +158,7 @@ trait IModel
     * @param options Object Options to pass to the proxy. Config object for Ext.data.Operation.
     * @returns Ext.data.Model The Model instance
     */
-  var save: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var save: js.UndefOr[js.Function1[/* options */ js.UndefOr[Any], this.type]] = js.undefined
   
   /** [Method] Sets the given field to the given value marks the instance as dirty
     * @param fieldName String/Object The field to set, or an object containing key/value pairs
@@ -166,7 +166,7 @@ trait IModel
     * @returns String[] The array of modified field names or null if nothing was modified.
     */
   var set: js.UndefOr[
-    js.Function2[/* fieldName */ js.UndefOr[js.Any], /* newValue */ js.UndefOr[js.Any], Array]
+    js.Function2[/* fieldName */ js.UndefOr[Any], /* newValue */ js.UndefOr[Any], Array]
   ] = js.undefined
   
   /** [Method] Marks this Record as dirty  */
@@ -175,15 +175,13 @@ trait IModel
   /** [Method] Sets the model instance s id field to the given id
     * @param id Number/String The new id
     */
-  var setId: js.UndefOr[js.Function1[/* id */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var setId: js.UndefOr[js.Function1[/* id */ js.UndefOr[Any], Unit]] = js.undefined
   
   /** [Method] Sets the Proxy to use for this model
     * @param proxy String/Object/Ext.data.proxy.Proxy The proxy
     * @returns Ext.data.proxy.Proxy
     */
-  var setProxy: js.UndefOr[
-    js.Function1[/* proxy */ js.UndefOr[js.Any], typings.extjs.Ext.data.proxy.IProxy]
-  ] = js.undefined
+  var setProxy: js.UndefOr[js.Function1[/* proxy */ js.UndefOr[Any], typings.extjs.Ext.data.proxy.IProxy]] = js.undefined
   
   /** [Property] (Ext.data.Store) */
   var store: js.UndefOr[IStore] = js.undefined
@@ -221,7 +219,7 @@ object IModel {
     
     inline def setBeginEditUndefined: Self = StObject.set(x, "beginEdit", js.undefined)
     
-    inline def setBelongsTo(value: js.Any): Self = StObject.set(x, "belongsTo", value.asInstanceOf[js.Any])
+    inline def setBelongsTo(value: Any): Self = StObject.set(x, "belongsTo", value.asInstanceOf[js.Any])
     
     inline def setBelongsToUndefined: Self = StObject.set(x, "belongsTo", js.undefined)
     
@@ -245,7 +243,7 @@ object IModel {
     
     inline def setDefaultProxyTypeUndefined: Self = StObject.set(x, "defaultProxyType", js.undefined)
     
-    inline def setDestroy(value: /* options */ js.UndefOr[js.Any] => IModel): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
+    inline def setDestroy(value: /* options */ js.UndefOr[Any] => IModel): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
     
     inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
     
@@ -265,25 +263,25 @@ object IModel {
     
     inline def setEndEditUndefined: Self = StObject.set(x, "endEdit", js.undefined)
     
-    inline def setFields(value: js.Any): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: Any): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    inline def setGet(value: /* fieldName */ js.UndefOr[String] => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: /* fieldName */ js.UndefOr[String] => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    inline def setGetAssociatedData(value: () => js.Any): Self = StObject.set(x, "getAssociatedData", js.Any.fromFunction0(value))
+    inline def setGetAssociatedData(value: () => Any): Self = StObject.set(x, "getAssociatedData", js.Any.fromFunction0(value))
     
     inline def setGetAssociatedDataUndefined: Self = StObject.set(x, "getAssociatedData", js.undefined)
     
-    inline def setGetChanges(value: () => js.Any): Self = StObject.set(x, "getChanges", js.Any.fromFunction0(value))
+    inline def setGetChanges(value: () => Any): Self = StObject.set(x, "getChanges", js.Any.fromFunction0(value))
     
     inline def setGetChangesUndefined: Self = StObject.set(x, "getChanges", js.undefined)
     
-    inline def setGetData(value: /* includeAssociated */ js.UndefOr[Boolean] => js.Any): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
+    inline def setGetData(value: /* includeAssociated */ js.UndefOr[Boolean] => Any): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
     
     inline def setGetDataUndefined: Self = StObject.set(x, "getData", js.undefined)
     
-    inline def setGetId(value: () => js.Any): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+    inline def setGetId(value: () => Any): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
     inline def setGetIdUndefined: Self = StObject.set(x, "getId", js.undefined)
     
@@ -293,15 +291,15 @@ object IModel {
     
     inline def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
     
-    inline def setHasMany(value: js.Any): Self = StObject.set(x, "hasMany", value.asInstanceOf[js.Any])
+    inline def setHasMany(value: Any): Self = StObject.set(x, "hasMany", value.asInstanceOf[js.Any])
     
     inline def setHasManyUndefined: Self = StObject.set(x, "hasMany", js.undefined)
     
-    inline def setIdProperty(value: js.Any): Self = StObject.set(x, "idProperty", value.asInstanceOf[js.Any])
+    inline def setIdProperty(value: Any): Self = StObject.set(x, "idProperty", value.asInstanceOf[js.Any])
     
     inline def setIdPropertyUndefined: Self = StObject.set(x, "idProperty", js.undefined)
     
-    inline def setIdgen(value: js.Any): Self = StObject.set(x, "idgen", value.asInstanceOf[js.Any])
+    inline def setIdgen(value: Any): Self = StObject.set(x, "idgen", value.asInstanceOf[js.Any])
     
     inline def setIdgenUndefined: Self = StObject.set(x, "idgen", js.undefined)
     
@@ -321,7 +319,7 @@ object IModel {
     
     inline def setJoinUndefined: Self = StObject.set(x, "join", js.undefined)
     
-    inline def setModified(value: js.Any): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
+    inline def setModified(value: Any): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
     
     inline def setModifiedUndefined: Self = StObject.set(x, "modified", js.undefined)
     
@@ -333,7 +331,7 @@ object IModel {
     
     inline def setPhantomUndefined: Self = StObject.set(x, "phantom", js.undefined)
     
-    inline def setProxy(value: js.Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+    inline def setProxy(value: Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     
     inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
     
@@ -341,25 +339,25 @@ object IModel {
     
     inline def setREJECTUndefined: Self = StObject.set(x, "REJECT", js.undefined)
     
-    inline def setRaw(value: js.Any): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setRaw(value: Any): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
     inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     
-    inline def setSave(value: /* options */ js.UndefOr[js.Any] => IModel): Self = StObject.set(x, "save", js.Any.fromFunction1(value))
+    inline def setSave(value: /* options */ js.UndefOr[Any] => IModel): Self = StObject.set(x, "save", js.Any.fromFunction1(value))
     
     inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
     
-    inline def setSet(value: (/* fieldName */ js.UndefOr[js.Any], /* newValue */ js.UndefOr[js.Any]) => Array): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+    inline def setSet(value: (/* fieldName */ js.UndefOr[Any], /* newValue */ js.UndefOr[Any]) => Array): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     
     inline def setSetDirty(value: () => Unit): Self = StObject.set(x, "setDirty", js.Any.fromFunction0(value))
     
     inline def setSetDirtyUndefined: Self = StObject.set(x, "setDirty", js.undefined)
     
-    inline def setSetId(value: /* id */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setId", js.Any.fromFunction1(value))
+    inline def setSetId(value: /* id */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "setId", js.Any.fromFunction1(value))
     
     inline def setSetIdUndefined: Self = StObject.set(x, "setId", js.undefined)
     
-    inline def setSetProxy(value: /* proxy */ js.UndefOr[js.Any] => typings.extjs.Ext.data.proxy.IProxy): Self = StObject.set(x, "setProxy", js.Any.fromFunction1(value))
+    inline def setSetProxy(value: /* proxy */ js.UndefOr[Any] => typings.extjs.Ext.data.proxy.IProxy): Self = StObject.set(x, "setProxy", js.Any.fromFunction1(value))
     
     inline def setSetProxyUndefined: Self = StObject.set(x, "setProxy", js.undefined)
     

@@ -23,6 +23,8 @@ trait ScaleBarProperties
   /**
     * Units to use for the scale bar.
     *
+    * @default non-metric
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleBar.html#unit)
     */
   var unit: js.UndefOr[`non-metric` | metric | dual] = js.undefined

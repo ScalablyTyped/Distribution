@@ -10,7 +10,7 @@ object mod {
   
   @JSImport("jdataview", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with jDataView {
     def this(buffer: String) = this()
@@ -41,7 +41,7 @@ object mod {
   
   @JSImport("jdataview", "Int64")
   @js.native
-  class Int64 protected () extends Uint64 {
+  open class Int64 protected () extends Uint64 {
     def this(lo: Double, hi: Double) = this()
   }
   object Int64 {
@@ -56,7 +56,7 @@ object mod {
   
   @JSImport("jdataview", "Uint64")
   @js.native
-  class Uint64 protected () extends StObject {
+  open class Uint64 protected () extends StObject {
     def this(lo: Double, hi: Double) = this()
     
     var hi: Double = js.native

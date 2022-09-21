@@ -114,7 +114,7 @@ object Page {
   }
   
   type PageConstructor = js.Function1[
-    /* options */ (PageInstance[AnyObject, AnyObject & (PageInstance[js.Any, js.Any])]) & AnyObject & (PageInstance[js.Any, js.Any]), 
+    /* options */ (PageInstance[AnyObject, AnyObject & (PageInstance[Any, Any])]) & AnyObject & (PageInstance[Any, Any]), 
     Unit
   ]
   
@@ -127,7 +127,7 @@ object Page {
       * @param options tab 点击参数
       * @return 返回 `true` 时阻止页面返回
       */
-    var onBackPress: js.UndefOr[js.Function1[/* options */ BackPressOption, js.Any]] = js.undefined
+    var onBackPress: js.UndefOr[js.Function1[/* options */ BackPressOption, Any]] = js.undefined
     
     /**
       * 生命周期回调 监听页面隐藏
@@ -239,7 +239,7 @@ object Page {
     
     extension [Self <: PageInstance[?, ?], D /* <: AnyObject */, T /* <: AnyObject */](x: Self & (PageInstance[D, T])) {
       
-      inline def setOnBackPress(value: /* options */ BackPressOption => js.Any): Self = StObject.set(x, "onBackPress", js.Any.fromFunction1(value))
+      inline def setOnBackPress(value: /* options */ BackPressOption => Any): Self = StObject.set(x, "onBackPress", js.Any.fromFunction1(value))
       
       inline def setOnBackPressUndefined: Self = StObject.set(x, "onBackPress", js.undefined)
       
@@ -360,7 +360,7 @@ object Page {
     /**
       * 如果 `from` 值是 `button`，则 `target` 是触发这次转发事件的 `button`，否则为 `undefined`
       */
-    var target: js.Any
+    var target: Any
     
     /**
       * 页面中包含 `<web-view>` 组件时，返回当前 `<web-view>` 的url
@@ -369,7 +369,7 @@ object Page {
   }
   object ShareAppMessageOption {
     
-    inline def apply(from: button | menu, target: js.Any): ShareAppMessageOption = {
+    inline def apply(from: button | menu, target: Any): ShareAppMessageOption = {
       val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[ShareAppMessageOption]
     }
@@ -378,7 +378,7 @@ object Page {
       
       inline def setFrom(value: button | menu): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
       inline def setWebViewUrl(value: String): Self = StObject.set(x, "webViewUrl", value.asInstanceOf[js.Any])
       

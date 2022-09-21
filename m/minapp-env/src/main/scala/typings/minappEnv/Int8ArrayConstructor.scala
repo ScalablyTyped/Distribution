@@ -33,9 +33,9 @@ trait Int8ArrayConstructor
   def from(
     arrayLike: ArrayLike[Double],
     mapfn: js.Function2[/* v */ Double, /* k */ Double, Double],
-    thisArg: js.Any
+    thisArg: Any
   ): Int8Array = js.native
-  def from(arrayLike: ArrayLike[Double], mapfn: Unit, thisArg: js.Any): Int8Array = js.native
+  def from(arrayLike: ArrayLike[Double], mapfn: Unit, thisArg: Any): Int8Array = js.native
   /**
     * Creates an array from an array-like or iterable object.
     * @param arrayLike An array-like or iterable object to convert to an array.
@@ -47,9 +47,9 @@ trait Int8ArrayConstructor
   def from(
     arrayLike: Iterable[Double],
     mapfn: js.Function2[/* v */ Double, /* k */ Double, Double],
-    thisArg: js.Any
+    thisArg: Any
   ): Int8Array = js.native
-  def from(arrayLike: Iterable[Double], mapfn: Unit, thisArg: js.Any): Int8Array = js.native
+  def from(arrayLike: Iterable[Double], mapfn: Unit, thisArg: Any): Int8Array = js.native
   
   /**
     * Returns a new array from a set of elements.

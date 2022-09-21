@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("BootstrapUIWidgetEventArgsBase")
 @js.native
-class BootstrapUIWidgetEventArgsBase protected ()
+open class BootstrapUIWidgetEventArgsBase protected ()
   extends StObject
      with typings.devexpressWeb.BootstrapUIWidgetEventArgsBase {
   /**
@@ -17,17 +17,17 @@ class BootstrapUIWidgetEventArgsBase protected ()
     * @param component The widget instance.
     * @param element The widget's container.
     */
-  def this(component: js.Any, element: js.Any) = this()
+  def this(component: Any, element: Any) = this()
   
   /**
     * The widget instance.
     */
   /* CompleteClass */
-  var component: js.Any = js.native
+  var component: Any = js.native
   
   /**
     * The widget's container.
     */
   /* CompleteClass */
-  var element: js.Any = js.native
+  var element: Any = js.native
 }

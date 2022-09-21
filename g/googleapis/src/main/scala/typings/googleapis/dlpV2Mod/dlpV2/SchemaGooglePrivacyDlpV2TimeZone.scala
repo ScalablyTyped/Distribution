@@ -7,10 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SchemaGooglePrivacyDlpV2TimeZone extends StObject {
   
   /**
-    * Set only if the offset can be determined. Positive for time ahead of UTC.
-    * E.g. For &quot;UTC-9&quot;, this value is -540.
+    * Set only if the offset can be determined. Positive for time ahead of UTC. E.g. For "UTC-9", this value is -540.
     */
-  var offsetMinutes: js.UndefOr[Double] = js.undefined
+  var offsetMinutes: js.UndefOr[Double | Null] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2TimeZone {
   
@@ -22,6 +21,8 @@ object SchemaGooglePrivacyDlpV2TimeZone {
   extension [Self <: SchemaGooglePrivacyDlpV2TimeZone](x: Self) {
     
     inline def setOffsetMinutes(value: Double): Self = StObject.set(x, "offsetMinutes", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetMinutesNull: Self = StObject.set(x, "offsetMinutes", null)
     
     inline def setOffsetMinutesUndefined: Self = StObject.set(x, "offsetMinutes", js.undefined)
   }

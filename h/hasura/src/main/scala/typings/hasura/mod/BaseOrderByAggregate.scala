@@ -12,13 +12,13 @@ trait BaseOrderByAggregate[T] extends StObject {
   var max: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in hasura.hasura.MinMaxAggregateKeys<T> ]:? hasura.hasura.ScalarOrderBy}
-    */ typings.hasura.hasuraStrings.BaseOrderByAggregate & TopLevel[js.Any]
+    */ typings.hasura.hasuraStrings.BaseOrderByAggregate & TopLevel[Any]
   ] = js.undefined
   
   var min: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in hasura.hasura.MinMaxAggregateKeys<T> ]:? hasura.hasura.ScalarOrderBy}
-    */ typings.hasura.hasuraStrings.BaseOrderByAggregate & TopLevel[js.Any]
+    */ typings.hasura.hasuraStrings.BaseOrderByAggregate & TopLevel[Any]
   ] = js.undefined
 }
 object BaseOrderByAggregate {
@@ -37,7 +37,7 @@ object BaseOrderByAggregate {
     inline def setMax(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in hasura.hasura.MinMaxAggregateKeys<T> ]:? hasura.hasura.ScalarOrderBy}
-      */ typings.hasura.hasuraStrings.BaseOrderByAggregate & TopLevel[js.Any]
+      */ typings.hasura.hasuraStrings.BaseOrderByAggregate & TopLevel[Any]
     ): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
@@ -45,7 +45,7 @@ object BaseOrderByAggregate {
     inline def setMin(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in hasura.hasura.MinMaxAggregateKeys<T> ]:? hasura.hasura.ScalarOrderBy}
-      */ typings.hasura.hasuraStrings.BaseOrderByAggregate & TopLevel[js.Any]
+      */ typings.hasura.hasuraStrings.BaseOrderByAggregate & TopLevel[Any]
     ): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)

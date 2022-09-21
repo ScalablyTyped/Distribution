@@ -21,7 +21,9 @@ import typings.jsreportChromePdf.jsreportChromePdfStrings.jpeg
 import typings.jsreportChromePdf.jsreportChromePdfStrings.png
 import typings.jsreportChromePdf.jsreportChromePdfStrings.print
 import typings.jsreportChromePdf.jsreportChromePdfStrings.screen
+import typings.jsreportCore.mod.Engine
 import typings.jsreportCore.mod.ExtensionDefinition
+import typings.jsreportCore.mod.Template
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -227,6 +229,43 @@ object mod {
     }
   }
   
+  trait ChromeTemplate
+    extends StObject
+       with Template {
+    
+    var chrome: js.UndefOr[PartialChrome] = js.undefined
+    
+    var chromeImage: js.UndefOr[PartialChromeImage] = js.undefined
+    
+    @JSName("content")
+    var content_ChromeTemplate: String
+    
+    @JSName("recipe")
+    var recipe_ChromeTemplate: `chrome-pdf` | `chrome-image` | String
+  }
+  object ChromeTemplate {
+    
+    inline def apply(content: String, engine: Engine | String, recipe: `chrome-pdf` | `chrome-image` | String): ChromeTemplate = {
+      val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], engine = engine.asInstanceOf[js.Any], recipe = recipe.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ChromeTemplate]
+    }
+    
+    extension [Self <: ChromeTemplate](x: Self) {
+      
+      inline def setChrome(value: PartialChrome): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
+      
+      inline def setChromeImage(value: PartialChromeImage): Self = StObject.set(x, "chromeImage", value.asInstanceOf[js.Any])
+      
+      inline def setChromeImageUndefined: Self = StObject.set(x, "chromeImage", js.undefined)
+      
+      inline def setChromeUndefined: Self = StObject.set(x, "chrome", js.undefined)
+      
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
+      inline def setRecipe(value: `chrome-pdf` | `chrome-image` | String): Self = StObject.set(x, "recipe", value.asInstanceOf[js.Any])
+    }
+  }
+  
   // https://github.com/puppeteer/puppeteer/blob/master/docs/api.md#puppeteerlaunchoptions
   trait LaunchOptions extends StObject {
     
@@ -242,7 +281,7 @@ object mod {
     
     var executablePath: String
     
-    var extraPrefsFirefox: StringDictionary[js.Any]
+    var extraPrefsFirefox: StringDictionary[Any]
     
     var handleSIGHUP: Boolean
     
@@ -275,7 +314,7 @@ object mod {
       dumpio: Boolean,
       env: StringDictionary[String],
       executablePath: String,
-      extraPrefsFirefox: StringDictionary[js.Any],
+      extraPrefsFirefox: StringDictionary[Any],
       handleSIGHUP: Boolean,
       handleSIGINT: Boolean,
       handleSIGTERM: Boolean,
@@ -296,7 +335,7 @@ object mod {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
       
       inline def setDefaultViewport(value: Partialwidthstringheights): Self = StObject.set(x, "defaultViewport", value.asInstanceOf[js.Any])
       
@@ -308,7 +347,7 @@ object mod {
       
       inline def setExecutablePath(value: String): Self = StObject.set(x, "executablePath", value.asInstanceOf[js.Any])
       
-      inline def setExtraPrefsFirefox(value: StringDictionary[js.Any]): Self = StObject.set(x, "extraPrefsFirefox", value.asInstanceOf[js.Any])
+      inline def setExtraPrefsFirefox(value: StringDictionary[Any]): Self = StObject.set(x, "extraPrefsFirefox", value.asInstanceOf[js.Any])
       
       inline def setHandleSIGHUP(value: Boolean): Self = StObject.set(x, "handleSIGHUP", value.asInstanceOf[js.Any])
       
@@ -320,7 +359,7 @@ object mod {
       
       inline def setIgnoreDefaultArgs(value: Boolean | js.Array[String]): Self = StObject.set(x, "ignoreDefaultArgs", value.asInstanceOf[js.Any])
       
-      inline def setIgnoreDefaultArgsVarargs(value: String*): Self = StObject.set(x, "ignoreDefaultArgs", js.Array(value :_*))
+      inline def setIgnoreDefaultArgsVarargs(value: String*): Self = StObject.set(x, "ignoreDefaultArgs", js.Array(value*))
       
       inline def setIgnoreHTTPSErrors(value: Boolean): Self = StObject.set(x, "ignoreHTTPSErrors", value.asInstanceOf[js.Any])
       
@@ -380,7 +419,7 @@ object mod {
       
       inline def setAllowedModules(value: js.Array[String]): Self = StObject.set(x, "allowedModules", value.asInstanceOf[js.Any])
       
-      inline def setAllowedModulesVarargs(value: String*): Self = StObject.set(x, "allowedModules", js.Array(value :_*))
+      inline def setAllowedModulesVarargs(value: String*): Self = StObject.set(x, "allowedModules", js.Array(value*))
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -401,32 +440,20 @@ object mod {
   /* augmented module */
   object jsreportCoreAugmentingMod {
     
-    trait Template extends StObject {
+    trait TemplateRegistry extends StObject {
       
-      var chrome: js.UndefOr[PartialChrome] = js.undefined
-      
-      var chromeImage: js.UndefOr[PartialChromeImage] = js.undefined
-      
-      var recipe: `chrome-pdf` | `chrome-image` | String
+      var ChromeTemplate: typings.jsreportChromePdf.mod.ChromeTemplate
     }
-    object Template {
+    object TemplateRegistry {
       
-      inline def apply(recipe: `chrome-pdf` | `chrome-image` | String): Template = {
-        val __obj = js.Dynamic.literal(recipe = recipe.asInstanceOf[js.Any])
-        __obj.asInstanceOf[Template]
+      inline def apply(ChromeTemplate: ChromeTemplate): TemplateRegistry = {
+        val __obj = js.Dynamic.literal(ChromeTemplate = ChromeTemplate.asInstanceOf[js.Any])
+        __obj.asInstanceOf[TemplateRegistry]
       }
       
-      extension [Self <: Template](x: Self) {
+      extension [Self <: TemplateRegistry](x: Self) {
         
-        inline def setChrome(value: PartialChrome): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
-        
-        inline def setChromeImage(value: PartialChromeImage): Self = StObject.set(x, "chromeImage", value.asInstanceOf[js.Any])
-        
-        inline def setChromeImageUndefined: Self = StObject.set(x, "chromeImage", js.undefined)
-        
-        inline def setChromeUndefined: Self = StObject.set(x, "chrome", js.undefined)
-        
-        inline def setRecipe(value: `chrome-pdf` | `chrome-image` | String): Self = StObject.set(x, "recipe", value.asInstanceOf[js.Any])
+        inline def setChromeTemplate(value: ChromeTemplate): Self = StObject.set(x, "ChromeTemplate", value.asInstanceOf[js.Any])
       }
     }
   }

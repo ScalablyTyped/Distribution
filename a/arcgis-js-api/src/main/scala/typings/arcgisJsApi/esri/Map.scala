@@ -33,6 +33,13 @@ trait Map
   var basemap: Basemap = js.native
   
   /**
+    * A collection of editable layers.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#editableLayers)
+    */
+  val editableLayers: Collection[FeatureLayer | SceneLayer | SubtypeGroupLayer] = js.native
+  
+  /**
     * Specifies the surface properties for the map.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#ground)

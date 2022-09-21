@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientDiagramCustomShapeCreateTemplateEventArgs")
 @js.native
-class ASPxClientDiagramCustomShapeCreateTemplateEventArgs protected ()
+open class ASPxClientDiagramCustomShapeCreateTemplateEventArgs protected ()
   extends StObject
      with typings.devexpressWeb.ASPxClientDiagramCustomShapeCreateTemplateEventArgs {
   /**
@@ -17,13 +17,13 @@ class ASPxClientDiagramCustomShapeCreateTemplateEventArgs protected ()
     * @param container A container for the template.
     * @param item The diagram shape object.
     */
-  def this(container: js.Any, item: typings.devexpressWeb.DiagramShape) = this()
+  def this(container: Any, item: typings.devexpressWeb.DiagramShape) = this()
   
   /**
-    * Returns a container for an instance of the template.
+    * Returns the template's container.
     */
   /* CompleteClass */
-  var container: js.Any = js.native
+  var container: Any = js.native
   
   /**
     * Gets the currently processed diagram item.

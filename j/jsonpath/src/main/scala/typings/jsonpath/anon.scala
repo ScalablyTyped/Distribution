@@ -11,11 +11,11 @@ object anon {
     
     var path: js.Array[PathComponent]
     
-    var value: js.Any
+    var value: Any
   }
   object Path {
     
-    inline def apply(path: js.Array[PathComponent], value: js.Any): Path = {
+    inline def apply(path: js.Array[PathComponent], value: Any): Path = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Path]
     }
@@ -24,9 +24,9 @@ object anon {
       
       inline def setPath(value: js.Array[PathComponent]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      inline def setPathVarargs(value: PathComponent*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: PathComponent*): Self = StObject.set(x, "path", js.Array(value*))
       
-      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

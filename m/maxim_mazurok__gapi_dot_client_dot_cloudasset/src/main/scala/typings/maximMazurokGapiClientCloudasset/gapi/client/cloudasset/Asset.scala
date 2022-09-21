@@ -25,8 +25,8 @@ trait Asset extends StObject {
   /**
     * A representation of the Cloud IAM policy set on a Google Cloud resource. There can be a maximum of one Cloud IAM policy set on any given resource. In addition, Cloud IAM policies
     * inherit their granted access scope from any policies set on parent resources in the resource hierarchy. Therefore, the effectively policy is the union of both the policy set on this
-    * resource and each policy set on all of the resource's ancestry resource levels in the hierarchy. See [this topic](https://cloud.google.com/iam/docs/policies#inheritance) for more
-    * information.
+    * resource and each policy set on all of the resource's ancestry resource levels in the hierarchy. See [this topic](https://cloud.google.com/iam/help/allow-policies/inheritance) for
+    * more information.
     */
   var iamPolicy: js.UndefOr[Policy] = js.undefined
   
@@ -44,6 +44,15 @@ trait Asset extends StObject {
   
   /** A representation of runtime OS Inventory information. See [this topic](https://cloud.google.com/compute/docs/instances/os-inventory-management) for more information. */
   var osInventory: js.UndefOr[Inventory] = js.undefined
+  
+  /** One related asset of the current asset. */
+  var relatedAsset: js.UndefOr[RelatedAsset] = js.undefined
+  
+  /**
+    * DEPRECATED. This field only presents for the purpose of backward-compatibility. The server will never generate responses with this field. The related assets of the asset of one
+    * relationship type. One asset only represents one type of relationship.
+    */
+  var relatedAssets: js.UndefOr[RelatedAssets] = js.undefined
   
   /** A representation of the resource. */
   var resource: js.UndefOr[Resource] = js.undefined
@@ -75,7 +84,7 @@ object Asset {
     
     inline def setAncestorsUndefined: Self = StObject.set(x, "ancestors", js.undefined)
     
-    inline def setAncestorsVarargs(value: String*): Self = StObject.set(x, "ancestors", js.Array(value :_*))
+    inline def setAncestorsVarargs(value: String*): Self = StObject.set(x, "ancestors", js.Array(value*))
     
     inline def setAssetType(value: String): Self = StObject.set(x, "assetType", value.asInstanceOf[js.Any])
     
@@ -93,11 +102,19 @@ object Asset {
     
     inline def setOrgPolicyUndefined: Self = StObject.set(x, "orgPolicy", js.undefined)
     
-    inline def setOrgPolicyVarargs(value: GoogleCloudOrgpolicyV1Policy*): Self = StObject.set(x, "orgPolicy", js.Array(value :_*))
+    inline def setOrgPolicyVarargs(value: GoogleCloudOrgpolicyV1Policy*): Self = StObject.set(x, "orgPolicy", js.Array(value*))
     
     inline def setOsInventory(value: Inventory): Self = StObject.set(x, "osInventory", value.asInstanceOf[js.Any])
     
     inline def setOsInventoryUndefined: Self = StObject.set(x, "osInventory", js.undefined)
+    
+    inline def setRelatedAsset(value: RelatedAsset): Self = StObject.set(x, "relatedAsset", value.asInstanceOf[js.Any])
+    
+    inline def setRelatedAssetUndefined: Self = StObject.set(x, "relatedAsset", js.undefined)
+    
+    inline def setRelatedAssets(value: RelatedAssets): Self = StObject.set(x, "relatedAssets", value.asInstanceOf[js.Any])
+    
+    inline def setRelatedAssetsUndefined: Self = StObject.set(x, "relatedAssets", js.undefined)
     
     inline def setResource(value: Resource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     

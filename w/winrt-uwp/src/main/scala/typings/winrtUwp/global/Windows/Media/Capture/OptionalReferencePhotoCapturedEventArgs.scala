@@ -13,7 +13,7 @@ abstract class OptionalReferencePhotoCapturedEventArgs ()
   
   /** Gets the app-defined context object associated with the advanced photo capture operation, if one was provided in the call to AdvancedPhotoCapture::CaptureAsync(Object) . */
   /* CompleteClass */
-  var context: js.Any = js.native
+  var context: Any = js.native
   
   /** Gets the captured frame containing the reference photo from the advanced photo capture. */
   /* CompleteClass */

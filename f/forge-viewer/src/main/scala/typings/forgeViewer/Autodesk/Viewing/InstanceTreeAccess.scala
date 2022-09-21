@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait InstanceTreeAccess extends StObject {
   
-  var children: js.Any
+  var children: Any
   
-  var dbIdToIndex: js.Any
+  var dbIdToIndex: Any
   
-  var nameSuffixes: js.Any
+  var nameSuffixes: Any
   
-  var names: js.Any
+  var names: Any
   
-  var nodeBoxes: js.Any
+  var nodeBoxes: Any
   
-  var nodes: js.Any
+  var nodes: Any
   
   var numNodes: Double
   
@@ -29,12 +29,12 @@ trait InstanceTreeAccess extends StObject {
 object InstanceTreeAccess {
   
   inline def apply(
-    children: js.Any,
-    dbIdToIndex: js.Any,
-    nameSuffixes: js.Any,
-    names: js.Any,
-    nodeBoxes: js.Any,
-    nodes: js.Any,
+    children: Any,
+    dbIdToIndex: Any,
+    nameSuffixes: Any,
+    names: Any,
+    nodeBoxes: Any,
+    nodes: Any,
     numNodes: Double,
     rootId: Double,
     strings: js.Array[String],
@@ -46,17 +46,17 @@ object InstanceTreeAccess {
   
   extension [Self <: InstanceTreeAccess](x: Self) {
     
-    inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setDbIdToIndex(value: js.Any): Self = StObject.set(x, "dbIdToIndex", value.asInstanceOf[js.Any])
+    inline def setDbIdToIndex(value: Any): Self = StObject.set(x, "dbIdToIndex", value.asInstanceOf[js.Any])
     
-    inline def setNameSuffixes(value: js.Any): Self = StObject.set(x, "nameSuffixes", value.asInstanceOf[js.Any])
+    inline def setNameSuffixes(value: Any): Self = StObject.set(x, "nameSuffixes", value.asInstanceOf[js.Any])
     
-    inline def setNames(value: js.Any): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+    inline def setNames(value: Any): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
-    inline def setNodeBoxes(value: js.Any): Self = StObject.set(x, "nodeBoxes", value.asInstanceOf[js.Any])
+    inline def setNodeBoxes(value: Any): Self = StObject.set(x, "nodeBoxes", value.asInstanceOf[js.Any])
     
-    inline def setNodes(value: js.Any): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: Any): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
     inline def setNumNodes(value: Double): Self = StObject.set(x, "numNodes", value.asInstanceOf[js.Any])
     
@@ -64,7 +64,7 @@ object InstanceTreeAccess {
     
     inline def setStrings(value: js.Array[String]): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
     
-    inline def setStringsVarargs(value: String*): Self = StObject.set(x, "strings", js.Array(value :_*))
+    inline def setStringsVarargs(value: String*): Self = StObject.set(x, "strings", js.Array(value*))
     
     inline def setVisibleIds(value: Double): Self = StObject.set(x, "visibleIds", value.asInstanceOf[js.Any])
   }

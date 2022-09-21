@@ -8,7 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSGlobal("__esri.FeatureTemplatesViewModel")
 @js.native
-class FeatureTemplatesViewModelCls ()
+/**
+  * Provides the logic for the [FeatureTemplates](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html) widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-FeatureTemplatesViewModel.html)
+  */
+open class FeatureTemplatesViewModelCls ()
   extends StObject
      with typings.arcgisJsApi.esri.FeatureTemplatesViewModel {
   def this(properties: FeatureTemplatesViewModelProperties) = this()

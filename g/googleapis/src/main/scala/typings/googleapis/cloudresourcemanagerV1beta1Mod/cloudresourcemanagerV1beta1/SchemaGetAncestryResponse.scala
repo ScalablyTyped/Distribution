@@ -4,15 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Response from the GetAncestry method.
-  */
 trait SchemaGetAncestryResponse extends StObject {
   
   /**
-    * Ancestors are ordered from bottom to top of the resource hierarchy. The
-    * first ancestor is the project itself, followed by the project&#39;s
-    * parent, etc.
+    * Ancestors are ordered from bottom to top of the resource hierarchy. The first ancestor is the project itself, followed by the project's parent, etc.
     */
   var ancestor: js.UndefOr[js.Array[SchemaAncestor]] = js.undefined
 }
@@ -29,6 +24,6 @@ object SchemaGetAncestryResponse {
     
     inline def setAncestorUndefined: Self = StObject.set(x, "ancestor", js.undefined)
     
-    inline def setAncestorVarargs(value: SchemaAncestor*): Self = StObject.set(x, "ancestor", js.Array(value :_*))
+    inline def setAncestorVarargs(value: SchemaAncestor*): Self = StObject.set(x, "ancestor", js.Array(value*))
   }
 }

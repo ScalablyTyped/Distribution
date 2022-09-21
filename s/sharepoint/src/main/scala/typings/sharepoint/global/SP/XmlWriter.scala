@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Defines a writer that provides a set of methods to append text in XML format. Use the static SP.XmlWriter.create(sb) Method to create an SP.XmlWriter object with the Sys.StringBuilder object you pass in. */
 @JSGlobal("SP.XmlWriter")
 @js.native
-class XmlWriter ()
+open class XmlWriter ()
   extends StObject
      with typings.sharepoint.SP.XmlWriter {
   

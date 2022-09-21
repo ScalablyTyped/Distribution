@@ -8,7 +8,7 @@ object mod {
   
   @JSImport("openapi-factory", JSImport.Namespace)
   @js.native
-  class ^ protected ()
+  open class ^ protected ()
     extends StObject
        with OpenApi {
     def this(options: ApiOptions) = this()
@@ -17,11 +17,11 @@ object mod {
   
   trait ApiOptions extends StObject {
     
-    var errorMiddleware: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var errorMiddleware: js.UndefOr[js.Function0[Any]] = js.undefined
     
-    var requestMiddleware: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var requestMiddleware: js.UndefOr[js.Function0[Any]] = js.undefined
     
-    var responseMiddleware: js.UndefOr[js.Function0[js.Any]] = js.undefined
+    var responseMiddleware: js.UndefOr[js.Function0[Any]] = js.undefined
   }
   object ApiOptions {
     
@@ -32,15 +32,15 @@ object mod {
     
     extension [Self <: ApiOptions](x: Self) {
       
-      inline def setErrorMiddleware(value: () => js.Any): Self = StObject.set(x, "errorMiddleware", js.Any.fromFunction0(value))
+      inline def setErrorMiddleware(value: () => Any): Self = StObject.set(x, "errorMiddleware", js.Any.fromFunction0(value))
       
       inline def setErrorMiddlewareUndefined: Self = StObject.set(x, "errorMiddleware", js.undefined)
       
-      inline def setRequestMiddleware(value: () => js.Any): Self = StObject.set(x, "requestMiddleware", js.Any.fromFunction0(value))
+      inline def setRequestMiddleware(value: () => Any): Self = StObject.set(x, "requestMiddleware", js.Any.fromFunction0(value))
       
       inline def setRequestMiddlewareUndefined: Self = StObject.set(x, "requestMiddleware", js.undefined)
       
-      inline def setResponseMiddleware(value: () => js.Any): Self = StObject.set(x, "responseMiddleware", js.Any.fromFunction0(value))
+      inline def setResponseMiddleware(value: () => Any): Self = StObject.set(x, "responseMiddleware", js.Any.fromFunction0(value))
       
       inline def setResponseMiddlewareUndefined: Self = StObject.set(x, "responseMiddleware", js.undefined)
     }
@@ -129,21 +129,17 @@ object mod {
       handler: js.Function1[/* req */ js.UndefOr[js.Object], HttpResponse | js.Promise[HttpResponse]]
     ): Unit = js.native
     
-    def handler(event: js.Object, context: js.Object): js.Promise[js.Any] = js.native
+    def handler(event: js.Object, context: js.Object): js.Promise[Any] = js.native
     
     def head(
       route: String,
       handler: js.Function1[/* req */ js.UndefOr[js.Object], HttpResponse | js.Promise[HttpResponse]]
     ): Unit = js.native
-    def head(
-      route: String,
-      options: HttpMethodOptions,
-      handler: js.Function1[/* req */ js.UndefOr[js.Any], js.Any]
-    ): Unit = js.native
+    def head(route: String, options: HttpMethodOptions, handler: js.Function1[/* req */ js.UndefOr[Any], Any]): Unit = js.native
     
-    def onEvent(onEventFunc: js.Function1[/* req */ js.UndefOr[js.Any], js.Promise[js.Any]]): Unit = js.native
+    def onEvent(onEventFunc: js.Function1[/* req */ js.UndefOr[Any], js.Promise[Any]]): Unit = js.native
     
-    def onSchedule(onScheduleFunc: js.Function1[/* req */ js.UndefOr[js.Any], js.Promise[js.Any]]): Unit = js.native
+    def onSchedule(onScheduleFunc: js.Function1[/* req */ js.UndefOr[Any], js.Promise[Any]]): Unit = js.native
     
     def options(
       route: String,
@@ -185,6 +181,6 @@ object mod {
       handler: js.Function1[/* req */ js.UndefOr[js.Object], HttpResponse | js.Promise[HttpResponse]]
     ): Unit = js.native
     
-    def setAuthorizer(authorizerFunc: js.Function1[/* req */ js.UndefOr[js.Any], js.Promise[js.Any]]): Unit = js.native
+    def setAuthorizer(authorizerFunc: js.Function1[/* req */ js.UndefOr[Any], js.Promise[Any]]): Unit = js.native
   }
 }

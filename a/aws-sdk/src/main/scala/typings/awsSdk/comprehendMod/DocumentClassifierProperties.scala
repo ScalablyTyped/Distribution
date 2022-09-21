@@ -24,7 +24,7 @@ trait DocumentClassifierProperties extends StObject {
   /**
     * The time that training the document classifier completed.
     */
-  var EndTime: js.UndefOr[Timestamp] = js.undefined
+  var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The input data configuration that you supplied when you created the document classifier for training.
@@ -47,9 +47,19 @@ trait DocumentClassifierProperties extends StObject {
   var Mode: js.UndefOr[DocumentClassifierMode] = js.undefined
   
   /**
+    * ID for the AWS Key Management Service (KMS) key that Amazon Comprehend uses to encrypt trained custom models. The ModelKmsKeyId can be either of the following formats:   KMS Key ID: "1234abcd-12ab-34cd-56ef-1234567890ab"    Amazon Resource Name (ARN) of a KMS Key: "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"   
+    */
+  var ModelKmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
+  
+  /**
     *  Provides output results configuration parameters for custom classifier jobs.
     */
   var OutputDataConfig: js.UndefOr[DocumentClassifierOutputDataConfig] = js.undefined
+  
+  /**
+    * The Amazon Resource Name (ARN) of the source model. This model was imported from a different AWS account to create the document classifier model in your AWS account.
+    */
+  var SourceModelArn: js.UndefOr[DocumentClassifierArn] = js.undefined
   
   /**
     * The status of the document classifier. If the status is TRAINED the classifier is ready to use. If the status is FAILED you can see additional information about why the classifier wasn't trained in the Message field.
@@ -59,17 +69,22 @@ trait DocumentClassifierProperties extends StObject {
   /**
     * The time that the document classifier was submitted for training.
     */
-  var SubmitTime: js.UndefOr[Timestamp] = js.undefined
+  var SubmitTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * The time that training of the document classifier was completed. Indicates the time when the training completes on documentation classifiers. You are billed for the time interval between this time and the value of TrainingStartTime.
     */
-  var TrainingEndTime: js.UndefOr[Timestamp] = js.undefined
+  var TrainingEndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Indicates the time when the training starts on documentation classifiers. You are billed for the time interval between this time and the value of TrainingEndTime. 
     */
-  var TrainingStartTime: js.UndefOr[Timestamp] = js.undefined
+  var TrainingStartTime: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * The version name that you assigned to the document classifier.
+    */
+  var VersionName: js.UndefOr[typings.awsSdk.comprehendMod.VersionName] = js.undefined
   
   /**
     * ID for the AWS Key Management Service (KMS) key that Amazon Comprehend uses to encrypt data on the storage volume attached to the ML compute instance(s) that process the analysis job. The VolumeKmsKeyId can be either of the following formats:   KMS Key ID: "1234abcd-12ab-34cd-56ef-1234567890ab"    Amazon Resource Name (ARN) of a KMS Key: "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"   
@@ -102,7 +117,7 @@ object DocumentClassifierProperties {
     
     inline def setDocumentClassifierArnUndefined: Self = StObject.set(x, "DocumentClassifierArn", js.undefined)
     
-    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
@@ -122,25 +137,37 @@ object DocumentClassifierProperties {
     
     inline def setModeUndefined: Self = StObject.set(x, "Mode", js.undefined)
     
+    inline def setModelKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "ModelKmsKeyId", value.asInstanceOf[js.Any])
+    
+    inline def setModelKmsKeyIdUndefined: Self = StObject.set(x, "ModelKmsKeyId", js.undefined)
+    
     inline def setOutputDataConfig(value: DocumentClassifierOutputDataConfig): Self = StObject.set(x, "OutputDataConfig", value.asInstanceOf[js.Any])
     
     inline def setOutputDataConfigUndefined: Self = StObject.set(x, "OutputDataConfig", js.undefined)
+    
+    inline def setSourceModelArn(value: DocumentClassifierArn): Self = StObject.set(x, "SourceModelArn", value.asInstanceOf[js.Any])
+    
+    inline def setSourceModelArnUndefined: Self = StObject.set(x, "SourceModelArn", js.undefined)
     
     inline def setStatus(value: ModelStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    inline def setSubmitTime(value: Timestamp): Self = StObject.set(x, "SubmitTime", value.asInstanceOf[js.Any])
+    inline def setSubmitTime(value: js.Date): Self = StObject.set(x, "SubmitTime", value.asInstanceOf[js.Any])
     
     inline def setSubmitTimeUndefined: Self = StObject.set(x, "SubmitTime", js.undefined)
     
-    inline def setTrainingEndTime(value: Timestamp): Self = StObject.set(x, "TrainingEndTime", value.asInstanceOf[js.Any])
+    inline def setTrainingEndTime(value: js.Date): Self = StObject.set(x, "TrainingEndTime", value.asInstanceOf[js.Any])
     
     inline def setTrainingEndTimeUndefined: Self = StObject.set(x, "TrainingEndTime", js.undefined)
     
-    inline def setTrainingStartTime(value: Timestamp): Self = StObject.set(x, "TrainingStartTime", value.asInstanceOf[js.Any])
+    inline def setTrainingStartTime(value: js.Date): Self = StObject.set(x, "TrainingStartTime", value.asInstanceOf[js.Any])
     
     inline def setTrainingStartTimeUndefined: Self = StObject.set(x, "TrainingStartTime", js.undefined)
+    
+    inline def setVersionName(value: VersionName): Self = StObject.set(x, "VersionName", value.asInstanceOf[js.Any])
+    
+    inline def setVersionNameUndefined: Self = StObject.set(x, "VersionName", js.undefined)
     
     inline def setVolumeKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "VolumeKmsKeyId", value.asInstanceOf[js.Any])
     

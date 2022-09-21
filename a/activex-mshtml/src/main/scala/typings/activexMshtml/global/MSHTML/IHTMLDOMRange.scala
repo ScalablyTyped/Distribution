@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IHTMLDOMRange")
 @js.native
-/* private */ class IHTMLDOMRange ()
+/* private */ open class IHTMLDOMRange ()
   extends StObject
      with typings.activexMshtml.MSHTML.IHTMLDOMRange {
   
@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var MSHTMLDotIHTMLDOMRange_typekey: typings.activexMshtml.MSHTML.IHTMLDOMRange = js.native
   
   /* CompleteClass */
-  override def cloneContents(): js.Any = js.native
+  override def cloneContents(): Any = js.native
   
   /* CompleteClass */
   override def cloneRange(): typings.activexMshtml.MSHTML.IHTMLDOMRange = js.native
@@ -34,7 +34,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val commonAncestorContainer: typings.activexMshtml.MSHTML.IHTMLDOMNode = js.native
   
   /* CompleteClass */
-  override def compareBoundaryPoints(how: Double, sourceRange: js.Any): Double = js.native
+  override def compareBoundaryPoints(how: Double, sourceRange: Any): Double = js.native
   
   /* CompleteClass */
   override def deleteContents(): Unit = js.native
@@ -46,7 +46,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val endOffset: Double = js.native
   
   /* CompleteClass */
-  override def extractContents(): js.Any = js.native
+  override def extractContents(): Any = js.native
   
   /* CompleteClass */
   override def getBoundingClientRect(): typings.activexMshtml.MSHTML.IHTMLRect = js.native
@@ -55,31 +55,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override def getClientRects(): IHTMLRectCollection = js.native
   
   /* CompleteClass */
-  override def insertNode(newNode: js.Any): Unit = js.native
+  override def insertNode(newNode: Any): Unit = js.native
   
   /* CompleteClass */
-  override def selectNode(refNode: js.Any): Unit = js.native
+  override def selectNode(refNode: Any): Unit = js.native
   
   /* CompleteClass */
-  override def selectNodeContents(refNode: js.Any): Unit = js.native
+  override def selectNodeContents(refNode: Any): Unit = js.native
   
   /* CompleteClass */
-  override def setEnd(refNode: js.Any, offset: Double): Unit = js.native
+  override def setEnd(refNode: Any, offset: Double): Unit = js.native
   
   /* CompleteClass */
-  override def setEndAfter(refNode: js.Any): Unit = js.native
+  override def setEndAfter(refNode: Any): Unit = js.native
   
   /* CompleteClass */
-  override def setEndBefore(refNode: js.Any): Unit = js.native
+  override def setEndBefore(refNode: Any): Unit = js.native
   
   /* CompleteClass */
-  override def setStart(refNode: js.Any, offset: Double): Unit = js.native
+  override def setStart(refNode: Any, offset: Double): Unit = js.native
   
   /* CompleteClass */
-  override def setStartAfter(refNode: js.Any): Unit = js.native
+  override def setStartAfter(refNode: Any): Unit = js.native
   
   /* CompleteClass */
-  override def setStartBefore(refNode: js.Any): Unit = js.native
+  override def setStartBefore(refNode: Any): Unit = js.native
   
   /* CompleteClass */
   override val startContainer: typings.activexMshtml.MSHTML.IHTMLDOMNode = js.native
@@ -88,5 +88,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   override val startOffset: Double = js.native
   
   /* CompleteClass */
-  override def surroundContents(newParent: js.Any): Unit = js.native
+  override def surroundContents(newParent: Any): Unit = js.native
 }

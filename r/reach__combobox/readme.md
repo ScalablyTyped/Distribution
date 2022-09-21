@@ -1,7 +1,7 @@
 
 # Scala.js typings for reach__combobox
 
-Typings are for version 0.1
+Typings are for version 0.17.0
 
 ## Library description:
 Accessible React Combobox (Autocomplete).
@@ -10,21 +10,18 @@ Accessible React Combobox (Autocomplete).
 | ------------------ | :-------------: |
 | Full name          | @reach/combobox |
 | Keywords           | - |
-| # releases         | 44 |
-| # dependents       | 19 |
-| # downloads        | 5253173 |
-| # stars            | 0 |
+| # releases         | 21 |
+| # dependents       | 0.0 |
+| # downloads        | 382307.3333333333 |
+| # stars            | 5390.0 |
 
 ## Links
-- [Homepage](https://github.com/reach/reach-ui#readme)
-- [Bugs](https://github.com/reach/reach-ui/issues)
-- [Repository](https://github.com/reach/reach-ui)
 - [Npm](https://www.npmjs.com/package/%40reach%2Fcombobox)
     
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

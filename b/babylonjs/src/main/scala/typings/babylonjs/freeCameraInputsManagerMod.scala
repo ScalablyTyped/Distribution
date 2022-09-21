@@ -17,7 +17,7 @@ object freeCameraInputsManagerMod {
     */
   @JSImport("babylonjs/Cameras/freeCameraInputsManager", "FreeCameraInputsManager")
   @js.native
-  class FreeCameraInputsManager protected () extends CameraInputsManager[FreeCamera] {
+  open class FreeCameraInputsManager protected () extends CameraInputsManager[FreeCamera] {
     /**
       * Instantiates a new FreeCameraInputsManager.
       * @param camera Defines the camera the inputs belong to

@@ -11,9 +11,9 @@ String left pad
 | Full name          | left-pad |
 | Keywords           | leftpad, left, pad, padding, string, repeat |
 | # releases         | 1 |
-| # dependents       | 362 |
-| # downloads        | 239843756 |
-| # stars            | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 1.1247542333333334E7 |
+| # stars            | 1222.0 |
 
 ## Links
 - [Homepage](https://github.com/stevemao/left-pad#readme)

@@ -12,7 +12,7 @@ trait ExtensionContext extends StObject {
   var $element: JQuery[HTMLElement]
   
   @JSName("$scope")
-  var $scope: js.Any
+  var $scope: Any
   
   var _inAnalysisState: Boolean
   
@@ -51,7 +51,7 @@ object ExtensionContext {
   
   inline def apply(
     $element: JQuery[HTMLElement],
-    $scope: js.Any,
+    $scope: Any,
     _inAnalysisState: Boolean,
     _inEditState: Boolean,
     _interactionState: Double,
@@ -70,7 +70,7 @@ object ExtensionContext {
     
     inline def set$element(value: JQuery[HTMLElement]): Self = StObject.set(x, "$element", value.asInstanceOf[js.Any])
     
-    inline def set$scope(value: js.Any): Self = StObject.set(x, "$scope", value.asInstanceOf[js.Any])
+    inline def set$scope(value: Any): Self = StObject.set(x, "$scope", value.asInstanceOf[js.Any])
     
     inline def setBackendApi(value: BackendApi): Self = StObject.set(x, "backendApi", value.asInstanceOf[js.Any])
     

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("ASPxClientTreeListColumn")
 @js.native
-class ASPxClientTreeListColumn ()
+open class ASPxClientTreeListColumn ()
   extends StObject
      with typings.devexpressWeb.ASPxClientTreeListColumn {
   

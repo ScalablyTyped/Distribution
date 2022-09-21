@@ -6,8 +6,8 @@ import typings.react.mod.MutableRefObject
 import typings.reactMdUtils.findMatchIndexMod.FindMatchIndex_
 import typings.reactMdUtils.movementTypesMod.IncrementMovementKey
 import typings.reactMdUtils.movementTypesMod.JumpMovementKey
+import typings.reactMdUtils.searchUtilsMod.GetItemValue_
 import typings.reactMdUtils.useKeyboardSearchMod.SearchData
-import typings.reactMdUtils.utilsMod.GetItemValue_
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -108,7 +108,7 @@ object useKeyboardMovementMod {
       
       inline def setDecrementKeys(value: js.Array[IncrementMovementKey]): Self = StObject.set(x, "decrementKeys", value.asInstanceOf[js.Any])
       
-      inline def setDecrementKeysVarargs(value: IncrementMovementKey*): Self = StObject.set(x, "decrementKeys", js.Array(value :_*))
+      inline def setDecrementKeysVarargs(value: IncrementMovementKey*): Self = StObject.set(x, "decrementKeys", js.Array(value*))
       
       inline def setFindMatchIndex(
         value: (/* value */ String, /* values */ js.Array[String], /* startIndex */ Double, /* isSelfMatchable */ js.UndefOr[Boolean]) => Double
@@ -122,19 +122,19 @@ object useKeyboardMovementMod {
       
       inline def setIncrementKeys(value: js.Array[IncrementMovementKey]): Self = StObject.set(x, "incrementKeys", value.asInstanceOf[js.Any])
       
-      inline def setIncrementKeysVarargs(value: IncrementMovementKey*): Self = StObject.set(x, "incrementKeys", js.Array(value :_*))
+      inline def setIncrementKeysVarargs(value: IncrementMovementKey*): Self = StObject.set(x, "incrementKeys", js.Array(value*))
       
       inline def setItems(value: js.Array[D]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      inline def setItemsVarargs(value: D*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: D*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setJumpToFirstKeys(value: js.Array[JumpMovementKey]): Self = StObject.set(x, "jumpToFirstKeys", value.asInstanceOf[js.Any])
       
-      inline def setJumpToFirstKeysVarargs(value: JumpMovementKey*): Self = StObject.set(x, "jumpToFirstKeys", js.Array(value :_*))
+      inline def setJumpToFirstKeysVarargs(value: JumpMovementKey*): Self = StObject.set(x, "jumpToFirstKeys", js.Array(value*))
       
       inline def setJumpToLastKeys(value: js.Array[JumpMovementKey]): Self = StObject.set(x, "jumpToLastKeys", value.asInstanceOf[js.Any])
       
-      inline def setJumpToLastKeysVarargs(value: JumpMovementKey*): Self = StObject.set(x, "jumpToLastKeys", js.Array(value :_*))
+      inline def setJumpToLastKeysVarargs(value: JumpMovementKey*): Self = StObject.set(x, "jumpToLastKeys", js.Array(value*))
       
       inline def setLoopable(value: Boolean): Self = StObject.set(x, "loopable", value.asInstanceOf[js.Any])
       

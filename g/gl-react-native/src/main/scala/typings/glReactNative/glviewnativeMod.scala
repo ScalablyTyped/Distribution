@@ -1,7 +1,6 @@
 package typings.glReactNative
 
 import typings.react.mod.Component
-import typings.std.Error
 import typings.std.WebGLRenderingContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,27 +10,27 @@ object glviewnativeMod {
   
   @JSImport("gl-react-native/GLViewNative", "GLViewNative")
   @js.native
-  class GLViewNative protected ()
-    extends Component[GLViewNativeProps, js.Object, js.Any] {
+  open class GLViewNative protected ()
+    extends Component[GLViewNativeProps, js.Object, Any] {
     def this(props: GLViewNativeProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: GLViewNativeProps, context: js.Any) = this()
+    def this(props: GLViewNativeProps, context: Any) = this()
     
     var afterDraw: js.UndefOr[js.Function0[Unit]] = js.native
   }
   
   trait GLViewNativeProps extends StObject {
     
-    var children: js.UndefOr[js.Any] = js.undefined
+    var children: js.UndefOr[Any] = js.undefined
     
     var onContextCreate: js.UndefOr[js.Function1[/* gl */ WebGLRenderingContext, Unit]] = js.undefined
     
-    var onContextFailure: js.UndefOr[js.Function1[/* e */ Error, Unit]] = js.undefined
+    var onContextFailure: js.UndefOr[js.Function1[/* e */ js.Error, Unit]] = js.undefined
     
-    var style: js.UndefOr[js.Any] = js.undefined
+    var style: js.UndefOr[Any] = js.undefined
   }
   object GLViewNativeProps {
     
@@ -42,7 +41,7 @@ object glviewnativeMod {
     
     extension [Self <: GLViewNativeProps](x: Self) {
       
-      inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
@@ -50,11 +49,11 @@ object glviewnativeMod {
       
       inline def setOnContextCreateUndefined: Self = StObject.set(x, "onContextCreate", js.undefined)
       
-      inline def setOnContextFailure(value: /* e */ Error => Unit): Self = StObject.set(x, "onContextFailure", js.Any.fromFunction1(value))
+      inline def setOnContextFailure(value: /* e */ js.Error => Unit): Self = StObject.set(x, "onContextFailure", js.Any.fromFunction1(value))
       
       inline def setOnContextFailureUndefined: Self = StObject.set(x, "onContextFailure", js.undefined)
       
-      inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }

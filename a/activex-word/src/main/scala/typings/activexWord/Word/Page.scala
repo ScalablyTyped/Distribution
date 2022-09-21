@@ -12,13 +12,13 @@ trait Page extends StObject {
   
   val Creator: Double
   
-  val EnhMetaFileBits: js.Any
+  val EnhMetaFileBits: Any
   
   val Height: Double
   
   val Left: Double
   
-  val Parent: js.Any
+  val Parent: Any
   
   val Rectangles: typings.activexWord.Word.Rectangles
   
@@ -35,10 +35,10 @@ object Page {
     Application: Application,
     Breaks: Breaks,
     Creator: Double,
-    EnhMetaFileBits: js.Any,
+    EnhMetaFileBits: Any,
     Height: Double,
     Left: Double,
-    Parent: js.Any,
+    Parent: Any,
     Rectangles: Rectangles,
     Top: Double,
     Width: Double,
@@ -57,13 +57,13 @@ object Page {
     
     inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    inline def setEnhMetaFileBits(value: js.Any): Self = StObject.set(x, "EnhMetaFileBits", value.asInstanceOf[js.Any])
+    inline def setEnhMetaFileBits(value: Any): Self = StObject.set(x, "EnhMetaFileBits", value.asInstanceOf[js.Any])
     
     inline def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
     inline def setLeft(value: Double): Self = StObject.set(x, "Left", value.asInstanceOf[js.Any])
     
-    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
     inline def setRectangles(value: Rectangles): Self = StObject.set(x, "Rectangles", value.asInstanceOf[js.Any])
     

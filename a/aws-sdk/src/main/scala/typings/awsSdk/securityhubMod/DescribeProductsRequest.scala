@@ -15,6 +15,11 @@ trait DescribeProductsRequest extends StObject {
     * The token that is required for pagination. On your first call to the DescribeProducts operation, set the value of this parameter to NULL. For subsequent calls to the operation, to continue listing data, set the value of this parameter to the value returned from the previous response.
     */
   var NextToken: js.UndefOr[typings.awsSdk.securityhubMod.NextToken] = js.undefined
+  
+  /**
+    * The ARN of the integration to return.
+    */
+  var ProductArn: js.UndefOr[NonEmptyString] = js.undefined
 }
 object DescribeProductsRequest {
   
@@ -32,5 +37,9 @@ object DescribeProductsRequest {
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    
+    inline def setProductArn(value: NonEmptyString): Self = StObject.set(x, "ProductArn", value.asInstanceOf[js.Any])
+    
+    inline def setProductArnUndefined: Self = StObject.set(x, "ProductArn", js.undefined)
   }
 }

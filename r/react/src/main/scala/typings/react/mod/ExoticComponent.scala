@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // However, we have no way of telling the JSX parser that it's a JSX element type or its props other than
 // by pretending to be a normal component.
 //
-// We don't just use ComponentType or SFC types because you are not supposed to attach statics to this
+// We don't just use ComponentType or FunctionComponent types because you are not supposed to attach statics to this
 // object, but rather to the original function.
 @js.native
 trait ExoticComponent[P] extends StObject {

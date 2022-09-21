@@ -1,7 +1,7 @@
 
 # Scala.js typings for secure-password
 
-Typings are for version 3.1
+Typings are for version 4.0
 
 ## Library description:
 Making Password storage safer for all
@@ -10,15 +10,12 @@ Making Password storage safer for all
 | ------------------ | :-------------: |
 | Full name          | secure-password |
 | Keywords           | password, secure, argon2, libsodium, sodium, credentials |
-| # releases         | 2 |
-| # dependents       | 11 |
-| # downloads        | 68392 |
-| # stars            | 8 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 24817.333333333332 |
+| # stars            | 558.0 |
 
 ## Links
-- [Homepage](https://github.com/emilbayes/secure-password#readme)
-- [Bugs](https://github.com/emilbayes/secure-password/issues)
-- [Repository](https://github.com/emilbayes/secure-password)
 - [Npm](https://www.npmjs.com/package/secure-password)
     
 

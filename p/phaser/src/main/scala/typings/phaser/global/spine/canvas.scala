@@ -10,7 +10,7 @@ object canvas {
   
   @JSGlobal("spine.canvas.AssetManager")
   @js.native
-  class AssetManager ()
+  open class AssetManager ()
     extends StObject
        with typings.phaser.spine.AssetManager {
     def this(pathPrefix: String) = this()
@@ -21,7 +21,7 @@ object canvas {
   
   @JSGlobal("spine.canvas.CanvasTexture")
   @js.native
-  class CanvasTexture protected ()
+  open class CanvasTexture protected ()
     extends StObject
        with typings.phaser.spine.canvas.CanvasTexture {
     def this(image: HTMLImageElement) = this()
@@ -44,19 +44,19 @@ object canvas {
   
   @JSGlobal("spine.canvas.SkeletonRenderer")
   @js.native
-  class SkeletonRenderer protected ()
+  open class SkeletonRenderer protected ()
     extends StObject
        with typings.phaser.spine.canvas.SkeletonRenderer {
     def this(context: CanvasRenderingContext2D) = this()
     
     /* private */ /* CompleteClass */
-    var computeMeshVertices: js.Any = js.native
+    var computeMeshVertices: Any = js.native
     
     /* private */ /* CompleteClass */
-    var computeRegionVertices: js.Any = js.native
+    var computeRegionVertices: Any = js.native
     
     /* private */ /* CompleteClass */
-    var ctx: js.Any = js.native
+    var ctx: Any = js.native
     
     /* CompleteClass */
     var debugRendering: Boolean = js.native
@@ -65,22 +65,22 @@ object canvas {
     override def draw(skeleton: typings.phaser.spine.Skeleton): Unit = js.native
     
     /* private */ /* CompleteClass */
-    var drawImages: js.Any = js.native
+    var drawImages: Any = js.native
     
     /* private */ /* CompleteClass */
-    var drawTriangle: js.Any = js.native
+    var drawTriangle: Any = js.native
     
     /* private */ /* CompleteClass */
-    var drawTriangles: js.Any = js.native
+    var drawTriangles: Any = js.native
     
     /* private */ /* CompleteClass */
-    var tempColor: js.Any = js.native
+    var tempColor: Any = js.native
     
     /* CompleteClass */
     var triangleRendering: Boolean = js.native
     
     /* private */ /* CompleteClass */
-    var vertices: js.Any = js.native
+    var vertices: Any = js.native
   }
   object SkeletonRenderer {
     

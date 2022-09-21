@@ -27,7 +27,7 @@ object iconMod {
   
   @JSImport("carbon-components-react/lib/components/Icon", "icons")
   @js.native
-  val icons: js.Any = js.native
+  val icons: Any = js.native
   
   inline def isPrefixed(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPrefixed")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   

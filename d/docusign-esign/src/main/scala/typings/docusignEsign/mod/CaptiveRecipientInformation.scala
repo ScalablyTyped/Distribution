@@ -34,6 +34,6 @@ object CaptiveRecipientInformation {
     
     inline def setCaptiveRecipientsVarargs(
       value: (/* This object contains details about a captive (embedded) recipient. */ CaptiveRecipient)*
-    ): Self = StObject.set(x, "captiveRecipients", js.Array(value :_*))
+    ): Self = StObject.set(x, "captiveRecipients", js.Array(value*))
   }
 }

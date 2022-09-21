@@ -28,7 +28,7 @@ trait DocumentProperties extends StObject {
     * @param propertiesToRetrieve A collection that contains the names of the properties to retrieve.
     * @return An object for managing the asynchronous property retrieval operation.
     */
-  def retrievePropertiesAsync(propertiesToRetrieve: IIterable[String]): IPromiseWithIAsyncOperation[IMap[js.Any, js.Any]] = js.native
+  def retrievePropertiesAsync(propertiesToRetrieve: IIterable[String]): IPromiseWithIAsyncOperation[IMap[Any, Any]] = js.native
   
   /**
     * Saves all properties associated with the item.
@@ -40,7 +40,7 @@ trait DocumentProperties extends StObject {
     * @param propertiesToSave A collection that contains the names and values of the properties to save as key-value pairs (type IKeyValuePair ).
     * @return No object or value is returned when this method completes.
     */
-  def savePropertiesAsync(propertiesToSave: IIterable[IKeyValuePair[js.Any, js.Any]]): IPromiseWithIAsyncAction = js.native
+  def savePropertiesAsync(propertiesToSave: IIterable[IKeyValuePair[Any, Any]]): IPromiseWithIAsyncAction = js.native
   
   /** Gets or sets the title of the document. */
   var title: String = js.native

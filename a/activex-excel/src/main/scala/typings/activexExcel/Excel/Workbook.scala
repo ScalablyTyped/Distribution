@@ -37,13 +37,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Workbook extends StObject {
   
   def AcceptAllChanges(): Unit = js.native
-  def AcceptAllChanges(When: js.Any): Unit = js.native
-  def AcceptAllChanges(When: js.Any, Who: js.Any): Unit = js.native
-  def AcceptAllChanges(When: js.Any, Who: js.Any, Where: js.Any): Unit = js.native
-  def AcceptAllChanges(When: js.Any, Who: Unit, Where: js.Any): Unit = js.native
-  def AcceptAllChanges(When: Unit, Who: js.Any): Unit = js.native
-  def AcceptAllChanges(When: Unit, Who: js.Any, Where: js.Any): Unit = js.native
-  def AcceptAllChanges(When: Unit, Who: Unit, Where: js.Any): Unit = js.native
+  def AcceptAllChanges(When: Any): Unit = js.native
+  def AcceptAllChanges(When: Any, Who: Any): Unit = js.native
+  def AcceptAllChanges(When: Any, Who: Any, Where: Any): Unit = js.native
+  def AcceptAllChanges(When: Any, Who: Unit, Where: Any): Unit = js.native
+  def AcceptAllChanges(When: Unit, Who: Any): Unit = js.native
+  def AcceptAllChanges(When: Unit, Who: Any, Where: Any): Unit = js.native
+  def AcceptAllChanges(When: Unit, Who: Unit, Where: Any): Unit = js.native
   
   var AcceptLabelsInFormulas: Boolean = js.native
   
@@ -105,24 +105,24 @@ trait Workbook extends StObject {
   var CheckCompatibility: Boolean = js.native
   
   def CheckIn(): Unit = js.native
-  def CheckIn(SaveChanges: js.Any): Unit = js.native
+  def CheckIn(SaveChanges: Any): Unit = js.native
   
   def CheckInWithVersion(): Unit = js.native
   def CheckInWithVersion(SaveChanges: Boolean): Unit = js.native
-  def CheckInWithVersion(SaveChanges: Boolean, Comments: js.Any): Unit = js.native
-  def CheckInWithVersion(SaveChanges: Boolean, Comments: js.Any, MakePublic: js.Any): Unit = js.native
-  def CheckInWithVersion(SaveChanges: Boolean, Comments: js.Any, MakePublic: js.Any, VersionType: js.Any): Unit = js.native
-  def CheckInWithVersion(SaveChanges: Boolean, Comments: js.Any, MakePublic: Unit, VersionType: js.Any): Unit = js.native
-  def CheckInWithVersion(SaveChanges: Boolean, Comments: Unit, MakePublic: js.Any): Unit = js.native
-  def CheckInWithVersion(SaveChanges: Boolean, Comments: Unit, MakePublic: js.Any, VersionType: js.Any): Unit = js.native
-  def CheckInWithVersion(SaveChanges: Boolean, Comments: Unit, MakePublic: Unit, VersionType: js.Any): Unit = js.native
-  def CheckInWithVersion(SaveChanges: Unit, Comments: js.Any): Unit = js.native
-  def CheckInWithVersion(SaveChanges: Unit, Comments: js.Any, MakePublic: js.Any): Unit = js.native
-  def CheckInWithVersion(SaveChanges: Unit, Comments: js.Any, MakePublic: js.Any, VersionType: js.Any): Unit = js.native
-  def CheckInWithVersion(SaveChanges: Unit, Comments: js.Any, MakePublic: Unit, VersionType: js.Any): Unit = js.native
-  def CheckInWithVersion(SaveChanges: Unit, Comments: Unit, MakePublic: js.Any): Unit = js.native
-  def CheckInWithVersion(SaveChanges: Unit, Comments: Unit, MakePublic: js.Any, VersionType: js.Any): Unit = js.native
-  def CheckInWithVersion(SaveChanges: Unit, Comments: Unit, MakePublic: Unit, VersionType: js.Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Boolean, Comments: Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Boolean, Comments: Any, MakePublic: Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Boolean, Comments: Any, MakePublic: Any, VersionType: Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Boolean, Comments: Any, MakePublic: Unit, VersionType: Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Boolean, Comments: Unit, MakePublic: Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Boolean, Comments: Unit, MakePublic: Any, VersionType: Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Boolean, Comments: Unit, MakePublic: Unit, VersionType: Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Unit, Comments: Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Unit, Comments: Any, MakePublic: Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Unit, Comments: Any, MakePublic: Any, VersionType: Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Unit, Comments: Any, MakePublic: Unit, VersionType: Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Unit, Comments: Unit, MakePublic: Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Unit, Comments: Unit, MakePublic: Any, VersionType: Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Unit, Comments: Unit, MakePublic: Unit, VersionType: Any): Unit = js.native
   
   @JSName("CheckIn")
   def CheckIn_true(SaveChanges: `true`): Unit = js.native
@@ -168,7 +168,7 @@ trait Workbook extends StObject {
   @JSName("Connections")
   val Connections_Original: Connections = js.native
   
-  val Container: js.Any = js.native
+  val Container: Any = js.native
   
   def ContentTypeProperties(Index: String): MetaProperty = js.native
   def ContentTypeProperties(Index: Double): MetaProperty = js.native
@@ -196,11 +196,11 @@ trait Workbook extends StObject {
   
   var Date1904: Boolean = js.native
   
-  var DefaultPivotTableStyle: js.Any = js.native
+  var DefaultPivotTableStyle: Any = js.native
   
-  var DefaultSlicerStyle: js.Any = js.native
+  var DefaultSlicerStyle: Any = js.native
   
-  var DefaultTableStyle: js.Any = js.native
+  var DefaultTableStyle: Any = js.native
   
   def DeleteNumberFormat(NumberFormat: String): Unit = js.native
   
@@ -270,7 +270,7 @@ trait Workbook extends StObject {
     From: js.UndefOr[Double],
     To: js.UndefOr[Double],
     OpenAfterPublish: js.UndefOr[Boolean],
-    FixedFormatExtClassPtr: js.UndefOr[js.Any]
+    FixedFormatExtClassPtr: js.UndefOr[Any]
   ): Unit = js.native
   
   val FileFormat: XlFileFormat = js.native
@@ -627,29 +627,17 @@ trait Workbook extends StObject {
   var HighlightChangesOnScreen: Boolean = js.native
   
   def HighlightChangesOptions(): Unit = js.native
+  def HighlightChangesOptions(When: Unit, Who: Everyone | (`Everyone but me`)): Unit = js.native
+  def HighlightChangesOptions(When: Unit, Who: Everyone | (`Everyone but me`), Where: String): Unit = js.native
   def HighlightChangesOptions(When: Unit, Who: String): Unit = js.native
   def HighlightChangesOptions(When: Unit, Who: String, Where: String): Unit = js.native
   def HighlightChangesOptions(When: Unit, Who: Unit, Where: String): Unit = js.native
   def HighlightChangesOptions(When: XlHighlightChangesTime): Unit = js.native
+  def HighlightChangesOptions(When: XlHighlightChangesTime, Who: Everyone | (`Everyone but me`)): Unit = js.native
+  def HighlightChangesOptions(When: XlHighlightChangesTime, Who: Everyone | (`Everyone but me`), Where: String): Unit = js.native
   def HighlightChangesOptions(When: XlHighlightChangesTime, Who: String): Unit = js.native
   def HighlightChangesOptions(When: XlHighlightChangesTime, Who: String, Where: String): Unit = js.native
   def HighlightChangesOptions(When: XlHighlightChangesTime, Who: Unit, Where: String): Unit = js.native
-  @JSName("HighlightChangesOptions")
-  def HighlightChangesOptions_Everyone(When: Unit, Who: Everyone): Unit = js.native
-  @JSName("HighlightChangesOptions")
-  def HighlightChangesOptions_Everyone(When: Unit, Who: Everyone, Where: String): Unit = js.native
-  @JSName("HighlightChangesOptions")
-  def HighlightChangesOptions_Everyone(When: XlHighlightChangesTime, Who: Everyone): Unit = js.native
-  @JSName("HighlightChangesOptions")
-  def HighlightChangesOptions_Everyone(When: XlHighlightChangesTime, Who: Everyone, Where: String): Unit = js.native
-  @JSName("HighlightChangesOptions")
-  def HighlightChangesOptions_Everyonebutme(When: Unit, Who: `Everyone but me`): Unit = js.native
-  @JSName("HighlightChangesOptions")
-  def HighlightChangesOptions_Everyonebutme(When: Unit, Who: `Everyone but me`, Where: String): Unit = js.native
-  @JSName("HighlightChangesOptions")
-  def HighlightChangesOptions_Everyonebutme(When: XlHighlightChangesTime, Who: `Everyone but me`): Unit = js.native
-  @JSName("HighlightChangesOptions")
-  def HighlightChangesOptions_Everyonebutme(When: XlHighlightChangesTime, Who: `Everyone but me`, Where: String): Unit = js.native
   
   def IconSets(Index: Double): IconSet = js.native
   @JSName("IconSets")
@@ -665,10 +653,10 @@ trait Workbook extends StObject {
   
   var Keywords: String = js.native
   
-  def LinkInfo(Name: String, LinkInfo: XlLinkInfo): js.Any = js.native
-  def LinkInfo(Name: String, LinkInfo: XlLinkInfo, Type: Unit, EditionRef: String): js.Any = js.native
-  def LinkInfo(Name: String, LinkInfo: XlLinkInfo, Type: XlLinkInfoType): js.Any = js.native
-  def LinkInfo(Name: String, LinkInfo: XlLinkInfo, Type: XlLinkInfoType, EditionRef: String): js.Any = js.native
+  def LinkInfo(Name: String, LinkInfo: XlLinkInfo): Any = js.native
+  def LinkInfo(Name: String, LinkInfo: XlLinkInfo, Type: Unit, EditionRef: String): Any = js.native
+  def LinkInfo(Name: String, LinkInfo: XlLinkInfo, Type: XlLinkInfoType): Any = js.native
+  def LinkInfo(Name: String, LinkInfo: XlLinkInfo, Type: XlLinkInfoType, EditionRef: String): Any = js.native
   
   def LinkSources(): SafeArray[String] = js.native
   def LinkSources(Type: XlLink): SafeArray[String] = js.native
@@ -711,7 +699,7 @@ trait Workbook extends StObject {
   def OpenLinks(Name: String, ReadOnly: Boolean, Type: XlLink): Unit = js.native
   def OpenLinks(Name: String, ReadOnly: Unit, Type: XlLink): Unit = js.native
   
-  val Parent: js.Any = js.native
+  val Parent: Any = js.native
   
   var Password: String = js.native
   
@@ -725,7 +713,7 @@ trait Workbook extends StObject {
   
   val Path: String = js.native
   
-  def Permission(Index: js.Any): UserPermission = js.native
+  def Permission(Index: Any): UserPermission = js.native
   @JSName("Permission")
   val Permission_Original: Permission = js.native
   
@@ -790,7 +778,7 @@ trait Workbook extends StObject {
     ReadOnlyRecommended: js.UndefOr[Boolean],
     CreateBackup: js.UndefOr[Boolean],
     SharingPassword: js.UndefOr[String],
-    FileFormat: js.UndefOr[js.Any]
+    FileFormat: js.UndefOr[Any]
   ): Unit = js.native
   
   val ProtectStructure: Boolean = js.native
@@ -814,13 +802,13 @@ trait Workbook extends StObject {
   def RefreshAll(): Unit = js.native
   
   def RejectAllChanges(): Unit = js.native
-  def RejectAllChanges(When: js.Any): Unit = js.native
-  def RejectAllChanges(When: js.Any, Who: js.Any): Unit = js.native
-  def RejectAllChanges(When: js.Any, Who: js.Any, Where: js.Any): Unit = js.native
-  def RejectAllChanges(When: js.Any, Who: Unit, Where: js.Any): Unit = js.native
-  def RejectAllChanges(When: Unit, Who: js.Any): Unit = js.native
-  def RejectAllChanges(When: Unit, Who: js.Any, Where: js.Any): Unit = js.native
-  def RejectAllChanges(When: Unit, Who: Unit, Where: js.Any): Unit = js.native
+  def RejectAllChanges(When: Any): Unit = js.native
+  def RejectAllChanges(When: Any, Who: Any): Unit = js.native
+  def RejectAllChanges(When: Any, Who: Any, Where: Any): Unit = js.native
+  def RejectAllChanges(When: Any, Who: Unit, Where: Any): Unit = js.native
+  def RejectAllChanges(When: Unit, Who: Any): Unit = js.native
+  def RejectAllChanges(When: Unit, Who: Any, Where: Any): Unit = js.native
+  def RejectAllChanges(When: Unit, Who: Unit, Where: Any): Unit = js.native
   
   def ReloadAs(Encoding: MsoEncoding): Unit = js.native
   
@@ -864,8 +852,8 @@ trait Workbook extends StObject {
     AccessMode: js.UndefOr[XlSaveAsAccessMode],
     ConflictResolution: js.UndefOr[XlSaveConflictResolution],
     AddToMru: js.UndefOr[Boolean],
-    TextCodepage: js.UndefOr[js.Any],
-    TextVisualLayout: js.UndefOr[js.Any]
+    TextCodepage: js.UndefOr[Any],
+    TextVisualLayout: js.UndefOr[Any]
   ): Unit = js.native
   
   def SaveAsXMLData(Filename: String, Map: XmlMap): Unit = js.native
@@ -916,15 +904,15 @@ trait Workbook extends StObject {
     *
     * @param Priority [Priority=-4143]
     */
-  def SendMailer(FileFormat: js.Any): Unit = js.native
-  def SendMailer(FileFormat: js.Any, Priority: XlPriority): Unit = js.native
+  def SendMailer(FileFormat: Any): Unit = js.native
+  def SendMailer(FileFormat: Any, Priority: XlPriority): Unit = js.native
   
   def ServerPolicy(Index: String): PolicyItem = js.native
   def ServerPolicy(Index: Double): PolicyItem = js.native
   @JSName("ServerPolicy")
   val ServerPolicy_Original: ServerPolicy = js.native
   
-  def ServerViewableItems(Index: Double): js.Any = js.native
+  def ServerViewableItems(Index: Double): Any = js.native
   @JSName("ServerViewableItems")
   val ServerViewableItems_Original: ServerViewableItems = js.native
   
@@ -1031,7 +1019,7 @@ trait Workbook extends StObject {
   
   val SmartTagOptions: typings.activexExcel.Excel.SmartTagOptions = js.native
   
-  def Styles(Index: js.Any): Style = js.native
+  def Styles(Index: Any): Style = js.native
   @JSName("Styles")
   val Styles_Original: Styles = js.native
   
@@ -1071,7 +1059,7 @@ trait Workbook extends StObject {
   
   var UserControl: Boolean = js.native
   
-  val UserStatus: SafeArray[js.Any] = js.native
+  val UserStatus: SafeArray[Any] = js.native
   
   val VBASigned: Boolean = js.native
   
@@ -1100,13 +1088,13 @@ trait Workbook extends StObject {
   
   def XmlImport(Url: String, ImportMap: XmlMap): XlXmlImportResult = js.native
   def XmlImport(Url: String, ImportMap: XmlMap, Overwrite: Boolean): XlXmlImportResult = js.native
-  def XmlImport(Url: String, ImportMap: XmlMap, Overwrite: Boolean, Destination: js.Any): XlXmlImportResult = js.native
-  def XmlImport(Url: String, ImportMap: XmlMap, Overwrite: Unit, Destination: js.Any): XlXmlImportResult = js.native
+  def XmlImport(Url: String, ImportMap: XmlMap, Overwrite: Boolean, Destination: Any): XlXmlImportResult = js.native
+  def XmlImport(Url: String, ImportMap: XmlMap, Overwrite: Unit, Destination: Any): XlXmlImportResult = js.native
   
   def XmlImportXml(Data: String, ImportMap: XmlMap): XlXmlImportResult = js.native
   def XmlImportXml(Data: String, ImportMap: XmlMap, Overwrite: Boolean): XlXmlImportResult = js.native
-  def XmlImportXml(Data: String, ImportMap: XmlMap, Overwrite: Boolean, Destination: js.Any): XlXmlImportResult = js.native
-  def XmlImportXml(Data: String, ImportMap: XmlMap, Overwrite: Unit, Destination: js.Any): XlXmlImportResult = js.native
+  def XmlImportXml(Data: String, ImportMap: XmlMap, Overwrite: Boolean, Destination: Any): XlXmlImportResult = js.native
+  def XmlImportXml(Data: String, ImportMap: XmlMap, Overwrite: Unit, Destination: Any): XlXmlImportResult = js.native
   
   def XmlMaps(Index: String): XmlMap = js.native
   def XmlMaps(Index: Double): XmlMap = js.native
@@ -1121,32 +1109,32 @@ trait Workbook extends StObject {
   var _CodeName: String = js.native
   
   def _PrintOut(
-    From: js.UndefOr[js.Any],
-    To: js.UndefOr[js.Any],
-    Copies: js.UndefOr[js.Any],
-    Preview: js.UndefOr[js.Any],
-    ActivePrinter: js.UndefOr[js.Any],
-    PrintToFile: js.UndefOr[js.Any],
-    Collate: js.UndefOr[js.Any],
-    PrToFileName: js.UndefOr[js.Any]
+    From: js.UndefOr[Any],
+    To: js.UndefOr[Any],
+    Copies: js.UndefOr[Any],
+    Preview: js.UndefOr[Any],
+    ActivePrinter: js.UndefOr[Any],
+    PrintToFile: js.UndefOr[Any],
+    Collate: js.UndefOr[Any],
+    PrToFileName: js.UndefOr[Any]
   ): Unit = js.native
   
   def _Protect(): Unit = js.native
-  def _Protect(Password: js.Any): Unit = js.native
-  def _Protect(Password: js.Any, Structure: js.Any): Unit = js.native
-  def _Protect(Password: js.Any, Structure: js.Any, Windows: js.Any): Unit = js.native
-  def _Protect(Password: js.Any, Structure: Unit, Windows: js.Any): Unit = js.native
-  def _Protect(Password: Unit, Structure: js.Any): Unit = js.native
-  def _Protect(Password: Unit, Structure: js.Any, Windows: js.Any): Unit = js.native
-  def _Protect(Password: Unit, Structure: Unit, Windows: js.Any): Unit = js.native
+  def _Protect(Password: Any): Unit = js.native
+  def _Protect(Password: Any, Structure: Any): Unit = js.native
+  def _Protect(Password: Any, Structure: Any, Windows: Any): Unit = js.native
+  def _Protect(Password: Any, Structure: Unit, Windows: Any): Unit = js.native
+  def _Protect(Password: Unit, Structure: Any): Unit = js.native
+  def _Protect(Password: Unit, Structure: Any, Windows: Any): Unit = js.native
+  def _Protect(Password: Unit, Structure: Unit, Windows: Any): Unit = js.native
   
   def _ProtectSharing(
-    Filename: js.UndefOr[js.Any],
-    Password: js.UndefOr[js.Any],
-    WriteResPassword: js.UndefOr[js.Any],
-    ReadOnlyRecommended: js.UndefOr[js.Any],
-    CreateBackup: js.UndefOr[js.Any],
-    SharingPassword: js.UndefOr[js.Any]
+    Filename: js.UndefOr[Any],
+    Password: js.UndefOr[Any],
+    WriteResPassword: js.UndefOr[Any],
+    ReadOnlyRecommended: js.UndefOr[Any],
+    CreateBackup: js.UndefOr[Any],
+    SharingPassword: js.UndefOr[Any]
   ): Unit = js.native
   
   val _ReadOnlyRecommended: Boolean = js.native
@@ -1162,18 +1150,18 @@ trait Workbook extends StObject {
     AccessMode: js.UndefOr[XlSaveAsAccessMode],
     ConflictResolution: js.UndefOr[XlSaveConflictResolution],
     AddToMru: js.UndefOr[Boolean],
-    TextCodepage: js.UndefOr[js.Any],
-    TextVisualLayout: js.UndefOr[js.Any]
+    TextCodepage: js.UndefOr[Any],
+    TextVisualLayout: js.UndefOr[Any]
   ): Unit = js.native
   
   def __PrintOut(
-    From: js.UndefOr[js.Any],
-    To: js.UndefOr[js.Any],
-    Copies: js.UndefOr[js.Any],
-    Preview: js.UndefOr[js.Any],
-    ActivePrinter: js.UndefOr[js.Any],
-    PrintToFile: js.UndefOr[js.Any],
-    Collate: js.UndefOr[js.Any]
+    From: js.UndefOr[Any],
+    To: js.UndefOr[Any],
+    Copies: js.UndefOr[Any],
+    Preview: js.UndefOr[Any],
+    ActivePrinter: js.UndefOr[Any],
+    PrintToFile: js.UndefOr[Any],
+    Collate: js.UndefOr[Any]
   ): Unit = js.native
   
   def sblt(s: String): Unit = js.native

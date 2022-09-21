@@ -41,12 +41,12 @@ object Util {
   /**
     *
     */
-  inline def getError(resp: js.Any): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getError")(resp.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+  inline def getError(resp: Any): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getError")(resp.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
   
   /**
     *
     */
-  inline def getXMLHttpRequest(action: java.lang.String, async: scala.Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getXMLHttpRequest")(action.asInstanceOf[js.Any], async.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getXMLHttpRequest(action: java.lang.String, async: scala.Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getXMLHttpRequest")(action.asInstanceOf[js.Any], async.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   /**
     * Verifies the parameter is a string formatted as a GUID.

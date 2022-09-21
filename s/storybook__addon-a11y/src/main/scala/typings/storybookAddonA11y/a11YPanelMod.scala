@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object a11YPanelMod {
   
-  @JSImport("@storybook/addon-a11y/dist/components/A11YPanel", "A11YPanel")
+  @JSImport("@storybook/addon-a11y/dist/ts3.9/components/A11YPanel", "A11YPanel")
   @js.native
   val A11YPanel: FC[js.Object] = js.native
   
   @js.native
   sealed trait RuleType extends StObject
-  @JSImport("@storybook/addon-a11y/dist/components/A11YPanel", "RuleType")
+  @JSImport("@storybook/addon-a11y/dist/ts3.9/components/A11YPanel", "RuleType")
   @js.native
   object RuleType extends StObject {
     

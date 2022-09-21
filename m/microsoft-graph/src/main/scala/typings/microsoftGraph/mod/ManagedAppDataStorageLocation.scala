@@ -8,10 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Rewritten from type alias, can be one of: 
   - typings.microsoftGraph.microsoftGraphStrings.oneDriveForBusiness_
   - typings.microsoftGraph.microsoftGraphStrings.sharePoint
+  - typings.microsoftGraph.microsoftGraphStrings.box
   - typings.microsoftGraph.microsoftGraphStrings.localStorage
 */
 trait ManagedAppDataStorageLocation extends StObject
 object ManagedAppDataStorageLocation {
+  
+  inline def box: typings.microsoftGraph.microsoftGraphStrings.box = "box".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.box]
   
   inline def localStorage: typings.microsoftGraph.microsoftGraphStrings.localStorage = "localStorage".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.localStorage]
   

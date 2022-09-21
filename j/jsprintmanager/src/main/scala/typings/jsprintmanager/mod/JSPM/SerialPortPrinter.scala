@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("jsprintmanager", "JSPM.SerialPortPrinter")
 @js.native
-class SerialPortPrinter protected ()
+open class SerialPortPrinter protected ()
   extends StObject
      with IClientPrinter {
   def this(
@@ -22,21 +22,21 @@ class SerialPortPrinter protected ()
   ) = this()
   
   /* CompleteClass */
-  var Id: js.Any = js.native
+  var Id: Any = js.native
   @JSName("Id")
   var Id_SerialPortPrinter: String = js.native
   
-  /* private */ var _serialPortBaudRate: js.Any = js.native
+  /* private */ var _serialPortBaudRate: Any = js.native
   
-  /* private */ var _serialPortDataBits: js.Any = js.native
+  /* private */ var _serialPortDataBits: Any = js.native
   
-  /* private */ var _serialPortFlowControl: js.Any = js.native
+  /* private */ var _serialPortFlowControl: Any = js.native
   
-  /* private */ var _serialPortName: js.Any = js.native
+  /* private */ var _serialPortName: Any = js.native
   
-  /* private */ var _serialPortParity: js.Any = js.native
+  /* private */ var _serialPortParity: Any = js.native
   
-  /* private */ var _serialPortStopBits: js.Any = js.native
+  /* private */ var _serialPortStopBits: Any = js.native
   
   var baudRate: Double = js.native
   
@@ -49,7 +49,7 @@ class SerialPortPrinter protected ()
   var portName: String = js.native
   
   /* CompleteClass */
-  override def serialize(): js.Any = js.native
+  override def serialize(): Any = js.native
   
   var stopBits: StopBits = js.native
 }

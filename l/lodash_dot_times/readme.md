@@ -10,10 +10,10 @@ The lodash method `_.times` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.times |
 | Keywords           | lodash-modularized, times |
-| # releases         | 0 |
-| # dependents       | 46 |
-| # downloads        | 1764814 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 117591.0 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

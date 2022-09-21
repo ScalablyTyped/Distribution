@@ -49,11 +49,11 @@ object ChildRelationship {
     
     inline def setJunctionIdListNames(value: js.Array[String]): Self = StObject.set(x, "junctionIdListNames", value.asInstanceOf[js.Any])
     
-    inline def setJunctionIdListNamesVarargs(value: String*): Self = StObject.set(x, "junctionIdListNames", js.Array(value :_*))
+    inline def setJunctionIdListNamesVarargs(value: String*): Self = StObject.set(x, "junctionIdListNames", js.Array(value*))
     
     inline def setJunctionReferenceTo(value: js.Array[String]): Self = StObject.set(x, "junctionReferenceTo", value.asInstanceOf[js.Any])
     
-    inline def setJunctionReferenceToVarargs(value: String*): Self = StObject.set(x, "junctionReferenceTo", js.Array(value :_*))
+    inline def setJunctionReferenceToVarargs(value: String*): Self = StObject.set(x, "junctionReferenceTo", js.Array(value*))
     
     inline def setRelationshipName(value: maybe[String]): Self = StObject.set(x, "relationshipName", value.asInstanceOf[js.Any])
     

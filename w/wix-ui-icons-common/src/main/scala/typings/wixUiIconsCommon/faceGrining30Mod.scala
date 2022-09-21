@@ -1,7 +1,7 @@
 package typings.wixUiIconsCommon
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.SFC
+import typings.react.mod.FC
 import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
@@ -12,13 +12,13 @@ object faceGrining30Mod extends Shortcut {
   
   @JSImport("wix-ui-icons-common/dist/src/system/dist/components/FaceGrining30", JSImport.Default)
   @js.native
-  val default: SFC[FaceGrining30Props] = js.native
+  val default: FC[FaceGrining30Props] = js.native
   
   trait FaceGrining30Props
     extends StObject
        with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.undefined
+    var size: js.UndefOr[String | Double] = js.undefined
   }
   object FaceGrining30Props {
     
@@ -29,14 +29,14 @@ object faceGrining30Mod extends Shortcut {
     
     extension [Self <: FaceGrining30Props](x: Self) {
       
-      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
-  type _To = SFC[FaceGrining30Props]
+  type _To = FC[FaceGrining30Props]
   
   /* This means you don't have to write `default`, but can instead just say `faceGrining30Mod.foo` */
-  override def _to: SFC[FaceGrining30Props] = default
+  override def _to: FC[FaceGrining30Props] = default
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("BMapGL.CustomLayer")
 @js.native
-class CustomLayer protected ()
+open class CustomLayer protected ()
   extends StObject
      with typings.bmapgl.BMapGL.CustomLayer {
   def this(opts: CustomLayerOptions) = this()

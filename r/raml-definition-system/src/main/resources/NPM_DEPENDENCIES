@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "raml-definition-system" : "0.0.94"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "raml-definition-system" : "0.0.94"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

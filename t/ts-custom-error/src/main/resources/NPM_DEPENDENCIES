@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ts-custom-error" : "2.2.2"
+      "ts-custom-error" : "3.2.2"
     }
   ],
   "test-dependencies" : [
     {
-      "ts-custom-error" : "2.2.2"
+      "ts-custom-error" : "3.2.2"
     }
   ],
   "compile-devDependencies" : [

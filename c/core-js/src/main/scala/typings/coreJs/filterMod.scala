@@ -15,7 +15,7 @@ object filterMod {
   inline def apply[T](
     array: ArrayLike[T],
     callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ Array[T], Boolean],
-    thisArg: js.Any
+    thisArg: Any
   ): Array[T] = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Array[T]]
   
   @JSImport("core-js/fn/array/filter", JSImport.Namespace)
